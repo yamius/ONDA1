@@ -18,6 +18,9 @@
  *
  * Custom event-scoped dimensions are addressed as `customEvent:<name>` (verified
  * against the app source and the funnel_review breakdowns already in this repo).
+ * User-scoped custom dimensions (e.g. `internal`, the internal-traffic label)
+ * are addressed as `customUser:<name>` — pass `scope: 'user'`, or rely on the
+ * known-user-dims list below. The scope actually used is reported as scope_used.
  */
 
 import { ga4Missing, runReport, eventNameFilter, internalFilter, andFilters } from '../lib/sources/ga4.js';
@@ -41,7 +44,15 @@ export const ga4BreakdownSchema = {
     type: 'object',
     properties: {
       event: { type: 'string', description: 'Event name to break down, e.g. "results_view".' },
-      dimension: { type: 'string', description: 'Dimension to split by. Bare name → customEvent:<name>, e.g. "metrics_source".' },
+      dimension: { type: 'string', description: 'Dimension to split by. Bare name → customEvent:<name>, e.g. "metrics_source"; a fully-qualified field with a colon (e.g. "customUser:internal", "country") is used verbatim.' },
+      scope: {
+        type: 'string', enum: ['event', 'user'], default: 'event',
+        description:
+          "Custom-dimension scope for a BARE dimension name. 'event' (default) → customEvent:<name>. " +
+          "'user' → customUser:<name> — a per-user dimension (e.g. 'internal'), which counts unique " +
+          'users all-time rather than events. Known user-scoped dims (internal) resolve to user on ' +
+          'their own; an explicit scope overrides that. Ignored when the dimension is already colon-qualified.',
+      },
       since: { type: 'integer', description: 'Days back. Default 90 (traffic is thin — a wider window is more honest).', default: DEFAULT_SINCE },
       metric: { type: 'string', enum: ['users', 'events'], default: 'users', description: 'Which metric the shares are computed on. Default users.' },
       internal: {
@@ -54,14 +65,36 @@ export const ga4BreakdownSchema = {
 };
 
 /**
- * How GA4 Data API addresses the dimension. A colon means the caller already
- * qualified it (customEvent:, customUser:, or a built-in that needs no prefix
- * passed verbatim); a bare name is an event-scoped custom dimension.
+ * Custom dimensions known to be USER-scoped in this GA4 property. A bare name
+ * matching this list is addressed as customUser: without needing scope='user'.
+ * `internal` is the internal-traffic label (7 taps on the version in Menu →
+ * user property) that retention filtering depends on.
  */
-function resolveDimension(name) {
+const KNOWN_USER_DIMS = new Set(['internal']);
+
+/**
+ * How GA4 Data API addresses the dimension, and which scope that is.
+ *  - A colon means the caller already qualified it (customEvent:, customUser:,
+ *    or a built-in) — used verbatim; scope inferred from the prefix.
+ *  - A bare name is a custom dimension: user-scoped when an explicit scope says
+ *    so or it is a known user-dim, otherwise event-scoped (the default).
+ * `explicitScope` is 'event' | 'user' | null (null = caller passed nothing).
+ */
+function resolveDimension(name, explicitScope) {
   const raw = String(name).trim();
-  if (raw.includes(':')) return { field: raw, assumed_custom_event: false };
-  return { field: `customEvent:${raw}`, assumed_custom_event: true };
+  if (raw.includes(':')) {
+    const scope_used = raw.startsWith('customUser:') ? 'user'
+      : raw.startsWith('customEvent:') ? 'event'
+      : 'other'; // built-in dimension (country, deviceCategory, …)
+    return { field: raw, assumed_custom_event: false, scope_used };
+  }
+  const scope_used = explicitScope
+    ? explicitScope
+    : KNOWN_USER_DIMS.has(raw.toLowerCase()) ? 'user' : 'event';
+  const field = scope_used === 'user' ? `customUser:${raw}` : `customEvent:${raw}`;
+  // "assumed" = we defaulted to event-scoped without being told; a user might
+  // have meant a user-scoped or built-in dimension.
+  return { field, assumed_custom_event: scope_used === 'event' && !explicitScope, scope_used };
 }
 
 export async function ga4Breakdown(args = {}) {
@@ -76,7 +109,8 @@ export async function ga4Breakdown(args = {}) {
   const days = clampSince(args.since ?? DEFAULT_SINCE);
   const metric = args.metric === 'events' ? 'events' : 'users';
   const internal = args.internal || 'exclude';
-  const { field, assumed_custom_event } = resolveDimension(dimensionArg);
+  const explicitScope = args.scope === 'user' || args.scope === 'event' ? args.scope : null;
+  const { field, assumed_custom_event, scope_used } = resolveDimension(dimensionArg, explicitScope);
 
   const body = {
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: 'today' }],
@@ -119,6 +153,7 @@ export async function ga4Breakdown(args = {}) {
       window_days: days,
       event,
       dimension: { requested: dimensionArg, ga4_field: field, assumed_custom_event },
+      scope_used,
       share_metric: metric,
       filters: { internal },
       total_users: totalUsers,
@@ -141,11 +176,17 @@ export async function ga4Breakdown(args = {}) {
     }
     if (allNotSet) {
       result.dimension_misconfigured = true;
+      const scopeHint = scope_used === 'user'
+        ? `check that "${dimensionArg}" is a registered USER-scoped custom dimension (then it is ` +
+          `customUser:${dimensionArg}); if it is actually event-scoped, drop scope=user`
+        : scope_used === 'event'
+          ? `check that "${dimensionArg}" is a registered EVENT-scoped custom dimension (then it is ` +
+            `customEvent:${dimensionArg}) and that ${event} actually carries it — if it is a ` +
+            `per-user dimension, pass scope=user`
+          : `check that "${field}" is a valid GA4 field`;
       result.dimension_warning =
-        `Every row is "(not set)" for ${field}. The dimension is almost certainly addressed ` +
-        `wrong — check that "${dimensionArg}" is a registered event-scoped custom dimension ` +
-        `(then it is customEvent:${dimensionArg}) and that ${event} actually carries it. ` +
-        'Not presenting this as a real distribution.';
+        `Every row is "(not set)" for ${field}. The dimension is almost certainly addressed wrong — ` +
+        `${scopeHint}. Not presenting this as a real distribution.`;
     }
 
     return ok(result);

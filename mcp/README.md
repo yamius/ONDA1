@@ -242,6 +242,12 @@ Our own runs are marked by a Firebase **user property** `internal`, set by the
 app's hidden toggle (7 taps on the version line in Menu). GA4 exposes it as the
 user-scoped custom dimension `Internal traffic`.
 
+To break traffic down *by* this label, `ga4_breakdown dimension=internal` resolves
+it to `customUser:internal` automatically (it's in the known-user-dims list); for
+any other user-scoped dimension pass `scope=user`. The response echoes
+`scope_used: event|user`. Bare names default to event-scoped (`customEvent:<name>`),
+so existing calls are unchanged.
+
 **Contract: EXTERNAL is `'false'` OR absent.** Everything recorded before the
 marker shipped carries no property at all, and those are real users — so
 `exclude` is `NOT(== 'true')`, never `== 'false'`, which would silently discard

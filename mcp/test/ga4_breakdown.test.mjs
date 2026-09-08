@@ -102,3 +102,33 @@ test('no rows reports empty (no data), not a zero distribution', async () => {
   const r = await ga4Breakdown({ event: 'never_fired', dimension: 'metrics_source' });
   assert.equal(r.empty, true);
 });
+
+test('scope=user addresses a bare name as customUser:<name> and reports scope_used', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'internal', scope: 'user' });
+  assert.equal(lastBody.dimensions[0].name, 'customUser:internal');
+  assert.equal(r.scope_used, 'user');
+});
+
+test('known user-scoped dim (internal) resolves to customUser: without scope', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'internal' });
+  assert.equal(lastBody.dimensions[0].name, 'customUser:internal');
+  assert.equal(r.scope_used, 'user');
+});
+
+test('default scope stays event-scoped — existing calls unchanged', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'metrics_source' });
+  assert.equal(lastBody.dimensions[0].name, 'customEvent:metrics_source');
+  assert.equal(r.scope_used, 'event');
+});
+
+test('a colon-qualified customUser: field is used verbatim and reports user scope', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'customUser:internal' });
+  assert.equal(lastBody.dimensions[0].name, 'customUser:internal');
+  assert.equal(r.scope_used, 'user');
+});
+
+test('explicit scope=event overrides the known-user-dim list', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'internal', scope: 'event' });
+  assert.equal(lastBody.dimensions[0].name, 'customEvent:internal');
+  assert.equal(r.scope_used, 'event');
+});
