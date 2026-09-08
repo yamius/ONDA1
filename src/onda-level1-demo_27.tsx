@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback, lazy, Suspense } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2, Camera, ArrowRight } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2, Camera, ArrowRight, BookOpen } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -6448,36 +6448,19 @@ const OndaLevel1 = () => {
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
-          {/* Pulse | Breathing — ALWAYS shown. Each tile hides only its value
-              line when the metric is null (no tracker yet), collapsing to
-              icon + label so the row reads as "setup pending", not missing. */}
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
-            {/* Pulse — measured (Watch or camera). Fixed 2-line layout: icon,
-                then value + unit on ONE line, the big number ALWAYS rendered
-                (-- when absent) so the tile never grows a third line / jumps in
-                height when a pulse first appears. Taller value line on purpose —
-                the number is bigger than the unit. No source ("Watch") label. */}
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${displayHeartRate != null ? 'text-green-400' : 'text-red-400'}`} />
-              <div className="flex items-baseline justify-center gap-1 leading-none">
-                <span className={`text-2xl sm:text-3xl font-bold tabular-nums ${displayHeartRate == null ? (isLight ? 'text-slate-300' : 'text-white/40') : (isLight ? 'text-slate-400' : '')}`}>
-                  {displayHeartRate != null ? displayHeartRate : '--'}
-                </span>
-                <span className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')}</span>
-              </div>
-            </div>
-            {/* Breathing — RSA-derived ESTIMATE (leading ≈ so it never reads as a
-                precise, independent measurement). Same fixed 2-line layout. */}
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
-              <div className="flex items-baseline justify-center gap-1 leading-none">
-                <span className={`text-2xl sm:text-3xl font-bold tabular-nums ${vitalsData.br == null ? (isLight ? 'text-slate-300' : 'text-white/40') : (isLight ? 'text-slate-400' : '')}`}>
-                  {vitalsData.br != null ? (<><span className="text-base font-normal opacity-60 mr-0.5">≈</span>{Math.round(vitalsData.br)}</>) : '--'}
-                </span>
-                <span className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</span>
-              </div>
-            </div>
-          </div>
+          {/* Diary entry — replaces the pulse/breathing mini-tiles under the
+              baseline. Opens the existing journal modal (same target as the
+              menu's "Дневник"). Live pulse/breath still read out in the
+              coherence hero below. */}
+          <button
+            type="button"
+            onClick={() => setShowJournalModal(true)}
+            data-testid="home-diary-button"
+            className={`w-full flex items-center justify-center gap-2 rounded-2xl p-4 sm:p-5 text-lg sm:text-xl font-bold transition-all ${isLight ? 'bg-white/65 backdrop-blur-xl border border-indigo-200 text-slate-700 shadow-lg shadow-indigo-100/60' : 'bg-indigo-500/10 backdrop-blur-sm border border-indigo-400/25 text-white'}`}
+          >
+            <BookOpen className="w-5 h-5 text-indigo-400" />
+            {t('nav.diary')}
+          </button>
 
           <div className="mt-3 sm:mt-4">
             {cameraPpg.status !== 'idle' ? (
@@ -6544,16 +6527,18 @@ const OndaLevel1 = () => {
                 {collapseDot('coherence')}
                 <div className="flex items-baseline justify-between pr-6">
                   <div className="text-left">
-                    <div className={`text-sm font-semibold ${isLight ? 'text-slate-600' : 'text-white/90'}`}>{t('practices.coherence')}</div>
+                    <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('practices.coherence')}</div>
                     <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('home.coherence.caption', 'heart–breath rhythm')}</div>
                   </div>
-                  <div className={`font-bold leading-none ${isLight ? 'text-slate-500' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
-                    {vitalsData.coherence != null ? (
-                      <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
-                    ) : (
-                      <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-300' : 'text-white/40'}`}>--</span>
-                    )}
-                  </div>
+                  {!isCollapsed('coherence') && (
+                    <div className={`font-bold leading-none ${isLight ? 'text-slate-500' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
+                      {vitalsData.coherence != null ? (
+                        <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
+                      ) : (
+                        <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-300' : 'text-white/40'}`}>--</span>
+                      )}
+                    </div>
+                  )}
                 </div>
                 <div className="mt-3">
                   <MetricsWaveform heartRate={displayHeartRate} stress={null} energy={null} hrOnly heightPx={120} />
@@ -6610,8 +6595,9 @@ const OndaLevel1 = () => {
           </div>
         )}
 
-        {/* Установка — the intention block before the practices (placeholder copy). */}
-        <div className="mb-6 flex flex-col items-center">
+        {/* Установка — the intention block before the practices (placeholder copy).
+            mb-4 = the same gap the practices grid uses between tiles (gap-4). */}
+        <div className="mb-4 flex flex-col items-center">
           <div className={`relative w-full max-w-[360px] rounded-lg p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
             {collapseDot('recommendations')}
             <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
@@ -7068,8 +7054,11 @@ const OndaLevel1 = () => {
           connected={watchHeartRate.isConnected}
         />
 
-        {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
-        {platform !== 'ios' && !vitalsData.connected && (
+        {/* BLE Connect Tracker — Android only, shown above biometrics grid.
+            Hidden whenever a live pulse is already coming through (watch giving
+            HR even with its screen dimmed → displayHeartRate set), so it stops
+            nagging to connect when it isn't needed. */}
+        {platform !== 'ios' && !vitalsData.connected && displayHeartRate == null && (
           <div className={`mb-4 rounded-2xl p-4 max-w-lg mx-auto w-full ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-sky-200' : 'bg-black/30 backdrop-blur-sm border border-blue-500/20'}`}>
             <p className={`text-base font-semibold mb-1 ${isLight ? 'text-sky-800' : 'text-white/70'}`}>{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
             <p className={`text-sm mb-3 ${isLight ? 'text-sky-700' : 'text-white/50'}`}>
