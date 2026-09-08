@@ -92,7 +92,8 @@
     "watch_hint_title": "Apple Watch",
     "watch_hint_text": "Grant health data access in the ONDA app on your watch",
     "watch_activate_title": "Onda Life",
-    "watch_activate_text": "Open the app on your watch for accurate practice tracking"
+    "watch_activate_text": "Open the app on your watch for accurate practice tracking",
+    "practice_history": "Practice History"
   },
   "permissions": {
     "description": "For ONDA to work properly, connect a watch and grant access to your heart rate data.",
@@ -4222,5 +4223,22 @@
     "breath_left": "it's how your body\nbreathes without you",
     "breath_right": "at this rhythm you start\nworking with your nervous system",
     "live": "breaths / min\nlive"
+  },
+  "diary": {
+    "title": "Diary",
+    "record_cta": "Record your day",
+    "text_placeholder": "What happened? A word or two…",
+    "voice": "Voice",
+    "recording": "Recording",
+    "voice_note": "Voice note",
+    "mic_denied": "Microphone unavailable — you can write instead.",
+    "when": "When",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "empty": "Nothing yet",
+    "empty_hint": "Drop a note about your day — a couple of words or your voice",
+    "day_pulse": "resting pulse {{rhr}}"
   }
 }

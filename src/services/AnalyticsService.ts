@@ -61,6 +61,10 @@ export type AnalyticsEventName =
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
   | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag. Lets us see which numbers Health actually gave without a device session.
   | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
+  // Diary (retention step 3 — local-first day notes)
+  | 'diary_opened'                   // diary opened — params: source (home_button | menu | anomaly_prompt(future)).
+  | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
+  | 'diary_synced'                   // local drafts migrated into Supabase on sign-in — params: count.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'

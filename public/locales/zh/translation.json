@@ -80,7 +80,8 @@
     "watch_hint_title": "Apple Watch",
     "watch_hint_text": "在手表上的ONDA应用中授权健康数据访问",
     "watch_activate_title": "Onda Life",
-    "watch_activate_text": "打开手表上的应用以准确跟踪练习"
+    "watch_activate_text": "打开手表上的应用以准确跟踪练习",
+    "practice_history": "练习历史"
   },
   "permissions": {
     "description": "为了让ONDA正常工作，请连接手表并授予心率数据的访问权限。",
@@ -4222,5 +4223,22 @@
     "breath_left": "这是你的身体\n无意识的呼吸",
     "breath_right": "在这个节奏里，你开始\n与自己的神经系统协作",
     "live": "次 / 分\n实时"
+  },
+  "diary": {
+    "title": "日记",
+    "record_cta": "记录今天",
+    "text_placeholder": "发生了什么？简单几句…",
+    "voice": "语音",
+    "recording": "录音中",
+    "voice_note": "语音笔记",
+    "mic_denied": "麦克风不可用——可以改用文字。",
+    "when": "时间",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "empty": "还没有内容",
+    "empty_hint": "记下今天的一点——几句话或语音",
+    "day_pulse": "静息脉搏 {{rhr}}"
   }
 }

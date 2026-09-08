@@ -10,6 +10,8 @@ import LanguageModal from './components/LanguageModal';
 import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
+import DiaryModal from './components/DiaryModal';
+import { syncDiaryEntries } from './lib/diary';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -446,6 +448,13 @@ const OndaLevel1 = () => {
   
   const displayHeartRate = watchHeartRate.heartRate ?? vitalsData.hr ?? null;
 
+  // Resting pulse behind today's baseline, if we have one — snapshotted onto a
+  // "now" diary note so the feed can show the day's number next to the words (§5).
+  const dayRhr = (() => {
+    const r = baseline?.data?.readings?.find((x) => x.key === 'rhr');
+    return r?.avg != null ? Math.round(r.avg) : null;
+  })();
+
   // Live values for the baseline card's realtime hero. A signal counts as live
   // ONLY while a source is actively producing it — the camera mid-reading, or a
   // watch that sent HR in the last few seconds. So when the watch disconnects,
@@ -602,6 +611,7 @@ const OndaLevel1 = () => {
   const [showJournal, setShowJournal] = useState(false);
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
+  const [showDiaryModal, setShowDiaryModal] = useState(false);
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
@@ -1379,6 +1389,8 @@ const OndaLevel1 = () => {
           } catch (e) {
             console.warn('[Airbridge] auth-event tracking failed:', e);
           }
+          // Local-first diary → migrate any un-synced drafts now that we have a user.
+          try { syncDiaryEntries(session.user.id); } catch { /* best-effort */ }
         }
         setUser(session.user);
         // Link the device to this Supabase user inside OneSignal so
@@ -6449,17 +6461,17 @@ const OndaLevel1 = () => {
             hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
           {/* Diary entry — replaces the pulse/breathing mini-tiles under the
-              baseline. Opens the existing journal modal (same target as the
-              menu's "Дневник"). Live pulse/breath still read out in the
-              coherence hero below. */}
+              baseline. Opens the local-first day-note diary. Keeps baseline
+              (what the body did) ↔ diary (what happened to you) in one fold.
+              Live pulse/breath still read out in the coherence hero below. */}
           <button
             type="button"
-            onClick={() => setShowJournalModal(true)}
+            onClick={() => { try { track('diary_opened', { source: 'home_button' }); } catch { /* noop */ } setShowDiaryModal(true); }}
             data-testid="home-diary-button"
             className={`w-full flex items-center justify-center gap-2 rounded-2xl p-4 sm:p-5 text-lg sm:text-xl font-bold transition-all ${isLight ? 'bg-white/65 backdrop-blur-xl border border-indigo-200 text-slate-700 shadow-lg shadow-indigo-100/60' : 'bg-indigo-500/10 backdrop-blur-sm border border-indigo-400/25 text-white'}`}
           >
             <BookOpen className="w-5 h-5 text-indigo-400" />
-            {t('nav.diary')}
+            {t('diary.record_cta', 'Записать день')}
           </button>
 
           <div className="mt-3 sm:mt-4">
@@ -8347,12 +8359,20 @@ const OndaLevel1 = () => {
       </div>
       </div>
 
-      {/* Модальное окно дневника */}
+      {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
+      <DiaryModal
+        isOpen={showDiaryModal}
+        onClose={() => setShowDiaryModal(false)}
+        light={isLight}
+        dayRhr={dayRhr}
+      />
+
+      {/* Practice-log modal (was "Дневник", now "История практик"). */}
       {showJournalModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
           <div className={`max-w-4xl w-full max-h-[90vh] rounded-2xl border shadow-2xl my-4 flex flex-col overflow-hidden ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}>
             <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
-              <h2 className="text-lg sm:text-2xl font-bold">📖 {t('practices.journal_title')}</h2>
+              <h2 className="text-lg sm:text-2xl font-bold">📖 {t('nav.practice_history', 'История практик')}</h2>
               <button
                 onClick={() => setShowJournalModal(false)}
                 className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
@@ -8898,7 +8918,23 @@ const OndaLevel1 = () => {
               <span className="font-medium">{t('nav.intro') || 'Intro'}</span>
             </button>
 
-            {/* Дневник */}
+            {/* Дневник — the new local-first day-note diary. */}
+            <button
+              onClick={() => {
+                try { track('diary_opened', { source: 'menu' }); } catch { /* noop */ }
+                setShowDiaryModal(true);
+                setShowMenu(false);
+              }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
+              data-testid="menu-item-diary"
+            >
+              <BookOpen className="w-6 h-6 text-indigo-400" />
+              <span className="font-medium">{t('diary.title', 'Дневник')}</span>
+            </button>
+
+            {/* История практик — the practice log (was labelled "Дневник"; renamed
+                to free that name for the new diary above). */}
             <button
               onClick={() => {
                 setShowJournalModal(true);
@@ -8906,10 +8942,10 @@ const OndaLevel1 = () => {
               }}
               className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
-              data-testid="menu-item-diary"
+              data-testid="menu-item-practice-history"
             >
               <Circle className="w-6 h-6 text-cyan-400" />
-              <span className="font-medium">{t('nav.diary')}</span>
+              <span className="font-medium">{t('nav.practice_history', 'История практик')}</span>
             </button>
 
             {/* Статистика */}

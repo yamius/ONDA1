@@ -81,7 +81,8 @@
     "watch_hint_title": "Apple Watch",
     "watch_hint_text": "Concede acceso a los datos de salud en la app ONDA de tu reloj",
     "watch_activate_title": "Onda Life",
-    "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica"
+    "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica",
+    "practice_history": "Historial de prácticas"
   },
   "permissions": {
     "description": "Para que ONDA funcione correctamente, conecta un reloj y permite el acceso a tu frecuencia cardíaca.",
@@ -4222,5 +4223,22 @@
     "breath_left": "así respira tu cuerpo\nsin ti",
     "breath_right": "a este ritmo empiezas\na trabajar con tu sistema nervioso",
     "live": "resp / min\nen vivo"
+  },
+  "diary": {
+    "title": "Diario",
+    "record_cta": "Registrar el día",
+    "text_placeholder": "¿Qué pasó? Un par de palabras…",
+    "voice": "Voz",
+    "recording": "Grabando",
+    "voice_note": "Nota de voz",
+    "mic_denied": "Micrófono no disponible: puedes escribirlo.",
+    "when": "Cuándo",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "empty": "Aún nada",
+    "empty_hint": "Anota algo de tu día: un par de palabras o tu voz",
+    "day_pulse": "pulso en reposo {{rhr}}"
   }
 }
