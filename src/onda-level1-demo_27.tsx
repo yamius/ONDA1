@@ -176,24 +176,34 @@ const OndaLevel1 = () => {
     return next;
   });
   const isCollapsed = (id: string) => !!collapsedBlocks[id];
-  // The toggle dot — solid light-coral when open, a hollow ring when collapsed.
-  // `pos` overrides the default top-right placement for blocks whose corner
-  // already holds content (e.g. the 13/6 figures — the dot floats just above).
-  const collapseDot = (id: string, pos?: { top?: string; right?: string }) => (
-    <button
-      type="button"
-      onClick={(e) => { e.stopPropagation(); toggleCollapse(id); }}
-      aria-label="collapse"
-      data-testid={`collapse-${id}`}
-      className="absolute z-20 rounded-full transition-all"
-      style={{
-        top: pos?.top ?? '10px', right: pos?.right ?? '10px', width: '14px', height: '14px', cursor: 'pointer',
-        background: isCollapsed(id) ? 'transparent' : 'rgb(240,128,128)',
-        border: '2px solid rgb(240,128,128)',
-        boxShadow: '0 0 6px rgba(240,128,128,0.55)',
-      }}
-    />
-  );
+  // The toggle: a small light-coral dot (solid when open, hollow ring when
+  // collapsed) inside a much larger transparent hit area (~40px) so it's easy to
+  // tap. `pos` is the DESIRED DOT position (top-right by default); the button is
+  // centred on it. Blocks whose corner holds a number (13/6) float the dot above.
+  const collapseDot = (id: string, pos?: { top?: number; right?: number }) => {
+    const dotTop = pos?.top ?? 10;
+    const dotRight = pos?.right ?? 10;
+    return (
+      <button
+        type="button"
+        onClick={(e) => { e.stopPropagation(); toggleCollapse(id); }}
+        aria-label="collapse"
+        data-testid={`collapse-${id}`}
+        className="absolute z-20 flex items-center justify-center"
+        style={{ top: `${dotTop - 13}px`, right: `${dotRight - 13}px`, width: '40px', height: '40px', cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}
+      >
+        <span
+          className="rounded-full transition-all"
+          style={{
+            width: '14px', height: '14px',
+            background: isCollapsed(id) ? 'transparent' : 'rgb(240,128,128)',
+            border: '2px solid rgb(240,128,128)',
+            boxShadow: '0 0 6px rgba(240,128,128,0.55)',
+          }}
+        />
+      </button>
+    );
+  };
   // Style that folds a block to a compact bar when collapsed.
   const collapseStyle = (id: string, barPx: number): React.CSSProperties =>
     isCollapsed(id) ? { maxHeight: `${barPx}px`, overflow: 'hidden', transition: 'max-height 0.3s ease' } : { transition: 'max-height 0.3s ease' };
@@ -6551,7 +6561,7 @@ const OndaLevel1 = () => {
         {baseline && (
           <div className="mb-6 flex flex-col items-center">
             <div className="relative w-full max-w-[360px]">
-              {collapseDot('breathing_1306', { top: '2px', right: '4px' })}
+              {collapseDot('breathing_1306', { top: 2, right: 4 })}
               <div style={collapseStyle('breathing_1306', 52)}>
                 <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
               </div>
