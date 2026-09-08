@@ -464,8 +464,10 @@ const nonLocalizedStaticPaths = [
   '/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),
   ...ONDA_ROUNDUPS.map((r) => `/compare/${r.slug}`),
-  // Interactive biohacking tools. EN-only for now.
+  // Interactive biohacking tools. Hub localized to ru + es; tool pages EN-only.
   '/tools',
+  '/ru/tools',
+  '/es/tools',
   '/tools/hrv',
   '/tools/caffeine',
   '/tools/sleep-debt',

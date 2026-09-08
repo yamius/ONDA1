@@ -20,6 +20,7 @@ import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
 import { TOOLS } from '../src/data/tools'
+import { TOOLS_I18N } from '../src/data/tools-i18n'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
@@ -1711,6 +1712,24 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
 
+  // /ru/tools, /es/tools — localized tools hub. Tool pages themselves EN-only,
+  // so ItemList entries keep EN /tools/<slug> URLs.
+  if (route === '/ru/tools' || route === '/es/tools') {
+    const c = route === '/ru/tools' ? TOOLS_I18N.ru : TOOLS_I18N.es
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      itemList: {
+        name: c.h1,
+        description: c.metaDescription,
+        url,
+        items: TOOLS.map((t) => ({ url: `${SITE_URL}/tools/${t.slug}`, name: t.name })),
+      },
+    }
+  }
   if (route === '/tools') {
     return {
       title: 'Biohacking Tools & Calculators — Free & Evidence-Based | ONDA Life',

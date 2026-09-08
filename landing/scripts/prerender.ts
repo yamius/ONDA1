@@ -296,6 +296,33 @@ function pageUrlFor(basePath: string, lang: Lang): string {
   return `${SITE_URL}${localizedPathFor(basePath, lang)}`.replace(/\/+$/, '') || SITE_URL
 }
 
+/**
+ * Custom-localized pages: consumer pages localized via TS-map overlays
+ * (product-i18n / faq-i18n / tools-i18n) rather than LOCALIZED_PAGES, because
+ * they don't have full 5-language JSON namespaces. Pilot langs only (en/ru/es);
+ * their /<lang>/<path> routes exist explicitly in the router + prerender list.
+ * Emitted here so the hreflang cluster is STATIC (prerender skips useEffect).
+ */
+const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
+  '/product': ['en', 'ru', 'es'],
+  '/faq': ['en', 'ru', 'es'],
+  '/tools': ['en', 'ru', 'es'],
+}
+
+/** hreflang cluster for a custom-localized page, limited to its pilot langs.
+ *  These base paths are not in LOCALIZED_PAGES, so build the /<lang> URLs
+ *  directly rather than via localizedPathFor (which leaves them unprefixed). */
+function customLocalizedUrl(basePath: string, lang: Lang): string {
+  return lang === 'en' ? `${SITE_URL}${basePath}` : `${SITE_URL}/${lang}${basePath}`
+}
+function buildHreflangLinksForCustom(basePath: string, langs: Lang[]): string {
+  const tags = langs.map(
+    (l) => `<link rel="alternate" hreflang="${l}" href="${customLocalizedUrl(basePath, l)}">`,
+  )
+  tags.push(`<link rel="alternate" hreflang="x-default" href="${customLocalizedUrl(basePath, 'en')}">`)
+  return tags.join('\n  ')
+}
+
 /** Build hreflang alternate <link> tags for one localized page group. */
 function buildHreflangLinksFor(basePath: string): string {
   const tags: string[] = []
@@ -788,6 +815,18 @@ for (const route of routes) {
     out = out.replace(/<meta\s+property="og:description"\s+content="([^"]*)">/gi, (_m, d: string) => `<meta property="og:description" content="${truncateForBudget(d, DESC_MAX)}">`)
     out = out.replace(/<meta\s+property="twitter:title"\s+content="([^"]*)">/gi, (_m, t: string) => `<meta property="twitter:title" content="${truncateForBudget(t, TITLE_MAX)}">`)
     out = out.replace(/<meta\s+property="twitter:description"\s+content="([^"]*)">/gi, (_m, d: string) => `<meta property="twitter:description" content="${truncateForBudget(d, DESC_MAX)}">`)
+
+    // Custom-localized pages (product / faq / tools + their /ru,/es variants):
+    // emit the proper en/ru/es + x-default cluster statically, and set the
+    // right <html lang>. Runs before the self-hreflang fallback so those pages
+    // get a real cluster instead of a self-referential en/x-default.
+    const customBase = stripLangPrefix(route)
+    if (CUSTOM_LOCALIZED_BASES[customBase] && !/hreflang=/.test(out)) {
+      const cluster = buildHreflangLinksForCustom(customBase, CUSTOM_LOCALIZED_BASES[customBase])
+      out = out.replace('</head>', `  ${cluster}\n</head>`)
+      const cl: Lang = route.startsWith('/ru/') ? 'ru' : route.startsWith('/es/') ? 'es' : 'en'
+      if (cl !== 'en') out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${cl}"`)
+    }
 
     // Self-referencing hreflang fallback for pages that didn't get a localized
     // cluster from the branches above (EN-only pages: glossary terms, articles,

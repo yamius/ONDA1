@@ -9,7 +9,7 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { ONDA_FAQ, ONDA_FAQ_FLAT } from '../data/onda-faq'
+import { ONDA_FAQ } from '../data/onda-faq'
 import { langFromPath } from '../i18n'
 import { FAQ_I18N, type FaqLocale } from '../data/faq-i18n'
 
@@ -32,29 +32,6 @@ function setMeta(name: string, content: string, isProperty = false) {
     document.head.appendChild(el)
   }
   el.setAttribute('content', content)
-}
-
-function setAlt(hreflang: string, href: string) {
-  let el = document.querySelector(`link[data-faq-alt][hreflang="${hreflang}"]`)
-  if (!el) {
-    el = document.createElement('link')
-    el.setAttribute('rel', 'alternate')
-    el.setAttribute('hreflang', hreflang)
-    el.setAttribute('data-faq-alt', '')
-    document.head.appendChild(el)
-  }
-  el.setAttribute('href', href)
-}
-
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
 }
 
 export function FaqPage() {
@@ -94,33 +71,8 @@ export function FaqPage() {
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
-
-    setAlt('en', `${SITE_URL}/faq`)
-    setAlt('ru', `${SITE_URL}/ru/faq`)
-    setAlt('es', `${SITE_URL}/es/faq`)
-    setAlt('x-default', `${SITE_URL}/faq`)
-
-    // Localized FAQ JSON-LD (falls back to EN text where a translation is missing).
-    setOrCreateScript('ld-faq-page', {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      '@id': `${pageUrl}#faq`,
-      url: pageUrl,
-      mainEntity: (loc
-        ? groups.flatMap((g) => g.items.map((it) => ({ q: it.q, a: it.a })))
-        : ONDA_FAQ_FLAT
-      ).map((f) => ({
-        '@type': 'Question',
-        name: f.q,
-        acceptedAnswer: { '@type': 'Answer', text: f.a },
-      })),
-    })
-
-    return () => {
-      const el = document.getElementById('ld-faq-page')
-      if (el) el.remove()
-      document.querySelectorAll('link[data-faq-alt]').forEach((n) => n.remove())
-    }
+    // FAQPage JSON-LD and hreflang cluster are emitted statically by
+    // prerender/meta-inject (prerender skips useEffect).
   }, [loc, pageUrl, groups])
 
   return (

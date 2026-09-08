@@ -161,29 +161,8 @@ export function ProductPage() {
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
-
-    // hreflang alternates for the localized product pages.
-    const setAlt = (hl: string, href: string) => {
-      let el = document.querySelector<HTMLLinkElement>(`link[rel="alternate"][hreflang="${hl}"]`)
-      if (!el) {
-        el = document.createElement('link')
-        el.rel = 'alternate'
-        el.hreflang = hl
-        el.setAttribute('data-product-alt', '1')
-        document.head.appendChild(el)
-      }
-      el.href = href
-    }
-    setAlt('en', `${SITE_URL}/product`)
-    setAlt('ru', `${SITE_URL}/ru/product`)
-    setAlt('es', `${SITE_URL}/es/product`)
-    setAlt('x-default', `${SITE_URL}/product`)
-
-    // SoftwareApplication JSON-LD emitted statically by meta-inject (productJsonLd).
-
-    return () => {
-      document.querySelectorAll('link[data-product-alt]').forEach((n) => n.remove())
-    }
+    // SoftwareApplication JSON-LD and hreflang cluster are emitted statically
+    // by meta-inject/prerender (prerender skips useEffect).
   }, [copy, p])
 
   return (

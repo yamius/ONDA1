@@ -221,6 +221,8 @@ const routeElements = (
             <Route path="/compare"               element={<OndaComparePage />} />
             <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
             <Route path="/tools"                 element={<ToolsPage />} />
+            <Route path="/ru/tools"              element={<ToolsPage />} />
+            <Route path="/es/tools"              element={<ToolsPage />} />
             <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
             <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />
             <Route path="/tools/sleep-debt"      element={<SleepDebtCalculatorPage />} />
