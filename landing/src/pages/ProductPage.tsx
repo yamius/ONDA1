@@ -53,15 +53,26 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
+/** SoftwareApplication JSON-LD (one canonical app entity), emitted statically
+ *  by meta-inject for /product and its localized routes. */
+export function productJsonLd(): Record<string, unknown>[] {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      '@id': `${PAGE_URL}#app`,
+      name: 'ONDA Life',
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'iOS, watchOS',
+      description:
+        'Structured HRV biofeedback training: guided breathing with live heart-rhythm feedback, across an 8-level path for your nervous system.',
+      url: PAGE_URL,
+      downloadUrl: APP_STORE_CANONICAL,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      isAccessibleForFree: true,
+      publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
+    },
+  ]
 }
 
 /** English copy — the built-in default; ru/es overlay from PRODUCT_I18N. */
@@ -168,25 +179,9 @@ export function ProductPage() {
     setAlt('es', `${SITE_URL}/es/product`)
     setAlt('x-default', `${SITE_URL}/product`)
 
-    setOrCreateScript('ld-product-app', {
-      '@context': 'https://schema.org',
-      '@type': 'SoftwareApplication',
-      '@id': `${PAGE_URL}#app`,
-      name: 'ONDA Life',
-      applicationCategory: 'HealthApplication',
-      operatingSystem: 'iOS, watchOS',
-      description:
-        'Structured HRV biofeedback training: guided breathing with live heart-rhythm feedback, across an 8-level path for your nervous system.',
-      url: PAGE_URL,
-      downloadUrl: APP_STORE_CANONICAL,
-      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-      isAccessibleForFree: true,
-      publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
-    })
+    // SoftwareApplication JSON-LD emitted statically by meta-inject (productJsonLd).
 
     return () => {
-      const el = document.getElementById('ld-product-app')
-      if (el) el.remove()
       document.querySelectorAll('link[data-product-alt]').forEach((n) => n.remove())
     }
   }, [copy, p])

@@ -32,36 +32,15 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
-}
+const PAGE_TITLE = 'Yakiv Bilenko — Founder & CEO of ONDA Life'
+const PAGE_DESC =
+  'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product. ONDA’s physiology and neuroscience are led by its scientific advisor.'
 
-export function FounderPage() {
-  const location = useLocation()
-
-  useEffect(() => {
-    void location
-    const title = 'Yakiv Bilenko — Founder & CEO of ONDA Life'
-    const desc =
-      'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product. ONDA’s physiology and neuroscience are led by its scientific advisor.'
-    document.title = title
-    setMeta('description', desc)
-    setMeta('og:title', title, true)
-    setMeta('og:description', desc, true)
-    setMeta('og:type', 'profile', true)
-    setMeta('og:url', PAGE_URL, true)
-    setMeta('twitter:card', 'summary', true)
-    setMeta('twitter:title', title, true)
-    setMeta('twitter:description', desc, true)
-
-    setOrCreateScript('ld-founder-profile', {
+/** ProfilePage/Person JSON-LD, emitted statically by meta-inject so non-JS
+ *  crawlers resolve the canonical author entity (E-E-A-T). */
+export function founderJsonLd(): Record<string, unknown>[] {
+  return [
+    {
       '@context': 'https://schema.org',
       '@type': 'ProfilePage',
       '@id': `${PAGE_URL}#profile`,
@@ -75,7 +54,7 @@ export function FounderPage() {
         url: PAGE_URL,
         sameAs: SAME_AS,
         jobTitle: 'Founder & CEO, ONDA Life',
-        description: desc,
+        description: PAGE_DESC,
         knowsAbout: [
           'architecture',
           'architecture and human psychological states',
@@ -96,12 +75,25 @@ export function FounderPage() {
         ],
         worksFor: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
       },
-    })
+    },
+  ]
+}
 
-    return () => {
-      const el = document.getElementById('ld-founder-profile')
-      if (el) el.remove()
-    }
+export function FounderPage() {
+  const location = useLocation()
+
+  useEffect(() => {
+    void location
+    document.title = PAGE_TITLE
+    setMeta('description', PAGE_DESC)
+    setMeta('og:title', PAGE_TITLE, true)
+    setMeta('og:description', PAGE_DESC, true)
+    setMeta('og:type', 'profile', true)
+    setMeta('og:url', PAGE_URL, true)
+    setMeta('twitter:card', 'summary', true)
+    setMeta('twitter:title', PAGE_TITLE, true)
+    setMeta('twitter:description', PAGE_DESC, true)
+    // ProfilePage/Person JSON-LD emitted statically by meta-inject (founderJsonLd).
   }, [location])
 
   return (

@@ -33,15 +33,25 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
+const PAGE_TITLE = 'How ONDA Works — HRV, Coherence & the Biofeedback Loop | ONDA Life'
+const PAGE_DESC =
+  'How ONDA works: from Apple Watch or iPhone-camera pulse to beat intervals, HRV (RMSSD/SDNN), a live coherence score and paced resonance breathing — explained with its limits.'
+
+/** WebPage JSON-LD, emitted statically by meta-inject. */
+export function howItWorksJsonLd(): Record<string, unknown>[] {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${PAGE_URL}#webpage`,
+      url: PAGE_URL,
+      name: PAGE_TITLE,
+      description: PAGE_DESC,
+      inLanguage: 'en',
+      isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL },
+      about: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
+    },
+  ]
 }
 
 interface LoopStep {
@@ -64,37 +74,18 @@ export function HowItWorksPage() {
 
   useEffect(() => {
     void location
-    const title = 'How ONDA Works — HRV, Coherence & the Biofeedback Loop | ONDA Life'
-    const desc =
-      'How ONDA works: from Apple Watch or iPhone-camera pulse to beat intervals, HRV (RMSSD/SDNN), a live coherence score and paced resonance breathing — explained with its limits.'
-    document.title = title
-    setMeta('description', desc)
-    setMeta('og:title', title, true)
-    setMeta('og:description', desc, true)
+    document.title = PAGE_TITLE
+    setMeta('description', PAGE_DESC)
+    setMeta('og:title', PAGE_TITLE, true)
+    setMeta('og:description', PAGE_DESC, true)
     setMeta('og:type', 'website', true)
     setMeta('og:url', PAGE_URL, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', title, true)
-    setMeta('twitter:description', desc, true)
+    setMeta('twitter:title', PAGE_TITLE, true)
+    setMeta('twitter:description', PAGE_DESC, true)
     setMeta('twitter:image', OG_IMAGE, true)
-
-    setOrCreateScript('ld-howitworks-webpage', {
-      '@context': 'https://schema.org',
-      '@type': 'WebPage',
-      '@id': `${PAGE_URL}#webpage`,
-      url: PAGE_URL,
-      name: title,
-      description: desc,
-      inLanguage: 'en',
-      isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL },
-      about: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
-    })
-
-    return () => {
-      const el = document.getElementById('ld-howitworks-webpage')
-      if (el) el.remove()
-    }
+    // WebPage JSON-LD emitted statically by meta-inject (howItWorksJsonLd).
   }, [location])
 
   return (

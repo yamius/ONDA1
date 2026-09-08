@@ -22,16 +22,9 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
-}
+const PAGE_TITLE = 'HRV vs Coherence: What’s the Difference? | ONDA Life'
+const PAGE_DESC =
+  'HRV vs coherence explained: HRV is the raw variation between heartbeats; coherence is how smooth and rhythmic that variation is as you breathe. Which to watch, and how ONDA uses each.'
 
 const FAQ: { q: string; a: string }[] = [
   {
@@ -66,51 +59,47 @@ function Section({ id, kicker, title, children }: { id: string; kicker: string; 
   )
 }
 
-export function HrvVsCoherencePage() {
-  const location = useLocation()
-
-  useEffect(() => {
-    void location
-    const title = 'HRV vs Coherence: What’s the Difference? | ONDA Life'
-    const desc =
-      'HRV vs coherence explained: HRV is the raw variation between heartbeats; coherence is how smooth and rhythmic that variation is as you breathe. Which to watch, and how ONDA uses each.'
-    document.title = title
-    setMeta('description', desc)
-    setMeta('og:title', title, true)
-    setMeta('og:description', desc, true)
-    setMeta('og:type', 'article', true)
-    setMeta('og:url', PAGE_URL, true)
-    setMeta('og:image', OG_IMAGE, true)
-    setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', title, true)
-    setMeta('twitter:description', desc, true)
-    setMeta('twitter:image', OG_IMAGE, true)
-
-    setOrCreateScript('ld-hrvcoh-article', {
+/** Article + FAQPage JSON-LD, emitted statically by meta-inject. */
+export function hrvVsCoherenceJsonLd(): Record<string, unknown>[] {
+  return [
+    {
       '@context': 'https://schema.org',
       '@type': 'Article',
       '@id': `${PAGE_URL}#article`,
       headline: 'HRV vs Coherence: What’s the Difference?',
-      description: desc,
+      description: PAGE_DESC,
       url: PAGE_URL,
       inLanguage: 'en',
       author: { '@id': AUTHOR_ID },
       publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
       about: ['Heart rate variability', 'Cardiac coherence'],
-    })
-    setOrCreateScript('ld-hrvcoh-faq', {
+    },
+    {
       '@context': 'https://schema.org',
       '@type': 'FAQPage',
       '@id': `${PAGE_URL}#faq`,
       mainEntity: FAQ.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-    })
+    },
+  ]
+}
 
-    return () => {
-      for (const id of ['ld-hrvcoh-article', 'ld-hrvcoh-faq']) {
-        const el = document.getElementById(id)
-        if (el) el.remove()
-      }
-    }
+export function HrvVsCoherencePage() {
+  const location = useLocation()
+
+  useEffect(() => {
+    void location
+    document.title = PAGE_TITLE
+    setMeta('description', PAGE_DESC)
+    setMeta('og:title', PAGE_TITLE, true)
+    setMeta('og:description', PAGE_DESC, true)
+    setMeta('og:type', 'article', true)
+    setMeta('og:url', PAGE_URL, true)
+    setMeta('og:image', OG_IMAGE, true)
+    setMeta('twitter:card', 'summary_large_image', true)
+    setMeta('twitter:title', PAGE_TITLE, true)
+    setMeta('twitter:description', PAGE_DESC, true)
+    setMeta('twitter:image', OG_IMAGE, true)
+    // Article + FAQPage JSON-LD emitted statically by meta-inject.
   }, [location])
 
   return (

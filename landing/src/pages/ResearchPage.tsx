@@ -35,82 +35,26 @@ import {
 const SITE_URL = 'https://onda-life.com'
 const RESEARCH_URL = `${SITE_URL}/research`
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
+const PAGE_TITLE = 'The Science Behind ONDA — HRV Biofeedback, Evidence & Research Roadmap'
+const PAGE_DESC =
+  "The evidence ONDA is built on — resonance breathing and HRV biofeedback, cited in plain sight — and the research frontier we're working to validate."
 
-function setMeta(name: string, content: string, isProperty = false) {
-  const attr = isProperty ? 'property' : 'name'
-  let el = document.querySelector(`meta[${attr}="${name}"]`)
-  if (!el) {
-    el = document.createElement('meta')
-    el.setAttribute(attr, name)
-    document.head.appendChild(el)
-  }
-  el.setAttribute('content', content)
-}
-
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
-}
-
-/* Evidence base lives in src/data/evidence.ts — every reference verified
-   (authors, year, journal, DOI, PMID), every claim carries its honest
-   boundary. This page renders that dataset. */
-
-export function ResearchPage() {
-  const location = useLocation()
-
-  useEffect(() => {
-    void location // unused but kept for parity with sister pages
-    const title = 'The Science Behind ONDA — HRV Biofeedback, Evidence & Research Roadmap'
-    const desc =
-      "The evidence ONDA is built on — resonance breathing and HRV biofeedback, cited in plain sight — and the research frontier we're working to validate."
-    document.title = title
-    setMeta('description', desc)
-    setMeta('og:title', title, true)
-    setMeta('og:description', desc, true)
-    setMeta('og:type', 'website', true)
-    setMeta('og:url', RESEARCH_URL, true)
-    setMeta('og:image', OG_IMAGE, true)
-    setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', title, true)
-    setMeta('twitter:description', desc, true)
-    setMeta('twitter:image', OG_IMAGE, true)
-
-    // Plain WebPage schema. NOT MedicalWebPage (avoids implying medical
-    // claims) and NOT ResearchProject (avoids implying a funded, active
-    // research programme). Honest by construction.
-    setOrCreateScript('ld-research-webpage', {
+/** WebPage + citation (ScholarlyArticle) JSON-LD, emitted statically by
+ *  meta-inject so non-JS crawlers get the DOI/PMID-anchored evidence graph. */
+export function researchJsonLd(): Record<string, unknown>[] {
+  return [
+    {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
       '@id': `${RESEARCH_URL}#webpage`,
       url: RESEARCH_URL,
-      name: title,
-      description: desc,
+      name: PAGE_TITLE,
+      description: PAGE_DESC,
       inLanguage: 'en',
-      isPartOf: {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}#website`,
-        name: 'ONDA Life',
-        url: SITE_URL,
-      },
-      about: {
-        '@type': 'Organization',
-        '@id': `${SITE_URL}#organization`,
-        name: 'ONDA Life',
-        url: SITE_URL,
-      },
-    })
-
-    // Machine-readable citations — each verified reference as a
-    // ScholarlyArticle the page cites. Gives AI systems a structured,
-    // DOI/PMID-anchored evidence graph rather than prose links.
-    setOrCreateScript('ld-research-citations', {
+      isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL },
+      about: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
+    },
+    {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
       '@id': `${RESEARCH_URL}#evidence`,
@@ -126,14 +70,42 @@ export function ResearchPage() {
           ...(r.pmid ? [`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`] : []),
         ],
       })),
-    })
+    },
+  ]
+}
 
-    return () => {
-      const el = document.getElementById('ld-research-webpage')
-      if (el) el.remove()
-      const c = document.getElementById('ld-research-citations')
-      if (c) c.remove()
-    }
+function setMeta(name: string, content: string, isProperty = false) {
+  const attr = isProperty ? 'property' : 'name'
+  let el = document.querySelector(`meta[${attr}="${name}"]`)
+  if (!el) {
+    el = document.createElement('meta')
+    el.setAttribute(attr, name)
+    document.head.appendChild(el)
+  }
+  el.setAttribute('content', content)
+}
+
+/* Evidence base lives in src/data/evidence.ts — every reference verified
+   (authors, year, journal, DOI, PMID), every claim carries its honest
+   boundary. This page renders that dataset. */
+
+export function ResearchPage() {
+  const location = useLocation()
+
+  useEffect(() => {
+    void location // unused but kept for parity with sister pages
+    document.title = PAGE_TITLE
+    setMeta('description', PAGE_DESC)
+    setMeta('og:title', PAGE_TITLE, true)
+    setMeta('og:description', PAGE_DESC, true)
+    setMeta('og:type', 'website', true)
+    setMeta('og:url', RESEARCH_URL, true)
+    setMeta('og:image', OG_IMAGE, true)
+    setMeta('twitter:card', 'summary_large_image', true)
+    setMeta('twitter:title', PAGE_TITLE, true)
+    setMeta('twitter:description', PAGE_DESC, true)
+    setMeta('twitter:image', OG_IMAGE, true)
+    // WebPage + citations JSON-LD emitted statically by meta-inject (researchJsonLd).
   }, [location])
 
   return (

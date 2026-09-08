@@ -31,16 +31,9 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
-}
+const PAGE_TITLE = 'HRV Biofeedback: What It Is, How It Works & the Evidence | ONDA Life'
+const PAGE_DESC =
+  'HRV biofeedback explained: what it is, how the real-time feedback loop works, what the evidence supports, how it differs from HRV tracking, and how ONDA implements it. Honest and cited.'
 
 const FAQ: { q: string; a: string }[] = [
   {
@@ -69,6 +62,39 @@ const FAQ: { q: string; a: string }[] = [
   },
 ]
 
+/** Article + FAQPage JSON-LD. Exported so meta-inject can emit it statically
+ *  (prerender's renderToString never runs the useEffect that would add it). */
+export function hrvBiofeedbackJsonLd(): Record<string, unknown>[] {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      '@id': `${PAGE_URL}#article`,
+      headline: 'HRV Biofeedback: What It Is, How It Works, and How ONDA Uses It',
+      description: PAGE_DESC,
+      url: PAGE_URL,
+      inLanguage: 'en',
+      author: { '@id': AUTHOR_ID },
+      publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
+      about: 'HRV biofeedback',
+      citation: EVIDENCE_REFERENCES.map((r) => ({
+        '@type': 'ScholarlyArticle',
+        name: r.title,
+        author: r.authors.split(', ').map((name) => ({ '@type': 'Person', name })),
+        datePublished: String(r.year),
+        isPartOf: { '@type': 'Periodical', name: r.journal },
+        sameAs: [`https://doi.org/${r.doi}`, ...(r.pmid ? [`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`] : [])],
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': `${PAGE_URL}#faq`,
+      mainEntity: FAQ.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    },
+  ]
+}
+
 function Section({ id, kicker, title, children }: { id: string; kicker: string; title: string; children: React.ReactNode }) {
   return (
     <section id={id} className="mt-14 scroll-mt-20">
@@ -84,54 +110,19 @@ export function HrvBiofeedbackPage() {
 
   useEffect(() => {
     void location
-    const title = 'HRV Biofeedback: What It Is, How It Works & the Evidence | ONDA Life'
-    const desc =
-      'HRV biofeedback explained: what it is, how the real-time feedback loop works, what the evidence supports, how it differs from HRV tracking, and how ONDA implements it. Honest and cited.'
-    document.title = title
-    setMeta('description', desc)
-    setMeta('og:title', title, true)
-    setMeta('og:description', desc, true)
+    document.title = PAGE_TITLE
+    setMeta('description', PAGE_DESC)
+    setMeta('og:title', PAGE_TITLE, true)
+    setMeta('og:description', PAGE_DESC, true)
     setMeta('og:type', 'article', true)
     setMeta('og:url', PAGE_URL, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', title, true)
-    setMeta('twitter:description', desc, true)
+    setMeta('twitter:title', PAGE_TITLE, true)
+    setMeta('twitter:description', PAGE_DESC, true)
     setMeta('twitter:image', OG_IMAGE, true)
-
-    setOrCreateScript('ld-hrvbio-article', {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      '@id': `${PAGE_URL}#article`,
-      headline: 'HRV Biofeedback: What It Is, How It Works, and How ONDA Uses It',
-      description: desc,
-      url: PAGE_URL,
-      inLanguage: 'en',
-      author: { '@id': AUTHOR_ID },
-      publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
-      about: 'HRV biofeedback',
-      citation: EVIDENCE_REFERENCES.map((r) => ({
-        '@type': 'ScholarlyArticle',
-        name: r.title,
-        author: r.authors.split(', ').map((name) => ({ '@type': 'Person', name })),
-        datePublished: String(r.year),
-        isPartOf: { '@type': 'Periodical', name: r.journal },
-        sameAs: [`https://doi.org/${r.doi}`, ...(r.pmid ? [`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`] : [])],
-      })),
-    })
-    setOrCreateScript('ld-hrvbio-faq', {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      '@id': `${PAGE_URL}#faq`,
-      mainEntity: FAQ.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-    })
-
-    return () => {
-      for (const id of ['ld-hrvbio-article', 'ld-hrvbio-faq']) {
-        const el = document.getElementById(id)
-        if (el) el.remove()
-      }
-    }
+    // Article + FAQPage JSON-LD is emitted statically by meta-inject
+    // (hrvBiofeedbackJsonLd), so non-JS crawlers see it.
   }, [location])
 
   return (

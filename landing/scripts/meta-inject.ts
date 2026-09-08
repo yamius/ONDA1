@@ -20,6 +20,14 @@ import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
 import { TOOLS } from '../src/data/tools'
+import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
+import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
+import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
+import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
+import { researchJsonLd } from '../src/pages/ResearchPage'
+import { founderJsonLd } from '../src/pages/FounderPage'
+import { productJsonLd } from '../src/pages/ProductPage'
+import { howItWorksJsonLd } from '../src/pages/HowItWorksPage'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
@@ -462,6 +470,9 @@ export interface RouteMeta {
     url: string
     items: { url: string; name: string }[]
   }
+  /** Generic extra JSON-LD nodes emitted verbatim (each as its own script).
+   *  For pages whose JSON-LD is built in a useEffect that prerender can't run. */
+  jsonLd?: Record<string, unknown>[]
 }
 
 function buildBreadcrumbs(route: string): BreadcrumbItem[] {
@@ -1532,6 +1543,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      jsonLd: researchJsonLd(),
     }
   }
 
@@ -1557,6 +1569,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      jsonLd: howItWorksJsonLd(),
     }
   }
   // /product — canonical product page (Product Facts). Localized to ru + es.
@@ -1568,11 +1581,12 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      jsonLd: productJsonLd(),
     }
   }
   if (route === '/ru/product' || route === '/es/product') {
     const c = route === '/ru/product' ? PRODUCT_I18N.ru : PRODUCT_I18N.es
-    return { title: c.metaTitle, description: c.metaDescription, url, breadcrumbs, ogType: 'website' }
+    return { title: c.metaTitle, description: c.metaDescription, url, breadcrumbs, ogType: 'website', jsonLd: productJsonLd() }
   }
   // /hrv-biofeedback — cornerstone bridge-entity page. EN-only.
   if (route === '/hrv-biofeedback') {
@@ -1583,6 +1597,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      jsonLd: hrvBiofeedbackJsonLd(),
     }
   }
   // /resonance-breathing — cornerstone science page. EN-only.
@@ -1594,6 +1609,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      jsonLd: resonanceBreathingJsonLd(),
     }
   }
   // /hrv-vs-coherence — cornerstone explainer. EN-only.
@@ -1605,6 +1621,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      jsonLd: hrvVsCoherenceJsonLd(),
     }
   }
   // /apple-watch-hrv-biofeedback — cornerstone device page. EN-only.
@@ -1616,6 +1633,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      jsonLd: appleWatchHrvJsonLd(),
     }
   }
   // /people/yakiv-bilenko — founder person/authority page. EN-only.
@@ -1627,6 +1645,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'profile',
+      jsonLd: founderJsonLd(),
     }
   }
   // /ru/faq, /es/faq — localized Q&A hub + localized FAQPage JSON-LD.
@@ -3209,6 +3228,19 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   if (meta.itemList) {
     const itemListScript = `<script type="application/ld+json">${buildComparisonItemListJsonLd(meta.itemList)}</script>`
     out = out.replace('</head>', `  ${itemListScript}\n</head>`)
+  }
+
+  // JSON-LD: generic extra nodes (e.g. cornerstone Article + FAQPage,
+  // /research ScholarlyArticles, /people Person/ProfilePage). These pages
+  // build their JSON-LD in a useEffect, which prerender's renderToString
+  // never runs — so the static HTML would otherwise carry only breadcrumbs.
+  // Emitting them here makes the structured data visible to non-JS crawlers
+  // (GPTBot, PerplexityBot, Bing) that never hydrate the page.
+  if (meta.jsonLd && meta.jsonLd.length > 0) {
+    for (const node of meta.jsonLd) {
+      const s = `<script type="application/ld+json">${JSON.stringify(node)}</script>`
+      out = out.replace('</head>', `  ${s}\n</head>`)
+    }
   }
 
   // JSON-LD: canonical Person on review + round-up pages (roadmap 6.8).

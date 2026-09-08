@@ -28,16 +28,9 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
-}
+const PAGE_TITLE = 'Resonance Breathing: The Science of Slow Breathing & HRV | ONDA Life'
+const PAGE_DESC =
+  'Resonance breathing explained: what it is, why ~6 breaths a minute maximises HRV, how to find your resonance frequency, the evidence, how to practise, and how ONDA guides it.'
 
 const FAQ: { q: string; a: string }[] = [
   {
@@ -62,6 +55,38 @@ const FAQ: { q: string; a: string }[] = [
   },
 ]
 
+/** Article + FAQPage JSON-LD, emitted statically by meta-inject. */
+export function resonanceBreathingJsonLd(): Record<string, unknown>[] {
+  return [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      '@id': `${PAGE_URL}#article`,
+      headline: 'Resonance Breathing: The Science Behind Slow Breathing and HRV',
+      description: PAGE_DESC,
+      url: PAGE_URL,
+      inLanguage: 'en',
+      author: { '@id': AUTHOR_ID },
+      publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
+      about: 'Resonance breathing',
+      citation: EVIDENCE_REFERENCES.filter((r) => r.id === 'R1' || r.id === 'R2' || r.id === 'R3').map((r) => ({
+        '@type': 'ScholarlyArticle',
+        name: r.title,
+        author: r.authors.split(', ').map((name) => ({ '@type': 'Person', name })),
+        datePublished: String(r.year),
+        isPartOf: { '@type': 'Periodical', name: r.journal },
+        sameAs: [`https://doi.org/${r.doi}`, ...(r.pmid ? [`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`] : [])],
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      '@id': `${PAGE_URL}#faq`,
+      mainEntity: FAQ.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    },
+  ]
+}
+
 function Section({ id, kicker, title, children }: { id: string; kicker: string; title: string; children: React.ReactNode }) {
   return (
     <section id={id} className="mt-14 scroll-mt-20">
@@ -77,54 +102,18 @@ export function ResonanceBreathingGuidePage() {
 
   useEffect(() => {
     void location
-    const title = 'Resonance Breathing: The Science of Slow Breathing & HRV | ONDA Life'
-    const desc =
-      'Resonance breathing explained: what it is, why ~6 breaths a minute maximises HRV, how to find your resonance frequency, the evidence, how to practise, and how ONDA guides it.'
-    document.title = title
-    setMeta('description', desc)
-    setMeta('og:title', title, true)
-    setMeta('og:description', desc, true)
+    document.title = PAGE_TITLE
+    setMeta('description', PAGE_DESC)
+    setMeta('og:title', PAGE_TITLE, true)
+    setMeta('og:description', PAGE_DESC, true)
     setMeta('og:type', 'article', true)
     setMeta('og:url', PAGE_URL, true)
     setMeta('og:image', OG_IMAGE, true)
     setMeta('twitter:card', 'summary_large_image', true)
-    setMeta('twitter:title', title, true)
-    setMeta('twitter:description', desc, true)
+    setMeta('twitter:title', PAGE_TITLE, true)
+    setMeta('twitter:description', PAGE_DESC, true)
     setMeta('twitter:image', OG_IMAGE, true)
-
-    setOrCreateScript('ld-resbreath-article', {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      '@id': `${PAGE_URL}#article`,
-      headline: 'Resonance Breathing: The Science Behind Slow Breathing and HRV',
-      description: desc,
-      url: PAGE_URL,
-      inLanguage: 'en',
-      author: { '@id': AUTHOR_ID },
-      publisher: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
-      about: 'Resonance breathing',
-      citation: EVIDENCE_REFERENCES.filter((r) => r.id === 'R1' || r.id === 'R2' || r.id === 'R3').map((r) => ({
-        '@type': 'ScholarlyArticle',
-        name: r.title,
-        author: r.authors.split(', ').map((name) => ({ '@type': 'Person', name })),
-        datePublished: String(r.year),
-        isPartOf: { '@type': 'Periodical', name: r.journal },
-        sameAs: [`https://doi.org/${r.doi}`, ...(r.pmid ? [`https://pubmed.ncbi.nlm.nih.gov/${r.pmid}/`] : [])],
-      })),
-    })
-    setOrCreateScript('ld-resbreath-faq', {
-      '@context': 'https://schema.org',
-      '@type': 'FAQPage',
-      '@id': `${PAGE_URL}#faq`,
-      mainEntity: FAQ.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
-    })
-
-    return () => {
-      for (const id of ['ld-resbreath-article', 'ld-resbreath-faq']) {
-        const el = document.getElementById(id)
-        if (el) el.remove()
-      }
-    }
+    // Article + FAQPage JSON-LD emitted statically by meta-inject.
   }, [location])
 
   return (
