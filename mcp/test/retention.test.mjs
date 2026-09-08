@@ -10,12 +10,14 @@ import { test, mock } from 'node:test';
 import assert from 'node:assert';
 import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+// Real module (not mocked) — the tool measures cohort age from today
+// (window end = isoDaysAgo(0)), so fixtures must be dated RELATIVE to today,
+// or a "too young" cohort silently matures as the wall clock advances and the
+// maturity assertions rot. isoDaysAgo(n) reproduces the tool's own UTC dating.
+import { isoDaysAgo } from '../lib/shared.js';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const ga4Url = pathToFileURL(path.join(here, '..', 'lib', 'sources', 'ga4.js')).href;
-
-// Window ends 2026-09-01. Ages are measured from that date.
-const WIN_END = '2026-09-01';
 
 const calls = [];
 const state = { open: [], practice: [] };
@@ -60,10 +62,9 @@ test('retention is reported by open AND by practice, never as one number', async
 });
 
 test('a cohort too young for a milestone is excluded, not counted as zero', async () => {
-  // 2026-08-30 is 2 days before the window end: old enough for nothing.
   state.open = [
-    ...rows('2026-08-01', 100, { 1: 30, 7: 10 }),   // 31 days old — complete
-    ...rows('2026-08-30', 50, { 1: 0, 7: 0 }),      // 2 days old — d7 impossible
+    ...rows(isoDaysAgo(31), 100, { 1: 30, 7: 10 }),  // 31 days old — d7 complete
+    ...rows(isoDaysAgo(3), 50, { 1: 0, 7: 0 }),       // 3 days old — d7 needs 9d, impossible
   ];
   state.practice = [];
   const r = await retentionReview({ since: 28 });
@@ -77,7 +78,7 @@ test('a cohort too young for a milestone is excluded, not counted as zero', asyn
 });
 
 test('when no cohort is old enough, the milestone says "no data", not 0%', async () => {
-  state.open = rows('2026-08-31', 40, { 1: 0 });   // 1 day old
+  state.open = rows(isoDaysAgo(1), 40, { 1: 0 });   // 1 day old — nothing mature, d30 impossible
   state.practice = [];
   const r = await retentionReview({ since: 28 });
   const d30 = r.by_open.milestones.d30;
@@ -87,13 +88,14 @@ test('when no cohort is old enough, the milestone says "no data", not 0%', async
 });
 
 test('per-cohort rows mark immature milestones instead of showing 0%', async () => {
+  const youngCohort = isoDaysAgo(3); // 3 days old: d1 complete (needs 3d), d7 not (needs 9d)
   state.open = [
-    ...rows('2026-08-01', 100, { 1: 30, 7: 10 }),
-    ...rows('2026-08-29', 20, { 1: 5 }),
+    ...rows(isoDaysAgo(31), 100, { 1: 30, 7: 10 }),
+    ...rows(youngCohort, 20, { 1: 5 }),
   ];
   state.practice = [];
   const r = await retentionReview({ since: 28, view: 'by_cohort' });
-  const young = r.by_open.by_cohort.find((c) => c.cohort === '2026-08-29');
+  const young = r.by_open.by_cohort.find((c) => c.cohort === youngCohort);
   assert.equal(young.d1.pct, 25, 'd1 is measurable at 3 days old');
   assert.equal(young.d7.incomplete, true);
   assert.equal(young.d7.pct, null, 'no percentage invented for a milestone that has not happened');
