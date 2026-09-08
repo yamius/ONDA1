@@ -41,10 +41,13 @@ jobs:
           supabase link --project-ref ${{ secrets.SUPABASE_PROJECT_REF }}
           
           echo "Applying migration: ${{ github.event.inputs.migration_file }}"
-          
-          # Execute the SQL file directly
-          supabase db execute --file "supabase/migrations/${{ github.event.inputs.migration_file }}"
-          
+
+          # Execute the SQL file against the LINKED remote db.
+          # (The old `supabase db execute --file` was removed from the CLI —
+          #  it's now `supabase db query --file`; --linked targets the remote
+          #  project set up by `supabase link` above, not a local db.)
+          supabase db query --linked --file "supabase/migrations/${{ github.event.inputs.migration_file }}"
+
           echo "✅ Migration applied successfully!"
         env:
           SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
