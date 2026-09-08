@@ -261,6 +261,44 @@ export function ArticlesPage() {
           ))}
         </div>
       </div>
+
+      {/* ── About the knowledge base — closing SEO/answer-engine body ────── */}
+      <section className="mt-16 border-t border-white/10 pt-10">
+        <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">
+          {t('about.heading', { defaultValue: 'About this knowledge base' })}
+        </h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/60">
+          <p>
+            {t('about.p1', {
+              defaultValue:
+                'ONDA’s knowledge base is a long-form library on the nervous system, heart-rate variability, breathwork, sleep, recovery and the science of self-regulation — written to explain the mechanism, not just list tips. Where a claim is well-supported we cite it; where an idea is a framing or still experimental, we say so and keep it separate from the measured science.',
+            })}
+          </p>
+          <p>
+            {t('about.p2', {
+              defaultValue:
+                'Articles are grouped into topic hubs by cluster — HRV, circadian rhythm, dopamine, metabolism, breathwork, neuroplasticity, cognition and more — so each piece sits inside the whole system it belongs to rather than standing alone. Use the topic chips above to enter a cluster, or search to jump straight to a term.',
+            })}
+          </p>
+          <p>
+            {t('about.p3', {
+              defaultValue: 'To go deeper on the measured side, see',
+            })}{' '}
+            <Link to={langHref('/measurements', lang)} className="text-terminal-green hover:underline">
+              {t('about.measuresLink', { defaultValue: 'what ONDA measures' })}
+            </Link>
+            ,{' '}
+            <Link to={langHref('/research', lang)} className="text-terminal-green hover:underline">
+              {t('about.researchLink', { defaultValue: 'the evidence' })}
+            </Link>{' '}
+            {t('about.and', { defaultValue: 'and the' })}{' '}
+            <Link to={langHref('/glossary', lang)} className="text-terminal-green hover:underline">
+              {t('about.glossaryLink', { defaultValue: 'glossary' })}
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
     </div>
   )
 }

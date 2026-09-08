@@ -23,20 +23,8 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
-}
-
 export function TopicsPage() {
   const location = useLocation()
-  const liveTopics = TOPICS.filter((t) => !!t.pillar)
 
   useEffect(() => {
     void location
@@ -52,33 +40,8 @@ export function TopicsPage() {
     setMeta('twitter:card', 'summary_large_image', true)
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
-
-    setOrCreateScript('ld-topics-collection', {
-      '@context': 'https://schema.org',
-      '@type': 'CollectionPage',
-      '@id': `${PAGE_URL}#collection`,
-      url: PAGE_URL,
-      name: title,
-      description: desc,
-      inLanguage: 'en',
-      isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL },
-      mainEntity: {
-        '@type': 'ItemList',
-        numberOfItems: liveTopics.length,
-        itemListElement: liveTopics.map((t, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          url: `${SITE_URL}/topics/${t.slug}`,
-          name: t.name,
-        })),
-      },
-    })
-
-    return () => {
-      const el = document.getElementById('ld-topics-collection')
-      if (el) el.remove()
-    }
-  }, [location, liveTopics])
+    // CollectionPage/ItemList JSON-LD is emitted statically by meta-inject.
+  }, [location])
 
   return (
     <div className="mx-auto max-w-4xl px-4 pb-16 pt-6 md:px-6">

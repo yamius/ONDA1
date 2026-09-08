@@ -25,17 +25,6 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-function setOrCreateScript(id: string, json: object) {
-  let el = document.getElementById(id) as HTMLScriptElement | null
-  if (!el) {
-    el = document.createElement('script')
-    el.id = id
-    el.type = 'application/ld+json'
-    document.head.appendChild(el)
-  }
-  el.textContent = JSON.stringify(json)
-}
-
 /** Domain groupings for the closing body — each maps to tool `category` values. */
 const TOOL_DOMAINS: { title: string; cats: string[]; body: string }[] = [
   {
@@ -84,32 +73,7 @@ export function ToolsPage() {
     setMeta('twitter:title', title, true)
     setMeta('twitter:description', desc, true)
     window.scrollTo({ top: 0 })
-
-    setOrCreateScript('ld-tools-collection', {
-      '@context': 'https://schema.org',
-      '@type': 'CollectionPage',
-      '@id': `${PAGE_URL}#collection`,
-      url: PAGE_URL,
-      name: title,
-      description: desc,
-      inLanguage: 'en',
-      isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL },
-      mainEntity: {
-        '@type': 'ItemList',
-        numberOfItems: TOOLS.length,
-        itemListElement: TOOLS.map((t, i) => ({
-          '@type': 'ListItem',
-          position: i + 1,
-          url: `${SITE_URL}/tools/${t.slug}`,
-          name: t.name,
-        })),
-      },
-    })
-
-    return () => {
-      const el = document.getElementById('ld-tools-collection')
-      if (el) el.remove()
-    }
+    // CollectionPage/ItemList JSON-LD is emitted statically by meta-inject.
   }, [])
 
   return (

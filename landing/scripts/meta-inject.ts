@@ -19,6 +19,7 @@ import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
+import { TOOLS } from '../src/data/tools'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
 import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
@@ -1699,6 +1700,13 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      itemList: {
+        name: 'Biohacking Tools & Calculators',
+        description:
+          'Free interactive calculators for HRV, sleep, heart-rate zones, nutrition and more.',
+        url,
+        items: TOOLS.map((t) => ({ url: `${SITE_URL}/tools/${t.slug}`, name: t.name })),
+      },
     }
   }
   if (route === '/tools/hrv') {
@@ -2736,6 +2744,15 @@ export function getMetaForRoute(route: string): RouteMeta {
         'Articles and glossary terms grouped by semantic cluster: HRV, Circadian, Dopamine, Metabolic, Breathwork, Neuroplasticity, Cognitive, Spinal, Hormones, Longevity.',
       url,
       breadcrumbs,
+      itemList: {
+        name: 'Topic Hubs',
+        description: 'Pillar hubs grouping ONDA articles and glossary terms by cluster.',
+        url,
+        items: TOPICS.filter((t) => !!t.pillar).map((t) => ({
+          url: `${SITE_URL}/topics/${t.slug}`,
+          name: t.name,
+        })),
+      },
     }
   }
 

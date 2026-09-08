@@ -128,6 +128,36 @@ export function ReviewsPage() {
         </section>
       )}
 
+      {/* ── About these reviews — independence + method, for search/AI ───── */}
+      <section className="mt-4 border-t border-white/10 pt-10">
+        <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">
+          {tReviews('hub.about.heading', { defaultValue: 'About these reviews' })}
+        </h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/60">
+          <p>
+            {tReviews('hub.about.p1', {
+              defaultValue:
+                'These are independent, criteria-based reviews of HRV trackers, wearables and recovery tools — each product scored on the same rubric (measurement accuracy, data access, app and ecosystem, comfort, value) rather than a vibe or a sponsorship. The scoring method is public, and the same axes apply to every device so scores are comparable across the catalogue.',
+            })}
+          </p>
+          <p>
+            {tReviews('hub.about.p2', {
+              defaultValue:
+                'We keep this independent on purpose. The links here are plain product links, not affiliate links, so a review has nothing to gain from steering you toward a purchase. And ONDA — our own app — is deliberately left out of the scored reviews entirely; when you want to see how ONDA stacks up against the alternatives, that lives separately in our labelled comparisons, never mixed into the independent scores.',
+            })}
+          </p>
+          <p>
+            {tReviews('hub.about.p3', {
+              defaultValue:
+                'Browse by category above for the round-up, individual reviews and head-to-head comparisons in one place, or read the scoring rubric first.',
+            })}{' '}
+            <Link to={langHref('/reviews/methodology', lang)} className="text-terminal-green hover:underline">
+              {tReviews('hub.about.methodologyLink', { defaultValue: 'See the full methodology' })}
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
     </div>
   )
 }

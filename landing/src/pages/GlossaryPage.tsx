@@ -203,6 +203,40 @@ export function GlossaryPage() {
           </p>
         </div>
       )}
+
+      {/* ── About the glossary — closing SEO/answer-engine body ──────────── */}
+      <section className="mt-16 border-t border-white/10 pt-10">
+        <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">
+          {t('about.heading', { defaultValue: 'About this glossary' })}
+        </h2>
+        <div className="space-y-4 font-mono text-sm leading-relaxed text-white/60">
+          <p>
+            {t('about.p1', {
+              defaultValue:
+                'A plain-language reference for the vocabulary of the nervous system and self-regulation — HRV, RMSSD, vagal tone, coherence, resonance frequency, interoception and the rest. Each term has a short definition you can read in a sentence and a fuller entry with the mechanism and cross-links to related terms.',
+            })}
+          </p>
+          <p>
+            {t('about.p2', {
+              defaultValue:
+                'Terms marked with an amber “ONDA” tag are our own framing or product vocabulary, not established scientific terms — we label them so you always know which is which. Everything else is standard terminology, defined as the field uses it and, where it matters, linked to the evidence.',
+            })}
+          </p>
+          <p>
+            {t('about.p3', {
+              defaultValue: 'For the applied side, see',
+            })}{' '}
+            <Link to={`${langPrefix}/measurements`} className="text-terminal-green hover:underline">
+              {t('about.measuresLink', { defaultValue: 'what ONDA measures' })}
+            </Link>{' '}
+            {t('about.and', { defaultValue: 'and the' })}{' '}
+            <Link to={`${langPrefix}/hrv-biofeedback`} className="text-terminal-green hover:underline">
+              {t('about.hrvLink', { defaultValue: 'HRV biofeedback explainer' })}
+            </Link>
+            .
+          </p>
+        </div>
+      </section>
     </div>
   )
 }
