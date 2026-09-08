@@ -189,8 +189,8 @@ const OndaLevel1 = () => {
   // (~40px). `pos` overrides the corner; `opts` lets a block drive its own state
   // (e.g. the Journey accordion uses journeyOpen instead of collapsedBlocks).
   const collapseDot = (id: string, pos?: { top?: number; right?: number }, opts?: { collapsed?: boolean; onToggle?: () => void }) => {
-    const dotTop = pos?.top ?? 9;    // corner
-    const dotRight = pos?.right ?? 9;
+    const dotTop = pos?.top ?? 6;    // corner
+    const dotRight = pos?.right ?? 6;
     const collapsed = opts?.collapsed ?? isCollapsed(id);
     const toggle = opts?.onToggle ?? (() => toggleCollapse(id));
     const GRAY = 'rgb(148,163,184)';
@@ -5976,6 +5976,9 @@ const OndaLevel1 = () => {
     const bonus = calculateBonus();
     const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
     const isExpanded = expandedPractice === practice.id;
+    // Compact = this tile is collapsible AND currently folded. In that state we
+    // strip the recommended indigo ring + the progress % so the bar reads clean.
+    const compact = collapsible && isCollapsed(`practice_${practice.id}`);
 
     return (
       <div
@@ -6011,11 +6014,11 @@ const OndaLevel1 = () => {
             : activeCircuit === 12
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
-        } ${isFeatured ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
+        } ${isFeatured && !compact ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
         style={collapsible ? collapseStyle(`practice_${practice.id}`, 45, 9) : undefined}
       >
         {collapsible && collapseDot(`practice_${practice.id}`)}
-        {isFeatured && !(collapsible && isCollapsed(`practice_${practice.id}`)) && (
+        {isFeatured && !compact && (
           <span
             className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
             data-testid="featured-badge"
@@ -6028,19 +6031,21 @@ const OndaLevel1 = () => {
             to its own line below. */}
         <div className="flex items-center justify-between mb-1">
           <h3 className="flex-1 pr-6 text-xl font-semibold">{getPracticeName(practice.id)}</h3>
-          {isCompleted?.isValidForArtifact ? (
-            <div className="text-right">
-              <CheckCircle className="w-6 h-6 text-emerald-400 ml-auto" />
-              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-            </div>
-          ) : isCompleted ? (
-            <div className="text-right">
-              <Circle className="w-6 h-6 text-emerald-400 ml-auto" />
-              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-            </div>
-          ) : (
-            <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
-          )}
+          {/* Status box is a FIXED 24px square so the row height never changes —
+              the progress % floats absolutely below (and is hidden when compact),
+              keeping the title anchored to the circle's centre. */}
+          <div className="relative w-6 h-6 shrink-0">
+            {isCompleted?.isValidForArtifact ? (
+              <CheckCircle className="w-6 h-6 text-emerald-400" />
+            ) : isCompleted ? (
+              <Circle className="w-6 h-6 text-emerald-400" />
+            ) : (
+              <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
+            )}
+            {isCompleted && !compact && (
+              <div className="absolute top-full right-0 mt-0.5 text-xs leading-none text-emerald-300 whitespace-nowrap">{safeToFixed(bestQuality, 0)}%</div>
+            )}
+          </div>
         </div>
         <p className="text-sm text-gray-400 mb-3">{practice.duration}</p>
         {(() => {
@@ -6601,7 +6606,7 @@ const OndaLevel1 = () => {
 
         {/* Установка — the intention block before the practices (placeholder copy). */}
         <div className="mb-6 flex flex-col items-center">
-          <div className={`relative w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
+          <div className={`relative w-full max-w-[360px] rounded-lg p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
             {collapseDot('recommendations')}
             <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
             <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
@@ -6620,7 +6625,7 @@ const OndaLevel1 = () => {
           {[
             ...currentCircuit.practices.filter(p => p.id === featuredPracticeId),
             ...currentCircuit.practices.filter(p => p.id !== featuredPracticeId),
-          ].map((practice, idx) => renderPracticeCard(practice, idx === 0, idx < 3))}
+          ].map((practice, idx) => renderPracticeCard(practice, idx === 0, true))}
         </div>
 
         {/* Section 2.5 — Part Progress bar. Hidden while the user has
