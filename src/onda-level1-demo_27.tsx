@@ -164,6 +164,39 @@ const OndaLevel1 = () => {
   const [baselineShift, setBaselineShift] = useState(false);
   // Today's same-shaped read (queryBaseline days=1) — the "today" side of Shift deltas.
   const [baselineToday, setBaselineToday] = useState<BaselineData | null>(null);
+
+  // Collapsible home blocks: a small light-coral dot (top-right) folds each block
+  // to a compact bar (max-height clip). State persists per block in localStorage.
+  const [collapsedBlocks, setCollapsedBlocks] = useState<Record<string, boolean>>(() => {
+    try { return JSON.parse(localStorage.getItem('onda_collapsed_blocks') || '{}'); } catch { return {}; }
+  });
+  const toggleCollapse = (id: string) => setCollapsedBlocks((c) => {
+    const next = { ...c, [id]: !c[id] };
+    try { localStorage.setItem('onda_collapsed_blocks', JSON.stringify(next)); } catch { /* noop */ }
+    return next;
+  });
+  const isCollapsed = (id: string) => !!collapsedBlocks[id];
+  // The toggle dot — solid light-coral when open, a hollow ring when collapsed.
+  // `pos` overrides the default top-right placement for blocks whose corner
+  // already holds content (e.g. the 13/6 figures — the dot floats just above).
+  const collapseDot = (id: string, pos?: { top?: string; right?: string }) => (
+    <button
+      type="button"
+      onClick={(e) => { e.stopPropagation(); toggleCollapse(id); }}
+      aria-label="collapse"
+      data-testid={`collapse-${id}`}
+      className="absolute z-20 rounded-full transition-all"
+      style={{
+        top: pos?.top ?? '10px', right: pos?.right ?? '10px', width: '14px', height: '14px', cursor: 'pointer',
+        background: isCollapsed(id) ? 'transparent' : 'rgb(240,128,128)',
+        border: '2px solid rgb(240,128,128)',
+        boxShadow: '0 0 6px rgba(240,128,128,0.55)',
+      }}
+    />
+  );
+  // Style that folds a block to a compact bar when collapsed.
+  const collapseStyle = (id: string, barPx: number): React.CSSProperties =>
+    isCollapsed(id) ? { maxHeight: `${barPx}px`, overflow: 'hidden', transition: 'max-height 0.3s ease' } : { transition: 'max-height 0.3s ease' };
   // Rolling stats over the current camera reading → avg/min/max pulse + a
   // breathing estimate. Reset on each fresh start, sealed into a card on stop.
   const camSessionRef = useRef({ min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 });
@@ -5895,7 +5928,7 @@ const OndaLevel1 = () => {
   // hero) can show the same card markup that the Section 5 grid uses,
   // without duplicating 160+ lines of JSX. All closures (state setters,
   // theme tokens, t, etc.) are captured from the component scope.
-  const renderPracticeCard = (practice: any, isFeatured: boolean = false) => {
+  const renderPracticeCard = (practice: any, isFeatured: boolean = false, collapsible: boolean = false) => {
     const sessions = getPracticeSessions(practice.id);
     const completedData = completedPractices[practice.id];
     // Лучшее качество из сессий или из completedData
@@ -5943,7 +5976,9 @@ const OndaLevel1 = () => {
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
         } ${isFeatured ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
+        style={collapsible ? collapseStyle(`practice_${practice.id}`, 78) : undefined}
       >
+        {collapsible && collapseDot(`practice_${practice.id}`)}
         {isFeatured && (
           <span
             className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
@@ -6452,12 +6487,13 @@ const OndaLevel1 = () => {
               </div>
             ) : displayHeartRate != null ? (
               /* WATCH → Coherence hero (heart–breath synchrony; never medical). */
-              <div className={`rounded-2xl p-4 sm:p-5 ${
+              <div className={`relative rounded-2xl p-4 sm:p-5 ${
                 isLight
                   ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
                   : 'bg-black/20 backdrop-blur-sm border border-white/10'
-              }`}>
-                <div className="flex items-baseline justify-between">
+              }`} style={collapseStyle('coherence', 70)}>
+                {collapseDot('coherence')}
+                <div className="flex items-baseline justify-between pr-6">
                   <div className="text-left">
                     <div className={`text-sm font-semibold ${isLight ? 'text-slate-600' : 'text-white/90'}`}>{t('practices.coherence')}</div>
                     <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('home.coherence.caption', 'heart–breath rhythm')}</div>
@@ -6514,15 +6550,19 @@ const OndaLevel1 = () => {
         {/* Closing breathing figures (13 / 6) — after the coherence window. */}
         {baseline && (
           <div className="mb-6 flex flex-col items-center">
-            <div className="w-full max-w-[360px]">
-              <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+            <div className="relative w-full max-w-[360px]">
+              {collapseDot('breathing_1306', { top: '2px', right: '4px' })}
+              <div style={collapseStyle('breathing_1306', 52)}>
+                <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+              </div>
             </div>
           </div>
         )}
 
         {/* Установка — the intention block before the practices (placeholder copy). */}
         <div className="mb-6 flex flex-col items-center">
-          <div className={`w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`}>
+          <div className={`relative w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 64)}>
+            {collapseDot('recommendations')}
             <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
             <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
               {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
@@ -6540,7 +6580,7 @@ const OndaLevel1 = () => {
           {[
             ...currentCircuit.practices.filter(p => p.id === featuredPracticeId),
             ...currentCircuit.practices.filter(p => p.id !== featuredPracticeId),
-          ].map((practice, idx) => renderPracticeCard(practice, idx === 0))}
+          ].map((practice, idx) => renderPracticeCard(practice, idx === 0, idx < 3))}
         </div>
 
         {/* Section 2.5 — Part Progress bar. Hidden while the user has
