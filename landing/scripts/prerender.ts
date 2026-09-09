@@ -305,6 +305,7 @@ function pageUrlFor(basePath: string, lang: Lang): string {
  */
 const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/product': ['en', 'ru', 'es'],
+  '/topics': ['en', 'ru', 'es'],
   '/faq': ['en', 'ru', 'es'],
   '/tools': ['en', 'ru', 'es'],
 }

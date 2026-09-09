@@ -177,6 +177,8 @@ export function createApp(location: string, lang?: Lang) {
           ))}
           <Route path="/bio/:metric"    element={<BioMetricPage />} />
           <Route path="/topics"         element={<TopicsPage />} />
+          <Route path="/ru/topics"      element={<TopicsPage />} />
+          <Route path="/es/topics"      element={<TopicsPage />} />
           <Route path="/topics/:slug"   element={<TopicPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />

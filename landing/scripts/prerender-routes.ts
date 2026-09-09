@@ -435,6 +435,8 @@ const nonLocalizedStaticPaths = [
   '/glossary',
   '/the-stack',
   '/topics',
+  '/ru/topics',
+  '/es/topics',
   '/reviews',
   '/reviews/methodology',
   // /research — dedicated research-partner landing, linked from the

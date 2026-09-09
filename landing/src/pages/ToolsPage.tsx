@@ -12,7 +12,7 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 import { TOOLS } from '../data/tools'
 import { TOOLS_I18N, type ToolsCopy } from '../data/tools-i18n'
 
@@ -121,8 +121,7 @@ export function ToolsPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
   const copy = lang === 'ru' || lang === 'es' ? TOOLS_I18N[lang] : EN_COPY
-  const langPrefix = prefixFor(lang)
-  const pageUrl = `${SITE_URL}${langPrefix}/tools`
+  const pageUrl = `${SITE_URL}${prefixFor(lang)}/tools`
 
   useEffect(() => {
     document.title = copy.metaTitle
@@ -142,7 +141,7 @@ export function ToolsPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={homePathFor(lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">{copy.breadcrumbTools}</span>
       </nav>
@@ -151,7 +150,7 @@ export function ToolsPage() {
       <p className="mb-4 font-mono text-sm leading-relaxed text-white/60">{copy.intro1}</p>
       <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
         {copy.intro2Pre}
-        <Link to={`${langPrefix}/product`} className="text-terminal-green hover:underline">{copy.ondaLink}</Link>
+        <Link to={langHref('/product', lang)} className="text-terminal-green hover:underline">{copy.ondaLink}</Link>
         {copy.intro2Post}
       </p>
 
@@ -159,7 +158,7 @@ export function ToolsPage() {
           its own richer engine; here it's surfaced under the Tools group as a
           featured entry (nav placement only — the path is unchanged). */}
       <Link
-        to={`${langPrefix}/bio`}
+        to={langHref('/bio', lang)}
         className="mb-4 block rounded-xl border border-terminal-green/30 bg-terminal-green/5 p-5 transition-colors hover:border-terminal-green/50 hover:bg-terminal-green/10"
       >
         <div className="mb-1 flex items-center gap-3">
@@ -173,7 +172,7 @@ export function ToolsPage() {
         {TOOLS.map((t) => (
           <Link
             key={t.slug}
-            to={`${langPrefix}/tools/${t.slug}`}
+            to={`/tools/${t.slug}`}
             className="block rounded-xl border border-white/10 bg-white/5 p-5 transition-colors hover:border-terminal-green/40 hover:bg-terminal-green/5"
           >
             <div className="mb-1 flex items-center gap-3">
@@ -192,9 +191,9 @@ export function ToolsPage() {
           <p>{copy.aboutP1}</p>
           <p>
             {copy.aboutP2Pre}
-            <Link to={`${langPrefix}/measurements`} className="text-terminal-green hover:underline">{copy.measuresLink}</Link>
+            <Link to={langHref('/measurements', lang)} className="text-terminal-green hover:underline">{copy.measuresLink}</Link>
             {copy.aboutP2Mid}
-            <Link to={`${langPrefix}/research`} className="text-terminal-green hover:underline">{copy.researchLink}</Link>
+            <Link to={langHref('/research', lang)} className="text-terminal-green hover:underline">{copy.researchLink}</Link>
             {copy.aboutP2Post}
           </p>
         </div>
@@ -223,9 +222,9 @@ export function ToolsPage() {
 
         <p className="mt-8 font-mono text-sm leading-relaxed text-white/60">
           {copy.ctaPre}
-          <Link to={`${langPrefix}/product`} className="text-terminal-green hover:underline">{copy.seeLink}</Link>
+          <Link to={langHref('/product', lang)} className="text-terminal-green hover:underline">{copy.seeLink}</Link>
           {copy.ctaMid}
-          <Link to={`${langPrefix}/compare`} className="text-terminal-green hover:underline">{copy.compareLink}</Link>
+          <Link to={langHref('/compare', lang)} className="text-terminal-green hover:underline">{copy.compareLink}</Link>
           {copy.ctaPost}
         </p>
       </section>

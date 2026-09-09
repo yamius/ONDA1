@@ -116,7 +116,18 @@ export function homePathFor(lang: Lang): string {
  * so langHref must keep links to them on the bare EN URL rather than emit a
  * /<lang>/... route that soft-404s. Revisit when either is localized.
  */
-const NON_LOCALIZED_PREFIXES = ['/the-stack', '/topics', '/tools', '/research']
+// EN-only destinations. langHref must return the bare EN path for these so a
+// localized page never links to a /<lang>/... route that has no prerender.
+// (/tools and /topics HUBS are localized to ru/es, but their detail pages
+// — /tools/<slug>, /topics/<slug> — are EN-only, and langHref can't tell hub
+// from detail by prefix, so the whole prefix stays EN-safe here; the localized
+// hubs link to their own /<lang> URL directly, not via langHref.)
+const NON_LOCALIZED_PREFIXES = [
+  '/the-stack', '/topics', '/tools', '/research',
+  '/measurements', '/how-it-works', '/compare',
+  '/hrv-biofeedback', '/resonance-breathing', '/hrv-vs-coherence',
+  '/apple-watch-hrv-biofeedback', '/people',
+]
 
 /**
  * Prefix an internal path with the active language so navigation keeps the

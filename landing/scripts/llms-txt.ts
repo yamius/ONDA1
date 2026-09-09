@@ -105,7 +105,7 @@ function buildIndex(lang: Lang = 'en'): string {
 - [Bio](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard — the product experience on the web
 - [Research](${SITE_URL}/research): the evidence ONDA builds on (HRV biofeedback, resonance breathing) and what remains experimental
 - [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science
-- [Topics](${SITE_URL}/topics): pillar hubs grouping articles + glossary by cluster (HRV, circadian, dopamine, metabolic, breathwork, neuroplasticity, cognition, spinal, hormones, longevity)
+- [Topics](${SITE_URL}${langPrefix}/topics): pillar hubs grouping articles + glossary by cluster (HRV, circadian, dopamine, metabolic, breathwork, neuroplasticity, cognition, spinal, hormones, longevity)
 - [Glossary](${SITE_URL}/glossary): defined terms with cross-links
 - [FAQ](${SITE_URL}/faq): straight answers on HRV biofeedback, resonance breathing, HRV science and the ONDA app
 - [Reviews](${SITE_URL}/reviews): independent, criteria-based reviews of HRV/recovery/biohacking tools

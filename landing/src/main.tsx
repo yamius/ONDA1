@@ -203,6 +203,8 @@ const routeElements = (
               <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
             ))}
             <Route path="/topics"         element={<TopicsPage />} />
+            <Route path="/ru/topics"      element={<TopicsPage />} />
+            <Route path="/es/topics"      element={<TopicsPage />} />
             <Route path="/topics/:slug"   element={<TopicPage />} />
             <Route path="/research"              element={<ResearchPage />} />
             <Route path="/measurements"          element={<MeasurementsPage />} />

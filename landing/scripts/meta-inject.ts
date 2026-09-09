@@ -21,6 +21,7 @@ import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
 import { TOOLS } from '../src/data/tools'
 import { TOOLS_I18N } from '../src/data/tools-i18n'
+import { TOPICS_I18N } from '../src/data/topics-i18n'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
@@ -2775,6 +2776,26 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
 
   // /topics — index of all topic hubs.
+  // /ru/topics, /es/topics — localized topics hub. Hub pages themselves EN-only,
+  // so ItemList entries keep EN /topics/<slug> URLs.
+  if (route === '/ru/topics' || route === '/es/topics') {
+    const c = route === '/ru/topics' ? TOPICS_I18N.ru : TOPICS_I18N.es
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      itemList: {
+        name: c.h1,
+        description: c.metaDescription,
+        url,
+        items: TOPICS.filter((t) => !!t.pillar).map((t) => ({
+          url: `${SITE_URL}/topics/${t.slug}`,
+          name: t.name,
+        })),
+      },
+    }
+  }
   if (route === '/topics') {
     return {
       title: 'Topic Hubs | ONDA Life — Articles by Cluster',
