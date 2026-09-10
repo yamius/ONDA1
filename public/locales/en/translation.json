@@ -4238,7 +4238,19 @@
     "delete": "Delete",
     "edit": "Edit",
     "empty": "Nothing yet",
-    "empty_hint": "Drop a note about your day — a couple of words or your voice",
-    "day_pulse": "resting pulse {{rhr}}"
+    "empty_hint": "Drop a note about your day — a few words, voice or a photo",
+    "day_pulse": "resting pulse {{rhr}}",
+    "timeline": "Timeline",
+    "scale_week": "Week",
+    "scale_month": "Month",
+    "scale_all": "All",
+    "rail_baseline": "Baseline",
+    "rail_diary": "Diary",
+    "add": "Add",
+    "add_text": "Text",
+    "add_voice": "Voice",
+    "add_photo": "Photo",
+    "photo": "Photo",
+    "new_entry": "New entry"
   }
 }

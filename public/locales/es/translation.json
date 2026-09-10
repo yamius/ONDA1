@@ -4238,7 +4238,19 @@
     "delete": "Eliminar",
     "edit": "Editar",
     "empty": "Aún nada",
-    "empty_hint": "Anota algo de tu día: un par de palabras o tu voz",
-    "day_pulse": "pulso en reposo {{rhr}}"
+    "empty_hint": "Anota algo de tu día: unas palabras, voz o una foto",
+    "day_pulse": "pulso en reposo {{rhr}}",
+    "timeline": "Cronología",
+    "scale_week": "Semana",
+    "scale_month": "Mes",
+    "scale_all": "Todo",
+    "rail_baseline": "Baseline",
+    "rail_diary": "Diario",
+    "add": "Añadir",
+    "add_text": "Texto",
+    "add_voice": "Voz",
+    "add_photo": "Foto",
+    "photo": "Foto",
+    "new_entry": "Nueva entrada"
   }
 }

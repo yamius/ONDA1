@@ -12,7 +12,7 @@
 import { supabase } from './supabase';
 import { trackEvent } from '../services/AnalyticsService';
 
-export type DiarySource = 'text' | 'voice' | 'text_voice';
+export type DiarySource = 'text' | 'voice' | 'photo' | 'text_voice' | 'mixed';
 
 export interface DiaryEntry {
   id: string;              // client-generated, stable across the sync
@@ -20,9 +20,19 @@ export interface DiaryEntry {
   event_time: string;      // ISO — when it actually happened (may be backdated)
   text: string;
   audioBase64?: string;    // MVP: voice kept locally as base64 (not synced yet)
+  photoBase64?: string;    // MVP: photo kept locally as base64 (not synced yet)
   source: DiarySource;
   rhr?: number | null;     // resting-pulse snapshot for that day, if known (§5)
   synced?: boolean;        // migrated to Supabase
+}
+
+/** Derive the coarse source label from what an entry actually carries. */
+export function diarySource(hasText: boolean, hasVoice: boolean, hasPhoto: boolean): DiarySource {
+  const n = Number(hasText) + Number(hasVoice) + Number(hasPhoto);
+  if (n > 1) return 'mixed';
+  if (hasVoice) return 'voice';
+  if (hasPhoto) return 'photo';
+  return 'text';
 }
 
 const KEY = 'onda_diary_entries';

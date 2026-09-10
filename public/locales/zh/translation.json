@@ -4238,7 +4238,19 @@
     "delete": "删除",
     "edit": "编辑",
     "empty": "还没有内容",
-    "empty_hint": "记下今天的一点——几句话或语音",
-    "day_pulse": "静息脉搏 {{rhr}}"
+    "empty_hint": "记下今天的一点——几句话、语音或照片",
+    "day_pulse": "静息脉搏 {{rhr}}",
+    "timeline": "时间线",
+    "scale_week": "周",
+    "scale_month": "月",
+    "scale_all": "全部",
+    "rail_baseline": "基线",
+    "rail_diary": "日记",
+    "add": "添加",
+    "add_text": "文字",
+    "add_voice": "语音",
+    "add_photo": "照片",
+    "photo": "照片",
+    "new_entry": "新记录"
   }
 }
