@@ -462,8 +462,11 @@ const nonLocalizedStaticPaths = [
   '/resonance-breathing',
   '/hrv-vs-coherence',
   '/apple-watch-hrv-biofeedback',
-  // /compare — ONDA's own "ONDA vs <competitor>" comparisons. EN-only.
+  // /compare — ONDA's own "ONDA vs <competitor>" comparisons. Hub localized to
+  // ru + es; the /compare/<slug> detail pages are EN-only.
   '/compare',
+  '/ru/compare',
+  '/es/compare',
   ...ONDA_VS.map((e) => `/compare/${e.slug}`),
   ...ONDA_ROUNDUPS.map((r) => `/compare/${r.slug}`),
   // Interactive biohacking tools. Hub localized to ru + es; tool pages EN-only.

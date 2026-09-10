@@ -109,7 +109,7 @@ function buildIndex(lang: Lang = 'en'): string {
 - [Glossary](${SITE_URL}/glossary): defined terms with cross-links
 - [FAQ](${SITE_URL}/faq): straight answers on HRV biofeedback, resonance breathing, HRV science and the ONDA app
 - [Reviews](${SITE_URL}/reviews): independent, criteria-based reviews of HRV/recovery/biohacking tools
-- [Compare (ONDA vs alternatives)](${SITE_URL}/compare): ONDA Life's own objective comparisons vs Oura, WHOOP, Headspace, Calm, Breathwrk, Elite HRV — capability tables + who each is best for
+- [Compare (ONDA vs alternatives)](${SITE_URL}${langPrefix}/compare): ONDA Life's own objective comparisons vs Oura, WHOOP, Headspace, Calm, Breathwrk, Elite HRV — capability tables + who each is best for
 - [Best HRV biofeedback apps](${SITE_URL}/compare/best-hrv-biofeedback-apps): ONDA's ranked guide to real-time HRV biofeedback apps (ONDA, Elite HRV, Breathwrk)
 - [Best real-time breathing apps](${SITE_URL}/compare/best-real-time-breathing-apps): breathing apps with live coherence/heart-rhythm feedback, ranked
 - [Best active HRV training apps](${SITE_URL}/compare/best-active-hrv-training-apps): apps that train HRV vs passive trackers, ranked

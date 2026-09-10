@@ -198,6 +198,8 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/hrv-vs-coherence"      element={<HrvVsCoherencePage />} />
           <Route path="/apple-watch-hrv-biofeedback" element={<AppleWatchHrvBiofeedbackPage />} />
           <Route path="/compare"               element={<OndaComparePage />} />
+          <Route path="/ru/compare"            element={<OndaComparePage />} />
+          <Route path="/es/compare"            element={<OndaComparePage />} />
           <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
           <Route path="/tools"                 element={<ToolsPage />} />
           <Route path="/ru/tools"              element={<ToolsPage />} />

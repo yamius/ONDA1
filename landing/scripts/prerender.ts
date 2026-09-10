@@ -308,6 +308,7 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/topics': ['en', 'ru', 'es'],
   '/faq': ['en', 'ru', 'es'],
   '/tools': ['en', 'ru', 'es'],
+  '/compare': ['en', 'ru', 'es'],
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.

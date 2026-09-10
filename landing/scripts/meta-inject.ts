@@ -14,7 +14,7 @@ import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
 import { MEASUREMENTS_FAQ } from '../src/data/measurements-faq'
-import { getOndaVs } from '../src/data/onda-vs'
+import { getOndaVs, ONDA_VS } from '../src/data/onda-vs'
 import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
@@ -22,6 +22,7 @@ import { FAQ_I18N } from '../src/data/faq-i18n'
 import { TOOLS } from '../src/data/tools'
 import { TOOLS_I18N } from '../src/data/tools-i18n'
 import { TOPICS_I18N } from '../src/data/topics-i18n'
+import { COMPARE_I18N } from '../src/data/compare-i18n'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
@@ -1676,6 +1677,24 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
   // /compare — ONDA's own comparison hub. EN-only.
+  // /ru/compare, /es/compare — localized compare hub. Detail pages EN-only, so
+  // ItemList entries keep EN /compare/<slug> URLs.
+  if (route === '/ru/compare' || route === '/es/compare') {
+    const c = route === '/ru/compare' ? COMPARE_I18N.ru : COMPARE_I18N.es
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      itemList: {
+        name: c.h1,
+        description: c.metaDescription,
+        url,
+        items: ONDA_VS.map((e) => ({ url: `${SITE_URL}/compare/${e.slug}`, name: e.title })),
+      },
+    }
+  }
   if (route === '/compare') {
     return {
       title: 'ONDA vs Oura, WHOOP, Headspace, Calm & more — Compared | ONDA Life',
@@ -1684,6 +1703,13 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
+      itemList: {
+        name: 'ONDA vs the alternatives',
+        description:
+          'ONDA Life’s own comparisons vs Oura, WHOOP, Headspace, Calm, Breathwrk and Elite HRV.',
+        url,
+        items: ONDA_VS.map((e) => ({ url: `${SITE_URL}/compare/${e.slug}`, name: e.title })),
+      },
     }
   }
   // /compare/<slug> — either a pairwise ONDA-vs page or a "top X" round-up.
