@@ -31,7 +31,7 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-const PAGE_TITLE = 'HRV Biofeedback: What It Is, How It Works & the Evidence | ONDA Life'
+const PAGE_TITLE = 'HRV Biofeedback: How It Works & the Evidence | ONDA Life'
 const PAGE_DESC =
   'HRV biofeedback explained: what it is, how the real-time feedback loop works, what the evidence supports, how it differs from HRV tracking, and how ONDA implements it. Honest and cited.'
 

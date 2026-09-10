@@ -1594,7 +1594,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   // /hrv-biofeedback — cornerstone bridge-entity page. EN-only.
   if (route === '/hrv-biofeedback') {
     return {
-      title: 'HRV Biofeedback: What It Is, How It Works & the Evidence | ONDA Life',
+      title: 'HRV Biofeedback: How It Works & the Evidence | ONDA Life',
       description:
         'HRV biofeedback explained: what it is, how the real-time feedback loop works, what the evidence supports, how it differs from HRV tracking, and how ONDA implements it. Honest and cited.',
       url,
@@ -1606,7 +1606,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   // /resonance-breathing — cornerstone science page. EN-only.
   if (route === '/resonance-breathing') {
     return {
-      title: 'Resonance Breathing: The Science of Slow Breathing & HRV | ONDA Life',
+      title: 'Resonance Breathing: Slow Breathing & HRV | ONDA Life',
       description:
         'Resonance breathing explained: what it is, why ~6 breaths a minute maximises HRV, how to find your resonance frequency, the evidence, how to practise, and how ONDA guides it.',
       url,

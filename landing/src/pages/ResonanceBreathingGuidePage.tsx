@@ -28,7 +28,7 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-const PAGE_TITLE = 'Resonance Breathing: The Science of Slow Breathing & HRV | ONDA Life'
+const PAGE_TITLE = 'Resonance Breathing: Slow Breathing & HRV | ONDA Life'
 const PAGE_DESC =
   'Resonance breathing explained: what it is, why ~6 breaths a minute maximises HRV, how to find your resonance frequency, the evidence, how to practise, and how ONDA guides it.'
 

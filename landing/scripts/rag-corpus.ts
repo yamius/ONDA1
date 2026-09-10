@@ -27,6 +27,10 @@ import { glossaryTerms } from '../src/data/glossary'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 import { reviews, comparisons } from '../src/data/reviews'
 import { TOOLS } from '../src/data/tools'
+import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
+import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
+import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
+import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const distDir = join(__dirname, '..', 'dist')
@@ -39,7 +43,7 @@ const AUTHOR = {
 
 interface CorpusRecord {
   id: string
-  type: 'article' | 'glossary' | 'review' | 'comparison' | 'tool'
+  type: 'article' | 'glossary' | 'review' | 'comparison' | 'tool' | 'cornerstone'
   language: 'en'
   url: string
   title: string
@@ -145,6 +149,46 @@ for (const t of TOOLS) {
   })
 }
 
+// Cornerstone explainer pages. Their prose lives in JSX (not a data module),
+// but the exported jsonLd() builders carry the Article (headline/description +
+// ScholarlyArticle citations) and FAQPage (Q&A) — the substantive, answer-shaped
+// content. We reconstruct a corpus body from those so the pages are in the
+// bulk-ingest dataset (Perplexity et al.) as first-class records, single-source
+// with no duplicated text. type 'cornerstone'.
+type JsonLdNode = Record<string, unknown>
+const CORNERSTONE_BUILDERS: { build: () => JsonLdNode[] }[] = [
+  { build: hrvBiofeedbackJsonLd },
+  { build: resonanceBreathingJsonLd },
+  { build: hrvVsCoherenceJsonLd },
+  { build: appleWatchHrvJsonLd },
+];
+for (const { build } of CORNERSTONE_BUILDERS) {
+  const nodes = build();
+  const article = nodes.find((n) => n['@type'] === 'Article') as any;
+  const faq = nodes.find((n) => n['@type'] === 'FAQPage') as any;
+  if (!article) continue;
+  const url: string = article.url;
+  const slug = url.replace(`${SITE_URL}/`, '');
+  const qa: string = (faq?.mainEntity ?? [])
+    .map((q: any) => `${q.name}\n${q.acceptedAnswer?.text ?? ''}`)
+    .join('\n\n');
+  const body = [article.description, qa].filter(Boolean).join('\n\n').trim();
+  records.push({
+    id: slug,
+    type: 'cornerstone',
+    language: 'en',
+    url,
+    title: String(article.headline ?? slug),
+    description: String(article.description ?? ''),
+    keywords: Array.isArray(article.about)
+      ? (article.about as string[])
+      : article.about ? [String(article.about)] : undefined,
+    wordCount: wordCount(body),
+    author: { name: AUTHOR.name, url: AUTHOR.url },
+    body,
+  });
+}
+
 // Stable ordering: articles, glossary, reviews, comparisons — each group
 // by slug. Helps downstream diffs across builds — Perplexity and friends
 // can detect "what changed since last fetch" without hashing the file.
@@ -154,6 +198,7 @@ const TYPE_ORDER: Record<CorpusRecord['type'], number> = {
   review: 2,
   comparison: 3,
   tool: 4,
+  cornerstone: 5,
 }
 records.sort((a, b) => {
   if (a.type !== b.type) return TYPE_ORDER[a.type] - TYPE_ORDER[b.type]
@@ -175,6 +220,7 @@ const glossaryCount = records.filter((r) => r.type === 'glossary').length
 const reviewCount = records.filter((r) => r.type === 'review').length
 const comparisonCount = records.filter((r) => r.type === 'comparison').length
 const toolCount = records.filter((r) => r.type === 'tool').length
+const cornerstoneCount = records.filter((r) => r.type === 'cornerstone').length
 console.log(
-  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms + ${reviewCount} reviews + ${comparisonCount} comparisons + ${toolCount} tools`,
+  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms + ${reviewCount} reviews + ${comparisonCount} comparisons + ${toolCount} tools + ${cornerstoneCount} cornerstones`,
 )
