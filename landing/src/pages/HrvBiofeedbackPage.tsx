@@ -14,6 +14,7 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { EVIDENCE_REFERENCES } from '../data/evidence'
+import { CornerstoneRelated } from '../components/CornerstoneRelated'
 
 const SITE_URL = 'https://onda-life.com'
 const PAGE_URL = `${SITE_URL}/hrv-biofeedback`
@@ -290,6 +291,8 @@ export function HrvBiofeedbackPage() {
           ))}
         </div>
       </section>
+
+      <CornerstoneRelated current="hrv-biofeedback" />
     </main>
   )
 }

@@ -5,6 +5,7 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { CornerstoneRelated } from '../components/CornerstoneRelated'
 
 const SITE_URL = 'https://onda-life.com'
 const PAGE_URL = `${SITE_URL}/hrv-vs-coherence`
@@ -217,6 +218,8 @@ export function HrvVsCoherencePage() {
           ))}
         </div>
       </section>
+
+      <CornerstoneRelated current="hrv-vs-coherence" />
     </main>
   )
 }

@@ -20,6 +20,10 @@ import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
 import { reviews, comparisons } from '../src/data/reviews'
 import { TOOLS } from '../src/data/tools'
+import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
+import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
+import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
+import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 
 type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh'
 const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh']
@@ -268,6 +272,32 @@ function buildFull(index: string): string {
       out.push(c.content.trim())
       out.push('\n---\n')
     }
+  }
+
+  // Cornerstone explainers — prose lives in JSX, but the exported jsonLd()
+  // builders carry the Article (headline/description) + FAQPage (Q&A), the
+  // answer-shaped content. Reconstruct a body from those so llms-full carries
+  // them, single-source with no duplicated text.
+  const cornerstoneBuilders: (() => Record<string, unknown>[])[] = [
+    hrvBiofeedbackJsonLd, resonanceBreathingJsonLd, hrvVsCoherenceJsonLd, appleWatchHrvJsonLd,
+  ]
+  out.push('## Cornerstone explainers (full Q&A)\n')
+  for (const build of cornerstoneBuilders) {
+    const nodes = build()
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const article = nodes.find((n) => n['@type'] === 'Article') as any
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const faq = nodes.find((n) => n['@type'] === 'FAQPage') as any
+    if (!article) continue
+    out.push(`### ${article.headline}\n`)
+    out.push(`URL: ${article.url}`)
+    out.push(`Description: ${article.description}\n`)
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    for (const q of (faq?.mainEntity ?? []) as any[]) {
+      out.push(`**${q.name}**`)
+      out.push(`${q.acceptedAnswer?.text ?? ''}\n`)
+    }
+    out.push('\n---\n')
   }
 
   return out.join('\n')

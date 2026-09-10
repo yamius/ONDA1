@@ -7,6 +7,7 @@
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { CornerstoneRelated } from '../components/CornerstoneRelated'
 import { appStoreUrl } from '../config/appStore'
 
 const SITE_URL = 'https://onda-life.com'
@@ -202,6 +203,8 @@ export function AppleWatchHrvBiofeedbackPage() {
           ))}
         </div>
       </section>
+
+      <CornerstoneRelated current="apple-watch-hrv-biofeedback" />
     </main>
   )
 }

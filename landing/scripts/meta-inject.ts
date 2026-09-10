@@ -1600,6 +1600,8 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: 'ONDA Life — HRV biofeedback: a live heart-rhythm wave you train with your breath',
       jsonLd: hrvBiofeedbackJsonLd(),
     }
   }
@@ -1612,6 +1614,8 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: 'ONDA Life — resonance breathing: slow ~6-breaths-a-minute paced breathing that raises HRV',
       jsonLd: resonanceBreathingJsonLd(),
     }
   }
@@ -1624,6 +1628,8 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: 'ONDA Life — HRV vs coherence: the raw beat-to-beat variation versus how smooth it is as you breathe',
       jsonLd: hrvVsCoherenceJsonLd(),
     }
   }
@@ -1636,6 +1642,8 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: 'ONDA Life — HRV biofeedback on Apple Watch: turning the Watch’s heart data into a live coherence loop',
       jsonLd: appleWatchHrvJsonLd(),
     }
   }
