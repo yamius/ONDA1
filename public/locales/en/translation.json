@@ -1191,7 +1191,7 @@
   },
   "home": {
     "progress": {
-      "title": "My Progress",
+      "title": "Progress",
       "streak_empty": "Complete your first practice to start your streak",
       "streak_label_one": "{{count}} day streak",
       "streak_label_other": "{{count}} day streak",
@@ -1210,7 +1210,7 @@
       "connect_watch": "Connect"
     },
     "journey": {
-      "title": "My Journey"
+      "title": "Journey"
     },
     "quick_mood": {
       "title": "Quick Mood Scan"
@@ -4191,12 +4191,12 @@
     "dark": "Dark"
   },
   "baseline": {
-    "title": "My Baseline",
+    "title": "Baseline",
     "subtitle": "Come back tomorrow and see the difference",
     "subtitle_note": "(between the period average and today)",
     "shift": "Shift",
     "empty_hint": "Connect your Apple Watch to open your 14-night baseline from Health",
-    "setup_title": "My Recommendations",
+    "setup_title": "Recommendations",
     "setup_body": "The practices below balance your heart rhythm — just follow the prompts as you go.",
     "resting_pulse": "RESTING PULSE",
     "vs_baseline": "vs baseline",
@@ -4226,7 +4226,7 @@
   },
   "diary": {
     "title": "Diary",
-    "record_cta": "Record your day",
+    "record_cta": "Timeline",
     "text_placeholder": "What happened? A word or two…",
     "voice": "Voice",
     "recording": "Recording",

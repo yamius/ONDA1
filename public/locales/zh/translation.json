@@ -1149,7 +1149,7 @@
   },
   "home": {
     "progress": {
-      "title": "我的进度",
+      "title": "进度",
       "streak_empty": "完成首次练习以开启连续天数",
       "streak_label_one": "连续 {{count}} 天",
       "streak_label_other": "连续 {{count}} 天",
@@ -1168,7 +1168,7 @@
       "connect_watch": "连接"
     },
     "journey": {
-      "title": "我的旅程"
+      "title": "旅程"
     },
     "quick_mood": {
       "title": "快速状态检查"
@@ -4191,12 +4191,12 @@
     "dark": "深色"
   },
   "baseline": {
-    "title": "我的基线",
+    "title": "基线",
     "subtitle": "明天再来，看看变化",
     "subtitle_note": "（周期平均值与今天之间）",
     "shift": "Shift",
     "empty_hint": "连接 Apple Watch，从「健康」打开你 14 晚的基线",
-    "setup_title": "我的推荐",
+    "setup_title": "推荐",
     "setup_body": "下面的练习会平衡你的心律——跟着提示做即可。",
     "resting_pulse": "静息脉搏",
     "vs_baseline": "相对基线",
@@ -4226,7 +4226,7 @@
   },
   "diary": {
     "title": "日记",
-    "record_cta": "记录今天",
+    "record_cta": "时间线",
     "text_placeholder": "发生了什么？简单几句…",
     "voice": "语音",
     "recording": "录音中",

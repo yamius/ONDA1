@@ -1150,7 +1150,7 @@
   },
   "home": {
     "progress": {
-      "title": "Mi progreso",
+      "title": "Progreso",
       "streak_empty": "Completa tu primera práctica para empezar tu racha",
       "streak_label_one": "Racha de {{count}} día",
       "streak_label_other": "Racha de {{count}} días",
@@ -1169,7 +1169,7 @@
       "connect_watch": "Conectar"
     },
     "journey": {
-      "title": "Mi viaje"
+      "title": "Viaje"
     },
     "quick_mood": {
       "title": "Chequeo rápido de estado"
@@ -4191,12 +4191,12 @@
     "dark": "Oscura"
   },
   "baseline": {
-    "title": "Mi Baseline",
+    "title": "Baseline",
     "subtitle": "Vuelve mañana y verás la diferencia",
     "subtitle_note": "(entre el promedio del período y hoy)",
     "shift": "Shift",
     "empty_hint": "Conecta tu Apple Watch para abrir tu baseline de 14 noches desde Salud",
-    "setup_title": "Mis Recomendaciones",
+    "setup_title": "Recomendaciones",
     "setup_body": "Las prácticas de abajo equilibran tu ritmo cardíaco — solo sigue las indicaciones durante la sesión.",
     "resting_pulse": "PULSO EN REPOSO",
     "vs_baseline": "vs baseline",
@@ -4226,7 +4226,7 @@
   },
   "diary": {
     "title": "Diario",
-    "record_cta": "Registrar el día",
+    "record_cta": "Cronología",
     "text_placeholder": "¿Qué pasó? Un par de palabras…",
     "voice": "Voz",
     "recording": "Grabando",

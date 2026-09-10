@@ -6426,7 +6426,7 @@ const OndaLevel1 = () => {
         <div className="mb-6 flex flex-col items-center">
           <div className="w-full max-w-[360px]">
             <div className="text-center mb-3">
-              <h2 className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.title', 'Мой Базлайн')}</h2>
+              <h2 className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.title', 'Базлайн')}</h2>
               <p className={`text-sm mt-1 ${isLight ? 'text-slate-500' : 'text-white/60'}`}>{t('baseline.subtitle', 'Зайди сюда завтра и увидишь разницу')}</p>
               <p className={`text-xs mt-0.5 ${isLight ? 'text-slate-400' : 'text-white/40'}`}>{t('baseline.subtitle_note', '(между средним за период и сегодня)')}</p>
               <button
@@ -6471,7 +6471,7 @@ const OndaLevel1 = () => {
             className={`w-full flex items-center justify-center gap-2 rounded-2xl p-4 sm:p-5 text-lg sm:text-xl font-bold transition-all ${isLight ? 'bg-white/65 backdrop-blur-xl border border-indigo-200 text-slate-700 shadow-lg shadow-indigo-100/60' : 'bg-indigo-500/10 backdrop-blur-sm border border-indigo-400/25 text-white'}`}
           >
             <BookOpen className="w-5 h-5 text-indigo-400" />
-            {t('diary.record_cta', 'Записать день')}
+            {t('diary.record_cta', 'Таймлайн')}
           </button>
 
           <div className="mt-3 sm:mt-4">
@@ -6537,20 +6537,22 @@ const OndaLevel1 = () => {
                   : 'bg-black/20 backdrop-blur-sm border border-white/10'
               }`} style={collapseStyle('coherence', 45, 8)}>
                 {collapseDot('coherence')}
-                <div className="flex items-baseline justify-between pr-6">
+                {/* Collapsed reads like a practice tile: title centred on the
+                    left, the coherence % on the right (caption hides). */}
+                <div className="flex items-center justify-between pr-6">
                   <div className="text-left">
                     <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('practices.coherence')}</div>
-                    <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('home.coherence.caption', 'heart–breath rhythm')}</div>
+                    {!isCollapsed('coherence') && (
+                      <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('home.coherence.caption', 'heart–breath rhythm')}</div>
+                    )}
                   </div>
-                  {!isCollapsed('coherence') && (
-                    <div className={`font-bold leading-none ${isLight ? 'text-slate-500' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
-                      {vitalsData.coherence != null ? (
-                        <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
-                      ) : (
-                        <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-300' : 'text-white/40'}`}>--</span>
-                      )}
-                    </div>
-                  )}
+                  <div className={`font-bold leading-none ${isLight ? 'text-slate-500' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
+                    {vitalsData.coherence != null ? (
+                      <span className="text-3xl sm:text-4xl">{vitalsData.coherence}<span className="text-lg sm:text-xl font-semibold">%</span></span>
+                    ) : (
+                      <span className={`text-2xl sm:text-3xl ${isLight ? 'text-slate-300' : 'text-white/40'}`}>--</span>
+                    )}
+                  </div>
                 </div>
                 <div className="mt-3">
                   <MetricsWaveform heartRate={displayHeartRate} stress={null} energy={null} hrOnly heightPx={120} />
@@ -6612,7 +6614,7 @@ const OndaLevel1 = () => {
         <div className="mb-4 flex flex-col items-center">
           <div className={`relative w-full max-w-[360px] rounded-lg p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
             {collapseDot('recommendations')}
-            <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
+            <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
             <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
               {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
             </p>
