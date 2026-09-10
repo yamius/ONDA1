@@ -191,16 +191,23 @@ export function HrvInterpreterPage() {
   )
 }
 
-const EMBED_SNIPPET = `<iframe src="https://onda-life.com/embed/hrv" width="100%" height="440" style="border:0;max-width:440px" title="HRV Interpreter — ONDA Life" loading="lazy"></iframe>
+// Recommended: the dependency-free JS widget renders inline (light DOM), so the
+// "Powered by ONDA Life" credit is a real link on the host page. Open source:
+// github.com/yamius/onda-hrv-widget.
+const EMBED_SNIPPET = `<div data-onda-hrv></div>
+<script src="https://onda-life.com/embed/onda-hrv-widget.js" defer></script>`
+
+// Alternative: iframe (isolated). The credit <p> below it sits in the host page.
+const EMBED_IFRAME = `<iframe src="https://onda-life.com/embed/hrv" width="100%" height="440" style="border:0;max-width:440px" title="HRV Interpreter — ONDA Life" loading="lazy"></iframe>
 <p style="font:12px sans-serif"><a href="https://onda-life.com/tools/hrv">HRV Interpreter</a> by <a href="https://onda-life.com">ONDA Life</a></p>`
 
 function EmbedHrvBlock() {
-  const [copied, setCopied] = useState(false)
-  const copy = () => {
+  const [copied, setCopied] = useState<'js' | 'iframe' | null>(null)
+  const copy = (which: 'js' | 'iframe') => {
     try {
-      navigator.clipboard?.writeText(EMBED_SNIPPET)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 2000)
+      navigator.clipboard?.writeText(which === 'js' ? EMBED_SNIPPET : EMBED_IFRAME)
+      setCopied(which)
+      setTimeout(() => setCopied(null), 2000)
     } catch {
       /* clipboard unavailable */
     }
@@ -209,21 +216,41 @@ function EmbedHrvBlock() {
     <div className="mb-10 rounded-xl border border-white/10 bg-white/[0.02] p-5">
       <h2 className="mb-2 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Embed this calculator</h2>
       <p className="mb-3 font-mono text-xs leading-relaxed text-white/50">
-        Free to embed on your site or blog — paste this snippet (it includes a credit link to ONDA Life):
+        Free to embed on your site or blog — drop in this snippet. It renders inline (no iframe),
+        is dependency-free and{' '}
+        <a href="https://github.com/yamius/onda-hrv-widget" target="_blank" rel="noopener" className="text-terminal-green hover:underline">open source</a>,
+        and includes a credit link to ONDA Life.
       </p>
       <textarea
         readOnly
-        rows={4}
+        rows={2}
         value={EMBED_SNIPPET}
         onFocus={(e) => e.currentTarget.select()}
         className="mb-3 w-full resize-none rounded-lg border border-white/15 bg-black/40 p-3 font-mono text-[11px] leading-relaxed text-white/70 outline-none focus:border-terminal-green/50"
       />
       <button
-        onClick={copy}
+        onClick={() => copy('js')}
         className="rounded-lg border border-terminal-green/40 px-4 py-2 font-mono text-xs text-terminal-green transition-colors hover:bg-terminal-green/10"
       >
-        {copied ? '✓ Copied' : 'Copy embed code'}
+        {copied === 'js' ? '✓ Copied' : 'Copy embed code'}
       </button>
+
+      <details className="mt-4">
+        <summary className="cursor-pointer font-mono text-[11px] text-white/40 hover:text-white/60">Prefer an iframe instead?</summary>
+        <textarea
+          readOnly
+          rows={4}
+          value={EMBED_IFRAME}
+          onFocus={(e) => e.currentTarget.select()}
+          className="mt-3 mb-3 w-full resize-none rounded-lg border border-white/15 bg-black/40 p-3 font-mono text-[11px] leading-relaxed text-white/60 outline-none focus:border-terminal-green/50"
+        />
+        <button
+          onClick={() => copy('iframe')}
+          className="rounded-lg border border-white/20 px-4 py-2 font-mono text-xs text-white/60 transition-colors hover:bg-white/5"
+        >
+          {copied === 'iframe' ? '✓ Copied' : 'Copy iframe code'}
+        </button>
+      </details>
     </div>
   )
 }
