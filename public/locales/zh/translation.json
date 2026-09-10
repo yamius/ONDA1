@@ -4251,6 +4251,8 @@
     "add_voice": "语音",
     "add_photo": "照片",
     "photo": "照片",
-    "new_entry": "新记录"
+    "new_entry": "新记录",
+    "today": "今天",
+    "pick_date": "选择日期"
   }
 }

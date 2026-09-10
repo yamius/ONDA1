@@ -11,7 +11,7 @@ import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
-import { syncDiaryEntries } from './lib/diary';
+import { syncDiaryEntries, recordDailyMetric, DAILY_STORES } from './lib/diary';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -454,6 +454,15 @@ const OndaLevel1 = () => {
     const r = baseline?.data?.readings?.find((x) => x.key === 'rhr');
     return r?.avg != null ? Math.round(r.avg) : null;
   })();
+
+  // Accrue the timeline's baseline rail: snapshot today's resting pulse +
+  // respiratory rate into their daily stores whenever a baseline is present
+  // (HRV already has its own onda.hrv_daily_v1 store). Honest, forward-only.
+  useEffect(() => {
+    const rr = baseline?.data?.readings?.find((x) => x.key === 'rr');
+    recordDailyMetric(DAILY_STORES.rhr, dayRhr);
+    recordDailyMetric(DAILY_STORES.rr, rr?.avg != null ? Math.round(rr.avg) : null);
+  }, [baseline, dayRhr]);
 
   // Live values for the baseline card's realtime hero. A signal counts as live
   // ONLY while a source is actively producing it — the camera mid-reading, or a

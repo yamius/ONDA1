@@ -37,6 +37,44 @@ export function diarySource(hasText: boolean, hasVoice: boolean, hasPhoto: boole
 
 const KEY = 'onda_diary_entries';
 
+/** A daily-metric point for the timeline's baseline rail. */
+export interface DailyPoint { date: string; value: number; time: number; }
+
+const dayKey = (d = new Date()) =>
+  `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+/** Read a `Record<YYYY-MM-DD, number>` daily store into sorted points (noon of each day). */
+export function loadDailyMetric(storeKey: string): DailyPoint[] {
+  try {
+    const raw = localStorage.getItem(storeKey);
+    if (!raw) return [];
+    const obj = JSON.parse(raw);
+    if (obj && typeof obj === 'object' && !Array.isArray(obj)) {
+      return Object.entries(obj)
+        .filter(([, v]) => typeof v === 'number' && (v as number) > 0)
+        .map(([date, v]) => ({ date, value: Math.round(v as number), time: new Date(`${date}T12:00:00`).getTime() }))
+        .sort((a, b) => a.time - b.time);
+    }
+  } catch { /* noop */ }
+  return [];
+}
+
+/** Snapshot today's value into a daily store (dedup by day). No-op on bad values. */
+export function recordDailyMetric(storeKey: string, value: number | null | undefined): void {
+  if (value == null || !Number.isFinite(value) || value <= 0) return;
+  try {
+    const raw = localStorage.getItem(storeKey);
+    const obj = raw ? JSON.parse(raw) : {};
+    if (obj && typeof obj === 'object' && !Array.isArray(obj)) {
+      obj[dayKey()] = Math.round(value);
+      localStorage.setItem(storeKey, JSON.stringify(obj));
+    }
+  } catch { /* noop */ }
+}
+
+/** localStorage keys for the baseline-rail daily stores. */
+export const DAILY_STORES = { hrv: 'onda.hrv_daily_v1', rhr: 'onda_rhr_daily', rr: 'onda_rr_daily' } as const;
+
 export function loadDiaryEntries(): DiaryEntry[] {
   try {
     const raw = localStorage.getItem(KEY);

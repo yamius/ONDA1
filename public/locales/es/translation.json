@@ -4251,6 +4251,8 @@
     "add_voice": "Voz",
     "add_photo": "Foto",
     "photo": "Foto",
-    "new_entry": "Nueva entrada"
+    "new_entry": "Nueva entrada",
+    "today": "Hoy",
+    "pick_date": "Elegir fecha"
   }
 }
