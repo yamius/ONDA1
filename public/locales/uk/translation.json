@@ -4259,6 +4259,9 @@
     "photo": "Фото",
     "new_entry": "Новий запис",
     "today": "Сьогодні",
-    "pick_date": "Обрати дату"
+    "pick_date": "Обрати дату",
+    "metric_hrv": "HRV",
+    "metric_pulse": "Пульс",
+    "metric_breath": "Дих."
   }
 }

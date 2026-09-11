@@ -16,9 +16,9 @@ import { useTranslation } from 'react-i18next';
 import { trackEvent } from '../services/AnalyticsService';
 import {
   loadDiaryEntries, saveDiaryEntries, newDiaryId, syncDiaryEntries,
-  deleteDiaryEntryRemote, diarySource, loadDailyMetric, DAILY_STORES,
+  deleteDiaryEntryRemote, diarySource, loadBaselineSamples,
   putMedia, getMedia, delMedia, mediaKey,
-  type DiaryEntry, type DailyPoint,
+  type DiaryEntry, type BaselineSample,
 } from '../lib/diary';
 
 interface DiaryModalProps {
@@ -36,9 +36,8 @@ type DiaryType = 'text' | 'voice' | 'photo';
 const DAY = 86_400_000;
 const PAD = 28;
 const FAB_CLEAR = 128;   // room below the last marker for the FAB + side clusters
-const MIN_PX = 12;
-const MAX_PX = 1200;   // deep zoom — a single day can span the viewport so
-                       // intraday notes (by event_time) separate cleanly
+const MIN_PX = 4;      // zoom far out (months in view)
+const MAX_PX = 6000;   // zoom deep in — minutes-level within a day
 
 const todayStr = () => {
   const d = new Date();
@@ -46,11 +45,27 @@ const todayStr = () => {
 };
 const startOfDay = (t: number) => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
 
-/** Push overlapping items down so each gets `gap` px; input Ys sorted ascending. */
+/** Spread overlapping items so each gets `gap` px, but keep each cluster CENTRED
+ *  on its members (spreads up AND down, not only down). Input Ys sorted ascending. */
 function declutter(ys: number[], gap: number): number[] {
-  const out: number[] = []; let last = -Infinity;
-  for (const y of ys) { const ny = Math.max(y, last + gap); out.push(ny); last = ny; }
-  return out;
+  const n = ys.length;
+  if (n === 0) return [];
+  const laid = [...ys];
+  for (let i = 1; i < n; i++) if (laid[i] < laid[i - 1] + gap) laid[i] = laid[i - 1] + gap; // down-pass
+  let i = 0;
+  while (i < n) {
+    let j = i;
+    while (j + 1 < n && Math.abs(laid[j + 1] - (laid[j] + gap)) < 0.5) j++; // gap-locked run i..j
+    if (j > i) {
+      const realMid = (ys[i] + ys[j]) / 2;
+      const laidMid = (laid[i] + laid[j]) / 2;
+      let shift = realMid - laidMid;                       // usually negative → move the run up
+      if (i > 0) shift = Math.max(shift, (laid[i - 1] + gap) - laid[i]); // don't collide with the run above
+      for (let k = i; k <= j; k++) laid[k] += shift;
+    }
+    i = j + 1;
+  }
+  return laid;
 }
 
 const pickMime = (): string => {
@@ -72,10 +87,11 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
 
   const [entries, setEntries] = useState<DiaryEntry[]>([]);
   const [media, setMedia] = useState<Record<string, { audio?: string; photo?: string }>>({});
-  const [metricPts, setMetricPts] = useState<Record<MetricKey, DailyPoint[]>>({ hrv: [], rhr: [], rr: [] });
+  const [samples, setSamples] = useState<BaselineSample[]>([]);
   const [prefs, setPrefs] = useState<ViewPrefs>(loadPrefs);
   const [pxPerDay, setPxPerDay] = useState(64);
   const [fabOpen, setFabOpen] = useState(false);
+  const [viewPhoto, setViewPhoto] = useState<string | null>(null); // fullscreen photo
 
   // Editor
   const [editorOpen, setEditorOpen] = useState(false);
@@ -108,11 +124,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const reload = useCallback(() => {
     const es = loadDiaryEntries();
     setEntries(es);
-    setMetricPts({
-      hrv: loadDailyMetric(DAILY_STORES.hrv),
-      rhr: loadDailyMetric(DAILY_STORES.rhr),
-      rr: loadDailyMetric(DAILY_STORES.rr),
-    });
+    setSamples(loadBaselineSamples());
     // Load media (voice/photo) for entries that carry it, from IndexedDB.
     (async () => {
       const map: Record<string, { audio?: string; photo?: string }> = {};
@@ -215,7 +227,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     const tEnd = startOfDay(Date.now()) + DAY;
     const times = [
       ...entries.map((e) => new Date(e.event_time).getTime()),
-      ...(['hrv', 'rhr', 'rr'] as MetricKey[]).flatMap((k) => metricPts[k].map((p) => p.time)),
+      ...samples.map((s) => s.time),
       tEnd - 7 * DAY,
     ];
     const tStart = startOfDay(Math.min(...times));
@@ -223,7 +235,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     const innerH = windowDays * pxPerDay;
     const y = (time: number) => PAD + Math.max(0, Math.min(innerH, ((time - tStart) / DAY) * pxPerDay));
     return { tStart, tEnd, windowDays, innerH, totalH: innerH + PAD + FAB_CLEAR, y };
-  }, [entries, metricPts, pxPerDay]);
+  }, [entries, samples, pxPerDay]);
   geomRef.current = { tStart: geom.tStart };
 
   // Keep the pinch focal point (midpoint between the fingers) fixed on screen
@@ -266,37 +278,33 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     (prefs.types.text && !!e.text) || (prefs.types.voice && !!e.hasAudio) || (prefs.types.photo && !!e.hasPhoto)
   )), [entries, prefs.types]);
 
-  // Group the enabled baseline metrics BY DAY, so a day with several metrics
-  // shows one compact colour-coded row instead of overlapping labels.
-  const baselineDays = useMemo(() => {
-    const map = new Map<string, { time: number; vals: { key: MetricKey; value: number }[] }>();
-    (['hrv', 'rhr', 'rr'] as MetricKey[]).forEach((k) => {
-      if (!prefs.metrics[k]) return;
-      metricPts[k].forEach((p) => {
-        if (!map.has(p.date)) map.set(p.date, { time: p.time, vals: [] });
-        map.get(p.date)!.vals.push({ key: k, value: p.value });
-      });
-    });
-    return [...map.values()].sort((a, b) => a.time - b.time);
-  }, [metricPts, prefs.metrics]);
+  // Each baseline SAMPLE is one point on the left rail (only the enabled metrics
+  // it carries are shown).
+  const baselinePts = useMemo(() => samples
+    .map((s) => ({
+      time: s.time,
+      vals: (['hrv', 'rhr', 'rr'] as MetricKey[])
+        .filter((k) => prefs.metrics[k] && s[k] != null)
+        .map((k) => ({ key: k, value: s[k]! })),
+    }))
+    .filter((p) => p.vals.length > 0)
+    .sort((a, b) => a.time - b.time), [samples, prefs.metrics]);
 
-  // date → that day's baseline values, for showing inside a note (§5).
-  const metricByDate = useMemo(() => {
-    const map = new Map<string, Partial<Record<MetricKey, number>>>();
-    (['hrv', 'rhr', 'rr'] as MetricKey[]).forEach((k) => metricPts[k].forEach((p) => {
-      const cur = map.get(p.date) || {}; cur[k] = p.value; map.set(p.date, cur);
-    }));
-    return map;
-  }, [metricPts]);
+  // The sample nearest a note's time — its baseline values shown inside the note.
+  const nearestSample = (t: number): BaselineSample | null => {
+    let best: BaselineSample | null = null; let bestD = Infinity;
+    for (const s of samples) { const d = Math.abs(s.time - t); if (d < bestD) { bestD = d; best = s; } }
+    return best;
+  };
 
   // Lay out each rail's markers: dot stays at its real time (dotY); the label/
   // bubble is pushed down when it would overlap the previous one (labelY), and a
   // leader line links the two.
   const baselineLaid = useMemo(() => {
-    const items = baselineDays.map((d) => ({ d, dotY: geom.y(d.time) }));
+    const items = baselinePts.map((d) => ({ d, dotY: geom.y(d.time) }));
     const laid = declutter(items.map((i) => i.dotY), 22);
     return items.map((it, i) => ({ ...it, labelY: laid[i] }));
-  }, [baselineDays, geom]);
+  }, [baselinePts, geom]);
 
   const diaryLaid = useMemo(() => {
     const items = [...visibleEntries]
@@ -412,12 +420,13 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const handleClose = () => { stopMic(); resetEditor(); setEditorOpen(false); setFabOpen(false); onClose(); };
 
   const railColor = light ? 'rgb(196,181,253)' : 'rgba(129,140,248,0.5)';
-  const METRICS: { key: MetricKey; store: string; icon: React.ReactNode; color: string; unit: string }[] = [
-    { key: 'hrv', store: DAILY_STORES.hrv, icon: <Activity className="w-3.5 h-3.5" />, color: light ? 'rgb(99,102,241)' : 'rgb(129,140,248)', unit: 'HRV' },
-    { key: 'rhr', store: DAILY_STORES.rhr, icon: <Heart className="w-3.5 h-3.5" />, color: light ? 'rgb(225,29,72)' : 'rgb(251,113,133)', unit: t('settings.bpm', 'BPM') },
-    { key: 'rr', store: DAILY_STORES.rr, icon: <Wind className="w-3.5 h-3.5" />, color: light ? 'rgb(2,132,199)' : 'rgb(56,189,248)', unit: t('settings.br_unit', '/min') },
+  const METRICS: { key: MetricKey; icon: React.ReactNode; color: string; label: string }[] = [
+    { key: 'hrv', icon: <Activity className="w-3.5 h-3.5" />, color: light ? 'rgb(99,102,241)' : 'rgb(129,140,248)', label: t('diary.metric_hrv', 'HRV') },
+    { key: 'rhr', icon: <Heart className="w-3.5 h-3.5" />, color: light ? 'rgb(225,29,72)' : 'rgb(251,113,133)', label: t('diary.metric_pulse', 'Пульс') },
+    { key: 'rr', icon: <Wind className="w-3.5 h-3.5" />, color: light ? 'rgb(2,132,199)' : 'rgb(56,189,248)', label: t('diary.metric_breath', 'Дых') },
   ];
   const metricColor = (k: MetricKey) => METRICS.find((m) => m.key === k)?.color ?? railColor;
+  const metricLabel = (k: MetricKey) => METRICS.find((m) => m.key === k)?.label ?? k;
   const TYPES: { key: DiaryType; icon: React.ReactNode }[] = [
     { key: 'text', icon: <Type className="w-3.5 h-3.5" /> },
     { key: 'voice', icon: <Mic className="w-3.5 h-3.5" /> },
@@ -432,7 +441,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   );
 
   return (
-    <div ref={overlayRef} className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50">
+    <div ref={overlayRef} className="fixed inset-0 bg-black/85 z-50">
       <div
         className={`absolute inset-x-2 sm:inset-x-4 bottom-2 mx-auto max-w-lg rounded-2xl border shadow-2xl flex flex-col overflow-hidden ${light ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}
         style={{ top: 'calc(env(safe-area-inset-top) + 6px)' }}
@@ -501,7 +510,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 <div className="absolute pl-3" style={{ top: labelY, left: '58%', width: '42%', transform: 'translateY(-50%)' }}>
                   <button onClick={() => handleEdit(e)} data-testid="diary-entry" className={`block w-full text-left rounded-lg px-2 py-1.5 border transition-all ${light ? 'bg-white/80 border-violet-100 hover:border-violet-300' : 'bg-white/5 border-white/10 hover:border-white/25'}`}>
                     <div className="flex items-center gap-1.5">
-                      {e.hasPhoto && media[e.id]?.photo && <img src={media[e.id]!.photo} alt="" className="w-8 h-8 rounded object-cover shrink-0" />}
+                      {e.hasPhoto && media[e.id]?.photo && <img src={media[e.id]!.photo} alt="" onClick={(ev) => { ev.stopPropagation(); setViewPhoto(media[e.id]!.photo!); }} className="w-8 h-8 rounded object-cover shrink-0 cursor-pointer" />}
                       {e.text
                         ? <p className="min-w-0 flex-1 text-xs leading-snug line-clamp-2 break-words">{e.text}</p>
                         : (!e.hasPhoto && <p className="min-w-0 flex-1 text-xs opacity-60">{e.hasAudio ? `🎤 ${t('diary.voice_note', 'Голосовая заметка')}` : ''}</p>)}
@@ -512,7 +521,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
             ))}
           </div>
 
-          {visibleEntries.length === 0 && METRICS.every((m) => !prefs.metrics[m.key] || metricPts[m.key].length === 0) && (
+          {visibleEntries.length === 0 && baselinePts.length === 0 && (
             <div className={`absolute inset-0 flex flex-col items-center justify-center pointer-events-none ${light ? 'text-slate-400' : 'text-white/40'}`}>
               <p className="text-base mb-1">{t('diary.empty', 'Пока пусто')}</p>
               <p className="text-sm px-8 text-center">{t('diary.empty_hint', 'Бросьте пометку о дне — пара слов, голос или фото')}</p>
@@ -552,12 +561,12 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
               <button onClick={() => { resetEditor(); setEditorOpen(false); }} className={`${light ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}><X className="w-6 h-6" /></button>
             </div>
             <div className="flex-1 overflow-y-auto no-scrollbar p-4 space-y-3">
-              <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder={t('diary.text_placeholder', 'Что было? Пара слов…')} data-testid="diary-text" rows={4} autoFocus
+              <textarea value={text} onChange={(e) => setText(e.target.value)} placeholder={t('diary.text_placeholder', 'Что было? Пара слов…')} data-testid="diary-text" rows={4}
                 className={`w-full rounded-xl p-3 text-base resize-none outline-none transition-all ${light ? 'bg-violet-50/60 border border-violet-200 focus:border-indigo-400 text-slate-800 placeholder:text-slate-400' : 'bg-white/5 border border-white/15 focus:border-indigo-400 text-white placeholder:text-white/40'}`} />
               <input ref={photoInputRef} type="file" accept="image/*" capture="environment" onChange={onPhotoPicked} className="hidden" data-testid="diary-photo-input" />
               {photoBase64 ? (
                 <div className="relative inline-block">
-                  <img src={photoBase64} alt="" className="max-h-40 rounded-xl" />
+                  <img src={photoBase64} alt="" onClick={() => setViewPhoto(photoBase64)} className="max-h-40 rounded-xl cursor-pointer" data-testid="diary-photo-preview" />
                   <button onClick={() => setPhotoBase64(undefined)} className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-black/70 text-white flex items-center justify-center"><X className="w-4 h-4" /></button>
                 </div>
               ) : (
@@ -587,19 +596,19 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 )}
               </div>
               {micError && <p className={`text-xs ${light ? 'text-amber-600' : 'text-amber-300/80'}`}>{t('diary.mic_denied', 'Микрофон недоступен — можно записать текстом.')}</p>}
-              {/* This note's day: time + that day's baseline values. */}
+              {/* This note: time + the nearest baseline reading, spelled out. */}
               {editingId && (() => {
                 const ent = entries.find((e) => e.id === editingId);
                 if (!ent) return null;
-                const bl = metricByDate.get(ent.event_time.slice(0, 10));
-                const keys = (['hrv', 'rhr', 'rr'] as MetricKey[]).filter((k) => bl && bl[k] != null);
+                const s = nearestSample(new Date(ent.event_time).getTime());
+                const keys = (['hrv', 'rhr', 'rr'] as MetricKey[]).filter((k) => s && s[k] != null);
                 let when = ''; try { when = new Date(ent.event_time).toLocaleString(i18n.language || undefined, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); } catch { /* noop */ }
                 return (
                   <div className={`flex items-center gap-3 flex-wrap text-xs ${light ? 'text-slate-500' : 'text-white/50'}`}>
                     <span>{when}</span>
                     {keys.map((k) => (
-                      <span key={k} className="font-semibold inline-flex items-center" style={{ color: metricColor(k) }}>
-                        <span className="inline-block w-1.5 h-1.5 rounded-full mr-1" style={{ background: metricColor(k) }} />{bl![k]}
+                      <span key={k} className="font-semibold inline-flex items-center gap-1" style={{ color: metricColor(k) }}>
+                        <span className="inline-block w-1.5 h-1.5 rounded-full" style={{ background: metricColor(k) }} />{metricLabel(k)} {s![k]}
                       </span>
                     ))}
                   </div>
@@ -618,6 +627,14 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 <Check className="w-4 h-4" /> {t('diary.save', 'Сохранить')}
               </button>
             </div>
+          </div>
+        )}
+
+        {/* Fullscreen photo viewer */}
+        {viewPhoto && (
+          <div className="absolute inset-0 z-40 bg-black/95 flex items-center justify-center" onClick={() => setViewPhoto(null)} data-testid="diary-lightbox">
+            <img src={viewPhoto} alt="" className="max-w-full max-h-full object-contain" />
+            <button onClick={() => setViewPhoto(null)} className="absolute top-3 right-3 text-white/90"><X className="w-7 h-7" /></button>
           </div>
         )}
       </div>

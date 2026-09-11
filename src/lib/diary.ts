@@ -105,6 +105,38 @@ export function recordDailyMetric(storeKey: string, value: number | null | undef
 /** localStorage keys for the baseline-rail daily stores. */
 export const DAILY_STORES = { hrv: 'onda.hrv_daily_v1', rhr: 'onda_rhr_daily', rr: 'onda_rr_daily' } as const;
 
+/* ── Baseline SAMPLES — timestamped points for the timeline's left rail ──
+   One point per Timeline visit, at the real visit time (not a fake noon),
+   throttled so we don't add one more often than every 2 hours. */
+export interface BaselineSample { time: number; hrv?: number; rhr?: number; rr?: number; }
+const SAMPLES_KEY = 'onda_baseline_samples';
+const SAMPLE_MIN_GAP = 2 * 60 * 60 * 1000; // 2 hours
+
+export function loadBaselineSamples(): BaselineSample[] {
+  try {
+    const raw = localStorage.getItem(SAMPLES_KEY);
+    if (!raw) return [];
+    const a = JSON.parse(raw);
+    return Array.isArray(a) ? (a as BaselineSample[]) : [];
+  } catch { return []; }
+}
+
+/** Append a baseline point at NOW with whatever of the 3 values are known —
+ *  unless the last point is < 2h old. Returns true if a point was added. */
+export function recordBaselineSample(vals: { hrv?: number | null; rhr?: number | null; rr?: number | null }): boolean {
+  const ok = (v: number | null | undefined) => (v != null && Number.isFinite(v) && v > 0 ? Math.round(v) : undefined);
+  const clean: Omit<BaselineSample, 'time'> = { hrv: ok(vals.hrv), rhr: ok(vals.rhr), rr: ok(vals.rr) };
+  if (clean.hrv === undefined && clean.rhr === undefined && clean.rr === undefined) return false;
+  const arr = loadBaselineSamples();
+  const now = Date.now();
+  const last = arr[arr.length - 1];
+  if (last && now - last.time < SAMPLE_MIN_GAP) return false;
+  arr.push({ time: now, ...clean });
+  if (arr.length > 800) arr.splice(0, arr.length - 800);
+  try { localStorage.setItem(SAMPLES_KEY, JSON.stringify(arr)); } catch { /* noop */ }
+  return true;
+}
+
 export function loadDiaryEntries(): DiaryEntry[] {
   try {
     const raw = localStorage.getItem(KEY);

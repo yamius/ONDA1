@@ -11,7 +11,7 @@ import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
-import { syncDiaryEntries, recordDailyMetric, DAILY_STORES } from './lib/diary';
+import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -623,6 +623,13 @@ const OndaLevel1 = () => {
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
   const [showDiaryModal, setShowDiaryModal] = useState(false);
+  // While the Timeline is open, keep the watch workout alive (same mechanism as
+  // during a practice) — opening the full-screen modal was backgrounding the
+  // webview and the auto-manager was stopping the workout.
+  useEffect(() => {
+    watchHeartRate.setPracticeActive(showDiaryModal);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [showDiaryModal]);
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
@@ -6477,7 +6484,20 @@ const OndaLevel1 = () => {
               Live pulse/breath still read out in the coherence hero below. */}
           <button
             type="button"
-            onClick={() => { try { track('diary_opened', { source: 'home_button' }); } catch { /* noop */ } setShowDiaryModal(true); }}
+            onClick={() => {
+              try { track('diary_opened', { source: 'home_button' }); } catch { /* noop */ }
+              // Snapshot the 3 baseline indicators at the real visit time (throttled 2h).
+              try {
+                const rrR = baseline?.data?.readings?.find((x) => x.key === 'rr');
+                const hrvR = baseline?.data?.readings?.find((x) => x.key === 'hrv');
+                recordBaselineSample({
+                  rhr: displayHeartRate ?? dayRhr,
+                  rr: vitalsData.br ?? (rrR?.avg ?? null),
+                  hrv: hrvR?.avg ?? null,
+                });
+              } catch { /* noop */ }
+              setShowDiaryModal(true);
+            }}
             data-testid="home-diary-button"
             className={`w-full flex items-center justify-center gap-2 rounded-2xl p-4 sm:p-5 text-lg sm:text-xl font-bold transition-all ${isLight ? 'bg-white/65 backdrop-blur-xl border border-indigo-200 text-slate-700 shadow-lg shadow-indigo-100/60' : 'bg-indigo-500/10 backdrop-blur-sm border border-indigo-400/25 text-white'}`}
           >

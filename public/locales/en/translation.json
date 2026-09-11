@@ -4253,6 +4253,9 @@
     "photo": "Photo",
     "new_entry": "New entry",
     "today": "Today",
-    "pick_date": "Pick a date"
+    "pick_date": "Pick a date",
+    "metric_hrv": "HRV",
+    "metric_pulse": "Pulse",
+    "metric_breath": "Breath"
   }
 }
