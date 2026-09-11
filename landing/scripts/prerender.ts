@@ -87,9 +87,15 @@ console.log(`[prerender] build beacon — commit ${BUILD_COMMIT}, time ${BUILD_T
 const SITE_URL = 'https://onda-life.com'
 
 interface PageMeta { title: string; description: string; ogImageAlt: string }
+interface BioMetricSection {
+  heading?: string
+  body?: string
+  bullets?: { label: string; text: string }[]
+  highlight?: string
+}
 interface BioMetricFile {
   ui: { metaDescriptionTpl: string }
-  metrics: Record<string, { title: string; shortTitle: string }>
+  metrics: Record<string, { title: string; shortTitle: string; sections?: BioMetricSection[] }>
 }
 
 // Load every localized namespace for every language so prerender can swap meta
@@ -458,6 +464,28 @@ function applyMetricLocalizedMeta(html: string, metric: string, lang: Lang): str
   out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
   out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
 
+  // Localized DefinedTerm — mirrors the EN /bio/<metric> structured data
+  // (finding #1) in the page's own language, so non-JS AI crawlers get a
+  // citable definition per locale. Uses the localized bio-metric.json body.
+  const firstBody = (m.sections ?? []).find((s) => s.body && s.body.trim())?.body?.trim()
+  if (firstBody) {
+    const term = {
+      '@context': 'https://schema.org',
+      '@type': 'DefinedTerm',
+      name: m.title,
+      description: firstBody,
+      url,
+      inLanguage: lang,
+      inDefinedTermSet: {
+        '@type': 'DefinedTermSet',
+        '@id': `${SITE_URL}/bio#metrics`,
+        name: 'ONDA Bio OS metrics',
+        url: `${SITE_URL}/bio`,
+      },
+    }
+    out = out.replace('</head>', `  <script type="application/ld+json">${JSON.stringify(term)}</script>\n</head>`)
+  }
+
   const hreflang = buildHreflangLinksForMetric(metric)
   const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
   out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
@@ -494,6 +522,22 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   out = out.replace(/<meta\s+property="twitter:description"\s+content="[^"]*">/gi, `<meta property="twitter:description" content="${escDesc}">`)
   out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
   out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+
+  // Localized CreativeWork — the level is an ONDA Path stage (experiential
+  // framework), so CreativeWork, not Article. Mirrors the EN level's structured
+  // data in the page's language for non-JS AI crawlers.
+  if (desc) {
+    const cw = {
+      '@context': 'https://schema.org',
+      '@type': 'CreativeWork',
+      name: title.replace(/\s*\|\s*ONDA Life\s*$/i, '').trim() || lvl.name,
+      description: desc,
+      url,
+      inLanguage: lang,
+      about: ['ONDA Path', 'nervous-system self-regulation practice', 'experiential framework'],
+    }
+    out = out.replace('</head>', `  <script type="application/ld+json">${JSON.stringify(cw)}</script>\n</head>`)
+  }
 
   const hreflang = buildHreflangLinksForLevel(levelNum)
   const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[lang]}">`
@@ -642,6 +686,20 @@ for (const route of routes) {
         out = out.replace(/<meta\s+property="og:url"\s+content="[^"]*">/gi, `<meta property="og:url" content="${escUrl}">`)
         out = out.replace(/<meta\s+property="twitter:url"\s+content="[^"]*">/gi, `<meta property="twitter:url" content="${escUrl}">`)
         out = out.replace(/<meta\s+property="og:locale"\s+content="[^"]*">/gi, '')
+        // Localized CreativeWork — the Part is an ONDA Path stage (experiential
+        // framework, not science), mirrored in the page's language.
+        if (desc) {
+          const cw = {
+            '@context': 'https://schema.org',
+            '@type': 'CreativeWork',
+            name: subtitle || partInfo.slug,
+            description: desc,
+            url,
+            inLanguage: partInfo.lang,
+            about: ['ONDA Path', 'nervous-system self-regulation practice', 'experiential framework'],
+          }
+          out = out.replace('</head>', `  <script type="application/ld+json">${JSON.stringify(cw)}</script>\n</head>`)
+        }
         const hreflang = buildHreflangLinksForPart(partInfo.slug, translatedLangs)
         const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[partInfo.lang]}">`
         out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
