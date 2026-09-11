@@ -16,6 +16,7 @@ import { HRV_FAQ } from '../src/data/hrv-norms'
 import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
 import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
 import { HOW_IT_WORKS_I18N } from '../src/data/how-it-works-i18n'
+import { PEOPLE_I18N } from '../src/data/people-i18n'
 import { getOndaVs, ONDA_VS } from '../src/data/onda-vs'
 import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
@@ -1763,6 +1764,19 @@ export function getMetaForRoute(route: string): RouteMeta {
       image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
       imageAlt: 'ONDA Life — HRV biofeedback on Apple Watch: turning the Watch’s heart data into a live coherence loop',
       jsonLd: appleWatchHrvJsonLd(),
+    }
+  }
+  // /ru/people/yakiv-bilenko, /es/… — localized founder page.
+  if (route === '/ru/people/yakiv-bilenko' || route === '/es/people/yakiv-bilenko') {
+    const lang = route.startsWith('/ru/') ? 'ru' : 'es'
+    const c = PEOPLE_I18N[lang]
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'profile',
+      jsonLd: founderJsonLd(lang),
     }
   }
   // /people/yakiv-bilenko — founder person/authority page. EN-only.

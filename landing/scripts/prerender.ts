@@ -321,6 +321,7 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/apple-watch-hrv-biofeedback': ['en', 'ru', 'es'],
   '/measurements': ['en', 'ru', 'es'],
   '/how-it-works': ['en', 'ru', 'es'],
+  '/people/yakiv-bilenko': ['en', 'ru', 'es'],
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.

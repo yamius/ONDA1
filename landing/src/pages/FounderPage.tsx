@@ -1,25 +1,30 @@
 /**
- * /people/yakiv-bilenko — the founder's canonical person page.
+ * /people/yakiv-bilenko — the founder's canonical person page. Localized to
+ * ru + es via people-i18n.ts. The visible bio + meta localize; the ProfilePage's
+ * mainEntity Person is the site's canonical author (@id <site>/#author) and
+ * stays language-neutral so the author graph is one node — only the ProfilePage
+ * wrapper carries inLanguage.
  *
- * Emits a ProfilePage whose mainEntity is the site's canonical Person
- * (@id "<site>/#author", the same entity referenced by every article),
- * enriched with real education and an explicit scope boundary.
- *
- * Honesty (the point of the page): Yakiv's expertise is architecture,
- * psychology and Gestalt therapy plus product engineering — NOT clinical
- * neuroscience. The physiology/neuroscience authority belongs to ONDA's
- * scientific advisor. Never imply the founder is the scientific authority.
- * Only facts the founder provided are used; nothing invented.
- *
- * EN-only. Self-contained meta + ProfilePage/Person JSON-LD.
+ * Honesty: Yakiv's expertise is architecture, psychology and Gestalt therapy
+ * plus product engineering — NOT clinical neuroscience; that authority is the
+ * scientific advisor's. Never imply the founder is the scientific authority.
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { langFromPath, langHref, homePathFor } from '../i18n'
+import { renderRich, type RichLink } from '../utils/richText'
+import { PEOPLE_I18N, type PeopleCopy } from '../data/people-i18n'
 
+type Lang = 'en' | 'ru' | 'es'
 const SITE_URL = 'https://onda-life.com'
-const PAGE_URL = `${SITE_URL}/people/yakiv-bilenko`
+const CANONICAL_URL = `${SITE_URL}/people/yakiv-bilenko`
 const AUTHOR_ID = `${SITE_URL}/#author`
 const SAME_AS = ['https://www.linkedin.com/in/yamius', 'https://wateremotions.tilda.ws/kukoom']
+const PAGE_DESC_EN = PEOPLE_I18N.en.metaDescription
+
+function prefixFor(lang: string): string {
+  return lang === 'ru' ? '/ru' : lang === 'es' ? '/es' : ''
+}
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'
@@ -32,29 +37,26 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-const PAGE_TITLE = 'Yakiv Bilenko — Founder & CEO of ONDA Life'
-const PAGE_DESC =
-  'Yakiv Bilenko, founder & CEO of ONDA Life — architect (KNUCA, 2006) and Gestalt therapist (MIGIS, 2018) who builds the product. ONDA’s physiology and neuroscience are led by its scientific advisor.'
-
-/** ProfilePage/Person JSON-LD, emitted statically by meta-inject so non-JS
- *  crawlers resolve the canonical author entity (E-E-A-T). */
-export function founderJsonLd(): Record<string, unknown>[] {
+/** ProfilePage/Person JSON-LD. The Person is the site's canonical author node
+ *  (language-neutral, EN); only the ProfilePage wrapper localizes. */
+export function founderJsonLd(lang: Lang = 'en'): Record<string, unknown>[] {
+  const pageUrl = `${SITE_URL}${prefixFor(lang)}/people/yakiv-bilenko`
   return [
     {
       '@context': 'https://schema.org',
       '@type': 'ProfilePage',
-      '@id': `${PAGE_URL}#profile`,
-      url: PAGE_URL,
-      inLanguage: 'en',
+      '@id': `${pageUrl}#profile`,
+      url: pageUrl,
+      inLanguage: lang,
       isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL },
       mainEntity: {
         '@type': 'Person',
         '@id': AUTHOR_ID,
         name: 'Yakiv Bilenko',
-        url: PAGE_URL,
+        url: CANONICAL_URL,
         sameAs: SAME_AS,
         jobTitle: 'Founder & CEO, ONDA Life',
-        description: PAGE_DESC,
+        description: PAGE_DESC_EN,
         knowsAbout: [
           'architecture',
           'architecture and human psychological states',
@@ -81,101 +83,77 @@ export function founderJsonLd(): Record<string, unknown>[] {
 
 export function FounderPage() {
   const location = useLocation()
+  const lang = langFromPath(location.pathname) as Lang
+  const copy: PeopleCopy = PEOPLE_I18N[lang] ?? PEOPLE_I18N.en
+  const pageUrl = `${SITE_URL}${prefixFor(lang)}/people/yakiv-bilenko`
+
+  const links: Record<string, RichLink> = Object.fromEntries(
+    Object.entries(copy.links).map(([k, v]) => [k, { to: langHref(v.path, lang), label: v.label }]),
+  )
 
   useEffect(() => {
-    void location
-    document.title = PAGE_TITLE
-    setMeta('description', PAGE_DESC)
-    setMeta('og:title', PAGE_TITLE, true)
-    setMeta('og:description', PAGE_DESC, true)
+    document.title = copy.metaTitle
+    setMeta('description', copy.metaDescription)
+    setMeta('og:title', copy.metaTitle, true)
+    setMeta('og:description', copy.metaDescription, true)
     setMeta('og:type', 'profile', true)
-    setMeta('og:url', PAGE_URL, true)
+    setMeta('og:url', pageUrl, true)
     setMeta('twitter:card', 'summary', true)
-    setMeta('twitter:title', PAGE_TITLE, true)
-    setMeta('twitter:description', PAGE_DESC, true)
-    // ProfilePage/Person JSON-LD emitted statically by meta-inject (founderJsonLd).
-  }, [location])
+    setMeta('twitter:title', copy.metaTitle, true)
+    setMeta('twitter:description', copy.metaDescription, true)
+    // ProfilePage/Person JSON-LD + hreflang emitted statically by prerender/meta-inject.
+  }, [copy, pageUrl])
 
   return (
     <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
       {/* Breadcrumb */}
       <nav className="mt-6 mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to="/" className="transition-colors hover:text-white/50">Home</Link>
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">Home</Link>
         <span>/</span>
-        <Link to="/about" className="transition-colors hover:text-white/50">About</Link>
+        <Link to={langHref('/about', lang)} className="transition-colors hover:text-white/50">{copy.breadcrumbAbout}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">Yakiv Bilenko</span>
       </nav>
 
-      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">[ FOUNDER ]</div>
+      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">{copy.kicker}</div>
       <h1 className="mb-2 text-3xl font-bold tracking-tight md:text-5xl">Yakiv Bilenko</h1>
-      <p className="mb-8 font-mono text-sm text-white/50">Founder &amp; CEO, ONDA Life</p>
+      <p className="mb-8 font-mono text-sm text-white/50">{copy.role}</p>
 
       {/* Bio */}
       <section className="space-y-4 font-mono text-sm leading-relaxed text-white/70 md:text-base">
-        <p>
-          Yakiv Bilenko is the founder and CEO of ONDA Life. He works across two disciplines that
-          rarely meet: architecture and psychology.
-        </p>
-        <p>
-          As an <strong className="text-white">architect</strong> — trained at the Kyiv National
-          University of Construction and Architecture (KNUCA, 2006), as an architect-urbanist — he
-          studies and designs structured forms (domes, spheres, pyramids, zomes) and how they exert a
-          structured influence on a person&rsquo;s mental, physical and psychological state.
-        </p>
-        <p>
-          As a <strong className="text-white">Gestalt and systemic-family therapist</strong> —
-          trained at the MIGIS institute (2018), where he also leads groups — he developed a program
-          for comprehensive psychological development of the person, applying modern methods of
-          analysing a person&rsquo;s state.
-        </p>
-        <p>
-          ONDA Life grew out of that intersection: the idea that your external and internal
-          environments continuously shape one another, and that a person can learn to read and steer
-          their own physiological state. Yakiv leads ONDA&rsquo;s product and engineering end-to-end —
-          the app, the data pipeline (iOS, Android, Supabase), and the open pipeline for academic
-          data export.
-        </p>
+        {copy.bioParas.map((p, i) => (
+          <p key={i}>{renderRich(p, links, `bio${i}`)}</p>
+        ))}
       </section>
 
       {/* Scope boundary — the honest E-E-A-T note */}
       <section className="mt-10 rounded-lg border border-white/10 bg-white/[0.02] p-5">
-        <h2 className="mb-2 font-mono text-xs tracking-widest text-terminal-amber/80">
-          FOUNDER — NOT THE SCIENTIFIC AUTHORITY
-        </h2>
-        <p className="font-mono text-xs leading-relaxed text-white/60 md:text-sm">
-          Yakiv&rsquo;s expertise is architecture, psychology and Gestalt therapy, plus full-stack
-          engineering — not clinical neuroscience or physiology. ONDA&rsquo;s scientific methodology
-          and validation are overseen by its scientific advisor. We keep that line explicit on
-          purpose: the product is built method-first, with the science held to account by someone
-          whose field it is. See{' '}
-          <Link to="/research" className="text-terminal-green hover:underline">the science behind ONDA</Link>{' '}
-          for the evidence base and the advisor&rsquo;s role.
-        </p>
+        <h2 className="mb-2 font-mono text-xs tracking-widest text-terminal-amber/80">{copy.scopeHeading}</h2>
+        <p className="font-mono text-xs leading-relaxed text-white/60 md:text-sm">{renderRich(copy.scopeBody, links, 'scope')}</p>
       </section>
 
       {/* Links */}
       <section className="mt-10">
-        <h2 className="mb-3 font-mono text-xs tracking-widest text-terminal-green/60">[ ELSEWHERE ]</h2>
+        <h2 className="mb-3 font-mono text-xs tracking-widest text-terminal-green/60">{copy.elsewhereHeading}</h2>
         <ul className="space-y-2 font-mono text-sm">
           <li>
             <a href="https://www.linkedin.com/in/yamius" target="_blank" rel="noopener noreferrer" className="text-terminal-cyan hover:text-terminal-green">
-              LinkedIn — linkedin.com/in/yamius
+              {copy.linkedinLabel}
             </a>
           </li>
           <li>
             <a href="https://wateremotions.tilda.ws/kukoom" target="_blank" rel="noopener noreferrer" className="text-terminal-cyan hover:text-terminal-green">
-              KUKOOM — architectural forms project
+              {copy.kukoomLabel}
             </a>
           </li>
         </ul>
       </section>
 
       <p className="mt-10 font-mono text-xs leading-relaxed text-white/40">
-        More:{' '}
-        <Link to="/about" className="text-terminal-green hover:underline">About ONDA</Link>,{' '}
-        <Link to="/product" className="text-terminal-green hover:underline">Product</Link>,{' '}
-        <Link to="/research" className="text-terminal-green hover:underline">The science</Link>.
+        {copy.morePre}
+        <Link to={langHref('/about', lang)} className="text-terminal-green hover:underline">{copy.links.aboutLink.label}</Link>,{' '}
+        <Link to={langHref('/product', lang)} className="text-terminal-green hover:underline">{copy.links.productLink.label}</Link>,{' '}
+        <Link to={langHref('/research', lang)} className="text-terminal-green hover:underline">{copy.links.scienceLink.label}</Link>.
       </p>
     </main>
   )
