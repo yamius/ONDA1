@@ -45,6 +45,7 @@ import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
+import { LocalNotifications } from '@capacitor/local-notifications';
 import { App as CapApp } from '@capacitor/app';
 // AppTrackingTransparency: импорт удалён в v1.7.3 — ATT-prompt отключён
 // целиком. Если когда-нибудь захотим IDFA, возвращать через value-moment
@@ -684,6 +685,44 @@ const OndaLevel1 = () => {
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [watchHeartRate.isConnected]);
+
+  // Anomaly PUSH setup (step 4, Phase C): hand the native background delivery the
+  // localized wording (JS owns the 5 languages), then register the observers so a
+  // night deviation posts a local notification even when the app is closed.
+  const anomalyMonitorStartedRef = useRef(false);
+  useEffect(() => {
+    if (anomalyMonitorStartedRef.current) return;
+    if (platform !== 'ios' || !watchHeartRate.isConnected) return;
+    anomalyMonitorStartedRef.current = true;
+    (async () => {
+      try {
+        await LocalNotifications.requestPermissions();
+        await HealthKitHeartRate.setAnomalyStrings({
+          // Interpolate the tokens to themselves → keep {{…}} literal for native.
+          template: t('anomaly.prompt', { metric: '{{metric}}', value: '{{value}}', lo: '{{lo}}', hi: '{{hi}}' }),
+          title: 'ONDA',
+          metric_rhr: t('anomaly.metric_rhr', 'resting pulse'),
+          metric_hrv: t('anomaly.metric_hrv', 'variability'),
+          metric_rr: t('anomaly.metric_rr', 'breathing'),
+        });
+        await HealthKitHeartRate.startAnomalyMonitoring();
+      } catch (e) { console.warn('[anomaly] monitoring setup failed', e); }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [watchHeartRate.isConnected]);
+
+  // Opened from an anomaly local notification → analytics (the in-app prompt is
+  // re-raised by the evaluation effect on foreground).
+  useEffect(() => {
+    let handle: { remove: () => void } | undefined;
+    LocalNotifications.addListener('localNotificationActionPerformed', (a) => {
+      const extra = (a?.notification as { extra?: Record<string, unknown> })?.extra;
+      const metric = (extra?.anomaly_metric as string) ?? 'unknown';
+      try { track('anomaly_push_opened', { metric }); } catch { /* noop */ }
+    }).then((h) => { handle = h; }).catch(() => { /* noop */ });
+    return () => { try { handle?.remove(); } catch { /* noop */ } };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);

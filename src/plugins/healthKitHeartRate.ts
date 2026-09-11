@@ -118,6 +118,10 @@ export interface HealthKitHeartRatePlugin {
   queryBaseline(options?: { days?: number }): Promise<BaselineResult>;
   /** Per-night corridor values for the anomaly trigger (step 4) — noisy nights dropped. */
   queryBaselineCorridors(options?: { days?: number }): Promise<BaselineCorridorsResult>;
+  /** Hand the native background push the localized wording (tokens {{metric}} {{value}} {{lo}} {{hi}}). */
+  setAnomalyStrings(strings: { template: string; title: string; metric_rhr: string; metric_hrv: string; metric_rr: string }): Promise<{ ok: boolean }>;
+  /** Register HealthKit background delivery so a night deviation posts a local notification. */
+  startAnomalyMonitoring(): Promise<{ started: boolean }>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(

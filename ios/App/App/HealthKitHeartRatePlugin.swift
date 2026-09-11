@@ -1,6 +1,7 @@
 import Foundation
 import Capacitor
 import HealthKit
+import UserNotifications
 
 @objc(HealthKitHeartRatePlugin)
 public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
@@ -15,6 +16,8 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "querySleepHistory", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryBaseline", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryBaselineCorridors", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setAnomalyStrings", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -22,6 +25,8 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     private let healthStore = HKHealthStore()
     private var anchoredQuery: HKAnchoredObjectQuery?
     private var queryAnchor: HKQueryAnchor?
+    private var anomalyObservers: [HKObserverQuery] = []   // retained for background delivery
+    private var anomalyEvaluating = false                  // re-entrancy guard
     
     @objc func isAvailable(_ call: CAPPluginCall) {
         let available = HKHealthStore.isHealthDataAvailable()
@@ -673,6 +678,130 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
             completion(kept)
         }
         healthStore.execute(query)
+    }
+
+    // ── Anomaly PUSH (retention step 4, Phase C) ────────────────────────────
+    // The JS layer owns the wording (5 languages), so it hands us the current
+    // localized template + metric names to store; the background check fills in
+    // the numbers. Tokens are i18next-style ({{metric}} {{value}} {{lo}} {{hi}}).
+    @objc func setAnomalyStrings(_ call: CAPPluginCall) {
+        let d = UserDefaults.standard
+        d.set(call.getString("template") ?? "", forKey: "anomaly_template")
+        d.set(call.getString("title") ?? "ONDA", forKey: "anomaly_title")
+        d.set(call.getString("metric_rhr") ?? "resting pulse", forKey: "anomaly_metric_rhr")
+        d.set(call.getString("metric_hrv") ?? "variability", forKey: "anomaly_metric_hrv")
+        d.set(call.getString("metric_rr") ?? "breathing", forKey: "anomaly_metric_rr")
+        call.resolve(["ok": true])
+    }
+
+    /// Register HealthKit background delivery + observers so the app is woken in
+    /// the morning when the night's data syncs; the observer evaluates the
+    /// corridor and posts a local notification if it deviates (throttled 2 days).
+    @objc func startAnomalyMonitoring(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else { call.resolve(["started": false]); return }
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { _, _ in }
+
+        let ids: [HKQuantityTypeIdentifier] = [.restingHeartRate, .heartRateVariabilitySDNN, .respiratoryRate]
+        // Clear any previous observers (idempotent across app starts).
+        for obs in anomalyObservers { healthStore.stop(obs) }
+        anomalyObservers.removeAll()
+
+        for id in ids {
+            guard let type = HKQuantityType.quantityType(forIdentifier: id) else { continue }
+            let observer = HKObserverQuery(sampleType: type, predicate: nil) { [weak self] _, completion, _ in
+                self?.evaluateAnomalyAndNotify { completion() }
+            }
+            healthStore.execute(observer)
+            anomalyObservers.append(observer)
+            healthStore.enableBackgroundDelivery(for: type, frequency: .hourly) { _, _ in }
+        }
+        call.resolve(["started": true])
+    }
+
+    /// Background corridor check + local notification. Mirrors src/lib/anomaly.ts
+    /// (STRICT gate) — keep the thresholds in sync with that file.
+    private func evaluateAnomalyAndNotify(_ done: @escaping () -> Void) {
+        if anomalyEvaluating { done(); return }
+        anomalyEvaluating = true
+        let finish = { [weak self] in self?.anomalyEvaluating = false; done() }
+
+        let now = Date()
+        let calendar = Calendar.current
+        let start = calendar.date(byAdding: .day, value: -30, to: calendar.startOfDay(for: now)) ?? now
+        let signals: [(key: String, id: HKQuantityTypeIdentifier, minSamples: Int, nightOnly: Bool)] = [
+            ("rhr", .restingHeartRate, 1, false),
+            ("hrv", .heartRateVariabilitySDNN, 3, true),
+            ("rr", .respiratoryRate, 3, false),
+        ]
+        var byKey: [String: [Double]] = [:]
+        let group = DispatchGroup()
+        for s in signals {
+            group.enter()
+            queryNightlyValues(s.id, from: start, to: now, minSamples: s.minSamples, nightOnly: s.nightOnly) { values in
+                byKey[s.key] = values
+                group.leave()
+            }
+        }
+        group.notify(queue: .main) { [weak self] in
+            guard let self = self else { finish(); return }
+            // Throttle: ≤ 1 push / 2 days.
+            let last = UserDefaults.standard.double(forKey: "anomaly_last_signal_at")
+            if last > 0 && now.timeIntervalSince1970 - last < 2 * 24 * 60 * 60 { finish(); return }
+
+            var best: (metric: String, latest: Double, lo: Double, hi: Double, mag: Double)? = nil
+            for s in signals {
+                guard let hit = self.nativeDetectAnomaly(byKey[s.key] ?? [], metric: s.key) else { continue }
+                if best == nil || hit.mag > best!.mag { best = hit }
+            }
+            guard let a = best else { finish(); return }
+            UserDefaults.standard.set(now.timeIntervalSince1970, forKey: "anomaly_last_signal_at")
+            self.postAnomalyNotification(metric: a.metric, value: a.latest, lo: a.lo, hi: a.hi)
+            finish()
+        }
+    }
+
+    /// STRICT gate (mirror of anomaly.ts): ≥8 nights (7 prior + latest), ≥1.5 SD
+    /// out AND the metric floor. Returns nil unless it clears both.
+    private func nativeDetectAnomaly(_ values: [Double], metric: String) -> (metric: String, latest: Double, lo: Double, hi: Double, mag: Double)? {
+        guard values.count >= 8 else { return nil }
+        let latest = values.last!
+        let prior = Array(values.dropLast())
+        let mean = prior.reduce(0, +) / Double(prior.count)
+        let variance = prior.reduce(0) { $0 + pow($1 - mean, 2) } / Double(prior.count - 1)
+        let sd = variance.squareRoot()
+        guard sd > 0 else { return nil }
+        let delta = latest - mean
+        let mag = abs(delta) / sd
+        guard mag >= 1.5 else { return nil }
+        var crosses = false
+        switch metric {
+        case "rhr": crosses = delta > 0 && delta >= 5
+        case "rr": crosses = delta > 0 && delta >= 2
+        case "hrv": crosses = delta < 0 && mean > 0 && (-delta / mean) >= 0.15
+        default: break
+        }
+        guard crosses else { return nil }
+        return (metric, (latest * 10).rounded() / 10, ((mean - sd) * 10).rounded() / 10, ((mean + sd) * 10).rounded() / 10, mag)
+    }
+
+    private func postAnomalyNotification(metric: String, value: Double, lo: Double, hi: Double) {
+        let d = UserDefaults.standard
+        let template = d.string(forKey: "anomaly_template") ?? "Your {{metric}} today is {{value}} — usually {{lo}}–{{hi}}. Did something happen?"
+        let metricName = d.string(forKey: "anomaly_metric_\(metric)") ?? metric
+        let fmt = { (n: Double) -> String in n == n.rounded() ? String(Int(n)) : String(n) }
+        let body = template
+            .replacingOccurrences(of: "{{metric}}", with: metricName)
+            .replacingOccurrences(of: "{{value}}", with: fmt(value))
+            .replacingOccurrences(of: "{{lo}}", with: fmt(lo))
+            .replacingOccurrences(of: "{{hi}}", with: fmt(hi))
+
+        let content = UNMutableNotificationContent()
+        content.title = d.string(forKey: "anomaly_title") ?? "ONDA"
+        content.body = body
+        content.sound = .default
+        content.userInfo = ["anomaly_metric": metric]
+        let req = UNNotificationRequest(identifier: "onda_anomaly", content: content, trigger: nil) // deliver now
+        UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
     }
 
     /// The single peak value over [from, to] (true max sample, not a daily mean).
