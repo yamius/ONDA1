@@ -460,8 +460,10 @@ const OndaLevel1 = () => {
   // (HRV already has its own onda.hrv_daily_v1 store). Honest, forward-only.
   useEffect(() => {
     const rr = baseline?.data?.readings?.find((x) => x.key === 'rr');
+    const hrv = baseline?.data?.readings?.find((x) => x.key === 'hrv');
     recordDailyMetric(DAILY_STORES.rhr, dayRhr);
     recordDailyMetric(DAILY_STORES.rr, rr?.avg != null ? Math.round(rr.avg) : null);
+    recordDailyMetric(DAILY_STORES.hrv, hrv?.avg != null ? Math.round(hrv.avg) : null);
   }, [baseline, dayRhr]);
 
   // Live values for the baseline card's realtime hero. A signal counts as live

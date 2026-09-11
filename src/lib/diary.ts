@@ -19,11 +19,41 @@ export interface DiaryEntry {
   created_at: string;      // ISO — when the note was saved
   event_time: string;      // ISO — when it actually happened (may be backdated)
   text: string;
-  audioBase64?: string;    // MVP: voice kept locally as base64 (not synced yet)
-  photoBase64?: string;    // MVP: photo kept locally as base64 (not synced yet)
+  // Media (voice/photo) is TOO BIG for localStorage — it lives in IndexedDB
+  // (see putMedia/getMedia), keyed by entry id. The entry only carries flags.
+  hasAudio?: boolean;
+  hasPhoto?: boolean;
   source: DiarySource;
   rhr?: number | null;     // resting-pulse snapshot for that day, if known (§5)
   synced?: boolean;        // migrated to Supabase
+}
+
+/* ── Media store (IndexedDB) — base64 blobs, way past the localStorage quota ── */
+const MEDIA_DB = 'onda_diary_media';
+const MEDIA_STORE = 'media';
+export const mediaKey = (id: string, kind: 'audio' | 'photo') => `${id}:${kind}`;
+
+function openMediaDB(): Promise<IDBDatabase | null> {
+  return new Promise((resolve) => {
+    try {
+      const req = indexedDB.open(MEDIA_DB, 1);
+      req.onupgradeneeded = () => { try { req.result.createObjectStore(MEDIA_STORE); } catch { /* noop */ } };
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => resolve(null);
+    } catch { resolve(null); }
+  });
+}
+export async function putMedia(key: string, dataUrl: string): Promise<void> {
+  const db = await openMediaDB(); if (!db) return;
+  await new Promise<void>((r) => { try { const tx = db.transaction(MEDIA_STORE, 'readwrite'); tx.objectStore(MEDIA_STORE).put(dataUrl, key); tx.oncomplete = () => r(); tx.onerror = () => r(); } catch { r(); } });
+}
+export async function getMedia(key: string): Promise<string | null> {
+  const db = await openMediaDB(); if (!db) return null;
+  return new Promise((r) => { try { const tx = db.transaction(MEDIA_STORE, 'readonly'); const rq = tx.objectStore(MEDIA_STORE).get(key); rq.onsuccess = () => r(typeof rq.result === 'string' ? rq.result : null); rq.onerror = () => r(null); } catch { r(null); } });
+}
+export async function delMedia(keys: string[]): Promise<void> {
+  const db = await openMediaDB(); if (!db) return;
+  try { const tx = db.transaction(MEDIA_STORE, 'readwrite'); keys.forEach((k) => tx.objectStore(MEDIA_STORE).delete(k)); } catch { /* noop */ }
 }
 
 /** Derive the coarse source label from what an entry actually carries. */

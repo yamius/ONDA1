@@ -17,6 +17,7 @@ import { trackEvent } from '../services/AnalyticsService';
 import {
   loadDiaryEntries, saveDiaryEntries, newDiaryId, syncDiaryEntries,
   deleteDiaryEntryRemote, diarySource, loadDailyMetric, DAILY_STORES,
+  putMedia, getMedia, delMedia, mediaKey,
   type DiaryEntry, type DailyPoint,
 } from '../lib/diary';
 
@@ -62,6 +63,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const { t, i18n } = useTranslation();
 
   const [entries, setEntries] = useState<DiaryEntry[]>([]);
+  const [media, setMedia] = useState<Record<string, { audio?: string; photo?: string }>>({});
   const [metricPts, setMetricPts] = useState<Record<MetricKey, DailyPoint[]>>({ hrv: [], rhr: [], rr: [] });
   const [prefs, setPrefs] = useState<ViewPrefs>(loadPrefs);
   const [pxPerDay, setPxPerDay] = useState(64);
@@ -83,21 +85,31 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioChunksRef = useRef<Blob[]>([]);
   const blobRef = useRef<Blob | null>(null);
+  const editAudioRef = useRef<string | null>(null); // existing audio (data URL) while editing
   const timerRef = useRef<number | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const photoInputRef = useRef<HTMLInputElement | null>(null);
-  const dateInputRef = useRef<HTMLInputElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const pxRef = useRef(pxPerDay);
   pxRef.current = pxPerDay;
 
   const reload = useCallback(() => {
-    setEntries(loadDiaryEntries());
+    const es = loadDiaryEntries();
+    setEntries(es);
     setMetricPts({
       hrv: loadDailyMetric(DAILY_STORES.hrv),
       rhr: loadDailyMetric(DAILY_STORES.rhr),
       rr: loadDailyMetric(DAILY_STORES.rr),
     });
+    // Load media (voice/photo) for entries that carry it, from IndexedDB.
+    (async () => {
+      const map: Record<string, { audio?: string; photo?: string }> = {};
+      for (const e of es) {
+        if (e.hasPhoto) { const p = await getMedia(mediaKey(e.id, 'photo')); if (p) (map[e.id] = map[e.id] || {}).photo = p; }
+        if (e.hasAudio) { const a = await getMedia(mediaKey(e.id, 'audio')); if (a) (map[e.id] = map[e.id] || {}).audio = a; }
+      }
+      setMedia(map);
+    })();
   }, []);
 
   const savePrefs = (updater: (p: ViewPrefs) => ViewPrefs) => setPrefs((prev) => {
@@ -117,7 +129,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     setText(''); setEventDate(todayStr()); setEditingId(null); setPhotoBase64(undefined);
     setMicError(false); setRecState('idle'); setRecTime(0); stopMic();
     if (audioURL) URL.revokeObjectURL(audioURL);
-    setAudioURL(null); blobRef.current = null; audioChunksRef.current = [];
+    setAudioURL(null); blobRef.current = null; editAudioRef.current = null; audioChunksRef.current = [];
   }, [audioURL, stopMic]);
 
   const scrollToBottom = useCallback(() => {
@@ -193,10 +205,9 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     return out;
   }, [geom, pxPerDay, i18n.language]);
 
-  const visibleEntries = useMemo(() => entries.filter((e) => {
-    const okType = (prefs.types.text && !!e.text) || (prefs.types.voice && !!e.audioBase64) || (prefs.types.photo && !!e.photoBase64);
-    return okType;
-  }), [entries, prefs.types]);
+  const visibleEntries = useMemo(() => entries.filter((e) => (
+    (prefs.types.text && !!e.text) || (prefs.types.voice && !!e.hasAudio) || (prefs.types.photo && !!e.hasPhoto)
+  )), [entries, prefs.types]);
 
   // Group the enabled baseline metrics BY DAY, so a day with several metrics
   // shows one compact colour-coded row instead of overlapping labels.
@@ -250,7 +261,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   };
   const discardVoice = () => {
     if (audioURL) URL.revokeObjectURL(audioURL);
-    setAudioURL(null); blobRef.current = null; audioChunksRef.current = [];
+    setAudioURL(null); blobRef.current = null; editAudioRef.current = null; audioChunksRef.current = [];
     setRecState('idle'); setRecTime(0); setIsPlaying(false);
   };
   const toBase64 = (blob: Blob): Promise<string> => new Promise((resolve, reject) => {
@@ -270,33 +281,51 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     if (mode === 'voice') setTimeout(() => startRecording(), 50);
   };
   const persist = (next: DiaryEntry[]) => { setEntries(next); saveDiaryEntries(next); };
-  const canSave = text.trim().length > 0 || !!blobRef.current || !!photoBase64 || editingId != null;
+  const canSave = text.trim().length > 0 || !!blobRef.current || !!editAudioRef.current || !!photoBase64;
 
   const handleSave = async () => {
     if (!canSave) return;
     stopMic();
     const backdated = eventDate !== todayStr();
     const eventTime = backdated ? new Date(`${eventDate}T12:00:00`).toISOString() : new Date().toISOString();
-    let audioBase64: string | undefined;
-    if (blobRef.current) { try { audioBase64 = await toBase64(blobRef.current); } catch { /* noop */ } }
+    // New recording overrides the existing clip; photoBase64 holds current photo.
+    const audioData = blobRef.current ? await toBase64(blobRef.current) : editAudioRef.current;
     const hasText = text.trim().length > 0;
+    const hasAudio = !!audioData; const hasPhoto = !!photoBase64;
+    const source = diarySource(hasText, hasAudio, hasPhoto);
+    const id = editingId ?? newDiaryId();
+
+    // Media → IndexedDB (never localStorage — it's too big and silently overflows).
+    if (hasAudio) await putMedia(mediaKey(id, 'audio'), audioData!); else await delMedia([mediaKey(id, 'audio')]);
+    if (hasPhoto) await putMedia(mediaKey(id, 'photo'), photoBase64!); else await delMedia([mediaKey(id, 'photo')]);
+    setMedia((m) => ({ ...m, [id]: { audio: hasAudio ? audioData! : undefined, photo: hasPhoto ? photoBase64 : undefined } }));
 
     if (editingId) {
-      persist(entries.map((e) => {
-        if (e.id !== editingId) return e;
-        const audio = audioBase64 ?? e.audioBase64; const photo = photoBase64 ?? e.photoBase64;
-        return { ...e, text: text.trim(), event_time: eventTime, audioBase64: audio, photoBase64: photo, source: diarySource(hasText, !!audio, !!photo), synced: false };
-      }));
+      persist(entries.map((e) => (e.id === editingId
+        ? { ...e, text: text.trim(), event_time: eventTime, hasAudio, hasPhoto, source, synced: false }
+        : e)));
     } else {
-      const source = diarySource(hasText, !!audioBase64, !!photoBase64);
-      persist([{ id: newDiaryId(), created_at: new Date().toISOString(), event_time: eventTime, text: text.trim(), audioBase64, photoBase64, source, rhr: backdated ? null : (dayRhr ?? null) }, ...entries]);
+      persist([{ id, created_at: new Date().toISOString(), event_time: eventTime, text: text.trim(), hasAudio, hasPhoto, source, rhr: backdated ? null : (dayRhr ?? null) }, ...entries]);
       try { trackEvent('diary_entry_created', { type: source, backdated }); } catch { /* noop */ }
     }
     resetEditor(); setEditorOpen(false);
     setTimeout(scrollToBottom, 60);
   };
-  const handleEdit = (e: DiaryEntry) => { resetEditor(); setEditingId(e.id); setText(e.text); setEventDate(e.event_time.slice(0, 10)); setPhotoBase64(e.photoBase64); setEditorOpen(true); };
-  const handleDelete = (id: string) => { persist(entries.filter((e) => e.id !== id)); if (editingId === id) { resetEditor(); setEditorOpen(false); } if (userId) deleteDiaryEntryRemote(userId, id); };
+  const handleEdit = (e: DiaryEntry) => {
+    resetEditor();
+    setEditingId(e.id); setText(e.text); setEventDate(e.event_time.slice(0, 10));
+    const m = media[e.id];
+    setPhotoBase64(m?.photo);
+    if (m?.audio) { editAudioRef.current = m.audio; setAudioURL(m.audio); setRecState('recorded'); }
+    setEditorOpen(true);
+  };
+  const handleDelete = (id: string) => {
+    persist(entries.filter((e) => e.id !== id));
+    setMedia((m) => { const n = { ...m }; delete n[id]; return n; });
+    delMedia([mediaKey(id, 'audio'), mediaKey(id, 'photo')]);
+    if (editingId === id) { resetEditor(); setEditorOpen(false); }
+    if (userId) deleteDiaryEntryRemote(userId, id);
+  };
   const handleClose = () => { stopMic(); resetEditor(); setEditorOpen(false); setFabOpen(false); onClose(); };
 
   const fmtTime = (iso: string) => { try { return new Date(iso).toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' }); } catch { return ''; } };
@@ -331,13 +360,12 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         <div className={`shrink-0 border-b p-3 sm:p-4 ${light ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
           <div className="flex items-center gap-2">
             <h2 className="text-lg sm:text-xl font-bold flex-1">{t('diary.timeline', 'Таймлайн')}</h2>
-            <button onClick={() => scrollToBottom()} data-testid="diary-today" className={`px-2.5 py-1 rounded-full text-xs font-semibold transition-all ${light ? 'bg-violet-50 text-slate-600 hover:bg-violet-100' : 'bg-white/5 text-white/70 hover:bg-white/10'}`}>
-              {t('diary.today', 'Сьогодні')}
-            </button>
-            <button onClick={() => { try { (dateInputRef.current as any)?.showPicker?.(); } catch { /* noop */ } dateInputRef.current?.click(); }} data-testid="diary-jump-date" aria-label={t('diary.pick_date', 'Обрати дату')} className={`p-1.5 rounded-full transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
+            {/* Native date input UNDER a calendar icon — tapping opens the real
+                picker (programmatic showPicker() is unreliable in WKWebView). */}
+            <label data-testid="diary-jump-date" aria-label={t('diary.pick_date', 'Обрати дату')} className={`relative mr-2 p-1.5 rounded-full cursor-pointer transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
               <Calendar className="w-5 h-5" />
-            </button>
-            <input ref={dateInputRef} type="date" max={todayStr()} onChange={(e) => { if (e.target.value) scrollToTime(new Date(`${e.target.value}T12:00:00`).getTime()); }} className="sr-only" tabIndex={-1} aria-hidden />
+              <input type="date" max={todayStr()} onChange={(e) => { if (e.target.value) scrollToTime(new Date(`${e.target.value}T12:00:00`).getTime()); }} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+            </label>
             <button onClick={handleClose} data-testid="diary-close" className={`transition-all ${light ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}>
               <X className="w-6 h-6" />
             </button>
@@ -380,11 +408,11 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 <div className="absolute pl-3" style={{ top: geom.y(new Date(e.event_time).getTime()), left: '58%', width: '42%', transform: 'translateY(-50%)' }}>
                   <button onClick={() => handleEdit(e)} data-testid="diary-entry" className={`block w-full text-left rounded-lg px-2 py-1.5 border transition-all ${light ? 'bg-white/80 border-violet-100 hover:border-violet-300' : 'bg-white/5 border-white/10 hover:border-white/25'}`}>
                     <div className="flex items-center gap-1.5">
-                      {e.photoBase64 && <img src={e.photoBase64} alt="" className="w-8 h-8 rounded object-cover shrink-0" />}
+                      {e.hasPhoto && media[e.id]?.photo && <img src={media[e.id]!.photo} alt="" className="w-8 h-8 rounded object-cover shrink-0" />}
                       <div className="min-w-0 flex-1">
                         {e.text ? <p className="text-xs leading-snug line-clamp-2 break-words">{e.text}</p>
-                          : <p className="text-xs opacity-60">{e.audioBase64 ? `🎤 ${t('diary.voice_note', 'Голосовая заметка')}` : e.photoBase64 ? `🖼 ${t('diary.photo', 'Фото')}` : ''}</p>}
-                        <span className={`text-[10px] ${light ? 'text-slate-400' : 'text-white/40'}`}>{fmtTime(e.event_time)}{e.audioBase64 && e.text ? ' · 🎤' : ''}</span>
+                          : <p className="text-xs opacity-60">{e.hasAudio ? `🎤 ${t('diary.voice_note', 'Голосовая заметка')}` : e.hasPhoto ? `🖼 ${t('diary.photo', 'Фото')}` : ''}</p>}
+                        <span className={`text-[10px] ${light ? 'text-slate-400' : 'text-white/40'}`}>{fmtTime(e.event_time)}{e.hasAudio && e.text ? ' · 🎤' : ''}</span>
                       </div>
                     </div>
                   </button>
