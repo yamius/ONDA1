@@ -37,7 +37,8 @@ const DAY = 86_400_000;
 const PAD = 28;
 const FAB_CLEAR = 128;   // room below the last marker for the FAB + side clusters
 const MIN_PX = 12;
-const MAX_PX = 180;
+const MAX_PX = 1200;   // deep zoom — a single day can span the viewport so
+                       // intraday notes (by event_time) separate cleanly
 
 const todayStr = () => {
   const d = new Date();
@@ -90,6 +91,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const photoInputRef = useRef<HTMLInputElement | null>(null);
   const scrollRef = useRef<HTMLDivElement | null>(null);
+  const overlayRef = useRef<HTMLDivElement | null>(null);
   const pxRef = useRef(pxPerDay);
   pxRef.current = pxPerDay;
 
@@ -142,8 +144,17 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     reload();
     const prevOverflow = document.body.style.overflow;
     document.body.style.overflow = 'hidden';
+    // Hard lock: swallow any touch-move that isn't inside the timeline scroller,
+    // so the home screen behind the window never scrolls (iOS WKWebView leaks
+    // scroll through a fixed overlay otherwise).
+    const overlay = overlayRef.current;
+    const onTouchMove = (e: TouchEvent) => {
+      const sc = scrollRef.current;
+      if (!sc || !sc.contains(e.target as Node)) e.preventDefault();
+    };
+    overlay?.addEventListener('touchmove', onTouchMove, { passive: false });
     const id = window.setTimeout(scrollToBottom, 60);
-    return () => { document.body.style.overflow = prevOverflow; clearTimeout(id); };
+    return () => { document.body.style.overflow = prevOverflow; overlay?.removeEventListener('touchmove', onTouchMove as EventListener); clearTimeout(id); };
   }, [isOpen, reload, scrollToBottom]);
 
   // Pinch-to-zoom (two fingers) on the timeline — native listeners so we can
@@ -222,6 +233,15 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     });
     return [...map.values()].sort((a, b) => a.time - b.time);
   }, [metricPts, prefs.metrics]);
+
+  // date → that day's baseline values, for showing inside a note (§5).
+  const metricByDate = useMemo(() => {
+    const map = new Map<string, Partial<Record<MetricKey, number>>>();
+    (['hrv', 'rhr', 'rr'] as MetricKey[]).forEach((k) => metricPts[k].forEach((p) => {
+      const cur = map.get(p.date) || {}; cur[k] = p.value; map.set(p.date, cur);
+    }));
+    return map;
+  }, [metricPts]);
 
   const scrollToTime = (time: number) => {
     if (!scrollRef.current) return;
@@ -328,8 +348,6 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   };
   const handleClose = () => { stopMic(); resetEditor(); setEditorOpen(false); setFabOpen(false); onClose(); };
 
-  const fmtTime = (iso: string) => { try { return new Date(iso).toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' }); } catch { return ''; } };
-
   const railColor = light ? 'rgb(196,181,253)' : 'rgba(129,140,248,0.5)';
   const METRICS: { key: MetricKey; store: string; icon: React.ReactNode; color: string; unit: string }[] = [
     { key: 'hrv', store: DAILY_STORES.hrv, icon: <Activity className="w-3.5 h-3.5" />, color: light ? 'rgb(99,102,241)' : 'rgb(129,140,248)', unit: 'HRV' },
@@ -351,7 +369,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   );
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50">
+    <div ref={overlayRef} className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50">
       <div
         className={`absolute inset-x-2 sm:inset-x-4 bottom-2 mx-auto max-w-lg rounded-2xl border shadow-2xl flex flex-col overflow-hidden ${light ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}
         style={{ top: 'calc(env(safe-area-inset-top) + 6px)' }}
@@ -382,8 +400,9 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
             <div className="absolute" style={{ left: '42%', top: PAD, height: geom.innerH, width: '2px', background: railColor }} />
             <div className="absolute" style={{ left: '58%', top: PAD, height: geom.innerH, width: '2px', background: railColor }} />
 
+            {/* time scale — centred chips between the two rails */}
             {dayLabels.map((d, i) => (
-              <div key={i} className={`absolute text-[10px] text-center ${light ? 'text-slate-300' : 'text-white/30'}`} style={{ top: d.y, left: '42%', width: '16%', transform: 'translateY(-50%)' }}>{d.label}</div>
+              <div key={i} className={`absolute text-[10px] px-1 rounded whitespace-nowrap ${light ? 'text-slate-400 bg-white' : 'text-white/40 bg-gray-900'}`} style={{ top: d.y, left: '50%', transform: 'translate(-50%,-50%)' }}>{d.label}</div>
             ))}
 
             {/* baseline markers (left rail) — one compact row per day, values
@@ -412,7 +431,21 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                       <div className="min-w-0 flex-1">
                         {e.text ? <p className="text-xs leading-snug line-clamp-2 break-words">{e.text}</p>
                           : <p className="text-xs opacity-60">{e.hasAudio ? `🎤 ${t('diary.voice_note', 'Голосовая заметка')}` : e.hasPhoto ? `🖼 ${t('diary.photo', 'Фото')}` : ''}</p>}
-                        <span className={`text-[10px] ${light ? 'text-slate-400' : 'text-white/40'}`}>{fmtTime(e.event_time)}{e.hasAudio && e.text ? ' · 🎤' : ''}</span>
+                        {(() => {
+                          const bl = metricByDate.get(e.event_time.slice(0, 10));
+                          const keys = (['hrv', 'rhr', 'rr'] as MetricKey[]).filter((k) => bl && bl[k] != null);
+                          if (!e.hasAudio && keys.length === 0) return null;
+                          return (
+                            <div className="flex items-center gap-1.5 mt-0.5 flex-wrap">
+                              {e.hasAudio && e.text && <span className="text-[10px]">🎤</span>}
+                              {keys.map((k) => (
+                                <span key={k} className="text-[10px] font-semibold inline-flex items-center" style={{ color: metricColor(k) }}>
+                                  <span className="inline-block w-1 h-1 rounded-full mr-0.5" style={{ background: metricColor(k) }} />{bl![k]}
+                                </span>
+                              ))}
+                            </div>
+                          );
+                        })()}
                       </div>
                     </div>
                   </button>
