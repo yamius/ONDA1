@@ -27,6 +27,7 @@ import { glossaryTerms } from '../src/data/glossary'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 import { reviews, comparisons } from '../src/data/reviews'
 import { TOOLS } from '../src/data/tools'
+import { METRIC_DETAILS, metricPlainText, metricSummary } from '../src/data/bioMetrics'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
@@ -43,7 +44,7 @@ const AUTHOR = {
 
 interface CorpusRecord {
   id: string
-  type: 'article' | 'glossary' | 'review' | 'comparison' | 'tool' | 'cornerstone'
+  type: 'article' | 'glossary' | 'review' | 'comparison' | 'tool' | 'cornerstone' | 'metric'
   language: 'en'
   url: string
   title: string
@@ -149,6 +150,24 @@ for (const t of TOOLS) {
   })
 }
 
+// Biometric definition pages (/bio/<key>) — what each Bio OS reading means.
+// Content-rich definitional pages; body flattened from METRIC_DETAILS.
+for (const key of Object.keys(METRIC_DETAILS)) {
+  const m = METRIC_DETAILS[key];
+  const body = metricPlainText(m);
+  records.push({
+    id: `bio-${key}`,
+    type: 'metric',
+    language: 'en',
+    url: `${SITE_URL}/bio/${key}`,
+    title: m.title,
+    description: metricSummary(m),
+    wordCount: wordCount(body),
+    author: { name: AUTHOR.name, url: AUTHOR.url },
+    body,
+  });
+}
+
 // Cornerstone explainer pages. Their prose lives in JSX (not a data module),
 // but the exported jsonLd() builders carry the Article (headline/description +
 // ScholarlyArticle citations) and FAQPage (Q&A) — the substantive, answer-shaped
@@ -199,6 +218,7 @@ const TYPE_ORDER: Record<CorpusRecord['type'], number> = {
   comparison: 3,
   tool: 4,
   cornerstone: 5,
+  metric: 6,
 }
 records.sort((a, b) => {
   if (a.type !== b.type) return TYPE_ORDER[a.type] - TYPE_ORDER[b.type]
@@ -221,6 +241,7 @@ const reviewCount = records.filter((r) => r.type === 'review').length
 const comparisonCount = records.filter((r) => r.type === 'comparison').length
 const toolCount = records.filter((r) => r.type === 'tool').length
 const cornerstoneCount = records.filter((r) => r.type === 'cornerstone').length
+const metricCount = records.filter((r) => r.type === 'metric').length
 console.log(
-  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms + ${reviewCount} reviews + ${comparisonCount} comparisons + ${toolCount} tools + ${cornerstoneCount} cornerstones`,
+  `[rag-corpus] Generated /datasets/onda-corpus.jsonl (${(jsonl.length / 1024).toFixed(0)} KB, ${(gz.length / 1024).toFixed(0)} KB gz) — ${articleCount} articles + ${glossaryCount} glossary terms + ${reviewCount} reviews + ${comparisonCount} comparisons + ${toolCount} tools + ${cornerstoneCount} cornerstones + ${metricCount} metrics`,
 )

@@ -413,7 +413,14 @@ export interface RouteMeta {
   /** Article image for og:image, twitter:image (absolute URL) */
   image?: string
   imageAlt?: string
-  definedTerm?: { name: string; description: string; url: string }
+  definedTerm?: {
+    name: string
+    description: string
+    url: string
+    /** Term set this belongs to. Defaults to the ONDA Life Glossary; bio-metric
+     *  pages pass the Bio OS metrics set so they don't claim glossary membership. */
+    termSet?: { id: string; name: string; url: string }
+  }
   /** Extracted "The Hack" blockquote bodies — emitted as Quotation JSON-LD. */
   hackQuotes?: string[]
   techArticle?: {
@@ -718,7 +725,13 @@ function buildQuotationJsonLd(text: string, articleUrl: string): string {
   })
 }
 
-function buildDefinedTermJsonLd(name: string, description: string, url: string): string {
+function buildDefinedTermJsonLd(
+  name: string,
+  description: string,
+  url: string,
+  termSet?: { id: string; name: string; url: string },
+): string {
+  const set = termSet ?? { id: `${SITE_URL}/glossary#glossary`, name: 'ONDA Life Glossary', url: `${SITE_URL}/glossary` }
   const term = {
     '@context': 'https://schema.org',
     '@type': 'DefinedTerm',
@@ -727,9 +740,9 @@ function buildDefinedTermJsonLd(name: string, description: string, url: string):
     url,
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
-      '@id': `${SITE_URL}/glossary#glossary`,
-      name: 'ONDA Life Glossary',
-      url: `${SITE_URL}/glossary`,
+      '@id': set.id,
+      name: set.name,
+      url: set.url,
       // E-E-A-T: link the glossary set to its canonical author so every
       // term page inherits an author signal via the @id reference.
       // Full Person record lives on the homepage and /about.
@@ -1508,11 +1521,25 @@ export function getMetaForRoute(route: string): RouteMeta {
     const key = bioMetricMatch[1]
     const metric = METRIC_DETAILS[key]
     if (metric) {
+      // Use the first prose section as the real definition — richer than a
+      // generic sentence, and answer-engine-friendly.
+      const firstBody = metric.sections.find((s) => s.body && s.body.trim())?.body?.trim()
+      const metaDesc = firstBody
+        ? (firstBody.length > 300 ? firstBody.slice(0, 297).replace(/\s+\S*$/, '') + '…' : firstBody)
+        : `${metric.title} — what this biometric means, how to interpret your score, and how to use it in daily practice.`
       return {
         title: `${metric.title} | ONDA Life Bio OS`,
-        description: `${metric.title} — learn what this biometric means, how to interpret your score, and how to use it in your daily practice.`,
+        description: metaDesc,
         url,
         breadcrumbs,
+        // DefinedTerm makes each metric page a citable definition ("what is X").
+        // Own term set (Bio OS metrics), not the glossary — these aren't in it.
+        definedTerm: {
+          name: metric.title,
+          description: firstBody ?? metaDesc,
+          url,
+          termSet: { id: `${SITE_URL}/bio#metrics`, name: 'ONDA Bio OS metrics', url: `${SITE_URL}/bio` },
+        },
       }
     }
   }
@@ -3149,7 +3176,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
 
   // JSON-LD: DefinedTerm (glossary pages only)
   if (meta.definedTerm) {
-    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url)}</script>`
+    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url, meta.definedTerm.termSet)}</script>`
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
   }
 

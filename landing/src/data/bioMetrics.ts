@@ -696,3 +696,22 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
     ],
   },
 }
+
+/** Flatten a metric's sections to plain text — for llms-full.txt and the RAG
+ *  corpus (single source, so the AI-facing text never drifts from the page). */
+export function metricPlainText(m: MetricDetail): string {
+  const parts: string[] = []
+  for (const s of m.sections) {
+    if (s.heading) parts.push(s.heading)
+    if (s.body) parts.push(s.body)
+    if (s.bullets) for (const b of s.bullets) parts.push(`${b.label}: ${b.text}`)
+    if (s.highlight) parts.push(s.highlight)
+  }
+  return parts.join('\n').trim()
+}
+
+/** First prose paragraph, trimmed — a one-line definition for indexes. */
+export function metricSummary(m: MetricDetail): string {
+  const b = m.sections.find((s) => s.body && s.body.trim())?.body?.trim() ?? ''
+  return b.length > 220 ? b.slice(0, 217).replace(/\s+\S*$/, '') + '…' : b
+}

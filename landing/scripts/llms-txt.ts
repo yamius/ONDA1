@@ -20,6 +20,7 @@ import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
 import { reviews, comparisons } from '../src/data/reviews'
 import { TOOLS } from '../src/data/tools'
+import { METRIC_DETAILS, metricSummary, metricPlainText } from '../src/data/bioMetrics'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
@@ -198,6 +199,20 @@ Free interactive calculators, no sign-up. Nervous-system tools link to the measu
 ${toolLines.join('\n')}
 `)
 
+  // Biometrics — the metric-definition pages under /bio (what each Bio OS
+  // reading means). Answer-engine definitional targets. EN-only URLs.
+  const metricLines: string[] = []
+  for (const key of Object.keys(METRIC_DETAILS)) {
+    const m = METRIC_DETAILS[key]
+    metricLines.push(`- [${m.title}](${SITE_URL}/bio/${key}): ${metricSummary(m)}`)
+  }
+  sections.push(`## Biometrics (what each Bio OS reading means)
+
+Definitions and interpretation for the metrics ONDA estimates from your pulse. Hub: ${SITE_URL}${langPrefix}/bio
+
+${metricLines.join('\n')}
+`)
+
   // Reviews — independent biohacking-tool reviews. EN-only; the same EN
   // URLs appear in every locale index, like Articles and Glossary.
   if (comparisons.length > 0 || reviews.length > 0) {
@@ -281,6 +296,15 @@ function buildFull(index: string): string {
   const cornerstoneBuilders: (() => Record<string, unknown>[])[] = [
     hrvBiofeedbackJsonLd, resonanceBreathingJsonLd, hrvVsCoherenceJsonLd, appleWatchHrvJsonLd,
   ]
+  out.push('## Biometrics (full definitions)\n')
+  for (const key of Object.keys(METRIC_DETAILS)) {
+    const m = METRIC_DETAILS[key]
+    out.push(`### ${m.title}\n`)
+    out.push(`URL: ${SITE_URL}/bio/${key}\n`)
+    out.push(metricPlainText(m))
+    out.push('\n---\n')
+  }
+
   out.push('## Cornerstone explainers (full Q&A)\n')
   for (const build of cornerstoneBuilders) {
     const nodes = build()
