@@ -10,7 +10,7 @@
  * flanking it, half-size round toggles (left = which baseline metrics show,
  * right = which diary types show). Local-first (lib/diary.ts).
  */
-import React, { useState, useRef, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useLayoutEffect, useCallback, useMemo } from 'react';
 import { X, Plus, Type, Mic, Camera, Image as ImageIcon, Play, Pause, Square, Trash2, Check, Calendar, Heart, Wind, Activity } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { trackEvent } from '../services/AnalyticsService';
@@ -45,6 +45,13 @@ const todayStr = () => {
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
 };
 const startOfDay = (t: number) => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
+
+/** Push overlapping items down so each gets `gap` px; input Ys sorted ascending. */
+function declutter(ys: number[], gap: number): number[] {
+  const out: number[] = []; let last = -Infinity;
+  for (const y of ys) { const ny = Math.max(y, last + gap); out.push(ny); last = ny; }
+  return out;
+}
 
 const pickMime = (): string => {
   for (const m of ['audio/webm', 'audio/mp4', 'audio/aac', 'audio/mpeg']) {
@@ -94,6 +101,9 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const pxRef = useRef(pxPerDay);
   pxRef.current = pxPerDay;
+  // Kept current for the pinch focal math (which runs in native listeners).
+  const geomRef = useRef<{ tStart: number } | null>(null);
+  const pinchRef = useRef<{ time: number; offset: number } | null>(null);
 
   const reload = useCallback(() => {
     const es = loadDiaryEntries();
@@ -164,7 +174,18 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     if (!el || !isOpen) return;
     let startDist = 0, startPx = pxRef.current, pinching = false;
     const dist = (ts: TouchList) => Math.hypot(ts[0].clientX - ts[1].clientX, ts[0].clientY - ts[1].clientY);
-    const onStart = (e: TouchEvent) => { if (e.touches.length === 2) { pinching = true; startDist = dist(e.touches); startPx = pxRef.current; } };
+    const onStart = (e: TouchEvent) => {
+      if (e.touches.length === 2) {
+        pinching = true; startDist = dist(e.touches); startPx = pxRef.current;
+        // Anchor: the timeline TIME under the midpoint between the two fingers.
+        const rect = el.getBoundingClientRect();
+        const focalClientY = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+        const offset = focalClientY - rect.top;
+        const contentY = el.scrollTop + offset;
+        const g = geomRef.current;
+        pinchRef.current = { time: g ? g.tStart + ((contentY - PAD) / startPx) * DAY : 0, offset };
+      }
+    };
     const onMove = (e: TouchEvent) => {
       if (pinching && e.touches.length === 2) {
         e.preventDefault();
@@ -172,7 +193,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         setPxPerDay(Math.max(MIN_PX, Math.min(MAX_PX, startPx * r)));
       }
     };
-    const onEnd = (e: TouchEvent) => { if (e.touches.length < 2) pinching = false; };
+    const onEnd = (e: TouchEvent) => { if (e.touches.length < 2) { pinching = false; pinchRef.current = null; } };
     el.addEventListener('touchstart', onStart, { passive: false });
     el.addEventListener('touchmove', onMove, { passive: false });
     el.addEventListener('touchend', onEnd);
@@ -203,15 +224,40 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     const y = (time: number) => PAD + Math.max(0, Math.min(innerH, ((time - tStart) / DAY) * pxPerDay));
     return { tStart, tEnd, windowDays, innerH, totalH: innerH + PAD + FAB_CLEAR, y };
   }, [entries, metricPts, pxPerDay]);
+  geomRef.current = { tStart: geom.tStart };
 
-  const dayLabels = useMemo(() => {
-    const step = pxPerDay >= 60 ? 1 : pxPerDay >= 28 ? 3 : Math.max(1, Math.ceil(30 / pxPerDay));
-    const out: { y: number; label: string }[] = [];
-    for (let d = 0; d <= geom.windowDays; d += step) {
-      const time = geom.tStart + d * DAY;
-      let label = '';
-      try { label = new Date(time).toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' }); } catch { /* noop */ }
-      out.push({ y: geom.y(time), label });
+  // Keep the pinch focal point (midpoint between the fingers) fixed on screen
+  // while zooming: after pxPerDay changes, re-anchor scrollTop to that time.
+  useLayoutEffect(() => {
+    const p = pinchRef.current; const el = scrollRef.current; const g = geomRef.current;
+    if (!p || !el || !g) return;
+    const contentY = PAD + ((p.time - g.tStart) / DAY) * pxPerDay;
+    el.scrollTop = contentY - p.offset;
+  }, [pxPerDay]);
+
+  // Adaptive scale: day labels when zoomed out; add hour ticks when zoomed in.
+  const timeLabels = useMemo(() => {
+    const lang = i18n.language || undefined;
+    const pxPerHour = pxPerDay / 24;
+    const out: { y: number; label: string; major: boolean }[] = [];
+    if (pxPerHour * 12 >= 40) {
+      const stepH = ([1, 2, 3, 6, 12] as const).find((s) => s * pxPerHour >= 40) ?? 12;
+      for (let h = 0; h <= geom.windowDays * 24; h += stepH) {
+        const t = geom.tStart + h * 3_600_000;
+        const d = new Date(t);
+        const dayStart = d.getHours() === 0;
+        let label = '';
+        try { label = dayStart ? d.toLocaleDateString(lang, { day: 'numeric', month: 'short' }) : d.toLocaleTimeString(lang, { hour: '2-digit', minute: '2-digit' }); } catch { /* noop */ }
+        out.push({ y: geom.y(t), label, major: dayStart });
+      }
+    } else {
+      const stepD = pxPerDay >= 60 ? 1 : pxPerDay >= 28 ? 2 : Math.max(1, Math.ceil(30 / pxPerDay));
+      for (let d = 0; d <= geom.windowDays; d += stepD) {
+        const t = geom.tStart + d * DAY;
+        let label = '';
+        try { label = new Date(t).toLocaleDateString(lang, { day: 'numeric', month: 'short' }); } catch { /* noop */ }
+        out.push({ y: geom.y(t), label, major: true });
+      }
     }
     return out;
   }, [geom, pxPerDay, i18n.language]);
@@ -242,6 +288,23 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     }));
     return map;
   }, [metricPts]);
+
+  // Lay out each rail's markers: dot stays at its real time (dotY); the label/
+  // bubble is pushed down when it would overlap the previous one (labelY), and a
+  // leader line links the two.
+  const baselineLaid = useMemo(() => {
+    const items = baselineDays.map((d) => ({ d, dotY: geom.y(d.time) }));
+    const laid = declutter(items.map((i) => i.dotY), 22);
+    return items.map((it, i) => ({ ...it, labelY: laid[i] }));
+  }, [baselineDays, geom]);
+
+  const diaryLaid = useMemo(() => {
+    const items = [...visibleEntries]
+      .sort((a, b) => a.event_time.localeCompare(b.event_time))
+      .map((e) => ({ e, dotY: geom.y(new Date(e.event_time).getTime()) }));
+    const laid = declutter(items.map((i) => i.dotY), 46);
+    return items.map((it, i) => ({ ...it, labelY: laid[i] }));
+  }, [visibleEntries, geom]);
 
   const scrollToTime = (time: number) => {
     if (!scrollRef.current) return;
@@ -400,17 +463,28 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
             <div className="absolute" style={{ left: '42%', top: PAD, height: geom.innerH, width: '2px', background: railColor }} />
             <div className="absolute" style={{ left: '58%', top: PAD, height: geom.innerH, width: '2px', background: railColor }} />
 
-            {/* time scale — centred chips between the two rails */}
-            {dayLabels.map((d, i) => (
-              <div key={i} className={`absolute text-[10px] px-1 rounded whitespace-nowrap ${light ? 'text-slate-400 bg-white' : 'text-white/40 bg-gray-900'}`} style={{ top: d.y, left: '50%', transform: 'translate(-50%,-50%)' }}>{d.label}</div>
+            {/* time scale — centred chips between the two rails; day labels bold,
+                hour ticks lighter/smaller. */}
+            {timeLabels.map((d, i) => (
+              <div key={i} className={`absolute px-1 rounded whitespace-nowrap ${light ? 'bg-white' : 'bg-gray-900'} ${d.major ? `text-xs font-semibold ${light ? 'text-slate-600' : 'text-white/75'}` : `text-[10px] ${light ? 'text-slate-400' : 'text-white/35'}`}`} style={{ top: d.y, left: '50%', transform: 'translate(-50%,-50%)' }}>{d.label}</div>
             ))}
+
+            {/* leader lines: link each dot (real time) to its decluttered label */}
+            <svg className="absolute inset-0 pointer-events-none" style={{ width: '100%', height: geom.totalH }}>
+              {baselineLaid.filter((x) => Math.abs(x.labelY - x.dotY) > 1).map((x) => (
+                <line key={`bl${x.d.time}`} x1="42%" y1={x.dotY} x2="40%" y2={x.labelY} stroke={railColor} strokeWidth="1" />
+              ))}
+              {diaryLaid.filter((x) => Math.abs(x.labelY - x.dotY) > 1).map((x) => (
+                <line key={`d${x.e.id}`} x1="58%" y1={x.dotY} x2="60%" y2={x.labelY} stroke={railColor} strokeWidth="1" />
+              ))}
+            </svg>
 
             {/* baseline markers (left rail) — one compact row per day, values
                 colour-coded by metric (colour ↔ the toggle buttons below). */}
-            {baselineDays.map((d) => (
+            {baselineLaid.map(({ d, dotY, labelY }) => (
               <React.Fragment key={d.time}>
-                <div className="absolute rounded-full" style={{ left: '42%', top: geom.y(d.time), width: '8px', height: '8px', transform: 'translate(-50%,-50%)', background: railColor }} />
-                <div className="absolute flex justify-end items-center gap-1.5 pr-3" style={{ top: geom.y(d.time), left: 0, width: '42%', transform: 'translateY(-50%)' }}>
+                <div className="absolute rounded-full" style={{ left: '42%', top: dotY, width: '8px', height: '8px', transform: 'translate(-50%,-50%)', background: railColor }} />
+                <div className="absolute flex justify-end items-center gap-1.5 pr-3" style={{ top: labelY, left: 0, width: '42%', transform: 'translateY(-50%)' }}>
                   {d.vals.map((v) => (
                     <span key={v.key} className="text-xs font-semibold whitespace-nowrap" style={{ color: metricColor(v.key) }}>
                       <span className="inline-block w-1.5 h-1.5 rounded-full mr-0.5 align-middle" style={{ background: metricColor(v.key) }} />{v.value}
@@ -421,32 +495,16 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
             ))}
 
             {/* diary markers (right rail) */}
-            {visibleEntries.map((e) => (
+            {diaryLaid.map(({ e, dotY, labelY }) => (
               <React.Fragment key={e.id}>
-                <div className="absolute rounded-full" style={{ left: '58%', top: geom.y(new Date(e.event_time).getTime()), width: '9px', height: '9px', transform: 'translate(-50%,-50%)', background: light ? 'rgb(16,185,129)' : 'rgb(52,211,153)' }} />
-                <div className="absolute pl-3" style={{ top: geom.y(new Date(e.event_time).getTime()), left: '58%', width: '42%', transform: 'translateY(-50%)' }}>
+                <div className="absolute rounded-full" style={{ left: '58%', top: dotY, width: '9px', height: '9px', transform: 'translate(-50%,-50%)', background: light ? 'rgb(16,185,129)' : 'rgb(52,211,153)' }} />
+                <div className="absolute pl-3" style={{ top: labelY, left: '58%', width: '42%', transform: 'translateY(-50%)' }}>
                   <button onClick={() => handleEdit(e)} data-testid="diary-entry" className={`block w-full text-left rounded-lg px-2 py-1.5 border transition-all ${light ? 'bg-white/80 border-violet-100 hover:border-violet-300' : 'bg-white/5 border-white/10 hover:border-white/25'}`}>
                     <div className="flex items-center gap-1.5">
                       {e.hasPhoto && media[e.id]?.photo && <img src={media[e.id]!.photo} alt="" className="w-8 h-8 rounded object-cover shrink-0" />}
-                      <div className="min-w-0 flex-1">
-                        {e.text ? <p className="text-xs leading-snug line-clamp-2 break-words">{e.text}</p>
-                          : <p className="text-xs opacity-60">{e.hasAudio ? `🎤 ${t('diary.voice_note', 'Голосовая заметка')}` : e.hasPhoto ? `🖼 ${t('diary.photo', 'Фото')}` : ''}</p>}
-                        {(() => {
-                          const bl = metricByDate.get(e.event_time.slice(0, 10));
-                          const keys = (['hrv', 'rhr', 'rr'] as MetricKey[]).filter((k) => bl && bl[k] != null);
-                          if (!e.hasAudio && keys.length === 0) return null;
-                          return (
-                            <div className="flex items-center gap-1.5 mt-0.5 flex-wrap">
-                              {e.hasAudio && e.text && <span className="text-[10px]">🎤</span>}
-                              {keys.map((k) => (
-                                <span key={k} className="text-[10px] font-semibold inline-flex items-center" style={{ color: metricColor(k) }}>
-                                  <span className="inline-block w-1 h-1 rounded-full mr-0.5" style={{ background: metricColor(k) }} />{bl![k]}
-                                </span>
-                              ))}
-                            </div>
-                          );
-                        })()}
-                      </div>
+                      {e.text
+                        ? <p className="min-w-0 flex-1 text-xs leading-snug line-clamp-2 break-words">{e.text}</p>
+                        : (!e.hasPhoto && <p className="min-w-0 flex-1 text-xs opacity-60">{e.hasAudio ? `🎤 ${t('diary.voice_note', 'Голосовая заметка')}` : ''}</p>)}
                     </div>
                   </button>
                 </div>
@@ -529,6 +587,24 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 )}
               </div>
               {micError && <p className={`text-xs ${light ? 'text-amber-600' : 'text-amber-300/80'}`}>{t('diary.mic_denied', 'Микрофон недоступен — можно записать текстом.')}</p>}
+              {/* This note's day: time + that day's baseline values. */}
+              {editingId && (() => {
+                const ent = entries.find((e) => e.id === editingId);
+                if (!ent) return null;
+                const bl = metricByDate.get(ent.event_time.slice(0, 10));
+                const keys = (['hrv', 'rhr', 'rr'] as MetricKey[]).filter((k) => bl && bl[k] != null);
+                let when = ''; try { when = new Date(ent.event_time).toLocaleString(i18n.language || undefined, { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }); } catch { /* noop */ }
+                return (
+                  <div className={`flex items-center gap-3 flex-wrap text-xs ${light ? 'text-slate-500' : 'text-white/50'}`}>
+                    <span>{when}</span>
+                    {keys.map((k) => (
+                      <span key={k} className="font-semibold inline-flex items-center" style={{ color: metricColor(k) }}>
+                        <span className="inline-block w-1.5 h-1.5 rounded-full mr-1" style={{ background: metricColor(k) }} />{bl![k]}
+                      </span>
+                    ))}
+                  </div>
+                );
+              })()}
               <div className="flex items-center gap-2">
                 <label className={`text-xs ${light ? 'text-slate-500' : 'text-white/50'}`}>{t('diary.when', 'Когда')}</label>
                 <input type="date" value={eventDate} max={todayStr()} onChange={(e) => setEventDate(e.target.value)} data-testid="diary-date"
