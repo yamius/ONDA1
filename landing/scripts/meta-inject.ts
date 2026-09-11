@@ -9,7 +9,7 @@ import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
-import { getArticleBySlug } from '../src/data/articles'
+import { getArticleBySlug, articles } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
@@ -2787,6 +2787,25 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
 
+  // /articles — knowledge-base index. Emit CollectionPage + ItemList over the
+  // articles so the hub is a structured listing, not just breadcrumbs. (EN;
+  // localized /<lang>/articles get their meta via applyLocalizedMeta.)
+  if (route === '/articles') {
+    return {
+      title: 'Articles | ONDA Life — Biohacking & Neuroscience',
+      description:
+        'Long-form knowledge base on HRV, breathwork, sleep, recovery and nervous-system science — the mechanism explained and cited, framings kept separate from measured science.',
+      url,
+      breadcrumbs,
+      itemList: {
+        name: 'ONDA Life Articles',
+        description: 'Long-form articles on HRV, breathwork and nervous-system science.',
+        url,
+        items: articles.map((a) => ({ url: `${SITE_URL}/articles/${a.slug}`, name: a.title })),
+      },
+    }
+  }
+
   const partMatch = route.match(/^\/part\/([^/]+)$/)
   if (partMatch) {
     const slug = partMatch[1]
@@ -2795,7 +2814,20 @@ export function getMetaForRoute(route: string): RouteMeta {
       const seo = PART_SEO[slug]
       const title = seo?.title ?? `${part.title} ${part.titleHighlight} | ONDA Life`
       const description = seo?.description ?? part.metaDescription ?? DEFAULT_DESC
-      return { title, description, url, breadcrumbs }
+      // CreativeWork (not Article): the Parts are the ONDA Path — an experiential
+      // practice framework, not evidence-based science. Honest by type choice.
+      return {
+        title,
+        description,
+        url,
+        breadcrumbs,
+        creativeWork: {
+          name: `${part.title} ${part.titleHighlight}`.trim(),
+          description,
+          url,
+          about: ['ONDA Path', 'nervous-system self-regulation practice', 'experiential framework'],
+        },
+      }
     }
   }
 
