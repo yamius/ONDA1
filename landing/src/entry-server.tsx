@@ -200,7 +200,11 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/ru/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
           <Route path="/es/resonance-breathing" element={<ResonanceBreathingGuidePage />} />
           <Route path="/hrv-vs-coherence"      element={<HrvVsCoherencePage />} />
+          <Route path="/ru/hrv-vs-coherence"   element={<HrvVsCoherencePage />} />
+          <Route path="/es/hrv-vs-coherence"   element={<HrvVsCoherencePage />} />
           <Route path="/apple-watch-hrv-biofeedback" element={<AppleWatchHrvBiofeedbackPage />} />
+          <Route path="/ru/apple-watch-hrv-biofeedback" element={<AppleWatchHrvBiofeedbackPage />} />
+          <Route path="/es/apple-watch-hrv-biofeedback" element={<AppleWatchHrvBiofeedbackPage />} />
           <Route path="/compare"               element={<OndaComparePage />} />
           <Route path="/ru/compare"            element={<OndaComparePage />} />
           <Route path="/es/compare"            element={<OndaComparePage />} />

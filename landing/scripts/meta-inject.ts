@@ -26,6 +26,8 @@ import { COMPARE_I18N } from '../src/data/compare-i18n'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { HRV_BIOFEEDBACK_I18N } from '../src/data/hrv-biofeedback-i18n'
 import { RESONANCE_BREATHING_I18N } from '../src/data/resonance-breathing-i18n'
+import { HRV_VS_COHERENCE_I18N } from '../src/data/hrv-vs-coherence-i18n'
+import { APPLE_WATCH_HRV_I18N } from '../src/data/apple-watch-hrv-i18n'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
@@ -1678,6 +1680,21 @@ export function getMetaForRoute(route: string): RouteMeta {
       jsonLd: resonanceBreathingJsonLd(),
     }
   }
+  // /ru/hrv-vs-coherence, /es/hrv-vs-coherence — localized cornerstone.
+  if (route === '/ru/hrv-vs-coherence' || route === '/es/hrv-vs-coherence') {
+    const lang = route.startsWith('/ru/') ? 'ru' : 'es'
+    const c = HRV_VS_COHERENCE_I18N[lang]
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: c.articleHeadline,
+      jsonLd: hrvVsCoherenceJsonLd(lang),
+    }
+  }
   // /hrv-vs-coherence — cornerstone explainer. EN-only.
   if (route === '/hrv-vs-coherence') {
     return {
@@ -1690,6 +1707,21 @@ export function getMetaForRoute(route: string): RouteMeta {
       image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
       imageAlt: 'ONDA Life — HRV vs coherence: the raw beat-to-beat variation versus how smooth it is as you breathe',
       jsonLd: hrvVsCoherenceJsonLd(),
+    }
+  }
+  // /ru/apple-watch-hrv-biofeedback, /es/… — localized cornerstone.
+  if (route === '/ru/apple-watch-hrv-biofeedback' || route === '/es/apple-watch-hrv-biofeedback') {
+    const lang = route.startsWith('/ru/') ? 'ru' : 'es'
+    const c = APPLE_WATCH_HRV_I18N[lang]
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: c.articleHeadline,
+      jsonLd: appleWatchHrvJsonLd(lang),
     }
   }
   // /apple-watch-hrv-biofeedback — cornerstone device page. EN-only.

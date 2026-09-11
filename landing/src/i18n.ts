@@ -127,7 +127,7 @@ const NON_LOCALIZED_PREFIXES = [
   '/measurements', '/how-it-works', '/compare',
   // Cornerstones become localized one by one; once localized a slug is removed
   // here so langHref routes it to /<lang>. Still EN-only:
-  '/hrv-vs-coherence', '/apple-watch-hrv-biofeedback', '/people',
+  '/people',
 ]
 
 /**

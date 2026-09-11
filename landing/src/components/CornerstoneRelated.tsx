@@ -20,7 +20,7 @@ const CORNERSTONES = [
 
 /** Cornerstone slugs that have ru/es localized routes. Add a slug here when it
  *  is localized so the mesh can link within-language. */
-const LOCALIZED = new Set<string>(['hrv-biofeedback', 'resonance-breathing'])
+const LOCALIZED = new Set<string>(['hrv-biofeedback', 'resonance-breathing', 'hrv-vs-coherence', 'apple-watch-hrv-biofeedback'])
 
 function prefixFor(lang: string): string {
   return lang === 'ru' ? '/ru' : lang === 'es' ? '/es' : ''
