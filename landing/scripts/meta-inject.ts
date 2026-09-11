@@ -24,6 +24,7 @@ import { TOOLS_I18N } from '../src/data/tools-i18n'
 import { TOPICS_I18N } from '../src/data/topics-i18n'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
+import { HRV_BIOFEEDBACK_I18N } from '../src/data/hrv-biofeedback-i18n'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
@@ -1617,6 +1618,21 @@ export function getMetaForRoute(route: string): RouteMeta {
   if (route === '/ru/product' || route === '/es/product') {
     const c = route === '/ru/product' ? PRODUCT_I18N.ru : PRODUCT_I18N.es
     return { title: c.metaTitle, description: c.metaDescription, url, breadcrumbs, ogType: 'website', jsonLd: productJsonLd() }
+  }
+  // /ru/hrv-biofeedback, /es/hrv-biofeedback — localized cornerstone.
+  if (route === '/ru/hrv-biofeedback' || route === '/es/hrv-biofeedback') {
+    const lang = route.startsWith('/ru/') ? 'ru' : 'es'
+    const c = HRV_BIOFEEDBACK_I18N[lang]
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: c.articleHeadline,
+      jsonLd: hrvBiofeedbackJsonLd(lang),
+    }
   }
   // /hrv-biofeedback — cornerstone bridge-entity page. EN-only.
   if (route === '/hrv-biofeedback') {

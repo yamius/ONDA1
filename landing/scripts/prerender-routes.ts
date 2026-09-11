@@ -457,8 +457,10 @@ const nonLocalizedStaticPaths = [
   '/es/faq',
   // /people/yakiv-bilenko — founder person/authority page. EN-only.
   '/people/yakiv-bilenko',
-  // Cornerstone bridge-entity pages: HRV biofeedback + resonance breathing. EN-only.
+  // Cornerstone bridge-entity pages. /hrv-biofeedback localized to ru + es.
   '/hrv-biofeedback',
+  '/ru/hrv-biofeedback',
+  '/es/hrv-biofeedback',
   '/resonance-breathing',
   '/hrv-vs-coherence',
   '/apple-watch-hrv-biofeedback',
