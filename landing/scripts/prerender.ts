@@ -319,6 +319,8 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/resonance-breathing': ['en', 'ru', 'es'],
   '/hrv-vs-coherence': ['en', 'ru', 'es'],
   '/apple-watch-hrv-biofeedback': ['en', 'ru', 'es'],
+  '/measurements': ['en', 'ru', 'es'],
+  '/how-it-works': ['en', 'ru', 'es'],
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.

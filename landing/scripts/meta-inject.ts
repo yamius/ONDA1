@@ -13,7 +13,9 @@ import { getArticleBySlug, articles } from '../src/data/articles'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
-import { MEASUREMENTS_FAQ } from '../src/data/measurements-faq'
+import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
+import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
+import { HOW_IT_WORKS_I18N } from '../src/data/how-it-works-i18n'
 import { getOndaVs, ONDA_VS } from '../src/data/onda-vs'
 import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
@@ -1581,8 +1583,20 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
 
-  // /measurements — "What ONDA actually measures". Machine-verifiable signal
-  // table (measured / derived / estimated) + FAQPage JSON-LD. EN-only.
+  // /measurements — "What ONDA actually measures". WebPage + FAQPage JSON-LD.
+  // Localized to ru + es.
+  if (route === '/ru/measurements' || route === '/es/measurements') {
+    const lang = route.startsWith('/ru/') ? 'ru' : 'es'
+    const c = MEASUREMENTS_I18N[lang]
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      jsonLd: measurementsJsonLd(lang),
+    }
+  }
   if (route === '/measurements') {
     return {
       title: 'What ONDA Measures — HRV, Coherence & What’s Estimated | ONDA Life',
@@ -1591,7 +1605,20 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
-      faq: { mainEntity: MEASUREMENTS_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: measurementsJsonLd('en'),
+    }
+  }
+  // /ru/how-it-works, /es/how-it-works — localized method page.
+  if (route === '/ru/how-it-works' || route === '/es/how-it-works') {
+    const lang = route.startsWith('/ru/') ? 'ru' : 'es'
+    const c = HOW_IT_WORKS_I18N[lang]
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      jsonLd: howItWorksJsonLd(lang),
     }
   }
   // /how-it-works — the biofeedback method (HRV + coherence computation). EN-only.
@@ -1603,7 +1630,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       url,
       breadcrumbs,
       ogType: 'website',
-      jsonLd: howItWorksJsonLd(),
+      jsonLd: howItWorksJsonLd('en'),
     }
   }
   // /product — canonical product page (Product Facts). Localized to ru + es.

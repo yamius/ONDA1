@@ -124,7 +124,7 @@ export function homePathFor(lang: Lang): string {
 // hubs link to their own /<lang> URL directly, not via langHref.)
 const NON_LOCALIZED_PREFIXES = [
   '/the-stack', '/topics', '/tools', '/research',
-  '/measurements', '/how-it-works', '/compare',
+  '/compare',
   // Cornerstones become localized one by one; once localized a slug is removed
   // here so langHref routes it to /<lang>. Still EN-only:
   '/people',

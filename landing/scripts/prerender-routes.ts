@@ -445,7 +445,11 @@ const nonLocalizedStaticPaths = [
   // /measurements + /how-it-works — GEO/AI citability pages: exactly what
   // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.
   '/measurements',
+  '/ru/measurements',
+  '/es/measurements',
   '/how-it-works',
+  '/ru/how-it-works',
+  '/es/how-it-works',
   // /product — canonical machine-readable product page (Product Facts).
   // Localized to ru + es (pilot); other pages stay EN-only.
   '/product',
