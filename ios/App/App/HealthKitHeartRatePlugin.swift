@@ -14,6 +14,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "queryAllHealthData", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "querySleepHistory", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryBaseline", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "queryBaselineCorridors", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -588,6 +589,90 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
             result["extras"] = extras
             call.resolve(result)
         }
+    }
+
+    /// Per-NIGHT values for the anomaly corridors (retention step 4). For each
+    /// signal returns the clean nightly values (oldest-first) after dropping
+    /// NOISY nights — a night with too few samples (watch off / poor contact /
+    /// broken data) is excluded, because a noisy night misread as a deviation is
+    /// the main source of false alarms (task §1). JS builds mean±SD + evaluates
+    /// the latest night against the corridor of the prior ones.
+    @objc func queryBaselineCorridors(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available")
+            return
+        }
+        let days = call.getInt("days") ?? 30
+        let now = Date()
+        let calendar = Calendar.current
+        let startDate = calendar.date(byAdding: .day, value: -days, to: calendar.startOfDay(for: now)) ?? now
+
+        // Per-signal noise floor + whether to restrict to overnight hours.
+        //  rhr: Apple's daily resting-HR is one authoritative, rest-derived value
+        //       per day → 1 sample/day is valid (no min-count exclusion).
+        //  rr:  respiratory rate is only recorded during sleep → already night;
+        //       drop nights with < 3 samples (poor coverage).
+        //  hrv: SDNN can occur anytime → keep only overnight samples, drop nights
+        //       with < 3 (too sparse to trust).
+        let signals: [(key: String, id: HKQuantityTypeIdentifier, minSamples: Int, nightOnly: Bool)] = [
+            ("rhr", .restingHeartRate, 1, false),
+            ("hrv", .heartRateVariabilitySDNN, 3, true),
+            ("rr", .respiratoryRate, 3, false),
+        ]
+
+        var result: [String: Any] = [:]
+        let group = DispatchGroup()
+        for signal in signals {
+            group.enter()
+            queryNightlyValues(signal.id, from: startDate, to: now, minSamples: signal.minSamples, nightOnly: signal.nightOnly) { values in
+                DispatchQueue.main.async {
+                    result[signal.key] = ["values": values, "validNights": values.count]
+                    group.leave()
+                }
+            }
+        }
+        group.notify(queue: .main) { call.resolve(result) }
+    }
+
+    /// All samples in [from, to] → one mean value per night, keeping only nights
+    /// with ≥ minSamples (noise exclusion). `nightOnly` keeps just overnight
+    /// samples (local hour < 9), for signals that also fire in daytime (HRV).
+    /// Returns the clean nightly means oldest-first.
+    private func queryNightlyValues(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, minSamples: Int, nightOnly: Bool, completion: @escaping ([Double]) -> Void) {
+        guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
+            completion([])
+            return
+        }
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        let query = HKSampleQuery(sampleType: type, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { _, samples, _ in
+            guard let samples = samples as? [HKQuantitySample], !samples.isEmpty else {
+                completion([])
+                return
+            }
+            let unit = self.unitFor(identifier)
+            let calendar = Calendar.current
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+
+            var daySum: [String: Double] = [:]
+            var dayN: [String: Int] = [:]
+            for sample in samples {
+                if nightOnly {
+                    let hour = calendar.component(.hour, from: sample.endDate)
+                    if hour >= 9 { continue } // keep only overnight → morning
+                }
+                let day = dateFormatter.string(from: sample.endDate)
+                daySum[day, default: 0] += sample.quantity.doubleValue(for: unit)
+                dayN[day, default: 0] += 1
+            }
+            // Keep nights that clear the noise floor, ordered oldest-first.
+            let kept = daySum.keys
+                .filter { (dayN[$0] ?? 0) >= minSamples }
+                .sorted()
+                .map { daySum[$0]! / Double(dayN[$0]!) }
+            completion(kept)
+        }
+        healthStore.execute(query)
     }
 
     /// The single peak value over [from, to] (true max sample, not a daily mean).

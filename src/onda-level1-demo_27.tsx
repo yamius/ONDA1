@@ -26,6 +26,7 @@ import { CoherenceOrb } from './components/CoherenceOrb';
 import { BaselineCard, BaselineClosingFooter } from './components/BaselineCard';
 import { buildFromNative, buildFromCamera, hasAnyReading, BASELINE_WINDOW_DAYS, type BaselineData, type BaselineSource } from './lib/baseline';
 import HealthKitHeartRate from './plugins/healthKitHeartRate';
+import type { BaselineCorridorsResult } from './plugins/healthKitHeartRate';
 // Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
 import { HRVMiniChart } from './components/HRVMiniChart';
 import { TodaysPracticeStateCard } from './components/TodaysPracticeStateCard';
@@ -648,29 +649,39 @@ const OndaLevel1 = () => {
   // signal (honest). Production corridors (per-night RHR/HRV/RR + noisy-night
   // exclusion, ≥7 nights) come from the native query in the next phase; here a
   // DEV-only mock exercises the prompt/diary wiring in the web preview.
-  // Phase B seam: production per-night corridors come from the native HealthKit
-  // query (mean+SD per signal, ≥7 valid nights, noisy nights dropped). Empty
-  // until that lands — so the trigger is dormant, never firing on bad data.
-  const getBaselineCorridorSignals = (): SignalInput[] => [];
+  // Anomaly evaluation (step 4). Once per session, when a watch is connected,
+  // read the per-night corridors from HealthKit and check the latest night.
   const anomalyEvaluatedRef = useRef(false);
   useEffect(() => {
     if (anomalyEvaluatedRef.current) return;
+    if (platform !== 'ios') return;
     // WATCH-ONLY: camera users have no night data → never signalled.
     if (!watchHeartRate.isConnected) return;
-    // Per-night corridors (RHR/HRV/RR mean+SD, ≥7 valid nights, noisy nights
-    // dropped) come from the native query — wired in the next phase.
-    const signals: SignalInput[] = getBaselineCorridorSignals();
-    if (signals.length === 0) return;
     anomalyEvaluatedRef.current = true;
-    const anomaly = detectAnomaly(signals);
-    if (!anomaly) return;
-    const st = loadAnomalyState();
-    if (!canSignal(Date.now(), st.lastSignalAt)) return;
-    const night = new Date().toISOString().slice(0, 10);
-    saveAnomalyState({ lastSignalAt: Date.now(), pending: { ...anomaly, at: Date.now(), night } });
-    setAnomalyPrompt(anomaly);
-    try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
-    try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
+    (async () => {
+      let corridors: BaselineCorridorsResult;
+      try {
+        corridors = await HealthKitHeartRate.queryBaselineCorridors({ days: 30 });
+      } catch (e) {
+        console.warn('[anomaly] corridors query failed', e);
+        return;
+      }
+      // Corridor = the PRIOR nights; the latest night is what we test against it.
+      const signals: SignalInput[] = (['rhr', 'hrv', 'rr'] as const).flatMap((k) => {
+        const vals = corridors?.[k]?.values ?? [];
+        if (vals.length < 2) return [];
+        return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
+      });
+      const anomaly = detectAnomaly(signals);
+      if (!anomaly) return;
+      const st = loadAnomalyState();
+      if (!canSignal(Date.now(), st.lastSignalAt)) return;
+      const night = new Date().toISOString().slice(0, 10);
+      saveAnomalyState({ lastSignalAt: Date.now(), pending: { ...anomaly, at: Date.now(), night } });
+      setAnomalyPrompt(anomaly);
+      try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
+      try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
+    })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [watchHeartRate.isConnected]);
   const [showStatsModal, setShowStatsModal] = useState(false);

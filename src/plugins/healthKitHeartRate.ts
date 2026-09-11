@@ -96,6 +96,17 @@ export interface BaselineResult {
   extras?: BaselineExtrasResult;
 }
 
+/** Clean per-NIGHT values behind one anomaly corridor (noisy nights already dropped). */
+export interface CorridorSignal {
+  values: number[];   // nightly means, oldest-first, noisy nights excluded
+  validNights: number;
+}
+export interface BaselineCorridorsResult {
+  rhr: CorridorSignal;
+  hrv: CorridorSignal;
+  rr: CorridorSignal;
+}
+
 export interface HealthKitHeartRatePlugin {
   isAvailable(): Promise<{ available: boolean }>;
   requestAuthorization(): Promise<{ authorized: boolean }>;
@@ -105,6 +116,8 @@ export interface HealthKitHeartRatePlugin {
   querySleepHistory(options?: { days?: number }): Promise<SleepHistoryResult>;
   /** Read the N-day baseline (default 14) — daily avg/min/max per signal. Needs full HealthKit auth. */
   queryBaseline(options?: { days?: number }): Promise<BaselineResult>;
+  /** Per-night corridor values for the anomaly trigger (step 4) — noisy nights dropped. */
+  queryBaselineCorridors(options?: { days?: number }): Promise<BaselineCorridorsResult>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(
