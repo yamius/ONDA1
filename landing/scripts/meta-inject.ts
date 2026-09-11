@@ -25,6 +25,7 @@ import { TOPICS_I18N } from '../src/data/topics-i18n'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { HRV_BIOFEEDBACK_I18N } from '../src/data/hrv-biofeedback-i18n'
+import { RESONANCE_BREATHING_I18N } from '../src/data/resonance-breathing-i18n'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
@@ -1646,6 +1647,21 @@ export function getMetaForRoute(route: string): RouteMeta {
       image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
       imageAlt: 'ONDA Life — HRV biofeedback: a live heart-rhythm wave you train with your breath',
       jsonLd: hrvBiofeedbackJsonLd(),
+    }
+  }
+  // /ru/resonance-breathing, /es/resonance-breathing — localized cornerstone.
+  if (route === '/ru/resonance-breathing' || route === '/es/resonance-breathing') {
+    const lang = route.startsWith('/ru/') ? 'ru' : 'es'
+    const c = RESONANCE_BREATHING_I18N[lang]
+    return {
+      title: c.metaTitle,
+      description: c.metaDescription,
+      url,
+      breadcrumbs,
+      ogType: 'article',
+      image: `${SITE_URL}/onda-life-hrv-consciousness-hero.png`,
+      imageAlt: c.articleHeadline,
+      jsonLd: resonanceBreathingJsonLd(lang),
     }
   }
   // /resonance-breathing — cornerstone science page. EN-only.

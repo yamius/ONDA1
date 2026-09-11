@@ -462,6 +462,8 @@ const nonLocalizedStaticPaths = [
   '/ru/hrv-biofeedback',
   '/es/hrv-biofeedback',
   '/resonance-breathing',
+  '/ru/resonance-breathing',
+  '/es/resonance-breathing',
   '/hrv-vs-coherence',
   '/apple-watch-hrv-biofeedback',
   // /compare — ONDA's own "ONDA vs <competitor>" comparisons. Hub localized to

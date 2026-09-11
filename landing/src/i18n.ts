@@ -125,8 +125,9 @@ export function homePathFor(lang: Lang): string {
 const NON_LOCALIZED_PREFIXES = [
   '/the-stack', '/topics', '/tools', '/research',
   '/measurements', '/how-it-works', '/compare',
-  '/hrv-biofeedback', '/resonance-breathing', '/hrv-vs-coherence',
-  '/apple-watch-hrv-biofeedback', '/people',
+  // Cornerstones become localized one by one; once localized a slug is removed
+  // here so langHref routes it to /<lang>. Still EN-only:
+  '/hrv-vs-coherence', '/apple-watch-hrv-biofeedback', '/people',
 ]
 
 /**
