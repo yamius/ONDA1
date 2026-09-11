@@ -27,6 +27,8 @@ interface DiaryModalProps {
   light?: boolean;
   dayRhr?: number | null;
   userId?: string | null;
+  /** When opened from an anomaly trigger — stamps the new note's provenance (§4). */
+  anomaly?: { metric: string; delta: number } | null;
 }
 
 type RecState = 'idle' | 'recording' | 'recorded';
@@ -82,7 +84,7 @@ function loadPrefs(): ViewPrefs {
   return DEFAULT_PREFS;
 }
 
-export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null }: DiaryModalProps) {
+export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null, anomaly = null }: DiaryModalProps) {
   const { t, i18n } = useTranslation();
 
   const [entries, setEntries] = useState<DiaryEntry[]>([]);
@@ -178,6 +180,12 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     const id = window.setTimeout(scrollToBottom, 60);
     return () => { document.body.style.overflow = prevOverflow; overlay?.removeEventListener('touchmove', onTouchMove as EventListener); clearTimeout(id); };
   }, [isOpen, reload, scrollToBottom]);
+
+  // Opened from an anomaly trigger → drop straight into a fresh note.
+  useEffect(() => {
+    if (isOpen && anomaly) { resetEditor(); setEditorOpen(true); }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen, anomaly]);
 
   // Pinch-to-zoom (two fingers) on the timeline — native listeners so we can
   // preventDefault (React's onTouchMove is passive).
@@ -396,8 +404,15 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         ? { ...e, text: text.trim(), event_time: eventTime, hasAudio, hasPhoto, source, synced: false }
         : e)));
     } else {
-      persist([{ id, created_at: new Date().toISOString(), event_time: eventTime, text: text.trim(), hasAudio, hasPhoto, source, rhr: backdated ? null : (dayRhr ?? null) }, ...entries]);
-      try { trackEvent('diary_entry_created', { type: source, backdated }); } catch { /* noop */ }
+      persist([{
+        id, created_at: new Date().toISOString(), event_time: eventTime, text: text.trim(), hasAudio, hasPhoto, source,
+        rhr: backdated ? null : (dayRhr ?? null),
+        ...(anomaly ? { fromAnomaly: true, anomalyMetric: anomaly.metric, anomalyDelta: anomaly.delta } : {}),
+      }, ...entries]);
+      try {
+        trackEvent('diary_entry_created', { type: source, backdated, from_anomaly: !!anomaly });
+        if (anomaly) trackEvent('anomaly_prompt_answered', { metric: anomaly.metric });
+      } catch { /* noop */ }
     }
     resetEditor(); setEditorOpen(false);
     setTimeout(scrollToBottom, 60);

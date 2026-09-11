@@ -65,6 +65,13 @@ export type AnalyticsEventName =
   | 'diary_opened'                   // diary opened — params: source (home_button | menu | anomaly_prompt(future)).
   | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
   | 'diary_synced'                   // local drafts migrated into Supabase on sign-in — params: count.
+  // Anomaly trigger (retention step 4 — baseline deviation → diary prompt)
+  | 'anomaly_detected'               // a personal corridor caught a deviation — params: metric, direction, magnitude_sd.
+  | 'anomaly_prompt_shown'           // the in-app "record your day" prompt was shown — params: metric.
+  | 'anomaly_prompt_answered'        // user wrote an entry from the prompt — params: metric.
+  | 'anomaly_prompt_dismissed'       // user dismissed the prompt without writing — params: metric.
+  | 'anomaly_push_sent'              // a local notification was scheduled/posted — params: metric.
+  | 'anomaly_push_opened'            // user opened the app from that notification — params: metric.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'

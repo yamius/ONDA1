@@ -4257,5 +4257,12 @@
     "metric_hrv": "HRV",
     "metric_pulse": "Pulso",
     "metric_breath": "Resp."
+  },
+  "anomaly": {
+    "prompt": "Tu {{metric}} hoy es {{value}} — normalmente {{lo}}–{{hi}}. ¿Pasó algo?",
+    "metric_rhr": "pulso en reposo",
+    "metric_hrv": "variabilidad",
+    "metric_rr": "respiración",
+    "cta": "Registrar el día"
   }
 }

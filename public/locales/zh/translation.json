@@ -4257,5 +4257,12 @@
     "metric_hrv": "HRV",
     "metric_pulse": "脉搏",
     "metric_breath": "呼吸"
+  },
+  "anomaly": {
+    "prompt": "你今天的{{metric}}是{{value}}——通常{{lo}}–{{hi}}。发生了什么吗？",
+    "metric_rhr": "静息脉搏",
+    "metric_hrv": "变异性",
+    "metric_rr": "呼吸",
+    "cta": "记录今天"
   }
 }

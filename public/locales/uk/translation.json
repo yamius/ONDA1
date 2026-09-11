@@ -4263,5 +4263,12 @@
     "metric_hrv": "HRV",
     "metric_pulse": "Пульс",
     "metric_breath": "Дих."
+  },
+  "anomaly": {
+    "prompt": "Твій {{metric}} сьогодні {{value}} — зазвичай {{lo}}–{{hi}}. Щось було?",
+    "metric_rhr": "пульс спокою",
+    "metric_hrv": "варіабельність",
+    "metric_rr": "дихання",
+    "cta": "Записати день"
   }
 }

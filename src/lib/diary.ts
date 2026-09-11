@@ -25,6 +25,11 @@ export interface DiaryEntry {
   hasPhoto?: boolean;
   source: DiarySource;
   rhr?: number | null;     // resting-pulse snapshot for that day, if known (§5)
+  // Anomaly provenance (step 4) — set when the note was created from a trigger.
+  // Feeds the future pattern model (§5); columns already exist in diary_entries.
+  fromAnomaly?: boolean;
+  anomalyMetric?: string;  // rhr | hrv | rr
+  anomalyDelta?: number;   // signed deviation from the corridor mean
   synced?: boolean;        // migrated to Supabase
 }
 
@@ -182,6 +187,9 @@ export async function syncDiaryEntries(userId: string): Promise<number> {
     source: e.source,
     event_time: e.event_time,
     rhr: e.rhr ?? null,
+    anomaly_metric: e.anomalyMetric ?? null,
+    anomaly_delta: e.anomalyDelta ?? null,
+    anomaly_prompted: e.fromAnomaly ?? false,
     created_at: e.created_at,
     updated_at: new Date().toISOString(),
   }));

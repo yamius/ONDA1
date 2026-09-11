@@ -12,6 +12,7 @@ import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
+import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, type Anomaly, type SignalInput } from './lib/anomaly';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -623,6 +624,11 @@ const OndaLevel1 = () => {
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
   const [showDiaryModal, setShowDiaryModal] = useState(false);
+  // Anomaly trigger (step 4): the pending deviation to prompt about, if any.
+  const [anomalyPrompt, setAnomalyPrompt] = useState<Anomaly | null>(null);
+  // Anomaly context passed to the diary ONLY when opened from the prompt (so
+  // the resulting note carries from_anomaly + metric/delta).
+  const [diaryAnomaly, setDiaryAnomaly] = useState<{ metric: string; delta: number } | null>(null);
   // While the Timeline is open, keep the watch workout alive (same mechanism as
   // during a practice) — opening the full-screen modal was backgrounding the
   // webview and the auto-manager was stopping the workout.
@@ -630,6 +636,43 @@ const OndaLevel1 = () => {
     watchHeartRate.setPracticeActive(showDiaryModal);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showDiaryModal]);
+
+  // Restore an unanswered anomaly signal across launches (persistent reminder).
+  useEffect(() => {
+    const st = loadAnomalyState();
+    if (st.pending) setAnomalyPrompt(st.pending);
+  }, []);
+
+  // Anomaly evaluation (step 4). WATCH-ONLY: the corridor is built from passive
+  // NIGHT data, which only the Apple Watch provides — a camera user never gets a
+  // signal (honest). Production corridors (per-night RHR/HRV/RR + noisy-night
+  // exclusion, ≥7 nights) come from the native query in the next phase; here a
+  // DEV-only mock exercises the prompt/diary wiring in the web preview.
+  // Phase B seam: production per-night corridors come from the native HealthKit
+  // query (mean+SD per signal, ≥7 valid nights, noisy nights dropped). Empty
+  // until that lands — so the trigger is dormant, never firing on bad data.
+  const getBaselineCorridorSignals = (): SignalInput[] => [];
+  const anomalyEvaluatedRef = useRef(false);
+  useEffect(() => {
+    if (anomalyEvaluatedRef.current) return;
+    // WATCH-ONLY: camera users have no night data → never signalled.
+    if (!watchHeartRate.isConnected) return;
+    // Per-night corridors (RHR/HRV/RR mean+SD, ≥7 valid nights, noisy nights
+    // dropped) come from the native query — wired in the next phase.
+    const signals: SignalInput[] = getBaselineCorridorSignals();
+    if (signals.length === 0) return;
+    anomalyEvaluatedRef.current = true;
+    const anomaly = detectAnomaly(signals);
+    if (!anomaly) return;
+    const st = loadAnomalyState();
+    if (!canSignal(Date.now(), st.lastSignalAt)) return;
+    const night = new Date().toISOString().slice(0, 10);
+    saveAnomalyState({ lastSignalAt: Date.now(), pending: { ...anomaly, at: Date.now(), night } });
+    setAnomalyPrompt(anomaly);
+    try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
+    try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [watchHeartRate.isConnected]);
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
@@ -6478,6 +6521,45 @@ const OndaLevel1 = () => {
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
+          {/* Anomaly prompt (step 4) — a personal-corridor deviation → "record
+              your day". Numbers imply the direction; NO medical wording. */}
+          {anomalyPrompt && (
+            <div className={`mb-3 rounded-2xl p-4 border ${isLight ? 'bg-amber-50 border-amber-200 text-amber-900' : 'bg-amber-500/10 border-amber-400/30 text-amber-100'}`} data-testid="anomaly-prompt">
+              <div className="flex items-start justify-between gap-2">
+                <p className="text-sm leading-snug">
+                  {t('anomaly.prompt', 'Твой {{metric}} сегодня {{value}} — обычно {{lo}}–{{hi}}. Что-то было?', {
+                    metric: t(`anomaly.metric_${anomalyPrompt.metric}`, anomalyPrompt.metric),
+                    value: anomalyPrompt.latest,
+                    lo: anomalyPrompt.loBound,
+                    hi: anomalyPrompt.hiBound,
+                  })}
+                </p>
+                <button
+                  type="button"
+                  onClick={() => { try { track('anomaly_prompt_dismissed', { metric: anomalyPrompt.metric }); } catch { /* noop */ } setAnomalyPrompt(null); saveAnomalyState({ lastSignalAt: loadAnomalyState().lastSignalAt }); }}
+                  data-testid="anomaly-dismiss"
+                  className={`shrink-0 ${isLight ? 'text-amber-500 hover:text-amber-700' : 'text-amber-300/70 hover:text-amber-200'}`}
+                  aria-label={t('common.close', 'Закрыть')}
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  const a = anomalyPrompt;
+                  setDiaryAnomaly({ metric: a.metric, delta: a.delta });
+                  setAnomalyPrompt(null);
+                  saveAnomalyState({ lastSignalAt: loadAnomalyState().lastSignalAt }); // consume pending, keep throttle
+                  setShowDiaryModal(true);
+                }}
+                data-testid="anomaly-cta"
+                className="mt-3 w-full rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all"
+              >
+                {t('anomaly.cta', 'Записать день')}
+              </button>
+            </div>
+          )}
           {/* Diary entry — replaces the pulse/breathing mini-tiles under the
               baseline. Opens the local-first day-note diary. Keeps baseline
               (what the body did) ↔ diary (what happened to you) in one fold.
@@ -6486,6 +6568,7 @@ const OndaLevel1 = () => {
             type="button"
             onClick={() => {
               try { track('diary_opened', { source: 'home_button' }); } catch { /* noop */ }
+              setDiaryAnomaly(null); // normal open — not from a trigger
               // Snapshot the 3 baseline indicators at the real visit time (throttled 2h).
               try {
                 const rrR = baseline?.data?.readings?.find((x) => x.key === 'rr');
@@ -6499,7 +6582,7 @@ const OndaLevel1 = () => {
               setShowDiaryModal(true);
             }}
             data-testid="home-diary-button"
-            className={`w-full flex items-center justify-center gap-2 rounded-2xl p-4 sm:p-5 text-lg sm:text-xl font-bold transition-all ${isLight ? 'bg-white/65 backdrop-blur-xl border border-indigo-200 text-slate-700 shadow-lg shadow-indigo-100/60' : 'bg-indigo-500/10 backdrop-blur-sm border border-indigo-400/25 text-white'}`}
+            className={`w-full flex items-center justify-center gap-2 rounded-2xl p-4 sm:p-5 text-lg sm:text-xl font-bold transition-all ${anomalyPrompt ? 'ring-2 ring-amber-400/70 ' : ''}${isLight ? 'bg-white/65 backdrop-blur-xl border border-indigo-200 text-slate-700 shadow-lg shadow-indigo-100/60' : 'bg-indigo-500/10 backdrop-blur-sm border border-indigo-400/25 text-white'}`}
           >
             <BookOpen className="w-5 h-5 text-indigo-400" />
             {t('diary.record_cta', 'Таймлайн')}
@@ -8395,10 +8478,11 @@ const OndaLevel1 = () => {
       {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
       <DiaryModal
         isOpen={showDiaryModal}
-        onClose={() => setShowDiaryModal(false)}
+        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); }}
         light={isLight}
         dayRhr={dayRhr}
         userId={user?.id ?? null}
+        anomaly={diaryAnomaly}
       />
 
       {/* Practice-log modal (was "Дневник", now "История практик"). */}
