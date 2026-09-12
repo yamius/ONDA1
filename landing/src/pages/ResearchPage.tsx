@@ -21,8 +21,10 @@
  * to live here, clearly marked as ambition.
  *
  * EN-only by design — the evidence-literate / grant-evaluator audience
- * reads English; localising would dilute the register and is not on the
- * roadmap.
+ * reads English; localising would dilute the two-register honesty framing
+ * (cited evidence vs "vision under validation") and is not on the roadmap.
+ * Reaffirmed 2026-09-12 when the rest of the consumer/entity set was localized
+ * to ru+es: /research is the deliberate exception, kept EN on purpose.
  */
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
