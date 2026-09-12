@@ -96,7 +96,13 @@
     "notifications_description": "温和的每日提醒与连续记录保护。两者都在「设置」中手动启用——此处授权只是为了解锁这两个开关。",
     "grant_all": "允许",
     "requesting": "正在请求权限...",
-    "setup_later": "稍后设置"
+    "setup_later": "稍后设置",
+    "setup_title": "设置",
+    "setup_description": "连接你的基线与提醒系统",
+    "card_health_title": "脉搏与变异性",
+    "card_health_desc": "你的手表已经记录了数周的数据。连接后，ONDA 会展示你的个人正常区间。",
+    "card_notif_title": "提示",
+    "card_notif_desc": "当你的指标明显超出区间时，我们会轻声提醒。每隔几天最多一次，只在必要时。"
   },
   "watch": {
     "open_app_prompt": "打开Apple Watch上的应用程序以追踪心率",

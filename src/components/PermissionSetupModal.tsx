@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, Heart, Check } from 'lucide-react';
+import { X, Heart, Check, Bell } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { LocalNotifications } from '@capacitor/local-notifications';
 import { PermissionStatus } from '../services/PermissionsService';
 
 interface PermissionSetupModalProps {
@@ -27,29 +28,24 @@ export function PermissionSetupModal({
 }: PermissionSetupModalProps) {
   const { t } = useTranslation();
   const [requestStatus, setRequestStatus] = useState<PermissionStatus>(currentStatus);
-
-  const PERMISSION_INFO = {
-    healthRead: {
-      icon: Heart,
-      title: t('permissions.heart_rate_title'),
-      description: t('permissions.heart_rate_description'),
-      color: 'red',
-    },
-  } as const;
+  const [notifGranted, setNotifGranted] = useState(false);
 
   if (!isOpen) return null;
 
   const handleRequestAll = async () => {
     try {
+      // 1) HealthKit (baseline). 2) Notifications (the signals). Both by intent,
+      // here — the two iOS system sheets appear back-to-back (task §3).
       const status = await onRequestAll((permission, granted) => {
         setRequestStatus(prev => ({ ...prev, [permission]: granted }));
       });
+      onOutcome?.(!!status.healthRead); // best-effort — iOS hides the true result
 
-      // Report the permission outcome (best-effort — iOS hides the true result).
-      onOutcome?.(!!status.healthRead);
+      try {
+        const notif = await LocalNotifications.requestPermissions();
+        setNotifGranted(notif.display === 'granted');
+      } catch { /* notifications are optional; Health is what gates the flow */ }
 
-      // Если критичные разрешения получены, закрываем модалку и показываем Watch prompt
-      // healthWrite не проверяем - capacitor-health не установлен
       if (status.healthRead) {
         setTimeout(() => {
           onClose();
@@ -91,9 +87,9 @@ export function PermissionSetupModal({
           </button>
 
           <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-light mb-2">🔐 {t('permissions.modal_title')}</h2>
+            <h2 className="text-2xl sm:text-3xl font-light mb-2">{t('permissions.setup_title', 'Настройка')}</h2>
             <p className="text-xs sm:text-sm text-text-secondary">
-              {t('permissions.modal_description')}
+              {t('permissions.setup_description', 'Подключение Базлайна и системы оповещения')}
             </p>
           </div>
         </div>
@@ -101,17 +97,22 @@ export function PermissionSetupModal({
         {/* Content */}
         <div className="flex-1 overflow-y-auto px-6 pb-6 sm:px-8 sm:pb-8 scrollbar-hide" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
           <div className="space-y-4 mt-4">
-            {/* Heart Rate */}
-            {PERMISSION_INFO.healthRead && (
-              <PermissionCard
-                icon={PERMISSION_INFO.healthRead.icon}
-                title={PERMISSION_INFO.healthRead.title}
-                description={PERMISSION_INFO.healthRead.description}
-                color={PERMISSION_INFO.healthRead.color}
-                granted={requestStatus.healthRead}
-                colorClasses={getColorClasses(PERMISSION_INFO.healthRead.color)}
-              />
-            )}
+            {/* Card 1 — Health (baseline) */}
+            <PermissionCard
+              icon={Heart}
+              title={t('permissions.card_health_title', 'Пульс и вариабельность')}
+              description={t('permissions.card_health_desc', 'Твои часы уже записали недели данных. Подключи — и ONDA покажет твой личный коридор нормы.')}
+              granted={requestStatus.healthRead}
+              colorClasses={getColorClasses('red')}
+            />
+            {/* Card 2 — Notifications (the signals) */}
+            <PermissionCard
+              icon={Bell}
+              title={t('permissions.card_notif_title', 'Подсказки')}
+              description={t('permissions.card_notif_desc', 'Когда твои показатели заметно выйдут за твой коридор — тихо шепнём. Не чаще раза в пару дней, только по делу.')}
+              granted={notifGranted}
+              colorClasses={getColorClasses('purple')}
+            />
 
             {/* Buttons */}
             <div className="pt-4 space-y-3">
@@ -153,7 +154,6 @@ interface PermissionCardProps {
   icon: React.ComponentType<{ className?: string }>;
   title: string;
   description: string;
-  color: string;
   granted: boolean;
   colorClasses: string;
 }

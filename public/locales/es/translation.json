@@ -97,7 +97,13 @@
     "notifications_description": "Un suave aviso diario y protección de racha. Ambos se activan manualmente en Ajustes — conceder el permiso ahora solo desbloquea los interruptores.",
     "grant_all": "Permitir",
     "requesting": "Solicitando permisos...",
-    "setup_later": "Configurar después"
+    "setup_later": "Configurar después",
+    "setup_title": "Configuración",
+    "setup_description": "Conectar tu baseline y el sistema de avisos",
+    "card_health_title": "Pulso y variabilidad",
+    "card_health_desc": "Tu reloj ya ha registrado semanas de datos. Conéctalo y ONDA mostrará tu corredor personal de normalidad.",
+    "card_notif_title": "Sugerencias",
+    "card_notif_desc": "Cuando tus métricas se salgan claramente de tu corredor, te avisaremos con discreción. No más de una vez cada dos días, solo cuando importe."
   },
   "watch": {
     "open_app_prompt": "Abre la app en Apple Watch para monitorear tu frecuencia cardíaca",

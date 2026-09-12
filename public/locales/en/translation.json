@@ -108,7 +108,13 @@
     "notifications_description": "Gentle daily nudge and streak protection. Both are opt-in inside Settings — granting permission now just unlocks the toggles.",
     "grant_all": "Allow",
     "requesting": "Requesting permissions...",
-    "setup_later": "Set Up Later"
+    "setup_later": "Set Up Later",
+    "setup_title": "Setup",
+    "setup_description": "Connecting your baseline and the alert system",
+    "card_health_title": "Pulse and variability",
+    "card_health_desc": "Your watch has already recorded weeks of data. Connect — and ONDA will show your personal normal corridor.",
+    "card_notif_title": "Nudges",
+    "card_notif_desc": "When your metrics clearly step outside your corridor — we'll whisper quietly. No more than once every couple of days, only when it matters."
   },
   "watch": {
     "open_app_prompt": "Open the app on your Apple Watch to track your heart rate",
