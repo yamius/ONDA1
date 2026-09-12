@@ -45,6 +45,8 @@ const whoop5: ToolReview = {
 
 The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-check, it samples [HRV](/glossary/heart-rate-variability) continuously through the night and reports a full-sleep average drawn from hundreds of readings — the cleanest basis for a daily recovery signal of the three devices here. The screenless band is easy to forget you are wearing, the current generation pushed battery life out to roughly two weeks, and the slide-on battery pack means it never has to leave your wrist to charge.
 
+**2026 validation update.** Independent HRV and sleep comparisons through 2026 continue to place Whoop among the stronger wrist-worn options — its overnight HRV and sleep-stage agreement typically land in the ~75–86% range against reference devices. That is short of a finger-based ring or an ECG chest strap, but it is dependable enough that the *trend* Whoop reports each morning is one you can train on.
+
 ## Where it falls short
 
 Whoop is sold as a membership, not a product. There is no hardware to own — stop paying and the band stops working — and the roughly 239 USD first year is an ongoing cost, not a one-time purchase. The app is powerful but dense: Strain, Recovery and the AI coach reward users who want to study their data and can overwhelm those who do not. Raw data access, as with Oura, is limited.
@@ -69,7 +71,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-09-12',
 }
 
 export default whoop5

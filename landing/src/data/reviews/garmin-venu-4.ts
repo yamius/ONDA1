@@ -49,6 +49,8 @@ The Garmin Venu 4 is the most complete smartwatch-shaped option in this comparis
 
 None of the individual metrics is class-leading. HRV is solid but not as cleanly overnight-focused as a dedicated recovery tracker, and Garmin Connect, while deep, is a cluttered, dated experience next to Oura's or Apple's software. It is a strong generalist rather than a specialist — capable across the board, best-in-class at nothing this comparison measures.
 
+**2026 note.** Garmin's HRV Status model is unchanged and remains a dependable overnight-baseline read; independent 2026 comparisons still place wrist optical HRV a step behind finger-based rings for absolute precision. The Venu 4's advantage over Garmin's own flagship [Fenix 8](/reviews/garmin-fenix-8) is value, not accuracy — the two share the same HRV Status model, so for HRV alone the cheaper Venu 4 gives you the same signal.
+
 ## Who it is for
 
 Choose the Garmin Venu 4 if you want one no-subscription device that handles training, everyday health and HRV competently, with the battery life to actually wear it through the night. If overnight HRV precision is the single thing you care about, a ring or a band will edge it out.
@@ -69,7 +71,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['apple-watch-series-11', 'whoop-5-0', 'oura-ring-4'],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-09-12',
 }
 
 export default garminVenu4

@@ -49,6 +49,8 @@ As a piece of hardware the Apple Watch Series 11 is the most capable device in t
 
 For dedicated HRV work it is the weakest of the three. The watch records HRV in irregular background spot-checks rather than a structured overnight protocol, and Apple's own Vitals view does not even surface HRV as a headline metric. Combined with a battery that realistically needs a daily charge — awkward for consistent all-night wear — it produces a sparse, uneven HRV record next to Oura or Whoop.
 
+**2026 note.** Independent comparisons through 2026 have not changed this picture: the Series 11's optical HRV readings are reasonable in isolation, but the sparse, spot-check sampling — not sensor quality — is the limitation. For a clean overnight trend, a ring that measures continuously through the night still outperforms it, regardless of how good the watch hardware is.
+
 ## Who it is for
 
 Choose the Apple Watch Series 11 if you want a single excellent all-round smartwatch and treat HRV as a useful bonus rather than the point. If overnight HRV and recovery are your primary reason to buy, a dedicated tracker will give you a far cleaner signal.
@@ -69,7 +71,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['oura-ring-4', 'whoop-5-0'],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-09-12',
 }
 
 export default appleWatchSeries11

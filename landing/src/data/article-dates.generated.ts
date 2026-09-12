@@ -17,8 +17,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "active-intervention-vs-passive-tracking": {
-    "published": "2026-09-12T10:15:04.033Z",
-    "modified": "2026-09-12T10:15:04.033Z"
+    "published": "2026-09-12T12:28:48+02:00",
+    "modified": "2026-09-12T12:28:48+02:00"
   },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
@@ -206,7 +206,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
-    "modified": "2026-06-08T20:41:35+02:00"
+    "modified": "2026-09-12T12:28:48+02:00"
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -374,6 +374,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-06T20:56:00+02:00"
+    "modified": "2026-09-06T18:54:22.995Z"
   }
 }

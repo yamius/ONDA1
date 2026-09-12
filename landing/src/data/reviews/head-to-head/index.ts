@@ -23,6 +23,10 @@ import ouraVsSamsungRing from './oura-ring-4-vs-samsung-galaxy-ring'
 import whoopVsPolarH10 from './whoop-5-0-vs-polar-h10'
 import ringconnVsUltrahuman from './ringconn-gen-2-vs-ultrahuman-ring-air'
 import appleWatchVsFitbit from './apple-watch-series-11-vs-fitbit-charge-6'
+import fitbitAirVsWhoop50 from './fitbit-air-vs-whoop-5-0'
+import fenix8VsAppleWatch11 from './garmin-fenix-8-vs-apple-watch-series-11'
+import fitbitAirVsCharge6 from './fitbit-air-vs-fitbit-charge-6'
+import fenix8VsVenu4 from './garmin-fenix-8-vs-garmin-venu-4'
 // CGM
 import levelsVsNutrisense from './levels-vs-nutrisense'
 import steloVsLingo from './stelo-vs-lingo'
@@ -226,6 +230,10 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   appleWatchVsFitbit,
   polarH10VsGarmin,
   ouraVsRingconn,
+  fitbitAirVsWhoop50,
+  fenix8VsAppleWatch11,
+  fitbitAirVsCharge6,
+  fenix8VsVenu4,
   // CGM
   levelsVsNutrisense,
   steloVsLingo,
