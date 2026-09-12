@@ -1178,7 +1178,7 @@
     },
     "biometric": {
       "connect_title": "连接 Apple Watch",
-      "connect_body": "连接后在呼吸练习中实时查看你的心率。",
+      "connect_body": "你的手表已经记录了数周的数据。连接后，ONDA 会展示你的基线，并在变化时提醒你。",
       "connect_watch": "Apple Watch",
       "connect_camera": "摄像头",
       "connect_cta": "立即设置"

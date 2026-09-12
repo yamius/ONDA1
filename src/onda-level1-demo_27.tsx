@@ -104,7 +104,13 @@ import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets'
 // every visitor — no auth, no paywall — so the user can try the app before
 // committing. Every other practice still goes through the paywall in
 // `practice_gate_basic` (see the Start button below).
-const FREE_PRACTICE_IDS = new Set(['p1-1', 'p1-2', 'p1-3']);
+// The three signal practices (one per anomaly type) are the free openers, in
+// display order p1-2 / p1-5 / p1-9. ids are NEVER renamed (analytics/links) —
+// only their position + free status change (task §8).
+const FREE_PRACTICE_IDS = new Set(['p1-2', 'p1-5', 'p1-9']);
+const SIGNAL_PRACTICE_ORDER = ['p1-2', 'p1-5', 'p1-9'];
+// Which practice a given anomaly routes to (task §7).
+const ANOMALY_PRACTICE: Record<string, string> = { rhr: 'p1-2', hrv: 'p1-9', rr: 'p1-5' };
 
 // Светлая тема «матовое свечение» (frosted glow) — прототип хаба.
 // Космическая сцена по определению тёмная, прямой токен-свап невозможен,
@@ -510,7 +516,7 @@ const OndaLevel1 = () => {
   // Section 2 state machine — A (no watch) / B (collecting, 30 s) / C (pick).
   const todaysPractice = useTodaysPractice({
     isWatchConnected: watchHeartRate.isConnected,
-    freePracticeIds: ['p1-1', 'p1-2', 'p1-3'],
+    freePracticeIds: SIGNAL_PRACTICE_ORDER,
   });
 
   // Section 6 — "Your Journey" collapsible. Always starts closed on every
@@ -530,7 +536,7 @@ const OndaLevel1 = () => {
   //   3. Else the first id below as ultimate fallback.
   // Order = priority: p1-2 (Sense of Being) is the onboarding/featured opener.
   const featuredPracticeId = useMemo(() => {
-    const freeIds = ['p1-2', 'p1-1', 'p1-3'];
+    const freeIds = SIGNAL_PRACTICE_ORDER;
     const cp = completedPractices as Record<string, unknown>;
     const uncompleted = freeIds.find(id => !cp[id]);
     if (uncompleted) return uncompleted;
@@ -696,7 +702,8 @@ const OndaLevel1 = () => {
     anomalyMonitorStartedRef.current = true;
     (async () => {
       try {
-        await LocalNotifications.requestPermissions();
+        // Notification permission is requested in PermissionSetupModal (by intent,
+        // with Health), NOT here — starting monitoring must never prompt on launch.
         await HealthKitHeartRate.setAnomalyStrings({
           // Interpolate the tokens to themselves → keep {{…}} literal for native.
           template: t('anomaly.prompt', { metric: '{{metric}}', value: '{{value}}', lo: '{{lo}}', hi: '{{hi}}' }),
@@ -6792,10 +6799,21 @@ const OndaLevel1 = () => {
             from the UX review). The Connect-Watch CTA already lives at
             the top of the biometric block — no inline hint here. */}
         <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
-          {[
-            ...currentCircuit.practices.filter(p => p.id === featuredPracticeId),
-            ...currentCircuit.practices.filter(p => p.id !== featuredPracticeId),
-          ].map((practice, idx) => renderPracticeCard(practice, idx === 0, true))}
+          {(() => {
+            const ps = currentCircuit.practices;
+            // Circuit 1: the three free signal practices lead, in fixed order;
+            // other circuits keep the featured-first ordering. ids untouched.
+            const ordered = currentCircuit.id === 1
+              ? [
+                  ...SIGNAL_PRACTICE_ORDER.map(id => ps.find(p => p.id === id)).filter(Boolean) as typeof ps,
+                  ...ps.filter(p => !SIGNAL_PRACTICE_ORDER.includes(p.id)),
+                ]
+              : [
+                  ...ps.filter(p => p.id === featuredPracticeId),
+                  ...ps.filter(p => p.id !== featuredPracticeId),
+                ];
+            return ordered.map((practice, idx) => renderPracticeCard(practice, idx === 0, true));
+          })()}
         </div>
 
         {/* Section 2.5 — Part Progress bar. Hidden while the user has

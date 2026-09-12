@@ -1220,7 +1220,7 @@
     },
     "biometric": {
       "connect_title": "Connect Apple Watch",
-      "connect_body": "Connect and see your heart rhythm in real time during breathing practices.",
+      "connect_body": "Your watch has already recorded weeks of data. Connect — and ONDA will show your baseline and flag when something shifts.",
       "connect_watch": "Apple Watch",
       "connect_camera": "Camera",
       "connect_cta": "Set Up Now"

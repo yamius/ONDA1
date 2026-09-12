@@ -699,8 +699,9 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     /// corridor and posts a local notification if it deviates (throttled 2 days).
     @objc func startAnomalyMonitoring(_ call: CAPPluginCall) {
         guard HKHealthStore.isHealthDataAvailable() else { call.resolve(["started": false]); return }
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound]) { _, _ in }
-
+        // NOTE: notification authorization is requested by intent in
+        // PermissionSetupModal (JS), NOT here — this only wires up observers so it
+        // must never prompt.
         let ids: [HKQuantityTypeIdentifier] = [.restingHeartRate, .heartRateVariabilitySDNN, .respiratoryRate]
         // Clear any previous observers (idempotent across app starts).
         for obs in anomalyObservers { healthStore.stop(obs) }

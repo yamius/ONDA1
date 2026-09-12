@@ -72,6 +72,7 @@ export type AnalyticsEventName =
   | 'anomaly_prompt_dismissed'       // user dismissed the prompt without writing — params: metric.
   | 'anomaly_push_sent'              // a local notification was scheduled/posted — params: metric.
   | 'anomaly_push_opened'            // user opened the app from that notification — params: metric.
+  | 'anomaly_practice_started'       // user started the offered slow-down practice from a signal — params: metric.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'

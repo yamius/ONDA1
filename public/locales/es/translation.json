@@ -1179,7 +1179,7 @@
     },
     "biometric": {
       "connect_title": "Conecta Apple Watch",
-      "connect_body": "Conecta y mira tu ritmo cardíaco en tiempo real durante las prácticas de respiración.",
+      "connect_body": "Tu reloj ya ha registrado semanas de datos. Conéctalo y ONDA mostrará tu baseline y te avisará cuando algo cambie.",
       "connect_watch": "Apple Watch",
       "connect_camera": "Cámara",
       "connect_cta": "Configurar"
