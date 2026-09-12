@@ -374,6 +374,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-06T18:54:22.995Z"
+    "modified": "2026-09-06T20:56:00+02:00"
   }
 }

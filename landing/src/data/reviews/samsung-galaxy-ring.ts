@@ -49,6 +49,8 @@ The Samsung Galaxy Ring is the most direct alternative to the Oura Ring 4, and i
 
 The ring is tied to its ecosystem. It is built around Samsung Health and Android — there is no iPhone support — and data access is comparatively closed: no open developer API, limited export, your numbers largely staying inside Samsung's app. On raw accuracy it trails the Oura Ring 4, which still holds the strongest independent sleep-stage validation in the ring category.
 
+**2026 note.** The accuracy picture is unchanged: independent 2026 comparisons continue to rank Oura's rings first for overnight HRV and sleep-stage agreement, with the Galaxy Ring a competent step behind. The Galaxy Ring's real case is still the no-subscription, native-Android integration — not a claim of matching Oura on precision.
+
 ## Who it is for
 
 Choose the Samsung Galaxy Ring if you are an Android — ideally Samsung — user who wants Oura-style ring tracking without a perpetual subscription, and you are content to keep your data inside Samsung Health. iPhone users, or anyone who wants the most accurate ring or open data, should look at the Oura Ring 4.
@@ -69,7 +71,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-09-12',
 }
 
 export default samsungGalaxyRing
