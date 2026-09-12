@@ -662,9 +662,13 @@ const OndaLevel1 = () => {
     if (platform !== 'ios') return;
     // WATCH-ONLY: camera users have no night data → never signalled.
     if (!watchHeartRate.isConnected) return;
-    // Never touch HealthKit while the first-run permission flow is still up — a
-    // query mid-authorization interrupts the permission sheet.
-    if (permissions.needsSetup) return;
+    // Only for someone who has ALREADY connected before (same gate the baseline
+    // auto-load uses). On a fresh install the flag is unset, so nothing touches
+    // HealthKit during first-run onboarding — which was interrupting the
+    // permission sheet. Set on the first explicit connect+grant.
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!watching) return;
     anomalyEvaluatedRef.current = true;
     (async () => {
       let corridors: BaselineCorridorsResult;
@@ -703,7 +707,7 @@ const OndaLevel1 = () => {
       try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [watchHeartRate.isConnected, permissions.needsSetup]);
+  }, [watchHeartRate.isConnected]);
 
   // Anomaly PUSH setup (step 4, Phase C): hand the native background delivery the
   // localized wording (JS owns the 5 languages), then register the observers so a
@@ -712,9 +716,11 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (anomalyMonitorStartedRef.current) return;
     if (platform !== 'ios' || !watchHeartRate.isConnected) return;
-    // Same guard: don't set up background delivery until permissions are done,
-    // so nothing races the first-run permission sheet.
-    if (permissions.needsSetup) return;
+    // Same gate as above: only after the user has connected before, so nothing
+    // races the first-run permission sheet.
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!watching) return;
     anomalyMonitorStartedRef.current = true;
     (async () => {
       try {
@@ -729,7 +735,7 @@ const OndaLevel1 = () => {
       } catch (e) { console.warn('[anomaly] monitoring setup failed', e); }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [watchHeartRate.isConnected, permissions.needsSetup]);
+  }, [watchHeartRate.isConnected]);
 
   // Opened from an anomaly local notification → analytics (the in-app prompt is
   // re-raised by the evaluation effect on foreground).
