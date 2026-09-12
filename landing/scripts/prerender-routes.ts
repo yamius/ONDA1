@@ -46,7 +46,7 @@ const localizedPartRoutes = partRouteVariants(partSlugs)
  * Roadmap for expansion: review remaining 45 ES translations, then
  * gate RU activation behind a Russian reviewer, etc.
  */
-export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
+const RU_ARTICLE_PILOT_BASE: readonly string[] = [
   // 11 featured pillar articles (same set as ES — overlapping pilots is
   // intentional so we can compare ES vs RU SERP performance per slug).
   'vagus-nerve-master-key',
@@ -64,7 +64,7 @@ export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
   'circadian-reset-mastering-light',
   // Molecular Psychology pillar — RU translation reviewed, ships with the pilot.
   'molecular-psychology-hormonal-firmware',
-] as const
+]
 
 /**
  * Spanish article pilot. The 22 base slugs below are already live. The
@@ -190,8 +190,49 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'zone-2-training-aerobic-base', publishOn: '2026-09-21' },
 ]
 
+/**
+ * Russian rollout of the same practical how-to / calculator + HRV guide
+ * cluster. Reviewed RU translations live in public/locales/ru/articles.json;
+ * staggered over two Mondays like the ES cluster to keep the anti-scaled-
+ * content drip discipline. Folded into RU_PILOT_ARTICLE_SLUGS below.
+ */
+const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
+  // Batch — 2026-09-12
+  { slug: 'active-intervention-vs-passive-tracking', publishOn: '2026-09-12' },
+  { slug: 'body-fat-percentage-composition', publishOn: '2026-09-12' },
+  { slug: 'box-breathing-how-it-works', publishOn: '2026-09-12' },
+  { slug: 'caffeine-half-life-sleep-pressure', publishOn: '2026-09-12' },
+  { slug: 'cognitive-shuffling', publishOn: '2026-09-12' },
+  { slug: 'coherent-breathing-guide', publishOn: '2026-09-12' },
+  { slug: 'does-dopamine-detox-work', publishOn: '2026-09-12' },
+  { slug: 'how-long-does-alcohol-stay-in-your-system', publishOn: '2026-09-12' },
+  { slug: 'how-much-sleep-do-you-need', publishOn: '2026-09-12' },
+  { slug: 'how-much-water-should-you-drink', publishOn: '2026-09-12' },
+  { slug: 'how-to-beat-jet-lag', publishOn: '2026-09-12' },
+  { slug: 'how-to-calculate-maintenance-calories', publishOn: '2026-09-12' },
+  // Batch — 2026-09-21
+  { slug: 'how-to-calculate-one-rep-max', publishOn: '2026-09-21' },
+  { slug: 'how-to-get-rid-of-brain-fog', publishOn: '2026-09-21' },
+  { slug: 'how-to-lower-cortisol', publishOn: '2026-09-21' },
+  { slug: 'hrv-different-every-device', publishOn: '2026-09-21' },
+  { slug: 'intermittent-fasting-metabolic-switch', publishOn: '2026-09-21' },
+  { slug: 'protein-intake-muscle-protein-synthesis', publishOn: '2026-09-21' },
+  { slug: 'vagus-nerve-exercises', publishOn: '2026-09-21' },
+  { slug: 'vo2max-increase-aerobic-engine', publishOn: '2026-09-21' },
+  { slug: 'what-is-my-chronotype', publishOn: '2026-09-21' },
+  { slug: 'what-your-apple-watch-records', publishOn: '2026-09-21' },
+  { slug: 'zone-2-training-aerobic-base', publishOn: '2026-09-21' },
+]
+
 /** Build date (UTC) — the gate every rollout schedule compares against. */
 const BUILD_DATE = new Date().toISOString().slice(0, 10)
+
+/** Article slugs with a live /ru/articles/<slug> URL — the base pilot plus
+ *  rollout entries whose publishOn date has been reached at build time. */
+export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
+  ...RU_ARTICLE_PILOT_BASE,
+  ...RU_ARTICLE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE).map((e) => e.slug),
+]
 
 /** Article slugs with a live /es/articles/<slug> URL — the base pilot plus
  *  rollout entries whose publishOn date has been reached at build time. */
