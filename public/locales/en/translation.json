@@ -4286,5 +4286,21 @@
     "remind_later": "Remind me later",
     "start_practice": "Start practice",
     "saved": "Saved to the timeline · {{when}}"
+  },
+  "pdf": {
+    "subtitle": "Health timeline",
+    "private_note": "Personal data, generated on your device",
+    "period": "Period",
+    "baseline_heading": "Baseline for the period",
+    "min": "min",
+    "avg": "avg",
+    "max": "max",
+    "nights": "{{count}} nights",
+    "timeline_heading": "Daily timeline",
+    "col_date": "Date",
+    "notes_heading": "Notes",
+    "signals_heading": "Signals in the period",
+    "empty": "No data for the period",
+    "export": "Share"
   }
 }

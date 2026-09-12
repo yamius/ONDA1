@@ -73,6 +73,9 @@ export type AnalyticsEventName =
   | 'anomaly_push_sent'              // a local notification was scheduled/posted — params: metric.
   | 'anomaly_push_opened'            // user opened the app from that notification — params: metric.
   | 'anomaly_practice_started'       // user started the offered slow-down practice from a signal — params: metric.
+  // Timeline export (on-device PDF, no content logged)
+  | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
+  | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'

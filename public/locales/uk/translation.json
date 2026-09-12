@@ -4292,5 +4292,21 @@
     "remind_later": "Нагадати пізніше",
     "start_practice": "Почати практику",
     "saved": "Збережено в таймлайн · {{when}}"
+  },
+  "pdf": {
+    "subtitle": "Таймлайн здоровʼя",
+    "private_note": "Особисті дані, сформовано на пристрої",
+    "period": "Період",
+    "baseline_heading": "Базлайн за період",
+    "min": "мін",
+    "avg": "сер.",
+    "max": "макс",
+    "nights": "{{count}} ноч.",
+    "timeline_heading": "Таймлайн по днях",
+    "col_date": "Дата",
+    "notes_heading": "Записи",
+    "signals_heading": "Сигнали за період",
+    "empty": "Немає даних за період",
+    "export": "Поділитися"
   }
 }

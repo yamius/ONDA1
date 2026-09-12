@@ -4286,5 +4286,21 @@
     "remind_later": "稍后提醒",
     "start_practice": "开始练习",
     "saved": "已保存到时间线 · {{when}}"
+  },
+  "pdf": {
+    "subtitle": "健康时间线",
+    "private_note": "个人数据，在你的设备上生成",
+    "period": "时段",
+    "baseline_heading": "该时段的基线",
+    "min": "最低",
+    "avg": "平均",
+    "max": "最高",
+    "nights": "{{count}} 晚",
+    "timeline_heading": "每日时间线",
+    "col_date": "日期",
+    "notes_heading": "记录",
+    "signals_heading": "该时段的信号",
+    "empty": "该时段没有数据",
+    "export": "分享"
   }
 }

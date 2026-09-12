@@ -4286,5 +4286,21 @@
     "remind_later": "Recordar más tarde",
     "start_practice": "Empezar práctica",
     "saved": "Guardado en la cronología · {{when}}"
+  },
+  "pdf": {
+    "subtitle": "Cronología de salud",
+    "private_note": "Datos personales, generados en tu dispositivo",
+    "period": "Período",
+    "baseline_heading": "Baseline del período",
+    "min": "mín",
+    "avg": "med",
+    "max": "máx",
+    "nights": "{{count}} noches",
+    "timeline_heading": "Cronología diaria",
+    "col_date": "Fecha",
+    "notes_heading": "Notas",
+    "signals_heading": "Señales del período",
+    "empty": "Sin datos del período",
+    "export": "Compartir"
   }
 }

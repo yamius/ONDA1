@@ -11,8 +11,11 @@
  * right = which diary types show). Local-first (lib/diary.ts).
  */
 import React, { useState, useRef, useEffect, useLayoutEffect, useCallback, useMemo } from 'react';
-import { X, Plus, Type, Mic, Camera, Image as ImageIcon, Play, Pause, Square, Trash2, Check, Calendar, Heart, Wind, Activity } from 'lucide-react';
+import { X, Plus, Type, Mic, Camera, Image as ImageIcon, Play, Pause, Square, Trash2, Check, Calendar, Heart, Wind, Activity, Share2 } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { Capacitor } from '@capacitor/core';
+import HealthKitHeartRate from '../plugins/healthKitHeartRate';
+import { buildTimelineHtml, type TimelinePdfCopy } from '../lib/timelinePdf';
 import { trackEvent } from '../services/AnalyticsService';
 import {
   loadDiaryEntries, saveDiaryEntries, newDiaryId, syncDiaryEntries,
@@ -464,6 +467,38 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     >{icon}</button>
   );
 
+  // Export the timeline to a PDF ON-DEVICE and open the native share sheet (task
+  // 81). Health data never leaves the phone; no email, no server. iOS-only.
+  const exportPdf = async () => {
+    if (Capacitor.getPlatform() !== 'ios') return;
+    try { trackEvent('timeline_export_tapped', {}); } catch { /* noop */ }
+    const copy: TimelinePdfCopy = {
+      brand: 'ONDA',
+      subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
+      privateNote: t('pdf.private_note', 'Личные данные, сформировано на устройстве'),
+      period: t('pdf.period', 'Период'),
+      baselineHeading: t('pdf.baseline_heading', 'Базлайн за период'),
+      metric: { rhr: t('anomaly.metric_rhr', 'пульс покоя'), hrv: t('anomaly.metric_hrv', 'вариабельность'), rr: t('anomaly.metric_rr', 'дыхание') },
+      min: t('pdf.min', 'мин'), avg: t('pdf.avg', 'средн.'), max: t('pdf.max', 'макс'),
+      nights: (n: number) => t('pdf.nights', '{{count}} ноч.', { count: n }),
+      timelineHeading: t('pdf.timeline_heading', 'Таймлайн по дням'),
+      colDate: t('pdf.col_date', 'Дата'),
+      notesHeading: t('pdf.notes_heading', 'Записи'),
+      signalsHeading: t('pdf.signals_heading', 'Сигналы за период'),
+      voiceNote: t('diary.voice_note', 'Голосовая заметка'),
+      photo: t('diary.photo', 'Фото'),
+      deviation: '↕',
+      none: '—',
+      empty: t('pdf.empty', 'Нет данных за период'),
+      lang: i18n.language || 'en',
+    };
+    const html = buildTimelineHtml({ samples, entries }, copy);
+    try {
+      await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf` });
+      try { trackEvent('timeline_export_completed', {}); } catch { /* noop */ }
+    } catch (e) { console.warn('[pdf] export failed', e); }
+  };
+
   return (
     <div ref={overlayRef} className="fixed inset-0 bg-black/85 z-50">
       <div
@@ -474,6 +509,10 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         <div className={`shrink-0 border-b p-3 sm:p-4 ${light ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
           <div className="flex items-center gap-2">
             <h2 className="text-lg sm:text-xl font-bold flex-1">{t('diary.timeline', 'Таймлайн')}</h2>
+            {/* Share/export → on-device PDF (left of the calendar). */}
+            <button onClick={exportPdf} data-testid="diary-export" aria-label={t('pdf.export', 'Поделиться')} className={`mr-1 p-1.5 rounded-full transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
+              <Share2 className="w-5 h-5" />
+            </button>
             {/* Native date input UNDER a calendar icon — tapping opens the real
                 picker (programmatic showPicker() is unreliable in WKWebView). */}
             <label data-testid="diary-jump-date" aria-label={t('diary.pick_date', 'Обрати дату')} className={`relative mr-2 p-1.5 rounded-full cursor-pointer transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>

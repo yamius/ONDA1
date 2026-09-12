@@ -124,6 +124,8 @@ export interface HealthKitHeartRatePlugin {
   setAnomalyStrings(strings: { title: string; pushIntro: string; pushShort: string }): Promise<{ ok: boolean }>;
   /** Register HealthKit background delivery so a night deviation posts a local notification. */
   startAnomalyMonitoring(): Promise<{ started: boolean }>;
+  /** Render an HTML report to a PDF ON-DEVICE and open the native share sheet. */
+  exportPdf(options: { html: string; fileName?: string }): Promise<{ ok: boolean; path?: string }>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(

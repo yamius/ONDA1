@@ -2,6 +2,8 @@ import Foundation
 import Capacitor
 import HealthKit
 import UserNotifications
+import WebKit
+import UIKit
 
 @objc(HealthKitHeartRatePlugin)
 public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
@@ -18,6 +20,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "queryBaselineCorridors", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "setAnomalyStrings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "exportPdf", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -27,6 +30,10 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     private var queryAnchor: HKQueryAnchor?
     private var anomalyObservers: [HKObserverQuery] = []   // retained for background delivery
     private var anomalyEvaluating = false                  // re-entrancy guard
+    // PDF export (timeline report) — retained until the offscreen webview finishes.
+    private var pdfWebView: WKWebView?
+    private var pdfCall: CAPPluginCall?
+    private var pdfFileName: String = "ONDA.pdf"
     
     @objc func isAvailable(_ call: CAPPluginCall) {
         let available = HKHealthStore.isHealthDataAvailable()
@@ -802,6 +809,23 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
     }
 
+    // ── Timeline PDF export (task 81) ───────────────────────────────────────
+    // Render a localized HTML report to a PDF ON-DEVICE (WKWebView → A4 pages,
+    // real text so Cyrillic/CJK work), then open the native share sheet. No
+    // server, no email collection — the health data never leaves the phone.
+    @objc func exportPdf(_ call: CAPPluginCall) {
+        guard let html = call.getString("html") else { call.reject("Missing html"); return }
+        let fileName = call.getString("fileName") ?? "ONDA-timeline.pdf"
+        DispatchQueue.main.async {
+            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 595, height: 842))
+            webView.navigationDelegate = self
+            self.pdfWebView = webView
+            self.pdfCall = call
+            self.pdfFileName = fileName
+            webView.loadHTMLString(html, baseURL: nil)
+        }
+    }
+
     /// The single peak value over [from, to] (true max sample, not a daily mean).
     private func queryDiscreteMax(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, completion: @escaping (Double?) -> Void) {
         guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
@@ -977,5 +1001,62 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         default:
             return .count()
         }
+    }
+}
+
+// MARK: - Timeline PDF: render the offscreen webview to A4 pages, then share.
+extension HealthKitHeartRatePlugin: WKNavigationDelegate {
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        guard webView == pdfWebView else { return }
+        // Let late layout / fonts settle before paginating.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+            self?.finishPdf(webView)
+        }
+    }
+
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        guard webView == pdfWebView else { return }
+        pdfCall?.reject("PDF load failed: \(error.localizedDescription)")
+        pdfWebView = nil; pdfCall = nil
+    }
+
+    private func finishPdf(_ webView: WKWebView) {
+        let call = pdfCall
+        let pageSize = CGRect(x: 0, y: 0, width: 595.2, height: 841.8)   // A4 @72dpi
+        let printable = pageSize.insetBy(dx: 36, dy: 40)
+        let render = UIPrintPageRenderer()
+        render.addPrintFormatter(webView.viewPrintFormatter(), startingAtPageAt: 0)
+        render.setValue(pageSize, forKey: "paperRect")
+        render.setValue(printable, forKey: "printableRect")
+
+        let pdfData = NSMutableData()
+        UIGraphicsBeginPDFContextToData(pdfData, pageSize, nil)
+        let pages = max(render.numberOfPages, 1)
+        for i in 0..<pages {
+            UIGraphicsBeginPDFPage()
+            render.drawPage(at: i, in: UIGraphicsGetPDFContextBounds())
+        }
+        UIGraphicsEndPDFContext()
+
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(pdfFileName)
+        do {
+            try pdfData.write(to: url)
+        } catch {
+            call?.reject("PDF write failed: \(error.localizedDescription)")
+            pdfWebView = nil; pdfCall = nil
+            return
+        }
+
+        if let vc = self.bridge?.viewController {
+            let av = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            if let pop = av.popoverPresentationController {   // iPad
+                pop.sourceView = vc.view
+                pop.sourceRect = CGRect(x: vc.view.bounds.midX, y: vc.view.bounds.midY, width: 0, height: 0)
+                pop.permittedArrowDirections = []
+            }
+            vc.present(av, animated: true, completion: nil)
+        }
+        call?.resolve(["ok": true, "path": url.path])
+        pdfWebView = nil; pdfCall = nil
     }
 }
