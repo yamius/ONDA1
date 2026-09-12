@@ -161,6 +161,33 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'ventral-tegmental-core-motivational-salience', publishOn: '2026-07-13' },
   // Molecular Psychology pillar — joins the final ES batch.
   { slug: 'molecular-psychology-hormonal-firmware', publishOn: '2026-07-13' },
+  // Practical how-to / calculator + HRV guides — reviewed ES translations,
+  // staggered over two Mondays (same anti-scaled-content discipline).
+  // Batch — 2026-09-14
+  { slug: 'active-intervention-vs-passive-tracking', publishOn: '2026-09-12' },
+  { slug: 'body-fat-percentage-composition', publishOn: '2026-09-12' },
+  { slug: 'box-breathing-how-it-works', publishOn: '2026-09-12' },
+  { slug: 'caffeine-half-life-sleep-pressure', publishOn: '2026-09-12' },
+  { slug: 'cognitive-shuffling', publishOn: '2026-09-12' },
+  { slug: 'coherent-breathing-guide', publishOn: '2026-09-12' },
+  { slug: 'does-dopamine-detox-work', publishOn: '2026-09-12' },
+  { slug: 'how-long-does-alcohol-stay-in-your-system', publishOn: '2026-09-12' },
+  { slug: 'how-much-sleep-do-you-need', publishOn: '2026-09-12' },
+  { slug: 'how-much-water-should-you-drink', publishOn: '2026-09-12' },
+  { slug: 'how-to-beat-jet-lag', publishOn: '2026-09-12' },
+  { slug: 'how-to-calculate-maintenance-calories', publishOn: '2026-09-12' },
+  // Batch — 2026-09-21
+  { slug: 'how-to-calculate-one-rep-max', publishOn: '2026-09-21' },
+  { slug: 'how-to-get-rid-of-brain-fog', publishOn: '2026-09-21' },
+  { slug: 'how-to-lower-cortisol', publishOn: '2026-09-21' },
+  { slug: 'hrv-different-every-device', publishOn: '2026-09-21' },
+  { slug: 'intermittent-fasting-metabolic-switch', publishOn: '2026-09-21' },
+  { slug: 'protein-intake-muscle-protein-synthesis', publishOn: '2026-09-21' },
+  { slug: 'vagus-nerve-exercises', publishOn: '2026-09-21' },
+  { slug: 'vo2max-increase-aerobic-engine', publishOn: '2026-09-21' },
+  { slug: 'what-is-my-chronotype', publishOn: '2026-09-21' },
+  { slug: 'what-your-apple-watch-records', publishOn: '2026-09-21' },
+  { slug: 'zone-2-training-aerobic-base', publishOn: '2026-09-21' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
