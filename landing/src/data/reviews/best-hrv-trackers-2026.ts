@@ -108,7 +108,7 @@ const bestHrvTrackers2026: Comparison = {
 
 Every device was scored against ONDA's published [review methodology](/reviews/methodology): seven weighted criteria, with HRV measurement accuracy carrying the most weight because it is the metric this category exists to serve. The overall score is the weighted mean — not a number picked by feel.
 
-All of them were assessed from manufacturer specifications, independent 2026 reviews and published validation literature rather than hands-on testing, so treat the scores as an evidence-based starting point. One caveat worth reading first: no two devices report the same HRV number — [here is why your HRV is different on every device](/articles/hrv-different-every-device), and which reading to actually trust.
+All of them were assessed from manufacturer specifications, independent 2026 reviews and published validation literature rather than hands-on testing, so treat the scores as an evidence-based starting point. That literature is consistent: across nocturnal HR and HRV, the Oura Ring (Gen 3/4) shows the strongest agreement with reference measurement, ahead of Whoop, Garmin and Polar's wrist devices — which is why the overnight rings lead this ranking on accuracy. One caveat worth reading first: no two devices report the same HRV number — [here is why your HRV is different on every device](/articles/hrv-different-every-device), and which reading to actually trust.
 
 ## The short version
 

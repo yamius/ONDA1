@@ -65,7 +65,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ ACCURACY ]',
         title: 'How accurate is Apple Watch HRV?',
         paras: [
-          'The Watch’s optical sensor gives good HRV for everyday tracking and biofeedback, and it’s well-suited to at-rest readings. It isn’t reference-grade like an ECG chest strap — motion and loose fit add noise — but for training your breathing and watching your resting-HRV trend, it’s more than capable. Different devices report different HRV numbers, so compare your own trend, not absolute values across devices.',
+          'The Watch’s optical sensor gives good HRV for everyday tracking and biofeedback, and it’s well-suited to at-rest readings. It isn’t reference-grade like an ECG chest strap — motion and loose fit add noise — but for training your breathing and watching your resting-HRV trend, it’s more than capable. As of 2026, Apple has narrowed its HRV measurement gap versus rivals, though a still, well-fitted overnight ring or a chest strap still leads for pure beat-to-beat precision. Different devices report different HRV numbers, so compare your own trend, not absolute values across devices.',
         ],
       },
       {
@@ -161,7 +161,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ ТОЧНОСТЬ ]',
         title: 'Насколько точна HRV на Apple Watch?',
         paras: [
-          'Оптический датчик часов даёт хорошую HRV для повседневного трекинга и биофидбека и хорошо подходит для замеров в покое. Он не референсного класса, как ЭКГ-нагрудный датчик, — движение и свободная посадка добавляют шум, — но для тренировки дыхания и наблюдения за трендом HRV в покое его более чем достаточно. Разные устройства выдают разные числа HRV, поэтому сравнивайте свой собственный тренд, а не абсолютные значения между устройствами.',
+          'Оптический датчик часов даёт хорошую HRV для повседневного трекинга и биофидбека и хорошо подходит для замеров в покое. Он не референсного класса, как ЭКГ-нагрудный датчик, — движение и свободная посадка добавляют шум, — но для тренировки дыхания и наблюдения за трендом HRV в покое его более чем достаточно. По состоянию на 2026 год Apple сократила отставание по точности HRV от конкурентов, хотя неподвижное, плотно сидящее ночное кольцо или нагрудный датчик по-прежнему лидируют в чистой точности от удара к удару. Разные устройства выдают разные числа HRV, поэтому сравнивайте свой собственный тренд, а не абсолютные значения между устройствами.',
         ],
       },
       {
@@ -257,7 +257,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ PRECISIÓN ]',
         title: '¿Qué tan precisa es la VFC del Apple Watch?',
         paras: [
-          'El sensor óptico del reloj da una buena VFC para el seguimiento diario y el biofeedback, y es adecuado para lecturas en reposo. No es de grado de referencia como una banda de pecho con ECG — el movimiento y un ajuste flojo añaden ruido — pero para entrenar tu respiración y vigilar tu tendencia de VFC en reposo es más que capaz. Distintos dispositivos dan números de VFC distintos, así que compara tu propia tendencia, no valores absolutos entre dispositivos.',
+          'El sensor óptico del reloj da una buena VFC para el seguimiento diario y el biofeedback, y es adecuado para lecturas en reposo. No es de grado de referencia como una banda de pecho con ECG — el movimiento y un ajuste flojo añaden ruido — pero para entrenar tu respiración y vigilar tu tendencia de VFC en reposo es más que capaz. A fecha de 2026, Apple ha reducido su desventaja de precisión en VFC frente a sus rivales, aunque un anillo nocturno bien ajustado y quieto o una banda de pecho siguen liderando en precisión pura latido a latido. Distintos dispositivos dan números de VFC distintos, así que compara tu propia tendencia, no valores absolutos entre dispositivos.',
         ],
       },
       {

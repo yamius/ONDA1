@@ -16,6 +16,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-04-22T08:39:02Z",
     "modified": "2026-05-25T19:35:33+02:00"
   },
+  "active-intervention-vs-passive-tracking": {
+    "published": "2026-09-12T10:15:04.033Z",
+    "modified": "2026-09-12T10:15:04.033Z"
+  },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
     "modified": "2026-05-25T19:35:33+02:00"
