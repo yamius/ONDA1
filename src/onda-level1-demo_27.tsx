@@ -12,7 +12,7 @@ import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
-import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, type Anomaly, type SignalInput } from './lib/anomaly';
+import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, type PendingAnomaly, type SignalInput } from './lib/anomaly';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -633,10 +633,12 @@ const OndaLevel1 = () => {
   const [showJournalModal, setShowJournalModal] = useState(false);
   const [showDiaryModal, setShowDiaryModal] = useState(false);
   // Anomaly trigger (step 4): the pending deviation to prompt about, if any.
-  const [anomalyPrompt, setAnomalyPrompt] = useState<Anomaly | null>(null);
+  const [anomalyPrompt, setAnomalyPrompt] = useState<PendingAnomaly | null>(null);
   // Anomaly context passed to the diary ONLY when opened from the prompt (so
-  // the resulting note carries from_anomaly + metric/delta).
+  // the resulting note carries from_anomaly + metric/delta), plus the night's
+  // sync time so the note anchors to that point on the timeline (§9).
   const [diaryAnomaly, setDiaryAnomaly] = useState<{ metric: string; delta: number } | null>(null);
+  const [diaryEventTime, setDiaryEventTime] = useState<string | null>(null);
   // While the Timeline is open, keep the watch workout alive (same mechanism as
   // during a practice) — opening the full-screen modal was backgrounding the
   // webview and the auto-manager was stopping the workout.
@@ -645,10 +647,13 @@ const OndaLevel1 = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showDiaryModal]);
 
-  // Restore an unanswered anomaly signal across launches (persistent reminder).
+  // Restore an unanswered anomaly signal across launches (persistent reminder),
+  // unless it's snoozed to a later day ("remind later").
   useEffect(() => {
     const st = loadAnomalyState();
-    if (st.pending) setAnomalyPrompt(st.pending);
+    if (st.pending && (!st.pending.remindAfter || Date.now() >= st.pending.remindAfter)) {
+      setAnomalyPrompt(st.pending);
+    }
   }, []);
 
   // Anomaly evaluation (step 4). WATCH-ONLY: the corridor is built from passive
@@ -683,9 +688,21 @@ const OndaLevel1 = () => {
       if (!anomaly) return;
       const st = loadAnomalyState();
       if (!canSignal(Date.now(), st.lastSignalAt)) return;
-      const night = new Date().toISOString().slice(0, 10);
-      saveAnomalyState({ lastSignalAt: Date.now(), pending: { ...anomaly, at: Date.now(), night } });
-      setAnomalyPrompt(anomaly);
+      const at = Date.now();
+      const night = new Date(at).toISOString().slice(0, 10);
+      const signalCount = (st.signalCount ?? 0) + 1;
+      // §9: drop a baseline point at the sync time with the night's values, so the
+      // deviation shows on the rail and the note anchors to the same point.
+      try {
+        recordBaselineSample({
+          rhr: corridors.rhr?.values?.at(-1) ?? null,
+          hrv: corridors.hrv?.values?.at(-1) ?? null,
+          rr: corridors.rr?.values?.at(-1) ?? null,
+        });
+      } catch { /* noop */ }
+      const pending: PendingAnomaly = { ...anomaly, at, night, signalCount };
+      saveAnomalyState({ lastSignalAt: at, signalCount, pending });
+      setAnomalyPrompt(pending);
       try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
       try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
     })();
@@ -6575,45 +6592,64 @@ const OndaLevel1 = () => {
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
-          {/* Anomaly prompt (step 4) — a personal-corridor deviation → "record
-              your day". Numbers imply the direction; NO medical wording. */}
-          {anomalyPrompt && (
-            <div className={`mb-3 rounded-2xl p-4 border ${isLight ? 'bg-amber-50 border-amber-200 text-amber-900' : 'bg-amber-500/10 border-amber-400/30 text-amber-100'}`} data-testid="anomaly-prompt">
-              <div className="flex items-start justify-between gap-2">
-                <p className="text-sm leading-snug">
-                  {t('anomaly.prompt', 'Твой {{metric}} сегодня {{value}} — обычно {{lo}}–{{hi}}. Что-то было?', {
-                    metric: t(`anomaly.metric_${anomalyPrompt.metric}`, anomalyPrompt.metric),
-                    value: anomalyPrompt.latest,
-                    lo: anomalyPrompt.loBound,
-                    hi: anomalyPrompt.hiBound,
-                  })}
-                </p>
-                <button
-                  type="button"
-                  onClick={() => { try { track('anomaly_prompt_dismissed', { metric: anomalyPrompt.metric }); } catch { /* noop */ } setAnomalyPrompt(null); saveAnomalyState({ lastSignalAt: loadAnomalyState().lastSignalAt }); }}
-                  data-testid="anomaly-dismiss"
-                  className={`shrink-0 ${isLight ? 'text-amber-500 hover:text-amber-700' : 'text-amber-300/70 hover:text-amber-200'}`}
-                  aria-label={t('common.close', 'Закрыть')}
-                >
-                  <X className="w-5 h-5" />
-                </button>
+          {/* Anomaly card (step 4) — a personal-corridor deviation. Two states:
+              (1) signal, not recorded; (2) recorded. Both carry the by-type
+              explanation + a slow-down practice offer. Gender-agreed per metric,
+              NO medical wording. Hidden while snoozed ("remind later"). */}
+          {anomalyPrompt && (!anomalyPrompt.remindAfter || Date.now() >= anomalyPrompt.remindAfter) && (() => {
+            const a = anomalyPrompt;
+            const m = a.metric;
+            const examples = (a.signalCount ?? 0) >= 5
+              ? t('anomaly.causes_more', 'Опиши все возможные причины.')
+              : t('anomaly.causes', 'Что повлияло? Кофе, стресс, сон, алкоголь.');
+            let savedWhen = '';
+            try {
+              const d = new Date(a.recordedAt || a.at);
+              savedWhen = `${d.toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' })} ${d.toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' })}`;
+            } catch { /* noop */ }
+            const openRecord = () => {
+              setDiaryAnomaly({ metric: m, delta: a.delta });
+              setDiaryEventTime(new Date(a.at).toISOString()); // anchor the note to the night's point (§9)
+              setShowDiaryModal(true);
+            };
+            const remindLater = () => {
+              const remindAfter = Date.now() + 24 * 60 * 60 * 1000;
+              const st = loadAnomalyState();
+              saveAnomalyState({ ...st, pending: { ...a, remindAfter } });
+              setAnomalyPrompt(null);
+            };
+            const startPractice = () => {
+              const pid = ANOMALY_PRACTICE[m];
+              const pr = currentCircuit.practices.find(p => p.id === pid) as { id: string; maxQnt: number } | undefined;
+              try { track('anomaly_practice_started', { metric: m }); } catch { /* noop */ }
+              const st = loadAnomalyState();
+              saveAnomalyState({ lastSignalAt: st.lastSignalAt, signalCount: st.signalCount }); // clear pending — goal met
+              setAnomalyPrompt(null);
+              if (pr) completePractice(pid, pr.maxQnt);
+            };
+            const amberText = isLight ? 'text-amber-900' : 'text-amber-100';
+            return (
+              <div className={`mb-3 rounded-2xl p-4 border ${isLight ? 'bg-amber-50 border-amber-200' : 'bg-amber-500/10 border-amber-400/30'} ${amberText}`} data-testid="anomaly-prompt">
+                {!a.recorded ? (
+                  <>
+                    <p className="text-sm leading-snug font-medium">{t(`anomaly.prompt_${m}`, { value: a.latest, lo: a.loBound, hi: a.hiBound })}</p>
+                    <p className="mt-2 text-sm">{examples}</p>
+                    <p className="text-sm opacity-80">{t('anomaly.record_hint', 'Запиши — со временем увидишь всю картину своего здоровья.')}</p>
+                    <div className="mt-3 flex gap-2">
+                      <button type="button" onClick={openRecord} data-testid="anomaly-cta" className="flex-1 rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.record', 'Записать')}</button>
+                      <button type="button" onClick={remindLater} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
+                    </div>
+                  </>
+                ) : (
+                  <p className="text-sm font-semibold" data-testid="anomaly-saved">✓ {t('anomaly.saved', 'Сохранено в таймлайн · {{when}}', { when: savedWhen })}</p>
+                )}
+                <div className={`my-3 border-t ${isLight ? 'border-amber-200' : 'border-amber-400/25'}`} />
+                <p className="text-sm">{t(`anomaly.explain_${m}`)}</p>
+                <p className="text-sm opacity-80 mt-1">{t('anomaly.practice_offer', 'Практика замедления поможет телу вернуться в ритм.')}</p>
+                <button type="button" onClick={startPractice} data-testid="anomaly-practice" className="mt-3 w-full rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
               </div>
-              <button
-                type="button"
-                onClick={() => {
-                  const a = anomalyPrompt;
-                  setDiaryAnomaly({ metric: a.metric, delta: a.delta });
-                  setAnomalyPrompt(null);
-                  saveAnomalyState({ lastSignalAt: loadAnomalyState().lastSignalAt }); // consume pending, keep throttle
-                  setShowDiaryModal(true);
-                }}
-                data-testid="anomaly-cta"
-                className="mt-3 w-full rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all"
-              >
-                {t('anomaly.cta', 'Записать день')}
-              </button>
-            </div>
-          )}
+            );
+          })()}
           {/* Diary entry — replaces the pulse/breathing mini-tiles under the
               baseline. Opens the local-first day-note diary. Keeps baseline
               (what the body did) ↔ diary (what happened to you) in one fold.
@@ -8543,11 +8579,23 @@ const OndaLevel1 = () => {
       {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
       <DiaryModal
         isOpen={showDiaryModal}
-        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); }}
+        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null); }}
         light={isLight}
         dayRhr={dayRhr}
         userId={user?.id ?? null}
         anomaly={diaryAnomaly}
+        eventTime={diaryEventTime}
+        onAnomalySaved={() => {
+          setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null);
+          // Flip the card to state 2 (recorded) and persist.
+          setAnomalyPrompt((prev) => {
+            if (!prev) return prev;
+            const upd = { ...prev, recorded: true, recordedAt: new Date().toISOString() };
+            const st = loadAnomalyState();
+            saveAnomalyState({ ...st, pending: upd });
+            return upd;
+          });
+        }}
       />
 
       {/* Practice-log modal (was "Дневник", now "История практик"). */}

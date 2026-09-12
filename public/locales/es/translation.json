@@ -4271,6 +4271,20 @@
     "metric_rr": "respiración",
     "cta": "Registrar el día",
     "push_intro": "Tu cuerpo dio una señal anoche. Échale un vistazo.",
-    "push_short": "Hay una señal nueva."
+    "push_short": "Hay una señal nueva.",
+    "prompt_rhr": "Tu pulso anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
+    "prompt_hrv": "Tu variabilidad anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
+    "prompt_rr": "Tu respiración anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
+    "explain_rhr": "Pulso más alto de lo habitual: tu cuerpo estuvo en tensión anoche.",
+    "explain_hrv": "Recuperación por debajo de tu norma: suele ser fatiga acumulada.",
+    "explain_rr": "Respiración más rápida de lo habitual: pasa con la tensión.",
+    "practice_offer": "Una práctica de desaceleración ayudará a tu cuerpo a volver al ritmo.",
+    "causes": "¿Qué influyó? Café, estrés, sueño, alcohol.",
+    "causes_more": "Describe todo lo que pudo influir.",
+    "record_hint": "Anótalo: con el tiempo verás el panorama completo de tu salud.",
+    "record": "Registrar",
+    "remind_later": "Recordar más tarde",
+    "start_practice": "Empezar práctica",
+    "saved": "Guardado en la cronología · {{when}}"
   }
 }

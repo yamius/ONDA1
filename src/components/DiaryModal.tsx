@@ -29,6 +29,10 @@ interface DiaryModalProps {
   userId?: string | null;
   /** When opened from an anomaly trigger — stamps the new note's provenance (§4). */
   anomaly?: { metric: string; delta: number } | null;
+  /** Anchor an anomaly note to a specific time (the night's sync point, §9). */
+  eventTime?: string | null;
+  /** Fired after a note is saved in anomaly mode (so the card flips to state 2). */
+  onAnomalySaved?: () => void;
 }
 
 type RecState = 'idle' | 'recording' | 'recorded';
@@ -84,7 +88,7 @@ function loadPrefs(): ViewPrefs {
   return DEFAULT_PREFS;
 }
 
-export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null, anomaly = null }: DiaryModalProps) {
+export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null, anomaly = null, eventTime = null, onAnomalySaved }: DiaryModalProps) {
   const { t, i18n } = useTranslation();
 
   const [entries, setEntries] = useState<DiaryEntry[]>([]);
@@ -386,7 +390,11 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     if (!canSave) return;
     stopMic();
     const backdated = eventDate !== todayStr();
-    const eventTime = backdated ? new Date(`${eventDate}T12:00:00`).toISOString() : new Date().toISOString();
+    // Anomaly notes anchor to the night's sync point (§9); otherwise now, or noon
+    // of a back-dated day.
+    const noteTime = (anomaly && eventTime)
+      ? eventTime
+      : (backdated ? new Date(`${eventDate}T12:00:00`).toISOString() : new Date().toISOString());
     // New recording overrides the existing clip; photoBase64 holds current photo.
     const audioData = blobRef.current ? await toBase64(blobRef.current) : editAudioRef.current;
     const hasText = text.trim().length > 0;
@@ -401,11 +409,11 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
 
     if (editingId) {
       persist(entries.map((e) => (e.id === editingId
-        ? { ...e, text: text.trim(), event_time: eventTime, hasAudio, hasPhoto, source, synced: false }
+        ? { ...e, text: text.trim(), event_time: noteTime, hasAudio, hasPhoto, source, synced: false }
         : e)));
     } else {
       persist([{
-        id, created_at: new Date().toISOString(), event_time: eventTime, text: text.trim(), hasAudio, hasPhoto, source,
+        id, created_at: new Date().toISOString(), event_time: noteTime, text: text.trim(), hasAudio, hasPhoto, source,
         rhr: backdated ? null : (dayRhr ?? null),
         ...(anomaly ? { fromAnomaly: true, anomalyMetric: anomaly.metric, anomalyDelta: anomaly.delta } : {}),
       }, ...entries]);
@@ -416,6 +424,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     }
     resetEditor(); setEditorOpen(false);
     setTimeout(scrollToBottom, 60);
+    if (anomaly && !editingId) { try { onAnomalySaved?.(); } catch { /* noop */ } }
   };
   const handleEdit = (e: DiaryEntry) => {
     resetEditor();

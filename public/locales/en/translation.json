@@ -4271,6 +4271,20 @@
     "metric_rr": "breathing",
     "cta": "Record your day",
     "push_intro": "Your body signalled last night. Take a look.",
-    "push_short": "There's a fresh signal."
+    "push_short": "There's a fresh signal.",
+    "prompt_rhr": "Your pulse last night was {{value}} — usually {{lo}}–{{hi}}.",
+    "prompt_hrv": "Your variability last night was {{value}} — usually {{lo}}–{{hi}}.",
+    "prompt_rr": "Your breathing last night was {{value}} — usually {{lo}}–{{hi}}.",
+    "explain_rhr": "Pulse higher than usual — your body was on edge last night.",
+    "explain_hrv": "Recovery below your norm — often that's built-up fatigue.",
+    "explain_rr": "Breathing faster than usual — it happens under strain.",
+    "practice_offer": "A slow-down practice will help your body settle back into rhythm.",
+    "causes": "What played a part? Coffee, stress, sleep, alcohol.",
+    "causes_more": "Describe anything that might have played a part.",
+    "record_hint": "Note it — over time you'll see the whole picture of your health.",
+    "record": "Record",
+    "remind_later": "Remind me later",
+    "start_practice": "Start practice",
+    "saved": "Saved to the timeline · {{when}}"
   }
 }

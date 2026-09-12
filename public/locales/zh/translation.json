@@ -4271,6 +4271,20 @@
     "metric_rr": "呼吸",
     "cta": "记录今天",
     "push_intro": "你的身体昨夜发出了信号。来看看。",
-    "push_short": "有一条新信号。"
+    "push_short": "有一条新信号。",
+    "prompt_rhr": "你昨夜的脉搏是 {{value}}——通常 {{lo}}–{{hi}}。",
+    "prompt_hrv": "你昨夜的变异性是 {{value}}——通常 {{lo}}–{{hi}}。",
+    "prompt_rr": "你昨夜的呼吸是 {{value}}——通常 {{lo}}–{{hi}}。",
+    "explain_rhr": "脉搏高于平常——昨夜身体处于紧绷状态。",
+    "explain_hrv": "恢复低于你的常态——往往是累积的疲劳。",
+    "explain_rr": "呼吸比平常更快——紧张时会这样。",
+    "practice_offer": "一次放慢练习会帮助身体回到节奏。",
+    "causes": "什么造成了影响？咖啡、压力、睡眠、酒精。",
+    "causes_more": "描述所有可能的原因。",
+    "record_hint": "记下来——时间久了你会看到健康的全貌。",
+    "record": "记录",
+    "remind_later": "稍后提醒",
+    "start_practice": "开始练习",
+    "saved": "已保存到时间线 · {{when}}"
   }
 }

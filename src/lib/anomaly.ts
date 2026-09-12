@@ -98,9 +98,20 @@ export function detectAnomaly(signals: SignalInput[]): Anomaly | null {
 /* ── Throttle + persisted state ─────────────────────────────────────────── */
 const STATE_KEY = 'onda_anomaly_state';
 
+/** A raised signal the card is (or was) acting on. */
+export interface PendingAnomaly extends Anomaly {
+  at: number;              // sync time (morning the deviation was found)
+  night: string;           // YYYY-MM-DD of the deviating night
+  recorded?: boolean;      // a note has been saved for it (card → state 2)
+  recordedAt?: string;     // ISO of that save (sync time shown on the card)
+  remindAfter?: number;    // "remind later" — hide until this ms
+  signalCount?: number;    // how many signals ever (drives the card's example line)
+}
+
 export interface AnomalyState {
-  lastSignalAt?: number;         // when we last raised a signal (throttle)
-  pending?: Anomaly & { at: number; night: string }; // an unanswered signal to act on
+  lastSignalAt?: number;   // when we last raised a signal (throttle)
+  signalCount?: number;    // running total of signals raised
+  pending?: PendingAnomaly; // the signal to act on, if any
 }
 
 export function loadAnomalyState(): AnomalyState {
