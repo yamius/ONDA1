@@ -483,6 +483,20 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
 
         {/* Timeline scroll area */}
         <div ref={scrollRef} className="flex-1 overflow-y-auto no-scrollbar relative" style={{ overscrollBehavior: 'contain', touchAction: 'pan-y', WebkitOverflowScrolling: 'touch' as any }}>
+          {visibleEntries.length === 0 && baselinePts.length === 0 ? (
+            /* Empty (first run): short rails on top, hint sitting just above the
+               FAB — no overlap with the day labels. */
+            <div className="min-h-full flex flex-col">
+              <div className="relative flex-1" style={{ minHeight: '120px' }}>
+                <div className="absolute" style={{ left: '42%', top: PAD, bottom: 0, width: '2px', background: railColor }} />
+                <div className="absolute" style={{ left: '58%', top: PAD, bottom: 0, width: '2px', background: railColor }} />
+              </div>
+              <div className={`px-8 pb-28 text-center ${light ? 'text-slate-400' : 'text-white/40'}`}>
+                <p className="text-base mb-1">{t('diary.empty', 'Пока пусто')}</p>
+                <p className="text-sm">{t('diary.empty_hint', 'Бросьте пометку о дне — пара слов, голос или фото')}</p>
+              </div>
+            </div>
+          ) : (
           <div className="relative mx-auto" style={{ height: `${geom.totalH}px`, width: '100%' }}>
             <div className="absolute" style={{ left: '42%', top: PAD, height: geom.innerH, width: '2px', background: railColor }} />
             <div className="absolute" style={{ left: '58%', top: PAD, height: geom.innerH, width: '2px', background: railColor }} />
@@ -535,12 +549,6 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
               </React.Fragment>
             ))}
           </div>
-
-          {visibleEntries.length === 0 && baselinePts.length === 0 && (
-            <div className={`absolute inset-0 flex flex-col items-center justify-center pointer-events-none ${light ? 'text-slate-400' : 'text-white/40'}`}>
-              <p className="text-base mb-1">{t('diary.empty', 'Пока пусто')}</p>
-              <p className="text-sm px-8 text-center">{t('diary.empty_hint', 'Бросьте пометку о дне — пара слов, голос или фото')}</p>
-            </div>
           )}
         </div>
 
