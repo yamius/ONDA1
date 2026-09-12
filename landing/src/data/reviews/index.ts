@@ -51,6 +51,8 @@ import circularRing2 from './circular-ring-2'
 import lunaRing from './luna-ring'
 import ringconnGen2 from './ringconn-gen-2'
 import fitbitCharge6 from './fitbit-charge-6'
+import fitbitAir from './fitbit-air'
+import garminFenix8 from './garmin-fenix-8'
 import withingsScanwatch from './withings-scanwatch'
 import calm from './calm'
 import headspace from './headspace'
@@ -259,6 +261,8 @@ const ALL_REVIEWS: ToolReview[] = [
   appleWatchSeries11,
   ringconnGen2,
   fitbitCharge6,
+  fitbitAir,
+  garminFenix8,
   withingsScanwatch,
   insightTimer,
   healthyMindsProgram,
