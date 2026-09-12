@@ -580,15 +580,8 @@ const OndaLevel1 = () => {
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
 
-  // Workout lifecycle ↔ практика: сообщаем watch-хуку, когда практика активна,
-  // чтобы (1) HKWorkoutSession НЕ глушилась при уходе в фон во время практики
-  // (autonomy — переживаем диалог микрофона / заблокированный телефон), и
-  // (2) глушилась сразу, если практика закончилась пока приложение в фоне.
-  // Объявлено ПОСЛЕ practiceState, чтобы избежать TDZ.
-  useEffect(() => {
-    watchHeartRate.setPracticeActive(practiceState === 'active');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [practiceState]);
+  // Workout keep-alive lives in a single effect below (setPracticeActive),
+  // declared after both practiceState and showDiaryModal to avoid TDZ.
 
   // Monitor activePractice transitions. Catches ANY path that closes the practice,
   // including paths that bypass exitPractice (setState via closure, unmount, etc).
@@ -639,13 +632,13 @@ const OndaLevel1 = () => {
   // sync time so the note anchors to that point on the timeline (§9).
   const [diaryAnomaly, setDiaryAnomaly] = useState<{ metric: string; delta: number } | null>(null);
   const [diaryEventTime, setDiaryEventTime] = useState<string | null>(null);
-  // While the Timeline is open, keep the watch workout alive (same mechanism as
-  // during a practice) — opening the full-screen modal was backgrounding the
-  // webview and the auto-manager was stopping the workout.
+  // Single keep-alive source: hold the watch workout during a practice OR while
+  // the Timeline is open (opening the full-screen modal was backgrounding the
+  // webview). Merged so the two never clobber each other's flag.
   useEffect(() => {
-    watchHeartRate.setPracticeActive(showDiaryModal);
+    watchHeartRate.setPracticeActive(practiceState === 'active' || showDiaryModal);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [showDiaryModal]);
+  }, [practiceState, showDiaryModal]);
 
   // Restore an unanswered anomaly signal across launches (persistent reminder),
   // unless it's snoozed to a later day ("remind later").
@@ -669,6 +662,9 @@ const OndaLevel1 = () => {
     if (platform !== 'ios') return;
     // WATCH-ONLY: camera users have no night data → never signalled.
     if (!watchHeartRate.isConnected) return;
+    // Never touch HealthKit while the first-run permission flow is still up — a
+    // query mid-authorization interrupts the permission sheet.
+    if (permissions.needsSetup) return;
     anomalyEvaluatedRef.current = true;
     (async () => {
       let corridors: BaselineCorridorsResult;
@@ -707,7 +703,7 @@ const OndaLevel1 = () => {
       try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [watchHeartRate.isConnected]);
+  }, [watchHeartRate.isConnected, permissions.needsSetup]);
 
   // Anomaly PUSH setup (step 4, Phase C): hand the native background delivery the
   // localized wording (JS owns the 5 languages), then register the observers so a
@@ -716,6 +712,9 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (anomalyMonitorStartedRef.current) return;
     if (platform !== 'ios' || !watchHeartRate.isConnected) return;
+    // Same guard: don't set up background delivery until permissions are done,
+    // so nothing races the first-run permission sheet.
+    if (permissions.needsSetup) return;
     anomalyMonitorStartedRef.current = true;
     (async () => {
       try {
@@ -730,7 +729,7 @@ const OndaLevel1 = () => {
       } catch (e) { console.warn('[anomaly] monitoring setup failed', e); }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [watchHeartRate.isConnected]);
+  }, [watchHeartRate.isConnected, permissions.needsSetup]);
 
   // Opened from an anomaly local notification → analytics (the in-app prompt is
   // re-raised by the evaluation effect on foreground).
