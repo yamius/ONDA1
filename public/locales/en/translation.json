@@ -4269,6 +4269,8 @@
     "metric_rhr": "resting pulse",
     "metric_hrv": "variability",
     "metric_rr": "breathing",
-    "cta": "Record your day"
+    "cta": "Record your day",
+    "push_intro": "Your body signalled last night. Take a look.",
+    "push_short": "There's a fresh signal."
   }
 }

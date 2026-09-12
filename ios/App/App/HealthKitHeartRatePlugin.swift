@@ -686,11 +686,9 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     // the numbers. Tokens are i18next-style ({{metric}} {{value}} {{lo}} {{hi}}).
     @objc func setAnomalyStrings(_ call: CAPPluginCall) {
         let d = UserDefaults.standard
-        d.set(call.getString("template") ?? "", forKey: "anomaly_template")
         d.set(call.getString("title") ?? "ONDA", forKey: "anomaly_title")
-        d.set(call.getString("metric_rhr") ?? "resting pulse", forKey: "anomaly_metric_rhr")
-        d.set(call.getString("metric_hrv") ?? "variability", forKey: "anomaly_metric_hrv")
-        d.set(call.getString("metric_rr") ?? "breathing", forKey: "anomaly_metric_rr")
+        d.set(call.getString("pushIntro") ?? "", forKey: "anomaly_push_intro")
+        d.set(call.getString("pushShort") ?? "", forKey: "anomaly_push_short")
         call.resolve(["ok": true])
     }
 
@@ -787,18 +785,17 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
 
     private func postAnomalyNotification(metric: String, value: Double, lo: Double, hi: Double) {
         let d = UserDefaults.standard
-        let template = d.string(forKey: "anomaly_template") ?? "Your {{metric}} today is {{value}} — usually {{lo}}–{{hi}}. Did something happen?"
-        let metricName = d.string(forKey: "anomaly_metric_\(metric)") ?? metric
-        let fmt = { (n: Double) -> String in n == n.rounded() ? String(Int(n)) : String(n) }
-        let body = template
-            .replacingOccurrences(of: "{{metric}}", with: metricName)
-            .replacingOccurrences(of: "{{value}}", with: fmt(value))
-            .replacingOccurrences(of: "{{lo}}", with: fmt(lo))
-            .replacingOccurrences(of: "{{hi}}", with: fmt(hi))
+        // The push carries NO numbers (those are in the in-app card). It just
+        // varies by how many signals have fired: intro for the first 3, short
+        // after (task §4).
+        let count = d.integer(forKey: "anomaly_push_count") + 1
+        d.set(count, forKey: "anomaly_push_count")
+        let intro = d.string(forKey: "anomaly_push_intro") ?? "Your body signalled last night. Take a look."
+        let short = d.string(forKey: "anomaly_push_short") ?? "There's a fresh signal."
 
         let content = UNMutableNotificationContent()
         content.title = d.string(forKey: "anomaly_title") ?? "ONDA"
-        content.body = body
+        content.body = count <= 3 ? intro : short
         content.sound = .default
         content.userInfo = ["anomaly_metric": metric]
         let req = UNNotificationRequest(identifier: "onda_anomaly", content: content, trigger: nil) // deliver now

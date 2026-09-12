@@ -4269,6 +4269,8 @@
     "metric_rhr": "pulso en reposo",
     "metric_hrv": "variabilidad",
     "metric_rr": "respiración",
-    "cta": "Registrar el día"
+    "cta": "Registrar el día",
+    "push_intro": "Tu cuerpo dio una señal anoche. Échale un vistazo.",
+    "push_short": "Hay una señal nueva."
   }
 }

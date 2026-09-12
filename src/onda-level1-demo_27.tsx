@@ -705,12 +705,9 @@ const OndaLevel1 = () => {
         // Notification permission is requested in PermissionSetupModal (by intent,
         // with Health), NOT here — starting monitoring must never prompt on launch.
         await HealthKitHeartRate.setAnomalyStrings({
-          // Interpolate the tokens to themselves → keep {{…}} literal for native.
-          template: t('anomaly.prompt', { metric: '{{metric}}', value: '{{value}}', lo: '{{lo}}', hi: '{{hi}}' }),
           title: 'ONDA',
-          metric_rhr: t('anomaly.metric_rhr', 'resting pulse'),
-          metric_hrv: t('anomaly.metric_hrv', 'variability'),
-          metric_rr: t('anomaly.metric_rr', 'breathing'),
+          pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'),
+          pushShort: t('anomaly.push_short', 'Есть свежий сигнал.'),
         });
         await HealthKitHeartRate.startAnomalyMonitoring();
       } catch (e) { console.warn('[anomaly] monitoring setup failed', e); }

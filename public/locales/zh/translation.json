@@ -4269,6 +4269,8 @@
     "metric_rhr": "静息脉搏",
     "metric_hrv": "变异性",
     "metric_rr": "呼吸",
-    "cta": "记录今天"
+    "cta": "记录今天",
+    "push_intro": "你的身体昨夜发出了信号。来看看。",
+    "push_short": "有一条新信号。"
   }
 }
