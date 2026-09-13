@@ -828,7 +828,19 @@ const OndaLevel1 = () => {
     const justClosedPermModal = prevPermModalRef.current && !showPermissionModal;
     prevPermModalRef.current = showPermissionModal;
     if (platform !== 'ios' || !Capacitor.isPluginAvailable('OndaWatch')) return;
-    const shouldManage = !permissions.needsSetup && !showPermissionModal;
+    // Gate on the SAME proven flag as the baseline auto-load and the anomaly
+    // effects: only auto-manage the watch workout once the user has explicitly
+    // connected + granted before (onda_baseline_watching). `needsSetup` was
+    // NOT reliable here — on a fresh install iOS hides the read status, so it
+    // reads false and setAutoManaged(true) fired at STARTUP, starting a watch
+    // workout (its own HealthKit prompt on the watch) on top of the permission
+    // flow → "выдача разрешений перебита стартом". The flag is unset on a fresh
+    // install, so the watch is never auto-started during first-run onboarding;
+    // it flips true during the first grant (loadWatchBaseline), so this effect
+    // re-runs when the modal closes and enables it after the grace below.
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    const shouldManage = watching && !showPermissionModal;
     if (!shouldManage) {
       watchHeartRate.setAutoManaged(false);
       return;
