@@ -309,8 +309,11 @@ struct ContentView: View {
         
         workoutManager.requestAuthorizationWithCompletion { _ in
             DispatchQueue.main.async {
-                print("[ContentView] 📋 Authorization callback → recreating workout")
-                self.workoutManager.recreateWorkoutSession()
+                // ⚠️ This callback fires when the sheet is PRESENTED, not after the
+                // user answers. Starting the workout now would interrupt the sheet
+                // on the watch. Defer the start until the permission is decided.
+                print("[ContentView] 📋 Authorization callback → waiting for the permission decision before starting")
+                self.workoutManager.startWorkoutWhenPermissionDecided()
             }
         }
     }

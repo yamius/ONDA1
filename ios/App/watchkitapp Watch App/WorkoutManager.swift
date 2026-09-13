@@ -266,6 +266,29 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
+    /// Start the workout ONLY AFTER the user has answered the HealthKit sheet.
+    ///
+    /// ⚠️ watchOS calls requestAuthorization's completion as soon as the sheet is
+    /// PRESENTED — NOT after the user answers (see requestAuthorizationWithCompletion).
+    /// Starting a workout there launches an HKWorkoutSession ON TOP of the still-
+    /// visible permission sheet and interrupts it → «на часах разрешение
+    /// перебивается». We instead wait for the share-type decision to leave
+    /// .notDetermined (the reliable "user answered" signal) and only then start.
+    /// A returning user whose auth is already decided starts immediately (no wait).
+    func startWorkoutWhenPermissionDecided(maxWait: TimeInterval = 90) {
+        let started = Date()
+        func poll() {
+            if self.permissionDecisionStatus != .notDetermined {
+                // User has answered (or answered earlier) → safe to start now.
+                self.recreateWorkoutSession()
+                return
+            }
+            if Date().timeIntervalSince(started) >= maxWait { return }  // give up quietly
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { poll() }
+        }
+        poll()
+    }
+
     var isAuthorized: Bool {
         guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
             return false
@@ -323,10 +346,20 @@ class WorkoutManager: NSObject, ObservableObject {
     
     func startWorkout() {
         logDiagnostic("🏃 startWorkout() called", important: true)
-        
+
         // Если сессия уже активна, не запускаем повторно
         if session?.state == .running {
             logDiagnostic("⏭️ Workout already running, skipping")
+            return
+        }
+
+        // Definitive guard for EVERY caller: never launch a workout session while
+        // the HealthKit permission is still undecided — an HKWorkoutSession started
+        // over the visible sheet interrupts it («на часах разрешение перебивается»).
+        // Gate on the SHARE-type decision (workoutType); the READ-type status is
+        // always .notDetermined (privacy) and can't be used here.
+        if permissionDecisionStatus == .notDetermined {
+            logDiagnostic("⏸️ startWorkout skipped — HealthKit permission not decided yet")
             return
         }
 
@@ -945,12 +978,14 @@ extension WorkoutManager: WCSessionDelegate {
                 }
 
                 // Не стартуем воркаут, пока пользователь не ответил на системный
-                // лист HealthKit: startWorkout поверх .notDetermined перебивает окно
-                // выдачи разрешений на часах. Свой воркаут часы запустят сами после
-                // ответа (recreateWorkoutSession в колбэке авторизации).
-                if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate),
-                   self.healthStore.authorizationStatus(for: hrType) == .notDetermined {
-                    print("[WorkoutManager] ⏸️ start ignored — HealthKit auth not determined (avoid interrupting the permission sheet)")
+                // лист HealthKit: startWorkout поверх листа перебивает окно выдачи
+                // разрешений на часах. Проверяем РЕШЕНИЕ по SHARE-типу (workoutType) —
+                // для READ-типа (пульс) статус ВСЕГДА .notDetermined из-за приватности,
+                // поэтому по нему гейтить нельзя (заблокировало бы старт навсегда).
+                // Свой воркаут часы запустят сами после ответа (см.
+                // startWorkoutWhenPermissionDecided в колбэке авторизации).
+                if self.permissionDecisionStatus == .notDetermined {
+                    print("[WorkoutManager] ⏸️ start ignored — permission not decided yet (avoid interrupting the sheet)")
                     return
                 }
                 
