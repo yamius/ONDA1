@@ -4290,7 +4290,7 @@
   },
   "pdf": {
     "subtitle": "健康时间线",
-    "private_note": "个人数据 · 健康指标来自 Apple 健康",
+    "private_note": "个人数据 · 来自 Apple 健康的指标",
     "period": "时段",
     "baseline_heading": "该时段的基线",
     "min": "最低",

@@ -4296,7 +4296,7 @@
   },
   "pdf": {
     "subtitle": "Таймлайн здоровья",
-    "private_note": "Личные данные · показатели здоровья из Apple Health",
+    "private_note": "Личные данные · Метрики из Apple Health",
     "period": "Период",
     "baseline_heading": "Базлайн за период",
     "min": "мин",

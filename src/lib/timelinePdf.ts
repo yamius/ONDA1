@@ -141,10 +141,11 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   /* One narrow vertical column on every screen — reads like a mobile feed on a
      PC and prints straight to a tidy portrait PDF (kept narrow on purpose). */
   .wrap { max-width: 460px; margin: 0 auto; padding: 16px 14px 40px; }
-  h1 { font-size: 20px; margin: 0; color: #4338ca; letter-spacing: .5px; }
+  h1 { font-size: 20px; margin: 0; line-height: 1.1; color: #4338ca; letter-spacing: .5px; }
   h2 { font-size: 13px; margin: 22px 0 8px; color: #4338ca; border-bottom: 1px solid #e0e7ff; padding-bottom: 4px; }
   .sub { color: #64748b; font-size: 11px; margin-top: 2px; }
   .sub .site { color: #6366f1; text-decoration: none; }
+  .sub.site-line { margin-top: 0; }
   .head { border-bottom: 2px solid #6366f1; padding-bottom: 10px; margin-bottom: 6px; }
   table { width: 100%; border-collapse: collapse; margin-top: 4px; }
   th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid #eef2f7; font-size: 11px; }
@@ -163,7 +164,7 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   <div class="wrap">
   <div class="head">
     <h1>${esc(c.brand)}</h1>
-    ${c.siteLabel ? `<div class="sub"><a class="site" href="${esc(c.siteUrl ?? '')}">${esc(c.siteLabel)}</a></div>` : ''}
+    ${c.siteLabel ? `<div class="sub site-line"><a class="site" href="${esc(c.siteUrl ?? '')}">${esc(c.siteLabel)}</a></div>` : ''}
     <div class="sub">${esc(c.subtitle)} · ${esc(c.period)}: ${esc(period)}</div>
     <div class="sub">${esc(c.privateNote)}</div>
   </div>

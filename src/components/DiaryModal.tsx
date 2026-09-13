@@ -588,7 +588,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
       siteLabel: 'www.onda-life.com',
       siteUrl,
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
-      privateNote: t('pdf.private_note', 'Особисті дані · показники здоровʼя з Apple Health'),
+      privateNote: t('pdf.private_note', 'Особисті дані · Метрики з Apple Health'),
       period: t('pdf.period', 'Период'),
       baselineHeading: t('pdf.baseline_heading', 'Базлайн за период'),
       metric: { rhr: t('anomaly.metric_rhr', 'пульс покоя'), hrv: t('anomaly.metric_hrv', 'вариабельность'), rr: t('anomaly.metric_rr', 'дыхание') },
