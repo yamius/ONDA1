@@ -131,10 +131,14 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   const isEmpty = samples.length === 0 && entries.length === 0;
 
   return `<!doctype html><html lang="${esc(c.lang)}"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   * { box-sizing: border-box; }
-  html, body { background: #ffffff; }
+  html, body { background: #ffffff; -webkit-text-size-adjust: 100%; }
   body { font: 12px/1.5 -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif; color: #1e293b; margin: 0; padding: 0; }
+  /* One narrow vertical column on every screen — reads like a mobile feed on a
+     PC and prints straight to a tidy portrait PDF (kept narrow on purpose). */
+  .wrap { max-width: 460px; margin: 0 auto; padding: 16px 14px 40px; }
   h1 { font-size: 20px; margin: 0; color: #4338ca; letter-spacing: .5px; }
   h2 { font-size: 13px; margin: 22px 0 8px; color: #4338ca; border-bottom: 1px solid #e0e7ff; padding-bottom: 4px; }
   .sub { color: #64748b; font-size: 11px; margin-top: 2px; }
@@ -152,7 +156,8 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   .note .rec { width: 100%; max-width: 320px; height: 34px; margin-top: 6px; display: block; }
   .empty { color: #94a3b8; text-align: center; padding: 40px 0; }
 </style></head>
-<body style="padding: 8px 4px;">
+<body>
+  <div class="wrap">
   <div class="head">
     <h1>${esc(c.brand)}</h1>
     <div class="sub">${esc(c.subtitle)} · ${esc(c.period)}: ${esc(period)}</div>
@@ -171,5 +176,6 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   ${signalRows ? `<h2>${esc(c.signalsHeading)}</h2>
   <table><tr><th>${esc(c.colDate)}</th><th></th><th></th><th></th></tr>${signalRows}</table>` : ''}
   `}
+  </div>
 </body></html>`;
 }

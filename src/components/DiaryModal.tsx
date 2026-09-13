@@ -852,11 +852,17 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                   );
                 })}
               </div>
-              <p className={`text-[11px] leading-snug mb-4 ${light ? 'text-slate-400' : 'text-white/40'}`}>
-                {exportInc.voice
-                  ? t('pdf.voice_hint_html', 'З голосом звіт зберігається як HTML-файл: кожна голосова грає прямо в ньому (відкрий у браузері). PDF не вміє звук.')
-                  : t('pdf.photo_hint', 'Звіт збережеться як PDF — зручно друкувати та показати лікарю.')}
-              </p>
+              {/* Both hints share one grid cell so the box is always sized to the
+                  taller one — toggling voice only flips visibility, never resizes
+                  the dialog (was "дёргается"). */}
+              <div className={`grid mb-4 text-[11px] leading-snug ${light ? 'text-slate-400' : 'text-white/40'}`}>
+                <p className="col-start-1 row-start-1" style={{ visibility: exportInc.voice ? 'visible' : 'hidden' }}>
+                  {t('pdf.voice_hint_html', 'З голосом звіт зберігається як HTML-файл: кожна голосова грає прямо в ньому (відкрий у браузері). PDF не вміє звук.')}
+                </p>
+                <p className="col-start-1 row-start-1" style={{ visibility: exportInc.voice ? 'hidden' : 'visible' }}>
+                  {t('pdf.photo_hint', 'Звіт збережеться як PDF — зручно друкувати та показати лікарю.')}
+                </p>
+              </div>
 
               <button onClick={doExport} disabled={exporting || (exportPeriod === 'custom' && (!customFrom || !customTo))} data-testid="diary-export-go"
                 className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all disabled:opacity-60 ${light ? 'bg-violet-500 text-white hover:bg-violet-600' : 'bg-indigo-500 text-white hover:bg-indigo-600'}`}>
