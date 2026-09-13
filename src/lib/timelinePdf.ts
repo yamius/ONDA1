@@ -9,6 +9,12 @@ import type { DiaryEntry, BaselineSample } from './diary';
 export interface TimelinePdfData {
   samples: BaselineSample[];
   entries: DiaryEntry[];
+  /** What diary content to include in the Notes section (health metrics are
+   *  always included — they are the core of the report). Defaults to all on. */
+  include?: { text: boolean; photo: boolean; voice: boolean };
+  /** entry id → tiny downscaled JPEG data URI, embedded as a light preview.
+   *  Built on the JS side (canvas) so the lib stays pure. */
+  photos?: Record<string, string>;
 }
 
 /** Minimal i18n surface the report needs (passed in so the lib stays pure). */
@@ -83,14 +89,18 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
     return `<tr><td>${esc(fmtDateTime(s.time, c.lang))}${dev}</td><td>${s.rhr ?? c.none}</td><td>${s.hrv ?? c.none}</td><td>${s.rr ?? c.none}</td></tr>`;
   }).join('');
 
-  // Notes (facts) — text, or a marker for voice/photo.
+  // Notes (facts) — text, a light photo preview, and/or a voice marker, filtered
+  // by what the user chose to include. (A printed PDF can't hold playable audio,
+  // so voice shows as a dated marker; the recording itself stays in the app.)
+  const inc = data.include ?? { text: true, photo: true, voice: true };
+  const photos = data.photos ?? {};
   const noteBlocks = entries.map((e) => {
-    const body = e.text
-      ? esc(e.text)
-      : (e.hasAudio ? `<i>${esc(c.voiceNote)}</i>` : e.hasPhoto ? `<i>${esc(c.photo)}</i>` : '');
-    if (!body && !e.hasAudio && !e.hasPhoto) return '';
-    const extra = [e.hasAudio ? '🎤' : '', e.hasPhoto ? '🖼' : ''].filter(Boolean).join(' ');
-    return `<div class="note"><span class="date">${esc(fmtDateTime(e.event_time, c.lang))}</span> ${body} ${extra ? `<span class="muted">${extra}</span>` : ''}</div>`;
+    const bits: string[] = [];
+    if (inc.text && e.text) bits.push(esc(e.text));
+    if (inc.voice && e.hasAudio) bits.push(`<span class="tag">🎤 ${esc(c.voiceNote)}</span>`);
+    const img = inc.photo && photos[e.id] ? `<img class="thumb" src="${photos[e.id]}" alt="">` : '';
+    if (bits.length === 0 && !img) return '';
+    return `<div class="note"><span class="date">${esc(fmtDateTime(e.event_time, c.lang))}</span> ${bits.join(' ')}${img ? `<div>${img}</div>` : ''}</div>`;
   }).join('');
 
   // Signals — deviations that carried through the trigger.
@@ -117,8 +127,10 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   td:not(:first-child), th:not(:first-child) { text-align: right; }
   .muted { color: #94a3b8; }
   .dev { color: #d97706; font-weight: 700; }
-  .note { margin: 5px 0; font-size: 11px; }
+  .note { margin: 7px 0; font-size: 11px; }
   .note .date { color: #6366f1; font-weight: 600; margin-right: 6px; }
+  .note .tag { color: #7c3aed; font-size: 10px; }
+  .note .thumb { max-width: 130px; max-height: 100px; border-radius: 6px; margin-top: 4px; border: 1px solid #e0e7ff; }
   .empty { color: #94a3b8; text-align: center; padding: 40px 0; }
 </style></head>
 <body style="padding: 8px 4px;">

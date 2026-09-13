@@ -101,7 +101,10 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const [pxPerDay, setPxPerDay] = useState(64);
   const [fabOpen, setFabOpen] = useState(false);
   const [viewPhoto, setViewPhoto] = useState<string | null>(null); // fullscreen photo
-  const [exportMenuOpen, setExportMenuOpen] = useState(false);      // PDF period chooser
+  const [exportMenuOpen, setExportMenuOpen] = useState(false);      // PDF export dialog
+  const [exportPeriod, setExportPeriod] = useState<'7' | '30' | 'all'>('7');
+  const [exportInc, setExportInc] = useState({ text: true, photo: true, voice: true });
+  const [exporting, setExporting] = useState(false);
 
   // Editor
   const [editorOpen, setEditorOpen] = useState(false);
@@ -468,17 +471,48 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     >{icon}</button>
   );
 
+  // Downscale a stored photo (base64 data URI) to a tiny, low-quality JPEG so the
+  // PDF stays light. Falls back to the original if the canvas path fails.
+  const makePhotoThumb = (dataUri: string, maxPx = 260, quality = 0.5): Promise<string> =>
+    new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        const scale = Math.min(1, maxPx / Math.max(img.width || 1, img.height || 1));
+        const w = Math.max(1, Math.round((img.width || maxPx) * scale));
+        const h = Math.max(1, Math.round((img.height || maxPx) * scale));
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        const ctx = canvas.getContext('2d');
+        if (!ctx) { resolve(dataUri); return; }
+        ctx.drawImage(img, 0, 0, w, h);
+        try { resolve(canvas.toDataURL('image/jpeg', quality)); } catch { resolve(dataUri); }
+      };
+      img.onerror = () => resolve(dataUri);
+      img.src = dataUri;
+    });
+
   // Export the timeline to a PDF ON-DEVICE and open the native share sheet (task
   // 81). Health data never leaves the phone; no email, no server. iOS-only.
-  // `days` = 7 | 30 | null(all) — the chosen report period.
-  const doExport = async (days: number | null) => {
-    setExportMenuOpen(false);
-    if (Capacitor.getPlatform() !== 'ios') return;
+  // Reads the chosen period + which diary content (text / photo / voice) to
+  // include. Photos are embedded as light downscaled previews; voice can't live
+  // playable inside a printed PDF, so it appears as a dated marker.
+  const doExport = async () => {
+    if (Capacitor.getPlatform() !== 'ios' || exporting) return;
+    const days = exportPeriod === 'all' ? null : Number(exportPeriod);
     const periodTag = days ?? 'all';
-    try { trackEvent('timeline_export_tapped', { period: periodTag }); } catch { /* noop */ }
+    try { trackEvent('timeline_export_tapped', { period: periodTag, inc_text: exportInc.text, inc_photo: exportInc.photo, inc_voice: exportInc.voice }); } catch { /* noop */ }
+    setExporting(true);
     const cutoff = days ? Date.now() - days * 86_400_000 : 0;
     const fSamples = samples.filter((s) => s.time >= cutoff);
     const fEntries = entries.filter((e) => new Date(e.event_time).getTime() >= cutoff);
+    // Build light photo thumbnails only for included entries in range.
+    const photos: Record<string, string> = {};
+    if (exportInc.photo) {
+      for (const e of fEntries) {
+        const src = media[e.id]?.photo;
+        if (e.hasPhoto && src) { try { photos[e.id] = await makePhotoThumb(src); } catch { /* skip */ } }
+      }
+    }
     const copy: TimelinePdfCopy = {
       brand: 'ONDA Life',
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
@@ -499,11 +533,13 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
       empty: t('pdf.empty', 'Нет данных за период'),
       lang: i18n.language || 'en',
     };
-    const html = buildTimelineHtml({ samples: fSamples, entries: fEntries }, copy);
+    const html = buildTimelineHtml({ samples: fSamples, entries: fEntries, include: exportInc, photos }, copy);
     try {
       await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf` });
       try { trackEvent('timeline_export_completed', { period: periodTag }); } catch { /* noop */ }
+      setExportMenuOpen(false);
     } catch (e) { console.warn('[pdf] export failed', e); }
+    finally { setExporting(false); }
   };
 
   return (
@@ -516,22 +552,10 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         <div className={`shrink-0 border-b p-3 sm:p-4 ${light ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
           <div className="flex items-center gap-2">
             <h2 className="text-lg sm:text-xl font-bold flex-1">{t('diary.timeline', 'Таймлайн')}</h2>
-            {/* Share/export → pick a period, then on-device PDF (left of calendar). */}
-            <div className="relative mr-1">
-              <button onClick={() => setExportMenuOpen((v) => !v)} data-testid="diary-export" aria-label={t('pdf.export', 'Поделиться')} className={`p-1.5 rounded-full transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
-                <Share2 className="w-5 h-5" />
-              </button>
-              {exportMenuOpen && (
-                <div className={`absolute right-0 top-full mt-1 z-30 rounded-xl border shadow-lg overflow-hidden ${light ? 'bg-white border-violet-200' : 'bg-gray-800 border-white/15'}`}>
-                  {([['7', t('pdf.period_7', '7 дней')], ['30', t('pdf.period_30', '30 дней')], ['all', t('pdf.period_all', 'Весь период')]] as const).map(([k, label]) => (
-                    <button key={k} onClick={() => doExport(k === 'all' ? null : Number(k))} data-testid={`diary-export-${k}`}
-                      className={`block w-full text-left px-4 py-2 text-sm whitespace-nowrap transition-all ${light ? 'text-slate-700 hover:bg-violet-50' : 'text-white/85 hover:bg-white/10'}`}>
-                      {label}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* Share/export → opens the PDF dialog (period + what to include). */}
+            <button onClick={() => setExportMenuOpen(true)} data-testid="diary-export" aria-label={t('pdf.export', 'Поделиться')} className={`mr-1 p-1.5 rounded-full transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
+              <Share2 className="w-5 h-5" />
+            </button>
             {/* Native date input UNDER a calendar icon — tapping opens the real
                 picker (programmatic showPicker() is unreliable in WKWebView). */}
             <label data-testid="diary-jump-date" aria-label={t('diary.pick_date', 'Обрати дату')} className={`relative mr-2 p-1.5 rounded-full cursor-pointer transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
@@ -725,6 +749,69 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
           <div className="absolute inset-0 z-40 bg-black/95 flex items-center justify-center" onClick={() => setViewPhoto(null)} data-testid="diary-lightbox">
             <img src={viewPhoto} alt="" className="max-w-full max-h-full object-contain" />
             <button onClick={() => setViewPhoto(null)} className="absolute top-3 right-3 text-white/90"><X className="w-7 h-7" /></button>
+          </div>
+        )}
+
+        {/* PDF export dialog — period + what to include (text / photo / voice). */}
+        {exportMenuOpen && (
+          <div className="absolute inset-0 z-40 bg-black/70 flex items-center justify-center p-4" onClick={() => !exporting && setExportMenuOpen(false)} data-testid="diary-export-dialog">
+            <div onClick={(e) => e.stopPropagation()} className={`w-full max-w-sm rounded-2xl border shadow-2xl p-5 ${light ? 'bg-white text-slate-800 border-violet-200' : 'bg-gray-900 text-white border-indigo-500/30'}`}>
+              <div className="flex items-center gap-2 mb-4">
+                <h3 className="text-lg font-bold flex-1">{t('pdf.make_title', 'Сделать PDF')}</h3>
+                <button onClick={() => !exporting && setExportMenuOpen(false)} data-testid="diary-export-close" aria-label={t('common.close', 'Закрыть')} className={`p-1 rounded-full transition-all ${light ? 'text-slate-400 hover:text-slate-700 hover:bg-violet-100' : 'text-gray-400 hover:text-white hover:bg-white/10'}`}>
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Period */}
+              <div className={`text-xs font-semibold mb-2 ${light ? 'text-slate-500' : 'text-white/60'}`}>{t('pdf.period', 'Период')}</div>
+              <div className="flex gap-2 mb-5">
+                {([['7', t('pdf.period_7', '7 дней')], ['30', t('pdf.period_30', '30 дней')], ['all', t('pdf.period_all_short', 'Весь')]] as const).map(([k, label]) => (
+                  <button key={k} onClick={() => setExportPeriod(k)} data-testid={`diary-export-period-${k}`}
+                    className={`flex-1 py-2 rounded-xl text-sm font-medium border transition-all ${exportPeriod === k
+                      ? (light ? 'bg-violet-500 text-white border-violet-500' : 'bg-indigo-500 text-white border-indigo-500')
+                      : (light ? 'bg-white text-slate-600 border-violet-200 hover:bg-violet-50' : 'bg-gray-800 text-white/75 border-white/15 hover:bg-white/10')}`}>
+                    {label}
+                  </button>
+                ))}
+              </div>
+
+              {/* What to include */}
+              <div className={`text-xs font-semibold mb-2 ${light ? 'text-slate-500' : 'text-white/60'}`}>{t('pdf.include', 'Что включить')}</div>
+              <div className="space-y-2 mb-2">
+                {([
+                  ['text', Type, t('pdf.inc_text', 'Текст заметок')],
+                  ['photo', Camera, t('pdf.inc_photo', 'Фото (лёгкие превью)')],
+                  ['voice', Mic, t('pdf.inc_voice', 'Голосовые заметки')],
+                ] as const).map(([k, Icon, label]) => {
+                  const on = exportInc[k];
+                  return (
+                    <button key={k} onClick={() => setExportInc((p) => ({ ...p, [k]: !p[k] }))} data-testid={`diary-export-inc-${k}`}
+                      className={`w-full flex items-center gap-3 p-3 rounded-xl border text-left transition-all ${on
+                        ? (light ? 'bg-violet-50 border-violet-300' : 'bg-indigo-500/15 border-indigo-400/40')
+                        : (light ? 'bg-white border-violet-100' : 'bg-gray-800 border-white/10')}`}>
+                      <Icon className={`w-4 h-4 shrink-0 ${on ? (light ? 'text-violet-600' : 'text-indigo-300') : (light ? 'text-slate-400' : 'text-white/40')}`} />
+                      <span className={`flex-1 text-sm ${on ? '' : (light ? 'text-slate-500' : 'text-white/50')}`}>{label}</span>
+                      <span className={`w-5 h-5 rounded-md flex items-center justify-center shrink-0 border ${on
+                        ? (light ? 'bg-violet-500 border-violet-500' : 'bg-indigo-500 border-indigo-500')
+                        : (light ? 'border-violet-200' : 'border-white/20')}`}>
+                        {on && <Check className="w-3.5 h-3.5 text-white" />}
+                      </span>
+                    </button>
+                  );
+                })}
+              </div>
+              <p className={`text-[11px] leading-snug mb-4 ${light ? 'text-slate-400' : 'text-white/40'}`}>
+                {t('pdf.voice_hint', 'Голосовые в PDF отмечаются датой — сама запись остаётся в приложении (PDF не проигрывает звук).')}
+              </p>
+
+              <button onClick={doExport} disabled={exporting} data-testid="diary-export-go"
+                className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all disabled:opacity-60 ${light ? 'bg-violet-500 text-white hover:bg-violet-600' : 'bg-indigo-500 text-white hover:bg-indigo-600'}`}>
+                {exporting
+                  ? <><div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />{t('pdf.making', 'Готовим…')}</>
+                  : <><Share2 className="w-4 h-4" />{t('pdf.make_title', 'Сделать PDF')}</>}
+              </button>
+            </div>
           </div>
         )}
       </div>

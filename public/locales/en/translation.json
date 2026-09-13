@@ -4304,6 +4304,14 @@
     "export": "Share",
     "period_7": "Last 7 days",
     "period_30": "Last 30 days",
-    "period_all": "All time"
+    "period_all": "All time",
+    "make_title": "Make PDF",
+    "include": "What to include",
+    "inc_text": "Note text",
+    "inc_photo": "Photos (light previews)",
+    "inc_voice": "Voice notes",
+    "voice_hint": "Voice notes appear in the PDF as a dated marker — the recording stays in the app (a PDF can't play sound).",
+    "making": "Preparing…",
+    "period_all_short": "All"
   }
 }

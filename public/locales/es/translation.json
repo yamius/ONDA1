@@ -4304,6 +4304,14 @@
     "export": "Compartir",
     "period_7": "Últimos 7 días",
     "period_30": "Últimos 30 días",
-    "period_all": "Todo"
+    "period_all": "Todo",
+    "make_title": "Crear PDF",
+    "include": "Qué incluir",
+    "inc_text": "Texto de las notas",
+    "inc_photo": "Fotos (vistas ligeras)",
+    "inc_voice": "Notas de voz",
+    "voice_hint": "Las notas de voz aparecen en el PDF con su fecha; la grabación permanece en la app (un PDF no reproduce sonido).",
+    "making": "Preparando…",
+    "period_all_short": "Todo"
   }
 }
