@@ -236,6 +236,20 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'bohr-effect-oxygen-telemetry', publishOn: '2026-09-28' },
   { slug: 'anti-entropy-neural-architecture', publishOn: '2026-09-28' },
   { slug: 'rhythmic-entrainment-system-frequencies', publishOn: '2026-09-28' },
+  // Sleep / circadian / stress-recovery / calm-focus pillars — RE-TRANSLATED
+  // from current EN (old bodies stale); full link parity. Batch 2026-10-05.
+  { slug: 'circadian-lighting-dark-therapy', publishOn: '2026-10-05' },
+  { slug: 'ancestral-sync-circadian-anchors', publishOn: '2026-10-05' },
+  { slug: 'protocol-circadian-hard-reset', publishOn: '2026-10-05' },
+  { slug: 'longevity-protocol-biological-clock-reset', publishOn: '2026-10-05' },
+  { slug: 'nightly-flush-glymphatic-neural-cache', publishOn: '2026-10-05' },
+  { slug: 'phase-locked-acoustic-sleep', publishOn: '2026-10-05' },
+  { slug: 'hpa-axis-control-cortisol-aggression', publishOn: '2026-10-05' },
+  { slug: 'adrenal-governor-thermal-runaway', publishOn: '2026-10-05' },
+  { slug: 'quiet-mode-alpha-cortisol-buffer', publishOn: '2026-10-05' },
+  { slug: 'idle-state-alpha-rhythms', publishOn: '2026-10-05' },
+  { slug: 'neural-bridge-alpha-flow-gateway', publishOn: '2026-10-05' },
+  { slug: 'physiological-concentration-flow-state-hardwired', publishOn: '2026-10-05' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
