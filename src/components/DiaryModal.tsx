@@ -101,6 +101,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const [pxPerDay, setPxPerDay] = useState(64);
   const [fabOpen, setFabOpen] = useState(false);
   const [viewPhoto, setViewPhoto] = useState<string | null>(null); // fullscreen photo
+  const [exportMenuOpen, setExportMenuOpen] = useState(false);      // PDF period chooser
 
   // Editor
   const [editorOpen, setEditorOpen] = useState(false);
@@ -469,9 +470,15 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
 
   // Export the timeline to a PDF ON-DEVICE and open the native share sheet (task
   // 81). Health data never leaves the phone; no email, no server. iOS-only.
-  const exportPdf = async () => {
+  // `days` = 7 | 30 | null(all) — the chosen report period.
+  const doExport = async (days: number | null) => {
+    setExportMenuOpen(false);
     if (Capacitor.getPlatform() !== 'ios') return;
-    try { trackEvent('timeline_export_tapped', {}); } catch { /* noop */ }
+    const periodTag = days ?? 'all';
+    try { trackEvent('timeline_export_tapped', { period: periodTag }); } catch { /* noop */ }
+    const cutoff = days ? Date.now() - days * 86_400_000 : 0;
+    const fSamples = samples.filter((s) => s.time >= cutoff);
+    const fEntries = entries.filter((e) => new Date(e.event_time).getTime() >= cutoff);
     const copy: TimelinePdfCopy = {
       brand: 'ONDA Life',
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
@@ -492,10 +499,10 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
       empty: t('pdf.empty', 'Нет данных за период'),
       lang: i18n.language || 'en',
     };
-    const html = buildTimelineHtml({ samples, entries }, copy);
+    const html = buildTimelineHtml({ samples: fSamples, entries: fEntries }, copy);
     try {
       await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf` });
-      try { trackEvent('timeline_export_completed', {}); } catch { /* noop */ }
+      try { trackEvent('timeline_export_completed', { period: periodTag }); } catch { /* noop */ }
     } catch (e) { console.warn('[pdf] export failed', e); }
   };
 
@@ -509,10 +516,22 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         <div className={`shrink-0 border-b p-3 sm:p-4 ${light ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
           <div className="flex items-center gap-2">
             <h2 className="text-lg sm:text-xl font-bold flex-1">{t('diary.timeline', 'Таймлайн')}</h2>
-            {/* Share/export → on-device PDF (left of the calendar). */}
-            <button onClick={exportPdf} data-testid="diary-export" aria-label={t('pdf.export', 'Поделиться')} className={`mr-1 p-1.5 rounded-full transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
-              <Share2 className="w-5 h-5" />
-            </button>
+            {/* Share/export → pick a period, then on-device PDF (left of calendar). */}
+            <div className="relative mr-1">
+              <button onClick={() => setExportMenuOpen((v) => !v)} data-testid="diary-export" aria-label={t('pdf.export', 'Поделиться')} className={`p-1.5 rounded-full transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>
+                <Share2 className="w-5 h-5" />
+              </button>
+              {exportMenuOpen && (
+                <div className={`absolute right-0 top-full mt-1 z-30 rounded-xl border shadow-lg overflow-hidden ${light ? 'bg-white border-violet-200' : 'bg-gray-800 border-white/15'}`}>
+                  {([['7', t('pdf.period_7', '7 дней')], ['30', t('pdf.period_30', '30 дней')], ['all', t('pdf.period_all', 'Весь период')]] as const).map(([k, label]) => (
+                    <button key={k} onClick={() => doExport(k === 'all' ? null : Number(k))} data-testid={`diary-export-${k}`}
+                      className={`block w-full text-left px-4 py-2 text-sm whitespace-nowrap transition-all ${light ? 'text-slate-700 hover:bg-violet-50' : 'text-white/85 hover:bg-white/10'}`}>
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
             {/* Native date input UNDER a calendar icon — tapping opens the real
                 picker (programmatic showPicker() is unreliable in WKWebView). */}
             <label data-testid="diary-jump-date" aria-label={t('diary.pick_date', 'Обрати дату')} className={`relative mr-2 p-1.5 rounded-full cursor-pointer transition-all ${light ? 'text-slate-500 hover:bg-violet-100' : 'text-white/70 hover:bg-white/10'}`}>

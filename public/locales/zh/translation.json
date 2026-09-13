@@ -4301,6 +4301,9 @@
     "notes_heading": "记录",
     "signals_heading": "该时段的信号",
     "empty": "该时段没有数据",
-    "export": "分享"
+    "export": "分享",
+    "period_7": "近 7 天",
+    "period_30": "近 30 天",
+    "period_all": "全部"
   }
 }

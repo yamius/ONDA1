@@ -4301,6 +4301,9 @@
     "notes_heading": "Notes",
     "signals_heading": "Signals in the period",
     "empty": "No data for the period",
-    "export": "Share"
+    "export": "Share",
+    "period_7": "Last 7 days",
+    "period_30": "Last 30 days",
+    "period_all": "All time"
   }
 }

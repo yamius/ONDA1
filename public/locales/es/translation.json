@@ -4301,6 +4301,9 @@
     "notes_heading": "Notas",
     "signals_heading": "Señales del período",
     "empty": "Sin datos del período",
-    "export": "Compartir"
+    "export": "Compartir",
+    "period_7": "Últimos 7 días",
+    "period_30": "Últimos 30 días",
+    "period_all": "Todo"
   }
 }
