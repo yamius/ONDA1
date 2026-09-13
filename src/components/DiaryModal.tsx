@@ -579,10 +579,14 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     const useHtml = exportInc.voice && voiceCount > 0;   // playable HTML vs printable PDF
     try { trackEvent('timeline_export_voice', { count: voiceCount, format: useHtml ? 'html' : 'pdf' }); } catch { /* noop */ }
     const lang = (i18n.language || 'en').slice(0, 2);
+    // The site serves English at the root and the other locales under /<lang>
+    // (mirrors landing i18n.ts). An unknown lang → root, so we never link a 404.
+    const SITE_LOCALES = new Set(['es', 'ru', 'uk', 'zh']);
+    const siteUrl = `https://onda-life.com${SITE_LOCALES.has(lang) ? `/${lang}` : ''}`;
     const copy: TimelinePdfCopy = {
       brand: 'ONDA Life',
       siteLabel: 'www.onda-life.com',
-      siteUrl: `https://onda-life.com/${lang}`,
+      siteUrl,
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
       privateNote: t('pdf.private_note', 'Особисті дані · показники здоровʼя з Apple Health'),
       period: t('pdf.period', 'Период'),
