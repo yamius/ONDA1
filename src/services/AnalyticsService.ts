@@ -308,6 +308,17 @@ class AnalyticsService {
   }
 
   private readInternalFlag(): boolean {
+    // Build-baked marker for our own test builds: when VITE_INTERNAL_BUILD is
+    // set at build time, the device is internal from the FIRST JS event — no
+    // manual 7-tap needed. This is what keeps Yakiv's ~10 reinstalls/day out of
+    // the funnel: a reinstall clears localStorage, so without this the early
+    // events (home_view, session_start) would ride as external before the tap,
+    // and the user-scoped `internal` property would never flip to 'true'. App
+    // Store release builds leave VITE_INTERNAL_BUILD unset → prod stays clean
+    // and still uses the hidden 7-tap toggle. (first_open is auto-collected
+    // natively before JS runs, so it may still be unset — but GA4 filters the
+    // marker user-scoped, so the whole user is classified internal regardless.)
+    if (import.meta.env.VITE_INTERNAL_BUILD === 'true') return true;
     try {
       return localStorage.getItem(INTERNAL_KEY) === 'true';
     } catch {
