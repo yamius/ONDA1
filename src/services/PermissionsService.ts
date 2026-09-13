@@ -1,6 +1,5 @@
 import { Capacitor } from '@capacitor/core';
 import { LocalNotifications } from '@capacitor/local-notifications';
-import OndaWatch from '../plugins/ondaWatch';
 import HealthKitHeartRate from '../plugins/healthKitHeartRate';
 
 export interface PermissionStatus {
@@ -284,16 +283,19 @@ export class PermissionsService {
         return;
       }
 
-      console.log('[Permissions] Запускаем HR мониторинг...');
-      
       // ❌ УБРАНО: requestWatchAppOpen() - избыточные вибрации если пользователь сам открыл app
       // Пользователь должен сам открыть ONDA app на часах вручную
-      
-      // Запускаем мониторинг на iPhone (настраиваем канал связи)
-      await OndaWatch.startRealtime();
-      console.log('[Permissions] ✅ startRealtime() вызван → канал настроен (без вибраций)');
-      
-      // 3. Сохраняем флаг что HealthKit разрешения получены
+      //
+      // ❌ УБРАНО: OndaWatch.startRealtime() ЗДЕСЬ. Он стартовал воркаут на часах
+      // прямо во время выдачи разрешений (сразу после HealthKit-шита), и «старт»
+      // воркаута перебивал окно выдачи разрешений НА ЧАСАХ. Теперь воркаут
+      // запускает единый keep-alive авто-менеджер (setAutoManaged), уже
+      // загейченный на onda_baseline_watching и с задержкой ПОСЛЕ закрытия
+      // модалки — когда оба системных шита (Health + уведомления) уже закрыты.
+      // Здесь только фиксируем факт гранта.
+      console.log('[Permissions] HealthKit granted — watch workout deferred to the auto-manager');
+
+      // Сохраняем флаг что HealthKit разрешения получены
       localStorage.setItem('onda_healthkit_granted', 'true');
       console.log('[Permissions] ✅ HealthKit permission saved to localStorage');
     } catch (error) {

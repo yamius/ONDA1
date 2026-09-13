@@ -9068,7 +9068,15 @@ const OndaLevel1 = () => {
           onPermissionsGranted={() => setShowWatchPrompt(true)}
           onOutcome={(granted) => {
             track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' });
-            if (granted) void loadWatchBaseline();
+            if (granted) {
+              // The user has now explicitly connected + granted: mark "watching"
+              // so the keep-alive auto-manager will start the watch workout AFTER
+              // this modal (and both system sheets) close — never during the
+              // permission window. Set here (not only inside loadWatchBaseline, which
+              // needs history) so a fresh/low-history watch still gets live HR.
+              try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
+              void loadWatchBaseline();
+            }
           }}
         />
       )}
