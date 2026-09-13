@@ -15,6 +15,9 @@ export interface TimelinePdfData {
   /** entry id → tiny downscaled JPEG data URI, embedded as a light preview.
    *  Built on the JS side (canvas) so the lib stays pure. */
   photos?: Record<string, string>;
+  /** entry id → voice-note number (1-based), matching the shared audio file
+   *  `voice-NN-…` so the reader can tell which recording is which on the timeline. */
+  voiceNums?: Record<string, number>;
 }
 
 /** Minimal i18n surface the report needs (passed in so the lib stays pure). */
@@ -94,10 +97,15 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   // so voice shows as a dated marker; the recording itself stays in the app.)
   const inc = data.include ?? { text: true, photo: true, voice: true };
   const photos = data.photos ?? {};
+  const voiceNums = data.voiceNums ?? {};
   const noteBlocks = entries.map((e) => {
     const bits: string[] = [];
     if (inc.text && e.text) bits.push(esc(e.text));
-    if (inc.voice && e.hasAudio) bits.push(`<span class="tag">🎤 ${esc(c.voiceNote)}</span>`);
+    if (inc.voice && e.hasAudio) {
+      const n = voiceNums[e.id];
+      // №N ties this marker to the shared audio file voice-NN-…
+      bits.push(`<span class="tag">🎤 ${esc(c.voiceNote)}${n ? ` №${n}` : ''}</span>`);
+    }
     const img = inc.photo && photos[e.id] ? `<img class="thumb" src="${photos[e.id]}" alt="">` : '';
     if (bits.length === 0 && !img) return '';
     return `<div class="note"><span class="date">${esc(fmtDateTime(e.event_time, c.lang))}</span> ${bits.join(' ')}${img ? `<div>${img}</div>` : ''}</div>`;

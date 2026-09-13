@@ -530,11 +530,17 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     // side shares the recordings as separate playable files in the same share
     // sheet. Robust data-URI parse: handles `data:audio/mp4;codecs=…;base64,…`.
     const attachments: { name: string; data: string; mime: string }[] = [];
+    const voiceNums: Record<string, number> = {};   // entry id → №N (matches file name + PDF marker)
     if (exportInc.voice) {
-      let idx = 0;
-      for (const e of fEntries) {
-        const src = media[e.id]?.audio;
-        if (!e.hasAudio || !src) continue;
+      // Number voice notes chronologically so the file `voice-NN-…` and the PDF
+      // marker «🎤 …  №N» line up — that's how the reader maps a recording to its
+      // point on the timeline. Same asc order the PDF renders notes in.
+      const voiceEntries = fEntries
+        .filter((e) => e.hasAudio && !!media[e.id]?.audio)
+        .sort((a, b) => a.event_time.localeCompare(b.event_time));
+      let vn = 0;
+      for (const e of voiceEntries) {
+        const src = media[e.id]!.audio!;
         const bi = src.indexOf('base64,');
         if (!src.startsWith('data:') || bi < 0) continue;
         const meta = src.slice(5, bi);                 // e.g. "audio/mp4;codecs=..."
@@ -542,9 +548,11 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         const data = src.slice(bi + 'base64,'.length);
         if (!data) continue;
         const ext = mime.includes('webm') ? 'webm' : mime.includes('aac') ? 'aac' : mime.includes('mpeg') ? 'mp3' : mime.includes('wav') ? 'wav' : 'm4a';
+        vn += 1;
+        const nn = String(vn).padStart(2, '0');
         const stamp = new Date(e.event_time).toISOString().slice(0, 16).replace(/[:T]/g, '-');
-        idx += 1;
-        attachments.push({ name: `voice-${stamp}-${idx}.${ext}`, data, mime });
+        attachments.push({ name: `voice-${nn}-${stamp}.${ext}`, data, mime });
+        voiceNums[e.id] = vn;
       }
     }
     try { trackEvent('timeline_export_voice', { count: attachments.length }); } catch { /* noop */ }
@@ -568,7 +576,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
       empty: t('pdf.empty', 'Нет данных за период'),
       lang: i18n.language || 'en',
     };
-    const html = buildTimelineHtml({ samples: fSamples, entries: fEntries, include: exportInc, photos }, copy);
+    const html = buildTimelineHtml({ samples: fSamples, entries: fEntries, include: exportInc, photos, voiceNums }, copy);
     try {
       await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf`, attachments });
       try { trackEvent('timeline_export_completed', { period: periodTag }); } catch { /* noop */ }
