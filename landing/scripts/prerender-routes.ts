@@ -264,6 +264,29 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'neural-optimizer-estrogen', publishOn: '2026-10-12' },
   { slug: 'femtech-cyclical-architecture', publishOn: '2026-10-12' },
   { slug: 'endocrine-social-drive-oxytocin-testosterone', publishOn: '2026-10-12' },
+  // Cognition / attention / neuromodulator pillars — RE-TRANSLATED from
+  // current EN (old bodies stale); full link parity. Batch 2026-10-19.
+  { slug: 'acc-calibration-protocol-cognitive-control', publishOn: '2026-10-19' },
+  { slug: 'acetylcholine-lens-neuro-mechanics', publishOn: '2026-10-19' },
+  { slug: 'adaptation-hack-range-fractionation', publishOn: '2026-10-19' },
+  { slug: 'ai-biomarker-tracking-predictive', publishOn: '2026-10-19' },
+  { slug: 'anterior-cingulate-core-coherence-monitoring', publishOn: '2026-10-19' },
+  { slug: 'cacao-stem-cells', publishOn: '2026-10-19' },
+  { slug: 'cognitive-architecture-neural-throughput', publishOn: '2026-10-19' },
+  { slug: 'cognitive-architecture-nootropic-stacks', publishOn: '2026-10-19' },
+  { slug: 'digital-dementia-attentional-control', publishOn: '2026-10-19' },
+  { slug: 'dopamine-stacking-preventing-circuit-overload', publishOn: '2026-10-19' },
+  // Structural / spinal / feedback pillars — RE-TRANSLATED. Batch 2026-10-26.
+  { slug: 'hydraulic-viscosity-onda-transport-bus', publishOn: '2026-10-26' },
+  { slug: 'neural-hydraulics-csf-flow', publishOn: '2026-10-26' },
+  { slug: 'neural-signal-to-noise-cleaning-system-channel', publishOn: '2026-10-26' },
+  { slug: 'spinal-harddrive-cpg-autonomous-scripts', publishOn: '2026-10-26' },
+  { slug: 'spinal-intelligence-decentralized-control', publishOn: '2026-10-26' },
+  { slug: 'system-feedback-biometric-loop', publishOn: '2026-10-26' },
+  { slug: 'system-stability-serotonin', publishOn: '2026-10-26' },
+  { slug: 'vascular-tensegrity-microvascular-mechanics', publishOn: '2026-10-26' },
+  { slug: 'ventral-tegmental-core-motivational-salience', publishOn: '2026-10-26' },
+  { slug: 'fascial-tensegrity-protocol-myofascial-noise', publishOn: '2026-10-26' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
