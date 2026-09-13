@@ -222,6 +222,20 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'what-is-my-chronotype', publishOn: '2026-09-21' },
   { slug: 'what-your-apple-watch-records', publishOn: '2026-09-21' },
   { slug: 'zone-2-training-aerobic-base', publishOn: '2026-09-21' },
+  // HRV / breathing / autonomic pillars — RE-TRANSLATED from current EN
+  // (old bodies were stale, abbreviated snapshots missing gear/CTA sections
+  // and internal links; re-translated 2026-09-13 with full link parity).
+  { slug: 'hrv-training-nervous-system-latency', publishOn: '2026-09-28' },
+  { slug: 'fault-tolerant-human-hrv-buffer', publishOn: '2026-09-28' },
+  { slug: 'resonant-frequency-system-coherence', publishOn: '2026-09-28' },
+  { slug: 'baroreflex-01hz-shift', publishOn: '2026-09-28' },
+  { slug: 'nervous-system-ping-latency', publishOn: '2026-09-28' },
+  { slug: 'biological-latency-optimizing-system-ping', publishOn: '2026-09-28' },
+  { slug: 'interoceptive-precision-sensor-calibration', publishOn: '2026-09-28' },
+  { slug: 'breathwork-command-line-interface', publishOn: '2026-09-28' },
+  { slug: 'bohr-effect-oxygen-telemetry', publishOn: '2026-09-28' },
+  { slug: 'anti-entropy-neural-architecture', publishOn: '2026-09-28' },
+  { slug: 'rhythmic-entrainment-system-frequencies', publishOn: '2026-09-28' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
