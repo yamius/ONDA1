@@ -4290,7 +4290,7 @@
   },
   "pdf": {
     "subtitle": "Health timeline",
-    "private_note": "Personal data, generated on your device",
+    "private_note": "Personal data · health metrics from Apple Health",
     "period": "Period",
     "baseline_heading": "Baseline for the period",
     "min": "min",
@@ -4318,7 +4318,7 @@
     "period_180": "6 mo",
     "period_custom": "Range",
     "dialog_title": "Create report",
-    "make_html": "HTML report",
+    "make_html": "Make HTML",
     "voice_hint_html": "With voice, the report is saved as an HTML file: each recording plays right inside it (open in a browser). A PDF can't play sound.",
     "photo_hint": "The report is saved as a PDF — easy to print and show a doctor."
   }

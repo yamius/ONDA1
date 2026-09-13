@@ -45,8 +45,8 @@ type DiaryType = 'text' | 'voice' | 'photo';
 const DAY = 86_400_000;
 const PAD = 28;
 const FAB_CLEAR = 128;   // room below the last marker for the FAB + side clusters
-const MIN_PX = 4;      // zoom far out (months in view)
-const MAX_PX = 6000;   // zoom deep in — minutes-level within a day
+const MIN_PX = 4;       // zoom far out (months in view)
+const MAX_PX = 12000;   // zoom deep in — 5-min ticks within a day (2× deeper than before)
 
 const todayStr = () => {
   const d = new Date();
@@ -132,6 +132,17 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const overlayRef = useRef<HTMLDivElement | null>(null);
   const pxRef = useRef(pxPerDay);
   pxRef.current = pxPerDay;
+  // Visible scroll position — only used to window the deep-zoom minute ticks to
+  // the viewport (so we never render thousands of marks). rAF-throttled.
+  const [scrollY, setScrollY] = useState(0);
+  const scrollRafRef = useRef(0);
+  const onScrollTrack = useCallback(() => {
+    if (scrollRafRef.current) return;
+    scrollRafRef.current = requestAnimationFrame(() => {
+      scrollRafRef.current = 0;
+      setScrollY(scrollRef.current?.scrollTop ?? 0);
+    });
+  }, []);
   // Kept current for the pinch focal math (which runs in native listeners).
   const geomRef = useRef<{ tStart: number } | null>(null);
   const pinchRef = useRef<{ time: number; offset: number } | null>(null);
@@ -268,12 +279,36 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     el.scrollTop = contentY - p.offset;
   }, [pxPerDay]);
 
-  // Adaptive scale: day labels when zoomed out; add hour ticks when zoomed in.
+  // Adaptive scale: days when zoomed out → hours → at deep zoom, 5-min labels
+  // with a minute tick between them. The minute tier is windowed to the visible
+  // viewport (from scrollY) so we never emit thousands of marks.
   const timeLabels = useMemo(() => {
     const lang = i18n.language || undefined;
     const pxPerHour = pxPerDay / 24;
-    const out: { y: number; label: string; major: boolean }[] = [];
-    if (pxPerHour * 12 >= 40) {
+    const pxPerMin = pxPerDay / 1440;
+    const out: { y: number; label: string; major: boolean; tick?: boolean }[] = [];
+    if (5 * pxPerMin >= 34) {
+      // Deep zoom: 5-minute labels + 1-minute ticks, only across the visible span.
+      const el = scrollRef.current;
+      const viewTop = el ? el.scrollTop : scrollY;
+      const viewH = el ? el.clientHeight : 800;
+      const tAt = (y: number) => geom.tStart + ((y - PAD) / pxPerDay) * DAY;   // inverse of geom.y
+      const winEnd = geom.tStart + geom.windowDays * DAY;
+      const start = Math.max(geom.tStart, tAt(viewTop) - 60_000);
+      const end = Math.min(winEnd, tAt(viewTop + viewH) + 60_000);
+      let t = Math.floor(start / 60_000) * 60_000;
+      for (; t <= end; t += 60_000) {
+        const d = new Date(t);
+        const mins = d.getMinutes();
+        if (mins % 5 === 0) {
+          let label = '';
+          try { label = d.toLocaleTimeString(lang, { hour: '2-digit', minute: '2-digit' }); } catch { /* noop */ }
+          out.push({ y: geom.y(t), label, major: d.getHours() === 0 && mins === 0 });
+        } else {
+          out.push({ y: geom.y(t), label: '', major: false, tick: true });
+        }
+      }
+    } else if (pxPerHour * 12 >= 40) {
       const stepH = ([1, 2, 3, 6, 12] as const).find((s) => s * pxPerHour >= 40) ?? 12;
       for (let h = 0; h <= geom.windowDays * 24; h += stepH) {
         const t = geom.tStart + h * 3_600_000;
@@ -293,7 +328,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
       }
     }
     return out;
-  }, [geom, pxPerDay, i18n.language]);
+  }, [geom, pxPerDay, i18n.language, scrollY]);
 
   const visibleEntries = useMemo(() => entries.filter((e) => (
     (prefs.types.text && !!e.text) || (prefs.types.voice && !!e.hasAudio) || (prefs.types.photo && !!e.hasPhoto)
@@ -543,10 +578,13 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     const voiceCount = Object.keys(audioMap).length;
     const useHtml = exportInc.voice && voiceCount > 0;   // playable HTML vs printable PDF
     try { trackEvent('timeline_export_voice', { count: voiceCount, format: useHtml ? 'html' : 'pdf' }); } catch { /* noop */ }
+    const lang = (i18n.language || 'en').slice(0, 2);
     const copy: TimelinePdfCopy = {
       brand: 'ONDA Life',
+      siteLabel: 'www.onda-life.com',
+      siteUrl: `https://onda-life.com/${lang}`,
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
-      privateNote: t('pdf.private_note', 'Личные данные, сформировано на устройстве'),
+      privateNote: t('pdf.private_note', 'Особисті дані · показники здоровʼя з Apple Health'),
       period: t('pdf.period', 'Период'),
       baselineHeading: t('pdf.baseline_heading', 'Базлайн за период'),
       metric: { rhr: t('anomaly.metric_rhr', 'пульс покоя'), hrv: t('anomaly.metric_hrv', 'вариабельность'), rr: t('anomaly.metric_rr', 'дыхание') },
@@ -607,7 +645,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         </div>
 
         {/* Timeline scroll area */}
-        <div ref={scrollRef} className="flex-1 overflow-y-auto no-scrollbar relative" style={{ overscrollBehavior: 'contain', touchAction: 'pan-y', WebkitOverflowScrolling: 'touch' as any }}>
+        <div ref={scrollRef} onScroll={onScrollTrack} className="flex-1 overflow-y-auto no-scrollbar relative" style={{ overscrollBehavior: 'contain', touchAction: 'pan-y', WebkitOverflowScrolling: 'touch' as any }}>
           {visibleEntries.length === 0 && baselinePts.length === 0 ? (
             /* Empty (first run): short rails on top, hint sitting just above the
                FAB — no overlap with the day labels. */
@@ -628,7 +666,10 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
 
             {/* time scale — centred chips between the two rails; day labels bold,
                 hour ticks lighter/smaller. */}
-            {timeLabels.map((d, i) => (
+            {timeLabels.map((d, i) => d.tick ? (
+              // minute tick — a short dash between the 5-min labels
+              <div key={i} className="absolute" style={{ top: d.y, left: '50%', transform: 'translate(-50%,-50%)', width: '7px', height: '1px', background: light ? '#cbd5e1' : 'rgba(255,255,255,0.22)' }} />
+            ) : (
               <div key={i} className={`absolute px-1 rounded whitespace-nowrap ${light ? 'bg-white' : 'bg-gray-900'} ${d.major ? `text-xs font-semibold ${light ? 'text-slate-600' : 'text-white/75'}` : `text-[10px] ${light ? 'text-slate-400' : 'text-white/35'}`}`} style={{ top: d.y, left: '50%', transform: 'translate(-50%,-50%)' }}>{d.label}</div>
             ))}
 
@@ -868,7 +909,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all disabled:opacity-60 ${light ? 'bg-violet-500 text-white hover:bg-violet-600' : 'bg-indigo-500 text-white hover:bg-indigo-600'}`}>
                 {exporting
                   ? <><div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />{t('pdf.making', 'Готовим…')}</>
-                  : <><Share2 className="w-4 h-4" />{exportInc.voice ? t('pdf.make_html', 'HTML-звіт') : t('pdf.make_title', 'Зробити PDF')}</>}
+                  : <><Share2 className="w-4 h-4" />{exportInc.voice ? t('pdf.make_html', 'Зробити HTML') : t('pdf.make_title', 'Зробити PDF')}</>}
               </button>
             </div>
           </div>

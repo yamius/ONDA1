@@ -4290,7 +4290,7 @@
   },
   "pdf": {
     "subtitle": "Cronología de salud",
-    "private_note": "Datos personales, generados en tu dispositivo",
+    "private_note": "Datos personales · métricas de salud de Apple Health",
     "period": "Período",
     "baseline_heading": "Baseline del período",
     "min": "mín",
@@ -4318,7 +4318,7 @@
     "period_180": "6 mes",
     "period_custom": "Rango",
     "dialog_title": "Crear informe",
-    "make_html": "Informe HTML",
+    "make_html": "Crear HTML",
     "voice_hint_html": "Con voz, el informe se guarda como archivo HTML: cada grabación se reproduce dentro (ábrelo en un navegador). Un PDF no reproduce sonido.",
     "photo_hint": "El informe se guarda como PDF: fácil de imprimir y mostrar al médico."
   }

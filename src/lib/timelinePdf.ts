@@ -27,9 +27,11 @@ export interface TimelinePdfData {
 
 /** Minimal i18n surface the report needs (passed in so the lib stays pure). */
 export interface TimelinePdfCopy {
-  brand: string;            // "ONDA"
+  brand: string;            // "ONDA Life"
+  siteLabel?: string;       // "www.onda-life.com"
+  siteUrl?: string;         // "https://onda-life.com/uk"
   subtitle: string;         // "Таймлайн здоровья"
-  privateNote: string;      // "Личные данные, сформировано на устройстве"
+  privateNote: string;      // "Особисті дані · показники здоров'я з Apple Health"
   period: string;           // "Период"
   baselineHeading: string;
   metric: { rhr: string; hrv: string; rr: string };
@@ -142,6 +144,7 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   h1 { font-size: 20px; margin: 0; color: #4338ca; letter-spacing: .5px; }
   h2 { font-size: 13px; margin: 22px 0 8px; color: #4338ca; border-bottom: 1px solid #e0e7ff; padding-bottom: 4px; }
   .sub { color: #64748b; font-size: 11px; margin-top: 2px; }
+  .sub .site { color: #6366f1; text-decoration: none; }
   .head { border-bottom: 2px solid #6366f1; padding-bottom: 10px; margin-bottom: 6px; }
   table { width: 100%; border-collapse: collapse; margin-top: 4px; }
   th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid #eef2f7; font-size: 11px; }
@@ -160,6 +163,7 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   <div class="wrap">
   <div class="head">
     <h1>${esc(c.brand)}</h1>
+    ${c.siteLabel ? `<div class="sub"><a class="site" href="${esc(c.siteUrl ?? '')}">${esc(c.siteLabel)}</a></div>` : ''}
     <div class="sub">${esc(c.subtitle)} · ${esc(c.period)}: ${esc(period)}</div>
     <div class="sub">${esc(c.privateNote)}</div>
   </div>

@@ -4290,7 +4290,7 @@
   },
   "pdf": {
     "subtitle": "健康时间线",
-    "private_note": "个人数据，在你的设备上生成",
+    "private_note": "个人数据 · 健康指标来自 Apple 健康",
     "period": "时段",
     "baseline_heading": "该时段的基线",
     "min": "最低",
@@ -4318,7 +4318,7 @@
     "period_180": "6 个月",
     "period_custom": "自定",
     "dialog_title": "创建报告",
-    "make_html": "HTML 报告",
+    "make_html": "生成 HTML",
     "voice_hint_html": "含语音时，报告保存为 HTML 文件：每段录音可直接在其中播放（用浏览器打开）。PDF 无法播放声音。",
     "photo_hint": "报告保存为 PDF——便于打印和给医生查看。"
   }
