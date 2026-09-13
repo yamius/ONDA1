@@ -250,6 +250,20 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'idle-state-alpha-rhythms', publishOn: '2026-10-05' },
   { slug: 'neural-bridge-alpha-flow-gateway', publishOn: '2026-10-05' },
   { slug: 'physiological-concentration-flow-state-hardwired', publishOn: '2026-10-05' },
+  // Metabolism / mitochondria / longevity / hormones pillars — RE-TRANSLATED
+  // from current EN (old bodies stale); full link parity. Batch 2026-10-12.
+  { slug: 'glp1-biology-muscle-preservation', publishOn: '2026-10-12' },
+  { slug: 'metabolic-flexibility-dual-fuel-system', publishOn: '2026-10-12' },
+  { slug: 'metabolic-redundancy-hybrid-power-architecture', publishOn: '2026-10-12' },
+  { slug: 'mitochondrial-biogenesis-cellular-power-grid', publishOn: '2026-10-12' },
+  { slug: 'mitochondrial-dna-red-light', publishOn: '2026-10-12' },
+  { slug: 'longevity-hardware-cellular-cleanup', publishOn: '2026-10-12' },
+  { slug: 'senolytic-high-dosing-longevity', publishOn: '2026-10-12' },
+  { slug: 'energy-governor-tsh', publishOn: '2026-10-12' },
+  { slug: 'energy-sensor-leptin', publishOn: '2026-10-12' },
+  { slug: 'neural-optimizer-estrogen', publishOn: '2026-10-12' },
+  { slug: 'femtech-cyclical-architecture', publishOn: '2026-10-12' },
+  { slug: 'endocrine-social-drive-oxytocin-testosterone', publishOn: '2026-10-12' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
