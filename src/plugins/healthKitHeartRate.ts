@@ -133,7 +133,7 @@ export interface HealthKitHeartRatePlugin {
      *  `data:` prefix). Best-effort: if the native side can't embed, it shares
      *  the plain report. `attached` in the result = how many were embedded. */
     attachments?: { name: string; data: string; mime?: string }[];
-  }): Promise<{ ok: boolean; path?: string; attached?: number }>;
+  }): Promise<{ ok: boolean; path?: string; attached?: number; sharedFiles?: number }>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(

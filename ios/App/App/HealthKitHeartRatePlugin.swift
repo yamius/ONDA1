@@ -1052,9 +1052,11 @@ extension HealthKitHeartRatePlugin: WKNavigationDelegate {
         UIGraphicsEndPDFContext()
 
         // Best-effort: embed the voice recordings as extractable PDF attachments
-        // so the report is ONE shareable file. If embedding fails or produces a
-        // PDF that no longer opens, fall back to the plain report (never ship a
-        // corrupt file). `attached` reports how many actually made it in.
+        // so the report is ONE shareable file. If embedding doesn't validate (the
+        // combined PDF must still open with the same page count), we NEVER ship a
+        // corrupt file — instead we share the recordings as SEPARATE files in the
+        // same share sheet, so the voice always reaches the user. `attached` = how
+        // many were embedded into the single PDF; `sharedFiles` = total items shared.
         let base = pdfData as Data
         let attachments = pdfAttachments
         var finalData = base
@@ -1075,8 +1077,28 @@ extension HealthKitHeartRatePlugin: WKNavigationDelegate {
             return
         }
 
+        // Collect the items to share: the PDF, plus — only if embedding did NOT
+        // succeed — each recording written to its own temp file.
+        var items: [Any] = [url]
+        if attached == 0 && !attachments.isEmpty {
+            let dir = FileManager.default.temporaryDirectory
+            var used = Set<String>()
+            for a in attachments {
+                var name = a.name.isEmpty ? "voice.m4a" : a.name
+                if used.contains(name) {   // keep the extension, prefix a counter
+                    var i = 1
+                    var candidate = "\(i)-\(name)"
+                    while used.contains(candidate) { i += 1; candidate = "\(i)-\(name)" }
+                    name = candidate
+                }
+                used.insert(name)
+                let aURL = dir.appendingPathComponent(name)
+                if (try? a.data.write(to: aURL)) != nil { items.append(aURL) }
+            }
+        }
+
         if let vc = self.bridge?.viewController {
-            let av = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+            let av = UIActivityViewController(activityItems: items, applicationActivities: nil)
             if let pop = av.popoverPresentationController {   // iPad
                 pop.sourceView = vc.view
                 pop.sourceRect = CGRect(x: vc.view.bounds.midX, y: vc.view.bounds.midY, width: 0, height: 0)
@@ -1084,7 +1106,7 @@ extension HealthKitHeartRatePlugin: WKNavigationDelegate {
             }
             vc.present(av, animated: true, completion: nil)
         }
-        call?.resolve(["ok": true, "path": url.path, "attached": attached])
+        call?.resolve(["ok": true, "path": url.path, "attached": attached, "sharedFiles": items.count])
         pdfWebView = nil; pdfCall = nil; pdfAttachments = []
     }
 

@@ -4310,11 +4310,12 @@
     "inc_text": "Texto de las notas",
     "inc_photo": "Fotos (vistas ligeras)",
     "inc_voice": "Notas de voz",
-    "voice_hint": "Las notas de voz aparecen en el PDF con su fecha; la grabación permanece en la app (un PDF no reproduce sonido).",
+    "voice_hint": "Las notas de voz se comparten con el informe: incrustadas en el PDF o como archivos de audio aparte en la misma hoja de compartir.",
     "making": "Preparando…",
     "period_all_short": "Todo",
     "period_90": "3 mes",
     "period_180": "6 mes",
-    "period_custom": "Rango"
+    "period_custom": "Rango",
+    "dialog_title": "Crear informe"
   }
 }

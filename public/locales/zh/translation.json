@@ -4310,11 +4310,12 @@
     "inc_text": "笔记文字",
     "inc_photo": "照片（轻量预览）",
     "inc_voice": "语音笔记",
-    "voice_hint": "语音笔记在 PDF 中以带日期的标记显示——录音保留在应用内（PDF 无法播放声音）。",
+    "voice_hint": "语音笔记会随报告一起分享——嵌入 PDF，或在同一个分享面板中作为单独的音频文件。",
     "making": "生成中…",
     "period_all_short": "全部",
     "period_90": "3 个月",
     "period_180": "6 个月",
-    "period_custom": "自定"
+    "period_custom": "自定",
+    "dialog_title": "创建报告"
   }
 }

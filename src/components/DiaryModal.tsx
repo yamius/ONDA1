@@ -786,7 +786,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
           <div className="absolute inset-0 z-40 bg-black/70 flex items-center justify-center p-4" onClick={() => !exporting && setExportMenuOpen(false)} data-testid="diary-export-dialog">
             <div onClick={(e) => e.stopPropagation()} className={`w-full max-w-sm rounded-2xl border shadow-2xl p-5 ${light ? 'bg-white text-slate-800 border-violet-200' : 'bg-gray-900 text-white border-indigo-500/30'}`}>
               <div className="flex items-center gap-2 mb-4">
-                <h3 className="text-lg font-bold flex-1">{t('pdf.make_title', 'Сделать PDF')}</h3>
+                <h3 className="text-lg font-bold flex-1">{t('pdf.dialog_title', 'Создать отчёт')}</h3>
                 <button onClick={() => !exporting && setExportMenuOpen(false)} data-testid="diary-export-close" aria-label={t('common.close', 'Закрыть')} className={`p-1 rounded-full transition-all ${light ? 'text-slate-400 hover:text-slate-700 hover:bg-violet-100' : 'text-gray-400 hover:text-white hover:bg-white/10'}`}>
                   <X className="w-5 h-5" />
                 </button>

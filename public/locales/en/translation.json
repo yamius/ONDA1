@@ -4310,11 +4310,12 @@
     "inc_text": "Note text",
     "inc_photo": "Photos (light previews)",
     "inc_voice": "Voice notes",
-    "voice_hint": "Voice notes appear in the PDF as a dated marker — the recording stays in the app (a PDF can't play sound).",
+    "voice_hint": "Voice notes are shared with the report — embedded in the PDF, or as separate audio files in the same share sheet.",
     "making": "Preparing…",
     "period_all_short": "All",
     "period_90": "3 mo",
     "period_180": "6 mo",
-    "period_custom": "Range"
+    "period_custom": "Range",
+    "dialog_title": "Create report"
   }
 }
