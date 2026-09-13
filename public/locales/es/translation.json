@@ -4312,6 +4312,9 @@
     "inc_voice": "Notas de voz",
     "voice_hint": "Las notas de voz aparecen en el PDF con su fecha; la grabación permanece en la app (un PDF no reproduce sonido).",
     "making": "Preparando…",
-    "period_all_short": "Todo"
+    "period_all_short": "Todo",
+    "period_90": "3 mes",
+    "period_180": "6 mes",
+    "period_custom": "Rango"
   }
 }

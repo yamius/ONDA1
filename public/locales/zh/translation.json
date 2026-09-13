@@ -4312,6 +4312,9 @@
     "inc_voice": "语音笔记",
     "voice_hint": "语音笔记在 PDF 中以带日期的标记显示——录音保留在应用内（PDF 无法播放声音）。",
     "making": "生成中…",
-    "period_all_short": "全部"
+    "period_all_short": "全部",
+    "period_90": "3 个月",
+    "period_180": "6 个月",
+    "period_custom": "自定"
   }
 }

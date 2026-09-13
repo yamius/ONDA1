@@ -102,7 +102,9 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const [fabOpen, setFabOpen] = useState(false);
   const [viewPhoto, setViewPhoto] = useState<string | null>(null); // fullscreen photo
   const [exportMenuOpen, setExportMenuOpen] = useState(false);      // PDF export dialog
-  const [exportPeriod, setExportPeriod] = useState<'7' | '30' | 'all'>('7');
+  const [exportPeriod, setExportPeriod] = useState<'7' | '30' | '90' | '180' | 'all' | 'custom'>('7');
+  const [customFrom, setCustomFrom] = useState<string>('');
+  const [customTo, setCustomTo] = useState<string>(todayStr());
   const [exportInc, setExportInc] = useState({ text: true, photo: true, voice: true });
   const [exporting, setExporting] = useState(false);
 
@@ -498,19 +500,46 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   // playable inside a printed PDF, so it appears as a dated marker.
   const doExport = async () => {
     if (Capacitor.getPlatform() !== 'ios' || exporting) return;
-    const days = exportPeriod === 'all' ? null : Number(exportPeriod);
-    const periodTag = days ?? 'all';
-    try { trackEvent('timeline_export_tapped', { period: periodTag, inc_text: exportInc.text, inc_photo: exportInc.photo, inc_voice: exportInc.voice }); } catch { /* noop */ }
+    // Resolve the [lo, hi] window from the chosen period.
+    const DAY = 86_400_000;
+    let lo = 0;
+    let hi = Number.POSITIVE_INFINITY;
+    if (exportPeriod === 'custom') {
+      if (!customFrom || !customTo) return;
+      lo = new Date(`${customFrom}T00:00:00`).getTime();
+      hi = new Date(`${customTo}T23:59:59`).getTime();
+      if (!(lo <= hi)) return;
+    } else if (exportPeriod !== 'all') {
+      lo = Date.now() - Number(exportPeriod) * DAY;
+    }
+    try { trackEvent('timeline_export_tapped', { period: exportPeriod, inc_text: exportInc.text, inc_photo: exportInc.photo, inc_voice: exportInc.voice }); } catch { /* noop */ }
     setExporting(true);
-    const cutoff = days ? Date.now() - days * 86_400_000 : 0;
-    const fSamples = samples.filter((s) => s.time >= cutoff);
-    const fEntries = entries.filter((e) => new Date(e.event_time).getTime() >= cutoff);
+    const inRange = (t: number) => t >= lo && t <= hi;
+    const fSamples = samples.filter((s) => inRange(s.time));
+    const fEntries = entries.filter((e) => inRange(new Date(e.event_time).getTime()));
     // Build light photo thumbnails only for included entries in range.
     const photos: Record<string, string> = {};
     if (exportInc.photo) {
       for (const e of fEntries) {
         const src = media[e.id]?.photo;
         if (e.hasPhoto && src) { try { photos[e.id] = await makePhotoThumb(src); } catch { /* skip */ } }
+      }
+    }
+    // Collect voice recordings as PDF file attachments (native PDFKit path). A
+    // printed PDF can't play audio inline, but it CAN carry the recordings as
+    // extractable attachments → one shareable file. Best-effort: skipped if the
+    // native side can't embed (it then shares the plain report).
+    const attachments: { name: string; data: string; mime: string }[] = [];
+    if (exportInc.voice) {
+      for (const e of fEntries) {
+        const src = media[e.id]?.audio;
+        if (!e.hasAudio || !src) continue;
+        const m = /^data:([^;]+);base64,(.*)$/.exec(src);
+        if (!m) continue;
+        const mime = m[1] || 'audio/mp4';
+        const ext = mime.includes('webm') ? 'webm' : mime.includes('aac') ? 'aac' : mime.includes('mpeg') ? 'mp3' : 'm4a';
+        const stamp = new Date(e.event_time).toISOString().slice(0, 16).replace(/[:T]/g, '-');
+        attachments.push({ name: `voice-${stamp}.${ext}`, data: m[2], mime });
       }
     }
     const copy: TimelinePdfCopy = {
@@ -535,7 +564,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     };
     const html = buildTimelineHtml({ samples: fSamples, entries: fEntries, include: exportInc, photos }, copy);
     try {
-      await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf` });
+      await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf`, attachments });
       try { trackEvent('timeline_export_completed', { period: periodTag }); } catch { /* noop */ }
       setExportMenuOpen(false);
     } catch (e) { console.warn('[pdf] export failed', e); }
@@ -765,16 +794,33 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
 
               {/* Period */}
               <div className={`text-xs font-semibold mb-2 ${light ? 'text-slate-500' : 'text-white/60'}`}>{t('pdf.period', 'Период')}</div>
-              <div className="flex gap-2 mb-5">
-                {([['7', t('pdf.period_7', '7 дней')], ['30', t('pdf.period_30', '30 дней')], ['all', t('pdf.period_all_short', 'Весь')]] as const).map(([k, label]) => (
+              <div className="grid grid-cols-3 gap-2 mb-3">
+                {([
+                  ['7', t('pdf.period_7', '7 дней')],
+                  ['30', t('pdf.period_30', '30 дней')],
+                  ['90', t('pdf.period_90', '3 мес')],
+                  ['180', t('pdf.period_180', '6 мес')],
+                  ['all', t('pdf.period_all_short', 'Весь')],
+                  ['custom', t('pdf.period_custom', 'Период')],
+                ] as const).map(([k, label]) => (
                   <button key={k} onClick={() => setExportPeriod(k)} data-testid={`diary-export-period-${k}`}
-                    className={`flex-1 py-2 rounded-xl text-sm font-medium border transition-all ${exportPeriod === k
+                    className={`py-2 rounded-xl text-sm font-medium border transition-all ${exportPeriod === k
                       ? (light ? 'bg-violet-500 text-white border-violet-500' : 'bg-indigo-500 text-white border-indigo-500')
                       : (light ? 'bg-white text-slate-600 border-violet-200 hover:bg-violet-50' : 'bg-gray-800 text-white/75 border-white/15 hover:bg-white/10')}`}>
                     {label}
                   </button>
                 ))}
               </div>
+              {exportPeriod === 'custom' && (
+                <div className="flex items-center gap-2 mb-5">
+                  <input type="date" value={customFrom} max={customTo || todayStr()} onChange={(e) => setCustomFrom(e.target.value)} data-testid="diary-export-from"
+                    className={`flex-1 min-w-0 py-2 px-2 rounded-lg text-sm border ${light ? 'bg-white text-slate-700 border-violet-200' : 'bg-gray-800 text-white/85 border-white/15'}`} />
+                  <span className={light ? 'text-slate-400' : 'text-white/40'}>—</span>
+                  <input type="date" value={customTo} min={customFrom || undefined} max={todayStr()} onChange={(e) => setCustomTo(e.target.value)} data-testid="diary-export-to"
+                    className={`flex-1 min-w-0 py-2 px-2 rounded-lg text-sm border ${light ? 'bg-white text-slate-700 border-violet-200' : 'bg-gray-800 text-white/85 border-white/15'}`} />
+                </div>
+              )}
+              {exportPeriod !== 'custom' && <div className="mb-5" />}
 
               {/* What to include */}
               <div className={`text-xs font-semibold mb-2 ${light ? 'text-slate-500' : 'text-white/60'}`}>{t('pdf.include', 'Что включить')}</div>
@@ -805,7 +851,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 {t('pdf.voice_hint', 'Голосовые в PDF отмечаются датой — сама запись остаётся в приложении (PDF не проигрывает звук).')}
               </p>
 
-              <button onClick={doExport} disabled={exporting} data-testid="diary-export-go"
+              <button onClick={doExport} disabled={exporting || (exportPeriod === 'custom' && (!customFrom || !customTo))} data-testid="diary-export-go"
                 className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all disabled:opacity-60 ${light ? 'bg-violet-500 text-white hover:bg-violet-600' : 'bg-indigo-500 text-white hover:bg-indigo-600'}`}>
                 {exporting
                   ? <><div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />{t('pdf.making', 'Готовим…')}</>

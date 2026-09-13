@@ -4,6 +4,7 @@ import HealthKit
 import UserNotifications
 import WebKit
 import UIKit
+import PDFKit
 
 @objc(HealthKitHeartRatePlugin)
 public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
@@ -34,6 +35,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     private var pdfWebView: WKWebView?
     private var pdfCall: CAPPluginCall?
     private var pdfFileName: String = "ONDA.pdf"
+    private var pdfAttachments: [(name: String, data: Data)] = []   // files to embed in the PDF
     
     @objc func isAvailable(_ call: CAPPluginCall) {
         let available = HKHealthStore.isHealthDataAvailable()
@@ -816,12 +818,23 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     @objc func exportPdf(_ call: CAPPluginCall) {
         guard let html = call.getString("html") else { call.reject("Missing html"); return }
         let fileName = call.getString("fileName") ?? "ONDA-timeline.pdf"
+        // Optional files (e.g. voice recordings) to embed as PDF attachments.
+        var attachments: [(name: String, data: Data)] = []
+        if let arr = call.getArray("attachments") as? [[String: Any]] {
+            for item in arr {
+                guard let name = item["name"] as? String,
+                      let b64 = item["data"] as? String,
+                      let data = Data(base64Encoded: b64), !data.isEmpty else { continue }
+                attachments.append((name: name, data: data))
+            }
+        }
         DispatchQueue.main.async {
             let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 595, height: 842))
             webView.navigationDelegate = self
             self.pdfWebView = webView
             self.pdfCall = call
             self.pdfFileName = fileName
+            self.pdfAttachments = attachments
             webView.loadHTMLString(html, baseURL: nil)
         }
     }
@@ -1038,12 +1051,27 @@ extension HealthKitHeartRatePlugin: WKNavigationDelegate {
         }
         UIGraphicsEndPDFContext()
 
+        // Best-effort: embed the voice recordings as extractable PDF attachments
+        // so the report is ONE shareable file. If embedding fails or produces a
+        // PDF that no longer opens, fall back to the plain report (never ship a
+        // corrupt file). `attached` reports how many actually made it in.
+        let base = pdfData as Data
+        let attachments = pdfAttachments
+        var finalData = base
+        var attached = 0
+        if !attachments.isEmpty,
+           let combined = embedAttachments(into: base, files: attachments),
+           let doc = PDFDocument(data: combined), doc.pageCount == pages {
+            finalData = combined
+            attached = attachments.count
+        }
+
         let url = FileManager.default.temporaryDirectory.appendingPathComponent(pdfFileName)
         do {
-            try pdfData.write(to: url)
+            try finalData.write(to: url)
         } catch {
             call?.reject("PDF write failed: \(error.localizedDescription)")
-            pdfWebView = nil; pdfCall = nil
+            pdfWebView = nil; pdfCall = nil; pdfAttachments = []
             return
         }
 
@@ -1056,7 +1084,165 @@ extension HealthKitHeartRatePlugin: WKNavigationDelegate {
             }
             vc.present(av, animated: true, completion: nil)
         }
-        call?.resolve(["ok": true, "path": url.path])
-        pdfWebView = nil; pdfCall = nil
+        call?.resolve(["ok": true, "path": url.path, "attached": attached])
+        pdfWebView = nil; pdfCall = nil; pdfAttachments = []
+    }
+
+    // MARK: PDF attachment embedding (incremental update)
+    //
+    // iOS has NO public API to add embedded-file attachments to a PDF (neither
+    // Core Graphics PDF nor PDFKit expose the /EmbeddedFiles name tree). So we
+    // append a standards-compliant INCREMENTAL UPDATE by hand: new objects for
+    // each file stream + Filespec, an EmbeddedFiles name tree, and a rewritten
+    // Catalog that points /Names at it (plus /AF for PDF/A-3 readers). The base
+    // bytes are never touched — only appended to — and the caller re-opens the
+    // result with PDFDocument to prove it's valid before sharing, falling back to
+    // the untouched base PDF otherwise. Returns nil if the base can't be parsed.
+    private func embedAttachments(into base: Data, files: [(name: String, data: Data)]) -> Data? {
+        let bytes = [UInt8](base)
+        func asciiIndexOfLast(_ needle: String, in hay: [UInt8]) -> Int? {
+            let n = [UInt8](needle.utf8)
+            guard !n.isEmpty, hay.count >= n.count else { return nil }
+            var i = hay.count - n.count
+            while i >= 0 {
+                var ok = true
+                for j in 0..<n.count where hay[i + j] != n[j] { ok = false; break }
+                if ok { return i }
+                i -= 1
+            }
+            return nil
+        }
+        // 1) Locate the previous startxref offset and the trailer's /Root + /Size.
+        guard let sxIdx = asciiIndexOfLast("startxref", in: bytes) else { return nil }
+        let tail = String(decoding: bytes[sxIdx...], as: UTF8.self)
+        let tailNums = tail.components(separatedBy: CharacterSet(charactersIn: " \r\n\t"))
+            .compactMap { Int($0) }
+        guard let prevStartxref = tailNums.first else { return nil }
+
+        guard let trIdx = asciiIndexOfLast("trailer", in: bytes) else { return nil }
+        let trailerStr = String(decoding: bytes[trIdx...], as: UTF8.self)
+        // /Root n 0 R
+        guard let rootRange = trailerStr.range(of: #"/Root\s+(\d+)\s+\d+\s+R"#, options: .regularExpression) else { return nil }
+        let rootMatch = String(trailerStr[rootRange])
+        let rootObjNum = rootMatch.components(separatedBy: CharacterSet(charactersIn: " \t\r\n"))
+            .compactMap { Int($0) }.first
+        guard let catalogNum = rootObjNum else { return nil }
+        // /Size n
+        let sizeVal: Int = {
+            if let r = trailerStr.range(of: #"/Size\s+(\d+)"#, options: .regularExpression) {
+                return String(trailerStr[r]).components(separatedBy: CharacterSet(charactersIn: " \t\r\n"))
+                    .compactMap { Int($0) }.first ?? 0
+            }
+            return 0
+        }()
+        guard sizeVal > 0 else { return nil }
+        // Optional /ID [<..><..>] — reuse verbatim if present.
+        let idString: String? = {
+            if let r = trailerStr.range(of: #"/ID\s*\[[^\]]*\]"#, options: .regularExpression) {
+                return String(trailerStr[r])
+            }
+            return nil
+        }()
+
+        // 2) Read the existing Catalog object body so we can re-emit it with /Names.
+        guard let catBody = objectDictBody(objNum: catalogNum, in: bytes) else { return nil }
+        var catInner = catBody
+        if !catInner.contains("/Type") { catInner = "/Type /Catalog " + catInner }
+
+        // 3) Assign new object numbers (the catalog reuses its own number).
+        var nextObj = sizeVal
+        var fileStreamNums: [Int] = []
+        var filespecNums: [Int] = []
+        for _ in files { fileStreamNums.append(nextObj); nextObj += 1 }
+        for _ in files { filespecNums.append(nextObj); nextObj += 1 }
+        let nameTreeNum = nextObj; nextObj += 1
+        let newSize = nextObj   // highest new object number + 1
+        let order = files.indices.sorted { files[$0].name < files[$1].name }
+
+        // 4) Serialize the incremental update (a leading newline separates it from
+        //    the base's trailing %%EOF; its length is counted in every offset).
+        var appended = Data()
+        appended.append(Data("\n".utf8))          // separator after base's %%EOF
+        var offsets: [Int: Int] = [:]
+        let baseLen = base.count
+        func pdfString(_ s: String) -> String {
+            var out = "("
+            for ch in s.unicodeScalars {
+                if ch == "(" || ch == ")" || ch == "\\" { out.append("\\") }
+                out.unicodeScalars.append(ch)
+            }
+            out.append(")")
+            return out
+        }
+        func emit(_ objNum: Int, _ text: String) {
+            offsets[objNum] = baseLen + appended.count
+            appended.append(Data(text.utf8))
+        }
+        func emitStream(_ objNum: Int, header: String, payload: Data) {
+            offsets[objNum] = baseLen + appended.count
+            appended.append(Data("\(objNum) 0 obj\n\(header)\nstream\n".utf8))
+            appended.append(payload)
+            appended.append(Data("\nendstream\nendobj\n".utf8))
+        }
+        for (i, file) in files.enumerated() {
+            emitStream(fileStreamNums[i], header: "<< /Type /EmbeddedFile /Length \(file.data.count) >>", payload: file.data)
+        }
+        for (i, file) in files.enumerated() {
+            let nm = pdfString(file.name)
+            emit(filespecNums[i], "\(filespecNums[i]) 0 obj\n<< /Type /Filespec /F \(nm) /UF \(nm) /EF << /F \(fileStreamNums[i]) 0 R /UF \(fileStreamNums[i]) 0 R >> /AFRelationship /Supplement >>\nendobj\n")
+        }
+        var namesArr = ""
+        for idx in order { namesArr += "\(pdfString(files[idx].name)) \(filespecNums[idx]) 0 R " }
+        emit(nameTreeNum, "\(nameTreeNum) 0 obj\n<< /Names [ \(namesArr)] >>\nendobj\n")
+        var afRefs = ""
+        for idx in order { afRefs += "\(filespecNums[idx]) 0 R " }
+        emit(catalogNum, "\(catalogNum) 0 obj\n<< \(catInner) /Names << /EmbeddedFiles \(nameTreeNum) 0 R >> /AF [ \(afRefs)] >>\nendobj\n")
+
+        func entry(_ off: Int) -> String { String(format: "%010d 00000 n \n", off) }
+        var xref = "xref\n\(catalogNum) 1\n" + entry(offsets[catalogNum] ?? 0)
+        xref += "\(sizeVal) \(newSize - sizeVal)\n"
+        for n in sizeVal..<newSize { xref += entry(offsets[n] ?? 0) }
+        let xrefOffset = baseLen + appended.count
+        var trailer = "trailer\n<< /Size \(newSize) /Root \(catalogNum) 0 R /Prev \(prevStartxref)"
+        if let id = idString { trailer += " " + id }
+        trailer += " >>\nstartxref\n\(xrefOffset)\n%%EOF\n"
+
+        var out = base
+        out.append(appended)
+        out.append(Data(xref.utf8))
+        out.append(Data(trailer.utf8))
+        return out
+    }
+
+    /// Extract the inner text of `objNum 0 obj << ... >> endobj` (the dictionary
+    /// body without the enclosing << >>). Handles nested << >> by depth-matching.
+    private func objectDictBody(objNum: Int, in bytes: [UInt8]) -> String? {
+        let marker = [UInt8]("\(objNum) 0 obj".utf8)
+        func isDigit(_ b: UInt8) -> Bool { b >= 0x30 && b <= 0x39 }
+        // Find the marker (there may be several "N 0 obj"; take the last, which an
+        // incremental base won't have but is safe for a single-rev CG PDF). Require
+        // a non-digit before it so "1 0 obj" doesn't match inside "11 0 obj".
+        var start: Int? = nil
+        var i = 0
+        while i <= bytes.count - marker.count {
+            var ok = true
+            for j in 0..<marker.count where bytes[i + j] != marker[j] { ok = false; break }
+            if ok && (i == 0 || !isDigit(bytes[i - 1])) { start = i + marker.count }
+            i += 1
+        }
+        guard var p = start else { return nil }
+        // Find the first << after the marker.
+        while p < bytes.count - 1, !(bytes[p] == 0x3C && bytes[p + 1] == 0x3C) { p += 1 }
+        guard p < bytes.count - 1 else { return nil }
+        let dictStart = p + 2
+        var depth = 1
+        p = dictStart
+        while p < bytes.count - 1 {
+            if bytes[p] == 0x3C && bytes[p + 1] == 0x3C { depth += 1; p += 2; continue }
+            if bytes[p] == 0x3E && bytes[p + 1] == 0x3E { depth -= 1; if depth == 0 { break }; p += 2; continue }
+            p += 1
+        }
+        guard depth == 0, p >= dictStart else { return nil }
+        return String(decoding: bytes[dictStart..<p], as: UTF8.self)
     }
 }

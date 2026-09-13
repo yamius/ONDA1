@@ -125,7 +125,15 @@ export interface HealthKitHeartRatePlugin {
   /** Register HealthKit background delivery so a night deviation posts a local notification. */
   startAnomalyMonitoring(): Promise<{ started: boolean }>;
   /** Render an HTML report to a PDF ON-DEVICE and open the native share sheet. */
-  exportPdf(options: { html: string; fileName?: string }): Promise<{ ok: boolean; path?: string }>;
+  exportPdf(options: {
+    html: string;
+    fileName?: string;
+    /** Optional files to embed in the PDF as extractable attachments (e.g. voice
+     *  recordings) so the report is one shareable file. `data` is base64 (no
+     *  `data:` prefix). Best-effort: if the native side can't embed, it shares
+     *  the plain report. `attached` in the result = how many were embedded. */
+    attachments?: { name: string; data: string; mime?: string }[];
+  }): Promise<{ ok: boolean; path?: string; attached?: number }>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(
