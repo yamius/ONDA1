@@ -4228,7 +4228,8 @@
     "var_right": "when it\nfinally let go",
     "breath_left": "it's how your body\nbreathes without you",
     "breath_right": "at this rhythm you start\nworking with your nervous system",
-    "live": "breaths / min\nlive"
+    "live": "breaths / min\nlive",
+    "bpm_unit": "br/min"
   },
   "diary": {
     "title": "Diary",

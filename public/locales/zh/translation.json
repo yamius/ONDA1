@@ -4228,7 +4228,8 @@
     "var_right": "当它\n终于放松",
     "breath_left": "这是你的身体\n无意识的呼吸",
     "breath_right": "在这个节奏里，你开始\n与自己的神经系统协作",
-    "live": "次 / 分\n实时"
+    "live": "次 / 分\n实时",
+    "bpm_unit": "次/分"
   },
   "diary": {
     "title": "日记",

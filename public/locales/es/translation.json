@@ -4228,7 +4228,8 @@
     "var_right": "cuando por fin\nse soltó",
     "breath_left": "así respira tu cuerpo\nsin ti",
     "breath_right": "a este ritmo empiezas\na trabajar con tu sistema nervioso",
-    "live": "resp / min\nen vivo"
+    "live": "resp / min\nen vivo",
+    "bpm_unit": "resp/min"
   },
   "diary": {
     "title": "Diario",

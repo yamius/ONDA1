@@ -197,9 +197,10 @@ const OndaLevel1 = () => {
     return next;
   });
   const isCollapsed = (id: string) => !!collapsedBlocks[id];
-  // The toggle: a small gray dot (solid when open, hollow ring when collapsed)
-  // in the block's very top-right CORNER, inside a large transparent hit area
-  // (~40px). `pos` overrides the corner; `opts` lets a block drive its own state
+  // The toggle in the block's very top-right CORNER, inside a large transparent
+  // hit area (~56px). COLLAPSED → nothing visible (clean bar); EXPANDED → a hollow
+  // ring (кружочок). The hit area stays in both states, so tapping the corner still
+  // toggles. `pos` overrides the corner; `opts` lets a block drive its own state
   // (e.g. the Journey accordion uses journeyOpen instead of collapsedBlocks).
   const collapseDot = (id: string, pos?: { top?: number; right?: number }, opts?: { collapsed?: boolean; onToggle?: () => void }) => {
     const dotTop = pos?.top ?? 6;    // corner
@@ -224,9 +225,10 @@ const OndaLevel1 = () => {
         <span
           className="rounded-full transition-all"
           style={{
-            width: '8px', height: '8px',
-            background: collapsed ? 'transparent' : GRAY,
-            border: `1.5px solid ${GRAY}`,
+            width: '10px', height: '10px',
+            background: 'transparent',
+            // Collapsed → invisible (no dot). Expanded → a hollow ring.
+            border: collapsed ? 'none' : `1.5px solid ${GRAY}`,
           }}
         />
       </button>
@@ -6752,11 +6754,12 @@ const OndaLevel1 = () => {
               </div>
             ) : displayHeartRate != null ? (
               /* WATCH → Coherence hero (heart–breath synchrony; never medical). */
-              <div className={`relative rounded-2xl p-4 sm:p-5 ${
+              <div className={`relative rounded-2xl p-6 ${
                 isLight
                   ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
                   : 'bg-black/20 backdrop-blur-sm border border-white/10'
               }`} style={collapseStyle('coherence', 45, 8)}>
+                {/* p-6 so the title's left edge lines up with the practice cards. */}
                 {collapseDot('coherence')}
                 {/* Collapsed reads like a practice tile: title centred on the
                     left, the coherence % on the right (caption hides). */}
@@ -6833,9 +6836,9 @@ const OndaLevel1 = () => {
         {/* Установка — the intention block before the practices (placeholder copy).
             mb-4 = the same gap the practices grid uses between tiles (gap-4). */}
         <div className="mb-4 flex flex-col items-center">
-          <div className={`relative w-full max-w-[360px] rounded-lg p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
+          <div className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
             {collapseDot('recommendations')}
-            <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
+            <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
             <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
               {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
             </p>
@@ -6922,7 +6925,7 @@ const OndaLevel1 = () => {
           {/* Light highlight — a soft indigo ring + gentle halo lifts the
               Your Progress (HRV) card above the surrounding blocks without
               shouting. */}
-          <div className={`relative rounded-lg p-4 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`} style={collapseStyle('progress', 45, 8)}>
+          <div className={`relative rounded-lg p-6 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`} style={collapseStyle('progress', 45, 8)}>
             {collapseDot('progress')}
             <div className={`text-xl sm:text-2xl font-bold mb-3 pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>
               {t('home.progress.title')}
@@ -7751,7 +7754,7 @@ const OndaLevel1 = () => {
             onClick={() => setJourneyOpen(v => !v)}
             aria-expanded={journeyOpen}
             data-testid="journey-toggle"
-            className={`w-full flex items-center rounded-lg px-4 border ring-1 transition-all ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}
+            className={`w-full flex items-center rounded-lg px-6 border ring-1 transition-all ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}
             style={{ height: '45px' }}
           >
             <span className={`text-xl sm:text-2xl font-bold pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('home.journey.title')}</span>
