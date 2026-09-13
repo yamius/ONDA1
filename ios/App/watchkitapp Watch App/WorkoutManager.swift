@@ -809,15 +809,15 @@ extension WorkoutManager: WCSessionDelegate {
             print("[WorkoutManager] ✅ WCSession \(stateString)")
         }
         
-        // Проверяем applicationContext при активации сессии
+        // ⛔️ НЕ выполняем команды из receivedApplicationContext при активации.
+        // Это ГЛАВНЫЙ источник «перебивает на часах»: receivedApplicationContext
+        // хранит ПОСЛЕДНИЙ контекст и читается при КАЖДОМ запуске часов, поэтому
+        // застрявшая команда "start" стартовала воркаут поверх листа выдачи
+        // разрешений на первом запуске. Команды приходят через sendMessage /
+        // transferUserInfo (доставляются один раз). Контекст — только состояние.
         let context = session.receivedApplicationContext
         if !context.isEmpty {
-            print("[WorkoutManager] Found pending context: \(context.keys.joined(separator: ", "))")
-            
-            if let command = context["command"] as? String {
-                print("[WorkoutManager] Processing pending command: \(command)")
-                handleCommand(["type": command])
-            }
+            print("[WorkoutManager] Pending context present (commands ignored): \(context.keys.joined(separator: ", "))")
         }
         
         // Если есть активная сессия, отправляем текущий статус
@@ -881,13 +881,17 @@ extension WorkoutManager: WCSessionDelegate {
         handleCommand(userInfo)
     }
     
-    // Обработка applicationContext - вызывается когда iPhone обновляет контекст
+    // Обработка applicationContext — вызывается когда iPhone обновляет контекст.
+    //
+    // ⛔️ НЕ запускаем воркаут из applicationContext. Контекст «липкий»: система
+    // пере-доставляет последний контекст при КАЖДОМ запуске часов, поэтому старая
+    // команда "start" стартовала воркаут на каждом запуске — в т.ч. поверх листа
+    // выдачи разрешений при первом запуске («перебивает на часах»). Команды
+    // приходят через sendMessage / transferUserInfo (доставляются один раз);
+    // applicationContext используем только для не-командного состояния. Этот
+    // guard также обезвреживает контекст, уже застрявший на текущих установках.
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("[WorkoutManager] 📋 Received applicationContext: \(applicationContext.keys.joined(separator: ", "))")
-        
-        if let command = applicationContext["command"] as? String {
-            handleCommand(["type": command])
-        }
+        print("[WorkoutManager] 📋 Received applicationContext (ignored for commands): \(applicationContext.keys.joined(separator: ", "))")
     }
     
     private func handleCommand(_ data: [String: Any]) {
@@ -929,7 +933,7 @@ extension WorkoutManager: WCSessionDelegate {
                 
             case "start":
                 print("[WorkoutManager] 🟢 START command received")
-                
+
                 // Проверяем, уже ли активна сессия
                 if self.isActive {
                     print("[WorkoutManager] ℹ️ Workout already active, skipping")
@@ -937,6 +941,16 @@ extension WorkoutManager: WCSessionDelegate {
                     if self.heartRate > 0 {
                         self.sendHeartRateToPhone(self.heartRate, immediate: true)
                     }
+                    return
+                }
+
+                // Не стартуем воркаут, пока пользователь не ответил на системный
+                // лист HealthKit: startWorkout поверх .notDetermined перебивает окно
+                // выдачи разрешений на часах. Свой воркаут часы запустят сами после
+                // ответа (recreateWorkoutSession в колбэке авторизации).
+                if let hrType = HKObjectType.quantityType(forIdentifier: .heartRate),
+                   self.healthStore.authorizationStatus(for: hrType) == .notDetermined {
+                    print("[WorkoutManager] ⏸️ start ignored — HealthKit auth not determined (avoid interrupting the permission sheet)")
                     return
                 }
                 
