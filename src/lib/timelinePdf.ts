@@ -1,0 +1,186 @@
+/**
+ * Timeline → HTML report (task 81). PURE: builds a self-contained HTML document
+ * that the native side renders to a PDF ON-DEVICE (WKWebView → A4). Real text
+ * (system fonts cover Cyrillic/CJK), ONDA palette, doctor-readable — a personal
+ * corridor + facts, NEVER diagnoses or a medical "norm".
+ */
+import type { DiaryEntry, BaselineSample } from './diary';
+
+export interface TimelinePdfData {
+  samples: BaselineSample[];
+  entries: DiaryEntry[];
+  /** What diary content to include in the Notes section (health metrics are
+   *  always included — they are the core of the report). Defaults to all on. */
+  include?: { text: boolean; photo: boolean; voice: boolean };
+  /** entry id → tiny downscaled JPEG data URI, embedded as a light preview.
+   *  Built on the JS side (canvas) so the lib stays pure. */
+  photos?: Record<string, string>;
+  /** entry id → voice-note number (1-based), matching the shared audio file
+   *  `voice-NN-…` so the reader can tell which recording is which on the timeline. */
+  voiceNums?: Record<string, number>;
+  /** entry id → full audio data URI. When present, an INTERACTIVE report is built:
+   *  each voice note gets an inline <audio controls> player (plays in a browser,
+   *  the whole thing stays one self-contained file). Used for the HTML export;
+   *  omit for the print/PDF path (a PDF can't play audio). */
+  audio?: Record<string, string>;
+}
+
+/** Minimal i18n surface the report needs (passed in so the lib stays pure). */
+export interface TimelinePdfCopy {
+  brand: string;            // "ONDA Life"
+  siteLabel?: string;       // "www.onda-life.com"
+  siteUrl?: string;         // "https://onda-life.com/uk"
+  subtitle: string;         // "Таймлайн здоровья"
+  privateNote: string;      // "Особисті дані · показники здоров'я з Apple Health"
+  period: string;           // "Период"
+  baselineHeading: string;
+  metric: { rhr: string; hrv: string; rr: string };
+  min: string; avg: string; max: string; nights: (n: number) => string;
+  timelineHeading: string;
+  colDate: string;
+  notesHeading: string;
+  signalsHeading: string;
+  voiceNote: string; photo: string;
+  deviation: string;        // short mark, e.g. "↕"
+  none: string;             // "—"
+  empty: string;            // "Нет данных за период"
+  lang: string;             // BCP-47 for date formatting
+}
+
+const esc = (s: string) =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+
+const dayKey = (t: number) => new Date(t).toISOString().slice(0, 10);
+
+function fmtDate(iso: string | number, lang: string): string {
+  try { return new Date(iso).toLocaleDateString(lang || undefined, { day: 'numeric', month: 'short', year: 'numeric' }); }
+  catch { return String(iso).slice(0, 10); }
+}
+function fmtTime(iso: string | number, lang: string): string {
+  try { return new Date(iso).toLocaleTimeString(lang || undefined, { hour: '2-digit', minute: '2-digit' }); }
+  catch { return ''; }
+}
+/** Date + time — so it's clear WHEN a reading was taken / a note was made. */
+function fmtDateTime(iso: string | number, lang: string): string {
+  const t = fmtTime(iso, lang);
+  return t ? `${fmtDate(iso, lang)}, ${t}` : fmtDate(iso, lang);
+}
+function stats(xs: number[]) {
+  if (xs.length === 0) return null;
+  const min = Math.min(...xs), max = Math.max(...xs);
+  const avg = Math.round((xs.reduce((a, b) => a + b, 0) / xs.length) * 10) / 10;
+  return { min, avg, max, n: xs.length };
+}
+
+export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): string {
+  const samples = [...data.samples].sort((a, b) => a.time - b.time);
+  const entries = [...data.entries].sort((a, b) => a.event_time.localeCompare(b.event_time));
+
+  // Period span across all data.
+  const times = [...samples.map((s) => s.time), ...entries.map((e) => new Date(e.event_time).getTime())];
+  const period = times.length
+    ? `${fmtDate(Math.min(...times), c.lang)} — ${fmtDate(Math.max(...times), c.lang)}`
+    : c.none;
+
+  // Baseline corridors over the period.
+  const rhr = stats(samples.map((s) => s.rhr).filter((v): v is number => v != null));
+  const hrv = stats(samples.map((s) => s.hrv).filter((v): v is number => v != null));
+  const rr = stats(samples.map((s) => s.rr).filter((v): v is number => v != null));
+  const baselineRow = (label: string, s: ReturnType<typeof stats>) => s
+    ? `<tr><td>${esc(label)}</td><td>${s.min}</td><td><b>${s.avg}</b></td><td>${s.max}</td><td class="muted">${esc(c.nights(s.n))}</td></tr>`
+    : '';
+
+  // Which dates carry an anomaly (for the deviation mark).
+  const anomalyDates = new Set(entries.filter((e) => e.fromAnomaly).map((e) => dayKey(new Date(e.event_time).getTime())));
+
+  // Timeline table: one row per baseline sample (a day's reading).
+  const tlRows = samples.map((s) => {
+    const dev = anomalyDates.has(dayKey(s.time)) ? ` <span class="dev">${esc(c.deviation)}</span>` : '';
+    return `<tr><td>${esc(fmtDateTime(s.time, c.lang))}${dev}</td><td>${s.rhr ?? c.none}</td><td>${s.hrv ?? c.none}</td><td>${s.rr ?? c.none}</td></tr>`;
+  }).join('');
+
+  // Notes (facts) — text, a light photo preview, and/or a voice marker, filtered
+  // by what the user chose to include. (A printed PDF can't hold playable audio,
+  // so voice shows as a dated marker; the recording itself stays in the app.)
+  const inc = data.include ?? { text: true, photo: true, voice: true };
+  const photos = data.photos ?? {};
+  const voiceNums = data.voiceNums ?? {};
+  const audio = data.audio ?? {};
+  const noteBlocks = entries.map((e) => {
+    const bits: string[] = [];
+    if (inc.text && e.text) bits.push(esc(e.text));
+    if (inc.voice && e.hasAudio) {
+      const n = voiceNums[e.id];
+      // №N ties this marker to the shared audio file voice-NN-… (PDF path).
+      bits.push(`<span class="tag">🎤 ${esc(c.voiceNote)}${n ? ` №${n}` : ''}</span>`);
+    }
+    // Interactive HTML: an inline player right at the note (plays in a browser).
+    const player = inc.voice && audio[e.id]
+      ? `<audio class="rec" controls preload="none" src="${audio[e.id]}"></audio>`
+      : '';
+    const img = inc.photo && photos[e.id] ? `<img class="thumb" src="${photos[e.id]}" alt="">` : '';
+    if (bits.length === 0 && !img && !player) return '';
+    return `<div class="note"><span class="date">${esc(fmtDateTime(e.event_time, c.lang))}</span> ${bits.join(' ')}${player ? `<div>${player}</div>` : ''}${img ? `<div>${img}</div>` : ''}</div>`;
+  }).join('');
+
+  // Signals — deviations that carried through the trigger.
+  const signalRows = entries.filter((e) => e.fromAnomaly).map((e) => {
+    const mLabel = e.anomalyMetric ? (c.metric as Record<string, string>)[e.anomalyMetric] ?? e.anomalyMetric : c.none;
+    const delta = e.anomalyDelta != null ? (e.anomalyDelta > 0 ? `+${e.anomalyDelta}` : `${e.anomalyDelta}`) : '';
+    return `<tr><td>${esc(fmtDateTime(e.event_time, c.lang))}</td><td>${esc(mLabel)}</td><td>${esc(delta)}</td><td>${e.text ? esc(e.text) : c.none}</td></tr>`;
+  }).join('');
+
+  const isEmpty = samples.length === 0 && entries.length === 0;
+
+  return `<!doctype html><html lang="${esc(c.lang)}"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  * { box-sizing: border-box; }
+  html, body { background: #ffffff; -webkit-text-size-adjust: 100%; }
+  body { font: 12px/1.5 -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif; color: #1e293b; margin: 0; padding: 0; }
+  /* One narrow vertical column on every screen — reads like a mobile feed on a
+     PC and prints straight to a tidy portrait PDF (kept narrow on purpose). */
+  .wrap { max-width: 460px; margin: 0 auto; padding: 16px 14px 40px; }
+  h1 { font-size: 20px; margin: 0; line-height: 1.1; color: #4338ca; letter-spacing: .5px; }
+  h2 { font-size: 13px; margin: 22px 0 8px; color: #4338ca; border-bottom: 1px solid #e0e7ff; padding-bottom: 4px; }
+  .sub { color: #64748b; font-size: 11px; margin-top: 2px; }
+  .sub .site { color: #6366f1; text-decoration: none; }
+  .sub.site-line { margin-top: 0; }
+  .head { border-bottom: 2px solid #6366f1; padding-bottom: 10px; margin-bottom: 6px; }
+  table { width: 100%; border-collapse: collapse; margin-top: 4px; }
+  th, td { text-align: left; padding: 4px 6px; border-bottom: 1px solid #eef2f7; font-size: 11px; }
+  th { color: #64748b; font-weight: 600; border-bottom: 1px solid #cbd5e1; }
+  td:not(:first-child), th:not(:first-child) { text-align: right; }
+  .muted { color: #94a3b8; }
+  .dev { color: #d97706; font-weight: 700; }
+  .note { margin: 7px 0; font-size: 11px; }
+  .note .date { color: #6366f1; font-weight: 600; margin-right: 6px; }
+  .note .tag { color: #7c3aed; font-size: 10px; }
+  .note .thumb { max-width: 130px; max-height: 100px; border-radius: 6px; margin-top: 4px; border: 1px solid #e0e7ff; }
+  .note .rec { width: 100%; max-width: 320px; height: 34px; margin-top: 6px; display: block; }
+  .empty { color: #94a3b8; text-align: center; padding: 40px 0; }
+</style></head>
+<body>
+  <div class="wrap">
+  <div class="head">
+    <h1>${esc(c.brand)}</h1>
+    ${c.siteLabel ? `<div class="sub site-line"><a class="site" href="${esc(c.siteUrl ?? '')}">${esc(c.siteLabel)}</a></div>` : ''}
+    <div class="sub">${esc(c.subtitle)} · ${esc(c.period)}: ${esc(period)}</div>
+    <div class="sub">${esc(c.privateNote)}</div>
+  </div>
+  ${isEmpty ? `<div class="empty">${esc(c.empty)}</div>` : `
+  ${(rhr || hrv || rr) ? `<h2>${esc(c.baselineHeading)}</h2>
+  <table><tr><th></th><th>${esc(c.min)}</th><th>${esc(c.avg)}</th><th>${esc(c.max)}</th><th></th></tr>
+    ${baselineRow(c.metric.rhr, rhr)}${baselineRow(c.metric.hrv, hrv)}${baselineRow(c.metric.rr, rr)}
+  </table>` : ''}
+  ${samples.length ? `<h2>${esc(c.timelineHeading)}</h2>
+  <table><tr><th>${esc(c.colDate)}</th><th>${esc(c.metric.rhr)}</th><th>${esc(c.metric.hrv)}</th><th>${esc(c.metric.rr)}</th></tr>
+    ${tlRows}
+  </table>` : ''}
+  ${noteBlocks ? `<h2>${esc(c.notesHeading)}</h2>${noteBlocks}` : ''}
+  ${signalRows ? `<h2>${esc(c.signalsHeading)}</h2>
+  <table><tr><th>${esc(c.colDate)}</th><th></th><th></th><th></th></tr>${signalRows}</table>` : ''}
+  `}
+  </div>
+</body></html>`;
+}

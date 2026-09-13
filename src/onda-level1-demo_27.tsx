@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo, useCallback, lazy, Suspense } from 'react';
-import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2, Camera, ArrowRight } from 'lucide-react';
+import { Heart, Droplets, Wind, Mountain, Star, Lock, CheckCircle, Circle, X, Play, Pause, User, Settings, Activity, Zap, Menu, Languages, RotateCcw, DollarSign, Watch, Waves, Shield, Users, Bluetooth, Minimize2, Maximize2, Camera, ArrowRight, BookOpen } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { supabase } from './lib/supabase';
 import { AuthModal } from './components/AuthModal';
@@ -10,6 +10,9 @@ import LanguageModal from './components/LanguageModal';
 import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
+import DiaryModal from './components/DiaryModal';
+import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
+import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, type PendingAnomaly, type SignalInput } from './lib/anomaly';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -23,6 +26,7 @@ import { CoherenceOrb } from './components/CoherenceOrb';
 import { BaselineCard, BaselineClosingFooter } from './components/BaselineCard';
 import { buildFromNative, buildFromCamera, hasAnyReading, BASELINE_WINDOW_DAYS, type BaselineData, type BaselineSource } from './lib/baseline';
 import HealthKitHeartRate from './plugins/healthKitHeartRate';
+import type { BaselineCorridorsResult } from './plugins/healthKitHeartRate';
 // Home redesign 1.7.4 — new sections (Section 2 / 4 / 6).
 import { HRVMiniChart } from './components/HRVMiniChart';
 import { TodaysPracticeStateCard } from './components/TodaysPracticeStateCard';
@@ -41,6 +45,7 @@ import { useKeepAwake } from './hooks/useKeepAwake';
 import { useWatchHeartRate } from './hooks/useWatchHeartRate';
 import { usePermissions } from './hooks/usePermissions';
 import { Capacitor } from '@capacitor/core';
+import { LocalNotifications } from '@capacitor/local-notifications';
 import { App as CapApp } from '@capacitor/app';
 // AppTrackingTransparency: импорт удалён в v1.7.3 — ATT-prompt отключён
 // целиком. Если когда-нибудь захотим IDFA, возвращать через value-moment
@@ -99,7 +104,13 @@ import { PRACTICE_EXR, PRACTICE_JPEG_PREVIEW } from './constants/practiceAssets'
 // every visitor — no auth, no paywall — so the user can try the app before
 // committing. Every other practice still goes through the paywall in
 // `practice_gate_basic` (see the Start button below).
-const FREE_PRACTICE_IDS = new Set(['p1-1', 'p1-2', 'p1-3']);
+// The three signal practices (one per anomaly type) are the free openers, in
+// display order p1-2 / p1-5 / p1-9. ids are NEVER renamed (analytics/links) —
+// only their position + free status change (task §8).
+const FREE_PRACTICE_IDS = new Set(['p1-2', 'p1-5', 'p1-9']);
+const SIGNAL_PRACTICE_ORDER = ['p1-2', 'p1-5', 'p1-9'];
+// Which practice a given anomaly routes to (task §7).
+const ANOMALY_PRACTICE: Record<string, string> = { rhr: 'p1-2', hrv: 'p1-9', rr: 'p1-5' };
 
 // Светлая тема «матовое свечение» (frosted glow) — прототип хаба.
 // Космическая сцена по определению тёмная, прямой токен-свап невозможен,
@@ -159,11 +170,77 @@ const OndaLevel1 = () => {
   // The figure-card on home. Sourced from the camera session first (day-0,
   // no permissions), then redrawn from the 14-day HealthKit read once the
   // watch is connected. Honest by construction: only what Health/camera gave.
-  const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(null);
+  // Restore a camera baseline saved on the last session so it survives a restart
+  // (a watch baseline is re-read live from Health, so it isn't persisted here).
+  const [baseline, setBaseline] = useState<{ data: BaselineData; source: BaselineSource } | null>(() => {
+    try {
+      const s = localStorage.getItem('onda_baseline_camera');
+      if (s) return { data: JSON.parse(s) as BaselineData, source: 'camera' };
+    } catch { /* noop */ }
+    return null;
+  });
   // Shift view: flip the card numbers to signed deltas from baseline (blue −, violet +).
   const [baselineShift, setBaselineShift] = useState(false);
   // Today's same-shaped read (queryBaseline days=1) — the "today" side of Shift deltas.
   const [baselineToday, setBaselineToday] = useState<BaselineData | null>(null);
+
+  // Collapsible home blocks: a small light-coral dot (top-right) folds each block
+  // to a compact bar (max-height clip). State persists per block in localStorage.
+  const [collapsedBlocks, setCollapsedBlocks] = useState<Record<string, boolean>>(() => {
+    // First load (no stored prefs) → "Мои Рекомендации" starts folded.
+    try { const raw = localStorage.getItem('onda_collapsed_blocks'); if (raw) return JSON.parse(raw); } catch { /* noop */ }
+    return { recommendations: true };
+  });
+  const toggleCollapse = (id: string) => setCollapsedBlocks((c) => {
+    const next = { ...c, [id]: !c[id] };
+    try { localStorage.setItem('onda_collapsed_blocks', JSON.stringify(next)); } catch { /* noop */ }
+    return next;
+  });
+  const isCollapsed = (id: string) => !!collapsedBlocks[id];
+  // The toggle in the block's very top-right CORNER, inside a large transparent
+  // hit area (~56px). COLLAPSED → nothing visible (clean bar); EXPANDED → a hollow
+  // ring (кружочок). The hit area stays in both states, so tapping the corner still
+  // toggles. `pos` overrides the corner; `opts` lets a block drive its own state
+  // (e.g. the Journey accordion uses journeyOpen instead of collapsedBlocks).
+  const collapseDot = (id: string, pos?: { top?: number; right?: number }, opts?: { collapsed?: boolean; onToggle?: () => void }) => {
+    const dotTop = pos?.top ?? 6;    // corner
+    const dotRight = pos?.right ?? 6;
+    const collapsed = opts?.collapsed ?? isCollapsed(id);
+    const toggle = opts?.onToggle ?? (() => toggleCollapse(id));
+    const GRAY = 'rgb(148,163,184)';
+    // 56px transparent hit area (~2× the old 40px), centred on the dot's
+    // visual position so only the tap target grows, not the dot.
+    const HIT = 56;
+    const cTop = dotTop + 4;   // dot's visual centre from the corner
+    const cRight = dotRight + 4;
+    return (
+      <button
+        type="button"
+        onClick={(e) => { e.stopPropagation(); toggle(); }}
+        aria-label="collapse"
+        data-testid={`collapse-${id}`}
+        className="absolute z-20 flex items-center justify-center"
+        style={{ top: `${cTop - HIT / 2}px`, right: `${cRight - HIT / 2}px`, width: `${HIT}px`, height: `${HIT}px`, cursor: 'pointer', background: 'transparent', border: 'none', padding: 0 }}
+      >
+        <span
+          className="rounded-full transition-all"
+          style={{
+            width: '10px', height: '10px',
+            background: 'transparent',
+            // Collapsed → invisible (no dot). Expanded → a hollow ring.
+            border: collapsed ? 'none' : `1.5px solid ${GRAY}`,
+          }}
+        />
+      </button>
+    );
+  };
+  // Style that folds a block to a compact bar when collapsed. `padTop` re-centres
+  // the title in the bar (overrides the block's own top padding while collapsed).
+  const collapseStyle = (id: string, barPx: number, padTop?: number): React.CSSProperties => {
+    const base: React.CSSProperties = { transition: 'max-height 0.3s ease' };
+    if (!isCollapsed(id)) return base;
+    return { ...base, maxHeight: `${barPx}px`, overflow: 'hidden', ...(padTop != null ? { paddingTop: `${padTop}px` } : {}) };
+  };
   // Rolling stats over the current camera reading → avg/min/max pulse + a
   // breathing estimate. Reset on each fresh start, sealed into a card on stop.
   const camSessionRef = useRef({ min: Infinity, max: -Infinity, sum: 0, count: 0, brSum: 0, brCount: 0 });
@@ -254,6 +331,7 @@ const OndaLevel1 = () => {
           breathing: a.brCount > 0 ? a.brSum / a.brCount : null,
         });
         setBaseline({ data, source: 'camera' });
+        try { localStorage.setItem('onda_baseline_camera', JSON.stringify(data)); } catch { /* noop */ }
         track('baseline_shown', { source: 'camera', coverage_days: 1 });
       }
     }
@@ -381,6 +459,24 @@ const OndaLevel1 = () => {
   
   const displayHeartRate = watchHeartRate.heartRate ?? vitalsData.hr ?? null;
 
+  // Resting pulse behind today's baseline, if we have one — snapshotted onto a
+  // "now" diary note so the feed can show the day's number next to the words (§5).
+  const dayRhr = (() => {
+    const r = baseline?.data?.readings?.find((x) => x.key === 'rhr');
+    return r?.avg != null ? Math.round(r.avg) : null;
+  })();
+
+  // Accrue the timeline's baseline rail: snapshot today's resting pulse +
+  // respiratory rate into their daily stores whenever a baseline is present
+  // (HRV already has its own onda.hrv_daily_v1 store). Honest, forward-only.
+  useEffect(() => {
+    const rr = baseline?.data?.readings?.find((x) => x.key === 'rr');
+    const hrv = baseline?.data?.readings?.find((x) => x.key === 'hrv');
+    recordDailyMetric(DAILY_STORES.rhr, dayRhr);
+    recordDailyMetric(DAILY_STORES.rr, rr?.avg != null ? Math.round(rr.avg) : null);
+    recordDailyMetric(DAILY_STORES.hrv, hrv?.avg != null ? Math.round(hrv.avg) : null);
+  }, [baseline, dayRhr]);
+
   // Live values for the baseline card's realtime hero. A signal counts as live
   // ONLY while a source is actively producing it — the camera mid-reading, or a
   // watch that sent HR in the last few seconds. So when the watch disconnects,
@@ -422,7 +518,7 @@ const OndaLevel1 = () => {
   // Section 2 state machine — A (no watch) / B (collecting, 30 s) / C (pick).
   const todaysPractice = useTodaysPractice({
     isWatchConnected: watchHeartRate.isConnected,
-    freePracticeIds: ['p1-1', 'p1-2', 'p1-3'],
+    freePracticeIds: SIGNAL_PRACTICE_ORDER,
   });
 
   // Section 6 — "Your Journey" collapsible. Always starts closed on every
@@ -442,7 +538,7 @@ const OndaLevel1 = () => {
   //   3. Else the first id below as ultimate fallback.
   // Order = priority: p1-2 (Sense of Being) is the onboarding/featured opener.
   const featuredPracticeId = useMemo(() => {
-    const freeIds = ['p1-2', 'p1-1', 'p1-3'];
+    const freeIds = SIGNAL_PRACTICE_ORDER;
     const cp = completedPractices as Record<string, unknown>;
     const uncompleted = freeIds.find(id => !cp[id]);
     if (uncompleted) return uncompleted;
@@ -486,15 +582,8 @@ const OndaLevel1 = () => {
   const [practiceState, setPracticeState] = useState('intro');
   const [practiceTime, setPracticeTime] = useState(0);
 
-  // Workout lifecycle ↔ практика: сообщаем watch-хуку, когда практика активна,
-  // чтобы (1) HKWorkoutSession НЕ глушилась при уходе в фон во время практики
-  // (autonomy — переживаем диалог микрофона / заблокированный телефон), и
-  // (2) глушилась сразу, если практика закончилась пока приложение в фоне.
-  // Объявлено ПОСЛЕ practiceState, чтобы избежать TDZ.
-  useEffect(() => {
-    watchHeartRate.setPracticeActive(practiceState === 'active');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [practiceState]);
+  // Workout keep-alive lives in a single effect below (setPracticeActive),
+  // declared after both practiceState and showDiaryModal to avoid TDZ.
 
   // Monitor activePractice transitions. Catches ANY path that closes the practice,
   // including paths that bypass exitPractice (setState via closure, unmount, etc).
@@ -537,6 +626,131 @@ const OndaLevel1 = () => {
   const [showJournal, setShowJournal] = useState(false);
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
+  const [showDiaryModal, setShowDiaryModal] = useState(false);
+  // Anomaly trigger (step 4): the pending deviation to prompt about, if any.
+  const [anomalyPrompt, setAnomalyPrompt] = useState<PendingAnomaly | null>(null);
+  // Anomaly context passed to the diary ONLY when opened from the prompt (so
+  // the resulting note carries from_anomaly + metric/delta), plus the night's
+  // sync time so the note anchors to that point on the timeline (§9).
+  const [diaryAnomaly, setDiaryAnomaly] = useState<{ metric: string; delta: number } | null>(null);
+  const [diaryEventTime, setDiaryEventTime] = useState<string | null>(null);
+  // Single keep-alive source: hold the watch workout during a practice OR while
+  // the Timeline is open (opening the full-screen modal was backgrounding the
+  // webview). Merged so the two never clobber each other's flag.
+  useEffect(() => {
+    watchHeartRate.setPracticeActive(practiceState === 'active' || showDiaryModal);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [practiceState, showDiaryModal]);
+
+  // Restore an unanswered anomaly signal across launches (persistent reminder),
+  // unless it's snoozed to a later day ("remind later").
+  useEffect(() => {
+    const st = loadAnomalyState();
+    if (st.pending && (!st.pending.remindAfter || Date.now() >= st.pending.remindAfter)) {
+      setAnomalyPrompt(st.pending);
+    }
+  }, []);
+
+  // Anomaly evaluation (step 4). WATCH-ONLY: the corridor is built from passive
+  // NIGHT data, which only the Apple Watch provides — a camera user never gets a
+  // signal (honest). Production corridors (per-night RHR/HRV/RR + noisy-night
+  // exclusion, ≥7 nights) come from the native query in the next phase; here a
+  // DEV-only mock exercises the prompt/diary wiring in the web preview.
+  // Anomaly evaluation (step 4). Once per session, when a watch is connected,
+  // read the per-night corridors from HealthKit and check the latest night.
+  const anomalyEvaluatedRef = useRef(false);
+  useEffect(() => {
+    if (anomalyEvaluatedRef.current) return;
+    if (platform !== 'ios') return;
+    // WATCH-ONLY: camera users have no night data → never signalled.
+    if (!watchHeartRate.isConnected) return;
+    // Only for someone who has ALREADY connected before (same gate the baseline
+    // auto-load uses). On a fresh install the flag is unset, so nothing touches
+    // HealthKit during first-run onboarding — which was interrupting the
+    // permission sheet. Set on the first explicit connect+grant.
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!watching) return;
+    anomalyEvaluatedRef.current = true;
+    (async () => {
+      let corridors: BaselineCorridorsResult;
+      try {
+        corridors = await HealthKitHeartRate.queryBaselineCorridors({ days: 30 });
+      } catch (e) {
+        console.warn('[anomaly] corridors query failed', e);
+        return;
+      }
+      // Corridor = the PRIOR nights; the latest night is what we test against it.
+      const signals: SignalInput[] = (['rhr', 'hrv', 'rr'] as const).flatMap((k) => {
+        const vals = corridors?.[k]?.values ?? [];
+        if (vals.length < 2) return [];
+        return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
+      });
+      const anomaly = detectAnomaly(signals);
+      if (!anomaly) return;
+      const st = loadAnomalyState();
+      if (!canSignal(Date.now(), st.lastSignalAt)) return;
+      const at = Date.now();
+      const night = new Date(at).toISOString().slice(0, 10);
+      const signalCount = (st.signalCount ?? 0) + 1;
+      // §9: drop a baseline point at the sync time with the night's values, so the
+      // deviation shows on the rail and the note anchors to the same point.
+      try {
+        recordBaselineSample({
+          rhr: corridors.rhr?.values?.at(-1) ?? null,
+          hrv: corridors.hrv?.values?.at(-1) ?? null,
+          rr: corridors.rr?.values?.at(-1) ?? null,
+        });
+      } catch { /* noop */ }
+      const pending: PendingAnomaly = { ...anomaly, at, night, signalCount };
+      saveAnomalyState({ lastSignalAt: at, signalCount, pending });
+      setAnomalyPrompt(pending);
+      try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
+      try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [watchHeartRate.isConnected]);
+
+  // Anomaly PUSH setup (step 4, Phase C): hand the native background delivery the
+  // localized wording (JS owns the 5 languages), then register the observers so a
+  // night deviation posts a local notification even when the app is closed.
+  const anomalyMonitorStartedRef = useRef(false);
+  useEffect(() => {
+    if (anomalyMonitorStartedRef.current) return;
+    if (platform !== 'ios' || !watchHeartRate.isConnected) return;
+    // Same gate as above: only after the user has connected before, so nothing
+    // races the first-run permission sheet.
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!watching) return;
+    anomalyMonitorStartedRef.current = true;
+    (async () => {
+      try {
+        // Notification permission is requested in PermissionSetupModal (by intent,
+        // with Health), NOT here — starting monitoring must never prompt on launch.
+        await HealthKitHeartRate.setAnomalyStrings({
+          title: 'ONDA',
+          pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'),
+          pushShort: t('anomaly.push_short', 'Есть свежий сигнал.'),
+        });
+        await HealthKitHeartRate.startAnomalyMonitoring();
+      } catch (e) { console.warn('[anomaly] monitoring setup failed', e); }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [watchHeartRate.isConnected]);
+
+  // Opened from an anomaly local notification → analytics (the in-app prompt is
+  // re-raised by the evaluation effect on foreground).
+  useEffect(() => {
+    let handle: { remove: () => void } | undefined;
+    LocalNotifications.addListener('localNotificationActionPerformed', (a) => {
+      const extra = (a?.notification as { extra?: Record<string, unknown> })?.extra;
+      const metric = (extra?.anomaly_metric as string) ?? 'unknown';
+      try { track('anomaly_push_opened', { metric }); } catch { /* noop */ }
+    }).then((h) => { handle = h; }).catch(() => { /* noop */ });
+    return () => { try { handle?.remove(); } catch { /* noop */ } };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [expandedPractice, setExpandedPractice] = useState(null);
   const [unlockedAchievements, setUnlockedAchievements] = useState([]);
@@ -616,7 +830,19 @@ const OndaLevel1 = () => {
     const justClosedPermModal = prevPermModalRef.current && !showPermissionModal;
     prevPermModalRef.current = showPermissionModal;
     if (platform !== 'ios' || !Capacitor.isPluginAvailable('OndaWatch')) return;
-    const shouldManage = !permissions.needsSetup && !showPermissionModal;
+    // Gate on the SAME proven flag as the baseline auto-load and the anomaly
+    // effects: only auto-manage the watch workout once the user has explicitly
+    // connected + granted before (onda_baseline_watching). `needsSetup` was
+    // NOT reliable here — on a fresh install iOS hides the read status, so it
+    // reads false and setAutoManaged(true) fired at STARTUP, starting a watch
+    // workout (its own HealthKit prompt on the watch) on top of the permission
+    // flow → "выдача разрешений перебита стартом". The flag is unset on a fresh
+    // install, so the watch is never auto-started during first-run onboarding;
+    // it flips true during the first grant (loadWatchBaseline), so this effect
+    // re-runs when the modal closes and enables it after the grace below.
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    const shouldManage = watching && !showPermissionModal;
     if (!shouldManage) {
       watchHeartRate.setAutoManaged(false);
       return;
@@ -1314,6 +1540,8 @@ const OndaLevel1 = () => {
           } catch (e) {
             console.warn('[Airbridge] auth-event tracking failed:', e);
           }
+          // Local-first diary → migrate any un-synced drafts now that we have a user.
+          try { syncDiaryEntries(session.user.id); } catch { /* best-effort */ }
         }
         setUser(session.user);
         // Link the device to this Supabase user inside OneSignal so
@@ -3309,11 +3537,22 @@ const OndaLevel1 = () => {
 
     // The on-screen practice is gone — any further results screen belongs to a
     // hub-launched practice, so the button reverts to "Back to Practices".
+    const wasFirstRun = cameFromFirstRun;
     setCameFromFirstRun(false);
     cameraPpg.stop(); // free camera + torch when leaving the practice
 
-    // Scroll to practice after exit
-    if (practiceId) {
+    // After the onboarding first run, open the home at the very TOP (on the
+    // baseline), not scrolled down to the practice card. Otherwise, scroll to
+    // the just-finished practice.
+    if (wasFirstRun) {
+      setTimeout(() => {
+        const rootEl = document.getElementById('root');
+        if (rootEl) rootEl.scrollTop = 0;
+        const sc = document.querySelector('.overflow-x-hidden') as HTMLElement | null;
+        if (sc) sc.scrollTop = 0;
+        window.scrollTo(0, 0);
+      }, 100);
+    } else if (practiceId) {
       setTimeout(() => {
         practiceRefs.current[practiceId]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }, 100);
@@ -5895,7 +6134,7 @@ const OndaLevel1 = () => {
   // hero) can show the same card markup that the Section 5 grid uses,
   // without duplicating 160+ lines of JSX. All closures (state setters,
   // theme tokens, t, etc.) are captured from the component scope.
-  const renderPracticeCard = (practice: any, isFeatured: boolean = false) => {
+  const renderPracticeCard = (practice: any, isFeatured: boolean = false, collapsible: boolean = false) => {
     const sessions = getPracticeSessions(practice.id);
     const completedData = completedPractices[practice.id];
     // Лучшее качество из сессий или из completedData
@@ -5907,6 +6146,9 @@ const OndaLevel1 = () => {
     const bonus = calculateBonus();
     const earnedQnt = Math.floor(practice.maxQnt * (1 + bonus / 100));
     const isExpanded = expandedPractice === practice.id;
+    // Compact = this tile is collapsible AND currently folded. In that state we
+    // strip the recommended indigo ring + the progress % so the bar reads clean.
+    const compact = collapsible && isCollapsed(`practice_${practice.id}`);
 
     return (
       <div
@@ -5942,9 +6184,11 @@ const OndaLevel1 = () => {
             : activeCircuit === 12
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
-        } ${isFeatured ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
+        } ${isFeatured && !compact ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
+        style={collapsible ? collapseStyle(`practice_${practice.id}`, 45, 9) : undefined}
       >
-        {isFeatured && (
+        {collapsible && collapseDot(`practice_${practice.id}`)}
+        {isFeatured && !compact && (
           <span
             className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
             data-testid="featured-badge"
@@ -5952,25 +6196,28 @@ const OndaLevel1 = () => {
             ✨ {t('home.featured.recommended', 'Recommended')}
           </span>
         )}
-        <div className="flex items-start justify-between mb-3">
-          <div className="flex-1">
-            <h3 className="text-xl font-semibold mb-1">{getPracticeName(practice.id)}</h3>
-            <p className="text-sm text-gray-400">{practice.duration}</p>
+        {/* Title sits on the SAME row as the status circle (items-center),
+            so the heading lines up with the green dot; the duration drops
+            to its own line below. */}
+        <div className="flex items-center justify-between mb-1">
+          <h3 className="flex-1 pr-6 text-xl font-semibold">{getPracticeName(practice.id)}</h3>
+          {/* Status box is a FIXED 24px square so the row height never changes —
+              the progress % floats absolutely below (and is hidden when compact),
+              keeping the title anchored to the circle's centre. */}
+          <div className="relative w-6 h-6 shrink-0">
+            {isCompleted?.isValidForArtifact ? (
+              <CheckCircle className="w-6 h-6 text-emerald-400" />
+            ) : isCompleted ? (
+              <Circle className="w-6 h-6 text-emerald-400" />
+            ) : (
+              <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
+            )}
+            {isCompleted && !compact && (
+              <div className="absolute top-full right-0 mt-0.5 text-xs leading-none text-emerald-300 whitespace-nowrap">{safeToFixed(bestQuality, 0)}%</div>
+            )}
           </div>
-          {isCompleted?.isValidForArtifact ? (
-            <div className="text-right">
-              <CheckCircle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
-              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-            </div>
-          ) : isCompleted ? (
-            <div className="text-right">
-              <Circle className="w-6 h-6 text-emerald-400 mb-1 ml-auto" />
-              <div className="text-xs text-emerald-300">{safeToFixed(bestQuality, 0)}%</div>
-            </div>
-          ) : (
-            <Circle className={`w-6 h-6 ${isLight ? partTint : 'text-gray-600'}`} />
-          )}
         </div>
+        <p className="text-sm text-gray-400 mb-3">{practice.duration}</p>
         {(() => {
           // Subtitle priority: if we have functional copy for this
           // practice, it stands alone (title already carries the
@@ -6330,7 +6577,7 @@ const OndaLevel1 = () => {
         <div className="mb-6 flex flex-col items-center">
           <div className="w-full max-w-[360px]">
             <div className="text-center mb-3">
-              <h2 className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.title', 'Мой Базлайн')}</h2>
+              <h2 className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.title', 'Базлайн')}</h2>
               <p className={`text-sm mt-1 ${isLight ? 'text-slate-500' : 'text-white/60'}`}>{t('baseline.subtitle', 'Зайди сюда завтра и увидишь разницу')}</p>
               <p className={`text-xs mt-0.5 ${isLight ? 'text-slate-400' : 'text-white/40'}`}>{t('baseline.subtitle_note', '(между средним за период и сегодня)')}</p>
               <button
@@ -6364,36 +6611,91 @@ const OndaLevel1 = () => {
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
-          {/* Pulse | Breathing — ALWAYS shown. Each tile hides only its value
-              line when the metric is null (no tracker yet), collapsing to
-              icon + label so the row reads as "setup pending", not missing. */}
-          <div className="grid grid-cols-2 gap-3 sm:gap-4">
-            {/* Pulse — measured (Watch or camera). Fixed 2-line layout: icon,
-                then value + unit on ONE line, the big number ALWAYS rendered
-                (-- when absent) so the tile never grows a third line / jumps in
-                height when a pulse first appears. Taller value line on purpose —
-                the number is bigger than the unit. No source ("Watch") label. */}
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Heart className={`w-5 sm:w-6 h-5 sm:h-6 mb-2 mx-auto ${displayHeartRate != null ? 'text-green-400' : 'text-red-400'}`} />
-              <div className="flex items-baseline justify-center gap-1 leading-none">
-                <span className={`text-2xl sm:text-3xl font-bold tabular-nums ${displayHeartRate == null ? (isLight ? 'text-slate-300' : 'text-white/40') : (isLight ? 'text-slate-400' : '')}`}>
-                  {displayHeartRate != null ? displayHeartRate : '--'}
-                </span>
-                <span className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.bpm', 'BPM')}</span>
+          {/* Anomaly card (step 4) — a personal-corridor deviation. Two states:
+              (1) signal, not recorded; (2) recorded. Both carry the by-type
+              explanation + a slow-down practice offer. Gender-agreed per metric,
+              NO medical wording. Hidden while snoozed ("remind later"). */}
+          {anomalyPrompt && (!anomalyPrompt.remindAfter || Date.now() >= anomalyPrompt.remindAfter) && (() => {
+            const a = anomalyPrompt;
+            const m = a.metric;
+            const examples = (a.signalCount ?? 0) >= 5
+              ? t('anomaly.causes_more', 'Опиши все возможные причины.')
+              : t('anomaly.causes', 'Что повлияло? Кофе, стресс, сон, алкоголь.');
+            let savedWhen = '';
+            try {
+              const d = new Date(a.recordedAt || a.at);
+              savedWhen = `${d.toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' })} ${d.toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' })}`;
+            } catch { /* noop */ }
+            const openRecord = () => {
+              setDiaryAnomaly({ metric: m, delta: a.delta });
+              setDiaryEventTime(new Date(a.at).toISOString()); // anchor the note to the night's point (§9)
+              setShowDiaryModal(true);
+            };
+            const remindLater = () => {
+              const remindAfter = Date.now() + 24 * 60 * 60 * 1000;
+              const st = loadAnomalyState();
+              saveAnomalyState({ ...st, pending: { ...a, remindAfter } });
+              setAnomalyPrompt(null);
+            };
+            const startPractice = () => {
+              const pid = ANOMALY_PRACTICE[m];
+              const pr = currentCircuit.practices.find(p => p.id === pid) as { id: string; maxQnt: number } | undefined;
+              try { track('anomaly_practice_started', { metric: m }); } catch { /* noop */ }
+              const st = loadAnomalyState();
+              saveAnomalyState({ lastSignalAt: st.lastSignalAt, signalCount: st.signalCount }); // clear pending — goal met
+              setAnomalyPrompt(null);
+              if (pr) completePractice(pid, pr.maxQnt);
+            };
+            const amberText = isLight ? 'text-amber-900' : 'text-amber-100';
+            return (
+              <div className={`mb-3 rounded-2xl p-4 border ${isLight ? 'bg-amber-50 border-amber-200' : 'bg-amber-500/10 border-amber-400/30'} ${amberText}`} data-testid="anomaly-prompt">
+                {!a.recorded ? (
+                  <>
+                    <p className="text-sm leading-snug font-medium">{t(`anomaly.prompt_${m}`, { value: a.latest, lo: a.loBound, hi: a.hiBound })}</p>
+                    <p className="mt-2 text-sm">{examples}</p>
+                    <p className="text-sm opacity-80">{t('anomaly.record_hint', 'Запиши — со временем увидишь всю картину своего здоровья.')}</p>
+                    <div className="mt-3 flex gap-2">
+                      <button type="button" onClick={openRecord} data-testid="anomaly-cta" className="flex-1 rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.record', 'Записать')}</button>
+                      <button type="button" onClick={remindLater} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
+                    </div>
+                  </>
+                ) : (
+                  <p className="text-sm font-semibold" data-testid="anomaly-saved">✓ {t('anomaly.saved', 'Сохранено в таймлайн · {{when}}', { when: savedWhen })}</p>
+                )}
+                <div className={`my-3 border-t ${isLight ? 'border-amber-200' : 'border-amber-400/25'}`} />
+                <p className="text-sm">{t(`anomaly.explain_${m}`)}</p>
+                <p className="text-sm opacity-80 mt-1">{t('anomaly.practice_offer', 'Практика замедления поможет телу вернуться в ритм.')}</p>
+                <button type="button" onClick={startPractice} data-testid="anomaly-practice" className="mt-3 w-full rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
               </div>
-            </div>
-            {/* Breathing — RSA-derived ESTIMATE (leading ≈ so it never reads as a
-                precise, independent measurement). Same fixed 2-line layout. */}
-            <div className={`${emoTint} backdrop-blur-sm rounded-2xl p-3 sm:p-4 text-center`}>
-              <Wind className="w-5 sm:w-6 h-5 sm:h-6 text-blue-400 mb-2 mx-auto" />
-              <div className="flex items-baseline justify-center gap-1 leading-none">
-                <span className={`text-2xl sm:text-3xl font-bold tabular-nums ${vitalsData.br == null ? (isLight ? 'text-slate-300' : 'text-white/40') : (isLight ? 'text-slate-400' : '')}`}>
-                  {vitalsData.br != null ? (<><span className="text-base font-normal opacity-60 mr-0.5">≈</span>{Math.round(vitalsData.br)}</>) : '--'}
-                </span>
-                <span className={`text-xs ${isLight ? 'text-slate-500' : 'text-gray-400'}`}>{t('settings.br_unit', '/min')}</span>
-              </div>
-            </div>
-          </div>
+            );
+          })()}
+          {/* Diary entry — replaces the pulse/breathing mini-tiles under the
+              baseline. Opens the local-first day-note diary. Keeps baseline
+              (what the body did) ↔ diary (what happened to you) in one fold.
+              Live pulse/breath still read out in the coherence hero below. */}
+          <button
+            type="button"
+            onClick={() => {
+              try { track('diary_opened', { source: 'home_button' }); } catch { /* noop */ }
+              setDiaryAnomaly(null); // normal open — not from a trigger
+              // Snapshot the 3 baseline indicators at the real visit time (throttled 2h).
+              try {
+                const rrR = baseline?.data?.readings?.find((x) => x.key === 'rr');
+                const hrvR = baseline?.data?.readings?.find((x) => x.key === 'hrv');
+                recordBaselineSample({
+                  rhr: displayHeartRate ?? dayRhr,
+                  rr: vitalsData.br ?? (rrR?.avg ?? null),
+                  hrv: hrvR?.avg ?? null,
+                });
+              } catch { /* noop */ }
+              setShowDiaryModal(true);
+            }}
+            data-testid="home-diary-button"
+            className={`w-full flex items-center justify-center gap-2 rounded-2xl p-4 sm:p-5 text-lg sm:text-xl font-bold transition-all ${anomalyPrompt ? 'ring-2 ring-amber-400/70 ' : ''}${isLight ? 'bg-white/65 backdrop-blur-xl border border-indigo-200 text-slate-700 shadow-lg shadow-indigo-100/60' : 'bg-indigo-500/10 backdrop-blur-sm border border-indigo-400/25 text-white'}`}
+          >
+            <BookOpen className="w-5 h-5 text-indigo-400" />
+            {t('diary.record_cta', 'Таймлайн')}
+          </button>
 
           <div className="mt-3 sm:mt-4">
             {cameraPpg.status !== 'idle' ? (
@@ -6452,15 +6754,21 @@ const OndaLevel1 = () => {
               </div>
             ) : displayHeartRate != null ? (
               /* WATCH → Coherence hero (heart–breath synchrony; never medical). */
-              <div className={`rounded-2xl p-4 sm:p-5 ${
+              <div className={`relative rounded-2xl p-6 ${
                 isLight
                   ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
                   : 'bg-black/20 backdrop-blur-sm border border-white/10'
-              }`}>
-                <div className="flex items-baseline justify-between">
+              }`} style={collapseStyle('coherence', 45, 8)}>
+                {/* p-6 so the title's left edge lines up with the practice cards. */}
+                {collapseDot('coherence')}
+                {/* Collapsed reads like a practice tile: title centred on the
+                    left, the coherence % on the right (caption hides). */}
+                <div className="flex items-center justify-between pr-6">
                   <div className="text-left">
-                    <div className={`text-sm font-semibold ${isLight ? 'text-slate-600' : 'text-white/90'}`}>{t('practices.coherence')}</div>
-                    <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('home.coherence.caption', 'heart–breath rhythm')}</div>
+                    <div className={`text-xl sm:text-2xl font-bold ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('practices.coherence')}</div>
+                    {!isCollapsed('coherence') && (
+                      <div className={`text-xs ${isLight ? 'text-slate-400' : 'text-white/50'}`}>{t('home.coherence.caption', 'heart–breath rhythm')}</div>
+                    )}
                   </div>
                   <div className={`font-bold leading-none ${isLight ? 'text-slate-500' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
                     {vitalsData.coherence != null ? (
@@ -6511,19 +6819,26 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Closing breathing figures (13 / 6) — after the coherence window. */}
-        {baseline && (
+        {/* Closing breathing figures (13 / 6) — after the coherence window.
+            Watch-only (needs HRV spread + breathing, which the camera path
+            never has). No own toggle: it's bound to the "Мои Рекомендации"
+            dot and hides entirely when that block is folded. */}
+        {baseline && baseline.source === 'watch' && !isCollapsed('recommendations') && (
           <div className="mb-6 flex flex-col items-center">
-            <div className="w-full max-w-[360px]">
-              <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+            <div className="relative w-full max-w-[360px]">
+              <div>
+                <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+              </div>
             </div>
           </div>
         )}
 
-        {/* Установка — the intention block before the practices (placeholder copy). */}
-        <div className="mb-6 flex flex-col items-center">
-          <div className={`w-full max-w-[360px] rounded-2xl p-5 border text-center ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`}>
-            <h3 className={`text-xl sm:text-2xl font-bold mb-2 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Мои Рекомендации')}</h3>
+        {/* Установка — the intention block before the practices (placeholder copy).
+            mb-4 = the same gap the practices grid uses between tiles (gap-4). */}
+        <div className="mb-4 flex flex-col items-center">
+          <div className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
+            {collapseDot('recommendations')}
+            <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
             <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
               {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
             </p>
@@ -6537,10 +6852,21 @@ const OndaLevel1 = () => {
             from the UX review). The Connect-Watch CTA already lives at
             the top of the biometric block — no inline hint here. */}
         <div className="grid md:grid-cols-2 gap-4 mb-8" data-onda-practices-grid>
-          {[
-            ...currentCircuit.practices.filter(p => p.id === featuredPracticeId),
-            ...currentCircuit.practices.filter(p => p.id !== featuredPracticeId),
-          ].map((practice, idx) => renderPracticeCard(practice, idx === 0))}
+          {(() => {
+            const ps = currentCircuit.practices;
+            // Circuit 1: the three free signal practices lead, in fixed order;
+            // other circuits keep the featured-first ordering. ids untouched.
+            const ordered = currentCircuit.id === 1
+              ? [
+                  ...SIGNAL_PRACTICE_ORDER.map(id => ps.find(p => p.id === id)).filter(Boolean) as typeof ps,
+                  ...ps.filter(p => !SIGNAL_PRACTICE_ORDER.includes(p.id)),
+                ]
+              : [
+                  ...ps.filter(p => p.id === featuredPracticeId),
+                  ...ps.filter(p => p.id !== featuredPracticeId),
+                ];
+            return ordered.map((practice, idx) => renderPracticeCard(practice, idx === 0, true));
+          })()}
         </div>
 
         {/* Section 2.5 — Part Progress bar. Hidden while the user has
@@ -6599,8 +6925,9 @@ const OndaLevel1 = () => {
           {/* Light highlight — a soft indigo ring + gentle halo lifts the
               Your Progress (HRV) card above the surrounding blocks without
               shouting. */}
-          <div className={`rounded-2xl p-4 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}>
-            <div className="text-sm font-medium mb-3" style={{ opacity: 0.75 }}>
+          <div className={`relative rounded-lg p-6 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`} style={collapseStyle('progress', 45, 8)}>
+            {collapseDot('progress')}
+            <div className={`text-xl sm:text-2xl font-bold mb-3 pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>
               {t('home.progress.title')}
             </div>
             <HRVMiniChart
@@ -6976,8 +7303,11 @@ const OndaLevel1 = () => {
           connected={watchHeartRate.isConnected}
         />
 
-        {/* BLE Connect Tracker — Android only, shown above biometrics grid */}
-        {platform !== 'ios' && !vitalsData.connected && (
+        {/* BLE Connect Tracker — Android only, shown above biometrics grid.
+            Hidden whenever a live pulse is already coming through (watch giving
+            HR even with its screen dimmed → displayHeartRate set), so it stops
+            nagging to connect when it isn't needed. */}
+        {platform !== 'ios' && !vitalsData.connected && displayHeartRate == null && (
           <div className={`mb-4 rounded-2xl p-4 max-w-lg mx-auto w-full ${isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 border border-sky-200' : 'bg-black/30 backdrop-blur-sm border border-blue-500/20'}`}>
             <p className={`text-base font-semibold mb-1 ${isLight ? 'text-sky-800' : 'text-white/70'}`}>{t('settings.bluetooth_monitor', 'Bluetooth Heart Rate Monitor')}</p>
             <p className={`text-sm mb-3 ${isLight ? 'text-sky-700' : 'text-white/50'}`}>
@@ -7417,24 +7747,17 @@ const OndaLevel1 = () => {
             mirrored here; the original sites are kept dead-gated
             ({false && (...)}) for now to limit diff size — a future
             cleanup can delete the dead JSX entirely. */}
-        <div className="mb-6">
+        <div className="mb-6 relative">
+          {collapseDot('journey', undefined, { collapsed: !journeyOpen, onToggle: () => setJourneyOpen(v => !v) })}
           <button
             type="button"
             onClick={() => setJourneyOpen(v => !v)}
             aria-expanded={journeyOpen}
             data-testid="journey-toggle"
-            className={`w-full flex items-center justify-between rounded-2xl px-4 sm:px-5 py-3 sm:py-4 transition-all ${emoTint}`}
+            className={`w-full flex items-center rounded-lg px-6 border ring-1 transition-all ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`}
+            style={{ height: '45px' }}
           >
-            <span className="text-base sm:text-lg font-medium">{t('home.journey.title')}</span>
-            <span
-              aria-hidden="true"
-              className="text-sm opacity-70"
-              style={{
-                display: 'inline-block',
-                transition: 'transform 180ms ease',
-                transform: journeyOpen ? 'rotate(180deg)' : 'rotate(0deg)',
-              }}
-            >▾</span>
+            <span className={`text-xl sm:text-2xl font-bold pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('home.journey.title')}</span>
           </button>
         </div>
 
@@ -8273,12 +8596,34 @@ const OndaLevel1 = () => {
       </div>
       </div>
 
-      {/* Модальное окно дневника */}
+      {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
+      <DiaryModal
+        isOpen={showDiaryModal}
+        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null); }}
+        light={isLight}
+        dayRhr={dayRhr}
+        userId={user?.id ?? null}
+        anomaly={diaryAnomaly}
+        eventTime={diaryEventTime}
+        onAnomalySaved={() => {
+          setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null);
+          // Flip the card to state 2 (recorded) and persist.
+          setAnomalyPrompt((prev) => {
+            if (!prev) return prev;
+            const upd = { ...prev, recorded: true, recordedAt: new Date().toISOString() };
+            const st = loadAnomalyState();
+            saveAnomalyState({ ...st, pending: upd });
+            return upd;
+          });
+        }}
+      />
+
+      {/* Practice-log modal (was "Дневник", now "История практик"). */}
       {showJournalModal && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 overflow-y-auto pt-[env(safe-area-inset-top)]">
           <div className={`max-w-4xl w-full max-h-[90vh] rounded-2xl border shadow-2xl my-4 flex flex-col overflow-hidden ${isLight ? 'bg-white text-slate-800 border-violet-200' : 'bg-gradient-to-br from-gray-900 to-black text-white border-indigo-500/30'}`}>
             <div className={`sticky top-0 backdrop-blur-sm border-b p-4 sm:p-6 flex items-center justify-between ${isLight ? 'bg-white/95 border-violet-200' : 'bg-gray-900/95 border-indigo-500/30'}`}>
-              <h2 className="text-lg sm:text-2xl font-bold">📖 {t('practices.journal_title')}</h2>
+              <h2 className="text-lg sm:text-2xl font-bold">📖 {t('nav.practice_history', 'История практик')}</h2>
               <button
                 onClick={() => setShowJournalModal(false)}
                 className={`transition-all ${isLight ? 'text-slate-400 hover:text-slate-700' : 'text-gray-400 hover:text-white'}`}
@@ -8726,7 +9071,15 @@ const OndaLevel1 = () => {
           onPermissionsGranted={() => setShowWatchPrompt(true)}
           onOutcome={(granted) => {
             track('health_permission', { scope: 'healthkit', granted, source: 'onboarding_watch_cta' });
-            if (granted) void loadWatchBaseline();
+            if (granted) {
+              // The user has now explicitly connected + granted: mark "watching"
+              // so the keep-alive auto-manager will start the watch workout AFTER
+              // this modal (and both system sheets) close — never during the
+              // permission window. Set here (not only inside loadWatchBaseline, which
+              // needs history) so a fresh/low-history watch still gets live HR.
+              try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
+              void loadWatchBaseline();
+            }
           }}
         />
       )}
@@ -8824,7 +9177,23 @@ const OndaLevel1 = () => {
               <span className="font-medium">{t('nav.intro') || 'Intro'}</span>
             </button>
 
-            {/* Дневник */}
+            {/* Дневник — the new local-first day-note diary. */}
+            <button
+              onClick={() => {
+                try { track('diary_opened', { source: 'menu' }); } catch { /* noop */ }
+                setShowDiaryModal(true);
+                setShowMenu(false);
+              }}
+              className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
+              style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
+              data-testid="menu-item-diary"
+            >
+              <BookOpen className="w-6 h-6 text-indigo-400" />
+              <span className="font-medium">{t('diary.title', 'Дневник')}</span>
+            </button>
+
+            {/* История практик — the practice log (was labelled "Дневник"; renamed
+                to free that name for the new diary above). */}
             <button
               onClick={() => {
                 setShowJournalModal(true);
@@ -8832,10 +9201,10 @@ const OndaLevel1 = () => {
               }}
               className={`flex items-center gap-3 px-4 sm:px-6 py-3 sm:py-4 rounded-full backdrop-blur-md transition-all text-left border w-full bg-indigo-500/15 hover:bg-indigo-500/25 border-indigo-400/40 ${isLight ? 'text-slate-800' : 'text-white'}`}
               style={{ boxShadow: isLight ? '0 8px 24px rgba(99,102,241,0.12)' : '0 8px 32px rgba(0,0,0,0.4)' }}
-              data-testid="menu-item-diary"
+              data-testid="menu-item-practice-history"
             >
               <Circle className="w-6 h-6 text-cyan-400" />
-              <span className="font-medium">{t('nav.diary')}</span>
+              <span className="font-medium">{t('nav.practice_history', 'История практик')}</span>
             </button>
 
             {/* Статистика */}

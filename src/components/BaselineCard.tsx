@@ -99,15 +99,22 @@ function Slot({ value, caption, side, row, sign, p }: { value: string; caption: 
  * variability block it continues. Reads on the home background in both themes.
  */
 export function BaselineClosingFooter({ data, source, light }: { data: BaselineData; source: BaselineSource; light?: boolean }) {
+  const { t } = useTranslation();
   const copy = useCardCopy();
   const model = buildCardModel(data.readings, data.extras, source, undefined, copy);
   if (!model.variability || !model.breathing) return null;
   const b = model.breathing;
   const textColor = light ? 'rgb(71,85,105)' : 'rgb(200,210,225)';
   const numColor = light ? 'rgb(21,128,61)' : 'rgb(74,222,128)';
+  // Both figures are breaths per minute (your current rate / the coherent target)
+  // — spell out the unit so the bare numbers aren't ambiguous.
+  const unit = t('baseline.bpm_unit', 'дих/хв');
   const Col = ({ num, text, align }: { num: string; text: string; align: 'left' | 'right' }) => (
     <div className={align === 'left' ? 'text-left' : 'text-right'}>
-      <div className="text-[22px] font-bold tabular-nums leading-none" style={{ color: numColor }}>{num}</div>
+      <div className="leading-none">
+        <span className="text-[22px] font-bold tabular-nums" style={{ color: numColor }}>{num}</span>
+        <span className="text-[12px] font-semibold ml-1" style={{ color: numColor, opacity: 0.85 }}>{unit}</span>
+      </div>
       <div className="text-[13.5px] leading-snug mt-1.5 whitespace-pre-line" style={{ color: textColor }}>{text}</div>
     </div>
   );

@@ -61,6 +61,21 @@ export type AnalyticsEventName =
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
   | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag. Lets us see which numbers Health actually gave without a device session.
   | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
+  // Diary (retention step 3 — local-first day notes)
+  | 'diary_opened'                   // diary opened — params: source (home_button | menu | anomaly_prompt(future)).
+  | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
+  | 'diary_synced'                   // local drafts migrated into Supabase on sign-in — params: count.
+  // Anomaly trigger (retention step 4 — baseline deviation → diary prompt)
+  | 'anomaly_detected'               // a personal corridor caught a deviation — params: metric, direction, magnitude_sd.
+  | 'anomaly_prompt_shown'           // the in-app "record your day" prompt was shown — params: metric.
+  | 'anomaly_prompt_answered'        // user wrote an entry from the prompt — params: metric.
+  | 'anomaly_prompt_dismissed'       // user dismissed the prompt without writing — params: metric.
+  | 'anomaly_push_sent'              // a local notification was scheduled/posted — params: metric.
+  | 'anomaly_push_opened'            // user opened the app from that notification — params: metric.
+  | 'anomaly_practice_started'       // user started the offered slow-down practice from a signal — params: metric.
+  // Timeline export (on-device PDF, no content logged)
+  | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
+  | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'
@@ -293,6 +308,17 @@ class AnalyticsService {
   }
 
   private readInternalFlag(): boolean {
+    // Build-baked marker for our own test builds: when VITE_INTERNAL_BUILD is
+    // set at build time, the device is internal from the FIRST JS event — no
+    // manual 7-tap needed. This is what keeps Yakiv's ~10 reinstalls/day out of
+    // the funnel: a reinstall clears localStorage, so without this the early
+    // events (home_view, session_start) would ride as external before the tap,
+    // and the user-scoped `internal` property would never flip to 'true'. App
+    // Store release builds leave VITE_INTERNAL_BUILD unset → prod stays clean
+    // and still uses the hidden 7-tap toggle. (first_open is auto-collected
+    // natively before JS runs, so it may still be unset — but GA4 filters the
+    // marker user-scoped, so the whole user is classified internal regardless.)
+    if (import.meta.env.VITE_INTERNAL_BUILD === 'true') return true;
     try {
       return localStorage.getItem(INTERNAL_KEY) === 'true';
     } catch {

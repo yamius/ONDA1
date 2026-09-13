@@ -96,6 +96,17 @@ export interface BaselineResult {
   extras?: BaselineExtrasResult;
 }
 
+/** Clean per-NIGHT values behind one anomaly corridor (noisy nights already dropped). */
+export interface CorridorSignal {
+  values: number[];   // nightly means, oldest-first, noisy nights excluded
+  validNights: number;
+}
+export interface BaselineCorridorsResult {
+  rhr: CorridorSignal;
+  hrv: CorridorSignal;
+  rr: CorridorSignal;
+}
+
 export interface HealthKitHeartRatePlugin {
   isAvailable(): Promise<{ available: boolean }>;
   requestAuthorization(): Promise<{ authorized: boolean }>;
@@ -105,6 +116,28 @@ export interface HealthKitHeartRatePlugin {
   querySleepHistory(options?: { days?: number }): Promise<SleepHistoryResult>;
   /** Read the N-day baseline (default 14) — daily avg/min/max per signal. Needs full HealthKit auth. */
   queryBaseline(options?: { days?: number }): Promise<BaselineResult>;
+  /** Per-night corridor values for the anomaly trigger (step 4) — noisy nights dropped. */
+  queryBaselineCorridors(options?: { days?: number }): Promise<BaselineCorridorsResult>;
+  /** Hand the native background push its localized wording. The push carries NO
+   *  numbers (those live in the in-app card); it varies by how many signals have
+   *  fired: pushIntro for the first few, pushShort afterwards. */
+  setAnomalyStrings(strings: { title: string; pushIntro: string; pushShort: string }): Promise<{ ok: boolean }>;
+  /** Register HealthKit background delivery so a night deviation posts a local notification. */
+  startAnomalyMonitoring(): Promise<{ started: boolean }>;
+  /** Render an HTML report to a PDF ON-DEVICE and open the native share sheet. */
+  exportPdf(options: {
+    html: string;
+    fileName?: string;
+    /** Optional files to embed in the PDF as extractable attachments (e.g. voice
+     *  recordings) so the report is one shareable file. `data` is base64 (no
+     *  `data:` prefix). Best-effort: if the native side can't embed, it shares
+     *  the plain report. `attached` in the result = how many were embedded. */
+    attachments?: { name: string; data: string; mime?: string }[];
+  }): Promise<{ ok: boolean; path?: string; attached?: number; sharedFiles?: number }>;
+  /** Save a self-contained HTML report (audio embedded → inline players) to a
+   *  file and open the native share sheet. Opening it in a browser plays the
+   *  voice notes in place. The only way to get one file with playable audio on iOS. */
+  exportHtml(options: { html: string; fileName?: string }): Promise<{ ok: boolean; path?: string }>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(

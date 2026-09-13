@@ -1,6 +1,10 @@
 import Foundation
 import Capacitor
 import HealthKit
+import UserNotifications
+import WebKit
+import UIKit
+import PDFKit
 
 @objc(HealthKitHeartRatePlugin)
 public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
@@ -14,6 +18,11 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "queryAllHealthData", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "querySleepHistory", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryBaseline", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "queryBaselineCorridors", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setAnomalyStrings", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "exportPdf", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "exportHtml", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -21,6 +30,13 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     private let healthStore = HKHealthStore()
     private var anchoredQuery: HKAnchoredObjectQuery?
     private var queryAnchor: HKQueryAnchor?
+    private var anomalyObservers: [HKObserverQuery] = []   // retained for background delivery
+    private var anomalyEvaluating = false                  // re-entrancy guard
+    // PDF export (timeline report) — retained until the offscreen webview finishes.
+    private var pdfWebView: WKWebView?
+    private var pdfCall: CAPPluginCall?
+    private var pdfFileName: String = "ONDA.pdf"
+    private var pdfAttachments: [(name: String, data: Data)] = []   // files to embed in the PDF
     
     @objc func isAvailable(_ call: CAPPluginCall) {
         let available = HKHealthStore.isHealthDataAvailable()
@@ -590,6 +606,273 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         }
     }
 
+    /// Per-NIGHT values for the anomaly corridors (retention step 4). For each
+    /// signal returns the clean nightly values (oldest-first) after dropping
+    /// NOISY nights — a night with too few samples (watch off / poor contact /
+    /// broken data) is excluded, because a noisy night misread as a deviation is
+    /// the main source of false alarms (task §1). JS builds mean±SD + evaluates
+    /// the latest night against the corridor of the prior ones.
+    @objc func queryBaselineCorridors(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.reject("HealthKit is not available")
+            return
+        }
+        let days = call.getInt("days") ?? 30
+        let now = Date()
+        let calendar = Calendar.current
+        let startDate = calendar.date(byAdding: .day, value: -days, to: calendar.startOfDay(for: now)) ?? now
+
+        // Per-signal noise floor + whether to restrict to overnight hours.
+        //  rhr: Apple's daily resting-HR is one authoritative, rest-derived value
+        //       per day → 1 sample/day is valid (no min-count exclusion).
+        //  rr:  respiratory rate is only recorded during sleep → already night;
+        //       drop nights with < 3 samples (poor coverage).
+        //  hrv: SDNN can occur anytime → keep only overnight samples, drop nights
+        //       with < 3 (too sparse to trust).
+        let signals: [(key: String, id: HKQuantityTypeIdentifier, minSamples: Int, nightOnly: Bool)] = [
+            ("rhr", .restingHeartRate, 1, false),
+            ("hrv", .heartRateVariabilitySDNN, 3, true),
+            ("rr", .respiratoryRate, 3, false),
+        ]
+
+        var result: [String: Any] = [:]
+        let group = DispatchGroup()
+        for signal in signals {
+            group.enter()
+            queryNightlyValues(signal.id, from: startDate, to: now, minSamples: signal.minSamples, nightOnly: signal.nightOnly) { values in
+                DispatchQueue.main.async {
+                    result[signal.key] = ["values": values, "validNights": values.count]
+                    group.leave()
+                }
+            }
+        }
+        group.notify(queue: .main) { call.resolve(result) }
+    }
+
+    /// All samples in [from, to] → one mean value per night, keeping only nights
+    /// with ≥ minSamples (noise exclusion). `nightOnly` keeps just overnight
+    /// samples (local hour < 9), for signals that also fire in daytime (HRV).
+    /// Returns the clean nightly means oldest-first.
+    private func queryNightlyValues(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, minSamples: Int, nightOnly: Bool, completion: @escaping ([Double]) -> Void) {
+        guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
+            completion([])
+            return
+        }
+        let predicate = HKQuery.predicateForSamples(withStart: from, end: to, options: .strictStartDate)
+        let query = HKSampleQuery(sampleType: type, predicate: predicate, limit: HKObjectQueryNoLimit, sortDescriptors: nil) { _, samples, _ in
+            guard let samples = samples as? [HKQuantitySample], !samples.isEmpty else {
+                completion([])
+                return
+            }
+            let unit = self.unitFor(identifier)
+            let calendar = Calendar.current
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+
+            var daySum: [String: Double] = [:]
+            var dayN: [String: Int] = [:]
+            for sample in samples {
+                if nightOnly {
+                    let hour = calendar.component(.hour, from: sample.endDate)
+                    if hour >= 9 { continue } // keep only overnight → morning
+                }
+                let day = dateFormatter.string(from: sample.endDate)
+                daySum[day, default: 0] += sample.quantity.doubleValue(for: unit)
+                dayN[day, default: 0] += 1
+            }
+            // Keep nights that clear the noise floor, ordered oldest-first.
+            let kept = daySum.keys
+                .filter { (dayN[$0] ?? 0) >= minSamples }
+                .sorted()
+                .map { daySum[$0]! / Double(dayN[$0]!) }
+            completion(kept)
+        }
+        healthStore.execute(query)
+    }
+
+    // ── Anomaly PUSH (retention step 4, Phase C) ────────────────────────────
+    // The JS layer owns the wording (5 languages), so it hands us the current
+    // localized template + metric names to store; the background check fills in
+    // the numbers. Tokens are i18next-style ({{metric}} {{value}} {{lo}} {{hi}}).
+    @objc func setAnomalyStrings(_ call: CAPPluginCall) {
+        let d = UserDefaults.standard
+        d.set(call.getString("title") ?? "ONDA", forKey: "anomaly_title")
+        d.set(call.getString("pushIntro") ?? "", forKey: "anomaly_push_intro")
+        d.set(call.getString("pushShort") ?? "", forKey: "anomaly_push_short")
+        call.resolve(["ok": true])
+    }
+
+    /// Register HealthKit background delivery + observers so the app is woken in
+    /// the morning when the night's data syncs; the observer evaluates the
+    /// corridor and posts a local notification if it deviates (throttled 2 days).
+    @objc func startAnomalyMonitoring(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else { call.resolve(["started": false]); return }
+        // NOTE: notification authorization is requested by intent in
+        // PermissionSetupModal (JS), NOT here — this only wires up observers so it
+        // must never prompt.
+        let ids: [HKQuantityTypeIdentifier] = [.restingHeartRate, .heartRateVariabilitySDNN, .respiratoryRate]
+        // Clear any previous observers (idempotent across app starts).
+        for obs in anomalyObservers { healthStore.stop(obs) }
+        anomalyObservers.removeAll()
+
+        for id in ids {
+            guard let type = HKQuantityType.quantityType(forIdentifier: id) else { continue }
+            let observer = HKObserverQuery(sampleType: type, predicate: nil) { [weak self] _, completion, _ in
+                self?.evaluateAnomalyAndNotify { completion() }
+            }
+            healthStore.execute(observer)
+            anomalyObservers.append(observer)
+            healthStore.enableBackgroundDelivery(for: type, frequency: .hourly) { _, _ in }
+        }
+        call.resolve(["started": true])
+    }
+
+    /// Background corridor check + local notification. Mirrors src/lib/anomaly.ts
+    /// (STRICT gate) — keep the thresholds in sync with that file.
+    private func evaluateAnomalyAndNotify(_ done: @escaping () -> Void) {
+        if anomalyEvaluating { done(); return }
+        anomalyEvaluating = true
+        let finish = { [weak self] in self?.anomalyEvaluating = false; done() }
+
+        let now = Date()
+        let calendar = Calendar.current
+        let start = calendar.date(byAdding: .day, value: -30, to: calendar.startOfDay(for: now)) ?? now
+        let signals: [(key: String, id: HKQuantityTypeIdentifier, minSamples: Int, nightOnly: Bool)] = [
+            ("rhr", .restingHeartRate, 1, false),
+            ("hrv", .heartRateVariabilitySDNN, 3, true),
+            ("rr", .respiratoryRate, 3, false),
+        ]
+        var byKey: [String: [Double]] = [:]
+        let group = DispatchGroup()
+        for s in signals {
+            group.enter()
+            queryNightlyValues(s.id, from: start, to: now, minSamples: s.minSamples, nightOnly: s.nightOnly) { values in
+                byKey[s.key] = values
+                group.leave()
+            }
+        }
+        group.notify(queue: .main) { [weak self] in
+            guard let self = self else { finish(); return }
+            // Throttle: ≤ 1 push / 2 days.
+            let last = UserDefaults.standard.double(forKey: "anomaly_last_signal_at")
+            if last > 0 && now.timeIntervalSince1970 - last < 2 * 24 * 60 * 60 { finish(); return }
+
+            var best: (metric: String, latest: Double, lo: Double, hi: Double, mag: Double)? = nil
+            for s in signals {
+                guard let hit = self.nativeDetectAnomaly(byKey[s.key] ?? [], metric: s.key) else { continue }
+                if best == nil || hit.mag > best!.mag { best = hit }
+            }
+            guard let a = best else { finish(); return }
+            UserDefaults.standard.set(now.timeIntervalSince1970, forKey: "anomaly_last_signal_at")
+            self.postAnomalyNotification(metric: a.metric, value: a.latest, lo: a.lo, hi: a.hi)
+            finish()
+        }
+    }
+
+    /// STRICT gate (mirror of anomaly.ts): ≥8 nights (7 prior + latest), ≥1.5 SD
+    /// out AND the metric floor. Returns nil unless it clears both.
+    private func nativeDetectAnomaly(_ values: [Double], metric: String) -> (metric: String, latest: Double, lo: Double, hi: Double, mag: Double)? {
+        guard values.count >= 8 else { return nil }
+        let latest = values.last!
+        let prior = Array(values.dropLast())
+        let mean = prior.reduce(0, +) / Double(prior.count)
+        let variance = prior.reduce(0) { $0 + pow($1 - mean, 2) } / Double(prior.count - 1)
+        let sd = variance.squareRoot()
+        guard sd > 0 else { return nil }
+        let delta = latest - mean
+        let mag = abs(delta) / sd
+        guard mag >= 1.5 else { return nil }
+        var crosses = false
+        switch metric {
+        case "rhr": crosses = delta > 0 && delta >= 5
+        case "rr": crosses = delta > 0 && delta >= 2
+        case "hrv": crosses = delta < 0 && mean > 0 && (-delta / mean) >= 0.15
+        default: break
+        }
+        guard crosses else { return nil }
+        return (metric, (latest * 10).rounded() / 10, ((mean - sd) * 10).rounded() / 10, ((mean + sd) * 10).rounded() / 10, mag)
+    }
+
+    private func postAnomalyNotification(metric: String, value: Double, lo: Double, hi: Double) {
+        let d = UserDefaults.standard
+        // The push carries NO numbers (those are in the in-app card). It just
+        // varies by how many signals have fired: intro for the first 3, short
+        // after (task §4).
+        let count = d.integer(forKey: "anomaly_push_count") + 1
+        d.set(count, forKey: "anomaly_push_count")
+        let intro = d.string(forKey: "anomaly_push_intro") ?? "Your body signalled last night. Take a look."
+        let short = d.string(forKey: "anomaly_push_short") ?? "There's a fresh signal."
+
+        let content = UNMutableNotificationContent()
+        content.title = d.string(forKey: "anomaly_title") ?? "ONDA"
+        content.body = count <= 3 ? intro : short
+        content.sound = .default
+        content.userInfo = ["anomaly_metric": metric]
+        let req = UNNotificationRequest(identifier: "onda_anomaly", content: content, trigger: nil) // deliver now
+        UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+    }
+
+    // ── Timeline PDF export (task 81) ───────────────────────────────────────
+    // Render a localized HTML report to a PDF ON-DEVICE (WKWebView → A4 pages,
+    // real text so Cyrillic/CJK work), then open the native share sheet. No
+    // server, no email collection — the health data never leaves the phone.
+    // Export a SELF-CONTAINED HTML report (audio embedded as data: URIs → each
+    // voice note has an inline <audio> player). Written to a temp .html file and
+    // shared; opening it in a browser plays the recordings in place — the only way
+    // to get one file with playable audio on iOS (a PDF cannot play/attach audio).
+    @objc func exportHtml(_ call: CAPPluginCall) {
+        guard let html = call.getString("html") else { call.reject("Missing html"); return }
+        let fileName = call.getString("fileName") ?? "ONDA-report.html"
+        DispatchQueue.main.async {
+            let url = FileManager.default.temporaryDirectory.appendingPathComponent(fileName)
+            do {
+                try html.data(using: .utf8)?.write(to: url)
+            } catch {
+                call.reject("HTML write failed: \(error.localizedDescription)")
+                return
+            }
+            CAPLog.print("[exportHtml] wrote \(fileName), \(html.utf8.count) bytes")
+            if let vc = self.bridge?.viewController {
+                let av = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+                if let pop = av.popoverPresentationController {
+                    pop.sourceView = vc.view
+                    pop.sourceRect = CGRect(x: vc.view.bounds.midX, y: vc.view.bounds.midY, width: 0, height: 0)
+                    pop.permittedArrowDirections = []
+                }
+                vc.present(av, animated: true, completion: nil)
+            }
+            call.resolve(["ok": true, "path": url.path])
+        }
+    }
+
+    @objc func exportPdf(_ call: CAPPluginCall) {
+        guard let html = call.getString("html") else { call.reject("Missing html"); return }
+        let fileName = call.getString("fileName") ?? "ONDA-timeline.pdf"
+        // Optional files (e.g. voice recordings) to ship with the report. Parse
+        // robustly: each item is a JSObject ([String: JSValue]); a blanket
+        // `as? [[String: Any]]` cast silently fails and drops everything.
+        var attachments: [(name: String, data: Data)] = []
+        if let arr = call.getArray("attachments") {
+            for item in arr {
+                guard let obj = item as? JSObject,
+                      let name = obj["name"] as? String,
+                      let b64 = obj["data"] as? String,
+                      let data = Data(base64Encoded: b64), !data.isEmpty else { continue }
+                attachments.append((name: name, data: data))
+            }
+        }
+        CAPLog.print("[exportPdf] attachments parsed: \(attachments.count)")
+        DispatchQueue.main.async {
+            let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 595, height: 842))
+            webView.navigationDelegate = self
+            self.pdfWebView = webView
+            self.pdfCall = call
+            self.pdfFileName = fileName
+            self.pdfAttachments = attachments
+            webView.loadHTMLString(html, baseURL: nil)
+        }
+    }
+
     /// The single peak value over [from, to] (true max sample, not a daily mean).
     private func queryDiscreteMax(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, completion: @escaping (Double?) -> Void) {
         guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
@@ -765,5 +1048,248 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         default:
             return .count()
         }
+    }
+}
+
+// MARK: - Timeline PDF: render the offscreen webview to A4 pages, then share.
+extension HealthKitHeartRatePlugin: WKNavigationDelegate {
+    public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        guard webView == pdfWebView else { return }
+        // Let late layout / fonts settle before paginating.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+            self?.finishPdf(webView)
+        }
+    }
+
+    public func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+        guard webView == pdfWebView else { return }
+        pdfCall?.reject("PDF load failed: \(error.localizedDescription)")
+        pdfWebView = nil; pdfCall = nil
+    }
+
+    private func finishPdf(_ webView: WKWebView) {
+        let call = pdfCall
+        let pageSize = CGRect(x: 0, y: 0, width: 595.2, height: 841.8)   // A4 @72dpi
+        let printable = pageSize.insetBy(dx: 36, dy: 40)
+        let render = UIPrintPageRenderer()
+        render.addPrintFormatter(webView.viewPrintFormatter(), startingAtPageAt: 0)
+        render.setValue(pageSize, forKey: "paperRect")
+        render.setValue(printable, forKey: "printableRect")
+
+        let pdfData = NSMutableData()
+        UIGraphicsBeginPDFContextToData(pdfData, pageSize, nil)
+        let pages = max(render.numberOfPages, 1)
+        for i in 0..<pages {
+            UIGraphicsBeginPDFPage()
+            render.drawPage(at: i, in: UIGraphicsGetPDFContextBounds())
+        }
+        UIGraphicsEndPDFContext()
+
+        // Share the report PLUS the voice recordings as SEPARATE playable files in
+        // the same share sheet. We do NOT embed audio into the PDF: iOS PDF viewers
+        // can neither play embedded audio nor even surface PDF file attachments, so
+        // an embedded copy is invisible/unusable to the user — separate .m4a files
+        // are the only way the voice is actually reachable and playable on iOS.
+        let attachments = pdfAttachments
+        let url = FileManager.default.temporaryDirectory.appendingPathComponent(pdfFileName)
+        do {
+            try (pdfData as Data).write(to: url)
+        } catch {
+            call?.reject("PDF write failed: \(error.localizedDescription)")
+            pdfWebView = nil; pdfCall = nil; pdfAttachments = []
+            return
+        }
+
+        // The PDF first, then each recording written to its own temp file.
+        var items: [Any] = [url]
+        do {
+            let dir = FileManager.default.temporaryDirectory
+            var used = Set<String>()
+            for a in attachments {
+                var name = a.name.isEmpty ? "voice.m4a" : a.name
+                if used.contains(name) {   // keep the extension, prefix a counter
+                    var i = 1
+                    var candidate = "\(i)-\(name)"
+                    while used.contains(candidate) { i += 1; candidate = "\(i)-\(name)" }
+                    name = candidate
+                }
+                used.insert(name)
+                let aURL = dir.appendingPathComponent(name)
+                do { try a.data.write(to: aURL); items.append(aURL) }
+                catch { CAPLog.print("[exportPdf] failed to write \(name): \(error.localizedDescription)") }
+            }
+        }
+        let attached = 0
+        CAPLog.print("[exportPdf] sharing \(items.count) item(s): 1 pdf + \(items.count - 1) voice file(s)")
+
+        if let vc = self.bridge?.viewController {
+            let av = UIActivityViewController(activityItems: items, applicationActivities: nil)
+            if let pop = av.popoverPresentationController {   // iPad
+                pop.sourceView = vc.view
+                pop.sourceRect = CGRect(x: vc.view.bounds.midX, y: vc.view.bounds.midY, width: 0, height: 0)
+                pop.permittedArrowDirections = []
+            }
+            vc.present(av, animated: true, completion: nil)
+        }
+        call?.resolve(["ok": true, "path": url.path, "attached": attached, "sharedFiles": items.count])
+        pdfWebView = nil; pdfCall = nil; pdfAttachments = []
+    }
+
+    // MARK: PDF attachment embedding (incremental update)
+    //
+    // iOS has NO public API to add embedded-file attachments to a PDF (neither
+    // Core Graphics PDF nor PDFKit expose the /EmbeddedFiles name tree). So we
+    // append a standards-compliant INCREMENTAL UPDATE by hand: new objects for
+    // each file stream + Filespec, an EmbeddedFiles name tree, and a rewritten
+    // Catalog that points /Names at it (plus /AF for PDF/A-3 readers). The base
+    // bytes are never touched — only appended to — and the caller re-opens the
+    // result with PDFDocument to prove it's valid before sharing, falling back to
+    // the untouched base PDF otherwise. Returns nil if the base can't be parsed.
+    private func embedAttachments(into base: Data, files: [(name: String, data: Data)]) -> Data? {
+        let bytes = [UInt8](base)
+        func asciiIndexOfLast(_ needle: String, in hay: [UInt8]) -> Int? {
+            let n = [UInt8](needle.utf8)
+            guard !n.isEmpty, hay.count >= n.count else { return nil }
+            var i = hay.count - n.count
+            while i >= 0 {
+                var ok = true
+                for j in 0..<n.count where hay[i + j] != n[j] { ok = false; break }
+                if ok { return i }
+                i -= 1
+            }
+            return nil
+        }
+        // 1) Locate the previous startxref offset and the trailer's /Root + /Size.
+        guard let sxIdx = asciiIndexOfLast("startxref", in: bytes) else { return nil }
+        let tail = String(decoding: bytes[sxIdx...], as: UTF8.self)
+        let tailNums = tail.components(separatedBy: CharacterSet(charactersIn: " \r\n\t"))
+            .compactMap { Int($0) }
+        guard let prevStartxref = tailNums.first else { return nil }
+
+        guard let trIdx = asciiIndexOfLast("trailer", in: bytes) else { return nil }
+        let trailerStr = String(decoding: bytes[trIdx...], as: UTF8.self)
+        // /Root n 0 R
+        guard let rootRange = trailerStr.range(of: #"/Root\s+(\d+)\s+\d+\s+R"#, options: .regularExpression) else { return nil }
+        let rootMatch = String(trailerStr[rootRange])
+        let rootObjNum = rootMatch.components(separatedBy: CharacterSet(charactersIn: " \t\r\n"))
+            .compactMap { Int($0) }.first
+        guard let catalogNum = rootObjNum else { return nil }
+        // /Size n
+        let sizeVal: Int = {
+            if let r = trailerStr.range(of: #"/Size\s+(\d+)"#, options: .regularExpression) {
+                return String(trailerStr[r]).components(separatedBy: CharacterSet(charactersIn: " \t\r\n"))
+                    .compactMap { Int($0) }.first ?? 0
+            }
+            return 0
+        }()
+        guard sizeVal > 0 else { return nil }
+        // Optional /ID [<..><..>] — reuse verbatim if present.
+        let idString: String? = {
+            if let r = trailerStr.range(of: #"/ID\s*\[[^\]]*\]"#, options: .regularExpression) {
+                return String(trailerStr[r])
+            }
+            return nil
+        }()
+
+        // 2) Read the existing Catalog object body so we can re-emit it with /Names.
+        guard let catBody = objectDictBody(objNum: catalogNum, in: bytes) else { return nil }
+        var catInner = catBody
+        if !catInner.contains("/Type") { catInner = "/Type /Catalog " + catInner }
+
+        // 3) Assign new object numbers (the catalog reuses its own number).
+        var nextObj = sizeVal
+        var fileStreamNums: [Int] = []
+        var filespecNums: [Int] = []
+        for _ in files { fileStreamNums.append(nextObj); nextObj += 1 }
+        for _ in files { filespecNums.append(nextObj); nextObj += 1 }
+        let nameTreeNum = nextObj; nextObj += 1
+        let newSize = nextObj   // highest new object number + 1
+        let order = files.indices.sorted { files[$0].name < files[$1].name }
+
+        // 4) Serialize the incremental update (a leading newline separates it from
+        //    the base's trailing %%EOF; its length is counted in every offset).
+        var appended = Data()
+        appended.append(Data("\n".utf8))          // separator after base's %%EOF
+        var offsets: [Int: Int] = [:]
+        let baseLen = base.count
+        func pdfString(_ s: String) -> String {
+            var out = "("
+            for ch in s.unicodeScalars {
+                if ch == "(" || ch == ")" || ch == "\\" { out.append("\\") }
+                out.unicodeScalars.append(ch)
+            }
+            out.append(")")
+            return out
+        }
+        func emit(_ objNum: Int, _ text: String) {
+            offsets[objNum] = baseLen + appended.count
+            appended.append(Data(text.utf8))
+        }
+        func emitStream(_ objNum: Int, header: String, payload: Data) {
+            offsets[objNum] = baseLen + appended.count
+            appended.append(Data("\(objNum) 0 obj\n\(header)\nstream\n".utf8))
+            appended.append(payload)
+            appended.append(Data("\nendstream\nendobj\n".utf8))
+        }
+        for (i, file) in files.enumerated() {
+            emitStream(fileStreamNums[i], header: "<< /Type /EmbeddedFile /Length \(file.data.count) >>", payload: file.data)
+        }
+        for (i, file) in files.enumerated() {
+            let nm = pdfString(file.name)
+            emit(filespecNums[i], "\(filespecNums[i]) 0 obj\n<< /Type /Filespec /F \(nm) /UF \(nm) /EF << /F \(fileStreamNums[i]) 0 R /UF \(fileStreamNums[i]) 0 R >> /AFRelationship /Supplement >>\nendobj\n")
+        }
+        var namesArr = ""
+        for idx in order { namesArr += "\(pdfString(files[idx].name)) \(filespecNums[idx]) 0 R " }
+        emit(nameTreeNum, "\(nameTreeNum) 0 obj\n<< /Names [ \(namesArr)] >>\nendobj\n")
+        var afRefs = ""
+        for idx in order { afRefs += "\(filespecNums[idx]) 0 R " }
+        emit(catalogNum, "\(catalogNum) 0 obj\n<< \(catInner) /Names << /EmbeddedFiles \(nameTreeNum) 0 R >> /AF [ \(afRefs)] >>\nendobj\n")
+
+        func entry(_ off: Int) -> String { String(format: "%010d 00000 n \n", off) }
+        var xref = "xref\n\(catalogNum) 1\n" + entry(offsets[catalogNum] ?? 0)
+        xref += "\(sizeVal) \(newSize - sizeVal)\n"
+        for n in sizeVal..<newSize { xref += entry(offsets[n] ?? 0) }
+        let xrefOffset = baseLen + appended.count
+        var trailer = "trailer\n<< /Size \(newSize) /Root \(catalogNum) 0 R /Prev \(prevStartxref)"
+        if let id = idString { trailer += " " + id }
+        trailer += " >>\nstartxref\n\(xrefOffset)\n%%EOF\n"
+
+        var out = base
+        out.append(appended)
+        out.append(Data(xref.utf8))
+        out.append(Data(trailer.utf8))
+        return out
+    }
+
+    /// Extract the inner text of `objNum 0 obj << ... >> endobj` (the dictionary
+    /// body without the enclosing << >>). Handles nested << >> by depth-matching.
+    private func objectDictBody(objNum: Int, in bytes: [UInt8]) -> String? {
+        let marker = [UInt8]("\(objNum) 0 obj".utf8)
+        func isDigit(_ b: UInt8) -> Bool { b >= 0x30 && b <= 0x39 }
+        // Find the marker (there may be several "N 0 obj"; take the last, which an
+        // incremental base won't have but is safe for a single-rev CG PDF). Require
+        // a non-digit before it so "1 0 obj" doesn't match inside "11 0 obj".
+        var start: Int? = nil
+        var i = 0
+        while i <= bytes.count - marker.count {
+            var ok = true
+            for j in 0..<marker.count where bytes[i + j] != marker[j] { ok = false; break }
+            if ok && (i == 0 || !isDigit(bytes[i - 1])) { start = i + marker.count }
+            i += 1
+        }
+        guard var p = start else { return nil }
+        // Find the first << after the marker.
+        while p < bytes.count - 1, !(bytes[p] == 0x3C && bytes[p + 1] == 0x3C) { p += 1 }
+        guard p < bytes.count - 1 else { return nil }
+        let dictStart = p + 2
+        var depth = 1
+        p = dictStart
+        while p < bytes.count - 1 {
+            if bytes[p] == 0x3C && bytes[p + 1] == 0x3C { depth += 1; p += 2; continue }
+            if bytes[p] == 0x3E && bytes[p + 1] == 0x3E { depth -= 1; if depth == 0 { break }; p += 2; continue }
+            p += 1
+        }
+        guard depth == 0, p >= dictStart else { return nil }
+        return String(decoding: bytes[dictStart..<p], as: UTF8.self)
     }
 }

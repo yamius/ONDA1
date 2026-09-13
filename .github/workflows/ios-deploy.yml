@@ -2,6 +2,15 @@ name: iOS - Build and Deploy to TestFlight
 
 on:
   workflow_dispatch:
+    inputs:
+      internal_build:
+        description: >-
+          Mark this build as internal traffic (GA4 user property internal=true,
+          from the FIRST event — no 7-tap needed). "auto" = internal on any
+          non-main branch (feature/test builds), clean on main (release).
+        type: choice
+        options: [auto, "true", "false"]
+        default: auto
 
 jobs:
   build-ios:
@@ -40,6 +49,12 @@ jobs:
           VITE_BUILD_NUMBER: ${{ github.run_number }}
           VITE_COMMIT_HASH: ${{ github.sha }}
           VITE_BRANCH_NAME: ${{ github.ref_name }}
+          # Internal-traffic marker baked into the bundle: internal test builds
+          # report GA4 user property internal=true from their FIRST event, so
+          # Yakiv's ~10 daily reinstalls never pollute the d1 cohort (a reinstall
+          # clears localStorage before the hidden 7-tap could mark it). "auto" =>
+          # internal on any non-main branch, clean on main (the release build).
+          VITE_INTERNAL_BUILD: ${{ github.event.inputs.internal_build == 'true' || (github.event.inputs.internal_build == 'auto' && github.ref_name != 'main') }}
           # Sentry source map upload — see vite.config.ts
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_PROJECT: capacitor

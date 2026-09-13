@@ -166,19 +166,17 @@ class OndaWatchManager: NSObject, WCSessionDelegate {
                 print("[ONDA Manager] sendCommand error: \(error.localizedDescription)")
             }
         } else {
-            // Когда часы не активны - используем оба метода для надёжности
-            
-            // 1. transferUserInfo - разбудит приложение на часах в фоне
+            // Когда часы не активны — transferUserInfo надёжно ставит команду в
+            // очередь и доставляет ОДИН раз, когда часы проснутся.
+            //
+            // ⛔️ НЕ кладём команду в updateApplicationContext. applicationContext
+            // «липкий»: система пере-доставляет последний контекст при КАЖДОМ
+            // запуске часов. Команда "start" там → часы стартуют воркаут на
+            // каждом запуске, в т.ч. поверх системного листа выдачи разрешений
+            // при первом запуске → «выдача разрешений перебита стартом на часах».
+            // applicationContext — только для СОСТОЯНИЯ, не для команд.
             session.transferUserInfo(message)
-            print("[ONDA Manager] Command transferred via userInfo")
-            
-            // 2. updateApplicationContext - данные будут доступны сразу при пробуждении
-            do {
-                try session.updateApplicationContext(["command": type, "ts": Date().timeIntervalSince1970])
-                print("[ONDA Manager] Application context updated")
-            } catch {
-                print("[ONDA Manager] updateApplicationContext error: \(error.localizedDescription)")
-            }
+            print("[ONDA Manager] Command transferred via userInfo (no sticky context)")
         }
     }
     

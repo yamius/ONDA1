@@ -266,6 +266,29 @@ class WorkoutManager: NSObject, ObservableObject {
         }
     }
     
+    /// Start the workout ONLY AFTER the user has answered the HealthKit sheet.
+    ///
+    /// ⚠️ watchOS calls requestAuthorization's completion as soon as the sheet is
+    /// PRESENTED — NOT after the user answers (see requestAuthorizationWithCompletion).
+    /// Starting a workout there launches an HKWorkoutSession ON TOP of the still-
+    /// visible permission sheet and interrupts it → «на часах разрешение
+    /// перебивается». We instead wait for the share-type decision to leave
+    /// .notDetermined (the reliable "user answered" signal) and only then start.
+    /// A returning user whose auth is already decided starts immediately (no wait).
+    func startWorkoutWhenPermissionDecided(maxWait: TimeInterval = 90) {
+        let started = Date()
+        func poll() {
+            if self.permissionDecisionStatus != .notDetermined {
+                // User has answered (or answered earlier) → safe to start now.
+                self.recreateWorkoutSession()
+                return
+            }
+            if Date().timeIntervalSince(started) >= maxWait { return }  // give up quietly
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { poll() }
+        }
+        poll()
+    }
+
     var isAuthorized: Bool {
         guard let heartRateType = HKObjectType.quantityType(forIdentifier: .heartRate) else {
             return false
@@ -323,10 +346,20 @@ class WorkoutManager: NSObject, ObservableObject {
     
     func startWorkout() {
         logDiagnostic("🏃 startWorkout() called", important: true)
-        
+
         // Если сессия уже активна, не запускаем повторно
         if session?.state == .running {
             logDiagnostic("⏭️ Workout already running, skipping")
+            return
+        }
+
+        // Definitive guard for EVERY caller: never launch a workout session while
+        // the HealthKit permission is still undecided — an HKWorkoutSession started
+        // over the visible sheet interrupts it («на часах разрешение перебивается»).
+        // Gate on the SHARE-type decision (workoutType); the READ-type status is
+        // always .notDetermined (privacy) and can't be used here.
+        if permissionDecisionStatus == .notDetermined {
+            logDiagnostic("⏸️ startWorkout skipped — HealthKit permission not decided yet")
             return
         }
 
@@ -809,15 +842,15 @@ extension WorkoutManager: WCSessionDelegate {
             print("[WorkoutManager] ✅ WCSession \(stateString)")
         }
         
-        // Проверяем applicationContext при активации сессии
+        // ⛔️ НЕ выполняем команды из receivedApplicationContext при активации.
+        // Это ГЛАВНЫЙ источник «перебивает на часах»: receivedApplicationContext
+        // хранит ПОСЛЕДНИЙ контекст и читается при КАЖДОМ запуске часов, поэтому
+        // застрявшая команда "start" стартовала воркаут поверх листа выдачи
+        // разрешений на первом запуске. Команды приходят через sendMessage /
+        // transferUserInfo (доставляются один раз). Контекст — только состояние.
         let context = session.receivedApplicationContext
         if !context.isEmpty {
-            print("[WorkoutManager] Found pending context: \(context.keys.joined(separator: ", "))")
-            
-            if let command = context["command"] as? String {
-                print("[WorkoutManager] Processing pending command: \(command)")
-                handleCommand(["type": command])
-            }
+            print("[WorkoutManager] Pending context present (commands ignored): \(context.keys.joined(separator: ", "))")
         }
         
         // Если есть активная сессия, отправляем текущий статус
@@ -881,13 +914,17 @@ extension WorkoutManager: WCSessionDelegate {
         handleCommand(userInfo)
     }
     
-    // Обработка applicationContext - вызывается когда iPhone обновляет контекст
+    // Обработка applicationContext — вызывается когда iPhone обновляет контекст.
+    //
+    // ⛔️ НЕ запускаем воркаут из applicationContext. Контекст «липкий»: система
+    // пере-доставляет последний контекст при КАЖДОМ запуске часов, поэтому старая
+    // команда "start" стартовала воркаут на каждом запуске — в т.ч. поверх листа
+    // выдачи разрешений при первом запуске («перебивает на часах»). Команды
+    // приходят через sendMessage / transferUserInfo (доставляются один раз);
+    // applicationContext используем только для не-командного состояния. Этот
+    // guard также обезвреживает контекст, уже застрявший на текущих установках.
     func session(_ session: WCSession, didReceiveApplicationContext applicationContext: [String : Any]) {
-        print("[WorkoutManager] 📋 Received applicationContext: \(applicationContext.keys.joined(separator: ", "))")
-        
-        if let command = applicationContext["command"] as? String {
-            handleCommand(["type": command])
-        }
+        print("[WorkoutManager] 📋 Received applicationContext (ignored for commands): \(applicationContext.keys.joined(separator: ", "))")
     }
     
     private func handleCommand(_ data: [String: Any]) {
@@ -929,7 +966,7 @@ extension WorkoutManager: WCSessionDelegate {
                 
             case "start":
                 print("[WorkoutManager] 🟢 START command received")
-                
+
                 // Проверяем, уже ли активна сессия
                 if self.isActive {
                     print("[WorkoutManager] ℹ️ Workout already active, skipping")
@@ -937,6 +974,18 @@ extension WorkoutManager: WCSessionDelegate {
                     if self.heartRate > 0 {
                         self.sendHeartRateToPhone(self.heartRate, immediate: true)
                     }
+                    return
+                }
+
+                // Не стартуем воркаут, пока пользователь не ответил на системный
+                // лист HealthKit: startWorkout поверх листа перебивает окно выдачи
+                // разрешений на часах. Проверяем РЕШЕНИЕ по SHARE-типу (workoutType) —
+                // для READ-типа (пульс) статус ВСЕГДА .notDetermined из-за приватности,
+                // поэтому по нему гейтить нельзя (заблокировало бы старт навсегда).
+                // Свой воркаут часы запустят сами после ответа (см.
+                // startWorkoutWhenPermissionDecided в колбэке авторизации).
+                if self.permissionDecisionStatus == .notDetermined {
+                    print("[WorkoutManager] ⏸️ start ignored — permission not decided yet (avoid interrupting the sheet)")
                     return
                 }
                 

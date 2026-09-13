@@ -81,7 +81,8 @@
     "watch_hint_title": "Apple Watch",
     "watch_hint_text": "Concede acceso a los datos de salud en la app ONDA de tu reloj",
     "watch_activate_title": "Onda Life",
-    "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica"
+    "watch_activate_text": "Abre la app en tu reloj para un seguimiento preciso de la práctica",
+    "practice_history": "Historial de prácticas"
   },
   "permissions": {
     "description": "Para que ONDA funcione correctamente, conecta un reloj y permite el acceso a tu frecuencia cardíaca.",
@@ -96,7 +97,13 @@
     "notifications_description": "Un suave aviso diario y protección de racha. Ambos se activan manualmente en Ajustes — conceder el permiso ahora solo desbloquea los interruptores.",
     "grant_all": "Permitir",
     "requesting": "Solicitando permisos...",
-    "setup_later": "Configurar después"
+    "setup_later": "Configurar después",
+    "setup_title": "Configuración",
+    "setup_description": "Conectar tu baseline y el sistema de avisos",
+    "card_health_title": "Pulso y variabilidad",
+    "card_health_desc": "Tu reloj ya ha registrado semanas de datos. Conéctalo y ONDA mostrará tu corredor personal de normalidad.",
+    "card_notif_title": "Sugerencias",
+    "card_notif_desc": "Cuando tus métricas se salgan claramente de tu corredor, te avisaremos con discreción. No más de una vez cada dos días, solo cuando importe."
   },
   "watch": {
     "open_app_prompt": "Abre la app en Apple Watch para monitorear tu frecuencia cardíaca",
@@ -1149,7 +1156,7 @@
   },
   "home": {
     "progress": {
-      "title": "Tu progreso",
+      "title": "Progreso",
       "streak_empty": "Completa tu primera práctica para empezar tu racha",
       "streak_label_one": "Racha de {{count}} día",
       "streak_label_other": "Racha de {{count}} días",
@@ -1168,7 +1175,7 @@
       "connect_watch": "Conectar"
     },
     "journey": {
-      "title": "Tu viaje"
+      "title": "Viaje"
     },
     "quick_mood": {
       "title": "Chequeo rápido de estado"
@@ -1178,7 +1185,7 @@
     },
     "biometric": {
       "connect_title": "Conecta Apple Watch",
-      "connect_body": "Conecta y mira tu ritmo cardíaco en tiempo real durante las prácticas de respiración.",
+      "connect_body": "Tu reloj ya ha registrado semanas de datos. Conéctalo y ONDA mostrará tu baseline y te avisará cuando algo cambie.",
       "connect_watch": "Apple Watch",
       "connect_camera": "Cámara",
       "connect_cta": "Configurar"
@@ -4190,12 +4197,12 @@
     "dark": "Oscura"
   },
   "baseline": {
-    "title": "Mi Baseline",
+    "title": "Baseline",
     "subtitle": "Vuelve mañana y verás la diferencia",
     "subtitle_note": "(entre el promedio del período y hoy)",
     "shift": "Shift",
     "empty_hint": "Conecta tu Apple Watch para abrir tu baseline de 14 noches desde Salud",
-    "setup_title": "Mis Recomendaciones",
+    "setup_title": "Recomendaciones",
     "setup_body": "Las prácticas de abajo equilibran tu ritmo cardíaco — solo sigue las indicaciones durante la sesión.",
     "resting_pulse": "PULSO EN REPOSO",
     "vs_baseline": "vs baseline",
@@ -4221,6 +4228,98 @@
     "var_right": "cuando por fin\nse soltó",
     "breath_left": "así respira tu cuerpo\nsin ti",
     "breath_right": "a este ritmo empiezas\na trabajar con tu sistema nervioso",
-    "live": "resp / min\nen vivo"
+    "live": "resp / min\nen vivo",
+    "bpm_unit": "resp/min"
+  },
+  "diary": {
+    "title": "Diario",
+    "record_cta": "Cronología",
+    "text_placeholder": "¿Qué pasó? Un par de palabras…",
+    "voice": "Voz",
+    "recording": "Grabando",
+    "voice_note": "Nota de voz",
+    "mic_denied": "Micrófono no disponible: puedes escribirlo.",
+    "when": "Cuándo",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "empty": "Aún nada",
+    "empty_hint": "Anota algo de tu día: unas palabras, voz o una foto",
+    "day_pulse": "pulso en reposo {{rhr}}",
+    "timeline": "Cronología",
+    "scale_week": "Semana",
+    "scale_month": "Mes",
+    "scale_all": "Todo",
+    "rail_baseline": "Baseline",
+    "rail_diary": "Diario",
+    "add": "Añadir",
+    "add_text": "Texto",
+    "add_voice": "Voz",
+    "add_photo": "Foto",
+    "photo": "Foto",
+    "new_entry": "Nueva entrada",
+    "today": "Hoy",
+    "pick_date": "Elegir fecha",
+    "metric_hrv": "HRV",
+    "metric_pulse": "Pulso",
+    "metric_breath": "Resp."
+  },
+  "anomaly": {
+    "prompt": "Tu {{metric}} hoy es {{value}} — normalmente {{lo}}–{{hi}}. ¿Pasó algo?",
+    "metric_rhr": "pulso en reposo",
+    "metric_hrv": "variabilidad",
+    "metric_rr": "respiración",
+    "cta": "Registrar el día",
+    "push_intro": "Tu cuerpo dio una señal anoche. Échale un vistazo.",
+    "push_short": "Hay una señal nueva.",
+    "prompt_rhr": "Tu pulso anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
+    "prompt_hrv": "Tu variabilidad anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
+    "prompt_rr": "Tu respiración anoche fue {{value}} — normalmente {{lo}}–{{hi}}.",
+    "explain_rhr": "Pulso más alto de lo habitual: tu cuerpo estuvo en tensión anoche.",
+    "explain_hrv": "Recuperación por debajo de tu norma: suele ser fatiga acumulada.",
+    "explain_rr": "Respiración más rápida de lo habitual: pasa con la tensión.",
+    "practice_offer": "Una práctica de desaceleración ayudará a tu cuerpo a volver al ritmo.",
+    "causes": "¿Qué influyó? Café, estrés, sueño, alcohol.",
+    "causes_more": "Describe todo lo que pudo influir.",
+    "record_hint": "Anótalo: con el tiempo verás el panorama completo de tu salud.",
+    "record": "Registrar",
+    "remind_later": "Recordar más tarde",
+    "start_practice": "Empezar práctica",
+    "saved": "Guardado en la cronología · {{when}}"
+  },
+  "pdf": {
+    "subtitle": "Cronología de salud",
+    "private_note": "Datos personales · Métricas de Apple Health",
+    "period": "Período",
+    "baseline_heading": "Baseline del período",
+    "min": "mín",
+    "avg": "med",
+    "max": "máx",
+    "nights": "{{count}} noches",
+    "timeline_heading": "Cronología diaria",
+    "col_date": "Fecha",
+    "notes_heading": "Notas",
+    "signals_heading": "Señales del período",
+    "empty": "Sin datos del período",
+    "export": "Compartir",
+    "period_7": "Últimos 7 días",
+    "period_30": "Últimos 30 días",
+    "period_all": "Todo",
+    "make_title": "Crear PDF",
+    "include": "Qué incluir",
+    "inc_text": "Texto de las notas",
+    "inc_photo": "Fotos (vistas ligeras)",
+    "inc_voice": "Notas de voz",
+    "voice_hint": "Las notas de voz se envían con el informe como archivos de audio aparte en la misma hoja de compartir (un PDF no reproduce sonido).",
+    "making": "Preparando…",
+    "period_all_short": "Todo",
+    "period_90": "3 mes",
+    "period_180": "6 mes",
+    "period_custom": "Rango",
+    "dialog_title": "Crear informe",
+    "make_html": "Crear HTML",
+    "voice_hint_html": "Con voz, el informe se guarda como archivo HTML: cada grabación se reproduce dentro (ábrelo en un navegador). Un PDF no reproduce sonido.",
+    "photo_hint": "El informe se guarda como PDF: fácil de imprimir y mostrar al médico."
   }
 }
