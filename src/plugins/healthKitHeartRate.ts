@@ -134,6 +134,10 @@ export interface HealthKitHeartRatePlugin {
      *  the plain report. `attached` in the result = how many were embedded. */
     attachments?: { name: string; data: string; mime?: string }[];
   }): Promise<{ ok: boolean; path?: string; attached?: number; sharedFiles?: number }>;
+  /** Save a self-contained HTML report (audio embedded → inline players) to a
+   *  file and open the native share sheet. Opening it in a browser plays the
+   *  voice notes in place. The only way to get one file with playable audio on iOS. */
+  exportHtml(options: { html: string; fileName?: string }): Promise<{ ok: boolean; path?: string }>;
   startRealtimeMonitoring(): Promise<{ started: boolean }>;
   stopRealtimeMonitoring(): Promise<{ stopped: boolean }>;
   addListener(

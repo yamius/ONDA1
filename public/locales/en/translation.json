@@ -4317,6 +4317,9 @@
     "period_90": "3 mo",
     "period_180": "6 mo",
     "period_custom": "Range",
-    "dialog_title": "Create report"
+    "dialog_title": "Create report",
+    "make_html": "HTML report",
+    "voice_hint_html": "With voice, the report is saved as an HTML file: each recording plays right inside it (open in a browser). A PDF can't play sound.",
+    "photo_hint": "The report is saved as a PDF — easy to print and show a doctor."
   }
 }

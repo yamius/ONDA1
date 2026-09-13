@@ -18,6 +18,11 @@ export interface TimelinePdfData {
   /** entry id → voice-note number (1-based), matching the shared audio file
    *  `voice-NN-…` so the reader can tell which recording is which on the timeline. */
   voiceNums?: Record<string, number>;
+  /** entry id → full audio data URI. When present, an INTERACTIVE report is built:
+   *  each voice note gets an inline <audio controls> player (plays in a browser,
+   *  the whole thing stays one self-contained file). Used for the HTML export;
+   *  omit for the print/PDF path (a PDF can't play audio). */
+  audio?: Record<string, string>;
 }
 
 /** Minimal i18n surface the report needs (passed in so the lib stays pure). */
@@ -98,17 +103,22 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   const inc = data.include ?? { text: true, photo: true, voice: true };
   const photos = data.photos ?? {};
   const voiceNums = data.voiceNums ?? {};
+  const audio = data.audio ?? {};
   const noteBlocks = entries.map((e) => {
     const bits: string[] = [];
     if (inc.text && e.text) bits.push(esc(e.text));
     if (inc.voice && e.hasAudio) {
       const n = voiceNums[e.id];
-      // №N ties this marker to the shared audio file voice-NN-…
+      // №N ties this marker to the shared audio file voice-NN-… (PDF path).
       bits.push(`<span class="tag">🎤 ${esc(c.voiceNote)}${n ? ` №${n}` : ''}</span>`);
     }
+    // Interactive HTML: an inline player right at the note (plays in a browser).
+    const player = inc.voice && audio[e.id]
+      ? `<audio class="rec" controls preload="none" src="${audio[e.id]}"></audio>`
+      : '';
     const img = inc.photo && photos[e.id] ? `<img class="thumb" src="${photos[e.id]}" alt="">` : '';
-    if (bits.length === 0 && !img) return '';
-    return `<div class="note"><span class="date">${esc(fmtDateTime(e.event_time, c.lang))}</span> ${bits.join(' ')}${img ? `<div>${img}</div>` : ''}</div>`;
+    if (bits.length === 0 && !img && !player) return '';
+    return `<div class="note"><span class="date">${esc(fmtDateTime(e.event_time, c.lang))}</span> ${bits.join(' ')}${player ? `<div>${player}</div>` : ''}${img ? `<div>${img}</div>` : ''}</div>`;
   }).join('');
 
   // Signals — deviations that carried through the trigger.
@@ -139,6 +149,7 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   .note .date { color: #6366f1; font-weight: 600; margin-right: 6px; }
   .note .tag { color: #7c3aed; font-size: 10px; }
   .note .thumb { max-width: 130px; max-height: 100px; border-radius: 6px; margin-top: 4px; border: 1px solid #e0e7ff; }
+  .note .rec { width: 100%; max-width: 320px; height: 34px; margin-top: 6px; display: block; }
   .empty { color: #94a3b8; text-align: center; padding: 40px 0; }
 </style></head>
 <body style="padding: 8px 4px;">

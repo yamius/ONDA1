@@ -22,6 +22,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "setAnomalyStrings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportPdf", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "exportHtml", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "stopRealtimeMonitoring", returnType: CAPPluginReturnPromise)
     ]
@@ -815,6 +816,35 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     // Render a localized HTML report to a PDF ON-DEVICE (WKWebView → A4 pages,
     // real text so Cyrillic/CJK work), then open the native share sheet. No
     // server, no email collection — the health data never leaves the phone.
+    // Export a SELF-CONTAINED HTML report (audio embedded as data: URIs → each
+    // voice note has an inline <audio> player). Written to a temp .html file and
+    // shared; opening it in a browser plays the recordings in place — the only way
+    // to get one file with playable audio on iOS (a PDF cannot play/attach audio).
+    @objc func exportHtml(_ call: CAPPluginCall) {
+        guard let html = call.getString("html") else { call.reject("Missing html"); return }
+        let fileName = call.getString("fileName") ?? "ONDA-report.html"
+        DispatchQueue.main.async {
+            let url = FileManager.default.temporaryDirectory.appendingPathComponent(fileName)
+            do {
+                try html.data(using: .utf8)?.write(to: url)
+            } catch {
+                call.reject("HTML write failed: \(error.localizedDescription)")
+                return
+            }
+            CAPLog.print("[exportHtml] wrote \(fileName), \(html.utf8.count) bytes")
+            if let vc = self.bridge?.viewController {
+                let av = UIActivityViewController(activityItems: [url], applicationActivities: nil)
+                if let pop = av.popoverPresentationController {
+                    pop.sourceView = vc.view
+                    pop.sourceRect = CGRect(x: vc.view.bounds.midX, y: vc.view.bounds.midY, width: 0, height: 0)
+                    pop.permittedArrowDirections = []
+                }
+                vc.present(av, animated: true, completion: nil)
+            }
+            call.resolve(["ok": true, "path": url.path])
+        }
+    }
+
     @objc func exportPdf(_ call: CAPPluginCall) {
         guard let html = call.getString("html") else { call.reject("Missing html"); return }
         let fileName = call.getString("fileName") ?? "ONDA-timeline.pdf"

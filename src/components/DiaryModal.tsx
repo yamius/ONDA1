@@ -529,33 +529,20 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     // play audio inside a PDF (nor surface embedded attachments), so the native
     // side shares the recordings as separate playable files in the same share
     // sheet. Robust data-URI parse: handles `data:audio/mp4;codecs=…;base64,…`.
-    const attachments: { name: string; data: string; mime: string }[] = [];
-    const voiceNums: Record<string, number> = {};   // entry id → №N (matches file name + PDF marker)
+    // Voice → inline players in a self-contained HTML report (the only way to get
+    // ONE file with playable audio on iOS — a PDF can't play or attach audio).
+    // Collect the full audio data URIs for in-range voice notes; each becomes an
+    // <audio> player right at its point on the timeline.
+    const audioMap: Record<string, string> = {};
     if (exportInc.voice) {
-      // Number voice notes chronologically so the file `voice-NN-…` and the PDF
-      // marker «🎤 …  №N» line up — that's how the reader maps a recording to its
-      // point on the timeline. Same asc order the PDF renders notes in.
-      const voiceEntries = fEntries
-        .filter((e) => e.hasAudio && !!media[e.id]?.audio)
-        .sort((a, b) => a.event_time.localeCompare(b.event_time));
-      let vn = 0;
-      for (const e of voiceEntries) {
-        const src = media[e.id]!.audio!;
-        const bi = src.indexOf('base64,');
-        if (!src.startsWith('data:') || bi < 0) continue;
-        const meta = src.slice(5, bi);                 // e.g. "audio/mp4;codecs=..."
-        const mime = (meta.split(';')[0] || 'audio/mp4').trim();
-        const data = src.slice(bi + 'base64,'.length);
-        if (!data) continue;
-        const ext = mime.includes('webm') ? 'webm' : mime.includes('aac') ? 'aac' : mime.includes('mpeg') ? 'mp3' : mime.includes('wav') ? 'wav' : 'm4a';
-        vn += 1;
-        const nn = String(vn).padStart(2, '0');
-        const stamp = new Date(e.event_time).toISOString().slice(0, 16).replace(/[:T]/g, '-');
-        attachments.push({ name: `voice-${nn}-${stamp}.${ext}`, data, mime });
-        voiceNums[e.id] = vn;
+      for (const e of fEntries) {
+        const src = media[e.id]?.audio;
+        if (e.hasAudio && src && src.startsWith('data:') && src.includes('base64,')) audioMap[e.id] = src;
       }
     }
-    try { trackEvent('timeline_export_voice', { count: attachments.length }); } catch { /* noop */ }
+    const voiceCount = Object.keys(audioMap).length;
+    const useHtml = exportInc.voice && voiceCount > 0;   // playable HTML vs printable PDF
+    try { trackEvent('timeline_export_voice', { count: voiceCount, format: useHtml ? 'html' : 'pdf' }); } catch { /* noop */ }
     const copy: TimelinePdfCopy = {
       brand: 'ONDA Life',
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
@@ -576,12 +563,16 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
       empty: t('pdf.empty', 'Нет данных за период'),
       lang: i18n.language || 'en',
     };
-    const html = buildTimelineHtml({ samples: fSamples, entries: fEntries, include: exportInc, photos, voiceNums }, copy);
+    const html = buildTimelineHtml({ samples: fSamples, entries: fEntries, include: exportInc, photos, audio: useHtml ? audioMap : undefined }, copy);
     try {
-      await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf`, attachments });
-      try { trackEvent('timeline_export_completed', { period: periodTag }); } catch { /* noop */ }
+      if (useHtml) {
+        await HealthKitHeartRate.exportHtml({ html, fileName: `ONDA-${todayStr()}.html` });
+      } else {
+        await HealthKitHeartRate.exportPdf({ html, fileName: `ONDA-${todayStr()}.pdf` });
+      }
+      try { trackEvent('timeline_export_completed', { period: periodTag, format: useHtml ? 'html' : 'pdf' }); } catch { /* noop */ }
       setExportMenuOpen(false);
-    } catch (e) { console.warn('[pdf] export failed', e); }
+    } catch (e) { console.warn('[report] export failed', e); }
     finally { setExporting(false); }
   };
 
@@ -862,14 +853,16 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                 })}
               </div>
               <p className={`text-[11px] leading-snug mb-4 ${light ? 'text-slate-400' : 'text-white/40'}`}>
-                {t('pdf.voice_hint', 'Голосовые в PDF отмечаются датой — сама запись остаётся в приложении (PDF не проигрывает звук).')}
+                {exportInc.voice
+                  ? t('pdf.voice_hint_html', 'З голосом звіт зберігається як HTML-файл: кожна голосова грає прямо в ньому (відкрий у браузері). PDF не вміє звук.')
+                  : t('pdf.photo_hint', 'Звіт збережеться як PDF — зручно друкувати та показати лікарю.')}
               </p>
 
               <button onClick={doExport} disabled={exporting || (exportPeriod === 'custom' && (!customFrom || !customTo))} data-testid="diary-export-go"
                 className={`w-full py-3 rounded-xl font-semibold flex items-center justify-center gap-2 transition-all disabled:opacity-60 ${light ? 'bg-violet-500 text-white hover:bg-violet-600' : 'bg-indigo-500 text-white hover:bg-indigo-600'}`}>
                 {exporting
                   ? <><div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />{t('pdf.making', 'Готовим…')}</>
-                  : <><Share2 className="w-4 h-4" />{t('pdf.make_title', 'Сделать PDF')}</>}
+                  : <><Share2 className="w-4 h-4" />{exportInc.voice ? t('pdf.make_html', 'HTML-звіт') : t('pdf.make_title', 'Зробити PDF')}</>}
               </button>
             </div>
           </div>
