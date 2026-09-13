@@ -40,6 +40,15 @@ function fmtDate(iso: string | number, lang: string): string {
   try { return new Date(iso).toLocaleDateString(lang || undefined, { day: 'numeric', month: 'short', year: 'numeric' }); }
   catch { return String(iso).slice(0, 10); }
 }
+function fmtTime(iso: string | number, lang: string): string {
+  try { return new Date(iso).toLocaleTimeString(lang || undefined, { hour: '2-digit', minute: '2-digit' }); }
+  catch { return ''; }
+}
+/** Date + time — so it's clear WHEN a reading was taken / a note was made. */
+function fmtDateTime(iso: string | number, lang: string): string {
+  const t = fmtTime(iso, lang);
+  return t ? `${fmtDate(iso, lang)}, ${t}` : fmtDate(iso, lang);
+}
 function stats(xs: number[]) {
   if (xs.length === 0) return null;
   const min = Math.min(...xs), max = Math.max(...xs);
@@ -71,7 +80,7 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
   // Timeline table: one row per baseline sample (a day's reading).
   const tlRows = samples.map((s) => {
     const dev = anomalyDates.has(dayKey(s.time)) ? ` <span class="dev">${esc(c.deviation)}</span>` : '';
-    return `<tr><td>${esc(fmtDate(s.time, c.lang))}${dev}</td><td>${s.rhr ?? c.none}</td><td>${s.hrv ?? c.none}</td><td>${s.rr ?? c.none}</td></tr>`;
+    return `<tr><td>${esc(fmtDateTime(s.time, c.lang))}${dev}</td><td>${s.rhr ?? c.none}</td><td>${s.hrv ?? c.none}</td><td>${s.rr ?? c.none}</td></tr>`;
   }).join('');
 
   // Notes (facts) — text, or a marker for voice/photo.
@@ -81,14 +90,14 @@ export function buildTimelineHtml(data: TimelinePdfData, c: TimelinePdfCopy): st
       : (e.hasAudio ? `<i>${esc(c.voiceNote)}</i>` : e.hasPhoto ? `<i>${esc(c.photo)}</i>` : '');
     if (!body && !e.hasAudio && !e.hasPhoto) return '';
     const extra = [e.hasAudio ? '🎤' : '', e.hasPhoto ? '🖼' : ''].filter(Boolean).join(' ');
-    return `<div class="note"><span class="date">${esc(fmtDate(e.event_time, c.lang))}</span> ${body} ${extra ? `<span class="muted">${extra}</span>` : ''}</div>`;
+    return `<div class="note"><span class="date">${esc(fmtDateTime(e.event_time, c.lang))}</span> ${body} ${extra ? `<span class="muted">${extra}</span>` : ''}</div>`;
   }).join('');
 
   // Signals — deviations that carried through the trigger.
   const signalRows = entries.filter((e) => e.fromAnomaly).map((e) => {
     const mLabel = e.anomalyMetric ? (c.metric as Record<string, string>)[e.anomalyMetric] ?? e.anomalyMetric : c.none;
     const delta = e.anomalyDelta != null ? (e.anomalyDelta > 0 ? `+${e.anomalyDelta}` : `${e.anomalyDelta}`) : '';
-    return `<tr><td>${esc(fmtDate(e.event_time, c.lang))}</td><td>${esc(mLabel)}</td><td>${esc(delta)}</td><td>${e.text ? esc(e.text) : c.none}</td></tr>`;
+    return `<tr><td>${esc(fmtDateTime(e.event_time, c.lang))}</td><td>${esc(mLabel)}</td><td>${esc(delta)}</td><td>${e.text ? esc(e.text) : c.none}</td></tr>`;
   }).join('');
 
   const isEmpty = samples.length === 0 && entries.length === 0;

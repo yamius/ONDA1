@@ -473,7 +473,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     if (Capacitor.getPlatform() !== 'ios') return;
     try { trackEvent('timeline_export_tapped', {}); } catch { /* noop */ }
     const copy: TimelinePdfCopy = {
-      brand: 'ONDA',
+      brand: 'ONDA Life',
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),
       privateNote: t('pdf.private_note', 'Личные данные, сформировано на устройстве'),
       period: t('pdf.period', 'Период'),
