@@ -525,23 +525,29 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
         if (e.hasPhoto && src) { try { photos[e.id] = await makePhotoThumb(src); } catch { /* skip */ } }
       }
     }
-    // Collect voice recordings as PDF file attachments (native PDFKit path). A
-    // printed PDF can't play audio inline, but it CAN carry the recordings as
-    // extractable attachments → one shareable file. Best-effort: skipped if the
-    // native side can't embed (it then shares the plain report).
+    // Collect voice recordings to ship WITH the report. iOS PDF viewers can't
+    // play audio inside a PDF (nor surface embedded attachments), so the native
+    // side shares the recordings as separate playable files in the same share
+    // sheet. Robust data-URI parse: handles `data:audio/mp4;codecs=…;base64,…`.
     const attachments: { name: string; data: string; mime: string }[] = [];
     if (exportInc.voice) {
+      let idx = 0;
       for (const e of fEntries) {
         const src = media[e.id]?.audio;
         if (!e.hasAudio || !src) continue;
-        const m = /^data:([^;]+);base64,(.*)$/.exec(src);
-        if (!m) continue;
-        const mime = m[1] || 'audio/mp4';
-        const ext = mime.includes('webm') ? 'webm' : mime.includes('aac') ? 'aac' : mime.includes('mpeg') ? 'mp3' : 'm4a';
+        const bi = src.indexOf('base64,');
+        if (!src.startsWith('data:') || bi < 0) continue;
+        const meta = src.slice(5, bi);                 // e.g. "audio/mp4;codecs=..."
+        const mime = (meta.split(';')[0] || 'audio/mp4').trim();
+        const data = src.slice(bi + 'base64,'.length);
+        if (!data) continue;
+        const ext = mime.includes('webm') ? 'webm' : mime.includes('aac') ? 'aac' : mime.includes('mpeg') ? 'mp3' : mime.includes('wav') ? 'wav' : 'm4a';
         const stamp = new Date(e.event_time).toISOString().slice(0, 16).replace(/[:T]/g, '-');
-        attachments.push({ name: `voice-${stamp}.${ext}`, data: m[2], mime });
+        idx += 1;
+        attachments.push({ name: `voice-${stamp}-${idx}.${ext}`, data, mime });
       }
     }
+    try { trackEvent('timeline_export_voice', { count: attachments.length }); } catch { /* noop */ }
     const copy: TimelinePdfCopy = {
       brand: 'ONDA Life',
       subtitle: t('pdf.subtitle', 'Таймлайн здоровья'),

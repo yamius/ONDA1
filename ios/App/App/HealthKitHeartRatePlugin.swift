@@ -818,16 +818,20 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     @objc func exportPdf(_ call: CAPPluginCall) {
         guard let html = call.getString("html") else { call.reject("Missing html"); return }
         let fileName = call.getString("fileName") ?? "ONDA-timeline.pdf"
-        // Optional files (e.g. voice recordings) to embed as PDF attachments.
+        // Optional files (e.g. voice recordings) to ship with the report. Parse
+        // robustly: each item is a JSObject ([String: JSValue]); a blanket
+        // `as? [[String: Any]]` cast silently fails and drops everything.
         var attachments: [(name: String, data: Data)] = []
-        if let arr = call.getArray("attachments") as? [[String: Any]] {
+        if let arr = call.getArray("attachments") {
             for item in arr {
-                guard let name = item["name"] as? String,
-                      let b64 = item["data"] as? String,
+                guard let obj = item as? JSObject,
+                      let name = obj["name"] as? String,
+                      let b64 = obj["data"] as? String,
                       let data = Data(base64Encoded: b64), !data.isEmpty else { continue }
                 attachments.append((name: name, data: data))
             }
         }
+        CAPLog.print("[exportPdf] attachments parsed: \(attachments.count)")
         DispatchQueue.main.async {
             let webView = WKWebView(frame: CGRect(x: 0, y: 0, width: 595, height: 842))
             webView.navigationDelegate = self
@@ -1051,36 +1055,24 @@ extension HealthKitHeartRatePlugin: WKNavigationDelegate {
         }
         UIGraphicsEndPDFContext()
 
-        // Best-effort: embed the voice recordings as extractable PDF attachments
-        // so the report is ONE shareable file. If embedding doesn't validate (the
-        // combined PDF must still open with the same page count), we NEVER ship a
-        // corrupt file — instead we share the recordings as SEPARATE files in the
-        // same share sheet, so the voice always reaches the user. `attached` = how
-        // many were embedded into the single PDF; `sharedFiles` = total items shared.
-        let base = pdfData as Data
+        // Share the report PLUS the voice recordings as SEPARATE playable files in
+        // the same share sheet. We do NOT embed audio into the PDF: iOS PDF viewers
+        // can neither play embedded audio nor even surface PDF file attachments, so
+        // an embedded copy is invisible/unusable to the user — separate .m4a files
+        // are the only way the voice is actually reachable and playable on iOS.
         let attachments = pdfAttachments
-        var finalData = base
-        var attached = 0
-        if !attachments.isEmpty,
-           let combined = embedAttachments(into: base, files: attachments),
-           let doc = PDFDocument(data: combined), doc.pageCount == pages {
-            finalData = combined
-            attached = attachments.count
-        }
-
         let url = FileManager.default.temporaryDirectory.appendingPathComponent(pdfFileName)
         do {
-            try finalData.write(to: url)
+            try (pdfData as Data).write(to: url)
         } catch {
             call?.reject("PDF write failed: \(error.localizedDescription)")
             pdfWebView = nil; pdfCall = nil; pdfAttachments = []
             return
         }
 
-        // Collect the items to share: the PDF, plus — only if embedding did NOT
-        // succeed — each recording written to its own temp file.
+        // The PDF first, then each recording written to its own temp file.
         var items: [Any] = [url]
-        if attached == 0 && !attachments.isEmpty {
+        do {
             let dir = FileManager.default.temporaryDirectory
             var used = Set<String>()
             for a in attachments {
@@ -1093,9 +1085,12 @@ extension HealthKitHeartRatePlugin: WKNavigationDelegate {
                 }
                 used.insert(name)
                 let aURL = dir.appendingPathComponent(name)
-                if (try? a.data.write(to: aURL)) != nil { items.append(aURL) }
+                do { try a.data.write(to: aURL); items.append(aURL) }
+                catch { CAPLog.print("[exportPdf] failed to write \(name): \(error.localizedDescription)") }
             }
         }
+        let attached = 0
+        CAPLog.print("[exportPdf] sharing \(items.count) item(s): 1 pdf + \(items.count - 1) voice file(s)")
 
         if let vc = self.bridge?.viewController {
             let av = UIActivityViewController(activityItems: items, applicationActivities: nil)
