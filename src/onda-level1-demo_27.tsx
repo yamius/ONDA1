@@ -629,7 +629,7 @@ const OndaLevel1 = () => {
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
   const [showDiaryModal, setShowDiaryModal] = useState(false);
-  const [diaryPdfExport, setDiaryPdfExport] = useState(false);  // red PDF button → open export dialog, PDF-only
+  const [diaryExportMode, setDiaryExportMode] = useState<'pdf' | 'full' | null>(null);  // red PDF button → auto-open export
   // Simple mode (task 83) — A/B: 'simple' (traffic light) vs 'detailed'. Assigned
   // 50/50 on first run (persisted, stable), overridable in Settings.
   const [appMode, setAppMode] = useState<AppMode>(() => ensureModeAssigned().mode);
@@ -1003,9 +1003,15 @@ const OndaLevel1 = () => {
       ? { light: 'red', metric: m, direction: 'high', redDays: 4 }
       : { light: 'yellow', metric: m, direction: pending.direction, anomaly: pending });
     if (!simFast) {
-      try {
-        LocalNotifications.schedule({ notifications: [{ id: 990000 + (i % 1000), title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'), schedule: { at: new Date(now + 3000) }, extra: { anomaly_metric: m, simulated: true } }] }).catch(() => { /* noop */ });
-      } catch { /* noop */ }
+      // 5-min mode = verify the BACKGROUND push. Ensure permission, then schedule
+      // ~8s out so you can background the app and actually receive the banner.
+      (async () => {
+        try {
+          const perm = await LocalNotifications.checkPermissions();
+          if (perm.display !== 'granted') await LocalNotifications.requestPermissions();
+          await LocalNotifications.schedule({ notifications: [{ id: 990000 + (i % 1000), title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'), schedule: { at: new Date(Date.now() + 8000) }, extra: { anomaly_metric: m, simulated: true } }] });
+        } catch { /* noop */ }
+      })();
     }
   }, [simFast, t]);
 
@@ -6946,7 +6952,7 @@ const OndaLevel1 = () => {
                       <button type="button" onClick={() => startRecommendedPractice(m)} data-testid="anomaly-practice" className="mt-4 w-full rounded-xl py-2.5 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
                       {/* Red only, BOTH modes — the report for a specialist. */}
                       {isRed && (
-                        <button type="button" onClick={() => { setDiaryPdfExport(true); setShowDiaryModal(true); }} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
+                        <button type="button" onClick={() => { setDiaryExportMode(appMode === 'simple' ? 'pdf' : 'full'); setShowDiaryModal(true); }} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
                       )}
                       {/* Record "what happened" — DETAILED mode only (compact keeps nothing). */}
                       {appMode !== 'simple' && (
@@ -8724,13 +8730,13 @@ const OndaLevel1 = () => {
       {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
       <DiaryModal
         isOpen={showDiaryModal}
-        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null); setDiaryPdfExport(false); }}
+        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null); setDiaryExportMode(null); }}
         light={isLight}
         dayRhr={dayRhr}
         userId={user?.id ?? null}
         anomaly={diaryAnomaly}
         eventTime={diaryEventTime}
-        pdfExport={diaryPdfExport}
+        exportMode={diaryExportMode}
         onAnomalySaved={() => {
           setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null);
           // Flip the card to state 2 (recorded) and persist.
