@@ -3119,12 +3119,6 @@ const OndaLevel1 = () => {
     setDiaryEventTime(new Date(a.at).toISOString());
     setShowDiaryModal(true);
   };
-  // Snooze the signal a day.
-  const remindAnomalyLater = (a: PendingAnomaly) => {
-    const st = loadAnomalyState();
-    saveAnomalyState({ ...st, pending: { ...a, remindAfter: Date.now() + 24 * 60 * 60 * 1000 } });
-    setAnomalyPrompt(null);
-  };
 
   const beginPractice = () => {
     // Use vitalsRef for FRESH values (like AdaptivePracticeModal)
@@ -6919,7 +6913,8 @@ const OndaLevel1 = () => {
             (no practice name) + Start-practice + record "what happened" to the
             diary (the old standalone amber signal card lives here now). */}
         {(() => {
-          const a = anomalyPrompt && (!anomalyPrompt.remindAfter || Date.now() >= anomalyPrompt.remindAfter) ? anomalyPrompt : null;
+          // No "remind later" — the signal block stays up until acted on.
+          const a = anomalyPrompt ?? null;
           // Frame + buttons follow the Baseline STATUS colour (green/yellow/red),
           // matching the traffic light, in both modes (task: colour-coded block).
           const colorState = !a ? 'green' : (trafficState.light === 'red' ? 'red' : 'yellow');
@@ -6981,10 +6976,7 @@ const OndaLevel1 = () => {
                         !a.recorded ? (
                           <div className="mt-3">
                             <p className="text-sm opacity-90">{examples}</p>
-                            <div className="mt-2 flex gap-2">
-                              <button type="button" onClick={() => recordAnomaly(a)} data-testid="anomaly-cta" className={`flex-1 rounded-xl py-2 text-sm font-bold transition-all ${pal.solid}`}>{t('anomaly.record', 'Записать')}</button>
-                              <button type="button" onClick={() => remindAnomalyLater(a)} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${pal.soft}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
-                            </div>
+                            <button type="button" onClick={() => recordAnomaly(a)} data-testid="anomaly-cta" className={`mt-2 w-full rounded-xl py-2 text-sm font-bold transition-all ${pal.soft}`}>{t('anomaly.record', 'Записать')}</button>
                           </div>
                         ) : (
                           <p className="text-sm font-semibold mt-2" data-testid="anomaly-saved">✓ {t('anomaly.saved', 'Сохранено в таймлайн · {{when}}', { when: savedWhen })}</p>
