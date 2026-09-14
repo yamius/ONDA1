@@ -4343,5 +4343,11 @@
   "units": {
     "bpm": "bpm",
     "rpm": "/min"
+  },
+  "recommend": {
+    "start": "Empezar",
+    "why_rhr": "Tu pulso en reposo estuvo más alto de lo habitual. Una práctica ayudará al cuerpo a bajar el ritmo.",
+    "why_hrv": "La recuperación está por debajo de tu norma. Una práctica ayudará al cuerpo a recuperarse.",
+    "why_rr": "Tu respiración fue más rápida de lo habitual. Una práctica ayudará a calmar el ritmo."
   }
 }

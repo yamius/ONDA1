@@ -3024,6 +3024,35 @@ const OndaLevel1 = () => {
     }
   };
 
+  // ── Unified recommendation handlers (task 84) — shared by the Recommendations
+  // block (detailed) and SimpleHome (compact). Start the recommended practice:
+  // by metric on a signal (ANOMALY_PRACTICE) or the first free practice in static.
+  const startRecommendedPractice = (metric: 'rhr' | 'hrv' | 'rr' | null) => {
+    const pid = metric ? ANOMALY_PRACTICE[metric] : SIGNAL_PRACTICE_ORDER[0];
+    const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
+    if (metric) {
+      try { track('anomaly_practice_started', { metric }); } catch { /* noop */ }
+      const st = loadAnomalyState();
+      saveAnomalyState({ lastSignalAt: st.lastSignalAt, signalCount: st.signalCount }); // pending cleared — goal met
+      setAnomalyPrompt(null);
+    } else {
+      try { track('practice_start', { practice_id: pid, source: 'recommend_static', mode: appMode }); } catch { /* noop */ }
+    }
+    if (pr) completePractice(pid, pr.maxQnt);
+  };
+  // Open the diary to record "what happened", anchored to the deviating night (§9).
+  const recordAnomaly = (a: PendingAnomaly) => {
+    setDiaryAnomaly({ metric: a.metric, delta: a.delta });
+    setDiaryEventTime(new Date(a.at).toISOString());
+    setShowDiaryModal(true);
+  };
+  // Snooze the signal a day.
+  const remindAnomalyLater = (a: PendingAnomaly) => {
+    const st = loadAnomalyState();
+    saveAnomalyState({ ...st, pending: { ...a, remindAfter: Date.now() + 24 * 60 * 60 * 1000 } });
+    setAnomalyPrompt(null);
+  };
+
   const beginPractice = () => {
     // Use vitalsRef for FRESH values (like AdaptivePracticeModal)
     const freshVitals = vitalsRef.current;
@@ -6226,18 +6255,12 @@ const OndaLevel1 = () => {
             : activeCircuit === 12
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
-        } ${isFeatured && !compact ? 'ring-2 ring-indigo-400/70 shadow-[0_0_24px_rgba(99,102,241,0.25)]' : ''}`}
+        }`}
         style={collapsible ? collapseStyle(`practice_${practice.id}`, 45, 9) : undefined}
       >
         {collapsible && collapseDot(`practice_${practice.id}`)}
-        {isFeatured && !compact && (
-          <span
-            className="absolute -top-2 left-3 px-2 py-0.5 rounded-full bg-indigo-500 text-white text-[10px] leading-none font-semibold uppercase tracking-wide shadow"
-            data-testid="featured-badge"
-          >
-            ✨ {t('home.featured.recommended', 'Recommended')}
-          </span>
-        )}
+        {/* Task 84: no name-badge/ring on the recommended practice — it's simply
+            the one the Recommendations button above leads to. */}
         {/* Title sits on the SAME row as the status circle (items-center),
             so the heading lines up with the green dot; the duration drops
             to its own line below. */}
@@ -6675,64 +6698,6 @@ const OndaLevel1 = () => {
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
-          {/* Anomaly card (step 4) — a personal-corridor deviation. Two states:
-              (1) signal, not recorded; (2) recorded. Both carry the by-type
-              explanation + a slow-down practice offer. Gender-agreed per metric,
-              NO medical wording. Hidden while snoozed ("remind later"). */}
-          {anomalyPrompt && (!anomalyPrompt.remindAfter || Date.now() >= anomalyPrompt.remindAfter) && (() => {
-            const a = anomalyPrompt;
-            const m = a.metric;
-            const examples = (a.signalCount ?? 0) >= 5
-              ? t('anomaly.causes_more', 'Опиши все возможные причины.')
-              : t('anomaly.causes', 'Что повлияло? Кофе, стресс, сон, алкоголь.');
-            let savedWhen = '';
-            try {
-              const d = new Date(a.recordedAt || a.at);
-              savedWhen = `${d.toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' })} ${d.toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' })}`;
-            } catch { /* noop */ }
-            const openRecord = () => {
-              setDiaryAnomaly({ metric: m, delta: a.delta });
-              setDiaryEventTime(new Date(a.at).toISOString()); // anchor the note to the night's point (§9)
-              setShowDiaryModal(true);
-            };
-            const remindLater = () => {
-              const remindAfter = Date.now() + 24 * 60 * 60 * 1000;
-              const st = loadAnomalyState();
-              saveAnomalyState({ ...st, pending: { ...a, remindAfter } });
-              setAnomalyPrompt(null);
-            };
-            const startPractice = () => {
-              const pid = ANOMALY_PRACTICE[m];
-              const pr = currentCircuit.practices.find(p => p.id === pid) as { id: string; maxQnt: number } | undefined;
-              try { track('anomaly_practice_started', { metric: m }); } catch { /* noop */ }
-              const st = loadAnomalyState();
-              saveAnomalyState({ lastSignalAt: st.lastSignalAt, signalCount: st.signalCount }); // clear pending — goal met
-              setAnomalyPrompt(null);
-              if (pr) completePractice(pid, pr.maxQnt);
-            };
-            const amberText = isLight ? 'text-amber-900' : 'text-amber-100';
-            return (
-              <div className={`mb-3 rounded-2xl p-4 border ${isLight ? 'bg-amber-50 border-amber-200' : 'bg-amber-500/10 border-amber-400/30'} ${amberText}`} data-testid="anomaly-prompt">
-                {!a.recorded ? (
-                  <>
-                    <p className="text-sm leading-snug font-medium">{t(`anomaly.prompt_${m}`, { value: a.latest, lo: a.loBound, hi: a.hiBound })}</p>
-                    <p className="mt-2 text-sm">{examples}</p>
-                    <p className="text-sm opacity-80">{t('anomaly.record_hint', 'Запиши — со временем увидишь всю картину своего здоровья.')}</p>
-                    <div className="mt-3 flex gap-2">
-                      <button type="button" onClick={openRecord} data-testid="anomaly-cta" className="flex-1 rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.record', 'Записать')}</button>
-                      <button type="button" onClick={remindLater} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
-                    </div>
-                  </>
-                ) : (
-                  <p className="text-sm font-semibold" data-testid="anomaly-saved">✓ {t('anomaly.saved', 'Сохранено в таймлайн · {{when}}', { when: savedWhen })}</p>
-                )}
-                <div className={`my-3 border-t ${isLight ? 'border-amber-200' : 'border-amber-400/25'}`} />
-                <p className="text-sm">{t(`anomaly.explain_${m}`)}</p>
-                <p className="text-sm opacity-80 mt-1">{t('anomaly.practice_offer', 'Практика замедления поможет телу вернуться в ритм.')}</p>
-                <button type="button" onClick={startPractice} data-testid="anomaly-practice" className="mt-3 w-full rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
-              </div>
-            );
-          })()}
           {/* Diary entry — replaces the pulse/breathing mini-tiles under the
               baseline. Opens the local-first day-note diary. Keeps baseline
               (what the body did) ↔ diary (what happened to you) in one fold.
@@ -6883,31 +6848,58 @@ const OndaLevel1 = () => {
           </div>
         </div>
 
-        {/* Closing breathing figures (13 / 6) — after the coherence window.
-            Watch-only (needs HRV spread + breathing, which the camera path
-            never has). No own toggle: it's bound to the "Мои Рекомендации"
-            dot and hides entirely when that block is folded. */}
-        {baseline && baseline.source === 'watch' && !isCollapsed('recommendations') && (
-          <div className="mb-6 flex flex-col items-center">
-            <div className="relative w-full max-w-[360px]">
-              <div>
-                <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+        {/* Unified Recommendations (task 84) — ONE block. No signal → static (13/6
+            figures + generic text + Start). A deviation → dynamic: by-metric "why"
+            (no practice name) + Start-practice + record "what happened" to the
+            diary (the old standalone amber signal card lives here now). */}
+        {(() => {
+          const a = anomalyPrompt && (!anomalyPrompt.remindAfter || Date.now() >= anomalyPrompt.remindAfter) ? anomalyPrompt : null;
+          const shellBase = a
+            ? (isLight ? 'bg-amber-50 border-amber-200' : 'bg-amber-500/10 border-amber-400/30')
+            : (isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15');
+          return (
+            <div className="mb-4 flex flex-col items-center">
+              <div className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${shellBase}`} style={collapseStyle('recommendations', 45, 8)} data-testid="recommendations-block" data-mode={a ? 'signal' : 'static'}>
+                {collapseDot('recommendations')}
+                <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${a ? (isLight ? 'text-amber-900' : 'text-amber-100') : (isLight ? 'text-slate-700' : 'text-white')}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
+                {!a ? (
+                  <>
+                    <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>{t('baseline.setup_body', 'Практики ниже сбалансируют твой ритм — просто следуй подсказкам во время.')}</p>
+                    {baseline && baseline.source === 'watch' && (
+                      <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
+                    )}
+                    <button type="button" onClick={() => startRecommendedPractice(null)} data-testid="rec-start" className={`mt-4 w-full rounded-xl py-2.5 text-sm font-bold transition-all ${isLight ? 'bg-violet-500 text-white hover:bg-violet-600' : 'bg-indigo-500 text-white hover:bg-indigo-600'}`}>{t('recommend.start', 'Начать')}</button>
+                  </>
+                ) : (() => {
+                  const m = a.metric;
+                  const amberText = isLight ? 'text-amber-900' : 'text-amber-100';
+                  const examples = (a.signalCount ?? 0) >= 5
+                    ? t('anomaly.causes_more', 'Опиши все возможные причины.')
+                    : t('anomaly.causes', 'Что повлияло? Кофе, стресс, сон, алкоголь.');
+                  let savedWhen = '';
+                  try { const d = new Date(a.recordedAt || a.at); savedWhen = `${d.toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' })} ${d.toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' })}`; } catch { /* noop */ }
+                  return (
+                    <div className={amberText}>
+                      <p className="text-sm leading-snug font-medium">{t(`recommend.why_${m}`)}</p>
+                      {!a.recorded ? (
+                        <>
+                          <p className="mt-2 text-sm opacity-90">{examples}</p>
+                          <div className="mt-3 flex gap-2">
+                            <button type="button" onClick={() => recordAnomaly(a)} data-testid="anomaly-cta" className="flex-1 rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.record', 'Записать')}</button>
+                            <button type="button" onClick={() => remindAnomalyLater(a)} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
+                          </div>
+                        </>
+                      ) : (
+                        <p className="text-sm font-semibold mt-2" data-testid="anomaly-saved">✓ {t('anomaly.saved', 'Сохранено в таймлайн · {{when}}', { when: savedWhen })}</p>
+                      )}
+                      <button type="button" onClick={() => startRecommendedPractice(m)} data-testid="anomaly-practice" className="mt-4 w-full rounded-xl py-2.5 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
+                    </div>
+                  );
+                })()}
               </div>
             </div>
-          </div>
-        )}
-
-        {/* Установка — the intention block before the practices (placeholder copy).
-            mb-4 = the same gap the practices grid uses between tiles (gap-4). */}
-        <div className="mb-4 flex flex-col items-center">
-          <div className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15'}`} style={collapseStyle('recommendations', 45, 8)}>
-            {collapseDot('recommendations')}
-            <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
-            <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>
-              {t('baseline.setup_body', 'Практики ниже сбалансируют твой сердечный ритм — просто следуй подсказкам во время.')}
-            </p>
-          </div>
-        </div>
+          );
+        })()}
 
         {/* Practices list — single block. The featured (recommended)
             practice is hoisted to the first position and rendered with
