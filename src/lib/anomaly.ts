@@ -155,6 +155,7 @@ export interface PendingAnomaly extends Anomaly {
   recordedAt?: string;     // ISO of that save (sync time shown on the card)
   remindAfter?: number;    // "remind later" — hide until this ms
   signalCount?: number;    // how many signals ever (drives the card's example line)
+  simulated?: boolean;     // injected by the internal test mode (task 84 pt3) — never real analytics
 }
 
 export interface AnomalyState {

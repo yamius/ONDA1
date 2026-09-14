@@ -633,6 +633,12 @@ const OndaLevel1 = () => {
   // 50/50 on first run (persisted, stable), overridable in Settings.
   const [appMode, setAppMode] = useState<AppMode>(() => ensureModeAssigned().mode);
   const [trafficState, setTrafficState] = useState<TrafficState>({ light: 'green' });
+  // Signal test mode (task 84 pt3) — internal-only. Injects artificial signals in
+  // a cycle so the full UX (card, traffic hero, push, practice) can be checked in
+  // dev without waiting for real nights. Marked simulated → never real analytics.
+  const [simActive, setSimActive] = useState(false);
+  const [simFast, setSimFast] = useState(true);   // 30s (UI) vs 5min (background push)
+  const simIndexRef = useRef(0);
   // Anomaly trigger (step 4): the pending deviation to prompt about, if any.
   const [anomalyPrompt, setAnomalyPrompt] = useState<PendingAnomaly | null>(null);
   // Anomaly context passed to the diary ONLY when opened from the prompt (so
@@ -955,6 +961,54 @@ const OndaLevel1 = () => {
     versionTapTimerRef.current = setTimeout(() => {
       versionTapsRef.current = 0;
     }, 2000);
+  }, []);
+
+  // ── Signal test mode (task 84 pt3) ──────────────────────────────────────────
+  // Cycle: rhr↑ → hrv↓ → rr↑ → red → repeat. Injects a SIMULATED anomalyPrompt +
+  // trafficState (drives the same card/hero/practice as a real signal) without
+  // firing real anomaly analytics. In slow mode also schedules a local notification
+  // so the background push can be checked. Overlays detectAnomaly, never replaces it.
+  const applySimStep = useCallback((i: number) => {
+    const steps = [
+      { light: 'yellow' as const, metric: 'rhr' as const },
+      { light: 'yellow' as const, metric: 'hrv' as const },
+      { light: 'yellow' as const, metric: 'rr' as const },
+      { light: 'red' as const, metric: 'rhr' as const },
+    ];
+    const step = steps[((i % steps.length) + steps.length) % steps.length];
+    const m = step.metric;
+    const now = Date.now();
+    const base = { rhr: { mean: 58, latest: 66, delta: 8, lo: 55, hi: 61 }, hrv: { mean: 65, latest: 48, delta: -17, lo: 59, hi: 71 }, rr: { mean: 14, latest: 17, delta: 3, lo: 11, hi: 17 } }[m];
+    const pending: PendingAnomaly = {
+      metric: m, direction: m === 'hrv' ? 'low' : 'high',
+      mean: base.mean, sd: 3, latest: base.latest, delta: base.delta, magnitudeSd: 3,
+      loBound: base.lo, hiBound: base.hi, nights: 10,
+      at: now, night: new Date(now).toISOString().slice(0, 10), signalCount: i + 1, simulated: true,
+    };
+    setAnomalyPrompt(pending);
+    setTrafficState(step.light === 'red'
+      ? { light: 'red', metric: m, direction: 'high', redDays: 4 }
+      : { light: 'yellow', metric: m, direction: pending.direction, anomaly: pending });
+    if (!simFast) {
+      try {
+        LocalNotifications.schedule({ notifications: [{ id: 990000 + (i % 1000), title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'), schedule: { at: new Date(now + 3000) }, extra: { anomaly_metric: m, simulated: true } }] }).catch(() => { /* noop */ });
+      } catch { /* noop */ }
+    }
+  }, [simFast, t]);
+
+  useEffect(() => {
+    if (!simActive) return;
+    applySimStep(simIndexRef.current);
+    const ms = simFast ? 30_000 : 300_000;
+    const id = setInterval(() => { simIndexRef.current += 1; applySimStep(simIndexRef.current); }, ms);
+    return () => clearInterval(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [simActive, simFast]);
+
+  const stopSim = useCallback(() => {
+    setSimActive(false);
+    setAnomalyPrompt(null);
+    setTrafficState({ light: 'green' });
   }, []);
   // v1.7.3: онбординг временно скрыт — юзер сразу попадает в хаб.
   // Меню «Intro» по-прежнему может его открыть вручную (для QA / legacy).
@@ -9416,6 +9470,17 @@ const OndaLevel1 = () => {
                   </span>
                 )}
               </button>
+            )}
+            {/* Signal test mode (task 84 pt3) — internal builds only. */}
+            {internalTrafficOn && (
+              <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="sim-panel">
+                <div className="mb-1">🧪 Test signals {simActive && <span className="text-amber-400">· step {simIndexRef.current % 4 + 1}/4 · {simFast ? '30s' : '5min'}</span>}</div>
+                <div className="flex gap-2">
+                  <button type="button" onClick={() => { if (simActive) { stopSim(); } else { simIndexRef.current = 0; setSimActive(true); } }} data-testid="sim-toggle" className={`rounded px-2 py-1 ${simActive ? 'bg-amber-500 text-white' : (isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80')}`}>{simActive ? 'Stop' : 'Start'}</button>
+                  <button type="button" onClick={() => setSimFast((v) => !v)} data-testid="sim-interval" className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}>{simFast ? '30s' : '5min'}</button>
+                  <button type="button" onClick={() => { simIndexRef.current += 1; applySimStep(simIndexRef.current); }} disabled={!simActive} data-testid="sim-next" className={`rounded px-2 py-1 disabled:opacity-40 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}>Next</button>
+                </div>
+              </div>
             )}
         </nav>
       )}
