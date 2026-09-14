@@ -6770,6 +6770,8 @@ const OndaLevel1 = () => {
                 light={isLight}
               />
             </div>
+            {/* Calm ongoing-monitoring promise, under the card. */}
+            <p className={`mt-2 text-xs leading-snug text-center ${isLight ? 'text-slate-400' : 'text-white/40'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
           </div>
         </div>
         </>

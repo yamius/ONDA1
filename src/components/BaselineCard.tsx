@@ -168,9 +168,10 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
       {/* Scrims: fade top + bottom so the numbers and the closing lines stay legible over the figure. */}
       <div className="absolute inset-0 pointer-events-none" style={{ background: p.scrim }} />
 
-      {/* Empty state — figure + invitation, so the card is guaranteed on home. */}
+      {/* Empty state — invitation sits BELOW the knees so it doesn't cross the
+          figure's torso where it was hard to read. */}
       {isEmpty && emptyHint && (
-        <div className="absolute w-full px-10 text-center" style={{ top: '40%' }}>
+        <div className="absolute w-full px-10 text-center" style={{ top: '76%' }}>
           <p style={{ color: p.white, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: p.cloud }}>{emptyHint}</p>
         </div>
       )}

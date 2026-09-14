@@ -51,6 +51,8 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
         <h2 className={`text-2xl font-bold mb-2 ${light ? 'text-slate-800' : 'text-white'}`}>{title}</h2>
         <p className={`text-sm leading-relaxed max-w-[300px] mx-auto ${light ? 'text-slate-600' : 'text-white/70'}`}>{body}</p>
       </div>
+      {/* Calm ongoing-monitoring promise. */}
+      <p className={`mt-2 text-xs leading-snug text-center max-w-[320px] ${light ? 'text-slate-400' : 'text-white/40'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
     </div>
   );
 }

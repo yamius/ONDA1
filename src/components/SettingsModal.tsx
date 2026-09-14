@@ -135,11 +135,16 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
                   </button>
                 ))}
               </div>
-              <p className="text-xs mt-2 text-text-muted">
-                {mode === 'simple'
-                  ? t('settings.mode_simple_hint', 'Светофор состояния — без цифр и аналитики.')
-                  : t('settings.mode_detailed_hint', 'Базлайн, сигналы и дневник — для тех, кто любит данные.')}
-              </p>
+              {/* Both hints share one grid cell so the box is sized to the taller
+                  one — toggling mode only flips visibility, never resizes the modal. */}
+              <div className="grid mt-2 text-xs text-text-muted">
+                <p className="col-start-1 row-start-1" style={{ visibility: mode === 'simple' ? 'visible' : 'hidden' }}>
+                  {t('settings.mode_simple_hint', 'Светофор состояния — без цифр и аналитики.')}
+                </p>
+                <p className="col-start-1 row-start-1" style={{ visibility: mode === 'simple' ? 'hidden' : 'visible' }}>
+                  {t('settings.mode_detailed_hint', 'Базлайн, сигналы и дневник — для тех, кто любит данные.')}
+                </p>
+              </div>
             </div>
           )}
 

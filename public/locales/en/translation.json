@@ -4235,7 +4235,8 @@
     "breath_left": "it's how your body\nbreathes without you",
     "breath_right": "at this rhythm you start\nworking with your nervous system",
     "live": "breaths / min\nlive",
-    "bpm_unit": "br/min"
+    "bpm_unit": "br/min",
+    "reassure": "We'll let you know if we spot a deviation — just keep wearing your watch."
   },
   "diary": {
     "title": "Diary",
