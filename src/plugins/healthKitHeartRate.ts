@@ -124,6 +124,8 @@ export interface HealthKitHeartRatePlugin {
   setAnomalyStrings(strings: { title: string; pushIntro: string; pushShort: string }): Promise<{ ok: boolean }>;
   /** Register HealthKit background delivery so a night deviation posts a local notification. */
   startAnomalyMonitoring(): Promise<{ started: boolean }>;
+  /** Post a time-sensitive local notification after a delay (internal signal test mode). */
+  scheduleTestPush(options: { title?: string; body?: string; delaySeconds?: number }): Promise<{ ok: boolean }>;
   /** Render an HTML report to a PDF ON-DEVICE and open the native share sheet. */
   exportPdf(options: {
     html: string;

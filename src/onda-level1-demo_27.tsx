@@ -1024,13 +1024,14 @@ const OndaLevel1 = () => {
       ? { light: 'red', metric: m, direction: 'high', redDays: 4 }
       : { light: 'yellow', metric: m, direction: pending.direction, anomaly: pending });
     if (!simFast) {
-      // 5-min mode = verify the BACKGROUND push. Ensure permission, then schedule
-      // ~8s out so you can background the app and actually receive the banner.
+      // 5-min mode = verify the BACKGROUND push. Ensure permission, then schedule a
+      // TIME-SENSITIVE push ~8s out (native path — same interruption level as the
+      // real anomaly push) so you can background the app and see the prominent banner.
       (async () => {
         try {
           const perm = await LocalNotifications.checkPermissions();
           if (perm.display !== 'granted') await LocalNotifications.requestPermissions();
-          await LocalNotifications.schedule({ notifications: [{ id: 990000 + (i % 1000), title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'), schedule: { at: new Date(Date.now() + 8000) }, extra: { anomaly_metric: m, simulated: true } }] });
+          await HealthKitHeartRate.scheduleTestPush({ title: 'ONDA', body: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'), delaySeconds: 8 });
         } catch { /* noop */ }
       })();
     }
