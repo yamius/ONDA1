@@ -4333,7 +4333,7 @@
     "green_body": "Tu cuerpo está dentro de su corredor de base",
     "green_cta": "Respirar",
     "yellow_title": "Fuera de tu base",
-    "yellow_body": "Has salido de tu ritmo habitual",
+    "yellow_body": "Fuera de tu ritmo habitual: {{metrics}}.",
     "yellow_cta": "Empezar",
     "red_title": "Fuera de ritmo {{days}} días",
     "red_body": "Tu cuerpo lleva tiempo fuera de su ritmo tranquilo",

@@ -36,6 +36,10 @@ interface DiaryModalProps {
   eventTime?: string | null;
   /** Fired after a note is saved in anomaly mode (so the card flips to state 2). */
   onAnomalySaved?: () => void;
+  /** Open straight into the export dialog in PDF-only mode (task 85): the export
+   *  dialog opens, photo/voice are disabled (greyed), text-only → a PDF. Used by
+   *  the compact red-state "Сформировать PDF-отчёт" button (compact keeps no notes). */
+  pdfExport?: boolean;
 }
 
 type RecState = 'idle' | 'recording' | 'recorded';
@@ -91,7 +95,7 @@ function loadPrefs(): ViewPrefs {
   return DEFAULT_PREFS;
 }
 
-export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null, anomaly = null, eventTime = null, onAnomalySaved }: DiaryModalProps) {
+export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null, anomaly = null, eventTime = null, onAnomalySaved, pdfExport = false }: DiaryModalProps) {
   const { t, i18n } = useTranslation();
 
   const [entries, setEntries] = useState<DiaryEntry[]>([]);
@@ -107,6 +111,14 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const [customTo, setCustomTo] = useState<string>(todayStr());
   const [exportInc, setExportInc] = useState({ text: true, photo: true, voice: true });
   const [exporting, setExporting] = useState(false);
+  // PDF-only mode (compact red button): open the export dialog straight away with
+  // text-only (photo/voice greyed) → produces a PDF, keeps the range selector.
+  useEffect(() => {
+    if (isOpen && pdfExport) {
+      setExportInc({ text: true, photo: false, voice: false });
+      setExportMenuOpen(true);
+    }
+  }, [isOpen, pdfExport]);
 
   // Editor
   const [editorOpen, setEditorOpen] = useState(false);
@@ -881,9 +893,11 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                   ['voice', Mic, t('pdf.inc_voice', 'Голосовые заметки')],
                 ] as const).map(([k, Icon, label]) => {
                   const on = exportInc[k];
+                  // PDF-only mode: photo/voice are greyed & inactive (text-only → PDF).
+                  const disabled = pdfExport && k !== 'text';
                   return (
-                    <button key={k} onClick={() => setExportInc((p) => ({ ...p, [k]: !p[k] }))} data-testid={`diary-export-inc-${k}`}
-                      className={`w-full flex items-center gap-3 p-3 rounded-xl border text-left transition-all ${on
+                    <button key={k} disabled={disabled} onClick={() => { if (!disabled) setExportInc((p) => ({ ...p, [k]: !p[k] })); }} data-testid={`diary-export-inc-${k}`}
+                      className={`w-full flex items-center gap-3 p-3 rounded-xl border text-left transition-all ${disabled ? 'opacity-40 cursor-not-allowed ' : ''}${on
                         ? (light ? 'bg-violet-50 border-violet-300' : 'bg-indigo-500/15 border-indigo-400/40')
                         : (light ? 'bg-white border-violet-100' : 'bg-gray-800 border-white/10')}`}>
                       <Icon className={`w-4 h-4 shrink-0 ${on ? (light ? 'text-violet-600' : 'text-indigo-300') : (light ? 'text-slate-400' : 'text-white/40')}`} />

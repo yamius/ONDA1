@@ -106,7 +106,8 @@ export const RED_DAYS = 4;
 
 export interface TrafficState {
   light: TrafficLight;
-  metric?: AnomalyMetric;        // yellow/red: which metric drives it
+  metric?: AnomalyMetric;        // yellow/red: the strongest metric (drives the practice)
+  metrics?: AnomalyMetric[];     // ALL metrics currently out of corridor (for the subtext)
   direction?: AnomalyDirection;
   redDays?: number;              // consecutive nights outside the corridor (red)
   anomaly?: Anomaly;             // yellow: the deviation detail
@@ -132,15 +133,16 @@ function trailingOutside(values: number[], metric: AnomalyMetric): number {
 
 /** Reduce all signals to one traffic-light state (red > yellow > green). */
 export function computeTrafficLight(signals: SignalInput[]): TrafficState {
+  const deviating = signals.filter((s) => evalSignal(s) != null).map((s) => s.metric);
   let redMetric: AnomalyMetric | undefined;
   let redDays = 0;
   for (const s of signals) {
     const days = trailingOutside([...s.nights, s.latest], s.metric);
     if (days >= RED_DAYS && days > redDays) { redDays = days; redMetric = s.metric; }
   }
-  if (redMetric) return { light: 'red', metric: redMetric, direction: RULES[redMetric].dir, redDays };
+  if (redMetric) return { light: 'red', metric: redMetric, direction: RULES[redMetric].dir, redDays, metrics: deviating.length ? deviating : [redMetric] };
   const a = detectAnomaly(signals);
-  if (a) return { light: 'yellow', metric: a.metric, direction: a.direction, anomaly: a };
+  if (a) return { light: 'yellow', metric: a.metric, direction: a.direction, anomaly: a, metrics: deviating.length ? deviating : [a.metric] };
   return { light: 'green' };
 }
 

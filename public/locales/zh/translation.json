@@ -4333,7 +4333,7 @@
     "green_body": "你的身体处于基线区间内",
     "green_cta": "呼吸",
     "yellow_title": "偏离基线",
-    "yellow_body": "你已偏离平时的节奏",
+    "yellow_body": "超出你平时的节奏：{{metrics}}。",
     "yellow_cta": "开始",
     "red_title": "已偏离节奏 {{days}} 天",
     "red_body": "你的身体已长时间偏离平静的节奏",

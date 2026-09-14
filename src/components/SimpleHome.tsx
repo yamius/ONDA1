@@ -32,10 +32,13 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
       ? t('simple.yellow_title', 'Выход из Базлайна')
       : t('simple.red_title', 'Вне ритма уже {{days}} дней', { days: traffic.redDays ?? 4 });
 
+  // Yellow lists the metric(s) that left the corridor — it describes the state best.
+  const outMetrics = (traffic.metrics ?? (traffic.metric ? [traffic.metric] : []))
+    .map((m) => t(`anomaly.metric_${m}`)).join(', ');
   const body = traffic.light === 'green'
     ? t('simple.green_body', 'Тело в своём базовом коридоре показателей')
     : traffic.light === 'yellow'
-      ? t('simple.yellow_body', 'Ты вышел из обычного ритма')
+      ? t('simple.yellow_body', 'Вне обычного ритма: {{metrics}}.', { metrics: outMetrics })
       : t('simple.red_body', 'Тело давно вне спокойного ритма');
 
   return (

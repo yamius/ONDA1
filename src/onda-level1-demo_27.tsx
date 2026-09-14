@@ -629,6 +629,7 @@ const OndaLevel1 = () => {
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
   const [showDiaryModal, setShowDiaryModal] = useState(false);
+  const [diaryPdfExport, setDiaryPdfExport] = useState(false);  // red PDF button → open export dialog, PDF-only
   // Simple mode (task 83) — A/B: 'simple' (traffic light) vs 'detailed'. Assigned
   // 50/50 on first run (persisted, stable), overridable in Settings.
   const [appMode, setAppMode] = useState<AppMode>(() => ensureModeAssigned().mode);
@@ -6945,7 +6946,7 @@ const OndaLevel1 = () => {
                       <button type="button" onClick={() => startRecommendedPractice(m)} data-testid="anomaly-practice" className="mt-4 w-full rounded-xl py-2.5 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
                       {/* Red only, BOTH modes — the report for a specialist. */}
                       {isRed && (
-                        <button type="button" onClick={() => setShowDiaryModal(true)} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
+                        <button type="button" onClick={() => { setDiaryPdfExport(true); setShowDiaryModal(true); }} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
                       )}
                       {/* Record "what happened" — DETAILED mode only (compact keeps nothing). */}
                       {appMode !== 'simple' && (
@@ -8723,12 +8724,13 @@ const OndaLevel1 = () => {
       {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
       <DiaryModal
         isOpen={showDiaryModal}
-        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null); }}
+        onClose={() => { setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null); setDiaryPdfExport(false); }}
         light={isLight}
         dayRhr={dayRhr}
         userId={user?.id ?? null}
         anomaly={diaryAnomaly}
         eventTime={diaryEventTime}
+        pdfExport={diaryPdfExport}
         onAnomalySaved={() => {
           setShowDiaryModal(false); setDiaryAnomaly(null); setDiaryEventTime(null);
           // Flip the card to state 2 (recorded) and persist.

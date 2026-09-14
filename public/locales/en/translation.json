@@ -4333,7 +4333,7 @@
     "green_body": "Your body is within its baseline corridor",
     "green_cta": "Breathe",
     "yellow_title": "Out of baseline",
-    "yellow_body": "You've stepped out of your usual rhythm",
+    "yellow_body": "Outside your usual rhythm: {{metrics}}.",
     "yellow_cta": "Start",
     "red_title": "Out of rhythm for {{days}} days",
     "red_body": "Your body has been outside its calm rhythm for a while",
