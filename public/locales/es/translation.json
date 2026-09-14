@@ -4335,10 +4335,12 @@
     "yellow_title": "Fuera de tu base",
     "yellow_body": "Fuera de tu ritmo habitual: {{metrics}}.",
     "yellow_cta": "Empezar",
-    "red_title": "Fuera de ritmo {{days}} días",
-    "red_body": "Tu cuerpo lleva tiempo fuera de su ritmo tranquilo",
     "red_cta": "Empezar una práctica",
-    "red_report": "Analítica e informe para un especialista"
+    "red_report": "Analítica e informe para un especialista",
+    "red_title_one": "Fuera de ritmo {{count}} día",
+    "red_title_other": "Fuera de ritmo {{count}} días",
+    "red_sub1": "Tu cuerpo lleva un par de días fuera de su ritmo tranquilo",
+    "red_sub2": "Tu cuerpo lleva tiempo fuera de su ritmo tranquilo"
   },
   "units": {
     "bpm": "bpm",
@@ -4350,7 +4352,10 @@
     "why_hrv": "La recuperación está por debajo de tu norma. Una práctica ayudará al cuerpo a recuperarse.",
     "why_rr": "Tu respiración fue más rápida de lo habitual. Una práctica ayudará a calmar el ritmo.",
     "green_body": "¿Quieres reforzar tu ritmo? Una práctica corta lo apoyará.",
-    "red_body": "Tu cuerpo lleva {{days}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
-    "pdf": "Crear informe PDF"
+    "pdf": "Crear informe PDF",
+    "red1_body_one": "Tus valores llevan {{count}} día fuera de lo habitual. A menudo el cuerpo solo necesita descanso. Una práctica ayudará a volver al ritmo.",
+    "red1_body_other": "Tus valores llevan {{count}} días fuera de lo habitual. A menudo el cuerpo solo necesita descanso. Una práctica ayudará a volver al ritmo.",
+    "red_body_one": "Tu cuerpo lleva {{count}} día fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
+    "red_body_other": "Tu cuerpo lleva {{count}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista."
   }
 }

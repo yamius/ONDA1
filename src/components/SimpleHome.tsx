@@ -26,11 +26,12 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
   }[traffic.light];
 
   // Hero = STATE only (no practice talk — that's the Recommendations block's job).
+  const days = traffic.redDays ?? traffic.nights ?? 2;
   const title = traffic.light === 'green'
     ? t('simple.green_title', 'В своём ритме')
     : traffic.light === 'yellow'
       ? t('simple.yellow_title', 'Выход из Базлайна')
-      : t('simple.red_title', 'Вне ритма уже {{days}} дней', { days: traffic.redDays ?? 4 });
+      : t('simple.red_title', { count: days, defaultValue: 'Вне ритма уже {{count}} дн.' }); // pluralised by count
 
   // Yellow lists the metric(s) that left the corridor — it describes the state best.
   const outMetrics = (traffic.metrics ?? (traffic.metric ? [traffic.metric] : []))
@@ -39,7 +40,9 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
     ? t('simple.green_body', 'Тело в своём базовом коридоре показателей')
     : traffic.light === 'yellow'
       ? t('simple.yellow_body', 'Вне обычного ритма: {{metrics}}.', { metrics: outMetrics })
-      : t('simple.red_body', 'Тело давно вне спокойного ритма');
+      : traffic.redPhase === 2
+        ? t('simple.red_sub2', 'Тело давно вне спокойного ритма')
+        : t('simple.red_sub1', 'Тело второй день вне спокойного ритма');
 
   return (
     <div className="mb-6 flex flex-col items-center" data-testid="simple-hero" data-traffic={traffic.light}>

@@ -95,55 +95,75 @@ export function detectAnomaly(signals: SignalInput[]): Anomaly | null {
   return hits[0];
 }
 
-/* ── Traffic light (Simple mode, task 83) ───────────────────────────────────
- * A VISUALIZATION of the SAME corridor engine — no new logic. green = in the
- * corridor, yellow = a fresh deviation (the strict trigger), red = a metric that
- * has stayed outside its corridor RED_DAYS nights in a row (a sustained pattern,
- * not a one-off spike). Red is a FACT from the person's own data, never a verdict.
+/* ── Traffic light (Simple mode, task 83 · math fix task 86) ─────────────────
+ * A VISUALIZATION of the SAME corridor engine. The counter = consecutive trailing
+ * NIGHTS a metric sat outside its corridor (any metric); one night inside resets
+ * it. green = 0, yellow = 1 (a specific metric), red = 2+ (the body is out N nights
+ * regardless of which metric). Red has two TEXT phases (same colour): 2-3 nights
+ * soft (no PDF), 4+ strong (+PDF). One threshold (±1.5 SD) for yellow AND red — the
+ * difference is only how many nights it hasn't returned. The corridor is the 90-day
+ * window (task 86): a few out-nights are ~a few % of it, so it doesn't drift and red
+ * actually accrues (a short 14/30-day window would "learn" the deviation in days).
  */
 export type TrafficLight = 'green' | 'yellow' | 'red';
-export const RED_DAYS = 4;
+export const RED_PHASE1_NIGHTS = 2;   // 2-3 nights out → red, soft (no PDF)
+export const RED_PHASE2_NIGHTS = 4;   // 4+ nights out → red, strong (+PDF)
 
 export interface TrafficState {
   light: TrafficLight;
-  metric?: AnomalyMetric;        // yellow/red: the strongest metric (drives the practice)
-  metrics?: AnomalyMetric[];     // ALL metrics currently out of corridor (for the subtext)
+  metric?: AnomalyMetric;        // the driver metric (longest run); practice picks by it
+  metrics?: AnomalyMetric[];     // metrics out on the last night (yellow subtext lists them)
   direction?: AnomalyDirection;
-  redDays?: number;              // consecutive nights outside the corridor (red)
+  nights?: number;               // consecutive nights out (the counter)
+  redDays?: number;              // = nights, when red (kept for the render)
+  redPhase?: 1 | 2;              // red only: 1 = 2-3 nights (soft), 2 = 4+ (strong + PDF)
   anomaly?: Anomaly;             // yellow: the deviation detail
 }
 
-/** How many trailing nights (newest-first) sit outside the corridor in the
- *  metric's concerning direction. Corridor = mean±SD over the base (all but the
- *  last RED_DAYS nights) so the outliers don't inflate the band. */
-function trailingOutside(values: number[], metric: AnomalyMetric): number {
-  if (!Array.isArray(values) || values.length < MIN_NIGHTS + RED_DAYS) return 0;
-  const base = values.slice(0, values.length - RED_DAYS);
-  const { mean, sd } = meanSd(base);
+/** Is this night's value outside the corridor in the metric's concern direction,
+ *  at the ±1.5 SD gate + the metric floor (same strictness as a yellow signal)? */
+function isNightOut(value: number, mean: number, sd: number, metric: AnomalyMetric): boolean {
+  if (!(sd > 0) || !Number.isFinite(value)) return false;
+  const delta = value - mean;
+  if (Math.abs(delta) / sd < SD_GATE) return false;
+  const rule = RULES[metric];
+  if (rule.dir === 'high') return delta > 0 && (rule.absDelta == null || delta >= rule.absDelta);
+  const relDrop = mean > 0 ? -delta / mean : 0;
+  return delta < 0 && (rule.relDrop == null || relDrop >= rule.relDrop) && (rule.absDelta == null || -delta >= rule.absDelta);
+}
+
+/** Consecutive trailing nights this metric sat outside its 90-day corridor. The
+ *  corridor is mean±SD over the WHOLE window — with ~90 nights a few out-nights
+ *  barely move it, so a sustained deviation accrues (task 86). */
+function trailingOut(values: number[], metric: AnomalyMetric): number {
+  if (!Array.isArray(values) || values.length < MIN_NIGHTS) return 0;
+  const { mean, sd } = meanSd(values);
   if (!(sd > 0)) return 0;
-  const dir = RULES[metric].dir;
-  const bound = dir === 'high' ? mean + sd : mean - sd;
   let count = 0;
   for (let i = values.length - 1; i >= 0; i--) {
-    const outside = dir === 'high' ? values[i] > bound : values[i] < bound;
-    if (outside) count++; else break;
+    if (isNightOut(values[i], mean, sd, metric)) count++; else break;
   }
   return count;
 }
 
-/** Reduce all signals to one traffic-light state (red > yellow > green). */
+/** Reduce all signals to one traffic-light state. Counter = longest current
+ *  out-run across metrics; a night inside any metric doesn't reset the others,
+ *  so the counter reflects "the body has been out N nights". */
 export function computeTrafficLight(signals: SignalInput[]): TrafficState {
-  const deviating = signals.filter((s) => evalSignal(s) != null).map((s) => s.metric);
-  let redMetric: AnomalyMetric | undefined;
-  let redDays = 0;
+  let counter = 0;
+  let driver: AnomalyMetric | undefined;
+  const outNow: AnomalyMetric[] = [];   // out on the last night
   for (const s of signals) {
-    const days = trailingOutside([...s.nights, s.latest], s.metric);
-    if (days >= RED_DAYS && days > redDays) { redDays = days; redMetric = s.metric; }
+    const c = trailingOut([...s.nights, s.latest], s.metric);
+    if (c > counter) { counter = c; driver = s.metric; }
+    if (c >= 1) outNow.push(s.metric);
   }
-  if (redMetric) return { light: 'red', metric: redMetric, direction: RULES[redMetric].dir, redDays, metrics: deviating.length ? deviating : [redMetric] };
-  const a = detectAnomaly(signals);
-  if (a) return { light: 'yellow', metric: a.metric, direction: a.direction, anomaly: a, metrics: deviating.length ? deviating : [a.metric] };
-  return { light: 'green' };
+  if (counter === 0 || !driver) return { light: 'green', nights: 0 };
+  if (counter === 1) {
+    return { light: 'yellow', metric: driver, metrics: outNow.length ? outNow : [driver], direction: RULES[driver].dir, nights: 1 };
+  }
+  const redPhase: 1 | 2 = counter >= RED_PHASE2_NIGHTS ? 2 : 1;
+  return { light: 'red', metric: driver, metrics: outNow.length ? outNow : [driver], direction: RULES[driver].dir, nights: counter, redDays: counter, redPhase };
 }
 
 /* ── Throttle + persisted state ─────────────────────────────────────────── */

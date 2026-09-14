@@ -4335,10 +4335,12 @@
     "yellow_title": "Out of baseline",
     "yellow_body": "Outside your usual rhythm: {{metrics}}.",
     "yellow_cta": "Start",
-    "red_title": "Out of rhythm for {{days}} days",
-    "red_body": "Your body has been outside its calm rhythm for a while",
     "red_cta": "Start a practice",
-    "red_report": "Analytics & report for a specialist"
+    "red_report": "Analytics & report for a specialist",
+    "red_title_one": "Out of rhythm for {{count}} day",
+    "red_title_other": "Out of rhythm for {{count}} days",
+    "red_sub1": "Your body has been out of its calm rhythm for a couple of days",
+    "red_sub2": "Your body has been outside its calm rhythm for a while"
   },
   "units": {
     "bpm": "bpm",
@@ -4350,7 +4352,10 @@
     "why_hrv": "Recovery is below your norm. A practice will help the body come back to itself.",
     "why_rr": "Your breathing was faster than usual. A practice will help calm the rhythm.",
     "green_body": "Want to strengthen your rhythm? A short practice will support it.",
-    "red_body": "Your body has stayed outside its usual rhythm for {{days}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
-    "pdf": "Create a PDF report"
+    "pdf": "Create a PDF report",
+    "red1_body_one": "Your readings have stayed out of the usual for {{count}} day. Often the body just needs rest. A practice will help it return to rhythm.",
+    "red1_body_other": "Your readings have stayed out of the usual for {{count}} days. Often the body just needs rest. A practice will help it return to rhythm.",
+    "red_body_one": "Your body has stayed outside its usual rhythm for {{count}} day. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
+    "red_body_other": "Your body has stayed outside its usual rhythm for {{count}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist."
   }
 }

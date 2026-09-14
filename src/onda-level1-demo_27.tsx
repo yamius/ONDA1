@@ -695,7 +695,7 @@ const OndaLevel1 = () => {
     trafficEvaluatedRef.current = true;
     (async () => {
       try {
-        const corridors = await HealthKitHeartRate.queryBaselineCorridors({ days: 30 });
+        const corridors = await HealthKitHeartRate.queryBaselineCorridors({ days: 90 });
         const signals: SignalInput[] = (['rhr', 'hrv', 'rr'] as const).flatMap((k) => {
           const vals = corridors?.[k]?.values ?? [];
           if (vals.length < 2) return [];
@@ -757,7 +757,7 @@ const OndaLevel1 = () => {
     (async () => {
       let corridors: BaselineCorridorsResult;
       try {
-        corridors = await HealthKitHeartRate.queryBaselineCorridors({ days: 30 });
+        corridors = await HealthKitHeartRate.queryBaselineCorridors({ days: 90 });
       } catch (e) {
         console.warn('[anomaly] corridors query failed', e);
         return;
@@ -997,17 +997,18 @@ const OndaLevel1 = () => {
     }, 2000);
   }, []);
 
-  // ── Signal test mode (task 84 pt3) ──────────────────────────────────────────
-  // Cycle: rhr↑ → hrv↓ → rr↑ → red → repeat. Injects a SIMULATED anomalyPrompt +
-  // trafficState (drives the same card/hero/practice as a real signal) without
-  // firing real anomaly analytics. In slow mode also schedules a local notification
-  // so the background push can be checked. Overlays detectAnomaly, never replaces it.
+  // ── Signal test mode (task 84 pt3 · red phases task 86) ──────────────────────
+  // Cycle: rhr↑ → hrv↓ → rr↑ → red phase 1 (2-3 nights, soft) → red phase 2 (4+,
+  // strong + PDF) → repeat. Injects a SIMULATED anomalyPrompt + trafficState (drives
+  // the same card/hero/practice as a real signal) without firing real anomaly
+  // analytics. Overlays detectAnomaly, never replaces it.
   const applySimStep = useCallback((i: number) => {
     const steps = [
-      { light: 'yellow' as const, metric: 'rhr' as const },
-      { light: 'yellow' as const, metric: 'hrv' as const },
-      { light: 'yellow' as const, metric: 'rr' as const },
-      { light: 'red' as const, metric: 'rhr' as const },
+      { light: 'yellow' as const, metric: 'rhr' as const, nights: 1 },
+      { light: 'yellow' as const, metric: 'hrv' as const, nights: 1 },
+      { light: 'yellow' as const, metric: 'rr' as const, nights: 1 },
+      { light: 'red' as const, metric: 'rhr' as const, nights: 2 },   // phase 1 (soft)
+      { light: 'red' as const, metric: 'rhr' as const, nights: 5 },   // phase 2 (strong + PDF)
     ];
     const step = steps[((i % steps.length) + steps.length) % steps.length];
     const m = step.metric;
@@ -1021,8 +1022,8 @@ const OndaLevel1 = () => {
     };
     setAnomalyPrompt(pending);
     setTrafficState(step.light === 'red'
-      ? { light: 'red', metric: m, direction: 'high', redDays: 4 }
-      : { light: 'yellow', metric: m, direction: pending.direction, anomaly: pending });
+      ? { light: 'red', metric: m, direction: 'high', nights: step.nights, redDays: step.nights, redPhase: step.nights >= 4 ? 2 : 1, metrics: [m] }
+      : { light: 'yellow', metric: m, direction: pending.direction, anomaly: pending, nights: 1, metrics: [m] });
     if (!simFast) {
       // 5-min mode = verify the BACKGROUND push. Ensure permission, then schedule a
       // TIME-SENSITIVE push ~8s out (native path — same interruption level as the
@@ -6986,19 +6987,27 @@ const OndaLevel1 = () => {
                   </>
                 ) : (() => {
                   const m = a.metric;
-                  const isRed = trafficState.light === 'red';   // 4 days out → red copy + PDF
+                  const isRed = trafficState.light === 'red';       // 2+ nights out
+                  const redPhase2 = isRed && trafficState.redPhase === 2;  // 4+ nights → strong + PDF
+                  const redDays = trafficState.redDays ?? trafficState.nights ?? 2;
                   const examples = (a.signalCount ?? 0) >= 5
                     ? t('anomaly.causes_more', 'Опиши все возможные причины.')
                     : t('anomaly.causes', 'Что повлияло? Кофе, стресс, сон, алкоголь.');
                   let savedWhen = '';
                   try { const d = new Date(a.recordedAt || a.at); savedWhen = `${d.toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' })} ${d.toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' })}`; } catch { /* noop */ }
                   return (
-                    <div className={pal.body} data-signal={isRed ? 'red' : 'yellow'}>
-                      {/* WHY (no practice name) — short by-metric for yellow, the caring line for red. */}
-                      <p className="text-sm leading-snug font-medium">{isRed ? t('recommend.red_body', 'Твоё тело держится вне обычного ритма уже {{days}} дней. Часто простой отдых возвращает его в норму. А если решишь разобраться — твоя аналитика в Таймлайне готова, чтобы показать специалисту.', { days: trafficState.redDays ?? 4 }) : t(`recommend.why_${m}`)}</p>
+                    <div className={pal.body} data-signal={isRed ? (redPhase2 ? 'red2' : 'red1') : 'yellow'}>
+                      {/* WHY (no practice name): yellow = by-metric; red phase 1 = soft;
+                          red phase 2 = strong (to a specialist). Pluralised by nights. */}
+                      <p className="text-sm leading-snug font-medium">{
+                        !isRed ? t(`recommend.why_${m}`)
+                          : redPhase2
+                            ? t('recommend.red_body', { count: redDays, defaultValue: 'Твоё тело держится вне обычного ритма уже {{count}} дней. Часто простой отдых возвращает его в норму. А если решишь разобраться — твоя аналитика в Таймлайне готова, чтобы показать специалисту.' })
+                            : t('recommend.red1_body', { count: redDays, defaultValue: 'Твои показатели держатся вне обычного уже {{count}} дн. Часто телу просто нужен отдых. Практика поможет вернуться в ритм.' })
+                      }</p>
                       <button type="button" onClick={() => startRecommendedPractice(m)} data-testid="anomaly-practice" className={`mt-4 w-full rounded-xl py-2.5 text-sm font-bold transition-all ${pal.solid}`}>{t('anomaly.start_practice', 'Начать практику')}</button>
-                      {/* Red only, BOTH modes — the report for a specialist. */}
-                      {isRed && (
+                      {/* PDF only in red PHASE 2 (4+ nights), BOTH modes. */}
+                      {redPhase2 && (
                         <button type="button" onClick={() => { setDiaryExportMode(appMode === 'simple' ? 'pdf' : 'full'); setShowDiaryModal(true); }} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${pal.soft}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
                       )}
                       {/* Record "what happened" — DETAILED mode only (compact keeps nothing). */}
@@ -9547,7 +9556,7 @@ const OndaLevel1 = () => {
             {/* Signal test mode (task 84 pt3) — internal builds only. */}
             {internalTrafficOn && (
               <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="sim-panel">
-                <div className="mb-1">🧪 Test signals {simActive && <span className="text-amber-400">· step {simIndexRef.current % 4 + 1}/4 · {simFast ? '30s' : '5min'}</span>}</div>
+                <div className="mb-1">🧪 Test signals {simActive && <span className="text-amber-400">· step {simIndexRef.current % 5 + 1}/5 · {simFast ? '30s' : '5min'}</span>}</div>
                 <div className="flex items-center gap-2 flex-wrap">
                   <button type="button" onClick={() => { if (simActive) { stopSim(); } else { simIndexRef.current = 0; setSimActive(true); } }} data-testid="sim-toggle" className={`rounded px-2 py-1 ${simActive ? 'bg-amber-500 text-white' : (isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80')}`}>{simActive ? 'Stop' : 'Start'}</button>
                   {/* Interval selector — pick 30s (UI) or 5min (background push). */}
