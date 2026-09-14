@@ -717,6 +717,27 @@ const OndaLevel1 = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [appMode, watchHeartRate.isConnected]);
 
+  // Auto-record a baseline point from LIVE vitals — in compact there's no Timeline
+  // button (that tap used to snapshot a point), so the timeline/red-PDF would have
+  // no points. Fires once per session as soon as live pulse/breathing arrive;
+  // recordBaselineSample throttles 2h so it never duplicates the detailed button.
+  const autoSampleRef = useRef(false);
+  useEffect(() => {
+    if (autoSampleRef.current) return;
+    if (displayHeartRate == null && vitalsData.br == null) return;
+    autoSampleRef.current = true;
+    try {
+      const rrR = baseline?.data?.readings?.find((x) => x.key === 'rr');
+      const hrvR = baseline?.data?.readings?.find((x) => x.key === 'hrv');
+      recordBaselineSample({
+        rhr: displayHeartRate ?? dayRhr,
+        rr: vitalsData.br ?? (rrR?.avg ?? null),
+        hrv: hrvR?.avg ?? null,
+      });
+    } catch { /* noop */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [displayHeartRate, vitalsData.br, baseline]);
+
   // Anomaly evaluation (step 4). Once per session, when a watch is connected,
   // read the per-night corridors from HealthKit and check the latest night.
   const anomalyEvaluatedRef = useRef(false);
