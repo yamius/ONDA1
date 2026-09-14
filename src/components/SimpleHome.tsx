@@ -61,7 +61,7 @@ export function PulseBreathTiles({ light, heartRate, breathing }: { light: boole
       </div>
       <div className={`font-bold leading-none ${light ? 'text-slate-700' : 'text-white'}`} style={{ fontVariantNumeric: 'tabular-nums' }}>
         {value != null
-          ? <span className="text-3xl">{value}<span className="text-sm font-semibold"> {unit}</span></span>
+          ? <span className="text-3xl">{Math.round(value)}<span className="text-sm font-semibold"> {unit}</span></span>
           : <span className={`text-2xl ${light ? 'text-slate-300' : 'text-white/40'}`}>--</span>}
       </div>
     </div>
