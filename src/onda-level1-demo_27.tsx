@@ -13,7 +13,7 @@ import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
 import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
-import { SimpleHome } from './components/SimpleHome';
+import { SimpleHero, PulseBreathTiles } from './components/SimpleHome';
 import { ensureModeAssigned, setMode as persistMode, type AppMode } from './lib/mode';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
@@ -6636,26 +6636,12 @@ const OndaLevel1 = () => {
           </span>
         </div>
 
-        {/* Simple mode (task 83): the traffic-light experience replaces the whole
-            detailed home (baseline/coherence/diary/practices/journey). Brand header
-            above stays in both modes. */}
+        {/* Compact mode (task 84): ONLY the top swaps — the traffic-light hero
+            replaces the baseline card (Shift + corridor numbers hidden); the
+            coherence hero lower down becomes plain tiles. Everything from the
+            Timeline button on is IDENTICAL to detailed (shared render). */}
         {appMode === 'simple' ? (
-          <SimpleHome
-            light={isLight}
-            traffic={trafficState}
-            heartRate={displayHeartRate}
-            breathing={vitalsData.br ?? null}
-            connected={watchHeartRate.isConnected || displayHeartRate != null}
-            onConnectWatch={() => { try { track('watch_connect_tapped', { source: 'simple_home' }); } catch { /* noop */ } setShowPermissionModal(true); }}
-            onStartCamera={() => cameraPpg.start()}
-            onStartPractice={(metric) => {
-              const pid = metric ? ANOMALY_PRACTICE[metric] : SIGNAL_PRACTICE_ORDER[0];
-              const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
-              try { track('practice_start', { practice_id: pid, source: 'simple_traffic', mode: appMode, traffic: trafficState.light }); } catch { /* noop */ }
-              if (pr) completePractice(pid, pr.maxQnt);
-            }}
-            onOpenReport={() => setShowDiaryModal(true)}
-          />
+          <SimpleHero light={isLight} traffic={trafficState} />
         ) : (
         <>
         {/* ── My Baseline — the anchor of the home, first in view on open ──
@@ -6688,6 +6674,8 @@ const OndaLevel1 = () => {
             />
           </div>
         </div>
+        </>
+        )}
 
         {/* Section 1 — Biometric block. Honest + calm: two tiles
             (Pulse — measured · Breathing — an RSA estimate) → Coherence
@@ -6782,6 +6770,10 @@ const OndaLevel1 = () => {
                 </div>
               </div>
             ) : displayHeartRate != null ? (
+              appMode === 'simple' ? (
+                /* Compact: coherence hidden — plain pulse/breathing tiles instead. */
+                <PulseBreathTiles light={isLight} heartRate={displayHeartRate} breathing={vitalsData.br ?? null} />
+              ) : (
               /* WATCH → Coherence hero (heart–breath synchrony; never medical). */
               <div className={`relative rounded-2xl p-6 ${
                 isLight
@@ -6811,6 +6803,7 @@ const OndaLevel1 = () => {
                   <MetricsWaveform heartRate={displayHeartRate} stress={null} energy={null} hrOnly heightPx={120} />
                 </div>
               </div>
+              )
             ) : (
               <div
                 className={`rounded-2xl p-4 sm:p-5 text-center ${
@@ -8650,8 +8643,6 @@ const OndaLevel1 = () => {
         )}
 
       </div>
-        </>
-        )}
       </div>
 
       {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
