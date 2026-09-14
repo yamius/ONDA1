@@ -13,7 +13,7 @@ import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
 import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
-import { SimpleHero, PulseBreathTiles } from './components/SimpleHome';
+import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
 import { ensureModeAssigned, setMode as persistMode, type AppMode } from './lib/mode';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
@@ -6757,10 +6757,12 @@ const OndaLevel1 = () => {
                 shift={baselineShift}
                 todayData={baselineToday}
                 light={isLight}
-                showReassure={trafficState.light === 'green'}
+                trafficLight={trafficState.light}
+                statusTitle={trafficState.light !== 'green' ? trafficCopy(t, trafficState).title : undefined}
+                statusBody={trafficState.light !== 'green' ? trafficCopy(t, trafficState).body : undefined}
               />
             </div>
-            {/* Reassurance now lives INSIDE the baseline card (under the feet), green only. */}
+            {/* Status line (green reassurance / yellow-red state) lives INSIDE the card, under the feet. */}
           </div>
         </div>
         </>

@@ -1,7 +1,34 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import type { TFunction } from 'i18next';
 import { Heart, Wind } from 'lucide-react';
 import type { TrafficState } from '../lib/anomaly';
+
+/**
+ * The state title + body for a traffic state — the SAME copy the SimpleHero
+ * shows. Shared so the detailed baseline card can label its yellow/red states
+ * with identical wording (title = STATE, body = which metric / how long).
+ */
+export function trafficCopy(t: TFunction, traffic: TrafficState): { title: string; body: string } {
+  const days = traffic.redDays ?? traffic.nights ?? 2;
+  const title = traffic.light === 'green'
+    ? t('simple.green_title', 'В своём ритме')
+    : traffic.light === 'yellow'
+      ? t('simple.yellow_title', 'Выход из Базлайна')
+      : t('simple.red_title', { count: days, defaultValue: 'Вне ритма уже {{count}} дн.' }); // pluralised by count
+
+  // Yellow lists the metric(s) that left the corridor — it describes the state best.
+  const outMetrics = (traffic.metrics ?? (traffic.metric ? [traffic.metric] : []))
+    .map((m) => t(`anomaly.metric_${m}`)).join(', ');
+  const body = traffic.light === 'green'
+    ? t('simple.green_body', 'Тело в своём базовом коридоре показателей')
+    : traffic.light === 'yellow'
+      ? t('simple.yellow_body', 'Вне обычного ритма: {{metrics}}.', { metrics: outMetrics })
+      : traffic.redPhase === 2
+        ? t('simple.red_sub2', 'Тело давно вне спокойного ритма')
+        : t('simple.red_sub1', 'Тело второй день вне спокойного ритма');
+  return { title, body };
+}
 
 /**
  * Simple (compact) mode pieces (task 83 + 84). Compact = the DETAILED home with
@@ -26,23 +53,7 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
   }[traffic.light];
 
   // Hero = STATE only (no practice talk — that's the Recommendations block's job).
-  const days = traffic.redDays ?? traffic.nights ?? 2;
-  const title = traffic.light === 'green'
-    ? t('simple.green_title', 'В своём ритме')
-    : traffic.light === 'yellow'
-      ? t('simple.yellow_title', 'Выход из Базлайна')
-      : t('simple.red_title', { count: days, defaultValue: 'Вне ритма уже {{count}} дн.' }); // pluralised by count
-
-  // Yellow lists the metric(s) that left the corridor — it describes the state best.
-  const outMetrics = (traffic.metrics ?? (traffic.metric ? [traffic.metric] : []))
-    .map((m) => t(`anomaly.metric_${m}`)).join(', ');
-  const body = traffic.light === 'green'
-    ? t('simple.green_body', 'Тело в своём базовом коридоре показателей')
-    : traffic.light === 'yellow'
-      ? t('simple.yellow_body', 'Вне обычного ритма: {{metrics}}.', { metrics: outMetrics })
-      : traffic.redPhase === 2
-        ? t('simple.red_sub2', 'Тело давно вне спокойного ритма')
-        : t('simple.red_sub1', 'Тело второй день вне спокойного ритма');
+  const { title, body } = trafficCopy(t, traffic);
 
   return (
     <div className="mb-6 flex flex-col items-center" data-testid="simple-hero" data-traffic={traffic.light}>
