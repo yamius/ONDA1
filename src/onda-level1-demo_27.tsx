@@ -1068,22 +1068,11 @@ const OndaLevel1 = () => {
   // legacy 3-screen tutorial above stays reachable via Menu → Intro.
   // Suppressed for anyone who already passed a first-run surface or has
   // already engaged with practices (upgraders must not see it).
-  const [showFirstRun, setShowFirstRun] = useState<boolean>(() => {
-    if (typeof localStorage === 'undefined') return false;
-    if (localStorage.getItem('onda_first_run_done') === 'true') return false;
-    // Graduated from the legacy 3-screen onboarding (pre-1.7.3 installs).
-    if (localStorage.getItem('onda_onboarding_completed') === 'true') return false;
-    // Already validly completed a practice at some point (any version).
-    if (localStorage.getItem('onda_airbridge_first_practice_tracked') === '1') return false;
-    try {
-      // Already opened at least one free practice from the hub.
-      const tapped = JSON.parse(localStorage.getItem('onda_tapped_free_practices') || '[]');
-      if (Array.isArray(tapped) && tapped.length > 0) return false;
-    } catch {
-      // corrupted flag — treat as new install
-    }
-    return true;
-  });
+  // Onboarding DISABLED (product decision): every launch — new install or not —
+  // drops the user straight onto the home screen. The first-run welcome and its
+  // funnel machinery below stay in place but are never shown; to bring it back,
+  // restore the original localStorage-based first-run detection here.
+  const [showFirstRun, setShowFirstRun] = useState<boolean>(false);
   // First view timestamp → `duration_seconds` on tutorial_complete, so the
   // old (3-screen) and new (1-screen) first-run funnels stay comparable.
   const firstRunShownAtRef = useRef<number | null>(null);
