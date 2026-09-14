@@ -701,6 +701,16 @@ const OndaLevel1 = () => {
           return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
         });
         setTrafficState(computeTrafficLight(signals));
+        // Compact mode shows no Timeline button (that tap used to record a point),
+        // so drop a baseline point here — automatically, once per session (2h
+        // throttle) — so the red-state PDF report still has the corridor data.
+        try {
+          recordBaselineSample({
+            rhr: corridors.rhr?.values?.at(-1) ?? null,
+            hrv: corridors.hrv?.values?.at(-1) ?? null,
+            rr: corridors.rr?.values?.at(-1) ?? null,
+          });
+        } catch { /* noop */ }
       } catch (e) { console.warn('[traffic] corridors query failed', e); }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
