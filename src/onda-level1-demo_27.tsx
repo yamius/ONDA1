@@ -6920,39 +6920,61 @@ const OndaLevel1 = () => {
             diary (the old standalone amber signal card lives here now). */}
         {(() => {
           const a = anomalyPrompt && (!anomalyPrompt.remindAfter || Date.now() >= anomalyPrompt.remindAfter) ? anomalyPrompt : null;
-          const shellBase = a
-            ? (isLight ? 'bg-amber-50 border-amber-200' : 'bg-amber-500/10 border-amber-400/30')
-            : (isLight ? 'bg-white/55 backdrop-blur-xl border-violet-200 shadow-lg shadow-indigo-100/60' : 'bg-white/5 backdrop-blur-sm border-white/15');
+          // Frame + buttons follow the Baseline STATUS colour (green/yellow/red),
+          // matching the traffic light, in both modes (task: colour-coded block).
+          const colorState = !a ? 'green' : (trafficState.light === 'red' ? 'red' : 'yellow');
+          const pal = {
+            green: {
+              shell: isLight ? 'bg-emerald-50/70 border-emerald-300' : 'bg-emerald-500/10 border-emerald-400/30',
+              title: isLight ? 'text-emerald-900' : 'text-emerald-100',
+              body: isLight ? 'text-emerald-800' : 'text-emerald-50/80',
+              solid: 'bg-emerald-500 text-white hover:bg-emerald-600',
+              soft: isLight ? 'bg-emerald-100 text-emerald-800 hover:bg-emerald-200' : 'bg-emerald-400/15 text-emerald-100 hover:bg-emerald-400/25',
+            },
+            yellow: {
+              shell: isLight ? 'bg-amber-50 border-amber-200' : 'bg-amber-500/10 border-amber-400/30',
+              title: isLight ? 'text-amber-900' : 'text-amber-100',
+              body: isLight ? 'text-amber-900' : 'text-amber-100',
+              solid: 'bg-amber-500 text-white hover:bg-amber-600',
+              soft: isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25',
+            },
+            red: {
+              shell: isLight ? 'bg-[#fdf2ec] border-[#e7c3ad]' : 'bg-[#b45309]/10 border-[#b45309]/40',
+              title: isLight ? 'text-[#7c3a0a]' : 'text-[#f6c9a8]',
+              body: isLight ? 'text-[#7c3a0a]' : 'text-[#f6c9a8]',
+              solid: 'bg-[#b45309] text-white hover:bg-[#9a4708]',
+              soft: isLight ? 'bg-[#f3ddcc] text-[#7c3a0a] hover:bg-[#ecccb5]' : 'bg-[#b45309]/20 text-[#f6c9a8] hover:bg-[#b45309]/30',
+            },
+          }[colorState];
           return (
             <div className="mb-4 flex flex-col items-center">
-              <div className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${shellBase}`} style={collapseStyle('recommendations', 45, 8)} data-testid="recommendations-block" data-mode={a ? 'signal' : 'static'}>
+              <div className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${pal.shell} ${isLight ? 'backdrop-blur-xl' : 'backdrop-blur-sm'}`} style={collapseStyle('recommendations', 45, 8)} data-testid="recommendations-block" data-mode={a ? 'signal' : 'static'} data-color={colorState}>
                 {collapseDot('recommendations')}
-                <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${a ? (isLight ? 'text-amber-900' : 'text-amber-100') : (isLight ? 'text-slate-700' : 'text-white')}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
+                <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${pal.title}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
                 {!a ? (
                   <>
-                    <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>{t('recommend.green_body', 'Хочешь укрепить свой ритм? Короткая практика поддержит его.')}</p>
+                    <p className={`text-sm leading-relaxed ${pal.body}`}>{t('recommend.green_body', 'Хочешь укрепить свой ритм? Короткая практика поддержит его.')}</p>
                     {baseline && baseline.source === 'watch' && (
                       <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
                     )}
-                    <button type="button" onClick={() => startRecommendedPractice(null)} data-testid="rec-start" className={`mt-4 w-full rounded-xl py-2.5 text-sm font-bold transition-all ${isLight ? 'bg-violet-500 text-white hover:bg-violet-600' : 'bg-indigo-500 text-white hover:bg-indigo-600'}`}>{t('recommend.start', 'Начать')}</button>
+                    <button type="button" onClick={() => startRecommendedPractice(null)} data-testid="rec-start" className={`mt-4 w-full rounded-xl py-2.5 text-sm font-bold transition-all ${pal.solid}`}>{t('recommend.start', 'Начать')}</button>
                   </>
                 ) : (() => {
                   const m = a.metric;
                   const isRed = trafficState.light === 'red';   // 4 days out → red copy + PDF
-                  const amberText = isLight ? 'text-amber-900' : 'text-amber-100';
                   const examples = (a.signalCount ?? 0) >= 5
                     ? t('anomaly.causes_more', 'Опиши все возможные причины.')
                     : t('anomaly.causes', 'Что повлияло? Кофе, стресс, сон, алкоголь.');
                   let savedWhen = '';
                   try { const d = new Date(a.recordedAt || a.at); savedWhen = `${d.toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' })} ${d.toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' })}`; } catch { /* noop */ }
                   return (
-                    <div className={amberText} data-signal={isRed ? 'red' : 'yellow'}>
+                    <div className={pal.body} data-signal={isRed ? 'red' : 'yellow'}>
                       {/* WHY (no practice name) — short by-metric for yellow, the caring line for red. */}
                       <p className="text-sm leading-snug font-medium">{isRed ? t('recommend.red_body', 'Твоё тело держится вне обычного ритма уже {{days}} дней. Часто простой отдых возвращает его в норму. А если решишь разобраться — твоя аналитика в Таймлайне готова, чтобы показать специалисту.', { days: trafficState.redDays ?? 4 }) : t(`recommend.why_${m}`)}</p>
-                      <button type="button" onClick={() => startRecommendedPractice(m)} data-testid="anomaly-practice" className="mt-4 w-full rounded-xl py-2.5 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
+                      <button type="button" onClick={() => startRecommendedPractice(m)} data-testid="anomaly-practice" className={`mt-4 w-full rounded-xl py-2.5 text-sm font-bold transition-all ${pal.solid}`}>{t('anomaly.start_practice', 'Начать практику')}</button>
                       {/* Red only, BOTH modes — the report for a specialist. */}
                       {isRed && (
-                        <button type="button" onClick={() => { setDiaryExportMode(appMode === 'simple' ? 'pdf' : 'full'); setShowDiaryModal(true); }} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
+                        <button type="button" onClick={() => { setDiaryExportMode(appMode === 'simple' ? 'pdf' : 'full'); setShowDiaryModal(true); }} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${pal.soft}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
                       )}
                       {/* Record "what happened" — DETAILED mode only (compact keeps nothing). */}
                       {appMode !== 'simple' && (
@@ -6960,8 +6982,8 @@ const OndaLevel1 = () => {
                           <div className="mt-3">
                             <p className="text-sm opacity-90">{examples}</p>
                             <div className="mt-2 flex gap-2">
-                              <button type="button" onClick={() => recordAnomaly(a)} data-testid="anomaly-cta" className="flex-1 rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.record', 'Записать')}</button>
-                              <button type="button" onClick={() => remindAnomalyLater(a)} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
+                              <button type="button" onClick={() => recordAnomaly(a)} data-testid="anomaly-cta" className={`flex-1 rounded-xl py-2 text-sm font-bold transition-all ${pal.solid}`}>{t('anomaly.record', 'Записать')}</button>
+                              <button type="button" onClick={() => remindAnomalyLater(a)} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${pal.soft}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
                             </div>
                           </div>
                         ) : (
