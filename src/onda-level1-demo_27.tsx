@@ -6750,16 +6750,24 @@ const OndaLevel1 = () => {
                 {t('baseline.shift', 'Shift')}
               </button>
             </div>
-            <BaselineCard
-              data={baseline?.data ?? null}
-              source={baseline?.source ?? 'camera'}
-              emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
-              liveHr={baselineLiveHr}
-              liveBr={baselineLiveBr}
-              shift={baselineShift}
-              todayData={baselineToday}
-              light={isLight}
-            />
+            {/* Status contour — the baseline card's outline carries the traffic
+                light (green/yellow/red), matching the Recommendations block. */}
+            <div
+              className={`rounded-2xl ring-2 ${trafficState.light === 'red' ? 'ring-[#b45309]/70' : trafficState.light === 'yellow' ? 'ring-amber-400/70' : 'ring-emerald-400/70'}`}
+              data-testid="baseline-card-ring"
+              data-color={trafficState.light}
+            >
+              <BaselineCard
+                data={baseline?.data ?? null}
+                source={baseline?.source ?? 'camera'}
+                emptyHint={t('baseline.empty_hint', 'Подключите Apple Watch, чтобы открыть базлайн из 14 дней истории Health')}
+                liveHr={baselineLiveHr}
+                liveBr={baselineLiveBr}
+                shift={baselineShift}
+                todayData={baselineToday}
+                light={isLight}
+              />
+            </div>
           </div>
         </div>
         </>
