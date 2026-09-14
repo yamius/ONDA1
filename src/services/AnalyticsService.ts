@@ -76,6 +76,9 @@ export type AnalyticsEventName =
   // Timeline export (on-device PDF, no content logged)
   | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
   | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.
+  // Simple mode A/B (task 83) — traffic-light vs detailed. GA4 dim `mode` (event-scoped).
+  | 'mode_assigned'                  // first-run 50/50 assignment — params: mode (simple|detailed).
+  | 'mode_switched'                  // user overrode the mode in Settings — params: from, to.
   // Gamification
   | 'ond_earned'
   | 'artifact_unlocked'

@@ -1127,7 +1127,12 @@
     "connection_instructions": "连接说明：",
     "instruction_1": "手机上：关闭标准追踪器应用。开启蓝牙",
     "instruction_2": "追踪器上：设置 → 共享心率 → 启用",
-    "realtime_metrics": "实时指标。正在校准基线…"
+    "realtime_metrics": "实时指标。正在校准基线…",
+    "mode_section": "应用视图",
+    "mode_simple": "简单",
+    "mode_detailed": "详细",
+    "mode_simple_hint": "状态红绿灯——没有数字和分析。",
+    "mode_detailed_hint": "基线、信号和日记——给喜欢数据的人。"
   },
   "labels": {
     "quality": "质量",
@@ -1147,7 +1152,8 @@
     "of_label": "/",
     "stress": "压力水平",
     "energy": "能量水平",
-    "free": "免费"
+    "free": "免费",
+    "breathing": "呼吸"
   },
   "progress": {
     "level_progress": "部分进度",
@@ -4321,5 +4327,21 @@
     "make_html": "生成 HTML",
     "voice_hint_html": "含语音时，报告保存为 HTML 文件：每段录音可直接在其中播放（用浏览器打开）。PDF 无法播放声音。",
     "photo_hint": "报告保存为 PDF——便于打印和给医生查看。"
+  },
+  "simple": {
+    "green_title": "在你的节奏里",
+    "green_body": "你在节奏中——练习会帮你保持。",
+    "green_cta": "呼吸",
+    "yellow_title": "有些变化",
+    "yellow_body": "超出你平时的节奏：{{metric}}。",
+    "yellow_cta": "开始",
+    "red_title": "持续偏离节奏",
+    "red_body": "你的身体已连续 {{days}} 天偏离平时的节奏。通常好好休息就能恢复。如果你想进一步了解，时间线里的分析可随时给专业人士查看。",
+    "red_cta": "开始练习",
+    "red_report": "给专业人士的分析与报告"
+  },
+  "units": {
+    "bpm": "bpm",
+    "rpm": "/分"
   }
 }

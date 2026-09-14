@@ -12,7 +12,9 @@ import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
-import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, type PendingAnomaly, type SignalInput } from './lib/anomaly';
+import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
+import { SimpleHome } from './components/SimpleHome';
+import { ensureModeAssigned, setMode as persistMode, type AppMode } from './lib/mode';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
 import { PermissionWarningBanner } from './components/PermissionWarningBanner';
@@ -627,6 +629,10 @@ const OndaLevel1 = () => {
   const [showStats, setShowStats] = useState(false);
   const [showJournalModal, setShowJournalModal] = useState(false);
   const [showDiaryModal, setShowDiaryModal] = useState(false);
+  // Simple mode (task 83) — A/B: 'simple' (traffic light) vs 'detailed'. Assigned
+  // 50/50 on first run (persisted, stable), overridable in Settings.
+  const [appMode, setAppMode] = useState<AppMode>(() => ensureModeAssigned().mode);
+  const [trafficState, setTrafficState] = useState<TrafficState>({ light: 'green' });
   // Anomaly trigger (step 4): the pending deviation to prompt about, if any.
   const [anomalyPrompt, setAnomalyPrompt] = useState<PendingAnomaly | null>(null);
   // Anomaly context passed to the diary ONLY when opened from the prompt (so
@@ -656,6 +662,42 @@ const OndaLevel1 = () => {
   // signal (honest). Production corridors (per-night RHR/HRV/RR + noisy-night
   // exclusion, ≥7 nights) come from the native query in the next phase; here a
   // DEV-only mock exercises the prompt/diary wiring in the web preview.
+  // A/B assignment analytics — fire `mode_assigned` exactly once per install.
+  useEffect(() => {
+    try {
+      if (localStorage.getItem('onda_mode_assigned_tracked') !== '1') {
+        localStorage.setItem('onda_mode_assigned_tracked', '1');
+        track('mode_assigned', { mode: appMode });
+      }
+    } catch { /* noop */ }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  // Simple mode (task 83): compute the traffic light from the SAME corridors as
+  // the anomaly trigger. Watch-only; gated on the proven baseline-watching flag
+  // (never touches HealthKit during first-run onboarding). Web/no-watch → green.
+  const trafficEvaluatedRef = useRef(false);
+  useEffect(() => {
+    if (appMode !== 'simple' || trafficEvaluatedRef.current) return;
+    if (platform !== 'ios' || !watchHeartRate.isConnected) return;
+    let watching = false;
+    try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
+    if (!watching) return;
+    trafficEvaluatedRef.current = true;
+    (async () => {
+      try {
+        const corridors = await HealthKitHeartRate.queryBaselineCorridors({ days: 30 });
+        const signals: SignalInput[] = (['rhr', 'hrv', 'rr'] as const).flatMap((k) => {
+          const vals = corridors?.[k]?.values ?? [];
+          if (vals.length < 2) return [];
+          return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
+        });
+        setTrafficState(computeTrafficLight(signals));
+      } catch (e) { console.warn('[traffic] corridors query failed', e); }
+    })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [appMode, watchHeartRate.isConnected]);
+
   // Anomaly evaluation (step 4). Once per session, when a watch is connected,
   // read the per-night corridors from HealthKit and check the latest night.
   const anomalyEvaluatedRef = useRef(false);
@@ -965,7 +1007,7 @@ const OndaLevel1 = () => {
     homeViewFiredRef.current = true;
     const isFirst = localStorage.getItem('onda_home_view_seen') !== '1';
     if (isFirst) localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'first_run', is_first: isFirst });
+    track('home_view', { source: 'first_run', is_first: isFirst, mode: appMode });
   }, [showSubscriptionModal, paywallSource, isPremium]);
   // relaunch: a returning user (not in onboarding) lands on the hub at launch.
   // New users start in onboarding (showFirstRun) → their home_view fires as
@@ -973,7 +1015,7 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (showFirstRun) return;
     localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'relaunch', is_first: false });
+    track('home_view', { source: 'relaunch', is_first: false, mode: appMode });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // Armed by finishPractice on the user's first-ever valid completion;
@@ -6571,6 +6613,28 @@ const OndaLevel1 = () => {
           </span>
         </div>
 
+        {/* Simple mode (task 83): the traffic-light experience replaces the whole
+            detailed home (baseline/coherence/diary/practices/journey). Brand header
+            above stays in both modes. */}
+        {appMode === 'simple' ? (
+          <SimpleHome
+            light={isLight}
+            traffic={trafficState}
+            heartRate={displayHeartRate}
+            breathing={vitalsData.br ?? null}
+            connected={watchHeartRate.isConnected || displayHeartRate != null}
+            onConnectWatch={() => { try { track('watch_connect_tapped', { source: 'simple_home' }); } catch { /* noop */ } setShowPermissionModal(true); }}
+            onStartCamera={() => cameraPpg.start()}
+            onStartPractice={(metric) => {
+              const pid = metric ? ANOMALY_PRACTICE[metric] : SIGNAL_PRACTICE_ORDER[0];
+              const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
+              try { track('practice_start', { practice_id: pid, source: 'simple_traffic', mode: appMode, traffic: trafficState.light }); } catch { /* noop */ }
+              if (pr) completePractice(pid, pr.maxQnt);
+            }}
+            onOpenReport={() => setShowDiaryModal(true)}
+          />
+        ) : (
+        <>
         {/* ── My Baseline — the anchor of the home, first in view on open ──
             Title + a reason to return + a small Shift toggle, then the figure
             card. The coherence window now sits BELOW this (moved down). */}
@@ -8594,6 +8658,8 @@ const OndaLevel1 = () => {
         )}
 
       </div>
+        </>
+        )}
       </div>
 
       {/* Diary — local-first day notes (text + voice), the new "Дневник". */}
@@ -9058,6 +9124,13 @@ const OndaLevel1 = () => {
       {showSettingsModal && (
         <SettingsModal
           onClose={() => setShowSettingsModal(false)}
+          mode={appMode}
+          onModeChange={(next) => {
+            if (next === appMode) return;
+            try { track('mode_switched', { from: appMode, to: next }); } catch { /* noop */ }
+            persistMode(next);
+            setAppMode(next);
+          }}
         />
       )}
 

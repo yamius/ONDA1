@@ -1128,7 +1128,12 @@
     "health_connect_disconnect": "Desconectar",
     "health_connect_data": "Datos de Health Connect",
     "recovery_desc": "velocidad de normalización de FC después del estrés",
-    "hr_accel_desc": "qué tan rápido sube la FC"
+    "hr_accel_desc": "qué tan rápido sube la FC",
+    "mode_section": "Vista de la app",
+    "mode_simple": "Simple",
+    "mode_detailed": "Detallada",
+    "mode_simple_hint": "Un semáforo de estado — sin números ni analítica.",
+    "mode_detailed_hint": "Baseline, señales y diario — para quien le gustan los datos."
   },
   "labels": {
     "quality": "Calidad",
@@ -1148,7 +1153,8 @@
     "of_label": "de",
     "stress": "Nivel de estrés",
     "energy": "Nivel de energía",
-    "free": "Gratis"
+    "free": "Gratis",
+    "breathing": "Respiración"
   },
   "progress": {
     "level_progress": "Progreso de la parte",
@@ -4321,5 +4327,21 @@
     "make_html": "Crear HTML",
     "voice_hint_html": "Con voz, el informe se guarda como archivo HTML: cada grabación se reproduce dentro (ábrelo en un navegador). Un PDF no reproduce sonido.",
     "photo_hint": "El informe se guarda como PDF: fácil de imprimir y mostrar al médico."
+  },
+  "simple": {
+    "green_title": "En tu ritmo",
+    "green_body": "Estás en ritmo — una práctica lo mantendrá.",
+    "green_cta": "Respirar",
+    "yellow_title": "Algo cambió",
+    "yellow_body": "Fuera de tu ritmo habitual: {{metric}}.",
+    "yellow_cta": "Empezar",
+    "red_title": "Fuera de tu ritmo",
+    "red_body": "Tu cuerpo lleva {{days}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
+    "red_cta": "Empezar una práctica",
+    "red_report": "Analítica e informe para un especialista"
+  },
+  "units": {
+    "bpm": "bpm",
+    "rpm": "/min"
   }
 }

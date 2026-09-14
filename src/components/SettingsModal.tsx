@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { X, Activity, Bell, Mail, Palette } from 'lucide-react';
+import { X, Activity, Bell, Mail, Palette, Gauge } from 'lucide-react';
+import type { AppMode } from '../lib/mode';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { VitalsDiagnostics } from './VitalsDiagnostics';
@@ -18,9 +19,11 @@ import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotificati
 
 interface SettingsModalProps {
   onClose: () => void;
+  mode?: AppMode;
+  onModeChange?: (next: AppMode) => void;
 }
 
-export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
+export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onModeChange }) => {
   const { t } = useTranslation();
   const [showDiagnostics, setShowDiagnostics] = useState(false);
   const [dailyEnabled, setDailyEnabled] = useState<boolean>(() => getDailyEnabled());
@@ -110,6 +113,36 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
         </div>
 
         <div className="space-y-6">
+          {/* Режим приложения — простой (светофор) vs детальный (цифры). A/B (task 83). */}
+          {mode && onModeChange && (
+            <div className="pt-2">
+              <div className="flex items-center gap-2 mb-3 text-text-secondary">
+                <Gauge className="w-4 h-4" />
+                <span className="text-sm font-medium">{t('settings.mode_section', 'Вид приложения')}</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {([['simple', t('settings.mode_simple', 'Простой')], ['detailed', t('settings.mode_detailed', 'Детальный')]] as const).map(([m, label]) => (
+                  <button
+                    key={m}
+                    type="button"
+                    onClick={() => onModeChange(m)}
+                    data-testid={`mode-${m}`}
+                    className={`py-2.5 rounded-xl text-sm font-medium border transition-all ${
+                      mode === m ? 'bg-indigo-500 text-white border-indigo-500' : 'bg-surface-2 text-text-secondary border-border/20 hover:bg-border/10'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              <p className="text-xs mt-2 text-text-muted">
+                {mode === 'simple'
+                  ? t('settings.mode_simple_hint', 'Светофор состояния — без цифр и аналитики.')
+                  : t('settings.mode_detailed_hint', 'Базлайн, сигналы и дневник — для тех, кто любит данные.')}
+              </p>
+            </div>
+          )}
+
           {/* Тема оформления */}
           <div className="pt-2">
             <div className="flex items-center gap-2 mb-3 text-text-secondary">

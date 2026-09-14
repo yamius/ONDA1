@@ -1296,7 +1296,8 @@
     "of_label": "of",
     "stress": "Stress Level",
     "energy": "Energy Level",
-    "free": "Free"
+    "free": "Free",
+    "breathing": "Breathing"
   },
   "settings": {
     "contact_developers": "Write to developers",
@@ -1401,7 +1402,12 @@
     "scanning": "Scanning...",
     "recovery_desc": "HR normalization speed after stress",
     "hr_accel_desc": "how fast HR rises",
-    "health_connect_data": "Health Connect Data"
+    "health_connect_data": "Health Connect Data",
+    "mode_section": "App view",
+    "mode_simple": "Simple",
+    "mode_detailed": "Detailed",
+    "mode_simple_hint": "A state traffic light — no numbers, no analytics.",
+    "mode_detailed_hint": "Baseline, signals and diary — for people who like data."
   },
   "shop": {
     "title": "OND Shop",
@@ -4321,5 +4327,21 @@
     "make_html": "Make HTML",
     "voice_hint_html": "With voice, the report is saved as an HTML file: each recording plays right inside it (open in a browser). A PDF can't play sound.",
     "photo_hint": "The report is saved as a PDF — easy to print and show a doctor."
+  },
+  "simple": {
+    "green_title": "In your rhythm",
+    "green_body": "You're in rhythm — a practice will keep it.",
+    "green_cta": "Breathe",
+    "yellow_title": "Something shifted",
+    "yellow_body": "Outside your usual rhythm: {{metric}}.",
+    "yellow_cta": "Start",
+    "red_title": "Outside your rhythm",
+    "red_body": "Your body has stayed outside its usual rhythm for {{days}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
+    "red_cta": "Start a practice",
+    "red_report": "Analytics & report for a specialist"
+  },
+  "units": {
+    "bpm": "bpm",
+    "rpm": "/min"
   }
 }

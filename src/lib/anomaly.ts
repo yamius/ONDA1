@@ -95,6 +95,55 @@ export function detectAnomaly(signals: SignalInput[]): Anomaly | null {
   return hits[0];
 }
 
+/* ── Traffic light (Simple mode, task 83) ───────────────────────────────────
+ * A VISUALIZATION of the SAME corridor engine — no new logic. green = in the
+ * corridor, yellow = a fresh deviation (the strict trigger), red = a metric that
+ * has stayed outside its corridor RED_DAYS nights in a row (a sustained pattern,
+ * not a one-off spike). Red is a FACT from the person's own data, never a verdict.
+ */
+export type TrafficLight = 'green' | 'yellow' | 'red';
+export const RED_DAYS = 4;
+
+export interface TrafficState {
+  light: TrafficLight;
+  metric?: AnomalyMetric;        // yellow/red: which metric drives it
+  direction?: AnomalyDirection;
+  redDays?: number;              // consecutive nights outside the corridor (red)
+  anomaly?: Anomaly;             // yellow: the deviation detail
+}
+
+/** How many trailing nights (newest-first) sit outside the corridor in the
+ *  metric's concerning direction. Corridor = mean±SD over the base (all but the
+ *  last RED_DAYS nights) so the outliers don't inflate the band. */
+function trailingOutside(values: number[], metric: AnomalyMetric): number {
+  if (!Array.isArray(values) || values.length < MIN_NIGHTS + RED_DAYS) return 0;
+  const base = values.slice(0, values.length - RED_DAYS);
+  const { mean, sd } = meanSd(base);
+  if (!(sd > 0)) return 0;
+  const dir = RULES[metric].dir;
+  const bound = dir === 'high' ? mean + sd : mean - sd;
+  let count = 0;
+  for (let i = values.length - 1; i >= 0; i--) {
+    const outside = dir === 'high' ? values[i] > bound : values[i] < bound;
+    if (outside) count++; else break;
+  }
+  return count;
+}
+
+/** Reduce all signals to one traffic-light state (red > yellow > green). */
+export function computeTrafficLight(signals: SignalInput[]): TrafficState {
+  let redMetric: AnomalyMetric | undefined;
+  let redDays = 0;
+  for (const s of signals) {
+    const days = trailingOutside([...s.nights, s.latest], s.metric);
+    if (days >= RED_DAYS && days > redDays) { redDays = days; redMetric = s.metric; }
+  }
+  if (redMetric) return { light: 'red', metric: redMetric, direction: RULES[redMetric].dir, redDays };
+  const a = detectAnomaly(signals);
+  if (a) return { light: 'yellow', metric: a.metric, direction: a.direction, anomaly: a };
+  return { light: 'green' };
+}
+
 /* ── Throttle + persisted state ─────────────────────────────────────────── */
 const STATE_KEY = 'onda_anomaly_state';
 
