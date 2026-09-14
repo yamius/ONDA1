@@ -18,8 +18,6 @@ import type { TrafficState } from '../lib/anomaly';
 /** The 🟢/🟡/🔴 hero that replaces the baseline card at the top of compact mode. */
 export function SimpleHero({ light, traffic }: { light: boolean; traffic: TrafficState }) {
   const { t } = useTranslation();
-  const metric = traffic.metric ?? null;
-  const metricName = metric ? t(`anomaly.metric_${metric}`) : '';
 
   const P = {
     green: { ring: '#10b981', glow: 'rgba(16,185,129,0.22)' },
@@ -27,17 +25,18 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
     red: { ring: '#b45309', glow: 'rgba(180,83,9,0.20)' },
   }[traffic.light];
 
+  // Hero = STATE only (no practice talk — that's the Recommendations block's job).
   const title = traffic.light === 'green'
-    ? t('simple.green_title', 'В твоём ритме')
+    ? t('simple.green_title', 'В своём ритме')
     : traffic.light === 'yellow'
-      ? t('simple.yellow_title', 'Что-то сдвинулось')
-      : t('simple.red_title', 'Тело держится вне ритма');
+      ? t('simple.yellow_title', 'Выход из Базлайна')
+      : t('simple.red_title', 'Вне ритма уже {{days}} дней', { days: traffic.redDays ?? 4 });
 
   const body = traffic.light === 'green'
-    ? t('simple.green_body', 'Ты в ритме — практика поддержит его.')
+    ? t('simple.green_body', 'Тело в своём базовом коридоре показателей')
     : traffic.light === 'yellow'
-      ? t('simple.yellow_body', 'Вне обычного ритма: {{metric}}.', { metric: metricName })
-      : t('simple.red_body', 'Твоё тело держится вне обычного ритма уже {{days}} дн. Часто простой отдых возвращает его в норму. А если решишь разобраться — аналитика в Таймлайне готова показать специалисту.', { days: traffic.redDays ?? 4 });
+      ? t('simple.yellow_body', 'Ты вышел из обычного ритма')
+      : t('simple.red_body', 'Тело давно вне спокойного ритма');
 
   return (
     <div className="mb-6 flex flex-col items-center" data-testid="simple-hero" data-traffic={traffic.light}>

@@ -4330,13 +4330,13 @@
   },
   "simple": {
     "green_title": "In your rhythm",
-    "green_body": "You're in rhythm — a practice will keep it.",
+    "green_body": "Your body is within its baseline corridor",
     "green_cta": "Breathe",
-    "yellow_title": "Something shifted",
-    "yellow_body": "Outside your usual rhythm: {{metric}}.",
+    "yellow_title": "Out of baseline",
+    "yellow_body": "You've stepped out of your usual rhythm",
     "yellow_cta": "Start",
-    "red_title": "Outside your rhythm",
-    "red_body": "Your body has stayed outside its usual rhythm for {{days}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
+    "red_title": "Out of rhythm for {{days}} days",
+    "red_body": "Your body has been outside its calm rhythm for a while",
     "red_cta": "Start a practice",
     "red_report": "Analytics & report for a specialist"
   },
@@ -4348,6 +4348,9 @@
     "start": "Start",
     "why_rhr": "Your resting pulse stayed higher than usual. A practice will help the body slow down.",
     "why_hrv": "Recovery is below your norm. A practice will help the body come back to itself.",
-    "why_rr": "Your breathing was faster than usual. A practice will help calm the rhythm."
+    "why_rr": "Your breathing was faster than usual. A practice will help calm the rhythm.",
+    "green_body": "Want to strengthen your rhythm? A short practice will support it.",
+    "red_body": "Your body has stayed outside its usual rhythm for {{days}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
+    "pdf": "Create a PDF report"
   }
 }

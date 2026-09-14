@@ -4330,13 +4330,13 @@
   },
   "simple": {
     "green_title": "En tu ritmo",
-    "green_body": "Estás en ritmo — una práctica lo mantendrá.",
+    "green_body": "Tu cuerpo está dentro de su corredor de base",
     "green_cta": "Respirar",
-    "yellow_title": "Algo cambió",
-    "yellow_body": "Fuera de tu ritmo habitual: {{metric}}.",
+    "yellow_title": "Fuera de tu base",
+    "yellow_body": "Has salido de tu ritmo habitual",
     "yellow_cta": "Empezar",
-    "red_title": "Fuera de tu ritmo",
-    "red_body": "Tu cuerpo lleva {{days}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
+    "red_title": "Fuera de ritmo {{days}} días",
+    "red_body": "Tu cuerpo lleva tiempo fuera de su ritmo tranquilo",
     "red_cta": "Empezar una práctica",
     "red_report": "Analítica e informe para un especialista"
   },
@@ -4348,6 +4348,9 @@
     "start": "Empezar",
     "why_rhr": "Tu pulso en reposo estuvo más alto de lo habitual. Una práctica ayudará al cuerpo a bajar el ritmo.",
     "why_hrv": "La recuperación está por debajo de tu norma. Una práctica ayudará al cuerpo a recuperarse.",
-    "why_rr": "Tu respiración fue más rápida de lo habitual. Una práctica ayudará a calmar el ritmo."
+    "why_rr": "Tu respiración fue más rápida de lo habitual. Una práctica ayudará a calmar el ritmo.",
+    "green_body": "¿Quieres reforzar tu ritmo? Una práctica corta lo apoyará.",
+    "red_body": "Tu cuerpo lleva {{days}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
+    "pdf": "Crear informe PDF"
   }
 }

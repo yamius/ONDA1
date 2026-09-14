@@ -684,7 +684,9 @@ const OndaLevel1 = () => {
   // (never touches HealthKit during first-run onboarding). Web/no-watch → green.
   const trafficEvaluatedRef = useRef(false);
   useEffect(() => {
-    if (appMode !== 'simple' || trafficEvaluatedRef.current) return;
+    // Compute in BOTH modes: the traffic light drives compact's hero AND the
+    // Recommendations block's red-vs-yellow copy in detailed (task 85).
+    if (trafficEvaluatedRef.current) return;
     if (platform !== 'ios' || !watchHeartRate.isConnected) return;
     let watching = false;
     try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
@@ -6740,10 +6742,9 @@ const OndaLevel1 = () => {
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
         <div className="mb-6">
-          {/* Diary entry — replaces the pulse/breathing mini-tiles under the
-              baseline. Opens the local-first day-note diary. Keeps baseline
-              (what the body did) ↔ diary (what happened to you) in one fold.
-              Live pulse/breath still read out in the coherence hero below. */}
+          {/* Diary/Timeline entry — DETAILED mode only. Compact keeps nothing:
+              no timeline, no diary — the traffic light is fully automatic (task 85). */}
+          {appMode !== 'simple' && (
           <button
             type="button"
             onClick={() => {
@@ -6767,6 +6768,7 @@ const OndaLevel1 = () => {
             <BookOpen className="w-5 h-5 text-indigo-400" />
             {t('diary.record_cta', 'Таймлайн')}
           </button>
+          )}
 
           <div className="mt-3 sm:mt-4">
             {cameraPpg.status !== 'idle' ? (
@@ -6911,7 +6913,7 @@ const OndaLevel1 = () => {
                 <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${a ? (isLight ? 'text-amber-900' : 'text-amber-100') : (isLight ? 'text-slate-700' : 'text-white')}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
                 {!a ? (
                   <>
-                    <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>{t('baseline.setup_body', 'Практики ниже сбалансируют твой ритм — просто следуй подсказкам во время.')}</p>
+                    <p className={`text-sm leading-relaxed ${isLight ? 'text-slate-600' : 'text-white/70'}`}>{t('recommend.green_body', 'Хочешь укрепить свой ритм? Короткая практика поддержит его.')}</p>
                     {baseline && baseline.source === 'watch' && (
                       <BaselineClosingFooter data={baseline.data} source={baseline.source} light={isLight} />
                     )}
@@ -6919,6 +6921,7 @@ const OndaLevel1 = () => {
                   </>
                 ) : (() => {
                   const m = a.metric;
+                  const isRed = trafficState.light === 'red';   // 4 days out → red copy + PDF
                   const amberText = isLight ? 'text-amber-900' : 'text-amber-100';
                   const examples = (a.signalCount ?? 0) >= 5
                     ? t('anomaly.causes_more', 'Опиши все возможные причины.')
@@ -6926,20 +6929,28 @@ const OndaLevel1 = () => {
                   let savedWhen = '';
                   try { const d = new Date(a.recordedAt || a.at); savedWhen = `${d.toLocaleDateString(i18n.language || undefined, { day: 'numeric', month: 'short' })} ${d.toLocaleTimeString(i18n.language || undefined, { hour: '2-digit', minute: '2-digit' })}`; } catch { /* noop */ }
                   return (
-                    <div className={amberText}>
-                      <p className="text-sm leading-snug font-medium">{t(`recommend.why_${m}`)}</p>
-                      {!a.recorded ? (
-                        <>
-                          <p className="mt-2 text-sm opacity-90">{examples}</p>
-                          <div className="mt-3 flex gap-2">
-                            <button type="button" onClick={() => recordAnomaly(a)} data-testid="anomaly-cta" className="flex-1 rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.record', 'Записать')}</button>
-                            <button type="button" onClick={() => remindAnomalyLater(a)} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
-                          </div>
-                        </>
-                      ) : (
-                        <p className="text-sm font-semibold mt-2" data-testid="anomaly-saved">✓ {t('anomaly.saved', 'Сохранено в таймлайн · {{when}}', { when: savedWhen })}</p>
-                      )}
+                    <div className={amberText} data-signal={isRed ? 'red' : 'yellow'}>
+                      {/* WHY (no practice name) — short by-metric for yellow, the caring line for red. */}
+                      <p className="text-sm leading-snug font-medium">{isRed ? t('recommend.red_body', 'Твоё тело держится вне обычного ритма уже {{days}} дней. Часто простой отдых возвращает его в норму. А если решишь разобраться — твоя аналитика в Таймлайне готова, чтобы показать специалисту.', { days: trafficState.redDays ?? 4 }) : t(`recommend.why_${m}`)}</p>
                       <button type="button" onClick={() => startRecommendedPractice(m)} data-testid="anomaly-practice" className="mt-4 w-full rounded-xl py-2.5 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.start_practice', 'Начать практику')}</button>
+                      {/* Red only, BOTH modes — the report for a specialist. */}
+                      {isRed && (
+                        <button type="button" onClick={() => setShowDiaryModal(true)} data-testid="rec-pdf" className={`mt-2 w-full rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('recommend.pdf', 'Сформировать PDF-отчёт')}</button>
+                      )}
+                      {/* Record "what happened" — DETAILED mode only (compact keeps nothing). */}
+                      {appMode !== 'simple' && (
+                        !a.recorded ? (
+                          <div className="mt-3">
+                            <p className="text-sm opacity-90">{examples}</p>
+                            <div className="mt-2 flex gap-2">
+                              <button type="button" onClick={() => recordAnomaly(a)} data-testid="anomaly-cta" className="flex-1 rounded-xl py-2 text-sm font-bold bg-amber-500 text-white hover:bg-amber-600 transition-all">{t('anomaly.record', 'Записать')}</button>
+                              <button type="button" onClick={() => remindAnomalyLater(a)} data-testid="anomaly-remind" className={`flex-1 rounded-xl py-2 text-sm font-semibold transition-all ${isLight ? 'bg-amber-100 text-amber-800 hover:bg-amber-200' : 'bg-amber-400/15 text-amber-100 hover:bg-amber-400/25'}`}>{t('anomaly.remind_later', 'Напомнить позже')}</button>
+                            </div>
+                          </div>
+                        ) : (
+                          <p className="text-sm font-semibold mt-2" data-testid="anomaly-saved">✓ {t('anomaly.saved', 'Сохранено в таймлайн · {{when}}', { when: savedWhen })}</p>
+                        )
+                      )}
                     </div>
                   );
                 })()}
