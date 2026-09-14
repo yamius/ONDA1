@@ -9475,9 +9475,12 @@ const OndaLevel1 = () => {
             {internalTrafficOn && (
               <div className={`mt-1 px-4 sm:px-6 py-2 text-[11px] font-mono ${isLight ? 'text-slate-500' : 'text-white/50'}`} data-testid="sim-panel">
                 <div className="mb-1">🧪 Test signals {simActive && <span className="text-amber-400">· step {simIndexRef.current % 4 + 1}/4 · {simFast ? '30s' : '5min'}</span>}</div>
-                <div className="flex gap-2">
+                <div className="flex items-center gap-2 flex-wrap">
                   <button type="button" onClick={() => { if (simActive) { stopSim(); } else { simIndexRef.current = 0; setSimActive(true); } }} data-testid="sim-toggle" className={`rounded px-2 py-1 ${simActive ? 'bg-amber-500 text-white' : (isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80')}`}>{simActive ? 'Stop' : 'Start'}</button>
-                  <button type="button" onClick={() => setSimFast((v) => !v)} data-testid="sim-interval" className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}>{simFast ? '30s' : '5min'}</button>
+                  {/* Interval selector — pick 30s (UI) or 5min (background push). */}
+                  <span className="opacity-60">⏱</span>
+                  <button type="button" onClick={() => setSimFast(true)} data-testid="sim-interval-30" className={`rounded px-2 py-1 ${simFast ? 'bg-amber-500 text-white' : (isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80')}`}>30s</button>
+                  <button type="button" onClick={() => setSimFast(false)} data-testid="sim-interval-5" className={`rounded px-2 py-1 ${!simFast ? 'bg-amber-500 text-white' : (isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80')}`}>5min</button>
                   <button type="button" onClick={() => { simIndexRef.current += 1; applySimStep(simIndexRef.current); }} disabled={!simActive} data-testid="sim-next" className={`rounded px-2 py-1 disabled:opacity-40 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}>Next</button>
                 </div>
               </div>
