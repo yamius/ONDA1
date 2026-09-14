@@ -50,9 +50,11 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
         <div className="mx-auto mb-4 rounded-full" style={{ width: 96, height: 96, background: P.ring, boxShadow: `0 0 0 10px ${P.glow}` }} aria-hidden="true" />
         <h2 className={`text-2xl font-bold mb-2 ${light ? 'text-slate-800' : 'text-white'}`}>{title}</h2>
         <p className={`text-sm leading-relaxed max-w-[300px] mx-auto ${light ? 'text-slate-600' : 'text-white/70'}`}>{body}</p>
-        {/* Calm ongoing-monitoring promise — INSIDE the card, under the state,
-            with a hairline divider; the card grows a touch to hold it. */}
-        <p className={`mt-4 pt-4 border-t text-xs leading-snug ${light ? 'text-slate-400 border-slate-200/70' : 'text-white/40 border-white/10'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
+        {/* Calm ongoing-monitoring promise — GREEN ONLY. In yellow/red we're
+            already showing the deviation, so "we'll tell you" no longer fits. */}
+        {traffic.light === 'green' && (
+          <p className={`mt-4 pt-4 border-t text-xs leading-snug ${light ? 'text-slate-400 border-slate-200/70' : 'text-white/40 border-white/10'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
+        )}
       </div>
     </div>
   );

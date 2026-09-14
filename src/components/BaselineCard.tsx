@@ -126,10 +126,13 @@ export function BaselineClosingFooter({ data, source, light }: { data: BaselineD
   );
 }
 
-export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, todayData, light }: {
+export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, todayData, light, showReassure }: {
   data: BaselineData | null;
   source: BaselineSource;
   emptyHint?: string;
+  /** Show the "we'll tell you about a deviation" line under the feet. Green
+   *  state only — in yellow/red we're already flagging, so the promise is moot. */
+  showReassure?: boolean;
   /** Light theme → the light figure + light scrims + dark text; else the dark set. */
   light?: boolean;
   /** Live pulse (Watch/camera) — when present the coral hero shows it in real
@@ -238,10 +241,13 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
       )}
 
       {/* Calm ongoing-monitoring promise — sits under the feet (there is room
-          below the figure), always shown, reads over the bottom scrim. */}
-      <div className="absolute w-full px-8 text-center" style={{ bottom: '3.5%' }}>
-        <p style={{ color: p.gray, fontSize: '2.9cqw', lineHeight: 1.35, textShadow: p.cloud }}>{t('baseline.reassure')}</p>
-      </div>
+          below the figure), reads over the bottom scrim. GREEN ONLY: in
+          yellow/red we're already showing the deviation, so it no longer fits. */}
+      {showReassure && (
+        <div className="absolute w-full px-8 text-center" style={{ bottom: '3.5%' }}>
+          <p style={{ color: p.gray, fontSize: '2.9cqw', lineHeight: 1.35, textShadow: p.cloud }}>{t('baseline.reassure')}</p>
+        </div>
+      )}
     </div>
   );
 }

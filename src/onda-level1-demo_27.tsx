@@ -6757,9 +6757,10 @@ const OndaLevel1 = () => {
                 shift={baselineShift}
                 todayData={baselineToday}
                 light={isLight}
+                showReassure={trafficState.light === 'green'}
               />
             </div>
-            {/* Reassurance now lives INSIDE the baseline card (under the feet). */}
+            {/* Reassurance now lives INSIDE the baseline card (under the feet), green only. */}
           </div>
         </div>
         </>
