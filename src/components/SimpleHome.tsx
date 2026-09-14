@@ -46,13 +46,14 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
 
   return (
     <div className="mb-6 flex flex-col items-center" data-testid="simple-hero" data-traffic={traffic.light}>
-      <div className={`w-full max-w-[360px] rounded-3xl p-6 text-center ${light ? 'bg-white/60 backdrop-blur-xl border border-violet-100 shadow-lg shadow-indigo-100/50' : 'bg-black/20 backdrop-blur-sm border border-white/10'}`}>
+      <div className={`w-full max-w-[360px] rounded-3xl px-6 pt-6 pb-5 text-center ${light ? 'bg-white/60 backdrop-blur-xl border border-violet-100 shadow-lg shadow-indigo-100/50' : 'bg-black/20 backdrop-blur-sm border border-white/10'}`}>
         <div className="mx-auto mb-4 rounded-full" style={{ width: 96, height: 96, background: P.ring, boxShadow: `0 0 0 10px ${P.glow}` }} aria-hidden="true" />
         <h2 className={`text-2xl font-bold mb-2 ${light ? 'text-slate-800' : 'text-white'}`}>{title}</h2>
         <p className={`text-sm leading-relaxed max-w-[300px] mx-auto ${light ? 'text-slate-600' : 'text-white/70'}`}>{body}</p>
+        {/* Calm ongoing-monitoring promise — INSIDE the card, under the state,
+            with a hairline divider; the card grows a touch to hold it. */}
+        <p className={`mt-4 pt-4 border-t text-xs leading-snug ${light ? 'text-slate-400 border-slate-200/70' : 'text-white/40 border-white/10'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
       </div>
-      {/* Calm ongoing-monitoring promise. */}
-      <p className={`mt-2 text-xs leading-snug text-center max-w-[320px] ${light ? 'text-slate-400' : 'text-white/40'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
     </div>
   );
 }

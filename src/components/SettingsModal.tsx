@@ -16,6 +16,7 @@ import {
   setStreakEnabled as setStreakEnabledSvc,
 } from '../services/notifications';
 import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotifications';
+import { PermissionsService } from '../services/PermissionsService';
 
 interface SettingsModalProps {
   onClose: () => void;
@@ -31,6 +32,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
   const [streakEnabled, setStreakEnabled] = useState<boolean>(() => getStreakEnabled());
   const [marketingEnabled, setMarketingEnabled] = useState<boolean>(() => getMarketingOptIn());
   const [permDenied, setPermDenied] = useState(false);
+  // Persistent-banner intent — iOS decides banner persistence, not the app, so
+  // this toggle just remembers the user's wish and deep-links into iOS Settings
+  // where they flip the real "Persistent" style. Purely a guided shortcut.
+  const [persistentBanner, setPersistentBanner] = useState<boolean>(() => {
+    try { return localStorage.getItem('onda_persistent_banner') === 'true'; } catch { return false; }
+  });
 
   useEffect(() => {
     checkPermission().then((p) => {
@@ -90,6 +97,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
     }
     setMarketingEnabled(next);
     setMarketingOptIn(next);
+  };
+
+  // Turning it ON takes the user straight to iOS Settings to set the real
+  // "Persistent" banner style; we only persist the intent so the switch sticks.
+  const handlePersistentToggle = async (next: boolean) => {
+    setPersistentBanner(next);
+    try { localStorage.setItem('onda_persistent_banner', String(next)); } catch { /* ignore */ }
+    if (next) await PermissionsService.openSettings();
   };
 
   // Hide Vitals Diagnostics in production unless debug mode is enabled
@@ -165,6 +180,38 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
             </div>
 
             <div className="p-3 rounded-xl bg-surface-2 space-y-3">
+              {/* Persistent banners — iOS-only style the app can't set itself; the
+                  toggle opens iOS Settings so an anomaly banner stays on screen
+                  until tapped instead of vanishing after a couple of seconds. */}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm text-text-primary">
+                    {t('settings.persistent_banner', 'Постоянные баннеры')}
+                  </div>
+                  <div className="text-xs mt-0.5 text-text-muted">
+                    {t('settings.persistent_banner_hint', 'Чтобы не пропустить сигнал — баннер висит, пока не нажмёшь. Откроем настройки iOS.')}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={persistentBanner}
+                  onClick={() => handlePersistentToggle(!persistentBanner)}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
+                    persistentBanner
+                      ? 'bg-indigo-500'
+                      : 'bg-border/20'
+                  }`}
+                  data-testid="toggle-persistent-banner"
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      persistentBanner ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+
               {/* Daily reminder */}
               <div className="flex items-center justify-between gap-3">
                 <div className="flex-1 min-w-0">

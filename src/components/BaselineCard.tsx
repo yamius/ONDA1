@@ -236,6 +236,12 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
           </div>
         </div>
       )}
+
+      {/* Calm ongoing-monitoring promise — sits under the feet (there is room
+          below the figure), always shown, reads over the bottom scrim. */}
+      <div className="absolute w-full px-8 text-center" style={{ bottom: '3.5%' }}>
+        <p style={{ color: p.gray, fontSize: '2.9cqw', lineHeight: 1.35, textShadow: p.cloud }}>{t('baseline.reassure')}</p>
+      </div>
     </div>
   );
 }
