@@ -36,6 +36,10 @@ interface DiaryModalProps {
   eventTime?: string | null;
   /** Fired after a note is saved in anomaly mode (so the card flips to state 2). */
   onAnomalySaved?: () => void;
+  /** Open straight into the export dialog (task 85). 'pdf' = compact red button:
+   *  photo/voice disabled (greyed), text-only → a PDF (compact keeps no notes).
+   *  'full' = detailed red button: normal export, all of text/voice/photo. */
+  exportMode?: 'pdf' | 'full' | null;
 }
 
 type RecState = 'idle' | 'recording' | 'recorded';
@@ -91,7 +95,7 @@ function loadPrefs(): ViewPrefs {
   return DEFAULT_PREFS;
 }
 
-export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null, anomaly = null, eventTime = null, onAnomalySaved }: DiaryModalProps) {
+export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = null, userId = null, anomaly = null, eventTime = null, onAnomalySaved, exportMode = null }: DiaryModalProps) {
   const { t, i18n } = useTranslation();
 
   const [entries, setEntries] = useState<DiaryEntry[]>([]);
@@ -107,6 +111,15 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
   const [customTo, setCustomTo] = useState<string>(todayStr());
   const [exportInc, setExportInc] = useState({ text: true, photo: true, voice: true });
   const [exporting, setExporting] = useState(false);
+  // Red-state export shortcut: open the export dialog straight away. 'pdf'
+  // (compact) → text-only, photo/voice greyed → a PDF; 'full' (detailed) → all
+  // options since detailed keeps a diary. Range selector stays either way.
+  useEffect(() => {
+    if (isOpen && exportMode) {
+      setExportInc(exportMode === 'pdf' ? { text: true, photo: false, voice: false } : { text: true, photo: true, voice: true });
+      setExportMenuOpen(true);
+    }
+  }, [isOpen, exportMode]);
 
   // Editor
   const [editorOpen, setEditorOpen] = useState(false);
@@ -881,9 +894,11 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
                   ['voice', Mic, t('pdf.inc_voice', 'Голосовые заметки')],
                 ] as const).map(([k, Icon, label]) => {
                   const on = exportInc[k];
+                  // PDF-only mode (compact): photo/voice greyed & inactive (text → PDF).
+                  const disabled = exportMode === 'pdf' && k !== 'text';
                   return (
-                    <button key={k} onClick={() => setExportInc((p) => ({ ...p, [k]: !p[k] }))} data-testid={`diary-export-inc-${k}`}
-                      className={`w-full flex items-center gap-3 p-3 rounded-xl border text-left transition-all ${on
+                    <button key={k} disabled={disabled} onClick={() => { if (!disabled) setExportInc((p) => ({ ...p, [k]: !p[k] })); }} data-testid={`diary-export-inc-${k}`}
+                      className={`w-full flex items-center gap-3 p-3 rounded-xl border text-left transition-all ${disabled ? 'opacity-40 cursor-not-allowed ' : ''}${on
                         ? (light ? 'bg-violet-50 border-violet-300' : 'bg-indigo-500/15 border-indigo-400/40')
                         : (light ? 'bg-white border-violet-100' : 'bg-gray-800 border-white/10')}`}>
                       <Icon className={`w-4 h-4 shrink-0 ${on ? (light ? 'text-violet-600' : 'text-indigo-300') : (light ? 'text-slate-400' : 'text-white/40')}`} />

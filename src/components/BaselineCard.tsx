@@ -126,10 +126,13 @@ export function BaselineClosingFooter({ data, source, light }: { data: BaselineD
   );
 }
 
-export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, todayData, light }: {
+export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, todayData, light, showReassure }: {
   data: BaselineData | null;
   source: BaselineSource;
   emptyHint?: string;
+  /** Show the "we'll tell you about a deviation" line under the feet. Green
+   *  state only — in yellow/red we're already flagging, so the promise is moot. */
+  showReassure?: boolean;
   /** Light theme → the light figure + light scrims + dark text; else the dark set. */
   light?: boolean;
   /** Live pulse (Watch/camera) — when present the coral hero shows it in real
@@ -168,9 +171,10 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
       {/* Scrims: fade top + bottom so the numbers and the closing lines stay legible over the figure. */}
       <div className="absolute inset-0 pointer-events-none" style={{ background: p.scrim }} />
 
-      {/* Empty state — figure + invitation, so the card is guaranteed on home. */}
+      {/* Empty state — invitation sits BELOW the knees so it doesn't cross the
+          figure's torso where it was hard to read. */}
       {isEmpty && emptyHint && (
-        <div className="absolute w-full px-10 text-center" style={{ top: '40%' }}>
+        <div className="absolute w-full px-10 text-center" style={{ top: '76%' }}>
           <p style={{ color: p.white, fontSize: '3.8cqw', lineHeight: 1.5, textShadow: p.cloud }}>{emptyHint}</p>
         </div>
       )}
@@ -233,6 +237,15 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
             <div className="text-left" style={{ color: p.white, fontSize: '2.93cqw', lineHeight: 1.25, whiteSpace: 'pre-line', textShadow: p.cloud }}>{model.variability.leftText}</div>
             <div className="text-right" style={{ color: p.white, fontSize: '2.93cqw', lineHeight: 1.25, whiteSpace: 'pre-line', textShadow: p.cloud }}>{model.variability.rightText}</div>
           </div>
+        </div>
+      )}
+
+      {/* Calm ongoing-monitoring promise — sits under the feet (there is room
+          below the figure), reads over the bottom scrim. GREEN ONLY: in
+          yellow/red we're already showing the deviation, so it no longer fits. */}
+      {showReassure && (
+        <div className="absolute w-full px-8 text-center" style={{ bottom: '3.5%' }}>
+          <p style={{ color: p.gray, fontSize: '2.9cqw', lineHeight: 1.35, textShadow: p.cloud }}>{t('baseline.reassure')}</p>
         </div>
       )}
     </div>

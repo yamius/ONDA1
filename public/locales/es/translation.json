@@ -1035,6 +1035,8 @@
     "streak_reminder_hint": "Aviso vespertino a las 20:00 si falta la práctica de hoy.",
     "promotional_reminder": "Notificaciones promocionales",
     "promotional_reminder_hint": "Noticias, novedades y ofertas especiales de ONDA.",
+    "persistent_banner": "Banners persistentes",
+    "persistent_banner_hint": "Para no perderte una señal: el aviso permanece hasta que lo tocas. Abre Ajustes de iOS.",
     "reminders_permission_denied": "Las notificaciones están desactivadas. Actívalas en iOS Settings → Notifications → ONDA.",
     "save": "Guardar",
     "notification_hr_enable": "Activar frecuencia cardíaca por notificaciones",
@@ -1128,7 +1130,12 @@
     "health_connect_disconnect": "Desconectar",
     "health_connect_data": "Datos de Health Connect",
     "recovery_desc": "velocidad de normalización de FC después del estrés",
-    "hr_accel_desc": "qué tan rápido sube la FC"
+    "hr_accel_desc": "qué tan rápido sube la FC",
+    "mode_section": "Vista de la app",
+    "mode_simple": "Simple",
+    "mode_detailed": "Detallada",
+    "mode_simple_hint": "Un semáforo de estado — sin números ni analítica.",
+    "mode_detailed_hint": "Baseline, señales y diario — para quien le gustan los datos."
   },
   "labels": {
     "quality": "Calidad",
@@ -1148,7 +1155,8 @@
     "of_label": "de",
     "stress": "Nivel de estrés",
     "energy": "Nivel de energía",
-    "free": "Gratis"
+    "free": "Gratis",
+    "breathing": "Respiración"
   },
   "progress": {
     "level_progress": "Progreso de la parte",
@@ -4229,7 +4237,8 @@
     "breath_left": "así respira tu cuerpo\nsin ti",
     "breath_right": "a este ritmo empiezas\na trabajar con tu sistema nervioso",
     "live": "resp / min\nen vivo",
-    "bpm_unit": "resp/min"
+    "bpm_unit": "resp/min",
+    "reassure": "Te avisaremos si detectamos una desviación — solo sigue llevando tu reloj."
   },
   "diary": {
     "title": "Diario",
@@ -4321,5 +4330,35 @@
     "make_html": "Crear HTML",
     "voice_hint_html": "Con voz, el informe se guarda como archivo HTML: cada grabación se reproduce dentro (ábrelo en un navegador). Un PDF no reproduce sonido.",
     "photo_hint": "El informe se guarda como PDF: fácil de imprimir y mostrar al médico."
+  },
+  "simple": {
+    "green_title": "En tu ritmo",
+    "green_body": "Tu cuerpo está dentro de su corredor de base",
+    "green_cta": "Respirar",
+    "yellow_title": "Fuera de tu base",
+    "yellow_body": "Fuera de tu ritmo habitual: {{metrics}}.",
+    "yellow_cta": "Empezar",
+    "red_cta": "Empezar una práctica",
+    "red_report": "Analítica e informe para un especialista",
+    "red_title_one": "Fuera de ritmo {{count}} día",
+    "red_title_other": "Fuera de ritmo {{count}} días",
+    "red_sub1": "Tu cuerpo lleva un par de días fuera de su ritmo tranquilo",
+    "red_sub2": "Tu cuerpo lleva tiempo fuera de su ritmo tranquilo"
+  },
+  "units": {
+    "bpm": "bpm",
+    "rpm": "/min"
+  },
+  "recommend": {
+    "start": "Empezar",
+    "why_rhr": "Tu pulso en reposo estuvo más alto de lo habitual. Una práctica ayudará al cuerpo a bajar el ritmo.",
+    "why_hrv": "La recuperación está por debajo de tu norma. Una práctica ayudará al cuerpo a recuperarse.",
+    "why_rr": "Tu respiración fue más rápida de lo habitual. Una práctica ayudará a calmar el ritmo.",
+    "green_body": "¿Quieres reforzar tu ritmo? Una práctica corta lo apoyará.",
+    "pdf": "Crear informe PDF",
+    "red1_body_one": "Tus valores llevan {{count}} día fuera de lo habitual. A menudo el cuerpo solo necesita descanso. Una práctica ayudará a volver al ritmo.",
+    "red1_body_other": "Tus valores llevan {{count}} días fuera de lo habitual. A menudo el cuerpo solo necesita descanso. Una práctica ayudará a volver al ritmo.",
+    "red_body_one": "Tu cuerpo lleva {{count}} día fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista.",
+    "red_body_other": "Tu cuerpo lleva {{count}} días fuera de su ritmo habitual. A menudo el descanso lo devuelve a la normalidad. Y si decides mirar de cerca, tu analítica en la Línea de tiempo está lista para mostrarla a un especialista."
   }
 }

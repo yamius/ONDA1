@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { X, Activity, Bell, Mail, Palette } from 'lucide-react';
+import { X, Activity, Bell, Mail, Palette, Gauge } from 'lucide-react';
+import type { AppMode } from '../lib/mode';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
 import { VitalsDiagnostics } from './VitalsDiagnostics';
@@ -15,12 +16,15 @@ import {
   setStreakEnabled as setStreakEnabledSvc,
 } from '../services/notifications';
 import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotifications';
+import { PermissionsService } from '../services/PermissionsService';
 
 interface SettingsModalProps {
   onClose: () => void;
+  mode?: AppMode;
+  onModeChange?: (next: AppMode) => void;
 }
 
-export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
+export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onModeChange }) => {
   const { t } = useTranslation();
   const [showDiagnostics, setShowDiagnostics] = useState(false);
   const [dailyEnabled, setDailyEnabled] = useState<boolean>(() => getDailyEnabled());
@@ -28,6 +32,12 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
   const [streakEnabled, setStreakEnabled] = useState<boolean>(() => getStreakEnabled());
   const [marketingEnabled, setMarketingEnabled] = useState<boolean>(() => getMarketingOptIn());
   const [permDenied, setPermDenied] = useState(false);
+  // Persistent-banner intent — iOS decides banner persistence, not the app, so
+  // this toggle just remembers the user's wish and deep-links into iOS Settings
+  // where they flip the real "Persistent" style. Purely a guided shortcut.
+  const [persistentBanner, setPersistentBanner] = useState<boolean>(() => {
+    try { return localStorage.getItem('onda_persistent_banner') === 'true'; } catch { return false; }
+  });
 
   useEffect(() => {
     checkPermission().then((p) => {
@@ -89,6 +99,14 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
     setMarketingOptIn(next);
   };
 
+  // Turning it ON takes the user straight to iOS Settings to set the real
+  // "Persistent" banner style; we only persist the intent so the switch sticks.
+  const handlePersistentToggle = async (next: boolean) => {
+    setPersistentBanner(next);
+    try { localStorage.setItem('onda_persistent_banner', String(next)); } catch { /* ignore */ }
+    if (next) await PermissionsService.openSettings();
+  };
+
   // Hide Vitals Diagnostics in production unless debug mode is enabled
   const isProduction = import.meta.env.PROD;
   const debugModeEnabled = typeof window !== 'undefined' && localStorage.getItem('debugMode') === 'true';
@@ -110,6 +128,41 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
         </div>
 
         <div className="space-y-6">
+          {/* Режим приложения — простой (светофор) vs детальный (цифры). A/B (task 83). */}
+          {mode && onModeChange && (
+            <div className="pt-2">
+              <div className="flex items-center gap-2 mb-3 text-text-secondary">
+                <Gauge className="w-4 h-4" />
+                <span className="text-sm font-medium">{t('settings.mode_section', 'Вид приложения')}</span>
+              </div>
+              <div className="grid grid-cols-2 gap-2">
+                {([['simple', t('settings.mode_simple', 'Простой')], ['detailed', t('settings.mode_detailed', 'Детальный')]] as const).map(([m, label]) => (
+                  <button
+                    key={m}
+                    type="button"
+                    onClick={() => onModeChange(m)}
+                    data-testid={`mode-${m}`}
+                    className={`py-2.5 rounded-xl text-sm font-medium border transition-all ${
+                      mode === m ? 'bg-indigo-500 text-white border-indigo-500' : 'bg-surface-2 text-text-secondary border-border/20 hover:bg-border/10'
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              {/* Both hints share one grid cell so the box is sized to the taller
+                  one — toggling mode only flips visibility, never resizes the modal. */}
+              <div className="grid mt-2 text-xs text-text-muted">
+                <p className="col-start-1 row-start-1" style={{ visibility: mode === 'simple' ? 'visible' : 'hidden' }}>
+                  {t('settings.mode_simple_hint', 'Светофор состояния — без цифр и аналитики.')}
+                </p>
+                <p className="col-start-1 row-start-1" style={{ visibility: mode === 'simple' ? 'hidden' : 'visible' }}>
+                  {t('settings.mode_detailed_hint', 'Базлайн, сигналы и дневник — для тех, кто любит данные.')}
+                </p>
+              </div>
+            </div>
+          )}
+
           {/* Тема оформления */}
           <div className="pt-2">
             <div className="flex items-center gap-2 mb-3 text-text-secondary">
@@ -127,6 +180,38 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose }) => {
             </div>
 
             <div className="p-3 rounded-xl bg-surface-2 space-y-3">
+              {/* Persistent banners — iOS-only style the app can't set itself; the
+                  toggle opens iOS Settings so an anomaly banner stays on screen
+                  until tapped instead of vanishing after a couple of seconds. */}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm text-text-primary">
+                    {t('settings.persistent_banner', 'Постоянные баннеры')}
+                  </div>
+                  <div className="text-xs mt-0.5 text-text-muted">
+                    {t('settings.persistent_banner_hint', 'Чтобы не пропустить сигнал — баннер висит, пока не нажмёшь. Откроем настройки iOS.')}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={persistentBanner}
+                  onClick={() => handlePersistentToggle(!persistentBanner)}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
+                    persistentBanner
+                      ? 'bg-indigo-500'
+                      : 'bg-border/20'
+                  }`}
+                  data-testid="toggle-persistent-banner"
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      persistentBanner ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+
               {/* Daily reminder */}
               <div className="flex items-center justify-between gap-3">
                 <div className="flex-1 min-w-0">

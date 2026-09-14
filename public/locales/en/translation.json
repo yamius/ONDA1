@@ -1296,7 +1296,8 @@
     "of_label": "of",
     "stress": "Stress Level",
     "energy": "Energy Level",
-    "free": "Free"
+    "free": "Free",
+    "breathing": "Breathing"
   },
   "settings": {
     "contact_developers": "Write to developers",
@@ -1308,6 +1309,8 @@
     "streak_reminder_hint": "Evening nudge at 20:00 when today's practice is missing.",
     "promotional_reminder": "Promotional notifications",
     "promotional_reminder_hint": "News, updates, and special offers from ONDA.",
+    "persistent_banner": "Persistent banners",
+    "persistent_banner_hint": "Keep the alert on screen until you tap it, so you do not miss a signal. Opens iOS Settings.",
     "reminders_permission_denied": "Notifications are off. Enable them in iOS Settings → Notifications → ONDA.",
     "customize_profile": "Personalize your profile",
     "your_name": "Your name (shown in leaderboard)",
@@ -1401,7 +1404,12 @@
     "scanning": "Scanning...",
     "recovery_desc": "HR normalization speed after stress",
     "hr_accel_desc": "how fast HR rises",
-    "health_connect_data": "Health Connect Data"
+    "health_connect_data": "Health Connect Data",
+    "mode_section": "App view",
+    "mode_simple": "Simple",
+    "mode_detailed": "Detailed",
+    "mode_simple_hint": "A state traffic light — no numbers, no analytics.",
+    "mode_detailed_hint": "Baseline, signals and diary — for people who like data."
   },
   "shop": {
     "title": "OND Shop",
@@ -4229,7 +4237,8 @@
     "breath_left": "it's how your body\nbreathes without you",
     "breath_right": "at this rhythm you start\nworking with your nervous system",
     "live": "breaths / min\nlive",
-    "bpm_unit": "br/min"
+    "bpm_unit": "br/min",
+    "reassure": "We'll let you know if we spot a deviation — just keep wearing your watch."
   },
   "diary": {
     "title": "Diary",
@@ -4321,5 +4330,35 @@
     "make_html": "Make HTML",
     "voice_hint_html": "With voice, the report is saved as an HTML file: each recording plays right inside it (open in a browser). A PDF can't play sound.",
     "photo_hint": "The report is saved as a PDF — easy to print and show a doctor."
+  },
+  "simple": {
+    "green_title": "In your rhythm",
+    "green_body": "Your body is within its baseline corridor",
+    "green_cta": "Breathe",
+    "yellow_title": "Out of baseline",
+    "yellow_body": "Outside your usual rhythm: {{metrics}}.",
+    "yellow_cta": "Start",
+    "red_cta": "Start a practice",
+    "red_report": "Analytics & report for a specialist",
+    "red_title_one": "Out of rhythm for {{count}} day",
+    "red_title_other": "Out of rhythm for {{count}} days",
+    "red_sub1": "Your body has been out of its calm rhythm for a couple of days",
+    "red_sub2": "Your body has been outside its calm rhythm for a while"
+  },
+  "units": {
+    "bpm": "bpm",
+    "rpm": "/min"
+  },
+  "recommend": {
+    "start": "Start",
+    "why_rhr": "Your resting pulse stayed higher than usual. A practice will help the body slow down.",
+    "why_hrv": "Recovery is below your norm. A practice will help the body come back to itself.",
+    "why_rr": "Your breathing was faster than usual. A practice will help calm the rhythm.",
+    "green_body": "Want to strengthen your rhythm? A short practice will support it.",
+    "pdf": "Create a PDF report",
+    "red1_body_one": "Your readings have stayed out of the usual for {{count}} day. Often the body just needs rest. A practice will help it return to rhythm.",
+    "red1_body_other": "Your readings have stayed out of the usual for {{count}} days. Often the body just needs rest. A practice will help it return to rhythm.",
+    "red_body_one": "Your body has stayed outside its usual rhythm for {{count}} day. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist.",
+    "red_body_other": "Your body has stayed outside its usual rhythm for {{count}} days. Simple rest often brings it back. And if you decide to look closer, your Timeline analytics are ready to show a specialist."
   }
 }

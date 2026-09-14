@@ -21,6 +21,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "queryBaselineCorridors", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "setAnomalyStrings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "scheduleTestPush", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportPdf", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportHtml", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
@@ -808,8 +809,34 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         content.body = count <= 3 ? intro : short
         content.sound = .default
         content.userInfo = ["anomaly_metric": metric]
+        // Time-sensitive → breaks through Focus/DND and shows as prominently and
+        // as long as iOS allows an app to make it (the app CANNOT force a banner to
+        // stay until tapped — that's the user's "Persistent" banner style — but the
+        // notification itself stays in Notification Center until acted on).
+        if #available(iOS 15.0, *) { content.interruptionLevel = .timeSensitive }
         let req = UNNotificationRequest(identifier: "onda_anomaly", content: content, trigger: nil) // deliver now
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+    }
+
+    // Post a time-sensitive local notification after a delay — used by the internal
+    // signal test mode to verify the background push (foreground code can't show the
+    // banner, so schedule it and background the app). Same interruption level as the
+    // real anomaly push.
+    @objc func scheduleTestPush(_ call: CAPPluginCall) {
+        let title = call.getString("title") ?? "ONDA"
+        let body = call.getString("body") ?? "Signal"
+        let delay = max(1.0, call.getDouble("delaySeconds") ?? 8.0)
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        content.userInfo = ["simulated": true]
+        if #available(iOS 15.0, *) { content.interruptionLevel = .timeSensitive }
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false)
+        let req = UNNotificationRequest(identifier: "onda_anomaly_test_\(Int(Date().timeIntervalSince1970))", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(req) { err in
+            if let err = err { call.reject("schedule failed: \(err.localizedDescription)") } else { call.resolve(["ok": true]) }
+        }
     }
 
     // ── Timeline PDF export (task 81) ───────────────────────────────────────
