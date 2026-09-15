@@ -57,6 +57,15 @@ export type AnalyticsEventName =
   | 'heart_rate_received'
   | 'biometric_sync_success'
   | 'biometric_sync_failed'
+  // New-entry funnel (task 87) — onboarding removed, Simple default, 3 coachmarks.
+  | 'coachmark_shown'                // a first-run coachmark step was shown — params: step (1|2|3).
+  | 'coachmark_back'                 // tapped Back on a coachmark — params: step (2|3).
+  | 'coachmark_completed'            // finished all three (Next on step 3). Drop-off = coachmark_shown{step:1} WITHOUT this.
+  | 'baseline_filled'                // the watch baseline actually BUILT (real coverage) — params: coverage_days, source (watch|camera). Activation heart (replaces practice_start for the new entry).
+  | 'first_signal_received'          // the traffic light first left green (yellow/red) for this install — params: metric, color (amber|red).
+  | 'first_signal_opened'            // the first signal's block entered the viewport (the user actually reached it) — params: color.
+  | 'first_signal_practice'          // started the offered practice from the first signal — params: metric, color.
+  | 'first_signal_dismissed'         // acknowledged/recorded the first signal without practising — params: metric, color.
   // Baseline (retention — Health-baseline onboarding)
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
   | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag. Lets us see which numbers Health actually gave without a device session.
@@ -77,7 +86,7 @@ export type AnalyticsEventName =
   | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
   | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.
   // Simple mode A/B (task 83) — traffic-light vs detailed. GA4 dim `mode` (event-scoped).
-  | 'mode_assigned'                  // first-run 50/50 assignment — params: mode (simple|detailed).
+  | 'mode_assigned'                  // first-run silent A/B assignment (80% simple / 20% detailed) — params: mode (simple|detailed).
   | 'mode_switched'                  // user overrode the mode in Settings — params: from, to.
   // Gamification
   | 'ond_earned'

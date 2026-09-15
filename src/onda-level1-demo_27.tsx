@@ -13,7 +13,8 @@ import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
 import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES } from './lib/diary';
 import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
-import { SimpleHero, PulseBreathTiles } from './components/SimpleHome';
+import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
+import { Coachmarks } from './components/Coachmarks';
 import { ensureModeAssigned, setMode as persistMode, type AppMode } from './lib/mode';
 import { InfoModal } from './components/InfoModal';
 import { SubscriptionModal } from './components/SubscriptionModal';
@@ -294,6 +295,14 @@ const OndaLevel1 = () => {
       try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
       const coverage = Math.max(0, ...data.readings.map((r) => r.days));
       track('baseline_shown', { source: 'watch', coverage_days: coverage });
+      // Activation heart (task 87): the baseline actually BUILT from real Health
+      // history. Once per install — the entry funnel's success moment.
+      try {
+        if (coverage > 0 && localStorage.getItem('onda_baseline_filled_tracked') !== '1') {
+          localStorage.setItem('onda_baseline_filled_tracked', '1');
+          track('baseline_filled', { source: 'watch', coverage_days: coverage });
+        }
+      } catch { /* noop */ }
 
       // Today's same-shaped read → the "today" side of the Shift deltas. Best-effort:
       // a sparse today just yields "—" on some numbers, never a fabricated delta.
@@ -630,9 +639,26 @@ const OndaLevel1 = () => {
   const [showJournalModal, setShowJournalModal] = useState(false);
   const [showDiaryModal, setShowDiaryModal] = useState(false);
   const [diaryExportMode, setDiaryExportMode] = useState<'pdf' | 'full' | null>(null);  // red PDF button → auto-open export
-  // Simple mode (task 83) — A/B: 'simple' (traffic light) vs 'detailed'. Assigned
-  // 50/50 on first run (persisted, stable), overridable in Settings.
+  // Simple mode (task 83, split 80/20 task 87) — A/B: 'simple' (traffic light,
+  // DEFAULT 80%) vs 'detailed' (expert, 20% control). Assigned silently on first
+  // run (persisted, stable), overridable in Settings.
   const [appMode, setAppMode] = useState<AppMode>(() => ensureModeAssigned().mode);
+  // First-run coachmarks (task 87) — three mandatory steps, once per install.
+  // Suppressed for anyone who already has progress (upgraders), like the old
+  // first-run screen was.
+  const [showCoachmarks, setShowCoachmarks] = useState<boolean>(() => {
+    if (typeof localStorage === 'undefined') return false;
+    try {
+      if (localStorage.getItem('onda_coachmarks_done') === 'true') return false;
+      // Existing users (any prior progress) don't get first-run coachmarks.
+      if (localStorage.getItem('onda_first_run_done') === 'true') return false;
+      if (localStorage.getItem('onda_onboarding_completed') === 'true') return false;
+      if (Number(localStorage.getItem('onda_practice_starts_total')) > 0) return false;
+      const tapped = JSON.parse(localStorage.getItem('onda_tapped_free_practices') || '[]');
+      if (Array.isArray(tapped) && tapped.length > 0) return false;
+    } catch { return false; }
+    return true;
+  });
   const [trafficState, setTrafficState] = useState<TrafficState>({ light: 'green' });
   // Signal test mode (task 84 pt3) — internal-only. Injects artificial signals in
   // a cycle so the full UX (card, traffic hero, push, practice) can be checked in
@@ -701,7 +727,18 @@ const OndaLevel1 = () => {
           if (vals.length < 2) return [];
           return [{ metric: k, nights: vals.slice(0, -1), latest: vals[vals.length - 1] }];
         });
-        setTrafficState(computeTrafficLight(signals));
+        const ts = computeTrafficLight(signals);
+        setTrafficState(ts);
+        // first_signal_received (task 87): the traffic light first left green for
+        // this install. Once, on the REAL corridor path only (the sim path never
+        // fires real signal analytics). color = amber/red for GA4 cohorting.
+        try {
+          if (ts.light !== 'green' && localStorage.getItem('onda_first_signal_tracked') !== '1') {
+            localStorage.setItem('onda_first_signal_tracked', '1');
+            const metric = ts.metric ?? ts.metrics?.[0];
+            track('first_signal_received', { metric, color: ts.light === 'red' ? 'red' : 'amber' });
+          }
+        } catch { /* noop */ }
         // Compact mode shows no Timeline button (that tap used to record a point),
         // so drop a baseline point here — automatically, once per session (2h
         // throttle) — so the red-state PDF report still has the corridor data.
@@ -716,6 +753,34 @@ const OndaLevel1 = () => {
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [appMode, watchHeartRate.isConnected]);
+
+  // first_signal_opened (task 87): the first signal's block actually entered the
+  // viewport — the user REACHED it (vs a signal that fired while they never
+  // scrolled down). Observe the Recommendations block while a signal is up; fire
+  // once per install, then stop. Simulated signals are excluded upstream (they
+  // never set onda_first_signal_tracked).
+  useEffect(() => {
+    if (trafficState.light === 'green') return;
+    let done = false;
+    try {
+      if (localStorage.getItem('onda_first_signal_tracked') !== '1') return; // real signals only
+      if (localStorage.getItem('onda_first_signal_opened') === '1') return;
+    } catch { return; }
+    if (typeof IntersectionObserver === 'undefined') return;
+    const el = document.querySelector('[data-testid="recommendations-block"]');
+    if (!el) return;
+    const obs = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (done || !e.isIntersecting) continue;
+        done = true;
+        try { localStorage.setItem('onda_first_signal_opened', '1'); } catch { /* noop */ }
+        try { track('first_signal_opened', { color: trafficState.light === 'red' ? 'red' : 'amber' }); } catch { /* noop */ }
+        obs.disconnect();
+      }
+    }, { threshold: 0.5 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, [trafficState.light, track]);
 
   // Auto-record a baseline point from LIVE vitals — in compact there's no Timeline
   // button (that tap used to snapshot a point), so the timeline/red-PDF would have
@@ -1092,7 +1157,7 @@ const OndaLevel1 = () => {
     homeViewFiredRef.current = true;
     const isFirst = localStorage.getItem('onda_home_view_seen') !== '1';
     if (isFirst) localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'first_run', is_first: isFirst, mode: appMode });
+    track('home_view', { source: 'first_run', is_first: isFirst, mode: appMode, ...daysSinceFirstSeen() });
   }, [showSubscriptionModal, paywallSource, isPremium]);
   // relaunch: a returning user (not in onboarding) lands on the hub at launch.
   // New users start in onboarding (showFirstRun) → their home_view fires as
@@ -1100,7 +1165,7 @@ const OndaLevel1 = () => {
   useEffect(() => {
     if (showFirstRun) return;
     localStorage.setItem('onda_home_view_seen', '1');
-    track('home_view', { source: 'relaunch', is_first: false, mode: appMode });
+    track('home_view', { source: 'relaunch', is_first: false, mode: appMode, ...daysSinceFirstSeen() });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   // Armed by finishPractice on the user's first-ever valid completion;
@@ -3117,6 +3182,14 @@ const OndaLevel1 = () => {
     const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
     if (metric) {
       try { track('anomaly_practice_started', { metric }); } catch { /* noop */ }
+      // first_signal_practice (task 87): reacted to the first signal with a
+      // practice. Once per install (first reaction wins, practice or dismiss).
+      try {
+        if (localStorage.getItem('onda_first_signal_reacted') !== '1') {
+          localStorage.setItem('onda_first_signal_reacted', '1');
+          track('first_signal_practice', { metric, color: trafficState.light === 'red' ? 'red' : 'amber' });
+        }
+      } catch { /* noop */ }
       const st = loadAnomalyState();
       saveAnomalyState({ lastSignalAt: st.lastSignalAt, signalCount: st.signalCount }); // pending cleared — goal met
       setAnomalyPrompt(null);
@@ -3127,6 +3200,14 @@ const OndaLevel1 = () => {
   };
   // Open the diary to record "what happened", anchored to the deviating night (§9).
   const recordAnomaly = (a: PendingAnomaly) => {
+    // first_signal_dismissed (task 87): reacted to the first signal by recording
+    // it rather than practising. Once per install (first reaction wins).
+    try {
+      if (localStorage.getItem('onda_first_signal_reacted') !== '1') {
+        localStorage.setItem('onda_first_signal_reacted', '1');
+        track('first_signal_dismissed', { metric: a.metric, color: trafficState.light === 'red' ? 'red' : 'amber' });
+      }
+    } catch { /* noop */ }
     setDiaryAnomaly({ metric: a.metric, delta: a.delta });
     setDiaryEventTime(new Date(a.at).toISOString());
     setShowDiaryModal(true);
@@ -6757,10 +6838,12 @@ const OndaLevel1 = () => {
                 shift={baselineShift}
                 todayData={baselineToday}
                 light={isLight}
-                showReassure={trafficState.light === 'green'}
+                trafficLight={trafficState.light}
+                statusTitle={trafficState.light !== 'green' ? trafficCopy(t, trafficState).title : undefined}
+                statusBody={trafficState.light !== 'green' ? trafficCopy(t, trafficState).body : undefined}
               />
             </div>
-            {/* Reassurance now lives INSIDE the baseline card (under the feet), green only. */}
+            {/* Status line (green reassurance / yellow-red state) lives INSIDE the card, under the feet. */}
           </div>
         </div>
         </>
@@ -9227,6 +9310,19 @@ const OndaLevel1 = () => {
           onClose={() => setShowProfileModal(false)}
           onProfileUpdate={(updatedProfile) => {
             setUserProfile(updatedProfile);
+          }}
+        />
+      )}
+
+      {/* First-run coachmarks (task 87) — over the home, once per install. */}
+      {showCoachmarks && (
+        <Coachmarks
+          onStepShown={(step) => { try { track('coachmark_shown', { step }); } catch { /* noop */ } }}
+          onBack={(step) => { try { track('coachmark_back', { step }); } catch { /* noop */ } }}
+          onComplete={() => {
+            try { localStorage.setItem('onda_coachmarks_done', 'true'); } catch { /* noop */ }
+            try { track('coachmark_completed', {}); } catch { /* noop */ }
+            setShowCoachmarks(false);
           }}
         />
       )}

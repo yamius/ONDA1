@@ -4331,6 +4331,14 @@
     "voice_hint_html": "With voice, the report is saved as an HTML file: each recording plays right inside it (open in a browser). A PDF can't play sound.",
     "photo_hint": "The report is saved as a PDF — easy to print and show a doctor."
   },
+  "coach": {
+    "step1": "To build your Baseline, connect your watch — ONDA will show your rhythm over the last few weeks.",
+    "step2": "We'll let you know if we see a deviation from your norm — just keep wearing your watch.",
+    "step3": "Want more detail? Expert mode in the menu adds extended metrics and signal annotations.",
+    "next": "Next",
+    "back": "Back",
+    "got_it": "Got it"
+  },
   "simple": {
     "green_title": "In your rhythm",
     "green_body": "Your body is within its baseline corridor",
