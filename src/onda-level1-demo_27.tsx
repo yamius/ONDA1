@@ -666,6 +666,20 @@ const OndaLevel1 = () => {
   const [simActive, setSimActive] = useState(false);
   const [simFast, setSimFast] = useState(true);   // 30s (UI) vs 5min (background push)
   const simIndexRef = useRef(0);
+  // Internal-only smoke test (task 87): fire the native-gated entry events
+  // straight to GA4 so they can be confirmed in Realtime from a TestFlight
+  // device (no Mac / DebugView needed) without waiting for an organic watch
+  // deviation. Tagged debug:true; the device is internal-marked so it's filtered
+  // from the real funnel anyway.
+  const [entryEventsSent, setEntryEventsSent] = useState(false);
+  const fireEntryEventsDebug = () => {
+    try {
+      track('baseline_filled', { source: 'watch', coverage_days: 14, debug: true });
+      track('first_signal_received', { metric: 'rhr', color: 'amber', debug: true });
+    } catch { /* noop */ }
+    setEntryEventsSent(true);
+    window.setTimeout(() => setEntryEventsSent(false), 2500);
+  };
   // Anomaly trigger (step 4): the pending deviation to prompt about, if any.
   const [anomalyPrompt, setAnomalyPrompt] = useState<PendingAnomaly | null>(null);
   // Anomaly context passed to the diary ONLY when opened from the prompt (so
@@ -9651,6 +9665,13 @@ const OndaLevel1 = () => {
                   <button type="button" onClick={() => setSimFast(true)} data-testid="sim-interval-30" className={`rounded px-2 py-1 ${simFast ? 'bg-amber-500 text-white' : (isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80')}`}>30s</button>
                   <button type="button" onClick={() => setSimFast(false)} data-testid="sim-interval-5" className={`rounded px-2 py-1 ${!simFast ? 'bg-amber-500 text-white' : (isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80')}`}>5min</button>
                   <button type="button" onClick={() => { simIndexRef.current += 1; applySimStep(simIndexRef.current); }} disabled={!simActive} data-testid="sim-next" className={`rounded px-2 py-1 disabled:opacity-40 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}>Next</button>
+                </div>
+                {/* Native-gated entry events → GA4 smoke test (task 87). Fires
+                    baseline_filled + first_signal_received (debug:true) so they
+                    can be confirmed in GA4 Realtime from a device. */}
+                <div className="mt-2 flex items-center gap-2">
+                  <button type="button" onClick={fireEntryEventsDebug} data-testid="fire-entry-events" className={`rounded px-2 py-1 ${isLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-400/15 text-emerald-200'}`}>Fire entry events → GA4</button>
+                  {entryEventsSent && <span className="text-emerald-400">sent ✓</span>}
                 </div>
               </div>
             )}
