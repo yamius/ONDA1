@@ -44,6 +44,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-30T20:35:54Z",
     "modified": "2026-06-08T08:16:41+02:00"
   },
+  "anxiety-panic-breathing-hrv": {
+    "published": "2026-09-17T12:37:37.679Z",
+    "modified": "2026-09-17T12:37:37.679Z"
+  },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
     "modified": "2026-05-25T19:35:33+02:00"
@@ -128,6 +132,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-08T01:19:56+01:00",
     "modified": "2026-06-08T08:16:41+02:00"
   },
+  "dysautonomia-long-covid-breathing": {
+    "published": "2026-09-17T12:36:46.885Z",
+    "modified": "2026-09-17T12:36:46.885Z"
+  },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
@@ -167,6 +175,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "gut-brain-axis-data-link": {
     "published": "2026-02-26T22:24:55+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
+  },
+  "high-blood-pressure-slow-breathing": {
+    "published": "2026-09-17T12:38:31.537Z",
+    "modified": "2026-09-17T12:38:31.537Z"
   },
   "how-long-does-alcohol-stay-in-your-system": {
     "published": "2026-06-04T22:53:28+02:00",
