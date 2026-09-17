@@ -23,10 +23,10 @@
     "titleLine1": "Deja de monitorizar tu estrés.",
     "titleLine2": "Empieza a entrenarlo.",
     "titleLine3": "",
-    "subtitle": "Tu reloj ya te dice que tu HRV está bajo. ONDA guía tu respiración y te muestra cómo responde tu ritmo cardíaco en tiempo real — para que de verdad calmes tu sistema nervioso, no solo lo midas. Funciona con el Apple Watch, Garmin o la banda de pecho que ya tienes.",
+    "subtitle": "Tu reloj ya te dice que tu HRV está bajo. ONDA guía tu respiración y te muestra cómo responde tu ritmo cardíaco en tiempo real — para que de verdad calmes tu sistema nervioso, no solo lo midas. Funciona con la cámara de tu iPhone o un Apple Watch — sin hardware adicional.",
     "ctaDownload": "Empezar gratis",
     "ctaDownloadAria": "Empezar gratis con ONDA Life",
-    "ctaMicrocopy": "Sin cuenta. Sin muro de pago. Tu primera lectura en 90 segundos.",
+    "ctaMicrocopy": "Sin cuenta. Gratis para empezar. Tu primera lectura en 90 segundos.",
     "ctaLearn": "Saber más",
     "scrollAria": "Desplazar al producto"
   },
@@ -63,7 +63,7 @@
     "titlePrefix": "Bio-sincronización",
     "titleHighlight": "en tiempo real",
     "items": [
-      { "title": "Integración de wearables", "description": "Conecta Apple Watch, Oura, Garmin o una banda de pecho. Observa cómo tu HRV, sueño y estrés se mueven en tiempo real.", "iconAlt": "Icono de sincronización de datos biométricos" },
+      { "title": "Integración de wearables", "description": "Usa la cámara de tu iPhone o un Apple Watch — o trae tu HRV y sueño desde cualquier tracker que se sincronice con Apple Salud. Observa cómo responde tu ritmo cardíaco en tiempo real.", "iconAlt": "Icono de sincronización de datos biométricos" },
       { "title": "Progresión gamificada", "description": "Gana OND por prácticas completadas y rachas. Desbloquea temas y protocolos extra a medida que avanzas.", "iconAlt": "Icono de progresión gamificada" },
       { "title": "Sistema estructurado", "description": "Sin meditaciones al azar. Cada práctica apunta a un sistema concreto: respiración, emociones, mente, recuperación.", "iconAlt": "Icono de sistema estructurado" }
     ]
@@ -77,9 +77,9 @@
   "product": {
     "tag": "[ EL PRODUCTO ]",
     "title": "La mayoría de las apps te puntúan después. ONDA te lo muestra durante.",
-    "subtitle": "Ve cómo responde tu cuerpo, en tiempo real. Respira con el guía de ritmo y observa cómo tu ritmo cardíaco se suaviza sobre la marcha — el bucle de feedback en vivo que a la meditación siempre le faltó.",
+    "subtitle": "Ve cómo responde tu cuerpo, en tiempo real. Respira siguiendo la guía y observa cómo tu ritmo cardíaco se suaviza sobre la marcha — el bucle de feedback en vivo que a la meditación siempre le faltó.",
     "shots": [
-      { "caption": "Constantes en vivo desde tu reloj — corazón, respiración, estrés, energía.", "alt": "Panel de ONDA con datos en vivo: ritmo cardíaco, frecuencia respiratoria, estrés y energía desde tu reloj" },
+      { "caption": "Constantes en vivo desde tu Apple Watch — ritmo cardíaco, respiración y coherencia.", "alt": "Panel de ONDA con datos en vivo: ritmo cardíaco, frecuencia respiratoria y coherencia desde tu Apple Watch" },
       { "caption": "Protocolos breves y con base científica — de 3 a 12 minutos.", "alt": "Lista de protocolos de respiración de ONDA — Micro-Breath, Still Wave, Warm Pulse y más" },
       { "caption": "Tu tendencia de HRV — lo que de verdad importa, a lo largo de semanas.", "alt": "Tendencia del HRV en reposo en ONDA a lo largo del tiempo con una racha de práctica" }
     ]
@@ -88,8 +88,8 @@
     "tag": "[ CÓMO FUNCIONA ]",
     "title": "Tres pasos. Cinco minutos.",
     "steps": [
-      { "n": "01", "title": "Conecta", "text": "Vincula el Apple Watch, Polar, Garmin o la banda que ya tienes. No hace falta hardware especial." },
-      { "n": "02", "title": "Respira", "text": "Sigue una sesión guiada, de 5 a 30 minutos. ONDA marca el ritmo de tu respiración y lee tu corazón en tiempo real." },
+      { "n": "01", "title": "Conecta", "text": "Usa la cámara de tu iPhone, o vincula el Apple Watch que ya tienes. No hace falta hardware especial." },
+      { "n": "02", "title": "Respira", "text": "Sigue una sesión guiada, de 5 a 30 minutos. ONDA guía tu respiración y lee tu corazón en tiempo real." },
       { "n": "03", "title": "Míralo moverse", "text": "Ve cómo responde tu ritmo ahora, y cómo tu base de HRV sube como tendencia a lo largo de las semanas que practicas." }
     ]
   },
@@ -100,7 +100,7 @@
       { "title": "Estructurado, porque es secuencial.", "text": "Una progresión real de 8 niveles donde cada uno se apoya en el anterior — no una baraja de sesiones inconexas. Siempre sabes cuál es el siguiente paso." },
       { "title": "Entrenar, no solo medir.", "text": "Whoop y Oura te dicen que estás estresado. ONDA te ayuda a hacer algo al respecto." },
       { "title": "Honesto, sin generar ansiedad.", "text": "Tu tendencia importa más que una cifra matutina. No vamos a gamificar tu pánico." },
-      { "title": "Funciona con lo que ya tienes.", "text": "Cualquier dispositivo de ritmo cardíaco, de un reloj de 1000 $ a una banda de 30 $." }
+      { "title": "Funciona con lo que ya tienes.", "text": "La cámara de tu iPhone o un Apple Watch — más tu HRV desde cualquier tracker que se sincronice con Apple Salud." }
     ]
   },
   "proof": {
@@ -108,7 +108,7 @@
     "title": "Confianza, ganada en menos de 90 segundos.",
     "science": "Basado en respiración de resonancia y biofeedback de HRV — con la investigación en la que se apoya citada, a la vista.",
     "scienceCta": "Ver la ciencia →",
-    "trust": "Sin cuenta, sin muro de pago, sin email antes de tu primera lectura.",
+    "trust": "Sin cuenta ni email antes de tu primera lectura — gratis para empezar.",
     "advisor": "Co-desarrollado con un asesor doctorado en neurociencia.",
     "ratingPending": "Pronto habrá reseñas en la App Store — preferimos mostrar reseñas reales antes que inventarlas.",
     "shotCaption": "Cada protocolo explica su mecanismo — dentro de la app.",
@@ -131,7 +131,7 @@
     "appStoreAria": "Descargar ONDA Life en App Store",
     "googlePlaySup": "Disponible en",
     "googlePlayLabel": "Google Play",
-    "googlePlayAria": "Descargar ONDA Life en Google Play",
+    "googlePlayAria": "Únete a la lista de espera de Android de ONDA Life",
     "modal": {
       "title": "Únete a ONDA Life",
       "subtitle": "¡Estamos dando los últimos toques! Deja tu email y te enviaremos acceso anticipado.",
