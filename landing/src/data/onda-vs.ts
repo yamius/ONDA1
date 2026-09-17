@@ -326,6 +326,135 @@ export const ONDA_VS: OndaVsEntry[] = [
       },
     ],
   },
+  {
+    slug: 'onda-vs-hrv4training',
+    competitorName: 'HRV4Training',
+    competitorUrl: 'https://www.hrv4training.com/',
+    category: 'HRV measurement & training-load app',
+    title: 'ONDA vs HRV4Training',
+    description:
+      'ONDA vs HRV4Training — live HRV biofeedback vs science-first morning measurement. HRV4Training reads and correlates HRV with training load; ONDA trains it in the moment. An objective comparison from ONDA Life.',
+    intro:
+      'HRV4Training is the data scientist’s HRV app: a camera- or wearable-based morning reading, validated against ECG, correlated with training load, sleep and lifestyle. It is measurement-first — it tells you how ready you are and why. ONDA is intervention-first — a live HRV-biofeedback loop you breathe against to change your state, not just read it. Different jobs: HRV4Training reads and advises; ONDA reads and trains.',
+    them: {
+      'Real-time HRV biofeedback (live feedback as you breathe)': 'no',
+      'Live coherence score': 'no',
+      'Guided / paced breathing': 'limited',
+      'Works with no wearable or chest strap (iPhone camera)': 'yes',
+      'Apple Watch support': 'yes',
+      'Resting-HRV trend over time': 'yes',
+      'Sleep / overnight readiness tracking': 'limited',
+      'Large meditation / sleep content library': 'no',
+      'Structured, progressive program': 'no',
+    },
+    notes: {
+      'Real-time HRV biofeedback (live feedback as you breathe)': 'HRV4Training is a measurement and analysis tool — a morning reading and advice, not a live feedback loop you breathe against.',
+      'Works with no wearable or chest strap (iPhone camera)': 'HRV4Training pioneered validated camera-based (PPG) morning HRV, and also supports chest straps and wearables.',
+      'Sleep / overnight readiness tracking': 'It focuses on a morning reading and readiness rather than continuous overnight tracking, though it can ingest sleep data.',
+    },
+    bestForOnda:
+      'Choose ONDA if you want to actively train HRV with real-time biofeedback and guided breathing, not just measure a morning number.',
+    bestForThem:
+      'Choose HRV4Training if you want a science-validated morning HRV reading correlated with training load, and you make decisions from the data.',
+    verdict:
+      'Complementary, not rivals. HRV4Training is the strongest measurement-and-analysis app for athletes who train on the data; ONDA is the training tool that changes the number rather than only reporting it. Many people would use HRV4Training to measure and ONDA to intervene.',
+    faq: [
+      {
+        q: 'Is ONDA a replacement for HRV4Training?',
+        a: 'Not exactly — they do different jobs. HRV4Training gives a science-validated morning HRV reading and correlates it with training load; ONDA gives real-time HRV biofeedback you breathe against to change your state. Measurement vs training.',
+      },
+      {
+        q: 'Does HRV4Training do biofeedback like ONDA?',
+        a: 'No. HRV4Training is measurement-first — a morning reading plus advice. ONDA closes the loop with a live coherence score that responds as you breathe, which is active training, not measurement.',
+      },
+    ],
+  },
+  {
+    slug: 'onda-vs-apple-watch',
+    competitorName: 'Apple Watch (native HRV)',
+    competitorUrl: 'https://www.apple.com/apple-watch/',
+    category: 'Built-in passive HRV tracking',
+    title: 'ONDA vs Apple Watch (native HRV)',
+    description:
+      'ONDA vs the Apple Watch’s built-in HRV — active biofeedback training vs passive overnight tracking. What the watch measures on its own, and what ONDA adds on top. An objective comparison from ONDA Life.',
+    intro:
+      'The Apple Watch already tracks HRV on its own — and after the September 2026 Series 12 update it now reports Recovery HRV and Overall HRV against your baseline. But that is passive measurement: the watch reads your nervous system, mostly overnight, and hands you numbers. ONDA runs on top of the same watch to do the opposite job — a live HRV-biofeedback loop you breathe against in the moment. The watch tells you how you recovered; ONDA lets you train the system that produces the number.',
+    them: {
+      'Real-time HRV biofeedback (live feedback as you breathe)': 'no',
+      'Live coherence score': 'no',
+      'Guided / paced breathing': 'limited',
+      'Works with no wearable or chest strap (iPhone camera)': 'no',
+      'Apple Watch support': 'yes',
+      'Resting-HRV trend over time': 'yes',
+      'Sleep / overnight readiness tracking': 'yes',
+      'Large meditation / sleep content library': 'no',
+      'Structured, progressive program': 'no',
+    },
+    notes: {
+      'Real-time HRV biofeedback (live feedback as you breathe)': 'The native watch measures HRV; it does not offer a live biofeedback loop you breathe against. Apple’s Mindfulness app paces breathing but without HRV feedback.',
+      'Works with no wearable or chest strap (iPhone camera)': 'Native HRV requires the Apple Watch itself; there is no phone-camera path.',
+      'Sleep / overnight readiness tracking': 'This is the watch’s strength — overnight Vitals now analyse Recovery HRV against your personal baseline.',
+    },
+    bestForOnda:
+      'Choose ONDA if you want to train your HRV live on the watch — breathe at your resonance rate and watch your heart rhythm respond — not just read overnight numbers.',
+    bestForThem:
+      'The Apple Watch’s built-in HRV is best for free, passive overnight tracking and a readiness signal — the trend you cannot capture by hand.',
+    verdict:
+      'They are complementary, not competitors. The Apple Watch measures HRV passively; ONDA turns that same watch into an active biofeedback trainer. Use the watch for the overnight trend and ONDA for the in-the-moment practice that actually shifts it — see how Apple’s two new HRV numbers work.',
+    faq: [
+      {
+        q: 'Does the Apple Watch already do what ONDA does?',
+        a: 'No. The Apple Watch measures HRV passively — mostly overnight — and reports Recovery and Overall HRV. ONDA uses the same watch for the opposite job: a live HRV-biofeedback loop you breathe against to change your state in the moment.',
+      },
+      {
+        q: 'Do I need anything besides my Apple Watch to use ONDA?',
+        a: 'No. ONDA works with the Apple Watch you already have (or the iPhone camera). The watch supplies the live heartbeat; ONDA turns it into real-time coherence feedback and a guided practice.',
+      },
+    ],
+  },
+  {
+    slug: 'onda-vs-welltory',
+    competitorName: 'Welltory',
+    competitorUrl: 'https://welltory.com/',
+    category: 'HRV, stress & energy analytics app',
+    title: 'ONDA vs Welltory',
+    description:
+      'ONDA vs Welltory — live HRV biofeedback vs broad HRV-and-stress analytics. Welltory measures and correlates stress and energy across your data; ONDA trains HRV in the moment. An objective comparison from ONDA Life.',
+    intro:
+      'Welltory is a broad HRV-and-analytics app: it takes a camera- or wearable-based HRV reading, turns it into stress, energy and productivity scores, and correlates them with your lifestyle data and habits. It is measurement-and-insight first. ONDA is narrower and deeper on one thing — a live HRV-biofeedback loop you breathe against to actively shift your state. Welltory explains your state; ONDA trains it.',
+    them: {
+      'Real-time HRV biofeedback (live feedback as you breathe)': 'limited',
+      'Live coherence score': 'no',
+      'Guided / paced breathing': 'yes',
+      'Works with no wearable or chest strap (iPhone camera)': 'yes',
+      'Apple Watch support': 'yes',
+      'Resting-HRV trend over time': 'yes',
+      'Sleep / overnight readiness tracking': 'limited',
+      'Large meditation / sleep content library': 'limited',
+      'Structured, progressive program': 'no',
+    },
+    notes: {
+      'Real-time HRV biofeedback (live feedback as you breathe)': 'Welltory offers breathing exercises, but its core is measurement and analytics rather than a live coherence-feedback loop you train against.',
+      'Guided / paced breathing': 'Welltory includes guided breathing exercises alongside its HRV measurements.',
+      'Sleep / overnight readiness tracking': 'Welltory leans on spot HRV measurements and correlations more than continuous overnight tracking.',
+    },
+    bestForOnda:
+      'Choose ONDA if you want to actively train HRV with a real-time coherence-feedback loop and a guided, progressive practice.',
+    bestForThem:
+      'Choose Welltory if you want broad HRV, stress and energy analytics that correlate your measurements with lifestyle data and habits.',
+    verdict:
+      'Different depths. Welltory is a wide analytics dashboard — HRV plus stress, energy and lifestyle correlations. ONDA is a focused training tool: live HRV biofeedback you act on in the moment. Pick Welltory to understand your patterns; pick ONDA to train the underlying signal.',
+    faq: [
+      {
+        q: 'Is ONDA the same as Welltory?',
+        a: 'No. Welltory is a broad HRV, stress and energy analytics app that correlates measurements with your lifestyle. ONDA is a focused HRV-biofeedback trainer with a live coherence score you breathe against — analytics vs active training.',
+      },
+      {
+        q: 'Does Welltory have live HRV biofeedback like ONDA?',
+        a: 'Not in the same way. Welltory includes breathing exercises, but its core is measurement and insight. ONDA is built around a live coherence-feedback loop that responds as you breathe — the training part Welltory does not centre on.',
+      },
+    ],
+  },
 ]
 
 export function getOndaVs(slug: string): OndaVsEntry | undefined {

@@ -18,7 +18,7 @@
 import { CAPABILITIES, ONDA_CAPS, type Cap, type CapabilityAxis } from './onda-vs'
 
 /** Which capability profile an entry uses, for the at-a-glance matrix. */
-export type CapsKey = 'onda' | 'elite' | 'breathwrk' | 'othership' | 'prana' | 'trackers'
+export type CapsKey = 'onda' | 'elite' | 'breathwrk' | 'othership' | 'prana' | 'trackers' | 'hrv4training'
 
 /** Build a capability record from values in CAPABILITIES order. */
 function caps(values: Cap[]): Record<CapabilityAxis, Cap> {
@@ -35,6 +35,7 @@ export const CAP_PROFILES: Record<CapsKey, Record<CapabilityAxis, Cap>> = {
   othership: caps(['no', 'no', 'yes', 'yes', 'limited', 'no', 'no', 'limited', 'limited']),
   prana: caps(['no', 'no', 'yes', 'yes', 'no', 'no', 'no', 'no', 'limited']),
   trackers: caps(['no', 'no', 'limited', 'no', 'no', 'yes', 'yes', 'no', 'no']),
+  hrv4training: caps(['no', 'no', 'limited', 'yes', 'yes', 'yes', 'limited', 'no', 'no']),
 }
 
 export interface RoundupEntry {
@@ -433,6 +434,119 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       {
         q: 'What changed with Apple Watch HRV in 2026?',
         a: 'The September 2026 Series 12 and Ultra 4 split HRV into Recovery HRV (RMSSD) and Overall HRV (SDNN), sampled about every five minutes, and HealthKit added a native RMSSD type. Recovery HRV is the daily-readiness number; it is now closer to what Oura and WHOOP report.',
+      },
+    ],
+  },
+  {
+    slug: 'which-hrv-app-should-i-use',
+    title: 'Which HRV App Should You Use? An Honest Guide by Need',
+    description:
+      'There is no single best HRV app — the right one depends on the job you want done. A by-need guide across active biofeedback, science-first measurement, guided breathing and passive tracking, with honest pros and cons from ONDA.',
+    intro:
+      '"Best HRV app" is the wrong question, because HRV apps do at least four different jobs and no app is best at all of them. Do you want to *train* your HRV in the moment, get a *science-validated* morning reading, follow a big *guided-breathing* library, or *passively track* HRV overnight? Match the app to the job. Here is an honest guide by need — including, plainly, where ONDA is not the right pick and what to use instead.',
+    entries: [
+      {
+        rank: 1,
+        name: 'ONDA Life',
+        href: '/product',
+        isOnda: true,
+        tag: 'If you want to TRAIN HRV live (no wearable needed)',
+        capsKey: 'onda',
+        blurb:
+          'Pick ONDA when the job is active training, not measurement. It reads your heartbeat from the iPhone camera or Apple Watch and gives real-time HRV biofeedback — breathe at your resonance rate and watch a live coherence score respond — across a guided 8-level path. It shows you *during*, not just after. It is the only pick here that needs no wearable at all.',
+        pros: [
+          'Real-time HRV biofeedback + live coherence score',
+          'Works with the iPhone camera — no wearable required',
+          'Guided, progressive practice; free to start',
+        ],
+        cons: [
+          'iOS only today (Android waitlist)',
+          'Not a passive overnight tracker or readiness-score app',
+        ],
+      },
+      {
+        rank: 2,
+        name: 'Elite HRV',
+        href: '/compare/onda-vs-elite-hrv',
+        tag: 'If you want measurement PLUS biofeedback',
+        capsKey: 'elite',
+        blurb:
+          'Pick Elite HRV when you want precise measurement and a coherence pacer in one, and you will use a chest strap for accuracy. It sits between the trackers and pure biofeedback — data-first, with training attached.',
+        pros: [
+          'Precise HRV measurement plus a coherence breathing pacer',
+          'Strong for data-minded users',
+        ],
+        cons: [
+          'Best accuracy needs a chest strap',
+          'Clinical interface, less beginner-friendly',
+        ],
+      },
+      {
+        rank: 3,
+        name: 'HRV4Training',
+        href: '/compare/onda-vs-hrv4training',
+        tag: 'If you want a science-first morning reading + training load',
+        capsKey: 'hrv4training',
+        blurb:
+          'Pick HRV4Training when you are an athlete who decides from the data. It takes a validated camera- or wearable-based morning HRV reading and correlates it with training load, sleep and lifestyle. It measures and advises; it does not train HRV in the moment.',
+        pros: [
+          'Science-validated morning HRV, no wearable required',
+          'Correlates HRV with training load and lifestyle',
+        ],
+        cons: [
+          'No live biofeedback — measurement and advice only',
+          'Best for data-minded athletes, not beginners',
+        ],
+      },
+      {
+        rank: 4,
+        name: 'Breathwrk',
+        href: '/compare/onda-vs-breathwrk',
+        tag: 'If you want a big guided-breathing library',
+        capsKey: 'breathwrk',
+        blurb:
+          'Pick Breathwrk when you mainly want a large, polished library of guided breathing patterns and reminders. It paces breathing well but does not close the loop with live HRV feedback — you breathe along without seeing your heart rhythm respond.',
+        pros: [
+          'Large, approachable guided-breathing library',
+          'Beginner-friendly and polished',
+        ],
+        cons: [
+          'No real-time HRV biofeedback or coherence score',
+          'More breathing timer than nervous-system trainer',
+        ],
+      },
+      {
+        rank: 5,
+        name: 'Apple Watch Vitals / Oura / WHOOP',
+        href: '/reviews/compare/best-hrv-trackers-2026',
+        tag: 'If you want to PASSIVELY track HRV overnight',
+        capsKey: 'trackers',
+        blurb:
+          'Pick a passive tracker when the job is a hands-off overnight trend and a readiness score — and ONDA does not compete here. Apple Watch’s own Vitals now reports Recovery HRV against your baseline; Oura and WHOOP turn overnight HRV into a daily readiness score. They tell you how you recovered, not how to change it.',
+        pros: [
+          'Continuous, passive overnight HRV and readiness scores',
+          'Apple Watch native, or best-in-class rings and bands',
+        ],
+        cons: [
+          'Measure and score only — no live training',
+          'Oura and WHOOP add a subscription',
+        ],
+      },
+    ],
+    bottomLine:
+      'No single app wins every job. If you want to actively train HRV with live biofeedback and no wearable, ONDA is the pick. If you want a science-validated morning reading, use HRV4Training; measurement plus a pacer, Elite HRV; a big breathing library, Breathwrk; a hands-off overnight trend and readiness score, a passive tracker like Apple Watch Vitals, Oura or WHOOP. The honest setup for most people is one passive tracker for the trend plus ONDA for the training a tracker cannot do.',
+    faq: [
+      {
+        q: 'What is the best HRV app?',
+        a: 'There is no single best — it depends on the job. For active HRV training with live biofeedback and no wearable, ONDA leads. For a science-validated morning reading, HRV4Training; for measurement plus a pacer, Elite HRV; for passive overnight tracking, Apple Watch Vitals, Oura or WHOOP.',
+      },
+      {
+        q: 'Which HRV app works without a wearable?',
+        a: 'ONDA and HRV4Training both measure HRV from the iPhone camera (PPG), so no wearable or chest strap is required. ONDA uses it for a live biofeedback loop; HRV4Training uses it for a validated morning reading. Passive trackers like Oura, WHOOP and Apple Watch always need the device itself.',
+      },
+      {
+        q: 'Do I need more than one HRV app?',
+        a: 'Often, yes. Measurement and training are different jobs. Many people pair one passive tracker (Apple Watch, Oura or WHOOP) for the overnight trend with an active app like ONDA for real-time biofeedback — the part a tracker cannot do.',
       },
     ],
   },
