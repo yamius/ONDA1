@@ -69,7 +69,12 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Samsung Galaxy Ring — official page', url: 'https://www.samsung.com/us/mobile/galaxy-ring/' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },
   ],
-  relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
+  relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],  faq: [
+    { q: "Does the Samsung Galaxy Ring work with iPhone?", a: "No. It is Android and Samsung Health only, with no iPhone support, so it suits Samsung phone owners specifically." },
+    { q: "Does the Samsung Galaxy Ring need a subscription?", a: "No — it is $399 one-time with no subscription, a standing cost advantage over the Oura Ring, which requires a roughly $6-per-month membership for full data." },
+    { q: "Is the Samsung Galaxy Ring as accurate as Oura?", a: "Close, but a step behind. Independent testing still rates Oura first for overnight HRV and sleep-stage agreement; the Galaxy Ring is a competent, subscription-free alternative for Android users." },
+  ],
+
   datePublished: '2026-05-15',
   dateModified: '2026-09-12',
 }

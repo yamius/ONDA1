@@ -245,6 +245,22 @@ export function ReviewPage() {
         </article>
       )}
 
+      {review.faq && review.faq.length > 0 && (
+        <section className="mb-10">
+          <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
+            {tReviews('ui.commonQuestions', { defaultValue: 'Common questions' })}
+          </h2>
+          <div className="space-y-4">
+            {review.faq.map((f) => (
+              <div key={f.q} className="glass-card rounded-lg p-4">
+                <h3 className="mb-2 font-mono text-sm font-semibold text-white/85">{f.q}</h3>
+                <p className="text-sm leading-relaxed text-white/60">{f.a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
       {review.references && review.references.length > 0 && (
         <section className="mb-10">
           <h2 className="mb-3 font-mono text-xs font-bold uppercase tracking-widest text-white/40">

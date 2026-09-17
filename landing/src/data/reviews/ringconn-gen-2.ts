@@ -69,7 +69,12 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'RingConn Gen 2 — official product page', url: 'https://ringconn.com/products/ringconn-gen-2' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },
   ],
-  relatedSlugs: ['oura-ring-4', 'ultrahuman-ring-air', 'samsung-galaxy-ring'],
+  relatedSlugs: ['oura-ring-4', 'ultrahuman-ring-air', 'samsung-galaxy-ring'],  faq: [
+    { q: "Is the RingConn Gen 2 subscription-free?", a: "Yes — $249 one-time with no subscription, roughly half the long-term cost of an Oura. Every feature is unlocked at purchase." },
+    { q: "How long does the RingConn Gen 2 battery last?", a: "About 12 days per charge — the longest in the smart-ring category — and its charging case extends that to months." },
+    { q: "Is the RingConn Gen 2 accurate for HRV?", a: "Independent reviewers rate its overnight HRV comparable to pricier rings — good, not class-leading. It also adds sleep-apnea screening. It is best chosen for battery life and value rather than the sharpest single metric." },
+  ],
+
   datePublished: '2026-05-15',
   dateModified: '2026-09-12',
 }

@@ -3260,6 +3260,9 @@ export function getMetaForRoute(route: string): RouteMeta {
           productType: review.productType,
           priceUsd: review.price?.usd,
         },
+        faq: review.faq?.length
+          ? { mainEntity: review.faq.map((f) => ({ question: f.q, answer: f.a })), url }
+          : undefined,
       }
     }
   }

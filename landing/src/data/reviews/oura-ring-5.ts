@@ -70,6 +70,11 @@ Choose the Oura Ring 5 if you are buying fresh and want the most accurate overni
   ],
   relatedSlugs: ['oura-ring-4', 'whoop-5-0', 'ultrahuman-ring-air', 'samsung-galaxy-ring'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Is the Oura Ring 5 worth it over the Ring 4?", a: "The Ring 5 adds an upgraded sensor and a slimmer design but runs the same software as the Ring 4. For overnight HRV and sleep both are top-tier, so the Ring 5 is worth it for the newest hardware while the discounted Ring 4 is often better value." },
+    { q: "How much does the Oura Ring 5 cost?", a: "It is $399 for standard finishes (up to $499 for premium), plus the Oura membership at about $6 per month for full data — a one-time ring purchase with an ongoing subscription." },
+    { q: "Is the Oura Ring 5 accurate for sleep and HRV?", a: "Yes. Finger-based measurement gives it among the strongest independent sleep-stage and overnight-HRV agreement in the smart-ring category." },
+  ],
   datePublished: '2026-09-06',
   dateModified: '2026-09-06',
 }
