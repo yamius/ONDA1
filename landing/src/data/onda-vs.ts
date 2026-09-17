@@ -252,7 +252,7 @@ export const ONDA_VS: OndaVsEntry[] = [
     description:
       'ONDA vs Breathwrk — HRV-biofeedback-first vs breathing-exercise-first. An objective capability comparison from ONDA Life.',
     intro:
-      'Breathwrk is a large library of guided breathing exercises for calm, focus and sleep; its premium tier can add HRV/coherence monitoring via a Bluetooth device. ONDA is HRV-biofeedback-first: live heart-rhythm feedback and a coherence score using the iPhone camera or Apple Watch, no extra device. Both are breath-centred; they differ in whether the biometric loop is core or an add-on.',
+      'Breathwrk is a large library of guided breathing exercises for calm, focus and sleep; its premium tier can add HRV/coherence monitoring via a Bluetooth device. ONDA is HRV-biofeedback-first: live heart-rhythm feedback using the iPhone camera or Apple Watch — with an Apple Watch, a live coherence score too — and no extra device. Both are breath-centred; they differ in whether the biometric loop is core or an add-on.',
     them: {
       'Real-time HRV biofeedback (live feedback as you breathe)': 'limited',
       'Live coherence score': 'limited',
@@ -278,7 +278,7 @@ export const ONDA_VS: OndaVsEntry[] = [
     faq: [
       {
         q: 'ONDA or Breathwrk for HRV biofeedback?',
-        a: 'ONDA puts HRV biofeedback and a live coherence score at the centre, using the iPhone camera or Apple Watch. Breathwrk offers HRV/coherence only in its premium tier and via a Bluetooth device. For device-free biofeedback, ONDA; for the widest breathing-exercise library, Breathwrk.',
+        a: 'ONDA puts HRV biofeedback at the centre — live heart-rhythm feedback with the iPhone camera or Apple Watch, and a live coherence score with an Apple Watch. Breathwrk offers HRV/coherence only in its premium tier and via a Bluetooth device. For device-free biofeedback, ONDA; for the widest breathing-exercise library, Breathwrk.',
       },
       {
         q: 'Does Breathwrk measure HRV?',

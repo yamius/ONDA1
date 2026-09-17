@@ -111,7 +111,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
       },
       {
         q: 'How does ONDA use HRV and coherence?',
-        a: 'ONDA measures HRV from your heartbeat (iPhone camera or Apple Watch) and shows a live coherence score during practice so you can see your rhythm organise as you breathe. Over time it tracks your resting-HRV trend. Coherence guides the session; the HRV trend tracks progress.',
+        a: 'ONDA reads your heartbeat (iPhone camera or Apple Watch) and — with an Apple Watch — shows a live coherence score during practice so you can see your rhythm organise as you breathe. Over time it tracks your resting-HRV trend. Coherence guides the session; the HRV trend tracks progress.',
       },
     ],
     links: {
@@ -184,7 +184,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
         kicker: '[ КАК ИСПОЛЬЗУЕТ ONDA ]',
         title: 'Как ONDA использует HRV и когерентность',
         paras: [
-          'ONDA измеряет HRV по вашему пульсу (камера iPhone или Apple Watch) и показывает **живой показатель когерентности** во время практики, чтобы вы видели, как ритм организуется при дыхании, — ориентир в моменте. Со временем она отслеживает ваш **тренд HRV в покое** как меру прогресса. Смотрите точно, {{measuresLink}}, {{howLink}} и {{hrvLink}} в целом.',
+          'ONDA считывает ваш пульс (камера iPhone или Apple Watch) и — при подключённых Apple Watch — показывает **живой показатель когерентности** во время практики, чтобы вы видели, как ритм организуется при дыхании, — ориентир в моменте. Со временем она отслеживает ваш **тренд HRV в покое** как меру прогресса. Смотрите точно, {{measuresLink}}, {{howLink}} и {{hrvLink}} в целом.',
         ],
       },
     ],
@@ -208,7 +208,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
       },
       {
         q: 'Как ONDA использует HRV и когерентность?',
-        a: 'ONDA измеряет HRV по вашему пульсу (камера iPhone или Apple Watch) и показывает живой показатель когерентности во время практики, чтобы вы видели, как ритм организуется при дыхании. Со временем она отслеживает ваш тренд HRV в покое. Когерентность ведёт сессию; тренд HRV отслеживает прогресс.',
+        a: 'ONDA считывает ваш пульс (камера iPhone или Apple Watch) и — при подключённых Apple Watch — показывает живой показатель когерентности во время практики, чтобы вы видели, как ритм организуется при дыхании. Со временем она отслеживает ваш тренд HRV в покое. Когерентность ведёт сессию; тренд HRV отслеживает прогресс.',
       },
     ],
     links: {
@@ -281,7 +281,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
         kicker: '[ CÓMO USA CADA UNA ONDA ]',
         title: 'Cómo usa ONDA la VFC y la coherencia',
         paras: [
-          'ONDA mide la VFC a partir de tu latido (cámara del iPhone o Apple Watch) y muestra una **puntuación de coherencia en vivo** durante la práctica, para que veas cómo tu ritmo se organiza mientras respiras — la guía del momento. Con el tiempo sigue tu **tendencia de VFC en reposo** como medida del progreso. Mira exactamente {{measuresLink}}, {{howLink}} y {{hrvLink}} en general.',
+          'ONDA lee tu latido (cámara del iPhone o Apple Watch) y — con un Apple Watch — muestra una **puntuación de coherencia en vivo** durante la práctica, para que veas cómo tu ritmo se organiza mientras respiras — la guía del momento. Con el tiempo sigue tu **tendencia de VFC en reposo** como medida del progreso. Mira exactamente {{measuresLink}}, {{howLink}} y {{hrvLink}} en general.',
         ],
       },
     ],
@@ -305,7 +305,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
       },
       {
         q: '¿Cómo usa ONDA la VFC y la coherencia?',
-        a: 'ONDA mide la VFC a partir de tu latido (cámara del iPhone o Apple Watch) y muestra una puntuación de coherencia en vivo durante la práctica para que veas cómo tu ritmo se organiza mientras respiras. Con el tiempo sigue tu tendencia de VFC en reposo. La coherencia guía la sesión; la tendencia de VFC sigue el progreso.',
+        a: 'ONDA lee tu latido (cámara del iPhone o Apple Watch) y — con un Apple Watch — muestra una puntuación de coherencia en vivo durante la práctica para que veas cómo tu ritmo se organiza mientras respiras. Con el tiempo sigue tu tendencia de VFC en reposo. La coherencia guía la sesión; la tendencia de VFC sigue el progreso.',
       },
     ],
     links: {

@@ -59,8 +59,8 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     doesHeading: 'Что оно делает',
     does: [
       'HRV-биофидбек в реальном времени — видно, как ритм сердца отвечает на дыхание',
-      'Живой показатель когерентности в каждой сессии размеренного дыхания',
-      'Резонансное дыхание с подсказками (около шести вдохов в минуту)',
+      'Живой показатель когерентности в каждой сессии дыхания с подсказками (с Apple Watch)',
+      'Резонансное дыхание с подсказками',
       'Отслеживание тренда HRV в покое по дням и неделям',
       'Структурированный 8-уровневый путь практики для нервной системы',
       'Работает с камерой iPhone или Apple Watch, который у вас уже есть',
@@ -120,8 +120,8 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     doesHeading: 'Qué hace',
     does: [
       'Biofeedback de VFC en tiempo real — ve cómo tu ritmo cardíaco responde mientras respiras',
-      'Puntuación de coherencia en vivo en cada sesión de respiración pausada',
-      'Respiración de resonancia guiada (unas seis respiraciones por minuto)',
+      'Puntuación de coherencia en vivo en cada sesión guiada (con un Apple Watch)',
+      'Respiración de resonancia guiada',
       'Seguimiento de la tendencia de VFC en reposo por días y semanas',
       'Un camino de práctica estructurado de 8 niveles para el sistema nervioso',
       'Funciona con la cámara del iPhone o un Apple Watch que ya tengas',

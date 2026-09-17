@@ -98,8 +98,8 @@ const EN_COPY: ProductCopy = {
   doesHeading: 'What it does',
   does: [
     'Real-time HRV biofeedback — see your heart rhythm respond live as you breathe',
-    'A live coherence score during each paced-breathing session',
-    'Guided resonance breathing (about six breaths a minute)',
+    'A live coherence score during each guided session (with an Apple Watch)',
+    'Guided resonance breathing',
     'Resting-HRV trend tracking over days and weeks',
     'A structured, 8-level practice path for your nervous system',
     'Works with the iPhone camera or an Apple Watch you already own',

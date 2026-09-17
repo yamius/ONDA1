@@ -109,7 +109,7 @@ export const EVIDENCE_CLAIMS: EvidenceClaim[] = [
     id: 'C1',
     statement: 'Slow, paced breathing raises HRV in the moment.',
     whatOndaDoes:
-      'Every ONDA session is paced breathing near your resonance frequency (about six breaths a minute) with live heart-rhythm feedback, so you can see HRV respond as you breathe.',
+      'Every ONDA session is guided breathing near your resonance frequency with live heart-rhythm feedback, so you can see your heart rhythm respond as you breathe.',
     whatIsNotProven:
       'That a single session raises HRV acutely is well established. That regular practice produces a large, permanent rise in everyone’s resting baseline is not — the size and durability of the effect vary between people, which is why ONDA leads with your own trend rather than a promise.',
     refIds: ['R1'],

@@ -81,7 +81,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best overall for accessible, guided biofeedback',
         capsKey: 'onda',
         blurb:
-          'ONDA gives live heart-rhythm feedback and a coherence score while you breathe, using just the iPhone camera or an Apple Watch — no chest strap — inside a guided, progressive 8-level practice. It’s the most accessible way to actually train HRV, not just track it.',
+          'ONDA gives live heart-rhythm feedback while you breathe using just the iPhone camera or an Apple Watch — and a live coherence score with an Apple Watch — no chest strap, inside a guided, progressive 8-level practice. It’s the most accessible way to actually train HRV, not just track it.',
         pros: [
           'Real-time HRV biofeedback + live coherence with no extra hardware',
           'Works with the iPhone camera or an Apple Watch you already own',
@@ -161,7 +161,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for live coherence feedback with no extra device',
         capsKey: 'onda',
         blurb:
-          'ONDA pairs guided resonance breathing with a live coherence score and your real heart-rhythm response, using the iPhone camera or Apple Watch. You see your body organise as you breathe — the feedback loop that makes it a trainer, not just a pacer.',
+          'ONDA pairs guided resonance breathing with your real heart-rhythm response using the iPhone camera or Apple Watch — and a live coherence score with an Apple Watch. You see your body organise as you breathe — the feedback loop that makes it a trainer, not just a pacer.',
         pros: [
           'Live coherence + real heart-rhythm feedback, no extra device',
           'Guided resonance breathing on a structured path',
@@ -250,7 +250,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
       {
         q: 'Can a breathing app show my heart responding in real time?',
-        a: 'Yes — ONDA does this natively with the iPhone camera or Apple Watch, showing a live coherence score as you breathe. Most breathing apps only animate a pacer; only a few add real biometric feedback.',
+        a: 'Yes — ONDA does this natively with the iPhone camera or Apple Watch, showing your live heart rhythm as you breathe (and a coherence score with an Apple Watch). Most breathing apps only animate a pacer; only a few add real biometric feedback.',
       },
       {
         q: 'What is coherence in a breathing app?',
