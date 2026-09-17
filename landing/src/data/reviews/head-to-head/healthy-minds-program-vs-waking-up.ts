@@ -57,7 +57,7 @@ If you want a science-backed meditation framework from a credible research lab â
 If you want meditation as part of a wider inquiry into mind and philosophy, with Sam Harrisâ€™ teaching voice plus lectures from neuroscientists and philosophers around it, Waking Up is the right shape. The free-access policy means cost is never the blocker.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-17',
 }
 
 export default healthyMindsVsWakingUp

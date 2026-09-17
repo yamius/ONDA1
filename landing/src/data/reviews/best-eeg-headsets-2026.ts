@@ -110,7 +110,7 @@ The category divides on modality and on intent.
 
 Decide on modality first, then on the device within it. The category is small enough that these ten are effectively the universe of headsets worth knowing about in 2026.`,
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-17',
 }
 
 export default bestEegHeadsets2026

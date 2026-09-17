@@ -57,7 +57,7 @@ If broader four-wavelength coverage, larger half-body panel, higher irradiance a
 If you want verified red-light therapy hardware at the lowest legitimate price, Hooga is the right shape. Most first-time buyers should start here; upgrade later if the use case justifies it.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-17',
 }
 
 export default mitoRedVsHooga

@@ -68,7 +68,7 @@ If you\'re committed to WHM specifically and want the official curriculum with s
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-09-17',
 }
 
 export default breathwrkVsOthershipVsWhm

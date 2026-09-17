@@ -68,7 +68,7 @@ If you are in an EU/AU market and want a panel from an established wellness bran
 If you want the largest half-body coverage and broadest spectrum under $1,000, Infraredi is the right shape. Closest thing to MitoPRO at a $200 discount.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-17',
 }
 
 export default threeValuePanels

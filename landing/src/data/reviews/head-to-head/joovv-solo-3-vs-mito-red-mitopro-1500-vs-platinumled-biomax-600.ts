@@ -68,7 +68,7 @@ If you want broad four-wavelength coverage in a large half-body panel with hones
 If six-wavelength spectrum and the most-publicly-published EMF testing are deciding criteria at $296 below Joovv, PlatinumLED is the right shape. Best value for spectrum-focused buyers.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-17',
 }
 
 export default topThreePanels
