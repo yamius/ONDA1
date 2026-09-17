@@ -67,9 +67,14 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Fitbit Charge 6 — official product page', url: 'https://store.google.com/product/fitbit_charge_6' },
     { label: 'Fitbit HRV validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=fitbit+heart+rate+variability+validation' },
   ],
-  relatedSlugs: ['whoop-5-0', 'apple-watch-series-11', 'garmin-venu-4'],
+  relatedSlugs: ['whoop-5-0', 'apple-watch-series-11', 'garmin-venu-4'],  faq: [
+    { q: "Does the Fitbit Charge 6 need Fitbit Premium for HRV?", a: "No. HRV and the core metrics work without Premium on the Charge 6; only some deeper insights and readiness detail sit behind the $9.99-per-month tier. The band is $159 one-time." },
+    { q: "Is the Fitbit Charge 6 accurate for HRV?", a: "It is a competent mainstream band for overnight HRV and sleep — good enough for trend-tracking, though a finger ring or ECG chest strap is more precise. ONDA scores it 6.8/10." },
+    { q: "Does the Fitbit Charge 6 have GPS?", a: "Yes. The Charge 6 has built-in GPS for phone-free run and ride mapping, plus a colour touchscreen and Google apps (Maps, Wallet, YouTube Music) — its main edge over the screenless Fitbit Air." },
+  ],
+
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-09-17',
 }
 
 export default fitbitCharge6

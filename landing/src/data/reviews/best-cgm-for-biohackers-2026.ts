@@ -106,7 +106,7 @@ Two clean breakpoints in the price ladder:
 
 Around those two breakpoints the rest of the field carves out specific use cases — Zoe for multi-biomarker personalisation, Ultrahuman M1 for ring-ecosystem integration, Veri and Hello Inside for EU users, Supersapiens for endurance athletes. The category is small enough that the ten programmes here are effectively the universe; the right answer is which use case fits you.`,
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-17',
 }
 
 export default bestCgmForBiohackers2026

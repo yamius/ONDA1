@@ -107,7 +107,7 @@ Three buying questions resolve the category cleanly:
 Omnilux dominates the clinical-evidence tier; CurrentBody owns the consumer-market default; LightStim and Solawave cover the handheld alternatives; Lumara wins the spec-maximalist segment.`,
   publishOn: '2026-07-06',
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-09-17',
 }
 
 export default bestRedLightFaceMasks2026

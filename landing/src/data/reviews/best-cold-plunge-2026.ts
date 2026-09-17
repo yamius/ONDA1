@@ -106,7 +106,7 @@ Three buying questions resolve the category cleanly:
 
 The category is small enough that these ten options effectively define the consumer market in 2026.`,
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-09-17',
 }
 
 export default bestColdPlunge2026

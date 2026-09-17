@@ -107,7 +107,7 @@ Three buying questions resolve the category cleanly:
 Hostage Tape dominates the consumer-brand mouth-tape tier; Somnifix owns the FDA-registered medical credibility; Intake Breathing and Mute split the premium nasal-dilator market; Breathe Right and Nexcare cover the drugstore / DIY budget tier.`,
   publishOn: '2026-07-13',
   datePublished: '2026-07-13',
-  dateModified: '2026-07-13',
+  dateModified: '2026-09-17',
 }
 
 export default bestMouthTapeNasalBreathing2026

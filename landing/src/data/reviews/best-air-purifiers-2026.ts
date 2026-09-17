@@ -107,7 +107,7 @@ Three buying questions resolve the category cleanly:
 IQAir dominates the clinical-grade tier; Dyson owns premium consumer smart; Coway Airmega 400 wins mid-premium value; Levoit + Coway AP-1512HH + Winix cover credible budget; Levoit Core 300 anchors the $99 entry tier.`,
   publishOn: '2026-07-27',
   datePublished: '2026-07-27',
-  dateModified: '2026-07-27',
+  dateModified: '2026-09-17',
 }
 
 export default bestAirPurifiers2026

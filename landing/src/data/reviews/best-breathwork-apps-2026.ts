@@ -107,7 +107,7 @@ Three buying questions resolve the category cleanly:
 Breathwrk dominates the structured-library default. Othership owns the cinematic-experience premium tier. The free tier (iBreathe, Breathe2Relax) is credible. Skip apps that overstate physiological claims or hide behind ceremony framing without instructor credentials.`,
   publishOn: '2026-06-29',
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-09-17',
 }
 
 export default bestBreathworkApps2026

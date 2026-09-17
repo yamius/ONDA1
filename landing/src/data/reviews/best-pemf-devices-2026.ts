@@ -107,7 +107,7 @@ Three buying questions resolve the category cleanly:
 Bemer dominates the research-backed premium tier; Healthy Wave wins on modality stacking; Pulse Centers and MagnaWave own the clinical coil niche; Resona VIBE redefines the entry tier at $299.`,
   publishOn: '2026-06-22',
   datePublished: '2026-06-22',
-  dateModified: '2026-06-22',
+  dateModified: '2026-09-17',
 }
 
 export default bestPemfDevices2026

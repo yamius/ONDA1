@@ -108,7 +108,7 @@ The category splits into three honest tiers and one specialist:
 
 Pick the tier and the axis. The category is small enough that the ten panels here cover effectively the entire serious consumer market in 2026.`,
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-17',
 }
 
 export default bestRedLightPanels2026
