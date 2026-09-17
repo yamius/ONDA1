@@ -107,6 +107,10 @@ const AUTHOR_SAME_AS = [
  * Onda Beauty entities — they point Google at the canonical owned profiles.
  */
 const ORG_SAME_AS = [
+  // Wikidata entity (Q141490740) — the canonical node in the entity graph;
+  // strongest disambiguation of "ONDA Life" (the HRV app) from the many other
+  // "Onda" entities for Google Knowledge Graph and LLMs.
+  'https://www.wikidata.org/wiki/Q141490740',
   'https://apps.apple.com/app/apple-store/id6755912529',
   'https://www.reddit.com/user/onda_life/',
   'https://www.facebook.com/waterstree.yakov',
