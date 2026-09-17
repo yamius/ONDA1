@@ -40,7 +40,10 @@ export const ONDA_CAPS: Record<CapabilityAxis, Cap> = {
   'Works with no wearable or chest strap (iPhone camera)': 'yes',
   'Apple Watch support': 'yes',
   'Resting-HRV trend over time': 'yes',
-  'Sleep / overnight readiness tracking': 'no',
+  // Life Rhythm (Apple Watch → HealthKit sleepAnalysis): sleep regularity,
+  // bedtime/wake, duration, streak, 0–100 score. Limited, not a single
+  // readiness/recovery number like Oura/WHOOP. (facts source-of-truth §2.)
+  'Sleep / overnight readiness tracking': 'limited',
   'Large meditation / sleep content library': 'limited',
   'Structured, progressive program': 'yes',
 }
@@ -396,7 +399,7 @@ export const ONDA_VS: OndaVsEntry[] = [
       'Sleep / overnight readiness tracking': 'This is the watch’s strength — overnight Vitals now analyse Recovery HRV against your personal baseline.',
     },
     bestForOnda:
-      'Choose ONDA if you want to train your HRV live on the watch — breathe at your resonance rate and watch your heart rhythm respond — not just read overnight numbers.',
+      'Choose ONDA if you want to train your HRV live on the watch — follow guided breathing and watch your heart rhythm respond — not just read overnight numbers.',
     bestForThem:
       'The Apple Watch’s built-in HRV is best for free, passive overnight tracking and a readiness signal — the trend you cannot capture by hand.',
     verdict:

@@ -84,7 +84,7 @@ If your "HRV" appears to have jumped in late September 2026, this is almost cert
 - **For long-term cardiovascular context:** Overall HRV (SDNN) is the continuity metric.
 - **For daily readiness:** Recovery HRV against your personal baseline is the intended signal — read the *trend*, not a single morning number.
 
-And the honest limit: all of this is still **passive measurement** — the watch reads your nervous system while you sleep. Reading a number, however often, is a different job from *training* the system that produces it. That live, in-the-moment part — breathing at your resonance rate while you watch your own heart rhythm respond — is [HRV biofeedback](/hrv-biofeedback), and it runs on the live heartbeat, not the overnight RMSSD/SDNN average. As the ONDA framing puts it: most tools score you *after*; the point of biofeedback is what you can see *during*.
+And the honest limit: all of this is still **passive measurement** — the watch reads your nervous system while you sleep. Reading a number, however often, is a different job from *training* the system that produces it. That live, in-the-moment part — following guided breathing while you watch your own heart rhythm respond — is [HRV biofeedback](/hrv-biofeedback), and it runs on the live heartbeat, not the overnight RMSSD/SDNN average. As the ONDA framing puts it: most tools score you *after*; the point of biofeedback is what you can see *during*.
 
 > **The Hack:** After updating, treat your Apple Watch HRV as a fresh start. Track **Recovery HRV (RMSSD)** for daily recovery and comparison with other trackers, keep **Overall HRV (SDNN)** as the long-run line, and don't compare the two to each other — or splice their histories.
 

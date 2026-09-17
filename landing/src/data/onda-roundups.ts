@@ -353,7 +353,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for TRAINING HRV live on Apple Watch',
         capsKey: 'onda',
         blurb:
-          'ONDA owns the third job — training. It reads your heartbeat from the Apple Watch (or iPhone camera) and gives real-time HRV biofeedback: you breathe at your resonance rate, watch a live coherence score respond, and get haptic guidance, across a guided 8-level path. Most tools score you after; ONDA shows you during. It is not a passive tracker and does not pretend to be.',
+          'ONDA owns the third job — training. It reads your heartbeat from the Apple Watch (or the iPhone camera) and turns it into real-time biofeedback: you follow guided breathing and, with an Apple Watch, watch a live coherence score respond as your heart rhythm organises, across a guided 8-level path. Most tools score you after; ONDA shows you during. It is not a passive tracker and does not pretend to be.',
         pros: [
           'Real-time HRV biofeedback + live coherence on Apple Watch',
           'Trains your nervous system, not just a morning score',
@@ -425,7 +425,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
       {
         q: 'Can you actually train HRV on Apple Watch, not just track it?',
-        a: 'Yes. Real-time HRV biofeedback apps like ONDA read your heartbeat from the Apple Watch and let you breathe at your resonance rate while a live coherence score responds. That is active training; trackers such as Oura and WHOOP only measure and score afterward.',
+        a: 'Yes. Real-time HRV biofeedback apps like ONDA read your heartbeat from the Apple Watch and let you follow guided breathing while a live coherence score responds. That is active training; trackers such as Oura and WHOOP only measure and score afterward.',
       },
       {
         q: 'Do HRV apps for Apple Watch need a subscription?',
@@ -453,9 +453,9 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'If you want to TRAIN HRV live (no wearable needed)',
         capsKey: 'onda',
         blurb:
-          'Pick ONDA when the job is active training, not measurement. It reads your heartbeat from the iPhone camera or Apple Watch and gives real-time HRV biofeedback — breathe at your resonance rate and watch a live coherence score respond — across a guided 8-level path. It shows you *during*, not just after. It is the only pick here that needs no wearable at all.',
+          'Pick ONDA when the job is active training, not measurement. It reads your heartbeat from the iPhone camera or Apple Watch and turns it into real-time biofeedback — you follow guided breathing and, with an Apple Watch, watch a live coherence score respond — across a guided 8-level path. It shows you *during*, not just after. It is the only pick here that runs on the iPhone camera with no wearable required.',
         pros: [
-          'Real-time HRV biofeedback + live coherence score',
+          'Real-time biofeedback; live coherence score with an Apple Watch',
           'Works with the iPhone camera — no wearable required',
           'Guided, progressive practice; free to start',
         ],
