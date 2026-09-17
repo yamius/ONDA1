@@ -66,9 +66,14 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { label: 'Sleepme ChiliPad Cube — official', url: 'https://www.sleep.me/chilipad' },
   ],
   relatedSlugs: ['chilipad-dock-pro', 'ooler-sleep-system', 'bedjet-3'],
-  publishOn: '2026-06-15',
+  publishOn: '2026-06-15',  faq: [
+    { q: "What is the ChiliPad Cube and does it work?", a: "The ChiliPad Cube is Sleepme's mid-tier water-cooled mattress pad that brought water-cooled sleep climate to the mainstream. It delivers a cooling and heating range of roughly 13 to 46 degrees C, comparable to the premium Dock Pro, though with slightly less temperature stability under heavy ambient load. ONDA scores it 7.3/10." },
+    { q: "How much does the ChiliPad Cube cost, and is there a subscription?", a: "The ChiliPad Cube costs $700 to $1,000, around $850 for a queen single-zone pad, with dual-zone adding about $200. No subscription is required. That is meaningfully cheaper than the Dock Pro at $1,500 to $2,000, earning it 8.0/10 on value." },
+    { q: "How does the ChiliPad Cube compare to the Dock Pro?", a: "The Cube offers similar water-cooled climate range to the Dock Pro at a lower price, but with reduced control granularity: no climate scheduling, no Apple Health integration and no HRV or sleep tracking. It is a climate tool with a basic app, not a smart sleep system, and ships single-zone in its base configuration." },
+  ],
+
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-09-17',
 }
 
 export default chilipadCube

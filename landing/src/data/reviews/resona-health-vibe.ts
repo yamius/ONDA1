@@ -63,9 +63,14 @@ Choose Resona Health VIBE if you're PEMF-curious and want a low-commitment entry
     { label: 'Resona Health — official site', url: 'https://resonahealth.com/' },
   ],
   relatedSlugs: ['olylife-tera-p90-plus', 'omi-full-body-mat', 'earthpulse-sleep-on-command'],
-  publishOn: '2026-06-22',
+  publishOn: '2026-06-22',  faq: [
+    { q: "How much does the Resona Health VIBE cost?", a: "The Resona Health VIBE costs $299 as a standalone wearable with the app included. That is the best entry-tier value in PEMF, versus $2,000+ for full-body mats, making it the lowest-commitment way to explore PEMF. ONDA scores it 8.5/10 on value." },
+    { q: "What does the Resona Health VIBE do?", a: "The Resona Health VIBE is a pocket-sized wearable PEMF device delivering 130+ app-controlled protocols with scheduling. It is designed for targeted, localised use rather than whole-body sessions, so field intensity is lower than full-body mats by design. ONDA scores it 6.8/10 overall." },
+    { q: "Who is the Resona Health VIBE best for?", a: "The Resona Health VIBE is best for PEMF-curious users wanting a low-commitment entry, portable wearable PEMF, or a protocol-rich targeted-use device under $300. It is not for whole-body simultaneous treatment, where a full-body mat is the better choice." },
+  ],
+
   datePublished: '2026-06-22',
-  dateModified: '2026-06-22',
+  dateModified: '2026-09-17',
 }
 
 export default resonaVibe

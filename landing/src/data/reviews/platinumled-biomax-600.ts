@@ -66,9 +66,14 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'PlatinumLED BIOMAX 600 — official product page', url: 'https://www.platinumtherapylights.com/biomax600' },
     { label: 'PlatinumLED third-party EMF and irradiance test reports', url: 'https://www.platinumtherapylights.com/testing' },
   ],
-  relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'biolight-pro-900'],
+  relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'biolight-pro-900'],  faq: [
+    { q: "How much does the PlatinumLED BIOMAX 600 cost?", a: "The PlatinumLED BIOMAX 600 costs $999 one-time, with stand and mount hardware extra. That is meaningfully cheaper than the Joovv Solo 3.0 and MitoPRO 1500 for comparable build and a broader spectrum. ONDA scores it 8.2/10 overall." },
+    { q: "What wavelengths does the PlatinumLED BIOMAX 600 emit?", a: "The PlatinumLED BIOMAX 600 emits six wavelengths: 480, 630, 660, 810, 830 and 850 nm, the broadest spectrum in ONDA's red-light list. The 480 nm blue is unusual and a small share of total output, and the less-common bands rely on smaller LED counts." },
+    { q: "Who is the PlatinumLED BIOMAX 600 best for?", a: "The PlatinumLED BIOMAX 600 is best for buyers wanting broad-spectrum coverage and verified EMF discipline at sub-Joovv pricing. PlatinumLED publicly publishes its third-party EMF testing (<0.3 mG at 6\"), rare in the category. The mid-size panel needs stacking for full-body coverage." },
+  ],
+
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-17',
 }
 
 export default platinumledBiomax600

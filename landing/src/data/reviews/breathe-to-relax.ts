@@ -63,9 +63,14 @@ Choose Breathe2Relax if you want evidence-backed free diaphragmatic breathing â€
     { label: 'Breathe2Relax â€” US National Center for Telehealth & Technology', url: 'https://www.t2health.dcoe.mil/apps/breathe2relax' },
   ],
   relatedSlugs: ['ibreathe', 'prana-breath', 'breathwrk'],
-  publishOn: '2026-06-29',
+  publishOn: '2026-06-29',  faq: [
+    { q: "Does Breathe2Relax actually work?", a: "Breathe2Relax has the best evidence base of any free breathwork app, with published validation studies on PTSD and stress outcomes. It was built by the US National Center for Telehealth & Technology for veteran PTSD and combat-stress management, earning 8.5/10 on evidence grounding, though its overall ONDA score is 5.5/10." },
+    { q: "How much does Breathe2Relax cost?", a: "Breathe2Relax is completely free with no premium tier, subscription or ads. It scores 9.5/10 on value in ONDA's assessment, an unbeatable price for its clinical evidence base. The trade-off is a dated UI and a narrow scope limited to diaphragmatic and paced breathing." },
+    { q: "Who is Breathe2Relax best for?", a: "Breathe2Relax is best for users who want evidence-backed diaphragmatic breathing at zero cost, especially in clinical, PTSD or stress-management contexts. It is narrow by design, covering only diaphragmatic and paced breathing with no HRV biofeedback, no content library, and no ongoing development." },
+  ],
+
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-09-17',
 }
 
 export default breatheToRelax

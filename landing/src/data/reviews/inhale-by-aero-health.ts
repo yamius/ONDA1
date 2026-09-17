@@ -63,9 +63,14 @@ Choose Inhale by Aero Health if you wear Apple Watch and want HRV-driven adaptiv
     { label: 'Aero Health — official site', url: 'https://aerohealth.com/' },
   ],
   relatedSlugs: ['breathwrk', 'wim-hof-method-app', 'prana-breath'],
-  publishOn: '2026-06-29',
+  publishOn: '2026-06-29',  faq: [
+    { q: "What makes Inhale by Aero Health different?", a: "Inhale by Aero Health is the only breathwork app that closes the biofeedback loop with HRV, taking an Apple Watch HRV reading before a session and after, then adapting recommendations to your response. It scores 9.0/10 on biofeedback, the best in the category, for an overall ONDA score of 6.7/10." },
+    { q: "How much does Inhale by Aero Health cost?", a: "Inhale by Aero Health costs $60 per year, an accessible mid-tier subscription that scores 6.0/10 on value. An Apple Watch is required to unlock the HRV biofeedback differentiator; without a watch, much of the app's value evaporates." },
+    { q: "Who is Inhale by Aero Health best for?", a: "Inhale by Aero Health is best for HRV-obsessed biohackers who already wear an Apple Watch and want breathwork sessions measured and adapted by HRV response. Its library is smaller than Breathwrk or Othership, and it aligns with published HRV-biofeedback research from Lehrer and Vaschillo." },
+  ],
+
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-09-17',
 }
 
 export default inhale

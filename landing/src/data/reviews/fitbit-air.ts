@@ -65,7 +65,7 @@ Choose the Fitbit Air if you want the cheapest honest way to start watching a 24
   ],
   relatedSlugs: ['fitbit-charge-6', 'whoop-5-0', 'amazfit-helio-ring'],
   faq: [
-    { q: "Does the Fitbit Air need Fitbit Premium for HRV?", a: "No. On the Air the core metrics — HR, HRV, SpO2, sleep and AFib — work without Premium; the optional $9.99-per-month tier only adds coaching and guided workouts. The device is $99 (  29 Special Edition)." },
+    { q: "Does the Fitbit Air need Fitbit Premium for HRV?", a: "No. On the Air the core metrics — HR, HRV, SpO2, sleep and AFib — work without Premium; the optional $9.99-per-month tier only adds coaching and guided workouts. The device is $99 ($129 Special Edition)." },
     { q: "Is the Fitbit Air accurate for HRV?", a: "Unknown yet. It launched in May 2026 with no independent HRV-accuracy validation, so treat it as promising but unproven — read your own trend rather than trusting the absolute number." },
     { q: "Does the Fitbit Air have GPS?", a: "Not built-in — it uses your phone’s connected GPS. It is a screenless $99 pod built around 24/7 HRV and sleep, the cheapest honest entry to continuous HRV." },
   ],

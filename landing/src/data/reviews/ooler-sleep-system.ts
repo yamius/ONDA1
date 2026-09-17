@@ -66,9 +66,14 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { label: 'Sleepme OOLER — official', url: 'https://www.sleep.me/ooler' },
   ],
   relatedSlugs: ['chilipad-dock-pro', 'chilipad-cube', 'bedjet-3'],
-  publishOn: '2026-06-15',
+  publishOn: '2026-06-15',  faq: [
+    { q: "What is the OOLER Sleep System and does it still work?", a: "The OOLER is the long-running Sleepme water-cooled mattress pad that introduced app-based climate scheduling to the consumer category. It delivers solid water-cooled cooling comparable to the Dock Pro with strong multi-year reliability, though it has been superseded by the Dock Pro for new buyers. ONDA scores it 7.0/10." },
+    { q: "How much does the OOLER Sleep System cost?", a: "The OOLER costs $1,200 to $1,500 at remaining-inventory pricing, around $1,300 for a queen single-zone unit, with no subscription required. It sits as the value tier within the Sleepme line since it is sold only from limited remaining stock rather than new production." },
+    { q: "Should I buy the OOLER or the Dock Pro?", a: "Choose the OOLER only if it is available at discount and you want Sleepme water-cooled climate with scheduling, since it has been superseded by the Dock Pro for new buyers and is inventory-only. It lacks HRV or sleep tracking and has a larger hub footprint; for new-production tier ONDA points to the Dock Pro, or the ChiliPad Cube for the cheapest Sleepme entry." },
+  ],
+
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-09-17',
 }
 
 export default oolerSleepSystem

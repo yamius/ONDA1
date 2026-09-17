@@ -65,9 +65,14 @@ The biology of why cold exposure works — and the protocols that compound with 
   references: [
     { label: 'Penguin Chillers — official site', url: 'https://penguinchillers.com/' },
   ],
-  relatedSlugs: ['inergize-cold-tub', 'plunge', 'cold-pod'],
+  relatedSlugs: ['inergize-cold-tub', 'plunge', 'cold-pod'],  faq: [
+    { q: "What do Penguin Chillers include, and do they come with a tub?", a: "Penguin Chillers sells the chiller only, without a tub. You pair it with your own stock tank, plastic tub or repurposed bath, DIY style, and configure water management, plumbing and install yourself. It offers multiple HP options from 1/3 HP through 1 HP, and ONDA scores it 7.2/10." },
+    { q: "How much does a Penguin Chillers cold plunge cost?", a: "The chiller alone costs $1,500 to $2,500, and a full DIY build with a stock tank typically lands at $1,800 to $3,000 total. That is the cheapest path to a chiller-built cold plunge, versus roughly $5,990 for a turnkey system like The Plunge, earning 8.5/10 on value." },
+    { q: "Who are Penguin Chillers best for?", a: "Penguin Chillers are best for DIY users who want chiller-built cold plunge at the lowest credible total cost and are comfortable choosing a tub, configuring plumbing and managing water themselves. There is no bundled ozone, filtration or turnkey experience; for a turnkey setup ONDA points to Plunge or Edge instead." },
+  ],
+
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-09-17',
 }
 
 export default penguinChillers

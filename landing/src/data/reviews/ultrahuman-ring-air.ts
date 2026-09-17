@@ -71,9 +71,14 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Ultrahuman Ring Air — official product page', url: 'https://www.ultrahuman.com/ring/' },
     { label: 'Smart ring HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=smart+ring+heart+rate+variability+sleep+validation' },
   ],
-  relatedSlugs: ['ultrahuman-ring-pro', 'ultrahuman-m1', 'oura-ring-4', 'samsung-galaxy-ring', 'ringconn-gen-2'],
+  relatedSlugs: ['ultrahuman-ring-pro', 'ultrahuman-m1', 'oura-ring-4', 'samsung-galaxy-ring', 'ringconn-gen-2'],  faq: [
+    { q: "Can I buy the Ultrahuman Ring Air in the US?", a: "No, the Ultrahuman Ring Air is banned from US sale as of October 2025 under an import ban following Oura's ITC patent win, so US buyers cannot purchase it. Ultrahuman's US-available successor is the Ring Pro, a one-time $479 with no subscription and a roughly 15-day battery that targets the reliability problem." },
+    { q: "Is the Ultrahuman Ring Air reliable?", a: "The Ultrahuman Ring Air has a real reliability caveat: through 2026, reviewers and owners widely reported batteries degrading or failing within months. It scores just 5.5/10 on wearability for that reason, which undercuts its value at $350 despite strong sleep tracking and continuous HRV." },
+    { q: "Is the Ultrahuman Ring Air worth it?", a: "The Ultrahuman Ring Air scores 7.3/10 and does the fundamentals well: featherweight, subscription-free with lifelong data access, continuous HRV and strong sleep tracking. But battery-reliability reports erode the case at $350. If long-term reliability is non-negotiable, the Oura Ring 4 or RingConn Gen 2 are safer choices." },
+  ],
+
   datePublished: '2026-05-15',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-17',
 }
 
 export default ultrahumanRingAir

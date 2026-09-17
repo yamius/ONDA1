@@ -66,9 +66,14 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Ultrahuman Cyborg / M1 — official site', url: 'https://www.ultrahuman.com/cyborg/' },
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },
   ],
-  relatedSlugs: ['ultrahuman-ring-air', 'levels', 'lingo', 'veri'],
+  relatedSlugs: ['ultrahuman-ring-air', 'levels', 'lingo', 'veri'],  faq: [
+    { q: "How accurate is the Ultrahuman M1 CGM?", a: "Ultrahuman M1 uses the Abbott Libre 3 sensor with a MARD of about 9%, 14-day wear, calibration-free operation and a 60-minute warm-up. It scores 8.5/10 on sensor accuracy, marginally behind the Dexcom G7 in independent comparison, for an overall ONDA score of 7.5/10." },
+    { q: "How much does Ultrahuman M1 cost?", a: "Ultrahuman M1 costs about $400 for the Ring Air setup plus roughly $99 per 14-day Libre 3 sensor, around $499 to start. There is no mandatory CGM subscription if you already own the ring, making it cheap as an add-on but more expensive than Stelo as a standalone CGM." },
+    { q: "Is Ultrahuman M1 worth it as a standalone CGM?", a: "Ultrahuman M1 is best for users already inside the Ultrahuman ecosystem, not as a standalone CGM. Its differentiator is composing glucose with HRV, sleep and recovery on one timeline, which requires owning the Ring Air. Standalone, it is a Libre 3 wrapper with AI-only coaching and no human coach, where Stelo or Levels fit better." },
+  ],
+
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-17',
 }
 
 export default ultrahumanM1

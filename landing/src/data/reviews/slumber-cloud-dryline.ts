@@ -66,9 +66,14 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
     { label: 'Slumber Cloud — official', url: 'https://www.slumbercloud.com/' },
   ],
   relatedSlugs: ['tempur-breeze-pro', 'bedjet-3', 'chilipad-cube'],
-  publishOn: '2026-06-15',
+  publishOn: '2026-06-15',  faq: [
+    { q: "Do Slumber Cloud DryLine cooling sheets actually work?", a: "The DryLine sheets deliver meaningful passive heat dissipation using NASA-derived Outlast phase-change materials, but they are cooling sheets, not active climate control. The effect concentrates in the early-night phase and diminishes as the materials saturate over a full sleep cycle. ONDA scores them 5.5/10, with a 3.5/10 climate range." },
+    { q: "How much do Slumber Cloud DryLine sheets cost, and is there a subscription?", a: "A DryLine sheet set costs $150 to $250, around $200 for a queen, with no subscription possible since the system is fully passive. That makes them the cheapest credible cooling option ONDA reviewed, scoring 8.5/10 on value and 10/10 on subscription." },
+    { q: "Who are Slumber Cloud DryLine sheets best for?", a: "The DryLine sheets are best as the cheapest credible entry into cooler sleep without active hardware, with no hub, water or install required. They suit people not ready to commit to a $1,500+ active system; for real climate control ONDA points to Eight Sleep, ChiliPad or BedJet instead." },
+  ],
+
   datePublished: '2026-06-15',
-  dateModified: '2026-06-15',
+  dateModified: '2026-09-17',
 }
 
 export default slumberCloudDryline

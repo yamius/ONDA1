@@ -66,9 +66,14 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Kineon Move+ — official product page', url: 'https://kineon.io/move-plus' },
     { label: 'Laser photobiomodulation for knee osteoarthritis — systematic review', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8421064/' },
   ],
-  relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'hooga-hg500'],
+  relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'hooga-hg500'],  faq: [
+    { q: "What does the Kineon Move+ do?", a: "The Kineon Move+ is a wrap-around device delivering targeted joint photobiomodulation using medical-grade 808 nm laser diodes plus 650/850 nm LEDs. The 14W laser output reaches deeper tissue than LED-only panels and is FDA Class II registered for joint pain. ONDA scores it 7.3/10 overall." },
+    { q: "How much does the Kineon Move+ cost?", a: "The Kineon Move+ costs $799 one-time, battery-powered and USB-C charged. That is premium pricing reasonable for laser-delivery hardware, but expensive if treated as a full-body panel substitute. ONDA scores it 7.5/10 on value." },
+    { q: "Who is the Kineon Move+ best for?", a: "The Kineon Move+ is best for users with specific joint pain (knee, elbow, shoulder) wanting laser-grade dose delivery with FDA backing. It is not a panel substitute; for full-body or skin photobiomodulation, choose a panel like Joovv, Mito Red or PlatinumLED instead." },
+  ],
+
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-17',
 }
 
 export default kineonMovePlus

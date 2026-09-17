@@ -63,9 +63,14 @@ Choose Prana Breath for cheap, customisable breath-pattern practice — especial
     { label: 'Prana Breath — official site', url: 'https://prana-breath.info/' },
   ],
   relatedSlugs: ['breathwrk', 'ibreathe', 'breathe-to-relax'],
-  publishOn: '2026-06-29',
+  publishOn: '2026-06-29',  faq: [
+    { q: "What does Prana Breath do?", a: "Prana Breath is a customisable pattern-based breathwork app that gives full control over inhale, hold, exhale and hold timings for any pattern. It ships a broad library of pre-built patterns including box breathing, 4-7-8, Wim Hof and pranayama, and is Android-first. ONDA scores it 6.3/10." },
+    { q: "How much does Prana Breath cost?", a: "Prana Breath is mostly free, with a substantial free tier and a one-time premium unlock of about $10. There is no recurring subscription. That makes it the strongest value entry in customisable breathwork, scoring 8.0/10 on value in ONDA's assessment." },
+    { q: "Who is Prana Breath best for?", a: "Prana Breath is best for users who want deep breath-pattern customisation at near-free pricing, and especially for Android-first users where premium apps are weaker. The trade-off is dated UX, less curated content, no HRV biofeedback, and a pattern engine that assumes you know which timings to use." },
+  ],
+
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-09-17',
 }
 
 export default pranaBreath

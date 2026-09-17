@@ -64,9 +64,14 @@ Choose Healthy Wave Multi-Wave if you want PEMF stacked with IR and red light in
     { label: 'Healthy Wave / HealthyLine — official site', url: 'https://www.healthyline.com/' },
   ],
   relatedSlugs: ['qi-coil', 'resona-health-vibe', 'bemer-classic-evo', 'higherdose-pemf-mat', 'omi-full-body-mat'],
-  publishOn: '2026-06-22',
+  publishOn: '2026-06-22',  faq: [
+    { q: "What does the Healthy Wave Multi-Wave PEMF mat do?", a: "The Healthy Wave Multi-Wave stacks PEMF, far-infrared heat, red light therapy and negative-ion crystals in one full-body mat. Its controller exposes real parameters (waveform, frequency, intensity, session length) across the 1-30 Hz research range. ONDA scores it 8.4/10 overall." },
+    { q: "How much does the Healthy Wave Multi-Wave mat cost?", a: "The Healthy Wave Multi-Wave costs $2,500-$3,500 depending on size (roughly $2,999 for queen with controller). That is about half the Bemer price for three recovery modalities in one mat, earning an 8.5/10 value score and a 5-year mat warranty." },
+    { q: "How does the Healthy Wave Multi-Wave compare to Bemer?", a: "The Healthy Wave Multi-Wave costs roughly half the Bemer and covers three modalities (PEMF, infrared, red light) versus Bemer's single signal. However, it lacks Bemer's proprietary research moat of 50+ peer-reviewed studies, so Bemer remains the reference for waveform-research backing." },
+  ],
+
   datePublished: '2026-06-22',
-  dateModified: '2026-06-22',
+  dateModified: '2026-09-17',
 }
 
 export default healthyWaveMultiWave

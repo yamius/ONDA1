@@ -66,9 +66,14 @@ The biology of why heat exposure works — and the protocols that compound with 
     { label: 'Clearlight Infrared Saunas — official site', url: 'https://infraredsauna.com/' },
   ],
   relatedSlugs: ['sunlighten-mpulse', 'sun-home-equinox', 'saunaspace-faraday'],
-  publishOn: '2026-06-04',
+  publishOn: '2026-06-04',  faq: [
+    { q: "How much does the Clearlight Sanctuary 2 cost?", a: "The 2-person Clearlight Sanctuary 2 costs $4,500 to $7,500, with the base configuration around $5,500. That is marginally cheaper than the Sunlighten mPulse for a comparable full-spectrum feature set, which is why ONDA scores its value 7.0/10." },
+    { q: "How does the Sanctuary 2 compare to the Sunlighten mPulse?", a: "The Sanctuary 2 is the closest premium competitor to the mPulse, delivering full-spectrum IR with Jacuzzi-backed lifetime heater warranty at a slightly lower price. It combines near, mid and far wavelengths in single True Wave emitters rather than running separate programmable systems, so it offers less granular per-wavelength control than the mPulse." },
+    { q: "Who is the Clearlight Sanctuary 2 best for?", a: "The Sanctuary 2 is best for buyers wanting Sunlighten-tier full-spectrum IR with Jacuzzi brand backing at marginally lower cost. It suits people who value a lifetime heater warranty, independently-measured low EMF and a basswood or red cedar cabin over programmable per-wavelength session control. ONDA scores it 8.3/10 overall." },
+  ],
+
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-09-17',
 }
 
 export default clearlightSanctuary2
