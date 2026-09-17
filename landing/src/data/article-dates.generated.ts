@@ -50,7 +50,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
-    "modified": "2026-09-17T17:21:46+02:00"
+    "modified": "2026-09-17T19:19:45+02:00"
   },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",

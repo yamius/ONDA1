@@ -10,7 +10,7 @@ export interface MeasurementsFaqItem {
 export const MEASUREMENTS_FAQ: MeasurementsFaqItem[] = [
   {
     q: 'What does ONDA actually measure?',
-    a: 'ONDA directly measures heart rate and heart-rate variability (HRV, as RMSSD/SDNN) from beat-to-beat intervals — via Apple Watch or Apple Health, or the iPhone camera (PPG) at rest. From those it derives a live coherence score and your resting-HRV trend, and estimates contextual "stress" and "energy". It does not measure blood biomarkers, brain activity or sleep stages.',
+    a: 'ONDA directly measures heart rate and heart-rate variability (HRV) from beat-to-beat intervals — via an Apple Watch or Apple Health, or the iPhone camera (PPG) at rest. From those it derives your resting-HRV trend and, with an Apple Watch, a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
   },
   {
     q: 'Is ONDA’s coherence score a medical or clinical measurement?',

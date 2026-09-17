@@ -23,10 +23,10 @@
     "titleLine1": "Stop tracking your stress.",
     "titleLine2": "Start training it.",
     "titleLine3": "",
-    "subtitle": "Your watch already tells you your HRV is low. ONDA guides your breathing and shows your heart rhythm respond in real time — so you can actually calm your nervous system, not just measure it. Works with the Apple Watch, Garmin, or chest strap you already own.",
+    "subtitle": "Your watch already tells you your HRV is low. ONDA guides your breathing and shows your heart rhythm respond in real time — so you can actually calm your nervous system, not just measure it. Works with your iPhone camera or an Apple Watch — no extra hardware needed.",
     "ctaDownload": "Start Free",
     "ctaDownloadAria": "Start ONDA Life free",
-    "ctaMicrocopy": "No account. No paywall. Your first reading in 90 seconds.",
+    "ctaMicrocopy": "No account. Free to start. Your first reading in 90 seconds.",
     "ctaLearn": "Learn More",
     "scrollAria": "Scroll to product"
   },
@@ -63,7 +63,7 @@
     "titlePrefix": "Real-Time",
     "titleHighlight": "Bio-Sync",
     "items": [
-      { "title": "Tracker Integration", "description": "Connect Apple Watch, Oura, Garmin, or a chest strap. Watch your HRV, sleep, and stress move in real time.", "iconAlt": "Biometric data sync icon" },
+      { "title": "Tracker Integration", "description": "Use your iPhone camera or an Apple Watch — or bring HRV and sleep from any tracker that syncs to Apple Health. Watch your heart rhythm respond in real time.", "iconAlt": "Biometric data sync icon" },
       { "title": "Gamified Progression", "description": "Earn OND for completed practices and streaks. Unlock themes and extra protocols as you go.", "iconAlt": "Gamification progression icon" },
       { "title": "Structured System", "description": "No random meditations. Each practice targets a specific system: breathing, emotions, mind, recovery.", "iconAlt": "Structured system icon" }
     ]
@@ -77,9 +77,9 @@
   "product": {
     "tag": "[ THE PRODUCT ]",
     "title": "Most apps score you after. ONDA shows you during.",
-    "subtitle": "See your body respond, in real time. Breathe with the pacer and watch your heart rhythm smooth out as you go — the live feedback loop meditation always lacked.",
+    "subtitle": "See your body respond, in real time. Breathe along with the guidance and watch your heart rhythm smooth out as you go — the live feedback loop meditation always lacked.",
     "shots": [
-      { "caption": "Live vitals from your watch — heart, breath, stress, energy.", "alt": "ONDA dashboard showing live heart rate, breathing rate, stress and energy from your watch" },
+      { "caption": "Live vitals from your Apple Watch — heart rate, breathing, and coherence.", "alt": "ONDA dashboard showing live heart rate, breathing rate and coherence from your Apple Watch" },
       { "caption": "Short, science-backed protocols — 3 to 12 minutes.", "alt": "ONDA breathing protocols list — Micro-Breath, Still Wave, Warm Pulse and more" },
       { "caption": "Your HRV trend — what actually matters, over weeks.", "alt": "ONDA resting HRV trend over time with a practice streak" }
     ]
@@ -88,8 +88,8 @@
     "tag": "[ HOW IT WORKS ]",
     "title": "Three steps. Five minutes.",
     "steps": [
-      { "n": "01", "title": "Connect", "text": "Pair the Apple Watch, Polar, Garmin, or strap you already own. No special hardware required." },
-      { "n": "02", "title": "Breathe", "text": "Follow a guided session, 5 to 30 minutes. ONDA paces your breath and reads your heart in real time." },
+      { "n": "01", "title": "Connect", "text": "Use your iPhone camera, or pair the Apple Watch you already own. No special hardware required." },
+      { "n": "02", "title": "Breathe", "text": "Follow a guided session, 5 to 30 minutes. ONDA guides your breathing and reads your heart in real time." },
       { "n": "03", "title": "Watch it move", "text": "See your rhythm respond now, and your HRV baseline trend up over the weeks you keep practicing." }
     ]
   },
@@ -100,7 +100,7 @@
       { "title": "Structured, because it's sequential.", "text": "A real 8-level progression where each level builds on the last — not a shuffle of unrelated sessions. You always know the next step." },
       { "title": "Training, not just tracking.", "text": "Whoop and Oura tell you you're stressed. ONDA helps you do something about it." },
       { "title": "Honest, not anxiety-inducing.", "text": "Your trend matters more than one morning number. We won't gamify your panic." },
-      { "title": "Works on what you own.", "text": "Any heart-rate device, from a $1000 watch to a $30 band." }
+      { "title": "Works on what you own.", "text": "Your iPhone camera or an Apple Watch — plus HRV from any tracker that syncs to Apple Health." }
     ]
   },
   "proof": {
@@ -108,7 +108,7 @@
     "title": "Trust, earned in under 90 seconds.",
     "science": "Built on resonance breathing and HRV biofeedback — with the research it rests on cited, in plain sight.",
     "scienceCta": "See the science →",
-    "trust": "No account, no paywall, no email before your first reading.",
+    "trust": "No account and no email before your first reading — free to start.",
     "advisor": "Co-developed with a neuroscience PhD advisor.",
     "ratingPending": "App Store reviews coming soon — we'd rather show real ones than fake them.",
     "shotCaption": "Every protocol explains its mechanism — inside the app.",
@@ -131,7 +131,7 @@
     "appStoreAria": "Download ONDA Life on App Store",
     "googlePlaySup": "Get it on",
     "googlePlayLabel": "Google Play",
-    "googlePlayAria": "Download ONDA Life on Google Play",
+    "googlePlayAria": "Join the ONDA Life Android waitlist",
     "modal": {
       "title": "Join ONDA Life",
       "subtitle": "We are putting the finishing touches! Leave your email and we will send you early access.",

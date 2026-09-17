@@ -94,7 +94,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       'Blood glucose, cortisol, BDNF or any blood/hormone biomarker',
       'Brain activity (EEG), brain waves or "gamma coherence"',
       'Sleep stages — ONDA is not a sleep tracker',
-      'Steps, calories or VO₂max — ONDA does not read your fitness data',
+      'Steps, calories or workouts — ONDA does not read your fitness data',
       'Any diagnostic or medical output — ONDA is not a medical device',
     ],
     computeBox:
@@ -103,7 +103,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: 'What does ONDA actually measure?',
-        a: 'ONDA directly measures heart rate and heart-rate variability (HRV, as RMSSD/SDNN) from beat-to-beat intervals — via Apple Watch or Apple Health, or the iPhone camera (PPG) at rest. From those it derives a live coherence score and your resting-HRV trend, and estimates contextual "stress" and "energy". It does not measure blood biomarkers, brain activity or sleep stages.',
+        a: 'ONDA directly measures heart rate and heart-rate variability (HRV) from beat-to-beat intervals — via an Apple Watch or Apple Health, or the iPhone camera (PPG) at rest. From those it derives your resting-HRV trend and, with an Apple Watch, a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
       },
       {
         q: 'Is ONDA’s coherence score a medical or clinical measurement?',
@@ -190,7 +190,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       'Глюкозу крови, кортизол, BDNF или любой кровяной/гормональный биомаркер',
       'Активность мозга (ЭЭГ), мозговые волны или «гамма-когерентность»',
       'Стадии сна — ONDA не трекер сна',
-      'Шаги, калории или VO₂max — ONDA не читает ваши фитнес-данные',
+      'Шаги, калории или тренировки — ONDA не читает ваши фитнес-данные',
       'Любой диагностический или медицинский вывод — ONDA не медицинский прибор',
     ],
     computeBox:
@@ -199,7 +199,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: 'Что ONDA на самом деле измеряет?',
-        a: 'ONDA напрямую измеряет пульс и вариабельность сердечного ритма (HRV, как RMSSD/SDNN) по интервалам между ударами — через Apple Watch или Apple Health, либо камерой iPhone (PPG) в покое. Из них она выводит живой показатель когерентности и ваш тренд HRV в покое, а также оценивает контекстные «стресс» и «энергию». Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
+        a: 'ONDA напрямую измеряет пульс и вариабельность сердечного ритма (HRV) по интервалам между ударами — через Apple Watch или Apple Health, либо камерой iPhone (PPG) в покое. Из них она выводит ваш тренд HRV в покое и — при подключённых Apple Watch — живой показатель когерентности. Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
       },
       {
         q: 'Показатель когерентности ONDA — это медицинское или клиническое измерение?',
@@ -286,7 +286,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       'Glucosa en sangre, cortisol, BDNF o cualquier biomarcador de sangre/hormona',
       'Actividad cerebral (EEG), ondas cerebrales o «coherencia gamma»',
       'Fases del sueño — ONDA no es un rastreador de sueño',
-      'Pasos, calorías o VO₂max — ONDA no lee tus datos de fitness',
+      'Pasos, calorías o entrenamientos — ONDA no lee tus datos de fitness',
       'Cualquier salida diagnóstica o médica — ONDA no es un dispositivo médico',
     ],
     computeBox:
@@ -295,7 +295,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: '¿Qué mide realmente ONDA?',
-        a: 'ONDA mide directamente la frecuencia cardíaca y la variabilidad de la frecuencia cardíaca (VFC, como RMSSD/SDNN) a partir de los intervalos entre latidos — vía Apple Watch o Apple Salud, o la cámara del iPhone (PPG) en reposo. De ahí deriva una puntuación de coherencia en vivo y tu tendencia de VFC en reposo, y estima un «estrés» y una «energía» contextuales. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
+        a: 'ONDA mide directamente la frecuencia cardíaca y la variabilidad de la frecuencia cardíaca (VFC) a partir de los intervalos entre latidos — vía Apple Watch o Apple Salud, o la cámara del iPhone (PPG) en reposo. De ahí deriva tu tendencia de VFC en reposo y, con un Apple Watch, una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
       },
       {
         q: '¿La puntuación de coherencia de ONDA es una medición médica o clínica?',
