@@ -8,6 +8,28 @@
  *     AI-citable page text, not just structured data.
  */
 export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]> = {
+  "apple-watch-recovery-hrv-vs-overall-hrv": [
+    {
+      question: "Why does my Apple Watch show two HRV numbers now?",
+      answer:
+        "With the Series 12 and Ultra 4 (September 2026) Apple split HRV into Recovery HRV and Overall HRV. Recovery HRV (based on RMSSD) tracks day-to-day recovery against your personal baseline; Overall HRV (SDNN) is the broader, longer-term metric. They are different statistics of the same heartbeats, so they do not match.",
+    },
+    {
+      question: "What is the difference between Recovery HRV and Overall HRV?",
+      answer:
+        "Recovery HRV is based on RMSSD and reacts quickly to short-term parasympathetic shifts — it is the daily-readiness number, analysed against your personal baseline. Overall HRV is the historical SDNN metric, a wider and slower measure oriented toward general and cardiovascular-health context. Use Recovery HRV for daily recovery, Overall HRV for long-term trends.",
+    },
+    {
+      question: "Does the Apple Watch use SDNN or RMSSD for HRV?",
+      answer:
+        "Both, since 2026. Apple Watch historically stored HRV in HealthKit as SDNN. In September 2026 HealthKit added heartRateVariabilityRMSSD as a separate type, and the Series 12 / Ultra 4 Recovery HRV is based on RMSSD — the same metric family Whoop, Oura and Garmin use. The two are never mixed into one series.",
+    },
+    {
+      question: "Why did my Apple Watch HRV suddenly change or jump?",
+      answer:
+        "Almost certainly because the metric changed, not your physiology. The new watch samples HRV about every five minutes (24× more often) and reports RMSSD-based Recovery HRV, which usually reads higher than the old SDNN number. Do not splice the old and new histories — they are different metrics on different scales.",
+    },
+  ],
   "dysautonomia-long-covid-breathing": [
     {
       question: "Can breathing exercises help dysautonomia or POTS?",
