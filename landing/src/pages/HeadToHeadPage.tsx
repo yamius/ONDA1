@@ -106,35 +106,55 @@ export function HeadToHeadPage() {
         <h2 className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-terminal-cyan/80">
           {tReviews('ui.headToHeadBreakdownHeading', { defaultValue: 'Head-to-head breakdown' })}
         </h2>
-        <ul className="divide-y divide-white/5 overflow-hidden rounded-xl border border-white/5 bg-white/[0.02]">
-          {h2h.axes.map((axis) => {
-            const winnerName =
-              axis.winner === 'a'
-                ? a.name
-                : axis.winner === 'b'
-                  ? b.name
-                  : axis.winner === 'c' && c
-                    ? c.name
-                    : 'Tie'
-            const winnerColor =
-              axis.winner === 'tie'
-                ? 'text-white/40'
-                : 'text-terminal-green'
-            return (
-              <li key={axis.name} className="grid gap-2 p-4 sm:grid-cols-[1fr_auto]">
-                <div className="min-w-0">
-                  <p className="font-mono text-sm font-semibold text-white/80">
-                    {axis.name}
-                  </p>
-                  <p className="mt-1 text-xs leading-relaxed text-white/55">{axis.note}</p>
-                </div>
-                <span className={`font-mono text-xs uppercase tracking-wider ${winnerColor}`}>
-                  {winnerName}
-                </span>
-              </li>
-            )
-          })}
-        </ul>
+        {/* Semantic comparison table — criterion × winner × why. A real
+            <table> (not a div grid) so answer engines / AI Overviews can
+            extract the head-to-head as structured rows. Scrolls on narrow
+            viewports rather than overflowing the page. */}
+        <div className="overflow-x-auto rounded-xl border border-white/5 bg-white/[0.02]">
+          <table className="w-full border-collapse text-left">
+            <caption className="sr-only">
+              {products.map((p) => p.name).join(' vs ')} — head-to-head comparison by criterion
+            </caption>
+            <thead>
+              <tr className="border-b border-white/10">
+                <th scope="col" className="px-4 py-3 font-mono text-[0.7rem] font-bold uppercase tracking-wider text-white/40">
+                  {tReviews('ui.criterion', { defaultValue: 'Criterion' })}
+                </th>
+                <th scope="col" className="px-4 py-3 font-mono text-[0.7rem] font-bold uppercase tracking-wider text-white/40">
+                  {tReviews('ui.winner', { defaultValue: 'Winner' })}
+                </th>
+                <th scope="col" className="px-4 py-3 font-mono text-[0.7rem] font-bold uppercase tracking-wider text-white/40">
+                  {tReviews('ui.why', { defaultValue: 'Why' })}
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {h2h.axes.map((axis) => {
+                const winnerName =
+                  axis.winner === 'a'
+                    ? a.name
+                    : axis.winner === 'b'
+                      ? b.name
+                      : axis.winner === 'c' && c
+                        ? c.name
+                        : 'Tie'
+                const winnerColor =
+                  axis.winner === 'tie' ? 'text-white/45' : 'text-terminal-green'
+                return (
+                  <tr key={axis.name} className="border-b border-white/5 last:border-0 align-top">
+                    <th scope="row" className="whitespace-nowrap px-4 py-3 font-mono text-sm font-semibold text-white/80">
+                      {axis.name}
+                    </th>
+                    <td className={`whitespace-nowrap px-4 py-3 font-mono text-xs uppercase tracking-wider ${winnerColor}`}>
+                      {winnerName}
+                    </td>
+                    <td className="px-4 py-3 text-xs leading-relaxed text-white/55">{axis.note}</td>
+                  </tr>
+                )
+              })}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       {/* "Choose X if…" callouts — 2 or 3 columns depending on duel arity. */}
