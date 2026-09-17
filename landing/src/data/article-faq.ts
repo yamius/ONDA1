@@ -8,6 +8,57 @@
  *     AI-citable page text, not just structured data.
  */
 export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]> = {
+  "dysautonomia-long-covid-breathing": [
+    {
+      question: "Can breathing exercises help dysautonomia or POTS?",
+      answer:
+        "They can train the autonomic dimension of it. Slow, gentle paced breathing raises heart-rate variability and parasympathetic (vagal) tone, and a feasibility study of HRV-biofeedback breathing in long-Covid patients showed a signal of benefit on dysautonomia symptoms. It is a self-regulation practice, not a cure — and in POTS it must be gentle and used alongside clinical care, not instead of it.",
+    },
+    {
+      question: "Why is HRV low in long Covid and dysautonomia?",
+      answer:
+        "Dysautonomia tilts the autonomic nervous system toward sympathetic “fight-or-flight” dominance, which produces rigid, metronomic heartbeats — that is, low heart-rate variability. This is why post-viral autonomic studies lean on HRV as a non-invasive marker of the exact control system that is misbehaving.",
+    },
+    {
+      question: "Is deep breathing safe for POTS?",
+      answer:
+        "Only gentle, comfortable paced breathing. Forced “big deep breaths” can trigger a flare in POTS and post-viral illness. Research protocols use unforced breathing at about six breaths per minute; if a session makes symptoms worse, stop and work with a clinician who understands autonomic conditions. Get racing heart, fainting or breathlessness properly worked up first.",
+    },
+  ],
+  "anxiety-panic-breathing-hrv": [
+    {
+      question: "What is the best breathing for a panic attack?",
+      answer:
+        "Slow, low breathing with a longer exhale than inhale — for example four seconds in, six out — started at the very first flicker, before the spiral accelerates. The long out-breath raises vagal tone and slows the heart fastest. It is an emergency brake for a spike, not a substitute for professional care.",
+    },
+    {
+      question: "Does HRV biofeedback help anxiety?",
+      answer:
+        "A meta-analysis of controlled trials found HRV-biofeedback breathing meaningfully reduced self-reported stress and anxiety, and a 2023 trial found brief exhale-emphasised breathing lowered arousal more than mindfulness. The active ingredient is slow, paced, feedback-guided breathing. It is a self-regulation practice that sits alongside therapy — not a treatment for an anxiety disorder.",
+    },
+    {
+      question: "Why does breathing calm anxiety?",
+      answer:
+        "Breathing is the one node in the panic loop you can control directly. Fast, shallow breathing drops CO₂ and feeds the body’s alarm; slowing it — especially the exhale — hands control to the parasympathetic branch through the vagus nerve, raising heart-rate variability and pulling the system back toward calm.",
+    },
+  ],
+  "high-blood-pressure-slow-breathing": [
+    {
+      question: "Does slow breathing lower blood pressure?",
+      answer:
+        "Yes, modestly. Paced breathing at about six breaths per minute exercises the baroreflex — the body’s blood-pressure thermostat — and controlled studies show improved baroreflex sensitivity and small resting-pressure reductions over weeks of daily practice. It is a low-risk adjunct, not a replacement for medication or medical care.",
+    },
+    {
+      question: "How many breaths per minute lowers blood pressure?",
+      answer:
+        "About six breaths per minute (≈0.1 Hz) — the resonance frequency of the baroreflex. At that pace the breathing rhythm and the blood-pressure control loop swing in phase at maximum amplitude. A personal resonance rate found with live HRV feedback works best.",
+    },
+    {
+      question: "Can breathing replace blood pressure medication?",
+      answer:
+        "No. Slow breathing is an adjunct with a modest effect, not a substitute. Keep taking any prescribed medication exactly as directed — changing it is a decision for your doctor, never something to do after a good breathing session. Very high readings, chest pain or severe headache are medical emergencies.",
+    },
+  ],
   "acetylcholine-lens-neuro-mechanics": [
     {
       question: "What does acetylcholine do for focus?",
