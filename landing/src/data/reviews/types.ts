@@ -114,6 +114,11 @@ export interface ToolReview {
   content: string
   references?: ReviewReference[]
   relatedSlugs?: string[]
+  /** Optional Q&A pairs. Single source for the FAQPage JSON-LD (meta-inject)
+   *  and the visible "Common Questions" block on the review page — the most
+   *  extractable surface for AI Overviews / answer engines. Keep answers
+   *  answer-first, quantitative and definite (no hedging). */
+  faq?: ComparisonFAQ[]
   /** ISO date (YYYY-MM-DD). */
   datePublished: string
   /** ISO date (YYYY-MM-DD) — drives sitemap <lastmod> and the "Updated" UI. */

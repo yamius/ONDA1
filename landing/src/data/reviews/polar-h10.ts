@@ -69,7 +69,12 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Polar H10 — official product page', url: 'https://www.polar.com/en/sensors/h10-heart-rate-sensor' },
     { label: 'Validity of the Polar H10 sensor for HRV analysis (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9459793/' },
   ],
-  relatedSlugs: ['oura-ring-4', 'whoop-5-0', 'garmin-venu-4'],
+  relatedSlugs: ['oura-ring-4', 'whoop-5-0', 'garmin-venu-4'],  faq: [
+    { q: "Is the Polar H10 the most accurate HRV device?", a: "Effectively yes. It is an ECG chest strap that reads the heart’s electrical signal directly, with peer-reviewed near-perfect agreement with clinical ECG at rest — the reference every optical wearable is validated against." },
+    { q: "Can the Polar H10 track HRV overnight or sleep?", a: "Not really. It is a chest strap for measurements and workouts, does no sleep staging, and is not designed for 24/7 wear. Pair it with a ring or band for passive overnight data." },
+    { q: "How much is the Polar H10 and does it need a subscription?", a: "About $90 one-time, no subscription. It streams raw beat-to-beat (RR) intervals over Bluetooth and ANT+ to almost any HRV app — the cheapest, most open ground-truth option." },
+  ],
+
   datePublished: '2026-05-15',
   dateModified: '2026-09-12',
 }

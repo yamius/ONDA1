@@ -69,7 +69,12 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Oura Ring — official product page', url: 'https://ouraring.com' },
     { label: 'Oura HRV and sleep validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=oura+ring+heart+rate+variability+sleep+validation' },
   ],
-  relatedSlugs: ['oura-ring-5', 'whoop-5-0', 'apple-watch-series-11'],
+  relatedSlugs: ['oura-ring-5', 'whoop-5-0', 'apple-watch-series-11'],  faq: [
+    { q: "Is the Oura Ring 4 accurate for HRV?", a: "Yes. It records HRV continuously overnight from the finger, where signal quality beats wrist optical sensors, and independent testing rates its sleep-stage and HRV agreement among the best in the smart-ring category. It scores 7.9/10 in ONDA's review." },
+    { q: "Does the Oura Ring 4 require a subscription?", a: "Yes. The ring is $349 one-time, but full data — readiness, HRV trends and insights — needs the Oura membership at about $6 per month. Without it you see only limited metrics." },
+    { q: "Oura Ring 4 vs Oura Ring 5 — which should I buy?", a: "Both are top-tier for overnight HRV and share the same software. The Ring 5 is the newer flagship with an upgraded sensor and slimmer build; the Ring 4 is often the better value when discounted. Buy the Ring 4 to save money, the Ring 5 for the latest hardware." },
+  ],
+
   datePublished: '2026-05-15',
   dateModified: '2026-09-06',
 }

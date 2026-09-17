@@ -69,7 +69,12 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Garmin Venu — official site', url: 'https://www.garmin.com/en-US/' },
     { label: 'Garmin HRV Status — technology overview', url: 'https://www.garmin.com/en-US/garmin-technology/health-science/hrv-status/' },
   ],
-  relatedSlugs: ['apple-watch-series-11', 'whoop-5-0', 'oura-ring-4'],
+  relatedSlugs: ['apple-watch-series-11', 'whoop-5-0', 'oura-ring-4'],  faq: [
+    { q: "Does the Garmin Venu 4 need a subscription?", a: "No — $499 one-time with every feature unlocked and no subscription. Garmin HRV Status builds an overnight HRV baseline over about three weeks." },
+    { q: "Is the Garmin Venu 4 accurate for HRV?", a: "Solid but not class-leading. Its optical HRV Status is dependable for overnight trends, though a finger ring still edges it for absolute precision. Battery lasts several days, making consistent overnight wear practical." },
+    { q: "Garmin Venu 4 vs Fenix 8 for HRV — which?", a: "They share the same HRV Status model, so the HRV number is effectively identical. The Venu 4 ($499) is the value pick; the Fenix 8 (about $999) adds ECG, maps, dive and multi-week battery — pay the premium only if you use those." },
+  ],
+
   datePublished: '2026-05-15',
   dateModified: '2026-09-12',
 }
