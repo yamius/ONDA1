@@ -27,6 +27,7 @@ import fitbitAirVsWhoop50 from './fitbit-air-vs-whoop-5-0'
 import fenix8VsAppleWatch11 from './garmin-fenix-8-vs-apple-watch-series-11'
 import fitbitAirVsCharge6 from './fitbit-air-vs-fitbit-charge-6'
 import fenix8VsVenu4 from './garmin-fenix-8-vs-garmin-venu-4'
+import series12VsSeries11 from './apple-watch-series-12-vs-series-11'
 // CGM
 import levelsVsNutrisense from './levels-vs-nutrisense'
 import steloVsLingo from './stelo-vs-lingo'
@@ -234,6 +235,7 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   fenix8VsAppleWatch11,
   fitbitAirVsCharge6,
   fenix8VsVenu4,
+  series12VsSeries11,
   // CGM
   levelsVsNutrisense,
   steloVsLingo,

@@ -55,9 +55,9 @@ const bestHrvTrackers2026: Comparison = {
       takeaway: 'The Garmin training ecosystem plus competent HRV and multi-day battery, with no subscription.',
     },
     {
-      reviewSlug: 'apple-watch-series-11',
+      reviewSlug: 'apple-watch-series-12',
       award: 'Best all-round smartwatch',
-      takeaway: 'The most capable smartwatch here, but it spot-checks HRV rather than tracking it continuously.',
+      takeaway: 'The new Health Sensing System finally takes HRV seriously — 24× more frequent sampling and a Recovery-vs-Overall HRV split — though a ~1-day battery still competes with overnight wear.',
     },
     {
       reviewSlug: 'withings-scanwatch',
@@ -114,7 +114,7 @@ All of them were assessed from manufacturer specifications, independent 2026 rev
 
 The scores cluster tightly — every device here is genuinely capable, and the right pick is mostly about how you want to wear it and whether you'll pay a subscription. The Oura Ring 5 wins overall because it does the core job, overnight HRV and sleep, better than anything else you can wear around the clock — for a membership. The big shift in 2026 is the subscription-free field: the RingConn Gen 3, Ultrahuman Ring Pro, RingConn Gen 2 and Amazfit Helio Ring are all strong one-time buys. The Polar H10 would top a pure-accuracy ranking, but a chest strap is a deliberate instrument, not a lifestyle wearable. From there it splits by need: Whoop for athletes, Samsung for Android, Garmin and Apple for an all-day do-everything device, Withings for a discreet ECG watch — and the Circular Ring 2 only if you want its unique ECG/AFib hardware and accept that the software is unfinished. One product has dropped off: the Ultrahuman Ring Air, now under a US import ban, replaced by the Ring Pro.`,
   datePublished: '2026-05-15',
-  dateModified: '2026-09-12',
+  dateModified: '2026-09-18',
 }
 
 export default bestHrvTrackers2026

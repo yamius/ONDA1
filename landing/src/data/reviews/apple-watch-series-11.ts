@@ -51,6 +51,8 @@ For dedicated HRV work it is the weakest of the three. The watch records HRV in 
 
 **2026 note.** Independent comparisons through 2026 have not changed this picture: the Series 11's optical HRV readings are reasonable in isolation, but the sparse, spot-check sampling — not sensor quality — is the limitation. For a clean overnight trend, a ring that measures continuously through the night still outperforms it, regardless of how good the watch hardware is.
 
+**Superseded (September 2026).** The [Apple Watch Series 12](/reviews/apple-watch-series-12) has replaced this model as Apple's current watch, and it directly addresses the HRV weakness above: its new Health Sensing System samples HRV about 24× more often and splits it into Recovery HRV (RMSSD) and Overall HRV (SDNN). If HRV is your reason to buy, [the Series 12 is the upgrade](/reviews/vs/apple-watch-series-12-vs-series-11); the Series 11 remains a good value while discounted.
+
 ## Who it is for
 
 Choose the Apple Watch Series 11 if you want a single excellent all-round smartwatch and treat HRV as a useful bonus rather than the point. If overnight HRV and recovery are your primary reason to buy, a dedicated tracker will give you a far cleaner signal.
@@ -76,7 +78,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-09-12',
+  dateModified: '2026-09-18',
 }
 
 export default appleWatchSeries11
