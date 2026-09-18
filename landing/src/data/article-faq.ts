@@ -1466,4 +1466,48 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Wear the Watch slightly snug so the optical sensor reads cleanly, sit still and let the reading settle for a few seconds before starting, then breathe slowly with a longer exhale and watch the rhythm respond. Chase the smooth, even wave rather than a target number — that state is the one you're training. It's a self-regulation practice, not a medical measurement.",
     },
   ],
+  "how-to-raise-hrv-naturally": [
+    {
+      question: "How do I raise my HRV naturally?",
+      answer:
+        "Two jobs: stop suppressing it and train the branch that lifts it. Protect regular, sufficient sleep (the biggest lever), cut evening alcohol, late caffeine and late meals, and train aerobically with real recovery. Then add the one lever that works in minutes — slow, exhale-led breathing, which acutely raises HRV and, done daily, can lift your baseline over weeks. Judge progress by your own trend, not a single reading.",
+    },
+    {
+      question: "Can you train HRV, or only measure it?",
+      answer:
+        "You can train it. Slow, paced breathing raises vagal tone and HRV within minutes, and practised regularly it strengthens your baseline — that's the trainable dimension of HRV. HRV biofeedback (an app that reads your pulse and shows your heart rhythm respond live) lets you find your best pace and confirm the practice is working, rather than breathing blind.",
+    },
+    {
+      question: "What's the fastest way to increase HRV?",
+      answer:
+        "In the moment, slow exhale-led breathing — it raises HRV within minutes by handing tone to the parasympathetic branch. For your baseline, the fastest durable win is cutting evening alcohol and fixing sleep regularity; both show up quickly. There's no supplement or gadget shortcut that beats sleep, alcohol and breathing.",
+    },
+    {
+      question: "Does breathing actually raise HRV?",
+      answer:
+        "Yes — it's one of the best-supported effects in the field. Slow breathing with a longer exhale stimulates the baroreflex and the vagus nerve, producing a wide, organised rise and fall in heart rate that is HRV amplified on purpose. It's an acute effect you can see live with biofeedback, and a trainable one over time. It's a self-regulation practice, not a medical treatment.",
+    },
+  ],
+  "what-to-do-after-low-hrv-reading": [
+    {
+      question: "My Apple Watch shows low HRV — what should I do?",
+      answer:
+        "Don't over-react to one reading — it's mostly noise. Look at the trend against your own baseline over several days. If it's genuinely low for a stretch, it usually means load: poor sleep, alcohol, hard training without recovery, unshaken stress, or a bug coming on. Respond with recovery — protect sleep, skip the evening drink, ease training — and use a few minutes of slow, exhale-led breathing to nudge it up now.",
+    },
+    {
+      question: "Should I worry about a low HRV reading?",
+      answer:
+        "Usually not about a single one. HRV is very noisy and swings with timing, posture, alcohol, food and stress, so one low morning inside your normal range means little. A sustained low stretch is a signal to ease up and recover, not a diagnosis — HRV tools are descriptive, not medical devices. If a low reading comes with symptoms that worry you, see a doctor.",
+    },
+    {
+      question: "Does a low HRV mean I shouldn't work out?",
+      answer:
+        "Not automatically, but it's a reason to consider an easier day. A genuinely low reading against your baseline often reflects incomplete recovery, so it's your cue to pull training back from hard to easy and bank a rest day rather than force through. One low morning inside your normal range isn't a red light.",
+    },
+    {
+      question: "Can I raise a low HRV right now?",
+      answer:
+        "You can nudge it in the right direction immediately with slow, exhale-led breathing, which acutely raises HRV within minutes. It won't erase a real recovery deficit, but it shifts your state the right way — and with HRV biofeedback you can watch your rhythm respond, turning a worrying number into a practice you act on instead of a scoreboard you fear.",
+    },
+  ],
 }

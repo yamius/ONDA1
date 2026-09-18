@@ -240,6 +240,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-18T16:27:42+02:00",
     "modified": "2026-09-18T16:27:42+02:00"
   },
+  "how-to-raise-hrv-naturally": {
+    "published": "2026-09-18T22:37:58.391Z",
+    "modified": "2026-09-18T22:37:58.391Z"
+  },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
     "modified": "2026-06-09T14:23:13+02:00"
@@ -277,12 +281,12 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T10:08:07+02:00"
   },
   "meditation-app-with-biofeedback": {
-    "published": "2026-09-18T22:14:23.481Z",
-    "modified": "2026-09-18T22:14:23.481Z"
+    "published": "2026-09-19T00:21:25+02:00",
+    "modified": "2026-09-19T00:21:25+02:00"
   },
   "meditation-with-apple-watch": {
-    "published": "2026-09-18T22:15:52.055Z",
-    "modified": "2026-09-18T22:15:52.055Z"
+    "published": "2026-09-19T00:21:25+02:00",
+    "modified": "2026-09-19T00:21:25+02:00"
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -409,8 +413,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-09T14:23:13+02:00"
   },
   "structured-meditation-training-by-levels": {
-    "published": "2026-09-18T22:15:09.817Z",
-    "modified": "2026-09-18T22:15:09.817Z"
+    "published": "2026-09-19T00:21:25+02:00",
+    "modified": "2026-09-19T00:21:25+02:00"
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
@@ -443,6 +447,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "what-is-my-chronotype": {
     "published": "2026-06-04T23:17:31+02:00",
     "modified": "2026-06-06T01:38:51+02:00"
+  },
+  "what-to-do-after-low-hrv-reading": {
+    "published": "2026-09-18T22:38:41.578Z",
+    "modified": "2026-09-18T22:38:41.578Z"
   },
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
