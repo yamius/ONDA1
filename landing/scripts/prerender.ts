@@ -196,13 +196,14 @@ interface ReviewsFile {
   ui?: { metaReviewTitle?: string }
   bodies?: Record<string, { description?: string }>
   comparisons?: Record<string, { title?: string; description?: string }>
+  headToHeads?: Record<string, { title?: string; description?: string }>
 }
 const reviewsByLang: Record<Lang, ReviewsFile> = {} as Record<Lang, ReviewsFile>
 for (const lang of SUPPORTED_LANGS) {
   reviewsByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'reviews.json'), 'utf-8')) as ReviewsFile
 }
 
-type ReviewKind = 'hub' | 'methodology' | 'review' | 'comparison'
+type ReviewKind = 'hub' | 'methodology' | 'review' | 'comparison' | 'headToHead'
 
 /** Parse a review hub / methodology / review / comparison route into {lang, kind, slug}. */
 function parseReviewRoute(
@@ -214,6 +215,8 @@ function parseReviewRoute(
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'methodology', slug: '' }
   m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/compare\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'comparison', slug: m[2] }
+  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/vs\/([^/]+)$/)
+  if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'headToHead', slug: m[2] }
   m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'review', slug: m[2] }
   return null
@@ -224,6 +227,7 @@ function reviewUrlFor(kind: ReviewKind, slug: string, lang: Lang): string {
     kind === 'hub' ? '/reviews'
     : kind === 'methodology' ? '/reviews/methodology'
     : kind === 'comparison' ? `/reviews/compare/${slug}`
+    : kind === 'headToHead' ? `/reviews/vs/${slug}`
     : `/reviews/${slug}`
   return lang === 'en' ? `${SITE_URL}${base}` : `${SITE_URL}/${lang}${base}`
 }
@@ -785,6 +789,10 @@ for (const route of routes) {
           const c = rf.comparisons?.[reviewInfo.slug]
           title = c?.title ? `${c.title} | ONDA Life` : ''
           desc = c?.description ?? ''
+        } else if (reviewInfo.kind === 'headToHead') {
+          const h = rf.headToHeads?.[reviewInfo.slug]
+          title = h?.title ? `${h.title} | ONDA Life` : ''
+          desc = h?.description ?? ''
         } else {
           const review = getReviewBySlug(reviewInfo.slug)
           if (review) {

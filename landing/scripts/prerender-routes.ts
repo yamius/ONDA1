@@ -554,7 +554,26 @@ const localizedReviewRoutes = Object.entries(REVIEW_PILOTS).flatMap(([lang, cats
   pilotReviewRoutes(lang, cats),
 )
 
-/** Languages that have a localised URL prerendered for a review/comparison slug. */
+/**
+ * Localised head-to-head duels — /<lang>/reviews/vs/<slug>. Head-to-heads have
+ * no category, so unlike reviews/comparisons they carry their own explicit
+ * (lang, slug) rollout, date-gated at build time. A future-dated entry is inert.
+ */
+const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishOn: string }[] = [
+  // Ring cluster — ES leads, RU trails (anti-scaled-content drip).
+  { lang: 'es', slug: 'ringconn-gen-3-vs-whoop-5-0', publishOn: '2026-09-18' },
+  { lang: 'es', slug: 'oura-ring-5-vs-samsung-galaxy-ring', publishOn: '2026-09-18' },
+  { lang: 'es', slug: 'whoop-5-0-vs-ultrahuman-ring-pro', publishOn: '2026-09-18' },
+  { lang: 'ru', slug: 'ringconn-gen-3-vs-whoop-5-0', publishOn: '2026-11-02' },
+  { lang: 'ru', slug: 'oura-ring-5-vs-samsung-galaxy-ring', publishOn: '2026-11-02' },
+  { lang: 'ru', slug: 'whoop-5-0-vs-ultrahuman-ring-pro', publishOn: '2026-11-02' },
+]
+const liveHeadToHeadLocale = HEADTOHEAD_LOCALE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE)
+const localizedHeadToHeadRoutes = liveHeadToHeadLocale.map((e) => `/${e.lang}/reviews/vs/${e.slug}`)
+const headToHeadLangsBySlug: Record<string, string[]> = {}
+for (const e of liveHeadToHeadLocale) (headToHeadLangsBySlug[e.slug] ??= []).push(e.lang)
+
+/** Languages that have a localised URL prerendered for a review/comparison/h2h slug. */
 export function reviewLocalizedLangs(slug: string): readonly string[] {
   const rev = reviews.find((r) => r.slug === slug)
   const cmp = comparisons.find((c) => c.slug === slug)
@@ -565,6 +584,7 @@ export function reviewLocalizedLangs(slug: string): readonly string[] {
       if (cats.has(cat)) langs.push(lang)
     }
   }
+  for (const lang of headToHeadLangsBySlug[slug] ?? []) langs.push(lang)
   return langs
 }
 const ES_PILOT_ARTICLE_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)
@@ -730,6 +750,7 @@ export function getPrerenderRoutes(): string[] {
     // from the comparison round-ups; target the high-volume "X vs Y" query.
     ...headToHeads.map((h) => `/reviews/vs/${h.slug}`),
     ...localizedReviewRoutes,
+    ...localizedHeadToHeadRoutes,
     ...localizedGlossaryRoutes,
   ]
 }
@@ -757,7 +778,7 @@ export const LOCALIZED_ARTICLE_ROUTE_SET = new Set([
 ])
 
 /** Set of localized review/comparison/hub/methodology routes (all pilots). */
-export const LOCALIZED_REVIEW_ROUTE_SET = new Set(localizedReviewRoutes)
+export const LOCALIZED_REVIEW_ROUTE_SET = new Set([...localizedReviewRoutes, ...localizedHeadToHeadRoutes])
 
 /** Set of localized glossary routes (ES + RU rollouts — index + due term pages). */
 export const LOCALIZED_GLOSSARY_ROUTE_SET = new Set(localizedGlossaryRoutes)

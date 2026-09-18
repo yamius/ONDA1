@@ -24,6 +24,12 @@ export function HeadToHeadPage() {
   const h2h = slug ? getHeadToHeadBySlug(slug) : undefined
   if (!h2h) return <NotFoundPage />
 
+  // Localized body override: reads locales/<lang>/reviews.json →
+  // headToHeads.<slug>.<key>, falling back to the English data file so EN
+  // (and any untranslated language) renders exactly as before.
+  const tr = (key: string, fallback: string): string =>
+    tReviews(`headToHeads.${slug}.${key}`, { defaultValue: fallback }) as string
+
   const a = getReviewBySlug(h2h.productASlug)
   const b = getReviewBySlug(h2h.productBSlug)
   const c = h2h.productCSlug ? getReviewBySlug(h2h.productCSlug) : undefined
@@ -61,9 +67,9 @@ export function HeadToHeadPage() {
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
         [ HEAD-TO-HEAD ]
       </div>
-      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">{h2h.title}</h1>
+      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-4xl">{tr('title', h2h.title)}</h1>
       <p id="article-intro" className="mb-8 font-mono text-sm leading-relaxed text-white/55">
-        {h2h.intro}
+        {tr('intro', h2h.intro)}
       </p>
 
       {/* Verdict card — the single quotable answer to "which one". */}
@@ -71,7 +77,7 @@ export function HeadToHeadPage() {
         <p className="mb-2 font-mono text-xs tracking-widest text-terminal-green/80">
           {winner ? `WINNER: ${winner.name}` : 'VERDICT: TIE'}
         </p>
-        <p className="text-sm leading-relaxed text-white/85">{h2h.verdict}</p>
+        <p className="text-sm leading-relaxed text-white/85">{tr('verdict', h2h.verdict)}</p>
       </section>
 
       {/* Product cards — scores side by side. Renders 2 or 3 columns
@@ -129,7 +135,7 @@ export function HeadToHeadPage() {
               </tr>
             </thead>
             <tbody>
-              {h2h.axes.map((axis) => {
+              {h2h.axes.map((axis, i) => {
                 const winnerName =
                   axis.winner === 'a'
                     ? a.name
@@ -137,18 +143,18 @@ export function HeadToHeadPage() {
                       ? b.name
                       : axis.winner === 'c' && c
                         ? c.name
-                        : 'Tie'
+                        : tReviews('ui.tie', { defaultValue: 'Tie' })
                 const winnerColor =
                   axis.winner === 'tie' ? 'text-white/45' : 'text-terminal-green'
                 return (
                   <tr key={axis.name} className="border-b border-white/5 last:border-0 align-top">
                     <th scope="row" className="whitespace-nowrap px-4 py-3 font-mono text-sm font-semibold text-white/80">
-                      {axis.name}
+                      {tr(`axes.${i}.name`, axis.name)}
                     </th>
                     <td className={`whitespace-nowrap px-4 py-3 font-mono text-xs uppercase tracking-wider ${winnerColor}`}>
                       {winnerName}
                     </td>
-                    <td className="px-4 py-3 text-xs leading-relaxed text-white/55">{axis.note}</td>
+                    <td className="px-4 py-3 text-xs leading-relaxed text-white/55">{tr(`axes.${i}.note`, axis.note)}</td>
                   </tr>
                 )
               })}
@@ -161,23 +167,23 @@ export function HeadToHeadPage() {
       <section className={`mb-10 grid gap-4 ${colsClass}`}>
         {(
           [
-            [a, h2h.bestForA],
-            [b, h2h.bestForB],
-            ...(c && h2h.bestForC ? [[c, h2h.bestForC] as const] : []),
-          ] as ReadonlyArray<readonly [typeof a, string]>
-        ).map(([p, line]) => (
+            [a, h2h.bestForA, 'bestForA'],
+            [b, h2h.bestForB, 'bestForB'],
+            ...(c && h2h.bestForC ? [[c, h2h.bestForC, 'bestForC'] as const] : []),
+          ] as ReadonlyArray<readonly [typeof a, string, string]>
+        ).map(([p, line, key]) => (
           <div key={p.slug} className="rounded-xl border border-white/10 bg-white/[0.02] p-5">
             <p className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-cyan/70">
-              Choose {p.name}
+              {tReviews('ui.choose', { defaultValue: 'Choose' })} {p.name}
             </p>
-            <p className="text-sm leading-relaxed text-white/75">{line}</p>
+            <p className="text-sm leading-relaxed text-white/75">{tr(key, line)}</p>
           </div>
         ))}
       </section>
 
       {/* Extended editorial verdict. */}
       <article className="prose-onda mb-10">
-        <Markdown>{h2h.content}</Markdown>
+        <Markdown>{tr('content', h2h.content)}</Markdown>
       </article>
 
       {/* FAQ — also emitted as FAQPage JSON-LD by meta-inject. */}
@@ -187,15 +193,15 @@ export function HeadToHeadPage() {
             {tReviews('ui.faqHeading', { defaultValue: 'Common questions' })}
           </h2>
           <div className="grid gap-3">
-            {h2h.faq.map((f) => (
+            {h2h.faq.map((f, i) => (
               <details
                 key={f.q}
                 className="group rounded-xl border border-white/10 bg-white/[0.02] p-5"
               >
                 <summary className="cursor-pointer font-mono text-sm font-semibold text-white/85">
-                  {f.q}
+                  {tr(`faq.${i}.q`, f.q)}
                 </summary>
-                <p className="mt-3 text-sm leading-relaxed text-white/65">{f.a}</p>
+                <p className="mt-3 text-sm leading-relaxed text-white/65">{tr(`faq.${i}.a`, f.a)}</p>
               </details>
             ))}
           </div>

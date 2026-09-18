@@ -1181,5 +1181,154 @@
         }
       ]
     }
+  },
+  "headToHeads": {
+    "ringconn-gen-3-vs-whoop-5-0": {
+      "title": "RingConn Gen 3 vs Whoop 5.0 (2026)",
+      "description": "RingConn Gen 3 vs Whoop 5.0 — el anillo sin suscripción que compras y es tuyo frente a la banda de recuperación solo por suscripción. La comparativa de HRV «comprar vs alquilar» más clara de 2026.",
+      "intro": "Esta es la decisión «comprar vs alquilar» más nítida del mercado de HRV. El RingConn Gen 3 es un pago único de $349 sin suscripción — un anillo que es tuyo, con una batería de larga duración, una alarma silenciosa háptica y nuevas lecturas vasculares y de apnea del sueño. El Whoop 5.0 es el modelo opuesto: sin coste inicial de hardware, pero con una membresía obligatoria de ~$239/año, y si dejas de pagar la banda deja de funcionar. Uno es un anillo que compras una vez; el otro es una banda de muñeca sin pantalla construida en torno a una puntuación diaria de recuperación que alquilas para siempre.",
+      "verdict": "Comprar vs alquilar, anillo vs banda. El RingConn Gen 3 gana en modelo de coste (pago único de $349, nada que deber después) y en amplitud para el día a día — batería de larga duración, alertas hápticas, lecturas vasculares y de apnea del sueño. El Whoop 5.0 gana en VFC nocturna continua y en el coaching de recuperación y esfuerzo más profundo, si aceptas pagar cada año para conservarlo. Elige según si rechazas una suscripción o entrenas con una puntuación diaria de recuperación.",
+      "bestForA": "Elige el RingConn Gen 3 si rechazas una cuota recurrente, quieres que el dispositivo sea tuyo por completo y valoras una batería de larga duración y alertas hápticas silenciosas por encima del coaching diario.",
+      "bestForB": "Elige el Whoop 5.0 si eres deportista, actúas según una puntuación diaria de recuperación y esfuerzo y quieres VFC nocturna continua, y la membresía anual te resulta aceptable.",
+      "axes": [
+        {
+          "name": "Modelo de coste",
+          "note": "RingConn Gen 3: pago único de $349, sin suscripción — es tuyo. Whoop 5.0: sin hardware inicial pero ~$239/año para siempre; si dejas de pagar, la banda deja de funcionar. En unos pocos años el RingConn resulta drásticamente más barato."
+        },
+        {
+          "name": "VFC nocturna",
+          "note": "Whoop muestrea la VFC de forma continua durante toda la noche y reporta una media de sueño completo a partir de cientos de lecturas — la base más limpia para una señal diaria de recuperación. El RingConn mide bien la VFC, pero no está construido en torno a un modelo de recuperación continua del mismo modo."
+        },
+        {
+          "name": "Coaching de recuperación y entrenamiento",
+          "note": "El marco de recuperación, esfuerzo y coaching del sueño de Whoop es más profundo y prescriptivo para deportistas. El RingConn reporta métricas y tendencias, pero es menos un entrenador diario."
+        },
+        {
+          "name": "Batería y carga",
+          "note": "RingConn Gen 3: ~10-14 días más un estuche de carga inalámbrica. Whoop 5.0: ~14 días con un pack deslizante sobre el cuerpo, de modo que nunca sale de la muñeca. Ambos son excelentes; el RingConn se lleva la ventaja y no necesita ninguna ventana de carga fuera del dedo."
+        },
+        {
+          "name": "Hardware extra y lecturas de salud",
+          "note": "El Gen 3 añade un motor háptico pionero en la categoría (alarma/alertas silenciosas), tendencias vasculares y de presión arterial nocturna, y lecturas de patrones de apnea del sueño. Whoop es sin pantalla, sin alarma háptica y con un conjunto de funciones en el dispositivo más limitado."
+        },
+        {
+          "name": "Formato",
+          "note": "Un anillo de dedo vs una banda de muñeca sin pantalla — ambos son fáciles de olvidar que llevas puestos. Preferencia, no un ganador: algunas personas no pueden dormir con un anillo, otras no llevarán una banda en la muñeca."
+        }
+      ],
+      "faq": [
+        {
+          "q": "RingConn Gen 3 o Whoop 5.0 — ¿cuál debería comprar?",
+          "a": "Si rechazas una suscripción y quieres que el dispositivo sea tuyo, el RingConn Gen 3 (pago único de $349, batería de larga duración, alertas hápticas, lecturas vasculares y de apnea del sueño). Si eres deportista y entrenas con una puntuación diaria de recuperación y quieres VFC nocturna continua, el Whoop 5.0 (~$239/año). El RingConn gana el modelo de coste y la amplitud para el día a día; Whoop gana el coaching de recuperación."
+        },
+        {
+          "q": "¿Cuánto más barato es el RingConn Gen 3 que Whoop con el tiempo?",
+          "a": "Sustancialmente. El RingConn Gen 3 son $349 una sola vez, sin nada que deber después. Whoop cuesta unos $239 cada año, y la banda deja de funcionar si dejas de pagar — así que tras dos años Whoop suma unos $478 y sigue subiendo, frente al pago único de $349 del RingConn."
+        },
+        {
+          "q": "¿Es el RingConn Gen 3 tan bueno como Whoop para el seguimiento de la recuperación?",
+          "a": "Para coaching de recuperación puro, no — la VFC nocturna continua de Whoop y su marco de recuperación y esfuerzo son más prescriptivos para el entrenamiento serio. El RingConn Gen 3 mide bien la VFC, el sueño y el estrés y añade hardware del que Whoop carece, pero es un anillo de salud amplio más que un entrenador diario dedicado."
+        }
+      ],
+      "content": "## En resumen\n\nLa elección «comprar vs alquilar» más clara en HRV. El [RingConn Gen 3](/reviews/ringconn-gen-3) es un anillo de pago único de $349 que es tuyo, con una batería de larga duración y extras como una alarma silenciosa háptica. El [Whoop 5.0](/reviews/whoop-5-0) es una banda solo por suscripción (~$239/año) construida en torno a la VFC nocturna continua y una puntuación diaria de recuperación — potente para deportistas, pero nunca es tuyo.\n\n## Cuándo el RingConn Gen 3 es la elección correcta\n\nRechazas una cuota recurrente, quieres que el hardware sea tuyo por completo y valoras una batería de larga duración, alertas hápticas silenciosas y lecturas de salud amplias por encima del coaching diario.\n\n## Cuándo el Whoop 5.0 es la elección correcta\n\nEntrenas con una puntuación diaria de recuperación y esfuerzo, quieres la VFC nocturna continua más limpia, y la membresía anual te resulta aceptable.\n\n## También vale la pena comparar\n\nFrente al líder en precisión, mira [RingConn Gen 3 vs Oura Ring 5](/reviews/vs/ringconn-gen-3-vs-oura-ring-5). El campo completo: [mejores monitores de HRV](/reviews/hrv-trackers)."
+    },
+    "oura-ring-5-vs-samsung-galaxy-ring": {
+      "title": "Oura Ring 5 vs Samsung Galaxy Ring (2026)",
+      "description": "Oura Ring 5 vs Samsung Galaxy Ring — el líder en precisión y app con membresía frente al anillo Android sin suscripción. Precisión multiplataforma vs valor de comprar y que sea tuyo.",
+      "intro": "Estos dos responden a la misma pregunta — un anillo cómodo para la VFC nocturna y el sueño — con compensaciones opuestas. El Oura Ring 5 es el buque insignia de 2026: un 40% más delgado, sensores mejorados, sigue siendo la VFC nocturna y el sueño más precisos, pero los datos completos requieren una membresía mensual. El Samsung Galaxy Ring es la alternativa sin suscripción — cada función desbloqueada en la compra — pero está atado a Samsung Health y Android, y su precisión queda por detrás de Oura. La decisión suele reducirse a tu teléfono y a si aceptas una cuota continua.",
+      "verdict": "Precisión y app vs comprar y que sea tuyo, multiplataforma vs bloqueado a Samsung. El Oura Ring 5 gana en precisión, sensores y profundidad de app y funciona en iPhone y Android, por $399 más ~$6/mes. El Samsung Galaxy Ring gana en modelo de coste — $399 sin suscripción, cada función desbloqueada — pero en realidad solo encaja para dueños de Samsung/Android. Elige según tu teléfono y según si la membresía te resulta aceptable.",
+      "bestForA": "Elige el Oura Ring 5 si quieres el sueño y la VFC más precisos y la app más pulida, puedes estar en iPhone o Android, y la membresía te resulta aceptable.",
+      "bestForB": "Elige el Samsung Galaxy Ring si tienes un teléfono Samsung dentro de Samsung Health y quieres un seguimiento estilo Oura sin suscripción — cada función desbloqueada para siempre en la compra.",
+      "axes": [
+        {
+          "name": "Precisión de sueño y VFC",
+          "note": "Oura es la referencia validada para la fase del sueño y la VFC nocturna, y los sensores mejorados del Ring 5 amplían esa ventaja. El Galaxy Ring es competente, pero su precisión queda por detrás de Oura."
+        },
+        {
+          "name": "Suscripción y coste",
+          "note": "Samsung Galaxy Ring: $399, sin suscripción — cada función desbloqueada en la compra. Oura Ring 5: $399 + ~$6/mes para los datos completos. Con el tiempo el Galaxy Ring resulta notablemente más barato."
+        },
+        {
+          "name": "Plataforma",
+          "note": "Oura funciona por completo en iPhone y Android. El Galaxy Ring está atado a Samsung Health y Android y en realidad solo es un encaje natural para dueños de teléfonos Samsung."
+        },
+        {
+          "name": "App y ecosistema",
+          "note": "La app de Oura es la más pulida y explicativa de la categoría, con las integraciones más amplias. Samsung Health es capaz dentro del ecosistema Samsung, pero más limitada y menos centrada en la VFC."
+        },
+        {
+          "name": "Comodidad y ajuste",
+          "note": "El Ring 5 es ~40% más delgado y ligero que el Ring 4 — el anillo de uso continuo más cómodo de la categoría. El Galaxy Ring también es cómodo, pero Oura marca la referencia de ajuste."
+        },
+        {
+          "name": "Batería",
+          "note": "Ambos ofrecen una batería de varios días (Oura Ring 5 ~6-9 días; Galaxy Ring varios días). Lo bastante parecidos como para que rara vez decida la elección."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Oura Ring 5 o Samsung Galaxy Ring — ¿cuál es mejor?",
+          "a": "Para precisión, profundidad de app y soporte multiplataforma, el Oura Ring 5 ($399 + ~$6/mes). Para un seguimiento sin suscripción en un teléfono Samsung, el Galaxy Ring ($399, sin cuota). Oura gana en precisión y en la app; el Galaxy Ring gana el modelo de coste — si estás dentro del ecosistema Samsung."
+        },
+        {
+          "q": "¿Es el Samsung Galaxy Ring lo bastante preciso como para reemplazar a Oura?",
+          "a": "Para la mayoría de la gente, su VFC nocturna y su seguimiento del sueño son competentes y suficientes en el día a día, pero Oura sigue siendo la referencia de precisión validada y el Ring 5 amplía esa brecha. Si la precisión es tu prioridad, Oura tiene la ventaja — al coste de una suscripción."
+        },
+        {
+          "q": "¿Funciona el Samsung Galaxy Ring con un iPhone?",
+          "a": "No — está atado a Samsung Health y Android y realmente encaja con dueños de teléfonos Samsung. Si estás en un iPhone, el Oura Ring 5 es la elección natural, ya que funciona por completo en iOS y Android."
+        }
+      ],
+      "content": "## En resumen\n\nEl mismo trabajo, compensaciones opuestas. El [Oura Ring 5](/reviews/oura-ring-5) es el líder en precisión y app y funciona en cualquier teléfono, pero cobra una membresía. El [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) es sin suscripción, con cada función desbloqueada en la compra — pero está bloqueado a Samsung/Android y es menos preciso.\n\n## Cuándo el Oura Ring 5 es la elección correcta\n\nLa precisión y la profundidad de la app son la prioridad, puedes estar en iPhone o Android, y la membresía de ~$6/mes te resulta aceptable.\n\n## Cuándo el Samsung Galaxy Ring es la elección correcta\n\nTienes un teléfono Samsung, vives en Samsung Health y quieres un seguimiento de anillo estilo Oura sin cuota continua.\n\n## También vale la pena comparar\n\nPara el campo sin suscripción más allá de Samsung, mira [RingConn Gen 3 vs Oura Ring 5](/reviews/vs/ringconn-gen-3-vs-oura-ring-5). El campo completo: [mejores monitores de HRV](/reviews/hrv-trackers)."
+    },
+    "whoop-5-0-vs-ultrahuman-ring-pro": {
+      "title": "Whoop 5.0 vs Ultrahuman Ring Pro (2026)",
+      "description": "Whoop 5.0 vs Ultrahuman Ring Pro — la banda de recuperación solo por suscripción frente al anillo sin suscripción con batería de 15 días. Coaching de recuperación vs valor de comprar y que sea tuyo.",
+      "intro": "Dos enfoques muy distintos de la VFC continua. El Whoop 5.0 es una banda de muñeca sin pantalla construida en torno a una puntuación diaria de recuperación y esfuerzo, muestreada a partir de VFC nocturna continua — pero es solo por suscripción a ~$239/año, y la banda deja de funcionar cuando dejas de pagar. El Ultrahuman Ring Pro es el modelo opuesto: un anillo de pago único de $479 sin suscripción, una batería líder en la categoría de ~15 días y procesamiento en el propio anillo. La pega es que el Ring Pro es nuevo, y el anillo anterior de Ultrahuman tuvo problemas de fiabilidad ampliamente reportados, así que su ventaja en durabilidad está prometida más que probada.",
+      "verdict": "Alquilar un entrenador de recuperación vs poseer un anillo. El Whoop 5.0 gana en VFC nocturna continua y en el coaching de recuperación y esfuerzo más profundo, si aceptas pagar anualmente. El Ultrahuman Ring Pro gana en modelo de coste (pago único de $479, sin cuota), una batería excepcional de ~15 días y ser dueño de tu dispositivo — con la advertencia honesta de que su fiabilidad a largo plazo no está probada. Elige según si quieres coaching diario que alquilas o un anillo que es tuyo.",
+      "bestForA": "Elige el Whoop 5.0 si eres deportista, actúas según una puntuación diaria de recuperación y esfuerzo, quieres VFC nocturna continua, y la membresía anual te resulta aceptable.",
+      "bestForB": "Elige el Ultrahuman Ring Pro si rechazas una suscripción, quieres que el dispositivo sea tuyo con una batería líder en la categoría, y te sientes cómodo siendo un adoptante temprano de un producto rediseñado.",
+      "axes": [
+        {
+          "name": "Modelo de coste",
+          "note": "Ultrahuman Ring Pro: pago único de $479, sin suscripción — es tuyo. Whoop 5.0: sin hardware inicial pero ~$239/año para siempre, y la banda deja de funcionar si dejas de pagar. En unos pocos años el Ring Pro resulta mucho más barato."
+        },
+        {
+          "name": "Coaching de recuperación y entrenamiento",
+          "note": "El marco de recuperación, esfuerzo y coaching del sueño de Whoop es más profundo y prescriptivo para deportistas, construido sobre VFC nocturna continua. El Ring Pro mide bien la VFC y el sueño, pero es menos un entrenador diario."
+        },
+        {
+          "name": "Batería",
+          "note": "Ultrahuman Ring Pro: batería líder en la categoría de ~15 días. Whoop 5.0: ~14 días con un pack de carga deslizante sobre el cuerpo. Parejos, pero el Ring Pro se lleva la ventaja y apunta directamente a la fiabilidad de la batería."
+        },
+        {
+          "name": "Formato y comodidad",
+          "note": "Un anillo de dedo vs una banda de muñeca sin pantalla — ambos son ligeros y fáciles de olvidar que llevas puestos. Preferencia, no un ganador."
+        },
+        {
+          "name": "VFC nocturna",
+          "note": "Whoop está construido en torno a la VFC nocturna continua y una media de sueño completo a partir de cientos de lecturas — la base diaria de recuperación más limpia. El Ring Pro también mide VFC continua, pero el modelo de recuperación de Whoop está más refinado."
+        },
+        {
+          "name": "Trayectoria y fiabilidad",
+          "note": "Whoop tiene años de hardware y soporte probados. El Ring Pro es nuevo, la validación independiente a largo plazo es escasa, y el anillo anterior de Ultrahuman tuvo fallos de batería ampliamente reportados — la ventaja en fiabilidad está prometida, no aún probada."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Whoop 5.0 o Ultrahuman Ring Pro — ¿cuál debería comprar?",
+          "a": "Si entrenas con una puntuación diaria de recuperación y quieres el coaching más profundo a partir de VFC nocturna continua, el Whoop 5.0 (~$239/año). Si rechazas una suscripción y quieres un anillo con batería de ~15 días que sea tuyo, el Ultrahuman Ring Pro (pago único de $479). Whoop gana el coaching de recuperación y la trayectoria; el Ring Pro gana el modelo de coste y la batería."
+        },
+        {
+          "q": "¿Cuánto más barato es el Ultrahuman Ring Pro que Whoop con el tiempo?",
+          "a": "Sustancialmente. El Ring Pro son $479 una sola vez, sin nada que deber después. Whoop cuesta unos $239 cada año y deja de funcionar si dejas de pagar — así que tras dos años Whoop suma unos $478 y sigue subiendo, frente al pago único de $479 del Ring Pro."
+        },
+        {
+          "q": "¿Es fiable el Ultrahuman Ring Pro?",
+          "a": "Su batería de ~15 días apunta directamente a la queja de fiabilidad del antiguo Ring Air, pero el Ring Pro es nuevo y la validación independiente a largo plazo es escasa — y el anillo anterior de Ultrahuman tuvo fallos de batería ampliamente reportados. Trata la fiabilidad como prometida más que probada; Whoop tiene la trayectoria más larga."
+        }
+      ],
+      "content": "## En resumen\n\nAlquilar un entrenador de recuperación o poseer un anillo. El [Whoop 5.0](/reviews/whoop-5-0) es una banda solo por suscripción (~$239/año) con el coaching de recuperación y esfuerzo más profundo a partir de VFC nocturna continua. El [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) es un anillo de pago único de $479 que es tuyo, con una batería líder en la categoría de ~15 días — aunque su fiabilidad a largo plazo no está probada.\n\n## Cuándo el Whoop 5.0 es la elección correcta\n\nEntrenas con una puntuación diaria de recuperación, quieres la VFC nocturna continua más limpia y el coaching más prescriptivo, y la membresía anual te resulta aceptable.\n\n## Cuándo el Ultrahuman Ring Pro es la elección correcta\n\nRechazas una cuota recurrente, quieres que el hardware sea tuyo con una batería excepcional, y te sientes cómodo siendo un adoptante temprano de un producto rediseñado.\n\n## También vale la pena comparar\n\nFrente a los otros anillos sin suscripción, mira [RingConn Gen 3 vs Ultrahuman Ring Pro](/reviews/vs/ringconn-gen-3-vs-ultrahuman-ring-pro) y [Ultrahuman Ring Pro vs Oura Ring 5](/reviews/vs/ultrahuman-ring-pro-vs-oura-ring-5). El campo completo: [mejores monitores de HRV](/reviews/hrv-trackers)."
+    }
   }
 }
