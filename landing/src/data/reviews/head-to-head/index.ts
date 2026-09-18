@@ -30,6 +30,8 @@ import fenix8VsVenu4 from './garmin-fenix-8-vs-garmin-venu-4'
 import series12VsSeries11 from './apple-watch-series-12-vs-series-11'
 import series12VsOura4 from './apple-watch-series-12-vs-oura-ring-4'
 import series12VsWhoop50 from './apple-watch-series-12-vs-whoop-5-0'
+import ultra4VsFenix8 from './apple-watch-ultra-4-vs-garmin-fenix-8'
+import series12VsVenu4 from './apple-watch-series-12-vs-garmin-venu-4'
 // CGM
 import levelsVsNutrisense from './levels-vs-nutrisense'
 import steloVsLingo from './stelo-vs-lingo'
@@ -240,6 +242,8 @@ const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   series12VsSeries11,
   series12VsOura4,
   series12VsWhoop50,
+  ultra4VsFenix8,
+  series12VsVenu4,
   // CGM
   levelsVsNutrisense,
   steloVsLingo,
