@@ -1246,4 +1246,158 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Anchor one deliberate breath to a screen trigger — a single slow breath with a longer exhale before you open email resets the pattern in seconds via the vagus nerve. Seeing your own breathing live makes the freeze undeniable, which helps it stick. Short daily coherent- or box-breathing sessions raise your unconscious default so the freeze stops happening.",
     },
   ],
+  "respiratory-rate-hidden-signal": [
+    {
+      question: "What is a normal resting respiratory rate?",
+      answer:
+        "For most adults, roughly 12 to 20 breaths per minute at rest — but the population range isn't the useful part. Your own resting rate settles into a narrow, stable personal band night after night, and it's the departure from that band that carries information, not where you land inside the general range.",
+    },
+    {
+      question: "Why does my breathing rate matter if I never think about it?",
+      answer:
+        "Because it's one of your most stable and sensitive vitals, and it often moves early. Stress, a coming illness, evening alcohol and under-recovery all lift resting respiratory rate — frequently before you consciously feel anything — so a sustained rise from your normal is an honest, early signal you'd otherwise miss.",
+    },
+    {
+      question: "Can respiratory rate show that something is wrong?",
+      answer:
+        "It can flag that your body has drifted from its own baseline, but it doesn't diagnose. A resting rate that stays elevated is descriptive — a load signal, not a diagnosis. ONDA is not a medical device; persistent elevation, breathlessness or symptoms that worry you belong with a doctor.",
+    },
+    {
+      question: "Can I lower my respiratory rate on purpose?",
+      answer:
+        "Yes — it's the one vital you can steer directly. Slow, exhale-led breathing lowers the rate deliberately, raises vagal tone and pulls the whole autonomic state toward calm. You can't will your heart rate down, but you can slow your breath, and the rest of the system follows.",
+    },
+  ],
+  "heart-rate-recovery-fitness-marker": [
+    {
+      question: "What is heart-rate recovery?",
+      answer:
+        "Heart-rate recovery (HRR) is how far your pulse drops in the first minute after you stop hard effort. It measures parasympathetic reactivation — how quickly the vagus nerve re-engages once exercise ends. A big, fast drop reflects fitness; a slow one reflects fatigue or deconditioning.",
+    },
+    {
+      question: "Is a fast heart-rate recovery good?",
+      answer:
+        "Yes. As you get fitter your pulse sheds more beats in that first minute, so a faster recovery generally means a better-conditioned system. A landmark 1999 study also found an abnormally slow recovery independently predicted long-term risk — context that makes it a genuine signal worth tracking over time, not a reason to panic over one reading.",
+    },
+    {
+      question: "How does ONDA track heart-rate recovery?",
+      answer:
+        "ONDA reads a one-minute recovery figure as one of its baseline extras, alongside resting heart rate, HRV, estimated VO₂max and peak and walking heart rate, from an Apple Watch and against your own history. So you see recovery as a trend — speeding up as training pays off, or slowing as fatigue builds — rather than a one-off test.",
+    },
+    {
+      question: "How do I improve my heart-rate recovery?",
+      answer:
+        "Build the aerobic engine behind it: consistent zone-2 base training raises the parasympathetic tone that makes the post-effort brake snap back faster, and it's the same base that lifts VO₂max. Protecting sleep and using slow exhale-led breathing to support vagal tone feed the same system.",
+    },
+  ],
+  "name-it-to-tame-it-affect-labeling": [
+    {
+      question: "What is affect labeling?",
+      answer:
+        "Affect labeling is the act of putting a feeling into words — and doing so measurably lowers the feeling's intensity. A landmark 2007 neuroimaging study found that labeling an emotion dampened activity in the amygdala, the brain's threat detector, while engaging the prefrontal regions that regulate it. The folk phrase 'name it to tame it' is neurologically accurate.",
+    },
+    {
+      question: "Does journaling actually reduce stress?",
+      answer:
+        "There's a long research line — most associated with expressive-writing studies — showing that writing about emotional experiences for a few minutes over a few days is associated with improvements in stress and wellbeing. Writing forces the vague into the specific and externalizes the loop, so a worry on the page can be finished rather than endlessly re-run.",
+    },
+    {
+      question: "Why does ONDA include a diary?",
+      answer:
+        "Because naming a feeling calms the story your body is reacting to, while a breath practice calms the body itself — top-down and bottom-up regulation meeting in the middle. ONDA's diary (text or voice) is local-first and private, never logged to analytics, and over time it turns your physiological signals into context: numbers show that something shifted, a two-line note shows why.",
+    },
+    {
+      question: "Is journaling a replacement for therapy?",
+      answer:
+        "No. Affect labeling and journaling are self-regulation practices that sit alongside professional care for anxiety, depression or trauma — they don't replace it, and ONDA is not a medical device. Used well, they're a daily tool; they're not treatment.",
+    },
+  ],
+  "cold-exposure-vagus-nerve": [
+    {
+      question: "Why does a cold shower make you feel calm afterward?",
+      answer:
+        "Cold triggers a sympathetic 'cold-shock' spike — racing heart, an involuntary gasp — and then, as you stay in and especially once you come out, a strong parasympathetic rebound. Cold-water immersion increases vagal activity, so the clear-headed calm afterward comes from that vagal overcorrection, not the cold itself. You've run a full stress-and-recovery cycle in minutes.",
+    },
+    {
+      question: "How do I stay calm in cold water?",
+      answer:
+        "Control the first breath. The cold's power lives in the involuntary gasp, so decide your first breath before the water hits and meet it with a long, slow exhale, keeping the breathing deliberate. That stops the sympathetic spike from bootstrapping into panic and steers you toward the parasympathetic rebound — the same breath skill you can practice warm first.",
+    },
+    {
+      question: "Is cold exposure safe?",
+      answer:
+        "It's a real cardiovascular stressor and demands respect. Never cold-plunge alone or in water you can't easily exit — the cold-shock gasp is a genuine drowning risk. If you have a heart condition, high blood pressure, are pregnant, or have any medical concern, talk to a doctor first. ONDA is a self-regulation tool, not a medical device, and this isn't medical advice.",
+    },
+    {
+      question: "How does ONDA relate to cold exposure?",
+      answer:
+        "ONDA doesn't run your cold shower, but it trains the exact skill the cold demands — the slow, controlled breath that keeps you ahead of the gasp — and with an Apple Watch its live coherence feedback shows your heart rhythm organising as you steady the breath. Practice the calm breath warm, and it's there when the cold tries to take it.",
+    },
+  ],
+  "sitting-all-day-nervous-system": [
+    {
+      question: "Is sitting all day bad for your nervous system?",
+      answer:
+        "Prolonged, unbroken sitting is associated with reduced HRV and a shift toward sympathetic dominance — but 'sitting is the new smoking' is an overstatement. The key word is unbroken: your body reads continuous stillness differently from the same amount of sitting broken up by movement. The dose that matters is the length of the uninterrupted block.",
+    },
+    {
+      question: "How often should I get up from my desk?",
+      answer:
+        "Frequently and briefly beats occasionally and long. Short interruptions — standing, a two-minute walk, a set of movements roughly every half hour — restore the movement input your autonomic system is missing and blunt most of the cost. A single evening gym session, while good for other reasons, doesn't undo hours of uninterrupted stillness the way frequent breaks do.",
+    },
+    {
+      question: "Can a workout undo a day of sitting?",
+      answer:
+        "Not really — not the autonomic cost of the unbroken stillness itself. The fix for sitting is to interrupt it, not to out-train it later. That said, building an aerobic base with consistent zone-2 training does raise the parasympathetic tone that makes your system more resilient to sedentary stretches in the first place.",
+    },
+    {
+      question: "Does sitting affect my breathing too?",
+      answer:
+        "Often, yes. Long focused sitting at a screen is also where screen apnea creeps in — shallow, held breathing layering onto the stillness. That's two small, invisible stressors running for hours, so a slow deliberate minute of breathing resets the breath while movement breaks address the stillness.",
+    },
+  ],
+  "nicotine-vaping-hrv-heart-rate": [
+    {
+      question: "Does nicotine raise your heart rate and lower HRV?",
+      answer:
+        "Yes. Nicotine is a stimulant — a sympathomimetic — so it raises heart rate and blood pressure and reduces HRV, the recovery-side marker. That's the opposite of a relaxant's physiology: the felt calm comes from relieving withdrawal and ritual, while under the hood the stress response is being turned up.",
+    },
+    {
+      question: "Is vaping better than smoking for your heart rate variability?",
+      answer:
+        "Vaping removes combustion, but not the nicotine or its autonomic effect — heart rate still rises and HRV still drops. Vaping also tends to deliver nicotine as an all-day steady drip rather than discrete hits, so the sympathetic nudge can be near-continuous, and a body that never gets a clean parasympathetic window drifts its baseline the wrong way.",
+    },
+    {
+      question: "Why does nicotine feel relaxing if it's a stimulant?",
+      answer:
+        "Because the relief is relieved withdrawal plus ritual, not a calmed body. Nicotine's short half-life means regular users cycle through mini-withdrawals all day, each with its own stress bump and craving; the next hit smooths it, cementing the loop. From inside your data, it's often creating the very fluctuations it then relieves.",
+    },
+    {
+      question: "Will my HRV recover if I quit nicotine?",
+      answer:
+        "HRV tends to recover as nicotine leaves the picture, and watching your own resting heart rate settle and variability climb back can be a concrete motivator. But dependence is a genuine addiction — a doctor, quitline or evidence-based cessation program does what an app can't. ONDA shows the physiology; it doesn't treat the dependence, and this isn't medical advice.",
+    },
+  ],
+  "how-to-measure-hrv-consistently": [
+    {
+      question: "Why does my HRV change so much during the day?",
+      answer:
+        "Because HRV reflects your autonomic balance moment to moment, and that shifts constantly — with time of day, posture, breathing, recent caffeine, food, exercise, alcohol, even talking or a stray stressful thought. That's the metric doing its job, not a malfunction, which is why a reading taken without controlling the conditions tells you almost nothing.",
+    },
+    {
+      question: "When is the best time to measure HRV?",
+      answer:
+        "First thing in the morning for a spot reading — before caffeine, food or exercise pile on — taken the same way each time. Better still is an overnight reading: sleep is the most standardized condition you have (same time, position, activity and slow regular breathing), so an overnight HRV averaged across the night is about as controlled as it gets without a lab.",
+    },
+    {
+      question: "How do I take a consistent HRV reading?",
+      answer:
+        "Standardize everything but you: same time of day, same position, before caffeine/food/exercise, breathing normally (don't consciously slow it, which inflates the number), staying still and not talking, and give it a minute to settle. Get those right and your day-to-day readings become genuinely comparable.",
+    },
+    {
+      question: "Should I compare my HRV to other people or other devices?",
+      answer:
+        "No on both counts. HRV is deeply individual, so other people's numbers aren't your target — your own baseline is. And different devices use different sensors and math, so their readings won't match; that's expected, not an error. Pick one source, measure consistently, and follow your own trend rather than any single number.",
+    },
+  ],
 }

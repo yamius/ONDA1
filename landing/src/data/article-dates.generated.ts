@@ -85,16 +85,16 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "caffeine-hrv-resting-heart-rate": {
-    "published": "2026-09-18T12:33:16.314Z",
-    "modified": "2026-09-18T12:33:16.314Z"
+    "published": "2026-09-18T14:42:44+02:00",
+    "modified": "2026-09-18T14:42:44+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "chronic-stress-nervous-system-never-off": {
-    "published": "2026-09-18T12:34:41.347Z",
-    "modified": "2026-09-18T12:34:41.347Z"
+    "published": "2026-09-18T14:42:44+02:00",
+    "modified": "2026-09-18T14:42:44+02:00"
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -124,6 +124,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-06-04T17:34:04+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
   },
+  "cold-exposure-vagus-nerve": {
+    "published": "2026-09-18T14:17:44.020Z",
+    "modified": "2026-09-18T14:17:44.020Z"
+  },
   "cpg-neural-autopilot": {
     "published": "2026-03-04T14:27:07+01:00",
     "modified": "2026-05-11T17:14:36+02:00"
@@ -149,8 +153,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-17T14:44:39+02:00"
   },
   "eating-late-heart-rate-sleep": {
-    "published": "2026-09-18T12:35:20.839Z",
-    "modified": "2026-09-18T12:35:20.839Z"
+    "published": "2026-09-18T14:42:44+02:00",
+    "modified": "2026-09-18T14:42:44+02:00"
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -192,6 +196,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-02-26T22:24:55+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
   },
+  "heart-rate-recovery-fitness-marker": {
+    "published": "2026-09-18T14:16:18.195Z",
+    "modified": "2026-09-18T14:16:18.195Z"
+  },
   "high-blood-pressure-slow-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
     "modified": "2026-09-17T14:44:39+02:00"
@@ -227,6 +235,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "how-to-lower-cortisol": {
     "published": "2026-06-04T15:03:27+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
+  },
+  "how-to-measure-hrv-consistently": {
+    "published": "2026-09-18T14:19:47.098Z",
+    "modified": "2026-09-18T14:19:47.098Z"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -288,6 +300,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-04T14:27:07+01:00",
     "modified": "2026-05-29T18:05:00+02:00"
   },
+  "name-it-to-tame-it-affect-labeling": {
+    "published": "2026-09-18T14:17:00.541Z",
+    "modified": "2026-09-18T14:17:00.541Z"
+  },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
     "modified": "2026-09-06T17:46:56+02:00"
@@ -316,13 +332,17 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-02-26T15:36:15+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
   },
+  "nicotine-vaping-hrv-heart-rate": {
+    "published": "2026-09-18T14:19:07.371Z",
+    "modified": "2026-09-18T14:19:07.371Z"
+  },
   "nightly-flush-glymphatic-neural-cache": {
     "published": "2026-03-30T20:04:48Z",
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "overtraining-hrv-resting-heart-rate": {
-    "published": "2026-09-18T12:37:12.060Z",
-    "modified": "2026-09-18T12:37:12.060Z"
+    "published": "2026-09-18T14:42:44+02:00",
+    "modified": "2026-09-18T14:42:44+02:00"
   },
   "phase-locked-acoustic-sleep": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -348,21 +368,29 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-24T13:00:58Z",
     "modified": "2026-06-08T10:08:07+02:00"
   },
+  "respiratory-rate-hidden-signal": {
+    "published": "2026-09-18T14:15:36.975Z",
+    "modified": "2026-09-18T14:15:36.975Z"
+  },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
     "modified": "2026-06-09T14:23:13+02:00"
   },
   "screen-apnea-breathing": {
-    "published": "2026-09-18T12:36:49.411Z",
-    "modified": "2026-09-18T12:36:49.411Z"
+    "published": "2026-09-18T14:42:44+02:00",
+    "modified": "2026-09-18T14:42:44+02:00"
   },
   "senolytic-high-dosing-longevity": {
     "published": "2026-02-28T20:22:39+01:00",
     "modified": "2026-05-18T11:01:28+02:00"
   },
+  "sitting-all-day-nervous-system": {
+    "published": "2026-09-18T14:18:24.784Z",
+    "modified": "2026-09-18T14:18:24.784Z"
+  },
   "social-jet-lag-irregular-sleep": {
-    "published": "2026-09-18T12:33:59.434Z",
-    "modified": "2026-09-18T12:33:59.434Z"
+    "published": "2026-09-18T14:42:44+02:00",
+    "modified": "2026-09-18T14:42:44+02:00"
   },
   "spinal-harddrive-cpg-autonomous-scripts": {
     "published": "2026-03-31T22:15:23Z",
@@ -409,8 +437,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-05T18:33:27+02:00"
   },
   "your-baseline-knows-first": {
-    "published": "2026-09-18T12:32:31.419Z",
-    "modified": "2026-09-18T12:32:31.419Z"
+    "published": "2026-09-18T14:42:44+02:00",
+    "modified": "2026-09-18T14:42:44+02:00"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",
