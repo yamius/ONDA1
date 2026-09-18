@@ -1642,4 +1642,70 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "No — start with the phone in your pocket. The iPhone camera lets you run the core loop (breathe slow, watch your pulse settle) with zero new hardware, so you can find out whether biofeedback helps before spending anything. If it clicks, an Apple Watch later adds continuous pulse, the coherence score and HRV trend. ONDA is free to start and is a self-regulation practice, not a medical device.",
     },
   ],
+  "how-to-train-your-nervous-system": [
+    {
+      question: "Can you actually train your nervous system?",
+      answer:
+        "Yes. The autonomic nervous system is trainable like a muscle: how fast you shift from stressed to calm, and how well you hold calm, improves with practice. Training it means strengthening the parasympathetic brake so you can down-regulate on demand and speeding your return to calm after stress. Vagal tone is the trainable quantity and HRV is the scoreboard. It is a self-regulation practice, not a medical treatment.",
+    },
+    {
+      question: "How do I train my nervous system to relax?",
+      answer:
+        "The most direct lever is slow, exhale-led breathing: a long out-breath stimulates the vagus nerve and hands tone to the parasympathetic branch, and repeated daily it rehearses the tense-to-calm transition until it is faster and automatic. Support it with sleep, aerobic fitness, vagal-tone exercises and boundaries around chronic stress, and use HRV biofeedback to see the brake engage.",
+    },
+    {
+      question: "How long does it take to train your nervous system?",
+      answer:
+        "The acute calming effect of slow breathing happens in minutes, but the training effect — a steadier baseline and a faster return to calm — comes from repetition over weeks. Judge progress by your own HRV trend and, more tellingly, by how quickly you notice yourself coming down after stress in real life. Consistency matters more than intensity.",
+    },
+    {
+      question: "What is nervous system regulation training?",
+      answer:
+        "It is practising the skill of shifting between activation and calm on purpose — strengthening the parasympathetic (vagal) brake and the return to baseline. Slow breathing is the main active lever; feedback (watching your heart rhythm respond) confirms it is working, and a structured, sequenced program compounds the skill. It trains the self-regulation dimension of your nervous system; it is not a therapy for a nervous-system disorder.",
+    },
+  ],
+  "calm-your-nervous-system-down": [
+    {
+      question: "How do I calm my nervous system down fast?",
+      answer:
+        "Breathe low and slow with the exhale longer than the inhale — try in for 4, out for 6 — for a couple of minutes. A long out-breath stimulates the vagus nerve and hands tone to the parasympathetic branch, so the heart slows on each exhale and the system follows the breath toward calm. You cannot think your way calm, but you can breathe your way there.",
+    },
+    {
+      question: "Why can't I relax even when I try?",
+      answer:
+        "Because being wired is your sympathetic branch stuck on, which is below conscious control — you cannot will your heart rate down or think adrenaline away, so telling yourself to relax targets the wrong place. The one autonomic input you do control is the breath: a slow, long exhale reaches the vagal switch your thoughts cannot. If you feel wired every night and it is running your life, raise it with a professional.",
+    },
+    {
+      question: "What is the best breathing to calm down?",
+      answer:
+        "Slow, belly breathing with the exhale clearly longer than the inhale — the longer out-breath raises vagal tone fastest. Keep it soft rather than forceful; you are removing the accelerant of fast, shallow breathing, not straining for calm. Give it a minute or two for the parasympathetic brake to catch, and watching your rhythm settle with biofeedback helps you trust it is working.",
+    },
+    {
+      question: "How do I stop feeling on edge after work?",
+      answer:
+        "In the moment, a couple of minutes of slow, exhale-led breathing down-regulates the wired state. The deeper fix, if you are on edge every evening, is that chronic stress has stopped your off-switch from flipping — so practise the same breathing daily rather than only in crisis, add real boundaries at the end of work and protect sleep, and you rebuild the return to calm itself.",
+    },
+  ],
+  "app-between-meditation-and-fitness-tracker": [
+    {
+      question: "Is there an app between a meditation app and a fitness tracker?",
+      answer:
+        "Yes — a biofeedback trainer sits in exactly that gap. A meditation app gives you practice with no measurement (you cannot tell if it is working); a fitness tracker gives you measurement with no practice (a number and a shrug). The app in the middle measures your physiology live, gives you a breathing practice to change it, and shows the response in real time. ONDA is built for that gap.",
+    },
+    {
+      question: "What app both measures stress and helps me do something about it?",
+      answer:
+        "You want a closed-loop biofeedback app rather than a passive tracker. It reads your pulse and heart rhythm, gives you paced breathing to shift your state, and shows the change as it happens — so a low reading becomes the start of a practice instead of a dead end. ONDA does this from an iPhone camera or Apple Watch (the live coherence score needs a Watch) and is a self-regulation practice, not a medical device.",
+    },
+    {
+      question: "Why don't stress-tracking apps help me build a habit?",
+      answer:
+        "Because measurement with no action becomes noise you learn to ignore, and guided meditation with no feedback gives no sense of progress, so motivation starves. Habits form around a closed loop — measure, do something, see the result — where the payoff is immediate and visible. That active loop, not a bigger content library or a fancier tracker, is what makes the practice stick.",
+    },
+    {
+      question: "How is a biofeedback app different from Headspace or Whoop?",
+      answer:
+        "Headspace is a guided-content library with no measurement of your body; Whoop is a measurement device with no in-the-moment practice. A biofeedback app like ONDA fuses the two: it measures your physiology and gives you a practice to change it in the same live loop, plus a structured program to progress through. Different category — a trainer, not a library or a dashboard.",
+    },
+  ],
 }

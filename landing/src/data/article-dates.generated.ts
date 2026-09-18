@@ -48,6 +48,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-17T14:44:39+02:00",
     "modified": "2026-09-17T14:44:39+02:00"
   },
+  "app-between-meditation-and-fitness-tracker": {
+    "published": "2026-09-18T23:12:57.179Z",
+    "modified": "2026-09-18T23:12:57.179Z"
+  },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
     "modified": "2026-09-17T19:19:45+02:00"
@@ -95,6 +99,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "caffeine-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
     "modified": "2026-09-18T21:08:28+02:00"
+  },
+  "calm-your-nervous-system-down": {
+    "published": "2026-09-18T23:12:14.443Z",
+    "modified": "2026-09-18T23:12:14.443Z"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -197,8 +205,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-18T11:01:28+02:00"
   },
   "find-your-resonance-breathing-rate": {
-    "published": "2026-09-18T23:04:30.529Z",
-    "modified": "2026-09-18T23:04:30.529Z"
+    "published": "2026-09-19T01:10:36+02:00",
+    "modified": "2026-09-19T01:10:36+02:00"
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -259,6 +267,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "how-to-raise-hrv-naturally": {
     "published": "2026-09-19T00:55:37+02:00",
     "modified": "2026-09-19T00:55:37+02:00"
+  },
+  "how-to-train-your-nervous-system": {
+    "published": "2026-09-18T23:11:31.658Z",
+    "modified": "2026-09-18T23:11:31.658Z"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -413,8 +425,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-18T11:01:28+02:00"
   },
   "short-daily-breathing-routine": {
-    "published": "2026-09-18T23:03:45.334Z",
-    "modified": "2026-09-18T23:03:45.334Z"
+    "published": "2026-09-19T01:10:36+02:00",
+    "modified": "2026-09-19T01:10:36+02:00"
   },
   "sitting-all-day-nervous-system": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -445,8 +457,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-18T11:01:28+02:00"
   },
   "train-hrv-iphone-camera-no-wearable": {
-    "published": "2026-09-18T23:05:14.515Z",
-    "modified": "2026-09-18T23:05:14.515Z"
+    "published": "2026-09-19T01:10:36+02:00",
+    "modified": "2026-09-19T01:10:36+02:00"
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
