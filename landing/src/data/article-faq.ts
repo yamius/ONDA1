@@ -1092,4 +1092,158 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         'Spasms in the masticatory or trapezius muscles compress microvessels, slow local blood flow and cool the surrounding tissue. The combination raises apparent viscosity, increases impedance and delays nutrient delivery to the brain — releasing structural tension is the most direct viscosity hack.',
     },
   ],
+  "your-baseline-knows-first": [
+    {
+      question: "Can a wearable really tell when something is wrong before I feel it?",
+      answer:
+        "Not by diagnosing anything — but your resting heart rate, HRV and breathing rate often drift from your personal baseline one to three days before you consciously feel unwell, because your autonomic nervous system reacts to load earlier than self-report does. The signal is the deviation from your own normal, not the raw number. It points at your data; it never names a condition.",
+    },
+    {
+      question: "Why does deviation from baseline matter more than the actual number?",
+      answer:
+        "Because there is no universal 'good' value. A resting heart rate of 72 is unremarkable unless yours normally sits at 58 — then it's a fourteen-beat departure. The same is true of HRV and breathing rate: only your own corridor and how far today steps outside it carry information. A tool with no memory of your normal is showing you noise.",
+    },
+    {
+      question: "Does ONDA diagnose or predict illness?",
+      answer:
+        "No. ONDA is not a medical device and does not diagnose, predict or name any condition. It builds a personal statistical corridor and says one descriptive thing: your rhythm has moved away from your own baseline and stayed there. What that means is for you and, when warranted, a clinician to interpret.",
+    },
+    {
+      question: "Why can't I just notice these changes myself?",
+      answer:
+        "Interoception — your sense of your internal state — is coarse. You feel hunger and pain, but not a five-beat rise in resting pulse or a fifteen-percent dip in variability. Those are exactly the signals that move first and sit below conscious sensation, which is why they need measuring rather than feeling.",
+    },
+  ],
+  "caffeine-hrv-resting-heart-rate": [
+    {
+      question: "Does caffeine lower HRV and raise resting heart rate?",
+      answer:
+        "Yes, especially late in the day. Caffeine's 5-6 hour half-life keeps sympathetic tone slightly elevated into the night, which can raise resting heart rate a few beats and flatten overnight HRV — sleep studies show higher LF/HF and QT variability after evening caffeine. The effect is a tax, not a catastrophe, and it compounds night to night.",
+    },
+    {
+      question: "When should I stop drinking caffeine?",
+      answer:
+        "There's no universal cutoff — it's set by genetics and metabolism, not willpower. Fast metabolizers clear caffeine quickly; slow metabolizers carry an afternoon cup deep into the night. The only cutoff that means anything is yours, found by watching how your own overnight resting heart rate and HRV respond when you move your last cup earlier.",
+    },
+    {
+      question: "How do I find my personal caffeine cutoff?",
+      answer:
+        "Build a personal baseline of your normal resting heart rate, HRV and breathing, then compare nights. A night after a late cup that reads with a higher sleeping pulse and flatter HRV than your corridor is your body drawing the line. Move the cup earlier until your nights sit back inside your baseline — that time is your real cutoff.",
+    },
+    {
+      question: "Does the afternoon coffee really affect my sleep if I fall asleep fine?",
+      answer:
+        "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
+    },
+  ],
+  "social-jet-lag-irregular-sleep": [
+    {
+      question: "What is social jet lag?",
+      answer:
+        "Social jet lag is the gap between the sleep your body clock wants and the sleep your calendar imposes — the difference between your mid-sleep point on free days versus work days. Shifting bedtime around the weekend effectively flies you a couple of time zones and back without leaving your bed. More than 30% of people carry a social jet lag over two hours.",
+    },
+    {
+      question: "Does an irregular sleep schedule lower HRV?",
+      answer:
+        "Yes. A field study of healthy young men found those with high social jet lag had lower HRV in the first hours of sleep on work nights than free nights, while regular sleepers stayed steady. In adolescents, a bedtime swinging by about an hour was linked to measurably lower HRV. Social jet lag is now treated as a chronic stressor.",
+    },
+    {
+      question: "Is sleep regularity more important than sleep duration?",
+      answer:
+        "They're different inputs, and regularity is underrated. An eight-hour night starting at 11 p.m. is not the same as one starting at 2 a.m. — the second arrives out of phase with your clock and pays an alignment cost even at identical duration. Regularity drifts silently and can improve this week without more time in bed.",
+    },
+    {
+      question: "How do I fix social jet lag?",
+      answer:
+        "Anchor your wake time first — a consistent rise time, even on weekends and after a late night, is the strongest lever on circadian stability, more reliable than a fixed bedtime. Keep the weekend drift under an hour, add morning light to lock it in, and give the evening a fixed wind-down so bedtime stops floating.",
+    },
+  ],
+  "chronic-stress-nervous-system-never-off": [
+    {
+      question: "How does chronic stress show up in HRV?",
+      answer:
+        "As HRV that fails to rebound. Everyone's variability drops under an acute stressor — that's normal. The chronic-stress signature is HRV that stays low through the evening and into sleep, on work days and weekends alike, with a baseline that has quietly settled lower and stopped coming back up. The tell is the missing recovery, not the peak.",
+    },
+    {
+      question: "Why can't I feel that I'm chronically stressed?",
+      answer:
+        "Because the elevated state becomes your reference point. Interoception recalibrates to the plateau, so 'wired but tired' and 'fine, just busy' describe a nervous system stuck in mild activation that no longer registers as unusual. The felt sense adapts; the measured signal doesn't — which is why it's worth measuring.",
+    },
+    {
+      question: "Can breathing exercises actually help chronic stress?",
+      answer:
+        "They train the off-switch. Slow, exhale-led breathing acutely raises vagal tone and HRV within minutes, re-teaching the parasympathetic return, and done daily it makes that descent more automatic. It's a self-regulation practice, not a treatment — it sits alongside real rest, boundaries and, when stress is running your life, professional care.",
+    },
+    {
+      question: "What's the difference between this and just lowering cortisol?",
+      answer:
+        "Cortisol is the hormonal half of the stress picture; HRV is the autonomic half. This lens focuses on whether your nervous system ever switches off — whether variability rebounds in the evening and overnight. Both matter, and neither is fixed by a 'detox.' They're rebuilt by practicing recovery and protecting rest.",
+    },
+  ],
+  "eating-late-heart-rate-sleep": [
+    {
+      question: "Does eating late raise your heart rate at night?",
+      answer:
+        "It can, modestly. Digestion is metabolically demanding sympathetic work — blood flow shifts to the gut and core temperature rises — arriving just as your body should be powering down. Tracker data has put a late meal at roughly a few percent higher overnight heart rate and lower HRV, though well-controlled studies often find smaller effects. It's real but personal.",
+    },
+    {
+      question: "How many hours before bed should I stop eating?",
+      answer:
+        "About three hours before bed (four if you're sensitive) is a reasonable default, precisely because responses vary. A fast metabolizer with a modest dinner may see nothing; a large, high-fat meal at 10 p.m. may clearly bump overnight heart rate and flatten HRV. The rule points you at the right neighbourhood; your own data gives the exact address.",
+    },
+    {
+      question: "How do I know if late eating affects me specifically?",
+      answer:
+        "Compare nights in your own baseline. With a personal corridor of overnight resting heart rate and HRV, put an early-dinner night against a late one. If your sleeping pulse rises and your HRV drops relative to your normal, your body pays the tax; if the nights read the same, you've earned your flexibility honestly.",
+    },
+    {
+      question: "Is late-night eating actually bad for you?",
+      answer:
+        "For most people it's a small autonomic cost to overnight recovery, not a medical hazard — and ONDA doesn't diagnose anything. The honest framing is that it's a lifestyle input written into your own numbers. Push your main meal earlier when you can, keep late meals lighter, and let your data tell you your real tolerance.",
+    },
+  ],
+  "overtraining-hrv-resting-heart-rate": [
+    {
+      question: "What are the signs of overtraining in heart rate and HRV?",
+      answer:
+        "A resting heart rate that creeps up against your baseline paired with a falling HRV (RMSSD) is the classic signature of load outrunning recovery. Neither number alone is decisive — HRV is influenced by heart rate itself — so they're read together. A slowing one-minute heart-rate recovery and a stalling VO₂max sharpen the picture.",
+    },
+    {
+      question: "Why does more training make me slower?",
+      answer:
+        "Because fitness is built during recovery, not the workout. The session is the stimulus — a controlled dose of stress — and the adaptation happens afterward, if rebuilding is allowed. Load without adequate recovery is accumulated fatigue with no payoff, and past a point it produces a performance decline rather than a gain.",
+    },
+    {
+      question: "How do I use HRV to decide when to rest?",
+      answer:
+        "Let your baseline call the deload. When your resting heart rate sits elevated and your HRV stays suppressed for several days running, that's your recovery account overdrawn — insert rest then, before your body forces it with injury or illness. Persistent fatigue despite rest belongs with a coach, and if health is in question, a doctor.",
+    },
+    {
+      question: "Which numbers should athletes actually watch?",
+      answer:
+        "Four of your own: resting heart rate and HRV read together for day-to-day recovery, one-minute heart-rate recovery for parasympathetic reactivation, and estimated VO₂max as the slow-moving scoreboard that should hold or trend up across a well-managed block. Together they turn 'I feel flat' into a readable pattern.",
+    },
+  ],
+  "screen-apnea-breathing": [
+    {
+      question: "What is screen apnea (or email apnea)?",
+      answer:
+        "Screen apnea is the unconscious tendency to hold or shorten your breath while concentrating on a device. The term 'email apnea' was coined in 2007 by Linda Stone, who found roughly 80% of people did it — the exceptions were trained breathers like musicians and athletes. It's a habit of attention, not a medical disorder, and it's almost never noticed as it happens.",
+    },
+    {
+      question: "Is screen apnea the same as sleep apnea?",
+      answer:
+        "No. Sleep apnea is a medical condition involving breathing interruptions during sleep and needs clinical care. Screen apnea is a waking behavioural pattern — shallow or held breathing while focused on a screen, triggered by low-grade stress. It responds to attention and practice, and it isn't a diagnosis.",
+    },
+    {
+      question: "Why does holding my breath at the screen matter?",
+      answer:
+        "Breathing is a lever on your whole autonomic state. Freezing the breath lets CO₂ drift and nudges the body toward mild threat, edging sympathetic tone up. Hours of that a day is a low, self-inflicted stress signal linked to more tension, fatigue and worse concentration — the shallow breathing quietly undermines the focus you're trying to protect.",
+    },
+    {
+      question: "How do I stop screen apnea?",
+      answer:
+        "Anchor one deliberate breath to a screen trigger — a single slow breath with a longer exhale before you open email resets the pattern in seconds via the vagus nerve. Seeing your own breathing live makes the freeze undeniable, which helps it stick. Short daily coherent- or box-breathing sessions raise your unconscious default so the freeze stops happening.",
+    },
+  ],
 }

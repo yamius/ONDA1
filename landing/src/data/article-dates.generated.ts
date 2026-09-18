@@ -84,9 +84,17 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-06-04T00:46:04+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
   },
+  "caffeine-hrv-resting-heart-rate": {
+    "published": "2026-09-18T12:33:16.314Z",
+    "modified": "2026-09-18T12:33:16.314Z"
+  },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
+  },
+  "chronic-stress-nervous-system-never-off": {
+    "published": "2026-09-18T12:34:41.347Z",
+    "modified": "2026-09-18T12:34:41.347Z"
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -139,6 +147,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "dysautonomia-long-covid-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
     "modified": "2026-09-17T14:44:39+02:00"
+  },
+  "eating-late-heart-rate-sleep": {
+    "published": "2026-09-18T12:35:20.839Z",
+    "modified": "2026-09-18T12:35:20.839Z"
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -308,6 +320,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-30T20:04:48Z",
     "modified": "2026-05-25T19:35:33+02:00"
   },
+  "overtraining-hrv-resting-heart-rate": {
+    "published": "2026-09-18T12:37:12.060Z",
+    "modified": "2026-09-18T12:37:12.060Z"
+  },
   "phase-locked-acoustic-sleep": {
     "published": "2026-02-28T20:22:39+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
@@ -336,9 +352,17 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-31T22:29:31Z",
     "modified": "2026-06-09T14:23:13+02:00"
   },
+  "screen-apnea-breathing": {
+    "published": "2026-09-18T12:36:49.411Z",
+    "modified": "2026-09-18T12:36:49.411Z"
+  },
   "senolytic-high-dosing-longevity": {
     "published": "2026-02-28T20:22:39+01:00",
     "modified": "2026-05-18T11:01:28+02:00"
+  },
+  "social-jet-lag-irregular-sleep": {
+    "published": "2026-09-18T12:33:59.434Z",
+    "modified": "2026-09-18T12:33:59.434Z"
   },
   "spinal-harddrive-cpg-autonomous-scripts": {
     "published": "2026-03-31T22:15:23Z",
@@ -383,6 +407,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
     "modified": "2026-09-05T18:33:27+02:00"
+  },
+  "your-baseline-knows-first": {
+    "published": "2026-09-18T12:32:31.419Z",
+    "modified": "2026-09-18T12:32:31.419Z"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",
