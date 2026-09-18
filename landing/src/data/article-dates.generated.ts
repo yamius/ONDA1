@@ -438,7 +438,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-18T14:42:44+02:00"
+    "modified": "2026-09-18T18:12:40+02:00"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",

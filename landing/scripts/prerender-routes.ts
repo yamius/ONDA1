@@ -188,6 +188,8 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'what-is-my-chronotype', publishOn: '2026-09-21' },
   { slug: 'what-your-apple-watch-records', publishOn: '2026-09-21' },
   { slug: 'zone-2-training-aerobic-base', publishOn: '2026-09-21' },
+  // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
+  { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
 ]
 
 /**
@@ -287,6 +289,8 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'vascular-tensegrity-microvascular-mechanics', publishOn: '2026-10-26' },
   { slug: 'ventral-tegmental-core-motivational-salience', publishOn: '2026-10-26' },
   { slug: 'fascial-tensegrity-protocol-myofascial-noise', publishOn: '2026-10-26' },
+  // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
+  { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
