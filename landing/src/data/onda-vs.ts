@@ -164,9 +164,9 @@ export const ONDA_VS: OndaVsEntry[] = [
     category: 'Meditation / mindfulness library',
     title: 'ONDA vs Headspace',
     description:
-      'ONDA vs Headspace — real-time HRV biofeedback vs a guided meditation library. An objective capability comparison from ONDA Life.',
+      'Looking for an alternative to Headspace? ONDA is a science-based, structured practice app with real-time HRV biofeedback — a level-by-level program vs a guided-meditation library. An objective capability comparison from ONDA Life.',
     intro:
-      'Headspace is one of the biggest guided-meditation and mindfulness libraries, with courses on stress, focus and sleep. ONDA is narrower and more physiological: it trains your nervous system with real-time HRV biofeedback, so you can see your body respond as you breathe. One is a content library; the other is a feedback instrument.',
+      'Headspace is one of the biggest guided-meditation and mindfulness libraries, with courses on stress, focus and sleep. ONDA is narrower and more physiological: it trains your nervous system with real-time HRV biofeedback, so you can see your body respond as you breathe — and it does it through a structured, level-by-level program rather than a shelf of standalone sessions. One is a content library; the other is a measurable, progressive practice.',
     them: {
       'Real-time HRV biofeedback (live feedback as you breathe)': 'no',
       'Live coherence score': 'no',
@@ -197,6 +197,14 @@ export const ONDA_VS: OndaVsEntry[] = [
         q: 'Does Headspace track HRV?',
         a: 'No. Headspace offers guided audio and breathing exercises but does not measure heart-rate variability or give biometric feedback. That is ONDA’s focus.',
       },
+      {
+        q: 'Is ONDA a good alternative to Headspace?',
+        a: 'If you want a measurable, biofeedback-driven practice rather than an open-ended audio library, yes. ONDA offers two things Headspace does not: real-time HRV biofeedback — you watch your own heart rhythm organise as you breathe — and a structured, level-by-level training program (an 8-level path) that builds skill progressively instead of a shelf of standalone sessions. Different job: Headspace for breadth of guided content, ONDA for a guided, measurable practice you actually progress through. Many people run ONDA as the training layer alongside or instead of Headspace.',
+      },
+      {
+        q: 'What makes ONDA’s meditation system different from Headspace’s courses?',
+        a: 'Structure and feedback. ONDA is built as a progressive, multi-level program where sessions unlock in sequence — closer to a curriculum than a library — and it reads your pulse (phone camera or Apple Watch) to show a live coherence score, so you feel the practice working rather than trusting audio alone. Headspace’s strength is the breadth of its guided-meditation library; ONDA’s is measurable, structured nervous-system training.',
+      },
     ],
   },
   {
@@ -207,9 +215,9 @@ export const ONDA_VS: OndaVsEntry[] = [
     category: 'Meditation / sleep content',
     title: 'ONDA vs Calm',
     description:
-      'ONDA vs Calm — real-time HRV biofeedback vs a meditation-and-sleep content library. An objective capability comparison from ONDA Life.',
+      'Looking for an alternative to Calm? ONDA is a science-based, structured practice app with real-time HRV biofeedback — a level-by-level program vs a meditation-and-sleep content library. An objective capability comparison from ONDA Life.',
     intro:
-      'Calm is a large meditation and sleep-content app, best known for its sleep stories and relaxing audio. ONDA is a physiological trainer: real-time HRV biofeedback and paced breathing so you can see your nervous system respond. Calm helps you wind down with content; ONDA gives you a measurable practice.',
+      'Calm is a large meditation and sleep-content app, best known for its sleep stories and relaxing audio. ONDA is a physiological trainer: real-time HRV biofeedback and paced breathing so you can see your nervous system respond — delivered through a structured, level-by-level program rather than a library you browse. Calm helps you wind down with content; ONDA gives you a measurable practice you progress through.',
     them: {
       'Real-time HRV biofeedback (live feedback as you breathe)': 'no',
       'Live coherence score': 'no',
@@ -239,6 +247,14 @@ export const ONDA_VS: OndaVsEntry[] = [
       {
         q: 'Does Calm measure HRV?',
         a: 'No. Calm provides guided audio, sleep stories and a simple breathing exercise, but does not measure HRV or provide biofeedback.',
+      },
+      {
+        q: 'Is ONDA a good alternative to Calm?',
+        a: 'For an active, measurable practice rather than relaxation content, yes. Two things set ONDA apart from Calm: real-time HRV biofeedback — you watch your own heart rhythm settle as you breathe — and a structured, level-by-level training program (an 8-level path) that builds skill in sequence instead of a library you dip into. If your goal is sleep stories and soundscapes, Calm; if it is guided, measurable nervous-system training you progress through, ONDA. They pair well — Calm to wind down, ONDA to train.',
+      },
+      {
+        q: 'What makes ONDA’s practice system different from Calm?',
+        a: 'Structure and feedback. ONDA is a progressive, multi-level program where sessions unlock in order — a curriculum rather than a content shelf — and it reads your pulse (phone camera or Apple Watch) to show a live coherence score, so you feel the practice working. Calm’s strength is its relaxation and sleep-content library; ONDA’s is structured, biofeedback-driven training.',
       },
     ],
   },
