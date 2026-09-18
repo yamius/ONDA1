@@ -61,8 +61,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T10:08:07+02:00"
   },
   "body-awareness-training-app": {
-    "published": "2026-09-18T22:55:59.537Z",
-    "modified": "2026-09-18T22:55:59.537Z"
+    "published": "2026-09-19T01:02:52+02:00",
+    "modified": "2026-09-19T01:02:52+02:00"
   },
   "body-fat-percentage-composition": {
     "published": "2026-06-04T00:46:04+02:00",
@@ -77,8 +77,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "breathing-for-focus-and-attention": {
-    "published": "2026-09-18T22:57:03.371Z",
-    "modified": "2026-09-18T22:57:03.371Z"
+    "published": "2026-09-19T01:02:52+02:00",
+    "modified": "2026-09-19T01:02:52+02:00"
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -137,8 +137,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-18T16:27:42+02:00"
   },
   "consciousness-training-app": {
-    "published": "2026-09-18T22:55:59.545Z",
-    "modified": "2026-09-18T22:55:59.545Z"
+    "published": "2026-09-19T01:02:52+02:00",
+    "modified": "2026-09-19T01:02:52+02:00"
   },
   "cpg-neural-autopilot": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -195,6 +195,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "femtech-cyclical-architecture": {
     "published": "2026-03-04T21:35:50+01:00",
     "modified": "2026-05-18T11:01:28+02:00"
+  },
+  "find-your-resonance-breathing-rate": {
+    "published": "2026-09-18T23:04:30.529Z",
+    "modified": "2026-09-18T23:04:30.529Z"
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -408,6 +412,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-02-28T20:22:39+01:00",
     "modified": "2026-05-18T11:01:28+02:00"
   },
+  "short-daily-breathing-routine": {
+    "published": "2026-09-18T23:03:45.334Z",
+    "modified": "2026-09-18T23:03:45.334Z"
+  },
   "sitting-all-day-nervous-system": {
     "published": "2026-09-18T16:27:42+02:00",
     "modified": "2026-09-18T16:27:42+02:00"
@@ -435,6 +443,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
     "modified": "2026-05-18T11:01:28+02:00"
+  },
+  "train-hrv-iphone-camera-no-wearable": {
+    "published": "2026-09-18T23:05:14.515Z",
+    "modified": "2026-09-18T23:05:14.515Z"
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",

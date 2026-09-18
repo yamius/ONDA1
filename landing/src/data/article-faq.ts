@@ -1576,4 +1576,70 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "No — and that belief makes focus harder. Focus is noticing your attention wandered and bringing it back fast; the mind always drifts. The trainable skill is the return, and every return is a rep. Practising attention on the breath trains exactly that, and doing it with biofeedback lets you see the calm-alert state you’re steering toward.",
     },
   ],
+  "short-daily-breathing-routine": [
+    {
+      question: "How long should a daily breathing practice be?",
+      answer:
+        "For nervous-system benefits, short and daily beats long and occasional. Slow breathing shifts your autonomic balance within minutes, and the training effect comes from repetition, not marathon sessions, so five focused minutes most days outperforms a half-hour twice a week. The dose that matters is the one you actually repeat.",
+    },
+    {
+      question: "What is a good 5-minute breathing routine?",
+      answer:
+        "Minute 1: breathe normally and just notice the breath. Minutes 2–4: slow it down with the exhale longer than the inhale, low in the belly — coherent or box breathing both work. Minute 5: let the breath return and notice how the body feels different. The pattern matters less than doing it daily; feedback that shows your rhythm smoothing helps it stick.",
+    },
+    {
+      question: "Is 5 minutes of breathing a day enough to make a difference?",
+      answer:
+        "Yes, if it is consistent. A few minutes of slow, exhale-led breathing acutely calms the nervous system, and repeated daily it can steady your baseline over time. Short sessions keep friction low and the habit alive — automatic-and-short beats ambitious-and-abandoned. It is a self-regulation practice, not a medical treatment.",
+    },
+    {
+      question: "How do I make a breathing habit stick?",
+      answer:
+        "Set the bar low (five minutes), anchor it to something you already do daily, protect the streak over the duration, and use feedback so you can see the calm arriving — a visible win is far more motivating than a timer. Once it is automatic, lengthening it is easy.",
+    },
+  ],
+  "find-your-resonance-breathing-rate": [
+    {
+      question: "What is my resonance breathing rate?",
+      answer:
+        "Your resonance rate is the breathing pace where your heart rate, breath and blood-pressure rhythm fall into phase and your HRV swings to its widest amplitude — around 0.1 Hz, roughly six breaths a minute, but personal (usually ~4.5 to 7 a minute depending on your physiology). It is the pace where slow breathing is most effective, and it is worth finding rather than guessing.",
+    },
+    {
+      question: "How do I find my resonant breathing frequency?",
+      answer:
+        "Sweep slow paces by feel first — try about 4.5, 5, 5.5, 6 and 6.5 breaths a minute (a breath every ~13 to 9 seconds), exhale a little longer than the inhale, and notice which feels most effortless. To pinpoint it, use live HRV biofeedback and find the pace that produces the biggest, smoothest heart-rhythm swing; that peak is your resonance frequency.",
+    },
+    {
+      question: "Is 6 breaths per minute right for everyone?",
+      answer:
+        "It is the population average and a good starting point, but not necessarily your answer. Personal resonance rate depends on physiology (height and blood volume among other things) and typically lands between roughly 4.5 and 7 a minute — taller people tend to resonate a little slower. That is why a fixed rule feels perfect for some and strained for others; test to find yours.",
+    },
+    {
+      question: "Do I need a device to find my resonance rate?",
+      answer:
+        "You can get into the right neighbourhood by feel — the pace that seems effortless and settling. To pinpoint it you need to see the signal: live HRV biofeedback shows where your heart-rhythm amplitude peaks. The clearest coherence readout needs an Apple Watch; an iPhone camera still gives live pulse and a breathing estimate to work with.",
+    },
+  ],
+  "train-hrv-iphone-camera-no-wearable": [
+    {
+      question: "Can I do HRV biofeedback without a wearable?",
+      answer:
+        "You can start real breathing biofeedback with just an iPhone. The camera reads your pulse by photoplethysmography — a fingertip over the lens — and shows your heart rate and a breathing estimate live, enough to breathe slowly and watch your pulse respond. A true HRV number and the live coherence score need an Apple Watch, but you do not need any wearable to begin.",
+    },
+    {
+      question: "How do I measure my pulse with an iPhone camera?",
+      answer:
+        "Cover both the rear camera lens and its light gently with the pad of a fingertip, hold still (movement ruins an optical reading), rest your hand on something stable, and give it a few seconds to lock on. The camera detects the tiny light changes as blood pulses through your finger and turns them into a live heart-rate signal.",
+    },
+    {
+      question: "Is iPhone camera HRV accurate?",
+      answer:
+        "The camera reliably reads heart rate and estimates breathing, which is enough to practise breathing feedback, but it is more movement-sensitive than a snug wrist sensor and does not produce a true beat-to-beat HRV or coherence score on its own — those need an Apple Watch. Do not compare a camera reading to a watch or ring; pick one source and follow its trend.",
+    },
+    {
+      question: "Do I need to buy a device for breathing biofeedback?",
+      answer:
+        "No — start with the phone in your pocket. The iPhone camera lets you run the core loop (breathe slow, watch your pulse settle) with zero new hardware, so you can find out whether biofeedback helps before spending anything. If it clicks, an Apple Watch later adds continuous pulse, the coherence score and HRV trend. ONDA is free to start and is a self-regulation practice, not a medical device.",
+    },
+  ],
 }
