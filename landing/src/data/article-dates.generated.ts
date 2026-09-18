@@ -49,8 +49,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-17T14:44:39+02:00"
   },
   "app-between-meditation-and-fitness-tracker": {
-    "published": "2026-09-18T23:12:57.179Z",
-    "modified": "2026-09-18T23:12:57.179Z"
+    "published": "2026-09-19T01:18:42+02:00",
+    "modified": "2026-09-19T01:18:42+02:00"
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
@@ -101,8 +101,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-18T21:08:28+02:00"
   },
   "calm-your-nervous-system-down": {
-    "published": "2026-09-18T23:12:14.443Z",
-    "modified": "2026-09-18T23:12:14.443Z"
+    "published": "2026-09-19T01:18:42+02:00",
+    "modified": "2026-09-19T01:18:42+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -268,9 +268,13 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-19T00:55:37+02:00",
     "modified": "2026-09-19T00:55:37+02:00"
   },
+  "how-to-regulate-emotions": {
+    "published": "2026-09-18T23:20:15.928Z",
+    "modified": "2026-09-18T23:20:15.928Z"
+  },
   "how-to-train-your-nervous-system": {
-    "published": "2026-09-18T23:11:31.658Z",
-    "modified": "2026-09-18T23:11:31.658Z"
+    "published": "2026-09-19T01:18:42+02:00",
+    "modified": "2026-09-19T01:18:42+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -491,6 +495,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
     "modified": "2026-09-05T18:33:27+02:00"
+  },
+  "wind-down-before-sleep-breathing": {
+    "published": "2026-09-18T23:19:32.780Z",
+    "modified": "2026-09-18T23:19:32.780Z"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",

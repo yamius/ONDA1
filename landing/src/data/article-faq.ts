@@ -1708,4 +1708,48 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Headspace is a guided-content library with no measurement of your body; Whoop is a measurement device with no in-the-moment practice. A biofeedback app like ONDA fuses the two: it measures your physiology and gives you a practice to change it in the same live loop, plus a structured program to progress through. Different category — a trainer, not a library or a dashboard.",
     },
   ],
+  "wind-down-before-sleep-breathing": [
+    {
+      question: "How do I relax my body before sleep?",
+      answer:
+        "Start a wind-down 30–60 minutes before bed and anchor it with a few minutes of slow, exhale-led breathing, in bed if you like. A long out-breath stimulates the vagus nerve and starts your heart rate falling — the parasympathetic state sleep onset needs. You are not forcing sleep; you are producing the descent that lets it happen. It is a relaxation practice, not a treatment for insomnia.",
+    },
+    {
+      question: "Why is my body still wired at bedtime even when I'm tired?",
+      answer:
+        "Because sleep onset needs a handover from the day's activated state to a calm one, and if work bled late, screens kept you stimulated, or stress never switched off, your sympathetic 'go' system is still running at bedtime. Being tired isn't enough — you have to actively signal the descent, and slow, exhale-led breathing is the most reliable way to do it.",
+    },
+    {
+      question: "What breathing helps you fall asleep?",
+      answer:
+        "Slow breathing with the exhale longer than the inhale, low in the belly, for a few minutes in bed. The long out-breath hands tone to the parasympathetic branch and lowers arousal, which is the state sleep needs. If your mind keeps looping, add cognitive shuffling — drifting through random unrelated words — to crowd out the rumination.",
+    },
+    {
+      question: "How long before bed should I start winding down?",
+      answer:
+        "About 30–60 minutes. A wind-down is a runway, not a cliff: dim the lights and slow down well before the pillow so you arrive already descending, then anchor it with slow breathing. Keep the sequence consistent and your body learns it as a cue and starts the descent on its own. Chronic, disruptive sleeplessness is a matter for a doctor, not an app.",
+    },
+  ],
+  "how-to-regulate-emotions": [
+    {
+      question: "How do I regulate my emotions better?",
+      answer:
+        "Emotional regulation is the skill of re-opening the gap between a trigger and your reaction, not suppressing the feeling. In the moment: take one slow breath with a long exhale to damp the physiological surge, and name the feeling ('I'm angry') to lower its intensity. Train the underlying brake daily with slow breathing when calm. It is a self-regulation practice, not psychiatric treatment.",
+    },
+    {
+      question: "How do I stop reacting so strongly to things?",
+      answer:
+        "Strong reactions happen because a wave of sympathetic activation arrives before your conscious mind votes, so willpower is too late. Reach it through the breath: at the first flicker of the reaction, a long exhale stimulates the vagus nerve and buys a pause in which a chosen response becomes possible. Do it early, before the reaction accelerates, and train the brake daily so the pause is easier to find.",
+    },
+    {
+      question: "How do I calm down before a difficult conversation?",
+      answer:
+        "Take two minutes of slow, exhale-led breathing beforehand so you enter regulated rather than already activated. Lowering your baseline arousal in advance widens the gap between whatever comes up and your response, so you can choose your words instead of reacting from a spike. Naming what you feel first also takes the edge off.",
+    },
+    {
+      question: "Is there an app that trains a calm reaction instead of just measuring stress?",
+      answer:
+        "Yes — that's the difference between a passive stress tracker and a biofeedback trainer. ONDA reads your pulse (iPhone camera or Apple Watch) and shows your heart rhythm settle as you breathe, so you train the calm response and can see it working, rather than just being told you're stressed. The live coherence score needs an Apple Watch, and it is a self-regulation practice, not psychiatric treatment.",
+    },
+  ],
 }
