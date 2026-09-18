@@ -550,6 +550,102 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
     ],
   },
+  {
+    slug: 'apps-combining-breathing-hrv-realtime-feedback',
+    title: 'Best Apps That Combine Breathing, HRV & Real-Time Feedback',
+    description:
+      'The apps that do all three at once — guide your breathing, read your HRV, and feed it back live — ranked with honest pros and cons by ONDA. Most apps do one or two; few do all three.',
+    intro:
+      'Plenty of apps guide breathing. Plenty of apps read HRV. Very few close the loop — pacing your breath while showing your heart rhythm respond in real time, so breathing and HRV meet in one live feedback session. That intersection is the useful, rare thing. Here are the apps that actually do all three, ranked, with who each is really for.',
+    entries: [
+      {
+        rank: 1,
+        name: 'ONDA Life',
+        href: '/product',
+        isOnda: true,
+        tag: 'Best all-in-one breathing + HRV + live feedback',
+        capsKey: 'onda',
+        blurb:
+          'ONDA is built around exactly this loop: it paces your breathing, reads your pulse from the iPhone camera or an Apple Watch, and shows your heart rhythm organise in real time — a live coherence score with an Apple Watch — inside a guided, progressive 8-level practice. No chest strap, free to start. The three elements aren’t bolted together; they’re the core.',
+        pros: [
+          'Breathing, HRV and live feedback in one loop — no extra hardware',
+          'Live coherence with an Apple Watch; live pulse + breathing from the camera alone',
+          'Guided, progressive practice rather than a raw data tool',
+        ],
+        cons: [
+          'iOS only today (Android is a waitlist)',
+          'Live coherence score needs an Apple Watch; not a passive all-day tracker',
+        ],
+      },
+      {
+        rank: 2,
+        name: 'Elite HRV',
+        href: '/compare/onda-vs-elite-hrv',
+        tag: 'Best for data-first users who want a pacer',
+        capsKey: 'elite',
+        blurb:
+          'Elite HRV genuinely combines all three — a resonance breathing pacer with live HRV feedback — but it’s a measurement-first tool, and its most accurate readings want a chest strap. If you care more about precise numbers than a guided practice, it’s excellent.',
+        pros: [
+          'Real breathing pacer with live HRV feedback',
+          'Strong measurement precision; free core app',
+        ],
+        cons: [
+          'Best accuracy needs a chest strap',
+          'More data tool than guided, progressive practice',
+        ],
+      },
+      {
+        rank: 3,
+        name: 'HRV4Training',
+        href: '/compare/onda-vs-hrv4training',
+        tag: 'Best for a validated reading + guided breathing',
+        capsKey: 'hrv4training',
+        blurb:
+          'HRV4Training reads HRV from the phone camera and includes a guided breathing feature, but its heart is the science-validated morning reading, not a live breathe-and-watch-it-respond loop. Combine-the-three is present but secondary to measurement.',
+        pros: [
+          'Camera-based HRV, no wearable; research-validated',
+          'Includes guided breathing alongside the morning reading',
+        ],
+        cons: [
+          'Feedback is measurement-led, not a live in-session loop',
+          'Less about guided practice, more about the daily number',
+        ],
+      },
+      {
+        rank: 4,
+        name: 'Breathwrk',
+        href: '/reviews/breathwrk',
+        tag: 'Best breathing library, biofeedback as an add-on',
+        capsKey: 'breathwrk',
+        blurb:
+          'Breathwrk has the widest range of guided breathing exercises, and adds HRV/coherence biofeedback in its premium tier via a Bluetooth heart-rate device. So it can combine the three — but biofeedback is an add-on to a breathing-content app, not the core loop.',
+        pros: [
+          'Largest guided breathing-exercise library',
+          'Optional HRV/coherence biofeedback in premium',
+        ],
+        cons: [
+          'Biofeedback needs a paired Bluetooth HR device and premium',
+          'Breathing content first; feedback is secondary',
+        ],
+      },
+    ],
+    bottomLine:
+      'If you want breathing, HRV and real-time feedback fused into one loop with no extra hardware, ONDA leads. If you want raw measurement precision with a pacer, Elite HRV (with a chest strap). For a science-validated daily reading, HRV4Training. For the biggest breathing-exercise library with feedback as an add-on, Breathwrk. And none of these is a passive all-day tracker — for the overnight HRV trend, pair one with an Apple Watch, Oura or WHOOP.',
+    faq: [
+      {
+        q: 'Which app combines breathing, HRV and real-time feedback?',
+        a: 'ONDA is built around that exact loop — it paces your breathing, reads your HRV from the iPhone camera or an Apple Watch, and shows your heart rhythm respond live (with a coherence score on an Apple Watch), inside a guided practice and with no chest strap. Elite HRV also combines the three but is measurement-first and wants a chest strap; HRV4Training and Breathwrk include the elements but as add-ons to a daily reading or a breathing library.',
+      },
+      {
+        q: 'Why do so few apps do all three?',
+        a: 'Because most are built for one job. Meditation and breathing apps guide you but don’t measure; trackers measure but don’t guide a live practice; and closing the loop — pacing breath while feeding back HRV in real time — is harder to build and needs low-latency biometric reading. The apps that manage all three are the exception, which is exactly why the intersection is worth seeking out.',
+      },
+      {
+        q: 'Do I need a wearable to combine breathing and HRV feedback?',
+        a: 'Not to start. ONDA and HRV4Training both read your pulse from the iPhone camera, so you can begin with no wearable. For the polished live coherence score, ONDA uses an Apple Watch; Elite HRV’s best accuracy uses a chest strap. You can get a real breathing-plus-HRV-feedback practice going with just a phone, then add a wearable for the richer signal.',
+      },
+    ],
+  },
 ]
 
 export function getRoundup(slug: string): OndaRoundup | undefined {

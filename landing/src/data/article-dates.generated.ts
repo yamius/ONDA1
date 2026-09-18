@@ -269,8 +269,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-19T00:55:37+02:00"
   },
   "how-to-regulate-emotions": {
-    "published": "2026-09-18T23:20:15.928Z",
-    "modified": "2026-09-18T23:20:15.928Z"
+    "published": "2026-09-19T01:24:54+02:00",
+    "modified": "2026-09-19T01:24:54+02:00"
   },
   "how-to-train-your-nervous-system": {
     "published": "2026-09-19T01:18:42+02:00",
@@ -484,6 +484,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-06-04T00:39:42+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
   },
+  "wearables-train-not-just-track": {
+    "published": "2026-09-18T23:26:56.986Z",
+    "modified": "2026-09-18T23:26:56.986Z"
+  },
   "what-is-my-chronotype": {
     "published": "2026-06-04T23:17:31+02:00",
     "modified": "2026-06-06T01:38:51+02:00"
@@ -497,8 +501,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-05T18:33:27+02:00"
   },
   "wind-down-before-sleep-breathing": {
-    "published": "2026-09-18T23:19:32.780Z",
-    "modified": "2026-09-18T23:19:32.780Z"
+    "published": "2026-09-19T01:24:54+02:00",
+    "modified": "2026-09-19T01:24:54+02:00"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",

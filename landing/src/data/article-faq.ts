@@ -1752,4 +1752,26 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Yes — that's the difference between a passive stress tracker and a biofeedback trainer. ONDA reads your pulse (iPhone camera or Apple Watch) and shows your heart rhythm settle as you breathe, so you train the calm response and can see it working, rather than just being told you're stressed. The live coherence score needs an Apple Watch, and it is a self-regulation practice, not psychiatric treatment.",
     },
   ],
+  "wearables-train-not-just-track": [
+    {
+      question: "How do I use my wearable to train, not just track?",
+      answer:
+        "Use the data as a cue for action, and the live signal as a gym. A low HRV or poor-recovery reading should trigger something — an easy day, protected sleep, a down-regulation session — instead of just being noted and forgotten. Better, drive a real-time biofeedback loop from the same pulse sensor: breathe and watch your heart rhythm respond, so you train your nervous system rather than only measure it.",
+    },
+    {
+      question: "What biohacking apps use HRV?",
+      answer:
+        "They split into two camps. Measurement apps and trackers — Oura, WHOOP, Apple Watch — use HRV to report your trend, recovery and baseline. Training apps use HRV as a live signal you act on: ONDA reads your pulse and shows your heart rhythm respond as you breathe, so you train it. The strong biohacking setups use one of each — a tracker for the trend and an active tool for the practice.",
+    },
+    {
+      question: "What's the difference between tracking HRV and training HRV?",
+      answer:
+        "Tracking HRV is passive measurement — a dashboard of the past that's good for spotting trends but does nothing to change them. Training HRV is active: you use a live reading to practise a skill (slow breathing) and watch your nervous system respond in real time, which raises the trainable dimension of HRV over time. Measurement and training are different jobs; the complete loop uses both.",
+    },
+    {
+      question: "How do I build a self-tracking and self-training system?",
+      answer:
+        "Pair the two layers. Keep a passive tracker (Apple Watch, Oura or WHOOP) for the overnight HRV trend and baseline, and add an active training tool that turns a live signal into practice — the part a tracker structurally can't do. Let the data trigger the practice (a low-recovery morning cues a down-regulation session), and train the live signal a few minutes daily. ONDA is the training layer, not a tracker, and not a medical device.",
+    },
+  ],
 }
