@@ -60,6 +60,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-04-21T12:59:22Z",
     "modified": "2026-06-08T10:08:07+02:00"
   },
+  "body-awareness-training-app": {
+    "published": "2026-09-18T22:55:59.537Z",
+    "modified": "2026-09-18T22:55:59.537Z"
+  },
   "body-fat-percentage-composition": {
     "published": "2026-06-04T00:46:04+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
@@ -71,6 +75,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "box-breathing-how-it-works": {
     "published": "2026-06-04T14:36:55+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
+  },
+  "breathing-for-focus-and-attention": {
+    "published": "2026-09-18T22:57:03.371Z",
+    "modified": "2026-09-18T22:57:03.371Z"
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -127,6 +135,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "cold-exposure-vagus-nerve": {
     "published": "2026-09-18T16:27:42+02:00",
     "modified": "2026-09-18T16:27:42+02:00"
+  },
+  "consciousness-training-app": {
+    "published": "2026-09-18T22:55:59.545Z",
+    "modified": "2026-09-18T22:55:59.545Z"
   },
   "cpg-neural-autopilot": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -241,8 +253,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-18T16:27:42+02:00"
   },
   "how-to-raise-hrv-naturally": {
-    "published": "2026-09-18T22:37:58.391Z",
-    "modified": "2026-09-18T22:37:58.391Z"
+    "published": "2026-09-19T00:55:37+02:00",
+    "modified": "2026-09-19T00:55:37+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -449,8 +461,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-06T01:38:51+02:00"
   },
   "what-to-do-after-low-hrv-reading": {
-    "published": "2026-09-18T22:38:41.578Z",
-    "modified": "2026-09-18T22:38:41.578Z"
+    "published": "2026-09-19T00:55:37+02:00",
+    "modified": "2026-09-19T00:55:37+02:00"
   },
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",

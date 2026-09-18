@@ -1510,4 +1510,70 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "You can nudge it in the right direction immediately with slow, exhale-led breathing, which acutely raises HRV within minutes. It won't erase a real recovery deficit, but it shifts your state the right way — and with HRV biofeedback you can watch your rhythm respond, turning a worrying number into a practice you act on instead of a scoreboard you fear.",
     },
   ],
+  "body-awareness-training-app": [
+    {
+      question: "What is the best body awareness app?",
+      answer:
+        "The best body awareness app is one that measures a real physiological signal and shows it to you live — not a vague 'calm score.' Body awareness is interoception, sensing your own internal state, and it improves fastest when you can pair the feeling with a readout. ONDA reads your pulse and breathing from the iPhone camera or an Apple Watch and feeds them back in real time so you learn to feel them. It's an awareness and self-regulation practice, not a medical device.",
+    },
+    {
+      question: "How do I train interoception?",
+      answer:
+        "Make the invisible signal visible, then feel toward it. Watch a real physiological readout — your live pulse or breathing — while you attend to the matching sensation in your body, and repeat it daily. Over weeks the brain builds the map and you begin to feel the shift unaided. Slow, guided breathing is the most reliable lever to practise on because the change is easy to see.",
+    },
+    {
+      question: "Can an interoception app really improve body awareness?",
+      answer:
+        "Yes, within limits. An app can train the perceptual skill by giving you feedback — showing your heartbeat and breath so you learn to sense them — and skills learned with immediate feedback stick fastest. What an app can't do is diagnose, treat, or replace therapy. ONDA is a biofeedback and structured-practice trainer, honest about being a self-regulation practice rather than a medical tool.",
+    },
+    {
+      question: "Is a body awareness app the same as a meditation app?",
+      answer:
+        "Not quite. A typical meditation app is a library of guided audio you trust and follow. A body-awareness (biofeedback) app measures your physiology and shows it back live, so you can see your nervous system respond and learn to feel it. ONDA is the second kind — a feedback instrument with a structured practice path, not a Headspace-style content shelf.",
+    },
+  ],
+  "consciousness-training-app": [
+    {
+      question: "What is a consciousness training app?",
+      answer:
+        "A consciousness training app is a self-awareness trainer, not a mind-expansion tool: it builds three grounded, measurable skills — metacognition (noticing your own mental state as it happens), attention regulation (steering your focus on purpose), and interoception (feeling your body's internal signals). ONDA does this with live biofeedback — it reads your pulse from your iPhone camera or Apple Watch and shows your heart rhythm responding — plus a structured practice program. It is a self-regulation trainer, not a medical device and not a mystical 'consciousness expansion' tool.",
+    },
+    {
+      question: "Is consciousness training the same as consciousness expansion?",
+      answer:
+        "No. 'Consciousness expansion' implies unlocking hidden brain states, raising your vibration, or reaching altered realms — none of which ONDA offers or claims. Consciousness training in the grounded sense is simply building the skill of noticing and steering your own attention and physiological state. It is trainable, measurable, and honest: no mysticism, no nootropic promise, no guaranteed brainwave state.",
+    },
+    {
+      question: "How do you train self-awareness and metacognition?",
+      answer:
+        "You train self-awareness the way you train any skill — with feedback and repetition. The fastest route is to practise against a live signal: when a shift you feel inside also shows up on a screen (like your heart rhythm organising as you breathe), your internal sense gets calibrated and more trustworthy. Add a structured, sequenced practice so the skill compounds in order rather than staying random, and do short daily reps of deliberately steering your attention.",
+    },
+    {
+      question: "Can an app actually measure my state of mind?",
+      answer:
+        "An app can't read your thoughts, but it can measure physiological correlates of your nervous-system state — heart rate, breathing, and heart-rate variability — and render them live so you see your body regulating in real time. Note the honest limits in ONDA: the live coherence score needs an Apple Watch (on the phone camera it shows '--'), it is a proprietary feedback score rather than a clinical HRV value, and it describes your state, never diagnoses it.",
+    },
+  ],
+  "breathing-for-focus-and-attention": [
+    {
+      question: "Can breathing exercises improve focus and concentration?",
+      answer:
+        "Yes, indirectly but powerfully. Slow, exhale-led breathing pulls your autonomic balance toward a calm-alert state — out of the over-aroused, threat-scanning mode where attention fragments and into a steadier band where focus can rest. It also sharpens the brain’s internal error-monitor that catches when you’ve drifted. It steadies the state focus runs on; it’s a self-regulation practice, not a cognitive-enhancement drug.",
+    },
+    {
+      question: "How do I use breathing to focus before work?",
+      answer:
+        "Take two minutes of slow breathing with a longer exhale before a focus block to set a calm-alert state — a deliberate on-ramp beats diving in wired. Mid-task, when attention skids, one slow breath is a micro-reset. Watch for shallow screen-apnea breathing and let it drop low and slow again.",
+    },
+    {
+      question: "Why can’t I focus even when I try hard?",
+      answer:
+        "Because focus that keeps collapsing is usually a state problem, not a willpower one. If your nervous system is over-aroused — from stress, notifications, or shallow screen breathing — the attention spotlight jumps no matter how hard you grit your teeth. The fix is to steady the underlying state (slow breathing) rather than force the spotlight still. If focus problems are running your life, see a professional.",
+    },
+    {
+      question: "Does focus mean holding attention perfectly still?",
+      answer:
+        "No — and that belief makes focus harder. Focus is noticing your attention wandered and bringing it back fast; the mind always drifts. The trainable skill is the return, and every return is a rep. Practising attention on the breath trains exactly that, and doing it with biofeedback lets you see the calm-alert state you’re steering toward.",
+    },
+  ],
 }
