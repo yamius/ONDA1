@@ -2293,7 +2293,9 @@
           "name": "Concentra en la mañana, luego desacelera",
           "text": "Mantén la cafeína en la mañana. Si quieres recuperar la noche, añade una lenta bajada guiada por la exhalación para entregar el sistema nervioso a la recuperación, y confírmalo en tu propia línea base."
         }
-      ]
+      ],
+      "imageAlt": "Corazón humano translúcido y luminoso con una molécula de cafeína disolviéndose en él en ámbar, y una curva nocturna que se mantiene alta en lugar de descender al reposo.",
+      "imageTitle": "La firma nocturna de la cafeína — frecuencia cardíaca en reposo arriba, VFC abajo"
     },
     "social-jet-lag-irregular-sleep": {
       "title": "Jet lag social: por qué una hora de dormir que se mueve se lee como estrés crónico",
@@ -2316,7 +2318,9 @@
           "name": "Añade luz matinal y un ancla vespertina",
           "text": "La luz matinal fija la hora de despertar; una bajada vespertina fija impide que la hora de dormir flote. Juntas estabilizan el reloj y dejan que la VFC nocturna se recupere a tiempo."
         }
-      ]
+      ],
+      "imageAlt": "Figura humana holográfica dentro de un anillo de reloj circadiano desincronizado — un reloj corporal cian desalineado con un arco naranja del horario real y fases lunares alrededor.",
+      "imageTitle": "Jet lag social — una hora de dormir que se mueve se lee como jet lag crónico"
     },
     "eating-late-heart-rate-sleep": {
       "title": "La cena tardía que tu corazón procesa toda la noche",
@@ -2362,7 +2366,9 @@
           "name": "Protege el repunte",
           "text": "Límites firmes al final del trabajo, una desconexión real por la tarde y un sueño protegido le dan a la recuperación un lugar donde ocurrir. Cuando el estrés dirige tu vida, añade atención profesional — la práctica la acompaña, no la sustituye."
         }
-      ]
+      ],
+      "imageAlt": "Sistema nervioso humano translúcido y luminoso con un interruptor de encendido atascado en ON en el tronco encefálico, y una traza de VFC baja y plana que va del día a la noche sin recuperarse.",
+      "imageTitle": "Estrés crónico — el interruptor del sistema nervioso que nunca se apaga"
     },
     "overtraining-hrv-resting-heart-rate": {
       "title": "El sobreentrenamiento tiene un número: cuando tus señales de recuperación se giran",

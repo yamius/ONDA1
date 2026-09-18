@@ -100,6 +100,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/caffeine-hrv-resting-heart-rate.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/caffeine-hrv-resting-heart-rate.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/caffeine-hrv-resting-heart-rate.webp": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/chronic-stress-nervous-system-never-off.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/chronic-stress-nervous-system-never-off.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/chronic-stress-nervous-system-never-off.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/articles/circadian-lighting-dark-therapy-melatonin-optimization.avif": {
     "width": 1024,
     "height": 434
@@ -711,6 +735,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/senolytic-high-dosing-longevity-zombie-cells-purge.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/articles/social-jet-lag-irregular-sleep.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/social-jet-lag-irregular-sleep.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/social-jet-lag-irregular-sleep.webp": {
+    "width": 1672,
+    "height": 941
   },
   "/images/articles/spinal-harddrive-cpg-autonomous-scripts.avif": {
     "width": 1536,

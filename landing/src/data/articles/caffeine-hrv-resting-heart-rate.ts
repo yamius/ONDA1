@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['caffeine-half-life-sleep-pressure', 'heart-rate-variability', 'apple-watch-recovery-hrv-vs-overall-hrv', 'what-your-apple-watch-records', 'sympathetic-nervous-system'],
   introStyle: 'amber',
+  image: '/images/articles/caffeine-hrv-resting-heart-rate.webp',
+  imageAlt:
+    'Glowing translucent human heart with a caffeine molecule dissolving into it in amber, and an overnight curve that stays high instead of dipping into rest.',
+  imageTitle: 'Caffeine’s overnight signature — resting heart rate up, HRV down',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Your caffeine cutoff isn’t a rule from a magazine. It’s a line in your own overnight numbers.',
     link: '/measurements',

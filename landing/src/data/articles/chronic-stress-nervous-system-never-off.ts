@@ -16,6 +16,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['heart-rate-variability', 'cortisol', 'how-to-lower-cortisol', 'vagus-nerve', 'coherent-breathing-guide'],
   introStyle: 'slate',
+  image: '/images/articles/chronic-stress-nervous-system-never-off.webp',
+  imageAlt:
+    'Glowing translucent human nervous system with a power toggle switch stuck ON in the brainstem, and a flat low HRV trace running from day into night that never rebounds.',
+  imageTitle: 'Chronic stress — the nervous-system off-switch that never flips',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The question isn’t how stressed you were today. It’s whether your body ever came back down.',
     link: '/hrv-biofeedback',

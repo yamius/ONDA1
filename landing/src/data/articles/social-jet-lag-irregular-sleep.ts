@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['circadian-rhythm', 'heart-rate-variability', 'how-to-beat-jet-lag', 'what-is-my-chronotype', 'how-much-sleep-do-you-need'],
   introStyle: 'orange',
+  image: '/images/articles/social-jet-lag-irregular-sleep.webp',
+  imageAlt:
+    'Holographic human figure inside a desynced circadian clock ring — a cyan body-clock misaligned with an orange actual-schedule arc, scattered moon phases around.',
+  imageTitle: 'Social jet lag — a bedtime that moves reads as chronic jet lag',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Duration gets all the attention. Regularity is the number that quietly moves your recovery.',
     link: '/measurements',
