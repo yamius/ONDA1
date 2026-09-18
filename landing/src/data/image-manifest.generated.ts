@@ -796,6 +796,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/articles/your-baseline-knows-first.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/your-baseline-knows-first.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/your-baseline-knows-first.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/body-fat-percentage-composition.avif": {
     "width": 1915,
     "height": 821

@@ -125,8 +125,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "cold-exposure-vagus-nerve": {
-    "published": "2026-09-18T14:17:44.020Z",
-    "modified": "2026-09-18T14:17:44.020Z"
+    "published": "2026-09-18T16:27:42+02:00",
+    "modified": "2026-09-18T16:27:42+02:00"
   },
   "cpg-neural-autopilot": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -197,8 +197,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "heart-rate-recovery-fitness-marker": {
-    "published": "2026-09-18T14:16:18.195Z",
-    "modified": "2026-09-18T14:16:18.195Z"
+    "published": "2026-09-18T16:27:42+02:00",
+    "modified": "2026-09-18T16:27:42+02:00"
   },
   "high-blood-pressure-slow-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
@@ -237,8 +237,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "how-to-measure-hrv-consistently": {
-    "published": "2026-09-18T14:19:47.098Z",
-    "modified": "2026-09-18T14:19:47.098Z"
+    "published": "2026-09-18T16:27:42+02:00",
+    "modified": "2026-09-18T16:27:42+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -301,8 +301,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-29T18:05:00+02:00"
   },
   "name-it-to-tame-it-affect-labeling": {
-    "published": "2026-09-18T14:17:00.541Z",
-    "modified": "2026-09-18T14:17:00.541Z"
+    "published": "2026-09-18T16:27:42+02:00",
+    "modified": "2026-09-18T16:27:42+02:00"
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
@@ -333,8 +333,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "nicotine-vaping-hrv-heart-rate": {
-    "published": "2026-09-18T14:19:07.371Z",
-    "modified": "2026-09-18T14:19:07.371Z"
+    "published": "2026-09-18T16:27:42+02:00",
+    "modified": "2026-09-18T16:27:42+02:00"
   },
   "nightly-flush-glymphatic-neural-cache": {
     "published": "2026-03-30T20:04:48Z",
@@ -369,8 +369,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T10:08:07+02:00"
   },
   "respiratory-rate-hidden-signal": {
-    "published": "2026-09-18T14:15:36.975Z",
-    "modified": "2026-09-18T14:15:36.975Z"
+    "published": "2026-09-18T16:27:42+02:00",
+    "modified": "2026-09-18T16:27:42+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
@@ -385,8 +385,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-18T11:01:28+02:00"
   },
   "sitting-all-day-nervous-system": {
-    "published": "2026-09-18T14:18:24.784Z",
-    "modified": "2026-09-18T14:18:24.784Z"
+    "published": "2026-09-18T16:27:42+02:00",
+    "modified": "2026-09-18T16:27:42+02:00"
   },
   "social-jet-lag-irregular-sleep": {
     "published": "2026-09-18T14:42:44+02:00",

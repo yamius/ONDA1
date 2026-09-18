@@ -17,6 +17,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['heart-rate-variability', 'what-your-apple-watch-records', 'apple-watch-recovery-hrv-vs-overall-hrv', 'vagus-nerve', 'coherent-breathing-guide'],
   introStyle: 'indigo',
+  image: '/images/articles/your-baseline-knows-first.webp',
+  imageAlt:
+    'Translucent glowing human torso showing resting heart rate, HRV and breathing rate as a personal baseline corridor, with one signal drifting out of range.',
+  imageTitle: 'Your personal baseline corridor — and the early drift out of it',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A baseline is only useful if something reads it back to you. That’s the whole job of the signal.',
     link: '/measurements',
