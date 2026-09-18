@@ -190,6 +190,19 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'zone-2-training-aerobic-base', publishOn: '2026-09-21' },
   // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
   { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
+  { slug: 'respiratory-rate-hidden-signal', publishOn: '2026-09-18' },
+  { slug: 'heart-rate-recovery-fitness-marker', publishOn: '2026-09-18' },
+  { slug: 'screen-apnea-breathing', publishOn: '2026-09-18' },
+  { slug: 'caffeine-hrv-resting-heart-rate', publishOn: '2026-09-28' },
+  { slug: 'social-jet-lag-irregular-sleep', publishOn: '2026-09-28' },
+  { slug: 'eating-late-heart-rate-sleep', publishOn: '2026-09-28' },
+  { slug: 'chronic-stress-nervous-system-never-off', publishOn: '2026-10-05' },
+  { slug: 'overtraining-hrv-resting-heart-rate', publishOn: '2026-10-05' },
+  { slug: 'sitting-all-day-nervous-system', publishOn: '2026-10-05' },
+  { slug: 'name-it-to-tame-it-affect-labeling', publishOn: '2026-10-12' },
+  { slug: 'cold-exposure-vagus-nerve', publishOn: '2026-10-12' },
+  { slug: 'nicotine-vaping-hrv-heart-rate', publishOn: '2026-10-19' },
+  { slug: 'how-to-measure-hrv-consistently', publishOn: '2026-10-19' },
 ]
 
 /**
@@ -289,8 +302,21 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'vascular-tensegrity-microvascular-mechanics', publishOn: '2026-10-26' },
   { slug: 'ventral-tegmental-core-motivational-salience', publishOn: '2026-10-26' },
   { slug: 'fascial-tensegrity-protocol-myofascial-noise', publishOn: '2026-10-26' },
-  // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
+  // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip, RU trails ES
   { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
+  { slug: 'respiratory-rate-hidden-signal', publishOn: '2026-11-02' },
+  { slug: 'heart-rate-recovery-fitness-marker', publishOn: '2026-11-02' },
+  { slug: 'screen-apnea-breathing', publishOn: '2026-11-02' },
+  { slug: 'caffeine-hrv-resting-heart-rate', publishOn: '2026-11-09' },
+  { slug: 'social-jet-lag-irregular-sleep', publishOn: '2026-11-09' },
+  { slug: 'eating-late-heart-rate-sleep', publishOn: '2026-11-09' },
+  { slug: 'chronic-stress-nervous-system-never-off', publishOn: '2026-11-16' },
+  { slug: 'overtraining-hrv-resting-heart-rate', publishOn: '2026-11-16' },
+  { slug: 'sitting-all-day-nervous-system', publishOn: '2026-11-16' },
+  { slug: 'name-it-to-tame-it-affect-labeling', publishOn: '2026-11-23' },
+  { slug: 'cold-exposure-vagus-nerve', publishOn: '2026-11-23' },
+  { slug: 'nicotine-vaping-hrv-heart-rate', publishOn: '2026-11-30' },
+  { slug: 'how-to-measure-hrv-consistently', publishOn: '2026-11-30' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
