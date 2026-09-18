@@ -41,6 +41,7 @@ import ouraRing5 from './oura-ring-5'
 import whoop5 from './whoop-5-0'
 import appleWatchSeries11 from './apple-watch-series-11'
 import appleWatchSeries12 from './apple-watch-series-12'
+import appleWatchUltra4 from './apple-watch-ultra-4'
 import polarH10 from './polar-h10'
 import garminVenu4 from './garmin-venu-4'
 import samsungGalaxyRing from './samsung-galaxy-ring'
@@ -261,6 +262,7 @@ const ALL_REVIEWS: ToolReview[] = [
   lunaRing,
   appleWatchSeries11,
   appleWatchSeries12,
+  appleWatchUltra4,
   ringconnGen2,
   fitbitCharge6,
   fitbitAir,
