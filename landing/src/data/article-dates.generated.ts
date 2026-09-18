@@ -276,6 +276,14 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-24T10:01:04Z",
     "modified": "2026-06-08T10:08:07+02:00"
   },
+  "meditation-app-with-biofeedback": {
+    "published": "2026-09-18T22:14:23.481Z",
+    "modified": "2026-09-18T22:14:23.481Z"
+  },
+  "meditation-with-apple-watch": {
+    "published": "2026-09-18T22:15:52.055Z",
+    "modified": "2026-09-18T22:15:52.055Z"
+  },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
     "modified": "2026-06-09T14:23:13+02:00"
@@ -399,6 +407,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "spinal-intelligence-decentralized-control": {
     "published": "2026-03-31T22:40:04Z",
     "modified": "2026-06-09T14:23:13+02:00"
+  },
+  "structured-meditation-training-by-levels": {
+    "published": "2026-09-18T22:15:09.817Z",
+    "modified": "2026-09-18T22:15:09.817Z"
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",

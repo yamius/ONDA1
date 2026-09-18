@@ -1400,4 +1400,70 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "No on both counts. HRV is deeply individual, so other people's numbers aren't your target — your own baseline is. And different devices use different sensors and math, so their readings won't match; that's expected, not an error. Pick one source, measure consistently, and follow your own trend rather than any single number.",
     },
   ],
+  "meditation-app-with-biofeedback": [
+    {
+      question: "What is a meditation app with biofeedback?",
+      answer:
+        "It's a meditation app that measures a live physiological signal — usually heart-rate variability (HRV) — and feeds it back to you as you practise, so the session responds to your body. Instead of one-directional guided audio, you watch your own heart rhythm organise as you breathe, which shows you in real time whether the practice is working. ONDA does this from an iPhone camera or an Apple Watch.",
+    },
+    {
+      question: "Which meditation app measures HRV?",
+      answer:
+        "ONDA is built around HRV: it reads your pulse from the iPhone camera (no wearable needed) or an Apple Watch, paces your breathing, and renders your heart rhythm live. The live coherence score unlocks with an Apple Watch; on the camera you still get live pulse and a breathing estimate. It's a mindfulness-and-breathing app where the HRV is the evidence the practice is landing.",
+    },
+    {
+      question: "What makes a meditation app science-based?",
+      answer:
+        "A usable test: it rests on a measurable mechanism and can show that mechanism working on you. Slow, paced breathing raises vagal tone and HRV within minutes — that's well-studied. A science-based app doesn't just tell you that; it measures it on your body and shows the response. The honest boundary is that measuring your physiology isn't diagnosing or treating it — a biofeedback meditation app is a self-regulation tool, not a medical device.",
+    },
+    {
+      question: "Is a biofeedback meditation app better than a guided-meditation library?",
+      answer:
+        "They do different jobs. A library (like Headspace or Calm) gives you breadth of guided audio to listen to. A biofeedback app closes the loop — it measures your nervous system and shows it responding, so you can steer toward calm and learn faster. If you want variety of content, a library; if you want a measurable, feel-it-working practice, biofeedback. Many people use both.",
+    },
+  ],
+  "structured-meditation-training-by-levels": [
+    {
+      question: "What is structured meditation training?",
+      answer:
+        "It's a meditation program built as a progressive path rather than a shelf of standalone sessions: practices come in a deliberate order, difficulty rises with your capacity, and you complete one stage before the next unlocks. Nervous-system regulation is a trainable skill, and like any skill it's built by a sequenced curriculum, not by shuffling random sessions by mood.",
+    },
+    {
+      question: "Which meditation app has a structured, level-by-level program?",
+      answer:
+        "ONDA is designed as a path, not a library — an authored, multi-level curriculum (an 8-level structure of progressively unlocking circuits with named practices, each 3–30 minutes) paired with live HRV biofeedback. Today the early levels are populated — roughly 72 practices are live — with later levels being added over time, so it's a real, climbable, expanding path rather than a catalogue you wander.",
+    },
+    {
+      question: "Can an app train my nervous system or self-regulation?",
+      answer:
+        "It can train the skill of self-regulation — noticing and steering your autonomic state. Slow, paced breathing measurably raises vagal tone and HRV, and that skill compounds with structured, sequenced practice plus live feedback so you can see it working. It's a self-regulation and body-awareness practice, not a medical treatment, and ONDA is not a medical device.",
+    },
+    {
+      question: "Why is a path better than a big library of meditations?",
+      answer:
+        "A library hands the hardest job — building a coherent practice — to the person who came to the app because they didn't know how, so most people drift and quit. A path decides the next step, builds in order, and turns practice into visible progress. Genuine level-by-level programs are rare because they're harder to build, which is why most big-name apps are libraries with a few courses bolted on.",
+    },
+  ],
+  "meditation-with-apple-watch": [
+    {
+      question: "Can I use my Apple Watch for meditation with biofeedback?",
+      answer:
+        "Yes. The Apple Watch reads your pulse continuously, so a biofeedback app can take that signal, pace your breathing, and show your heart rhythm settle in real time as you practise. That live loop turns the Watch from a passive tracker into a meditation coach that tells you, in the moment, whether the practice is landing. ONDA is built to do exactly this.",
+    },
+    {
+      question: "Does the Apple Watch Mindfulness app give live HRV feedback?",
+      answer:
+        "Apple's built-in tools mostly record — a Mindfulness minute, an HRV data point — rather than feed the signal back live while you breathe. Recording tells you what happened; biofeedback shows the change in real time so you can steer it. An app like ONDA uses the Watch's continuous pulse to render a live coherence score during the session.",
+    },
+    {
+      question: "Do I need an Apple Watch, or does the iPhone work too?",
+      answer:
+        "The Apple Watch supplies continuous pulse and the live coherence score — it unlocks the full biofeedback experience. If you only have an iPhone, the camera still reads your pulse and a breathing estimate, but the live coherence score needs the Watch. You don't need a chest strap or any dedicated device either way.",
+    },
+    {
+      question: "How do I get an accurate reading meditating with my Apple Watch?",
+      answer:
+        "Wear the Watch slightly snug so the optical sensor reads cleanly, sit still and let the reading settle for a few seconds before starting, then breathe slowly with a longer exhale and watch the rhythm respond. Chase the smooth, even wave rather than a target number — that state is the one you're training. It's a self-regulation practice, not a medical measurement.",
+    },
+  ],
 }
