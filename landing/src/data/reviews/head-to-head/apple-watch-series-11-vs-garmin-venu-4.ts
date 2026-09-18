@@ -54,10 +54,14 @@ If you are in the iPhone ecosystem and want a watch that handles messaging, paym
 
 ## When Garmin is the right pick
 
-If training is the reason you are buying — structured workouts, recovery hours, body battery, multi-day continuous HRV — Garmin Venu 4 is the right shape. The five-day battery, training-load model, and lack of subscription gating are exactly what training-driven users actually use. For HRV specifically, Garmin is the unambiguous winner here.`,
+If training is the reason you are buying — structured workouts, recovery hours, body battery, multi-day continuous HRV — Garmin Venu 4 is the right shape. The five-day battery, training-load model, and lack of subscription gating are exactly what training-driven users actually use. For HRV specifically, Garmin is the unambiguous winner here.
+
+## 2026 update
+
+This is the Series 11. In September 2026 Apple launched the [Apple Watch Series 12](/reviews/apple-watch-series-12), whose new Health Sensing System samples HRV about 24× more often and adds an RMSSD-based Recovery HRV — narrowing much of the HRV gap to Garmin. If you are buying new, see [Series 12 vs Garmin Venu 4](/reviews/vs/apple-watch-series-12-vs-garmin-venu-4); the Series 11 remains a good value while discounted.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-18',
 }
 
 export default appleWatchVsGarminVenu4

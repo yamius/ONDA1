@@ -64,8 +64,13 @@ Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring wit
   ],
   relatedSlugs: ['amazfit-helio-ring', 'ringconn-gen-2', 'oura-ring-4', 'samsung-galaxy-ring'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Is the Noise Luna Ring a good Oura alternative?", a: "It is a practical, affordable, subscription-free alternative with good sleep tracking and a long total battery via its charging case. ONDA scores it 6.7/10 — a budget Oura alternative, not as refined." },
+    { q: "Does the Noise Luna Ring need a subscription?", a: "No — about $300 one-time with no subscription." },
+    { q: "What is the Noise Luna Ring battery life?", a: "The single-charge battery is modest, but the charging case extends total battery considerably — a practical setup for weeks between wall charges." },
+  ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-18',
 }
 
 export default lunaRing

@@ -64,8 +64,13 @@ Choose the Circular Ring 2 only if you’re an early adopter who wants on-ring E
   ],
   relatedSlugs: ['ringconn-gen-3', 'oura-ring-5', 'ultrahuman-ring-pro', 'samsung-galaxy-ring'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Does the Circular Ring 2 really have ECG on a ring?", a: "Yes — it is the first ring with on-finger ECG and AFib detection, plus an AI coach, all subscription-free. But in testing the software was unfinished and those headline features did not reliably work, so it suits early adopters rather than everyone." },
+    { q: "Is the Circular Ring 2 worth buying?", a: "Only if you are an early adopter excited by on-ring ECG/AFib. ONDA scores it 6.5/10 — genuinely innovative but unpolished. Most people should wait for the software to mature or pick a proven ring like Oura or RingConn." },
+    { q: "How much does the Circular Ring 2 cost and does it need a subscription?", a: "It starts at $349 (Obsidian Black; up to $549 for Gold/Rose Gold), and it is subscription-free." },
+  ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-18',
 }
 
 export default circularRing2

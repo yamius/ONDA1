@@ -54,10 +54,14 @@ If you are on iPhone and want a watch that handles messaging, payments, ECG, fal
 
 ## When Fitbit Charge 6 is the right pick
 
-If HRV and sleep tracking are the reason you are buying and you would rather not pay smartwatch prices for features you will not use, Fitbit Charge 6 is the right shape. The continuous overnight HRV pipeline, the seven-day battery and the cross-platform support are exactly what a tracker should be — at roughly 40% of Apple’s price.`,
+If HRV and sleep tracking are the reason you are buying and you would rather not pay smartwatch prices for features you will not use, Fitbit Charge 6 is the right shape. The continuous overnight HRV pipeline, the seven-day battery and the cross-platform support are exactly what a tracker should be — at roughly 40% of Apple’s price.
+
+## 2026 update
+
+This is the Series 11. In September 2026 Apple launched the [Apple Watch Series 12](/reviews/apple-watch-series-12), whose new Health Sensing System samples HRV about 24× more often and adds an RMSSD-based Recovery HRV — a real step up from the Series 11’s spot-checks. If you are cross-shopping new, the Series 12 is the current Apple pick; the Series 11 remains a good value while discounted.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-18',
 }
 
 export default appleWatchVsFitbit

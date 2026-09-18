@@ -67,8 +67,13 @@ The science behind why HRV is the signal worth tracking.
   ],
   relatedSlugs: ['ringconn-gen-2', 'samsung-galaxy-ring', 'oura-ring-4', 'ultrahuman-ring-pro'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Is the Amazfit Helio Ring subscription-free?", a: "Yes — $199 one-time with no subscription for its core metrics. It is the cheapest capable smart ring; the trade-offs are a short real-world battery and only three sizes." },
+    { q: "Is the Amazfit Helio Ring accurate for HRV and sleep?", a: "Sleep tracking is solid and HRV is decent for the price — ONDA scores it 6.8/10. It is a budget pick; a pricier ring like Oura or RingConn is more accurate and better-featured." },
+    { q: "What are the downsides of the Amazfit Helio Ring?", a: "Only three sizes, so fit is hit-or-miss, and a short single-charge battery. If a size fits and you want the cheapest subscription-free ring, it delivers." },
+  ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-18',
 }
 
 export default amazfitHelioRing

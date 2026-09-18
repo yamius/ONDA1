@@ -67,8 +67,13 @@ The science behind why HRV is the signal worth tracking.
   ],
   relatedSlugs: ['ringconn-gen-2', 'oura-ring-5', 'ultrahuman-ring-pro', 'samsung-galaxy-ring'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Is the RingConn Gen 3 better than the Gen 2?", a: "Yes — the Gen 3 adds a ~10–14 day battery, a first-in-category haptic motor for silent alerts, and new vascular and sleep-apnea insights. ONDA scores it 7.6/10, one of the strongest subscription-free rings." },
+    { q: "Does the RingConn Gen 3 need a subscription?", a: "No — $349 one-time ($369 for metallic finishes) with no subscription, roughly half the long-term cost of an Oura." },
+    { q: "RingConn Gen 3 vs Oura — which is better?", a: "For a feature-rich, subscription-free ring with a long battery and silent haptic alerts, the Gen 3 is the strongest no-membership alternative to Oura. Oura still leads on the most refined app and sleep-stage accuracy." },
+  ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-18',
 }
 
 export default ringconnGen3
