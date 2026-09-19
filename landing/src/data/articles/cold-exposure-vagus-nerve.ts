@@ -16,6 +16,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['vagus-nerve', 'heart-rate-variability', 'coherent-breathing-guide', 'co2-tolerance-expanding-oxygen-limit', 'anxiety-panic-breathing-hrv'],
   introStyle: 'blue',
+  image: '/images/articles/cold-exposure-vagus-nerve.webp',
+  imageAlt:
+    "Figure under a cold cascade with the vagus nerve lit down the spine, a sympathetic spike then a parasympathetic vagal rebound raising HRV.",
+  imageTitle: "Cold and the vagus nerve — sympathetic spike, then vagal rebound",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Cold is a stressor you choose — and the breath is how you stay in charge of it. That’s the whole skill.',
     link: '/hrv-biofeedback',

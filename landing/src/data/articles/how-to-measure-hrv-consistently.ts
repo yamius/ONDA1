@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['hrv-different-every-device', 'heart-rate-variability', 'apple-watch-recovery-hrv-vs-overall-hrv', 'what-your-apple-watch-records', 'your-baseline-knows-first'],
   introStyle: 'indigo',
+  image: '/images/articles/how-to-measure-hrv-consistently.webp',
+  imageAlt:
+    "A fingertip on an iPhone camera turning a noisy, unreliable HRV signal into a clean standardized one — measure the same time, same way.",
+  imageTitle: "Measuring HRV consistently — same time, same way, trend not number",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A single HRV number is almost meaningless. A consistent series is one of the most useful things you own.',
     link: '/measurements',

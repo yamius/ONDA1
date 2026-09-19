@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'zone-2-training-aerobic-base', 'vo2max-increase-aerobic-engine', 'apple-watch-recovery-hrv-vs-overall-hrv', 'what-your-apple-watch-records'],
   introStyle: 'cyan',
+  image: '/images/articles/overtraining-hrv-resting-heart-rate.webp',
+  imageAlt:
+    "Heart rendered as a redlining turbine with a depleted recovery battery, resting heart rate rising and HRV falling — the overtraining signature.",
+  imageTitle: "Overtraining — resting HR up, HRV down, recovery reserve depleted",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Training is the stimulus. Recovery is where the adaptation actually happens — if you let it.',
     link: '/measurements',

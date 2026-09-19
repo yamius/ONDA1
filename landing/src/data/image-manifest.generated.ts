@@ -172,6 +172,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/cold-exposure-vagus-nerve.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/cold-exposure-vagus-nerve.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/cold-exposure-vagus-nerve.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/continuous-hormone-monitoring-chm-biohacking-onda.avif": {
     "width": 1024,
     "height": 434
@@ -328,6 +340,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/heart-rate-recovery-fitness-marker.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/heart-rate-recovery-fitness-marker.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/heart-rate-recovery-fitness-marker.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/articles/how-much-water-should-you-drink.avif": {
     "width": 2688,
     "height": 1152
@@ -375,6 +399,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/how-to-calculate-one-rep-max.webp": {
     "width": 2688,
     "height": 1152
+  },
+  "/images/articles/how-to-measure-hrv-consistently.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-measure-hrv-consistently.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-measure-hrv-consistently.webp": {
+    "width": 2560,
+    "height": 1440
   },
   "/images/articles/hpa-axis-cortisol-aggression.avif": {
     "width": 1584,
@@ -520,6 +556,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/name-it-to-tame-it-affect-labeling.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/name-it-to-tame-it-affect-labeling.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/name-it-to-tame-it-affect-labeling.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/articles/nervous-system-ping-latency.avif": {
     "width": 1168,
     "height": 496
@@ -604,6 +652,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/nicotine-vaping-hrv-heart-rate.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/nicotine-vaping-hrv-heart-rate.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/nicotine-vaping-hrv-heart-rate.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/nightly-flush-glymphatic-neural-cache.avif": {
     "width": 1168,
     "height": 784
@@ -651,6 +711,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/onda-system-feedback-biometric-loop.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/articles/overtraining-hrv-resting-heart-rate.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/overtraining-hrv-resting-heart-rate.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/overtraining-hrv-resting-heart-rate.webp": {
+    "width": 1672,
+    "height": 941
   },
   "/images/articles/phase-locked-acoustic-sleep-delta-wave-stimulation.avif": {
     "width": 1024,
@@ -712,6 +784,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1168,
     "height": 496
   },
+  "/images/articles/respiratory-rate-hidden-signal.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/respiratory-rate-hidden-signal.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/respiratory-rate-hidden-signal.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/articles/rhythmic-entrainment-system-frequencies.avif": {
     "width": 1536,
     "height": 1024
@@ -724,6 +808,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1536,
     "height": 1024
   },
+  "/images/articles/screen-apnea-breathing.avif": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/screen-apnea-breathing.png": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/screen-apnea-breathing.webp": {
+    "width": 1672,
+    "height": 940
+  },
   "/images/articles/senolytic-high-dosing-longevity-zombie-cells-purge.avif": {
     "width": 1024,
     "height": 434
@@ -735,6 +831,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/senolytic-high-dosing-longevity-zombie-cells-purge.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/articles/sitting-all-day-nervous-system.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/sitting-all-day-nervous-system.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/sitting-all-day-nervous-system.webp": {
+    "width": 2560,
+    "height": 1440
   },
   "/images/articles/social-jet-lag-irregular-sleep.avif": {
     "width": 1672,

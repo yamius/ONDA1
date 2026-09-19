@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'screen-apnea-breathing', 'chronic-stress-nervous-system-never-off', 'zone-2-training-aerobic-base', 'coherent-breathing-guide'],
   introStyle: 'slate',
+  image: '/images/articles/sitting-all-day-nervous-system.webp',
+  imageAlt:
+    "Seated holographic figure against an unbroken-hour clock, autonomic balance tilted toward sympathetic and a flat, low HRV trace.",
+  imageTitle: "The chair tax — unbroken sitting tilts autonomic balance and flattens HRV",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'It isn’t that sitting is poison. It’s that unbroken stillness is a signal — and the fix is small and frequent.',
     link: '/measurements',

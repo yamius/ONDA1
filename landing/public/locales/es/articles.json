@@ -2224,7 +2224,9 @@
           "name": "Usa la única constante vital que puedes dirigir",
           "text": "A diferencia de la frecuencia cardíaca, puedes mover la respiración directamente. La respiración lenta guiada por la exhalación baja la frecuencia a propósito, sube el tono vagal y arrastra todo el estado autónomo hacia la calma."
         }
-      ]
+      ],
+      "imageAlt": "Pulmones holográficos luminosos con una onda de respiración estable dentro de una banda personal — la frecuencia respiratoria como constante vital nocturna, estable y de aviso temprano.",
+      "imageTitle": "Frecuencia respiratoria — la constante vital nocturna silenciosa y dirigible"
     },
     "heart-rate-recovery-fitness-marker": {
       "title": "Recuperación de la frecuencia cardíaca: el marcador de forma física oculto en tus datos",
@@ -2247,7 +2249,9 @@
           "name": "Entrena la base aeróbica que hay detrás",
           "text": "El trabajo de base en zona 2 construye el tono parasimpático que hace más rápida la recuperación y eleva el VO₂máx. Protege el sueño y usa la respiración lenta guiada por la exhalación para apoyar el mismo sistema."
         }
-      ]
+      ],
+      "imageAlt": "Corazón luminoso con un tacómetro y un freno vagal verde, y un panel que muestra la frecuencia cardíaca cayendo de un pico de 162 a 68 un minuto después.",
+      "imageTitle": "Recuperación de la frecuencia cardíaca — el freno vagal y la caída de un minuto"
     },
     "screen-apnea-breathing": {
       "title": "Apnea de pantalla: dejas de respirar en tu escritorio",
@@ -2270,7 +2274,9 @@
           "name": "Reentrena el ajuste inconsciente por defecto",
           "text": "El objetivo no es respirar conscientemente todo el día, sino elevar tu respiración base para que el bloqueo deje de ocurrir. Sesiones diarias breves de respiración coherente o en caja construyen un ajuste por defecto que aguanta bajo la concentración."
         }
-      ]
+      ],
+      "imageAlt": "Figura iluminada por una pantalla con una traza de respiración que se aplana en una apnea y luego se reinicia — apnea de pantalla y el reinicio de un minuto.",
+      "imageTitle": "Apnea de pantalla — la respiración contenida ante la pantalla, y el reinicio"
     },
     "caffeine-hrv-resting-heart-rate": {
       "title": "La firma nocturna de la cafeína: qué le hace a tu corazón el café de la tarde",
@@ -2391,7 +2397,9 @@
           "name": "Descarga ante la señal",
           "text": "Cuando tus señales a la baja persisten varios días, inserta recuperación antes de que tu cuerpo la fuerce con una lesión o una enfermedad. La fatiga persistente pese al descanso corresponde a un entrenador o clínico."
         }
-      ]
+      ],
+      "imageAlt": "Corazón como una turbina en zona roja con una batería de recuperación agotada, la frecuencia cardíaca en reposo subiendo y la VFC bajando — la firma del sobreentrenamiento.",
+      "imageTitle": "Sobreentrenamiento — FC en reposo arriba, VFC abajo, reserva de recuperación agotada"
     },
     "sitting-all-day-nervous-system": {
       "title": "El impuesto de la silla: lo que un día sentado le hace a tu sistema nervioso",
@@ -2414,7 +2422,9 @@
           "name": "Construye la base aeróbica por debajo",
           "text": "El entrenamiento en zona 2 constante eleva el tono parasimpático que hace a tu sistema más resiliente a los tramos sedentarios. Ancla las pausas de movimiento a disparadores que ya tienes — llamadas, reuniones, bloques de concentración."
         }
-      ]
+      ],
+      "imageAlt": "Figura holográfica sentada frente a un reloj de una hora sin interrupción, el equilibrio autónomo inclinado hacia lo simpático y una traza de VFC baja y plana.",
+      "imageTitle": "El impuesto de la silla — estar sentado sin pausa inclina el equilibrio autónomo y aplana la VFC"
     },
     "name-it-to-tame-it-affect-labeling": {
       "title": "Nómbralo para domarlo: por qué escribir una emoción le baja el volumen",
@@ -2437,7 +2447,9 @@
           "name": "Deja que se vuelva contexto",
           "text": "Una nota nocturna privada convierte tus números en una historia: cuando tu línea base se desvía, una entrada de dos líneas registra por qué. Mantenla honesta — y para preocupaciones clínicas, úsala junto a la atención profesional, no en su lugar."
         }
-      ]
+      ],
+      "imageAlt": "Cerebro luminoso con una etiqueta que atenúa una amígdala y una corteza prefrontal activada — el etiquetado afectivo reduciendo la activación emocional.",
+      "imageTitle": "Etiquetado afectivo — nombrar una emoción atenúa la amígdala"
     },
     "cold-exposure-vagus-nerve": {
       "title": "El frío y el nervio vago: por qué una ducha fría reinicia tu sistema nervioso",
@@ -2460,7 +2472,9 @@
           "name": "Respeta los límites de seguridad",
           "text": "Nunca te sumerjas en frío solo ni en agua de la que no puedas salir — el jadeo es un riesgo de ahogamiento. El frío es un estresor cardiovascular: con una afección cardíaca, hipertensión, embarazo o cualquier problema médico, consúltalo con un médico primero."
         }
-      ]
+      ],
+      "imageAlt": "Figura bajo una cascada fría con el nervio vago iluminado por la columna, un pico simpático y luego un rebote vagal parasimpático que eleva la VFC.",
+      "imageTitle": "El frío y el nervio vago — pico simpático y luego rebote vagal"
     },
     "nicotine-vaping-hrv-heart-rate": {
       "title": "El impuesto silencioso: qué le hacen la nicotina y el vapeo a tu frecuencia cardíaca y tu VFC",
@@ -2483,7 +2497,9 @@
           "name": "Usa ayuda real, y tus datos como motivación",
           "text": "La dependencia de la nicotina es una adicción genuina — un médico, una línea para dejar de fumar o un programa de cesación hace lo que una app no puede. Deja que tu VFC y tu frecuencia cardíaca en reposo en recuperación sean la razón concreta y personal para seguir."
         }
-      ]
+      ],
+      "imageAlt": "Molécula de nicotina alimentando un goteo continuo hacia un corazón luminoso, con la frecuencia cardíaca y la presión arterial arriba y la VFC abajo — el impuesto autónomo silencioso de la nicotina.",
+      "imageTitle": "Nicotina — un simpaticomimético que sube la frecuencia cardíaca y baja la VFC"
     },
     "how-to-measure-hrv-consistently": {
       "title": "Cómo medir la VFC para que el número signifique algo de verdad",
@@ -2506,7 +2522,9 @@
           "name": "Sigue la tendencia, no el número",
           "text": "Una lectura aislada es ruido; una serie consistente es señal. Observa dónde se sitúa hoy frente a tu propia línea base reciente y hacia dónde se dirige — y no compares la VFC entre dispositivos distintos."
         }
-      ]
+      ],
+      "imageAlt": "Una yema del dedo sobre la cámara de un iPhone convirtiendo una señal de VFC ruidosa y poco fiable en una limpia y estandarizada — mide a la misma hora, del mismo modo.",
+      "imageTitle": "Medir la VFC de forma consistente — misma hora, mismo método, tendencia no número"
     },
     "how-to-raise-hrv-naturally": {
       "title": "Cómo aumentar tu VFC de forma natural",

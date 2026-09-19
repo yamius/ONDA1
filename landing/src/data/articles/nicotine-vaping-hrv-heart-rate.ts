@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'caffeine-hrv-resting-heart-rate', 'your-baseline-knows-first', 'sympathetic-nervous-system', 'coherent-breathing-guide'],
   introStyle: 'amber',
+  image: '/images/articles/nicotine-vaping-hrv-heart-rate.webp',
+  imageAlt:
+    "Nicotine molecule feeding an all-day drip into a glowing heart, heart rate and blood pressure up and HRV down — nicotine's quiet autonomic tax.",
+  imageTitle: "Nicotine — a sympathomimetic that raises heart rate and lowers HRV",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'It feels like it calms you. Your heart rate and HRV tell a different story — and they’re not editorializing.',
     link: '/measurements',

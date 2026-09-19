@@ -15,6 +15,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['anxiety-panic-breathing-hrv', 'how-to-lower-cortisol', 'chronic-stress-nervous-system-never-off', 'vagus-nerve', 'coherent-breathing-guide'],
   introStyle: 'purple',
+  image: '/images/articles/name-it-to-tame-it-affect-labeling.webp',
+  imageAlt:
+    "Glowing brain with a label clamping a dampened amygdala and an engaged prefrontal cortex — affect labeling lowering emotional arousal.",
+  imageTitle: "Affect labeling — naming a feeling dampens the amygdala",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The breath calms the body. Naming the feeling calms the story the body is reacting to. Use both.',
     link: '/measurements',

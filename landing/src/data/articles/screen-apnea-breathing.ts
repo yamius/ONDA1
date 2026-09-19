@@ -16,6 +16,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['coherent-breathing-guide', 'box-breathing-how-it-works', 'heart-rate-variability', 'digital-dementia-attentional-control', 'vagus-nerve'],
   introStyle: 'blue',
+  image: '/images/articles/screen-apnea-breathing.webp',
+  imageAlt:
+    "Figure lit by a screen with a breathing trace that flatlines into a held breath then resets — screen apnea and the one-minute breath reset.",
+  imageTitle: "Screen apnea — the held breath at the desk, and the reset",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The freeze is invisible until something shows you your own breath. Then it’s impossible to unsee.',
     link: '/hrv-biofeedback',

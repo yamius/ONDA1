@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['overtraining-hrv-resting-heart-rate', 'vo2max-increase-aerobic-engine', 'zone-2-training-aerobic-base', 'heart-rate-variability', 'what-your-apple-watch-records'],
   introStyle: 'cyan',
+  image: '/images/articles/heart-rate-recovery-fitness-marker.webp',
+  imageAlt:
+    "Glowing heart with a tachometer and a green vagal brake, and a panel showing heart rate dropping from a 162 peak to 68 one minute later.",
+  imageTitle: "Heart-rate recovery — the vagal brake and the one-minute drop",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Peak heart rate tells you how hard you pushed. Recovery tells you how good your engine actually is.',
     link: '/measurements',

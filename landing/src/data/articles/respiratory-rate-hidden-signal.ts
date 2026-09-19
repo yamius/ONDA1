@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['your-baseline-knows-first', 'heart-rate-variability', 'what-your-apple-watch-records', 'co2-tolerance-expanding-oxygen-limit', 'coherent-breathing-guide'],
   introStyle: 'cyan',
+  image: '/images/articles/respiratory-rate-hidden-signal.webp',
+  imageAlt:
+    "Glowing holographic lungs with a steady breathing waveform inside a personal band — respiratory rate as a stable, early-moving overnight vital.",
+  imageTitle: "Respiratory rate — the quiet, steerable overnight vital",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Three signals sit in your baseline. Two get all the attention. This is the quiet one that often moves first.',
     link: '/measurements',
