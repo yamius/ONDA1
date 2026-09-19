@@ -142,7 +142,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cold-exposure-vagus-nerve": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-18T16:27:42+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "consciousness-training-app": {
     "published": "2026-09-19T01:02:52+02:00",
@@ -222,7 +222,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "heart-rate-recovery-fitness-marker": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-18T16:27:42+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "high-blood-pressure-slow-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
@@ -262,7 +262,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-measure-hrv-consistently": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-18T16:27:42+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "how-to-raise-hrv-naturally": {
     "published": "2026-09-19T00:55:37+02:00",
@@ -346,7 +346,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "name-it-to-tame-it-affect-labeling": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-18T16:27:42+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
@@ -378,7 +378,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nicotine-vaping-hrv-heart-rate": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-18T16:27:42+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "nightly-flush-glymphatic-neural-cache": {
     "published": "2026-03-30T20:04:48Z",
@@ -386,7 +386,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-18T14:42:44+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "phase-locked-acoustic-sleep": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -414,7 +414,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "respiratory-rate-hidden-signal": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-18T16:27:42+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
@@ -422,7 +422,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "screen-apnea-breathing": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-18T14:42:44+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "senolytic-high-dosing-longevity": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -434,7 +434,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "sitting-all-day-nervous-system": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-18T16:27:42+02:00"
+    "modified": "2026-09-19T22:22:12+02:00"
   },
   "social-jet-lag-irregular-sleep": {
     "published": "2026-09-18T14:42:44+02:00",

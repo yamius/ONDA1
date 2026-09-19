@@ -244,6 +244,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/eating-late-heart-rate-sleep.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/eating-late-heart-rate-sleep.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/eating-late-heart-rate-sleep.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/electric-medicine-neuromodulation-vagus-nerve-stimulation.avif": {
     "width": 1024,
     "height": 434

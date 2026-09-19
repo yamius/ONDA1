@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'intermittent-fasting-metabolic-switch', 'circadian-rhythm', 'what-your-apple-watch-records', 'how-much-sleep-do-you-need'],
   introStyle: 'emerald',
+  image: '/images/articles/eating-late-heart-rate-sleep.webp',
+  imageAlt:
+    "Translucent torso with a glowing digestive system working at night and a heart beating slightly elevated — a late meal’s small overnight cost to heart rate and HRV.",
+  imageTitle: "The late dinner your heart works through — a small overnight cost",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The effect of a late meal is small, personal and invisible — three good reasons to read it in your own data.',
     link: '/measurements',
