@@ -147,6 +147,14 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         q: 'Is ONDA HRV biofeedback?',
         a: 'Yes. ONDA is an HRV biofeedback and guided-breathing app: it shows a live coherence score and your heart-rhythm response as you breathe, using the iPhone camera or an Apple Watch, inside a guided practice. It is not a medical device.',
       },
+      {
+        q: 'Is there an app with real-time HRV biofeedback?',
+        a: 'Yes. Real-time HRV biofeedback apps show your heart rhythm respond live as you breathe, rather than just logging HRV overnight. ONDA does this from the iPhone camera or an Apple Watch — a live coherence score with an Apple Watch — with no chest strap and inside a guided practice. Elite HRV and HRV4Training also offer live HRV feedback, more as measurement tools.',
+      },
+      {
+        q: 'What is the best real-time HRV biofeedback app?',
+        a: 'It depends on the job. For an accessible, guided real-time biofeedback practice with no extra hardware, ONDA leads; for measurement precision with a breathing pacer, Elite HRV (best with a chest strap); for a science-validated daily reading with breathing, HRV4Training. The honest trade-offs are laid out in the ranked guide to apps combining breathing, HRV and real-time feedback.',
+      },
     ],
     links: {
       howLink: { path: '/how-it-works', label: 'how ONDA computes it' },
@@ -274,6 +282,14 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         q: 'ONDA — это HRV-биофидбек?',
         a: 'Да. ONDA — приложение HRV-биофидбека и направляемого дыхания: оно показывает живой показатель когерентности и отклик ритма сердца на ваше дыхание, используя камеру iPhone или Apple Watch, внутри направляемой практики. Это не медицинский прибор.',
       },
+      {
+        q: 'Есть ли приложение с HRV-биофидбеком в реальном времени?',
+        a: 'Да. Приложения с real-time HRV-биофидбеком показывают отклик сердечного ритма вживую, пока вы дышите, а не просто пишут HRV за ночь. ONDA делает это с камеры iPhone или Apple Watch (живой показатель когерентности — с Apple Watch), без нагрудного датчика и внутри направляемой практики. Elite HRV и HRV4Training тоже дают живую HRV-обратную связь, скорее как измерительные инструменты.',
+      },
+      {
+        q: 'Какое приложение для real-time HRV-биофидбека лучшее?',
+        a: 'Зависит от задачи. Для доступной направляемой практики биофидбека в реальном времени без лишнего оборудования лидирует ONDA; для точности измерения с дыхательным пейсером — Elite HRV (лучше с нагрудным датчиком); для научно валидированного утреннего замера с дыханием — HRV4Training.',
+      },
     ],
     links: {
       howLink: { path: '/how-it-works', label: 'как ONDA это вычисляет' },
@@ -400,6 +416,14 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
       {
         q: '¿ONDA es biofeedback de VFC?',
         a: 'Sí. ONDA es una app de biofeedback de VFC y respiración guiada: muestra una puntuación de coherencia en vivo y la respuesta de tu ritmo cardíaco mientras respiras, usando la cámara del iPhone o un Apple Watch, dentro de una práctica guiada. No es un dispositivo médico.',
+      },
+      {
+        q: '¿Existe una app con biofeedback de VFC en tiempo real?',
+        a: 'Sí. Las apps de biofeedback de VFC en tiempo real muestran cómo responde tu ritmo cardíaco en vivo mientras respiras, en lugar de solo registrar la VFC por la noche. ONDA lo hace desde la cámara del iPhone o un Apple Watch (con una puntuación de coherencia en vivo con Apple Watch), sin banda de pecho y dentro de una práctica guiada. Elite HRV y HRV4Training también ofrecen feedback de VFC en vivo, más como herramientas de medición.',
+      },
+      {
+        q: '¿Cuál es la mejor app de biofeedback de VFC en tiempo real?',
+        a: 'Depende del objetivo. Para una práctica de biofeedback en tiempo real accesible y guiada sin hardware extra, ONDA lidera; para precisión de medición con un marcapasos de respiración, Elite HRV (mejor con banda de pecho); para una lectura diaria validada científicamente con respiración, HRV4Training.',
       },
     ],
     links: {

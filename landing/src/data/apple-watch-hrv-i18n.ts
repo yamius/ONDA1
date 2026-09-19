@@ -112,6 +112,14 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         q: 'Is Apple Watch HRV biofeedback a medical tool?',
         a: 'No. HRV biofeedback with the Apple Watch is a self-regulation practice, not a diagnostic or medical device. The Watch’s ECG/AFib features are separate, Apple-cleared functions; HRV biofeedback is about training your breathing and nervous system.',
       },
+      {
+        q: 'Which biofeedback apps work with the Apple Watch?',
+        a: 'Apps that use the Apple Watch\'s live pulse for real-time HRV or coherence feedback include ONDA — which turns the Watch into a live biofeedback coach with a coherence score inside a guided practice — alongside measurement-first options like Elite HRV and HRV4Training. Apple\'s built-in Mindfulness and Vitals mostly record rather than feed back live.',
+      },
+      {
+        q: 'Is there a real-time HRV biofeedback app for Apple Watch?',
+        a: 'Yes. ONDA uses the Apple Watch\'s continuous pulse to show your heart rhythm organise into a live coherence score as you breathe, so the Watch becomes a biofeedback coach rather than a passive tracker. You don\'t need a chest strap — the Watch supplies the signal that unlocks the live coherence score. It is a self-regulation practice, not a medical device.',
+      },
     ],
     links: {
       coherenceLink: { path: '/hrv-vs-coherence', label: 'coherence score' },
@@ -208,6 +216,14 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         q: 'HRV-биофидбек на Apple Watch — это медицинский инструмент?',
         a: 'Нет. HRV-биофидбек с Apple Watch — это практика саморегуляции, а не диагностическое или медицинское устройство. Функции ЭКГ/мерцательной аритмии часов — отдельные, разрешённые Apple; HRV-биофидбек — про тренировку дыхания и нервной системы.',
       },
+      {
+        q: 'Какие приложения для биофидбека работают с Apple Watch?',
+        a: 'Приложения, использующие живой пульс Apple Watch для HRV- или когерентного биофидбека в реальном времени, включают ONDA — она превращает часы в живого биофидбек-коуча с показателем когерентности и направляемой практикой — а также измерительные Elite HRV и HRV4Training. Встроенные Apple «Осознанность» и «Показатели» в основном записывают, а не дают живую обратную связь.',
+      },
+      {
+        q: 'Есть ли приложение с real-time HRV-биофидбеком для Apple Watch?',
+        a: 'Да. ONDA использует непрерывный пульс Apple Watch, чтобы показывать, как сердечный ритм собирается в живой показатель когерентности, пока вы дышите, — часы становятся биофидбек-коучем, а не пассивным трекером. Нагрудный датчик не нужен: именно часы дают сигнал для живого показателя когерентности. Это практика саморегуляции, а не медицинский прибор.',
+      },
     ],
     links: {
       coherenceLink: { path: '/hrv-vs-coherence', label: 'показателем когерентности' },
@@ -303,6 +319,14 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
       {
         q: '¿El biofeedback de VFC en Apple Watch es una herramienta médica?',
         a: 'No. El biofeedback de VFC con el Apple Watch es una práctica de autorregulación, no un dispositivo diagnóstico o médico. Las funciones de ECG/FA del reloj son funciones separadas y aprobadas por Apple; el biofeedback de VFC va de entrenar tu respiración y tu sistema nervioso.',
+      },
+      {
+        q: '¿Qué apps de biofeedback funcionan con el Apple Watch?',
+        a: 'Entre las apps que usan el pulso en vivo del Apple Watch para biofeedback de VFC o coherencia en tiempo real está ONDA — que convierte el reloj en un coach de biofeedback con puntuación de coherencia y práctica guiada — junto a opciones centradas en la medición como Elite HRV y HRV4Training. Las apps integradas de Apple (Mindfulness, Vitals) sobre todo registran, no dan feedback en vivo.',
+      },
+      {
+        q: '¿Hay una app de biofeedback de VFC en tiempo real para Apple Watch?',
+        a: 'Sí. ONDA usa el pulso continuo del Apple Watch para mostrar cómo tu ritmo cardíaco se organiza en una puntuación de coherencia en vivo mientras respiras, así el reloj se vuelve un coach de biofeedback en lugar de un rastreador pasivo. No necesitas banda de pecho: el reloj aporta la señal que activa la puntuación de coherencia en vivo. Es una práctica de autorregulación, no un dispositivo médico.',
       },
     ],
     links: {

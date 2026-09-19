@@ -485,8 +485,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "wearables-train-not-just-track": {
-    "published": "2026-09-18T23:26:56.986Z",
-    "modified": "2026-09-18T23:26:56.986Z"
+    "published": "2026-09-19T01:31:51+02:00",
+    "modified": "2026-09-19T01:31:51+02:00"
   },
   "what-is-my-chronotype": {
     "published": "2026-06-04T23:17:31+02:00",
