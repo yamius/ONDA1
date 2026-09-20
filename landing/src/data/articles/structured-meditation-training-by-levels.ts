@@ -17,6 +17,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-app-with-biofeedback', 'coherent-breathing-guide', 'heart-rate-variability', 'active-intervention-vs-passive-tracking', 'hrv-training-nervous-system-latency'],
   introStyle: 'gold',
+  image: '/images/articles/structured-meditation-training-by-levels.webp',
+  imageAlt:
+    "An ascending path of unlocking levels 1 to 8 — early levels lit and active, later ones locked — versus a scattered library shelf. The path beats the library.",
+  imageTitle: "Structured meditation training — why a path beats a library",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A library lets you wander. A path takes you somewhere. Nervous-system skill is built by the path.',
     link: '/product',

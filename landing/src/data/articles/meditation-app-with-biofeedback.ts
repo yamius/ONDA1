@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['active-intervention-vs-passive-tracking', 'heart-rate-variability', 'coherent-breathing-guide', 'what-your-apple-watch-records', 'anxiety-panic-breathing-hrv'],
   introStyle: 'purple',
+  image: '/images/articles/meditation-app-with-biofeedback.webp',
+  imageAlt:
+    "A meditating figure watching their heart rhythm organise into a smooth coherent wave on screen — biofeedback proof versus silent audio-only apps.",
+  imageTitle: "The meditation app that shows you it's working",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Audio asks for faith. Biofeedback gives proof — your own heart rhythm, organising as you breathe.',
     link: '/hrv-biofeedback',

@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-app-with-biofeedback', 'what-your-apple-watch-records', 'hrv-different-every-device', 'heart-rate-variability', 'coherent-breathing-guide'],
   introStyle: 'indigo',
+  image: '/images/articles/train-hrv-iphone-camera-no-wearable.webp',
+  imageAlt:
+    "A fingertip over an iPhone rear camera streaming a clean pulse (PPG) waveform — real breathing biofeedback with no watch, ring or chest strap.",
+  imageTitle: "Train your breathing with just an iPhone — no wearable needed",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The best biofeedback device is the one already in your pocket. Start with the phone; add a watch later.',
     link: '/hrv-biofeedback',

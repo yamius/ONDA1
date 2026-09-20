@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['coherent-breathing-guide', 'resonant-frequency-system-coherence', 'baroreflex-01hz-shift', 'heart-rate-variability', 'how-to-measure-hrv-consistently'],
   introStyle: 'cyan',
+  image: '/images/articles/find-your-resonance-breathing-rate.webp',
+  imageAlt:
+    "A resonance tuner sweeping breathing paces from 4.5 to 7 a minute, the HRV oscillation amplitude peaking into a wide smooth wave at one personal frequency.",
+  imageTitle: "Find your resonance breathing rate — where HRV amplitude peaks",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The perfect breathing pace isn’t a rule from a book — it’s a rate you find by watching your own rhythm.',
     link: '/hrv-biofeedback',

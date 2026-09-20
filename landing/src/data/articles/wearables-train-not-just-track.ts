@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['active-intervention-vs-passive-tracking', 'how-to-train-your-nervous-system', 'app-between-meditation-and-fitness-tracker', 'what-your-apple-watch-records', 'heart-rate-variability'],
   introStyle: 'cyan',
+  image: '/images/articles/wearables-train-not-just-track.webp',
+  imageAlt:
+    "A wearable pouring out a dim mountain of unused data on one side, a bright active training loop turning a live signal into practice on the other.",
+  imageTitle: "Use your wearable to train, not just track",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Data you never act on is just expensive anxiety. The point of the number is the practice it should trigger.',
     link: '/hrv-biofeedback',

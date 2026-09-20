@@ -14,6 +14,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['vagus-nerve-exercises', 'coherent-breathing-guide', 'chronic-stress-nervous-system-never-off', 'anxiety-panic-breathing-hrv', 'vagus-nerve'],
   introStyle: 'slate',
+  image: '/images/articles/calm-your-nervous-system-down.webp',
+  imageAlt:
+    "A figure whose sympathetic branch is stuck on, a single long exhale reaching a glowing vagal switch and the system settling from tense to calm.",
+  imageTitle: "How to calm your nervous system down — the one input you control",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You can’t argue yourself calm. But one long exhale reaches the switch your thoughts can’t.',
     link: '/hrv-biofeedback',

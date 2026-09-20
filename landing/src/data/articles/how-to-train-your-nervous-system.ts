@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['hrv-training-nervous-system-latency', 'vagus-nerve-master-key', 'vagus-nerve-exercises', 'coherent-breathing-guide', 'structured-meditation-training-by-levels'],
   introStyle: 'purple',
+  image: '/images/articles/how-to-train-your-nervous-system.webp',
+  imageAlt:
+    "A glowing nervous system with the vagal parasympathetic brake strengthened like a trained muscle, HRV shown as the scoreboard — nervous-system training.",
+  imageTitle: "How to train your nervous system — strengthen the vagal brake",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You can’t think your way calm — but you can train the system that gets you there. Reps, feedback, progression.',
     link: '/hrv-biofeedback',

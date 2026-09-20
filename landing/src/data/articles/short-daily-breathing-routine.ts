@@ -13,6 +13,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['coherent-breathing-guide', 'box-breathing-how-it-works', 'how-to-raise-hrv-naturally', 'vagus-nerve', 'breathwork-command-line-interface'],
   introStyle: 'emerald',
+  image: '/images/articles/short-daily-breathing-routine.webp',
+  imageAlt:
+    "A compact three-arc breath-cycle ring (arrive / slow / settle) with a soft breathing wave and a row of daily streak dots — five minutes that stick.",
+  imageTitle: "The 5-minute daily breathing routine that actually sticks",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Five minutes you actually do beats thirty you keep skipping. Consistency is the whole game.',
     link: '/hrv-biofeedback',

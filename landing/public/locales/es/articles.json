@@ -1670,7 +1670,9 @@
           "name": "Deja que el tracker señale y la práctica mueva la línea",
           "text": "Lee la tendencia pasiva para decidir cuándo intervenir; juzga el progreso según si tu propia tendencia de VFC en reposo de varias semanas sube, no según ninguna puntuación diaria aislada."
         }
-      ]
+      ],
+      "imageAlt": "Una división: un rastreador pasivo registrando un panel congelado del pasado a la izquierda, un bucle de biofeedback activo respondiendo en vivo a una respiración a la derecha.",
+      "imageTitle": "Intervención activa frente a seguimiento pasivo — cierra el bucle"
     },
     "body-fat-percentage-composition": {
       "title": "% de grasa corporal: leyendo tu capa de composición",
@@ -2549,7 +2551,9 @@
           "name": "Usa el feedback y juzga la tendencia",
           "text": "Observa cómo responde tu ritmo cardíaco con biofeedback de VFC para encontrar tu mejor ritmo y confirmar que funciona. La VFC es ruidosa — mide con constancia y juzga el progreso por la tendencia de tu propia línea base, no por una lectura."
         }
-      ]
+      ],
+      "imageAlt": "Cuatro palancas luminosas — sueño, dejar el alcohol, entrenamiento aeróbico y respiración — alimentando una onda de VFC que se ensancha con las semanas; la respiración es la palanca inmediata.",
+      "imageTitle": "Cómo subir tu VFC — las palancas, y la que funciona ya"
     },
     "what-to-do-after-low-hrv-reading": {
       "title": "Tu lectura de VFC es baja. ¿Y ahora qué?",
@@ -2572,7 +2576,9 @@
           "name": "Regúlate a la baja en el momento con la respiración",
           "text": "La respiración lenta guiada por la exhalación eleva la VFC de forma aguda en minutos. Usa el biofeedback para observar cómo responde tu ritmo, convirtiendo un número preocupante en una práctica sobre la que puedes actuar ahora."
         }
-      ]
+      ],
+      "imageAlt": "Un único punto de VFC bajo por debajo de una banda de corredor personal, con una onda de respiración lenta empujando la siguiente lectura hacia arriba — un bache frente a la tendencia, no un veredicto.",
+      "imageTitle": "Tu lectura de VFC es baja — mira la tendencia, no un número"
     },
     "short-daily-breathing-routine": {
       "title": "La rutina de respiración diaria de 5 minutos que de verdad se mantiene",
@@ -2595,7 +2601,9 @@
           "name": "Usa el feedback para verla funcionar",
           "text": "Observar cómo tu ritmo cardíaco se suaviza con biofeedback de VFC convierte cinco minutos en una victoria visible, que es lo que hace sobrevivir al hábito. Es una práctica de autorregulación, no un tratamiento médico."
         }
-      ]
+      ],
+      "imageAlt": "Un anillo compacto de ciclo respiratorio de tres arcos (llegar / frenar / asentarse) con una onda de respiración suave y una fila de puntos de racha diaria — cinco minutos que se mantienen.",
+      "imageTitle": "La rutina de respiración de 5 minutos que sí se mantiene"
     },
     "find-your-resonance-breathing-rate": {
       "title": "Cómo encontrar tu frecuencia de respiración de resonancia",
@@ -2618,7 +2626,9 @@
           "name": "Hazla tu base de operaciones, pero mantente flexible",
           "text": "Usa tu ritmo de resonancia como el predeterminado para la regulación a la baja y la práctica diaria, revisándolo de vez en cuando a medida que cambia tu fisiología. Persigue el vaivén suave y sin esfuerzo en lugar de un conteo rígido. Es una práctica de autorregulación, no un tratamiento médico."
         }
-      ]
+      ],
+      "imageAlt": "Un afinador de resonancia recorriendo ritmos de 4,5 a 7 respiraciones por minuto, con la amplitud de la oscilación de VFC alcanzando su pico en una onda amplia y suave a una frecuencia personal.",
+      "imageTitle": "Encuentra tu frecuencia de respiración de resonancia — donde la VFC alcanza su pico"
     },
     "train-hrv-iphone-camera-no-wearable": {
       "title": "Entrena tu respiración solo con un iPhone — sin wearable",
@@ -2641,7 +2651,9 @@
           "name": "Mejora solo si encaja",
           "text": "Construye primero el hábito en el teléfono para ver si el biofeedback te ayuda. Si lo hace, añade un Apple Watch para pulso continuo, la puntuación de coherencia y la tendencia de VFC — una mejora natural, no un requisito."
         }
-      ]
+      ],
+      "imageAlt": "Una yema del dedo sobre la cámara trasera de un iPhone emitiendo una onda de pulso (PPG) limpia — biofeedback de respiración real sin reloj, anillo ni banda de pecho.",
+      "imageTitle": "Entrena tu respiración solo con un iPhone — sin wearable"
     },
     "how-to-train-your-nervous-system": {
       "title": "Cómo entrenar tu sistema nervioso",
@@ -2664,7 +2676,9 @@
           "name": "Usa feedback y estructura",
           "text": "El biofeedback de VFC te deja ver el freno parasimpático activarse y encontrar tu mejor respiración; un programa estructurado, nivel a nivel, acumula la habilidad. Juzga el progreso por tu tendencia de VFC y por lo rápido que bajas tras el estrés. Es una práctica, no un tratamiento."
         }
-      ]
+      ],
+      "imageAlt": "Un sistema nervioso luminoso con el freno vagal parasimpático fortalecido como un músculo entrenado, la VFC como marcador — entrenar el sistema nervioso.",
+      "imageTitle": "Cómo entrenar tu sistema nervioso — fortalece el freno vagal"
     },
     "calm-your-nervous-system-down": {
       "title": "Cómo calmar tu sistema nervioso (rápido y de verdad)",
@@ -2687,7 +2701,9 @@
           "name": "Reconstruye el interruptor a diario",
           "text": "Si estás acelerado cada noche, practica la misma respiración lenta a diario — no solo en crisis — para entrenar el regreso parasimpático, y añade límites y sueño protegido. Es una práctica de autorregulación; si te está gobernando la vida, ve a un profesional."
         }
-      ]
+      ],
+      "imageAlt": "Una figura cuya rama simpática está encendida, un solo exhale largo alcanzando un interruptor vagal luminoso y el sistema asentándose de la tensión a la calma.",
+      "imageTitle": "Cómo calmar tu sistema nervioso — la única entrada que controlas"
     },
     "app-between-meditation-and-fitness-tracker": {
       "title": "La app entre una app de meditación y una pulsera de actividad",
@@ -2710,7 +2726,9 @@
           "name": "Espera un entrenador, no una biblioteca ni un panel",
           "text": "El medio es un entrenador de biofeedback — medición y práctica fundidas, idealmente sobre una vía estructurada. Es gratis para empezar y una práctica de autorregulación, no un dispositivo médico; la puntuación de coherencia en directo necesita un Apple Watch."
         }
-      ]
+      ],
+      "imageAlt": "Un teléfono de contenido de meditación y un rastreador de fitness, con un bucle de biofeedback en vivo brillando en el hueco entre ambos — medir y entrenar en un solo bucle.",
+      "imageTitle": "La app entre una app de meditación y un rastreador de fitness"
     },
     "wind-down-before-sleep-breathing": {
       "title": "El apagado nocturno: respira para sacar a tu cuerpo del modo trabajo",
@@ -2733,7 +2751,9 @@
           "name": "Mantenlo constante — y conoce el límite",
           "text": "Un apagado repetido se vuelve una señal que tu cuerpo aprende, así que protege la secuencia por encima de cualquier noche concreta. Es una práctica de relajación, no un tratamiento para el insomnio — la falta de sueño crónica y disruptiva le corresponde a un médico."
         }
-      ]
+      ],
+      "imageAlt": "Una figura nocturna con una curva de activación descendiendo hacia el sueño mientras la respiración lenta con exhalación activa el sistema vagal, una suave luna creciente.",
+      "imageTitle": "La bajada nocturna — respira para salir del modo trabajo"
     },
     "how-to-regulate-emotions": {
       "title": "Cómo regular tus emociones (a la manera del cuerpo primero)",
@@ -2756,7 +2776,9 @@
           "name": "Entrena el freno a diario, no solo en crisis",
           "text": "Un freno parasimpático más fuerte (más VFC) significa recuperación más rápida y menos reactividad. Practica respiración lenta a diario cuando estés en calma, idealmente con feedback para poder ver cómo se entrena la respuesta de calma. Es una práctica de autorregulación, no un tratamiento psiquiátrico — las emociones desbordantes le corresponden a un profesional."
         }
-      ]
+      ],
+      "imageAlt": "El hueco entre un disparador y una reacción abierto por un exhale lento, una amígdala calmada y una etiqueta que nombra la emoción — compra la pausa.",
+      "imageTitle": "Cómo regular tus emociones — compra la pausa"
     },
     "meditation-app-with-biofeedback": {
       "title": "La app de meditación que te demuestra que funciona",
@@ -2779,7 +2801,9 @@
           "name": "Mantenlo honesto — práctica, no tratamiento",
           "text": "Medir tu fisiología no es diagnosticarla. Una app de meditación con biofeedback es una herramienta de autorregulación y entrenamiento, no un dispositivo médico. Júzgala por si sientes y ves cómo responde tu sistema nervioso."
         }
-      ]
+      ],
+      "imageAlt": "Una figura meditando mientras observa su ritmo cardíaco organizarse en una onda coherente y suave en pantalla — la prueba del biofeedback frente a apps solo de audio.",
+      "imageTitle": "La app de meditación que te muestra que funciona"
     },
     "structured-meditation-training-by-levels": {
       "title": "Entrenamiento de meditación estructurado: por qué un camino gana a una biblioteca",
@@ -2802,7 +2826,9 @@
           "name": "Deja que la estructura cargue los días difíciles",
           "text": "En los días de baja motivación, un camino decide el siguiente paso por ti. Eso elimina el \"¿qué hago hoy?\" diario que acaba calladamente con la mayoría de los hábitos de meditación."
         }
-      ]
+      ],
+      "imageAlt": "Un camino ascendente de niveles que se desbloquean del 1 al 8 — los primeros iluminados y activos, los últimos bloqueados — frente a una estantería dispersa. El camino supera a la biblioteca.",
+      "imageTitle": "Entrenamiento de meditación estructurado — por qué un camino supera a una biblioteca"
     },
     "meditation-with-apple-watch": {
       "title": "Meditación con tu Apple Watch: un coach de biofeedback en la muñeca",
@@ -2848,7 +2874,9 @@
           "name": "Mantenlo corto, diario y honesto",
           "text": "Unos minutos al día en la ruta estructurada superan a una sesión larga — la habilidad se construye por repetición. Y mantén el límite: esto es una práctica de autorregulación y conciencia, no terapia somática ni una herramienta médica."
         }
-      ]
+      ],
+      "imageAlt": "Un torso translúcido con el pulso y la respiración normalmente invisibles hechos visibles como un mapa interior luminoso — interocepción, una práctica de conciencia corporal.",
+      "imageTitle": "La app de conciencia corporal que te muestra la señal"
     },
     "consciousness-training-app": {
       "title": "App de entrenamiento de la consciencia: entrena al observador",
@@ -2871,7 +2899,9 @@
           "name": "Mantenlo honesto — práctica, no tratamiento",
           "text": "Medir tu fisiología no es diagnosticarla, y entrenar la atención no es una expansión mística de la consciencia. Una app de consciencia o de autoconciencia es un entrenador de autorregulación, no un dispositivo médico ni una promesa nootrópica. Júzgala por si puedes sentir y ver cambiar tu estado."
         }
-      ]
+      ],
+      "imageAlt": "Un cerebro luminoso con un nodo 'observador' de metacognición y diales de atención e interocepción — entrenamiento de autoconciencia con base, sin misticismo.",
+      "imageTitle": "App de entrenamiento de la consciencia — entrena al observador, sin misticismo"
     },
     "breathing-for-focus-and-attention": {
       "title": "Respirar para el foco: cómo la respiración estabiliza la atención",
@@ -2894,7 +2924,9 @@
           "name": "Entrénalo con retroalimentación",
           "text": "Unos minutos de respiración pautada diaria construyen la habilidad; hacerlo con biofeedback de VFC te deja ver el estado de calma-alerta hacia el que diriges y confirmar que lo has alcanzado. Es una práctica de autorregulación, no una droga cognitiva."
         }
-      ]
+      ],
+      "imageAlt": "Un foco de atención disperso siendo devuelto a un único punto enfocado por una respiración lenta, con una banda de activación de calma-alerta marcada.",
+      "imageTitle": "Respiración para el enfoque — cómo la respiración estabiliza la atención"
     },
     "wearables-train-not-just-track": {
       "title": "Usa tu wearable para entrenar, no solo para rastrear",
@@ -2917,7 +2949,9 @@
           "name": "Empareja medición y entrenamiento",
           "text": "Conserva un rastreador pasivo (Apple Watch, Oura, WHOOP) para la tendencia y añade una herramienta de entrenamiento activa para la práctica — dos trabajos distintos, un bucle completo. ONDA es la capa de entrenamiento, no un rastreador, y no un dispositivo médico."
         }
-      ]
+      ],
+      "imageAlt": "Un wearable derramando una montaña tenue de datos sin usar por un lado, y un bucle de entrenamiento activo y brillante convirtiendo una señal en vivo en práctica por el otro.",
+      "imageTitle": "Usa tu wearable para entrenar, no solo para rastrear"
     },
     "anxiety-panic-breathing-hrv": {
       "title": "La falsa alarma: cómo un ataque de pánico secuestra la respiración — y cómo la respiración la recupera",
@@ -2940,7 +2974,9 @@
           "name": "Sabe cuándo buscar ayuda",
           "text": "Ante pánico frecuente, evitación o ansiedad que altera tu vida, acude a un profesional. La práctica de respiración acompaña a la terapia y la atención — no las reemplaza. El dolor en el pecho por primera vez es una emergencia médica."
         }
-      ]
+      ],
+      "imageAlt": "Un bucle de retroalimentación de pánico descontrolado como una espiral de neón que se aprieta, y un solo exhale lento actuando como freno de anulación manual que empieza a deshacerlo.",
+      "imageTitle": "El pánico secuestra la respiración — y la respiración la recupera"
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "El Apple Watch ahora muestra dos cifras de VFC: Recovery HRV vs Overall HRV",

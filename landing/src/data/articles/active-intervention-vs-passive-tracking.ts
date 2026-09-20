@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Neural Hardware',
   relatedSlugs: ['heart-rate-variability', 'hrv-training-nervous-system-latency', 'hrv-different-every-device'],
   introStyle: 'cyan',
+  image: '/images/articles/active-intervention-vs-passive-tracking.webp',
+  imageAlt:
+    "A split: a passive tracker logging a frozen dashboard of the past on the left, an active biofeedback loop responding live to a breath on the right.",
+  imageTitle: "Active intervention vs passive tracking — close the loop",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A tracker tells you how you recovered. A biofeedback loop lets you do something about it — live.',
     link: '/hrv-biofeedback',

@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['your-baseline-knows-first', 'hrv-different-every-device', 'how-to-measure-hrv-consistently', 'coherent-breathing-guide', 'heart-rate-variability'],
   introStyle: 'cyan',
+  image: '/images/articles/what-to-do-after-low-hrv-reading.webp',
+  imageAlt:
+    "A single low HRV point below a smooth personal-corridor band, a slow-breath wave nudging the next reading back up — one dip against the trend, not a verdict.",
+  imageTitle: "Your HRV reading is low — read the trend, not one number",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A low number is information, not a verdict — and the useful response is a practice, not a panic.',
     link: '/hrv-biofeedback',

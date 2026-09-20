@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'hrv-training-nervous-system-latency', 'coherent-breathing-guide', 'vagus-nerve-exercises', 'how-to-measure-hrv-consistently'],
   introStyle: 'emerald',
+  image: '/images/articles/how-to-raise-hrv-naturally.webp',
+  imageAlt:
+    "Four glowing levers — sleep, cutting alcohol, aerobic training and breath — feeding a heart-rate-variability wave that widens over weeks, the breath lever the immediate one.",
+  imageTitle: "How to raise your HRV — the levers, and the one that works now",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Most HRV levers are slow lifestyle work. Breathing is the one you can pull right now — and watch move.',
     link: '/hrv-biofeedback',

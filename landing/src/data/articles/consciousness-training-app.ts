@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ["structured-meditation-training-by-levels","digital-dementia-attentional-control","anterior-cingulate-core-coherence-monitoring","meditation-app-with-biofeedback","interoceptive-precision-sensor-calibration"],
   introStyle: 'cyan',
+  image: '/images/articles/consciousness-training-app.webp',
+  imageAlt:
+    "A glowing brain with a metacognition 'observer' node and attention and interoception dials — grounded self-awareness training, not mysticism.",
+  imageTitle: "Consciousness training app — train the observer, no mysticism",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "You can't steer a state you can't see. Put your own heart rhythm on screen and train the observer.",
     link: '/hrv-biofeedback',

@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['active-intervention-vs-passive-tracking', 'meditation-app-with-biofeedback', 'structured-meditation-training-by-levels', 'heart-rate-variability', 'how-to-train-your-nervous-system'],
   introStyle: 'gold',
+  image: '/images/articles/app-between-meditation-and-fitness-tracker.webp',
+  imageAlt:
+    "A meditation-content phone and a fitness tracker, with a live biofeedback loop glowing in the gap between them — measure and train in one loop.",
+  imageTitle: "The app between a meditation app and a fitness tracker",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'One app talks and never measures. The other measures and never coaches. The gap between them is the point.',
     link: '/hrv-biofeedback',

@@ -4,6 +4,18 @@
 // can render width/height attributes and the browser reserves space at first
 // paint (CLS = 0).
 export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
+  "/images/articles/active-intervention-vs-passive-tracking.avif": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/active-intervention-vs-passive-tracking.png": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/active-intervention-vs-passive-tracking.webp": {
+    "width": 1672,
+    "height": 940
+  },
   "/images/articles/adaptation-hack-range-fractionation.avif": {
     "width": 1584,
     "height": 672
@@ -64,6 +76,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1168,
     "height": 784
   },
+  "/images/articles/anxiety-panic-breathing-hrv.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/anxiety-panic-breathing-hrv.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/anxiety-panic-breathing-hrv.webp": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/app-between-meditation-and-fitness-tracker.avif": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/app-between-meditation-and-fitness-tracker.png": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/app-between-meditation-and-fitness-tracker.webp": {
+    "width": 1672,
+    "height": 940
+  },
   "/images/articles/baroreflex-01hz-shift.avif": {
     "width": 1536,
     "height": 652
@@ -88,6 +124,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 3168,
     "height": 1344
   },
+  "/images/articles/body-awareness-training-app.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/body-awareness-training-app.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/body-awareness-training-app.webp": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/breathing-for-focus-and-attention.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/breathing-for-focus-and-attention.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/breathing-for-focus-and-attention.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/breathwork-command-line-interface-biohacking.avif": {
     "width": 1024,
     "height": 434
@@ -109,6 +169,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "height": 941
   },
   "/images/articles/caffeine-hrv-resting-heart-rate.webp": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/calm-your-nervous-system-down.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/calm-your-nervous-system-down.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/calm-your-nervous-system-down.webp": {
     "width": 1672,
     "height": 941
   },
@@ -181,6 +253,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "height": 1440
   },
   "/images/articles/cold-exposure-vagus-nerve.webp": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/consciousness-training-app.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/consciousness-training-app.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/consciousness-training-app.webp": {
     "width": 2560,
     "height": 1440
   },
@@ -316,6 +400,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 422
   },
+  "/images/articles/find-your-resonance-breathing-rate.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/find-your-resonance-breathing-rate.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/find-your-resonance-breathing-rate.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/glp-1-biology-muscle-preservation-metabolism.avif": {
     "width": 1024,
     "height": 434
@@ -424,6 +520,42 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/how-to-raise-hrv-naturally.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-raise-hrv-naturally.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-raise-hrv-naturally.webp": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-regulate-emotions.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-regulate-emotions.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-regulate-emotions.webp": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/how-to-train-your-nervous-system.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/how-to-train-your-nervous-system.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/how-to-train-your-nervous-system.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/articles/hpa-axis-cortisol-aggression.avif": {
     "width": 1584,
     "height": 672
@@ -495,6 +627,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/longevity-protocol-biological-clock-reset.webp": {
     "width": 1168,
     "height": 496
+  },
+  "/images/articles/meditation-app-with-biofeedback.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/meditation-app-with-biofeedback.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/meditation-app-with-biofeedback.webp": {
+    "width": 2560,
+    "height": 1440
   },
   "/images/articles/metabolic-flexibility-dual-fuel-glucose-ketones-onda.avif": {
     "width": 1024,
@@ -844,6 +988,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/short-daily-breathing-routine.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/short-daily-breathing-routine.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/short-daily-breathing-routine.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/sitting-all-day-nervous-system.avif": {
     "width": 2560,
     "height": 1440
@@ -892,6 +1048,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/structured-meditation-training-by-levels.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/structured-meditation-training-by-levels.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/structured-meditation-training-by-levels.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/system-stability-serotonin.avif": {
     "width": 1584,
     "height": 672
@@ -915,6 +1083,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/the-acetylcholine-shader.webp": {
     "width": 1584,
     "height": 672
+  },
+  "/images/articles/train-hrv-iphone-camera-no-wearable.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/train-hrv-iphone-camera-no-wearable.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/train-hrv-iphone-camera-no-wearable.webp": {
+    "width": 2560,
+    "height": 1440
   },
   "/images/articles/tsh-energy-governor.avif": {
     "width": 1584,
@@ -940,6 +1120,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/wearables-train-not-just-track.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/wearables-train-not-just-track.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/wearables-train-not-just-track.webp": {
+    "width": 2560,
+    "height": 1440
+  },
   "/images/articles/what-is-my-chronotype.avif": {
     "width": 1584,
     "height": 672
@@ -951,6 +1143,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/what-is-my-chronotype.webp": {
     "width": 1584,
     "height": 672
+  },
+  "/images/articles/what-to-do-after-low-hrv-reading.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/what-to-do-after-low-hrv-reading.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/what-to-do-after-low-hrv-reading.webp": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/wind-down-before-sleep-breathing.avif": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/wind-down-before-sleep-breathing.png": {
+    "width": 2560,
+    "height": 1440
+  },
+  "/images/articles/wind-down-before-sleep-breathing.webp": {
+    "width": 2560,
+    "height": 1440
   },
   "/images/articles/your-baseline-knows-first.avif": {
     "width": 1672,

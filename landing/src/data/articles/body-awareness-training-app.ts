@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ["interoception","interoceptive-precision-sensor-calibration","active-intervention-vs-passive-tracking","heart-rate-variability","coherent-breathing-guide","structured-meditation-training-by-levels"],
   introStyle: 'blue',
+  image: '/images/articles/body-awareness-training-app.webp',
+  imageAlt:
+    "A translucent torso with usually-invisible pulse and breath made visible as a luminous inward map — interoception, a body-awareness practice.",
+  imageTitle: "The body awareness app that shows you the signal",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "You can't steer a signal you can't sense — so watch your pulse and breath organise in real time, and learn to feel it.",
     link: '/hrv-biofeedback',

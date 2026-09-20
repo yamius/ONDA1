@@ -15,6 +15,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['name-it-to-tame-it-affect-labeling', 'anxiety-panic-breathing-hrv', 'calm-your-nervous-system-down', 'vagus-nerve-exercises', 'heart-rate-variability'],
   introStyle: 'rose',
+  image: '/images/articles/how-to-regulate-emotions.webp',
+  imageAlt:
+    "The gap between a trigger and a reaction opened by a slow exhale, a calmed amygdala and a 'label' tag naming the feeling — buy the pause.",
+  imageTitle: "How to regulate your emotions — buy the pause",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Emotional control isn’t willpower — it’s the pause between trigger and reaction, and the breath is how you buy it.',
     link: '/hrv-biofeedback',

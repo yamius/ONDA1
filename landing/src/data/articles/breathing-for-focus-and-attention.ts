@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['digital-dementia-attentional-control', 'coherent-breathing-guide', 'anterior-cingulate-core-coherence-monitoring', 'heart-rate-variability', 'screen-apnea-breathing'],
   introStyle: 'blue',
+  image: '/images/articles/breathing-for-focus-and-attention.webp',
+  imageAlt:
+    "A scattered attention spotlight being pulled back into a single focused point by a slow breath, with a calm-alert arousal band marked.",
+  imageTitle: "Breathing for focus — how the breath steadies attention",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Focus isn’t only a mind trick — it runs on a body state. Steady the breath and the attention follows.',
     link: '/hrv-biofeedback',

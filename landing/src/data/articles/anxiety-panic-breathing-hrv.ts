@@ -17,6 +17,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['heart-rate-variability', 'parasympathetic-nervous-system', 'vagus-nerve', 'box-breathing-how-it-works', 'coherent-breathing-guide'],
   introStyle: 'rose',
+  image: '/images/articles/anxiety-panic-breathing-hrv.webp',
+  imageAlt:
+    "A runaway panic feedback loop as a tightening neon spiral, a single slow exhale acting as a manual-override brake that begins to unwind it.",
+  imageTitle: "Panic hijacks the breath — and the breath takes it back",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The breath is the one manual override on the panic loop. A live feedback loop shows it working.',
     link: '/hrv-biofeedback',

@@ -14,6 +14,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['chronic-stress-nervous-system-never-off', 'coherent-breathing-guide', 'cognitive-shuffling', 'how-much-sleep-do-you-need', 'calm-your-nervous-system-down'],
   introStyle: 'indigo',
+  image: '/images/articles/wind-down-before-sleep-breathing.webp',
+  imageAlt:
+    "An evening figure with an arousal curve descending toward sleep as slow exhale-led breathing engages the vagal system, a soft crescent moon.",
+  imageTitle: "The evening wind-down — breathing your body out of work mode",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Sleep doesn’t start at lights-out — it starts when your body believes the day is actually over.',
     link: '/hrv-biofeedback',
