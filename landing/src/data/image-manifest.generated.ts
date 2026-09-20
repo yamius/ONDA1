@@ -100,6 +100,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1672,
     "height": 940
   },
+  "/images/articles/apple-watch-recovery-hrv-vs-overall-hrv.avif": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/apple-watch-recovery-hrv-vs-overall-hrv.png": {
+    "width": 1672,
+    "height": 940
+  },
+  "/images/articles/apple-watch-recovery-hrv-vs-overall-hrv.webp": {
+    "width": 1672,
+    "height": 940
+  },
   "/images/articles/baroreflex-01hz-shift.avif": {
     "width": 1536,
     "height": 652
@@ -328,6 +340,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/dysautonomia-long-covid-breathing.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/dysautonomia-long-covid-breathing.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/dysautonomia-long-covid-breathing.webp": {
+    "width": 1672,
+    "height": 941
+  },
   "/images/articles/eating-late-heart-rate-sleep.avif": {
     "width": 2560,
     "height": 1440
@@ -457,6 +481,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "height": 941
   },
   "/images/articles/heart-rate-recovery-fitness-marker.webp": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/high-blood-pressure-slow-breathing.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/high-blood-pressure-slow-breathing.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/high-blood-pressure-slow-breathing.webp": {
     "width": 1672,
     "height": 941
   },
@@ -639,6 +675,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/meditation-app-with-biofeedback.webp": {
     "width": 2560,
     "height": 1440
+  },
+  "/images/articles/meditation-with-apple-watch.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/meditation-with-apple-watch.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/meditation-with-apple-watch.webp": {
+    "width": 1672,
+    "height": 941
   },
   "/images/articles/metabolic-flexibility-dual-fuel-glucose-ketones-onda.avif": {
     "width": 1024,
@@ -1155,6 +1203,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/what-to-do-after-low-hrv-reading.webp": {
     "width": 2560,
     "height": 1440
+  },
+  "/images/articles/what-your-apple-watch-records.avif": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/what-your-apple-watch-records.png": {
+    "width": 1672,
+    "height": 941
+  },
+  "/images/articles/what-your-apple-watch-records.webp": {
+    "width": 1672,
+    "height": 941
   },
   "/images/articles/wind-down-before-sleep-breathing.avif": {
     "width": 2560,

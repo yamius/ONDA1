@@ -2157,7 +2157,9 @@
     "what-your-apple-watch-records": {
       "title": "Lo que tu Apple Watch registra a lo largo de dos semanas",
       "description": "Tu Apple Watch registra en silencio tu pulso en reposo, la variabilidad de tu frecuencia cardíaca y tu respiración cada noche. Esto es lo que son esos números — y por qué dos semanas de rango te dicen más que cualquier lectura aislada.",
-      "content": "\n## [ SEÑAL: LO_QUE_EL_RELOJ_YA_SABE ]\n\n> \"No tienes que hacer nada para que un Apple Watch construya un registro de ti. Mientras duermes muestrea tu pulso, cronometra los intervalos entre latidos y cuenta tus respiraciones — noche tras noche. La mayoría de la gente nunca lo mira. Los números ya están ahí; el único truco es leerlos de vuelta como un *rango* en lugar de una cifra única y solitaria.\"\n\n---\n\n## Sección 1: Las tres cosas que registra en reposo\n\nTres señales hacen la mayor parte del trabajo, y las tres se recogen mientras duermes, cuando nada de lo que haces se interpone:\n\n- **Frecuencia cardíaca en reposo** — cuán despacio se asienta tu pulso cuando tu cuerpo no tiene nada que atender. Un número por noche.\n- **Variabilidad de la frecuencia cardíaca (HRV)** — las diminutas diferencias de tiempo entre latido y latido. Sube cuando tu cuerpo está a gusto y se estrecha cuando está en guardia. Consulta [variabilidad de la frecuencia cardíaca](/glossary/heart-rate-variability) para el mecanismo.\n- **Frecuencia respiratoria** — cuántas respiraciones haces por minuto, dormido, sin decidirlo nunca.\n\nNinguna de estas necesita un entrenamiento ni una banda pectoral. Son un subproducto de llevar el reloj a la cama.\n\n## Sección 2: Por qué un solo número no te dice casi nada\n\nUna única frecuencia cardíaca en reposo — \"62 esta mañana\" — es una instantánea sin contexto. ¿Fue baja para ti, o una excepción tranquila? No lo puedes saber a partir de una sola lectura.\n\nDos semanas lo responden. A lo largo de catorce noches obtienes un **valor bajo y uno alto**, y dónde se sitúa la noche típica entre ambos. Ese margen *es* la información: una persona cuya HRV va de 30–120 a lo largo de una quincena vive dos semanas muy distintas de otra que va de 55–70, aunque sus promedios coincidan. El rango es la historia; el promedio la esconde.\n\nPor eso la [herramienta Baseline](/tools/baseline) muestra una barra con tu valor bajo, tu alto y tu promedio marcados — no un veredicto. Es tu propio margen, medido contra nada más que contra sí mismo.\n\n## Sección 3: Qué te dice la amplitud\n\nLa brecha entre tu noche más tranquila y la más inquieta no es una puntuación que superar. Es un registro de la quincena que realmente tuviste — la noche corta, la sesión dura, el resfriado, la buena racha. Las noches en que tu cuerpo se mantuvo en guardia se sitúan en un extremo; las noches en que se soltó del todo, en el otro.\n\nLeer eso de vuelta es todo el propósito: no una nota, sino una imagen de cómo se movió tu propio sistema a lo largo de dos semanas. Lo que una instantánea no puede mostrar — cómo estos números viajan juntos día a día, y qué hacen cuando cambias algo — es para lo que sirve una herramienta en vivo como la app de ONDA.\n\n## Sección 4: Ve el tuyo en treinta segundos\n\nTodo lo anterior ya está en tu iPhone. Un atajo gratuito lee las últimas dos semanas de tu propia Apple Health y te lo dibuja de vuelta — el rango, no un número — sin que una sola cifra salga de tu dispositivo.\n"
+      "content": "\n## [ SEÑAL: LO_QUE_EL_RELOJ_YA_SABE ]\n\n> \"No tienes que hacer nada para que un Apple Watch construya un registro de ti. Mientras duermes muestrea tu pulso, cronometra los intervalos entre latidos y cuenta tus respiraciones — noche tras noche. La mayoría de la gente nunca lo mira. Los números ya están ahí; el único truco es leerlos de vuelta como un *rango* en lugar de una cifra única y solitaria.\"\n\n---\n\n## Sección 1: Las tres cosas que registra en reposo\n\nTres señales hacen la mayor parte del trabajo, y las tres se recogen mientras duermes, cuando nada de lo que haces se interpone:\n\n- **Frecuencia cardíaca en reposo** — cuán despacio se asienta tu pulso cuando tu cuerpo no tiene nada que atender. Un número por noche.\n- **Variabilidad de la frecuencia cardíaca (HRV)** — las diminutas diferencias de tiempo entre latido y latido. Sube cuando tu cuerpo está a gusto y se estrecha cuando está en guardia. Consulta [variabilidad de la frecuencia cardíaca](/glossary/heart-rate-variability) para el mecanismo.\n- **Frecuencia respiratoria** — cuántas respiraciones haces por minuto, dormido, sin decidirlo nunca.\n\nNinguna de estas necesita un entrenamiento ni una banda pectoral. Son un subproducto de llevar el reloj a la cama.\n\n## Sección 2: Por qué un solo número no te dice casi nada\n\nUna única frecuencia cardíaca en reposo — \"62 esta mañana\" — es una instantánea sin contexto. ¿Fue baja para ti, o una excepción tranquila? No lo puedes saber a partir de una sola lectura.\n\nDos semanas lo responden. A lo largo de catorce noches obtienes un **valor bajo y uno alto**, y dónde se sitúa la noche típica entre ambos. Ese margen *es* la información: una persona cuya HRV va de 30–120 a lo largo de una quincena vive dos semanas muy distintas de otra que va de 55–70, aunque sus promedios coincidan. El rango es la historia; el promedio la esconde.\n\nPor eso la [herramienta Baseline](/tools/baseline) muestra una barra con tu valor bajo, tu alto y tu promedio marcados — no un veredicto. Es tu propio margen, medido contra nada más que contra sí mismo.\n\n## Sección 3: Qué te dice la amplitud\n\nLa brecha entre tu noche más tranquila y la más inquieta no es una puntuación que superar. Es un registro de la quincena que realmente tuviste — la noche corta, la sesión dura, el resfriado, la buena racha. Las noches en que tu cuerpo se mantuvo en guardia se sitúan en un extremo; las noches en que se soltó del todo, en el otro.\n\nLeer eso de vuelta es todo el propósito: no una nota, sino una imagen de cómo se movió tu propio sistema a lo largo de dos semanas. Lo que una instantánea no puede mostrar — cómo estos números viajan juntos día a día, y qué hacen cuando cambias algo — es para lo que sirve una herramienta en vivo como la app de ONDA.\n\n## Sección 4: Ve el tuyo en treinta segundos\n\nTodo lo anterior ya está en tu iPhone. Un atajo gratuito lee las últimas dos semanas de tu propia Apple Health y te lo dibuja de vuelta — el rango, no un número — sin que una sola cifra salga de tu dispositivo.\n",
+      "imageAlt": "Un Apple Watch proyectando rangos de 14 días de frecuencia cardíaca en reposo, VFC y frecuencia respiratoria — el rango, no un solo número.",
+      "imageTitle": "Lo que registra tu Apple Watch en dos semanas — el rango que importa"
     },
     "zone-2-training-aerobic-base": {
       "title": "Entrenamiento en Zona 2: instalando tu capa base aeróbica",
@@ -2851,7 +2853,9 @@
           "name": "Mantenlo honesto — práctica, no tratamiento",
           "text": "El Watch y la app leen tu fisiología; no diagnostican ni tratan nada. La puntuación de coherencia en vivo necesita un Apple Watch; una cámara de iPhone sigue dando pulso en vivo y una estimación de la respiración."
         }
-      ]
+      ],
+      "imageAlt": "Un Apple Watch proyectando una onda de coherencia en vivo mientras la persona respira — pulso continuo, sin banda de pecho, el reloj como coach de biofeedback.",
+      "imageTitle": "Meditación con tu Apple Watch — un coach de biofeedback en la muñeca"
     },
     "body-awareness-training-app": {
       "title": "La app de conciencia corporal que te muestra la señal",
@@ -2999,7 +3003,9 @@
           "name": "Deja que la nueva línea base se asiente",
           "text": "Una línea base personal de VFC necesita alrededor de una semana para estabilizarse y más cerca de un mes para ser fiable. Espera que las primeras semanas tras la actualización se vean inestables, y lee la tendencia, no un solo día."
         }
-      ]
+      ],
+      "imageAlt": "Un Apple Watch emitiendo dos ondas de VFC divergentes de los mismos latidos — Recovery HRV (RMSSD) y Overall HRV (SDNN) en escalas distintas, sin mezclar.",
+      "imageTitle": "Dos números de VFC — Recovery HRV (RMSSD) vs Overall HRV (SDNN)"
     },
     "dysautonomia-long-covid-breathing": {
       "title": "El fallo autónomo: lo que el long Covid nos enseñó sobre la VFC y la respiración",
@@ -3022,7 +3028,9 @@
           "name": "Juzga por la tendencia, no por el día",
           "text": "Sigue si tu propia tendencia de VFC en reposo sube a lo largo de semanas. El reentrenamiento autónomo es lento; una sola puntuación diaria dice poco y puede convertirse en un estresor por sí misma."
         }
-      ]
+      ],
+      "imageAlt": "Un sistema nervioso autónomo con dominancia simpática, VFC baja y un latido rígido y metronómico, con respiración pausada suave empujándolo — apoyo, no una cura.",
+      "imageTitle": "El fallo autónomo — VFC, respiración y disautonomía (apoyo, no una cura)"
     },
     "high-blood-pressure-slow-breathing": {
       "title": "La válvula de presión: qué le hace realmente la respiración lenta a la presión arterial",
@@ -3045,7 +3053,9 @@
           "name": "Mide honestamente y escala los síntomas reales",
           "text": "Controla con un manguito validado siguiendo las reglas de reposar-y-repetir. Lecturas muy altas, dolor en el pecho, dolor de cabeza intenso o cambios en la visión son emergencias médicas — no algo que se respire para quitarlo."
         }
-      ]
+      ],
+      "imageAlt": "Un manómetro que baja suavemente mientras la respiración lenta activa el barorreflejo, etiquetado como complemento, no una cura — lo que la respiración lenta hace a la presión arterial.",
+      "imageTitle": "La válvula de presión — respiración lenta y el barorreflejo (complemento, no un tratamiento)"
     }
   },
   "detail": {

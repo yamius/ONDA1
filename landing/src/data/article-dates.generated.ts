@@ -18,7 +18,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "active-intervention-vs-passive-tracking": {
     "published": "2026-09-12T12:28:48+02:00",
-    "modified": "2026-09-12T12:28:48+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
@@ -46,11 +46,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "anxiety-panic-breathing-hrv": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-17T14:44:39+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "app-between-meditation-and-fitness-tracker": {
     "published": "2026-09-19T01:18:42+02:00",
-    "modified": "2026-09-19T01:18:42+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
@@ -66,7 +66,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "body-awareness-training-app": {
     "published": "2026-09-19T01:02:52+02:00",
-    "modified": "2026-09-19T01:02:52+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "body-fat-percentage-composition": {
     "published": "2026-06-04T00:46:04+02:00",
@@ -82,7 +82,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-for-focus-and-attention": {
     "published": "2026-09-19T01:02:52+02:00",
-    "modified": "2026-09-19T01:02:52+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -102,7 +102,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "calm-your-nervous-system-down": {
     "published": "2026-09-19T01:18:42+02:00",
-    "modified": "2026-09-19T01:18:42+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -146,7 +146,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "consciousness-training-app": {
     "published": "2026-09-19T01:02:52+02:00",
-    "modified": "2026-09-19T01:02:52+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "cpg-neural-autopilot": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -206,7 +206,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "find-your-resonance-breathing-rate": {
     "published": "2026-09-19T01:10:36+02:00",
-    "modified": "2026-09-19T01:10:36+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -266,15 +266,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-raise-hrv-naturally": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-09-19T00:55:37+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "how-to-regulate-emotions": {
     "published": "2026-09-19T01:24:54+02:00",
-    "modified": "2026-09-19T01:24:54+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "how-to-train-your-nervous-system": {
     "published": "2026-09-19T01:18:42+02:00",
-    "modified": "2026-09-19T01:18:42+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -314,7 +314,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-app-with-biofeedback": {
     "published": "2026-09-19T00:21:25+02:00",
-    "modified": "2026-09-19T00:21:25+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -430,7 +430,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "short-daily-breathing-routine": {
     "published": "2026-09-19T01:10:36+02:00",
-    "modified": "2026-09-19T01:10:36+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "sitting-all-day-nervous-system": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -450,7 +450,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "structured-meditation-training-by-levels": {
     "published": "2026-09-19T00:21:25+02:00",
-    "modified": "2026-09-19T00:21:25+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
@@ -462,7 +462,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "train-hrv-iphone-camera-no-wearable": {
     "published": "2026-09-19T01:10:36+02:00",
-    "modified": "2026-09-19T01:10:36+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
@@ -486,7 +486,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "wearables-train-not-just-track": {
     "published": "2026-09-19T01:31:51+02:00",
-    "modified": "2026-09-19T01:31:51+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "what-is-my-chronotype": {
     "published": "2026-06-04T23:17:31+02:00",
@@ -494,7 +494,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "what-to-do-after-low-hrv-reading": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-09-19T00:55:37+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
@@ -502,7 +502,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",
-    "modified": "2026-09-19T01:24:54+02:00"
+    "modified": "2026-09-20T21:25:42+02:00"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",

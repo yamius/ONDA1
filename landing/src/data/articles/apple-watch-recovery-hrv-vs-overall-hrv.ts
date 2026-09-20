@@ -19,6 +19,11 @@ const article: Article = {
   category: 'Neural Hardware',
   relatedSlugs: ['heart-rate-variability', 'hrv-different-every-device', 'what-your-apple-watch-records', 'autonomic-nervous-system'],
   introStyle: 'slate',
+  image: '/images/articles/apple-watch-recovery-hrv-vs-overall-hrv.webp',
+  imageAlt:
+    "An Apple Watch emitting two diverging HRV waveforms from the same heartbeats — Recovery HRV (RMSSD) and Overall HRV (SDNN) on different scales, never merged.",
+  imageTitle: "Two HRV numbers — Recovery HRV (RMSSD) vs Overall HRV (SDNN)",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'These are passive overnight metrics. Training your HRV in the moment is a different job entirely.',
     link: '/hrv-biofeedback',

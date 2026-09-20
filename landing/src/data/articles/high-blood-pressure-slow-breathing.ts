@@ -18,6 +18,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['heart-rate-variability', 'autonomic-nervous-system', 'baroreflex-01hz-shift', 'coherent-breathing-guide', 'resonant-frequency-system-coherence'],
   introStyle: 'emerald',
+  image: '/images/articles/high-blood-pressure-slow-breathing.webp',
+  imageAlt:
+    "A pressure gauge easing gently as slow breathing engages the baroreflex, labelled adjunct not a cure — what slow breathing does to blood pressure.",
+  imageTitle: "The pressure valve — slow breathing and the baroreflex (adjunct, not a treatment)",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Slow breathing works on blood pressure by exercising the baroreflex. See that loop live.',
     link: '/hrv-biofeedback',

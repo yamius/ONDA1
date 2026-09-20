@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['what-your-apple-watch-records', 'apple-watch-recovery-hrv-vs-overall-hrv', 'meditation-app-with-biofeedback', 'heart-rate-variability', 'coherent-breathing-guide'],
   introStyle: 'blue',
+  image: '/images/articles/meditation-with-apple-watch.webp',
+  imageAlt:
+    "An Apple Watch projecting a live coherence wave as the wearer breathes — continuous pulse, no chest strap, the Watch as a biofeedback coach.",
+  imageTitle: "Meditation with your Apple Watch — a biofeedback coach on your wrist",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The Watch already reads your heart. Point that signal at your breath and it becomes a coach.',
     link: '/apple-watch-hrv-biofeedback',

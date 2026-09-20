@@ -17,6 +17,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'resting-heart-rate', 'vagus-nerve'],
   introStyle: 'emerald',
+  image: '/images/articles/what-your-apple-watch-records.webp',
+  imageAlt:
+    "An Apple Watch projecting 14-day ranges of resting heart rate, HRV and respiratory rate — the range, not a single number.",
+  imageTitle: "What your Apple Watch records over two weeks — the range that matters",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'See your own two weeks, read off your watch on your iPhone — nothing is uploaded.',
     link: '/tools/baseline',

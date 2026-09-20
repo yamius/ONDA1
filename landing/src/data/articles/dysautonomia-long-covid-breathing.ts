@@ -17,6 +17,11 @@ const article: Article = {
   category: 'OS States',
   relatedSlugs: ['heart-rate-variability', 'autonomic-nervous-system', 'vagus-nerve', 'hrv-training-nervous-system-latency', 'coherent-breathing-guide'],
   introStyle: 'indigo',
+  image: '/images/articles/dysautonomia-long-covid-breathing.webp',
+  imageAlt:
+    "A sympathetic-dominant autonomic nervous system with low HRV and a rigid metronomic heartbeat, gentle paced breathing nudging it — support, not a cure.",
+  imageTitle: "The autonomic glitch — HRV, breathing and dysautonomia (support, not a cure)",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Dysautonomia is a dysregulation of the same system slow breathing trains. See the loop for yourself.',
     link: '/hrv-biofeedback',
