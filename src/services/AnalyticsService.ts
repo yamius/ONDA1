@@ -135,6 +135,11 @@ interface StoredEvent extends AnalyticsEvent {
 }
 
 const QUEUE_KEY = 'onda_analytics_queue';
+// Global analytics opt-out (privacy). '1' = the user turned off "Share anonymous
+// analytics" in Settings → collection stops entirely (no Firebase/GA4, no
+// Supabase). Absent/anything else = collecting (default on). The privacy policy
+// promises this toggle actually stops collection, so track() honours it first.
+const ANALYTICS_OPTOUT_KEY = 'onda_analytics_opt_out';
 const SESSION_KEY = 'onda_session_id';
 const ANONYMOUS_ID_KEY = 'onda_anonymous_id';
 // Internal-traffic marker (own TestFlight/store runs on our own devices).
@@ -534,6 +539,12 @@ class AnalyticsService {
    * Track an analytics event
    */
   async track(eventName: AnalyticsEventName, metadata?: Record<string, unknown>): Promise<void> {
+    // Privacy opt-out honoured first: if the user disabled analytics in Settings,
+    // nothing is queued or mirrored anywhere. Default on (flag absent).
+    try {
+      if (localStorage.getItem(ANALYTICS_OPTOUT_KEY) === '1') return;
+    } catch { /* storage blocked → behave as opted-in */ }
+
     const event: AnalyticsEvent = {
       event_name: eventName,
       metadata,
@@ -707,6 +718,19 @@ class AnalyticsService {
 
 // Singleton instance
 export const analytics = new AnalyticsService();
+
+/** Privacy opt-out state for the Settings toggle. True = analytics disabled. */
+export function isAnalyticsOptedOut(): boolean {
+  try { return localStorage.getItem(ANALYTICS_OPTOUT_KEY) === '1'; } catch { return false; }
+}
+
+/** Turn anonymous analytics on/off. When off, track() stops sending entirely. */
+export function setAnalyticsOptOut(optedOut: boolean): void {
+  try {
+    if (optedOut) localStorage.setItem(ANALYTICS_OPTOUT_KEY, '1');
+    else localStorage.removeItem(ANALYTICS_OPTOUT_KEY);
+  } catch { /* storage blocked → no-op */ }
+}
 
 // Convenience function for direct tracking
 export const trackEvent = (

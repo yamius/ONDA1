@@ -16,6 +16,7 @@ import {
   setStreakEnabled as setStreakEnabledSvc,
 } from '../services/notifications';
 import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotifications';
+import { isAnalyticsOptedOut, setAnalyticsOptOut } from '../services/AnalyticsService';
 import { PermissionsService } from '../services/PermissionsService';
 
 interface SettingsModalProps {
@@ -31,6 +32,8 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
   const [dailyTime, setDailyTime] = useState<string>(() => getDailyTime());
   const [streakEnabled, setStreakEnabled] = useState<boolean>(() => getStreakEnabled());
   const [marketingEnabled, setMarketingEnabled] = useState<boolean>(() => getMarketingOptIn());
+  // Anonymous analytics — default ON. Off = AnalyticsService.track() stops sending.
+  const [analyticsEnabled, setAnalyticsEnabled] = useState<boolean>(() => !isAnalyticsOptedOut());
   const [permDenied, setPermDenied] = useState(false);
   // Persistent-banner intent — iOS decides banner persistence, not the app, so
   // this toggle just remembers the user's wish and deep-links into iOS Settings
@@ -101,6 +104,11 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
 
   // Turning it ON takes the user straight to iOS Settings to set the real
   // "Persistent" banner style; we only persist the intent so the switch sticks.
+  const handleAnalyticsToggle = (next: boolean) => {
+    setAnalyticsEnabled(next);
+    setAnalyticsOptOut(!next); // next = "share analytics" on → opt-out off
+  };
+
   const handlePersistentToggle = async (next: boolean) => {
     setPersistentBanner(next);
     try { localStorage.setItem('onda_persistent_banner', String(next)); } catch { /* ignore */ }
@@ -313,6 +321,50 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
                   {t('settings.reminders_permission_denied', 'Notifications are off. Enable them in iOS Settings → Notifications → ONDA.')}
                 </div>
               )}
+            </div>
+          </div>
+
+          {/* Privacy — anonymous analytics opt-out. Default ON; off stops all
+              collection (AnalyticsService honours the flag). The privacy policy
+              promises this toggle, so it must actually gate collection. */}
+          <div className="pt-4 border-t border-border/10">
+            <div className="flex items-center gap-2 mb-3">
+              <Activity className="w-4 h-4 text-text-muted" />
+              <span className="text-sm font-medium">{t('settings.privacy_section', 'Privacy')}</span>
+            </div>
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex-1 min-w-0">
+                <div className="text-sm text-text-primary">
+                  {t('settings.share_analytics', 'Share anonymous analytics')}
+                </div>
+                <div className="text-xs mt-0.5 text-text-muted">
+                  {t('settings.share_analytics_hint', 'Anonymous, aggregated usage and health signals — never linked to you. Helps improve ONDA. ')}
+                  <a
+                    href="https://onda-life.com/privacy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline text-indigo-400"
+                  >
+                    {t('settings.learn_more', 'Learn more')}
+                  </a>
+                </div>
+              </div>
+              <button
+                type="button"
+                role="switch"
+                aria-checked={analyticsEnabled}
+                onClick={() => handleAnalyticsToggle(!analyticsEnabled)}
+                className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
+                  analyticsEnabled ? 'bg-indigo-500' : 'bg-border/20'
+                }`}
+                data-testid="toggle-analytics"
+              >
+                <span
+                  className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                    analyticsEnabled ? 'translate-x-6' : 'translate-x-1'
+                  }`}
+                />
+              </button>
             </div>
           </div>
 

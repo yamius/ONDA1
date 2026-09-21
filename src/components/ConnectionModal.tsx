@@ -195,7 +195,22 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
               }`}>
                 {t('connection.healthkit_desc', 'Connect Apple Watch and fitness trackers via HealthKit for heart rate monitoring')}
               </p>
-              
+
+              {/* Consent disclosure (privacy): connecting Health is the point where
+                  anonymized aggregated analytics begin. One line + link to the
+                  policy — the low-friction consent mechanism the policy relies on. */}
+              <p className="text-[11px] leading-snug mb-3 text-text-muted">
+                {t('connection.analytics_consent', 'ONDA collects anonymous, aggregated stats — never linked to you. ')}
+                <a
+                  href="https://onda-life.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline text-indigo-400"
+                >
+                  {t('connection.learn_more', 'Learn more')}
+                </a>
+              </p>
+
               {!hkIsMonitoring ? (
                 <div className="flex gap-2 mb-3">
                   <button
