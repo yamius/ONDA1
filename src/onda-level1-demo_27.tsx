@@ -77,6 +77,7 @@ import { useAnalytics } from './hooks/useAnalytics';
 // Singleton, not the hook: the hidden internal-traffic toggle is the only
 // consumer, so it isn't worth widening the useAnalytics() surface for it.
 import { analytics } from './services/AnalyticsService';
+import { ageBand, localHour, localWeekday } from './lib/eventContext';
 import { practiceAttemptsSoFar, daysSinceFirstSeen } from './lib/lifecycleMarkers';
 import {
   trackTenjinPractice,
@@ -294,7 +295,7 @@ const OndaLevel1 = () => {
       setBaseline({ data, source: 'watch' });
       try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
       const coverage = Math.max(0, ...data.readings.map((r) => r.days));
-      track('baseline_shown', { source: 'watch', coverage_days: coverage });
+      track('baseline_shown', { source: 'watch', coverage_days: coverage, age_band: ageBand() });
       // Activation heart (task 87): the baseline actually BUILT from real Health
       // history. Once per install — the entry funnel's success moment.
       try {
@@ -343,7 +344,7 @@ const OndaLevel1 = () => {
         });
         setBaseline({ data, source: 'camera' });
         try { localStorage.setItem('onda_baseline_camera', JSON.stringify(data)); } catch { /* noop */ }
-        track('baseline_shown', { source: 'camera', coverage_days: 1 });
+        track('baseline_shown', { source: 'camera', coverage_days: 1, age_band: ageBand() });
       }
     }
     prevCamStatusRef.current = s;
@@ -866,7 +867,7 @@ const OndaLevel1 = () => {
       const pending: PendingAnomaly = { ...anomaly, at, night, signalCount };
       saveAnomalyState({ lastSignalAt: at, signalCount, pending });
       setAnomalyPrompt(pending);
-      try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
+      try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd, age_band: ageBand(), hour: localHour(), weekday: localWeekday() }); } catch { /* noop */ }
       try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -1318,6 +1319,15 @@ const OndaLevel1 = () => {
   const hrSmoothRef = useRef<number>(-1);
   const hrConfidentTicksRef = useRef<number>(0);
   const hrTotalTicksRef = useRef<number>(0);
+  // Full before/after capture for the anonymized "practice effect" aggregate
+  // (task 562 part 2): last confident pulse, and first/last HRV + respiratory
+  // rate when a real source (watch) supplies them. Camera-only sessions leave
+  // hrv/rr null — the honest gating is "only report what a sensor measured".
+  const lastHrRef = useRef<number | null>(null);
+  const hrvStartRef = useRef<number | null>(null);
+  const hrvEndRef = useRef<number | null>(null);
+  const rrStartRef = useRef<number | null>(null);
+  const rrEndRef = useRef<number | null>(null);
   // Sticky session HR source — the source that actually drove the session, so
   // lifting the finger right before tapping "End" doesn't flip metrics_source
   // (and the result state) to 'simulated' at the finish instant.
@@ -2018,9 +2028,23 @@ const OndaLevel1 = () => {
             hrConfidentTicksRef.current += 1;
             if (freshVitals.hrSource) sessionHrSourceRef.current = freshVitals.hrSource;
             hrSmoothRef.current = hrSmoothRef.current < 0 ? liveHr : hrSmoothRef.current * 0.7 + liveHr * 0.3;
+            // Last confident pulse = honest "after" value for the practice-effect dataset.
+            lastHrRef.current = Math.round(liveHr);
             if (hrConfidentTicksRef.current >= 3) {
               minHrRef.current = minHrRef.current == null ? hrSmoothRef.current : Math.min(minHrRef.current, hrSmoothRef.current);
             }
+          }
+          // HRV / respiratory before-after — only when a real source provides them
+          // (watch). First non-null = start, latest non-null = end.
+          if (freshVitals.hrv != null) {
+            if (hrvStartRef.current == null) hrvStartRef.current = Math.round(freshVitals.hrv);
+            hrvEndRef.current = Math.round(freshVitals.hrv);
+          }
+          // Respiratory rate lives on the vitals object as `br` (breath rate);
+          // event params keep the task's `rr_*` naming.
+          if (freshVitals.br != null) {
+            if (rrStartRef.current == null) rrStartRef.current = Math.round(freshVitals.br);
+            rrEndRef.current = Math.round(freshVitals.br);
           }
         }
 
@@ -3282,6 +3306,11 @@ const OndaLevel1 = () => {
     hrConfidentTicksRef.current = 0;
     hrTotalTicksRef.current = 0;
     sessionHrSourceRef.current = null;
+    lastHrRef.current = null;
+    hrvStartRef.current = null;
+    hrvEndRef.current = null;
+    rrStartRef.current = null;
+    rrEndRef.current = null;
     setHonestResult(null);
     setMeetsArtifactRequirements(false); // Reset artifact validation
     setCameraOfferDismissed(false); // re-offer camera each new practice
@@ -3420,12 +3449,29 @@ const OndaLevel1 = () => {
     const resultHrStart = resultState === 'B' ? hrStart : null;
     const resultHrMin = resultState === 'B' ? hrMin : null;
     setHonestResult({ state: resultState, hrStart: resultHrStart, hrMin: resultHrMin });
+    // Dataset before/after (task 562 part 2): raw start/min/end for ANY real-sensor
+    // session (not just the B "clean drop" screen gate), so the anonymized
+    // "practice lowers pulse by X" aggregate includes non-responders too. The
+    // on-screen honest result above stays B-gated — this only enriches analytics.
+    // Everything is null for simulated sessions (never fabricated numbers).
+    const isRealSensor = metricsSource !== 'simulated';
+    const dsHrStart = isRealSensor && hrStart != null ? Math.round(hrStart) : undefined;
+    const dsHrMin = isRealSensor && hrMin != null ? hrMin : undefined;
+    const dsHrEnd = isRealSensor && lastHrRef.current != null ? lastHrRef.current : undefined;
     track('results_view', {
       metrics_source: metricsSource,
       time_percent: Math.round(timePercent * 100),
       result_state: resultState,
-      hr_start: resultHrStart ?? undefined,
-      hr_min: resultHrMin ?? undefined,
+      hr_start: dsHrStart,
+      hr_min: dsHrMin,
+      hr_end: dsHrEnd,
+      hrv_start: hrvStartRef.current ?? undefined,
+      hrv_end: hrvEndRef.current ?? undefined,
+      rr_start: rrStartRef.current ?? undefined,
+      rr_end: rrEndRef.current ?? undefined,
+      age_band: ageBand(),
+      hour: localHour(),
+      weekday: localWeekday(),
       is_first: cameFromFirstRun,
     });
 

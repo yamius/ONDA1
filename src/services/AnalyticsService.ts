@@ -34,7 +34,7 @@ export type AnalyticsEventName =
   // onboarding_complete{completed_via}. The 3-screen tutorial (Menu→Intro) emits
   // the same events with source:'menu' so manual replays don't pollute the funnel.
   | 'first_practice_complete'         // value-moment; first-ever valid completion
-  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, result_state (A|B|C), [hr_start, hr_min], is_first
+  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, result_state (A|B|C), is_first; dataset (real-sensor only): hr_start, hr_min, hr_end, hrv_start/hrv_end + rr_start/rr_end (watch only), age_band, hour, weekday
   | 'sign_up'
   | 'sign_in'
   // Permissions
@@ -67,7 +67,7 @@ export type AnalyticsEventName =
   | 'first_signal_practice'          // started the offered practice from the first signal — params: metric, color.
   | 'first_signal_dismissed'         // acknowledged/recorded the first signal without practising — params: metric, color.
   // Baseline (retention — Health-baseline onboarding)
-  | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
+  | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera), age_band. Declared now; fired in Phase 2.
   | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag. Lets us see which numbers Health actually gave without a device session.
   | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
   // Diary (retention step 3 — local-first day notes)
@@ -75,7 +75,7 @@ export type AnalyticsEventName =
   | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
   | 'diary_synced'                   // local drafts migrated into Supabase on sign-in — params: count.
   // Anomaly trigger (retention step 4 — baseline deviation → diary prompt)
-  | 'anomaly_detected'               // a personal corridor caught a deviation — params: metric, direction, magnitude_sd.
+  | 'anomaly_detected'               // a personal corridor caught a deviation — params: metric, direction, magnitude_sd, age_band, hour, weekday.
   | 'anomaly_prompt_shown'           // the in-app "record your day" prompt was shown — params: metric.
   | 'anomaly_prompt_answered'        // user wrote an entry from the prompt — params: metric.
   | 'anomaly_prompt_dismissed'       // user dismissed the prompt without writing — params: metric.

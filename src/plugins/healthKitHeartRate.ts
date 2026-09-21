@@ -111,6 +111,10 @@ export interface HealthKitHeartRatePlugin {
   isAvailable(): Promise<{ available: boolean }>;
   requestAuthorization(): Promise<{ authorized: boolean }>;
   requestFullAuthorization(): Promise<{ authorized: boolean }>;
+  /** Read date of birth from Health ONCE and return only a coarse 10-year age band
+   *  (`20-29`…`60+`, `under-20`, or `unknown`). The exact date/age never leaves native —
+   *  only the band, for anonymized aggregate analytics. `unknown` when unset/unauthorized. */
+  getAgeBand(): Promise<{ ageBand: string }>;
   queryHeartRate(options?: { limit?: number; minutesAgo?: number }): Promise<QueryHeartRateResult>;
   queryAllHealthData(): Promise<HealthKitDataResult>;
   querySleepHistory(options?: { days?: number }): Promise<SleepHistoryResult>;

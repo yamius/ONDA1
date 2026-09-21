@@ -4,6 +4,7 @@ import HealthKitHeartRate, { HealthKitDataResult } from '../plugins/healthKitHea
 import { rhythmStore } from '../sleep/rhythm';
 import { trackTenjinPermission } from '../lib/tenjin';
 import { trackEvent } from '../services/AnalyticsService';
+import { primeAgeBand } from '../lib/eventContext';
 
 interface UseHealthKitDataReturn {
   data: HealthKitDataResult | null;
@@ -60,6 +61,10 @@ export function useHealthKitData(): UseHealthKitDataReturn {
       setIsLoading(true);
       const result = await HealthKitHeartRate.requestFullAuthorization();
       setIsAuthorized(result.authorized);
+      // Cache the coarse age band (10-year bucket) once auth is granted, so
+      // analytics events can attach `age_band` synchronously. Only the band is
+      // stored — the exact date of birth stays native. Best-effort, never blocks.
+      if (result.authorized) { void primeAgeBand(); }
       // Firebase health_permission — deduped so a re-checking hook can't spam it
       // (was ~15 events/user). Fire only when the granted state actually changes.
       const _granted = !!result.authorized;

@@ -14,6 +14,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "isAvailable", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "requestAuthorization", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "requestFullAuthorization", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "getAgeBand", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryHeartRate", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryAllHealthData", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "querySleepHistory", returnType: CAPPluginReturnPromise),
@@ -275,7 +276,19 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         }
 
         typesToRead.insert(HKObjectType.categoryType(forIdentifier: .sleepAnalysis)!)
-        
+
+        // Date of birth — a CHARACTERISTIC type, so it rides in the SAME already-shown
+        // Health dialog as one extra line (no new screen/prompt). Read once, off-device
+        // only as a 10-year age BAND (getAgeBand below) — the exact date is never read
+        // into JS, stored, or sent. Powers anonymized "by age" aggregates.
+        // ⚠️ Adding this means age is read from Health: the privacy policy must cover
+        // "anonymized aggregated analytics for research, including age band from Health",
+        // and NSHealthShareUsageDescription already covers the Health read. No new
+        // App Privacy "Fitness" type — date of birth is not a fitness quantity.
+        if let dob = HKObjectType.characteristicType(forIdentifier: .dateOfBirth) {
+            typesToRead.insert(dob)
+        }
+
         healthStore.requestAuthorization(toShare: nil, read: typesToRead) { success, error in
             DispatchQueue.main.async {
                 if let error = error {
@@ -286,7 +299,41 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
             }
         }
     }
-    
+
+    /// Read date of birth from Health ONCE and return only a coarse 10-year age band
+    /// (`20-29`, `30-39`, `40-49`, `50-59`, `60+`, `under-20`, or `unknown`). The exact
+    /// date and exact age never leave native — only the band string, for anonymized
+    /// aggregate analytics. Returns `unknown` when dob is unset, unauthorized, or on any error.
+    @objc func getAgeBand(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else {
+            call.resolve(["ageBand": "unknown"])
+            return
+        }
+        do {
+            let dob = try healthStore.dateOfBirthComponents()
+            let calendar = Calendar(identifier: .gregorian)
+            guard let birthDate = calendar.date(from: dob) else {
+                call.resolve(["ageBand": "unknown"])
+                return
+            }
+            let years = calendar.dateComponents([.year], from: birthDate, to: Date()).year ?? -1
+            let band: String
+            switch years {
+            case ..<0:    band = "unknown"     // unparseable / future date
+            case 0..<20:  band = "under-20"    // kept distinct so minors are excludable
+            case 20..<30: band = "20-29"
+            case 30..<40: band = "30-39"
+            case 40..<50: band = "40-49"
+            case 50..<60: band = "50-59"
+            default:      band = "60+"
+            }
+            call.resolve(["ageBand": band])
+        } catch {
+            // Not authorized, dob not set, or read failed → no signal, not an error.
+            call.resolve(["ageBand": "unknown"])
+        }
+    }
+
     @objc func queryAllHealthData(_ call: CAPPluginCall) {
         guard HKHealthStore.isHealthDataAvailable() else {
             call.reject("HealthKit is not available")
