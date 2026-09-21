@@ -20,6 +20,8 @@ const article: Article = {
   imageAlt:
     'Glowing translucent human heart with a caffeine molecule dissolving into it in amber, and an overnight curve that stays high instead of dipping into rest.',
   imageTitle: 'Caffeine’s overnight signature — resting heart rate up, HRV down',
+  imageCaption:
+    "Caffeine's overnight signature — a 5–6 hour half-life means the afternoon coffee can raise resting heart rate and flatten HRV; find your personal cutoff in your data.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Your caffeine cutoff isn’t a rule from a magazine. It’s a line in your own overnight numbers.',

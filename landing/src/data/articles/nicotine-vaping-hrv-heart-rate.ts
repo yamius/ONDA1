@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "Nicotine molecule feeding an all-day drip into a glowing heart, heart rate and blood pressure up and HRV down — nicotine's quiet autonomic tax.",
   imageTitle: "Nicotine — a sympathomimetic that raises heart rate and lowers HRV",
+  imageCaption:
+    "Nicotine's quiet autonomic tax — a sympathomimetic that raises heart rate and blood pressure while flattening HRV, and how it hides behind \"it relaxes me.\"",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'It feels like it calms you. Your heart rate and HRV tell a different story — and they’re not editorializing.',

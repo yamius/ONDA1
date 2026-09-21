@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "A wearable pouring out a dim mountain of unused data on one side, a bright active training loop turning a live signal into practice on the other.",
   imageTitle: "Use your wearable to train, not just track",
+  imageCaption:
+    "Turning a wearable's unused HRV data into training — the self-tracking plus self-training loop that makes your ring or watch actually useful.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Data you never act on is just expensive anxiety. The point of the number is the practice it should trigger.',

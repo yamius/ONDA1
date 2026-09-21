@@ -17,6 +17,8 @@ const article: Article = {
   imageAlt:
     "A compact three-arc breath-cycle ring (arrive / slow / settle) with a soft breathing wave and a row of daily streak dots — five minutes that stick.",
   imageTitle: "The 5-minute daily breathing routine that actually sticks",
+  imageCaption:
+    "A short 5-minute daily breathing routine that sticks — why consistent brief practice beats long-and-occasional for building the habit and training your nervous system.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Five minutes you actually do beats thirty you keep skipping. Consistency is the whole game.',

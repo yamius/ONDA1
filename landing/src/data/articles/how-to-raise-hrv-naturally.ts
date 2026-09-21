@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "Four glowing levers — sleep, cutting alcohol, aerobic training and breath — feeding a heart-rate-variability wave that widens over weeks, the breath lever the immediate one.",
   imageTitle: "How to raise your HRV — the levers, and the one that works now",
+  imageCaption:
+    "The lifestyle levers that raise HRV naturally — sleep, alcohol, aerobic training — plus slow breathing, the one you can train today with live biofeedback.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Most HRV levers are slow lifestyle work. Breathing is the one you can pull right now — and watch move.',

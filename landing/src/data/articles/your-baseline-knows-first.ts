@@ -21,6 +21,8 @@ const article: Article = {
   imageAlt:
     'Translucent glowing human torso showing resting heart rate, HRV and breathing rate as a personal baseline corridor, with one signal drifting out of range.',
   imageTitle: 'Your personal baseline corridor — and the early drift out of it',
+  imageCaption:
+    "Your personal baseline knows first — resting heart rate, HRV and breathing drift from your normal before you feel off; the deviation, not the number, is the signal.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A baseline is only useful if something reads it back to you. That’s the whole job of the signal.',

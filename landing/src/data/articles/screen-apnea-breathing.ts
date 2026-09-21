@@ -20,6 +20,8 @@ const article: Article = {
   imageAlt:
     "Figure lit by a screen with a breathing trace that flatlines into a held breath then resets — screen apnea and the one-minute breath reset.",
   imageTitle: "Screen apnea — the held breath at the desk, and the reset",
+  imageCaption:
+    "Screen apnea — the shallow, held breath most people take while locked into a screen, what it costs your stress and focus, and the one-minute reset.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The freeze is invisible until something shows you your own breath. Then it’s impossible to unsee.',

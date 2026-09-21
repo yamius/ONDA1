@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "A translucent torso with usually-invisible pulse and breath made visible as a luminous inward map — interoception, a body-awareness practice.",
   imageTitle: "The body awareness app that shows you the signal",
+  imageCaption:
+    "A body awareness app for interoception — making your live pulse and breath visible so you learn to sense the internal state you were blind to.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: "You can't steer a signal you can't sense — so watch your pulse and breath organise in real time, and learn to feel it.",

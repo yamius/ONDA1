@@ -1672,7 +1672,8 @@
         }
       ],
       "imageAlt": "Una división: un rastreador pasivo registrando un panel congelado del pasado a la izquierda, un bucle de biofeedback activo respondiendo en vivo a una respiración a la derecha.",
-      "imageTitle": "Intervención activa frente a seguimiento pasivo — cierra el bucle"
+      "imageTitle": "Intervención activa frente a seguimiento pasivo — cierra el bucle",
+      "imageCaption": "Intervención activa frente a seguimiento pasivo — el giro de los wearables en 2026, de registrar un panel congelado a cerrar el bucle y cambiar tu estado en vivo."
     },
     "body-fat-percentage-composition": {
       "title": "% de grasa corporal: leyendo tu capa de composición",
@@ -2159,7 +2160,8 @@
       "description": "Tu Apple Watch registra en silencio tu pulso en reposo, la variabilidad de tu frecuencia cardíaca y tu respiración cada noche. Esto es lo que son esos números — y por qué dos semanas de rango te dicen más que cualquier lectura aislada.",
       "content": "\n## [ SEÑAL: LO_QUE_EL_RELOJ_YA_SABE ]\n\n> \"No tienes que hacer nada para que un Apple Watch construya un registro de ti. Mientras duermes muestrea tu pulso, cronometra los intervalos entre latidos y cuenta tus respiraciones — noche tras noche. La mayoría de la gente nunca lo mira. Los números ya están ahí; el único truco es leerlos de vuelta como un *rango* en lugar de una cifra única y solitaria.\"\n\n---\n\n## Sección 1: Las tres cosas que registra en reposo\n\nTres señales hacen la mayor parte del trabajo, y las tres se recogen mientras duermes, cuando nada de lo que haces se interpone:\n\n- **Frecuencia cardíaca en reposo** — cuán despacio se asienta tu pulso cuando tu cuerpo no tiene nada que atender. Un número por noche.\n- **Variabilidad de la frecuencia cardíaca (HRV)** — las diminutas diferencias de tiempo entre latido y latido. Sube cuando tu cuerpo está a gusto y se estrecha cuando está en guardia. Consulta [variabilidad de la frecuencia cardíaca](/glossary/heart-rate-variability) para el mecanismo.\n- **Frecuencia respiratoria** — cuántas respiraciones haces por minuto, dormido, sin decidirlo nunca.\n\nNinguna de estas necesita un entrenamiento ni una banda pectoral. Son un subproducto de llevar el reloj a la cama.\n\n## Sección 2: Por qué un solo número no te dice casi nada\n\nUna única frecuencia cardíaca en reposo — \"62 esta mañana\" — es una instantánea sin contexto. ¿Fue baja para ti, o una excepción tranquila? No lo puedes saber a partir de una sola lectura.\n\nDos semanas lo responden. A lo largo de catorce noches obtienes un **valor bajo y uno alto**, y dónde se sitúa la noche típica entre ambos. Ese margen *es* la información: una persona cuya HRV va de 30–120 a lo largo de una quincena vive dos semanas muy distintas de otra que va de 55–70, aunque sus promedios coincidan. El rango es la historia; el promedio la esconde.\n\nPor eso la [herramienta Baseline](/tools/baseline) muestra una barra con tu valor bajo, tu alto y tu promedio marcados — no un veredicto. Es tu propio margen, medido contra nada más que contra sí mismo.\n\n## Sección 3: Qué te dice la amplitud\n\nLa brecha entre tu noche más tranquila y la más inquieta no es una puntuación que superar. Es un registro de la quincena que realmente tuviste — la noche corta, la sesión dura, el resfriado, la buena racha. Las noches en que tu cuerpo se mantuvo en guardia se sitúan en un extremo; las noches en que se soltó del todo, en el otro.\n\nLeer eso de vuelta es todo el propósito: no una nota, sino una imagen de cómo se movió tu propio sistema a lo largo de dos semanas. Lo que una instantánea no puede mostrar — cómo estos números viajan juntos día a día, y qué hacen cuando cambias algo — es para lo que sirve una herramienta en vivo como la app de ONDA.\n\n## Sección 4: Ve el tuyo en treinta segundos\n\nTodo lo anterior ya está en tu iPhone. Un atajo gratuito lee las últimas dos semanas de tu propia Apple Health y te lo dibuja de vuelta — el rango, no un número — sin que una sola cifra salga de tu dispositivo.\n",
       "imageAlt": "Un Apple Watch proyectando rangos de 14 días de frecuencia cardíaca en reposo, VFC y frecuencia respiratoria — el rango, no un solo número.",
-      "imageTitle": "Lo que registra tu Apple Watch en dos semanas — el rango que importa"
+      "imageTitle": "Lo que registra tu Apple Watch en dos semanas — el rango que importa",
+      "imageCaption": "Lo que tu Apple Watch registra cada noche — frecuencia cardíaca en reposo, VFC y frecuencia respiratoria; por qué catorce días de rango dicen más que una sola lectura."
     },
     "zone-2-training-aerobic-base": {
       "title": "Entrenamiento en Zona 2: instalando tu capa base aeróbica",
@@ -2205,7 +2207,8 @@
           "name": "Lleva una preocupación real a un profesional",
           "text": "Una desviación grande o persistente, o cualquiera acompañada de síntomas que te preocupen, corresponde a un médico. Una línea base personal es descriptiva — un espejo, nunca un diagnóstico."
         }
-      ]
+      ],
+      "imageCaption": "Tu línea base personal lo sabe primero — la frecuencia cardíaca en reposo, la VFC y la respiración se desvían de tu normal antes de sentirte mal; la señal es la desviación."
     },
     "respiratory-rate-hidden-signal": {
       "title": "Tu frecuencia respiratoria: el número nocturno que nunca miras",
@@ -2230,7 +2233,8 @@
         }
       ],
       "imageAlt": "Pulmones holográficos luminosos con una onda de respiración estable dentro de una banda personal — la frecuencia respiratoria como constante vital nocturna, estable y de aviso temprano.",
-      "imageTitle": "Frecuencia respiratoria — la constante vital nocturna silenciosa y dirigible"
+      "imageTitle": "Frecuencia respiratoria — la constante vital nocturna silenciosa y dirigible",
+      "imageCaption": "Tu frecuencia respiratoria nocturna — uno de los signos vitales más estables que tienes, y por qué desviarse de tu línea base personal es una señal temprana y honesta."
     },
     "heart-rate-recovery-fitness-marker": {
       "title": "Recuperación de la frecuencia cardíaca: el marcador de forma física oculto en tus datos",
@@ -2255,7 +2259,8 @@
         }
       ],
       "imageAlt": "Corazón luminoso con un tacómetro y un freno vagal verde, y un panel que muestra la frecuencia cardíaca cayendo de un pico de 162 a 68 un minuto después.",
-      "imageTitle": "Recuperación de la frecuencia cardíaca — el freno vagal y la caída de un minuto"
+      "imageTitle": "Recuperación de la frecuencia cardíaca — el freno vagal y la caída de un minuto",
+      "imageCaption": "Recuperación de la frecuencia cardíaca — qué tan rápido baja el pulso tras el esfuerzo, una lectura directa de la reactivación parasimpática y un marcador clave de la forma física."
     },
     "screen-apnea-breathing": {
       "title": "Apnea de pantalla: dejas de respirar en tu escritorio",
@@ -2280,7 +2285,8 @@
         }
       ],
       "imageAlt": "Figura iluminada por una pantalla con una traza de respiración que se aplana en una apnea y luego se reinicia — apnea de pantalla y el reinicio de un minuto.",
-      "imageTitle": "Apnea de pantalla — la respiración contenida ante la pantalla, y el reinicio"
+      "imageTitle": "Apnea de pantalla — la respiración contenida ante la pantalla, y el reinicio",
+      "imageCaption": "Apnea de pantalla — la respiración superficial y contenida que casi todos hacen frente a la pantalla, lo que cuesta al estrés y al foco, y el reinicio de un minuto."
     },
     "caffeine-hrv-resting-heart-rate": {
       "title": "La firma nocturna de la cafeína: qué le hace a tu corazón el café de la tarde",
@@ -2305,7 +2311,8 @@
         }
       ],
       "imageAlt": "Corazón humano translúcido y luminoso con una molécula de cafeína disolviéndose en él en ámbar, y una curva nocturna que se mantiene alta en lugar de descender al reposo.",
-      "imageTitle": "La firma nocturna de la cafeína — frecuencia cardíaca en reposo arriba, VFC abajo"
+      "imageTitle": "La firma nocturna de la cafeína — frecuencia cardíaca en reposo arriba, VFC abajo",
+      "imageCaption": "La firma nocturna de la cafeína — su vida media de 5–6 horas hace que el café de la tarde suba la frecuencia cardíaca en reposo y aplane la VFC; halla tu corte en tus datos."
     },
     "social-jet-lag-irregular-sleep": {
       "title": "Jet lag social: por qué una hora de dormir que se mueve se lee como estrés crónico",
@@ -2330,7 +2337,8 @@
         }
       ],
       "imageAlt": "Figura humana holográfica dentro de un anillo de reloj circadiano desincronizado — un reloj corporal cian desalineado con un arco naranja del horario real y fases lunares alrededor.",
-      "imageTitle": "Jet lag social — una hora de dormir que se mueve se lee como jet lag crónico"
+      "imageTitle": "Jet lag social — una hora de dormir que se mueve se lee como jet lag crónico",
+      "imageCaption": "Jet lag social — una hora de dormir que cambia una hora cada noche se lee como estrés crónico y aplana la VFC; la regularidad del sueño, no solo la duración, importa."
     },
     "eating-late-heart-rate-sleep": {
       "title": "La cena tardía que tu corazón procesa toda la noche",
@@ -2355,7 +2363,8 @@
         }
       ],
       "imageAlt": "Torso translúcido con un sistema digestivo luminoso trabajando de noche y un corazón latiendo algo elevado — el pequeño coste nocturno de una cena tardía para la frecuencia cardíaca y la VFC.",
-      "imageTitle": "La cena tardía que tu corazón procesa — un pequeño coste nocturno"
+      "imageTitle": "La cena tardía que tu corazón procesa — un pequeño coste nocturno",
+      "imageCaption": "Una cena tardía es trabajo simpático a destiempo — un coste nocturno pequeño y personal que mantiene la frecuencia cardíaca alta y la VFC baja cuando deberían bajar."
     },
     "chronic-stress-nervous-system-never-off": {
       "title": "El sistema nervioso que nunca ficha la salida",
@@ -2380,7 +2389,8 @@
         }
       ],
       "imageAlt": "Sistema nervioso humano translúcido y luminoso con un interruptor de encendido atascado en ON en el tronco encefálico, y una traza de VFC baja y plana que va del día a la noche sin recuperarse.",
-      "imageTitle": "Estrés crónico — el interruptor del sistema nervioso que nunca se apaga"
+      "imageTitle": "Estrés crónico — el interruptor del sistema nervioso que nunca se apaga",
+      "imageCaption": "Estrés crónico y el interruptor de apagado ausente — la VFC baja toda la tarde hasta el sueño, y la recuperación nunca empieza; la pregunta es si tu cuerpo baja alguna vez."
     },
     "overtraining-hrv-resting-heart-rate": {
       "title": "El sobreentrenamiento tiene un número: cuando tus señales de recuperación se giran",
@@ -2405,7 +2415,8 @@
         }
       ],
       "imageAlt": "Corazón como una turbina en zona roja con una batería de recuperación agotada, la frecuencia cardíaca en reposo subiendo y la VFC bajando — la firma del sobreentrenamiento.",
-      "imageTitle": "Sobreentrenamiento — FC en reposo arriba, VFC abajo, reserva de recuperación agotada"
+      "imageTitle": "Sobreentrenamiento — FC en reposo arriba, VFC abajo, reserva de recuperación agotada",
+      "imageCaption": "La firma del sobreentrenamiento en tus datos — la frecuencia cardíaca en reposo sube mientras la VFC baja cuando la carga supera la recuperación; lee el giro a tiempo."
     },
     "sitting-all-day-nervous-system": {
       "title": "El impuesto de la silla: lo que un día sentado le hace a tu sistema nervioso",
@@ -2430,7 +2441,8 @@
         }
       ],
       "imageAlt": "Figura holográfica sentada frente a un reloj de una hora sin interrupción, el equilibrio autónomo inclinado hacia lo simpático y una traza de VFC baja y plana.",
-      "imageTitle": "El impuesto de la silla — estar sentado sin pausa inclina el equilibrio autónomo y aplana la VFC"
+      "imageTitle": "El impuesto de la silla — estar sentado sin pausa inclina el equilibrio autónomo y aplana la VFC",
+      "imageCaption": "El impuesto de la silla — por qué las horas ininterrumpidas sentado inclinan el equilibrio autónomo hacia lo simpático y aplanan la VFC, y cómo lo recuperan pausas breves."
     },
     "name-it-to-tame-it-affect-labeling": {
       "title": "Nómbralo para domarlo: por qué escribir una emoción le baja el volumen",
@@ -2455,7 +2467,8 @@
         }
       ],
       "imageAlt": "Cerebro luminoso con una etiqueta que atenúa una amígdala y una corteza prefrontal activada — el etiquetado afectivo reduciendo la activación emocional.",
-      "imageTitle": "Etiquetado afectivo — nombrar una emoción atenúa la amígdala"
+      "imageTitle": "Etiquetado afectivo — nombrar una emoción atenúa la amígdala",
+      "imageCaption": "Etiquetado afectivo — cómo poner un sentimiento en palabras calma la amígdala y baja su intensidad, y cómo un diario de dos líneas lo vuelve práctica diaria."
     },
     "cold-exposure-vagus-nerve": {
       "title": "El frío y el nervio vago: por qué una ducha fría reinicia tu sistema nervioso",
@@ -2480,7 +2493,8 @@
         }
       ],
       "imageAlt": "Figura bajo una cascada fría con el nervio vago iluminado por la columna, un pico simpático y luego un rebote vagal parasimpático que eleva la VFC.",
-      "imageTitle": "El frío y el nervio vago — pico simpático y luego rebote vagal"
+      "imageTitle": "El frío y el nervio vago — pico simpático y luego rebote vagal",
+      "imageCaption": "Exposición al frío y el nervio vago — un pico simpático seguido de un rebote vagal parasimpático, y cómo la respiración es el mando que controla ambos."
     },
     "nicotine-vaping-hrv-heart-rate": {
       "title": "El impuesto silencioso: qué le hacen la nicotina y el vapeo a tu frecuencia cardíaca y tu VFC",
@@ -2505,7 +2519,8 @@
         }
       ],
       "imageAlt": "Molécula de nicotina alimentando un goteo continuo hacia un corazón luminoso, con la frecuencia cardíaca y la presión arterial arriba y la VFC abajo — el impuesto autónomo silencioso de la nicotina.",
-      "imageTitle": "Nicotina — un simpaticomimético que sube la frecuencia cardíaca y baja la VFC"
+      "imageTitle": "Nicotina — un simpaticomimético que sube la frecuencia cardíaca y baja la VFC",
+      "imageCaption": "El impuesto autónomo silencioso de la nicotina — un simpaticomimético que sube la frecuencia cardíaca y la presión mientras aplana la VFC, oculto tras «me relaja»."
     },
     "how-to-measure-hrv-consistently": {
       "title": "Cómo medir la VFC para que el número signifique algo de verdad",
@@ -2530,7 +2545,8 @@
         }
       ],
       "imageAlt": "Una yema del dedo sobre la cámara de un iPhone convirtiendo una señal de VFC ruidosa y poco fiable en una limpia y estandarizada — mide a la misma hora, del mismo modo.",
-      "imageTitle": "Medir la VFC de forma consistente — misma hora, mismo método, tendencia no número"
+      "imageTitle": "Medir la VFC de forma consistente — misma hora, mismo método, tendencia no número",
+      "imageCaption": "Medir la VFC para que el número signifique algo — misma hora, misma postura, misma forma, porque una lectura al azar es ruido y la tendencia supera a un valor aislado."
     },
     "how-to-raise-hrv-naturally": {
       "title": "Cómo aumentar tu VFC de forma natural",
@@ -2555,7 +2571,8 @@
         }
       ],
       "imageAlt": "Cuatro palancas luminosas — sueño, dejar el alcohol, entrenamiento aeróbico y respiración — alimentando una onda de VFC que se ensancha con las semanas; la respiración es la palanca inmediata.",
-      "imageTitle": "Cómo subir tu VFC — las palancas, y la que funciona ya"
+      "imageTitle": "Cómo subir tu VFC — las palancas, y la que funciona ya",
+      "imageCaption": "Las palancas que suben la VFC de forma natural — sueño, alcohol, entrenamiento aeróbico — y la respiración lenta, la que puedes entrenar hoy con biofeedback en vivo."
     },
     "what-to-do-after-low-hrv-reading": {
       "title": "Tu lectura de VFC es baja. ¿Y ahora qué?",
@@ -2580,7 +2597,8 @@
         }
       ],
       "imageAlt": "Un único punto de VFC bajo por debajo de una banda de corredor personal, con una onda de respiración lenta empujando la siguiente lectura hacia arriba — un bache frente a la tendencia, no un veredicto.",
-      "imageTitle": "Tu lectura de VFC es baja — mira la tendencia, no un número"
+      "imageTitle": "Tu lectura de VFC es baja — mira la tendencia, no un número",
+      "imageCaption": "Una lectura baja de VFC suele ser ruido frente a tu corredor personal; la respiración lenta es la respuesta útil, no el pánico — mira la tendencia, no un número."
     },
     "short-daily-breathing-routine": {
       "title": "La rutina de respiración diaria de 5 minutos que de verdad se mantiene",
@@ -2605,7 +2623,8 @@
         }
       ],
       "imageAlt": "Un anillo compacto de ciclo respiratorio de tres arcos (llegar / frenar / asentarse) con una onda de respiración suave y una fila de puntos de racha diaria — cinco minutos que se mantienen.",
-      "imageTitle": "La rutina de respiración de 5 minutos que sí se mantiene"
+      "imageTitle": "La rutina de respiración de 5 minutos que sí se mantiene",
+      "imageCaption": "Una rutina de respiración diaria de 5 minutos que se mantiene — por qué la práctica breve y constante supera a la larga y ocasional para crear el hábito."
     },
     "find-your-resonance-breathing-rate": {
       "title": "Cómo encontrar tu frecuencia de respiración de resonancia",
@@ -2630,7 +2649,8 @@
         }
       ],
       "imageAlt": "Un afinador de resonancia recorriendo ritmos de 4,5 a 7 respiraciones por minuto, con la amplitud de la oscilación de VFC alcanzando su pico en una onda amplia y suave a una frecuencia personal.",
-      "imageTitle": "Encuentra tu frecuencia de respiración de resonancia — donde la VFC alcanza su pico"
+      "imageTitle": "Encuentra tu frecuencia de respiración de resonancia — donde la VFC alcanza su pico",
+      "imageCaption": "Cómo hallar tu ritmo de respiración de resonancia personal — el ritmo cercano a seis por minuto donde la amplitud de la VFC alcanza su pico con biofeedback en vivo."
     },
     "train-hrv-iphone-camera-no-wearable": {
       "title": "Entrena tu respiración solo con un iPhone — sin wearable",
@@ -2655,7 +2675,8 @@
         }
       ],
       "imageAlt": "Una yema del dedo sobre la cámara trasera de un iPhone emitiendo una onda de pulso (PPG) limpia — biofeedback de respiración real sin reloj, anillo ni banda de pecho.",
-      "imageTitle": "Entrena tu respiración solo con un iPhone — sin wearable"
+      "imageTitle": "Entrena tu respiración solo con un iPhone — sin wearable",
+      "imageCaption": "Biofeedback de respiración solo con la cámara del iPhone leyendo tu pulso — sin wearable; con honestidad, la VFC y la coherencia aún requieren un Apple Watch."
     },
     "how-to-train-your-nervous-system": {
       "title": "Cómo entrenar tu sistema nervioso",
@@ -2680,7 +2701,8 @@
         }
       ],
       "imageAlt": "Un sistema nervioso luminoso con el freno vagal parasimpático fortalecido como un músculo entrenado, la VFC como marcador — entrenar el sistema nervioso.",
-      "imageTitle": "Cómo entrenar tu sistema nervioso — fortalece el freno vagal"
+      "imageTitle": "Cómo entrenar tu sistema nervioso — fortalece el freno vagal",
+      "imageCaption": "Entrenar el sistema nervioso como un músculo — fortalecer el freno vagal con respiración, biofeedback de VFC y práctica estructurada para pasar antes de la tensión a la calma."
     },
     "calm-your-nervous-system-down": {
       "title": "Cómo calmar tu sistema nervioso (rápido y de verdad)",
@@ -2705,7 +2727,8 @@
         }
       ],
       "imageAlt": "Una figura cuya rama simpática está encendida, un solo exhale largo alcanzando un interruptor vagal luminoso y el sistema asentándose de la tensión a la calma.",
-      "imageTitle": "Cómo calmar tu sistema nervioso — la única entrada que controlas"
+      "imageTitle": "Cómo calmar tu sistema nervioso — la única entrada que controlas",
+      "imageCaption": "Calmar un sistema nervioso activado con el único mando que controlas — una exhalación larga que alcanza el interruptor vagal; una práctica, no un tratamiento."
     },
     "app-between-meditation-and-fitness-tracker": {
       "title": "La app entre una app de meditación y una pulsera de actividad",
@@ -2730,7 +2753,8 @@
         }
       ],
       "imageAlt": "Un teléfono de contenido de meditación y un rastreador de fitness, con un bucle de biofeedback en vivo brillando en el hueco entre ambos — medir y entrenar en un solo bucle.",
-      "imageTitle": "La app entre una app de meditación y un rastreador de fitness"
+      "imageTitle": "La app entre una app de meditación y un rastreador de fitness",
+      "imageCaption": "El punto medio que falta entre una app de meditación y un tracker de fitness — medir y entrenar el sistema nervioso en un solo bucle de biofeedback en vivo."
     },
     "wind-down-before-sleep-breathing": {
       "title": "El apagado nocturno: respira para sacar a tu cuerpo del modo trabajo",
@@ -2755,7 +2779,8 @@
         }
       ],
       "imageAlt": "Una figura nocturna con una curva de activación descendiendo hacia el sueño mientras la respiración lenta con exhalación activa el sistema vagal, una suave luna creciente.",
-      "imageTitle": "La bajada nocturna — respira para salir del modo trabajo"
+      "imageTitle": "La bajada nocturna — respira para salir del modo trabajo",
+      "imageCaption": "Una rutina de respiración nocturna que baja la activación previa al sueño — engancha el nervio vago para que el cuerpo crea que el día terminó y llegue el sueño."
     },
     "how-to-regulate-emotions": {
       "title": "Cómo regular tus emociones (a la manera del cuerpo primero)",
@@ -2780,7 +2805,8 @@
         }
       ],
       "imageAlt": "El hueco entre un disparador y una reacción abierto por un exhale lento, una amígdala calmada y una etiqueta que nombra la emoción — compra la pausa.",
-      "imageTitle": "Cómo regular tus emociones — compra la pausa"
+      "imageTitle": "Cómo regular tus emociones — compra la pausa",
+      "imageCaption": "La regulación emocional como habilidad entrenable desde el cuerpo — cómo una exhalación lenta abre la pausa entre estímulo y reacción y calma la respuesta de amenaza."
     },
     "meditation-app-with-biofeedback": {
       "title": "La app de meditación que te demuestra que funciona",
@@ -2805,7 +2831,8 @@
         }
       ],
       "imageAlt": "Una figura meditando mientras observa su ritmo cardíaco organizarse en una onda coherente y suave en pantalla — la prueba del biofeedback frente a apps solo de audio.",
-      "imageTitle": "La app de meditación que te muestra que funciona"
+      "imageTitle": "La app de meditación que te muestra que funciona",
+      "imageCaption": "Una app de meditación con biofeedback que muestra tu propia VFC y respiración organizándose en tiempo real — prueba de que funciona, no audio en el que confiar a ciegas."
     },
     "structured-meditation-training-by-levels": {
       "title": "Entrenamiento de meditación estructurado: por qué un camino gana a una biblioteca",
@@ -2830,7 +2857,8 @@
         }
       ],
       "imageAlt": "Un camino ascendente de niveles que se desbloquean del 1 al 8 — los primeros iluminados y activos, los últimos bloqueados — frente a una estantería dispersa. El camino supera a la biblioteca.",
-      "imageTitle": "Entrenamiento de meditación estructurado — por qué un camino supera a una biblioteca"
+      "imageTitle": "Entrenamiento de meditación estructurado — por qué un camino supera a una biblioteca",
+      "imageCaption": "Entrenamiento de meditación estructurado, nivel a nivel, que construye la habilidad del sistema nervioso como progresión — por qué un camino secuenciado supera a una biblioteca dispersa."
     },
     "meditation-with-apple-watch": {
       "title": "Meditación con tu Apple Watch: un coach de biofeedback en la muñeca",
@@ -2855,7 +2883,8 @@
         }
       ],
       "imageAlt": "Un Apple Watch proyectando una onda de coherencia en vivo mientras la persona respira — pulso continuo, sin banda de pecho, el reloj como coach de biofeedback.",
-      "imageTitle": "Meditación con tu Apple Watch — un coach de biofeedback en la muñeca"
+      "imageTitle": "Meditación con tu Apple Watch — un coach de biofeedback en la muñeca",
+      "imageCaption": "Meditar con la VFC del Apple Watch — el pulso de la muñeca se vuelve un coach de coherencia en vivo que marca tu respiración y muestra tu ritmo cardíaco calmarse."
     },
     "body-awareness-training-app": {
       "title": "La app de conciencia corporal que te muestra la señal",
@@ -2880,7 +2909,8 @@
         }
       ],
       "imageAlt": "Un torso translúcido con el pulso y la respiración normalmente invisibles hechos visibles como un mapa interior luminoso — interocepción, una práctica de conciencia corporal.",
-      "imageTitle": "La app de conciencia corporal que te muestra la señal"
+      "imageTitle": "La app de conciencia corporal que te muestra la señal",
+      "imageCaption": "Una app de conciencia corporal para la interocepción — hace visibles tu pulso y respiración en vivo para que aprendas a sentir tu estado interno."
     },
     "consciousness-training-app": {
       "title": "App de entrenamiento de la consciencia: entrena al observador",
@@ -2905,7 +2935,8 @@
         }
       ],
       "imageAlt": "Un cerebro luminoso con un nodo 'observador' de metacognición y diales de atención e interocepción — entrenamiento de autoconciencia con base, sin misticismo.",
-      "imageTitle": "App de entrenamiento de la consciencia — entrena al observador, sin misticismo"
+      "imageTitle": "App de entrenamiento de la consciencia — entrena al observador, sin misticismo",
+      "imageCaption": "Una app de entrenamiento de la conciencia que construye autoconciencia, atención e interocepción con biofeedback del ritmo cardíaco — práctica realista, sin misticismo."
     },
     "breathing-for-focus-and-attention": {
       "title": "Respirar para el foco: cómo la respiración estabiliza la atención",
@@ -2930,7 +2961,8 @@
         }
       ],
       "imageAlt": "Un foco de atención disperso siendo devuelto a un único punto enfocado por una respiración lenta, con una banda de activación de calma-alerta marcada.",
-      "imageTitle": "Respiración para el enfoque — cómo la respiración estabiliza la atención"
+      "imageTitle": "Respiración para el enfoque — cómo la respiración estabiliza la atención",
+      "imageCaption": "Respiración para la concentración — cómo la respiración lenta estabiliza el estado de calma-alerta sobre el que corre la atención y entrena el regreso del foco."
     },
     "wearables-train-not-just-track": {
       "title": "Usa tu wearable para entrenar, no solo para rastrear",
@@ -2955,7 +2987,8 @@
         }
       ],
       "imageAlt": "Un wearable derramando una montaña tenue de datos sin usar por un lado, y un bucle de entrenamiento activo y brillante convirtiendo una señal en vivo en práctica por el otro.",
-      "imageTitle": "Usa tu wearable para entrenar, no solo para rastrear"
+      "imageTitle": "Usa tu wearable para entrenar, no solo para rastrear",
+      "imageCaption": "Convertir los datos de VFC sin usar de un wearable en entrenamiento — el bucle de autoseguimiento y autoentrenamiento que hace útil tu anillo o reloj."
     },
     "anxiety-panic-breathing-hrv": {
       "title": "La falsa alarma: cómo un ataque de pánico secuestra la respiración — y cómo la respiración la recupera",
@@ -2980,7 +3013,8 @@
         }
       ],
       "imageAlt": "Un bucle de retroalimentación de pánico descontrolado como una espiral de neón que se aprieta, y un solo exhale lento actuando como freno de anulación manual que empieza a deshacerlo.",
-      "imageTitle": "El pánico secuestra la respiración — y la respiración la recupera"
+      "imageTitle": "El pánico secuestra la respiración — y la respiración la recupera",
+      "imageCaption": "Cómo un ataque de pánico secuestra el bucle respiración-corazón, y por qué la respiración lenta con exhalación larga es un freno manual — una práctica, no un tratamiento."
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "El Apple Watch ahora muestra dos cifras de VFC: Recovery HRV vs Overall HRV",
@@ -3005,7 +3039,8 @@
         }
       ],
       "imageAlt": "Un Apple Watch emitiendo dos ondas de VFC divergentes de los mismos latidos — Recovery HRV (RMSSD) y Overall HRV (SDNN) en escalas distintas, sin mezclar.",
-      "imageTitle": "Dos números de VFC — Recovery HRV (RMSSD) vs Overall HRV (SDNN)"
+      "imageTitle": "Dos números de VFC — Recovery HRV (RMSSD) vs Overall HRV (SDNN)",
+      "imageCaption": "Los dos números de VFC del Apple Watch — Recovery HRV (RMSSD) frente a Overall HRV (SDNN), en escalas distintas de los mismos latidos y nunca fusionados."
     },
     "dysautonomia-long-covid-breathing": {
       "title": "El fallo autónomo: lo que el long Covid nos enseñó sobre la VFC y la respiración",
@@ -3030,7 +3065,8 @@
         }
       ],
       "imageAlt": "Un sistema nervioso autónomo con dominancia simpática, VFC baja y un latido rígido y metronómico, con respiración pausada suave empujándolo — apoyo, no una cura.",
-      "imageTitle": "El fallo autónomo — VFC, respiración y disautonomía (apoyo, no una cura)"
+      "imageTitle": "El fallo autónomo — VFC, respiración y disautonomía (apoyo, no una cura)",
+      "imageCaption": "Por qué la disautonomía y el long Covid aparecen como VFC baja y latido rígido, y qué hallaron los estudios de biofeedback — apoyo, no cura, junto al cuidado clínico."
     },
     "high-blood-pressure-slow-breathing": {
       "title": "La válvula de presión: qué le hace realmente la respiración lenta a la presión arterial",
@@ -3055,7 +3091,8 @@
         }
       ],
       "imageAlt": "Un manómetro que baja suavemente mientras la respiración lenta activa el barorreflejo, etiquetado como complemento, no una cura — lo que la respiración lenta hace a la presión arterial.",
-      "imageTitle": "La válvula de presión — respiración lenta y el barorreflejo (complemento, no un tratamiento)"
+      "imageTitle": "La válvula de presión — respiración lenta y el barorreflejo (complemento, no un tratamiento)",
+      "imageCaption": "Cómo la respiración lenta baja la presión arterial a través del barorreflejo — el tamaño real del efecto y sus límites; un complemento, no un tratamiento."
     }
   },
   "detail": {

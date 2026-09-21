@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "Glowing brain with a label clamping a dampened amygdala and an engaged prefrontal cortex — affect labeling lowering emotional arousal.",
   imageTitle: "Affect labeling — naming a feeling dampens the amygdala",
+  imageCaption:
+    "Affect labeling — how putting a feeling into words dampens the amygdala and lowers its intensity, and how a two-line diary makes it a daily practice.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The breath calms the body. Naming the feeling calms the story the body is reacting to. Use both.',

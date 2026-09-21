@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "Heart rendered as a redlining turbine with a depleted recovery battery, resting heart rate rising and HRV falling — the overtraining signature.",
   imageTitle: "Overtraining — resting HR up, HRV down, recovery reserve depleted",
+  imageCaption:
+    "The overtraining signature in your data — resting heart rate creeping up while HRV drops as load outruns recovery; read the turn before it costs you.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Training is the stimulus. Recovery is where the adaptation actually happens — if you let it.',

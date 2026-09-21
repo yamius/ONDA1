@@ -20,6 +20,8 @@ const article: Article = {
   imageAlt:
     "Figure under a cold cascade with the vagus nerve lit down the spine, a sympathetic spike then a parasympathetic vagal rebound raising HRV.",
   imageTitle: "Cold and the vagus nerve — sympathetic spike, then vagal rebound",
+  imageCaption:
+    "Cold exposure and the vagus nerve — a sympathetic spike followed by a parasympathetic vagal rebound, and how the breath is the knob controlling both.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Cold is a stressor you choose — and the breath is how you stay in charge of it. That’s the whole skill.',

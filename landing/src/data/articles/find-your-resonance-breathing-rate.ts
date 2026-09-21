@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "A resonance tuner sweeping breathing paces from 4.5 to 7 a minute, the HRV oscillation amplitude peaking into a wide smooth wave at one personal frequency.",
   imageTitle: "Find your resonance breathing rate — where HRV amplitude peaks",
+  imageCaption:
+    "Finding your personal resonance breathing rate — the pace near six breaths a minute where HRV amplitude peaks, found by watching your own live feedback.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The perfect breathing pace isn’t a rule from a book — it’s a rate you find by watching your own rhythm.',

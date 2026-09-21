@@ -20,6 +20,8 @@ const article: Article = {
   imageAlt:
     "Translucent torso with a glowing digestive system working at night and a heart beating slightly elevated — a late meal’s small overnight cost to heart rate and HRV.",
   imageTitle: "The late dinner your heart works through — a small overnight cost",
+  imageCaption:
+    "A late dinner is sympathetic work at the wrong time — a small, personal overnight cost that keeps heart rate up and HRV down while both should fall.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The effect of a late meal is small, personal and invisible — three good reasons to read it in your own data.',

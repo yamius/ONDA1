@@ -21,6 +21,8 @@ const article: Article = {
   imageAlt:
     "An ascending path of unlocking levels 1 to 8 — early levels lit and active, later ones locked — versus a scattered library shelf. The path beats the library.",
   imageTitle: "Structured meditation training — why a path beats a library",
+  imageCaption:
+    "Structured, level-by-level meditation training that builds nervous-system skill as a progression — why a sequenced path beats a scattered library of sessions.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A library lets you wander. A path takes you somewhere. Nervous-system skill is built by the path.',

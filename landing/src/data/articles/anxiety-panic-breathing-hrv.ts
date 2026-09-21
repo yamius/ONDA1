@@ -21,6 +21,8 @@ const article: Article = {
   imageAlt:
     "A runaway panic feedback loop as a tightening neon spiral, a single slow exhale acting as a manual-override brake that begins to unwind it.",
   imageTitle: "Panic hijacks the breath — and the breath takes it back",
+  imageCaption:
+    "How a panic attack hijacks the breath-heart threat loop, and why slow exhale-led breathing is one manual override you can pull mid-spiral — a practice, not treatment.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The breath is the one manual override on the panic loop. A live feedback loop shows it working.',

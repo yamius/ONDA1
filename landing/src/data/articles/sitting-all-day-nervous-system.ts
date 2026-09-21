@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "Seated holographic figure against an unbroken-hour clock, autonomic balance tilted toward sympathetic and a flat, low HRV trace.",
   imageTitle: "The chair tax — unbroken sitting tilts autonomic balance and flattens HRV",
+  imageCaption:
+    "The chair tax — why unbroken hours of sitting tilt autonomic balance toward sympathetic and flatten HRV, and how small frequent breaks pay it back.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'It isn’t that sitting is poison. It’s that unbroken stillness is a signal — and the fix is small and frequent.',

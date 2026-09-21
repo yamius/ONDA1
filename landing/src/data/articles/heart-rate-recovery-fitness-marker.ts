@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "Glowing heart with a tachometer and a green vagal brake, and a panel showing heart rate dropping from a 162 peak to 68 one minute later.",
   imageTitle: "Heart-rate recovery — the vagal brake and the one-minute drop",
+  imageCaption:
+    "Heart-rate recovery — how fast your pulse drops in the minute after effort, a direct read on parasympathetic reactivation and one of fitness's most telling markers.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Peak heart rate tells you how hard you pushed. Recovery tells you how good your engine actually is.',

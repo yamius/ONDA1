@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "A glowing brain with a metacognition 'observer' node and attention and interoception dials — grounded self-awareness training, not mysticism.",
   imageTitle: "Consciousness training app — train the observer, no mysticism",
+  imageCaption:
+    "A consciousness training app that builds self-awareness, attention and interoception with live heart-rhythm biofeedback — grounded practice, no mysticism, no nootropic promise.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: "You can't steer a state you can't see. Put your own heart rhythm on screen and train the observer.",

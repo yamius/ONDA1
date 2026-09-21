@@ -22,6 +22,8 @@ const article: Article = {
   imageAlt:
     "A pressure gauge easing gently as slow breathing engages the baroreflex, labelled adjunct not a cure — what slow breathing does to blood pressure.",
   imageTitle: "The pressure valve — slow breathing and the baroreflex (adjunct, not a treatment)",
+  imageCaption:
+    "How slow paced breathing eases blood pressure through the baroreflex — the honest size of the effect and its limits; an adjunct, not a treatment.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Slow breathing works on blood pressure by exercising the baroreflex. See that loop live.',

@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "An evening figure with an arousal curve descending toward sleep as slow exhale-led breathing engages the vagal system, a soft crescent moon.",
   imageTitle: "The evening wind-down — breathing your body out of work mode",
+  imageCaption:
+    "An evening breathing wind-down that lowers pre-sleep arousal — engaging the vagal system so your body believes the day is over and sleep onset comes.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Sleep doesn’t start at lights-out — it starts when your body believes the day is actually over.',

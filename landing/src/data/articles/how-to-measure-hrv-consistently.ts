@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "A fingertip on an iPhone camera turning a noisy, unreliable HRV signal into a clean standardized one — measure the same time, same way.",
   imageTitle: "Measuring HRV consistently — same time, same way, trend not number",
+  imageCaption:
+    "Measuring HRV so the number means something — same time, same posture, same way, because a random reading is noise and the trend beats any single value.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A single HRV number is almost meaningless. A consistent series is one of the most useful things you own.',

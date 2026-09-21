@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "Glowing holographic lungs with a steady breathing waveform inside a personal band — respiratory rate as a stable, early-moving overnight vital.",
   imageTitle: "Respiratory rate — the quiet, steerable overnight vital",
+  imageCaption:
+    "Your overnight respiratory rate — one of the most stable vitals you own, and why a drift from your personal baseline is an early, honest signal.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Three signals sit in your baseline. Two get all the attention. This is the quiet one that often moves first.',

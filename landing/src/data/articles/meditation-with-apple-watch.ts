@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "An Apple Watch projecting a live coherence wave as the wearer breathes — continuous pulse, no chest strap, the Watch as a biofeedback coach.",
   imageTitle: "Meditation with your Apple Watch — a biofeedback coach on your wrist",
+  imageCaption:
+    "Meditating with Apple Watch HRV — the wrist pulse becomes a live coherence coach that paces your breath and shows your heart rhythm settle.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The Watch already reads your heart. Point that signal at your breath and it becomes a coach.',

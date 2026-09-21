@@ -822,9 +822,15 @@ function buildTechArticleJsonLd(
   if (opts?.image) {
     // Hero image as a full ImageObject — gives Google Images and AI
     // answer engines a caption + credit to attribute, not just a bare URL.
+    const heroImgPath = opts.image.startsWith('http') ? opts.image.replace(SITE_URL, '') : opts.image
+    const heroImgDims = IMAGE_DIMENSIONS[heroImgPath]
     article.image = {
       '@type': 'ImageObject',
       url: opts.image,
+      // Intrinsic dimensions + representativeOfPage — Google Images / rich
+      // results best practice; helps the hero win the page's image slot.
+      ...(heroImgDims ? { width: heroImgDims.width, height: heroImgDims.height } : {}),
+      representativeOfPage: true,
       ...(opts.imageCaption ? { caption: opts.imageCaption } : {}),
       ...(opts.imageAlt ? { description: opts.imageAlt } : {}),
       creditText: 'ONDA Life',

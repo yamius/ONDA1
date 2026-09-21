@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "The gap between a trigger and a reaction opened by a slow exhale, a calmed amygdala and a 'label' tag naming the feeling — buy the pause.",
   imageTitle: "How to regulate your emotions — buy the pause",
+  imageCaption:
+    "Emotional regulation as a body-first trainable skill — how a slow exhale buys the pause between trigger and reaction and dampens the threat response.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Emotional control isn’t willpower — it’s the pause between trigger and reaction, and the breath is how you buy it.',

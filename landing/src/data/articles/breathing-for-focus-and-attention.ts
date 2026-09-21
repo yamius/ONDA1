@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "A scattered attention spotlight being pulled back into a single focused point by a slow breath, with a calm-alert arousal band marked.",
   imageTitle: "Breathing for focus — how the breath steadies attention",
+  imageCaption:
+    "Breathing for focus — how slow breathing steadies the calm-alert nervous-system state that attention runs on, training the return of a scattered mind.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Focus isn’t only a mind trick — it runs on a body state. Steady the breath and the attention follows.',

@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     'Holographic human figure inside a desynced circadian clock ring — a cyan body-clock misaligned with an orange actual-schedule arc, scattered moon phases around.',
   imageTitle: 'Social jet lag — a bedtime that moves reads as chronic jet lag',
+  imageCaption:
+    "Social jet lag — a bedtime that shifts an hour night to night reads as chronic stress and flattens HRV, so sleep regularity, not just duration, matters.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Duration gets all the attention. Regularity is the number that quietly moves your recovery.',

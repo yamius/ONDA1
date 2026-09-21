@@ -20,6 +20,8 @@ const article: Article = {
   imageAlt:
     "A meditating figure watching their heart rhythm organise into a smooth coherent wave on screen — biofeedback proof versus silent audio-only apps.",
   imageTitle: "The meditation app that shows you it's working",
+  imageCaption:
+    "A biofeedback meditation app that shows your own HRV and breathing organising in real time — proof the session is working, not audio you must trust on faith.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Audio asks for faith. Biofeedback gives proof — your own heart rhythm, organising as you breathe.',

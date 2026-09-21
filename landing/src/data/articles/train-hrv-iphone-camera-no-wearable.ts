@@ -19,6 +19,8 @@ const article: Article = {
   imageAlt:
     "A fingertip over an iPhone rear camera streaming a clean pulse (PPG) waveform — real breathing biofeedback with no watch, ring or chest strap.",
   imageTitle: "Train your breathing with just an iPhone — no wearable needed",
+  imageCaption:
+    "Breathing biofeedback with just an iPhone camera reading your pulse — no wearable needed; honestly, HRV and coherence still need an Apple Watch.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The best biofeedback device is the one already in your pocket. Start with the phone; add a watch later.',

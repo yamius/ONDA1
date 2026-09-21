@@ -54,7 +54,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
-    "modified": "2026-09-17T19:19:45+02:00"
+    "modified": "2026-09-20T23:00:04+02:00"
   },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
@@ -170,7 +170,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "dysautonomia-long-covid-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-17T14:44:39+02:00"
+    "modified": "2026-09-20T23:00:04+02:00"
   },
   "eating-late-heart-rate-sleep": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -226,7 +226,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "high-blood-pressure-slow-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-17T14:44:39+02:00"
+    "modified": "2026-09-20T23:00:04+02:00"
   },
   "how-long-does-alcohol-stay-in-your-system": {
     "published": "2026-06-04T22:53:28+02:00",
@@ -318,7 +318,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
-    "modified": "2026-09-19T00:21:25+02:00"
+    "modified": "2026-09-20T23:00:04+02:00"
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -498,7 +498,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
-    "modified": "2026-09-05T18:33:27+02:00"
+    "modified": "2026-09-20T23:00:04+02:00"
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",

@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "A figure whose sympathetic branch is stuck on, a single long exhale reaching a glowing vagal switch and the system settling from tense to calm.",
   imageTitle: "How to calm your nervous system down — the one input you control",
+  imageCaption:
+    "Down-regulating a wired nervous system through the one input you control — a long exhale that reaches the vagal switch thoughts can't; a practice, not treatment.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You can’t argue yourself calm. But one long exhale reaches the switch your thoughts can’t.',

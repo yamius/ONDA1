@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "A single low HRV point below a smooth personal-corridor band, a slow-breath wave nudging the next reading back up — one dip against the trend, not a verdict.",
   imageTitle: "Your HRV reading is low — read the trend, not one number",
+  imageCaption:
+    "A low HRV reading is usually noise against your personal corridor; slow breathing is the useful response, not panic — read the trend, not one number.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A low number is information, not a verdict — and the useful response is a practice, not a panic.',

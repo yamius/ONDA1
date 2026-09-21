@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "A meditation-content phone and a fitness tracker, with a live biofeedback loop glowing in the gap between them — measure and train in one loop.",
   imageTitle: "The app between a meditation app and a fitness tracker",
+  imageCaption:
+    "The missing middle between a meditation app and a fitness tracker — measuring and training your nervous system in one live biofeedback loop.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'One app talks and never measures. The other measures and never coaches. The gap between them is the point.',

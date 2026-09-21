@@ -21,6 +21,8 @@ const article: Article = {
   imageAlt:
     "A sympathetic-dominant autonomic nervous system with low HRV and a rigid metronomic heartbeat, gentle paced breathing nudging it — support, not a cure.",
   imageTitle: "The autonomic glitch — HRV, breathing and dysautonomia (support, not a cure)",
+  imageCaption:
+    "Why dysautonomia and long Covid show up as low HRV and a rigid heartbeat, and what breathing-biofeedback studies found — support, not a cure, alongside clinical care.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Dysautonomia is a dysregulation of the same system slow breathing trains. See the loop for yourself.',

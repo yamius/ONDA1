@@ -20,6 +20,8 @@ const article: Article = {
   imageAlt:
     "A split: a passive tracker logging a frozen dashboard of the past on the left, an active biofeedback loop responding live to a breath on the right.",
   imageTitle: "Active intervention vs passive tracking — close the loop",
+  imageCaption:
+    "Active intervention versus passive tracking — the 2026 wearable shift from logging a frozen dashboard to closing the loop and changing your state live.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A tracker tells you how you recovered. A biofeedback loop lets you do something about it — live.',

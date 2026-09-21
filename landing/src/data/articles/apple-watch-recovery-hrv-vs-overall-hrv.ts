@@ -23,6 +23,8 @@ const article: Article = {
   imageAlt:
     "An Apple Watch emitting two diverging HRV waveforms from the same heartbeats — Recovery HRV (RMSSD) and Overall HRV (SDNN) on different scales, never merged.",
   imageTitle: "Two HRV numbers — Recovery HRV (RMSSD) vs Overall HRV (SDNN)",
+  imageCaption:
+    "Apple Watch's two HRV numbers explained — Recovery HRV (RMSSD) versus Overall HRV (SDNN), on different scales from the same heartbeats and never merged.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'These are passive overnight metrics. Training your HRV in the moment is a different job entirely.',

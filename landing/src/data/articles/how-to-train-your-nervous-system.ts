@@ -18,6 +18,8 @@ const article: Article = {
   imageAlt:
     "A glowing nervous system with the vagal parasympathetic brake strengthened like a trained muscle, HRV shown as the scoreboard — nervous-system training.",
   imageTitle: "How to train your nervous system — strengthen the vagal brake",
+  imageCaption:
+    "Training your nervous system like a muscle — strengthening the vagal brake through breathing, HRV feedback and structured practice for faster stress-to-calm shifts.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You can’t think your way calm — but you can train the system that gets you there. Reps, feedback, progression.',

@@ -21,6 +21,8 @@ const article: Article = {
   imageAlt:
     "An Apple Watch projecting 14-day ranges of resting heart rate, HRV and respiratory rate — the range, not a single number.",
   imageTitle: "What your Apple Watch records over two weeks — the range that matters",
+  imageCaption:
+    "What your Apple Watch quietly logs each night — resting heart rate, HRV and respiratory rate; why fourteen days of range tells you more than one reading.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'See your own two weeks, read off your watch on your iPhone — nothing is uploaded.',
