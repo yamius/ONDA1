@@ -67,8 +67,10 @@ export type AnalyticsEventName =
   | 'first_signal_practice'          // started the offered practice from the first signal — params: metric, color.
   | 'first_signal_dismissed'         // acknowledged/recorded the first signal without practising — params: metric, color.
   // Baseline (retention — Health-baseline onboarding)
-  | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera), age_band. Declared now; fired in Phase 2.
-  | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag. Lets us see which numbers Health actually gave without a device session.
+  | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera), age_band; watch also: rhr_avg, hrv_avg, rr_avg (14-day averages, rounded, real-sensor only). Retrospective by-age datapoint on connect.
+  | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag + age_band. Lets us see which numbers Health actually gave without a device session.
+  | 'baseline_variability'           // day-to-day variability of the personal corridor — params: age_band, rhr_cv, hrv_cv, rr_cv (coefficient of variation %, scalar only; raw nightly series stays on device). Once per install.
+  | 'sleep_rhythm'                   // bucketed sleep aggregate — params: age_band, sleep_dur_bin (half-hour), bedtime_hr, wake_hr. Coarse buckets only, no per-night records. Once per install.
   | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
   // Diary (retention step 3 — local-first day notes)
   | 'diary_opened'                   // diary opened — params: source (home_button | menu | anomaly_prompt(future)).

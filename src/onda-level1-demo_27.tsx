@@ -77,7 +77,7 @@ import { useAnalytics } from './hooks/useAnalytics';
 // Singleton, not the hook: the hidden internal-traffic toggle is the only
 // consumer, so it isn't worth widening the useAnalytics() surface for it.
 import { analytics } from './services/AnalyticsService';
-import { ageBand, localHour, localWeekday } from './lib/eventContext';
+import { ageBand, localHour, localWeekday, coeffOfVariation } from './lib/eventContext';
 import { practiceAttemptsSoFar, daysSinceFirstSeen } from './lib/lifecycleMarkers';
 import {
   trackTenjinPractice,
@@ -288,6 +288,9 @@ const OndaLevel1 = () => {
         vo2: ex.vo2 ?? null,
         hrr: ex.hrr ?? null,
         extras_keys: Object.keys(ex).join(',') || 'none',
+        // age_band makes the VO2 / walking-HR / cardio-recovery extras above
+        // joinable by age for anonymized "X by age" aggregates (task 565 #1).
+        age_band: ageBand(),
       });
 
       const data = buildFromNative(res);
@@ -295,7 +298,18 @@ const OndaLevel1 = () => {
       setBaseline({ data, source: 'watch' });
       try { localStorage.setItem('onda_baseline_watching', 'true'); } catch { /* noop */ }
       const coverage = Math.max(0, ...data.readings.map((r) => r.days));
-      track('baseline_shown', { source: 'watch', coverage_days: coverage, age_band: ageBand() });
+      // Real baseline averages + age_band = a retrospective by-age datapoint on
+      // every watch connect (task 565 #1): "Normal HRV / RHR / respiratory rate
+      // by age". Anonymized — a 14-day average bucketed later by age_band, no
+      // user_id. null when Health didn't return that signal (never fabricated).
+      track('baseline_shown', {
+        source: 'watch',
+        coverage_days: coverage,
+        age_band: ageBand(),
+        rhr_avg: res.rhr?.avg != null ? Math.round(res.rhr.avg) : undefined,
+        hrv_avg: res.hrv?.avg != null ? Math.round(res.hrv.avg) : undefined,
+        rr_avg: res.rr?.avg != null ? Math.round(res.rr.avg) : undefined,
+      });
       // Activation heart (task 87): the baseline actually BUILT from real Health
       // history. Once per install — the entry funnel's success moment.
       try {
@@ -744,6 +758,21 @@ const OndaLevel1 = () => {
         });
         const ts = computeTrafficLight(signals);
         setTrafficState(ts);
+        // Day-to-day variability (task 565 #2): one coefficient-of-variation
+        // scalar per signal from the nightly corridor → "how much daily HRV / RHR
+        // normally varies, by age". The raw nightly series NEVER leaves the
+        // device — only the CV percent + age_band. Once per install (stable stat).
+        try {
+          if (localStorage.getItem('onda_variability_tracked') !== '1') {
+            const rhrCv = coeffOfVariation(corridors.rhr?.values ?? []);
+            const hrvCv = coeffOfVariation(corridors.hrv?.values ?? []);
+            const rrCv = coeffOfVariation(corridors.rr?.values ?? []);
+            if (rhrCv != null || hrvCv != null || rrCv != null) {
+              localStorage.setItem('onda_variability_tracked', '1');
+              track('baseline_variability', { age_band: ageBand(), rhr_cv: rhrCv, hrv_cv: hrvCv, rr_cv: rrCv });
+            }
+          }
+        } catch { /* noop */ }
         // first_signal_received (task 87): the traffic light first left green for
         // this install. Once, on the REAL corridor path only (the sim path never
         // fires real signal analytics). color = amber/red for GA4 cohorting.
@@ -1361,6 +1390,26 @@ const OndaLevel1 = () => {
         setRhythmProgress(rhythmStore.progress());
         setRhythmLog(rhythmStore.getLog());
         console.log('[App] Life Rhythm synced from HealthKit');
+        // Bucketed sleep aggregate (task 565 #3): typical sleep duration/timing
+        // by age. Coarse buckets only — duration to the half-hour, bedtime/wake
+        // to the hour — plus age_band. No raw per-night records leave the device.
+        // Once per install (sleep pattern is slow-moving).
+        try {
+          if (localStorage.getItem('onda_sleep_rhythm_tracked') !== '1') {
+            const m = rhythmStore.getMetrics();
+            const bedHr = /^\d{1,2}:/.test(m.avgSleepTime) ? parseInt(m.avgSleepTime.split(':')[0], 10) : null;
+            const wakeHr = /^\d{1,2}:/.test(m.avgWakeTime) ? parseInt(m.avgWakeTime.split(':')[0], 10) : null;
+            if (m.avgDurationHours > 0 && bedHr != null && wakeHr != null) {
+              localStorage.setItem('onda_sleep_rhythm_tracked', '1');
+              track('sleep_rhythm', {
+                age_band: ageBand(),
+                sleep_dur_bin: Math.round(m.avgDurationHours * 2) / 2, // half-hour bins
+                bedtime_hr: bedHr,
+                wake_hr: wakeHr,
+              });
+            }
+          }
+        } catch { /* noop */ }
       } catch (e) {
         console.log('[App] Life Rhythm sync skipped:', e);
       }

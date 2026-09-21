@@ -64,3 +64,15 @@ export function localHour(d: Date = new Date()): number {
 export function localWeekday(d: Date = new Date()): number {
   return d.getDay();
 }
+
+/** Coefficient of variation (SD / mean) as an integer percent, over a nightly
+ *  series — a single scalar describing how much a signal swings day to day.
+ *  Returns undefined below `minN` samples or for a non-positive mean. Only this
+ *  scalar is ever emitted; the raw nightly series never leaves the device. */
+export function coeffOfVariation(values: number[], minN = 7): number | undefined {
+  if (!values || values.length < minN) return undefined;
+  const mean = values.reduce((a, b) => a + b, 0) / values.length;
+  if (mean <= 0) return undefined;
+  const variance = values.reduce((a, b) => a + (b - mean) ** 2, 0) / values.length;
+  return Math.round((Math.sqrt(variance) / mean) * 100);
+}
