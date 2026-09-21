@@ -8,6 +8,195 @@
  *     AI-citable page text, not just structured data.
  */
 export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]> = {
+  "physiological-sigh": [
+    {
+      question: "How many physiological sighs should I do?",
+      answer:
+        "One to five. The effect starts within the first one to three breaths, so you rarely need more than a few. It's a reset, not a long practice.",
+    },
+    {
+      question: "How fast does the physiological sigh work?",
+      answer:
+        "Within seconds — usually one to three breaths. Stanford research found it reduces stress in real time faster than any other breathing pattern, because the long exhale activates the vagus nerve almost immediately.",
+    },
+    {
+      question: "Physiological sigh vs box breathing — which is better?",
+      answer:
+        "Different jobs. The physiological sigh is faster and better for a sudden stress spike; box breathing is better for sustained, steady calm over a few minutes. For an acute moment, choose the sigh.",
+    },
+    {
+      question: "Is the physiological sigh backed by science?",
+      answer:
+        "Yes. A controlled study from Stanford's Huberman lab found that daily physiological sighing reduced stress and improved mood more than other breathing techniques and mindfulness meditation, with measurable drops in respiratory rate.",
+    },
+    {
+      question: "Can I do the physiological sigh too much?",
+      answer:
+        "No — it's a natural pattern your body already produces on its own. Use it whenever you notice stress or shallow breathing. It is a wellness technique, not a treatment for any medical condition.",
+    },
+  ],
+  "4-7-8-breathing": [
+    {
+      question: "How long until 4-7-8 breathing works?",
+      answer:
+        "Usually three to four rounds, over a couple of minutes. It lowers physiological arousal gradually rather than instantly — it's a wind-down, not an off-switch.",
+    },
+    {
+      question: "Is 4-7-8 breathing good for anxiety?",
+      answer:
+        "Yes, for winding down. The long exhale activates the vagus nerve and lowers heart rate. For a sudden anxiety spike, though, a physiological sigh works faster; 4-7-8 is better for settling over a few minutes.",
+    },
+    {
+      question: "Can I do 4-7-8 breathing every night?",
+      answer:
+        "Yes. It's a safe, natural technique you can use nightly as a wind-down routine. Start with four rounds and build up if you like.",
+    },
+    {
+      question: "4-7-8 vs box breathing — which is better for sleep?",
+      answer:
+        "4-7-8, because the longer exhale and the breath hold push harder toward the rest-and-digest state. Box breathing is better for staying calm and alert, not for falling asleep.",
+    },
+    {
+      question: "Does the exact 4-7-8 count matter?",
+      answer:
+        "Not exactly — the ratio matters more than the precise seconds. Keep the exhale clearly longer than the inhale with a hold between; shorten all three if 7 seconds is uncomfortable.",
+    },
+  ],
+  "alternate-nostril-breathing": [
+    {
+      question: "What are the benefits of alternate nostril breathing?",
+      answer:
+        "It calms the nervous system, lowers heart rate, and is associated with reduced blood pressure and improved HRV. Most of the benefit comes from the slow, even pace it enforces.",
+    },
+    {
+      question: "How long should I do alternate nostril breathing?",
+      answer:
+        "Three to five minutes is a good session. Keep the breath slow and comfortable rather than long or forced.",
+    },
+    {
+      question: "Alternate nostril breathing vs box breathing — which is better?",
+      answer:
+        "They're similar in effect; both calm through slow, controlled breathing. Nadi Shodhana adds a focusing ritual; box breathing is simpler. Choose whichever keeps you engaged.",
+    },
+    {
+      question: "Does the nostril-switching actually matter, or is it the slow pace?",
+      answer:
+        "The evidence points to the slow, even pace as the main driver of the calming effect. The nostril alternation mainly gives your attention a task, which helps you stay with the practice.",
+    },
+    {
+      question: "Can alternate nostril breathing lower blood pressure?",
+      answer:
+        "Research associates regular slow breathing, including Nadi Shodhana, with modest reductions in blood pressure — through vagal activation, not the nostril technique specifically. It's a supportive practice, not a treatment for hypertension.",
+    },
+  ],
+  "humming-breath-vagus": [
+    {
+      question: "How does humming help the vagus nerve?",
+      answer:
+        "The vagus nerve has fibers in the larynx and throat. Humming vibrates them mechanically, stimulating the nerve directly — on top of the calming effect of the long exhale. This raises vagal tone and shifts you toward \"rest and digest.\"",
+    },
+    {
+      question: "How long should I hum for?",
+      answer:
+        "Five to ten breaths, or a few minutes, is plenty. Keep each humming exhale long and even, at a comfortable, unhurried pace.",
+    },
+    {
+      question: "Is humming the same as chanting or singing?",
+      answer:
+        "They work through the same mechanism — vibration in the larynx stimulating vagal fibers plus extended exhales. Humming is just the simplest and quietest version.",
+    },
+    {
+      question: "When should I use humming breath?",
+      answer:
+        "For winding down, before a stressful task, or as a daily calming practice. For a sudden stress spike where you can't make noise, a silent physiological sigh is more practical.",
+    },
+    {
+      question: "Does humming really lower stress?",
+      answer:
+        "Yes — it produces a measurable calming shift (lower heart rate, higher HRV) through vagal stimulation and long exhales. It's a wellness practice, not a treatment for any medical condition.",
+    },
+  ],
+  "normal-hrv-by-age": [
+    {
+      question: "What is a good HRV for my age?",
+      answer:
+        "Roughly 60–100 ms in your 20s, 45–75 ms in your 30s, 35–60 ms in your 40s, 25–50 ms in your 50s, and 20–40 ms after 60 (overnight RMSSD). But the ranges overlap hugely — your own baseline and trend matter far more than the age average.",
+    },
+    {
+      question: "Why is my HRV lower than average?",
+      answer:
+        "It could be entirely normal. HRV varies enormously between individuals, and is affected by your device, genetics, fitness, sleep and stress. A single below-average number means little; a downward trend against your own baseline is what's worth watching.",
+    },
+    {
+      question: "Does HRV really drop with age?",
+      answer:
+        "Yes. Autonomic flexibility declines gradually with age as vagal influence on the heart weakens. It's normal and expected — but fitness, sleep and slow breathing can slow the decline.",
+    },
+    {
+      question: "What's a normal HRV at 40? At 50? At 60?",
+      answer:
+        "Roughly 35–60 ms in your 40s, 25–50 ms in your 50s, and 20–40 ms after 60 for overnight RMSSD — with wide individual variation.",
+    },
+    {
+      question: "Is low HRV something to worry about?",
+      answer:
+        "A single low reading is usually just a rough night. Persistently low HRV that doesn't recover with better sleep and less stress is worth discussing with a doctor — but HRV alone is not a diagnosis.",
+    },
+  ],
+  "resting-heart-rate-by-age": [
+    {
+      question: "What is a normal resting heart rate by age?",
+      answer:
+        "For adults, 60–100 bpm; well-trained adults often 40–60 bpm. Children and teens run higher. Fitness affects the number within adulthood more than age does.",
+    },
+    {
+      question: "Is a resting heart rate of 50 too low?",
+      answer:
+        "Not necessarily — a resting heart rate in the 40s or 50s is common and healthy in fit and athletic people, reflecting an efficient heart. It's only a concern if paired with symptoms like dizziness, fatigue or fainting.",
+    },
+    {
+      question: "What's a normal resting heart rate while sleeping?",
+      answer:
+        "Your sleeping resting heart rate is usually your lowest of the day, often several beats below your daytime resting rate, as parasympathetic activity dominates during deep sleep.",
+    },
+    {
+      question: "Why is my resting heart rate higher than usual?",
+      answer:
+        "Common causes are poor sleep, alcohol, caffeine, stress, illness or dehydration. A rise of several beats above your baseline sustained over a few days often means your body is under load or fighting something.",
+    },
+    {
+      question: "Does resting heart rate go up with age?",
+      answer:
+        "Only modestly in healthy adults — fitness, sleep and lifestyle affect it far more than age. A fit older adult can have a lower resting heart rate than an unfit younger one.",
+    },
+  ],
+  "how-much-alcohol-lowers-hrv": [
+    {
+      question: "Does alcohol really lower HRV?",
+      answer:
+        "Yes, and consistently. Even a single drink lowers HRV by roughly 3–4% (about 7 ms in WHOOP data) and raises sleeping heart rate. The effect is dose-dependent — more drinks, lower HRV — and shows up the same night. Figures are population averages; your own response varies.",
+    },
+    {
+      question: "How much does one drink affect HRV?",
+      answer:
+        "On average, about a 3–4% drop in HRV and a 1–3 bpm rise in sleeping heart rate. WHOOP's aggregate data puts it at roughly −7 ms HRV and +3 bpm for a single drink.",
+    },
+    {
+      question: "Why is my HRV low the morning after drinking, even with good sleep?",
+      answer:
+        "Because alcohol raises your heart rate and suppresses parasympathetic activity all night while your body processes it — independent of your sleep stages. Your sleep can look fine while your cardiovascular recovery is impaired.",
+    },
+    {
+      question: "Does alcohol affect women's HRV more than men's?",
+      answer:
+        "Research suggests yes — women tend to show larger HRV reductions and heart rate increases for the same intake, likely due to differences in how alcohol is metabolized.",
+    },
+    {
+      question: "How long until my HRV recovers after drinking?",
+      answer:
+        "For occasional drinking, usually one to two days as the alcohol clears. For heavy or long-term use, autonomic recovery can take weeks of reduced or stopped drinking.",
+    },
+  ],
   "apple-watch-recovery-hrv-vs-overall-hrv": [
     {
       question: "Why does my Apple Watch show two HRV numbers now?",

@@ -3,6 +3,7 @@ import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
+import remarkGfm from 'remark-gfm'
 import { NotFoundPage } from './NotFoundPage'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { getArticleBySlug } from '../data/articles'
@@ -788,6 +789,24 @@ export function ArticlePage() {
         </a>
       )
     },
+    table: ({ children }: { children?: React.ReactNode }) => (
+      <div className="mb-6 -mx-4 overflow-x-auto px-4 md:mx-0 md:px-0">
+        <table className="w-full border-collapse font-mono text-xs md:text-sm">{children}</table>
+      </div>
+    ),
+    thead: ({ children }: { children?: React.ReactNode }) => (
+      <thead className="border-b border-terminal-green/20">{children}</thead>
+    ),
+    tbody: ({ children }: { children?: React.ReactNode }) => (
+      <tbody className="divide-y divide-white/5">{children}</tbody>
+    ),
+    tr: ({ children }: { children?: React.ReactNode }) => <tr>{children}</tr>,
+    th: ({ children }: { children?: React.ReactNode }) => (
+      <th className="px-3 py-2 text-left align-top font-semibold text-terminal-green/80">{children}</th>
+    ),
+    td: ({ children }: { children?: React.ReactNode }) => (
+      <td className="px-3 py-2 align-top leading-relaxed text-white/60">{children}</td>
+    ),
   }
 
   return (
@@ -903,7 +922,7 @@ export function ArticlePage() {
       })()}
 
       <article className="prose-onda">
-        <Markdown rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>
+        <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>
           {injectArticleGlossaryLinks(tContent, langPrefix)}
         </Markdown>
       </article>
