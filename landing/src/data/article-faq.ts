@@ -1325,6 +1325,33 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "hrv-breathing-cold-honest-limits": [
+    {
+      question: "Does breathing permanently raise your HRV?",
+      answer:
+        "Not from a single session — the rise is temporary. A longer exhale briefly slows the heart, and slow breathing raises HRV in the moment. Lasting change, if it happens, shows up slowly as a shifting baseline over weeks of consistent practice, not as one dramatic reading.",
+    },
+    {
+      question: "How long does the HRV boost from cold exposure last?",
+      answer:
+        "Roughly 15 minutes, according to a 2024 meta-analysis — a clear but short-lived rise, similar to cold showers. It's a moment of calm, not a permanent upgrade to your nervous system.",
+    },
+    {
+      question: "Does a high HRV during a breathing exercise mean my nervous system is healthier?",
+      answer:
+        "Not automatically. Part of the spike is simply the breathing temporarily adding rhythm to your heartbeat. It's a real live effect, but structural change is measured by your baseline over time, not by one session.",
+    },
+    {
+      question: "Is \"HRV equals vagus tone\" accurate?",
+      answer:
+        "It's an oversimplification. HRV is a useful window into autonomic balance, but at slow breathing rates and across conditions the relationship isn't a clean one-to-one — sympathetic influence and acetylcholine dynamics complicate the simple story.",
+    },
+    {
+      question: "So are vagus-nerve breathing and cold worth doing?",
+      answer:
+        "Yes — for reliable short-term calm and recovery, which is genuinely useful. Just don't expect a permanent nervous-system reset; that's where the hype overpromises.",
+    },
+  ],
   "hrv-harmony-of-rhythms": [
     {
       question: "What does HRV actually measure?",

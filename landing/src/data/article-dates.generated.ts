@@ -292,13 +292,17 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-10T14:37:54Z",
     "modified": "2026-06-09T14:23:13+02:00"
   },
+  "hrv-breathing-cold-honest-limits": {
+    "published": "2026-09-22T05:50:47.186Z",
+    "modified": "2026-09-22T05:50:47.186Z"
+  },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
     "modified": "2026-09-12T12:28:48+02:00"
   },
   "hrv-harmony-of-rhythms": {
-    "published": "2026-09-22T05:23:27.677Z",
-    "modified": "2026-09-22T05:23:27.677Z"
+    "published": "2026-09-22T07:30:24+02:00",
+    "modified": "2026-09-22T07:30:24+02:00"
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -470,7 +474,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "social-jet-lag-irregular-sleep": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-22T07:30:24+02:00"
   },
   "spinal-harddrive-cpg-autonomous-scripts": {
     "published": "2026-03-31T22:15:23Z",
