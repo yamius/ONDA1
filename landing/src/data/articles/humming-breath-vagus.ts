@@ -37,6 +37,8 @@ Repeat for five to ten breaths, or a few minutes. Some people gently rest their 
 
 Most breathing techniques reach the vagus nerve indirectly, through the pace of the breath. Humming adds a second, direct route: the vagus nerve has fibers running through the larynx and the muscles of the throat and soft palate. When you hum, chant or sing, the vibration mechanically stimulates those fibers, raising vagal tone on top of the effect of the long exhale.
 
+Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari improved parasympathetic tone both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
+
 That's why humming shows up alongside slow breathing and cold-water exposure on nearly every list of evidence-based ways to activate the vagus nerve. You get both effects at once: the extended exhale tips you toward "rest and digest," and the vibration gives the vagus nerve a direct nudge. The result is a measurable calming shift — heart rate down, heart rate variability (HRV) up — often within a few breaths. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises).
 
 ## When to use humming breath

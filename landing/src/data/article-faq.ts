@@ -1325,6 +1325,60 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "fast-vs-slow-pranayama": [
+    {
+      question: "Is all breathwork calming?",
+      answer:
+        "No. Fast pranayama (Kapalabhati, Bhastrika) is energizing and activates the sympathetic system; slow pranayama (Nadi Shodhana, Bhramari) is calming and activates the parasympathetic system. Using fast breathing to calm down works against you.",
+    },
+    {
+      question: "Which pranayama is best for calming down?",
+      answer:
+        "Slow pranayama — Nadi Shodhana (alternate nostril), Bhramari (humming), or any slow breathing with a long exhale. Research found cardiovascular calming effects appear after slow, not fast, pranayama.",
+    },
+    {
+      question: "Does Kapalabhati calm or energize you?",
+      answer:
+        "It energizes. Kapalabhati is fast, forceful breathing that raises alertness and sympathetic activity — good for mornings, not for winding down or easing anxiety.",
+    },
+    {
+      question: "Can fast breathing raise my HRV?",
+      answer:
+        "Not the way slow breathing does. Slow breathing with a long exhale raises HRV by activating the vagus nerve; fast forceful breathing drives sympathetic arousal instead.",
+    },
+    {
+      question: "Which pranayama should I do before bed?",
+      answer:
+        "Slow pranayama — alternate nostril or humming breath, with slow long exhales. Avoid fast techniques like Kapalabhati before sleep; they're energizing.",
+    },
+  ],
+  "cardiac-coherence-365-method": [
+    {
+      question: "What is the 365 method of cardiac coherence?",
+      answer:
+        "Three times a day, six breaths per minute, for five minutes each. It's the standard French protocol for cardiac coherence — a rhythm of regulation spread across the day rather than a single session.",
+    },
+    {
+      question: "What is cardiac coherence breathing?",
+      answer:
+        "Slow rhythmic breathing at about six breaths per minute that synchronizes your heart and breath, balancing the autonomic nervous system and raising HRV. It's the French clinical version of coherent or resonance breathing.",
+    },
+    {
+      question: "Why six breaths per minute?",
+      answer:
+        "Because it's close to the resonance frequency of the cardiovascular system (~0.1 Hz), where heart-rate and blood-pressure rhythms oscillate together at maximum amplitude — producing the strongest HRV response. Recent research found six per minute most strongly activates the vagus nerve.",
+    },
+    {
+      question: "How long does it take to feel the effect?",
+      answer:
+        "A single five-minute session produces an immediate but temporary calming shift. The 365 method uses three sessions a day precisely because the effect fades — repeating it keeps returning your nervous system to balance.",
+    },
+    {
+      question: "Is cardiac coherence the same as coherent breathing?",
+      answer:
+        "Essentially yes — cardiac coherence is the French clinical tradition, with the specific 365 protocol; \"coherent\" or \"resonance\" breathing is the English-language term for the same six-breaths-per-minute physiology.",
+    },
+  ],
   "breathing-lowers-stress-hormones": [
     {
       question: "Does breathing actually lower cortisol?",

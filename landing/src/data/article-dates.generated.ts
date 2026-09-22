@@ -90,7 +90,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-exercises-older-adults": {
     "published": "2026-09-22T08:22:18+02:00",
-    "modified": "2026-09-22T08:22:18+02:00"
+    "modified": "2026-09-22T10:19:56+02:00"
   },
   "breathing-for-focus-and-attention": {
     "published": "2026-09-19T01:02:52+02:00",
@@ -98,7 +98,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-lowers-stress-hormones": {
     "published": "2026-09-22T08:22:18+02:00",
-    "modified": "2026-09-22T08:22:18+02:00"
+    "modified": "2026-09-22T10:19:56+02:00"
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -119,6 +119,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "calm-your-nervous-system-down": {
     "published": "2026-09-19T01:18:42+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "cardiac-coherence-365-method": {
+    "published": "2026-09-22T16:30:28.790Z",
+    "modified": "2026-09-22T16:30:28.790Z"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -211,6 +215,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "fascial-tensegrity-protocol-myofascial-noise": {
     "published": "2026-05-01T23:21:51+02:00",
     "modified": "2026-05-18T09:59:04+02:00"
+  },
+  "fast-vs-slow-pranayama": {
+    "published": "2026-09-22T16:29:58.436Z",
+    "modified": "2026-09-22T16:29:58.436Z"
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",

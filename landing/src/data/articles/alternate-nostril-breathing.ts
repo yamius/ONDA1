@@ -37,6 +37,8 @@ That's one full cycle. Continue for three to five minutes, keeping the breath sl
 
 Nadi Shodhana's calming effect has a straightforward explanation: it slows your breathing down and makes it even and deliberate. Slow breathing — roughly five to six breaths per minute — is one of the most robustly supported ways to activate the vagus nerve, shift toward the parasympathetic "rest and digest" state, and raise HRV in real time. The alternating nostrils give your mind a simple task to focus on, which helps you stay with the practice, but the physiological benefit comes overwhelmingly from the pace. That same pace is what a [resonance breathing rate](/articles/find-your-resonance-breathing-rate) targets directly.
 
+Indian clinical research backs the calming effect: in a randomized trial of hypertensive patients, 20 minutes of Nadi Shodhana significantly lowered systolic and diastolic blood pressure and heart rate, and improved auditory reaction time — a marker of a calmer, more responsive nervous system. Interestingly, the same trial found the change in HRV parameters themselves was not always statistically significant — a reminder that the benefit shows up across several measures, not one number.
+
 Traditional yoga also describes alternate nostril breathing as "balancing" the two hemispheres of the brain. The honest state of the evidence: this specific claim is weakly supported. What's well supported is that slow, controlled breathing calms the nervous system — and Nadi Shodhana is a pleasant, structured way to get there.
 
 ## When to use it
