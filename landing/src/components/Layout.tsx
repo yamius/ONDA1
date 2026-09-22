@@ -6,6 +6,7 @@ import { TransitionLink } from './TransitionLink'
 import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
 import { emotonCtaUrl } from '../config/appStore'
 import { rdtTrack } from '../lib/redditPixel'
+import { gtmPageView, gtmAppStoreClick } from '../lib/gtm'
 
 export function Layout() {
   const location = useLocation()
@@ -80,6 +81,9 @@ export function Layout() {
     if (rdtLastPath.current === location.pathname) return
     rdtLastPath.current = location.pathname
     rdtTrack('PageVisit')
+    // GA4 (via GTM): same pageview on load + every SPA route change, so the
+    // Acquisition (landing page) and Path-exploration (movement) reports fill.
+    gtmPageView(location.pathname)
   }, [location.pathname])
 
   // Reddit Pixel — count a Lead whenever an App Store CTA is clicked anywhere
@@ -95,6 +99,12 @@ export function Layout() {
       if (!anchor) return
       if (!(anchor.getAttribute('href') || '').includes('apps.apple.com')) return
       rdtTrack('Lead')
+      // GA4 (via GTM): the App Store conversion, tied to the exact page it fired
+      // from and the Apple `ct` campaign on the link. window.location (not the
+      // react-router `location` closure) so it's never stale in this listener.
+      let campaign = 'unknown'
+      try { campaign = new URL(anchor.href).searchParams.get('ct') || 'unknown' } catch { /* keep unknown */ }
+      gtmAppStoreClick(window.location.pathname, campaign)
     }
     document.addEventListener('click', onClick, true)
     return () => document.removeEventListener('click', onClick, true)

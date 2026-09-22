@@ -89,8 +89,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "breathing-altitude-acclimatization": {
-    "published": "2026-09-22T16:42:13.162Z",
-    "modified": "2026-09-22T16:42:13.162Z"
+    "published": "2026-09-22T18:48:54+02:00",
+    "modified": "2026-09-22T18:48:54+02:00"
   },
   "breathing-exercises-older-adults": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -561,8 +561,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "wim-hof-breathing-inflammation": {
-    "published": "2026-09-22T16:41:48.918Z",
-    "modified": "2026-09-22T16:41:48.918Z"
+    "published": "2026-09-22T18:48:54+02:00",
+    "modified": "2026-09-22T18:48:54+02:00"
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",
