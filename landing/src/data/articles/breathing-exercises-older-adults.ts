@@ -1,62 +1,61 @@
 import type { Article } from './types'
 
 /**
- * Age-specific efficacy: Japanese research (Tanaka et al., 14 healthy older adults) — abdominal
- * breathing lowered HR, systolic+diastolic BP, raised parasympathetic index, lowered stress hormones,
- * and was NOT a strain. Fills the "does it work past 25?" gap. Mechanism (baroreflex + long exhale)
- * survives age even as HRV declines. AEO reference + howToSteps + FAQ. Honest medical caveat kept.
+ * Age-specific efficacy, honest version. Grounded: Magnon et al. 2021 (Scientific Reports) — single
+ * session of slow deep breathing raised vagal tone + lowered anxiety in BOTH young and older adults;
+ * 2024 community-dwelling-older-adults study — single session did NOT significantly move blood pressure
+ * (autonomic shift immediate, BP is a multi-week project). Mechanism (baroreflex + long exhale) survives
+ * age. AEO reference + howToSteps + FAQ. Medical caveat kept; no fabricated stats.
  */
 const article: Article = {
   slug: 'breathing-exercises-older-adults',
-  title: 'Do Breathing Exercises Work for Older Adults? What Japanese Research Shows',
+  title: 'Do Breathing Exercises Work for Older Adults? What the Research Shows',
   seoTitle: 'Breathing Exercises for Older Adults: The Evidence | ONDA Life',
   description:
-    'Japanese research found slow abdominal breathing lowers blood pressure, heart rate and stress hormones in healthy older adults — without straining them. The evidence and how to practice safely.',
+    'Research shows slow breathing raises vagal tone and lowers anxiety in older adults — though a single session may not move blood pressure. The evidence and how to practice safely as you age.',
   category: 'ONDA Protocol',
   relatedSlugs: ['breathing-lowers-stress-hormones', 'coherent-breathing-guide', 'normal-hrv-by-age', 'resting-heart-rate-by-age', 'high-blood-pressure-slow-breathing'],
   introStyle: 'cyan',
   neuralSuggestion: {
-    text: 'HRV declines with age — but the lever (a long, slow exhale) still works. See your own numbers respond.',
+    text: 'The calming vagal shift is immediate; the blood-pressure benefit, if it comes, builds over weeks. See your own trend.',
     link: '/measurements',
     linkText: 'What ONDA measures →',
   },
   content: `
-Yes — and gently. Most breathing research is done on young adults, leaving an open question for everyone else. Japanese physiology research specifically tested healthy older adults and found that conscious abdominal breathing lowered their heart rate, reduced both systolic and diastolic blood pressure, shifted them toward the parasympathetic "rest and digest" state, and significantly lowered stress hormones. Crucially, the breathing was not a strain on their bodies — it kept them relaxed rather than taxing them. For older adults wary that "breathing exercises" might mean effortful huffing, this is reassuring: slow belly breathing is a calm, low-demand practice that works with an aging nervous system, not against it.
+Yes — and gently. Most breathing research is done on young adults, leaving an open question for everyone else. But studies that tested older adults directly are clear: slow, deep breathing raises vagal tone (parasympathetic activity) and lowers anxiety in older adults, just as it does in the young. A 2021 study comparing young and older adults found that a single session of deep, slow breathing improved vagal tone and reduced anxiety across both age groups. One honest caveat from more recent work: a single session may not significantly change blood pressure in healthy older adults, even as it clearly shifts heart rate variability. So the calming, autonomic benefit is real and immediate; the blood-pressure benefit, if it comes, builds over weeks of practice rather than in one sitting.
 
 ## Why age-specific research matters
 
-[Heart rate variability](/articles/normal-hrv-by-age) (HRV) declines with age, and the autonomic nervous system becomes less flexible. That raises a fair question: do breathing techniques studied in 25-year-olds still do anything for someone at 65 or 75? Extrapolating from young participants isn't good enough, because the baseline physiology is different.
+[Heart rate variability](/articles/normal-hrv-by-age) (HRV) declines with age, and the autonomic nervous system becomes less flexible. That raises a fair question: do breathing techniques studied in 25-year-olds still do anything at 65 or 75? Extrapolating from young participants isn't good enough, because the baseline physiology is different.
 
-This is exactly the gap Japanese research addressed by studying healthy older adults directly. Rather than assuming the effect carries over, they measured it — circulation, autonomic indices, and stress hormones — in an older group. That makes the findings directly relevant to a population usually left out of the breathing-technique conversation.
+This is exactly the gap that age-comparison research addressed. In a 2021 study (Magnon and colleagues, published in *Scientific Reports*), young and older adults did a single session of deep, slow breathing, and researchers measured vagal tone through HRV alongside self-reported anxiety. Rather than assuming the young-adult effect carries over, they measured it directly in both groups — making the findings genuinely relevant to people usually left out of the breathing conversation.
 
 ## What the research found in older adults
 
-In a study of 14 healthy older adults (7 men, 7 women), researchers measured RR-intervals (the timing between heartbeats), blood pressure, and stress hormones from saliva and urine, comparing normal breathing to conscious abdominal breathing. During abdominal breathing:
+Two findings, taken together, give an honest picture:
 
-- **Heart rate fell**, as with younger people.
-- **Both systolic and diastolic blood pressure dropped.**
-- **The parasympathetic index rose** — a shift toward "rest and digest."
-- **Stress hormones decreased significantly** (the same [hormone evidence](/articles/breathing-lowers-stress-hormones) seen in younger adults).
+- **Vagal tone and anxiety improve (2021, young and older adults).** A single session of deep and slow breathing increased vagal tone — the parasympathetic "rest and digest" activity measured through HRV — and reduced anxiety, in both young and older participants. The calming effect was not limited to the young; older adults benefited too.
+- **Blood pressure may not shift in one session (2024, older adults).** A separate study of community-dwelling older adults compared structured and natural deep breathing at six breaths per minute. Both effectively enhanced parasympathetic activity and modulated HRV — but a single session did not significantly change blood pressure in these healthy elderly participants. The autonomic shift was immediate; the blood-pressure change was not.
 
-And the key safety finding: conscious abdominal breathing was **not a stressor** for the older participants. It maintained a relaxed state rather than demanding effort — an important point for anyone worried that breathing exercises might raise blood pressure or strain the heart.
+The combined message is honest and useful: for an older adult, slow breathing reliably produces the calming, vagal shift right away, while any blood-pressure benefit is a longer-term project built through consistent practice — consistent with broader evidence that [weeks of slow breathing can lower blood pressure](/articles/high-blood-pressure-slow-breathing) and raise HRV.
 
 ## Why it works with an older nervous system
 
-Slow abdominal breathing works through a reflex that doesn't depend on youthful fitness. Breathing low and slow — around six breaths per minute — activates the baroreflex, the blood-pressure regulating loop in your arteries, and stimulates the [vagus nerve](/glossary/vagus-nerve) via the long exhale. These are built-in mechanisms that remain accessible with age. So even as HRV naturally declines, the *lever* — a long, slow exhale that tips you toward parasympathetic activity — still works. You may start from a lower baseline than a 25-year-old, but the direction of the shift is the same.
+Slow breathing works through a reflex that doesn't depend on youthful fitness. Breathing low and slow — around six breaths per minute — activates the baroreflex, the blood-pressure regulating loop in your arteries, and stimulates the [vagus nerve](/glossary/vagus-nerve) via the long exhale. These are built-in mechanisms that remain accessible with age. So even as HRV naturally declines, the *lever* — a long, slow exhale that tips you toward parasympathetic activity — still works. You may start from a lower baseline than a 25-year-old, but the direction of the shift is the same. And reassuringly, research shows community-dwelling older adults can do controlled breathing successfully without special equipment or training.
 
 ## How older adults can practice safely
 
-Slow, gentle abdominal breathing is low-demand, but comfort is always the guide:
+Slow, gentle breathing is low-demand, but comfort is always the guide:
 
 - **Sit comfortably and breathe into the belly**, not the chest. Place a hand on your abdomen to feel it rise.
-- **Keep it slow and easy** — a gentle, long exhale is the active ingredient. Never force or strain.
-- **Aim for a few minutes** at a time. The research effect came from calm, focused sessions, not long or effortful ones.
-- **Stop if you feel dizzy or lightheaded** and return to normal breathing.
-- If you have a heart or blood-pressure condition, check with your doctor first — this is a wellness practice, not a treatment. For the blood-pressure angle specifically, see [slow breathing for high blood pressure](/articles/high-blood-pressure-slow-breathing).
+- **Aim for about six breaths per minute** — a slow, gentle rhythm with a long, easy exhale. That's the pace the research used.
+- **Keep sessions short** — a few minutes at a time is enough to shift your autonomic balance.
+- **Don't strain or force it.** Stop if you feel dizzy or lightheaded and return to normal breathing.
+- If you have a heart or blood-pressure condition, check with your doctor first — this is a wellness practice, not a treatment, and single sessions don't reliably change blood pressure.
 
 ## See your own response
 
-Because everyone's baseline differs — especially with age — the useful measure is your own. ONDA reads your resting heart rate and HRV from your Apple Watch history and builds your personal baseline, then shows how today compares. You can watch your pulse settle as you breathe, and track whether your own numbers respond — which matters far more than any age-average chart.
+Because everyone's baseline differs — especially with age — the useful measure is your own. ONDA reads your resting heart rate and HRV from your Apple Watch history and builds your personal baseline, then shows how today compares. You can watch your pulse settle as you breathe, and track whether your own numbers respond over weeks — which matters far more than any age-average chart.
 `,
   howToSteps: [
     {
@@ -65,18 +64,18 @@ Because everyone's baseline differs — especially with age — the useful measu
       protocolId: 'boa-belly',
     },
     {
-      name: 'Keep it slow, gentle and unforced',
-      text: 'A gentle, long exhale is the active ingredient — around six breaths per minute. Never force or strain; the research effect came from a relaxed state.',
-      protocolId: 'boa-gentle',
+      name: 'Aim for about six breaths per minute',
+      text: 'A slow, gentle rhythm with a long, easy exhale — roughly six breaths per minute is the pace the research used to raise vagal tone.',
+      protocolId: 'boa-pace',
     },
     {
-      name: 'Practice a few minutes at a time',
-      text: 'Short, calm, focused sessions are enough. Longer or effortful breathing is not the goal.',
+      name: 'Keep sessions short',
+      text: 'A few minutes at a time is enough to shift your autonomic balance. Longer or effortful breathing is not the goal.',
       protocolId: 'boa-brief',
     },
     {
       name: 'Let comfort be the guide',
-      text: 'Stop and return to normal breathing if you feel dizzy or lightheaded. With a heart or blood-pressure condition, check with your doctor first — it is a wellness practice, not a treatment.',
+      text: 'Never strain or force it; stop and return to normal breathing if you feel dizzy or lightheaded. With a heart or blood-pressure condition, check with your doctor first — single sessions do not reliably change blood pressure, and this is a wellness practice, not a treatment.',
       protocolId: 'boa-comfort',
     },
   ],

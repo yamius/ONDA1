@@ -89,16 +89,16 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "breathing-exercises-older-adults": {
-    "published": "2026-09-22T06:15:41.495Z",
-    "modified": "2026-09-22T06:15:41.495Z"
+    "published": "2026-09-22T08:22:18+02:00",
+    "modified": "2026-09-22T08:22:18+02:00"
   },
   "breathing-for-focus-and-attention": {
     "published": "2026-09-19T01:02:52+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "breathing-lowers-stress-hormones": {
-    "published": "2026-09-22T06:15:15.639Z",
-    "modified": "2026-09-22T06:15:15.639Z"
+    "published": "2026-09-22T08:22:18+02:00",
+    "modified": "2026-09-22T08:22:18+02:00"
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -421,8 +421,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T17:29:12+02:00"
   },
   "nose-vs-mouth-breathing": {
-    "published": "2026-09-22T06:16:03.663Z",
-    "modified": "2026-09-22T06:16:03.663Z"
+    "published": "2026-09-22T08:22:18+02:00",
+    "modified": "2026-09-22T08:22:18+02:00"
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",

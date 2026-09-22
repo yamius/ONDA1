@@ -35,7 +35,7 @@ Japanese physiology research took the harder path. By collecting saliva and urin
 Two Japanese studies stand out, both using conscious abdominal (diaphragmatic) breathing:
 
 - **Healthy women (11 participants).** During abdominal breathing, frequency analysis of the heartbeat showed the parasympathetic system became dominant. In urine samples, **noradrenaline, adrenaline and cortisol all dropped significantly** after abdominal breathing. Serotonin, linked to alertness, did not change. The conclusion: abdominal breathing is not a stressor on the body — it reliably maintains a relaxed state.
-- **Healthy older adults (14 participants, Tanaka et al.).** During conscious abdominal breathing, heart rate fell, both systolic and diastolic blood pressure dropped, and the parasympathetic index rose. Stress hormones decreased significantly, and the breathing was not a burden for older participants — it kept them relaxed rather than taxing them (more in [breathing exercises for older adults](/articles/breathing-exercises-older-adults)).
+- **Healthy older adults (14 participants, Tanaka et al.).** During conscious abdominal breathing, heart rate fell, both systolic and diastolic blood pressure dropped, and the parasympathetic index rose. Stress hormones decreased significantly, and the breathing was not a burden for older participants — it kept them relaxed rather than taxing them (see also [breathing exercises for older adults](/articles/breathing-exercises-older-adults)).
 
 Together these show a consistent picture across ages and sexes: slow abdominal breathing shifts you toward parasympathetic dominance *and* lowers the measurable hormones of stress.
 

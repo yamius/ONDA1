@@ -1356,12 +1356,17 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Do breathing exercises work for older adults?",
       answer:
-        "Yes. Japanese research on healthy older adults found conscious abdominal breathing lowered heart rate, blood pressure and stress hormones, and shifted them toward the parasympathetic state — without straining the body.",
+        "Yes. A 2021 study in Scientific Reports found that a single session of deep, slow breathing raised vagal tone and reduced anxiety in older adults, just as in young adults. The calming, autonomic benefit is immediate.",
     },
     {
-      question: "Are breathing exercises safe for older adults with high blood pressure?",
+      question: "Does slow breathing lower blood pressure in older adults?",
       answer:
-        "The research found slow abdominal breathing lowered blood pressure and was not a stressor. Still, if you have a heart or blood-pressure condition, check with your doctor first — it's a wellness practice, not a medical treatment.",
+        "Not reliably in a single session — a 2024 study found no significant blood-pressure change in one sitting for healthy older adults, even though HRV improved. Blood-pressure benefits, if they come, build over weeks of consistent practice.",
+    },
+    {
+      question: "Is slow breathing safe for older adults?",
+      answer:
+        "It's a gentle, low-demand practice, and research shows older adults can do it without special equipment. Still, if you have a heart or blood-pressure condition, check with your doctor first — it's a wellness practice, not a medical treatment.",
     },
     {
       question: "Does breathing still help if my HRV is low because of age?",
@@ -1371,12 +1376,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How should an older adult practice breathing?",
       answer:
-        "Sit comfortably, breathe slowly and gently into the belly with a long exhale, for a few minutes. Never force it; stop if you feel lightheaded.",
-    },
-    {
-      question: "Is chest or belly breathing better for older adults?",
-      answer:
-        "Belly (diaphragmatic) breathing is what the research used and what activates the calming reflex. Shallow chest breathing doesn't produce the same effect.",
+        "Sit comfortably, breathe slowly and gently into the belly at about six breaths per minute with a long exhale, for a few minutes. Never force it; stop if you feel lightheaded.",
     },
   ],
   "nose-vs-mouth-breathing": [
