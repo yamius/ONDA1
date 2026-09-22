@@ -293,8 +293,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-09T14:23:13+02:00"
   },
   "hrv-breathing-cold-honest-limits": {
-    "published": "2026-09-22T05:50:47.186Z",
-    "modified": "2026-09-22T05:50:47.186Z"
+    "published": "2026-09-22T07:55:50+02:00",
+    "modified": "2026-09-22T07:55:50+02:00"
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",

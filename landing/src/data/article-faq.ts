@@ -1347,6 +1347,11 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It's an oversimplification. HRV is a useful window into autonomic balance, but at slow breathing rates and across conditions the relationship isn't a clean one-to-one — sympathetic influence and acetylcholine dynamics complicate the simple story.",
     },
     {
+      question: "Is a higher HRV always better?",
+      answer:
+        "No. HRV is context-dependent, not a \"higher is better\" score. Some cardiovascular and endocrine conditions are associated with elevated overnight HRV, and in some studies HRV wasn't sensitive enough to distinguish traits at all. What matters is your own stable pattern over time, not the highest possible number.",
+    },
+    {
       question: "So are vagus-nerve breathing and cold worth doing?",
       answer:
         "Yes — for reliable short-term calm and recovery, which is genuinely useful. Just don't expect a permanent nervous-system reset; that's where the hype overpromises.",

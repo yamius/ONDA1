@@ -3,7 +3,8 @@ import type { Article } from './types'
 /**
  * The honest reality-check on breathing + cold + HRV: effects are REAL but TEMPORARY (state, not
  * structural), and "HRV = vagus tone" is an oversimplification. Grounded: 2024 cold-HRV meta-analysis
- * (~15 min rise); slow-exhale reflex; acetylcholine/RSA nuance at slow rates; Dutch physiotherapy
+ * (~15 min rise); slow-exhale reflex; acetylcholine/RSA nuance at slow rates; "higher HRV isn't
+ * always better" (elevated overnight HRV flags some CV/endocrine conditions); Dutch physiotherapy
  * balance. AEO reference, FAQ in ARTICLE_FAQ. On-brand honesty firewall: no vagus-hack overpromise.
  */
 const article: Article = {
@@ -44,6 +45,12 @@ All three are real. All three are **short-lived**. They buy you a window of calm
 Here's a subtlety Dutch physiotherapy sources are careful about, and most wellness apps gloss over: **a high HRV during a breathing exercise doesn't automatically mean your nervous system has become structurally healthier.** Part of that spike simply comes from the breathing temporarily imposing rhythm on your heartbeat. It's a real effect, but it's the exercise doing it live — not necessarily proof of lasting change.
 
 There's an even finer point: the popular shorthand "HRV equals vagus activity" isn't fully justified. At slow breathing rates, the breakdown of acetylcholine (the vagal messenger) is more complete, which actually reduces its moment-to-moment effect on respiratory sinus arrhythmia — and the sympathetic system may influence the pattern more than the simple story suggests. HRV is a useful window into autonomic balance, but it's not a clean one-to-one readout of "vagus tone."
+
+## Higher HRV isn't always better
+
+One more honest complication, and it cuts against the usual "more HRV = healthier" message. HRV is not a simple "higher is better" score. In some contexts an unusually **high** HRV is not a good sign: recent sleep research found that certain cardiovascular and endocrine conditions were associated with *elevated* overnight HRV, and that nocturnal HRV patterns can flag early signs of problems like stroke or depression rather than just signalling great health. Separate research makes a related point from another angle — in one study HRV wasn't a sensitive enough marker to distinguish personality or anxiety traits at all, because the differences were too subtle.
+
+The takeaway isn't "ignore HRV." It's that HRV is a rich, context-dependent signal, not a leaderboard. What's meaningful is [your own pattern](/articles/normal-hrv-by-age) and its stability over time — not chasing the highest possible number, and not assuming a high reading always means you're winning.
 
 ## So is it worth doing? Yes — for what it is
 
