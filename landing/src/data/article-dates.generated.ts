@@ -9,8 +9,8 @@
 
 export const ARTICLE_DATES: Record<string, { published: string; modified: string }> = {
   "4-7-8-breathing": {
-    "published": "2026-09-21T15:04:36.638Z",
-    "modified": "2026-09-21T15:04:36.638Z"
+    "published": "2026-09-21T17:29:12+02:00",
+    "modified": "2026-09-21T17:29:12+02:00"
   },
   "acc-calibration-protocol-cognitive-control": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -37,8 +37,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-29T18:05:00+02:00"
   },
   "alternate-nostril-breathing": {
-    "published": "2026-09-21T15:05:01.565Z",
-    "modified": "2026-09-21T15:05:01.565Z"
+    "published": "2026-09-21T17:29:12+02:00",
+    "modified": "2026-09-21T17:29:12+02:00"
   },
   "ancestral-sync-circadian-anchors": {
     "published": "2026-03-24T09:54:24Z",
@@ -241,8 +241,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T20:41:35+02:00"
   },
   "how-much-alcohol-lowers-hrv": {
-    "published": "2026-09-21T15:06:39.757Z",
-    "modified": "2026-09-21T15:06:39.757Z"
+    "published": "2026-09-21T17:29:12+02:00",
+    "modified": "2026-09-21T17:29:12+02:00"
   },
   "how-much-sleep-do-you-need": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -296,13 +296,17 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-06-04T01:14:45+02:00",
     "modified": "2026-09-12T12:28:48+02:00"
   },
+  "hrv-harmony-of-rhythms": {
+    "published": "2026-09-22T05:23:27.677Z",
+    "modified": "2026-09-22T05:23:27.677Z"
+  },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
     "modified": "2026-09-06T17:46:56+02:00"
   },
   "humming-breath-vagus": {
-    "published": "2026-09-21T15:05:26.207Z",
-    "modified": "2026-09-21T15:05:26.207Z"
+    "published": "2026-09-21T17:29:12+02:00",
+    "modified": "2026-09-21T17:29:12+02:00"
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -401,8 +405,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "normal-hrv-by-age": {
-    "published": "2026-09-21T15:05:48.733Z",
-    "modified": "2026-09-21T15:05:48.733Z"
+    "published": "2026-09-21T17:29:12+02:00",
+    "modified": "2026-09-21T17:29:12+02:00"
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -417,8 +421,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "physiological-sigh": {
-    "published": "2026-09-21T15:04:07.919Z",
-    "modified": "2026-09-21T15:04:07.919Z"
+    "published": "2026-09-21T17:29:12+02:00",
+    "modified": "2026-09-21T17:29:12+02:00"
   },
   "protein-intake-muscle-protein-synthesis": {
     "published": "2026-06-04T00:46:04+02:00",
@@ -441,8 +445,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "resting-heart-rate-by-age": {
-    "published": "2026-09-21T15:06:10.196Z",
-    "modified": "2026-09-21T15:06:10.196Z"
+    "published": "2026-09-21T17:29:12+02:00",
+    "modified": "2026-09-21T17:29:12+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",

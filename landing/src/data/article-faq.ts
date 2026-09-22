@@ -1325,6 +1325,28 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "hrv-harmony-of-rhythms": [
+    {
+      question: "What does HRV actually measure?",
+      answer:
+        "The flexibility and coordination of your autonomic nervous system's rhythms — how nimbly your body shifts between activation and recovery. In a chronobiology view it reflects how harmoniously your body's rhythms (breath, heartbeat, circadian cycle) work together, not just a single recovery score.",
+    },
+    {
+      question: "Why does slow breathing raise HRV?",
+      answer:
+        "At about five to six breaths per minute, your heart-rate and blood-pressure rhythms fall into resonance (~0.1 Hz), maximizing vagal modulation and the baroreflex. Your rhythms synchronize — which is what raises HRV and feels calming.",
+    },
+    {
+      question: "Is HRV just a recovery score?",
+      answer:
+        "That's the common simplification. More fully, HRV is a window into the coordination of many body rhythms across timescales — which is why it responds to stress, sleep, breathing and circadian alignment, not just physical training.",
+    },
+    {
+      question: "What lowers the harmony of my rhythms?",
+      answer:
+        "Social jet lag, chronic stress, shallow fast breathing, alcohol and poor sleep — all desynchronize the rhythms HRV reflects, which is why they all lower it.",
+    },
+  ],
   "social-jet-lag-irregular-sleep": [
     {
       question: "What is social jet lag?",
@@ -1345,6 +1367,16 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
       question: "How do I fix social jet lag?",
       answer:
         "Anchor your wake time first — a consistent rise time, even on weekends and after a late night, is the strongest lever on circadian stability, more reliable than a fixed bedtime. Keep the weekend drift under an hour, add morning light to lock it in, and give the evening a fixed wind-down so bedtime stops floating.",
+    },
+    {
+      question: "Is social jet lag worse than being a night owl?",
+      answer:
+        "Yes — the risk comes from the misalignment, not the chronotype. A night owl free to live on a late schedule can be perfectly healthy; the same owl forced onto an early schedule accumulates social jet lag, and it's that chronic mismatch that's been linked to worse metabolic health, low mood and cardiovascular strain. There's nothing wrong with being an owl — the harm is living against your own clock.",
+    },
+    {
+      question: "Who has the most social jet lag?",
+      answer:
+        "Teenagers. They are developmentally the latest chronotypes of any age group, yet they face the earliest start times — so the gap between their body clock and their schedule is the widest. It's the core physiological argument for later school start times.",
     },
   ],
   "chronic-stress-nervous-system-never-off": [
