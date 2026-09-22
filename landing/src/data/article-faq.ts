@@ -1325,6 +1325,87 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "breathing-lowers-stress-hormones": [
+    {
+      question: "Does breathing actually lower cortisol?",
+      answer:
+        "Yes — Japanese studies measuring urinary hormones found that conscious abdominal breathing significantly lowered cortisol, along with adrenaline and noradrenaline, while shifting the body toward parasympathetic dominance.",
+    },
+    {
+      question: "Is this stronger evidence than HRV studies?",
+      answer:
+        "It's more direct. HRV infers calm from your heartbeat; these studies measured the actual stress hormones (cortisol, adrenaline, noradrenaline) in urine and saliva, confirming the calm at the chemical level.",
+    },
+    {
+      question: "What kind of breathing lowers stress hormones?",
+      answer:
+        "Slow, conscious abdominal (diaphragmatic) breathing — breathing low into the belly at a slow pace with a long exhale, rather than shallow chest breathing.",
+    },
+    {
+      question: "Does breathing work for older adults too?",
+      answer:
+        "Yes. A Japanese study of healthy older adults found abdominal breathing lowered heart rate, blood pressure and stress hormones, and was not a strain on the body — making it a safe practice across ages.",
+    },
+    {
+      question: "How long do I need to breathe to lower stress hormones?",
+      answer:
+        "The studies measured changes over a single focused session of abdominal breathing. As a daily practice, a few minutes of slow belly breathing is a reasonable, gentle target.",
+    },
+  ],
+  "breathing-exercises-older-adults": [
+    {
+      question: "Do breathing exercises work for older adults?",
+      answer:
+        "Yes. Japanese research on healthy older adults found conscious abdominal breathing lowered heart rate, blood pressure and stress hormones, and shifted them toward the parasympathetic state — without straining the body.",
+    },
+    {
+      question: "Are breathing exercises safe for older adults with high blood pressure?",
+      answer:
+        "The research found slow abdominal breathing lowered blood pressure and was not a stressor. Still, if you have a heart or blood-pressure condition, check with your doctor first — it's a wellness practice, not a medical treatment.",
+    },
+    {
+      question: "Does breathing still help if my HRV is low because of age?",
+      answer:
+        "Yes. HRV declines with age, but the mechanism — a long, slow exhale activating the vagus nerve and baroreflex — still works. You start from a lower baseline, but the calming shift is the same.",
+    },
+    {
+      question: "How should an older adult practice breathing?",
+      answer:
+        "Sit comfortably, breathe slowly and gently into the belly with a long exhale, for a few minutes. Never force it; stop if you feel lightheaded.",
+    },
+    {
+      question: "Is chest or belly breathing better for older adults?",
+      answer:
+        "Belly (diaphragmatic) breathing is what the research used and what activates the calming reflex. Shallow chest breathing doesn't produce the same effect.",
+    },
+  ],
+  "nose-vs-mouth-breathing": [
+    {
+      question: "Is nose breathing better than mouth breathing?",
+      answer:
+        "For rest, focus and slow breathing, yes — nasal breathing supports a calmer autonomic state and steadier attention, and Japanese research found measurable autonomic differences favoring it. Mouth breathing is appropriate mainly during hard exertion.",
+    },
+    {
+      question: "Does nose breathing help concentration?",
+      answer:
+        "Research linked nasal breathing to steadier sustained attention, likely because it supports a regulated autonomic state. Keeping your mouth closed during focused work may help concentration.",
+    },
+    {
+      question: "Why is nasal breathing calming?",
+      answer:
+        "It's slower and more resistive, encouraging a longer controlled breath that activates the vagus nerve, and it engages nasal nitric oxide that supports blood flow. Mouth breathing tends to be faster and more activating.",
+    },
+    {
+      question: "Is mouth breathing ever okay?",
+      answer:
+        "Yes — during intense exercise, when you need maximum airflow. The concern is habitual mouth breathing at rest or during sleep, which is linked to a less favorable autonomic pattern.",
+    },
+    {
+      question: "Should I breathe through my nose during breathing exercises?",
+      answer:
+        "Inhale through the nose for the natural pacing and nitric oxide benefit. A long exhale through the mouth is fine — that's the pattern that maximizes vagal activation.",
+    },
+  ],
   "hrv-breathing-cold-honest-limits": [
     {
       question: "Does breathing permanently raise your HRV?",
