@@ -38,7 +38,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "alternate-nostril-breathing": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-21T17:29:12+02:00"
+    "modified": "2026-09-22T18:37:38+02:00"
   },
   "ancestral-sync-circadian-anchors": {
     "published": "2026-03-24T09:54:24Z",
@@ -88,6 +88,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-06-04T14:36:55+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
   },
+  "breathing-altitude-acclimatization": {
+    "published": "2026-09-22T16:42:13.162Z",
+    "modified": "2026-09-22T16:42:13.162Z"
+  },
   "breathing-exercises-older-adults": {
     "published": "2026-09-22T08:22:18+02:00",
     "modified": "2026-09-22T10:19:56+02:00"
@@ -121,8 +125,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "cardiac-coherence-365-method": {
-    "published": "2026-09-22T16:30:28.790Z",
-    "modified": "2026-09-22T16:30:28.790Z"
+    "published": "2026-09-22T18:37:38+02:00",
+    "modified": "2026-09-22T18:37:38+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -217,8 +221,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-18T09:59:04+02:00"
   },
   "fast-vs-slow-pranayama": {
-    "published": "2026-09-22T16:29:58.436Z",
-    "modified": "2026-09-22T16:29:58.436Z"
+    "published": "2026-09-22T18:37:38+02:00",
+    "modified": "2026-09-22T18:37:38+02:00"
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
@@ -326,7 +330,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "humming-breath-vagus": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-21T17:29:12+02:00"
+    "modified": "2026-09-22T18:37:38+02:00"
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -555,6 +559,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "wim-hof-breathing-inflammation": {
+    "published": "2026-09-22T16:41:48.918Z",
+    "modified": "2026-09-22T16:41:48.918Z"
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",

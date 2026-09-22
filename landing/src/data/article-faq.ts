@@ -1325,6 +1325,55 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "wim-hof-breathing-inflammation": [
+    {
+      question: "Is it the cold or the breathing that reduces inflammation in the Wim Hof Method?",
+      answer:
+        "The breathing. A 2022 Radboud study separated the components and found cold exposure alone did not significantly reduce inflammation, while the breathing technique did. The anti-inflammatory effect traces to the breath, not the ice baths.",
+    },
+    {
+      question: "Can you really control your immune system with breathing?",
+      answer:
+        "Within limits, yes — and it's documented. Radboud research (Kox et al., 2014, PNAS) showed trained people could voluntarily activate their sympathetic nervous system and blunt their inflammatory response to injected endotoxin. It's a temporary, controlled effect, not immunity to disease.",
+    },
+    {
+      question: "Do I need ice baths to get the benefits of Wim Hof breathing?",
+      answer:
+        "Not for the anti-inflammatory effect — the research points to the breathing as the active ingredient. Cold training has separate effects and appeal, but it isn't required for the immune result.",
+    },
+    {
+      question: "Is Wim Hof breathing calming like slow breathing?",
+      answer:
+        "No — it's the opposite. Wim Hof breathing is controlled hyperventilation that activates the sympathetic (\"fight or flight\") system, while slow six-breaths-per-minute breathing activates the parasympathetic (\"rest and digest\") system. Different tools for different goals.",
+    },
+    {
+      question: "Is Wim Hof breathing safe?",
+      answer:
+        "Done seated or lying down, for most healthy people it's safe. Never do it in or near water, while driving, or standing, because the breath-holds can cause light-headedness or fainting. If you have a medical condition, check with your doctor first.",
+    },
+  ],
+  "breathing-altitude-acclimatization": [
+    {
+      question: "Can breathing exercises help with altitude sickness?",
+      answer:
+        "They may help. On a Kilimanjaro expedition, 26 participants used Wim Hof Method controlled-hyperventilation breathing and researchers reported it may prevent or reduce acute mountain sickness and accelerate acclimatization. It's a promising field observation, not proven in large trials, and doesn't replace proper acclimatization.",
+    },
+    {
+      question: "How does breathing help at altitude?",
+      answer:
+        "Deliberate deep breathing temporarily raises blood oxygen and lowers carbon dioxide, nudging blood chemistry toward the adaptation your body makes naturally over days — potentially giving acclimatization a head start.",
+    },
+    {
+      question: "What breathing should I use at altitude?",
+      answer:
+        "Controlled deep breathing may aid acclimatization during ascent, while slow paced breathing helps with the anxiety and poor sleep altitude brings. Do intense breathing only while resting, never in dangerous terrain.",
+    },
+    {
+      question: "Does breathing replace acclimatization?",
+      answer:
+        "No. Gradual ascent, rest days and \"climb high, sleep low\" remain essential. Breathing is a possible aid, not a substitute, and severe altitude illness requires descent and medical care.",
+    },
+  ],
   "fast-vs-slow-pranayama": [
     {
       question: "Is all breathwork calming?",
