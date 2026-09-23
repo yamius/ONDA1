@@ -136,6 +136,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-18T14:42:44+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
   },
+  "chronotherapy-light-dark-timing": {
+    "published": "2026-09-23T11:42:10.929Z",
+    "modified": "2026-09-23T11:42:10.929Z"
+  },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
     "modified": "2026-05-25T19:35:33+02:00"

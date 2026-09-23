@@ -807,6 +807,31 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
       answer:
         'Red light (2000K or lower) does not suppress melatonin. It provides enough illumination for evening activities without disrupting the shutdown sequence for sleep.',
     },
+    {
+      question: 'How does light affect your body clock?',
+      answer:
+        "Special cells in your eyes (ipRGCs) detect brightness and signal your brain's master clock. Morning light advances and anchors the clock, boosting alertness and suppressing melatonin; evening light delays it, pushing sleep later. Timing matters as much as amount.",
+    },
+    {
+      question: 'Why is morning light so important?',
+      answer:
+        'Morning bright light is the strongest signal to stabilize your circadian rhythm — it helps you sleep earlier that night, wake more easily, and lifts mood and alertness. Outdoor light is far brighter than indoor light, so a short time outside is highly effective.',
+    },
+    {
+      question: 'Does evening screen light really disrupt sleep?',
+      answer:
+        "Yes. Bright and blue-rich light at night hits the same clock-setting cells and tells your body it's still day, delaying melatonin and your natural sleep time. Dimming light in the last hours before bed helps.",
+    },
+    {
+      question: 'Does light affect HRV?',
+      answer:
+        'Indirectly, yes. Your HRV follows your circadian rhythm, which is set by light. A misaligned clock — from poor light timing — tends to show up as lower or less stable overnight HRV.',
+    },
+    {
+      question: "What's the single best light habit?",
+      answer:
+        'Getting bright light early in the day, ideally outdoors within an hour or two of waking. It is the highest-leverage way to anchor your body clock.',
+    },
   ],
   'glp1-biology-muscle-preservation': [
     {
@@ -1323,6 +1348,33 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
       question: "Does the afternoon coffee really affect my sleep if I fall asleep fine?",
       answer:
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
+    },
+  ],
+  "chronotherapy-light-dark-timing": [
+    {
+      question: "What is chronotherapy?",
+      answer:
+        "A set of non-drug treatments that use light, darkness, and the timing of sleep to reset the body clock and improve mood and sleep disorders. It's well established in German-speaking psychiatry and includes light therapy, wake therapy, dark therapy, and sleep-timing shifts.",
+    },
+    {
+      question: "Does light therapy really work for depression?",
+      answer:
+        "Yes — bright light therapy is the first-choice treatment for seasonal affective disorder (winter depression) and also helps some non-seasonal depression and sleep disorders, by advancing and stabilizing the body clock. Timing of the light matters.",
+    },
+    {
+      question: "How can staying awake treat depression?",
+      answer:
+        "Wake therapy — one controlled night of sleep deprivation — can rapidly lift depression by resetting the disturbed circadian and sleep-homeostatic system. The effect is fragile, so it's combined with light therapy and sleep-phase advance (\"triple chronotherapy\"). It's a clinical treatment done under supervision, not a self-help technique.",
+    },
+    {
+      question: "What is dark therapy?",
+      answer:
+        "Extended darkness or blue-light blocking used clinically to calm mania and reduce rapid cycling in bipolar disorder — the mirror image of light therapy.",
+    },
+    {
+      question: "Can I use chronotherapy principles at home?",
+      answer:
+        "Yes, in gentle everyday form: get bright morning light, dim light at night, and keep a regular sleep schedule. These support your body clock, though they're not a substitute for clinical treatment of a mood disorder.",
     },
   ],
   "wim-hof-breathing-inflammation": [

@@ -3,6 +3,10 @@ import type { Article } from './types'
 /**
  * Signal Stability: Circadian Lighting and Dark Therapy
  * SEO article with glossary term linking.
+ * Merged (2026-09-23) with the plain-English "how light controls your body clock" draft (580):
+ * added an AEO section (morning-light anchor / evening disruptor / light→HRV+mood) + FAQPage,
+ * so this one page owns the "light & body clock" intent instead of a duplicate. Cross-links the
+ * chronotherapy + social-jet-lag + hrv-harmony cluster.
  */
 const article: Article = {
   slug: 'circadian-lighting-dark-therapy',
@@ -77,6 +81,14 @@ Dark Therapy is the intentional restriction of short-wavelength light to allow f
 > VALIDATION_DEVICE: Lux Meter / Spectrometer
 > METRIC: Melanopic Lux < 10 (Post-Sunset)
 > STATUS: SIGNAL_NOISE_REDUCED
+
+---
+
+## How light timing shows up in your body — sleep, mood and HRV
+
+Because your circadian clock governs your autonomic nervous system, light timing leaves marks you can measure. **Morning light is the anchor:** bright light early — ideally outdoors, which is far brighter than any office, even on a cloudy day — advances and stabilizes your clock, so you fall asleep more easily that night and wake more alertly, and it lifts mood directly (the same mechanism behind [light therapy for winter depression](/articles/chronotherapy-light-dark-timing)). **Evening light is the disruptor:** bright, blue-rich light late tells the clock it's still day, delays melatonin, and pushes your natural sleep later — the root of [social jet lag](/articles/social-jet-lag-irregular-sleep). The lesson is that *timing* matters as much as amount.
+
+It shows up in the numbers, too. Your resting heart rate and [HRV follow the circadian clock](/articles/hrv-harmony-of-rhythms), so a misaligned rhythm tends to read as a lower or less stable overnight HRV. ONDA reads your resting heart rate, HRV and breathing from your Apple Watch and holds your personal baseline, so as you fix your light habits you can watch whether your overnight numbers grow steadier — turning "get more morning light" into something you can actually track.
 
 ---
 
