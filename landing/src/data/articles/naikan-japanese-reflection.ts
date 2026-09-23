@@ -15,7 +15,7 @@ const article: Article = {
   description:
     'Naikan is a Japanese method of structured reflection built on three simple questions, used therapeutically to shift perspective and gratitude. The practice, its psychology, and how it complements meditation.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['zazen-zen-meditation-brain', 'meditation-vs-breathwork', 'measuring-meditation-progress', 'zen-koans-brain-cognition', 'how-to-regulate-emotions'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'zazen-zen-meditation-brain', 'meditation-vs-breathwork', 'measuring-meditation-progress', 'zen-koans-brain-cognition', 'how-to-regulate-emotions'],
   introStyle: 'emerald',
   neuralSuggestion: {
     text: 'If breath calms the body and meditation trains attention, Naikan trains perspective — a rounded contemplative practice.',
@@ -24,6 +24,8 @@ const article: Article = {
   },
   content: `
 Naikan is a Japanese method of structured self-reflection — a kind of meditation on your relationships and your life, organized around three deceptively simple questions. Developed in Japan by Ishin Yoshimoto in the mid-20th century from Buddhist roots, Naikan (meaning "looking inside" or "introspection") is used both as a personal practice and therapeutically. Rather than emptying the mind like breath-focused meditation, Naikan *directs* reflection along specific lines that reliably shift perspective toward gratitude, responsibility, and connection. It's a different flavor of contemplative practice — not calming the mind through the breath, but reshaping how you see your life through guided attention.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## The three questions
 

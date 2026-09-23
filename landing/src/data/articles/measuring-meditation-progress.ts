@@ -13,7 +13,7 @@ const article: Article = {
   description:
     'Meditation is hard to stick with because progress feels invisible. But it’s measurable — through HRV, resting heart rate and how your body responds. How to track your meditation progress objectively.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'how-to-raise-hrv-naturally', 'how-to-measure-hrv-consistently', 'meditation-app-with-biofeedback'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'how-to-raise-hrv-naturally', 'how-to-measure-hrv-consistently', 'meditation-app-with-biofeedback'],
   introStyle: 'rose',
   neuralSuggestion: {
     text: 'The scoreboard meditation always lacked. Watch the weekly trend of your baseline — never chase a single day’s number.',
@@ -22,6 +22,8 @@ const article: Article = {
   },
   content: `
 The hardest part of meditation isn't doing it — it's believing it's working. Progress feels invisible, so most people quit before the benefits arrive. But meditation progress *is* measurable, through your body's own signals: heart rate variability (HRV), resting heart rate, and how quickly and deeply your nervous system settles during and after practice. As you train, your HRV tends to rise, your resting heart rate settles, and you shift into a calm state faster — objective signs that your nervous system is adapting. Instead of guessing whether you're improving, you can watch it happen, which turns meditation from a leap of faith into a trainable skill with a scoreboard.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## The problem with invisible progress
 

@@ -14,7 +14,7 @@ const article: Article = {
   description:
     'Zen koans — paradoxical riddles like "the sound of one hand clapping" — train the brain to shift out of self-referential thought. What research on Zen practitioners reveals about cognition and awareness.',
   category: 'Biological Software',
-  relatedSlugs: ['zazen-zen-meditation-brain', 'vipassana-meditation-attention-brain', 'meditation-gamma-waves-experience', 'measuring-meditation-progress', 'naikan-japanese-reflection'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'zazen-zen-meditation-brain', 'vipassana-meditation-attention-brain', 'meditation-gamma-waves-experience', 'measuring-meditation-progress', 'naikan-japanese-reflection'],
   introStyle: 'indigo',
   neuralSuggestion: {
     text: 'A problem the logical mind can’t solve, held long enough, wears out the self-narrating loop — the same loop that, overactive, fuels rumination.',
@@ -23,6 +23,8 @@ const article: Article = {
   },
   content: `
 Zen koans — paradoxical riddles like "what is the sound of one hand clapping?" — aren't meant to be solved logically. They're a training tool, and brain research suggests they work by shifting how the mind operates: away from self-referential, analytical thinking and toward a more direct, present awareness. Studies of Zen practitioners find that during cognitive challenges, experienced meditators show different engagement of the brain's central executive network (focused problem-solving) and default mode network (self-referential thought and mind-wandering) compared to non-meditators. Koans deliberately exhaust the logical, narrating mind — and the trained result is a brain less captured by rumination and more able to rest in open awareness. It's a centuries-old cognitive technology, now partly visible in the neuroscience.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## What koans are
 

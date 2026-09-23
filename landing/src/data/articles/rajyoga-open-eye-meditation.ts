@@ -14,7 +14,7 @@ const article: Article = {
   description:
     'Brahma Kumaris Rajyoga is meditated with open eyes and shows distinct brain and heart signatures — high theta, low alpha, and unique autonomic patterns. The tradition and what research measured.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['meditation-gamma-waves-experience', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'meditation-brain-changes-how-fast'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'meditation-brain-changes-how-fast'],
   introStyle: 'purple',
   neuralSuggestion: {
     text: 'If eyes-closed makes you sleepy or restless, an eyes-open practice is a real, research-backed alternative — meditation is a family, not one method.',
@@ -23,6 +23,8 @@ const article: Article = {
   },
   content: `
 Rajyoga meditation, taught by the Brahma Kumaris, is unusual in one immediately practical way: it's practiced with the eyes **open**. And research shows it produces a distinct, measurable signature in both brain and heart. EEG studies of long-term Rajyoga meditators found a characteristic pattern — reduced delta activity and increased low-alpha activity, described as "high theta–low alpha" modulation — reflecting focused awareness rather than drowsiness. Studies of heart rhythm found Rajyoga practice creates recognizable autonomic signatures in cardiorespiratory activity. For anyone who finds eyes-closed meditation makes them sleepy or restless, the open-eyed approach offers a genuinely different, evidence-backed route to a measurable meditative state.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## What Rajyoga is
 

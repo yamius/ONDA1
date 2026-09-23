@@ -13,7 +13,7 @@ const article: Article = {
   description:
     'Zen meditation (zazen) produces measurable brain changes — alpha and theta waves that deepen with experience, and shifts in the prefrontal cortex. What decades of Japanese EEG research show.',
   category: 'Biological Software',
-  relatedSlugs: ['meditation-gamma-waves-experience', 'tanden-breathing-serotonin', 'vipassana-meditation-attention-brain', 'measuring-meditation-progress', 'meditation-brain-changes-how-fast'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'tanden-breathing-serotonin', 'vipassana-meditation-attention-brain', 'measuring-meditation-progress', 'meditation-brain-changes-how-fast'],
   introStyle: 'indigo',
   neuralSuggestion: {
     text: 'A beginner and a Zen monk sitting in zazen don’t have the same brain activity — the deeper theta signature is earned through practice.',
@@ -22,6 +22,8 @@ const article: Article = {
   },
   content: `
 Zazen — the seated meditation at the heart of Zen — has one of the longest research histories of any meditation, and the findings are strikingly consistent: it produces measurable brainwave changes that deepen with experience. Since the pioneering Japanese EEG studies of the 1960s, researchers have found that zazen increases alpha and theta brainwave activity — a signature of calm, alert, inwardly focused awareness — and, critically, that **increased theta appears specifically in experienced practitioners, not beginners.** Modern imaging adds that zazen shifts activity in the prefrontal cortex and quiets parts of the default mode network, reducing conceptual thinking and self-referential chatter. This makes zazen a beautifully documented example of [meditation as a trainable skill](/articles/meditation-brain-changes-how-fast): the brain signature grows with the practice.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## What zazen is
 

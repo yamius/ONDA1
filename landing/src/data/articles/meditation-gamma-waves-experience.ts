@@ -14,7 +14,7 @@ const article: Article = {
   description:
     'Experienced meditators show higher gamma brainwaves — and the amount rises with practice experience. How research turned meditation depth into a measurable, progress-linked brain signal.',
   category: 'Biological Software',
-  relatedSlugs: ['meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'how-much-meditation-do-you-need', 'how-to-raise-hrv-naturally', 'rajyoga-open-eye-meditation'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'how-much-meditation-do-you-need', 'how-to-raise-hrv-naturally', 'rajyoga-open-eye-meditation'],
   introStyle: 'indigo',
   neuralSuggestion: {
     text: 'More practice, more gamma — a brain rhythm that behaves like a fitness marker. You can’t feel it, but you can track its autonomic twin.',
@@ -23,6 +23,8 @@ const article: Article = {
   },
   content: `
 Experienced meditators have a distinctive brain signature — elevated gamma brainwaves — and, crucially, the amount of gamma rises with how much you've practiced. In a study comparing practitioners of three meditation traditions (Vipassana, Himalayan Yoga, and Isha Shoonya) against non-meditators, all the meditators showed higher parieto-occipital gamma amplitude (60–110 Hz) than controls — and this gamma power was positively correlated with each person's meditation experience. In other words, meditation leaves a measurable mark on the brain's fastest rhythms, and that mark grows with practice. This is one of the clearest pieces of evidence that meditation is a [trainable skill with an objective, progress-linked signature](/articles/meditation-brain-changes-how-fast) — not just a subjective state you either "get" or don't.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## What gamma waves are
 

@@ -14,7 +14,7 @@ const article: Article = {
   description:
     'Meditation may influence cellular aging markers like telomeres — but the evidence is nuanced, and practice time matters. An honest look at what research actually shows about meditation and longevity.',
   category: 'Biological Software',
-  relatedSlugs: ['meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'breathing-lowers-stress-hormones', 'measuring-meditation-progress', 'meditation-gamma-waves-experience'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'breathing-lowers-stress-hormones', 'measuring-meditation-progress', 'meditation-gamma-waves-experience'],
   introStyle: 'gold',
   neuralSuggestion: {
     text: 'Not a fountain of youth. Meditate for the solid, measurable benefits — treat the anti-aging angle as a promising bonus, not a promise.',
@@ -23,6 +23,8 @@ const article: Article = {
   },
   content: `
 Meditation may influence markers of cellular aging — but the honest answer is "sometimes, modestly, and it depends." The research focuses on telomeres, the protective caps on your chromosomes that shorten as cells age, and telomerase, the enzyme that maintains them. Some studies find meditation and related mind-body practices support telomere maintenance and telomerase activity, and that the benefit is linked to how much you actually practice. Other rigorous trials find no significant effect on telomere length over many months. This is a genuinely nuanced area, not a "meditation reverses aging" headline — but the pattern that emerges is meaningful: the cellular benefits, where they appear, track with [practice commitment](/articles/how-much-meditation-do-you-need).
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## Telomeres, briefly
 

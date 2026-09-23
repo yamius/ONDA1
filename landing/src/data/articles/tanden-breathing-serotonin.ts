@@ -16,7 +16,7 @@ const article: Article = {
   description:
     'Tanden breathing — deep breathing from below the navel — activates serotonin neurons and the prefrontal cortex, according to Japanese brain research. The tradition, the science, and how to practice.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['breathing-lowers-stress-hormones', 'coherent-breathing-guide', 'humming-breath-vagus', 'how-to-raise-hrv-naturally', 'system-stability-serotonin'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'breathing-lowers-stress-hormones', 'coherent-breathing-guide', 'humming-breath-vagus', 'how-to-raise-hrv-naturally', 'system-stability-serotonin'],
   introStyle: 'gold',
   neuralSuggestion: {
     text: 'Most breathwork points at the vagus nerve. This Japanese tradition points at serotonin — mood chemistry, not just rest-and-digest.',
@@ -25,6 +25,8 @@ const article: Article = {
   },
   content: `
 Tanden breathing (丹田呼吸法) is a Japanese practice of slow, deep breathing centered on the *tanden* — a point about three finger-widths below the navel, considered the body's center of gravity and energy. What makes it distinctive isn't just relaxation: Japanese brain-imaging research found that tanden breathing activates serotonin neurons and the prefrontal cortex. That's a different mechanism from the usual Western framing. Where most breathing advice focuses on the vagus nerve and "rest and digest," this Japanese tradition points to **serotonin** — the neurotransmitter tied to mood, calm focus, and emotional stability. In other words, tanden breathing may work not only by calming your heart, but by engaging the brain's own mood chemistry.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## What tanden breathing is
 

@@ -14,7 +14,7 @@ const article: Article = {
   description:
     'Meditation produces measurable brain changes in as little as 2–4 weeks — gray matter, white matter, and stress biomarkers all shift with practice. The science of meditation’s trackable progress.',
   category: 'Biological Software',
-  relatedSlugs: ['how-much-meditation-do-you-need', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'breathing-lowers-stress-hormones'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'breathing-lowers-stress-hormones'],
   introStyle: 'indigo',
   neuralSuggestion: {
     text: 'Not an act of faith — meditation leaves marks you can measure, on a timeline of weeks. That’s what makes it trainable.',
@@ -23,6 +23,8 @@ const article: Article = {
   },
   content: `
 Meditation changes your brain measurably — and faster than most people expect. Randomized controlled trials have found structural changes in the brain's white matter within just 2 to 4 weeks, after only 5 to 10 hours of training, and increases in gray matter volume in key brain hubs after around 10 hours of practice. These aren't vague feelings of calm — they're physical changes visible on brain scans, correlated with improved emotional states. This matters because it reframes meditation from an act of faith ("keep at it and trust it works") into something with an objective, trackable timeline. You're not just hoping for benefit; your brain and body are measurably adapting, and that adaptation can be seen.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## Meditation as measurable change, not just a feeling
 

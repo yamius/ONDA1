@@ -64,6 +64,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-17T17:21:46+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
   },
+  "attention-trainable-skill-meditation": {
+    "published": "2026-09-23T17:46:31.144Z",
+    "modified": "2026-09-23T17:46:31.144Z"
+  },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
     "modified": "2026-05-25T19:35:33+02:00"
@@ -360,6 +364,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-04-21T12:25:38Z",
     "modified": "2026-05-25T19:35:33+02:00"
   },
+  "jhana-meditation-stages": {
+    "published": "2026-09-23T17:47:00.275Z",
+    "modified": "2026-09-23T17:47:00.275Z"
+  },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
     "modified": "2026-05-29T18:05:00+02:00"
@@ -367,6 +375,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
     "modified": "2026-06-08T10:08:07+02:00"
+  },
+  "mbsr-mindfulness-clinical-evidence": {
+    "published": "2026-09-23T17:47:52.879Z",
+    "modified": "2026-09-23T17:47:52.879Z"
   },
   "measuring-meditation-progress": {
     "published": "2026-09-23T15:19:19+02:00",
@@ -388,6 +400,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-23T16:02:36+02:00",
     "modified": "2026-09-23T16:02:36+02:00"
   },
+  "meditation-neuroscience-expert-monks": {
+    "published": "2026-09-23T17:47:25.008Z",
+    "modified": "2026-09-23T17:47:25.008Z"
+  },
   "meditation-vs-breathwork": {
     "published": "2026-09-23T18:39:06+02:00",
     "modified": "2026-09-23T18:39:06+02:00"
@@ -395,6 +411,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "meditation-with-measurable-progress": {
+    "published": "2026-09-23T17:45:47.031Z",
+    "modified": "2026-09-23T17:45:47.031Z"
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -421,8 +441,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-29T18:05:00+02:00"
   },
   "naikan-japanese-reflection": {
-    "published": "2026-09-23T17:29:38.757Z",
-    "modified": "2026-09-23T17:29:38.757Z"
+    "published": "2026-09-23T19:44:44+02:00",
+    "modified": "2026-09-23T19:44:44+02:00"
   },
   "name-it-to-tame-it-affect-labeling": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -625,8 +645,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-23T18:39:06+02:00"
   },
   "zen-koans-brain-cognition": {
-    "published": "2026-09-23T17:29:00.384Z",
-    "modified": "2026-09-23T17:29:00.384Z"
+    "published": "2026-09-23T19:44:44+02:00",
+    "modified": "2026-09-23T19:44:44+02:00"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",

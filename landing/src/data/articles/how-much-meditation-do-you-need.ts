@@ -13,7 +13,7 @@ const article: Article = {
   description:
     'How long and how often should you meditate to see real benefits? Dose-response research shows even 10–12 minutes a day produces measurable change — and why tracking progress keeps you consistent.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'cardiac-coherence-365-method'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'cardiac-coherence-365-method'],
   introStyle: 'cyan',
   neuralSuggestion: {
     text: 'The best dose isn’t the theoretical maximum — it’s the largest one you’ll actually keep up. A reliable 10 beats an aspirational 30.',
@@ -22,6 +22,8 @@ const article: Article = {
   },
   content: `
 You need less meditation than you might think — but consistency matters more than length. Research shows measurable benefits from modest daily doses: trials have used as little as 10 to 12 minutes a day and found real changes in stress biology and well-being, while [structural brain changes](/articles/meditation-brain-changes-how-fast) have appeared after a cumulative 5 to 10 hours of practice. Studies specifically designed to test "dose-response" — comparing 10, 20, and 30 minutes a day — expect larger doses to yield larger effects, but also find that very long sessions lower adherence: people simply stop doing them. The practical sweet spot for most people is a short daily practice you'll actually keep up, not a long one you'll abandon. And because the benefits accumulate with total practice time, the habit — not the heroic session — is what delivers.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## The dose-response: more helps, but only if you do it
 

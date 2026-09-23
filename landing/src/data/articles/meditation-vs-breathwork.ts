@@ -13,7 +13,7 @@ const article: Article = {
   description:
     'Meditation and breathwork both calm you, but they work differently — one trains attention, the other directly shifts your physiology. How they compare and how to choose (or combine) them.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['meditation-gamma-waves-experience', 'coherent-breathing-guide', 'measuring-meditation-progress', 'fast-vs-slow-pranayama', 'physiological-sigh'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'coherent-breathing-guide', 'measuring-meditation-progress', 'fast-vs-slow-pranayama', 'physiological-sigh'],
   introStyle: 'cyan',
   neuralSuggestion: {
     text: 'Not either/or. Use breath to reach the calm state fast, then meditate from within it — a fire extinguisher and fireproofing.',
@@ -22,6 +22,8 @@ const article: Article = {
   },
   content: `
 Meditation and breathwork both calm your mind and body, but they work through different doors — and knowing the difference helps you choose. **Breathwork** changes your physiology directly and quickly: [slow breathing at six breaths per minute](/articles/coherent-breathing-guide) activates the vagus nerve within minutes, raising heart rate variability (HRV) and shifting you toward calm — a bottom-up, body-first approach. **Meditation** trains your attention and your relationship to your own mind, producing changes in brain structure and function over weeks — a top-down, mind-first approach. Breathwork is the faster lever for an acute state change; meditation is the deeper training for lasting traits. The best answer, for most people, isn't either/or — it's using breath to reach the calm state, then meditating from within it.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## Two different doors to the same room
 

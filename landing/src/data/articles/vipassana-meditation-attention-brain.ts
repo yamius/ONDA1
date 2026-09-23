@@ -14,7 +14,7 @@ const article: Article = {
   description:
     'Vipassana meditation is linked to thicker attention-related brain regions, elevated gamma waves, and a quieter default mode network. The neuroscience of this ancient practice and how progress builds.',
   category: 'Biological Software',
-  relatedSlugs: ['meditation-gamma-waves-experience', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'how-much-meditation-do-you-need', 'rajyoga-open-eye-meditation'],
+  relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'how-much-meditation-do-you-need', 'rajyoga-open-eye-meditation'],
   introStyle: 'indigo',
   neuralSuggestion: {
     text: 'Not a blissful escape — a systematic attention-and-equanimity training with a neural signature that sharpens with practice.',
@@ -23,6 +23,8 @@ const article: Article = {
   },
   content: `
 Vipassana — one of the oldest meditation techniques, a practice of careful, non-reactive observation of bodily sensations — leaves clear marks on the brain. Neuroscience research links long-term Vipassana practice to increased cortical thickness in attention-related brain regions, elevated [gamma-band brainwaves](/articles/meditation-gamma-waves-experience) in experienced practitioners, and reduced activity in the default mode network (the brain's "mind-wandering" system). And the depth of the meditative state can itself be read from brain activity: using EEG and machine learning, researchers classified high versus low meditation depth in expert practitioners with about 81% accuracy. Vipassana isn't a vague relaxation — it's a systematic attention training with a documented, progress-linked neural signature.
+
+*This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
 ## What Vipassana is
 

@@ -1350,6 +1350,146 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "meditation-with-measurable-progress": [
+    {
+      question: "Can you actually measure meditation progress?",
+      answer:
+        "Yes. Meditation produces measurable changes — brain structure within weeks, gamma waves that rise with experience, lower stress hormones, and stronger HRV. While brain changes need a lab, HRV and resting heart rate are trackable at home and reliably respond to practice, giving you objective progress instead of guesswork.",
+    },
+    {
+      question: "How long until meditation shows results?",
+      answer:
+        "Measurable changes in HRV, mood and calm typically begin within 2–3 weeks of regular practice, and brain-imaging changes appear after a cumulative 5–10 hours (around 10–20 minutes a day for a few weeks). Deeper signatures build over months.",
+    },
+    {
+      question: "Which type of meditation is best?",
+      answer:
+        "There's no single best — they're different tools. Zazen and Vipassana for deep attention training; Rajyoga for an alert, open-eyed practice; Zen abdominal breathing for a fast mood lift; Naikan for perspective. Match the method to your goal and temperament.",
+    },
+    {
+      question: "How much meditation do I need to do?",
+      answer:
+        "As little as 10–12 minutes a day shows measurable benefits. More helps (there's a dose-response), but longer sessions reduce adherence — so the best dose is the largest you'll consistently keep up. Daily consistency matters more than session length.",
+    },
+    {
+      question: "Why do people quit meditation, and how do I avoid it?",
+      answer:
+        "Because progress feels invisible, so motivation fades — even though real change is happening. The fix is objective feedback: tracking your HRV trend and resting heart rate gives you visible proof it's working, which keeps you practicing long enough for the benefits to compound.",
+    },
+    {
+      question: "Is meditation or breathwork better?",
+      answer:
+        "They do different jobs. Breathwork gives fast, bottom-up calm in minutes; meditation gives deep, top-down training over weeks. The most effective approach combines them — breathe to reach calm, then meditate from there.",
+    },
+  ],
+  "attention-trainable-skill-meditation": [
+    {
+      question: "Is attention a trainable skill?",
+      answer:
+        "Yes. Meditation research shows measurable brain differences between novices and experienced practitioners — higher gamma, deeper theta, thicker attention-related cortex — that scale with practice. Attention is plastic and can be deliberately rebuilt, not a fixed trait.",
+    },
+    {
+      question: "How does meditation train attention?",
+      answer:
+        "Every time you notice your mind wandered and return it to an anchor (like the breath), that return is a repetition of the attention \"muscle.\" Repeated over time, these reps build measurable changes in attention-related brain regions and rhythms.",
+    },
+    {
+      question: "Can I improve my focus if I'm easily distracted?",
+      answer:
+        "Yes — a scattered beginner is simply at \"rep one.\" The research shows the brain adapts progressively with practice regardless of starting point. Modern life trains distraction; deliberate practice trains focus. Anyone can shift the balance.",
+    },
+    {
+      question: "Does a wandering mind mean I'm bad at meditation?",
+      answer:
+        "No — noticing the wandering and returning is the exercise itself, not a failure. Experienced meditators' minds wander too; they've just done enough reps that returning is strong and quick. The return is the rep that builds the skill.",
+    },
+    {
+      question: "How long until my attention improves?",
+      answer:
+        "Measurable changes build over weeks of consistent practice, with deeper signatures accumulating over months. Short daily sessions build the skill faster than occasional long ones — consistency is what drives the trainable changes.",
+    },
+  ],
+  "jhana-meditation-stages": [
+    {
+      question: "What are the jhanas?",
+      answer:
+        "Eight consecutive stages of deep meditative absorption described in Theravada Buddhism, each a distinct and increasingly refined state. The first four (\"form\" jhanas) move from joy and bliss toward equanimity; the last four (\"formless\") involve expansive, near-thoughtless states. They form an explicit ladder of deepening concentration.",
+    },
+    {
+      question: "Can jhanas be measured scientifically?",
+      answer:
+        "Yes. Harvard (MGH) researchers used 7 Tesla fMRI and EEG on expert practitioners and found the jhanas produce distinct, measurable brain changes — decreased network modularity, increased global connectivity, and a reorganization that deepens with each stage. The neural changes track the depth of absorption.",
+    },
+    {
+      question: "Why are the jhanas relevant to regular meditators?",
+      answer:
+        "They're a proof of concept that meditation is a graded, measurable skill. Even if you never reach them, the fact that the deepest states show clear, orderly brain signatures underlines that meditation produces real, staged, trackable change — from your first sessions upward.",
+    },
+    {
+      question: "How much practice do the jhanas require?",
+      answer:
+        "A great deal — the experts studied had tens of thousands of hours (one had over 23,000). They're at the far end of the meditative spectrum. Most practitioners benefit from the earlier, accessible stages of concentration without reaching formal jhana.",
+    },
+    {
+      question: "What does \"deconstruction of the cortical hierarchy\" mean?",
+      answer:
+        "It's how researchers describe what deep jhana does to the brain: the normal layered organization of brain processing measurably flattens and reorganizes as absorption deepens. It reflects a radically altered, highly unified state of consciousness — visible on brain scans.",
+    },
+  ],
+  "meditation-neuroscience-expert-monks": [
+    {
+      question: "What did brain scans of meditating monks reveal?",
+      answer:
+        "Tibetan Buddhist monks with tens of thousands of hours of practice could self-induce high-amplitude gamma brainwave synchrony — fast, coordinated brain activity linked to peak awareness — at levels rarely seen in humans. Pioneered by Richard Davidson, this showed meditation is intensive, brain-changing mental training.",
+    },
+    {
+      question: "Who is Richard Davidson?",
+      answer:
+        "A neuroscientist at the University of Wisconsin who pioneered the neuroscience of meditation, including landmark studies of Tibetan monks' gamma brainwaves. His work helped establish meditation as a serious, measurable object of brain science rather than mere relaxation.",
+    },
+    {
+      question: "Does meditation change brain structure?",
+      answer:
+        "Yes. Sara Lazar's Harvard research found experienced meditators had increased cortical thickness in attention-related regions and better-preserved gray matter with age. Meditation leaves a lasting physical mark on the brain, like muscle built through training — and it scales with experience.",
+    },
+    {
+      question: "What is gamma synchrony and why does it matter?",
+      answer:
+        "Gamma synchrony is fast (above ~30 Hz), highly coordinated brain activity linked to peak awareness and the binding of information into unified experience. Expert meditators produce it powerfully and at will, showing that high-level brain states are trainable skills, not fixed traits.",
+    },
+    {
+      question: "What does expert research mean for a beginner?",
+      answer:
+        "It proves the ceiling of what mental training can achieve and that the brain is profoundly plastic. Experts are far down a path that begins with your first sessions — your practice moves you along the same trajectory, with real, measurable (if smaller) changes accumulating over time.",
+    },
+  ],
+  "mbsr-mindfulness-clinical-evidence": [
+    {
+      question: "Does MBSR actually work?",
+      answer:
+        "Yes, with real but moderate effects. As the most researched meditation program, MBSR shows meaningful reductions in stress and anxiety, help with depression (especially relapse prevention), and modest chronic-pain benefit — alongside measurable brain and cortisol changes. It's effective but not a miracle cure, and results vary.",
+    },
+    {
+      question: "What is MBSR?",
+      answer:
+        "Mindfulness-Based Stress Reduction — a standardized, secular 8-week course developed by Jon Kabat-Zinn in 1979. It includes weekly classes, a retreat day, and ~45 minutes of daily home practice, teaching the body scan, sitting meditation, and mindful movement.",
+    },
+    {
+      question: "How long does MBSR take to work?",
+      answer:
+        "It's an 8-week program with daily practice, and benefits build across that arc. Measurable changes in stress, mood, HRV and cortisol develop over the weeks — consistent with research showing meditation's effects accrue over weeks of regular practice.",
+    },
+    {
+      question: "Is MBSR better than regular meditation?",
+      answer:
+        "Its advantage is structure — a proven, time-bound curriculum with teacher and group support, which aids adherence. But effects are moderate and it's a big time commitment. For many, a shorter daily practice they'll sustain works as well, since consistency matters more than intensity.",
+    },
+    {
+      question: "What can MBSR help with?",
+      answer:
+        "The strongest evidence is for reducing stress and anxiety and preventing depression relapse (via its cousin MBCT), with modest benefit for chronic pain. It also lowers cortisol and is linked to meditation's documented brain changes. Effects are real but moderate, and vary by person.",
+    },
+  ],
   "zen-koans-brain-cognition": [
     {
       question: "What is a Zen koan?",
