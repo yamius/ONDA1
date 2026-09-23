@@ -1,11 +1,12 @@
 import type { Article } from './types'
 
 /**
- * PILLAR / hub of the "Meditation With Measurable Progress" cluster. Links out to all spokes
- * (brain-changes, gamma, attention-trainable, aging, zazen, tanden-serotonin, vipassana, rajyoga,
- * koans, naikan, vs-breathwork, how-much, measuring-progress) + coherent-breathing / raise-hrv.
- * NOTE: the "Zen breathing for mood in beginners" spoke was merged into tanden-breathing-serotonin,
- * so that link points there. AEO + FAQPage. camera=pulse, watch=HRV; guide-not-medical-advice caveat.
+ * PILLAR / hub of the "Meditation With Measurable Progress" cluster (18 spokes). Links out to every
+ * spoke by section: science (brain-changes, gamma, attention, telomeres, brain-aging), measurable stages
+ * (jhana, expert monks), traditions (zazen, tanden-serotonin, vipassana, rajyoga, koans, naikan, MBSR),
+ * vs-breathwork, how-much, side effects, measuring-progress. NOTE: the "Zen breathing for mood in
+ * beginners" spoke was merged into tanden-breathing-serotonin — that link points there. AEO + FAQPage.
+ * camera=pulse, watch=HRV; guide-not-medical-advice caveat.
  */
 const article: Article = {
   slug: 'meditation-with-measurable-progress',
@@ -14,7 +15,7 @@ const article: Article = {
   description:
     'Meditation works — and its progress is measurable. This complete guide covers how meditation changes your brain and body, the major traditions, how much to practice, and how to see your progress.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['measuring-meditation-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'meditation-vs-breathwork', 'attention-trainable-skill-meditation'],
+  relatedSlugs: ['measuring-meditation-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'meditation-vs-breathwork', 'meditation-adverse-effects-safety'],
   introStyle: 'cyan',
   neuralSuggestion: {
     text: 'Meditation you can measure is meditation you’ll actually keep doing. Watch your own nervous system adapt.',
@@ -44,25 +45,31 @@ The evidence that meditation produces real, physical change is now substantial �
 
 **Cellular aging — an honest look.** Some studies link meditation to better telomere maintenance, tied to practice time; other rigorous trials find no effect. It's a promising but unproven bonus, not a fountain of youth. → **[Can Meditation Slow Aging?](/articles/meditation-aging-telomeres)**
 
+**Protecting the aging brain.** Long-term meditators show better-preserved gray matter, and even 8 weeks of training has reorganized older adults' brain networks in a more efficient direction. Promising, not yet conclusive — and the stress-reduction pathway alone supports brain health as you age. → **[Does Meditation Slow Brain Aging?](/articles/meditation-brain-aging-protection)**
+
+## Meditation has measurable stages — proven at the extreme
+
+If you want the clearest proof that meditation is staged, trackable progress, look at the **jhanas** — eight consecutive stages of deep meditative absorption, each a distinct state of consciousness. Harvard neuroscientists have used ultra-high-field 7 Tesla fMRI to map them, and found that deeper jhana stages produce measurably different brain activity — the neural change scaling with the depth of absorption. Here is meditation not as vague "getting better," but as an explicit ladder of states, each rung now visible on a brain scan. → **[The Jhanas: Meditation's Measurable Stages of Deep Absorption](/articles/jhana-meditation-stages)**
+
+And at the far end of experience, brain scans of expert meditators — including monks with tens of thousands of hours — show extraordinary, self-induced gamma brainwave synchrony, proving the mind is trainable to a remarkable degree. These experts are the "Olympic athletes of attention," and they mark the ceiling of a path that begins with your first ten minutes. → **[What Brain Scans of Expert Meditators Reveal](/articles/meditation-neuroscience-expert-monks)**
+
 ## The major meditation traditions — and what makes each distinct
 
 "Meditation" isn't one thing. It's a family of distinct techniques with different methods and different measurable signatures. Choosing well means matching the method to you.
 
-**Zazen (Zen).** The austere seated practice of Zen, studied since the 1960s. EEG shows increased alpha and theta — with deeper theta appearing specifically in experienced practitioners. → **[Zazen and the Brain](/articles/zazen-zen-meditation-brain)**
+**Zazen (Zen).** The austere seated practice of Zen, studied since the 1960s. EEG shows increased alpha and theta — with deeper theta appearing specifically in experienced practitioners. → **[Zazen and the Brain: What EEG Reveals About Experience](/articles/zazen-zen-meditation-brain)**
 
 **Zen breathing for mood — even for beginners.** Just 20 minutes of Zen abdominal (Tanden) breathing raised serotonin, activated the prefrontal cortex, and lifted mood in complete novices — proof that meaningful benefit arrives from the very start. → **[Tanden Breathing and Serotonin](/articles/tanden-breathing-serotonin)**
 
-**Vipassana.** An ancient practice of non-reactive observation, linked to thicker attention-related cortex, elevated gamma, and a quieter mind-wandering network. → **[Vipassana and the Brain](/articles/vipassana-meditation-attention-brain)**
+**Vipassana.** An ancient practice of non-reactive observation, linked to thicker attention-related cortex, elevated gamma, and a quieter mind-wandering network. → **[Vipassana and the Brain: What Research Shows About Attention](/articles/vipassana-meditation-attention-brain)**
 
-**Rajyoga (open-eyed).** The Brahma Kumaris practice done with eyes open — a distinct EEG signature (reduced delta, increased low-alpha) that keeps practitioners alert, not drowsy. Ideal if eyes-closed meditation makes you sleepy. → **[Rajyoga: The Open-Eyed Practice](/articles/rajyoga-open-eye-meditation)**
+**Rajyoga (open-eyed).** The Brahma Kumaris practice done with eyes open — a distinct EEG signature (reduced delta, increased low-alpha) that keeps practitioners alert, not drowsy. Ideal if eyes-closed meditation makes you sleepy. → **[Rajyoga: The Open-Eyed Practice With a Measurable Brain Signature](/articles/rajyoga-open-eye-meditation)**
 
-**Zen koans.** Paradoxical riddles that train the mind by exhausting analytical, self-referential thought — quieting the brain's default-mode rumination network. → **[Zen Koans and the Brain](/articles/zen-koans-brain-cognition)**
+**Zen koans.** Paradoxical riddles that train the mind by exhausting analytical, self-referential thought — quieting the brain's default-mode rumination network. → **[Zen Koans and the Brain: How Paradox Trains the Mind](/articles/zen-koans-brain-cognition)**
 
-**Naikan.** A Japanese practice of structured self-reflection through three questions — reshaping perspective toward gratitude and responsibility. → **[Naikan: Structured Self-Reflection](/articles/naikan-japanese-reflection)**
+**Naikan.** A Japanese practice of structured self-reflection through three questions — reshaping perspective toward gratitude and responsibility. Not emptying the mind, but reorganizing attention. → **[Naikan: The Japanese Practice of Structured Self-Reflection](/articles/naikan-japanese-reflection)**
 
-## Go deeper into the science
-
-If the evidence intrigues you, three deeper dives round out the picture. The **trained mind** is a measurable reality: neuroscientists scanned monks with tens of thousands of hours of practice and found extraordinary gamma synchrony and altered brain structure → **[What Brain Scans of Expert Meditators Reveal](/articles/meditation-neuroscience-expert-monks)**. At the far end of the spectrum, the **jhanas** — eight staged states of deep absorption — are now being mapped rung by rung on 7-Tesla brain scans → **[The Jhanas: Meditation's Measurable Stages](/articles/jhana-meditation-stages)**. And for a structured, clinically-tested starting point, **MBSR** is the most-researched program of all, with honest, moderate effect sizes → **[MBSR: Does It Actually Work?](/articles/mbsr-mindfulness-clinical-evidence)**.
+**MBSR (Mindfulness-Based Stress Reduction).** The most researched meditation program of all — a structured, secular 8-week course tested in hundreds of clinical trials. Real, moderate benefits for stress and anxiety, with the structure that makes progress trackable. → **[MBSR: The Most Studied Mindfulness Program — Does It Actually Work?](/articles/mbsr-mindfulness-clinical-evidence)**
 
 ## Meditation vs breathwork: which door to use
 
@@ -70,7 +77,7 @@ Meditation and breathwork both lead to a calmer nervous system, but through oppo
 
 ## How much meditation do you actually need?
 
-Less than you think — but consistency matters more than length. Trials find measurable benefits from as little as 10–12 minutes a day, and brain changes after a cumulative 5–10 hours. There's a genuine dose-response (more practice, more benefit), but longer daily sessions *reduce* adherence — people quit them. The real-world optimal dose is the largest amount you'll consistently do. → **[How Much Meditation Do You Need?](/articles/how-much-meditation-do-you-need)**
+Less than you think — but consistency matters more than length. Trials find measurable benefits from as little as 10–12 minutes a day, and brain changes after a cumulative 5–10 hours. There's a genuine dose-response (more practice, more benefit), but longer daily sessions *reduce* adherence — people quit them. The real-world optimal dose is the largest amount you'll consistently do. A reliable 10 minutes beats an aspirational 30 you abandon. → **[How Much Meditation Do You Need to See Results?](/articles/how-much-meditation-do-you-need)**
 
 ## How to start — and actually stick with it
 
@@ -83,9 +90,15 @@ Bringing it together into a practice you'll keep:
 5. **Measure your progress.** Track the trend, not single days. A [rising HRV baseline](/articles/how-to-raise-hrv-naturally) and a settling resting heart rate over weeks are your proof it's working.
 6. **Give it 2–3 weeks** before judging. That's when measurable changes in HRV, mood, and calm typically start showing.
 
+## Practice honestly: meditation's side effects
+
+Meditation is safe and beneficial for most people — but not for everyone, and pretending otherwise does people a disservice. Research shows a meaningful minority experience adverse effects such as anxiety, dissociation, or resurfacing trauma, especially with intensive practice or a vulnerable history. Start gentle, don't force through distress, and treat "this isn't settling me" as useful feedback rather than failure. Knowing the real risks is part of practicing well. → **[The Side Effects of Meditation No One Talks About](/articles/meditation-adverse-effects-safety)**
+
 ## See your meditation actually working
 
 This is what ONDA is built for. It reads your resting heart rate, HRV and breathing from your Apple Watch (or your pulse from your phone camera), establishes your personal baseline, and shows how your practice moves your numbers — in the moment and over weeks. Instead of meditating in the dark and hoping, you get the scoreboard meditation has always lacked: visible, objective progress reflecting your nervous system genuinely adapting. It's meditation you can see working — which is meditation you're far more likely to keep doing.
+
+*This guide summarizes research on meditation and is not medical advice; for a health condition, consult a qualified professional.*
 `,
 }
 

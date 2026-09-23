@@ -1377,9 +1377,68 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Because progress feels invisible, so motivation fades — even though real change is happening. The fix is objective feedback: tracking your HRV trend and resting heart rate gives you visible proof it's working, which keeps you practicing long enough for the benefits to compound.",
     },
     {
+      question: "Can meditation have side effects?",
+      answer:
+        "Yes, for a minority — most commonly anxiety or depression, sometimes dissociation or resurfacing trauma, more often with intensive practice or a trauma history. For most people doing gentle daily practice, risk is low. If a practice consistently makes you feel worse, stop or change approach.",
+    },
+    {
       question: "Is meditation or breathwork better?",
       answer:
         "They do different jobs. Breathwork gives fast, bottom-up calm in minutes; meditation gives deep, top-down training over weeks. The most effective approach combines them — breathe to reach calm, then meditate from there.",
+    },
+  ],
+  "meditation-brain-aging-protection": [
+    {
+      question: "Does meditation slow brain aging?",
+      answer:
+        "The evidence is promising but not conclusive. Studies link long-term meditation to better-preserved gray matter and less age-related decline, and even 8-week training has reorganized older adults' brain networks favorably. It's not a proven cure, but a genuinely encouraging, growing body of research.",
+    },
+    {
+      question: "How does meditation protect the aging brain?",
+      answer:
+        "Likely through several routes: preserving gray matter, reorganizing brain networks more efficiently, and — importantly — reducing chronic stress, which is known to harm the brain. The exact mechanisms aren't fully understood, but the stress-reduction pathway alone supports brain health.",
+    },
+    {
+      question: "Is the evidence that meditation slows brain aging solid?",
+      answer:
+        "It's promising, not settled. Much is cross-sectional (comparing existing meditators to non-meditators), which can't fully prove causation, and mechanisms are still being studied. Short-term trials showing favorable network changes strengthen the case, but it's an evolving field.",
+    },
+    {
+      question: "How much meditation helps the aging brain?",
+      answer:
+        "Even short practice may help — an 8-week program reshaped older adults' brain networks favorably. As with meditation generally, consistent daily practice over time is the approach most likely to yield benefits.",
+    },
+    {
+      question: "Should older adults meditate for brain health?",
+      answer:
+        "Yes, as a low-cost, low-risk complement to exercise and sleep. Beyond the promising brain-preservation research, meditation reliably lowers stress and sharpens attention — both of which independently support healthy brain aging.",
+    },
+  ],
+  "meditation-adverse-effects-safety": [
+    {
+      question: "Can meditation have negative side effects?",
+      answer:
+        "Yes. Research shows a meaningful minority of meditators experience adverse effects — most commonly anxiety and depression, but also dissociation, depersonalization, intrusive memories, panic, and rarely psychotic symptoms. One study of 953 regular meditators found over 10% reported adverse effects with significant negative impact.",
+    },
+    {
+      question: "How common are meditation's adverse effects?",
+      answer:
+        "Estimates vary widely — from around 1% to much higher, depending on how it's measured and the intensity of practice. They're more likely with intensive practice (long retreats, many hours) than with short daily sessions, and more likely in vulnerable individuals.",
+    },
+    {
+      question: "Who should be careful with meditation?",
+      answer:
+        "People with trauma histories or serious mental illness (or risk of it), intensive practitioners doing long retreats, and those practicing deeply without guidance. For a typical person doing gentle daily practice, risk is low.",
+    },
+    {
+      question: "Why isn't meditation's dark side talked about more?",
+      answer:
+        "Because it cuts against the \"wellness, only upside\" marketing. Even one of the largest meditation trials — which found school mindfulness didn't improve (and possibly harmed) at-risk children's wellbeing — got little coverage. Honest information about risks is often overshadowed by promotion.",
+    },
+    {
+      question: "What should I do if meditation makes me feel worse?",
+      answer:
+        "Don't force through it. If meditation consistently increases anxiety, dissociation, or distress, stop or change your approach — try gentler, grounding practices or breathwork, and seek guidance, especially if you have a trauma history. It's okay to stop; meditation isn't mandatory.",
     },
   ],
   "attention-trainable-skill-meditation": [

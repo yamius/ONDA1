@@ -384,6 +384,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-23T15:19:19+02:00",
     "modified": "2026-09-23T20:27:09+02:00"
   },
+  "meditation-adverse-effects-safety": {
+    "published": "2026-09-23T21:30:25.416Z",
+    "modified": "2026-09-23T21:30:25.416Z"
+  },
   "meditation-aging-telomeres": {
     "published": "2026-09-23T17:17:09+02:00",
     "modified": "2026-09-23T20:27:09+02:00"
@@ -391,6 +395,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "meditation-app-with-biofeedback": {
     "published": "2026-09-19T00:21:25+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "meditation-brain-aging-protection": {
+    "published": "2026-09-23T21:29:59.048Z",
+    "modified": "2026-09-23T21:29:59.048Z"
   },
   "meditation-brain-changes-how-fast": {
     "published": "2026-09-23T15:19:19+02:00",
@@ -414,7 +422,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-with-measurable-progress": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-23T20:46:05+02:00"
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
