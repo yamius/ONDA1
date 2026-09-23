@@ -137,12 +137,12 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "chronotherapy-light-dark-timing": {
-    "published": "2026-09-23T11:42:10.929Z",
-    "modified": "2026-09-23T11:42:10.929Z"
+    "published": "2026-09-23T13:54:36+02:00",
+    "modified": "2026-09-23T13:54:36+02:00"
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-05-25T19:35:33+02:00"
+    "modified": "2026-09-23T13:54:36+02:00"
   },
   "circadian-reset-mastering-light": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -239,6 +239,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "find-your-resonance-breathing-rate": {
     "published": "2026-09-19T01:10:36+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "forest-bathing-shinrin-yoku-science": {
+    "published": "2026-09-23T12:14:11.197Z",
+    "modified": "2026-09-23T12:14:11.197Z"
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -523,6 +527,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
     "modified": "2026-05-18T11:01:28+02:00"
+  },
+  "tanden-breathing-serotonin": {
+    "published": "2026-09-23T12:13:40.447Z",
+    "modified": "2026-09-23T12:13:40.447Z"
   },
   "train-hrv-iphone-camera-no-wearable": {
     "published": "2026-09-19T01:10:36+02:00",

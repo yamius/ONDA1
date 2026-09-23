@@ -1350,6 +1350,60 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "tanden-breathing-serotonin": [
+    {
+      question: "What is tanden breathing?",
+      answer:
+        "A Japanese practice of slow, deep breathing centered on the tanden, a point about three finger-widths below the navel. You breathe low into the belly with a long exhale, keeping awareness at that center. It's rooted in Zen, martial arts, and traditional Japanese breathing methods.",
+    },
+    {
+      question: "Does breathing really affect serotonin?",
+      answer:
+        "Japanese brain-imaging research found that rhythmic tanden breathing activates serotonin neurons and the anterior prefrontal cortex. Serotonin is tied to mood and calm focus, offering a mechanism beyond the usual vagus-nerve explanation. It complements, rather than replaces, the autonomic effects.",
+    },
+    {
+      question: "How is tanden breathing different from other slow breathing?",
+      answer:
+        "Mechanically it's similar to other slow diaphragmatic breathing — that's what raises HRV. What's distinctive is the Japanese framing: the tanden focus for a reliably deep breath, and the research linking it to serotonin and prefrontal activation, not just vagal calming.",
+    },
+    {
+      question: "Where is the tanden?",
+      answer:
+        "About three finger-widths below the navel, deep in the lower abdomen — considered the body's center of gravity and energy in Japanese tradition. Breathing \"from the tanden\" means engaging the lower belly and diaphragm, not the chest.",
+    },
+    {
+      question: "How long should I practice tanden breathing?",
+      answer:
+        "A few minutes at a slow, even pace (around six breaths per minute) is enough to feel a shift. Consistency and a calm rhythm matter more than long sessions.",
+    },
+  ],
+  "forest-bathing-shinrin-yoku-science": [
+    {
+      question: "What is forest bathing (shinrin-yoku)?",
+      answer:
+        "Spending calm, unhurried, sensory time among trees. Coined in Japan in the 1980s, it's been measured to lower cortisol and sympathetic activity while raising parasympathetic (\"rest and digest\") tone — a real autonomic shift toward calm, not just a pleasant walk.",
+    },
+    {
+      question: "Does forest bathing actually lower stress hormones?",
+      answer:
+        "Yes. A Japanese nationwide study across 38 forests found cortisol dropped 12.4% and sympathetic activity 7.0% versus city environments, while parasympathetic activity rose 55.0%. A controlled study also found lower blood cortisol and blood pressure after a forest walk.",
+    },
+    {
+      question: "What are phytoncides?",
+      answer:
+        "Volatile compounds (terpenes) that trees release to defend against microbes. Japanese research suggests inhaling them calms the brain via smell, helps balance the autonomic nervous system, and boosts natural killer (NK) immune cell activity — part of why forest air itself, not just the walk, matters.",
+    },
+    {
+      question: "How long should I forest bathe?",
+      answer:
+        "The studies used sessions of about an hour or more. Longer, slower, and more sensory is better — but even a shorter, unhurried time among trees helps. It's about presence, not distance.",
+    },
+    {
+      question: "Do I need a real forest?",
+      answer:
+        "A quiet park with real trees delivers much of the benefit. The key ingredients are trees (for phytoncides), calm, and unhurried sensory attention — not remoteness.",
+    },
+  ],
   "chronotherapy-light-dark-timing": [
     {
       question: "What is chronotherapy?",
