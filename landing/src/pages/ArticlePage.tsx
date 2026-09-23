@@ -12,6 +12,7 @@ import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { ARTICLE_FAQ } from '../data/article-faq'
+import { getPrimaryHubForArticle } from '../data/article-topics'
 import { langFromPath, langHref } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -271,6 +272,8 @@ export function ArticlePage() {
   const tImageTitle = article?.imageTitle ? tField('imageTitle', article.imageTitle) : article?.imageTitle
   const tImageCaption = article?.imageCaption ? tField('imageCaption', article.imageCaption) : article?.imageCaption
   const tContent = article ? tField('content', article.content) : ''
+  // ONDA Library topic hub for the breadcrumb (Home / Library / Topic / Article).
+  const primaryHub = article ? getPrimaryHubForArticle(article.slug) : undefined
   const tHowToSteps = article?.howToSteps
     ? (() => {
         const fromI18n = tArticles(`bodies.${slug}.howToSteps`, {
@@ -820,6 +823,14 @@ export function ArticlePage() {
           {tArticles('breadcrumb.current')}
         </Link>
         <span>/</span>
+        {lang === 'en' && primaryHub && (
+          <>
+            <Link to={`/articles/topic/${primaryHub.slug}`} className="transition-colors hover:text-white/50">
+              {primaryHub.name}
+            </Link>
+            <span>/</span>
+          </>
+        )}
         <span className="text-terminal-green/60" aria-current="page">
           {tTitle}
         </span>

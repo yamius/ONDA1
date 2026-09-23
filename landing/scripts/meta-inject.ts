@@ -10,6 +10,8 @@ import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug, articles } from '../src/data/articles'
+import { ARTICLE_TOPIC_HUBS, getArticleTopicHub, getPrimaryHubForArticle, type ArticleTopicSlug } from '../src/data/article-topics'
+import { hubItemSlugs, hubLastModified } from '../src/data/article-topic-listing'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { HRV_FAQ } from '../src/data/hrv-norms'
@@ -420,6 +422,8 @@ export interface RouteMeta {
     url: string
     articleSlugs: readonly string[]
     glossarySlugs: readonly string[]
+    /** YYYY-MM-DD — newest article in the hub (ONDA Library hubs). */
+    dateModified?: string
   }
   /** Article image for og:image, twitter:image (absolute URL) */
   image?: string
@@ -594,9 +598,18 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
     return items
   }
   if (segments[0] === 'articles') {
-    items.push({ name: 'Articles', url: `${SITE_URL}/articles` })
+    items.push({ name: 'Library', url: `${SITE_URL}/articles` })
+    // ONDA Library topic hub: Home › Library › <Topic>
+    if (segments[1] === 'topic' && segments[2]) {
+      const hub = getArticleTopicHub(segments[2])
+      items.push({ name: hub?.name ?? segments[2], url: `${SITE_URL}/articles/topic/${segments[2]}` })
+      return items
+    }
     if (segments[1]) {
       const article = getArticleBySlug(segments[1])
+      // Home › Library › <primary topic> › <Article>
+      const hub = getPrimaryHubForArticle(segments[1])
+      if (hub) items.push({ name: hub.name, url: `${SITE_URL}/articles/topic/${hub.slug}` })
       items.push({
         name: article?.title ?? segments[1],
         url: `${SITE_URL}/articles/${segments[1]}`,
@@ -1062,6 +1075,7 @@ function buildTopicHubJsonLd(
   url: string,
   articleSlugs: readonly string[],
   glossarySlugs: readonly string[],
+  dateModified?: string,
 ): string {
   let position = 1
   const items: Record<string, unknown>[] = []
@@ -1085,6 +1099,7 @@ function buildTopicHubJsonLd(
     name,
     description,
     url,
+    ...(dateModified ? { dateModified } : {}),
     isPartOf: { '@id': `${SITE_URL}/#website` },
     author: { '@id': AUTHOR_ID },
     mainEntity: {
@@ -2905,19 +2920,47 @@ export function getMetaForRoute(route: string): RouteMeta {
   // /articles — knowledge-base index. Emit CollectionPage + ItemList over the
   // articles so the hub is a structured listing, not just breadcrumbs. (EN;
   // localized /<lang>/articles get their meta via applyLocalizedMeta.)
+  // /articles — ONDA Library: CollectionPage + ItemList over the 9 topic hubs.
   if (route === '/articles') {
     return {
-      title: 'Articles | ONDA Life — Biohacking & Neuroscience',
+      title: 'ONDA Library — Breathing, HRV & Meditation Guides | ONDA Life',
       description:
-        'Long-form knowledge base on HRV, breathwork, sleep, recovery and nervous-system science — the mechanism explained and cited, framings kept separate from measured science.',
+        'Science-based guides on breathing, HRV, meditation and the nervous system, organized into nine topics. Pick a topic to start.',
       url,
       breadcrumbs,
       itemList: {
-        name: 'ONDA Life Articles',
-        description: 'Long-form articles on HRV, breathwork and nervous-system science.',
+        name: 'ONDA Library',
+        description: 'Science-based guides on breathing, HRV, meditation and the nervous system, by topic.',
         url,
-        items: articles.map((a) => ({ url: `${SITE_URL}/articles/${a.slug}`, name: a.title })),
+        items: ARTICLE_TOPIC_HUBS.map((h) => ({ url: `${SITE_URL}/articles/topic/${h.slug}`, name: h.name })),
       },
+    }
+  }
+
+  // /articles/topic/:topic — ONDA Library topic hub: CollectionPage + ItemList
+  // (Start here first, then the list in rendered order), dateModified = newest article.
+  const libTopicMatch = route.match(/^\/articles\/topic\/([^/]+)$/)
+  if (libTopicMatch) {
+    const hub = getArticleTopicHub(libTopicMatch[1])
+    if (hub) {
+      const topic = hub.slug as ArticleTopicSlug
+      // Keep under the ~60-char title limit (long names drop the "Guides & Research" tail
+      // instead of being cut mid-phrase).
+      const longTitle = `${hub.name} — Guides & Research | ONDA Library`
+      return {
+        title: longTitle.length <= 60 ? longTitle : `${hub.name} | ONDA Library`,
+        description: hub.tile,
+        url,
+        breadcrumbs,
+        topicHub: {
+          name: `${hub.name} — ONDA Library`,
+          description: hub.intro,
+          url,
+          articleSlugs: hubItemSlugs(topic),
+          glossarySlugs: [],
+          dateModified: hubLastModified(topic) ?? undefined,
+        },
+      }
     }
   }
 
@@ -3344,6 +3387,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       meta.topicHub.url,
       meta.topicHub.articleSlugs,
       meta.topicHub.glossarySlugs,
+      meta.topicHub.dateModified,
     )}</script>`
     out = out.replace('</head>', `  ${topicScript}\n</head>`)
   }

@@ -7,6 +7,19 @@ import { dirname, join } from 'path'
 import { fileURLToPath } from 'url'
 import { glossaryTerms } from '../src/data/glossary'
 import { articles } from '../src/data/articles'
+import { ARTICLE_TOPIC_HUBS, ARTICLE_PRIMARY_TOPIC } from '../src/data/article-topics'
+
+// Every published article must belong to an ONDA Library topic hub, otherwise it
+// silently drops out of /articles (orphan). Fail the build with a clear fix.
+{
+  const unmapped = articles.map((a) => a.slug).filter((s) => !ARTICLE_PRIMARY_TOPIC[s])
+  if (unmapped.length) {
+    throw new Error(
+      `[library] ${unmapped.length} article(s) have no topic in src/data/article-topics.ts ` +
+        `(ARTICLE_PRIMARY_TOPIC): ${unmapped.join(', ')}. Add each to its topic (and ARTICLE_WORLD if it is world research).`,
+    )
+  }
+}
 import { TOPIC_SLUGS, INDEXED_TOPIC_SLUGS } from '../src/data/topics'
 import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
@@ -833,6 +846,8 @@ export function getPrerenderRoutes(): string[] {
     ...staticPaths,
     ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
     ...articles.map((a) => `/articles/${a.slug}`),
+    // ONDA Library topic hubs (EN) — /articles/topic/<topic>
+    ...ARTICLE_TOPIC_HUBS.map((h) => `/articles/topic/${h.slug}`),
     ...localizedEsArticleRoutes,
     ...localizedRuArticleRoutes,
     ...localizedLocaleArticleRoutes,

@@ -58,6 +58,7 @@ const HomePage           = lazy(() => import('./pages/HomePage').then(m => ({ de
 const AboutPage          = lazyNs('about', () => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })))
 const GlossaryPage       = lazyNs('glossary', () => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })))
 const ArticlesPage       = lazyNs('articles', () => import('./pages/ArticlesPage').then(m => ({ default: m.ArticlesPage })))
+const ArticleTopicHubPage = lazyNs('articles', () => import('./pages/ArticleTopicHubPage').then(m => ({ default: m.ArticleTopicHubPage })))
 const ContactPage        = lazyNs('contact', () => import('./pages/ContactPage').then(m => ({ default: m.ContactPage })))
 const TheStackPage       = lazyNs('articles', () => import('./pages/TheStackPage').then(m => ({ default: m.TheStackPage })))
 const SitemapPage        = lazyNs('sitemap', () => import('./pages/SitemapPage').then(m => ({ default: m.SitemapPage })))
@@ -166,6 +167,9 @@ const routeElements = (
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`gloss-${l}`} path={`/${l}/glossary/:slug`} element={<GlossaryTermPage />} />
             ))}
+            {/* ONDA Library topic hubs (EN only for now). More specific than
+                /articles/:slug, so article URLs are unaffected. */}
+            <Route path="/articles/topic/:topic" element={<ArticleTopicHubPage />} />
             <Route path="/articles/:slug"  element={<ArticlesSlugRouter />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`art-${l}`} path={`/${l}/articles/:slug`} element={<ArticlesSlugRouter />} />

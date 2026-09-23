@@ -1,15 +1,15 @@
 {
   "meta": {
-    "title": "Articles | ONDA Life — Biohacking & Neuroscience",
-    "description": "Deep-dive articles on vagal tone, HRV, breathing, and the nervous system — science-backed guides, honest about what the research shows."
+    "title": "ONDA Library — Breathing, HRV & Meditation Guides | ONDA Life",
+    "description": "Science-based guides on breathing, HRV, meditation and the nervous system, organized into nine topics. Pick a topic to start."
   },
   "breadcrumb": {
     "home": "Home",
-    "current": "Articles"
+    "current": "Library"
   },
-  "badge": "[ DEEP DIVES ]",
-  "h1": "Articles",
-  "subtitle": "Science-backed guides for nervous system optimization. From vagal tone to consciousness architecture.",
+  "badge": "[ ONDA LIBRARY ]",
+  "h1": "ONDA Library",
+  "subtitle": "Science-based guides on breathing, HRV, meditation and the nervous system. Pick a topic to start.",
   "searchPlaceholder": "search articles...",
   "allLabel": "All",
   "noResults": "No articles found. Try a different search.",

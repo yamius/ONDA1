@@ -14,6 +14,8 @@ import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
 import { getArticleBySlug } from '../src/data/articles'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
+import { hubLastModified } from '../src/data/article-topic-listing'
+import { getArticleTopicHub, type ArticleTopicSlug } from '../src/data/article-topics'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
 import { readFileSync } from 'fs'
 
@@ -123,6 +125,7 @@ function getPriority(route: string): string {
   if (route === '/articles') return '0.9'
   if (route === '/topics') return '0.9'
   if (route.startsWith('/topics/')) return '0.85'
+  if (route.startsWith('/articles/topic/')) return '0.85'
   if (route === '/contact') return '0.8'
   if (route.startsWith('/level/')) return '0.8'
   const articleSlug = articleSlugFromRoute(route)
@@ -151,6 +154,11 @@ function getChangefreq(route: string): string {
  * signal — whereas a missing <lastmod> is spec-valid and honest.
  */
 function getLastmod(route: string): string | null {
+  // ONDA Library topic hub: lastmod = newest article in the hub.
+  const hubSlug = route.match(/^\/articles\/topic\/([^/]+)$/)?.[1]
+  if (hubSlug) {
+    return getArticleTopicHub(hubSlug) ? hubLastModified(hubSlug as ArticleTopicSlug) : null
+  }
   const slug = route.match(/^(?:\/(?:es|ru|uk|zh))?\/articles\/([^/]+)$/)?.[1]
   if (slug) {
     const d = ARTICLE_DATES[slug]

@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next'
 import { articles } from '../data/articles'
 import { FEATURED_ARTICLE_SLUGS } from '../data/articles-categories'
 import { TOPICS } from '../data/topics'
+import { ARTICLE_TOPIC_HUBS } from '../data/article-topics'
+import { liveCountForTopic } from '../data/article-topic-listing'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, homePathFor, langHref } from '../i18n'
@@ -120,6 +122,147 @@ export function ArticlesPage() {
     setMeta('twitter:image', OG_IMAGE, true)
     syncOgLocale(lang)
   }, [t, langPrefix])
+
+  const renderGrid = (items: ArticleCard[]) => (
+    <div className="grid gap-6 md:grid-cols-2">
+      {items.map((article) => (
+        <Link
+          key={article.path}
+          to={article.path}
+          className="glass-card group rounded-xl overflow-hidden transition-all hover:border-terminal-green/10"
+        >
+          {article.image && (
+            <div className="aspect-video w-full overflow-hidden border-b border-white/5">
+              <OptimizedImage
+                src={article.image}
+                alt={article.title}
+                loading="lazy"
+                width={640}
+                height={360}
+                className="h-full w-full object-cover transition-transform group-hover:scale-105"
+              />
+            </div>
+          )}
+          <div className="p-6">
+            <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
+              {article.title}
+            </h3>
+            <p className="font-mono text-xs leading-relaxed text-white/40">{article.description}</p>
+          </div>
+        </Link>
+      ))}
+    </div>
+  )
+
+  // ── EN: ONDA Library — 9 topic tiles → /articles/topic/<topic> hubs ─────────
+  // Localized /<lang>/articles keep the flat layout below until the locale hubs
+  // ship. Search (and the ?q= SearchAction target) still works: a query swaps
+  // the tiles for a filtered result list.
+  if (lang === 'en') {
+    const searching = search.trim().length > 0
+    return (
+      <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6">
+        <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
+          <Link to="/" className="transition-colors hover:text-white/50">{t('breadcrumb.home')}</Link>
+          <span>/</span>
+          <span className="text-terminal-green/60" aria-current="page">{t('breadcrumb.current')}</span>
+        </nav>
+        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">{t('badge')}</div>
+        <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">{t('h1')}</h1>
+        <p className="mb-10 max-w-2xl text-base leading-relaxed text-white/60">{t('subtitle')}</p>
+
+        <div className="mb-10">
+          <div className="relative">
+            <span className="absolute top-1/2 left-4 -translate-y-1/2 font-mono text-sm text-terminal-green/40">{'>'}</span>
+            <input
+              type="text"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder={t('searchPlaceholder')}
+              aria-label={t('searchPlaceholder')}
+              className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 pl-8 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-terminal-green/30"
+            />
+          </div>
+        </div>
+
+        {searching ? (
+          <section aria-label="Search results">
+            {renderGrid(filtered)}
+            {filtered.length === 0 && (
+              <p className="py-20 text-center font-mono text-sm text-white/30">{t('noResults')}</p>
+            )}
+          </section>
+        ) : (
+          <section aria-label="Topics">
+            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {ARTICLE_TOPIC_HUBS.map((hub) => {
+                const cover = articles.find((a) => a.slug === hub.startHere)
+                const count = liveCountForTopic(hub.slug)
+                return (
+                  <Link
+                    key={hub.slug}
+                    to={`/articles/topic/${hub.slug}`}
+                    className="glass-card group flex flex-col overflow-hidden rounded-xl transition-all hover:border-terminal-green/20"
+                  >
+                    {cover?.image && (
+                      <div className="aspect-video w-full overflow-hidden border-b border-white/5">
+                        <OptimizedImage
+                          src={cover.image}
+                          alt={hub.name}
+                          loading="lazy"
+                          width={640}
+                          height={360}
+                          className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                        />
+                      </div>
+                    )}
+                    <div className="flex flex-1 flex-col p-5">
+                      <h2 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
+                        {hub.name}
+                      </h2>
+                      <p className="mb-4 flex-1 font-mono text-xs leading-relaxed text-white/45">{hub.tile}</p>
+                      <span className="font-mono text-[11px] tracking-wider text-terminal-green/60">
+                        {count} {count === 1 ? 'article' : 'articles'} →
+                      </span>
+                    </div>
+                  </Link>
+                )
+              })}
+            </div>
+          </section>
+        )}
+
+        <nav className="mt-12 flex flex-wrap gap-3 border-t border-white/10 pt-6" aria-label="More">
+          <Link to="/reviews" className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
+            Device reviews →
+          </Link>
+          <Link to="/glossary" className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
+            Glossary →
+          </Link>
+          <Link to="/topics" className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/35 transition-all hover:border-white/20 hover:text-white/60">
+            Topic clusters →
+          </Link>
+        </nav>
+
+        <section className="mt-14 border-t border-white/10 pt-10">
+          <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">About the ONDA Library</h2>
+          <div className="space-y-4 font-mono text-sm leading-relaxed text-white/60">
+            <p>
+              The ONDA Library is a long-form collection on the nervous system, heart-rate variability, breathing,
+              meditation, sleep and recovery — written to explain the mechanism, not just list tips. Where a claim is
+              well-supported we cite it; where an idea is a framing or still experimental, we say so.
+            </p>
+            <p>
+              Every guide sits in one of nine topics, each with its own hub page and a recommended place to start. To
+              go deeper on the measured side, see{' '}
+              <Link to="/measurements" className="text-terminal-green hover:underline">what ONDA measures</Link> and{' '}
+              <Link to="/research" className="text-terminal-green hover:underline">the evidence</Link>.
+            </p>
+          </div>
+        </section>
+      </div>
+    )
+  }
 
   return (
     <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6">
