@@ -241,8 +241,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "forest-bathing-shinrin-yoku-science": {
-    "published": "2026-09-23T12:14:11.197Z",
-    "modified": "2026-09-23T12:14:11.197Z"
+    "published": "2026-09-23T14:20:18+02:00",
+    "modified": "2026-09-23T14:20:18+02:00"
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -271,6 +271,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "how-much-alcohol-lowers-hrv": {
     "published": "2026-09-21T17:29:12+02:00",
     "modified": "2026-09-21T17:29:12+02:00"
+  },
+  "how-much-meditation-do-you-need": {
+    "published": "2026-09-23T12:25:15.941Z",
+    "modified": "2026-09-23T12:25:15.941Z"
   },
   "how-much-sleep-do-you-need": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -364,9 +368,17 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-24T10:01:04Z",
     "modified": "2026-06-08T10:08:07+02:00"
   },
+  "measuring-meditation-progress": {
+    "published": "2026-09-23T12:25:47.388Z",
+    "modified": "2026-09-23T12:25:47.388Z"
+  },
   "meditation-app-with-biofeedback": {
     "published": "2026-09-19T00:21:25+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "meditation-brain-changes-how-fast": {
+    "published": "2026-09-23T12:24:43.422Z",
+    "modified": "2026-09-23T12:24:43.422Z"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -529,8 +541,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-18T11:01:28+02:00"
   },
   "tanden-breathing-serotonin": {
-    "published": "2026-09-23T12:13:40.447Z",
-    "modified": "2026-09-23T12:13:40.447Z"
+    "published": "2026-09-23T14:20:18+02:00",
+    "modified": "2026-09-23T14:20:18+02:00"
   },
   "train-hrv-iphone-camera-no-wearable": {
     "published": "2026-09-19T01:10:36+02:00",

@@ -1350,6 +1350,87 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "meditation-brain-changes-how-fast": [
+    {
+      question: "How long does it take for meditation to change your brain?",
+      answer:
+        "Faster than most expect. Randomized trials found white matter changes around the cingulate cortex within 2–4 weeks (after just 5–10 hours of training), and gray matter increases after about 10 hours of practice. Measurable adaptation begins within weeks, not years.",
+    },
+    {
+      question: "Are meditation's brain changes real or just a feeling?",
+      answer:
+        "Real and physical. Brain-imaging studies show measurable changes in gray and white matter, correlated with improved emotional states — not just subjective calm. The experience is subtle, but the objective changes are documented on scans.",
+    },
+    {
+      question: "Does more meditation practice mean more benefit?",
+      answer:
+        "Generally yes. Research points to a dose-response relationship — more practice time is linked to larger effects and greater biological change. It's a trainable skill where consistency is the main lever.",
+    },
+    {
+      question: "How can I tell if meditation is working?",
+      answer:
+        "Because brain changes aren't directly feelable, objective signals help — like HRV trending up and resting heart rate settling over weeks. Tracking these gives you the feedback loop that silent practice lacks, showing your nervous system is adapting.",
+    },
+    {
+      question: "Why do people quit meditation?",
+      answer:
+        "Usually because they feel nothing is changing, so motivation fades — even though measurable change is happening. Visible progress (like tracking HRV) solves this by providing the feedback that keeps you practicing long enough for benefits to accrue.",
+    },
+  ],
+  "how-much-meditation-do-you-need": [
+    {
+      question: "How many minutes of meditation a day do I need?",
+      answer:
+        "Research supports modest daily doses — trials have used as little as 10–12 minutes a day and found measurable benefits over 8–12 weeks. The best amount is the largest you'll consistently do; a reliable 10 minutes beats an aspirational 30 you quit.",
+    },
+    {
+      question: "How long until meditation shows results?",
+      answer:
+        "Measurable changes in HRV, blood pressure and mood typically begin within 2–3 weeks of regular practice, and brain-imaging changes appear after a cumulative 5–10 hours (around 10–20 minutes a day for a few weeks).",
+    },
+    {
+      question: "Is it better to meditate longer or more often?",
+      answer:
+        "More often. Consistency beats duration — daily short sessions give your nervous system a regular signal to adapt, and benefits accumulate with total practice time. Long infrequent sessions are harder to sustain and less effective.",
+    },
+    {
+      question: "Does meditating more give more benefit?",
+      answer:
+        "Generally yes — there's a dose-response relationship. But longer daily sessions also reduce adherence, so the real-world optimum is the largest dose you'll actually keep up, not the theoretical maximum.",
+    },
+    {
+      question: "How do I stay consistent with meditation?",
+      answer:
+        "Start small (5–10 minutes), anchor it to an existing routine, and use visible progress — like tracking your HRV trend — to stay motivated. Seeing the small daily doses work is what keeps the habit alive long enough to compound.",
+    },
+  ],
+  "measuring-meditation-progress": [
+    {
+      question: "Can you measure meditation progress?",
+      answer:
+        "Yes. Meditation trains your autonomic nervous system, which leaves measurable signals — rising HRV, a settling resting heart rate, and a faster, deeper calming response during sessions. These give objective evidence your practice is working, beyond how it subjectively feels.",
+    },
+    {
+      question: "What's the best marker of meditation progress?",
+      answer:
+        "A rising baseline HRV over weeks is one of the clearest, reflecting stronger parasympathetic tone. A settling resting heart rate and a quicker in-session calming response are also strong markers. Watch trends over weeks, not single readings.",
+    },
+    {
+      question: "Why does meditation feel like it's not working?",
+      answer:
+        "Because it has a feedback problem — the benefits are real and measurable (brain, stress, HRV) but the experience is subtle, so nothing feels different. This invisible progress is why people quit. Objective tracking bridges the gap.",
+    },
+    {
+      question: "Does a bad meditation session mean no progress?",
+      answer:
+        "No. On a day your mind was busy and the session felt like a failure, your numbers may still show a real calming shift. HRV also varies with sleep and stress, so single days fluctuate — the progress is in the weekly trend.",
+    },
+    {
+      question: "How do I know if my meditation is improving over time?",
+      answer:
+        "Track the trend, not the day: is your baseline HRV rising and resting heart rate settling over a month? Does your heart rate drop faster and deeper during sessions than before? Those trends are objective signs of improvement.",
+    },
+  ],
   "tanden-breathing-serotonin": [
     {
       question: "What is tanden breathing?",
