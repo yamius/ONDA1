@@ -60,6 +60,10 @@ The evidence that meditation produces real, physical change is now substantial �
 
 **Naikan.** A Japanese practice of structured self-reflection through three questions — reshaping perspective toward gratitude and responsibility. → **[Naikan: Structured Self-Reflection](/articles/naikan-japanese-reflection)**
 
+## Go deeper into the science
+
+If the evidence intrigues you, three deeper dives round out the picture. The **trained mind** is a measurable reality: neuroscientists scanned monks with tens of thousands of hours of practice and found extraordinary gamma synchrony and altered brain structure → **[What Brain Scans of Expert Meditators Reveal](/articles/meditation-neuroscience-expert-monks)**. At the far end of the spectrum, the **jhanas** — eight staged states of deep absorption — are now being mapped rung by rung on 7-Tesla brain scans → **[The Jhanas: Meditation's Measurable Stages](/articles/jhana-meditation-stages)**. And for a structured, clinically-tested starting point, **MBSR** is the most-researched program of all, with honest, moderate effect sizes → **[MBSR: Does It Actually Work?](/articles/mbsr-mindfulness-clinical-evidence)**.
+
 ## Meditation vs breathwork: which door to use
 
 Meditation and breathwork both lead to a calmer nervous system, but through opposite doors. **Breathwork** is bottom-up and fast — slow breathing activates the vagus nerve within minutes, a quick lever for an acute state change. **Meditation** is top-down and deep — training attention and reshaping the brain over weeks. The best approach for most people combines them: use breath to reach a calm state, then meditate from within it. → **[Meditation vs Breathwork: Which Should You Choose?](/articles/meditation-vs-breathwork)**
