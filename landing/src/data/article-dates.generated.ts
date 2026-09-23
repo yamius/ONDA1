@@ -389,8 +389,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-23T16:02:36+02:00"
   },
   "meditation-vs-breathwork": {
-    "published": "2026-09-23T15:18:31.797Z",
-    "modified": "2026-09-23T15:18:31.797Z"
+    "published": "2026-09-23T18:39:06+02:00",
+    "modified": "2026-09-23T18:39:06+02:00"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -419,6 +419,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "muscle-metabolic-marker": {
     "published": "2026-03-04T14:27:07+01:00",
     "modified": "2026-05-29T18:05:00+02:00"
+  },
+  "naikan-japanese-reflection": {
+    "published": "2026-09-23T17:29:38.757Z",
+    "modified": "2026-09-23T17:29:38.757Z"
   },
   "name-it-to-tame-it-affect-labeling": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -558,7 +562,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "tanden-breathing-serotonin": {
     "published": "2026-09-23T14:20:18+02:00",
-    "modified": "2026-09-23T14:20:18+02:00"
+    "modified": "2026-09-23T18:39:06+02:00"
   },
   "train-hrv-iphone-camera-no-wearable": {
     "published": "2026-09-19T01:10:36+02:00",
@@ -617,8 +621,12 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "zazen-zen-meditation-brain": {
-    "published": "2026-09-23T15:18:59.102Z",
-    "modified": "2026-09-23T15:18:59.102Z"
+    "published": "2026-09-23T18:39:06+02:00",
+    "modified": "2026-09-23T18:39:06+02:00"
+  },
+  "zen-koans-brain-cognition": {
+    "published": "2026-09-23T17:29:00.384Z",
+    "modified": "2026-09-23T17:29:00.384Z"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",

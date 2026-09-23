@@ -1350,6 +1350,60 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "zen-koans-brain-cognition": [
+    {
+      question: "What is a Zen koan?",
+      answer:
+        "A paradoxical riddle used in Rinzai Zen — like \"the sound of one hand clapping\" — that can't be solved by logic. Practitioners sit with it during meditation until the analytical mind exhausts itself, opening into a more direct, non-conceptual awareness. It's a training tool, not a puzzle to solve.",
+    },
+    {
+      question: "How do koans affect the brain?",
+      answer:
+        "Koans work on two brain networks: they frustrate the central executive network (analytical problem-solving) and, through Zen practice, reduce default mode network activity (self-referential thought and rumination). Research on Zen practitioners shows reduced conceptual, self-referential thinking during practice.",
+    },
+    {
+      question: "Why can't koans be solved logically?",
+      answer:
+        "That's intentional. The koan presents a problem the logical mind can't resolve, which wears out the habitual analytical, self-narrating mode of thinking — creating an opening for direct, present awareness. The unsolvability is the mechanism, not a flaw.",
+    },
+    {
+      question: "What is the default mode network and why does it matter?",
+      answer:
+        "It's the brain system active during mind-wandering and self-referential thought (\"me thinking about me\"), linked to rumination and unhappiness when overactive. Zen practice, including koan work, is associated with quieting it — reducing the mental narration behind much distress.",
+    },
+    {
+      question: "Do I need to practice koans to benefit?",
+      answer:
+        "No. The principle — noticing when you're caught in mental narration and returning to direct present experience — is available to anyone. Formal koans are a deep, structured version, but the everyday practice of stepping out of the thinking loop carries the same benefit.",
+    },
+  ],
+  "naikan-japanese-reflection": [
+    {
+      question: "What is Naikan?",
+      answer:
+        "A Japanese method of structured self-reflection developed by Ishin Yoshimoto, meaning \"looking inside.\" It guides reflection through three questions about a relationship — what you received, what you gave, and what trouble you caused — used both personally and therapeutically to shift perspective toward gratitude and responsibility.",
+    },
+    {
+      question: "What are the three Naikan questions?",
+      answer:
+        "About a specific person: (1) What have I received from them? (2) What have I given to them? (3) What troubles and difficulties have I caused them? There is deliberately no fourth question about how they wronged you — its absence redirects attention away from habitual grievance.",
+    },
+    {
+      question: "Why is there no question about how others wronged me?",
+      answer:
+        "Because we already spend enormous energy tracking others' faults. Naikan deliberately omits it to redirect attention toward what we've received, given, and the trouble we've caused — surfacing a fuller, fairer, usually warmer picture of our relationships.",
+    },
+    {
+      question: "How is Naikan different from breath meditation?",
+      answer:
+        "Breath meditation calms the mind by focusing on the breath; Naikan directs reflection along specific lines to reshape perspective. It doesn't empty the mind — it reorganizes attention toward gratitude and responsibility. They complement each other well.",
+    },
+    {
+      question: "How do I practice Naikan?",
+      answer:
+        "Choose a significant person and time period, sit quietly, and reflect specifically on the three questions in turn — what you received, gave, and the trouble you caused. Be concrete, resist cataloguing their faults, and notice the shift. Even 15–20 minutes helps.",
+    },
+  ],
   "meditation-vs-breathwork": [
     {
       question: "What's the difference between meditation and breathwork?",
