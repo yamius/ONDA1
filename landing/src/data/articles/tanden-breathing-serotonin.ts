@@ -6,6 +6,8 @@ import type { Article } from './types'
  * anterior-PFC activation — a MOOD-chemistry mechanism complementing (not replacing) the vagal story.
  * Mechanically it's diaphragmatic slow breathing (baroreflex/vagus/HRV). AEO reference + howToSteps +
  * FAQ. Honest: serotonin attributed to research; camera=pulse, watch=HRV; "can't see serotonin".
+ * Merged (2026-09-23) with the Zen-serotonin-in-novices draft (99): added the 15-novice 20-min NIRS/EEG/
+ * blood-serotonin study (fast mood lift for beginners) as a section + 2 FAQ, so one page owns Tanden→serotonin.
  */
 const article: Article = {
   slug: 'tanden-breathing-serotonin',
@@ -35,6 +37,12 @@ Japan has a documented lineage of these methods — the Futaki abdominal breathi
 The most distinctive research comes from Japanese neuroscience. Studies using brain imaging (led by researchers such as Hideho Arita, known for serotonin research) found that rhythmic tanden breathing activates the **serotonergic system** — the serotonin-producing neurons in the brainstem — along with the **anterior prefrontal cortex**.
 
 This matters because [serotonin](/articles/system-stability-serotonin) is central to mood, calm alertness, and emotional regulation. Low serotonin activity is associated with low mood and poor stress resilience. If a specific style of slow, rhythmic breathing can activate serotonin neurons, that offers a mechanism for the steady, clear-headed calm — not just drowsy relaxation — that practitioners describe. It complements the vagus-nerve story rather than replacing it: slow breathing calms the body through the vagus *and* appears to engage mood chemistry in the brain.
+
+## It works for beginners — fast
+
+You don't have to be an experienced meditator for this. A Japanese study had 15 healthy volunteers with **no meditation experience** do focused-attention Tanden breathing for 20 minutes, while measuring the brain and blood with near-infrared spectroscopy, EEG, and blood tests. In a single session they showed increased oxygenated blood flow in the anterior prefrontal cortex, an EEG shift toward calm alpha activity, and a **significant rise in whole-blood serotonin** — and their negative mood dropped compared to before. The chain was measured, not assumed: focused abdominal breathing → prefrontal activation + serotonin rise → better mood.
+
+That answers a common worry — "meditation only works if you've done it for years." The *deepest* changes do take practice, but a real, biologically grounded mood lift is available from the very first 20-minute session. And unlike the usual vagus-only "calming down" story, this is an active, mood-*elevating* shift through serotonin — worth knowing if you're reaching for breath in a low mood, not just an anxious one.
 
 ## Why "from the belly" matters
 

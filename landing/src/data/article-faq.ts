@@ -1350,6 +1350,60 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "meditation-vs-breathwork": [
+    {
+      question: "What's the difference between meditation and breathwork?",
+      answer:
+        "Breathwork changes your physiology directly and fast (a bottom-up, body-first approach) — slow breathing activates the vagus nerve within minutes. Meditation trains your attention and mind over weeks (top-down), reshaping brain structure and function. One is a quick lever; the other is deeper training.",
+    },
+    {
+      question: "Which is better for anxiety, meditation or breathwork?",
+      answer:
+        "For acute anxiety in the moment, breathwork is faster and more reliable — a few minutes of slow breathing shifts your state quickly. For reducing anxiety-proneness over the long term, meditation builds lasting emotional regulation. Ideally, use both.",
+    },
+    {
+      question: "Which works faster, meditation or breathwork?",
+      answer:
+        "Breathwork, by far. It produces a felt, measurable calming shift in minutes because you're pulling a physiological lever directly. Meditation's benefits accumulate over weeks to months as a trained skill.",
+    },
+    {
+      question: "Should I do meditation or breathwork first?",
+      answer:
+        "Do breathwork first, then meditate. Slow breathing calms the body quickly, creating an ideal settled state to meditate from — which is why many traditions place breathing practice before meditation. It also makes meditation easier to stick with.",
+    },
+    {
+      question: "Can I combine meditation and breathwork?",
+      answer:
+        "Yes — it's the best approach for most people. Use breath to reach a calm state bottom-up, then meditate from there top-down. Breathwork gives immediate feedback that aids consistency while meditation's deeper changes build underneath.",
+    },
+  ],
+  "zazen-zen-meditation-brain": [
+    {
+      question: "What does zazen do to the brain?",
+      answer:
+        "Zen meditation increases alpha and theta brainwaves (calm, inwardly focused awareness), shifts prefrontal cortex and anterior cingulate activity (attention and self-regulation), and quiets parts of the default mode network — reducing conceptual thinking and self-referential chatter.",
+    },
+    {
+      question: "Do zazen's brain changes depend on experience?",
+      answer:
+        "Yes — a key finding is that increased theta activity appears specifically in experienced practitioners, not beginners. The deep brain signature of zazen is built through practice, making it a clear example of meditation as a trainable skill.",
+    },
+    {
+      question: "What is the difference between zazen and other meditation?",
+      answer:
+        "Zazen is the precise, upright seated practice of Zen Buddhism — following the breath or \"just sitting\" in open awareness, sometimes with koans (paradoxical questions). It's austere and well-defined, which is partly why it's been so extensively studied.",
+    },
+    {
+      question: "Why do beginners' zazen sessions feel unremarkable?",
+      answer:
+        "Because the deep brain signature (like increased theta) takes practice to develop — experienced practitioners show it, novices don't yet. Early sessions are building toward a real, reachable depth that emerges with repetition, not a sign you're doing it wrong.",
+    },
+    {
+      question: "What are koans and how do they work?",
+      answer:
+        "Koans are paradoxical questions (like \"the sound of one hand clapping\") used in Rinzai Zen to exhaust analytical thinking and provoke direct insight. This aligns with brain research showing zazen reduces conceptual thinking and self-referential default-mode activity.",
+    },
+  ],
   "meditation-aging-telomeres": [
     {
       question: "Does meditation slow aging?",
@@ -1563,7 +1617,17 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How long should I practice tanden breathing?",
       answer:
-        "A few minutes at a slow, even pace (around six breaths per minute) is enough to feel a shift. Consistency and a calm rhythm matter more than long sessions.",
+        "A few minutes at a slow, even pace (around six breaths per minute) is enough to feel a shift. Consistency and a calm rhythm matter more than long sessions. For the mood-lift effect specifically, a Japanese study used a single 20-minute session.",
+    },
+    {
+      question: "Does Tanden (Zen) breathing work for beginners?",
+      answer:
+        "Yes. A Japanese study had 15 people with no meditation experience do 20 minutes of focused Tanden breathing and measured prefrontal-cortex activation, a shift toward calm alpha EEG, and a significant rise in whole-blood serotonin — with reduced negative mood. Meaningful benefits arrive from the very first sessions, no experience needed.",
+    },
+    {
+      question: "Can breathing lift mood, not just calm you down?",
+      answer:
+        "It appears so. Most breathing research emphasizes vagal, parasympathetic calming; the Tanden studies point to a complementary serotonin pathway that actively lifts mood by engaging the prefrontal cortex — an active, mood-elevating shift, not just reduced arousal. You can't see serotonin at home, but you can confirm the deep, slow rhythm in your pulse and HRV.",
     },
   ],
   "forest-bathing-shinrin-yoku-science": [

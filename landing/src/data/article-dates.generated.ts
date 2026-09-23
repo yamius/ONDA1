@@ -373,8 +373,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-23T15:19:19+02:00"
   },
   "meditation-aging-telomeres": {
-    "published": "2026-09-23T14:51:20.424Z",
-    "modified": "2026-09-23T14:51:20.424Z"
+    "published": "2026-09-23T17:17:09+02:00",
+    "modified": "2026-09-23T17:17:09+02:00"
   },
   "meditation-app-with-biofeedback": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -387,6 +387,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "meditation-gamma-waves-experience": {
     "published": "2026-09-23T16:02:36+02:00",
     "modified": "2026-09-23T16:02:36+02:00"
+  },
+  "meditation-vs-breathwork": {
+    "published": "2026-09-23T15:18:31.797Z",
+    "modified": "2026-09-23T15:18:31.797Z"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -577,8 +581,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-18T09:35:55+02:00"
   },
   "vipassana-meditation-attention-brain": {
-    "published": "2026-09-23T14:51:44.606Z",
-    "modified": "2026-09-23T14:51:44.606Z"
+    "published": "2026-09-23T17:17:09+02:00",
+    "modified": "2026-09-23T17:17:09+02:00"
   },
   "vo2max-increase-aerobic-engine": {
     "published": "2026-06-04T00:39:42+02:00",
@@ -611,6 +615,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "zazen-zen-meditation-brain": {
+    "published": "2026-09-23T15:18:59.102Z",
+    "modified": "2026-09-23T15:18:59.102Z"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",
