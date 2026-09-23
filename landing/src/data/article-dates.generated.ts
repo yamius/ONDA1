@@ -372,6 +372,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-23T15:19:19+02:00",
     "modified": "2026-09-23T15:19:19+02:00"
   },
+  "meditation-aging-telomeres": {
+    "published": "2026-09-23T14:51:20.424Z",
+    "modified": "2026-09-23T14:51:20.424Z"
+  },
   "meditation-app-with-biofeedback": {
     "published": "2026-09-19T00:21:25+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
@@ -381,8 +385,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-23T15:19:19+02:00"
   },
   "meditation-gamma-waves-experience": {
-    "published": "2026-09-23T13:54:03.429Z",
-    "modified": "2026-09-23T13:54:03.429Z"
+    "published": "2026-09-23T16:02:36+02:00",
+    "modified": "2026-09-23T16:02:36+02:00"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -489,8 +493,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-09T14:23:13+02:00"
   },
   "rajyoga-open-eye-meditation": {
-    "published": "2026-09-23T13:54:34.532Z",
-    "modified": "2026-09-23T13:54:34.532Z"
+    "published": "2026-09-23T16:02:36+02:00",
+    "modified": "2026-09-23T16:02:36+02:00"
   },
   "resonant-frequency-system-coherence": {
     "published": "2026-03-24T13:00:58Z",
@@ -571,6 +575,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "ventral-tegmental-core-motivational-salience": {
     "published": "2026-05-01T23:21:51+02:00",
     "modified": "2026-05-18T09:35:55+02:00"
+  },
+  "vipassana-meditation-attention-brain": {
+    "published": "2026-09-23T14:51:44.606Z",
+    "modified": "2026-09-23T14:51:44.606Z"
   },
   "vo2max-increase-aerobic-engine": {
     "published": "2026-06-04T00:39:42+02:00",

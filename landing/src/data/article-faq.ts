@@ -1350,6 +1350,60 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "meditation-aging-telomeres": [
+    {
+      question: "Does meditation slow aging?",
+      answer:
+        "The evidence is mixed and modest. Some studies link meditation to better telomere maintenance and telomerase activity, especially with more practice; other rigorous trials find no significant effect on telomere length. It's not a proven anti-aging cure, but there are tentative, practice-dependent signals.",
+    },
+    {
+      question: "What are telomeres and why do they matter?",
+      answer:
+        "Telomeres are protective caps on your chromosomes that shorten as cells age. Their length is a marker of cellular aging, and chronic stress accelerates their shortening — which is why researchers study whether stress-reducing meditation might help protect them.",
+    },
+    {
+      question: "Does more meditation help telomeres more?",
+      answer:
+        "Where benefits appear, they tend to correlate with practice time and engagement — more consistent practice, more effect. This dose-dependence fits meditation's benefits generally. Occasional practice is unlikely to move a stable marker like telomere length.",
+    },
+    {
+      question: "Should I meditate to live longer?",
+      answer:
+        "Meditate for its well-established benefits — lower stress, better emotional regulation, improved HRV and cardiovascular health — which are themselves linked to healthier aging. Treat the cellular anti-aging angle as a promising but unproven bonus, not the reason to practice.",
+    },
+    {
+      question: "Is the \"meditation reverses aging\" claim true?",
+      answer:
+        "No — that overstates the science. Rigorous trials are mixed, with some showing no effect on telomere length. The honest picture is modest, inconsistent, practice-dependent signals on cellular markers, alongside solid, measurable benefits for stress and cardiovascular health.",
+    },
+  ],
+  "vipassana-meditation-attention-brain": [
+    {
+      question: "What is Vipassana meditation?",
+      answer:
+        "An ancient Buddhist practice of observing bodily sensations with sustained, non-reactive, equanimous attention — watching experience arise and pass without judging or reacting. It's fundamentally an attention and equanimity training, meaning \"insight\" or \"clear seeing.\"",
+    },
+    {
+      question: "How does Vipassana change the brain?",
+      answer:
+        "Research links it to increased cortical thickness in attention regions, elevated gamma brainwaves in experienced practitioners, and reduced default mode network activity (the mind-wandering system). Meditation depth is measurable — classified from EEG with ~81% accuracy in experts.",
+    },
+    {
+      question: "What is the default mode network and why does quieting it help?",
+      answer:
+        "The DMN is the brain system active during mind-wandering and self-referential rumination, linked to anxiety and unhappiness when overactive. Vipassana quiets it by training present-moment attention, a likely mechanism behind reduced stress and reactivity.",
+    },
+    {
+      question: "Do Vipassana's brain changes increase with practice?",
+      answer:
+        "Yes — cortical thickness, gamma amplitude, and the distinctiveness of the meditative state are all more pronounced in experienced practitioners. It's a trainable skill with a progressive, measurable neural trajectory.",
+    },
+    {
+      question: "Can I measure my Vipassana progress?",
+      answer:
+        "Brain changes need a lab, but the autonomic calm and equanimity you build show up in heart rate variability (HRV), which you can track at home. A steadier, stronger HRV baseline reflects the growing non-reactive calm the practice trains.",
+    },
+  ],
   "meditation-gamma-waves-experience": [
     {
       question: "What are gamma brainwaves in meditation?",
