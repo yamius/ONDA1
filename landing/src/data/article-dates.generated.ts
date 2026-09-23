@@ -273,8 +273,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T17:29:12+02:00"
   },
   "how-much-meditation-do-you-need": {
-    "published": "2026-09-23T12:25:15.941Z",
-    "modified": "2026-09-23T12:25:15.941Z"
+    "published": "2026-09-23T15:19:19+02:00",
+    "modified": "2026-09-23T15:19:19+02:00"
   },
   "how-much-sleep-do-you-need": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -369,16 +369,20 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-06-08T10:08:07+02:00"
   },
   "measuring-meditation-progress": {
-    "published": "2026-09-23T12:25:47.388Z",
-    "modified": "2026-09-23T12:25:47.388Z"
+    "published": "2026-09-23T15:19:19+02:00",
+    "modified": "2026-09-23T15:19:19+02:00"
   },
   "meditation-app-with-biofeedback": {
     "published": "2026-09-19T00:21:25+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "meditation-brain-changes-how-fast": {
-    "published": "2026-09-23T12:24:43.422Z",
-    "modified": "2026-09-23T12:24:43.422Z"
+    "published": "2026-09-23T15:19:19+02:00",
+    "modified": "2026-09-23T15:19:19+02:00"
+  },
+  "meditation-gamma-waves-experience": {
+    "published": "2026-09-23T13:54:03.429Z",
+    "modified": "2026-09-23T13:54:03.429Z"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -483,6 +487,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "quiet-mode-alpha-cortisol-buffer": {
     "published": "2026-03-31T22:01:43Z",
     "modified": "2026-06-09T14:23:13+02:00"
+  },
+  "rajyoga-open-eye-meditation": {
+    "published": "2026-09-23T13:54:34.532Z",
+    "modified": "2026-09-23T13:54:34.532Z"
   },
   "resonant-frequency-system-coherence": {
     "published": "2026-03-24T13:00:58Z",

@@ -1350,6 +1350,60 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "It can. Even when you fall asleep normally, residual caffeine can thin sleep depth and quality and keep the autonomic nervous system from fully standing down — a poorer night then drags the next day's baseline with it. You won't feel the buzz, but your overnight numbers can still show it.",
     },
   ],
+  "meditation-gamma-waves-experience": [
+    {
+      question: "What are gamma brainwaves in meditation?",
+      answer:
+        "Gamma waves are the brain's fastest rhythms (above ~30 Hz), linked to heightened awareness and focused attention. Experienced meditators show elevated gamma both during practice and as a lasting trait, making it a measurable signature of meditative training.",
+    },
+    {
+      question: "Does meditation experience increase gamma waves?",
+      answer:
+        "Yes — research found gamma amplitude positively correlated with meditation experience: the more you've practiced, the higher your gamma. This makes it a progress-linked brain marker, evidence that meditation builds a measurable capacity over time.",
+    },
+    {
+      question: "Do different meditation types produce the same brain changes?",
+      answer:
+        "They share a core. Elevated gamma appeared across Vipassana, Himalayan Yoga, and Isha Shoonya practitioners, and EEG classifiers distinguished meditative states across four traditions with ~91% accuracy — suggesting a common measurable signature of deep meditation, stronger in advanced practitioners.",
+    },
+    {
+      question: "Can I measure my own meditation progress?",
+      answer:
+        "Not gamma waves at home — but you can track heart rate variability (HRV), which also strengthens with meditation practice and reflects the same trained calm. A rising HRV baseline is an accessible, at-home marker of the progress brain research shows is real.",
+    },
+    {
+      question: "Is meditation a trainable skill?",
+      answer:
+        "The evidence strongly suggests so. Both gamma waves and the distinctiveness of the meditative brain state increase with experience — meaning meditation builds measurable capacity over time, like physical training, rather than being a fixed ability you either have or don't.",
+    },
+  ],
+  "rajyoga-open-eye-meditation": [
+    {
+      question: "What is Rajyoga meditation?",
+      answer:
+        "An open-eyed meditation taught by the Brahma Kumaris, focused on directed thought and self-identity rather than the breath. Its seed-stage practice moves through peace, self-as-soul, and communion with a supreme source, held with a soft open-eyed gaze.",
+    },
+    {
+      question: "Can you meditate with your eyes open?",
+      answer:
+        "Yes — Rajyoga is practiced with open eyes, and EEG research on long-term practitioners shows it produces a genuine meditative brain state (reduced delta, increased low-alpha) while keeping practitioners alert rather than drowsy. It's a good option if eyes-closed meditation makes you sleepy.",
+    },
+    {
+      question: "What does Rajyoga do to the brain?",
+      answer:
+        "EEG studies found reduced delta and increased low-alpha activity (\"high theta–low alpha\" modulation), reflecting calm, alert, self-reflective awareness. It engages executive-control and self-referential brain networks, matching its focus on attention and identity.",
+    },
+    {
+      question: "Is Rajyoga meditation measurable?",
+      answer:
+        "Yes — it produces documented signatures in both brain (distinct EEG patterns) and heart (autonomic signatures in cardiorespiratory rhythms). Its effect on heart rate variability can be tracked with accessible tools.",
+    },
+    {
+      question: "Is open-eyed meditation as good as eyes-closed?",
+      answer:
+        "It's a different, legitimate approach with its own research support. For people who get sleepy or restless with eyes closed, open-eyed Rajyoga keeps them alert (confirmed by reduced delta EEG) and is portable into daily activity.",
+    },
+  ],
   "meditation-brain-changes-how-fast": [
     {
       question: "How long does it take for meditation to change your brain?",
