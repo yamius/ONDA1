@@ -72,6 +72,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-24T13:06:24Z",
     "modified": "2026-05-25T19:35:33+02:00"
   },
+  "bhastrika-pranayama-brain-anxiety": {
+    "published": "2026-09-24T09:47:23.233Z",
+    "modified": "2026-09-24T09:47:23.233Z"
+  },
   "biological-latency-optimizing-system-ping": {
     "published": "2026-04-21T12:59:22Z",
     "modified": "2026-06-08T10:08:07+02:00"
@@ -443,6 +447,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "molecular-psychology-hormonal-firmware": {
     "published": "2026-05-18T08:38:26+02:00",
     "modified": "2026-05-25T19:35:33+02:00"
+  },
+  "morita-therapy-tracking-paradox": {
+    "published": "2026-09-24T09:47:36.504Z",
+    "modified": "2026-09-24T09:47:36.504Z"
   },
   "muscle-metabolic-marker": {
     "published": "2026-03-04T14:27:07+01:00",

@@ -45,7 +45,7 @@ The effect is a shift in perspective. Reflecting concretely on what you've recei
 
 ## Naikan and Morita: the Japanese pair
 
-Naikan is often mentioned alongside Morita therapy as one of Japan's two homegrown psychotherapies, and they complement each other. Morita teaches acceptance of feelings as they are (*arugamama*) and redirection toward constructive action; Naikan restructures how you see your relationships and history through gratitude and responsibility. Where Morita addresses your relationship to your inner states, Naikan addresses your relationship to others and your past. Both, notably, work not by suppressing thought but by *reorganizing* attention — a distinctly Japanese contemplative approach that differs from the Western emphasis on either emptying the mind or challenging thoughts directly.
+Naikan is often mentioned alongside [Morita therapy](/articles/morita-therapy-tracking-paradox) as one of Japan's two homegrown psychotherapies, and they complement each other. Morita teaches acceptance of feelings as they are (*arugamama*) and redirection toward constructive action; Naikan restructures how you see your relationships and history through gratitude and responsibility. Where Morita addresses your relationship to your inner states, Naikan addresses your relationship to others and your past. Both, notably, work not by suppressing thought but by *reorganizing* attention — a distinctly Japanese contemplative approach that differs from the Western emphasis on either emptying the mind or challenging thoughts directly.
 
 ## How to practice Naikan
 

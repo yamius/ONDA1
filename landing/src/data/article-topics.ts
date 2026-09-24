@@ -144,7 +144,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "apple-watch-recovery-hrv-vs-overall-hrv": "hrv-heart-rate",
   "attention-trainable-skill-meditation": "meditation",
   "baroreflex-01hz-shift": "hrv-heart-rate",
-  "bhastrika-pranayama-brain-anxiety": "breathing", // pending — not on site yet
+  "bhastrika-pranayama-brain-anxiety": "breathing",
   "biological-latency-optimizing-system-ping": "brain-focus-aging",
   "body-awareness-training-app": "meditation",
   "body-fat-percentage-composition": "heart-fitness-metabolism",
@@ -242,7 +242,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "mitochondrial-biogenesis-cellular-power-grid": "brain-focus-aging",
   "mitochondrial-dna-red-light": "brain-focus-aging",
   "molecular-psychology-hormonal-firmware": "stress-vagus",
-  "morita-therapy-tracking-paradox": "stress-vagus", // pending — not on site yet
+  "morita-therapy-tracking-paradox": "stress-vagus",
   "muscle-metabolic-marker": "heart-fitness-metabolism",
   "naikan-japanese-reflection": "meditation",
   "name-it-to-tame-it-affect-labeling": "stress-vagus",
@@ -309,7 +309,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
 
 export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "alternate-nostril-breathing": "India",
-  "bhastrika-pranayama-brain-anxiety": "India", // pending
+  "bhastrika-pranayama-brain-anxiety": "India",
   "breathing-altitude-acclimatization": "Netherlands",
   "breathing-cognition-memory-focus": "India", // pending
   "breathing-exercises-older-adults": "Japan",
@@ -325,7 +325,7 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "humming-breath-vagus": "India",
   "light-and-your-body-clock": "Germany", // pending
   "meditation-gamma-waves-experience": "India",
-  "morita-therapy-tracking-paradox": "Japan", // pending
+  "morita-therapy-tracking-paradox": "Japan",
   "naikan-japanese-reflection": "Japan",
   "nose-vs-mouth-breathing": "Japan",
   "om-chanting-brain-vagus": "India", // pending

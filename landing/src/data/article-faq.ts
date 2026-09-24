@@ -1387,6 +1387,20 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "They do different jobs. Breathwork gives fast, bottom-up calm in minutes; meditation gives deep, top-down training over weeks. The most effective approach combines them — breathe to reach calm, then meditate from there.",
     },
   ],
+  "bhastrika-pranayama-brain-anxiety": [
+    { question: "Does Bhastrika pranayama reduce anxiety?", answer: "In a randomized controlled trial, four weeks of Bhastrika practice significantly reduced anxiety and negative affect and changed activity in emotion-processing brain regions including the amygdala, insula and prefrontal cortex. It was a small study in healthy adults, so it is an encouraging signal rather than a settled clinical result." },
+    { question: "How does Bhastrika breathing affect the brain?", answer: "Functional MRI showed Bhastrika modulates the amygdala (the brain's threat detector), anterior cingulate, anterior insula and prefrontal cortex — regions that process and regulate emotion." },
+    { question: "Is Bhastrika calming or energizing?", answer: "Energizing in the moment: it is fast and forceful, raising heart rate and sympathetic activity. Its anxiety benefit appeared over weeks of practice. For immediate calm, use a slow technique or a physiological sigh." },
+    { question: "Is Bhastrika safe for everyone?", answer: "No. Avoid it, or practice only with qualified guidance and your doctor's approval, if you have uncontrolled high blood pressure, heart or lung conditions, or are pregnant. Practice seated, never in water or while driving, and stop if you feel dizzy." },
+    { question: "When should I do Bhastrika?", answer: "In the morning or when you want alertness — not before bed, since it is stimulating. For winding down, choose slow pranayama or humming breath." },
+  ],
+  "morita-therapy-tracking-paradox": [
+    { question: "What is Morita therapy?", answer: "A Japanese psychotherapy developed by Dr. Masatake Morita around 1919 for anxiety and related conditions. Its core ideas are psychic interaction (fixating on a symptom worsens it) and arugamama (accepting feelings as they are rather than fighting them), redirecting energy into constructive action." },
+    { question: "Can focusing on a symptom make it worse?", answer: "Yes — Morita called this psychic interaction. Fixing attention on a sensation sharpens it, which draws more attention and amplifies it further. It is why anxiously watching your heartbeat can make it pound harder." },
+    { question: "What does arugamama mean?", answer: "Accepting things as they are. Instead of struggling to eliminate anxiety or a symptom, you let it be present without fighting it and redirect your energy into meaningful action — a Japanese precursor to modern acceptance-based approaches." },
+    { question: "Can health tracking increase anxiety?", answer: "It can, if used obsessively. Checking numbers anxiously and letting readings dictate your mood can create Morita's psychic-interaction loop. Watch trends rather than every reading, and step back if tracking makes you feel worse." },
+    { question: "How should I use HRV tracking in a healthy way?", answer: "Look at your trend rather than single readings, don't fight a low number with worry, redirect toward helpful action such as slow breathing, rest or movement, and notice if tracking raises your anxiety. Informed but not fixated." },
+  ],
   "meditation-brain-aging-protection": [
     {
       question: "Does meditation slow brain aging?",
