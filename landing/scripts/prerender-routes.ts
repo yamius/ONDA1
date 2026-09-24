@@ -201,6 +201,8 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'what-is-my-chronotype', publishOn: '2026-09-21' },
   { slug: 'what-your-apple-watch-records', publishOn: '2026-09-21' },
   { slug: 'zone-2-training-aerobic-base', publishOn: '2026-09-21' },
+  // Native-quality pilot: hand-written ES (not batch MT) — 2026-09-24
+  { slug: 'yoga-nidra-sleep-science', publishOn: '2026-09-24' },
   // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
   { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
   { slug: 'respiratory-rate-hidden-signal', publishOn: '2026-09-18' },
