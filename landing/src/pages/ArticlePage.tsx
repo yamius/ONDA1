@@ -840,7 +840,7 @@ export function ArticlePage() {
 
       <div className="mb-4">
         <span className="rounded-md border border-terminal-green/20 bg-terminal-green/5 px-3 py-1 font-mono text-[10px] tracking-wider text-terminal-green">
-          {article.category}
+          {tArticles(`categories.${article.category}`, { defaultValue: article.category })}
         </span>
       </div>
 
@@ -883,13 +883,14 @@ export function ArticlePage() {
       <p className="mb-2 font-mono text-xs text-white/35">
         {tArticles('detail.by', { defaultValue: 'By' })}{' '}
         <Link to={`${langPrefix}/about`} className="text-terminal-green hover:underline" rel="author">Yakiv Bilenko</Link>
-        {' · '}Architect &amp; Gestalt psychologist, founder of ONDA Life
+        {' · '}{tArticles('detail.authorRole', { defaultValue: 'Architect & Gestalt psychologist, founder of ONDA Life' })}
       </p>
       <div className="mb-10 flex items-center justify-between gap-3 font-mono text-xs">
         {(() => {
           const d = ARTICLE_DATES[article.slug]
           if (!d) return <span />
-          const label = new Date(d.modified).toLocaleDateString('en-US', {
+          const dateLocale = { en: 'en-US', es: 'es-ES', ru: 'ru-RU', uk: 'uk-UA', zh: 'zh-CN' }[lang] ?? 'en-US'
+          const label = new Date(d.modified).toLocaleDateString(dateLocale, {
             year: 'numeric', month: 'short', day: 'numeric',
           })
           return (
@@ -994,8 +995,8 @@ export function ArticlePage() {
 }`
         return (
           <aside className="mb-8 border border-slate-700 bg-slate-900/40 p-5 font-mono text-xs">
-            <div className="mb-3 tracking-wider text-terminal-green/80">[ CITE_THIS_ARTICLE ]</div>
-            <div className="mb-2 text-white/60">APA-style</div>
+            <div className="mb-3 tracking-wider text-terminal-green/80">{tArticles('detail.cite', { defaultValue: '[ CITE_THIS_ARTICLE ]' })}</div>
+            <div className="mb-2 text-white/60">{tArticles('detail.apaStyle', { defaultValue: 'APA-style' })}</div>
             <p className="mb-4 break-words text-white/85">{apa}</p>
             <div className="mb-2 text-white/60">BibTeX</div>
             <pre className="overflow-x-auto whitespace-pre-wrap break-words rounded-sm bg-black/40 p-3 text-[11px] leading-relaxed text-white/85">
@@ -1016,7 +1017,9 @@ export function ArticlePage() {
             localStorage.setItem(STORAGE_KEY_PREFIX + article.slug, String(next))
           }}
         >
-          {isCompleted ? '[ STATUS: OPTIMIZED ]' : '[ FINALIZE_ARTICLE ]'}
+          {isCompleted
+            ? tArticles('detail.completed', { defaultValue: '[ STATUS: OPTIMIZED ]' })
+            : tArticles('detail.finalize', { defaultValue: '[ FINALIZE_ARTICLE ]' })}
         </button>
         {ARTICLE_SLUG_TO_STACK_SECTION[article.slug] && (
           <a
