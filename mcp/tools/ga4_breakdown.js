@@ -27,6 +27,41 @@ import { ga4Missing, runReport, eventNameFilter, internalFilter, andFilters } fr
 import { clampSince, rate, ok, notConfigured, sourceError, DATA_LAG, LOW_DATA_N } from '../lib/shared.js';
 
 const DEFAULT_SINCE = 90; // wider than the 28-day house default: August traffic collapse → tiny samples
+const DEFAULT_LIMIT = 25;
+const MAX_LIMIT = 250;
+
+/**
+ * Built-in GA4 fields (no colon) passed through verbatim instead of being
+ * turned into customEvent:<name>. Before this, dimension=pagePath became
+ * "customEvent:pagePath" and GA4 rejected it.
+ */
+const STANDARD_DIMS = new Set([
+  'pagePath', 'landingPage', 'landingPagePlusQueryString', 'pageTitle', 'pageReferrer',
+  'streamName', 'deviceCategory', 'country', 'sessionSource', 'sessionMedium',
+  'sessionDefaultChannelGroup',
+]);
+
+/**
+ * Stream filter on the built-in `platform` field ('web' | 'iOS' | 'Android') —
+ * robust to whatever the data streams happen to be named. Without it, app
+ * screens (e.g. CustomBridgeViewController) leak into site page reports.
+ */
+function streamFilter(stream) {
+  if (stream === 'website') {
+    return { filter: { fieldName: 'platform', stringFilter: { matchType: 'EXACT', value: 'web' } } };
+  }
+  if (stream === 'app') {
+    return { filter: { fieldName: 'platform', inListFilter: { values: ['iOS', 'Android'] } } };
+  }
+  return null; // 'all'
+}
+
+/** Drop one or more countries by ISO code (countryId), e.g. "SG" or "SG,CN". */
+function excludeCountryFilter(codes) {
+  const list = String(codes ?? '').split(',').map((c) => c.trim().toUpperCase()).filter(Boolean);
+  if (list.length === 0) return null;
+  return { notExpression: { filter: { fieldName: 'countryId', inListFilter: { values: list } } } };
+}
 
 export const ga4BreakdownSchema = {
   name: 'ga4_breakdown',
@@ -37,9 +72,12 @@ export const ga4BreakdownSchema = {
     'it. The cut funnel_review/retention_review cannot give: e.g. ga4_breakdown ' +
     'event=results_view dimension=metrics_source → the watch/camera/simulated ' +
     'split. A bare dimension name is treated as an event-scoped custom dimension ' +
-    '(customEvent:<name>); pass a fully-qualified GA4 field (e.g. "country", ' +
-    '"customUser:internal") with its colon to use it verbatim. Read-only, ' +
-    'aggregate-only.',
+    '(customEvent:<name>), except standard GA4 fields (pagePath, landingPage, ' +
+    'landingPagePlusQueryString, pageTitle, pageReferrer, streamName, deviceCategory, ' +
+    'country, sessionSource, sessionMedium, sessionDefaultChannelGroup) which pass as-is; ' +
+    'a colon-qualified field ("customUser:internal") is used verbatim. Filters: stream ' +
+    '(website/app/all), exclude_country, internal. Optional conversion_event adds per-row ' +
+    'converting users + rate. Read-only, aggregate-only.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -59,6 +97,22 @@ export const ga4BreakdownSchema = {
         type: 'string', enum: ['exclude', 'include', 'only'], default: 'exclude',
         description: "Own devices. 'exclude' (default) drops them.",
       },
+      stream: {
+        type: 'string', enum: ['website', 'app', 'all'], default: 'all',
+        description: "Data stream, via GA4 platform: 'website' = web only, 'app' = iOS/Android only, 'all' (default) = both.",
+      },
+      exclude_country: {
+        type: 'string',
+        description: 'ISO country code(s) to drop, comma-separated (e.g. "SG" — suspected bot desktop traffic).',
+      },
+      conversion_event: {
+        type: 'string',
+        description:
+          'Optional. For every dimension value also return unique users who fired this event ' +
+          '(same filters) and their share of that row’s users — e.g. event=page_view ' +
+          'dimension=landingPage conversion_event=app_store_click stream=website → which entry page leads to the store.',
+      },
+      limit: { type: 'integer', default: DEFAULT_LIMIT, description: `Max rows, sorted by users. Default ${DEFAULT_LIMIT}, max ${MAX_LIMIT}.` },
     },
     required: ['event', 'dimension'],
   },
@@ -82,6 +136,9 @@ const KNOWN_USER_DIMS = new Set(['internal']);
  */
 function resolveDimension(name, explicitScope) {
   const raw = String(name).trim();
+  if (STANDARD_DIMS.has(raw)) {
+    return { field: raw, assumed_custom_event: false, scope_used: 'other' };
+  }
   if (raw.includes(':')) {
     const scope_used = raw.startsWith('customUser:') ? 'user'
       : raw.startsWith('customEvent:') ? 'event'
@@ -111,20 +168,35 @@ export async function ga4Breakdown(args = {}) {
   const internal = args.internal || 'exclude';
   const explicitScope = args.scope === 'user' || args.scope === 'event' ? args.scope : null;
   const { field, assumed_custom_event, scope_used } = resolveDimension(dimensionArg, explicitScope);
+  const stream = ['website', 'app'].includes(args.stream) ? args.stream : 'all';
+  const excludeCountry = args.exclude_country ? String(args.exclude_country) : null;
+  const conversionEvent = args.conversion_event ? String(args.conversion_event).trim() : null;
+  const limit = Math.min(Math.max(parseInt(args.limit ?? DEFAULT_LIMIT, 10) || DEFAULT_LIMIT, 1), MAX_LIMIT);
 
-  const body = {
+  const scopeFilters = [internalFilter(internal), streamFilter(stream), excludeCountryFilter(excludeCountry)];
+  const reportFor = (eventName, rowLimit) => ({
     dateRanges: [{ startDate: `${days}daysAgo`, endDate: 'today' }],
     dimensions: [{ name: field }],
     metrics: [{ name: 'activeUsers' }, { name: 'eventCount' }],
-    dimensionFilter: andFilters(eventNameFilter([event]), internalFilter(internal)),
+    dimensionFilter: andFilters(eventNameFilter([eventName]), ...scopeFilters),
     // activeUsers is not additive across rows, so ordering by it is the closest
     // to "biggest group first"; the sum caveat is documented in the payload.
     orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
-    limit: 250,
-  };
+    limit: rowLimit,
+  });
 
   try {
-    const data = await runReport(body);
+    const data = await runReport(reportFor(event, limit));
+    // Conversion: same dimension + filters, the conversion event instead. Wider
+    // row limit so a converting value outside the top-N is not read as zero.
+    let convByValue = null;
+    if (conversionEvent) {
+      const conv = await runReport(reportFor(conversionEvent, MAX_LIMIT));
+      convByValue = new Map((conv.rows ?? []).map((r) => [
+        r.dimensionValues[0].value,
+        { users: Number(r.metricValues[0].value || 0), events: Number(r.metricValues[1].value || 0) },
+      ]));
+    }
     const rows = (data.rows ?? []).map((r) => ({
       value: r.dimensionValues[0].value,
       users: Number(r.metricValues[0].value || 0),
@@ -135,12 +207,19 @@ export async function ga4Breakdown(args = {}) {
     const totalEvents = rows.reduce((s, r) => s + r.events, 0);
     const denom = metric === 'events' ? totalEvents : totalUsers;
 
-    const breakdown = rows.map((r) => ({
-      value: r.value === '' ? '(empty)' : r.value,
-      users: r.users,
-      events: r.events,
-      share: rate(metric === 'events' ? r.events : r.users, denom),
-    }));
+    const breakdown = rows.map((r) => {
+      const row = {
+        value: r.value === '' ? '(empty)' : r.value,
+        users: r.users,
+        events: r.events,
+        share: rate(metric === 'events' ? r.events : r.users, denom),
+      };
+      if (convByValue) {
+        const c = convByValue.get(r.value) ?? { users: 0, events: 0 };
+        row.conversion = { users: c.users, events: c.events, rate: rate(c.users, r.users) };
+      }
+      return row;
+    });
 
     // All rows (not set) ⇒ the dimension is almost certainly mis-addressed —
     // wrong name, or not an event-scoped custom dimension. Say so; do NOT present
@@ -155,7 +234,8 @@ export async function ga4Breakdown(args = {}) {
       dimension: { requested: dimensionArg, ga4_field: field, assumed_custom_event },
       scope_used,
       share_metric: metric,
-      filters: { internal },
+      filters: { internal, stream, exclude_country: excludeCountry },
+      limit,
       total_users: totalUsers,
       total_events: totalEvents,
       breakdown,
@@ -167,6 +247,18 @@ export async function ga4Breakdown(args = {}) {
         'denominator can slightly exceed the true unique total. eventCount is reference-only.',
       data_lag_note: DATA_LAG.ga4,
     };
+    if (conversionEvent) {
+      result.conversion_event = conversionEvent;
+      result.conversion_total_users = [...convByValue.values()].reduce((sum, c) => sum + c.users, 0);
+      result.conversion_note =
+        `conversion.rate = users with ${conversionEvent} under this value ÷ users with ${event} under it. ` +
+        'Session-scoped dimensions (landingPage, sessionSource…) attribute the conversion to the session ' +
+        'it happened in; pagePath attributes it to the page the conversion event fired on.';
+    }
+    if (rows.length === limit) {
+      result.truncated = true;
+      result.truncated_note = `Showing the top ${limit} values by users; raise limit (max ${MAX_LIMIT}) for more.`;
+    }
 
     if (rows.length === 0) {
       result.empty = true;

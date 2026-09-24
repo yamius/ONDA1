@@ -14,6 +14,22 @@ const ga4Url = pathToFileURL(path.join(here, '..', 'lib', 'sources', 'ga4.js')).
 // Rows keyed by (event, dimensionField) so tests can assert the request shape too.
 let lastBody = null;
 function rowsFor(event, field) {
+  if (field === 'landingPage' && event === 'page_view') {
+    return [
+      { dim: '/reviews/hrv-trackers', users: 40, events: 90 },
+      { dim: '/', users: 20, events: 30 },
+      { dim: '/tools/hrv', users: 10, events: 12 },
+    ];
+  }
+  if (field === 'landingPage' && event === 'app_store_click') {
+    return [
+      { dim: '/', users: 4, events: 5 },
+      { dim: '/reviews/hrv-trackers', users: 2, events: 2 },
+    ];
+  }
+  if (field === 'pagePath' && event === 'page_view') {
+    return [{ dim: '/articles/physiological-sigh', users: 12, events: 15 }];
+  }
   if (field !== 'customEvent:metrics_source') return []; // wrong addressing → no data
   // watch: few users, many events; camera: many users; simulated: few.
   if (event === 'results_view') {
@@ -38,7 +54,8 @@ mock.module(ga4Url, {
     ga4Missing: () => [],
     internalFilter: () => null,
     appVersionFilter: () => null,
-    andFilters: (...f) => f.filter(Boolean)[0],
+    // Keep the event marker the rows are keyed on, plus every filter for asserts.
+    andFilters: (...f) => ({ __event: f.filter(Boolean)[0]?.__event, __all: f.filter(Boolean) }),
     eventNameFilter: (names) => ({ __event: names[0] }),
     runReport: async (body) => {
       lastBody = body;
@@ -131,4 +148,60 @@ test('explicit scope=event overrides the known-user-dim list', async () => {
   const r = await ga4Breakdown({ event: 'results_view', dimension: 'internal', scope: 'event' });
   assert.equal(lastBody.dimensions[0].name, 'customEvent:internal');
   assert.equal(r.scope_used, 'event');
+});
+
+const allFilters = () => lastBody.dimensionFilter.__all;
+const has = (pred) => allFilters().some(pred);
+
+test('standard GA4 fields (pagePath, landingPage) pass through without customEvent:', async () => {
+  const r = await ga4Breakdown({ event: 'page_view', dimension: 'pagePath' });
+  assert.equal(lastBody.dimensions[0].name, 'pagePath');
+  assert.equal(r.scope_used, 'other');
+  assert.equal(r.dimension.assumed_custom_event, false);
+  assert.equal(r.breakdown[0].value, '/articles/physiological-sigh');
+});
+
+test('stream=website filters on platform=web; app → iOS/Android; all → no stream filter', async () => {
+  await ga4Breakdown({ event: 'page_view', dimension: 'pagePath', stream: 'website' });
+  assert.ok(has((f) => f.filter?.fieldName === 'platform' && f.filter.stringFilter?.value === 'web'));
+  await ga4Breakdown({ event: 'page_view', dimension: 'pagePath', stream: 'app' });
+  assert.ok(has((f) => f.filter?.fieldName === 'platform' && f.filter.inListFilter?.values.includes('iOS')));
+  await ga4Breakdown({ event: 'page_view', dimension: 'pagePath' });
+  assert.ok(!has((f) => f.filter?.fieldName === 'platform'));
+});
+
+test('exclude_country drops the ISO codes via a NOT countryId filter', async () => {
+  const r = await ga4Breakdown({ event: 'page_view', dimension: 'pagePath', exclude_country: 'sg, cn' });
+  assert.ok(has((f) => f.notExpression?.filter?.fieldName === 'countryId'
+    && f.notExpression.filter.inListFilter.values.join() === 'SG,CN'));
+  assert.equal(r.filters.exclude_country, 'sg, cn');
+});
+
+test('conversion_event adds per-row converting users + rate (landing page → store)', async () => {
+  const r = await ga4Breakdown({
+    event: 'page_view', dimension: 'landingPage', stream: 'website', conversion_event: 'app_store_click',
+  });
+  const home = r.breakdown.find((b) => b.value === '/');
+  assert.equal(home.conversion.users, 4);
+  assert.equal(home.conversion.rate.pct, 20); // 4 / 20
+  const tools = r.breakdown.find((b) => b.value === '/tools/hrv');
+  assert.equal(tools.conversion.users, 0); // no store click from that entry page
+  assert.equal(r.conversion_total_users, 6);
+  assert.equal(r.conversion_event, 'app_store_click');
+});
+
+test('limit caps rows (default 25) and flags truncation', async () => {
+  await ga4Breakdown({ event: 'page_view', dimension: 'landingPage' });
+  assert.equal(lastBody.limit, 25);
+  // Mock returns 3 rows; limit 3 → exactly full → truncation is flagged.
+  const r = await ga4Breakdown({ event: 'page_view', dimension: 'landingPage', limit: 3 });
+  assert.equal(lastBody.limit, 3);
+  assert.equal(r.truncated, true);
+});
+
+test('without conversion_event rows carry no conversion field — old calls unchanged', async () => {
+  const r = await ga4Breakdown({ event: 'results_view', dimension: 'metrics_source' });
+  assert.equal(r.breakdown[0].conversion, undefined);
+  assert.equal(lastBody.dimensions[0].name, 'customEvent:metrics_source');
+  assert.equal(r.filters.stream, 'all');
 });
