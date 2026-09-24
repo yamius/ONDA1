@@ -4,6 +4,7 @@ import { AndroidWaitlist } from './AndroidWaitlist'
 import { useTranslation } from 'react-i18next'
 import { TransitionLink } from './TransitionLink'
 import i18n, { SUPPORTED_LANGS, LANG_LABELS, langFromPath, homePathFor, localizedPathFor, langHref, type Lang } from '../i18n'
+import { storeUrl, pageTypeFromPath } from '../lib/storeCt'
 import { emotonCtaUrl } from '../config/appStore'
 import { rdtTrack } from '../lib/redditPixel'
 import { gtmPageView, gtmAppStoreClick } from '../lib/gtm'
@@ -23,9 +24,15 @@ export function Layout() {
   // feeds Tenjin) instead of looking homepage-sourced. The post-practice CTA
   // carries its own token. See emotonCtaUrl + the download-tracking brief.
   const onEmoton = location.pathname.replace(/\/+$/, '').endsWith('/emoton')
+  // Direct to the App Store (task 15) — the old `/#download` hop lost the
+  // source page: the click fired on the homepage, not where the reader was.
+  const pageType = pageTypeFromPath(location.pathname)
   const downloadHref = onEmoton
     ? emotonCtaUrl('emoton_nav')
-    : `${homePathFor(currentLang)}#download`.replace('//', '/')
+    : storeUrl('hdr', pageType, currentLang)
+  const footerDownloadHref = onEmoton
+    ? emotonCtaUrl('emoton_footer')
+    : storeUrl('ftr', pageType, currentLang)
 
   // Tapping "Emoton" should always land on the START of the flow. Navigating
   // from another page remounts EmotonPage fresh (begins at presence), but when
@@ -103,7 +110,12 @@ export function Layout() {
       // from and the Apple `ct` campaign on the link. window.location (not the
       // react-router `location` closure) so it's never stale in this listener.
       let campaign = 'unknown'
-      try { campaign = new URL(anchor.href).searchParams.get('ct') || 'unknown' } catch { /* keep unknown */ }
+      try {
+        const u = new URL(anchor.href)
+        // Tenjin click links (/emoton) carry the Apple ct inside redirect_url.
+        const inner = u.searchParams.get('redirect_url')
+        campaign = u.searchParams.get('ct') || (inner ? new URL(inner).searchParams.get('ct') : null) || 'unknown'
+      } catch { /* keep unknown */ }
       gtmAppStoreClick(window.location.pathname, campaign)
     }
     document.addEventListener('click', onClick, true)
@@ -275,6 +287,8 @@ export function Layout() {
           </TransitionLink>
           <a
             href={downloadHref}
+            target="_blank"
+            rel="noopener"
             onClick={() => setMenuOpen(false)}
             className="block border-b border-white/5 py-3 text-sm font-medium text-white/70 transition-colors hover:text-white"
           >
@@ -355,7 +369,7 @@ export function Layout() {
               <Link to={langHref('/emoton', currentLang)} onClick={goEmoton} className="text-xs text-green-400/70 transition-colors hover:text-green-400">
                 {t('footer.emoton', { defaultValue: 'Emoton' })}
               </Link>
-              <a href={downloadHref} className="text-xs text-white/40 transition-colors hover:text-white/60">
+              <a href={footerDownloadHref} target="_blank" rel="noopener" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.download')}
               </a>
               <Link to={langHref('/contact', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
