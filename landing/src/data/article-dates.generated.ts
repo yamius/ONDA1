@@ -74,7 +74,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "bhastrika-pranayama-brain-anxiety": {
     "published": "2026-09-24T12:08:14+02:00",
-    "modified": "2026-09-24T12:08:14+02:00"
+    "modified": "2026-09-24T12:39:03+02:00"
   },
   "biological-latency-optimizing-system-ping": {
     "published": "2026-04-21T12:59:22Z",
@@ -234,7 +234,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fast-vs-slow-pranayama": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-09-24T12:08:14+02:00"
+    "modified": "2026-09-24T12:39:03+02:00"
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
@@ -589,8 +589,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "sudarshan-kriya-yoga-breathing": {
-    "published": "2026-09-24T10:21:46.004Z",
-    "modified": "2026-09-24T10:21:46.004Z"
+    "published": "2026-09-24T12:39:03+02:00",
+    "modified": "2026-09-24T12:39:03+02:00"
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
@@ -654,11 +654,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-24T12:39:03+02:00"
+  },
+  "yoga-breathing-diabetes-blood-sugar": {
+    "published": "2026-09-24T13:07:54.487Z",
+    "modified": "2026-09-24T13:07:54.487Z"
   },
   "yoga-nidra-sleep-science": {
-    "published": "2026-09-24T10:22:02.318Z",
-    "modified": "2026-09-24T10:22:02.318Z"
+    "published": "2026-09-24T12:39:03+02:00",
+    "modified": "2026-09-24T12:39:03+02:00"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",

@@ -253,7 +253,15 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Breathing is the one node in the panic loop you can control directly. Fast, shallow breathing drops CO₂ and feeds the body’s alarm; slowing it — especially the exhale — hands control to the parasympathetic branch through the vagus nerve, raising heart-rate variability and pulling the system back toward calm.",
     },
   ],
+  "yoga-breathing-diabetes-blood-sugar": [
+    { question: "Can yoga and breathing help type 2 diabetes?", answer: "As a complement to medication, yes. Indian trials found structured yoga and pranayama added to standard drugs improved blood sugar, HRV, sympathovagal balance and cardiometabolic risk more than medication alone. It supports, not replaces, diabetes treatment." },
+    { question: "Does breathing lower blood sugar?", answer: "Indirectly and modestly. Slow breathing and relaxation lower stress hormones such as cortisol that raise blood sugar, and structured yoga-and-breathing programs improved glucose in trials. It works best alongside diet, activity and medication." },
+    { question: "How long before yoga helps diabetes?", answer: "The trials used several weeks to three months of regular practice. Benefits build with consistency; a single session is not the point." },
+    { question: "Can I stop diabetes medication if I do yoga?", answer: "No. The benefits appeared on top of medication. Never stop or change diabetes medication without your doctor, and monitor your blood sugar because your needs may change over time." },
+    { question: "What yoga is best for diabetes?", answer: "Structured programs combining gentle postures, slow breathing and relaxation, as used in the trials. Avoid intense forceful breathing if you have cardiovascular complications, and learn from a qualified teacher." },
+  ],
   "high-blood-pressure-slow-breathing": [
+    { question: "What breathing is best for high blood pressure?", answer: "Slow breathing at about six breaths per minute, such as coherent or resonance breathing or slow Ujjayi, plus slow relaxation practices. Avoid fast, forceful techniques like Kapalabhati and Bhastrika, and forceful breath-holds, if you have hypertension." },
     {
       question: "Does slow breathing lower blood pressure?",
       answer:

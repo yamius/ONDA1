@@ -153,7 +153,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "breathing-altitude-acclimatization": "breathing",
   "breathing-cognition-memory-focus": "brain-focus-aging", // pending — not on site yet
   "breathing-exercises-older-adults": "brain-focus-aging",
-  "breathing-for-blood-pressure": "heart-fitness-metabolism", // pending — not on site yet
   "breathing-for-focus-and-attention": "brain-focus-aging",
   "breathing-lowers-stress-hormones": "stress-vagus",
   "breathwork-command-line-interface": "breathing",
@@ -297,7 +296,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "what-your-apple-watch-records": "hrv-heart-rate",
   "wim-hof-breathing-inflammation": "breathing",
   "wind-down-before-sleep-breathing": "sleep-body-clock",
-  "yoga-breathing-diabetes-blood-sugar": "heart-fitness-metabolism", // pending — not on site yet
+  "yoga-breathing-diabetes-blood-sugar": "heart-fitness-metabolism",
   "yoga-nidra-sleep-science": "sleep-body-clock",
   "yoga-poses-heart-rate-blood-pressure": "heart-fitness-metabolism", // pending — not on site yet
   "your-baseline-knows-first": "hrv-heart-rate",
@@ -313,7 +312,6 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "breathing-altitude-acclimatization": "Netherlands",
   "breathing-cognition-memory-focus": "India", // pending
   "breathing-exercises-older-adults": "Japan",
-  "breathing-for-blood-pressure": "India", // pending
   "breathing-lowers-stress-hormones": "Japan",
   "cardiac-coherence-365-method": "France",
   "cardiac-coherence-insomnia-sleep": "France", // pending
@@ -337,7 +335,7 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "trataka-candle-gazing-focus": "India", // pending
   "vipassana-meditation-attention-brain": "India",
   "wim-hof-breathing-inflammation": "Netherlands",
-  "yoga-breathing-diabetes-blood-sugar": "India", // pending
+  "yoga-breathing-diabetes-blood-sugar": "India",
   "yoga-nidra-sleep-science": "India",
   "yoga-poses-heart-rate-blood-pressure": "India", // pending
   "zazen-zen-meditation-brain": "Japan",

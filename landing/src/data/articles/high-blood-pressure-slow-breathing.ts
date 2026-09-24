@@ -69,11 +69,24 @@ A modest, drug-free, near-zero-risk lever you can pull daily is genuinely worth 
 
 ---
 
+## Section 3b: Which techniques help — and which don't
+
+Pace is what matters. Not every breathing practice moves blood pressure the same way, and some move it the wrong way during practice:
+
+- **Slow breathing at about six breaths per minute** — coherent or resonance breathing, slow Ujjayi, or an even 5-in/5-out rhythm — is the most reliable option, because it's the pattern that exercises the baroreflex. Studies in yoga practitioners also find higher resting baroreflex sensitivity in experienced practitioners than in beginners, consistent with a trainable reflex.
+- **Slow-breathing relaxation practices** such as [Yoga Nidra](/articles/yoga-nidra-sleep-science) have been reported to lower pressure acutely alongside a rise in HRV — early, small studies, but pointing the same direction.
+- **Gentle cooling breaths** (like Sheetali) have also been studied in hypertension with favorable early results; keep any breath retention light.
+- **Fast, forceful breathing** (Kapalabhati, [Bhastrika](/articles/bhastrika-pranayama-brain-anxiety)) *raises* heart rate and pressure while you do it — it's an energizing tool, not a blood-pressure tool (see [fast vs slow pranayama](/articles/fast-vs-slow-pranayama)). Avoid it, and avoid forceful breath-holds, if you have hypertension.
+
+Blood pressure rarely travels alone: if you're also managing blood sugar, the same autonomic logic appears in [Indian trials of yoga and breathing in type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar).
+
+---
+
 ## Section 4: Seeing the resonance
 
 The practical problem with "breathe at your resonance rate" is that you can't feel when you've hit it. That's the gap live feedback fills.
 
-ONDA is an [HRV biofeedback](/hrv-biofeedback) app: it reads your heartbeat from the phone camera or an Apple Watch, paces your breath, and shows your heart-rate rhythm swinging in real time — when you lock onto resonance, the coherence score climbs and you can *see* the baroreflex loop hit full amplitude. Or use the free [resonance breathing tool](/tools/resonance-breathing) to find your personal rate. See [what ONDA measures](/measurements) and [how it works](/how-it-works).
+ONDA is an [HRV biofeedback](/hrv-biofeedback) app: it reads your pulse from the phone camera or an Apple Watch during guided breathing practices, and with an Apple Watch it also reads HRV and a coherence score — so when you lock onto resonance you can *see* the baroreflex loop respond. Or use the free [resonance breathing tool](/tools/resonance-breathing) to find your personal rate. See [what ONDA measures](/measurements) and [how it works](/how-it-works).
 
 Firewall, stated plainly: ONDA is a breathing and self-regulation trainer, **not a blood-pressure treatment and not a medical device**. It does not diagnose or treat hypertension, and nothing here is medical advice.
 
