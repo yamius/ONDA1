@@ -253,6 +253,20 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Breathing is the one node in the panic loop you can control directly. Fast, shallow breathing drops CO₂ and feeds the body’s alarm; slowing it — especially the exhale — hands control to the parasympathetic branch through the vagus nerve, raising heart-rate variability and pulling the system back toward calm.",
     },
   ],
+  "trataka-candle-gazing-focus": [
+    { question: "What is trataka?", answer: "A yogic practice of steady gazing at a fixed point, usually a candle flame, then holding its after-image with eyes closed. It is a concentration practice traditionally used to sharpen focus and prepare the mind for meditation." },
+    { question: "Does candle gazing improve focus?", answer: "It is a concentration exercise, and an Indian study in older adults reported improved cognitive functions. Holding single-pointed attention and returning when it drifts is the same mechanism that strengthens attention in focused-attention meditation. The evidence base is still small." },
+    { question: "How long should I do trataka?", answer: "Start with one to two minutes and build up. Gaze softly without straining until the eyes tire, then close them and hold the after-image. Consistency matters more than long sessions." },
+    { question: "Is candle gazing safe for the eyes?", answer: "For most people, brief, comfortable gazing followed by resting the eyes is fine. If you have eye conditions, epilepsy or discomfort, skip the flame or use a neutral dot, and check with a professional." },
+    { question: "How is trataka different from meditation?", answer: "Trataka is a specific concentration technique using the eyes and a fixed external point, while meditation is broader. It is often used as a gateway into meditation because steady gazing settles the mind." },
+  ],
+  "yoga-poses-heart-rate-blood-pressure": [
+    { question: "Do different yoga poses affect blood pressure differently?", answer: "Yes. Relaxation and forward-folding poses tend to lower heart rate and blood pressure, while backbends, standing poses and inversions can raise them during the pose." },
+    { question: "Does yoga lower blood pressure?", answer: "A single session can lower systolic pressure briefly, with readings returning to baseline within about an hour. Regular practice is associated with better HRV and baroreflex sensitivity. It complements, not replaces, medical care." },
+    { question: "Which yoga poses are best for relaxation?", answer: "Forward folds, gentle seated poses, legs-up-the-wall and corpse pose (savasana), especially paired with slow breathing. Ending with several minutes of savasana consolidates the calming effect." },
+    { question: "Are inversions safe with high blood pressure?", answer: "Approach them with caution. Full head-down inversions shift pressure in complex ways and are generally avoided or modified with hypertension. Favor gentle relaxation poses and slow breathing, and get professional guidance." },
+    { question: "Which poses energize rather than calm?", answer: "Sun salutations, standing poses and backbends raise heart rate and alertness. Use them earlier in the day, not before sleep or to calm anxiety." },
+  ],
   "yoga-breathing-diabetes-blood-sugar": [
     { question: "Can yoga and breathing help type 2 diabetes?", answer: "As a complement to medication, yes. Indian trials found structured yoga and pranayama added to standard drugs improved blood sugar, HRV, sympathovagal balance and cardiometabolic risk more than medication alone. It supports, not replaces, diabetes treatment." },
     { question: "Does breathing lower blood sugar?", answer: "Indirectly and modestly. Slow breathing and relaxation lower stress hormones such as cortisol that raise blood sugar, and structured yoga-and-breathing programs improved glucose in trials. It works best alongside diet, activity and medication." },

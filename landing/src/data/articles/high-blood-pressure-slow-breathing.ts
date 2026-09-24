@@ -78,7 +78,7 @@ Pace is what matters. Not every breathing practice moves blood pressure the same
 - **Gentle cooling breaths** (like Sheetali) have also been studied in hypertension with favorable early results; keep any breath retention light.
 - **Fast, forceful breathing** (Kapalabhati, [Bhastrika](/articles/bhastrika-pranayama-brain-anxiety)) *raises* heart rate and pressure while you do it — it's an energizing tool, not a blood-pressure tool (see [fast vs slow pranayama](/articles/fast-vs-slow-pranayama)). Avoid it, and avoid forceful breath-holds, if you have hypertension.
 
-Blood pressure rarely travels alone: if you're also managing blood sugar, the same autonomic logic appears in [Indian trials of yoga and breathing in type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar).
+Yoga postures matter too — relaxation poses lower pressure while backbends and inversions can raise it (see [how different yoga poses affect heart rate and blood pressure](/articles/yoga-poses-heart-rate-blood-pressure)). And blood pressure rarely travels alone: if you're also managing blood sugar, the same autonomic logic appears in [Indian trials of yoga and breathing in type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar).
 
 ---
 

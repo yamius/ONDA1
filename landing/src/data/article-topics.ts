@@ -283,7 +283,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "system-stability-serotonin": "stress-vagus",
   "tanden-breathing-serotonin": "breathing",
   "train-hrv-iphone-camera-no-wearable": "hrv-heart-rate",
-  "trataka-candle-gazing-focus": "brain-focus-aging", // pending — not on site yet
+  "trataka-candle-gazing-focus": "brain-focus-aging",
   "vagus-nerve-exercises": "stress-vagus",
   "vagus-nerve-master-key": "stress-vagus",
   "vascular-tensegrity-microvascular-mechanics": "heart-fitness-metabolism",
@@ -298,7 +298,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "wind-down-before-sleep-breathing": "sleep-body-clock",
   "yoga-breathing-diabetes-blood-sugar": "heart-fitness-metabolism",
   "yoga-nidra-sleep-science": "sleep-body-clock",
-  "yoga-poses-heart-rate-blood-pressure": "heart-fitness-metabolism", // pending — not on site yet
+  "yoga-poses-heart-rate-blood-pressure": "heart-fitness-metabolism",
   "your-baseline-knows-first": "hrv-heart-rate",
   "zazen-zen-meditation-brain": "meditation",
   "zen-koans-brain-cognition": "meditation",
@@ -332,12 +332,12 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "social-jet-lag-irregular-sleep": "Germany",
   "sudarshan-kriya-yoga-breathing": "India",
   "tanden-breathing-serotonin": "Japan",
-  "trataka-candle-gazing-focus": "India", // pending
+  "trataka-candle-gazing-focus": "India",
   "vipassana-meditation-attention-brain": "India",
   "wim-hof-breathing-inflammation": "Netherlands",
   "yoga-breathing-diabetes-blood-sugar": "India",
   "yoga-nidra-sleep-science": "India",
-  "yoga-poses-heart-rate-blood-pressure": "India", // pending
+  "yoga-poses-heart-rate-blood-pressure": "India",
   "zazen-zen-meditation-brain": "Japan",
   "zen-koans-brain-cognition": "Japan",
   "zen-meditation-serotonin-beginners": "Japan", // pending

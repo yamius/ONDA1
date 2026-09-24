@@ -270,7 +270,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "high-blood-pressure-slow-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-24T15:14:54+02:00"
   },
   "how-long-does-alcohol-stay-in-your-system": {
     "published": "2026-06-04T22:53:28+02:00",
@@ -608,6 +608,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-19T01:10:36+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
   },
+  "trataka-candle-gazing-focus": {
+    "published": "2026-09-24T13:40:05.410Z",
+    "modified": "2026-09-24T13:40:05.410Z"
+  },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
@@ -657,12 +661,16 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-24T12:39:03+02:00"
   },
   "yoga-breathing-diabetes-blood-sugar": {
-    "published": "2026-09-24T13:07:54.487Z",
-    "modified": "2026-09-24T13:07:54.487Z"
+    "published": "2026-09-24T15:14:54+02:00",
+    "modified": "2026-09-24T15:14:54+02:00"
   },
   "yoga-nidra-sleep-science": {
     "published": "2026-09-24T12:39:03+02:00",
     "modified": "2026-09-24T12:39:03+02:00"
+  },
+  "yoga-poses-heart-rate-blood-pressure": {
+    "published": "2026-09-24T13:40:18.822Z",
+    "modified": "2026-09-24T13:40:18.822Z"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",

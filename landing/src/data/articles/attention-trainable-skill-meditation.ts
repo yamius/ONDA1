@@ -52,7 +52,7 @@ This means anyone can improve, regardless of starting point. A scattered beginne
 
 - **Practice returning, not staying.** The goal isn't a blank, wander-free mind — it's noticing wandering and returning. Each return is a rep.
 - **Start short and consistent.** A few minutes daily builds the skill faster than occasional long sessions — [consistency drives the changes](/articles/how-much-meditation-do-you-need).
-- **Use an anchor.** The breath, a sensation, or a sound gives attention a home base to return to.
+- **Use an anchor.** The breath, a sensation, or a sound gives attention a home base to return to — or a visual one, as in [trataka candle gazing](/articles/trataka-candle-gazing-focus).
 - **Don't judge the wandering.** Getting frustrated is extra mental noise. Notice, return, repeat — calmly.
 - **Reduce distraction training too.** Cutting compulsive phone-checking stops actively practicing distraction, complementing your focus practice.
 
