@@ -51,7 +51,7 @@ Recent comparative research supports the emphasis on this pace and on the exhale
 - **Sit upright and comfortable.** You can do it anywhere, eyes open or closed.
 - **Breathe in for about 5 seconds, out for about 5 seconds** — six full breaths per minute. A visual guide or app pacer helps at first.
 - **Let the exhale be smooth and complete.** The long, easy exhale is the active ingredient.
-- **Do 5 minutes, three times a day.** Consistency across the day matters more than intensity.
+- **Do 5 minutes, three times a day.** Consistency across the day matters more than intensity. If sleep is the problem, make one session an evening one — see [cardiac coherence for insomnia](/articles/cardiac-coherence-insomnia-sleep).
 - **Don't strain.** If five seconds feels long, start with a slightly faster pace and slow down as it becomes comfortable.
 
 ## See your own coherence

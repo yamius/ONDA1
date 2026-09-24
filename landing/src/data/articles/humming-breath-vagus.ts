@@ -39,7 +39,7 @@ Most breathing techniques reach the vagus nerve indirectly, through the pace of 
 
 Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari improved parasympathetic tone both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
 
-That's why humming shows up alongside slow breathing and cold-water exposure on nearly every list of evidence-based ways to activate the vagus nerve. You get both effects at once: the extended exhale tips you toward "rest and digest," and the vibration gives the vagus nerve a direct nudge. The result is a measurable calming shift — heart rate down, heart rate variability (HRV) up — often within a few breaths. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises).
+That's why humming shows up alongside slow breathing and cold-water exposure on nearly every list of evidence-based ways to activate the vagus nerve. You get both effects at once: the extended exhale tips you toward "rest and digest," and the vibration gives the vagus nerve a direct nudge. The result is a measurable calming shift — heart rate down, heart rate variability (HRV) up — often within a few breaths. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises). Chanting OM uses the same hum-plus-long-exhale mechanism, and it has brain-imaging work behind it — see [OM chanting and the brain](/articles/om-chanting-brain-vagus).
 
 ## When to use humming breath
 

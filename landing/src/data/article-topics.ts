@@ -160,7 +160,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "caffeine-hrv-resting-heart-rate": "lifestyle",
   "calm-your-nervous-system-down": "stress-vagus",
   "cardiac-coherence-365-method": "breathing",
-  "cardiac-coherence-insomnia-sleep": "sleep-body-clock", // pending — not on site yet
+  "cardiac-coherence-insomnia-sleep": "sleep-body-clock",
   "chm-continuous-hormone-monitoring": "hrv-heart-rate",
   "chronic-stress-nervous-system-never-off": "stress-vagus",
   "chronotherapy-light-dark-timing": "sleep-body-clock",
@@ -255,7 +255,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "nightly-flush-glymphatic-neural-cache": "sleep-body-clock",
   "normal-hrv-by-age": "hrv-heart-rate",
   "nose-vs-mouth-breathing": "breathing",
-  "om-chanting-brain-vagus": "breathing", // pending — not on site yet
+  "om-chanting-brain-vagus": "breathing",
   "overtraining-hrv-resting-heart-rate": "heart-fitness-metabolism",
   "phase-locked-acoustic-sleep": "sleep-body-clock",
   "physiological-concentration-flow-state-hardwired": "brain-focus-aging",
@@ -312,7 +312,7 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "breathing-exercises-older-adults": "Japan",
   "breathing-lowers-stress-hormones": "Japan",
   "cardiac-coherence-365-method": "France",
-  "cardiac-coherence-insomnia-sleep": "France", // pending
+  "cardiac-coherence-insomnia-sleep": "France",
   "chronotherapy-light-dark-timing": "Germany",
   "fast-vs-slow-pranayama": "India",
   "forest-bathing-shinrin-yoku-science": "Japan",
@@ -324,7 +324,7 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "morita-therapy-tracking-paradox": "Japan",
   "naikan-japanese-reflection": "Japan",
   "nose-vs-mouth-breathing": "Japan",
-  "om-chanting-brain-vagus": "India", // pending
+  "om-chanting-brain-vagus": "India",
   "pranayama-metabolic-syndrome": "India",
   "rajyoga-open-eye-meditation": "India",
   "social-jet-lag-irregular-sleep": "Germany",

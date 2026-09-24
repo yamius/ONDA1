@@ -106,7 +106,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-for-focus-and-attention": {
     "published": "2026-09-19T01:02:52+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-24T20:35:38+02:00"
   },
   "breathing-lowers-stress-hormones": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -135,6 +135,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "cardiac-coherence-365-method": {
     "published": "2026-09-22T18:37:38+02:00",
     "modified": "2026-09-22T18:37:38+02:00"
+  },
+  "cardiac-coherence-insomnia-sleep": {
+    "published": "2026-09-24T19:48:02.022Z",
+    "modified": "2026-09-24T19:48:02.022Z"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -508,6 +512,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-22T08:22:18+02:00",
     "modified": "2026-09-22T08:22:18+02:00"
   },
+  "om-chanting-brain-vagus": {
+    "published": "2026-09-24T19:48:19.560Z",
+    "modified": "2026-09-24T19:48:19.560Z"
+  },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
@@ -525,8 +533,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T17:29:12+02:00"
   },
   "pranayama-metabolic-syndrome": {
-    "published": "2026-09-24T18:27:23.807Z",
-    "modified": "2026-09-24T18:27:23.807Z"
+    "published": "2026-09-24T20:35:38+02:00",
+    "modified": "2026-09-24T20:35:38+02:00"
   },
   "protein-intake-muscle-protein-synthesis": {
     "published": "2026-06-04T00:46:04+02:00",
@@ -666,7 +674,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "yoga-breathing-diabetes-blood-sugar": {
     "published": "2026-09-24T15:14:54+02:00",
-    "modified": "2026-09-24T15:14:54+02:00"
+    "modified": "2026-09-24T20:35:38+02:00"
   },
   "yoga-nidra-sleep-science": {
     "published": "2026-09-24T12:39:03+02:00",

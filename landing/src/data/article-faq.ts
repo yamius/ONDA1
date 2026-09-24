@@ -253,6 +253,20 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Breathing is the one node in the panic loop you can control directly. Fast, shallow breathing drops CO₂ and feeds the body’s alarm; slowing it — especially the exhale — hands control to the parasympathetic branch through the vagus nerve, raising heart-rate variability and pulling the system back toward calm.",
     },
   ],
+  "cardiac-coherence-insomnia-sleep": [
+    { question: "Does cardiac coherence help insomnia?", answer: "It is used in French clinical practice as a supportive tool for insomnia because it lowers the nervous-system hyperarousal that keeps people awake. Slow coherent breathing shifts you from sympathetic toward parasympathetic dominance. The evidence is mostly clinical experience and small studies." },
+    { question: "Why is insomnia treated as hyperarousal?", answer: "Chronic insomnia is often less about lacking sleepiness and more about too much activation — a sympathetic nervous system stuck on, with anxiety about sleep. That is why people feel exhausted yet wired. Lowering arousal, rather than forcing sleep, is the goal." },
+    { question: "How do I practice cardiac coherence for sleep?", answer: "Use the 365 method — about six breaths per minute (roughly 5 seconds in, 5 out) for five minutes, three times a day — and make one session part of your evening wind-down. Follow a pacer rather than watching the clock." },
+    { question: "How long until it improves my sleep?", answer: "One evening session can lower arousal that night, but practitioners describe the benefit building over two to three weeks of regular practice." },
+    { question: "Is cardiac coherence a replacement for insomnia treatment?", answer: "No. It is a supportive tool, best combined with good sleep habits and, for persistent insomnia, professional care such as CBT-I." },
+  ],
+  "om-chanting-brain-vagus": [
+    { question: "Does OM chanting calm the brain?", answer: "A small fMRI study found OM chanting was accompanied by deactivation of limbic regions including the amygdala, hippocampus and cingulate cortex — a pattern its authors compared to clinical vagus nerve stimulation. It is an intriguing signal from a small study, not settled neuroscience." },
+    { question: "Why did OM work but not other sounds?", answer: "In the study, a non-humming control sound ('ssss') did not produce the limbic deactivation, suggesting the resonant hum of OM, not just vocalizing, is the active ingredient." },
+    { question: "How might OM chanting stimulate the vagus nerve?", answer: "The authors proposed that OM's vibration in the throat and ears stimulates the laryngeal and auricular branches of the vagus nerve, shifting the body toward parasympathetic calm. This is a hypothesis about mechanism." },
+    { question: "Is OM chanting the same as humming (Bhramari)?", answer: "They share the core mechanism — vibration plus a long exhale. OM adds resonance and the focus of a mantra, and it is the version with brain-imaging research behind it." },
+    { question: "Do I need to be religious for OM chanting to work?", answer: "No. The physiological effect comes from the vibration and the long exhale, not from belief, although many people find the tradition adds depth." },
+  ],
   "pranayama-metabolic-syndrome": [
     { question: "Can pranayama help metabolic syndrome?", answer: "As a complement to lifestyle change, research in young adults suggests it can. A study in medical students with raised BMI or blood pressure found pranayama improved clinical predictors of metabolic syndrome. It targets the stress and autonomic drivers of the syndrome alongside diet and exercise." },
     { question: "How does breathing affect metabolic health?", answer: "Through stress physiology. Chronic stress raises cortisol and sympathetic activity, promoting abdominal fat, high blood pressure and insulin resistance. Slow breathing shifts you toward parasympathetic dominance, lowers blood pressure and supports healthier HRV." },
