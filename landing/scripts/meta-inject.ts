@@ -28,6 +28,7 @@ import { TOOLS } from '../src/data/tools'
 import { TOOLS_I18N } from '../src/data/tools-i18n'
 import { TOPICS_I18N } from '../src/data/topics-i18n'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
+import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { HRV_BIOFEEDBACK_I18N } from '../src/data/hrv-biofeedback-i18n'
 import { RESONANCE_BREATHING_I18N } from '../src/data/resonance-breathing-i18n'
@@ -443,6 +444,7 @@ export interface RouteMeta {
     description: string
     url: string
     datePublished: string
+    dateModified?: string
     image?: string
     imageAlt?: string
     imageCaption?: string
@@ -792,6 +794,7 @@ function buildTechArticleJsonLd(
   url: string,
   datePublished: string,
   opts?: {
+    dateModified?: string
     image?: string
     imageAlt?: string
     imageCaption?: string
@@ -810,6 +813,7 @@ function buildTechArticleJsonLd(
     description,
     url,
     datePublished,
+    ...(opts?.dateModified ? { dateModified: opts.dateModified } : {}),
     author: {
       '@type': 'Person',
       '@id': AUTHOR_ID,
@@ -2355,7 +2359,10 @@ export function getMetaForRoute(route: string): RouteMeta {
         name: article.title,
         description: seoDesc,
         url,
-        datePublished: '2025-02-22',
+        // Real git dates (article-dates.mjs). The old hard-coded '2025-02-22'
+        // stamped every article with one fake date and no dateModified.
+        datePublished: ARTICLE_DATES[slug]?.published ?? '2025-02-22',
+        dateModified: ARTICLE_DATES[slug]?.modified,
       }
       const hackQuotes = extractHackQuotes(article.content)
       const techArticleExtras =
@@ -3405,6 +3412,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // JSON-LD: TechArticle (article pages only)
   if (meta.techArticle) {
     const opts =
+      meta.techArticle.dateModified ||
       meta.techArticle.image ||
       meta.techArticle.keywords ||
       meta.techArticle.audience ||
@@ -3412,6 +3420,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       meta.techArticle.proficiencyLevel ||
       meta.techArticle.educationalLevel
         ? {
+            dateModified: meta.techArticle.dateModified,
             image: meta.techArticle.image,
             imageAlt: meta.techArticle.imageAlt,
             imageCaption: meta.techArticle.imageCaption,
@@ -3632,6 +3641,15 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
         /(<meta\s+property="og:image"\s+content="[^"]*">)/i,
         `$1\n${imageAltTags}`
       )
+    } else {
+      // index.html ships a generic og:image:alt, so "add if missing" never
+      // fired and every article kept the template alt (task 15). Overwrite.
+      out = out.replace(/(<meta\s+property="og:image:alt"\s+content=")[^"]*(")/i, `$1${escapedImageAlt}$2`)
+      if (/(?:property|name)="twitter:image:alt"/.test(out)) {
+        out = out.replace(/(<meta\s+(?:property|name)="twitter:image:alt"\s+content=")[^"]*(")/i, `$1${escapedImageAlt}$2`)
+      } else {
+        out = out.replace(/(<meta\s+property="og:image:alt"\s+content="[^"]*"\s*\/?>)/i, `$1\n  <meta property="twitter:image:alt" content="${escapedImageAlt}">`)
+      }
     }
   }
 

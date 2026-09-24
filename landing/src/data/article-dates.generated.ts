@@ -66,7 +66,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "attention-trainable-skill-meditation": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-24T15:46:00+02:00"
   },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
@@ -270,7 +270,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "high-blood-pressure-slow-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-24T15:14:54+02:00"
+    "modified": "2026-09-24T15:46:00+02:00"
   },
   "how-long-does-alcohol-stay-in-your-system": {
     "published": "2026-06-04T22:53:28+02:00",
@@ -609,8 +609,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-21T12:24:17+02:00"
   },
   "trataka-candle-gazing-focus": {
-    "published": "2026-09-24T13:40:05.410Z",
-    "modified": "2026-09-24T13:40:05.410Z"
+    "published": "2026-09-24T15:46:00+02:00",
+    "modified": "2026-09-24T15:46:00+02:00"
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
@@ -669,8 +669,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-24T12:39:03+02:00"
   },
   "yoga-poses-heart-rate-blood-pressure": {
-    "published": "2026-09-24T13:40:18.822Z",
-    "modified": "2026-09-24T13:40:18.822Z"
+    "published": "2026-09-24T15:46:00+02:00",
+    "modified": "2026-09-24T15:46:00+02:00"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",
