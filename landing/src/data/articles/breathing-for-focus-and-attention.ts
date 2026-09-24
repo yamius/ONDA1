@@ -53,6 +53,14 @@ The honest boundary: this steadies the *state* that supports attention. It's a s
 
 ---
 
+## Section 2b: The nose, brain rhythms and memory
+
+The route of the breath matters too, not just the pace. Research on nasal breathing found that breathing through the nose entrains — synchronizes — electrical rhythms in brain regions involved in memory and emotion, and that this effect largely disappears when you breathe through the mouth (Zelano et al., 2016). In that work, people also recognized and remembered things better when those things arrived during a nasal inhale. It's a concrete, physical reason why "breathe through your nose" is cognitive advice, not just a fitness tip (more in [nose vs mouth breathing](/articles/nose-vs-mouth-breathing)).
+
+Indian pranayama research points in the same direction. Studies using the P3 brain-wave response — an electrical marker of attention and cognitive processing — reported faster, stronger P3 responses after pranayama practice, including in people with type 2 diabetes, who are at higher risk of cognitive decline. These are modest, mostly small studies, so read them as supportive rather than definitive. The practical translation is simple: slow down and keep your mouth closed before and during demanding thinking. Gaze-based concentration practice like [trataka](/articles/trataka-candle-gazing-focus) trains the same attention from a different angle.
+
+---
+
 ## Section 3: The other half — training the return
 
 Here's the reframe that changes everything: **focus isn't holding the spotlight perfectly still — it's noticing it wandered and bringing it back, fast.** The mind will always drift. The trainable skill is the *return*, and every return is a rep.

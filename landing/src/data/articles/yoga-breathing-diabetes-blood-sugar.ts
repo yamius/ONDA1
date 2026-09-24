@@ -38,6 +38,8 @@ Type 2 diabetes doesn't only raise blood sugar — over time it can damage the a
 
 **Comprehensive breathing programs.** An observational study of a short residential yogic breathing program that included [Sudarshan Kriya](/articles/sudarshan-kriya-yoga-breathing) reported a larger drop in blood sugar in people with diabetes than in those without.
 
+Similar stress-axis benefits have been reported earlier in life, too — see [pranayama and metabolic syndrome in young adults](/articles/pranayama-metabolic-syndrome).
+
 Most of these studies are modest in size and several are single-center, so the fair reading is consistent, encouraging evidence for yoga as an add-on — not proof that it can manage diabetes on its own.
 
 ## How it likely works

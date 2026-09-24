@@ -524,6 +524,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-21T17:29:12+02:00",
     "modified": "2026-09-21T17:29:12+02:00"
   },
+  "pranayama-metabolic-syndrome": {
+    "published": "2026-09-24T18:27:23.807Z",
+    "modified": "2026-09-24T18:27:23.807Z"
+  },
   "protein-intake-muscle-protein-synthesis": {
     "published": "2026-06-04T00:46:04+02:00",
     "modified": "2026-06-08T20:41:35+02:00"

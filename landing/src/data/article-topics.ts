@@ -151,7 +151,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "bohr-effect-oxygen-telemetry": "breathing",
   "box-breathing-how-it-works": "breathing",
   "breathing-altitude-acclimatization": "breathing",
-  "breathing-cognition-memory-focus": "brain-focus-aging", // pending — not on site yet
   "breathing-exercises-older-adults": "brain-focus-aging",
   "breathing-for-focus-and-attention": "brain-focus-aging",
   "breathing-lowers-stress-hormones": "stress-vagus",
@@ -261,7 +260,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "phase-locked-acoustic-sleep": "sleep-body-clock",
   "physiological-concentration-flow-state-hardwired": "brain-focus-aging",
   "physiological-sigh": "breathing",
-  "pranayama-metabolic-syndrome": "heart-fitness-metabolism", // pending — not on site yet
+  "pranayama-metabolic-syndrome": "heart-fitness-metabolism",
   "protein-intake-muscle-protein-synthesis": "heart-fitness-metabolism",
   "protocol-circadian-hard-reset": "sleep-body-clock",
   "quiet-mode-alpha-cortisol-buffer": "stress-vagus",
@@ -310,7 +309,6 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "alternate-nostril-breathing": "India",
   "bhastrika-pranayama-brain-anxiety": "India",
   "breathing-altitude-acclimatization": "Netherlands",
-  "breathing-cognition-memory-focus": "India", // pending
   "breathing-exercises-older-adults": "Japan",
   "breathing-lowers-stress-hormones": "Japan",
   "cardiac-coherence-365-method": "France",
@@ -327,7 +325,7 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "naikan-japanese-reflection": "Japan",
   "nose-vs-mouth-breathing": "Japan",
   "om-chanting-brain-vagus": "India", // pending
-  "pranayama-metabolic-syndrome": "India", // pending
+  "pranayama-metabolic-syndrome": "India",
   "rajyoga-open-eye-meditation": "India",
   "social-jet-lag-irregular-sleep": "Germany",
   "sudarshan-kriya-yoga-breathing": "India",

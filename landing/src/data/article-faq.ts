@@ -253,6 +253,13 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Breathing is the one node in the panic loop you can control directly. Fast, shallow breathing drops CO₂ and feeds the body’s alarm; slowing it — especially the exhale — hands control to the parasympathetic branch through the vagus nerve, raising heart-rate variability and pulling the system back toward calm.",
     },
   ],
+  "pranayama-metabolic-syndrome": [
+    { question: "Can pranayama help metabolic syndrome?", answer: "As a complement to lifestyle change, research in young adults suggests it can. A study in medical students with raised BMI or blood pressure found pranayama improved clinical predictors of metabolic syndrome. It targets the stress and autonomic drivers of the syndrome alongside diet and exercise." },
+    { question: "How does breathing affect metabolic health?", answer: "Through stress physiology. Chronic stress raises cortisol and sympathetic activity, promoting abdominal fat, high blood pressure and insulin resistance. Slow breathing shifts you toward parasympathetic dominance, lowers blood pressure and supports healthier HRV." },
+    { question: "Is breathing enough on its own for metabolic syndrome?", answer: "No. Diet, movement and less sitting are the foundations. Breathing is a low-cost complement that targets the stress component; together they work best." },
+    { question: "How much breathing practice is needed?", answer: "A few minutes of slow, exhale-led breathing once or twice a day, practiced consistently over weeks. The benefit is in the regular habit, not occasional sessions." },
+    { question: "Why study medical students?", answer: "Their demanding, sedentary, high-stress routine puts them at risk of raised BMI and blood pressure early, making them a useful high-risk group for testing prevention — and a warning for sedentary young adults generally." },
+  ],
   "trataka-candle-gazing-focus": [
     { question: "What is trataka?", answer: "A yogic practice of steady gazing at a fixed point, usually a candle flame, then holding its after-image with eyes closed. It is a concentration practice traditionally used to sharpen focus and prepare the mind for meditation." },
     { question: "Does candle gazing improve focus?", answer: "It is a concentration exercise, and an Indian study in older adults reported improved cognitive functions. Holding single-pointed attention and returning when it drifts is the same mechanism that strengthens attention in focused-attention meditation. The evidence base is still small." },
@@ -2654,6 +2661,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     },
   ],
   "breathing-for-focus-and-attention": [
+    { question: "Does breathing through your nose improve memory?", answer: "Research suggests it can help. Nasal breathing synchronizes brain rhythms in memory- and emotion-related regions in a way mouth breathing does not, and people remembered items better when they arrived during a nasal inhale. Slow nasal breathing also settles you into the calm-alert state where focus works best." },
     {
       question: "Can breathing exercises improve focus and concentration?",
       answer:
