@@ -134,11 +134,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cardiac-coherence-365-method": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-09-22T18:37:38+02:00"
+    "modified": "2026-09-24T22:03:37+02:00"
   },
   "cardiac-coherence-insomnia-sleep": {
-    "published": "2026-09-24T19:48:02.022Z",
-    "modified": "2026-09-24T19:48:02.022Z"
+    "published": "2026-09-24T22:03:37+02:00",
+    "modified": "2026-09-24T22:03:37+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -354,7 +354,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "humming-breath-vagus": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-22T18:37:38+02:00"
+    "modified": "2026-09-24T22:03:37+02:00"
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -513,8 +513,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-22T08:22:18+02:00"
   },
   "om-chanting-brain-vagus": {
-    "published": "2026-09-24T19:48:19.560Z",
-    "modified": "2026-09-24T19:48:19.560Z"
+    "published": "2026-09-24T22:03:37+02:00",
+    "modified": "2026-09-24T22:03:37+02:00"
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
