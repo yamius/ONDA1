@@ -8,6 +8,8 @@
  * Body content is localised via the `reviews` i18n namespace
  * (bodies.<slug>.*), falling back to the English fields in the data file.
  */
+import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
@@ -101,6 +103,7 @@ export function ReviewPage() {
           <p className="font-mono text-xs text-white/40">{tBestFor}</p>
         </div>
       </div>
+      <AppStoreCTA layout="line" ct={storeCt('rv', review.slug, lang)} variant={ctaVariantForCategory(review.category)} lang={lang} />
 
       <p id="review-summary" className="mb-6 font-mono text-sm leading-relaxed text-white/60">
         {tSummary}
@@ -244,6 +247,8 @@ export function ReviewPage() {
           </Markdown>
         </article>
       )}
+
+      <AppStoreCTA ct={storeCt('rv', `${review.slug}_end`, lang)} variant={ctaVariantForCategory(review.category)} lang={lang} />
 
       {review.faq && review.faq.length > 0 && (
         <section className="mb-10">

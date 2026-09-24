@@ -4,6 +4,8 @@
  * /reviews/<category> (per-category landing pages). Each page is a
  * pair-wise "X vs Y" comparison aimed at the high-volume search keyword.
  */
+import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useLocation, useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
@@ -185,6 +187,8 @@ export function HeadToHeadPage() {
       <article className="prose-onda mb-10">
         <Markdown>{tr('content', h2h.content)}</Markdown>
       </article>
+
+      <AppStoreCTA ct={storeCt('vs', h2h.slug.replace(/-vs-/g, '_'), lang)} variant={ctaVariantForCategory(a.category)} lang={lang} />
 
       {/* FAQ — also emitted as FAQPage JSON-LD by meta-inject. */}
       {h2h.faq.length > 0 && (

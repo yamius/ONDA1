@@ -7,6 +7,8 @@
  * Body content is localised via the `reviews` i18n namespace
  * (comparisons.<slug>.*), falling back to the English data file.
  */
+import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
@@ -199,6 +201,8 @@ export function ComparisonPage() {
           </Markdown>
         </article>
       )}
+
+      <AppStoreCTA ct={storeCt('rvhub', `cmp_${comparison.slug}`, lang)} variant={ctaVariantForCategory(comparison.category)} lang={lang} />
 
       {comparison.faq.length > 0 && (
         <section className="mb-10">

@@ -7,6 +7,8 @@
  * langHref (localized where a route exists, EN otherwise). CollectionPage
  * JSON-LD + the hreflang cluster are emitted statically by meta-inject/prerender.
  */
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { ONDA_VS, CAPABILITIES, ONDA_CAPS, type Cap } from '../data/onda-vs'
@@ -101,6 +103,8 @@ export function OndaComparePage() {
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">{copy.h1}</h1>
         <p className="font-mono text-sm leading-relaxed text-white/70 md:text-base">{copy.intro}</p>
       </header>
+
+      <AppStoreCTA ct={storeCt('cmp', 'index', lang)} variant="hrv" lang={lang} />
 
       {/* Capability matrix — ONDA and every competitor on the same axes, at a
           glance. Reuses the onda-vs data so it can't drift. */}

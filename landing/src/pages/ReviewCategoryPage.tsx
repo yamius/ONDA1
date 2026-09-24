@@ -8,6 +8,8 @@
  * Slug → category resolution lives in `getCategoryByUrlSlug` so a single
  * dynamic route in the SPA covers all six pages without per-page wiring.
  */
+import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useLocation, Link, useParams } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import {
@@ -170,6 +172,8 @@ export function ReviewCategoryPage() {
       >
         {tReviews('hub.methodologyLink', { defaultValue: 'How we score →' })}
       </Link>
+
+      <AppStoreCTA ct={storeCt('rvhub', slug, lang)} variant={ctaVariantForCategory(category)} lang={lang} className="mb-14" />
 
       {catComparison && (
         <section className="mb-14">

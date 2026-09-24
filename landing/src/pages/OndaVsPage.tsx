@@ -11,6 +11,8 @@
  * EN-only. Self-contained meta + WebPage/FAQPage JSON-LD, mirroring the other
  * GEO pages.
  */
+import AppStoreCTA, { ctaVariantForCompareSlug } from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useEffect } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import { CAPABILITIES, ONDA_CAPS, getOndaVs, type Cap } from '../data/onda-vs'
@@ -149,6 +151,8 @@ export function OndaVsPage() {
         <p className="mb-2 font-mono text-xs tracking-widest text-terminal-green/80">VERDICT</p>
         <p className="text-sm leading-relaxed text-white/85">{entry.verdict}</p>
       </section>
+
+      <AppStoreCTA ct={storeCt('cmp', entry.slug.replace(/^onda-vs-/, 'vs_'))} variant={ctaVariantForCompareSlug(entry.slug)} />
 
       {/* Capability table */}
       <section className="mb-10">

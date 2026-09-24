@@ -9,6 +9,8 @@
  *
  * EN-only. Self-contained meta + ItemList + FAQPage JSON-LD.
  */
+import AppStoreCTA, { ctaVariantForCompareSlug } from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useEffect } from 'react'
 import { Link, useLocation, useParams } from 'react-router-dom'
 import { getRoundup, CAP_PROFILES } from '../data/onda-roundups'
@@ -215,6 +217,8 @@ export function OndaRoundupPage() {
         <p className="mb-2 font-mono text-xs tracking-widest text-terminal-green/80">THE BOTTOM LINE</p>
         <p className="text-sm leading-relaxed text-white/85">{roundup.bottomLine}</p>
       </section>
+
+      <AppStoreCTA ct={storeCt('cmp', roundup.slug)} variant={ctaVariantForCompareSlug(roundup.slug)} />
 
       {/* FAQ */}
       <section className="mb-10">
