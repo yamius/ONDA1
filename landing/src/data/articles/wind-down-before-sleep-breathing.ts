@@ -57,7 +57,7 @@ A wind-down is a runway, not a cliff. Give the descent room:
 
 - **Start before bed, not in bed.** Dim the lights and slow down 30–60 minutes out, so you arrive at the pillow already descending.
 - **Do a few minutes of slow, exhale-led breathing** as the anchor — in bed is fine. Longer out-breaths, low in the belly, soft not forced.
-- **If the mind won't stop looping**, give it a low-stakes task instead of fighting it — [cognitive shuffling](/articles/cognitive-shuffling) (drifting through random unrelated words) crowds out the rumination that keeps you up.
+- **If the mind won't stop looping**, give it a low-stakes task instead of fighting it — [cognitive shuffling](/articles/cognitive-shuffling) (drifting through random unrelated words) crowds out the rumination that keeps you up. For a longer guided version, try [Yoga Nidra](/articles/yoga-nidra-sleep-science).
 - **Keep it consistent.** A repeated wind-down becomes a cue: your body learns that this sequence means sleep is coming, and starts the descent on its own.
 
 ---

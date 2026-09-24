@@ -279,7 +279,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "spinal-harddrive-cpg-autonomous-scripts": "brain-focus-aging",
   "spinal-intelligence-decentralized-control": "brain-focus-aging",
   "structured-meditation-training-by-levels": "meditation",
-  "sudarshan-kriya-yoga-breathing": "breathing", // pending — not on site yet
+  "sudarshan-kriya-yoga-breathing": "breathing",
   "system-feedback-biometric-loop": "hrv-heart-rate",
   "system-stability-serotonin": "stress-vagus",
   "tanden-breathing-serotonin": "breathing",
@@ -298,7 +298,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "wim-hof-breathing-inflammation": "breathing",
   "wind-down-before-sleep-breathing": "sleep-body-clock",
   "yoga-breathing-diabetes-blood-sugar": "heart-fitness-metabolism", // pending — not on site yet
-  "yoga-nidra-sleep-science": "sleep-body-clock", // pending — not on site yet
+  "yoga-nidra-sleep-science": "sleep-body-clock",
   "yoga-poses-heart-rate-blood-pressure": "heart-fitness-metabolism", // pending — not on site yet
   "your-baseline-knows-first": "hrv-heart-rate",
   "zazen-zen-meditation-brain": "meditation",
@@ -332,13 +332,13 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "pranayama-metabolic-syndrome": "India", // pending
   "rajyoga-open-eye-meditation": "India",
   "social-jet-lag-irregular-sleep": "Germany",
-  "sudarshan-kriya-yoga-breathing": "India", // pending
+  "sudarshan-kriya-yoga-breathing": "India",
   "tanden-breathing-serotonin": "Japan",
   "trataka-candle-gazing-focus": "India", // pending
   "vipassana-meditation-attention-brain": "India",
   "wim-hof-breathing-inflammation": "Netherlands",
   "yoga-breathing-diabetes-blood-sugar": "India", // pending
-  "yoga-nidra-sleep-science": "India", // pending
+  "yoga-nidra-sleep-science": "India",
   "yoga-poses-heart-rate-blood-pressure": "India", // pending
   "zazen-zen-meditation-brain": "Japan",
   "zen-koans-brain-cognition": "Japan",

@@ -39,7 +39,7 @@ It was one small trial in healthy volunteers, so treat it as an encouraging sign
 
 The amygdala is central to the anxiety response — when it's overactive, the world feels more threatening. The insula tracks internal bodily states; the anterior cingulate and prefrontal cortex help regulate and interpret emotion. Showing that a breathing practice modulates these regions offers a plausible mechanism for *why* breathwork eases anxiety: not just relaxation, but a change in how the emotional brain responds.
 
-It also fits a broader pattern. Slow pranayama calms through the vagus nerve and baroreflex; [humming breath](/articles/humming-breath-vagus) stimulates the vagus mechanically; and here, Bhastrika appears to reshape emotional brain activity over weeks. Different techniques, different routes — converging on a calmer nervous system.
+It also fits a broader pattern. Slow pranayama calms through the vagus nerve and baroreflex; [humming breath](/articles/humming-breath-vagus) stimulates the vagus mechanically; and here, Bhastrika appears to reshape emotional brain activity over weeks. Different techniques, different routes — converging on a calmer nervous system. Bhastrika is also one component of [Sudarshan Kriya Yoga](/articles/sudarshan-kriya-yoga-breathing), the most clinically studied breathing sequence.
 
 ## How to practice Bhastrika safely
 

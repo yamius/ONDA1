@@ -73,8 +73,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "bhastrika-pranayama-brain-anxiety": {
-    "published": "2026-09-24T09:47:23.233Z",
-    "modified": "2026-09-24T09:47:23.233Z"
+    "published": "2026-09-24T12:08:14+02:00",
+    "modified": "2026-09-24T12:08:14+02:00"
   },
   "biological-latency-optimizing-system-ping": {
     "published": "2026-04-21T12:59:22Z",
@@ -234,7 +234,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fast-vs-slow-pranayama": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-09-22T18:37:38+02:00"
+    "modified": "2026-09-24T12:08:14+02:00"
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
@@ -449,8 +449,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "morita-therapy-tracking-paradox": {
-    "published": "2026-09-24T09:47:36.504Z",
-    "modified": "2026-09-24T09:47:36.504Z"
+    "published": "2026-09-24T12:08:14+02:00",
+    "modified": "2026-09-24T12:08:14+02:00"
   },
   "muscle-metabolic-marker": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -458,7 +458,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "naikan-japanese-reflection": {
     "published": "2026-09-23T19:44:44+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-24T12:08:14+02:00"
   },
   "name-it-to-tame-it-affect-labeling": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -588,6 +588,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-19T00:21:25+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
   },
+  "sudarshan-kriya-yoga-breathing": {
+    "published": "2026-09-24T10:21:46.004Z",
+    "modified": "2026-09-24T10:21:46.004Z"
+  },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
     "modified": "2026-06-09T14:23:13+02:00"
@@ -651,6 +655,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
+  },
+  "yoga-nidra-sleep-science": {
+    "published": "2026-09-24T10:22:02.318Z",
+    "modified": "2026-09-24T10:22:02.318Z"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",

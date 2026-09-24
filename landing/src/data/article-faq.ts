@@ -1387,6 +1387,20 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "They do different jobs. Breathwork gives fast, bottom-up calm in minutes; meditation gives deep, top-down training over weeks. The most effective approach combines them — breathe to reach calm, then meditate from there.",
     },
   ],
+  "sudarshan-kriya-yoga-breathing": [
+    { question: "What is Sudarshan Kriya Yoga (SKY)?", answer: "A structured breathing practice combining slow Ujjayi breathing, fast Bhastrika, cyclical rhythmic breathing and Om chanting, taught in a course and then practiced regularly. It has been studied for depression, PTSD and stress, and was popularized by the Art of Living organization." },
+    { question: "Is SKY as effective as antidepressants?", answer: "One trial (NIMHANS, 2000) found SKY's remission rate in melancholic depression was lower than electroconvulsive therapy but comparable to the antidepressant imipramine. It is one older study and the overall evidence is of mixed quality, so SKY is supportive, not a replacement for treatment." },
+    { question: "Does Sudarshan Kriya lower cortisol?", answer: "Several studies report lower cortisol and reduced stress after SKY training, but most are small and larger controlled trials are still needed." },
+    { question: "Can SKY help with PTSD?", answer: "Trials in tsunami survivors and US military veterans reported reduced PTSD symptoms, with effects lasting to one-year follow-up in the veteran study. It is promising but should complement, not replace, professional PTSD treatment." },
+    { question: "Can I learn Sudarshan Kriya on my own?", answer: "The full practice is traditionally taught by a trained instructor because it combines forceful and slow techniques in a precise sequence. Gentler components such as slow Ujjayi breathing can be practiced alone." },
+  ],
+  "yoga-nidra-sleep-science": [
+    { question: "What is Yoga Nidra?", answer: "'Yogic sleep' — a guided deep-relaxation practice done lying down, usually 20 to 45 minutes, that takes you to the threshold between waking and sleep using a body scan, breath awareness and imagery." },
+    { question: "Does Yoga Nidra actually help you sleep?", answer: "Research suggests it can. Yogic relaxation practices shift the brain toward slower theta and alpha activity and are linked to stronger vagal tone and lower arousal, and yoga programs that include it improve standardized sleep-quality scores. Studies are mostly small, so it is promising rather than proven." },
+    { question: "Is Yoga Nidra the same as sleep or meditation?", answer: "Neither exactly. It is a guided state between waking and sleep — more relaxed than sitting meditation, but not unconscious like sleep." },
+    { question: "How long should Yoga Nidra be for sleep?", answer: "Typically 20 to 45 minutes, guided by a recording. For sleep, do it lying in bed and let yourself drift off if it happens." },
+    { question: "Can Yoga Nidra help with insomnia?", answer: "It suits insomnia driven by a racing mind, because it lowers arousal through the body scan and slow breathing rather than forcing sleep. Persistent insomnia still deserves a conversation with a clinician." },
+  ],
   "bhastrika-pranayama-brain-anxiety": [
     { question: "Does Bhastrika pranayama reduce anxiety?", answer: "In a randomized controlled trial, four weeks of Bhastrika practice significantly reduced anxiety and negative affect and changed activity in emotion-processing brain regions including the amygdala, insula and prefrontal cortex. It was a small study in healthy adults, so it is an encouraging signal rather than a settled clinical result." },
     { question: "How does Bhastrika breathing affect the brain?", answer: "Functional MRI showed Bhastrika modulates the amygdala (the brain's threat detector), anterior cingulate, anterior insula and prefrontal cortex — regions that process and regulate emotion." },

@@ -48,7 +48,7 @@ Match the technique to what you actually need:
 - Any slow, long-exhale breathing — before sleep, during stress, for HRV.
 
 **Use fast pranayama to energize and focus:**
-- Kapalabhati or Bhastrika — in the morning, or when you need alertness.
+- Kapalabhati or Bhastrika — in the morning, or when you need alertness. ([Sudarshan Kriya](/articles/sudarshan-kriya-yoga-breathing) deliberately combines both families in one sequence.)
 - Not before bed, and not to calm anxiety — it will push the wrong way.
 
 A simple rule: if you want the brake, breathe slow with a long exhale. If you want the gas, breathe fast and forceful. Both are legitimate; the error is using one when you need the other. For an even faster brake in an acute moment, a [physiological sigh](/articles/physiological-sigh) beats any sustained practice.
