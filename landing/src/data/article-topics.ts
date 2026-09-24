@@ -220,7 +220,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "intermittent-fasting-metabolic-switch": "lifestyle",
   "interoceptive-precision-sensor-calibration": "stress-vagus",
   "jhana-meditation-stages": "meditation",
-  "light-and-your-body-clock": "sleep-body-clock", // pending — not on site yet
   "longevity-hardware-cellular-cleanup": "brain-focus-aging",
   "longevity-protocol-biological-clock-reset": "brain-focus-aging",
   "mbsr-mindfulness-clinical-evidence": "meditation",
@@ -301,7 +300,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "your-baseline-knows-first": "hrv-heart-rate",
   "zazen-zen-meditation-brain": "meditation",
   "zen-koans-brain-cognition": "meditation",
-  "zen-meditation-serotonin-beginners": "meditation", // pending — not on site yet
   "zone-2-training-aerobic-base": "heart-fitness-metabolism",
 }
 
@@ -319,7 +317,6 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "hrv-breathing-cold-honest-limits": "Netherlands",
   "hrv-harmony-of-rhythms": "Germany",
   "humming-breath-vagus": "India",
-  "light-and-your-body-clock": "Germany", // pending
   "meditation-gamma-waves-experience": "India",
   "morita-therapy-tracking-paradox": "Japan",
   "naikan-japanese-reflection": "Japan",
@@ -338,7 +335,6 @@ export const ARTICLE_WORLD: Record<string, WorldCountry> = {
   "yoga-poses-heart-rate-blood-pressure": "India",
   "zazen-zen-meditation-brain": "Japan",
   "zen-koans-brain-cognition": "Japan",
-  "zen-meditation-serotonin-beginners": "Japan", // pending
 }
 
 export function getArticleTopicHub(slug: string): ArticleTopicHub | undefined {
