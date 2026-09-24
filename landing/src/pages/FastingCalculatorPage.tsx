@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   FASTING_PROTOCOLS,
   FAST_PHASES,
@@ -128,20 +129,7 @@ export function FastingCalculatorPage() {
         clinician if you have a health condition.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Make fasting work with your body</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life tracks how your eating window affects sleep, energy and recovery — so you can
-          find the fasting pattern your body actually responds to, not just the trendy one.
-        </p>
-        <a
-          href={appStoreUrl('tool_fasting')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'fasting')} variant="tool" />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">

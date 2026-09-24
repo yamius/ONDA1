@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { METRIC_DETAILS, type DetailSection } from '../data/bioMetrics'
 import { NotFoundPage } from './NotFoundPage'
 import { appStoreUrl } from '../config/appStore'
+import { storeCt } from '../lib/storeCt'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, localizedPathFor } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
@@ -155,7 +156,7 @@ export function BioMetricPage() {
           <p className="mb-5 text-xs text-white/35">{t('ui.ctaSubtitle')}</p>
           <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
             <a
-              href={appStoreUrl('bio_metric')}
+              href={appStoreUrl(storeCt('bio', metric ?? 'metric', lang))}
               target="_blank"
               rel="noopener"
               onClick={() => { (window as any).lastPlatform = 'ios' }}

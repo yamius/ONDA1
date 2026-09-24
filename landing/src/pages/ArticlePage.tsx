@@ -178,7 +178,8 @@ function setMeta(name: string, content: string, isProperty = false) {
 
 import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
-import { appStoreUrl } from '../config/appStore'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 
 const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
 
@@ -258,6 +259,7 @@ export function ArticlePage() {
   const { slug } = useParams<{ slug: string }>()
   const { hash, pathname } = useLocation()
   const lang = langFromPath(pathname)
+  const isPillar = slug === 'meditation-with-measurable-progress'
   const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tArticles } = useTranslation('articles')
   const { t: tGloss } = useTranslation('glossary')
@@ -933,9 +935,29 @@ export function ArticlePage() {
       })()}
 
       <article className="prose-onda">
-        <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={markdownComponents} key={protocolRefresh}>
-          {injectArticleGlossaryLinks(tContent, langPrefix)}
-        </Markdown>
+        {(() => {
+          // Soft App Store line right AFTER the answer capsule (task 15): split
+          // before the first H2 only when ≥60 words of plain answer text precede
+          // it — so the CTA never pushes the capsule out of the first 100 words,
+          // and "## [ CASE FILE ]"-style articles (H2 first) get no top line.
+          const body = injectArticleGlossaryLinks(tContent, langPrefix)
+          const m = /\n##\s/.exec(body)
+          const head = m ? body.slice(0, m.index) : ''
+          const words = head.replace(/[#>*_`\[\]()]/g, ' ').trim().split(/\s+/).filter(Boolean).length
+          const md = (src: string, k: string) => (
+            <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={markdownComponents} key={`${protocolRefresh}-${k}`}>
+              {src}
+            </Markdown>
+          )
+          if (!m || words < 60 || /^\s*#/.test(head)) return md(body, 'all')
+          return (
+            <>
+              {md(head, 'a')}
+              <AppStoreCTA layout="line" ct={isPillar ? storeCt('pillar', 'meditation', lang) : storeCt('ar', article.slug, lang)} variant="general" lang={lang} />
+              {md(body.slice(m.index), 'b')}
+            </>
+          )
+        })()}
       </article>
 
       {/* YMYL medical disclaimer — shown on every article (these are health/
@@ -1011,83 +1033,7 @@ export function ArticlePage() {
         <div className="mb-4 flex justify-end">
           <ArticleValidationArrows articleSlug={article.slug} />
         </div>
-        <div className="p-8 text-center">
-        <p className="mb-6 font-mono text-base font-semibold text-white/90 md:text-lg">
-          {article.slug === 'dopamine-architecture-mastering-desire'
-            ? 'System Calibration Ready. Download ONDA Life to optimize your Dopamine baseline and track motivation windows.'
-            : article.slug === 'dopamine-stacking-preventing-circuit-overload'
-              ? 'System Calibration Ready. Download ONDA Life to prevent circuit overload and track your dopamine baseline recovery.'
-            : article.slug === 'circadian-reset-mastering-light'
-              ? 'System Calibration Ready. Download ONDA Life to sync your Circadian Rhythm and track light exposure.'
-              : article.slug === 'metabolic-flexibility-dual-fuel-system'
-                ? 'System Calibration Ready. Download ONDA Life to optimize your Metabolic Flexibility and track fuel switching.'
-                : article.slug === 'neuroplasticity-flow-overclocking'
-                  ? 'System Calibration Ready. Download ONDA Life to track Flow State and optimize Neuroplasticity.'
-                  : article.slug === 'gut-brain-axis-data-link'
-                    ? 'System Calibration Ready. Download ONDA Life to optimize your Gut-Brain Data Link and Vagus Nerve tone.'
-                    : article.slug === 'breathwork-command-line-interface'
-                      ? 'System Calibration Ready. Download ONDA Life to master the CLI of your breathing and gain Root Access.'
-                      : article.slug === 'hrv-training-nervous-system-latency'
-                        ? 'System Calibration Ready. Download ONDA Life to track HRV and optimize your nervous system latency.'
-                        : article.slug === 'digital-dementia-attentional-control'
-                          ? 'System Calibration Ready. Download ONDA Life to protect your attention and install the firewall.'
-                          : article.slug === 'longevity-hardware-cellular-cleanup'
-                            ? 'System Calibration Ready. Download ONDA Life to track your cellular health and longevity metrics.'
-                            : article.slug === 'senolytic-high-dosing-longevity'
-                              ? 'System Calibration Ready. Download ONDA Life to track epigenetic aging and optimize your Hit and Run protocol.'
-                              : article.slug === 'ai-biomarker-tracking-predictive'
-                                ? 'Future of the OS. Download ONDA Life to access predictive biomarker analytics and forecast system stability before symptoms appear.'
-                                : article.slug === 'phase-locked-acoustic-sleep'
-                                  ? 'System Calibration Ready. Download ONDA Life to optimize deep sleep and amplify Delta wave recovery.'
-                                    : article.slug === 'neural-entrainment-meditation-2'
-                                    ? 'System Calibration Ready. Download ONDA Life to tune your brain frequency with EEG-driven neural entrainment.'
-                                    : article.slug === 'electric-medicine-neuromodulation'
-                                    ? 'System Calibration Ready. Download ONDA Life to track neuromodulation protocols and neural interface metrics.'
-                                    : article.slug === 'muscle-metabolic-marker'
-                                    ? 'System Calibration Ready. Download ONDA Life to track muscle mass, grip strength, and metabolic flexibility.'
-                                    : article.slug === 'chm-continuous-hormone-monitoring'
-                                    ? 'Future of the OS. Download ONDA Life to integrate your endocrine dashboard and optimize performance windows.'
-                                    : article.slug === 'glymphatic-flush-clearing-neural-cache'
-                                    ? 'System Calibration Ready. Download ONDA Life to track deep sleep and optimize glymphatic clearance.'
-                                    : article.slug === 'cpg-neural-autopilot'
-                                    ? 'System Calibration Ready. Download ONDA Life to optimize locomotion and reclaim mental bandwidth.'
-                                    : article.slug === 'co2-tolerance-expanding-oxygen-limit'
-                                    ? 'System Calibration Ready. Download ONDA Life to track BOLT score and optimize gas exchange.'
-                                    : article.slug === 'femtech-cyclical-architecture'
-                                    ? 'System Calibration Ready. Download ONDA Life to sync your cycle phases and optimize hormonal firmware.'
-                                    : article.slug === 'cognitive-architecture-neural-throughput'
-                                    ? 'System Calibration Ready. Download ONDA Life to clear neural noise, optimize circadian calibration, and expand cognitive bandwidth without external patches.'
-                                    : article.slug === 'system-feedback-biometric-loop'
-                                    ? 'Stop tracking and start optimizing. Download ONDA Life to turn your biometric data into immediate corrective protocols for peak performance.'
-                                    : 'System Calibration Ready. Download ONDA Life to track your Vagus Nerve tone in real-time.'}
-        </p>
-        <div className="flex flex-col items-center justify-center gap-3 sm:flex-row sm:gap-4">
-          <a
-            href={appStoreUrl(`article_${article.slug}`)}
-            target="_blank"
-            rel="noopener"
-            onClick={() => { window.lastPlatform = 'ios' }}
-            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-cyan-500/50 hover:bg-white/15 sm:w-auto"
-            aria-label="Download ONDA Life on App Store"
-            data-button="apple"
-            data-platform="ios"
-          >
-            <AppleIcon />
-            <span>App Store</span>
-          </a>
-          <a
-            href="/#download"
-            onClick={() => { window.lastPlatform = 'android' }}
-            className="flex w-full items-center justify-center gap-2 rounded-lg border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold transition-all hover:border-cyan-500/50 hover:bg-white/15 sm:w-auto"
-            aria-label="Download ONDA Life on Google Play"
-            data-button="android"
-            data-platform="android"
-          >
-            <PlayIcon />
-            <span>Google Play</span>
-          </a>
-        </div>
-        </div>
+        <AppStoreCTA ct={isPillar ? storeCt('pillar', 'meditation_end', lang) : storeCt('ar', `${article.slug}_end`, lang)} variant="general" lang={lang} className="!my-0" />
       </div>
 
       {/* Reactions & Comments */}
@@ -1171,18 +1117,4 @@ export function ArticlePage() {
   )
 }
 
-function AppleIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-white/80" aria-hidden="true">
-      <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
-    </svg>
-  )
-}
 
-function PlayIcon() {
-  return (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="text-white/80" aria-hidden="true">
-      <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-    </svg>
-  )
-}

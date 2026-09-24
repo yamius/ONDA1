@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath, langHref } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   CAFFEINE_DRINKS,
   CAFFEINE_FAQ,
@@ -141,20 +142,7 @@ export function CaffeineCalculatorPage() {
         values are typical averages — actual content varies by brand, roast and serving size.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">See how caffeine timing actually affects your sleep</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life tracks your overnight sleep and HRV — so you can test your own caffeine
-          cut-off against real recovery data, not just a formula.
-        </p>
-        <a
-          href={appStoreUrl('tool_caffeine')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'caffeine')} variant="tool" />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Caffeine in common drinks</h2>
       <div className="mb-10 overflow-x-auto rounded-xl border border-white/10">

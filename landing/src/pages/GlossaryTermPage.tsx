@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { NotFoundPage } from './NotFoundPage'
@@ -298,6 +300,8 @@ export function GlossaryTermPage() {
           {injectGlossaryLinks(tContent, term.slug, langPrefix)}
         </Markdown>
       </article>
+
+      <AppStoreCTA layout="line" ct={storeCt('gl', term.slug, lang)} variant="glossary" lang={lang} />
 
       {/* Related Deep Dives */}
       {relatedArticles.length > 0 && (

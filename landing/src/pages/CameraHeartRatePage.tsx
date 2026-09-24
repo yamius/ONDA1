@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   CAMERA_HR_FAQ,
   CAMERA_HR_SOURCES,
@@ -307,17 +308,7 @@ export function CameraHeartRatePage() {
         frames are analysed live on your device and never stored or sent.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">This is the demo. The app is the real thing.</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          A 30-second camera reading is a taste. ONDA Life reads your heart rate and HRV continuously
-          and turns them into a calm, trend-based picture of recovery — the accuracy a camera can’t give.
-        </p>
-        <a href={appStoreUrl('tool_camerahr')} rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10">
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'camerahr')} variant="general" />
 
       <SourcesSection methodology={CAMERA_HR_METHODOLOGY} sources={CAMERA_HR_SOURCES} />
 

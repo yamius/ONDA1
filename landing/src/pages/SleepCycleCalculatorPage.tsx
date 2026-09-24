@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   SLEEP_CYCLE_FAQ,
   SLEEP_CYCLE_SOURCES,
@@ -121,20 +122,7 @@ export function SleepCycleCalculatorPage() {
         timing matter more than hitting an exact cycle. Educational only, not medical advice.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Wake up to your real sleep, not an average</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life works from your actual sleep stages, HRV and timing — so your wake-up and wind-down
-          fit your body’s real rhythm, not a one-size-fits-all 90 minutes.
-        </p>
-        <a
-          href={appStoreUrl('tool_sleepcycle')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'sleepcycle')} variant="tool" />
 
       <SourcesSection methodology={SLEEP_CYCLE_METHODOLOGY} sources={SLEEP_CYCLE_SOURCES} />
 

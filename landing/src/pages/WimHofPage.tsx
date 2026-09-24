@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   WHM_DEFAULTS,
   WHM_ROUND_OPTIONS,
@@ -255,17 +256,7 @@ export function WimHofPage() {
         slowly, and get medical clearance if you have any heart condition or are pregnant.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">See the resilience effect in your data</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          Breathwork and cold both shift your autonomic balance. ONDA Life tracks how they move your
-          HRV and recovery over time — so you train resilience by signal, not hype.
-        </p>
-        <a href={appStoreUrl('tool_wimhof')} rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10">
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'wimhof')} variant="tool" />
 
       <SourcesSection methodology={WHM_METHODOLOGY} sources={WHM_SOURCES} />
 

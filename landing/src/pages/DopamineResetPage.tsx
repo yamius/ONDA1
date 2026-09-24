@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   RESET_DURATIONS,
   HIGH_STIM_INPUTS,
@@ -124,20 +125,7 @@ export function DopamineResetPage() {
         </div>
       </div>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Turn one reset into a habit</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          A single detox fades. ONDA Life builds the reset into daily protocols and tracks how cutting
-          the loops changes your focus, sleep and stress — so the recalibration actually holds.
-        </p>
-        <a
-          href={appStoreUrl('tool_dopamine')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'dopamine')} variant="tool" />
 
       <SourcesSection methodology={DOPAMINE_METHODOLOGY} sources={DOPAMINE_SOURCES} />
 

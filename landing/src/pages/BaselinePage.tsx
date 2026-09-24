@@ -56,8 +56,8 @@ type Phase = 'cold' | 'result'
 const INSTALL_FLAG = 'onda_baseline_installed'
 const AUTORUN_FLAG = 'onda_baseline_autorun'
 
-/** ct=tools_baseline so a web tap on iOS shows up as its own row in App Store Connect. */
-const APP_URL = appStoreUrl('tools_baseline')
+/** ct=tool_baseline so a web tap on iOS shows up as its own row in App Store Connect. */
+const APP_URL = appStoreUrl('tool_baseline')
 /** The paired explainer article (task 76 §2). */
 const ARTICLE_SLUG = 'what-your-apple-watch-records'
 

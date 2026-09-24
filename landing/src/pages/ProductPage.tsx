@@ -19,6 +19,7 @@
 import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { appStoreUrl, APP_STORE_ID } from '../config/appStore'
+import { storeCt } from '../lib/storeCt'
 import { ONDA_CAPS, getOndaVs, type Cap, type CapabilityAxis } from '../data/onda-vs'
 import { langFromPath } from '../i18n'
 import { PRODUCT_I18N, type ProductCopy } from '../data/product-i18n'
@@ -173,7 +174,7 @@ export function ProductPage() {
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">ONDA Life</h1>
         <p className="font-mono text-sm leading-relaxed text-white/70 md:text-base">{copy.heroPara}</p>
         <a
-          href={appStoreUrl('product_page')}
+          href={appStoreUrl(storeCt('pg', 'product', lang))}
           className="mt-8 inline-block rounded border border-terminal-green/40 px-4 py-2 font-mono text-sm text-terminal-green transition-colors hover:bg-terminal-green/10"
         >
           {copy.cta}
@@ -200,7 +201,7 @@ export function ProductPage() {
                 </th>
                 <td className="py-3">
                   <a
-                    href={appStoreUrl('product_facts')}
+                    href={appStoreUrl(storeCt('pg', 'product_facts', lang))}
                     className="text-terminal-cyan hover:text-terminal-green break-all"
                   >
                     {APP_STORE_CANONICAL}

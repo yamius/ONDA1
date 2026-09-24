@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   HRV_LEVELS,
   RHR_LEVELS,
@@ -148,17 +149,7 @@ export function RecoveryScorePage() {
         weigh, not an order. Persistent low recovery with symptoms warrants a doctor, not just a rest day.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Readiness, without the anxiety</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life turns HRV, resting HR and sleep into one calm readiness read — focused on your
-          trend, not a daily score to chase. Recovery you can act on, not obsess over.
-        </p>
-        <a href={appStoreUrl('tool_recovery')} rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10">
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'recovery')} variant="tool" />
 
       <SourcesSection methodology={RECOVERY_METHODOLOGY} sources={RECOVERY_SOURCES} />
 

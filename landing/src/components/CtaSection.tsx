@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { appStoreUrl } from '../config/appStore'
+import { storeCt } from '../lib/storeCt'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, langHref } from '../i18n'
 
@@ -67,7 +68,7 @@ export function CtaSection() {
 
         <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
           <a
-            href={appStoreUrl('home_cta')}
+            href={appStoreUrl(storeCt('home', 'hero', lang))}
             target="_blank"
             rel="noopener"
             onClick={() => { window.lastPlatform = 'ios' }}

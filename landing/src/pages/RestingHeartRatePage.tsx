@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import { RHR_AGE_BANDS, RHR_FAQ, RHR_SOURCES, RHR_METHODOLOGY, interpretRhr, type RhrResult } from '../data/resting-hr'
 import { SourcesSection } from '../components/SourcesSection'
 
@@ -162,17 +163,7 @@ export function RestingHeartRatePage() {
         </div>
       </div>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Your morning trend, not one number</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          A rising resting heart rate is one of the earliest signs you need recovery. ONDA Life tracks
-          your morning RHR and HRV together — so you catch it before it costs you.
-        </p>
-        <a href={appStoreUrl('tool_rhr')} rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10">
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'rhr')} variant="tool" />
 
       <SourcesSection methodology={RHR_METHODOLOGY} sources={RHR_SOURCES} />
 

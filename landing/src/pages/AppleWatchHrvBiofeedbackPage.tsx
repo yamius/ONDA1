@@ -8,6 +8,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { CornerstoneRelated } from '../components/CornerstoneRelated'
 import { appStoreUrl } from '../config/appStore'
+import { storeCt } from '../lib/storeCt'
 import { langFromPath, langHref } from '../i18n'
 import { renderRich, type RichLink } from '../utils/richText'
 import { APPLE_WATCH_HRV_I18N, type AwCopy } from '../data/apple-watch-hrv-i18n'
@@ -101,7 +102,7 @@ export function AppleWatchHrvBiofeedbackPage() {
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">{copy.h1}</h1>
         <p className="font-mono text-sm leading-relaxed text-white/75 md:text-base">{renderRich(copy.heroLead, links, 'hero')}</p>
         <a
-          href={appStoreUrl('apple_watch_hrv_page')}
+          href={appStoreUrl(storeCt('pg', 'apple_watch_hrv', lang))}
           className="mt-6 inline-block rounded border border-terminal-green/40 px-4 py-2 font-mono text-sm text-terminal-green hover:bg-terminal-green/10"
         >
           {copy.ctaLabel}

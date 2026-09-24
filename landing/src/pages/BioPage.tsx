@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { METRIC_DETAILS } from '../data/bioMetrics'
 import { appStoreUrl } from '../config/appStore'
+import { storeCt } from '../lib/storeCt'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, localizedPathFor } from '../i18n'
 
@@ -636,7 +637,7 @@ export function BioPage() {
             {t('ctaPrimary.subtitle')}
           </p>
           <a
-            href={appStoreUrl('bio')}
+            href={appStoreUrl(storeCt('bio', 'hub', lang))}
             target="_blank"
             rel="noopener"
             data-button="apple"
@@ -691,7 +692,7 @@ export function BioPage() {
           <p className="mb-5 text-xs text-white/35">{t('ctaDownload.subtitle')}</p>
           <div className="mx-auto flex max-w-[200px] flex-col items-center justify-center gap-2 sm:max-w-none sm:flex-row sm:gap-3">
             <a
-              href={appStoreUrl('bio_page')}
+              href={appStoreUrl(storeCt('bio', 'hub_end', lang))}
               target="_blank"
               rel="noopener"
               onClick={() => { (window as any).lastPlatform = 'ios' }}

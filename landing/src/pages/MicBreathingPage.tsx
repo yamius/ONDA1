@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import { MIC_FAQ, MIC_SOURCES, MIC_METHODOLOGY, TARGET_BPM } from '../data/mic-breathing'
 import { SourcesSection } from '../components/SourcesSection'
 
@@ -235,17 +236,7 @@ export function MicBreathingPage() {
         slowing toward ~6/min is the HRV resonance zone. Audio is analysed live on-device and never stored.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Breath is the lever. The app is the dashboard.</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          This shows your breath rhythm. ONDA Life shows what it does to your nervous system — pacing
-          breath against your live HRV so you can see yourself calm down in real time.
-        </p>
-        <a href={appStoreUrl('tool_breathingrate')} rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10">
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'breathingrate')} variant="general" />
 
       <SourcesSection methodology={MIC_METHODOLOGY} sources={MIC_SOURCES} />
 

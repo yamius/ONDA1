@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   FOG_QUESTIONS,
   FOG_FAQ,
@@ -153,17 +154,7 @@ export function BrainFogQuizPage() {
         a doctor’s assessment.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Clear the fog at the source</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life connects sleep, stress and recovery into one picture — so you can see which lever
-          actually clears your head and track it improving, calmly.
-        </p>
-        <a href={appStoreUrl('tool_brainfog')} rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10">
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'brainfog')} variant="tool" />
 
       <SourcesSection methodology={FOG_METHODOLOGY} sources={FOG_SOURCES} />
 

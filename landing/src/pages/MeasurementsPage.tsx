@@ -8,6 +8,8 @@
  *
  * jsonLd(lang) → localized WebPage + FAQPage, emitted statically by meta-inject.
  */
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { langFromPath, langHref } from '../i18n'
@@ -175,6 +177,8 @@ export function MeasurementsPage() {
           ))}
         </div>
       </section>
+
+      <AppStoreCTA ct={storeCt('pg', 'measurements', lang)} variant="general" lang={lang} />
     </main>
   )
 }

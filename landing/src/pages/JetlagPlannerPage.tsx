@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import { JETLAG_FAQ, computeJetlag, parseTime, type Direction, type JetlagResult } from '../data/jetlag'
 
 export function JetlagPlannerPage() {
@@ -127,20 +128,7 @@ export function JetlagPlannerPage() {
         timing and sleep scheduling also help.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Land already adjusting</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life tracks how travel hits your sleep, HRV and recovery — and turns light, melatonin
-          and meal timing into a day-by-day plan so you arrive closer to local time.
-        </p>
-        <a
-          href={appStoreUrl('tool_jetlag')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'jetlag')} variant="tool" />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">

@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   BODY_FAT_FAQ,
   BODY_FAT_SOURCES,
@@ -130,20 +131,7 @@ export function BodyFatCalculatorPage() {
         accurate if you need an exact figure.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Track the trend, not the noise</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life logs measurements like this over time and ties them to your training, sleep and
-          recovery — so you can see whether your plan is actually working.
-        </p>
-        <a
-          href={appStoreUrl('tool_bodyfat')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'bodyfat')} variant="tool" />
 
       <SourcesSection methodology={BODY_FAT_METHODOLOGY} sources={BODY_FAT_SOURCES} />
 

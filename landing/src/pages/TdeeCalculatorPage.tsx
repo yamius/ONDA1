@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   ACTIVITY_LEVELS,
   CALORIE_GOALS,
@@ -187,20 +188,7 @@ export function TdeeCalculatorPage() {
         weight trend. The macro split sets protein at ~1.8 g/kg, fat at 25% of calories, the rest carbs.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Make the numbers stick</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life turns targets like these into daily protocols and tracks how nutrition moves
-          your weight, recovery and energy — so you can adjust from real data, not guesswork.
-        </p>
-        <a
-          href={appStoreUrl('tool_tdee')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'tdee')} variant="tool" />
 
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Activity multipliers</h2>
       <div className="mb-10 overflow-x-auto rounded-xl border border-white/10">

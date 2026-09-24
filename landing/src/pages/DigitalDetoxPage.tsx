@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   DETOX_DURATIONS,
   DETOX_HABITS,
@@ -113,20 +114,7 @@ export function DigitalDetoxPage() {
         you — not a purity contest or another thing to feel guilty about.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Reclaim attention, calmly</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life builds resets like this into daily protocols and tracks how cutting the noise moves
-          your sleep, focus and stress — so the change holds instead of fading after a week.
-        </p>
-        <a
-          href={appStoreUrl('tool_digitaldetox')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'digitaldetox')} variant="tool" />
 
       <SourcesSection methodology={DETOX_METHODOLOGY} sources={DETOX_SOURCES} />
 

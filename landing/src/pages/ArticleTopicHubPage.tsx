@@ -1,4 +1,6 @@
 import { useEffect } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useParams } from 'react-router-dom'
 import type { Article } from '../data/articles'
 import { getArticleTopicHub, type ArticleTopicSlug } from '../data/article-topics'
@@ -44,7 +46,8 @@ export function ArticleTopicHubPage() {
 
       <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">[ ONDA LIBRARY ]</div>
       <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">{hub.name}</h1>
-      <p className="mb-12 max-w-3xl text-base leading-relaxed text-white/60">{hub.intro}</p>
+      <p className="mb-6 max-w-3xl text-base leading-relaxed text-white/60">{hub.intro}</p>
+      <AppStoreCTA layout="line" ct={storeCt('hub', hub.slug)} variant={hub.slug === 'meditation' ? 'meditation' : 'general'} className="mb-12" />
 
       {startHere && (
         <section className="mb-14" aria-labelledby="start-here">

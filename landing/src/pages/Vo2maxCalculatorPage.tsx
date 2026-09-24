@@ -1,7 +1,8 @@
 import { useEffect, useMemo, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import { VO2MAX_FAQ, VO2MAX_SOURCES, VO2MAX_METHODOLOGY, estimateVo2max, classifyVo2max, type Sex, type Vo2Result } from '../data/vo2max'
 import { SourcesSection } from '../components/SourcesSection'
 
@@ -146,20 +147,7 @@ export function Vo2maxCalculatorPage() {
         test (Cooper 12-minute run).
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">Track your fitness trend</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life turns markers like VO₂max, HRV and resting heart rate into a single readiness
-          picture — so you can see whether your training is actually moving the needle.
-        </p>
-        <a
-          href={appStoreUrl('tool_vo2max')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'vo2max')} variant="tool" />
 
       <SourcesSection methodology={VO2MAX_METHODOLOGY} sources={VO2MAX_SOURCES} />
 

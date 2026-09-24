@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath } from '../i18n'
-import { appStoreUrl } from '../config/appStore'
 import {
   SHUFFLE_WORDS,
   SHUFFLE_FAQ,
@@ -175,20 +176,7 @@ export function CognitiveShufflePage() {
         sleep problems persist.
       </p>
 
-      <div className="mb-12 rounded-xl border border-terminal-cyan/20 bg-terminal-cyan/5 p-5">
-        <p className="mb-1 font-semibold text-white/90">See what actually helps you sleep</p>
-        <p className="mb-4 font-mono text-xs leading-relaxed text-white/50">
-          ONDA Life tracks how wind-down habits like this move your real sleep, HRV and recovery — so
-          you can keep what works and drop what doesn’t.
-        </p>
-        <a
-          href={appStoreUrl('tool_shuffle')}
-          rel="nofollow noopener noreferrer"
-          className="inline-block rounded-lg border border-terminal-cyan/40 px-5 py-2 font-mono text-xs text-terminal-cyan transition-colors hover:bg-terminal-cyan/10"
-        >
-          Download ONDA Life on the App Store →
-        </a>
-      </div>
+      <AppStoreCTA ct={storeCt('tool', 'shuffle')} variant="tool" />
 
       <SourcesSection methodology={SHUFFLE_METHODOLOGY} sources={SHUFFLE_SOURCES} />
 

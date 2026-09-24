@@ -8,6 +8,8 @@
  *
  * jsonLd(lang) → localized WebPage, emitted statically by meta-inject.
  */
+import AppStoreCTA from '../components/AppStoreCTA'
+import { storeCt } from '../lib/storeCt'
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { langFromPath, langHref } from '../i18n'
@@ -130,6 +132,8 @@ export function HowItWorksPage() {
         </ul>
         <p className="mt-4 font-mono text-sm leading-relaxed text-white/70">{renderRich(copy.boundariesMore, links, 'bm')}</p>
       </section>
+
+      <AppStoreCTA ct={storeCt('pg', 'how_it_works', lang)} variant="general" lang={lang} />
     </main>
   )
 }
