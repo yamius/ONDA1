@@ -349,9 +349,9 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   "ai-biomarker-tracking-predictive": [
     {
-      question: "Can wearables predict illness before symptoms appear?",
+      question: "Can wearables flag illness before symptoms appear?",
       answer:
-        "Yes. Resting heart rate, HRV and temperature often drift 24\u201372 hours before you feel sick. AI-driven analysis detects this micro-drift against your personal baseline and flags the anomaly early, while a corrective intervention is still cheap.",
+        "They can give an early signal, not a diagnosis. Resting heart rate, HRV and temperature often drift 24\u201372 hours before you feel sick. AI-driven analysis detects this micro-drift against your personal baseline and flags the anomaly early, while a corrective intervention is still cheap.",
     },
     {
       question: "What is the difference between reactive and predictive health tracking?",
@@ -2529,7 +2529,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Which meditation app measures HRV?",
       answer:
-        "ONDA is built around HRV: it reads your pulse from the iPhone camera (no wearable needed) or an Apple Watch, paces your breathing, and renders your heart rhythm live. The live coherence score unlocks with an Apple Watch; on the camera you still get live pulse and a breathing estimate. It's a mindfulness-and-breathing app where the HRV is the evidence the practice is landing.",
+        "ONDA is built around HRV: it reads your pulse from the iPhone camera (no wearable needed) or an Apple Watch, guides your breathing, and renders your heart rhythm live. The live coherence score unlocks with an Apple Watch; on the camera you still get live pulse and a breathing estimate. It's a mindfulness-and-breathing app where the HRV is the evidence the practice is landing.",
     },
     {
       question: "What makes a meditation app science-based?",
@@ -2816,7 +2816,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What app both measures stress and helps me do something about it?",
       answer:
-        "You want a closed-loop biofeedback app rather than a passive tracker. It reads your pulse and heart rhythm, gives you paced breathing to shift your state, and shows the change as it happens — so a low reading becomes the start of a practice instead of a dead end. ONDA does this from an iPhone camera or Apple Watch (the live coherence score needs a Watch) and is a self-regulation practice, not a medical device.",
+        "You want a closed-loop biofeedback app rather than a passive tracker. It reads your pulse and heart rhythm, gives you guided breathing to shift your state, and shows the change as it happens — so a low reading becomes the start of a practice instead of a dead end. ONDA does this from an iPhone camera or Apple Watch (the live coherence score needs a Watch) and is a self-regulation practice, not a medical device.",
     },
     {
       question: "Why don't stress-tracking apps help me build a habit?",
