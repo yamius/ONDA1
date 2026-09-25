@@ -95,9 +95,9 @@
     "shame": "honte"
   },
   "own": {
-    "meta": "Vous l’avez nommée",
-    "title": "Moi et ma {{shade}}.",
-    "description": "Elle est là, et elle vous appartient.\nComment voulez-vous être avec elle maintenant ?"
+    "meta": "Vous l’avez nommé",
+    "title": "Moi et ce que je ressens : {{shade}}.",
+    "description": "C’est là, et cela vous appartient.\nComment voulez-vous être avec cela maintenant ?"
   },
   "action": {
     "be_with": "Être avec",
@@ -164,17 +164,17 @@
   },
   "be_with": {
     "meta": "Être avec",
-    "feeling_label": "ma {{shade}}",
+    "feeling_label": "{{shade}}",
     "self_label": "Je",
     "grow_self_cta": "Laisser le Soi grandir autour",
     "ease_cta": "L’alléger d’un cran",
     "describe_cta": "Décrire le ressenti",
     "ready_cta": "Quand vous êtes prêt",
     "stay_longer": "Rester plus longtemps · ou fermer",
-    "description_no_pick": "Elle vit en vous. Laissez-la monter, et laissez-la se poser d’elle-même.",
-    "description_with_pick": "Elle est {{word}}. Remarquée — cela suffit.",
-    "soak": "Votre {{shade}} est là — restez avec elle. Laissez-la vous emplir.",
-    "near": "Laissez-la être — rien ne presse.",
+    "description_no_pick": "Cela vit en vous. Laissez-le monter, et laissez-le se poser de lui-même.",
+    "description_with_pick": "L’émotion est {{word}}. Remarquée — cela suffit.",
+    "soak": "Ce que vous ressentez — {{shade}} — est là. Restez avec. Laissez-le vous emplir.",
+    "near": "Laissez faire — rien ne presse.",
     "soft": "Il y a quelque chose, même ténu — restez avec.",
     "camera_cta": "Connecter la caméra",
     "camera_title": "Voyez votre pouls répondre en direct",
@@ -195,7 +195,7 @@
     "numb": "engourdie"
   },
   "release": {
-    "title": "Vous l’avez nommée — et elle vous appartient.",
+    "title": "Vous l’avez nommé — et cela vous appartient.",
     "description": "C’est déjà suffisant. Vous savez quoi en faire — faites-le à votre manière, à votre rythme.",
     "close_cta": "Fermer"
   },

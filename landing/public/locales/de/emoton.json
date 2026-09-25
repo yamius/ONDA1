@@ -96,7 +96,7 @@
   },
   "own": {
     "meta": "Du hast es benannt",
-    "title": "Ich und meine {{shade}}.",
+    "title": "Ich und das, was ich fühle: {{shade}}.",
     "description": "Es ist da, und es gehört dir.\nWie willst du gerade damit sein?"
   },
   "action": {
@@ -164,7 +164,7 @@
   },
   "be_with": {
     "meta": "Damit sein",
-    "feeling_label": "meine {{shade}}",
+    "feeling_label": "{{shade}}",
     "self_label": "Ich",
     "grow_self_cta": "Das Selbst darum herum wachsen lassen",
     "ease_cta": "Eine Stufe leichter",
@@ -173,7 +173,7 @@
     "stay_longer": "Länger bleiben · oder schließen",
     "description_no_pick": "Es lebt in dir. Lass es aufsteigen, und lass es sich von selbst setzen.",
     "description_with_pick": "Es fühlt sich {{word}} an. Bemerkt — das reicht.",
-    "soak": "Deine {{shade}} ist da — bleib bei ihr. Lass sie dich erfüllen.",
+    "soak": "{{shade}} ist da — bleib dabei. Lass es dich erfüllen.",
     "near": "Lass es sein — keine Eile.",
     "soft": "Da ist etwas, so leise es auch ist — bleib dabei.",
     "camera_cta": "Kamera verbinden",
