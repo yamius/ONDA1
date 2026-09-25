@@ -536,6 +536,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep',
+    'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
