@@ -394,6 +394,9 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'cardiac-coherence-insomnia-sleep', publishOn: '2026-09-25' },
   { slug: 'bhastrika-pranayama-brain-anxiety', publishOn: '2026-09-25' },
   { slug: 'om-chanting-brain-vagus', publishOn: '2026-09-25' },
+  { slug: 'trataka-candle-gazing-focus', publishOn: '2026-09-25' },
+  { slug: 'sudarshan-kriya-yoga-breathing', publishOn: '2026-09-25' },
+  { slug: 'yoga-poses-heart-rate-blood-pressure', publishOn: '2026-09-25' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
