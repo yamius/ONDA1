@@ -1010,7 +1010,7 @@ export function ArticlePage() {
       <div className="mb-8 flex flex-col items-center justify-center gap-2 sm:flex-row">
         <button
           type="button"
-          className="w-[200px] border border-slate-700 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
+          className="min-w-[200px] whitespace-nowrap border border-slate-700 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
           onClick={() => {
             const next = !isCompleted
             setIsCompleted(next)
@@ -1024,7 +1024,7 @@ export function ArticlePage() {
         {ARTICLE_SLUG_TO_STACK_SECTION[article.slug] && (
           <a
             href={`/the-stack#${ARTICLE_SLUG_TO_STACK_SECTION[article.slug]}`}
-            className="w-[200px] border border-slate-700 bg-slate-900 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
+            className="min-w-[200px] whitespace-nowrap border border-slate-700 bg-slate-900 px-4 py-2 text-center font-mono text-xs transition-colors hover:border-emerald-500"
           >
             [ OPEN_SYSTEM_STACK ]
           </a>
