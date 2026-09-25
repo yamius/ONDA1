@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Plan du site — ONDA Life",
+    "description": "Plan complet du site ONDA Life — tous les articles, termes du glossaire, niveaux, parties et pages principales."
+  },
+  "title": "Plan du site",
+  "subtitle": "Toutes les pages d’onda-life.com",
+  "sections": {
+    "main": "Pages principales",
+    "glossary": "Glossaire",
+    "articles": "Articles",
+    "levelsParts": "Niveaux et parties",
+    "bio": "Bio OS"
+  },
+  "main": {
+    "home": "Accueil — ONDA Life, l’OS du biohacking",
+    "about": "À propos d’ONDA Life",
+    "philosophy": "Philosophie — le spectre intérieur d’ONDA Life",
+    "articles": "Articles sur le biohacking et l’optimisation humaine",
+    "glossary": "Glossaire des termes du biohacking et des neurosciences",
+    "stack": "The Stack — le système de protocoles",
+    "contact": "Contact — joindre l’équipe ONDA Life",
+    "bio": "Bio OS — mesure biométrique en direct"
+  },
+  "levelLabel": "Niveau {{n}} — {{name}}",
+  "bioRoot": "Bio OS — biométrie en temps réel"
+}

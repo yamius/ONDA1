@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "title": "Gefühlsrad — benenne, was du fühlst · Emoton",
+    "description": "Ein kostenloses interaktives Gefühlsrad. Benenne, was du gerade fühlst, und nimm dir einen stillen Moment, um damit zu sein — ohne Anmeldung, ohne Diagnose, ohne Ratschläge."
+  },
+  "page_title": "Gefühlsrad — benenne, was du fühlst · Emoton",
+  "seo": {
+    "h1": "Gefühlsrad: benenne, was du fühlst",
+    "intro_h2": "Was ist Emoton?",
+    "intro_p": "Emoton ist ein kostenloses interaktives Gefühlsrad — ein emotionaler Check-in, den du in weniger als einer Minute machen kannst. Berühre dein „Ich“, sieh, was gerade am lebendigsten ist, und wähle das Wort, das am nächsten dran ist. Keine Anmeldung, kein Konto, nichts wird gespeichert.",
+    "how_h2": "So benennst du, was du fühlst",
+    "how_p": "Nicht sicher, was du gerade fühlst? Fang grob an — wähle den Bereich, der am lautesten ist, dann die Schattierung, die am nächsten liegt. Das Benennen ist schon die ganze Übung: Ein Gefühl in Worte zu fassen, verändert bereits, wie es sich anfühlt.",
+    "bewith_h2": "Damit sein — nicht reparieren",
+    "bewith_p": "Wenn du es benannt hast, kannst du einfach mit dem Gefühl sein — es einen Moment lang da sein lassen, statt es zu reparieren oder wegzuschieben. So bleibst du bei deinen Gefühlen: nicht lösen, nur Gesellschaft leisten.",
+    "felt_h2": "Gefühlte Zustände, keine Diagnose",
+    "felt_p": "Emoton arbeitet mit gefühlten Zuständen, nicht mit Diagnosen. Es liest dich nie aus, bewertet oder etikettiert dich nicht — du benennst, was du fühlst, und das Tool hält nur den Raum. Wenn du mit einer Übung weitermachst, liest die Kamera nur den Puls, auf deinem Gerät.",
+    "faq_h2": "Häufige Fragen",
+    "faq": [
+      {
+        "q": "Was ist ein Gefühlsrad?",
+        "a": "Eine kreisförmige Landkarte der Emotionen, aus der du das Wort wählst, das deinem Gefühl am nächsten kommt."
+      },
+      {
+        "q": "Woher weiß ich, was ich fühle?",
+        "a": "Fang grob an: Wähle den Bereich, der gerade am lautesten ist, dann die nächstliegende Schattierung. Es muss nicht exakt sein."
+      },
+      {
+        "q": "Ist es kostenlos?",
+        "a": "Ja — kein Konto, keine Anmeldung, nichts wird gespeichert."
+      },
+      {
+        "q": "Analysiert oder diagnostiziert es meine Gefühle?",
+        "a": "Nein. Emoton liest dich nie aus, bewertet oder etikettiert dich nicht. Du benennst, was du fühlst; es hält nur den Raum."
+      },
+      {
+        "q": "Was bedeutet „damit sein“?",
+        "a": "Statt ein Gefühl zu reparieren oder wegzuschieben, lässt du es einen Moment da sein. Oft ist es genau das, worauf es gewartet hat."
+      },
+      {
+        "q": "Muss ich meine Kamera einschalten?",
+        "a": "Nur wenn du eine Übung wählst — und dann liest sie nur den Puls, auf deinem Gerät."
+      }
+    ],
+    "related_label": "Mehr von ONDA Life:",
+    "related_hrv": "Schneller HRV-Check",
+    "related_home": "Trainiere dein Nervensystem"
+  },
+  "presence": {
+    "title": "Da bist du.",
+    "description": "Nimm einen Atemzug. Wenn du bereit bist, berühre dein Ich und spür, was gerade am lebendigsten in dir ist.",
+    "cta": "Weiter"
+  },
+  "wheel": {
+    "prompt": "Was ist am lebendigsten?",
+    "shade_prompt": "Tippe auf die Schattierung, die am nächsten liegt"
+  },
+  "zone": {
+    "regulated": "Ruhig · präsent",
+    "expansive": "Freude · Aufschwung",
+    "fight": "Wut · Druck",
+    "flight": "Angst · Furcht",
+    "grief": "Traurigkeit · Trauer",
+    "freeze": "Taub · flach"
+  },
+  "shade": {
+    "serenity": "Gelassenheit",
+    "clarity": "Klarheit",
+    "fullness": "Fülle",
+    "grounded": "Geerdetsein",
+    "lightness": "Leichtigkeit",
+    "thrill": "Begeisterung",
+    "anticipation": "Vorfreude",
+    "warmth": "Wärme",
+    "aliveness": "Lebendigkeit",
+    "interest": "Interesse",
+    "irritation": "Gereiztheit",
+    "indignation": "Empörung",
+    "rage": "Zorn",
+    "hurt": "Kränkung",
+    "guilt": "Schuld",
+    "worry": "Sorge",
+    "tension": "Anspannung",
+    "wariness": "Vorsicht",
+    "turmoil": "Aufruhr",
+    "panic": "Panik",
+    "sorrow": "Kummer",
+    "melancholy": "Melancholie",
+    "loneliness": "Einsamkeit",
+    "despondency": "Mutlosigkeit",
+    "lostness": "Verlorenheit",
+    "detachment": "Distanz",
+    "numbness": "Taubheit",
+    "apathy": "Apathie",
+    "indifference": "Gleichgültigkeit",
+    "shame": "Scham"
+  },
+  "own": {
+    "meta": "Du hast es benannt",
+    "title": "Ich und das, was ich fühle: {{shade}}.",
+    "description": "Es ist da, und es gehört dir.\nWie willst du gerade damit sein?"
+  },
+  "action": {
+    "be_with": "Damit sein",
+    "know": "Ich weiß, was zu tun ist",
+    "practice": {
+      "regulated": "Vertiefen",
+      "expansive": "In Handlung umsetzen",
+      "fight": "Die Ladung abklingen lassen",
+      "flight": "Erden und ausatmen",
+      "freeze": "Sanft zurückkommen",
+      "grief": "Hindurchatmen"
+    }
+  },
+  "want": {
+    "calm_down": "Zur Ruhe kommen",
+    "ground": "Mich erden",
+    "gently_come_back": "Sanft zurückkommen",
+    "deepen": "Vertiefen",
+    "channel_action": "In Handlung umsetzen",
+    "be_with": "Damit sein",
+    "describe": "Das Gefühl beschreiben",
+    "set_boundary": "Eine Grenze setzen",
+    "live_it": "Es leben",
+    "nothing": "Nichts — mir geht’s gut",
+    "other": "Etwas anderes"
+  },
+  "freeze_move": {
+    "meta": "Eine kleine Bewegung",
+    "title": "Nur ein Strich.",
+    "description": "Noch kein Atemzug nötig. Zieh eine einzige Linie in den Kreis — irgendeine. Das reicht, um zurückzukommen.",
+    "stroke_prompt_idle": "hier ziehen",
+    "stroke_prompt_done": "da ist sie",
+    "cta": "Sanft zurückkommen",
+    "cancel": "Nicht jetzt"
+  },
+  "practice": {
+    "body_cocoon": "Körperkokon",
+    "body_cocoon_intent": "die Ladung beruhigen",
+    "earth_pulse": "Erdpuls",
+    "earth_pulse_intent": "zurück auf den Boden kommen",
+    "inner_spark": "Innerer Funke",
+    "inner_spark_intent": "eine sanfte Rückkehr",
+    "earth_breath": "Erdatem",
+    "earth_breath_intent": "die Ruhe vertiefen",
+    "light_inhale": "Leichter Atemzug",
+    "light_inhale_intent": "den Aufschwung tragen",
+    "camera_offer_title": "Sieh live, wie dein Puls reagiert",
+    "camera_offer_description": "Leg eine Fingerkuppe auf deine Kamera — die Rückkamera am Handy oder die Webcam am Laptop — und sieh, wie sich dein Puls mit dem Atem bewegt. Alles läuft nur auf deinem Gerät. Am Laptop drück sanft und nutze helles Licht (es gibt keinen Blitz).",
+    "camera_use_cta": "Kamera nutzen",
+    "camera_skip": "Ohne weitermachen",
+    "pacer_cue_breathe": "atmen",
+    "pacer_cue_rise": "heben",
+    "camera_status_reading": "Live — dein Puls reagiert",
+    "camera_status_requesting": "Kamera wird geöffnet …",
+    "camera_status_denied": "Kamera nicht verfügbar — folge stattdessen dem Atem.",
+    "camera_status_finger_on": "Finger erkannt — halt still …",
+    "camera_status_waiting": "Leg eine Fingerkuppe auf die Kameralinse",
+    "camera_bpm_label": "bpm",
+    "camera_bpm_no_reading": "— bpm",
+    "camera_no_flash_note": "Kein Blitz auf diesem Gerät — drück eine Fingerkuppe fest auf die Linse, bei hellem Licht.",
+    "camera_coherence_note": "Nur Puls — Kohärenz gibt es mit einer Apple Watch.",
+    "done_cta": "Fertig",
+    "upgrade_link": "In der App mit Apple Watch: präziser Puls + Kohärenz + der ganze Weg"
+  },
+  "be_with": {
+    "meta": "Damit sein",
+    "feeling_label": "{{shade}}",
+    "self_label": "Ich",
+    "grow_self_cta": "Das Selbst darum herum wachsen lassen",
+    "ease_cta": "Eine Stufe leichter",
+    "describe_cta": "Das Gefühl beschreiben",
+    "ready_cta": "Wenn du bereit bist",
+    "stay_longer": "Länger bleiben · oder schließen",
+    "description_no_pick": "Es lebt in dir. Lass es aufsteigen, und lass es sich von selbst setzen.",
+    "description_with_pick": "Es fühlt sich {{word}} an. Bemerkt — das reicht.",
+    "soak": "{{shade}} ist da — bleib dabei. Lass es dich erfüllen.",
+    "near": "Lass es sein — keine Eile.",
+    "soft": "Da ist etwas, so leise es auch ist — bleib dabei.",
+    "camera_cta": "Kamera verbinden",
+    "camera_title": "Sieh live, wie dein Puls reagiert",
+    "camera_hint": "Leg eine Fingerkuppe auf die Rückkamera und sieh, wie sich dein Puls mit dem Atem bewegt.",
+    "finish_cta": "Beenden",
+    "app_invite": "Oder mach in der App mit dem vollen Erlebnis weiter"
+  },
+  "quality": {
+    "heavy": "schwer",
+    "tight": "eng",
+    "hollow": "hohl",
+    "sharp": "scharf",
+    "warm": "warm",
+    "cold": "kalt",
+    "fluttery": "flatternd",
+    "dull": "dumpf",
+    "electric": "elektrisch",
+    "numb": "taub"
+  },
+  "release": {
+    "title": "Du hast es benannt — und es gehört dir.",
+    "description": "Das reicht schon. Du weißt, was du damit tun willst — mach es auf deine Art, in deinem Tempo.",
+    "close_cta": "Schließen"
+  },
+  "support": {
+    "title": "Das scheint gerade sehr viel zu sein.",
+    "description": "Es kann helfen, damit nicht allein zu sein. Mit jemandem zu sprechen ist ein starker Schritt, kein schwacher.",
+    "lifeline_title": "Krisenhilfe",
+    "lifeline_call": "Finde eine Hilfe-Hotline in deinem Land",
+    "lifeline_number": "findahelpline.com",
+    "lifeline_hours": "",
+    "lifeline_url": "https://findahelpline.com",
+    "close_cta": "Schließen"
+  },
+  "assimilation": {
+    "title": "Du bist dabeigeblieben.",
+    "description": "Du hast weitergeatmet, auch als es nicht leicht war. Genau diese Fähigkeit baust du auf — nimm sie mit.",
+    "close_cta": "Schließen",
+    "invite": "Setz deinen Weg in der App ONDA Life fort und lerne all deine Fähigkeiten kennen.",
+    "app_store": "Laden im App Store",
+    "google_play": "Jetzt bei Google Play"
+  },
+  "start_over": "neu beginnen"
+}

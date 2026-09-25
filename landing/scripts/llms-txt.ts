@@ -26,8 +26,8 @@ import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePa
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 
-type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh'
-const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh']
+type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh' | 'de' | 'fr'
+const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh', 'de', 'fr']
 
 interface ArticlesLocale {
   bodies?: Record<string, { title?: string; description?: string }>
@@ -42,6 +42,8 @@ const articlesByLang: Record<Lang, ArticlesLocale> = {
   ru: JSON.parse(readFileSync(join(localesDir, 'ru', 'articles.json'), 'utf-8')),
   uk: JSON.parse(readFileSync(join(localesDir, 'uk', 'articles.json'), 'utf-8')),
   zh: JSON.parse(readFileSync(join(localesDir, 'zh', 'articles.json'), 'utf-8')),
+  de: JSON.parse(readFileSync(join(localesDir, 'de', 'articles.json'), 'utf-8')),
+  fr: JSON.parse(readFileSync(join(localesDir, 'fr', 'articles.json'), 'utf-8')),
 }
 
 const ES_PILOT_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)

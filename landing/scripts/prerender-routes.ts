@@ -526,6 +526,10 @@ const ARTICLE_ROLLOUT_BATCH = 11
 const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
   { lang: 'uk', start: '2026-08-03' },
   { lang: 'zh', start: '2026-11-02' },
+  // DE/FR: native-quality launch — nothing drips on a date yet; articles go
+  // live only through ARTICLE_LOCALE_EARLY below.
+  { lang: 'de', start: '2099-01-01' },
+  { lang: 'fr', start: '2099-01-01' },
 ]
 /**
  * Hand-reviewed native translations released ahead of their locale's drip
@@ -536,6 +540,18 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep',
+    'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
+    'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
+    'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+  ],
+  de: [
+    'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
+    'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
+    'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
+    'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+  ],
+  fr: [
+    'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
     'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',

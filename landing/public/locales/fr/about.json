@@ -1,0 +1,55 @@
+{
+  "tag": "[ À PROPOS ]",
+  "title1": "Qu’est-ce qu’ONDA Life",
+  "intro1": "ONDA Life est une application de biofeedback VFC et de respiration guidée pour l’autorégulation physiologique en temps réel et l’entraînement du système nerveux. Autour de ce cœur s’organise un système plus large de pratiques de pleine conscience et de développement personnel pour la vie réelle :",
+  "introList": [
+    "des étapes de respiration, de corps et de méditation ;",
+    "des niveaux : du soutien du corps jusqu’aux états de conscience supérieurs ;",
+    "des formats courts de 1 à 12 minutes ;",
+    "une monnaie interne, l’OND, pour les pratiques et les missions."
+  ],
+  "intro2": "Le chemin : de la sensation corporelle — à la clarté, à l’inspiration et à la force.",
+  "disclaimer": "La partie d’ONDA fondée sur des preuves, c’est le biofeedback VFC et la respiration rythmée (en résonance) — voir la science derrière ONDA et ce qu’ONDA mesure. Le parcours ONDA — ses niveaux et son langage des états supérieurs — est un cadre expérientiel, pas une hiérarchie d’états biologiques cliniquement validés.",
+  "title2": "Comment ça marche",
+  "how1": "ONDA Life — des parcours (vagues et niveaux) faits de simples étapes quotidiennes.",
+  "howLead": "Vous apprenez à :",
+  "howList": [
+    "vous appuyer sur le corps comme source d’énergie ;",
+    "vivre les émotions comme un langage de connexion ;",
+    "utiliser l’esprit pour agir avec précision ;",
+    "raviver l’âme en soutenant les autres."
+  ],
+  "how2": "Chaque pratique — une respiration courte, une attention au corps, des micro-mouvements ou de la contemplation.",
+  "title3": "Ressources, récompenses, résultats",
+  "rewards1": "Nous fournissons des parcours, des conseils et du soutien. Pour les pratiques et les missions, vous gagnez des OND — une monnaie de jeu :",
+  "rewardsList": [
+    "les OND s’accumulent grâce à la régularité ;",
+    "à partir du niveau 3, ils peuvent être convertis en argent réel ;",
+    "les compétences des premiers niveaux sont la base de la suite."
+  ],
+  "rewards2": "Résultat : une présence stable, du calme, de la clarté et un appui intérieur dans la vie.",
+  "details": {
+    "heading": "ONDA Life est une pratique de conscience de soi et du corps",
+    "p1": "Connectez votre bracelet ou votre montre connectée dans les réglages et voyez vos constantes évoluer en temps réel pendant la pratique.",
+    "p2": "Plus vous réussissez — mesuré au temps de pratique et à l’amélioration de votre état —, plus vous gagnez d’OND. Connecter un capteur ou une montre augmente vos gains pour les pratiques terminées.",
+    "p3": "Lorsque vous terminez toutes les pratiques d’une partie avec plus de 40 % de réussite, vous débloquez le niveau suivant.",
+    "p4": "Au début de chaque partie, vous trouverez des indications générales avant les pratiques principales. À la fin, un accordage plus détaillé vous aide à évaluer votre état actuel.",
+    "p5": "Dans la fenêtre « Bilan émotionnel », vous pouvez découvrir votre état émotionnel actuel et faire une pratique adaptative.",
+    "p6": "Souvenez-vous : le système de niveaux d’ONDA est un voyage de prises de conscience — vous vous vivez comme une amibe, un poisson, un animal, un primate, un humain, une cellule cérébrale, un ADN et enfin un atome. Accordez à chaque étape l’attention qu’elle mérite, et votre chemin sera fluide et épanouissant.",
+    "goodLuck": "Bon voyage !"
+  },
+  "back": "← Retour à l’accueil",
+  "author": {
+    "heading": "La personne derrière ONDA Life",
+    "lead": "ONDA Life a été fondée par Yakiv Bilenko — architecte et psychologue.",
+    "p1": "Depuis plus de 20 ans, il conçoit des environnements physiques — maisons, bâtiments commerciaux et industriels, intérieurs et aménagement de territoires entiers. Depuis plus de 10 ans, il exerce en parallèle comme gestalt-thérapeute et coach, en construisant des programmes structurés pour restaurer les ressources mentales, physiques et émotionnelles des personnes.",
+    "p2": "Son travail se situe à la couture de ces deux domaines — la façon dont l’environnement autour d’une personne et l’environnement en elle se façonnent mutuellement. ONDA Life, c’est cette question devenue produit : un système pour travailler votre architecture intérieure avec la même intention qu’un architecte apporte à un bâtiment.",
+    "p3": "ONDA Life est une entreprise espagnole basée à Avilés. Ses protocoles et ses articles sont des outils éducatifs pour une pratique autonome, fondés sur la psychologie appliquée et la conception de systèmes — ni un avis médical ni un substitut à une prise en charge professionnelle.",
+    "linkedin": "Yakiv Bilenko sur LinkedIn →"
+  },
+  "meta": {
+    "title": "À propos d’ONDA Life — qui la conçoit et pourquoi",
+    "description": "Conçue par un fondateur-développeur et un conseiller scientifique docteur en physique et en neurosciences — un entraînement par biofeedback VFC, honnête sur ce qu’il peut et ne peut pas faire.",
+    "ogImageAlt": "ONDA Life — appli de biofeedback VFC. Respiration guidée avec retour en direct du rythme cardiaque."
+  }
+}

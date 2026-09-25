@@ -1,0 +1,63 @@
+{
+  "hub": {
+    "h1": "Tests von Biohacking-Tools",
+    "intro": "Unabhängige, kriterienbasierte Tests in zehn Kategorien von Biohacking-Hardware und -Software — HRV-Tracker, Schlaf-Apps und Klimasysteme, Vagusstimulatoren, CGMs, EEG-Headsets, Rotlichttherapie, Eisbäder, Saunen und Meditations-Apps. Jedes Gerät wird nach einem festen, öffentlichen Bewertungsschema bewertet — nicht nach Hype.",
+    "methodologyLink": "→ So bewerten wir (Methodik)"
+  },
+  "breadcrumb": {
+    "home": "Start",
+    "reviews": "Tests",
+    "methodology": "Methodik"
+  },
+  "methodology": {
+    "h1": "So bewertet ONDA Tools",
+    "intro": "Jeder Test auf ONDA ist eine einzelne, namentlich gekennzeichnete redaktionelle Bewertung — kein Durchschnitt aus der Masse und kein Algorithmus. Wir bewerten in zehn Biohacking-Kategorien mit kategoriespezifischen Schemata, jeweils gewichtet danach, was in dieser Kategorie wirklich zählt (HRV-Genauigkeit bei Trackern, Bestrahlungsstärke bei Rotlicht, Kühlleistung bei Eisbädern, Spektrum der Wärmequelle bei Saunen, Temperaturbereich bei Schlafsystemen). Diese Seite ist das feste Schema hinter den Bewertungen, damit du das Urteil beurteilen kannst.",
+    "scoreHeading": "Die Bewertung",
+    "scoreBody": "Jedes Tool erhält eine Gesamtnote von 0 bis 10 (eine Nachkommastelle). Sie ist der gewichtete Mittelwert der Kriterien unten — nie eine nach Gefühl gewählte runde Zahl. Ein einzelner Tester vergibt sie, daher wird sie als eine redaktionelle Bewertung veröffentlicht, nicht als Durchschnitt vieler.",
+    "criteriaHeading": "Bewertungskriterien — {{category}}",
+    "testHeading": "Praxistest vs. evidenzbasierte Bewertung",
+    "testBody": "Jeder Test trägt eines von zwei Labels. „Praxistest“ bedeutet, dass ONDA das Gerät selbst getragen und genutzt hat, mit angegebenem Testzeitraum. „Evidenzbasierte Bewertung“ bedeutet, dass das Tool anhand von Datenblättern und begutachteten Validierungsstudien bewertet wurde, die jeweils in den Quellen des Tests zitiert sind. Wir geben eine Bewertung nie als Praxistest aus.",
+    "independenceHeading": "Unabhängigkeit",
+    "independenceBody": "Kein Hersteller bezahlt für eine Platzierung oder eine Note. Produktlinks sind einfache Links zu offiziellen Websites, und ONDA erhält dafür keine Provision. Sollte sich das je ändern, werden Affiliate-Links auf der Seite klar gekennzeichnet und offengelegt.",
+    "selfReviewHeading": "Bewertet ONDA sich selbst?",
+    "selfReviewBody": "Nein. ONDA entwickelt eine App für HRV-Biofeedback und wird in diesen unabhängigen Tests nie bewertet — du findest hier kein ONDA-Produkt in einem Ranking. Wo wir ONDA mit anderen Apps vergleichen, geschieht das getrennt unter /compare, klar als ONDAs eigener Vergleich gekennzeichnet und vollständig aus den unabhängigen Rankings herausgehalten. Wir lassen uns lieber außen vor, als unsere eigenen Hausaufgaben zu benoten.",
+    "sourcesHeading": "Datenquellen",
+    "sourcesBody": "Die Bewertungen stützen sich auf drei Quellen: Herstellerangaben und -dokumentation, unabhängige Tests Dritter und veröffentlichte, begutachtete Validierungsliteratur. Preise und Verfügbarkeit gelten zum Datum des jeweiligen Tests und können sich ändern.",
+    "coiHeading": "Interessenkonflikte",
+    "coiBody": "ONDA verkauft, produziert oder vertreibt keines der hier getesteten Produkte und erhält keine Vergütung, kein Sponsoring, keine Geschenke und keine Gratisgeräte im Austausch für Berichterstattung oder eine Note. Hinter den Rankings stehen keine Herstellerbeziehungen. Das einzige Produkt, das ONDA herstellt — seine App —, ist bewusst von diesen Tests ausgeschlossen.",
+    "updatesHeading": "Wie oft sich Rankings ändern",
+    "updatesBody": "Jeder Test und jede Übersicht trägt ein Aktualisierungsdatum. Wir überarbeiten Noten und Rankings, wenn ein Flaggschiff erscheint, sich ein Preis oder die Verfügbarkeit deutlich ändert oder neue Evidenz auftaucht — nicht nach festem Zeitplan und nicht, um einem Kalender hinterherzulaufen. Wenn ein Produkt eingestellt oder zum Beispiel vom Verkauf ausgeschlossen wird, sagen wir das und passen das Ranking an.",
+    "authorHeading": "Wer die Tests schreibt",
+    "authorBody": "Die Tests schreibt Yakiv Bilenko, Gründer von ONDA Life.",
+    "authorLink": "Über den Autor"
+  },
+  "ui": {
+    "updated": "Aktualisiert",
+    "howWeTested": "So haben wir getestet:",
+    "pros": "Vorteile",
+    "cons": "Nachteile",
+    "price": "Preis:",
+    "asOf": "Stand",
+    "references": "Quellen",
+    "relatedReviews": "Verwandte Tests",
+    "allReviews": "← Alle Tests",
+    "visitSite": "Zur offiziellen Website von {{brand}} →",
+    "affiliateNote": "Affiliate-Link — ONDA erhält eventuell eine Provision. Das beeinflusst die Note nicht.",
+    "scoreBreakdown": "[ NOTEN_AUFSCHLÜSSELUNG ]",
+    "comparisonsHeading": "[ VERGLEICHE ]",
+    "comparisonTag": "[ VERGLEICH ]",
+    "topPicks": "[ TOP_EMPFEHLUNGEN ]",
+    "comparisonTable": "[ VERGLEICHSTABELLE ]",
+    "verdict": "Fazit",
+    "faq": "[ FAQ ]",
+    "product": "Produkt",
+    "overall": "Gesamt",
+    "metaReviewTitle": "{{name}} im Test — Note {{score}}/10"
+  },
+  "testStatus": {
+    "hands-on": "Praxistest",
+    "evidence-based": "Evidenzbasierte Bewertung"
+  },
+  "bodies": {},
+  "comparisons": {}
+}

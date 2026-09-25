@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Contacter ONDA Life | Assistance et communauté",
+    "description": "Questions, assistance ou collaboration — contactez l’équipe ONDA Life. Nous lisons chaque message et y répondons."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Contact"
+  },
+  "badge": "[ LIAISON NEURONALE ]",
+  "title": "Établir le contact direct",
+  "subtitle": "Questions, assistance ou collaboration — contactez l’équipe ONDA Life.",
+  "channelsTitle": "CANAUX DE CONTACT",
+  "emailLabel": "E-MAIL",
+  "communityLabel": "COMMUNAUTÉ",
+  "form": {
+    "name": "Nom",
+    "email": "E-mail",
+    "message": "Message",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "contact@exemple.fr",
+    "messagePlaceholder": "Transmettez votre demande…",
+    "submit": "[ ENVOYER LE PAQUET DE DONNÉES ]"
+  },
+  "back": "← Retour à l’accueil"
+}

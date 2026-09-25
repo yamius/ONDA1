@@ -889,7 +889,7 @@ export function ArticlePage() {
         {(() => {
           const d = ARTICLE_DATES[article.slug]
           if (!d) return <span />
-          const dateLocale = { en: 'en-US', es: 'es-ES', ru: 'ru-RU', uk: 'uk-UA', zh: 'zh-CN' }[lang] ?? 'en-US'
+          const dateLocale = { en: 'en-US', es: 'es-ES', ru: 'ru-RU', uk: 'uk-UA', zh: 'zh-CN', de: 'de-DE', fr: 'fr-FR' }[lang] ?? 'en-US'
           const label = new Date(d.modified).toLocaleDateString(dateLocale, {
             year: 'numeric', month: 'short', day: 'numeric',
           })

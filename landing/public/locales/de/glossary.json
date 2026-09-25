@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Glossar zu HRV, Atemarbeit und Neurowissenschaft | ONDA Life",
+    "description": "Eine Wissensbasis der Wissenschaft, auf der ONDA aufbaut — HRV, Vagusnerv, Resonanzatmung, autonome Regulation und Interozeption — plus die weiteren Begriffe aus Neurowissenschaft und Biohacking hinter dem ONDA-System."
+  },
+  "breadcrumb": {
+    "home": "Start",
+    "current": "Glossar"
+  },
+  "badge": "[ WISSENSBASIS ]",
+  "h1": "Glossar",
+  "subtitle": "Die Wissenschaft, auf der ONDA aufbaut — HRV, Vagusnerv, Resonanzatmung, autonome Regulation und Interozeption — plus die weiteren neurowissenschaftlichen Begriffe hinter dem ONDA-System. Wissenschaftliche Begriffe und ONDA-eigene Konzepte sind gekennzeichnet.",
+  "featuredHeader": "[ AUSGEWÄHLTE BEGRIFFE ]",
+  "searchPlaceholder": "Begriffe suchen …",
+  "allLabel": "Alle",
+  "noResults": "Keine Begriffe gefunden. Versuch eine andere Suche.",
+  "term": {
+    "relatedDeepDives": "VERTIEFENDE ARTIKEL",
+    "relatedTerms": "VERWANDTE BEGRIFFE",
+    "upgradeKnowledge": "Erweitere dein Wissen: Erfahre in unserem ausführlichen Leitfaden, wie du {{term}} optimierst.",
+    "backToGlossary": "← Zurück zum Glossar",
+    "exploreMore": "MEHR ENTDECKEN",
+    "links": {
+      "fullGlossary": "Vollständiges Glossar",
+      "allArticles": "Alle Artikel",
+      "bioOs": "Bio OS",
+      "theStack": "The Stack",
+      "home": "Start"
+    }
+  },
+  "bodies": {}
+}

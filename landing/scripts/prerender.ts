@@ -18,6 +18,7 @@ import i18n, {
   langFromPath,
   stripLangPrefix,
   localizedPathFor,
+  isPageLocalizedFor,
   metricPathFor,
   levelPathFor,
   parseMetricRoute,
@@ -166,7 +167,7 @@ for (const lang of SUPPORTED_LANGS) {
 
 /** Parse /<lang>/articles/<slug> or /articles/<slug> into {lang, slug}. */
 function parseArticleRoute(route: string): { lang: Lang; slug: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/articles\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/articles\/([^/]+)$/)
   if (!m) return null
   return { lang: ((m[1] as Lang) ?? 'en'), slug: m[2] }
 }
@@ -209,15 +210,15 @@ type ReviewKind = 'hub' | 'methodology' | 'review' | 'comparison' | 'headToHead'
 function parseReviewRoute(
   route: string,
 ): { lang: Lang; kind: ReviewKind; slug: string } | null {
-  let m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews$/)
+  let m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/reviews$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'hub', slug: '' }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/methodology$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/reviews\/methodology$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'methodology', slug: '' }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/compare\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/reviews\/compare\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'comparison', slug: m[2] }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/vs\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/reviews\/vs\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'headToHead', slug: m[2] }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/reviews\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/reviews\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'review', slug: m[2] }
   return null
 }
@@ -260,9 +261,9 @@ for (const lang of SUPPORTED_LANGS) {
 function parseGlossaryRoute(
   route: string,
 ): { lang: Lang; kind: 'index' | 'term'; slug: string } | null {
-  let m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/glossary$/)
+  let m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/glossary$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'index', slug: '' }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/glossary\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/glossary\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'term', slug: m[2] }
   return null
 }
@@ -346,6 +347,7 @@ function buildHreflangLinksForCustom(basePath: string, langs: Lang[]): string {
 function buildHreflangLinksFor(basePath: string): string {
   const tags: string[] = []
   for (const lang of SUPPORTED_LANGS) {
+    if (!isPageLocalizedFor(basePath, lang)) continue
     tags.push(`<link rel="alternate" hreflang="${lang}" href="${pageUrlFor(basePath, lang)}">`)
   }
   // x-default → EN version of this page (Google's recommended fallback).
@@ -399,6 +401,8 @@ const OG_LOCALE_MAP: Record<Lang, string> = {
   ru: 'ru_RU',
   uk: 'uk_UA',
   zh: 'zh_CN',
+  de: 'de_DE',
+  fr: 'fr_FR',
 }
 
 function escAttr(s: string): string {

@@ -4,7 +4,7 @@ import { ExperientialFrameworkNote } from '../components/ExperientialFrameworkNo
 import { useTranslation } from 'react-i18next'
 import { levelsData } from '../data/levels'
 import { GlossaryTooltip } from '../components/GlossaryTooltip'
-import { langFromPath, localizedPathFor, levelPathFor } from '../i18n'
+import { langFromPath, localizedPathFor, levelPathFor , partPathFor } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -138,7 +138,7 @@ export function LevelPage() {
                 {tPart.work}
               </p>
               <Link
-                to={`${lang === 'en' ? '' : '/' + lang}/part/${part.slug}`}
+                to={partPathFor(part.slug, lang)}
                 className="font-mono text-xs text-terminal-cyan transition-colors hover:text-terminal-cyan/80"
                 aria-label={t('ui.openProtocolAria', { label: tPart.label })}
                 title={t('ui.openProtocolTitle', { label: tPart.label, protocol: tPart.protocol })}

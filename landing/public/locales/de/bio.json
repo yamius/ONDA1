@@ -1,0 +1,198 @@
+{
+  "title": "Bio OS",
+  "subtitle": "Biometrische Analyse in Echtzeit — ganz ohne Wearable.",
+  "subtitle2": "Leg zum Start deinen Finger auf die Rückkamera.",
+  "tapStop": "tippen zum Stoppen",
+  "tapStart": "tippen zum Starten",
+  "fingerDetected": "✓ Finger erkannt",
+  "placeFinger": "Finger auf die Kamera legen →",
+  "backCameraHint": "Rückkamera · Linse mit dem Finger abdecken",
+  "lightHint": "Kamera Richtung Lichtquelle halten",
+  "cameraPrivacy": "Deine Kamera wird nur in deinem Browser genutzt, um deinen Puls zu schätzen — es werden keine Videos oder Daten hochgeladen oder gespeichert.",
+  "cameraPrivacyLink": "Wie wir mit Kameradaten umgehen",
+  "cameraDenied": "Kamerazugriff verweigert. Bitte erlaube die Kamera in den Browsereinstellungen.",
+  "main": {
+    "bpm": "BPM",
+    "br": "/min",
+    "stress": "Stress",
+    "energy": "Energie"
+  },
+  "sections": {
+    "advanced": "Erweiterte physiologische Werte",
+    "emotional": "Zustandsmuster (experimentell)",
+    "advancedTag": "Erweitert physiologisch",
+    "emotionalTag": "Emotionaler Zustand"
+  },
+  "rows": {
+    "hrv": {
+      "label": "HRV-Näherung",
+      "desc": "Variabilität der Herzfrequenz über die Zeit"
+    },
+    "csi": {
+      "label": "Kardialer Stabilitätsindex",
+      "desc": "wie gleichmäßig das Herz schlägt"
+    },
+    "recovery": {
+      "label": "Erholungsrate",
+      "desc": "wie schnell sich der Puls nach Stress normalisiert"
+    },
+    "trend": {
+      "label": "Trend der Herzfrequenz",
+      "desc": "Trend über 30–60 s"
+    },
+    "accel": {
+      "label": "Beschleunigung der Herzfrequenz",
+      "desc": "wie schnell der Puls steigt"
+    },
+    "alarm": {
+      "label": "Alarm / Anspannung",
+      "desc": "Puls steigt + Atmung steigt"
+    },
+    "relaxation": {
+      "label": "Entspannung / Ruhe",
+      "desc": "niedriger Puls + stabile Atmung"
+    },
+    "focus": {
+      "label": "Fokus / Konzentration",
+      "desc": "mittlerer Puls + geringe Variabilität"
+    },
+    "excitement": {
+      "label": "Aufregung",
+      "desc": "kurzer, steiler Pulsanstieg"
+    },
+    "fatigue": {
+      "label": "Müdigkeit",
+      "desc": "Puls über Baseline, Atmung↓, Energie↓"
+    },
+    "flow": {
+      "label": "Flow",
+      "desc": "Puls leicht über Baseline, stabile Atmung"
+    }
+  },
+  "status": {
+    "measuring": "Messung läuft … Ergebnisse aktualisieren sich etwa alle 2 s",
+    "waiting": "Warte auf Signal …",
+    "calibrating": "Echtzeitwerte. Baseline wird kalibriert …"
+  },
+  "ctaPrimary": {
+    "title": "Rund um die Uhr messen?",
+    "subtitle": "Verbinde eine Apple Watch für kontinuierliches Biofeedback.",
+    "button": "ONDA Life laden"
+  },
+  "descriptions": {
+    "heading": "Was die einzelnen Werte bedeuten",
+    "main": [
+      {
+        "title": "❤️ BPM — Herzfrequenz",
+        "text": "Die Zahl der Herzschläge pro Minute, gemessen am optischen Puls in deiner Fingerkuppe. Normaler Ruhebereich: 55–90 BPM. Ein erhöhter Wert kann auf Stress, körperliche Anstrengung oder Stimulanzien hinweisen.",
+        "key": "bpm"
+      },
+      {
+        "title": "🌬️ /min — Atemfrequenz",
+        "text": "Die Atemfrequenz, abgeleitet aus der langsamen Amplitudenmodulation des PPG-Signals. Normalbereich: 12–20 Atemzüge pro Minute. Höhere Werte deuten auf Stress oder Aktivität hin; niedrigere treten bei tiefer Entspannung auf.",
+        "key": "br"
+      },
+      {
+        "title": "⚡ Stress %",
+        "text": "Abgeleitet vom kardialen Stabilitätsindex. Mehr Unregelmäßigkeit der Herzfrequenzvariabilität → höherer Stresswert. Unter 30 % spricht für einen ruhigen Zustand; ab 60 % für akuten physiologischen Stress.",
+        "key": "stress"
+      },
+      {
+        "title": "🔋 Energie %",
+        "text": "Spiegelt die kardiovaskuläre Reserve wider: wie weit deine Herzfrequenz von ihrer oberen Grenze entfernt ist und wie stabil der Rhythmus ist. Höherer Wert = mehr physiologische Reserve. Sinkt bei Müdigkeit, hohem Puls oder anhaltendem Stress.",
+        "key": "energy"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "HRV-Näherung (RMSSD)",
+        "text": "Quadratischer Mittelwert der aufeinanderfolgenden Differenzen benachbarter RR-Intervalle, in Millisekunden. Spiegelt die Aktivität des parasympathischen Nervensystems wider. Höher = anpassungsfähigere autonome Regulation. Typischer Bereich per Kamera: 15–70 ms.",
+        "key": "hrv"
+      },
+      {
+        "title": "Kardialer Stabilitätsindex (CSI)",
+        "text": "Standardabweichung der RR-Intervalle geteilt durch das mittlere RR-Intervall. Misst die Gleichmäßigkeit des Rhythmus unabhängig von der Herzfrequenz. Niedrige Werte (0,03–0,10) zeigen einen sehr stabilen Rhythmus; Werte über 0,25 deuten auf unregelmäßige Schläge oder Messrauschen hin.",
+        "key": "csi"
+      },
+      {
+        "title": "Erholungsrate %",
+        "text": "Wie vollständig die Herzfrequenz nach dem höchsten gemessenen Schlag dieser Sitzung zu ihrem Mittelwert zurückgekehrt ist. 0 % = Puls noch am Höchstwert; 100 % = vollständig bis zur Baseline oder darunter erholt.",
+        "key": "recovery"
+      },
+      {
+        "title": "Trend der Herzfrequenz",
+        "text": "Steigung der linearen Regression der RR-Intervalle über das Messfenster. Negativ = die Herzfrequenz sinkt allmählich (Entspannungsreaktion). Positiv = der Puls beschleunigt sich (steigende Erregung oder Aktivität).",
+        "key": "slope"
+      },
+      {
+        "title": "Beschleunigung der Herzfrequenz",
+        "text": "Zweite Ableitung der RR-Intervalle — die Änderungsrate des Trends. Positiv = der Puls steigt schneller als zuvor. Negativ = die Änderung verlangsamt sich, auch wenn der Puls noch steigt.",
+        "key": "acceleration"
+      }
+    ],
+    "emotional": [
+      {
+        "title": "Alarm / Anspannung",
+        "text": "Kombination aus steigendem Puls und erhöhter Atemfrequenz. Hohe Werte deuten auf ein Kampf-oder-Flucht-Muster im autonomen Nervensystem hin.",
+        "key": "alarm"
+      },
+      {
+        "title": "Entspannung / Ruhe",
+        "text": "Kehrwert des CSI plus Energiereserve. Hoher Wert = geringe Unregelmäßigkeit der Herzfrequenzvariabilität, langsame stabile Atmung und reichlich kardiovaskulärer Spielraum — das Kennzeichen entspannter Wachheit.",
+        "key": "relaxation"
+      },
+      {
+        "title": "Fokus / Konzentration",
+        "text": "Mischung aus Energieniveau und umgekehrtem Stress. Erreicht den Höchstwert, wenn der Puls moderat, der Rhythmus stabil und der Stress niedrig ist — passend zu anhaltender Aufmerksamkeit ohne Übererregung.",
+        "key": "focus"
+      },
+      {
+        "title": "Aufregung",
+        "text": "Steigt mit einem Puls über der Ruhe-Baseline und einer höheren Atemfrequenz. Von Alarm unterscheidbar durch das Fehlen extremer Stresswerte — positive Erregung statt Bedrohungsreaktion.",
+        "key": "excitement"
+      },
+      {
+        "title": "Müdigkeit",
+        "text": "Steigt, wenn die Energie erschöpft und der Stress dauerhaft erhöht ist. Spiegelt die physiologischen Kosten anhaltender Anstrengung wider: niedrigere HRV, erhöhter Ruhepuls und langsame Erholung.",
+        "key": "fatigue"
+      },
+      {
+        "title": "Flow",
+        "text": "Der Zustand optimaler Leistung: hoher Fokus, moderate Entspannung und ein Puls leicht über Ruhe ohne Alarm. Tritt auf, wenn du ganz bei der Sache, aber nicht überfordert bist — die Zone.",
+        "key": "flow"
+      }
+    ],
+    "readMore": "mehr lesen →",
+    "footnote1": "Alle Werte werden aus dem optischen PPG-Signal der Gerätekamera abgeleitet.",
+    "footnote2": "Für medizinische Genauigkeit nutze ein zertifiziertes biometrisches Gerät."
+  },
+  "ctaDownload": {
+    "title": "Bereit zu messen?",
+    "subtitle": "Verbinde eine Apple Watch für kontinuierliches Biofeedback.",
+    "appStoreSup": "Laden im",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "ONDA Life im App Store laden",
+    "googlePlaySup": "Jetzt bei",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "ONDA Life bei Google Play laden"
+  },
+  "modal": {
+    "title": "ONDA Life beitreten",
+    "subtitle": "Wir legen gerade letzte Hand an! Hinterlass deine E-Mail, und wir schicken dir frühen Zugang.",
+    "placeholder": "Deine E-Mail",
+    "submit": "Frühen Zugang sichern",
+    "submitting": "Wird gesendet …",
+    "thankTitle": "Danke!",
+    "thankSubtitle": "Wir melden uns, sobald die App startklar ist.",
+    "ok": "OK",
+    "errorDuplicate": "Diese E-Mail ist bereits registriert.",
+    "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuch es später noch einmal.",
+    "close": "Schließen"
+  },
+  "meta": {
+    "title": "Bio OS — Live-Biometrie im Browser | ONDA Life",
+    "description": "Miss Herzfrequenz, Stress, Energie und HRV direkt im Browser — ohne Wearable. Leg deinen Finger auf die Kamera und erhalte eine biometrische Analyse in Echtzeit.",
+    "ogImageAlt": "ONDA Life Bio OS — Live-Biometrie im Browser über die Gerätekamera."
+  },
+  "emotionalDisclaimer": "Grobe, experimentelle Muster, abgeleitet aus Veränderungen von Puls und Atmung bei einer einzigen Kameramessung — Richtungshinweise, keine Emotionserkennung und keine Messung."
+}

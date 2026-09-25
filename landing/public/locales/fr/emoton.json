@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "title": "Roue des émotions — nommez ce que vous ressentez · Emoton",
+    "description": "Une roue des émotions interactive et gratuite. Nommez ce que vous ressentez maintenant, puis prenez un moment calme pour être avec — sans inscription, sans diagnostic, sans conseil."
+  },
+  "page_title": "Roue des émotions — nommez ce que vous ressentez · Emoton",
+  "seo": {
+    "h1": "Roue des émotions : nommez ce que vous ressentez",
+    "intro_h2": "Qu’est-ce qu’Emoton ?",
+    "intro_p": "Emoton est une roue des émotions interactive et gratuite — un point sur vos émotions que vous pouvez faire en moins d’une minute. Touchez votre « Je », voyez ce qui est le plus vivant en ce moment et choisissez le mot qui s’en rapproche le plus. Sans inscription, sans compte, rien n’est enregistré.",
+    "how_h2": "Comment nommer ce que vous ressentez",
+    "how_p": "Vous ne savez pas trop ce que vous ressentez ? Commencez large — choisissez la zone la plus présente, puis la nuance la plus proche. Nommer votre émotion, c’est toute la pratique : mettre un ressenti en mots change déjà la façon dont il se vit.",
+    "bewith_h2": "Être avec — pas réparer",
+    "bewith_p": "Une fois l’émotion nommée, vous pouvez simplement être avec elle — la laisser là un instant au lieu de la réparer ou de la repousser. C’est ainsi que l’on reste avec ses émotions : sans résoudre, juste en leur tenant compagnie.",
+    "felt_h2": "Des états ressentis, pas un diagnostic",
+    "felt_p": "Emoton travaille avec des états ressentis, pas avec des diagnostics. Il ne vous lit pas, ne vous note pas et ne vous étiquette pas — vous nommez ce que vous ressentez, et l’outil tient simplement l’espace. Si vous poursuivez avec une pratique, la caméra ne lit que le pouls, sur votre appareil.",
+    "faq_h2": "Les questions que l’on se pose",
+    "faq": [
+      {
+        "q": "Qu’est-ce qu’une roue des émotions ?",
+        "a": "Une carte circulaire des émotions dans laquelle vous choisissez le mot le plus proche de ce que vous ressentez."
+      },
+      {
+        "q": "Comment savoir ce que je ressens ?",
+        "a": "Commencez large : choisissez la zone la plus présente en ce moment, puis la nuance la plus proche. Pas besoin d’être exact."
+      },
+      {
+        "q": "Est-ce gratuit ?",
+        "a": "Oui — sans compte, sans inscription, rien n’est enregistré."
+      },
+      {
+        "q": "Est-ce que cela analyse ou diagnostique mes émotions ?",
+        "a": "Non. Emoton ne vous lit pas, ne vous note pas et ne vous étiquette pas. Vous nommez ce que vous ressentez ; il tient simplement l’espace."
+      },
+      {
+        "q": "Que veut dire « être avec » ?",
+        "a": "Au lieu de réparer ou de repousser une émotion, vous la laissez là un instant. Souvent, c’est ce qu’elle attendait."
+      },
+      {
+        "q": "Dois-je activer ma caméra ?",
+        "a": "Seulement si vous choisissez une pratique — et elle ne lit que le pouls, sur votre appareil."
+      }
+    ],
+    "related_label": "Plus d’ONDA Life :",
+    "related_hrv": "Test VFC rapide",
+    "related_home": "Entraînez votre système nerveux"
+  },
+  "presence": {
+    "title": "Vous êtes là.",
+    "description": "Prenez une respiration. Quand vous êtes prêt, touchez votre Je et sentez ce qui est le plus vivant en vous en ce moment.",
+    "cta": "Continuer"
+  },
+  "wheel": {
+    "prompt": "Qu’est-ce qui est le plus vivant ?",
+    "shade_prompt": "Touchez la nuance la plus proche"
+  },
+  "zone": {
+    "regulated": "Calme · présent",
+    "expansive": "Joie · élan",
+    "fight": "Colère · pression",
+    "flight": "Anxiété · peur",
+    "grief": "Tristesse · chagrin",
+    "freeze": "Engourdi · éteint"
+  },
+  "shade": {
+    "serenity": "sérénité",
+    "clarity": "clarté",
+    "fullness": "plénitude",
+    "grounded": "ancrage",
+    "lightness": "légèreté",
+    "thrill": "exaltation",
+    "anticipation": "impatience",
+    "warmth": "chaleur",
+    "aliveness": "vitalité",
+    "interest": "intérêt",
+    "irritation": "irritation",
+    "indignation": "indignation",
+    "rage": "rage",
+    "hurt": "blessure",
+    "guilt": "culpabilité",
+    "worry": "inquiétude",
+    "tension": "tension",
+    "wariness": "méfiance",
+    "turmoil": "agitation",
+    "panic": "panique",
+    "sorrow": "peine",
+    "melancholy": "mélancolie",
+    "loneliness": "solitude",
+    "despondency": "découragement",
+    "lostness": "égarement",
+    "detachment": "détachement",
+    "numbness": "engourdissement",
+    "apathy": "apathie",
+    "indifference": "indifférence",
+    "shame": "honte"
+  },
+  "own": {
+    "meta": "Vous l’avez nommé",
+    "title": "Moi et ce que je ressens : {{shade}}.",
+    "description": "C’est là, et cela vous appartient.\nComment voulez-vous être avec cela maintenant ?"
+  },
+  "action": {
+    "be_with": "Être avec",
+    "know": "Je sais quoi faire",
+    "practice": {
+      "regulated": "L’approfondir",
+      "expansive": "La transformer en action",
+      "fight": "Laisser retomber la charge",
+      "flight": "S’ancrer et expirer",
+      "freeze": "Revenir en douceur",
+      "grief": "Respirer à travers"
+    }
+  },
+  "want": {
+    "calm_down": "Me calmer",
+    "ground": "M’ancrer",
+    "gently_come_back": "Revenir en douceur",
+    "deepen": "L’approfondir",
+    "channel_action": "La transformer en action",
+    "be_with": "Être avec",
+    "describe": "Décrire le ressenti",
+    "set_boundary": "Poser une limite",
+    "live_it": "La vivre",
+    "nothing": "Rien — ça va",
+    "other": "Autre chose"
+  },
+  "freeze_move": {
+    "meta": "Un petit mouvement",
+    "title": "Juste un trait.",
+    "description": "Pas besoin de respirer tout de suite. Tracez une seule ligne dans le cercle — n’importe laquelle. Cela suffit pour commencer à revenir.",
+    "stroke_prompt_idle": "glissez ici",
+    "stroke_prompt_done": "la voilà",
+    "cta": "Revenir en douceur",
+    "cancel": "Pas maintenant"
+  },
+  "practice": {
+    "body_cocoon": "Cocon du corps",
+    "body_cocoon_intent": "apaiser la charge",
+    "earth_pulse": "Pouls de la terre",
+    "earth_pulse_intent": "revenir au sol",
+    "inner_spark": "Étincelle intérieure",
+    "inner_spark_intent": "un retour en douceur",
+    "earth_breath": "Souffle de la terre",
+    "earth_breath_intent": "approfondir le calme",
+    "light_inhale": "Inspiration légère",
+    "light_inhale_intent": "porter l’élan",
+    "camera_offer_title": "Voyez votre pouls répondre — en direct",
+    "camera_offer_description": "Posez le bout d’un doigt sur votre caméra — la caméra arrière d’un téléphone ou la webcam d’un ordinateur — et regardez votre pouls suivre la respiration. Tout se passe sur votre appareil. Sur un ordinateur, appuyez doucement et utilisez une lumière vive (il n’y a pas de flash).",
+    "camera_use_cta": "Utiliser la caméra",
+    "camera_skip": "Continuer sans",
+    "pacer_cue_breathe": "respirez",
+    "pacer_cue_rise": "montez",
+    "camera_status_reading": "En direct — votre pouls répond",
+    "camera_status_requesting": "Ouverture de la caméra…",
+    "camera_status_denied": "Caméra indisponible — suivez plutôt la respiration.",
+    "camera_status_finger_on": "Doigt détecté — ne bougez plus…",
+    "camera_status_waiting": "Posez le bout d’un doigt sur l’objectif",
+    "camera_bpm_label": "bpm",
+    "camera_bpm_no_reading": "— bpm",
+    "camera_no_flash_note": "Pas de flash sur cet appareil — appuyez fermement le bout d’un doigt sur l’objectif, sous une lumière vive.",
+    "camera_coherence_note": "Pouls uniquement — la cohérence se débloque avec une Apple Watch.",
+    "done_cta": "Terminé",
+    "upgrade_link": "Dans l’appli avec une Apple Watch : pouls précis + cohérence + tout le parcours"
+  },
+  "be_with": {
+    "meta": "Être avec",
+    "feeling_label": "{{shade}}",
+    "self_label": "Je",
+    "grow_self_cta": "Laisser le Soi grandir autour",
+    "ease_cta": "L’alléger d’un cran",
+    "describe_cta": "Décrire le ressenti",
+    "ready_cta": "Quand vous êtes prêt",
+    "stay_longer": "Rester plus longtemps · ou fermer",
+    "description_no_pick": "Cela vit en vous. Laissez-le monter, et laissez-le se poser de lui-même.",
+    "description_with_pick": "L’émotion est {{word}}. Remarquée — cela suffit.",
+    "soak": "Ce que vous ressentez — {{shade}} — est là. Restez avec. Laissez-le vous emplir.",
+    "near": "Laissez faire — rien ne presse.",
+    "soft": "Il y a quelque chose, même ténu — restez avec.",
+    "camera_cta": "Connecter la caméra",
+    "camera_title": "Voyez votre pouls répondre en direct",
+    "camera_hint": "Posez le bout d’un doigt sur la caméra arrière et regardez votre pouls suivre votre respiration.",
+    "finish_cta": "Terminer",
+    "app_invite": "Ou continuez dans l’appli avec l’expérience complète"
+  },
+  "quality": {
+    "heavy": "lourde",
+    "tight": "serrée",
+    "hollow": "creuse",
+    "sharp": "vive",
+    "warm": "chaude",
+    "cold": "froide",
+    "fluttery": "papillonnante",
+    "dull": "sourde",
+    "electric": "électrique",
+    "numb": "engourdie"
+  },
+  "release": {
+    "title": "Vous l’avez nommé — et cela vous appartient.",
+    "description": "C’est déjà suffisant. Vous savez quoi en faire — faites-le à votre manière, à votre rythme.",
+    "close_cta": "Fermer"
+  },
+  "support": {
+    "title": "Cela semble beaucoup en ce moment.",
+    "description": "Cela peut aider de ne pas rester seul avec ça. Parler à quelqu’un est un pas courageux, pas une faiblesse.",
+    "lifeline_title": "Aide en situation de crise",
+    "lifeline_call": "Trouvez une ligne d’écoute dans votre pays",
+    "lifeline_number": "findahelpline.com",
+    "lifeline_hours": "",
+    "lifeline_url": "https://findahelpline.com",
+    "close_cta": "Fermer"
+  },
+  "assimilation": {
+    "title": "Vous êtes resté avec.",
+    "description": "Vous avez respiré même quand ce n’était pas facile. C’est cette capacité que vous construisez — emportez-la avec vous.",
+    "close_cta": "Fermer",
+    "invite": "Poursuivez votre parcours dans l’appli ONDA Life et découvrez toutes vos capacités.",
+    "app_store": "Télécharger dans l’App Store",
+    "google_play": "Disponible sur Google Play"
+  },
+  "start_over": "recommencer"
+}

@@ -1,0 +1,198 @@
+{
+  "title": "Bio OS",
+  "subtitle": "Analyse biométrique en temps réel — sans objet connecté.",
+  "subtitle2": "Posez votre doigt sur la caméra arrière pour commencer.",
+  "tapStop": "touchez pour arrêter",
+  "tapStart": "touchez pour démarrer",
+  "fingerDetected": "✓ Doigt détecté",
+  "placeFinger": "Posez le doigt sur la caméra →",
+  "backCameraHint": "Caméra arrière · couvrez l’objectif avec le doigt",
+  "lightHint": "Orientez la caméra vers une source de lumière",
+  "cameraPrivacy": "Votre caméra n’est utilisée que dans votre navigateur pour estimer votre pouls — aucune vidéo ni donnée n’est envoyée ni conservée.",
+  "cameraPrivacyLink": "Comment nous traitons les données de la caméra",
+  "cameraDenied": "Accès à la caméra refusé. Autorisez la caméra dans les réglages du navigateur.",
+  "main": {
+    "bpm": "BPM",
+    "br": "/min",
+    "stress": "Stress",
+    "energy": "Énergie"
+  },
+  "sections": {
+    "advanced": "Mesures physiologiques avancées",
+    "emotional": "Profils d’état (expérimental)",
+    "advancedTag": "Physiologie avancée",
+    "emotionalTag": "État émotionnel"
+  },
+  "rows": {
+    "hrv": {
+      "label": "Approximation de la VFC",
+      "desc": "variabilité de la fréquence cardiaque dans le temps"
+    },
+    "csi": {
+      "label": "Indice de stabilité cardiaque",
+      "desc": "la régularité des battements du cœur"
+    },
+    "recovery": {
+      "label": "Taux de récupération",
+      "desc": "vitesse de normalisation du pouls après un stress"
+    },
+    "trend": {
+      "label": "Tendance du pouls",
+      "desc": "tendance sur 30 à 60 s"
+    },
+    "accel": {
+      "label": "Accélération du pouls",
+      "desc": "la vitesse à laquelle le pouls monte"
+    },
+    "alarm": {
+      "label": "Alarme / Anxiété",
+      "desc": "pouls en hausse + respiration en hausse"
+    },
+    "relaxation": {
+      "label": "Détente / Calme",
+      "desc": "pouls bas + respiration stable"
+    },
+    "focus": {
+      "label": "Concentration",
+      "desc": "pouls moyen + faible variabilité"
+    },
+    "excitement": {
+      "label": "Excitation",
+      "desc": "hausse brusque du pouls"
+    },
+    "fatigue": {
+      "label": "Fatigue",
+      "desc": "pouls au-dessus de la base, respiration↓, énergie↓"
+    },
+    "flow": {
+      "label": "Flow",
+      "desc": "pouls légèrement au-dessus de la base, respiration stable"
+    }
+  },
+  "status": {
+    "measuring": "Mesure en cours… résultats mis à jour toutes les ~2 s",
+    "waiting": "En attente du signal…",
+    "calibrating": "Mesures en temps réel. Calibrage de la ligne de base…"
+  },
+  "ctaPrimary": {
+    "title": "Envie d’un suivi en continu ?",
+    "subtitle": "Connectez une Apple Watch pour un biofeedback continu.",
+    "button": "Télécharger ONDA Life"
+  },
+  "descriptions": {
+    "heading": "Ce que signifie chaque mesure",
+    "main": [
+      {
+        "title": "❤️ BPM — fréquence cardiaque",
+        "text": "Le nombre de battements par minute, mesuré à partir du pouls optique au bout de votre doigt. Plage normale au repos : 55 à 90 BPM. Une valeur élevée peut signaler du stress, un effort physique ou la prise d’excitants.",
+        "key": "bpm"
+      },
+      {
+        "title": "🌬️ /min — fréquence respiratoire",
+        "text": "La fréquence respiratoire, déduite de la lente modulation d’amplitude du signal PPG. Plage normale : 12 à 20 respirations par minute. Des valeurs plus hautes indiquent du stress ou une activité physique ; des valeurs plus basses apparaissent en relaxation profonde.",
+        "key": "br"
+      },
+      {
+        "title": "⚡ Stress %",
+        "text": "Déduit de l’indice de stabilité cardiaque. Plus l’irrégularité de la variabilité cardiaque est forte, plus le score de stress est élevé. Moins de 30 % indique un état calme ; 60 % et plus suggère un stress physiologique aigu.",
+        "key": "stress"
+      },
+      {
+        "title": "🔋 Énergie %",
+        "text": "Reflète la réserve cardiovasculaire : l’écart entre votre fréquence cardiaque et son plafond élevé, et la stabilité du rythme. Score plus élevé = plus de marge physiologique. Diminue avec la fatigue, un pouls élevé ou un stress prolongé.",
+        "key": "energy"
+      }
+    ],
+    "advanced": [
+      {
+        "title": "Approximation de la VFC (RMSSD)",
+        "text": "Racine carrée de la moyenne des carrés des différences successives entre intervalles RR adjacents, en millisecondes. Reflète l’activité du système nerveux parasympathique. Plus élevée = régulation autonome plus adaptative. Plage typique mesurée par caméra : 15 à 70 ms.",
+        "key": "hrv"
+      },
+      {
+        "title": "Indice de stabilité cardiaque (ISC)",
+        "text": "Écart-type des intervalles RR divisé par l’intervalle RR moyen. Mesure la régularité du rythme indépendamment de la fréquence cardiaque. Des valeurs basses (0,03–0,10) indiquent un rythme très stable ; au-delà de 0,25, on suspecte des battements irréguliers ou du bruit de mesure.",
+        "key": "csi"
+      },
+      {
+        "title": "Taux de récupération %",
+        "text": "Dans quelle mesure la fréquence cardiaque est revenue vers sa moyenne après le battement le plus élevé de la séance. 0 % = pouls encore au maximum ; 100 % = entièrement revenu à la base ou en dessous.",
+        "key": "recovery"
+      },
+      {
+        "title": "Tendance du pouls",
+        "text": "Pente de la régression linéaire des intervalles RR sur la fenêtre de mesure. Négative = le cœur ralentit progressivement (réponse de détente). Positive = le pouls s’accélère (éveil ou activité en hausse).",
+        "key": "slope"
+      },
+      {
+        "title": "Accélération du pouls",
+        "text": "Dérivée seconde des intervalles RR — la vitesse de variation de la tendance. Positive = le pouls s’accélère plus vite qu’avant. Négative = la variation ralentit, même si le pouls monte encore.",
+        "key": "acceleration"
+      }
+    ],
+    "emotional": [
+      {
+        "title": "Alarme / Anxiété",
+        "text": "Combinaison d’un pouls en hausse et d’une fréquence respiratoire élevée. Des valeurs hautes évoquent un profil d’activation « combat ou fuite » du système nerveux autonome.",
+        "key": "alarm"
+      },
+      {
+        "title": "Détente / Calme",
+        "text": "Inverse de l’ISC plus la réserve d’énergie. Score élevé = faible irrégularité de la variabilité cardiaque, respiration lente et stable, et marge cardiovasculaire confortable — la signature d’une vigilance détendue.",
+        "key": "relaxation"
+      },
+      {
+        "title": "Concentration",
+        "text": "Mélange du niveau d’énergie et de l’inverse du stress. Culmine quand le pouls est modéré, le rythme stable et le stress bas — compatible avec un effort d’attention soutenu sans surexcitation.",
+        "key": "focus"
+      },
+      {
+        "title": "Excitation",
+        "text": "Augmente avec un pouls au-dessus de la base de repos et une respiration plus rapide. Se distingue de l’alarme par l’absence de scores de stress extrêmes — c’est un éveil positif plutôt qu’une réponse à une menace.",
+        "key": "excitement"
+      },
+      {
+        "title": "Fatigue",
+        "text": "Augmente quand l’énergie est épuisée et que le stress reste élevé. Reflète le coût physiologique d’un effort prolongé : VFC plus basse, pouls de repos élevé et récupération lente.",
+        "key": "fatigue"
+      },
+      {
+        "title": "Flow",
+        "text": "L’état de performance optimale : forte concentration, détente modérée et pouls légèrement au-dessus du repos, sans alarme. Apparaît quand vous êtes pleinement engagé sans être submergé — la « zone ».",
+        "key": "flow"
+      }
+    ],
+    "readMore": "en savoir plus →",
+    "footnote1": "Toutes les mesures sont déduites du signal optique PPG capté par la caméra de l’appareil.",
+    "footnote2": "Pour une précision médicale, utilisez un appareil biométrique certifié."
+  },
+  "ctaDownload": {
+    "title": "Prêt à mesurer ?",
+    "subtitle": "Connectez une Apple Watch pour un biofeedback continu.",
+    "appStoreSup": "Télécharger dans l’",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "Télécharger ONDA Life sur l’App Store",
+    "googlePlaySup": "Disponible sur",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "Télécharger ONDA Life sur Google Play"
+  },
+  "modal": {
+    "title": "Rejoindre ONDA Life",
+    "subtitle": "Nous peaufinons les derniers détails ! Laissez votre e-mail et nous vous enverrons un accès anticipé.",
+    "placeholder": "Votre e-mail",
+    "submit": "Obtenir l’accès anticipé",
+    "submitting": "Envoi…",
+    "thankTitle": "Merci !",
+    "thankSubtitle": "Nous vous contacterons dès que l’appli sera prête.",
+    "ok": "OK",
+    "errorDuplicate": "Cet e-mail est déjà enregistré.",
+    "errorGeneric": "Une erreur s’est produite. Veuillez réessayer plus tard.",
+    "close": "Fermer"
+  },
+  "meta": {
+    "title": "Bio OS — biométrie en direct dans le navigateur | ONDA Life",
+    "description": "Mesurez votre fréquence cardiaque, votre stress, votre énergie et votre VFC directement dans le navigateur — sans objet connecté. Posez le doigt sur la caméra pour une analyse en temps réel.",
+    "ogImageAlt": "ONDA Life Bio OS — biométrie en direct dans le navigateur via la caméra de l’appareil."
+  },
+  "emotionalDisclaimer": "Profils approximatifs et expérimentaux, déduits des variations du pouls et de la respiration sur une seule mesure par caméra — des indications de tendance, pas une détection des émotions ni une mesure."
+}

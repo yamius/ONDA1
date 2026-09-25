@@ -44,7 +44,7 @@ export function storeUrl(type: CtType, slug = '', lang = 'en'): string {
 
 /** Coarse page type from a pathname — used for the header/footer Download ct. */
 export function pageTypeFromPath(pathname: string): string {
-  const p = pathname.replace(/^\/(es|ru|uk|zh)(?=\/|$)/, '').replace(/\/+$/, '') || '/'
+  const p = pathname.replace(/^\/(es|ru|uk|zh|de|fr)(?=\/|$)/, '').replace(/\/+$/, '') || '/'
   if (p === '/') return 'home'
   if (p.startsWith('/articles/topic/')) return 'hub'
   if (p === '/articles') return 'library'

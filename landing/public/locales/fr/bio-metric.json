@@ -1,0 +1,284 @@
+{
+  "ui": {
+    "breadcrumbHome": "Accueil",
+    "breadcrumbBio": "Bio OS",
+    "ondaPrinciple": "Le principe ONDA",
+    "back": "← Retour à Bio OS",
+    "ctaReady": "Prêt à mesurer ?",
+    "ctaSubtitle": "Connectez une Apple Watch pour un biofeedback continu.",
+    "appStoreSup": "Télécharger dans l’",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "Télécharger ONDA Life sur l’App Store",
+    "googlePlaySup": "Disponible sur",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "Télécharger ONDA Life sur Google Play",
+    "metaDescriptionTpl": "{{title}} — découvrez ce que signifie cette mesure biométrique, comment interpréter votre score et comment l’utiliser dans votre pratique quotidienne.",
+    "modal": {
+      "title": "Rejoindre ONDA Life",
+      "subtitle": "Nous peaufinons les derniers détails ! Laissez votre e-mail et nous vous enverrons un accès anticipé.",
+      "placeholder": "Votre e-mail",
+      "submit": "Obtenir l’accès anticipé",
+      "submitting": "Envoi…",
+      "thankTitle": "Merci !",
+      "thankSubtitle": "Nous vous contacterons dès que l’appli sera prête.",
+      "ok": "OK",
+      "errorDuplicate": "Cet e-mail est déjà enregistré.",
+      "errorGeneric": "Une erreur s’est produite. Veuillez réessayer plus tard.",
+      "close": "Fermer"
+    },
+    "measurementDisclaimer": "Estimé à partir d’une seule mesure par caméra (PPG) — une estimation informative, pas une mesure médicale. Les libellés d’état (Flow, Concentration, Alarme…) sont des profils approximatifs et expérimentaux, pas une détection des émotions."
+  },
+  "metrics": {
+    "flow": {
+      "title": "Flow : l’état de résonance biologique",
+      "shortTitle": "🌊 Flow",
+      "sections": [
+        { "heading": "Le point optimal", "body": "Le flow est le Graal de la performance. Chez ONDA, nous estimons un profil proche du flow lorsque le signal suggère une synchronisation : une attention élevée associée à un calme intérieur profond. C’est le moment où vous êtes entièrement absorbé par une tâche, sans que votre corps en paie un prix excessif." },
+        { "heading": "Ce que signifient les valeurs", "bullets": [
+          { "label": "0–25 % · Déconnecté", "text": "Les conditions du flow sont absentes — l’indice d’alarme est élevé, l’énergie est basse ou l’attention est dispersée. Tenter un travail de fond ici, c’est lutter contre la biologie." },
+          { "label": "25–50 % · En approche", "text": "Le système se met en route vers la cohérence. La concentration commence à s’installer, le stress diminue. Un court exercice de respiration ou une intention claire peut vous faire entrer dans la zone." },
+          { "label": "50–75 % · Dans la zone", "text": "Votre signal correspond à un profil proche du flow : pouls modéré, rythme stable, peu d’alarme. Vous êtes pleinement capable d’un travail soutenu et de qualité, avec un minimum de friction mentale." },
+          { "label": "75–100 % · Résonance profonde", "text": "Rare et optimal. Les trois conditions sont parfaitement alignées — activation, stabilité, silence. C’est l’état où les heures passent comme des minutes et où le résultat dépasse largement l’effort. Protégez-le." }
+        ] },
+        { "heading": "La formule du flow", "body": "Contrairement à un état de travail ordinaire, le flow chez ONDA possède une signature biométrique propre :", "bullets": [
+          { "label": "Activation modérée", "text": "Votre fréquence cardiaque est légèrement au-dessus de votre base de repos. Cela donne au cerveau l’élan et les ressources nécessaires sans basculer dans la phase d’alarme." },
+          { "label": "Stabilité rythmique", "text": "Votre cœur fonctionne comme une machine finement réglée — sans à-coups ni chaos. Vous pouvez ainsi garder votre concentration pendant des heures sans ressentir de friction mentale." },
+          { "label": "Absence de bruit", "text": "L’indice d’alarme est à zéro. Vous êtes engagé sans être submergé. Vous ne luttez pas contre la tâche ; vous faites corps avec elle." }
+        ] },
+        { "heading": "Pourquoi est-ce dans ONDA ?", "body": "L’état de flow est la forme d’existence la plus efficace. Vous y obtenez un maximum de résultats pour un minimum d’usure. ONDA vous aide à faire plus que simplement « tomber » dans cet état : il vous aide à comprendre quelles conditions (respiration, moment de la journée, préparation) y mènent. Nous vous apprenons à trouver votre « zone », là où le défi rencontre parfaitement votre savoir-faire." },
+        { "highlight": "Le flow n’est pas une question de chance, c’est une compétence biophysique. Accordez votre rythme, retirez le bruit superflu, et le monde autour de vous s’effacera, ne laissant que vous et votre art." }
+      ]
+    },
+    "fatigue": {
+      "title": "Fatigue : l’impôt physiologique de l’effort",
+      "shortTitle": "🪫 Fatigue",
+      "sections": [
+        { "heading": "Le coût du mouvement", "body": "Chez ONDA, la fatigue est plus qu’une envie de dormir. C’est une estimation approximative du « coût biologique » de vos efforts récents. Elle augmente quand vos réserves d’énergie semblent épuisées et que votre stress reste durablement élevé. C’est le signal que votre système est passé d’un fonctionnement efficace à un état d’usure." },
+        { "heading": "Ce que signifient les valeurs", "bullets": [
+          { "label": "0–20 % · Récupéré", "text": "Les réserves d’énergie sont intactes, le stress est bas, la VFC est saine. Votre système fonctionne en abondance — prêt pour de fortes exigences." },
+          { "label": "20–45 % · Charge accumulée", "text": "Usure normale de fin de journée. Gérable avec une récupération classique : sommeil, alimentation, une pause. La performance est légèrement réduite, mais pas encore compromise." },
+          { "label": "45–70 % · Zone d’épuisement", "text": "Le déficit d’énergie est important. La VFC baisse, le pouls de repos grimpe, la récupération après de petits stress est lente. Continuer à forcer ici augmente le taux d’erreurs et le risque d’épuisement professionnel." },
+          { "label": "70–100 % · Alerte biologique", "text": "Le système est en mode usure. Toute tentative de « tenir coûte que coûte » rapporte de moins en moins pour un coût de plus en plus élevé. La seule action productive est un repos structuré — sommeil, immobilité ou récupération parasympathique profonde." }
+        ] },
+        { "heading": "L’anatomie de l’épuisement", "body": "Votre corps signale la fatigue par trois marqueurs biométriques distincts :", "bullets": [
+          { "label": "VFC réduite", "text": "Le cœur perd sa capacité d’adaptation et sa fluidité ; il devient « rigide » et monotone." },
+          { "label": "Pouls de repos élevé", "text": "Même assis, votre cœur bat plus vite que d’habitude pour compenser le manque de ressources internes." },
+          { "label": "Récupération lente", "text": "Votre capacité à revenir à la base après le moindre stress (même un simple appel) diminue nettement." }
+        ] },
+        { "heading": "Pourquoi est-ce dans ONDA ?", "body": "La fatigue est insidieuse, car on s’y habitue souvent au point de ne plus en sentir le poids. ONDA rend ce fardeau invisible visible. Un indice de fatigue élevé n’est pas un échec, c’est l’ordre de changer de rythme. C’est le moment où toute tentative de « tenir » rapporte de moins en moins et augmente le risque d’épuisement et d’erreurs." },
+        { "highlight": "La fatigue est la façon dont votre corps protège son capital. Respectez ce signal. Parfois, la chose la plus productive à faire est une vraie nuit de sommeil ou une heure de silence." }
+      ]
+    },
+    "excitement": {
+      "title": "Excitation : l’énergie de l’anticipation",
+      "shortTitle": "✨ Excitation",
+      "sections": [
+        { "heading": "Un élan positif", "body": "L’excitation est un état de mobilisation « lumineuse » de votre système. Comme l’anxiété, elle s’accompagne d’une hausse de la fréquence cardiaque et respiratoire, mais avec une différence essentielle : chez ONDA, cet indice ne monte que si vos scores de stress restent dans une zone saine. Nous lisons ce profil comme une disposition au jeu, à la créativité ou à un événement important plutôt que comme une réponse à une menace." },
+        { "heading": "Ce que signifient les valeurs", "bullets": [
+          { "label": "0–20 % · Neutre", "text": "Aucune excitation positive détectée. Le système est au repos ou peu activé. Utile pour récupérer, moins pour la performance ou la création." },
+          { "label": "20–50 % · Légère charge", "text": "Une douce mise en énergie — le corps se réchauffe avec motivation et une légère anticipation. Idéal pour commencer des tâches qui demandent un engagement durable." },
+          { "label": "50–75 % · Élan", "text": "Une mobilisation positive nette avec un rythme stable. Le pouls est élevé mais le stress reste contenu. La zone optimale pour un travail exigeant, le sport ou le flow créatif." },
+          { "label": "75–100 % · Pleine montée", "text": "Un pic d’eustress. Le système est entièrement prêt. Cet état est rare et limité dans le temps — utilisez-le stratégiquement. Il bascule dans l’anxiété si les scores de stress se mettent à monter en même temps." }
+        ] },
+        { "heading": "La biologie de la joie", "body": "En état d’excitation, votre corps se prépare à l’action, et il le fait efficacement :", "bullets": [
+          { "label": "Élan productif", "text": "Votre cœur bat plus vite pour oxygéner vos muscles et votre cerveau, mais le rythme reste stable et assuré." },
+          { "label": "Eustress", "text": "C’est le « bon stress » — celui qui n’épuise pas vos réserves, mais vous fait vous sentir vivant et engagé." },
+          { "label": "Absence de contrainte", "text": "Contrairement à l’anxiété, il n’y a pas d’« effet tunnel ». Vous gardez une vision large et une grande capacité de créativité." }
+        ] },
+        { "heading": "Pourquoi est-ce dans ONDA ?", "body": "Nous vous aidons à recalibrer vos signaux intérieurs. On confond souvent l’excitation avec l’anxiété et on essaie de la réprimer. ONDA peut suggérer la différence : votre pouls est élevé, mais votre rythme paraît stable — le signe que vous êtes peut-être chargé d’énergie plutôt qu’apeuré. Vous pouvez alors utiliser l’énergie de l’excitation comme carburant pour réussir plutôt que comme source d’inquiétude." },
+        { "highlight": "L’excitation est une énergie tournée vers l’extérieur. Accueillez cet élan : c’est le signe que votre système est prêt pour de grandes choses." }
+      ]
+    },
+    "focus": {
+      "title": "Concentration : la physiologie de l’immersion",
+      "shortTitle": "🎯 Concentration",
+      "sections": [
+        { "heading": "L’état de flow", "body": "La concentration n’est pas un acte de volonté, mais le résultat d’une harmonie dans votre système. Chez ONDA, cet indice est calculé comme l’équilibre entre votre niveau d’énergie et l’absence de bruit intérieur (le stress). C’est notre approximation d’un état de concentration — quand votre énergie est suffisante et que le bruit intérieur reste faible, l’attention vient plus facilement." },
+        { "heading": "Ce que signifient les valeurs", "bullets": [
+          { "label": "0–25 % · Dispersé", "text": "Beaucoup de bruit intérieur ou peu d’énergie. Une attention soutenue est biologiquement inaccessible dans cet état. Les tâches demanderont un effort disproportionné pour un résultat médiocre." },
+          { "label": "25–50 % · Mise en route", "text": "Le système est partiellement disponible pour se concentrer. Les tâches simples sont possibles, mais un travail cognitif approfondi restera fragmenté. Une courte remise à zéro par la respiration peut vous faire passer dans la zone suivante." },
+          { "label": "50–75 % · Engagé", "text": "L’énergie est suffisante, le stress est modéré. Vous êtes capable d’une concentration soutenue. C’est la zone de travail habituelle de la plupart des personnes productives." },
+          { "label": "75–100 % · Concentration profonde", "text": "État optimal. Le cortex préfrontal est pleinement aux commandes, l’amygdale est calme, le rythme est stable. Ce profil accompagne souvent le flow — quand l’effort s’estompe et que la performance semble facile." }
+        ] },
+        { "heading": "L’architecture de l’attention", "body": "Chez ONDA, la concentration maximale apparaît quand trois conditions sont réunies :", "bullets": [
+          { "label": "Fréquence cardiaque modérée", "text": "Votre cœur ne s’emballe pas, mais il ne « dort » pas non plus. C’est la zone d’activation optimale, où le cerveau reçoit juste assez de ressources pour des tâches complexes." },
+          { "label": "Rythme stable", "text": "L’absence de pics brusques (ISC bas) signifie que votre système nerveux n’est pas distrait par des interférences internes." },
+          { "label": "Stress faible", "text": "Votre amygdale est calme, ce qui permet au cortex préfrontal de garder le contrôle total de votre attention." }
+        ] },
+        { "heading": "Pourquoi est-ce important pour ONDA ?", "body": "On confond souvent « être occupé » et « être productif ». L’indice de concentration révèle la différence. Vous pouvez être très occupé, mais si votre score de concentration est bas, vous dépensez trois fois plus d’énergie pour la même tâche. ONDA vous aide à repérer les moments qui ressemblent à une « vigilance détendue » — attentif tout en restant physiologiquement calme." },
+        { "highlight": "La concentration ne dépend pas de ce que vous faites, mais de l’état dans lequel vous êtes. Faites le silence dans votre rythme, et l’attention suivra naturellement." }
+      ]
+    },
+    "relaxation": {
+      "title": "Détente / Calme : l’état de quiétude profonde",
+      "shortTitle": "🌿 Détente / Calme",
+      "sections": [
+        { "heading": "L’art de la présence", "body": "La détente et le calme ne sont pas seulement l’absence de stress ; c’est un état actif de bien-être physiologique. Chez ONDA, cet indice est calculé comme l’inverse du chaos (ISC) combiné à votre réserve d’énergie. Il estime à quel point votre rythme paraît apaisé — peu de bruit cardiaque et une réserve d’énergie — comme approximation de votre disposition à un repos de qualité ou à une créativité profonde." },
+        { "heading": "Ce que signifient les valeurs", "bullets": [
+          { "label": "0–25 % · Tension de surface", "text": "Le système porte encore du bruit biologique — ISC élevé, respiration superficielle ou faible réserve d’énergie. Le vrai repos n’est pas encore accessible. Une intervention (respiration lente, immobilité) est nécessaire." },
+          { "label": "25–50 % · Apaisement", "text": "Le système nerveux commence à ralentir. Le rythme se stabilise. C’est la zone de transition — le corps est en chemin vers le calme mais n’y est pas encore." },
+          { "label": "50–75 % · Calme actif", "text": "Peu de bruit biologique, respiration régulière, marge d’énergie suffisante. Vous êtes en vigilance détendue — pleinement présent et ouvert, sans arrière-fond de qui-vive." },
+          { "label": "75–100 % · Quiétude profonde", "text": "État optimal pour la régénération, la créativité et la concentration profonde. La réparation des tissus s’accélère, l’activité immunitaire culmine et le cerveau passe en mode consolidation et intuition." }
+        ] },
+        { "heading": "La signature de la « vigilance détendue »", "body": "Un score de calme élevé résulte de trois facteurs synchronisés :", "bullets": [
+          { "label": "Pureté rythmique", "text": "Votre cœur bat avec un minimum de fluctuations injustifiées (ISC bas)." },
+          { "label": "Respiration stable", "text": "Un rythme lent et régulier d’inspirations et d’expirations qui nourrit le cerveau sans surcharger le système." },
+          { "label": "Marge biologique", "text": "Votre cœur dispose d’une ample « marge cardiovasculaire » (réserve d’énergie), ce qui vous permet de rester détendu même quand votre environnement change." }
+        ] },
+        { "heading": "Pourquoi est-ce important pour ONDA ?", "body": "L’état de calme est le mode dans lequel votre corps passe de la survie à l’épanouissement. C’est dans cette zone que se produisent au maximum la régénération des tissus, le renforcement immunitaire et le « recâblage » neuronal. Nous suivons cette mesure pour que vous appreniez non seulement à vous détendre, mais à atteindre la vigilance détendue — un état où vous êtes profondément calme tout en restant pleinement présent et attentif." },
+        { "highlight": "La détente n’est pas une faiblesse, c’est la forme ultime de l’efficacité. Plus votre indice de calme est élevé, moins il vous coûte d’effort de rester vous-même." }
+      ]
+    },
+    "alarm": {
+      "title": "Alarme / Anxiété : le code rouge de votre système",
+      "shortTitle": "🚨 Alarme / Anxiété",
+      "sections": [
+        { "heading": "Le détecteur de menace invisible", "body": "Alarme / Anxiété est un indice composite d’ONDA qui analyse l’interaction entre votre fréquence cardiaque et votre respiration. Nous cherchons un profil précis : une hausse simultanée du pouls et de la fréquence respiratoire. Ce profil est souvent associé à la réponse « combat ou fuite ». L’indice signale son apparition — une invitation à faire le point avec vous-même, pas un diagnostic." },
+        { "heading": "Ce que signifient les valeurs", "bullets": [
+          { "label": "0–20 % · Calme de base", "text": "Aucun signal d’alarme détecté. Le pouls et la respiration sont équilibrés et peu excités. Votre système nerveux est pleinement en mode parasympathique." },
+          { "label": "20–50 % · Activation légère", "text": "Un faible niveau d’éveil — normal pendant un travail concentré ou une activité légère. Le corps est alerte mais pas mobilisé. Gérable sans intervention." },
+          { "label": "50–75 % · Alarme élevée", "text": "Un profil « combat ou fuite » net se dessine. Le pouls monte en même temps que la respiration. C’est la zone du stress chronique qui passe inaperçu — vous vous sentez peut-être « bien », mais votre biologie n’est pas d’accord." },
+          { "label": "75–100 % · Mobilisation aiguë", "text": "Pleine poussée sympathique. L’amygdale a pris les commandes. Le cortisol et l’adrénaline s’envolent. Une intervention immédiate — une longue expiration, une pause, une courte rétention pour réinitialiser — est ici très efficace." }
+        ] },
+        { "heading": "L’écho psychosomatique", "body": "Des valeurs élevées de cet indice indiquent que votre corps est en état de mobilisation aiguë :", "bullets": [
+          { "label": "Niveau biologique", "text": "Le sang se déplace des organes digestifs vers les muscles, le cerveau reçoit un signal de danger extérieur et le cortisol grimpe en flèche." },
+          { "label": "Niveau mental", "text": "Le cortex préfrontal (responsable de la logique) cède la place à l’amygdale. Vous ressentez de l’agitation, un effet tunnel ou une « crispation » mentale." }
+        ] },
+        { "heading": "Pourquoi est-ce dans ONDA ?", "body": "L’anxiété se déguise souvent en simple fatigue ou en grande productivité. L’indice d’alarme peut vous le suggérer : vous buvez peut-être simplement un café, mais votre rythme ressemble à celui d’un corps qui se prépare à une menace. ONDA vous donne la possibilité de repérer ce profil tôt et d’utiliser une respiration consciente pour « annuler » le signal d’alarme avant qu’il ne tourne à la crise d’angoisse ou à l’épuisement total." },
+        { "highlight": "Votre corps ne sait pas mentir. Si l’indice d’alarme monte, ce n’est pas une raison de paniquer — c’est une raison de faire une longue expiration. Reprenez le contrôle par le corps quand l’esprit se sent impuissant." }
+      ]
+    },
+    "acceleration": {
+      "title": "Accélération du pouls : l’intensité de la réponse biologique",
+      "shortTitle": "⚡ Accélération du pouls",
+      "sections": [
+        { "heading": "Une dynamique au-delà de la vitesse", "body": "L’accélération du pouls est la dérivée seconde de votre rythme cardiaque. Alors que la tendance montre la direction de votre mouvement, l’accélération mesure l’intensité avec laquelle ce mouvement prend de l’élan. Elle indique à quel point votre système « appuie sur l’accélérateur » ou, au contraire, avec quelle douceur il commence à freiner." },
+        { "heading": "Lire l’impulsion", "body": "L’accélération révèle la dynamique cachée de votre adaptation :", "bullets": [
+          { "label": "Accélération positive · La poussée", "text": "Votre fréquence cardiaque commence à monter plus vite qu’une seconde auparavant. C’est le signe d’une réaction « aiguë » — un sursaut soudain, une pensée brutale à une échéance ou un effort physique. Votre système sympathique tourne à plein régime et mobilise les ressources ici et maintenant." },
+          { "label": "Accélération négative · Le ralentissement", "text": "La vitesse de variation de votre pouls diminue. Même si votre cœur bat encore vite, il a cessé d’accélérer. C’est le premier signe que le pic est passé et que le système commence à se stabiliser. Vous reprenez le contrôle du stress." }
+        ] },
+        { "heading": "Pourquoi est-ce dans ONDA ?", "body": "L’accélération du pouls est un détecteur de votre réactivité. Des pics d’accélération trop brusques peuvent traduire une forte anxiété ou un faible seuil de tolérance au stress. ONDA suit ces « à-coups » et vous aide à développer une fluidité biologique — la capacité d’entrer dans des états de haute performance sans les poussées brutales et épuisantes qui vident votre système." },
+        { "highlight": "La force n’est pas dans la poussée, mais dans la douceur de la transition. Moins votre rythme connaît d’accélérations brusques, mieux vous préservez votre énergie vitale." }
+      ]
+    },
+    "slope": {
+      "title": "Tendance du pouls : le vecteur de la direction biologique",
+      "shortTitle": "📈 Tendance du pouls",
+      "sections": [
+        { "heading": "La direction du courant", "body": "La tendance du pouls est un indicateur mathématique de la direction que prend votre système en ce moment. Nous utilisons une régression linéaire pour saisir la trajectoire globale de votre fréquence cardiaque sur la fenêtre de mesure. Ce n’est pas qu’un chiffre : c’est une aiguille de boussole pointée vers votre avenir physiologique immédiat." },
+        { "heading": "Lire le vecteur", "body": "Le sens de la tendance révèle la dynamique de votre adaptation :", "bullets": [
+          { "label": "Tendance négative · Descendante", "text": "Votre fréquence cardiaque ralentit progressivement. C’est la classique « réponse de relaxation ». Votre système nerveux atténue l’excitation avec succès et passe en mode récupération. Le scénario idéal pour méditer ou décompresser après le travail." },
+          { "label": "Tendance positive · Ascendante", "text": "Votre fréquence cardiaque s’accélère. Cela signale une excitation émotionnelle ou physique croissante. Votre corps se prépare à agir ou réagit à un facteur de stress apparu pendant la séance." },
+          { "label": "Tendance nulle · Plateau", "text": "Un état stable. Votre système est à l’équilibre et maintient son niveau d’activation actuel sans fluctuations brusques." }
+        ] },
+        { "heading": "Pourquoi est-ce dans ONDA ?", "body": "La tendance vous montre l’inertie de votre système nerveux. Si vous essayez de vous détendre mais que la tendance reste positive, cela signifie que votre « système de freinage » ne s’est pas encore enclenché. Cette mesure vous aide à comprendre dans quelle mesure la pratique choisie (respiration, musique, pause) modifie réellement votre trajectoire biologique." },
+        { "highlight": "Ce qui compte n’est pas où vous êtes, mais dans quelle direction vous allez. Une tendance négative est votre billet d’entrée vers une restauration profonde." }
+      ]
+    },
+    "recovery": {
+      "title": "Taux de récupération : l’indice du retour à soi",
+      "shortTitle": "🔄 Taux de récupération %",
+      "sections": [
+        { "heading": "L’art de l’arrivée", "body": "Le taux de récupération mesure l’efficacité avec laquelle votre cœur peut « rétrograder » après un effort. Chez ONDA, nous calculons à quelle vitesse votre fréquence cardiaque revient de son pic pendant la séance en cours à votre moyenne de base. C’est une mesure de votre capacité à sortir d’un état d’excitation pour revenir à votre centre de gravité." },
+        { "heading": "Pourquoi est-ce important ?", "body": "Dans la nature, ce n’est pas celui qui court le plus vite qui survit, mais celui qui se calme le plus vite après la poursuite. Dans le monde moderne, c’est pareil :", "bullets": [
+          { "label": "0 % · Bloqué", "text": "Votre fréquence cardiaque est figée à son pic. Votre corps continue à « se battre contre des ombres » alors que le déclencheur extérieur a disparu. C’est le signe d’un système nerveux rigide et d’une fatigue accumulée." },
+          { "label": "100 % · Calme complet", "text": "Votre cœur est entièrement revenu à sa base, voire en dessous. C’est la référence absolue de la flexibilité biologique." }
+        ] },
+        { "heading": "L’écho biologique", "body": "Votre vitesse de récupération dépend directement du tonus de votre nerf vague. Un taux de récupération élevé signifie que votre « frein parasympathique » fonctionne parfaitement. Vous pouvez ainsi passer d’une tâche à l’autre sans emporter le stress du moment précédent dans le suivant." },
+        { "highlight": "Ce qui compte, ce n’est pas la hauteur du pic mais la vitesse de la descente. La vraie force réside dans la capacité à retrouver vite l’équilibre." }
+      ]
+    },
+    "csi": {
+      "title": "ISC : indice de stabilité cardiaque",
+      "shortTitle": "🎯 Indice de stabilité cardiaque (ISC)",
+      "sections": [
+        { "heading": "L’architecture du rythme", "body": "L’ISC (indice de stabilité cardiaque) est un coefficient propre qui permet à ONDA de voir plus loin qu’un simple pouls. Nous prenons l’écart-type de vos cycles cardiaques et le divisons par la fréquence cardiaque moyenne. Cela mesure la régularité pure de votre cœur, indépendamment de la vitesse à laquelle il bat à ce moment-là." },
+        { "heading": "Stabilité contre chaos", "body": "L’ISC est le détecteur du « bruit biologique » de votre système :", "bullets": [
+          { "label": "0,03 – 0,10 · Stabilité diamant", "text": "Votre cœur fonctionne avec la précision d’une montre suisse. C’est un état de profonde assurance physiologique. Le système ne gaspille aucune ressource en fluctuations inutiles et fonctionne en mode d’économie et de concentration maximales." },
+          { "label": "0,11 – 0,24 · Équilibre dynamique", "text": "Le rythme naturel d’un organisme vivant. Votre cœur s’ajuste avec fluidité aux stimuli extérieurs tout en préservant son intégrité structurelle globale." },
+          { "label": "0,25+ · Bruit biologique", "text": "Un signal d’instabilité. Un ISC élevé indique souvent des « bugs » dans la transmission de l’influx nerveux, une fatigue extrême ou du bruit de mesure. Dans cet état, le système perd le contrôle de son rythme." }
+        ] },
+        { "heading": "Pourquoi est-ce important pour ONDA ?", "body": "L’ISC est la base sur laquelle repose votre Stress %. Alors que la VFC renseigne sur votre flexibilité, l’ISC informe sur votre fiabilité structurelle. Un ISC bas est le signe que votre « système d’exploitation » intérieur tourne sans erreur de code." },
+        { "highlight": "La vraie force réside dans la stabilité. Moins il y a de bruit dans votre rythme, plus il y a de clarté dans votre esprit." }
+      ]
+    },
+    "hrv": {
+      "title": "VFC : l’indice de votre agilité biologique",
+      "shortTitle": "📊 VFC (RMSSD)",
+      "sections": [
+        { "heading": "Le microscope intérieur", "body": "La VFC (variabilité de la fréquence cardiaque) est la mesure la plus fine et la plus parlante de l’arsenal d’ONDA. Contrairement à la fréquence cardiaque, qui compte simplement les battements, la VFC mesure les fluctuations microscopiques du temps entre ces battements, en millisecondes. Nous utilisons l’algorithme RMSSD pour évaluer avec quelle fluidité votre cœur répond à chaque mouvement, pensée ou respiration." },
+        { "heading": "Un miroir du nerf vague", "body": "La VFC est un bulletin direct de l’activité de votre nerf vague :", "bullets": [
+          { "label": "VFC élevée (40–70 ms et plus)", "text": "Votre cœur s’adapte instantanément aux changements. C’est le signe d’une réponse parasympathique puissante. Vous êtes dans un état de grande résilience biologique : calme, concentré et prêt à agir." },
+          { "label": "VFC basse (sous 20–25 ms)", "text": "Votre système nerveux autonome est « verrouillé ». Votre cœur bat de façon trop métronomique, comme un robot. C’est le signal que vos ressources de récupération sont épuisées et que le système fonctionne à la limite de sa capacité d’adaptation." }
+        ] },
+        { "heading": "Pourquoi elle compte plus que le pouls", "body": "Deux personnes peuvent avoir exactement la même fréquence cardiaque, mais des profils de santé totalement différents. La différence tient à la VFC. Une variabilité élevée signifie que votre « OS intérieur » analyse en permanence l’environnement et ajuste finement votre rythme. Une variabilité faible est un signe de fragilité biologique." },
+        { "heading": "S’entraîner avec ONDA", "body": "La VFC est dynamique. Elle baisse avec l’alcool, le manque de sommeil ou le surentraînement, mais elle peut être « renforcée ». En utilisant les protocoles de respiration d’ONDA, vous entraînez en quelque sorte votre nerf vague, ce qui élève votre VFC de base et, par conséquent, votre résistance aux tempêtes de la vie." },
+        { "highlight": "Une VFC élevée, c’est votre capacité à plier sans rompre. C’est la mesure de votre force vitale, exprimée en millisecondes." }
+      ]
+    },
+    "energy": {
+      "title": "Énergie % : votre réserve de puissance biologique",
+      "shortTitle": "🔋 Énergie %",
+      "sections": [
+        { "heading": "Votre batterie intérieure", "body": "Chez ONDA, l’Énergie % n’est pas une sensation subjective de vivacité ; c’est une estimation approximative de votre réserve cardiovasculaire. C’est un rapport mathématique entre l’écart qui sépare votre fréquence cardiaque de son plafond élevé et la stabilité de votre rythme cardiaque à cette seconde précise. Plus le score est élevé, plus votre corps dispose de capacité physiologique pour affronter de nouvelles tâches." },
+        { "heading": "L’anatomie de l’épuisement", "body": "Votre score d’énergie baisse inévitablement sous l’effet de trois facteurs :", "bullets": [
+          { "label": "Fatigue accumulée", "text": "Quand le système ne récupère pas suffisamment pendant le sommeil." },
+          { "label": "Pouls élevé", "text": "Tourner « à haut régime » consomme vite le carburant disponible." },
+          { "label": "Stress prolongé", "text": "Des turbulences constantes dans votre rythme (faible stabilité) obligent le cœur à dépenser davantage de ressources rien que pour assurer les fonctions de base." }
+        ] },
+        { "heading": "Ce que disent les chiffres", "body": "", "bullets": [
+          { "label": "80–100 % · Pleine charge", "text": "Votre système est en abondance. Vous êtes prêt pour une charge mentale intense, des entraînements exigeants et des décisions stratégiques." },
+          { "label": "40–70 % · Zone de fonctionnement", "text": "Les réserves commencent à diminuer. Il est temps de doser vos efforts. Votre efficacité reste élevée, mais le « prix » de chaque effort supplémentaire augmente." },
+          { "label": "Sous 30 % · Niveau critique", "text": "Vous fonctionnez « à crédit ». Dans cet état, votre corps perçoit tout nouvel événement comme une menace. Le cerveau passe en mode d’économie d’énergie strict et réduit la créativité et l’empathie." }
+        ] },
+        { "heading": "L’art de se recharger", "body": "L’Énergie % est notre mesure la plus dynamique. Elle peut s’effondrer après une conversation difficile et remonter après 10 minutes de méditation profonde ou une courte marche. ONDA vous permet de voir ces fluctuations en temps réel et fait de la gestion de l’énergie une science exacte plutôt qu’un jeu de devinettes." },
+        { "highlight": "N’attendez pas que le réservoir soit vide. Un score d’énergie élevé est votre assurance contre les erreurs. Si le score est dans le rouge, tout travail sera contre-productif. Rechargez d’abord le système, puis agissez." }
+      ]
+    },
+    "stress": {
+      "title": "Stress % : l’indice de turbulence biologique",
+      "shortTitle": "⚡ Stress %",
+      "sections": [
+        { "heading": "Au-delà des émotions", "body": "Chez ONDA, le Stress % n’est pas un état psychologique ; c’est un indice approximatif de l’irrégularité de votre rythme cardiaque. Ce score est déduit de l’indice de stabilité cardiaque. Nous n’analysons pas seulement votre pouls, mais les micro-écarts dans le rythme de chaque battement. Plus l’irrégularité et le « bruit » dans ces intervalles sont importants, plus votre score de stress biologique est élevé." },
+        { "heading": "Que signifie votre score ?", "body": "Le stress, c’est la « dépense » de votre force vitale. Nous l’avons classé en trois zones :", "bullets": [
+          { "label": "0 – 30 % · La zone de flow", "text": "Votre système est en état de cohérence. Votre cœur travaille de manière rythmée et efficace. Le moment idéal pour des décisions complexes et un travail de fond." },
+          { "label": "30 – 60 % · La zone d’adaptation", "text": "Vous êtes sous charge. C’est normal pendant une journée active, mais si vous y restez trop longtemps, vos ressources cognitives commencent à s’épuiser." },
+          { "label": "60 %+ · La zone d’épuisement", "text": "Stress physiologique aigu. Votre système nerveux est débordé. Dans cet état, le cerveau met en veille le cortex préfrontal (la logique) et confie les commandes à l’amygdale (peur et impulsivité)." }
+        ] },
+        { "heading": "Pourquoi est-ce important ?", "body": "Le stress le plus dangereux est celui qu’on ne sent pas. Vous êtes peut-être assis en silence, et pourtant votre Stress % affiche 70 %. Cela signifie qu’une lutte invisible se déroule à l’intérieur : manque de sommeil, inflammation cachée ou surcharge d’informations. ONDA rend l’invisible visible, pour que vous puissiez faire une pause avant que l’épuisement ne s’installe." },
+        { "highlight": "Le stress n’est pas ce qui vous arrive, mais la façon dont votre corps dépense ses ressources en réponse. Un pourcentage élevé est un signal pour réévaluer vos priorités à cet instant précis." }
+      ]
+    },
+    "br": {
+      "title": "Fréquence respiratoire : le pont entre deux mondes",
+      "shortTitle": "🌬️ /min — fréquence respiratoire",
+      "sections": [
+        { "heading": "La seule commande manuelle", "body": "La fréquence respiratoire est un paramètre biométrique à part. Contrairement à vos battements de cœur ou à votre digestion, la respiration est la seule fonction du système nerveux autonome que vous pouvez contrôler directement. C’est votre « télécommande » de l’état intérieur." },
+        { "heading": "Le rythme du calme contre le rythme de la survie", "body": "Votre fréquence respiratoire est une retransmission en direct de la façon dont votre cerveau perçoit son environnement :", "bullets": [
+          { "label": "Respiration superficielle et rapide", "text": "Un signal d’alarme. Quand vous respirez par le haut de la poitrine plus de 16 à 20 fois par minute, vous dites à votre corps : « Nous sommes en danger. » Cela maintient un cortisol élevé et garde le cerveau en état de vigilance permanente." },
+          { "label": "Respiration profonde et lente", "text": "Un signal de sécurité. Ralentir à 6 à 10 cycles par minute active le nerf vague. Le système bascule rapidement vers un mode de concentration profonde et de stabilité émotionnelle." }
+        ] },
+        { "heading": "Rétroaction biologique", "body": "Chez ONDA, nous suivons votre fréquence respiratoire pour repérer les moments d’« apnée d’écran » — quand vous retenez inconsciemment votre souffle ou respirez de façon irrégulière en lisant vos e-mails ou en effectuant des tâches complexes. Ces micro-pauses déclenchent une cascade de réponses au stress que vous ne remarquez peut-être même pas." },
+        { "heading": "L’art de ralentir", "body": "La respiration optimale au repos est un rythme presque invisible. Moins vous avez besoin de cycles pour oxygéner votre sang, plus votre métabolisme fonctionne efficacement. Nous vous apprenons à « respirer moins » — à rendre chaque respiration plus rare mais de meilleure qualité, pour que chaque cycle devienne un acte de restauration." },
+        { "highlight": "La respiration est le seul moyen de parler à votre cœur dans sa propre langue. En ralentissant l’inspiration, vous dictez la paix à votre esprit." }
+      ]
+    },
+    "bpm": {
+      "title": "BPM : le rythme de votre système d’exploitation intérieur",
+      "shortTitle": "❤️ BPM — fréquence cardiaque",
+      "sections": [
+        { "heading": "Le métronome biologique", "body": "Le BPM (battements par minute) est bien plus que la vitesse à laquelle votre cœur pompe le sang. Dans l’écosystème ONDA, nous voyons le pouls comme la principale interface de votre système nerveux autonome. C’est un graphique en direct de la façon dont votre corps répartit ses ressources face aux défis du monde extérieur." },
+        { "heading": "Une symphonie à deux états", "body": "Votre cœur oscille en permanence entre deux « chefs d’orchestre » :", "bullets": [
+          { "label": "L’élan sympathique", "text": "Quand votre pouls monte, votre corps passe en mode haute performance ou défense. C’est la mobilisation — indispensable pour un sprint, mais toxique quand elle dure." },
+          { "label": "Le calme parasympathique", "text": "Une fréquence cardiaque basse est un signal de sécurité. Dans cet état, le corps lance la régénération des tissus, la consolidation de la mémoire et la récupération profonde." }
+        ] },
+        { "heading": "Pourquoi suivre les chiffres ?", "body": "Votre fréquence cardiaque au repos est votre coût biologique de base pour vivre.", "bullets": [
+          { "label": "Pouls élevé en position assise", "text": "Vous gaspillez de l’énergie. Votre corps « court un marathon » alors que vous répondez simplement à des e-mails. C’est la voie directe vers l’épuisement cognitif." },
+          { "label": "Pouls optimal", "text": "C’est le mode « croisière silencieuse » — le système fonctionne avec une efficacité maximale et garde une grande réserve pour les imprévus." }
+        ] },
+        { "heading": "Un outil de calibrage", "body": "Le BPM dans l’appli ONDA est un miroir. En remarquant une hausse anormale de votre pouls, vous avez l’occasion d’intervenir consciemment. Nous ne mesurons pas seulement les battements : nous vous apprenons à les maîtriser. Une courte séance de respiration ou un changement d’attention peut rapidement « faire baisser » votre pouls et faire passer votre cerveau du mode survie au flow créatif." },
+        { "highlight": "Un pouls élevé coûte cher. Un pouls bas est un choix. Maîtrisez le rythme pour maîtriser votre vie." }
+      ]
+    }
+  }
+}

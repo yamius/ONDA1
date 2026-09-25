@@ -6,7 +6,7 @@ import { parts } from './PartPage'
 import { levelsData } from '../data/levels'
 import { METRIC_DETAILS } from '../data/bioMetrics'
 import { useEffect } from 'react'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref , partPathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 
@@ -128,7 +128,7 @@ export function SitemapPage() {
           <ul className="mt-4 space-y-2">
             {Object.entries(parts).map(([slug, part]) => (
               <li key={slug}>
-                <Link to={`${langPrefix}/part/${slug}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                <Link to={partPathFor(slug, lang)} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                   {part.title} {part.titleHighlight}
                 </Link>
               </li>
