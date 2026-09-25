@@ -1,0 +1,284 @@
+{
+  "ui": {
+    "breadcrumbHome": "Start",
+    "breadcrumbBio": "Bio OS",
+    "ondaPrinciple": "Das ONDA-Prinzip",
+    "back": "← Zurück zu Bio OS",
+    "ctaReady": "Bereit zu messen?",
+    "ctaSubtitle": "Verbinde eine Apple Watch für kontinuierliches Biofeedback.",
+    "appStoreSup": "Laden im",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "ONDA Life im App Store laden",
+    "googlePlaySup": "Jetzt bei",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "ONDA Life bei Google Play laden",
+    "metaDescriptionTpl": "{{title}} — erfahre, was dieser biometrische Wert bedeutet, wie du dein Ergebnis deutest und wie du es in deiner täglichen Praxis nutzt.",
+    "modal": {
+      "title": "ONDA Life beitreten",
+      "subtitle": "Wir legen gerade letzte Hand an! Hinterlass deine E-Mail, und wir schicken dir frühen Zugang.",
+      "placeholder": "Deine E-Mail",
+      "submit": "Frühen Zugang sichern",
+      "submitting": "Wird gesendet …",
+      "thankTitle": "Danke!",
+      "thankSubtitle": "Wir melden uns, sobald die App startklar ist.",
+      "ok": "OK",
+      "errorDuplicate": "Diese E-Mail ist bereits registriert.",
+      "errorGeneric": "Etwas ist schiefgelaufen. Bitte versuch es später noch einmal.",
+      "close": "Schließen"
+    },
+    "measurementDisclaimer": "Geschätzt aus einer einzelnen Kameramessung (PPG) — eine informative Schätzung, keine medizinische Messung. Zustandsbezeichnungen (Flow, Fokus, Alarm …) sind grobe, experimentelle Muster, keine Emotionserkennung."
+  },
+  "metrics": {
+    "flow": {
+      "title": "Flow: der Zustand biologischer Resonanz",
+      "shortTitle": "🌊 Flow",
+      "sections": [
+        { "heading": "Der optimale Punkt", "body": "Flow ist der heilige Gral der Leistung. Bei ONDA schätzen wir ein Flow-ähnliches Muster, wenn das Signal auf Synchronisation hindeutet: hohe Aufmerksamkeit bei gleichzeitiger tiefer innerer Ruhe. Es ist der Moment, in dem du ganz in einer Aufgabe aufgehst, dein Körper dafür aber keinen übermäßigen Preis zahlt." },
+        { "heading": "Was die Werte bedeuten", "bullets": [
+          { "label": "0–25 % · Abgekoppelt", "text": "Die Bedingungen für Flow fehlen — entweder ist der Alarmindex erhöht, die Energie niedrig oder der Fokus zerstreut. Tiefe Arbeit hier zu versuchen heißt, gegen die Biologie anzukämpfen." },
+          { "label": "25–50 % · Annäherung", "text": "Das System wärmt sich in Richtung Kohärenz auf. Der Fokus beginnt sich zu festigen, der Stress sinkt. Eine kurze Atemübung oder eine klare Absicht kann dich in die Zone bringen." },
+          { "label": "50–75 % · In der Zone", "text": "Dein Signal passt zu einem Flow-ähnlichen Muster: moderater Puls, stabiler Rhythmus, wenig Alarm. Du bist voll in der Lage zu anhaltender, hochwertiger Arbeit mit minimaler kognitiver Reibung." },
+          { "label": "75–100 % · Tiefe Resonanz", "text": "Selten und optimal. Alle drei Bedingungen sind perfekt aufeinander abgestimmt — Aktivierung, Stabilität, Stille. In diesem Zustand fühlen sich Stunden wie Minuten an, und das Ergebnis übersteigt den Aufwand weit. Schütze ihn." }
+        ] },
+        { "heading": "Die Formel des Flows", "body": "Anders als ein gewöhnlicher Arbeitszustand hat Flow bei ONDA eine eigene biometrische Signatur:", "bullets": [
+          { "label": "Moderate Aktivierung", "text": "Deine Herzfrequenz liegt leicht über deiner Ruhe-Baseline. Das gibt dem Gehirn den nötigen Antrieb und die Ressourcen, ohne in die Alarmphase zu kippen." },
+          { "label": "Rhythmische Stabilität", "text": "Dein Herz arbeitet wie eine fein abgestimmte Maschine — ohne Ruckeln oder Chaos. So kannst du den Fokus stundenlang halten, ohne geistige Reibung zu spüren." },
+          { "label": "Abwesenheit von Rauschen", "text": "Der Alarmindex steht auf null. Du bist engagiert, aber nicht überfordert. Du kämpfst nicht mit der Aufgabe — du verschmilzt mit ihr." }
+        ] },
+        { "heading": "Warum ist das in ONDA?", "body": "Der Flow-Zustand ist die effizienteste Form des Daseins. Hier erzielst du maximale Ergebnisse bei minimalem Verschleiß. ONDA hilft dir, nicht nur zufällig in diesen Zustand „hineinzustolpern“, sondern zu verstehen, welche Bedingungen (Atmung, Tageszeit, Vorbereitung) dorthin führen. Wir bringen dir bei, deine „Zone“ zu finden, in der die Herausforderung genau zu deinem Können passt." },
+        { "highlight": "Flow ist kein Glück, sondern eine biophysikalische Fähigkeit. Stimme deinen Rhythmus ab, entferne das überflüssige Rauschen, und die Welt um dich herum verschwindet — übrig bleiben nur du und dein Handwerk." }
+      ]
+    },
+    "fatigue": {
+      "title": "Müdigkeit: die physiologische Steuer auf Anstrengung",
+      "shortTitle": "🪫 Müdigkeit",
+      "sections": [
+        { "heading": "Der Preis der Bewegung", "body": "Müdigkeit ist bei ONDA mehr als nur der Wunsch zu schlafen. Sie ist eine grobe Schätzung der „biologischen Kosten“ deiner jüngsten Anstrengungen. Diese Schätzung steigt, wenn deine Energiereserven erschöpft wirken und dein Stress dauerhaft erhöht bleibt. Sie ist ein Signal, dass dein System vom effizienten Betrieb in einen Zustand des Verschleißes gewechselt ist." },
+        { "heading": "Was die Werte bedeuten", "bullets": [
+          { "label": "0–20 % · Erholt", "text": "Die Energiereserven sind intakt, der Stress ist niedrig, die HRV gesund. Dein System arbeitet aus dem Vollen — bereit für hohe Anforderungen." },
+          { "label": "20–45 % · Angesammelte Last", "text": "Normale Abnutzung am Ende des Tages. Mit üblicher Erholung gut zu bewältigen: Schlaf, Ernährung, eine Pause. Die Leistung ist leicht reduziert, aber noch nicht beeinträchtigt." },
+          { "label": "45–70 % · Erschöpfungszone", "text": "Das Energiedefizit ist deutlich. Die HRV sinkt, der Ruhepuls steigt schleichend, die Erholung nach kleinen Stressoren ist langsam. Wer hier weiter Druck macht, erhöht Fehlerquote und Burnout-Risiko." },
+          { "label": "70–100 % · Biologischer Alarmzustand", "text": "Das System ist im Verschleißmodus. Jeder Versuch, „durchzuziehen“, bringt immer weniger bei immer höheren Kosten. Das einzig Produktive ist strukturierte Ruhe — Schlaf, Stille oder tiefe parasympathische Erholung." }
+        ] },
+        { "heading": "Die Anatomie der Erschöpfung", "body": "Dein Körper meldet Müdigkeit über drei deutliche biometrische Marker:", "bullets": [
+          { "label": "Reduzierte HRV", "text": "Das Herz verliert seine Anpassungsfähigkeit und Geschmeidigkeit und wird „starr“ und monoton." },
+          { "label": "Erhöhter Ruhepuls", "text": "Selbst im Sitzen schlägt dein Herz schneller als sonst, um das Defizit an inneren Ressourcen auszugleichen." },
+          { "label": "Langsame Erholung", "text": "Deine Fähigkeit, nach einem kleinen Stressor (sogar nach einem einfachen Anruf) zur Baseline zurückzukehren, sinkt deutlich." }
+        ] },
+        { "heading": "Warum ist das in ONDA?", "body": "Müdigkeit ist heimtückisch, weil wir uns oft an sie gewöhnen und ihr Gewicht nicht mehr bemerken. ONDA macht diese unsichtbare Last sichtbar. Ein hoher Müdigkeitsindex ist kein Versagen, sondern die Aufforderung, einen Gang zurückzuschalten. Gerade jetzt bringt jeder Versuch, „durchzuziehen“, immer weniger und erhöht das Risiko für Burnout und Fehler." },
+        { "highlight": "Müdigkeit ist die Art deines Körpers, sein Kapital zu schützen. Respektiere dieses Signal. Manchmal ist das Produktivste, was du tun kannst, eine volle Nacht Schlaf oder eine Stunde Stille." }
+      ]
+    },
+    "excitement": {
+      "title": "Aufregung: die Energie der Vorfreude",
+      "shortTitle": "✨ Aufregung",
+      "sections": [
+        { "heading": "Positiver Antrieb", "body": "Aufregung ist ein Zustand „heller“ Mobilisierung in deinem System. Ähnlich wie bei Angst steigen Herzfrequenz und Atemfrequenz, aber mit einem entscheidenden Unterschied: Bei ONDA steigt dieser Index nur, wenn deine Stresswerte in einem gesunden Bereich bleiben. Wir deuten dieses Muster als Bereitschaft für Spiel, Kreativität oder ein wichtiges Ereignis — nicht als Bedrohungsreaktion." },
+        { "heading": "Was die Werte bedeuten", "bullets": [
+          { "label": "0–20 % · Neutral", "text": "Keine positive Erregung erkennbar. Das System ist in Ruhe oder gering aktiviert. Gut für die Erholung, weniger für Leistung oder kreative Arbeit." },
+          { "label": "20–50 % · Leichte Ladung", "text": "Eine sanfte Belebung — der Körper wärmt sich mit Motivation und leichter Vorfreude auf. Ideal, um Aufgaben zu beginnen, die anhaltendes Engagement brauchen." },
+          { "label": "50–75 % · Antrieb", "text": "Deutliche positive Mobilisierung bei stabilem Rhythmus. Der Puls ist erhöht, der Stress aber im Rahmen. Die optimale Zone für Hochleistungsarbeit, Sport oder kreativen Flow." },
+          { "label": "75–100 % · Voller Schub", "text": "Eustress auf dem Höhepunkt. Das System ist voll vorbereitet. Dieser Zustand ist selten und zeitlich begrenzt — nutze ihn gezielt. Er geht in Angst über, wenn die Stresswerte gleichzeitig zu steigen beginnen." }
+        ] },
+        { "heading": "Die Biologie der Freude", "body": "Im Zustand der Aufregung bereitet sich dein Körper auf Handlung vor — und zwar effizient:", "bullets": [
+          { "label": "Produktiver Schub", "text": "Dein Herz schlägt schneller, um Muskeln und Gehirn mit Sauerstoff zu versorgen, doch der Rhythmus bleibt stabil und sicher." },
+          { "label": "Eustress", "text": "Das ist „positiver Stress“ — die Art, die deine Reserven nicht aufzehrt, sondern dich lebendig und engagiert fühlen lässt." },
+          { "label": "Keine Enge", "text": "Anders als bei Angst gibt es hier keinen „Tunnelblick“. Du behältst einen weiten Blick und eine hohe kreative Kapazität." }
+        ] },
+        { "heading": "Warum ist das in ONDA?", "body": "Wir helfen dir, deine inneren Signale neu zu kalibrieren. Oft verwechseln Menschen Aufregung mit Angst und versuchen, sie zu unterdrücken. ONDA kann auf den Unterschied hinweisen: Dein Puls ist hoch, aber dein Rhythmus wirkt stabil — ein Zeichen, dass du eher geladen als ängstlich sein könntest. So kannst du die Energie der Aufregung als Treibstoff für Erfolge nutzen statt als Grund zur Sorge." },
+        { "highlight": "Aufregung ist nach außen gerichtete Energie. Nimm den Schub an — er zeigt, dass dein System für Großes bereit ist." }
+      ]
+    },
+    "focus": {
+      "title": "Fokus / Konzentration: die Physiologie des Eintauchens",
+      "shortTitle": "🎯 Fokus / Konzentration",
+      "sections": [
+        { "heading": "Der Flow-Zustand", "body": "Fokus und Konzentration sind keine Willensleistung, sondern das Ergebnis von Harmonie in deinem System. Bei ONDA wird dieser Index als Gleichgewicht zwischen deinem Energieniveau und der Abwesenheit von innerem Rauschen (Stress) berechnet. Er ist unsere Näherung für einen fokusähnlichen Zustand — wenn deine Energie ausreicht und das innere Rauschen gering bleibt, fällt Aufmerksamkeit leichter." },
+        { "heading": "Was die Werte bedeuten", "bullets": [
+          { "label": "0–25 % · Zerstreut", "text": "Viel inneres Rauschen oder wenig Energie. Anhaltende Aufmerksamkeit ist in diesem Zustand biologisch nicht erreichbar. Aufgaben verlangen unverhältnismäßig viel Mühe bei schwacher Qualität." },
+          { "label": "25–50 % · Aufwärmen", "text": "Das System ist teilweise für Fokus bereit. Oberflächliche Aufgaben gehen, tiefe kognitive Arbeit bleibt aber bruchstückhaft. Ein kurzer Atem-Reset kann dich in die nächste Zone bringen." },
+          { "label": "50–75 % · Engagiert", "text": "Genug Energie, moderater Stress. Du bist zu anhaltender Konzentration fähig. Das ist die übliche Arbeitszone der meisten produktiven Menschen." },
+          { "label": "75–100 % · Tiefer Fokus", "text": "Optimaler Zustand. Der präfrontale Kortex hat die volle Kontrolle, die Amygdala ist ruhig, der Rhythmus stabil. Dieses Muster begleitet oft den Flow — wenn die Anstrengung verblasst und Leistung sich leicht anfühlt." }
+        ] },
+        { "heading": "Die Architektur der Aufmerksamkeit", "body": "Bei ONDA entsteht Spitzenkonzentration, wenn drei Bedingungen erfüllt sind:", "bullets": [
+          { "label": "Moderate Herzfrequenz", "text": "Dein Herz rast nicht, „schläft“ aber auch nicht. Das ist die Zone optimaler Aktivierung, in der das Gehirn genau genug Ressourcen für komplexe Aufgaben bekommt." },
+          { "label": "Stabiler Rhythmus", "text": "Das Fehlen scharfer Spitzen (niedriger CSI) bedeutet, dass dein Nervensystem nicht von inneren Störungen abgelenkt wird." },
+          { "label": "Wenig Stress", "text": "Deine Amygdala ist ruhig, sodass der präfrontale Kortex die volle Kontrolle über deine Aufmerksamkeit behält." }
+        ] },
+        { "heading": "Warum ist das für ONDA wichtig?", "body": "Wir verwechseln oft „Beschäftigtsein“ mit „Produktivität“. Der Fokusindex zeigt den Unterschied. Du kannst sehr beschäftigt sein — ist dein Konzentrationswert aber niedrig, verbrauchst du für dieselbe Aufgabe dreimal so viel Energie. ONDA hilft dir, Momente zu bemerken, die nach „entspannter Wachheit“ aussehen — aufmerksam und dabei physiologisch ruhig." },
+        { "highlight": "Beim Fokus geht es nicht darum, was du tust, sondern in welchem Zustand du bist. Schaffe Stille in deinem Rhythmus, und die Aufmerksamkeit folgt von selbst." }
+      ]
+    },
+    "relaxation": {
+      "title": "Entspannung / Ruhe: der Zustand tiefer Stille",
+      "shortTitle": "🌿 Entspannung / Ruhe",
+      "sections": [
+        { "heading": "Die Kunst der Präsenz", "body": "Entspannung und Ruhe sind nicht bloß die Abwesenheit von Stress, sondern ein aktiver Zustand physiologischen Wohlbefindens. Bei ONDA wird dieser Index als Kehrwert des Chaos (CSI) in Kombination mit deiner Energiereserve berechnet. Er schätzt, wie gesetzt dein Rhythmus wirkt — wenig kardiales Rauschen bei vorhandener Energiereserve — als Näherung für die Bereitschaft zu hochwertiger Erholung oder tiefer Kreativität." },
+        { "heading": "Was die Werte bedeuten", "bullets": [
+          { "label": "0–25 % · Oberflächliche Anspannung", "text": "Das System trägt noch biologisches Rauschen — erhöhter CSI, flache Atmung oder geringe Energiereserve. Echte Ruhe ist noch nicht erreichbar. Eine Intervention (langsame Atmung, Stille) ist nötig." },
+          { "label": "25–50 % · Zur Ruhe kommen", "text": "Das Nervensystem beginnt herunterzuschalten. Der Rhythmus stabilisiert sich. Das ist die Übergangszone — der Körper ist auf dem Weg zur Ruhe, aber noch nicht angekommen." },
+          { "label": "50–75 % · Aktive Ruhe", "text": "Wenig biologisches Rauschen, gleichmäßiger Atem, genug Energiereserve. Du bist in entspannter Wachheit — ganz präsent und offen, ohne einen Unterton von Wachsamkeit." },
+          { "label": "75–100 % · Tiefe Stille", "text": "Optimaler Zustand für Regeneration, Kreativität und tiefen Fokus. Die Gewebereparatur beschleunigt sich, die Immunaktivität erreicht ihren Höhepunkt, und das Gehirn wechselt in den Modus der Konsolidierung und Einsicht." }
+        ] },
+        { "heading": "Die Signatur „entspannter Wachheit“", "body": "Ein hoher Ruhewert entsteht aus drei synchronen Faktoren:", "bullets": [
+          { "label": "Rhythmische Reinheit", "text": "Dein Herz schlägt mit minimalen unbegründeten Schwankungen (niedriger CSI)." },
+          { "label": "Stabile Atmung", "text": "Ein langsamer, gleichmäßiger Rhythmus aus Ein- und Ausatmen, der das Gehirn versorgt, ohne das System zu überlasten." },
+          { "label": "Biologischer Spielraum", "text": "Dein Herz hat reichlich „kardiovaskulären Spielraum“ (Energiereserve), sodass du entspannt bleiben kannst, auch wenn sich deine Umgebung verändert." }
+        ] },
+        { "heading": "Warum ist das für ONDA wichtig?", "body": "Im Ruhezustand wechselt dein Körper vom Überleben zum Gedeihen. In dieser Zone finden maximale Geweberegeneration, Stärkung des Immunsystems und neuronale „Neuverdrahtung“ statt. Wir verfolgen diesen Wert, damit du nicht nur lernst zu entspannen, sondern entspannte Wachheit zu erreichen — einen Zustand, in dem du zutiefst ruhig und dennoch ganz präsent und aufmerksam bist." },
+        { "highlight": "Entspannung ist keine Schwäche, sondern die höchste Form der Effizienz. Je höher dein Ruheindex, desto weniger Mühe kostet es, du selbst zu bleiben." }
+      ]
+    },
+    "alarm": {
+      "title": "Alarm / Anspannung: der Code Rot deines Systems",
+      "shortTitle": "🚨 Alarm / Anspannung",
+      "sections": [
+        { "heading": "Der unsichtbare Bedrohungsdetektor", "body": "Alarm / Anspannung ist ein zusammengesetzter Index in ONDA, der das Zusammenspiel von Herzfrequenz und Atmung analysiert. Wir suchen nach einem bestimmten Muster: gleichzeitig steigender Puls und erhöhte Atemfrequenz. Dieses Muster wird oft mit der Kampf-oder-Flucht-Reaktion in Verbindung gebracht. Der Index markiert, wenn es auftritt — ein Anlass, bei dir selbst nachzuspüren, keine Diagnose." },
+        { "heading": "Was die Werte bedeuten", "bullets": [
+          { "label": "0–20 % · Grundruhe", "text": "Keine Alarmsignale erkennbar. Puls und Atmung sind ausgeglichen und wenig erregt. Dein Nervensystem ist ganz im parasympathischen Modus." },
+          { "label": "20–50 % · Leichte Aktivierung", "text": "Geringe Erregung — normal bei konzentrierter Arbeit oder leichter Aktivität. Der Körper ist wach, aber nicht mobilisiert. Ohne Intervention zu bewältigen." },
+          { "label": "50–75 % · Erhöhter Alarm", "text": "Ein klares Kampf-oder-Flucht-Muster zeichnet sich ab. Der Puls steigt zusammen mit der Atemfrequenz. Das ist die Zone des unbemerkten chronischen Stresses — du fühlst dich vielleicht „gut“, aber deine Biologie sieht das anders." },
+          { "label": "75–100 % · Akute Mobilisierung", "text": "Voller sympathischer Schub. Die Amygdala hat die Kontrolle übernommen. Cortisol und Adrenalin schießen hoch. Eine sofortige Intervention — ein tiefes Ausatmen, eine Pause, ein Atemanhalte-Reset — wirkt hier besonders gut." }
+        ] },
+        { "heading": "Das psychosomatische Echo", "body": "Hohe Werte in diesem Index zeigen, dass dein Körper akut mobilisiert ist:", "bullets": [
+          { "label": "Biologische Ebene", "text": "Blut wird von den Verdauungsorganen in die Muskeln verlagert, das Gehirn erhält ein Signal äußerer Gefahr, und der Cortisolspiegel steigt sprunghaft." },
+          { "label": "Mentale Ebene", "text": "Der präfrontale Kortex (zuständig für Logik) überlässt der Amygdala das Feld. Du erlebst Unruhe, Tunnelblick oder kognitive „Enge“." }
+        ] },
+        { "heading": "Warum ist das in ONDA?", "body": "Angst tarnt sich oft als gewöhnliche Müdigkeit oder hohe Produktivität. Der Alarmindex kann darauf hinweisen: Du trinkst vielleicht nur einen Kaffee, doch dein Rhythmus sieht aus, als würde sich der Körper gegen eine Bedrohung wappnen. ONDA gibt dir die Chance, dieses Muster früh zu erkennen und mit bewusstem Atmen das Alarmsignal „abzubrechen“, bevor daraus eine Panikattacke oder ein totaler Burnout wird." },
+        { "highlight": "Dein Körper kann nicht lügen. Wenn der Alarmindex steigt, ist das kein Grund zur Panik — sondern ein Grund für ein tiefes Ausatmen. Hol dir über den Körper die Kontrolle zurück, wenn der Kopf sich machtlos fühlt." }
+      ]
+    },
+    "acceleration": {
+      "title": "Beschleunigung der Herzfrequenz: die Intensität der biologischen Reaktion",
+      "shortTitle": "⚡ Beschleunigung der Herzfrequenz",
+      "sections": [
+        { "heading": "Dynamik jenseits der Geschwindigkeit", "body": "Die Beschleunigung der Herzfrequenz ist die zweite Ableitung deines Herzrhythmus. Während der Trend die Richtung deiner Bewegung zeigt, misst die Beschleunigung, wie stark diese Bewegung Fahrt aufnimmt. Sie zeigt, wie abrupt dein System „Gas gibt“ — oder umgekehrt, wie sanft es zu bremsen beginnt." },
+        { "heading": "Den Impuls lesen", "body": "Die Beschleunigung zeigt die verborgene Dynamik deiner Anpassung:", "bullets": [
+          { "label": "Positive Beschleunigung · Der Schub", "text": "Deine Herzfrequenz beschleunigt sich schneller als noch vor einer Sekunde. Das ist ein Zeichen einer „akuten“ Reaktion — etwa ein plötzlicher Schreck, ein scharfer Gedanke an eine Deadline oder ein körperlicher Kraftakt. Dein sympathisches System feuert mit voller Kapazität und mobilisiert Ressourcen genau hier und jetzt." },
+          { "label": "Negative Beschleunigung · Das Abbremsen", "text": "Die Änderungsrate deiner Herzfrequenz sinkt. Auch wenn dein Herz noch schnell schlägt, beschleunigt es nicht mehr. Das ist das erste Zeichen, dass der Höhepunkt überschritten ist und sich das System zu stabilisieren beginnt. Du gewinnst die Kontrolle über den Stress zurück." }
+        ] },
+        { "heading": "Warum ist das in ONDA?", "body": "Die Beschleunigung der Herzfrequenz ist ein Detektor deiner Reaktivität. Übermäßig scharfe Beschleunigungsspitzen können auf hohe Anspannung oder eine niedrige Stresstoleranz hindeuten. ONDA verfolgt diese „Ruckler“ und hilft dir, biologische Geschmeidigkeit zu entwickeln — die Fähigkeit, in Hochleistungszustände zu gehen, ohne die harten, zermürbenden Schübe, die dein System auslaugen." },
+        { "highlight": "Die Kraft liegt nicht im Schub, sondern in der Sanftheit des Übergangs. Je weniger scharfe Beschleunigungen dein Rhythmus hat, desto sorgsamer bewahrst du deine Lebensenergie." }
+      ]
+    },
+    "slope": {
+      "title": "Trend der Herzfrequenz: der Vektor der biologischen Richtung",
+      "shortTitle": "📈 Trend der Herzfrequenz",
+      "sections": [
+        { "heading": "Die Richtung des Stroms", "body": "Der Trend der Herzfrequenz ist ein mathematischer Indikator dafür, wohin dein System gerade steuert. Mit linearer Regression erfassen wir die Gesamtbahn deiner Herzfrequenz über das Messfenster. Das ist nicht nur eine Zahl, sondern eine Kompassnadel, die auf deine unmittelbare physiologische Zukunft zeigt." },
+        { "heading": "Den Vektor lesen", "body": "Die Richtung des Trends verrät die Dynamik deiner Anpassung:", "bullets": [
+          { "label": "Negativer Trend · Absteigend", "text": "Deine Herzfrequenz verlangsamt sich allmählich. Das ist die klassische „Entspannungsreaktion“. Dein Nervensystem dämpft die Erregung erfolgreich und wechselt in den Erholungsmodus. Das ideale Szenario für Meditation oder das Abschalten nach der Arbeit." },
+          { "label": "Positiver Trend · Ansteigend", "text": "Deine Herzfrequenz beschleunigt sich. Das signalisiert steigende emotionale oder körperliche Erregung. Dein Körper bereitet sich auf Handlung vor oder reagiert auf einen Stressor, der während der Sitzung aufgetaucht ist." },
+          { "label": "Nulltrend · Plateau", "text": "Ein stabiler Zustand. Dein System ist im Gleichgewicht und hält sein aktuelles Aktivierungsniveau ohne scharfe Schwankungen." }
+        ] },
+        { "heading": "Warum ist das in ONDA?", "body": "Der Trend zeigt dir die Trägheit deines Nervensystems. Wenn du dich zu entspannen versuchst, der Trend aber positiv bleibt, hat dein „Bremssystem“ noch nicht gegriffen. Dieser Wert hilft dir zu verstehen, wie wirksam die gewählte Praxis (Atmung, Musik, eine Pause) deinen biologischen Kurs tatsächlich verändert." },
+        { "highlight": "Es kommt nicht darauf an, wo du bist, sondern in welche Richtung du dich bewegst. Ein negativer Trend ist deine Eintrittskarte in tiefe Regeneration." }
+      ]
+    },
+    "recovery": {
+      "title": "Erholungsrate: der Index der Rückkehr zu dir selbst",
+      "shortTitle": "🔄 Erholungsrate %",
+      "sections": [
+        { "heading": "Die Kunst des Zieleinlaufs", "body": "Die Erholungsrate misst, wie wirksam dein Herz nach einer Anstrengung „herunterschalten“ kann. Bei ONDA berechnen wir, wie schnell deine Herzfrequenz vom Höchstwert der aktuellen Sitzung zu deinem Durchschnitt zurückkehrt. Sie misst deine Fähigkeit, einen Erregungszustand zu verlassen und zu deinem Schwerpunkt zurückzufinden." },
+        { "heading": "Warum ist das wichtig?", "body": "In der Wildnis überlebt nicht, wer am schnellsten rennt, sondern wer sich nach der Jagd am schnellsten beruhigt. In der modernen Welt ist es genauso:", "bullets": [
+          { "label": "0 % · Festgefahren", "text": "Deine Herzfrequenz ist auf dem Höchstwert eingefroren. Dein Körper „kämpft gegen Schatten“, obwohl der äußere Auslöser längst weg ist. Das ist ein Zeichen für ein starres Nervensystem und angesammelte Müdigkeit." },
+          { "label": "100 % · Volle Ruhe", "text": "Dein Herz ist vollständig zu seiner Baseline oder sogar darunter zurückgekehrt. Das ist der Goldstandard biologischer Flexibilität." }
+        ] },
+        { "heading": "Das biologische Echo", "body": "Deine Erholungsgeschwindigkeit hängt direkt vom Tonus deines Vagusnervs ab. Eine hohe Erholungsrate bedeutet, dass deine „parasympathische Bremse“ bestens funktioniert. So kannst du zwischen Aufgaben wechseln, ohne den Stress des vorherigen Moments in den nächsten mitzunehmen." },
+        { "highlight": "Nicht die Höhe des Gipfels zählt, sondern die Geschwindigkeit des Abstiegs. Wahre Stärke liegt in der Fähigkeit, schnell ins Gleichgewicht zurückzufinden." }
+      ]
+    },
+    "csi": {
+      "title": "CSI: kardialer Stabilitätsindex",
+      "shortTitle": "🎯 Kardialer Stabilitätsindex (CSI)",
+      "sections": [
+        { "heading": "Die Architektur des Rhythmus", "body": "Der CSI (Cardiac Stability Index) ist ein eigener Koeffizient, mit dem ONDA tiefer blickt als ein gewöhnlicher Puls. Wir nehmen die Standardabweichung deiner Herzzyklen und teilen sie durch die mittlere Herzfrequenz. So messen wir die reine Gleichmäßigkeit deines Herzens, unabhängig davon, wie schnell es gerade schlägt." },
+        { "heading": "Stabilität vs. Chaos", "body": "Der CSI ist der Detektor für „biologisches Rauschen“ in deinem System:", "bullets": [
+          { "label": "0,03 – 0,10 · Diamantene Stabilität", "text": "Dein Herz arbeitet mit der Präzision einer Schweizer Uhr. Das ist ein Zustand tiefer physiologischer Sicherheit. Das System verschwendet keine Ressourcen auf unnötige Schwankungen und arbeitet im Modus maximaler Sparsamkeit und Konzentration." },
+          { "label": "0,11 – 0,24 · Dynamisches Gleichgewicht", "text": "Der natürliche Rhythmus eines lebenden Organismus. Dein Herz passt sich fließend an äußere Reize an und bewahrt dabei seine strukturelle Gesamtintegrität." },
+          { "label": "0,25+ · Biologisches Rauschen", "text": "Ein Signal der Instabilität. Ein hoher CSI deutet oft auf „Störungen“ in der Reizleitung, extreme Müdigkeit oder Messrauschen hin. In diesem Zustand verliert das System die Kontrolle über seinen Rhythmus." }
+        ] },
+        { "heading": "Warum ist das für ONDA wichtig?", "body": "Der CSI ist die Grundlage, auf der dein Stress % aufbaut. Während die HRV etwas über deine Flexibilität verrät, zeigt der CSI deine strukturelle Zuverlässigkeit. Ein niedriger CSI ist ein Zeichen, dass dein inneres „Betriebssystem“ ohne Fehler im Code läuft." },
+        { "highlight": "Wahre Stärke liegt in der Stabilität. Je weniger Rauschen in deinem Rhythmus, desto mehr Klarheit in deinem Kopf." }
+      ]
+    },
+    "hrv": {
+      "title": "HRV: der Index deiner biologischen Beweglichkeit",
+      "shortTitle": "📊 HRV (RMSSD)",
+      "sections": [
+        { "heading": "Das innere Mikroskop", "body": "Die HRV (Herzfrequenzvariabilität) ist der ausgefeilteste und aussagekräftigste Wert im Arsenal von ONDA. Anders als die Herzfrequenz, die nur Schläge zählt, misst die HRV die mikroskopischen Schwankungen der Zeit zwischen diesen Schlägen in Millisekunden. Mit dem RMSSD-Algorithmus schätzen wir, wie geschmeidig dein Herz auf jede Bewegung, jeden Gedanken und jeden Atemzug reagiert." },
+        { "heading": "Ein Spiegel des Vagusnervs", "body": "Die HRV ist ein direkter Statusbericht über die Aktivität deines Vagusnervs:", "bullets": [
+          { "label": "Hohe HRV (40–70 ms und mehr)", "text": "Dein Herz passt sich sofort an Veränderungen an. Das ist ein Zeichen einer kräftigen parasympathischen Antwort. Du bist in einem Zustand hoher biologischer Widerstandskraft: ruhig, fokussiert und handlungsbereit." },
+          { "label": "Niedrige HRV (unter 20–25 ms)", "text": "Dein autonomes Nervensystem ist „blockiert“. Dein Herz schlägt zu gleichförmig, wie ein Roboter. Das ist ein Signal, dass deine Erholungsressourcen erschöpft sind und das System am Rand seiner Anpassungsfähigkeit arbeitet." }
+        ] },
+        { "heading": "Warum sie mehr zählt als der Puls", "body": "Zwei Menschen können exakt dieselbe Herzfrequenz, aber völlig unterschiedliche Gesundheitsprofile haben. Der Unterschied liegt in der HRV. Hohe Variabilität bedeutet, dass dein „inneres Betriebssystem“ ständig die Umgebung abtastet und deinen Rhythmus fein nachjustiert. Niedrige Variabilität ist ein Zeichen biologischer Zerbrechlichkeit." },
+        { "heading": "Training mit ONDA", "body": "Die HRV ist dynamisch. Sie sinkt durch Alkohol, Schlafmangel oder Übertraining, lässt sich aber „stärken“. Mit den Atemprotokollen in ONDA trainierst du im Grunde deinen Vagusnerv und hebst deine HRV-Baseline — und damit deine Widerstandskraft gegen die Stürme des Lebens." },
+        { "highlight": "Eine hohe HRV ist deine Fähigkeit, dich zu biegen, ohne zu brechen. Sie ist das Maß deiner Lebenskraft, ausgedrückt in Millisekunden." }
+      ]
+    },
+    "energy": {
+      "title": "Energie %: deine biologische Kraftreserve",
+      "shortTitle": "🔋 Energie %",
+      "sections": [
+        { "heading": "Deine innere Batterie", "body": "Bei ONDA ist Energie % kein subjektives Gefühl von Wachheit, sondern eine grobe Schätzung deiner kardiovaskulären Reserve. Sie ist ein rechnerisches Verhältnis davon, wie weit deine Herzfrequenz von ihrer oberen Grenze entfernt ist und wie stabil dein Herzrhythmus in genau dieser Sekunde ist. Je höher der Wert, desto mehr physiologische Kapazität hat dein Körper für neue Aufgaben." },
+        { "heading": "Die Anatomie der Erschöpfung", "body": "Dein Energiewert sinkt unweigerlich unter dem Einfluss von drei Faktoren:", "bullets": [
+          { "label": "Angesammelte Müdigkeit", "text": "Wenn sich das System im Schlaf nicht ausreichend erholt." },
+          { "label": "Hoher Puls", "text": "Wer mit „hoher Drehzahl“ läuft, verbrennt den verfügbaren Treibstoff schnell." },
+          { "label": "Anhaltender Stress", "text": "Ständige Turbulenzen im Rhythmus (geringe Stabilität) zwingen das Herz, mehr Ressourcen allein für die Grundfunktionen aufzuwenden." }
+        ] },
+        { "heading": "Was die Zahlen dir sagen", "body": "", "bullets": [
+          { "label": "80–100 % · Voll geladen", "text": "Dein System ist im Überfluss. Du bist bereit für intensive geistige Belastungen, anspruchsvolle Workouts und strategische Entscheidungen." },
+          { "label": "40–70 % · Betriebsbereich", "text": "Die Reserven beginnen zu schwinden. Zeit, dein Tempo einzuteilen. Deine Effizienz ist noch hoch, aber der „Preis“ jeder weiteren Anstrengung steigt." },
+          { "label": "Unter 30 % · Kritisch niedrig", "text": "Du lebst „auf Pump“. In diesem Zustand nimmt dein Körper jedes neue Ereignis als Bedrohung wahr. Das Gehirn schaltet in einen strengen Energiesparmodus und fährt Kreativität und Empathie herunter." }
+        ] },
+        { "heading": "Die Kunst des Aufladens", "body": "Energie % ist unser dynamischster Wert. Er kann nach einem schwierigen Gespräch abstürzen und nach 10 Minuten tiefer Meditation oder einem kurzen Spaziergang wieder hochschnellen. ONDA lässt dich diese Schwankungen in Echtzeit sehen und macht Energiemanagement vom Ratespiel zur exakten Wissenschaft." },
+        { "highlight": "Warte nicht, bis der Tank leer ist. Ein hoher Energiewert ist deine Versicherung gegen Fehler. Liegt der Wert im roten Bereich, ist jede Arbeit kontraproduktiv. Erst das System aufladen, dann handeln." }
+      ]
+    },
+    "stress": {
+      "title": "Stress %: der Index biologischer Turbulenz",
+      "shortTitle": "⚡ Stress %",
+      "sections": [
+        { "heading": "Jenseits der Emotionen", "body": "Bei ONDA ist Stress % kein psychologischer Zustand, sondern ein grober Index der Unregelmäßigkeit deines Herzrhythmus. Der Wert wird aus dem kardialen Stabilitätsindex abgeleitet. Wir analysieren nicht nur deinen Puls, sondern die Mikroabweichungen im Rhythmus jedes einzelnen Schlags. Je größer die Unregelmäßigkeit und das „Rauschen“ in diesen Intervallen, desto höher dein biologischer Stresswert." },
+        { "heading": "Was bedeutet dein Wert?", "body": "Stress ist das „Ausgeben“ deiner Lebenskraft. Wir haben ihn in drei Zonen eingeteilt:", "bullets": [
+          { "label": "0 – 30 % · Die Flow-Zone", "text": "Dein System ist in einem Zustand der Kohärenz. Dein Herz arbeitet rhythmisch und effizient. Die ideale Zeit für komplexe Entscheidungen und tiefe Arbeit." },
+          { "label": "30 – 60 % · Die Anpassungszone", "text": "Du stehst unter Last. Das ist an einem aktiven Tag normal, doch wenn du zu lange hier bleibst, beginnen sich deine kognitiven Ressourcen zu erschöpfen." },
+          { "label": "60 %+ · Die Burnout-Zone", "text": "Akuter physiologischer Stress. Dein Nervensystem ist überfordert. In diesem Zustand fährt das Gehirn den präfrontalen Kortex (Logik) herunter und übergibt die Kontrolle an die Amygdala (Angst und Impulsivität)." }
+        ] },
+        { "heading": "Warum ist das wichtig?", "body": "Der gefährlichste Stress ist der, den du nicht spürst. Du sitzt vielleicht in völliger Stille, und doch zeigt dein Stress % 70 %. Das heißt, im Inneren läuft ein unsichtbarer Kampf: Schlafmangel, versteckte Entzündungen oder Informationsüberflutung. ONDA macht das Unsichtbare sichtbar, damit du Pause drücken kannst, bevor die Erschöpfung einsetzt." },
+        { "highlight": "Stress ist nicht, was dir passiert, sondern wie dein Körper als Reaktion darauf seine Ressourcen ausgibt. Ein hoher Prozentwert ist ein Signal, deine Prioritäten genau in diesem Moment neu zu bewerten." }
+      ]
+    },
+    "br": {
+      "title": "Atemfrequenz: die Brücke zwischen den Welten",
+      "shortTitle": "🌬️ /min — Atemfrequenz",
+      "sections": [
+        { "heading": "Die einzige manuelle Steuerung", "body": "Die Atemfrequenz ist ein besonderer biometrischer Parameter. Anders als dein Herzschlag oder deine Verdauung ist die Atmung die einzige Funktion des autonomen Nervensystems, die du direkt steuern kannst. Sie ist deine „Fernbedienung“ für deinen inneren Zustand." },
+        { "heading": "Der Rhythmus der Ruhe vs. der Rhythmus des Überlebens", "body": "Deine Atemfrequenz ist eine Live-Übertragung dessen, wie dein Gehirn seine Umgebung wahrnimmt:", "bullets": [
+          { "label": "Flache und schnelle Atmung", "text": "Ein Alarmsignal. Wenn du mehr als 16–20 Mal pro Minute in den oberen Brustkorb atmest, sagst du deinem Körper: „Wir sind in Gefahr.“ Das hält den Cortisolspiegel hoch und das Gehirn in ständiger Wachsamkeit." },
+          { "label": "Tiefe und langsame Atmung", "text": "Ein Sicherheitssignal. Wenn du auf 6–10 Atemzüge pro Minute verlangsamst, aktivierst du den Vagusnerv. Das bringt das System rasch in einen Modus tiefer Konzentration und emotionaler Stabilität." }
+        ] },
+        { "heading": "Biologisches Feedback", "body": "Bei ONDA verfolgen wir deine Atemfrequenz, um Momente von „Bildschirm-Apnoe“ zu erkennen — wenn du beim Lesen von E-Mails oder bei komplexen Aufgaben unbewusst den Atem anhältst oder unregelmäßig atmest. Diese Mikropausen lösen eine Kaskade von Stressreaktionen aus, die du vielleicht nicht einmal bemerkst." },
+        { "heading": "Die Kunst des Verlangsamens", "body": "Optimale Atmung in Ruhe ist ein fast unsichtbarer Rhythmus. Je weniger Atemzüge du brauchst, um dein Blut mit Sauerstoff zu versorgen, desto effizienter arbeitet dein Stoffwechsel. Wir bringen dir bei, „weniger zu atmen“ — jeden Atemzug seltener, aber hochwertiger zu machen, sodass jeder Zyklus zu einem Akt der Erholung wird." },
+        { "highlight": "Atmen ist die einzige Möglichkeit, mit deinem Herzen in seiner eigenen Sprache zu sprechen. Indem du das Einatmen verlangsamst, gibst du deinem Geist Ruhe vor." }
+      ]
+    },
+    "bpm": {
+      "title": "BPM: der Rhythmus deines inneren Betriebssystems",
+      "shortTitle": "❤️ BPM — Herzfrequenz",
+      "sections": [
+        { "heading": "Das biologische Metronom", "body": "BPM (Schläge pro Minute) ist mehr als nur das Tempo, mit dem dein Herz Blut pumpt. Im ONDA-Ökosystem sehen wir den Puls als die wichtigste Schnittstelle deines autonomen Nervensystems. Er ist ein Live-Diagramm dafür, wie dein Körper Ressourcen als Antwort auf die Herausforderungen der Außenwelt verteilt." },
+        { "heading": "Eine Symphonie zweier Zustände", "body": "Dein Herz balanciert ständig zwischen zwei „Dirigenten“:", "bullets": [
+          { "label": "Sympathischer Antrieb", "text": "Wenn dein Puls steigt, geht dein Körper in einen Hochleistungs- oder Verteidigungsmodus. Das ist Mobilisierung — unverzichtbar für einen Sprint, aber schädlich, wenn sie anhält." },
+          { "label": "Parasympathische Ruhe", "text": "Eine niedrige Herzfrequenz ist ein Signal der Sicherheit. In diesem Zustand startet der Körper Geweberegeneration, Gedächtniskonsolidierung und tiefe Erholung." }
+        ] },
+        { "heading": "Warum verfolgen wir die Zahlen?", "body": "Deine Ruheherzfrequenz sind deine biologischen Grundkosten des Lebens.", "bullets": [
+          { "label": "Hoher Puls im Sitzen", "text": "Du verschwendest Energie. Dein Körper „läuft einen Marathon“, während du nur E-Mails beantwortest. Das ist ein direkter Weg ins kognitive Burnout." },
+          { "label": "Optimaler Puls", "text": "Das ist der Modus „leises Gleiten“ — das System arbeitet mit maximaler Effizienz und lässt eine große Reserve für unerwartete Aufgaben." }
+        ] },
+        { "heading": "Ein Werkzeug zur Kalibrierung", "body": "BPM in der ONDA-App ist ein Spiegel. Wenn du einen ungewöhnlichen Pulsanstieg bemerkst, hast du die Chance, bewusst einzugreifen. Wir messen nicht nur Schläge — wir bringen dir bei, sie zu meistern. Eine kurze Atemsession oder ein Wechsel des Fokus kann deinen Puls rasch „senken“ und dein Gehirn vom Überlebensmodus in kreativen Flow schalten." },
+        { "highlight": "Ein hoher Puls ist teuer. Ein niedriger Puls ist gewollt. Steuere den Rhythmus, um dein Leben zu steuern." }
+      ]
+    }
+  }
+}
