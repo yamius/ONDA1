@@ -1,0 +1,63 @@
+{
+  "hub": {
+    "h1": "Tests d’outils de biohacking",
+    "intro": "Des tests indépendants et fondés sur des critères dans dix catégories de matériel et de logiciels de biohacking — capteurs VFC, applis de sommeil et systèmes de régulation thermique, stimulateurs du nerf vague, capteurs de glucose en continu, casques EEG, luminothérapie rouge, bains froids, saunas et applis de méditation. Chaque appareil est noté selon une grille fixe et publique — pas selon le battage médiatique.",
+    "methodologyLink": "→ Notre méthode de notation"
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "reviews": "Tests",
+    "methodology": "Méthodologie"
+  },
+  "methodology": {
+    "h1": "Comment ONDA note les outils",
+    "intro": "Chaque test sur ONDA est une évaluation éditoriale unique et signée — ni une moyenne de la foule, ni un algorithme. Nous notons dans dix catégories de biohacking avec des grilles propres à chaque catégorie, chacune pondérée selon ce qui compte vraiment (précision de la VFC pour les capteurs, irradiance pour la lumière rouge, capacité de refroidissement pour les bains froids, spectre de la source de chaleur pour les saunas, plage de température pour les systèmes de sommeil). Cette page présente la grille fixe derrière ces notes, pour que vous puissiez juger le jugement.",
+    "scoreHeading": "La note",
+    "scoreBody": "Chaque outil reçoit une note globale de 0 à 10 (une décimale). C’est la moyenne pondérée des critères ci-dessous — jamais un chiffre rond choisi au feeling. Un seul testeur l’attribue ; elle est donc publiée comme une note éditoriale unique, pas comme la moyenne de plusieurs avis.",
+    "criteriaHeading": "Critères de notation — {{category}}",
+    "testHeading": "Testé en conditions réelles ou évaluation fondée sur les preuves",
+    "testBody": "Chaque test porte l’une de ces deux mentions. « Testé en conditions réelles » signifie qu’ONDA a porté et utilisé l’appareil, avec la période de test indiquée. « Évaluation fondée sur les preuves » signifie que l’outil a été noté à partir des fiches techniques et d’études de validation publiées et relues par des pairs, toutes citées dans les références du test. Nous ne présentons jamais une évaluation comme un test en conditions réelles.",
+    "independenceHeading": "Indépendance",
+    "independenceBody": "Aucun fabricant ne paie pour un classement ou pour une note. Les liens produits sont de simples liens vers les sites officiels, et ONDA ne touche aucune commission. Si cela devait changer, les liens affiliés seraient clairement signalés et indiqués sur la page.",
+    "selfReviewHeading": "ONDA se note-t-elle elle-même ?",
+    "selfReviewBody": "Non. ONDA développe une appli de biofeedback VFC, et elle n’est jamais notée dans ces tests indépendants — vous n’y trouverez aucun produit ONDA classé. Lorsque nous comparons ONDA à d’autres applis, cela se trouve à part, sur /compare, clairement présenté comme la comparaison d’ONDA elle-même et tenu entièrement à l’écart des classements indépendants. Nous préférons nous tenir à l’écart plutôt que de corriger notre propre copie.",
+    "sourcesHeading": "Sources de données",
+    "sourcesBody": "Les notes s’appuient sur trois sources : les spécifications et la documentation des fabricants, des tests indépendants de tiers et la littérature de validation publiée et relue par des pairs. Les prix et la disponibilité sont indiqués à la date de chaque test et peuvent évoluer.",
+    "coiHeading": "Conflits d’intérêts",
+    "coiBody": "ONDA ne vend, ne fabrique ni ne revend aucun des produits testés ici, et ne reçoit ni rémunération, ni parrainage, ni cadeaux, ni appareils gratuits en échange d’une couverture ou d’une note. Aucune relation commerciale ne se cache derrière les classements. Le seul produit qu’ONDA fabrique — son appli — est volontairement exclu de ces tests.",
+    "updatesHeading": "À quelle fréquence les classements changent",
+    "updatesBody": "Chaque test et chaque comparatif porte une date de mise à jour. Nous révisons les notes et les classements lorsqu’un modèle phare sort, lorsqu’un prix ou une disponibilité change sensiblement, ou lorsque de nouvelles preuves apparaissent — pas selon un calendrier fixe. Lorsqu’un produit est arrêté ou, par exemple, interdit à la vente, nous le signalons et ajustons le classement.",
+    "authorHeading": "Qui écrit les tests",
+    "authorBody": "Les tests sont rédigés par Yakiv Bilenko, fondateur d’ONDA Life.",
+    "authorLink": "À propos de l’auteur"
+  },
+  "ui": {
+    "updated": "Mis à jour",
+    "howWeTested": "Comment nous avons testé :",
+    "pros": "Points forts",
+    "cons": "Points faibles",
+    "price": "Prix :",
+    "asOf": "au",
+    "references": "Références",
+    "relatedReviews": "Tests associés",
+    "allReviews": "← Tous les tests",
+    "visitSite": "Visiter le site officiel de {{brand}} →",
+    "affiliateNote": "Lien affilié — ONDA peut percevoir une commission. Cela n’affecte pas la note.",
+    "scoreBreakdown": "[ DÉTAIL_DE_LA_NOTE ]",
+    "comparisonsHeading": "[ COMPARATIFS ]",
+    "comparisonTag": "[ COMPARATIF ]",
+    "topPicks": "[ MEILLEURS_CHOIX ]",
+    "comparisonTable": "[ TABLEAU_COMPARATIF ]",
+    "verdict": "Verdict",
+    "faq": "[ FAQ ]",
+    "product": "Produit",
+    "overall": "Global",
+    "metaReviewTitle": "Test {{name}} — note {{score}}/10"
+  },
+  "testStatus": {
+    "hands-on": "Testé en conditions réelles",
+    "evidence-based": "Évaluation fondée sur les preuves"
+  },
+  "bodies": {},
+  "comparisons": {}
+}

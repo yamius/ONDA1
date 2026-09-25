@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "ONDA-Bibliothek — Leitfäden zu Atmung, HRV und Meditation | ONDA Life",
+    "description": "Wissenschaftlich fundierte Leitfäden zu Atmung, HRV, Meditation und Nervensystem, geordnet in neun Themen. Wähle ein Thema, um loszulegen."
+  },
+  "breadcrumb": {
+    "home": "Start",
+    "current": "Bibliothek"
+  },
+  "badge": "[ ONDA-BIBLIOTHEK ]",
+  "h1": "ONDA-Bibliothek",
+  "subtitle": "Wissenschaftlich fundierte Leitfäden zu Atmung, HRV, Meditation und Nervensystem. Wähle ein Thema, um loszulegen.",
+  "searchPlaceholder": "Artikel suchen …",
+  "allLabel": "Alle",
+  "noResults": "Keine Artikel gefunden. Versuch eine andere Suche.",
+  "featuredHeader": "[ AUSGEWÄHLTE ARTIKEL ]",
+  "detail": {
+    "backToArticles": "← Zurück zu den Artikeln",
+    "relatedGlossaryTerms": "VERWANDTE GLOSSARBEGRIFFE",
+    "browseFullGlossary": "→ Zum vollständigen Glossar",
+    "disclaimerLabel": "HINWEIS",
+    "disclaimer": "Informationsinhalt, keine medizinische Beratung. Die Artikel von ONDA Life erklären, wie Systeme funktionieren und was die Forschung nahelegt — sie stellen keine Diagnose, behandeln nicht und ersetzen keine qualifizierte Fachkraft. Sprich mit medizinischem Fachpersonal, bevor du etwas an deiner Gesundheit, Medikation oder deinem Training änderst.",
+    "by": "Von",
+    "authorRole": "Architekt und Gestaltpsychologe, Gründer von ONDA Life",
+    "updated": "Aktualisiert am",
+    "toc": "AUF DIESER SEITE",
+    "cite": "[ ARTIKEL_ZITIEREN ]",
+    "apaStyle": "APA-Stil",
+    "finalize": "[ ALS_GELESEN_MARKIEREN ]",
+    "completed": "[ STATUS: GELESEN ]"
+  },
+  "categories": {
+    "Neural Hardware": "Neuronale Hardware",
+    "Biological Software": "Biologische Software",
+    "OS States": "OS-Zustände",
+    "ONDA Protocol": "ONDA-Protokoll"
+  },
+  "browse": {
+    "heading": "[ NACH_THEMA_STÖBERN ]",
+    "total": "{{count}} Artikel insgesamt"
+  },
+  "topics": {
+    "hrv": "HRV",
+    "circadian": "Zirkadian",
+    "dopamine": "Dopamin",
+    "metabolic": "Stoffwechsel",
+    "breathwork": "Atemarbeit",
+    "neuroplasticity": "Neuroplastizität",
+    "cognitive": "Kognition",
+    "spinal": "Wirbelsäule",
+    "hormones": "Hormone",
+    "longevity": "Langlebigkeit"
+  },
+  "bodies": {}
+}

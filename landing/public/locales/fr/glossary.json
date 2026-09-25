@@ -1,0 +1,32 @@
+{
+  "meta": {
+    "title": "Glossaire VFC, respiration et neurosciences | ONDA Life",
+    "description": "Une base de connaissances sur la science dont s’inspire ONDA — VFC, nerf vague, respiration en résonance, régulation autonome et intéroception — ainsi que les termes plus larges de neurosciences et de biohacking derrière le système ONDA."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Glossaire"
+  },
+  "badge": "[ BASE DE CONNAISSANCES ]",
+  "h1": "Glossaire",
+  "subtitle": "La science dont s’inspire ONDA — VFC, nerf vague, respiration en résonance, régulation autonome et intéroception — ainsi que les termes de neurosciences plus larges derrière le système ONDA. Les termes scientifiques et les concepts propres à ONDA sont signalés.",
+  "featuredHeader": "[ TERMES À LA UNE ]",
+  "searchPlaceholder": "rechercher un terme…",
+  "allLabel": "Tous",
+  "noResults": "Aucun terme trouvé. Essayez une autre recherche.",
+  "term": {
+    "relatedDeepDives": "ARTICLES APPROFONDIS",
+    "relatedTerms": "TERMES ASSOCIÉS",
+    "upgradeKnowledge": "Approfondissez vos connaissances : découvrez comment optimiser {{term}} dans notre guide complet.",
+    "backToGlossary": "← Retour au glossaire",
+    "exploreMore": "EXPLORER PLUS",
+    "links": {
+      "fullGlossary": "Glossaire complet",
+      "allArticles": "Tous les articles",
+      "bioOs": "Bio OS",
+      "theStack": "The Stack",
+      "home": "Accueil"
+    }
+  },
+  "bodies": {}
+}

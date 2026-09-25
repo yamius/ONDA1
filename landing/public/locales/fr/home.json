@@ -1,0 +1,167 @@
+{
+  "menu": {
+    "about": "À propos",
+    "aboutSr": " ONDA Life — application de biofeedback VFC et de respiration guidée",
+    "philosophy": "Philosophie",
+    "philosophySr": " — la philosophie du spectre intérieur d’ONDA Life",
+    "glossary": "Glossaire",
+    "glossarySr": " des termes du biohacking et des neurosciences",
+    "articles": "Articles",
+    "articlesSr": " sur le biohacking et l’optimisation humaine",
+    "reviews": "Tests",
+    "research": "Recherche",
+    "tools": "Outils",
+    "reviewsSr": " de capteurs VFC et d’outils de biohacking",
+    "download": "Télécharger",
+    "bio": "Bio OS",
+    "contacts": "Contact",
+    "contactsSr": " — joindre l’équipe ONDA Life",
+    "bioSr": " — mesure biométrique en direct",
+    "languagesLabel": "Langue"
+  },
+  "hero": {
+    "badge": "[ ONDA LIFE — le système d’exploitation de votre système nerveux ]",
+    "titleLine1": "Arrêtez de seulement mesurer votre stress.",
+    "titleLine2": "Commencez à l’entraîner.",
+    "titleLine3": "",
+    "subtitle": "Votre montre vous dit déjà que votre VFC est basse. ONDA guide votre respiration et vous montre en temps réel comment votre rythme cardiaque répond — pour vraiment apaiser votre système nerveux, pas seulement le mesurer. Fonctionne avec la caméra de votre iPhone ou une Apple Watch — sans matériel supplémentaire.",
+    "ctaDownload": "Commencer gratuitement",
+    "ctaDownloadAria": "Commencer ONDA Life gratuitement",
+    "ctaMicrocopy": "Sans compte. Gratuit pour commencer. Votre première mesure en 90 secondes.",
+    "ctaLearn": "En savoir plus",
+    "scrollAria": "Défiler jusqu’au produit"
+  },
+  "concept": {
+    "tag": "[ CONCEPT ]",
+    "titlePrefix": "Votre corps est l’ordinateur",
+    "titleHighlight": "le plus complexe",
+    "subtitle": "La plupart des méditations se font au hasard : une séance ici, une application là, rien qui ne les relie. ONDA est un parcours structuré. Vous commencez par stabiliser votre système nerveux, puis vous construisez à partir de là — et vous voyez votre VFC réagir pendant la pratique. Chaque niveau repose sur le précédent.",
+    "cards": [
+      { "title": "Systématique", "description": "Pas de méditations au hasard, mais un protocole structuré fondé sur le fonctionnement réel du système nerveux." },
+      { "title": "Progressif", "description": "Chaque niveau s’appuie sur le précédent — d’une ligne de base stable à la concentration, à la régulation émotionnelle et au-delà." },
+      { "title": "Mesurable", "description": "Suivez de vrais signaux — VFC, sommeil, stress — et voyez votre tendance évoluer sur des semaines, pas un seul chiffre du matin." }
+    ]
+  },
+  "levels": {
+    "tag": "[ LE PARCOURS ]",
+    "titleLeft": "Où cela mène :",
+    "titleRight": "8 niveaux.",
+    "subtitle": "ONDA n’est pas un exercice isolé, mais une progression structurée. Vous commencez par apaiser votre système nerveux, puis vous construisez à partir de là. Allez aussi loin que vous le souhaitez — d’une ligne de base stable jusqu’aux états les plus calmes d’une pratique au long cours.",
+    "levelLabel": "Niveau {{n}}",
+    "items": [
+      { "name": "CORPS / TERRA", "description": "Respiration, diaphragme et VFC — la base de l’activation parasympathique.", "parts": ["1. Je suis", "2. Je bouge", "3. Je m’adapte"] },
+      { "name": "ÉMOTIONS / AQUA", "description": "Travailler avec le stress et la réactivité émotionnelle — des réactions plus stables quand les choses deviennent lourdes.", "parts": ["4. Je manœuvre", "5. Je protège mon territoire", "6. Je fais partie du groupe"] },
+      { "name": "ESPRIT / AER", "description": "Attention et concentration — entraîner un esprit plus calme et plus clair.", "parts": ["7. Je discerne", "8. Je me concentre", "9. Je façonne la vision"] },
+      { "name": "SOCIÉTÉ / IGNIS", "description": "Lien et calme social — être plus serein au contact des autres.", "parts": ["10. Je m’exprime", "11. J’interagis", "12. Je co-crée"] },
+      { "name": "CORPS II / TERRA II", "description": "Une incarnation plus profonde — passer de penser le corps à le ressentir. Fluidité et aisance dans le mouvement.", "parts": ["13. Je ressens", "14. Je canalise", "15. Je m’accorde"] },
+      { "name": "CERVEAU / AQUA II", "description": "Conscience de soi et métacognition — observer son propre esprit avec plus de clarté.", "parts": ["16. Je suis témoin", "17. J’intègre", "18. Je synchronise"] },
+      { "name": "ADN / AER II", "description": "Là où la pratique cesse d’être quelque chose que vous faites pour devenir une partie de qui vous êtes. Des mois de régularité qui s’installent en une ligne de base plus stable.", "parts": ["19. Je me souviens", "20. Je restaure", "21. Je synthétise"] },
+      { "name": "ATOME / IGNIS II", "description": "Les états profonds et silencieux que décrivent les pratiquants de longue date — présence totale, le soi qui s’apaise. Vécus, pas mesurés. La limite de la carte.", "parts": ["22. Je suis vibration", "23. Je suis plénitude", "24. Je suis la source"] }
+    ]
+  },
+  "features": {
+    "tag": "[ FONCTIONNALITÉS ]",
+    "titlePrefix": "Bio-sync",
+    "titleHighlight": "en temps réel",
+    "items": [
+      { "title": "Intégration des capteurs", "description": "Utilisez la caméra de votre iPhone ou une Apple Watch — ou importez la VFC et le sommeil de tout capteur synchronisé avec Apple Santé. Voyez votre rythme cardiaque répondre en temps réel.", "iconAlt": "Icône de synchronisation des données biométriques" },
+      { "title": "Progression ludique", "description": "Gagnez des OND pour les pratiques terminées et les séries. Débloquez des thèmes et des protocoles supplémentaires au fil du temps.", "iconAlt": "Icône de progression ludique" },
+      { "title": "Système structuré", "description": "Pas de méditations au hasard. Chaque pratique cible un système précis : respiration, émotions, esprit, récupération.", "iconAlt": "Icône de système structuré" }
+    ]
+  },
+  "bridge": {
+    "tag": "[ LE PROBLÈME ]",
+    "title": "Vous avez essayé les applis. Vous avez la montre. Et vous n’arrivez toujours pas à décrocher.",
+    "p1": "Les applis de méditation sont agréables, mais aléatoires — aucun retour, aucun moyen de savoir si quelque chose fonctionne, alors on ne s’y tient pas. Les capteurs ont le problème inverse : votre bague vous dit que votre VFC s’est effondrée et que votre stress est élevé, puis vous laisse vous débrouiller.",
+    "p2": "ONDA est le chaînon manquant. Une respiration guidée, avec un retour en direct de votre propre cœur — pour voir le chiffre bouger pendant la pratique, et votre ligne de base progresser au fil des semaines."
+  },
+  "product": {
+    "tag": "[ LE PRODUIT ]",
+    "title": "La plupart des applis vous notent après. ONDA vous montre pendant.",
+    "subtitle": "Voyez votre corps répondre, en temps réel. Respirez avec le guidage et regardez votre rythme cardiaque se lisser au fil de la séance — la boucle de retour en direct qui a toujours manqué à la méditation.",
+    "shots": [
+      { "caption": "Données vitales en direct depuis votre Apple Watch — fréquence cardiaque, respiration et cohérence.", "alt": "Tableau de bord ONDA avec fréquence cardiaque, fréquence respiratoire et cohérence en direct depuis l’Apple Watch" },
+      { "caption": "Des protocoles courts, fondés sur la science — de 3 à 12 minutes.", "alt": "Liste des protocoles de respiration ONDA — Micro-Breath, Still Wave, Warm Pulse et plus" },
+      { "caption": "Votre tendance VFC — ce qui compte vraiment, sur des semaines.", "alt": "Évolution de la VFC au repos dans ONDA avec une série de pratiques" }
+    ]
+  },
+  "how": {
+    "tag": "[ COMMENT ÇA MARCHE ]",
+    "title": "Trois étapes. Cinq minutes.",
+    "steps": [
+      { "n": "01", "title": "Connecter", "text": "Utilisez la caméra de votre iPhone ou associez l’Apple Watch que vous avez déjà. Aucun matériel spécial requis." },
+      { "n": "02", "title": "Respirer", "text": "Suivez une séance guidée de 5 à 30 minutes. ONDA guide votre respiration et lit votre cœur en temps réel." },
+      { "n": "03", "title": "Voir la différence", "text": "Voyez votre rythme répondre maintenant, et votre ligne de base VFC progresser au fil des semaines de pratique." }
+    ]
+  },
+  "why": {
+    "tag": "[ POURQUOI ONDA ]",
+    "title": "Pas une énième appli de méditation. Pas un énième capteur.",
+    "cards": [
+      { "title": "Structuré, parce que séquentiel.", "text": "Une vraie progression en 8 niveaux où chacun s’appuie sur le précédent — pas un mélange de séances sans lien. Vous savez toujours quelle est l’étape suivante." },
+      { "title": "S’entraîner, pas seulement mesurer.", "text": "Whoop et Oura vous disent que vous êtes stressé. ONDA vous aide à y remédier." },
+      { "title": "Honnête, pas anxiogène.", "text": "Votre tendance compte plus qu’un chiffre du matin. Nous ne ferons pas un jeu de votre panique." },
+      { "title": "Fonctionne avec ce que vous avez.", "text": "La caméra de votre iPhone ou une Apple Watch — plus la VFC de tout capteur synchronisé avec Apple Santé." }
+    ]
+  },
+  "proof": {
+    "tag": "[ POURQUOI NOUS FAIRE CONFIANCE ]",
+    "title": "La confiance, gagnée en moins de 90 secondes.",
+    "science": "Fondé sur la respiration en résonance et le biofeedback VFC — avec les recherches sur lesquelles il repose, citées ouvertement.",
+    "scienceCta": "Voir la science →",
+    "trust": "Ni compte ni e-mail avant votre première mesure — gratuit pour commencer.",
+    "advisor": "Développé avec un conseiller docteur en neurosciences.",
+    "ratingPending": "Les avis App Store arrivent bientôt — nous préférons en montrer de vrais plutôt que de les inventer.",
+    "shotCaption": "Chaque protocole explique son mécanisme — directement dans l’appli.",
+    "shotAlt": "Écran scientifique de l’appli ONDA montrant la biologie, la raison et l’effet d’un protocole de respiration"
+  },
+  "articles": {
+    "tag": "[ APPROFONDIR ]",
+    "titlePrefix": "Articles",
+    "titleHighlight": "phares",
+    "subtitle": "Des guides fondés sur la science pour votre système nerveux. Du tonus vagal à la longévité.",
+    "viewAll": "Voir les {{count}} articles"
+  },
+  "cta": {
+    "badge": "[ PRÊT ? ]",
+    "title": "Commencez par une respiration.",
+    "sub": "Gratuit pour commencer. Sans compte. Votre première mesure en 90 secondes.",
+    "subtitle": "Le monde qui vous entoure devient ce que vous voyez en vous-même.",
+    "appStoreSup": "Télécharger dans l’",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "Télécharger ONDA Life sur l’App Store",
+    "googlePlaySup": "Disponible sur",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "Rejoindre la liste d’attente Android d’ONDA Life",
+    "modal": {
+      "title": "Rejoindre ONDA Life",
+      "subtitle": "Nous peaufinons les derniers détails ! Laissez votre e-mail et nous vous enverrons un accès anticipé.",
+      "placeholder": "Votre e-mail",
+      "submit": "Obtenir l’accès anticipé",
+      "submitting": "Envoi…",
+      "thankTitle": "Merci !",
+      "thankSubtitle": "Nous vous contacterons dès que l’appli sera prête.",
+      "ok": "OK",
+      "errorDuplicate": "Cet e-mail est déjà enregistré.",
+      "errorGeneric": "Une erreur s’est produite. Veuillez réessayer plus tard.",
+      "close": "Fermer"
+    }
+  },
+  "footer": {
+    "sitemap": "Plan du site",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "emoton": "Emoton"
+  },
+  "meta": {
+    "title": "ONDA Life : ne mesurez plus votre stress, entraînez-le",
+    "description": "Respiration guidée avec un retour en temps réel de votre propre rythme cardiaque. Un entraînement structuré en 8 niveaux pour votre système nerveux. Gratuit, sans compte.",
+    "ogImageAlt": "ONDA Life — appli de biofeedback VFC. Respiration guidée avec retour en direct du rythme cardiaque."
+  },
+  "notFound": {
+    "title": "Page introuvable | ONDA Life",
+    "message": "Erreur système : le chemin neuronal que vous cherchez n’existe pas. Recalibrons.",
+    "backHome": "← Retour à l’accueil",
+    "exploreGlossary": "Explorer le glossaire →"
+  }
+}

@@ -25,7 +25,7 @@ const COPY: Record<CtaVariant, Record<L, string>> = {
     uk: 'Подивіться, як відповідає ваше тіло. ONDA показує ритм серця в реальному часі, поки ви дихаєте, — з Apple Watch або просто камерою iPhone. Почати можна безкоштовно.',
     zh: '看看你自己的身体如何回应。ONDA 在你呼吸时实时显示心律——使用 Apple Watch 或仅用 iPhone 摄像头。免费开始。',
     de: 'Sieh, wie dein eigener Körper reagiert. ONDA zeigt deinen Herzrhythmus live, während du atmest – mit der Apple Watch oder einfach mit der iPhone-Kamera. Kostenlos starten.',
-    fr: 'Vois comment ton propre corps réagit. ONDA affiche ton rythme cardiaque en direct pendant que tu respires — avec l’Apple Watch ou simplement la caméra de l’iPhone. Gratuit pour commencer.',
+    fr: 'Voyez comment votre propre corps réagit. ONDA affiche votre rythme cardiaque en direct pendant que vous respirez — avec l’Apple Watch ou simplement la caméra de l’iPhone. Gratuit pour commencer.',
   },
   hrv: {
     en: 'Already tracking HRV? ONDA turns the numbers into training: guided breathing with your heart responding live. Works with Apple Watch — or measure your pulse with your iPhone camera, no wearable needed. Free to start.',
@@ -34,7 +34,7 @@ const COPY: Record<CtaVariant, Record<L, string>> = {
     uk: 'Вже стежите за HRV? ONDA перетворює цифри на тренування: дихальні практики, на які серце відповідає в реальному часі. Працює з Apple Watch — або виміряйте пульс камерою iPhone, без гаджетів. Почати можна безкоштовно.',
     zh: '已经在追踪 HRV？ONDA 把数字变成训练：引导式呼吸，心脏实时回应。支持 Apple Watch——或用 iPhone 摄像头测量脉搏，无需穿戴设备。免费开始。',
     de: 'Du trackst schon deine HRV? ONDA macht aus den Zahlen ein Training: geführte Atmung, auf die dein Herz live reagiert. Funktioniert mit der Apple Watch – oder miss deinen Puls mit der iPhone-Kamera, ganz ohne Wearable. Kostenlos starten.',
-    fr: 'Tu suis déjà ta VFC ? ONDA transforme les chiffres en entraînement : une respiration guidée à laquelle ton cœur répond en direct. Fonctionne avec l’Apple Watch — ou mesure ton pouls avec la caméra de l’iPhone, sans objet connecté. Gratuit pour commencer.',
+    fr: 'Vous suivez déjà votre VFC ? ONDA transforme les chiffres en entraînement : une respiration guidée à laquelle votre cœur répond en direct. Fonctionne avec l’Apple Watch — ou mesurez votre pouls avec la caméra de l’iPhone, sans objet connecté. Gratuit pour commencer.',
   },
   meditation: {
     en: 'Want meditation you can measure? ONDA shows your body responding in real time, so you can see your progress instead of guessing. Free to start.',
@@ -43,7 +43,7 @@ const COPY: Record<CtaVariant, Record<L, string>> = {
     uk: 'Хочете медитацію, яку можна виміряти? ONDA показує відповідь вашого тіла в реальному часі — прогрес видно, а не вгадується. Почати можна безкоштовно.',
     zh: '想要可以衡量的冥想？ONDA 实时显示你身体的反应，让你看到进步而不是去猜。免费开始。',
     de: 'Meditation, die du messen kannst? ONDA zeigt in Echtzeit, wie dein Körper reagiert – so siehst du deinen Fortschritt, statt zu raten. Kostenlos starten.',
-    fr: 'Envie d’une méditation que tu peux mesurer ? ONDA montre en temps réel comment ton corps réagit, pour voir tes progrès au lieu de les deviner. Gratuit pour commencer.',
+    fr: 'Envie d’une méditation que vous pouvez mesurer ? ONDA montre en temps réel comment votre corps réagit, pour voir vos progrès au lieu de les deviner. Gratuit pour commencer.',
   },
   glossary: {
     en: 'See this in your own data → ONDA',
@@ -52,7 +52,7 @@ const COPY: Record<CtaVariant, Record<L, string>> = {
     uk: 'Подивіться це на своїх даних → ONDA',
     zh: '在你自己的数据中看到它 → ONDA',
     de: 'Sieh es in deinen eigenen Daten → ONDA',
-    fr: 'Vois-le dans tes propres données → ONDA',
+    fr: 'Voyez-le dans vos propres données → ONDA',
   },
   tool: {
     en: 'Want to track this over weeks, not once? With Apple Watch, ONDA builds your personal baseline. Free to start.',
@@ -61,7 +61,7 @@ const COPY: Record<CtaVariant, Record<L, string>> = {
     uk: 'Хочете відстежувати це тижнями, а не один раз? З Apple Watch ONDA будує вашу особисту норму. Почати можна безкоштовно.',
     zh: '想要连续几周追踪，而不只是一次？配合 Apple Watch，ONDA 会建立你的个人基线。免费开始。',
     de: 'Willst du das über Wochen verfolgen statt nur einmal? Mit der Apple Watch baut ONDA deine persönliche Baseline auf. Kostenlos starten.',
-    fr: 'Envie de suivre ça sur des semaines, pas une seule fois ? Avec l’Apple Watch, ONDA établit ta ligne de base personnelle. Gratuit pour commencer.',
+    fr: 'Envie de suivre cela sur des semaines, pas une seule fois ? Avec l’Apple Watch, ONDA établit votre ligne de base personnelle. Gratuit pour commencer.',
   },
 }
 
@@ -69,7 +69,7 @@ const BADGE_TOP: Record<L, string> = {
   en: 'Download on the', es: 'Descárgalo en el', ru: 'Загрузите в', uk: 'Завантажте в', zh: '下载于', de: 'Laden im', fr: 'Télécharger dans l’',
 }
 const SCAN: Record<L, string> = {
-  en: 'Scan with your iPhone', es: 'Escanéalo con tu iPhone', ru: 'Наведите камеру iPhone', uk: 'Наведіть камеру iPhone', zh: '用 iPhone 扫码', de: 'Mit dem iPhone scannen', fr: 'Scanne avec ton iPhone',
+  en: 'Scan with your iPhone', es: 'Escanéalo con tu iPhone', ru: 'Наведите камеру iPhone', uk: 'Наведіть камеру iPhone', zh: '用 iPhone 扫码', de: 'Mit dem iPhone scannen', fr: 'Scannez avec votre iPhone',
 }
 
 function asLang(lang?: string): L {

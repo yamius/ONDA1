@@ -1,0 +1,55 @@
+{
+  "meta": {
+    "title": "Bibliothèque ONDA — guides respiration, VFC et méditation | ONDA Life",
+    "description": "Des guides fondés sur la science sur la respiration, la VFC, la méditation et le système nerveux, classés en neuf thèmes. Choisissez un thème pour commencer."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "current": "Bibliothèque"
+  },
+  "badge": "[ BIBLIOTHÈQUE ONDA ]",
+  "h1": "Bibliothèque ONDA",
+  "subtitle": "Des guides fondés sur la science sur la respiration, la VFC, la méditation et le système nerveux. Choisissez un thème pour commencer.",
+  "searchPlaceholder": "rechercher un article…",
+  "allLabel": "Tous",
+  "noResults": "Aucun article trouvé. Essayez une autre recherche.",
+  "featuredHeader": "[ ARTICLES À LA UNE ]",
+  "detail": {
+    "backToArticles": "← Retour aux articles",
+    "relatedGlossaryTerms": "TERMES DU GLOSSAIRE ASSOCIÉS",
+    "browseFullGlossary": "→ Parcourir tout le glossaire",
+    "disclaimerLabel": "NOTE",
+    "disclaimer": "Contenu informatif, pas un avis médical. Les articles d’ONDA Life expliquent le fonctionnement des systèmes et ce que suggère la recherche — ils ne posent pas de diagnostic, ne soignent pas et ne remplacent pas un professionnel de santé qualifié. Consultez un professionnel de santé avant de modifier quoi que ce soit à votre santé, à votre traitement ou à votre entraînement.",
+    "by": "Par",
+    "authorRole": "architecte et psychologue gestaltiste, fondateur d’ONDA Life",
+    "updated": "Mis à jour le",
+    "toc": "DANS CET ARTICLE",
+    "cite": "[ CITER_CET_ARTICLE ]",
+    "apaStyle": "Style APA",
+    "finalize": "[ MARQUER_COMME_LU ]",
+    "completed": "[ STATUT : LU ]"
+  },
+  "categories": {
+    "Neural Hardware": "Matériel neuronal",
+    "Biological Software": "Logiciel biologique",
+    "OS States": "États du système",
+    "ONDA Protocol": "Protocole ONDA"
+  },
+  "browse": {
+    "heading": "[ PARCOURIR_PAR_THÈME ]",
+    "total": "{{count}} articles au total"
+  },
+  "topics": {
+    "hrv": "VFC",
+    "circadian": "Circadien",
+    "dopamine": "Dopamine",
+    "metabolic": "Métabolisme",
+    "breathwork": "Respiration",
+    "neuroplasticity": "Neuroplasticité",
+    "cognitive": "Cognition",
+    "spinal": "Colonne vertébrale",
+    "hormones": "Hormones",
+    "longevity": "Longévité"
+  },
+  "bodies": {}
+}

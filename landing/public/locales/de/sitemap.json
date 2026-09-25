@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "Sitemap — ONDA Life",
+    "description": "Vollständige Sitemap von ONDA Life — alle Artikel, Glossarbegriffe, Stufen, Teile und Hauptseiten."
+  },
+  "title": "Sitemap",
+  "subtitle": "Alle Seiten auf onda-life.com",
+  "sections": {
+    "main": "Hauptseiten",
+    "glossary": "Glossar",
+    "articles": "Artikel",
+    "levelsParts": "Stufen und Teile",
+    "bio": "Bio OS"
+  },
+  "main": {
+    "home": "Start — ONDA Life, das Biohacking-OS",
+    "about": "Über ONDA Life",
+    "philosophy": "Philosophie — das innere Spektrum von ONDA Life",
+    "articles": "Artikel über Biohacking und menschliche Optimierung",
+    "glossary": "Glossar der Begriffe aus Biohacking und Neurowissenschaft",
+    "stack": "The Stack — das Protokollsystem",
+    "contact": "Kontakt — das ONDA-Life-Team erreichen",
+    "bio": "Bio OS — Live-Messung biometrischer Werte"
+  },
+  "levelLabel": "Stufe {{n}} — {{name}}",
+  "bioRoot": "Bio OS — Biometrie in Echtzeit"
+}

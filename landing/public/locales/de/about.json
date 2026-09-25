@@ -1,0 +1,55 @@
+{
+  "tag": "[ ÜBER UNS ]",
+  "title1": "Was ist ONDA Life",
+  "intro1": "ONDA Life ist eine App für HRV-Biofeedback und geführte Atmung zur physiologischen Selbstregulation in Echtzeit und zum Training des Nervensystems. Um diesen Kern herum liegt ein breiteres System aus Achtsamkeits- und Selbstentwicklungsübungen für das echte Leben:",
+  "introList": [
+    "Atem-, Körper- und Meditationsschritte;",
+    "Stufen: von der Unterstützung des Körpers bis zu höheren Bewusstseinszuständen;",
+    "kurze Formate von 1–12 Minuten;",
+    "die interne Währung OND für Übungen und Missionen."
+  ],
+  "intro2": "Der Weg: von der Körperempfindung — zu Klarheit, Inspiration und Stärke.",
+  "disclaimer": "Der wissenschaftlich belegte Teil von ONDA ist HRV-Biofeedback und getaktete (Resonanz-)Atmung — siehe die Wissenschaft hinter ONDA und was ONDA misst. Der ONDA-Weg — seine Stufen und die Sprache der höheren Zustände — ist ein erfahrungsbasierter Rahmen, keine Hierarchie klinisch validierter biologischer Zustände.",
+  "title2": "So funktioniert es",
+  "how1": "ONDA Life — Routen (Wellen und Stufen) aus einfachen täglichen Schritten.",
+  "howLead": "Du lernst:",
+  "howList": [
+    "dich auf den Körper als Energiequelle zu stützen;",
+    "Emotionen als Sprache der Verbindung zu erleben;",
+    "den Verstand für präzises Handeln zu nutzen;",
+    "die Seele zu entfachen, indem du andere unterstützt."
+  ],
+  "how2": "Jede Übung — kurze Atmung, Aufmerksamkeit für den Körper, Mikrobewegungen oder Kontemplation.",
+  "title3": "Ressourcen, Belohnungen, Ergebnisse",
+  "rewards1": "Wir bieten Routen, Tipps und Unterstützung. Für Übungen und Missionen verdienst du OND — eine Spielwährung:",
+  "rewardsList": [
+    "OND sammelt sich durch Regelmäßigkeit an;",
+    "ab Stufe 3 kann es in echtes Geld umgewandelt werden;",
+    "die Fähigkeiten der frühen Stufen sind die Grundlage für weiteres Wachstum."
+  ],
+  "rewards2": "Ergebnis: stabile Präsenz, Ruhe, Klarheit und innerer Halt im Leben.",
+  "details": {
+    "heading": "ONDA Life ist eine Praxis der Selbst- und Körperwahrnehmung",
+    "p1": "Verbinde in den Einstellungen deinen Fitnesstracker oder deine Smartwatch und sieh während der Übung in Echtzeit, wie sich deine Vitalwerte verändern.",
+    "p2": "Je erfolgreicher du bist — gemessen an der Übungszeit und der Verbesserung deines Zustands —, desto mehr OND verdienst du. Ein verbundener Tracker oder eine Smartwatch erhöht deine Belohnung für abgeschlossene Übungen.",
+    "p3": "Wenn du alle Übungen eines Teils mit über 40 % Erfolg abschließt, schaltest du die nächste Stufe frei.",
+    "p4": "Am Anfang jedes Teils findest du vor den Hauptübungen allgemeine Hinweise. Am Ende gibt es eine ausführlichere Einstimmung, die dir hilft, deinen aktuellen Zustand einzuschätzen.",
+    "p5": "Im Fenster „Emotionaler Check“ kannst du deinen aktuellen emotionalen Zustand erkennen und eine adaptive Übung machen.",
+    "p6": "Denk daran: Das Stufensystem von ONDA ist eine Reise der Erkenntnis — du erlebst dich als Amöbe, Fisch, Tier, Primat, Mensch, Gehirnzelle, DNA und schließlich als Atom. Gib jeder Etappe die Aufmerksamkeit, die sie verdient, und dein Weg wird mühelos und erfüllend.",
+    "goodLuck": "Viel Erfolg auf deinem Weg!"
+  },
+  "back": "← Zur Startseite",
+  "author": {
+    "heading": "Der Mensch hinter ONDA Life",
+    "lead": "ONDA Life wurde von Yakiv Bilenko gegründet — Architekt und Psychologe.",
+    "p1": "Seit über 20 Jahren gestaltet er physische Räume — Wohnhäuser, Gewerbe- und Industriebauten, Innenräume und die Planung ganzer Gebiete. Seit über 10 Jahren arbeitet er parallel als Gestalttherapeut und Coach und entwickelt strukturierte Programme zur Wiederherstellung der mentalen, körperlichen und emotionalen Ressourcen von Menschen.",
+    "p2": "Seine Arbeit verläuft entlang der Naht zwischen diesen beiden Feldern — wie die Umgebung um einen Menschen und die Umgebung in ihm einander prägen. ONDA Life ist diese Frage, zu einem Produkt geworden: ein System, an deiner inneren Architektur mit derselben Absicht zu arbeiten, die ein Architekt in ein Gebäude steckt.",
+    "p3": "ONDA Life ist ein spanisches Unternehmen mit Sitz in Avilés. Seine Protokolle und Artikel sind Bildungswerkzeuge für selbstständige Praxis, gestützt auf angewandte Psychologie und Systemdesign — keine medizinische Beratung und kein Ersatz für professionelle Behandlung.",
+    "linkedin": "Yakiv Bilenko auf LinkedIn →"
+  },
+  "meta": {
+    "title": "Über ONDA Life — wer es entwickelt und warum",
+    "description": "Entwickelt von einem Gründer-Entwickler und einem wissenschaftlichen Berater mit Promotion in Physik und Neurowissenschaft — HRV-Biofeedback-Training, ehrlich darüber, was es kann und was nicht.",
+    "ogImageAlt": "ONDA Life — HRV-Biofeedback-App. Geführte Atmung mit Live-Feedback vom Herzrhythmus."
+  }
+}

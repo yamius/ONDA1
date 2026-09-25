@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Kontakt zu ONDA Life | Support & Community",
+    "description": "Fragen, Support oder Zusammenarbeit — erreiche das Team von ONDA Life. Wir lesen jede Nachricht und antworten."
+  },
+  "breadcrumb": {
+    "home": "Start",
+    "current": "Kontakt"
+  },
+  "badge": "[ NEURALER UPLINK ]",
+  "title": "Direkten Kontakt herstellen",
+  "subtitle": "Fragen, Support oder Zusammenarbeit — erreiche das Team von ONDA Life.",
+  "channelsTitle": "KONTAKTKANÄLE",
+  "emailLabel": "E-MAIL",
+  "communityLabel": "COMMUNITY",
+  "form": {
+    "name": "Name",
+    "email": "E-Mail",
+    "message": "Nachricht",
+    "namePlaceholder": "Dein Name",
+    "emailPlaceholder": "kontakt@beispiel.de",
+    "messagePlaceholder": "Deine Anfrage übermitteln …",
+    "submit": "[ DATENPAKET SENDEN ]"
+  },
+  "back": "← Zur Startseite"
+}
