@@ -538,6 +538,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'cardiac-coherence-insomnia-sleep',
     'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
+    'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
