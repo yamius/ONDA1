@@ -159,7 +159,7 @@ interface PartFile {
  */
 interface ArticlesFile {
   breadcrumb?: { home?: string; current?: string }
-  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[]; faq?: { question: string; answer: string }[] }>
+  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[]; faq?: { question: string; answer: string }[]; imageAlt?: string }>
 }
 
 /**
@@ -196,6 +196,7 @@ function localizeArticleJsonLd(html: string, lang: Lang, slug: string, url: stri
       data.url = url
       if (typeof data['@id'] === 'string') data['@id'] = `${url}#article`
       data.inLanguage = lang
+      if (body.imageAlt && data.image && typeof data.image === 'object') (data.image as Record<string, unknown>).description = body.imageAlt
       if (data.mainEntityOfPage && typeof data.mainEntityOfPage === 'object') (data.mainEntityOfPage as Record<string, unknown>)['@id'] = url
       else if (data.mainEntityOfPage) data.mainEntityOfPage = url
     } else if (type === 'HowTo') {

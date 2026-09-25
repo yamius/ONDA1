@@ -3579,7 +3579,9 @@
           "question": "¿Puede el Yoga Nidra ayudar con el insomnio?",
           "answer": "Encaja con el insomnio causado por una mente acelerada, porque reduce la activación con el escaneo corporal y la respiración lenta en lugar de forzar el sueño. Si el insomnio persiste, conviene hablarlo con un profesional sanitario."
         }
-      ]
+      ],
+      "imageTitle": "Yoga Nidra para dormir",
+      "imageAlt": "Yoga Nidra para dormir — ilustración: una persona tumbada en relajación profunda bajo ondas lentas, con un cielo mitad atardecer y mitad noche."
     },
     "cardiac-coherence-insomnia-sleep": {
       "title": "Coherencia cardíaca para el insomnio",
@@ -3610,7 +3612,9 @@
           "question": "¿Sustituye la coherencia cardiaca al tratamiento del insomnio?",
           "answer": "No. Es una herramienta de apoyo, que funciona mejor junto con buenos hábitos de sueño y, si el insomnio persiste, con atención profesional como la TCC-I (terapia cognitivo-conductual para el insomnio)."
         }
-      ]
+      ],
+      "imageTitle": "Coherencia cardiaca para el insomnio",
+      "imageAlt": "Coherencia cardiaca para el insomnio — ilustración: una cama de noche bajo una línea agitada que se suaviza poco a poco en una onda coherente y tranquila."
     },
     "bhastrika-pranayama-brain-anxiety": {
       "title": "Bhastrika, el cerebro y la ansiedad",
@@ -3641,7 +3645,9 @@
           "question": "¿Cuándo conviene hacer Bhastrika?",
           "answer": "Por la mañana o cuando quieras estar alerta, no antes de dormir, porque es estimulante. Para desconectar, elige un pranayama lento o la respiración del zumbido."
         }
-      ]
+      ],
+      "imageTitle": "Pranayama Bhastrika y el cerebro",
+      "imageAlt": "Pranayama Bhastrika y el cerebro — ilustración: ráfagas enérgicas de respiración alrededor de una silueta y un cerebro cuya región profunda pasa del rojo a un verde menta tranquilo."
     },
     "om-chanting-brain-vagus": {
       "title": "Cantar OM: el cerebro y el nervio vago",
@@ -3672,7 +3678,9 @@
           "question": "¿Hay que ser religioso para que funcione el OM?",
           "answer": "No. El efecto fisiológico viene de la vibración y de la exhalación larga, no de la creencia, aunque mucha gente siente que la tradición le aporta profundidad."
         }
-      ]
+      ],
+      "imageTitle": "Canto del OM y el cerebro",
+      "imageAlt": "Canto del OM y el cerebro — ilustración: figura sentada que emite anillos concéntricos de sonido, con el centro emocional del cerebro apagándose en calma."
     },
     "trataka-candle-gazing-focus": {
       "title": "Trataka: mirar una vela para concentrarte",
@@ -3703,7 +3711,9 @@
           "question": "¿En qué se diferencia trataka de la meditación?",
           "answer": "Trataka es una técnica de concentración concreta que usa los ojos y un punto externo fijo, mientras que la meditación es más amplia. A menudo sirve de puerta de entrada a la meditación, porque la mirada estable serena la mente."
         }
-      ]
+      ],
+      "imageTitle": "Trataka (mirar la vela)",
+      "imageAlt": "Trataka (mirar la vela) — ilustración: la llama de una vela a la altura de los ojos en una habitación oscura, alcanzada por un fino haz de atención con todo lo demás desenfocado."
     },
     "sudarshan-kriya-yoga-breathing": {
       "title": "Sudarshan Kriya: evidencia y límites",
@@ -3734,7 +3744,9 @@
           "question": "¿Puedo aprender Sudarshan Kriya por mi cuenta?",
           "answer": "La práctica completa la enseña tradicionalmente un instructor formado, porque combina técnicas intensas y lentas en una secuencia precisa. Los componentes más suaves, como la respiración Ujjayi lenta, sí se pueden practicar a solas."
         }
-      ]
+      ],
+      "imageTitle": "Sudarshan Kriya Yoga",
+      "imageAlt": "Sudarshan Kriya Yoga — ilustración: ondas de respiración en ciclos lentos, medios y rápidos que giran en espiral alrededor de un pequeño grupo sentado."
     },
     "yoga-poses-heart-rate-blood-pressure": {
       "title": "Posturas de yoga, pulso y tensión arterial",
@@ -3765,7 +3777,9 @@
           "question": "¿Qué posturas activan en lugar de calmar?",
           "answer": "Los saludos al sol, las posturas de pie y las extensiones hacia atrás elevan la frecuencia cardiaca y el estado de alerta. Úsalas más temprano en el día, no antes de dormir ni para calmar la ansiedad."
         }
-      ]
+      ],
+      "imageTitle": "Cómo afectan las posturas de yoga al corazón",
+      "imageAlt": "Posturas de yoga y corazón — ilustración: tres siluetas en flexión hacia delante, postura de pie y extensión hacia atrás, cada una con una línea de pulso de distinta intensidad."
     },
     "yoga-breathing-diabetes-blood-sugar": {
       "title": "Yoga y respiración para la diabetes tipo 2",
@@ -3796,7 +3810,9 @@
           "question": "¿Qué tipo de yoga es mejor para la diabetes?",
           "answer": "Programas estructurados que combinen posturas suaves, respiración lenta y relajación, como los usados en los ensayos. Evita la respiración intensa y forzada si tienes complicaciones cardiovasculares, y aprende con un profesor cualificado."
         }
-      ]
+      ],
+      "imageTitle": "Yoga y respiración para la diabetes tipo 2",
+      "imageAlt": "Yoga y respiración para la diabetes tipo 2 — ilustración: una curva de glucosa con picos que se suaviza en una línea tranquila sobre una silueta sentada de yoga."
     },
     "morita-therapy-tracking-paradox": {
       "title": "La paradoja de vigilar tu cuerpo: Morita",
@@ -3827,7 +3843,9 @@
           "question": "¿Cómo usar el seguimiento de la HRV de forma sana?",
           "answer": "Mira tu tendencia en lugar de lecturas sueltas, no combatas un número bajo con preocupación, redirígete hacia una acción útil como la respiración lenta, el descanso o el movimiento, y fíjate en si el seguimiento aumenta tu ansiedad. Informado, pero sin obsesionarte."
         }
-      ]
+      ],
+      "imageTitle": "La paradoja de observar tu cuerpo",
+      "imageAlt": "La paradoja de observar tu cuerpo (terapia Morita) — ilustración: una persona mirando el pulso en el móvil dentro de una espiral de atención y, al lado, dejándolo con calma."
     },
     "physiological-sigh": {
       "title": "Suspiro fisiológico: calma en segundos",
@@ -3880,7 +3898,9 @@
           "question": "¿Puedo hacer demasiados suspiros fisiológicos?",
           "answer": "No: es un patrón natural que tu cuerpo ya produce por sí solo. Úsalo cuando notes estrés o respiración superficial. Es una técnica de bienestar, no un tratamiento para ninguna afección médica."
         }
-      ]
+      ],
+      "imageTitle": "Suspiro fisiológico",
+      "imageAlt": "Suspiro fisiológico — ilustración: pulmones de luz con dos inhalaciones seguidas que entran y una larga exhalación que sale, y una línea de pulso que desciende."
     },
     "4-7-8-breathing": {
       "title": "Respiración 4-7-8: cómo funciona y cuándo no",
@@ -3933,7 +3953,9 @@
           "question": "¿Importa el conteo exacto 4-7-8?",
           "answer": "No exactamente: importa más la proporción que los segundos precisos. Mantén la exhalación claramente más larga que la inhalación, con una pausa entre ambas; acorta las tres fases si 7 segundos te resultan incómodos."
         }
-      ]
+      ],
+      "imageTitle": "Respiración 4-7-8",
+      "imageAlt": "Respiración 4-7-8 — ilustración: tres arcos luminosos de longitud creciente sobre un dormitorio oscuro con luna creciente, una respiración lenta antes de dormir."
     },
     "pranayama-metabolic-syndrome": {
       "title": "Pranayama y síndrome metabólico en jóvenes",
@@ -3964,7 +3986,9 @@
           "question": "¿Por qué estudiar a estudiantes de medicina?",
           "answer": "Su rutina exigente, sedentaria y muy estresante los expone pronto a un IMC y una presión arterial elevados, lo que los convierte en un grupo de alto riesgo útil para probar la prevención, y en una advertencia para los adultos jóvenes sedentarios en general."
         }
-      ]
+      ],
+      "imageTitle": "Pranayama y síndrome metabólico",
+      "imageAlt": "Pranayama y síndrome metabólico — ilustración: una persona joven en su escritorio que pasa a respirar con calma, con símbolos tenues de una gota de sangre y una cinta métrica."
     },
     "normal-hrv-by-age": {
       "title": "HRV normal por edad: ¿qué es una buena HRV?",
@@ -3995,7 +4019,9 @@
           "question": "¿Debo preocuparme por una HRV baja?",
           "answer": "Una sola lectura baja suele ser solo una mala noche. Una HRV persistentemente baja que no se recupera durmiendo mejor y con menos estrés merece consultarse con un médico, pero la HRV por sí sola no es un diagnóstico."
         }
-      ]
+      ],
+      "imageTitle": "HRV normal por edad",
+      "imageAlt": "HRV normal por edad — ilustración: una fila de siluetas de jóvenes a mayores, cada una con una línea de ritmo cardiaco cuya variabilidad disminuye con la edad."
     },
     "resting-heart-rate-by-age": {
       "title": "Frecuencia cardiaca en reposo por edad: ¿qué es normal?",
@@ -4026,7 +4052,9 @@
           "question": "¿Sube la frecuencia en reposo con la edad?",
           "answer": "Solo ligeramente en adultos sanos: la forma física, el sueño y el estilo de vida influyen mucho más que la edad. Una persona mayor en forma puede tener un pulso en reposo más bajo que una joven sin forma."
         }
-      ]
+      ],
+      "imageTitle": "Frecuencia cardiaca en reposo por edad",
+      "imageAlt": "Frecuencia cardiaca en reposo por edad — ilustración: una línea de latido tranquila sobre un dormitorio de noche, con anillos tenues que evocan las etapas de la vida."
     },
     "alternate-nostril-breathing": {
       "title": "Respiración alterna (Nadi Shodhana): cómo hacerla",
@@ -4075,7 +4103,9 @@
           "question": "¿Puede la respiración alterna bajar la tensión arterial?",
           "answer": "La investigación asocia la respiración lenta regular, incluida Nadi Shodhana, con reducciones modestas de la tensión arterial, gracias a la activación vagal y no a la técnica de las fosas nasales en sí. Es una práctica de apoyo, no un tratamiento para la hipertensión."
         }
-      ]
+      ],
+      "imageTitle": "Respiración alterna (Nadi Shodhana)",
+      "imageAlt": "Respiración alterna (Nadi Shodhana) — ilustración: perfil de un rostro con dos flujos de luz que se alternan por las fosas nasales en un patrón simétrico y equilibrado."
     },
     "nose-vs-mouth-breathing": {
       "title": "Respirar por la nariz o por la boca: qué cambia",
@@ -4106,7 +4136,9 @@
           "question": "¿Debo respirar por la nariz en los ejercicios de respiración?",
           "answer": "Inhala por la nariz para aprovechar el ritmo natural y el óxido nítrico. Una exhalación larga por la boca está bien: es el patrón que maximiza la activación vagal."
         }
-      ]
+      ],
+      "imageTitle": "Respirar por la nariz o por la boca",
+      "imageAlt": "Respirar por la nariz o por la boca — ilustración: perfil de un rostro con aire que fluye suave por la nariz frente a un flujo disperso y turbulento junto a la boca."
     },
     "meditation-vs-breathwork": {
       "title": "Meditación o breathwork: ¿cuál elegir?",
@@ -4137,7 +4169,9 @@
           "question": "¿Puedo combinar meditación y breathwork?",
           "answer": "Sí, y es el mejor enfoque para la mayoría. Usa la respiración para llegar a la calma de abajo arriba y medita desde ahí de arriba abajo. El breathwork da un feedback inmediato que ayuda a la constancia, mientras los cambios más profundos de la meditación se construyen por debajo."
         }
-      ]
+      ],
+      "imageTitle": "Meditación o breathwork",
+      "imageAlt": "Meditación o breathwork — ilustración: dos puertas de luz, una con una onda de respiración y otra con un cerebro, que se abren a la misma habitación en calma."
     },
     "cardiac-coherence-365-method": {
       "title": "Coherencia cardiaca y el método 365: la respiración a la francesa",
@@ -4186,7 +4220,9 @@
           "question": "¿La coherencia cardiaca es lo mismo que la respiración coherente?",
           "answer": "En esencia, sí: la coherencia cardiaca es la tradición clínica francesa, con el protocolo 365 concreto; «respiración coherente» o «de resonancia» es el término anglosajón para la misma fisiología de seis respiraciones por minuto."
         }
-      ]
+      ],
+      "imageTitle": "Coherencia cardiaca y método 365",
+      "imageAlt": "Coherencia cardiaca y método 365 — ilustración: una onda cardiaca y una respiratoria alineadas en una sola onda suave, con tres soles de mañana, mediodía y noche."
     }
   },
   "detail": {
