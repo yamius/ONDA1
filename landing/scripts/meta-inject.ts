@@ -2957,6 +2957,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       return {
         title: longTitle.length <= 60 ? longTitle : `${hub.name} | ONDA Library`,
         description: hub.tile,
+        ...(hub.image ? { image: `${SITE_URL}${hub.image}` } : {}),
         url,
         breadcrumbs,
         topicHub: {

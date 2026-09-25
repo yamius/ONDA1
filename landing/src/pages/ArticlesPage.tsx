@@ -204,11 +204,11 @@ export function ArticlesPage() {
                     to={`/articles/topic/${hub.slug}`}
                     className="glass-card group flex flex-col overflow-hidden rounded-xl transition-all hover:border-terminal-green/20"
                   >
-                    {cover?.image && (
+                    {(hub.image ?? cover?.image) && (
                       <div className="aspect-video w-full overflow-hidden border-b border-white/5">
                         <OptimizedImage
-                          src={cover.image}
-                          alt={hub.name}
+                          src={(hub.image ?? cover?.image) as string}
+                          alt={hub.imageAlt ?? hub.name}
                           loading="lazy"
                           width={640}
                           height={360}

@@ -37,12 +37,18 @@ export interface ArticleTopicHub {
   startHere: string
   /** 2–3 adjacent topics linked at the bottom of the hub. */
   neighbors: ArticleTopicSlug[]
+  /** Tile / og:image cover (4:3). Falls back to the Start-here article image. */
+  image?: string
+  /** Descriptive alt for the cover (what the illustration shows + topic keyword). */
+  imageAlt?: string
 }
 
 /** Order = business priority (meditation first — the ad angle). */
 export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   {
     slug: 'meditation',
+    image: '/images/topics/meditation.jpg',
+    imageAlt: 'Meditation with Progress — illustration: a seated meditator silhouette with an ascending mint progress line of light rising behind them.',
     name: 'Meditation with Progress',
     tile: 'Meditation you can measure — how practice changes your brain and body, and how to see it.',
     intro:
@@ -52,6 +58,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'breathing',
+    image: '/images/topics/breathing.jpg',
+    imageAlt: 'Breathing Techniques — illustration: stylized lungs made of light with flowing breath waves moving in and out.',
     name: 'Breathing Techniques',
     tile: 'From the physiological sigh to pranayama — what each technique does and when to use it.',
     intro:
@@ -61,6 +69,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'hrv-heart-rate',
+    image: '/images/topics/hrv-heart-rate.jpg',
+    imageAlt: 'HRV & Heart Rate — illustration: a glowing heart with a variable-rhythm waveform flowing out of it.',
     name: 'HRV & Heart Rate',
     tile: 'What your HRV and resting heart rate mean — and how to move them.',
     intro:
@@ -70,6 +80,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'stress-vagus',
+    image: '/images/topics/stress-vagus.jpg',
+    imageAlt: 'Stress & the Vagus Nerve — illustration: a glowing nerve path running from the brain down to the heart and gut, shifting from tense red to calm mint.',
     name: 'Stress & the Vagus Nerve',
     tile: 'How stress lives in your body — cortisol, the vagus nerve, and how to switch off.',
     intro:
@@ -79,6 +91,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'sleep-body-clock',
+    image: '/images/topics/sleep-body-clock.jpg',
+    imageAlt: 'Sleep & Body Clock — illustration: a bed beneath a circular arc where the sun sets and the moon rises, a faint clock ring around it.',
     name: 'Sleep & Body Clock',
     tile: 'Sleep, light and your circadian rhythm — why timing matters as much as hours.',
     intro:
@@ -88,6 +102,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'lifestyle',
+    image: '/images/topics/lifestyle.jpg',
+    imageAlt: 'Lifestyle Effects — illustration: a coffee cup, a wine glass and a phone arranged around a central heart-rate line.',
     name: 'Lifestyle Effects',
     tile: 'What alcohol, caffeine, screens and late meals do to your numbers.',
     intro:
@@ -97,6 +113,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'heart-fitness-metabolism',
+    image: '/images/topics/heart-fitness-metabolism.jpg',
+    imageAlt: 'Heart, Fitness & Metabolism — illustration: a runner silhouette merging with a heart shape and a smooth pulse wave.',
     name: 'Heart, Fitness & Metabolism',
     tile: 'Blood pressure, aerobic fitness and metabolic health — the long game.',
     intro:
@@ -106,6 +124,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'brain-focus-aging',
+    image: '/images/topics/brain-focus-aging.jpg',
+    imageAlt: 'Brain, Focus & Aging — illustration: a brain with a single focused beam of light passing through it.',
     name: 'Brain, Focus & Aging',
     tile: 'Attention, memory and a healthier aging brain.',
     intro:
@@ -115,6 +135,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'world',
+    image: '/images/topics/world.jpg',
+    imageAlt: 'Science From Around the World — illustration: a dark globe with glowing points on Japan, India, Germany, the Netherlands and France, connected by thin arcs of light.',
     name: 'Science From Around the World',
     tile: "Research you won't find in most English sources — from Japan, India, Germany, the Netherlands and France.",
     intro:
