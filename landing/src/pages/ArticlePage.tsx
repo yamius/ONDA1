@@ -276,6 +276,16 @@ export function ArticlePage() {
   const tContent = article ? tField('content', article.content) : ''
   // ONDA Library topic hub for the breadcrumb (Home / Library / Topic / Article).
   const primaryHub = article ? getPrimaryHubForArticle(article.slug) : undefined
+  // FAQ: EN reads ARTICLE_FAQ; a translation shows its FAQ only once
+  // bodies.<slug>.faq is authored (never an EN block on a localized page).
+  const tFaq: { question: string; answer: string }[] = (() => {
+    if (!article) return []
+    if (lang === 'en') return ARTICLE_FAQ[article.slug] ?? []
+    const fromI18n = tArticles(`bodies.${slug}.faq`, { returnObjects: true, defaultValue: null }) as
+      | { question: string; answer: string }[]
+      | null
+    return Array.isArray(fromI18n) ? fromI18n : []
+  })()
   const tHowToSteps = article?.howToSteps
     ? (() => {
         const fromI18n = tArticles(`bodies.${slug}.howToSteps`, {
@@ -1044,13 +1054,13 @@ export function ArticlePage() {
       {/* Reactions & Comments */}
       <ArticleReactions articleSlug={article.slug} />
 
-      {lang === 'en' && ARTICLE_FAQ[article.slug] && ARTICLE_FAQ[article.slug].length > 0 && (
+      {tFaq.length > 0 && (
         <div className="mt-16 border-t border-white/5 pt-10">
           <h2 className="mb-6 font-mono text-xs tracking-widest text-white/30">
-            COMMON QUESTIONS
+            {tArticles('detail.faqHeading', { defaultValue: 'COMMON QUESTIONS' })}
           </h2>
           <div className="grid gap-4">
-            {ARTICLE_FAQ[article.slug].map((faq) => (
+            {tFaq.map((faq) => (
               <details
                 key={faq.question}
                 className="group rounded-xl border border-white/10 bg-white/[0.02] p-5 transition-colors hover:border-cyan-500/30"

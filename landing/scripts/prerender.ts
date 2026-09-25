@@ -159,7 +159,7 @@ interface PartFile {
  */
 interface ArticlesFile {
   breadcrumb?: { home?: string; current?: string }
-  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[] }>
+  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[]; faq?: { question: string; answer: string }[] }>
 }
 
 /**
@@ -169,8 +169,8 @@ interface ArticlesFile {
  * quote structured data. This pass rewrites it to match the visible page:
  *  - TechArticle: localised headline/description/url + inLanguage
  *  - HowTo: localised steps when the translation has them, otherwise dropped
- *  - FAQPage: dropped — the FAQ block renders on EN pages only, and marking up
- *    content that isn't visible breaks Google's structured-data guidelines
+ *  - FAQPage: localised from bodies.<slug>.faq (rendered visibly on the page);
+ *    dropped when no translation exists — never mark up invisible EN Q&A
  *  - BreadcrumbList: localised names/URLs (topic hubs are EN-only, so skipped)
  */
 function localizeArticleJsonLd(html: string, lang: Lang, slug: string, url: string): string {
@@ -183,7 +183,13 @@ function localizeArticleJsonLd(html: string, lang: Lang, slug: string, url: stri
     let data: Record<string, unknown>
     try { data = JSON.parse(json) } catch { return whole }
     const type = data['@type']
-    if (type === 'FAQPage') return ''
+    if (type === 'FAQPage') {
+      if (!body.faq?.length) return ''
+      data.inLanguage = lang
+      if (data.url) data.url = url
+      data.mainEntity = body.faq.map((f) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } }))
+      return `<script type="application/ld+json">${JSON.stringify(data)}</script>`
+    }
     if (type === 'TechArticle' || type === 'Article' || type === 'BlogPosting') {
       data.headline = body.title
       if (body.description) data.description = body.description
