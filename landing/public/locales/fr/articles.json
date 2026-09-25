@@ -82,7 +82,9 @@
           "question": "Le Yoga Nidra peut-il aider en cas d’insomnie ?",
           "answer": "Il convient à l’insomnie liée à un mental qui s’emballe, car il abaisse l’activation par le scan corporel et la respiration lente au lieu de forcer le sommeil. Une insomnie persistante mérite toutefois d’en parler à un professionnel de santé."
         }
-      ]
+      ],
+      "imageTitle": "Yoga Nidra pour dormir",
+      "imageAlt": "Yoga Nidra pour dormir — illustration : une personne allongée sur le dos en relaxation profonde sous des ondes lentes, le ciel mi-crépuscule, mi-nuit."
     },
     "physiological-sigh": {
       "title": "Soupir physiologique : le calme en secondes",
@@ -135,7 +137,9 @@
           "question": "Peut-on abuser du soupir physiologique ?",
           "answer": "Non : c’est un schéma naturel que votre corps produit déjà de lui-même. Utilisez-le dès que vous remarquez du stress ou une respiration superficielle. C’est une technique de bien-être, pas le traitement d’une quelconque pathologie."
         }
-      ]
+      ],
+      "imageTitle": "Soupir physiologique",
+      "imageAlt": "Soupir physiologique — illustration : des poumons de lumière avec deux inspirations successives et une longue expiration, la courbe du pouls qui descend."
     },
     "4-7-8-breathing": {
       "title": "Respiration 4-7-8 : effets et limites",
@@ -188,7 +192,9 @@
           "question": "Le décompte exact 4-7-8 est-il important ?",
           "answer": "Pas vraiment : le rapport compte plus que les secondes précises. Gardez une expiration nettement plus longue que l’inspiration, avec une pause entre les deux ; raccourcissez les trois phases si 7 secondes sont inconfortables."
         }
-      ]
+      ],
+      "imageTitle": "Respiration 4-7-8",
+      "imageAlt": "Respiration 4-7-8 — illustration : trois arcs lumineux de longueur croissante au-dessus d’une chambre sombre avec un croissant de lune à la fenêtre, une respiration lente avant de dormir."
     },
     "cardiac-coherence-insomnia-sleep": {
       "title": "Cohérence cardiaque et insomnie",
@@ -219,7 +225,9 @@
           "question": "La cohérence cardiaque remplace-t-elle le traitement de l’insomnie ?",
           "answer": "Non. C’est un outil d’appoint, à associer à une bonne hygiène de sommeil et, en cas d’insomnie persistante, à une prise en charge professionnelle comme la TCC-I (thérapie cognitivo-comportementale de l’insomnie)."
         }
-      ]
+      ],
+      "imageTitle": "Cohérence cardiaque et insomnie",
+      "imageAlt": "Cohérence cardiaque et insomnie — illustration : un lit la nuit, au-dessus une ligne agitée qui se lisse peu à peu en une onde cohérente et calme."
     },
     "bhastrika-pranayama-brain-anxiety": {
       "title": "Bhastrika, le cerveau et l’anxiété",
@@ -250,7 +258,9 @@
           "question": "Quand pratiquer Bhastrika ?",
           "answer": "Le matin ou quand vous avez besoin de vigilance – pas avant de dormir, car elle est stimulante. Pour décompresser, choisissez un pranayama lent ou la respiration bourdonnante."
         }
-      ]
+      ],
+      "imageTitle": "Pranayama Bhastrika et cerveau",
+      "imageAlt": "Pranayama Bhastrika et cerveau — illustration : des bouffées de souffle énergiques autour d’une silhouette, un cerveau dont une région profonde passe du rouge à un menthe apaisé."
     },
     "om-chanting-brain-vagus": {
       "title": "Chanter OM : le cerveau et le nerf vague",
@@ -281,7 +291,9 @@
           "question": "Faut-il être croyant pour que le chant du OM fonctionne ?",
           "answer": "Non. L’effet physiologique vient de la vibration et de l’expiration longue, pas de la croyance, même si beaucoup trouvent que la tradition apporte de la profondeur."
         }
-      ]
+      ],
+      "imageTitle": "Chant du OM et cerveau",
+      "imageAlt": "Chant du OM et cerveau — illustration : une silhouette assise émet des anneaux sonores concentriques, le centre émotionnel du cerveau s’assombrit calmement."
     },
     "trataka-candle-gazing-focus": {
       "title": "Trataka : fixer une bougie pour se concentrer",
@@ -312,7 +324,9 @@
           "question": "En quoi le trataka diffère-t-il de la méditation ?",
           "answer": "Le trataka est une technique de concentration précise qui utilise les yeux et un point extérieur fixe, alors que la méditation est plus large. Il sert souvent de porte d’entrée vers la méditation, car un regard stable apaise l’esprit."
         }
-      ]
+      ],
+      "imageTitle": "Trataka (regard sur la bougie)",
+      "imageAlt": "Trataka (regard sur la bougie) — illustration : une flamme de bougie à hauteur des yeux dans une pièce sombre, un fin faisceau d’attention qui l’atteint, tout le reste flou."
     },
     "sudarshan-kriya-yoga-breathing": {
       "title": "Sudarshan Kriya : preuves et limites",
@@ -343,7 +357,9 @@
           "question": "Puis-je apprendre le Sudarshan Kriya seul ?",
           "answer": "La pratique complète est traditionnellement enseignée par un instructeur formé, car elle enchaîne des techniques vigoureuses et lentes dans un ordre précis. Les éléments plus doux, comme la respiration Ujjayi lente, peuvent se pratiquer seul."
         }
-      ]
+      ],
+      "imageTitle": "Sudarshan Kriya Yoga",
+      "imageAlt": "Sudarshan Kriya Yoga — illustration : des vagues de souffle en cycles lents, moyens et rapides tournent en spirale autour d’un petit groupe assis."
     },
     "yoga-poses-heart-rate-blood-pressure": {
       "title": "Postures de yoga, pouls et tension",
@@ -374,7 +390,9 @@
           "question": "Quelles postures dynamisent au lieu d’apaiser ?",
           "answer": "Les salutations au soleil, les postures debout et les extensions arrière augmentent la fréquence cardiaque et la vigilance. Pratiquez-les plutôt en début de journée, pas avant de dormir ni pour calmer l’anxiété."
         }
-      ]
+      ],
+      "imageTitle": "Comment les postures de yoga agissent sur le cœur",
+      "imageAlt": "Postures de yoga et cœur — illustration : trois silhouettes en flexion avant, posture debout et extension arrière, chacune avec une courbe de pouls d’intensité différente."
     },
     "yoga-breathing-diabetes-blood-sugar": {
       "title": "Yoga et respiration dans le diabète de type 2",
@@ -405,7 +423,9 @@
           "question": "Quel yoga convient le mieux en cas de diabète ?",
           "answer": "Des programmes structurés associant postures douces, respiration lente et relaxation, comme dans les essais. Évitez la respiration intense et forcée en cas de complications cardiovasculaires, et apprenez auprès d’un enseignant qualifié."
         }
-      ]
+      ],
+      "imageTitle": "Yoga et respiration contre le diabète de type 2",
+      "imageAlt": "Yoga, respiration et diabète de type 2 — illustration : une courbe de glycémie en dents de scie se lisse en une ligne douce au-dessus d’une silhouette de yoga assise."
     },
     "morita-therapy-tracking-paradox": {
       "title": "Le paradoxe de s’observer : la thérapie Morita",
@@ -436,7 +456,9 @@
           "question": "Comment utiliser le suivi de la VFC de façon saine ?",
           "answer": "Regardez votre tendance plutôt que des mesures isolées, ne combattez pas un chiffre bas par l’inquiétude, réorientez-vous vers une action utile comme la respiration lente, le repos ou le mouvement, et remarquez si le suivi augmente votre anxiété. Informé, mais pas obsédé."
         }
-      ]
+      ],
+      "imageTitle": "Le paradoxe de s’observer",
+      "imageAlt": "Le paradoxe de s’observer (thérapie Morita) — illustration : une personne regarde son pouls sur son téléphone dans une spirale d’attention, puis le pose calmement."
     },
     "pranayama-metabolic-syndrome": {
       "title": "Pranayama et syndrome métabolique des jeunes",
@@ -467,7 +489,9 @@
           "question": "Pourquoi étudier des étudiants en médecine ?",
           "answer": "Leur quotidien exigeant, sédentaire et très stressant les expose tôt à un IMC et une tension élevés, ce qui en fait un groupe à haut risque utile pour tester la prévention – et un avertissement pour les jeunes adultes sédentaires en général."
         }
-      ]
+      ],
+      "imageTitle": "Pranayama et syndrome métabolique",
+      "imageAlt": "Pranayama et syndrome métabolique — illustration : une personne jeune à son bureau passe à une respiration calme, une goutte de sang et un mètre ruban flottent discrètement autour."
     }
   }
 }

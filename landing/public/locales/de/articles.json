@@ -82,7 +82,9 @@
           "question": "Kann Yoga Nidra bei Schlaflosigkeit helfen?",
           "answer": "Es passt zu Schlaflosigkeit durch kreisende Gedanken, weil es die Erregung über Body Scan und langsames Atmen senkt, statt Schlaf zu erzwingen. Anhaltende Schlaflosigkeit gehört trotzdem in ein Gespräch mit Ärztin oder Arzt."
         }
-      ]
+      ],
+      "imageTitle": "Yoga Nidra zum Einschlafen",
+      "imageAlt": "Yoga Nidra zum Einschlafen — Illustration: ein Mensch liegt in tiefer Entspannung auf dem Rücken unter langsamen Wellen, der Himmel halb Dämmerung, halb Nacht."
     },
     "physiological-sigh": {
       "title": "Physiologischer Seufzer: Ruhe in Sekunden",
@@ -135,7 +137,9 @@
           "question": "Kann ich den physiologischen Seufzer zu oft machen?",
           "answer": "Nein – es ist ein natürliches Muster, das dein Körper ohnehin von selbst erzeugt. Nutze ihn, wann immer du Stress oder flache Atmung bemerkst. Es ist eine Wellness-Technik, keine Behandlung einer Erkrankung."
         }
-      ]
+      ],
+      "imageTitle": "Physiologischer Seufzer",
+      "imageAlt": "Physiologischer Seufzer — Illustration: leuchtende Lunge mit zwei aufeinanderfolgenden Einatemströmen und einem langen Ausatemstrom, die Pulslinie sinkt."
     },
     "4-7-8-breathing": {
       "title": "4-7-8-Atmung: wie sie wirkt und wann nicht",
@@ -188,7 +192,9 @@
           "question": "Kommt es auf die genaue 4-7-8-Zählung an?",
           "answer": "Nicht genau – das Verhältnis zählt mehr als die exakten Sekunden. Halte die Ausatmung deutlich länger als die Einatmung, mit einer Pause dazwischen; verkürze alle drei Phasen, wenn dir 7 Sekunden unangenehm sind."
         }
-      ]
+      ],
+      "imageTitle": "4-7-8-Atmung",
+      "imageAlt": "4-7-8-Atmung — Illustration: drei leuchtende Bögen wachsender Länge über einem dunklen Schlafzimmer mit Mondsichel im Fenster — langsames Atmen vor dem Schlafen."
     },
     "cardiac-coherence-insomnia-sleep": {
       "title": "Herzkohärenz bei Schlaflosigkeit",
@@ -219,7 +225,9 @@
           "question": "Ersetzt kardiale Kohärenz die Behandlung von Schlaflosigkeit?",
           "answer": "Nein. Sie ist ein unterstützendes Werkzeug – am besten kombiniert mit guter Schlafhygiene und, bei anhaltender Schlaflosigkeit, mit professioneller Hilfe wie KVT-I (kognitive Verhaltenstherapie bei Insomnie)."
         }
-      ]
+      ],
+      "imageTitle": "Kardiale Kohärenz bei Schlaflosigkeit",
+      "imageAlt": "Kardiale Kohärenz bei Schlaflosigkeit — Illustration: ein Bett bei Nacht, darüber glättet sich eine unruhige Zackenlinie allmählich zu einer ruhigen kohärenten Welle."
     },
     "bhastrika-pranayama-brain-anxiety": {
       "title": "Bhastrika, das Gehirn und Angst",
@@ -250,7 +258,9 @@
           "question": "Wann sollte ich Bhastrika üben?",
           "answer": "Morgens oder wenn du wach werden willst – nicht vor dem Schlafen, denn sie wirkt anregend. Zum Herunterfahren wähle langsames Pranayama oder Summ-Atmung."
         }
-      ]
+      ],
+      "imageTitle": "Bhastrika-Pranayama und das Gehirn",
+      "imageAlt": "Bhastrika-Pranayama und das Gehirn — Illustration: kraftvolle Atemstöße um eine Silhouette, darüber ein Gehirn, dessen tiefe Region von Rot zu ruhigem Mint wechselt."
     },
     "om-chanting-brain-vagus": {
       "title": "OM-Singen, das Gehirn und der Vagusnerv",
@@ -281,7 +291,9 @@
           "question": "Muss ich religiös sein, damit OM-Chanten wirkt?",
           "answer": "Nein. Die körperliche Wirkung kommt von der Vibration und der langen Ausatmung, nicht vom Glauben – auch wenn viele finden, dass die Tradition der Praxis Tiefe gibt."
         }
-      ]
+      ],
+      "imageTitle": "OM-Chanten und das Gehirn",
+      "imageAlt": "OM-Chanten und das Gehirn — Illustration: eine sitzende Figur sendet konzentrische Schallringe aus, das emotionale Zentrum des Gehirns wird ruhig dunkler."
     },
     "trataka-candle-gazing-focus": {
       "title": "Trataka: Kerzenblick für mehr Fokus",
@@ -312,7 +324,9 @@
           "question": "Worin unterscheidet sich Trataka von Meditation?",
           "answer": "Trataka ist eine bestimmte Konzentrationstechnik mit den Augen und einem festen äußeren Punkt, Meditation ist weiter gefasst. Trataka dient oft als Einstieg in die Meditation, weil der ruhige Blick den Geist sammelt."
         }
-      ]
+      ],
+      "imageTitle": "Trataka (Kerzenblick)",
+      "imageAlt": "Trataka (Kerzenblick) — Illustration: eine Kerzenflamme auf Augenhöhe in einem dunklen Raum, ein feiner Aufmerksamkeitsstrahl reicht zu ihr, alles andere weich verschwommen."
     },
     "sudarshan-kriya-yoga-breathing": {
       "title": "Sudarshan Kriya: Evidenz und Grenzen",
@@ -343,7 +357,9 @@
           "question": "Kann ich Sudarshan Kriya allein lernen?",
           "answer": "Die vollständige Praxis wird traditionell von einer ausgebildeten Lehrkraft vermittelt, weil sie kraftvolle und langsame Techniken in genauer Abfolge verbindet. Sanftere Bestandteile wie die langsame Ujjayi-Atmung kannst du allein üben."
         }
-      ]
+      ],
+      "imageTitle": "Sudarshan Kriya Yoga",
+      "imageAlt": "Sudarshan Kriya Yoga — Illustration: Atemwellen in langsamen, mittleren und schnellen Zyklen winden sich spiralförmig um eine kleine sitzende Gruppe."
     },
     "yoga-poses-heart-rate-blood-pressure": {
       "title": "Yogahaltungen, Puls und Blutdruck",
@@ -374,7 +390,9 @@
           "question": "Welche Haltungen aktivieren statt zu beruhigen?",
           "answer": "Sonnengrüße, Standhaltungen und Rückbeugen erhöhen Herzfrequenz und Wachheit. Nutze sie eher früher am Tag – nicht vor dem Schlafen und nicht, um Angst zu beruhigen."
         }
-      ]
+      ],
+      "imageTitle": "Wie Yogahaltungen das Herz beeinflussen",
+      "imageAlt": "Yogahaltungen und Herz — Illustration: drei Silhouetten in Vorbeuge, Standhaltung und Rückbeuge, über jeder eine Pulslinie unterschiedlicher Intensität."
     },
     "yoga-breathing-diabetes-blood-sugar": {
       "title": "Yoga und Atmung bei Typ-2-Diabetes",
@@ -405,7 +423,9 @@
           "question": "Welches Yoga eignet sich am besten bei Diabetes?",
           "answer": "Strukturierte Programme mit sanften Haltungen, langsamem Atmen und Entspannung, wie in den Studien. Verzichte bei kardiovaskulären Komplikationen auf intensives, forciertes Atmen und lerne bei einer qualifizierten Lehrkraft."
         }
-      ]
+      ],
+      "imageTitle": "Yoga und Atmung bei Typ-2-Diabetes",
+      "imageAlt": "Yoga und Atmung bei Typ-2-Diabetes — Illustration: eine zackige Glukosekurve glättet sich zu einer sanften Linie über einer sitzenden Yoga-Silhouette."
     },
     "morita-therapy-tracking-paradox": {
       "title": "Das Paradox der Körperbeobachtung: Morita",
@@ -436,7 +456,9 @@
           "question": "Wie nutze ich HRV-Tracking auf gesunde Weise?",
           "answer": "Schau auf deinen Trend statt auf einzelne Werte, bekämpfe eine niedrige Zahl nicht mit Sorge, lenke dich auf hilfreiches Handeln wie langsames Atmen, Ruhe oder Bewegung um, und bemerke, ob das Tracking deine Angst steigert. Informiert, aber nicht fixiert."
         }
-      ]
+      ],
+      "imageTitle": "Das Paradox der Selbstbeobachtung",
+      "imageAlt": "Das Paradox der Selbstbeobachtung (Morita-Therapie) — Illustration: ein Mensch blickt in einer Aufmerksamkeitsspirale auf den Puls im Handy und legt es daneben gelassen weg."
     },
     "pranayama-metabolic-syndrome": {
       "title": "Pranayama und metabolisches Syndrom bei Jungen",
@@ -467,7 +489,9 @@
           "question": "Warum wurden Medizinstudierende untersucht?",
           "answer": "Ihr fordernder, bewegungsarmer und stressreicher Alltag setzt sie früh dem Risiko eines erhöhten BMI und Blutdrucks aus. Das macht sie zu einer nützlichen Hochrisikogruppe, um Prävention zu testen – und zu einer Warnung für bewegungsarme junge Erwachsene allgemein."
         }
-      ]
+      ],
+      "imageTitle": "Pranayama und metabolisches Syndrom",
+      "imageAlt": "Pranayama und metabolisches Syndrom — Illustration: ein junger Mensch am Schreibtisch wechselt zu ruhigem Atmen, ringsum schwach ein Blutstropfen und ein Maßband."
     }
   }
 }
