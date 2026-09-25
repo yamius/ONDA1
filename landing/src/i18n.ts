@@ -205,6 +205,9 @@ export const LANG_PAGE_EXCLUDE: Partial<Record<Lang, readonly string[]>> = {
   de: ['/privacy', '/terms'],
   fr: ['/privacy', '/terms'],
 }
+/** Languages whose /part/:slug bodies are not translated yet — no route, and
+ *  the language switcher keeps the EN URL (else a DE/FR shell wraps EN text). */
+export const PART_UNTRANSLATED_LANGS: readonly Lang[] = ['de', 'fr']
 export function isPageLocalizedFor(basePath: string, lang: Lang): boolean {
   return !(LANG_PAGE_EXCLUDE[lang]?.includes(basePath) ?? false)
 }
@@ -252,7 +255,7 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
   // Part detail page: preserve slug across language switches.
   const partMatch = basePath.match(/^\/part\/([^/]+)$/)
   if (partMatch) {
-    return lang === 'en' ? `/part/${partMatch[1]}` : `/${lang}/part/${partMatch[1]}`
+    return lang === 'en' || PART_UNTRANSLATED_LANGS.includes(lang) ? `/part/${partMatch[1]}` : `/${lang}/part/${partMatch[1]}`
   }
 
   // Article detail page: preserve slug across language switches — but only if
@@ -367,7 +370,7 @@ export function parseLevelRoute(route: string): { lang: Lang; levelNum: number }
 
 /** Build the localized URL for a part page. */
 export function partPathFor(slug: string, lang: Lang): string {
-  return lang === 'en' ? `/part/${slug}` : `/${lang}/part/${slug}`
+  return lang === 'en' || PART_UNTRANSLATED_LANGS.includes(lang) ? `/part/${slug}` : `/${lang}/part/${slug}`
 }
 
 /** All variants of /part/:slug — one per (slug, lang). */
@@ -375,6 +378,7 @@ export function partRouteVariants(slugs: string[]): string[] {
   const out: string[] = []
   for (const slug of slugs) {
     for (const lang of SUPPORTED_LANGS) {
+      if (PART_UNTRANSLATED_LANGS.includes(lang)) continue
       out.push(partPathFor(slug, lang))
     }
   }
