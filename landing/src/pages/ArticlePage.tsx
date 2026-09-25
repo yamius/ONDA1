@@ -944,7 +944,9 @@ export function ArticlePage() {
           const body = injectArticleGlossaryLinks(tContent, langPrefix)
           const m = /\n##\s/.exec(body)
           const head = m ? body.slice(0, m.index) : ''
-          const words = head.replace(/[#>*_`\[\]()]/g, ' ').trim().split(/\s+/).filter(Boolean).length
+          // CJK has no spaces between words — count ~2 Han characters as one word.
+          const cjk = (head.match(/[㐀-鿿]/g) || []).length
+          const words = head.replace(/[㐀-鿿]/g, ' ').replace(/[#>*_`\[\]()]/g, ' ').trim().split(/\s+/).filter(Boolean).length + Math.floor(cjk / 2)
           const md = (src: string, k: string) => (
             <Markdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeSlug]} components={markdownComponents} key={`${protocolRefresh}-${k}`}>
               {src}

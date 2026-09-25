@@ -527,6 +527,14 @@ const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
   { lang: 'uk', start: '2026-08-03' },
   { lang: 'zh', start: '2026-11-02' },
 ]
+/**
+ * Hand-reviewed native translations released ahead of their locale's drip
+ * start (the rest of that locale's backlog still waits for its date). Only a
+ * slug that also has a body in public/locales/<lang>/articles.json goes live.
+ */
+const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
+  zh: ['yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing'],
+}
 function articleRolloutDate(start: string, index: number): string {
   const d = new Date(`${start}T00:00:00Z`)
   d.setUTCDate(d.getUTCDate() + Math.floor(index / ARTICLE_ROLLOUT_BATCH) * 7)
@@ -551,7 +559,8 @@ const liveLocaleArticles: Record<string, string[]> = (() => {
       .map((a) => a.slug)
       .filter((s) => s in bodies)
       .sort()
-    const live = slugs.filter((_s, i) => articleRolloutDate(start, i) <= BUILD_DATE)
+    const early = new Set(ARTICLE_LOCALE_EARLY[lang] ?? [])
+    const live = slugs.filter((s, i) => early.has(s) || articleRolloutDate(start, i) <= BUILD_DATE)
     if (live.length) out[lang] = live
   }
   return out
