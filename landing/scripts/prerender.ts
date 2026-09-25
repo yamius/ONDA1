@@ -571,7 +571,10 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   const lvl = file.levels[String(levelNum)]
   if (!lvl) return html
 
-  const title = file.ui.metaTitleTpl.replace('{{number}}', String(levelNum)).replace('{{name}}', lvl.name)
+  // Two-part level names ("X / Y") overflow the SERP budget in DE/ES/RU; fall back to the first half.
+  const levelTitle = (name: string) => file.ui.metaTitleTpl.replace('{{number}}', String(levelNum)).replace('{{name}}', name)
+  const fullTitle = levelTitle(lvl.name)
+  const title = fullTitle.length <= 60 ? fullTitle : levelTitle(lvl.name.split(/\s*\/\s*/)[0])
   const desc = lvl.metaDescription ?? lvl.subtitle ?? ''
   const url = levelUrlFor(levelNum, lang)
   const escTitle = escAttr(title)
@@ -850,7 +853,7 @@ for (const route of routes) {
           desc = c?.description ?? ''
         } else if (reviewInfo.kind === 'headToHead') {
           const h = rf.headToHeads?.[reviewInfo.slug]
-          title = h?.title ? `${h.title} | ONDA Life` : ''
+          title = h?.title ? fitTitle(h.title, ' | ONDA Life') : ''
           desc = h?.description ?? ''
         } else {
           const review = getReviewBySlug(reviewInfo.slug)
@@ -1064,6 +1067,6 @@ console.log('[build] all stages complete')
  * the colon + brand.
  */
 function fitTitle(base: string, suffix: string): string {
-  const head = base.split(/\s*[:：]\s*/)[0]
+  const head = base.split(/\s*[:：]\s*|\s+\(/)[0]
   return [`${base}${suffix}`, base, `${head}${suffix}`].find((t) => t.length <= 60) ?? head
 }
