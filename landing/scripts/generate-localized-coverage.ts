@@ -16,11 +16,11 @@ import {
 } from './prerender-routes'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const LANGS = ['es', 'ru', 'uk', 'zh'] as const
+const LANGS = ['es', 'ru', 'uk', 'zh', 'de', 'fr'] as const
 
 // route '/es/articles/<slug>' -> { lang:'es', slug:'<slug>' }
 function slugsByLang(routes: Set<string>, segment: string): Record<string, string[]> {
-  const out: Record<string, string[]> = { es: [], ru: [], uk: [], zh: [] }
+  const out: Record<string, string[]> = { es: [], ru: [], uk: [], zh: [], de: [], fr: [] }
   for (const r of routes) {
     const parts = r.split('/').filter(Boolean) // [lang, segment, ...slug]
     if (parts.length < 3 || parts[1] !== segment) continue
@@ -39,7 +39,7 @@ const glossary = slugsByLang(LOCALIZED_GLOSSARY_ROUTE_SET, 'glossary')
 // /<lang>/reviews index itself ('' remainder). Capture the full remainder after
 // 'reviews' so langHref() can keep the locale prefix only for paths that exist.
 function reviewRemaindersByLang(routes: Set<string>): Record<string, string[]> {
-  const out: Record<string, string[]> = { es: [], ru: [], uk: [], zh: [] }
+  const out: Record<string, string[]> = { es: [], ru: [], uk: [], zh: [], de: [], fr: [] }
   for (const r of routes) {
     const parts = r.split('/').filter(Boolean) // [lang, 'reviews', ...rest]
     if (parts.length < 2 || parts[1] !== 'reviews') continue

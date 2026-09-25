@@ -12,8 +12,10 @@ import es from '../public/locales/es/home.json'
 import ru from '../public/locales/ru/home.json'
 import uk from '../public/locales/uk/home.json'
 import zh from '../public/locales/zh/home.json'
+import de from '../public/locales/de/home.json'
+import fr from '../public/locales/fr/home.json'
 
-export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh'] as const
+export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
 
 export const LANG_LABELS: Record<Lang, string> = {
@@ -22,6 +24,8 @@ export const LANG_LABELS: Record<Lang, string> = {
   ru: 'RU',
   uk: 'UK',
   zh: 'ZH',
+  de: 'DE',
+  fr: 'FR',
 }
 
 /** OpenGraph locale codes (BCP-47 with underscore). Used in og:locale meta tags. */
@@ -31,6 +35,8 @@ export const OG_LOCALES: Record<Lang, string> = {
   ru: 'ru_RU',
   uk: 'uk_UA',
   zh: 'zh_CN',
+  de: 'de_DE',
+  fr: 'fr_FR',
 }
 
 if (!i18n.isInitialized) {
@@ -44,6 +50,8 @@ if (!i18n.isInitialized) {
       ru: { home: ru },
       uk: { home: uk },
       zh: { home: zh },
+      de: { home: de },
+      fr: { home: fr },
     },
     ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews', 'emoton'],
     defaultNS: 'home',
@@ -189,6 +197,19 @@ export const LOCALIZED_PAGES: Record<string, string> = {
 const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
 
 /**
+ * Localized pages a language does NOT publish (yet). DE/FR legal pages stay
+ * EN until a lawyer reviews the translations (GDPR) — no /de/privacy route,
+ * no hreflang entry, and the language switcher keeps the EN URL.
+ */
+export const LANG_PAGE_EXCLUDE: Partial<Record<Lang, readonly string[]>> = {
+  de: ['/privacy', '/terms'],
+  fr: ['/privacy', '/terms'],
+}
+export function isPageLocalizedFor(basePath: string, lang: Lang): boolean {
+  return !(LANG_PAGE_EXCLUDE[lang]?.includes(basePath) ?? false)
+}
+
+/**
  * Strip a leading language segment (/ru, /es...) from a path. Returns the EN
  * base path. e.g. "/ru/about" → "/about", "/ru" → "/", "/articles" → "/articles".
  */
@@ -274,7 +295,7 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
   }
 
   if (LOCALIZED_BASE_PATHS.includes(basePath)) {
-    if (lang === 'en') return basePath
+    if (lang === 'en' || !isPageLocalizedFor(basePath, lang)) return basePath
     return basePath === '/' ? `/${lang}` : `/${lang}${basePath}`
   }
 
@@ -289,6 +310,7 @@ export function localizedRouteVariants(): string[] {
   const out: string[] = []
   for (const base of LOCALIZED_BASE_PATHS) {
     for (const lang of SUPPORTED_LANGS) {
+      if (!isPageLocalizedFor(base, lang)) continue
       out.push(localizedPathFor(base, lang))
     }
   }
@@ -313,7 +335,7 @@ export function metricRouteVariants(metricKeys: string[]): string[] {
 
 /** Parse a metric URL — returns { lang, metric } or null. */
 export function parseMetricRoute(route: string): { lang: Lang; metric: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/bio\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/bio\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, metric: m[2] }
@@ -337,7 +359,7 @@ export function levelRouteVariants(levelNumbers: number[]): string[] {
 
 /** Parse a level URL — returns { lang, levelNum } or null. */
 export function parseLevelRoute(route: string): { lang: Lang; levelNum: number } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/level\/(\d+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/level\/(\d+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, levelNum: parseInt(m[2], 10) }
@@ -361,7 +383,7 @@ export function partRouteVariants(slugs: string[]): string[] {
 
 /** Parse a part URL — returns { lang, slug } or null. */
 export function parsePartRoute(route: string): { lang: Lang; slug: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh))?\/part\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/part\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, slug: m[2] }

@@ -526,6 +526,10 @@ const ARTICLE_ROLLOUT_BATCH = 11
 const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
   { lang: 'uk', start: '2026-08-03' },
   { lang: 'zh', start: '2026-11-02' },
+  // DE/FR: native-quality launch — nothing drips on a date yet; articles go
+  // live only through ARTICLE_LOCALE_EARLY below.
+  { lang: 'de', start: '2099-01-01' },
+  { lang: 'fr', start: '2099-01-01' },
 ]
 /**
  * Hand-reviewed native translations released ahead of their locale's drip
