@@ -537,6 +537,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep',
     'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
+    'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
