@@ -1,0 +1,341 @@
+{
+  "ui": {
+    "breadcrumbHome": "Start",
+    "back": "← Zur Startseite",
+    "openProtocolPrefix": "→ Protokoll ",
+    "openProtocolSuffix": " öffnen",
+    "openProtocolAria": "Protokoll {{label}} öffnen",
+    "openProtocolTitle": "Protokoll {{label}} öffnen — {{protocol}}",
+    "biologicalProtocol": "Biologisches Protokoll",
+    "targetSystems": "Zielsysteme",
+    "resultsBenefits": "Ergebnisse und Nutzen",
+    "researchBasis": "Forschungsgrundlage",
+    "relatedTerms": "Verwandte Begriffe",
+    "videoTitleTpl": "Stufe {{number}}: {{name}} — ONDA Life",
+    "metaTitleTpl": "Stufe {{number}}: {{name}} | ONDA Life"
+  },
+  "levels": {
+    "1": {
+      "name": "KÖRPER / TERRA",
+      "subtitle": "Architektur des Biocomputers: vom Überleben zur Autonomie",
+      "metaDescription": "Stufe 1: Homöostase, Interozeption, HRV. Atmung, Zwerchfell, Vagustonus — die Grundlage parasympathischer Aktivierung. Kalibriere deinen biologischen Nullpunkt.",
+      "intro": "Stufe 1 ist eine gründliche Inspektion und Kalibrierung deiner „Hardware“. Hier steigen wir hinab zum „biologischen Nullpunkt“ — den Grundeinstellungen des Überlebens —, um den Körper von einer „belagerten Festung“ in ein sicheres, effizientes Zuhause zu verwandeln.\n\nDas ist das Fundament des gesamten ONDA-Life-Ökosystems. Hier ist das Bewusstsein noch nicht von den Stoffwechselprozessen getrennt; unsere Aufgabe ist es, die Leistung der ältesten Hirnstrukturen zu optimieren.",
+      "architecture": {
+        "intro": "Stufe 1 gliedert sich in drei Kalibrierungsprotokolle:",
+        "parts": [
+          { "label": "Ich bin", "protocol": "Protokoll: Homöostase", "goal": "Ziel: das System von „ängstlicher Erwartung“ in einen Zustand „sicheren Seins“ bringen.", "work": "Arbeit: die Verbindung zwischen Hirnstamm und Inselrinde (Insula) abstimmen. Die primäre Interozeption aktivieren — die Fähigkeit, Puls, Organrhythmen und Atem als Grundlage der Selbstwahrnehmung zu spüren." },
+          { "label": "Ich bewege mich", "protocol": "Protokoll: Rhythmische Kohärenz", "goal": "Ziel: vom statischen Dasein zur Dynamik eines „fließenden Körpers“.", "work": "Arbeit: die CPGs (zentrale Mustergeneratoren) aktivieren — Schaltkreise im Rückenmark, die für automatische Anmut zuständig sind. Wir wecken die „Intelligenz des Fisches“: mühelose Bewegung, die aus der Resonanz mit der Schwerkraft entsteht." },
+          { "label": "Ich passe mich an", "protocol": "Protokoll: Meisterschaft über die Schwerkraft", "goal": "Ziel: innere Autonomie und strukturellen Halt erreichen.", "work": "Arbeit: die Formatio reticularis und den sensomotorischen Kortex abstimmen. Wir trainieren das System, schnell zwischen „Fließen“ und „Stabilität“ zu wechseln und die Schwerkraft als Ressource statt als Last zu nutzen." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Der technologische Stack dieser Stufe umfasst:",
+        "items": [
+          { "name": "Interozeptive Kalibrierung", "text": "Die Fähigkeit entwickeln, Signale des „Biocomputers“ zu erkennen, bevor sie zu Emotionen oder Gedanken werden." },
+          { "name": "Vagustonus (V2)", "text": "Aus „Erstarrungs“-Zuständen herausfinden, indem das Zwerchfell gelöst und der Vagusnerv aktiviert wird." },
+          { "name": "Vestibulo-okulärer Reflex (VOR)", "text": "Blick und Orientierung im Strom eingehender Reize stabilisieren." },
+          { "name": "Energieeffizienz", "text": "Das Nervensystem trainieren, mit weniger Aufwand zu arbeiten — und nach und nach den „Körperpanzer“ (chronische Anspannung) zu lösen." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Die Stufe spricht folgende neuronale Strukturen an:",
+        "items": [
+          { "name": "Inselrinde (Insula)", "text": "Das zentrale Drehkreuz für Selbstwahrnehmung und Interozeption." },
+          { "name": "Hirnstamm und Hypothalamus", "text": "Steuerzentren für Lebenserhaltung und Homöostase." },
+          { "name": "Kleinhirn", "text": "Unterstützt Präzision, Koordination und das Glätten von „Rauschen“ in der Bewegung." },
+          { "name": "Vagusnerv", "text": "Die Hauptverkehrsader des parasympathischen Systems, zuständig für das biologische Gefühl von Sicherheit." }
+        ]
+      },
+      "results": {
+        "intro": "Ziel von Stufe 1 ist es, einen „Punkt der Stille“ und „neuronale Geschmeidigkeit“ zu erreichen. Was Menschen bei regelmäßiger Praxis oft bemerken:",
+        "items": [
+          "Eine HRV, die mit der Zeit tendenziell steigt, wenn das Nervensystem flexibler wird.",
+          "Eine ruhigere Baseline: Viele bemerken bei regelmäßiger Praxis weniger Grundanspannung.",
+          "Weniger Festhalten: chronische Anspannung löst sich, die Atmung wird tiefer und rhythmischer."
+        ]
+      }
+    },
+    "2": {
+      "name": "EMOTIONEN / AQUA",
+      "subtitle": "Biochemie der Energie: von der Wendigkeit zur sozialen Kraft",
+      "metaDescription": "Stufe 2: emotionale Meisterschaft. HPA-Achse, DHEA, Spiegelneuronen — Neurozeption, ventraler Vagus, soziale Resonanz. Von der Wendigkeit zu ruhiger Souveränität.",
+      "intro": "Stufe 2 ist die Phase, in der du dein emotionales System wie einen Hightech-Reaktor beherrschen lernst. Wir hören auf, Emotionen als bloße „Launen“ zu sehen, und behandeln sie als biologische Protokolle: mit bestimmten hormonellen Signaturen, neuromotorischen Mustern und vegetativen Profilen.\n\nAuf dieser Stufe folgen wir dem Weg der Evolution der Säugetiere: von den blitzschnellen Reaktionen eines kleinen Tiers über die unerschütterliche Ruhe eines großen Raubtiers bis zur komplexen Resonanz eines höheren Primaten.",
+      "architecture": {
+        "intro": "Stufe 2 vereint drei Strategien des Ressourcenmanagements:",
+        "parts": [
+          { "label": "Ich manövriere", "protocol": "Protokoll: Die Wendigkeit des „kleinen Säugetiers“", "goal": "Ziel: biologische Flexibilität und blitzschnelle Beschleunigung ohne lähmenden Stress.", "work": "Mechanismus: Training der Neurozeption (die Fähigkeit des Gehirns, Bedrohungen zu erkennen, bevor sie bewusst wahrgenommen werden). Wir bringen dem System bei, geschmeidig zwischen Ruhe und Handlung zu „gleiten“ und Cortisol und Adrenalin von Giften in Treibstoff für Präzision zu verwandeln." },
+          { "label": "Ich schütze mein Revier", "protocol": "Protokoll: Die Stärke des „großen Säugetiers“", "goal": "Ziel: souveräne Ruhe und Dichte der Präsenz.", "work": "Mechanismus: Arbeit mit dem Hormonsystem — mit der Zeit weniger auf Notfall-Cortisol und mehr auf DHEA setzen. Das unterstützt einen Zustand „ruhiger Souveränität“, eine Stabilität, die andere oft spüren, bevor du überhaupt sprichst." },
+          { "label": "Ich bin Teil der Gruppe", "protocol": "Protokoll: Soziale Resonanz", "goal": "Ziel: individuelles Überleben in kollektive Kraft verwandeln.", "work": "Mechanismus: das „soziale Gehirn“ aktivieren — das Spiegelneuronensystem und das Oxytocinprofil. Wir lernen, unsere Rhythmen mit der Gruppe zu synchronisieren (Ko-Regulation) und dabei ein eigenes Zentrum zu behalten. Deine Präsenz wird zum „Kitt“, der das Feld verbindet." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Der technologische Stack des Energiemanagements:",
+        "items": [
+          { "name": "Polyvagal-Theorie (ventraler Vagus)", "text": "Den „klugen Parasympathikus“ nutzen, um auch unter hoher Belastung sozial verbunden zu bleiben." },
+          { "name": "Regulation der HPA-Achse", "text": "Arbeit mit der Kette Hypothalamus–Hypophyse–Nebenniere, die die hormonelle Stressreaktion formt." },
+          { "name": "Emotionale Osmose", "text": "Die Fähigkeit, Zustände mit anderen auszutauschen, ohne von ihrem Chaos verschluckt zu werden." },
+          { "name": "Lymphatisches Pumpen", "text": "Den Muskeltonus als Pumpe nutzen, um den Körper von Stoffwechselprodukten des Stresses zu befreien." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Die Stufe spricht folgende neuronale Strukturen an:",
+        "items": [
+          { "name": "Hypothalamus", "text": "Steuerzentrum für Revierverhalten und hormonelles Gleichgewicht." },
+          { "name": "Basalganglien", "text": "Bildung stabiler, „unerschütterlicher“ Haltungen und Gewohnheiten der Souveränität." },
+          { "name": "Spiegelneuronen", "text": "Das System des Gehirns, um Absichten und Zustände anderer zu lesen." },
+          { "name": "Anteriorer cingulärer Kortex", "text": "Der Detektor für soziale Signale und emotionale Treffsicherheit." }
+        ]
+      },
+      "results": {
+        "intro": "Stufe 2 baut kognitive Selektivität und ruhigere Kontrolle unter Druck auf. Was Menschen bei regelmäßiger Praxis oft bemerken:",
+        "items": [
+          "Bewusste Schnelligkeit statt Impulsivität: den Verlauf einer Reaktion spüren, statt sie einfach abzufeuern.",
+          "Mit der Zeit ein ausgeglicheneres Stresshormonprofil — weniger Adrenalinbetrieb, mehr ruhiger Antrieb.",
+          "Soziale Stabilität: die eigene Ruhe und Klarheit unter anderen Menschen halten, auch in aufgeladenen Momenten."
+        ]
+      }
+    },
+    "3": {
+      "name": "GEIST / AER",
+      "subtitle": "Architektur des Geistes: von der Reaktivität zum Entwurf",
+      "metaDescription": "Stufe 3: Deep Work und Produktivität. PFC, Noradrenalin, Gamma-Bindung — kognitive Klarheit. Trainiere Fokus, Mustererkennung und mentale Simulation für Gründer und IT-Profis.",
+      "intro": "Stufe 3 ist die Stufe kognitiver Souveränität. Wir erheben uns über Instinkte und limbische Reaktionen, um Aufmerksamkeit von einem chaotischen Prozess in ein kontrolliertes Werkzeug zu verwandeln. Hier übernimmt der Geist die Rolle des Chefdirigenten des Biocomputers.\n\nIn dieser Phase trainieren wir das Gehirn, das „Signal“ aus dem „Rauschen“ zu filtern, den Fokus bei Informationsüberflutung zu halten und die Vorstellungskraft als biologische Software zu nutzen, um die Wirklichkeit neu zu schreiben.",
+      "architecture": {
+        "intro": "Stufe 3 vereint drei Algorithmen zur Steuerung des Bewusstseins:",
+        "parts": [
+          { "label": "Ich unterscheide", "protocol": "Protokoll: Optimierung des Signal-Rausch-Verhältnisses", "goal": "Ziel: eine „kognitive Lücke“ zwischen Reiz und Reaktion schaffen.", "work": "Mechanismus: den Thalamus abstimmen — den wichtigsten Torwächter der Sinnesströme. Wir trainieren das Gehirn, objektive Fakten von subjektivem Rauschen zu trennen und so kristallklare Wahrnehmung zu erreichen." },
+          { "label": "Ich fokussiere", "protocol": "Protokoll: Neuronale Resilienz", "goal": "Ziel: von reaktiver Aufmerksamkeit zum bewussten Einsatz der eigenen Ressourcen.", "work": "Mechanismus: das dorsale Aufmerksamkeitsnetzwerk (DAN) aktivieren und das Ruhezustandsnetzwerk (DMN — das „Gedankenschweifen“) dämpfen. Das ist der „Deep-Work“-Modus, der tiefes Eintauchen erlaubt, ohne Energie an Ablenkungen zu verschwenden." },
+          { "label": "Ich gestalte die Vision", "protocol": "Protokoll: Mentale Simulation", "goal": "Ziel: die Zukunft auf neuronaler Ebene entwerfen.", "work": "Mechanismus: das innere „Rendering“ starten. Wir nutzen Hippocampus und präfrontalen Kortex, um Vorhersagemodelle zu bilden (Predictive Coding). Vorstellungskraft ist hier keine Fantasie, sondern ein Handlungsprogramm für das RAS (retikuläres Aktivierungssystem)." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Der technologische Stack der kognitiven Kontrolle:",
+        "items": [
+          { "name": "Kognitive Lücke", "text": "Die Pause zwischen einem Ereignis und einer automatischen Reaktion vergrößern, damit Raum für freie Wahl entsteht." },
+          { "name": "Cholinerge Modulation", "text": "Acetylcholin nutzen, um die benötigten neuronalen Verbindungen beim Fokussieren buchstäblich „hervorzuheben“." },
+          { "name": "Gamma-Bindung", "text": "Neuronen im Gammabereich synchronisieren, um verstreute Erfahrungsfragmente zu einer Einsicht zusammenzufügen." },
+          { "name": "Proaktive Programmierung (RAS)", "text": "Die Filter des Gehirns so einstellen, dass sie automatisch nach Gelegenheiten suchen, die zu deiner inneren Vision passen." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Die Stufe spricht folgende neuronale Strukturen an:",
+        "items": [
+          { "name": "DLPFC (dorsolateraler präfrontaler Kortex)", "text": "Die Kommandozentrale für Aufmerksamkeit und Arbeitsgedächtnis." },
+          { "name": "Thalamus", "text": "Der Torwächter der Sinnesströme, der Überflüssiges herausfiltert." },
+          { "name": "ACC (anteriorer cingulärer Kortex)", "text": "Ein hochpräziser Detektor für Fehler und Unterschiede." },
+          { "name": "Locus coeruleus", "text": "Regler von Wachheit und Neuroplastizität über Noradrenalin." }
+        ]
+      },
+      "results": {
+        "intro": "Stufe 3 baut mentale Autonomie und „neuronale Resilienz“ auf. Was Menschen bei regelmäßiger Praxis oft bemerken:",
+        "items": [
+          "Mustererkennung: Muster in Ereignissen erfassen, bevor sie deine Aufmerksamkeit kapern.",
+          "Ausdauer für Deep Work: anhaltender Fokus in 90/20-Zyklen, ohne auszubrennen.",
+          "Verkörperte Probe: Ein lebhaft vorgestelltes Ergebnis fühlt sich für den Körper real an, nicht nur für den Kopf.",
+          "Weniger mentale Last: weniger Aufwand für Wahrnehmung, sobald die Werkzeuge schärfer sind."
+        ]
+      }
+    },
+    "4": {
+      "name": "GESELLSCHAFT / IGNIS",
+      "subtitle": "Oxytocin, Spiegelneuronen und ventraler Vagus — der Treibstoff sozialer Resonanz.",
+      "metaDescription": "Stufe 4: soziale Intelligenz, Biologie der Führung, Team-Synergie. Oxytocin, Spiegelneuronen, ventraler Vagus — die Neurobiologie der Empathie. Vom Selbstausdruck zum kollektiven Geist.",
+      "intro": "Soziale Intelligenz: vom Selbstausdruck zum kollektiven Geist\n\nStufe 4 ist die Phase der sozialen Verwirklichung und Bewährung. Hier geht der „innere Entwurf“ aus der Stufe des Geistes durch den Filter der äußeren Umgebung. Wir machen den Körper zu einem kraftvollen Sender von Ideen und die Begegnung mit Menschen zur Kunst der Resonanz.\n\nAuf dieser Stufe meistern wir die Biologie von Einfluss, Empathie und Gruppensynergie und gehen vom persönlichen Überleben über zum Zustand des Homo Creativus (des schöpferischen Menschen).",
+      "architecture": {
+        "intro": "Stufe 4 vereint drei Etappen sozialer Entwicklung:",
+        "parts": [
+          { "label": "Ich drücke mich aus", "protocol": "Protokoll: Neuroendokrinologie des Einflusses", "goal": "Ziel: soziale Lähmung überwinden und eine souveräne Stimme finden.", "work": "Mechanismus: Herz (Gefühle), Gehirn (Vision) und Kehle (das Instrument des Ausdrucks) synchronisieren. Mit kognitiver Neubewertung verwandeln wir Lampenfieber in Antrieb und die Stimme in ein Werkzeug körperlicher Resonanz." },
+          { "label": "Ich interagiere", "protocol": "Protokoll: Empathische Regulation", "goal": "Ziel: Meisterschaft im „Raum dazwischen“. Vom Konflikt zur Überlagerung.", "work": "Mechanismus: das „soziale Gehirn“ aktivieren (Theory of Mind). Wir lernen, Grenzen — die eigenen und die anderer — in Echtzeit zu spüren und so eine nährende Begegnung zu schaffen, die beide Seiten stärkt." },
+          { "label": "Ich gestalte mit", "protocol": "Protokoll: Kollektive Intelligenz", "goal": "Ziel: eine Gruppe in ein lebendiges neuronales Netz verwandeln.", "work": "Mechanismus: neuronale Kopplung erreichen. Wir lernen, Atmung und Hirnrhythmen im Team zu synchronisieren und so zu kollektiven Einsichten und Synergien zu gelangen, die einem einzelnen Geist verschlossen bleiben." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Der technologische Stack sozialer Interaktion:",
+        "items": [
+          { "name": "Kognitive Neubewertung", "text": "Eine PFC-Technik, um die Aktivität der Amygdala (Angst) physiologisch zu dämpfen und durch Begeisterung zu ersetzen." },
+          { "name": "Oxytocin-Schleifen", "text": "Blickkontakt und Mikroausdrücke steuern, um sofortiges biologisches Vertrauen aufzubauen." },
+          { "name": "Synchronität zwischen Gehirnen", "text": "Das Phänomen, dass sich die Hirnrhythmen von Partnern angleichen, damit gemeinsame Aufgaben nahtlos gelingen." },
+          { "name": "DMN-Hemmung", "text": "Das „Ego-Netzwerk“ des Gehirns dämpfen, um vom Schutz persönlicher Grenzen zur Verwirklichung eines gemeinsamen Ziels überzugehen." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Die Stufe spricht folgende neuronale Strukturen an:",
+        "items": [
+          { "name": "Broca- und Wernicke-Areal", "text": "Zentren für den Aufbau und die Vermittlung von Sprache." },
+          { "name": "Spiegelneuronen", "text": "Die biologische Grundlage für Empathie und das intuitive Lesen von Absichten." },
+          { "name": "Orbitofrontaler Kortex", "text": "Modulator ethischer Entscheidungen und sozialer Harmonie im Moment." },
+          { "name": "rTPJ (rechter temporoparietaler Übergang)", "text": "Schlüsselknoten für das „mentale Modell“ anderer." }
+        ]
+      },
+      "results": {
+        "intro": "Stufe 4 öffnet soziale Freiheit und gemeinsames Gestalten. Was Menschen bei regelmäßiger Praxis oft bemerken:",
+        "items": [
+          "Souveräner Ausdruck: eine klarere, geerdetere Stimme, ohne Spannung in Kiefer oder Kehle.",
+          "Empathische Präzision: den Zustand eines Gegenübers spüren, bevor er ausgesprochen wird.",
+          "Synergie: sich in Gruppenprozesse jeder Komplexität einfügen und dabei das eigene Zentrum behalten.",
+          "Verbindung, die trägt: Zusammenarbeit, die sich wirklich bereichernd anfühlt statt auslaugend."
+        ]
+      }
+    },
+    "5": {
+      "name": "NEUROSOMATISCHER GEIST / SENSORISCHE INTELLIGENZ",
+      "subtitle": "Interozeptive Genauigkeit und sensorische Erweiterung — der Körper als hochpräzise Antenne.",
+      "metaDescription": "Stufe 5: sensorische Intelligenz. Interozeption, Insula, C-taktile Fasern. Verwandle den Körper in eine hochpräzise Antenne für innere und äußere Signale.",
+      "intro": "In dieser Phase kehren wir in den „biologischen Raumanzug“ zurück — nicht als passive Passagiere, sondern als erfahrene Piloten. Wir gehen von einfacher Selbstbeobachtung zu hochpräziser sensorischer Intelligenz über. Ziel ist es, den Körper von einem Objekt, das gewartet werden muss, in eine perfekte „Antenne“ zu verwandeln, die feinste Signale aus der inneren und äußeren Umgebung lesen kann.",
+      "architecture": {
+        "intro": "Stufe 5 vereint Protokolle sensorischer Präzision:",
+        "parts": [
+          { "label": "Ich spüre", "protocol": "Protokoll: Interozeptive Genauigkeit und sensorische Erweiterung", "goal": "Ziel: über sensorische Anker vom „Überlebensmodus“ in den vollständigen „Präsenzmodus“ wechseln.", "work": "Arbeit: Inselrinde, somatosensorischen Kortex und thalamische Filter aktivieren. C-taktile Fasern und propriozeptive Integration einbeziehen, um eine hochgenaue Körperkarte zu schaffen." },
+          { "label": "Ich leite", "protocol": "Protokoll: Neurodynamische Leitfähigkeit und faszialer Fluss", "goal": "Ziel: der Körper als Leiter — Impulse in Ressourcen verwandeln und dabei die Homöostase halten.", "work": "Arbeit: muskuläre, vaskuläre und neuronale Stauungen lösen. Nervensystem und Gewebe trainieren, Stress, Schmerz und starke Gefühle ungehindert hindurchfließen zu lassen. Mit der Zeit somatische Freiheit und hohe Leitfähigkeit aufbauen." },
+          { "label": "Ich stimme mich ein", "protocol": "Protokoll: Neurosomatische Verschmelzung und kollektive Ekstase", "goal": "Ziel: von individueller Leitfähigkeit zu kollektiver Resonanz — ein gemeinsamer neurosomatischer Kreislauf (der „Wir-Zustand“).", "work": "Arbeit: die Grenzen der Ego-Hülle auflösen. Oxytocin, Spiegelneuronen, den ventralen Vaguskomplex und die parietale Modulation aktivieren. Eine neurosomatische Kopplung erreichen, in der zwei Organismen wie einer funktionieren." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Der technologische Stack der sensorischen Erweiterung:",
+        "items": [
+          { "name": "Interozeptive Genauigkeit", "text": "Übungen, die die Insula aktivieren, damit du Pulsieren, Darmbewegung und Mikrobewegungen unter der Haut wahrnehmen kannst." },
+          { "name": "Sensorische Unterscheidung", "text": "Übungen, die die Exterozeption durch bewusste Steuerung thalamischer Filter schärfen." },
+          { "name": "DMN-Dämpfung über die Sinne", "text": "Die Aufmerksamkeit auf die „direkte Leitung“ der Empfindungen lenken, um gedankliches Grübeln abzuschalten." },
+          { "name": "Klarheit der Verkörperung", "text": "Die Verzögerung zwischen einem Körpersignal und seinem Bewusstwerden verkürzen." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Die Stufe spricht folgende neuronale Strukturen an:",
+        "items": [
+          { "name": "Inselrinde", "text": "Das Zentrum, das physiologische Signale in bewusste Empfindungen übersetzt." },
+          { "name": "Parasympathisches Nervensystem", "text": "Schafft einen Hintergrund von Sicherheit für maximale Empfindsamkeit." },
+          { "name": "Rechte Hemisphäre", "text": "Ganzheitliche, einheitliche Wahrnehmung der Körpererfahrung." },
+          { "name": "Somatosensorischer Kortex (S1/S2)", "text": "Schärft die taktile Wahrnehmung und die Unterscheidung von Reizen." },
+          { "name": "Thalamus", "text": "Sensorisches Tor — senkt die Filterschwellen für detaillierte Information." },
+          { "name": "C-taktile Fasern", "text": "Bahnen der „emotionalen“ Berührung, die die Haut mit Zentren des Wohlbefindens verbinden." }
+        ]
+      },
+      "results": {
+        "intro": "Stufe 5 zielt auf „körperliche Transparenz“. Was Menschen bei regelmäßiger Praxis oft bemerken:",
+        "items": [
+          "Schärfere Interozeption — feine Körpersignale deutlicher spüren.",
+          "Mit der Zeit weniger Anspannung in Ruhe.",
+          "Eine stabilere, ruhigere autonome Baseline.",
+          "Den Körper als klares Signal erleben statt als Hintergrundrauschen."
+        ]
+      }
+    },
+    "6": {
+      "name": "GEHIRN / AQUA II",
+      "subtitle": "Kognitive Souveränität und globale neuronale Integration — der Geist als hochpräziser Supercomputer.",
+      "metaDescription": "Stufe 6 GEHIRN / AQUA II: kognitive Souveränität und Neuro-Integration. DMN-Deaktivierung, Metakognition, Gammarhythmen. Meistere das Protokoll des Meta-Programmierers. ONDA Life.",
+      "intro": "In dieser Phase gehen wir von der Steuerung des „biologischen Raumanzugs“ zur Beherrschung der „Kommandobrücke“ des Bewusstseins über. Wir bewegen uns von sensorischer Intelligenz zu kognitiver Souveränität. Ziel ist es, neuronale Distanz zum inneren Dialog herzustellen, die gesamte Architektur des Gehirns zu einem einheitlichen System zu synchronisieren und die Fähigkeit zu kollektiver Resonanz zu aktivieren. Du hörst auf, Teilnehmer des mentalen Sturms zu sein, und wirst zu seinem Architekten.",
+      "architecture": {
+        "intro": "Stufe 6 vereint metakognitive und netzwerkzentrierte Protokolle:",
+        "parts": [
+          { "label": "Ich bezeuge", "protocol": "Protokoll: Neuronale Distanz und metakognitives Monitoring", "goal": "Ziel: vom Gefangenen des Bewusstseinsstroms zu seinem Meta-Programmierer werden.", "work": "Arbeit: das Ruhezustandsnetzwerk (DMN) deaktivieren und „neuronale Distanz“ herstellen. Mit sensorischen Ankern den inneren Dialog zum Verstummen bringen und Gedanken in durchsichtige elektrische Impulse verwandeln." },
+          { "label": "Ich integriere", "protocol": "Protokoll: Globale neuronale Integration und Synthese der Erfahrung", "goal": "Ziel: maximale neuronale Kohärenz — das Gehirn als einziger, reibungsloser Supercomputer.", "work": "Arbeit: die horizontale (zwischen den Hemisphären) und vertikale (Kortex–Körper) Vernetzung stärken. Balken (Corpus callosum) und mPFC nutzen, um kognitive Dissonanz aufzulösen und Logik mit Intuition zu vereinen." },
+          { "label": "Ich synchronisiere", "protocol": "Protokoll: Neuroelektrische Synchronisation und kollektive Intelligenz", "goal": "Ziel: vom „Ich-Modus“ zum „Netzwerkknoten“ — Hyperscanning zwischen Gehirnen und kollektiver Flow.", "work": "Arbeit: Gammarhythmen (40 Hz) und das Spiegelneuronensystem anregen. Eine neuroelektrische Phasenkopplung mit anderen erreichen, um Ressourcen und Lösungen von „ozeanischem“ Ausmaß zu erschließen." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Der technologische Stack der Neuro-Integration:",
+        "items": [
+          { "name": "Metakognitives Benennen", "text": "Übungen, um mentale Ereignisse zu „markieren“, den mPFC zu aktivieren und Gedanken ihre emotionale Ladung zu nehmen." },
+          { "name": "Synchronisation der Hemisphären", "text": "Übungen für den Balken, damit Daten nahtlos zwischen analytischen und intuitiven Zentren fließen." },
+          { "name": "Gamma-Flow-Abstimmung", "text": "Techniken, um hochfrequente Hirnaktivität (40 Hz) für kollektive Einsichten und schnelles Lernen zu stabilisieren." },
+          { "name": "Limbische Entkopplung", "text": "Den PFC trainieren, „aufgeladene“ Daten zu registrieren, ohne Cortisol freizusetzen oder die Amygdala auszulösen." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Die Stufe spricht folgende neuronale Strukturen an:",
+        "items": [
+          { "name": "Dorsolateraler PFC", "text": "Der wichtigste Filter, der lebenswichtige Signale von Informationsrauschen trennt." },
+          { "name": "Balken (Corpus callosum)", "text": "Die Brücke für horizontale Integration und die Synchronisation der Hemisphären." },
+          { "name": "Anteriorer cingulärer Kortex (ACC)", "text": "Der innere Monitor, der Grübeln und widersprüchliche Signale erkennt." },
+          { "name": "Spiegelneuronen-Netzwerk", "text": "Die biologische Hardware für vorsprachliches Verstehen und kollektive Resonanz." },
+          { "name": "rTPJ (rechter temporoparietaler Übergang)", "text": "Der Knotenpunkt für soziale Orientierung und das Modellieren der Zustände anderer." }
+        ]
+      },
+      "results": {
+        "intro": "Stufe 6 zielt auf „neuronale Transparenz“. Was Menschen bei regelmäßiger Praxis oft bemerken:",
+        "items": [
+          "Eine größere kognitive Lücke: mehr Raum, die eigene Antwort auf jeden Gedanken oder Impuls zu wählen.",
+          "Herz-Hirn-Kohärenz: weniger innere Reibung, weniger „Energielecks“.",
+          "Einstimmung in Gruppen: leichter in den Rhythmus eines Raums finden.",
+          "Ein ruhiger, stiller Geist, der bei Bedarf dennoch intensiven Fokus aufbringen kann."
+        ]
+      }
+    },
+    "7": {
+      "name": "DNA / AER II",
+      "subtitle": "Architektur des Biocomputers: wo Praxis dauerhaft wird",
+      "metaDescription": "Stufe 7 — DNA / AER II: wo Praxis dauerhaft wird. Die langsame Stufe — Monate der Beständigkeit, die Ruhe, Fokus und Stabilität in eine dauerhafte Baseline verwandeln. ONDA Life.",
+      "intro": "Inzwischen hast du gelernt, Zustände auf Abruf zu erreichen — Ruhe, Fokus, Stabilität. Auf Stufe 7 hören diese Zustände auf, etwas zu sein, das du tust, und werden zu dem, wer du bist. Die langsame Stufe. Sie misst sich in Monaten der Beständigkeit, nicht in einzelnen Sessions.\n\nStell es dir vor, als würdest du neue Muster in deinen Standardcode schreiben. Keine schnelle Änderung, sondern eine Neufassung, die hält, weil du sie oft genug ausgeführt hast. Das ist der Unterschied zwischen ruhig werden und ein ruhigerer Mensch sein.",
+      "architecture": {
+        "intro": "Stufe 7 entfaltet sich über drei langsame Protokolle:",
+        "parts": [
+          { "label": "Ich erinnere mich", "protocol": "Protokoll: Rückkehr zur Baseline", "goal": "Ziel: ein reguliertes Nervensystem zu dem Ort machen, zu dem du von selbst zurückkehrst.", "work": "Arbeit: Der Körper lernt Ruhe wie jede andere Fähigkeit — durch Wiederholung. Die regulierte Baseline aus den früheren Stufen wird zu der, nach der dein System von selbst greift, ohne Anstrengung." },
+          { "label": "Ich stelle wieder her", "protocol": "Protokoll: Erholung und Reparatur", "goal": "Ziel: die chronische Stressbelastung über die Zeit senken, nicht nur im Moment.", "work": "Arbeit: Anhaltende Praxis gibt dem Stresssystem Raum, sich neu zu kalibrieren — bessere Erholung, ruhigerer Schlaf, ein leiseres Grundrauschen der Anspannung. Langsam, kumulativ, echt." },
+          { "label": "Ich synthetisiere", "protocol": "Protokoll: Integration", "goal": "Ziel: alles aus den Stufen 1–6 zu einer stabilen Art des Seins zusammenführen.", "work": "Arbeit: Atmung, Aufmerksamkeit, emotionale Stabilität und Selbstwahrnehmung hören auf, getrennte Übungen zu sein, und wirken als eine integrierte Baseline." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Die Mechanik dauerhafter Veränderung:",
+        "items": [
+          { "name": "Vom Zustand zur Eigenschaft", "text": "Wiederholte Praxis ist der Weg, auf dem ein vorübergehender Zustand zu einer stabilen Eigenschaft wird. Das Gehirn passt sich an das an, was es oft tut — gewöhnliche Neuroplastizität, mit genug Zeit." },
+          { "name": "Erholung des Stresssystems", "text": "Die chronische Stressbelastung durch Beständigkeit senken, damit das System weniger Zeit in Anspannung und mehr in Ruhe verbringt." },
+          { "name": "Konsolidierung", "text": "Die Fähigkeiten früherer Stufen zu einer dauerhaften Baseline zusammenführen, über die du nicht mehr nachdenken musst." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Über Monate spricht anhaltende Praxis die Systeme an, die langfristige Anpassung steuern:",
+        "items": [
+          { "name": "Das Stressreaktionssystem", "text": "Lernen abzuschalten, nicht nur anzuschalten — damit Erholung zum Normalzustand wird." },
+          { "name": "Neuroplastizität", "text": "Die Fähigkeit des Gehirns, sich mit genug Zeit an wiederholte Erfahrung anzupassen." },
+          { "name": "Gewohnheits- und Erholungskreisläufe", "text": "Die Schleifen, die eine ruhigere Baseline mühelos halten." }
+        ]
+      },
+      "results": {
+        "intro": "Bei Stufe 7 geht es nicht um eine einzelne Session, sondern um das, was nach vielen bleibt. Es gibt keine Abkürzung — genau darum geht es. Was Menschen nach Monaten der Beständigkeit beschreiben:",
+        "items": [
+          "Eine stabilere Baseline, für die du nicht arbeiten musst.",
+          "Häufiger weniger Hintergrundstress.",
+          "Die Praxis läuft irgendwann von selbst, ohne Willenskraft."
+        ]
+      }
+    },
+    "8": {
+      "name": "ATOM / IGNIS II",
+      "subtitle": "Architektur des Biocomputers: der Rand der Landkarte",
+      "metaDescription": "Stufe 8 — ATOM / IGNIS II: der Rand der Landkarte. Die tiefen, stillen Zustände, die langjährig Praktizierende beschreiben — erfahrbar, nicht messbar, nie übertrieben. ONDA Life.",
+      "intro": "Das ist das tiefe Wasser. Die Stufen 1–7 bauen ein stabiles, reguliertes Nervensystem auf. Bei Stufe 8 geht es darum, was manche Menschen jenseits davon finden: Zustände tiefer Stille und Präsenz, die langjährig Praktizierende vieler Traditionen beschreiben — in denen das gewohnte Gefühl eines getrennten, geschäftigen Selbst still wird.\n\nWir sagen es dir offen: Diese Stufe ist erfahrbar, nicht messbar. Wir können sie nicht versprechen, und wir verfolgen sie nicht. Es gibt keinen Biomarker, kein Abzeichen, keine Punktzahl. Wir schaffen die Bedingungen — tiefe Praxis, den richtigen Zustand, das Loslassen von Anstrengung —, und was geschieht, gehört dir. Es ist der Rand der Landkarte, und wir kennzeichnen ihn als solchen.",
+      "architecture": {
+        "intro": "Drei kontemplative Ausrichtungen — Hinweise, keine Protokolle zum Abhaken:",
+        "parts": [
+          { "label": "Ich bin Schwingung", "protocol": "Ausrichtung: der Körper als Bewegung", "goal": "Den Körper weniger als festes Objekt und mehr als Rhythmus und Bewegung spüren.", "work": "Atem, Puls, die leise Aktivität, die immer unter dem Denken da ist — direkt gespürt, statt darüber nachzudenken." },
+          { "label": "Ich bin Ganzheit", "protocol": "Ausrichtung: die Grenze wird weich", "goal": "Die Linie zwischen dem Beobachtenden und der beobachteten Erfahrung wird dünn.", "work": "Ein gespürtes Gefühl, dass die Dinge weniger getrennt sind als sonst. Viele Praktizierende beschreiben das; wenige erzwingen es." },
+          { "label": "Ich bin die Quelle", "protocol": "Ausrichtung: als Gewahrsein ruhen", "goal": "Als das Gewahrsein selbst ruhen statt als die Inhalte, die hindurchziehen.", "work": "Der kontemplative Endpunkt, den viele Traditionen beschreiben. Das ist Philosophie und unmittelbare Erfahrung, keine Biologie — ein Hinweis, kein Versprechen." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Hier gibt es weniger „Protokoll“ und mehr „Bedingungen für“ — und wir bleiben ehrlich über den Unterschied:",
+        "items": [
+          { "name": "Bedingungen, keine Auslöser", "text": "Diese Zustände entstehen meist aus tiefer Entspannung, langer Praxis und — paradoxerweise — dem Loslassen des Wollens. Wir können sie nicht auf Befehl hervorrufen." },
+          { "name": "Ähnlichkeit ist keine Messung", "text": "Forschung zu Flow und tiefer Meditation beschreibt Zustände, die diesen ähneln, doch Ähnlichkeit ist kein Beweis. Wir behaupten nicht, einen bestimmten Gehirnzustand herbeizuführen." },
+          { "name": "Stille vor dem Gedanken", "text": "Die Aufmerksamkeit in der Stille halten, bevor ein Gedanke entsteht — die eine Übung, auf die wir dich tatsächlich hinweisen können." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Statt einer Liste von Strukturen, die „aktiviert“ werden, geht es bei Stufe 8 darum, was geschieht, wenn der angestrengte, selbstbezogene, ständig kommentierende Geist endlich zur Ruhe kommt:",
+        "items": [
+          { "name": "Der kommentierende Geist, zur Ruhe gekommen", "text": "Was geschieht, wenn der angestrengte, selbstbezogene, ständig erzählende Teil des Geistes endlich still wird." },
+          { "name": "Hinweis, kein Versprechen", "text": "Forschende haben Worte dafür; Praktizierende haben ein Gespür dafür. Wir zeigen auf die Erfahrung und bleiben beim Rest ehrlich." }
+        ]
+      },
+      "results": {
+        "intro": "Für diese Stufe gibt es keine Kennzahl — erfahrbar, nicht messbar. Wir geben dir die Bedingungen; die Erfahrung gehört dir. Was Menschen beschreiben:",
+        "items": [
+          "Tiefe Ruhe und ein Gefühl von Weite.",
+          "Der Geist wird still.",
+          "Ein Gefühl von Präsenz, das sich schwer in Worte fassen lässt."
+        ]
+      }
+    }
+  }
+}

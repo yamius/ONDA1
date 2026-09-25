@@ -1,0 +1,341 @@
+{
+  "ui": {
+    "breadcrumbHome": "Accueil",
+    "back": "← Retour à l’accueil",
+    "openProtocolPrefix": "→ Ouvrir le protocole ",
+    "openProtocolSuffix": "",
+    "openProtocolAria": "Ouvrir le protocole {{label}}",
+    "openProtocolTitle": "Ouvrir le protocole {{label}} — {{protocol}}",
+    "biologicalProtocol": "Protocole biologique",
+    "targetSystems": "Systèmes ciblés",
+    "resultsBenefits": "Résultats et bénéfices",
+    "researchBasis": "Fondements scientifiques",
+    "relatedTerms": "Termes associés",
+    "videoTitleTpl": "Niveau {{number}} : {{name}} — ONDA Life",
+    "metaTitleTpl": "Niveau {{number}} : {{name}} | ONDA Life"
+  },
+  "levels": {
+    "1": {
+      "name": "CORPS / TERRA",
+      "subtitle": "Architecture du biocomputer : de la survie à l’autonomie",
+      "metaDescription": "Niveau 1 : homéostasie, intéroception, VFC. Respiration, diaphragme, tonus vagal — la base de l’activation parasympathique. Calibrez votre zéro biologique.",
+      "intro": "Le niveau 1 est une inspection et un calibrage en profondeur de votre « matériel ». À ce stade, nous descendons jusqu’au « zéro biologique » — les réglages de base de la survie — pour transformer le corps d’une « forteresse assiégée » en un foyer sûr et efficace.\n\nC’est le socle de tout l’écosystème ONDA Life. Ici, la conscience n’est pas encore séparée des processus métaboliques ; notre tâche est d’optimiser le fonctionnement des structures cérébrales les plus anciennes.",
+      "architecture": {
+        "intro": "Le niveau 1 se divise en trois protocoles de calibrage :",
+        "parts": [
+          { "label": "Je suis", "protocol": "Protocole : homéostasie", "goal": "Objectif : faire passer le système de l’« attente anxieuse » à un état d’« être en sécurité ».", "work": "Travail : accorder la connexion entre le tronc cérébral et le cortex insulaire (insula). Activer l’intéroception primaire — la capacité à sentir votre pouls, le rythme de vos organes et votre souffle comme socle de la conscience de soi." },
+          { "label": "Je bouge", "protocol": "Protocole : cohérence rythmique", "goal": "Objectif : passer d’une existence statique à la dynamique d’un « corps fluide ».", "work": "Travail : activer les générateurs centraux de rythme (CPG) — des circuits de la moelle épinière responsables d’une grâce automatique. Nous réveillons l’« intelligence du poisson » : un mouvement sans effort, né de la résonance avec la gravité." },
+          { "label": "Je m’adapte", "protocol": "Protocole : maîtrise de la gravité", "goal": "Objectif : atteindre l’autonomie intérieure et un soutien structurel.", "work": "Travail : accorder la formation réticulée et le cortex sensorimoteur. Nous entraînons le système à passer rapidement de la « fluidité » à la « stabilité », en utilisant la gravité comme une ressource plutôt que comme un fardeau." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "La pile technologique de ce niveau comprend :",
+        "items": [
+          { "name": "Calibrage intéroceptif", "text": "Développer la capacité à détecter les signaux du « biocomputer » avant qu’ils ne se traduisent en émotions ou en pensées." },
+          { "name": "Tonus vagal (V2)", "text": "Sortir des états de « figement » en relâchant le diaphragme et en activant le nerf vague." },
+          { "name": "Réflexe vestibulo-oculaire (RVO)", "text": "Stabiliser le regard et l’orientation dans le flux des stimuli entrants." },
+          { "name": "Efficacité énergétique", "text": "Entraîner le système nerveux à fonctionner avec moins d’effort — en relâchant peu à peu l’« armure corporelle » (tension chronique)." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Ce niveau sollicite les structures neuronales suivantes :",
+        "items": [
+          { "name": "Cortex insulaire (insula)", "text": "Le carrefour principal de la perception de soi et de l’intéroception." },
+          { "name": "Tronc cérébral et hypothalamus", "text": "Centres de commande du maintien de la vie et de l’homéostasie." },
+          { "name": "Cervelet", "text": "Soutient la précision, la coordination et le lissage du « bruit » dans le mouvement." },
+          { "name": "Nerf vague", "text": "L’autoroute du système parasympathique, responsable du sentiment biologique de sécurité." }
+        ]
+      },
+      "results": {
+        "intro": "Le but du niveau 1 est d’atteindre un « point d’immobilité » et une « fluidité neuronale ». Ce que l’on remarque souvent avec une pratique régulière :",
+        "items": [
+          "Une VFC qui tend à augmenter avec le temps à mesure que le système nerveux gagne en souplesse.",
+          "Une base plus calme : beaucoup remarquent moins de tension de fond avec une pratique régulière.",
+          "Moins de crispation : la tension chronique se relâche, la respiration devient plus profonde et plus rythmée."
+        ]
+      }
+    },
+    "2": {
+      "name": "ÉMOTIONS / AQUA",
+      "subtitle": "Biochimie de l’énergie : de la manœuvrabilité à la puissance sociale",
+      "metaDescription": "Niveau 2 : maîtrise émotionnelle. Axe HHS, DHEA, neurones miroirs — neuroception, vague ventral, résonance sociale. De la manœuvrabilité à une assurance calme.",
+      "intro": "Le niveau 2 est l’étape où vous apprenez à maîtriser votre système émotionnel comme un réacteur de haute technologie. Nous cessons de voir les émotions comme de simples « humeurs » pour les traiter comme des protocoles biologiques : avec des signatures hormonales, des schémas neuromoteurs et des profils végétatifs précis.\n\nÀ ce niveau, nous suivons le chemin de l’évolution des mammifères : des réactions instantanées d’un petit animal au calme inébranlable d’un grand prédateur, puis à la résonance complexe d’un primate supérieur.",
+      "architecture": {
+        "intro": "Le niveau 2 intègre trois stratégies de gestion des ressources :",
+        "parts": [
+          { "label": "Je manœuvre", "protocol": "Protocole : la manœuvrabilité du « petit mammifère »", "goal": "Objectif : souplesse biologique et accélération instantanée sans stress paralysant.", "work": "Mécanisme : entraîner la neuroception (la capacité du cerveau à détecter une menace avant qu’elle ne soit perçue consciemment). Nous apprenons au système à « glisser » en douceur du repos à l’action, en transformant le cortisol et l’adrénaline de toxines en carburant de précision." },
+          { "label": "Je protège mon territoire", "protocol": "Protocole : la force du « grand mammifère »", "goal": "Objectif : un calme assuré et une présence dense.", "work": "Mécanisme : travailler avec le système endocrinien — s’appuyer moins, avec le temps, sur le cortisol d’urgence et davantage sur la DHEA. Cela soutient un état d’« assurance calme », une stabilité que les autres perçoivent souvent avant même que vous ne parliez." },
+          { "label": "Je fais partie du groupe", "protocol": "Protocole : résonance sociale", "goal": "Objectif : transformer la survie individuelle en puissance collective.", "work": "Mécanisme : activer le « cerveau social » — le système des neurones miroirs et le profil de l’ocytocine. Nous apprenons à synchroniser nos rythmes avec le groupe (co-régulation) tout en gardant un centre autonome. Votre présence devient le « liant » qui unit le groupe." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "La pile technologique de la gestion de l’énergie :",
+        "items": [
+          { "name": "Théorie polyvagale (vague ventral)", "text": "Utiliser le « parasympathique intelligent » pour rester socialement engagé même sous forte charge." },
+          { "name": "Régulation de l’axe HHS", "text": "Travailler avec la chaîne hypothalamus–hypophyse–surrénales qui façonne la réponse hormonale au stress." },
+          { "name": "Osmose émotionnelle", "text": "La capacité d’échanger des états avec les autres sans être absorbé par leur chaos." },
+          { "name": "Pompage lymphatique", "text": "Utiliser le tonus musculaire comme une pompe pour débarrasser le corps des sous-produits métaboliques du stress." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Ce niveau sollicite les structures neuronales suivantes :",
+        "items": [
+          { "name": "Hypothalamus", "text": "Centre de commande du comportement territorial et de l’équilibre hormonal." },
+          { "name": "Noyaux gris centraux", "text": "Formation de postures stables et « inébranlables » et d’habitudes d’assurance." },
+          { "name": "Neurones miroirs", "text": "Le système cérébral qui lit les intentions et les états des autres." },
+          { "name": "Cortex cingulaire antérieur", "text": "Le détecteur des signaux sociaux et de la justesse émotionnelle." }
+        ]
+      },
+      "results": {
+        "intro": "Le niveau 2 développe la sélectivité cognitive et un contrôle plus stable sous pression. Ce que l’on remarque souvent avec une pratique régulière :",
+        "items": [
+          "Une vitesse consciente à la place de l’impulsivité : sentir la trajectoire d’une réaction plutôt que la déclencher aveuglément.",
+          "Un équilibre plus stable des hormones du stress avec le temps — moins fonctionner à l’adrénaline, davantage à l’élan calme.",
+          "Stabilité sociale : garder son calme et sa clarté au contact des autres, même dans les moments chargés."
+        ]
+      }
+    },
+    "3": {
+      "name": "ESPRIT / AER",
+      "subtitle": "Architecture de l’esprit : de la réactivité à la conception",
+      "metaDescription": "Niveau 3 : travail profond et productivité. CPF, noradrénaline, liaison gamma — clarté cognitive. Entraînez la concentration, la reconnaissance de schémas et la simulation mentale.",
+      "intro": "Le niveau 3 est celui de la souveraineté cognitive. Nous nous élevons au-dessus des instincts et des réactions limbiques pour transformer l’attention d’un processus chaotique en un instrument maîtrisé. Ici, l’esprit prend le rôle de chef d’orchestre du biocomputer.\n\nÀ ce stade, nous entraînons le cerveau à extraire le « signal » du « bruit », à maintenir la concentration face à la surcharge d’informations et à utiliser l’imagination comme un logiciel biologique pour réécrire la réalité.",
+      "architecture": {
+        "intro": "Le niveau 3 intègre trois algorithmes de gestion de la conscience :",
+        "parts": [
+          { "label": "Je discerne", "protocol": "Protocole : optimisation du rapport signal/bruit", "goal": "Objectif : créer un « espace cognitif » entre le stimulus et la réaction.", "work": "Mécanisme : accorder le thalamus — le principal gardien des flux sensoriels. Nous entraînons le cerveau à séparer les faits objectifs du bruit subjectif, pour atteindre une perception d’une clarté cristalline." },
+          { "label": "Je me concentre", "protocol": "Protocole : résilience neuronale", "goal": "Objectif : passer d’une attention réactive à une gestion volontaire de ses ressources.", "work": "Mécanisme : activer le réseau attentionnel dorsal (DAN) et atténuer le réseau du mode par défaut (DMN — la « rêverie »). C’est le mode « travail profond », qui permet une immersion totale sans gaspiller d’énergie en distractions." },
+          { "label": "Je façonne la vision", "protocol": "Protocole : simulation mentale", "goal": "Objectif : concevoir l’avenir au niveau neuronal.", "work": "Mécanisme : lancer le « rendu » intérieur. Nous utilisons l’hippocampe et le cortex préfrontal pour créer des modèles prédictifs (codage prédictif). Ici, l’imagination n’est pas une fantaisie, mais un programme d’action pour le SAR (système d’activation réticulaire)." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "La pile technologique du contrôle cognitif :",
+        "items": [
+          { "name": "Espace cognitif", "text": "Allonger la pause entre un événement et une réaction automatique pour laisser place à la liberté de choix." },
+          { "name": "Modulation cholinergique", "text": "Utiliser l’acétylcholine pour « surligner » littéralement les connexions neuronales nécessaires pendant la concentration." },
+          { "name": "Liaison gamma", "text": "Synchroniser les neurones en fréquence gamma pour assembler des fragments épars d’expérience en une seule intuition." },
+          { "name": "Programmation proactive (SAR)", "text": "Régler les filtres du cerveau pour qu’ils cherchent automatiquement les occasions correspondant à votre vision intérieure." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Ce niveau sollicite les structures neuronales suivantes :",
+        "items": [
+          { "name": "CPFDL (cortex préfrontal dorsolatéral)", "text": "Le centre de commande de l’attention et de la mémoire de travail." },
+          { "name": "Thalamus", "text": "Le gardien des flux sensoriels, qui filtre le superflu." },
+          { "name": "CCA (cortex cingulaire antérieur)", "text": "Un détecteur de haute précision des erreurs et des différences." },
+          { "name": "Locus cœruleus", "text": "Régulateur de la vigilance et de la neuroplasticité par la noradrénaline." }
+        ]
+      },
+      "results": {
+        "intro": "Le niveau 3 développe l’autonomie mentale et la « résilience neuronale ». Ce que l’on remarque souvent avec une pratique régulière :",
+        "items": [
+          "Reconnaissance des schémas : repérer les schémas des événements avant qu’ils ne capturent votre attention.",
+          "Endurance pour le travail profond : une concentration soutenue en cycles de 90/20 sans s’épuiser.",
+          "Répétition incarnée : un résultat imaginé avec intensité commence à paraître réel au corps, pas seulement à l’esprit.",
+          "Charge mentale réduite : moins d’effort de perception une fois les outils affûtés."
+        ]
+      }
+    },
+    "4": {
+      "name": "SOCIÉTÉ / IGNIS",
+      "subtitle": "Ocytocine, neurones miroirs et vague ventral — le carburant de la résonance sociale.",
+      "metaDescription": "Niveau 4 : intelligence sociale, biologie du leadership, synergie d’équipe. Ocytocine, neurones miroirs, vague ventral — la neurobiologie de l’empathie. De l’expression de soi à l’esprit collectif.",
+      "intro": "Intelligence sociale : de l’expression de soi à l’esprit collectif\n\nLe niveau 4 est l’étape de la réalisation sociale et de l’épreuve. Ici, l’« esquisse intérieure » créée au niveau de l’Esprit passe au filtre de l’environnement extérieur. Nous faisons du corps un puissant émetteur d’idées, et de l’interaction humaine un art de la résonance.\n\nÀ ce niveau, nous maîtrisons la biologie de l’influence, de l’empathie et de la synergie de groupe, en passant de la survie personnelle à l’état d’Homo Creativus (l’humain créateur).",
+      "architecture": {
+        "intro": "Le niveau 4 intègre trois étapes de l’évolution sociale :",
+        "parts": [
+          { "label": "Je m’exprime", "protocol": "Protocole : neuroendocrinologie de l’influence", "goal": "Objectif : surmonter la paralysie sociale et trouver une voix souveraine.", "work": "Mécanisme : synchroniser le cœur (les sentiments), le cerveau (la vision) et la gorge (l’instrument de l’expression). Nous utilisons la réévaluation cognitive pour transformer le trac en élan et la voix en outil de résonance physique." },
+          { "label": "J’interagis", "protocol": "Protocole : régulation empathique", "goal": "Objectif : maîtriser l’« espace entre ». Passer du conflit à l’interférence.", "work": "Mécanisme : activer le « cerveau social » (théorie de l’esprit). Nous apprenons à sentir les limites — les nôtres et celles des autres — en temps réel, pour créer une interaction nourrissante qui renforce les deux parties." },
+          { "label": "Je co-crée", "protocol": "Protocole : intelligence collective", "goal": "Objectif : transformer un groupe en un réseau neuronal vivant.", "work": "Mécanisme : atteindre le couplage neuronal. Nous apprenons à synchroniser la respiration et les rythmes cérébraux au sein d’une équipe, pour accéder à des intuitions et des synergies collectives inaccessibles à un esprit isolé." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "La pile technologique de l’interaction sociale :",
+        "items": [
+          { "name": "Réévaluation cognitive", "text": "Une technique du CPF pour atténuer physiologiquement l’activité de l’amygdale (la peur) et la remplacer par de l’enthousiasme." },
+          { "name": "Boucles d’ocytocine", "text": "Gérer le contact visuel et les micro-expressions pour créer une confiance biologique instantanée." },
+          { "name": "Synchronie inter-cerveaux", "text": "Le phénomène par lequel les rythmes cérébraux de partenaires s’alignent pour réaliser ensemble une tâche sans accroc." },
+          { "name": "Inhibition du DMN", "text": "Atténuer le « réseau de l’ego » du cerveau pour passer de la protection de ses limites personnelles à la réalisation d’un objectif commun." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Ce niveau sollicite les structures neuronales suivantes :",
+        "items": [
+          { "name": "Aires de Broca et de Wernicke", "text": "Centres de construction et de transmission de la parole." },
+          { "name": "Neurones miroirs", "text": "La base biologique de l’empathie et de la lecture intuitive des intentions." },
+          { "name": "Cortex orbitofrontal", "text": "Modulateur des choix éthiques et de l’harmonie sociale dans l’instant." },
+          { "name": "JTPd (jonction temporo-pariétale droite)", "text": "Nœud clé pour gérer le « modèle mental » des autres." }
+        ]
+      },
+      "results": {
+        "intro": "Le niveau 4 ouvre la liberté sociale et la co-création. Ce que l’on remarque souvent avec une pratique régulière :",
+        "items": [
+          "Une expression souveraine : une voix plus claire et plus ancrée, sans tension dans la mâchoire ni la gorge.",
+          "Une précision empathique : sentir l’état d’un interlocuteur avant qu’il ne l’exprime.",
+          "Synergie : s’intégrer à des processus de groupe de toute complexité tout en gardant son propre centre.",
+          "Des liens qui durent : une collaboration vraiment gratifiante, pas épuisante."
+        ]
+      }
+    },
+    "5": {
+      "name": "ESPRIT NEURO-SOMATIQUE / INTELLIGENCE SENSORIELLE",
+      "subtitle": "Précision intéroceptive et expansion sensorielle — le corps comme antenne de haute précision.",
+      "metaDescription": "Niveau 5 : intelligence sensorielle. Intéroception, insula, fibres C-tactiles. Faites du corps une antenne de haute précision pour les signaux internes et externes.",
+      "intro": "À ce stade, nous revenons dans la « combinaison spatiale biologique » — non plus en passagers passifs, mais en pilotes experts. Nous passons d’une simple observation de soi à une intelligence sensorielle de haute précision. L’objectif est de transformer le corps d’un objet qu’il faut entretenir en une « antenne » parfaite, capable de lire les données les plus subtiles de l’environnement intérieur comme extérieur.",
+      "architecture": {
+        "intro": "Le niveau 5 intègre des protocoles de précision sensorielle :",
+        "parts": [
+          { "label": "Je ressens", "protocol": "Protocole : précision intéroceptive et expansion sensorielle", "goal": "Objectif : passer du « mode survie » au « mode présence » totale grâce à des ancres sensorielles.", "work": "Travail : activer le cortex insulaire, le cortex somatosensoriel et les filtres thalamiques. Solliciter les fibres C-tactiles et l’intégration proprioceptive pour créer une carte du corps ultra-précise." },
+          { "label": "Je canalise", "protocol": "Protocole : conductivité neurodynamique et flux fascial", "goal": "Objectif : le corps comme conducteur — transformer les impulsions en ressources tout en maintenant l’homéostasie.", "work": "Travail : dénouer les congestions musculaires, vasculaires et nerveuses. Entraîner le système nerveux et les tissus à laisser passer le stress, la douleur et les émotions intenses sans entrave. Construire, avec le temps, une liberté somatique et une grande conductivité." },
+          { "label": "Je m’accorde", "protocol": "Protocole : fusion neurosomatique et extase collective", "goal": "Objectif : de la conductivité individuelle à la résonance collective — créer un circuit neurosomatique unifié (l’« état de Nous »).", "work": "Travail : dissoudre les limites de la coquille de l’ego. Activer l’ocytocine, les neurones miroirs, le complexe vagal ventral et la modulation pariétale. Atteindre un couplage neurosomatique où deux organismes fonctionnent comme un seul." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "La pile technologique de l’expansion sensorielle :",
+        "items": [
+          { "name": "Précision intéroceptive", "text": "Des pratiques pour activer l’insula, afin de percevoir les pulsations, le péristaltisme et les micro-mouvements sous la peau." },
+          { "name": "Discrimination sensorielle", "text": "Des exercices pour affiner l’extéroception grâce à la gestion consciente des filtres thalamiques." },
+          { "name": "Atténuation du DMN par les sens", "text": "Déplacer l’attention vers la « ligne directe » des sensations pour désactiver les ruminations mentales." },
+          { "name": "Clarté de l’incarnation", "text": "Réduire le délai entre un signal du corps et sa prise de conscience." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Ce niveau sollicite les structures neuronales suivantes :",
+        "items": [
+          { "name": "Cortex insulaire", "text": "Le centre qui traduit les signaux physiologiques en sensations conscientes." },
+          { "name": "Système nerveux parasympathique", "text": "Crée un fond de sécurité pour une sensibilité maximale." },
+          { "name": "Hémisphère droit", "text": "Une perception globale et unifiée de l’expérience corporelle." },
+          { "name": "Cortex somatosensoriel (S1/S2)", "text": "Affine la perception tactile et la discrimination des stimuli." },
+          { "name": "Thalamus", "text": "La porte sensorielle — abaisse les seuils de filtrage pour une information détaillée." },
+          { "name": "Fibres C-tactiles", "text": "Les voies du toucher « émotionnel » qui relient la peau aux centres du bien-être." }
+        ]
+      },
+      "results": {
+        "intro": "Le niveau 5 vise la « transparence corporelle ». Ce que l’on remarque souvent avec une pratique régulière :",
+        "items": [
+          "Une intéroception plus fine — percevoir plus clairement les signaux subtils du corps.",
+          "Moins de tension au repos avec le temps.",
+          "Une base autonome plus stable et plus calme.",
+          "Le corps vécu comme un signal clair plutôt que comme un bruit de fond."
+        ]
+      }
+    },
+    "6": {
+      "name": "CERVEAU / AQUA II",
+      "subtitle": "Souveraineté cognitive et intégration neuronale globale — l’esprit comme supercalculateur de haute précision.",
+      "metaDescription": "Niveau 6 CERVEAU / AQUA II : souveraineté cognitive et neuro-intégration. Désactivation du DMN, métacognition, rythmes gamma. Maîtrisez le protocole du méta-programmeur. ONDA Life.",
+      "intro": "À ce stade, nous passons de la conduite de la « combinaison spatiale biologique » à la maîtrise du « poste de commandement » de la conscience. Nous allons de l’intelligence sensorielle à la souveraineté cognitive. L’objectif est d’établir une distance neuronale avec le dialogue intérieur, de synchroniser toute l’architecture du cerveau en un système unifié et d’activer la capacité de résonance collective. Vous cessez d’être un participant de la tempête mentale pour en devenir l’architecte.",
+      "architecture": {
+        "intro": "Le niveau 6 intègre des protocoles métacognitifs et centrés sur les réseaux :",
+        "parts": [
+          { "label": "Je suis témoin", "protocol": "Protocole : distance neuronale et surveillance métacognitive", "goal": "Objectif : passer d’otage du flux de conscience à son méta-programmeur.", "work": "Travail : désactiver le réseau du mode par défaut (DMN) et établir une « distance neuronale ». Utiliser des ancres sensorielles pour faire taire le dialogue intérieur et transformer les pensées en impulsions électriques transparentes." },
+          { "label": "J’intègre", "protocol": "Protocole : intégration neuronale globale et synthèse de l’expérience", "goal": "Objectif : atteindre une cohérence neuronale maximale — le cerveau comme un supercalculateur unique et sans friction.", "work": "Travail : renforcer la connectivité horizontale (entre les hémisphères) et verticale (cortex–corps). Utiliser le corps calleux et le CPFm pour résoudre la dissonance cognitive et unir la logique à l’intuition." },
+          { "label": "Je synchronise", "protocol": "Protocole : synchronisation neuroélectrique et intelligence collective", "goal": "Objectif : du « mode Je » au « nœud de réseau » — hyperscanning inter-cerveaux et flow collectif.", "work": "Travail : déclencher les rythmes gamma (40 Hz) et le système des neurones miroirs. Atteindre un verrouillage de phase neuroélectrique avec les autres pour accéder à des ressources et des solutions d’ampleur « océanique »." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "La pile technologique de la neuro-intégration :",
+        "items": [
+          { "name": "Étiquetage métacognitif", "text": "Des pratiques pour « étiqueter » les événements mentaux, activer le CPFm et ôter aux pensées leur charge émotionnelle." },
+          { "name": "Synchronisation interhémisphérique", "text": "Des exercices pour le corps calleux afin que les données circulent sans heurt entre les centres analytiques et intuitifs." },
+          { "name": "Accord du flow gamma", "text": "Des techniques pour stabiliser une activité cérébrale à haute fréquence (40 Hz) au service des intuitions collectives et d’un apprentissage rapide." },
+          { "name": "Découplage limbique", "text": "Entraîner le CPF à enregistrer des données « chargées » sans déclencher de libération de cortisol ni l’amygdale." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Ce niveau sollicite les structures neuronales suivantes :",
+        "items": [
+          { "name": "CPF dorsolatéral", "text": "Le principal filtre qui sépare les signaux vitaux du bruit informationnel." },
+          { "name": "Corps calleux", "text": "Le pont de l’intégration horizontale et de la synchronisation entre les hémisphères." },
+          { "name": "Cortex cingulaire antérieur (CCA)", "text": "Le moniteur intérieur qui détecte les ruminations et les signaux contradictoires." },
+          { "name": "Réseau des neurones miroirs", "text": "Le matériel biologique de la compréhension préverbale et de la résonance collective." },
+          { "name": "JTPd (jonction temporo-pariétale droite)", "text": "Le carrefour de la navigation sociale et de la modélisation des états des autres." }
+        ]
+      },
+      "results": {
+        "intro": "Le niveau 6 vise la « transparence neuronale ». Ce que l’on remarque souvent avec une pratique régulière :",
+        "items": [
+          "Un espace cognitif plus large : davantage de marge pour choisir votre réponse à chaque pensée ou impulsion.",
+          "Cohérence cœur-cerveau : moins de friction intérieure, moins de « fuites d’énergie ».",
+          "Accord avec le groupe : trouver plus facilement le rythme d’une pièce.",
+          "Un esprit calme et silencieux, capable pourtant de mobiliser une concentration intense quand il le faut."
+        ]
+      }
+    },
+    "7": {
+      "name": "ADN / AER II",
+      "subtitle": "Architecture du biocomputer : là où la pratique devient durable",
+      "metaDescription": "Niveau 7 — ADN / AER II : là où la pratique devient durable. Le niveau lent — des mois de régularité qui transforment calme, concentration et stabilité en une base durable. ONDA Life.",
+      "intro": "Vous avez désormais appris à atteindre des états à la demande — le calme, la concentration, la stabilité. Au niveau 7, ces états cessent d’être quelque chose que vous faites pour devenir ce que vous êtes. Le niveau lent. Il se mesure en mois de régularité, pas en séances isolées.\n\nVoyez-le comme l’écriture de nouveaux schémas dans votre code par défaut. Pas une retouche rapide, mais une réécriture qui tient parce que vous l’avez exécutée assez souvent. C’est la différence entre se calmer et être une personne plus calme.",
+      "architecture": {
+        "intro": "Le niveau 7 se déploie en trois protocoles lents :",
+        "parts": [
+          { "label": "Je me souviens", "protocol": "Protocole : retour à la base", "goal": "Objectif : faire d’un système nerveux apaisé l’endroit où vous revenez par défaut.", "work": "Travail : le corps apprend le calme comme n’importe quelle compétence — par la répétition. La base régulée construite aux niveaux précédents devient celle vers laquelle votre système se tourne de lui-même, sans effort." },
+          { "label": "Je restaure", "protocol": "Protocole : récupération et réparation", "goal": "Objectif : réduire la charge de stress chronique dans la durée, pas seulement sur le moment.", "work": "Travail : une pratique soutenue laisse au système du stress la place de se recalibrer — meilleure récupération, sommeil plus stable, bourdonnement de tension de fond plus faible. Lent, cumulatif, réel." },
+          { "label": "Je synthétise", "protocol": "Protocole : intégration", "goal": "Objectif : réunir tout ce qui vient des niveaux 1 à 6 en une manière d’être stable.", "work": "Travail : la respiration, l’attention, la stabilité émotionnelle et la conscience de soi cessent d’être des exercices séparés et fonctionnent comme une seule base intégrée." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "La mécanique d’un changement durable :",
+        "items": [
+          { "name": "De l’état au trait", "text": "La pratique répétée est la façon dont un état passager devient un trait stable. Le cerveau s’adapte à ce qu’il fait souvent — c’est la neuroplasticité ordinaire, avec du temps." },
+          { "name": "Récupération du système du stress", "text": "Réduire la charge de stress chronique par la régularité, pour que le système passe moins de temps sur le qui-vive et davantage au repos." },
+          { "name": "Consolidation", "text": "Intégrer les compétences des niveaux précédents en une base durable à laquelle vous n’avez plus besoin de penser." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Au fil des mois, une pratique soutenue sollicite les systèmes qui gouvernent l’adaptation à long terme :",
+        "items": [
+          { "name": "Le système de réponse au stress", "text": "Apprendre à s’éteindre, pas seulement à s’allumer — pour que la récupération devienne la norme." },
+          { "name": "La neuroplasticité", "text": "La capacité du cerveau à s’adapter à une expérience répétée, avec suffisamment de temps." },
+          { "name": "Les circuits de l’habitude et de la récupération", "text": "Les boucles qui font tenir sans effort une base plus stable." }
+        ]
+      },
+      "results": {
+        "intro": "Le niveau 7 ne concerne pas une séance unique, mais ce qui reste après beaucoup d’entre elles. Il n’y a pas de raccourci — c’est tout le sens. Ce que l’on décrit après des mois de régularité :",
+        "items": [
+          "Une base plus stable, sans avoir à travailler pour la garder.",
+          "Moins de stress de fond, plus souvent.",
+          "Une pratique qui finit par tourner d’elle-même, sans volonté."
+        ]
+      }
+    },
+    "8": {
+      "name": "ATOME / IGNIS II",
+      "subtitle": "Architecture du biocomputer : la limite de la carte",
+      "metaDescription": "Niveau 8 — ATOME / IGNIS II : la limite de la carte. Les états profonds et silencieux que décrivent les pratiquants de longue date — vécus, pas mesurés, jamais exagérés. ONDA Life.",
+      "intro": "C’est le grand bain. Les niveaux 1 à 7 construisent un système nerveux stable et régulé. Le niveau 8 porte sur ce que certaines personnes trouvent au-delà : des états de quiétude et de présence profondes que décrivent les pratiquants de longue date de nombreuses traditions — où le sentiment habituel d’un soi séparé et affairé se tait.\n\nNous serons francs : ce niveau est vécu, pas mesuré. Nous ne pouvons pas le promettre, et nous ne le suivons pas. Il n’y a ni biomarqueur, ni badge, ni score. Nous créons les conditions — une pratique profonde, le bon état, le relâchement de l’effort — et ce qui se passe vous appartient. C’est la limite de la carte, et nous la signalons comme telle.",
+      "architecture": {
+        "intro": "Trois orientations contemplatives — des indications, pas des protocoles à cocher :",
+        "parts": [
+          { "label": "Je suis vibration", "protocol": "Orientation : le corps comme mouvement", "goal": "Sentir le corps moins comme un objet solide que comme un rythme et un mouvement.", "work": "La respiration, le pouls, l’activité discrète toujours présente sous la pensée — ressentis directement plutôt que pensés." },
+          { "label": "Je suis plénitude", "protocol": "Orientation : la frontière s’adoucit", "goal": "La ligne entre celui qui observe et l’expérience observée s’amincit.", "work": "Le sentiment que les choses sont moins divisées que d’habitude. Beaucoup de pratiquants le décrivent ; peu le forcent." },
+          { "label": "Je suis la source", "protocol": "Orientation : reposer en tant que conscience", "goal": "Reposer en tant que conscience même plutôt qu’en tant que contenus qui la traversent.", "work": "Le point d’aboutissement contemplatif décrit par de nombreuses traditions. C’est de la philosophie et de l’expérience directe, pas de la biologie — une indication, pas une promesse." }
+        ]
+      },
+      "biologicalProtocol": {
+        "intro": "Il y a ici moins de « protocole » et davantage de « conditions pour » — et nous restons honnêtes sur la différence :",
+        "items": [
+          { "name": "Des conditions, pas des déclencheurs", "text": "Ces états naissent en général d’une détente profonde, d’une longue pratique et — paradoxalement — du fait de cesser d’essayer. Nous ne pouvons pas les provoquer sur commande." },
+          { "name": "Ressembler n’est pas mesurer", "text": "Les recherches sur le flow et la méditation profonde décrivent des états qui leur ressemblent, mais une ressemblance n’est pas une preuve. Nous ne prétendons pas produire un état cérébral précis." },
+          { "name": "Le silence avant la pensée", "text": "Maintenir l’attention dans le silence qui précède l’apparition d’une pensée — la seule pratique vers laquelle nous pouvons réellement vous orienter." }
+        ]
+      },
+      "targetSystems": {
+        "intro": "Plutôt qu’une liste de structures à « activer », le niveau 8 porte sur ce qui se passe quand l’esprit qui fait des efforts, se réfère à lui-même et commente sans cesse finit par se taire :",
+        "items": [
+          { "name": "L’esprit narrateur, apaisé", "text": "Ce qui se passe quand la partie de l’esprit qui fait des efforts, se réfère à elle-même et raconte sans cesse finit par se calmer." },
+          { "name": "Une indication, pas une promesse", "text": "Les chercheurs ont des mots pour cela ; les pratiquants en ont un sentiment vécu. Nous indiquons l’expérience et restons honnêtes sur le reste." }
+        ]
+      },
+      "results": {
+        "intro": "Il n’y a pas d’indicateur pour ce niveau — vécu, pas mesuré. Nous vous donnons les conditions ; l’expérience vous appartient. Ce que l’on décrit :",
+        "items": [
+          "Un calme profond et un sentiment d’espace.",
+          "L’esprit qui se tait.",
+          "Un sentiment de présence difficile à mettre en mots."
+        ]
+      }
+    }
+  }
+}
