@@ -533,7 +533,10 @@ const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
  * slug that also has a body in public/locales/<lang>/articles.json goes live.
  */
 const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
-  zh: ['yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing'],
+  zh: [
+    'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
+    'cardiac-coherence-insomnia-sleep',
+  ],
 }
 function articleRolloutDate(start: string, index: number): string {
   const d = new Date(`${start}T00:00:00Z`)
