@@ -423,6 +423,20 @@
           "name": "PROTOCOL_HIT_AND_RUN",
           "text": "Administra dosis altas durante 2–3 días consecutivos, seguidos de 30 días 'off'."
         }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué son los senolíticos?",
+          "answer": "Los senolíticos son compuestos que eliminan de forma selectiva las células senescentes o «zombis»: células que han dejado de dividirse pero siguen activas metabólicamente y liberan señales inflamatorias que dañan el tejido de alrededor y aceleran el envejecimiento."
+        },
+        {
+          "question": "¿Qué es el protocolo senolítico «hit and run»?",
+          "answer": "Como las células senescentes tardan en volver a acumularse, los senolíticos se estudian en pulsos intermitentes de dosis alta —un «golpe» breve seguido de una pausa larga— en lugar de una toma diaria. El pulso elimina las células; la pausa evita la exposición constante."
+        },
+        {
+          "question": "¿Es seguro tomar senolíticos?",
+          "answer": "La dosificación de senolíticos sigue siendo un área de investigación emergente. Sustancias como la quercetina, la fisetina y el dasatinib están en estudio activo, y los protocolos, las dosis y la seguridad a largo plazo no están establecidos. Es claramente un tema para abordar con supervisión médica, no para experimentar por cuenta propia."
+        }
       ]
     },
     "ai-biomarker-tracking-predictive": {
@@ -458,6 +472,16 @@
         {
           "name": "PROTOCOL_DELTA_AMPLIFICATION",
           "text": "Usa un tracker de grado clínico (Oura Gen 4+, Dreem o Whoop 5.0) para identificar el inicio preciso del sueño de ondas lentas (SWS)."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es la estimulación acústica sincronizada en fase?",
+          "answer": "Es la emisión de pulsos de sonido suaves sincronizados con precisión con las ondas lentas del sueño profundo. Al acompasar el estímulo con la fase de la onda, la técnica la refuerza y amplifica la amplitud del sueño profundo sin despertarte."
+        },
+        {
+          "question": "¿Puede el sonido mejorar de verdad la calidad del sueño profundo?",
+          "answer": "Sí. La estimulación sincronizada en fase con el sueño de ondas lentas puede aumentar la amplitud de las ondas delta, algo relacionado con una mejor consolidación de la memoria y una mejor recuperación física. La clave es la precisión en el tiempo: el sonido debe engancharse a la fase de la onda, y por eso importa el EEG en tiempo real."
         }
       ]
     },
@@ -912,7 +936,21 @@
           "text": "Consume carbohidratos complejos y alimentos ricos en triptófano (pavo, queso, frutos secos) combinados con alta fibra."
         }
       ],
-      "content": "\n## [ ANALIZANDO EL PROTOCOLO DE ESTABILIDAD ]\n\n> «En la arquitectura ONDA, la serotonina no es solo una 'hormona de la felicidad'. Es el regulador bioquímico principal responsable de la satisfacción del sistema y la seguridad de los recursos. Su función principal es señalar al cerebro que 'los recursos son suficientes' y 'el estatus está asegurado'.\n>\n> A nivel de hardware, la serotonina actúa como el antagonista funcional de la dopamina. Mientras que la dopamina impulsa al sistema a buscar nuevos inputs (búsqueda), la serotonina maneja la integración eficiente y la apreciación de los datos existentes. Niveles bajos de serotonina cambian el sistema al modo escasez, donde cualquier retraso en la recompensa dispara impulsividad, irritabilidad y 'errores de escritura' en la memoria a largo plazo.»\n\n---\n\n## [ SECCIÓN 1: JERARQUÍA Y CONFIANZA ]\n\n`Serotonina` está directamente vinculada a la percepción del propio estatus social. Cuando el sistema detecta una posición de alto estatus, los niveles de serotonina suben, lo que automáticamente endereza la postura y relaja los músculos faciales. Esto crea un bucle de feedback positivo: pareces seguro → otros perciben tu estatus → tu serotonina sube aún más.\n\n---\n\n## [ SECCIÓN 2: EL INTESTINO COMO SERVIDOR DE SEROTONINA ]\n\nCrucialmente, el 90% de tu serotonina se sintetiza en el intestino. Esto no es solo un hecho biológico, sino un Data Link entre tu microbioma y tu humor. Si el 'servidor' (el tracto gastrointestinal) está sobrecargado de inflamación o combustible de baja calidad, el sistema cognitivo nunca recibirá la 'señal de estabilidad', sin importar cuánto medites.\n\n---\n\n## [ EXECUTION_PROTOCOLS: STABILITY_CALIBRATION ]\n\n### PROTOCOL_01 > STRUCTURAL ALIGNMENT (Posture Patch)\n\n> **The Hack:** Echa los hombros atrás, eleva ligeramente el mentón y alinea la coronilla hacia arriba.\n\n**The Logic:** Bucle de feedback propioceptivo. El cerebro lee la postura de 'vencedor' e inicia una liberación de serotonina. Es un parche inmediato a nivel de hardware para la confianza.\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_02 > PHOTIC TRIGGER (Solar Loading)\n\n> **The Hack:** Asegura al menos 15–20 minutos de luz solar matinal directa (sin gafas) en los ojos.\n\n**The Logic:** Activa la síntesis de serotonina a partir del triptófano vía fotorreceptores retinianos. Esto también establece la base para la producción de melatonina por la noche.\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_03 > SERVER MAINTENANCE (Prebiotic Input)\n\n> **The Hack:** Consume carbohidratos complejos y alimentos ricos en triptófano (pavo, queso, frutos secos) combinados con alta fibra.\n\n**The Logic:** Proporcionar las materias primas para la producción de serotonina en el intestino. Sin los nutrientes necesarios, el sistema seguirá funcionando en modo 'déficit de recursos'.\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n## [ SYSTEM CORRECTION LOG ]\n\n- `INPUT_SIGNAL:` ↑ impulsividad / ↓ autoestima\n  - `SYSTEM_STATE:` serotonina depletada / alerta de estatus\n  - `ACTION:` PROTOCOL: STRUCTURAL_ALIGNMENT / POSTURE_FIX\n\n- `INPUT_SIGNAL:` depresión estacional / energía baja\n  - `SYSTEM_STATE:` señal fótica insuficiente\n  - `ACTION:` PROTOCOL: SOLAR_LOADING (sol matinal)\n\n- `INPUT_SIGNAL:` intestino irritable / cambios de humor\n  - `SYSTEM_STATE:` data link intestino-cerebro corrupto\n  - `ACTION:` PROTOCOL: MICROBIOME_RELOAD (probióticos)\n\n---\n\n## [ HARDWARE_VALIDATION ]\n\nMETRIC: calidad del sueño profundo + reducción de pensamientos obsesivos (rumiación).\n`STATUS: estabilidad del sistema confirmada. Stack de serotonina activo.`\n\n---\n\n> [ FINALIZE_ANALYSIS ]\n> La serotonina es tu ancla interna. Gestionándola, transitas de una búsqueda caótica de validación externa a un estado de inquebrantabilidad interna, convirtiéndote en un nodo autónomo de alto poder de procesamiento.\n"
+      "content": "\n## [ ANALIZANDO EL PROTOCOLO DE ESTABILIDAD ]\n\n> «En la arquitectura ONDA, la serotonina no es solo una 'hormona de la felicidad'. Es el regulador bioquímico principal responsable de la satisfacción del sistema y la seguridad de los recursos. Su función principal es señalar al cerebro que 'los recursos son suficientes' y 'el estatus está asegurado'.\n>\n> A nivel de hardware, la serotonina actúa como el antagonista funcional de la dopamina. Mientras que la dopamina impulsa al sistema a buscar nuevos inputs (búsqueda), la serotonina maneja la integración eficiente y la apreciación de los datos existentes. Niveles bajos de serotonina cambian el sistema al modo escasez, donde cualquier retraso en la recompensa dispara impulsividad, irritabilidad y 'errores de escritura' en la memoria a largo plazo.»\n\n---\n\n## [ SECCIÓN 1: JERARQUÍA Y CONFIANZA ]\n\n`Serotonina` está directamente vinculada a la percepción del propio estatus social. Cuando el sistema detecta una posición de alto estatus, los niveles de serotonina suben, lo que automáticamente endereza la postura y relaja los músculos faciales. Esto crea un bucle de feedback positivo: pareces seguro → otros perciben tu estatus → tu serotonina sube aún más.\n\n---\n\n## [ SECCIÓN 2: EL INTESTINO COMO SERVIDOR DE SEROTONINA ]\n\nCrucialmente, el 90% de tu serotonina se sintetiza en el intestino. Esto no es solo un hecho biológico, sino un Data Link entre tu microbioma y tu humor. Si el 'servidor' (el tracto gastrointestinal) está sobrecargado de inflamación o combustible de baja calidad, el sistema cognitivo nunca recibirá la 'señal de estabilidad', sin importar cuánto medites.\n\n---\n\n## [ EXECUTION_PROTOCOLS: STABILITY_CALIBRATION ]\n\n### PROTOCOL_01 > STRUCTURAL ALIGNMENT (Posture Patch)\n\n> **The Hack:** Echa los hombros atrás, eleva ligeramente el mentón y alinea la coronilla hacia arriba.\n\n**The Logic:** Bucle de feedback propioceptivo. El cerebro lee la postura de 'vencedor' e inicia una liberación de serotonina. Es un parche inmediato a nivel de hardware para la confianza.\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_02 > PHOTIC TRIGGER (Solar Loading)\n\n> **The Hack:** Asegura al menos 15–20 minutos de luz solar matinal directa (sin gafas) en los ojos.\n\n**The Logic:** Activa la síntesis de serotonina a partir del triptófano vía fotorreceptores retinianos. Esto también establece la base para la producción de melatonina por la noche.\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n### PROTOCOL_03 > SERVER MAINTENANCE (Prebiotic Input)\n\n> **The Hack:** Consume carbohidratos complejos y alimentos ricos en triptófano (pavo, queso, frutos secos) combinados con alta fibra.\n\n**The Logic:** Proporcionar las materias primas para la producción de serotonina en el intestino. Sin los nutrientes necesarios, el sistema seguirá funcionando en modo 'déficit de recursos'.\n\n`[ STATUS: ACTIVE ]`\n\n---\n\n## [ SYSTEM CORRECTION LOG ]\n\n- `INPUT_SIGNAL:` ↑ impulsividad / ↓ autoestima\n  - `SYSTEM_STATE:` serotonina depletada / alerta de estatus\n  - `ACTION:` PROTOCOL: STRUCTURAL_ALIGNMENT / POSTURE_FIX\n\n- `INPUT_SIGNAL:` depresión estacional / energía baja\n  - `SYSTEM_STATE:` señal fótica insuficiente\n  - `ACTION:` PROTOCOL: SOLAR_LOADING (sol matinal)\n\n- `INPUT_SIGNAL:` intestino irritable / cambios de humor\n  - `SYSTEM_STATE:` data link intestino-cerebro corrupto\n  - `ACTION:` PROTOCOL: MICROBIOME_RELOAD (probióticos)\n\n---\n\n## [ HARDWARE_VALIDATION ]\n\nMETRIC: calidad del sueño profundo + reducción de pensamientos obsesivos (rumiación).\n`STATUS: estabilidad del sistema confirmada. Stack de serotonina activo.`\n\n---\n\n> [ FINALIZE_ANALYSIS ]\n> La serotonina es tu ancla interna. Gestionándola, transitas de una búsqueda caótica de validación externa a un estado de inquebrantabilidad interna, convirtiéndote en un nodo autónomo de alto poder de procesamiento.\n",
+      "faq": [
+        {
+          "question": "¿Cómo subo la serotonina de forma natural?",
+          "answer": "Tres palancas fiables: la luz solar por la mañana como estímulo luminoso, un intestino sano —ya que allí ocurre la mayor parte de la actividad de los precursores de la serotonina— apoyado con fibra prebiótica, y una postura erguida y abierta, que alimenta la sensación de estatus estable en la que se apoya el equilibrio de la serotonina."
+        },
+        {
+          "question": "¿La mayor parte de la serotonina se produce en el intestino?",
+          "answer": "Sí: aproximadamente el 90 % de la serotonina del cuerpo se produce en el intestino, no en el cerebro. Por eso la salud intestinal y la calidad de la microbiota tienen una línea directa con la estabilidad del ánimo, y por eso el artículo trata el intestino como el «servidor de serotonina»."
+        },
+        {
+          "question": "¿Cómo afecta la postura al estado de ánimo?",
+          "answer": "La postura es una señal de doble sentido. Una postura erguida y expandida informa al sistema nervioso de estatus estable y seguridad, lo que favorece el equilibrio de la serotonina y una confianza tranquila, mientras que una postura hundida de forma crónica refuerza el estado contrario."
+        }
+      ]
     },
     "energy-sensor-leptin": {
       "title": "Sensor energético: leptina",
@@ -1580,7 +1618,17 @@
           "text": "Antes del trabajo profundo, hidrátate intencionadamente y asegura una ingesta adecuada de sodio y potasio. La conductividad estable apoya una salida cognitiva más limpia."
         }
       ],
-      "content": "\n## [ STATUS: FOCUS_LOCKED ]\n\n> «Concentración fisiológica: el estado de flow cableado»\n>\n> En el ecosistema ONDA, la concentración no es un esfuerzo psicológico. Es una inevitabilidad mecánica — el estado de bloqueo de fase donde la calibración del hardware se encuentra con la salida de alta intensidad.\n>\n> La mayoría de los consejos de productividad parchea el software e ignora el hardware sobrecalentado. La concentración fisiológica es el estado donde la neuroquímica resalta una red de tareas y suprime todos los canales en competencia. No es una elección. Es un bloqueo de objetivo.\n\n---\n\n## Sección 1: la tríada cognitiva\n\nPara entrar en modo FOCUS_LOCKED, el cerebro despliega tres protocolos a la vez.\n\n### Activación (noradrenalina)\n\nEs la fuente de alimentación. Sin activación, el enfoque no puede estabilizarse. Demasiada crea ruido y pánico.\n\n### Selección (acetilcolina)\n\nEs la lente. La acetilcolina marca la red activa de la tarea y aumenta su sensibilidad de señal, haciéndola más brillante que el ruido circundante.\n\n### Recompensa (dopamina)\n\nEs el combustible para la persistencia. La dopamina señala que el sistema se mueve en la dirección correcta y previene el cambio prematuro de contexto.\n\n---\n\n## Sección 2: atención difusa\n\nCuando la fisiología está comprometida, la lente de enfoque se vuelve opaca y la atención se dispersa por el sistema.\n\n### Deriva focal\n\nEl haz se desliza fuera del objetivo y el sistema desperdicia energía volviendo a la meta.\n\n### Sangrado sensorial\n\nEl zumbido del aire acondicionado, la incomodidad de la silla y cada notificación se filtran a la consciencia. Las compuertas talámicas se abren demasiado y la SNR colapsa.\n\n### Muro de fatiga\n\nLa fuerza de voluntad sola no puede sostener el estado. Sin soporte neuroquímico, la corteza prefrontal se quema en minutos.\n\n> [ SYSTEM_ALERT ]: el fallo de concentración suele ser un desajuste de hardware, no debilidad moral.\n\n---\n\n## Sección 3: cableando el enfoque\n\nONDA no le pide al cerebro que se concentre. Fuerza las condiciones para la concentración.\n\n### Tunelización visual\n\nEl enfoque cognitivo sigue al enfoque visual. Restringir el campo visual a una pantalla o un libro dispara una liberación localizada de noradrenalina y acetilcolina.\n\n### Carga de CO2\n\nCiclos cortos de retención respiratoria apoyan la tolerancia al dióxido de carbono y la vasodilatación cerebral, enviando más oxígeno a los nodos neurales activos.\n\n### Priming de electrolitos\n\nRatios específicos de sodio a potasio apoyan la conductividad antes del trabajo profundo. La concentración es un proceso eléctrico, y la pérdida de señal debe minimizarse.\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Apple Watch / temporizador de enfoque\n> METRIC: atención sostenida, estabilidad de reacción, flow subjetivo\n> STATUS: OUTPUT_STABLE\n\n---\n\n## Sección 4: el operador coherente\n\nLa concentración fisiológica entrega mejoras medibles.\n\n**Dilatación temporal:** las tareas se sienten más rápidas porque el cerebro procesa más fotogramas por segundo.\n\n**Flow inmersivo total:** el operador desaparece y se convierte en la tarea misma.\n\n**Salida sin esfuerzo:** los problemas complejos se resuelven solos cuando el sistema está calibrado para la resonancia.\n\n---\n\n> **ONDA_STATEMENT:** «La concentración no es una batalla contra las distracciones. Es la creación de un brillo de señal interna tan intenso que el mundo exterior se desvanece en sombras. Alinea los sensores, y el flow se vuelve el único estado posible.»\n"
+      "content": "\n## [ STATUS: FOCUS_LOCKED ]\n\n> «Concentración fisiológica: el estado de flow cableado»\n>\n> En el ecosistema ONDA, la concentración no es un esfuerzo psicológico. Es una inevitabilidad mecánica — el estado de bloqueo de fase donde la calibración del hardware se encuentra con la salida de alta intensidad.\n>\n> La mayoría de los consejos de productividad parchea el software e ignora el hardware sobrecalentado. La concentración fisiológica es el estado donde la neuroquímica resalta una red de tareas y suprime todos los canales en competencia. No es una elección. Es un bloqueo de objetivo.\n\n---\n\n## Sección 1: la tríada cognitiva\n\nPara entrar en modo FOCUS_LOCKED, el cerebro despliega tres protocolos a la vez.\n\n### Activación (noradrenalina)\n\nEs la fuente de alimentación. Sin activación, el enfoque no puede estabilizarse. Demasiada crea ruido y pánico.\n\n### Selección (acetilcolina)\n\nEs la lente. La acetilcolina marca la red activa de la tarea y aumenta su sensibilidad de señal, haciéndola más brillante que el ruido circundante.\n\n### Recompensa (dopamina)\n\nEs el combustible para la persistencia. La dopamina señala que el sistema se mueve en la dirección correcta y previene el cambio prematuro de contexto.\n\n---\n\n## Sección 2: atención difusa\n\nCuando la fisiología está comprometida, la lente de enfoque se vuelve opaca y la atención se dispersa por el sistema.\n\n### Deriva focal\n\nEl haz se desliza fuera del objetivo y el sistema desperdicia energía volviendo a la meta.\n\n### Sangrado sensorial\n\nEl zumbido del aire acondicionado, la incomodidad de la silla y cada notificación se filtran a la consciencia. Las compuertas talámicas se abren demasiado y la SNR colapsa.\n\n### Muro de fatiga\n\nLa fuerza de voluntad sola no puede sostener el estado. Sin soporte neuroquímico, la corteza prefrontal se quema en minutos.\n\n> [ SYSTEM_ALERT ]: el fallo de concentración suele ser un desajuste de hardware, no debilidad moral.\n\n---\n\n## Sección 3: cableando el enfoque\n\nONDA no le pide al cerebro que se concentre. Fuerza las condiciones para la concentración.\n\n### Tunelización visual\n\nEl enfoque cognitivo sigue al enfoque visual. Restringir el campo visual a una pantalla o un libro dispara una liberación localizada de noradrenalina y acetilcolina.\n\n### Carga de CO2\n\nCiclos cortos de retención respiratoria apoyan la tolerancia al dióxido de carbono y la vasodilatación cerebral, enviando más oxígeno a los nodos neurales activos.\n\n### Priming de electrolitos\n\nRatios específicos de sodio a potasio apoyan la conductividad antes del trabajo profundo. La concentración es un proceso eléctrico, y la pérdida de señal debe minimizarse.\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Apple Watch / temporizador de enfoque\n> METRIC: atención sostenida, estabilidad de reacción, flow subjetivo\n> STATUS: OUTPUT_STABLE\n\n---\n\n## Sección 4: el operador coherente\n\nLa concentración fisiológica entrega mejoras medibles.\n\n**Dilatación temporal:** las tareas se sienten más rápidas porque el cerebro procesa más fotogramas por segundo.\n\n**Flow inmersivo total:** el operador desaparece y se convierte en la tarea misma.\n\n**Salida sin esfuerzo:** los problemas complejos se resuelven solos cuando el sistema está calibrado para la resonancia.\n\n---\n\n> **ONDA_STATEMENT:** «La concentración no es una batalla contra las distracciones. Es la creación de un brillo de señal interna tan intenso que el mundo exterior se desvanece en sombras. Alinea los sensores, y el flow se vuelve el único estado posible.»\n",
+      "faq": [
+        {
+          "question": "¿La concentración es cuestión de fuerza de voluntad?",
+          "answer": "No. La concentración es un estado de «bloqueo» fisiológico, no un esfuerzo moral. Aparece cuando se alinean tres neuroquímicos: la noradrenalina para la activación, la acetilcolina para la selección y la dopamina para la recompensa. Cuando la tríada está alineada, el enfoque se siente automático; cuando no, la fuerza de voluntad no puede forzarlo."
+        },
+        {
+          "question": "¿Cómo entro en estado de flow cuando lo necesito?",
+          "answer": "Diseña las entradas en lugar de forzar el resultado: estrecha el campo visual (efecto túnel visual) para activar la atención selectiva, usa una ligera carga de CO2 mediante respiración lenta para estabilizar la activación y prepara los electrolitos para que la actividad neuronal sea limpia. Así la tríada se engancha de forma mucho más fiable."
+        }
+      ]
     },
     "protocol-circadian-hard-reset": {
       "title": "Hard Reset: cómo recalibrar tu reloj biológico",
@@ -2498,7 +2546,25 @@
       ],
       "imageAlt": "Pulmones holográficos luminosos con una onda de respiración estable dentro de una banda personal — la frecuencia respiratoria como constante vital nocturna, estable y de aviso temprano.",
       "imageTitle": "Frecuencia respiratoria — la constante vital nocturna silenciosa y dirigible",
-      "imageCaption": "Tu frecuencia respiratoria nocturna — uno de los signos vitales más estables que tienes, y por qué desviarse de tu línea base personal es una señal temprana y honesta."
+      "imageCaption": "Tu frecuencia respiratoria nocturna — uno de los signos vitales más estables que tienes, y por qué desviarse de tu línea base personal es una señal temprana y honesta.",
+      "faq": [
+        {
+          "question": "¿Cuál es una frecuencia respiratoria normal en reposo?",
+          "answer": "Para la mayoría de los adultos, aproximadamente entre 12 y 20 respiraciones por minuto en reposo, pero el rango de la población no es lo útil. Tu propia frecuencia en reposo se asienta noche tras noche en una banda personal estrecha y estable, y lo que aporta información es salir de esa banda, no dónde caes dentro del rango general."
+        },
+        {
+          "question": "¿Por qué importa mi frecuencia respiratoria si nunca pienso en ella?",
+          "answer": "Porque es una de tus constantes vitales más estables y sensibles, y a menudo se mueve pronto. El estrés, una enfermedad que se avecina, el alcohol por la noche y la falta de recuperación elevan la frecuencia respiratoria en reposo —con frecuencia antes de que notes nada—, así que una subida sostenida respecto a tu normalidad es una señal temprana y honesta que de otro modo pasarías por alto."
+        },
+        {
+          "question": "¿Puede la frecuencia respiratoria indicar que algo va mal?",
+          "answer": "Puede señalar que tu cuerpo se ha alejado de su propia línea base, pero no diagnostica. Una frecuencia en reposo que se mantiene alta es descriptiva: una señal de carga, no un diagnóstico. ONDA no es un dispositivo médico; una subida persistente, la falta de aire o síntomas que te preocupen deben consultarse con un médico."
+        },
+        {
+          "question": "¿Puedo bajar mi frecuencia respiratoria a propósito?",
+          "answer": "Sí: es la única constante vital que puedes dirigir directamente. La respiración lenta con exhalación larga baja la frecuencia de forma deliberada, eleva el tono vagal y lleva todo el estado autónomo hacia la calma. No puedes bajar tu pulso a voluntad, pero sí ralentizar tu respiración, y el resto del sistema la sigue."
+        }
+      ]
     },
     "heart-rate-recovery-fitness-marker": {
       "title": "Recuperación de la frecuencia cardíaca: el marcador de forma física oculto en tus datos",
@@ -2524,7 +2590,25 @@
       ],
       "imageAlt": "Corazón luminoso con un tacómetro y un freno vagal verde, y un panel que muestra la frecuencia cardíaca cayendo de un pico de 162 a 68 un minuto después.",
       "imageTitle": "Recuperación de la frecuencia cardíaca — el freno vagal y la caída de un minuto",
-      "imageCaption": "Recuperación de la frecuencia cardíaca — qué tan rápido baja el pulso tras el esfuerzo, una lectura directa de la reactivación parasimpática y un marcador clave de la forma física."
+      "imageCaption": "Recuperación de la frecuencia cardíaca — qué tan rápido baja el pulso tras el esfuerzo, una lectura directa de la reactivación parasimpática y un marcador clave de la forma física.",
+      "faq": [
+        {
+          "question": "¿Qué es la recuperación de la frecuencia cardiaca?",
+          "answer": "La recuperación de la frecuencia cardiaca (HRR) es cuánto baja tu pulso en el primer minuto tras detener un esfuerzo intenso. Mide la reactivación parasimpática: lo rápido que el nervio vago vuelve a actuar cuando termina el ejercicio. Una bajada grande y rápida refleja buena forma; una lenta, fatiga o falta de entrenamiento."
+        },
+        {
+          "question": "¿Es buena una recuperación rápida de la frecuencia cardiaca?",
+          "answer": "Sí. A medida que mejoras tu forma, tu pulso baja más latidos en ese primer minuto, así que una recuperación más rápida suele indicar un sistema mejor acondicionado. Un estudio de referencia de 1999 también encontró que una recuperación anormalmente lenta predecía de forma independiente el riesgo a largo plazo: un contexto que la convierte en una señal real que merece seguirse en el tiempo, no en un motivo para alarmarse por una sola lectura."
+        },
+        {
+          "question": "¿Cómo sigue ONDA la recuperación de la frecuencia cardiaca?",
+          "answer": "ONDA lee una cifra de recuperación a un minuto como uno de los extras de tu línea base, junto con la frecuencia cardiaca en reposo, la HRV, el VO₂máx estimado y la frecuencia cardiaca máxima y al caminar, a partir de un Apple Watch y comparada con tu propio historial. Así ves la recuperación como una tendencia —que se acelera cuando el entrenamiento da fruto o se ralentiza cuando se acumula la fatiga— y no como una prueba aislada."
+        },
+        {
+          "question": "¿Cómo mejoro mi recuperación de la frecuencia cardiaca?",
+          "answer": "Desarrolla el motor aeróbico que hay detrás: un entrenamiento de base constante en zona 2 eleva el tono parasimpático que hace que el freno tras el esfuerzo actúe más rápido, y es la misma base que sube el VO₂máx. Proteger el sueño y usar respiración lenta con exhalación larga para apoyar el tono vagal alimentan el mismo sistema."
+        }
+      ]
     },
     "screen-apnea-breathing": {
       "title": "Apnea de pantalla: dejas de respirar en tu escritorio",
@@ -2550,7 +2634,25 @@
       ],
       "imageAlt": "Figura iluminada por una pantalla con una traza de respiración que se aplana en una apnea y luego se reinicia — apnea de pantalla y el reinicio de un minuto.",
       "imageTitle": "Apnea de pantalla — la respiración contenida ante la pantalla, y el reinicio",
-      "imageCaption": "Apnea de pantalla — la respiración superficial y contenida que casi todos hacen frente a la pantalla, lo que cuesta al estrés y al foco, y el reinicio de un minuto."
+      "imageCaption": "Apnea de pantalla — la respiración superficial y contenida que casi todos hacen frente a la pantalla, lo que cuesta al estrés y al foco, y el reinicio de un minuto.",
+      "faq": [
+        {
+          "question": "¿Qué es la apnea de pantalla (o apnea del email)?",
+          "answer": "La apnea de pantalla es la tendencia inconsciente a contener o acortar la respiración mientras te concentras en un dispositivo. El término «email apnea» lo acuñó Linda Stone en 2007, al observar que aproximadamente el 80 % de las personas lo hacía; las excepciones eran quienes tenían la respiración entrenada, como músicos y deportistas. Es un hábito de atención, no un trastorno médico, y casi nunca se nota mientras ocurre."
+        },
+        {
+          "question": "¿La apnea de pantalla es lo mismo que la apnea del sueño?",
+          "answer": "No. La apnea del sueño es una afección médica con interrupciones de la respiración durante el sueño y requiere atención clínica. La apnea de pantalla es un patrón de conducta en vigilia —respiración superficial o contenida al concentrarte en una pantalla— desencadenado por un estrés de baja intensidad. Responde a la atención y a la práctica, y no es un diagnóstico."
+        },
+        {
+          "question": "¿Por qué importa contener la respiración delante de la pantalla?",
+          "answer": "La respiración es una palanca sobre todo tu estado autónomo. Congelarla deja que el CO₂ se desajuste y empuja al cuerpo hacia una sensación de amenaza leve, subiendo el tono simpático. Horas así cada día son una señal de estrés baja y autoinfligida, asociada a más tensión, más fatiga y peor concentración: la respiración superficial socava en silencio el enfoque que intentas proteger."
+        },
+        {
+          "question": "¿Cómo dejo la apnea de pantalla?",
+          "answer": "Asocia una respiración consciente a un disparador de pantalla: una sola respiración lenta con una exhalación más larga antes de abrir el correo reinicia el patrón en segundos a través del nervio vago. Ver tu propia respiración en directo hace innegable la «congelación», lo que ayuda a que el hábito se fije. Sesiones diarias breves de respiración coherente o cuadrada elevan tu patrón inconsciente para que la congelación deje de ocurrir."
+        }
+      ]
     },
     "caffeine-hrv-resting-heart-rate": {
       "title": "La firma nocturna de la cafeína: qué le hace a tu corazón el café de la tarde",
@@ -2836,7 +2938,25 @@
       ],
       "imageAlt": "Cuatro palancas luminosas — sueño, dejar el alcohol, entrenamiento aeróbico y respiración — alimentando una onda de VFC que se ensancha con las semanas; la respiración es la palanca inmediata.",
       "imageTitle": "Cómo subir tu VFC — las palancas, y la que funciona ya",
-      "imageCaption": "Las palancas que suben la VFC de forma natural — sueño, alcohol, entrenamiento aeróbico — y la respiración lenta, la que puedes entrenar hoy con biofeedback en vivo."
+      "imageCaption": "Las palancas que suben la VFC de forma natural — sueño, alcohol, entrenamiento aeróbico — y la respiración lenta, la que puedes entrenar hoy con biofeedback en vivo.",
+      "faq": [
+        {
+          "question": "¿Cómo subo mi HRV de forma natural?",
+          "answer": "Dos tareas: dejar de suprimirla y entrenar la rama que la eleva. Protege un sueño regular y suficiente (la palanca más grande), reduce el alcohol por la noche, la cafeína tardía y las cenas tardías, y entrena de forma aeróbica con recuperación real. Después añade la única palanca que funciona en minutos: la respiración lenta con exhalación larga, que sube la HRV al momento y, practicada a diario, puede elevar tu línea base en semanas. Juzga el progreso por tu propia tendencia, no por una lectura aislada."
+        },
+        {
+          "question": "¿Se puede entrenar la HRV o solo medirla?",
+          "answer": "Se puede entrenar. La respiración lenta y pausada eleva el tono vagal y la HRV en minutos y, practicada con regularidad, fortalece tu línea base: esa es la dimensión entrenable de la HRV. El biofeedback de HRV (una app que lee tu pulso y te muestra cómo responde tu ritmo cardiaco en directo) te permite encontrar tu mejor ritmo y confirmar que la práctica funciona, en lugar de respirar a ciegas."
+        },
+        {
+          "question": "¿Cuál es la forma más rápida de aumentar la HRV?",
+          "answer": "En el momento, la respiración lenta con exhalación larga: sube la HRV en minutos al ceder el control a la rama parasimpática. Para tu línea base, la mejora duradera más rápida es reducir el alcohol por la noche y regularizar el sueño; ambas cosas se notan pronto. No hay suplemento ni aparato que supere al sueño, al alcohol y a la respiración."
+        },
+        {
+          "question": "¿La respiración sube de verdad la HRV?",
+          "answer": "Sí, es uno de los efectos mejor respaldados del campo. La respiración lenta con una exhalación más larga estimula el barorreflejo y el nervio vago, y produce una subida y bajada amplia y ordenada de la frecuencia cardiaca: HRV amplificada a propósito. Es un efecto inmediato que puedes ver en directo con biofeedback, y entrenable con el tiempo. Es una práctica de autorregulación, no un tratamiento médico."
+        }
+      ]
     },
     "what-to-do-after-low-hrv-reading": {
       "title": "Tu lectura de VFC es baja. ¿Y ahora qué?",
@@ -2966,7 +3086,25 @@
       ],
       "imageAlt": "Un sistema nervioso luminoso con el freno vagal parasimpático fortalecido como un músculo entrenado, la VFC como marcador — entrenar el sistema nervioso.",
       "imageTitle": "Cómo entrenar tu sistema nervioso — fortalece el freno vagal",
-      "imageCaption": "Entrenar el sistema nervioso como un músculo — fortalecer el freno vagal con respiración, biofeedback de VFC y práctica estructurada para pasar antes de la tensión a la calma."
+      "imageCaption": "Entrenar el sistema nervioso como un músculo — fortalecer el freno vagal con respiración, biofeedback de VFC y práctica estructurada para pasar antes de la tensión a la calma.",
+      "faq": [
+        {
+          "question": "¿De verdad se puede entrenar el sistema nervioso?",
+          "answer": "Sí. El sistema nervioso autónomo se entrena como un músculo: la rapidez con que pasas del estrés a la calma y lo bien que la mantienes mejoran con la práctica. Entrenarlo significa reforzar el freno parasimpático para poder bajar revoluciones cuando lo necesitas y acelerar la vuelta a la calma tras el estrés. El tono vagal es lo que se entrena y la HRV es el marcador. Es una práctica de autorregulación, no un tratamiento médico."
+        },
+        {
+          "question": "¿Cómo entreno mi sistema nervioso para relajarme?",
+          "answer": "La palanca más directa es la respiración lenta con exhalación larga: una espiración prolongada estimula el nervio vago y cede el control a la rama parasimpática, y repetida a diario ensaya la transición de la tensión a la calma hasta hacerla más rápida y automática. Apóyala con sueño, forma aeróbica, ejercicios de tono vagal y límites frente al estrés crónico, y usa el biofeedback de HRV para ver cómo se activa el freno."
+        },
+        {
+          "question": "¿Cuánto se tarda en entrenar el sistema nervioso?",
+          "answer": "El efecto calmante inmediato de la respiración lenta llega en minutos, pero el efecto de entrenamiento —una línea base más estable y una vuelta más rápida a la calma— viene de la repetición durante semanas. Juzga el progreso por tu propia tendencia de HRV y, sobre todo, por lo rápido que notas que te calmas tras el estrés en la vida real. La constancia importa más que la intensidad."
+        },
+        {
+          "question": "¿Qué es el entrenamiento de regulación del sistema nervioso?",
+          "answer": "Es practicar a propósito la habilidad de pasar de la activación a la calma, reforzando el freno parasimpático (vagal) y la vuelta a la línea base. La respiración lenta es la principal palanca activa; el feedback (ver cómo responde tu ritmo cardiaco) confirma que funciona, y un programa estructurado y secuenciado hace que la habilidad se acumule. Entrena la dimensión de autorregulación de tu sistema nervioso; no es una terapia para un trastorno del sistema nervioso."
+        }
+      ]
     },
     "calm-your-nervous-system-down": {
       "title": "Cómo calmar tu sistema nervioso (rápido y de verdad)",
@@ -3018,7 +3156,25 @@
       ],
       "imageAlt": "Un teléfono de contenido de meditación y un rastreador de fitness, con un bucle de biofeedback en vivo brillando en el hueco entre ambos — medir y entrenar en un solo bucle.",
       "imageTitle": "La app entre una app de meditación y un rastreador de fitness",
-      "imageCaption": "El punto medio que falta entre una app de meditación y un tracker de fitness — medir y entrenar el sistema nervioso en un solo bucle de biofeedback en vivo."
+      "imageCaption": "El punto medio que falta entre una app de meditación y un tracker de fitness — medir y entrenar el sistema nervioso en un solo bucle de biofeedback en vivo.",
+      "faq": [
+        {
+          "question": "¿Existe una app a medio camino entre una app de meditación y un monitor de actividad?",
+          "answer": "Sí: un entrenador de biofeedback ocupa justo ese hueco. Una app de meditación te da práctica sin medición (no puedes saber si funciona); un monitor de actividad te da medición sin práctica (un número y poco más). La app intermedia mide tu fisiología en directo, te da una práctica de respiración para cambiarla y te muestra la respuesta en tiempo real. ONDA está hecha para ese hueco."
+        },
+        {
+          "question": "¿Qué app mide el estrés y además me ayuda a hacer algo al respecto?",
+          "answer": "Lo que buscas es una app de biofeedback de circuito cerrado, no un monitor pasivo. Lee tu pulso y tu ritmo cardiaco, te propone respiración guiada para cambiar tu estado y te muestra el cambio mientras ocurre, de modo que una lectura baja se convierte en el inicio de una práctica en lugar de un callejón sin salida. ONDA lo hace con la cámara del iPhone o con el Apple Watch (la puntuación de coherencia en directo requiere el Watch) y es una práctica de autorregulación, no un dispositivo médico."
+        },
+        {
+          "question": "¿Por qué las apps que miden el estrés no me ayudan a crear un hábito?",
+          "answer": "Porque la medición sin acción se convierte en ruido que aprendes a ignorar, y la meditación guiada sin feedback no da sensación de progreso, así que la motivación se apaga. Los hábitos se forman alrededor de un circuito cerrado —medir, hacer algo, ver el resultado— en el que la recompensa es inmediata y visible. Es ese circuito activo, y no una biblioteca de contenidos más grande o un monitor más sofisticado, lo que hace que la práctica se mantenga."
+        },
+        {
+          "question": "¿En qué se diferencia una app de biofeedback de Headspace o Whoop?",
+          "answer": "Headspace es una biblioteca de contenido guiado sin medición de tu cuerpo; Whoop es un dispositivo de medición sin práctica en el momento. Una app de biofeedback como ONDA une las dos cosas: mide tu fisiología y te da una práctica para cambiarla en el mismo circuito en directo, además de un programa estructurado por el que avanzar. Es otra categoría: un entrenador, no una biblioteca ni un panel de datos."
+        }
+      ]
     },
     "wind-down-before-sleep-breathing": {
       "title": "El apagado nocturno: respira para sacar a tu cuerpo del modo trabajo",
@@ -3096,7 +3252,25 @@
       ],
       "imageAlt": "Una figura meditando mientras observa su ritmo cardíaco organizarse en una onda coherente y suave en pantalla — la prueba del biofeedback frente a apps solo de audio.",
       "imageTitle": "La app de meditación que te muestra que funciona",
-      "imageCaption": "Una app de meditación con biofeedback que muestra tu propia VFC y respiración organizándose en tiempo real — prueba de que funciona, no audio en el que confiar a ciegas."
+      "imageCaption": "Una app de meditación con biofeedback que muestra tu propia VFC y respiración organizándose en tiempo real — prueba de que funciona, no audio en el que confiar a ciegas.",
+      "faq": [
+        {
+          "question": "¿Qué es una app de meditación con biofeedback?",
+          "answer": "Es una app de meditación que mide una señal fisiológica en directo —normalmente la variabilidad de la frecuencia cardiaca (HRV)— y te la devuelve mientras practicas, de modo que la sesión responde a tu cuerpo. En lugar de un audio guiado en una sola dirección, ves cómo tu ritmo cardiaco se ordena al respirar, lo que te muestra en tiempo real si la práctica funciona. ONDA lo hace con la cámara del iPhone o con un Apple Watch."
+        },
+        {
+          "question": "¿Qué app de meditación mide la HRV?",
+          "answer": "ONDA está construida alrededor de la HRV: lee tu pulso con la cámara del iPhone (sin necesidad de wearable) o con un Apple Watch, guía tu respiración y muestra tu ritmo cardiaco en directo. La puntuación de coherencia en directo se desbloquea con un Apple Watch; con la cámara sigues teniendo el pulso en directo y una estimación de la respiración. Es una app de mindfulness y respiración en la que la HRV es la prueba de que la práctica está funcionando."
+        },
+        {
+          "question": "¿Qué hace que una app de meditación tenga base científica?",
+          "answer": "Una prueba útil: que se apoye en un mecanismo medible y pueda mostrarte ese mecanismo funcionando en ti. La respiración lenta y pausada eleva el tono vagal y la HRV en minutos; eso está bien estudiado. Una app con base científica no se limita a decírtelo: lo mide en tu cuerpo y te muestra la respuesta. El límite honesto es que medir tu fisiología no es diagnosticarla ni tratarla: una app de meditación con biofeedback es una herramienta de autorregulación, no un dispositivo médico."
+        },
+        {
+          "question": "¿Es mejor una app de meditación con biofeedback que una biblioteca de meditaciones guiadas?",
+          "answer": "Hacen trabajos distintos. Una biblioteca (como Headspace o Calm) te da variedad de audios guiados para escuchar. Una app de biofeedback cierra el circuito: mide tu sistema nervioso y te muestra cómo responde, para que puedas dirigirte hacia la calma y aprender más rápido. Si quieres variedad de contenido, una biblioteca; si quieres una práctica medible, que notes que funciona, el biofeedback. Mucha gente usa las dos."
+        }
+      ]
     },
     "structured-meditation-training-by-levels": {
       "title": "Entrenamiento de meditación estructurado: por qué un camino gana a una biblioteca",
@@ -3122,7 +3296,25 @@
       ],
       "imageAlt": "Un camino ascendente de niveles que se desbloquean del 1 al 8 — los primeros iluminados y activos, los últimos bloqueados — frente a una estantería dispersa. El camino supera a la biblioteca.",
       "imageTitle": "Entrenamiento de meditación estructurado — por qué un camino supera a una biblioteca",
-      "imageCaption": "Entrenamiento de meditación estructurado, nivel a nivel, que construye la habilidad del sistema nervioso como progresión — por qué un camino secuenciado supera a una biblioteca dispersa."
+      "imageCaption": "Entrenamiento de meditación estructurado, nivel a nivel, que construye la habilidad del sistema nervioso como progresión — por qué un camino secuenciado supera a una biblioteca dispersa.",
+      "faq": [
+        {
+          "question": "¿Qué es el entrenamiento estructurado en meditación?",
+          "answer": "Es un programa de meditación construido como un camino progresivo y no como una estantería de sesiones sueltas: las prácticas siguen un orden deliberado, la dificultad sube con tu capacidad y completas una etapa antes de que se desbloquee la siguiente. La regulación del sistema nervioso es una habilidad entrenable y, como cualquier habilidad, se construye con un currículo secuenciado, no barajando sesiones al azar según el ánimo."
+        },
+        {
+          "question": "¿Qué app de meditación tiene un programa estructurado por niveles?",
+          "answer": "ONDA está diseñada como un camino, no como una biblioteca: un currículo de autor con varios niveles (una estructura de 8 niveles con circuitos que se desbloquean progresivamente y prácticas con nombre, de 3 a 30 minutos cada una) combinado con biofeedback de HRV en directo. Hoy están completos los primeros niveles —unas 72 prácticas disponibles— y los siguientes se van añadiendo, así que es un camino real que se puede recorrer y que crece, no un catálogo por el que deambular."
+        },
+        {
+          "question": "¿Puede una app entrenar mi sistema nervioso o mi autorregulación?",
+          "answer": "Puede entrenar la habilidad de autorregularte: notar y dirigir tu estado autónomo. La respiración lenta y pausada eleva de forma medible el tono vagal y la HRV, y esa habilidad se acumula con una práctica estructurada y secuenciada más feedback en directo para que veas que funciona. Es una práctica de autorregulación y conciencia corporal, no un tratamiento médico, y ONDA no es un dispositivo médico."
+        },
+        {
+          "question": "¿Por qué es mejor un camino que una gran biblioteca de meditaciones?",
+          "answer": "Una biblioteca deja la tarea más difícil —construir una práctica coherente— a la persona que llegó a la app precisamente porque no sabía cómo hacerlo, así que la mayoría se dispersa y abandona. Un camino decide el siguiente paso, construye en orden y convierte la práctica en progreso visible. Los programas reales por niveles son poco comunes porque son más difíciles de crear; por eso la mayoría de las apps conocidas son bibliotecas con algunos cursos añadidos."
+        }
+      ]
     },
     "meditation-with-apple-watch": {
       "title": "Meditación con tu Apple Watch: un coach de biofeedback en la muñeca",
