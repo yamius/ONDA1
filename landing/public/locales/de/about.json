@@ -24,7 +24,7 @@
   "rewards1": "Wir bieten Routen, Tipps und Unterstützung. Für Übungen und Missionen verdienst du OND — eine Spielwährung:",
   "rewardsList": [
     "OND sammelt sich durch Regelmäßigkeit an;",
-    "ab Stufe 3 kann es in echtes Geld umgewandelt werden;",
+    "OND ist nur eine Spielwährung — ohne Geldwert;",
     "die Fähigkeiten der frühen Stufen sind die Grundlage für weiteres Wachstum."
   ],
   "rewards2": "Ergebnis: stabile Präsenz, Ruhe, Klarheit und innerer Halt im Leben.",
@@ -49,7 +49,7 @@
   },
   "meta": {
     "title": "Über ONDA Life — wer es entwickelt und warum",
-    "description": "Entwickelt von einem Gründer-Entwickler und einem wissenschaftlichen Berater mit Promotion in Physik und Neurowissenschaft — HRV-Biofeedback-Training, ehrlich darüber, was es kann und was nicht.",
+    "description": "Entwickelt von Yakiv Bilenko, Architekt und Gestaltpsychologe — HRV-Biofeedback und geführtes Atmen, ehrlich darüber, was es kann und was nicht.",
     "ogImageAlt": "ONDA Life — HRV-Biofeedback-App. Geführte Atmung mit Live-Feedback vom Herzrhythmus."
   }
 }

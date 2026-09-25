@@ -24,7 +24,7 @@
   "rewards1": "Nous fournissons des parcours, des conseils et du soutien. Pour les pratiques et les missions, vous gagnez des OND — une monnaie de jeu :",
   "rewardsList": [
     "les OND s’accumulent grâce à la régularité ;",
-    "à partir du niveau 3, ils peuvent être convertis en argent réel ;",
+    "l’OND n’est qu’une monnaie de jeu, sans valeur monétaire ;",
     "les compétences des premiers niveaux sont la base de la suite."
   ],
   "rewards2": "Résultat : une présence stable, du calme, de la clarté et un appui intérieur dans la vie.",
@@ -49,7 +49,7 @@
   },
   "meta": {
     "title": "À propos d’ONDA Life — qui la conçoit et pourquoi",
-    "description": "Conçue par un fondateur-développeur et un conseiller scientifique docteur en physique et en neurosciences — un entraînement par biofeedback VFC, honnête sur ce qu’il peut et ne peut pas faire.",
+    "description": "Créée par Yakiv Bilenko, architecte et psychologue gestaltiste — biofeedback VFC et respiration guidée, honnête sur ce qu’elle peut et ne peut pas faire.",
     "ogImageAlt": "ONDA Life — appli de biofeedback VFC. Respiration guidée avec retour en direct du rythme cardiaque."
   }
 }

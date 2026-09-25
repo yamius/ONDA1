@@ -24,7 +24,7 @@
   "rewards1": "Aportamos rutas, consejos y soporte. Por prácticas y misiones ganas OND — moneda de juego:",
   "rewardsList": [
     "OND se acumula por la regularidad;",
-    "desde el nivel 3, puede convertirse en dinero real;",
+    "el OND es solo una moneda del juego, sin valor en dinero;",
     "las habilidades de los primeros niveles — base para el crecimiento posterior."
   ],
   "rewards2": "Resultado: presencia estable, calma, claridad y soporte interior en la vida.",
@@ -49,7 +49,7 @@
   },
   "meta": {
     "title": "Acerca de ONDA Life | Sistema operativo para tu consciencia y biohacking",
-    "description": "Descubre cómo ONDA Life actualiza tu firmware biológico mediante la monitorización sistemática de HRV, la optimización del hardware neural y 8 niveles de desarrollo de la consciencia.",
+    "description": "Creada por Yakiv Bilenko, arquitecto y psicólogo Gestalt: biofeedback de VFC y respiración guiada, con honestidad sobre lo que puede y no puede hacer.",
     "ogImageAlt": "ONDA Life — App de biohacking y SO de la consciencia. Monitorización de HRV y optimización neuronal."
   }
 }

@@ -24,7 +24,7 @@
   "rewards1": "We provide routes, tips, and support. For practices and missions you earn OND — game currency:",
   "rewardsList": [
     "OND accumulates for regularity;",
-    "from level 3, it can be converted to real money;",
+    "OND is an in-game currency only — it has no cash value;",
     "early level skills — foundation for further growth."
   ],
   "rewards2": "Result: stable presence, calm, clarity, and inner support in life.",
@@ -49,7 +49,7 @@
   },
   "meta": {
     "title": "About ONDA Life — Who Builds It, and Why",
-    "description": "Built by a developer-founder and a science advisor with a PhD in physics and neuroscience — HRV biofeedback training, honest about what it can and can't do.",
+    "description": "Built by Yakiv Bilenko, architect and Gestalt psychologist — HRV biofeedback and guided breathing, honest about what it can and can't do.",
     "ogImageAlt": "ONDA Life — HRV biofeedback app. Guided breathing with live heart-rhythm feedback."
   }
 }
