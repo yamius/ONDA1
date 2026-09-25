@@ -211,6 +211,9 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'yoga-poses-heart-rate-blood-pressure', publishOn: '2026-09-25' },
   { slug: 'yoga-breathing-diabetes-blood-sugar', publishOn: '2026-09-25' },
   { slug: 'morita-therapy-tracking-paradox', publishOn: '2026-09-25' },
+  { slug: 'physiological-sigh', publishOn: '2026-09-25' },
+  { slug: '4-7-8-breathing', publishOn: '2026-09-25' },
+  { slug: 'pranayama-metabolic-syndrome', publishOn: '2026-09-25' },
   // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
   { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
   { slug: 'respiratory-rate-hidden-signal', publishOn: '2026-09-18' },
