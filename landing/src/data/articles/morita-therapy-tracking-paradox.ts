@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['naikan-japanese-reflection', 'hrv-breathing-cold-honest-limits', 'normal-hrv-by-age', 'how-to-raise-hrv-naturally'],
   introStyle: 'gold',
+  image: '/images/articles/morita-therapy-tracking-paradox.jpg',
+  imageAlt:
+    'The Paradox of Watching Your Body — illustration: a person looking at a phone with a heart line, surrounded by a looping spiral of attention; beside it the same person calmly setting the phone down.',
+  imageTitle: 'The Paradox of Watching Your Body',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Informed, not fixated. Glance at the trend, then act — breathe, rest, move — and let the number follow.',
     link: '/articles/normal-hrv-by-age',

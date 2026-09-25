@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['vagus-nerve-exercises', 'coherent-breathing-guide', 'physiological-sigh', 'how-to-raise-hrv-naturally', 'cold-exposure-vagus-nerve'],
   introStyle: 'gold',
+  image: '/images/articles/humming-breath-vagus.jpg',
+  imageAlt:
+    'Humming Breath and the Vagus Nerve — illustration: concentric vibration rings radiating from the throat of a silhouette, a glowing nerve path running down from the throat to the heart.',
+  imageTitle: 'Humming Breath and the Vagus Nerve',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Humming gives the vagus nerve a direct, mechanical nudge. Watch your heart rate settle as you hum.',
     link: '/tools',

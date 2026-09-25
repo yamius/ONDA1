@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['coherent-breathing-guide', 'find-your-resonance-breathing-rate', 'hrv-harmony-of-rhythms', 'how-to-raise-hrv-naturally', '4-7-8-breathing'],
   introStyle: 'rose',
+  image: '/images/articles/cardiac-coherence-365-method.jpg',
+  imageAlt:
+    'Cardiac Coherence: the 365 Method — illustration: a heart wave and a breath wave perfectly aligned into one smooth sine wave, three small suns across the sky for morning, noon and evening.',
+  imageTitle: 'Cardiac Coherence: the 365 Method',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A single session calms but fades — which is exactly why the 365 method spaces three across the day.',
     link: '/tools',

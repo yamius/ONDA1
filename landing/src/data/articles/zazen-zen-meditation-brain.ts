@@ -15,6 +15,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'tanden-breathing-serotonin', 'vipassana-meditation-attention-brain', 'measuring-meditation-progress', 'meditation-brain-changes-how-fast'],
   introStyle: 'indigo',
+  image: '/images/articles/zazen-zen-meditation-brain.jpg',
+  imageAlt:
+    'Zazen and the Brain — illustration: a minimalist Zen room, a figure seated facing a plain wall; raked sand lines on the floor gradually turn into brainwave lines.',
+  imageTitle: 'Zazen and the Brain',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A beginner and a Zen monk sitting in zazen don’t have the same brain activity — the deeper theta signature is earned through practice.',
     link: '/measurements',

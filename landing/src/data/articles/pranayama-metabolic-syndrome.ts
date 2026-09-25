@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['yoga-breathing-diabetes-blood-sugar', 'high-blood-pressure-slow-breathing', 'breathing-lowers-stress-hormones', 'how-to-raise-hrv-naturally'],
   introStyle: 'gold',
+  image: '/images/articles/pranayama-metabolic-syndrome.jpg',
+  imageAlt:
+    'Pranayama and Metabolic Syndrome — illustration: a young person at a desk turning to calm breathing, soft glyphs of a blood drop and a measuring tape floating faintly around.',
+  imageTitle: 'Pranayama and Metabolic Syndrome',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A small, free lever on the stress axis — on top of movement and diet, never instead of them.',
     link: '/articles/high-blood-pressure-slow-breathing',

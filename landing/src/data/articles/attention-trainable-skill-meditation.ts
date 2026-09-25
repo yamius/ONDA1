@@ -15,6 +15,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'zazen-zen-meditation-brain', 'measuring-meditation-progress', 'how-much-meditation-do-you-need'],
   introStyle: 'indigo',
+  image: '/images/articles/attention-trainable-skill-meditation.jpg',
+  imageAlt:
+    'Is Attention a Trainable Skill? — illustration: a beam of focused light gathering scattered floating particles into one bright point, like a lens concentrating attention.',
+  imageTitle: 'Is Attention a Trainable Skill?',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You’re training your attention one way or another — meditation is choosing to train it toward focus rather than fragmentation.',
     link: '/measurements',

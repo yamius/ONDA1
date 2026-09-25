@@ -15,6 +15,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'meditation-brain-changes-how-fast', 'attention-trainable-skill-meditation', 'jhana-meditation-stages'],
   introStyle: 'indigo',
+  image: '/images/articles/meditation-neuroscience-expert-monks.jpg',
+  imageAlt:
+    'Brain Scans of Expert Meditators — illustration: a robed monk silhouette seated inside a stylized glowing scanner ring, the brain above glowing with synchronized waves.',
+  imageTitle: 'Brain Scans of Expert Meditators',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The monks are the Olympic athletes of attention — far down a road that begins with your first ten minutes.',
     link: '/measurements',

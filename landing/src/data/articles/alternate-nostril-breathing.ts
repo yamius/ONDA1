@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['coherent-breathing-guide', 'physiological-sigh', 'box-breathing-how-it-works', 'how-to-raise-hrv-naturally', 'find-your-resonance-breathing-rate'],
   introStyle: 'emerald',
+  image: '/images/articles/alternate-nostril-breathing.jpg',
+  imageAlt:
+    'Alternate Nostril Breathing — illustration: a face-profile silhouette with two alternating streams of light, one mint and one soft blue, flowing through the nose in a balanced symmetrical pattern.',
+  imageTitle: 'Alternate Nostril Breathing',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The calm comes from the pace, not the nostrils. See your own HRV confirm which is working.',
     link: '/tools',

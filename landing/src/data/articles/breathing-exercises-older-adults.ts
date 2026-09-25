@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['breathing-lowers-stress-hormones', 'coherent-breathing-guide', 'normal-hrv-by-age', 'resting-heart-rate-by-age', 'high-blood-pressure-slow-breathing'],
   introStyle: 'cyan',
+  image: '/images/articles/breathing-exercises-older-adults.jpg',
+  imageAlt:
+    'Breathing Exercises for Older Adults — illustration: an older adult silhouette seated by a window in soft morning light, breathing calmly, a gentle heart line in the air.',
+  imageTitle: 'Breathing Exercises for Older Adults',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The calming vagal shift is immediate; the blood-pressure benefit, if it comes, builds over weeks. See your own trend.',
     link: '/measurements',

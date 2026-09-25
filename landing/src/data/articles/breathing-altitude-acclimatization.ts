@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['wim-hof-breathing-inflammation', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'physiological-sigh', 'cold-exposure-vagus-nerve'],
   introStyle: 'slate',
+  image: '/images/articles/breathing-altitude-acclimatization.jpg',
+  imageAlt:
+    'Breathing and Altitude Sickness — illustration: a climber silhouette on a high mountain ridge at dawn, a soft visible breath glow, thin cold air and distant peaks.',
+  imageTitle: 'Breathing and Altitude Sickness',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A promising lead, not a substitute. Gradual ascent and “climb high, sleep low” stay the foundation.',
     link: '/measurements',

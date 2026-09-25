@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'breathing-lowers-stress-hormones'],
   introStyle: 'indigo',
+  image: '/images/articles/meditation-brain-changes-how-fast.jpg',
+  imageAlt:
+    'How Fast Does Meditation Change Your Brain? — illustration: a translucent human brain where fine new neural fibers light up in mint, surrounded by four faint concentric rings suggesting the passing weeks.',
+  imageTitle: 'How Fast Does Meditation Change Your Brain?',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Not an act of faith — meditation leaves marks you can measure, on a timeline of weeks. That’s what makes it trainable.',
     link: '/measurements',

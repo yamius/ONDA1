@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['how-to-lower-cortisol', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'cold-exposure-vagus-nerve', 'breathing-lowers-stress-hormones'],
   introStyle: 'emerald',
+  image: '/images/articles/forest-bathing-shinrin-yoku-science.jpg',
+  imageAlt:
+    'Forest Bathing (Shinrin-yoku) — illustration: a person walking slowly through a misty Japanese cedar forest, beams of light through the trees, tiny glowing particles floating in the air.',
+  imageTitle: 'Forest Bathing (Shinrin-yoku)',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Not "nature is nice" — a measured autonomic shift, partly from what you breathe. Watch your own before/after.',
     link: '/measurements',

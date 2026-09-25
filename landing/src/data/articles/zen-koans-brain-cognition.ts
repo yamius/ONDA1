@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'zazen-zen-meditation-brain', 'vipassana-meditation-attention-brain', 'meditation-gamma-waves-experience', 'measuring-meditation-progress', 'naikan-japanese-reflection'],
   introStyle: 'indigo',
+  image: '/images/articles/zen-koans-brain-cognition.jpg',
+  imageAlt:
+    'Zen Koans and the Brain — illustration: a single ensō circle brushstroke made of light, a lone open hand silhouette beside it, quiet and paradoxical.',
+  imageTitle: 'Zen Koans and the Brain',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A problem the logical mind can’t solve, held long enough, wears out the self-narrating loop — the same loop that, overactive, fuels rumination.',
     link: '/measurements',

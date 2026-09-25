@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['circadian-lighting-dark-therapy', 'social-jet-lag-irregular-sleep', 'circadian-reset-mastering-light', 'hrv-harmony-of-rhythms', 'wind-down-before-sleep-breathing'],
   introStyle: 'indigo',
+  image: '/images/articles/chronotherapy-light-dark-timing.jpg',
+  imageAlt:
+    'Chronotherapy: Light, Dark and Timing — illustration: a large clock face split into half warm sunlight and half deep darkness, a bed resting at its center.',
+  imageTitle: 'Chronotherapy: Light, Dark and Timing',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The everyday version of chronotherapy: bright morning light, dim evenings, a regular sleep clock. See your own rhythm respond.',
     link: '/measurements',

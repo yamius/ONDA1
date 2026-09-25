@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['humming-breath-vagus', 'bhastrika-pranayama-brain-anxiety', 'vagus-nerve-exercises', 'coherent-breathing-guide'],
   introStyle: 'gold',
+  image: '/images/articles/om-chanting-brain-vagus.jpg',
+  imageAlt:
+    'OM Chanting and the Brain — illustration: a seated figure emitting wide concentric sound-wave rings, a brain above with its deep emotional centre dimming calmly.',
+  imageTitle: 'OM Chanting and the Brain',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Let the M hum. The vibration and the long exhale do the work — no belief required.',
     link: '/articles/humming-breath-vagus',

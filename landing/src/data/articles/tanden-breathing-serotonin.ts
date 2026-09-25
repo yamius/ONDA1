@@ -18,6 +18,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-with-measurable-progress', 'breathing-lowers-stress-hormones', 'coherent-breathing-guide', 'humming-breath-vagus', 'how-to-raise-hrv-naturally', 'system-stability-serotonin'],
   introStyle: 'gold',
+  image: '/images/articles/tanden-breathing-serotonin.jpg',
+  imageAlt:
+    'Tanden Breathing and Serotonin — illustration: a seated figure with a warm glowing point just below the navel, soft light rising gently up the spine toward the head.',
+  imageTitle: 'Tanden Breathing and Serotonin',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Most breathwork points at the vagus nerve. This Japanese tradition points at serotonin — mood chemistry, not just rest-and-digest.',
     link: '/tools',

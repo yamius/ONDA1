@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'vipassana-meditation-attention-brain', 'measuring-meditation-progress', 'meditation-neuroscience-expert-monks'],
   introStyle: 'purple',
+  image: '/images/articles/jhana-meditation-stages.jpg',
+  imageAlt:
+    'The Jhanas: Stages of Deep Absorption — illustration: eight luminous stepped platforms descending into deepening calm light, a small seated silhouette on the upper step looking down the stages.',
+  imageTitle: 'The Jhanas: Stages of Deep Absorption',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The deepest states show up clearly on brain scans and progress in an orderly ladder — proof that meditation is real, staged, measurable change.',
     link: '/measurements',

@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'breathing-lowers-stress-hormones', 'measuring-meditation-progress'],
   introStyle: 'slate',
+  image: '/images/articles/mbsr-mindfulness-clinical-evidence.jpg',
+  imageAlt:
+    'MBSR: Does It Actually Work? — illustration: eight softly glowing circles in a row forming a path across a dark field, a calm figure walking along them, faint clinical grid lines in the background.',
+  imageTitle: 'MBSR: Does It Actually Work?',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The honest verdict: real but moderate effects, not a miracle cure. Its edge is structure — a defined 8-week arc you can track.',
     link: '/measurements',

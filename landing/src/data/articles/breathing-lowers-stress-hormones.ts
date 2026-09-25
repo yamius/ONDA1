@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['how-to-lower-cortisol', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'box-breathing-how-it-works', 'breathing-exercises-older-adults'],
   introStyle: 'emerald',
+  image: '/images/articles/breathing-lowers-stress-hormones.jpg',
+  imageAlt:
+    'Breathing Lowers Stress Hormones — illustration: stylized abstract molecule shapes dissolving into soft light around a calmly breathing seated figure.',
+  imageTitle: 'Breathing Lowers Stress Hormones',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You can’t watch your cortisol fall — but you can watch the autonomic shift the hormone studies confirm underneath.',
     link: '/measurements',

@@ -17,6 +17,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-aging-telomeres', 'meditation-brain-changes-how-fast', 'breathing-exercises-older-adults', 'zazen-zen-meditation-brain'],
   introStyle: 'gold',
+  image: '/images/articles/meditation-brain-aging-protection.jpg',
+  imageAlt:
+    'Does Meditation Slow Brain Aging? — illustration: two brain silhouettes side by side, one dim and sparse, one fuller and brighter with dense glowing networks.',
+  imageTitle: 'Does Meditation Slow Brain Aging?',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Promising, not settled. Meditate for the proven stress and attention benefits — they support the aging brain on their own.',
     link: '/measurements',

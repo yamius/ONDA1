@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['alternate-nostril-breathing', 'humming-breath-vagus', 'coherent-breathing-guide', 'physiological-sigh', 'breathing-for-focus-and-attention'],
   introStyle: 'orange',
+  image: '/images/articles/fast-vs-slow-pranayama.jpg',
+  imageAlt:
+    'Fast vs Slow Pranayama — illustration: a split composition: on the left a fast, energetic amber zigzag wave, on the right a slow, calm mint wave, a seated figure in the center.',
+  imageTitle: 'Fast vs Slow Pranayama',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Want the brake? Breathe slow with a long exhale. Want the gas? Breathe fast and forceful. The error is mixing them up.',
     link: '/tools',

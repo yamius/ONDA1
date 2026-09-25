@@ -15,6 +15,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['normal-hrv-by-age', 'coherent-breathing-guide', 'social-jet-lag-irregular-sleep', 'how-to-raise-hrv-naturally', 'find-your-resonance-breathing-rate'],
   introStyle: 'blue',
+  image: '/images/articles/hrv-harmony-of-rhythms.jpg',
+  imageAlt:
+    'HRV as the Harmony of Rhythms — illustration: layered waves of different frequencies — fast heartbeat, slower breath, and a large slow sun arc — harmonizing like an orchestra of light.',
+  imageTitle: 'HRV as the Harmony of Rhythms',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Not a lone morning score — watch your pulse and breath actually fall into rhythm together.',
     link: '/tools',

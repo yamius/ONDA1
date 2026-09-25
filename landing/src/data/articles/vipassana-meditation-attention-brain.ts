@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'how-much-meditation-do-you-need', 'rajyoga-open-eye-meditation'],
   introStyle: 'indigo',
+  image: '/images/articles/vipassana-meditation-attention-brain.jpg',
+  imageAlt:
+    'Vipassana and the Brain — illustration: a seated figure outlined in light, with small glowing points of sensation appearing along the body, observed calmly.',
+  imageTitle: 'Vipassana and the Brain',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Not a blissful escape — a systematic attention-and-equanimity training with a neural signature that sharpens with practice.',
     link: '/measurements',

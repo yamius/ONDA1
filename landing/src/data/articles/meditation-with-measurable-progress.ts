@@ -17,6 +17,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['measuring-meditation-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'meditation-vs-breathwork', 'meditation-adverse-effects-safety'],
   introStyle: 'cyan',
+  image: '/images/articles/meditation-with-measurable-progress.jpg',
+  imageAlt:
+    'Meditation With Measurable Progress (pillar) — illustration: a person meditating in silhouette, seated cross-legged; behind them a mint light curve rises gently like ascending steps, suggesting steady measurable progress.',
+  imageTitle: 'Meditation With Measurable Progress (pillar)',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Meditation you can measure is meditation you’ll actually keep doing. Watch your own nervous system adapt.',
     link: '/measurements',

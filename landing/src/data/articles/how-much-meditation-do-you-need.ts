@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'cardiac-coherence-365-method'],
   introStyle: 'cyan',
+  image: '/images/articles/how-much-meditation-do-you-need.jpg',
+  imageAlt:
+    'How Much Meditation Do You Need? — illustration: a small hourglass of light with a short thin stream, beside a seated figure; a row of small glowing dots in the foreground suggesting a daily habit.',
+  imageTitle: 'How Much Meditation Do You Need?',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The best dose isn’t the theoretical maximum — it’s the largest one you’ll actually keep up. A reliable 10 beats an aspirational 30.',
     link: '/measurements',

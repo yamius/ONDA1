@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['fast-vs-slow-pranayama', 'physiological-sigh', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally'],
   introStyle: 'gold',
+  image: '/images/articles/bhastrika-pranayama-brain-anxiety.jpg',
+  imageAlt:
+    'Bhastrika Pranayama and the Brain — illustration: energetic bellows-like bursts of breath light around a silhouette, a brain above where a small deep region shifts from warm red to calm mint.',
+  imageTitle: 'Bhastrika Pranayama and the Brain',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Energizing now, calmer over weeks. Use Bhastrika in the morning — and a slow technique when you need calm right away.',
     link: '/tools',

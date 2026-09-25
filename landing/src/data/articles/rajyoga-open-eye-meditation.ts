@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'measuring-meditation-progress', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'meditation-brain-changes-how-fast'],
   introStyle: 'purple',
+  image: '/images/articles/rajyoga-open-eye-meditation.jpg',
+  imageAlt:
+    'Rajyoga: Open-Eyed Meditation — illustration: a seated figure with an open, soft gaze toward a single small point of light in the distance, gentle brainwave lines floating around the head.',
+  imageTitle: 'Rajyoga: Open-Eyed Meditation',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'If eyes-closed makes you sleepy or restless, an eyes-open practice is a real, research-backed alternative — meditation is a family, not one method.',
     link: '/tools',

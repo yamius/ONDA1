@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'how-to-raise-hrv-naturally', 'how-to-measure-hrv-consistently', 'meditation-app-with-biofeedback'],
   introStyle: 'rose',
+  image: '/images/articles/measuring-meditation-progress.jpg',
+  imageAlt:
+    'How to Measure Your Meditation Progress — illustration: a seated meditator beside a large translucent heart-rhythm waveform that turns from jagged on the left to smooth, even waves on the right.',
+  imageTitle: 'How to Measure Your Meditation Progress',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The scoreboard meditation always lacked. Watch the weekly trend of your baseline — never chase a single day’s number.',
     link: '/measurements',

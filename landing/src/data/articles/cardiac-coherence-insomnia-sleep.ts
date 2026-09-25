@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['cardiac-coherence-365-method', 'wind-down-before-sleep-breathing', 'yoga-nidra-sleep-science', 'how-much-sleep-do-you-need'],
   introStyle: 'gold',
+  image: '/images/articles/cardiac-coherence-insomnia-sleep.jpg',
+  imageAlt:
+    'Cardiac Coherence for Insomnia — illustration: a bed at night, a jagged over-aroused line above it gradually smoothing into a calm coherent sine wave.',
+  imageTitle: 'Cardiac Coherence for Insomnia',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Don't chase sleep — lower arousal. An evening coherence session makes room for sleep to arrive on its own.",
     link: '/articles/cardiac-coherence-365-method',

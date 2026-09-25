@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['wind-down-before-sleep-breathing', 'how-much-sleep-do-you-need', 'social-jet-lag-irregular-sleep', 'coherent-breathing-guide'],
   introStyle: 'gold',
+  image: '/images/articles/yoga-nidra-sleep-science.jpg',
+  imageAlt:
+    'Yoga Nidra for Sleep — illustration: a person lying on their back in deep relaxation, soft slow waves floating above, the sky half dusk half night.',
+  imageTitle: 'Yoga Nidra for Sleep',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Don't try to sleep — follow the voice. Falling arousal is what lets sleep arrive.",
     link: '/articles/wind-down-before-sleep-breathing',

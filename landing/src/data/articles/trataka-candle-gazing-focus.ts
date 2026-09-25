@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['attention-trainable-skill-meditation', 'breathing-for-focus-and-attention', 'coherent-breathing-guide', 'yoga-nidra-sleep-science'],
   introStyle: 'gold',
+  image: '/images/articles/trataka-candle-gazing-focus.jpg',
+  imageAlt:
+    'Trataka (Candle Gazing) — illustration: a single candle flame at eye level in a dark room, a thin focused beam of attention reaching it, everything else softly blurred.',
+  imageTitle: 'Trataka (Candle Gazing)',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The returning is the practice. Every time attention drifts and you bring it back, that is one repetition for focus.',
     link: '/articles/attention-trainable-skill-meditation',

@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['box-breathing-how-it-works', 'coherent-breathing-guide', 'how-to-raise-hrv-naturally', 'find-your-resonance-breathing-rate', '4-7-8-breathing'],
   introStyle: 'cyan',
+  image: '/images/articles/physiological-sigh.jpg',
+  imageAlt:
+    'Physiological Sigh — illustration: stylized lungs of light with two stacked inhale streams flowing in and one long exhale stream flowing out, a heart-rate line dipping downward.',
+  imageTitle: 'Physiological Sigh',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You can’t normally see a breathing technique work. Watch your pulse drop live as you sigh.',
     link: '/tools',

@@ -16,6 +16,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['high-blood-pressure-slow-breathing', 'how-to-raise-hrv-naturally', 'breathing-lowers-stress-hormones', 'coherent-breathing-guide'],
   introStyle: 'gold',
+  image: '/images/articles/yoga-breathing-diabetes-blood-sugar.jpg',
+  imageAlt:
+    'Yoga and Breathing for Type 2 Diabetes — illustration: a spiky glucose curve smoothing into a gentle line, a seated yoga silhouette beneath it.',
+  imageTitle: 'Yoga and Breathing for Type 2 Diabetes',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'An add-on to diabetes care, never a replacement. Keep your medication, monitor your glucose, and build the practice over weeks.',
     link: '/articles/coherent-breathing-guide',

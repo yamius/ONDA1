@@ -17,6 +17,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-with-measurable-progress', 'zazen-zen-meditation-brain', 'meditation-vs-breathwork', 'measuring-meditation-progress', 'zen-koans-brain-cognition', 'how-to-regulate-emotions'],
   introStyle: 'emerald',
+  image: '/images/articles/naikan-japanese-reflection.jpg',
+  imageAlt:
+    'Naikan: Japanese Self-Reflection — illustration: a seated figure behind a translucent Japanese folding screen, three soft lights floating in front of them.',
+  imageTitle: 'Naikan: Japanese Self-Reflection',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'If breath calms the body and meditation trains attention, Naikan trains perspective — a rounded contemplative practice.',
     link: '/articles/meditation-vs-breathwork',

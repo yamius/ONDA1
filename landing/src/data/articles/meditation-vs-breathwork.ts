@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-gamma-waves-experience', 'coherent-breathing-guide', 'measuring-meditation-progress', 'fast-vs-slow-pranayama', 'physiological-sigh'],
   introStyle: 'cyan',
+  image: '/images/articles/meditation-vs-breathwork.jpg',
+  imageAlt:
+    'Meditation vs Breathwork — illustration: two tall doorways of light side by side, one with a flowing breath wave, one with a brain glyph, both opening onto the same calm room.',
+  imageTitle: 'Meditation vs Breathwork',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Not either/or. Use breath to reach the calm state fast, then meditate from within it — a fire extinguisher and fireproofing.',
     link: '/tools',

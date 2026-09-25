@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['how-to-raise-hrv-naturally', 'coherent-breathing-guide', 'cold-exposure-vagus-nerve', 'hrv-harmony-of-rhythms', 'vagus-nerve-exercises'],
   introStyle: 'slate',
+  image: '/images/articles/hrv-breathing-cold-honest-limits.jpg',
+  imageAlt:
+    'What Breathing and Cold Really Do to HRV — illustration: an HRV wave that rises in a short spike and then gently returns to its baseline, a subtle balance-scale motif nearby — honest measurement.',
+  imageTitle: 'What Breathing and Cold Really Do to HRV',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A live HRV spike isn’t a rewired nervous system. The only honest measure of lasting change is your baseline over weeks.',
     link: '/measurements',

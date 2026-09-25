@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['how-to-raise-hrv-naturally', 'how-to-measure-hrv-consistently', 'hrv-different-every-device', 'resting-heart-rate-by-age', 'your-baseline-knows-first'],
   introStyle: 'rose',
+  image: '/images/articles/normal-hrv-by-age.jpg',
+  imageAlt:
+    'Normal HRV by Age — illustration: a row of silhouettes from young to old, each with a heart-rhythm line above them whose variability gently decreases with age.',
+  imageTitle: 'Normal HRV by Age',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Stop asking “is 45 ms good?” The number that matters is whether YOUR HRV is trending up or down.',
     link: '/measurements',

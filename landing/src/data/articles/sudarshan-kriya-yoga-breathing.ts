@@ -17,6 +17,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['fast-vs-slow-pranayama', 'bhastrika-pranayama-brain-anxiety', 'coherent-breathing-guide', 'how-to-lower-cortisol'],
   introStyle: 'gold',
+  image: '/images/articles/sudarshan-kriya-yoga-breathing.jpg',
+  imageAlt:
+    'Sudarshan Kriya Yoga — illustration: rhythmic breath waves in slow, medium and fast cycles spiraling around a small group of seated silhouettes.',
+  imageTitle: 'Sudarshan Kriya Yoga',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Promising, unusually serious evidence — but learn the full kriya from a teacher, and never use it instead of treatment.',
     link: '/articles/coherent-breathing-guide',

@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['high-blood-pressure-slow-breathing', 'yoga-breathing-diabetes-blood-sugar', 'resting-heart-rate-by-age', 'how-to-raise-hrv-naturally'],
   introStyle: 'gold',
+  image: '/images/articles/yoga-poses-heart-rate-blood-pressure.jpg',
+  imageAlt:
+    'How Yoga Poses Affect Your Heart — illustration: three yoga pose silhouettes — forward fold, standing pose, backbend — each with a heart-rate line of a different intensity above it.',
+  imageTitle: 'How Yoga Poses Affect Your Heart',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Calming poses to wind down, activating poses to wake up — and always end in savasana.',
     link: '/articles/high-blood-pressure-slow-breathing',

@@ -15,6 +15,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['coherent-breathing-guide', 'breathing-lowers-stress-hormones', 'physiological-sigh', 'how-to-raise-hrv-naturally', 'breathing-for-focus-and-attention'],
   introStyle: 'blue',
+  image: '/images/articles/nose-vs-mouth-breathing.jpg',
+  imageAlt:
+    'Nose vs Mouth Breathing — illustration: a face-profile silhouette showing smooth, laminar airflow through the nose contrasted with scattered, turbulent flow near the mouth.',
+  imageTitle: 'Nose vs Mouth Breathing',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A minute each way, nose then mouth — the difference often shows up plainly in your own heart rhythm.',
     link: '/tools',

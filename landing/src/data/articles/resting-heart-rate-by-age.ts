@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['normal-hrv-by-age', 'heart-rate-recovery-fitness-marker', 'how-to-measure-hrv-consistently', 'caffeine-hrv-resting-heart-rate', 'your-baseline-knows-first'],
   introStyle: 'rose',
+  image: '/images/articles/resting-heart-rate-by-age.jpg',
+  imageAlt:
+    'Resting Heart Rate by Age — illustration: a calm heartbeat line stretched across a softly lit bedroom at night, faint rings around it suggesting the stages of life.',
+  imageTitle: 'Resting Heart Rate by Age',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'One reading tells you little. Your resting-heart-rate trend against your own normal tells you a lot.',
     link: '/measurements',

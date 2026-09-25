@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'how-much-meditation-do-you-need', 'breathing-lowers-stress-hormones', 'measuring-meditation-progress', 'meditation-gamma-waves-experience'],
   introStyle: 'gold',
+  image: '/images/articles/meditation-aging-telomeres.jpg',
+  imageAlt:
+    'Can Meditation Slow Aging? Telomeres — illustration: a stylized chromosome with glowing protective caps at its ends, a DNA helix softly lit in mint.',
+  imageTitle: 'Can Meditation Slow Aging? Telomeres',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Not a fountain of youth. Meditate for the solid, measurable benefits — treat the anti-aging angle as a promising bonus, not a promise.',
     link: '/measurements',

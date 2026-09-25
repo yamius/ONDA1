@@ -17,6 +17,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['cold-exposure-vagus-nerve', 'physiological-sigh', 'hrv-breathing-cold-honest-limits', 'how-to-raise-hrv-naturally', 'breathing-altitude-acclimatization'],
   introStyle: 'indigo',
+  image: '/images/articles/wim-hof-breathing-inflammation.jpg',
+  imageAlt:
+    'Wim Hof Breathing: It\'s the Breath, Not the Cold — illustration: a silhouette breathing deeply with a bright breath glow in the foreground, while ice crystals fade softly into the background.',
+  imageTitle: 'Wim Hof Breathing: It\'s the Breath, Not the Cold',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Wim Hof breathing primes (sympathetic up); slow breathing calms (parasympathetic). Opposite tools — watch both in your own pulse.',
     link: '/tools',

@@ -15,6 +15,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['how-to-raise-hrv-naturally', 'how-long-does-alcohol-stay-in-your-system', 'caffeine-hrv-resting-heart-rate', 'eating-late-heart-rate-sleep', 'normal-hrv-by-age'],
   introStyle: 'amber',
+  image: '/images/articles/how-much-alcohol-lowers-hrv.jpg',
+  imageAlt:
+    'How Much Alcohol Lowers HRV — illustration: a wine glass silhouette on a night table beside a heart-rate line that climbs through the night; four glasses in a row with progressively lower glowing bars.',
+  imageTitle: 'How Much Alcohol Lowers HRV',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The effect of two glasses of wine on your HRV isn’t the same as on anyone else’s. See yours.',
     link: '/measurements',

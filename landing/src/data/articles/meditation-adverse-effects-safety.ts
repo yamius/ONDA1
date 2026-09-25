@@ -17,6 +17,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-vs-breathwork', 'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'how-to-regulate-emotions'],
   introStyle: 'slate',
+  image: '/images/articles/meditation-adverse-effects-safety.jpg',
+  imageAlt:
+    'The Side Effects of Meditation — illustration: a calm dark pond with one ripple revealing slight turbulence beneath the surface, a small lantern glowing at the edge — honest, not frightening.',
+  imageTitle: 'The Side Effects of Meditation',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'A practice powerful enough to change your brain is powerful enough to sometimes destabilize. Notice how you actually respond — don’t force through.',
     link: '/measurements',

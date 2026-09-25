@@ -16,6 +16,11 @@ const article: Article = {
   category: 'Biological Software',
   relatedSlugs: ['meditation-with-measurable-progress', 'meditation-brain-changes-how-fast', 'measuring-meditation-progress', 'how-much-meditation-do-you-need', 'how-to-raise-hrv-naturally', 'rajyoga-open-eye-meditation'],
   introStyle: 'indigo',
+  image: '/images/articles/meditation-gamma-waves-experience.jpg',
+  imageAlt:
+    'Gamma Brainwaves and Meditation Experience — illustration: a brain radiating fast, fine high-frequency light waves, with bright layers accumulating around it like tree rings of experience.',
+  imageTitle: 'Gamma Brainwaves and Meditation Experience',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'More practice, more gamma — a brain rhythm that behaves like a fitness marker. You can’t feel it, but you can track its autonomic twin.',
     link: '/measurements',

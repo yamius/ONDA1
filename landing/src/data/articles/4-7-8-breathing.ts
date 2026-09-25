@@ -14,6 +14,11 @@ const article: Article = {
   category: 'ONDA Protocol',
   relatedSlugs: ['box-breathing-how-it-works', 'physiological-sigh', 'coherent-breathing-guide', 'wind-down-before-sleep-breathing', 'find-your-resonance-breathing-rate'],
   introStyle: 'indigo',
+  image: '/images/articles/4-7-8-breathing.jpg',
+  imageAlt:
+    '4-7-8 Breathing — illustration: three glowing arcs of increasing length curving over a dark bedroom with a crescent moon in the window, suggesting a slow breath before sleep.',
+  imageTitle: '4-7-8 Breathing',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Counting seconds and hoping? Watch your pulse actually slow as your exhales lengthen.',
     link: '/tools',
