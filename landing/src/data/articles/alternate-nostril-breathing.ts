@@ -63,7 +63,7 @@ If your goal is simply to raise HRV and calm down, [coherent breathing](/article
 
 ## See the calm in your numbers
 
-Because the benefit of Nadi Shodhana comes from slowing your breath, you can watch it happen. ONDA reads your pulse from your phone camera or Apple Watch and shows your heart rate settle as your breathing slows and evens out. Seeing your own HRV rise confirms you've found a genuinely calming pace — and helps you tell whether it's the practice working, or just the pause.
+Because the benefit of Nadi Shodhana comes from slowing your breath, you can watch it happen. ONDA reads your pulse from your phone camera or Apple Watch and shows your heart rate settle as your breathing slows and evens out; with an Apple Watch you also see your HRV rise. Seeing it in your own numbers confirms you've found a genuinely calming pace — and helps you tell whether it's the practice working, or just the pause.
 `,
   howToSteps: [
     {
