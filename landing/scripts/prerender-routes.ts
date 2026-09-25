@@ -397,6 +397,9 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'trataka-candle-gazing-focus', publishOn: '2026-09-25' },
   { slug: 'sudarshan-kriya-yoga-breathing', publishOn: '2026-09-25' },
   { slug: 'yoga-poses-heart-rate-blood-pressure', publishOn: '2026-09-25' },
+  { slug: 'yoga-breathing-diabetes-blood-sugar', publishOn: '2026-09-25' },
+  { slug: 'morita-therapy-tracking-paradox', publishOn: '2026-09-25' },
+  { slug: 'pranayama-metabolic-syndrome', publishOn: '2026-09-25' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
