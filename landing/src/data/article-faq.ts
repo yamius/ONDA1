@@ -17,7 +17,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How fast does the physiological sigh work?",
       answer:
-        "Within seconds — usually one to three breaths. Stanford research found it reduces stress in real time faster than any other breathing pattern, because the long exhale activates the vagus nerve almost immediately.",
+        "Within seconds — usually one to three breaths. The long exhale activates the vagus nerve almost immediately; in a Stanford study, a daily five-minute practice of it improved mood more than box breathing or mindfulness over a month.",
     },
     {
       question: "Physiological sigh vs box breathing — which is better?",

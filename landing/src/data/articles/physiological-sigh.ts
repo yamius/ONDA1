@@ -21,7 +21,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-The physiological sigh is the fastest way to calm your body on demand: two inhales through the nose — a full breath, then a second short sip of air on top — followed by one long, slow exhale through the mouth. It works within one to three breaths. The double inhale reinflates collapsed air sacs deep in the lungs; the extended exhale activates the vagus nerve and signals safety to your nervous system, dropping your heart rate in seconds. Research from Stanford's Huberman lab found it lowers stress in real time faster than any other breathing pattern. You already do it naturally — right before sleep, or after crying.
+The physiological sigh is the fastest way to calm your body on demand: two inhales through the nose — a full breath, then a second short sip of air on top — followed by one long, slow exhale through the mouth. It works within one to three breaths. The double inhale reinflates collapsed air sacs deep in the lungs; the extended exhale activates the vagus nerve and signals safety to your nervous system, dropping your heart rate in seconds. In a Stanford study (Balban et al., 2023), five minutes a day of this "cyclic sighing" improved mood and lowered breathing rate more than box breathing or mindfulness meditation over a month. You already do it naturally — right before sleep, or after crying.
 
 ## How to do the physiological sigh
 
