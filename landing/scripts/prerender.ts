@@ -158,7 +158,57 @@ interface PartFile {
  * the localised /<lang>/articles/<slug> URL.
  */
 interface ArticlesFile {
-  bodies?: Record<string, { title?: string; description?: string }>
+  breadcrumb?: { home?: string; current?: string }
+  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[] }>
+}
+
+/**
+ * Localised article pages inherit the EN page's JSON-LD from meta-inject. Left
+ * as-is it describes an ENGLISH article (headline, HowTo, FAQ, breadcrumb) on a
+ * German/Spanish/… URL — a language mismatch for Google and for AI engines that
+ * quote structured data. This pass rewrites it to match the visible page:
+ *  - TechArticle: localised headline/description/url + inLanguage
+ *  - HowTo: localised steps when the translation has them, otherwise dropped
+ *  - FAQPage: dropped — the FAQ block renders on EN pages only, and marking up
+ *    content that isn't visible breaks Google's structured-data guidelines
+ *  - BreadcrumbList: localised names/URLs (topic hubs are EN-only, so skipped)
+ */
+function localizeArticleJsonLd(html: string, lang: Lang, slug: string, url: string): string {
+  const file = articlesByLang[lang]
+  const body = file.bodies?.[slug]
+  if (!body?.title) return html
+  const home = `${SITE_URL}/${lang}`
+  const library = `${SITE_URL}/${lang}/articles`
+  return html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (whole, json: string) => {
+    let data: Record<string, unknown>
+    try { data = JSON.parse(json) } catch { return whole }
+    const type = data['@type']
+    if (type === 'FAQPage') return ''
+    if (type === 'TechArticle' || type === 'Article' || type === 'BlogPosting') {
+      data.headline = body.title
+      if (body.description) data.description = body.description
+      data.url = url
+      if (typeof data['@id'] === 'string') data['@id'] = `${url}#article`
+      data.inLanguage = lang
+      if (data.mainEntityOfPage && typeof data.mainEntityOfPage === 'object') (data.mainEntityOfPage as Record<string, unknown>)['@id'] = url
+      else if (data.mainEntityOfPage) data.mainEntityOfPage = url
+    } else if (type === 'HowTo') {
+      if (!body.howToSteps?.length) return ''
+      data.name = body.title
+      if (body.description) data.description = body.description
+      data.inLanguage = lang
+      data.step = body.howToSteps.map((st, i) => ({ '@type': 'HowToStep', position: i + 1, name: st.name, text: st.text, url: `${url}#step-${i + 1}` }))
+    } else if (type === 'BreadcrumbList') {
+      data.itemListElement = [
+        { '@type': 'ListItem', position: 1, name: file.breadcrumb?.home ?? 'Home', item: home },
+        { '@type': 'ListItem', position: 2, name: file.breadcrumb?.current ?? 'Articles', item: library },
+        { '@type': 'ListItem', position: 3, name: body.title, item: url },
+      ]
+    } else {
+      return whole
+    }
+    return `<script type="application/ld+json">${JSON.stringify(data)}</script>`
+  })
 }
 const articlesByLang: Record<Lang, ArticlesFile> = {} as Record<Lang, ArticlesFile>
 for (const lang of SUPPORTED_LANGS) {
@@ -458,7 +508,11 @@ function applyMetricLocalizedMeta(html: string, metric: string, lang: Lang): str
   const m = file.metrics[metric]
   if (!m) return html
 
-  const title = `${m.title} | ONDA Life Bio OS`
+  // Translated subtitles run longer than EN, and meta-inject tail-cuts anything
+  // over budget with "…". Degrade gracefully instead: drop "Bio OS", then the
+  // poetic subtitle after the colon, keeping the metric name + brand intact.
+  const title = [`${m.title} | ONDA Life Bio OS`, `${m.title} | ONDA Life`, `${m.title.split(/\s*[:：]\s*/)[0]} | ONDA Life`]
+    .find((t) => t.length <= 60) ?? `${m.title.split(/\s*[:：]\s*/)[0]} | ONDA Life`
   const desc = file.ui.metaDescriptionTpl.replace('{{title}}', m.title)
   const url = metricUrlFor(metric, lang)
   const escTitle = escAttr(title)
@@ -686,7 +740,7 @@ for (const route of routes) {
         const escUrl = escAttr(url)
         out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
         if (subtitle) {
-          const title = `${subtitle} | ONDA Life`
+          const title = fitTitle(subtitle, " | ONDA Life")
           const escTitle = escAttr(title)
           out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
           out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
@@ -744,7 +798,7 @@ for (const route of routes) {
         const escUrl = escAttr(url)
         out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
         if (subtitle) {
-          const title = `${subtitle} — ONDA Life`
+          const title = fitTitle(subtitle, " — ONDA Life")
           const escTitle = escAttr(title)
           out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
           out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)
@@ -763,6 +817,7 @@ for (const route of routes) {
         const hreflang = buildHreflangLinksForArticle(articleInfo.slug, articleLangs)
         const ogLocale = `<meta property="og:locale" content="${OG_LOCALE_MAP[articleInfo.lang]}">`
         out = out.replace('</head>', `  ${hreflang}\n  ${ogLocale}\n</head>`)
+        out = localizeArticleJsonLd(out, articleInfo.lang, articleInfo.slug, url)
       } else if (hasLocalizedSibling) {
         // EN URL whose slug has a localised sibling — emit cluster from EN side
         // so Google/Bing find the alt-language URLs from the EN page too.
@@ -1002,3 +1057,13 @@ try {
   console.warn('[build] indexnow step failed (non-fatal)')
 }
 console.log('[build] all stages complete')
+
+/**
+ * Keep a localised <title> inside the ~60-char SERP budget without the
+ * "…" tail-cut: full title + brand, then title alone, then the part before
+ * the colon + brand.
+ */
+function fitTitle(base: string, suffix: string): string {
+  const head = base.split(/\s*[:：]\s*/)[0]
+  return [`${base}${suffix}`, base, `${head}${suffix}`].find((t) => t.length <= 60) ?? head
+}
