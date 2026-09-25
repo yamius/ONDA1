@@ -477,6 +477,20 @@
           "name": "Electrical Sleep Calibration (CES)",
           "text": "Estimulación de electroterapia craneal (CES) durante 30 minutos antes del system shutdown (sueño)."
         }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es la neuromodulación?",
+          "answer": "La neuromodulación es el uso de señales eléctricas o sensoriales dirigidas para cambiar la actividad del sistema nervioso: calmar un estado de estrés hiperactivo, afinar la concentración o mejorar el sueño. Trabaja con el propio «bus eléctrico» del cuerpo, no mediante fármacos."
+        },
+        {
+          "question": "¿Cómo puedo estimular el nervio vago?",
+          "answer": "El nervio vago responde tanto a estímulos naturales como a dispositivos. Las exhalaciones lentas y largas, tararear, hacer gárgaras y la exposición al frío lo activan sin ningún aparato; los estimuladores del nervio vago aplican una señal eléctrica suave. En ambos casos, el objetivo es pasar al estado parasimpático de recuperación."
+        },
+        {
+          "question": "¿Es seguro usar tDCS?",
+          "answer": "La estimulación transcraneal por corriente continua usa una corriente muy baja y en general se tolera bien en entornos de investigación, pero no es una herramienta de consumo para usar a la ligera. La dosis, la colocación de los electrodos y el momento importan, y conviene abordarla con cautela e, idealmente, con orientación informada."
+        }
       ]
     },
     "muscle-metabolic-marker": {
@@ -527,6 +541,20 @@
           "name": "Hormonal Crash Prevention",
           "text": "Configura notificaciones automáticas del sistema cuando los niveles hormonales caen por debajo del umbral de línea base."
         }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es la monitorización continua de hormonas?",
+          "answer": "La monitorización continua de hormonas (CHM) sustituye los análisis de sangre puntuales y estáticos por una lectura dinámica y continua de tu química interna: sigue patrones como la curva diaria del cortisol o la producción cíclica de testosterona, en lugar de un único dato aislado."
+        },
+        {
+          "question": "¿Cómo puedo seguir mi ritmo de cortisol sin análisis constantes?",
+          "answer": "El cortisol sigue una curva diaria predecible: una subida marcada por la mañana y un descenso gradual por la tarde-noche. Puedes leer su patrón a través de señales indirectas: la energía al despertar, los bajones de la tarde, la conciliación del sueño y la HRV. Una curva alterada (mañanas planas, noches aceleradas) es la señal para reajustar."
+        },
+        {
+          "question": "¿Cómo optimizo mi ventana de rendimiento con datos hormonales?",
+          "answer": "Sitúa el trabajo cognitivo y físico exigente en tus picos hormonales naturales en lugar de ir contra ellos. Programa los esfuerzos importantes cuando el cortisol y la testosterona están más altos, y protege las ventanas de recuperación cuando bajan: así evitas el bajón hormonal que sigue a un desajuste crónico de horarios."
+        }
       ]
     },
     "glymphatic-flush-clearing-neural-cache": {
@@ -551,6 +579,16 @@
         {
           "name": "Dietary Firewall (Insulin Block)",
           "text": "Cero ingesta calórica 3–4 horas antes del system shutdown."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué es el sistema glinfático?",
+          "answer": "El sistema glinfático es la red de limpieza de desechos del cerebro. Durante el sueño profundo, el líquido cefalorraquídeo fluye a través del tejido cerebral y arrastra los subproductos metabólicos: el equivalente a vaciar una caché. Un sueño profundo pobre deja esos desechos sin eliminar."
+        },
+        {
+          "question": "¿Cómo mejoro la limpieza glinfática durante la noche?",
+          "answer": "Tres palancas: dormir de lado para ayudar al drenaje por gravedad, mantener la habitación fresca para que el cerebro complete su enfriamiento y evitar un pico de insulina a última hora, porque una cena pesada y tardía atenúa la limpieza del sueño profundo. Proteger el sueño profundo es la base de las tres."
         }
       ]
     },
@@ -577,6 +615,16 @@
           "name": "Sensory Override",
           "text": "Caminar sobre superficies irregulares (piedras, arena, hierba) o transitar a calzado descalzo/minimalista."
         }
+      ],
+      "faq": [
+        {
+          "question": "¿Qué son los generadores centrales de patrones?",
+          "answer": "Los generadores centrales de patrones (CPG) son circuitos de la médula espinal que producen movimientos rítmicos —caminar, correr, nadar— sin una orden continua del cerebro. Funcionan como microcontroladores de la locomoción y liberan capacidad cortical para el pensamiento de orden superior."
+        },
+        {
+          "question": "¿Cómo consigo que el movimiento se sienta sin esfuerzo?",
+          "answer": "Devuelve el movimiento rítmico a los CPG en lugar de microgestionarlo de forma consciente. Un reinicio cruzado restablece una coordinación limpia entre izquierda y derecha, sincronizar la cadencia fija un ritmo estable y variar los estímulos sensoriales (terreno o superficie) reajusta el patrón: el movimiento forzado se convierte en flujo."
+        }
       ]
     },
     "co2-tolerance-expanding-oxygen-limit": {
@@ -601,6 +649,20 @@
         {
           "name": "Apnea Tables (Stress Test)",
           "text": "Una serie de retenciones respiratorias con períodos de descanso fijos y progresivamente más cortos."
+        }
+      ],
+      "faq": [
+        {
+          "question": "¿La necesidad de respirar se debe a la falta de oxígeno?",
+          "answer": "No. La «sed de aire» que sientes la provoca sobre todo el aumento de CO2, no la bajada de oxígeno. Los quimiorreceptores disparan la urgencia de respirar mucho antes de que el oxígeno esté realmente bajo, lo que significa que el verdadero límite suele ser la tolerancia al CO2, no la capacidad pulmonar."
+        },
+        {
+          "question": "¿Qué es la puntuación BOLT?",
+          "answer": "El BOLT (Body Oxygen Level Test) mide la tolerancia al CO2: tras una exhalación normal, cronometras cuánto tardas en sentir la primera necesidad clara de respirar. Una puntuación baja indica quimiorreceptores hipersensibles; una puntuación que sube a lo largo de semanas de entrenamiento refleja una respiración más tranquila y eficiente."
+        },
+        {
+          "question": "¿Cómo mejoro la tolerancia al CO2?",
+          "answer": "Entrénala poco a poco con la respiración cuadrada para calibrar los quimiorreceptores y después avanza a tablas de apnea estructuradas como prueba de estrés controlada. Una mayor tolerancia al CO2 también mejora el aporte de oxígeno por el efecto Bohr: la hemoglobina libera el oxígeno más fácilmente en los tejidos."
         }
       ]
     },
