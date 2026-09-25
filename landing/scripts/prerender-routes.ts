@@ -387,6 +387,10 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'apple-watch-recovery-hrv-vs-overall-hrv', publishOn: '2027-01-04' },
   { slug: 'dysautonomia-long-covid-breathing', publishOn: '2027-01-04' },
   { slug: 'high-blood-pressure-slow-breathing', publishOn: '2027-01-04' },
+  // Native-quality RU translations (hand-written) — 2026-09-25
+  { slug: 'yoga-nidra-sleep-science', publishOn: '2026-09-25' },
+  { slug: 'physiological-sigh', publishOn: '2026-09-25' },
+  { slug: '4-7-8-breathing', publishOn: '2026-09-25' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
