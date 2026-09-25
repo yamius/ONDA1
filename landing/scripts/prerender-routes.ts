@@ -214,6 +214,12 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'physiological-sigh', publishOn: '2026-09-25' },
   { slug: '4-7-8-breathing', publishOn: '2026-09-25' },
   { slug: 'pranayama-metabolic-syndrome', publishOn: '2026-09-25' },
+  { slug: 'normal-hrv-by-age', publishOn: '2026-09-25' },
+  { slug: 'resting-heart-rate-by-age', publishOn: '2026-09-25' },
+  { slug: 'alternate-nostril-breathing', publishOn: '2026-09-25' },
+  { slug: 'nose-vs-mouth-breathing', publishOn: '2026-09-25' },
+  { slug: 'meditation-vs-breathwork', publishOn: '2026-09-25' },
+  { slug: 'cardiac-coherence-365-method', publishOn: '2026-09-25' },
   // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
   { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
   { slug: 'respiratory-rate-hidden-signal', publishOn: '2026-09-18' },
