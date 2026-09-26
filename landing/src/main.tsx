@@ -246,6 +246,17 @@ const routeElements = (
             <Route path="/ru/tools"              element={<ToolsPage />} />
             <Route path="/es/tools"              element={<ToolsPage />} />
             <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
+            <Route path="/es/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/ru/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/uk/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/zh/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/de/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/fr/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/it/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/nl/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/ja/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/pl/tools/hrv" element={<HrvInterpreterPage />} />
+            <Route path="/pt/tools/hrv" element={<HrvInterpreterPage />} />
             <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />
             <Route path="/tools/sleep-debt"      element={<SleepDebtCalculatorPage />} />
             <Route path="/tools/zone-2"          element={<Zone2CalculatorPage />} />

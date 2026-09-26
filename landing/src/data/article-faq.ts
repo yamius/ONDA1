@@ -120,7 +120,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What is a good HRV for my age?",
       answer:
-        "Roughly 60–100 ms in your 20s, 45–75 ms in your 30s, 35–60 ms in your 40s, 25–50 ms in your 50s, and 20–40 ms after 60 (overnight RMSSD). But the ranges overlap hugely — your own baseline and trend matter far more than the age average.",
+        "For overnight RMSSD (Oura, Whoop, Garmin) the median is about 58 ms at 18–29, 50 ms at 30–39, 42 ms at 40–49, 36 ms at 50–59 and 30 ms at 60–69. On Apple Watch (SDNN) it is about 46 ms at 18–34, 42 ms at 35–44 and 34 ms at 45–54. The ranges overlap hugely — your own baseline and trend matter far more than the age average.",
     },
     {
       question: "Why is my HRV lower than average?",
@@ -135,7 +135,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What's a normal HRV at 40? At 50? At 60?",
       answer:
-        "Roughly 35–60 ms in your 40s, 25–50 ms in your 50s, and 20–40 ms after 60 for overnight RMSSD — with wide individual variation.",
+        "For overnight RMSSD the median is about 42 ms in your 40s (typical 30–56 ms), 36 ms in your 50s (26–48 ms) and 30 ms in your 60s (22–42 ms) — with wide individual variation. Apple Watch SDNN runs about 34 ms at 45–54 and 29 ms at 55–64.",
     },
     {
       question: "Is low HRV something to worry about?",

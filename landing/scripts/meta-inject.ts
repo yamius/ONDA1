@@ -14,7 +14,8 @@ import { ARTICLE_TOPIC_HUBS, getArticleTopicHub, getPrimaryHubForArticle, type A
 import { hubItemSlugs, hubLastModified } from '../src/data/article-topic-listing'
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
-import { HRV_FAQ } from '../src/data/hrv-norms'
+import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
+import type { Lang } from '../src/i18n'
 import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
 import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
 import { HOW_IT_WORKS_I18N } from '../src/data/how-it-works-i18n'
@@ -535,7 +536,7 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
   if (segments[0] === 'tools') {
     items.push({ name: 'Tools', url: `${SITE_URL}/tools` })
     if (segments[1] === 'hrv') {
-      items.push({ name: 'HRV Interpreter', url: `${SITE_URL}/tools/hrv` })
+      items.push({ name: 'HRV Calculator by Age', url: `${SITE_URL}/tools/hrv` })
     } else if (segments[1] === 'caffeine') {
       items.push({ name: 'Caffeine Cut-Off', url: `${SITE_URL}/tools/caffeine` })
     } else if (segments[1] === 'sleep-debt') {
@@ -1943,16 +1944,35 @@ export function getMetaForRoute(route: string): RouteMeta {
       },
     }
   }
-  if (route === '/tools/hrv') {
+  // /tools/hrv — HRV calculator, published in all 12 languages (copy in
+  // src/data/hrv-tool-i18n). WebApplication + FAQPage JSON-LD per language.
+  if (route === '/tools/hrv' || /^\/[a-z]{2}\/tools\/hrv$/.test(route)) {
+    const lang = (route === '/tools/hrv' ? 'en' : route.slice(1, 3)) as Lang
+    const c = hrvToolCopy(lang)
     return {
-      title: 'Good HRV by Age — Free Interpreter & Chart | ONDA Life',
-      description:
-        'Free HRV interpreter: enter your age and resting RMSSD to see where your heart rate variability lands against population norms by age — plus a reference chart and what actually raises HRV.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/hrv.png`,
-      faq: { mainEntity: HRV_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/hrv.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/caffeine') {
@@ -2328,7 +2348,7 @@ export function getMetaForRoute(route: string): RouteMeta {
   }
   if (route === '/embed/hrv') {
     return {
-      title: 'HRV Interpreter — ONDA Life',
+      title: 'HRV Calculator by Age — ONDA Life',
       description: 'Embeddable HRV interpreter: enter age and resting RMSSD to see where heart rate variability lands against population norms. By ONDA Life.',
       url,
       breadcrumbs,

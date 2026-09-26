@@ -9,7 +9,7 @@ import { HrvEmbedWidget } from '../components/HrvEmbedWidget'
  */
 export function HrvEmbedPage() {
   useEffect(() => {
-    document.title = 'HRV Interpreter — ONDA Life'
+    document.title = 'HRV Calculator by Age — ONDA Life'
   }, [])
   return (
     <div className="flex min-h-screen items-center justify-center bg-transparent p-3">

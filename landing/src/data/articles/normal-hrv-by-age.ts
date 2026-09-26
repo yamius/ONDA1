@@ -25,21 +25,38 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-There is no universal "good" HRV number — it depends heavily on your age, and even more on your own baseline. As a rough guide, average overnight HRV (measured as RMSSD) runs about 60–100 ms in your 20s, 45–75 ms in your 30s, 35–60 ms in your 40s, 25–50 ms in your 50s, and 20–40 ms after 60. HRV naturally declines with age and varies a lot between devices, fitness levels, sleep and stress. The single most useful number isn't where you land against the population — it's whether your own HRV is trending up or down against your personal normal.
+There is no universal "good" HRV number — it depends heavily on your age, and even more on your own baseline. As a guide, the median overnight HRV (measured as RMSSD by Oura, Whoop, Garmin and Polar) is about 58 ms at 18–29, 50 ms in your 30s, 42 ms in your 40s, 36 ms in your 50s, 30 ms in your 60s and 26 ms after 70. Apple Watch reports a different measure, SDNN, with its own norms (below). HRV naturally declines with age and varies a lot between devices, fitness levels, sleep and stress. The single most useful number isn't where you land against the population — it's whether your own HRV is trending up or down against your personal normal.
+
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — enter your age and HRV to see your percentile.
 
 ## Typical HRV ranges by age
 
-These ranges are broad on purpose. HRV varies enormously between individuals, so two healthy people the same age can differ by 40 ms or more. Use this as orientation, not a scoreboard:
+These are population norms for overnight RMSSD — the number rings and straps report. The median is the middle value; the typical range covers the middle half of healthy people (25th–75th percentile). HRV varies enormously between individuals, so two healthy people the same age can differ by 40 ms or more. Use this as orientation, not a scoreboard:
 
-| Age range | Typical overnight HRV (RMSSD) |
-|---|---|
-| 20–29 | ~60–100 ms |
-| 30–39 | ~45–75 ms |
-| 40–49 | ~35–60 ms |
-| 50–59 | ~25–50 ms |
-| 60+ | ~20–40 ms |
+| Age | Median RMSSD | Typical range (p25–p75) |
+|---|---|---|
+| 18–29 | 58 ms | 42–78 ms |
+| 30–39 | 50 ms | 36–68 ms |
+| 40–49 | 42 ms | 30–56 ms |
+| 50–59 | 36 ms | 26–48 ms |
+| 60–69 | 30 ms | 22–42 ms |
+| 70+ | 26 ms | 19–36 ms |
 
-If your number sits inside or near your age band, that's normal. If it sits below, that alone means little — it could be your genetics, your device, or a rough week. What matters is the direction it moves over time.
+If your number sits inside or near your age band, that's normal. If it sits below, that alone means little — it could be your genetics, your device, or a rough week. What matters is the direction it moves over time. How these norms were built (Nunan 2010, Umetani 1998, Voss 2015) is explained on the [HRV calculator](/tools/hrv) page.
+
+## Normal HRV on Apple Watch (SDNN)
+
+Apple Watch doesn't show RMSSD — it shows SDNN, a different HRV measure, so its numbers can't be compared with the table above. In a study of about 1,900 healthy adults (Voss 2015, 5-minute resting ECG), SDNN ran:
+
+| Age | Median SDNN | Typical range (p25–p75) |
+|---|---|---|
+| 18–34 | 46 ms | 35–60 ms |
+| 35–44 | 42 ms | 32–54 ms |
+| 45–54 | 34 ms | 27–44 ms |
+| 55–64 | 29 ms | 22–39 ms |
+| 65+ | 26 ms | 20–35 ms |
+
+Apple Watch takes short readings of about a minute several times a day and at night, so single values jump around more than a lab recording. Compare your 7-day average in the Health app, not one reading.
 
 ## Why HRV drops with age
 

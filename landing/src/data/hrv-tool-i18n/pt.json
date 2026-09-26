@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "Calculadora de HRV por idade — tabela grátis | ONDA Life",
+    "description": "Calculadora de HRV grátis: informe idade e HRV (RMSSD do Oura, Whoop, Garmin ou SDNN do Apple Watch) e veja seu percentil e a HRV normal por idade.",
+    "appName": "Calculadora de HRV por idade",
+    "appDescription": "Calculadora gratuita que compara sua variabilidade da frequência cardíaca (RMSSD ou SDNN do Apple Watch) com normas publicadas por idade e mostra um percentil aproximado."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "tools": "Ferramentas",
+    "current": "Calculadora de HRV"
+  },
+  "h1": "Calculadora de HRV por idade",
+  "capsule": "Informe sua idade e sua variabilidade da frequência cardíaca (VFC, ou HRV) para ver onde ela fica em relação a pessoas da sua idade. Use RMSSD se o número vem do Oura, Whoop, Garmin ou Polar, e SDNN se vem do Apple Watch. As normas vêm de estudos revisados por pares, mas a sua tendência ao longo de semanas importa mais que qualquer percentil.",
+  "imageAlt": "Calculadora de HRV por idade — calculadora interativa gratuita de variabilidade da frequência cardíaca da ONDA Life",
+  "metric": {
+    "label": "Seu dispositivo mostra",
+    "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
+    "sdnn": "SDNN (Apple Watch)",
+    "hintRmssd": "Oura: Prontidão → Equilíbrio da VFC / VFC média. Whoop: Recovery → HRV. Garmin: Status de VFC (média noturna). Polar: Nightly Recharge → VFC.",
+    "hintSdnn": "App Saúde do iPhone → Buscar → Coração → Variabilidade da Frequência Cardíaca. O Apple Watch mostra SDNN em ms — use a média de 7 dias, se possível."
+  },
+  "age": {
+    "label": "Idade",
+    "placeholder": "ex.: 34"
+  },
+  "value": {
+    "labelRmssd": "HRV — RMSSD (ms)",
+    "labelSdnn": "HRV — SDNN (ms)",
+    "placeholder": "ex.: 45"
+  },
+  "result": {
+    "percentile": "~{{p}}º percentil",
+    "band": "idade {{band}}"
+  },
+  "tiers": {
+    "low": "Baixa para sua idade",
+    "below": "Abaixo da média",
+    "average": "Na média",
+    "above": "Acima da média",
+    "excellent": "Excelente"
+  },
+  "summaries": {
+    "low": "Com {{v}} ms você está na faixa mais baixa para {{band}} anos. Uma leitura baixa isolada é comum depois de uma noite mal dormida, álcool, doença ou treino pesado — o que importa é sua tendência ao longo de semanas, não uma noite.",
+    "below": "{{v}} ms está abaixo da mediana típica (~{{median}} ms) para {{band}} anos. Sono, horário do álcool, cardio em Zona 2 e respiração lenta são as alavancas com mais evidência.",
+    "average": "{{v}} ms está perto da mediana (~{{median}} ms) para {{band}} anos — uma HRV de repouso saudável e típica. Acompanhe sua própria linha de base; o objetivo é uma tendência de alta.",
+    "above": "{{v}} ms está acima da mediana (~{{median}} ms) para {{band}} anos — bom sinal de capacidade de recuperação. Proteja isso com sono e recuperação consistentes.",
+    "excellent": "{{v}} ms está na faixa mais alta para {{band}} anos — o tipo de HRV comum em pessoas bem treinadas e bem recuperadas."
+  },
+  "sdnnNote": "O Apple Watch faz leituras curtas (cerca de um minuto) várias vezes ao dia e à noite, então os valores de SDNN oscilam mais que um RMSSD noturno. Compare sua média de 7 dias, não uma leitura isolada.",
+  "invalid": "Informe uma idade válida (18–120) e a HRV em ms (1–300).",
+  "disclaimer": "Estimativa educativa, não é orientação médica. Os percentis são aproximados e baseados em estudos normativos publicados sobre HRV. Sua tendência ao longo de semanas e sua linha de base importam muito mais que uma leitura isolada ou uma comparação populacional. A HRV varia de noite para noite conforme sono, álcool, doença e carga de treino.",
+  "tables": {
+    "rmssdTitle": "HRV (RMSSD) por idade — normas noturnas",
+    "rmssdCaption": "Para Oura, Whoop, Garmin e Polar (RMSSD noturno ou em repouso).",
+    "sdnnTitle": "HRV (SDNN) por idade — normas do Apple Watch",
+    "sdnnCaption": "Para Apple Watch (SDNN). Baseado em Voss 2015 (ECG de repouso de 5 minutos), mulheres e homens combinados.",
+    "age": "Idade",
+    "p10": "Baixa (p10)",
+    "p25": "Abaixo (p25)",
+    "p50": "Mediana (p50)",
+    "p75": "Acima (p75)",
+    "p90": "Excelente (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Qual é a HRV normal por idade?",
+      "body": "Uma boa HRV é aquela que fica perto ou acima da mediana para a sua idade — e, mais importante, que se mantém estável ou sobe em relação à sua própria linha de base. Para o RMSSD noturno (Oura, Whoop, Garmin, Polar), a mediana é de cerca de 58 ms aos 18–29 anos, 50 ms aos 30, 42 ms aos 40, 36 ms aos 50, 30 ms aos 60 e 26 ms depois dos 70. A metade central típica das pessoas (p25–p75) na faixa dos 30 vai de cerca de 36 a 68 ms, então a variação dentro de uma faixa etária é maior que a diferença entre décadas. Por isso uma comparação isolada com uma tabela diz pouco. A HRV cai com a idade porque o controle vagal do coração enfraquece e os vasos ficam mais rígidos — isso é normal. Condicionamento físico, sono e respiração lenta regular podem desacelerar essa queda. Guia completo: [HRV normal por idade](/articles/normal-hrv-by-age)."
+    },
+    {
+      "h2": "HRV normal no Apple Watch (SDNN)",
+      "body": "O Apple Watch não mostra RMSSD — ele mostra SDNN, outra medida de HRV, então seus números não podem ser comparados com as tabelas do Oura ou do Whoop. No estudo de Voss 2015 com cerca de 1.900 adultos saudáveis (ECG de repouso de 5 minutos), a mediana de SDNN foi de cerca de 46 ms aos 18–34 anos, 42 ms aos 35–44, 34 ms aos 45–54, 29 ms aos 55–64 e 26 ms a partir dos 65. Escolha \"SDNN (Apple Watch)\" acima para ver seu percentil segundo essas normas. Uma ressalva: o Apple Watch faz leituras curtas, de cerca de um minuto, várias vezes ao dia e à noite, então os valores isolados oscilam mais que um registro de laboratório. Use sua média de 7 dias no app Saúde. Se a média ficar bem abaixo do seu nível habitual por vários dias, isso diz mais que qualquer número isolado. Mais: [Por que sua HRV é diferente em cada dispositivo](/articles/hrv-different-every-device)."
+    },
+    {
+      "h2": "Por que minha HRV está baixa?",
+      "body": "Uma leitura baixa normalmente reflete o último dia ou dois, não a sua saúde. As causas mais comuns são álcool (mesmo uma ou duas doses reduzem a HRV noturna), sono curto ou ruim, jantar pesado e tardio, uma doença começando, treino intenso sem recuperação, desidratação e estresse. O dispositivo e a genética também contam: algumas pessoas saudáveis simplesmente têm valores mais baixos. Observe o padrão. Uma noite baixa depois de uma festa significa pouco; uma HRV que fica abaixo da sua faixa habitual por vários dias — principalmente com frequência cardíaca de repouso mais alta — sugere que o corpo está sob mais carga do que consegue absorver. Leia mais: [quanto o álcool reduz a HRV](/articles/how-much-alcohol-lowers-hrv), [o que fazer depois de uma HRV baixa](/articles/what-to-do-after-low-hrv-reading) e [overtraining: HRV e frequência cardíaca de repouso](/articles/overtraining-hrv-resting-heart-rate). Se a HRV baixa vier acompanhada de sintomas como dor no peito, desmaio ou falta de ar, procure um médico."
+    },
+    {
+      "h2": "Como melhorar a HRV",
+      "body": "A HRV sobe quando o corpo se recupera bem, então as alavancas são de recuperação, não truques. As com mais evidência: sono regular em horários consistentes, menos álcool (principalmente nas três horas antes de dormir), treino aeróbico como cardio em Zona 2 e controle do estresse crônico. A respiração lenta, a cerca de seis respirações por minuto, eleva a HRV durante a prática, e a prática regular ao longo de semanas está associada a uma HRV de repouso e uma função barorreflexa melhores. Espere mudanças em semanas, não em dias, e avalie pela média de 7 dias. Guias: [como aumentar a HRV naturalmente](/articles/how-to-raise-hrv-naturally) e [respiração coerente](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "HRV x frequência cardíaca de repouso",
+      "body": "A HRV e a frequência cardíaca de repouso dizem coisas relacionadas, mas diferentes. A frequência cardíaca de repouso é quantas vezes o coração bate por minuto em repouso; a HRV é o quanto o intervalo entre os batimentos varia. HRV mais alta e frequência de repouso mais baixa costumam andar juntas e indicam boa recuperação e condicionamento. Quando você está estressado, doente ou mal recuperado, a frequência de repouso tende a subir e a HRV a cair — muitas vezes ao mesmo tempo, o que é um sinal mais forte que qualquer um dos dois sozinho. A frequência de repouso é mais simples, estável e fácil de comparar entre dispositivos; a HRV reage mais rápido e é mais sensível a sono, álcool e estresse. Acompanhe as duas em relação à sua própria linha de base. Confira a sua: [frequência cardíaca de repouso por idade](/articles/resting-heart-rate-by-age)."
+    }
+  ],
+  "faqTitle": "Calculadora de HRV — perguntas frequentes",
+  "faq": [
+    {
+      "q": "Qual é a HRV normal para a minha idade?",
+      "a": "Para o RMSSD noturno, a mediana é de cerca de 58 ms aos 18–29 anos, 50 ms aos 30–39, 42 ms aos 40–49, 36 ms aos 50–59 e 30 ms aos 60–69. Para o SDNN do Apple Watch, é de cerca de 46 ms aos 18–34, 42 ms aos 35–44, 34 ms aos 45–54 e 29 ms aos 55–64. Sua própria tendência importa mais que a média."
+    },
+    {
+      "q": "Qual é a HRV normal no Apple Watch?",
+      "a": "O Apple Watch mostra SDNN. Em adultos saudáveis, a mediana é de aproximadamente 46 ms aos 18–34 anos, 42 ms aos 35–44, 34 ms aos 45–54, 29 ms aos 55–64 e 26 ms a partir dos 65 (Voss 2015). As leituras são curtas, então use sua média de 7 dias."
+    },
+    {
+      "q": "RMSSD ou SDNN — qual o meu dispositivo mostra?",
+      "a": "Oura, Whoop, Garmin e Polar mostram RMSSD. O Apple Watch mostra SDNN. Escolha a opção correspondente na calculadora — as duas medidas são calculadas de forma diferente e usam tabelas de normas separadas."
+    },
+    {
+      "q": "Por que minha HRV está baixa?",
+      "a": "Geralmente por álcool recente, sono curto ou ruim, doença, treino intenso ou estresse. Uma leitura baixa isolada significa pouco; uma HRV que fica abaixo da sua faixa habitual por vários dias merece atenção."
+    },
+    {
+      "q": "Como melhorar a HRV?",
+      "a": "Durma com regularidade, reduza o álcool (principalmente perto da hora de dormir), faça treino aeróbico como Zona 2, controle o estresse e pratique respiração lenta a cerca de seis respirações por minuto. As mudanças aparecem em semanas, não em dias."
+    },
+    {
+      "q": "HRV baixa é perigoso?",
+      "a": "Um valor baixo isolado não é um evento médico — geralmente reflete sono, álcool ou treino. Uma HRV que se mantém baixa em relação à sua linha de base pode indicar estresse acumulado ou recuperação insuficiente. Esta calculadora é educativa, não um diagnóstico; procure um médico se tiver sintomas."
+    },
+    {
+      "q": "Por que minha HRV muda tanto de um dia para o outro?",
+      "a": "A HRV é sensível a sono, álcool, refeições, estresse, doença e treino. Variações diárias de 10–20 ms são normais, então compare médias semanais em vez de noites isoladas."
+    },
+    {
+      "q": "De onde vêm essas normas de HRV?",
+      "a": "As faixas de RMSSD são derivadas da metanálise de Nunan 2010, da curva por idade de Umetani 1998 e da coorte de Voss 2015, ajustadas para leituras noturnas de wearables. A tabela de SDNN vem diretamente de Voss 2015 (cerca de 1.900 adultos saudáveis). As referências completas estão na seção Fontes."
+    }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodologyRmssd": "As faixas de RMSSD são derivadas, não copiadas de um único conjunto de dados. A maioria dos estudos normativos informa médias ± DP ou medianas por década para registros diurnos curtos. Combinamos esses valores centrais (Nunan 2010), aplicamos a queda década a década (Umetani 1998) e a dispersão por idade/sexo (Voss 2015) e os convertemos em percentis aproximados, considerando a assimetria à direita do RMSSD. A tabela se refere ao RMSSD noturno — o que Oura, Whoop e Garmin medem, quando o tônus parassimpático é mais alto — por isso suas medianas ficam acima do valor diurno combinado de ~42 ms de Nunan 2010.",
+  "methodologySdnn": "A tabela de SDNN vem diretamente de Voss et al. 2015 (cerca de 1.900 adultos saudáveis, ECG de repouso de 5 minutos deitado): combinamos as médias ± DP publicadas por década para mulheres (Tabela 5) e homens (Tabela 7), ponderadas pelo tamanho dos grupos, e as convertemos em percentis com um ajuste log-normal, porque o SDNN tem assimetria à direita. A faixa mais jovem usa os dados de 25–34 anos e a mais velha os de 65–74. O Apple Watch lê o SDNN a partir de amostras curtas (~1 minuto), então os valores isolados oscilam mais que um registro de laboratório — compare sua média semanal.",
+  "embed": {
+    "title": "Incorpore esta calculadora de HRV",
+    "text": "Grátis para incorporar no seu site ou blog — basta colar este código. Ele é renderizado direto na página (sem iframe), não tem dependências, é open source e inclui um link de crédito para a ONDA Life.",
+    "copy": "Copiar código",
+    "copied": "✓ Copiado",
+    "iframeSummary": "Prefere usar iframe?",
+    "copyIframe": "Copiar código do iframe"
+  },
+  "related": {
+    "label": "Relacionados",
+    "normal": "HRV normal por idade",
+    "device": "Por que sua HRV é diferente em cada dispositivo",
+    "raise": "Como aumentar a HRV naturalmente",
+    "rhr": "Frequência cardíaca de repouso por idade",
+    "trackers": "Melhores monitores de HRV (2026)"
+  },
+  "sourcesContributes": [
+    "Valores de referência agregados de RMSSD/SDNN de 44 estudos com adultos saudáveis (RMSSD em repouso agregado ≈ 42 ms) — ancoram a tendência central.",
+    "A clássica curva de declínio com a idade — a HRV no domínio do tempo (incl. RMSSD) cai década a década — define o deslocamento por faixa etária.",
+    "Grande coorte saudável (n ≈ 1.900; ECG de 5 min em decúbito dorsal) com HRV de curto prazo estratificada por idade e sexo. Determina a dispersão do RMSSD (largura p10–p90) e é a fonte direta da tabela de SDNN (Apple Watch): médias por década ± DP para mulheres (Table 5) e homens (Table 7).",
+    "Definições fundamentais de RMSSD/SDNN e padrões de medição que servem de referência à literatura."
+  ]
+}

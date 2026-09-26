@@ -40,7 +40,7 @@ export const HRV_SOURCES: ScienceSource[] = [
     year: 2015,
     title: 'Short-term heart rate variability — influence of gender and age in healthy subjects',
     journal: 'PLoS ONE, 10(3):e0118308',
-    contributes: 'Large healthy cohort (n ≈ 1,900) with age- and sex-stratified short-term HRV — informs the spread (p10–p90 width).',
+    contributes: 'Large healthy cohort (n ≈ 1,900; 5-min supine ECG) with age- and sex-stratified short-term HRV. Informs the RMSSD spread (p10–p90 width) and is the direct source of the SDNN (Apple Watch) table: decade means ± SD for women (Table 5) and men (Table 7).',
     url: 'https://doi.org/10.1371/journal.pone.0118308',
   },
   {
@@ -94,8 +94,9 @@ export interface HrvResult {
   barPct: number
 }
 
-export function bandForAge(age: number): HrvAgeBand {
-  return HRV_AGE_BANDS.find((b) => age >= b.minAge && age <= b.maxAge) ?? HRV_AGE_BANDS[0]
+export function bandForAge(age: number, metric: 'rmssd' | 'sdnn' = 'rmssd'): HrvAgeBand {
+  const bands = metric === 'sdnn' ? SDNN_AGE_BANDS : HRV_AGE_BANDS
+  return bands.find((b) => age >= b.minAge && age <= b.maxAge) ?? bands[0]
 }
 
 /** Piecewise-linear interpolation of a percentile from the 5 anchor points. */
@@ -128,37 +129,27 @@ const TIERS: Array<{ max: number; tier: HrvTier; label: string }> = [
   { max: 100, tier: 'excellent', label: 'Excellent' },
 ]
 
-/** FAQ for the HRV interpreter — rendered on the page AND emitted as
- *  FAQPage JSON-LD by meta-inject (single source of truth, no drift). */
-export const HRV_FAQ: Array<{ q: string; a: string }> = [
-  {
-    q: 'What is a good HRV for my age?',
-    a: 'HRV (RMSSD) declines with age — a healthy median is roughly 58 ms in your 20s, 50 ms in your 30s, 42 ms in your 40s, 36 ms in your 50s and 30 ms in your 60s. But "good" is relative to your own baseline: a value that rises over weeks beats a high one-off reading.',
-  },
-  {
-    q: 'What HRV metric does this use — RMSSD or SDNN?',
-    a: 'RMSSD, the short-term parasympathetic metric most consumer devices (Oura, Whoop, Garmin, Polar) report as overnight or resting "HRV". If your device only shows SDNN or a proprietary 0–100 score, the percentile here will not map directly.',
-  },
-  {
-    q: 'Why does my HRV change so much night to night?',
-    a: 'RMSSD is sensitive: alcohol, late meals, poor or short sleep, illness, dehydration and hard training all suppress it for a night or two. Day-to-day swings of 10–20 ms are normal — read the weekly trend, not single nights.',
-  },
-  {
-    q: 'How do I raise my HRV?',
-    a: 'The levers with the most evidence: consistent sleep timing and duration, Zone-2 cardio, cutting alcohol (especially within 3 hours of bed), slow resonance-frequency breathing (~6 breaths/min), and managing chronic stress load. Improvements show over weeks, not days.',
-  },
-  {
-    q: 'Is low HRV dangerous?',
-    a: 'A single low reading is not a medical event — it usually reflects recent sleep, alcohol or training. Persistently low HRV relative to your own baseline can signal accumulated stress or under-recovery. This tool is educational, not a diagnosis; see a clinician for health concerns.',
-  },
-  {
-    q: 'Where do these HRV reference numbers come from?',
-    a: 'The bands are derived from peer-reviewed normative HRV research — chiefly the Nunan 2010 meta-analysis of 44 healthy-adult studies, the Umetani 1998 nine-decade age-decline data, and the Voss 2015 age/sex cohort (n≈1,900), against the ESC/NASPE 1996 measurement standards. Because the table is keyed to night-time RMSSD (what wearables measure, when parasympathetic tone is highest), the medians sit above the ~42 ms pooled daytime figure in Nunan. Full citations and the derivation method are listed in the Sources section on this page.',
-  },
+/** Methodology for the SDNN (Apple Watch) table. */
+export const SDNN_METHODOLOGY =
+  'The SDNN table comes straight from Voss et al. 2015 (n ≈ 1,900 healthy adults, 5-minute resting ECG lying down): we pooled the published decade means ± SD for women (Table 5) and men (Table 7), weighted by group size, and converted them to percentiles with a log-normal fit, because SDNN is right-skewed. The youngest band uses the 25–34 data and the oldest the 65–74 data. Apple Watch reports SDNN from short (~1 minute) readings taken several times a day and at night, so single values scatter more than a 5-minute lab recording — compare your weekly average, not one reading.'
+
+export type HrvMetric = 'rmssd' | 'sdnn'
+
+/** SDNN (ms) percentiles by age — Voss 2015, pooled women + men, log-normal fit. */
+export const SDNN_AGE_BANDS: HrvAgeBand[] = [
+  { minAge: 18, maxAge: 34, label: '18–34', p10: 28, p25: 35, p50: 46, p75: 60, p90: 76 },
+  { minAge: 35, maxAge: 44, label: '35–44', p10: 25, p25: 32, p50: 42, p75: 54, p90: 69 },
+  { minAge: 45, maxAge: 54, label: '45–54', p10: 21, p25: 27, p50: 34, p75: 44, p90: 55 },
+  { minAge: 55, maxAge: 64, label: '55–64', p10: 17, p25: 22, p50: 29, p75: 39, p90: 50 },
+  { minAge: 65, maxAge: Infinity, label: '65+', p10: 15, p25: 20, p50: 26, p75: 35, p90: 45 },
 ]
 
-export function interpretHrv(age: number, rmssd: number): HrvResult {
-  const band = bandForAge(age)
+export function bandsFor(metric: HrvMetric): HrvAgeBand[] {
+  return metric === 'sdnn' ? SDNN_AGE_BANDS : HRV_AGE_BANDS
+}
+
+export function interpretHrv(age: number, rmssd: number, metric: HrvMetric = 'rmssd'): HrvResult {
+  const band = bandForAge(age, metric)
   const percentile = estimatePercentile(rmssd, band)
   const t = TIERS.find((x) => percentile <= x.max) ?? TIERS[2]
   const summaryByTier: Record<HrvTier, string> = {

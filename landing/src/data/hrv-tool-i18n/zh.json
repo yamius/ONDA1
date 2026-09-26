@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "按年龄计算 HRV — 免费 HRV 正常范围对照表 | ONDA Life",
+    "description": "免费 HRV 计算器：输入年龄和心率变异性（Oura、Whoop、Garmin 的 RMSSD 或 Apple Watch 的 SDNN），查看同龄百分位与 HRV 正常范围。",
+    "appName": "按年龄计算 HRV",
+    "appDescription": "免费计算器：将你的心率变异性（RMSSD 或 Apple Watch 的 SDNN）与已发表的年龄常模对比，给出大致百分位。"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "tools": "工具",
+    "current": "HRV 计算器"
+  },
+  "h1": "按年龄计算 HRV",
+  "capsule": "输入年龄和心率变异性（HRV），即可了解你的数值在同龄人中大致处于什么位置。如果数据来自 Oura、Whoop、Garmin 或 Polar，请选择 RMSSD；如果来自 Apple Watch，请选择 SDNN。常模来自同行评审研究，但比任何百分位都更重要的，是你自己连续数周的 HRV 趋势。",
+  "imageAlt": "按年龄计算 HRV — ONDA Life 免费互动式心率变异性计算器",
+  "metric": {
+    "label": "你的设备显示的是",
+    "rmssd": "RMSSD（Oura、Whoop、Garmin、Polar）",
+    "sdnn": "SDNN（Apple Watch）",
+    "hintRmssd": "Oura：准备度 → HRV 平衡 / 平均 HRV。Whoop：Recovery（恢复）→ HRV。Garmin：HRV 状态（夜间平均值）。Polar：Nightly Recharge 夜间恢复 → HRV。",
+    "hintSdnn": "iPhone“健康”App → 浏览 → 心脏 → 心率变异性。Apple Watch 以 ms（毫秒）显示 SDNN，尽量使用 7 天平均值。"
+  },
+  "age": {
+    "label": "年龄",
+    "placeholder": "例如 34"
+  },
+  "value": {
+    "labelRmssd": "HRV — RMSSD（ms）",
+    "labelSdnn": "HRV — SDNN（ms）",
+    "placeholder": "例如 45"
+  },
+  "result": {
+    "percentile": "约第 {{p}} 百分位",
+    "band": "{{band}} 岁"
+  },
+  "tiers": {
+    "low": "低于同龄水平",
+    "below": "低于平均",
+    "average": "平均水平",
+    "above": "高于平均",
+    "excellent": "优秀"
+  },
+  "summaries": {
+    "low": "{{v}} ms 处于 {{band}} 岁人群的较低区间。睡眠不佳、饮酒、生病或高强度训练后出现一次低值很常见——重要的是你自己数周的趋势，而不是某一晚。",
+    "below": "{{v}} ms 低于 {{band}} 岁人群的典型中位数（约 {{median}} ms）。睡眠、饮酒时间、Zone 2 有氧训练和慢呼吸，是证据最充分的改善手段。",
+    "average": "{{v}} ms 接近 {{band}} 岁人群的中位数（约 {{median}} ms），属于健康、典型的静息 HRV。记录你自己的基线，目标是趋势上升。",
+    "above": "{{v}} ms 高于 {{band}} 岁人群的中位数（约 {{median}} ms），说明恢复能力良好。坚持规律睡眠和充分恢复来保持它。",
+    "excellent": "{{v}} ms 处于 {{band}} 岁人群的最高区间——常见于训练有素、恢复充分的人。"
+  },
+  "sdnnNote": "Apple Watch 每天白天和夜间会多次进行短时测量（约一分钟），因此 SDNN 数值的波动比夜间 RMSSD 更大。请对比 7 天平均值，而不是单次读数。",
+  "invalid": "请输入有效的年龄（18–120）和 HRV 数值（1–300 ms）。",
+  "disclaimer": "仅为科普性估算，不构成医疗建议。百分位为近似值，基于已发表的 HRV 常模研究。与单次读数或人群对比相比，你自己数周的趋势和基线重要得多。HRV 每晚都会随睡眠、饮酒、疾病和训练负荷而变化。",
+  "tables": {
+    "rmssdTitle": "各年龄 HRV（RMSSD）— 夜间常模",
+    "rmssdCaption": "适用于 Oura、Whoop、Garmin 和 Polar（夜间或静息 RMSSD）。",
+    "sdnnTitle": "各年龄 HRV（SDNN）— Apple Watch 常模",
+    "sdnnCaption": "适用于 Apple Watch（SDNN）。数据来自 Voss 2015（5 分钟静息心电图），男女合并。",
+    "age": "年龄",
+    "p10": "偏低（p10）",
+    "p25": "低于平均（p25）",
+    "p50": "中位数（p50）",
+    "p75": "高于平均（p75）",
+    "p90": "优秀（p90）"
+  },
+  "sections": [
+    {
+      "h2": "HRV 正常范围：不同年龄多少算好？",
+      "body": "好的 HRV 是指接近或高于同龄中位数，更重要的是，相对于你自己的基线保持稳定或上升。对于夜间 RMSSD（Oura、Whoop、Garmin、Polar），中位数大约为：18–29 岁 58 ms，30 多岁 50 ms，40 多岁 42 ms，50 多岁 36 ms，60 多岁 30 ms，70 岁以后 26 ms。30 多岁人群中间一半（p25–p75）的范围约为 36 到 68 ms，也就是说，同一年龄段内部的差异比不同年龄段之间的差距还大。因此，仅凭一张对照表做一次比较，说明不了太多。HRV 随年龄下降，是因为迷走神经对心脏的调节减弱、血管变硬——这是正常现象。良好的体能、睡眠和规律的慢呼吸可以减缓这种下降。完整指南：[各年龄 HRV 正常范围](/articles/normal-hrv-by-age)。"
+    },
+    {
+      "h2": "Apple Watch 的 HRV 正常范围（SDNN）",
+      "body": "Apple Watch 不显示 RMSSD，而是显示 SDNN——另一种 HRV 指标，因此它的数值不能和 Oura 或 Whoop 的对照表直接比较。在 Voss 2015 对约 1,900 名健康成年人的研究（5 分钟静息心电图）中，SDNN 中位数约为：18–34 岁 46 ms，35–44 岁 42 ms，45–54 岁 34 ms，55–64 岁 29 ms，65 岁及以上 26 ms。在上方选择“SDNN（Apple Watch）”，即可得到你相对这些常模的百分位。需要注意：Apple Watch 每天白天和夜间多次进行约一分钟的短时测量，所以单次数值比实验室记录更分散。请使用“健康”App 中的 7 天平均值。如果平均值连续几天明显低于你的平常水平，这比任何单个数字都更有参考价值。延伸阅读：[为什么不同设备的 HRV 都不一样](/articles/hrv-different-every-device)。"
+    },
+    {
+      "h2": "HRV 低是什么原因？",
+      "body": "一次低读数通常反映的是最近一两天的状态，而不是你的健康状况。最常见的原因有：饮酒（哪怕一两杯也会降低夜间 HRV）、睡眠不足或质量差、睡前吃得太晚太多、即将生病、高强度训练后恢复不够、脱水以及压力。设备和遗传也有影响：有些健康的人 HRV 天生就偏低。关键看规律。聚会后某一晚偏低说明不了什么；如果 HRV 连续几天低于你的平常范围——尤其伴随静息心率升高——说明身体承受的负荷超过了它的恢复能力。延伸阅读：[饮酒会让 HRV 下降多少](/articles/how-much-alcohol-lowers-hrv)、[HRV 读数偏低后该怎么做](/articles/what-to-do-after-low-hrv-reading)以及[过度训练：HRV 与静息心率](/articles/overtraining-hrv-resting-heart-rate)。如果 HRV 低的同时出现胸痛、晕厥或呼吸困难等症状，请及时就医。"
+    },
+    {
+      "h2": "如何提高 HRV？",
+      "body": "身体恢复得好，HRV 就会上升，所以要从恢复入手，而不是找捷径。证据最充分的方法：固定时间规律睡眠、减少饮酒（尤其是睡前三小时内）、Zone 2 等有氧训练，以及管理长期压力。以每分钟约六次的频率慢呼吸，练习时 HRV 会上升；坚持数周的规律练习，与更好的静息 HRV 和压力感受性反射功能相关。变化以周为单位，而不是以天为单位，请用 7 天平均值来判断。指南：[如何自然提高 HRV](/articles/how-to-raise-hrv-naturally) 和 [共振呼吸法](/articles/coherent-breathing-guide)。"
+    },
+    {
+      "h2": "HRV 和静息心率有什么区别？",
+      "body": "HRV 和静息心率反映的信息相关但不同。静息心率是安静时每分钟心跳的次数；HRV 是心跳之间间隔时间的变化程度。HRV 较高、静息心率较低通常同时出现，说明恢复和体能状况良好。当你处于压力、生病或恢复不足时，静息心率往往上升、HRV 下降——两者常常同时发生，这比单看任何一个指标都更有说服力。静息心率更简单、更稳定，也更便于跨设备比较；HRV 反应更快，对睡眠、饮酒和压力更敏感。请对照你自己的基线同时追踪两者。查看你的数值：[各年龄静息心率](/articles/resting-heart-rate-by-age)。"
+    }
+  ],
+  "faqTitle": "HRV 计算器常见问题",
+  "faq": [
+    {
+      "q": "HRV 正常范围是多少？不同年龄多少算好？",
+      "a": "夜间 RMSSD 的中位数约为：18–29 岁 58 ms，30–39 岁 50 ms，40–49 岁 42 ms，50–59 岁 36 ms，60–69 岁 30 ms。Apple Watch SDNN 约为：18–34 岁 46 ms，35–44 岁 42 ms，45–54 岁 34 ms，55–64 岁 29 ms。你自己的趋势比平均值更重要。"
+    },
+    {
+      "q": "Apple Watch 的 HRV 多少算正常？",
+      "a": "Apple Watch 显示的是 SDNN。健康成年人的中位数大约为：18–34 岁 46 ms，35–44 岁 42 ms，45–54 岁 34 ms，55–64 岁 29 ms，65 岁及以上 26 ms（Voss 2015）。由于是短时测量，请使用 7 天平均值。"
+    },
+    {
+      "q": "RMSSD 还是 SDNN？我的设备显示的是哪一个？",
+      "a": "Oura、Whoop、Garmin 和 Polar 显示 RMSSD，Apple Watch 显示 SDNN。请在计算器中选择对应选项——两者测量方式不同，使用各自独立的常模表。"
+    },
+    {
+      "q": "HRV 低是什么原因？",
+      "a": "通常是因为最近饮酒、睡眠不足或质量差、生病、高强度训练或压力。单次低读数说明不了什么；如果 HRV 连续几天低于你的平常范围，就值得关注。"
+    },
+    {
+      "q": "如何提高 HRV？",
+      "a": "规律睡眠、减少饮酒（尤其是临睡前）、进行 Zone 2 等有氧训练、管理压力，并以每分钟约六次的频率练习慢呼吸。变化需要数周而不是几天才能显现。"
+    },
+    {
+      "q": "HRV 低危险吗？",
+      "a": "单次低值并不是医疗事件——通常反映的是睡眠、饮酒或训练。如果相对于你自己的基线持续偏低，可能提示压力累积或恢复不足。本计算器仅供科普，不能用于诊断；如有症状请就医。"
+    },
+    {
+      "q": "为什么我的 HRV 每天变化这么大？",
+      "a": "HRV 对睡眠、饮酒、饮食、压力、疾病和训练都很敏感。每天 10–20 ms 的波动属于正常，所以请比较每周平均值，而不是单晚数据。"
+    },
+    {
+      "q": "这些 HRV 常模数据来自哪里？",
+      "a": "RMSSD 区间基于 Nunan 2010 荟萃分析、Umetani 1998 年龄曲线和 Voss 2015 队列推导，并针对可穿戴设备的夜间读数做了调整。SDNN 表直接来自 Voss 2015（约 1,900 名健康成年人）。完整引用见“来源与方法”部分。"
+    }
+  ],
+  "sourcesTitle": "来源与方法",
+  "methodologyRmssd": "RMSSD 区间是推导而来，并非照搬单一数据集。大多数常模研究报告的是白天短时记录按年龄段的均值 ± 标准差或中位数。我们综合了这些中心值（Nunan 2010），套用逐个年龄段的下降幅度（Umetani 1998）以及年龄/性别离散度（Voss 2015），再考虑 RMSSD 的右偏分布，换算成近似百分位。该表对应的是夜间 RMSSD——即 Oura、Whoop 和 Garmin 在副交感神经张力最高时测得的数值——因此其中位数高于 Nunan 2010 中白天合并数据约 42 ms 的水平。",
+  "methodologySdnn": "SDNN 表直接来自 Voss 等人 2015 年的研究（约 1,900 名健康成年人，仰卧 5 分钟静息心电图）：我们将已发表的女性（表 5）和男性（表 7）各年龄段均值 ± 标准差按样本量加权合并，并因 SDNN 呈右偏分布而采用对数正态拟合换算成百分位。最年轻的区间使用 25–34 岁数据，最年长的区间使用 65–74 岁数据。Apple Watch 基于短时（约 1 分钟）样本读取 SDNN，因此单次数值比实验室记录更分散——请比较每周平均值。",
+  "embed": {
+    "title": "嵌入这个 HRV 计算器",
+    "text": "可免费嵌入你的网站或博客——粘贴这段代码即可。它以内联方式渲染（无需 iframe），无依赖、开源，并附带指向 ONDA Life 的署名链接。",
+    "copy": "复制嵌入代码",
+    "copied": "✓ 已复制",
+    "iframeSummary": "更想用 iframe？",
+    "copyIframe": "复制 iframe 代码"
+  },
+  "related": {
+    "label": "相关内容",
+    "normal": "各年龄 HRV 正常范围",
+    "device": "为什么不同设备的 HRV 都不一样",
+    "raise": "如何自然提高 HRV",
+    "rhr": "各年龄静息心率",
+    "trackers": "最佳 HRV 追踪设备（2026）"
+  },
+  "sourcesContributes": [
+    "汇总 44 项健康成人研究的 RMSSD/SDNN 参考值（汇总静息 RMSSD ≈ 42 ms）——确定集中趋势。",
+    "经典的年龄下降曲线——时域 HRV（含 RMSSD）逐个十年下降——决定各年龄段的偏移。",
+    "大型健康队列（n ≈ 1,900；5 分钟仰卧心电图），按年龄和性别分层的短时 HRV。用于确定 RMSSD 的离散度（p10–p90 宽度），并且是 SDNN（Apple Watch）表格的直接来源：女性（Table 5）和男性（Table 7）各十年龄段均值 ± SD。",
+    "RMSSD/SDNN 的基础定义及文献所依据的测量标准。"
+  ]
+}

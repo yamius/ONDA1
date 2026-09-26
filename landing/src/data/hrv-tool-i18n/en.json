@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "HRV Calculator by Age — Free HRV Chart & Norms | ONDA Life",
+    "description": "Free HRV calculator: enter your age and HRV (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch) to see your percentile for your age, plus HRV norms charts.",
+    "appName": "HRV Calculator by Age",
+    "appDescription": "Free calculator that compares your heart rate variability (RMSSD or Apple Watch SDNN) with published age norms and returns an approximate percentile."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "HRV Calculator"
+  },
+  "h1": "HRV Calculator by Age",
+  "capsule": "Enter your age and your heart rate variability (HRV) to see roughly where it sits for people your age. Use RMSSD if your number comes from Oura, Whoop, Garmin or Polar, and SDNN if it comes from Apple Watch. Norms come from peer-reviewed studies, but your own multi-week trend matters more than any percentile.",
+  "imageAlt": "HRV Calculator by Age — free interactive heart rate variability calculator from ONDA Life",
+  "metric": {
+    "label": "Your device reports",
+    "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
+    "sdnn": "SDNN (Apple Watch)",
+    "hintRmssd": "Oura: Readiness → HRV balance / average HRV. Whoop: Recovery → HRV. Garmin: HRV Status (overnight average). Polar: Nightly Recharge → HRV.",
+    "hintSdnn": "iPhone Health app → Browse → Heart → Heart Rate Variability. Apple Watch shows SDNN in ms — use your 7-day average if you can."
+  },
+  "age": {
+    "label": "Age",
+    "placeholder": "e.g. 34"
+  },
+  "value": {
+    "labelRmssd": "HRV — RMSSD (ms)",
+    "labelSdnn": "HRV — SDNN (ms)",
+    "placeholder": "e.g. 45"
+  },
+  "result": {
+    "percentile": "~{{p}} percentile",
+    "band": "age {{band}}"
+  },
+  "tiers": {
+    "low": "Low for your age",
+    "below": "Below average",
+    "average": "Average",
+    "above": "Above average",
+    "excellent": "Excellent"
+  },
+  "summaries": {
+    "low": "At {{v}} ms you sit in the lower range for ages {{band}}. A single low reading is common after poor sleep, alcohol, illness or hard training — what matters is your own trend over weeks, not one night.",
+    "below": "{{v}} ms is below the typical median (~{{median}} ms) for ages {{band}}. Sleep, alcohol timing, Zone 2 cardio and slow breathing are the levers with the most evidence behind them.",
+    "average": "{{v}} ms is around the median (~{{median}} ms) for ages {{band}} — a healthy, typical resting HRV. Track your own baseline; a rising trend is the goal.",
+    "above": "{{v}} ms is above the median (~{{median}} ms) for ages {{band}} — a good sign of recovery capacity. Protect it with consistent sleep and recovery.",
+    "excellent": "{{v}} ms is in the top range for ages {{band}} — the kind of HRV often seen in well-trained, well-recovered people."
+  },
+  "sdnnNote": "Apple Watch takes short readings (about a minute) several times a day and at night, so its SDNN values jump around more than an overnight RMSSD. Compare your 7-day average, not a single reading.",
+  "invalid": "Enter a valid age (18–120) and HRV in ms (1–300).",
+  "disclaimer": "Educational estimate, not medical advice. Percentiles are approximate and built from published normative HRV studies. Your own multi-week trend and baseline matter far more than a single reading or a population comparison. HRV varies night to night with sleep, alcohol, illness and training load.",
+  "tables": {
+    "rmssdTitle": "HRV (RMSSD) by age — overnight norms",
+    "rmssdCaption": "For Oura, Whoop, Garmin and Polar (overnight or resting RMSSD).",
+    "sdnnTitle": "HRV (SDNN) by age — Apple Watch norms",
+    "sdnnCaption": "For Apple Watch (SDNN). From Voss 2015 (5-minute resting ECG), women and men pooled.",
+    "age": "Age",
+    "p10": "Low (p10)",
+    "p25": "Below (p25)",
+    "p50": "Median (p50)",
+    "p75": "Above (p75)",
+    "p90": "Excellent (p90)"
+  },
+  "sections": [
+    {
+      "h2": "What is a good HRV for my age?",
+      "body": "A good HRV is one that sits around or above the median for your age — and, more importantly, one that holds steady or rises against your own baseline. For overnight RMSSD (Oura, Whoop, Garmin, Polar) the median is about 58 ms at 18–29, 50 ms in your 30s, 42 ms in your 40s, 36 ms in your 50s, 30 ms in your 60s and 26 ms after 70. The typical middle half of people (p25–p75) in your 30s runs from about 36 to 68 ms, so the spread within one age group is wider than the gap between decades. That's why a single comparison with a chart says little on its own. HRV drops with age because vagal control of the heart weakens and blood vessels stiffen — this is normal. Fitness, sleep and regular slow breathing can slow the decline. See the full guide: [Normal HRV by age](/articles/normal-hrv-by-age)."
+    },
+    {
+      "h2": "Normal HRV for Apple Watch (SDNN)",
+      "body": "Apple Watch doesn't report RMSSD — it shows SDNN, a different HRV measure, so its numbers can't be compared with Oura or Whoop charts. In the Voss 2015 study of about 1,900 healthy adults (5-minute resting ECG), the median SDNN was about 46 ms at 18–34, 42 ms at 35–44, 34 ms at 45–54, 29 ms at 55–64 and 26 ms from 65. Choose \"SDNN (Apple Watch)\" above to get your percentile against these norms. One caveat: Apple Watch takes short readings of about a minute several times a day and at night, so single values scatter more than a lab recording. Use your 7-day average in the Health app. If your average drifts well below your usual level for several days, that's more informative than any one number. More: [Why your HRV differs on every device](/articles/hrv-different-every-device)."
+    },
+    {
+      "h2": "Why is my HRV low?",
+      "body": "A low reading is usually about the last day or two, not your health. The most common causes are alcohol (even one or two drinks lower overnight HRV), short or poor sleep, a late heavy meal, illness coming on, hard training without recovery, dehydration and stress. Your device and genetics also matter: some healthy people simply run lower. Look at the pattern. One low night after a party means little; HRV that stays below your usual range for several days — especially with a higher resting heart rate — suggests your body is under more load than it's handling. Read more: [how much alcohol lowers HRV](/articles/how-much-alcohol-lowers-hrv), [what to do after a low HRV reading](/articles/what-to-do-after-low-hrv-reading) and [overtraining: HRV and resting heart rate](/articles/overtraining-hrv-resting-heart-rate). If a low HRV comes with symptoms such as chest pain, fainting or breathlessness, see a doctor."
+    },
+    {
+      "h2": "How to raise HRV",
+      "body": "HRV rises when your body recovers well, so the levers are about recovery, not hacks. The ones with the most evidence: regular sleep at consistent times, less alcohol (especially in the three hours before bed), aerobic training such as Zone 2 cardio, and managing chronic stress. Slow breathing at about six breaths a minute raises HRV while you practise it, and regular practice over weeks is linked to better resting HRV and baroreflex function. Expect change over weeks, not days, and judge it by your 7-day average. Guides: [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally) and [coherent breathing](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "HRV vs resting heart rate",
+      "body": "HRV and resting heart rate tell you related but different things. Resting heart rate is how many times your heart beats per minute at rest; HRV is how much the time between beats varies. A higher HRV and a lower resting heart rate usually go together and point to good recovery and fitness. When you're stressed, ill or under-recovered, resting heart rate tends to rise and HRV to fall — often at the same time, which is a stronger signal than either alone. Resting heart rate is simpler, steadier and easier to compare between devices; HRV reacts faster and is more sensitive to sleep, alcohol and stress. Track both against your own baseline. Check yours: [resting heart rate by age](/articles/resting-heart-rate-by-age)."
+    }
+  ],
+  "faqTitle": "HRV calculator — common questions",
+  "faq": [
+    {
+      "q": "What is a good HRV for my age?",
+      "a": "For overnight RMSSD the median is about 58 ms at 18–29, 50 ms at 30–39, 42 ms at 40–49, 36 ms at 50–59 and 30 ms at 60–69. For Apple Watch SDNN it is about 46 ms at 18–34, 42 ms at 35–44, 34 ms at 45–54 and 29 ms at 55–64. Your own trend matters more than the average."
+    },
+    {
+      "q": "What is a normal HRV on Apple Watch?",
+      "a": "Apple Watch shows SDNN. In healthy adults the median is roughly 46 ms at 18–34, 42 ms at 35–44, 34 ms at 45–54, 29 ms at 55–64 and 26 ms from 65 (Voss 2015). Readings are short, so use your 7-day average."
+    },
+    {
+      "q": "RMSSD or SDNN — which one does my device show?",
+      "a": "Oura, Whoop, Garmin and Polar report RMSSD. Apple Watch reports SDNN. Pick the matching option in the calculator — the two are measured differently and use separate norm tables."
+    },
+    {
+      "q": "Why is my HRV low?",
+      "a": "Usually because of recent alcohol, short or poor sleep, illness, hard training or stress. A single low reading means little; HRV that stays below your usual range for several days is worth attention."
+    },
+    {
+      "q": "How do I raise my HRV?",
+      "a": "Sleep regularly, cut alcohol (especially near bedtime), do aerobic training such as Zone 2, manage stress and practise slow breathing at about six breaths a minute. Changes show over weeks, not days."
+    },
+    {
+      "q": "Is low HRV dangerous?",
+      "a": "A single low value is not a medical event — it usually reflects sleep, alcohol or training. HRV that stays low against your own baseline can signal accumulated stress or under-recovery. This calculator is educational, not a diagnosis; see a doctor for symptoms."
+    },
+    {
+      "q": "Why does my HRV change so much from day to day?",
+      "a": "HRV is sensitive to sleep, alcohol, meals, stress, illness and training. Day-to-day swings of 10–20 ms are normal, so compare weekly averages rather than single nights."
+    },
+    {
+      "q": "Where do these HRV norms come from?",
+      "a": "RMSSD bands are derived from the Nunan 2010 meta-analysis, the Umetani 1998 age curve and the Voss 2015 cohort, adjusted for overnight wearable readings. The SDNN table comes directly from Voss 2015 (about 1,900 healthy adults). Full citations are in the Sources section."
+    }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodologyRmssd": "RMSSD bands are derived, not copied from a single dataset. Most normative studies report means ± SD or medians by decade for short daytime recordings. We combined those central values (Nunan 2010), applied the decade-by-decade decline (Umetani 1998) and the age/sex spread (Voss 2015), then converted them to approximate percentiles allowing for the right-skew of RMSSD. The table is keyed to overnight RMSSD — what Oura, Whoop and Garmin measure, when parasympathetic tone is highest — which is why its medians sit above the ~42 ms pooled daytime figure in Nunan 2010.",
+  "methodologySdnn": "The SDNN table comes straight from Voss et al. 2015 (about 1,900 healthy adults, 5-minute resting ECG lying down): we pooled the published decade means ± SD for women (Table 5) and men (Table 7), weighted by group size, and converted them to percentiles with a log-normal fit, because SDNN is right-skewed. The youngest band uses the 25–34 data and the oldest the 65–74 data. Apple Watch reads SDNN from short (~1 minute) samples, so single values scatter more than a lab recording — compare your weekly average.",
+  "embed": {
+    "title": "Embed this HRV calculator",
+    "text": "Free to embed on your site or blog — drop in this snippet. It renders inline (no iframe), is dependency-free and open source, and includes a credit link to ONDA Life.",
+    "copy": "Copy embed code",
+    "copied": "✓ Copied",
+    "iframeSummary": "Prefer an iframe instead?",
+    "copyIframe": "Copy iframe code"
+  },
+  "related": {
+    "label": "Related",
+    "normal": "Normal HRV by age",
+    "device": "Why your HRV differs on every device",
+    "raise": "How to raise HRV naturally",
+    "rhr": "Resting heart rate by age",
+    "trackers": "Best HRV trackers (2026)"
+  },
+  "sourcesContributes": [
+    "Pooled reference RMSSD/SDNN values across 44 studies of healthy adults (pooled resting RMSSD ≈ 42 ms) — anchors the central tendency.",
+    "The classic age-decline curve — time-domain HRV (incl. RMSSD) falling decade by decade — shapes the per-band shift.",
+    "Large healthy cohort (n ≈ 1,900; 5-min supine ECG) with age- and sex-stratified short-term HRV. Informs the RMSSD spread (p10–p90 width) and is the direct source of the SDNN (Apple Watch) table: decade means ± SD for women (Table 5) and men (Table 7).",
+    "Foundational definitions of RMSSD/SDNN and measurement standards the literature reports against."
+  ]
+}

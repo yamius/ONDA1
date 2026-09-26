@@ -176,10 +176,14 @@ const NON_LOCALIZED_PREFIXES = [
  * through this, otherwise a bare "/articles/x" silently drops a /ru/ user
  * back to the English version of the site.
  */
+/** Single tool pages published in EVERY language (not just the ru/es pilot). */
+export const ALL_LANG_PAGES: readonly string[] = ['/tools/hrv']
+
 export function langHref(path: string, lang: Lang): string {
   if (lang === 'en' || !path.startsWith('/')) return path
   const parts = path.split('/').filter(Boolean)
   if (isLang(parts[0])) return path
+  if (ALL_LANG_PAGES.includes(path)) return `/${lang}${path}`
   if (NON_LOCALIZED_PREFIXES.some((p) => path === p || path.startsWith(p + '/'))) return path
   if (ARTICLES_ONLY_LANGS.includes(lang) && parts[0] !== 'articles') return path
   // Partial-localized content (articles, glossary): the localized pages are
@@ -272,6 +276,8 @@ export function stripLangPrefix(pathname: string): string {
  */
 export function localizedPathFor(pathname: string, lang: Lang): string {
   const basePath = stripLangPrefix(pathname)
+
+  if (ALL_LANG_PAGES.includes(basePath)) return lang === 'en' ? basePath : `/${lang}${basePath}`
 
   // Metric detail page: preserve the metric slug across language switches.
   const metricMatch = basePath.match(/^\/bio\/([^/]+)$/)

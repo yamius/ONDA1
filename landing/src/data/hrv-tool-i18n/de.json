@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "title": "HRV-Rechner nach Alter — Normwerte & Tabelle | ONDA Life",
+    "description": "Kostenloser HRV-Rechner: Alter und HRV (RMSSD von Oura, Whoop, Garmin oder SDNN der Apple Watch) eingeben, Perzentil sehen – plus HRV-Normwerte nach Alter.",
+    "appName": "HRV-Rechner nach Alter",
+    "appDescription": "Kostenloser Rechner, der deine Herzratenvariabilität (RMSSD oder Apple-Watch-SDNN) mit veröffentlichten Altersnormen vergleicht und ein ungefähres Perzentil ausgibt."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "tools": "Tools",
+    "current": "HRV-Rechner"
+  },
+  "h1": "HRV-Rechner nach Alter",
+  "capsule": "Gib dein Alter und deine Herzratenvariabilität (HRV) ein und sieh, wo dein Wert im Vergleich zu Gleichaltrigen ungefähr liegt. Nutze RMSSD, wenn deine HRV von Oura, Whoop, Garmin oder Polar stammt, und SDNN, wenn sie von der Apple Watch kommt. Die Normwerte stammen aus Fachstudien – doch dein eigener Trend über mehrere Wochen zählt mehr als jedes Perzentil.",
+  "imageAlt": "HRV-Rechner nach Alter — kostenloser interaktiver Rechner für die Herzratenvariabilität von ONDA Life",
+  "metric": {
+    "label": "Dein Gerät zeigt",
+    "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
+    "sdnn": "SDNN (Apple Watch)",
+    "hintRmssd": "Oura: Bereitschaft → HRV-Balance / durchschnittliche HRV. Whoop: Recovery → HRV. Garmin: HRV-Status (Durchschnitt über Nacht). Polar: Nightly Recharge → HRV.",
+    "hintSdnn": "iPhone-App „Health“ → Entdecken → Herz → Herzfrequenzvariabilität. Die Apple Watch zeigt SDNN in ms – nimm wenn möglich deinen 7-Tage-Durchschnitt."
+  },
+  "age": {
+    "label": "Alter",
+    "placeholder": "z. B. 34"
+  },
+  "value": {
+    "labelRmssd": "HRV — RMSSD (ms)",
+    "labelSdnn": "HRV — SDNN (ms)",
+    "placeholder": "z. B. 45"
+  },
+  "result": {
+    "percentile": "≈ {{p}}. Perzentil",
+    "band": "Alter {{band}}"
+  },
+  "tiers": {
+    "low": "Niedrig für dein Alter",
+    "below": "Unterdurchschnittlich",
+    "average": "Durchschnittlich",
+    "above": "Überdurchschnittlich",
+    "excellent": "Ausgezeichnet"
+  },
+  "summaries": {
+    "low": "Mit {{v}} ms liegst du im unteren Bereich für das Alter {{band}}. Ein einzelner niedriger Wert ist nach schlechtem Schlaf, Alkohol, Krankheit oder hartem Training normal – entscheidend ist dein eigener Trend über Wochen, nicht eine Nacht.",
+    "below": "{{v}} ms liegt unter dem typischen Median (~{{median}} ms) für das Alter {{band}}. Schlaf, der Zeitpunkt von Alkohol, Zone-2-Ausdauertraining und langsames Atmen sind die Hebel mit der besten Studienlage.",
+    "average": "{{v}} ms liegt etwa beim Median (~{{median}} ms) für das Alter {{band}} – eine gesunde, typische Ruhe-HRV. Verfolge deinen eigenen Ausgangswert; ein steigender Trend ist das Ziel.",
+    "above": "{{v}} ms liegt über dem Median (~{{median}} ms) für das Alter {{band}} – ein gutes Zeichen für deine Erholungsfähigkeit. Schütze ihn mit regelmäßigem Schlaf und ausreichend Erholung.",
+    "excellent": "{{v}} ms liegt im Spitzenbereich für das Alter {{band}} – eine HRV, wie man sie oft bei gut trainierten, gut erholten Menschen sieht."
+  },
+  "sdnnNote": "Die Apple Watch misst mehrmals am Tag und in der Nacht nur kurz (etwa eine Minute), daher schwanken ihre SDNN-Werte stärker als eine nächtliche RMSSD. Vergleiche deinen 7-Tage-Durchschnitt, nicht einen einzelnen Messwert.",
+  "invalid": "Gib ein gültiges Alter (18–120) und eine HRV in ms (1–300) ein.",
+  "disclaimer": "Schätzung zu Bildungszwecken, keine medizinische Beratung. Die Perzentile sind Näherungswerte auf Basis veröffentlichter HRV-Normstudien. Dein eigener Trend über mehrere Wochen und dein Ausgangswert sind viel aussagekräftiger als ein einzelner Messwert oder ein Vergleich mit der Bevölkerung. Die HRV schwankt von Nacht zu Nacht je nach Schlaf, Alkohol, Krankheit und Trainingsbelastung.",
+  "tables": {
+    "rmssdTitle": "HRV (RMSSD) nach Alter — Normwerte über Nacht",
+    "rmssdCaption": "Für Oura, Whoop, Garmin und Polar (RMSSD über Nacht oder in Ruhe).",
+    "sdnnTitle": "HRV (SDNN) nach Alter — Normwerte für die Apple Watch",
+    "sdnnCaption": "Für die Apple Watch (SDNN). Nach Voss 2015 (5-Minuten-Ruhe-EKG), Frauen und Männer zusammengefasst.",
+    "age": "Alter",
+    "p10": "Niedrig (p10)",
+    "p25": "Unter Ø (p25)",
+    "p50": "Median (p50)",
+    "p75": "Über Ø (p75)",
+    "p90": "Ausgezeichnet (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Welche HRV ist gut für mein Alter? HRV-Normalwerte nach Alter",
+      "body": "Eine gute HRV liegt etwa beim Median deines Alters oder darüber – und, noch wichtiger, sie bleibt im Vergleich zu deinem eigenen Ausgangswert stabil oder steigt. Für die nächtliche RMSSD (Oura, Whoop, Garmin, Polar) liegt der Median bei etwa 58 ms mit 18–29, 50 ms in den 30ern, 42 ms in den 40ern, 36 ms in den 50ern, 30 ms in den 60ern und 26 ms ab 70. Die mittlere Hälfte der Menschen (p25–p75) in den 30ern reicht von etwa 36 bis 68 ms – die Streuung innerhalb einer Altersgruppe ist also größer als der Abstand zwischen den Jahrzehnten. Deshalb sagt ein einzelner Vergleich mit einer Tabelle für sich allein wenig aus. Die HRV sinkt mit dem Alter, weil die vagale Steuerung des Herzens nachlässt und die Gefäße steifer werden – das ist normal. Fitness, Schlaf und regelmäßiges langsames Atmen können den Rückgang bremsen. Zum ausführlichen Ratgeber: [Normale HRV nach Alter](/articles/normal-hrv-by-age)."
+    },
+    {
+      "h2": "Normale HRV bei der Apple Watch (SDNN)",
+      "body": "Die Apple Watch gibt keine RMSSD aus, sondern SDNN – ein anderes HRV-Maß. Ihre Werte lassen sich daher nicht mit Oura- oder Whoop-Tabellen vergleichen. In der Studie von Voss 2015 mit rund 1.900 gesunden Erwachsenen (5-Minuten-Ruhe-EKG) lag der SDNN-Median bei etwa 46 ms mit 18–34, 42 ms mit 35–44, 34 ms mit 45–54, 29 ms mit 55–64 und 26 ms ab 65. Wähle oben „SDNN (Apple Watch)“, um dein Perzentil im Vergleich zu diesen Normwerten zu sehen. Ein Hinweis: Die Apple Watch misst mehrmals am Tag und in der Nacht jeweils nur etwa eine Minute, daher streuen einzelne Werte stärker als eine Labormessung. Nutze deinen 7-Tage-Durchschnitt in der Health-App. Sinkt dein Durchschnitt mehrere Tage lang deutlich unter dein übliches Niveau, sagt das mehr aus als jede einzelne Zahl. Mehr dazu: [Warum deine HRV auf jedem Gerät anders ist](/articles/hrv-different-every-device)."
+    },
+    {
+      "h2": "Warum ist meine HRV niedrig?",
+      "body": "Ein niedriger Wert sagt meist etwas über die letzten ein, zwei Tage aus – nicht über deine Gesundheit. Die häufigsten Ursachen sind Alkohol (schon ein bis zwei Drinks senken die nächtliche HRV), zu kurzer oder schlechter Schlaf, eine späte schwere Mahlzeit, ein beginnender Infekt, hartes Training ohne Erholung, Flüssigkeitsmangel und Stress. Auch dein Gerät und deine Gene spielen eine Rolle: Manche gesunden Menschen haben einfach niedrigere Werte. Achte auf das Muster. Eine niedrige Nacht nach einer Party bedeutet wenig; bleibt die HRV aber mehrere Tage unter deinem üblichen Bereich – besonders zusammen mit einem höheren Ruhepuls –, ist dein Körper stärker belastet, als er gerade verkraftet. Weiterlesen: [Wie stark Alkohol die HRV senkt](/articles/how-much-alcohol-lowers-hrv), [Was tun nach einem niedrigen HRV-Wert](/articles/what-to-do-after-low-hrv-reading) und [Übertraining: HRV und Ruhepuls](/articles/overtraining-hrv-resting-heart-rate). Treten zusammen mit einer niedrigen HRV Beschwerden wie Brustschmerzen, Ohnmacht oder Atemnot auf, geh zum Arzt."
+    },
+    {
+      "h2": "HRV verbessern: So steigerst du deine HRV",
+      "body": "Die HRV steigt, wenn sich dein Körper gut erholt – die Hebel sind also Erholung, keine Hacks. Am besten belegt sind: regelmäßiger Schlaf zu festen Zeiten, weniger Alkohol (vor allem in den drei Stunden vor dem Schlafengehen), Ausdauertraining wie Zone-2-Cardio und der Umgang mit chronischem Stress. Langsames Atmen mit etwa sechs Atemzügen pro Minute erhöht die HRV während der Übung, und regelmäßiges Üben über Wochen hängt mit einer besseren Ruhe-HRV und Baroreflexfunktion zusammen. Rechne mit Veränderungen über Wochen, nicht Tage, und beurteile sie anhand deines 7-Tage-Durchschnitts. Ratgeber: [HRV natürlich steigern](/articles/how-to-raise-hrv-naturally) und [Kohärentes Atmen](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "HRV vs. Ruhepuls",
+      "body": "HRV und Ruhepuls sagen Verwandtes, aber Unterschiedliches aus. Der Ruhepuls gibt an, wie oft dein Herz pro Minute in Ruhe schlägt; die HRV, wie stark der Abstand zwischen den Schlägen schwankt. Eine höhere HRV und ein niedrigerer Ruhepuls gehen meist Hand in Hand und sprechen für gute Erholung und Fitness. Bei Stress, Krankheit oder mangelnder Erholung steigt der Ruhepuls tendenziell und die HRV sinkt – oft gleichzeitig, was ein stärkeres Signal ist als jeder Wert allein. Der Ruhepuls ist einfacher, stabiler und besser zwischen Geräten vergleichbar; die HRV reagiert schneller und empfindlicher auf Schlaf, Alkohol und Stress. Verfolge beide im Vergleich zu deinem eigenen Ausgangswert. Prüfe deinen Wert: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
+    }
+  ],
+  "faqTitle": "HRV-Rechner — häufige Fragen",
+  "faq": [
+    {
+      "q": "Was ist eine gute HRV für mein Alter?",
+      "a": "Für die nächtliche RMSSD liegt der Median bei etwa 58 ms mit 18–29, 50 ms mit 30–39, 42 ms mit 40–49, 36 ms mit 50–59 und 30 ms mit 60–69. Für die SDNN der Apple Watch sind es etwa 46 ms mit 18–34, 42 ms mit 35–44, 34 ms mit 45–54 und 29 ms mit 55–64. Dein eigener Trend zählt mehr als der Durchschnitt."
+    },
+    {
+      "q": "Was ist eine normale HRV bei der Apple Watch?",
+      "a": "Die Apple Watch zeigt SDNN. Bei gesunden Erwachsenen liegt der Median bei etwa 46 ms mit 18–34, 42 ms mit 35–44, 34 ms mit 45–54, 29 ms mit 55–64 und 26 ms ab 65 (Voss 2015). Die Messungen sind kurz, nutze daher deinen 7-Tage-Durchschnitt."
+    },
+    {
+      "q": "RMSSD oder SDNN – was zeigt mein Gerät an?",
+      "a": "Oura, Whoop, Garmin und Polar geben RMSSD aus, die Apple Watch SDNN. Wähle im Rechner die passende Option – beide Werte werden unterschiedlich gemessen und haben eigene Normtabellen."
+    },
+    {
+      "q": "Warum ist meine HRV niedrig?",
+      "a": "Meist wegen Alkohol, zu kurzem oder schlechtem Schlaf, Krankheit, hartem Training oder Stress in den letzten Tagen. Ein einzelner niedriger Wert bedeutet wenig; bleibt die HRV mehrere Tage unter deinem üblichen Bereich, lohnt sich ein genauerer Blick."
+    },
+    {
+      "q": "Wie kann ich meine HRV verbessern?",
+      "a": "Schlaf regelmäßig, reduziere Alkohol (vor allem vor dem Schlafengehen), mach Ausdauertraining wie Zone 2, geh bewusst mit Stress um und übe langsames Atmen mit etwa sechs Atemzügen pro Minute. Veränderungen zeigen sich über Wochen, nicht Tage."
+    },
+    {
+      "q": "Ist eine niedrige HRV gefährlich?",
+      "a": "Ein einzelner niedriger Wert ist kein medizinisches Ereignis – er spiegelt meist Schlaf, Alkohol oder Training wider. Bleibt die HRV im Vergleich zu deinem Ausgangswert dauerhaft niedrig, kann das auf angesammelten Stress oder mangelnde Erholung hinweisen. Dieser Rechner dient der Information und ersetzt keine Diagnose; bei Beschwerden geh zum Arzt."
+    },
+    {
+      "q": "Warum schwankt meine HRV von Tag zu Tag so stark?",
+      "a": "Die HRV reagiert empfindlich auf Schlaf, Alkohol, Mahlzeiten, Stress, Krankheit und Training. Tägliche Schwankungen von 10–20 ms sind normal, vergleiche daher Wochendurchschnitte statt einzelner Nächte."
+    },
+    {
+      "q": "Woher stammen diese HRV-Normwerte?",
+      "a": "Die RMSSD-Bereiche sind aus der Metaanalyse von Nunan 2010, der Alterskurve von Umetani 1998 und der Kohorte von Voss 2015 abgeleitet und an nächtliche Wearable-Messungen angepasst. Die SDNN-Tabelle stammt direkt aus Voss 2015 (rund 1.900 gesunde Erwachsene). Alle Quellen findest du im Abschnitt „Quellen & Methodik“."
+    }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodologyRmssd": "Die RMSSD-Bereiche sind abgeleitet und nicht aus einem einzigen Datensatz übernommen. Die meisten Normstudien berichten Mittelwerte ± SD oder Mediane pro Jahrzehnt für kurze Messungen am Tag. Wir haben diese zentralen Werte kombiniert (Nunan 2010), den Rückgang pro Jahrzehnt (Umetani 1998) und die Streuung nach Alter und Geschlecht (Voss 2015) angewendet und daraus unter Berücksichtigung der Rechtsschiefe der RMSSD ungefähre Perzentile berechnet. Die Tabelle bezieht sich auf die nächtliche RMSSD – das, was Oura, Whoop und Garmin messen, wenn der Parasympathikus am aktivsten ist. Deshalb liegen ihre Mediane über dem gepoolten Tageswert von ~42 ms aus Nunan 2010.",
+  "methodologySdnn": "Die SDNN-Tabelle stammt direkt aus Voss et al. 2015 (rund 1.900 gesunde Erwachsene, 5-Minuten-Ruhe-EKG im Liegen): Wir haben die veröffentlichten Mittelwerte ± SD pro Jahrzehnt für Frauen (Tabelle 5) und Männer (Tabelle 7) nach Gruppengröße gewichtet zusammengefasst und mit einer Log-Normal-Anpassung in Perzentile umgerechnet, da SDNN rechtsschief verteilt ist. Die jüngste Gruppe nutzt die Daten für 25–34, die älteste die für 65–74. Die Apple Watch misst SDNN in kurzen Abschnitten (~1 Minute), daher streuen einzelne Werte stärker als eine Labormessung – vergleiche deinen Wochendurchschnitt.",
+  "embed": {
+    "title": "Diesen HRV-Rechner einbinden",
+    "text": "Kostenlos auf deiner Website oder deinem Blog einbinden – einfach dieses Snippet einfügen. Es wird inline dargestellt (kein iframe), hat keine Abhängigkeiten, ist Open Source und enthält einen Quellenlink zu ONDA Life.",
+    "copy": "Einbettungscode kopieren",
+    "copied": "✓ Kopiert",
+    "iframeSummary": "Lieber ein iframe?",
+    "copyIframe": "iframe-Code kopieren"
+  },
+  "related": {
+    "label": "Verwandte Themen",
+    "normal": "Normale HRV nach Alter",
+    "device": "Warum deine HRV auf jedem Gerät anders ist",
+    "raise": "HRV natürlich steigern",
+    "rhr": "Ruhepuls nach Alter",
+    "trackers": "Die besten HRV-Tracker (2026)"
+  },
+  "sourcesContributes": [
+    "Gepoolte Referenzwerte für RMSSD/SDNN aus 44 Studien mit gesunden Erwachsenen (gepoolter Ruhe-RMSSD ≈ 42 ms) – verankern die zentrale Tendenz.",
+    "Die klassische Alterskurve – zeitbezogene HRV (inkl. RMSSD) sinkt Jahrzehnt für Jahrzehnt – bestimmt die Verschiebung je Altersgruppe.",
+    "Große gesunde Kohorte (n ≈ 1.900; 5-min-EKG in Rückenlage) mit nach Alter und Geschlecht stratifizierter Kurzzeit-HRV. Bestimmt die Streuung des RMSSD (Breite p10–p90) und ist die direkte Quelle der SDNN-Tabelle (Apple Watch): Mittelwerte je Jahrzehnt ± SD für Frauen (Table 5) und Männer (Table 7).",
+    "Grundlegende Definitionen von RMSSD/SDNN und Messstandards, auf die sich die Fachliteratur bezieht."
+  ]
+}

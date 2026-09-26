@@ -385,6 +385,7 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/measurements': ['en', 'ru', 'es'],
   '/how-it-works': ['en', 'ru', 'es'],
   '/people/yakiv-bilenko': ['en', 'ru', 'es'],
+  '/tools/hrv': [...SUPPORTED_LANGS],
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.
@@ -976,7 +977,7 @@ for (const route of routes) {
     if (CUSTOM_LOCALIZED_BASES[customBase] && !/hreflang=/.test(out)) {
       const cluster = buildHreflangLinksForCustom(customBase, CUSTOM_LOCALIZED_BASES[customBase])
       out = out.replace('</head>', `  ${cluster}\n</head>`)
-      const cl: Lang = route.startsWith('/ru/') ? 'ru' : route.startsWith('/es/') ? 'es' : 'en'
+      const cl: Lang = langFromPath(route)
       if (cl !== 'en') out = out.replace(/<html\s+lang="[^"]*"/i, `<html lang="${cl}"`)
     }
 

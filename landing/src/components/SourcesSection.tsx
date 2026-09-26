@@ -10,14 +10,16 @@ import type { ScienceSource } from '../data/sources'
 export function SourcesSection({
   methodology,
   sources,
+  heading = 'Sources & methodology',
 }: {
   methodology: string
   sources: ScienceSource[]
+  heading?: string
 }) {
   return (
     <>
       <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">
-        Sources &amp; methodology
+        {heading}
       </h2>
       <p className="mb-5 font-mono text-xs leading-relaxed text-white/50">{methodology}</p>
       <ol className="mb-10 space-y-3">

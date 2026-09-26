@@ -23,7 +23,7 @@ const article: Article = {
   neuralSuggestion: {
     text: 'Read your own number against population norms — then track YOUR trend, not the device war.',
     link: '/tools/hrv',
-    linkText: 'HRV Interpreter →',
+    linkText: 'HRV Calculator by Age →',
   },
   content: `
 ## [ RECONCILING THE SENSOR LOG ]
