@@ -564,7 +564,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
   uk: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
-    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus', 'yoga-poses-heart-rate-blood-pressure',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
