@@ -2936,4 +2936,11 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     { question: "Can my watch data diagnose anything?", answer: "No. It can show that something changed and when, which helps a doctor decide what to check. Diagnosis comes from examination and tests." },
     { question: "What should I bring to an appointment?", answer: "Four to eight weeks of trends on one page — six to twelve for a sports doctor — with your baseline, what changed and when, your notes and your questions." },
   ],
+  "onda-report-for-your-therapist-or-psychiatrist": [
+    { question: "Can a therapist use my heart rate or HRV data?", answer: "Yes, as material for insight: linking body changes to life events, building awareness of your body's signals, and tracking progress. It supports the conversation; it doesn't diagnose anything." },
+    { question: "What's the difference between a therapist and a psychiatrist here?", answer: "A therapist uses your data for insight, awareness and tracking change. A psychiatrist, as a medical doctor, can also use it to watch medication effects and changes in sleep and arousal, alongside diagnosis and treatment." },
+    { question: "Does low HRV mean I have anxiety or depression?", answer: "No. On average, lower HRV is more common in those groups, but HRV varies hugely between people and depends on sleep, fitness, alcohol and more. It can't diagnose a mental health condition." },
+    { question: "Can tracking my body make anxiety worse?", answer: "For some people, yes — especially with health anxiety. If checking your data increases worry, look less often and tell your therapist. The goal is awareness, not constant monitoring." },
+    { question: "Do I have to share my notes with my therapist?", answer: "No. Share only what you choose. The data and notes are yours." },
+  ],
 }

@@ -12,7 +12,7 @@ const article: Article = {
   description:
     "Your watch records months of heart rate, HRV, breathing and sleep. This guide shows which doctor can use that data for which problem — GP, cardiologist, sleep specialist, therapist or sports doctor — and how to bring it.",
   category: 'Guide',
-  relatedSlugs: ["talk-to-your-doctor-about-wearable-data", "onda-report-for-your-gp", "onda-report-for-your-cardiologist", "onda-report-for-your-sleep-specialist", "onda-report-for-your-sports-doctor"],
+  relatedSlugs: ["talk-to-your-doctor-about-wearable-data", "onda-report-for-your-gp", "onda-report-for-your-cardiologist", "onda-report-for-your-sleep-specialist", "onda-report-for-your-therapist-or-psychiatrist", "onda-report-for-your-sports-doctor"],
   introStyle: 'gold',
   neuralSuggestion: {
     text: "Start with the general guide, then pick the doctor that fits your question.",
@@ -50,6 +50,9 @@ In most healthcare systems, the GP is the right first step: they see your whole 
 
 **Sleep specialist.** Reads weeks of your nights — timing, nightly heart rate, HRV and breathing — to tell insomnia, body-clock problems and possible breathing issues apart. Plus the trap of over-tracking sleep.
 → **[Showing Your Night Data to a Sleep Specialist](/articles/onda-report-for-your-sleep-specialist)**
+
+**Therapist or psychiatrist.** Uses your body data as a mirror: spotting triggers, building body awareness, seeing progress in therapy, and — for a psychiatrist — watching medication effects.
+→ **[Bringing Your Body Data to Therapy](/articles/onda-report-for-your-therapist-or-psychiatrist)**
 
 **Sports doctor.** Reads your recovery: overreaching versus overtraining, hidden causes when recovery stalls, and a safe return after illness.
 → **[Showing Your Recovery Data to a Sports Doctor](/articles/onda-report-for-your-sports-doctor)**

@@ -329,6 +329,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "onda-report-for-your-sleep-specialist": "sleep-body-clock",
   "onda-report-for-your-sports-doctor": "heart-fitness-metabolism",
   "doctors-and-your-data": "hrv-heart-rate",
+  "onda-report-for-your-therapist-or-psychiatrist": "stress-vagus",
 }
 
 export const ARTICLE_WORLD: Record<string, WorldCountry> = {

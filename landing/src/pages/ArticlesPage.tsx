@@ -41,6 +41,60 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
+// ── Series: "Doctors and Your Data" — hub + one guide per specialist ─────────
+const DOCTORS_SERIES_HUB = 'doctors-and-your-data'
+const DOCTORS_SERIES_GUIDES = [
+  'talk-to-your-doctor-about-wearable-data',
+  'onda-report-for-your-gp',
+  'onda-report-for-your-cardiologist',
+  'onda-report-for-your-sleep-specialist',
+  'onda-report-for-your-therapist-or-psychiatrist',
+  'onda-report-for-your-sports-doctor',
+]
+
+function DoctorsSeriesSection({ lang }: { lang: ReturnType<typeof langFromPath> }) {
+  const { t } = useTranslation('articles')
+  const title = (slug: string) => {
+    const a = articles.find((x) => x.slug === slug)
+    return t(`bodies.${slug}.title`, { defaultValue: a?.title ?? slug }) as string
+  }
+  return (
+    <section aria-labelledby="series-doctors" className="glass-card mb-10 rounded-xl p-6 md:p-8">
+      <div className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-green/60">
+        {t('series.label', { defaultValue: 'Series' })}
+      </div>
+      <h2 id="series-doctors" className="mb-2 text-xl font-bold tracking-tight md:text-2xl">
+        <Link to={langHref(`/articles/${DOCTORS_SERIES_HUB}`, lang)} className="transition-colors hover:text-terminal-green">
+          {t('series.doctors.heading', { defaultValue: 'Doctors and Your Data' })}
+        </Link>
+      </h2>
+      <p className="mb-5 max-w-2xl font-mono text-xs leading-relaxed text-white/50">
+        {t('series.doctors.description', {
+          defaultValue: 'Which specialist can use your heart, HRV and sleep trends — and how to bring your data to an appointment.',
+        })}
+      </p>
+      <ul className="mb-5 grid gap-2 sm:grid-cols-2">
+        {DOCTORS_SERIES_GUIDES.map((slug) => (
+          <li key={slug}>
+            <Link
+              to={langHref(`/articles/${slug}`, lang)}
+              className="block rounded-lg border border-white/10 px-4 py-2 font-mono text-xs leading-snug text-white/60 transition-all hover:border-terminal-green/30 hover:text-terminal-green"
+            >
+              {title(slug)}
+            </Link>
+          </li>
+        ))}
+      </ul>
+      <Link
+        to={langHref(`/articles/${DOCTORS_SERIES_HUB}`, lang)}
+        className="font-mono text-[11px] tracking-wider text-terminal-green/70 hover:text-terminal-green"
+      >
+        {t('series.doctors.cta', { defaultValue: 'Start with the guide →' })}
+      </Link>
+    </section>
+  )
+}
+
 export function ArticlesPage() {
   const { t } = useTranslation('articles')
   const location = useLocation()
@@ -193,6 +247,8 @@ export function ArticlesPage() {
             )}
           </section>
         ) : (
+          <>
+          <DoctorsSeriesSection lang={lang} />
           <section aria-label="Topics">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {ARTICLE_TOPIC_HUBS.map((hub) => {
@@ -230,6 +286,7 @@ export function ArticlesPage() {
               })}
             </div>
           </section>
+          </>
         )}
 
         <nav className="mt-12 flex flex-wrap gap-3 border-t border-white/10 pt-6" aria-label="More">
@@ -337,6 +394,8 @@ export function ArticlesPage() {
           })}
         </div>
       </div>
+
+      {!search && <DoctorsSeriesSection lang={lang} />}
 
       {/* Articles grid */}
       <div className="grid gap-6 md:grid-cols-2">
