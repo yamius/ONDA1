@@ -720,7 +720,12 @@ const liveLocaleArticles: Record<string, string[]> = (() => {
       .filter((s) => s in bodies)
       .sort()
     const early = new Set(ARTICLE_LOCALE_EARLY[lang] ?? [])
-    const live = slugs.filter((s, i) => early.has(s) || articleRolloutDate(start, i) <= BUILD_DATE)
+    // Drip index runs over the NON-early backlog only, so adding early-published
+    // bodies never shifts already-live drip slugs back out of the window.
+    const backlog = slugs.filter((s) => !early.has(s))
+    const live = [...early].filter((s) => s in bodies).concat(
+      backlog.filter((_, i) => articleRolloutDate(start, i) <= BUILD_DATE),
+    ).sort()
     if (live.length) out[lang] = live
   }
   return out
