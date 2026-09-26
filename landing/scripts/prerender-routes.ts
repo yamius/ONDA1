@@ -415,6 +415,9 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'nose-vs-mouth-breathing', publishOn: '2026-09-26' },
   { slug: 'meditation-vs-breathwork', publishOn: '2026-09-26' },
   { slug: 'cardiac-coherence-365-method', publishOn: '2026-09-26' },
+  { slug: 'how-much-meditation-do-you-need', publishOn: '2026-09-26' },
+  { slug: 'measuring-meditation-progress', publishOn: '2026-09-26' },
+  { slug: 'humming-breath-vagus', publishOn: '2026-09-26' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
@@ -561,6 +564,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
   uk: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
@@ -570,6 +574,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -578,6 +583,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -586,6 +592,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
   ],
   it: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
