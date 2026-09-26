@@ -225,7 +225,7 @@ for (const lang of SUPPORTED_LANGS) {
 
 /** Parse /<lang>/articles/<slug> or /articles/<slug> into {lang, slug}. */
 function parseArticleRoute(route: string): { lang: Lang; slug: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/articles\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/articles\/([^/]+)$/)
   if (!m) return null
   return { lang: ((m[1] as Lang) ?? 'en'), slug: m[2] }
 }
@@ -268,15 +268,15 @@ type ReviewKind = 'hub' | 'methodology' | 'review' | 'comparison' | 'headToHead'
 function parseReviewRoute(
   route: string,
 ): { lang: Lang; kind: ReviewKind; slug: string } | null {
-  let m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews$/)
+  let m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'hub', slug: '' }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/methodology$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/methodology$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'methodology', slug: '' }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/compare\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/compare\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'comparison', slug: m[2] }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/vs\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/vs\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'headToHead', slug: m[2] }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'review', slug: m[2] }
   return null
 }
@@ -319,9 +319,9 @@ for (const lang of SUPPORTED_LANGS) {
 function parseGlossaryRoute(
   route: string,
 ): { lang: Lang; kind: 'index' | 'term'; slug: string } | null {
-  let m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary$/)
+  let m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/glossary$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'index', slug: '' }
-  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary\/([^/]+)$/)
+  m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/glossary\/([^/]+)$/)
   if (m) return { lang: ((m[1] as Lang) ?? 'en'), kind: 'term', slug: m[2] }
   return null
 }
@@ -467,6 +467,7 @@ const OG_LOCALE_MAP: Record<Lang, string> = {
   nl: 'nl_NL',
   ja: 'ja_JP',
   pl: 'pl_PL',
+  pt: 'pt_BR',
 }
 
 function escAttr(s: string): string {

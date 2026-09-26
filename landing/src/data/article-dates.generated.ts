@@ -10,7 +10,7 @@
 export const ARTICLE_DATES: Record<string, { published: string; modified: string }> = {
   "4-7-8-breathing": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-21T17:29:12+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "acc-calibration-protocol-cognitive-control": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -38,7 +38,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "alternate-nostril-breathing": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-22T18:37:38+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "ancestral-sync-circadian-anchors": {
     "published": "2026-03-24T09:54:24Z",
@@ -66,7 +66,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "attention-trainable-skill-meditation": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-09-24T15:46:00+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "baroreflex-01hz-shift": {
     "published": "2026-03-24T13:06:24Z",
@@ -74,7 +74,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "bhastrika-pranayama-brain-anxiety": {
     "published": "2026-09-24T12:08:14+02:00",
-    "modified": "2026-09-24T12:39:03+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "biological-latency-optimizing-system-ping": {
     "published": "2026-04-21T12:59:22Z",
@@ -98,11 +98,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-altitude-acclimatization": {
     "published": "2026-09-22T18:48:54+02:00",
-    "modified": "2026-09-22T18:48:54+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "breathing-exercises-older-adults": {
     "published": "2026-09-22T08:22:18+02:00",
-    "modified": "2026-09-22T10:19:56+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "breathing-for-focus-and-attention": {
     "published": "2026-09-19T01:02:52+02:00",
@@ -110,7 +110,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "breathing-lowers-stress-hormones": {
     "published": "2026-09-22T08:22:18+02:00",
-    "modified": "2026-09-22T10:19:56+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "breathwork-command-line-interface": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -134,11 +134,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cardiac-coherence-365-method": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-09-24T22:03:37+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "cardiac-coherence-insomnia-sleep": {
     "published": "2026-09-24T22:03:37+02:00",
-    "modified": "2026-09-24T22:03:37+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -150,7 +150,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "chronotherapy-light-dark-timing": {
     "published": "2026-09-23T13:54:36+02:00",
-    "modified": "2026-09-23T13:54:36+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "circadian-lighting-dark-therapy": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -238,7 +238,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "fast-vs-slow-pranayama": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-09-24T12:39:03+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "fault-tolerant-human-hrv-buffer": {
     "published": "2026-03-24T12:53:43Z",
@@ -254,7 +254,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "forest-bathing-shinrin-yoku-science": {
     "published": "2026-09-23T14:20:18+02:00",
-    "modified": "2026-09-23T14:20:18+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -282,11 +282,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-much-alcohol-lowers-hrv": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-21T17:29:12+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "how-much-meditation-do-you-need": {
     "published": "2026-09-23T15:19:19+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "how-much-sleep-do-you-need": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -338,7 +338,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-breathing-cold-honest-limits": {
     "published": "2026-09-22T07:55:50+02:00",
-    "modified": "2026-09-22T08:03:29+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
@@ -346,7 +346,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-harmony-of-rhythms": {
     "published": "2026-09-22T07:30:24+02:00",
-    "modified": "2026-09-22T07:30:24+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -354,7 +354,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "humming-breath-vagus": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-24T22:03:37+02:00"
+    "modified": "2026-09-26T08:58:39+02:00"
   },
   "hydraulic-viscosity-onda-transport-bus": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -374,7 +374,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "jhana-meditation-stages": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "longevity-hardware-cellular-cleanup": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -386,19 +386,19 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mbsr-mindfulness-clinical-evidence": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "measuring-meditation-progress": {
     "published": "2026-09-23T15:19:19+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-adverse-effects-safety": {
     "published": "2026-09-23T23:36:32+02:00",
-    "modified": "2026-09-23T23:36:32+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-aging-telomeres": {
     "published": "2026-09-23T17:17:09+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-app-with-biofeedback": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -406,23 +406,23 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-brain-aging-protection": {
     "published": "2026-09-23T23:36:32+02:00",
-    "modified": "2026-09-23T23:36:32+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-brain-changes-how-fast": {
     "published": "2026-09-23T15:19:19+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-gamma-waves-experience": {
     "published": "2026-09-23T16:02:36+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-neuroscience-expert-monks": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-vs-breathwork": {
     "published": "2026-09-23T18:39:06+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
@@ -430,7 +430,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-with-measurable-progress": {
     "published": "2026-09-23T20:27:09+02:00",
-    "modified": "2026-09-23T23:36:32+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -454,7 +454,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "morita-therapy-tracking-paradox": {
     "published": "2026-09-24T12:08:14+02:00",
-    "modified": "2026-09-24T12:08:14+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "muscle-metabolic-marker": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -462,7 +462,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "naikan-japanese-reflection": {
     "published": "2026-09-23T19:44:44+02:00",
-    "modified": "2026-09-24T12:08:14+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "name-it-to-tame-it-affect-labeling": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -506,15 +506,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-21T17:29:12+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "nose-vs-mouth-breathing": {
     "published": "2026-09-22T08:22:18+02:00",
-    "modified": "2026-09-22T08:22:18+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "om-chanting-brain-vagus": {
     "published": "2026-09-24T22:03:37+02:00",
-    "modified": "2026-09-24T22:03:37+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -530,11 +530,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "physiological-sigh": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-21T17:29:12+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "pranayama-metabolic-syndrome": {
     "published": "2026-09-24T20:35:38+02:00",
-    "modified": "2026-09-24T20:35:38+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "protein-intake-muscle-protein-synthesis": {
     "published": "2026-06-04T00:46:04+02:00",
@@ -550,7 +550,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "rajyoga-open-eye-meditation": {
     "published": "2026-09-23T16:02:36+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "resonant-frequency-system-coherence": {
     "published": "2026-03-24T13:00:58Z",
@@ -562,7 +562,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resting-heart-rate-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-21T17:29:12+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
@@ -602,7 +602,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "sudarshan-kriya-yoga-breathing": {
     "published": "2026-09-24T12:39:03+02:00",
-    "modified": "2026-09-24T12:39:03+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
@@ -614,7 +614,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "tanden-breathing-serotonin": {
     "published": "2026-09-23T14:20:18+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "train-hrv-iphone-camera-no-wearable": {
     "published": "2026-09-19T01:10:36+02:00",
@@ -622,7 +622,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "trataka-candle-gazing-focus": {
     "published": "2026-09-24T15:46:00+02:00",
-    "modified": "2026-09-24T15:46:00+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
@@ -642,7 +642,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "vipassana-meditation-attention-brain": {
     "published": "2026-09-23T17:17:09+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "vo2max-increase-aerobic-engine": {
     "published": "2026-06-04T00:39:42+02:00",
@@ -666,7 +666,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "wim-hof-breathing-inflammation": {
     "published": "2026-09-22T18:48:54+02:00",
-    "modified": "2026-09-22T18:48:54+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "wind-down-before-sleep-breathing": {
     "published": "2026-09-19T01:24:54+02:00",
@@ -674,15 +674,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "yoga-breathing-diabetes-blood-sugar": {
     "published": "2026-09-24T15:14:54+02:00",
-    "modified": "2026-09-24T20:35:38+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "yoga-nidra-sleep-science": {
     "published": "2026-09-24T12:39:03+02:00",
-    "modified": "2026-09-24T12:39:03+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "yoga-poses-heart-rate-blood-pressure": {
     "published": "2026-09-24T15:46:00+02:00",
-    "modified": "2026-09-24T15:46:00+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -690,11 +690,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "zazen-zen-meditation-brain": {
     "published": "2026-09-23T18:39:06+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "zen-koans-brain-cognition": {
     "published": "2026-09-23T19:44:44+02:00",
-    "modified": "2026-09-23T20:27:09+02:00"
+    "modified": "2026-09-26T01:41:15+02:00"
   },
   "zone-2-training-aerobic-base": {
     "published": "2026-06-04T00:39:42+02:00",

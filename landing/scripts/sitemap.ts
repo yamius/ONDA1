@@ -159,21 +159,21 @@ function getLastmod(route: string): string | null {
   if (hubSlug) {
     return getArticleTopicHub(hubSlug) ? hubLastModified(hubSlug as ArticleTopicSlug) : null
   }
-  const slug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/articles\/([^/]+)$/)?.[1]
+  const slug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/articles\/([^/]+)$/)?.[1]
   if (slug) {
     const d = ARTICLE_DATES[slug]
     return d ? (d.modified || d.published).slice(0, 10) : null
   }
-  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary\/[^/]+$/.test(route)) {
+  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/glossary\/[^/]+$/.test(route)) {
     const d = ARTICLE_DATES['__glossary']
     return d ? (d.modified || d.published).slice(0, 10) : null
   }
-  const cmpSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/compare\/([^/]+)$/)?.[1]
+  const cmpSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/compare\/([^/]+)$/)?.[1]
   if (cmpSlug) {
     const c = getComparisonBySlug(cmpSlug)
     return c ? c.dateModified.slice(0, 10) : null
   }
-  const revSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/([^/]+)$/)?.[1]
+  const revSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/([^/]+)$/)?.[1]
   if (revSlug && revSlug !== 'methodology') {
     const r = getReviewBySlug(revSlug)
     return r ? r.dateModified.slice(0, 10) : null
@@ -289,10 +289,10 @@ function reviewAlternates(path: string): string {
   let kind = ''
   let slug = ''
   let m: RegExpMatchArray | null
-  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews$/.test(path)) kind = 'hub'
-  else if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/methodology$/.test(path)) kind = 'methodology'
-  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/compare\/([^/]+)$/))) { kind = 'comparison'; slug = m[1] }
-  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/([^/]+)$/))) { kind = 'review'; slug = m[1] }
+  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews$/.test(path)) kind = 'hub'
+  else if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/methodology$/.test(path)) kind = 'methodology'
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/compare\/([^/]+)$/))) { kind = 'comparison'; slug = m[1] }
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/reviews\/([^/]+)$/))) { kind = 'review'; slug = m[1] }
   else return ''
   const langs = kind === 'hub' || kind === 'methodology'
     ? SITEMAP_REVIEW_LANGS
@@ -314,8 +314,8 @@ function glossaryAlternates(path: string): string {
   let kind = ''
   let slug = ''
   let m: RegExpMatchArray | null
-  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary$/.test(path)) kind = 'index'
-  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary\/([^/]+)$/))) { kind = 'term'; slug = m[1] }
+  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/glossary$/.test(path)) kind = 'index'
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/glossary\/([^/]+)$/))) { kind = 'term'; slug = m[1] }
   else return ''
   const langs = kind === 'index'
     ? GLOSSARY_INDEX_LANGS
@@ -361,7 +361,7 @@ const urls = routes.map((path) => {
     if (info && altsByPart[info.slug]) alternates = `\n${altsByPart[info.slug]}`
   } else if (LOCALIZED_ARTICLE_ROUTE_SET.has(path)) {
     // Localised /es/articles/<slug>
-    const m = path.match(/^\/(?:en|es|ru|uk|zh|de|fr|it|nl|ja|pl)\/articles\/([^/]+)$/)
+    const m = path.match(/^\/(?:en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)\/articles\/([^/]+)$/)
     if (m && altsByArticle[m[1]]) alternates = `\n${altsByArticle[m[1]]}`
   } else if (articleSlug && altsByArticle[articleSlug]) {
     // EN /articles/<slug> for a slug that has a localised sibling.

@@ -4,6 +4,18 @@
 // can render width/height attributes and the browser reserves space at first
 // paint (CLS = 0).
 export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }> = {
+  "/images/articles/4-7-8-breathing.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/4-7-8-breathing.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/4-7-8-breathing.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/active-intervention-vs-passive-tracking.avif": {
     "width": 1672,
     "height": 940
@@ -51,6 +63,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/ai-biomarker-tracking-predictive-longevity-model.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/articles/alternate-nostril-breathing.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/alternate-nostril-breathing.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/alternate-nostril-breathing.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/ancestral-sync-circadian-anchors.avif": {
     "width": 1168,
@@ -112,6 +136,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1672,
     "height": 940
   },
+  "/images/articles/attention-trainable-skill-meditation.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/attention-trainable-skill-meditation.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/attention-trainable-skill-meditation.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/baroreflex-01hz-shift.avif": {
     "width": 1536,
     "height": 652
@@ -123,6 +159,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/baroreflex-01hz-shift.webp": {
     "width": 1536,
     "height": 652
+  },
+  "/images/articles/bhastrika-pranayama-brain-anxiety.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/bhastrika-pranayama-brain-anxiety.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/bhastrika-pranayama-brain-anxiety.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/biological-latency-optimizing-system-ping.avif": {
     "width": 3168,
@@ -148,6 +196,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/breathing-altitude-acclimatization.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/breathing-altitude-acclimatization.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/breathing-altitude-acclimatization.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/breathing-exercises-older-adults.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/breathing-exercises-older-adults.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/breathing-exercises-older-adults.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/breathing-for-focus-and-attention.avif": {
     "width": 2560,
     "height": 1440
@@ -159,6 +231,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/breathing-for-focus-and-attention.webp": {
     "width": 2560,
     "height": 1440
+  },
+  "/images/articles/breathing-lowers-stress-hormones.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/breathing-lowers-stress-hormones.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/breathing-lowers-stress-hormones.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/breathwork-command-line-interface-biohacking.avif": {
     "width": 1024,
@@ -196,6 +280,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1672,
     "height": 941
   },
+  "/images/articles/cardiac-coherence-365-method.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/cardiac-coherence-365-method.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/cardiac-coherence-365-method.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/cardiac-coherence-insomnia-sleep.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/cardiac-coherence-insomnia-sleep.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/cardiac-coherence-insomnia-sleep.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/chronic-stress-nervous-system-never-off.avif": {
     "width": 1672,
     "height": 941
@@ -207,6 +315,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/chronic-stress-nervous-system-never-off.webp": {
     "width": 1672,
     "height": 941
+  },
+  "/images/articles/chronotherapy-light-dark-timing.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/chronotherapy-light-dark-timing.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/chronotherapy-light-dark-timing.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/circadian-lighting-dark-therapy-melatonin-optimization.avif": {
     "width": 1024,
@@ -400,6 +520,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/articles/fast-vs-slow-pranayama.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/fast-vs-slow-pranayama.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/fast-vs-slow-pranayama.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/fault-tolerant-human-hrv-buffer.avif": {
     "width": 1168,
     "height": 495
@@ -435,6 +567,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/find-your-resonance-breathing-rate.webp": {
     "width": 2560,
     "height": 1440
+  },
+  "/images/articles/forest-bathing-shinrin-yoku-science.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/forest-bathing-shinrin-yoku-science.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/forest-bathing-shinrin-yoku-science.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/glp-1-biology-muscle-preservation-metabolism.avif": {
     "width": 1024,
@@ -495,6 +639,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/high-blood-pressure-slow-breathing.webp": {
     "width": 1672,
     "height": 941
+  },
+  "/images/articles/how-much-alcohol-lowers-hrv.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/how-much-alcohol-lowers-hrv.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/how-much-alcohol-lowers-hrv.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/how-much-meditation-do-you-need.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/how-much-meditation-do-you-need.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/how-much-meditation-do-you-need.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/how-much-water-should-you-drink.avif": {
     "width": 2688,
@@ -604,6 +772,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/articles/hrv-breathing-cold-honest-limits.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/hrv-breathing-cold-honest-limits.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/hrv-breathing-cold-honest-limits.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/hrv-harmony-of-rhythms.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/hrv-harmony-of-rhythms.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/hrv-harmony-of-rhythms.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/hrv-training-nervous-system-latency-biohacking.avif": {
     "width": 1024,
     "height": 434
@@ -615,6 +807,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/hrv-training-nervous-system-latency-biohacking.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/articles/humming-breath-vagus.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/humming-breath-vagus.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/humming-breath-vagus.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/idle-state-alpha-rhythms.avif": {
     "width": 1168,
@@ -640,6 +844,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/articles/jhana-meditation-stages.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/jhana-meditation-stages.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/jhana-meditation-stages.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/longevity-autophagy-cellular-cleanup-onda.avif": {
     "width": 1024,
     "height": 434
@@ -664,6 +880,54 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1168,
     "height": 496
   },
+  "/images/articles/mbsr-mindfulness-clinical-evidence.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/mbsr-mindfulness-clinical-evidence.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/mbsr-mindfulness-clinical-evidence.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/measuring-meditation-progress.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/measuring-meditation-progress.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/measuring-meditation-progress.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-adverse-effects-safety.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-adverse-effects-safety.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-adverse-effects-safety.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-aging-telomeres.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-aging-telomeres.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-aging-telomeres.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/meditation-app-with-biofeedback.avif": {
     "width": 2560,
     "height": 1440
@@ -676,6 +940,66 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/meditation-brain-aging-protection.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-brain-aging-protection.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-brain-aging-protection.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-brain-changes-how-fast.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-brain-changes-how-fast.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-brain-changes-how-fast.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-gamma-waves-experience.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-gamma-waves-experience.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-gamma-waves-experience.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-neuroscience-expert-monks.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-neuroscience-expert-monks.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-neuroscience-expert-monks.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-vs-breathwork.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-vs-breathwork.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-vs-breathwork.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/meditation-with-apple-watch.avif": {
     "width": 1672,
     "height": 941
@@ -687,6 +1011,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/meditation-with-apple-watch.webp": {
     "width": 1672,
     "height": 941
+  },
+  "/images/articles/meditation-with-measurable-progress.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-with-measurable-progress.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/meditation-with-measurable-progress.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/metabolic-flexibility-dual-fuel-glucose-ketones-onda.avif": {
     "width": 1024,
@@ -748,6 +1084,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1168,
     "height": 784
   },
+  "/images/articles/morita-therapy-tracking-paradox.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/morita-therapy-tracking-paradox.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/morita-therapy-tracking-paradox.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/muscle-metabolic-marker-longevity-onda.avif": {
     "width": 1024,
     "height": 434
@@ -759,6 +1107,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/muscle-metabolic-marker-longevity-onda.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/articles/naikan-japanese-reflection.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/naikan-japanese-reflection.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/naikan-japanese-reflection.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/name-it-to-tame-it-affect-labeling.avif": {
     "width": 1672,
@@ -880,6 +1240,42 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1168,
     "height": 784
   },
+  "/images/articles/normal-hrv-by-age.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/normal-hrv-by-age.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/normal-hrv-by-age.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/nose-vs-mouth-breathing.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/nose-vs-mouth-breathing.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/nose-vs-mouth-breathing.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/om-chanting-brain-vagus.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/om-chanting-brain-vagus.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/om-chanting-brain-vagus.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/onda-cacao-stem-cell-regeneration-matrix.avif": {
     "width": 1024,
     "height": 434
@@ -952,6 +1348,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/articles/physiological-sigh.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/physiological-sigh.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/physiological-sigh.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/pranayama-metabolic-syndrome.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/pranayama-metabolic-syndrome.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/pranayama-metabolic-syndrome.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/protocol-circadian-hard-reset.avif": {
     "width": 1168,
     "height": 496
@@ -976,6 +1396,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1536,
     "height": 1024
   },
+  "/images/articles/rajyoga-open-eye-meditation.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/rajyoga-open-eye-meditation.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/rajyoga-open-eye-meditation.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/resonant-frequency-system-coherence.avif": {
     "width": 1168,
     "height": 496
@@ -999,6 +1431,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/respiratory-rate-hidden-signal.webp": {
     "width": 1672,
     "height": 941
+  },
+  "/images/articles/resting-heart-rate-by-age.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/resting-heart-rate-by-age.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/resting-heart-rate-by-age.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/rhythmic-entrainment-system-frequencies.avif": {
     "width": 1536,
@@ -1108,6 +1552,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/sudarshan-kriya-yoga-breathing.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/sudarshan-kriya-yoga-breathing.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/sudarshan-kriya-yoga-breathing.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/system-stability-serotonin.avif": {
     "width": 1584,
     "height": 672
@@ -1119,6 +1575,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/system-stability-serotonin.webp": {
     "width": 1584,
     "height": 672
+  },
+  "/images/articles/tanden-breathing-serotonin.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/tanden-breathing-serotonin.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/tanden-breathing-serotonin.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/the-acetylcholine-shader.avif": {
     "width": 1584,
@@ -1144,6 +1612,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/trataka-candle-gazing-focus.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/trataka-candle-gazing-focus.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/trataka-candle-gazing-focus.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/tsh-energy-governor.avif": {
     "width": 1584,
     "height": 672
@@ -1167,6 +1647,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/vagus-nerve-biohacking-data-highway.webp": {
     "width": 1024,
     "height": 434
+  },
+  "/images/articles/vipassana-meditation-attention-brain.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/vipassana-meditation-attention-brain.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/vipassana-meditation-attention-brain.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/articles/wearables-train-not-just-track.avif": {
     "width": 2560,
@@ -1216,6 +1708,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1672,
     "height": 941
   },
+  "/images/articles/wim-hof-breathing-inflammation.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/wim-hof-breathing-inflammation.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/wim-hof-breathing-inflammation.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/wind-down-before-sleep-breathing.avif": {
     "width": 2560,
     "height": 1440
@@ -1228,6 +1732,42 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/yoga-breathing-diabetes-blood-sugar.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-breathing-diabetes-blood-sugar.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-breathing-diabetes-blood-sugar.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-nidra-sleep-science.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-nidra-sleep-science.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-nidra-sleep-science.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-poses-heart-rate-blood-pressure.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-poses-heart-rate-blood-pressure.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/yoga-poses-heart-rate-blood-pressure.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/articles/your-baseline-knows-first.avif": {
     "width": 1672,
     "height": 941
@@ -1239,6 +1779,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/articles/your-baseline-knows-first.webp": {
     "width": 1672,
     "height": 941
+  },
+  "/images/articles/zazen-zen-meditation-brain.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/zazen-zen-meditation-brain.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/zazen-zen-meditation-brain.webp": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/zen-koans-brain-cognition.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/zen-koans-brain-cognition.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/articles/zen-koans-brain-cognition.webp": {
+    "width": 1920,
+    "height": 820
   },
   "/images/body-fat-percentage-composition.avif": {
     "width": 1915,
@@ -1527,6 +2091,114 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/protein-intake-muscle-protein-synthesis.webp": {
     "width": 1915,
     "height": 821
+  },
+  "/images/topics/brain-focus-aging.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/brain-focus-aging.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/brain-focus-aging.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/breathing.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/breathing.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/breathing.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/heart-fitness-metabolism.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/heart-fitness-metabolism.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/heart-fitness-metabolism.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/hrv-heart-rate.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/hrv-heart-rate.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/hrv-heart-rate.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/lifestyle.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/lifestyle.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/lifestyle.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/meditation.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/meditation.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/meditation.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/sleep-body-clock.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/sleep-body-clock.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/sleep-body-clock.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/stress-vagus.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/stress-vagus.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/stress-vagus.webp": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/world.avif": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/world.jpg": {
+    "width": 1600,
+    "height": 1200
+  },
+  "/images/topics/world.webp": {
+    "width": 1600,
+    "height": 1200
   },
   "/images/vagus-nerve-exercises.avif": {
     "width": 1915,

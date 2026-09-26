@@ -18,8 +18,9 @@ import it from '../public/locales/it/home.json'
 import nl from '../public/locales/nl/home.json'
 import ja from '../public/locales/ja/home.json'
 import pl from '../public/locales/pl/home.json'
+import pt from '../public/locales/pt/home.json'
 
-export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl'] as const
+export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
 
 export const LANG_LABELS: Record<Lang, string> = {
@@ -34,6 +35,7 @@ export const LANG_LABELS: Record<Lang, string> = {
   nl: 'NL',
   ja: 'JA',
   pl: 'PL',
+  pt: 'PT',
 }
 
 /** OpenGraph locale codes (BCP-47 with underscore). Used in og:locale meta tags. */
@@ -49,6 +51,7 @@ export const OG_LOCALES: Record<Lang, string> = {
   nl: 'nl_NL',
   ja: 'ja_JP',
   pl: 'pl_PL',
+  pt: 'pt_BR',
 }
 
 if (!i18n.isInitialized) {
@@ -68,6 +71,7 @@ if (!i18n.isInitialized) {
       nl: { home: nl },
       ja: { home: ja },
       pl: { home: pl },
+      pt: { home: pt },
     },
     ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews', 'emoton'],
     defaultNS: 'home',
@@ -141,7 +145,7 @@ export function homePathFor(lang: Lang): string {
  * link/switcher target falls back to the EN URL (never an EN body in a
  * foreign shell). Remove a language from here once its UI is translated.
  */
-export const ARTICLES_ONLY_LANGS: readonly Lang[] = ['it', 'nl', 'ja', 'pl']
+export const ARTICLES_ONLY_LANGS: readonly Lang[] = ['it', 'nl', 'ja', 'pl', 'pt']
 
 /**
  * Routes that have no per-language variant — never prefix these. /tools and
@@ -368,7 +372,7 @@ export function metricRouteVariants(metricKeys: string[]): string[] {
 
 /** Parse a metric URL — returns { lang, metric } or null. */
 export function parseMetricRoute(route: string): { lang: Lang; metric: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/bio\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/bio\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, metric: m[2] }
@@ -393,7 +397,7 @@ export function levelRouteVariants(levelNumbers: number[]): string[] {
 
 /** Parse a level URL — returns { lang, levelNum } or null. */
 export function parseLevelRoute(route: string): { lang: Lang; levelNum: number } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/level\/(\d+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/level\/(\d+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, levelNum: parseInt(m[2], 10) }
@@ -418,7 +422,7 @@ export function partRouteVariants(slugs: string[]): string[] {
 
 /** Parse a part URL — returns { lang, slug } or null. */
 export function parsePartRoute(route: string): { lang: Lang; slug: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/part\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl|pt))?\/part\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, slug: m[2] }

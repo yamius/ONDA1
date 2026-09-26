@@ -412,6 +412,9 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'normal-hrv-by-age', publishOn: '2026-09-26' },
   { slug: 'resting-heart-rate-by-age', publishOn: '2026-09-26' },
   { slug: 'alternate-nostril-breathing', publishOn: '2026-09-26' },
+  { slug: 'nose-vs-mouth-breathing', publishOn: '2026-09-26' },
+  { slug: 'meditation-vs-breathwork', publishOn: '2026-09-26' },
+  { slug: 'cardiac-coherence-365-method', publishOn: '2026-09-26' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
@@ -547,6 +550,7 @@ const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
   { lang: 'nl', start: '2099-01-01' },
   { lang: 'ja', start: '2099-01-01' },
   { lang: 'pl', start: '2099-01-01' },
+  { lang: 'pt', start: '2099-01-01' },
 ]
 /**
  * Hand-reviewed native translations released ahead of their locale's drip
@@ -556,6 +560,7 @@ const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
 const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
   uk: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
@@ -564,6 +569,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -571,6 +577,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -578,6 +585,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
   ],
   it: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -595,6 +603,11 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
   ],
   pl: [
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+  ],
+  pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
