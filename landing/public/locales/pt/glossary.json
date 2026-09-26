@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "title": "HRV, Breathwork & Neuroscience Glossary | ONDA Life",
+    "description": "A knowledge base of the science ONDA builds on — HRV, the vagus nerve, resonance breathing, autonomic regulation and interoception — plus the wider neuroscience and biohacking terms behind the ONDA system."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Glossary"
+  },
+  "badge": "[ KNOWLEDGE BASE ]",
+  "h1": "Glossary",
+  "subtitle": "The science ONDA builds on — HRV, the vagus nerve, resonance breathing, autonomic regulation and interoception — plus the wider neuroscience terms behind the ONDA system. Scientific terms and ONDA's own concepts are labelled.",
+  "featuredHeader": "[ FEATURED TERMS ]",
+  "searchPlaceholder": "search terms...",
+  "allLabel": "All",
+  "noResults": "No terms found. Try a different search.",
+  "term": {
+    "relatedDeepDives": "RELATED DEEP DIVES",
+    "relatedTerms": "RELATED TERMS",
+    "upgradeKnowledge": "Upgrade your knowledge: Learn how to optimize {{term}} in our full guide.",
+    "backToGlossary": "← Back to Glossary",
+    "exploreMore": "EXPLORE MORE",
+    "links": {
+      "fullGlossary": "Full Glossary",
+      "allArticles": "All Articles",
+      "bioOs": "Bio OS",
+      "theStack": "The Stack",
+      "home": "Home"
+    }
+  }
+}
