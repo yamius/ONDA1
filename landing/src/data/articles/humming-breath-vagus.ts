@@ -69,7 +69,7 @@ Humming is unique in giving you a *mechanical* route to the vagus nerve, not jus
 
 ## See it work
 
-Because humming produces a genuine autonomic shift, you can watch it. ONDA reads your pulse from your phone camera or Apple Watch and shows your heart rate settle as you hum through long exhales. Seeing your own HRV climb confirms the vibration and the slow exhale are doing their job — and helps you find the exhale length and pitch that calm *you* most.
+Because humming produces a genuine autonomic shift, you can watch it. ONDA reads your pulse from your phone camera or Apple Watch and shows your heart rate settle as you hum through long exhales; with an Apple Watch you also see your HRV climb. Seeing it in your own numbers confirms the vibration and the slow exhale are doing their job — and helps you find the exhale length and pitch that calm *you* most.
 `,
   howToSteps: [
     {
