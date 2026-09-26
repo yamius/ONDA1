@@ -2927,12 +2927,12 @@ export function getMetaForRoute(route: string): RouteMeta {
   // /articles — knowledge-base index. Emit CollectionPage + ItemList over the
   // articles so the hub is a structured listing, not just breadcrumbs. (EN;
   // localized /<lang>/articles get their meta via applyLocalizedMeta.)
-  // /articles — ONDA Library: CollectionPage + ItemList over the 9 topic hubs.
+  // /articles — ONDA Library: CollectionPage + ItemList over the 10 topic hubs.
   if (route === '/articles') {
     return {
       title: 'ONDA Library — Breathing, HRV & Meditation Guides | ONDA Life',
       description:
-        'Science-based guides on breathing, HRV, meditation and the nervous system, organized into nine topics. Pick a topic to start.',
+        'Science-based guides on breathing, HRV, meditation and the nervous system, organized into ten topics. Pick a topic to start.',
       url,
       breadcrumbs,
       itemList: {

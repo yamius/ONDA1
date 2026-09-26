@@ -208,7 +208,7 @@ export function ArticlesPage() {
     </div>
   )
 
-  // ── EN: ONDA Library — 9 topic tiles → /articles/topic/<topic> hubs ─────────
+  // ── EN: ONDA Library — 10 topic tiles → /articles/topic/<topic> hubs ─────────
   // Localized /<lang>/articles keep the flat layout below until the locale hubs
   // ship. Search (and the ?q= SearchAction target) still works: a query swaps
   // the tiles for a filtered result list.
@@ -247,8 +247,6 @@ export function ArticlesPage() {
             )}
           </section>
         ) : (
-          <>
-          <DoctorsSeriesSection lang={lang} />
           <section aria-label="Topics">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
               {ARTICLE_TOPIC_HUBS.map((hub) => {
@@ -286,7 +284,6 @@ export function ArticlesPage() {
               })}
             </div>
           </section>
-          </>
         )}
 
         <nav className="mt-12 flex flex-wrap gap-3 border-t border-white/10 pt-6" aria-label="More">
@@ -310,7 +307,7 @@ export function ArticlesPage() {
               well-supported we cite it; where an idea is a framing or still experimental, we say so.
             </p>
             <p>
-              Every guide sits in one of nine topics, each with its own hub page and a recommended place to start. To
+              Every guide sits in one of ten topics, each with its own hub page and a recommended place to start. To
               go deeper on the measured side, see{' '}
               <Link to="/measurements" className="text-terminal-green hover:underline">what ONDA measures</Link> and{' '}
               <Link to="/research" className="text-terminal-green hover:underline">the evidence</Link>.

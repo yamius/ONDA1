@@ -22,6 +22,7 @@ export type PrimaryTopicSlug =
   | "lifestyle"
   | "heart-fitness-metabolism"
   | "brain-focus-aging"
+  | "doctors-your-data"
 export type ArticleTopicSlug = PrimaryTopicSlug | 'world'
 export type WorldCountry = 'Japan' | 'India' | 'Germany' | 'Netherlands' | 'France'
 
@@ -132,6 +133,15 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
       "Focus and memory aren't fixed traits — they respond to how you breathe, rest and train your attention. These guides explore the neuroscience of concentration and flow, how breathing affects memory, practices like Trataka, and what research says about keeping the brain and body young.",
     startHere: 'how-to-get-rid-of-brain-fog',
     neighbors: ['meditation', 'sleep-body-clock', 'lifestyle'],
+  },
+  {
+    slug: 'doctors-your-data',
+    name: 'Doctors and Your Data',
+    tile: 'Which specialist can use your heart, HRV and sleep trends — and how to bring your data to an appointment.',
+    intro:
+      "Your watch records weeks of resting heart rate, HRV, breathing and sleep that no doctor normally sees. These guides show who can use that history for what — your GP, a cardiologist, a sleep specialist, a therapist or psychiatrist, a sports doctor — how to put it on one page, and where watch data stops: it points to a question, it is never a diagnosis.",
+    startHere: 'doctors-and-your-data',
+    neighbors: ['hrv-heart-rate', 'sleep-body-clock', 'stress-vagus'],
   },
   {
     slug: 'world',
@@ -323,13 +333,13 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "zazen-zen-meditation-brain": "meditation",
   "zen-koans-brain-cognition": "meditation",
   "zone-2-training-aerobic-base": "heart-fitness-metabolism",
-  "talk-to-your-doctor-about-wearable-data": "hrv-heart-rate",
-  "onda-report-for-your-gp": "hrv-heart-rate",
-  "onda-report-for-your-cardiologist": "hrv-heart-rate",
-  "onda-report-for-your-sleep-specialist": "sleep-body-clock",
-  "onda-report-for-your-sports-doctor": "heart-fitness-metabolism",
-  "doctors-and-your-data": "hrv-heart-rate",
-  "onda-report-for-your-therapist-or-psychiatrist": "stress-vagus",
+  "talk-to-your-doctor-about-wearable-data": "doctors-your-data",
+  "onda-report-for-your-gp": "doctors-your-data",
+  "onda-report-for-your-cardiologist": "doctors-your-data",
+  "onda-report-for-your-sleep-specialist": "doctors-your-data",
+  "onda-report-for-your-sports-doctor": "doctors-your-data",
+  "doctors-and-your-data": "doctors-your-data",
+  "onda-report-for-your-therapist-or-psychiatrist": "doctors-your-data",
 }
 
 export const ARTICLE_WORLD: Record<string, WorldCountry> = {
