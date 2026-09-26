@@ -492,6 +492,123 @@
       ],
       "imageTitle": "Pranayama et syndrome métabolique",
       "imageAlt": "Pranayama et syndrome métabolique — illustration : une personne jeune à son bureau passe à une respiration calme, une goutte de sang et un mètre ruban flottent discrètement autour."
+    },
+    "normal-hrv-by-age": {
+      "title": "VFC normale selon l’âge : qu’est-ce qu’une bonne VFC ?",
+      "description": "Il n’existe pas une seule bonne VFC : elle dépend de l’âge et de votre ligne de base. Plages par âge et pourquoi votre tendance compte plus.",
+      "neuralSuggestion": {
+        "text": "Arrêtez de vous demander « 45 ms, c’est bien ? ». Ce qui compte, c’est si VOTRE VFC monte ou baisse.",
+        "linkText": "Ce que mesure ONDA →"
+      },
+      "content": "\nIl n’existe pas de valeur de VFC (variabilité de la fréquence cardiaque, HRV en anglais) « bonne » pour tout le monde : elle dépend beaucoup de votre âge et plus encore de votre propre ligne de base. À titre indicatif, la VFC nocturne moyenne (mesurée en RMSSD) tourne autour de 60–100 ms dans la vingtaine, 45–75 ms dans la trentaine, 35–60 ms dans la quarantaine, 25–50 ms dans la cinquantaine et 20–40 ms après 60 ans. La VFC diminue naturellement avec l’âge et varie beaucoup selon l’appareil, la condition physique, le sommeil et le stress. Le chiffre le plus utile n’est pas votre position par rapport à la population, mais le sens dans lequel évolue votre propre VFC par rapport à votre normale personnelle.\n\n## Plages de VFC typiques selon l’âge\n\nCes plages sont volontairement larges. La VFC varie énormément d’une personne à l’autre : deux personnes en bonne santé du même âge peuvent différer de 40 ms ou plus. Servez-vous-en comme repère, pas comme tableau de score :\n\n| Âge | VFC nocturne typique (RMSSD) |\n|---|---|\n| 20–29 | ~60–100 ms |\n| 30–39 | ~45–75 ms |\n| 40–49 | ~35–60 ms |\n| 50–59 | ~25–50 ms |\n| 60+ | ~20–40 ms |\n\nSi votre valeur se situe dans votre tranche d’âge ou à proximité, c’est normal. Si elle est en dessous, cela seul ne veut pas dire grand-chose : cela peut tenir à votre génétique, à votre appareil ou à une semaine difficile. Ce qui compte, c’est sa direction dans le temps.\n\n## Pourquoi la VFC baisse avec l’âge\n\nLa VFC reflète la souplesse de votre système nerveux autonome : son agilité à passer du mode « combat ou fuite » au mode « repos et digestion ». Cette souplesse diminue progressivement avec l’âge, à mesure que l’influence du nerf vague sur le cœur s’affaiblit et que le système cardiovasculaire se rigidifie. C’est normal et attendu : une personne de 55 ans avec une VFC de 35 ms n’est pas « moins bien lotie » qu’une personne de 25 ans à 70 ms. Elles se trouvent simplement à des points différents de la même courbe. Ce déclin n’est pas figé non plus : la condition physique, le sommeil et une [pratique régulière de respiration lente](/articles/how-to-raise-hrv-naturally) peuvent le ralentir et même rattraper des baisses passagères.\n\n## Pourquoi votre ligne de base vaut mieux que n’importe quelle moyenne\n\nVoici le problème de fond des tableaux par âge : l’écart au sein d’un même âge est bien plus grand que la différence entre les âges. La moyenne de la population est donc presque inutile pour juger de votre propre santé. Ce qui est utile, c’est votre **ligne de base personnelle** — votre VFC habituelle des dernières semaines — et la façon dont la valeur du jour s’y compare. Passer de vos 60 ms habituels à 40 ms est un signal réel et significatif sur votre récupération. Le chiffre 40 à lui seul ne l’est pas : pour quelqu’un d’autre, il peut être parfaitement normal. La VFC est une mesure « vous contre vous », pas « vous contre tout le monde » — c’est précisément [pourquoi votre ligne de base le sait en premier](/articles/your-baseline-knows-first).\n\n## Ce qui fait baisser votre VFC\n\nAu jour le jour, la VFC évolue selon votre récupération. Ce qui la fait baisser le plus souvent :\n\n- **L’alcool** : même un verre réduit de façon mesurable la VFC nocturne.\n- **Un sommeil mauvais ou court** : le chemin le plus rapide vers une valeur basse.\n- **Le stress et la maladie** : tous deux maintiennent le système sympathique en marche.\n- **Le surentraînement** : s’entraîner dur sans récupérer écrase la VFC.\n- **Les repas tardifs et la caféine** : tous deux peuvent augmenter la fréquence cardiaque nocturne et baisser la VFC.\n\nUne seule valeur basse signifie généralement une mauvaise nuit. Une série de valeurs basses par rapport à votre ligne de base est le signal qui mérite votre attention.\n\n## Voyez votre propre VFC et sa tendance\n\nComme la VFC n’a de sens que par rapport à votre propre ligne de base, un tableau de moyennes par âge ne peut pas vous dire ce que vous avez vraiment besoin de savoir. ONDA lit votre fréquence cardiaque au repos, votre VFC et votre respiration dans l’historique de votre Apple Watch, construit votre couloir personnel — votre plage normale — et vous montre quand la journée en sort. Au lieu de vous demander « 45 ms, c’est bien ? », vous voyez si *votre* VFC se maintient, monte ou baisse, et ce qui la fait bouger en général. C’est ce chiffre qui reflète vraiment votre récupération.\n",
+      "imageAlt": "VFC normale selon l’âge — illustration : une rangée de silhouettes du plus jeune au plus âgé, chacune surmontée d’une courbe de rythme cardiaque dont la variabilité diminue doucement avec l’âge.",
+      "imageTitle": "VFC normale selon l’âge",
+      "faq": [
+        {
+          "question": "Quelle est une bonne VFC pour mon âge ?",
+          "answer": "Environ 60–100 ms dans la vingtaine, 45–75 ms dans la trentaine, 35–60 ms dans la quarantaine, 25–50 ms dans la cinquantaine et 20–40 ms après 60 ans (RMSSD nocturne). Mais les plages se chevauchent beaucoup : votre ligne de base et votre tendance comptent bien plus que la moyenne de votre âge."
+        },
+        {
+          "question": "Pourquoi ma VFC est-elle inférieure à la moyenne ?",
+          "answer": "Cela peut être tout à fait normal. La VFC varie énormément d’une personne à l’autre et dépend de l’appareil, de la génétique, de la condition physique, du sommeil et du stress. Une seule valeur sous la moyenne veut dire peu ; c’est une tendance à la baisse par rapport à votre propre ligne de base qui mérite l’attention."
+        },
+        {
+          "question": "La VFC baisse-t-elle vraiment avec l’âge ?",
+          "answer": "Oui. La souplesse autonome diminue progressivement avec l’âge, à mesure que l’influence vagale sur le cœur s’affaiblit. C’est normal et attendu, mais la condition physique, le sommeil et la respiration lente peuvent freiner ce déclin."
+        },
+        {
+          "question": "Quelle VFC est normale à 40 ans ? À 50 ? À 60 ?",
+          "answer": "Environ 35–60 ms dans la quarantaine, 25–50 ms dans la cinquantaine et 20–40 ms après 60 ans en RMSSD nocturne, avec une grande variation individuelle."
+        },
+        {
+          "question": "Une VFC basse doit-elle m’inquiéter ?",
+          "answer": "Une seule valeur basse n’est généralement qu’une mauvaise nuit. Une VFC durablement basse qui ne remonte pas avec un meilleur sommeil et moins de stress mérite d’en parler à un médecin — mais la VFC seule n’est pas un diagnostic."
+        }
+      ]
+    },
+    "resting-heart-rate-by-age": {
+      "title": "Fréquence cardiaque au repos selon l’âge : quelle est la normale ?",
+      "description": "Pouls au repos normal chez l’adulte : 60–100 bpm, selon l’âge et la forme. Valeurs typiques par âge et ce qui le fait monter ou baisser.",
+      "neuralSuggestion": {
+        "text": "Une mesure dit peu. La tendance de votre pouls au repos par rapport à votre normale en dit beaucoup.",
+        "linkText": "Ce que mesure ONDA →"
+      },
+      "content": "\nUne fréquence cardiaque au repos normale se situe, pour la plupart des adultes, entre 60 et 100 battements par minute, mais la plage saine évolue avec l’âge et la condition physique. Les nouveau-nés ont un pouls élevé (100–160 bpm), les enfants ralentissent jusqu’à l’adolescence et, à l’âge adulte, la plupart se situent entre 60 et 100 bpm au repos — les adultes bien entraînés souvent entre 40 et 60. Un pouls au repos plus bas reflète généralement une meilleure forme cardiovasculaire : un cœur plus fort éjecte plus de sang à chaque battement et en a besoin de moins. Comme pour la VFC, la comparaison la plus utile n’est pas la moyenne de la population, mais l’évolution de votre pouls au repos par rapport à votre propre ligne de base.\n\n## Fréquence cardiaque au repos typique selon l’âge\n\nLa bande « normale » adulte de 60–100 bpm est large, et à l’intérieur, c’est davantage la forme physique que l’âge qui distingue les gens. Voici des plages générales pour un pouls au repos sain :\n\n| Âge | Fréquence cardiaque au repos typique |\n|---|---|\n| Nouveau-né (0–1 mois) | 100–160 bpm |\n| Enfant (1–10 ans) | 70–120 bpm |\n| Adolescent (11–17 ans) | 60–100 bpm |\n| Adulte (18+) | 60–100 bpm |\n| Adulte bien entraîné | 40–60 bpm |\n\nÀ l’âge adulte, l’âge en lui-même fait moins varier le pouls au repos qu’on ne l’imagine : une personne de 60 ans en forme peut facilement avoir un pouls au repos plus bas qu’une personne de 30 ans sédentaire. La condition physique, le stress, le sommeil et les stimulants expliquent l’essentiel de l’écart.\n\n## Ce qui augmente ou diminue votre pouls au repos\n\nVotre fréquence cardiaque au repos est un relevé quotidien de l’état de votre corps. Influences courantes :\n\n**La font baisser (en général, bon signe) :** l’exercice aérobie régulier, un bon sommeil, une bonne hydratation, la pratique de la respiration lente. L’entraînement d’endurance est le levier le plus puissant à long terme — c’est pourquoi les sportifs sont entre 40 et 60.\n\n**La font monter (à surveiller) :** un sommeil mauvais ou court, l’alcool, la [caféine](/articles/caffeine-hrv-resting-heart-rate), le stress, la maladie, la déshydratation et la chaleur. Un pouls au repos supérieur de quelques battements à votre normale pendant plusieurs jours signifie souvent que votre corps est sous charge : un rhume qui couve, un stress accumulé ou une mauvaise récupération.\n\nUne seule valeur élevée s’explique généralement par une mauvaise nuit ou un café récent. Une hausse durable au-dessus de votre ligne de base est le signal le plus significatif.\n\n## Fréquence cardiaque au repos pendant le sommeil\n\nVotre pouls le plus bas de la journée survient généralement en sommeil profond, quand domine l’activité parasympathique « repos et digestion ». Ce minimum nocturne est l’un des chiffres les plus stables et comparables que vous puissiez suivre, car il est mesuré dans des conditions constantes : sans caféine, ni mouvement, ni stress sur le moment. C’est aussi là que l’alcool et les repas tardifs apparaissent clairement : tous deux maintiennent le pouls élevé toute la nuit, ce qui explique qu’on puisse se réveiller non récupéré après une nuit complète au lit. Suivre votre pouls nocturne au repos par rapport à votre normale est l’une des fenêtres les plus claires sur votre récupération.\n\n## Quand la fréquence cardiaque au repos compte\n\nUn pouls au repos dans la plage normale pour votre âge et votre forme est rassurant, mais le chiffre à surveiller, c’est le *changement*. Une hausse régulière de quelques battements au-dessus de votre ligne de base personnelle — sur plusieurs jours, pas sur une mesure — peut refléter une maladie, du surentraînement, du stress ou un mauvais sommeil. À l’inverse, un pouls au repos qui baisse à mesure que vous gagnez en forme est le signe d’une santé cardiovasculaire qui s’améliore. Les extrêmes dans un sens comme dans l’autre — durablement très élevé, ou très bas avec des symptômes comme des vertiges ou de la fatigue — méritent d’en parler à un médecin, mais le pouls au repos à lui seul est un signal, pas un diagnostic.\n\n## Voyez la tendance de votre pouls au repos\n\nUne mesure isolée dit peu ; votre tendance en dit beaucoup. ONDA lit votre fréquence cardiaque au repos et votre VFC dans l’historique de votre Apple Watch, construit votre ligne de base personnelle — votre plage normale — et vous montre quand la journée en sort. Au lieu de vous demander si 58 ou 68 est « bien », vous voyez si *votre* pouls au repos reste stable, baisse à mesure que vous progressez ou grimpe parce que quelque chose ne va pas. C’est cette tendance qui reflète vraiment votre santé.\n",
+      "imageAlt": "Fréquence cardiaque au repos selon l’âge — illustration : une ligne de battements calme au-dessus d’une chambre la nuit, entourée d’anneaux légers évoquant les étapes de la vie.",
+      "imageTitle": "Fréquence cardiaque au repos selon l’âge",
+      "faq": [
+        {
+          "question": "Quelle est la fréquence cardiaque au repos normale selon l’âge ?",
+          "answer": "Chez l’adulte, 60–100 bpm ; chez l’adulte bien entraîné, souvent 40–60 bpm. Les enfants et les adolescents sont plus haut. À l’âge adulte, la condition physique influence la valeur davantage que l’âge."
+        },
+        {
+          "question": "Un pouls au repos de 50 est-il trop bas ?",
+          "answer": "Pas forcément : un pouls au repos entre 40 et 60 est fréquent et sain chez les personnes en forme et les sportifs, et reflète un cœur efficace. Il n’est préoccupant que s’il s’accompagne de symptômes comme des vertiges, de la fatigue ou des malaises."
+        },
+        {
+          "question": "Quelle fréquence cardiaque au repos est normale pendant le sommeil ?",
+          "answer": "Votre pouls pendant le sommeil est généralement le plus bas de la journée, souvent quelques battements sous votre pouls de repos diurne, car l’activité parasympathique domine en sommeil profond."
+        },
+        {
+          "question": "Pourquoi mon pouls au repos est-il plus élevé que d’habitude ?",
+          "answer": "Les causes courantes sont un mauvais sommeil, l’alcool, la caféine, le stress, la maladie ou la déshydratation. Une hausse de quelques battements au-dessus de votre ligne de base qui dure quelques jours signifie souvent que votre corps est sous charge ou lutte contre quelque chose."
+        },
+        {
+          "question": "Le pouls au repos augmente-t-il avec l’âge ?",
+          "answer": "Seulement légèrement chez l’adulte en bonne santé : la condition physique, le sommeil et le mode de vie pèsent bien plus que l’âge. Une personne âgée en forme peut avoir un pouls au repos plus bas qu’une personne jeune sédentaire."
+        }
+      ]
+    },
+    "alternate-nostril-breathing": {
+      "title": "Respiration alternée (Nadi Shodhana) : bienfaits",
+      "description": "La respiration alternée (Nadi Shodhana) apaise le système nerveux et peut baisser la tension. Technique, rôle du rythme lent et quand l’utiliser.",
+      "neuralSuggestion": {
+        "text": "Le calme vient du rythme, pas des narines. Vérifiez-le sur vos propres données.",
+        "linkText": "Voir en direct →"
+      },
+      "content": "\nLa respiration alternée par les narines — Nadi Shodhana en yoga — consiste à boucher une narine, inspirer, puis changer de côté et expirer, en alternant tout au long de la pratique. Elle abaisse la fréquence cardiaque, apaise le système nerveux et la recherche l’associe à une baisse de la tension artérielle et à une meilleure variabilité de la fréquence cardiaque (VFC). Le mécanisme honnête : le calme vient surtout du rythme lent et contrôlé qu’elle impose, pas du changement de narine en lui-même. Elle prend environ cinq minutes et convient mieux pour ralentir ou rassembler un esprit dispersé que pour stopper une panique aiguë, où un [soupir physiologique](/articles/physiological-sigh) agit plus vite.\n\n## Comment pratiquer la respiration alternée\n\nAsseyez-vous confortablement, le dos droit. Contrôlez vos narines avec le pouce et l’annulaire de la main droite :\n\n1. **Bouchez la narine droite** avec le pouce. Inspirez lentement par la gauche.\n2. **Bouchez la narine gauche** avec l’annulaire, libérez la droite et **expirez** par la droite.\n3. **Inspirez** par la narine droite.\n4. **Changez** : bouchez la droite, libérez la gauche et **expirez** par la gauche.\n\nC’est un cycle complet. Continuez trois à cinq minutes en gardant une respiration lente, douce et régulière. Ne forcez pas la durée : un rythme confortable et sans hâte compte plus qu’un rythme long. Si la position des doigts vous distrait, imaginez simplement que vous respirez d’un côté à la fois ; c’est le rythme lent qui fait le travail.\n\n## Pourquoi ça marche — et ce qui compte vraiment\n\nL’effet apaisant de Nadi Shodhana s’explique simplement : elle ralentit votre respiration et la rend régulière et délibérée. La respiration lente — environ cinq à six respirations par minute — est l’un des moyens les mieux étayés d’activer le nerf vague, de basculer vers l’état parasympathique « repos et digestion » et d’augmenter la VFC en temps réel. L’alternance des narines donne à l’esprit une tâche simple sur laquelle se concentrer, ce qui aide à tenir la pratique, mais le bénéfice physiologique vient très majoritairement du rythme. C’est ce même rythme que vise directement une [fréquence respiratoire de résonance](/articles/find-your-resonance-breathing-rate).\n\nLa recherche clinique indienne soutient cet effet apaisant : dans un essai randomisé chez des patients hypertendus, 20 minutes de Nadi Shodhana ont nettement abaissé la tension systolique et diastolique ainsi que la fréquence cardiaque, et amélioré le temps de réaction auditive — un marqueur d’un système nerveux plus calme et plus réactif. Fait intéressant, le même essai a constaté que la variation des paramètres de VFC eux-mêmes n’était pas toujours statistiquement significative : le bénéfice se voit sur plusieurs mesures, pas sur un seul chiffre.\n\nLe yoga traditionnel décrit aussi la respiration alternée comme un moyen d’« équilibrer » les deux hémisphères du cerveau. L’état honnête des preuves : cette affirmation précise est faiblement étayée. Ce qui l’est bien, c’est que la respiration lente et contrôlée apaise le système nerveux — et Nadi Shodhana est une façon agréable et structurée d’y parvenir.\n\n## Quand l’utiliser\n\nLa respiration alternée convient mieux aux moments calmes et délibérés qu’aux urgences :\n\n- **Pour décompresser** avant de dormir ou après une journée chargée.\n- **Pour rassembler un esprit dispersé et surstimulé** quand vous devez vous concentrer.\n- **Comme courte pratique quotidienne**, pour installer l’habitude de respirer lentement.\n\nFace à un pic de stress aigu — une angoisse soudaine, une mauvaise nouvelle —, elle est trop lente pour être votre premier choix ; tournez-vous plutôt vers un soupir physiologique. Voyez Nadi Shodhana comme un rituel pour se poser, pas comme un outil de secours.\n\n## La respiration alternée face aux autres techniques\n\n| Technique | Rythme | Idéale pour |\n|---|---|---|\n| **Respiration alternée** | Lent, ~5 min | Rassembler un esprit dispersé, décompresser |\n| **Respiration cohérente** | 5–6 respirations/min | Calme durable, hausse de la VFC |\n| **Soupir physiologique** | 1–3 respirations | Stopper vite un pic de stress soudain |\n\nSi votre objectif est simplement d’augmenter la VFC et de vous calmer, la [respiration cohérente](/articles/coherent-breathing-guide) produit la même physiologie avec moins à penser. Choisissez Nadi Shodhana quand vous aimez le rituel et la concentration qu’il apporte.\n\n## Voyez le calme dans vos chiffres\n\nComme le bénéfice de Nadi Shodhana vient du ralentissement de la respiration, vous pouvez le voir se produire. ONDA lit votre pouls avec la caméra du téléphone ou l’Apple Watch et vous montre votre fréquence cardiaque qui se pose à mesure que votre respiration ralentit et se régularise ; avec une Apple Watch, vous voyez en plus votre VFC monter. Le voir dans vos propres données confirme que vous avez trouvé un rythme vraiment apaisant — et vous aide à distinguer si c’est la pratique qui agit, ou simplement la pause.\n",
+      "howToSteps": [
+        {
+          "name": "Inspirez par la narine gauche",
+          "text": "Bouchez la narine droite avec le pouce et inspirez lentement par la gauche."
+        },
+        {
+          "name": "Expirez par la narine droite",
+          "text": "Bouchez la narine gauche avec l’annulaire, libérez la droite et expirez par la droite."
+        },
+        {
+          "name": "Inspirez à droite, changez et expirez à gauche",
+          "text": "Inspirez par la narine droite, puis bouchez la droite, libérez la gauche et expirez par la gauche. Cela complète un cycle."
+        },
+        {
+          "name": "Continuez trois à cinq minutes",
+          "text": "Gardez une respiration lente, douce et régulière, à un rythme confortable et sans hâte. C’est le rythme lent qui apaise, pas le changement de narine."
+        }
+      ],
+      "imageAlt": "Respiration alternée (Nadi Shodhana) — illustration : un profil de visage traversé par deux flux de lumière qui alternent par les narines selon un motif équilibré et symétrique.",
+      "imageTitle": "Respiration alternée (Nadi Shodhana)",
+      "faq": [
+        {
+          "question": "Quels sont les bienfaits de la respiration alternée ?",
+          "answer": "Elle apaise le système nerveux, abaisse la fréquence cardiaque et est associée à une baisse de la tension et à une meilleure VFC. L’essentiel du bénéfice vient du rythme lent et régulier qu’elle impose."
+        },
+        {
+          "question": "Combien de temps pratiquer la respiration alternée ?",
+          "answer": "Trois à cinq minutes font une bonne séance. Gardez une respiration lente et confortable plutôt que longue ou forcée."
+        },
+        {
+          "question": "Respiration alternée ou respiration carrée : laquelle est la meilleure ?",
+          "answer": "Leur effet est proche : les deux apaisent par une respiration lente et contrôlée. Nadi Shodhana ajoute un rituel qui aide à se concentrer ; la respiration carrée est plus simple. Choisissez celle qui vous garde le plus impliqué."
+        },
+        {
+          "question": "L’alternance des narines compte-t-elle vraiment, ou est-ce le rythme lent ?",
+          "answer": "Les données désignent le rythme lent et régulier comme le principal moteur de l’effet apaisant. L’alternance des narines sert surtout à donner une tâche à l’attention, ce qui aide à rester dans la pratique."
+        },
+        {
+          "question": "La respiration alternée peut-elle faire baisser la tension ?",
+          "answer": "La recherche associe la respiration lente régulière, dont Nadi Shodhana, à des baisses modestes de la tension — par l’activation vagale, pas par la technique des narines en elle-même. C’est une pratique d’appoint, pas un traitement de l’hypertension."
+        }
+      ]
     }
   }
 }

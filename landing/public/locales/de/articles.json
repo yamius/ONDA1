@@ -492,6 +492,123 @@
       ],
       "imageTitle": "Pranayama und metabolisches Syndrom",
       "imageAlt": "Pranayama und metabolisches Syndrom — Illustration: ein junger Mensch am Schreibtisch wechselt zu ruhigem Atmen, ringsum schwach ein Blutstropfen und ein Maßband."
+    },
+    "normal-hrv-by-age": {
+      "title": "Normale HRV nach Alter: Was ist eine gute HRV?",
+      "description": "Es gibt keinen einzelnen guten HRV-Wert – er hängt von Alter und Baseline ab. Typische Bereiche nach Alter und warum dein Trend mehr zählt als der Schnitt.",
+      "neuralSuggestion": {
+        "text": "Hör auf zu fragen „Sind 45 ms gut?“. Entscheidend ist, ob DEINE HRV steigt oder fällt.",
+        "linkText": "Was ONDA misst →"
+      },
+      "content": "\nEinen allgemeingültigen „guten“ HRV-Wert gibt es nicht – er hängt stark vom Alter ab und noch stärker von deiner eigenen Baseline. Als grobe Orientierung liegt die durchschnittliche nächtliche HRV (gemessen als RMSSD) mit Mitte zwanzig bei etwa 60–100 ms, in den Dreißigern bei 45–75 ms, in den Vierzigern bei 35–60 ms, in den Fünfzigern bei 25–50 ms und ab 60 bei 20–40 ms. Die HRV sinkt mit dem Alter ganz natürlich und schwankt stark je nach Gerät, Fitness, Schlaf und Stress. Die nützlichste Zahl ist nicht, wo du im Vergleich zur Bevölkerung liegst, sondern ob deine eigene HRV gegenüber deinem persönlichen Normalwert steigt oder fällt.\n\n## Typische HRV-Bereiche nach Alter\n\nDiese Bereiche sind bewusst breit. Die HRV unterscheidet sich enorm zwischen Menschen – zwei gesunde Gleichaltrige können 40 ms oder mehr auseinanderliegen. Nutze die Tabelle als Orientierung, nicht als Punktestand:\n\n| Alter | Typische nächtliche HRV (RMSSD) |\n|---|---|\n| 20–29 | ~60–100 ms |\n| 30–39 | ~45–75 ms |\n| 40–49 | ~35–60 ms |\n| 50–59 | ~25–50 ms |\n| 60+ | ~20–40 ms |\n\nLiegt dein Wert in oder nahe deiner Altersspanne, ist das normal. Liegt er darunter, sagt das allein wenig – es kann an deinen Genen, deinem Gerät oder einer anstrengenden Woche liegen. Entscheidend ist, in welche Richtung er sich über die Zeit bewegt.\n\n## Warum die HRV mit dem Alter sinkt\n\nDie HRV spiegelt die Flexibilität deines autonomen Nervensystems – wie wendig es zwischen „Kampf oder Flucht“ und „Ruhe und Verdauung“ wechselt. Diese Flexibilität nimmt mit dem Alter allmählich ab, weil der Einfluss des Vagusnervs auf das Herz schwächer wird und das Herz-Kreislauf-System steifer. Das ist normal und zu erwarten: Eine 55-Jährige mit 35 ms HRV ist nicht „schlechter dran“ als ein 25-Jähriger mit 70 ms. Beide stehen an verschiedenen Punkten derselben Kurve. Der Rückgang ist auch nicht festgeschrieben – Fitness, Schlaf und regelmäßiges [langsames Atmen](/articles/how-to-raise-hrv-naturally) können ihn bremsen und kurzfristige Einbrüche sogar wieder ausgleichen.\n\n## Warum deine Baseline jeden Durchschnitt schlägt\n\nDas Grundproblem von Alterstabellen: Die Spanne innerhalb eines Alters ist viel breiter als der Unterschied zwischen den Altersgruppen. Deshalb taugt der Bevölkerungsdurchschnitt kaum, um deine eigene Gesundheit zu beurteilen. Nützlich ist deine **persönliche Baseline** – deine typische HRV der letzten Wochen – und wie der heutige Wert im Vergleich dazu aussieht. Ein Rückgang von deinen gewohnten 60 ms auf 40 ms ist ein echtes, aussagekräftiges Signal über deine Erholung. Die Zahl 40 allein ist es nicht; für jemand anderen kann sie völlig normal sein. HRV ist eine Kennzahl „du gegen dich“, nicht „du gegen alle“ – genau deshalb [weiß deine eigene Baseline es zuerst](/articles/your-baseline-knows-first).\n\n## Was deine HRV senkt\n\nVon Tag zu Tag bewegt sich die HRV je nachdem, wie gut du dich erholst. Das drückt sie am häufigsten:\n\n- **Alkohol** – schon ein Glas senkt die nächtliche HRV messbar.\n- **Schlechter oder kurzer Schlaf** – der schnellste Weg zu einem niedrigen Wert.\n- **Stress und Krankheit** – beide halten den Sympathikus eingeschaltet.\n- **Übertraining** – hartes Training ohne Erholung unterdrückt die HRV.\n- **Späte Mahlzeiten und Koffein** – beide können die nächtliche Herzfrequenz erhöhen und die HRV senken.\n\nEin einzelner niedriger Wert bedeutet meist nur eine schlechte Nacht. Eine Reihe niedriger Werte gegenüber deiner Baseline ist das Signal, auf das es sich zu achten lohnt.\n\n## Sieh deine eigene HRV und ihren Trend\n\nWeil die HRV nur im Vergleich zu deiner eigenen Baseline etwas bedeutet, kann dir eine Tabelle mit Altersdurchschnitten nicht sagen, was du wirklich wissen musst. ONDA liest Ruhepuls, HRV und Atmung aus dem Verlauf deiner Apple Watch, baut deinen persönlichen Korridor – deinen Normalbereich – auf und zeigt dir, wann der heutige Tag davon abweicht. Statt zu fragen „Sind 45 ms gut?“, siehst du, ob *deine* HRV hält, steigt oder fällt – und was sie meistens bewegt. Das ist die Zahl, die deine Erholung wirklich widerspiegelt.\n",
+      "imageAlt": "Normale HRV nach Alter — Illustration: eine Reihe Silhouetten von jung bis alt, über jeder eine Herzrhythmuslinie, deren Variabilität mit dem Alter sanft abnimmt.",
+      "imageTitle": "Normale HRV nach Alter",
+      "faq": [
+        {
+          "question": "Was ist eine gute HRV für mein Alter?",
+          "answer": "Grob 60–100 ms mit Mitte zwanzig, 45–75 ms in den Dreißigern, 35–60 ms in den Vierzigern, 25–50 ms in den Fünfzigern und 20–40 ms ab 60 (nächtlicher RMSSD). Die Bereiche überschneiden sich aber stark – deine eigene Baseline und dein Trend zählen weit mehr als der Altersdurchschnitt."
+        },
+        {
+          "question": "Warum liegt meine HRV unter dem Durchschnitt?",
+          "answer": "Das kann völlig normal sein. Die HRV unterscheidet sich enorm zwischen Menschen und hängt von Gerät, Genen, Fitness, Schlaf und Stress ab. Ein einzelner unterdurchschnittlicher Wert sagt wenig; beobachten solltest du einen Abwärtstrend gegenüber deiner eigenen Baseline."
+        },
+        {
+          "question": "Sinkt die HRV wirklich mit dem Alter?",
+          "answer": "Ja. Die autonome Flexibilität nimmt mit dem Alter allmählich ab, weil der Einfluss des Vagus auf das Herz schwächer wird. Das ist normal und zu erwarten – Fitness, Schlaf und langsames Atmen können den Rückgang aber bremsen."
+        },
+        {
+          "question": "Was ist eine normale HRV mit 40? Mit 50? Mit 60?",
+          "answer": "Grob 35–60 ms in den Vierzigern, 25–50 ms in den Fünfzigern und 20–40 ms ab 60 beim nächtlichen RMSSD – mit großer individueller Streuung."
+        },
+        {
+          "question": "Muss ich mir wegen einer niedrigen HRV Sorgen machen?",
+          "answer": "Ein einzelner niedriger Wert ist meist nur eine schlechte Nacht. Eine dauerhaft niedrige HRV, die sich mit besserem Schlaf und weniger Stress nicht erholt, solltest du ärztlich besprechen – die HRV allein ist aber keine Diagnose."
+        }
+      ]
+    },
+    "resting-heart-rate-by-age": {
+      "title": "Ruhepuls nach Alter: Was ist normal?",
+      "description": "Normaler Ruhepuls bei Erwachsenen: 60–100 Schläge/min, je nach Alter und Fitness. Typische Werte nach Alter und was den Ruhepuls hebt oder senkt.",
+      "neuralSuggestion": {
+        "text": "Ein einzelner Messwert sagt wenig. Der Trend deines Ruhepulses gegenüber deinem Normalwert sagt viel.",
+        "linkText": "Was ONDA misst →"
+      },
+      "content": "\nEin normaler Ruhepuls liegt für die meisten Erwachsenen bei 60 bis 100 Schlägen pro Minute, doch der gesunde Bereich verschiebt sich mit Alter und Fitness. Neugeborene haben einen hohen Puls (100–160 Schläge/min), Kinder werden bis ins Jugendalter ruhiger, und im Erwachsenenalter liegen die meisten in Ruhe zwischen 60 und 100 – gut trainierte Erwachsene oft bei 40 bis knapp 60. Ein niedrigerer Ruhepuls spiegelt in der Regel eine bessere Herz-Kreislauf-Fitness: Ein stärkeres Herz pumpt pro Schlag mehr Blut und braucht weniger Schläge. Wie bei der HRV ist der nützlichste Vergleich nicht der Bevölkerungsdurchschnitt, sondern wie sich dein Ruhepuls gegenüber deiner eigenen Baseline entwickelt.\n\n## Typischer Ruhepuls nach Alter\n\nDer „normale“ Erwachsenenbereich von 60–100 Schlägen/min ist breit, und innerhalb davon verteilt die Fitness die Menschen stärker als das Alter. Allgemeine Bereiche für einen gesunden Ruhepuls:\n\n| Alter | Typischer Ruhepuls |\n|---|---|\n| Neugeborene (0–1 Monat) | 100–160 Schläge/min |\n| Kinder (1–10 Jahre) | 70–120 Schläge/min |\n| Jugendliche (11–17 Jahre) | 60–100 Schläge/min |\n| Erwachsene (18+) | 60–100 Schläge/min |\n| Gut trainierte Erwachsene | 40–60 Schläge/min |\n\nIm Erwachsenenalter bewegt das Alter selbst den Ruhepuls weniger, als man denkt – ein fitter 60-Jähriger kann leicht einen niedrigeren Ruhepuls haben als ein untrainierter 30-Jähriger. Fitness, Stress, Schlaf und Stimulanzien erklären den Großteil des Unterschieds.\n\n## Was deinen Ruhepuls hebt und senkt\n\nDein Ruhepuls ist eine tägliche Anzeige, wie es deinem Körper geht. Häufige Einflüsse:\n\n**Senken ihn (meist gut):** regelmäßiges Ausdauertraining, guter Schlaf, ausreichend Trinken, langsames Atmen. Ausdauertraining ist der stärkste langfristige Hebel – deshalb liegen Sportler bei 40 bis knapp 60.\n\n**Heben ihn (lohnt Aufmerksamkeit):** schlechter oder kurzer Schlaf, Alkohol, [Koffein](/articles/caffeine-hrv-resting-heart-rate), Stress, Krankheit, Flüssigkeitsmangel und Hitze. Ein Ruhepuls, der ein paar Tage lang einige Schläge über deinem Normalwert liegt, bedeutet oft, dass dein Körper unter Last steht – eine beginnende Erkältung, angestauter Stress oder schlechte Erholung.\n\nEin einzelner erhöhter Wert heißt meist nur: eine schlechte Nacht oder ein frischer Kaffee. Ein anhaltender Anstieg über deine Baseline ist das aussagekräftigere Signal.\n\n## Ruhepuls im Schlaf\n\nDein niedrigster Ruhepuls des Tages tritt meist im Tiefschlaf auf, wenn die parasympathische „Ruhe und Verdauung“-Aktivität dominiert. Dieses nächtliche Minimum ist eine der stabilsten, vergleichbarsten Zahlen, die du verfolgen kannst, weil es unter gleichbleibenden Bedingungen gemessen wird – ohne Koffein, Bewegung oder Stress im Moment. Hier zeigen sich auch Alkohol und späte Mahlzeiten deutlich: Beide halten den Schlafpuls die ganze Nacht erhöht, weshalb du selbst nach einer vollen Nacht im Bett unerholt aufwachen kannst. Den nächtlichen Ruhepuls gegen deinen eigenen Normalwert zu verfolgen, ist eines der klarsten Fenster in deine Erholung.\n\n## Wann der Ruhepuls wichtig ist\n\nEin Ruhepuls im Normalbereich für Alter und Fitness ist beruhigend, doch die Zahl, auf die es ankommt, ist die *Veränderung*. Ein stetiger Anstieg um einige Schläge über deine persönliche Baseline – über Tage, nicht in einer Messung – kann auf Krankheit, Übertraining, Stress oder schlechten Schlaf hinweisen. Umgekehrt ist ein Ruhepuls, der mit wachsender Fitness sinkt, ein Zeichen für ein gesünder werdendes Herz-Kreislauf-System. Extreme in beide Richtungen – dauerhaft sehr hoch oder sehr niedrig mit Beschwerden wie Schwindel oder Erschöpfung – solltest du ärztlich besprechen, doch der Ruhepuls allein ist ein Signal, keine Diagnose.\n\n## Sieh den Trend deines Ruhepulses\n\nEin einzelner Messwert sagt wenig, dein Trend sagt viel. ONDA liest Ruhepuls und HRV aus dem Verlauf deiner Apple Watch, baut deine persönliche Baseline – deinen Normalbereich – auf und zeigt dir, wann der heutige Tag davon abweicht. Statt zu rätseln, ob 58 oder 68 „gut“ ist, siehst du, ob *dein* Ruhepuls stabil bleibt, mit wachsender Fitness sinkt oder leise steigt, weil etwas nicht stimmt. Dieser Trend spiegelt deine Gesundheit wirklich wider.\n",
+      "imageAlt": "Ruhepuls nach Alter — Illustration: eine ruhige Herzschlaglinie über einem sanft beleuchteten Schlafzimmer bei Nacht, feine Ringe deuten die Lebensphasen an.",
+      "imageTitle": "Ruhepuls nach Alter",
+      "faq": [
+        {
+          "question": "Was ist ein normaler Ruhepuls nach Alter?",
+          "answer": "Bei Erwachsenen 60–100 Schläge/min; bei gut trainierten Erwachsenen oft 40–60. Kinder und Jugendliche liegen höher. Im Erwachsenenalter beeinflusst die Fitness den Wert stärker als das Alter."
+        },
+        {
+          "question": "Ist ein Ruhepuls von 50 zu niedrig?",
+          "answer": "Nicht unbedingt – ein Ruhepuls von 40 bis knapp 60 ist bei fitten und sportlichen Menschen häufig und gesund und spiegelt ein effizientes Herz. Bedenklich ist er nur zusammen mit Beschwerden wie Schwindel, Erschöpfung oder Ohnmacht."
+        },
+        {
+          "question": "Was ist ein normaler Ruhepuls im Schlaf?",
+          "answer": "Dein Schlafpuls ist meist der niedrigste des Tages, oft einige Schläge unter deinem Ruhepuls am Tag, weil im Tiefschlaf die parasympathische Aktivität dominiert."
+        },
+        {
+          "question": "Warum ist mein Ruhepuls höher als sonst?",
+          "answer": "Häufige Ursachen sind schlechter Schlaf, Alkohol, Koffein, Stress, Krankheit oder Flüssigkeitsmangel. Ein Anstieg um einige Schläge über deine Baseline, der ein paar Tage anhält, bedeutet oft, dass dein Körper unter Last steht oder gegen etwas ankämpft."
+        },
+        {
+          "question": "Steigt der Ruhepuls mit dem Alter?",
+          "answer": "Bei gesunden Erwachsenen nur leicht – Fitness, Schlaf und Lebensstil wirken weit stärker als das Alter. Ein fitter älterer Mensch kann einen niedrigeren Ruhepuls haben als ein untrainierter jüngerer."
+        }
+      ]
+    },
+    "alternate-nostril-breathing": {
+      "title": "Wechselatmung (Nadi Shodhana): Wirkung und Anleitung",
+      "description": "Wechselatmung (Nadi Shodhana) beruhigt das Nervensystem und kann den Blutdruck senken. So geht sie, warum das langsame Tempo wirkt und wann du sie nutzt.",
+      "neuralSuggestion": {
+        "text": "Die Ruhe kommt vom Tempo, nicht von den Nasenlöchern. Prüf es an deinen eigenen Daten.",
+        "linkText": "Live ansehen →"
+      },
+      "content": "\nDie Wechselatmung – im Yoga Nadi Shodhana – ist eine Technik, bei der du ein Nasenloch verschließt, einatmest, dann die Seite wechselst und ausatmest, und das die ganze Übung über abwechselst. Sie senkt die Herzfrequenz, beruhigt das Nervensystem und wird in der Forschung mit niedrigerem Blutdruck und verbesserter Herzratenvariabilität (HRV) in Verbindung gebracht. Der ehrliche Mechanismus: Die Ruhe kommt vor allem vom langsamen, kontrollierten Tempo, in das dich die Technik bringt – nicht vom Wechsel der Nasenlöcher selbst. Sie dauert etwa fünf Minuten und eignet sich besser zum Herunterfahren oder Sammeln eines zerstreuten Geistes als zum Stoppen akuter Panik, bei der ein [physiologischer Seufzer](/articles/physiological-sigh) schneller wirkt.\n\n## So geht die Wechselatmung\n\nSetz dich bequem mit geradem Rücken hin. Steuere die Nasenlöcher mit Daumen und Ringfinger der rechten Hand:\n\n1. **Verschließe das rechte Nasenloch** mit dem Daumen. Atme langsam durch das linke ein.\n2. **Verschließe das linke Nasenloch** mit dem Ringfinger, gib das rechte frei und **atme** durch das rechte **aus**.\n3. **Atme** durch das rechte Nasenloch **ein**.\n4. **Wechsle**: Verschließe das rechte, gib das linke frei und **atme** durch das linke **aus**.\n\nDas ist ein vollständiger Zyklus. Mach drei bis fünf Minuten weiter und halte den Atem langsam, weich und gleichmäßig. Erzwinge keine Länge – ein angenehmes, gemächliches Tempo ist wichtiger als ein langes. Wenn dich die Fingerhaltung ablenkt, stell dir einfach vor, abwechselnd durch eine Seite zu atmen; die Arbeit macht der langsame Rhythmus.\n\n## Warum sie wirkt – und was wirklich zählt\n\nDie beruhigende Wirkung von Nadi Shodhana ist schnell erklärt: Sie verlangsamt deine Atmung und macht sie gleichmäßig und bewusst. Langsames Atmen – etwa fünf bis sechs Atemzüge pro Minute – gehört zu den am besten belegten Wegen, den Vagusnerv zu aktivieren, in den parasympathischen „Ruhe und Verdauung“-Modus zu wechseln und die HRV in Echtzeit zu erhöhen. Der Wechsel der Nasenlöcher gibt dem Geist eine einfache Aufgabe, was hilft, bei der Übung zu bleiben – der körperliche Nutzen kommt aber ganz überwiegend vom Tempo. Genau dieses Tempo peilt eine [Resonanz-Atemfrequenz](/articles/find-your-resonance-breathing-rate) direkt an.\n\nIndische klinische Forschung stützt die beruhigende Wirkung: In einer randomisierten Studie mit Bluthochdruckpatienten senkten 20 Minuten Nadi Shodhana systolischen und diastolischen Blutdruck sowie die Herzfrequenz deutlich und verbesserten die auditive Reaktionszeit – ein Marker für ein ruhigeres, reaktionsfähigeres Nervensystem. Interessanterweise war die Veränderung der HRV-Parameter selbst in derselben Studie nicht immer statistisch signifikant – eine Erinnerung daran, dass sich der Nutzen über mehrere Messgrößen zeigt, nicht in einer Zahl.\n\nDas traditionelle Yoga beschreibt die Wechselatmung außerdem als „Ausgleich“ der beiden Gehirnhälften. Der ehrliche Stand der Forschung: Diese konkrete Behauptung ist schwach belegt. Gut belegt ist, dass langsames, kontrolliertes Atmen das Nervensystem beruhigt – und Nadi Shodhana ist ein angenehmer, strukturierter Weg dorthin.\n\n## Wann du sie nutzt\n\nDie Wechselatmung passt eher zu ruhigen, bewussten Momenten als zu Notfällen:\n\n- **Zum Herunterfahren** vor dem Schlafen oder nach einem vollen Tag.\n- **Zum Sammeln eines zerstreuten, überreizten Geistes**, wenn du dich konzentrieren musst.\n- **Als kurze tägliche Übung**, um die Gewohnheit langsamen Atmens aufzubauen.\n\nBei einer akuten Stressspitze – plötzlicher Angst, einer schlechten Nachricht – ist sie zu langsam, um die erste Wahl zu sein; greif dann zum physiologischen Seufzer. Sieh Nadi Shodhana als Ritual zum Ankommen, nicht als Rettungswerkzeug.\n\n## Wechselatmung im Vergleich zu anderen Techniken\n\n| Technik | Tempo | Am besten für |\n|---|---|---|\n| **Wechselatmung** | Langsam, ~5 Min. | Zerstreuten Geist sammeln, herunterfahren |\n| **Kohärentes Atmen** | 5–6 Atemzüge/Min. | Anhaltende Ruhe, HRV steigern |\n| **Physiologischer Seufzer** | 1–3 Atemzüge | Plötzliche Stressspitze schnell stoppen |\n\nWenn du einfach die HRV steigern und ruhiger werden willst, erreicht [kohärentes Atmen](/articles/coherent-breathing-guide) dieselbe Physiologie mit weniger, worüber du nachdenken musst. Wähle Nadi Shodhana, wenn du das Ritual und die Konzentration magst, die es mit sich bringt.\n\n## Sieh die Ruhe in deinen Zahlen\n\nWeil der Nutzen von Nadi Shodhana vom Verlangsamen des Atems kommt, kannst du ihn beobachten. ONDA liest deinen Puls über die Handykamera oder die Apple Watch und zeigt, wie sich deine Herzfrequenz beruhigt, während dein Atem langsamer und gleichmäßiger wird; mit einer Apple Watch siehst du zusätzlich, wie deine HRV steigt. Das in den eigenen Zahlen zu sehen bestätigt, dass du ein wirklich beruhigendes Tempo gefunden hast – und hilft dir zu unterscheiden, ob die Übung wirkt oder nur die Pause.\n",
+      "howToSteps": [
+        {
+          "name": "Durch das linke Nasenloch einatmen",
+          "text": "Verschließe das rechte Nasenloch mit dem Daumen und atme langsam durch das linke ein."
+        },
+        {
+          "name": "Durch das rechte Nasenloch ausatmen",
+          "text": "Verschließe das linke Nasenloch mit dem Ringfinger, gib das rechte frei und atme durch das rechte aus."
+        },
+        {
+          "name": "Rechts einatmen, wechseln, links ausatmen",
+          "text": "Atme durch das rechte Nasenloch ein, verschließe dann das rechte, gib das linke frei und atme durch das linke aus. Damit ist ein Zyklus vollständig."
+        },
+        {
+          "name": "Drei bis fünf Minuten fortsetzen",
+          "text": "Halte den Atem langsam, weich und gleichmäßig in einem angenehmen, gemächlichen Tempo. Beruhigend wirkt der langsame Rhythmus, nicht der Wechsel der Nasenlöcher."
+        }
+      ],
+      "imageAlt": "Wechselatmung (Nadi Shodhana) — Illustration: ein Gesichtsprofil mit zwei abwechselnden Lichtströmen durch die Nasenlöcher in einem ausgewogenen, symmetrischen Muster.",
+      "imageTitle": "Wechselatmung (Nadi Shodhana)",
+      "faq": [
+        {
+          "question": "Was bringt die Wechselatmung?",
+          "answer": "Sie beruhigt das Nervensystem, senkt die Herzfrequenz und wird mit niedrigerem Blutdruck und besserer HRV in Verbindung gebracht. Der Großteil des Nutzens kommt vom langsamen, gleichmäßigen Tempo, das sie vorgibt."
+        },
+        {
+          "question": "Wie lange sollte ich Wechselatmung üben?",
+          "answer": "Drei bis fünf Minuten sind eine gute Einheit. Halte den Atem langsam und angenehm statt lang oder erzwungen."
+        },
+        {
+          "question": "Wechselatmung oder Box Breathing – was ist besser?",
+          "answer": "Die Wirkung ist ähnlich; beide beruhigen durch langsames, kontrolliertes Atmen. Nadi Shodhana bringt ein Ritual zur Konzentration mit, Box Breathing ist einfacher. Nimm, was dich besser bei der Sache hält."
+        },
+        {
+          "question": "Zählt der Wechsel der Nasenlöcher oder das langsame Tempo?",
+          "answer": "Die Datenlage spricht für das langsame, gleichmäßige Tempo als Hauptgrund der beruhigenden Wirkung. Der Wechsel der Nasenlöcher gibt vor allem der Aufmerksamkeit eine Aufgabe, was hilft, bei der Übung zu bleiben."
+        },
+        {
+          "question": "Kann Wechselatmung den Blutdruck senken?",
+          "answer": "Die Forschung bringt regelmäßiges langsames Atmen, auch Nadi Shodhana, mit einer moderaten Blutdrucksenkung in Verbindung – durch Vagusaktivierung, nicht durch die Nasenloch-Technik an sich. Es ist eine unterstützende Übung, keine Behandlung von Bluthochdruck."
+        }
+      ]
     }
   }
 }

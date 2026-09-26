@@ -220,6 +220,9 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'nose-vs-mouth-breathing', publishOn: '2026-09-25' },
   { slug: 'meditation-vs-breathwork', publishOn: '2026-09-25' },
   { slug: 'cardiac-coherence-365-method', publishOn: '2026-09-25' },
+  { slug: 'how-much-meditation-do-you-need', publishOn: '2026-09-26' },
+  { slug: 'measuring-meditation-progress', publishOn: '2026-09-26' },
+  { slug: 'humming-breath-vagus', publishOn: '2026-09-26' },
   // Lifestyle-signal cluster (honest "trace in your own numbers") — staggered drip
   { slug: 'your-baseline-knows-first', publishOn: '2026-09-18' },
   { slug: 'respiratory-rate-hidden-signal', publishOn: '2026-09-18' },
@@ -406,6 +409,9 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'yoga-breathing-diabetes-blood-sugar', publishOn: '2026-09-25' },
   { slug: 'morita-therapy-tracking-paradox', publishOn: '2026-09-25' },
   { slug: 'pranayama-metabolic-syndrome', publishOn: '2026-09-25' },
+  { slug: 'normal-hrv-by-age', publishOn: '2026-09-26' },
+  { slug: 'resting-heart-rate-by-age', publishOn: '2026-09-26' },
+  { slug: 'alternate-nostril-breathing', publishOn: '2026-09-26' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
@@ -543,24 +549,30 @@ const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
  * slug that also has a body in public/locales/<lang>/articles.json goes live.
  */
 const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
+  uk: [
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+  ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep',
     'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
     'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
     'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus', 'trataka-candle-gazing-focus',
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
