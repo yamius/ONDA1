@@ -323,6 +323,12 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "zazen-zen-meditation-brain": "meditation",
   "zen-koans-brain-cognition": "meditation",
   "zone-2-training-aerobic-base": "heart-fitness-metabolism",
+  "talk-to-your-doctor-about-wearable-data": "hrv-heart-rate",
+  "onda-report-for-your-gp": "hrv-heart-rate",
+  "onda-report-for-your-cardiologist": "hrv-heart-rate",
+  "onda-report-for-your-sleep-specialist": "sleep-body-clock",
+  "onda-report-for-your-sports-doctor": "heart-fitness-metabolism",
+  "doctors-and-your-data": "hrv-heart-rate",
 }
 
 export const ARTICLE_WORLD: Record<string, WorldCountry> = {

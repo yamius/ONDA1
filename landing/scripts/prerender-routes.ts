@@ -260,6 +260,13 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'apple-watch-recovery-hrv-vs-overall-hrv', publishOn: '2026-11-16' },
   { slug: 'dysautonomia-long-covid-breathing', publishOn: '2026-11-16' },
   { slug: 'high-blood-pressure-slow-breathing', publishOn: '2026-11-16' },
+  // Series "Doctors and Your Data" — 2026-09-26
+  { slug: 'doctors-and-your-data', publishOn: '2026-09-26' },
+  { slug: 'talk-to-your-doctor-about-wearable-data', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-gp', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-cardiologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-sleep-specialist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-sports-doctor', publishOn: '2026-09-26' },
 ]
 
 /**
@@ -418,6 +425,13 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'how-much-meditation-do-you-need', publishOn: '2026-09-26' },
   { slug: 'measuring-meditation-progress', publishOn: '2026-09-26' },
   { slug: 'humming-breath-vagus', publishOn: '2026-09-26' },
+  // Series "Doctors and Your Data" — 2026-09-26
+  { slug: 'doctors-and-your-data', publishOn: '2026-09-26' },
+  { slug: 'talk-to-your-doctor-about-wearable-data', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-gp', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-cardiologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-sleep-specialist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-sports-doctor', publishOn: '2026-09-26' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
@@ -565,6 +579,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus', 'yoga-poses-heart-rate-blood-pressure',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
@@ -575,6 +590,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -584,6 +600,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -593,6 +610,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   it: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -602,6 +620,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -611,6 +630,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -620,6 +640,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -629,6 +650,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -638,6 +660,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
+    'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
