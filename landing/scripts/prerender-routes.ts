@@ -274,6 +274,7 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'onda-report-for-your-pulmonologist', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-occupational-health-doctor', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-rehabilitation-team', publishOn: '2026-09-26' },
+  { slug: 'how-much-alcohol-lowers-hrv', publishOn: '2026-09-26' },
 ]
 
 /**
@@ -446,6 +447,7 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'onda-report-for-your-pulmonologist', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-occupational-health-doctor', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-rehabilitation-team', publishOn: '2026-09-26' },
+  { slug: 'how-much-alcohol-lowers-hrv', publishOn: '2026-09-26' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
@@ -596,6 +598,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
@@ -609,6 +613,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -621,6 +627,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -633,6 +641,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   it: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -645,6 +655,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -657,6 +669,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -669,6 +683,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -681,6 +697,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -693,6 +711,8 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
+    'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
+    'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
