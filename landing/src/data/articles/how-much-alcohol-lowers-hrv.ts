@@ -28,6 +28,8 @@ const article: Article = {
   content: `
 Alcohol lowers your heart rate variability (HRV) and raises your resting heart rate overnight, and the effect scales with how much you drink. In aggregate wearable data, a single drink drops HRV by around 3–4% and raises sleeping heart rate by about 1–3 bpm; four drinks can cut HRV by roughly 15%. WHOOP data shows even one drink lowers HRV by an average of 7 milliseconds and raises resting heart rate by 3 bpm. The mechanism isn't sedation — alcohol activates your sympathetic "fight or flight" system as your body processes it as a toxin, which is why you can sleep a full night after drinking and still wake up unrecovered.
 
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+
 ## The dose-response: what each drink costs
 
 The clearest way to see alcohol's effect is by number of standard drinks in one night. Analysis of aggregate wearable data shows a consistent dose-response curve for both heart rate variability (which drops) and sleeping heart rate (which rises):

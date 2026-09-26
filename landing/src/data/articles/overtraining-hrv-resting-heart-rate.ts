@@ -32,6 +32,8 @@ const article: Article = {
 
 > "You trained harder this block than last. You got slower. The numbers know why.
 
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+
 > The oldest mistake in training is treating the workout as the thing that makes you fitter. It isn't. The workout is the *stimulus* — a controlled dose of damage. The adaptation, the actual fitness, is built afterward, during recovery. Skip the recovery and you keep paying for stimulus you can't cash in. Do it long enough and your own physiology starts filing complaints."
 
 ---

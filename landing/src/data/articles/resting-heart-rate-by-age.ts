@@ -27,6 +27,8 @@ const article: Article = {
   content: `
 A normal resting heart rate for most adults is 60 to 100 beats per minute, but the healthy range shifts with age and fitness. Newborns run high (100–160 bpm), children settle down through their teens, and by adulthood most people land between 60 and 100 bpm at rest — with well-trained adults often in the 40s or 50s. A lower resting heart rate generally reflects better cardiovascular fitness, because a stronger heart pumps more blood per beat and needs fewer beats. As with HRV, the single most useful comparison isn't the population average — it's how your resting heart rate is trending against your own baseline.
 
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+
 ## Typical resting heart rate by age
 
 The adult "normal" band of 60–100 bpm is wide, and fitness moves people within it more than age does. These are general ranges for a healthy resting heart rate:

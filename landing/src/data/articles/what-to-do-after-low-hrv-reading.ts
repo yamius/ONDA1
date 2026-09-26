@@ -31,6 +31,8 @@ const article: Article = {
 
 > "Your watch says your HRV is low this morning. Your stomach drops a little. Is something wrong? Should you cancel the workout? Panic?
 
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+
 > Slow down. A single low [HRV](/glossary/heart-rate-variability) reading is one of the most over-interpreted numbers in consumer health. Most of the time it means very little — and when it does mean something, the right response is boring, physiological, and entirely in your hands."
 
 ---

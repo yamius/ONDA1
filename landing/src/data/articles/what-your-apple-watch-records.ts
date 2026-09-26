@@ -34,6 +34,8 @@ const article: Article = {
 
 > "You don't have to do anything for an Apple Watch to build a record of you. While you sleep it samples your pulse, times the gaps between beats, and counts your breaths — night after night. Most people never look. The numbers are already there; the only trick is reading them back as a *range* instead of a single, lonely figure."
 
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+
 ---
 
 ## Section 1: The three things it records at rest

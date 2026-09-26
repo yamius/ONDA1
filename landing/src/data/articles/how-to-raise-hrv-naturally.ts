@@ -32,6 +32,8 @@ const article: Article = {
 
 > "Everyone wants a higher HRV. Fewer people know what actually moves it — or that most of the advice online is just 'sleep well and relax,' which is true, slow, and unsatisfying.
 
+**Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
+
 > Here's the honest version: your [heart-rate variability](/glossary/heart-rate-variability) is a readout of how adaptable your nervous system is, and it rises when you remove what's suppressing it and train what strengthens it. Some of those levers take weeks. One of them works in minutes — and it's the only one you can watch happen in real time."
 
 ---
