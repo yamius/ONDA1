@@ -599,30 +599,35 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
+    'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
+    'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
+    'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
+    'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
     'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
+    'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
