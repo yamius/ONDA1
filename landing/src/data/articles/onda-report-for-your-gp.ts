@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["talk-to-your-doctor-about-wearable-data", "resting-heart-rate-by-age", "normal-hrv-by-age", "what-to-do-after-low-hrv-reading", "how-much-alcohol-lowers-hrv"],
   introStyle: 'blue',
+  image: '/images/articles/onda-report-for-your-gp.jpg',
+  imageAlt:
+    "Showing Your Heart Data to Your GP \u2014 illustration: a family doctor at a bright desk reviewing a one-page heart-rate and HRV report with a patient, a stethoscope beside it.",
+  imageTitle: "Showing Your Heart Data to Your GP",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/talk-to-your-doctor-about-wearable-data',

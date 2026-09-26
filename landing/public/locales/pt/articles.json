@@ -963,7 +963,9 @@
           "question": "Um clínico geral pode diagnosticar algo a partir dos dados do meu relógio?",
           "answer": "Não. Os dados do relógio podem levantar uma pergunta, mas o diagnóstico vem do exame clínico e dos exames que seu médico decidir que você precisa."
         }
-      ]
+      ],
+      "imageAlt": "Seus dados cardíacos e o clínico geral — ilustração: um clínico geral em uma mesa iluminada analisa com um paciente um relatório de uma página de frequência cardíaca e VFC, com um estetoscópio ao lado.",
+      "imageTitle": "Seus dados cardíacos e o clínico geral"
     },
     "onda-report-for-your-cardiologist": {
       "title": "Seus dados cardíacos e o cardiologista: o que ele pode fazer",
@@ -994,7 +996,9 @@
           "question": "Posso usar meu relógio para monitorar uma condição cardíaca conhecida?",
           "answer": "Só como complemento, e só conforme a orientação do seu cardiologista. O monitoramento prescrito e o plano de tratamento dele vêm sempre primeiro."
         }
-      ]
+      ],
+      "imageAlt": "Seus dados cardíacos e o cardiologista — ilustração: um cardiologista aponta com uma caneta um relatório de uma página com um coração e uma linha de pulso, o paciente sentado do outro lado da mesa.",
+      "imageTitle": "Seus dados cardíacos e o cardiologista"
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Seus dados noturnos e o especialista em sono",
@@ -1025,7 +1029,9 @@
           "question": "Quais exames um especialista em sono pode pedir?",
           "answer": "Dependendo dos sintomas: questionários, um diário do sono, um teste domiciliar de apneia do sono ou um estudo do sono de uma noite inteira (polissonografia), que mede diretamente a respiração, o oxigênio e as fases do sono."
         }
-      ]
+      ],
+      "imageAlt": "Seus dados noturnos e o especialista em sono — ilustração: um paciente segura um relatório de uma página com uma onda que vai da noite à manhã, de uma lua a um sol nascente.",
+      "imageTitle": "Seus dados noturnos e o especialista em sono"
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Seus dados de recuperação e o médico do esporte",
@@ -1056,7 +1062,9 @@
           "question": "Devo ajustar o treino com base na VFC diária?",
           "answer": "Alguns atletas fazem isso, e a pesquisa sugere que o treino guiado pela VFC pode ajudar a individualizar a carga. Observe as tendências, e não dias isolados, e converse sobre isso com um treinador ou médico do esporte."
         }
-      ]
+      ],
+      "imageAlt": "Seus dados de recuperação e o médico do esporte — ilustração: tênis de corrida, um smartwatch e um relatório de recuperação de uma página com tendências de frequência cardíaca em um piso ensolarado.",
+      "imageTitle": "Seus dados de recuperação e o médico do esporte"
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Levando os dados do seu corpo para a terapia: como um terapeuta ou psiquiatra pode usá-los",
@@ -1087,7 +1095,9 @@
           "question": "Tenho que compartilhar minhas anotações com o terapeuta?",
           "answer": "Não. Compartilhe apenas o que escolher. Os dados e as anotações são seus."
         }
-      ]
+      ],
+      "imageAlt": "Levando os dados do seu corpo para a terapia — ilustração: paciente e terapeuta em poltronas em uma sala calma e clara, com um relatório de uma página na mesinha entre eles.",
+      "imageTitle": "Levando os dados do seu corpo para a terapia"
     },
     "onda-report-for-your-neurologist": {
       "title": "Frequência cardíaca e o neurologista: POTS, disautonomia e COVID longa",
@@ -1118,7 +1128,9 @@
           "question": "A respiração lenta trata a disautonomia?",
           "answer": "Não. A respiração lenta pode ajudar algumas pessoas a se sentirem mais calmas e estáveis, mas o tratamento deve vir de um profissional de saúde e pode incluir líquidos, sal, compressão, recondicionamento e medicação."
         }
-      ]
+      ],
+      "imageAlt": "Frequência cardíaca e o neurologista — ilustração: um desenho em traço menta de um cérebro que se ramifica em vias nervosas terminando em um coração, com uma neurologista com um tablet ao lado.",
+      "imageTitle": "Frequência cardíaca e o neurologista"
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Frequência cardíaca e hormônios: o endocrinologista (tireoide, diabetes)",
@@ -1149,7 +1161,9 @@
           "question": "Que exames um endocrinologista pode pedir?",
           "answer": "Dependendo dos sintomas: exames de sangue da tireoide, glicemia e hemoglobina glicada (HbA1c) e, no diabetes com sinais de comprometimento dos nervos, testes de reflexos autonômicos cardiovasculares."
         }
-      ]
+      ],
+      "imageAlt": "Frequência cardíaca e hormônios — ilustração: um botão giratório redondo ajustado em uma marca menta ao lado de um relatório de uma página de tendências cardíacas — hormônios como um botão da frequência em repouso.",
+      "imageTitle": "Frequência cardíaca e hormônios"
     },
     "onda-report-for-your-gynecologist": {
       "title": "Seu ciclo na frequência cardíaca: ginecologista, gravidez e menopausa",
@@ -1180,7 +1194,9 @@
           "question": "Os dados podem ajudar com os sintomas da menopausa?",
           "answer": "Podem documentar ondas de calor, suores noturnos e sono perturbado ao longo do tempo, ajudando você e seu ginecologista a avaliar o impacto e ver como o tratamento muda as coisas."
         }
-      ]
+      ],
+      "imageAlt": "Seu ciclo na frequência cardíaca — ilustração: um anel circular do ciclo de onde flui uma onda menta, uma ginecologista com um tablet em uma clínica iluminada.",
+      "imageTitle": "Seu ciclo na frequência cardíaca"
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Sua respiração em números: o pneumologista, asma e falta de ar",
@@ -1211,7 +1227,9 @@
           "question": "Meu relógio consegue detectar asma ou DPOC?",
           "answer": "Não. Elas são diagnosticadas com exames de função pulmonar. Seus dados podem mostrar padrões e crises ao longo do tempo para discutir com um especialista."
         }
-      ]
+      ],
+      "imageAlt": "Sua respiração em números — ilustração: pulmões em traço menta envoltos por suaves ondas de respiração, com um pneumologista em pé ao lado.",
+      "imageTitle": "Sua respiração em números"
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Seu trabalho no seu pulso: o médico do trabalho, turnos e burnout",
@@ -1242,7 +1260,9 @@
           "question": "O que ajuda quem trabalha em turnos a dormir?",
           "answer": "Proteger o sono diurno (quarto escuro e silencioso), programar a exposição à luz, manter um período fixo de sono âncora e planejar a recuperação entre os blocos de turnos. Problemas persistentes podem exigir um especialista em sono."
         }
-      ]
+      ],
+      "imageAlt": "Seu trabalho no seu pulso — ilustração: uma mesa com um notebook, um smartwatch e uma agenda semanal com dias de trabalho e de folga sombreados em menta.",
+      "imageTitle": "Seu trabalho no seu pulso"
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "A recuperação não é linear: seus dados para fisiatra e fisioterapeuta",
@@ -1273,7 +1293,9 @@
           "question": "Meus dados antigos são úteis depois de uma doença?",
           "answer": "Muito. Se seu relógio registrou sua saúde antes de você adoecer, ele mostra sua verdadeira linha de base — o alvo para onde sua recuperação está voltando."
         }
-      ]
+      ],
+      "imageAlt": "A recuperação não é linear — ilustração: uma pessoa sobe degraus de madeira enquanto uma linha de recuperação menta sobe com ela, passo a passo.",
+      "imageTitle": "A recuperação não é linear"
     }
   },
   "series": {

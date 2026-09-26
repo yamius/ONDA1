@@ -963,7 +963,9 @@
           "question": "Kan een huisarts iets diagnosticeren op basis van mijn horlogedata?",
           "answer": "Nee. Horlogedata kunnen een vraag oproepen, maar een diagnose komt van lichamelijk onderzoek en de tests waarvan je arts besluit dat je ze nodig hebt."
         }
-      ]
+      ],
+      "imageAlt": "Je hartdata laten zien aan je huisarts — illustratie: een huisarts aan een licht bureau bekijkt met een patiënt een rapport van één pagina over hartslag en HRV, met een stethoscoop ernaast.",
+      "imageTitle": "Je hartdata laten zien aan je huisarts"
     },
     "onda-report-for-your-cardiologist": {
       "title": "Je hartdata laten zien aan een cardioloog",
@@ -994,7 +996,9 @@
           "question": "Kan ik mijn horloge gebruiken om een bekende hartaandoening te volgen?",
           "answer": "Alleen als aanvulling, en alleen zoals je cardioloog adviseert. De voorgeschreven bewaking en het behandelplan gaan altijd voor."
         }
-      ]
+      ],
+      "imageAlt": "Je hartdata laten zien aan een cardioloog — illustratie: een cardioloog wijst met een pen naar een rapport van één pagina met een hart en een hartslaglijn, de patiënt zit tegenover hem.",
+      "imageTitle": "Je hartdata laten zien aan een cardioloog"
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Je nachtdata laten zien aan een slaapspecialist",
@@ -1025,7 +1029,9 @@
           "question": "Welke onderzoeken kan een slaapspecialist aanvragen?",
           "answer": "Afhankelijk van de klachten: vragenlijsten, een slaapdagboek, een thuistest op slaapapneu of een slaaponderzoek met overnachting (polysomnografie), dat ademhaling, zuurstof en slaapstadia rechtstreeks meet."
         }
-      ]
+      ],
+      "imageAlt": "Je nachtdata laten zien aan een slaapspecialist — illustratie: een patiënt houdt een rapport van één pagina vast met een golf die van nacht naar ochtend loopt, van een maan naar een opkomende zon.",
+      "imageTitle": "Je nachtdata laten zien aan een slaapspecialist"
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Je hersteldata laten zien aan een sportarts",
@@ -1056,7 +1062,9 @@
           "question": "Moet ik mijn training aanpassen op basis van mijn dagelijkse HRV?",
           "answer": "Sommige sporters doen dat, en onderzoek suggereert dat HRV-gestuurde training kan helpen de belasting te individualiseren. Kijk naar trends in plaats van losse dagen, en bespreek het met een coach of sportarts."
         }
-      ]
+      ],
+      "imageAlt": "Je hersteldata laten zien aan een sportarts — illustratie: hardloopschoenen, een smartwatch en een herstelrapport van één pagina met hartslagtrends op een zonnige vloer.",
+      "imageTitle": "Je hersteldata laten zien aan een sportarts"
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Je lichaamsdata meenemen naar therapie: hoe een therapeut of psychiater ze kan gebruiken",
@@ -1087,7 +1095,9 @@
           "question": "Moet ik mijn notities met mijn therapeut delen?",
           "answer": "Nee. Deel alleen wat jij kiest. De data en notities zijn van jou."
         }
-      ]
+      ],
+      "imageAlt": "Je lichaamsdata meenemen naar therapie — illustratie: een patiënt en een therapeut in fauteuils in een rustige, lichte kamer, met een rapport van één pagina op het tafeltje tussen hen in.",
+      "imageTitle": "Je lichaamsdata meenemen naar therapie"
     },
     "onda-report-for-your-neurologist": {
       "title": "Hartslag en zenuwstelsel: data voor de neuroloog (POTS, long covid)",
@@ -1118,7 +1128,9 @@
           "question": "Behandelt langzaam ademen dysautonomie?",
           "answer": "Nee. Langzaam ademen kan sommige mensen helpen zich rustiger en stabieler te voelen, maar de behandeling hoort van een arts te komen en kan bestaan uit vocht, zout, steunkousen, conditieopbouw en medicatie."
         }
-      ]
+      ],
+      "imageAlt": "Hartslag en zenuwstelsel — illustratie: een mintgroene lijntekening van een brein dat vertakt in zenuwbanen die eindigen in een hart, met een neuroloog met tablet ernaast.",
+      "imageTitle": "Hartslag en zenuwstelsel"
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Hartslag en hormonen: data voor de endocrinoloog (schildklier, diabetes)",
@@ -1149,7 +1161,9 @@
           "question": "Welke tests kan een endocrinoloog aanvragen?",
           "answer": "Afhankelijk van de klachten: bloedonderzoek naar de schildklier, glucose en HbA1c, en bij diabetes met tekenen van zenuwbetrokkenheid cardiovasculaire autonome reflextests."
         }
-      ]
+      ],
+      "imageAlt": "Hartslag en hormonen — illustratie: een ronde draaiknop op een mintgroene markering naast een rapport van één pagina met hartslagtrends — hormonen als draaiknop voor de rusthartslag.",
+      "imageTitle": "Hartslag en hormonen"
     },
     "onda-report-for-your-gynecologist": {
       "title": "Je cyclus in je hartslag: data voor de gynaecoloog (overgang)",
@@ -1180,7 +1194,9 @@
           "question": "Kunnen data helpen bij overgangsklachten?",
           "answer": "Ze kunnen opvliegers, nachtelijk zweten en verstoorde slaap in de tijd vastleggen, zodat jij en je gynaecoloog de impact kunnen inschatten en zien wat een behandeling verandert."
         }
-      ]
+      ],
+      "imageAlt": "Je cyclus in je hartslag — illustratie: een ronde cyclusring waaruit een mintgroene golf stroomt, een gynaecoloog met een tablet in een lichte kliniek.",
+      "imageTitle": "Je cyclus in je hartslag"
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Je ademhaling in cijfers: data voor de longarts (astma, kortademig)",
@@ -1211,7 +1227,9 @@
           "question": "Kan mijn horloge astma of COPD herkennen?",
           "answer": "Nee. Die worden vastgesteld met longfunctieonderzoek. Je data kunnen patronen en opflakkeringen in de tijd laten zien om met een specialist te bespreken."
         }
-      ]
+      ],
+      "imageAlt": "Je ademhaling in cijfers — illustratie: mintgroene longen in lijntekening omgeven door zachte ademgolven, met een longarts ernaast.",
+      "imageTitle": "Je ademhaling in cijfers"
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Je werkweek in je hartslag: data voor de bedrijfsarts (burn-out)",
@@ -1242,7 +1260,9 @@
           "question": "Wat helpt mensen in ploegendienst beter te slapen?",
           "answer": "Slaap overdag beschermen (donkere, stille kamer), blootstelling aan licht goed timen, een vaste ankerslaap aanhouden en herstel plannen tussen dienstblokken. Bij aanhoudende problemen kan een slaapspecialist nodig zijn."
         }
-      ]
+      ],
+      "imageAlt": "Je werkweek in je hartslag — illustratie: een bureau met een laptop, een smartwatch en een weekplanner waarin werkdagen en vrije dagen mintgroen zijn gearceerd.",
+      "imageTitle": "Je werkweek in je hartslag"
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "Herstel gaat niet rechtlijnig: data voor revalidatiearts en fysio",
@@ -1273,7 +1293,9 @@
           "question": "Zijn mijn oude data nuttig na een ziekte?",
           "answer": "Zeer. Als je horloge je gezondheid vóór je ziekte registreerde, laat het je echte baseline zien: het doel waar je herstel naartoe gaat."
         }
-      ]
+      ],
+      "imageAlt": "Herstel gaat niet rechtlijnig — illustratie: iemand loopt houten treden op terwijl een mintgroene herstellijn stap voor stap met hem meestijgt.",
+      "imageTitle": "Herstel gaat niet rechtlijnig"
     }
   },
   "series": {

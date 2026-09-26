@@ -971,7 +971,9 @@
           "question": "Un médecin généraliste peut-il poser un diagnostic à partir des données de ma montre ?",
           "answer": "Non. Les données de la montre peuvent soulever une question, mais le diagnostic repose sur l’examen clinique et les analyses que votre médecin juge nécessaires."
         }
-      ]
+      ],
+      "imageAlt": "Montrer vos données cardiaques à votre médecin généraliste — illustration : un médecin généraliste à un bureau lumineux examine avec un patient un rapport d’une page sur la fréquence cardiaque et la VFC, un stéthoscope à côté.",
+      "imageTitle": "Montrer vos données cardiaques à votre médecin généraliste"
     },
     "onda-report-for-your-cardiologist": {
       "title": "Montrer vos données cardiaques à un cardiologue : ce qu’il peut en faire",
@@ -1002,7 +1004,9 @@
           "question": "Puis-je utiliser ma montre pour surveiller une maladie cardiaque connue ?",
           "answer": "Uniquement en complément, et seulement selon les conseils de votre cardiologue. La surveillance et le traitement qu’il a prescrits passent toujours en premier."
         }
-      ]
+      ],
+      "imageAlt": "Montrer vos données cardiaques à un cardiologue — illustration : un cardiologue pointe un stylo vers un rapport d’une page montrant un cœur et une ligne de pouls, le patient assis en face.",
+      "imageTitle": "Montrer vos données cardiaques à un cardiologue"
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Montrer vos données nocturnes à un spécialiste du sommeil",
@@ -1033,7 +1037,9 @@
           "question": "Quels examens un spécialiste du sommeil peut-il prescrire ?",
           "answer": "Selon les symptômes : des questionnaires, un agenda du sommeil, un test d’apnée du sommeil à domicile ou une étude du sommeil d’une nuit (polysomnographie), qui mesure directement la respiration, l’oxygène et les stades du sommeil."
         }
-      ]
+      ],
+      "imageAlt": "Montrer vos données nocturnes à un spécialiste du sommeil — illustration : un patient tient un rapport d’une page où une onde va de la nuit au matin, d’une lune à un soleil levant.",
+      "imageTitle": "Montrer vos données nocturnes à un spécialiste du sommeil"
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Montrer vos données de récupération à un médecin du sport",
@@ -1064,7 +1070,9 @@
           "question": "Dois-je ajuster mon entraînement selon ma VFC quotidienne ?",
           "answer": "Certains sportifs le font, et la recherche suggère que l’entraînement guidé par la VFC peut aider à individualiser la charge. Regardez les tendances plutôt que les jours isolés, et parlez-en à un entraîneur ou à un médecin du sport."
         }
-      ]
+      ],
+      "imageAlt": "Montrer vos données de récupération à un médecin du sport — illustration : des chaussures de course, une montre connectée et un rapport de récupération d’une page avec des tendances de pouls sur un sol ensoleillé.",
+      "imageTitle": "Montrer vos données de récupération à un médecin du sport"
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Apporter vos données corporelles en thérapie : comment un thérapeute ou un psychiatre peut s’en servir",
@@ -1095,7 +1103,9 @@
           "question": "Dois-je partager mes notes avec mon thérapeute ?",
           "answer": "Non. Partagez uniquement ce que vous choisissez. Les données et les notes vous appartiennent."
         }
-      ]
+      ],
+      "imageAlt": "Apporter vos données corporelles en thérapie — illustration : un patient et un thérapeute dans des fauteuils, dans une pièce calme et lumineuse, un rapport d’une page sur la petite table entre eux.",
+      "imageTitle": "Apporter vos données corporelles en thérapie"
     },
     "onda-report-for-your-neurologist": {
       "title": "Pouls et système nerveux : vos données pour le neurologue (POTS, COVID long)",
@@ -1126,7 +1136,9 @@
           "question": "La respiration lente soigne-t-elle la dysautonomie ?",
           "answer": "Non. La respiration lente peut aider certaines personnes à se sentir plus calmes et plus stables, mais le traitement doit venir d’un clinicien et peut inclure hydratation, sel, contention, reconditionnement et médicaments."
         }
-      ]
+      ],
+      "imageAlt": "Pouls et système nerveux — illustration : un dessin au trait menthe d’un cerveau se ramifiant en voies nerveuses qui aboutissent à un cœur, une neurologue avec une tablette à côté.",
+      "imageTitle": "Pouls et système nerveux"
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Pouls et hormones : vos données pour l’endocrinologue (thyroïde, diabète)",
@@ -1157,7 +1169,9 @@
           "question": "Quels examens un endocrinologue peut-il prescrire ?",
           "answer": "Selon les symptômes : bilan thyroïdien sanguin, glycémie et HbA1c, et, dans le diabète avec des signes d’atteinte nerveuse, des tests des réflexes autonomes cardiovasculaires."
         }
-      ]
+      ],
+      "imageAlt": "Pouls et hormones — illustration : un cadran rond réglé sur un repère menthe à côté d’un rapport d’une page sur les tendances du pouls — les hormones comme un cadran sur le pouls au repos.",
+      "imageTitle": "Pouls et hormones"
     },
     "onda-report-for-your-gynecologist": {
       "title": "Votre cycle dans votre pouls : données pour le gynécologue (ménopause)",
@@ -1188,7 +1202,9 @@
           "question": "Les données peuvent-elles aider face aux symptômes de la ménopause ?",
           "answer": "Elles peuvent documenter dans le temps les bouffées de chaleur, les sueurs nocturnes et le sommeil perturbé, ce qui vous aide, vous et votre gynécologue, à en évaluer l’impact et à voir ce que change un traitement."
         }
-      ]
+      ],
+      "imageAlt": "Votre cycle dans votre pouls — illustration : un anneau circulaire du cycle d’où s’écoule une onde menthe, une gynécologue avec une tablette dans un cabinet lumineux.",
+      "imageTitle": "Votre cycle dans votre pouls"
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Votre respiration en chiffres : données pour le pneumologue (asthme)",
@@ -1219,7 +1235,9 @@
           "question": "Ma montre peut-elle détecter un asthme ou une BPCO ?",
           "answer": "Non. Ces maladies se diagnostiquent par des explorations fonctionnelles respiratoires. Vos données peuvent montrer des schémas et des poussées dans le temps, à discuter avec un spécialiste."
         }
-      ]
+      ],
+      "imageAlt": "Votre respiration en chiffres — illustration : des poumons au trait menthe entourés de douces ondes respiratoires, un pneumologue debout à côté.",
+      "imageTitle": "Votre respiration en chiffres"
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Travail posté, burn-out : vos données pour le médecin du travail",
@@ -1250,7 +1268,9 @@
           "question": "Qu’est-ce qui aide les travailleurs postés à dormir ?",
           "answer": "Protéger le sommeil de jour (chambre sombre et calme), gérer le moment de l’exposition à la lumière, garder une période de sommeil d’ancrage régulière et prévoir une récupération entre les séquences de postes. Des problèmes persistants peuvent nécessiter un spécialiste du sommeil."
         }
-      ]
+      ],
+      "imageAlt": "Travail posté, burn-out — illustration : un bureau avec un ordinateur portable, une montre connectée et un agenda hebdomadaire où jours travaillés et jours de repos sont colorés en menthe.",
+      "imageTitle": "Travail posté, burn-out"
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "La récupération n’est pas linéaire : vos données pour la rééducation",
@@ -1281,7 +1301,9 @@
           "question": "Mes anciennes données sont-elles utiles après une maladie ?",
           "answer": "Très. Si votre montre a enregistré votre santé avant que vous tombiez malade, elle montre votre vraie ligne de base — l’objectif vers lequel votre récupération revient."
         }
-      ]
+      ],
+      "imageAlt": "La récupération n’est pas linéaire — illustration : une personne gravit des marches en bois tandis qu’une ligne de récupération menthe monte avec elle, pas à pas.",
+      "imageTitle": "La récupération n’est pas linéaire"
     }
   },
   "series": {

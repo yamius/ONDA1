@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["onda-report-for-your-gp", "talk-to-your-doctor-about-wearable-data", "social-jet-lag-irregular-sleep", "cardiac-coherence-insomnia-sleep", "how-much-alcohol-lowers-hrv"],
   introStyle: 'indigo',
+  image: '/images/articles/onda-report-for-your-sleep-specialist.jpg',
+  imageAlt:
+    "Showing Your Night Data to a Sleep Specialist \u2014 illustration: a patient holding a one-page report with a night-to-morning wave running from a moon to a rising sun.",
+  imageTitle: "Showing Your Night Data to a Sleep Specialist",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/talk-to-your-doctor-about-wearable-data',

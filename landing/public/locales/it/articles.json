@@ -963,7 +963,9 @@
           "question": "Il medico di base può diagnosticare qualcosa dai dati del mio orologio?",
           "answer": "No. I dati dell'orologio possono sollevare una domanda, ma la diagnosi viene dalla visita e dagli esami che il medico ritiene necessari."
         }
-      ]
+      ],
+      "imageAlt": "Mostrare i dati del cuore al medico di base — illustrazione: un medico di famiglia a una scrivania luminosa esamina con un paziente un report di una pagina su frequenza cardiaca e HRV, con uno stetoscopio accanto.",
+      "imageTitle": "Mostrare i dati del cuore al medico di base"
     },
     "onda-report-for-your-cardiologist": {
       "title": "Mostrare i dati del cuore a un cardiologo: cosa può (e non può) farne",
@@ -994,7 +996,9 @@
           "question": "Posso usare l'orologio per monitorare una condizione cardiaca nota?",
           "answer": "Solo come supporto, e solo secondo le indicazioni del tuo cardiologo. Il monitoraggio e il piano terapeutico da lui prescritti vengono sempre prima."
         }
-      ]
+      ],
+      "imageAlt": "Mostrare i dati del cuore a un cardiologo — illustrazione: un cardiologo indica con una penna un report di una pagina con un cuore e una linea del battito, il paziente seduto di fronte.",
+      "imageTitle": "Mostrare i dati del cuore a un cardiologo"
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Mostrare i dati notturni a uno specialista del sonno: cosa dicono e cosa no",
@@ -1025,7 +1029,9 @@
           "question": "Quali esami potrebbe prescrivere uno specialista del sonno?",
           "answer": "A seconda dei sintomi: questionari, un diario del sonno, un test domiciliare per l'apnea notturna o uno studio del sonno notturno (polisonnografia), che misura direttamente respirazione, ossigeno e fasi del sonno."
         }
-      ]
+      ],
+      "imageAlt": "Mostrare i dati notturni a uno specialista del sonno — illustrazione: un paziente tiene un report di una pagina con un’onda che va dalla notte al mattino, da una luna a un sole che sorge.",
+      "imageTitle": "Mostrare i dati notturni a uno specialista del sonno"
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Mostrare i dati di recupero a un medico dello sport: allenamento e ripresa sicura",
@@ -1056,7 +1062,9 @@
           "question": "Dovrei regolare l'allenamento in base alla HRV quotidiana?",
           "answer": "Alcuni atleti lo fanno, e la ricerca suggerisce che l'allenamento guidato dalla HRV può aiutare a personalizzare il carico. Guarda le tendenze invece dei singoli giorni e parlane con un allenatore o un medico dello sport."
         }
-      ]
+      ],
+      "imageAlt": "Mostrare i dati di recupero a un medico dello sport — illustrazione: scarpe da corsa, uno smartwatch e un report di recupero di una pagina con i trend del battito su un pavimento soleggiato.",
+      "imageTitle": "Mostrare i dati di recupero a un medico dello sport"
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Portare i dati del corpo in terapia: come può usarli uno psicoterapeuta o uno psichiatra",
@@ -1087,7 +1095,9 @@
           "question": "Devo condividere le mie note con il terapeuta?",
           "answer": "No. Condividi solo ciò che scegli. I dati e le note sono tuoi."
         }
-      ]
+      ],
+      "imageAlt": "Portare i dati del corpo in terapia — illustrazione: paziente e terapeuta in poltrona in una stanza calma e luminosa, un report di una pagina sul tavolino tra loro.",
+      "imageTitle": "Portare i dati del corpo in terapia"
     },
     "onda-report-for-your-neurologist": {
       "title": "Battito e sistema nervoso: cosa può farne il neurologo (POTS, disautonomia, long COVID)",
@@ -1118,7 +1128,9 @@
           "question": "La respirazione lenta cura la disautonomia?",
           "answer": "No. Può aiutare alcune persone a sentirsi più calme e stabili, ma la terapia deve venire da un medico e può includere liquidi, sale, compressione, ricondizionamento e farmaci."
         }
-      ]
+      ],
+      "imageAlt": "Battito e sistema nervoso — illustrazione: un disegno a tratto color menta di un cervello che si ramifica in vie nervose che terminano in un cuore, con una neurologa e un tablet accanto.",
+      "imageTitle": "Battito e sistema nervoso"
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Battito e ormoni: cosa può farne l'endocrinologo (tiroide, diabete)",
@@ -1149,7 +1161,9 @@
           "question": "Quali esami potrebbe prescrivere un endocrinologo?",
           "answer": "A seconda dei sintomi: esami del sangue della tiroide, glicemia ed emoglobina glicata (HbA1c) e, nel diabete con segni di coinvolgimento nervoso, test dei riflessi autonomici cardiovascolari."
         }
-      ]
+      ],
+      "imageAlt": "Battito e ormoni — illustrazione: una manopola rotonda impostata su un segno color menta accanto a un report di una pagina sui trend del battito: gli ormoni come manopola del battito a riposo.",
+      "imageTitle": "Battito e ormoni"
     },
     "onda-report-for-your-gynecologist": {
       "title": "Il ciclo nel tuo battito: cosa può farne il ginecologo (ciclo, gravidanza, menopausa)",
@@ -1180,7 +1194,9 @@
           "question": "I dati possono aiutare con i sintomi della menopausa?",
           "answer": "Possono documentare nel tempo vampate, sudorazioni notturne e sonno disturbato, aiutando te e il ginecologo a valutarne l'impatto e a vedere come cambia la situazione con una terapia."
         }
-      ]
+      ],
+      "imageAlt": "Il ciclo nel tuo battito — illustrazione: un anello circolare del ciclo da cui scorre un’onda color menta, una ginecologa con un tablet in un ambulatorio luminoso.",
+      "imageTitle": "Il ciclo nel tuo battito"
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Il tuo respiro in numeri: cosa può farne il pneumologo (asma, fiato corto)",
@@ -1211,7 +1227,9 @@
           "question": "Il mio orologio può rilevare asma o BPCO?",
           "answer": "No. Si diagnosticano con gli esami di funzionalità polmonare. I tuoi dati possono mostrare schemi e riacutizzazioni nel tempo da discutere con uno specialista."
         }
-      ]
+      ],
+      "imageAlt": "Il tuo respiro in numeri — illustrazione: polmoni a tratto color menta avvolti da morbide onde di respiro, con un pneumologo in piedi accanto.",
+      "imageTitle": "Il tuo respiro in numeri"
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "La settimana lavorativa nel battito: cosa può farne il medico del lavoro (turni, burnout)",
@@ -1242,7 +1260,9 @@
           "question": "Cosa aiuta a dormire chi lavora a turni?",
           "answer": "Proteggere il sonno diurno (stanza buia e silenziosa), gestire i tempi di esposizione alla luce, mantenere un periodo regolare di sonno \"àncora\" e pianificare il recupero tra i blocchi di turni. I problemi persistenti possono richiedere uno specialista del sonno."
         }
-      ]
+      ],
+      "imageAlt": "La settimana lavorativa nel battito — illustrazione: una scrivania con un portatile, uno smartwatch e un planner settimanale con giorni lavorativi e di riposo evidenziati in menta.",
+      "imageTitle": "La settimana lavorativa nel battito"
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "Il recupero non è una linea retta: cosa possono farne fisiatra e fisioterapista",
@@ -1273,7 +1293,9 @@
           "question": "I miei dati di prima sono utili dopo una malattia?",
           "answer": "Molto. Se il tuo orologio ha registrato la tua salute prima che ti ammalassi, mostra la tua vera baseline: l'obiettivo verso cui il recupero sta tornando."
         }
-      ]
+      ],
+      "imageAlt": "Il recupero non è una linea retta — illustrazione: una persona sale dei gradini di legno mentre una linea di recupero color menta sale con lei, passo dopo passo.",
+      "imageTitle": "Il recupero non è una linea retta"
     }
   },
   "series": {

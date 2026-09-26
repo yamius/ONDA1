@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["doctors-and-your-data", "onda-report-for-your-gp", "onda-report-for-your-cardiologist", "dysautonomia-long-covid-breathing", "coherent-breathing-guide"],
   introStyle: 'cyan',
+  image: '/images/articles/onda-report-for-your-neurologist.jpg',
+  imageAlt:
+    "Heart Rate Data and the Nervous System \u2014 illustration: a mint line drawing of a brain branching into nerve pathways that end in a heart, a neurologist with a tablet nearby.",
+  imageTitle: "Heart Rate Data and the Nervous System",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/doctors-and-your-data',

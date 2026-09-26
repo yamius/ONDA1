@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["onda-report-for-your-gp", "onda-report-for-your-cardiologist", "overtraining-hrv-resting-heart-rate", "heart-rate-recovery-fitness-marker", "zone-2-training-aerobic-base"],
   introStyle: 'emerald',
+  image: '/images/articles/onda-report-for-your-sports-doctor.jpg',
+  imageAlt:
+    "Showing Your Recovery Data to a Sports Doctor \u2014 illustration: running shoes, a smartwatch and a one-page recovery report with heart-rate trends on a sunlit floor.",
+  imageTitle: "Showing Your Recovery Data to a Sports Doctor",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/talk-to-your-doctor-about-wearable-data',

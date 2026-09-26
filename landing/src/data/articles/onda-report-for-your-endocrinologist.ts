@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["doctors-and-your-data", "onda-report-for-your-gp", "onda-report-for-your-neurologist", "resting-heart-rate-by-age", "yoga-breathing-diabetes-blood-sugar"],
   introStyle: 'amber',
+  image: '/images/articles/onda-report-for-your-endocrinologist.jpg',
+  imageAlt:
+    "Your Heart Rate and Your Hormones \u2014 illustration: a round dial set to a mint mark beside a one-page heart-rate trend report \u2014 hormones as a dial on resting heart rate.",
+  imageTitle: "Your Heart Rate and Your Hormones",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/doctors-and-your-data',

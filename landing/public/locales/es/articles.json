@@ -4468,7 +4468,9 @@
           "question": "¿Puede un médico de cabecera diagnosticar algo a partir de los datos de mi reloj?",
           "answer": "No. Los datos del reloj pueden plantear una pregunta, pero el diagnóstico viene de la exploración y de las pruebas que tu médico decida que necesitas."
         }
-      ]
+      ],
+      "imageAlt": "Tus datos cardiacos y tu médico de cabecera — ilustración: un médico de familia en un escritorio luminoso revisa con un paciente un informe de una página de frecuencia cardiaca y VFC, con un estetoscopio al lado.",
+      "imageTitle": "Tus datos cardiacos y tu médico de cabecera"
     },
     "onda-report-for-your-cardiologist": {
       "title": "Tus datos cardiacos y el cardiólogo: qué puede (y qué no) hacer con ellos",
@@ -4499,7 +4501,9 @@
           "question": "¿Puedo usar mi reloj para vigilar una afección cardiaca conocida?",
           "answer": "Solo como complemento, y solo como te indique tu cardiólogo. Su monitorización prescrita y su plan de tratamiento van siempre primero."
         }
-      ]
+      ],
+      "imageAlt": "Tus datos cardiacos y el cardiólogo — ilustración: un cardiólogo señala con un bolígrafo un informe de una página con un corazón y una línea de pulso; el paciente, sentado al otro lado del escritorio.",
+      "imageTitle": "Tus datos cardiacos y el cardiólogo"
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Tus datos nocturnos y el especialista del sueño: qué pueden decirle",
@@ -4530,7 +4534,9 @@
           "question": "¿Qué pruebas podría pedir un especialista del sueño?",
           "answer": "Según los síntomas: cuestionarios, un diario de sueño, una prueba domiciliaria de apnea del sueño o un estudio del sueño nocturno (polisomnografía), que mide directamente la respiración, el oxígeno y las fases del sueño."
         }
-      ]
+      ],
+      "imageAlt": "Tus datos nocturnos y el especialista del sueño — ilustración: un paciente sostiene un informe de una página con una onda que va de la noche a la mañana, de una luna a un sol naciente.",
+      "imageTitle": "Tus datos nocturnos y el especialista del sueño"
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Tus datos de recuperación y el médico deportivo: entrenar y volver seguro",
@@ -4561,7 +4567,9 @@
           "question": "¿Debo ajustar el entrenamiento según la HRV diaria?",
           "answer": "Algunos deportistas lo hacen, y la investigación sugiere que el entrenamiento guiado por HRV puede ayudar a individualizar la carga. Fíjate en las tendencias más que en días sueltos, y háblalo con un entrenador o un médico deportivo."
         }
-      ]
+      ],
+      "imageAlt": "Tus datos de recuperación y el médico deportivo — ilustración: zapatillas de correr, un reloj inteligente y un informe de recuperación de una página con tendencias de pulso sobre un suelo soleado.",
+      "imageTitle": "Tus datos de recuperación y el médico deportivo"
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Llevar los datos de tu cuerpo a terapia: cómo puede usarlos un terapeuta o un psiquiatra",
@@ -4592,7 +4600,9 @@
           "question": "¿Tengo que compartir mis notas con mi terapeuta?",
           "answer": "No. Comparte solo lo que elijas. Los datos y las notas son tuyos."
         }
-      ]
+      ],
+      "imageAlt": "Llevar los datos de tu cuerpo a terapia — ilustración: un paciente y un terapeuta en sillones en una sala tranquila y luminosa, con un informe de una página en la mesita entre ambos.",
+      "imageTitle": "Llevar los datos de tu cuerpo a terapia"
     },
     "onda-report-for-your-neurologist": {
       "title": "Tu pulso y el neurólogo: POTS, disautonomía y COVID persistente",
@@ -4623,7 +4633,9 @@
           "question": "¿La respiración lenta trata la disautonomía?",
           "answer": "No. La respiración lenta puede ayudar a algunas personas a sentirse más tranquilas y estables, pero el tratamiento debe venir de un profesional sanitario y puede incluir líquidos, sal, compresión, reacondicionamiento y medicación."
         }
-      ]
+      ],
+      "imageAlt": "Tu pulso y el neurólogo — ilustración: un dibujo lineal color menta de un cerebro que se ramifica en vías nerviosas que terminan en un corazón, con un neurólogo con una tableta al lado.",
+      "imageTitle": "Tu pulso y el neurólogo"
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Tu pulso y tus hormonas: qué puede hacer el endocrino (tiroides, diabetes)",
@@ -4654,7 +4666,9 @@
           "question": "¿Qué pruebas puede pedir un endocrinólogo?",
           "answer": "Según los síntomas: análisis de tiroides, glucosa y HbA1c y, en la diabetes con signos de afectación nerviosa, pruebas de reflejos autonómicos cardiovasculares."
         }
-      ]
+      ],
+      "imageAlt": "Tu pulso y tus hormonas — ilustración: un dial redondo ajustado a una marca color menta junto a un informe de una página de tendencias de pulso: las hormonas como un dial sobre el pulso en reposo.",
+      "imageTitle": "Tu pulso y tus hormonas"
     },
     "onda-report-for-your-gynecologist": {
       "title": "Tu ciclo en tu pulso: datos para el ginecólogo (embarazo, menopausia)",
@@ -4685,7 +4699,9 @@
           "question": "¿Pueden ayudar los datos con los síntomas de la menopausia?",
           "answer": "Pueden documentar los sofocos, los sudores nocturnos y el sueño alterado a lo largo del tiempo, lo que os ayuda a ti y a tu ginecólogo a valorar su impacto y ver cómo cambian las cosas con el tratamiento."
         }
-      ]
+      ],
+      "imageAlt": "Tu ciclo en tu pulso — ilustración: un anillo circular del ciclo del que fluye una onda color menta, y una ginecóloga con una tableta en una clínica luminosa.",
+      "imageTitle": "Tu ciclo en tu pulso"
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Tu respiración en cifras: qué puede hacer el neumólogo (asma, disnea)",
@@ -4716,7 +4732,9 @@
           "question": "¿Puede mi reloj detectar el asma o la EPOC?",
           "answer": "No. Se diagnostican con pruebas de función pulmonar. Tus datos pueden mostrar patrones y crisis a lo largo del tiempo para comentarlos con un especialista."
         }
-      ]
+      ],
+      "imageAlt": "Tu respiración en cifras — ilustración: unos pulmones de trazo color menta rodeados de suaves ondas de respiración, con un neumólogo de pie al lado.",
+      "imageTitle": "Tu respiración en cifras"
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Tu semana laboral en tu pulso: el médico del trabajo (turnos, burnout)",
@@ -4747,7 +4765,9 @@
           "question": "¿Qué ayuda a dormir a quienes trabajan a turnos?",
           "answer": "Proteger el sueño diurno (habitación oscura y silenciosa), organizar la exposición a la luz, mantener un periodo regular de sueño ancla y planificar la recuperación entre bloques de turnos. Los problemas persistentes pueden requerir un especialista del sueño."
         }
-      ]
+      ],
+      "imageAlt": "Tu semana laboral en tu pulso — ilustración: un escritorio con un portátil, un reloj inteligente y una agenda semanal con los días laborables y libres sombreados en menta.",
+      "imageTitle": "Tu semana laboral en tu pulso"
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "La recuperación no es una línea recta: tus datos para rehabilitación",
@@ -4778,7 +4798,9 @@
           "question": "¿Sirven mis datos antiguos después de una enfermedad?",
           "answer": "Mucho. Si tu reloj registró tu salud antes de que enfermaras, muestra tu verdadera línea base: el objetivo hacia el que vuelve tu recuperación."
         }
-      ]
+      ],
+      "imageAlt": "La recuperación no es una línea recta — ilustración: una persona sube unos escalones de madera mientras una línea de recuperación color menta asciende con ella, paso a paso.",
+      "imageTitle": "La recuperación no es una línea recta"
     }
   },
   "detail": {

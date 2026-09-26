@@ -963,7 +963,9 @@
           "question": "Czy lekarz rodzinny może coś zdiagnozować na podstawie danych z zegarka?",
           "answer": "Nie. Dane z zegarka mogą skłonić do zadania pytania, ale diagnoza wynika z badania i testów, które lekarz uzna za potrzebne."
         }
-      ]
+      ],
+      "imageAlt": "Dane o sercu u lekarza rodzinnego — ilustracja: lekarz rodzinny przy jasnym biurku omawia z pacjentem jednostronicowy raport tętna i HRV, obok leży stetoskop.",
+      "imageTitle": "Dane o sercu u lekarza rodzinnego"
     },
     "onda-report-for-your-cardiologist": {
       "title": "Dane o sercu u kardiologa: co może (a czego nie) z nimi zrobić",
@@ -994,7 +996,9 @@
           "question": "Czy mogę używać zegarka do monitorowania rozpoznanej choroby serca?",
           "answer": "Tylko jako uzupełnienie i tylko tak, jak zaleci kardiolog. Zalecone przez niego monitorowanie i plan leczenia zawsze są najważniejsze."
         }
-      ]
+      ],
+      "imageAlt": "Dane o sercu u kardiologa — ilustracja: kardiolog wskazuje długopisem jednostronicowy raport z sercem i linią tętna, pacjent siedzi po drugiej stronie biurka.",
+      "imageTitle": "Dane o sercu u kardiologa"
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Dane z nocy u specjalisty snu: co mówią, a czego nie",
@@ -1025,7 +1029,9 @@
           "question": "Jakie badania może zlecić specjalista medycyny snu?",
           "answer": "W zależności od objawów: kwestionariusze, dzienniczek snu, domowe badanie w kierunku bezdechu sennego albo nocne badanie snu (polisomnografię), które bezpośrednio mierzy oddychanie, natlenienie i fazy snu."
         }
-      ]
+      ],
+      "imageAlt": "Dane z nocy u specjalisty snu — ilustracja: pacjent trzyma jednostronicowy raport z falą biegnącą od nocy do rana, od księżyca do wschodzącego słońca.",
+      "imageTitle": "Dane z nocy u specjalisty snu"
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Dane o regeneracji u lekarza sportowego: trening i powrót",
@@ -1056,7 +1062,9 @@
           "question": "Czy dostosowywać trening do codziennego HRV?",
           "answer": "Niektórzy sportowcy tak robią, a badania sugerują, że trening sterowany HRV może pomóc indywidualizować obciążenie. Patrz na trendy, a nie pojedyncze dni, i omów to z trenerem lub lekarzem sportowym."
         }
-      ]
+      ],
+      "imageAlt": "Dane o regeneracji u lekarza sportowego — ilustracja: buty do biegania, smartwatch i jednostronicowy raport regeneracji z trendami tętna na nasłonecznionej podłodze.",
+      "imageTitle": "Dane o regeneracji u lekarza sportowego"
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Dane z ciała na terapii: jak może je wykorzystać terapeuta lub psychiatra",
@@ -1087,7 +1095,9 @@
           "question": "Czy muszę pokazywać terapeucie swoje notatki?",
           "answer": "Nie. Udostępniaj tylko to, co wybierzesz. Dane i notatki należą do ciebie."
         }
-      ]
+      ],
+      "imageAlt": "Dane z ciała na terapii — ilustracja: pacjent i terapeuta w fotelach w spokojnym, jasnym pokoju, jednostronicowy raport na stoliku między nimi.",
+      "imageTitle": "Dane z ciała na terapii"
     },
     "onda-report-for-your-neurologist": {
       "title": "Tętno a układ nerwowy: dane dla neurologa (POTS, long COVID)",
@@ -1118,7 +1128,9 @@
           "question": "Czy wolne oddychanie leczy dysautonomię?",
           "answer": "Nie. Wolne oddychanie może pomóc niektórym osobom poczuć się spokojniej i stabilniej, ale leczenie powinien prowadzić lekarz; może ono obejmować płyny, sól, odzież uciskową, odbudowę kondycji i leki."
         }
-      ]
+      ],
+      "imageAlt": "Tętno a układ nerwowy — ilustracja: miętowy rysunek konturowy mózgu rozgałęziającego się w szlaki nerwowe zakończone sercem, obok neurolog z tabletem.",
+      "imageTitle": "Tętno a układ nerwowy"
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Tętno a hormony: dane dla endokrynologa (tarczyca, cukrzyca)",
@@ -1149,7 +1161,9 @@
           "question": "Jakie badania może zlecić endokrynolog?",
           "answer": "W zależności od objawów: badania krwi tarczycy (np. TSH), glukozę i HbA1c, a w cukrzycy z oznakami zajęcia nerwów — sercowo-naczyniowe testy odruchów autonomicznych."
         }
-      ]
+      ],
+      "imageAlt": "Tętno a hormony — ilustracja: okrągłe pokrętło ustawione na miętowym znaczniku obok jednostronicowego raportu trendów tętna — hormony jako pokrętło tętna spoczynkowego.",
+      "imageTitle": "Tętno a hormony"
     },
     "onda-report-for-your-gynecologist": {
       "title": "Cykl w twoim tętnie: dane dla ginekologa (cykl, ciąża, menopauza)",
@@ -1180,7 +1194,9 @@
           "question": "Czy dane mogą pomóc przy objawach menopauzy?",
           "answer": "Mogą udokumentować w czasie uderzenia gorąca, nocne poty i zaburzony sen, pomagając tobie i ginekologowi ocenić ich wpływ i zobaczyć, co zmienia leczenie."
         }
-      ]
+      ],
+      "imageAlt": "Cykl w twoim tętnie — ilustracja: okrągły pierścień cyklu, z którego wypływa miętowa fala, ginekolożka z tabletem w jasnym gabinecie.",
+      "imageTitle": "Cykl w twoim tętnie"
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Twój oddech w liczbach: dane dla pulmonologa (astma, duszność)",
@@ -1211,7 +1227,9 @@
           "question": "Czy zegarek może wykryć astmę lub POChP?",
           "answer": "Nie. Diagnozuje się je badaniami czynności płuc. Twoje dane mogą pokazać wzorce i zaostrzenia w czasie, które warto omówić ze specjalistą."
         }
-      ]
+      ],
+      "imageAlt": "Twój oddech w liczbach — ilustracja: miętowe konturowe płuca otoczone łagodnymi falami oddechu, obok stoi pulmonolog.",
+      "imageTitle": "Twój oddech w liczbach"
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Tydzień pracy w twoim tętnie: dane dla lekarza medycyny pracy",
@@ -1242,7 +1260,9 @@
           "question": "Co pomaga pracownikom zmianowym spać?",
           "answer": "Ochrona snu w ciągu dnia (ciemny, cichy pokój), planowanie ekspozycji na światło, stały okres „snu kotwiczącego” i planowanie regeneracji między blokami zmian. Utrzymujące się problemy mogą wymagać konsultacji ze specjalistą medycyny snu."
         }
-      ]
+      ],
+      "imageAlt": "Tydzień pracy w twoim tętnie — ilustracja: biurko z laptopem, smartwatchem i tygodniowym planerem z dniami pracy i wolnymi zaznaczonymi na miętowo.",
+      "imageTitle": "Tydzień pracy w twoim tętnie"
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "Powrót do zdrowia to nie linia prosta: dane dla rehabilitacji",
@@ -1273,7 +1293,9 @@
           "question": "Czy moje stare dane są przydatne po chorobie?",
           "answer": "Bardzo. Jeśli zegarek rejestrował twoje zdrowie przed chorobą, pokazuje twoją prawdziwą linię bazową — cel, do którego zmierza twój powrót do zdrowia."
         }
-      ]
+      ],
+      "imageAlt": "Powrót do zdrowia to nie linia prosta — ilustracja: osoba wchodzi po drewnianych stopniach, a miętowa linia powrotu do zdrowia wznosi się razem z nią, krok po kroku.",
+      "imageTitle": "Powrót do zdrowia to nie linia prosta"
     }
   },
   "series": {

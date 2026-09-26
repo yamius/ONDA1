@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["doctors-and-your-data", "onda-report-for-your-sleep-specialist", "onda-report-for-your-therapist-or-psychiatrist", "chronic-stress-nervous-system-never-off", "social-jet-lag-irregular-sleep"],
   introStyle: 'slate',
+  image: '/images/articles/onda-report-for-your-occupational-health-doctor.jpg',
+  imageAlt:
+    "Your Work Week in Your Heart Rate \u2014 illustration: a desk with a laptop, a smartwatch and a weekly planner with workdays and days off shaded in mint.",
+  imageTitle: "Your Work Week in Your Heart Rate",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/doctors-and-your-data',

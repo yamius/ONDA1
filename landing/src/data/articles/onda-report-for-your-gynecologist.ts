@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["doctors-and-your-data", "onda-report-for-your-gp", "onda-report-for-your-sleep-specialist", "onda-report-for-your-endocrinologist", "femtech-cyclical-architecture"],
   introStyle: 'rose',
+  image: '/images/articles/onda-report-for-your-gynecologist.jpg',
+  imageAlt:
+    "Your Cycle in Your Heart Rate \u2014 illustration: a circular cycle ring with a mint wave flowing from it, a gynecologist with a tablet in a bright clinic.",
+  imageTitle: "Your Cycle in Your Heart Rate",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/doctors-and-your-data',

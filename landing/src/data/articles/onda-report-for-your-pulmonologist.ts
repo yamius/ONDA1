@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["doctors-and-your-data", "onda-report-for-your-gp", "onda-report-for-your-neurologist", "respiratory-rate-hidden-signal", "co2-tolerance-expanding-oxygen-limit"],
   introStyle: 'blue',
+  image: '/images/articles/onda-report-for-your-pulmonologist.jpg',
+  imageAlt:
+    "Your Breathing in Numbers \u2014 illustration: mint line-art lungs with soft breath waves flowing around them, a lung specialist standing nearby.",
+  imageTitle: "Your Breathing in Numbers",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/doctors-and-your-data',

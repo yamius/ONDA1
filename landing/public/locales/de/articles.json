@@ -971,7 +971,9 @@
           "question": "Kann ein Hausarzt anhand meiner Uhrdaten etwas diagnostizieren?",
           "answer": "Nein. Uhrdaten können eine Frage aufwerfen, aber die Diagnose ergibt sich aus der Untersuchung und den Tests, die dein Arzt für nötig hält."
         }
-      ]
+      ],
+      "imageAlt": "Deine Herzdaten beim Hausarzt – Illustration: ein Hausarzt an einem hellen Schreibtisch bespricht mit einem Patienten einen einseitigen Bericht zu Puls und HRV, daneben ein Stethoskop.",
+      "imageTitle": "Deine Herzdaten beim Hausarzt"
     },
     "onda-report-for-your-cardiologist": {
       "title": "Deine Herzdaten beim Kardiologen: Was er damit kann – und was nicht",
@@ -1002,7 +1004,9 @@
           "question": "Kann ich meine Uhr nutzen, um eine bekannte Herzerkrankung zu überwachen?",
           "answer": "Nur als Ergänzung und nur so, wie dein Kardiologe es empfiehlt. Seine verordnete Überwachung und sein Behandlungsplan gehen immer vor."
         }
-      ]
+      ],
+      "imageAlt": "Deine Herzdaten beim Kardiologen – Illustration: ein Kardiologe zeigt mit einem Stift auf einen einseitigen Bericht mit Herz und Pulslinie, der Patient sitzt ihm gegenüber.",
+      "imageTitle": "Deine Herzdaten beim Kardiologen"
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Deine Nachtdaten beim Schlafmediziner: Was sie verraten – und was nicht",
@@ -1033,7 +1037,9 @@
           "question": "Welche Tests könnte ein Schlafmediziner anordnen?",
           "answer": "Je nach Beschwerden: Fragebögen, ein Schlaftagebuch, eine Schlafapnoe-Untersuchung zu Hause oder eine Untersuchung im Schlaflabor (Polysomnographie), die Atmung, Sauerstoff und Schlafstadien direkt misst."
         }
-      ]
+      ],
+      "imageAlt": "Deine Nachtdaten beim Schlafmediziner – Illustration: ein Patient hält einen einseitigen Bericht mit einer Welle, die von der Nacht zum Morgen verläuft – von einem Mond zu einer aufgehenden Sonne.",
+      "imageTitle": "Deine Nachtdaten beim Schlafmediziner"
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Erholungsdaten beim Sportmediziner: Übertraining und Wiedereinstieg",
@@ -1064,7 +1070,9 @@
           "question": "Sollte ich mein Training nach der täglichen HRV ausrichten?",
           "answer": "Manche Athleten tun das, und die Forschung deutet darauf hin, dass HRV-gesteuertes Training helfen kann, die Belastung zu individualisieren. Achte auf Trends statt auf einzelne Tage und besprich es mit einem Trainer oder Sportmediziner."
         }
-      ]
+      ],
+      "imageAlt": "Erholungsdaten beim Sportmediziner – Illustration: Laufschuhe, eine Smartwatch und ein einseitiger Erholungsbericht mit Pulstrends auf einem sonnigen Boden.",
+      "imageTitle": "Erholungsdaten beim Sportmediziner"
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Deine Körperdaten in der Therapie: Wie ein Therapeut oder Psychiater sie nutzen kann",
@@ -1095,7 +1103,9 @@
           "question": "Muss ich meine Notizen mit meinem Therapeuten teilen?",
           "answer": "Nein. Teile nur, was du möchtest. Die Daten und Notizen gehören dir."
         }
-      ]
+      ],
+      "imageAlt": "Deine Körperdaten in der Therapie – Illustration: Patient und Therapeut in Sesseln in einem ruhigen, hellen Raum, ein einseitiger Bericht auf dem kleinen Tisch zwischen ihnen.",
+      "imageTitle": "Deine Körperdaten in der Therapie"
     },
     "onda-report-for-your-neurologist": {
       "title": "Pulsdaten beim Neurologen: POTS, Dysautonomie und Long COVID",
@@ -1126,7 +1136,9 @@
           "question": "Behandelt langsames Atmen eine Dysautonomie?",
           "answer": "Nein. Langsames Atmen kann manchen Menschen helfen, sich ruhiger und stabiler zu fühlen, aber die Behandlung sollte von einem Arzt kommen und kann Flüssigkeit, Salz, Kompression, schrittweisen Belastungsaufbau und Medikamente umfassen."
         }
-      ]
+      ],
+      "imageAlt": "Pulsdaten beim Neurologen – Illustration: eine mintfarbene Strichzeichnung eines Gehirns, das sich in Nervenbahnen verzweigt, die in einem Herz enden; daneben eine Neurologin mit Tablet.",
+      "imageTitle": "Pulsdaten beim Neurologen"
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Puls und Hormone beim Endokrinologen: Schilddrüse und Diabetes",
@@ -1157,7 +1169,9 @@
           "question": "Welche Tests kann ein Endokrinologe veranlassen?",
           "answer": "Je nach Beschwerden: Schilddrüsenwerte im Blut, Blutzucker und HbA1c sowie bei Diabetes mit Zeichen einer Nervenbeteiligung kardiovaskuläre autonome Reflextests."
         }
-      ]
+      ],
+      "imageAlt": "Puls und Hormone beim Endokrinologen – Illustration: ein runder Regler auf einer mintfarbenen Markierung neben einem einseitigen Bericht mit Pulstrends – Hormone als Regler für den Ruhepuls.",
+      "imageTitle": "Puls und Hormone beim Endokrinologen"
     },
     "onda-report-for-your-gynecologist": {
       "title": "Dein Zyklus im Puls: Was der Frauenarzt mit deinen Daten anfangen kann",
@@ -1188,7 +1202,9 @@
           "question": "Können Daten bei Wechseljahresbeschwerden helfen?",
           "answer": "Sie können Hitzewallungen, nächtliches Schwitzen und gestörten Schlaf über die Zeit dokumentieren und dir und deinem Frauenarzt helfen, die Belastung einzuschätzen und zu sehen, was eine Behandlung verändert."
         }
-      ]
+      ],
+      "imageAlt": "Dein Zyklus im Puls – Illustration: ein kreisförmiger Zyklusring, aus dem eine mintfarbene Welle fließt, eine Frauenärztin mit Tablet in einer hellen Praxis.",
+      "imageTitle": "Dein Zyklus im Puls"
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Deine Atmung in Zahlen: Daten beim Lungenfacharzt (Asthma, Atemnot)",
@@ -1219,7 +1235,9 @@
           "question": "Kann meine Uhr Asthma oder COPD erkennen?",
           "answer": "Nein. Diese werden mit Lungenfunktionstests diagnostiziert. Deine Daten können Muster und Schübe über die Zeit zeigen, die du mit einem Facharzt besprechen kannst."
         }
-      ]
+      ],
+      "imageAlt": "Deine Atmung in Zahlen – Illustration: mintfarbene Lungen als Strichzeichnung, umgeben von sanften Atemwellen, daneben ein Lungenfacharzt.",
+      "imageTitle": "Deine Atmung in Zahlen"
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Deine Arbeitswoche im Puls: Schichtarbeit und Burnout beim Betriebsarzt",
@@ -1250,7 +1268,9 @@
           "question": "Was hilft Schichtarbeitern beim Schlafen?",
           "answer": "Den Tagschlaf schützen (dunkler, ruhiger Raum), Licht gezielt timen, eine feste Ankerschlafzeit einhalten und Erholung zwischen den Schichtblöcken einplanen. Anhaltende Probleme können einen Schlafmediziner erfordern."
         }
-      ]
+      ],
+      "imageAlt": "Deine Arbeitswoche im Puls – Illustration: ein Schreibtisch mit Laptop, Smartwatch und Wochenplaner, in dem Arbeits- und freie Tage mint schattiert sind.",
+      "imageTitle": "Deine Arbeitswoche im Puls"
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "Genesung ist keine Gerade: Deine Daten für Reha und Physiotherapie",
@@ -1281,7 +1301,9 @@
           "question": "Sind meine alten Daten nach einer Krankheit nützlich?",
           "answer": "Sehr. Hat deine Uhr deine Gesundheit schon vor der Erkrankung aufgezeichnet, zeigt sie deine echte Baseline – das Ziel, zu dem deine Genesung zurückführt."
         }
-      ]
+      ],
+      "imageAlt": "Genesung ist keine Gerade – Illustration: eine Person steigt Holzstufen hinauf, während eine mintfarbene Erholungslinie Schritt für Schritt mit ihr ansteigt.",
+      "imageTitle": "Genesung ist keine Gerade"
     }
   },
   "series": {

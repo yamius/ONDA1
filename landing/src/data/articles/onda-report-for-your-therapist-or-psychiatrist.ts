@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["doctors-and-your-data", "onda-report-for-your-gp", "morita-therapy-tracking-paradox", "anxiety-panic-breathing-hrv", "name-it-to-tame-it-affect-labeling"],
   introStyle: 'purple',
+  image: '/images/articles/onda-report-for-your-therapist-or-psychiatrist.jpg',
+  imageAlt:
+    "Bringing Your Body Data to Therapy \u2014 illustration: a patient and a therapist in armchairs in a calm, light room, a one-page report on the small table between them.",
+  imageTitle: "Bringing Your Body Data to Therapy",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "A mirror, not a verdict: bring the moments that mattered, share only what you choose.",
     link: '/articles/doctors-and-your-data',

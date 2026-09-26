@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["doctors-and-your-data", "onda-report-for-your-cardiologist", "onda-report-for-your-pulmonologist", "onda-report-for-your-neurologist", "onda-report-for-your-sports-doctor"],
   introStyle: 'emerald',
+  image: '/images/articles/onda-report-for-your-rehabilitation-team.jpg',
+  imageAlt:
+    "Recovery Isn't a Straight Line \u2014 illustration: a person walking up wooden steps as a mint recovery line rises with them, step by step.",
+  imageTitle: "Recovery Isn't a Straight Line",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/doctors-and-your-data',

@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["onda-report-for-your-gp", "talk-to-your-doctor-about-wearable-data", "resting-heart-rate-by-age", "normal-hrv-by-age", "heart-rate-recovery-fitness-marker"],
   introStyle: 'rose',
+  image: '/images/articles/onda-report-for-your-cardiologist.jpg',
+  imageAlt:
+    "Showing Your Heart Data to a Cardiologist \u2014 illustration: a cardiologist pointing a pen at a one-page report with a heart and a pulse line, the patient seated across the desk.",
+  imageTitle: "Showing Your Heart Data to a Cardiologist",
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Bring one page, not your phone: your baseline, what changed and when, your notes and your questions.",
     link: '/articles/talk-to-your-doctor-about-wearable-data',
