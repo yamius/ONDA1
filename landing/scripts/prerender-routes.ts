@@ -601,6 +601,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
+    'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -609,6 +610,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
+    'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -617,6 +619,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
+    'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -625,6 +628,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
+    'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -633,6 +637,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
     'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
+    'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
