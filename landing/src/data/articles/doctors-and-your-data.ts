@@ -10,17 +10,22 @@ const article: Article = {
   title: "Doctors and Your Data: Which Specialist Can Use Your Heart, HRV and Sleep Trends",
   seoTitle: "Doctors and Your Data | ONDA Life",
   description:
-    "Your watch records months of heart rate, HRV, breathing and sleep. This guide shows which doctor can use that data for which problem — GP, cardiologist, sleep specialist, therapist or sports doctor — and how to bring it.",
+    "Your watch records months of heart rate, HRV, breathing and sleep. This guide shows which of 11 doctors can use that data for which problem — from GP and cardiologist to sleep, hormone and lung specialists — and how to bring it.",
   category: 'Guide',
-  relatedSlugs: ["talk-to-your-doctor-about-wearable-data", "onda-report-for-your-gp", "onda-report-for-your-cardiologist", "onda-report-for-your-sleep-specialist", "onda-report-for-your-therapist-or-psychiatrist", "onda-report-for-your-sports-doctor"],
+  relatedSlugs: ["talk-to-your-doctor-about-wearable-data", "onda-report-for-your-gp", "onda-report-for-your-cardiologist", "onda-report-for-your-neurologist", "onda-report-for-your-pulmonologist"],
   introStyle: 'gold',
+  image: '/images/articles/doctors-and-your-data.jpg',
+  imageAlt:
+    'Doctors and Your Data — illustration: five doctor silhouettes in a calm semicircle, each marked by a glowing symbol (heart, moon, brain, runner, medical cross), connected by thin mint lines to a single one-page report in the center.',
+  imageTitle: 'Doctors and Your Data',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Start with the general guide, then pick the doctor that fits your question.",
     link: '/articles/talk-to-your-doctor-about-wearable-data',
     linkText: "Start here →",
   },
   content: `
-Your watch records something no doctor normally sees: weeks and months of your resting heart rate, HRV, breathing and sleep, night after night. Brought in the right form, that history helps a doctor understand what changed, when, and what else was happening — and decide what, if anything, needs checking. But different doctors use it for different things. A GP looks for everyday causes and decides on next steps; a cardiologist uses it to choose the right heart test; a sleep specialist reads your nights; a therapist connects your body with your life; a sports doctor reads your recovery. This guide shows who to see for what, and how to bring your data so it actually helps.
+Your watch records something no doctor normally sees: weeks and months of your resting heart rate, HRV, breathing and sleep, night after night. Brought in the right form, that history helps a doctor understand what changed, when, and what else was happening — and decide what, if anything, needs checking. But different doctors use it for different things. A GP looks for everyday causes and decides on next steps; a cardiologist uses it to choose the right heart test; a sleep specialist reads your nights; a therapist connects your body with your life; a sports doctor reads your recovery — and neurologists, endocrinologists, gynecologists, lung specialists, occupational health doctors and rehabilitation teams each read it for their own questions. This guide shows who to see for what, and how to bring your data so it actually helps.
 
 ## Start here
 
@@ -37,6 +42,12 @@ Before any appointment, read the general guide: what doctors find useful, how to
 | Poor sleep, waking unrefreshed, irregular schedule, snoring | GP | sleep specialist |
 | Stress, anxiety, low mood showing up in your body | GP or therapist | psychiatrist (for medication) |
 | Training, poor recovery, coming back after illness | sports doctor | cardiologist if symptoms during exercise |
+| Heart races on standing, crashes after effort, symptoms after a virus | GP | neurologist (autonomic) |
+| Resting pulse drifting up or down with weight, heat/cold changes; diabetes | GP | endocrinologist |
+| Changes across your cycle, pregnancy, menopause symptoms | gynecologist | GP or specialist as needed |
+| Faster breathing, breathlessness, asthma, lung condition | GP | pulmonologist |
+| Shift work, long hours, burnout | occupational health doctor | sleep specialist, therapist |
+| Recovering after illness, surgery or a heart event | your rehabilitation team | cardiologist, pulmonologist, neurologist |
 
 In most healthcare systems, the GP is the right first step: they see your whole history, rule out common causes, and refer you on only when needed.
 
@@ -56,6 +67,24 @@ In most healthcare systems, the GP is the right first step: they see your whole 
 
 **Sports doctor.** Reads your recovery: overreaching versus overtraining, hidden causes when recovery stalls, and a safe return after illness.
 → **[Showing Your Recovery Data to a Sports Doctor](/articles/onda-report-for-your-sports-doctor)**
+
+**Neurologist.** When the problem is the wiring, not the heart: POTS, dysautonomia, long COVID — and why the clinic's own autonomic test breathes at six breaths a minute.
+→ **[Heart Rate Data and the Nervous System](/articles/onda-report-for-your-neurologist)**
+
+**Endocrinologist.** Thyroid hormone works like a dial on your resting heart rate, and diabetes can quietly lower HRV. Where blood tests take over.
+→ **[Your Heart Rate and Your Hormones](/articles/onda-report-for-your-endocrinologist)**
+
+**Gynecologist.** Resting heart rate and HRV move with the menstrual cycle, through pregnancy and around menopause — your own rhythm matters more than any chart.
+→ **[Your Cycle in Your Heart Rate](/articles/onda-report-for-your-gynecologist)**
+
+**Pulmonologist.** Night-time breathing rate is a quiet, honest signal — and lung medicine is one of the few fields where breathing retraining is in official guidelines.
+→ **[Your Breathing in Numbers](/articles/onda-report-for-your-pulmonologist)**
+
+**Occupational health doctor.** Your job leaves a signature in your heart rate: workdays versus days off, shift weeks, slow burnout. Plus what to know about confidentiality.
+→ **[Your Work Week in Your Heart Rate](/articles/onda-report-for-your-occupational-health-doctor)**
+
+**Rehabilitation team.** Recovery comes in steps and setbacks — and the day after an effort tells more than the day of.
+→ **[Recovery Isn't a Straight Line](/articles/onda-report-for-your-rehabilitation-team)**
 
 ## What every doctor has in common
 

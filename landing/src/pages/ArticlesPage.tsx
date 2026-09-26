@@ -50,6 +50,12 @@ const DOCTORS_SERIES_GUIDES = [
   'onda-report-for-your-sleep-specialist',
   'onda-report-for-your-therapist-or-psychiatrist',
   'onda-report-for-your-sports-doctor',
+  'onda-report-for-your-neurologist',
+  'onda-report-for-your-endocrinologist',
+  'onda-report-for-your-gynecologist',
+  'onda-report-for-your-pulmonologist',
+  'onda-report-for-your-occupational-health-doctor',
+  'onda-report-for-your-rehabilitation-team',
 ]
 
 function DoctorsSeriesSection({ lang }: { lang: ReturnType<typeof langFromPath> }) {

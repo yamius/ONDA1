@@ -136,6 +136,8 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
   },
   {
     slug: 'doctors-your-data',
+    image: '/images/topics/doctors-your-data.jpg',
+    imageAlt: 'Doctors and Your Data — illustration: five doctor silhouettes in a calm semicircle, each marked by a glowing symbol (heart, moon, brain, runner, medical cross), connected by thin mint lines to a single one-page report in the center.',
     name: 'Doctors and Your Data',
     tile: 'Which specialist can use your heart, HRV and sleep trends — and how to bring your data to an appointment.',
     intro:
@@ -339,6 +341,12 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "onda-report-for-your-sleep-specialist": "doctors-your-data",
   "onda-report-for-your-sports-doctor": "doctors-your-data",
   "doctors-and-your-data": "doctors-your-data",
+  "onda-report-for-your-neurologist": "doctors-your-data",
+  "onda-report-for-your-endocrinologist": "doctors-your-data",
+  "onda-report-for-your-gynecologist": "doctors-your-data",
+  "onda-report-for-your-pulmonologist": "doctors-your-data",
+  "onda-report-for-your-occupational-health-doctor": "doctors-your-data",
+  "onda-report-for-your-rehabilitation-team": "doctors-your-data",
   "onda-report-for-your-therapist-or-psychiatrist": "doctors-your-data",
 }
 

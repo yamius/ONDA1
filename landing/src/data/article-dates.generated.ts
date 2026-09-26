@@ -196,6 +196,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-02-26T22:24:55+01:00",
     "modified": "2026-06-09T14:23:13+02:00"
   },
+  "doctors-and-your-data": {
+    "published": "2026-09-26T13:37:15+02:00",
+    "modified": "2026-09-26T16:06:06+02:00"
+  },
   "does-dopamine-detox-work": {
     "published": "2026-06-04T15:03:27+02:00",
     "modified": "2026-06-08T20:41:35+02:00"
@@ -516,6 +520,50 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-24T22:03:37+02:00",
     "modified": "2026-09-26T01:41:15+02:00"
   },
+  "onda-report-for-your-cardiologist": {
+    "published": "2026-09-26T13:37:15+02:00",
+    "modified": "2026-09-26T13:37:15+02:00"
+  },
+  "onda-report-for-your-endocrinologist": {
+    "published": "2026-09-26T17:01:52.287Z",
+    "modified": "2026-09-26T17:01:52.287Z"
+  },
+  "onda-report-for-your-gp": {
+    "published": "2026-09-26T13:37:15+02:00",
+    "modified": "2026-09-26T13:37:15+02:00"
+  },
+  "onda-report-for-your-gynecologist": {
+    "published": "2026-09-26T17:01:52.549Z",
+    "modified": "2026-09-26T17:01:52.549Z"
+  },
+  "onda-report-for-your-neurologist": {
+    "published": "2026-09-26T17:01:52.285Z",
+    "modified": "2026-09-26T17:01:52.285Z"
+  },
+  "onda-report-for-your-occupational-health-doctor": {
+    "published": "2026-09-26T17:01:52.552Z",
+    "modified": "2026-09-26T17:01:52.552Z"
+  },
+  "onda-report-for-your-pulmonologist": {
+    "published": "2026-09-26T17:01:52.551Z",
+    "modified": "2026-09-26T17:01:52.551Z"
+  },
+  "onda-report-for-your-rehabilitation-team": {
+    "published": "2026-09-26T17:01:52.554Z",
+    "modified": "2026-09-26T17:01:52.554Z"
+  },
+  "onda-report-for-your-sleep-specialist": {
+    "published": "2026-09-26T13:37:15+02:00",
+    "modified": "2026-09-26T13:37:15+02:00"
+  },
+  "onda-report-for-your-sports-doctor": {
+    "published": "2026-09-26T13:37:15+02:00",
+    "modified": "2026-09-26T13:37:15+02:00"
+  },
+  "onda-report-for-your-therapist-or-psychiatrist": {
+    "published": "2026-09-26T16:06:06+02:00",
+    "modified": "2026-09-26T16:06:06+02:00"
+  },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
     "modified": "2026-09-21T12:24:17+02:00"
@@ -611,6 +659,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
     "modified": "2026-05-18T11:01:28+02:00"
+  },
+  "talk-to-your-doctor-about-wearable-data": {
+    "published": "2026-09-26T13:37:15+02:00",
+    "modified": "2026-09-26T13:37:15+02:00"
   },
   "tanden-breathing-serotonin": {
     "published": "2026-09-23T14:20:18+02:00",

@@ -436,6 +436,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/doctors-and-your-data.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/doctors-and-your-data.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/doctors-and-your-data.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/articles/dopamine-reward-system-neural-architecture.avif": {
     "width": 1024,
     "height": 434
@@ -1576,6 +1588,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1584,
     "height": 672
   },
+  "/images/articles/talk-to-your-doctor-about-wearable-data.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/talk-to-your-doctor-about-wearable-data.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/talk-to-your-doctor-about-wearable-data.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/articles/tanden-breathing-serotonin.avif": {
     "width": 1920,
     "height": 820
@@ -2115,6 +2139,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/topics/breathing.webp": {
     "width": 1600,
     "height": 1200
+  },
+  "/images/topics/doctors-your-data.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/topics/doctors-your-data.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/topics/doctors-your-data.webp": {
+    "width": 1916,
+    "height": 821
   },
   "/images/topics/heart-fitness-metabolism.avif": {
     "width": 1600,

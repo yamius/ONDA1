@@ -268,6 +268,12 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'onda-report-for-your-sleep-specialist', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-sports-doctor', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-therapist-or-psychiatrist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-neurologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-endocrinologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-gynecologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-pulmonologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-occupational-health-doctor', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-rehabilitation-team', publishOn: '2026-09-26' },
 ]
 
 /**
@@ -434,6 +440,12 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'onda-report-for-your-sleep-specialist', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-sports-doctor', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-therapist-or-psychiatrist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-neurologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-endocrinologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-gynecologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-pulmonologist', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-occupational-health-doctor', publishOn: '2026-09-26' },
+  { slug: 'onda-report-for-your-rehabilitation-team', publishOn: '2026-09-26' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
@@ -583,6 +595,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus', 'yoga-poses-heart-rate-blood-pressure',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
@@ -595,6 +608,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -606,6 +620,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -617,6 +632,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   it: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -628,6 +644,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -639,6 +656,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -650,6 +668,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -661,6 +680,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -672,6 +692,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'yoga-breathing-diabetes-blood-sugar', 'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'doctors-and-your-data', 'talk-to-your-doctor-about-wearable-data', 'onda-report-for-your-gp', 'onda-report-for-your-cardiologist', 'onda-report-for-your-sleep-specialist', 'onda-report-for-your-sports-doctor',
     'onda-report-for-your-therapist-or-psychiatrist',
+    'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {

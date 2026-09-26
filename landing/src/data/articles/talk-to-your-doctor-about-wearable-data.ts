@@ -14,6 +14,11 @@ const article: Article = {
   category: 'Guide',
   relatedSlugs: ["normal-hrv-by-age", "resting-heart-rate-by-age", "how-to-measure-hrv-consistently", "what-to-do-after-low-hrv-reading", "hrv-breathing-cold-honest-limits"],
   introStyle: 'blue',
+  image: '/images/articles/talk-to-your-doctor-about-wearable-data.jpg',
+  imageAlt:
+    'How to Talk to Your Doctor About Your Watch Data — illustration: a patient with a smartwatch and a doctor at a desk, a mint heart-rate wave flowing from the watch into a one-page report the doctor is reading.',
+  imageTitle: 'How to Talk to Your Doctor About Your Watch Data',
+  imagePlacement: 'header',
   neuralSuggestion: {
     text: "Symptoms first, data second — one page with your baseline, what changed and when.",
     link: '/articles/doctors-and-your-data',
