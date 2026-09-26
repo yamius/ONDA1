@@ -1,0 +1,284 @@
+{
+  "menu": {
+    "about": "Chi siamo",
+    "aboutSr": " ONDA Life — app di biofeedback HRV e respirazione guidata",
+    "philosophy": "Filosofia",
+    "philosophySr": " — la filosofia dello spettro interiore di ONDA Life",
+    "glossary": "Glossario",
+    "glossarySr": " di termini di neuroscienze e biohacking",
+    "articles": "Articoli",
+    "articlesSr": " su respirazione, HRV e meditazione",
+    "reviews": "Recensioni",
+    "research": "Ricerca",
+    "reviewsSr": " di tracker HRV e strumenti di benessere",
+    "download": "Scarica",
+    "bio": "Bio OS",
+    "contacts": "Contatti",
+    "contactsSr": " — scrivi al team di ONDA Life",
+    "bioSr": " — misurazione biometrica in tempo reale",
+    "languagesLabel": "Lingua"
+  },
+  "hero": {
+    "badge": "[ ONDA LIFE — the OS for your nervous system ]",
+    "titleLine1": "Stop tracking your stress.",
+    "titleLine2": "Start training it.",
+    "titleLine3": "",
+    "subtitle": "Your watch already tells you your HRV is low. ONDA guides your breathing and shows your heart rhythm respond in real time — so you can actually calm your nervous system, not just measure it. Works with your iPhone camera or an Apple Watch — no extra hardware needed.",
+    "ctaDownload": "Start Free",
+    "ctaDownloadAria": "Start ONDA Life free",
+    "ctaMicrocopy": "No account. Free to start. Your first reading in 90 seconds.",
+    "ctaLearn": "Learn More",
+    "scrollAria": "Scroll to product"
+  },
+  "concept": {
+    "tag": "[ CONCEPT ]",
+    "titlePrefix": "Your Body is the Most Complex",
+    "titleHighlight": "Computer",
+    "subtitle": "Most meditation is random: a session here, an app there, nothing connecting them. ONDA is a structured path. You start by steadying your nervous system, then build from there — and you can watch your HRV respond while you practice. Each level rests on the one before it.",
+    "cards": [
+      {
+        "title": "Systematic",
+        "description": "Not random meditations. A structured protocol grounded in how the nervous system actually works."
+      },
+      {
+        "title": "Progressive",
+        "description": "Each level builds on the last — from steadying your baseline to focus, emotional regulation, and beyond."
+      },
+      {
+        "title": "Measurable",
+        "description": "Track real signals — HRV, sleep, stress — and watch your trend move over weeks, not just one morning number."
+      }
+    ]
+  },
+  "levels": {
+    "tag": "[ THE PATH ]",
+    "titleLeft": "Where it goes:",
+    "titleRight": "8 levels.",
+    "subtitle": "ONDA isn't one exercise — it's a structured progression. You start by settling your nervous system, then build from there. Go as deep as you want, from steadying your baseline to the quietest states of long practice.",
+    "levelLabel": "Level {{n}}",
+    "items": [
+      {
+        "name": "BODY / TERRA",
+        "description": "Breathing, diaphragm, and HRV — the foundation of parasympathetic activation.",
+        "parts": [
+          "1. I Am",
+          "2. I Move",
+          "3. I Adapt"
+        ]
+      },
+      {
+        "name": "EMOTIONS / AQUA",
+        "description": "Working with stress and emotional reactivity — steadier responses when things get heavy.",
+        "parts": [
+          "4. I Maneuver",
+          "5. I Guard Territory",
+          "6. I'm Part of the Pack"
+        ]
+      },
+      {
+        "name": "MIND / AER",
+        "description": "Attention and focus — training a calmer, clearer mind.",
+        "parts": [
+          "7. I Distinguish",
+          "8. I Focus",
+          "9. I Shape the Vision"
+        ]
+      },
+      {
+        "name": "SOCIETY / IGNIS",
+        "description": "Connection and social calm — showing up steadier around other people.",
+        "parts": [
+          "10. I Express",
+          "11. I Interact",
+          "12. I Co-Create"
+        ]
+      },
+      {
+        "name": "BODY II / TERRA II",
+        "description": "Deeper embodiment — moving from thinking about the body to feeling it. Flow and ease in motion.",
+        "parts": [
+          "13. I Sense",
+          "14. I Channel",
+          "15. I Attune"
+        ]
+      },
+      {
+        "name": "BRAIN / AQUA II",
+        "description": "Self-awareness and metacognition — watching your own mind with more clarity.",
+        "parts": [
+          "16. I Witness",
+          "17. I Integrate",
+          "18. I Synchronize"
+        ]
+      },
+      {
+        "name": "DNA / AER II",
+        "description": "Where the practice stops being something you do and becomes part of who you are. Months of consistency settling into a steadier baseline.",
+        "parts": [
+          "19. I Remember",
+          "20. I Restore",
+          "21. I Synthesize"
+        ]
+      },
+      {
+        "name": "ATOMIC / IGNIS II",
+        "description": "The deep, quiet states long-term practitioners describe — total presence, the self going still. Experiential, not measured. The edge of the map.",
+        "parts": [
+          "22. I Am Vibration",
+          "23. I Am Wholeness",
+          "24. I Am the Source"
+        ]
+      }
+    ]
+  },
+  "features": {
+    "tag": "[ FEATURES ]",
+    "titlePrefix": "Real-Time",
+    "titleHighlight": "Bio-Sync",
+    "items": [
+      {
+        "title": "Tracker Integration",
+        "description": "Use your iPhone camera or an Apple Watch — or bring HRV and sleep from any tracker that syncs to Apple Health. Watch your heart rhythm respond in real time.",
+        "iconAlt": "Biometric data sync icon"
+      },
+      {
+        "title": "Gamified Progression",
+        "description": "Earn OND for completed practices and streaks. Unlock themes and extra protocols as you go.",
+        "iconAlt": "Gamification progression icon"
+      },
+      {
+        "title": "Structured System",
+        "description": "No random meditations. Each practice targets a specific system: breathing, emotions, mind, recovery.",
+        "iconAlt": "Structured system icon"
+      }
+    ]
+  },
+  "bridge": {
+    "tag": "[ THE PROBLEM ]",
+    "title": "You've tried the apps. You have the watch. You still can't switch off.",
+    "p1": "Meditation apps feel nice but they're random — no feedback, no way to know if anything's working, so they don't stick. Trackers are the opposite problem: your ring tells you your HRV tanked and your stress is high, then leaves you to figure out what to do about it.",
+    "p2": "ONDA is the part in between. Guided breathing, with live feedback from your own heart — so you can see the number move while you practice, and watch your baseline trend up over weeks."
+  },
+  "product": {
+    "tag": "[ THE PRODUCT ]",
+    "title": "Most apps score you after. ONDA shows you during.",
+    "subtitle": "See your body respond, in real time. Breathe along with the guidance and watch your heart rhythm smooth out as you go — the live feedback loop meditation always lacked.",
+    "shots": [
+      {
+        "caption": "Live vitals from your Apple Watch — heart rate, breathing, and coherence.",
+        "alt": "ONDA dashboard showing live heart rate, breathing rate and coherence from your Apple Watch"
+      },
+      {
+        "caption": "Short, science-backed protocols — 3 to 12 minutes.",
+        "alt": "ONDA breathing protocols list — Micro-Breath, Still Wave, Warm Pulse and more"
+      },
+      {
+        "caption": "Your HRV trend — what actually matters, over weeks.",
+        "alt": "ONDA resting HRV trend over time with a practice streak"
+      }
+    ]
+  },
+  "how": {
+    "tag": "[ HOW IT WORKS ]",
+    "title": "Three steps. Five minutes.",
+    "steps": [
+      {
+        "n": "01",
+        "title": "Connect",
+        "text": "Use your iPhone camera, or pair the Apple Watch you already own. No special hardware required."
+      },
+      {
+        "n": "02",
+        "title": "Breathe",
+        "text": "Follow a guided session, 5 to 30 minutes. ONDA guides your breathing and reads your heart in real time."
+      },
+      {
+        "n": "03",
+        "title": "Watch it move",
+        "text": "See your rhythm respond now, and your HRV baseline trend up over the weeks you keep practicing."
+      }
+    ]
+  },
+  "why": {
+    "tag": "[ WHY ONDA ]",
+    "title": "Not another meditation app. Not another tracker.",
+    "cards": [
+      {
+        "title": "Structured, because it's sequential.",
+        "text": "A real 8-level progression where each level builds on the last — not a shuffle of unrelated sessions. You always know the next step."
+      },
+      {
+        "title": "Training, not just tracking.",
+        "text": "Whoop and Oura tell you you're stressed. ONDA helps you do something about it."
+      },
+      {
+        "title": "Honest, not anxiety-inducing.",
+        "text": "Your trend matters more than one morning number. We won't gamify your panic."
+      },
+      {
+        "title": "Works on what you own.",
+        "text": "Your iPhone camera or an Apple Watch — plus HRV from any tracker that syncs to Apple Health."
+      }
+    ]
+  },
+  "proof": {
+    "tag": "[ WHY TRUST IT ]",
+    "title": "Trust, earned in under 90 seconds.",
+    "science": "Built on resonance breathing and HRV biofeedback — with the research it rests on cited, in plain sight.",
+    "scienceCta": "See the science →",
+    "trust": "No account and no email before your first reading — free to start.",
+    "advisor": "Co-developed with a neuroscience PhD advisor.",
+    "ratingPending": "App Store reviews coming soon — we'd rather show real ones than fake them.",
+    "shotCaption": "Every protocol explains its mechanism — inside the app.",
+    "shotAlt": "ONDA in-app science screen showing the biology, why, and effect behind a breathing protocol"
+  },
+  "articles": {
+    "tag": "[ DEEP DIVES ]",
+    "titlePrefix": "Flagship",
+    "titleHighlight": "Articles",
+    "subtitle": "Science-backed guides for nervous system optimization. From vagal tone to longevity hardware.",
+    "viewAll": "View all {{count}} articles"
+  },
+  "cta": {
+    "badge": "[ READY? ]",
+    "title": "Start with one breath.",
+    "sub": "Free to start. No account. Your first reading in 90 seconds.",
+    "subtitle": "The world around you becomes how you see it inside yourself.",
+    "appStoreSup": "Download on the",
+    "appStoreLabel": "App Store",
+    "appStoreAria": "Download ONDA Life on App Store",
+    "googlePlaySup": "Get it on",
+    "googlePlayLabel": "Google Play",
+    "googlePlayAria": "Join the ONDA Life Android waitlist",
+    "modal": {
+      "title": "Join ONDA Life",
+      "subtitle": "We are putting the finishing touches! Leave your email and we will send you early access.",
+      "placeholder": "Your email",
+      "submit": "Get Early Access",
+      "submitting": "Submitting...",
+      "thankTitle": "Thank you!",
+      "thankSubtitle": "We will contact you as soon as the app is ready to launch.",
+      "ok": "OK",
+      "errorDuplicate": "This email is already registered.",
+      "errorGeneric": "Something went wrong. Please try again later.",
+      "close": "Close"
+    }
+  },
+  "footer": {
+    "sitemap": "Mappa del sito",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Termini di servizio",
+    "emoton": "Emoton"
+  },
+  "meta": {
+    "title": "ONDA Life: Stop Tracking Stress. Start Training It.",
+    "description": "Guided breathing with real-time feedback from your own heart rhythm. Structured 8-level training for your nervous system. Free to start, no account.",
+    "ogImageAlt": "ONDA Life — HRV biofeedback app. Guided breathing with live heart-rhythm feedback."
+  },
+  "notFound": {
+    "title": "Page Not Found | ONDA Life",
+    "message": "System Error: The neural path you’re looking for doesn’t exist. Let’s recalibrate.",
+    "backHome": "← Back to Home",
+    "exploreGlossary": "Explore Glossary →"
+  }
+}

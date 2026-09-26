@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "title": "Contact ONDA Life | Support & Community",
+    "description": "Questions, support, or collaboration — reach the ONDA Life team. We read every message and respond."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "current": "Contact"
+  },
+  "badge": "[ NEURAL UPLINK ]",
+  "title": "Initialize Direct Contact",
+  "subtitle": "Questions, support, or collaboration — reach the ONDA Life team.",
+  "channelsTitle": "CONTACT CHANNELS",
+  "emailLabel": "EMAIL",
+  "communityLabel": "COMMUNITY",
+  "form": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "namePlaceholder": "Your identifier",
+    "emailPlaceholder": "contact@example.com",
+    "messagePlaceholder": "Transmit your query...",
+    "submit": "[ SEND DATA PACKET ]"
+  },
+  "back": "← Back to Home"
+}

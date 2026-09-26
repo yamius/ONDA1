@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "title": "Biblioteka ONDA: oddech, HRV i medytacja | ONDA Life",
+    "description": "Oparte na nauce poradniki o oddechu, HRV, medytacji i układzie nerwowym. Wybierz artykuł, żeby zacząć."
+  },
+  "breadcrumb": {
+    "home": "Start",
+    "current": "Biblioteka"
+  },
+  "badge": "[ BIBLIOTEKA ONDA ]",
+  "h1": "Biblioteka ONDA",
+  "subtitle": "Oparte na nauce poradniki o oddechu, HRV, medytacji i układzie nerwowym.",
+  "searchPlaceholder": "szukaj artykułów...",
+  "allLabel": "Wszystkie",
+  "noResults": "Nie znaleziono artykułów. Spróbuj innego wyszukiwania.",
+  "featuredHeader": "[ POLECANE ARTYKUŁY ]",
+  "detail": {
+    "backToArticles": "← Wróć do artykułów",
+    "relatedGlossaryTerms": "POWIĄZANE POJĘCIA",
+    "browseFullGlossary": "→ Zobacz cały słownik",
+    "disclaimerLabel": "UWAGA",
+    "disclaimer": "Treść edukacyjna, nie porada medyczna. Artykuły ONDA Life wyjaśniają, jak działają systemy i co sugerują badania — nie stawiają diagnozy, nie leczą i nie zastępują wykwalifikowanego specjalisty. Porozmawiaj z lekarzem, zanim zmienisz coś w swoim zdrowiu, lekach lub treningu.",
+    "by": "Autor:",
+    "authorRole": "Architekt i psycholog Gestalt, założyciel ONDA Life",
+    "updated": "Zaktualizowano",
+    "toc": "NA TEJ STRONIE",
+    "cite": "[ CYTUJ_ARTYKUŁ ]",
+    "apaStyle": "Styl APA",
+    "finalize": "[ OZNACZ_JAKO_PRZECZYTANE ]",
+    "completed": "[ STATUS: PRZECZYTANE ]",
+    "faqHeading": "CZĘSTE PYTANIA"
+  },
+  "categories": {
+    "Neural Hardware": "Sprzęt neuronowy",
+    "Biological Software": "Oprogramowanie biologiczne",
+    "OS States": "Stany systemu",
+    "ONDA Protocol": "Protokół ONDA"
+  },
+  "browse": {
+    "heading": "[ PRZEGLĄDAJ_WEDŁUG_TEMATU ]",
+    "total": "{{count}} artykułów łącznie"
+  },
+  "topics": {
+    "hrv": "HRV",
+    "circadian": "Rytm dobowy",
+    "dopamine": "Dopamina",
+    "metabolic": "Metabolizm",
+    "breathwork": "Oddech",
+    "neuroplasticity": "Neuroplastyczność",
+    "cognitive": "Poznanie",
+    "spinal": "Kręgosłup",
+    "hormones": "Hormony",
+    "longevity": "Długowieczność"
+  },
+  "bodies": {
+    "normal-hrv-by-age": {
+      "title": "Prawidłowe HRV według wieku: jakie HRV jest dobre?",
+      "description": "Nie ma jednej dobrej wartości HRV: zależy ona od wieku i twojej linii bazowej. Typowe zakresy według wieku i dlaczego twój trend znaczy więcej niż średnia.",
+      "neuralSuggestion": {
+        "text": "Przestań pytać „czy 45 ms to dobrze?”. Liczy się, czy TWOJE HRV rośnie, czy spada.",
+        "linkText": "Co mierzy ONDA →"
+      },
+      "content": "\nNie istnieje uniwersalnie „dobra” wartość HRV: zależy ona w dużej mierze od wieku, a jeszcze bardziej od twojej własnej linii bazowej. Orientacyjnie średnie nocne HRV (mierzone jako RMSSD) wynosi około 60–100 ms po dwudziestce, 45–75 ms po trzydziestce, 35–60 ms po czterdziestce, 25–50 ms po pięćdziesiątce i 20–40 ms po sześćdziesiątce. HRV naturalnie spada z wiekiem i bardzo się różni w zależności od urządzenia, kondycji, snu i stresu. Najbardziej przydatna liczba to nie twoje miejsce na tle populacji, ale to, czy twoje HRV rośnie, czy spada względem twojej osobistej normy.\n\n## Typowe zakresy HRV według wieku\n\nTe zakresy są celowo szerokie. HRV ogromnie różni się między ludźmi: dwie zdrowe osoby w tym samym wieku mogą różnić się o 40 ms lub więcej. Traktuj je jako punkt odniesienia, a nie tabelę wyników:\n\n| Wiek | Typowe nocne HRV (RMSSD) |\n|---|---|\n| 20–29 | ~60–100 ms |\n| 30–39 | ~45–75 ms |\n| 40–49 | ~35–60 ms |\n| 50–59 | ~25–50 ms |\n| 60+ | ~20–40 ms |\n\nJeśli twój wynik mieści się w przedziale dla twojego wieku albo jest blisko niego, to norma. Jeśli jest niższy, samo to niewiele znaczy: może to wynikać z genów, urządzenia albo ciężkiego tygodnia. Liczy się kierunek, w którym zmienia się z czasem.\n\n## Dlaczego HRV spada z wiekiem\n\nHRV odzwierciedla elastyczność autonomicznego układu nerwowego — to, jak zwinnie przełącza się między trybem „walcz lub uciekaj” a „odpoczywaj i traw”. Ta elastyczność stopniowo maleje z wiekiem, bo słabnie wpływ nerwu błędnego na serce, a układ krążenia sztywnieje. To normalne i spodziewane: 55-latek z HRV 35 ms nie jest w „gorszej sytuacji” niż 25-latek z 70 ms. Są po prostu w różnych punktach tej samej krzywej. Spadek nie jest też przesądzony: kondycja, sen i regularna [praktyka wolnego oddechu](/articles/how-to-raise-hrv-naturally) mogą go spowolnić, a nawet odrobić chwilowe spadki.\n\n## Dlaczego twoja linia bazowa jest ważniejsza niż jakakolwiek średnia\n\nOto podstawowy problem tabel według wieku: rozrzut w obrębie jednego wieku jest dużo większy niż różnica między grupami wiekowymi. Dlatego średnia dla populacji jest prawie bezużyteczna do oceny twojego zdrowia. Przydatna jest twoja **osobista linia bazowa** — twoje typowe HRV z ostatnich tygodni — i to, jak dzisiejsza wartość się do niej ma. Spadek z twoich zwykłych 60 ms do 40 ms to prawdziwy, znaczący sygnał dotyczący regeneracji. Sama liczba 40 nim nie jest: dla kogoś innego może być całkowicie normalna. HRV to miara „ty kontra ty”, a nie „ty kontra wszyscy” — i właśnie dlatego [twoja linia bazowa wie pierwsza](/articles/your-baseline-knows-first).\n\n## Co obniża HRV\n\nZ dnia na dzień HRV zmienia się w zależności od tego, jak się regenerujesz. Najczęstsze przyczyny spadku:\n\n- **Alkohol** — nawet jeden kieliszek wyraźnie obniża nocne HRV.\n- **Słaby lub krótki sen** — najszybsza droga do niskiego wyniku.\n- **Stres i choroba** — oba utrzymują włączony układ współczulny.\n- **Przetrenowanie** — ciężki trening bez regeneracji tłumi HRV.\n- **Późne posiłki i kofeina** — mogą podnieść nocne tętno i obniżyć HRV.\n\nPojedynczy niski wynik zwykle oznacza jedną złą noc. Seria niskich wyników względem twojej linii bazowej to sygnał, na który warto zwrócić uwagę.\n\n## Zobacz swoje HRV i jego trend\n\nPonieważ HRV ma sens tylko w odniesieniu do twojej linii bazowej, tabela średnich według wieku nie powie ci tego, co naprawdę musisz wiedzieć. ONDA odczytuje tętno spoczynkowe, HRV i oddech z historii twojego Apple Watch, buduje twój osobisty korytarz — twój normalny zakres — i pokazuje, kiedy dzisiejszy dzień z niego wychodzi. Zamiast pytać „czy 45 ms to dobrze?”, widzisz, czy *twoje* HRV się utrzymuje, rośnie czy spada, i co zwykle na nie wpływa. To liczba, która naprawdę odzwierciedla twoją regenerację.\n",
+      "imageAlt": "Prawidłowe HRV według wieku — ilustracja: rząd sylwetek od młodych do starszych, nad każdą linia rytmu serca, której zmienność łagodnie maleje z wiekiem.",
+      "imageTitle": "Prawidłowe HRV według wieku",
+      "faq": [
+        {
+          "question": "Jakie HRV jest dobre w moim wieku?",
+          "answer": "Orientacyjnie 60–100 ms po dwudziestce, 45–75 ms po trzydziestce, 35–60 ms po czterdziestce, 25–50 ms po pięćdziesiątce i 20–40 ms po sześćdziesiątce (nocny RMSSD). Zakresy jednak mocno się nakładają — twoja linia bazowa i trend są dużo ważniejsze niż średnia dla wieku."
+        },
+        {
+          "question": "Dlaczego moje HRV jest niższe niż średnia?",
+          "answer": "To może być całkowicie normalne. HRV ogromnie różni się między ludźmi i zależy od urządzenia, genów, kondycji, snu i stresu. Pojedynczy wynik poniżej średniej niewiele znaczy; uwagi wymaga trend spadkowy względem twojej linii bazowej."
+        },
+        {
+          "question": "Czy HRV naprawdę spada z wiekiem?",
+          "answer": "Tak. Elastyczność układu autonomicznego stopniowo maleje z wiekiem, bo słabnie wpływ nerwu błędnego na serce. To normalne i spodziewane, ale kondycja, sen i wolny oddech mogą spowolnić ten spadek."
+        },
+        {
+          "question": "Jakie HRV jest normalne w wieku 40 lat? 50? 60?",
+          "answer": "Orientacyjnie 35–60 ms po czterdziestce, 25–50 ms po pięćdziesiątce i 20–40 ms po sześćdziesiątce w nocnym RMSSD — z dużym rozrzutem indywidualnym."
+        },
+        {
+          "question": "Czy niskie HRV to powód do niepokoju?",
+          "answer": "Pojedynczy niski wynik to zwykle po prostu zła noc. Uporczywie niskie HRV, które nie wraca do normy mimo lepszego snu i mniejszego stresu, warto omówić z lekarzem — ale samo HRV nie jest diagnozą."
+        }
+      ]
+    },
+    "resting-heart-rate-by-age": {
+      "title": "Tętno spoczynkowe według wieku: jakie jest prawidłowe?",
+      "description": "Prawidłowe tętno spoczynkowe u dorosłych: 60–100 uderzeń/min, zależnie od wieku i kondycji. Wartości według wieku i co je podnosi lub obniża.",
+      "neuralSuggestion": {
+        "text": "Jeden pomiar mówi niewiele. Trend tętna spoczynkowego względem twojej normy mówi dużo.",
+        "linkText": "Co mierzy ONDA →"
+      },
+      "content": "\nPrawidłowe tętno spoczynkowe u większości dorosłych wynosi od 60 do 100 uderzeń na minutę, ale zdrowy zakres zmienia się z wiekiem i kondycją. Noworodki mają wysokie tętno (100–160 uderzeń/min), dzieci zwalniają aż do wieku nastoletniego, a u dorosłych większość mieści się w spoczynku między 60 a 100 — dobrze wytrenowani dorośli często między 40 a 60. Niższe tętno spoczynkowe zwykle oznacza lepszą wydolność sercowo-naczyniową: silniejsze serce przy każdym uderzeniu tłoczy więcej krwi i potrzebuje mniej uderzeń. Podobnie jak przy HRV, najbardziej przydatne porównanie to nie średnia dla populacji, ale to, jak twoje tętno spoczynkowe zmienia się względem twojej linii bazowej.\n\n## Typowe tętno spoczynkowe według wieku\n\n„Prawidłowy” zakres dla dorosłych, 60–100 uderzeń/min, jest szeroki, a w jego obrębie ludzi bardziej różnicuje kondycja niż wiek. Ogólne zakresy zdrowego tętna spoczynkowego:\n\n| Wiek | Typowe tętno spoczynkowe |\n|---|---|\n| Noworodek (0–1 mies.) | 100–160 uderzeń/min |\n| Dziecko (1–10 lat) | 70–120 uderzeń/min |\n| Nastolatek (11–17 lat) | 60–100 uderzeń/min |\n| Dorosły (18+) | 60–100 uderzeń/min |\n| Dobrze wytrenowany dorosły | 40–60 uderzeń/min |\n\nW wieku dorosłym sam wiek zmienia tętno spoczynkowe mniej, niż można by sądzić: sprawny 60-latek może łatwo mieć niższe tętno spoczynkowe niż niewytrenowany 30-latek. Większość różnicy wyjaśniają kondycja, stres, sen i używki.\n\n## Co podnosi, a co obniża tętno spoczynkowe\n\nTętno spoczynkowe to codzienny odczyt tego, jak czuje się twój organizm. Częste czynniki:\n\n**Obniżają je (zwykle dobrze):** regularny wysiłek tlenowy, dobry sen, nawodnienie, praktyka wolnego oddechu. Trening wytrzymałościowy to najsilniejsza długoterminowa dźwignia — dlatego sportowcy mają 40–60.\n\n**Podnoszą je (warto zwrócić uwagę):** słaby lub krótki sen, alkohol, [kofeina](/articles/caffeine-hrv-resting-heart-rate), stres, choroba, odwodnienie i upał. Tętno spoczynkowe o kilka uderzeń wyższe niż zwykle przez kilka dni często oznacza, że organizm jest pod obciążeniem: nadchodzi przeziębienie, nagromadził się stres albo brakuje regeneracji.\n\nPojedynczy podwyższony wynik zwykle wynika z gorszej nocy albo niedawnej kawy. Utrzymujący się wzrost ponad twoją linię bazową to bardziej znaczący sygnał.\n\n## Tętno spoczynkowe podczas snu\n\nNajniższe tętno w ciągu doby zwykle pojawia się w głębokim śnie, gdy dominuje przywspółczulna aktywność „odpoczywaj i traw”. To nocne minimum jest jedną z najstabilniejszych i najlepiej porównywalnych liczb, jakie możesz śledzić, bo mierzy się je w stałych warunkach: bez kofeiny, ruchu i stresu w danej chwili. Tu też wyraźnie widać wpływ alkoholu i późnych posiłków: oba utrzymują podwyższone tętno przez całą noc, dlatego możesz obudzić się niezregenerowany nawet po pełnej nocy w łóżku. Śledzenie nocnego tętna spoczynkowego względem własnej normy to jedno z najczytelniejszych okien na twoją regenerację.\n\n## Kiedy tętno spoczynkowe ma znaczenie\n\nTętno spoczynkowe w normie dla twojego wieku i kondycji uspokaja, ale obserwować trzeba *zmianę*. Stały wzrost o kilka uderzeń ponad twoją osobistą linię bazową — przez kilka dni, a nie w jednym pomiarze — może świadczyć o chorobie, przetrenowaniu, stresie lub słabym śnie. I odwrotnie: tętno spoczynkowe, które spada wraz z poprawą kondycji, to oznaka poprawiającego się zdrowia układu krążenia. Skrajności w którąkolwiek stronę — uporczywie bardzo wysokie albo bardzo niskie z objawami takimi jak zawroty głowy czy zmęczenie — warto omówić z lekarzem, ale samo tętno spoczynkowe to sygnał, a nie diagnoza.\n\n## Zobacz trend swojego tętna spoczynkowego\n\nPojedynczy pomiar mówi niewiele; trend mówi dużo. ONDA odczytuje tętno spoczynkowe i HRV z historii twojego Apple Watch, buduje twoją osobistą linię bazową — twój normalny zakres — i pokazuje, kiedy dzisiejszy dzień z niego wychodzi. Zamiast zastanawiać się, czy 58 czy 68 to „dobrze”, widzisz, czy *twoje* tętno spoczynkowe jest stabilne, spada wraz z poprawą kondycji, czy powoli rośnie, bo coś jest nie tak. To właśnie ten trend naprawdę odzwierciedla twoje zdrowie.\n",
+      "imageAlt": "Tętno spoczynkowe według wieku — ilustracja: spokojna linia bicia serca nad sypialnią w miękkim nocnym świetle, otoczona delikatnymi pierścieniami przywołującymi etapy życia.",
+      "imageTitle": "Tętno spoczynkowe według wieku",
+      "faq": [
+        {
+          "question": "Jakie jest prawidłowe tętno spoczynkowe według wieku?",
+          "answer": "U dorosłych 60–100 uderzeń/min; u dobrze wytrenowanych dorosłych często 40–60. Dzieci i nastolatki mają wyższe wartości. W wieku dorosłym kondycja wpływa na wynik bardziej niż wiek."
+        },
+        {
+          "question": "Czy tętno spoczynkowe 50 to za mało?",
+          "answer": "Niekoniecznie — tętno spoczynkowe 40–60 jest częste i zdrowe u osób wysportowanych i odzwierciedla wydajne serce. Niepokoi tylko wtedy, gdy towarzyszą mu objawy takie jak zawroty głowy, zmęczenie lub omdlenia."
+        },
+        {
+          "question": "Jakie tętno spoczynkowe jest normalne podczas snu?",
+          "answer": "Tętno podczas snu jest zwykle najniższe w ciągu doby, często o kilka uderzeń niższe niż dzienne tętno spoczynkowe, bo w głębokim śnie dominuje aktywność przywspółczulna."
+        },
+        {
+          "question": "Dlaczego moje tętno spoczynkowe jest wyższe niż zwykle?",
+          "answer": "Częste przyczyny to słaby sen, alkohol, kofeina, stres, choroba lub odwodnienie. Wzrost o kilka uderzeń ponad linię bazową utrzymujący się przez kilka dni często oznacza, że organizm jest pod obciążeniem albo z czymś walczy."
+        },
+        {
+          "question": "Czy tętno spoczynkowe rośnie z wiekiem?",
+          "answer": "U zdrowych dorosłych tylko nieznacznie — kondycja, sen i styl życia mają dużo większy wpływ niż wiek. Sprawna starsza osoba może mieć niższe tętno spoczynkowe niż niewytrenowana młodsza."
+        }
+      ]
+    },
+    "alternate-nostril-breathing": {
+      "title": "Oddychanie naprzemienne (Nadi Shodhana): korzyści",
+      "description": "Oddychanie naprzemienne (Nadi Shodhana) uspokaja układ nerwowy i może obniżać ciśnienie. Technika, rola wolnego tempa i kiedy go używać.",
+      "neuralSuggestion": {
+        "text": "Spokój daje tempo, a nie nozdrza. Sprawdź to na własnych danych.",
+        "linkText": "Zobacz na żywo →"
+      },
+      "content": "\nOddychanie naprzemienne przez nozdrza — w jodze Nadi Shodhana — to technika, w której zamykasz jedno nozdrze, robisz wdech, potem zmieniasz stronę i robisz wydech, naprzemiennie przez całą praktykę. Obniża tętno, uspokaja układ nerwowy, a badania łączą je z niższym ciśnieniem krwi i lepszą zmiennością rytmu serca (HRV). Uczciwie o mechanizmie: spokój bierze się głównie z wolnego, kontrolowanego tempa, do którego prowadzi ta technika, a nie z samej zmiany nozdrza. Zajmuje około pięciu minut i lepiej sprawdza się, gdy chcesz zwolnić lub zebrać rozproszone myśli, niż do zatrzymania ostrej paniki, przy której szybciej działa [fizjologiczne westchnienie](/articles/physiological-sigh).\n\n## Jak wykonywać oddychanie naprzemienne\n\nUsiądź wygodnie z prostymi plecami. Nozdrza kontroluj kciukiem i palcem serdecznym prawej ręki:\n\n1. **Zamknij prawe nozdrze** kciukiem. Zrób powolny wdech przez lewe.\n2. **Zamknij lewe nozdrze** palcem serdecznym, otwórz prawe i zrób **wydech** przez prawe.\n3. Zrób **wdech** przez prawe nozdrze.\n4. **Zmień stronę**: zamknij prawe, otwórz lewe i zrób **wydech** przez lewe.\n\nTo jeden pełny cykl. Kontynuuj przez trzy do pięciu minut, utrzymując oddech wolny, płynny i równy. Nie wydłużaj go na siłę — wygodne, niespieszne tempo jest ważniejsze niż długie. Jeśli ułożenie palców cię rozprasza, po prostu wyobrażaj sobie, że oddychasz na zmianę jedną stroną; pracę wykonuje wolny rytm.\n\n## Dlaczego to działa — i co naprawdę się liczy\n\nUspokajające działanie Nadi Shodhany ma proste wyjaśnienie: spowalnia oddech i czyni go równym i świadomym. Wolny oddech — około pięciu–sześciu oddechów na minutę — to jeden z najlepiej udokumentowanych sposobów, by pobudzić nerw błędny, przejść w przywspółczulny tryb „odpoczywaj i traw” i podnieść HRV w czasie rzeczywistym. Naprzemienne nozdrza dają umysłowi proste zadanie, na którym łatwo się skupić, co pomaga wytrwać w praktyce, ale korzyść fizjologiczna pochodzi w przeważającej mierze z tempa. Właśnie w to tempo celuje bezpośrednio [rezonansowa częstotliwość oddechu](/articles/find-your-resonance-breathing-rate).\n\nIndyjskie badania kliniczne potwierdzają działanie uspokajające: w randomizowanym badaniu z udziałem pacjentów z nadciśnieniem 20 minut Nadi Shodhany istotnie obniżyło ciśnienie skurczowe i rozkurczowe oraz tętno, a także poprawiło czas reakcji słuchowej — wskaźnik spokojniejszego i lepiej reagującego układu nerwowego. Co ciekawe, to samo badanie wykazało, że zmiana samych parametrów HRV nie zawsze była istotna statystycznie — to przypomnienie, że korzyść widać w kilku miarach, a nie w jednej liczbie.\n\nTradycyjna joga opisuje też oddychanie naprzemienne jako sposób na „zrównoważenie” dwóch półkul mózgu. Uczciwy stan wiedzy: to konkretne twierdzenie ma słabe potwierdzenie. Dobrze potwierdzone jest to, że wolny, kontrolowany oddech uspokaja układ nerwowy — a Nadi Shodhana to przyjemny, uporządkowany sposób, by to osiągnąć.\n\n## Kiedy go używać\n\nOddychanie naprzemienne lepiej pasuje do spokojnych, świadomych chwil niż do sytuacji nagłych:\n\n- **Żeby zwolnić** przed snem lub po intensywnym dniu.\n- **Żeby zebrać rozproszony, przestymulowany umysł**, gdy musisz się skupić.\n- **Jako krótka codzienna praktyka**, by wyrobić nawyk wolnego oddechu.\n\nPrzy ostrym skoku stresu — nagłym lęku, złej wiadomości — jest zbyt wolne, by było pierwszym wyborem; sięgnij raczej po fizjologiczne westchnienie. Traktuj Nadi Shodhanę jako rytuał wyciszenia, a nie narzędzie ratunkowe.\n\n## Oddychanie naprzemienne na tle innych technik\n\n| Technika | Tempo | Najlepsza do |\n|---|---|---|\n| **Oddychanie naprzemienne** | Wolno, ~5 min | Zebrania rozproszonych myśli, wyciszenia |\n| **Oddech koherentny** | 5–6 oddechów/min | Trwałego spokoju, podniesienia HRV |\n| **Fizjologiczne westchnienie** | 1–3 oddechy | Szybkiego wygaszenia nagłego skoku stresu |\n\nJeśli chcesz po prostu podnieść HRV i się uspokoić, [oddech koherentny](/articles/coherent-breathing-guide) daje tę samą fizjologię przy mniejszym wysiłku uwagi. Wybierz Nadi Shodhanę, gdy lubisz sam rytuał i skupienie, które daje.\n\n## Zobacz spokój w liczbach\n\nPonieważ korzyść z Nadi Shodhany bierze się ze spowolnienia oddechu, możesz zobaczyć, jak to się dzieje. ONDA odczytuje twoje tętno kamerą telefonu lub przez Apple Watch i pokazuje, jak tętno się uspokaja, gdy oddech zwalnia i się wyrównuje; z Apple Watch widzisz też wzrost HRV. Zobaczenie tego we własnych danych potwierdza, że znalazłeś naprawdę uspokajające tempo — i pomaga odróżnić, czy działa praktyka, czy tylko przerwa.\n",
+      "howToSteps": [
+        {
+          "name": "Wdech przez lewe nozdrze",
+          "text": "Zamknij prawe nozdrze kciukiem i zrób powolny wdech przez lewe."
+        },
+        {
+          "name": "Wydech przez prawe nozdrze",
+          "text": "Zamknij lewe nozdrze palcem serdecznym, otwórz prawe i zrób wydech przez prawe."
+        },
+        {
+          "name": "Wdech prawym, zmiana i wydech lewym",
+          "text": "Zrób wdech przez prawe nozdrze, potem zamknij prawe, otwórz lewe i zrób wydech przez lewe. To kończy jeden cykl."
+        },
+        {
+          "name": "Kontynuuj przez trzy do pięciu minut",
+          "text": "Utrzymuj oddech wolny, płynny i równy, w wygodnym, niespiesznym tempie. Uspokaja wolny rytm, a nie zmiana nozdrza."
+        }
+      ],
+      "imageAlt": "Oddychanie naprzemienne (Nadi Shodhana) — ilustracja: profil twarzy z dwoma strumieniami światła przepływającymi naprzemiennie przez nozdrza w zrównoważonym, symetrycznym wzorze.",
+      "imageTitle": "Oddychanie naprzemienne (Nadi Shodhana)",
+      "faq": [
+        {
+          "question": "Jakie są korzyści z oddychania naprzemiennego?",
+          "answer": "Uspokaja układ nerwowy, obniża tętno i wiąże się z niższym ciśnieniem oraz lepszym HRV. Większość korzyści pochodzi z wolnego, równego tempa, które narzuca ta technika."
+        },
+        {
+          "question": "Jak długo wykonywać oddychanie naprzemienne?",
+          "answer": "Trzy do pięciu minut to dobra sesja. Utrzymuj oddech wolny i wygodny, a nie długi czy wymuszony."
+        },
+        {
+          "question": "Oddychanie naprzemienne czy oddech pudełkowy — co lepsze?",
+          "answer": "Działanie jest podobne: oba uspokajają dzięki wolnemu, kontrolowanemu oddechowi. Nadi Shodhana dodaje rytuał pomagający w skupieniu, oddech pudełkowy jest prostszy. Wybierz ten, który lepiej cię angażuje."
+        },
+        {
+          "question": "Czy liczy się zmiana nozdrzy, czy wolne tempo?",
+          "answer": "Dane wskazują, że głównym źródłem działania uspokajającego jest wolne, równe tempo. Zmiana nozdrzy daje głównie zadanie uwadze, co pomaga wytrwać w praktyce."
+        },
+        {
+          "question": "Czy oddychanie naprzemienne może obniżyć ciśnienie?",
+          "answer": "Badania łączą regularny wolny oddech, w tym Nadi Shodhanę, z umiarkowanym spadkiem ciśnienia — dzięki pobudzeniu nerwu błędnego, a nie samej technice nozdrzy. To praktyka wspierająca, a nie leczenie nadciśnienia."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "meta": {
+    "title": "Feelings Wheel — Name What You're Feeling · Emoton",
+    "description": "A free interactive feelings wheel. Name what you feel right now, then take a quiet moment to be with it — no sign-up, no diagnosis, no advice."
+  },
+  "page_title": "Feelings Wheel — Name What You're Feeling · Emoton",
+  "seo": {
+    "h1": "Feelings wheel: name what you're feeling",
+    "intro_h2": "What is Emoton?",
+    "intro_p": "Emoton is a free interactive feelings wheel — an emotional check-in you can do in under a minute. Touch your “I”, see what's most alive right now, and pick the word closest to it. No sign-up, no account, nothing saved.",
+    "how_h2": "How to name what you're feeling",
+    "how_p": "Not sure what am I feeling? Start broad — choose the area that's loudest, then the shade nearest to it. Naming your feeling is the whole practice: putting a feeling into words already changes how it sits.",
+    "bewith_h2": "Be with it — not fix it",
+    "bewith_p": "Once you've named it, you can simply be with an emotion — let it be here for a moment instead of fixing it or pushing it away. That's how to sit with your feelings: not solving, just keeping it company.",
+    "felt_h2": "Felt states, not a diagnosis",
+    "felt_p": "Emoton works with felt states, not diagnoses. It never reads, scores, or labels you — you name what you feel, and the tool only holds the space. If you continue into a practice, the camera reads pulse only, on your device.",
+    "faq_h2": "Questions people ask",
+    "faq": [
+      { "q": "What is a feelings wheel?", "a": "A circular map of emotions you pick from to find the word closest to what you feel." },
+      { "q": "How do I know what I'm feeling?", "a": "Start broad: choose the area that's loudest right now, then the shade nearest. It doesn't have to be exact." },
+      { "q": "Is it free?", "a": "Yes — no account, no sign-up, nothing is saved." },
+      { "q": "Does it analyse or diagnose my emotions?", "a": "No. Emoton never reads, scores, or labels you. You name what you feel; it just holds the space." },
+      { "q": "What does “be with it” mean?", "a": "Instead of fixing or pushing a feeling away, you let it be here a moment. Often that's what it was waiting for." },
+      { "q": "Do I have to turn on my camera?", "a": "Only if you choose a practice, and it reads pulse only, on your device." }
+    ],
+    "related_label": "More from ONDA Life:",
+    "related_hrv": "Quick HRV check",
+    "related_home": "Train your nervous system"
+  },
+  "presence": {
+    "title": "Here you are.",
+    "description": "Take one breath. When you're ready, touch your I and feel what's most alive in you right now.",
+    "cta": "Continue"
+  },
+  "wheel": {
+    "prompt": "What's most alive?",
+    "shade_prompt": "Tap the shade closest to it"
+  },
+  "zone": {
+    "regulated": "Calm · present",
+    "expansive": "Joy · uplift",
+    "fight": "Anger · pressure",
+    "flight": "Anxiety · fear",
+    "grief": "Sadness · grief",
+    "freeze": "Numb · flat"
+  },
+  "shade": {
+    "serenity": "serenity",
+    "clarity": "clarity",
+    "fullness": "fullness",
+    "grounded": "grounded",
+    "lightness": "lightness",
+    "thrill": "thrill",
+    "anticipation": "anticipation",
+    "warmth": "warmth",
+    "aliveness": "aliveness",
+    "interest": "interest",
+    "irritation": "irritation",
+    "indignation": "indignation",
+    "rage": "rage",
+    "hurt": "hurt",
+    "guilt": "guilt",
+    "worry": "worry",
+    "tension": "tension",
+    "wariness": "wariness",
+    "turmoil": "turmoil",
+    "panic": "panic",
+    "sorrow": "sorrow",
+    "melancholy": "melancholy",
+    "loneliness": "loneliness",
+    "despondency": "despondency",
+    "lostness": "lostness",
+    "detachment": "detachment",
+    "numbness": "numbness",
+    "apathy": "apathy",
+    "indifference": "indifference",
+    "shame": "shame"
+  },
+  "own": {
+    "meta": "You named it",
+    "title": "Me and my {{shade}}.",
+    "description": "It's here, and it's yours.\nHow do you want to be with this right now?"
+  },
+  "action": {
+    "be_with": "Be with it",
+    "know": "I know what to do",
+    "practice": {
+      "regulated": "Deepen it",
+      "expansive": "Channel it into action",
+      "fight": "Let the charge settle",
+      "flight": "Ground and exhale",
+      "freeze": "Gently come back",
+      "grief": "Breathe through it"
+    }
+  },
+  "want": {
+    "calm_down": "Calm down",
+    "ground": "Ground myself",
+    "gently_come_back": "Gently come back",
+    "deepen": "Deepen it",
+    "channel_action": "Channel it into action",
+    "be_with": "Be with it",
+    "describe": "Describe the feeling",
+    "set_boundary": "Set a boundary",
+    "live_it": "Live it",
+    "nothing": "Nothing — I'm good",
+    "other": "Something else"
+  },
+  "freeze_move": {
+    "meta": "One small move",
+    "title": "Just one stroke.",
+    "description": "No need for a breath yet. Draw a single line in the circle — any line. That's enough to start coming back.",
+    "stroke_prompt_idle": "drag here",
+    "stroke_prompt_done": "there it is",
+    "cta": "Gently come back",
+    "cancel": "Not now"
+  },
+  "practice": {
+    "body_cocoon": "Body Cocoon",
+    "body_cocoon_intent": "settle the charge",
+    "earth_pulse": "Earth Pulse",
+    "earth_pulse_intent": "come back to the ground",
+    "inner_spark": "Inner Spark",
+    "inner_spark_intent": "a gentle return",
+    "earth_breath": "Earth Breath",
+    "earth_breath_intent": "deepen the calm",
+    "light_inhale": "Light Inhale",
+    "light_inhale_intent": "carry the lift",
+    "camera_offer_title": "See your pulse respond — live",
+    "camera_offer_description": "Rest a fingertip over your camera — the rear camera on a phone, or the webcam on a laptop — and watch your pulse move with the breath. It runs entirely on your device. On a laptop, press gently and use bright light (there's no flash).",
+    "camera_use_cta": "Use the camera",
+    "camera_skip": "Continue without it",
+    "pacer_cue_breathe": "breathe",
+    "pacer_cue_rise": "rise",
+    "camera_status_reading": "Live — your pulse is responding",
+    "camera_status_requesting": "Opening camera…",
+    "camera_status_denied": "Camera unavailable — follow the breath instead.",
+    "camera_status_finger_on": "Got your finger — hold still…",
+    "camera_status_waiting": "Rest a fingertip over the camera lens",
+    "camera_bpm_label": "bpm",
+    "camera_bpm_no_reading": "— bpm",
+    "camera_no_flash_note": "No flash on this device — press a fingertip firmly over the lens, in bright light.",
+    "camera_coherence_note": "Pulse only — coherence unlocks with an Apple Watch.",
+    "done_cta": "Done",
+    "upgrade_link": "In the app with Apple Watch: precise pulse + coherence + the full journey"
+  },
+  "be_with": {
+    "meta": "Being with it",
+    "feeling_label": "my {{shade}}",
+    "self_label": "I",
+    "grow_self_cta": "Grow the Self around it",
+    "ease_cta": "Ease it a notch",
+    "describe_cta": "Describe the feeling",
+    "ready_cta": "When you're ready",
+    "stay_longer": "Stay longer · or close",
+    "description_no_pick": "It lives within you. Let it rise, and let it settle on its own.",
+    "description_with_pick": "It feels {{word}}. Noticed — that's enough.",
+    "soak": "Your {{shade}} is here — stay with it. Let it fill you.",
+    "near": "Let it be — no rush.",
+    "soft": "Something's there, faint as it is — stay with it.",
+    "camera_cta": "Connect the camera",
+    "camera_title": "See your pulse respond live",
+    "camera_hint": "Rest a fingertip on the rear camera and watch your pulse move with your breath.",
+    "finish_cta": "Finish",
+    "app_invite": "Or continue in the app with the full experience"
+  },
+  "quality": {
+    "heavy": "heavy",
+    "tight": "tight",
+    "hollow": "hollow",
+    "sharp": "sharp",
+    "warm": "warm",
+    "cold": "cold",
+    "fluttery": "fluttery",
+    "dull": "dull",
+    "electric": "electric",
+    "numb": "numb"
+  },
+  "release": {
+    "title": "You named it — and it's yours.",
+    "description": "That's already enough. You know what to do with it — do it your way, at your pace.",
+    "close_cta": "Close"
+  },
+  "support": {
+    "title": "This seems like a lot right now.",
+    "description": "It can help not to be alone with it. Talking to someone is a strong move, not a weak one.",
+    "lifeline_title": "988 — Suicide & Crisis Lifeline",
+    "lifeline_call": "Call or text",
+    "lifeline_number": "988",
+    "lifeline_hours": "(US, 24/7)",
+    "lifeline_url": "https://988lifeline.org",
+    "close_cta": "Close"
+  },
+  "assimilation": {
+    "title": "You stayed with it.",
+    "description": "You breathed even when it wasn't easy. That's the capacity you're building — carry it with you.",
+    "close_cta": "Close",
+    "invite": "Continue your journey in the ONDA Life app and meet all your capacities.",
+    "app_store": "Download on the App Store",
+    "google_play": "Get it on Google Play"
+  },
+  "start_over": "start over"
+}

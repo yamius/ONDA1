@@ -1,0 +1,63 @@
+{
+  "hub": {
+    "h1": "Biohacking Tool Reviews",
+    "intro": "Independent, criteria-based reviews across ten biohacker hardware and software categories — HRV trackers, sleep apps and climate systems, vagus stimulators, CGMs, EEG headsets, red light therapy, cold plunge, sauna and meditation apps. Every device scored against a fixed, public rubric — not on hype.",
+    "methodologyLink": "→ How we score (methodology)"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "reviews": "Reviews",
+    "methodology": "Methodology"
+  },
+  "methodology": {
+    "h1": "How ONDA scores tools",
+    "intro": "Every review on ONDA is a single, named editorial assessment — not a crowd average and not an algorithm. We score across ten biohacker categories with category-specific rubrics, each one weighted on what actually matters in that category (HRV accuracy for trackers, irradiance for red light, chiller capacity for cold plunge, heat-source spectrum for sauna, climate range for sleep systems). This page is the fixed rubric behind those scores, so you can judge the judgement.",
+    "scoreHeading": "The score",
+    "scoreBody": "Each tool gets an overall score from 0 to 10 (one decimal). It is the weighted mean of the criteria below — never a round number picked by feel. A single reviewer assigns it, so it is published as one editorial rating, not an aggregate of many.",
+    "criteriaHeading": "Scoring criteria — {{category}}",
+    "testHeading": "Hands-on tested vs evidence-based",
+    "testBody": "Every review carries one of two labels. Hands-on tested means ONDA physically wore and used the device, with the test period stated. Evidence-based assessment means the tool was scored from spec sheets and peer-reviewed validation studies, each cited in the review references. We never present an assessment as hands-on testing.",
+    "independenceHeading": "Independence",
+    "independenceBody": "No vendor pays for placement or for a score. Product links are plain links to official sites and ONDA earns no commission from them. If that ever changes, affiliate links will be clearly labelled and disclosed on the page.",
+    "selfReviewHeading": "Does ONDA review itself?",
+    "selfReviewBody": "No. ONDA makes an HRV biofeedback app, and it is never scored in these independent reviews — you will not find an ONDA product ranked here. Where we compare ONDA to other apps, that lives separately at /compare, is clearly labelled as ONDA's own comparison, and is kept out of the independent rankings entirely. We would rather leave ourselves out than mark our own homework.",
+    "sourcesHeading": "Data sources",
+    "sourcesBody": "Scores draw on three sources: manufacturer specifications and documentation, independent third-party reviews, and published peer-reviewed validation literature. Prices and availability are stated as of the date on each review, and can change.",
+    "coiHeading": "Conflicts of interest",
+    "coiBody": "ONDA does not sell, manufacture or resell any product reviewed here, and receives no compensation, sponsorship, gifts or free units in exchange for coverage or a score. There are no vendor relationships behind the rankings. The only product ONDA makes — its app — is deliberately excluded from these reviews.",
+    "updatesHeading": "How often rankings change",
+    "updatesBody": "Every review and round-up carries a last-updated date. We revise scores and rankings when a flagship launches, when a price or availability changes materially, or when new evidence emerges — not on a fixed schedule and not to chase a calendar. When a product is discontinued or, for example, banned from sale, we say so and adjust the ranking.",
+    "authorHeading": "Who writes the reviews",
+    "authorBody": "Reviews are written by Yakiv Bilenko, founder of ONDA Life.",
+    "authorLink": "About the author"
+  },
+  "ui": {
+    "updated": "Updated",
+    "howWeTested": "How we tested:",
+    "pros": "Pros",
+    "cons": "Cons",
+    "price": "Price:",
+    "asOf": "as of",
+    "references": "References",
+    "relatedReviews": "Related reviews",
+    "allReviews": "← All reviews",
+    "visitSite": "Visit {{brand}} official site →",
+    "affiliateNote": "Affiliate link — ONDA may earn a commission. It does not affect the score.",
+    "scoreBreakdown": "[ SCORE_BREAKDOWN ]",
+    "comparisonsHeading": "[ COMPARISONS ]",
+    "comparisonTag": "[ COMPARISON ]",
+    "topPicks": "[ TOP_PICKS ]",
+    "comparisonTable": "[ COMPARISON_TABLE ]",
+    "verdict": "Verdict",
+    "faq": "[ FAQ ]",
+    "product": "Product",
+    "overall": "Overall",
+    "metaReviewTitle": "{{name}} review — scored {{score}}/10"
+  },
+  "testStatus": {
+    "hands-on": "Hands-on tested",
+    "evidence-based": "Evidence-based assessment"
+  },
+  "bodies": {},
+  "comparisons": {}
+}
