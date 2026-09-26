@@ -257,7 +257,9 @@ export function Layout() {
           <div
             role="group"
             aria-label={t('menu.languagesLabel')}
-            className="flex items-center justify-between gap-1 border-b border-white/5 py-2"
+            // Two rows regardless of how many locales ship: columns = ceil(n / 2).
+            className="grid gap-1 border-b border-white/5 py-2"
+            style={{ gridTemplateColumns: `repeat(${Math.ceil(SUPPORTED_LANGS.length / 2)}, minmax(0, 1fr))` }}
           >
             {SUPPORTED_LANGS.map(lang => {
               const active = lang === currentLang
@@ -267,7 +269,7 @@ export function Layout() {
                   type="button"
                   onClick={() => switchLang(lang)}
                   aria-current={active ? 'true' : undefined}
-                  className={`flex-1 rounded-md py-1.5 font-mono text-xs font-semibold tracking-wider transition-colors ${
+                  className={`rounded-md py-1.5 font-mono text-xs font-semibold tracking-wider transition-colors ${
                     active
                       ? 'bg-cyan-500/10 text-cyan-400'
                       : 'text-white/50 hover:bg-white/5 hover:text-white'
