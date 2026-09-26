@@ -984,7 +984,7 @@ function buildWebSiteJsonLd(): string {
       },
       'query-input': 'required name=search_term_string',
     },
-    inLanguage: ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr'],
+    inLanguage: ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl'],
   })
 }
 

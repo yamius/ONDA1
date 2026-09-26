@@ -542,6 +542,11 @@ const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
   // live only through ARTICLE_LOCALE_EARLY below.
   { lang: 'de', start: '2099-01-01' },
   { lang: 'fr', start: '2099-01-01' },
+  // IT/NL/JA/PL: articles-first locales (see ARTICLES_ONLY_LANGS) — early list only.
+  { lang: 'it', start: '2099-01-01' },
+  { lang: 'nl', start: '2099-01-01' },
+  { lang: 'ja', start: '2099-01-01' },
+  { lang: 'pl', start: '2099-01-01' },
 ]
 /**
  * Hand-reviewed native translations released ahead of their locale's drip
@@ -573,6 +578,26 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure', 'yoga-breathing-diabetes-blood-sugar',
     'morita-therapy-tracking-paradox', 'pranayama-metabolic-syndrome',
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+  ],
+  it: [
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+  ],
+  nl: [
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+  ],
+  ja: [
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
+  ],
+  pl: [
+    'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
+    'nose-vs-mouth-breathing', 'meditation-vs-breathwork', 'cardiac-coherence-365-method',
+    'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {

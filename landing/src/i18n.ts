@@ -14,8 +14,12 @@ import uk from '../public/locales/uk/home.json'
 import zh from '../public/locales/zh/home.json'
 import de from '../public/locales/de/home.json'
 import fr from '../public/locales/fr/home.json'
+import it from '../public/locales/it/home.json'
+import nl from '../public/locales/nl/home.json'
+import ja from '../public/locales/ja/home.json'
+import pl from '../public/locales/pl/home.json'
 
-export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr'] as const
+export const SUPPORTED_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl'] as const
 export type Lang = (typeof SUPPORTED_LANGS)[number]
 
 export const LANG_LABELS: Record<Lang, string> = {
@@ -26,6 +30,10 @@ export const LANG_LABELS: Record<Lang, string> = {
   zh: 'ZH',
   de: 'DE',
   fr: 'FR',
+  it: 'IT',
+  nl: 'NL',
+  ja: 'JA',
+  pl: 'PL',
 }
 
 /** OpenGraph locale codes (BCP-47 with underscore). Used in og:locale meta tags. */
@@ -37,6 +45,10 @@ export const OG_LOCALES: Record<Lang, string> = {
   zh: 'zh_CN',
   de: 'de_DE',
   fr: 'fr_FR',
+  it: 'it_IT',
+  nl: 'nl_NL',
+  ja: 'ja_JP',
+  pl: 'pl_PL',
 }
 
 if (!i18n.isInitialized) {
@@ -52,6 +64,10 @@ if (!i18n.isInitialized) {
       zh: { home: zh },
       de: { home: de },
       fr: { home: fr },
+      it: { home: it },
+      nl: { home: nl },
+      ja: { home: ja },
+      pl: { home: pl },
     },
     ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews', 'emoton'],
     defaultNS: 'home',
@@ -115,8 +131,17 @@ export function langFromPath(pathname: string): Lang {
 
 /** Build the URL for the home page in a given language. EN is the bare root. */
 export function homePathFor(lang: Lang): string {
-  return lang === 'en' ? '/' : `/${lang}`
+  return lang === 'en' || ARTICLES_ONLY_LANGS.includes(lang) ? '/' : `/${lang}`
 }
+
+/**
+ * Articles-first locales: only /<lang>/articles and translated
+ * /<lang>/articles/<slug> pages exist. Home, about, bio, level, part, emoton…
+ * are not published in these languages yet — no route, no hreflang, and every
+ * link/switcher target falls back to the EN URL (never an EN body in a
+ * foreign shell). Remove a language from here once its UI is translated.
+ */
+export const ARTICLES_ONLY_LANGS: readonly Lang[] = ['it', 'nl', 'ja', 'pl']
 
 /**
  * Routes that have no per-language variant — never prefix these. /tools and
@@ -152,6 +177,7 @@ export function langHref(path: string, lang: Lang): string {
   const parts = path.split('/').filter(Boolean)
   if (isLang(parts[0])) return path
   if (NON_LOCALIZED_PREFIXES.some((p) => path === p || path.startsWith(p + '/'))) return path
+  if (ARTICLES_ONLY_LANGS.includes(lang) && parts[0] !== 'articles') return path
   // Partial-localized content (articles, glossary): the localized pages are
   // drip-/pilot-prerendered, so only some slugs exist per locale. If this
   // locale has no prerendered page for the slug, fall back to the EN URL
@@ -204,10 +230,13 @@ const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
 export const LANG_PAGE_EXCLUDE: Partial<Record<Lang, readonly string[]>> = {
   de: ['/privacy', '/terms'],
   fr: ['/privacy', '/terms'],
+  ...Object.fromEntries(
+    ARTICLES_ONLY_LANGS.map((l) => [l, LOCALIZED_BASE_PATHS.filter((b) => b !== '/articles')]),
+  ),
 }
 /** Languages whose /part/:slug bodies are not translated yet — no route, and
  *  the language switcher keeps the EN URL (else a DE/FR shell wraps EN text). */
-export const PART_UNTRANSLATED_LANGS: readonly Lang[] = ['de', 'fr']
+export const PART_UNTRANSLATED_LANGS: readonly Lang[] = ['de', 'fr', ...ARTICLES_ONLY_LANGS]
 export function isPageLocalizedFor(basePath: string, lang: Lang): boolean {
   return !(LANG_PAGE_EXCLUDE[lang]?.includes(basePath) ?? false)
 }
@@ -243,13 +272,13 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
   // Metric detail page: preserve the metric slug across language switches.
   const metricMatch = basePath.match(/^\/bio\/([^/]+)$/)
   if (metricMatch) {
-    return lang === 'en' ? `/bio/${metricMatch[1]}` : `/${lang}/bio/${metricMatch[1]}`
+    return lang === 'en' || ARTICLES_ONLY_LANGS.includes(lang) ? `/bio/${metricMatch[1]}` : `/${lang}/bio/${metricMatch[1]}`
   }
 
   // Level detail page: preserve level number across language switches.
   const levelMatch = basePath.match(/^\/level\/(\d+)$/)
   if (levelMatch) {
-    return lang === 'en' ? `/level/${levelMatch[1]}` : `/${lang}/level/${levelMatch[1]}`
+    return lang === 'en' || ARTICLES_ONLY_LANGS.includes(lang) ? `/level/${levelMatch[1]}` : `/${lang}/level/${levelMatch[1]}`
   }
 
   // Part detail page: preserve slug across language switches.
@@ -330,6 +359,7 @@ export function metricRouteVariants(metricKeys: string[]): string[] {
   const out: string[] = []
   for (const key of metricKeys) {
     for (const lang of SUPPORTED_LANGS) {
+      if (ARTICLES_ONLY_LANGS.includes(lang)) continue
       out.push(metricPathFor(key, lang))
     }
   }
@@ -338,7 +368,7 @@ export function metricRouteVariants(metricKeys: string[]): string[] {
 
 /** Parse a metric URL — returns { lang, metric } or null. */
 export function parseMetricRoute(route: string): { lang: Lang; metric: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/bio\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/bio\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, metric: m[2] }
@@ -354,6 +384,7 @@ export function levelRouteVariants(levelNumbers: number[]): string[] {
   const out: string[] = []
   for (const n of levelNumbers) {
     for (const lang of SUPPORTED_LANGS) {
+      if (ARTICLES_ONLY_LANGS.includes(lang)) continue
       out.push(levelPathFor(n, lang))
     }
   }
@@ -362,7 +393,7 @@ export function levelRouteVariants(levelNumbers: number[]): string[] {
 
 /** Parse a level URL — returns { lang, levelNum } or null. */
 export function parseLevelRoute(route: string): { lang: Lang; levelNum: number } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/level\/(\d+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/level\/(\d+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, levelNum: parseInt(m[2], 10) }
@@ -387,7 +418,7 @@ export function partRouteVariants(slugs: string[]): string[] {
 
 /** Parse a part URL — returns { lang, slug } or null. */
 export function parsePartRoute(route: string): { lang: Lang; slug: string } | null {
-  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr))?\/part\/([^/]+)$/)
+  const m = route.match(/^(?:\/(en|es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/part\/([^/]+)$/)
   if (!m) return null
   const lang = (m[1] as Lang | undefined) ?? 'en'
   return { lang, slug: m[2] }

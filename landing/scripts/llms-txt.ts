@@ -26,8 +26,8 @@ import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePa
 import { hrvVsCoherenceJsonLd } from '../src/pages/HrvVsCoherencePage'
 import { appleWatchHrvJsonLd } from '../src/pages/AppleWatchHrvBiofeedbackPage'
 
-type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh' | 'de' | 'fr'
-const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh', 'de', 'fr']
+type Lang = 'en' | 'es' | 'ru' | 'uk' | 'zh' | 'de' | 'fr' | 'it' | 'nl' | 'ja' | 'pl'
+const NON_EN_LANGS: Lang[] = ['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl']
 
 interface ArticlesLocale {
   bodies?: Record<string, { title?: string; description?: string }>
@@ -44,6 +44,10 @@ const articlesByLang: Record<Lang, ArticlesLocale> = {
   zh: JSON.parse(readFileSync(join(localesDir, 'zh', 'articles.json'), 'utf-8')),
   de: JSON.parse(readFileSync(join(localesDir, 'de', 'articles.json'), 'utf-8')),
   fr: JSON.parse(readFileSync(join(localesDir, 'fr', 'articles.json'), 'utf-8')),
+  it: JSON.parse(readFileSync(join(localesDir, 'it', 'articles.json'), 'utf-8')),
+  nl: JSON.parse(readFileSync(join(localesDir, 'nl', 'articles.json'), 'utf-8')),
+  ja: JSON.parse(readFileSync(join(localesDir, 'ja', 'articles.json'), 'utf-8')),
+  pl: JSON.parse(readFileSync(join(localesDir, 'pl', 'articles.json'), 'utf-8')),
 }
 
 const ES_PILOT_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)

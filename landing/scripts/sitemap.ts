@@ -9,7 +9,7 @@ import { writeFileSync, mkdirSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_BASE_PATHS, LOCALIZED_METRIC_ROUTE_SET, METRIC_KEYS, LOCALIZED_LEVEL_ROUTE_SET, LEVEL_NUMBERS, LOCALIZED_PART_ROUTE_SET, PART_SLUGS, LOCALIZED_ARTICLE_ROUTE_SET, ALL_PILOT_ARTICLE_SLUGS, articleLocalizedLangs, reviewLocalizedLangs, REVIEW_PILOT_LANGS, glossaryLocalizedLangs, GLOSSARY_INDEX_LANGS, INDEXED_TOPIC_SLUGS } from './prerender-routes'
-import { SUPPORTED_LANGS, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
+import { SUPPORTED_LANGS, ARTICLES_ONLY_LANGS, isPageLocalizedFor, stripLangPrefix, localizedPathFor, metricPathFor, levelPathFor, partPathFor, parseMetricRoute, parseLevelRoute, parsePartRoute, type Lang } from '../src/i18n'
 import { FEATURED_ARTICLE_SLUGS } from '../src/data/articles-categories'
 import { FEATURED_TERM_SLUGS } from '../src/data/glossary-categories'
 import { getArticleBySlug } from '../src/data/articles'
@@ -159,21 +159,21 @@ function getLastmod(route: string): string | null {
   if (hubSlug) {
     return getArticleTopicHub(hubSlug) ? hubLastModified(hubSlug as ArticleTopicSlug) : null
   }
-  const slug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr))?\/articles\/([^/]+)$/)?.[1]
+  const slug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/articles\/([^/]+)$/)?.[1]
   if (slug) {
     const d = ARTICLE_DATES[slug]
     return d ? (d.modified || d.published).slice(0, 10) : null
   }
-  if (/^(?:\/(?:es|ru|uk|zh|de|fr))?\/glossary\/[^/]+$/.test(route)) {
+  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary\/[^/]+$/.test(route)) {
     const d = ARTICLE_DATES['__glossary']
     return d ? (d.modified || d.published).slice(0, 10) : null
   }
-  const cmpSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr))?\/reviews\/compare\/([^/]+)$/)?.[1]
+  const cmpSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/compare\/([^/]+)$/)?.[1]
   if (cmpSlug) {
     const c = getComparisonBySlug(cmpSlug)
     return c ? c.dateModified.slice(0, 10) : null
   }
-  const revSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr))?\/reviews\/([^/]+)$/)?.[1]
+  const revSlug = route.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/([^/]+)$/)?.[1]
   if (revSlug && revSlug !== 'methodology') {
     const r = getReviewBySlug(revSlug)
     return r ? r.dateModified.slice(0, 10) : null
@@ -217,7 +217,8 @@ const routes = allRoutes.filter((r) => {
 /** Pre-build hreflang alternates for each localized base path. */
 const altsByBase: Record<string, string> = {}
 for (const base of LOCALIZED_BASE_PATHS) {
-  const tags = SUPPORTED_LANGS.map(l => {
+  // Only languages that actually publish this page (DE/FR legal, articles-first locales).
+  const tags = SUPPORTED_LANGS.filter(l => isPageLocalizedFor(base, l)).map(l => {
     const href = `${SITE_URL}${localizedPathFor(base, l)}`.replace(/\/+$/, '') || SITE_URL
     return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
   })
@@ -229,7 +230,7 @@ for (const base of LOCALIZED_BASE_PATHS) {
 /** Pre-build hreflang alternates for each metric. */
 const altsByMetric: Record<string, string> = {}
 for (const key of METRIC_KEYS) {
-  const tags = SUPPORTED_LANGS.map(l => {
+  const tags = SUPPORTED_LANGS.filter(l => !ARTICLES_ONLY_LANGS.includes(l)).map(l => {
     const href = `${SITE_URL}${metricPathFor(key, l)}`
     return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
   })
@@ -240,7 +241,7 @@ for (const key of METRIC_KEYS) {
 /** Pre-build hreflang alternates for each level. */
 const altsByLevel: Record<number, string> = {}
 for (const n of LEVEL_NUMBERS) {
-  const tags = SUPPORTED_LANGS.map(l => {
+  const tags = SUPPORTED_LANGS.filter(l => !ARTICLES_ONLY_LANGS.includes(l)).map(l => {
     const href = `${SITE_URL}${levelPathFor(n, l)}`
     return `    <xhtml:link rel="alternate" hreflang="${l}" href="${href}"/>`
   })
@@ -288,10 +289,10 @@ function reviewAlternates(path: string): string {
   let kind = ''
   let slug = ''
   let m: RegExpMatchArray | null
-  if (/^(?:\/(?:es|ru|uk|zh|de|fr))?\/reviews$/.test(path)) kind = 'hub'
-  else if (/^(?:\/(?:es|ru|uk|zh|de|fr))?\/reviews\/methodology$/.test(path)) kind = 'methodology'
-  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr))?\/reviews\/compare\/([^/]+)$/))) { kind = 'comparison'; slug = m[1] }
-  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr))?\/reviews\/([^/]+)$/))) { kind = 'review'; slug = m[1] }
+  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews$/.test(path)) kind = 'hub'
+  else if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/methodology$/.test(path)) kind = 'methodology'
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/compare\/([^/]+)$/))) { kind = 'comparison'; slug = m[1] }
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/reviews\/([^/]+)$/))) { kind = 'review'; slug = m[1] }
   else return ''
   const langs = kind === 'hub' || kind === 'methodology'
     ? SITEMAP_REVIEW_LANGS
@@ -313,8 +314,8 @@ function glossaryAlternates(path: string): string {
   let kind = ''
   let slug = ''
   let m: RegExpMatchArray | null
-  if (/^(?:\/(?:es|ru|uk|zh|de|fr))?\/glossary$/.test(path)) kind = 'index'
-  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr))?\/glossary\/([^/]+)$/))) { kind = 'term'; slug = m[1] }
+  if (/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary$/.test(path)) kind = 'index'
+  else if ((m = path.match(/^(?:\/(?:es|ru|uk|zh|de|fr|it|nl|ja|pl))?\/glossary\/([^/]+)$/))) { kind = 'term'; slug = m[1] }
   else return ''
   const langs = kind === 'index'
     ? GLOSSARY_INDEX_LANGS
@@ -360,7 +361,7 @@ const urls = routes.map((path) => {
     if (info && altsByPart[info.slug]) alternates = `\n${altsByPart[info.slug]}`
   } else if (LOCALIZED_ARTICLE_ROUTE_SET.has(path)) {
     // Localised /es/articles/<slug>
-    const m = path.match(/^\/(?:en|es|ru|uk|zh|de|fr)\/articles\/([^/]+)$/)
+    const m = path.match(/^\/(?:en|es|ru|uk|zh|de|fr|it|nl|ja|pl)\/articles\/([^/]+)$/)
     if (m && altsByArticle[m[1]]) alternates = `\n${altsByArticle[m[1]]}`
   } else if (articleSlug && altsByArticle[articleSlug]) {
     // EN /articles/<slug> for a slug that has a localised sibling.
