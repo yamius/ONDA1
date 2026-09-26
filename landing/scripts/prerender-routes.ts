@@ -600,6 +600,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
+    'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -607,6 +608,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
+    'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -614,6 +616,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
+    'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -621,6 +624,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
+    'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -628,6 +632,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-much-meditation-do-you-need', 'measuring-meditation-progress', 'humming-breath-vagus',
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
     'cardiac-coherence-insomnia-sleep', 'bhastrika-pranayama-brain-anxiety', 'om-chanting-brain-vagus',
+    'trataka-candle-gazing-focus', 'sudarshan-kriya-yoga-breathing', 'yoga-poses-heart-rate-blood-pressure',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {
