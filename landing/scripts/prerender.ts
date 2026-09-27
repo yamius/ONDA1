@@ -390,6 +390,7 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/tools/alcohol': [...SUPPORTED_LANGS],
   '/tools/camera-heart-rate': [...SUPPORTED_LANGS],
   '/tools/breathing': [...SUPPORTED_LANGS],
+  '/tools/biological-age': [...SUPPORTED_LANGS],
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.

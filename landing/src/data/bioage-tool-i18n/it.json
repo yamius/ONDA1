@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Calcolo età biologica — la tua età fitness | ONDA Life",
+    "description": "Calcolo gratuito dell'età biologica con il modello HUNT: stima il VO2max da età, girovita, battito a riposo e allenamento e scopri la tua età fitness.",
+    "appName": "Calcolatore di età fitness (modello HUNT)",
+    "appDescription": "Calcolatore gratuito che stima il VO2max con il modello HUNT senza test da sforzo (Nes 2011) e lo converte in età fitness sui dati di riferimento HUNT."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Strumenti", "current": "Età fitness" },
+  "h1": "Calcolo età biologica",
+  "capsule": "La tua età fitness è l'età di una persona sana media con la tua stessa forma aerobica (VO2max). Questo calcolatore stima il tuo VO2max con il modello HUNT, sviluppato in Norvegia — età, sesso, girovita, frequenza cardiaca a riposo e il modo in cui ti alleni — e lo confronta con valori misurati. È una stima scientifica di una componente dell'età biologica, non un esame di laboratorio né una diagnosi medica.",
+  "imageAlt": "Calcolo età biologica — età fitness dal VO2max stimato, strumento gratuito di ONDA Life",
+  "form": {
+    "sex": "Sesso",
+    "male": "Uomo",
+    "female": "Donna",
+    "age": "Età",
+    "waist": "Circonferenza vita",
+    "waistHint": "Misurala all'altezza dell'ombelico, rilassato, dopo aver espirato.",
+    "rhr": "Frequenza cardiaca a riposo (bpm)",
+    "rhrHint": "Da seduto e tranquillo per qualche minuto, oppure il valore a riposo del tuo smartwatch.",
+    "freq": "Quanto spesso ti alleni?",
+    "intensity": "Quanto ti impegni di solito?",
+    "duration": "Quanto dura ogni sessione?"
+  },
+  "freq": { "lt1": "Mai o meno di una volta a settimana", "once": "Una volta a settimana", "twoThree": "2–3 volte a settimana", "daily": "Quasi tutti i giorni" },
+  "intensity": { "easy": "Leggero — senza sudare né restare senza fiato", "breathless": "Abbastanza intenso da restare senza fiato e sudare", "exhaustion": "Quasi fino allo sfinimento" },
+  "duration": { "lt15": "Meno di 15 minuti", "m15": "15–29 minuti", "m30": "30–60 minuti", "gt60": "Più di un'ora" },
+  "result": {
+    "title": "La tua età fitness",
+    "years": "{{n}} anni",
+    "younger": "{{n}} anni in meno della tua età",
+    "older": "{{n}} anni in più della tua età",
+    "same": "Uguale alla tua età",
+    "vo2": "VO2max stimato: {{v}} ml/kg/min ({{pct}}% della media delle persone sane della tua età e sesso, {{norm}})",
+    "note": "Il modello spiega circa il 60% delle differenze nel VO2max misurato, quindi il tuo valore reale può essere di diversi punti più alto o più basso. Solo un test in laboratorio o su tapis roulant può misurarlo."
+  },
+  "invalid": "Inserisci età 20–90, girovita 50–160 cm (20–63 in) e frequenza cardiaca a riposo 35–120 bpm.",
+  "disclaimer": "Stima a scopo informativo, non un esame né una diagnosi medica. I valori di riferimento provengono da volontari norvegesi sani e piuttosto attivi, quindi molte persone risultano un po' più \"vecchie\" della loro età. Conta la direzione: più allenamento intenso e regolare, un girovita più piccolo e un battito a riposo più basso abbassano la tua età fitness.",
+  "sections": [
+    {
+      "h2": "Che cos'è l'età biologica — e che cos'è l'età fitness?",
+      "body": "L'età biologica descrive quanti anni \"dimostra\" il tuo corpo, non quanti compleanni hai festeggiato. Non esiste un'unica misura: gli orologi epigenetici leggono la metilazione del DNA, altri metodi usano gli esami del sangue. L'età fitness ne è una componente molto studiata: confronta la tua capacità cardiorespiratoria (VO2max) con quella della persona sana media di ogni età. È importante perché la forma fisica è uno dei più forti predittori di salute a lungo termine: in uno studio su 122.007 pazienti (Mandsager 2018), chi aveva la forma più bassa mostrava una mortalità molto più alta dei più allenati, senza un limite superiore al beneficio. A differenza di un test del DNA, l'età fitness può cambiare in poche settimane di allenamento."
+    },
+    {
+      "h2": "Come funziona il calcolo dell'età fitness",
+      "body": "Usa il modello senza test da sforzo dell'HUNT Fitness Study norvegese (Nes 2011), in cui adulti sani hanno svolto un test su tapis roulant fino all'esaurimento. I ricercatori hanno scoperto che età, circonferenza vita, frequenza cardiaca a riposo e un indice di attività fisica predicono bene il VO2max misurato. L'indice di attività moltiplica tre risposte: quanto spesso ti alleni, con quale intensità e per quanto tempo. Il VO2max stimato viene poi confrontato con il VO2max medio di uomini o donne sani di ogni età dello stesso studio (Loe 2013): l'età in cui quella media coincide con il tuo valore è la tua età fitness. In un follow-up di circa 37.000 persone per 24 anni, questa stima ha predetto la mortalità (Nes 2014)."
+    },
+    {
+      "h2": "Come abbassare la tua età fitness",
+      "body": "La leva più forte è l'intensità: nel modello, le sessioni che ti lasciano senza fiato e sudato contano il doppio di quelle leggere, e gli sforzi vicini allo sfinimento il triplo. Aggiungere una o due sedute di intervalli a settimana (ad esempio 4 × 4 minuti intensi con recupero leggero) e costruire una base aerobica costante in Zona 2 aumenta il VO2max in 6–12 settimane. Un girovita più piccolo e un battito a riposo più basso arrivano con lo stesso allenamento, più sonno di qualità e meno alcol. Guide: [allenamento in Zona 2](/articles/zone-2-training-aerobic-base), [come aumentare il VO2max](/articles/vo2max-increase-aerobic-engine) e [frequenza cardiaca a riposo per età](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "VO2max per età: quali sono i valori buoni?",
+      "body": "Nello studio HUNT su 3.816 adulti sani (Loe 2013), il VO2max medio misurato era di circa 54 ml/kg/min negli uomini tra i 20 e i 29 anni, 49 nei 30, 47 nei 40, 43 nei 50, 39 nei 60 e 35 dai 70; nelle donne circa 43, 40, 38, 34, 31 e 28. Dopo i 50 anni il VO2max cala di circa l'8% per decennio, ma le persone attive mantengono valori molto più alti. Anche dispositivi come Apple Watch, Garmin e Oura stimano il VO2max; i loro numeri differiscono da questo modello e da un test di laboratorio, quindi confronta ogni fonte solo con se stessa. Approfondisci: [calcolatore VO2max](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Età biologica ed età fitness — domande frequenti",
+  "faq": [
+    { "q": "Come si calcola l'età fitness?", "a": "Il VO2max viene stimato con il modello HUNT (Nes 2011) a partire da età, sesso, girovita, frequenza cardiaca a riposo e abitudini di allenamento. L'età fitness è l'età in cui la persona sana media del tuo sesso ha lo stesso VO2max (valori di Loe 2013)." },
+    { "q": "L'età fitness è uguale all'età biologica?", "a": "No. L'età fitness misura una componente dell'età biologica: la forma aerobica. Altri metodi usano la metilazione del DNA (orologi epigenetici) o gli esami del sangue. È una delle componenti più pratiche, perché predice la salute a lungo termine e puoi cambiarla con l'allenamento." },
+    { "q": "Quanto è preciso questo calcolatore?", "a": "È una stima: il modello spiega circa il 60% delle differenze nel VO2max misurato, quindi il tuo valore reale può essere di diversi punti più alto o più basso. Solo un test in laboratorio o su tapis roulant misura direttamente il VO2max." },
+    { "q": "Perché la mia età fitness è più alta della mia età reale?", "a": "I valori di riferimento provengono da volontari sani e piuttosto attivi, quindi l'asticella è alta. Un'intensità di allenamento bassa, un girovita più ampio e un battito a riposo più alto fanno salire la stima — e tutti e tre si possono migliorare." },
+    { "q": "Come posso abbassare la mia età fitness?", "a": "Aggiungi all'allenamento aerobico regolare sessioni più dure che ti lasciano senza fiato (come gli intervalli), riduci il girovita e migliora il sonno. Di solito il VO2max sale in 6–12 settimane di allenamento costante." },
+    { "q": "Qual è un buon VO2max per la mia età?", "a": "Valori medi nelle persone sane (Loe 2013): uomini circa 54 ml/kg/min tra i 20 e i 29 anni, 47 nei 40 e 39 nei 60; donne circa 43, 38 e 31. Più alto è, meglio è." }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "VO2max stimato = 100.27 − 0.296×età − 0.369×vita(cm) − 0.155×FC a riposo + 0.226×indice AF per gli uomini, e 74.74 − 0.247×età − 0.259×vita − 0.114×FC a riposo + 0.198×indice AF per le donne (Nes 2011). L'indice di attività fisica (AF) moltiplica i punteggi di frequenza (0; 1; 2,5 o 5), intensità (1, 2 o 3) e durata (0,1; 0,38; 0,75 o 1) del questionario HUNT (Nauman 2012). L'età fitness si ricava dal VO2max medio misurato in uomini e donne sani per decennio (Loe 2013), interpolato tra i decenni. Il modello originale usava la frequenza cardiaca a riposo da seduti; quella dello smartwatch di solito è un po' più bassa, il che migliora leggermente la stima. Stima a scopo informativo, non una diagnosi.",
+  "sourcesContributes": [
+    "Le equazioni usate qui: VO2max stimato da età, circonferenza vita, frequenza cardiaca a riposo e indice di attività fisica, sviluppate e validate su adulti sani dello studio norvegese HUNT.",
+    "In circa 37.000 adulti seguiti in media per 24 anni, questa stima della forma fisica senza test da sforzo ha predetto la mortalità totale e cardiovascolare.",
+    "VO2max medio misurato su tapis roulant per decennio in uomini e donne sani: la curva di riferimento da cui si ricava la tua età fitness.",
+    "Documenta l'indice di attività fisica HUNT usato qui: punteggi di frequenza × intensità × durata da tre domande.",
+    "In 122.007 pazienti, una migliore capacità cardiorespiratoria era associata a una mortalità più bassa, senza limite superiore: ecco perché vale la pena migliorare l'età fitness."
+  ],
+  "related": {
+    "label": "Correlati",
+    "vo2": "Calcolatore VO2max",
+    "rhr": "Frequenza cardiaca a riposo per età",
+    "zone2": "Frequenza cardiaca Zona 2",
+    "hrv": "Calcolatore HRV per età"
+  }
+}

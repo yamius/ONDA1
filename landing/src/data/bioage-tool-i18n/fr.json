@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Calculateur d'âge biologique — âge de forme | ONDA Life",
+    "description": "Calculateur gratuit d'âge de forme (modèle HUNT) : estimez votre VO2max à partir de l'âge, du tour de taille, du pouls au repos et du sport.",
+    "appName": "Calculateur d'âge de forme (modèle HUNT)",
+    "appDescription": "Calculateur gratuit qui estime la VO2max avec le modèle HUNT publié, sans test d'effort (Nes 2011), puis la convertit en âge de forme à partir des données de référence HUNT."
+  },
+  "breadcrumb": { "home": "Accueil", "tools": "Outils", "current": "Âge de forme" },
+  "h1": "Calculateur d'âge biologique",
+  "capsule": "Votre âge de forme est l'âge d'une personne moyenne en bonne santé qui a la même capacité aérobie (VO2max) que vous. Ce calculateur estime votre VO2max avec le modèle HUNT publié en Norvège — âge, sexe, tour de taille, fréquence cardiaque au repos et pratique sportive — et la compare à des normes mesurées. C'est une estimation scientifique d'une partie de l'âge biologique, pas un test de laboratoire ni un diagnostic médical.",
+  "imageAlt": "Calculateur d'âge biologique — âge de forme d'après la VO2max estimée, outil gratuit d'ONDA Life",
+  "form": {
+    "sex": "Sexe",
+    "male": "Homme",
+    "female": "Femme",
+    "age": "Âge",
+    "waist": "Tour de taille",
+    "waistHint": "Mesurez au niveau du nombril, détendu, après avoir expiré.",
+    "rhr": "Fréquence cardiaque au repos (bpm)",
+    "rhrHint": "Assis au calme quelques minutes, ou la fréquence au repos de votre montre.",
+    "freq": "À quelle fréquence faites-vous du sport ?",
+    "intensity": "À quelle intensité vous entraînez-vous en général ?",
+    "duration": "Combien de temps dure chaque séance ?"
+  },
+  "freq": { "lt1": "Jamais ou moins d'une fois par semaine", "once": "Une fois par semaine", "twoThree": "2 à 3 fois par semaine", "daily": "Presque tous les jours" },
+  "intensity": { "easy": "Facile — sans transpirer ni être essoufflé", "breathless": "Assez intense pour être essoufflé et transpirer", "exhaustion": "Presque jusqu'à l'épuisement" },
+  "duration": { "lt15": "Moins de 15 minutes", "m15": "15 à 29 minutes", "m30": "30 à 60 minutes", "gt60": "Plus d'une heure" },
+  "result": {
+    "title": "Votre âge de forme",
+    "years": "{{n}} ans",
+    "younger": "{{n}} ans de moins que votre âge",
+    "older": "{{n}} ans de plus que votre âge",
+    "same": "Identique à votre âge",
+    "vo2": "VO2max estimée : {{v}} ml/kg/min ({{pct}} % de la moyenne des personnes en bonne santé de votre âge et de votre sexe, {{norm}})",
+    "note": "Le modèle explique environ 60 % des différences de VO2max mesurée : votre valeur réelle peut être plus haute ou plus basse de plusieurs points. Seul un test en laboratoire ou sur tapis roulant permet de la mesurer."
+  },
+  "invalid": "Saisissez un âge de 20 à 90 ans, un tour de taille de 50 à 160 cm (20–63 in) et une fréquence au repos de 35 à 120 bpm.",
+  "disclaimer": "Estimation à visée éducative, pas un test ni un diagnostic médical. Les normes de référence proviennent de volontaires norvégiens en bonne santé et plutôt actifs : beaucoup de personnes obtiennent un âge un peu supérieur au leur. L'important, c'est la tendance : plus d'exercice intense et régulier, un tour de taille plus petit et un pouls au repos plus bas font baisser votre âge de forme.",
+  "sections": [
+    {
+      "h2": "Âge biologique, âge physiologique, âge de forme : de quoi parle-t-on ?",
+      "body": "L'âge biologique (ou âge physiologique) décrit l'âge auquel votre corps « fonctionne », plutôt que le nombre de vos anniversaires. Il n'existe pas de mesure unique : les horloges épigénétiques lisent la méthylation de l'ADN, d'autres méthodes utilisent des analyses de sang. L'âge de forme en est une composante bien étudiée : il compare votre condition cardiorespiratoire (VO2max) à celle d'une personne moyenne en bonne santé de chaque âge. C'est important, car la forme physique est l'un des meilleurs prédicteurs de la santé à long terme — dans une étude portant sur 122 007 patients (Mandsager 2018), les personnes les moins en forme avaient une mortalité bien plus élevée que les plus en forme, sans plafond au bénéfice. Contrairement à un test ADN, votre âge de forme peut évoluer en quelques semaines d'entraînement."
+    },
+    {
+      "h2": "Comment fonctionne ce calculateur d'âge de forme",
+      "body": "Il repose sur le modèle sans test d'effort de la HUNT Fitness Study en Norvège (Nes 2011), dans laquelle des adultes en bonne santé ont réalisé un test sur tapis roulant jusqu'à l'épuisement. Les chercheurs ont montré que l'âge, le tour de taille, la fréquence cardiaque au repos et un indice d'activité physique prédisent bien la VO2max mesurée. L'indice d'activité multiplie trois réponses : la fréquence, l'intensité et la durée de vos séances. Votre VO2max estimée est ensuite comparée à la VO2max moyenne d'hommes ou de femmes en bonne santé de chaque âge issue de la même étude (Loe 2013) — l'âge où cette moyenne correspond à la vôtre est votre âge de forme. Dans un suivi d'environ 37 000 personnes sur 24 ans, cette estimation a prédit la mortalité (Nes 2014)."
+    },
+    {
+      "h2": "Comment rajeunir votre âge de forme",
+      "body": "Le levier principal est l'intensité : dans le modèle, les séances qui vous laissent essoufflé et en sueur comptent deux fois plus que les séances faciles, et les efforts proches de l'épuisement trois fois plus. Ajouter une ou deux séances de fractionné par semaine (par exemple 4 × 4 minutes intenses avec récupération facile) et développer une endurance régulière en zone 2 augmente la VO2max en 6 à 12 semaines. Un tour de taille plus petit et un pouls au repos plus bas découlent du même entraînement, avec un meilleur sommeil et moins d'alcool. Guides : [entraînement en zone 2](/articles/zone-2-training-aerobic-base), [comment augmenter sa VO2max](/articles/vo2max-increase-aerobic-engine) et [fréquence cardiaque au repos selon l'âge](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Quelle VO2max selon l'âge est une bonne valeur ?",
+      "body": "Dans l'étude HUNT portant sur 3 816 adultes en bonne santé (Loe 2013), la VO2max moyenne mesurée était d'environ 54 ml/kg/min chez les hommes de 20 à 29 ans, 49 dans la trentaine, 47 dans la quarantaine, 43 dans la cinquantaine, 39 dans la soixantaine et 35 à partir de 70 ans ; chez les femmes, environ 43, 40, 38, 34, 31 et 28. La VO2max baisse d'environ 8 % par décennie après 50 ans, mais les personnes actives conservent des valeurs bien plus élevées. Les objets connectés comme l'Apple Watch, Garmin ou Oura estiment aussi la VO2max ; leurs chiffres diffèrent de ce modèle et d'un test en laboratoire, comparez donc chaque source uniquement avec elle-même. En savoir plus : [calculateur de VO2max](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Âge biologique et âge de forme — questions fréquentes",
+  "faq": [
+    { "q": "Comment l'âge de forme est-il calculé ?", "a": "Votre VO2max est estimée avec le modèle HUNT (Nes 2011) à partir de l'âge, du sexe, du tour de taille, de la fréquence cardiaque au repos et de vos habitudes sportives. Votre âge de forme est l'âge auquel la personne moyenne en bonne santé de votre sexe a la même VO2max (normes Loe 2013)." },
+    { "q": "L'âge de forme est-il la même chose que l'âge biologique ?", "a": "Non. L'âge de forme mesure une partie de l'âge biologique : la capacité aérobie. D'autres méthodes utilisent la méthylation de l'ADN (horloges épigénétiques) ou des analyses de sang. L'âge de forme est l'une des parties les plus concrètes, car il prédit la santé à long terme et on peut le modifier par l'entraînement." },
+    { "q": "Ce calculateur est-il précis ?", "a": "C'est une estimation : le modèle explique environ 60 % des différences de VO2max mesurée, donc votre valeur réelle peut être plus haute ou plus basse de plusieurs points. Seul un test en laboratoire ou sur tapis roulant mesure directement la VO2max." },
+    { "q": "Pourquoi mon âge de forme est-il supérieur à mon âge réel ?", "a": "Les normes de référence proviennent de volontaires en bonne santé et plutôt actifs : la barre est haute. Une faible intensité d'exercice, un tour de taille plus grand et un pouls au repos plus élevé font monter l'estimation — et les trois peuvent s'améliorer." },
+    { "q": "Comment faire baisser mon âge de forme ?", "a": "Ajoutez à un entraînement aérobie régulier des séances plus intenses qui vous essoufflent (comme le fractionné), réduisez votre tour de taille et améliorez votre sommeil. La VO2max augmente généralement en 6 à 12 semaines d'entraînement régulier." },
+    { "q": "Quelle est une bonne VO2max pour mon âge ?", "a": "Valeurs moyennes chez les personnes en bonne santé (Loe 2013) : hommes environ 54 ml/kg/min entre 20 et 29 ans, 47 dans la quarantaine et 39 dans la soixantaine ; femmes environ 43, 38 et 31. Plus c'est élevé, mieux c'est." }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "VO2max estimée = 100.27 − 0.296×âge − 0.369×tour de taille (cm) − 0.155×FC au repos + 0.226×indice AP pour les hommes, et 74.74 − 0.247×âge − 0.259×tour de taille − 0.114×FC au repos + 0.198×indice AP pour les femmes (Nes 2011). L'indice d'activité physique (AP) multiplie les scores de fréquence (0 ; 1 ; 2,5 ou 5), d'intensité (1, 2 ou 3) et de durée (0,1 ; 0,38 ; 0,75 ou 1) du questionnaire HUNT (Nauman 2012). L'âge de forme est lu sur la VO2max moyenne mesurée d'hommes et de femmes en bonne santé par décennie (Loe 2013), avec interpolation entre les décennies. Le modèle d'origine utilisait une fréquence cardiaque au repos mesurée en position assise ; celle d'une montre est généralement un peu plus basse, ce qui améliore légèrement l'estimation. Estimation à visée éducative, pas un diagnostic.",
+  "sourcesContributes": [
+    "Les équations utilisées ici : VO2max estimée à partir de l'âge, du tour de taille, de la fréquence cardiaque au repos et d'un indice d'activité physique, développées et validées chez des adultes en bonne santé de l'étude norvégienne HUNT.",
+    "Chez environ 37 000 adultes suivis en moyenne 24 ans, cette estimation de la forme sans test d'effort a prédit la mortalité toutes causes et cardiovasculaire.",
+    "VO2max moyenne mesurée sur tapis roulant par décennie chez des hommes et des femmes en bonne santé — la courbe de référence sur laquelle se lit votre âge de forme.",
+    "Décrit l'indice d'activité physique HUNT utilisé ici : scores fréquence × intensité × durée issus de trois questions.",
+    "Chez 122 007 patients, une meilleure condition cardiorespiratoire était associée à une mortalité plus faible, sans plafond — d'où l'intérêt d'améliorer son âge de forme."
+  ],
+  "related": {
+    "label": "Voir aussi",
+    "vo2": "Calculateur de VO2max",
+    "rhr": "Fréquence cardiaque au repos selon l'âge",
+    "zone2": "Fréquence cardiaque en zone 2",
+    "hrv": "Calculateur de VFC selon l'âge"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Biological Age Calculator — Your Fitness Age | ONDA Life",
+    "description": "Free fitness age calculator based on the published HUNT model: estimate your VO2max from age, waist, resting heart rate and exercise, and see your fitness age.",
+    "appName": "Fitness Age Calculator (HUNT model)",
+    "appDescription": "Free calculator that estimates VO2max with the published HUNT non-exercise model (Nes 2011) and converts it into a fitness age using HUNT reference data."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Fitness Age" },
+  "h1": "Biological Age Calculator: Your Fitness Age",
+  "capsule": "Your fitness age is the age of an average healthy person with the same aerobic fitness (VO2max) as you. This calculator estimates your VO2max with the published HUNT model from Norway — age, sex, waist, resting heart rate and how you exercise — and compares it with measured norms. It's a science-based estimate of one part of biological age, not a lab test or a medical diagnosis.",
+  "imageAlt": "Biological age calculator — fitness age from estimated VO2max, free tool from ONDA Life",
+  "form": {
+    "sex": "Sex",
+    "male": "Man",
+    "female": "Woman",
+    "age": "Age",
+    "waist": "Waist circumference",
+    "waistHint": "Measure at the navel, relaxed, after breathing out.",
+    "rhr": "Resting heart rate (bpm)",
+    "rhrHint": "Sitting quietly for a few minutes, or your watch's resting heart rate.",
+    "freq": "How often do you exercise?",
+    "intensity": "How hard do you usually push?",
+    "duration": "How long does each session last?"
+  },
+  "freq": { "lt1": "Never or less than once a week", "once": "Once a week", "twoThree": "2–3 times a week", "daily": "Almost every day" },
+  "intensity": { "easy": "Easy — no sweating or losing breath", "breathless": "Hard enough to get breathless and sweaty", "exhaustion": "Close to exhaustion" },
+  "duration": { "lt15": "Less than 15 minutes", "m15": "15–29 minutes", "m30": "30–60 minutes", "gt60": "More than an hour" },
+  "result": {
+    "title": "Your fitness age",
+    "years": "{{n}} years",
+    "younger": "{{n}} years younger than your age",
+    "older": "{{n}} years older than your age",
+    "same": "The same as your age",
+    "vo2": "Estimated VO2max: {{v}} ml/kg/min ({{pct}}% of the healthy average for your age and sex, {{norm}})",
+    "note": "The model explains about 60% of the differences in measured VO2max, so your real value can be several points higher or lower. A lab or treadmill test is the only way to measure it."
+  },
+  "invalid": "Enter age 20–90, waist 50–160 cm (20–63 in) and resting heart rate 35–120 bpm.",
+  "disclaimer": "Educational estimate, not a medical test or diagnosis. The reference norms come from healthy, fairly active Norwegian volunteers, so many people land a little older than their age. What matters is the direction: more regular hard exercise, a smaller waist and a lower resting heart rate all move your fitness age down.",
+  "sections": [
+    {
+      "h2": "What is biological age — and what is fitness age?",
+      "body": "Biological age describes how old your body behaves rather than how many birthdays you've had. There is no single measure of it: epigenetic clocks read DNA methylation, others use blood tests. Fitness age is one well-studied part of it: it compares your cardiorespiratory fitness (VO2max) with the average healthy person of each age. It matters because fitness is one of the strongest predictors of long-term health — in a study of 122,007 patients (Mandsager 2018), people with the lowest fitness had much higher mortality than the fittest, with no upper limit to the benefit. Unlike a DNA test, your fitness age can change within weeks of training."
+    },
+    {
+      "h2": "How this fitness age calculator works",
+      "body": "It uses the non-exercise model from the HUNT Fitness Study in Norway (Nes 2011), in which healthy adults ran a treadmill test to exhaustion. The researchers found that age, waist circumference, resting heart rate and a physical-activity index predict measured VO2max well. The activity index multiplies three answers: how often you exercise, how hard, and for how long. Your estimated VO2max is then compared with the average VO2max of healthy men or women at each age from the same study (Loe 2013) — the age where that average matches yours is your fitness age. In a follow-up of about 37,000 people over 24 years, this estimate predicted mortality (Nes 2014)."
+    },
+    {
+      "h2": "How to lower your fitness age",
+      "body": "The biggest lever is exercise intensity: in the model, sessions that leave you breathless and sweaty count twice as much as easy ones, and near-exhaustion efforts three times. Adding one or two interval sessions a week (for example 4 × 4 minutes hard with easy recovery) and building steady Zone 2 cardio raises VO2max within 6–12 weeks. A smaller waist and a lower resting heart rate follow from the same training plus better sleep and less alcohol. Guides: [Zone 2 training](/articles/zone-2-training-aerobic-base), [how to increase VO2max](/articles/vo2max-increase-aerobic-engine) and [resting heart rate by age](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "What is a good VO2max for my age?",
+      "body": "In the HUNT study of 3,816 healthy adults (Loe 2013), average measured VO2max was about 54 ml/kg/min for men in their 20s, 49 in their 30s, 47 in their 40s, 43 in their 50s, 39 in their 60s and 35 from 70; for women about 43, 40, 38, 34, 31 and 28. VO2max falls by about 8% per decade after 50, but active people keep much higher values. Wearables such as Apple Watch, Garmin and Oura also estimate VO2max; their numbers differ from this model and from a lab test, so compare each source only with itself. More: [VO2max calculator](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Biological age and fitness age — common questions",
+  "faq": [
+    { "q": "How is fitness age calculated?", "a": "Your VO2max is estimated with the HUNT model (Nes 2011) from age, sex, waist, resting heart rate and exercise habits. Your fitness age is the age at which the average healthy person of your sex has the same VO2max (Loe 2013 norms)." },
+    { "q": "Is fitness age the same as biological age?", "a": "No. Fitness age measures one part of biological age — aerobic fitness. Other methods use DNA methylation (epigenetic clocks) or blood tests. Fitness age is one of the most practical parts because it predicts long-term health and you can change it with training." },
+    { "q": "How accurate is this calculator?", "a": "It's an estimate: the model explains about 60% of the differences in measured VO2max, so your real value can be several points higher or lower. Only a lab or treadmill test measures VO2max directly." },
+    { "q": "Why is my fitness age older than my real age?", "a": "The reference norms come from healthy, fairly active volunteers, so the bar is high. Low exercise intensity, a larger waist and a higher resting heart rate push the estimate up — all three can be improved." },
+    { "q": "How can I lower my fitness age?", "a": "Add harder sessions that leave you breathless (such as intervals) to regular aerobic training, reduce waist size and improve sleep. VO2max usually rises within 6–12 weeks of consistent training." },
+    { "q": "What is a good VO2max for my age?", "a": "Average healthy values (Loe 2013): men about 54 ml/kg/min in their 20s, 47 in their 40s and 39 in their 60s; women about 43, 38 and 31. Higher is better." }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "Estimated VO2max = 100.27 − 0.296×age − 0.369×waist(cm) − 0.155×resting HR + 0.226×PA-index for men, and 74.74 − 0.247×age − 0.259×waist − 0.114×resting HR + 0.198×PA-index for women (Nes 2011). The PA-index multiplies frequency (0, 1, 2.5 or 5), intensity (1, 2 or 3) and duration (0.1, 0.38, 0.75 or 1) scores from the HUNT questionnaire (Nauman 2012). Fitness age is read from the mean measured VO2max of healthy men and women by decade (Loe 2013), interpolated between decades. The original model used a seated resting heart rate; a watch's resting heart rate is usually a little lower, which slightly improves the estimate. Educational estimate, not a diagnosis.",
+  "sourcesContributes": [
+    "The equations used here: estimated VO2max from age, waist circumference, resting heart rate and a physical-activity index, developed and validated in healthy adults of the Norwegian HUNT study.",
+    "In about 37,000 adults followed for an average of 24 years, this non-exercise fitness estimate predicted all-cause and cardiovascular mortality.",
+    "Mean treadmill-measured VO2max by decade for healthy men and women — the reference curve your fitness age is read from.",
+    "Documents the HUNT physical-activity index used here: frequency × intensity × duration scores from three questions.",
+    "In 122,007 patients, higher cardiorespiratory fitness was linked to lower mortality with no upper limit — why fitness age is worth improving."
+  ],
+  "related": {
+    "label": "Related",
+    "vo2": "VO2max calculator",
+    "rhr": "Resting heart rate by age",
+    "zone2": "Zone 2 heart rate",
+    "hrv": "HRV Calculator by Age"
+  }
+}

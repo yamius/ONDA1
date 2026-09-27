@@ -298,6 +298,17 @@ const routeElements = (
             <Route path="/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
             <Route path="/tools/dopamine-detox"  element={<DopamineResetPage />} />
             <Route path="/tools/biological-age"  element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/es/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/ru/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/uk/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/zh/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/de/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/fr/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/it/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/nl/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/ja/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/pl/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
+            <Route path="/pt/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
             <Route path="/tools/digital-detox"   element={<DigitalDetoxPage />} />
             <Route path="/tools/burnout"         element={<BurnoutAssessmentPage />} />
             <Route path="/tools/nervous-system"  element={<NervousSystemStatePage />} />

@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Biologisches Alter berechnen — Fitnessalter | ONDA Life",
+    "description": "Fitnessalter kostenlos berechnen mit dem HUNT-Modell: VO2max aus Alter, Taille, Ruhepuls und Training schätzen und dein biologisches Fitnessalter sehen.",
+    "appName": "Fitnessalter-Rechner (HUNT-Modell)",
+    "appDescription": "Kostenloser Rechner, der die VO2max mit dem veröffentlichten HUNT-Modell ohne Belastungstest (Nes 2011) schätzt und anhand von HUNT-Referenzdaten in ein Fitnessalter umrechnet."
+  },
+  "breadcrumb": { "home": "Startseite", "tools": "Tools", "current": "Fitnessalter" },
+  "h1": "Biologisches Alter berechnen: dein Fitnessalter",
+  "capsule": "Dein Fitnessalter ist das Alter eines durchschnittlichen gesunden Menschen mit derselben Ausdauerfitness (VO2max) wie du. Der Rechner schätzt deine VO2max mit dem veröffentlichten HUNT-Modell aus Norwegen — aus Alter, Geschlecht, Taillenumfang, Ruhepuls und deinem Training — und vergleicht sie mit gemessenen Normwerten. Das ist eine wissenschaftlich fundierte Schätzung eines Teils deines biologischen Alters, kein Labortest und keine medizinische Diagnose.",
+  "imageAlt": "Biologisches Alter berechnen — Fitnessalter aus geschätzter VO2max, kostenloses Tool von ONDA Life",
+  "form": {
+    "sex": "Geschlecht",
+    "male": "Mann",
+    "female": "Frau",
+    "age": "Alter",
+    "waist": "Taillenumfang",
+    "waistHint": "Auf Höhe des Bauchnabels messen, entspannt, nach dem Ausatmen.",
+    "rhr": "Ruhepuls (Schläge/min)",
+    "rhrHint": "Nach ein paar Minuten ruhigem Sitzen gemessen – oder der Ruhepuls deiner Uhr.",
+    "freq": "Wie oft trainierst du?",
+    "intensity": "Wie sehr strengst du dich dabei meist an?",
+    "duration": "Wie lange dauert eine Einheit?"
+  },
+  "freq": { "lt1": "Nie oder seltener als einmal pro Woche", "once": "Einmal pro Woche", "twoThree": "2–3-mal pro Woche", "daily": "Fast jeden Tag" },
+  "intensity": { "easy": "Locker — ohne zu schwitzen oder außer Atem zu kommen", "breathless": "So intensiv, dass ich außer Atem komme und schwitze", "exhaustion": "Bis nahe an die Erschöpfung" },
+  "duration": { "lt15": "Weniger als 15 Minuten", "m15": "15–29 Minuten", "m30": "30–60 Minuten", "gt60": "Mehr als eine Stunde" },
+  "result": {
+    "title": "Dein Fitnessalter",
+    "years": "{{n}} Jahre",
+    "younger": "{{n}} Jahre jünger als dein Alter",
+    "older": "{{n}} Jahre älter als dein Alter",
+    "same": "Genau dein Alter",
+    "vo2": "Geschätzte VO2max: {{v}} ml/kg/min ({{pct}} % des gesunden Durchschnitts für dein Alter und Geschlecht, {{norm}})",
+    "note": "Das Modell erklärt etwa 60 % der Unterschiede in der gemessenen VO2max, dein tatsächlicher Wert kann also einige Punkte höher oder niedriger liegen. Messen lässt er sich nur mit einem Labor- oder Laufbandtest."
+  },
+  "invalid": "Gib ein Alter von 20–90, einen Taillenumfang von 50–160 cm (20–63 in) und einen Ruhepuls von 35–120 Schlägen/min ein.",
+  "disclaimer": "Eine Schätzung zu Informationszwecken, kein medizinischer Test und keine Diagnose. Die Normwerte stammen von gesunden, recht aktiven norwegischen Freiwilligen – deshalb landen viele Menschen etwas über ihrem echten Alter. Entscheidend ist die Richtung: mehr regelmäßiges intensives Training, ein kleinerer Taillenumfang und ein niedrigerer Ruhepuls senken dein Fitnessalter.",
+  "sections": [
+    {
+      "h2": "Was ist das biologische Alter – und was das Fitnessalter?",
+      "body": "Das biologische Alter beschreibt, wie alt sich dein Körper verhält – nicht, wie viele Geburtstage du gefeiert hast. Ein einheitliches Maß dafür gibt es nicht: Epigenetische Uhren lesen die DNA-Methylierung aus, andere Verfahren nutzen Blutwerte. Das Fitnessalter ist ein gut erforschter Teil davon: Es vergleicht deine kardiorespiratorische Fitness (VO2max) mit dem Durchschnitt gesunder Menschen jedes Alters. Das ist relevant, weil Fitness zu den stärksten Vorhersagefaktoren für langfristige Gesundheit gehört – in einer Studie mit 122.007 Patienten (Mandsager 2018) hatten die am wenigsten Fitten eine deutlich höhere Sterblichkeit als die Fittesten, und der Nutzen hatte keine Obergrenze. Anders als ein DNA-Test kann sich dein Fitnessalter schon nach wenigen Wochen Training verändern."
+    },
+    {
+      "h2": "Fitnessalter berechnen: So funktioniert der Rechner",
+      "body": "Er nutzt das Modell ohne Belastungstest aus der norwegischen HUNT Fitness Study (Nes 2011), in der gesunde Erwachsene einen Laufbandtest bis zur Erschöpfung absolvierten. Die Forschenden fanden heraus, dass Alter, Taillenumfang, Ruhepuls und ein Aktivitätsindex die gemessene VO2max gut vorhersagen. Der Aktivitätsindex multipliziert drei Antworten: wie oft, wie intensiv und wie lange du trainierst. Deine geschätzte VO2max wird dann mit der durchschnittlichen VO2max gesunder Männer bzw. Frauen jedes Alters aus derselben Studie (Loe 2013) verglichen – das Alter, bei dem dieser Durchschnitt deinem Wert entspricht, ist dein Fitnessalter. In einer Nachbeobachtung von rund 37.000 Menschen über 24 Jahre sagte diese Schätzung die Sterblichkeit voraus (Nes 2014)."
+    },
+    {
+      "h2": "So senkst du dein Fitnessalter",
+      "body": "Der größte Hebel ist die Trainingsintensität: Im Modell zählen Einheiten, bei denen du außer Atem kommst und schwitzt, doppelt so viel wie lockere, und Einheiten bis nahe an die Erschöpfung dreifach. Ein bis zwei Intervalleinheiten pro Woche (zum Beispiel 4 × 4 Minuten hart mit lockerer Erholung) plus regelmäßiges Zone-2-Ausdauertraining steigern die VO2max innerhalb von 6–12 Wochen. Ein kleinerer Taillenumfang und ein niedrigerer Ruhepuls folgen aus demselben Training, besserem Schlaf und weniger Alkohol. Ratgeber: [Zone-2-Training](/articles/zone-2-training-aerobic-base), [VO2max steigern](/articles/vo2max-increase-aerobic-engine) und [Ruhepuls nach Alter](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "VO2max-Tabelle nach Alter: Welcher Wert ist gut?",
+      "body": "In der HUNT-Studie mit 3.816 gesunden Erwachsenen (Loe 2013) lag die durchschnittlich gemessene VO2max bei Männern bei etwa 54 ml/kg/min in den 20ern, 49 in den 30ern, 47 in den 40ern, 43 in den 50ern, 39 in den 60ern und 35 ab 70; bei Frauen bei etwa 43, 40, 38, 34, 31 und 28. Ab 50 sinkt die VO2max um rund 8 % pro Jahrzehnt, aktive Menschen behalten aber deutlich höhere Werte. Auch Wearables wie Apple Watch, Garmin und Oura schätzen die VO2max; ihre Zahlen weichen von diesem Modell und von einem Labortest ab – vergleiche jede Quelle also nur mit sich selbst. Mehr dazu: [VO2max-Rechner](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Biologisches Alter und Fitnessalter – häufige Fragen",
+  "faq": [
+    { "q": "Wie wird das Fitnessalter berechnet?", "a": "Deine VO2max wird mit dem HUNT-Modell (Nes 2011) aus Alter, Geschlecht, Taillenumfang, Ruhepuls und Trainingsgewohnheiten geschätzt. Dein Fitnessalter ist das Alter, in dem gesunde Menschen deines Geschlechts im Durchschnitt dieselbe VO2max haben (Normwerte nach Loe 2013)." },
+    { "q": "Ist das Fitnessalter dasselbe wie das biologische Alter?", "a": "Nein. Das Fitnessalter misst einen Teil des biologischen Alters – die Ausdauerfitness. Andere Methoden nutzen die DNA-Methylierung (epigenetische Uhren) oder Blutwerte. Das Fitnessalter ist einer der praktischsten Teile, weil es die langfristige Gesundheit vorhersagt und du es durch Training verändern kannst." },
+    { "q": "Wie genau ist dieser Rechner?", "a": "Es ist eine Schätzung: Das Modell erklärt etwa 60 % der Unterschiede in der gemessenen VO2max, dein tatsächlicher Wert kann also einige Punkte höher oder niedriger liegen. Nur ein Labor- oder Laufbandtest misst die VO2max direkt." },
+    { "q": "Warum ist mein Fitnessalter höher als mein echtes Alter?", "a": "Die Normwerte stammen von gesunden, recht aktiven Freiwilligen – die Messlatte liegt also hoch. Geringe Trainingsintensität, ein größerer Taillenumfang und ein höherer Ruhepuls treiben die Schätzung nach oben – alle drei lassen sich verbessern." },
+    { "q": "Wie kann ich mein Fitnessalter senken?", "a": "Ergänze regelmäßiges Ausdauertraining um intensivere Einheiten, die dich außer Atem bringen (etwa Intervalle), reduziere deinen Taillenumfang und schlafe besser. Die VO2max steigt meist innerhalb von 6–12 Wochen konsequenten Trainings." },
+    { "q": "Welche VO2max ist für mein Alter gut?", "a": "Durchschnittswerte gesunder Menschen (Loe 2013): Männer etwa 54 ml/kg/min in den 20ern, 47 in den 40ern und 39 in den 60ern; Frauen etwa 43, 38 und 31. Höher ist besser." }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Geschätzte VO2max = 100.27 − 0.296×Alter − 0.369×Taille(cm) − 0.155×Ruhepuls + 0.226×PA-Index für Männer und 74.74 − 0.247×Alter − 0.259×Taille − 0.114×Ruhepuls + 0.198×PA-Index für Frauen (Nes 2011). Der PA-Index (Aktivitätsindex) multipliziert die Punktwerte für Häufigkeit (0, 1, 2,5 oder 5), Intensität (1, 2 oder 3) und Dauer (0,1, 0,38, 0,75 oder 1) aus dem HUNT-Fragebogen (Nauman 2012). Das Fitnessalter wird aus der mittleren gemessenen VO2max gesunder Männer und Frauen je Jahrzehnt abgelesen (Loe 2013) und zwischen den Jahrzehnten interpoliert. Das Originalmodell nutzte einen im Sitzen gemessenen Ruhepuls; der Ruhepuls einer Uhr ist meist etwas niedriger, was die Schätzung leicht verbessert. Schätzung zu Informationszwecken, keine Diagnose.",
+  "sourcesContributes": [
+    "Die hier verwendeten Gleichungen: geschätzte VO2max aus Alter, Taillenumfang, Ruhepuls und einem Aktivitätsindex, entwickelt und validiert an gesunden Erwachsenen der norwegischen HUNT-Studie.",
+    "Bei rund 37.000 Erwachsenen, die im Schnitt 24 Jahre lang beobachtet wurden, sagte diese Fitnessschätzung ohne Belastungstest die Gesamt- und die kardiovaskuläre Sterblichkeit voraus.",
+    "Mittlere auf dem Laufband gemessene VO2max je Jahrzehnt für gesunde Männer und Frauen – die Referenzkurve, aus der dein Fitnessalter abgelesen wird.",
+    "Dokumentiert den hier verwendeten HUNT-Aktivitätsindex: Punktwerte für Häufigkeit × Intensität × Dauer aus drei Fragen.",
+    "Bei 122.007 Patienten ging eine höhere kardiorespiratorische Fitness ohne Obergrenze mit geringerer Sterblichkeit einher – deshalb lohnt es sich, das Fitnessalter zu verbessern."
+  ],
+  "related": {
+    "label": "Weitere Tools",
+    "vo2": "VO2max-Rechner",
+    "rhr": "Ruhepuls nach Alter",
+    "zone2": "Zone-2-Herzfrequenz",
+    "hrv": "HRV-Rechner nach Alter"
+  }
+}

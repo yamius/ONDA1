@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Calculadora de edad biológica — Edad física | ONDA Life",
+    "description": "Calculadora de edad física gratis con el modelo HUNT: estima tu VO2max a partir de edad, cintura, pulso en reposo y ejercicio, y descubre tu edad fitness.",
+    "appName": "Calculadora de edad física (modelo HUNT)",
+    "appDescription": "Calculadora gratuita que estima el VO2max con el modelo HUNT sin prueba de esfuerzo (Nes 2011) y lo convierte en edad física con los datos de referencia de HUNT."
+  },
+  "breadcrumb": { "home": "Inicio", "tools": "Herramientas", "current": "Edad física" },
+  "h1": "Calculadora de edad biológica",
+  "capsule": "Tu edad física (o edad fitness) es la edad de una persona sana promedio con la misma capacidad aeróbica (VO2max) que tú. Esta calculadora estima tu VO2max con el modelo HUNT, publicado en Noruega —edad, sexo, cintura, frecuencia cardíaca en reposo y cómo haces ejercicio— y lo compara con normas medidas. Es una estimación con base científica de una parte de la edad biológica, no una prueba de laboratorio ni un diagnóstico médico.",
+  "imageAlt": "Calculadora de edad biológica: edad física a partir del VO2max estimado, herramienta gratuita de ONDA Life",
+  "form": {
+    "sex": "Sexo",
+    "male": "Hombre",
+    "female": "Mujer",
+    "age": "Edad",
+    "waist": "Perímetro de cintura",
+    "waistHint": "Mide a la altura del ombligo, relajado, después de soltar el aire.",
+    "rhr": "Frecuencia cardíaca en reposo (lpm)",
+    "rhrHint": "Sentado tranquilo unos minutos, o la frecuencia en reposo de tu reloj.",
+    "freq": "¿Con qué frecuencia haces ejercicio?",
+    "intensity": "¿Con qué intensidad sueles entrenar?",
+    "duration": "¿Cuánto dura cada sesión?"
+  },
+  "freq": { "lt1": "Nunca o menos de una vez por semana", "once": "Una vez por semana", "twoThree": "2–3 veces por semana", "daily": "Casi todos los días" },
+  "intensity": { "easy": "Suave: sin sudar ni quedarme sin aliento", "breathless": "Lo bastante fuerte para jadear y sudar", "exhaustion": "Casi hasta el agotamiento" },
+  "duration": { "lt15": "Menos de 15 minutos", "m15": "15–29 minutos", "m30": "30–60 minutos", "gt60": "Más de una hora" },
+  "result": {
+    "title": "Tu edad física",
+    "years": "{{n}} años",
+    "younger": "{{n}} años menos que tu edad",
+    "older": "{{n}} años más que tu edad",
+    "same": "Igual a tu edad",
+    "vo2": "VO2max estimado: {{v}} ml/kg/min ({{pct}} % del promedio saludable para tu edad y sexo, {{norm}})",
+    "note": "El modelo explica alrededor del 60 % de las diferencias en el VO2max medido, así que tu valor real puede estar varios puntos por encima o por debajo. Solo una prueba de laboratorio o en cinta lo mide de verdad."
+  },
+  "invalid": "Introduce una edad de 20–90 años, una cintura de 50–160 cm (20–63 in) y una frecuencia en reposo de 35–120 lpm.",
+  "disclaimer": "Estimación educativa, no es una prueba médica ni un diagnóstico. Las normas de referencia provienen de voluntarios noruegos sanos y bastante activos, por lo que mucha gente obtiene una edad algo mayor que la real. Lo importante es la dirección: más ejercicio intenso y regular, menos cintura y una frecuencia en reposo más baja reducen tu edad física.",
+  "sections": [
+    {
+      "h2": "¿Qué es la edad biológica y qué es la edad física?",
+      "body": "La edad biológica describe cómo se comporta tu cuerpo, no cuántos cumpleaños has celebrado. No existe una única medida: los relojes epigenéticos leen la metilación del ADN y otros métodos usan análisis de sangre. La edad física (edad fitness) es una parte muy estudiada: compara tu capacidad cardiorrespiratoria (VO2max) con la de una persona sana promedio de cada edad. Importa porque la forma física es uno de los predictores más fuertes de la salud a largo plazo: en un estudio con 122 007 pacientes (Mandsager 2018), quienes tenían la peor forma física mostraron una mortalidad mucho mayor que los más en forma, sin límite superior para el beneficio. A diferencia de un test de ADN, tu edad física puede cambiar en pocas semanas de entrenamiento."
+    },
+    {
+      "h2": "Cómo funciona esta calculadora de edad física",
+      "body": "Usa el modelo sin prueba de esfuerzo del HUNT Fitness Study de Noruega (Nes 2011), en el que adultos sanos corrieron en cinta hasta el agotamiento. Los investigadores vieron que la edad, el perímetro de cintura, la frecuencia cardíaca en reposo y un índice de actividad física predicen bien el VO2max medido. El índice de actividad multiplica tres respuestas: con qué frecuencia entrenas, con qué intensidad y cuánto tiempo. Tu VO2max estimado se compara después con el VO2max promedio de hombres o mujeres sanos de cada edad del mismo estudio (Loe 2013): la edad en la que ese promedio coincide con el tuyo es tu edad física. En un seguimiento de unas 37 000 personas durante 24 años, esta estimación predijo la mortalidad (Nes 2014)."
+    },
+    {
+      "h2": "Cómo bajar tu edad física",
+      "body": "La palanca principal es la intensidad: en el modelo, las sesiones que te dejan jadeando y sudando cuentan el doble que las suaves, y los esfuerzos casi al límite, el triple. Añadir una o dos sesiones de intervalos por semana (por ejemplo 4 × 4 minutos fuerte con recuperación suave) y construir una base de cardio en Zona 2 eleva el VO2max en 6–12 semanas. Una cintura más pequeña y un pulso en reposo más bajo llegan con ese mismo entrenamiento, además de dormir mejor y beber menos alcohol. Guías: [entrenamiento en Zona 2](/articles/zone-2-training-aerobic-base), [cómo aumentar el VO2max](/articles/vo2max-increase-aerobic-engine) y [Frecuencia cardíaca en reposo por edad](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "VO2max por edad: ¿cuál es un buen valor?",
+      "body": "En el estudio HUNT con 3816 adultos sanos (Loe 2013), el VO2max medido promedio fue de unos 54 ml/kg/min en hombres de 20 a 29 años, 49 en la treintena, 47 en la cuarentena, 43 en la cincuentena, 39 en la sesentena y 35 a partir de los 70; en mujeres, unos 43, 40, 38, 34, 31 y 28. El VO2max cae alrededor de un 8 % por década después de los 50, pero las personas activas mantienen valores mucho más altos. Relojes y anillos como Apple Watch, Garmin y Oura también estiman el VO2max; sus cifras difieren de este modelo y de una prueba de laboratorio, así que compara cada fuente solo consigo misma. Más: [calculadora de VO2max](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Edad biológica y edad física: preguntas frecuentes",
+  "faq": [
+    { "q": "¿Cómo se calcula la edad física?", "a": "Tu VO2max se estima con el modelo HUNT (Nes 2011) a partir de edad, sexo, cintura, frecuencia cardíaca en reposo y hábitos de ejercicio. Tu edad física es la edad en la que la persona sana promedio de tu sexo tiene el mismo VO2max (normas de Loe 2013)." },
+    { "q": "¿La edad física es lo mismo que la edad biológica?", "a": "No. La edad física mide una parte de la edad biológica: la capacidad aeróbica. Otros métodos usan la metilación del ADN (relojes epigenéticos) o análisis de sangre. La edad física es de las partes más prácticas, porque predice la salud a largo plazo y puedes cambiarla entrenando." },
+    { "q": "¿Qué tan precisa es esta calculadora?", "a": "Es una estimación: el modelo explica alrededor del 60 % de las diferencias en el VO2max medido, así que tu valor real puede estar varios puntos por encima o por debajo. Solo una prueba de laboratorio o en cinta mide el VO2max directamente." },
+    { "q": "¿Por qué mi edad física es mayor que mi edad real?", "a": "Las normas de referencia provienen de voluntarios sanos y bastante activos, así que el listón está alto. Una intensidad de ejercicio baja, una cintura más grande y un pulso en reposo más alto elevan la estimación, y los tres se pueden mejorar." },
+    { "q": "¿Cómo puedo bajar mi edad física?", "a": "Suma al entrenamiento aeróbico regular sesiones más duras que te dejen sin aliento (como intervalos), reduce la cintura y mejora el sueño. El VO2max suele subir en 6–12 semanas de entrenamiento constante." },
+    { "q": "¿Cuál es un buen VO2max para mi edad?", "a": "Valores promedio saludables (Loe 2013): hombres, unos 54 ml/kg/min a los 20–29 años, 47 a los 40–49 y 39 a los 60–69; mujeres, unos 43, 38 y 31. Cuanto más alto, mejor." }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "VO2max estimado = 100.27 − 0.296×edad − 0.369×cintura(cm) − 0.155×FC en reposo + 0.226×índice AF en hombres, y 74.74 − 0.247×edad − 0.259×cintura − 0.114×FC en reposo + 0.198×índice AF en mujeres (Nes 2011). El índice AF multiplica las puntuaciones de frecuencia (0, 1, 2,5 o 5), intensidad (1, 2 o 3) y duración (0,1, 0,38, 0,75 o 1) del cuestionario HUNT (Nauman 2012). La edad física se obtiene del VO2max medio medido en hombres y mujeres sanos por década (Loe 2013), interpolando entre décadas. El modelo original usaba la frecuencia en reposo medida sentado; la de un reloj suele ser algo más baja, lo que mejora ligeramente la estimación. Estimación educativa, no un diagnóstico.",
+  "sourcesContributes": [
+    "Las ecuaciones que se usan aquí: VO2max estimado a partir de edad, perímetro de cintura, frecuencia cardíaca en reposo y un índice de actividad física, desarrolladas y validadas en adultos sanos del estudio noruego HUNT.",
+    "En unos 37 000 adultos seguidos una media de 24 años, esta estimación de la forma física sin prueba de esfuerzo predijo la mortalidad por todas las causas y cardiovascular.",
+    "VO2max medio medido en cinta por década en hombres y mujeres sanos: la curva de referencia de la que se obtiene tu edad física.",
+    "Documenta el índice de actividad física HUNT usado aquí: puntuaciones de frecuencia × intensidad × duración a partir de tres preguntas.",
+    "En 122 007 pacientes, una mayor capacidad cardiorrespiratoria se asoció con menor mortalidad sin límite superior: por eso vale la pena mejorar tu edad física."
+  ],
+  "related": {
+    "label": "Relacionado",
+    "vo2": "Calculadora de VO2max",
+    "rhr": "Frecuencia cardíaca en reposo por edad",
+    "zone2": "Frecuencia cardíaca de Zona 2",
+    "hrv": "Calculadora de VFC por edad"
+  }
+}

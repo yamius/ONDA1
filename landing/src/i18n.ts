@@ -177,7 +177,7 @@ const NON_LOCALIZED_PREFIXES = [
  * back to the English version of the site.
  */
 /** Single tool pages published in EVERY language (not just the ru/es pilot). */
-export const ALL_LANG_PAGES: readonly string[] = ['/tools/hrv', '/tools/resting-heart-rate', '/tools/alcohol', '/tools/camera-heart-rate', '/tools/breathing']
+export const ALL_LANG_PAGES: readonly string[] = ['/tools/hrv', '/tools/resting-heart-rate', '/tools/alcohol', '/tools/camera-heart-rate', '/tools/breathing', '/tools/biological-age']
 
 export function langHref(path: string, lang: Lang): string {
   if (lang === 'en' || !path.startsWith('/')) return path

@@ -177,8 +177,8 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     slug: 'biological-age',
-    name: 'Biological Age Calculator',
-    blurb: 'Estimate your "fitness age" from resting heart rate, activity, sleep and smoking — a calm, motivational mirror of your habits, not a medical verdict.',
+    name: 'Biological Age Calculator (Fitness Age)',
+    blurb: 'Estimate your VO2max with the published HUNT model and see your fitness age — the age of an average healthy person as fit as you.',
     live: true,
     category: 'LONGEVITY',
     badge: 'AGE',

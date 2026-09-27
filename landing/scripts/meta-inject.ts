@@ -62,7 +62,7 @@ import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
 import { breathToolCopy } from '../src/data/breath-tool-i18n'
 import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
 import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
-import { BIOAGE_FAQ } from '../src/data/biological-age'
+import { bioToolCopy } from '../src/data/bioage-tool-i18n'
 import { DETOX_FAQ } from '../src/data/digital-detox'
 import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
 import { NS_FAQ } from '../src/data/nervous-system-state'
@@ -574,7 +574,7 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
     } else if (segments[1] === 'dopamine-detox') {
       items.push({ name: 'Dopamine Reset', url: `${SITE_URL}/tools/dopamine-detox` })
     } else if (segments[1] === 'biological-age') {
-      items.push({ name: 'Biological Age', url: `${SITE_URL}/tools/biological-age` })
+      items.push({ name: 'Fitness Age', url: `${SITE_URL}/tools/biological-age` })
     } else if (segments[1] === 'digital-detox') {
       items.push({ name: 'Digital Detox', url: `${SITE_URL}/tools/digital-detox` })
     } else if (segments[1] === 'burnout') {
@@ -2227,16 +2227,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: DOPAMINE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
-  if (route === '/tools/biological-age') {
+  // /tools/biological-age — fitness age (HUNT model), all 12 languages (copy in src/data/bioage-tool-i18n).
+  if (route === '/tools/biological-age' || /^\/[a-z]{2}\/tools\/biological-age$/.test(route)) {
+    const lang = (route === '/tools/biological-age' ? 'en' : route.slice(1, 3)) as Lang
+    const c = bioToolCopy(lang)
     return {
-      title: 'Biological Age Calculator — How Old Are You? | ONDA Life',
-      description:
-        'Free biological "fitness age" calculator: estimate how your habits — resting heart rate, activity, sleep, smoking — stack up against your real age. Educational, not a medical test.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/biological-age.png`,
-      faq: { mainEntity: BIOAGE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/biological-age.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/digital-detox') {

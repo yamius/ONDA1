@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Calculadora de idade biológica — idade fitness | ONDA Life",
+    "description": "Calculadora gratuita de idade fitness pelo modelo HUNT: estime seu VO2máx pela idade, cintura, frequência cardíaca de repouso e exercício.",
+    "appName": "Calculadora de idade fitness (modelo HUNT)",
+    "appDescription": "Calculadora gratuita que estima o VO2máx com o modelo HUNT sem exercício (Nes 2011) e o converte em idade fitness com base nos dados de referência do HUNT."
+  },
+  "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Idade fitness" },
+  "h1": "Calculadora de idade biológica: sua idade fitness",
+  "capsule": "Sua idade fitness é a idade de uma pessoa saudável média com o mesmo condicionamento aeróbico (VO2máx) que você. Esta calculadora estima seu VO2máx com o modelo HUNT, publicado na Noruega — idade, sexo, cintura, frequência cardíaca de repouso e como você se exercita — e compara o resultado com normas medidas. É uma estimativa com base científica de uma parte da idade biológica, não um exame de laboratório nem um diagnóstico médico.",
+  "imageAlt": "Calculadora de idade biológica — idade fitness a partir do VO2máx estimado, ferramenta gratuita da ONDA Life",
+  "form": {
+    "sex": "Sexo",
+    "male": "Homem",
+    "female": "Mulher",
+    "age": "Idade",
+    "waist": "Circunferência da cintura",
+    "waistHint": "Meça na altura do umbigo, relaxado, depois de soltar o ar.",
+    "rhr": "Frequência cardíaca de repouso (bpm)",
+    "rhrHint": "Sentado em silêncio por alguns minutos, ou a FC de repouso do seu relógio.",
+    "freq": "Com que frequência você se exercita?",
+    "intensity": "Com que intensidade você costuma treinar?",
+    "duration": "Quanto tempo dura cada sessão?"
+  },
+  "freq": { "lt1": "Nunca ou menos de uma vez por semana", "once": "Uma vez por semana", "twoThree": "2–3 vezes por semana", "daily": "Quase todos os dias" },
+  "intensity": { "easy": "Leve — sem suar nem perder o fôlego", "breathless": "Forte o bastante para ficar ofegante e suado", "exhaustion": "Perto da exaustão" },
+  "duration": { "lt15": "Menos de 15 minutos", "m15": "15–29 minutos", "m30": "30–60 minutos", "gt60": "Mais de uma hora" },
+  "result": {
+    "title": "Sua idade fitness",
+    "years": "{{n}} anos",
+    "younger": "{{n}} anos a menos que a sua idade",
+    "older": "{{n}} anos a mais que a sua idade",
+    "same": "Igual à sua idade",
+    "vo2": "VO2máx estimado: {{v}} ml/kg/min ({{pct}}% da média saudável para sua idade e sexo, {{norm}})",
+    "note": "O modelo explica cerca de 60% das diferenças no VO2máx medido, então seu valor real pode ser alguns pontos maior ou menor. Só um teste em laboratório ou na esteira mede de fato."
+  },
+  "invalid": "Informe idade de 20 a 90 anos, cintura de 50 a 160 cm (20 a 63 in) e frequência cardíaca de repouso de 35 a 120 bpm.",
+  "disclaimer": "Estimativa educativa, não é exame médico nem diagnóstico. As normas de referência vêm de voluntários noruegueses saudáveis e bastante ativos, por isso muita gente aparece um pouco mais velha do que é. O que importa é a direção: mais exercício intenso regular, cintura menor e frequência cardíaca de repouso mais baixa reduzem sua idade fitness.",
+  "sections": [
+    {
+      "h2": "O que é idade biológica — e o que é idade fitness?",
+      "body": "A idade biológica descreve como o seu corpo se comporta, e não quantos aniversários você já fez. Não existe uma medida única: os relógios epigenéticos leem a metilação do DNA, outros usam exames de sangue. A idade fitness é uma parte bem estudada dela: compara seu condicionamento cardiorrespiratório (VO2máx) com o da pessoa saudável média de cada idade. Isso importa porque o condicionamento é um dos preditores mais fortes de saúde a longo prazo — num estudo com 122.007 pacientes (Mandsager 2018), as pessoas menos condicionadas tiveram mortalidade muito maior que as mais condicionadas, sem limite superior para o benefício. Ao contrário de um teste de DNA, sua idade fitness pode mudar em poucas semanas de treino."
+    },
+    {
+      "h2": "Como funciona esta calculadora de idade fitness",
+      "body": "Ela usa o modelo sem exercício do HUNT Fitness Study, na Noruega (Nes 2011), em que adultos saudáveis fizeram um teste na esteira até a exaustão. Os pesquisadores viram que idade, circunferência da cintura, frequência cardíaca de repouso e um índice de atividade física preveem bem o VO2máx medido. O índice de atividade multiplica três respostas: com que frequência você se exercita, com que intensidade e por quanto tempo. Seu VO2máx estimado é então comparado com o VO2máx médio de homens ou mulheres saudáveis de cada idade do mesmo estudo (Loe 2013) — a idade em que essa média coincide com a sua é a sua idade fitness. Num acompanhamento de cerca de 37.000 pessoas por 24 anos, essa estimativa previu a mortalidade (Nes 2014)."
+    },
+    {
+      "h2": "Como diminuir sua idade fitness",
+      "body": "A maior alavanca é a intensidade: no modelo, sessões que deixam você ofegante e suado contam o dobro das leves, e esforços perto da exaustão, o triplo. Acrescentar uma ou duas sessões de intervalado por semana (por exemplo 4 × 4 minutos forte com recuperação leve) e construir um cardio constante na Zona 2 aumenta o VO2máx em 6–12 semanas. Cintura menor e frequência cardíaca de repouso mais baixa vêm do mesmo treino, somado a sono melhor e menos álcool. Guias: [treino na Zona 2](/articles/zone-2-training-aerobic-base), [como aumentar o VO2máx](/articles/vo2max-increase-aerobic-engine) e [Frequência cardíaca de repouso por idade](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Qual é um bom VO2máx por idade?",
+      "body": "No estudo HUNT com 3.816 adultos saudáveis (Loe 2013), o VO2máx médio medido foi de cerca de 54 ml/kg/min para homens na faixa dos 20 anos, 49 nos 30, 47 nos 40, 43 nos 50, 39 nos 60 e 35 a partir dos 70; para mulheres, cerca de 43, 40, 38, 34, 31 e 28. O VO2máx cai cerca de 8% por década depois dos 50, mas pessoas ativas mantêm valores bem mais altos. Wearables como Apple Watch, Garmin e Oura também estimam o VO2máx; os números diferem deste modelo e de um teste de laboratório, então compare cada fonte só com ela mesma. Mais: [calculadora de VO2máx](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Idade biológica e idade fitness — perguntas frequentes",
+  "faq": [
+    { "q": "Como a idade fitness é calculada?", "a": "Seu VO2máx é estimado com o modelo HUNT (Nes 2011) a partir de idade, sexo, cintura, frequência cardíaca de repouso e hábitos de exercício. Sua idade fitness é a idade em que a pessoa saudável média do seu sexo tem o mesmo VO2máx (normas de Loe 2013)." },
+    { "q": "Idade fitness é o mesmo que idade biológica?", "a": "Não. A idade fitness mede uma parte da idade biológica — o condicionamento aeróbico. Outros métodos usam a metilação do DNA (relógios epigenéticos) ou exames de sangue. A idade fitness é uma das partes mais práticas, porque prevê a saúde a longo prazo e pode ser mudada com treino." },
+    { "q": "Qual é a precisão desta calculadora?", "a": "É uma estimativa: o modelo explica cerca de 60% das diferenças no VO2máx medido, então seu valor real pode ser alguns pontos maior ou menor. Só um teste em laboratório ou na esteira mede o VO2máx diretamente." },
+    { "q": "Por que minha idade fitness é maior que minha idade real?", "a": "As normas de referência vêm de voluntários saudáveis e bastante ativos, então a régua é alta. Pouca intensidade no exercício, cintura maior e frequência cardíaca de repouso mais alta elevam a estimativa — e os três podem melhorar." },
+    { "q": "Como posso diminuir minha idade fitness?", "a": "Acrescente sessões mais fortes, que deixem você ofegante (como intervalados), ao treino aeróbico regular, reduza a cintura e melhore o sono. O VO2máx costuma subir em 6–12 semanas de treino consistente." },
+    { "q": "Qual é um bom VO2máx por idade?", "a": "Valores médios saudáveis (Loe 2013): homens cerca de 54 ml/kg/min na faixa dos 20 anos, 47 nos 40 e 39 nos 60; mulheres cerca de 43, 38 e 31. Quanto maior, melhor." }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "VO2máx estimado = 100.27 − 0.296×idade − 0.369×cintura(cm) − 0.155×FC de repouso + 0.226×índice-AF para homens, e 74.74 − 0.247×idade − 0.259×cintura − 0.114×FC de repouso + 0.198×índice-AF para mulheres (Nes 2011). O índice de atividade física (AF) multiplica as pontuações de frequência (0, 1, 2,5 ou 5), intensidade (1, 2 ou 3) e duração (0,1, 0,38, 0,75 ou 1) do questionário HUNT (Nauman 2012). A idade fitness é lida a partir do VO2máx médio medido de homens e mulheres saudáveis por década (Loe 2013), com interpolação entre as décadas. O modelo original usou a frequência cardíaca de repouso medida sentado; a FC de repouso do relógio costuma ser um pouco mais baixa, o que melhora levemente a estimativa. Estimativa educativa, não é diagnóstico.",
+  "sourcesContributes": [
+    "As equações usadas aqui: VO2máx estimado a partir de idade, circunferência da cintura, frequência cardíaca de repouso e um índice de atividade física, desenvolvidas e validadas em adultos saudáveis do estudo norueguês HUNT.",
+    "Em cerca de 37.000 adultos acompanhados por uma média de 24 anos, essa estimativa de condicionamento sem exercício previu a mortalidade por todas as causas e cardiovascular.",
+    "VO2máx médio medido em esteira por década para homens e mulheres saudáveis — a curva de referência da qual sua idade fitness é lida.",
+    "Documenta o índice de atividade física do HUNT usado aqui: pontuações de frequência × intensidade × duração a partir de três perguntas.",
+    "Em 122.007 pacientes, maior condicionamento cardiorrespiratório esteve ligado a menor mortalidade, sem limite superior — por isso vale a pena melhorar sua idade fitness."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "vo2": "Calculadora de VO2máx",
+    "rhr": "Frequência cardíaca de repouso por idade",
+    "zone2": "Frequência cardíaca na Zona 2",
+    "hrv": "Calculadora de VFC por idade"
+  }
+}

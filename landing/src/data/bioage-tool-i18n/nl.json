@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Biologische leeftijd berekenen — fitheidstest | ONDA Life",
+    "description": "Bereken gratis je fitheidsleeftijd met het HUNT-model: schat je VO2max op basis van leeftijd, taille, rusthartslag en sporten, en zie hoe fit je bent.",
+    "appName": "Fitheidsleeftijd-calculator (HUNT-model)",
+    "appDescription": "Gratis calculator die je VO2max schat met het gepubliceerde HUNT-model zonder inspanningstest (Nes 2011) en omzet in een fitheidsleeftijd op basis van HUNT-referentiewaarden."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Fitheidsleeftijd" },
+  "h1": "Biologische leeftijd berekenen",
+  "capsule": "Je fitheidsleeftijd is de leeftijd van een gemiddeld gezond persoon met dezelfde aerobe fitheid (VO2max) als jij. Deze calculator schat je VO2max met het gepubliceerde HUNT-model uit Noorwegen — leeftijd, geslacht, tailleomvang, rusthartslag en hoe je sport — en vergelijkt die met gemeten normen. Het is een wetenschappelijk onderbouwde schatting van één onderdeel van je biologische leeftijd, geen labtest en geen medische diagnose.",
+  "imageAlt": "Biologische leeftijd berekenen — fitheidsleeftijd op basis van geschatte VO2max, gratis tool van ONDA Life",
+  "form": {
+    "sex": "Geslacht",
+    "male": "Man",
+    "female": "Vrouw",
+    "age": "Leeftijd",
+    "waist": "Tailleomvang",
+    "waistHint": "Meet ter hoogte van je navel, ontspannen, na het uitademen.",
+    "rhr": "Rusthartslag (bpm)",
+    "rhrHint": "Na een paar minuten rustig zitten, of de rusthartslag van je horloge.",
+    "freq": "Hoe vaak sport je?",
+    "intensity": "Hoe zwaar ga je meestal?",
+    "duration": "Hoe lang duurt een training?"
+  },
+  "freq": { "lt1": "Nooit of minder dan één keer per week", "once": "Eén keer per week", "twoThree": "2–3 keer per week", "daily": "Bijna elke dag" },
+  "intensity": { "easy": "Rustig — zonder te zweten of buiten adem te raken", "breathless": "Zwaar genoeg om buiten adem te raken en te zweten", "exhaustion": "Tot bijna uitputting" },
+  "duration": { "lt15": "Korter dan 15 minuten", "m15": "15–29 minuten", "m30": "30–60 minuten", "gt60": "Langer dan een uur" },
+  "result": {
+    "title": "Je fitheidsleeftijd",
+    "years": "{{n}} jaar",
+    "younger": "{{n}} jaar jonger dan je leeftijd",
+    "older": "{{n}} jaar ouder dan je leeftijd",
+    "same": "Gelijk aan je leeftijd",
+    "vo2": "Geschatte VO2max: {{v}} ml/kg/min ({{pct}}% van het gezonde gemiddelde voor jouw leeftijd en geslacht, {{norm}})",
+    "note": "Het model verklaart ongeveer 60% van de verschillen in gemeten VO2max, dus je werkelijke waarde kan een paar punten hoger of lager liggen. Alleen een inspanningstest in een lab of op de loopband meet het echt."
+  },
+  "invalid": "Vul een leeftijd van 20–90 in, een tailleomvang van 50–160 cm (20–63 in) en een rusthartslag van 35–120 bpm.",
+  "disclaimer": "Educatieve schatting, geen medische test of diagnose. De referentienormen komen van gezonde, vrij actieve Noorse vrijwilligers, dus veel mensen komen iets ouder uit dan hun leeftijd. Het gaat om de richting: vaker stevig sporten, een kleinere taille en een lagere rusthartslag verlagen allemaal je fitheidsleeftijd.",
+  "sections": [
+    {
+      "h2": "Wat is biologische leeftijd — en wat is fitheidsleeftijd?",
+      "body": "Je biologische leeftijd beschrijft hoe oud je lichaam zich gedraagt, niet hoeveel verjaardagen je hebt gehad. Er bestaat niet één maat voor: epigenetische klokken lezen DNA-methylatie af, andere methoden gebruiken bloedonderzoek. Fitheidsleeftijd is een goed onderzocht onderdeel ervan: het vergelijkt je cardiorespiratoire fitheid (VO2max) met die van de gemiddelde gezonde persoon per leeftijd. Dat is belangrijk, want fitheid is een van de sterkste voorspellers van gezondheid op lange termijn — in een studie onder 122.007 patiënten (Mandsager 2018) hadden mensen met de laagste fitheid een veel hogere sterfte dan de fitste groep, zonder bovengrens aan het voordeel. Anders dan een DNA-test kan je fitheidsleeftijd binnen enkele weken training veranderen."
+    },
+    {
+      "h2": "Hoe deze fitheidsleeftijd-calculator werkt",
+      "body": "De calculator gebruikt het model zonder inspanningstest uit de Noorse HUNT Fitness Study (Nes 2011), waarin gezonde volwassenen een loopbandtest tot uitputting deden. De onderzoekers vonden dat leeftijd, tailleomvang, rusthartslag en een activiteitsindex de gemeten VO2max goed voorspellen. De activiteitsindex vermenigvuldigt drie antwoorden: hoe vaak je sport, hoe zwaar en hoe lang. Je geschatte VO2max wordt daarna vergeleken met de gemiddelde VO2max van gezonde mannen of vrouwen per leeftijd uit dezelfde studie (Loe 2013) — de leeftijd waarbij dat gemiddelde gelijk is aan jouw waarde, is je fitheidsleeftijd. In een follow-up van zo'n 37.000 mensen over 24 jaar voorspelde deze schatting de sterfte (Nes 2014)."
+    },
+    {
+      "h2": "Zo verlaag je je fitheidsleeftijd",
+      "body": "De grootste hefboom is intensiteit: in het model tellen trainingen waarbij je buiten adem raakt en zweet twee keer zo zwaar als rustige, en inspanningen tot bijna uitputting drie keer. Eén of twee intervaltrainingen per week (bijvoorbeeld 4 × 4 minuten stevig met rustig herstel) plus regelmatige zone 2-cardio verhogen je VO2max binnen 6–12 weken. Een kleinere taille en een lagere rusthartslag volgen uit dezelfde training, samen met beter slapen en minder alcohol. Lees ook: [zone 2-training](/articles/zone-2-training-aerobic-base), [je VO2max verhogen](/articles/vo2max-increase-aerobic-engine) en [Rusthartslag per leeftijd](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "VO2max per leeftijd: wat is een goede waarde?",
+      "body": "In de HUNT-studie onder 3.816 gezonde volwassenen (Loe 2013) was de gemiddelde gemeten VO2max bij mannen ongeveer 54 ml/kg/min in de twintig, 49 in de dertig, 47 in de veertig, 43 in de vijftig, 39 in de zestig en 35 vanaf 70; bij vrouwen ongeveer 43, 40, 38, 34, 31 en 28. Na je 50e daalt de VO2max met zo'n 8% per decennium, maar actieve mensen houden veel hogere waarden. Wearables zoals Apple Watch, Garmin en Oura schatten ook je VO2max; hun cijfers wijken af van dit model en van een labtest, dus vergelijk elke bron alleen met zichzelf. Meer: [VO2max-calculator](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Biologische leeftijd en fitheidsleeftijd — veelgestelde vragen",
+  "faq": [
+    { "q": "Hoe wordt fitheidsleeftijd berekend?", "a": "Je VO2max wordt geschat met het HUNT-model (Nes 2011) op basis van leeftijd, geslacht, tailleomvang, rusthartslag en sportgewoonten. Je fitheidsleeftijd is de leeftijd waarop de gemiddelde gezonde persoon van jouw geslacht dezelfde VO2max heeft (normen van Loe 2013)." },
+    { "q": "Is fitheidsleeftijd hetzelfde als biologische leeftijd?", "a": "Nee. Fitheidsleeftijd meet één onderdeel van je biologische leeftijd: je aerobe fitheid. Andere methoden gebruiken DNA-methylatie (epigenetische klokken) of bloedonderzoek. Fitheidsleeftijd is een van de meest praktische onderdelen, omdat het je gezondheid op lange termijn voorspelt en je het met training kunt veranderen." },
+    { "q": "Hoe nauwkeurig is deze calculator?", "a": "Het is een schatting: het model verklaart ongeveer 60% van de verschillen in gemeten VO2max, dus je werkelijke waarde kan een paar punten hoger of lager liggen. Alleen een inspanningstest in een lab of op de loopband meet VO2max direct." },
+    { "q": "Waarom is mijn fitheidsleeftijd hoger dan mijn echte leeftijd?", "a": "De referentienormen komen van gezonde, vrij actieve vrijwilligers, dus de lat ligt hoog. Weinig intensief sporten, een grotere taille en een hogere rusthartslag drijven de schatting omhoog — en alle drie kun je verbeteren." },
+    { "q": "Hoe kan ik mijn fitheidsleeftijd verlagen?", "a": "Voeg zwaardere trainingen toe waarbij je buiten adem raakt (zoals intervallen) aan regelmatige duurtraining, verklein je tailleomvang en slaap beter. Je VO2max stijgt meestal binnen 6–12 weken consequent trainen." },
+    { "q": "Wat is een goede VO2max voor mijn leeftijd?", "a": "Gemiddelde gezonde waarden (Loe 2013): mannen ongeveer 54 ml/kg/min in de twintig, 47 in de veertig en 39 in de zestig; vrouwen ongeveer 43, 38 en 31. Hoger is beter." }
+  ],
+  "sourcesTitle": "Bronnen & methode",
+  "methodology": "Geschatte VO2max = 100.27 − 0.296×leeftijd − 0.369×taille(cm) − 0.155×rusthartslag + 0.226×PA-index voor mannen, en 74.74 − 0.247×leeftijd − 0.259×taille − 0.114×rusthartslag + 0.198×PA-index voor vrouwen (Nes 2011). De PA-index vermenigvuldigt de scores voor frequentie (0, 1, 2,5 of 5), intensiteit (1, 2 of 3) en duur (0,1, 0,38, 0,75 of 1) uit de HUNT-vragenlijst (Nauman 2012). De fitheidsleeftijd wordt afgelezen uit de gemiddelde gemeten VO2max van gezonde mannen en vrouwen per decennium (Loe 2013), geïnterpoleerd tussen de decennia. Het oorspronkelijke model gebruikte een zittend gemeten rusthartslag; de rusthartslag van een horloge is meestal iets lager, wat de schatting licht verbetert. Educatieve schatting, geen diagnose.",
+  "sourcesContributes": [
+    "De hier gebruikte formules: geschatte VO2max op basis van leeftijd, tailleomvang, rusthartslag en een activiteitsindex, ontwikkeld en gevalideerd bij gezonde volwassenen uit de Noorse HUNT-studie.",
+    "Bij ongeveer 37.000 volwassenen die gemiddeld 24 jaar werden gevolgd, voorspelde deze fitheidsschatting zonder inspanningstest de totale en cardiovasculaire sterfte.",
+    "Gemiddelde op de loopband gemeten VO2max per decennium voor gezonde mannen en vrouwen — de referentiecurve waaruit je fitheidsleeftijd wordt afgelezen.",
+    "Beschrijft de hier gebruikte HUNT-activiteitsindex: scores voor frequentie × intensiteit × duur uit drie vragen.",
+    "Bij 122.007 patiënten hing een hogere cardiorespiratoire fitheid samen met lagere sterfte, zonder bovengrens — de reden dat het loont je fitheidsleeftijd te verbeteren."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "vo2": "VO2max-calculator",
+    "rhr": "Rusthartslag per leeftijd",
+    "zone2": "Hartslag in zone 2",
+    "hrv": "HRV-calculator per leeftijd"
+  }
+}

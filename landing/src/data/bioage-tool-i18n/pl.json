@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "title": "Kalkulator wieku biologicznego — wiek fitness | ONDA Life",
+    "description": "Darmowy kalkulator wieku sprawnościowego (model HUNT): oszacuj VO2max z wieku, talii, tętna spoczynkowego i treningu i poznaj swój wiek biologiczny.",
+    "appName": "Kalkulator wieku sprawnościowego (model HUNT)",
+    "appDescription": "Darmowy kalkulator, który szacuje VO2max opublikowanym modelem HUNT bez testu wysiłkowego (Nes 2011) i przelicza go na wiek sprawnościowy na podstawie danych referencyjnych HUNT."
+  },
+  "breadcrumb": { "home": "Strona główna", "tools": "Narzędzia", "current": "Wiek sprawnościowy" },
+  "h1": "Kalkulator wieku biologicznego",
+  "capsule": "Twój wiek sprawnościowy to wiek przeciętnej zdrowej osoby o takiej samej wydolności tlenowej (VO2max) jak Twoja. Kalkulator szacuje Twoje VO2max opublikowanym norweskim modelem HUNT — na podstawie wieku, płci, obwodu talii, tętna spoczynkowego i sposobu, w jaki trenujesz — i porównuje wynik ze zmierzonymi normami. To naukowe oszacowanie jednego z elementów wieku biologicznego, a nie badanie laboratoryjne ani diagnoza medyczna.",
+  "imageAlt": "Kalkulator wieku biologicznego — wiek sprawnościowy z szacowanego VO2max, darmowe narzędzie ONDA Life",
+  "form": {
+    "sex": "Płeć",
+    "male": "Mężczyzna",
+    "female": "Kobieta",
+    "age": "Wiek",
+    "waist": "Obwód talii",
+    "waistHint": "Mierz na wysokości pępka, na rozluźnionym brzuchu, po wydechu.",
+    "rhr": "Tętno spoczynkowe (ud./min)",
+    "rhrHint": "Po kilku minutach spokojnego siedzenia albo tętno spoczynkowe z zegarka.",
+    "freq": "Jak często trenujesz?",
+    "intensity": "Jak intensywnie zwykle ćwiczysz?",
+    "duration": "Ile trwa jeden trening?"
+  },
+  "freq": { "lt1": "Nigdy lub rzadziej niż raz w tygodniu", "once": "Raz w tygodniu", "twoThree": "2–3 razy w tygodniu", "daily": "Prawie codziennie" },
+  "intensity": { "easy": "Lekko — bez pocenia się i zadyszki", "breathless": "Na tyle mocno, że mam zadyszkę i się pocę", "exhaustion": "Prawie do wyczerpania" },
+  "duration": { "lt15": "Mniej niż 15 minut", "m15": "15–29 minut", "m30": "30–60 minut", "gt60": "Ponad godzinę" },
+  "result": {
+    "title": "Twój wiek sprawnościowy",
+    "years": "{{n}} lat",
+    "younger": "O {{n}} lat mniej niż Twój wiek",
+    "older": "O {{n}} lat więcej niż Twój wiek",
+    "same": "Tyle samo, ile masz lat",
+    "vo2": "Szacowane VO2max: {{v}} ml/kg/min ({{pct}}% średniej zdrowych osób w Twoim wieku i tej samej płci, {{norm}})",
+    "note": "Model wyjaśnia około 60% różnic w zmierzonym VO2max, więc Twoja rzeczywista wartość może być o kilka punktów wyższa lub niższa. Zmierzyć ją można tylko w teście laboratoryjnym lub na bieżni."
+  },
+  "invalid": "Podaj wiek 20–90 lat, obwód talii 50–160 cm (20–63 in) i tętno spoczynkowe 35–120 ud./min.",
+  "disclaimer": "Szacunek edukacyjny, a nie badanie medyczne ani diagnoza. Normy referencyjne pochodzą od zdrowych, dość aktywnych norweskich ochotników, dlatego wiele osób wypada nieco starzej niż wskazuje metryka. Liczy się kierunek: więcej regularnego, intensywnego wysiłku, mniejsza talia i niższe tętno spoczynkowe obniżają wiek sprawnościowy.",
+  "sections": [
+    {
+      "h2": "Czym jest wiek biologiczny, a czym wiek sprawnościowy?",
+      "body": "Wiek biologiczny opisuje, na ile lat „działa” Twój organizm, a nie ile urodzin już obchodziłeś. Nie ma jednej miary: zegary epigenetyczne odczytują metylację DNA, inne metody opierają się na badaniach krwi. Wiek sprawnościowy to jeden z najlepiej zbadanych elementów — porównuje Twoją wydolność krążeniowo-oddechową (VO2max) z przeciętną zdrową osobą w każdym wieku. Ma to znaczenie, bo wydolność jest jednym z najsilniejszych predyktorów zdrowia w długim okresie: w badaniu 122 007 pacjentów (Mandsager 2018) osoby o najniższej wydolności miały znacznie wyższą śmiertelność niż najbardziej wydolne, a korzyść nie miała górnej granicy. W przeciwieństwie do testu DNA wiek sprawnościowy możesz zmienić w ciągu kilku tygodni treningu."
+    },
+    {
+      "h2": "Jak działa ten kalkulator wieku sprawnościowego",
+      "body": "Korzysta z modelu bez testu wysiłkowego z norweskiego badania HUNT Fitness Study (Nes 2011), w którym zdrowi dorośli wykonali test na bieżni do wyczerpania. Badacze ustalili, że wiek, obwód talii, tętno spoczynkowe i wskaźnik aktywności fizycznej dobrze przewidują zmierzone VO2max. Wskaźnik aktywności to iloczyn trzech odpowiedzi: jak często trenujesz, jak intensywnie i jak długo. Szacowane VO2max porównuje się następnie ze średnim VO2max zdrowych mężczyzn lub kobiet w każdym wieku z tego samego badania (Loe 2013) — wiek, w którym ta średnia odpowiada Twojej wartości, to Twój wiek sprawnościowy. W obserwacji około 37 000 osób przez 24 lata to oszacowanie przewidywało śmiertelność (Nes 2014)."
+    },
+    {
+      "h2": "Jak obniżyć wiek sprawnościowy",
+      "body": "Największą dźwignią jest intensywność: w modelu treningi, po których masz zadyszkę i jesteś spocony, liczą się dwa razy bardziej niż lekkie, a wysiłek bliski wyczerpania — trzy razy. Jedna lub dwie sesje interwałowe w tygodniu (np. 4 × 4 minuty mocno z lekką przerwą) oraz regularne cardio w strefie 2 podnoszą VO2max w ciągu 6–12 tygodni. Mniejsza talia i niższe tętno spoczynkowe przychodzą dzięki temu samemu treningowi, lepszemu snu i mniejszej ilości alkoholu. Poradniki: [trening w strefie 2](/articles/zone-2-training-aerobic-base), [jak zwiększyć VO2max](/articles/vo2max-increase-aerobic-engine) i [tętno spoczynkowe według wieku](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "VO2max — norma dla wieku",
+      "body": "W badaniu HUNT obejmującym 3816 zdrowych dorosłych (Loe 2013) średnie zmierzone VO2max wynosiło u mężczyzn około 54 ml/kg/min po dwudziestce, 49 po trzydziestce, 47 po czterdziestce, 43 po pięćdziesiątce, 39 po sześćdziesiątce i 35 od 70. roku życia; u kobiet odpowiednio około 43, 40, 38, 34, 31 i 28. Po 50. roku życia VO2max spada o około 8% na dekadę, ale osoby aktywne utrzymują znacznie wyższe wartości. Urządzenia takie jak Apple Watch, Garmin czy Oura też szacują VO2max; ich wyniki różnią się od tego modelu i od testu laboratoryjnego, więc porównuj każde źródło tylko z nim samym. Więcej: [kalkulator VO2max](/tools/vo2max)."
+    }
+  ],
+  "faqTitle": "Wiek biologiczny i wiek sprawnościowy — najczęstsze pytania",
+  "faq": [
+    { "q": "Jak oblicza się wiek sprawnościowy?", "a": "VO2max szacuje się modelem HUNT (Nes 2011) na podstawie wieku, płci, obwodu talii, tętna spoczynkowego i nawyków treningowych. Wiek sprawnościowy to wiek, w którym przeciętna zdrowa osoba Twojej płci ma takie samo VO2max (normy Loe 2013)." },
+    { "q": "Czy wiek sprawnościowy to to samo co wiek biologiczny?", "a": "Nie. Wiek sprawnościowy mierzy jeden element wieku biologicznego — wydolność tlenową. Inne metody wykorzystują metylację DNA (zegary epigenetyczne) lub badania krwi. Wiek sprawnościowy należy do najbardziej praktycznych, bo przewiduje zdrowie w długim okresie i możesz go zmienić treningiem." },
+    { "q": "Jak dokładny jest ten kalkulator?", "a": "To szacunek: model wyjaśnia około 60% różnic w zmierzonym VO2max, więc rzeczywista wartość może być o kilka punktów wyższa lub niższa. Bezpośrednio VO2max mierzy tylko test laboratoryjny lub na bieżni." },
+    { "q": "Dlaczego mój wiek sprawnościowy jest wyższy niż rzeczywisty?", "a": "Normy referencyjne pochodzą od zdrowych, dość aktywnych ochotników, więc poprzeczka jest wysoko. Niska intensywność treningu, większa talia i wyższe tętno spoczynkowe podnoszą wynik — wszystkie trzy można poprawić." },
+    { "q": "Jak obniżyć wiek sprawnościowy?", "a": "Do regularnego treningu tlenowego dodaj mocniejsze sesje, po których masz zadyszkę (np. interwały), zmniejsz obwód talii i popraw sen. VO2max zwykle rośnie w ciągu 6–12 tygodni systematycznego treningu." },
+    { "q": "Jaka jest norma VO2max dla mojego wieku?", "a": "Średnie wartości u zdrowych osób (Loe 2013): mężczyźni około 54 ml/kg/min po dwudziestce, 47 po czterdziestce i 39 po sześćdziesiątce; kobiety około 43, 38 i 31. Im wyżej, tym lepiej." }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Szacowane VO2max = 100.27 − 0.296×wiek − 0.369×talia(cm) − 0.155×tętno spoczynkowe + 0.226×wskaźnik PA dla mężczyzn oraz 74.74 − 0.247×wiek − 0.259×talia − 0.114×tętno spoczynkowe + 0.198×wskaźnik PA dla kobiet (Nes 2011). Wskaźnik PA to iloczyn punktów za częstotliwość (0, 1, 2,5 lub 5), intensywność (1, 2 lub 3) i czas trwania (0,1, 0,38, 0,75 lub 1) z kwestionariusza HUNT (Nauman 2012). Wiek sprawnościowy odczytuje się ze średniego zmierzonego VO2max zdrowych mężczyzn i kobiet w kolejnych dekadach (Loe 2013), z interpolacją między dekadami. Oryginalny model używał tętna spoczynkowego mierzonego na siedząco; tętno spoczynkowe z zegarka jest zwykle nieco niższe, co lekko poprawia wynik. Szacunek edukacyjny, a nie diagnoza.",
+  "sourcesContributes": [
+    "Równania użyte w kalkulatorze: szacowanie VO2max na podstawie wieku, obwodu talii, tętna spoczynkowego i wskaźnika aktywności fizycznej, opracowane i zwalidowane u zdrowych dorosłych z norweskiego badania HUNT.",
+    "U około 37 000 dorosłych obserwowanych średnio przez 24 lata to oszacowanie wydolności bez testu wysiłkowego przewidywało śmiertelność ogólną i sercowo-naczyniową.",
+    "Średnie VO2max zmierzone na bieżni w kolejnych dekadach u zdrowych mężczyzn i kobiet — krzywa referencyjna, z której odczytywany jest Twój wiek sprawnościowy.",
+    "Opisuje użyty tu wskaźnik aktywności fizycznej HUNT: iloczyn punktów za częstotliwość × intensywność × czas trwania z trzech pytań.",
+    "U 122 007 pacjentów wyższa wydolność krążeniowo-oddechowa wiązała się z niższą śmiertelnością bez górnej granicy korzyści — dlatego warto poprawiać wiek sprawnościowy."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "vo2": "Kalkulator VO2max",
+    "rhr": "Tętno spoczynkowe według wieku",
+    "zone2": "Tętno w strefie 2",
+    "hrv": "Kalkulator HRV według wieku"
+  }
+}
