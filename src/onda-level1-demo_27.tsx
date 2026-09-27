@@ -994,20 +994,6 @@ const OndaLevel1 = () => {
           pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'),
           pushShort: t('anomaly.push_short', 'Есть свежий сигнал.'),
         });
-        // Calm check-ins Segment A (task 16): hand the native evaluator the localized
-        // A1/A2/A3 templates (A1 keeps a literal {x} for native to fill with the avg
-        // resting pulse), plus the toggle + whether A3 is eligible right now.
-        try {
-          const installAge = daysSinceFirstSeen().days_since_first_seen ?? 0;
-          await HealthKitHeartRate.setCheckinStrings({
-            title: 'ONDA',
-            a1: t('reminders.checkin_a1', { x: '{x}', defaultValue: '4 nights in your usual range. Resting pulse steady around {x}. A short practice keeps the rhythm going.' }),
-            a2: t('reminders.checkin_a2', 'Another 4 steady nights — your body\'s in its normal range. Anything that helped? Note it in your journal.'),
-            a3: t('reminders.checkin_a3', 'Your body\'s in its rhythm. Want to see more? Switch to Expert mode in Settings.'),
-            enabled: getCheckinsEnabled(),
-            a3Eligible: appMode === 'simple' && installAge >= 8 && installAge <= 14,
-          });
-        } catch (e) { console.warn('[checkin] setCheckinStrings failed', e); }
         await HealthKitHeartRate.startAnomalyMonitoring();
       } catch (e) { console.warn('[anomaly] monitoring setup failed', e); }
     })();
@@ -4427,6 +4413,27 @@ const OndaLevel1 = () => {
   const getTotalTime = () => {
     return practiceHistory.reduce((sum, s) => sum + (s.duration || 0), 0);
   };
+
+  // Keep the native Segment-A evaluator's strings LOCALIZED + current. Runs
+  // regardless of watch connection (so the INTERNAL A1/A2/A3 test buttons and the
+  // real native path both use the device language, not the Swift English fallback),
+  // and refreshes when the language or mode changes.
+  useEffect(() => {
+    if (!Capacitor.isNativePlatform()) return;
+    (async () => {
+      try {
+        const installAge = daysSinceFirstSeen().days_since_first_seen ?? 0;
+        await HealthKitHeartRate.setCheckinStrings({
+          title: 'ONDA',
+          a1: t('reminders.checkin_a1', { x: '{x}', defaultValue: '4 nights in your usual range (resting pulse ≈{x}). A short practice keeps it going.' }),
+          a2: t('reminders.checkin_a2', "Another 4 steady nights — you're in your range. What helped? Add a note."),
+          a3: t('reminders.checkin_a3', "You're in your rhythm. Want more detail? Turn on Expert mode in Settings."),
+          enabled: getCheckinsEnabled(),
+          a3Eligible: appMode === 'simple' && installAge >= 8 && installAge <= 14,
+        });
+      } catch (e) { console.warn('[checkin] setCheckinStrings failed', e); }
+    })();
+  }, [i18n.language, appMode, t]);
 
   // Lock the home scroll (#root, overflow:auto) while any modal is open — otherwise
   // a touch that starts on the modal chains through to the page behind it.

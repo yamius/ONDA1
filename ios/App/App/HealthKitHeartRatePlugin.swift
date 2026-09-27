@@ -948,7 +948,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         content.title = title
         content.body = body
         content.sound = .default
-        content.userInfo = ["checkin_type": type, "segment": "watch"]
+        content.userInfo = ["kind": "checkin", "checkin_type": type, "segment": "watch"]
         // Calm — NOT time-sensitive (a "you're fine" nudge must never break Focus/DND).
         let req = UNNotificationRequest(identifier: "onda_checkin", content: content, trigger: nil)
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
@@ -976,7 +976,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         content.title = title
         content.body = body
         content.sound = .default
-        content.userInfo = ["checkin_type": type, "segment": "watch", "simulated": true]
+        content.userInfo = ["kind": "checkin", "checkin_type": type, "segment": "watch", "simulated": true]
         let trigger = delay > 0 ? UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false) : nil
         let req = UNNotificationRequest(identifier: "onda_checkin_test_\(type)", content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
