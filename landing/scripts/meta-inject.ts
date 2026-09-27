@@ -44,10 +44,10 @@ import { founderJsonLd } from '../src/pages/FounderPage'
 import { productJsonLd } from '../src/pages/ProductPage'
 import { howItWorksJsonLd } from '../src/pages/HowItWorksPage'
 import { EMOTON_FAQ } from '../src/data/emoton-faq'
-import { CAFFEINE_FAQ } from '../src/data/caffeine-norms'
+import { caffToolCopy } from '../src/data/caff-tool-i18n'
 import { SLEEP_DEBT_FAQ } from '../src/data/sleep-debt'
 import { HR_ZONE_FAQ } from '../src/data/hr-zones'
-import { CHRONOTYPE_FAQ } from '../src/data/chronotype-quiz'
+import { chronoToolCopy } from '../src/data/chrono-tool-i18n'
 import { PROTEIN_FAQ } from '../src/data/protein-target'
 import { VO2MAX_FAQ } from '../src/data/vo2max'
 import { TDEE_FAQ } from '../src/data/tdee'
@@ -1975,16 +1975,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       ],
     }
   }
-  if (route === '/tools/caffeine') {
+  // /tools/caffeine — all 12 languages (copy in src/data/caff-tool-i18n).
+  if (route === '/tools/caffeine' || /^\/[a-z]{2}\/tools\/caffeine$/.test(route)) {
+    const lang = (route === '/tools/caffeine' ? 'en' : route.slice(1, 3)) as Lang
+    const c = caffToolCopy(lang)
     return {
-      title: 'Caffeine Cut-Off — Last Coffee Before Bed | ONDA Life',
-      description:
-        'Free caffeine calculator: pick your drink and bedtime to find the latest you can have coffee without disrupting sleep — based on caffeine\'s ~5.5-hour half-life. Plus a caffeine-by-drink chart.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/caffeine.png`,
-      faq: { mainEntity: CAFFEINE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/caffeine.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/sleep-debt') {
@@ -2011,16 +2029,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: HR_ZONE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
-  if (route === '/tools/chronotype') {
+  // /tools/chronotype — all 12 languages (copy in src/data/chrono-tool-i18n).
+  if (route === '/tools/chronotype' || /^\/[a-z]{2}\/tools\/chronotype$/.test(route)) {
+    const lang = (route === '/tools/chronotype' ? 'en' : route.slice(1, 3)) as Lang
+    const c = chronoToolCopy(lang)
     return {
-      title: "What's Your Chronotype? Lion, Bear or Wolf | ONDA Life",
-      description:
-        'Free 6-question chronotype quiz: find whether you are a morning, intermediate or evening type — and get a personalised daily protocol for when to work, train, cut caffeine and sleep.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/chronotype.png`,
-      faq: { mainEntity: CHRONOTYPE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/chronotype.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/protein') {

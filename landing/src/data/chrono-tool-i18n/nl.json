@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Chronotype test — ochtendmens of avondmens? | ONDA Life",
+    "description": "Gratis chronotype test met 6 vragen, gebaseerd op Horne–Östberg: ben je een ochtendmens, tussentype of avondmens? Plus je beste tijden voor werk en slaap.",
+    "appName": "Chronotype test",
+    "appDescription": "Gratis chronotype test met 6 vragen, geïnspireerd op de Horne–Östberg Morningness–Eveningness Questionnaire, met een dagschema voor elk type."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Chronotype test" },
+  "h1": "Chronotype test: ben je een ochtendmens of avondmens?",
+  "capsule": "Je chronotype is de natuurlijke timing van je biologische klok — wanneer je het liefst slaapt, wakker wordt en je het scherpst voelt. Beantwoord zes korte vragen, gebaseerd op de klassieke Horne–Östberg-vragenlijst, en ontdek of je een ochtendtype, tussentype of avondtype bent. Je krijgt er een dagschema bij: wanneer je je het best concentreert, traint, stopt met cafeïne en naar bed gaat.",
+  "imageAlt": "Chronotype test — ochtendmens of avondmens, met een dagschema, gratis tool van ONDA Life",
+  "questions": [
+    { "q": "Als je je dag helemaal vrij kon indelen, hoe laat zou je dan opstaan?", "options": ["Vóór 6:30", "6:30 – 7:45", "7:45 – 9:30", "9:30 – 11:00", "Na 11:00"] },
+    { "q": "En hoe laat zou je naar bed gaan als je helemaal vrij was?", "options": ["Vóór 21:00", "21:00 – 22:15", "22:15 – 00:30", "00:30 – 01:45", "Na 01:45"] },
+    { "q": "Hoe alert voel je je in het eerste halfuur na het wakker worden?", "options": ["Heel alert", "Redelijk alert", "Nogal suf", "Heel suf"] },
+    { "q": "Wanneer ben je mentaal op je best?", "options": ["Vroeg in de ochtend", "Laat in de ochtend", "'s Middags", "'s Avonds of 's nachts"] },
+    { "q": "Als je zwaar moest sporten, wanneer zou je dat het liefst doen?", "options": ["'s Ochtends", "Rond het middaguur of 's middags", "'s Avonds"] },
+    { "q": "Hoe zie je jezelf: ben je een ochtendmens of een avondmens?", "options": ["Echt een ochtendmens", "Meer ochtend- dan avondmens", "Meer avond- dan ochtendmens", "Echt een avondmens"] }
+  ],
+  "ui": {
+    "progress": "{{a}} van {{n}} beantwoord",
+    "resultTitle": "Jouw chronotype",
+    "planTitle": "Jouw dagschema",
+    "retake": "Doe de test opnieuw"
+  },
+  "profiles": {
+    "morning": {
+      "name": "Ochtendtype",
+      "tagline": "Vroeg op, vroeg scherp, 's avonds op.",
+      "description": "Je biologische klok loopt vroeg: je wordt makkelijk wakker, bent het alertst in de eerste helft van de dag en komt ruim vóór middernacht tot rust. Plan je zwaarste denkwerk in de ochtend, als je op je best bent. Late avondjes uit kosten jou meer dan een avondtype, dus bewaak een vaste, vroege bedtijd.",
+      "protocol": [
+        { "label": "Natuurlijk wakker worden", "value": "5:30 – 6:30" },
+        { "label": "Venster voor diep focuswerk", "value": "7:00 – 11:00" },
+        { "label": "Beste tijd om te trainen", "value": "Ochtend of vroege middag" },
+        { "label": "Laatste cafeïne", "value": "Uiterlijk rond 13:00" },
+        { "label": "Ideale bedtijd", "value": "21:30 – 22:30" }
+      ]
+    },
+    "intermediate": {
+      "name": "Tussentype",
+      "tagline": "In de maat met de zon — het meest voorkomende patroon.",
+      "description": "Je zit in het midden van het spectrum, ongeveer in de maat met de zonnedag — waar de meeste mensen uitkomen. Zonder sterke neiging naar een van beide kanten is regelmaat je voordeel: een vaste opstaantijd en daglicht in de ochtend houden je ritme stabiel en geven je een betrouwbare piek laat in de ochtend.",
+      "protocol": [
+        { "label": "Natuurlijk wakker worden", "value": "6:30 – 7:30" },
+        { "label": "Venster voor diep focuswerk", "value": "9:00 – 12:00" },
+        { "label": "Beste tijd om te trainen", "value": "Rond het middaguur of vroeg in de avond" },
+        { "label": "Laatste cafeïne", "value": "Uiterlijk rond 14:00" },
+        { "label": "Ideale bedtijd", "value": "22:30 – 23:30" }
+      ]
+    },
+    "evening": {
+      "name": "Avondtype",
+      "tagline": "Trage ochtenden, sterke avonden.",
+      "description": "Je klok loopt laat: ochtenden zijn echt zwaar — dat is biologie, geen luiheid — en je alertheid en stemming pieken meestal in de middag en avond. Het grootste risico is sociale jetlag: door vroege schema's kom je doordeweeks slaap tekort. Houd waar het kan een latere, vaste opstaantijd aan, en gebruik fel ochtendlicht om je klok te vervroegen als dat nodig is.",
+      "protocol": [
+        { "label": "Natuurlijk wakker worden", "value": "8:00 – 10:00" },
+        { "label": "Venster voor diep focuswerk", "value": "13:00 – 19:00" },
+        { "label": "Beste tijd om te trainen", "value": "Late middag of avond" },
+        { "label": "Laatste cafeïne", "value": "Uiterlijk rond 15:00" },
+        { "label": "Ideale bedtijd", "value": "00:00 – 01:30" }
+      ]
+    }
+  },
+  "disclaimer": "Een korte zelftest, geïnspireerd op de Horne–Östberg Morningness–Eveningness Questionnaire, niet de volledige gevalideerde vragenlijst. Je chronotype verandert met de leeftijd en is bij te sturen met licht en slaaptiming. Ter informatie, geen medisch advies.",
+  "sections": [
+    {
+      "h2": "Wat is een chronotype?",
+      "body": "Je chronotype is de natuurlijke voorkeur van je lichaam voor wanneer je slaapt, wakker wordt en het alertst bent. Het komt voort uit je interne circadiane klok en is deels erfelijk. Het ligt op een spectrum van uitgesproken ochtendtypes tot uitgesproken avondtypes, met de meeste mensen daartussen. In grote bevolkingsstudies verschilt de natuurlijke slaaptiming op vrije dagen enkele uren tussen vroege en late types (Roenneberg 2007). Als je je type kent, kun je werk, training, cafeïne en slaap beter timen. Zie ook: [wat is mijn chronotype](/articles/what-is-my-chronotype)."
+    },
+    {
+      "h2": "Ochtendmens of avondmens — wat is het verschil?",
+      "body": "Ochtendtypes worden makkelijk wakker, zijn vroeg scherp en worden 's avonds vroeg moe. Avondtypes (nachtuilen) vinden ochtenden zwaar, komen in de loop van de dag op gang en voelen zich het best laat in de middag en 's avonds. Geen van beide is beter — maar moderne schema's bevoordelen vroege types. Als een avondmens vroeg op moet voor werk of school, ontstaat door het verschil tussen de biologische klok en de wekker \"sociale jetlag\", wat in verband is gebracht met meer roken, alcohol- en cafeïnegebruik en een minder goed welzijn (Wittmann 2006). Lees meer: [sociale jetlag](/articles/social-jet-lag-irregular-sleep)."
+    },
+    {
+      "h2": "Kun je je chronotype veranderen?",
+      "body": "Gedeeltelijk. Je erfelijke aanleg blijft, maar je dagelijkse timing kun je ongeveer 1–2 uur verschuiven. Fel licht kort na het wakker worden zet de klok vroeger; gedimde avonden en minder schermlicht 's nachts voorkomen dat hij later gaat lopen. Een vaste opstaantijd — ook in het weekend — en regelmatige maaltijden helpen het nieuwe ritme vast te houden. Reken op een week of twee consequent volhouden. Plan je slaapvenster met de [Slaapcalculator: hoe laat moet ik gaan slapen?](/tools/sleep-cycle)."
+    },
+    {
+      "h2": "Verandert je chronotype met de leeftijd?",
+      "body": "Ja. Kinderen zijn meestal ochtendtypes, tieners schuiven duidelijk later op — met een piek rond hun 20e — en daarna worden mensen in de volwassenheid en op oudere leeftijd weer vroeger (Roenneberg 2007). Daarom zijn vroege schooltijden vooral zwaar voor tieners, en daarom kan je uitslag in de loop van de jaren veranderen."
+    }
+  ],
+  "faqTitle": "Chronotype — veelgestelde vragen",
+  "faq": [
+    { "q": "Wat is een chronotype?", "a": "De natuurlijke timing van je biologische klok — wanneer je het liefst slaapt, wakker wordt en je het scherpst voelt. Het is deels erfelijk en loopt van ochtendtypes tot avondtypes, met de meeste mensen in het midden." },
+    { "q": "Hoe weet ik of ik een ochtendmens of avondmens ben?", "a": "Doe deze test met 6 vragen, gebaseerd op de Horne–Östberg-vragenlijst. De sterkste aanwijzingen zijn hoe laat je op een vrije dag zou opstaan en slapen, en wanneer je mentaal het scherpst bent." },
+    { "q": "Kan ik mijn chronotype veranderen?", "a": "Gedeeltelijk: ochtendlicht, gedimde avonden en een vaste opstaantijd kunnen je timing ongeveer 1–2 uur verschuiven, maar je erfelijke aanleg blijft." },
+    { "q": "Is dit hetzelfde als de types leeuw, beer, wolf en dolfijn?", "a": "Vergelijkbaar idee. De diertypes komen uit het viertypenmodel van één auteur; deze test gebruikt de drie wetenschappelijk onderbouwde categorieën (ochtend, tussen, avond) uit de Horne–Östberg-vragenlijst." },
+    { "q": "Wat is sociale jetlag?", "a": "Het verschil tussen je biologische klok en je sociale schema, zichtbaar als slapen op heel andere tijden op werkdagen en vrije dagen. Het komt het vaakst voor bij avondtypes en hangt samen met slechtere slaap en stemming." },
+    { "q": "Wanneer moet een avondtype de laatste koffie drinken?", "a": "Ongeveer 8–9 uur vóór je gebruikelijke bedtijd — bij een bedtijd rond middernacht is dat uiterlijk rond 15:00. Controleer het met de cafeïnecalculator." }
+  ],
+  "sourcesTitle": "Bronnen & methodologie",
+  "methodology": "De zes vragen zijn een verkorte versie van de Horne–Östberg Morningness–Eveningness Questionnaire (1976), de meest gebruikte meting van het chronotype; de antwoorden worden gescoord en ingedeeld in ochtend-, tussen- en avondtypes. Het is een snelle zelftest, niet de volledige gevalideerde vragenlijst. Leeftijdstrends in chronotype volgen Roenneberg 2007; sociale jetlag volgt Wittmann 2006. De dagschema's zijn praktische richtlijnen op basis van deze types, geen persoonlijk voorschrift. Ter informatie, geen medisch advies.",
+  "sourcesContributes": [
+    "De klassieke zelfbeoordelingsvragenlijst voor ochtend- en avondgerichtheid, de basis van deze vragen.",
+    "Grote bevolkingsdata over chronotype en hoe het verschuift met de leeftijd — later in de adolescentie, weer vroeger in de volwassenheid.",
+    "Definieerde sociale jetlag — het verschil tussen biologische en sociale tijd — en koppelde het aan meer gebruik van stimulerende middelen en minder welzijn."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "sleep": "Slaapcalculator",
+    "caffeine": "Cafeïnecalculator",
+    "article": "Wat is mijn chronotype",
+    "jetlag": "Jetlag-planner voor lichttiming"
+  }
+}

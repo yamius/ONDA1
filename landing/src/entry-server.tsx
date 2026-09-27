@@ -234,9 +234,31 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/pl/tools/hrv" element={<HrvInterpreterPage />} />
           <Route path="/pt/tools/hrv" element={<HrvInterpreterPage />} />
           <Route path="/tools/caffeine"        element={<CaffeineCalculatorPage />} />
+          <Route path="/es/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/ru/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/uk/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/zh/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/de/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/fr/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/it/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/nl/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/ja/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/pl/tools/caffeine" element={<CaffeineCalculatorPage />} />
+          <Route path="/pt/tools/caffeine" element={<CaffeineCalculatorPage />} />
           <Route path="/tools/sleep-debt"      element={<SleepDebtCalculatorPage />} />
           <Route path="/tools/zone-2"          element={<Zone2CalculatorPage />} />
           <Route path="/tools/chronotype"      element={<ChronotypeQuizPage />} />
+          <Route path="/es/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/ru/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/uk/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/zh/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/de/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/fr/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/it/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/nl/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/ja/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/pl/tools/chronotype" element={<ChronotypeQuizPage />} />
+          <Route path="/pt/tools/chronotype" element={<ChronotypeQuizPage />} />
           <Route path="/tools/protein"         element={<ProteinCalculatorPage />} />
           <Route path="/tools/vo2max"          element={<Vo2maxCalculatorPage />} />
           <Route path="/tools/tdee"            element={<TdeeCalculatorPage />} />

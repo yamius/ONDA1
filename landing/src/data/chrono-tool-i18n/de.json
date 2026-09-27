@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Chronotyp-Test — Lerche oder Eule? | ONDA Life",
+    "description": "Kostenloser Chronotyp-Test nach Horne–Östberg: Bist du Lerche, Mischtyp oder Eule? Mit deinen besten Zeiten für Arbeit, Training und Schlaf.",
+    "appName": "Chronotyp-Test",
+    "appDescription": "Kostenloser Chronotyp-Test mit 6 Fragen, angelehnt an den Morningness-Eveningness-Fragebogen von Horne und Östberg, mit einem Tagesplan für jeden Typ."
+  },
+  "breadcrumb": { "home": "Startseite", "tools": "Tools", "current": "Chronotyp-Test" },
+  "h1": "Chronotyp-Test",
+  "capsule": "Dein Chronotyp ist das natürliche Timing deiner inneren Uhr — wann du am liebsten schläfst, aufwachst und am klarsten denkst. Beantworte sechs kurze Fragen, angelehnt an den klassischen Horne–Östberg-Fragebogen, und finde heraus, ob du Morgentyp, Mischtyp oder Abendtyp bist. Dazu bekommst du einen Tagesplan: wann du dich konzentrierst, trainierst, den letzten Kaffee trinkst und ins Bett gehst.",
+  "imageAlt": "Chronotyp-Test — Morgenmensch oder Abendmensch, mit Tagesplan, kostenloses Tool von ONDA Life",
+  "questions": [
+    { "q": "Wenn du deinen Tag völlig frei planen könntest: Wann würdest du aufstehen?", "options": ["Vor 6:30", "6:30 – 7:45", "7:45 – 9:30", "9:30 – 11:00", "Nach 11:00"] },
+    { "q": "Und wann würdest du ins Bett gehen, wenn du völlig frei wärst?", "options": ["Vor 21:00", "21:00 – 22:15", "22:15 – 00:30", "00:30 – 01:45", "Nach 01:45"] },
+    { "q": "Wie wach fühlst du dich in der ersten halben Stunde nach dem Aufwachen?", "options": ["Sehr wach", "Ziemlich wach", "Ziemlich benommen", "Sehr benommen"] },
+    { "q": "Wann bist du geistig am leistungsfähigsten?", "options": ["Früh am Morgen", "Am späten Vormittag", "Am Nachmittag", "Abends oder nachts"] },
+    { "q": "Wenn du intensiv trainieren müsstest: Wann wäre es dir am liebsten?", "options": ["Morgens", "Mittags oder nachmittags", "Abends"] },
+    { "q": "Nach deinem eigenen Gefühl: Bist du ein Morgen- oder ein Abendmensch?", "options": ["Eindeutig Morgenmensch", "Eher Morgen- als Abendmensch", "Eher Abend- als Morgenmensch", "Eindeutig Abendmensch"] }
+  ],
+  "ui": {
+    "progress": "{{a}} von {{n}} beantwortet",
+    "resultTitle": "Dein Chronotyp",
+    "planTitle": "Dein Tagesplan",
+    "retake": "Test wiederholen"
+  },
+  "profiles": {
+    "morning": {
+      "name": "Morgentyp",
+      "tagline": "Früh wach, früh fit, abends erschöpft.",
+      "description": "Deine innere Uhr läuft früh: Du wachst leicht auf, bist in der ersten Tageshälfte am wachsten und wirst lange vor Mitternacht müde. Leg deine anspruchsvollste Denkarbeit auf den Morgen, wenn du in Bestform bist. Lange Abende kosten dich mehr als einen Abendtyp — schütze also eine regelmäßige, frühe Schlafenszeit.",
+      "protocol": [
+        { "label": "Natürliches Aufwachen", "value": "5:30 – 6:30" },
+        { "label": "Fokus-Fenster", "value": "7:00 – 11:00" },
+        { "label": "Beste Trainingszeit", "value": "Morgens oder am frühen Nachmittag" },
+        { "label": "Letztes Koffein", "value": "Bis etwa 13:00" },
+        { "label": "Ideale Schlafenszeit", "value": "21:30 – 22:30" }
+      ]
+    },
+    "intermediate": {
+      "name": "Mischtyp",
+      "tagline": "Im Takt mit der Sonne — das häufigste Muster.",
+      "description": "Du liegst in der Mitte des Spektrums, ungefähr im Takt des Sonnentags — wie die meisten Menschen. Ohne starke Neigung in eine Richtung ist Beständigkeit dein Vorteil: Eine feste Aufstehzeit und Tageslicht am Morgen halten deinen Rhythmus stabil und sorgen für ein verlässliches Leistungshoch am späten Vormittag.",
+      "protocol": [
+        { "label": "Natürliches Aufwachen", "value": "6:30 – 7:30" },
+        { "label": "Fokus-Fenster", "value": "9:00 – 12:00" },
+        { "label": "Beste Trainingszeit", "value": "Mittags oder am frühen Abend" },
+        { "label": "Letztes Koffein", "value": "Bis etwa 14:00" },
+        { "label": "Ideale Schlafenszeit", "value": "22:30 – 23:30" }
+      ]
+    },
+    "evening": {
+      "name": "Abendtyp",
+      "tagline": "Langsame Morgen, starke Abende.",
+      "description": "Deine Uhr läuft spät: Morgens fällt es dir wirklich schwer — das ist Biologie, keine Faulheit — und Wachheit und Stimmung erreichen ihren Höhepunkt eher nachmittags und abends. Das Hauptrisiko ist sozialer Jetlag: Frühe Termine lassen dich unter der Woche zu wenig schlafen. Halte, wo möglich, eine spätere, aber feste Aufstehzeit ein und nutze helles Morgenlicht, wenn du deine Uhr nach vorn verschieben willst.",
+      "protocol": [
+        { "label": "Natürliches Aufwachen", "value": "8:00 – 10:00" },
+        { "label": "Fokus-Fenster", "value": "13:00 – 19:00" },
+        { "label": "Beste Trainingszeit", "value": "Später Nachmittag oder Abend" },
+        { "label": "Letztes Koffein", "value": "Bis etwa 15:00" },
+        { "label": "Ideale Schlafenszeit", "value": "00:00 – 01:30" }
+      ]
+    }
+  },
+  "disclaimer": "Ein kurzer Selbsttest, angelehnt an den Morningness-Eveningness-Fragebogen von Horne und Östberg — nicht der vollständige validierte Fragebogen. Der Chronotyp verändert sich mit dem Alter und lässt sich über Licht und Schlafzeiten etwas verschieben. Zur Information, keine medizinische Beratung.",
+  "sections": [
+    {
+      "h2": "Was ist ein Chronotyp?",
+      "body": "Dein Chronotyp ist die natürliche Vorliebe deines Körpers dafür, wann du schläfst, aufwachst und am wachsten bist. Er entsteht durch deine innere zirkadiane Uhr und ist teilweise genetisch bedingt. Er bewegt sich auf einem Spektrum von ausgeprägten Morgentypen bis zu ausgeprägten Abendtypen, die meisten Menschen liegen dazwischen. In großen Bevölkerungsstudien unterscheidet sich das natürliche Schlaftiming an freien Tagen zwischen frühen und späten Typen um mehrere Stunden (Roenneberg 2007). Wenn du deinen Typ kennst, kannst du Arbeit, Training, Koffein und Schlaf besser planen. Siehe auch: [Welcher Chronotyp bin ich?](/articles/what-is-my-chronotype)"
+    },
+    {
+      "h2": "Lerche oder Eule — Morgenmensch oder Abendmensch?",
+      "body": "Lerchen (Morgentypen) wachen leicht auf, sind früh fit und werden abends früh müde. Eulen (Abendtypen) tun sich morgens schwer, kommen im Laufe des Tages in Schwung und fühlen sich am späten Nachmittag und Abend am besten. Keiner der Typen ist besser — aber moderne Zeitpläne bevorzugen die Frühen. Muss eine Eule früh zur Arbeit oder Schule, entsteht zwischen innerer Uhr und Wecker ein „sozialer Jetlag“. Er wird mit mehr Rauchen, Alkohol- und Koffeinkonsum sowie schlechterem Wohlbefinden in Verbindung gebracht (Wittmann 2006). Mehr dazu: [sozialer Jetlag](/articles/social-jet-lag-irregular-sleep)."
+    },
+    {
+      "h2": "Kann man seinen Chronotyp ändern?",
+      "body": "Teilweise. Deine genetische Neigung bleibt, aber dein Tagesrhythmus lässt sich um etwa 1–2 Stunden verschieben. Helles Licht kurz nach dem Aufwachen stellt die Uhr früher; gedämpfte Abende und weniger Bildschirmlicht nachts verhindern, dass sie nach hinten driftet. Eine feste Aufstehzeit — auch am Wochenende — und regelmäßige Essenszeiten helfen, den neuen Rhythmus zu halten. Das braucht ein bis zwei Wochen Beständigkeit. Plane dein Schlaffenster mit dem [Schlafrechner: Wann soll ich schlafen gehen?](/tools/sleep-cycle)"
+    },
+    {
+      "h2": "Verändert sich der Chronotyp mit dem Alter?",
+      "body": "Ja. Kinder sind meist Frühtypen, Jugendliche verschieben sich deutlich nach hinten — mit dem Höhepunkt um das 20. Lebensjahr — und im Erwachsenenalter und Alter werden Menschen wieder früher (Roenneberg 2007). Deshalb ist ein früher Schulbeginn für Jugendliche besonders hart, und dein Ergebnis kann sich im Lauf der Jahre ändern."
+    }
+  ],
+  "faqTitle": "Chronotyp — häufige Fragen",
+  "faq": [
+    { "q": "Was ist ein Chronotyp?", "a": "Das natürliche Timing deiner inneren Uhr — wann du am liebsten schläfst, aufwachst und am klarsten denkst. Er ist teilweise genetisch und reicht von Morgentypen bis zu Abendtypen; die meisten liegen in der Mitte." },
+    { "q": "Woran erkenne ich, ob ich Morgenmensch oder Abendmensch bin?", "a": "Mach diesen Test mit 6 Fragen, angelehnt an den Horne–Östberg-Fragebogen. Die stärksten Hinweise: wann du an einem freien Tag aufwachen und schlafen gehen würdest und wann du geistig am fittesten bist." },
+    { "q": "Kann ich meinen Chronotyp ändern?", "a": "Teilweise: Morgenlicht, gedämpfte Abende und eine feste Aufstehzeit können dein Timing um etwa 1–2 Stunden verschieben, aber deine genetische Neigung bleibt." },
+    { "q": "Ist das dasselbe wie die Typen Löwe, Bär, Wolf und Delfin?", "a": "Eine ähnliche Idee. Die Tiertypen stammen aus dem Vier-Typen-Modell eines einzelnen Autors; dieser Test nutzt die drei forschungsbasierten Kategorien (Morgen-, Misch- und Abendtyp) aus dem Horne–Östberg-Fragebogen." },
+    { "q": "Was ist sozialer Jetlag?", "a": "Die Diskrepanz zwischen deiner inneren Uhr und deinem sozialen Zeitplan — erkennbar daran, dass du an Arbeitstagen und freien Tagen zu sehr unterschiedlichen Zeiten schläfst. Er tritt am häufigsten bei Abendtypen auf und hängt mit schlechterem Schlaf und schlechterer Stimmung zusammen." },
+    { "q": "Wann sollte ein Abendtyp den letzten Kaffee trinken?", "a": "Etwa 8–9 Stunden vor deiner üblichen Schlafenszeit — bei einer Schlafenszeit um Mitternacht also bis etwa 15:00. Prüfe es mit dem Koffein-Rechner." }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Die sechs Fragen sind eine Kurzfassung des Morningness-Eveningness-Fragebogens von Horne und Östberg (1976), des am weitesten verbreiteten Chronotyp-Instruments; die Antworten werden bewertet und in Morgen-, Misch- und Abendtyp eingeteilt. Es ist ein schneller Selbsttest, nicht der vollständige validierte Fragebogen. Die Altersverläufe folgen Roenneberg 2007, der soziale Jetlag Wittmann 2006. Die Tagespläne sind praktische Orientierungshilfen auf Basis dieser Typen, keine persönlichen Verordnungen. Zur Information, keine medizinische Beratung.",
+  "sourcesContributes": [
+    "Der klassische Selbsteinschätzungs-Fragebogen zu Morgen- und Abendorientierung — die Grundlage dieser Fragen.",
+    "Große Bevölkerungsdaten zum Chronotyp und wie er sich mit dem Alter verschiebt — später in der Jugend, im Erwachsenenalter wieder früher.",
+    "Definierte den sozialen Jetlag — die Diskrepanz zwischen biologischer und sozialer Zeit — und brachte ihn mit mehr Konsum von Genussmitteln und schlechterem Wohlbefinden in Verbindung."
+  ],
+  "related": {
+    "label": "Verwandte Tools",
+    "sleep": "Schlafrechner",
+    "caffeine": "Koffein-Rechner",
+    "article": "Welcher Chronotyp bin ich?",
+    "jetlag": "Jetlag-Lichtplaner"
+  }
+}

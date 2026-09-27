@@ -11,6 +11,8 @@
  * chronotype shifts with age and can be partially trained with light timing.
  */
 
+import type { ScienceSource } from './sources'
+
 export interface QuizOption {
   label: string
   points: number
@@ -153,25 +155,29 @@ export function scoreToChronotype(total: number): Chronotype {
   return 'evening'
 }
 
-export const CHRONOTYPE_FAQ: Array<{ q: string; a: string }> = [
+export const CHRONOTYPE_SOURCES: ScienceSource[] = [
   {
-    q: 'What is a chronotype?',
-    a: 'Your chronotype is your body clock\'s natural preference for when to sleep, wake and peak — driven largely by genetics (the PER3 gene among others) and your circadian rhythm. It sits on a spectrum from strong "morning" types to strong "evening" types, with most people in the middle.',
+    authors: 'Horne JA, Östberg O',
+    year: 1976,
+    title: 'A self-assessment questionnaire to determine morningness–eveningness in human circadian rhythms',
+    journal: 'International Journal of Chronobiology, 4(2):97–110',
+    contributes: '',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/1027738/',
   },
   {
-    q: 'Can you change your chronotype?',
-    a: 'Partly. Your underlying genetic lean is fixed, but the expressed timing can be nudged 1–2 hours with disciplined light exposure (bright light early to shift earlier, dim evenings and blue-light limits to stop drifting later), consistent wake times and meal timing. You will not turn a true Wolf into a Lion, but you can stop fighting your biology.',
+    authors: 'Roenneberg T, Kuehnle T, Juda M, et al.',
+    year: 2007,
+    title: 'Epidemiology of the human circadian clock',
+    journal: 'Sleep Medicine Reviews, 11(6):429–438',
+    contributes: '',
+    url: 'https://doi.org/10.1016/j.smrv.2007.07.005',
   },
   {
-    q: 'Does chronotype change with age?',
-    a: 'Yes. Children are early types, adolescents shift markedly late (peaking around age 19–20 — which is why early school start times hit teens so hard), and we drift earlier again through adulthood and into older age. Re-take a chronotype check every few years.',
-  },
-  {
-    q: 'Why does working against my chronotype matter?',
-    a: 'Being forced onto a schedule that clashes with your clock creates "social jet lag" — a chronic mismatch linked in research to worse sleep, mood, metabolic markers and performance. Aligning your hardest work and your sleep window with your natural timing, where life allows, is one of the highest-leverage, zero-cost biohacks.',
-  },
-  {
-    q: 'Is this the same as the Lion/Bear/Wolf/Dolphin test?',
-    a: 'Similar idea. The popular animal framework is one author\'s four-type model; this quiz uses the three classic, research-validated categories (morning / intermediate / evening) from the Morningness–Eveningness Questionnaire, with the animal names noted just for familiarity.',
+    authors: 'Wittmann M, Dinich J, Merrow M, Roenneberg T',
+    year: 2006,
+    title: 'Social jetlag: misalignment of biological and social time',
+    journal: 'Chronobiology International, 23(1–2):497–509',
+    contributes: '',
+    url: 'https://doi.org/10.1080/07420520500545979',
   },
 ]

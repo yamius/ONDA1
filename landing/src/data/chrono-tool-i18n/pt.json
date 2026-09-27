@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Teste de cronotipo — matutino ou vespertino? | ONDA Life",
+    "description": "Teste de cronotipo grátis com 6 perguntas (Horne–Östberg): descubra se você é matutino, intermediário ou vespertino e seus melhores horários.",
+    "appName": "Teste de cronotipo",
+    "appDescription": "Teste de cronotipo grátis com 6 perguntas, inspirado no Questionário de Matutinidade–Vespertinidade de Horne–Östberg, com um plano de horários diário para cada tipo."
+  },
+  "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Teste de cronotipo" },
+  "h1": "Teste de cronotipo",
+  "capsule": "Seu cronotipo é o horário natural do seu relógio biológico — quando você prefere dormir, acordar e se sente mais afiado. Responda a seis perguntas rápidas, baseadas no clássico questionário de Horne–Östberg, para saber se você é do tipo matutino, intermediário ou vespertino, e receba um plano diário de quando focar, treinar, parar a cafeína e ir para a cama.",
+  "imageAlt": "Teste de cronotipo — matutino ou vespertino, com plano de horários diário, ferramenta gratuita da ONDA Life",
+  "questions": [
+    { "q": "Se você fosse totalmente livre para planejar o seu dia, a que horas acordaria?", "options": ["Antes das 6:30", "6:30 – 7:45", "7:45 – 9:30", "9:30 – 11:00", "Depois das 11:00"] },
+    { "q": "E a que horas iria dormir se fosse totalmente livre?", "options": ["Antes das 21:00", "21:00 – 22:15", "22:15 – 00:30", "00:30 – 01:45", "Depois da 01:45"] },
+    { "q": "Quão alerta você se sente na primeira meia hora depois de acordar?", "options": ["Muito alerta", "Razoavelmente alerta", "Razoavelmente sonolento", "Muito sonolento"] },
+    { "q": "Quando você se sente no seu melhor mentalmente?", "options": ["Bem cedo de manhã", "No fim da manhã", "À tarde", "À noite ou de madrugada"] },
+    { "q": "Se tivesse que fazer um exercício pesado, quando preferiria?", "options": ["De manhã", "Ao meio-dia ou à tarde", "À noite"] },
+    { "q": "Na sua própria percepção, você é uma pessoa matutina ou vespertina?", "options": ["Definitivamente matutina", "Mais matutina que vespertina", "Mais vespertina que matutina", "Definitivamente vespertina"] }
+  ],
+  "ui": {
+    "progress": "{{a}} de {{n}} respondidas",
+    "resultTitle": "Seu cronotipo",
+    "planTitle": "Seu plano de horários diário",
+    "retake": "Refazer o teste"
+  },
+  "profiles": {
+    "morning": {
+      "name": "Tipo matutino",
+      "tagline": "Acorda cedo, rende cedo, perde o gás à noite.",
+      "description": "Seu relógio biológico é adiantado: você acorda com facilidade, fica mais alerta na primeira metade do dia e desacelera bem antes da meia-noite. Coloque o trabalho mental mais pesado de manhã, quando você está no seu melhor. Noites sociais longas custam mais para você do que para um vespertino, então proteja um horário regular de dormir cedo.",
+      "protocol": [
+        { "label": "Despertar natural", "value": "5:30 – 6:30" },
+        { "label": "Janela de foco profundo", "value": "7:00 – 11:00" },
+        { "label": "Melhor horário para treinar", "value": "Manhã ou início da tarde" },
+        { "label": "Última cafeína", "value": "Até cerca de 13:00" },
+        { "label": "Horário ideal para dormir", "value": "21:30 – 22:30" }
+      ]
+    },
+    "intermediate": {
+      "name": "Tipo intermediário",
+      "tagline": "No ritmo do sol — o padrão mais comum.",
+      "description": "Você fica no meio do espectro, mais ou menos em sintonia com o dia solar — onde cai a maioria das pessoas. Sem uma tendência extrema para nenhum lado, a regularidade é a sua vantagem: um horário fixo para acordar e luz natural de manhã mantêm seu ritmo estável e garantem um pico confiável no fim da manhã.",
+      "protocol": [
+        { "label": "Despertar natural", "value": "6:30 – 7:30" },
+        { "label": "Janela de foco profundo", "value": "9:00 – 12:00" },
+        { "label": "Melhor horário para treinar", "value": "Meio-dia ou início da noite" },
+        { "label": "Última cafeína", "value": "Até cerca de 14:00" },
+        { "label": "Horário ideal para dormir", "value": "22:30 – 23:30" }
+      ]
+    },
+    "evening": {
+      "name": "Tipo vespertino",
+      "tagline": "Manhãs lentas, noites fortes.",
+      "description": "Seu relógio é atrasado: as manhãs são realmente difíceis — isso é biologia, não preguiça — e seu estado de alerta e humor tendem a atingir o pico à tarde e à noite. O principal risco é o jet lag social: horários que começam cedo deixam você com sono em falta durante a semana. Mantenha um horário de acordar mais tardio e regular quando possível, e use luz forte de manhã para adiantar seu relógio se precisar.",
+      "protocol": [
+        { "label": "Despertar natural", "value": "8:00 – 10:00" },
+        { "label": "Janela de foco profundo", "value": "13:00 – 19:00" },
+        { "label": "Melhor horário para treinar", "value": "Fim da tarde ou à noite" },
+        { "label": "Última cafeína", "value": "Até cerca de 15:00" },
+        { "label": "Horário ideal para dormir", "value": "00:00 – 01:30" }
+      ]
+    }
+  },
+  "disclaimer": "Uma autoavaliação curta inspirada no Questionário de Matutinidade–Vespertinidade de Horne–Östberg, não o questionário validado completo. O cronotipo muda com a idade e pode ser ajustado com luz e horários de sono. Conteúdo educativo, não é aconselhamento médico.",
+  "sections": [
+    {
+      "h2": "O que é cronotipo?",
+      "body": "Seu cronotipo é a preferência natural do seu corpo por quando dormir, acordar e estar mais alerta. Ele vem do seu relógio circadiano interno e é em parte genético. Vai de tipos fortemente matutinos a fortemente vespertinos, com a maioria das pessoas no meio. Em grandes estudos populacionais, o horário natural de sono nos dias livres difere em várias horas entre os tipos precoces e tardios (Roenneberg 2007). Conhecer seu tipo ajuda a organizar trabalho, treino, cafeína e sono. Veja também: [qual é o meu cronotipo](/articles/what-is-my-chronotype)."
+    },
+    {
+      "h2": "Cotovia ou coruja: matutino ou vespertino, qual a diferença?",
+      "body": "Os matutinos (cotovias) acordam com facilidade, ficam afiados cedo e se cansam cedo à noite. Os vespertinos (corujas) acham as manhãs difíceis, vão esquentando ao longo do dia e se sentem melhor no fim da tarde e à noite. Nenhum é melhor — mas a rotina moderna favorece os matutinos. Quando uma coruja precisa acordar cedo para trabalhar ou estudar, a diferença entre o relógio biológico e o despertador gera o \"jet lag social\", associado a mais tabagismo, consumo de álcool e cafeína e pior bem-estar (Wittmann 2006). Leia mais: [jet lag social](/articles/social-jet-lag-irregular-sleep)."
+    },
+    {
+      "h2": "Dá para mudar o cronotipo?",
+      "body": "Em parte. Sua tendência genética permanece, mas você pode deslocar seus horários em cerca de 1–2 horas. Luz forte logo depois de acordar adianta o relógio; noites com pouca luz e menos tela evitam que ele atrase. Um horário fixo para acordar — inclusive nos fins de semana — e refeições em horários regulares ajudam a manter o novo ritmo. Leva uma ou duas semanas de constância. Planeje sua janela de sono com a [Calculadora de sono: que horas devo dormir?](/tools/sleep-cycle)."
+    },
+    {
+      "h2": "O cronotipo muda com a idade?",
+      "body": "Sim. Crianças costumam ser matutinas, adolescentes ficam bem mais tardios — com pico por volta dos 20 anos — e as pessoas voltam a ficar mais matutinas ao longo da vida adulta e na velhice (Roenneberg 2007). Por isso a escola que começa cedo é especialmente difícil para adolescentes, e seu resultado pode mudar com os anos."
+    }
+  ],
+  "faqTitle": "Cronotipo — perguntas frequentes",
+  "faq": [
+    { "q": "O que é cronotipo?", "a": "O horário natural do seu relógio biológico — quando você prefere dormir, acordar e se sente mais afiado. É em parte genético e vai do tipo matutino ao vespertino, com a maioria das pessoas no meio." },
+    { "q": "Como saber se sou matutino ou vespertino?", "a": "Faça este teste de 6 perguntas, baseado no questionário de Horne–Östberg. As pistas mais fortes são a que horas você acordaria e dormiria num dia livre e quando se sente mentalmente mais afiado." },
+    { "q": "Posso mudar meu cronotipo?", "a": "Em parte: luz de manhã, noites com pouca luz e um horário fixo para acordar podem deslocar seus horários em cerca de 1–2 horas, mas sua tendência genética permanece." },
+    { "q": "É o mesmo que os tipos Leão, Urso, Lobo e Golfinho?", "a": "Ideia parecida. Os tipos animais vêm de um modelo de quatro tipos criado por um autor; este teste usa as três categorias baseadas em pesquisa (matutino, intermediário, vespertino) do questionário de Horne–Östberg." },
+    { "q": "O que é jet lag social?", "a": "O descompasso entre seu relógio biológico e sua agenda social, visto quando você dorme em horários muito diferentes nos dias de trabalho e nos dias livres. É mais comum nos vespertinos e está associado a pior sono e humor." },
+    { "q": "Quando um vespertino deve tomar o último café?", "a": "Cerca de 8–9 horas antes do seu horário habitual de dormir — para quem dorme por volta da meia-noite, até cerca de 15:00. Confira na calculadora de cafeína." }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "As seis perguntas são uma versão condensada do Questionário de Matutinidade–Vespertinidade de Horne–Östberg (1976), a medida de cronotipo mais usada; as respostas são pontuadas e agrupadas em tipos matutino, intermediário e vespertino. É uma autoavaliação rápida, não o questionário validado completo. As tendências de cronotipo por idade seguem Roenneberg 2007; o jet lag social segue Wittmann 2006. Os planos de horários diários são guias práticos baseados nesses tipos, não prescrições pessoais. Conteúdo educativo, não é aconselhamento médico.",
+  "sourcesContributes": [
+    "O clássico questionário de autoavaliação de matutinidade–vespertinidade, base destas perguntas.",
+    "Grandes dados populacionais sobre cronotipo e como ele muda com a idade — mais tardio na adolescência, mais precoce de novo na vida adulta.",
+    "Definiu o jet lag social — o descompasso entre o tempo biológico e o social — e o associou a maior uso de estimulantes e pior bem-estar."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "sleep": "Calculadora de sono",
+    "caffeine": "Calculadora de cafeína",
+    "article": "Qual é o meu cronotipo",
+    "jetlag": "Planejador de luz para jet lag"
+  }
+}

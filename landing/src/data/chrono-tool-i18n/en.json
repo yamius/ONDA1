@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Chronotype Test — Morning or Evening Person? | ONDA Life",
+    "description": "Free 6-question chronotype test based on the Horne–Östberg questionnaire: find out if you're a morning, intermediate or evening type, with your best times to work, train and sleep.",
+    "appName": "Chronotype Test",
+    "appDescription": "Free 6-question chronotype quiz inspired by the Horne–Östberg Morningness–Eveningness Questionnaire, with a daily timing plan for each type."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Chronotype Test" },
+  "h1": "Chronotype Test: Are You a Morning or Evening Person?",
+  "capsule": "Your chronotype is your body clock's natural timing — when you prefer to sleep, wake and feel sharpest. Answer six quick questions, based on the classic Horne–Östberg questionnaire, to see whether you're a morning, intermediate or evening type, and get a daily plan for when to focus, train, stop caffeine and go to bed.",
+  "imageAlt": "Chronotype test — morning or evening person, with a daily timing plan, free tool from ONDA Life",
+  "questions": [
+    { "q": "If you were entirely free to plan your day, what time would you get up?", "options": ["Before 6:30", "6:30 – 7:45", "7:45 – 9:30", "9:30 – 11:00", "After 11:00"] },
+    { "q": "And what time would you go to bed if you were entirely free?", "options": ["Before 21:00", "21:00 – 22:15", "22:15 – 00:30", "00:30 – 01:45", "After 01:45"] },
+    { "q": "How alert do you feel in the first half hour after waking up?", "options": ["Very alert", "Fairly alert", "Fairly groggy", "Very groggy"] },
+    { "q": "When do you feel at your mental best?", "options": ["Early morning", "Late morning", "Afternoon", "Evening or night"] },
+    { "q": "If you had to do hard exercise, when would you prefer it?", "options": ["Morning", "Midday or afternoon", "Evening"] },
+    { "q": "In your own sense of it, are you a morning or an evening person?", "options": ["Definitely morning", "More morning than evening", "More evening than morning", "Definitely evening"] }
+  ],
+  "ui": {
+    "progress": "{{a}} of {{n}} answered",
+    "resultTitle": "Your chronotype",
+    "planTitle": "Your daily timing plan",
+    "retake": "Retake the test"
+  },
+  "profiles": {
+    "morning": {
+      "name": "Morning type",
+      "tagline": "Up early, sharp early, fading by evening.",
+      "description": "Your body clock runs early: you wake easily, feel most alert in the first half of the day and wind down well before midnight. Put your hardest thinking in the morning, when you're at your best. Late social evenings cost you more than they cost an evening type, so protect a regular early bedtime.",
+      "protocol": [
+        { "label": "Natural wake-up", "value": "5:30 – 6:30" },
+        { "label": "Deep-focus window", "value": "7:00 – 11:00" },
+        { "label": "Best training time", "value": "Morning or early afternoon" },
+        { "label": "Last caffeine", "value": "By about 13:00" },
+        { "label": "Ideal bedtime", "value": "21:30 – 22:30" }
+      ]
+    },
+    "intermediate": {
+      "name": "Intermediate type",
+      "tagline": "In step with the sun — the most common pattern.",
+      "description": "You sit in the middle of the spectrum, roughly in step with the solar day — where most people land. Without an extreme lean either way, consistency is your advantage: a steady wake-up time and morning daylight keep your rhythm stable and give you a reliable late-morning peak.",
+      "protocol": [
+        { "label": "Natural wake-up", "value": "6:30 – 7:30" },
+        { "label": "Deep-focus window", "value": "9:00 – 12:00" },
+        { "label": "Best training time", "value": "Midday or early evening" },
+        { "label": "Last caffeine", "value": "By about 14:00" },
+        { "label": "Ideal bedtime", "value": "22:30 – 23:30" }
+      ]
+    },
+    "evening": {
+      "name": "Evening type",
+      "tagline": "Slow mornings, strong evenings.",
+      "description": "Your clock runs late: mornings are genuinely hard — that's biology, not laziness — and your alertness and mood tend to peak in the afternoon and evening. The main risk is social jet lag: early schedules leave you short of sleep during the week. Keep a later, consistent wake-up time where you can, and use bright morning light to shift your clock earlier if you need to.",
+      "protocol": [
+        { "label": "Natural wake-up", "value": "8:00 – 10:00" },
+        { "label": "Deep-focus window", "value": "13:00 – 19:00" },
+        { "label": "Best training time", "value": "Late afternoon or evening" },
+        { "label": "Last caffeine", "value": "By about 15:00" },
+        { "label": "Ideal bedtime", "value": "00:00 – 01:30" }
+      ]
+    }
+  },
+  "disclaimer": "A short self-check inspired by the Horne–Östberg Morningness–Eveningness Questionnaire, not the full validated questionnaire. Chronotype changes with age and can be nudged with light and sleep timing. Educational, not medical advice.",
+  "sections": [
+    {
+      "h2": "What is a chronotype?",
+      "body": "Your chronotype is your body's natural preference for when to sleep, wake and be most alert. It comes from your internal circadian clock and is partly genetic. It sits on a spectrum from strong morning types to strong evening types, with most people in between. In large population studies, natural sleep timing on free days differs by several hours between early and late types (Roenneberg 2007). Knowing your type helps you time work, training, caffeine and sleep. See also: [what is my chronotype](/articles/what-is-my-chronotype)."
+    },
+    {
+      "h2": "Morning person vs night owl — what's the difference?",
+      "body": "Morning types wake easily, feel sharp early and get tired early in the evening. Evening types (night owls) find mornings hard, warm up through the day and feel best in the late afternoon and evening. Neither is better — but modern schedules favour early types. When a night owl has to get up early for work or school, the gap between their body clock and the alarm clock creates \"social jet lag\", which has been linked to more smoking, alcohol and caffeine use and poorer wellbeing (Wittmann 2006). Read more: [social jet lag](/articles/social-jet-lag-irregular-sleep)."
+    },
+    {
+      "h2": "Can you change your chronotype?",
+      "body": "Partly. Your genetic lean stays, but you can shift your daily timing by about 1–2 hours. Bright light soon after waking moves the clock earlier; dim evenings and less screen light at night stop it drifting later. A fixed wake-up time — including weekends — and regular meal times help hold the new rhythm. It takes a week or two of consistency. Plan your sleep window with the [sleep calculator](/tools/sleep-cycle)."
+    },
+    {
+      "h2": "Does chronotype change with age?",
+      "body": "Yes. Children are usually early types, teenagers shift markedly later — peaking around age 20 — and people become earlier again through adulthood and older age (Roenneberg 2007). That's why early school start times are especially hard for teenagers, and why your result may change over the years."
+    }
+  ],
+  "faqTitle": "Chronotype — common questions",
+  "faq": [
+    { "q": "What is a chronotype?", "a": "Your body clock's natural timing — when you prefer to sleep, wake and feel sharpest. It's partly genetic and ranges from morning types to evening types, with most people in the middle." },
+    { "q": "How do I know if I'm a morning or evening person?", "a": "Take this 6-question test, based on the Horne–Östberg questionnaire. The strongest clues are when you'd wake and sleep on a free day and when you feel mentally sharpest." },
+    { "q": "Can I change my chronotype?", "a": "Partly: morning light, dim evenings and a fixed wake-up time can shift your timing by about 1–2 hours, but your genetic lean stays." },
+    { "q": "Is this the same as the Lion, Bear, Wolf and Dolphin types?", "a": "Similar idea. The animal types come from one author's four-type model; this test uses the three research-based categories (morning, intermediate, evening) from the Horne–Östberg questionnaire." },
+    { "q": "What is social jet lag?", "a": "The mismatch between your body clock and your social schedule, seen as sleeping at very different times on workdays and free days. It's most common in evening types and linked to poorer sleep and mood." },
+    { "q": "When should an evening type drink the last coffee?", "a": "About 8–9 hours before your usual bedtime — for a bedtime around midnight, that's by about 15:00. Check it with the caffeine calculator." }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "The six questions are condensed from the Horne–Östberg Morningness–Eveningness Questionnaire (1976), the most widely used chronotype measure; answers are scored and grouped into morning, intermediate and evening types. It's a quick self-check, not the full validated questionnaire. Age trends in chronotype follow Roenneberg 2007; social jet lag follows Wittmann 2006. The daily timing plans are practical guides based on these types, not personal prescriptions. Educational, not medical advice.",
+  "sourcesContributes": [
+    "The classic self-assessment questionnaire for morningness–eveningness, the basis of these questions.",
+    "Large population data on chronotype and how it shifts with age — later in adolescence, earlier again in adulthood.",
+    "Defined social jet lag — the mismatch between biological and social time — and linked it to more stimulant use and poorer wellbeing."
+  ],
+  "related": {
+    "label": "Related",
+    "sleep": "Sleep calculator",
+    "caffeine": "Caffeine calculator",
+    "article": "What is my chronotype",
+    "jetlag": "Jet lag light-timing planner"
+  }
+}

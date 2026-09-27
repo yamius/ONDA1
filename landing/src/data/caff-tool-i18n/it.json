@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Calcolatore di caffeina — quando smettere | ONDA Life",
+    "description": "Calcolatore di caffeina gratuito: scegli bevanda e ora di dormire, scopri fino a che ora bere caffè e quanto dura l'effetto del caffè nel corpo.",
+    "appName": "Calcolatore di caffeina",
+    "appDescription": "Calcolatore gratuito che stima l'ora limite per assumere caffeina prima di dormire in base a dose, ora di coricarsi ed emivita della caffeina, con curva di eliminazione."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Strumenti",
+    "current": "Calcolatore di caffeina"
+  },
+  "h1": "Calcolatore di caffeina",
+  "capsule": "La caffeina ha un'emivita media di circa 5 ore, quindi metà di un caffè è ancora nel corpo 5–6 ore dopo. Una revisione di 24 studi (Gardiner 2023) ha rilevato che un caffè normale andrebbe bevuto almeno 8,8 ore prima di dormire per non ridurre il sonno. Scegli la bevanda, l'ora in cui vai a letto e quanto velocemente smaltisci la caffeina per ottenere il tuo orario limite personale.",
+  "imageAlt": "Calcolatore di caffeina — quando smettere prima di dormire e curva dell'emivita della caffeina, strumento gratuito di ONDA Life",
+  "ui": {
+    "bedtime": "Ora in cui vai a letto",
+    "drink": "Bevanda",
+    "metabolism": "Quanto velocemente smaltisci la caffeina",
+    "fast": "Veloce (fumatore)",
+    "normal": "Nella media",
+    "slow": "Lento / sensibile",
+    "result": "Bevi l'ultimo entro le",
+    "below": "Con {{mg}} mg questa bevanda è già sotto la soglia di ~35 mg all'ora di dormire — l'orario non è critico.",
+    "gap": "Cioè circa {{h}} h prima di andare a letto. Se la bevi più tardi, quando provi a dormire nel corpo restano più di ~35 mg.",
+    "curve": "Caffeina residua dopo la bevanda",
+    "hShort": "h",
+    "invalid": "Inserisci un'ora valida.",
+    "tableTitle": "Caffeina nelle bevande più comuni",
+    "colDrink": "Bevanda",
+    "colServing": "Porzione",
+    "colCaffeine": "Caffeina"
+  },
+  "drinks": {
+    "espresso": {
+      "name": "Espresso (singolo)",
+      "note": "tazzina da ~30 ml"
+    },
+    "coffee": {
+      "name": "Caffè filtro (americano)",
+      "note": "240 ml"
+    },
+    "coffee-large": {
+      "name": "Caffè grande",
+      "note": "470 ml"
+    },
+    "cold-brew": {
+      "name": "Cold brew",
+      "note": "350 ml"
+    },
+    "energy": {
+      "name": "Energy drink",
+      "note": "lattina da 250 ml"
+    },
+    "preworkout": {
+      "name": "Pre-workout",
+      "note": "misurino tipico"
+    },
+    "matcha": {
+      "name": "Matcha",
+      "note": "1 cucchiaino / 2 g"
+    },
+    "black-tea": {
+      "name": "Tè nero",
+      "note": "240 ml"
+    },
+    "green-tea": {
+      "name": "Tè verde",
+      "note": "240 ml"
+    },
+    "cola": {
+      "name": "Cola",
+      "note": "lattina da 355 ml"
+    },
+    "dark-chocolate": {
+      "name": "Cioccolato fondente",
+      "note": "tavoletta da 40 g"
+    }
+  },
+  "disclaimer": "Stima a scopo educativo, non è un consiglio medico. L'emivita della caffeina varia molto: circa 4 ore nei fumatori, 8–10 ore o più in gravidanza o con la pillola anticoncezionale. I contenuti di caffeina sono medie tipiche — il valore reale dipende da marca, tostatura e dimensione della tazza.",
+  "sections": [
+    {
+      "h2": "Fino a che ora bere caffè prima di dormire?",
+      "body": "Per la maggior parte delle persone conviene smettere con la caffeina circa 8–9 ore prima di dormire. In una meta-analisi del 2023 su 24 studi (Gardiner), un caffè normale (circa 107 mg) andava bevuto almeno 8,8 ore prima di coricarsi per non ridurre il sonno totale, e un integratore pre-workout (circa 217 mg) almeno 13,2 ore prima. Quindi, se vai a letto alle 23:00, l'ultimo caffè è meglio prenderlo entro le 14:00 circa. Dosi più alte, metabolismo più lento e sensibilità alla caffeina anticipano l'orario limite. Approfondisci: [caffeina, sonno ed emivita](/articles/caffeine-half-life-sleep-pressure)."
+    },
+    {
+      "h2": "Quanto dura l'effetto del caffè nel corpo?",
+      "body": "La caffeina raggiunge il picco nel sangue circa 30–60 minuti dopo averla bevuta, poi si dimezza più o meno ogni 5 ore (emivita media; 3–7 ore nella maggior parte degli adulti sani). Dopo un caffè da 95 mg ne restano circa 48 mg dopo 5,5 ore e 24 mg dopo 11 ore, e serve circa un giorno perché venga eliminata quasi del tutto. Ecco perché un caffè del pomeriggio può influire sul sonno anche quando non ne senti più l'effetto."
+    },
+    {
+      "h2": "Perché la caffeina agisce in modo diverso da persona a persona",
+      "body": "La caffeina viene scomposta soprattutto dall'enzima epatico CYP1A2, la cui attività varia molto tra le persone (Nehlig 2018). Il fumo la accelera — emivita intorno alle 4 ore. Gravidanza e pillola anticoncezionale la rallentano fino a 8–10 ore o più, così come alcuni farmaci e malattie del fegato. Anche la genetica determina quanto il cervello è sensibile alla caffeina. Se il caffè ti tiene sveglio, scegli l'opzione \"lento\" e anticipa l'orario limite."
+    },
+    {
+      "h2": "La caffeina peggiora il sonno anche se mi addormento bene?",
+      "body": "Spesso sì. In uno studio controllato (Drake 2013), 400 mg di caffeina assunti persino 6 ore prima di dormire hanno ridotto il sonno totale di oltre un'ora, misurato in modo oggettivo — anche se spesso i partecipanti non se ne accorgevano. Nell'insieme degli studi la caffeina ha ridotto in media il sonno totale di circa 45 minuti e l'efficienza del sonno del 7%, diminuendo anche il sonno profondo (Gardiner 2023). Trova la tua finestra di sonno con il [Calcolatore del sonno](/tools/sleep-cycle)."
+    }
+  ],
+  "faqTitle": "Caffeina — domande frequenti",
+  "faq": [
+    {
+      "q": "Fino a che ora si può bere caffè prima di dormire?",
+      "a": "Circa 8–9 ore prima di coricarsi per un caffè normale. Una meta-analisi del 2023 ha rilevato che il caffè (~107 mg) andrebbe bevuto almeno 8,8 ore prima di dormire e un pre-workout (~217 mg) almeno 13,2 ore prima."
+    },
+    {
+      "q": "Quanto dura l'effetto del caffè nell'organismo?",
+      "a": "L'emivita media è di circa 5 ore: metà della dose se ne va dopo ~5 ore e tre quarti dopo ~10–11 ore. Serve circa un giorno perché venga eliminata quasi del tutto."
+    },
+    {
+      "q": "Posso bere un caffè alle 16:00?",
+      "a": "Se vai a letto alle 23:00, le 16:00 sono 7 ore prima — per molte persone un caffè normale può ancora ridurre il sonno. Se dormi bene e smaltisci la caffeina in fretta, una tazza piccola può andare bene; altrimenti nel pomeriggio passa al decaffeinato."
+    },
+    {
+      "q": "Quanta caffeina c'è in una tazza di caffè?",
+      "a": "Circa 95 mg in 240 ml di caffè filtro, 63 mg in un espresso singolo, oltre 150 mg in un caffè grande e 200 mg o più nel cold brew. Il tè ne contiene circa 30–50 mg a tazza."
+    },
+    {
+      "q": "Perché la caffeina mi fa più effetto che ad altri?",
+      "a": "Differenze nell'enzima epatico CYP1A2, genetica, gravidanza, pillola anticoncezionale, alcuni farmaci e il fumo cambiano la velocità con cui elimini la caffeina — da circa 4 a oltre 10 ore di emivita."
+    },
+    {
+      "q": "La caffeina influisce sul sonno se mi addormento facilmente?",
+      "a": "Sì, spesso. La caffeina può accorciare il sonno e ridurre il sonno profondo anche quando l'addormentamento sembra normale (Drake 2013; Gardiner 2023)."
+    }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "Il modello usa un'eliminazione di primo ordine: caffeina residua = dose × 0,5^(ore ÷ emivita), con un'emivita tipica di 5,5 ore (4 ore per metabolismo veloce, 8,5 ore per metabolismo lento). L'orario limite è il momento dopo il quale all'ora di dormire resterebbero meno di circa 35 mg — più o meno un terzo di tazza di caffè. Abbiamo calibrato questa soglia sulla meta-analisi di Gardiner 2023: con essa, un caffè da 107 mg richiede circa 8,8 ore prima di dormire, come raccomanda lo studio. Le persone molto sensibili dovrebbero puntare più in basso. I contenuti di caffeina sono medie tipiche. Stima a scopo educativo, non è un consiglio medico.",
+  "sourcesContributes": [
+    "Meta-analisi di 24 studi: la caffeina ha ridotto il sonno totale di ~45 min e l'efficienza del sonno del 7%; il caffè (~107 mg) andrebbe bevuto ≥8,8 h e un pre-workout (~217 mg) ≥13,2 h prima di dormire.",
+    "400 mg di caffeina assunti 0, 3 o 6 ore prima di dormire hanno sempre disturbato il sonno; anche a 6 ore hanno ridotto di oltre un'ora il sonno misurato oggettivamente.",
+    "Revisione sul perché il metabolismo della caffeina varia tra le persone — CYP1A2, genetica, fumo, gravidanza, contraccettivi — e sugli intervalli tipici di emivita."
+  ],
+  "related": {
+    "label": "Correlati",
+    "article": "Caffeina, sonno ed emivita",
+    "sleep": "Calcolatore del sonno",
+    "chronotype": "Test del cronotipo",
+    "hrv": "Calcolatore HRV per età"
+  }
+}

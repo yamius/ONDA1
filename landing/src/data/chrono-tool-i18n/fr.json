@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Test de chronotype — du matin ou du soir ? | ONDA Life",
+    "description": "Test de chronotype gratuit en 6 questions (Horne–Östberg) : êtes-vous du matin, intermédiaire ou du soir ? Vos meilleures heures pour travailler et dormir.",
+    "appName": "Test de chronotype",
+    "appDescription": "Quiz de chronotype gratuit en 6 questions, inspiré du questionnaire de typologie circadienne de Horne–Östberg, avec un planning quotidien pour chaque profil."
+  },
+  "breadcrumb": { "home": "Accueil", "tools": "Outils", "current": "Test de chronotype" },
+  "h1": "Test de chronotype",
+  "capsule": "Votre chronotype, c'est le rythme naturel de votre horloge biologique : quand vous préférez dormir, vous lever et quand vous êtes le plus vif. Répondez à six questions rapides, tirées du questionnaire classique de Horne–Östberg, pour savoir si vous êtes du matin, intermédiaire ou du soir, et obtenez un planning quotidien : quand vous concentrer, faire du sport, arrêter la caféine et aller au lit.",
+  "imageAlt": "Test de chronotype — du matin ou du soir, avec planning quotidien, outil gratuit d'ONDA Life",
+  "questions": [
+    { "q": "Si vous étiez entièrement libre d'organiser votre journée, à quelle heure vous lèveriez-vous ?", "options": ["Avant 6:30", "6:30 – 7:45", "7:45 – 9:30", "9:30 – 11:00", "Après 11:00"] },
+    { "q": "Et à quelle heure vous coucheriez-vous si vous étiez entièrement libre ?", "options": ["Avant 21:00", "21:00 – 22:15", "22:15 – 00:30", "00:30 – 01:45", "Après 01:45"] },
+    { "q": "Comment vous sentez-vous dans la première demi-heure après le réveil ?", "options": ["Très alerte", "Plutôt alerte", "Plutôt dans le brouillard", "Très dans le brouillard"] },
+    { "q": "À quel moment êtes-vous au meilleur de vos capacités mentales ?", "options": ["Tôt le matin", "En fin de matinée", "L'après-midi", "Le soir ou la nuit"] },
+    { "q": "Si vous deviez faire un effort physique intense, quand le préféreriez-vous ?", "options": ["Le matin", "À midi ou l'après-midi", "Le soir"] },
+    { "q": "Selon vous, êtes-vous plutôt du matin ou du soir ?", "options": ["Nettement du matin", "Plus du matin que du soir", "Plus du soir que du matin", "Nettement du soir"] }
+  ],
+  "ui": {
+    "progress": "{{a}} sur {{n}} répondues",
+    "resultTitle": "Votre chronotype",
+    "planTitle": "Votre planning quotidien",
+    "retake": "Refaire le test"
+  },
+  "profiles": {
+    "morning": {
+      "name": "Type du matin (alouette)",
+      "tagline": "Levé tôt, vif tôt, en baisse le soir.",
+      "description": "Votre horloge biologique est en avance : vous vous réveillez facilement, êtes le plus alerte en première moitié de journée et décrochez bien avant minuit. Placez vos tâches les plus exigeantes le matin, quand vous êtes au top. Les soirées tardives vous coûtent plus cher qu'à un type du soir : protégez une heure de coucher régulière et précoce.",
+      "protocol": [
+        { "label": "Réveil naturel", "value": "5:30 – 6:30" },
+        { "label": "Créneau de concentration", "value": "7:00 – 11:00" },
+        { "label": "Meilleur moment pour le sport", "value": "Le matin ou en début d'après-midi" },
+        { "label": "Dernière caféine", "value": "Vers 13:00 au plus tard" },
+        { "label": "Heure de coucher idéale", "value": "21:30 – 22:30" }
+      ]
+    },
+    "intermediate": {
+      "name": "Type intermédiaire",
+      "tagline": "Calé sur le soleil — le profil le plus courant.",
+      "description": "Vous êtes au milieu du spectre, à peu près calé sur la journée solaire — comme la plupart des gens. Sans penchant marqué d'un côté ou de l'autre, la régularité est votre atout : une heure de lever stable et la lumière du jour le matin gardent votre rythme stable et vous offrent un pic fiable en fin de matinée.",
+      "protocol": [
+        { "label": "Réveil naturel", "value": "6:30 – 7:30" },
+        { "label": "Créneau de concentration", "value": "9:00 – 12:00" },
+        { "label": "Meilleur moment pour le sport", "value": "À midi ou en début de soirée" },
+        { "label": "Dernière caféine", "value": "Vers 14:00 au plus tard" },
+        { "label": "Heure de coucher idéale", "value": "22:30 – 23:30" }
+      ]
+    },
+    "evening": {
+      "name": "Type du soir (hibou)",
+      "tagline": "Matins lents, soirées en forme.",
+      "description": "Votre horloge est en retard : les matins sont vraiment difficiles — c'est de la biologie, pas de la paresse — et votre vigilance comme votre humeur culminent plutôt l'après-midi et le soir. Le principal risque est le jet lag social : les horaires matinaux vous privent de sommeil en semaine. Gardez si possible une heure de lever plus tardive mais régulière, et utilisez une lumière vive le matin pour avancer votre horloge si besoin.",
+      "protocol": [
+        { "label": "Réveil naturel", "value": "8:00 – 10:00" },
+        { "label": "Créneau de concentration", "value": "13:00 – 19:00" },
+        { "label": "Meilleur moment pour le sport", "value": "En fin d'après-midi ou le soir" },
+        { "label": "Dernière caféine", "value": "Vers 15:00 au plus tard" },
+        { "label": "Heure de coucher idéale", "value": "00:00 – 01:30" }
+      ]
+    }
+  },
+  "disclaimer": "Un court auto-test inspiré du questionnaire de typologie circadienne de Horne–Östberg, et non le questionnaire validé complet. Le chronotype évolue avec l'âge et peut être ajusté par la lumière et les horaires de sommeil. Contenu éducatif, pas un avis médical.",
+  "sections": [
+    {
+      "h2": "Qu'est-ce qu'un chronotype ?",
+      "body": "Votre chronotype est la préférence naturelle de votre corps pour dormir, vous réveiller et être le plus alerte à certaines heures. Il découle de votre horloge circadienne interne et est en partie génétique. Il s'étend sur un spectre, des types très matinaux aux types très vespéraux, la plupart des gens se situant entre les deux. Dans les grandes études de population, l'horaire de sommeil naturel les jours libres diffère de plusieurs heures entre types précoces et tardifs (Roenneberg 2007). Connaître votre type aide à organiser travail, sport, caféine et sommeil. Voir aussi : [quel est mon chronotype](/articles/what-is-my-chronotype)."
+    },
+    {
+      "h2": "Du matin ou du soir, alouette ou hibou : quelle différence ?",
+      "body": "Les types du matin (alouettes) se réveillent facilement, sont vifs tôt et fatiguent tôt le soir. Les types du soir (hiboux) ont du mal le matin, montent en régime au fil de la journée et se sentent au mieux en fin d'après-midi et le soir. Aucun n'est meilleur — mais les horaires modernes favorisent les lève-tôt. Quand un hibou doit se lever tôt pour le travail ou l'école, l'écart entre son horloge biologique et son réveil crée un « jet lag social », associé à davantage de tabac, d'alcool et de caféine et à un moindre bien-être (Wittmann 2006). En savoir plus : [le jet lag social](/articles/social-jet-lag-irregular-sleep)."
+    },
+    {
+      "h2": "Peut-on changer de chronotype ?",
+      "body": "En partie. Votre tendance génétique reste, mais vous pouvez décaler vos horaires d'environ 1–2 heures. Une lumière vive peu après le réveil avance l'horloge ; des soirées tamisées et moins d'écrans la nuit l'empêchent de dériver plus tard. Une heure de lever fixe — week-ends compris — et des repas réguliers aident à tenir le nouveau rythme. Comptez une à deux semaines de régularité. Planifiez votre fenêtre de sommeil avec le [calculateur de sommeil : à quelle heure se coucher ?](/tools/sleep-cycle)."
+    },
+    {
+      "h2": "Le chronotype change-t-il avec l'âge ?",
+      "body": "Oui. Les enfants sont généralement du matin, les adolescents se décalent nettement plus tard — avec un pic vers 20 ans — puis on redevient plus matinal à l'âge adulte et en vieillissant (Roenneberg 2007). C'est pourquoi les cours tôt le matin sont particulièrement durs pour les adolescents, et pourquoi votre résultat peut évoluer au fil des années."
+    }
+  ],
+  "faqTitle": "Chronotype — questions fréquentes",
+  "faq": [
+    { "q": "Qu'est-ce qu'un chronotype ?", "a": "Le rythme naturel de votre horloge biologique : quand vous préférez dormir, vous lever et quand vous êtes le plus vif. Il est en partie génétique et va des types du matin aux types du soir, la plupart des gens étant au milieu." },
+    { "q": "Comment savoir si je suis du matin ou du soir ?", "a": "Faites ce test en 6 questions, basé sur le questionnaire de Horne–Östberg. Les meilleurs indices : l'heure à laquelle vous vous lèveriez et vous coucheriez un jour libre, et le moment où vous êtes le plus vif mentalement." },
+    { "q": "Puis-je changer de chronotype ?", "a": "En partie : la lumière du matin, des soirées tamisées et une heure de lever fixe peuvent décaler vos horaires d'environ 1–2 heures, mais votre tendance génétique reste." },
+    { "q": "Est-ce la même chose que les types Lion, Ours, Loup et Dauphin ?", "a": "L'idée est proche. Les types animaux viennent du modèle à quatre types d'un auteur ; ce test utilise les trois catégories issues de la recherche (matin, intermédiaire, soir) du questionnaire de Horne–Östberg." },
+    { "q": "Qu'est-ce que le jet lag social ?", "a": "Le décalage entre votre horloge biologique et vos horaires sociaux, visible quand vous dormez à des heures très différentes les jours travaillés et les jours libres. Il est plus fréquent chez les types du soir et associé à un sommeil et une humeur moins bons." },
+    { "q": "Quand un type du soir doit-il boire son dernier café ?", "a": "Environ 8–9 heures avant votre heure de coucher habituelle — pour un coucher vers minuit, vers 15:00 au plus tard. Vérifiez avec le calculateur de caféine." }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "Les six questions sont condensées à partir du questionnaire de typologie circadienne de Horne–Östberg (1976), la mesure du chronotype la plus utilisée ; les réponses sont notées et classées en types du matin, intermédiaire et du soir. C'est un auto-test rapide, pas le questionnaire validé complet. L'évolution du chronotype avec l'âge suit Roenneberg 2007 ; le jet lag social suit Wittmann 2006. Les plannings quotidiens sont des repères pratiques basés sur ces types, pas des prescriptions personnelles. Contenu éducatif, pas un avis médical.",
+  "sourcesContributes": [
+    "Le questionnaire d'auto-évaluation classique de la typologie matin–soir, à la base de ces questions.",
+    "De vastes données de population sur le chronotype et son évolution avec l'âge — plus tardif à l'adolescence, de nouveau plus précoce à l'âge adulte.",
+    "A défini le jet lag social — le décalage entre temps biologique et temps social — et l'a associé à une plus forte consommation de stimulants et à un moindre bien-être."
+  ],
+  "related": {
+    "label": "À voir aussi",
+    "sleep": "Calculateur de sommeil",
+    "caffeine": "Calculateur de caféine",
+    "article": "Quel est mon chronotype",
+    "jetlag": "Planificateur de lumière contre le jet lag"
+  }
+}

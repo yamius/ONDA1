@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Koffein-Rechner — bis wann Kaffee trinken? | ONDA Life",
+    "description": "Kostenloser Koffein-Rechner: Getränk und Schlafenszeit wählen, letzte Kaffee-Uhrzeit berechnen und sehen, wie lange Koffein im Körper wirkt.",
+    "appName": "Koffein-Rechner",
+    "appDescription": "Kostenloser Rechner, der aus Dosis, Schlafenszeit und Koffein-Halbwertszeit schätzt, bis wann du vor dem Schlafen Koffein zu dir nehmen kannst – mit Abbaukurve."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "tools": "Tools",
+    "current": "Koffein-Rechner"
+  },
+  "h1": "Koffein-Rechner: Bis wann sollte ich Kaffee trinken?",
+  "capsule": "Koffein hat eine durchschnittliche Halbwertszeit von etwa 5 Stunden – nach 5–6 Stunden ist also noch ein halber Kaffee in deinem Körper. Eine Auswertung von 24 Studien (Gardiner 2023) ergab: Ein normaler Kaffee sollte mindestens 8,8 Stunden vor dem Schlafengehen getrunken werden, damit er den Schlaf nicht verkürzt. Wähle dein Getränk, deine Schlafenszeit und wie schnell du Koffein abbaust – und erhalte deine persönliche Uhrzeit für den letzten Kaffee.",
+  "imageAlt": "Koffein-Rechner — letzte Kaffee-Uhrzeit vor dem Schlafen und Halbwertszeit-Kurve von Koffein, kostenloses Tool von ONDA Life",
+  "ui": {
+    "bedtime": "Deine Schlafenszeit",
+    "drink": "Getränk",
+    "metabolism": "Wie schnell du Koffein abbaust",
+    "fast": "Schnell (Raucher)",
+    "normal": "Durchschnittlich",
+    "slow": "Langsam / empfindlich",
+    "result": "Letzte Tasse bis",
+    "below": "Mit {{mg}} mg liegt dieses Getränk bereits unter der Schwelle von ~35 mg zur Schlafenszeit – der Zeitpunkt ist nicht entscheidend.",
+    "gap": "Das sind etwa {{h}} Std. vor deiner Schlafenszeit. Trinkst du später, sind beim Einschlafen noch mehr als ~35 mg in deinem Körper.",
+    "curve": "Verbleibendes Koffein nach deinem Getränk",
+    "hShort": "Std.",
+    "invalid": "Gib eine gültige Schlafenszeit ein.",
+    "tableTitle": "Koffein in gängigen Getränken",
+    "colDrink": "Getränk",
+    "colServing": "Portion",
+    "colCaffeine": "Koffein"
+  },
+  "drinks": {
+    "espresso": {
+      "name": "Espresso (einfach)",
+      "note": "~30 ml"
+    },
+    "coffee": {
+      "name": "Filterkaffee",
+      "note": "240 ml"
+    },
+    "coffee-large": {
+      "name": "Großer Kaffee",
+      "note": "470 ml"
+    },
+    "cold-brew": {
+      "name": "Cold Brew",
+      "note": "350 ml"
+    },
+    "energy": {
+      "name": "Energydrink",
+      "note": "250-ml-Dose"
+    },
+    "preworkout": {
+      "name": "Pre-Workout-Booster",
+      "note": "übliche Portion"
+    },
+    "matcha": {
+      "name": "Matcha",
+      "note": "1 TL / 2 g"
+    },
+    "black-tea": {
+      "name": "Schwarzer Tee",
+      "note": "240 ml"
+    },
+    "green-tea": {
+      "name": "Grüner Tee",
+      "note": "240 ml"
+    },
+    "cola": {
+      "name": "Cola",
+      "note": "355-ml-Dose"
+    },
+    "dark-chocolate": {
+      "name": "Zartbitterschokolade",
+      "note": "40-g-Riegel"
+    }
+  },
+  "disclaimer": "Orientierende Schätzung, keine medizinische Beratung. Die Halbwertszeit von Koffein schwankt stark: etwa 4 Stunden bei Rauchern, 8–10 Stunden oder mehr in der Schwangerschaft oder bei Einnahme der Pille. Die Koffeinmengen sind typische Durchschnittswerte – der tatsächliche Gehalt hängt von Marke, Röstung und Tassengröße ab.",
+  "sections": [
+    {
+      "h2": "Bis wann Kaffee trinken, um gut zu schlafen?",
+      "body": "Für die meisten Menschen gilt: etwa 8–9 Stunden vor dem Schlafengehen kein Koffein mehr. In einer Metaanalyse von 24 Studien aus dem Jahr 2023 (Gardiner) musste ein normaler Kaffee (etwa 107 mg) mindestens 8,8 Stunden vor dem Schlafengehen getrunken werden, um die Gesamtschlafdauer nicht zu verringern, ein Pre-Workout-Booster (etwa 217 mg) mindestens 13,2 Stunden vorher. Gehst du um 23:00 ins Bett, trinkst du den letzten Kaffee also am besten vor etwa 14:00. Höhere Dosen, ein langsamer Stoffwechsel und Koffeinempfindlichkeit verschieben die Grenze nach vorn. Mehr dazu: [Koffein, Schlaf und Halbwertszeit](/articles/caffeine-half-life-sleep-pressure)."
+    },
+    {
+      "h2": "Wie lange wirkt Koffein im Körper?",
+      "body": "Koffein erreicht etwa 30–60 Minuten nach dem Trinken seinen Höchstwert im Blut und halbiert sich dann ungefähr alle 5 Stunden (durchschnittliche Halbwertszeit; bei den meisten gesunden Erwachsenen 3–7 Stunden). Nach einem Kaffee mit 95 mg sind 5,5 Stunden später noch etwa 48 mg übrig, nach 11 Stunden 24 mg, und bis es fast vollständig abgebaut ist, dauert es rund einen Tag. Deshalb kann ein Kaffee am Nachmittag deinen Schlaf beeinflussen, auch wenn du ihn längst nicht mehr spürst."
+    },
+    {
+      "h2": "Warum Koffein bei jedem anders wirkt",
+      "body": "Koffein wird hauptsächlich vom Leberenzym CYP1A2 abgebaut, und dessen Aktivität unterscheidet sich stark von Mensch zu Mensch (Nehlig 2018). Rauchen beschleunigt den Abbau – Halbwertszeit etwa 4 Stunden. Schwangerschaft und die Pille verlangsamen ihn auf 8–10 Stunden oder mehr, ebenso manche Medikamente und Lebererkrankungen. Auch die Gene bestimmen, wie empfindlich dein Gehirn auf Koffein reagiert. Wenn dich Kaffee wach hält, wähle die Einstellung „langsam“ und verlege deine Grenze nach vorn."
+    },
+    {
+      "h2": "Schadet Koffein dem Schlaf, auch wenn ich gut einschlafe?",
+      "body": "Oft ja. In einer kontrollierten Studie (Drake 2013) verkürzten 400 mg Koffein selbst 6 Stunden vor dem Schlafengehen die objektiv gemessene Gesamtschlafdauer um mehr als eine Stunde – obwohl die Teilnehmenden das häufig selbst nicht bemerkten. Über alle Studien hinweg verringerte Koffein die Gesamtschlafdauer im Schnitt um etwa 45 Minuten, die Schlafeffizienz um 7 % und den Tiefschlaf (Gardiner 2023). Finde dein Schlaffenster mit dem [Schlafrechner: Wann soll ich schlafen gehen?](/tools/sleep-cycle)."
+    }
+  ],
+  "faqTitle": "Koffein — häufige Fragen",
+  "faq": [
+    {
+      "q": "Bis wann sollte ich vor dem Schlafen Kaffee trinken?",
+      "a": "Bei einem normalen Kaffee etwa 8–9 Stunden vor dem Schlafengehen. Laut einer Metaanalyse von 2023 sollte Kaffee (~107 mg) mindestens 8,8 Stunden vorher getrunken werden, ein Pre-Workout-Booster (~217 mg) mindestens 13,2 Stunden vorher."
+    },
+    {
+      "q": "Wie lange wirkt Koffein?",
+      "a": "Die durchschnittliche Halbwertszeit liegt bei etwa 5 Stunden: Nach ~5 Stunden ist die Hälfte einer Dosis abgebaut, nach ~10–11 Stunden drei Viertel. Bis es fast vollständig abgebaut ist, dauert es rund einen Tag."
+    },
+    {
+      "q": "Kann ich um 16 Uhr noch Kaffee trinken?",
+      "a": "Bei einer Schlafenszeit um 23:00 liegt 16:00 nur 7 Stunden davor – ein normaler Kaffee kann bei vielen Menschen den Schlaf noch verkürzen. Wenn du gut schläfst und Koffein schnell abbaust, ist eine kleine Tasse vielleicht okay; sonst steig am Nachmittag auf entkoffeinierten Kaffee um."
+    },
+    {
+      "q": "Wie viel Koffein ist in einer Tasse Kaffee?",
+      "a": "Etwa 95 mg in 240 ml Filterkaffee, 63 mg in einem einfachen Espresso, über 150 mg in einem großen Kaffee und 200 mg oder mehr in Cold Brew. Tee enthält etwa 30–50 mg pro Tasse."
+    },
+    {
+      "q": "Warum wirkt Koffein bei mir stärker als bei anderen?",
+      "a": "Unterschiede beim Leberenzym CYP1A2, Gene, Schwangerschaft, die Pille, manche Medikamente und Rauchen verändern, wie schnell du Koffein abbaust – die Halbwertszeit reicht von etwa 4 bis über 10 Stunden."
+    },
+    {
+      "q": "Beeinflusst Koffein den Schlaf, wenn ich leicht einschlafe?",
+      "a": "Ja, oft schon. Koffein kann den Schlaf verkürzen und den Tiefschlaf verringern, auch wenn sich das Einschlafen normal anfühlt (Drake 2013; Gardiner 2023)."
+    }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Das Modell nutzt eine Elimination erster Ordnung: verbleibendes Koffein = Dosis × 0,5^(Stunden ÷ Halbwertszeit), mit einer typischen Halbwertszeit von 5,5 Stunden (4 Stunden bei schnellem, 8,5 Stunden bei langsamem Abbau). Die Grenze ist der Zeitpunkt, ab dem zur Schlafenszeit weniger als etwa 35 mg – rund ein Drittel einer Tasse Kaffee – übrig wären. Wir haben diese Schwelle an der Metaanalyse von Gardiner 2023 kalibriert: Damit braucht ein Kaffee mit 107 mg etwa 8,8 Stunden Abstand zum Schlafengehen, wie die Studie empfiehlt. Sehr empfindliche Menschen sollten niedriger ansetzen. Die Koffeinmengen sind typische Durchschnittswerte. Orientierende Schätzung, keine medizinische Beratung.",
+  "sourcesContributes": [
+    "Metaanalyse von 24 Studien: Koffein verkürzte die Gesamtschlafdauer um ~45 Min. und senkte die Schlafeffizienz um 7 %; Kaffee (~107 mg) sollte ≥8,8 Std. und ein Pre-Workout-Booster (~217 mg) ≥13,2 Std. vor dem Schlafen getrunken werden.",
+    "400 mg Koffein 0, 3 oder 6 Stunden vor dem Schlafengehen störten allesamt den Schlaf; selbst nach 6 Stunden verkürzte es den objektiv gemessenen Schlaf um mehr als eine Stunde.",
+    "Übersichtsarbeit dazu, warum sich der Koffeinabbau zwischen Menschen unterscheidet – CYP1A2, Gene, Rauchen, Schwangerschaft, Verhütungsmittel – und zu typischen Halbwertszeiten."
+  ],
+  "related": {
+    "label": "Verwandt",
+    "article": "Koffein, Schlaf und Halbwertszeit",
+    "sleep": "Schlafrechner",
+    "chronotype": "Chronotyp-Test",
+    "hrv": "HRV-Rechner nach Alter"
+  }
+}

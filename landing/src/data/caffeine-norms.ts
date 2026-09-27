@@ -8,34 +8,37 @@
  *   - slower (≈8–9 h+): pregnancy, oral contraceptives, liver load, some meds
  * Sleep-disruption threshold: published work (Drake 2013) shows caffeine even
  * 6 h before bed measurably cuts sleep. We treat ~50 mg residual at bedtime
- * as the "unlikely to disrupt sleep for most people" line.
+ * as the "unlikely to disrupt sleep for most people" line (superseded: now 35 mg,
+ * calibrated to the Gardiner 2023 meta-analysis).
  *
  * Educational, not medical advice — individual sensitivity varies widely.
  */
 
+import type { ScienceSource } from './sources'
+
 export const DEFAULT_HALF_LIFE_H = 5.5
-export const SLEEP_THRESHOLD_MG = 50
+/** Calibrated to Gardiner 2023: 107 mg coffee → ≥8.8 h, 217.5 mg pre-workout → ≥13.2 h before bed. */
+export const SLEEP_THRESHOLD_MG = 35
 
 export interface CaffeineDrink {
   id: string
-  name: string
+  /** Display name and serving note come from the page's language file. */
   mg: number
-  note: string
 }
 
 /** Approximate caffeine content (mg) of common sources. */
 export const CAFFEINE_DRINKS: CaffeineDrink[] = [
-  { id: 'espresso', name: 'Espresso (single)', mg: 63, note: '~30 ml shot' },
-  { id: 'coffee', name: 'Brewed coffee', mg: 95, note: '240 ml / 8 oz' },
-  { id: 'coffee-large', name: 'Large coffee', mg: 155, note: '470 ml / 16 oz' },
-  { id: 'cold-brew', name: 'Cold brew', mg: 205, note: '350 ml / 12 oz' },
-  { id: 'energy', name: 'Energy drink', mg: 80, note: '250 ml can' },
-  { id: 'preworkout', name: 'Pre-workout', mg: 200, note: 'typical scoop' },
-  { id: 'matcha', name: 'Matcha', mg: 70, note: '1 tsp / 2 g' },
-  { id: 'black-tea', name: 'Black tea', mg: 47, note: '240 ml' },
-  { id: 'green-tea', name: 'Green tea', mg: 28, note: '240 ml' },
-  { id: 'cola', name: 'Cola / soda', mg: 40, note: '355 ml can' },
-  { id: 'dark-chocolate', name: 'Dark chocolate', mg: 24, note: '40 g bar' },
+  { id: 'espresso', mg: 63 },
+  { id: 'coffee', mg: 95 },
+  { id: 'coffee-large', mg: 155 },
+  { id: 'cold-brew', mg: 205 },
+  { id: 'energy', mg: 80 },
+  { id: 'preworkout', mg: 200 },
+  { id: 'matcha', mg: 70 },
+  { id: 'black-tea', mg: 47 },
+  { id: 'green-tea', mg: 28 },
+  { id: 'cola', mg: 40 },
+  { id: 'dark-chocolate', mg: 24 },
 ]
 
 export interface CaffeineResult {
@@ -45,7 +48,8 @@ export interface CaffeineResult {
    *  i.e. for the chosen gap. Used for the curve label. */
   residualAtBedtimeIfNow: number
   /** Cutoff clock time "HH:MM" given the bedtime. */
-  cutoffTime: string
+  /** Cut-off as minutes since midnight. */
+  cutoffMin: number
   /** Decay samples: hours-after-dose → residual mg, for the mini chart. */
   curve: Array<{ h: number; mg: number }>
 }
@@ -58,13 +62,6 @@ export function parseTime(t: string): number | null {
   const min = parseInt(m[2], 10)
   if (h > 23 || min > 59) return null
   return h * 60 + min
-}
-
-function fmtTime(totalMin: number): string {
-  let m = ((totalMin % 1440) + 1440) % 1440
-  const h = Math.floor(m / 60)
-  const mm = m % 60
-  return `${String(h).padStart(2, '0')}:${String(mm).padStart(2, '0')}`
 }
 
 /**
@@ -88,30 +85,34 @@ export function caffeineCutoff(
   return {
     hoursBeforeBed,
     residualAtBedtimeIfNow: Math.round(doseMg * Math.pow(0.5, hoursBeforeBed / halfLifeH)),
-    cutoffTime: fmtTime(cutoffMin),
+    cutoffMin: ((cutoffMin % 1440) + 1440) % 1440,
     curve,
   }
 }
 
-export const CAFFEINE_FAQ: Array<{ q: string; a: string }> = [
+export const CAFFEINE_SOURCES: ScienceSource[] = [
   {
-    q: 'When should I stop drinking coffee before bed?',
-    a: 'As a rule of thumb, stop caffeine 8–10 hours before bed if you are sleep-sensitive. The exact cutoff depends on the dose: caffeine has a ~5.5-hour half-life, so a 95 mg coffee takes about 5 hours to fall to ~50 mg and roughly 8–9 hours to become negligible. Bigger doses need a longer gap.',
+    authors: 'Gardiner C, Weakley J, Burke LM, Roach GD, Sargent C, Maniar N, Townshend A, Halson SL',
+    year: 2023,
+    title: 'The effect of caffeine on subsequent sleep: a systematic review and meta-analysis',
+    journal: 'Sleep Medicine Reviews, 69:101764',
+    contributes: '',
+    url: 'https://doi.org/10.1016/j.smrv.2023.101764',
   },
   {
-    q: 'How long does caffeine stay in your system?',
-    a: 'With a ~5.5-hour half-life, half the dose is gone in ~5.5 h, three-quarters in ~11 h, and it takes roughly 5 half-lives (≈24–30 h) to fully clear. That is why an afternoon coffee can still affect sleep even if you no longer "feel" it.',
+    authors: 'Drake C, Roehrs T, Shambroom J, Roth T',
+    year: 2013,
+    title: 'Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed',
+    journal: 'Journal of Clinical Sleep Medicine, 9(11):1195–1200',
+    contributes: '',
+    url: 'https://doi.org/10.5664/jcsm.3170',
   },
   {
-    q: 'Why is everyone different with caffeine?',
-    a: 'Caffeine is broken down mainly by the liver enzyme CYP1A2. Genetics, smoking (speeds it up, ~4 h half-life), pregnancy and oral contraceptives (slow it down, 8–10 h+), and some medications all shift your half-life. Adjust the slider toward "slow" if caffeine keeps you up.',
-  },
-  {
-    q: 'Does caffeine before bed really hurt sleep if I fall asleep fine?',
-    a: 'Often, yes. Controlled studies (e.g. Drake 2013) found caffeine taken even 6 hours before bed reduced total sleep time by about an hour and cut deep sleep — even when people did not report trouble falling asleep. It is the sleep architecture, not just sleep onset, that suffers.',
-  },
-  {
-    q: 'What counts as a safe residual at bedtime?',
-    a: 'This tool uses ~50 mg residual as the "unlikely to disrupt most people" line — roughly the caffeine in half a cup of coffee. If you are highly sensitive, aim for near zero; if you are a fast metaboliser, you may tolerate more. Track your own sleep to calibrate.',
+    authors: 'Nehlig A',
+    year: 2018,
+    title: 'Interindividual differences in caffeine metabolism and factors driving caffeine consumption',
+    journal: 'Pharmacological Reviews, 70(2):384–411',
+    contributes: '',
+    url: 'https://doi.org/10.1124/pr.117.014407',
   },
 ]

@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Kalkulator kofeiny — do której pić kawę | ONDA Life",
+    "description": "Darmowy kalkulator kofeiny: wybierz napój i porę snu, a sprawdzisz, do której pić kawę, jak długo działa kofeina i ile jej jest w popularnych napojach.",
+    "appName": "Kalkulator kofeiny przed snem",
+    "appDescription": "Darmowy kalkulator, który na podstawie dawki, pory snu i okresu półtrwania kofeiny szacuje najpóźniejszą porę na kofeinę przed snem, z krzywą spadku kofeiny."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "tools": "Narzędzia",
+    "current": "Kalkulator kofeiny"
+  },
+  "h1": "Kalkulator kofeiny: do której pić kawę?",
+  "capsule": "Średni okres półtrwania kofeiny to około 5 godzin, więc połowa kawy wciąż krąży w organizmie po 5–6 godzinach. Przegląd 24 badań (Gardiner 2023) wykazał, że zwykłą kawę trzeba wypić co najmniej 8,8 godziny przed snem, żeby nie skracała snu. Wybierz napój, porę snu i tempo metabolizowania kofeiny, a poznasz swoją godzinę ostatniej kawy.",
+  "imageAlt": "Kalkulator kofeiny — pora ostatniej kawy przed snem i krzywa półtrwania kofeiny, darmowe narzędzie ONDA Life",
+  "ui": {
+    "bedtime": "Twoja pora snu",
+    "drink": "Napój",
+    "metabolism": "Jak szybko metabolizujesz kofeinę",
+    "fast": "Szybko (palacz)",
+    "normal": "Typowo",
+    "slow": "Wolno / wrażliwość",
+    "result": "Ostatni wypij do",
+    "below": "Przy {{mg}} mg ten napój jest już poniżej progu ~35 mg przed snem — pora nie ma większego znaczenia.",
+    "gap": "To około {{h}} godz. przed snem. Jeśli wypijesz go później, w chwili zasypiania w organizmie zostanie ponad ~35 mg.",
+    "curve": "Kofeina pozostała po wypiciu napoju",
+    "hShort": "godz.",
+    "invalid": "Wpisz prawidłową porę snu.",
+    "tableTitle": "Kofeina w popularnych napojach",
+    "colDrink": "Napój",
+    "colServing": "Porcja",
+    "colCaffeine": "Kofeina"
+  },
+  "drinks": {
+    "espresso": {
+      "name": "Espresso (pojedyncze)",
+      "note": "~30 ml"
+    },
+    "coffee": {
+      "name": "Kawa parzona",
+      "note": "240 ml"
+    },
+    "coffee-large": {
+      "name": "Duża kawa",
+      "note": "470 ml"
+    },
+    "cold-brew": {
+      "name": "Cold brew",
+      "note": "350 ml"
+    },
+    "energy": {
+      "name": "Napój energetyczny",
+      "note": "puszka 250 ml"
+    },
+    "preworkout": {
+      "name": "Przedtreningówka",
+      "note": "typowa miarka"
+    },
+    "matcha": {
+      "name": "Matcha",
+      "note": "1 łyżeczka / 2 g"
+    },
+    "black-tea": {
+      "name": "Czarna herbata",
+      "note": "240 ml"
+    },
+    "green-tea": {
+      "name": "Zielona herbata",
+      "note": "240 ml"
+    },
+    "cola": {
+      "name": "Cola",
+      "note": "puszka 355 ml"
+    },
+    "dark-chocolate": {
+      "name": "Gorzka czekolada",
+      "note": "tabliczka 40 g"
+    }
+  },
+  "disclaimer": "Szacunek edukacyjny, nie porada medyczna. Okres półtrwania kofeiny bardzo się różni: u palaczy około 4 godzin, w ciąży lub przy antykoncepcji hormonalnej 8–10 godzin lub dłużej. Zawartość kofeiny to typowe średnie — faktyczna zależy od marki, palenia ziaren i wielkości kubka.",
+  "sections": [
+    {
+      "h2": "Do której pić kawę przed snem?",
+      "body": "Większość osób powinna zakończyć kofeinę około 8–9 godzin przed snem. W metaanalizie 24 badań z 2023 roku (Gardiner) zwykłą kawę (około 107 mg) trzeba było wypić co najmniej 8,8 godziny przed snem, żeby nie skracała całkowitego czasu snu, a suplement przedtreningowy (około 217 mg) — co najmniej 13,2 godziny wcześniej. Jeśli kładziesz się o 23:00, ostatnią kawę najlepiej wypić przed około 14:00. Większa dawka, wolniejszy metabolizm i wrażliwość na kofeinę przesuwają tę godzinę wcześniej. Więcej: [kofeina, sen i okres półtrwania](/articles/caffeine-half-life-sleep-pressure)."
+    },
+    {
+      "h2": "Jak długo działa kofeina i ile zostaje w organizmie?",
+      "body": "Stężenie kofeiny we krwi osiąga szczyt po około 30–60 minutach, a potem spada o połowę mniej więcej co 5 godzin (średni okres półtrwania; u większości zdrowych dorosłych 3–7 godzin). Po jednej kawie z 95 mg po 5,5 godziny zostaje około 48 mg, po 11 godzinach 24 mg, a niemal całkowite usunięcie trwa mniej więcej dobę. Dlatego popołudniowa kawa może wpływać na sen, nawet gdy już jej nie czujesz."
+    },
+    {
+      "h2": "Dlaczego kofeina działa na każdego inaczej",
+      "body": "Kofeinę rozkłada głównie enzym wątrobowy CYP1A2, a jego aktywność bardzo różni się między ludźmi (Nehlig 2018). Palenie ją przyspiesza — okres półtrwania około 4 godzin. Ciąża i antykoncepcja hormonalna spowalniają ją do 8–10 godzin lub dłużej; podobnie niektóre leki i choroby wątroby. Genetyka decyduje też o tym, jak wrażliwy na kofeinę jest mózg. Jeśli kawa nie daje ci zasnąć, wybierz ustawienie „wolno” i przesuń godzinę ostatniej kawy wcześniej."
+    },
+    {
+      "h2": "Czy kofeina szkodzi snu, nawet jeśli zasypiam bez problemu?",
+      "body": "Często tak. W kontrolowanym badaniu (Drake 2013) 400 mg kofeiny przyjęte nawet 6 godzin przed snem skróciło obiektywnie mierzony całkowity sen o ponad godzinę — choć uczestnicy często sami tego nie zauważali. W zestawieniu badań kofeina skracała sen średnio o około 45 minut, obniżała wydajność snu o 7% i zmniejszała ilość snu głębokiego (Gardiner 2023). Znajdź swoje okno snu w narzędziu [Kalkulator snu: o której iść spać?](/tools/sleep-cycle)."
+    }
+  ],
+  "faqTitle": "Kofeina — częste pytania",
+  "faq": [
+    {
+      "q": "Do której pić kawę, żeby dobrze spać?",
+      "a": "Zwykłą kawę około 8–9 godzin przed snem. Metaanaliza z 2023 roku wykazała, że kawę (~107 mg) należy pić co najmniej 8,8 godziny przed snem, a przedtreningówkę (~217 mg) co najmniej 13,2 godziny wcześniej."
+    },
+    {
+      "q": "Jak długo działa kofeina w organizmie?",
+      "a": "Średni okres półtrwania to około 5 godzin, więc połowa dawki znika po ~5 godzinach, a trzy czwarte po ~10–11 godzinach. Niemal całkowite usunięcie trwa mniej więcej dobę."
+    },
+    {
+      "q": "Czy mogę pić kawę o 16:00?",
+      "a": "Przy zasypianiu o 23:00 godzina 16:00 to 7 godzin przed snem — u wielu osób zwykła kawa może jeszcze skracać sen. Jeśli dobrze śpisz i szybko metabolizujesz kofeinę, mała filiżanka może być w porządku; w przeciwnym razie po południu przejdź na bezkofeinową."
+    },
+    {
+      "q": "Ile kofeiny jest w filiżance kawy?",
+      "a": "Około 95 mg w 240 ml kawy parzonej, 63 mg w pojedynczym espresso, ponad 150 mg w dużej kawie i 200 mg lub więcej w cold brew. Herbata ma około 30–50 mg na filiżankę."
+    },
+    {
+      "q": "Dlaczego kofeina działa na mnie silniej niż na innych?",
+      "a": "Różnice w enzymie wątrobowym CYP1A2, genetyka, ciąża, antykoncepcja hormonalna, niektóre leki i palenie zmieniają tempo usuwania kofeiny — okres półtrwania od około 4 do ponad 10 godzin."
+    },
+    {
+      "q": "Czy kofeina wpływa na sen, jeśli łatwo zasypiam?",
+      "a": "Tak, często. Kofeina może skracać sen i zmniejszać ilość snu głębokiego, nawet gdy zasypianie wydaje się normalne (Drake 2013; Gardiner 2023)."
+    }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Model zakłada eliminację pierwszego rzędu: pozostała kofeina = dawka × 0,5^(godziny ÷ okres półtrwania), przy typowym okresie półtrwania 5,5 godziny (4 godziny przy szybkim, 8,5 godziny przy wolnym metabolizmie). Godzina graniczna to moment, po którym w chwili pójścia spać zostałoby mniej niż około 35 mg — mniej więcej jedna trzecia kubka kawy. Skalibrowaliśmy ten próg według metaanalizy Gardiner 2023: przy nim kawa zawierająca 107 mg wymaga około 8,8 godziny przed snem, zgodnie z zaleceniem badania. Osoby bardzo wrażliwe powinny celować niżej. Zawartość kofeiny to typowe średnie. Szacunek edukacyjny, nie porada medyczna.",
+  "sourcesContributes": [
+    "Metaanaliza 24 badań: kofeina skracała całkowity sen o ~45 min i obniżała wydajność snu o 7%; kawę (~107 mg) należy pić ≥8,8 godz., a przedtreningówkę (~217 mg) ≥13,2 godz. przed snem.",
+    "400 mg kofeiny przyjęte 0, 3 lub 6 godzin przed snem zawsze zaburzało sen; nawet po 6 godzinach skracało obiektywnie mierzony sen o ponad godzinę.",
+    "Przegląd przyczyn różnic w metabolizmie kofeiny między ludźmi — CYP1A2, genetyka, palenie, ciąża, antykoncepcja — oraz typowych zakresów okresu półtrwania."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "article": "Kofeina, sen i okres półtrwania",
+    "sleep": "Kalkulator snu",
+    "chronotype": "Test chronotypu",
+    "hrv": "Kalkulator HRV według wieku"
+  }
+}

@@ -394,6 +394,8 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/tools/resonance-breathing': [...SUPPORTED_LANGS],
   '/tools/wim-hof': [...SUPPORTED_LANGS],
   '/tools/sleep-cycle': [...SUPPORTED_LANGS],
+  '/tools/chronotype': [...SUPPORTED_LANGS],
+  '/tools/caffeine': [...SUPPORTED_LANGS],
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.

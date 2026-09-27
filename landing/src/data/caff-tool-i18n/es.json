@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Calculadora de cafeína: ¿hasta qué hora café? | ONDA Life",
+    "description": "Calculadora de cafeína gratis: elige tu bebida y hora de dormir para saber hasta qué hora tomar café y cuánto dura el efecto de la cafeína.",
+    "appName": "Calculadora de cafeína antes de dormir",
+    "appDescription": "Calculadora gratuita que estima la hora límite para tomar cafeína antes de dormir según la dosis, la hora de acostarte y la vida media de la cafeína, con curva de eliminación."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "current": "Calculadora de cafeína"
+  },
+  "h1": "Calculadora de cafeína: ¿hasta qué hora puedo tomar café?",
+  "capsule": "La cafeína tiene una vida media promedio de unas 5 horas, así que la mitad de un café sigue en tu cuerpo 5–6 horas después. Una revisión de 24 estudios (Gardiner 2023) concluyó que un café normal debe tomarse al menos 8,8 horas antes de dormir para no acortar el sueño. Elige tu bebida, tu hora de dormir y qué tan rápido metabolizas la cafeína para obtener tu hora límite personal.",
+  "imageAlt": "Calculadora de cafeína — hora del último café antes de dormir y curva de vida media de la cafeína, herramienta gratuita de ONDA Life",
+  "ui": {
+    "bedtime": "Tu hora de dormir",
+    "drink": "Bebida",
+    "metabolism": "Qué tan rápido metabolizas la cafeína",
+    "fast": "Rápido (fumador)",
+    "normal": "Típico",
+    "slow": "Lento / sensible",
+    "result": "Toma la última antes de las",
+    "below": "Con {{mg}} mg esta bebida ya está por debajo del umbral de ~35 mg a la hora de dormir: la hora no es crítica.",
+    "gap": "Son unas {{h}} h antes de tu hora de dormir. Si la tomas más tarde, al intentar dormir seguirá habiendo más de ~35 mg en tu cuerpo.",
+    "curve": "Cafeína restante después de tu bebida",
+    "hShort": "h",
+    "invalid": "Introduce una hora de dormir válida.",
+    "tableTitle": "Cafeína en bebidas comunes",
+    "colDrink": "Bebida",
+    "colServing": "Porción",
+    "colCaffeine": "Cafeína"
+  },
+  "drinks": {
+    "espresso": {
+      "name": "Espresso (sencillo)",
+      "note": "shot de ~30 ml"
+    },
+    "coffee": {
+      "name": "Café de filtro",
+      "note": "240 ml / 8 oz"
+    },
+    "coffee-large": {
+      "name": "Café grande",
+      "note": "470 ml / 16 oz"
+    },
+    "cold-brew": {
+      "name": "Cold brew",
+      "note": "350 ml / 12 oz"
+    },
+    "energy": {
+      "name": "Bebida energética",
+      "note": "lata de 250 ml"
+    },
+    "preworkout": {
+      "name": "Pre-entreno",
+      "note": "cazo típico"
+    },
+    "matcha": {
+      "name": "Matcha",
+      "note": "1 cdta / 2 g"
+    },
+    "black-tea": {
+      "name": "Té negro",
+      "note": "240 ml"
+    },
+    "green-tea": {
+      "name": "Té verde",
+      "note": "240 ml"
+    },
+    "cola": {
+      "name": "Refresco de cola",
+      "note": "lata de 355 ml"
+    },
+    "dark-chocolate": {
+      "name": "Chocolate negro",
+      "note": "barra de 40 g"
+    }
+  },
+  "disclaimer": "Estimación educativa, no es consejo médico. La vida media de la cafeína varía mucho: unas 4 horas en fumadores y 8–10 horas o más durante el embarazo o con anticonceptivos orales. Las cantidades de cafeína son promedios típicos: el contenido real varía según la marca, el tostado y el tamaño de la taza.",
+  "sections": [
+    {
+      "h2": "¿Hasta qué hora tomar café antes de dormir?",
+      "body": "Para la mayoría de las personas, conviene dejar la cafeína unas 8–9 horas antes de dormir. En un metaanálisis de 2023 con 24 estudios (Gardiner), un café normal (unos 107 mg) debía tomarse al menos 8,8 horas antes de acostarse para no reducir el sueño total, y un suplemento pre-entreno (unos 217 mg), al menos 13,2 horas antes. Así, si te acuestas a las 23:00, lo mejor es tomar el último café antes de las 14:00 aproximadamente. Las dosis mayores, un metabolismo lento y la sensibilidad a la cafeína adelantan la hora límite. Más información: [cafeína, sueño y vida media](/articles/caffeine-half-life-sleep-pressure)."
+    },
+    {
+      "h2": "¿Cuánto dura el efecto del café en el cuerpo?",
+      "body": "La cafeína alcanza su pico en sangre unos 30–60 minutos después de tomarla y luego se reduce a la mitad aproximadamente cada 5 horas (la vida media promedio; 3–7 horas en la mayoría de los adultos sanos). Tras un café de 95 mg, quedan unos 48 mg a las 5,5 horas, 24 mg a las 11 horas, y se tarda cerca de un día en eliminarla casi por completo. Por eso un café por la tarde puede afectar tu sueño aunque ya no notes su efecto."
+    },
+    {
+      "h2": "Por qué la cafeína afecta distinto a cada persona",
+      "body": "La cafeína se descompone principalmente por la enzima hepática CYP1A2, cuya actividad varía mucho entre personas (Nehlig 2018). Fumar la acelera: vida media de unas 4 horas. El embarazo y los anticonceptivos orales la ralentizan hasta 8–10 horas o más, y también algunos medicamentos y enfermedades del hígado. La genética determina además qué tan sensible es tu cerebro a la cafeína. Si el café te quita el sueño, elige la opción «lento» y adelanta tu hora límite."
+    },
+    {
+      "h2": "¿La cafeína afecta el sueño aunque me duerma bien?",
+      "body": "A menudo, sí. En un estudio controlado (Drake 2013), 400 mg de cafeína tomados incluso 6 horas antes de dormir redujeron el sueño total en más de una hora, medido de forma objetiva, aunque los participantes muchas veces no lo notaban. En conjunto, la cafeína redujo el sueño total unos 45 minutos y la eficiencia del sueño un 7 % de media, y disminuyó el sueño profundo (Gardiner 2023). Encuentra tu ventana de sueño con la [Calculadora de sueño: ¿a qué hora debo acostarme?](/tools/sleep-cycle)."
+    }
+  ],
+  "faqTitle": "Cafeína — preguntas frecuentes",
+  "faq": [
+    {
+      "q": "¿Hasta qué hora tomar café antes de dormir?",
+      "a": "Unas 8–9 horas antes de dormir en el caso de un café normal. Un metaanálisis de 2023 concluyó que el café (~107 mg) debe tomarse al menos 8,8 horas antes de acostarse, y un pre-entreno (~217 mg), al menos 13,2 horas antes."
+    },
+    {
+      "q": "¿Cuánto dura el efecto del café en el cuerpo?",
+      "a": "Su vida media promedio es de unas 5 horas: la mitad de la dosis desaparece en ~5 horas y tres cuartas partes en ~10–11 horas. Se tarda aproximadamente un día en eliminarla casi por completo."
+    },
+    {
+      "q": "¿Puedo tomar café a las 16:00?",
+      "a": "Si te acuestas a las 23:00, las 16:00 son 7 horas antes: un café normal todavía puede reducir el sueño en muchas personas. Si duermes bien y metabolizas la cafeína rápido, una taza pequeña puede estar bien; si no, pásate al descafeinado por la tarde."
+    },
+    {
+      "q": "¿Cuánta cafeína tiene una taza de café?",
+      "a": "Unos 95 mg en 240 ml de café de filtro, 63 mg en un espresso sencillo, más de 150 mg en un café grande y 200 mg o más en un cold brew. El té tiene unos 30–50 mg por taza."
+    },
+    {
+      "q": "¿Por qué la cafeína me afecta más que a otros?",
+      "a": "Las diferencias en la enzima hepática CYP1A2, la genética, el embarazo, los anticonceptivos orales, algunos medicamentos y el tabaco cambian la velocidad con la que eliminas la cafeína: una vida media de unas 4 a más de 10 horas."
+    },
+    {
+      "q": "¿La cafeína afecta el sueño si me duermo con facilidad?",
+      "a": "Sí, a menudo. La cafeína puede acortar el sueño y reducir el sueño profundo aunque conciliarlo parezca normal (Drake 2013; Gardiner 2023)."
+    }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "El modelo usa una eliminación de primer orden: cafeína restante = dosis × 0,5^(horas ÷ vida media), con una vida media típica de 5,5 horas (4 horas para metabolizadores rápidos y 8,5 horas para lentos). La hora límite es el momento a partir del cual a la hora de dormir quedarían menos de unos 35 mg, aproximadamente un tercio de taza de café. Calibramos este umbral con el metaanálisis de Gardiner 2023: con él, un café de 107 mg necesita unas 8,8 horas antes de dormir, como recomienda el estudio. Las personas muy sensibles deberían apuntar más bajo. Las cantidades de cafeína son promedios típicos. Estimación educativa, no es consejo médico.",
+  "sourcesContributes": [
+    "Metaanálisis de 24 estudios: la cafeína redujo el sueño total ~45 min y la eficiencia del sueño un 7 %; el café (~107 mg) debe tomarse ≥8,8 h y un pre-entreno (~217 mg) ≥13,2 h antes de dormir.",
+    "400 mg de cafeína tomados 0, 3 o 6 horas antes de dormir alteraron el sueño en todos los casos; incluso a las 6 horas redujeron el sueño medido objetivamente en más de una hora.",
+    "Revisión de por qué el metabolismo de la cafeína varía entre personas —CYP1A2, genética, tabaco, embarazo, anticonceptivos— y rangos típicos de vida media."
+  ],
+  "related": {
+    "label": "Relacionado",
+    "article": "Cafeína, sueño y vida media",
+    "sleep": "Calculadora de sueño",
+    "chronotype": "Test de cronotipo",
+    "hrv": "Calculadora de VFC por edad"
+  }
+}

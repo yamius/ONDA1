@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Test del cronotipo — allodola o gufo? | ONDA Life",
+    "description": "Test del cronotipo gratuito in 6 domande (Horne–Östberg): scopri se sei allodola o gufo e gli orari migliori per lavorare, allenarti e dormire.",
+    "appName": "Test del cronotipo",
+    "appDescription": "Test del cronotipo gratuito in 6 domande ispirato al questionario di mattutinità–serotinità di Horne–Östberg, con un piano orario giornaliero per ogni tipo."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Strumenti", "current": "Test del cronotipo" },
+  "h1": "Test del cronotipo",
+  "capsule": "Il cronotipo è il ritmo naturale del tuo orologio biologico: quando preferisci dormire, svegliarti e quando sei più lucido. Rispondi a sei domande rapide, basate sul classico questionario di Horne–Östberg, per scoprire se sei un tipo mattutino, intermedio o serale, e ottieni un piano giornaliero su quando concentrarti, allenarti, smettere con la caffeina e andare a letto.",
+  "imageAlt": "Test del cronotipo — allodola o gufo, con piano orario giornaliero, strumento gratuito di ONDA Life",
+  "questions": [
+    { "q": "Se fossi completamente libero di organizzare la giornata, a che ora ti alzeresti?", "options": ["Prima delle 6:30", "6:30 – 7:45", "7:45 – 9:30", "9:30 – 11:00", "Dopo le 11:00"] },
+    { "q": "E a che ora andresti a letto se fossi completamente libero?", "options": ["Prima delle 21:00", "21:00 – 22:15", "22:15 – 00:30", "00:30 – 01:45", "Dopo l'01:45"] },
+    { "q": "Quanto ti senti vigile nella prima mezz'ora dopo il risveglio?", "options": ["Molto vigile", "Abbastanza vigile", "Abbastanza intontito", "Molto intontito"] },
+    { "q": "Quando ti senti al massimo della forma mentale?", "options": ["Al mattino presto", "In tarda mattinata", "Nel pomeriggio", "La sera o di notte"] },
+    { "q": "Se dovessi fare un allenamento intenso, quando lo preferiresti?", "options": ["Al mattino", "A mezzogiorno o nel pomeriggio", "La sera"] },
+    { "q": "Secondo te, sei più una persona mattiniera o nottambula?", "options": ["Decisamente mattiniera", "Più mattiniera che nottambula", "Più nottambula che mattiniera", "Decisamente nottambula"] }
+  ],
+  "ui": {
+    "progress": "{{a}} di {{n}} risposte",
+    "resultTitle": "Il tuo cronotipo",
+    "planTitle": "Il tuo piano orario giornaliero",
+    "retake": "Rifai il test"
+  },
+  "profiles": {
+    "morning": {
+      "name": "Tipo mattutino",
+      "tagline": "Sveglio presto, lucido presto, stanco la sera.",
+      "description": "Il tuo orologio biologico è anticipato: ti svegli facilmente, sei più vigile nella prima metà della giornata e rallenti ben prima di mezzanotte. Metti il lavoro mentale più impegnativo al mattino, quando dai il meglio. Le serate mondane ti costano più che a un tipo serale, quindi proteggi un orario regolare e anticipato per andare a letto.",
+      "protocol": [
+        { "label": "Risveglio naturale", "value": "5:30 – 6:30" },
+        { "label": "Finestra di massima concentrazione", "value": "7:00 – 11:00" },
+        { "label": "Momento migliore per allenarsi", "value": "Mattino o primo pomeriggio" },
+        { "label": "Ultima caffeina", "value": "Entro le 13:00 circa" },
+        { "label": "Orario ideale per andare a letto", "value": "21:30 – 22:30" }
+      ]
+    },
+    "intermediate": {
+      "name": "Tipo intermedio",
+      "tagline": "Al passo con il sole: il profilo più comune.",
+      "description": "Ti collochi al centro dello spettro, più o meno al passo con il giorno solare, dove si trova la maggior parte delle persone. Senza una tendenza estrema, la costanza è il tuo vantaggio: un orario di risveglio fisso e la luce del mattino mantengono stabile il tuo ritmo e ti danno un picco affidabile in tarda mattinata.",
+      "protocol": [
+        { "label": "Risveglio naturale", "value": "6:30 – 7:30" },
+        { "label": "Finestra di massima concentrazione", "value": "9:00 – 12:00" },
+        { "label": "Momento migliore per allenarsi", "value": "Mezzogiorno o prima serata" },
+        { "label": "Ultima caffeina", "value": "Entro le 14:00 circa" },
+        { "label": "Orario ideale per andare a letto", "value": "22:30 – 23:30" }
+      ]
+    },
+    "evening": {
+      "name": "Tipo serale",
+      "tagline": "Mattine lente, serate brillanti.",
+      "description": "Il tuo orologio è posticipato: le mattine sono davvero difficili (è biologia, non pigrizia) e vigilanza e umore tendono a raggiungere il picco nel pomeriggio e la sera. Il rischio principale è il jet lag sociale: gli orari mattutini ti lasciano a corto di sonno durante la settimana. Quando puoi, mantieni un orario di risveglio più tardo ma costante, e usa la luce intensa del mattino per anticipare il tuo orologio, se ti serve.",
+      "protocol": [
+        { "label": "Risveglio naturale", "value": "8:00 – 10:00" },
+        { "label": "Finestra di massima concentrazione", "value": "13:00 – 19:00" },
+        { "label": "Momento migliore per allenarsi", "value": "Tardo pomeriggio o sera" },
+        { "label": "Ultima caffeina", "value": "Entro le 15:00 circa" },
+        { "label": "Orario ideale per andare a letto", "value": "00:00 – 01:30" }
+      ]
+    }
+  },
+  "disclaimer": "Una breve autovalutazione ispirata al questionario di mattutinità–serotinità di Horne–Östberg, non il questionario validato completo. Il cronotipo cambia con l'età e si può spostare con la luce e gli orari del sonno. Contenuto informativo, non un consiglio medico.",
+  "sections": [
+    {
+      "h2": "Che cos'è il cronotipo?",
+      "body": "Il cronotipo è la preferenza naturale del corpo per quando dormire, svegliarsi ed essere più vigili. Dipende dall'orologio circadiano interno ed è in parte genetico. Si distribuisce lungo uno spettro che va dai tipi decisamente mattutini a quelli decisamente serali, con la maggior parte delle persone nel mezzo. In ampi studi sulla popolazione, gli orari di sonno spontanei nei giorni liberi differiscono di diverse ore tra tipi precoci e tardivi (Roenneberg 2007). Conoscere il tuo tipo ti aiuta a organizzare lavoro, allenamento, caffeina e sonno. Vedi anche: [qual è il mio cronotipo](/articles/what-is-my-chronotype)."
+    },
+    {
+      "h2": "Allodola o gufo: mattiniero o nottambulo, qual è la differenza?",
+      "body": "Le allodole (tipi mattutini) si svegliano facilmente, sono lucide presto e si stancano presto la sera. I gufi (tipi serali, nottambuli) fanno fatica al mattino, si attivano nel corso della giornata e danno il meglio nel tardo pomeriggio e la sera. Nessuno dei due è migliore, ma gli orari moderni favoriscono i mattinieri. Quando un gufo deve alzarsi presto per lavoro o scuola, lo scarto tra orologio biologico e sveglia crea il \"jet lag sociale\", associato a un maggior consumo di fumo, alcol e caffeina e a un benessere peggiore (Wittmann 2006). Approfondisci: [jet lag sociale](/articles/social-jet-lag-irregular-sleep)."
+    },
+    {
+      "h2": "Si può cambiare il proprio cronotipo?",
+      "body": "In parte. La predisposizione genetica resta, ma puoi spostare i tuoi orari quotidiani di circa 1–2 ore. Una luce intensa subito dopo il risveglio anticipa l'orologio; serate con luci soffuse e meno schermi la notte evitano che slitti in avanti. Un orario di risveglio fisso, anche nel weekend, e pasti regolari aiutano a mantenere il nuovo ritmo. Servono una o due settimane di costanza. Pianifica la tua finestra di sonno con il [calcolatore del sonno](/tools/sleep-cycle)."
+    },
+    {
+      "h2": "Il cronotipo cambia con l'età?",
+      "body": "Sì. I bambini sono di solito mattinieri, gli adolescenti si spostano nettamente verso orari più tardi, con un picco intorno ai 20 anni, e poi si torna più mattinieri nell'età adulta e in quella avanzata (Roenneberg 2007). Per questo l'ingresso a scuola presto è particolarmente pesante per gli adolescenti, e il tuo risultato può cambiare negli anni."
+    }
+  ],
+  "faqTitle": "Cronotipo: domande frequenti",
+  "faq": [
+    { "q": "Che cos'è il cronotipo?", "a": "Il ritmo naturale del tuo orologio biologico: quando preferisci dormire, svegliarti e quando sei più lucido. È in parte genetico e va dai tipi mattutini a quelli serali, con la maggior parte delle persone nel mezzo." },
+    { "q": "Come faccio a sapere se sono mattiniero o nottambulo?", "a": "Fai questo test in 6 domande, basato sul questionario di Horne–Östberg. Gli indizi più forti sono gli orari in cui ti sveglieresti e dormiresti in un giorno libero e il momento in cui sei mentalmente più lucido." },
+    { "q": "Posso cambiare il mio cronotipo?", "a": "In parte: luce al mattino, serate con luci soffuse e un orario di risveglio fisso possono spostare i tuoi orari di circa 1–2 ore, ma la predisposizione genetica resta." },
+    { "q": "È la stessa cosa dei tipi Leone, Orso, Lupo e Delfino?", "a": "L'idea è simile. I tipi animali derivano dal modello a quattro tipi di un singolo autore; questo test usa le tre categorie basate sulla ricerca (mattutino, intermedio, serale) del questionario di Horne–Östberg." },
+    { "q": "Che cos'è il jet lag sociale?", "a": "Il disallineamento tra orologio biologico e orari sociali, che si vede quando dormi in orari molto diversi nei giorni lavorativi e in quelli liberi. È più comune nei tipi serali ed è associato a sonno e umore peggiori." },
+    { "q": "Quando dovrebbe bere l'ultimo caffè un tipo serale?", "a": "Circa 8–9 ore prima del solito orario in cui vai a letto: se vai a dormire verso mezzanotte, entro le 15:00 circa. Verificalo con il calcolatore della caffeina." }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "Le sei domande sono una sintesi del questionario di mattutinità–serotinità di Horne–Östberg (1976), la misura del cronotipo più diffusa; le risposte ricevono un punteggio e vengono raggruppate in tipo mattutino, intermedio e serale. È un'autovalutazione rapida, non il questionario validato completo. Le variazioni del cronotipo con l'età seguono Roenneberg 2007; il jet lag sociale segue Wittmann 2006. I piani orari giornalieri sono indicazioni pratiche basate su questi tipi, non prescrizioni personali. Contenuto informativo, non un consiglio medico.",
+  "sourcesContributes": [
+    "Il classico questionario di autovalutazione della mattutinità–serotinità, base di queste domande.",
+    "Ampi dati di popolazione sul cronotipo e su come cambia con l'età: più tardivo in adolescenza, di nuovo più precoce nell'età adulta.",
+    "Ha definito il jet lag sociale, il disallineamento tra tempo biologico e tempo sociale, associandolo a un maggior uso di stimolanti e a un benessere peggiore."
+  ],
+  "related": {
+    "label": "Correlati",
+    "sleep": "Calcolatore del sonno",
+    "caffeine": "Calcolatore della caffeina",
+    "article": "Qual è il mio cronotipo",
+    "jetlag": "Pianificatore della luce per il jet lag"
+  }
+}

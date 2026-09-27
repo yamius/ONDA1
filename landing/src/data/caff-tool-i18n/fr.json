@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Calculateur de caféine — heure du dernier café | ONDA Life",
+    "description": "Calculateur de caféine gratuit : boisson + heure du coucher = heure du dernier café. Combien de temps dure la caféine et teneur des boissons courantes.",
+    "appName": "Calculateur d'heure limite de caféine",
+    "appDescription": "Calculateur gratuit qui estime l'heure limite pour consommer de la caféine avant le coucher selon la dose, l'heure du coucher et la demi-vie de la caféine, avec courbe d'élimination."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "tools": "Outils",
+    "current": "Calculateur de caféine"
+  },
+  "h1": "Calculateur de caféine : jusqu'à quelle heure boire du café ?",
+  "capsule": "La caféine a une demi-vie moyenne d'environ 5 heures : la moitié d'un café est encore dans votre organisme 5 à 6 heures plus tard. Une revue de 24 études (Gardiner 2023) montre qu'un café classique doit être bu au moins 8,8 heures avant le coucher pour ne pas raccourcir le sommeil. Choisissez votre boisson, votre heure de coucher et votre vitesse d'élimination de la caféine pour obtenir votre heure limite personnelle.",
+  "imageAlt": "Calculateur de caféine — heure du dernier café avant le coucher et courbe de demi-vie de la caféine, outil gratuit ONDA Life",
+  "ui": {
+    "bedtime": "Votre heure de coucher",
+    "drink": "Boisson",
+    "metabolism": "Vitesse d'élimination de la caféine",
+    "fast": "Rapide (fumeur)",
+    "normal": "Moyenne",
+    "slow": "Lente / sensible",
+    "result": "Dernière prise avant",
+    "below": "Avec {{mg}} mg, cette boisson est déjà sous le seuil d'environ 35 mg au coucher — l'horaire n'est pas critique.",
+    "gap": "Soit environ {{h}} h avant votre coucher. Plus tard, il vous resterait plus d'environ 35 mg de caféine dans l'organisme au moment de dormir.",
+    "curve": "Caféine restante après votre boisson",
+    "hShort": "h",
+    "invalid": "Saisissez une heure de coucher valide.",
+    "tableTitle": "Teneur en caféine des boissons courantes",
+    "colDrink": "Boisson",
+    "colServing": "Portion",
+    "colCaffeine": "Caféine"
+  },
+  "drinks": {
+    "espresso": {
+      "name": "Expresso (simple)",
+      "note": "tasse d'env. 30 ml"
+    },
+    "coffee": {
+      "name": "Café filtre",
+      "note": "240 ml"
+    },
+    "coffee-large": {
+      "name": "Grand café",
+      "note": "470 ml"
+    },
+    "cold-brew": {
+      "name": "Cold brew",
+      "note": "350 ml"
+    },
+    "energy": {
+      "name": "Boisson énergisante",
+      "note": "canette de 250 ml"
+    },
+    "preworkout": {
+      "name": "Pre-workout",
+      "note": "dose habituelle"
+    },
+    "matcha": {
+      "name": "Matcha",
+      "note": "1 c. à café / 2 g"
+    },
+    "black-tea": {
+      "name": "Thé noir",
+      "note": "240 ml"
+    },
+    "green-tea": {
+      "name": "Thé vert",
+      "note": "240 ml"
+    },
+    "cola": {
+      "name": "Cola",
+      "note": "canette de 355 ml"
+    },
+    "dark-chocolate": {
+      "name": "Chocolat noir",
+      "note": "tablette de 40 g"
+    }
+  },
+  "disclaimer": "Estimation éducative, pas un avis médical. La demi-vie de la caféine varie beaucoup : environ 4 heures chez les fumeurs, 8 à 10 heures ou plus pendant la grossesse ou sous contraceptif oral. Les teneurs en caféine sont des moyennes : la quantité réelle dépend de la marque, de la torréfaction et de la taille de la tasse.",
+  "sections": [
+    {
+      "h2": "Jusqu'à quelle heure boire du café avant de dormir ?",
+      "body": "Pour la plupart des gens, mieux vaut arrêter la caféine 8 à 9 heures avant le coucher. Dans une méta-analyse de 24 études (Gardiner 2023), un café classique (environ 107 mg) devait être bu au moins 8,8 heures avant le coucher pour ne pas réduire le temps de sommeil total, et un pre-workout (environ 217 mg) au moins 13,2 heures avant. Avec un coucher à 23:00, le dernier café est donc à prendre avant 14:00 environ. Une dose plus forte, un métabolisme lent et une sensibilité à la caféine avancent encore l'heure limite. En savoir plus : [caféine, sommeil et demi-vie](/articles/caffeine-half-life-sleep-pressure)."
+    },
+    {
+      "h2": "Combien de temps dure la caféine dans le corps ?",
+      "body": "La caféine atteint son pic sanguin 30 à 60 minutes après la prise, puis sa concentration diminue de moitié environ toutes les 5 heures (demi-vie moyenne ; 3 à 7 heures chez la plupart des adultes en bonne santé). Après un café de 95 mg, il en reste environ 48 mg 5,5 heures plus tard, 24 mg après 11 heures, et il faut près d'une journée pour l'éliminer presque entièrement. Voilà pourquoi un café de l'après-midi peut perturber votre sommeil même quand vous n'en ressentez plus l'effet."
+    },
+    {
+      "h2": "Pourquoi la caféine n'agit pas de la même façon chez tout le monde",
+      "body": "La caféine est dégradée principalement par l'enzyme hépatique CYP1A2, dont l'activité varie beaucoup d'une personne à l'autre (Nehlig 2018). Le tabac l'accélère — demi-vie d'environ 4 heures. La grossesse et la contraception orale la ralentissent à 8–10 heures ou plus, tout comme certains médicaments et maladies du foie. La génétique détermine aussi la sensibilité de votre cerveau à la caféine. Si le café vous empêche de dormir, choisissez le réglage « lente » et avancez votre heure limite."
+    },
+    {
+      "h2": "La caféine nuit-elle au sommeil même si je m'endors facilement ?",
+      "body": "Souvent, oui. Dans une étude contrôlée (Drake 2013), 400 mg de caféine pris même 6 heures avant le coucher ont réduit le sommeil total de plus d'une heure, mesuré objectivement — alors que les participants ne le remarquaient souvent pas eux-mêmes. Toutes études confondues, la caféine a réduit en moyenne le sommeil total d'environ 45 minutes et l'efficacité du sommeil de 7 %, et diminué le sommeil profond (Gardiner 2023). Trouvez votre créneau de sommeil avec le [Calculateur de sommeil : à quelle heure se coucher ?](/tools/sleep-cycle)."
+    }
+  ],
+  "faqTitle": "Caféine — questions fréquentes",
+  "faq": [
+    {
+      "q": "Jusqu'à quelle heure boire du café avant de dormir ?",
+      "a": "Environ 8 à 9 heures avant le coucher pour un café classique. Une méta-analyse de 2023 indique qu'un café (~107 mg) doit être bu au moins 8,8 heures avant le coucher, et un pre-workout (~217 mg) au moins 13,2 heures avant."
+    },
+    {
+      "q": "Combien de temps la caféine reste-t-elle dans l'organisme ?",
+      "a": "Sa demi-vie moyenne est d'environ 5 heures : la moitié de la dose est éliminée en ~5 heures et les trois quarts en ~10–11 heures. Il faut près d'une journée pour l'éliminer presque entièrement."
+    },
+    {
+      "q": "Puis-je boire un café à 16 h ?",
+      "a": "Pour un coucher à 23:00, 16:00 correspond à 7 heures avant — un café classique peut encore réduire le sommeil chez beaucoup de personnes. Si vous dormez bien et éliminez vite la caféine, une petite tasse peut passer ; sinon, passez au décaféiné l'après-midi."
+    },
+    {
+      "q": "Combien de caféine contient une tasse de café ?",
+      "a": "Environ 95 mg dans 240 ml de café filtre, 63 mg dans un expresso simple, plus de 150 mg dans un grand café et 200 mg ou plus dans un cold brew. Le thé contient environ 30 à 50 mg par tasse."
+    },
+    {
+      "q": "Pourquoi la caféine me fait-elle plus d'effet qu'aux autres ?",
+      "a": "Les différences d'activité de l'enzyme hépatique CYP1A2, la génétique, la grossesse, la contraception orale, certains médicaments et le tabac modifient la vitesse d'élimination de la caféine — d'environ 4 à plus de 10 heures de demi-vie."
+    },
+    {
+      "q": "La caféine affecte-t-elle le sommeil si je m'endors facilement ?",
+      "a": "Oui, souvent. La caféine peut raccourcir le sommeil et réduire le sommeil profond même si l'endormissement semble normal (Drake 2013 ; Gardiner 2023)."
+    }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "Le modèle utilise une élimination d'ordre 1 : caféine restante = dose × 0,5^(heures ÷ demi-vie), avec une demi-vie typique de 5,5 heures (4 heures pour un métabolisme rapide, 8,5 heures pour un métabolisme lent). L'heure limite est le moment à partir duquel il resterait moins d'environ 35 mg — soit à peu près un tiers de tasse de café — au coucher. Nous avons calibré ce seuil sur la méta-analyse de Gardiner 2023 : avec lui, un café de 107 mg nécessite environ 8,8 heures avant le coucher, comme le recommande l'étude. Les personnes très sensibles devraient viser plus bas. Les teneurs en caféine sont des moyennes. Estimation éducative, pas un avis médical.",
+  "sourcesContributes": [
+    "Méta-analyse de 24 études : la caféine a réduit le sommeil total d'environ 45 min et l'efficacité du sommeil de 7 % ; un café (~107 mg) doit être bu ≥8,8 h et un pre-workout (~217 mg) ≥13,2 h avant le coucher.",
+    "400 mg de caféine pris 0, 3 ou 6 heures avant le coucher ont tous perturbé le sommeil ; même à 6 heures, le sommeil mesuré objectivement a diminué de plus d'une heure.",
+    "Revue expliquant pourquoi le métabolisme de la caféine diffère d'une personne à l'autre — CYP1A2, génétique, tabac, grossesse, contraceptifs — et fourchettes typiques de demi-vie."
+  ],
+  "related": {
+    "label": "Voir aussi",
+    "article": "Caféine, sommeil et demi-vie",
+    "sleep": "Calculateur de sommeil",
+    "chronotype": "Test de chronotype",
+    "hrv": "Calculateur de VFC par âge"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Cafeïne-calculator — tot hoe laat koffie? | ONDA Life",
+    "description": "Gratis cafeïne-calculator: kies je drankje en bedtijd, zie tot hoe laat je koffie kunt drinken, hoe lang cafeïne werkt en hoeveel cafeïne erin zit.",
+    "appName": "Cafeïne-calculator: laatste koffie",
+    "appDescription": "Gratis calculator die op basis van dosis, bedtijd en halfwaardetijd van cafeïne berekent wat het laatste moment is voor cafeïne voor het slapen, met een afbraakcurve."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Cafeïne-calculator"
+  },
+  "h1": "Cafeïne-calculator: tot hoe laat kan ik koffie drinken?",
+  "capsule": "Cafeïne heeft een gemiddelde halfwaardetijd van ongeveer 5 uur, dus de helft van een kop koffie zit 5–6 uur later nog in je lichaam. Een review van 24 studies (Gardiner 2023) vond dat je een gewone kop koffie minstens 8,8 uur voor het slapen moet drinken om je slaap niet te verkorten. Kies je drankje, bedtijd en hoe snel je cafeïne afbreekt voor jouw persoonlijke laatste koffietijd.",
+  "imageAlt": "Cafeïne-calculator — laatste koffie voor het slapen en halfwaardetijdcurve van cafeïne, gratis tool van ONDA Life",
+  "ui": {
+    "bedtime": "Je bedtijd",
+    "drink": "Drankje",
+    "metabolism": "Hoe snel je cafeïne afbreekt",
+    "fast": "Snel (roker)",
+    "normal": "Gemiddeld",
+    "slow": "Langzaam / gevoelig",
+    "result": "Drink je laatste uiterlijk om",
+    "below": "Met {{mg}} mg zit dit drankje al onder de drempel van ~35 mg bij bedtijd — het tijdstip is niet kritisch.",
+    "gap": "Dat is ongeveer {{h}} u voor je bedtijd. Drink je het later, dan zit er nog meer dan ~35 mg in je lichaam als je wilt gaan slapen.",
+    "curve": "Resterende cafeïne na je drankje",
+    "hShort": "u",
+    "invalid": "Vul een geldige bedtijd in.",
+    "tableTitle": "Cafeïne in veelgedronken dranken",
+    "colDrink": "Drankje",
+    "colServing": "Portie",
+    "colCaffeine": "Cafeïne"
+  },
+  "drinks": {
+    "espresso": {
+      "name": "Espresso (enkel)",
+      "note": "shot van ~30 ml"
+    },
+    "coffee": {
+      "name": "Filterkoffie",
+      "note": "240 ml"
+    },
+    "coffee-large": {
+      "name": "Grote koffie",
+      "note": "470 ml"
+    },
+    "cold-brew": {
+      "name": "Cold brew",
+      "note": "350 ml"
+    },
+    "energy": {
+      "name": "Energiedrank",
+      "note": "blikje van 250 ml"
+    },
+    "preworkout": {
+      "name": "Pre-workout",
+      "note": "gangbare schep"
+    },
+    "matcha": {
+      "name": "Matcha",
+      "note": "1 tl / 2 g"
+    },
+    "black-tea": {
+      "name": "Zwarte thee",
+      "note": "240 ml"
+    },
+    "green-tea": {
+      "name": "Groene thee",
+      "note": "240 ml"
+    },
+    "cola": {
+      "name": "Cola",
+      "note": "blikje van 355 ml"
+    },
+    "dark-chocolate": {
+      "name": "Pure chocolade",
+      "note": "reep van 40 g"
+    }
+  },
+  "disclaimer": "Educatieve schatting, geen medisch advies. De halfwaardetijd van cafeïne verschilt sterk: ongeveer 4 uur bij rokers, 8–10 uur of langer tijdens zwangerschap of bij gebruik van de pil. Cafeïnehoeveelheden zijn gangbare gemiddelden — het echte gehalte verschilt per merk, branding en kopgrootte.",
+  "sections": [
+    {
+      "h2": "Tot hoe laat kun je koffie drinken voor het slapen?",
+      "body": "Voor de meeste mensen: stop ongeveer 8–9 uur voor het slapen met cafeïne. In een meta-analyse uit 2023 van 24 studies (Gardiner) moest een gewone kop koffie (ongeveer 107 mg) minstens 8,8 uur voor bedtijd gedronken worden om de totale slaap niet te verminderen, en een pre-workoutsupplement (ongeveer 217 mg) minstens 13,2 uur ervoor. Ga je om 23:00 naar bed, dan drink je je laatste koffie het best voor ongeveer 14:00. Grotere doses, een tragere afbraak en gevoeligheid voor cafeïne vervroegen allemaal het tijdstip. Meer: [cafeïne, slaap en halfwaardetijd](/articles/caffeine-half-life-sleep-pressure)."
+    },
+    {
+      "h2": "Hoe lang werkt cafeïne en blijft het in je lichaam?",
+      "body": "Cafeïne bereikt 30–60 minuten na het drinken een piek in je bloed en halveert daarna ongeveer elke 5 uur (de gemiddelde halfwaardetijd; 3–7 uur bij de meeste gezonde volwassenen). Na één kop koffie van 95 mg is er 5,5 uur later nog ongeveer 48 mg over, na 11 uur 24 mg, en het duurt ongeveer een dag voordat het vrijwel helemaal weg is. Daarom kan een middagkoffie je slaap beïnvloeden, ook als je hem niet meer voelt."
+    },
+    {
+      "h2": "Waarom cafeïne bij iedereen anders werkt",
+      "body": "Cafeïne wordt vooral afgebroken door het leverenzym CYP1A2, en de activiteit daarvan verschilt sterk tussen mensen (Nehlig 2018). Roken versnelt het — halfwaardetijd rond 4 uur. Zwangerschap en de pil vertragen het tot 8–10 uur of langer, net als sommige medicijnen en leveraandoeningen. Ook je genen bepalen hoe gevoelig je hersenen zijn voor cafeïne. Hou koffie je wakker, kies dan de instelling \"langzaam\" en vervroeg je laatste koffie."
+    },
+    {
+      "h2": "Schaadt cafeïne je slaap, ook als je goed in slaap valt?",
+      "body": "Vaak wel. In een gecontroleerde studie (Drake 2013) verkortte 400 mg cafeïne, zelfs 6 uur voor het slapen ingenomen, de objectief gemeten totale slaap met meer dan een uur — terwijl deelnemers het zelf vaak niet merkten. Over alle studies heen verminderde cafeïne de totale slaap gemiddeld met ongeveer 45 minuten en de slaapefficiëntie met 7%, en verminderde het de diepe slaap (Gardiner 2023). Vind je slaapvenster met de [Slaapcalculator: hoe laat moet ik gaan slapen?](/tools/sleep-cycle)."
+    }
+  ],
+  "faqTitle": "Cafeïne — veelgestelde vragen",
+  "faq": [
+    {
+      "q": "Tot hoe laat kun je koffie drinken voor het slapen?",
+      "a": "Ongeveer 8–9 uur voor het slapen voor een gewone kop koffie. Een meta-analyse uit 2023 vond dat koffie (~107 mg) minstens 8,8 uur voor bedtijd gedronken moet worden, en een pre-workout (~217 mg) minstens 13,2 uur ervoor."
+    },
+    {
+      "q": "Hoe lang werkt cafeïne en blijft het in je lichaam?",
+      "a": "De gemiddelde halfwaardetijd is ongeveer 5 uur, dus na ~5 uur is de helft van een dosis weg en na ~10–11 uur driekwart. Het duurt ongeveer een dag voordat het vrijwel helemaal weg is."
+    },
+    {
+      "q": "Kan ik om 16:00 nog koffie drinken?",
+      "a": "Bij een bedtijd van 23:00 is 16:00 zeven uur ervoor — een gewone kop koffie kan bij veel mensen de slaap dan nog verminderen. Slaap je goed en breek je cafeïne snel af, dan kan een klein kopje prima zijn; anders stap je 's middags over op cafeïnevrij."
+    },
+    {
+      "q": "Hoeveel cafeïne zit er in een kop koffie?",
+      "a": "Ongeveer 95 mg in 240 ml filterkoffie, 63 mg in een enkele espresso, 150+ mg in een grote koffie en 200 mg of meer in cold brew. Thee bevat ongeveer 30–50 mg per kop."
+    },
+    {
+      "q": "Waarom heb ik meer last van cafeïne dan anderen?",
+      "a": "Verschillen in het leverenzym CYP1A2, genen, zwangerschap, de pil, sommige medicijnen en roken bepalen hoe snel je cafeïne afbreekt — van ongeveer 4 tot meer dan 10 uur halfwaardetijd."
+    },
+    {
+      "q": "Beïnvloedt cafeïne mijn slaap als ik makkelijk in slaap val?",
+      "a": "Ja, vaak wel. Cafeïne kan je slaap verkorten en de diepe slaap verminderen, ook als inslapen normaal voelt (Drake 2013; Gardiner 2023)."
+    }
+  ],
+  "sourcesTitle": "Bronnen en methode",
+  "methodology": "Het model gaat uit van eerste-orde-eliminatie: resterende cafeïne = dosis × 0,5^(uren ÷ halfwaardetijd), met een gangbare halfwaardetijd van 5,5 uur (4 uur bij snelle, 8,5 uur bij langzame afbrekers). Het laatste tijdstip is het moment waarop bij bedtijd minder dan ongeveer 35 mg — grofweg een derde kop koffie — over zou zijn. We hebben deze drempel gekalibreerd op de meta-analyse van Gardiner 2023: daarmee heeft een koffie van 107 mg ongeveer 8,8 uur nodig voor bedtijd, zoals het onderzoek aanraadt. Zeer gevoelige mensen doen er goed aan lager te mikken. Cafeïnehoeveelheden zijn gangbare gemiddelden. Educatieve schatting, geen medisch advies.",
+  "sourcesContributes": [
+    "Meta-analyse van 24 studies: cafeïne verkortte de totale slaap met ~45 min en de slaapefficiëntie met 7%; koffie (~107 mg) moet ≥8,8 u en een pre-workout (~217 mg) ≥13,2 u voor het slapen gedronken worden.",
+    "400 mg cafeïne, 0, 3 of 6 uur voor het slapen ingenomen, verstoorde telkens de slaap; zelfs na 6 uur verkortte het de objectief gemeten slaap met meer dan een uur.",
+    "Review over waarom de cafeïneafbraak per persoon verschilt — CYP1A2, genen, roken, zwangerschap, anticonceptie — en gangbare bereiken van de halfwaardetijd."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "article": "Cafeïne, slaap en halfwaardetijd",
+    "sleep": "Slaapcalculator",
+    "chronotype": "Chronotype-test",
+    "hrv": "HRV-calculator per leeftijd"
+  }
+}

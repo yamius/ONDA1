@@ -1,0 +1,106 @@
+{
+  "meta": {
+    "title": "Test chronotypu — skowronek czy sowa? | ONDA Life",
+    "description": "Darmowy test chronotypu (6 pytań, wg Horne–Östberga): sprawdź, czy jesteś skowronkiem, typem pośrednim czy sową, i kiedy najlepiej pracować i spać.",
+    "appName": "Test chronotypu",
+    "appDescription": "Darmowy quiz chronotypu z 6 pytaniami, oparty na kwestionariuszu rannego i wieczornego typu Horne–Östberga, z dziennym planem dla każdego typu."
+  },
+  "breadcrumb": { "home": "Strona główna", "tools": "Narzędzia", "current": "Test chronotypu" },
+  "h1": "Test chronotypu",
+  "capsule": "Chronotyp to naturalny rytm Twojego zegara biologicznego — kiedy wolisz spać, wstawać i kiedy jesteś najbardziej bystry. Odpowiedz na sześć krótkich pytań opartych na klasycznym kwestionariuszu Horne–Östberga, aby sprawdzić, czy jesteś typem porannym (skowronkiem), pośrednim czy wieczornym (sową), i otrzymaj plan dnia: kiedy się skupić, trenować, odstawić kofeinę i iść spać.",
+  "imageAlt": "Test chronotypu — skowronek czy sowa, z dziennym planem pory aktywności, darmowe narzędzie ONDA Life",
+  "questions": [
+    { "q": "Gdybyś mógł/mogła całkowicie swobodnie zaplanować dzień, o której byś wstał(a)?", "options": ["Przed 6:30", "6:30 – 7:45", "7:45 – 9:30", "9:30 – 11:00", "Po 11:00"] },
+    { "q": "A o której kładłbyś/kładłabyś się spać, mając pełną swobodę?", "options": ["Przed 21:00", "21:00 – 22:15", "22:15 – 00:30", "00:30 – 01:45", "Po 01:45"] },
+    { "q": "Jak bardzo czujesz się rozbudzony(a) w pierwszych 30 minutach po przebudzeniu?", "options": ["Bardzo rozbudzony(a)", "Dość rozbudzony(a)", "Dość zaspany(a)", "Bardzo zaspany(a)"] },
+    { "q": "Kiedy jesteś w najlepszej formie umysłowej?", "options": ["Wcześnie rano", "Późnym rankiem", "Po południu", "Wieczorem lub w nocy"] },
+    { "q": "Gdybyś miał(a) wykonać ciężki trening, kiedy wolał(a)byś go zrobić?", "options": ["Rano", "W południe lub po południu", "Wieczorem"] },
+    { "q": "Jak sam(a) siebie oceniasz: jesteś rannym ptaszkiem czy nocnym markiem?", "options": ["Zdecydowanie ranny ptaszek", "Raczej ranny niż wieczorny", "Raczej wieczorny niż ranny", "Zdecydowanie nocny marek"] }
+  ],
+  "ui": {
+    "progress": "Odpowiedzi: {{a}} z {{n}}",
+    "resultTitle": "Twój chronotyp",
+    "planTitle": "Twój dzienny plan",
+    "retake": "Rozwiąż test ponownie"
+  },
+  "profiles": {
+    "morning": {
+      "name": "Typ poranny (skowronek)",
+      "tagline": "Wcześnie wstaje, wcześnie błyszczy, wieczorem gaśnie.",
+      "description": "Twój zegar biologiczny chodzi wcześnie: łatwo się budzisz, najbardziej rześki(a) jesteś w pierwszej połowie dnia i wyciszasz się długo przed północą. Najtrudniejsze zadania umysłowe planuj na rano, gdy jesteś w szczytowej formie. Późne wieczory towarzyskie kosztują Cię więcej niż sowę, więc chroń regularną, wczesną porę snu.",
+      "protocol": [
+        { "label": "Naturalna pobudka", "value": "5:30 – 6:30" },
+        { "label": "Okno głębokiego skupienia", "value": "7:00 – 11:00" },
+        { "label": "Najlepsza pora treningu", "value": "Rano lub wczesnym popołudniem" },
+        { "label": "Ostatnia kofeina", "value": "Do ok. 13:00" },
+        { "label": "Idealna pora snu", "value": "21:30 – 22:30" }
+      ]
+    },
+    "intermediate": {
+      "name": "Typ pośredni",
+      "tagline": "W rytmie słońca — najczęstszy wzorzec.",
+      "description": "Jesteś pośrodku spektrum, mniej więcej w zgodzie z dniem słonecznym — tak jak większość ludzi. Bez wyraźnego przechyłu w żadną stronę Twoją przewagą jest regularność: stała pora pobudki i poranne światło dzienne stabilizują rytm i dają niezawodny szczyt formy późnym rankiem.",
+      "protocol": [
+        { "label": "Naturalna pobudka", "value": "6:30 – 7:30" },
+        { "label": "Okno głębokiego skupienia", "value": "9:00 – 12:00" },
+        { "label": "Najlepsza pora treningu", "value": "W południe lub wczesnym wieczorem" },
+        { "label": "Ostatnia kofeina", "value": "Do ok. 14:00" },
+        { "label": "Idealna pora snu", "value": "22:30 – 23:30" }
+      ]
+    },
+    "evening": {
+      "name": "Typ wieczorny (sowa)",
+      "tagline": "Powolne poranki, mocne wieczory.",
+      "description": "Twój zegar chodzi późno: poranki są naprawdę trudne — to biologia, nie lenistwo — a czujność i nastrój zwykle osiągają szczyt po południu i wieczorem. Główne ryzyko to społeczny jet lag: wczesne grafiki sprawiają, że w tygodniu brakuje Ci snu. Tam, gdzie to możliwe, trzymaj późniejszą, ale stałą porę pobudki, a jasne poranne światło wykorzystaj, by w razie potrzeby przesunąć zegar wcześniej.",
+      "protocol": [
+        { "label": "Naturalna pobudka", "value": "8:00 – 10:00" },
+        { "label": "Okno głębokiego skupienia", "value": "13:00 – 19:00" },
+        { "label": "Najlepsza pora treningu", "value": "Późnym popołudniem lub wieczorem" },
+        { "label": "Ostatnia kofeina", "value": "Do ok. 15:00" },
+        { "label": "Idealna pora snu", "value": "00:00 – 01:30" }
+      ]
+    }
+  },
+  "disclaimer": "Krótki autotest inspirowany kwestionariuszem Horne–Östberga (Morningness–Eveningness Questionnaire), a nie pełna zwalidowana wersja. Chronotyp zmienia się z wiekiem i można go nieco przesunąć światłem i porą snu. Treść edukacyjna, nie porada medyczna.",
+  "sections": [
+    {
+      "h2": "Czym jest chronotyp?",
+      "body": "Chronotyp to naturalna skłonność organizmu do określonych pór snu, pobudki i największej czujności. Wynika z wewnętrznego zegara dobowego i jest częściowo uwarunkowany genetycznie. Tworzy spektrum od wyraźnych typów porannych do wyraźnych typów wieczornych, a większość ludzi mieści się pośrodku. W dużych badaniach populacyjnych naturalna pora snu w dni wolne różni się między wczesnymi a późnymi typami o kilka godzin (Roenneberg 2007). Znajomość swojego typu pomaga dobrać porę pracy, treningu, kofeiny i snu. Zobacz też: [jaki mam chronotyp](/articles/what-is-my-chronotype)."
+    },
+    {
+      "h2": "Skowronek czy sowa — czym się różnią?",
+      "body": "Skowronki łatwo się budzą, wcześnie są bystre i wcześnie wieczorem robią się zmęczone. Sowy (nocne marki) mają trudne poranki, rozkręcają się w ciągu dnia i najlepiej czują się późnym popołudniem i wieczorem. Żaden typ nie jest lepszy — ale współczesne grafiki faworyzują skowronki. Gdy sowa musi wcześnie wstać do pracy lub szkoły, rozdźwięk między zegarem biologicznym a budzikiem tworzy „społeczny jet lag”, powiązany z częstszym paleniem, piciem alkoholu i kawy oraz gorszym samopoczuciem (Wittmann 2006). Więcej: [społeczny jet lag](/articles/social-jet-lag-irregular-sleep)."
+    },
+    {
+      "h2": "Czy można zmienić chronotyp?",
+      "body": "Częściowo. Genetyczna skłonność zostaje, ale dzienny rytm da się przesunąć o ok. 1–2 godziny. Jasne światło krótko po przebudzeniu przesuwa zegar wcześniej; przyciemnione wieczory i mniej światła z ekranów w nocy powstrzymują jego przesuwanie na później. Stała pora pobudki — także w weekendy — i regularne posiłki pomagają utrzymać nowy rytm. Wymaga to tygodnia lub dwóch konsekwencji. Zaplanuj okno snu w [Kalkulatorze snu: o której iść spać?](/tools/sleep-cycle)."
+    },
+    {
+      "h2": "Czy chronotyp zmienia się z wiekiem?",
+      "body": "Tak. Dzieci są zwykle skowronkami, nastolatki wyraźnie przesuwają się na później — ze szczytem około 20. roku życia — a w dorosłości i starszym wieku ludzie znów stają się bardziej poranni (Roenneberg 2007). Dlatego wczesne rozpoczynanie lekcji jest szczególnie trudne dla nastolatków i dlatego Twój wynik może się zmieniać z latami."
+    }
+  ],
+  "faqTitle": "Chronotyp — najczęstsze pytania",
+  "faq": [
+    { "q": "Czym jest chronotyp?", "a": "To naturalny rytm Twojego zegara biologicznego — kiedy wolisz spać, wstawać i kiedy jesteś najbardziej bystry. Jest częściowo genetyczny i sięga od typów porannych do wieczornych, a większość ludzi jest pośrodku." },
+    { "q": "Jak sprawdzić, czy jestem skowronkiem czy sową?", "a": "Rozwiąż ten test z 6 pytaniami oparty na kwestionariuszu Horne–Östberga. Najważniejsze wskazówki to pory, o których budził(a)byś się i zasypiał(a) w dzień wolny, oraz kiedy jesteś najbardziej bystry(a)." },
+    { "q": "Czy mogę zmienić swój chronotyp?", "a": "Częściowo: poranne światło, przyciemnione wieczory i stała pora pobudki mogą przesunąć Twój rytm o ok. 1–2 godziny, ale genetyczna skłonność zostaje." },
+    { "q": "Czy to to samo co typy Lew, Niedźwiedź, Wilk i Delfin?", "a": "Podobna idea. Typy zwierzęce pochodzą z czterotypowego modelu jednego autora; ten test używa trzech kategorii opartych na badaniach (poranny, pośredni, wieczorny) z kwestionariusza Horne–Östberga." },
+    { "q": "Czym jest społeczny jet lag?", "a": "To rozdźwięk między zegarem biologicznym a grafikiem społecznym, widoczny jako sen o bardzo różnych porach w dni robocze i wolne. Najczęściej dotyczy sów i wiąże się z gorszym snem i nastrojem." },
+    { "q": "Kiedy sowa powinna wypić ostatnią kawę?", "a": "Około 8–9 godzin przed zwykłą porą snu — przy zasypianiu około północy to do ok. 15:00. Sprawdź to w kalkulatorze kofeiny." }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Sześć pytań to skrót kwestionariusza porannego i wieczornego typu Horne–Östberga (1976), najczęściej stosowanej miary chronotypu; odpowiedzi są punktowane i grupowane w typ poranny, pośredni i wieczorny. To szybki autotest, a nie pełny zwalidowany kwestionariusz. Zmiany chronotypu z wiekiem opisano za Roenneberg 2007, społeczny jet lag za Wittmann 2006. Dzienne plany to praktyczne wskazówki oparte na tych typach, a nie indywidualne zalecenia. Treść edukacyjna, nie porada medyczna.",
+  "sourcesContributes": [
+    "Klasyczny kwestionariusz samooceny porannego i wieczornego typu, podstawa tych pytań.",
+    "Duże dane populacyjne o chronotypie i jego zmianach z wiekiem — późniejszy w okresie dojrzewania, znów wcześniejszy w dorosłości.",
+    "Zdefiniowanie społecznego jet lagu — rozdźwięku między czasem biologicznym a społecznym — i powiązanie go z częstszym używaniem używek i gorszym samopoczuciem."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "sleep": "Kalkulator snu",
+    "caffeine": "Kalkulator kofeiny",
+    "article": "Jaki mam chronotyp",
+    "jetlag": "Planer światła na jet lag"
+  }
+}

@@ -1,146 +1,138 @@
-import { useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
-import {
-  CHRONOTYPE_QUESTIONS,
-  CHRONOTYPE_PROFILES,
-  CHRONOTYPE_FAQ,
-  scoreToChronotype,
-} from '../data/chronotype-quiz'
+import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
+import { CHRONOTYPE_QUESTIONS, CHRONOTYPE_SOURCES, scoreToChronotype } from '../data/chronotype-quiz'
+import { chronoToolCopy, fill, type ChronoToolCopy } from '../data/chrono-tool-i18n'
+import { SourcesSection } from '../components/SourcesSection'
+
+/** Render inline markdown links ([text](/path)) as router links. */
+function Rich({ text, lang }: { text: string; lang: Lang }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g)
+  return (
+    <>
+      {parts.map((p, i) => {
+        const m = p.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+        if (!m) return <Fragment key={i}>{p}</Fragment>
+        return (
+          <Link key={i} to={langHref(m[2], lang)} className="text-terminal-green hover:underline">
+            {m[1]}
+          </Link>
+        )
+      })}
+    </>
+  )
+}
 
 export function ChronotypeQuizPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const c: ChronoToolCopy = chronoToolCopy(lang)
 
-  // answers[questionId] = chosen option points
+  // answers[questionId] = index of the chosen option
   const [answers, setAnswers] = useState<Record<string, number>>({})
 
   useEffect(() => {
-    document.title = "What's Your Chronotype? Free Quiz (Lion, Bear, Wolf) | ONDA Life"
+    document.title = c.meta.title
     window.scrollTo({ top: 0 })
-  }, [])
+  }, [c])
 
   const answeredCount = Object.keys(answers).length
   const complete = answeredCount === CHRONOTYPE_QUESTIONS.length
 
-  const profile = useMemo(() => {
+  const type = useMemo(() => {
     if (!complete) return null
-    const total = Object.values(answers).reduce((a, b) => a + b, 0)
-    return CHRONOTYPE_PROFILES[scoreToChronotype(total)]
+    const total = CHRONOTYPE_QUESTIONS.reduce((sum, q) => sum + q.options[answers[q.id]].points, 0)
+    return scoreToChronotype(total)
   }, [answers, complete])
+  const profile = type ? c.profiles[type] : null
 
-  function choose(qid: string, points: number) {
-    setAnswers((prev) => ({ ...prev, [qid]: points }))
-  }
-  function reset() {
-    setAnswers({})
-    window.scrollTo({ top: 0 })
-  }
+  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
-      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40" aria-label="Breadcrumb">
+        <Link to={homePathFor(lang)} className="hover:text-terminal-green">{c.breadcrumb.home}</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={hub} className="hover:text-terminal-green">{c.breadcrumb.tools}</Link>
         <span>/</span>
-        <span className="text-terminal-green/70" aria-current="page">Chronotype Quiz</span>
+        <span className="text-terminal-green/70" aria-current="page">{c.breadcrumb.current}</span>
       </nav>
 
-      <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">What's Your Chronotype?</h1>
-      <p className="mb-8 font-mono text-sm leading-relaxed text-white/60">
-        Six quick questions to find your natural body-clock type — morning, intermediate
-        or evening — and a personalised daily-timing protocol for when to work, train,
-        cut caffeine and sleep.
-      </p>
+      <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">{c.h1}</h1>
+      <p className="mb-8 text-base leading-relaxed text-white/70">{c.capsule}</p>
 
-      <img
-        src="/images/tools/chronotype.png"
-        alt="Chronotype Quiz — free body-clock quiz from ONDA Life"
-        width={1200}
-        height={630}
-        className="mb-8 w-full rounded-xl border border-white/10"
-      />
-
-      {/* Progress */}
+      <div className="mb-2 font-mono text-[11px] text-white/40">{fill(c.ui.progress, { a: answeredCount, n: CHRONOTYPE_QUESTIONS.length })}</div>
       <div className="mb-6 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
-        <div
-          className="h-full rounded-full bg-gradient-to-r from-terminal-cyan to-terminal-green transition-all"
-          style={{ width: `${(answeredCount / CHRONOTYPE_QUESTIONS.length) * 100}%` }}
-        />
+        <div className="h-full rounded-full bg-terminal-green/70 transition-all" style={{ width: `${(answeredCount / CHRONOTYPE_QUESTIONS.length) * 100}%` }} />
       </div>
 
-      {/* Questions */}
-      <div className="mb-8 space-y-5">
+      <div className="mb-8 space-y-6">
         {CHRONOTYPE_QUESTIONS.map((question, qi) => (
-          <div key={question.id} className="rounded-xl border border-white/10 bg-white/5 p-5">
-            <p className="mb-3 font-semibold text-white/90">
-              <span className="mr-2 font-mono text-terminal-cyan/70">{qi + 1}.</span>{question.q}
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {question.options.map((opt) => {
-                const selected = answers[question.id] === opt.points
+          <fieldset key={question.id} className="rounded-xl border border-white/10 bg-white/[0.02] p-4">
+            <legend className="px-1 text-sm font-semibold text-white/90">
+              <span className="text-terminal-green">{qi + 1}.</span> {c.questions[qi].q}
+            </legend>
+            <div className="mt-2 grid grid-cols-1 gap-2 sm:grid-cols-2" role="radiogroup">
+              {question.options.map((_, oi) => {
+                const selected = answers[question.id] === oi
                 return (
                   <button
-                    key={opt.label}
-                    onClick={() => choose(question.id, opt.points)}
-                    className={`rounded-lg border px-3 py-2 font-mono text-xs transition-colors ${
-                      selected
-                        ? 'border-terminal-green/60 bg-terminal-green/10 text-terminal-green'
-                        : 'border-white/15 text-white/60 hover:border-white/30'
+                    key={oi} type="button" role="radio" aria-checked={selected}
+                    onClick={() => setAnswers((prev) => ({ ...prev, [question.id]: oi }))}
+                    className={`rounded-lg border px-3 py-2 text-left font-mono text-xs transition-colors ${
+                      selected ? 'border-terminal-green/60 bg-terminal-green/10 text-terminal-green' : 'border-white/15 text-white/60 hover:border-white/30'
                     }`}
                   >
-                    {opt.label}
+                    {c.questions[qi].options[oi]}
                   </button>
                 )
               })}
             </div>
-          </div>
+          </fieldset>
         ))}
       </div>
 
-      {/* Result */}
       {profile && (
-        <div className="mb-6 rounded-xl border border-terminal-green/30 bg-terminal-green/5 p-5 md:p-6">
-          <div className="mb-1 font-mono text-xs uppercase tracking-widest text-terminal-cyan/70">Your chronotype</div>
+        <div className="mb-8 rounded-xl border border-terminal-green/30 bg-terminal-green/5 p-5 md:p-6" aria-live="polite">
+          <div className="mb-1 font-mono text-xs uppercase tracking-widest text-white/50">{c.ui.resultTitle}</div>
           <div className="mb-1 text-3xl font-bold text-terminal-green">{profile.name}</div>
-          <div className="mb-4 font-mono text-sm text-white/50">{profile.animal} · {profile.tagline}</div>
-          <p className="mb-5 font-mono text-xs leading-relaxed text-white/70">{profile.description}</p>
-
-          <div className="mb-4 grid grid-cols-1 gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 sm:grid-cols-2">
+          <p className="mb-3 font-mono text-xs text-terminal-cyan">{profile.tagline}</p>
+          <p className="mb-5 text-sm leading-relaxed text-white/70">{profile.description}</p>
+          <div className="mb-2 font-mono text-[11px] uppercase tracking-widest text-white/50">{c.ui.planTitle}</div>
+          <div className="grid gap-px overflow-hidden rounded-lg border border-white/10 bg-white/10 sm:grid-cols-2">
             {profile.protocol.map((p) => (
               <div key={p.label} className="bg-[#0a1018] px-4 py-3">
                 <div className="font-mono text-[10px] uppercase tracking-widest text-white/40">{p.label}</div>
-                <div className="font-mono text-sm text-white/90">{p.value}</div>
+                <div className="font-mono text-sm text-white/85">{p.value}</div>
               </div>
             ))}
           </div>
-
-          <button onClick={reset} className="font-mono text-xs text-white/40 underline hover:text-white/60">
-            Retake quiz
+          <button type="button" onClick={() => { setAnswers({}); window.scrollTo({ top: 0 }) }}
+            className="mt-5 rounded-lg border border-white/20 px-4 py-2 font-mono text-xs text-white/70 hover:bg-white/5">
+            ↻ {c.ui.retake}
           </button>
         </div>
       )}
-      {!complete && answeredCount > 0 && (
-        <p className="mb-6 font-mono text-xs text-white/40">
-          {CHRONOTYPE_QUESTIONS.length - answeredCount} question{CHRONOTYPE_QUESTIONS.length - answeredCount === 1 ? '' : 's'} to go.
-        </p>
-      )}
 
-      <p className="mb-12 font-mono text-[11px] leading-relaxed text-white/30">
-        Educational, not medical advice. Based on the validated Morningness–Eveningness
-        questionnaire, condensed. Chronotype is a spectrum that shifts with age and can be
-        partially trained with light timing.
-      </p>
+      <p className="mb-10 font-mono text-[11px] leading-relaxed text-white/30">{c.disclaimer}</p>
 
-      <AppStoreCTA ct={storeCt('tool', 'chronotype')} variant="tool" />
+      <AppStoreCTA ct={storeCt('tool', 'chronotype', lang)} variant="tool" lang={lang} />
 
-      <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
+      {c.sections.map((sec) => (
+        <section key={sec.h2} className="mb-10">
+          <h2 className="mb-3 text-xl font-bold tracking-tight md:text-2xl">{sec.h2}</h2>
+          <p className="text-sm leading-relaxed text-white/70">
+            <Rich text={sec.body} lang={lang} />
+          </p>
+        </section>
+      ))}
+
+      {/* FAQ — mirrors the FAQPage JSON-LD injected at build */}
+      <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">{c.faqTitle}</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
-        {CHRONOTYPE_FAQ.map((f) => (
+        {c.faq.map((f) => (
           <div key={f.q} className="py-4">
             <h3 className="mb-1 font-semibold text-white/90">{f.q}</h3>
             <p className="font-mono text-xs leading-relaxed text-white/50">{f.a}</p>
@@ -148,12 +140,21 @@ export function ChronotypeQuizPage() {
         ))}
       </div>
 
+      <SourcesSection
+        heading={c.sourcesTitle}
+        methodology={c.methodology}
+        sources={CHRONOTYPE_SOURCES.map((src, i) => ({ ...src, contributes: c.sourcesContributes[i] ?? src.contributes }))}
+      />
+
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/what-is-my-chronotype`} className="text-terminal-green hover:underline">What’s your chronotype?</Link>
+        {c.related.label}:{' '}
+        <Link to={langHref('/tools/sleep-cycle', lang)} className="text-terminal-green hover:underline">{c.related.sleep}</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/sleep-debt`} className="text-terminal-green hover:underline">Sleep debt calculator</Link>
+        <Link to={langHref('/tools/caffeine', lang)} className="text-terminal-green hover:underline">{c.related.caffeine}</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>
+        <Link to={langHref('/articles/what-is-my-chronotype', lang)} className="text-terminal-green hover:underline">{c.related.article}</Link>
+        {' · '}
+        <Link to={langHref('/tools/jet-lag', lang)} className="text-terminal-green hover:underline">{c.related.jetlag}</Link>
       </div>
     </main>
   )

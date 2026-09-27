@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "Caffeine Calculator — When to Stop Coffee Before Bed | ONDA Life",
+    "description": "Free caffeine calculator: pick your drink and bedtime to find your last-coffee time, see how long caffeine stays in your body, and caffeine in common drinks.",
+    "appName": "Caffeine Cut-Off Calculator",
+    "appDescription": "Free calculator that estimates the latest time to have caffeine before bed from dose, bedtime and caffeine half-life, with a caffeine decay curve."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Caffeine Calculator"
+  },
+  "h1": "Caffeine Calculator: When Should I Stop Drinking Coffee?",
+  "capsule": "Caffeine has an average half-life of about 5 hours, so half a coffee is still in your body 5–6 hours later. A review of 24 studies (Gardiner 2023) found that a regular coffee should be drunk at least 8.8 hours before bed to avoid cutting sleep. Pick your drink, bedtime and how fast you process caffeine to get your personal cut-off time.",
+  "imageAlt": "Caffeine calculator — last coffee time before bed and caffeine half-life curve, free tool from ONDA Life",
+  "ui": {
+    "bedtime": "Your bedtime",
+    "drink": "Drink",
+    "metabolism": "How fast you process caffeine",
+    "fast": "Fast (smoker)",
+    "normal": "Typical",
+    "slow": "Slow / sensitive",
+    "result": "Have your last one by",
+    "below": "At {{mg}} mg this drink is already below the ~35 mg bedtime threshold — timing isn't critical.",
+    "gap": "That's about {{h}} h before your bedtime. Have it later and more than ~35 mg is still in your body when you try to sleep.",
+    "curve": "Caffeine remaining after your drink",
+    "hShort": "h",
+    "invalid": "Enter a valid bedtime.",
+    "tableTitle": "Caffeine in common drinks",
+    "colDrink": "Drink",
+    "colServing": "Serving",
+    "colCaffeine": "Caffeine"
+  },
+  "drinks": {
+    "espresso": {
+      "name": "Espresso (single)",
+      "note": "~30 ml shot"
+    },
+    "coffee": {
+      "name": "Brewed coffee",
+      "note": "240 ml / 8 oz"
+    },
+    "coffee-large": {
+      "name": "Large coffee",
+      "note": "470 ml / 16 oz"
+    },
+    "cold-brew": {
+      "name": "Cold brew",
+      "note": "350 ml / 12 oz"
+    },
+    "energy": {
+      "name": "Energy drink",
+      "note": "250 ml can"
+    },
+    "preworkout": {
+      "name": "Pre-workout",
+      "note": "typical scoop"
+    },
+    "matcha": {
+      "name": "Matcha",
+      "note": "1 tsp / 2 g"
+    },
+    "black-tea": {
+      "name": "Black tea",
+      "note": "240 ml"
+    },
+    "green-tea": {
+      "name": "Green tea",
+      "note": "240 ml"
+    },
+    "cola": {
+      "name": "Cola",
+      "note": "355 ml can"
+    },
+    "dark-chocolate": {
+      "name": "Dark chocolate",
+      "note": "40 g bar"
+    }
+  },
+  "disclaimer": "Educational estimate, not medical advice. Caffeine half-life varies widely: about 4 hours in smokers, 8–10 hours or more in pregnancy or on oral contraceptives. Caffeine amounts are typical averages — real content varies by brand, roast and cup size.",
+  "sections": [
+    {
+      "h2": "When should I stop drinking coffee before bed?",
+      "body": "For most people, stop caffeine about 8–9 hours before bed. In a 2023 meta-analysis of 24 studies (Gardiner), a regular coffee (about 107 mg) needed to be drunk at least 8.8 hours before bedtime to avoid reducing total sleep, and a pre-workout supplement (about 217 mg) at least 13.2 hours before. So with a bedtime of 23:00, the last coffee is best before about 14:00. Bigger doses, slower metabolism and sensitivity to caffeine all push the cut-off earlier. More: [caffeine, sleep and half-life](/articles/caffeine-half-life-sleep-pressure)."
+    },
+    {
+      "h2": "How long does caffeine stay in your body?",
+      "body": "Caffeine peaks in the blood about 30–60 minutes after drinking and then falls by half roughly every 5 hours (the average half-life; 3–7 hours in most healthy adults). After one coffee of 95 mg, about 48 mg is left 5.5 hours later, 24 mg after 11 hours, and it takes around a day to clear almost completely. That's why an afternoon coffee can affect your sleep even when you no longer feel it."
+    },
+    {
+      "h2": "Why caffeine affects people differently",
+      "body": "Caffeine is broken down mainly by the liver enzyme CYP1A2, and its activity varies a lot between people (Nehlig 2018). Smoking speeds it up — half-life around 4 hours. Pregnancy and oral contraceptives slow it down to 8–10 hours or more, and some medicines and liver conditions do too. Genetics also determine how sensitive your brain is to caffeine. If coffee keeps you up, choose the \"slow\" setting and move your cut-off earlier."
+    },
+    {
+      "h2": "Does caffeine hurt sleep even if I fall asleep fine?",
+      "body": "Often yes. In a controlled study (Drake 2013), 400 mg of caffeine taken even 6 hours before bed cut total sleep by more than an hour, measured objectively — even though participants often didn't notice it themselves. Across studies, caffeine reduced total sleep by about 45 minutes and sleep efficiency by 7% on average and lowered deep sleep (Gardiner 2023). Find your sleep window with the [sleep calculator](/tools/sleep-cycle)."
+    }
+  ],
+  "faqTitle": "Caffeine — common questions",
+  "faq": [
+    {
+      "q": "When should I stop drinking coffee before bed?",
+      "a": "About 8–9 hours before bed for a regular coffee. A 2023 meta-analysis found coffee (~107 mg) should be drunk at least 8.8 hours before bedtime, and a pre-workout (~217 mg) at least 13.2 hours before."
+    },
+    {
+      "q": "How long does caffeine stay in your system?",
+      "a": "Its average half-life is about 5 hours, so half a dose is gone after ~5 hours and three quarters after ~10–11 hours. It takes roughly a day to clear almost completely."
+    },
+    {
+      "q": "Can I drink coffee at 4 pm?",
+      "a": "For a 23:00 bedtime, 16:00 is 7 hours before — a regular coffee may still reduce sleep for many people. If you sleep well and process caffeine fast, a small cup may be fine; otherwise switch to decaf in the afternoon."
+    },
+    {
+      "q": "How much caffeine is in a cup of coffee?",
+      "a": "About 95 mg in 240 ml of brewed coffee, 63 mg in a single espresso, 150+ mg in a large coffee and 200 mg or more in cold brew. Tea has about 30–50 mg per cup."
+    },
+    {
+      "q": "Why does caffeine affect me more than others?",
+      "a": "Differences in the liver enzyme CYP1A2, genetics, pregnancy, oral contraceptives, some medicines and smoking change how fast you clear caffeine — from about 4 to over 10 hours half-life."
+    },
+    {
+      "q": "Does caffeine affect sleep if I fall asleep easily?",
+      "a": "Yes, often. Caffeine can shorten sleep and reduce deep sleep even when falling asleep feels normal (Drake 2013; Gardiner 2023)."
+    }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "The model uses first-order elimination: remaining caffeine = dose × 0.5^(hours ÷ half-life), with a typical half-life of 5.5 hours (4 hours for fast, 8.5 hours for slow metabolisers). The cut-off is the time at which less than about 35 mg — roughly a third of a cup of coffee — would remain at bedtime. We calibrated this threshold to the meta-analysis by Gardiner 2023: with it, a 107 mg coffee needs about 8.8 hours before bed, as the study recommends. Highly sensitive people should aim lower. Caffeine amounts are typical averages. Educational estimate, not medical advice.",
+  "sourcesContributes": [
+    "Meta-analysis of 24 studies: caffeine cut total sleep by ~45 min and sleep efficiency by 7%; coffee (~107 mg) should be drunk ≥8.8 h and a pre-workout (~217 mg) ≥13.2 h before bed.",
+    "400 mg caffeine taken 0, 3 or 6 hours before bed all disturbed sleep; even at 6 hours it cut objectively measured sleep by more than an hour.",
+    "Review of why caffeine metabolism differs between people — CYP1A2, genetics, smoking, pregnancy, contraceptives — and typical half-life ranges."
+  ],
+  "related": {
+    "label": "Related",
+    "article": "Caffeine, sleep and half-life",
+    "sleep": "Sleep calculator",
+    "chronotype": "Chronotype test",
+    "hrv": "HRV Calculator by Age"
+  }
+}
