@@ -353,8 +353,8 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "modified": "2026-09-26T01:41:15+02:00"
   },
   "hrv-questions-answered": {
-    "published": "2026-09-27T21:01:58.680Z",
-    "modified": "2026-09-27T21:01:58.680Z"
+    "published": "2026-09-27T23:07:15+02:00",
+    "modified": "2026-09-27T23:07:15+02:00"
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -514,7 +514,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-27T00:19:39+02:00"
+    "modified": "2026-09-27T23:07:15+02:00"
   },
   "nose-vs-mouth-breathing": {
     "published": "2026-09-22T08:22:18+02:00",

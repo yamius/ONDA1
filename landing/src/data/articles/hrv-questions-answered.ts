@@ -3,7 +3,7 @@ import type { Article } from './types'
 import { HRV_QUESTION_GROUPS } from '../hrv-questions'
 
 /**
- * HRV questions hub — 41 short, direct answers grouped in six sections, each linking deeper.
+ * HRV questions hub — 52 short, direct answers grouped in six sections, each linking deeper.
  * Body is generated from src/data/hrv-questions.ts; FAQPage JSON-LD comes from the same data via
  * ARTICLE_FAQ_SCHEMA_ONLY (not ARTICLE_FAQ, which would render the Q&A a second time). EN only.
  */
@@ -26,10 +26,10 @@ const body = HRV_QUESTION_GROUPS.map(
 
 const article: Article = {
   slug: 'hrv-questions-answered',
-  title: 'HRV Questions, Answered: 41 Straight Answers About Heart Rate Variability',
-  seoTitle: 'HRV Questions Answered: 41 Short Answers | ONDA Life',
+  title: 'HRV Questions, Answered: 52 Straight Answers About Heart Rate Variability',
+  seoTitle: 'HRV Questions Answered: 52 Short Answers | ONDA Life',
   description:
-    'What is a good HRV? Why is mine low? Does alcohol, caffeine or breathing change it? 41 short, sourced answers about heart rate variability, each linking to a deeper guide or free calculator.',
+    'What is a good HRV? Why is mine low? Does alcohol, caffeine or breathing change it? 52 short, sourced answers about heart rate variability, each linking to a deeper guide or free calculator.',
   category: 'Biological Software',
   relatedSlugs: ['normal-hrv-by-age', 'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently'],
   introStyle: 'rose',

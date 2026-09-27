@@ -29,7 +29,7 @@ There is no universal "good" HRV number — it depends heavily on your age, and 
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — enter your age and HRV to see your percentile.
 
-More quick answers → **[HRV Questions, Answered](/articles/hrv-questions-answered)** — 41 short answers on what lowers HRV, what raises it and how to measure it.
+More quick answers → **[HRV Questions, Answered](/articles/hrv-questions-answered)** — 52 short answers on what lowers HRV, what raises it and how to measure it.
 
 ## Typical HRV ranges by age
 
