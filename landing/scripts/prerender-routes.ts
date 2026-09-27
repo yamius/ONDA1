@@ -600,6 +600,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
@@ -615,6 +616,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -629,6 +631,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -643,6 +646,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   it: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -657,6 +661,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -671,6 +676,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -685,6 +691,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -699,6 +706,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -713,6 +721,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'onda-report-for-your-neurologist', 'onda-report-for-your-endocrinologist', 'onda-report-for-your-gynecologist', 'onda-report-for-your-pulmonologist', 'onda-report-for-your-occupational-health-doctor', 'onda-report-for-your-rehabilitation-team',
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
+    'how-long-does-alcohol-stay-in-your-system',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {

@@ -1623,6 +1623,36 @@
           "answer": "Quase certamente porque a métrica mudou, não a sua fisiologia. O novo relógio mede a HRV mais ou menos a cada cinco minutos (24× mais vezes) e informa a HRV de recuperação baseada no RMSSD, que normalmente é mais alta que o antigo número de SDNN. Não emende o histórico antigo com o novo — são métricas diferentes em escalas diferentes."
         }
       ]
+    },
+    "how-long-does-alcohol-stay-in-your-system": {
+      "title": "Quanto tempo o álcool fica no corpo?",
+      "description": "Quanto tempo o álcool fica no corpo, em que ritmo é eliminado (~uma dose por hora), por que nada acelera isso e o efeito no sono e na recuperação.",
+      "neuralSuggestion": {
+        "text": "Estime seu álcool no sangue e as horas até ele zerar para o seu peso e o que você bebeu.",
+        "linkText": "Calculadora de álcool no sangue →"
+      },
+      "content": "\n## [ RASTREANDO A ELIMINAÇÃO ]\n\n> \"‘Quanto tempo o álcool fica no corpo?’ A resposta, no sangue, é mais simples do que se gostaria: o fígado elimina o álcool num ritmo quase fixo — cerca de uma dose padrão por hora — e praticamente nada acelera isso. Café, banho frio, uma refeição pesada, ‘suar para eliminar’ — nada disso deixa você sóbrio mais rápido; só transforma um bêbado num bêbado mais desperto. No modelo Biocomputador ONDA, o álcool é um reservatório que esvazia devagar: só o tempo o esvazia.\"\n\n---\n\n## Seção 1: Em que ritmo ele é eliminado\n\nDepois que chega ao sangue, o álcool é eliminado a aproximadamente **0,15‰ (0,015% de BAC) por hora** — perto de **uma dose padrão (14 g) por hora**. Assim, um nível de 0,8‰ (0,08%) leva cerca de cinco horas para chegar a zero; quatro ou cinco doses numa noite podem significar álcool no corpo por mais de 4–6 horas, às vezes até a manhã seguinte.\n\nOs *vestígios* detectáveis ficam muito mais tempo do que o nível que *prejudica*: o álcool aparece na urina por até ~12–24 horas e, em exames específicos (EtG), por dias — mas isso é detecção, não embriaguez. Para ver como ele é realmente eliminado do sangue para o seu peso e o que você bebeu, use a [Calculadora de álcool no sangue](/tools/alcohol).\n\n---\n\n## Seção 2: Por que nada acelera isso\n\nO fator limitante são as enzimas do fígado (principalmente a álcool desidrogenase), que trabalham num ritmo quase constante que não dá para apressar. A cafeína mascara a sonolência, mas não altera o álcool no sangue; a comida desacelera a *absorção* (reduzindo o pico), mas não a *eliminação*; a água ajuda na ressaca, não na eliminação. Depois que você bebeu, a única variável que importa é o **tempo**.\n\nIsso varia entre as pessoas — tamanho corporal, sexo, genética, saúde do fígado e medicamentos alteram os números —, e é exatamente por isso que uma calculadora dá uma estimativa, nunca sinal verde para dirigir.\n\n---\n\n## Seção 3: O custo real — sua noite\n\n> **O Hack:** Termine a última dose pelo menos 3 horas antes de dormir.\n\n**A Ciência:** O álcool ajuda a pegar no sono, mas arruína a segunda metade da noite — suprime o sono REM, aumenta os despertares e reduz a [variabilidade da frequência cardíaca](/glossary/heart-rate-variability) noturna enquanto o corpo trabalha para metabolizá-lo. É por isso que algumas doses deixam você sem descanso e aparecem como má recuperação na manhã seguinte. Concentre o consumo mais cedo e pare cedo para proteger o [sono profundo](/glossary/deep-sleep).\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Monitor de sono / VFC na manhã seguinte\n> METRIC: VFC noturna menor e menos sono profundo após doses tardias\n> STATUS: RECOVERY_DEBT_LOGGED\n\n---\n\nConteúdo apenas educativo, não é aconselhamento médico nem jurídico. As estimativas de álcool no sangue variam muito entre as pessoas — nunca as use para decidir se é seguro ou permitido dirigir. Os limites legais variam de país para país. Se você bebeu, não dirija.\n",
+      "howToSteps": [
+        {
+          "name": "Conheça o ritmo de eliminação",
+          "text": "O corpo elimina cerca de 0,15‰ (0,015% de BAC) por hora — mais ou menos uma dose padrão por hora — não importa café, comida ou banho frio."
+        },
+        {
+          "name": "Faça a conta a partir do pico",
+          "text": "Estime o pico de álcool no sangue e subtraia ~0,15‰ (0,015%) por hora. Quatro doses podem levar 5–6+ horas para serem totalmente eliminadas."
+        },
+        {
+          "name": "Pare de beber 3+ horas antes de dormir",
+          "text": "Mesmo que você pegue no sono, metabolizar o álcool fragmenta a segunda metade da noite e reduz a VFC."
+        },
+        {
+          "name": "Nunca dirija no chute",
+          "text": "As estimativas variam muito de pessoa para pessoa — se você bebeu, providencie outra forma de voltar para casa."
+        }
+      ],
+      "imageAlt": "Quanto tempo o álcool fica no corpo: a equação de Widmark, eliminação de ~0,15‰ (0,015%) por hora e por que só o tempo reduz o álcool no sangue.",
+      "imageTitle": "[CLEARANCE_RATE]: Por que só o tempo reduz o álcool no sangue — cerca de uma dose por hora.",
+      "faq": []
     }
   },
   "series": {

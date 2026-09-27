@@ -1623,6 +1623,36 @@
           "answer": "Niemal na pewno dlatego, że zmieniła się metryka, a nie twoja fizjologia. Nowy zegarek próbkuje HRV mniej więcej co pięć minut (24× częściej) i podaje Recovery HRV oparte na RMSSD, które zwykle jest wyższe niż stara wartość SDNN. Nie zszywaj starej i nowej historii — to różne metryki w różnych skalach."
         }
       ]
+    },
+    "how-long-does-alcohol-stay-in-your-system": {
+      "title": "Ile alkohol utrzymuje się w organizmie? Czas trzeźwienia",
+      "description": "Ile alkohol utrzymuje się w organizmie, jak szybko znika (ok. jeden drink na godzinę), dlaczego nic tego nie przyspiesza i jak wpływa na sen i regenerację.",
+      "neuralSuggestion": {
+        "text": "Oszacuj promile we krwi i liczbę godzin do wytrzeźwienia dla swojej wagi i wypitych drinków.",
+        "linkText": "Kalkulator promili →"
+      },
+      "content": "\n## [ ŚLEDZENIE TRZEŹWIENIA ]\n\n> „Ile alkohol utrzymuje się w organizmie?” Odpowiedź dotycząca krwi jest prostsza, niż ludzie by chcieli: wątroba usuwa alkohol w mniej więcej stałym tempie — około jednego standardowego drinka na godzinę — i prawie nic tego nie przyspiesza. Kawa, zimny prysznic, obfity posiłek, „wypocenie” — żadne z nich nie sprawi, że szybciej wytrzeźwiejesz; robią z pijanej osoby po prostu bardziej rozbudzoną pijaną osobę. W modelu Biokomputera ONDA alkohol to powoli opróżniający się bufor: opróżnia go tylko czas.\n\n---\n\n## Sekcja 1: Jak szybko znika\n\nGdy alkohol jest już we krwi, organizm usuwa go w tempie około **0,15‰ (0,015% BAC) na godzinę** — to blisko **jednego standardowego drinka (14 g) na godzinę**. Stężenie 0,8‰ (0,08%) spada więc do zera po około pięciu godzinach; cztery lub pięć drinków w ciągu wieczoru może oznaczać alkohol w organizmie przez ponad 4–6 godzin, czasem aż do następnego ranka.\n\nWykrywalne *ślady* utrzymują się znacznie dłużej niż poziom *upośledzający sprawność*: alkohol widać w moczu nawet przez ~12–24 godziny, a w specjalistycznych testach (EtG) przez kilka dni — ale to wykrywalność, nie stan nietrzeźwości. Aby sprawdzić, jak faktycznie znika z krwi przy twojej wadze i wypitych drinkach, użyj narzędzia [Kalkulator promili](/tools/alcohol).\n\n---\n\n## Sekcja 2: Dlaczego nic tego nie przyspiesza\n\nEtapem ograniczającym tempo są enzymy wątroby (głównie dehydrogenaza alkoholowa), które pracują w niemal stałym tempie, którego nie da się przyspieszyć. Kofeina maskuje senność, ale nie zmienia stężenia alkoholu we krwi; jedzenie spowalnia *wchłanianie* (obniżając szczyt), ale nie *eliminację*; woda pomaga na kaca, nie na trzeźwienie. Jedyną zmienną, która ma znaczenie po wypiciu, jest **czas**.\n\nTempo różni się między ludźmi — rozmiar ciała, płeć, genetyka, stan wątroby i leki zmieniają liczby — i właśnie dlatego kalkulator daje szacunek, nigdy zielone światło do jazdy.\n\n---\n\n## Sekcja 3: Prawdziwy koszt — twoja noc\n\n> **Trik:** Skończ ostatniego drinka co najmniej 3 godziny przed snem.\n\n**Nauka:** Alkohol pomaga zasnąć, ale rujnuje drugą połowę nocy — tłumi sen REM, zwiększa liczbę przebudzeń i obniża nocną [zmienność rytmu serca](/glossary/heart-rate-variability), gdy organizm pracuje nad jego metabolizowaniem. Dlatego po kilku drinkach budzisz się niewypoczęty, a następnego ranka widać słabą regenerację. Pij wcześniej i kończ wcześnie, by chronić [sen głęboki](/glossary/deep-sleep).\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Tracker snu / HRV następnego ranka\n> METRIC: Niższe nocne HRV i mniej snu głębokiego po późnych drinkach\n> STATUS: RECOVERY_DEBT_LOGGED\n\n---\n\nWyłącznie w celach edukacyjnych, nie stanowi porady medycznej ani prawnej. Szacunki stężenia alkoholu we krwi bardzo różnią się między osobami — nigdy nie używaj ich do decydowania, czy jazda jest bezpieczna lub zgodna z prawem. Jeśli piłeś alkohol, nie prowadź.\n",
+      "howToSteps": [
+        {
+          "name": "Poznaj tempo trzeźwienia",
+          "text": "Organizm usuwa około 0,15‰ (0,015% BAC) na godzinę — mniej więcej jeden standardowy drink na godzinę — niezależnie od kawy, jedzenia czy zimnego prysznica."
+        },
+        {
+          "name": "Policz od szczytu",
+          "text": "Oszacuj szczytowe stężenie, a następnie odejmuj ~0,15‰ (0,015%) na godzinę. Pełne wytrzeźwienie po czterech drinkach może zająć 5–6+ godzin."
+        },
+        {
+          "name": "Przestań pić 3+ godziny przed snem",
+          "text": "Nawet jeśli zaśniesz, metabolizowanie alkoholu fragmentuje drugą połowę nocy i obniża HRV."
+        },
+        {
+          "name": "Nigdy nie prowadź „na oko”",
+          "text": "Szacunki mają ogromne różnice indywidualne — jeśli piłeś, zorganizuj sobie inny powrót do domu."
+        }
+      ],
+      "imageAlt": "Ile alkohol utrzymuje się w organizmie: wzór Widmarka, trzeźwienie ~0,15‰ (0,015%) na godzinę i dlaczego tylko czas obniża promile we krwi.",
+      "imageTitle": "[CLEARANCE_RATE]: Dlaczego tylko czas obniża promile we krwi — około jeden drink na godzinę.",
+      "faq": []
     }
   },
   "series": {

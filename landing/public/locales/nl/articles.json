@@ -1623,6 +1623,36 @@
           "answer": "Vrijwel zeker omdat de meetwaarde veranderde, niet je fysiologie. Het nieuwe horloge meet HRV ongeveer elke vijf minuten (24× vaker) en rapporteert de op RMSSD gebaseerde Recovery HRV, die meestal hoger ligt dan het oude SDNN-getal. Plak de oude en nieuwe historie niet aan elkaar — het zijn verschillende meetwaarden op verschillende schalen."
         }
       ]
+    },
+    "how-long-does-alcohol-stay-in-your-system": {
+      "title": "Hoe lang blijft alcohol in je lichaam (en bloed)?",
+      "description": "Hoe lang blijft alcohol in je lichaam? Afbraak gaat met ~één glas per uur, niets versnelt het, en wat alcohol doet met je slaap en herstel.",
+      "neuralSuggestion": {
+        "text": "Schat je promillage en hoeveel uur het duurt tot het op nul staat, voor jouw gewicht en drankjes.",
+        "linkText": "Promillage berekenen: alcohol in je bloed en tijd tot nuchter →"
+      },
+      "content": "\n## [ DE AFBRAAK VOLGEN ]\n\n> \"‘Hoe lang blijft alcohol in je lichaam?’ Voor je bloed is het antwoord eenvoudiger dan mensen hopen: je lever breekt alcohol af in een vrij vast tempo — ongeveer één standaardglas per uur — en bijna niets versnelt dat. Koffie, een koude douche, een flinke maaltijd, ‘het eruit zweten’ — niets daarvan maakt je sneller nuchter; ze maken van een dronken persoon alleen een alertere dronken persoon. In het ONDA Biocomputer-model is alcohol een buffer die langzaam leegloopt: alleen tijd maakt hem leeg.\"\n\n---\n\n## Deel 1: Hoe snel het wordt afgebroken\n\nZodra het in je bloed zit, wordt alcohol afgebroken met ongeveer **0,15‰ (0,015% BAC) per uur** — bijna **één standaardglas (14 g) per uur**. Een promillage van 0,8‰ (0,08%) heeft dus ongeveer vijf uur nodig om op nul te komen; vier of vijf drankjes op een avond kunnen betekenen dat er na 4–6 uur nog alcohol in je lichaam zit, soms tot de volgende ochtend.\n\nDe aantoonbare *sporen* blijven veel langer dan het *beïnvloedende* niveau: alcohol is tot ~12–24 uur in urine te zien, en met gespecialiseerde tests (EtG) dagenlang — maar dat is detectie, geen dronkenschap. Wil je weten hoe het voor jouw gewicht en drankjes uit je bloed verdwijnt, gebruik dan [Promillage berekenen: alcohol in je bloed en tijd tot nuchter](/tools/alcohol).\n\n---\n\n## Deel 2: Waarom niets het versnelt\n\nDe beperkende stap zijn de enzymen van je lever (vooral alcoholdehydrogenase), die in een bijna constant tempo werken dat je niet kunt opjagen. Cafeïne maskeert slaperigheid maar verandert je promillage niet; eten vertraagt de *opname* (en verlaagt de piek) maar niet de *afbraak*; water helpt tegen de kater, niet bij de afbraak. De enige factor die telt als je eenmaal gedronken hebt, is **tijd**.\n\nHet verschilt wel per persoon — lichaamsbouw, geslacht, genetica, de gezondheid van je lever en medicijnen verschuiven de getallen — en precies daarom geeft een calculator een schatting, nooit groen licht om te rijden.\n\n---\n\n## Deel 3: De echte prijs — je nacht\n\n> **De hack:** Drink je laatste glas minstens 3 uur voor het slapengaan.\n\n**De wetenschap:** Alcohol helpt je in slaap te vallen, maar verwoest de tweede helft van de nacht — het onderdrukt REM-slaap, zorgt voor meer keren wakker worden en verlaagt je nachtelijke [hartslagvariabiliteit](/glossary/heart-rate-variability) terwijl je lichaam bezig is het af te breken. Daarom word je na een paar drankjes onuitgerust wakker en zie je de volgende ochtend een slecht herstel. Drink vroeg op de avond en stop op tijd om je [diepe slaap](/glossary/deep-sleep) te beschermen.\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Slaap-/HRV-tracker de ochtend erna\n> METRIC: Lagere nachtelijke HRV en minder diepe slaap na late drankjes\n> STATUS: RECOVERY_DEBT_LOGGED\n\n---\n\nAlleen ter informatie, geen medisch of juridisch advies. Schattingen van het promillage verschillen sterk per persoon — gebruik ze nooit om te bepalen of je veilig of legaal kunt rijden. Heb je gedronken, rijd dan niet.\n",
+      "howToSteps": [
+        {
+          "name": "Ken het afbraaktempo",
+          "text": "Je lichaam breekt ongeveer 0,15‰ (0,015% BAC) per uur af — ongeveer één standaardglas per uur — ongeacht koffie, eten of een koude douche."
+        },
+        {
+          "name": "Reken vanaf je piek",
+          "text": "Schat je piekpromillage en trek er ~0,15‰ (0,015%) per uur vanaf. Na vier drankjes kan het 5–6+ uur duren voordat alles is afgebroken."
+        },
+        {
+          "name": "Stop 3+ uur voor het slapengaan",
+          "text": "Ook als je in slaap valt, versnippert het afbreken van alcohol de tweede helft van de nacht en verlaagt het je HRV."
+        },
+        {
+          "name": "Rijd nooit op een gok",
+          "text": "Schattingen verschillen enorm per persoon — heb je gedronken, regel dan een andere manier om thuis te komen."
+        }
+      ],
+      "imageAlt": "Hoe lang alcohol in je lichaam blijft: de formule van Widmark, afbraak van ~0,15‰ (0,015%) per uur, en waarom alleen tijd je promillage verlaagt.",
+      "imageTitle": "[CLEARANCE_RATE]: Waarom alleen tijd je promillage verlaagt — ongeveer één glas per uur.",
+      "faq": []
     }
   },
   "series": {

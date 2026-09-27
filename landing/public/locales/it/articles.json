@@ -1623,6 +1623,36 @@
           "answer": "Quasi certamente perché è cambiata la metrica, non la tua fisiologia. Il nuovo orologio campiona la HRV circa ogni cinque minuti (24 volte più spesso) e riporta la HRV di recupero basata sull’RMSSD, che di solito è più alta del vecchio valore SDNN. Non unire lo storico vecchio e quello nuovo: sono metriche diverse su scale diverse."
         }
       ]
+    },
+    "how-long-does-alcohol-stay-in-your-system": {
+      "title": "Quanto tempo resta l'alcol nel corpo e nel sangue?",
+      "description": "Quanto resta l'alcol nel corpo, quanto velocemente si smaltisce (~un drink all'ora), perché niente lo accelera e cosa fa al sonno e al recupero.",
+      "neuralSuggestion": {
+        "text": "Stima il tuo tasso alcolemico e le ore necessarie per smaltirlo in base al tuo peso e a ciò che hai bevuto.",
+        "linkText": "Calcolo tasso alcolemico: alcol nel sangue e tempo per smaltirlo →"
+      },
+      "content": "\n## [ TRACKING THE CLEARANCE ]\n\n> \"‘Quanto tempo resta l'alcol nel corpo?’ Per il sangue la risposta è più semplice di quanto si speri: il fegato smaltisce l'alcol a un ritmo più o meno fisso — circa un drink standard all'ora — e quasi niente lo accelera. Caffè, doccia fredda, un pasto abbondante, ‘smaltirlo sudando’: nessuno di questi ti fa tornare sobrio prima; rendono solo un ubriaco un ubriaco più sveglio. Nel modello ONDA Biocomputer l'alcol è un buffer che si svuota lentamente: solo il tempo lo svuota.\"\n\n---\n\n## Sezione 1: Quanto velocemente viene smaltito\n\nUna volta nel sangue, l'alcol viene eliminato a circa **0,15‰ (0,015% BAC) all'ora** — vicino a **un drink standard (14 g) all'ora**. Quindi un tasso alcolemico di 0,8‰ (0,08%) impiega circa cinque ore per arrivare a zero; quattro o cinque drink in una serata possono significare alcol in circolo oltre 4–6 ore, a volte fino al mattino dopo.\n\nLe *tracce* rilevabili restano molto più a lungo del livello che *altera*: l'alcol compare nelle urine fino a ~12–24 ore, e nei test specialistici (EtG) per giorni — ma si tratta di rilevamento, non di ebbrezza. Per sapere come viene davvero smaltito dal sangue in base al tuo peso e a ciò che hai bevuto, usa il [Calcolo tasso alcolemico: alcol nel sangue e tempo per smaltirlo](/tools/alcohol).\n\n---\n\n## Sezione 2: Perché niente lo accelera\n\nIl passaggio limitante sono gli enzimi del fegato (soprattutto l'alcol deidrogenasi), che lavorano a un ritmo quasi costante che non puoi velocizzare. La caffeina maschera la sonnolenza ma non cambia il tasso alcolemico; il cibo rallenta l'*assorbimento* (abbassando il picco) ma non l'*eliminazione*; l'acqua aiuta con i postumi, non con lo smaltimento. Una volta che hai bevuto, l'unica variabile che conta è il **tempo**.\n\nVaria però da persona a persona — corporatura, sesso, genetica, salute del fegato e farmaci spostano i numeri — ed è proprio per questo che un calcolatore dà una stima, mai un via libera per guidare.\n\n---\n\n## Sezione 3: Il vero costo — la tua notte\n\n> **Il trucco:** Finisci l'ultimo drink almeno 3 ore prima di andare a letto.\n\n**La scienza:** L'alcol aiuta ad addormentarsi ma rovina la seconda metà della notte — sopprime il sonno REM, aumenta i risvegli e abbassa la [variabilità della frequenza cardiaca](/glossary/heart-rate-variability) notturna mentre il corpo lavora per metabolizzarlo. Ecco perché qualche drink ti lascia poco riposato e si traduce in un recupero scarso il mattino dopo. Concentra il bere all'inizio e smetti presto per proteggere il [sonno profondo](/glossary/deep-sleep).\n\n> [ HARDWARE_VALIDATION ]\n> VALIDATION_DEVICE: Sleep / HRV tracker the morning after\n> METRIC: Lower overnight HRV and less deep sleep after late drinks\n> STATUS: RECOVERY_DEBT_LOGGED\n\n---\n\nSolo a scopo informativo, non è un parere medico o legale. Le stime del tasso alcolemico variano molto da persona a persona — non usarle mai per decidere se è sicuro o legale guidare. I limiti legali cambiano da Paese a Paese. Se hai bevuto, non metterti alla guida.\n",
+      "howToSteps": [
+        {
+          "name": "Conosci la velocità di smaltimento",
+          "text": "Il corpo smaltisce circa 0,15‰ (0,015% BAC) all'ora — più o meno un drink standard all'ora — indipendentemente da caffè, cibo o docce fredde."
+        },
+        {
+          "name": "Fai i conti partendo dal picco",
+          "text": "Stima il tasso alcolemico di picco, poi sottrai ~0,15‰ (0,015%) all'ora. Quattro drink possono richiedere 5–6+ ore per essere smaltiti del tutto."
+        },
+        {
+          "name": "Smetti di bere almeno 3 ore prima di dormire",
+          "text": "Anche se ti addormenti, metabolizzare l'alcol frammenta la seconda metà della notte e abbassa l'HRV."
+        },
+        {
+          "name": "Non guidare mai basandoti su un'ipotesi",
+          "text": "Le stime variano enormemente da persona a persona — se hai bevuto, organizzati per tornare a casa in un altro modo."
+        }
+      ],
+      "imageAlt": "Quanto tempo resta l'alcol nel corpo: la formula di Widmark, smaltimento di ~0,15‰ (0,015%) all'ora e perché solo il tempo abbassa il tasso alcolemico.",
+      "imageTitle": "[CLEARANCE_RATE]: Perché solo il tempo abbassa il tasso alcolemico — circa un drink all'ora.",
+      "faq": []
     }
   },
   "series": {
