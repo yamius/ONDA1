@@ -20,7 +20,7 @@
 const ENV = ((import.meta as unknown as { env?: Record<string, string | undefined> }).env) ?? {};
 
 /** The iCloud link to the Shortcut itself. Set VITE_BASELINE_SHORTCUT_URL once it is shared. */
-export const SHORTCUT_URL = ENV.VITE_BASELINE_SHORTCUT_URL || "";
+export const SHORTCUT_URL = ENV.VITE_BASELINE_SHORTCUT_URL || "https://www.icloud.com/shortcuts/d42a97ebf83a4e379be993723fec0317";
 
 /** Has the Shortcut link been published yet? The button is not rendered as a dead end without it. */
 export const SHORTCUT_READY = SHORTCUT_URL.length > 0;
