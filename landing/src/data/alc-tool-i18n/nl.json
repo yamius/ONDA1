@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Promillage berekenen — tijd tot nuchter | ONDA Life",
+    "description": "Promillage berekenen: vul je drankjes, gewicht en geslacht in en schat je promillage en hoeveel uur tot het weer 0 is. Educatief — rijd nooit na drinken.",
+    "appName": "Promillage berekenen — alcohol in je bloed en tijd tot nuchter",
+    "appDescription": "Gratis calculator die je bloedalcoholgehalte (in promille en %) schat en de tijd tot het weer nul is, met de formule van Widmark."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Promillage berekenen"
+  },
+  "h1": "Promillage berekenen: alcohol in je bloed en tijd tot nuchter",
+  "capsule": "Je lichaam breekt alcohol af in een vrij vast tempo — ongeveer 0,15‰ (0,015% BAC) per uur, grofweg één drankje per uur — en niets versnelt dat. Vul in wat je gedronken hebt, je gewicht en je geslacht om je promillage te schatten en hoeveel uur het duurt tot het op nul staat. Het is een schatting: gebruik het nooit om te bepalen of je kunt rijden.",
+  "imageAlt": "Promillage berekenen — alcohol in je bloed en tijd tot nuchter, gratis tool van ONDA Life",
+  "warning": "Alleen een educatieve schatting, met grote verschillen per persoon. Dit is geen hulpmiddel om te bepalen of je veilig of legaal kunt rijden. Heb je gedronken, rijd dan niet.",
+  "form": {
+    "weight": "Lichaamsgewicht",
+    "sex": "Geslacht",
+    "male": "Man",
+    "female": "Vrouw",
+    "drinks": "Wat je gedronken hebt",
+    "hours": "Uren sinds je eerste drankje",
+    "custom": "Ander drankje",
+    "ml": "ml",
+    "abv": "% alcohol",
+    "add": "Toevoegen",
+    "remove": "Verwijderen",
+    "total": "Totaal pure alcohol: {{g}} g",
+    "empty": "Voeg minstens één drankje toe."
+  },
+  "drinks": {
+    "beer": "Bier 0,5 l (5%)",
+    "beerSmall": "Bier 0,33 l (5%)",
+    "wine": "Glas wijn 150 ml (12%)",
+    "spirits": "Shotje sterke drank 40 ml (40%)"
+  },
+  "result": {
+    "now": "Geschat promillage nu",
+    "peak": "Piek ≈ {{permille}}‰ ({{pct}}%)",
+    "sober": "tot ~0,0‰ (volledig afgebroken)",
+    "units": "‰ = promille (g/l), gebruikt in het grootste deel van Europa · % = BAC, gebruikt in de VS"
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "u",
+    "m": "min",
+    "now": "nu"
+  },
+  "invalid": "Vul een geldig lichaamsgewicht in (30–250 kg) en minstens één drankje.",
+  "disclaimer": "Geschat met de formule van Widmark en een gemiddelde afbraaksnelheid van 0,15‰ (0,015%) per uur. Echte waarden hangen af van genen, eten, medicijnen, de gezondheid van je lever en hoe snel je dronk. Wettelijke limieten verschillen per land en liggen vaak lager dan mensen denken — in sommige landen geldt nul. Rijd nooit na het drinken van alcohol.",
+  "sections": [
+    {
+      "h2": "Hoe lang blijft alcohol in je bloed?",
+      "body": "Je lever breekt alcohol af in een vrij constant tempo — gemiddeld ongeveer 0,15‰ (0,015% BAC) per uur, wat voor veel volwassenen neerkomt op zo'n één drankje per uur. Hoe lang het duurt voordat je nuchter bent, hangt dus vooral af van hoeveel je dronk: twee bier van 0,5 l zijn bij een man van 75 kg na ongeveer 5 uur afgebroken (langer bij iemand die lichter is of bij een vrouw), en na een avond met vijf of zes drankjes kan het 8–12 uur of langer duren — vaak tot de volgende ochtend. Alcohol is langer aantoonbaar dan je het merkt: in adem en bloed tot ongeveer 12–24 uur na flink drinken, en in urine ongeveer 1–3 dagen met EtG-tests. Volledige uitleg: [hoe lang alcohol in je lichaam blijft](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "Alcohol afbraak berekenen: zo werkt de formule",
+      "body": "Deze calculator gebruikt de formule van Widmark, de standaardmethode in de forensische geneeskunde: grammen pure alcohol gedeeld door je lichaamsgewicht en een verdelingsfactor (ongeveer 0,68 voor mannen en 0,55 voor vrouwen, door een verschillend aandeel lichaamsvocht), min wat je lichaam sinds het eerste drankje heeft afgebroken. Het aantal grammen alcohol volgt uit volume × alcoholpercentage × 0,789 (de dichtheid van ethanol) — een bier van 0,5 l met 5% bevat ongeveer 20 g. De uitkomst zie je in promille (‰, gram per liter bloed), gebruikt in het grootste deel van Europa, en in procent (BAC %, gram per 100 ml), gebruikt in de VS: 0,5‰ = 0,05%. Dezelfde drankjes geven een hoger promillage bij een lichter persoon, bij vrouwen en op een lege maag."
+    },
+    {
+      "h2": "Kun je sneller nuchter worden?",
+      "body": "Nee. Koffie, een koude douche, frisse lucht, sporten of een vet ontbijt kunnen je alerter laten voelen, maar ze verlagen je promillage niet — alleen tijd doet dat, omdat de lever in een bijna constant tempo werkt. Eten vóór of tijdens het drinken vertraagt de opname en kan de piek verlagen, en water helpt tegen uitdroging, maar geen van beide versnelt de afbraak. Daarom is 'uitslapen' vaak niet genoeg: na een late avond met veel drank kun je de volgende ochtend nog boven de limiet zitten."
+    },
+    {
+      "h2": "Wat alcohol doet met je slaap, HRV en rusthartslag",
+      "body": "Alcohol helpt je in slaap te vallen, maar verstoort de tweede helft van de nacht: het onderdrukt de REM-slaap, zorgt voor vaker wakker worden en laat je hart harder werken terwijl je lichaam de alcohol verwerkt. Wearables laten dat duidelijk zien — zelfs één of twee drankjes verhogen meestal je nachtelijke rusthartslag en verlagen je hartslagvariabiliteit (HRV), en na flink drinken kan het effect tot de volgende nacht aanhouden. Daarom daalt je herstelscore na een feestje, ook als je lang genoeg sliep. Bekijk de data: [hoeveel alcohol je HRV verlaagt](/articles/how-much-alcohol-lowers-hrv). Check je eigen waarden: [HRV-calculator per leeftijd](/tools/hrv) en [rusthartslag per leeftijd](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Hoeveel alcohol zit er in één drankje?",
+      "body": "Een 'standaardglas' betekent per land iets anders: 14 g pure alcohol in de VS, 10 g in een groot deel van Europa, Australië en Japan, en 8 g (één unit) in het Verenigd Koninkrijk. Daarom telt deze calculator de grammen uit wat je echt gedronken hebt. Gangbare hoeveelheden: een bier van 0,5 l met 5% bevat ongeveer 20 g, een flesje van 0,33 l ongeveer 13 g, een glas wijn van 150 ml met 12% ongeveer 14 g, en een shotje van 40 ml met 40% ongeveer 13 g. Zware speciaalbieren, grote wijnglazen en thuis ingeschonken glazen kunnen veel meer bevatten dan je denkt."
+    }
+  ],
+  "faqTitle": "Promillage berekenen — veelgestelde vragen",
+  "faq": [
+    {
+      "q": "Hoe lang duurt het voordat alcohol uit je lichaam is?",
+      "a": "Gemiddeld breekt het lichaam ongeveer 0,15‰ (0,015% BAC) per uur af — grofweg één drankje per uur. Twee bier van 0,5 l duren bij een man van 75 kg ongeveer 5 uur; vijf of zes drankjes kunnen 8–12 uur of langer duren."
+    },
+    {
+      "q": "Hoe lang blijft één biertje in je bloed?",
+      "a": "Een bier van 0,5 l met 5% (ongeveer 20 g alcohol) is bij een gemiddelde volwassene meestal na ongeveer 2–3 uur afgebroken, en een flesje van 0,33 l na ongeveer 1,5–2 uur. Bij lichtere mensen en vrouwen duurt het langer."
+    },
+    {
+      "q": "Hoe lang blijft wijn in je bloed?",
+      "a": "Een glas wijn van 150 ml met 12% bevat ongeveer 14 g alcohol en is meestal na ongeveer 2–3 uur afgebroken. Een fles (750 ml) kan 8 uur of langer duren."
+    },
+    {
+      "q": "Wat is het verschil tussen ‰ en BAC %?",
+      "a": "Promille (‰) betekent gram alcohol per liter bloed en wordt in het grootste deel van Europa gebruikt; BAC % betekent gram per 100 ml en wordt in de VS gebruikt. 0,5‰ is gelijk aan 0,05% BAC."
+    },
+    {
+      "q": "Word ik sneller nuchter van koffie of een douche?",
+      "a": "Nee. Je kunt je er wakkerder door voelen, maar alleen tijd verlaagt je promillage. Eten vóór het drinken vertraagt de opname; niets versnelt de afbraak."
+    },
+    {
+      "q": "Kan ik met deze calculator bepalen of ik mag rijden?",
+      "a": "Nee. Het is een educatieve schatting met grote verschillen per persoon, en wettelijke limieten verschillen per land (in sommige geldt nul). Heb je gedronken, rijd dan niet."
+    },
+    {
+      "q": "Waarom verpest alcohol mijn slaap en herstel?",
+      "a": "Het verstoort de tweede helft van de nacht, onderdrukt de REM-slaap, verhoogt je nachtelijke rusthartslag en verlaagt je HRV terwijl je lichaam de alcohol verwerkt — daarom tonen wearables na het drinken een slecht herstel."
+    },
+    {
+      "q": "Waarom krijgen vrouwen een hoger promillage dan mannen?",
+      "a": "Vrouwen hebben gemiddeld minder lichaamsvocht per kilogram, waardoor dezelfde hoeveelheid alcohol meer geconcentreerd is. De formule van Widmark gebruikt een verdelingsfactor van ongeveer 0,55 voor vrouwen tegenover 0,68 voor mannen."
+    }
+  ],
+  "sourcesTitle": "Bronnen en methode",
+  "methodology": "Het promillage wordt geschat met de formule van Widmark: grammen pure alcohol (volume × alcoholpercentage × 0,789 g/ml) gedeeld door lichaamsgewicht en een verdelingsfactor (ongeveer 0,68 voor mannen en 0,55 voor vrouwen, volgens Watson 1981), min de alcohol die sinds het eerste drankje is afgebroken met een gemiddelde snelheid van 0,015% (0,15‰) per uur (gebruikelijke spreiding 0,013–0,017%, Jones 2010). De opname wordt als direct behandeld, dus de echte piek ligt meestal iets lager en later. Waarden variëren sterk door genen, eten, medicijnen, geslacht en de gezondheid van de lever. Alleen een educatieve schatting — niet geschikt om te bepalen of je veilig of legaal kunt rijden.",
+  "sourcesContributes": [
+    "Basis voor de verdelingsfactoren (r ≈ 0,68 mannen, 0,55 vrouwen) in de Widmark-berekening.",
+    "Onderbouwt de afbraaksnelheid van ~0,015% per uur (gebruikelijke spreiding 0,013–0,017) waarmee de tijd tot nuchter wordt berekend.",
+    "Definieert het Amerikaanse standaardglas als 14 g pure alcohol (andere landen gebruiken 8–10 g) — daarom telt deze tool grammen op basis van volume en alcoholpercentage."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "article": "Hoe lang alcohol in je lichaam blijft",
+    "hrvArticle": "Hoeveel alcohol je HRV verlaagt",
+    "hrv": "HRV-calculator per leeftijd",
+    "sleep": "Slaaptekort berekenen"
+  }
+}

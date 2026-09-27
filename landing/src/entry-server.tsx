@@ -242,6 +242,17 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/tdee"            element={<TdeeCalculatorPage />} />
           <Route path="/tools/water"           element={<WaterIntakeCalculatorPage />} />
           <Route path="/tools/alcohol"         element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/es/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/ru/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/uk/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/zh/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/de/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/fr/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/it/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/nl/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/ja/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/pl/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
+          <Route path="/pt/tools/alcohol" element={<AlcoholClearanceCalculatorPage />} />
           <Route path="/tools/fasting"         element={<FastingCalculatorPage />} />
           <Route path="/tools/jet-lag"         element={<JetlagPlannerPage />} />
           <Route path="/tools/one-rep-max"     element={<OneRepMaxCalculatorPage />} />

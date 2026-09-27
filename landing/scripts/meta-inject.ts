@@ -52,7 +52,7 @@ import { PROTEIN_FAQ } from '../src/data/protein-target'
 import { VO2MAX_FAQ } from '../src/data/vo2max'
 import { TDEE_FAQ } from '../src/data/tdee'
 import { WATER_FAQ } from '../src/data/water-intake'
-import { ALCOHOL_FAQ } from '../src/data/alcohol-clearance'
+import { alcToolCopy } from '../src/data/alc-tool-i18n'
 import { FASTING_FAQ } from '../src/data/fasting'
 import { JETLAG_FAQ } from '../src/data/jetlag'
 import { ONE_REP_MAX_FAQ } from '../src/data/one-rep-max'
@@ -554,7 +554,7 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
     } else if (segments[1] === 'water') {
       items.push({ name: 'Water Intake', url: `${SITE_URL}/tools/water` })
     } else if (segments[1] === 'alcohol') {
-      items.push({ name: 'Alcohol Clearance', url: `${SITE_URL}/tools/alcohol` })
+      items.push({ name: 'Alcohol Calculator', url: `${SITE_URL}/tools/alcohol` })
     } else if (segments[1] === 'fasting') {
       items.push({ name: 'Fasting', url: `${SITE_URL}/tools/fasting` })
     } else if (segments[1] === 'jet-lag') {
@@ -2071,16 +2071,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: WATER_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
-  if (route === '/tools/alcohol') {
+  // /tools/alcohol — published in all 12 languages (copy in src/data/alc-tool-i18n).
+  if (route === '/tools/alcohol' || /^\/[a-z]{2}\/tools\/alcohol$/.test(route)) {
+    const lang = (route === '/tools/alcohol' ? 'en' : route.slice(1, 3)) as Lang
+    const c = alcToolCopy(lang)
     return {
-      title: 'Alcohol Clearance Calculator — Time to Sober Up | ONDA Life',
-      description:
-        'Free alcohol clearance calculator: estimate your blood-alcohol level and how many hours until it returns to zero using the Widmark equation. Educational only — never drive after drinking.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/alcohol.png`,
-      faq: { mainEntity: ALCOHOL_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/alcohol.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/fasting') {

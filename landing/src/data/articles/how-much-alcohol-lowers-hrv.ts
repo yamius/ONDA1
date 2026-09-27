@@ -30,6 +30,8 @@ Alcohol lowers your heart rate variability (HRV) and raises your resting heart r
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
 
+**Estimate your blood alcohol and time until sober → [Alcohol Calculator: BAC and Time Until Sober](/tools/alcohol)**
+
 ## The dose-response: what each drink costs
 
 The clearest way to see alcohol's effect is by number of standard drinks in one night. Analysis of aggregate wearable data shows a consistent dose-response curve for both heart rate variability (which drops) and sleeping heart rate (which rises):

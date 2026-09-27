@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Calculadora de alcohol en sangre y tiempo | ONDA Life",
+    "description": "Calculadora de alcohol en sangre gratis: tasa de alcoholemia (‰ y %) y cuánto tarda en eliminarse el alcohol. Orientativa: nunca conduzcas tras beber.",
+    "appName": "Calculadora de alcohol en sangre — alcoholemia y tiempo de eliminación",
+    "appDescription": "Calculadora gratuita que estima la concentración de alcohol en sangre (en por mil y en %) y el tiempo hasta que vuelve a cero, con la fórmula de Widmark."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "current": "Calculadora de alcohol en sangre"
+  },
+  "h1": "Calculadora de alcohol en sangre",
+  "capsule": "El cuerpo elimina el alcohol a un ritmo casi fijo —unos 0,15‰ (0,015 % BAC) por hora, más o menos una bebida por hora— y nada lo acelera. Indica lo que bebiste, tu peso y tu sexo para estimar tu tasa de alcoholemia y cuántas horas faltan para llegar a cero. Es una estimación: nunca la uses para decidir si puedes conducir.",
+  "imageAlt": "Calculadora de alcohol en sangre: tasa de alcoholemia y tiempo de eliminación, herramienta gratuita de ONDA Life",
+  "warning": "Solo es una estimación educativa, con grandes diferencias entre personas. No es una herramienta para decidir si es seguro o legal conducir. Si has bebido, no conduzcas.",
+  "form": {
+    "weight": "Peso corporal",
+    "sex": "Sexo",
+    "male": "Hombre",
+    "female": "Mujer",
+    "drinks": "Qué bebiste",
+    "hours": "Horas desde la primera bebida",
+    "custom": "Otra bebida",
+    "ml": "ml",
+    "abv": "% de alcohol",
+    "add": "Añadir",
+    "remove": "Quitar",
+    "total": "Alcohol puro total: {{g}} g",
+    "empty": "Añade al menos una bebida."
+  },
+  "drinks": {
+    "beer": "Cerveza 0,5 l (5 %)",
+    "beerSmall": "Cerveza 0,33 l (5 %)",
+    "wine": "Copa de vino 150 ml (12 %)",
+    "spirits": "Chupito de destilado 40 ml (40 %)"
+  },
+  "result": {
+    "now": "Alcohol en sangre estimado ahora",
+    "peak": "Pico ≈ {{permille}}‰ ({{pct}} %)",
+    "sober": "hasta ~0,0‰ (totalmente eliminado)",
+    "units": "‰ = por mil (g/l), se usa en la mayor parte de Europa y América Latina · % = BAC, se usa en EE. UU."
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "h",
+    "m": "min",
+    "now": "ahora"
+  },
+  "invalid": "Introduce un peso válido (30–250 kg) y al menos una bebida.",
+  "disclaimer": "Estimación con la fórmula de Widmark y una tasa media de eliminación de 0,15‰ (0,015 %) por hora. Los valores reales varían según la genética, la comida, los medicamentos, la salud del hígado y la rapidez con la que bebiste. Los límites legales para conducir cambian según el país y suelen ser más bajos de lo que se cree; en algunos es cero. Nunca conduzcas después de beber.",
+  "sections": [
+    {
+      "h2": "¿Cuánto dura el alcohol en la sangre?",
+      "body": "El hígado descompone el alcohol a un ritmo bastante constante: de media unos 0,15‰ (0,015 % BAC) por hora, lo que equivale a más o menos una bebida por hora en muchos adultos. Por eso el tiempo depende sobre todo de cuánto bebiste: dos cervezas de 0,5 l tardan unas 5 horas en eliminarse en un hombre de 75 kg (más en una persona de menos peso o en una mujer), y tras una noche de cinco o seis copas pueden hacer falta 8–12 horas o más, a menudo hasta la mañana siguiente. El alcohol se puede detectar durante más tiempo del que te afecta: en aliento y sangre hasta unas 12–24 horas después de beber mucho, y en orina alrededor de 1–3 días con pruebas de EtG. Guía completa: [cuánto tiempo permanece el alcohol en el cuerpo](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "¿Cómo se calcula la tasa de alcoholemia?",
+      "body": "Esta calculadora usa la fórmula de Widmark, el método estándar en medicina forense: los gramos de alcohol puro divididos entre el peso corporal y un coeficiente de distribución (unos 0,68 en hombres y 0,55 en mujeres, por la distinta proporción de agua corporal), menos lo que el cuerpo ha eliminado desde la primera bebida. Los gramos de alcohol salen de volumen × graduación × 0,789 (la densidad del etanol): una cerveza de 0,5 l al 5 % contiene unos 20 g. El resultado se muestra en por mil (‰, gramos por litro de sangre), habitual en la mayor parte de Europa, y en porcentaje (BAC %, gramos por 100 ml), habitual en EE. UU.: 0,5‰ = 0,05 %. Las mismas bebidas dan un nivel más alto en personas de menos peso, en mujeres y con el estómago vacío."
+    },
+    {
+      "h2": "¿Cuánto tarda en eliminarse el alcohol? ¿Se puede acelerar?",
+      "body": "No se puede acelerar. El café, una ducha fría, el aire fresco, el ejercicio o un desayuno contundente pueden hacerte sentir más despierto, pero no bajan el alcohol en sangre: solo el tiempo lo hace, porque el hígado trabaja a un ritmo casi constante. Comer antes o mientras bebes frena la absorción y puede reducir el pico, y el agua ayuda con la deshidratación, pero ninguna de las dos cosas acelera la eliminación. Por eso «dormir la mona» a menudo no basta: tras una noche larga bebiendo, a la mañana siguiente todavía puedes superar el límite."
+    },
+    {
+      "h2": "Cómo afecta el alcohol al sueño, la VFC y la frecuencia cardíaca en reposo",
+      "body": "El alcohol ayuda a conciliar el sueño, pero altera la segunda mitad de la noche: suprime el sueño REM, provoca más despertares y hace que el corazón trabaje más mientras el cuerpo lo procesa. Los wearables lo muestran con claridad: incluso una o dos copas suelen subir la frecuencia cardíaca en reposo nocturna y bajar la variabilidad de la frecuencia cardíaca (VFC/HRV), y tras beber más el efecto puede durar hasta la noche siguiente. Por eso tu puntuación de recuperación cae después de una fiesta aunque hayas dormido suficientes horas. Mira los datos: [cuánto baja el alcohol la HRV](/articles/how-much-alcohol-lowers-hrv). Revisa tus cifras: [Calculadora de HRV por edad](/tools/hrv) y [Frecuencia cardíaca en reposo por edad](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "¿Cuánto alcohol hay en una bebida?",
+      "body": "Una «bebida estándar» equivale a cantidades distintas según el país: 14 g de alcohol puro en EE. UU., 10 g en buena parte de Europa, Australia y Japón, y 8 g (una unidad) en el Reino Unido. Por eso esta calculadora cuenta los gramos a partir de lo que realmente bebiste. Cantidades típicas: una cerveza de 0,5 l al 5 % tiene unos 20 g, un tercio de 0,33 l unos 13 g, una copa de vino de 150 ml al 12 % unos 14 g y un chupito de 40 ml de destilado al 40 % unos 13 g. Las cervezas artesanas fuertes, las copas de vino grandes y las raciones servidas en casa pueden contener mucho más de lo que crees."
+    }
+  ],
+  "faqTitle": "Calculadora de alcohol en sangre: preguntas frecuentes",
+  "faq": [
+    {
+      "q": "¿Cuánto tarda en eliminarse el alcohol del cuerpo?",
+      "a": "De media, el cuerpo elimina unos 0,15‰ (0,015 % BAC) por hora, más o menos una bebida por hora. Dos cervezas de 0,5 l tardan unas 5 horas en un hombre de 75 kg; cinco o seis copas pueden tardar 8–12 horas o más."
+    },
+    {
+      "q": "¿Cuánto dura una cerveza en la sangre?",
+      "a": "Una cerveza de 0,5 l al 5 % (unos 20 g de alcohol) suele eliminarse en unas 2–3 horas en un adulto medio, y una de 0,33 l en unas 1,5–2 horas. Tarda más en personas de menos peso y en mujeres."
+    },
+    {
+      "q": "¿Cuánto dura el vino en la sangre?",
+      "a": "Una copa de vino de 150 ml al 12 % contiene unos 14 g de alcohol y suele eliminarse en unas 2–3 horas. Una botella (750 ml) puede tardar 8 horas o más."
+    },
+    {
+      "q": "¿Qué diferencia hay entre ‰ y BAC %?",
+      "a": "El por mil (‰) indica gramos de alcohol por litro de sangre y se usa en la mayor parte de Europa; el BAC % indica gramos por 100 ml y se usa en EE. UU. 0,5‰ equivale a 0,05 % BAC."
+    },
+    {
+      "q": "¿Se baja la tasa de alcoholemia más rápido con café o una ducha?",
+      "a": "No. Pueden hacerte sentir más despierto, pero solo el tiempo baja el alcohol en sangre. Comer antes de beber frena la absorción; nada acelera la eliminación."
+    },
+    {
+      "q": "¿Puedo usar esta calculadora para decidir si puedo conducir?",
+      "a": "No. Es una estimación educativa con grandes diferencias entre personas, y los límites legales cambian según el país (en algunos es cero). Si has bebido, no conduzcas."
+    },
+    {
+      "q": "¿Por qué el alcohol arruina mi sueño y mi recuperación?",
+      "a": "Fragmenta la segunda mitad de la noche, suprime el sueño REM, sube la frecuencia cardíaca en reposo nocturna y baja la HRV mientras el cuerpo lo procesa; por eso los wearables muestran mala recuperación tras beber."
+    },
+    {
+      "q": "¿Por qué las mujeres alcanzan más alcohol en sangre que los hombres?",
+      "a": "De media, las mujeres tienen menos agua corporal por kilo, así que la misma cantidad de alcohol queda más concentrada. La fórmula de Widmark usa un coeficiente de distribución de unos 0,55 en mujeres frente a 0,68 en hombres."
+    }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "El alcohol en sangre se estima con la fórmula de Widmark: gramos de alcohol puro (volumen × graduación × 0,789 g/ml) divididos entre el peso corporal y un coeficiente de distribución (unos 0,68 en hombres y 0,55 en mujeres, según Watson 1981), menos el alcohol eliminado desde la primera bebida a un ritmo medio de 0,015 % (0,15‰) por hora (rango típico 0,013–0,017 %, Jones 2010). La absorción se considera inmediata, así que el pico real suele ser algo más bajo y más tardío. Los valores varían mucho con la genética, la comida, los medicamentos, el sexo y la salud del hígado. Solo es una estimación educativa: no sirve para decidir si es seguro o legal conducir.",
+  "sourcesContributes": [
+    "Base de los valores del coeficiente de distribución (r ≈ 0,68 en hombres, 0,55 en mujeres) en el cálculo de Widmark.",
+    "Respalda la tasa de eliminación de ~0,015 %/hora (rango típico 0,013–0,017) usada para estimar el tiempo hasta llegar a cero.",
+    "Define la bebida estándar de EE. UU. como 14 g de alcohol puro (otros países usan 8–10 g); por eso esta herramienta cuenta los gramos a partir del volumen y la graduación."
+  ],
+  "related": {
+    "label": "Relacionado",
+    "article": "Cuánto tiempo permanece el alcohol en el cuerpo",
+    "hrvArticle": "Cuánto baja el alcohol la HRV",
+    "hrv": "Calculadora de HRV por edad",
+    "sleep": "Calculadora de deuda de sueño"
+  }
+}

@@ -1,81 +1,144 @@
-import { useEffect, useMemo, useState } from 'react'
+import { Fragment, useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
-import { ALCOHOL_FAQ, ALCOHOL_SOURCES, ALCOHOL_METHODOLOGY, computeAlcohol, formatHours, type Sex, type AlcoholResult } from '../data/alcohol-clearance'
+import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
+import {
+  ALCOHOL_SOURCES,
+  DRINK_PRESETS,
+  computeAlcohol,
+  gramsOf,
+  type AlcoholResult,
+  type DrinkKey,
+  type Sex,
+} from '../data/alcohol-clearance'
+import { alcToolCopy, fill, type AlcToolCopy } from '../data/alc-tool-i18n'
 import { SourcesSection } from '../components/SourcesSection'
+
+/** Languages with a localized /tools hub; others link to the EN hub. */
+const TOOLS_HUB_LANGS: readonly Lang[] = ['ru', 'es']
+
+/** Render inline markdown links ([text](/path)) as router links. */
+function Rich({ text, lang }: { text: string; lang: Lang }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g)
+  return (
+    <>
+      {parts.map((p, i) => {
+        const m = p.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+        if (!m) return <Fragment key={i}>{p}</Fragment>
+        return (
+          <Link key={i} to={langHref(m[2], lang)} className="text-terminal-green hover:underline">
+            {m[1]}
+          </Link>
+        )
+      })}
+    </>
+  )
+}
+
+/** Number formatted with the page language's decimal separator. */
+function num(v: number, lang: Lang, digits: number): string {
+  return v.toLocaleString(lang, { minimumFractionDigits: digits, maximumFractionDigits: digits })
+}
+
+function formatHours(h: number, c: AlcToolCopy): string {
+  if (h <= 0) return c.time.now
+  const whole = Math.floor(h)
+  const mins = Math.round((h - whole) * 60)
+  if (whole === 0) return `${mins} ${c.time.m}`
+  if (mins === 0) return `${whole} ${c.time.h}`
+  return `${whole} ${c.time.h} ${mins} ${c.time.m}`
+}
+
+interface Custom { ml: string; abv: string; count: number }
 
 export function AlcoholClearanceCalculatorPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const c: AlcToolCopy = alcToolCopy(lang)
 
   const [unit, setUnit] = useState<'kg' | 'lb'>('kg')
   const [weight, setWeight] = useState('75')
   const [sex, setSex] = useState<Sex>('male')
-  const [drinks, setDrinks] = useState('3')
+  const [counts, setCounts] = useState<Record<DrinkKey, number>>({ beer: 2, beerSmall: 0, wine: 0, spirits: 0 })
+  const [custom, setCustom] = useState<Custom>({ ml: '', abv: '', count: 0 })
   const [hoursSince, setHoursSince] = useState('1')
 
   useEffect(() => {
-    document.title = 'Alcohol Clearance Calculator — Time to Sober Up | ONDA Life'
+    document.title = c.meta.title
     window.scrollTo({ top: 0 })
-  }, [])
+  }, [c])
+
+  const grams = useMemo(() => {
+    let g = DRINK_PRESETS.reduce((sum, d) => sum + counts[d.key] * gramsOf(d.ml, d.abv), 0)
+    const ml = parseFloat(custom.ml.replace(',', '.'))
+    const abv = parseFloat(custom.abv.replace(',', '.'))
+    if (custom.count > 0 && ml > 0 && abv > 0 && abv <= 100) g += custom.count * gramsOf(ml, abv)
+    return g
+  }, [counts, custom])
 
   const result: AlcoholResult | null = useMemo(() => {
-    const w = parseFloat(weight)
-    const d = parseFloat(drinks)
-    if (!w || w <= 0 || isNaN(d) || d < 0) return null
+    const w = parseFloat(weight.replace(',', '.'))
+    if (!w || w <= 0 || grams <= 0) return null
     const kg = unit === 'kg' ? w : w * 0.453592
-    if (kg < 30 || kg > 250 || d > 40) return null
-    return computeAlcohol({ kg, sex, drinks: d, hoursSince: parseFloat(hoursSince) || 0 })
-  }, [weight, unit, sex, drinks, hoursSince])
+    if (kg < 30 || kg > 250) return null
+    return computeAlcohol({ kg, sex, grams, hoursSince: parseFloat(hoursSince.replace(',', '.')) || 0 })
+  }, [weight, unit, sex, grams, hoursSince])
+
+  const bump = (k: DrinkKey, d: number) => setCounts((s) => ({ ...s, [k]: Math.max(0, Math.min(30, s[k] + d)) }))
+  const permilleFirst = c.primaryUnit === 'permille'
+  const hub = TOOLS_HUB_LANGS.includes(lang) ? `/${lang}/tools` : '/tools'
+
+  const Stepper = ({ value, onDec, onInc }: { value: number; onDec: () => void; onInc: () => void }) => (
+    <div className="flex items-center gap-2">
+      <button type="button" onClick={onDec} aria-label={c.form.remove}
+        className="h-8 w-8 rounded-md border border-white/15 font-mono text-white/70 hover:border-white/30">−</button>
+      <span className="w-6 text-center font-mono text-white">{value}</span>
+      <button type="button" onClick={onInc} aria-label={c.form.add}
+        className="h-8 w-8 rounded-md border border-terminal-green/40 font-mono text-terminal-green hover:bg-terminal-green/10">+</button>
+    </div>
+  )
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
-      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40" aria-label="Breadcrumb">
+        <Link to={homePathFor(lang)} className="hover:text-terminal-green">{c.breadcrumb.home}</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={hub} className="hover:text-terminal-green">{c.breadcrumb.tools}</Link>
         <span>/</span>
-        <span className="text-terminal-green/70" aria-current="page">Alcohol Clearance</span>
+        <span className="text-terminal-green/70" aria-current="page">{c.breadcrumb.current}</span>
       </nav>
 
-      <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">Alcohol Clearance Calculator</h1>
-      <p className="mb-8 font-mono text-sm leading-relaxed text-white/60">
-        Estimate your blood-alcohol level and how long until it returns to zero, using the Widmark
-        equation — and see why those drinks cost you a night of recovery.
-      </p>
+      <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">{c.h1}</h1>
+      <p className="mb-8 text-base leading-relaxed text-white/70">{c.capsule}</p>
 
       <img
         src="/images/tools/alcohol.png"
-        alt="Alcohol Clearance Calculator — free interactive calculator from ONDA Life"
+        alt={c.imageAlt}
         width={1200}
         height={630}
         className="mb-6 w-full rounded-xl border border-white/10"
       />
 
-      <div className="mb-6 rounded-xl border border-amber-400/25 bg-amber-400/5 p-4">
-        <p className="font-mono text-[11px] leading-relaxed text-amber-200/80">
-          ⚠ Educational estimate only, with large individual variation. This is <strong>not</strong> a
-          tool for deciding whether it is safe or legal to drive. If you have been drinking, do not drive.
-        </p>
+      <div className="mb-6 rounded-xl border border-amber-400/25 bg-amber-400/5 p-4" role="note">
+        <p className="font-mono text-[11px] leading-relaxed text-amber-200/80">⚠ {c.warning}</p>
       </div>
 
+      {/* Calculator */}
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 md:p-6">
-        <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <div className="mb-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
           <label className="block">
-            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">Bodyweight</span>
+            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">{c.form.weight}</span>
             <div className="flex gap-2">
               <input
-                type="number" inputMode="decimal" min={30} max={550} value={weight}
+                type="text" inputMode="decimal" value={weight}
                 onChange={(e) => setWeight(e.target.value)}
                 className="w-full rounded-lg border border-white/15 bg-black/30 px-4 py-3 font-mono text-lg text-white outline-none focus:border-terminal-green/60"
               />
               <div className="flex overflow-hidden rounded-lg border border-white/15">
                 {(['kg', 'lb'] as const).map((u) => (
                   <button
-                    key={u} onClick={() => setUnit(u)}
+                    key={u} type="button" onClick={() => setUnit(u)} aria-pressed={unit === u}
                     className={`px-3 font-mono text-sm transition-colors ${unit === u ? 'bg-terminal-green/15 text-terminal-green' : 'text-white/50 hover:text-white/80'}`}
                   >
                     {u}
@@ -84,71 +147,107 @@ export function AlcoholClearanceCalculatorPage() {
               </div>
             </div>
           </label>
-          <label className="block">
-            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">Sex</span>
-            <div className="flex overflow-hidden rounded-lg border border-white/15">
+          <div className="block">
+            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">{c.form.sex}</span>
+            <div className="flex overflow-hidden rounded-lg border border-white/15" role="radiogroup">
               {(['male', 'female'] as const).map((s) => (
                 <button
-                  key={s} onClick={() => setSex(s)}
-                  className={`flex-1 px-3 py-3 font-mono text-sm capitalize transition-colors ${sex === s ? 'bg-terminal-green/15 text-terminal-green' : 'text-white/50 hover:text-white/80'}`}
+                  key={s} type="button" role="radio" aria-checked={sex === s} onClick={() => setSex(s)}
+                  className={`flex-1 px-3 py-3 font-mono text-sm transition-colors ${sex === s ? 'bg-terminal-green/15 text-terminal-green' : 'text-white/50 hover:text-white/80'}`}
                 >
-                  {s}
+                  {s === 'male' ? c.form.male : c.form.female}
                 </button>
               ))}
             </div>
-          </label>
-          <label className="block">
-            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">Standard drinks</span>
-            <input
-              type="number" inputMode="decimal" min={0} max={40} step={0.5} value={drinks}
-              onChange={(e) => setDrinks(e.target.value)}
-              className="w-full rounded-lg border border-white/15 bg-black/30 px-4 py-3 font-mono text-lg text-white outline-none focus:border-terminal-green/60"
-            />
-          </label>
-          <label className="block">
-            <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">Hours since first drink</span>
-            <input
-              type="number" inputMode="decimal" min={0} max={24} step={0.5} value={hoursSince}
-              onChange={(e) => setHoursSince(e.target.value)}
-              className="w-full rounded-lg border border-white/15 bg-black/30 px-4 py-3 font-mono text-lg text-white outline-none focus:border-terminal-green/60"
-            />
-          </label>
+          </div>
         </div>
 
-        {result && (
-          <div className="mt-6">
-            <div className="mb-1 font-mono text-xs uppercase tracking-widest text-white/50">Estimated BAC now</div>
-            <div className="mb-1 text-4xl font-bold text-terminal-green">{result.currentBac.toFixed(3)}<span className="text-xl text-white/40">%</span></div>
-            <p className="mb-4 font-mono text-xs text-white/50">Peak BAC ≈ {result.peakBac.toFixed(3)}%</p>
-            <div className="grid grid-cols-2 gap-3">
-              <div className="rounded-lg border border-white/10 bg-black/20 px-3 py-3 text-center">
-                <div className="text-lg font-bold text-terminal-cyan">{formatHours(result.hoursToSober)}</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-white/40">until ~0.00% (sober)</div>
+        <fieldset className="mb-5">
+          <legend className="mb-2 block font-mono text-xs uppercase tracking-widest text-white/50">{c.form.drinks}</legend>
+          <div className="space-y-2">
+            {DRINK_PRESETS.map((d) => (
+              <div key={d.key} className="flex items-center justify-between gap-3 rounded-lg border border-white/10 bg-black/20 px-3 py-2">
+                <span className="font-mono text-xs text-white/75">{c.drinks[d.key]}</span>
+                <Stepper value={counts[d.key]} onDec={() => bump(d.key, -1)} onInc={() => bump(d.key, 1)} />
               </div>
-              <div className="rounded-lg border border-white/10 bg-black/20 px-3 py-3 text-center">
-                <div className="text-lg font-bold text-terminal-cyan">{formatHours(result.hoursToLegal)}</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-white/40">until under 0.05%</div>
+            ))}
+            <div className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-white/10 bg-black/20 px-3 py-2">
+              <span className="font-mono text-xs text-white/75">{c.form.custom}</span>
+              <div className="flex items-center gap-2">
+                <input
+                  type="text" inputMode="decimal" placeholder="250" aria-label={c.form.ml} value={custom.ml}
+                  onChange={(e) => setCustom((s) => ({ ...s, ml: e.target.value }))}
+                  className="w-16 rounded-md border border-white/15 bg-black/30 px-2 py-1 font-mono text-sm text-white outline-none"
+                />
+                <span className="font-mono text-[11px] text-white/40">{c.form.ml}</span>
+                <input
+                  type="text" inputMode="decimal" placeholder="8" aria-label={c.form.abv} value={custom.abv}
+                  onChange={(e) => setCustom((s) => ({ ...s, abv: e.target.value }))}
+                  className="w-14 rounded-md border border-white/15 bg-black/30 px-2 py-1 font-mono text-sm text-white outline-none"
+                />
+                <span className="font-mono text-[11px] text-white/40">{c.form.abv}</span>
+                <Stepper
+                  value={custom.count}
+                  onDec={() => setCustom((s) => ({ ...s, count: Math.max(0, s.count - 1) }))}
+                  onInc={() => setCustom((s) => ({ ...s, count: Math.min(30, s.count + 1) }))}
+                />
               </div>
             </div>
           </div>
+          <p className="mt-2 font-mono text-[11px] text-white/45">{fill(c.form.total, { g: num(grams, lang, 0) })}</p>
+        </fieldset>
+
+        <label className="block sm:w-1/2">
+          <span className="mb-1 block font-mono text-xs uppercase tracking-widest text-white/50">{c.form.hours}</span>
+          <input
+            type="text" inputMode="decimal" value={hoursSince}
+            onChange={(e) => setHoursSince(e.target.value)}
+            className="w-full rounded-lg border border-white/15 bg-black/30 px-4 py-3 font-mono text-lg text-white outline-none focus:border-terminal-green/60"
+          />
+        </label>
+
+        {result && (
+          <div className="mt-6" aria-live="polite">
+            <div className="mb-1 font-mono text-xs uppercase tracking-widest text-white/50">{c.result.now}</div>
+            <div className="mb-1 text-4xl font-bold text-terminal-green">
+              {permilleFirst ? (
+                <>{num(result.currentPermille, lang, 2)}<span className="text-xl text-white/40">‰</span>
+                  <span className="ml-3 text-lg text-white/40">{num(result.currentBac, lang, 3)}%</span></>
+              ) : (
+                <>{num(result.currentBac, lang, 3)}<span className="text-xl text-white/40">%</span>
+                  <span className="ml-3 text-lg text-white/40">{num(result.currentPermille, lang, 2)}‰</span></>
+              )}
+            </div>
+            <p className="mb-4 font-mono text-xs text-white/50">
+              {fill(c.result.peak, { permille: num(result.peakPermille, lang, 2), pct: num(result.peakBac, lang, 3) })}
+            </p>
+            <div className="rounded-lg border border-white/10 bg-black/20 px-3 py-3 text-center sm:w-1/2">
+              <div className="text-lg font-bold text-terminal-cyan">{formatHours(result.hoursToSober, c)}</div>
+              <div className="font-mono text-[10px] uppercase tracking-widest text-white/40">{c.result.sober}</div>
+            </div>
+            <p className="mt-3 font-mono text-[10px] text-white/35">{c.result.units}</p>
+          </div>
         )}
-        {!result && <p className="mt-4 font-mono text-xs text-white/40">Enter a valid bodyweight and number of drinks.</p>}
+        {!result && <p className="mt-4 font-mono text-xs text-white/40">{grams <= 0 ? c.form.empty : c.invalid}</p>}
       </div>
 
-      <p className="mb-12 font-mono text-[11px] leading-relaxed text-white/30">
-        One standard drink = 14 g pure alcohol (≈ 350 ml beer at 5%, 150 ml wine at 12%, or 45 ml
-        spirits at 40%). Elimination is assumed at 0.015% per hour. Real clearance varies with
-        genetics, food, medication and liver health. The 0.05% line is a common — not universal —
-        legal limit; many places are lower or zero. Never drive after drinking.
-      </p>
+      <p className="mb-10 font-mono text-[11px] leading-relaxed text-white/30">{c.disclaimer}</p>
 
-      <AppStoreCTA ct={storeCt('tool', 'alcohol')} variant="tool" />
+      <AppStoreCTA ct={storeCt('tool', 'alcohol', lang)} variant="tool" lang={lang} />
 
-      <SourcesSection methodology={ALCOHOL_METHODOLOGY} sources={ALCOHOL_SOURCES} />
+      {c.sections.map((s) => (
+        <section key={s.h2} className="mb-10">
+          <h2 className="mb-3 text-xl font-bold tracking-tight md:text-2xl">{s.h2}</h2>
+          <p className="text-sm leading-relaxed text-white/70">
+            <Rich text={s.body} lang={lang} />
+          </p>
+        </section>
+      ))}
 
-      <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
+      {/* FAQ — mirrors the FAQPage JSON-LD injected at build */}
+      <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">{c.faqTitle}</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
-        {ALCOHOL_FAQ.map((f) => (
+        {c.faq.map((f) => (
           <div key={f.q} className="py-4">
             <h3 className="mb-1 font-semibold text-white/90">{f.q}</h3>
             <p className="font-mono text-xs leading-relaxed text-white/50">{f.a}</p>
@@ -156,12 +255,21 @@ export function AlcoholClearanceCalculatorPage() {
         ))}
       </div>
 
+      <SourcesSection
+        heading={c.sourcesTitle}
+        methodology={c.methodology}
+        sources={ALCOHOL_SOURCES.map((src, i) => ({ ...src, contributes: c.sourcesContributes[i] ?? src.contributes }))}
+      />
+
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/how-long-does-alcohol-stay-in-your-system`} className="text-terminal-green hover:underline">How long alcohol stays in your system</Link>
+        {c.related.label}:{' '}
+        <Link to={langHref('/articles/how-long-does-alcohol-stay-in-your-system', lang)} className="text-terminal-green hover:underline">{c.related.article}</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
+        <Link to={langHref('/articles/how-much-alcohol-lowers-hrv', lang)} className="text-terminal-green hover:underline">{c.related.hrvArticle}</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/sleep-debt`} className="text-terminal-green hover:underline">Sleep debt</Link>
+        <Link to={langHref('/tools/hrv', lang)} className="text-terminal-green hover:underline">{c.related.hrv}</Link>
+        {' · '}
+        <Link to={langHref('/tools/sleep-debt', lang)} className="text-terminal-green hover:underline">{c.related.sleep}</Link>
       </div>
     </main>
   )

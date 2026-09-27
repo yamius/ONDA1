@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Calcul du taux d'alcoolémie — élimination | ONDA Life",
+    "description": "Calcul d'alcoolémie gratuit : estimez votre taux d'alcool (‰ et %) et le temps avant 0. Estimation — ne conduisez jamais après avoir bu.",
+    "appName": "Calcul du taux d'alcoolémie — temps d'élimination",
+    "appDescription": "Calculateur gratuit qui estime le taux d'alcool dans le sang (en pour mille et en %) et le temps nécessaire pour revenir à zéro, à l'aide de la formule de Widmark."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "tools": "Outils",
+    "current": "Calcul d'alcoolémie"
+  },
+  "h1": "Calcul du taux d'alcoolémie : combien de temps pour éliminer l'alcool",
+  "capsule": "Le corps élimine l'alcool à un rythme à peu près constant — environ 0,15 ‰ (0,015 % BAC) par heure, soit à peu près un verre par heure — et rien ne l'accélère. Indiquez ce que vous avez bu, votre poids et votre sexe pour estimer votre alcoolémie et le nombre d'heures avant qu'elle revienne à zéro. C'est une estimation : ne l'utilisez jamais pour décider si vous pouvez conduire.",
+  "imageAlt": "Calcul du taux d'alcoolémie — alcool dans le sang et temps d'élimination, outil gratuit ONDA Life",
+  "warning": "Estimation à but éducatif uniquement, avec de fortes variations individuelles. Cet outil ne permet pas de savoir s'il est sûr ou légal de conduire. Si vous avez bu, ne conduisez pas.",
+  "form": {
+    "weight": "Poids",
+    "sex": "Sexe",
+    "male": "Homme",
+    "female": "Femme",
+    "drinks": "Ce que vous avez bu",
+    "hours": "Heures depuis le premier verre",
+    "custom": "Autre boisson",
+    "ml": "ml",
+    "abv": "% d'alcool",
+    "add": "Ajouter",
+    "remove": "Supprimer",
+    "total": "Alcool pur au total : {{g}} g",
+    "empty": "Ajoutez au moins une boisson."
+  },
+  "drinks": {
+    "beer": "Bière 0,5 l (5 %)",
+    "beerSmall": "Bière 33 cl (5 %)",
+    "wine": "Verre de vin 150 ml (12 %)",
+    "spirits": "Shot d'alcool fort 40 ml (40 %)"
+  },
+  "result": {
+    "now": "Alcoolémie estimée actuelle",
+    "peak": "Pic ≈ {{permille}} ‰ ({{pct}} %)",
+    "sober": "avant ~0,0 ‰ (alcool entièrement éliminé)",
+    "units": "‰ = pour mille (g/l), utilisé dans la majeure partie de l'Europe · % = BAC, utilisé aux États-Unis"
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "h",
+    "m": "min",
+    "now": "maintenant"
+  },
+  "invalid": "Indiquez un poids valide (30–250 kg) et au moins une boisson.",
+  "disclaimer": "Estimation selon la formule de Widmark et un taux d'élimination moyen de 0,15 ‰ (0,015 %) par heure. Les valeurs réelles varient selon la génétique, l'alimentation, les médicaments, l'état du foie et la vitesse à laquelle vous avez bu. Les limites légales pour conduire diffèrent selon les pays et sont souvent plus basses qu'on ne le pense — certains pays imposent zéro. Ne conduisez jamais après avoir bu.",
+  "sections": [
+    {
+      "h2": "Combien de temps pour éliminer l'alcool ?",
+      "body": "Le foie dégrade l'alcool à un rythme assez régulier — en moyenne environ 0,15 ‰ (0,015 % BAC) par heure, soit à peu près un verre par heure pour beaucoup d'adultes. Le temps pour dessoûler dépend donc surtout de la quantité bue : deux bières de 0,5 l mettent environ 5 heures à être éliminées chez un homme de 75 kg (plus longtemps chez une personne plus légère ou une femme) ; après une soirée à cinq ou six verres, il peut falloir 8 à 12 heures ou plus — souvent jusqu'au lendemain matin. L'alcool reste détectable plus longtemps qu'il ne fait effet : dans l'haleine et le sang jusqu'à environ 12–24 heures après une forte consommation, et dans les urines pendant environ 1 à 3 jours avec les tests EtG. Guide complet : [combien de temps l'alcool reste dans l'organisme](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "Comment calculer son taux d'alcool dans le sang ?",
+      "body": "Ce calculateur utilise la formule de Widmark, la méthode de référence en médecine légale : les grammes d'alcool pur divisés par le poids et par un coefficient de diffusion (environ 0,68 chez l'homme et 0,55 chez la femme, en raison d'une proportion d'eau corporelle différente), moins ce que le corps a éliminé depuis le premier verre. Les grammes d'alcool se calculent ainsi : volume × degré × 0,789 (densité de l'éthanol) — une bière de 0,5 l à 5 % contient environ 20 g. Le résultat s'affiche en pour mille (‰, grammes par litre de sang), utilisé dans la majeure partie de l'Europe, et en pourcentage (BAC %, grammes pour 100 ml), utilisé aux États-Unis : 0,5 ‰ = 0,05 %. Les mêmes verres donnent une alcoolémie plus élevée chez une personne plus légère, chez la femme et à jeun."
+    },
+    {
+      "h2": "Peut-on faire baisser son alcoolémie plus vite ?",
+      "body": "Non. Le café, une douche froide, l'air frais, le sport ou un petit-déjeuner copieux peuvent donner l'impression d'être plus alerte, mais ils ne font pas baisser le taux d'alcool dans le sang — seul le temps le fait, car le foie travaille à un rythme presque constant. Manger avant ou pendant la consommation ralentit l'absorption de l'alcool et peut réduire le pic, et l'eau aide contre la déshydratation, mais ni l'un ni l'autre n'accélère l'élimination. C'est pourquoi « dormir pour dessoûler » ne suffit souvent pas : après une soirée arrosée qui finit tard, vous pouvez encore dépasser la limite le lendemain matin."
+    },
+    {
+      "h2": "Les effets de l'alcool sur le sommeil, la VFC et la fréquence cardiaque au repos",
+      "body": "L'alcool aide à s'endormir mais perturbe la seconde moitié de la nuit : il réduit le sommeil paradoxal, multiplie les réveils et fait travailler le cœur davantage pendant que l'organisme le métabolise. Les montres et bagues connectées le montrent clairement — même un ou deux verres tendent à augmenter la fréquence cardiaque au repos nocturne et à faire baisser la variabilité de la fréquence cardiaque (VFC, ou HRV), et après une consommation plus importante l'effet peut durer jusqu'à la nuit suivante. C'est pour cela que votre score de récupération chute après une fête, même si vous avez dormi assez longtemps. Les données : [à quel point l'alcool fait baisser la VFC](/articles/how-much-alcohol-lowers-hrv). Vérifiez vos chiffres : [Calculateur de VFC (HRV) selon l'âge](/tools/hrv) et [Fréquence cardiaque au repos selon l'âge](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Combien d'alcool contient un verre ?",
+      "body": "Un « verre standard » ne correspond pas à la même quantité selon les pays : 14 g d'alcool pur aux États-Unis, 10 g dans une grande partie de l'Europe, en Australie et au Japon, et 8 g (une unit) au Royaume-Uni. C'est pourquoi ce calculateur compte plutôt les grammes à partir de ce que vous avez réellement bu. Quantités typiques : une bière de 0,5 l à 5 % contient environ 20 g, une bière de 33 cl environ 13 g, un verre de vin de 150 ml à 12 % environ 14 g, et un shot de 40 ml d'alcool fort à 40 % environ 13 g. Les bières artisanales fortes, les grands verres de vin et les verres servis à la maison peuvent en contenir bien plus qu'on ne le pense."
+    }
+  ],
+  "faqTitle": "Calcul d'alcoolémie — questions fréquentes",
+  "faq": [
+    {
+      "q": "Combien de temps faut-il pour éliminer l'alcool ?",
+      "a": "En moyenne, le corps élimine environ 0,15 ‰ (0,015 % BAC) par heure — à peu près un verre par heure. Deux bières de 0,5 l demandent environ 5 heures à un homme de 75 kg ; cinq ou six verres peuvent demander 8 à 12 heures ou plus."
+    },
+    {
+      "q": "Combien de temps pour éliminer une bière ?",
+      "a": "Une bière de 0,5 l à 5 % (environ 20 g d'alcool) est généralement éliminée en 2 à 3 heures chez un adulte moyen, et une bière de 33 cl en 1,5 à 2 heures environ. C'est plus long chez les personnes plus légères et chez les femmes."
+    },
+    {
+      "q": "Combien de temps pour éliminer un verre de vin ?",
+      "a": "Un verre de vin de 150 ml à 12 % contient environ 14 g d'alcool et s'élimine généralement en 2 à 3 heures. Une bouteille (750 ml) peut demander 8 heures ou plus."
+    },
+    {
+      "q": "Quelle différence entre ‰ et BAC % ?",
+      "a": "Le pour mille (‰) correspond aux grammes d'alcool par litre de sang et est utilisé dans la majeure partie de l'Europe ; le BAC % correspond aux grammes pour 100 ml et est utilisé aux États-Unis. 0,5 ‰ équivaut à 0,05 % BAC."
+    },
+    {
+      "q": "Le café ou une douche font-ils dessoûler plus vite ?",
+      "a": "Non. Ils peuvent vous rendre plus éveillé, mais seul le temps fait baisser l'alcoolémie. Manger avant de boire ralentit l'absorption ; rien n'accélère l'élimination."
+    },
+    {
+      "q": "Puis-je utiliser ce calculateur pour savoir si je peux conduire ?",
+      "a": "Non. C'est une estimation éducative avec de fortes variations individuelles, et les limites légales diffèrent selon les pays (certains imposent zéro). Si vous avez bu, ne conduisez pas."
+    },
+    {
+      "q": "Pourquoi l'alcool gâche-t-il mon sommeil et ma récupération ?",
+      "a": "Il fragmente la seconde moitié de la nuit, réduit le sommeil paradoxal, augmente la fréquence cardiaque au repos nocturne et fait baisser la VFC pendant que l'organisme le métabolise — d'où la mauvaise récupération affichée par les objets connectés après avoir bu."
+    },
+    {
+      "q": "Pourquoi les femmes ont-elles une alcoolémie plus élevée que les hommes ?",
+      "a": "Les femmes ont en moyenne moins d'eau corporelle par kilogramme, donc la même quantité d'alcool est plus concentrée. La formule de Widmark utilise un coefficient de diffusion d'environ 0,55 pour les femmes contre 0,68 pour les hommes."
+    }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "L'alcoolémie est estimée avec la formule de Widmark : grammes d'alcool pur (volume × degré × 0,789 g/ml) divisés par le poids et un coefficient de diffusion (environ 0,68 chez l'homme et 0,55 chez la femme, d'après Watson 1981), moins l'alcool éliminé depuis le premier verre à un rythme moyen de 0,015 % (0,15 ‰) par heure (fourchette habituelle 0,013–0,017 %, Jones 2010). L'absorption est considérée comme immédiate, donc le pic réel est généralement un peu plus bas et plus tardif. Les valeurs varient fortement selon la génétique, l'alimentation, les médicaments, le sexe et l'état du foie. Estimation éducative uniquement — non valable pour décider s'il est sûr ou légal de conduire.",
+  "sourcesContributes": [
+    "Base des valeurs du coefficient de diffusion (r ≈ 0,68 homme, 0,55 femme) dans le calcul de Widmark.",
+    "Confirme le taux d'élimination d'environ 0,015 %/heure (fourchette habituelle 0,013–0,017) utilisé pour estimer le temps avant de dessoûler.",
+    "Définit le verre standard américain à 14 g d'alcool pur (d'autres pays utilisent 8–10 g) — d'où le calcul en grammes à partir du volume et du degré."
+  ],
+  "related": {
+    "label": "À voir aussi",
+    "article": "Combien de temps l'alcool reste dans l'organisme",
+    "hrvArticle": "À quel point l'alcool fait baisser la VFC",
+    "hrv": "Calculateur de VFC (HRV) selon l'âge",
+    "sleep": "Calculateur de dette de sommeil"
+  }
+}

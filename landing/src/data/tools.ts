@@ -97,8 +97,8 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     slug: 'alcohol',
-    name: 'Alcohol Clearance Calculator',
-    blurb: 'Estimate your blood-alcohol level and how long until it clears, with the Widmark equation — and why drinks cost you a night of recovery.',
+    name: 'Alcohol Calculator — BAC & Time to Sober',
+    blurb: 'Add your drinks, weight and sex to estimate blood alcohol (‰ and %) and how many hours until it is back to zero.',
     live: true,
     category: 'RECOVERY',
     badge: 'BAC',

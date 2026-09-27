@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Alcohol Calculator: BAC & Time Until Sober | ONDA Life",
+    "description": "Free alcohol calculator: add your drinks, weight and sex to estimate blood alcohol (% and ‰) and how many hours until it's back to zero. Educational — never drive after drinking.",
+    "appName": "Alcohol Calculator — BAC & Time Until Sober",
+    "appDescription": "Free calculator that estimates blood alcohol concentration (in % and per mille) and the time until it returns to zero, using the Widmark equation."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Alcohol Calculator"
+  },
+  "h1": "Alcohol Calculator: BAC and Time Until Sober",
+  "capsule": "Your body clears alcohol at a roughly fixed rate — about 0.15‰ (0.015% BAC) per hour, or roughly one drink per hour — and nothing speeds it up. Add what you drank, your weight and sex to estimate your blood alcohol and how many hours until it reaches zero. It's an estimate: never use it to decide whether you can drive.",
+  "imageAlt": "Alcohol calculator — blood alcohol and time until sober, free tool from ONDA Life",
+  "warning": "Educational estimate only, with large individual variation. This is not a tool for deciding whether it is safe or legal to drive. If you have been drinking, do not drive.",
+  "form": {
+    "weight": "Body weight",
+    "sex": "Sex",
+    "male": "Man",
+    "female": "Woman",
+    "drinks": "What you drank",
+    "hours": "Hours since your first drink",
+    "custom": "Other drink",
+    "ml": "ml",
+    "abv": "% alcohol",
+    "add": "Add",
+    "remove": "Remove",
+    "total": "Total pure alcohol: {{g}} g",
+    "empty": "Add at least one drink."
+  },
+  "drinks": {
+    "beer": "Beer 0.5 l (5%)",
+    "beerSmall": "Beer 0.33 l (5%)",
+    "wine": "Glass of wine 150 ml (12%)",
+    "spirits": "Shot of spirits 40 ml (40%)"
+  },
+  "result": {
+    "now": "Estimated blood alcohol now",
+    "peak": "Peak ≈ {{permille}}‰ ({{pct}}%)",
+    "sober": "until ~0.0‰ (fully cleared)",
+    "units": "‰ = per mille (g/L), used in most of Europe · % = BAC, used in the US"
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "h",
+    "m": "min",
+    "now": "now"
+  },
+  "invalid": "Enter a valid body weight (30–250 kg) and at least one drink.",
+  "disclaimer": "Estimated with the Widmark equation and an average elimination rate of 0.15‰ (0.015%) per hour. Real values vary with genetics, food, medication, liver health and how fast you drank. Legal driving limits differ by country and are often lower than people think — some countries allow zero. Never drive after drinking.",
+  "sections": [
+    {
+      "h2": "How long does alcohol stay in your system?",
+      "body": "Your liver breaks down alcohol at a fairly steady pace — on average about 0.15‰ (0.015% BAC) per hour, which works out to roughly one drink per hour for many adults. So the time to sober up depends mainly on how much you drank: two 0.5 l beers take about 5 hours to clear for a 75 kg man (longer for a lighter person or a woman), after a night of five or six drinks it can take 8–12 hours or more — often into the next morning. Alcohol can still be detected longer than it affects you: in breath and blood for up to about 12–24 hours after heavy drinking, and in urine for about 1–3 days with EtG tests. Full guide: [how long alcohol stays in your system](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "How is blood alcohol (BAC) calculated?",
+      "body": "This calculator uses the Widmark equation, the standard method in forensic medicine: grams of pure alcohol divided by your body weight and a distribution ratio (about 0.68 for men and 0.55 for women, because of different body-water proportions), minus what your body has eliminated since the first drink. Grams of alcohol come from volume × strength × 0.789 (the density of ethanol) — a 0.5 l beer at 5% contains about 20 g. The result is shown in per mille (‰, grams per litre of blood), used in most of Europe, and in percent (BAC %, grams per 100 ml), used in the US: 0.5‰ = 0.05%. The same drinks produce a higher level in a lighter person, in women, and on an empty stomach."
+    },
+    {
+      "h2": "Can you sober up faster?",
+      "body": "No. Coffee, a cold shower, fresh air, exercise or a greasy breakfast may make you feel more alert, but they don't lower your blood alcohol — only time does, because the liver works at a nearly constant rate. Food eaten before or while drinking slows how fast alcohol is absorbed and can lower the peak, and water helps with dehydration, but neither speeds up elimination. That's why \"sleeping it off\" often isn't enough: after a late night of heavy drinking, you can still be over the limit the next morning."
+    },
+    {
+      "h2": "How alcohol affects sleep, HRV and resting heart rate",
+      "body": "Alcohol helps you fall asleep but disrupts the second half of the night: it suppresses REM sleep, causes more awakenings and keeps your heart working harder while your body processes it. Wearables show this clearly — even one or two drinks tend to raise your overnight resting heart rate and lower your heart rate variability (HRV), and after heavier drinking the effect can last into the next night. That's why your recovery score drops after a party even if you slept long enough. See the data: [how much alcohol lowers HRV](/articles/how-much-alcohol-lowers-hrv). Check your numbers: [HRV Calculator by Age](/tools/hrv) and [resting heart rate by age](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "How much alcohol is in one drink?",
+      "body": "A \"standard drink\" means different amounts in different countries: 14 g of pure alcohol in the US, 10 g in much of Europe, Australia and Japan, and 8 g (one unit) in the UK. That's why this calculator counts grams from what you actually drank instead. Typical amounts: a 0.5 l beer at 5% has about 20 g, a 0.33 l beer about 13 g, a 150 ml glass of 12% wine about 14 g, and a 40 ml shot of 40% spirits about 13 g. Strong craft beers, large wine glasses and home pours can contain much more than you think."
+    }
+  ],
+  "faqTitle": "Alcohol calculator — common questions",
+  "faq": [
+    {
+      "q": "How long does it take for alcohol to leave your body?",
+      "a": "On average the body clears about 0.15‰ (0.015% BAC) per hour — roughly one drink per hour. Two 0.5 l beers take about 5 hours for a 75 kg man; five or six drinks can take 8–12 hours or more."
+    },
+    {
+      "q": "How long does one beer stay in your system?",
+      "a": "A 0.5 l beer at 5% (about 20 g of alcohol) is usually cleared in about 2–3 hours for an average adult, and a 0.33 l beer in about 1.5–2 hours. It takes longer for lighter people and women."
+    },
+    {
+      "q": "How long does wine stay in your system?",
+      "a": "A 150 ml glass of 12% wine contains about 14 g of alcohol and typically clears in about 2–3 hours. A bottle (750 ml) can take 8 hours or more."
+    },
+    {
+      "q": "What is the difference between ‰ and BAC %?",
+      "a": "Per mille (‰) means grams of alcohol per litre of blood and is used in most of Europe; BAC % means grams per 100 ml and is used in the US. 0.5‰ equals 0.05% BAC."
+    },
+    {
+      "q": "Can I sober up faster with coffee or a shower?",
+      "a": "No. They can make you feel more awake, but only time lowers blood alcohol. Food before drinking slows absorption; nothing speeds up elimination."
+    },
+    {
+      "q": "Can I use this calculator to decide if I can drive?",
+      "a": "No. It's an educational estimate with large individual variation, and legal limits differ by country (some allow zero). If you have been drinking, do not drive."
+    },
+    {
+      "q": "Why does alcohol ruin my sleep and recovery?",
+      "a": "It fragments the second half of the night, suppresses REM sleep, raises overnight resting heart rate and lowers HRV while your body processes it — which is why wearables show poor recovery after drinking."
+    },
+    {
+      "q": "Why do women reach a higher blood alcohol than men?",
+      "a": "Women on average have less body water per kilogram, so the same amount of alcohol is more concentrated. The Widmark formula uses a distribution ratio of about 0.55 for women versus 0.68 for men."
+    }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "Blood alcohol is estimated with the Widmark equation: grams of pure alcohol (volume × strength × 0.789 g/ml) divided by body weight and a distribution ratio (about 0.68 for men and 0.55 for women, following Watson 1981), minus alcohol eliminated since the first drink at an average rate of 0.015% (0.15‰) per hour (typical range 0.013–0.017%, Jones 2010). Absorption is treated as immediate, so the real peak is usually a little lower and later. Values vary widely with genetics, food, medication, sex and liver health. Educational estimate only — not valid for deciding whether it is safe or legal to drive.",
+  "sourcesContributes": [
+    "Basis for the distribution-ratio values (r ≈ 0.68 men, 0.55 women) in the Widmark calculation.",
+    "Supports the ~0.015%/hour elimination rate (typical range 0.013–0.017) used to project time until sober.",
+    "Defines the U.S. standard drink as 14 g of pure alcohol (other countries use 8–10 g) — why this tool counts grams from volume and strength instead."
+  ],
+  "related": {
+    "label": "Related",
+    "article": "How long alcohol stays in your system",
+    "hrvArticle": "How much alcohol lowers HRV",
+    "hrv": "HRV Calculator by Age",
+    "sleep": "Sleep debt calculator"
+  }
+}

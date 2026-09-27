@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Promillerechner — Promille & Abbauzeit | ONDA Life",
+    "description": "Kostenloser Promillerechner: Getränke, Gewicht und Geschlecht eingeben – Promille und Abbauzeit schätzen. Nur Orientierung: nach Alkohol nie fahren.",
+    "appName": "Promillerechner — Promille & Zeit bis 0,0 ‰",
+    "appDescription": "Kostenloser Rechner, der mit der Widmark-Formel die Blutalkoholkonzentration (in Promille und Prozent) und die Zeit bis zum vollständigen Abbau schätzt."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "tools": "Tools",
+    "current": "Promillerechner"
+  },
+  "h1": "Promillerechner: Promille und Abbauzeit berechnen",
+  "capsule": "Dein Körper baut Alkohol in einem annähernd festen Tempo ab — etwa 0,15 ‰ (0,015 % BAC) pro Stunde, also ungefähr ein Getränk pro Stunde — und nichts beschleunigt das. Gib ein, was du getrunken hast, dein Gewicht und dein Geschlecht, um deinen Promillewert und die Stunden bis 0,0 ‰ zu schätzen. Es ist nur eine Schätzung: Nutze sie nie, um zu entscheiden, ob du fahren kannst.",
+  "imageAlt": "Promillerechner — Blutalkohol und Zeit bis zum Abbau, kostenloses Tool von ONDA Life",
+  "warning": "Nur eine Schätzung zur Information, mit großen individuellen Unterschieden. Dieses Tool ist nicht dafür gedacht, zu entscheiden, ob du sicher oder legal fahren darfst. Wenn du getrunken hast, fahr nicht.",
+  "form": {
+    "weight": "Körpergewicht",
+    "sex": "Geschlecht",
+    "male": "Mann",
+    "female": "Frau",
+    "drinks": "Was du getrunken hast",
+    "hours": "Stunden seit dem ersten Getränk",
+    "custom": "Anderes Getränk",
+    "ml": "ml",
+    "abv": "% Alkohol",
+    "add": "Hinzufügen",
+    "remove": "Entfernen",
+    "total": "Reiner Alkohol gesamt: {{g}} g",
+    "empty": "Füge mindestens ein Getränk hinzu."
+  },
+  "drinks": {
+    "beer": "Bier 0,5 l (5 %)",
+    "beerSmall": "Bier 0,33 l (5 %)",
+    "wine": "Glas Wein 150 ml (12 %)",
+    "spirits": "Schnaps 40 ml (40 %)"
+  },
+  "result": {
+    "now": "Geschätzter Promillewert jetzt",
+    "peak": "Höchstwert ≈ {{permille}} ‰ ({{pct}} %)",
+    "sober": "bis ~0,0 ‰ (vollständig abgebaut)",
+    "units": "‰ = Promille (g/l), in den meisten Ländern Europas üblich · % = BAC, in den USA üblich"
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "Std.",
+    "m": "Min.",
+    "now": "jetzt"
+  },
+  "invalid": "Gib ein gültiges Körpergewicht (30–250 kg) und mindestens ein Getränk ein.",
+  "disclaimer": "Geschätzt mit der Widmark-Formel und einer durchschnittlichen Abbaurate von 0,15 ‰ (0,015 %) pro Stunde. Die tatsächlichen Werte hängen von Genetik, Essen, Medikamenten, Lebergesundheit und Trinktempo ab. Die gesetzlichen Promillegrenzen unterscheiden sich je nach Land und sind oft niedriger, als viele denken — manche Länder erlauben 0,0 ‰. Fahr nach Alkohol niemals Auto.",
+  "sections": [
+    {
+      "h2": "Wie lange dauert es, bis Alkohol abgebaut ist?",
+      "body": "Deine Leber baut Alkohol in recht gleichmäßigem Tempo ab — im Schnitt etwa 0,15 ‰ (0,015 % BAC) pro Stunde, was für viele Erwachsene ungefähr einem Getränk pro Stunde entspricht. Die Zeit bis zur Nüchternheit hängt also vor allem davon ab, wie viel du getrunken hast: Zwei 0,5-l-Bier braucht ein 75 kg schwerer Mann etwa 5 Stunden abzubauen (leichtere Menschen und Frauen länger), nach einem Abend mit fünf oder sechs Getränken können es 8–12 Stunden oder mehr sein — oft bis in den nächsten Morgen. Nachweisbar ist Alkohol länger, als er wirkt: in Atem und Blut nach starkem Trinken bis zu etwa 12–24 Stunden, im Urin mit EtG-Tests etwa 1–3 Tage. Ausführlich: [wie lange Alkohol im Körper bleibt](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "Promille berechnen: So funktioniert die Widmark-Formel",
+      "body": "Dieser Rechner nutzt die Widmark-Formel, die Standardmethode der Rechtsmedizin: Gramm reiner Alkohol geteilt durch dein Körpergewicht und einen Verteilungsfaktor (etwa 0,68 bei Männern und 0,55 bei Frauen, wegen des unterschiedlichen Körperwasseranteils), minus dem, was dein Körper seit dem ersten Getränk abgebaut hat. Die Gramm Alkohol ergeben sich aus Menge × Alkoholgehalt × 0,789 (Dichte von Ethanol) — ein 0,5-l-Bier mit 5 % enthält etwa 20 g. Das Ergebnis wird in Promille (‰, Gramm pro Liter Blut) angezeigt, in den meisten Ländern Europas üblich, und in Prozent (BAC %, Gramm pro 100 ml), wie in den USA: 0,5 ‰ = 0,05 %. Dieselben Getränke führen bei leichteren Menschen, bei Frauen und auf nüchternen Magen zu höheren Werten."
+    },
+    {
+      "h2": "Kann man Alkohol schneller abbauen?",
+      "body": "Nein. Kaffee, eine kalte Dusche, frische Luft, Sport oder ein fettiges Frühstück lassen dich vielleicht wacher fühlen, senken aber nicht deinen Promillewert — das schafft nur die Zeit, denn die Leber arbeitet in nahezu konstantem Tempo. Essen vor oder während des Trinkens verlangsamt die Aufnahme und kann den Höchstwert senken, Wasser hilft gegen Dehydrierung, aber beides beschleunigt den Abbau nicht. Deshalb reicht „Ausschlafen“ oft nicht: Nach einer langen Nacht mit viel Alkohol kannst du am nächsten Morgen noch über dem Grenzwert liegen."
+    },
+    {
+      "h2": "Wie Alkohol Schlaf, HRV und Ruhepuls beeinflusst",
+      "body": "Alkohol hilft beim Einschlafen, stört aber die zweite Nachthälfte: Er unterdrückt den REM-Schlaf, sorgt für häufigeres Aufwachen und lässt dein Herz härter arbeiten, solange dein Körper ihn abbaut. Wearables zeigen das deutlich — schon ein oder zwei Getränke erhöhen meist den nächtlichen Ruhepuls und senken die Herzratenvariabilität (HRV), nach mehr Alkohol kann der Effekt bis in die nächste Nacht reichen. Darum sinkt dein Recovery-Score nach einer Party, selbst wenn du lange genug geschlafen hast. Die Daten: [wie stark Alkohol die HRV senkt](/articles/how-much-alcohol-lowers-hrv). Prüf deine Werte: [HRV-Rechner nach Alter](/tools/hrv) und [Ruhepuls nach Alter](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Wie viel Alkohol steckt in einem Getränk?",
+      "body": "Ein „Standardgetränk“ bedeutet je nach Land unterschiedliche Mengen: 14 g reiner Alkohol in den USA, 10 g in großen Teilen Europas, in Australien und Japan und 8 g (eine Unit) in Großbritannien. Deshalb rechnet dieser Rechner stattdessen mit den Gramm aus dem, was du tatsächlich getrunken hast. Typische Mengen: Ein 0,5-l-Bier mit 5 % enthält etwa 20 g, ein 0,33-l-Bier etwa 13 g, ein 150-ml-Glas Wein mit 12 % etwa 14 g und ein 40-ml-Schnaps mit 40 % etwa 13 g. Starke Craft-Biere, große Weingläser und selbst eingeschenkte Drinks können deutlich mehr enthalten, als du denkst."
+    }
+  ],
+  "faqTitle": "Promillerechner — häufige Fragen",
+  "faq": [
+    {
+      "q": "Wie lange dauert es, bis Alkohol abgebaut ist?",
+      "a": "Im Schnitt baut der Körper etwa 0,15 ‰ (0,015 % BAC) pro Stunde ab — ungefähr ein Getränk pro Stunde. Zwei 0,5-l-Bier brauchen bei einem 75 kg schweren Mann etwa 5 Stunden; fünf oder sechs Getränke 8–12 Stunden oder mehr."
+    },
+    {
+      "q": "Wie lange dauert es, bis ein Bier abgebaut ist?",
+      "a": "Ein 0,5-l-Bier mit 5 % (etwa 20 g Alkohol) ist bei einem durchschnittlichen Erwachsenen meist nach etwa 2–3 Stunden abgebaut, ein 0,33-l-Bier nach etwa 1,5–2 Stunden. Bei leichteren Menschen und Frauen dauert es länger."
+    },
+    {
+      "q": "Wie lange dauert es, bis Wein abgebaut ist?",
+      "a": "Ein 150-ml-Glas Wein mit 12 % enthält etwa 14 g Alkohol und ist meist nach etwa 2–3 Stunden abgebaut. Eine Flasche (750 ml) kann 8 Stunden oder länger dauern."
+    },
+    {
+      "q": "Was ist der Unterschied zwischen ‰ und BAC %?",
+      "a": "Promille (‰) bedeutet Gramm Alkohol pro Liter Blut und ist in den meisten Ländern Europas üblich; BAC % bedeutet Gramm pro 100 ml und wird in den USA verwendet. 0,5 ‰ entsprechen 0,05 % BAC."
+    },
+    {
+      "q": "Kann ich mit Kaffee oder einer Dusche schneller nüchtern werden?",
+      "a": "Nein. Du fühlst dich vielleicht wacher, aber nur Zeit senkt den Promillewert. Essen vor dem Trinken verlangsamt die Aufnahme; nichts beschleunigt den Abbau."
+    },
+    {
+      "q": "Kann ich mit diesem Rechner entscheiden, ob ich fahren darf?",
+      "a": "Nein. Es ist eine Schätzung zur Information mit großen individuellen Unterschieden, und die gesetzlichen Grenzwerte unterscheiden sich je nach Land (manche erlauben 0,0 ‰). Wenn du getrunken hast, fahr nicht."
+    },
+    {
+      "q": "Warum ruiniert Alkohol meinen Schlaf und meine Erholung?",
+      "a": "Er zerstückelt die zweite Nachthälfte, unterdrückt den REM-Schlaf, erhöht den nächtlichen Ruhepuls und senkt die HRV, solange dein Körper ihn abbaut — deshalb zeigen Wearables nach dem Trinken schlechte Erholung."
+    },
+    {
+      "q": "Warum haben Frauen höhere Promillewerte als Männer?",
+      "a": "Frauen haben im Schnitt weniger Körperwasser pro Kilogramm, daher ist dieselbe Menge Alkohol stärker konzentriert. Die Widmark-Formel nutzt einen Verteilungsfaktor von etwa 0,55 für Frauen gegenüber 0,68 für Männer."
+    }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Der Promillewert wird mit der Widmark-Formel geschätzt: Gramm reiner Alkohol (Menge × Alkoholgehalt × 0,789 g/ml) geteilt durch Körpergewicht und einen Verteilungsfaktor (etwa 0,68 bei Männern und 0,55 bei Frauen, nach Watson 1981), minus des seit dem ersten Getränk abgebauten Alkohols bei einer durchschnittlichen Rate von 0,015 % (0,15 ‰) pro Stunde (typischer Bereich 0,013–0,017 %, Jones 2010). Die Aufnahme wird als sofortig angenommen, der reale Höchstwert liegt daher meist etwas niedriger und später. Die Werte schwanken stark mit Genetik, Essen, Medikamenten, Geschlecht und Lebergesundheit. Nur eine Schätzung zur Information — nicht geeignet, um zu entscheiden, ob du sicher oder legal fahren darfst.",
+  "sourcesContributes": [
+    "Grundlage für die Verteilungsfaktoren (r ≈ 0,68 Männer, 0,55 Frauen) in der Widmark-Berechnung.",
+    "Belegt die Abbaurate von ~0,015 %/Stunde (typischer Bereich 0,013–0,017), mit der die Zeit bis zur Nüchternheit berechnet wird.",
+    "Definiert das US-Standardgetränk als 14 g reinen Alkohol (andere Länder nutzen 8–10 g) — deshalb rechnet dieses Tool stattdessen mit Gramm aus Menge und Alkoholgehalt."
+  ],
+  "related": {
+    "label": "Verwandte Themen",
+    "article": "Wie lange Alkohol im Körper bleibt",
+    "hrvArticle": "Wie stark Alkohol die HRV senkt",
+    "hrv": "HRV-Rechner nach Alter",
+    "sleep": "Schlafschuld-Rechner"
+  }
+}

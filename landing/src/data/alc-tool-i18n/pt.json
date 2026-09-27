@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Calculadora de álcool no sangue — quando zera | ONDA Life",
+    "description": "Calculadora grátis: informe bebidas, peso e sexo para estimar o álcool no sangue (‰ e %) e em quantas horas ele zera. Educativa — nunca dirija após beber.",
+    "appName": "Calculadora de álcool no sangue — tempo até zerar",
+    "appDescription": "Calculadora gratuita que estima o teor alcoólico no sangue (em por mil e em %) e o tempo até ele voltar a zero, com a equação de Widmark."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "tools": "Ferramentas",
+    "current": "Calculadora de álcool no sangue"
+  },
+  "h1": "Calculadora de álcool no sangue",
+  "capsule": "O corpo elimina o álcool num ritmo quase fixo — cerca de 0,15‰ (0,015% de BAC) por hora, ou aproximadamente uma dose por hora — e nada acelera isso. Informe o que você bebeu, seu peso e sexo para estimar o álcool no sangue e em quantas horas ele chega a zero. É uma estimativa: nunca use para decidir se você pode dirigir.",
+  "imageAlt": "Calculadora de álcool no sangue — teor alcoólico e tempo até zerar, ferramenta gratuita da ONDA Life",
+  "warning": "Apenas uma estimativa educativa, com grande variação individual. Esta não é uma ferramenta para decidir se é seguro ou permitido dirigir. Se você bebeu, não dirija.",
+  "form": {
+    "weight": "Peso corporal",
+    "sex": "Sexo",
+    "male": "Homem",
+    "female": "Mulher",
+    "drinks": "O que você bebeu",
+    "hours": "Horas desde a primeira dose",
+    "custom": "Outra bebida",
+    "ml": "ml",
+    "abv": "% de álcool",
+    "add": "Adicionar",
+    "remove": "Remover",
+    "total": "Total de álcool puro: {{g}} g",
+    "empty": "Adicione pelo menos uma bebida."
+  },
+  "drinks": {
+    "beer": "Cerveja 0,5 l (5%)",
+    "beerSmall": "Long neck 0,33 l (5%)",
+    "wine": "Taça de vinho 150 ml (12%)",
+    "spirits": "Dose de destilado 40 ml (40%)"
+  },
+  "result": {
+    "now": "Álcool no sangue estimado agora",
+    "peak": "Pico ≈ {{permille}}‰ ({{pct}}%)",
+    "sober": "até ~0,0‰ (totalmente eliminado)",
+    "units": "‰ = por mil (g/L), usado na maior parte da Europa · % = BAC, usado nos EUA"
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "h",
+    "m": "min",
+    "now": "agora"
+  },
+  "invalid": "Informe um peso válido (30–250 kg) e pelo menos uma bebida.",
+  "disclaimer": "Estimativa pela equação de Widmark com taxa média de eliminação de 0,15‰ (0,015%) por hora. Os valores reais variam com genética, alimentação, medicamentos, saúde do fígado e a velocidade com que você bebeu. Os limites legais para dirigir variam de país para país e costumam ser menores do que se imagina — alguns países têm tolerância zero. Nunca dirija após beber.",
+  "sections": [
+    {
+      "h2": "Quanto tempo o álcool fica no corpo?",
+      "body": "O fígado metaboliza o álcool num ritmo bem constante — em média cerca de 0,15‰ (0,015% de BAC) por hora, o que equivale a mais ou menos uma dose por hora para muitos adultos. Por isso, o tempo para ficar sóbrio depende principalmente de quanto você bebeu: duas cervejas de 0,5 l levam cerca de 5 horas para serem eliminadas por um homem de 75 kg (mais para uma pessoa mais leve ou para uma mulher); depois de uma noite com cinco ou seis doses, pode levar 8–12 horas ou mais — muitas vezes até a manhã seguinte. O álcool pode ser detectado por mais tempo do que dura o efeito: no bafômetro e no sangue por até cerca de 12–24 horas após beber muito, e na urina por cerca de 1–3 dias com testes de EtG. Guia completo: [quanto tempo o álcool fica no corpo](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "Como se calcula o teor alcoólico no sangue?",
+      "body": "Esta calculadora usa a equação de Widmark, o método padrão da medicina legal: gramas de álcool puro divididos pelo peso corporal e por um fator de distribuição (cerca de 0,68 para homens e 0,55 para mulheres, por causa da proporção diferente de água no corpo), menos o que o organismo já eliminou desde a primeira dose. Os gramas de álcool vêm de volume × teor × 0,789 (a densidade do etanol) — uma cerveja de 0,5 l a 5% contém cerca de 20 g. O resultado aparece em por mil (‰, gramas por litro de sangue), usado na maior parte da Europa, e em porcentagem (BAC %, gramas por 100 ml), usada nos EUA: 0,5‰ = 0,05%. As mesmas bebidas geram um nível mais alto em pessoas mais leves, em mulheres e de estômago vazio."
+    },
+    {
+      "h2": "Dá para passar o efeito do álcool mais rápido?",
+      "body": "Não. Café, banho frio, ar fresco, exercício ou um café da manhã reforçado podem deixar você mais alerta, mas não reduzem o álcool no sangue — só o tempo faz isso, porque o fígado trabalha num ritmo quase constante. Comer antes ou durante a bebida desacelera a absorção e pode baixar o pico, e água ajuda contra a desidratação, mas nada disso acelera a eliminação. É por isso que \"dormir para passar\" muitas vezes não basta: depois de beber muito até tarde, você ainda pode estar acima do limite na manhã seguinte — e o bafômetro mostra."
+    },
+    {
+      "h2": "Como o álcool afeta o sono, a HRV e a frequência cardíaca de repouso",
+      "body": "O álcool ajuda a pegar no sono, mas atrapalha a segunda metade da noite: suprime o sono REM, provoca mais despertares e mantém o coração trabalhando mais enquanto o corpo o processa. Os wearables mostram isso com clareza — mesmo uma ou duas doses costumam elevar a frequência cardíaca de repouso noturna e reduzir a variabilidade da frequência cardíaca (HRV), e após beber mais o efeito pode durar até a noite seguinte. Por isso sua pontuação de recuperação cai depois de uma festa, mesmo que você tenha dormido bastante. Veja os dados: [quanto o álcool reduz a HRV](/articles/how-much-alcohol-lowers-hrv). Confira seus números: [Calculadora de HRV por idade](/tools/hrv) e [Frequência cardíaca de repouso por idade](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Quanto álcool tem uma dose?",
+      "body": "A \"dose padrão\" corresponde a quantidades diferentes em cada país: 14 g de álcool puro nos EUA, 10 g em boa parte da Europa, na Austrália e no Japão, e 8 g (uma unidade) no Reino Unido. Por isso esta calculadora conta os gramas a partir do que você realmente bebeu. Quantidades típicas: uma cerveja de 0,5 l a 5% tem cerca de 20 g, uma de 0,33 l cerca de 13 g, uma taça de 150 ml de vinho a 12% cerca de 14 g, e uma dose de 40 ml de destilado a 40% cerca de 13 g. Cervejas artesanais fortes, taças grandes e doses servidas em casa podem conter bem mais do que você imagina."
+    }
+  ],
+  "faqTitle": "Calculadora de álcool no sangue — perguntas frequentes",
+  "faq": [
+    {
+      "q": "Quanto tempo o álcool leva para sair do corpo?",
+      "a": "Em média, o corpo elimina cerca de 0,15‰ (0,015% de BAC) por hora — mais ou menos uma dose por hora. Duas cervejas de 0,5 l levam cerca de 5 horas para um homem de 75 kg; cinco ou seis doses podem levar 8–12 horas ou mais."
+    },
+    {
+      "q": "Quanto tempo uma cerveja fica no corpo?",
+      "a": "Uma cerveja de 0,5 l a 5% (cerca de 20 g de álcool) costuma ser eliminada em 2–3 horas por um adulto médio, e uma long neck de 0,33 l em cerca de 1,5–2 horas. Leva mais tempo para pessoas mais leves e para mulheres."
+    },
+    {
+      "q": "Quanto tempo o vinho fica no corpo?",
+      "a": "Uma taça de 150 ml de vinho a 12% contém cerca de 14 g de álcool e normalmente é eliminada em 2–3 horas. Uma garrafa (750 ml) pode levar 8 horas ou mais."
+    },
+    {
+      "q": "Qual a diferença entre ‰ e BAC %?",
+      "a": "Por mil (‰) significa gramas de álcool por litro de sangue e é usado na maior parte da Europa; BAC % significa gramas por 100 ml e é usado nos EUA. 0,5‰ equivale a 0,05% de BAC."
+    },
+    {
+      "q": "Café ou banho ajudam a passar o efeito do álcool mais rápido?",
+      "a": "Não. Podem fazer você se sentir mais desperto, mas só o tempo reduz o álcool no sangue. Comer antes de beber desacelera a absorção; nada acelera a eliminação."
+    },
+    {
+      "q": "Posso usar esta calculadora para saber se passo no bafômetro ou se posso dirigir?",
+      "a": "Não. É uma estimativa educativa com grande variação individual, e os limites legais variam de país para país (alguns têm tolerância zero). Se você bebeu, não dirija."
+    },
+    {
+      "q": "Por que o álcool estraga meu sono e minha recuperação?",
+      "a": "Ele fragmenta a segunda metade da noite, suprime o sono REM, eleva a frequência cardíaca de repouso noturna e reduz a HRV enquanto o corpo o processa — por isso os wearables mostram recuperação ruim depois de beber."
+    },
+    {
+      "q": "Por que as mulheres atingem um nível de álcool no sangue maior que os homens?",
+      "a": "Em média, as mulheres têm menos água corporal por quilo, então a mesma quantidade de álcool fica mais concentrada. A fórmula de Widmark usa um fator de distribuição de cerca de 0,55 para mulheres contra 0,68 para homens."
+    }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "O álcool no sangue é estimado com a equação de Widmark: gramas de álcool puro (volume × teor × 0,789 g/ml) divididos pelo peso corporal e por um fator de distribuição (cerca de 0,68 para homens e 0,55 para mulheres, segundo Watson 1981), menos o álcool eliminado desde a primeira dose a uma taxa média de 0,015% (0,15‰) por hora (faixa típica de 0,013–0,017%, Jones 2010). A absorção é considerada imediata, então o pico real costuma ser um pouco menor e mais tardio. Os valores variam bastante com genética, alimentação, medicamentos, sexo e saúde do fígado. Apenas uma estimativa educativa — não serve para decidir se é seguro ou permitido dirigir.",
+  "sourcesContributes": [
+    "Base para os valores do fator de distribuição (r ≈ 0,68 homens, 0,55 mulheres) no cálculo de Widmark.",
+    "Sustenta a taxa de eliminação de ~0,015%/hora (faixa típica de 0,013–0,017) usada para projetar o tempo até zerar.",
+    "Define a dose padrão dos EUA como 14 g de álcool puro (outros países usam 8–10 g) — por isso esta ferramenta conta os gramas a partir do volume e do teor."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "article": "Quanto tempo o álcool fica no corpo",
+    "hrvArticle": "Quanto o álcool reduz a HRV",
+    "hrv": "Calculadora de HRV por idade",
+    "sleep": "Calculadora de dívida de sono"
+  }
+}

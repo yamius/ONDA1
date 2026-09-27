@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Kalkulator promili — kiedy wytrzeźwiejesz | ONDA Life",
+    "description": "Darmowy kalkulator promili: dodaj wypite napoje, wagę i płeć, a oszacujesz promile we krwi i za ile godzin spadną do zera. Po alkoholu nie prowadź.",
+    "appName": "Kalkulator promili — promile we krwi i czas trzeźwienia",
+    "appDescription": "Darmowy kalkulator, który szacuje stężenie alkoholu we krwi (w promilach i procentach) oraz czas do jego spadku do zera na podstawie wzoru Widmarka."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "tools": "Narzędzia",
+    "current": "Kalkulator promili"
+  },
+  "h1": "Kalkulator promili",
+  "capsule": "Organizm usuwa alkohol w mniej więcej stałym tempie — około 0,15‰ (0,015% BAC) na godzinę, czyli w przybliżeniu jeden drink na godzinę — i nic tego nie przyspiesza. Dwa piwa 0,5 l to dla mężczyzny ważącego 75 kg około 5 godzin trzeźwienia. Wpisz, co wypiłeś, swoją wagę i płeć, a oszacujesz promile we krwi i za ile godzin spadną do zera. To tylko szacunek: nigdy nie decyduj na jego podstawie, czy możesz prowadzić.",
+  "imageAlt": "Kalkulator promili — alkohol we krwi i czas do wytrzeźwienia, darmowe narzędzie ONDA Life",
+  "warning": "Wyłącznie szacunek edukacyjny, z dużymi różnicami indywidualnymi. To nie jest narzędzie do oceny, czy jazda jest bezpieczna lub zgodna z prawem. Jeśli piłeś alkohol, nie prowadź.",
+  "form": {
+    "weight": "Masa ciała",
+    "sex": "Płeć",
+    "male": "Mężczyzna",
+    "female": "Kobieta",
+    "drinks": "Co wypiłeś",
+    "hours": "Godziny od pierwszego drinka",
+    "custom": "Inny napój",
+    "ml": "ml",
+    "abv": "% alkoholu",
+    "add": "Dodaj",
+    "remove": "Usuń",
+    "total": "Łącznie czystego alkoholu: {{g}} g",
+    "empty": "Dodaj co najmniej jeden napój."
+  },
+  "drinks": {
+    "beer": "Piwo 0,5 l (5%)",
+    "beerSmall": "Piwo 0,33 l (5%)",
+    "wine": "Kieliszek wina 150 ml (12%)",
+    "spirits": "Kieliszek wódki 40 ml (40%)"
+  },
+  "result": {
+    "now": "Szacowane promile we krwi teraz",
+    "peak": "Szczyt ≈ {{permille}}‰ ({{pct}}%)",
+    "sober": "do ~0,0‰ (pełne wytrzeźwienie)",
+    "units": "‰ = promile (g/l), używane w większości Europy · % = BAC, używane w USA"
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "godz.",
+    "m": "min",
+    "now": "teraz"
+  },
+  "invalid": "Podaj prawidłową masę ciała (30–250 kg) i co najmniej jeden napój.",
+  "disclaimer": "Szacunek według wzoru Widmarka i średniego tempa eliminacji 0,15‰ (0,015%) na godzinę. Rzeczywiste wartości zależą od genetyki, jedzenia, leków, stanu wątroby i tempa picia. Dopuszczalne limity dla kierowców różnią się między krajami i często są niższe, niż się wydaje — w niektórych krajach obowiązuje zero. Nigdy nie prowadź po alkoholu.",
+  "sections": [
+    {
+      "h2": "Ile trzeźwieje się po alkoholu?",
+      "body": "Wątroba rozkłada alkohol w dość stałym tempie — średnio około 0,15‰ (0,015% BAC) na godzinę, co u wielu dorosłych oznacza mniej więcej jeden drink na godzinę. Czas trzeźwienia zależy więc głównie od tego, ile wypiłeś: dwa piwa 0,5 l znikają z organizmu mężczyzny ważącego 75 kg po około 5 godzinach (u lżejszej osoby lub kobiety dłużej), a po wieczorze z pięcioma–sześcioma drinkami może to trwać 8–12 godzin lub dłużej — często do następnego ranka. Alkohol da się wykryć dłużej, niż działa: w wydychanym powietrzu i we krwi nawet do około 12–24 godzin po intensywnym piciu, a w moczu przez około 1–3 dni w testach EtG. Pełny poradnik: [jak długo alkohol utrzymuje się w organizmie](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "Jak oblicza się promile we krwi?",
+      "body": "Kalkulator korzysta ze wzoru Widmarka, standardowej metody medycyny sądowej: gramy czystego alkoholu dzieli się przez masę ciała i współczynnik dystrybucji (około 0,68 dla mężczyzn i 0,55 dla kobiet, ze względu na różną zawartość wody w organizmie), a następnie odejmuje to, co organizm wyeliminował od pierwszego drinka. Gramy alkoholu to objętość × moc × 0,789 (gęstość etanolu) — piwo 0,5 l o mocy 5% zawiera około 20 g. Wynik pokazujemy w promilach (‰, gramy na litr krwi), używanych w większości Europy, oraz w procentach (BAC %, gramy na 100 ml), używanych w USA: 0,5‰ = 0,05%. Te same napoje dają wyższy wynik u lżejszej osoby, u kobiet i na pusty żołądek."
+    },
+    {
+      "h2": "Kiedy wytrzeźwieję — czy da się szybciej?",
+      "body": "Nie. Kawa, zimny prysznic, świeże powietrze, ruch czy tłuste śniadanie mogą sprawić, że poczujesz się bardziej przytomny, ale nie obniżają promili we krwi — robi to tylko czas, bo wątroba pracuje w niemal stałym tempie. Jedzenie przed piciem lub w jego trakcie spowalnia wchłanianie i może obniżyć szczyt, a woda pomaga na odwodnienie, ale ani jedno, ani drugie nie przyspiesza eliminacji. Dlatego „odespanie” często nie wystarcza: po późnym, mocno zakrapianym wieczorze rano wciąż możesz mieć za dużo promili."
+    },
+    {
+      "h2": "Jak alkohol wpływa na sen, HRV i tętno spoczynkowe",
+      "body": "Alkohol pomaga zasnąć, ale zaburza drugą połowę nocy: tłumi sen REM, powoduje więcej wybudzeń i zmusza serce do cięższej pracy, dopóki organizm go przetwarza. Urządzenia ubieralne pokazują to wyraźnie — nawet jeden lub dwa drinki zwykle podnoszą nocne tętno spoczynkowe i obniżają zmienność rytmu serca (HRV), a po większej ilości efekt może utrzymać się do następnej nocy. Dlatego wynik regeneracji spada po imprezie, nawet jeśli spałeś wystarczająco długo. Zobacz dane: [o ile alkohol obniża HRV](/articles/how-much-alcohol-lowers-hrv). Sprawdź swoje wyniki: [Kalkulator HRV według wieku](/tools/hrv) i [Tętno spoczynkowe według wieku](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Ile alkoholu jest w jednym drinku?",
+      "body": "„Standardowy drink” oznacza w różnych krajach różne ilości: 14 g czystego alkoholu w USA, 10 g w dużej części Europy, Australii i Japonii oraz 8 g (jedna jednostka) w Wielkiej Brytanii. Dlatego ten kalkulator liczy gramy z tego, co faktycznie wypiłeś. Typowe wartości: piwo 0,5 l o mocy 5% zawiera około 20 g, piwo 0,33 l około 13 g, kieliszek wina 150 ml o mocy 12% około 14 g, a kieliszek wódki 40 ml o mocy 40% około 13 g. Mocne piwa kraftowe, duże kieliszki do wina i domowe nalewanie mogą oznaczać znacznie więcej, niż myślisz."
+    }
+  ],
+  "faqTitle": "Kalkulator promili — najczęstsze pytania",
+  "faq": [
+    {
+      "q": "Ile trzeźwieje się po alkoholu?",
+      "a": "Średnio organizm usuwa około 0,15‰ (0,015% BAC) na godzinę — mniej więcej jeden drink na godzinę. Dwa piwa 0,5 l to około 5 godzin dla mężczyzny ważącego 75 kg; pięć–sześć drinków może oznaczać 8–12 godzin lub dłużej."
+    },
+    {
+      "q": "Ile trzeźwieje się po jednym piwie?",
+      "a": "Piwo 0,5 l o mocy 5% (około 20 g alkoholu) znika zwykle po około 2–3 godzinach u przeciętnego dorosłego, a piwo 0,33 l po około 1,5–2 godzinach. U lżejszych osób i kobiet trwa to dłużej."
+    },
+    {
+      "q": "Ile trzeźwieje się po winie?",
+      "a": "Kieliszek wina 150 ml o mocy 12% zawiera około 14 g alkoholu i zwykle znika po około 2–3 godzinach. Butelka (750 ml) może oznaczać 8 godzin lub więcej."
+    },
+    {
+      "q": "Czym różnią się promile we krwi od BAC %?",
+      "a": "Promil (‰) to gramy alkoholu na litr krwi — ta jednostka obowiązuje w większości Europy; BAC % to gramy na 100 ml, używane w USA. 0,5‰ to 0,05% BAC."
+    },
+    {
+      "q": "Czy kawa albo prysznic przyspieszą trzeźwienie?",
+      "a": "Nie. Mogą sprawić, że poczujesz się bardziej rozbudzony, ale promile we krwi obniża tylko czas. Jedzenie przed piciem spowalnia wchłanianie; nic nie przyspiesza eliminacji."
+    },
+    {
+      "q": "Czy mogę na podstawie kalkulatora zdecydować, czy mogę prowadzić?",
+      "a": "Nie. To szacunek edukacyjny z dużymi różnicami indywidualnymi, a limity prawne różnią się między krajami (w niektórych obowiązuje zero). Jeśli piłeś alkohol, nie prowadź."
+    },
+    {
+      "q": "Dlaczego alkohol psuje mi sen i regenerację?",
+      "a": "Fragmentuje drugą połowę nocy, tłumi sen REM, podnosi nocne tętno spoczynkowe i obniża HRV, dopóki organizm go przetwarza — dlatego urządzenia ubieralne pokazują słabą regenerację po piciu."
+    },
+    {
+      "q": "Dlaczego kobiety mają więcej promili niż mężczyźni?",
+      "a": "Kobiety mają średnio mniej wody w organizmie na kilogram masy ciała, więc ta sama ilość alkoholu jest bardziej stężona. Wzór Widmarka stosuje współczynnik dystrybucji około 0,55 dla kobiet i 0,68 dla mężczyzn."
+    }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Promile we krwi szacujemy wzorem Widmarka: gramy czystego alkoholu (objętość × moc × 0,789 g/ml) dzielone przez masę ciała i współczynnik dystrybucji (około 0,68 dla mężczyzn i 0,55 dla kobiet, za Watson 1981), minus alkohol wyeliminowany od pierwszego drinka w średnim tempie 0,015% (0,15‰) na godzinę (typowy zakres 0,013–0,017%, Jones 2010). Wchłanianie traktujemy jako natychmiastowe, więc rzeczywisty szczyt jest zwykle nieco niższy i późniejszy. Wartości znacznie różnią się w zależności od genetyki, jedzenia, leków, płci i stanu wątroby. Wyłącznie szacunek edukacyjny — nie nadaje się do oceny, czy jazda jest bezpieczna lub zgodna z prawem.",
+  "sourcesContributes": [
+    "Podstawa wartości współczynnika dystrybucji (r ≈ 0,68 u mężczyzn, 0,55 u kobiet) w obliczeniach według Widmarka.",
+    "Potwierdza tempo eliminacji ~0,015% na godzinę (typowy zakres 0,013–0,017), używane do prognozy czasu trzeźwienia.",
+    "Definiuje amerykański standardowy drink jako 14 g czystego alkoholu (inne kraje stosują 8–10 g) — dlatego narzędzie liczy gramy z objętości i mocy napoju."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "article": "Jak długo alkohol utrzymuje się w organizmie",
+    "hrvArticle": "O ile alkohol obniża HRV",
+    "hrv": "Kalkulator HRV według wieku",
+    "sleep": "Kalkulator długu snu"
+  }
+}

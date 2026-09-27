@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Calcolo tasso alcolemico — ore per smaltire | ONDA Life",
+    "description": "Calcolo tasso alcolemico: inserisci bevande, peso e sesso per stimare l'alcol nel sangue (‰ e %) e le ore per smaltirlo. Non guidare dopo aver bevuto.",
+    "appName": "Calcolo tasso alcolemico — alcol nel sangue e tempo per smaltirlo",
+    "appDescription": "Calcolatore gratuito che stima la concentrazione di alcol nel sangue (in per mille e in percentuale) e il tempo necessario perché torni a zero, con la formula di Widmark."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Strumenti",
+    "current": "Calcolo tasso alcolemico"
+  },
+  "h1": "Calcolo tasso alcolemico: alcol nel sangue e tempo per smaltirlo",
+  "capsule": "Il corpo elimina l'alcol a un ritmo quasi costante: circa 0,15‰ (0,015% BAC) all'ora, cioè più o meno un drink all'ora, e niente lo accelera. Inserisci cosa hai bevuto, il tuo peso e il sesso per stimare il tasso alcolemico e quante ore servono perché torni a zero. È una stima: non usarla mai per decidere se puoi guidare.",
+  "imageAlt": "Calcolo tasso alcolemico — alcol nel sangue e tempo per smaltirlo, strumento gratuito di ONDA Life",
+  "warning": "Solo una stima a scopo informativo, con grandi differenze da persona a persona. Non è uno strumento per decidere se è sicuro o legale guidare. Se hai bevuto, non metterti alla guida.",
+  "form": {
+    "weight": "Peso corporeo",
+    "sex": "Sesso",
+    "male": "Uomo",
+    "female": "Donna",
+    "drinks": "Cosa hai bevuto",
+    "hours": "Ore dal primo bicchiere",
+    "custom": "Altra bevanda",
+    "ml": "ml",
+    "abv": "% di alcol",
+    "add": "Aggiungi",
+    "remove": "Rimuovi",
+    "total": "Alcol puro totale: {{g}} g",
+    "empty": "Aggiungi almeno una bevanda."
+  },
+  "drinks": {
+    "beer": "Birra 0,5 l (5%)",
+    "beerSmall": "Birra 0,33 l (5%)",
+    "wine": "Bicchiere di vino 150 ml (12%)",
+    "spirits": "Bicchierino di superalcolico 40 ml (40%)"
+  },
+  "result": {
+    "now": "Tasso alcolemico stimato ora",
+    "peak": "Picco ≈ {{permille}}‰ ({{pct}}%)",
+    "sober": "fino a ~0,0‰ (alcol smaltito)",
+    "units": "‰ = per mille (g/l), usato in Italia e in gran parte d'Europa · % = BAC, usato negli USA"
+  },
+  "primaryUnit": "permille",
+  "time": {
+    "h": "h",
+    "m": "min",
+    "now": "ora"
+  },
+  "invalid": "Inserisci un peso valido (30–250 kg) e almeno una bevanda.",
+  "disclaimer": "Stima calcolata con la formula di Widmark e una velocità media di eliminazione di 0,15‰ (0,015%) all'ora. I valori reali variano con genetica, cibo, farmaci, salute del fegato e velocità con cui si è bevuto. I limiti legali per la guida cambiano da Paese a Paese e sono spesso più bassi di quanto si pensi: in alcuni casi il limite è zero. Non guidare mai dopo aver bevuto.",
+  "sections": [
+    {
+      "h2": "Quanto tempo per smaltire l'alcol?",
+      "body": "Il fegato scompone l'alcol a un ritmo abbastanza regolare: in media circa 0,15‰ (0,015% BAC) all'ora, che per molti adulti corrisponde più o meno a un drink all'ora. Il tempo per smaltire dipende quindi soprattutto da quanto hai bevuto: due birre da 0,5 l richiedono circa 5 ore per un uomo di 75 kg (di più per una persona più leggera o per una donna); dopo una serata con cinque o sei drink possono servire 8–12 ore o più, spesso fino al mattino dopo. L'alcol resta rilevabile più a lungo di quanto ne senti gli effetti: nell'alito e nel sangue fino a circa 12–24 ore dopo un consumo elevato, nelle urine per circa 1–3 giorni con i test EtG. Guida completa: [quanto resta l'alcol nell'organismo](/articles/how-long-does-alcohol-stay-in-your-system)."
+    },
+    {
+      "h2": "Come si calcola il tasso alcolemico?",
+      "body": "Questo calcolatore usa la formula di Widmark, il metodo standard della medicina legale: i grammi di alcol puro divisi per il peso corporeo e per un coefficiente di distribuzione (circa 0,68 per gli uomini e 0,55 per le donne, per la diversa proporzione di acqua corporea), meno quanto il corpo ha già eliminato dal primo bicchiere. I grammi di alcol si ottengono da volume × gradazione × 0,789 (la densità dell'etanolo): una birra da 0,5 l al 5% contiene circa 20 g. Il risultato è mostrato in per mille (‰, grammi per litro di sangue), usato in Italia e in gran parte d'Europa, e in percentuale (BAC %, grammi per 100 ml), usata negli USA: 0,5‰ = 0,05%. Le stesse bevande danno un tasso più alto in una persona più leggera, nelle donne e a stomaco vuoto."
+    },
+    {
+      "h2": "Si può smaltire l'alcol più in fretta?",
+      "body": "No. Caffè, doccia fredda, aria fresca, attività fisica o una colazione abbondante possono farti sentire più sveglio, ma non abbassano l'alcol nel sangue: solo il tempo lo fa, perché il fegato lavora a un ritmo quasi costante. Mangiare prima o mentre si beve rallenta l'assorbimento e può ridurre il picco, e l'acqua aiuta contro la disidratazione, ma nessuno dei due accelera l'eliminazione. Per questo \"dormirci sopra\" spesso non basta: dopo una serata di bevute fino a tardi, al mattino puoi essere ancora oltre il limite."
+    },
+    {
+      "h2": "Come l'alcol influisce su sonno, HRV e frequenza cardiaca a riposo",
+      "body": "L'alcol aiuta ad addormentarsi ma disturba la seconda metà della notte: sopprime il sonno REM, provoca più risvegli e fa lavorare di più il cuore mentre il corpo lo smaltisce. I dispositivi indossabili lo mostrano chiaramente: anche uno o due drink tendono ad alzare la frequenza cardiaca a riposo notturna e ad abbassare la variabilità della frequenza cardiaca (HRV), e dopo bevute più pesanti l'effetto può durare fino alla notte successiva. Ecco perché il punteggio di recupero crolla dopo una festa anche se hai dormito abbastanza. Guarda i dati: [quanto l'alcol abbassa l'HRV](/articles/how-much-alcohol-lowers-hrv). Controlla i tuoi valori: [Calcolatore HRV per età](/tools/hrv) e [Frequenza cardiaca a riposo per età](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Quanto alcol c'è in un drink?",
+      "body": "Il \"drink standard\" corrisponde a quantità diverse nei vari Paesi: 14 g di alcol puro negli USA, 10 g in gran parte d'Europa, in Australia e in Giappone, e 8 g (una unit) nel Regno Unito. Per questo il calcolatore conta i grammi a partire da ciò che hai effettivamente bevuto. Quantità tipiche: una birra da 0,5 l al 5% contiene circa 20 g, una da 0,33 l circa 13 g, un bicchiere di vino da 150 ml al 12% circa 14 g e un bicchierino da 40 ml di superalcolico al 40% circa 13 g. Birre artigianali forti, calici grandi e dosi versate a casa possono contenere molto più di quanto pensi."
+    }
+  ],
+  "faqTitle": "Calcolo tasso alcolemico — domande frequenti",
+  "faq": [
+    {
+      "q": "Quanto tempo ci vuole per smaltire l'alcol?",
+      "a": "In media il corpo elimina circa 0,15‰ (0,015% BAC) all'ora, più o meno un drink all'ora. Due birre da 0,5 l richiedono circa 5 ore per un uomo di 75 kg; cinque o sei drink possono richiedere 8–12 ore o più."
+    },
+    {
+      "q": "Quanto tempo ci vuole per smaltire una birra?",
+      "a": "Una birra da 0,5 l al 5% (circa 20 g di alcol) viene di solito smaltita in circa 2–3 ore da un adulto medio, una da 0,33 l in circa 1,5–2 ore. Ci vuole di più per le persone più leggere e per le donne."
+    },
+    {
+      "q": "Quanto tempo ci vuole per smaltire il vino?",
+      "a": "Un bicchiere di vino da 150 ml al 12% contiene circa 14 g di alcol e di solito si smaltisce in circa 2–3 ore. Una bottiglia (750 ml) può richiedere 8 ore o più."
+    },
+    {
+      "q": "Che differenza c'è tra ‰ e BAC %?",
+      "a": "Il per mille (‰) indica i grammi di alcol per litro di sangue ed è usato in Italia e in gran parte d'Europa; il BAC % indica i grammi per 100 ml ed è usato negli USA. 0,5‰ equivale a 0,05% BAC."
+    },
+    {
+      "q": "Caffè o doccia aiutano a smaltire l'alcol più in fretta?",
+      "a": "No. Possono farti sentire più sveglio, ma solo il tempo abbassa l'alcol nel sangue. Mangiare prima di bere rallenta l'assorbimento; niente accelera l'eliminazione."
+    },
+    {
+      "q": "Posso usare questo calcolatore per decidere se guidare?",
+      "a": "No. È una stima a scopo informativo con grandi differenze individuali, e i limiti legali cambiano da Paese a Paese (in alcuni casi sono zero). Se hai bevuto, non metterti alla guida."
+    },
+    {
+      "q": "Perché l'alcol rovina sonno e recupero?",
+      "a": "Frammenta la seconda metà della notte, sopprime il sonno REM, alza la frequenza cardiaca a riposo notturna e abbassa l'HRV mentre il corpo lo smaltisce: per questo i dispositivi indossabili mostrano un recupero scarso dopo aver bevuto."
+    },
+    {
+      "q": "Perché le donne hanno un tasso alcolemico più alto degli uomini?",
+      "a": "In media le donne hanno meno acqua corporea per chilogrammo, quindi la stessa quantità di alcol risulta più concentrata. La formula di Widmark usa un coefficiente di distribuzione di circa 0,55 per le donne contro 0,68 per gli uomini."
+    }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "Il tasso alcolemico è stimato con la formula di Widmark: grammi di alcol puro (volume × gradazione × 0,789 g/ml) divisi per il peso corporeo e per un coefficiente di distribuzione (circa 0,68 per gli uomini e 0,55 per le donne, secondo Watson 1981), meno l'alcol eliminato dal primo bicchiere a una velocità media di 0,015% (0,15‰) all'ora (intervallo tipico 0,013–0,017%, Jones 2010). L'assorbimento è considerato immediato, quindi il picco reale è di solito un po' più basso e più tardivo. I valori variano molto con genetica, cibo, farmaci, sesso e salute del fegato. Solo una stima a scopo informativo: non valida per decidere se è sicuro o legale guidare.",
+  "sourcesContributes": [
+    "Base per i valori del coefficiente di distribuzione (r ≈ 0,68 uomini, 0,55 donne) nel calcolo di Widmark.",
+    "Supporta la velocità di eliminazione di ~0,015%/ora (intervallo tipico 0,013–0,017) usata per stimare il tempo per smaltire l'alcol.",
+    "Definisce il drink standard statunitense come 14 g di alcol puro (altri Paesi usano 8–10 g): per questo lo strumento conta i grammi a partire da volume e gradazione."
+  ],
+  "related": {
+    "label": "Correlati",
+    "article": "Quanto resta l'alcol nell'organismo",
+    "hrvArticle": "Quanto l'alcol abbassa l'HRV",
+    "hrv": "Calcolatore HRV per età",
+    "sleep": "Calcolatore del debito di sonno"
+  }
+}
