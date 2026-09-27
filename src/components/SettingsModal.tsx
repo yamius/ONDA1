@@ -136,15 +136,17 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
 
   return (
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4">
-      <div className="max-w-md w-full rounded-2xl border border-border/15 p-6 sm:p-8 relative bg-bg text-text-primary">
+      <div className="max-w-md w-full rounded-2xl border border-border/15 relative bg-bg text-text-primary max-h-[90vh] overflow-hidden flex flex-col">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 p-2 rounded-full transition-all hover:bg-border/10"
+          className="absolute top-3 right-3 z-10 p-2 rounded-full transition-all bg-border/10 hover:bg-border/20"
           data-testid="button-close-settings"
+          aria-label="Close"
         >
-          <X className="w-5 h-5" />
+          <X className="w-6 h-6" />
         </button>
 
+        <div className="overflow-y-auto px-6 sm:px-8 pt-8 pb-6">
         <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl font-light mb-2">{t('auth.settings')}</h2>
         </div>
@@ -399,6 +401,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
               </button>
             )}
           </div>
+        </div>
         </div>
       </div>
 

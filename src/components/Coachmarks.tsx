@@ -16,7 +16,7 @@ import { useTranslation } from 'react-i18next';
 // The element each step points at (by data-testid). null → informational, no hole.
 const STEP_TARGET: Record<number, string | null> = {
   1: '[data-testid="biometric-connect-watch"]',
-  2: null,
+  2: '[data-testid="reassure-line"]',   // the "we'll flag a deviation" line under the card
   3: '[data-testid="button-menu"]',
 };
 

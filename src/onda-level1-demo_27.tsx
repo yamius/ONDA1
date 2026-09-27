@@ -260,11 +260,6 @@ const OndaLevel1 = () => {
   // here (above the camera-session effect) so the effect's deps can reference it.
   const [cameraCheckinActive, setCameraCheckinActive] = useState(false);
   const [checkinToast, setCheckinToast] = useState<string | null>(null);
-  // §5: the "remind every 3 days?" primer shown right after the first camera grant
-  // (and once more after the 3rd), to earn the notification permission Segment-B
-  // users lack. Never re-asked once granted or twice-dismissed.
-  const [showCheckinPrimer, setShowCheckinPrimer] = useState(false);
-  const checkinPrimerTriggerRef = useRef<'first_camera' | 'third_camera'>('first_camera');
 
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
@@ -393,35 +388,25 @@ const OndaLevel1 = () => {
     prevCamStatusRef.current = s;
   }, [cameraPpg.status, cameraPpg.bpm, vitalsData.br, baseline, track, cameraCheckinActive, t]);
 
-  // §5: after the FIRST camera grant (and once more after the 3rd), offer Segment-B
-  // users the "remind every 3 days?" primer to earn the notification permission
-  // they otherwise lack. Watch users are asked on watch-connect instead.
-  const maybeShowCheckinPrimerOnCameraGrant = useCallback(async () => {
+  // §5: no-watch users lack notification permission, so calm Segment-B nudges
+  // never arrive. On the FIRST camera grant, ask iOS directly (the system prompt
+  // is one-shot; no custom pre-window). Watch users are asked on watch-connect.
+  const maybeRequestNotifOnCameraGrant = useCallback(async () => {
     if (!Capacitor.isNativePlatform()) return;
     if (!getCheckinsEnabled()) return;
     let watching = false;
     try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
     if (watching) return;
     const perm = await checkNotificationPermission();
-    if (perm === 'granted') return;
-    let grants = 0, dismissed = 0, lastShown = 0;
-    try {
-      grants = Number(localStorage.getItem('onda_camera_grants') || 0);
-      dismissed = Number(localStorage.getItem('onda_checkin_primer_dismissed') || 0);
-      lastShown = Number(localStorage.getItem('onda_checkin_primer_last') || 0);
-    } catch { /* noop */ }
+    if (perm === 'granted' || perm === 'denied') return; // already decided (one-shot)
+    let grants = 0;
+    try { grants = Number(localStorage.getItem('onda_camera_grants') || 0); } catch { /* noop */ }
     grants += 1;
     try { localStorage.setItem('onda_camera_grants', String(grants)); } catch { /* noop */ }
-    if (dismissed >= 2) return; // declined twice → stop asking
-    const now = Date.now();
-    let trigger: 'first_camera' | 'third_camera' | null = null;
-    if (grants === 1 && dismissed === 0) trigger = 'first_camera';
-    else if (grants >= 3 && dismissed === 1 && now - lastShown > 7 * 86400000) trigger = 'third_camera';
-    if (!trigger) return;
-    checkinPrimerTriggerRef.current = trigger;
-    try { localStorage.setItem('onda_checkin_primer_last', String(now)); } catch { /* noop */ }
-    setShowCheckinPrimer(true);
-    try { track('notif_prompt_shown', { trigger }); } catch { /* noop */ }
+    if (grants !== 1) return; // only on the very first camera grant
+    try { track('notif_prompt_shown', { trigger: 'first_camera' }); } catch { /* noop */ }
+    const res = await requestNotificationPermission();
+    try { track('notif_prompt_answered', { answer: res === 'granted' ? 'yes' : 'no', trigger: 'first_camera', granted: res === 'granted' }); } catch { /* noop */ }
   }, [track]);
 
   const cameraGrantHandledRef = useRef(false);
@@ -429,9 +414,10 @@ const OndaLevel1 = () => {
     if (cameraGrantHandledRef.current) return;
     if (cameraPpg.status === 'searching' || cameraPpg.status === 'reading') {
       cameraGrantHandledRef.current = true; // once per app session
-      maybeShowCheckinPrimerOnCameraGrant();
+      maybeRequestNotifOnCameraGrant();
     }
-  }, [cameraPpg.status, maybeShowCheckinPrimerOnCameraGrant]);
+  }, [cameraPpg.status, maybeRequestNotifOnCameraGrant]);
+
 
   // Auto-open the baseline on app launch for connected-watch users. The 14-day
   // read is a LOCAL iPhone HealthKit query (the watch already synced its history
@@ -3340,6 +3326,15 @@ const OndaLevel1 = () => {
     }
     if (pr) completePractice(pid, pr.maxQnt);
   };
+  // Calm check-in A1/B1 → start ONE of the available practices at random: the 3
+  // free ones without a subscription, the current level's 12 with one (task 16).
+  const startRandomAvailablePractice = () => {
+    const pool = isPremium ? currentCircuit.practices.map((p) => p.id) : SIGNAL_PRACTICE_ORDER;
+    const pid = pool[Math.floor(Math.random() * pool.length)] ?? SIGNAL_PRACTICE_ORDER[0];
+    const pr = currentCircuit.practices.find((p) => p.id === pid) as { id: string; maxQnt: number } | undefined;
+    try { track('practice_start', { practice_id: pid, source: 'checkin', mode: appMode }); } catch { /* noop */ }
+    if (pr) completePractice(pid, pr.maxQnt);
+  };
   // Open the diary to record "what happened", anchored to the deviating night (§9).
   const recordAnomaly = (a: PendingAnomaly) => {
     // first_signal_dismissed (task 87): reacted to the first signal by recording
@@ -4433,6 +4428,19 @@ const OndaLevel1 = () => {
     return practiceHistory.reduce((sum, s) => sum + (s.duration || 0), 0);
   };
 
+  // Lock the home scroll (#root, overflow:auto) while any modal is open — otherwise
+  // a touch that starts on the modal chains through to the page behind it.
+  const anyModalOpen = showSettingsModal || showConnectionModal || showStatsModal ||
+    showProfileModal || showAuthModal || showLanguageModal || showJournalModal ||
+    showDiaryModal || showInfoModal || showSubscriptionModal || showRatingModal ||
+    showPermissionModal || showWatchPrompt || showQntShop || showVoiceCheck || showFaceCheck;
+  useEffect(() => {
+    const root = document.getElementById('root');
+    if (!root) return;
+    root.style.overflow = anyModalOpen ? 'hidden' : '';
+    return () => { const r = document.getElementById('root'); if (r) r.style.overflow = ''; };
+  }, [anyModalOpen]);
+
   // ── Local notifications (Sprint 1) ──
   // Reconcile the streak nudge on mount, on resume from background, and
   // whenever practiceHistory changes (so completing a practice cancels
@@ -4472,8 +4480,10 @@ const OndaLevel1 = () => {
         if (!info.simulated) { try { track('checkin_push_opened', { segment: info.segment, type: info.checkin_type }); } catch { /* noop */ } }
         const type = info.checkin_type;
         if (type === 'A1' || type === 'B1') {
-          startRecommendedPractice(null);            // → recommended practice
+          startRandomAvailablePractice();            // → a random available practice
         } else if (type === 'A2') {
+          // Diary lives in the detailed experience — switch a simple-mode user over.
+          if (appMode === 'simple') { try { persistMode('detailed'); } catch { /* noop */ } setAppMode('detailed'); }
           setDiaryExportMode(null); setShowDiaryModal(true); // → new diary note
         } else if (type === 'A3') {
           setShowSettingsModal(true);                // → Settings (mode toggle)
@@ -9489,42 +9499,6 @@ const OndaLevel1 = () => {
             setShowCoachmarks(false);
           }}
         />
-      )}
-
-      {/* Calm check-ins primer (task 16 §5) — earn notification permission after
-          the first camera grant, so Segment-B nudges can arrive. */}
-      {showCheckinPrimer && (
-        <div className="fixed inset-0 z-[190] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm" data-testid="checkin-primer">
-          <div className={`w-full max-w-sm rounded-2xl p-6 text-center ${isLight ? 'bg-white text-slate-800' : 'bg-slate-900 text-white border border-white/10'}`}>
-            <p className="text-sm leading-relaxed mb-5">{t('camera.notif_primer_body', 'Every pulse check is saved to your history, so you can see how it changes over time. Want a reminder every 3 days? It takes about 30 seconds.')}</p>
-            <div className="flex gap-2">
-              <button
-                type="button"
-                data-testid="checkin-primer-skip"
-                onClick={() => {
-                  try { const d = Number(localStorage.getItem('onda_checkin_primer_dismissed') || 0) + 1; localStorage.setItem('onda_checkin_primer_dismissed', String(d)); } catch { /* noop */ }
-                  try { track('notif_prompt_answered', { answer: 'no', trigger: checkinPrimerTriggerRef.current }); } catch { /* noop */ }
-                  setShowCheckinPrimer(false);
-                }}
-                className={`flex-1 py-2.5 rounded-xl text-sm font-medium ${isLight ? 'bg-slate-100 text-slate-600' : 'bg-white/10 text-white/70'}`}
-              >
-                {t('camera.notif_primer_skip', 'Not now')}
-              </button>
-              <button
-                type="button"
-                data-testid="checkin-primer-allow"
-                onClick={async () => {
-                  setShowCheckinPrimer(false);
-                  const perm = await requestNotificationPermission();
-                  try { track('notif_prompt_answered', { answer: 'yes', trigger: checkinPrimerTriggerRef.current, granted: perm === 'granted' }); } catch { /* noop */ }
-                }}
-                className="flex-1 py-2.5 rounded-xl text-sm font-semibold bg-indigo-500 text-white hover:bg-indigo-400"
-              >
-                {t('camera.notif_primer_allow', 'Remind me')}
-              </button>
-            </div>
-          </div>
-        </div>
       )}
 
       {/* Camera check-in confirmation toast (B2). */}

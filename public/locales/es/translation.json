@@ -29,11 +29,11 @@
   },
   "reminders": {
     "checkin_title": "ONDA",
-    "checkin_a1": "4 noches en tu rango habitual. Pulso en reposo estable en torno a {{x}}. Una práctica corta mantiene el ritmo.",
-    "checkin_a2": "Otras 4 noches estables: tu cuerpo está en su rango normal. ¿Algo que ayudó? Anótalo en tu diario.",
-    "checkin_a3": "Tu cuerpo está en su ritmo. ¿Quieres ver más? Activa el modo Experto en Ajustes.",
+    "checkin_a1": "4 noches en tu rango (pulso en reposo ≈{{x}}). Una práctica corta lo mantiene.",
+    "checkin_a2": "Otras 4 noches estables: estás en tu rango. ¿Qué ayudó? Anótalo.",
+    "checkin_a3": "Estás en tu ritmo. ¿Quieres más detalle? Activa el modo Experto en Ajustes.",
     "checkin_b1": "¿Unos minutos de calma hoy? Una práctica corta mantiene tu ritmo.",
-    "checkin_b2": "Chequeo rápido: unos 30 segundos con la cámara del iPhone y tu pulso se guarda en el diario. Mira crecer tu historial.",
+    "checkin_b2": "≈30 s con la cámara del iPhone guardan tu pulso en el diario.",
     "daily_title": "ONDA",
     "streak_title": "ONDA",
     "daily_body": [
