@@ -15,8 +15,6 @@ const TIER_COLOR: Record<string, string> = {
   high: 'text-red-400',
 }
 
-/** Languages with a localized /tools hub; others link to the EN hub. */
-const TOOLS_HUB_LANGS: readonly Lang[] = ['ru', 'es']
 
 /** Render inline markdown links ([text](/path)) as router links. */
 function Rich({ text, lang }: { text: string; lang: Lang }) {
@@ -58,7 +56,7 @@ export function RestingHeartRatePage() {
   }, [age, rhr, sex])
 
   const sexWord = sex === 'male' ? c.result.sexMen : c.result.sexWomen
-  const hub = TOOLS_HUB_LANGS.includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">

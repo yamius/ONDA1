@@ -220,6 +220,15 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/compare/:slug"         element={<CompareSlugRouter />} />
           <Route path="/tools"                 element={<ToolsPage />} />
           <Route path="/ru/tools"              element={<ToolsPage />} />
+          <Route path="/uk/tools" element={<ToolsPage />} />
+          <Route path="/zh/tools" element={<ToolsPage />} />
+          <Route path="/de/tools" element={<ToolsPage />} />
+          <Route path="/fr/tools" element={<ToolsPage />} />
+          <Route path="/it/tools" element={<ToolsPage />} />
+          <Route path="/nl/tools" element={<ToolsPage />} />
+          <Route path="/ja/tools" element={<ToolsPage />} />
+          <Route path="/pl/tools" element={<ToolsPage />} />
+          <Route path="/pt/tools" element={<ToolsPage />} />
           <Route path="/es/tools"              element={<ToolsPage />} />
           <Route path="/tools/hrv"             element={<HrvInterpreterPage />} />
           <Route path="/es/tools/hrv" element={<HrvInterpreterPage />} />

@@ -27,7 +27,8 @@ import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
 import { TOOLS } from '../src/data/tools'
-import { TOOLS_I18N } from '../src/data/tools-i18n'
+import { TOOLS_I18N, TOOLS_EN } from '../src/data/tools-i18n'
+import { localizedToolCard } from '../src/data/tools-localized'
 import { TOPICS_I18N } from '../src/data/topics-i18n'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
@@ -1911,8 +1912,9 @@ export function getMetaForRoute(route: string): RouteMeta {
 
   // /ru/tools, /es/tools — localized tools hub. Tool pages themselves EN-only,
   // so ItemList entries keep EN /tools/<slug> URLs.
-  if (route === '/ru/tools' || route === '/es/tools') {
-    const c = route === '/ru/tools' ? TOOLS_I18N.ru : TOOLS_I18N.es
+  if (/^\/[a-z]{2}\/tools$/.test(route) && TOOLS_I18N[route.slice(1, 3) as Lang]) {
+    const lang = route.slice(1, 3) as Lang
+    const c = TOOLS_I18N[lang]!
     return {
       title: c.metaTitle,
       description: c.metaDescription,
@@ -1923,29 +1925,28 @@ export function getMetaForRoute(route: string): RouteMeta {
         name: c.h1,
         description: c.metaDescription,
         url,
-        items: TOOLS.map((t) => ({ url: `${SITE_URL}/tools/${t.slug}`, name: t.name })),
+        items: TOOLS.map((t) => {
+          const loc = localizedToolCard(t.slug, lang)
+          return { url: loc ? `${SITE_URL}/${lang}/tools/${t.slug}` : `${SITE_URL}/tools/${t.slug}`, name: loc ? loc.name : t.name }
+        }),
       },
     }
   }
   if (route === '/tools') {
     return {
-      title: 'Biohacking Tools & Calculators — Free & Evidence-Based | ONDA Life',
-      description:
-        'Free interactive calculators for HRV, sleep debt, caffeine timing, heart-rate zones, protein and more — each read against the published evidence, no sign-up, then trackable in ONDA Life.',
+      title: TOOLS_EN.metaTitle,
+      description: TOOLS_EN.metaDescription,
       url,
       breadcrumbs,
       ogType: 'website',
       itemList: {
-        name: 'Biohacking Tools & Calculators',
-        description:
-          'Free interactive calculators for HRV, sleep, heart-rate zones, nutrition and more.',
+        name: TOOLS_EN.h1,
+        description: TOOLS_EN.metaDescription,
         url,
         items: TOOLS.map((t) => ({ url: `${SITE_URL}/tools/${t.slug}`, name: t.name })),
       },
     }
   }
-  // /tools/hrv — HRV calculator, published in all 12 languages (copy in
-  // src/data/hrv-tool-i18n). WebApplication + FAQPage JSON-LD per language.
   if (route === '/tools/hrv' || /^\/[a-z]{2}\/tools\/hrv$/.test(route)) {
     const lang = (route === '/tools/hrv' ? 'en' : route.slice(1, 3)) as Lang
     const c = hrvToolCopy(lang)

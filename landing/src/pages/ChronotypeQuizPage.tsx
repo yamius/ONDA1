@@ -48,7 +48,7 @@ export function ChronotypeQuizPage() {
   }, [answers, complete])
   const profile = type ? c.profiles[type] : null
 
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">

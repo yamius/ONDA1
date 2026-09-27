@@ -84,7 +84,7 @@ export function CameraHeartRatePage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
   const c = camToolCopy(lang)
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
 
   const [phase, setPhase] = useState<Phase>('idle')
   const [progress, setProgress] = useState(0)

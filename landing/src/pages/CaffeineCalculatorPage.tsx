@@ -64,7 +64,7 @@ export function CaffeineCalculatorPage() {
   }, [bedtime, drink.mg, halfLife])
 
   const maxMg = result ? result.curve[0].mg : 1
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
   const dn = (id: string) => c.drinks[id as DrinkId]
 
   return (

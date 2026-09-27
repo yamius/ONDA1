@@ -39,7 +39,7 @@ export function WimHofPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
   const c = whmToolCopy(lang)
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
 
   const [rounds, setRounds] = useState<number>(WHM_DEFAULTS.rounds)
   const [breaths, setBreaths] = useState<number>(WHM_DEFAULTS.breaths)

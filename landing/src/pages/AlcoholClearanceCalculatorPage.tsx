@@ -15,8 +15,6 @@ import {
 import { alcToolCopy, fill, type AlcToolCopy } from '../data/alc-tool-i18n'
 import { SourcesSection } from '../components/SourcesSection'
 
-/** Languages with a localized /tools hub; others link to the EN hub. */
-const TOOLS_HUB_LANGS: readonly Lang[] = ['ru', 'es']
 
 /** Render inline markdown links ([text](/path)) as router links. */
 function Rich({ text, lang }: { text: string; lang: Lang }) {
@@ -87,7 +85,7 @@ export function AlcoholClearanceCalculatorPage() {
 
   const bump = (k: DrinkKey, d: number) => setCounts((s) => ({ ...s, [k]: Math.max(0, Math.min(30, s[k] + d)) }))
   const permilleFirst = c.primaryUnit === 'permille'
-  const hub = TOOLS_HUB_LANGS.includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
 
   const Stepper = ({ value, onDec, onInc }: { value: number; onDec: () => void; onInc: () => void }) => (
     <div className="flex items-center gap-2">

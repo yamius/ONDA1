@@ -107,7 +107,7 @@ export function ResonanceBreathingPage() {
 
   useEffect(() => () => clearTimers(), [])
 
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
   const label = running && phase !== null ? (phase === 0 ? c.ui.in : c.ui.out) : finished ? '✓' : c.ui.press
 
   return (

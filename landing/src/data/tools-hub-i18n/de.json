@@ -1,0 +1,50 @@
+{
+  "metaTitle": "Kostenlose Gesundheits- & Atemrechner | ONDA Life",
+  "metaDescription": "Kostenlose Rechner für HRV, Schlafdefizit, Koffein-Timing, Herzfrequenzzonen und Protein – evidenzbasiert, ohne Anmeldung, mit ONDA Life verfolgbar.",
+  "breadcrumbTools": "Tools",
+  "h1": "Kostenlose Gesundheits- & Atemrechner",
+  "intro1": "Kostenlose interaktive Rechner für die Werte, auf die es ankommt – HRV, Schlaf, Herzfrequenzzonen, Koffein-Timing, Protein und mehr. Jedes Tool ordnet deinen Wert anhand der veröffentlichten Evidenz ein, nicht anhand einer runden Faustregel, und zeigt dir, was ihn tatsächlich verändert.",
+  "intro2Pre": "Keine Anmeldung, kein Konto, nichts zu installieren – alles läuft direkt in deinem Browser. Wenn du dieselben Werte automatisch über die Zeit verfolgen willst, statt sie einmal einzutippen, übernimmt das ",
+  "ondaLink": "ONDA Life",
+  "intro2Post": " auf deinem iPhone und deiner Apple Watch.",
+  "bioOsTitle": "Bio OS – Live-Biometrie-Dashboard",
+  "bioOsBadge": "live · Kamera",
+  "bioOsDesc": "Puls, Atmung und Nervensystem per Kamera – dein Körper in Echtzeit, direkt im Browser.",
+  "liveLabel": "live",
+  "aboutHeading": "Über diese Tools",
+  "aboutP1": "Das sind die kleinen, fokussierten Rechner, zu denen die Quantified-Self- und Biohacking-Welt immer wieder greift – Herzratenvariabilität, Schlafdefizit, Koffein-Halbwertszeit, Trainingszonen, Proteinbedarf – an einem Ort gesammelt und, wo es darauf ankommt, mit der Wissenschaft verknüpft statt als nackte Zahl stehen gelassen. Es geht nicht um die Zahl selbst, sondern darum, sie im Kontext zu lesen: Was ist für dein Alter normal, was signalisiert eine Veränderung wirklich, und welcher Hebel bewegt sie?",
+  "aboutP2Pre": "Wo ein Tool dein Nervensystem betrifft – HRV, Ruhepuls, Stressbelastung –, verlinkt es auf ",
+  "measuresLink": "das, was ONDA misst",
+  "aboutP2Mid": ", und auf ",
+  "researchLink": "die Evidenz dahinter",
+  "aboutP2Post": ", damit du die Einschränkungen siehst und nicht nur das Ergebnis. Uns ist lieber, dass ein Rechner dich etwas skeptischer und etwas besser informiert macht, als dir einen Score mit falscher Präzision zu liefern.",
+  "domains": [
+    {
+      "title": "Nervensystem & Erholung",
+      "body": "Rechner für Herzratenvariabilität, Ruhepuls und Stressbelastung, die deinen autonomen Zustand ablesen – das Gleichgewicht zwischen dem sympathischen „Kampf-oder-Flucht“-Zweig und dem parasympathischen „Ruhe-und-Verdauung“-Zweig. Um genau diese Werte ist ONDA Life gebaut, deshalb verlinkt jeder darauf, was die Zahl wirklich bedeutet und was sie verlässlich verändert."
+    },
+    {
+      "title": "Schlaf",
+      "body": "Tools für Schlafdefizit, Koffein-Stopp und Chronotyp, die Schlaf von einem vagen Ziel in konkretes Timing verwandeln. Schlaf ist der größte einzelne Hebel für die HRV und Erholung am nächsten Tag – wer Koffein, Licht und Schlafenszeit richtig timt, profitiert überall sonst."
+    },
+    {
+      "title": "Fitness & Training",
+      "body": "Rechner für Herzfrequenzzonen und Trainingsbelastung – inklusive einer Zone-2-Schätzung für die aerobe Basis nach der genauen Tanaka-Altersformel –, damit du mit der Intensität trainierst, die du wirklich willst, statt zu raten."
+    },
+    {
+      "title": "Ernährung",
+      "body": "Rechner für Protein, Flüssigkeit und Zufuhr auf Basis veröffentlichter Leitlinien (ISSN/ACSM) – mit einem belastbaren Tagesziel und einer Aufteilung pro Mahlzeit statt einer runden Faustregel."
+    },
+    {
+      "title": "Fokus, Dopamin & Langlebigkeit",
+      "body": "Tools für Aufmerksamkeit, Belohnungsbalance und gesunde Lebensjahre für das lange Spiel – die Gewohnheiten und Rhythmen, die sich über Monate aufsummieren, nicht der Wert, den du jeden Morgen checkst."
+    }
+  ],
+  "readHeading": "Wie du deine Werte ehrlich liest",
+  "readBody": "Eine einzelne Messung ist eine Momentaufnahme, und Momentaufnahmen sind verrauscht – allein die HRV schwankt mit Schlaf, Flüssigkeit, Alkohol, Krankheit und sogar damit, wie du dich hingesetzt hast. Dein eigener Trend über Tage und Wochen sagt weit mehr aus als eine einzelne Zahl, und deinen absoluten Wert mit dem anderer zu vergleichen, ist selten sinnvoll. Diese Tools dienen der Orientierung und dem Selbstexperiment, nicht der Diagnose; sie ersetzen keine Ärztin und keinen Arzt. So genutzt sind sie ein schneller, ehrlicher Weg, einen Wert, von dem du gehört hast, in etwas zu verwandeln, nach dem du wirklich handeln kannst.",
+  "ctaPre": "Du willst die Nervensystem-Seite kontinuierlich verfolgen, statt sie einzutippen? ",
+  "seeLink": "Sieh dir an, was ONDA Life kann",
+  "ctaMid": ", oder ",
+  "compareLink": "wie es sich schlägt",
+  "ctaPost": " im Vergleich zu den Wearables und Apps, die Leute parallel in Betracht ziehen."
+}

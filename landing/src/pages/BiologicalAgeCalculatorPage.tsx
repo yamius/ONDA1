@@ -88,7 +88,7 @@ export function BiologicalAgeCalculatorPage() {
     return computeFitnessAge({ age: a, sex, waistCm: cm, restingHr: r, freq, intensity, duration })
   }, [age, waist, unit, rhr, sex, freq, intensity, duration])
 
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
   const deltaText = result
     ? result.delta < 0 ? fill(c.result.younger, { n: -result.delta })
       : result.delta > 0 ? fill(c.result.older, { n: result.delta }) : c.result.same

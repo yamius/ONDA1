@@ -14,7 +14,9 @@ import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 import { TOOLS } from '../data/tools'
-import { TOOLS_I18N, type ToolsCopy } from '../data/tools-i18n'
+import { TOOLS_I18N, TOOLS_EN } from '../data/tools-i18n'
+import { localizedToolCard } from '../data/tools-localized'
+import { hrvToolCopy } from '../data/hrv-tool-i18n'
 
 const SITE_URL = 'https://onda-life.com'
 
@@ -27,65 +29,6 @@ const DOMAIN_CATS: string[][] = [
   ['FOCUS', 'DOPAMINE', 'LONGEVITY'],
 ]
 
-/** English copy — the built-in default; ru/es overlay from TOOLS_I18N. */
-const EN_COPY: ToolsCopy = {
-  metaTitle: 'Biohacking Tools & Calculators — Free & Evidence-Based | ONDA Life',
-  metaDescription:
-    'Free interactive calculators for HRV, sleep debt, caffeine timing, heart-rate zones, protein and more — each read against the published evidence, no sign-up, then trackable in ONDA Life.',
-  breadcrumbTools: 'Tools',
-  h1: 'Biohacking Tools',
-  intro1:
-    'Free interactive calculators for the metrics that matter — HRV, sleep, heart-rate zones, caffeine timing, protein and more. Every tool reads your number against the published evidence, not a round-number rule of thumb, and tells you what actually moves it.',
-  intro2Pre:
-    'No sign-up, no account, nothing to install — they run right in your browser. When you want the same numbers tracked automatically over time instead of typed in once, that’s what ',
-  ondaLink: 'ONDA Life',
-  intro2Post: ' does on your iPhone and Apple Watch.',
-  bioOsTitle: 'Bio OS — live biometric dashboard',
-  bioOsBadge: 'live · camera',
-  bioOsDesc:
-    'Camera-based pulse, breathing and nervous-system readout — your body, in real time, right in the browser.',
-  liveLabel: 'live',
-  aboutHeading: 'About these tools',
-  aboutP1:
-    'These are the small, focused calculators the quantified-self and biohacking world keeps reaching for — heart-rate variability, sleep debt, caffeine half-life, training zones, protein needs — collected in one place and, where it matters, tied to the science rather than left as a bare number. The point isn’t the number itself; it’s reading it in context: what’s normal for your age, what a change actually signals, and which lever moves it.',
-  aboutP2Pre:
-    'Wherever a tool touches your nervous system — HRV, resting heart rate, stress load — it links through to ',
-  measuresLink: 'what ONDA measures',
-  aboutP2Mid: ' and the ',
-  researchLink: 'evidence behind it',
-  aboutP2Post:
-    ', so you can see the caveats, not just the output. We’d rather a calculator make you a little more skeptical and a little better informed than hand you a false-precision score.',
-  domains: [
-    {
-      title: 'Nervous system & recovery',
-      body: 'Heart-rate variability, resting heart rate and stress-load calculators that read your autonomic state — the balance between the “fight-or-flight” sympathetic branch and the “rest-and-digest” parasympathetic one. These are the metrics ONDA Life is built around, so each one links back to what the number actually means and what reliably moves it.',
-    },
-    {
-      title: 'Sleep',
-      body: 'Sleep-debt, caffeine cut-off and chronotype tools that turn sleep from a vague target into concrete timing. Sleep is the single biggest lever on next-day HRV and recovery, so getting the timing of caffeine, light and bedtime right pays back everywhere else.',
-    },
-    {
-      title: 'Fitness & training',
-      body: 'Heart-rate-zone and training-load calculators — including a Zone 2 aerobic-base estimate from the accurate Tanaka age formula — so you can train at the intensity you actually intend rather than guessing.',
-    },
-    {
-      title: 'Nutrition',
-      body: 'Protein, hydration and intake calculators grounded in published guidelines (ISSN/ACSM), giving you a defensible daily target and per-meal split instead of a round-number rule of thumb.',
-    },
-    {
-      title: 'Focus, dopamine & longevity',
-      body: 'Attention, reward-balance and healthspan tools for the longer game — the habits and rhythms that compound over months, not the metric you check each morning.',
-    },
-  ],
-  readHeading: 'How to read your numbers honestly',
-  readBody:
-    'A single reading is a snapshot, and snapshots are noisy — HRV alone swings with sleep, hydration, alcohol, illness and even how you sat down. Your own trend over days and weeks is far more meaningful than one figure, and comparing your absolute number to someone else’s is rarely useful. These tools are for orientation and self-experiment, not diagnosis; they don’t replace a clinician. Used that way, they’re a fast, honest way to turn a metric you’ve heard about into something you can actually act on.',
-  ctaPre: 'Want the nervous-system side tracked continuously instead of typed in? ',
-  seeLink: 'See what ONDA Life does',
-  ctaMid: ', or ',
-  compareLink: 'how it compares',
-  ctaPost: ' to the wearables and apps people cross-shop.',
-}
 
 function prefixFor(lang: string): string {
   return lang === 'ru' ? '/ru' : lang === 'es' ? '/es' : ''
@@ -120,7 +63,11 @@ function setMeta(name: string, content: string, isProperty = false) {
 export function ToolsPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const copy = lang === 'ru' || lang === 'es' ? TOOLS_I18N[lang] : EN_COPY
+  const copy = TOOLS_I18N[lang] ?? TOOLS_EN
+  // Localized calculators first (translated name + blurb); English-only tools after.
+  const orderedTools = [...TOOLS]
+    .map((t) => ({ ...t, ...(localizedToolCard(t.slug, lang) ?? {}), loc: !!localizedToolCard(t.slug, lang) }))
+    .sort((a, b) => Number(b.loc) - Number(a.loc))
   const pageUrl = `${SITE_URL}${prefixFor(lang)}/tools`
 
   useEffect(() => {
@@ -141,7 +88,7 @@ export function ToolsPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={homePathFor(lang)} className="hover:text-terminal-green">Home</Link>
+        <Link to={homePathFor(lang)} className="hover:text-terminal-green">{hrvToolCopy(lang).breadcrumb.home}</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">{copy.breadcrumbTools}</span>
       </nav>
@@ -169,10 +116,10 @@ export function ToolsPage() {
       </Link>
 
       <div className="grid grid-cols-1 gap-4">
-        {TOOLS.map((t) => (
+        {orderedTools.map((t) => (
           <Link
             key={t.slug}
-            to={`/tools/${t.slug}`}
+            to={langHref(`/tools/${t.slug}`, lang)}
             className="block rounded-xl border border-white/10 bg-white/5 p-5 transition-colors hover:border-terminal-green/40 hover:bg-terminal-green/5"
           >
             <div className="mb-1 flex items-center gap-3">

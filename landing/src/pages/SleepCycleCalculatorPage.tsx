@@ -60,7 +60,7 @@ export function SleepCycleCalculatorPage() {
     setMode('bed')
   }
 
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
   const hours = (h: number) => h.toLocaleString(lang, { maximumFractionDigits: 1 })
 
   return (

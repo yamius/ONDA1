@@ -8,6 +8,17 @@
  * paths, mirroring /product and /faq. `domains` is index-aligned with
  * TOOL_DOMAINS in ToolsPage.tsx.
  */
+import type { Lang } from '../i18n'
+import hub_uk from './tools-hub-i18n/uk.json'
+import hub_zh from './tools-hub-i18n/zh.json'
+import hub_de from './tools-hub-i18n/de.json'
+import hub_fr from './tools-hub-i18n/fr.json'
+import hub_it from './tools-hub-i18n/it.json'
+import hub_nl from './tools-hub-i18n/nl.json'
+import hub_ja from './tools-hub-i18n/ja.json'
+import hub_pl from './tools-hub-i18n/pl.json'
+import hub_pt from './tools-hub-i18n/pt.json'
+
 export interface ToolsDomainCopy {
   title: string
   body: string
@@ -42,13 +53,23 @@ export interface ToolsCopy {
   ctaPost: string
 }
 
-export const TOOLS_I18N: Record<'ru' | 'es', ToolsCopy> = {
+export const TOOLS_I18N: Partial<Record<Lang, ToolsCopy>> = {
+  uk: hub_uk as ToolsCopy,
+  zh: hub_zh as ToolsCopy,
+  de: hub_de as ToolsCopy,
+  fr: hub_fr as ToolsCopy,
+  it: hub_it as ToolsCopy,
+  nl: hub_nl as ToolsCopy,
+  ja: hub_ja as ToolsCopy,
+  pl: hub_pl as ToolsCopy,
+  pt: hub_pt as ToolsCopy,
+
   ru: {
-    metaTitle: 'Инструменты для биохакинга и калькуляторы — бесплатно и по науке | ONDA Life',
+    metaTitle: 'Бесплатные калькуляторы здоровья и дыхания | ONDA Life',
     metaDescription:
       'Бесплатные интерактивные калькуляторы: HRV, недосып, время последнего кофе, пульсовые зоны, белок и другое — каждый сверяется с опубликованными данными, без регистрации, затем отслеживается в ONDA Life.',
     breadcrumbTools: 'Инструменты',
-    h1: 'Инструменты для биохакинга',
+    h1: 'Бесплатные калькуляторы здоровья и дыхания',
     intro1:
       'Бесплатные интерактивные калькуляторы для показателей, которые важны — HRV, сон, пульсовые зоны, время кофе, белок и другое. Каждый инструмент сверяет ваше число с опубликованными данными, а не с округлённым правилом на глаз, и говорит, что реально на него влияет.',
     intro2Pre:
@@ -102,11 +123,11 @@ export const TOOLS_I18N: Record<'ru' | 'es', ToolsCopy> = {
     ctaPost: ' с носимыми устройствами и приложениями, которые люди сопоставляют.',
   },
   es: {
-    metaTitle: 'Herramientas de biohacking y calculadoras — gratis y con base científica | ONDA Life',
+    metaTitle: 'Calculadoras gratis de salud y respiración | ONDA Life',
     metaDescription:
       'Calculadoras interactivas gratuitas de VFC, deuda de sueño, hora del café, zonas de frecuencia cardíaca, proteína y más — cada una contrastada con la evidencia publicada, sin registro, y luego seguible en ONDA Life.',
     breadcrumbTools: 'Herramientas',
-    h1: 'Herramientas de biohacking',
+    h1: 'Calculadoras gratis de salud y respiración',
     intro1:
       'Calculadoras interactivas gratuitas para las métricas que importan — VFC, sueño, zonas de frecuencia cardíaca, hora del café, proteína y más. Cada herramienta contrasta tu número con la evidencia publicada, no con una regla redondeada, y te dice qué lo mueve de verdad.',
     intro2Pre:
@@ -159,4 +180,64 @@ export const TOOLS_I18N: Record<'ru' | 'es', ToolsCopy> = {
     compareLink: 'cómo se compara',
     ctaPost: ' con los wearables y las apps que la gente contrasta.',
   },
+}
+
+/** English copy — the built-in default; ru/es overlay from TOOLS_I18N. */
+export const TOOLS_EN: ToolsCopy = {
+  metaTitle: 'Free Health & Breathing Calculators | ONDA Life',
+  metaDescription:
+    'Free interactive calculators for HRV, sleep debt, caffeine timing, heart-rate zones, protein and more — each read against the published evidence, no sign-up, then trackable in ONDA Life.',
+  breadcrumbTools: 'Tools',
+  h1: 'Free Health & Breathing Calculators',
+  intro1:
+    'Free interactive calculators for the metrics that matter — HRV, sleep, heart-rate zones, caffeine timing, protein and more. Every tool reads your number against the published evidence, not a round-number rule of thumb, and tells you what actually moves it.',
+  intro2Pre:
+    'No sign-up, no account, nothing to install — they run right in your browser. When you want the same numbers tracked automatically over time instead of typed in once, that’s what ',
+  ondaLink: 'ONDA Life',
+  intro2Post: ' does on your iPhone and Apple Watch.',
+  bioOsTitle: 'Bio OS — live biometric dashboard',
+  bioOsBadge: 'live · camera',
+  bioOsDesc:
+    'Camera-based pulse, breathing and nervous-system readout — your body, in real time, right in the browser.',
+  liveLabel: 'live',
+  aboutHeading: 'About these tools',
+  aboutP1:
+    'These are the small, focused calculators the quantified-self and biohacking world keeps reaching for — heart-rate variability, sleep debt, caffeine half-life, training zones, protein needs — collected in one place and, where it matters, tied to the science rather than left as a bare number. The point isn’t the number itself; it’s reading it in context: what’s normal for your age, what a change actually signals, and which lever moves it.',
+  aboutP2Pre:
+    'Wherever a tool touches your nervous system — HRV, resting heart rate, stress load — it links through to ',
+  measuresLink: 'what ONDA measures',
+  aboutP2Mid: ' and the ',
+  researchLink: 'evidence behind it',
+  aboutP2Post:
+    ', so you can see the caveats, not just the output. We’d rather a calculator make you a little more skeptical and a little better informed than hand you a false-precision score.',
+  domains: [
+    {
+      title: 'Nervous system & recovery',
+      body: 'Heart-rate variability, resting heart rate and stress-load calculators that read your autonomic state — the balance between the “fight-or-flight” sympathetic branch and the “rest-and-digest” parasympathetic one. These are the metrics ONDA Life is built around, so each one links back to what the number actually means and what reliably moves it.',
+    },
+    {
+      title: 'Sleep',
+      body: 'Sleep-debt, caffeine cut-off and chronotype tools that turn sleep from a vague target into concrete timing. Sleep is the single biggest lever on next-day HRV and recovery, so getting the timing of caffeine, light and bedtime right pays back everywhere else.',
+    },
+    {
+      title: 'Fitness & training',
+      body: 'Heart-rate-zone and training-load calculators — including a Zone 2 aerobic-base estimate from the accurate Tanaka age formula — so you can train at the intensity you actually intend rather than guessing.',
+    },
+    {
+      title: 'Nutrition',
+      body: 'Protein, hydration and intake calculators grounded in published guidelines (ISSN/ACSM), giving you a defensible daily target and per-meal split instead of a round-number rule of thumb.',
+    },
+    {
+      title: 'Focus, dopamine & longevity',
+      body: 'Attention, reward-balance and healthspan tools for the longer game — the habits and rhythms that compound over months, not the metric you check each morning.',
+    },
+  ],
+  readHeading: 'How to read your numbers honestly',
+  readBody:
+    'A single reading is a snapshot, and snapshots are noisy — HRV alone swings with sleep, hydration, alcohol, illness and even how you sat down. Your own trend over days and weeks is far more meaningful than one figure, and comparing your absolute number to someone else’s is rarely useful. These tools are for orientation and self-experiment, not diagnosis; they don’t replace a clinician. Used that way, they’re a fast, honest way to turn a metric you’ve heard about into something you can actually act on.',
+  ctaPre: 'Want the nervous-system side tracked continuously instead of typed in? ',
+  seeLink: 'See what ONDA Life does',
+  ctaMid: ', or ',
+  compareLink: 'how it compares',
+  ctaPost: ' to the wearables and apps people cross-shop.',
 }

@@ -1,0 +1,50 @@
+{
+  "metaTitle": "Gratis gezondheids- en ademcalculators | ONDA Life",
+  "metaDescription": "Gratis calculators voor HRV, slaaptekort, cafeïne, hartslagzones, eiwit en meer — getoetst aan het onderzoek, zonder account, te volgen in ONDA Life.",
+  "breadcrumbTools": "Tools",
+  "h1": "Gratis calculators voor gezondheid en ademhaling",
+  "intro1": "Gratis interactieve calculators voor de waarden die ertoe doen — HRV, slaap, hartslagzones, cafeïnetiming, eiwit en meer. Elke tool legt je getal naast het gepubliceerde onderzoek, niet naast een afgerond vuistregeltje, en vertelt je wat er echt invloed op heeft.",
+  "intro2Pre": "Geen aanmelding, geen account, niets te installeren — ze draaien gewoon in je browser. Wil je dezelfde getallen automatisch door de tijd heen bijhouden in plaats van ze één keer in te typen? Dat is wat ",
+  "ondaLink": "ONDA Life",
+  "intro2Post": " doet op je iPhone en Apple Watch.",
+  "bioOsTitle": "Bio OS — live biometrisch dashboard",
+  "bioOsBadge": "live · camera",
+  "bioOsDesc": "Hartslag, ademhaling en zenuwstelsel via je camera — je lichaam in realtime, direct in de browser.",
+  "liveLabel": "live",
+  "aboutHeading": "Over deze tools",
+  "aboutP1": "Dit zijn de kleine, gerichte calculators waar de quantified-self- en biohackingwereld steeds naar teruggrijpt — hartslagvariabiliteit, slaaptekort, halfwaardetijd van cafeïne, trainingszones, eiwitbehoefte — verzameld op één plek en, waar het ertoe doet, gekoppeld aan de wetenschap in plaats van als kaal getal gepresenteerd. Het gaat niet om het getal zelf, maar om het in context te lezen: wat normaal is voor je leeftijd, wat een verandering echt betekent en welke knop je kunt omdraaien.",
+  "aboutP2Pre": "Waar een tool je zenuwstelsel raakt — HRV, rusthartslag, stressbelasting — linkt hij door naar ",
+  "measuresLink": "wat ONDA meet",
+  "aboutP2Mid": " en het ",
+  "researchLink": "onderbouwende onderzoek",
+  "aboutP2Post": ", zodat je de kanttekeningen ziet en niet alleen de uitkomst. We hebben liever dat een calculator je iets kritischer en iets beter geïnformeerd maakt dan dat hij je een schijnbaar precieze score geeft.",
+  "domains": [
+    {
+      "title": "Zenuwstelsel en herstel",
+      "body": "Calculators voor hartslagvariabiliteit, rusthartslag en stressbelasting die je autonome toestand lezen — de balans tussen de sympathische ‘vechten-of-vluchten’-tak en de parasympathische ‘rust-en-verteer’-tak. Om deze waarden draait ONDA Life, dus elke tool linkt terug naar wat het getal echt betekent en wat er betrouwbaar invloed op heeft."
+    },
+    {
+      "title": "Slaap",
+      "body": "Tools voor slaaptekort, je laatste cafeïnemoment en chronotype die slaap van een vaag doel veranderen in concrete timing. Slaap is de allergrootste hefboom voor je HRV en herstel de volgende dag, dus de juiste timing van cafeïne, licht en bedtijd betaalt zich overal terug."
+    },
+    {
+      "title": "Fitness en training",
+      "body": "Calculators voor hartslagzones en trainingsbelasting — inclusief een schatting van je zone 2-basis met de nauwkeurige Tanaka-leeftijdsformule — zodat je traint op de intensiteit die je echt bedoelt, in plaats van te gokken."
+    },
+    {
+      "title": "Voeding",
+      "body": "Calculators voor eiwit, hydratatie en inname, gebaseerd op gepubliceerde richtlijnen (ISSN/ACSM), die je een onderbouwd dagdoel en verdeling per maaltijd geven in plaats van een afgerond vuistregeltje."
+    },
+    {
+      "title": "Focus, dopamine en levensduur",
+      "body": "Tools voor aandacht, beloningsbalans en gezonde levensjaren voor de lange termijn — de gewoonten en ritmes die zich over maanden opstapelen, niet de waarde die je elke ochtend checkt."
+    }
+  ],
+  "readHeading": "Zo lees je je getallen eerlijk",
+  "readBody": "Eén meting is een momentopname, en momentopnames zijn rommelig — HRV alleen al schommelt met slaap, vochtinname, alcohol, ziekte en zelfs hoe je ging zitten. Je eigen trend over dagen en weken zegt veel meer dan één getal, en je absolute waarde vergelijken met die van een ander heeft zelden zin. Deze tools zijn bedoeld voor oriëntatie en zelfexperiment, niet voor diagnose; ze vervangen geen arts. Zo gebruikt zijn ze een snelle, eerlijke manier om een waarde waar je over gehoord hebt om te zetten in iets waar je echt mee aan de slag kunt.",
+  "ctaPre": "Wil je de kant van je zenuwstelsel continu laten bijhouden in plaats van alles in te typen? ",
+  "seeLink": "Bekijk wat ONDA Life doet",
+  "ctaMid": ", of ",
+  "compareLink": "hoe het zich verhoudt",
+  "ctaPost": " tot de wearables en apps die mensen ernaast overwegen."
+}

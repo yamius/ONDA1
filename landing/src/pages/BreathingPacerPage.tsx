@@ -154,7 +154,7 @@ export function BreathingPacerPage() {
 
   useEffect(() => () => clearTimers(), [])
 
-  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
+  const hub = lang === 'en' ? '/tools' : `/${lang}/tools`
   const mm = Math.floor(remainingSec / 60)
   const ss = String(remainingSec % 60).padStart(2, '0')
 

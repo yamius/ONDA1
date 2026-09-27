@@ -376,7 +376,7 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/product': ['en', 'ru', 'es'],
   '/topics': ['en', 'ru', 'es'],
   '/faq': ['en', 'ru', 'es'],
-  '/tools': ['en', 'ru', 'es'],
+  '/tools': [...SUPPORTED_LANGS],
   '/compare': ['en', 'ru', 'es'],
   '/hrv-biofeedback': ['en', 'ru', 'es'],
   '/resonance-breathing': ['en', 'ru', 'es'],
