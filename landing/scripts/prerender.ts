@@ -725,6 +725,9 @@ for (const route of routes) {
         .replace(/<!-- Google Tag Manager[\s\S]*?<!-- End Google Tag Manager -->\s*/g, '')
         .replace(/<!-- Google Tag Manager \(noscript\)[\s\S]*?<!-- End Google Tag Manager \(noscript\) -->\s*/g, '')
         .replace(/<!-- Reddit Pixel[\s\S]*?<!-- End Reddit Pixel -->\s*/g, '')
+        // Resource hints to tracker hosts open a connection (and reveal the visit) even with no
+        // script loaded — drop them too.
+        .replace(/<link[^>]+rel="(?:preconnect|dns-prefetch)"[^>]+(?:googletagmanager|google-analytics|redditstatic|reddit)\.com[^>]*>\s*/g, '')
     }
     // For /<lang>/articles/<slug>, ask getMetaForRoute about the EN
     // equivalent so injectMetaIntoHtml emits the proper TechArticle

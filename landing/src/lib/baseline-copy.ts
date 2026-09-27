@@ -97,3 +97,75 @@ export const BASELINE_UI = {
     "The shortcut needs an iPhone — it reads Apple Health, which only exists there. Open this page on your phone and it will work.",
   privacyNote: "Your figures stay on your device. We never receive them, and this page carries no analytics.",
 } as const;
+
+/**
+ * Explainer + FAQ shown below the tool (task: make /tools/baseline a full page for search and AI
+ * answers). Rendered in BOTH phases, prerendered, script-free. Same FIREWALL as above — every line
+ * describes what is recorded and shown, never what it means for the body. The FAQ here is the single
+ * source for the on-page FAQ and the FAQPage JSON-LD (meta-inject), so they never drift.
+ */
+export const BASELINE_SEO = {
+  metaTitle: "See Your Apple Watch Data: 2-Week Baseline | ONDA Life",
+  metaDescription:
+    "Free tool: read two weeks of your own Apple Health — resting heart rate, HRV and breathing rate — on your iPhone and see your range. Nothing is uploaded, no app needed.",
+  unavailable:
+    "The shortcut link is being prepared and will appear here. Until then, the ONDA app shows the same reading from your Apple Watch, live.",
+  unavailableButton: "Open the ONDA app →",
+  sections: [
+    {
+      h2: "What the Baseline shows",
+      paras: [
+        "Three things your Apple Watch already writes to Apple Health, over the last 14 days: resting heart rate, heart rate variability (HRV) and breathing rate. For each one you see your own range — the smallest and the largest daily value — plus your average and how many of the 14 days have a reading.",
+        "Resting heart rate is the figure Apple Watch records while you are still. HRV is recorded by Apple as SDNN, from short readings the watch takes in the background during the day and night. Breathing rate is recorded while you sleep with sleep tracking on.",
+      ],
+    },
+    {
+      h2: "Why two weeks and a range, not one number",
+      paras: [
+        "A single day moves with sleep, training, travel, a late meal or a glass of wine. Fourteen days are enough to show your usual span — the band your own figures move in — and that band is far more useful to look at than any one reading.",
+        "The Baseline is only about you: it shows your own figures side by side, with no comparison with anyone else and no score.",
+      ],
+    },
+    {
+      h2: "How it works, step by step",
+      steps: [
+        "On your iPhone, tap \"Read my watch\" — Apple's Shortcuts app opens with the shortcut.",
+        "Tap Add Shortcut. This is a one-time step.",
+        "In the Shortcuts app, tap the shortcut once to run it.",
+        "iOS asks once for permission to read your Health data. You decide; we never see it.",
+        "The shortcut reads the last 14 days on your iPhone and opens this page with your figures.",
+      ],
+    },
+    {
+      h2: "Where your numbers go: nowhere",
+      paras: [
+        "The shortcut reads Apple Health on your iPhone and passes the figures back in the part of the web address after the # sign — the URL fragment. Browsers never send the fragment to a server, so the numbers reach this page without reaching us.",
+        "The page removes them from the address bar the moment they are read, so they are not left in your history or a screenshot. This page carries no analytics, no advertising pixels and no third-party scripts, and it records nothing about your visit.",
+      ],
+    },
+    {
+      h2: "What you need",
+      paras: [
+        "An iPhone with Apple Health, and an Apple Watch (or another device that writes heart data to Health) worn for at least part of the last two weeks. The Shortcuts app is built into iOS. There is no account and nothing to pay; the ONDA app is optional.",
+        "It does not work on Android or on a computer, because it reads Apple Health, which only exists on iPhone.",
+      ],
+    },
+  ] as Array<{ h2: string; paras?: string[]; steps?: string[] }>,
+  faqTitle: "Apple Watch Baseline — common questions",
+  faq: [
+    { q: "How do I see my Apple Watch heart data from the last two weeks?", a: "In the Health app on your iPhone (Browse → Heart), or with this free Baseline tool, which reads resting heart rate, HRV and breathing rate for the last 14 days and shows each as your own range on one page." },
+    { q: "What does the Baseline tool show?", a: "Two weeks of your resting heart rate, heart rate variability and breathing rate from your own Apple Health — the smallest and largest daily value, your average and how many days have a reading." },
+    { q: "Is my Apple Health data sent anywhere?", a: "No. The figures are read on your iPhone and travel back in the URL fragment, which browsers never send to a server. The page carries no analytics or third-party scripts." },
+    { q: "Why does it say no data for one of the figures?", a: "Nothing was recorded for it in the last two weeks. Breathing rate, for example, is only recorded while you sleep with sleep tracking on." },
+    { q: "Do I need an Apple Watch?", a: "An Apple Watch gives the fullest reading. Figures written to Health by other devices are shown too, and anything that was not recorded shows as no data." },
+    { q: "Which HRV does Apple Watch record?", a: "SDNN, in milliseconds, from short readings the watch takes in the background. Oura, Whoop and Garmin use RMSSD, so their numbers are not directly comparable." },
+    { q: "Does it work on Android?", a: "No. It reads Apple Health, which only exists on iPhone. Open the page on an iPhone and it works." },
+  ],
+  relatedTitle: "Related",
+  related: [
+    { label: "What your Apple Watch records over two weeks", href: "/articles/what-your-apple-watch-records" },
+    { label: "Apple Watch HRV: two numbers explained", href: "/articles/apple-watch-recovery-hrv-vs-overall-hrv" },
+    { label: "HRV Calculator by Age", href: "/tools/hrv" },
+    { label: "Resting heart rate by age", href: "/tools/resting-heart-rate" },
+  ],
+} as const;

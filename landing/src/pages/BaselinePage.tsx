@@ -13,7 +13,7 @@ import {
 } from '../lib/baseline'
 import { buildCardModel, type CardModel } from '../lib/baseline-card'
 import { BaselineCard } from '../components/baseline/BaselineCard'
-import { BASELINE_UI, SHORTCUT_NAME, SHORTCUT_READY, SHORTCUT_RUN_URL, SHORTCUT_URL } from '../lib/baseline-copy'
+import { BASELINE_SEO, BASELINE_UI, SHORTCUT_NAME, SHORTCUT_READY, SHORTCUT_RUN_URL, SHORTCUT_URL } from '../lib/baseline-copy'
 
 /**
  * /tools/baseline — the Baseline tool on onda-life.com (ported from the Vallydia bridge, KK 56/57 +
@@ -212,6 +212,9 @@ export function BaselinePage() {
           />
         )}
 
+        {/* Full explainer + FAQ, prerendered in both phases — what search and AI answers read. */}
+        <Explainer langPrefix={langPrefix} />
+
         {/* Paired explainer (task 76 §2): the article explains what the watch records; the tool does it. */}
         <p style={{ borderTop: `1px solid ${C.line}`, marginTop: 34, paddingTop: 20, fontSize: 14.5, lineHeight: 1.6, color: C.sub }}>
           New to this?{' '}
@@ -256,6 +259,12 @@ function ColdSection({
         {isApple ? ui.coldBody : ui.notApple}
       </p>
 
+      {isApple && !SHORTCUT_READY && (
+        <div style={{ textAlign: 'center' }}>
+          <p style={{ fontSize: 14, lineHeight: 1.55, color: C.sub, margin: '0 0 14px' }}>{BASELINE_SEO.unavailable}</p>
+          <a href={APP_URL} target="_blank" rel="noopener noreferrer" style={btn}>{BASELINE_SEO.unavailableButton}</a>
+        </div>
+      )}
       {isApple && SHORTCUT_READY && (
         <div style={{ textAlign: 'center' }}>
           {installed ? (
@@ -354,5 +363,44 @@ function SignalBlock({ r }: { r: BaselineReading }) {
         </>
       )}
     </section>
+  )
+}
+
+/** Script-free explainer: what is shown, why a range, the steps, the privacy model, the FAQ. */
+function Explainer({ langPrefix }: { langPrefix: string }) {
+  const S = BASELINE_SEO
+  const h2: React.CSSProperties = { fontSize: 21, fontWeight: 800, lineHeight: 1.25, margin: '34px 0 10px', color: C.ink }
+  const p: React.CSSProperties = { fontSize: 15.5, lineHeight: 1.65, color: C.sub, margin: '0 0 12px' }
+  return (
+    <div style={{ borderTop: `1px solid ${C.line}`, marginTop: 34 }}>
+      {S.sections.map((sec) => (
+        <section key={sec.h2}>
+          <h2 style={h2}>{sec.h2}</h2>
+          {sec.paras?.map((t) => <p key={t} style={p}>{t}</p>)}
+          {sec.steps && (
+            <ol style={{ ...p, paddingLeft: 22 }}>
+              {sec.steps.map((t) => <li key={t} style={{ marginBottom: 6 }}>{t}</li>)}
+            </ol>
+          )}
+        </section>
+      ))}
+      <h2 style={h2}>{S.faqTitle}</h2>
+      <div>
+        {S.faq.map((f) => (
+          <div key={f.q} style={{ borderTop: `1px solid ${C.line}`, padding: '14px 0' }}>
+            <h3 style={{ fontSize: 16, fontWeight: 700, margin: '0 0 6px', color: C.ink }}>{f.q}</h3>
+            <p style={{ ...p, margin: 0 }}>{f.a}</p>
+          </div>
+        ))}
+      </div>
+      <h2 style={h2}>{S.relatedTitle}</h2>
+      <ul style={{ ...p, paddingLeft: 18 }}>
+        {S.related.map((r) => (
+          <li key={r.href} style={{ marginBottom: 6 }}>
+            <Link to={`${langPrefix}${r.href}`} style={{ color: C.accent, textDecoration: 'none' }}>{r.label} →</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
