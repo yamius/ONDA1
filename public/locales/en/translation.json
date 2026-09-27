@@ -28,6 +28,12 @@
     "requesting": "Requesting..."
   },
   "reminders": {
+    "checkin_title": "ONDA",
+    "checkin_a1": "4 nights in your usual range. Resting pulse steady around {{x}}. A short practice keeps the rhythm going.",
+    "checkin_a2": "Another 4 steady nights — your body's in its normal range. Anything that helped? Note it in your journal.",
+    "checkin_a3": "Your body's in its rhythm. Want to see more? Switch to Expert mode in Settings.",
+    "checkin_b1": "A few quiet minutes today? A short practice keeps your rhythm going.",
+    "checkin_b2": "Quick check-in: about 30 seconds with your iPhone camera, and your pulse is saved to your journal. Watch your history grow.",
     "daily_title": "ONDA",
     "streak_title": "ONDA",
     "daily_body": [
@@ -220,6 +226,10 @@
     "pulse_label": "Pulse (BPM)"
   },
   "camera": {
+    "checkin_saved": "Saved to journal · {{bpm}} bpm",
+    "notif_primer_body": "Every pulse check is saved to your history, so you can see how it changes over time. Want a reminder every 3 days? It takes about 30 seconds.",
+    "notif_primer_allow": "Remind me",
+    "notif_primer_skip": "Not now",
     "offer_title": "See your pulse respond live",
     "offer_body": "Rest a fingertip on the rear camera and watch your pulse move with your breath.",
     "offer_cta": "Use camera",
@@ -1300,6 +1310,8 @@
     "breathing": "Breathing"
   },
   "settings": {
+    "calm_checkins": "Calm check-ins",
+    "calm_checkins_hint": "Occasional gentle nudges when you're steady — never affects deviation signals.",
     "contact_developers": "Write to developers",
     "contact_subject": "ONDA — Feedback",
     "contact_body_hint": "Hi ONDA team,",

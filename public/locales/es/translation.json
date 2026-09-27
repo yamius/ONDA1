@@ -28,6 +28,12 @@
     "requesting": "Solicitando..."
   },
   "reminders": {
+    "checkin_title": "ONDA",
+    "checkin_a1": "4 noches en tu rango habitual. Pulso en reposo estable en torno a {{x}}. Una práctica corta mantiene el ritmo.",
+    "checkin_a2": "Otras 4 noches estables: tu cuerpo está en su rango normal. ¿Algo que ayudó? Anótalo en tu diario.",
+    "checkin_a3": "Tu cuerpo está en su ritmo. ¿Quieres ver más? Activa el modo Experto en Ajustes.",
+    "checkin_b1": "¿Unos minutos de calma hoy? Una práctica corta mantiene tu ritmo.",
+    "checkin_b2": "Chequeo rápido: unos 30 segundos con la cámara del iPhone y tu pulso se guarda en el diario. Mira crecer tu historial.",
     "daily_title": "ONDA",
     "streak_title": "ONDA",
     "daily_body": [
@@ -209,6 +215,10 @@
     "pulse_label": "Pulso (BPM)"
   },
   "camera": {
+    "checkin_saved": "Guardado en el diario · {{bpm}} lpm",
+    "notif_primer_body": "Cada medición de pulso se guarda en tu historial, así ves cómo cambia con el tiempo. ¿Te recordamos cada 3 días? Toma unos 30 segundos.",
+    "notif_primer_allow": "Recordarme",
+    "notif_primer_skip": "Ahora no",
     "offer_title": "Mira tu pulso responder en vivo",
     "offer_body": "Apoya un dedo en la cámara trasera y observa cómo tu pulso se mueve con la respiración.",
     "offer_cta": "Usar cámara",
@@ -1026,6 +1036,8 @@
     "no_practice_ratings": "Aún no hay calificaciones. ¡Completa las prácticas y califícalas!"
   },
   "settings": {
+    "calm_checkins": "Avisos tranquilos",
+    "calm_checkins_hint": "Mensajes suaves y ocasionales cuando estás estable; no afecta a las señales de desviación.",
     "contact_developers": "Escribir a los desarrolladores",
     "contact_subject": "ONDA — Comentarios",
     "contact_body_hint": "Hola equipo de ONDA,",

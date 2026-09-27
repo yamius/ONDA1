@@ -14,7 +14,10 @@ import {
   disableDailyReminder,
   getStreakEnabled,
   setStreakEnabled as setStreakEnabledSvc,
+  getCheckinsEnabled,
+  setCheckinsEnabled as setCheckinsEnabledSvc,
 } from '../services/notifications';
+import { trackEvent } from '../services/AnalyticsService';
 import { getMarketingOptIn, setMarketingOptIn } from '../services/pushNotifications';
 import { PermissionsService } from '../services/PermissionsService';
 
@@ -30,6 +33,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
   const [dailyEnabled, setDailyEnabled] = useState<boolean>(() => getDailyEnabled());
   const [dailyTime, setDailyTime] = useState<string>(() => getDailyTime());
   const [streakEnabled, setStreakEnabled] = useState<boolean>(() => getStreakEnabled());
+  const [checkinsEnabled, setCheckinsEnabled] = useState<boolean>(() => getCheckinsEnabled());
   const [marketingEnabled, setMarketingEnabled] = useState<boolean>(() => getMarketingOptIn());
   const [permDenied, setPermDenied] = useState(false);
   // Persistent-banner intent — iOS decides banner persistence, not the app, so
@@ -79,6 +83,24 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
     }
     setStreakEnabled(next);
     await setStreakEnabledSvc(next);
+  };
+
+  // Calm check-ins (task 16). Turning off never touches deviation signals — only
+  // the gentle "you're steady" / camera-check-in nudges.
+  const handleCheckinToggle = async (next: boolean) => {
+    if (next) {
+      const perm = await requestPermission();
+      if (perm !== 'granted') {
+        setPermDenied(perm === 'denied');
+        setCheckinsEnabled(false);
+        return;
+      }
+      setPermDenied(false);
+    } else {
+      try { trackEvent('checkin_disabled', {}); } catch { /* noop */ }
+    }
+    setCheckinsEnabled(next);
+    await setCheckinsEnabledSvc(next);
   };
 
   // Marketing (OneSignal-side tag). Does NOT request a separate iOS
@@ -273,6 +295,36 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
                   <span
                     className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
                       streakEnabled ? 'translate-x-6' : 'translate-x-1'
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {/* Calm check-ins (task 16) — gentle "you're steady" / camera nudges. Default ON. */}
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex-1 min-w-0">
+                  <div className="text-sm text-text-primary">
+                    {t('settings.calm_checkins', 'Calm check-ins')}
+                  </div>
+                  <div className="text-xs mt-0.5 text-text-muted">
+                    {t('settings.calm_checkins_hint', "Occasional gentle nudges when you're steady — never affects deviation signals.")}
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={checkinsEnabled}
+                  onClick={() => handleCheckinToggle(!checkinsEnabled)}
+                  className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full transition-colors ${
+                    checkinsEnabled
+                      ? 'bg-indigo-500'
+                      : 'bg-border/20'
+                  }`}
+                  data-testid="toggle-calm-checkins"
+                >
+                  <span
+                    className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                      checkinsEnabled ? 'translate-x-6' : 'translate-x-1'
                     }`}
                   />
                 </button>

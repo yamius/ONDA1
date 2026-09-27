@@ -12,7 +12,7 @@
 import { supabase } from './supabase';
 import { trackEvent } from '../services/AnalyticsService';
 
-export type DiarySource = 'text' | 'voice' | 'photo' | 'text_voice' | 'mixed';
+export type DiarySource = 'text' | 'voice' | 'photo' | 'text_voice' | 'mixed' | 'camera_checkin';
 
 export interface DiaryEntry {
   id: string;              // client-generated, stable across the sync

@@ -22,12 +22,15 @@ const LS_DAILY_ENABLED = 'onda_reminders_daily_enabled';
 const LS_DAILY_TIME = 'onda_reminders_daily_time';      // 'HH:MM'
 const LS_STREAK_ENABLED = 'onda_reminders_streak_enabled';
 const LS_LAST_PERMISSION = 'onda_reminders_last_permission'; // 'granted'|'denied'|'prompt'
+const LS_CHECKINS_ENABLED = 'onda_checkins_enabled';         // calm check-ins (task 16), default ON
 
 // === Notification IDs ===
 // Daily: 1000..1006 — rolling week. Each slot represents day-of-week offset.
 // Streak: 2000 — single shot, overwritten on each re-plan.
 const DAILY_ID_BASE = 1000;
 const STREAK_ID = 2000;
+// Calm check-ins (task 16): a single upcoming calm notification, cancel+reschedule.
+const CHECKIN_ID = 3000;
 
 // === Copy variants ===
 // Each variant is referenced by index so analytics can attribute opens to a
@@ -245,6 +248,76 @@ export async function cancelStreakNudge(): Promise<void> {
   }
 }
 
+// === Calm check-ins (task 16) ===
+
+export type CheckinNotifType = 'A1' | 'A2' | 'A3' | 'B1' | 'B2';
+export type CheckinNotifSegment = 'watch' | 'no_watch';
+
+export function getCheckinsEnabled(): boolean {
+  const v = localStorage.getItem(LS_CHECKINS_ENABLED);
+  return v === null ? true : v === 'true'; // default ON
+}
+
+export async function setCheckinsEnabled(enabled: boolean): Promise<void> {
+  localStorage.setItem(LS_CHECKINS_ENABLED, enabled ? 'true' : 'false');
+  if (!enabled) await cancelCheckins();
+}
+
+function checkinTitle(): string {
+  return i18n.t('reminders.checkin_title', 'ONDA');
+}
+
+function tCheckin(type: CheckinNotifType, restingPulse?: number): string {
+  const key = `reminders.checkin_${type.toLowerCase()}`; // reminders.checkin_a1 …
+  return i18n.t(key, { x: restingPulse ?? '', defaultValue: i18n.t('reminders.checkin_b1', 'A short practice keeps your rhythm going.') });
+}
+
+function nextAt(hour: number, minute: number): Date {
+  const today = nextOccurrence(hour, minute, 0);
+  return today > new Date() ? today : nextOccurrence(hour, minute, 1);
+}
+
+/**
+ * Schedule the single upcoming calm check-in. Segment A lands in the morning
+ * (after the night sync); Segment B at a calm daytime hour — never at night.
+ * Idempotent: cancels the previous one first.
+ */
+export async function scheduleCheckin(opts: { type: CheckinNotifType; segment: CheckinNotifSegment; restingPulse?: number }): Promise<boolean> {
+  if (!isSupported()) return false;
+  const perm = await checkPermission();
+  if (perm !== 'granted') return false;
+  if (!getCheckinsEnabled()) return false;
+
+  const at = opts.segment === 'watch' ? nextAt(9, 0) : nextAt(13, 0);
+  try {
+    await LocalNotifications.cancel({ notifications: [{ id: CHECKIN_ID }] });
+    await LocalNotifications.schedule({
+      notifications: [
+        {
+          id: CHECKIN_ID,
+          title: checkinTitle(),
+          body: tCheckin(opts.type, opts.restingPulse),
+          schedule: { at, allowWhileIdle: true },
+          extra: { kind: 'checkin', checkin_type: opts.type, segment: opts.segment },
+        },
+      ],
+    });
+    return true;
+  } catch (e) {
+    console.warn('[notifications] checkin schedule failed', e);
+    return false;
+  }
+}
+
+export async function cancelCheckins(): Promise<void> {
+  if (!isSupported()) return;
+  try {
+    await LocalNotifications.cancel({ notifications: [{ id: CHECKIN_ID }] });
+  } catch {
+    /* ignore */
+  }
+}
+
 // === Open-from-notification listener ===
 
 /**
@@ -252,7 +325,7 @@ export async function cancelStreakNudge(): Promise<void> {
  * notification we scheduled. Use it to send a Tenjin event with the
  * copy_variant_id so we can A/B copy.
  */
-export function onNotificationOpened(cb: (info: { kind: string; copy_variant_id?: number; streak?: number }) => void) {
+export function onNotificationOpened(cb: (info: { kind: string; copy_variant_id?: number; streak?: number; checkin_type?: CheckinNotifType; segment?: CheckinNotifSegment }) => void) {
   if (!isSupported()) return () => {};
   const handle = LocalNotifications.addListener('localNotificationActionPerformed', (event) => {
     const extra = event.notification?.extra || {};
@@ -260,6 +333,8 @@ export function onNotificationOpened(cb: (info: { kind: string; copy_variant_id?
       kind: extra.kind ?? 'unknown',
       copy_variant_id: extra.copy_variant_id,
       streak: extra.streak,
+      checkin_type: extra.checkin_type,
+      segment: extra.segment,
     });
   });
   return () => {

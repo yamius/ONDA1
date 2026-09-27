@@ -49,7 +49,7 @@ const RULES: Record<AnomalyMetric, { dir: AnomalyDirection; absDelta?: number; r
 const round1 = (n: number) => Math.round(n * 10) / 10;
 const round2 = (n: number) => Math.round(n * 100) / 100;
 
-function meanSd(xs: number[]): { mean: number; sd: number } {
+export function meanSd(xs: number[]): { mean: number; sd: number } {
   const n = xs.length;
   const mean = xs.reduce((a, b) => a + b, 0) / n;
   const variance = xs.reduce((a, b) => a + (b - mean) ** 2, 0) / (n - 1); // sample SD
@@ -122,7 +122,7 @@ export interface TrafficState {
 
 /** Is this night's value outside the corridor in the metric's concern direction,
  *  at the ±1.5 SD gate + the metric floor (same strictness as a yellow signal)? */
-function isNightOut(value: number, mean: number, sd: number, metric: AnomalyMetric): boolean {
+export function isNightOut(value: number, mean: number, sd: number, metric: AnomalyMetric): boolean {
   if (!(sd > 0) || !Number.isFinite(value)) return false;
   const delta = value - mean;
   if (Math.abs(delta) / sd < SD_GATE) return false;
