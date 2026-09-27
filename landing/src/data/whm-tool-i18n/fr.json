@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Respiration Wim Hof — minuteur guidé gratuit | ONDA Life",
+    "description": "Minuteur gratuit de respiration Wim Hof : respirations guidées, chrono d'apnée, récupération, plus un guide douche froide et bain froid sûr.",
+    "appName": "Minuteur de respiration Wim Hof",
+    "appDescription": "Minuteur guidé gratuit pour la respiration de type Wim Hof — respirations profondes, chronomètre d'apnée et respiration de récupération — avec un guide d'exposition au froid axé sur la sécurité."
+  },
+  "breadcrumb": { "home": "Accueil", "tools": "Outils", "current": "Minuteur Wim Hof" },
+  "h1": "Respiration Wim Hof — minuteur",
+  "capsule": "La respiration Wim Hof consiste en 30 à 40 respirations profondes et rapides, puis à expirer et retenir son souffle aussi longtemps que c'est confortable, puis à prendre une grande inspiration de récupération retenue 15 secondes — le tout répété sur 3 à 4 cycles. Ce minuteur compte les respirations, chronomètre votre apnée et guide la récupération. Pratiquez toujours assis ou allongé, hors de l'eau : cette respiration peut provoquer un évanouissement.",
+  "imageAlt": "Minuteur de respiration Wim Hof — respirations guidées, apnée et récupération, avec un guide d'exposition au froid, par ONDA Life",
+  "safetyTitle": "⚠ À lire avant de commencer",
+  "safety": [
+    "Ne pratiquez JAMAIS cette respiration dans l'eau ou à proximité de l'eau, dans une baignoire ou debout — le risque d'évanouissement est réel. Soyez toujours assis ou allongé sur une surface sûre.",
+    "Ne combinez jamais cette respiration avec l'eau froide, la conduite ou toute situation où une perte de connaissance serait dangereuse. Faites d'abord la respiration, hors de l'eau, et attendez d'être complètement rétabli.",
+    "Renoncez à l'exposition au froid et à cette respiration si vous êtes enceinte, si vous avez une maladie cardiaque, de l'hypertension, de l'épilepsie ou des antécédents d'évanouissement — consultez d'abord un médecin.",
+    "L'eau froide déclenche un réflexe de suffocation (choc thermique) et fait grimper la fréquence cardiaque et la tension artérielle ; entrez progressivement, restez peu de temps et ne vous immergez jamais seul en eau libre.",
+    "Arrêtez immédiatement en cas de douleur thoracique, de vertiges intenses ou d'engourdissement. Réchauffez-vous ensuite activement."
+  ],
+  "ui": {
+    "rounds": "Cycles",
+    "breaths": "Respirations par cycle",
+    "press": "Appuyez sur Démarrer",
+    "in": "Inspirez",
+    "out": "Relâchez",
+    "hold": "Expirez, puis retenez",
+    "recovery": "Inspirez à fond — retenez",
+    "done": "Terminé",
+    "round": "Cycle {{r}} / {{n}}",
+    "start": "► Démarrer",
+    "stop": "◼ Arrêter",
+    "release": "J'ai besoin de respirer →",
+    "complete": "Séance terminée · cycles : {{n}}",
+    "holds": "Apnées : {{list}}",
+    "restart": "Recommencer",
+    "note": "Asseyez-vous ou allongez-vous. Arrêtez si vous vous sentez mal. Jamais dans l'eau ni à proximité de l'eau."
+  },
+  "coldTitle": "Protocole d'exposition au froid",
+  "protocol": [
+    { "label": "Dose hebdomadaire", "value": "Environ 11 minutes de froid volontaire par semaine, réparties sur 2 à 4 courtes séances — la quantité rapportée dans une étude sur des nageurs d'hiver réguliers (Søberg 2021). Plus n'est pas mieux." },
+    { "label": "Par séance", "value": "1 à 3 minutes suffisent largement. L'objectif est un stress court et gérable, pas un exploit d'endurance." },
+    { "label": "Température", "value": "Froid désagréable mais supportable — pour beaucoup, une eau autour de 10–15 °C. Laissez-vous guider par la sensation, pas par un chiffre." },
+    { "label": "Pour commencer", "value": "Terminez votre douche habituelle par 30 secondes d'eau froide et ajoutez environ 15 secondes par semaine. La douche froide est un début sûr avant tout bain froid." },
+    { "label": "Moment", "value": "Si votre objectif est de prendre du muscle, évitez l'immersion dans l'eau froide juste après la musculation — elle peut freiner l'adaptation musculaire (Roberts 2015). Le froid le matin ne pose pas de problème." }
+  ],
+  "disclaimer": "Guide éducatif, ni avis médical ni substitut à un encadrement adapté. Les bénéfices sont réels mais souvent exagérés ; les risques aussi sont réels. Respectez les règles de sécurité, progressez lentement et obtenez un avis médical si vous avez une maladie cardiaque ou êtes enceinte.",
+  "sections": [
+    {
+      "h2": "Comment faire la respiration Wim Hof",
+      "body": "Asseyez-vous ou allongez-vous dans un endroit sûr. Prenez 30 à 40 respirations profondes : inspirez pleinement par le nez ou la bouche et relâchez l'air sans forcer l'expiration, sur un rythme régulier. Après la dernière respiration, expirez et retenez votre souffle poumons vides aussi longtemps que c'est confortable — appuyez sur « J'ai besoin de respirer » quand c'est le cas. Prenez ensuite une grande inspiration et retenez-la environ 15 secondes avant de relâcher. Cela fait un cycle ; faites-en 3 à 4. Les picotements, l'étourdissement et des apnées plus longues au fil des cycles sont des effets normaux de la baisse du dioxyde de carbone — c'est précisément pourquoi il ne faut jamais pratiquer dans l'eau ni en conduisant."
+    },
+    {
+      "h2": "La respiration Wim Hof est-elle dangereuse ?",
+      "body": "Pratiquée correctement — assis ou allongé, hors de l'eau — elle est sûre pour la plupart des personnes en bonne santé. Mal pratiquée, elle est réellement dangereuse : l'hyperventilation fait baisser le dioxyde de carbone et peut provoquer un évanouissement sans prévenir, et des personnes se sont noyées en la pratiquant dans l'eau, une baignoire ou une piscine. Ne la pratiquez jamais dans l'eau ou à proximité, ni en conduisant, et évitez-la sans avis médical si vous êtes enceinte ou avez une maladie cardiaque, de l'hypertension, de l'épilepsie ou des antécédents d'évanouissement."
+    },
+    {
+      "h2": "La méthode Wim Hof fonctionne-t-elle ?",
+      "body": "En partie, avec des réserves honnêtes. Dans une étude contrôlée (Kox 2014), des personnes formées à la méthode ont pu augmenter volontairement leur adrénaline et atténuer leur réponse inflammatoire à une toxine bactérienne injectée — un résultat réel et surprenant. La douche froide a ses propres preuves, modestes : dans un essai portant sur environ 3 000 personnes, terminer la douche par 30 à 90 secondes d'eau froide a réduit d'environ 29 % les jours d'arrêt maladie déclarés (Buijze 2016). Mais affirmer qu'elle guérit des maladies ou renforce spectaculairement l'immunité va bien au-delà des preuves. Considérez-la comme une pratique de résistance au stress et de concentration, pas comme un traitement."
+    },
+    {
+      "h2": "Douche froide ou bain froid ?",
+      "body": "Commencez par la douche froide : elle comporte bien moins de risques et apporte tout de même des bénéfices. Un bain de glace ou une immersion en eau libre ajoute une forte réponse de choc thermique — un réflexe de suffocation et une hausse brutale de la fréquence cardiaque et de la tension — ainsi que de réels risques cardiaques et de noyade (Tipton 2017). Progressez lentement, gardez des séances courtes, ne vous immergez jamais seul en eau libre et obtenez d'abord un avis médical si vous avez une maladie cardiovasculaire. Ne faites jamais l'exercice de respiration dans l'eau."
+    }
+  ],
+  "faqTitle": "Respiration Wim Hof — questions fréquentes",
+  "faq": [
+    { "q": "Qu'est-ce que la méthode de respiration Wim Hof ?", "a": "Un cycle de 30 à 40 respirations profondes, suivi d'une expiration et d'une apnée aussi longue que c'est confortable, puis d'une respiration de récupération retenue environ 15 secondes — répété sur 3 à 4 cycles. Elle est généralement associée à l'exposition au froid." },
+    { "q": "Combien de cycles de respiration Wim Hof faut-il faire ?", "a": "3 à 4 cycles de 30 à 40 respirations, c'est la pratique habituelle, soit environ 10 à 15 minutes au total. Les débutants peuvent commencer par 2 cycles." },
+    { "q": "Combien de temps faut-il retenir son souffle ?", "a": "Aussi longtemps que c'est confortable — il n'y a pas d'objectif. Des apnées de 1 à 2 minutes sont courantes après quelques séances et s'allongent généralement au fil des cycles. Ne forcez jamais malgré un fort inconfort." },
+    { "q": "La respiration Wim Hof est-elle sans danger ?", "a": "Pour la plupart des personnes en bonne santé, oui, si elle est pratiquée assis ou allongé, hors de l'eau. Elle peut provoquer un évanouissement : ne la pratiquez donc jamais dans l'eau ou à proximité, dans une baignoire ou en conduisant, et consultez d'abord un médecin si vous êtes enceinte ou avez une maladie cardiaque, de l'hypertension ou de l'épilepsie." },
+    { "q": "Pourquoi ai-je des picotements ou la tête qui tourne ?", "a": "La respiration profonde fait baisser le dioxyde de carbone dans le sang, ce qui provoque picotements, étourdissements et parfois des crampes musculaires. Cela passe après l'apnée ; arrêtez si c'est intense." },
+    { "q": "De combien d'exposition au froid ai-je besoin ?", "a": "Environ 11 minutes par semaine, réparties en 2 à 4 courtes séances de 1 à 3 minutes, est une quantité souvent citée. Terminer sa douche à l'eau froide est une façon sûre de commencer." },
+    { "q": "La méthode Wim Hof renforce-t-elle l'immunité ?", "a": "Une étude contrôlée a montré que des personnes entraînées pouvaient atténuer une réponse inflammatoire, et la douche froide a été associée à moins de jours d'arrêt maladie. Les affirmations qui vont au-delà — comme la guérison de maladies — ne sont pas étayées." }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "La méthode Wim Hof associe une hyperventilation cyclique, des apnées et l'exposition au froid. L'étude phare (Kox 2014) a montré que des pratiquants entraînés pouvaient augmenter volontairement leur adrénaline et atténuer une réponse inflammatoire — un résultat réel, bien que limité et spécifique, souvent extrapolé à l'excès. Terminer la douche à l'eau froide a réduit les jours d'arrêt maladie déclarés dans un vaste essai (Buijze 2016). La même littérature signale un vrai danger : la respiration fait baisser le dioxyde de carbone et peut provoquer un évanouissement, et l'eau froide déclenche un choc thermique et une sollicitation cardiaque (Tipton 2017) — raison pour laquelle il ne faut jamais pratiquer dans l'eau. La dose hebdomadaire de froid suit une étude sur des nageurs d'hiver (Søberg 2021) ; la mise en garde sur la musculation suit Roberts 2015. Guide éducatif et minuteur, pas un avis médical.",
+  "sourcesContributes": [
+    "L'étude de référence sur la méthode Wim Hof — le groupe entraîné a augmenté volontairement son adrénaline et atténué une réponse inflammatoire.",
+    "Essai randomisé (environ 3 000 personnes) : terminer la douche par 30 à 90 s d'eau froide a réduit d'environ 29 % les arrêts maladie déclarés.",
+    "Le tableau honnête de la sécurité — choc thermique, risque cardiaque, et pourquoi la prudence et une exposition progressive comptent.",
+    "Étude sur des nageurs d'hiver réguliers, source des ~11 minutes de froid par semaine souvent citées.",
+    "L'immersion en eau froide après la musculation a freiné les gains à long terme de masse et de force musculaires."
+  ],
+  "related": {
+    "label": "À voir aussi",
+    "timer": "Minuteur de respiration (carrée, 4-7-8, cohérente)",
+    "nervous": "Quiz sur l'état du système nerveux",
+    "article": "Respiration Wim Hof et inflammation"
+  }
+}

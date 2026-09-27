@@ -3,9 +3,10 @@ import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
 import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
-import { BREATHING_PATTERNS, BREATHING_SOURCES, type BreathingPattern, type PhaseKind } from '../data/breathing'
+import { BREATHING_PATTERNS, BREATHING_SOURCES, type BreathingPattern } from '../data/breathing'
 import { breathToolCopy, fill, type BreathToolCopy } from '../data/breath-tool-i18n'
 import { SourcesSection } from '../components/SourcesSection'
+import { useBreathCues } from '../lib/breathCues'
 
 const IDLE_SCALE = 0.42
 const DURATIONS = [1, 3, 5, 10, 0] as const // minutes; 0 = unlimited
@@ -26,39 +27,6 @@ function Rich({ text, lang }: { text: string; lang: Lang }) {
       })}
     </>
   )
-}
-
-/** Soft audio cue per phase: rising tone for inhale, falling for exhale, short tick for hold. */
-function useCues() {
-  const ctxRef = useRef<AudioContext | null>(null)
-  const ensure = () => {
-    if (!ctxRef.current) {
-      const AC = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext
-      if (AC) ctxRef.current = new AC()
-    }
-    if (ctxRef.current?.state === 'suspended') void ctxRef.current.resume()
-    return ctxRef.current
-  }
-  const play = (kind: PhaseKind) => {
-    const ctx = ctxRef.current
-    if (!ctx) return
-    const t = ctx.currentTime
-    const osc = ctx.createOscillator()
-    const gain = ctx.createGain()
-    osc.type = 'sine'
-    const [f0, f1, dur] =
-      kind === 'in' ? [330, 440, 0.45] : kind === 'topup' ? [440, 523, 0.25] : kind === 'out' ? [440, 294, 0.6] : [392, 392, 0.12]
-    osc.frequency.setValueAtTime(f0, t)
-    osc.frequency.linearRampToValueAtTime(f1, t + dur)
-    gain.gain.setValueAtTime(0.0001, t)
-    gain.gain.exponentialRampToValueAtTime(0.12, t + 0.04)
-    gain.gain.exponentialRampToValueAtTime(0.0001, t + dur)
-    osc.connect(gain).connect(ctx.destination)
-    osc.start(t)
-    osc.stop(t + dur + 0.05)
-  }
-  useEffect(() => () => void ctxRef.current?.close(), [])
-  return { ensure, play }
 }
 
 export function BreathingPacerPage() {
@@ -91,7 +59,7 @@ export function BreathingPacerPage() {
   vibRef.current = vibrate
   const cyclesRef = useRef(0)
   const timerRef = useRef<HTMLDivElement>(null)
-  const cues = useCues()
+  const cues = useBreathCues()
 
   useEffect(() => {
     document.title = c.meta.title

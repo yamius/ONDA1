@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Respirazione di risonanza — trova il tuo ritmo | ONDA Life",
+    "description": "Pacer gratuito per la respirazione di risonanza: respira col cerchio a 4,5–6,5 respiri al minuto, con segnali sonori, e trova il ritmo più fluido per te.",
+    "appName": "Pacer di respirazione di risonanza",
+    "appDescription": "Pacer gratuito per la respirazione a frequenza di risonanza (coerente) a 4,5–6,5 respiri al minuto, con segnali sonori, durata della sessione e un protocollo per trovare il tuo ritmo."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Strumenti", "current": "Respirazione di risonanza" },
+  "h1": "Respirazione di risonanza",
+  "capsule": "La respirazione di risonanza consiste nel respirare in modo lento e regolare al tuo ritmo personale — di solito tra 4,5 e 6,5 respiri al minuto — in cui ritmo cardiaco e respiro vanno al passo e la variabilità della frequenza cardiaca (HRV) oscilla al massimo. Scegli un ritmo, premi avvio e respira seguendo il cerchio; prova ogni ritmo per circa 2 minuti e tieni quello che ti sembra più fluido.",
+  "imageAlt": "Pacer per la respirazione di risonanza — respira col cerchio a 4,5–6,5 respiri al minuto, strumento gratuito di ONDA Life",
+  "ui": {
+    "height": "Altezza (cm) — facoltativa",
+    "heightPh": "es. 178",
+    "estimate": "Punto di partenza: {{band}} → usa {{bpm}}/min",
+    "rate": "Ritmo respiratorio (respiri al minuto)",
+    "perMin": "{{n}}/min",
+    "pacing": "{{s}} s inspiro · {{s}} s espiro",
+    "in": "Inspira",
+    "out": "Espira",
+    "press": "Premi avvio",
+    "start": "► Avvia",
+    "stop": "◼ Ferma",
+    "duration": "Sessione",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Segnali sonori",
+    "remaining": "{{m}}:{{s}} rimanenti",
+    "done": "Fatto. Come ti è sembrato questo ritmo — fluido e facile, o un po' forzato?",
+    "again": "Ancora"
+  },
+  "bands": {
+    "short": "≈ 6,0–6,5 respiri/min",
+    "mid": "≈ 5,5–6,0 respiri/min",
+    "tall": "≈ 5,0–5,5 respiri/min"
+  },
+  "stepsTitle": "Come trovare il tuo ritmo di risonanza",
+  "steps": [
+    "Inizia da 6,5 respiri al minuto e respira col cerchio per circa 2 minuti — dentro e fuori dal naso, fasi di uguale durata, senza forzare.",
+    "Scendi a 6,0, 5,5, 5,0 e 4,5, circa 2 minuti ciascuno, con qualche respiro normale nel mezzo.",
+    "Tieni il ritmo che risulta più fluido e ti lascia più calmo — non il più lento che riesci a sostenere.",
+    "Pratica quel ritmo 10–20 minuti al giorno. Con una fascia toracica o un orologio che mostra l'HRV battito per battito, scegli il ritmo in cui le onde della frequenza cardiaca sono più ampie e regolari."
+  ],
+  "safety": "Il valore basato sull'altezza è solo un punto di partenza indicativo, non il tuo vero ritmo di risonanza. Strumento educativo, non un dispositivo medico. Se ti gira la testa, fermati e respira normalmente; se hai problemi cardiaci o polmonari o sei in gravidanza, mantieni sessioni leggere.",
+  "cta": "Con un Apple Watch, ONDA mostra un punteggio di coerenza in tempo reale mentre respiri — un segnale di feedback che ti aiuta a notare quale ritmo calma il tuo cuore. Dalla fotocamera mostra il tuo battito.",
+  "sections": [
+    {
+      "h2": "Che cos'è la respirazione a frequenza di risonanza?",
+      "body": "Ogni persona ha un ritmo respiratorio lento in cui ritmo cardiaco, respiro e baroriflesso — il circuito con cui il corpo regola la pressione — si muovono all'unisono. A questa frequenza di risonanza il battito accelera a ogni inspirazione e rallenta a ogni espirazione con l'oscillazione più ampia possibile, ed è per questo che l'HRV raggiunge il picco (Lehrer 2003). Per la maggior parte degli adulti si trova tra 4,5 e 6,5 respiri al minuto. Respirare a questo ritmo è la tecnica centrale del biofeedback HRV, usata nella ricerca su stress, ansia e pressione arteriosa."
+    },
+    {
+      "h2": "Respirazione di risonanza e respirazione coerente",
+      "body": "Per respirazione coerente si intende di solito un ritmo fisso di circa 5–6 respiri al minuto — per esempio 5,5 secondi di inspirazione e 5,5 di espirazione — che si avvicina al ritmo di risonanza della maggior parte delle persone. La respirazione di risonanza ne è la versione personalizzata: provi diversi ritmi e tieni quello più adatto al tuo corpo. Se non vuoi fare test, la respirazione coerente a 5,5 è un'impostazione sensata. Provala nel [Timer per la respirazione: quadrata, 4-7-8 e coerente](/tools/breathing) o leggi la [guida alla respirazione coerente](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "6 respiri al minuto riducono lo stress e aumentano l'HRV?",
+      "body": "Respirare a circa 6 respiri al minuto aumenta in modo affidabile la variabilità della frequenza cardiaca durante la pratica; in uno studio controllato (Steffen 2017) ha anche migliorato l'umore rispetto allo stare seduti in silenzio. La pratica regolare per diverse settimane è associata a una migliore funzione del baroriflesso e, in alcuni studi, a una pressione leggermente più bassa. È una tecnica di rilassamento ben studiata, non una terapia di per sé. Approfondisci: [respirazione lenta e pressione alta](/articles/high-blood-pressure-slow-breathing)."
+    },
+    {
+      "h2": "Coerenza cardiaca: per quanto tempo e quanto spesso praticare?",
+      "body": "I protocolli di ricerca prevedono in genere 10–20 minuti al giorno, spesso divisi in due sessioni, per diverse settimane. Inizia con 5 minuti se la respirazione lenta ti è nuova, mantieni il respiro leggero e silenzioso e non respirare più a fondo di quanto sia comodo — respirare troppo profondamente a un ritmo lento può dare capogiri. Molti la trovano più facile la sera o prima di un compito stressante."
+    }
+  ],
+  "faqTitle": "Respirazione di risonanza — domande frequenti",
+  "faq": [
+    { "q": "Che cos'è la respirazione a frequenza di risonanza?", "a": "Respirare lentamente al tuo ritmo personale — di solito 4,5–6,5 respiri al minuto — in cui ritmo cardiaco e respiro vanno al passo e l'HRV oscilla al massimo. È la tecnica centrale del biofeedback HRV." },
+    { "q": "Come trovo il mio ritmo di risonanza?", "a": "Respira circa 2 minuti ciascuno a 6,5, 6,0, 5,5, 5,0 e 4,5 respiri al minuto e tieni il ritmo più fluido. Con un dispositivo che mostra l'HRV battito per battito, scegli il ritmo con le onde della frequenza cardiaca più ampie e regolari." },
+    { "q": "La respirazione di risonanza è uguale alla respirazione coerente?", "a": "Quasi. La respirazione coerente usa un ritmo fisso di circa 5–6 respiri al minuto; la respirazione di risonanza lo personalizza sul tuo corpo." },
+    { "q": "L'altezza influisce sulla frequenza di risonanza?", "a": "Le persone più alte e gli uomini tendono ad avere un ritmo di risonanza leggermente più lento, per questo lo strumento propone un punto di partenza basato sull'altezza. È solo un'indicazione: prova i ritmi per trovare il tuo." },
+    { "q": "Per quanto tempo praticare la respirazione di risonanza?", "a": "Nella ricerca sono tipici 10–20 minuti al giorno, per diverse settimane. Inizia con 5 minuti e mantieni il respiro leggero." },
+    { "q": "La respirazione di risonanza aumenta l'HRV?", "a": "Sì, l'HRV aumenta mentre respiri a questo ritmo, e la pratica regolare è associata a una migliore funzione del baroriflesso e a un umore più sereno. Affianca le cure mediche, ma non le sostituisce." }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "A un ritmo personale — di solito 4,5–6,5 respiri al minuto — le oscillazioni della frequenza cardiaca, il respiro e il baroriflesso entrano in fase e l'ampiezza dell'HRV raggiunge il picco (Lehrer 2003). Il metodo standard per trovarlo è respirare a ciascun ritmo per un paio di minuti e misurare quale produce le oscillazioni cardiache più ampie e regolari (Shaffer 2020). Senza sensore, il ritmo che risulta più fluido e calmante è una scelta ragionevole. Il suggerimento basato sull'altezza è solo un punto di partenza indicativo. Strumento educativo, non un dispositivo medico.",
+  "sourcesContributes": [
+    "Lavoro fondativo che ha definito il concetto di frequenza di risonanza e il suo meccanismo baroriflesso.",
+    "Il protocollo per trovare la frequenza di risonanza individuale provando una serie di ritmi respiratori.",
+    "Respirare alla frequenza di risonanza (~6/min) ha aumentato l'HRV e migliorato l'umore rispetto allo stare seduti in silenzio."
+  ],
+  "related": {
+    "label": "Correlati",
+    "timer": "Timer per la respirazione (quadrata, 4-7-8, coerente)",
+    "hrv": "Calcolatore HRV per età",
+    "guide": "Guida alla respirazione coerente"
+  }
+}

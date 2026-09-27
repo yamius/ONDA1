@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Resonantieademhaling — vind je eigen ritme | ONDA Life",
+    "description": "Gratis pacer voor resonantieademhaling: adem mee met de cirkel op 4,5–6,5 ademhalingen per minuut, met geluidssignalen, en vind je soepelste ritme.",
+    "appName": "Resonantieademhaling-pacer",
+    "appDescription": "Gratis ademhalingspacer voor resonantiefrequentie- (coherente) ademhaling op 4,5–6,5 ademhalingen per minuut, met geluidssignalen, sessieduur en een protocol om je ritme te vinden."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Resonantieademhaling" },
+  "h1": "Resonantieademhaling",
+  "capsule": "Resonantieademhaling betekent langzaam en gelijkmatig ademen op je persoonlijke ritme — meestal tussen 4,5 en 6,5 ademhalingen per minuut — waarbij hartritme en ademhaling in de pas lopen en de hartslagvariabiliteit (HRV) het sterkst schommelt. Kies een ritme, druk op start en adem mee met de cirkel; probeer elk ritme ongeveer 2 minuten en houd het ritme aan dat het soepelst voelt.",
+  "imageAlt": "Pacer voor resonantieademhaling — adem mee met de cirkel op 4,5 tot 6,5 ademhalingen per minuut, gratis tool van ONDA Life",
+  "ui": {
+    "height": "Lengte (cm) — optioneel",
+    "heightPh": "bijv. 178",
+    "estimate": "Startpunt: {{band}} → gebruik {{bpm}}/min",
+    "rate": "Ademritme (ademhalingen per minuut)",
+    "perMin": "{{n}}/min",
+    "pacing": "{{s}} s in · {{s}} s uit",
+    "in": "Adem in",
+    "out": "Adem uit",
+    "press": "Druk op start",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "duration": "Sessie",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Geluidssignalen",
+    "remaining": "nog {{m}}:{{s}}",
+    "done": "Klaar. Hoe voelde dit ritme — soepel en makkelijk, of een beetje geforceerd?",
+    "again": "Opnieuw"
+  },
+  "bands": {
+    "short": "≈ 6,0–6,5 ademhalingen/min",
+    "mid": "≈ 5,5–6,0 ademhalingen/min",
+    "tall": "≈ 5,0–5,5 ademhalingen/min"
+  },
+  "stepsTitle": "Zo vind je je resonantieritme",
+  "steps": [
+    "Begin op 6,5 ademhalingen per minuut en adem ongeveer 2 minuten mee met de cirkel — in en uit door de neus, even lang, zonder te forceren.",
+    "Ga omlaag naar 6,0, 5,5, 5,0 en 4,5, elk ongeveer 2 minuten, met een korte normale ademhaling ertussen.",
+    "Houd het ritme aan dat het soepelst voelt en je het rustigst maakt — niet het langzaamste dat je volhoudt.",
+    "Oefen dat ritme 10–20 minuten per dag. Met een borstband of horloge dat HRV van slag tot slag toont, kies je het ritme waarbij de hartslaggolven het grootst en het regelmatigst zijn."
+  ],
+  "safety": "Het getal op basis van je lengte is een ruw startpunt, niet je echte resonantieritme. Educatieve tool, geen medisch hulpmiddel. Word je licht in je hoofd, stop dan en adem normaal; heb je een hart- of longaandoening of ben je zwanger, houd de sessies dan rustig.",
+  "cta": "Met een Apple Watch toont ONDA een live coherentiescore terwijl je ademt — feedback die je helpt merken welk ritme je hart tot rust brengt. Via de camera toont het je hartslag.",
+  "sections": [
+    {
+      "h2": "Wat is resonantiefrequentie-ademhaling?",
+      "body": "Ieder mens heeft een langzaam ademritme waarbij hartritme, ademhaling en de baroreflex — het regelsysteem van het lichaam voor de bloeddruk — gelijk op gaan. Op die resonantiefrequentie stijgt de hartslag bij elke inademing en daalt hij bij elke uitademing met de grootst mogelijke uitslag; daarom piekt de HRV (Lehrer 2003). Bij de meeste volwassenen ligt die tussen 4,5 en 6,5 ademhalingen per minuut. Ademen op dit ritme is de kerntechniek van HRV-biofeedback, die wordt gebruikt in onderzoek naar stress, angst en bloeddruk."
+    },
+    {
+      "h2": "Resonantieademhaling vs coherente ademhaling",
+      "body": "Coherente ademhaling betekent meestal een vast ritme van ongeveer 5–6 ademhalingen per minuut — bijvoorbeeld 5,5 seconden in en 5,5 uit — dat dicht bij het resonantieritme van de meeste mensen ligt. Resonantieademhaling is de persoonlijke variant: je test verschillende ritmes en houdt het ritme aan dat het best bij je lichaam past. Wil je niet testen, dan is coherent ademen op 5,5 een verstandige standaard. Probeer het in de [Ademhalingstimer: box breathing, 4-7-8 en coherent ademen](/tools/breathing) of lees de [gids voor coherente ademhaling](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "Verlaagt ademen op 6 ademhalingen per minuut stress en verhoogt het je HRV?",
+      "body": "Ademen op ongeveer 6 ademhalingen per minuut verhoogt betrouwbaar de hartslagvariabiliteit zolang je het doet; in een gecontroleerde studie (Steffen 2017) verbeterde het ook de stemming vergeleken met stil zitten. Regelmatig oefenen gedurende enkele weken hangt samen met een betere baroreflexfunctie en, in sommige studies, een licht lagere bloeddruk. Het is een goed onderzochte ontspanningstechniek, geen behandeling op zichzelf. Meer: [langzaam ademen en bloeddruk](/articles/high-blood-pressure-slow-breathing)."
+    },
+    {
+      "h2": "Hoe lang en hoe vaak moet je oefenen?",
+      "body": "Onderzoeksprotocollen gebruiken meestal 10–20 minuten per dag, vaak verdeeld over twee sessies, gedurende enkele weken. Begin met 5 minuten als langzaam ademen nog onwennig voelt, houd de adem zacht en geluidloos en adem niet dieper dan prettig is — te diep ademen op een langzaam ritme kan je licht in je hoofd maken. Veel mensen vinden het 's avonds of vóór een stressvolle taak het makkelijkst."
+    }
+  ],
+  "faqTitle": "Resonantieademhaling — veelgestelde vragen",
+  "faq": [
+    { "q": "Wat is resonantiefrequentie-ademhaling?", "a": "Langzaam ademen op je persoonlijke ritme — meestal 4,5–6,5 ademhalingen per minuut — waarbij hartritme en ademhaling gelijk op gaan en de HRV het sterkst schommelt. Het is de kerntechniek van HRV-biofeedback." },
+    { "q": "Hoe vind ik mijn resonantieritme?", "a": "Adem telkens ongeveer 2 minuten op 6,5, 6,0, 5,5, 5,0 en 4,5 ademhalingen per minuut en houd het ritme aan dat het soepelst voelt. Met een apparaat dat HRV van slag tot slag toont, kies je het ritme met de grootste en regelmatigste hartslaggolven." },
+    { "q": "Is resonantieademhaling hetzelfde als coherente ademhaling?", "a": "Bijna. Coherente ademhaling gebruikt een vast ritme van ongeveer 5–6 ademhalingen per minuut; resonantieademhaling stemt dat ritme af op jouw lichaam." },
+    { "q": "Heeft lengte invloed op de resonantiefrequentie?", "a": "Langere mensen en mannen hebben vaak een iets langzamer resonantieritme; daarom biedt deze tool een startpunt op basis van lengte. Het is maar een richtlijn — test de ritmes om het jouwe te vinden." },
+    { "q": "Hoe lang moet ik resonantieademhaling doen?", "a": "In onderzoek is 10–20 minuten per dag gebruikelijk, gedurende enkele weken. Begin met 5 minuten en houd de adem zacht." },
+    { "q": "Verhoogt resonantieademhaling je HRV?", "a": "Ja, de HRV stijgt terwijl je op dit ritme ademt, en regelmatig oefenen hangt samen met een betere baroreflexfunctie en een rustigere stemming. Het ondersteunt medische zorg, maar vervangt die niet." }
+  ],
+  "sourcesTitle": "Bronnen & methodologie",
+  "methodology": "Op een persoonlijk ritme — meestal 4,5–6,5 ademhalingen per minuut — komen hartslagschommelingen, ademhaling en de baroreflex in fase en piekt de HRV-amplitude (Lehrer 2003). De standaardmanier om dat ritme te vinden is een paar minuten op elk ritme ademen en meten welk ritme de grootste en gelijkmatigste hartslagschommelingen geeft (Shaffer 2020). Zonder sensor is het ritme dat het soepelst en rustigst voelt een redelijke keuze. De suggestie op basis van lengte is slechts een ruw startpunt. Educatieve tool, geen medisch hulpmiddel.",
+  "sourcesContributes": [
+    "Basiswerk dat het concept resonantiefrequentie en het baroreflexmechanisme erachter vastlegde.",
+    "Het protocol om iemands persoonlijke resonantiefrequentie te vinden door een reeks ademritmes te testen.",
+    "Ademen op resonantiefrequentie (~6/min) verhoogde de HRV en verbeterde de stemming vergeleken met stil zitten."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "timer": "Ademhalingstimer (box, 4-7-8, coherent)",
+    "hrv": "HRV-calculator per leeftijd",
+    "guide": "Gids voor coherente ademhaling"
+  }
+}

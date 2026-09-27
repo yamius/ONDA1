@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Oddychanie metodą Wima Hofa — timer rund | ONDA Life",
+    "description": "Darmowy timer oddychania metodą Wima Hofa: głębokie oddechy, stoper wstrzymania, oddech regeneracyjny oraz bezpieczny zimny prysznic i morsowanie.",
+    "appName": "Timer oddychania metodą Wima Hofa",
+    "appDescription": "Darmowy timer z prowadzeniem do oddychania w stylu Wima Hofa — głębokie oddechy, stoper wstrzymania oddechu i oddech regeneracyjny — z przewodnikiem po bezpiecznej ekspozycji na zimno."
+  },
+  "breadcrumb": { "home": "Strona główna", "tools": "Narzędzia", "current": "Timer Wima Hofa" },
+  "h1": "Oddychanie metodą Wima Hofa — timer",
+  "capsule": "Oddychanie metodą Wima Hofa to 30–40 głębokich, szybkich oddechów, potem wydech i wstrzymanie oddechu tak długo, jak jest komfortowo, a na koniec jeden głęboki oddech regeneracyjny wstrzymany na 15 sekund — powtarzane przez 3–4 rundy. Ten timer liczy oddechy, mierzy czas wstrzymania i prowadzi przez regenerację. Zawsze ćwicz na siedząco lub na leżąco, na suchym lądzie: to oddychanie może spowodować omdlenie.",
+  "imageAlt": "Timer oddychania metodą Wima Hofa — głębokie oddechy, wstrzymanie i regeneracja oraz przewodnik po ekspozycji na zimno, od ONDA Life",
+  "safetyTitle": "⚠ Przeczytaj, zanim zaczniesz",
+  "safety": [
+    "NIGDY nie wykonuj tego oddychania w wodzie ani w jej pobliżu, w wannie ani na stojąco — ryzyko omdlenia jest realne. Zawsze siedź lub leż na bezpiecznym podłożu.",
+    "Nigdy nie łącz tego oddychania z zimną wodą, prowadzeniem pojazdu ani żadną sytuacją, w której utrata przytomności jest niebezpieczna. Najpierw wykonaj oddychanie na suchym lądzie i w pełni dojdź do siebie.",
+    "Zrezygnuj z ekspozycji na zimno i z tego oddychania, jeśli jesteś w ciąży, masz chorobę serca, nadciśnienie, padaczkę lub skłonność do omdleń — najpierw skonsultuj się z lekarzem.",
+    "Zimna woda wywołuje odruchowy wdech (szok zimna) i gwałtowny wzrost tętna oraz ciśnienia krwi; wchodź stopniowo, krótko i nigdy nie morsuj sam w otwartym akwenie.",
+    "Przerwij natychmiast, jeśli poczujesz ból w klatce piersiowej, silne zawroty głowy lub drętwienie. Potem rozgrzej się aktywnie."
+  ],
+  "ui": {
+    "rounds": "Rundy",
+    "breaths": "Oddechy na rundę",
+    "press": "Naciśnij start",
+    "in": "Wdech",
+    "out": "Puść",
+    "hold": "Wydech i wstrzymaj",
+    "recovery": "Głęboki wdech — wstrzymaj",
+    "done": "Gotowe",
+    "round": "Runda {{r}} / {{n}}",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "release": "Muszę oddychać →",
+    "complete": "Sesja zakończona · rundy: {{n}}",
+    "holds": "Wstrzymania: {{list}}",
+    "restart": "Od nowa",
+    "note": "Usiądź lub połóż się. Przerwij, jeśli czujesz, że mdlejesz. Nigdy nie ćwicz w wodzie ani w jej pobliżu."
+  },
+  "coldTitle": "Protokół ekspozycji na zimno",
+  "protocol": [
+    { "label": "Dawka tygodniowa", "value": "Około 11 minut świadomego zimna tygodniowo, podzielonych na 2–4 krótkie sesje — tyle wykazało badanie regularnych zimowych pływaków (Søberg 2021). Więcej nie znaczy lepiej." },
+    { "label": "Na sesję", "value": "1–3 minuty w zupełności wystarczą. Celem jest krótki, kontrolowany stres, a nie próba wytrzymałości." },
+    { "label": "Temperatura", "value": "Nieprzyjemnie zimno, ale do wytrzymania — dla wielu osób to woda o temperaturze ok. 10–15 °C. Kieruj się odczuciem, nie liczbą." },
+    { "label": "Jak zacząć", "value": "Kończ zwykły prysznic 30 sekundami zimnej wody i co tydzień dodawaj ok. 15 sekund. Zimny prysznic to bezpieczny start przed jakimkolwiek zanurzeniem." },
+    { "label": "Pora", "value": "Jeśli Twoim celem jest budowa mięśni, unikaj zimnej kąpieli tuż po treningu siłowym — może osłabić adaptację mięśni (Roberts 2015). Zimno rano jest w porządku." }
+  ],
+  "disclaimer": "Materiał edukacyjny, a nie porada medyczna ani zamiennik właściwego instruktażu. Korzyści są realne, ale często przesadzone; ryzyko też jest realne. Przestrzegaj zasad bezpieczeństwa, zwiększaj obciążenie powoli i uzyskaj zgodę lekarza, jeśli masz jakąkolwiek chorobę serca lub jesteś w ciąży.",
+  "sections": [
+    {
+      "h2": "Metoda Wima Hofa — jak robić oddychanie",
+      "body": "Usiądź lub połóż się w bezpiecznym miejscu. Wykonaj 30–40 głębokich oddechów: wdychaj pełnie nosem lub ustami i wypuszczaj powietrze bez wymuszania, w równym rytmie. Po ostatnim oddechu zrób wydech i wstrzymaj oddech z pustymi płucami tak długo, jak jest komfortowo — gdy musisz odetchnąć, naciśnij „Muszę oddychać”. Następnie weź jeden głęboki wdech i wstrzymaj go na ok. 15 sekund, po czym wypuść. To jedna runda; wykonaj 3–4. Mrowienie, lekkie zawroty głowy i dłuższe wstrzymania w kolejnych rundach to normalne skutki obniżonego poziomu dwutlenku węgla — i właśnie dlatego nigdy nie wolno ćwiczyć w wodzie ani podczas prowadzenia pojazdu."
+    },
+    {
+      "h2": "Czy oddychanie metodą Wima Hofa jest bezpieczne?",
+      "body": "Wykonywane prawidłowo — na siedząco lub na leżąco, na suchym lądzie — jest bezpieczne dla większości zdrowych osób. Wykonywane źle jest naprawdę niebezpieczne: hiperwentylacja obniża poziom dwutlenku węgla i może bez ostrzeżenia spowodować omdlenie, a ludzie tonęli, ćwicząc w wodzie, wannie lub basenie. Nigdy nie ćwicz w wodzie ani w jej pobliżu ani podczas prowadzenia pojazdu, a bez konsultacji z lekarzem unikaj tej metody, jeśli jesteś w ciąży, masz chorobę serca, nadciśnienie, padaczkę lub skłonność do omdleń."
+    },
+    {
+      "h2": "Czy metoda Wima Hofa działa?",
+      "body": "Częściowo, z uczciwymi zastrzeżeniami. W kontrolowanym badaniu (Kox 2014) osoby przeszkolone w tej metodzie potrafiły świadomie podnieść poziom adrenaliny i wyciszyć reakcję zapalną na wstrzykniętą toksynę bakteryjną — to realny i zaskakujący wynik. Zimne prysznice mają własne, skromne dowody: w badaniu z udziałem ok. 3000 osób kończenie prysznica 30–90 sekundami zimnej wody zmniejszyło liczbę zgłaszanych dni zwolnienia o ok. 29% (Buijze 2016). Twierdzenia, że metoda leczy choroby lub radykalnie wzmacnia odporność, wykraczają jednak daleko poza dowody. Traktuj ją jako praktykę odporności na stres i koncentracji, a nie terapię."
+    },
+    {
+      "h2": "Zimny prysznic czy morsowanie?",
+      "body": "Zacznij od zimnych pryszniców: niosą znacznie mniejsze ryzyko, a wciąż przynoszą korzyści. Kąpiel w lodzie lub morsowanie w otwartej wodzie dodaje silny szok zimna — odruchowy wdech i gwałtowny wzrost tętna oraz ciśnienia — a także realne ryzyko sercowe i utonięcia (Tipton 2017). Zwiększaj obciążenie powoli, rób krótkie sesje, nigdy nie morsuj sam w otwartym akwenie i najpierw uzyskaj zgodę lekarza, jeśli masz jakąkolwiek chorobę układu krążenia. Nigdy nie wykonuj ćwiczenia oddechowego w wodzie."
+    }
+  ],
+  "faqTitle": "Oddychanie metodą Wima Hofa — częste pytania",
+  "faq": [
+    { "q": "Na czym polega metoda oddychania Wima Hofa?", "a": "To cykl 30–40 głębokich oddechów, następnie wydech i wstrzymanie oddechu tak długo, jak jest komfortowo, a potem oddech regeneracyjny wstrzymany na ok. 15 sekund — powtarzane przez 3–4 rundy. Zwykle łączy się ją z ekspozycją na zimno." },
+    { "q": "Ile rund oddychania metodą Wima Hofa robić?", "a": "Standardem są 3–4 rundy po 30–40 oddechów, łącznie ok. 10–15 minut. Początkujący mogą zacząć od 2 rund." },
+    { "q": "Jak długo wstrzymywać oddech?", "a": "Tak długo, jak jest komfortowo — nie ma celu do osiągnięcia. Wstrzymania rzędu 1–2 minut są częste po kilku sesjach i zwykle wydłużają się w kolejnych rundach. Nigdy nie przełamuj silnego dyskomfortu." },
+    { "q": "Czy oddychanie metodą Wima Hofa jest bezpieczne?", "a": "Dla większości zdrowych osób tak, jeśli ćwiczą na siedząco lub na leżąco na suchym lądzie. Może spowodować omdlenie, więc nigdy nie ćwicz w wodzie ani w jej pobliżu, w wannie ani podczas prowadzenia pojazdu, a jeśli jesteś w ciąży, masz chorobę serca, nadciśnienie lub padaczkę, najpierw skonsultuj się z lekarzem." },
+    { "q": "Skąd mrowienie i zawroty głowy?", "a": "Głębokie oddychanie obniża poziom dwutlenku węgla we krwi, co powoduje mrowienie, lekkie zawroty głowy, a czasem skurcze mięśni. Mija to po wstrzymaniu oddechu; przerwij, jeśli objawy są silne." },
+    { "q": "Ile zimna potrzebuję?", "a": "Często przytaczana ilość to ok. 11 minut tygodniowo, podzielonych na 2–4 krótkie sesje po 1–3 minuty. Zimna końcówka prysznica to bezpieczny sposób na start." },
+    { "q": "Czy metoda Wima Hofa wzmacnia odporność?", "a": "Jedno kontrolowane badanie wykazało, że przeszkolone osoby potrafiły wyciszyć reakcję zapalną, a zimne prysznice wiązały się z mniejszą liczbą dni zwolnienia. Dalej idące twierdzenia — np. o leczeniu chorób — nie mają poparcia w dowodach." }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Metoda Wima Hofa łączy cykliczną hiperwentylację ze wstrzymywaniem oddechu i ekspozycją na zimno. Główne badanie (Kox 2014) wykazało, że przeszkoleni praktycy potrafili świadomie podnieść poziom adrenaliny i stłumić reakcję zapalną — to realne, choć niewielkie i specyficzne odkrycie, które często jest nadinterpretowane. Kończenie prysznica zimną wodą zmniejszyło liczbę zgłaszanych dni zwolnienia w dużym badaniu (Buijze 2016). Ta sama literatura wskazuje na realne zagrożenia: oddychanie obniża poziom dwutlenku węgla i może spowodować omdlenie, a zimna woda wywołuje szok zimna i obciążenie serca (Tipton 2017) — dlatego nigdy nie wolno tego robić w wodzie. Tygodniowa dawka zimna opiera się na badaniu zimowych pływaków (Søberg 2021); ostrzeżenie dotyczące treningu siłowego — na pracy Roberts 2015. Materiał edukacyjny i timer, a nie porada medyczna.",
+  "sourcesContributes": [
+    "Kluczowe badanie metody Wima Hofa — przeszkolona grupa świadomie podniosła poziom adrenaliny i wyciszyła reakcję zapalną.",
+    "RCT (ok. 3000 osób): kończenie prysznica zimną wodą przez 30–90 s zmniejszyło liczbę zgłaszanych dni zwolnienia o ok. 29%.",
+    "Uczciwy obraz bezpieczeństwa — szok zimna, ryzyko sercowe i dlaczego ostrożność i stopniowa ekspozycja są ważne.",
+    "Badanie regularnych zimowych pływaków, źródło często cytowanych ~11 minut zimna tygodniowo.",
+    "Zanurzenie w zimnej wodzie po treningu siłowym osłabiło długoterminowe przyrosty masy i siły mięśni."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "timer": "Timer oddechowy (box, 4-7-8, koherentny)",
+    "nervous": "Quiz: stan układu nerwowego",
+    "article": "Oddychanie metodą Wima Hofa a stan zapalny"
+  }
+}

@@ -272,6 +272,17 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/pl/tools/breathing" element={<BreathingPacerPage />} />
           <Route path="/pt/tools/breathing" element={<BreathingPacerPage />} />
           <Route path="/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/es/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/ru/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/uk/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/zh/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/de/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/fr/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/it/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/nl/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/ja/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/pl/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
+          <Route path="/pt/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
           <Route path="/tools/dopamine-detox"  element={<DopamineResetPage />} />
           <Route path="/tools/biological-age"  element={<BiologicalAgeCalculatorPage />} />
           <Route path="/es/tools/biological-age" element={<BiologicalAgeCalculatorPage />} />
@@ -289,6 +300,17 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/burnout"         element={<BurnoutAssessmentPage />} />
           <Route path="/tools/nervous-system"  element={<NervousSystemStatePage />} />
           <Route path="/tools/wim-hof"         element={<WimHofPage />} />
+          <Route path="/es/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/ru/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/uk/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/zh/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/de/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/fr/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/it/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/nl/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/ja/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/pl/tools/wim-hof" element={<WimHofPage />} />
+          <Route path="/pt/tools/wim-hof" element={<WimHofPage />} />
           <Route path="/tools/brain-fog"       element={<BrainFogQuizPage />} />
           <Route path="/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
           <Route path="/es/tools/resting-heart-rate" element={<RestingHeartRatePage />} />

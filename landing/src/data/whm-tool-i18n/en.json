@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Wim Hof Breathing Timer — Guided Rounds | ONDA Life",
+    "description": "Free Wim Hof breathing timer: guided power breaths, breath-hold stopwatch and recovery breath for 2–4 rounds, plus a safety-first cold shower and ice bath guide.",
+    "appName": "Wim Hof Breathing Timer",
+    "appDescription": "Free guided timer for Wim Hof style breathing — power breaths, breath-hold stopwatch and recovery breath — with a safety-first cold exposure guide."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Wim Hof Timer" },
+  "h1": "Wim Hof Breathing Timer and Cold Exposure Guide",
+  "capsule": "Wim Hof breathing is 30–40 deep, quick breaths, then breathing out and holding as long as is comfortable, then one deep recovery breath held for 15 seconds — repeated for 3–4 rounds. This timer counts the breaths, times your hold and guides the recovery. Always do it sitting or lying down on dry land: the breathing can make you faint.",
+  "imageAlt": "Wim Hof breathing timer — guided power breaths, breath hold and recovery, with a cold exposure guide, from ONDA Life",
+  "safetyTitle": "⚠ Read before you start",
+  "safety": [
+    "NEVER do the breathing in or near water, in a bath, or while standing — fainting is a real risk. Always sit or lie down on a safe surface.",
+    "Never combine the breathing with cold water, driving, or any situation where blacking out is dangerous. Do the breathing first, fully recovered, on dry land.",
+    "Skip cold exposure and this breathing if you are pregnant, have a heart condition, high blood pressure, epilepsy, or a history of fainting — check with a doctor first.",
+    "Cold water triggers a cold-shock gasp and spikes heart rate and blood pressure; enter gradually, keep it short, and never plunge alone in open water.",
+    "Stop immediately if you feel chest pain, severe dizziness, or numbness. Warm up actively afterward."
+  ],
+  "ui": {
+    "rounds": "Rounds",
+    "breaths": "Breaths per round",
+    "press": "Press start",
+    "in": "Breathe in",
+    "out": "Let go",
+    "hold": "Breathe out, then hold",
+    "recovery": "Deep breath in — hold",
+    "done": "Done",
+    "round": "Round {{r}} / {{n}}",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "release": "I need to breathe →",
+    "complete": "Session complete · rounds: {{n}}",
+    "holds": "Holds: {{list}}",
+    "restart": "Restart",
+    "note": "Sit or lie down. Stop if you feel faint. Never do this in or near water."
+  },
+  "coldTitle": "Cold exposure protocol",
+  "protocol": [
+    { "label": "Weekly dose", "value": "About 11 minutes of deliberate cold per week, split across 2–4 short sessions — the amount reported in a study of regular winter swimmers (Søberg 2021). More is not better." },
+    { "label": "Per session", "value": "1–3 minutes is plenty. The goal is a short, manageable stress, not an endurance feat." },
+    { "label": "Temperature", "value": "Uncomfortably cold but bearable — for many people about 10–15 °C water. Let the feeling, not a number, guide you." },
+    { "label": "How to start", "value": "End your normal shower with 30 seconds cold and add about 15 seconds a week. A cold shower is a safe start before any plunge." },
+    { "label": "Timing", "value": "If building muscle is your goal, avoid cold immersion right after strength training — it can blunt muscle adaptation (Roberts 2015). Morning cold is fine." }
+  ],
+  "disclaimer": "Educational guide, not medical advice and not a substitute for proper instruction. Benefits are real but often over-claimed; risks are real too. Respect the safety rules, progress slowly, and get medical clearance if you have any heart condition or are pregnant.",
+  "sections": [
+    {
+      "h2": "How to do Wim Hof breathing",
+      "body": "Sit or lie down somewhere safe. Take 30–40 deep breaths: breathe in fully through the nose or mouth and let the breath go without forcing it out, in a steady rhythm. After the last breath, breathe out and hold with empty lungs for as long as feels comfortable — press \"I need to breathe\" when you do. Then take one deep breath in and hold for about 15 seconds before letting go. That is one round; do 3–4. Tingling, light-headedness and longer holds in later rounds are normal effects of lowered carbon dioxide — which is exactly why you must never do it in water or while driving."
+    },
+    {
+      "h2": "Is Wim Hof breathing safe?",
+      "body": "Done correctly — sitting or lying down, on dry land — it's safe for most healthy people. Done wrong it's genuinely dangerous: the over-breathing lowers carbon dioxide and can make you faint without warning, and people have drowned doing it in water, baths or pools. Never do it in or near water or while driving, and avoid it without medical advice if you're pregnant or have a heart condition, high blood pressure, epilepsy or a history of fainting."
+    },
+    {
+      "h2": "Does the Wim Hof Method work?",
+      "body": "Partly, with honest caveats. In a controlled study (Kox 2014), people trained in the method could voluntarily raise adrenaline and dampen their inflammatory response to an injected bacterial toxin — a real and surprising result. Cold showers have their own modest evidence: in a trial of about 3,000 people, ending showers cold for 30–90 seconds cut self-reported sick days by about 29% (Buijze 2016). But claims that it cures diseases or builds dramatic immunity go far beyond the evidence. Treat it as a stress-resilience and focus practice, not a treatment."
+    },
+    {
+      "h2": "Cold shower or ice bath?",
+      "body": "Start with cold showers: they carry far less risk and still bring benefits. An ice bath or open-water plunge adds a strong cold-shock response — a gasp reflex and a sharp rise in heart rate and blood pressure — plus real cardiac and drowning risks (Tipton 2017). Progress slowly, keep sessions short, never plunge alone in open water, and get medical clearance first if you have any cardiovascular condition. Never do the breathing exercise in the water."
+    }
+  ],
+  "faqTitle": "Wim Hof breathing — common questions",
+  "faq": [
+    { "q": "What is the Wim Hof breathing method?", "a": "A cycle of 30–40 deep breaths, then breathing out and holding as long as is comfortable, then a recovery breath held for about 15 seconds — repeated for 3–4 rounds. It's usually paired with cold exposure." },
+    { "q": "How many rounds of Wim Hof breathing should I do?", "a": "3–4 rounds of 30–40 breaths is the usual practice, about 10–15 minutes in total. Beginners can start with 2 rounds." },
+    { "q": "How long should I hold my breath?", "a": "As long as is comfortable — there is no target. Holds of 1–2 minutes are common after a few sessions and usually get longer in later rounds. Never push through strong discomfort." },
+    { "q": "Is Wim Hof breathing safe?", "a": "For most healthy people, yes, when done sitting or lying down on dry land. It can make you faint, so never do it in or near water, in a bath or while driving, and check with a doctor first if you're pregnant or have a heart condition, high blood pressure or epilepsy." },
+    { "q": "Why do I feel tingling or light-headed?", "a": "The deep breathing lowers carbon dioxide in the blood, which causes tingling, light-headedness and sometimes muscle cramps. It passes after the breath-hold; stop if it feels strong." },
+    { "q": "How much cold exposure do I need?", "a": "About 11 minutes a week, split into 2–4 short sessions of 1–3 minutes, is a commonly cited amount. A cold ending to your shower is a safe way to start." },
+    { "q": "Does the Wim Hof Method boost immunity?", "a": "One controlled study showed trained people could dampen an inflammatory response, and cold showers were linked to fewer sick days. Claims beyond that — such as curing diseases — are not supported." }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "The Wim Hof Method combines cyclic over-breathing with breath holds and cold exposure. The headline study (Kox 2014) showed trained practitioners could voluntarily raise adrenaline and blunt an inflammatory response — a real, if small and specific, finding that is often over-extrapolated. Ending showers cold cut self-reported sick days in a large trial (Buijze 2016). The same literature flags real danger: the breathing lowers carbon dioxide and can make you faint, and cold water triggers a cold-shock response and cardiac strain (Tipton 2017) — why this must never be done in water. The weekly cold dose follows a study of winter swimmers (Søberg 2021); the strength-training caution follows Roberts 2015. Educational guide and timer, not medical advice.",
+  "sourcesContributes": [
+    "The core Wim Hof Method study — the trained group voluntarily raised adrenaline and damped an inflammatory response.",
+    "RCT (about 3,000 people): ending showers cold for 30–90 s cut self-reported sick leave by about 29%.",
+    "The honest safety picture — cold-shock response, cardiac risk, and why caution and gradual exposure matter.",
+    "Study of regular winter swimmers, the source of the widely cited ~11 minutes of cold per week.",
+    "Cold-water immersion after strength training blunted long-term gains in muscle mass and strength."
+  ],
+  "related": {
+    "label": "Related",
+    "timer": "Breathing timer (box, 4-7-8, coherent)",
+    "nervous": "Nervous system state quiz",
+    "article": "Wim Hof breathing and inflammation"
+  }
+}

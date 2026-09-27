@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Respirazione Wim Hof — timer con round guidati | ONDA Life",
+    "description": "Timer gratuito Wim Hof: respiri guidati, cronometro dell'apnea e respiro di recupero, guida sicura a doccia fredda e bagno nel ghiaccio.",
+    "appName": "Timer respirazione Wim Hof",
+    "appDescription": "Timer guidato gratuito per la respirazione in stile Wim Hof — respiri profondi, cronometro dell'apnea e respiro di recupero — con una guida all'esposizione al freddo che mette la sicurezza al primo posto."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Strumenti", "current": "Timer Wim Hof" },
+  "h1": "Respirazione Wim Hof — timer",
+  "capsule": "La respirazione Wim Hof consiste in 30–40 respiri profondi e rapidi, poi un'espirazione seguita da un'apnea finché è confortevole, poi un respiro profondo di recupero trattenuto per 15 secondi — il tutto ripetuto per 3–4 round. Questo timer conta i respiri, cronometra l'apnea e guida il recupero. Pratica sempre seduto o sdraiato, all'asciutto: questa respirazione può farti svenire.",
+  "imageAlt": "Timer per la respirazione Wim Hof — respiri guidati, apnea e recupero, con guida all'esposizione al freddo, di ONDA Life",
+  "safetyTitle": "⚠ Leggi prima di iniziare",
+  "safety": [
+    "MAI praticare la respirazione in acqua o vicino all'acqua, nella vasca da bagno o in piedi — il rischio di svenimento è reale. Stai sempre seduto o sdraiato su una superficie sicura.",
+    "Non combinare mai la respirazione con l'acqua fredda, con la guida o con qualsiasi situazione in cui perdere i sensi sia pericoloso. Fai prima la respirazione, all'asciutto, e riprenditi completamente.",
+    "Evita l'esposizione al freddo e questa respirazione se sei in gravidanza, hai una malattia cardiaca, pressione alta, epilessia o una storia di svenimenti — consulta prima un medico.",
+    "L'acqua fredda provoca un boccheggio da shock termico e fa impennare frequenza cardiaca e pressione; entra gradualmente, resta poco e non immergerti mai da solo in acque libere.",
+    "Fermati immediatamente se senti dolore al petto, forti capogiri o intorpidimento. Dopo, riscaldati in modo attivo."
+  ],
+  "ui": {
+    "rounds": "Round",
+    "breaths": "Respiri per round",
+    "press": "Premi avvia",
+    "in": "Inspira",
+    "out": "Lascia andare",
+    "hold": "Espira e trattieni",
+    "recovery": "Inspira a fondo — trattieni",
+    "done": "Fatto",
+    "round": "Round {{r}} / {{n}}",
+    "start": "► Avvia",
+    "stop": "◼ Stop",
+    "release": "Devo respirare →",
+    "complete": "Sessione completata · round: {{n}}",
+    "holds": "Apnee: {{list}}",
+    "restart": "Ricomincia",
+    "note": "Stai seduto o sdraiato. Fermati se ti senti svenire. Mai in acqua o vicino all'acqua."
+  },
+  "coldTitle": "Protocollo di esposizione al freddo",
+  "protocol": [
+    { "label": "Dose settimanale", "value": "Circa 11 minuti di freddo volontario a settimana, suddivisi in 2–4 brevi sessioni — la quantità riportata in uno studio su nuotatori invernali abituali (Søberg 2021). Di più non significa meglio." },
+    { "label": "Per sessione", "value": "1–3 minuti sono più che sufficienti. L'obiettivo è uno stress breve e gestibile, non una prova di resistenza." },
+    { "label": "Temperatura", "value": "Freddo sgradevole ma sopportabile — per molte persone acqua a circa 10–15 °C. Lasciati guidare dalle sensazioni, non da un numero." },
+    { "label": "Come iniziare", "value": "Termina la tua doccia normale con 30 secondi di acqua fredda e aggiungi circa 15 secondi a settimana. La doccia fredda è un inizio sicuro prima di qualsiasi immersione." },
+    { "label": "Tempistica", "value": "Se il tuo obiettivo è aumentare la massa muscolare, evita l'immersione in acqua fredda subito dopo l'allenamento di forza — può attenuare l'adattamento muscolare (Roberts 2015). Il freddo al mattino va bene." }
+  ],
+  "disclaimer": "Guida a scopo educativo, non è un consiglio medico e non sostituisce un'istruzione adeguata. I benefici sono reali ma spesso esagerati; anche i rischi sono reali. Rispetta le regole di sicurezza, procedi con gradualità e ottieni il via libera del medico se hai qualsiasi problema cardiaco o sei in gravidanza.",
+  "sections": [
+    {
+      "h2": "Metodo Wim Hof: come fare la respirazione",
+      "body": "Siediti o sdraiati in un luogo sicuro. Fai 30–40 respiri profondi: inspira pienamente dal naso o dalla bocca e lascia uscire l'aria senza forzarla, con un ritmo costante. Dopo l'ultimo respiro, espira e trattieni a polmoni vuoti finché è confortevole — quando hai bisogno di respirare premi \"Devo respirare\". Poi inspira a fondo e trattieni per circa 15 secondi prima di lasciare andare. Questo è un round; fanne 3–4. Formicolii, sensazione di testa leggera e apnee più lunghe nei round successivi sono effetti normali dell'abbassamento dell'anidride carbonica — ed è proprio per questo che non devi mai praticarla in acqua o alla guida."
+    },
+    {
+      "h2": "La respirazione Wim Hof è sicura?",
+      "body": "Se praticata correttamente — seduti o sdraiati, all'asciutto — è sicura per la maggior parte delle persone sane. Se praticata male è davvero pericolosa: l'iperventilazione abbassa l'anidride carbonica e può farti svenire senza preavviso, e ci sono persone annegate facendola in acqua, nella vasca o in piscina. Non praticarla mai in acqua o vicino all'acqua né alla guida, ed evitala senza parere medico se sei in gravidanza o hai una malattia cardiaca, pressione alta, epilessia o una storia di svenimenti."
+    },
+    {
+      "h2": "Il metodo Wim Hof funziona?",
+      "body": "In parte, con onesti distinguo. In uno studio controllato (Kox 2014), persone addestrate al metodo sono riuscite ad aumentare volontariamente l'adrenalina e ad attenuare la risposta infiammatoria a una tossina batterica iniettata — un risultato reale e sorprendente. Anche la doccia fredda ha prove modeste a suo favore: in un trial su circa 3.000 persone, terminare la doccia con 30–90 secondi di acqua fredda ha ridotto di circa il 29% i giorni di malattia auto-dichiarati (Buijze 2016). Ma le affermazioni secondo cui curerebbe malattie o darebbe un'immunità straordinaria vanno ben oltre le prove. Consideralo una pratica di resilienza allo stress e di concentrazione, non una terapia."
+    },
+    {
+      "h2": "Doccia fredda o bagno nel ghiaccio?",
+      "body": "Inizia con la doccia fredda: comporta molti meno rischi e porta comunque benefici. Un bagno nel ghiaccio o un'immersione in acque libere aggiunge una forte risposta da shock termico — il riflesso del boccheggio e un brusco aumento di frequenza cardiaca e pressione — oltre a rischi reali per il cuore e di annegamento (Tipton 2017). Procedi gradualmente, mantieni le sessioni brevi, non immergerti mai da solo in acque libere e ottieni prima il via libera del medico se hai qualsiasi problema cardiovascolare. Non fare mai l'esercizio di respirazione in acqua."
+    }
+  ],
+  "faqTitle": "Respirazione Wim Hof — domande frequenti",
+  "faq": [
+    { "q": "Cos'è il metodo di respirazione Wim Hof?", "a": "Un ciclo di 30–40 respiri profondi, poi un'espirazione con apnea finché è confortevole, poi un respiro di recupero trattenuto per circa 15 secondi — ripetuto per 3–4 round. Di solito è abbinato all'esposizione al freddo." },
+    { "q": "Quanti round di respirazione Wim Hof dovrei fare?", "a": "La pratica abituale è di 3–4 round da 30–40 respiri, circa 10–15 minuti in totale. I principianti possono iniziare con 2 round." },
+    { "q": "Quanto a lungo devo trattenere il respiro?", "a": "Finché è confortevole — non c'è un obiettivo. Apnee di 1–2 minuti sono comuni dopo qualche sessione e di solito si allungano nei round successivi. Non forzare mai oltre un forte disagio." },
+    { "q": "La respirazione Wim Hof è sicura?", "a": "Per la maggior parte delle persone sane sì, se praticata seduti o sdraiati, all'asciutto. Può farti svenire, quindi non praticarla mai in acqua o vicino all'acqua, nella vasca o alla guida, e consulta prima un medico se sei in gravidanza o hai una malattia cardiaca, pressione alta o epilessia." },
+    { "q": "Perché sento formicolii o la testa leggera?", "a": "La respirazione profonda abbassa l'anidride carbonica nel sangue, causando formicolii, sensazione di testa leggera e talvolta crampi muscolari. Passa dopo l'apnea; fermati se la sensazione è intensa." },
+    { "q": "Quanta esposizione al freddo mi serve?", "a": "Circa 11 minuti a settimana, suddivisi in 2–4 brevi sessioni da 1–3 minuti, è una quantità citata spesso. Terminare la doccia con acqua fredda è un modo sicuro per iniziare." },
+    { "q": "Il metodo Wim Hof rafforza l'immunità?", "a": "Uno studio controllato ha mostrato che persone addestrate potevano attenuare una risposta infiammatoria, e la doccia fredda è stata associata a meno giorni di malattia. Affermazioni che vanno oltre — come curare malattie — non sono supportate." }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "Il metodo Wim Hof combina iperventilazione ciclica, apnee ed esposizione al freddo. Lo studio principale (Kox 2014) ha mostrato che praticanti addestrati potevano aumentare volontariamente l'adrenalina e attenuare una risposta infiammatoria — un risultato reale, anche se piccolo e specifico, spesso estrapolato oltre misura. Terminare la doccia con acqua fredda ha ridotto i giorni di malattia auto-dichiarati in un ampio trial (Buijze 2016). La stessa letteratura segnala pericoli reali: la respirazione abbassa l'anidride carbonica e può far svenire, e l'acqua fredda provoca una risposta da shock termico e uno sforzo cardiaco (Tipton 2017) — ecco perché non va mai praticata in acqua. La dose settimanale di freddo segue uno studio sui nuotatori invernali (Søberg 2021); la cautela sull'allenamento di forza segue Roberts 2015. Guida educativa e timer, non un consiglio medico.",
+  "sourcesContributes": [
+    "Lo studio fondamentale sul metodo Wim Hof — il gruppo addestrato ha aumentato volontariamente l'adrenalina e attenuato una risposta infiammatoria.",
+    "RCT (circa 3.000 persone): terminare la doccia con 30–90 s di acqua fredda ha ridotto di circa il 29% le assenze per malattia auto-dichiarate.",
+    "Il quadro onesto della sicurezza — risposta da shock termico, rischio cardiaco e perché contano prudenza ed esposizione graduale.",
+    "Studio su nuotatori invernali abituali, fonte dei diffusi ~11 minuti di freddo a settimana.",
+    "L'immersione in acqua fredda dopo l'allenamento di forza ha attenuato i guadagni a lungo termine di massa muscolare e forza."
+  ],
+  "related": {
+    "label": "Correlati",
+    "timer": "Timer di respirazione (box, 4-7-8, coerente)",
+    "nervous": "Quiz sullo stato del sistema nervoso",
+    "article": "Respirazione Wim Hof e infiammazione"
+  }
+}

@@ -60,13 +60,13 @@ import { BODY_FAT_FAQ } from '../src/data/body-fat'
 import { SLEEP_CYCLE_FAQ } from '../src/data/sleep-cycle'
 import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
 import { breathToolCopy } from '../src/data/breath-tool-i18n'
-import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
+import { resoToolCopy } from '../src/data/reso-tool-i18n'
 import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
 import { bioToolCopy } from '../src/data/bioage-tool-i18n'
 import { DETOX_FAQ } from '../src/data/digital-detox'
 import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
 import { NS_FAQ } from '../src/data/nervous-system-state'
-import { WHM_FAQ } from '../src/data/wim-hof'
+import { whmToolCopy } from '../src/data/whm-tool-i18n'
 import { FOG_FAQ } from '../src/data/brain-fog'
 import { RECOVERY_FAQ } from '../src/data/recovery-score'
 import { camToolCopy } from '../src/data/cam-tool-i18n'
@@ -2203,16 +2203,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       ],
     }
   }
-  if (route === '/tools/resonance-breathing') {
+  // /tools/resonance-breathing — all 12 languages (copy in src/data/reso-tool-i18n).
+  if (route === '/tools/resonance-breathing' || /^\/[a-z]{2}\/tools\/resonance-breathing$/.test(route)) {
+    const lang = (route === '/tools/resonance-breathing' ? 'en' : route.slice(1, 3)) as Lang
+    const c = resoToolCopy(lang)
     return {
-      title: 'Resonance Breathing: Find Your Rate (HRV) | ONDA Life',
-      description:
-        'Free resonance breathing tool: find the slow breathing rate (~4.5–6.5/min) where your HRV peaks — your personal resonance frequency — with a height estimate and a paced circle.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/resonance-breathing.png`,
-      faq: { mainEntity: RESONANCE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/resonance-breathing.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/dopamine-detox') {
@@ -2293,16 +2311,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: NS_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
-  if (route === '/tools/wim-hof') {
+  // /tools/wim-hof — all 12 languages (copy in src/data/whm-tool-i18n).
+  if (route === '/tools/wim-hof' || /^\/[a-z]{2}\/tools\/wim-hof$/.test(route)) {
+    const lang = (route === '/tools/wim-hof' ? 'en' : route.slice(1, 3)) as Lang
+    const c = whmToolCopy(lang)
     return {
-      title: 'Wim Hof Breathing Timer + Cold Exposure Guide | ONDA Life',
-      description:
-        'Free Wim Hof breathing timer (power breaths, breath-hold, recovery) plus a safety-first cold-exposure protocol. Honestly framed, with the real risks — educational, not medical advice.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/wim-hof.png`,
-      faq: { mainEntity: WHM_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/wim-hof.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/brain-fog') {

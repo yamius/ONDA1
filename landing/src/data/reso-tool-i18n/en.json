@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Resonance Breathing Pacer — Find Your Rate | ONDA Life",
+    "description": "Free resonance breathing pacer: breathe with the circle at 4.5–6.5 breaths a minute, with sound cues, to find the slow rate that feels smoothest — your resonance rate.",
+    "appName": "Resonance Breathing Pacer",
+    "appDescription": "Free breathing pacer for resonance frequency (coherent) breathing at 4.5–6.5 breaths per minute, with sound cues, session length and a rate-finding protocol."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Resonance Breathing" },
+  "h1": "Resonance Breathing Pacer: Find Your Rate",
+  "capsule": "Resonance breathing means breathing slowly and evenly at your personal rate — usually between 4.5 and 6.5 breaths a minute — where heart rhythm and breathing fall into step and heart rate variability (HRV) swings the most. Pick a rate, press start and breathe with the circle; try each rate for about 2 minutes and keep the one that feels smoothest.",
+  "imageAlt": "Resonance breathing pacer — breathe with the circle at 4.5 to 6.5 breaths a minute, free tool from ONDA Life",
+  "ui": {
+    "height": "Height (cm) — optional",
+    "heightPh": "e.g. 178",
+    "estimate": "Starting point: {{band}} → use {{bpm}}/min",
+    "rate": "Breathing rate (breaths per minute)",
+    "perMin": "{{n}}/min",
+    "pacing": "{{s}} s in · {{s}} s out",
+    "in": "Breathe in",
+    "out": "Breathe out",
+    "press": "Press start",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "duration": "Session",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Sound cues",
+    "remaining": "{{m}}:{{s}} left",
+    "done": "Done. How did this rate feel — smooth and easy, or a little forced?",
+    "again": "Again"
+  },
+  "bands": {
+    "short": "≈ 6.0–6.5 breaths/min",
+    "mid": "≈ 5.5–6.0 breaths/min",
+    "tall": "≈ 5.0–5.5 breaths/min"
+  },
+  "stepsTitle": "How to find your resonance rate",
+  "steps": [
+    "Start at 6.5 breaths a minute and breathe with the circle for about 2 minutes — in and out through the nose, equal length, without forcing.",
+    "Move down to 6.0, 5.5, 5.0 and 4.5, about 2 minutes each, with a short normal breath in between.",
+    "Keep the rate that feels smoothest and leaves you calmest — not the slowest one you can manage.",
+    "Practise that rate for 10–20 minutes a day. With a chest strap or watch that shows beat-to-beat HRV, pick the rate where the heart-rate waves are largest and most regular."
+  ],
+  "safety": "The height-based number is a rough starting point, not your true resonance rate. Educational tool, not a medical device. If you feel light-headed, stop and breathe normally; if you have a heart or lung condition or are pregnant, keep sessions gentle.",
+  "cta": "With an Apple Watch, ONDA shows a live coherence score while you breathe — a feedback signal that helps you notice which rhythm settles your heart. From the camera it shows your pulse.",
+  "sections": [
+    {
+      "h2": "What is resonance frequency breathing?",
+      "body": "Every person has a slow breathing rate at which the heart rhythm, breathing and the baroreflex — the body's blood-pressure control loop — move in step. At that resonance frequency, heart rate rises on each inhale and falls on each exhale with the largest possible swing, which is why HRV peaks (Lehrer 2003). For most adults it lies between 4.5 and 6.5 breaths per minute. Breathing at this rate is the core technique of HRV biofeedback, used in research on stress, anxiety and blood pressure."
+    },
+    {
+      "h2": "Resonance breathing vs coherent breathing",
+      "body": "Coherent breathing usually means a fixed rhythm of about 5–6 breaths a minute — for example 5.5 seconds in and 5.5 out — which lands near most people's resonance rate. Resonance breathing is the personalised version: you test several rates and keep the one that suits your body best. If you don't want to test, coherent breathing at 5.5 is a sensible default. Try it in the [breathing timer](/tools/breathing) or read the [coherent breathing guide](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "Does resonance breathing lower stress and raise HRV?",
+      "body": "Breathing at about 6 breaths a minute reliably increases heart rate variability while you do it; in a controlled study (Steffen 2017) it also improved mood compared with sitting quietly. Regular practice over several weeks is linked to better baroreflex function and, in some studies, modestly lower blood pressure. It's a well-studied relaxation technique, not a treatment on its own. More: [slow breathing and blood pressure](/articles/high-blood-pressure-slow-breathing)."
+    },
+    {
+      "h2": "How long and how often should I practise?",
+      "body": "Research protocols typically use 10–20 minutes a day, often split into two sessions, for several weeks. Start with 5 minutes if slow breathing feels unfamiliar, keep the breath gentle and silent, and don't breathe more deeply than is comfortable — breathing too deeply at a slow rate can make you light-headed. Many people find it easiest in the evening or before a stressful task."
+    }
+  ],
+  "faqTitle": "Resonance breathing — common questions",
+  "faq": [
+    { "q": "What is resonance frequency breathing?", "a": "Breathing slowly at your personal rate — usually 4.5–6.5 breaths a minute — where heart rhythm and breathing move in step and HRV swings the most. It's the core technique of HRV biofeedback." },
+    { "q": "How do I find my resonance rate?", "a": "Breathe for about 2 minutes each at 6.5, 6.0, 5.5, 5.0 and 4.5 breaths a minute and keep the rate that feels smoothest. With a device that shows beat-to-beat HRV, choose the rate with the largest, most regular heart-rate waves." },
+    { "q": "Is resonance breathing the same as coherent breathing?", "a": "Almost. Coherent breathing uses a fixed rate of about 5–6 breaths a minute; resonance breathing personalises that rate to your body." },
+    { "q": "Does height affect resonance frequency?", "a": "Taller people and men tend to have a slightly slower resonance rate, which is why this tool offers a height-based starting point. It's only a guide — test the rates to find yours." },
+    { "q": "How long should I do resonance breathing?", "a": "10–20 minutes a day is typical in research, for several weeks. Start with 5 minutes and keep the breath gentle." },
+    { "q": "Does resonance breathing raise HRV?", "a": "Yes, HRV rises while you breathe at this rate, and regular practice is linked to better baroreflex function and calmer mood. It supports, but doesn't replace, medical care." }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "At a personal rate — usually 4.5–6.5 breaths a minute — heart-rate oscillations, breathing and the baroreflex come into phase and HRV amplitude peaks (Lehrer 2003). The standard way to find it is to breathe at each rate for a couple of minutes and measure which produces the largest, smoothest heart-rate oscillations (Shaffer 2020). Without a sensor, the rate that feels smoothest and calmest is a reasonable choice. The height-based suggestion is only a rough starting point. Educational tool, not a medical device.",
+  "sourcesContributes": [
+    "Foundational work establishing the resonance-frequency concept and its baroreflex mechanism.",
+    "The protocol for finding an individual's resonance frequency by testing a series of breathing rates.",
+    "Breathing at resonance frequency (~6/min) raised HRV and improved mood compared with sitting quietly."
+  ],
+  "related": {
+    "label": "Related",
+    "timer": "Breathing timer (box, 4-7-8, coherent)",
+    "hrv": "HRV Calculator by Age",
+    "guide": "Coherent breathing guide"
+  }
+}

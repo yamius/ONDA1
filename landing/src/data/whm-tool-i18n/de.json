@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Wim Hof Atmung — Timer mit geführten Runden | ONDA Life",
+    "description": "Kostenloser Wim Hof Atmung Timer: geführte Atemzüge, Stoppuhr fürs Luftanhalten und Erholungsatem für 2–4 Runden, plus Guide zu Eisbaden & kalt duschen.",
+    "appName": "Wim Hof Atmung — Timer",
+    "appDescription": "Kostenloser geführter Timer für die Wim Hof Atmung — kräftige Atemzüge, Stoppuhr fürs Luftanhalten und Erholungsatem — mit Sicherheits-Guide für Kälteanwendungen."
+  },
+  "breadcrumb": { "home": "Startseite", "tools": "Tools", "current": "Wim Hof Timer" },
+  "h1": "Wim Hof Atmung — Timer",
+  "capsule": "Bei der Wim Hof Atmung machst du 30–40 tiefe, zügige Atemzüge, atmest dann aus und hältst die Luft an, solange es angenehm ist, und nimmst danach einen tiefen Erholungsatemzug, den du 15 Sekunden hältst — 3–4 Runden lang. Dieser Timer zählt die Atemzüge, misst dein Luftanhalten und führt dich durch die Erholung. Übe immer im Sitzen oder Liegen an Land: Die Atmung kann dich ohnmächtig werden lassen.",
+  "imageAlt": "Wim Hof Atmung Timer — geführte Atemzüge, Luftanhalten und Erholung, mit Guide für Kälteanwendungen, von ONDA Life",
+  "safetyTitle": "⚠ Lies das, bevor du startest",
+  "safety": [
+    "Mach die Atmung NIEMALS im oder in der Nähe von Wasser, in der Badewanne oder im Stehen — es besteht echte Ohnmachtsgefahr. Setz oder leg dich immer auf eine sichere Unterlage.",
+    "Kombiniere die Atmung niemals mit kaltem Wasser, Autofahren oder einer Situation, in der eine Ohnmacht gefährlich ist. Mach die Atmung zuerst, an Land, und erhole dich vollständig.",
+    "Verzichte auf Kälteanwendungen und diese Atmung, wenn du schwanger bist, eine Herzerkrankung, Bluthochdruck, Epilepsie oder schon einmal Ohnmachtsanfälle hattest — sprich vorher mit einer Ärztin oder einem Arzt.",
+    "Kaltes Wasser löst einen Kälteschock-Schnappatemreflex aus und lässt Puls und Blutdruck stark ansteigen; geh langsam hinein, bleib nur kurz und geh nie allein in offenes Gewässer.",
+    "Hör sofort auf, wenn du Brustschmerzen, starken Schwindel oder Taubheitsgefühle bemerkst. Wärm dich danach aktiv auf."
+  ],
+  "ui": {
+    "rounds": "Runden",
+    "breaths": "Atemzüge pro Runde",
+    "press": "Drück auf Start",
+    "in": "Einatmen",
+    "out": "Loslassen",
+    "hold": "Ausatmen, dann halten",
+    "recovery": "Tief einatmen — halten",
+    "done": "Fertig",
+    "round": "Runde {{r}} / {{n}}",
+    "start": "► Start",
+    "stop": "◼ Stopp",
+    "release": "Ich muss atmen →",
+    "complete": "Session beendet · Runden: {{n}}",
+    "holds": "Haltezeiten: {{list}}",
+    "restart": "Neu starten",
+    "note": "Sitz oder lieg. Hör auf, wenn dir schwindlig wird. Niemals im oder in der Nähe von Wasser."
+  },
+  "coldTitle": "Protokoll für Kälteanwendungen",
+  "protocol": [
+    { "label": "Wochendosis", "value": "Etwa 11 Minuten bewusste Kälte pro Woche, verteilt auf 2–4 kurze Einheiten — die Menge aus einer Studie mit regelmäßigen Winterschwimmern (Søberg 2021). Mehr ist nicht besser." },
+    { "label": "Pro Einheit", "value": "1–3 Minuten reichen völlig. Ziel ist ein kurzer, gut beherrschbarer Reiz, keine Ausdauerleistung." },
+    { "label": "Temperatur", "value": "Unangenehm kalt, aber aushaltbar — für viele etwa 10–15 °C Wassertemperatur. Lass dich vom Gefühl leiten, nicht von einer Zahl." },
+    { "label": "So fängst du an", "value": "Beende deine normale Dusche mit 30 Sekunden kalt und steigere pro Woche um etwa 15 Sekunden. Kalt duschen ist ein sicherer Einstieg vor jedem Eisbad." },
+    { "label": "Zeitpunkt", "value": "Wenn du Muskeln aufbauen willst, vermeide Kältebäder direkt nach dem Krafttraining — sie können die Muskelanpassung abschwächen (Roberts 2015). Kälte am Morgen ist in Ordnung." }
+  ],
+  "disclaimer": "Informativer Guide, keine medizinische Beratung und kein Ersatz für eine fachkundige Anleitung. Die Vorteile sind real, werden aber oft übertrieben; die Risiken sind ebenfalls real. Halte dich an die Sicherheitsregeln, steigere dich langsam und lass dich ärztlich abklären, wenn du eine Herzerkrankung hast oder schwanger bist.",
+  "sections": [
+    {
+      "h2": "Wim Hof Methode Anleitung: So geht die Atmung",
+      "body": "Setz oder leg dich an einen sicheren Ort. Mach 30–40 tiefe Atemzüge: Atme vollständig durch Nase oder Mund ein und lass die Luft ohne Druck wieder los, in einem gleichmäßigen Rhythmus. Atme nach dem letzten Atemzug aus und halte die Luft mit leerer Lunge an, solange es angenehm ist — drück dann auf \"Ich muss atmen\". Nimm danach einen tiefen Atemzug und halte ihn etwa 15 Sekunden, bevor du loslässt. Das ist eine Runde; mach 3–4. Kribbeln, Benommenheit und längere Haltezeiten in späteren Runden sind normale Folgen des gesenkten Kohlendioxids — genau deshalb darfst du das niemals im Wasser oder beim Autofahren machen."
+    },
+    {
+      "h2": "Ist die Wim Hof Atmung sicher?",
+      "body": "Richtig ausgeführt — im Sitzen oder Liegen, an Land — ist sie für die meisten gesunden Menschen sicher. Falsch ausgeführt ist sie wirklich gefährlich: Das Überatmen senkt das Kohlendioxid und kann dich ohne Vorwarnung ohnmächtig werden lassen, und Menschen sind dabei im Wasser, in Badewannen oder Pools ertrunken. Mach sie niemals im oder in der Nähe von Wasser oder beim Autofahren, und verzichte ohne ärztlichen Rat darauf, wenn du schwanger bist oder eine Herzerkrankung, Bluthochdruck, Epilepsie oder Ohnmachtsanfälle in der Vorgeschichte hast."
+    },
+    {
+      "h2": "Funktioniert die Wim Hof Methode?",
+      "body": "Teilweise, mit ehrlichen Einschränkungen. In einer kontrollierten Studie (Kox 2014) konnten Menschen, die in der Methode trainiert waren, willentlich ihr Adrenalin erhöhen und ihre Entzündungsreaktion auf ein injiziertes Bakteriengift dämpfen — ein echtes und überraschendes Ergebnis. Kalt duschen hat eigene, moderate Belege: In einer Studie mit rund 3.000 Menschen senkte ein kaltes Duschende von 30–90 Sekunden die selbst angegebenen Krankheitstage um etwa 29 % (Buijze 2016). Behauptungen, die Methode heile Krankheiten oder sorge für eine dramatisch stärkere Immunität, gehen aber weit über die Datenlage hinaus. Sieh sie als Übung für Stressresilienz und Fokus, nicht als Behandlung."
+    },
+    {
+      "h2": "Kalt duschen oder Eisbaden?",
+      "body": "Fang mit kalt duschen an: Das birgt deutlich weniger Risiko und bringt trotzdem Vorteile. Eisbaden oder ein Sprung ins offene Gewässer löst zusätzlich eine starke Kälteschockreaktion aus — einen Schnappatemreflex und einen steilen Anstieg von Puls und Blutdruck — plus echte Risiken für Herz und Ertrinken (Tipton 2017). Steigere dich langsam, halte die Einheiten kurz, geh nie allein in offenes Gewässer und lass dich vorher ärztlich abklären, wenn du eine Herz-Kreislauf-Erkrankung hast. Mach die Atemübung niemals im Wasser."
+    }
+  ],
+  "faqTitle": "Wim Hof Atmung — häufige Fragen",
+  "faq": [
+    { "q": "Was ist die Wim Hof Atemmethode?", "a": "Ein Zyklus aus 30–40 tiefen Atemzügen, dann Ausatmen und Luftanhalten, solange es angenehm ist, und danach ein Erholungsatemzug, den du etwa 15 Sekunden hältst — 3–4 Runden lang. Meist wird sie mit Kälteanwendungen kombiniert." },
+    { "q": "Wie viele Runden Wim Hof Atmung sollte ich machen?", "a": "Üblich sind 3–4 Runden mit je 30–40 Atemzügen, insgesamt etwa 10–15 Minuten. Einsteiger können mit 2 Runden beginnen." },
+    { "q": "Wie lange sollte ich die Luft anhalten?", "a": "So lange, wie es angenehm ist — es gibt kein Ziel. Haltezeiten von 1–2 Minuten sind nach einigen Einheiten üblich und werden in späteren Runden meist länger. Kämpf dich nie durch starkes Unbehagen." },
+    { "q": "Ist die Wim Hof Atmung sicher?", "a": "Für die meisten gesunden Menschen ja, wenn du im Sitzen oder Liegen an Land übst. Sie kann dich ohnmächtig werden lassen, deshalb niemals im oder in der Nähe von Wasser, in der Badewanne oder beim Autofahren — und sprich vorher mit einer Ärztin oder einem Arzt, wenn du schwanger bist oder eine Herzerkrankung, Bluthochdruck oder Epilepsie hast." },
+    { "q": "Warum kribbelt es oder wird mir schwindlig?", "a": "Die tiefe Atmung senkt das Kohlendioxid im Blut, was Kribbeln, Benommenheit und manchmal Muskelkrämpfe verursacht. Das vergeht nach dem Luftanhalten; hör auf, wenn es stark wird." },
+    { "q": "Wie viel Kälte brauche ich?", "a": "Etwa 11 Minuten pro Woche, verteilt auf 2–4 kurze Einheiten von 1–3 Minuten, ist eine häufig genannte Menge. Ein kaltes Ende deiner Dusche ist ein sicherer Einstieg." },
+    { "q": "Stärkt die Wim Hof Methode das Immunsystem?", "a": "Eine kontrollierte Studie zeigte, dass Trainierte eine Entzündungsreaktion dämpfen konnten, und kalt duschen war mit weniger Krankheitstagen verbunden. Behauptungen darüber hinaus — etwa das Heilen von Krankheiten — sind nicht belegt." }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Die Wim Hof Methode kombiniert zyklisches Überatmen mit Luftanhalten und Kälteanwendungen. Die bekannteste Studie (Kox 2014) zeigte, dass trainierte Praktizierende willentlich ihr Adrenalin erhöhen und eine Entzündungsreaktion abschwächen konnten — ein realer, wenn auch kleiner und spezifischer Befund, der oft überinterpretiert wird. Ein kaltes Duschende senkte in einer großen Studie die selbst angegebenen Krankheitstage (Buijze 2016). Dieselbe Literatur weist auf echte Gefahren hin: Die Atmung senkt das Kohlendioxid und kann zu Ohnmacht führen, und kaltes Wasser löst eine Kälteschockreaktion und Herzbelastung aus (Tipton 2017) — deshalb darf das niemals im Wasser gemacht werden. Die wöchentliche Kältedosis stammt aus einer Studie mit Winterschwimmern (Søberg 2021); der Hinweis zum Krafttraining folgt Roberts 2015. Informativer Guide und Timer, keine medizinische Beratung.",
+  "sourcesContributes": [
+    "Die zentrale Studie zur Wim Hof Methode — die trainierte Gruppe erhöhte willentlich ihr Adrenalin und dämpfte eine Entzündungsreaktion.",
+    "RCT (rund 3.000 Menschen): Ein kaltes Duschende von 30–90 s senkte die selbst angegebenen Krankheitstage um etwa 29 %.",
+    "Das ehrliche Bild zur Sicherheit — Kälteschockreaktion, Herzrisiko und warum Vorsicht und schrittweise Gewöhnung wichtig sind.",
+    "Studie mit regelmäßigen Winterschwimmern, Quelle der oft zitierten ~11 Minuten Kälte pro Woche.",
+    "Kältebäder nach dem Krafttraining schwächten langfristige Zuwächse bei Muskelmasse und Kraft ab."
+  ],
+  "related": {
+    "label": "Ähnliche Themen",
+    "timer": "Atem-Timer (Box, 4-7-8, kohärent)",
+    "nervous": "Quiz zum Zustand deines Nervensystems",
+    "article": "Wim Hof Atmung und Entzündungen"
+  }
+}

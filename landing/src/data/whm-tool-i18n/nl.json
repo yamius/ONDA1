@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "title": "Wim Hof ademhaling — begeleide rondes | ONDA Life",
+    "description": "Gratis Wim Hof ademhalingstimer: krachtige ademteugen, stopwatch voor je ademstop en herstelademhaling plus een veilige gids voor koud douchen en ijsbaden.",
+    "appName": "Wim Hof ademhaling timer",
+    "appDescription": "Gratis begeleide timer voor ademhaling in Wim Hof-stijl — krachtige ademhalingen, stopwatch voor de ademstop en herstelademhaling — met een veiligheidsgerichte gids voor koublootstelling."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Wim Hof timer"
+  },
+  "h1": "Wim Hof ademhaling — timer",
+  "capsule": "Wim Hof ademhaling bestaat uit 30–40 diepe, snelle ademhalingen, daarna uitademen en je adem vasthouden zolang het comfortabel is, en dan één diepe herstelademhaling die je 15 seconden vasthoudt — herhaald in 3–4 rondes. Deze timer telt de ademhalingen, meet je ademstop en begeleidt het herstel. Doe het altijd zittend of liggend op het droge: van de ademhaling kun je flauwvallen.",
+  "imageAlt": "Wim Hof ademhaling timer — begeleide krachtige ademhalingen, ademstop en herstel, met een gids voor koublootstelling, van ONDA Life",
+  "safetyTitle": "⚠ Lees dit voordat je begint",
+  "safety": [
+    "Doe de ademhaling NOOIT in of bij water, in bad of staand — flauwvallen is een reëel risico. Ga altijd zitten of liggen op een veilige ondergrond.",
+    "Combineer de ademhaling nooit met koud water, autorijden of een situatie waarin bewusteloos raken gevaarlijk is. Doe de ademhaling eerst, volledig hersteld, op het droge.",
+    "Sla koublootstelling en deze ademhaling over als je zwanger bent, een hartaandoening, hoge bloeddruk of epilepsie hebt, of eerder bent flauwgevallen — overleg eerst met een arts.",
+    "Koud water veroorzaakt een koudeschok-hap naar adem en laat hartslag en bloeddruk sterk stijgen; ga er geleidelijk in, houd het kort en ga nooit alleen het open water in.",
+    "Stop onmiddellijk bij pijn op de borst, ernstige duizeligheid of gevoelloosheid. Warm je daarna actief op."
+  ],
+  "ui": {
+    "rounds": "Rondes",
+    "breaths": "Ademhalingen per ronde",
+    "press": "Druk op start",
+    "in": "Adem in",
+    "out": "Laat gaan",
+    "hold": "Adem uit en houd vast",
+    "recovery": "Diep inademen — vasthouden",
+    "done": "Klaar",
+    "round": "Ronde {{r}} / {{n}}",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "release": "Ik moet ademen →",
+    "complete": "Sessie voltooid · rondes: {{n}}",
+    "holds": "Ademstops: {{list}}",
+    "restart": "Opnieuw",
+    "note": "Ga zitten of liggen. Stop als je je flauw voelt. Doe dit nooit in of bij water."
+  },
+  "coldTitle": "Protocol voor koublootstelling",
+  "protocol": [
+    {
+      "label": "Weekdosis",
+      "value": "Ongeveer 11 minuten bewuste kou per week, verdeeld over 2–4 korte sessies — de hoeveelheid uit een studie onder vaste winterzwemmers (Søberg 2021). Meer is niet beter."
+    },
+    {
+      "label": "Per sessie",
+      "value": "1–3 minuten is ruim voldoende. Het doel is een korte, beheersbare prikkel, geen uithoudingsprestatie."
+    },
+    {
+      "label": "Temperatuur",
+      "value": "Onaangenaam koud maar draaglijk — voor veel mensen water van ongeveer 10–15 °C. Laat je leiden door het gevoel, niet door een getal."
+    },
+    {
+      "label": "Zo begin je",
+      "value": "Sluit je gewone douche af met 30 seconden koud en voeg er elke week ongeveer 15 seconden aan toe. Koud douchen is een veilige start vóór een ijsbad of duik."
+    },
+    {
+      "label": "Timing",
+      "value": "Wil je spiermassa opbouwen, vermijd dan koude onderdompeling direct na krachttraining — dat kan de spieraanpassing afremmen (Roberts 2015). Kou in de ochtend is prima."
+    }
+  ],
+  "disclaimer": "Educatieve gids, geen medisch advies en geen vervanging voor goede begeleiding. De voordelen zijn echt, maar worden vaak overdreven; de risico's zijn ook echt. Houd je aan de veiligheidsregels, bouw langzaam op en laat je medisch goedkeuren als je een hartaandoening hebt of zwanger bent.",
+  "sections": [
+    {
+      "h2": "Zo doe je de Wim Hof ademhaling",
+      "body": "Ga op een veilige plek zitten of liggen. Neem 30–40 diepe ademhalingen: adem volledig in door neus of mond en laat de adem los zonder hem eruit te duwen, in een rustig ritme. Adem na de laatste ademhaling uit en houd je adem met lege longen vast zolang het comfortabel voelt — druk op \"Ik moet ademen\" als het zover is. Neem dan één diepe inademing en houd die ongeveer 15 seconden vast voordat je loslaat. Dat is één ronde; doe er 3–4. Tintelingen, een licht gevoel in het hoofd en langere ademstops in latere rondes zijn normale gevolgen van een verlaagd koolzuurgehalte — en precies daarom mag je het nooit in water of tijdens het autorijden doen."
+    },
+    {
+      "h2": "Is de Wim Hof ademhaling veilig?",
+      "body": "Goed uitgevoerd — zittend of liggend, op het droge — is het veilig voor de meeste gezonde mensen. Verkeerd uitgevoerd is het echt gevaarlijk: door het overademen daalt het koolzuurgehalte en kun je zonder waarschuwing flauwvallen, en er zijn mensen verdronken die het in water, in bad of in een zwembad deden. Doe het nooit in of bij water of tijdens het autorijden, en doe het niet zonder medisch advies als je zwanger bent of een hartaandoening, hoge bloeddruk, epilepsie of een voorgeschiedenis van flauwvallen hebt."
+    },
+    {
+      "h2": "Werkt de Wim Hof methode?",
+      "body": "Deels, met eerlijke kanttekeningen. In een gecontroleerde studie (Kox 2014) konden mensen die in de methode getraind waren bewust hun adrenaline verhogen en hun ontstekingsreactie op een ingespoten bacterieel toxine dempen — een echt en verrassend resultaat. Koud douchen heeft zijn eigen bescheiden bewijs: in een studie met ongeveer 3.000 mensen verminderde het afsluiten van de douche met 30–90 seconden koud het aantal zelfgerapporteerde ziektedagen met ongeveer 29% (Buijze 2016). Maar beweringen dat het ziektes geneest of je immuniteit spectaculair versterkt, gaan ver voorbij het bewijs. Zie het als een oefening in stressbestendigheid en focus, niet als behandeling."
+    },
+    {
+      "h2": "Koud douchen of ijsbad?",
+      "body": "Begin met koud douchen: dat brengt veel minder risico en levert toch voordelen op. Een ijsbad of duik in open water voegt een sterke koudeschokreactie toe — een hap-naar-adem-reflex en een scherpe stijging van hartslag en bloeddruk — plus reële risico's voor het hart en op verdrinking (Tipton 2017). Bouw langzaam op, houd sessies kort, ga nooit alleen het open water in en laat je eerst medisch goedkeuren als je een hart- of vaataandoening hebt. Doe de ademhalingsoefening nooit in het water."
+    }
+  ],
+  "faqTitle": "Wim Hof ademhaling — veelgestelde vragen",
+  "faq": [
+    {
+      "q": "Wat is de Wim Hof ademhalingsmethode?",
+      "a": "Een cyclus van 30–40 diepe ademhalingen, daarna uitademen en je adem vasthouden zolang het comfortabel is, en dan een herstelademhaling die je ongeveer 15 seconden vasthoudt — herhaald in 3–4 rondes. Meestal wordt het gecombineerd met koublootstelling."
+    },
+    {
+      "q": "Hoeveel rondes Wim Hof ademhaling moet ik doen?",
+      "a": "3–4 rondes van 30–40 ademhalingen is gebruikelijk, in totaal ongeveer 10–15 minuten. Beginners kunnen starten met 2 rondes."
+    },
+    {
+      "q": "Hoe lang moet ik mijn adem vasthouden?",
+      "a": "Zolang het comfortabel is — er is geen doel. Ademstops van 1–2 minuten zijn na een paar sessies gebruikelijk en worden in latere rondes meestal langer. Ga nooit door bij sterk ongemak."
+    },
+    {
+      "q": "Is de Wim Hof ademhaling veilig?",
+      "a": "Voor de meeste gezonde mensen wel, als je het zittend of liggend op het droge doet. Je kunt ervan flauwvallen, dus doe het nooit in of bij water, in bad of tijdens het autorijden, en overleg eerst met een arts als je zwanger bent of een hartaandoening, hoge bloeddruk of epilepsie hebt."
+    },
+    {
+      "q": "Waarom voel ik tintelingen of een licht gevoel in mijn hoofd?",
+      "a": "De diepe ademhaling verlaagt het koolzuurgehalte in je bloed, wat tintelingen, een licht gevoel in het hoofd en soms spierkrampen veroorzaakt. Het verdwijnt na de ademstop; stop als het sterk aanvoelt."
+    },
+    {
+      "q": "Hoeveel koublootstelling heb ik nodig?",
+      "a": "Ongeveer 11 minuten per week, verdeeld over 2–4 korte sessies van 1–3 minuten, is een veelgenoemde hoeveelheid. Je douche koud afsluiten is een veilige manier om te beginnen."
+    },
+    {
+      "q": "Versterkt de Wim Hof methode je immuunsysteem?",
+      "a": "Eén gecontroleerde studie liet zien dat getrainde mensen een ontstekingsreactie konden dempen, en koud douchen werd in verband gebracht met minder ziektedagen. Beweringen die verder gaan — zoals het genezen van ziektes — worden niet ondersteund."
+    }
+  ],
+  "sourcesTitle": "Bronnen & methodologie",
+  "methodology": "De Wim Hof methode combineert cyclisch overademen met ademstops en koublootstelling. De bekendste studie (Kox 2014) liet zien dat getrainde beoefenaars bewust hun adrenaline konden verhogen en een ontstekingsreactie konden afremmen — een echte, zij het kleine en specifieke bevinding die vaak te ver wordt doorgetrokken. Het koud afsluiten van de douche verminderde zelfgerapporteerde ziektedagen in een grote studie (Buijze 2016). Dezelfde literatuur wijst op reëel gevaar: de ademhaling verlaagt het koolzuurgehalte en kan je doen flauwvallen, en koud water veroorzaakt een koudeschokreactie en belasting van het hart (Tipton 2017) — daarom mag dit nooit in water worden gedaan. De wekelijkse kouddosis volgt een studie onder winterzwemmers (Søberg 2021); de waarschuwing over krachttraining volgt Roberts 2015. Educatieve gids en timer, geen medisch advies.",
+  "sourcesContributes": [
+    "De kernstudie naar de Wim Hof methode — de getrainde groep verhoogde bewust de adrenaline en dempte een ontstekingsreactie.",
+    "RCT (ongeveer 3.000 mensen): de douche afsluiten met 30–90 s koud verminderde zelfgerapporteerd ziekteverzuim met ongeveer 29%.",
+    "Het eerlijke veiligheidsbeeld — koudeschokreactie, risico voor het hart, en waarom voorzichtigheid en geleidelijke blootstelling belangrijk zijn.",
+    "Studie onder vaste winterzwemmers, de bron van de veelgenoemde ~11 minuten kou per week.",
+    "Koudwateronderdompeling na krachttraining remde de toename van spiermassa en kracht op lange termijn af."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "timer": "Ademhalingstimer (box, 4-7-8, coherent)",
+    "nervous": "Quiz: toestand van je zenuwstelsel",
+    "article": "Wim Hof ademhaling en ontsteking"
+  }
+}

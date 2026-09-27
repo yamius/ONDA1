@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Respiração de ressonância — ache seu ritmo | ONDA Life",
+    "description": "Guia de respiração de ressonância grátis: respire com o círculo a 4,5–6,5 respirações por minuto, com sinais sonoros, e ache o ritmo mais suave para você.",
+    "appName": "Guia de respiração de ressonância",
+    "appDescription": "Guia de respiração grátis para a respiração de frequência de ressonância (coerente) a 4,5–6,5 respirações por minuto, com sinais sonoros, duração da sessão e protocolo para achar seu ritmo."
+  },
+  "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Respiração de ressonância" },
+  "h1": "Respiração de ressonância",
+  "capsule": "Respiração de ressonância é respirar de forma lenta e regular no seu ritmo pessoal — geralmente entre 4,5 e 6,5 respirações por minuto —, em que o ritmo cardíaco e a respiração entram em sintonia e a variabilidade da frequência cardíaca (VFC/HRV) oscila ao máximo. Escolha um ritmo, aperte iniciar e respire com o círculo; teste cada ritmo por cerca de 2 minutos e fique com o que parecer mais suave.",
+  "imageAlt": "Guia de respiração de ressonância — respire com o círculo a 4,5 a 6,5 respirações por minuto, ferramenta grátis da ONDA Life",
+  "ui": {
+    "height": "Altura (cm) — opcional",
+    "heightPh": "ex.: 178",
+    "estimate": "Ponto de partida: {{band}} → use {{bpm}}/min",
+    "rate": "Ritmo respiratório (respirações por minuto)",
+    "perMin": "{{n}}/min",
+    "pacing": "{{s}} s inspirando · {{s}} s expirando",
+    "in": "Inspire",
+    "out": "Expire",
+    "press": "Aperte iniciar",
+    "start": "► Iniciar",
+    "stop": "◼ Parar",
+    "duration": "Sessão",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Sinais sonoros",
+    "remaining": "faltam {{m}}:{{s}}",
+    "done": "Pronto. Como foi esse ritmo — suave e fácil, ou um pouco forçado?",
+    "again": "De novo"
+  },
+  "bands": {
+    "short": "≈ 6,0–6,5 respirações/min",
+    "mid": "≈ 5,5–6,0 respirações/min",
+    "tall": "≈ 5,0–5,5 respirações/min"
+  },
+  "stepsTitle": "Como achar seu ritmo de ressonância",
+  "steps": [
+    "Comece com 6,5 respirações por minuto e respire com o círculo por cerca de 2 minutos — entrando e saindo pelo nariz, no mesmo tempo, sem forçar.",
+    "Desça para 6,0, 5,5, 5,0 e 4,5, cerca de 2 minutos cada, com uma respiração normal curta entre eles.",
+    "Fique com o ritmo que parecer mais suave e te deixar mais calmo — não o mais lento que você consegue.",
+    "Pratique esse ritmo 10–20 minutos por dia. Com uma cinta peitoral ou relógio que mostre a VFC batimento a batimento, escolha o ritmo em que as ondas da frequência cardíaca ficam maiores e mais regulares."
+  ],
+  "safety": "O número baseado na altura é só um ponto de partida aproximado, não seu verdadeiro ritmo de ressonância. Ferramenta educativa, não é dispositivo médico. Se sentir tontura, pare e respire normalmente; se tiver doença cardíaca ou pulmonar ou estiver grávida, faça sessões leves.",
+  "cta": "Com um Apple Watch, o ONDA mostra um índice de coerência em tempo real enquanto você respira — um sinal de feedback que ajuda a perceber qual ritmo acalma seu coração. Pela câmera, ele mostra seu pulso.",
+  "sections": [
+    {
+      "h2": "O que é a respiração de frequência de ressonância?",
+      "body": "Toda pessoa tem um ritmo de respiração lento em que o ritmo cardíaco, a respiração e o barorreflexo — o circuito de controle da pressão arterial do corpo — se movem em sintonia. Nessa frequência de ressonância, a frequência cardíaca sobe a cada inspiração e cai a cada expiração com a maior oscilação possível, e por isso a VFC atinge o pico (Lehrer 2003). Para a maioria dos adultos, fica entre 4,5 e 6,5 respirações por minuto. Respirar nesse ritmo é a técnica central do biofeedback de VFC, usado em pesquisas sobre estresse, ansiedade e pressão arterial."
+    },
+    {
+      "h2": "Respiração de ressonância x respiração coerente",
+      "body": "Respiração coerente geralmente significa um ritmo fixo de cerca de 5–6 respirações por minuto — por exemplo, 5,5 segundos inspirando e 5,5 expirando —, que fica perto do ritmo de ressonância da maioria das pessoas. A respiração de ressonância é a versão personalizada: você testa vários ritmos e fica com o que combina melhor com seu corpo. Se não quiser testar, a respiração coerente a 5,5 é um bom padrão. Experimente no [Timer de respiração: quadrada, 4-7-8 e coerente](/tools/breathing) ou leia o [guia de respiração coerente](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "6 respirações por minuto reduzem o estresse e aumentam a VFC?",
+      "body": "Respirar a cerca de 6 respirações por minuto aumenta de forma confiável a variabilidade da frequência cardíaca enquanto você pratica; num estudo controlado (Steffen 2017), também melhorou o humor em comparação a ficar sentado em silêncio. A prática regular por várias semanas está ligada a uma melhor função do barorreflexo e, em alguns estudos, a uma pressão arterial um pouco mais baixa. É uma técnica de relaxamento bem estudada, não um tratamento por si só. Mais: [respiração lenta e pressão arterial](/articles/high-blood-pressure-slow-breathing)."
+    },
+    {
+      "h2": "Por quanto tempo e com que frequência praticar?",
+      "body": "Os protocolos de pesquisa costumam usar 10–20 minutos por dia, muitas vezes divididos em duas sessões, por várias semanas. Comece com 5 minutos se a respiração lenta for novidade, mantenha a respiração suave e silenciosa e não respire mais fundo do que é confortável — respirar fundo demais num ritmo lento pode causar tontura. Muita gente acha mais fácil à noite ou antes de uma tarefa estressante."
+    }
+  ],
+  "faqTitle": "Respiração de ressonância e coerência cardíaca — perguntas frequentes",
+  "faq": [
+    { "q": "O que é a respiração de frequência de ressonância?", "a": "É respirar devagar no seu ritmo pessoal — geralmente 4,5–6,5 respirações por minuto —, em que o ritmo cardíaco e a respiração se movem em sintonia e a VFC oscila ao máximo. É a técnica central do biofeedback de VFC." },
+    { "q": "Como acho meu ritmo de ressonância?", "a": "Respire cerca de 2 minutos em cada ritmo — 6,5, 6,0, 5,5, 5,0 e 4,5 respirações por minuto — e fique com o que parecer mais suave. Com um aparelho que mostre a VFC batimento a batimento, escolha o ritmo com as ondas de frequência cardíaca maiores e mais regulares." },
+    { "q": "Respiração de ressonância é o mesmo que respiração coerente?", "a": "Quase. A respiração coerente usa um ritmo fixo de cerca de 5–6 respirações por minuto; a respiração de ressonância personaliza esse ritmo para o seu corpo." },
+    { "q": "A altura influencia a frequência de ressonância?", "a": "Pessoas mais altas e homens tendem a ter um ritmo de ressonância um pouco mais lento, por isso esta ferramenta oferece um ponto de partida baseado na altura. É só uma referência — teste os ritmos para achar o seu." },
+    { "q": "Por quanto tempo devo fazer a respiração de ressonância?", "a": "Nas pesquisas, o comum são 10–20 minutos por dia, por várias semanas. Comece com 5 minutos e mantenha a respiração suave." },
+    { "q": "A respiração de ressonância aumenta a VFC?", "a": "Sim, a VFC sobe enquanto você respira nesse ritmo, e a prática regular está ligada a uma melhor função do barorreflexo e a um humor mais calmo. Ela complementa, mas não substitui, o cuidado médico." }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "Num ritmo pessoal — geralmente 4,5–6,5 respirações por minuto —, as oscilações da frequência cardíaca, a respiração e o barorreflexo entram em fase e a amplitude da VFC atinge o pico (Lehrer 2003). A forma padrão de encontrá-lo é respirar em cada ritmo por alguns minutos e medir qual produz as oscilações de frequência cardíaca maiores e mais suaves (Shaffer 2020). Sem sensor, o ritmo que parecer mais suave e calmo é uma escolha razoável. A sugestão baseada na altura é só um ponto de partida aproximado. Ferramenta educativa, não é dispositivo médico.",
+  "sourcesContributes": [
+    "Trabalho fundamental que estabeleceu o conceito de frequência de ressonância e seu mecanismo barorreflexo.",
+    "O protocolo para encontrar a frequência de ressonância individual testando uma série de ritmos respiratórios.",
+    "Respirar na frequência de ressonância (~6/min) aumentou a VFC e melhorou o humor em comparação a ficar sentado em silêncio."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "timer": "Timer de respiração (quadrada, 4-7-8, coerente)",
+    "hrv": "Calculadora de VFC por idade",
+    "guide": "Guia de respiração coerente"
+  }
+}

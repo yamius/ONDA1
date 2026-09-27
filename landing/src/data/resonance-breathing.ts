@@ -30,8 +30,8 @@ export function rateToPacing(bpm: number): RatePacing {
 
 export interface ResonanceEstimate {
   bpm: number
-  band: string
-  note: string
+  /** Key into the page's translated band labels. */
+  band: 'short' | 'mid' | 'tall'
 }
 
 /** Rough height-based STARTING estimate. Resonance frequency tends to be a
@@ -39,9 +39,9 @@ export interface ResonanceEstimate {
  *  This is only a starting point — true RF must be found by testing. */
 export function estimateResonanceRate(heightCm: number): ResonanceEstimate | null {
   if (!heightCm || heightCm < 120 || heightCm > 230) return null
-  if (heightCm < 165) return { bpm: 6.0, band: '≈ 6.0–6.5 breaths/min', note: 'Shorter stature tends toward the faster end of the resonance range.' }
-  if (heightCm < 185) return { bpm: 5.5, band: '≈ 5.5–6.0 breaths/min', note: 'Average stature usually resonates around 5.5–6 breaths/min.' }
-  return { bpm: 5.0, band: '≈ 5.0–5.5 breaths/min', note: 'Taller stature tends toward the slower end of the resonance range.' }
+  if (heightCm < 165) return { bpm: 6.0, band: 'short' }
+  if (heightCm < 185) return { bpm: 5.5, band: 'mid' }
+  return { bpm: 5.0, band: 'tall' }
 }
 
 export const RESONANCE_SOURCES: ScienceSource[] = [
@@ -68,31 +68,5 @@ export const RESONANCE_SOURCES: ScienceSource[] = [
     journal: 'Frontiers in Public Health, 5:222',
     contributes: 'Shows breathing at resonance frequency (~6/min) raises HRV and improves mood vs sitting quietly.',
     url: 'https://doi.org/10.3389/fpubh.2017.00222',
-  },
-]
-
-export const RESONANCE_METHODOLOGY =
-  'Resonance-frequency breathing is the precise version of coherent breathing. At a personal rate — usually 4.5–6.5 breaths/min — your heart-rate oscillations, breathing and baroreflex come into phase, and HRV amplitude peaks (Lehrer 2003). The exact rate is individual and tends to be slightly slower in taller people, so the height-based number here is only a starting point. The accepted way to find your true resonance frequency is to test each rate for a couple of minutes and measure which produces the largest, smoothest HRV oscillations (Shaffer 2020) — that needs live HRV, which is exactly what ONDA Life provides. Without a sensor, pick the rate you can sustain most smoothly and that leaves you calmest. This is an educational tool, not a medical device; stop if you feel light-headed.'
-
-export const RESONANCE_FAQ: Array<{ q: string; a: string }> = [
-  {
-    q: 'What is resonance frequency breathing?',
-    a: 'It is breathing at the specific slow rate — usually between 4.5 and 6.5 breaths per minute — where your cardiovascular rhythms synchronise and heart-rate variability is maximised. Breathing at this "resonance frequency" is the core technique of HRV biofeedback, and it is a more precise, personalised version of coherent breathing.',
-  },
-  {
-    q: 'How do I find my personal resonance rate?',
-    a: 'The proper method is to breathe at each rate (6.5, 6.0, 5.5, 5.0, 4.5/min) for about two minutes while measuring your HRV, and choose the rate that produces the largest, smoothest heart-rate oscillations (Shaffer 2020). That requires a live HRV reading — ONDA Life does this automatically. Without a sensor, use the height estimate here as a start and pick the rate that feels smoothest and calmest.',
-  },
-  {
-    q: 'Is resonance breathing the same as coherent breathing?',
-    a: 'They overlap. Coherent breathing usually means a fixed ~5–6 breaths/min for everyone. Resonance-frequency breathing is the individualised version: your specific rate within that range where HRV peaks. For most people the two are close, which is why ~5.5/min is a good default starting point.',
-  },
-  {
-    q: 'How long and how often should I practise?',
-    a: 'Studies of HRV biofeedback typically use sessions of 10–20 minutes, once or twice daily. Even a few minutes at your resonance rate acutely raises HRV and calms arousal; the larger benefits (baroreflex strengthening, mood, blood pressure) build with regular practice over weeks.',
-  },
-  {
-    q: 'Does it really raise HRV?',
-    a: 'Acutely, yes — breathing at resonance frequency reliably increases HRV amplitude during the session, and trials such as Steffen 2017 show improvements in HRV, blood pressure and mood. Longer-term clinical effects are promising but more mixed across studies. It is a low-risk, well-evidenced self-regulation practice, not a medical treatment.',
   },
 ]

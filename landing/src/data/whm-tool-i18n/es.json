@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Método Wim Hof: temporizador de respiración | ONDA Life",
+    "description": "Temporizador gratis de respiración Wim Hof: respiraciones guiadas, cronómetro de retención y recuperación, más guía segura de ducha fría y baño de hielo.",
+    "appName": "Temporizador de respiración Wim Hof",
+    "appDescription": "Temporizador guiado gratuito para la respiración estilo Wim Hof —respiraciones profundas, cronómetro de retención y respiración de recuperación— con una guía de exposición al frío centrada en la seguridad."
+  },
+  "breadcrumb": { "home": "Inicio", "tools": "Herramientas", "current": "Temporizador Wim Hof" },
+  "h1": "Método Wim Hof: temporizador de respiración",
+  "capsule": "La respiración Wim Hof consiste en 30–40 respiraciones profundas y rápidas, después exhalar y retener el aire tanto como resulte cómodo, y luego una respiración profunda de recuperación retenida 15 segundos, repitiendo 3–4 rondas. Este temporizador cuenta las respiraciones, cronometra tu retención y guía la recuperación. Hazlo siempre sentado o tumbado y en tierra firme, lejos del agua: esta respiración puede hacerte perder el conocimiento.",
+  "imageAlt": "Temporizador de respiración Wim Hof: respiraciones guiadas, retención y recuperación, con guía de exposición al frío, de ONDA Life",
+  "safetyTitle": "⚠ Lee esto antes de empezar",
+  "safety": [
+    "NUNCA hagas esta respiración dentro del agua ni cerca de ella, en la bañera ni de pie: el riesgo de desmayo es real. Siéntate o túmbate siempre sobre una superficie segura.",
+    "Nunca combines la respiración con agua fría, con la conducción ni con ninguna situación en la que perder el conocimiento sea peligroso. Haz primero la respiración, en tierra firme, y recupérate por completo.",
+    "No practiques la exposición al frío ni esta respiración si estás embarazada, tienes una enfermedad cardíaca, hipertensión, epilepsia o antecedentes de desmayos; consulta antes a un médico.",
+    "El agua fría provoca un jadeo reflejo por choque térmico y dispara la frecuencia cardíaca y la presión arterial; entra de forma gradual, haz sesiones cortas y nunca te sumerjas solo en aguas abiertas.",
+    "Detente de inmediato si sientes dolor en el pecho, mareo intenso o entumecimiento. Después, entra en calor moviéndote."
+  ],
+  "ui": {
+    "rounds": "Rondas",
+    "breaths": "Respiraciones por ronda",
+    "press": "Pulsa iniciar",
+    "in": "Inhala",
+    "out": "Suelta",
+    "hold": "Exhala y retén",
+    "recovery": "Inhala profundo y retén",
+    "done": "Hecho",
+    "round": "Ronda {{r}} / {{n}}",
+    "start": "► Iniciar",
+    "stop": "◼ Detener",
+    "release": "Necesito respirar →",
+    "complete": "Sesión completada · rondas: {{n}}",
+    "holds": "Retenciones: {{list}}",
+    "restart": "Reiniciar",
+    "note": "Siéntate o túmbate. Detente si sientes que te vas a desmayar. Nunca lo hagas dentro del agua ni cerca de ella."
+  },
+  "coldTitle": "Protocolo de exposición al frío",
+  "protocol": [
+    { "label": "Dosis semanal", "value": "Unos 11 minutos de frío intencionado por semana, repartidos en 2–4 sesiones cortas: la cantidad observada en un estudio con nadadores de invierno habituales (Søberg 2021). Más no es mejor." },
+    { "label": "Por sesión", "value": "1–3 minutos son suficientes. El objetivo es un estrés breve y manejable, no una prueba de resistencia." },
+    { "label": "Temperatura", "value": "Incómodamente fría pero soportable: para muchas personas, agua a unos 10–15 °C. Guíate por la sensación, no por un número." },
+    { "label": "Cómo empezar", "value": "Termina tu ducha habitual con 30 segundos de agua fría y añade unos 15 segundos cada semana. La ducha fría es un inicio seguro antes de cualquier inmersión." },
+    { "label": "Momento", "value": "Si tu objetivo es ganar músculo, evita la inmersión en frío justo después del entrenamiento de fuerza: puede frenar la adaptación muscular (Roberts 2015). El frío por la mañana está bien." }
+  ],
+  "disclaimer": "Guía educativa; no es consejo médico ni sustituye una instrucción adecuada. Los beneficios son reales, pero a menudo se exageran; los riesgos también son reales. Respeta las normas de seguridad, progresa poco a poco y obtén autorización médica si tienes cualquier enfermedad cardíaca o estás embarazada.",
+  "sections": [
+    {
+      "h2": "Cómo hacer la respiración Wim Hof",
+      "body": "Siéntate o túmbate en un lugar seguro. Haz 30–40 respiraciones profundas: inhala a fondo por la nariz o la boca y suelta el aire sin forzarlo, con un ritmo constante. Tras la última respiración, exhala y retén con los pulmones vacíos tanto como te resulte cómodo; cuando necesites respirar, pulsa \"Necesito respirar\". Después inhala profundamente y retén unos 15 segundos antes de soltar. Eso es una ronda; haz 3–4. El hormigueo, la sensación de mareo leve y retenciones más largas en las últimas rondas son efectos normales de la bajada de dióxido de carbono, y precisamente por eso nunca debes hacerlo en el agua ni mientras conduces."
+    },
+    {
+      "h2": "¿Es segura la respiración Wim Hof?",
+      "body": "Bien hecha —sentado o tumbado, en tierra firme— es segura para la mayoría de las personas sanas. Mal hecha es realmente peligrosa: la hiperventilación reduce el dióxido de carbono y puede hacerte perder el conocimiento sin aviso, y hay personas que se han ahogado practicándola en el agua, en la bañera o en piscinas. Nunca la hagas dentro del agua ni cerca de ella, ni mientras conduces, y evítala sin consejo médico si estás embarazada o tienes una enfermedad cardíaca, hipertensión, epilepsia o antecedentes de desmayos."
+    },
+    {
+      "h2": "¿Funciona el Método Wim Hof?",
+      "body": "En parte, con matices honestos. En un estudio controlado (Kox 2014), personas entrenadas en el método lograron elevar voluntariamente la adrenalina y atenuar su respuesta inflamatoria a una toxina bacteriana inyectada: un resultado real y sorprendente. Las duchas frías tienen su propia evidencia, modesta: en un ensayo con unas 3,000 personas, terminar la ducha con 30–90 segundos de agua fría redujo los días de baja autodeclarados en torno a un 29% (Buijze 2016). Pero las afirmaciones de que cura enfermedades o crea una inmunidad espectacular van mucho más allá de la evidencia. Tómalo como una práctica de resiliencia al estrés y concentración, no como un tratamiento."
+    },
+    {
+      "h2": "¿Ducha fría o baño de hielo?",
+      "body": "Empieza con duchas frías: conllevan mucho menos riesgo y aun así aportan beneficios. Un baño de hielo o una inmersión en aguas abiertas añade una fuerte respuesta de choque por frío —un jadeo reflejo y una subida brusca de la frecuencia cardíaca y la presión arterial— además de riesgos cardíacos y de ahogamiento reales (Tipton 2017). Progresa despacio, haz sesiones cortas, nunca te sumerjas solo en aguas abiertas y obtén autorización médica antes si tienes cualquier afección cardiovascular. Nunca hagas el ejercicio de respiración dentro del agua."
+    }
+  ],
+  "faqTitle": "Respiración Wim Hof: preguntas frecuentes",
+  "faq": [
+    { "q": "¿Qué es el método de respiración Wim Hof?", "a": "Un ciclo de 30–40 respiraciones profundas, después exhalar y retener tanto como resulte cómodo, y luego una respiración de recuperación retenida unos 15 segundos, repitiendo 3–4 rondas. Suele combinarse con exposición al frío." },
+    { "q": "¿Cuántas rondas de respiración Wim Hof debo hacer?", "a": "Lo habitual son 3–4 rondas de 30–40 respiraciones, unos 10–15 minutos en total. Los principiantes pueden empezar con 2 rondas." },
+    { "q": "¿Cuánto tiempo debo retener la respiración?", "a": "Tanto como te resulte cómodo: no hay un objetivo. Tras algunas sesiones son comunes retenciones de 1–2 minutos, que suelen alargarse en las últimas rondas. Nunca fuerces ante una molestia intensa." },
+    { "q": "¿Es segura la respiración Wim Hof?", "a": "Para la mayoría de las personas sanas, sí, si se hace sentado o tumbado en tierra firme. Puede hacerte perder el conocimiento, así que nunca la hagas dentro del agua ni cerca de ella, en la bañera ni mientras conduces, y consulta antes a un médico si estás embarazada o tienes una enfermedad cardíaca, hipertensión o epilepsia." },
+    { "q": "¿Por qué siento hormigueo o mareo?", "a": "La respiración profunda reduce el dióxido de carbono en la sangre, lo que causa hormigueo, mareo leve y a veces calambres musculares. Desaparece tras la retención; detente si es intenso." },
+    { "q": "¿Cuánta exposición al frío necesito?", "a": "Una cantidad citada con frecuencia es de unos 11 minutos por semana, repartidos en 2–4 sesiones cortas de 1–3 minutos. Terminar la ducha con agua fría es una forma segura de empezar." },
+    { "q": "¿El Método Wim Hof refuerza la inmunidad?", "a": "Un estudio controlado mostró que personas entrenadas podían atenuar una respuesta inflamatoria, y las duchas frías se asociaron con menos días de baja. Las afirmaciones que van más allá, como curar enfermedades, no tienen respaldo." }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "El Método Wim Hof combina hiperventilación cíclica con retenciones de la respiración y exposición al frío. El estudio principal (Kox 2014) mostró que practicantes entrenados podían elevar voluntariamente la adrenalina y atenuar una respuesta inflamatoria: un hallazgo real, aunque pequeño y específico, que a menudo se extrapola en exceso. Terminar la ducha con agua fría redujo los días de baja autodeclarados en un ensayo amplio (Buijze 2016). La misma literatura señala peligros reales: la respiración reduce el dióxido de carbono y puede hacerte perder el conocimiento, y el agua fría provoca una respuesta de choque por frío y sobrecarga cardíaca (Tipton 2017); por eso nunca debe hacerse en el agua. La dosis semanal de frío sigue un estudio con nadadores de invierno (Søberg 2021); la precaución sobre el entrenamiento de fuerza sigue a Roberts 2015. Guía educativa y temporizador; no es consejo médico.",
+  "sourcesContributes": [
+    "El estudio central del Método Wim Hof: el grupo entrenado elevó voluntariamente la adrenalina y atenuó una respuesta inflamatoria.",
+    "ECA (unas 3,000 personas): terminar la ducha con 30–90 s de agua fría redujo las bajas laborales autodeclaradas en torno a un 29%.",
+    "El panorama honesto de la seguridad: respuesta de choque por frío, riesgo cardíaco y por qué importan la precaución y la exposición gradual.",
+    "Estudio con nadadores de invierno habituales, origen de la cifra muy citada de ~11 minutos de frío por semana.",
+    "La inmersión en agua fría tras el entrenamiento de fuerza redujo las ganancias de masa y fuerza muscular a largo plazo."
+  ],
+  "related": {
+    "label": "Relacionado",
+    "timer": "Temporizador de respiración (caja, 4-7-8, coherente)",
+    "nervous": "Test del estado del sistema nervioso",
+    "article": "Respiración Wim Hof e inflamación"
+  }
+}

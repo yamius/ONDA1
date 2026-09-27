@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "title": "Respiração Wim Hof — timer guiado grátis | ONDA Life",
+    "description": "Timer grátis de respiração Wim Hof: respirações guiadas, cronômetro de retenção e recuperação, mais um guia seguro de banho gelado e banheira de gelo.",
+    "appName": "Timer de respiração Wim Hof",
+    "appDescription": "Timer guiado grátis para a respiração no estilo Wim Hof — respirações profundas, cronômetro de retenção e respiração de recuperação — com um guia de exposição ao frio focado em segurança."
+  },
+  "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Timer Wim Hof" },
+  "h1": "Respiração Wim Hof — timer",
+  "capsule": "A respiração Wim Hof consiste em 30–40 respirações profundas e rápidas, depois soltar o ar e segurar pelo tempo que for confortável, e então uma respiração profunda de recuperação segurada por 15 segundos — repetindo por 3–4 rodadas. Este timer conta as respirações, cronometra a retenção e guia a recuperação. Faça sempre sentado ou deitado, em terra firme e longe da água: a respiração pode causar desmaio.",
+  "imageAlt": "Timer de respiração Wim Hof — respirações guiadas, retenção e recuperação, com guia de exposição ao frio, da ONDA Life",
+  "safetyTitle": "⚠ Leia antes de começar",
+  "safety": [
+    "NUNCA faça a respiração dentro ou perto da água, na banheira ou em pé — o risco de desmaio é real. Sempre sente-se ou deite-se em uma superfície segura.",
+    "Nunca combine a respiração com água fria, com dirigir ou com qualquer situação em que um desmaio seja perigoso. Faça a respiração antes, recupere-se totalmente, em terra firme.",
+    "Não faça exposição ao frio nem esta respiração se estiver grávida, tiver problema cardíaco, pressão alta, epilepsia ou histórico de desmaios — consulte um médico antes.",
+    "A água fria provoca um suspiro involuntário (choque térmico) e eleva bruscamente a frequência cardíaca e a pressão arterial; entre aos poucos, fique pouco tempo e nunca mergulhe sozinho em águas abertas.",
+    "Pare imediatamente se sentir dor no peito, tontura forte ou dormência. Depois, aqueça-se de forma ativa."
+  ],
+  "ui": {
+    "rounds": "Rodadas",
+    "breaths": "Respirações por rodada",
+    "press": "Toque em iniciar",
+    "in": "Inspire",
+    "out": "Solte",
+    "hold": "Expire e segure",
+    "recovery": "Inspire fundo — segure",
+    "done": "Pronto",
+    "round": "Rodada {{r}} / {{n}}",
+    "start": "► Iniciar",
+    "stop": "◼ Parar",
+    "release": "Preciso respirar →",
+    "complete": "Sessão concluída · rodadas: {{n}}",
+    "holds": "Retenções: {{list}}",
+    "restart": "Recomeçar",
+    "note": "Sente-se ou deite-se. Pare se sentir que vai desmaiar. Nunca faça isso dentro ou perto da água."
+  },
+  "coldTitle": "Protocolo de exposição ao frio",
+  "protocol": [
+    { "label": "Dose semanal", "value": "Cerca de 11 minutos de frio intencional por semana, divididos em 2–4 sessões curtas — a quantidade relatada em um estudo com nadadores de inverno regulares (Søberg 2021). Mais não é melhor." },
+    { "label": "Por sessão", "value": "1–3 minutos são suficientes. O objetivo é um estresse curto e controlável, não uma prova de resistência." },
+    { "label": "Temperatura", "value": "Desconfortavelmente fria, mas suportável — para muitas pessoas, água a cerca de 10–15 °C. Deixe a sensação, e não um número, guiar você." },
+    { "label": "Como começar", "value": "Termine seu banho normal com 30 segundos de água fria e acrescente cerca de 15 segundos por semana. O banho gelado é um começo seguro antes de qualquer imersão." },
+    { "label": "Horário", "value": "Se o seu objetivo é ganhar massa muscular, evite imersão no frio logo após o treino de força — ela pode reduzir a adaptação muscular (Roberts 2015). Frio pela manhã não tem problema." }
+  ],
+  "disclaimer": "Guia educativo, não é aconselhamento médico nem substitui uma instrução adequada. Os benefícios são reais, mas muitas vezes exagerados; os riscos também são reais. Respeite as regras de segurança, avance devagar e obtenha liberação médica se tiver qualquer problema cardíaco ou estiver grávida.",
+  "sections": [
+    {
+      "h2": "Método Wim Hof: como fazer a respiração",
+      "body": "Sente-se ou deite-se em um lugar seguro. Faça 30–40 respirações profundas: inspire completamente pelo nariz ou pela boca e solte o ar sem forçar, em um ritmo constante. Após a última respiração, expire e segure com os pulmões vazios pelo tempo que for confortável — toque em \"Preciso respirar\" quando precisar. Depois, inspire fundo uma vez e segure por cerca de 15 segundos antes de soltar. Essa é uma rodada; faça 3–4. Formigamento, sensação de cabeça leve e retenções mais longas nas rodadas finais são efeitos normais da queda do dióxido de carbono — e é exatamente por isso que você nunca deve fazer isso na água ou dirigindo."
+    },
+    {
+      "h2": "A respiração Wim Hof é segura?",
+      "body": "Feita corretamente — sentado ou deitado, em terra firme — é segura para a maioria das pessoas saudáveis. Feita de forma errada, é realmente perigosa: a hiperventilação reduz o dióxido de carbono e pode causar desmaio sem aviso, e há pessoas que morreram afogadas fazendo isso na água, em banheiras ou piscinas. Nunca faça dentro ou perto da água nem dirigindo, e evite sem orientação médica se estiver grávida ou tiver problema cardíaco, pressão alta, epilepsia ou histórico de desmaios."
+    },
+    {
+      "h2": "O Método Wim Hof funciona?",
+      "body": "Em parte, com ressalvas honestas. Em um estudo controlado (Kox 2014), pessoas treinadas no método conseguiram elevar voluntariamente a adrenalina e atenuar a resposta inflamatória a uma toxina bacteriana injetada — um resultado real e surpreendente. O banho gelado tem suas próprias evidências modestas: em um ensaio com cerca de 3.000 pessoas, terminar o banho com 30–90 segundos de água fria reduziu em cerca de 29% as faltas por doença relatadas (Buijze 2016). Mas afirmações de que cura doenças ou cria uma imunidade extraordinária vão muito além das evidências. Trate-o como uma prática de resiliência ao estresse e foco, não como tratamento."
+    },
+    {
+      "h2": "Banho gelado ou banheira de gelo?",
+      "body": "Comece com banhos gelados: eles têm risco muito menor e ainda trazem benefícios. A banheira de gelo ou o mergulho em águas abertas acrescentam uma forte resposta de choque térmico — um reflexo de suspiro involuntário e um aumento brusco da frequência cardíaca e da pressão arterial — além de riscos reais cardíacos e de afogamento (Tipton 2017). Avance devagar, mantenha as sessões curtas, nunca mergulhe sozinho em águas abertas e obtenha liberação médica antes se tiver qualquer problema cardiovascular. Nunca faça o exercício de respiração dentro da água."
+    }
+  ],
+  "faqTitle": "Respiração Wim Hof — perguntas frequentes",
+  "faq": [
+    { "q": "O que é o método de respiração Wim Hof?", "a": "Um ciclo de 30–40 respirações profundas, depois soltar o ar e segurar pelo tempo que for confortável, e então uma respiração de recuperação segurada por cerca de 15 segundos — repetido por 3–4 rodadas. Geralmente é combinado com exposição ao frio." },
+    { "q": "Quantas rodadas de respiração Wim Hof devo fazer?", "a": "3–4 rodadas de 30–40 respirações é a prática habitual, cerca de 10–15 minutos no total. Iniciantes podem começar com 2 rodadas." },
+    { "q": "Quanto tempo devo segurar a respiração?", "a": "Pelo tempo que for confortável — não há meta. Retenções de 1–2 minutos são comuns depois de algumas sessões e costumam ficar mais longas nas rodadas finais. Nunca force além de um desconforto forte." },
+    { "q": "A respiração Wim Hof é segura?", "a": "Para a maioria das pessoas saudáveis, sim, quando feita sentado ou deitado, em terra firme. Ela pode causar desmaio, então nunca faça dentro ou perto da água, na banheira ou dirigindo, e consulte um médico antes se estiver grávida ou tiver problema cardíaco, pressão alta ou epilepsia." },
+    { "q": "Por que sinto formigamento ou cabeça leve?", "a": "A respiração profunda reduz o dióxido de carbono no sangue, o que causa formigamento, sensação de cabeça leve e às vezes cãibras musculares. Isso passa após a retenção; pare se for intenso." },
+    { "q": "De quanta exposição ao frio eu preciso?", "a": "Cerca de 11 minutos por semana, divididos em 2–4 sessões curtas de 1–3 minutos, é uma quantidade citada com frequência. Terminar o banho com água fria é uma forma segura de começar." },
+    { "q": "O Método Wim Hof fortalece a imunidade?", "a": "Um estudo controlado mostrou que pessoas treinadas conseguiram atenuar uma resposta inflamatória, e o banho gelado foi associado a menos faltas por doença. Afirmações além disso — como curar doenças — não têm respaldo." }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "O Método Wim Hof combina hiperventilação cíclica com retenções da respiração e exposição ao frio. O estudo principal (Kox 2014) mostrou que praticantes treinados conseguiram elevar voluntariamente a adrenalina e atenuar uma resposta inflamatória — um achado real, embora pequeno e específico, que muitas vezes é extrapolado demais. Terminar o banho com água fria reduziu as faltas por doença relatadas em um grande ensaio (Buijze 2016). A mesma literatura aponta perigos reais: a respiração reduz o dióxido de carbono e pode causar desmaio, e a água fria provoca uma resposta de choque térmico e sobrecarga cardíaca (Tipton 2017) — por isso isso nunca deve ser feito na água. A dose semanal de frio segue um estudo com nadadores de inverno (Søberg 2021); o alerta sobre treino de força segue Roberts 2015. Guia educativo e timer, não é aconselhamento médico.",
+  "sourcesContributes": [
+    "O estudo central do Método Wim Hof — o grupo treinado elevou voluntariamente a adrenalina e atenuou uma resposta inflamatória.",
+    "ECR (cerca de 3.000 pessoas): terminar o banho com 30–90 s de água fria reduziu em cerca de 29% as faltas por doença relatadas.",
+    "O panorama honesto de segurança — resposta de choque térmico, risco cardíaco e por que cautela e exposição gradual importam.",
+    "Estudo com nadadores de inverno regulares, a origem dos amplamente citados ~11 minutos de frio por semana.",
+    "A imersão em água fria após o treino de força reduziu os ganhos de longo prazo em massa e força muscular."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "timer": "Timer de respiração (quadrada, 4-7-8, coerente)",
+    "nervous": "Quiz do estado do sistema nervoso",
+    "article": "Respiração Wim Hof e inflamação"
+  }
+}

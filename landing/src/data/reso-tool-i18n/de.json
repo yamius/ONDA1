@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Resonanzatmung — Finde deine Atemfrequenz | ONDA Life",
+    "description": "Kostenloser Atemtrainer für Resonanzatmung: Atme mit dem Kreis bei 4,5–6,5 Atemzügen pro Minute, mit Tonsignalen, und finde deine Resonanzfrequenz.",
+    "appName": "Resonanzatmung – Atemtrainer",
+    "appDescription": "Kostenloser Atemtrainer für Resonanzatmung (kohärente Atmung) mit 4,5–6,5 Atemzügen pro Minute, Tonsignalen, Sitzungsdauer und Protokoll zum Finden deiner Frequenz."
+  },
+  "breadcrumb": { "home": "Startseite", "tools": "Tools", "current": "Resonanzatmung" },
+  "h1": "Resonanzatmung",
+  "capsule": "Resonanzatmung heißt, langsam und gleichmäßig in deinem persönlichen Tempo zu atmen – meist zwischen 4,5 und 6,5 Atemzügen pro Minute. In diesem Bereich kommen Herzrhythmus und Atmung in Einklang, und die Herzratenvariabilität (HRV) schwingt am stärksten. Wähle eine Frequenz, drücke auf Start und atme mit dem Kreis; probiere jede Frequenz etwa 2 Minuten lang aus und behalte die, die sich am ruhigsten anfühlt.",
+  "imageAlt": "Atemtrainer für Resonanzatmung – atme mit dem Kreis bei 4,5 bis 6,5 Atemzügen pro Minute, kostenloses Tool von ONDA Life",
+  "ui": {
+    "height": "Körpergröße (cm) – optional",
+    "heightPh": "z. B. 178",
+    "estimate": "Ausgangspunkt: {{band}} → nimm {{bpm}}/min",
+    "rate": "Atemfrequenz (Atemzüge pro Minute)",
+    "perMin": "{{n}}/min",
+    "pacing": "{{s}} s ein · {{s}} s aus",
+    "in": "Einatmen",
+    "out": "Ausatmen",
+    "press": "Drücke Start",
+    "start": "► Start",
+    "stop": "◼ Stopp",
+    "duration": "Sitzung",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Tonsignale",
+    "remaining": "noch {{m}}:{{s}}",
+    "done": "Fertig. Wie hat sich diese Frequenz angefühlt – ruhig und leicht oder etwas erzwungen?",
+    "again": "Nochmal"
+  },
+  "bands": {
+    "short": "≈ 6,0–6,5 Atemzüge/min",
+    "mid": "≈ 5,5–6,0 Atemzüge/min",
+    "tall": "≈ 5,0–5,5 Atemzüge/min"
+  },
+  "stepsTitle": "So findest du deine Resonanzfrequenz",
+  "steps": [
+    "Beginne mit 6,5 Atemzügen pro Minute und atme etwa 2 Minuten mit dem Kreis – ein und aus durch die Nase, gleich lang, ohne Druck.",
+    "Geh dann auf 6,0, 5,5, 5,0 und 4,5, jeweils etwa 2 Minuten, mit ein paar normalen Atemzügen dazwischen.",
+    "Behalte die Frequenz, die sich am ruhigsten anfühlt und dich am meisten entspannt – nicht die langsamste, die du schaffst.",
+    "Übe diese Frequenz täglich 10–20 Minuten. Mit einem Brustgurt oder einer Uhr, die die HRV von Schlag zu Schlag anzeigt, wählst du die Frequenz mit den größten und gleichmäßigsten Herzfrequenzwellen."
+  ],
+  "safety": "Der Wert nach Körpergröße ist nur ein grober Ausgangspunkt, nicht deine tatsächliche Resonanzfrequenz. Lern-Tool, kein Medizinprodukt. Wenn dir schwindelig wird, hör auf und atme normal; bei Herz- oder Lungenerkrankungen oder in der Schwangerschaft übe sanft.",
+  "cta": "Mit einer Apple Watch zeigt dir ONDA beim Atmen einen Live-Kohärenzwert – ein Feedback-Signal, mit dem du merkst, welcher Rhythmus dein Herz beruhigt. Über die Kamera zeigt ONDA deinen Puls.",
+  "sections": [
+    {
+      "h2": "Was ist Atmen mit Resonanzfrequenz?",
+      "body": "Jeder Mensch hat ein langsames Atemtempo, bei dem Herzrhythmus, Atmung und Baroreflex – der Regelkreis des Körpers für den Blutdruck – im Gleichtakt schwingen. Bei dieser Resonanzfrequenz steigt die Herzfrequenz mit jedem Einatmen und sinkt mit jedem Ausatmen mit der größtmöglichen Amplitude, deshalb erreicht die HRV ihren Höchstwert (Lehrer 2003). Bei den meisten Erwachsenen liegt sie zwischen 4,5 und 6,5 Atemzügen pro Minute. Das Atmen in diesem Tempo ist die Kerntechnik des HRV-Biofeedbacks und wird in der Forschung zu Stress, Angst und Blutdruck eingesetzt."
+    },
+    {
+      "h2": "Resonanzatmung vs. kohärente Atmung",
+      "body": "Kohärente Atmung meint meist einen festen Rhythmus von etwa 5–6 Atemzügen pro Minute – zum Beispiel 5,5 Sekunden ein und 5,5 aus –, der nahe an der Resonanzfrequenz der meisten Menschen liegt. Resonanzatmung ist die persönliche Variante: Du testest mehrere Frequenzen und behältst die, die am besten zu deinem Körper passt. Wenn du nicht testen möchtest, sind 5,5 Atemzüge pro Minute ein sinnvoller Standard. Probier es im [Atemtimer: Box Breathing, 4-7-8 Atmung und kohärente Atmung](/tools/breathing) aus oder lies den [Leitfaden zur kohärenten Atmung](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "Senken 6 Atemzüge pro Minute Stress und steigern die HRV?",
+      "body": "Mit etwa 6 Atemzügen pro Minute steigt die Herzratenvariabilität zuverlässig, solange du so atmest; in einer kontrollierten Studie (Steffen 2017) verbesserte sich außerdem die Stimmung im Vergleich zu ruhigem Sitzen. Regelmäßiges Üben über mehrere Wochen geht mit einer besseren Baroreflex-Funktion und in einigen Studien mit leicht niedrigerem Blutdruck einher. Es ist eine gut untersuchte Entspannungstechnik, aber für sich allein keine Behandlung. Mehr dazu: [langsames Atmen und Blutdruck](/articles/high-blood-pressure-slow-breathing)."
+    },
+    {
+      "h2": "Wie lange und wie oft solltest du üben?",
+      "body": "Studienprotokolle nutzen meist 10–20 Minuten am Tag, oft auf zwei Einheiten verteilt, über mehrere Wochen. Beginne mit 5 Minuten, wenn langsames Atmen ungewohnt ist, atme sanft und leise und nicht tiefer, als es angenehm ist – zu tiefes Atmen bei langsamem Tempo kann Schwindel auslösen. Vielen fällt es abends oder vor einer stressigen Aufgabe am leichtesten."
+    }
+  ],
+  "faqTitle": "Resonanzatmung – häufige Fragen",
+  "faq": [
+    { "q": "Was ist Resonanzatmung?", "a": "Langsames Atmen in deinem persönlichen Tempo – meist 4,5–6,5 Atemzüge pro Minute –, bei dem Herzrhythmus und Atmung im Gleichtakt schwingen und die HRV am stärksten ausschlägt. Es ist die Kerntechnik des HRV-Biofeedbacks." },
+    { "q": "Wie finde ich meine Resonanzfrequenz?", "a": "Atme jeweils etwa 2 Minuten mit 6,5, 6,0, 5,5, 5,0 und 4,5 Atemzügen pro Minute und behalte die Frequenz, die sich am ruhigsten anfühlt. Mit einem Gerät, das die HRV von Schlag zu Schlag anzeigt, wählst du die Frequenz mit den größten, gleichmäßigsten Herzfrequenzwellen." },
+    { "q": "Ist Resonanzatmung dasselbe wie kohärente Atmung?", "a": "Fast. Kohärente Atmung nutzt ein festes Tempo von etwa 5–6 Atemzügen pro Minute; Resonanzatmung passt dieses Tempo an deinen Körper an." },
+    { "q": "Beeinflusst die Körpergröße die Resonanzfrequenz?", "a": "Größere Menschen und Männer haben tendenziell eine etwas langsamere Resonanzfrequenz, deshalb bietet dieses Tool einen Ausgangspunkt nach Körpergröße. Das ist nur eine Orientierung – teste die Frequenzen, um deine zu finden." },
+    { "q": "Wie lange sollte ich Resonanzatmung üben?", "a": "In Studien sind 10–20 Minuten täglich über mehrere Wochen üblich. Beginne mit 5 Minuten und atme sanft." },
+    { "q": "Steigert Resonanzatmung die HRV?", "a": "Ja, die HRV steigt, während du in diesem Tempo atmest, und regelmäßiges Üben geht mit besserer Baroreflex-Funktion und ruhigerer Stimmung einher. Es unterstützt medizinische Versorgung, ersetzt sie aber nicht." }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Bei einem persönlichen Tempo – meist 4,5–6,5 Atemzüge pro Minute – geraten Herzfrequenzschwankungen, Atmung und Baroreflex in Phase, und die HRV-Amplitude erreicht ihr Maximum (Lehrer 2003). Der Standardweg, dieses Tempo zu finden: Man atmet jede Frequenz ein paar Minuten lang und misst, welche die größten und gleichmäßigsten Herzfrequenzschwankungen erzeugt (Shaffer 2020). Ohne Sensor ist die Frequenz, die sich am ruhigsten und entspanntesten anfühlt, eine vernünftige Wahl. Der Vorschlag nach Körpergröße ist nur ein grober Ausgangspunkt. Lern-Tool, kein Medizinprodukt.",
+  "sourcesContributes": [
+    "Grundlagenarbeit, die das Konzept der Resonanzfrequenz und ihren Baroreflex-Mechanismus begründet.",
+    "Das Protokoll, mit dem man die individuelle Resonanzfrequenz durch Testen einer Reihe von Atemfrequenzen findet.",
+    "Atmen mit Resonanzfrequenz (~6/min) steigerte die HRV und verbesserte die Stimmung im Vergleich zu ruhigem Sitzen."
+  ],
+  "related": {
+    "label": "Ähnliche Themen",
+    "timer": "Atemtimer (Box, 4-7-8, kohärent)",
+    "hrv": "HRV-Rechner nach Alter",
+    "guide": "Leitfaden zur kohärenten Atmung"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "meta": {
+    "title": "Oddychanie rezonansowe — znajdź swoje tempo | ONDA Life",
+    "description": "Darmowy pacer oddychania rezonansowego: oddychaj z kołem w tempie 4,5–6,5 oddechu na minutę, z sygnałami dźwiękowymi, i znajdź swoje tempo rezonansowe.",
+    "appName": "Pacer oddychania rezonansowego",
+    "appDescription": "Darmowy pacer do oddychania z częstotliwością rezonansową (koherentnego) w tempie 4,5–6,5 oddechu na minutę, z sygnałami dźwiękowymi, długością sesji i protokołem wyboru tempa."
+  },
+  "breadcrumb": { "home": "Strona główna", "tools": "Narzędzia", "current": "Oddychanie rezonansowe" },
+  "h1": "Oddychanie rezonansowe",
+  "capsule": "Oddychanie rezonansowe to powolne, równe oddychanie we własnym tempie — zwykle od 4,5 do 6,5 oddechu na minutę — przy którym rytm serca i oddech zgrywają się ze sobą, a zmienność rytmu serca (HRV) waha się najmocniej. Wybierz tempo, naciśnij start i oddychaj z kołem; każde tempo testuj ok. 2 minuty i zostań przy tym, które jest najpłynniejsze.",
+  "imageAlt": "Pacer oddychania rezonansowego — oddychaj z kołem w tempie 4,5–6,5 oddechu na minutę, darmowe narzędzie ONDA Life",
+  "ui": {
+    "height": "Wzrost (cm) — opcjonalnie",
+    "heightPh": "np. 178",
+    "estimate": "Punkt wyjścia: {{band}} → użyj {{bpm}}/min",
+    "rate": "Tempo oddechu (oddechy na minutę)",
+    "perMin": "{{n}}/min",
+    "pacing": "{{s}} s wdech · {{s}} s wydech",
+    "in": "Wdech",
+    "out": "Wydech",
+    "press": "Naciśnij start",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "duration": "Sesja",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Sygnały dźwiękowe",
+    "remaining": "Zostało {{m}}:{{s}}",
+    "done": "Gotowe. Jak się oddychało w tym tempie — płynnie i lekko, czy trochę na siłę?",
+    "again": "Jeszcze raz"
+  },
+  "bands": {
+    "short": "≈ 6,0–6,5 oddechu/min",
+    "mid": "≈ 5,5–6,0 oddechu/min",
+    "tall": "≈ 5,0–5,5 oddechu/min"
+  },
+  "stepsTitle": "Jak znaleźć swoje tempo rezonansowe",
+  "steps": [
+    "Zacznij od 6,5 oddechu na minutę i oddychaj z kołem przez ok. 2 minuty — wdech i wydech nosem, równej długości, bez forsowania.",
+    "Schodź kolejno do 6,0, 5,5, 5,0 i 4,5, po ok. 2 minuty, z krótką przerwą na zwykły oddech pomiędzy.",
+    "Zostań przy tempie, które jest najpłynniejsze i najbardziej cię uspokaja — nie przy najwolniejszym, jakie dasz radę utrzymać.",
+    "Ćwicz w tym tempie 10–20 minut dziennie. Jeśli masz pas piersiowy lub zegarek pokazujący HRV uderzenie po uderzeniu, wybierz tempo, przy którym fale tętna są największe i najbardziej regularne."
+  ],
+  "safety": "Wartość oparta na wzroście to tylko orientacyjny punkt wyjścia, a nie twoje rzeczywiste tempo rezonansowe. Narzędzie edukacyjne, nie wyrób medyczny. Jeśli zakręci ci się w głowie, przerwij i oddychaj normalnie; przy chorobach serca lub płuc albo w ciąży ćwicz łagodnie.",
+  "cta": "Z Apple Watch ONDA pokazuje na żywo wynik koherencji podczas oddychania — sygnał zwrotny, który pomaga zauważyć, jaki rytm uspokaja twoje serce. Z kamery pokazuje tętno.",
+  "sections": [
+    {
+      "h2": "Czym jest oddychanie z częstotliwością rezonansową?",
+      "body": "Każdy człowiek ma takie wolne tempo oddechu, przy którym rytm serca, oddech i baroreflex — mechanizm regulacji ciśnienia krwi — poruszają się zgodnie. Przy tej częstotliwości rezonansowej tętno rośnie przy każdym wdechu i spada przy każdym wydechu z największą możliwą amplitudą, dlatego HRV osiąga szczyt (Lehrer 2003). U większości dorosłych mieści się ono między 4,5 a 6,5 oddechu na minutę. Oddychanie w tym tempie to podstawowa technika biofeedbacku HRV, stosowana w badaniach nad stresem, lękiem i ciśnieniem krwi."
+    },
+    {
+      "h2": "Oddychanie rezonansowe a oddychanie koherentne",
+      "body": "Oddychanie koherentne oznacza zwykle stały rytm ok. 5–6 oddechów na minutę — np. 5,5 sekundy wdechu i 5,5 wydechu — co wypada blisko tempa rezonansowego większości osób. Oddychanie rezonansowe to wersja spersonalizowana: testujesz kilka temp i zostajesz przy tym, które najlepiej pasuje do twojego organizmu. Jeśli nie chcesz testować, oddychanie koherentne w tempie 5,5 to rozsądny wybór. Wypróbuj je w [Timer oddechowy: oddychanie pudełkowe, 4-7-8 i koherentne](/tools/breathing) albo przeczytaj [przewodnik po oddychaniu koherentnym](/articles/coherent-breathing-guide)."
+    },
+    {
+      "h2": "Czy 6 oddechów na minutę obniża stres i podnosi HRV?",
+      "body": "Oddychanie w tempie ok. 6 oddechów na minutę niezawodnie zwiększa zmienność rytmu serca w trakcie ćwiczenia; w kontrolowanym badaniu (Steffen 2017) poprawiło też nastrój w porównaniu ze spokojnym siedzeniem. Regularna praktyka przez kilka tygodni wiąże się z lepszą pracą baroreflexu, a w niektórych badaniach z umiarkowanie niższym ciśnieniem krwi. To dobrze przebadana technika relaksacyjna, a nie samodzielna metoda leczenia. Więcej: [wolne oddychanie a ciśnienie krwi](/articles/high-blood-pressure-slow-breathing)."
+    },
+    {
+      "h2": "Jak długo i jak często ćwiczyć?",
+      "body": "Protokoły badawcze zwykle zakładają 10–20 minut dziennie, często w dwóch sesjach, przez kilka tygodni. Jeśli wolne oddychanie jest dla ciebie nowe, zacznij od 5 minut, oddychaj łagodnie i bezgłośnie i nie oddychaj głębiej, niż jest ci wygodnie — zbyt głębokie oddechy w wolnym tempie mogą wywołać zawroty głowy. Wielu osobom najłatwiej ćwiczyć wieczorem lub przed stresującym zadaniem."
+    }
+  ],
+  "faqTitle": "Oddychanie rezonansowe — najczęstsze pytania",
+  "faq": [
+    { "q": "Czym jest oddychanie z częstotliwością rezonansową?", "a": "To powolne oddychanie we własnym tempie — zwykle 4,5–6,5 oddechu na minutę — przy którym rytm serca i oddech poruszają się zgodnie, a HRV waha się najmocniej. To podstawowa technika biofeedbacku HRV." },
+    { "q": "Jak znaleźć swoje tempo rezonansowe?", "a": "Oddychaj przez ok. 2 minuty w każdym tempie: 6,5, 6,0, 5,5, 5,0 i 4,5 oddechu na minutę, i zostań przy tym, które jest najpłynniejsze. Z urządzeniem pokazującym HRV uderzenie po uderzeniu wybierz tempo z największymi, najbardziej regularnymi falami tętna." },
+    { "q": "Czy oddychanie rezonansowe to to samo co oddychanie koherentne?", "a": "Prawie. Oddychanie koherentne ma stałe tempo ok. 5–6 oddechów na minutę; oddychanie rezonansowe dopasowuje to tempo do twojego organizmu." },
+    { "q": "Czy wzrost wpływa na częstotliwość rezonansową?", "a": "Osoby wyższe i mężczyźni mają zwykle nieco wolniejsze tempo rezonansowe, dlatego to narzędzie proponuje punkt wyjścia na podstawie wzrostu. To tylko wskazówka — przetestuj tempa, żeby znaleźć swoje." },
+    { "q": "Jak długo ćwiczyć oddychanie rezonansowe?", "a": "W badaniach typowo 10–20 minut dziennie przez kilka tygodni. Zacznij od 5 minut i oddychaj łagodnie." },
+    { "q": "Czy oddychanie rezonansowe podnosi HRV?", "a": "Tak, HRV rośnie podczas oddychania w tym tempie, a regularna praktyka wiąże się z lepszą pracą baroreflexu i spokojniejszym nastrojem. Wspiera opiekę medyczną, ale jej nie zastępuje." }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Przy indywidualnym tempie — zwykle 4,5–6,5 oddechu na minutę — oscylacje tętna, oddech i baroreflex wchodzą w fazę, a amplituda HRV osiąga szczyt (Lehrer 2003). Standardowo znajduje się je, oddychając w każdym tempie przez kilka minut i mierząc, które daje największe i najpłynniejsze oscylacje tętna (Shaffer 2020). Bez czujnika rozsądnym wyborem jest tempo, które wydaje się najpłynniejsze i najbardziej uspokajające. Sugestia oparta na wzroście to tylko orientacyjny punkt wyjścia. Narzędzie edukacyjne, nie wyrób medyczny.",
+  "sourcesContributes": [
+    "Praca podstawowa, która ugruntowała koncepcję częstotliwości rezonansowej i jej mechanizm baroreflexu.",
+    "Protokół wyznaczania indywidualnej częstotliwości rezonansowej przez testowanie serii temp oddechu.",
+    "Oddychanie z częstotliwością rezonansową (~6/min) podniosło HRV i poprawiło nastrój w porównaniu ze spokojnym siedzeniem."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "timer": "Timer oddechowy (pudełkowe, 4-7-8, koherentne)",
+    "hrv": "Kalkulator HRV według wieku",
+    "guide": "Przewodnik po oddychaniu koherentnym"
+  }
+}
