@@ -207,6 +207,9 @@ const OndaLevel1 = () => {
     return next;
   });
   const isCollapsed = (id: string) => !!collapsedBlocks[id];
+  // Tap anywhere on a COLLAPSED block to expand it (the corner dot still toggles
+  // both ways). No-op when expanded, so inner buttons keep working normally.
+  const onExpandTap = (id: string) => () => { if (isCollapsed(id)) toggleCollapse(id); };
   // The toggle in the block's very top-right CORNER, inside a large transparent
   // hit area (~56px). COLLAPSED → nothing visible (clean bar); EXPANDED → a hollow
   // ring (кружочок). The hit area stays in both states, so tapping the corner still
@@ -6566,6 +6569,7 @@ const OndaLevel1 = () => {
       <div
         key={practice.id}
         ref={el => practiceRefs.current[practice.id] = el}
+        onClick={collapsible ? onExpandTap(`practice_${practice.id}`) : undefined}
         className={`relative rounded-lg p-6 border transition-all flex flex-col ${
           isLight ? 'bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60' : 'bg-black/40 backdrop-blur-sm'
         } ${
@@ -6597,7 +6601,7 @@ const OndaLevel1 = () => {
             ? 'border-fuchsia-500/40 hover:border-fuchsia-400/60'
             : 'border-purple-500/30 hover:border-purple-400/50'
         }`}
-        style={collapsible ? collapseStyle(`practice_${practice.id}`, 45, 9) : undefined}
+        style={collapsible ? { ...collapseStyle(`practice_${practice.id}`, 45, 9), ...(compact ? { cursor: 'pointer' } : {}) } : undefined}
       >
         {collapsible && collapseDot(`practice_${practice.id}`)}
         {/* Task 84: no name-badge/ring on the recommended practice — it's simply
@@ -6982,7 +6986,7 @@ const OndaLevel1 = () => {
             coherence hero lower down becomes plain tiles. Everything from the
             Timeline button on is IDENTICAL to detailed (shared render). */}
         {appMode === 'simple' ? (
-          <SimpleHero light={isLight} traffic={trafficState} />
+          <SimpleHero light={isLight} traffic={trafficState} onRestore={trafficState.light !== 'green' ? () => startRecommendedPractice(trafficState.metric ?? null) : undefined} />
         ) : (
         <>
         {/* ── My Baseline — the anchor of the home, first in view on open ──
@@ -7022,6 +7026,8 @@ const OndaLevel1 = () => {
                 trafficLight={trafficState.light}
                 statusTitle={trafficState.light !== 'green' ? trafficCopy(t, trafficState).title : undefined}
                 statusBody={trafficState.light !== 'green' ? trafficCopy(t, trafficState).body : undefined}
+                onRestore={trafficState.light !== 'green' ? () => startRecommendedPractice(trafficState.metric ?? null) : undefined}
+                restoreLabel={t('recommend.restore', 'Восстановить')}
               />
             </div>
             {/* Status line (green reassurance / yellow-red state) lives INSIDE the card, under the feet. */}
@@ -7128,11 +7134,11 @@ const OndaLevel1 = () => {
                 <PulseBreathTiles light={isLight} heartRate={displayHeartRate} breathing={vitalsData.br ?? null} />
               ) : (
               /* WATCH → Coherence hero (heart–breath synchrony; never medical). */
-              <div className={`relative rounded-2xl p-6 ${
+              <div onClick={onExpandTap('coherence')} className={`relative rounded-2xl p-6 ${
                 isLight
                   ? `bg-white/55 backdrop-blur-xl shadow-lg shadow-indigo-100/60 ${glow.panelBorder}`
                   : 'bg-black/20 backdrop-blur-sm border border-white/10'
-              }`} style={collapseStyle('coherence', 45, 8)}>
+              } ${isCollapsed('coherence') ? 'cursor-pointer' : ''}`} style={collapseStyle('coherence', 45, 8)}>
                 {/* p-6 so the title's left edge lines up with the practice cards. */}
                 {collapseDot('coherence')}
                 {/* Collapsed reads like a practice tile: title centred on the
@@ -7229,7 +7235,7 @@ const OndaLevel1 = () => {
           }[colorState];
           return (
             <div className="mb-4 flex flex-col items-center">
-              <div className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${pal.shell} ${isLight ? 'backdrop-blur-xl' : 'backdrop-blur-sm'}`} style={collapseStyle('recommendations', 45, 8)} data-testid="recommendations-block" data-mode={a ? 'signal' : 'static'} data-color={colorState}>
+              <div onClick={onExpandTap('recommendations')} className={`relative w-full max-w-[360px] rounded-lg p-6 border text-left ${pal.shell} ${isLight ? 'backdrop-blur-xl' : 'backdrop-blur-sm'} ${isCollapsed('recommendations') ? 'cursor-pointer' : ''}`} style={collapseStyle('recommendations', 45, 8)} data-testid="recommendations-block" data-mode={a ? 'signal' : 'static'} data-color={colorState}>
                 {collapseDot('recommendations')}
                 <h3 className={`text-xl sm:text-2xl font-bold mb-2 pr-6 ${pal.title}`}>{t('baseline.setup_title', 'Рекомендации')}</h3>
                 {!a ? (
@@ -7364,7 +7370,7 @@ const OndaLevel1 = () => {
           {/* Light highlight — a soft indigo ring + gentle halo lifts the
               Your Progress (HRV) card above the surrounding blocks without
               shouting. */}
-          <div className={`relative rounded-lg p-6 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'}`} style={collapseStyle('progress', 45, 8)}>
+          <div onClick={onExpandTap('progress')} className={`relative rounded-lg p-6 border ring-1 ${isLight ? `bg-white/65 backdrop-blur-xl ring-indigo-300/70 shadow-[0_4px_24px_rgba(99,102,241,0.18)] ${glow.panelBorder}` : 'bg-indigo-500/10 backdrop-blur-sm border-indigo-400/25 ring-indigo-400/30 shadow-[0_0_24px_rgba(99,102,241,0.20)]'} ${isCollapsed('progress') ? 'cursor-pointer' : ''}`} style={collapseStyle('progress', 45, 8)}>
             {collapseDot('progress')}
             <div className={`text-xl sm:text-2xl font-bold mb-3 pr-6 ${isLight ? 'text-slate-700' : 'text-white'}`}>
               {t('home.progress.title')}
