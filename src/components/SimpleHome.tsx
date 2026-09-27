@@ -43,7 +43,7 @@ export function trafficCopy(t: TFunction, traffic: TrafficState): { title: strin
  */
 
 /** The 🟢/🟡/🔴 hero that replaces the baseline card at the top of compact mode. */
-export function SimpleHero({ light, traffic }: { light: boolean; traffic: TrafficState }) {
+export function SimpleHero({ light, traffic, onRestore }: { light: boolean; traffic: TrafficState; onRestore?: () => void }) {
   const { t } = useTranslation();
 
   const P = {
@@ -65,6 +65,19 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
             already showing the deviation, so "we'll tell you" no longer fits. */}
         {traffic.light === 'green' && (
           <p data-testid="reassure-line" className={`mt-4 pt-4 border-t text-xs leading-snug ${light ? 'text-slate-400 border-slate-200/70' : 'text-white/40 border-white/10'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
+        )}
+        {/* Deviation → a Restore CTA that opens the recovery practice (same as the
+            Recommendations block's practice). */}
+        {traffic.light !== 'green' && onRestore && (
+          <button
+            type="button"
+            onClick={onRestore}
+            data-testid="simple-restore"
+            className="mt-4 w-full rounded-xl py-2.5 text-sm font-bold text-white transition-all"
+            style={{ background: traffic.light === 'red' ? '#b45309' : '#f59e0b' }}
+          >
+            {t('recommend.restore', 'Восстановить')}
+          </button>
         )}
       </div>
     </div>

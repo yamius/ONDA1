@@ -126,7 +126,7 @@ export function BaselineClosingFooter({ data, source, light }: { data: BaselineD
   );
 }
 
-export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, todayData, light, trafficLight, statusTitle, statusBody }: {
+export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, todayData, light, trafficLight, statusTitle, statusBody, onRestore, restoreLabel }: {
   data: BaselineData | null;
   source: BaselineSource;
   emptyHint?: string;
@@ -137,6 +137,10 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
   trafficLight?: 'green' | 'yellow' | 'red';
   statusTitle?: string;
   statusBody?: string;
+  /** On deviation, a "Restore" button under the feet that opens the recovery
+   *  practice (the same one the Recommendations block offers). */
+  onRestore?: () => void;
+  restoreLabel?: string;
   /** Light theme → the light figure + light scrims + dark text; else the dark set. */
   light?: boolean;
   /** Live pulse (Watch/camera) — when present the coral hero shows it in real
@@ -256,6 +260,20 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
         <div className="absolute w-full px-8 text-center" style={{ bottom: '3%' }}>
           <p style={{ color: trafficLight === 'red' ? 'rgb(217,119,6)' : 'rgb(245,158,11)', fontSize: '3.7cqw', fontWeight: 700, lineHeight: 1.2, textShadow: p.cloud }}>{statusTitle}</p>
           {statusBody && <p style={{ color: p.white, fontSize: '2.9cqw', lineHeight: 1.35, marginTop: '0.8cqw', textShadow: p.cloud }}>{statusBody}</p>}
+          {onRestore && (
+            <button
+              type="button"
+              onClick={(e) => { e.stopPropagation(); onRestore(); }}
+              data-testid="baseline-restore"
+              style={{
+                marginTop: '2.6cqw', padding: '2cqw 6cqw', borderRadius: '999px', border: 'none', cursor: 'pointer',
+                fontSize: '3.2cqw', fontWeight: 700, color: '#fff',
+                background: trafficLight === 'red' ? 'rgb(180,83,9)' : 'rgb(245,158,11)',
+              }}
+            >
+              {restoreLabel}
+            </button>
+          )}
         </div>
       ) : null}
     </div>
