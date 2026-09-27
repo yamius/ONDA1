@@ -29,8 +29,8 @@ const LS_CHECKINS_ENABLED = 'onda_checkins_enabled';         // calm check-ins (
 // Streak: 2000 — single shot, overwritten on each re-plan.
 const DAILY_ID_BASE = 1000;
 const STREAK_ID = 2000;
-// Calm check-ins (task 16): a single upcoming calm notification, cancel+reschedule.
-const CHECKIN_ID = 3000;
+// Calm check-ins (task 16): Segment A is native; Segment B is a scheduled-ahead
+// series on IDs 4000+ (see CHECKIN_B_ID_BASE below).
 
 // === Copy variants ===
 // Each variant is referenced by index so analytics can attribute opens to a
@@ -249,9 +249,17 @@ export async function cancelStreakNudge(): Promise<void> {
 }
 
 // === Calm check-ins (task 16) ===
+// Segment A (watch) is decided + posted NATIVELY (HealthKitHeartRatePlugin) so it
+// reaches non-openers even while the app is closed. Segment B (no watch) is a
+// SERIES scheduled AHEAD here: on each open we (re)plan the next few B1/B2
+// reminders so they still arrive for people who don't come back.
 
 export type CheckinNotifType = 'A1' | 'A2' | 'A3' | 'B1' | 'B2';
 export type CheckinNotifSegment = 'watch' | 'no_watch';
+
+const CHECKIN_B_ID_BASE = 4000;      // Segment-B series 4000..4000+CHECKIN_B_COUNT-1
+const CHECKIN_B_COUNT = 4;           // how many to plan ahead (well under iOS' 64-pending cap)
+const CHECKIN_B_INTERVAL_DAYS = 3;   // spacing between B reminders
 
 export function getCheckinsEnabled(): boolean {
   const v = localStorage.getItem(LS_CHECKINS_ENABLED);
@@ -260,59 +268,59 @@ export function getCheckinsEnabled(): boolean {
 
 export async function setCheckinsEnabled(enabled: boolean): Promise<void> {
   localStorage.setItem(LS_CHECKINS_ENABLED, enabled ? 'true' : 'false');
-  if (!enabled) await cancelCheckins();
+  if (!enabled) await cancelCheckinSeriesB();
 }
 
 function checkinTitle(): string {
   return i18n.t('reminders.checkin_title', 'ONDA');
 }
 
-function tCheckin(type: CheckinNotifType, restingPulse?: number): string {
-  const key = `reminders.checkin_${type.toLowerCase()}`; // reminders.checkin_a1 …
-  return i18n.t(key, { x: restingPulse ?? '', defaultValue: i18n.t('reminders.checkin_b1', 'A short practice keeps your rhythm going.') });
-}
-
-function nextAt(hour: number, minute: number): Date {
-  const today = nextOccurrence(hour, minute, 0);
-  return today > new Date() ? today : nextOccurrence(hour, minute, 1);
+function tCheckin(type: CheckinNotifType): string {
+  const key = `reminders.checkin_${type.toLowerCase()}`; // reminders.checkin_b1 …
+  return i18n.t(key, { defaultValue: i18n.t('reminders.checkin_b1', 'A short practice keeps your rhythm going.') });
 }
 
 /**
- * Schedule the single upcoming calm check-in. Segment A lands in the morning
- * (after the night sync); Segment B at a calm daytime hour — never at night.
- * Idempotent: cancels the previous one first.
+ * (Re)plan the Segment-B series: the next CHECKIN_B_COUNT reminders at a calm
+ * daytime hour, CHECKIN_B_INTERVAL_DAYS apart, alternating B1/B2 from
+ * `startVariant` (0 → B1, 1 → B2). The first is INTERVAL days out, so an active
+ * user (who keeps opening and re-planning) never actually receives one — it slides
+ * forward — while a non-opener gets the whole series. Idempotent: cancels first.
  */
-export async function scheduleCheckin(opts: { type: CheckinNotifType; segment: CheckinNotifSegment; restingPulse?: number }): Promise<boolean> {
+export async function scheduleCheckinSeriesB(startVariant: 0 | 1): Promise<boolean> {
   if (!isSupported()) return false;
   const perm = await checkPermission();
   if (perm !== 'granted') return false;
   if (!getCheckinsEnabled()) return false;
 
-  const at = opts.segment === 'watch' ? nextAt(9, 0) : nextAt(13, 0);
-  try {
-    await LocalNotifications.cancel({ notifications: [{ id: CHECKIN_ID }] });
-    await LocalNotifications.schedule({
-      notifications: [
-        {
-          id: CHECKIN_ID,
-          title: checkinTitle(),
-          body: tCheckin(opts.type, opts.restingPulse),
-          schedule: { at, allowWhileIdle: true },
-          extra: { kind: 'checkin', checkin_type: opts.type, segment: opts.segment },
-        },
-      ],
+  await cancelCheckinSeriesB();
+  const notifications: ScheduleOptions['notifications'] = [];
+  for (let i = 0; i < CHECKIN_B_COUNT; i++) {
+    const at = nextOccurrence(13, 0, (i + 1) * CHECKIN_B_INTERVAL_DAYS);
+    const variant = ((startVariant + i) % 2) as 0 | 1;
+    const type: CheckinNotifType = variant === 0 ? 'B1' : 'B2';
+    notifications.push({
+      id: CHECKIN_B_ID_BASE + i,
+      title: checkinTitle(),
+      body: tCheckin(type),
+      schedule: { at, allowWhileIdle: true },
+      extra: { kind: 'checkin', checkin_type: type, segment: 'no_watch' as CheckinNotifSegment },
     });
+  }
+  try {
+    await LocalNotifications.schedule({ notifications });
     return true;
   } catch (e) {
-    console.warn('[notifications] checkin schedule failed', e);
+    console.warn('[notifications] checkin B series schedule failed', e);
     return false;
   }
 }
 
-export async function cancelCheckins(): Promise<void> {
+export async function cancelCheckinSeriesB(): Promise<void> {
   if (!isSupported()) return;
+  const ids = Array.from({ length: CHECKIN_B_COUNT }, (_, i) => ({ id: CHECKIN_B_ID_BASE + i }));
   try {
-    await LocalNotifications.cancel({ notifications: [{ id: CHECKIN_ID }] });
+    await LocalNotifications.cancel({ notifications: ids });
   } catch {
     /* ignore */
   }

@@ -20,6 +20,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "queryBaseline", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryBaselineCorridors", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "setAnomalyStrings", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "setCheckinStrings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "scheduleTestPush", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportPdf", returnType: CAPPluginReturnPromise),
@@ -703,6 +704,22 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         call.resolve(["ok": true])
     }
 
+    /// Calm check-ins (task 16) — Segment A (watch) is decided + posted NATIVELY in
+    /// the background so it reaches people who don't open the app. JS owns the 5
+    /// languages, so it hands us the localized A1/A2/A3 templates + whether A3 is
+    /// eligible right now (simple mode & install week 2) + the on/off toggle. The
+    /// {x} token in A1 is filled with the avg resting pulse of the steady nights.
+    @objc func setCheckinStrings(_ call: CAPPluginCall) {
+        let d = UserDefaults.standard
+        d.set(call.getString("title") ?? "ONDA", forKey: "checkin_title")
+        d.set(call.getString("a1") ?? "", forKey: "checkin_a1")
+        d.set(call.getString("a2") ?? "", forKey: "checkin_a2")
+        d.set(call.getString("a3") ?? "", forKey: "checkin_a3")
+        d.set(call.getBool("enabled") ?? true, forKey: "checkin_enabled")
+        d.set(call.getBool("a3Eligible") ?? false, forKey: "checkin_a3_eligible")
+        call.resolve(["ok": true])
+    }
+
     /// Register HealthKit background delivery + observers so the app is woken in
     /// the morning when the night's data syncs; the observer evaluates the
     /// corridor and posts a local notification if it deviates (throttled 2 days).
@@ -754,18 +771,25 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         }
         group.notify(queue: .main) { [weak self] in
             guard let self = self else { finish(); return }
-            // Throttle: ≤ 1 push / 2 days.
+            var postedSignalNow = false
+            // Signal throttle: ≤ 1 push / 2 days. When throttled we still fall
+            // through to the calm check-in evaluation below (it has its own guards).
             let last = UserDefaults.standard.double(forKey: "anomaly_last_signal_at")
-            if last > 0 && now.timeIntervalSince1970 - last < 2 * 24 * 60 * 60 { finish(); return }
-
-            var best: (metric: String, latest: Double, lo: Double, hi: Double, mag: Double)? = nil
-            for s in signals {
-                guard let hit = self.nativeDetectAnomaly(byKey[s.key] ?? [], metric: s.key) else { continue }
-                if best == nil || hit.mag > best!.mag { best = hit }
+            let throttled = last > 0 && now.timeIntervalSince1970 - last < 2 * 24 * 60 * 60
+            if !throttled {
+                var best: (metric: String, latest: Double, lo: Double, hi: Double, mag: Double)? = nil
+                for s in signals {
+                    guard let hit = self.nativeDetectAnomaly(byKey[s.key] ?? [], metric: s.key) else { continue }
+                    if best == nil || hit.mag > best!.mag { best = hit }
+                }
+                if let a = best {
+                    UserDefaults.standard.set(now.timeIntervalSince1970, forKey: "anomaly_last_signal_at")
+                    self.postAnomalyNotification(metric: a.metric, value: a.latest, lo: a.lo, hi: a.hi)
+                    postedSignalNow = true
+                }
             }
-            guard let a = best else { finish(); return }
-            UserDefaults.standard.set(now.timeIntervalSince1970, forKey: "anomaly_last_signal_at")
-            self.postAnomalyNotification(metric: a.metric, value: a.latest, lo: a.lo, hi: a.hi)
+            // Calm check-ins, Segment A (task 16) — never on a signal day (§4).
+            self.evaluateCheckinAndNotify(byKey: byKey, postedSignalNow: postedSignalNow, now: now)
             finish()
         }
     }
@@ -815,6 +839,117 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         // notification itself stays in Notification Center until acted on).
         if #available(iOS 15.0, *) { content.interruptionLevel = .timeSensitive }
         let req = UNNotificationRequest(identifier: "onda_anomaly", content: content, trigger: nil) // deliver now
+        UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+    }
+
+    // ── Calm check-ins, Segment A (task 16) ──────────────────────────────────
+    // Decided + posted NATIVELY from the same background delivery as the signals,
+    // by the SAME corridor rule as src/lib/checkins.ts (duplicated logic, kept in
+    // sync with that file), so steady-norm nudges reach people who don't open the
+    // app. A message fires ONLY when there are real nightly values for the run —
+    // the presence of a watch alone never triggers it.
+
+    /// Mirror of anomaly.ts isNightOut — a night is "out" of its corridor.
+    private func nativeIsNightOut(_ value: Double, mean: Double, sd: Double, metric: String) -> Bool {
+        guard sd > 0 else { return false }
+        let delta = value - mean
+        if abs(delta) / sd < 1.5 { return false }
+        switch metric {
+        case "rhr": return delta > 0 && delta >= 5
+        case "rr": return delta > 0 && delta >= 2
+        case "hrv": return delta < 0 && mean > 0 && (-delta / mean) >= 0.15
+        default: return false
+        }
+    }
+
+    /// Mirror of checkins.ts steadyNights: trailing consecutive nights where NO
+    /// metric is out; min across present metrics (≥2 values); 0 until each present
+    /// metric has ≥7 nights (base building). Requires REAL nightly data.
+    private func nativeSteadyNights(_ byKey: [String: [Double]]) -> Int {
+        var minRun = Int.max
+        var anyPresent = false
+        for m in ["rhr", "hrv", "rr"] {
+            let series = byKey[m] ?? []
+            if series.count < 2 { continue }          // metric absent
+            anyPresent = true
+            if series.count < 7 { return 0 }          // MIN_NIGHTS — base still building
+            let mean = series.reduce(0, +) / Double(series.count)
+            let variance = series.reduce(0) { $0 + pow($1 - mean, 2) } / Double(series.count - 1)
+            let sd = variance.squareRoot()
+            if !(sd > 0) { return 0 }
+            var run = 0
+            for v in series.reversed() {
+                if !self.nativeIsNightOut(v, mean: mean, sd: sd, metric: m) { run += 1 } else { break }
+            }
+            minRun = min(minRun, run)
+        }
+        if !anyPresent { return 0 }
+        return minRun == Int.max ? 0 : minRun
+    }
+
+    private func checkinDayKey(_ date: Date) -> String {
+        let f = DateFormatter()
+        f.dateFormat = "yyyy-MM-dd"
+        f.calendar = Calendar.current
+        f.locale = Locale(identifier: "en_US_POSIX")
+        f.timeZone = TimeZone.current
+        return f.string(from: date)
+    }
+
+    /// Decide + post the Segment-A calm message. Guards mirror checkins.ts:
+    /// never on a signal day, ≤ 1 calm message/day, send only when the 4-steady-night
+    /// milestone increases (alternating A1/A2, one-time A3 when JS says it's eligible).
+    private func evaluateCheckinAndNotify(byKey: [String: [Double]], postedSignalNow: Bool, now: Date) {
+        let d = UserDefaults.standard
+        guard d.bool(forKey: "checkin_enabled") else { return }
+        if postedSignalNow { return }                                  // signal day (this run)
+        let lastSignal = d.double(forKey: "anomaly_last_signal_at")
+        if lastSignal > 0 && Calendar.current.isDate(Date(timeIntervalSince1970: lastSignal), inSameDayAs: now) { return }
+        let today = self.checkinDayKey(now)
+        if d.string(forKey: "checkin_last_day") == today { return }    // ≤ 1/day
+
+        let steady = self.nativeSteadyNights(byKey)
+        let milestone = steady / 4
+        let stored = d.integer(forKey: "checkin_milestone")
+        if milestone < stored { d.set(milestone, forKey: "checkin_milestone") }  // run broke → allow re-trigger
+        if milestone < 1 || milestone <= stored { return }
+        d.set(milestone, forKey: "checkin_milestone")
+
+        let title = d.string(forKey: "checkin_title") ?? "ONDA"
+        var body = ""
+        var type = ""
+        if d.bool(forKey: "checkin_a3_eligible") && !d.bool(forKey: "checkin_a3_sent") {
+            type = "A3"
+            body = d.string(forKey: "checkin_a3") ?? ""
+            d.set(true, forKey: "checkin_a3_sent")               // A3 replaces this turn, variant unchanged
+        } else {
+            let variant = d.integer(forKey: "checkin_variant")  // 0 → A1, 1 → A2
+            if variant == 0 {
+                type = "A1"
+                let rhr = byKey["rhr"] ?? []
+                let tail = Array(rhr.suffix(4))
+                let avg = tail.isEmpty ? 0 : Int((tail.reduce(0, +) / Double(tail.count)).rounded())
+                let tmpl = d.string(forKey: "checkin_a1") ?? ""
+                body = tmpl.replacingOccurrences(of: "{{x}}", with: String(avg)).replacingOccurrences(of: "{x}", with: String(avg))
+            } else {
+                type = "A2"
+                body = d.string(forKey: "checkin_a2") ?? ""
+            }
+            d.set(variant == 0 ? 1 : 0, forKey: "checkin_variant")
+        }
+        d.set(today, forKey: "checkin_last_day")
+        if body.isEmpty { return }
+        self.postCheckinNotification(title: title, body: body, type: type)
+    }
+
+    private func postCheckinNotification(title: String, body: String, type: String) {
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        content.userInfo = ["checkin_type": type, "segment": "watch"]
+        // Calm — NOT time-sensitive (a "you're fine" nudge must never break Focus/DND).
+        let req = UNNotificationRequest(identifier: "onda_checkin", content: content, trigger: nil)
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
     }
 

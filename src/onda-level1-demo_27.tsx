@@ -72,9 +72,10 @@ import {
   requestPermission as requestNotificationPermission,
   checkPermission as checkNotificationPermission,
   getCheckinsEnabled,
-  scheduleCheckin,
+  scheduleCheckinSeriesB,
+  cancelCheckinSeriesB,
 } from './services/notifications';
-import { decideCheckin, loadCheckinState, saveCheckinState, dayKey as checkinDayKey, type CheckinSegment } from './lib/checkins';
+import { loadCheckinState, saveCheckinState, dayKey as checkinDayKey } from './lib/checkins';
 import { calculatePracticeOnd } from './utils/ondCalculator';
 import OndaWatch from './plugins/ondaWatch';
 import { useAnalytics } from './hooks/useAnalytics';
@@ -900,38 +901,28 @@ const OndaLevel1 = () => {
 
   // Anomaly evaluation (step 4). Once per session, when a watch is connected,
   // read the per-night corridors from HealthKit and check the latest night.
-  // Calm check-ins (task 16). Decide + schedule the single upcoming gentle nudge.
-  // Segment A (watch) is driven from the corridor effect with real signals;
-  // Segment B (no watch) from the streak reconcile effect with no signals. Both
-  // share the guards (never on a signal day, ≤1/day, B skips if active in 24h).
-  const reconcileCheckin = useCallback(async (segment: CheckinSegment, signals: SignalInput[]) => {
+  // Calm check-ins, Segment B (task 16, no watch). Plan the next few B1/B2
+  // reminders AHEAD on every open so they still arrive for people who don't come
+  // back; the first is 3 days out, so an active user's series keeps sliding and
+  // they effectively never receive one. Re-plan at most once/day. (Segment A is
+  // decided + posted natively in the HealthKit background delivery.)
+  const reconcileCheckinB = useCallback(async () => {
     if (!Capacitor.isNativePlatform()) return;
-    if (!getCheckinsEnabled()) return;
+    if (!getCheckinsEnabled()) { try { await cancelCheckinSeriesB(); } catch { /* noop */ } return; }
     const perm = await checkNotificationPermission();
-    if (perm !== 'granted') return; // Segment-B users are asked via the camera primer
+    if (perm !== 'granted') return; // no-watch users are asked via the camera primer
     const now = Date.now();
-    const anomalySt = loadAnomalyState();
-    const signalToday = anomalySt.lastSignalAt != null && checkinDayKey(anomalySt.lastSignalAt) === checkinDayKey(now);
-    let activeLast24h = false;
-    try {
-      const lastCam = Number(localStorage.getItem('onda_last_camera_at') || 0);
-      if (lastCam && now - lastCam < 86400000) activeLast24h = true;
-    } catch { /* noop */ }
-    if (!activeLast24h) {
-      activeLast24h = practiceHistory.some((p) => p?.date && now - new Date(p.date).getTime() < 86400000);
-    }
-    const installAgeDays = daysSinceFirstSeen().days_since_first_seen ?? 0;
-    const decision = decideCheckin(
-      { segment, signals, now, signalToday, activeLast24h, simpleMode: appMode === 'simple', installAgeDays },
-      loadCheckinState(),
-    );
-    saveCheckinState(decision.state);
-    if (decision.send) {
-      const ok = await scheduleCheckin({ type: decision.send.type, segment, restingPulse: decision.send.restingPulse });
-      if (ok) { try { track('checkin_push_sent', { segment, type: decision.send.type }); } catch { /* noop */ } }
-    }
+    const today = checkinDayKey(now);
+    const state = loadCheckinState();
+    if (state.lastBPlanDay === today) return; // already planned today
+    const startVariant = (state.bVariant ?? 0) as 0 | 1;
+    const ok = await scheduleCheckinSeriesB(startVariant);
+    if (!ok) return;
+    saveCheckinState({ ...state, bVariant: (startVariant === 0 ? 1 : 0) as 0 | 1, lastBPlanDay: today });
+    // One "sent" per plan day, tagged with the imminent occurrence's type.
+    try { track('checkin_push_sent', { segment: 'no_watch', type: startVariant === 0 ? 'B1' : 'B2' }); } catch { /* noop */ }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [practiceHistory, appMode]);
+  }, []);
 
   const anomalyEvaluatedRef = useRef(false);
   useEffect(() => {
@@ -982,9 +973,9 @@ const OndaLevel1 = () => {
         try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
         try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
       }
-      // Calm check-ins, Segment A (task 16): runs whether or not a signal fired —
-      // decideCheckin suppresses on a signal day via the freshly-saved lastSignalAt.
-      await reconcileCheckin('watch', signals);
+      // Calm check-ins, Segment A (task 16) is decided + posted NATIVELY from the
+      // HealthKit background delivery (see setCheckinStrings + startAnomalyMonitoring),
+      // so it reaches non-openers; nothing to schedule from JS here.
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [watchHeartRate.isConnected]);
@@ -1011,6 +1002,20 @@ const OndaLevel1 = () => {
           pushIntro: t('anomaly.push_intro', 'Твоё тело подало сигнал этой ночью. Загляни.'),
           pushShort: t('anomaly.push_short', 'Есть свежий сигнал.'),
         });
+        // Calm check-ins Segment A (task 16): hand the native evaluator the localized
+        // A1/A2/A3 templates (A1 keeps a literal {x} for native to fill with the avg
+        // resting pulse), plus the toggle + whether A3 is eligible right now.
+        try {
+          const installAge = daysSinceFirstSeen().days_since_first_seen ?? 0;
+          await HealthKitHeartRate.setCheckinStrings({
+            title: 'ONDA',
+            a1: t('reminders.checkin_a1', { x: '{x}', defaultValue: '4 nights in your usual range. Resting pulse steady around {x}. A short practice keeps the rhythm going.' }),
+            a2: t('reminders.checkin_a2', 'Another 4 steady nights — your body\'s in its normal range. Anything that helped? Note it in your journal.'),
+            a3: t('reminders.checkin_a3', 'Your body\'s in its rhythm. Want to see more? Switch to Expert mode in Settings.'),
+            enabled: getCheckinsEnabled(),
+            a3Eligible: appMode === 'simple' && installAge >= 8 && installAge <= 14,
+          });
+        } catch (e) { console.warn('[checkin] setCheckinStrings failed', e); }
         await HealthKitHeartRate.startAnomalyMonitoring();
       } catch (e) { console.warn('[anomaly] monitoring setup failed', e); }
     })();
@@ -4440,11 +4445,11 @@ const OndaLevel1 = () => {
         return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime() === todayKey;
       });
       reconcileStreakNudge({ streak: getStreak(), practicedToday });
-      // Calm check-ins, Segment B (no watch data). Segment A is handled in the
-      // corridor effect. Watch users are Segment A → skip B here.
+      // Calm check-ins, Segment B (no watch data) — plan the series ahead. Watch
+      // users are Segment A (handled natively) → skip B here.
       let watching = false;
       try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
-      if (!watching) reconcileCheckin('no_watch', []);
+      if (!watching) reconcileCheckinB();
     };
 
     reconcile();
@@ -4478,7 +4483,7 @@ const OndaLevel1 = () => {
       offOpened();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [practiceHistory, reconcileCheckin]);
+  }, [practiceHistory, reconcileCheckinB]);
 
   const getAverageQuality = () => {
     if (practiceHistory.length === 0) return 0;

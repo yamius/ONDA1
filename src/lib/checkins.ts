@@ -24,11 +24,15 @@ const STEADY_NIGHTS_PER_MESSAGE = 4; // Segment A cadence
 const SEGMENT_B_INTERVAL_DAYS = 3;   // Segment B cadence
 
 export interface CheckinState {
+  // Segment A (aMilestone/aVariant/a3Sent) is now owned by the NATIVE evaluator
+  // (HealthKitHeartRatePlugin) so it fires while the app is closed; these fields
+  // remain for the pure decideCheckin reference/tests but are unused by the app.
   aMilestone: number;       // highest floor(steadyNights/4) already messaged (resets when the run breaks)
   aVariant: 0 | 1;          // 0 → A1, 1 → A2 (alternates each A send; A3 does NOT advance it)
   a3Sent: boolean;          // the one-time expert-mode tip has been sent
-  bVariant: 0 | 1;          // 0 → B1, 1 → B2
-  lastBDay?: string;        // YYYY-MM-DD of the last Segment-B send (3-day cadence)
+  bVariant: 0 | 1;          // Segment-B series start variant (0 → B1, 1 → B2); flips each plan day
+  lastBDay?: string;        // YYYY-MM-DD of the last Segment-B send (decideCheckin single-send path)
+  lastBPlanDay?: string;    // YYYY-MM-DD the B series was last (re)planned (≤ 1 replan/day)
   lastCheckinDay?: string;  // YYYY-MM-DD of the last calm message of ANY kind (max 1/day)
 }
 
