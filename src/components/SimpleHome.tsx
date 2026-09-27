@@ -73,7 +73,7 @@ export function SimpleHero({ light, traffic, onRestore }: { light: boolean; traf
             type="button"
             onClick={onRestore}
             data-testid="simple-restore"
-            className="mt-4 w-full rounded-xl py-2.5 text-sm font-bold text-white transition-all"
+            className="mt-4 inline-block rounded-xl px-6 py-2.5 text-sm font-bold text-white transition-all"
             style={{ background: traffic.light === 'red' ? '#b45309' : '#f59e0b' }}
           >
             {t('recommend.restore', 'Восстановить')}
