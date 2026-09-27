@@ -1652,7 +1652,28 @@
       ],
       "imageAlt": "Hoe lang alcohol in je lichaam blijft: de formule van Widmark, afbraak van ~0,15‰ (0,015%) per uur, en waarom alleen tijd je promillage verlaagt.",
       "imageTitle": "[CLEARANCE_RATE]: Waarom alleen tijd je promillage verlaagt — ongeveer één glas per uur.",
-      "faq": []
+      "faq": [
+        {
+          "question": "Hoe lang blijft alcohol in je bloed?",
+          "answer": "Je lichaam breekt ongeveer 0,15‰ (0,015% BAC) per uur af — grofweg één glas per uur. Twee biertjes van 0,5 l zijn voor een man van 75 kg na ongeveer 5 uur weg; een avond met vijf of zes drankjes kan 8–12 uur of langer duren, vaak tot de volgende ochtend."
+        },
+        {
+          "question": "Hoe lang is alcohol aantoonbaar in adem, bloed en urine?",
+          "answer": "In adem en bloed tot ongeveer 12–24 uur na flink drinken. In urine tonen standaardtests het ongeveer 12–24 uur aan, en EtG-tests ongeveer 1–3 dagen. Haartests kunnen drinken tot ongeveer 90 dagen terug aantonen."
+        },
+        {
+          "question": "Word je sneller nuchter van slapen, koffie of water?",
+          "answer": "Nee. Alleen tijd verlaagt je promillage, omdat de lever in een bijna constant tempo werkt. Koffie kan je alerter laten voelen en water helpt tegen uitdroging, maar geen van beide versnelt de afbraak — en na een late avond kun je 's ochtends nog boven de limiet zitten."
+        },
+        {
+          "question": "Waarom blijft alcohol bij sommige mensen langer in het lichaam?",
+          "answer": "Lichaamsgewicht, geslacht, lichaamsvocht, genen, de gezondheid van je lever, medicijnen en eten bepalen allemaal hoe hoog je promillage oploopt en hoe lang het aanhoudt. Vrouwen en lichtere mensen bereiken met dezelfde drankjes meestal een hoger niveau, dus duurt het bij hen langer voordat het weg is."
+        },
+        {
+          "question": "Hoe lang heeft alcohol invloed op je slaap en herstel?",
+          "answer": "Zelfs één of twee drankjes kunnen die nacht je hartslag in rust verhogen, je HRV verlagen en je REM-slaap verkorten. Na flink drinken kunnen je herstelwaarden ook de nacht erna nog onder je normale niveau blijven."
+        }
+      ]
     }
   },
   "series": {

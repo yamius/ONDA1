@@ -1652,7 +1652,28 @@
       ],
       "imageAlt": "Ile alkohol utrzymuje się w organizmie: wzór Widmarka, trzeźwienie ~0,15‰ (0,015%) na godzinę i dlaczego tylko czas obniża promile we krwi.",
       "imageTitle": "[CLEARANCE_RATE]: Dlaczego tylko czas obniża promile we krwi — około jeden drink na godzinę.",
-      "faq": []
+      "faq": [
+        {
+          "question": "Ile alkohol utrzymuje się we krwi?",
+          "answer": "Organizm usuwa około 0,15‰ (0,015% BAC) na godzinę — mniej więcej jednego drinka na godzinę. Dwa piwa po 0,5 l u mężczyzny ważącego 75 kg to około 5 godzin; wieczór z pięcioma lub sześcioma drinkami może oznaczać 8–12 godzin lub dłużej, często aż do następnego ranka."
+        },
+        {
+          "question": "Jak długo alkohol jest wykrywalny w wydychanym powietrzu, krwi i moczu?",
+          "answer": "W wydychanym powietrzu i we krwi — do około 12–24 godzin po intensywnym piciu. W moczu standardowe testy wykrywają go przez około 12–24 godziny, a testy EtG przez około 1–3 dni. Badanie włosów może wykazać picie nawet do około 90 dni wstecz."
+        },
+        {
+          "question": "Czy sen, kawa lub woda przyspieszają trzeźwienie?",
+          "answer": "Nie. Stężenie alkoholu we krwi obniża tylko czas, bo wątroba pracuje w niemal stałym tempie. Kawa może sprawić, że poczujesz się bardziej rozbudzony, a woda pomaga przy odwodnieniu, ale żadne z nich nie przyspiesza eliminacji — po późnym wieczorze rano wciąż możesz mieć promile powyżej limitu."
+        },
+        {
+          "question": "Dlaczego u niektórych osób alkohol utrzymuje się dłużej?",
+          "answer": "Masa ciała, płeć, ilość wody w organizmie, genetyka, stan wątroby, leki i jedzenie wpływają na to, jak wysoko wzrasta stężenie alkoholu we krwi i jak długo się utrzymuje. Kobiety i osoby o mniejszej masie ciała zwykle osiągają wyższy poziom po tej samej liczbie drinków, więc trzeźwieją dłużej."
+        },
+        {
+          "question": "Jak długo alkohol wpływa na sen i regenerację?",
+          "answer": "Nawet jeden lub dwa drinki mogą podnieść nocne tętno spoczynkowe, obniżyć HRV i skrócić fazę REM tej nocy. Po większej ilości alkoholu wskaźniki regeneracji mogą pozostać poniżej normy także następnej nocy."
+        }
+      ]
     }
   },
   "series": {

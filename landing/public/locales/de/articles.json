@@ -1660,7 +1660,28 @@
       ],
       "imageAlt": "Wie lange Alkohol im Körper bleibt: die Widmark-Formel, Abbau von ~0,015 %/Stunde und warum nur Zeit den Blutalkohol senkt.",
       "imageTitle": "[CLEARANCE_RATE]: Warum nur Zeit den Blutalkohol senkt — etwa ein Getränk pro Stunde.",
-      "faq": []
+      "faq": [
+        {
+          "question": "Wie lange ist Alkohol im Blut nachweisbar?",
+          "answer": "Dein Körper baut etwa 0,15 ‰ (0,015 % BAC) pro Stunde ab — ungefähr ein Getränk pro Stunde. Zwei Bier à 0,5 l brauchen bei einem 75 kg schweren Mann etwa 5 Stunden; ein Abend mit fünf oder sechs Getränken kann 8–12 Stunden oder länger dauern, oft bis in den nächsten Morgen."
+        },
+        {
+          "question": "Wie lange kann man Alkohol in Atem, Blut und Urin nachweisen?",
+          "answer": "In Atem und Blut bis zu etwa 12–24 Stunden nach starkem Trinken. Im Urin weisen Standardtests ihn etwa 12–24 Stunden nach, EtG-Tests etwa 1–3 Tage. Haaranalysen können Alkoholkonsum bis zu etwa 90 Tage zurück zeigen."
+        },
+        {
+          "question": "Wird man durch Schlafen, Kaffee oder Wasser schneller nüchtern?",
+          "answer": "Nein. Nur die Zeit senkt den Blutalkohol, weil die Leber in einem nahezu konstanten Tempo arbeitet. Kaffee kann dich wacher fühlen lassen und Wasser hilft gegen Dehydrierung, aber beides beschleunigt den Abbau nicht — und nach einer langen Nacht kannst du morgens noch über dem Grenzwert liegen."
+        },
+        {
+          "question": "Warum bleibt Alkohol bei manchen Menschen länger im Körper?",
+          "answer": "Körpergewicht, Geschlecht, Körperwasser, Genetik, Lebergesundheit, Medikamente und Essen beeinflussen, wie hoch der Blutalkohol steigt und wie lange er anhält. Frauen und leichtere Menschen erreichen bei gleicher Menge meist einen höheren Wert und brauchen daher länger für den Abbau."
+        },
+        {
+          "question": "Wie lange beeinflusst Alkohol Schlaf und Erholung?",
+          "answer": "Schon ein oder zwei Getränke können in dieser Nacht den Ruhepuls erhöhen, die HRV senken und den REM-Schlaf verkürzen. Nach stärkerem Trinken können die Erholungswerte auch in der folgenden Nacht noch unter deinem Normalwert bleiben."
+        }
+      ]
     }
   },
   "series": {

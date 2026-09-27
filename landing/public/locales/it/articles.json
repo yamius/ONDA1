@@ -1652,7 +1652,28 @@
       ],
       "imageAlt": "Quanto tempo resta l'alcol nel corpo: la formula di Widmark, smaltimento di ~0,15‰ (0,015%) all'ora e perché solo il tempo abbassa il tasso alcolemico.",
       "imageTitle": "[CLEARANCE_RATE]: Perché solo il tempo abbassa il tasso alcolemico — circa un drink all'ora.",
-      "faq": []
+      "faq": [
+        {
+          "question": "Quanto tempo resta l'alcol nel sangue?",
+          "answer": "Il corpo smaltisce circa 0,15‰ (0,015% BAC) all'ora, cioè più o meno un drink all'ora. Due birre da 0,5 l richiedono circa 5 ore per un uomo di 75 kg; una serata da cinque o sei drink può richiedere 8–12 ore o più, spesso fino al mattino dopo."
+        },
+        {
+          "question": "Per quanto tempo l'alcol è rilevabile nell'alcoltest, nel sangue e nelle urine?",
+          "answer": "Nell'alito e nel sangue fino a circa 12–24 ore dopo una bevuta abbondante. Nelle urine i test standard lo rilevano per circa 12–24 ore, i test EtG per circa 1–3 giorni. Il test del capello può mostrare il consumo fino a circa 90 giorni."
+        },
+        {
+          "question": "Dormire, bere caffè o acqua fa smaltire l'alcol più in fretta?",
+          "answer": "No. Solo il tempo abbassa il tasso alcolemico, perché il fegato lavora a un ritmo quasi costante. Il caffè può farti sentire più sveglio e l'acqua aiuta contro la disidratazione, ma nessuno dei due accelera l'eliminazione — e dopo una serata fino a tardi puoi essere ancora oltre il limite la mattina."
+        },
+        {
+          "question": "Perché in alcune persone l'alcol resta più a lungo?",
+          "answer": "Peso corporeo, sesso, acqua corporea, genetica, salute del fegato, farmaci e cibo cambiano quanto sale il tasso alcolemico e quanto dura. Le donne e le persone più leggere di solito raggiungono un livello più alto con gli stessi drink, quindi impiegano più tempo a smaltirlo."
+        },
+        {
+          "question": "Per quanto tempo l'alcol influisce sul sonno e sul recupero?",
+          "answer": "Anche uno o due drink possono aumentare la frequenza cardiaca a riposo notturna, abbassare l'HRV e ridurre il sonno REM quella notte. Dopo una bevuta più pesante, gli indicatori di recupero possono restare sotto la tua norma anche la notte successiva."
+        }
+      ]
     }
   },
   "series": {

@@ -1652,7 +1652,28 @@
       ],
       "imageAlt": "Quanto tempo o álcool fica no corpo: a equação de Widmark, eliminação de ~0,15‰ (0,015%) por hora e por que só o tempo reduz o álcool no sangue.",
       "imageTitle": "[CLEARANCE_RATE]: Por que só o tempo reduz o álcool no sangue — cerca de uma dose por hora.",
-      "faq": []
+      "faq": [
+        {
+          "question": "Quanto tempo o álcool fica no sangue?",
+          "answer": "O corpo elimina cerca de 0,15‰ (0,015% de BAC) por hora — mais ou menos uma dose por hora. Duas cervejas de 0,5 l levam cerca de 5 horas para um homem de 75 kg; uma noite com cinco ou seis doses pode levar 8–12 horas ou mais, muitas vezes até a manhã seguinte."
+        },
+        {
+          "question": "Quanto tempo o álcool aparece no bafômetro, no exame de sangue e de urina?",
+          "answer": "No bafômetro e no sangue, por até cerca de 12–24 horas depois de beber muito. Na urina, os exames comuns detectam por cerca de 12–24 horas, e os exames de EtG por cerca de 1–3 dias. O exame de cabelo pode mostrar consumo por até cerca de 90 dias."
+        },
+        {
+          "question": "Dormir, tomar café ou beber água ajuda a cortar o efeito do álcool mais rápido?",
+          "answer": "Não. Só o tempo reduz o álcool no sangue, porque o fígado trabalha num ritmo quase constante. O café pode deixar você mais desperto e a água ajuda na desidratação, mas nenhum dos dois acelera a eliminação — e depois de uma noite longa você ainda pode estar acima do limite pela manhã."
+        },
+        {
+          "question": "Por que o álcool demora mais para sair do corpo de algumas pessoas?",
+          "answer": "Peso, sexo, água corporal, genética, saúde do fígado, medicamentos e comida mudam o quanto o álcool no sangue sobe e quanto tempo dura. Mulheres e pessoas mais leves costumam atingir um nível mais alto com as mesmas doses, por isso levam mais tempo para eliminá-lo."
+        },
+        {
+          "question": "Por quanto tempo o álcool afeta o sono e a recuperação?",
+          "answer": "Mesmo uma ou duas doses podem elevar a frequência cardíaca de repouso durante a noite, baixar a VFC e reduzir o sono REM naquela noite. Depois de beber mais, os indicadores de recuperação podem ficar abaixo do seu normal também na noite seguinte."
+        }
+      ]
     }
   },
   "series": {

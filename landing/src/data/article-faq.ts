@@ -2985,4 +2985,11 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     { question: "What is cardiac rehabilitation?", answer: "A structured, supervised programme of exercise, education and support after a heart attack, heart surgery or heart failure. It's one of the best-established rehabilitation programmes in medicine." },
     { question: "Is my old data useful after an illness?", answer: "Very. If your watch recorded your health before you got ill, it shows your true baseline — the target your recovery is heading back toward." },
   ],
+  "how-long-does-alcohol-stay-in-your-system": [
+    { question: "How long does alcohol stay in your blood?", answer: "Your body clears about 0.15\u2030 (0.015% BAC) per hour \u2014 roughly one drink per hour. Two 0.5 l beers take about 5 hours for a 75 kg man; a night of five or six drinks can take 8\u201312 hours or more, often into the next morning." },
+    { question: "How long can alcohol be detected in breath, blood and urine?", answer: "In breath and blood, for up to about 12\u201324 hours after heavy drinking. In urine, standard tests detect it for about 12\u201324 hours, and EtG tests for about 1\u20133 days. Hair tests can show drinking for up to about 90 days." },
+    { question: "Does sleeping, coffee or water sober you up faster?", answer: "No. Only time lowers blood alcohol, because the liver works at a nearly constant rate. Coffee can make you feel more alert and water helps with dehydration, but neither speeds up elimination \u2014 and after a late night you can still be over the limit in the morning." },
+    { question: "Why does alcohol stay longer in some people?", answer: "Body weight, sex, body water, genetics, liver health, medication and food all change how high your blood alcohol rises and how long it lasts. Women and lighter people usually reach a higher level from the same drinks, so it takes them longer to clear." },
+    { question: "How long does alcohol affect sleep and recovery?", answer: "Even one or two drinks can raise overnight resting heart rate, lower HRV and cut REM sleep that night. After heavier drinking, recovery markers can stay below your normal for the next night as well." },
+  ],
 }

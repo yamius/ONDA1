@@ -1660,7 +1660,28 @@
       ],
       "imageAlt": "Combien de temps l'alcool reste dans le sang : la formule de Widmark, une élimination d'environ 0,15 ‰ (0,015 %) par heure, et pourquoi seul le temps fait baisser l'alcoolémie.",
       "imageTitle": "[CLEARANCE_RATE] : pourquoi seul le temps fait baisser l'alcoolémie — environ un verre par heure.",
-      "faq": []
+      "faq": [
+        {
+          "question": "Combien de temps l'alcool reste-t-il dans le sang ?",
+          "answer": "L'organisme élimine environ 0,15 ‰ (0,015 % BAC) par heure — soit à peu près un verre par heure. Deux bières de 0,5 l demandent environ 5 heures pour un homme de 75 kg ; une soirée à cinq ou six verres peut demander 8 à 12 heures, voire plus, souvent jusqu'au lendemain matin."
+        },
+        {
+          "question": "Combien de temps l'alcool est-il détectable dans l'haleine, le sang et les urines ?",
+          "answer": "Dans l'haleine et le sang, jusqu'à environ 12 à 24 heures après une forte consommation. Dans les urines, les tests standard le détectent pendant environ 12 à 24 heures, et les tests EtG pendant environ 1 à 3 jours. Les tests capillaires peuvent révéler une consommation jusqu'à environ 90 jours."
+        },
+        {
+          "question": "Dormir, boire du café ou de l'eau fait-il dessoûler plus vite ?",
+          "answer": "Non. Seul le temps fait baisser l'alcoolémie, car le foie travaille à un rythme presque constant. Le café peut vous rendre plus éveillé et l'eau aide contre la déshydratation, mais aucun des deux n'accélère l'élimination — et après une soirée tardive, vous pouvez encore dépasser la limite le matin."
+        },
+        {
+          "question": "Pourquoi l'alcool reste-t-il plus longtemps chez certaines personnes ?",
+          "answer": "Le poids, le sexe, l'eau corporelle, la génétique, l'état du foie, les médicaments et l'alimentation influencent le niveau d'alcoolémie atteint et sa durée. Les femmes et les personnes plus légères atteignent généralement un taux plus élevé pour une même consommation, et mettent donc plus de temps à l'éliminer."
+        },
+        {
+          "question": "Combien de temps l'alcool affecte-t-il le sommeil et la récupération ?",
+          "answer": "Même un ou deux verres peuvent augmenter la fréquence cardiaque au repos pendant la nuit, faire baisser la VFC et réduire le sommeil paradoxal cette nuit-là. Après une consommation plus importante, les indicateurs de récupération peuvent rester sous votre normale la nuit suivante aussi."
+        }
+      ]
     }
   },
   "series": {
