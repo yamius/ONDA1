@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Breathing Timer — Box, 4-7-8 & Coherent Breathing | ONDA Life",
+    "description": "Free guided breathing timer: follow the circle and sound cues for box breathing, 4-7-8, coherent breathing, extended exhale or the physiological sigh. 1–10 minutes.",
+    "appName": "Guided Breathing Timer",
+    "appDescription": "Free guided breathing timer with an animated circle, sound cues and session length for box breathing, 4-7-8, coherent breathing, extended exhale and the physiological sigh."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Breathing Timer" },
+  "h1": "Breathing Timer: Box, 4-7-8 and Coherent Breathing",
+  "capsule": "Pick a technique, press start and breathe with the circle: it grows as you breathe in, pauses on holds and shrinks as you breathe out, with a countdown and optional sound cues so you can close your eyes. Slow breathing with a longer exhale shifts the nervous system toward calm within minutes; 3–5 minutes is enough for most people.",
+  "imageAlt": "Guided breathing timer — animated circle for box breathing, 4-7-8 and coherent breathing, free tool from ONDA Life",
+  "patterns": {
+    "box": { "name": "Box breathing", "tagline": "4-4-4-4 — steady focus and calm under pressure" },
+    "478": { "name": "4-7-8 breathing", "tagline": "Long hold and long exhale — a wind-down before sleep" },
+    "coherent": { "name": "Coherent breathing", "tagline": "About 5.5 breaths a minute — the resonance rhythm for HRV" },
+    "calming": { "name": "Extended exhale", "tagline": "In 4, out 6 — a longer out-breath to settle fast" },
+    "sigh": { "name": "Physiological sigh", "tagline": "Two inhales, one long exhale — the quickest reset" }
+  },
+  "phases": { "in": "Breathe in", "topup": "Breathe in a little more", "hold": "Hold", "out": "Breathe out" },
+  "ui": {
+    "technique": "Technique",
+    "duration": "Session",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Sound cues",
+    "vibration": "Vibration",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "press": "Press start",
+    "cycles": "Breaths: {{n}}",
+    "remaining": "{{m}}:{{s}} left",
+    "done": "Done — {{n}} breaths. Notice how you feel now.",
+    "again": "Again",
+    "startThis": "Start this in the timer ↑"
+  },
+  "safety": "Sit or lie comfortably and breathe through the nose where you can. If you feel light-headed, stop and breathe normally. Educational relaxation tool, not a medical device or a treatment for any condition. If you have a heart or lung condition or are pregnant, skip the long breath-holds.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Box breathing timer (4-4-4-4)",
+      "body": "Box breathing uses four equal phases: breathe in for 4 seconds, hold for 4, breathe out for 4 and hold for 4 — like tracing the sides of a square. Its steady, even rhythm is popular with the military, athletes and anyone who needs to stay calm and focused under pressure, and it's easy to remember when you can't look at a screen. It slows you to about 4 breaths a minute. If the holds feel long, start with 3-3-3-3. Guide: [box breathing explained](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "4-7-8 breathing timer",
+      "body": "In 4-7-8 breathing you breathe in quietly through the nose for 4 seconds, hold for 7 and breathe out slowly through the mouth for 8. The long hold and the even longer exhale bring your breathing right down and emphasise the out-breath, which calms the nervous system — that's why it's popular as a wind-down in bed. Do four cycles to start; feeling a little light-headed at first is common, so sit or lie down. Guide: [4-7-8 breathing](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Coherent (resonance) breathing timer",
+      "body": "Coherent breathing means breathing evenly at about 5–6 breaths a minute — here 5.5 seconds in and 5.5 seconds out. At this pace your heart rhythm and breathing fall into step through the baroreflex, which produces the largest swings in heart rate variability (HRV) — the rhythm used in HRV biofeedback. There are no holds, so it's the gentlest pattern for longer sessions of 5–20 minutes. Guides: [coherent breathing](/articles/coherent-breathing-guide) and [find your resonance rate](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Extended exhale (4-6) breathing",
+      "body": "Making the out-breath longer than the in-breath is the simplest way to calm down: your heart rate naturally dips while you exhale, so a longer exhale tips the balance toward relaxation. Breathe in for 4 seconds and out for 6, without holds. It works anywhere — in a meeting, before a presentation or when you can't fall asleep — and is a good first step if breath-holds feel uncomfortable."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Physiological sigh (cyclic sighing)",
+      "body": "The physiological sigh is two inhales through the nose — a full breath and then a short top-up — followed by a long, slow exhale through the mouth. It's what your body does naturally when crying stops or before sleep. In a 2023 Stanford study (Balban), five minutes a day of this \"cyclic sighing\" improved mood and lowered breathing rate more than mindfulness meditation. One to three sighs can take the edge off acute stress. Guide: [the physiological sigh](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Breathing timer — common questions",
+  "faq": [
+    { "q": "What is box breathing?", "a": "Four equal phases — breathe in 4 seconds, hold 4, breathe out 4, hold 4 — repeated in a loop. The steady rhythm slows breathing to about 4 breaths a minute and helps you stay calm and focused." },
+    { "q": "How do you do 4-7-8 breathing?", "a": "Breathe in through the nose for 4 seconds, hold for 7, and breathe out slowly through the mouth for 8. Start with four cycles, sitting or lying down." },
+    { "q": "Which breathing technique is best for anxiety?", "a": "Techniques with a longer exhale work fastest: the physiological sigh, extended exhale (4-6) or 4-7-8. For a steadier effect over 5–10 minutes, coherent breathing at about 6 breaths a minute is gentle and well studied." },
+    { "q": "Which breathing exercise helps you fall asleep?", "a": "4-7-8 breathing and extended exhale are the most popular before sleep because the long out-breath slows you down. Do 3–5 minutes lying in bed with the sound cues on and eyes closed." },
+    { "q": "How long should I do breathing exercises?", "a": "Even 1–3 minutes can calm you in the moment. For lasting benefit, studies used about 5 minutes a day; coherent breathing is often practised for 10–20 minutes." },
+    { "q": "What is coherent or resonance breathing?", "a": "Breathing evenly at about 5–6 breaths a minute, which makes heart rate and breathing oscillate together and maximises HRV. This timer uses 5.5 seconds in and 5.5 out." },
+    { "q": "Is it normal to feel dizzy?", "a": "Slight light-headedness at the start is common, especially with long holds. Stop, breathe normally and try a gentler pattern such as extended exhale. If you have a heart or lung condition or are pregnant, skip long breath-holds." }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "Slow, paced breathing is one of the few voluntary levers on the autonomic nervous system. Breathing at about six breaths per minute hits the baroreflex resonance frequency, maximising heart rate variability and shifting the balance toward the parasympathetic branch (Lehrer & Gevirtz 2014; Zaccaro 2018). A longer exhale adds a calming effect, and a randomised trial found that five minutes a day of exhale-focused breathing — cyclic sighing most of all — improved mood and lowered breathing rate more than mindfulness (Balban 2023). The timer applies those principles with five classic patterns. It is an educational relaxation tool, not a medical device.",
+  "sourcesContributes": [
+    "Systematic review linking slow breathing to higher HRV, a parasympathetic shift and reduced arousal.",
+    "Explains the ~0.1 Hz (≈6 breaths/min) resonance frequency and the baroreflex mechanism behind coherent breathing.",
+    "RCT: 5 minutes a day of exhale-emphasised breathing — cyclic sighing most of all — improved mood and lowered resting breathing rate more than mindfulness meditation."
+  ],
+  "cta": "On your phone, ONDA guides your breathing and shows your heart rate respond — from the camera or your Apple Watch.",
+  "related": {
+    "label": "Related",
+    "resonance": "Find your resonance breathing rate",
+    "hrv": "HRV Calculator by Age",
+    "box": "Box breathing explained",
+    "sigh": "The physiological sigh"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Atemtimer — Box Breathing, 4-7-8 & kohärent | ONDA Life",
+    "description": "Kostenloser Atemtimer: Folge dem Kreis und den Tönen – Box Breathing, 4-7-8 Atmung, kohärente Atmung, langes Ausatmen oder Seufzer. 1–10 Minuten.",
+    "appName": "Geführter Atemtimer",
+    "appDescription": "Kostenloser geführter Atemtimer mit animiertem Kreis, Tonsignalen und wählbarer Dauer für Box Breathing, 4-7-8 Atmung, kohärente Atmung, verlängertes Ausatmen und den physiologischen Seufzer."
+  },
+  "breadcrumb": { "home": "Startseite", "tools": "Tools", "current": "Atemtimer" },
+  "h1": "Atemtimer: Box Breathing, 4-7-8 Atmung und kohärente Atmung",
+  "capsule": "Wähl eine Technik, drück auf Start und atme mit dem Kreis: Er wächst beim Einatmen, bleibt beim Anhalten stehen und schrumpft beim Ausatmen – mit Countdown und optionalen Tönen, damit du die Augen schließen kannst. Langsames Atmen mit längerem Ausatmen bringt dein Nervensystem innerhalb weniger Minuten zur Ruhe; 3–5 Minuten reichen den meisten.",
+  "imageAlt": "Geführter Atemtimer – animierter Kreis für Box Breathing, 4-7-8 Atmung und kohärente Atmung, kostenloses Tool von ONDA Life",
+  "patterns": {
+    "box": { "name": "Box Breathing", "tagline": "4-4-4-4 – ruhiger Fokus, auch unter Druck" },
+    "478": { "name": "4-7-8 Atmung", "tagline": "Langes Halten, langes Ausatmen – runterfahren vor dem Schlafen" },
+    "coherent": { "name": "Kohärente Atmung", "tagline": "Etwa 5,5 Atemzüge pro Minute – der Resonanzrhythmus für die HRV" },
+    "calming": { "name": "Langes Ausatmen", "tagline": "4 ein, 6 aus – längeres Ausatmen beruhigt schnell" },
+    "sigh": { "name": "Physiologischer Seufzer", "tagline": "Zweimal ein, einmal lang aus – der schnellste Reset" }
+  },
+  "phases": { "in": "Einatmen", "topup": "Nachatmen", "hold": "Halten", "out": "Ausatmen" },
+  "ui": {
+    "technique": "Technik",
+    "duration": "Dauer",
+    "minutes": "{{n}} Min.",
+    "unlimited": "∞",
+    "sound": "Töne",
+    "vibration": "Vibration",
+    "start": "► Start",
+    "stop": "◼ Stopp",
+    "press": "Drück auf Start",
+    "cycles": "Atemzüge: {{n}}",
+    "remaining": "noch {{m}}:{{s}}",
+    "done": "Fertig – {{n}} Atemzüge. Spür mal nach, wie du dich jetzt fühlst.",
+    "again": "Nochmal",
+    "startThis": "Im Timer starten ↑"
+  },
+  "safety": "Setz oder leg dich bequem hin und atme wenn möglich durch die Nase. Wird dir schwindelig, hör auf und atme normal weiter. Ein Entspannungstool zu Bildungszwecken, kein Medizinprodukt und keine Behandlung von Erkrankungen. Wenn du eine Herz- oder Lungenerkrankung hast oder schwanger bist, lass die langen Atempausen weg.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Box Breathing Timer (4-4-4-4)",
+      "body": "Box Breathing besteht aus vier gleich langen Phasen: 4 Sekunden einatmen, 4 halten, 4 ausatmen, 4 halten – als würdest du die Seiten eines Quadrats nachfahren. Der gleichmäßige Rhythmus ist bei Militär, Sportlern und allen beliebt, die unter Druck ruhig und konzentriert bleiben müssen, und du kannst ihn dir auch ohne Bildschirm leicht merken. Er bremst dich auf etwa 4 Atemzüge pro Minute. Sind dir die Pausen zu lang, starte mit 3-3-3-3. Mehr dazu: [Box Breathing erklärt](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "4-7-8 Atmung: Timer zum Mitatmen",
+      "body": "Bei der 4-7-8 Atmung atmest du 4 Sekunden leise durch die Nase ein, hältst 7 Sekunden die Luft an und atmest 8 Sekunden langsam durch den Mund aus. Das lange Halten und das noch längere Ausatmen verlangsamen deine Atmung deutlich und betonen das Ausatmen, was das Nervensystem beruhigt – deshalb ist sie so beliebt zum Runterkommen im Bett. Starte mit vier Durchgängen; leichter Schwindel am Anfang ist normal, also setz oder leg dich hin. Mehr dazu: [4-7-8 Atmung](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Kohärente Atmung (Resonanzatmung) mit Timer",
+      "body": "Kohärente Atmung heißt: gleichmäßig mit etwa 5–6 Atemzügen pro Minute atmen – hier 5,5 Sekunden ein und 5,5 Sekunden aus. In diesem Tempo geraten Herzrhythmus und Atmung über den Barorezeptorreflex in Gleichklang, was die größten Schwankungen der Herzratenvariabilität (HRV) erzeugt – genau der Rhythmus, den HRV-Biofeedback nutzt. Da es keine Pausen gibt, ist es das sanfteste Muster für längere Einheiten von 5–20 Minuten. Mehr dazu: [kohärente Atmung](/articles/coherent-breathing-guide) und [finde deine Resonanzfrequenz](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Atemübung gegen Angst: langes Ausatmen (4-6)",
+      "body": "Länger aus- als einatmen ist der einfachste Weg, dich zu beruhigen: Beim Ausatmen sinkt dein Puls ganz natürlich, also verschiebt ein längeres Ausatmen das Gleichgewicht Richtung Entspannung. Atme 4 Sekunden ein und 6 aus, ohne Pausen. Das klappt überall – im Meeting, vor einer Präsentation oder wenn du nicht einschlafen kannst – und ist ein guter Einstieg, wenn dir das Luftanhalten unangenehm ist."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Physiologischer Seufzer (Cyclic Sighing)",
+      "body": "Beim physiologischen Seufzer atmest du zweimal durch die Nase ein – einen vollen Atemzug und dann ein kurzes Nachatmen – und danach lang und langsam durch den Mund aus. Das macht dein Körper von selbst, wenn Weinen abklingt oder kurz vor dem Einschlafen. In einer Stanford-Studie von 2023 (Balban) verbesserten fünf Minuten „Cyclic Sighing“ täglich die Stimmung und senkten die Atemfrequenz stärker als Achtsamkeitsmeditation. Schon ein bis drei Seufzer nehmen akutem Stress die Spitze. Mehr dazu: [der physiologische Seufzer](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Atemtimer – häufige Fragen",
+  "faq": [
+    { "q": "Was ist Box Breathing?", "a": "Vier gleich lange Phasen – 4 Sekunden einatmen, 4 halten, 4 ausatmen, 4 halten – in Schleife wiederholt. Der gleichmäßige Rhythmus verlangsamt die Atmung auf etwa 4 Atemzüge pro Minute und hilft dir, ruhig und fokussiert zu bleiben." },
+    { "q": "Wie funktioniert die 4-7-8 Atmung?", "a": "Atme 4 Sekunden durch die Nase ein, halte 7 Sekunden die Luft an und atme 8 Sekunden langsam durch den Mund aus. Starte im Sitzen oder Liegen mit vier Durchgängen." },
+    { "q": "Welche Atemübung hilft am besten gegen Angst?", "a": "Am schnellsten wirken Techniken mit längerem Ausatmen: der physiologische Seufzer, langes Ausatmen (4-6) oder die 4-7-8 Atmung. Für einen gleichmäßigeren Effekt über 5–10 Minuten ist kohärente Atmung mit etwa 6 Atemzügen pro Minute sanft und gut erforscht." },
+    { "q": "Welche Atemübung hilft beim Einschlafen?", "a": "Die 4-7-8 Atmung und langes Ausatmen sind vor dem Schlafen am beliebtesten, weil das lange Ausatmen dich runterfährt. Mach 3–5 Minuten im Bett, mit Tönen an und geschlossenen Augen." },
+    { "q": "Wie lange sollte ich Atemübungen machen?", "a": "Schon 1–3 Minuten können dich im Moment beruhigen. Für eine anhaltende Wirkung nutzten Studien etwa 5 Minuten täglich; kohärente Atmung wird oft 10–20 Minuten geübt." },
+    { "q": "Was ist kohärente Atmung bzw. Resonanzatmung?", "a": "Gleichmäßiges Atmen mit etwa 5–6 Atemzügen pro Minute, bei dem Herzfrequenz und Atmung gemeinsam schwingen und die HRV maximal wird. Dieser Timer nutzt 5,5 Sekunden ein und 5,5 aus." },
+    { "q": "Ist es normal, dass mir schwindelig wird?", "a": "Leichter Schwindel am Anfang ist häufig, vor allem bei langen Pausen. Hör auf, atme normal und probier ein sanfteres Muster wie langes Ausatmen. Wenn du eine Herz- oder Lungenerkrankung hast oder schwanger bist, lass lange Atempausen weg." }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Langsames, getaktetes Atmen ist einer der wenigen Hebel, mit denen du dein autonomes Nervensystem bewusst beeinflussen kannst. Mit etwa sechs Atemzügen pro Minute triffst du die Resonanzfrequenz des Barorezeptorreflexes, maximierst die Herzratenvariabilität und verschiebst das Gleichgewicht Richtung Parasympathikus (Lehrer & Gevirtz 2014; Zaccaro 2018). Ein längeres Ausatmen wirkt zusätzlich beruhigend, und eine randomisierte Studie zeigte, dass fünf Minuten täglich ausatmungsbetontes Atmen – vor allem Cyclic Sighing – die Stimmung stärker verbesserte und die Atemfrequenz stärker senkte als Achtsamkeit (Balban 2023). Der Timer setzt diese Prinzipien mit fünf klassischen Mustern um. Er ist ein Entspannungstool zu Bildungszwecken, kein Medizinprodukt.",
+  "sourcesContributes": [
+    "Systematischer Review: langsames Atmen hängt mit höherer HRV, einer Verschiebung Richtung Parasympathikus und weniger Anspannung zusammen.",
+    "Erklärt die Resonanzfrequenz von ~0,1 Hz (≈6 Atemzüge/Min.) und den Barorezeptorreflex hinter der kohärenten Atmung.",
+    "RCT: 5 Minuten täglich ausatmungsbetontes Atmen – vor allem Cyclic Sighing – verbesserten die Stimmung und senkten die Ruheatemfrequenz stärker als Achtsamkeitsmeditation."
+  ],
+  "cta": "Auf deinem Handy führt dich ONDA durch die Atmung und zeigt, wie dein Puls reagiert – über die Kamera oder deine Apple Watch.",
+  "related": {
+    "label": "Passend dazu",
+    "resonance": "Finde deine Resonanz-Atemfrequenz",
+    "hrv": "HRV-Rechner nach Alter",
+    "box": "Box Breathing erklärt",
+    "sigh": "Der physiologische Seufzer"
+  }
+}

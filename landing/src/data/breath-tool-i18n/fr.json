@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Minuteur de respiration — Cohérence cardiaque | ONDA Life",
+    "description": "Minuteur de respiration gratuit : suivez le cercle pour la cohérence cardiaque, la respiration carrée, le 4-7-8 ou le soupir physiologique. 1 à 10 min.",
+    "appName": "Minuteur de respiration guidée",
+    "appDescription": "Minuteur de respiration guidée gratuit avec cercle animé, signaux sonores et durée réglable : respiration carrée, 4-7-8, cohérence cardiaque, expiration prolongée et soupir physiologique."
+  },
+  "breadcrumb": { "home": "Accueil", "tools": "Outils", "current": "Minuteur de respiration" },
+  "h1": "Minuteur de respiration : cohérence cardiaque, respiration carrée et 4-7-8",
+  "capsule": "Choisissez une technique, appuyez sur Démarrer et respirez avec le cercle : il grandit à l'inspiration, s'immobilise pendant les pauses et rétrécit à l'expiration, avec un compte à rebours et des signaux sonores facultatifs pour pratiquer les yeux fermés. Une respiration lente avec une expiration plus longue oriente le système nerveux vers le calme en quelques minutes ; 3 à 5 minutes suffisent à la plupart des gens.",
+  "imageAlt": "Minuteur de respiration guidée — cercle animé pour la cohérence cardiaque, la respiration carrée et le 4-7-8, outil gratuit ONDA Life",
+  "patterns": {
+    "box": { "name": "Respiration carrée", "tagline": "4-4-4-4 — concentration et calme sous pression" },
+    "478": { "name": "Respiration 4-7-8", "tagline": "Longue rétention, longue expiration — pour s'apaiser avant de dormir" },
+    "coherent": { "name": "Cohérence cardiaque", "tagline": "Environ 5,5 respirations par minute — le rythme de résonance de la VFC" },
+    "calming": { "name": "Expiration prolongée", "tagline": "Inspirez 4, expirez 6 — une expiration plus longue pour se calmer vite" },
+    "sigh": { "name": "Soupir physiologique", "tagline": "Deux inspirations, une longue expiration — la remise à zéro la plus rapide" }
+  },
+  "phases": { "in": "Inspirez", "topup": "Encore un peu", "hold": "Retenez", "out": "Expirez" },
+  "ui": {
+    "technique": "Technique",
+    "duration": "Séance",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Signaux sonores",
+    "vibration": "Vibration",
+    "start": "► Démarrer",
+    "stop": "◼ Arrêter",
+    "press": "Appuyez sur Démarrer",
+    "cycles": "Respirations : {{n}}",
+    "remaining": "Reste {{m}}:{{s}}",
+    "done": "Terminé — {{n}} respirations. Observez comment vous vous sentez.",
+    "again": "Recommencer",
+    "startThis": "Lancer dans le minuteur ↑"
+  },
+  "safety": "Asseyez-vous ou allongez-vous confortablement et respirez par le nez si possible. En cas d'étourdissement, arrêtez et respirez normalement. Outil éducatif de relaxation, ce n'est ni un dispositif médical ni un traitement. En cas de maladie cardiaque ou pulmonaire, ou de grossesse, évitez les longues rétentions de souffle.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Minuteur de respiration carrée (4-4-4-4)",
+      "body": "La respiration carrée comporte quatre phases égales : inspirez 4 secondes, retenez 4, expirez 4 et retenez 4 — comme si vous suiviez les côtés d'un carré. Ce rythme régulier est apprécié des militaires, des sportifs et de tous ceux qui doivent rester calmes et concentrés sous pression, et il se retient facilement sans écran. Il ralentit la respiration à environ 4 cycles par minute. Si les rétentions vous paraissent longues, commencez par 3-3-3-3. Guide : [la respiration carrée expliquée](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "Minuteur de respiration 4-7-8",
+      "body": "Dans la respiration 4-7-8, on inspire doucement par le nez pendant 4 secondes, on retient 7 secondes puis on expire lentement par la bouche pendant 8. La longue rétention et l'expiration encore plus longue ralentissent fortement le souffle et mettent l'accent sur l'expiration, ce qui apaise le système nerveux — d'où sa popularité au coucher. Commencez par quatre cycles ; une légère sensation de tête qui tourne est fréquente au début, alors restez assis ou allongé. Guide : [la respiration 4-7-8](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Cohérence cardiaque : minuteur de respiration à 6 cycles par minute (méthode 365)",
+      "body": "La cohérence cardiaque consiste à respirer régulièrement à environ 5 à 6 respirations par minute — ici 5,5 secondes d'inspiration et 5,5 secondes d'expiration. À ce rythme, le cœur et la respiration se synchronisent via le baroréflexe, ce qui produit les plus grandes variations de la variabilité de la fréquence cardiaque (VFC) — le rythme utilisé en biofeedback VFC. En France, on la pratique souvent selon la règle « 365 » : 3 fois par jour, 6 respirations par minute, 5 minutes. Sans rétention, c'est la technique la plus douce pour des séances de 5 à 20 minutes. Guides : [la respiration cohérente](/articles/coherent-breathing-guide) et [trouver votre fréquence de résonance](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Exercice de respiration anti-stress : l'expiration prolongée (4-6)",
+      "body": "Allonger l'expiration par rapport à l'inspiration est la façon la plus simple de se calmer : la fréquence cardiaque baisse naturellement pendant l'expiration, donc une expiration plus longue fait pencher la balance vers la détente. Inspirez 4 secondes et expirez 6, sans rétention. Cela fonctionne partout — en réunion, avant une présentation ou quand le sommeil ne vient pas — et c'est un bon point de départ si les rétentions vous gênent."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Soupir physiologique (soupir cyclique)",
+      "body": "Le soupir physiologique, ce sont deux inspirations par le nez — une pleine inspiration puis un petit complément — suivies d'une longue expiration lente par la bouche. C'est ce que fait naturellement le corps à la fin des pleurs ou avant l'endormissement. Dans une étude de Stanford de 2023 (Balban), cinq minutes par jour de ce « soupir cyclique » ont davantage amélioré l'humeur et abaissé la fréquence respiratoire que la méditation de pleine conscience. Un à trois soupirs suffisent à atténuer un stress aigu. Guide : [le soupir physiologique](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Minuteur de respiration — questions fréquentes",
+  "faq": [
+    { "q": "Qu'est-ce que la respiration carrée ?", "a": "Quatre phases égales — inspirer 4 secondes, retenir 4, expirer 4, retenir 4 — répétées en boucle. Ce rythme régulier ralentit la respiration à environ 4 cycles par minute et aide à rester calme et concentré." },
+    { "q": "Comment faire la respiration 4-7-8 ?", "a": "Inspirez par le nez pendant 4 secondes, retenez 7 secondes, puis expirez lentement par la bouche pendant 8. Commencez par quatre cycles, assis ou allongé." },
+    { "q": "Quel exercice de respiration contre le stress et l'anxiété ?", "a": "Les techniques à expiration longue agissent le plus vite : soupir physiologique, expiration prolongée (4-6) ou 4-7-8. Pour un effet plus stable sur 5 à 10 minutes, la cohérence cardiaque à environ 6 respirations par minute est douce et bien étudiée." },
+    { "q": "Quelle respiration pour s'endormir ?", "a": "La respiration 4-7-8 et l'expiration prolongée sont les plus utilisées avant de dormir, car la longue expiration ralentit l'organisme. Pratiquez 3 à 5 minutes au lit, signaux sonores activés et yeux fermés." },
+    { "q": "Combien de temps faire des exercices de respiration ?", "a": "Même 1 à 3 minutes peuvent apaiser sur le moment. Pour un bénéfice durable, les études ont utilisé environ 5 minutes par jour ; la cohérence cardiaque se pratique souvent 5 minutes 3 fois par jour (365) ou 10 à 20 minutes." },
+    { "q": "Qu'est-ce que la cohérence cardiaque ?", "a": "Respirer régulièrement à environ 5 à 6 respirations par minute, ce qui fait osciller ensemble fréquence cardiaque et respiration et maximise la VFC. Ce minuteur utilise 5,5 secondes d'inspiration et 5,5 d'expiration." },
+    { "q": "Est-ce normal d'avoir la tête qui tourne ?", "a": "Une légère sensation de vertige au début est fréquente, surtout avec les longues rétentions. Arrêtez, respirez normalement et essayez une technique plus douce comme l'expiration prolongée. En cas de maladie cardiaque ou pulmonaire, ou de grossesse, évitez les longues rétentions." }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "La respiration lente et rythmée est l'un des rares leviers volontaires sur le système nerveux autonome. Respirer à environ six cycles par minute correspond à la fréquence de résonance du baroréflexe, ce qui maximise la variabilité de la fréquence cardiaque et déplace l'équilibre vers le système parasympathique (Lehrer & Gevirtz 2014 ; Zaccaro 2018). Une expiration plus longue ajoute un effet apaisant, et un essai randomisé a montré que cinq minutes par jour de respiration centrée sur l'expiration — surtout le soupir cyclique — amélioraient davantage l'humeur et abaissaient la fréquence respiratoire que la pleine conscience (Balban 2023). Le minuteur applique ces principes à cinq techniques classiques. C'est un outil éducatif de relaxation, pas un dispositif médical.",
+  "sourcesContributes": [
+    "Revue systématique reliant la respiration lente à une VFC plus élevée, un basculement parasympathique et une baisse de l'activation.",
+    "Explique la fréquence de résonance d'environ 0,1 Hz (≈6 respirations/min) et le mécanisme du baroréflexe à l'origine de la cohérence cardiaque.",
+    "Essai randomisé : 5 minutes par jour de respiration axée sur l'expiration — surtout le soupir cyclique — ont davantage amélioré l'humeur et abaissé la fréquence respiratoire au repos que la méditation de pleine conscience."
+  ],
+  "cta": "Sur votre téléphone, ONDA guide votre respiration et montre la réaction de votre cœur — via la caméra ou votre Apple Watch.",
+  "related": {
+    "label": "À voir aussi",
+    "resonance": "Trouver votre fréquence de respiration de résonance",
+    "hrv": "Calculateur de VFC (HRV) selon l'âge",
+    "box": "La respiration carrée expliquée",
+    "sigh": "Le soupir physiologique"
+  }
+}

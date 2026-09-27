@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Temporizador de respiración — Cuadrada, 4-7-8 | ONDA Life",
+    "description": "Temporizador de respiración guiada gratis: sigue el círculo y las señales de sonido en respiración cuadrada, 4-7-8, coherente o suspiro fisiológico.",
+    "appName": "Temporizador de respiración guiada",
+    "appDescription": "Temporizador de respiración guiada gratuito con círculo animado, señales de sonido y duración de sesión para respiración cuadrada, 4-7-8, coherente, exhalación prolongada y suspiro fisiológico."
+  },
+  "breadcrumb": { "home": "Inicio", "tools": "Herramientas", "current": "Temporizador de respiración" },
+  "h1": "Temporizador de respiración: cuadrada, 4-7-8 y coherente",
+  "capsule": "Elige una técnica, pulsa iniciar y respira al ritmo del círculo: crece al inhalar, se detiene en las retenciones y se encoge al exhalar, con cuenta regresiva y señales de sonido opcionales para que puedas cerrar los ojos. Respirar despacio con una exhalación más larga lleva al sistema nervioso hacia la calma en pocos minutos; para la mayoría bastan 3–5 minutos.",
+  "imageAlt": "Temporizador de respiración guiada — círculo animado para respiración cuadrada, 4-7-8 y coherente, herramienta gratuita de ONDA Life",
+  "patterns": {
+    "box": { "name": "Respiración cuadrada", "tagline": "4-4-4-4 — enfoque estable y calma bajo presión" },
+    "478": { "name": "Respiración 4-7-8", "tagline": "Retención y exhalación largas — para relajarte antes de dormir" },
+    "coherent": { "name": "Respiración coherente", "tagline": "Unas 5.5 respiraciones por minuto — el ritmo de resonancia para la HRV" },
+    "calming": { "name": "Exhalación prolongada", "tagline": "Inhala 4, exhala 6 — una exhalación más larga para calmarte rápido" },
+    "sigh": { "name": "Suspiro fisiológico", "tagline": "Dos inhalaciones y una exhalación larga — el reinicio más rápido" }
+  },
+  "phases": { "in": "Inhala", "topup": "Inhala más", "hold": "Retén", "out": "Exhala" },
+  "ui": {
+    "technique": "Técnica",
+    "duration": "Sesión",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Señales de sonido",
+    "vibration": "Vibración",
+    "start": "► Iniciar",
+    "stop": "◼ Detener",
+    "press": "Pulsa iniciar",
+    "cycles": "Respiraciones: {{n}}",
+    "remaining": "Quedan {{m}}:{{s}}",
+    "done": "Listo — {{n}} respiraciones. Observa cómo te sientes ahora.",
+    "again": "Otra vez",
+    "startThis": "Practícala en el temporizador ↑"
+  },
+  "safety": "Siéntate o recuéstate cómodamente y respira por la nariz si puedes. Si te mareas, detente y respira con normalidad. Es una herramienta educativa de relajación, no un dispositivo médico ni un tratamiento para ninguna afección. Si tienes una afección cardíaca o pulmonar o estás embarazada, evita las retenciones largas.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Temporizador de respiración cuadrada (4-4-4-4)",
+      "body": "La respiración cuadrada tiene cuatro fases iguales: inhala 4 segundos, retén 4, exhala 4 y retén 4, como si recorrieras los lados de un cuadrado. Su ritmo estable y parejo es popular entre militares, deportistas y cualquiera que necesite mantener la calma y la concentración bajo presión, y es fácil de recordar cuando no puedes mirar una pantalla. Te lleva a unas 4 respiraciones por minuto. Si las retenciones se te hacen largas, empieza con 3-3-3-3. Guía: [la respiración cuadrada explicada](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "Temporizador de respiración 4-7-8",
+      "body": "En la respiración 4-7-8 inhalas en silencio por la nariz durante 4 segundos, retienes 7 y exhalas lentamente por la boca durante 8. La retención larga y la exhalación aún más larga ralentizan mucho la respiración y dan protagonismo a la exhalación, lo que calma el sistema nervioso; por eso es tan popular para relajarse en la cama. Empieza con cuatro ciclos; es común sentir un ligero mareo al principio, así que hazlo sentado o acostado. Guía: [respiración 4-7-8](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Temporizador de respiración coherente (de resonancia)",
+      "body": "La respiración coherente consiste en respirar de forma pareja a unas 5–6 respiraciones por minuto; aquí, 5.5 segundos al inhalar y 5.5 al exhalar. A este ritmo, el corazón y la respiración se sincronizan a través del barorreflejo, lo que produce las mayores oscilaciones de la variabilidad de la frecuencia cardíaca (HRV): es el ritmo que se usa en el biofeedback de HRV. No tiene retenciones, así que es el patrón más suave para sesiones largas de 5–20 minutos. Guías: [respiración coherente](/articles/coherent-breathing-guide) y [encuentra tu frecuencia de resonancia](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Ejercicios de respiración para la ansiedad: exhalación prolongada (4-6)",
+      "body": "Hacer la exhalación más larga que la inhalación es la forma más sencilla de calmarte: el ritmo cardíaco baja de forma natural al exhalar, así que una exhalación más larga inclina la balanza hacia la relajación. Inhala 4 segundos y exhala 6, sin retenciones. Funciona en cualquier lugar: en una reunión, antes de una presentación o cuando no puedes dormir, y es un buen primer paso si las retenciones te resultan incómodas."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Suspiro fisiológico (suspiro cíclico)",
+      "body": "El suspiro fisiológico son dos inhalaciones por la nariz —una completa y luego una pequeña extra— seguidas de una exhalación larga y lenta por la boca. Es lo que tu cuerpo hace de forma natural al dejar de llorar o antes de dormir. En un estudio de Stanford de 2023 (Balban), cinco minutos al día de este \"suspiro cíclico\" mejoraron el estado de ánimo y redujeron la frecuencia respiratoria más que la meditación mindfulness. De uno a tres suspiros pueden aliviar el estrés agudo. Guía: [el suspiro fisiológico](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Temporizador de respiración — preguntas frecuentes",
+  "faq": [
+    { "q": "¿Qué es la respiración cuadrada?", "a": "Cuatro fases iguales —inhala 4 segundos, retén 4, exhala 4, retén 4— que se repiten en bucle. El ritmo estable baja la respiración a unas 4 por minuto y te ayuda a mantener la calma y la concentración." },
+    { "q": "¿Cómo se hace la respiración 4-7-8?", "a": "Inhala por la nariz 4 segundos, retén 7 y exhala lentamente por la boca durante 8. Empieza con cuatro ciclos, sentado o acostado." },
+    { "q": "¿Qué ejercicio de respiración es mejor para la ansiedad?", "a": "Las técnicas con exhalación más larga actúan más rápido: el suspiro fisiológico, la exhalación prolongada (4-6) o la 4-7-8. Para un efecto más estable en 5–10 minutos, la respiración coherente a unas 6 respiraciones por minuto es suave y está bien estudiada." },
+    { "q": "¿Qué ejercicio de respiración ayuda a dormir?", "a": "La respiración 4-7-8 y la exhalación prolongada son las más populares antes de dormir porque la exhalación larga te ralentiza. Haz 3–5 minutos acostado en la cama, con las señales de sonido activadas y los ojos cerrados." },
+    { "q": "¿Cuánto tiempo debo hacer ejercicios de respiración?", "a": "Incluso 1–3 minutos pueden calmarte en el momento. Para un beneficio duradero, los estudios usaron unos 5 minutos al día; la respiración coherente suele practicarse durante 10–20 minutos." },
+    { "q": "¿Qué es la respiración coherente o de resonancia?", "a": "Respirar de forma pareja a unas 5–6 respiraciones por minuto, lo que hace que el ritmo cardíaco y la respiración oscilen juntos y maximiza la HRV. Este temporizador usa 5.5 segundos al inhalar y 5.5 al exhalar." },
+    { "q": "¿Es normal sentir mareo?", "a": "Un ligero mareo al principio es común, sobre todo con retenciones largas. Detente, respira con normalidad y prueba un patrón más suave, como la exhalación prolongada. Si tienes una afección cardíaca o pulmonar o estás embarazada, evita las retenciones largas." }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "La respiración lenta y pausada es una de las pocas palancas voluntarias sobre el sistema nervioso autónomo. Respirar a unas seis respiraciones por minuto alcanza la frecuencia de resonancia del barorreflejo, lo que maximiza la variabilidad de la frecuencia cardíaca y desplaza el equilibrio hacia la rama parasimpática (Lehrer & Gevirtz 2014; Zaccaro 2018). Una exhalación más larga añade un efecto calmante, y un ensayo aleatorizado encontró que cinco minutos al día de respiración centrada en la exhalación —sobre todo el suspiro cíclico— mejoraron el estado de ánimo y redujeron la frecuencia respiratoria más que el mindfulness (Balban 2023). El temporizador aplica estos principios con cinco patrones clásicos. Es una herramienta educativa de relajación, no un dispositivo médico.",
+  "sourcesContributes": [
+    "Revisión sistemática que relaciona la respiración lenta con una HRV más alta, un cambio parasimpático y menor activación.",
+    "Explica la frecuencia de resonancia de ~0.1 Hz (≈6 respiraciones/min) y el mecanismo del barorreflejo detrás de la respiración coherente.",
+    "ECA: 5 minutos al día de respiración centrada en la exhalación —sobre todo el suspiro cíclico— mejoraron el estado de ánimo y redujeron la frecuencia respiratoria en reposo más que la meditación mindfulness."
+  ],
+  "cta": "En tu teléfono, ONDA guía tu respiración y te muestra cómo responde tu ritmo cardíaco, con la cámara o tu Apple Watch.",
+  "related": {
+    "label": "Relacionado",
+    "resonance": "Encuentra tu frecuencia de respiración de resonancia",
+    "hrv": "Calculadora de HRV por edad",
+    "box": "La respiración cuadrada explicada",
+    "sigh": "El suspiro fisiológico"
+  }
+}

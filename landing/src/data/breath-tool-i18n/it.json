@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Timer per la respirazione — quadrata e 4-7-8 | ONDA Life",
+    "description": "Timer per la respirazione gratuito: segui il cerchio e i segnali sonori per respirazione quadrata, 4-7-8, coerente o sospiro fisiologico. Da 1 a 10 minuti.",
+    "appName": "Timer per la respirazione guidata",
+    "appDescription": "Timer gratuito per la respirazione guidata con cerchio animato, segnali sonori e durata della sessione: respirazione quadrata, 4-7-8, coerente, espirazione prolungata e sospiro fisiologico."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Strumenti", "current": "Timer per la respirazione" },
+  "h1": "Timer per la respirazione: quadrata, 4-7-8 e coerente",
+  "capsule": "Scegli una tecnica, premi avvia e respira seguendo il cerchio: si espande quando inspiri, si ferma durante le pause e si restringe quando espiri, con un conto alla rovescia e segnali sonori opzionali per poter chiudere gli occhi. Respirare lentamente, con un'espirazione più lunga, porta il sistema nervoso verso la calma in pochi minuti: per la maggior parte delle persone bastano 3–5 minuti.",
+  "imageAlt": "Timer per la respirazione guidata — cerchio animato per respirazione quadrata, 4-7-8 e coerente, strumento gratuito di ONDA Life",
+  "patterns": {
+    "box": { "name": "Respirazione quadrata", "tagline": "4-4-4-4 — concentrazione stabile e calma sotto pressione" },
+    "478": { "name": "Respirazione 4-7-8", "tagline": "Pausa lunga ed espirazione lunga — per rilassarsi prima di dormire" },
+    "coherent": { "name": "Respirazione coerente", "tagline": "Circa 5,5 respiri al minuto — il ritmo di risonanza per l'HRV" },
+    "calming": { "name": "Espirazione prolungata", "tagline": "Inspira 4, espira 6 — un'espirazione più lunga per calmarsi in fretta" },
+    "sigh": { "name": "Sospiro fisiologico", "tagline": "Due inspirazioni, una lunga espirazione — il reset più rapido" }
+  },
+  "phases": { "in": "Inspira", "topup": "Ancora un po'", "hold": "Trattieni", "out": "Espira" },
+  "ui": {
+    "technique": "Tecnica",
+    "duration": "Sessione",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Segnali sonori",
+    "vibration": "Vibrazione",
+    "start": "► Avvia",
+    "stop": "◼ Ferma",
+    "press": "Premi avvia",
+    "cycles": "Respiri: {{n}}",
+    "remaining": "Mancano {{m}}:{{s}}",
+    "done": "Fatto — {{n}} respiri. Nota come ti senti adesso.",
+    "again": "Di nuovo",
+    "startThis": "Avvialo nel timer ↑"
+  },
+  "safety": "Siediti o sdraiati comodamente e, se puoi, respira con il naso. Se senti la testa leggera, fermati e respira normalmente. Strumento educativo di rilassamento, non è un dispositivo medico né una cura per alcuna condizione. Se hai problemi cardiaci o polmonari o sei in gravidanza, evita le lunghe apnee.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Timer per la respirazione quadrata (4-4-4-4)",
+      "body": "La respirazione quadrata (box breathing) usa quattro fasi uguali: inspira per 4 secondi, trattieni per 4, espira per 4 e trattieni per 4 — come percorrere i lati di un quadrato. Il suo ritmo regolare è apprezzato da militari, atleti e da chiunque debba restare calmo e concentrato sotto pressione, ed è facile da ricordare anche senza guardare uno schermo. Rallenta il respiro a circa 4 respiri al minuto. Se le pause ti sembrano lunghe, inizia con 3-3-3-3. Guida: [la respirazione quadrata spiegata](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "Timer per la respirazione 4-7-8",
+      "body": "Nella respirazione 4-7-8 inspiri silenziosamente dal naso per 4 secondi, trattieni per 7 ed espiri lentamente dalla bocca per 8. La pausa lunga e l'espirazione ancora più lunga rallentano molto il respiro e mettono l'accento sull'espirazione, che calma il sistema nervoso: per questo è così diffusa come rituale a letto prima di dormire. Inizia con quattro cicli; all'inizio è normale sentire la testa un po' leggera, quindi stai seduto o sdraiato. Guida: [respirazione 4-7-8](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Timer per la respirazione coerente (di risonanza)",
+      "body": "La respirazione coerente consiste nel respirare in modo regolare a circa 5–6 respiri al minuto — qui 5,5 secondi di inspirazione e 5,5 di espirazione. A questo ritmo battito cardiaco e respiro si sincronizzano grazie al baroriflesso, producendo le oscillazioni più ampie della variabilità della frequenza cardiaca (HRV): è il ritmo usato nel biofeedback HRV. Non ci sono pause, quindi è lo schema più delicato per sessioni lunghe di 5–20 minuti. Guide: [respirazione coerente](/articles/coherent-breathing-guide) e [trova la tua frequenza di risonanza](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Espirazione prolungata (4-6): esercizi di respirazione per l'ansia",
+      "body": "Rendere l'espirazione più lunga dell'inspirazione è il modo più semplice per calmarsi: mentre espiri il battito rallenta in modo naturale, quindi un'espirazione più lunga sposta l'equilibrio verso il rilassamento. Inspira per 4 secondi ed espira per 6, senza pause. Funziona ovunque — in riunione, prima di una presentazione o quando non riesci ad addormentarti — ed è un buon primo passo se le apnee ti mettono a disagio."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Sospiro fisiologico (sospiro ciclico)",
+      "body": "Il sospiro fisiologico è composto da due inspirazioni dal naso — un respiro pieno e poi una breve aggiunta — seguite da una lunga e lenta espirazione dalla bocca. È ciò che il corpo fa spontaneamente quando si smette di piangere o prima di addormentarsi. In uno studio di Stanford del 2023 (Balban), cinque minuti al giorno di questo \"sospiro ciclico\" hanno migliorato l'umore e ridotto la frequenza respiratoria più della meditazione mindfulness. Da uno a tre sospiri possono smorzare lo stress acuto. Guida: [il sospiro fisiologico](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Timer per la respirazione — domande frequenti",
+  "faq": [
+    { "q": "Che cos'è la respirazione quadrata?", "a": "Quattro fasi uguali — inspira 4 secondi, trattieni 4, espira 4, trattieni 4 — ripetute in ciclo. Il ritmo regolare rallenta il respiro a circa 4 respiri al minuto e aiuta a restare calmi e concentrati." },
+    { "q": "Come si fa la respirazione 4-7-8?", "a": "Inspira dal naso per 4 secondi, trattieni per 7 ed espira lentamente dalla bocca per 8. Inizia con quattro cicli, da seduto o sdraiato." },
+    { "q": "Qual è il miglior esercizio di respirazione per l'ansia?", "a": "Le tecniche con un'espirazione più lunga agiscono più in fretta: sospiro fisiologico, espirazione prolungata (4-6) o 4-7-8. Per un effetto più stabile in 5–10 minuti, la respirazione coerente a circa 6 respiri al minuto è delicata e ben studiata." },
+    { "q": "Quale esercizio di respirazione aiuta ad addormentarsi?", "a": "La respirazione 4-7-8 e l'espirazione prolungata sono le più usate prima di dormire, perché la lunga espirazione rallenta il ritmo. Pratica 3–5 minuti a letto, con i segnali sonori attivi e gli occhi chiusi." },
+    { "q": "Per quanto tempo fare gli esercizi di respirazione?", "a": "Anche 1–3 minuti possono calmarti sul momento. Per benefici duraturi, gli studi hanno usato circa 5 minuti al giorno; la respirazione coerente si pratica spesso per 10–20 minuti." },
+    { "q": "Che cos'è la respirazione coerente o di risonanza?", "a": "Respirare in modo regolare a circa 5–6 respiri al minuto, così che battito cardiaco e respiro oscillino insieme e l'HRV sia massima. Questo timer usa 5,5 secondi di inspirazione e 5,5 di espirazione." },
+    { "q": "È normale avere le vertigini?", "a": "Un leggero senso di testa vuota all'inizio è comune, soprattutto con le pause lunghe. Fermati, respira normalmente e prova uno schema più delicato come l'espirazione prolungata. Se hai problemi cardiaci o polmonari o sei in gravidanza, evita le lunghe apnee." }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "La respirazione lenta e cadenzata è una delle poche leve volontarie sul sistema nervoso autonomo. Respirare a circa sei respiri al minuto raggiunge la frequenza di risonanza del baroriflesso, massimizzando la variabilità della frequenza cardiaca e spostando l'equilibrio verso il sistema parasimpatico (Lehrer & Gevirtz 2014; Zaccaro 2018). Un'espirazione più lunga aggiunge un effetto calmante, e uno studio randomizzato ha rilevato che cinque minuti al giorno di respirazione centrata sull'espirazione — soprattutto il sospiro ciclico — hanno migliorato l'umore e ridotto la frequenza respiratoria più della mindfulness (Balban 2023). Il timer applica questi principi con cinque schemi classici. È uno strumento educativo di rilassamento, non un dispositivo medico.",
+  "sourcesContributes": [
+    "Revisione sistematica che collega la respirazione lenta a un'HRV più alta, a uno spostamento parasimpatico e a una minore attivazione.",
+    "Spiega la frequenza di risonanza di ~0,1 Hz (≈6 respiri/min) e il meccanismo del baroriflesso alla base della respirazione coerente.",
+    "RCT: 5 minuti al giorno di respirazione centrata sull'espirazione — soprattutto il sospiro ciclico — hanno migliorato l'umore e ridotto la frequenza respiratoria a riposo più della meditazione mindfulness."
+  ],
+  "cta": "Sul telefono, ONDA guida il tuo respiro e ti mostra come risponde il battito cardiaco — dalla fotocamera o dal tuo Apple Watch.",
+  "related": {
+    "label": "Correlati",
+    "resonance": "Trova la tua frequenza di respirazione di risonanza",
+    "hrv": "Calcolatore HRV per età",
+    "box": "La respirazione quadrata spiegata",
+    "sigh": "Il sospiro fisiologico"
+  }
+}

@@ -260,6 +260,17 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/sleep-cycle"     element={<SleepCycleCalculatorPage />} />
           <Route path="/tools/cognitive-shuffle" element={<CognitiveShufflePage />} />
           <Route path="/tools/breathing"       element={<BreathingPacerPage />} />
+          <Route path="/es/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/ru/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/uk/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/zh/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/de/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/fr/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/it/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/nl/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/ja/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/pl/tools/breathing" element={<BreathingPacerPage />} />
+          <Route path="/pt/tools/breathing" element={<BreathingPacerPage />} />
           <Route path="/tools/resonance-breathing" element={<ResonanceBreathingPage />} />
           <Route path="/tools/dopamine-detox"  element={<DopamineResetPage />} />
           <Route path="/tools/biological-age"  element={<BiologicalAgeCalculatorPage />} />

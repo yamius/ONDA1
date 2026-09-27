@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Ademhalingstimer — box, 4-7-8 & coherent | ONDA Life",
+    "description": "Gratis ademhalingstimer: volg de cirkel en geluidssignalen voor box breathing, 4-7-8, coherent ademen, lange uitademing of de fysiologische zucht.",
+    "appName": "Ademhalingstimer met begeleiding",
+    "appDescription": "Gratis ademhalingstimer met bewegende cirkel, geluidssignalen en instelbare sessieduur voor box breathing, 4-7-8, coherent ademen, lange uitademing en de fysiologische zucht."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Ademhalingstimer" },
+  "h1": "Ademhalingstimer: box breathing, 4-7-8 en coherent ademen",
+  "capsule": "Kies een techniek, druk op start en adem mee met de cirkel: hij groeit als je inademt, staat stil tijdens het vasthouden en krimpt als je uitademt, met een aftelling en optionele geluidssignalen zodat je je ogen kunt sluiten. Rustig ademen met een langere uitademing brengt je zenuwstelsel binnen een paar minuten tot rust; voor de meeste mensen is 3–5 minuten genoeg.",
+  "imageAlt": "Ademhalingstimer met begeleiding — bewegende cirkel voor box breathing, 4-7-8 en coherent ademen, gratis tool van ONDA Life",
+  "patterns": {
+    "box": { "name": "Box breathing", "tagline": "4-4-4-4 — rust en focus onder druk" },
+    "478": { "name": "4-7-8 ademhaling", "tagline": "Lang vasthouden en lang uitademen — tot rust komen voor het slapen" },
+    "coherent": { "name": "Coherent ademen", "tagline": "Zo'n 5,5 ademhalingen per minuut — het resonantieritme voor HRV" },
+    "calming": { "name": "Lange uitademing", "tagline": "4 in, 6 uit — langer uitademen om snel te kalmeren" },
+    "sigh": { "name": "Fysiologische zucht", "tagline": "Twee keer in, één keer lang uit — de snelste reset" }
+  },
+  "phases": { "in": "Adem in", "topup": "Nog iets in", "hold": "Vasthouden", "out": "Adem uit" },
+  "ui": {
+    "technique": "Techniek",
+    "duration": "Sessie",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Geluidssignalen",
+    "vibration": "Trilling",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "press": "Druk op start",
+    "cycles": "Ademhalingen: {{n}}",
+    "remaining": "Nog {{m}}:{{s}}",
+    "done": "Klaar — {{n}} ademhalingen. Merk op hoe je je nu voelt.",
+    "again": "Opnieuw",
+    "startThis": "Start dit in de timer ↑"
+  },
+  "safety": "Ga comfortabel zitten of liggen en adem waar mogelijk door je neus. Word je licht in je hoofd, stop dan en adem gewoon door. Dit is een educatieve ontspanningstool, geen medisch hulpmiddel en geen behandeling voor welke aandoening dan ook. Heb je een hart- of longaandoening of ben je zwanger, sla dan het lange adem vasthouden over.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Box breathing timer (4-4-4-4)",
+      "body": "Box breathing bestaat uit vier gelijke fases: 4 seconden inademen, 4 vasthouden, 4 uitademen en 4 vasthouden — alsof je de zijden van een vierkant natrekt. Het rustige, gelijkmatige ritme is populair bij militairen, sporters en iedereen die kalm en gefocust moet blijven onder druk, en je onthoudt het makkelijk als je niet op een scherm kunt kijken. Je ademhaling zakt naar zo'n 4 keer per minuut. Voelt het vasthouden te lang, begin dan met 3-3-3-3. Uitleg: [zo werkt box breathing](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "4-7-8 ademhaling timer",
+      "body": "Bij de 4-7-8 ademhaling adem je 4 seconden rustig in door je neus, houd je 7 seconden vast en adem je 8 seconden langzaam uit door je mond. Het lange vasthouden en de nog langere uitademing vertragen je ademhaling flink en leggen de nadruk op het uitademen, wat je zenuwstelsel kalmeert — daarom is het zo populair om in bed tot rust te komen. Begin met vier rondes; een beetje licht in je hoofd worden is in het begin normaal, dus ga zitten of liggen. Uitleg: [4-7-8 ademhaling](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Timer voor coherent (resonantie) ademen",
+      "body": "Coherent ademen betekent gelijkmatig ademen op zo'n 5–6 ademhalingen per minuut — hier 5,5 seconden in en 5,5 seconden uit. In dit tempo lopen je hartritme en ademhaling via de baroreflex in de pas, wat de grootste schommelingen in hartslagvariabiliteit (HRV) geeft — het ritme dat bij HRV-biofeedback wordt gebruikt. Er wordt niet vastgehouden, dus het is het zachtste patroon voor langere sessies van 5–20 minuten. Uitleg: [coherent ademen](/articles/coherent-breathing-guide) en [vind je resonantietempo](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Ademhalingsoefening tegen stress: lange uitademing (4-6)",
+      "body": "Langer uitademen dan inademen is de simpelste manier om te kalmeren: tijdens het uitademen daalt je hartslag vanzelf, dus een langere uitademing duwt de balans richting ontspanning. Adem 4 seconden in en 6 seconden uit, zonder vasthouden. Het werkt overal — in een vergadering, voor een presentatie of als je niet in slaap komt — en is een goede eerste stap als adem vasthouden onprettig voelt."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Fysiologische zucht (cyclisch zuchten)",
+      "body": "De fysiologische zucht bestaat uit twee inademingen door je neus — een volle ademteug en dan nog een korte extra — gevolgd door een lange, langzame uitademing door je mond. Je lichaam doet dit vanzelf na het huilen of vlak voor het slapen. In een Stanford-studie uit 2023 (Balban) verbeterde vijf minuten per dag \"cyclisch zuchten\" de stemming en verlaagde het de ademfrequentie meer dan mindfulnessmeditatie. Eén tot drie zuchten kunnen acute stress al wat verzachten. Uitleg: [de fysiologische zucht](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Ademhalingstimer — veelgestelde vragen",
+  "faq": [
+    { "q": "Wat is box breathing?", "a": "Vier gelijke fases — 4 seconden inademen, 4 vasthouden, 4 uitademen, 4 vasthouden — steeds herhaald. Het gelijkmatige ritme vertraagt je ademhaling tot zo'n 4 keer per minuut en helpt je kalm en gefocust te blijven." },
+    { "q": "Hoe doe je de 4-7-8 ademhaling?", "a": "Adem 4 seconden in door je neus, houd 7 seconden vast en adem 8 seconden langzaam uit door je mond. Begin met vier rondes, zittend of liggend." },
+    { "q": "Welke ademhalingsoefening helpt het best tegen stress en angst?", "a": "Technieken met een langere uitademing werken het snelst: de fysiologische zucht, lange uitademing (4-6) of 4-7-8. Voor een rustiger effect over 5–10 minuten is coherent ademen op zo'n 6 ademhalingen per minuut zacht en goed onderzocht." },
+    { "q": "Welke ademhalingsoefening helpt om in slaap te vallen?", "a": "De 4-7-8 ademhaling en de lange uitademing zijn het populairst voor het slapen, omdat de lange uitademing je vertraagt. Doe 3–5 minuten in bed, met de geluidssignalen aan en je ogen dicht." },
+    { "q": "Hoe lang moet je ademhalingsoefeningen doen?", "a": "Zelfs 1–3 minuten kan je op het moment zelf kalmeren. Voor blijvend effect gebruikten studies zo'n 5 minuten per dag; coherent ademen wordt vaak 10–20 minuten geoefend." },
+    { "q": "Wat is coherent of resonantie-ademen?", "a": "Gelijkmatig ademen op zo'n 5–6 ademhalingen per minuut, waardoor hartslag en ademhaling samen golven en je HRV maximaal wordt. Deze timer gebruikt 5,5 seconden in en 5,5 uit." },
+    { "q": "Is het normaal om duizelig te worden?", "a": "Een beetje licht in je hoofd aan het begin komt vaak voor, vooral bij lang vasthouden. Stop, adem gewoon door en probeer een zachter patroon zoals de lange uitademing. Heb je een hart- of longaandoening of ben je zwanger, sla dan lang adem vasthouden over." }
+  ],
+  "sourcesTitle": "Bronnen & methode",
+  "methodology": "Langzaam, gestuurd ademen is een van de weinige manieren om bewust invloed uit te oefenen op het autonome zenuwstelsel. Ademen op zo'n zes ademhalingen per minuut raakt de resonantiefrequentie van de baroreflex, maximaliseert de hartslagvariabiliteit en verschuift de balans naar het parasympathische deel (Lehrer & Gevirtz 2014; Zaccaro 2018). Een langere uitademing werkt extra kalmerend, en een gerandomiseerde studie liet zien dat vijf minuten per dag ademen met nadruk op de uitademing — vooral cyclisch zuchten — de stemming meer verbeterde en de ademfrequentie meer verlaagde dan mindfulness (Balban 2023). De timer past die principes toe met vijf klassieke patronen. Het is een educatieve ontspanningstool, geen medisch hulpmiddel.",
+  "sourcesContributes": [
+    "Systematische review die langzaam ademen koppelt aan hogere HRV, een parasympathische verschuiving en minder arousal.",
+    "Legt de resonantiefrequentie van ~0,1 Hz (≈6 ademhalingen/min) uit en het baroreflexmechanisme achter coherent ademen.",
+    "RCT: 5 minuten per dag ademen met nadruk op de uitademing — vooral cyclisch zuchten — verbeterde de stemming en verlaagde de ademfrequentie in rust meer dan mindfulnessmeditatie."
+  ],
+  "cta": "Op je telefoon begeleidt ONDA je ademhaling en zie je je hartslag reageren — via de camera of je Apple Watch.",
+  "related": {
+    "label": "Gerelateerd",
+    "resonance": "Vind je resonantie-ademtempo",
+    "hrv": "HRV-calculator per leeftijd",
+    "box": "Zo werkt box breathing",
+    "sigh": "De fysiologische zucht"
+  }
+}

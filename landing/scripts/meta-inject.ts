@@ -59,7 +59,7 @@ import { ONE_REP_MAX_FAQ } from '../src/data/one-rep-max'
 import { BODY_FAT_FAQ } from '../src/data/body-fat'
 import { SLEEP_CYCLE_FAQ } from '../src/data/sleep-cycle'
 import { SHUFFLE_FAQ } from '../src/data/cognitive-shuffle'
-import { BREATHING_FAQ } from '../src/data/breathing'
+import { breathToolCopy } from '../src/data/breath-tool-i18n'
 import { RESONANCE_FAQ } from '../src/data/resonance-breathing'
 import { DOPAMINE_FAQ } from '../src/data/dopamine-reset'
 import { BIOAGE_FAQ } from '../src/data/biological-age'
@@ -568,7 +568,7 @@ function buildBreadcrumbs(route: string): BreadcrumbItem[] {
     } else if (segments[1] === 'cognitive-shuffle') {
       items.push({ name: 'Cognitive Shuffle', url: `${SITE_URL}/tools/cognitive-shuffle` })
     } else if (segments[1] === 'breathing') {
-      items.push({ name: 'Breathing Pacer', url: `${SITE_URL}/tools/breathing` })
+      items.push({ name: 'Breathing Timer', url: `${SITE_URL}/tools/breathing` })
     } else if (segments[1] === 'resonance-breathing') {
       items.push({ name: 'Resonance Breathing', url: `${SITE_URL}/tools/resonance-breathing` })
     } else if (segments[1] === 'dopamine-detox') {
@@ -2173,16 +2173,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: SHUFFLE_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
-  if (route === '/tools/breathing') {
+  // /tools/breathing — guided breathing timer, all 12 languages (copy in src/data/breath-tool-i18n).
+  if (route === '/tools/breathing' || /^\/[a-z]{2}\/tools\/breathing$/.test(route)) {
+    const lang = (route === '/tools/breathing' ? 'en' : route.slice(1, 3)) as Lang
+    const c = breathToolCopy(lang)
     return {
-      title: 'Breathing Pacer — Box, 4-7-8 & Coherent Breathing | ONDA Life',
-      description:
-        'Free animated breathing pacer: follow the circle through box breathing, 4-7-8, coherent (resonance) or extended-exhale patterns to calm your nervous system and sleep.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/breathing.png`,
-      faq: { mainEntity: BREATHING_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/breathing.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/resonance-breathing') {

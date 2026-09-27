@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Timer de respiração — quadrada, 4-7-8 e coerente | ONDA Life",
+    "description": "Timer de respiração guiada grátis: siga o círculo e os sinais sonoros na respiração quadrada, 4-7-8, coerente ou suspiro fisiológico. De 1 a 10 minutos.",
+    "appName": "Timer de respiração guiada",
+    "appDescription": "Timer de respiração guiada grátis, com círculo animado, sinais sonoros e duração da sessão para respiração quadrada, 4-7-8, respiração coerente, expiração prolongada e suspiro fisiológico."
+  },
+  "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Timer de respiração" },
+  "h1": "Timer de respiração: quadrada, 4-7-8 e coerente",
+  "capsule": "Escolha uma técnica, aperte iniciar e respire junto com o círculo: ele cresce quando você inspira, para nas pausas e diminui quando você expira, com contagem regressiva e sinais sonoros opcionais para você poder fechar os olhos. Respirar devagar, com a expiração mais longa, leva o sistema nervoso para um estado de calma em poucos minutos; 3–5 minutos bastam para a maioria das pessoas.",
+  "imageAlt": "Timer de respiração guiada — círculo animado para respiração quadrada, 4-7-8 e coerente, ferramenta grátis da ONDA Life",
+  "patterns": {
+    "box": { "name": "Respiração quadrada", "tagline": "4-4-4-4 — foco estável e calma sob pressão" },
+    "478": { "name": "Respiração 4-7-8", "tagline": "Pausa longa e expiração longa — para desacelerar antes de dormir" },
+    "coherent": { "name": "Respiração coerente", "tagline": "Cerca de 5,5 respirações por minuto — o ritmo de ressonância para a HRV" },
+    "calming": { "name": "Expiração prolongada", "tagline": "Inspire em 4, expire em 6 — uma expiração mais longa para se acalmar rápido" },
+    "sigh": { "name": "Suspiro fisiológico", "tagline": "Duas inspirações, uma expiração longa — o reset mais rápido" }
+  },
+  "phases": { "in": "Inspire", "topup": "Mais um pouco", "hold": "Segure", "out": "Expire" },
+  "ui": {
+    "technique": "Técnica",
+    "duration": "Sessão",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Sinais sonoros",
+    "vibration": "Vibração",
+    "start": "► Iniciar",
+    "stop": "◼ Parar",
+    "press": "Aperte iniciar",
+    "cycles": "Respirações: {{n}}",
+    "remaining": "Faltam {{m}}:{{s}}",
+    "done": "Pronto — {{n}} respirações. Repare como você se sente agora.",
+    "again": "De novo",
+    "startThis": "Iniciar no timer ↑"
+  },
+  "safety": "Sente-se ou deite-se confortavelmente e respire pelo nariz sempre que possível. Se sentir tontura, pare e respire normalmente. Ferramenta educativa de relaxamento, não é um dispositivo médico nem tratamento para nenhuma condição. Se você tem problema cardíaco ou pulmonar ou está grávida, evite as pausas longas com o ar preso.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Timer de respiração quadrada (4-4-4-4)",
+      "body": "A respiração quadrada tem quatro fases iguais: inspire por 4 segundos, segure por 4, expire por 4 e segure por 4 — como se percorresse os lados de um quadrado. O ritmo constante e uniforme é popular entre militares, atletas e qualquer pessoa que precise manter a calma e o foco sob pressão, e é fácil de lembrar quando você não pode olhar para a tela. Ela reduz a respiração para cerca de 4 por minuto. Se as pausas parecerem longas, comece com 3-3-3-3. Guia: [respiração quadrada explicada](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "Timer de respiração 4-7-8",
+      "body": "Na respiração 4-7-8 você inspira suavemente pelo nariz por 4 segundos, segura por 7 e expira devagar pela boca por 8. A pausa longa e a expiração ainda mais longa desaceleram bastante a respiração e dão ênfase à saída do ar, o que acalma o sistema nervoso — por isso ela é tão usada para relaxar na cama. Comece com quatro ciclos; sentir uma leve tontura no início é comum, então fique sentado ou deitado. Guia: [respiração 4-7-8](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Timer de respiração coerente (ressonância)",
+      "body": "Respiração coerente é respirar de forma regular a cerca de 5–6 respirações por minuto — aqui, 5,5 segundos inspirando e 5,5 segundos expirando. Nesse ritmo, o coração e a respiração entram em sintonia pelo barorreflexo, o que gera as maiores oscilações da variabilidade da frequência cardíaca (HRV) — o ritmo usado no biofeedback de HRV. Como não há pausas, é o padrão mais suave para sessões longas, de 5 a 20 minutos. Guias: [respiração coerente](/articles/coherent-breathing-guide) e [descubra sua frequência de ressonância](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Respiração com expiração prolongada (4-6)",
+      "body": "Deixar a expiração mais longa que a inspiração é o jeito mais simples de se acalmar: a frequência cardíaca cai naturalmente enquanto você expira, então uma expiração mais longa inclina o equilíbrio para o relaxamento. Inspire por 4 segundos e expire por 6, sem pausas. Funciona em qualquer lugar — numa reunião, antes de uma apresentação ou quando o sono não vem — e é um bom primeiro exercício de respiração para ansiedade se segurar o ar for desconfortável."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Suspiro fisiológico (suspiro cíclico)",
+      "body": "O suspiro fisiológico são duas inspirações pelo nariz — uma completa e depois uma curtinha para completar — seguidas de uma expiração longa e lenta pela boca. É o que o corpo faz sozinho quando o choro para ou antes de dormir. Num estudo de Stanford de 2023 (Balban), cinco minutos por dia desse \"suspiro cíclico\" melhoraram o humor e reduziram a frequência respiratória mais do que a meditação mindfulness. De um a três suspiros já aliviam o estresse agudo. Guia: [o suspiro fisiológico](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Timer de respiração — perguntas frequentes",
+  "faq": [
+    { "q": "O que é respiração quadrada?", "a": "Quatro fases iguais — inspire 4 segundos, segure 4, expire 4, segure 4 — repetidas em sequência. O ritmo constante reduz a respiração para cerca de 4 por minuto e ajuda a manter a calma e o foco." },
+    { "q": "Como fazer a respiração 4-7-8?", "a": "Inspire pelo nariz por 4 segundos, segure por 7 e expire devagar pela boca por 8. Comece com quatro ciclos, sentado ou deitado." },
+    { "q": "Qual o melhor exercício de respiração para ansiedade?", "a": "As técnicas com expiração mais longa agem mais rápido: suspiro fisiológico, expiração prolongada (4-6) ou 4-7-8. Para um efeito mais estável em 5–10 minutos, a respiração coerente a cerca de 6 respirações por minuto é suave e bem estudada." },
+    { "q": "Qual exercício de respiração ajuda a dormir?", "a": "A respiração 4-7-8 e a expiração prolongada são as mais populares antes de dormir, porque a expiração longa desacelera o corpo. Faça 3–5 minutos deitado na cama, com os sinais sonoros ligados e os olhos fechados." },
+    { "q": "Por quanto tempo devo fazer exercícios de respiração?", "a": "Mesmo 1–3 minutos já acalmam na hora. Para um benefício duradouro, os estudos usaram cerca de 5 minutos por dia; a respiração coerente costuma ser praticada por 10–20 minutos." },
+    { "q": "O que é respiração coerente ou de ressonância?", "a": "Respirar de forma regular a cerca de 5–6 respirações por minuto, o que faz a frequência cardíaca e a respiração oscilarem juntas e maximiza a HRV. Este timer usa 5,5 segundos para inspirar e 5,5 para expirar." },
+    { "q": "É normal sentir tontura?", "a": "Uma leve tontura no início é comum, principalmente com pausas longas. Pare, respire normalmente e tente um padrão mais suave, como a expiração prolongada. Se você tem problema cardíaco ou pulmonar ou está grávida, evite segurar o ar por muito tempo." }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "A respiração lenta e cadenciada é uma das poucas alavancas voluntárias sobre o sistema nervoso autônomo. Respirar a cerca de seis respirações por minuto atinge a frequência de ressonância do barorreflexo, maximizando a variabilidade da frequência cardíaca e deslocando o equilíbrio para o ramo parassimpático (Lehrer & Gevirtz 2014; Zaccaro 2018). Uma expiração mais longa acrescenta um efeito calmante, e um ensaio randomizado mostrou que cinco minutos por dia de respiração com foco na expiração — sobretudo o suspiro cíclico — melhoraram o humor e reduziram a frequência respiratória mais do que o mindfulness (Balban 2023). O timer aplica esses princípios em cinco padrões clássicos. É uma ferramenta educativa de relaxamento, não um dispositivo médico.",
+  "sourcesContributes": [
+    "Revisão sistemática que associa a respiração lenta a maior HRV, predomínio parassimpático e menor excitação.",
+    "Explica a frequência de ressonância de ~0,1 Hz (≈6 respirações/min) e o mecanismo do barorreflexo por trás da respiração coerente.",
+    "Ensaio randomizado: 5 minutos por dia de respiração com ênfase na expiração — sobretudo o suspiro cíclico — melhoraram o humor e reduziram a frequência respiratória em repouso mais do que a meditação mindfulness."
+  ],
+  "cta": "No celular, o ONDA guia sua respiração e mostra como sua frequência cardíaca responde — pela câmera ou pelo Apple Watch.",
+  "related": {
+    "label": "Relacionados",
+    "resonance": "Descubra sua frequência de respiração de ressonância",
+    "hrv": "Calculadora de HRV por idade",
+    "box": "Respiração quadrada explicada",
+    "sigh": "O suspiro fisiológico"
+  }
+}

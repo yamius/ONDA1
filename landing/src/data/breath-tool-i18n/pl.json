@@ -1,0 +1,89 @@
+{
+  "meta": {
+    "title": "Timer oddechowy — pudełkowe, 4-7-8, koherentne | ONDA Life",
+    "description": "Darmowy timer oddechowy: oddychaj z kołem i sygnałem dźwiękowym — oddychanie pudełkowe, 4-7-8, koherentne, wydłużony wydech, westchnienie. 1–10 min.",
+    "appName": "Timer oddechowy z prowadzeniem",
+    "appDescription": "Darmowy timer oddechowy z animowanym kołem, sygnałami dźwiękowymi i wyborem długości sesji: oddychanie pudełkowe, 4-7-8, koherentne, wydłużony wydech i westchnienie fizjologiczne."
+  },
+  "breadcrumb": { "home": "Strona główna", "tools": "Narzędzia", "current": "Timer oddechowy" },
+  "h1": "Timer oddechowy: oddychanie pudełkowe, 4-7-8 i koherentne",
+  "capsule": "Wybierz technikę, naciśnij start i oddychaj razem z kołem: rośnie przy wdechu, zatrzymuje się na pauzach i maleje przy wydechu. Odliczanie i opcjonalne sygnały dźwiękowe pozwalają ćwiczyć z zamkniętymi oczami. Wolny oddech z dłuższym wydechem w ciągu kilku minut przestawia układ nerwowy na spokój — większości osób wystarczą 3–5 minut.",
+  "imageAlt": "Timer oddechowy z prowadzeniem — animowane koło do oddychania pudełkowego, 4-7-8 i koherentnego, darmowe narzędzie ONDA Life",
+  "patterns": {
+    "box": { "name": "Oddychanie pudełkowe", "tagline": "4-4-4-4 — skupienie i spokój pod presją" },
+    "478": { "name": "Oddychanie 4-7-8", "tagline": "Długa pauza i długi wydech — wyciszenie przed snem" },
+    "coherent": { "name": "Oddychanie koherentne", "tagline": "Około 5,5 oddechu na minutę — rytm rezonansowy dla HRV" },
+    "calming": { "name": "Wydłużony wydech", "tagline": "Wdech 4, wydech 6 — dłuższy wydech, by szybko się uspokoić" },
+    "sigh": { "name": "Westchnienie fizjologiczne", "tagline": "Dwa wdechy, jeden długi wydech — najszybszy reset" }
+  },
+  "phases": { "in": "Wdech", "topup": "Jeszcze wdech", "hold": "Zatrzymaj", "out": "Wydech" },
+  "ui": {
+    "technique": "Technika",
+    "duration": "Sesja",
+    "minutes": "{{n}} min",
+    "unlimited": "∞",
+    "sound": "Sygnały dźwiękowe",
+    "vibration": "Wibracja",
+    "start": "► Start",
+    "stop": "◼ Stop",
+    "press": "Naciśnij start",
+    "cycles": "Oddechy: {{n}}",
+    "remaining": "Zostało {{m}}:{{s}}",
+    "done": "Gotowe — {{n}} oddechów. Zauważ, jak się teraz czujesz.",
+    "again": "Jeszcze raz",
+    "startThis": "Uruchom w timerze ↑"
+  },
+  "safety": "Usiądź lub połóż się wygodnie i w miarę możliwości oddychaj nosem. Jeśli zakręci ci się w głowie, przerwij i oddychaj normalnie. To edukacyjne narzędzie relaksacyjne, a nie wyrób medyczny ani metoda leczenia jakiejkolwiek choroby. Jeśli masz chorobę serca lub płuc albo jesteś w ciąży, pomiń długie zatrzymania oddechu.",
+  "sections": [
+    {
+      "pattern": "box",
+      "h2": "Oddychanie pudełkowe — timer (4-4-4-4)",
+      "body": "Oddychanie pudełkowe (box breathing) składa się z czterech równych faz: wdech przez 4 sekundy, zatrzymanie na 4, wydech przez 4 i znów zatrzymanie na 4 — jakbyś obrysowywał boki kwadratu. Ten równy, stały rytm stosują żołnierze, sportowcy i wszyscy, którzy muszą zachować spokój i skupienie pod presją. Łatwo go zapamiętać, gdy nie możesz patrzeć na ekran. Zwalnia oddech do około 4 oddechów na minutę. Jeśli pauzy wydają się za długie, zacznij od 3-3-3-3. Poradnik: [jak działa oddychanie pudełkowe](/articles/box-breathing-how-it-works)."
+    },
+    {
+      "pattern": "478",
+      "h2": "Oddychanie 4-7-8 — timer",
+      "body": "W oddychaniu 4-7-8 robisz cichy wdech nosem przez 4 sekundy, zatrzymujesz oddech na 7 i powoli wydychasz ustami przez 8. Długa pauza i jeszcze dłuższy wydech mocno zwalniają oddech i akcentują wydech, co uspokaja układ nerwowy — dlatego ta technika jest tak popularna wieczorem w łóżku. Na początek zrób cztery cykle; lekkie zawroty głowy na starcie są częste, więc usiądź lub się połóż. Poradnik: [oddychanie 4-7-8](/articles/4-7-8-breathing)."
+    },
+    {
+      "pattern": "coherent",
+      "h2": "Oddychanie koherentne (rezonansowe) — timer",
+      "body": "Oddychanie koherentne to równy oddech w tempie około 5–6 oddechów na minutę — tutaj 5,5 sekundy wdechu i 5,5 sekundy wydechu. W tym tempie rytm serca i oddech synchronizują się dzięki odruchowi z baroreceptorów, co daje największe wahania zmienności rytmu serca (HRV) — to rytm stosowany w biofeedbacku HRV. Nie ma tu zatrzymań, więc to najłagodniejszy wzorzec na dłuższe sesje 5–20 minut. Poradniki: [oddychanie koherentne](/articles/coherent-breathing-guide) i [znajdź swoje tempo rezonansowe](/tools/resonance-breathing)."
+    },
+    {
+      "pattern": "calming",
+      "h2": "Wydłużony wydech (4-6) — ćwiczenie oddechowe na stres",
+      "body": "Wydech dłuższy od wdechu to najprostszy sposób, by się uspokoić: podczas wydechu tętno naturalnie spada, więc dłuższy wydech przechyla szalę w stronę relaksu. Wdech przez 4 sekundy, wydech przez 6, bez zatrzymań. Działa wszędzie — na spotkaniu, przed wystąpieniem albo gdy nie możesz zasnąć — i jest dobrym pierwszym krokiem, jeśli zatrzymywanie oddechu jest dla ciebie niekomfortowe."
+    },
+    {
+      "pattern": "sigh",
+      "h2": "Westchnienie fizjologiczne (cykliczne wzdychanie)",
+      "body": "Westchnienie fizjologiczne to dwa wdechy nosem — pełny oddech i krótkie „dobranie” powietrza — a potem długi, powolny wydech ustami. Ciało robi to samo naturalnie, gdy kończy się płacz albo przed zaśnięciem. W badaniu Stanforda z 2023 roku (Balban) pięć minut dziennie takiego „cyklicznego wzdychania” poprawiało nastrój i obniżało częstość oddechu bardziej niż medytacja uważności. Jedno do trzech westchnień potrafi złagodzić ostry stres. Poradnik: [westchnienie fizjologiczne](/articles/physiological-sigh)."
+    }
+  ],
+  "faqTitle": "Timer oddechowy — najczęstsze pytania",
+  "faq": [
+    { "q": "Na czym polega oddychanie pudełkowe?", "a": "To cztery równe fazy — wdech 4 sekundy, zatrzymanie 4, wydech 4, zatrzymanie 4 — powtarzane w pętli. Równy rytm zwalnia oddech do około 4 oddechów na minutę i pomaga zachować spokój i skupienie." },
+    { "q": "Jak wykonać oddychanie 4-7-8?", "a": "Zrób wdech nosem przez 4 sekundy, zatrzymaj oddech na 7 i powoli wydychaj ustami przez 8. Zacznij od czterech cykli, na siedząco lub na leżąco." },
+    { "q": "Jakie ćwiczenia oddechowe są najlepsze na stres i lęk?", "a": "Najszybciej działają techniki z dłuższym wydechem: westchnienie fizjologiczne, wydłużony wydech (4-6) lub 4-7-8. Dla spokojniejszego efektu przez 5–10 minut łagodne i dobrze przebadane jest oddychanie koherentne w tempie około 6 oddechów na minutę." },
+    { "q": "Jakie ćwiczenie oddechowe pomaga zasnąć?", "a": "Przed snem najpopularniejsze są oddychanie 4-7-8 i wydłużony wydech, bo długi wydech wycisza. Ćwicz 3–5 minut w łóżku z włączonymi sygnałami dźwiękowymi i zamkniętymi oczami." },
+    { "q": "Jak długo robić ćwiczenia oddechowe?", "a": "Już 1–3 minuty mogą uspokoić w danej chwili. Dla trwałego efektu w badaniach stosowano około 5 minut dziennie; oddychanie koherentne często ćwiczy się przez 10–20 minut." },
+    { "q": "Czym jest oddychanie koherentne, czyli rezonansowe?", "a": "To równy oddech w tempie około 5–6 oddechów na minutę, przy którym tętno i oddech falują razem, a HRV osiąga maksimum. Ten timer stosuje 5,5 sekundy wdechu i 5,5 sekundy wydechu." },
+    { "q": "Czy zawroty głowy są normalne?", "a": "Lekkie zawroty głowy na początku są częste, zwłaszcza przy długich zatrzymaniach. Przerwij, oddychaj normalnie i wypróbuj łagodniejszy wzorzec, np. wydłużony wydech. Jeśli masz chorobę serca lub płuc albo jesteś w ciąży, pomiń długie zatrzymania oddechu." }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Wolny, rytmiczny oddech to jedna z niewielu dźwigni, którymi świadomie wpływamy na autonomiczny układ nerwowy. Oddychanie w tempie około sześciu oddechów na minutę trafia w częstotliwość rezonansową baroreceptorów, maksymalizując zmienność rytmu serca i przesuwając równowagę w stronę układu przywspółczulnego (Lehrer & Gevirtz 2014; Zaccaro 2018). Dłuższy wydech dodaje efekt uspokajający, a randomizowane badanie wykazało, że pięć minut dziennie oddychania z akcentem na wydech — przede wszystkim cyklicznego wzdychania — poprawiało nastrój i obniżało częstość oddechu bardziej niż uważność (Balban 2023). Timer stosuje te zasady w pięciu klasycznych wzorcach. To edukacyjne narzędzie relaksacyjne, a nie wyrób medyczny.",
+  "sourcesContributes": [
+    "Przegląd systematyczny łączący wolny oddech z wyższym HRV, przesunięciem w stronę układu przywspółczulnego i mniejszym pobudzeniem.",
+    "Wyjaśnia częstotliwość rezonansową ~0,1 Hz (≈6 oddechów/min) i mechanizm baroreceptorowy stojący za oddychaniem koherentnym.",
+    "RCT: 5 minut dziennie oddychania z akcentem na wydech — przede wszystkim cyklicznego wzdychania — poprawiało nastrój i obniżało spoczynkową częstość oddechu bardziej niż medytacja uważności."
+  ],
+  "cta": "Na telefonie ONDA prowadzi twój oddech i pokazuje, jak reaguje tętno — z kamery lub Apple Watch.",
+  "related": {
+    "label": "Zobacz też",
+    "resonance": "Znajdź swoje tempo oddychania rezonansowego",
+    "hrv": "Kalkulator HRV według wieku",
+    "box": "Jak działa oddychanie pudełkowe",
+    "sigh": "Westchnienie fizjologiczne"
+  }
+}
