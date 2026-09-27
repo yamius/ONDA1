@@ -122,6 +122,11 @@ export interface HealthKitHeartRatePlugin {
    *  numbers (those live in the in-app card); it varies by how many signals have
    *  fired: pushIntro for the first few, pushShort afterwards. */
   setAnomalyStrings(strings: { title: string; pushIntro: string; pushShort: string }): Promise<{ ok: boolean }>;
+  /** Calm check-ins Segment A (task 16): hand the native background evaluator the
+   *  localized A1/A2/A3 templates (A1 uses {x} for the avg resting pulse), whether
+   *  A3 is eligible right now (simple mode + install week 2), and the on/off toggle.
+   *  Native decides + posts the steady-norm nudge in the background. */
+  setCheckinStrings(strings: { title: string; a1: string; a2: string; a3: string; enabled: boolean; a3Eligible: boolean }): Promise<{ ok: boolean }>;
   /** Register HealthKit background delivery so a night deviation posts a local notification. */
   startAnomalyMonitoring(): Promise<{ started: boolean }>;
   /** Post a time-sensitive local notification after a delay (internal signal test mode). */

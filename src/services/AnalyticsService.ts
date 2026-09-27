@@ -82,6 +82,13 @@ export type AnalyticsEventName =
   | 'anomaly_push_sent'              // a local notification was scheduled/posted — params: metric.
   | 'anomaly_push_opened'            // user opened the app from that notification — params: metric.
   | 'anomaly_practice_started'       // user started the offered slow-down practice from a signal — params: metric.
+  // Calm check-ins (task 16) — the gentle counterpart to signals (steady/no-watch nudges)
+  | 'checkin_push_sent'              // a calm check-in was scheduled — params: segment (watch|no_watch), type (A1|A2|A3|B1|B2).
+  | 'checkin_push_opened'           // user opened the app from a calm check-in — params: segment, type.
+  | 'checkin_disabled'              // user turned the "Calm check-ins" toggle off — no params.
+  | 'camera_checkin_saved'          // a standalone camera pulse was saved to the diary — params: bpm_bucket (range only, not exact).
+  | 'notif_prompt_shown'            // the post-camera "remind every 3 days?" primer was shown — params: trigger (first_camera|third_camera).
+  | 'notif_prompt_answered'         // user answered it — params: answer (yes|no), trigger.
   // Timeline export (on-device PDF, no content logged)
   | 'timeline_export_tapped'         // tapped the share/export button in the Timeline.
   | 'timeline_export_completed'      // PDF built on-device and the share sheet opened.

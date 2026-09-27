@@ -28,6 +28,12 @@
     "requesting": "请求中..."
   },
   "reminders": {
+    "checkin_title": "ONDA",
+    "checkin_a1": "已连续 4 晚处于你的常态范围。静息脉搏稳定在 {{x}} 左右。做个简短练习保持节律。",
+    "checkin_a2": "又是 4 个平稳的夜晚——你的身体处于正常范围。有什么起了作用？记进日记吧。",
+    "checkin_a3": "你的身体处于自己的节律中。想看到更多？在设置中切换到专家模式。",
+    "checkin_b1": "今天有几分钟安静时间吗？做个简短练习保持你的节律。",
+    "checkin_b2": "快速测量：用 iPhone 摄像头约 30 秒，脉搏就会存入日记。看着你的历史不断累积。",
     "daily_title": "ONDA",
     "streak_title": "ONDA",
     "daily_body": [
@@ -208,6 +214,10 @@
     "pulse_label": "脉搏（BPM）"
   },
   "camera": {
+    "checkin_saved": "已存入日记 · {{bpm}} 次/分",
+    "notif_primer_body": "每次脉搏测量都会存入你的历史，方便你看到随时间的变化。要每 3 天提醒一次吗？大约 30 秒。",
+    "notif_primer_allow": "提醒我",
+    "notif_primer_skip": "暂不",
     "offer_title": "实时看你的脉搏回应",
     "offer_body": "把指尖放在后置摄像头上，看脉搏随呼吸起伏。",
     "offer_cta": "使用摄像头",
@@ -1025,6 +1035,8 @@
     "no_practice_ratings": "暂无评分。完成练习并评价它们！"
   },
   "settings": {
+    "calm_checkins": "平静提醒",
+    "calm_checkins_hint": "状态平稳时偶尔的温和提醒——不影响偏差信号。",
     "contact_developers": "联系开发者",
     "contact_subject": "ONDA — 反馈",
     "contact_body_hint": "ONDA 团队你好，",
