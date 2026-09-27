@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Tętno spoczynkowe według wieku — normy | ONDA Life",
+    "description": "Darmowy kalkulator: podaj wiek, płeć i tętno spoczynkowe, a zobaczysz swój percentyl na tle norm CDC dla kobiet i mężczyzn w Twoim wieku.",
+    "appName": "Kalkulator tętna spoczynkowego według wieku",
+    "appDescription": "Darmowy kalkulator, który porównuje Twoje tętno spoczynkowe z normami CDC NHANES dla Twojego wieku i płci i podaje przybliżony percentyl."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "tools": "Narzędzia",
+    "current": "Tętno spoczynkowe według wieku"
+  },
+  "h1": "Tętno spoczynkowe według wieku",
+  "capsule": "Prawidłowe tętno spoczynkowe u dorosłych wynosi ok. 60–100 ud./min, a u zdrowych osób zwykle 60–79 ud./min. Mediana to ok. 68–69 ud./min u mężczyzn i 70–74 ud./min u kobiet — i prawie nie zmienia się z wiekiem. Podaj wiek, płeć i tętno spoczynkowe, aby poznać swój percentyl, a potem obserwuj własny trend — on mówi więcej.",
+  "imageAlt": "Tętno spoczynkowe według wieku — tabela dla kobiet i mężczyzn, darmowy kalkulator ONDA Life",
+  "sex": {
+    "label": "Płeć",
+    "male": "Mężczyzna",
+    "female": "Kobieta"
+  },
+  "age": {
+    "label": "Wiek",
+    "placeholder": "np. 35"
+  },
+  "value": {
+    "label": "Tętno spoczynkowe (ud./min)",
+    "placeholder": "np. 64"
+  },
+  "source": {
+    "label": "Skąd wziąć swój wynik",
+    "hint": "Najlepiej: policz tętno rano, zanim wstaniesz z łóżka, albo użyj tętna spoczynkowego z zegarka. Aplikacja Zdrowie na iPhonie → Przeglądaj → Serce → Tętno spoczynkowe (Apple Watch). Oura, Whoop i Garmin pokazują tętno spoczynkowe lub najniższe tętno w czasie snu — często o kilka ud./min niższe niż pomiar na siedząco."
+  },
+  "result": {
+    "percentile": "Niższe niż u ok. {{p}}% {{sex}} w wieku {{band}}",
+    "sexMen": "mężczyzn",
+    "sexWomen": "kobiet"
+  },
+  "tiers": {
+    "veryLow": "Bardzo niskie — poziom sportowca",
+    "low": "Niższe niż u większości",
+    "typical": "Typowe",
+    "higher": "Wyższe niż u większości",
+    "high": "Wysokie jak na Twój wiek"
+  },
+  "summaries": {
+    "veryLow": "{{v}} ud./min to mniej niż u ok. 90% zdrowych {{sexWord}} w wieku {{band}} (mediana ~{{median}} ud./min). To częste u osób trenujących wytrzymałościowo i zwykle świadczy o wydolnym sercu.",
+    "low": "{{v}} ud./min to poniżej mediany (~{{median}} ud./min) dla {{sexWord}} w wieku {{band}} — zdrowe, oszczędne tętno spoczynkowe.",
+    "typical": "{{v}} ud./min mieści się w typowym środkowym zakresie dla {{sexWord}} w wieku {{band}} (mediana ~{{median}} ud./min). Trening tlenowy, dobry sen i mniej alkoholu to najpewniejsze sposoby, by obniżyć je w ciągu kilku miesięcy.",
+    "higher": "{{v}} ud./min to więcej niż u ok. trzech czwartych {{sexWord}} w wieku {{band}} (mediana ~{{median}} ud./min). Pojedynczy pomiar łatwo podnoszą kofeina, stres, upał czy słaby sen — sprawdź średnią z porannych pomiarów z tygodnia.",
+    "high": "{{v}} ud./min to górne 10% wśród {{sexWord}} w wieku {{band}} (mediana ~{{median}} ud./min). Jeśli poranne tętno spoczynkowe utrzymuje się na takim poziomie, warto omówić to z lekarzem."
+  },
+  "flags": {
+    "tachy": "Tętno spoczynkowe powyżej 100 ud./min to tachykardia. Jeśli w spoczynku stale jest tak wysokie albo towarzyszą mu kołatanie serca, zawroty głowy lub duszność, skonsultuj się z lekarzem.",
+    "brady": "Poniżej 50 ud./min to norma u wielu osób wytrenowanych. Jeśli towarzyszą temu zawroty głowy, omdlenia, nietypowe zmęczenie lub duszność, skonsultuj się z lekarzem."
+  },
+  "wearableNote": "Zegarki i pierścienie mierzą tętno spoczynkowe lub w czasie snu, które zwykle jest o kilka ud./min niższe niż pomiar na siedząco, na którym opierają się te normy — więc wynik z urządzenia może wyglądać nieco lepiej. Porównuj własną średnią tygodniową.",
+  "invalid": "Podaj prawidłowy wiek (18–120) i tętno spoczynkowe (30–150 ud./min).",
+  "disclaimer": "Szacunek edukacyjny, nie porada medyczna. Percentyle pochodzą z badania CDC NHANES zdrowych dorosłych w USA (tętno na siedząco). Twój poranny trend jest ważniejszy niż pojedynczy pomiar. Tętno spoczynkowe podnoszą kofeina, stres, upał, choroba, alkohol i słaby sen.",
+  "tables": {
+    "menTitle": "Tętno spoczynkowe według wieku — mężczyźni",
+    "womenTitle": "Tętno spoczynkowe według wieku — kobiety",
+    "caption": "Tętno spoczynkowe na siedząco, ud./min. CDC NHANES 1999–2008 (Ostchega 2011), zdrowi dorośli.",
+    "age": "Wiek",
+    "p10": "Niskie (p10)",
+    "p25": "p25",
+    "p50": "Mediana",
+    "p75": "p75",
+    "p90": "Wysokie (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Prawidłowe tętno spoczynkowe według wieku — jakie jest?",
+      "body": "U dorosłych za prawidłowe uznaje się tętno spoczynkowe od 60 do 100 ud./min, a wielu kardiologów traktuje ok. 50–90 ud./min jako zakres zdrowy. W badaniu CDC NHANES zdrowych dorosłych w USA mediana tętna spoczynkowego na siedząco wynosiła ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min od 60. roku życia — przez całe dorosłe życie niemal bez zmian. Środkowa połowa mężczyzn (p25–p75) mieściła się mniej więcej między 60 a 77 ud./min. W przeciwieństwie do HRV tętno spoczynkowe u dorosłych prawie nie zależy od wieku; dużo ważniejsze są kondycja, geny, sen i stres. Dlatego najbardziej przydatne jest porównanie z własnym porannym trendem. Pełny poradnik: [tętno spoczynkowe według wieku](/articles/resting-heart-rate-by-age)."
+    },
+    {
+      "h2": "Norma tętna u kobiety",
+      "body": "Tętno spoczynkowe kobiet jest o kilka uderzeń wyższe niż mężczyzn, głównie dlatego, że serce jest zwykle mniejsze i przy każdym skurczu pompuje nieco mniej krwi. W NHANES mediana wynosiła ok. 74 ud./min u kobiet w wieku 18–39 lat, 71 ud./min w wieku 40–59 i 70 ud./min od 60. roku życia, a środkowa połowa mieściła się mniej więcej między 64 a 82 ud./min. Tętno spoczynkowe zmienia się też w cyklu miesiączkowym — w drugiej jego połowie bywa o kilka uderzeń wyższe — i rośnie w ciąży. Porównuj więc podobne sytuacje: tę samą porę dnia, tę samą fazę cyklu i średnią tygodniową zamiast jednego dnia. Wybierz w kalkulatorze „Kobieta”, aby użyć tabeli dla kobiet."
+    },
+    {
+      "h2": "Tętno za wysokie w spoczynku — dlaczego?",
+      "body": "Wyższe niż zwykle tętno spoczynkowe najczęściej jest przejściowe: kofeina, alkohol poprzedniego wieczoru, zbyt krótki lub słaby sen, odwodnienie, upał, ciężki trening, stres albo rozwijająca się infekcja. Mogą je też podnosić niektóre leki (np. obkurczające śluzówkę nosa czy leki na tarczycę) oraz stany takie jak anemia czy nadczynność tarczycy. Patrz na wzorzec. Kilka uderzeń więcej przez dzień czy dwa to zwykłe wahania; poranne tętno spoczynkowe wyraźnie powyżej Twojej normy przez kilka dni — zwłaszcza razem z niższym HRV — sugeruje, że organizm jest bardziej obciążony, niż sobie radzi. Powyżej 100 ud./min w spoczynku albo wysokie tętno z kołataniem serca, zawrotami głowy lub dusznością to powód, by pójść do lekarza. Więcej: [jak alkohol wpływa na HRV i tętno spoczynkowe](/articles/how-much-alcohol-lowers-hrv) oraz [objawy przetrenowania](/articles/overtraining-hrv-resting-heart-rate)."
+    },
+    {
+      "h2": "Jak obniżyć tętno spoczynkowe",
+      "body": "Najpewniejszym sposobem na obniżenie tętna spoczynkowego jest regularny trening tlenowy: spokojne cardio w strefie 2 co najmniej trzy razy w tygodniu sprawia, że serce przy każdym skurczu pompuje więcej krwi, więc w spoczynku potrzebuje mniej uderzeń. Efekty widać zwykle po 6–12 tygodniach. Pomagają też sen, ograniczenie alkoholu (zwłaszcza wieczorem), mniej kofeiny w drugiej połowie dnia, nawodnienie i radzenie sobie z przewlekłym stresem. Powolne oddychanie obniża tętno w trakcie ćwiczenia i z czasem wspiera regenerację. Śledź średnią poranną co tydzień, a nie z dnia na dzień. Poradniki: [trening w strefie 2](/articles/zone-2-training-aerobic-base) i [jak naturalnie podnieść HRV](/articles/how-to-raise-hrv-naturally)."
+    },
+    {
+      "h2": "Tętno spoczynkowe a HRV",
+      "body": "Tętno spoczynkowe mówi, jak szybko serce bije w spoczynku; zmienność rytmu serca (HRV) — jak bardzo różnią się odstępy między uderzeniami, co pokazuje, jak elastycznie pracuje układ nerwowy. Zwykle zmieniają się w przeciwnych kierunkach: gdy jesteś dobrze zregenerowany, tętno spoczynkowe jest niskie, a HRV wysokie; przy stresie, chorobie czy przetrenowaniu tętno spoczynkowe rośnie, a HRV spada, często jednocześnie. Tętno spoczynkowe jest stabilniejsze i łatwiej je porównać między urządzeniami; HRV reaguje szybciej. Śledzenie obu względem własnej normy daje więcej niż każdy wskaźnik osobno. Sprawdź też swoje HRV: [Kalkulator HRV według wieku](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Tętno spoczynkowe — najczęstsze pytania",
+  "faq": [
+    {
+      "q": "Jakie jest prawidłowe tętno spoczynkowe według wieku?",
+      "a": "U dorosłych 60–100 ud./min, a u zdrowych osób zwykle 60–79 ud./min. Mediana CDC NHANES to ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min po 60.; u kobiet ok. 74, 71 i 70 ud./min. Z wiekiem prawie się nie zmienia."
+    },
+    {
+      "q": "Jaka jest norma tętna u kobiety?",
+      "a": "O kilka uderzeń wyższa niż u mężczyzn: mediana to ok. 74 ud./min w wieku 18–39 lat, 71 ud./min w wieku 40–59 i 70 ud./min od 60. roku życia, a środkowa połowa kobiet mieści się mniej więcej między 64 a 82 ud./min."
+    },
+    {
+      "q": "Czy tętno spoczynkowe 50 to dobry wynik?",
+      "a": "U osób wysportowanych tak — 50 ud./min jest częste u dorosłych trenujących wytrzymałościowo i świadczy o wydolnym sercu. Jeśli tętnu poniżej 50 towarzyszą zawroty głowy, omdlenia lub nietypowe zmęczenie, skonsultuj się z lekarzem."
+    },
+    {
+      "q": "Czy tętno spoczynkowe 90 jest za wysokie?",
+      "a": "90 ud./min mieści się jeszcze w normie 60–100, ale jest wyższe niż u ok. 90% zdrowych dorosłych. Jeśli poranne tętno spoczynkowe utrzymuje się w okolicy 90, warto przyjrzeć się snowi, alkoholowi, kofeinie i stresowi — i porozmawiać z lekarzem."
+    },
+    {
+      "q": "Jak zmierzyć tętno spoczynkowe?",
+      "a": "Rano, zanim wstaniesz i zanim wypijesz kawę: policz tętno przez 30 sekund i pomnóż przez dwa albo użyj tętna spoczynkowego z zegarka. Uśrednij kilka poranków zamiast ufać jednemu pomiarowi."
+    },
+    {
+      "q": "Dlaczego tętno spoczynkowe z Apple Watch jest niższe niż u lekarza?",
+      "a": "Apple Watch i inne urządzenia mierzą tętno, gdy jesteś zupełnie nieruchomy, często leżąc lub śpiąc, a pomiar w gabinecie odbywa się na siedząco i często w lekkim stresie. Różnica kilku ud./min jest normalna."
+    },
+    {
+      "q": "Jak obniżyć tętno spoczynkowe?",
+      "a": "Najsilniejszą dźwignią jest regularny wysiłek tlenowy, np. cardio w strefie 2 — efekty po 6–12 tygodniach. Pomagają też lepszy sen, mniej alkoholu i późnej kofeiny, nawodnienie i radzenie sobie ze stresem."
+    },
+    {
+      "q": "Kiedy tętno spoczynkowe jest niebezpieczne?",
+      "a": "Tętno spoczynkowe powyżej 100 ud./min (tachykardia) albo niskie tętno z zawrotami głowy lub omdleniami powinien ocenić lekarz. Przy bólu w klatce piersiowej, omdleniu lub szybkim, nierównym biciu serca szukaj pilnej pomocy."
+    }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Tabele pochodzą bezpośrednio z raportu CDC/NCHS o NHANES 1999–2008 (Ostchega i in. 2011, tabele 2–3): tętno spoczynkowe na siedząco u ok. 17 000 dorosłych w USA, z wyłączeniem osób z chorobami lub lekami wpływającymi na tętno. Przedział 18–39 wykorzystuje wiersz 20–39, a przedział 60+ wiersz 60–79. Twój percentyl jest interpolowany między opublikowanymi percentylami od 5. do 95. dla Twojego wieku i płci. Zegarki i pierścienie mierzą tętno spoczynkowe lub w czasie snu, zwykle o kilka ud./min niższe niż pomiar na siedząco.",
+  "sourcesContributes": [
+    "Bezpośrednie źródło tabel: percentyle tętna spoczynkowego na siedząco według wieku i płci z NHANES 1999–2008, z wyłączeniem chorób i leków wpływających na tętno (tabele 2–3).",
+    "Kontekst kliniczny: prawidłowe tętno spoczynkowe to mniej więcej 50–90 ud./min, niższe u osób bardzo wysportowanych, nieco wyższe u kobiet i częściowo uwarunkowane genetycznie.",
+    "Metaanaliza (ok. 1,2 mln osób): każde 10 ud./min wyższego tętna spoczynkowego wiąże się z ok. 9% wyższą śmiertelnością ogólną — dlatego niższe tętno spoczynkowe ma znaczenie."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "article": "Tętno spoczynkowe według wieku",
+    "hrv": "Kalkulator HRV według wieku",
+    "camera": "Zmierz tętno aparatem telefonu",
+    "zone2": "Tętno w strefie 2"
+  }
+}

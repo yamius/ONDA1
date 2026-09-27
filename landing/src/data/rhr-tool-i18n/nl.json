@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Rusthartslag per leeftijd — tabel man & vrouw | ONDA Life",
+    "description": "Gratis rusthartslag-calculator: vul je leeftijd, geslacht en rustpols in en zie je percentiel, met CDC-tabellen voor een normale rusthartslag per leeftijd.",
+    "appName": "Rusthartslag per leeftijd calculator",
+    "appDescription": "Gratis calculator die je rusthartslag vergelijkt met de CDC NHANES-normen voor je leeftijd en geslacht en een geschat percentiel geeft."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Rusthartslag per leeftijd"
+  },
+  "h1": "Rusthartslag per leeftijd",
+  "capsule": "Een normale rusthartslag voor volwassenen ligt tussen ongeveer 60 en 100 slagen per minuut (bpm); bij gezonde mensen meestal tussen de 60 en 79 bpm. De mediaan is ongeveer 68–69 bpm bij mannen en 70–74 bpm bij vrouwen, en verandert nauwelijks met de leeftijd. Vul je leeftijd, geslacht en rustpols in om je percentiel te zien — en volg daarna vooral je eigen trend, want die zegt meer.",
+  "imageAlt": "Tabel rusthartslag per leeftijd voor mannen en vrouwen — gratis calculator van ONDA Life",
+  "sex": {
+    "label": "Geslacht",
+    "male": "Man",
+    "female": "Vrouw"
+  },
+  "age": {
+    "label": "Leeftijd",
+    "placeholder": "bijv. 35"
+  },
+  "value": {
+    "label": "Rusthartslag (bpm)",
+    "placeholder": "bijv. 64"
+  },
+  "source": {
+    "label": "Waar haal je je getal vandaan?",
+    "hint": "Het beste: tel je pols 's ochtends voordat je opstaat, of gebruik de rusthartslag van je horloge. iPhone-app Gezondheid → Bladeren → Hart → Rusthartslag (Apple Watch). Oura, Whoop en Garmin tonen een rusthartslag of laagste hartslag tijdens de slaap — vaak een paar bpm lager dan een meting zittend."
+  },
+  "result": {
+    "percentile": "Lager dan ~{{p}}% van de {{sex}} van {{band}} jaar",
+    "sexMen": "mannen",
+    "sexWomen": "vrouwen"
+  },
+  "tiers": {
+    "veryLow": "Zeer laag — sportersniveau",
+    "low": "Lager dan de meesten",
+    "typical": "Gemiddeld",
+    "higher": "Hoger dan de meesten",
+    "high": "Hoog voor je leeftijd"
+  },
+  "summaries": {
+    "veryLow": "{{v}} bpm is lager dan bij ongeveer 90% van de gezonde {{sexWord}} van {{band}} jaar (mediaan ~{{median}} bpm). Dit zie je vaak bij duursporters en is meestal een teken van een fit hart.",
+    "low": "{{v}} bpm ligt onder de mediaan (~{{median}} bpm) voor {{sexWord}} van {{band}} jaar — een gezonde, efficiënte rusthartslag.",
+    "typical": "{{v}} bpm valt in het gemiddelde middengebied voor {{sexWord}} van {{band}} jaar (mediaan ~{{median}} bpm). Duurtraining, goed slapen en minder alcohol zijn de betrouwbaarste manieren om hem in de loop van maanden te verlagen.",
+    "higher": "{{v}} bpm is hoger dan bij ongeveer driekwart van de {{sexWord}} van {{band}} jaar (mediaan ~{{median}} bpm). Eén meting wordt makkelijk verhoogd door cafeïne, stress, warmte of slecht slapen — kijk naar je ochtendgemiddelde over een week.",
+    "high": "{{v}} bpm hoort bij het hoogste tiende deel van de {{sexWord}} van {{band}} jaar (mediaan ~{{median}} bpm). Blijft je rusthartslag 's ochtends zo hoog, bespreek het dan met een arts."
+  },
+  "flags": {
+    "tachy": "Een rusthartslag boven 100 bpm heet tachycardie. Blijft hij in rust zo hoog, of heb je daarbij hartkloppingen, duizeligheid of kortademigheid, ga dan naar een arts.",
+    "brady": "Onder 50 bpm is normaal voor veel getrainde mensen. Gaat het samen met duizeligheid, flauwvallen, ongewone vermoeidheid of kortademigheid, ga dan naar een arts."
+  },
+  "wearableNote": "Horloges en ringen meten je rust- of slaaphartslag, die meestal een paar bpm lager ligt dan de zittende meting waarop deze normen zijn gebaseerd — een wearable-getal kan dus iets gunstiger lijken dan het is. Vergelijk vooral je eigen weekgemiddelde.",
+  "invalid": "Vul een geldige leeftijd (18–120) en rusthartslag (30–150 bpm) in.",
+  "disclaimer": "Educatieve schatting, geen medisch advies. De percentielen komen uit het CDC NHANES-onderzoek onder gezonde Amerikaanse volwassenen (zittende pols). Je eigen ochtendtrend zegt meer dan één meting. De rusthartslag stijgt door cafeïne, stress, warmte, ziekte, alcohol en slecht slapen.",
+  "tables": {
+    "menTitle": "Rusthartslag per leeftijd — mannen",
+    "womenTitle": "Rusthartslag per leeftijd — vrouwen",
+    "caption": "Zittende rustpols, bpm. CDC NHANES 1999–2008 (Ostchega 2011), gezonde volwassenen.",
+    "age": "Leeftijd",
+    "p10": "Laag (p10)",
+    "p25": "p25",
+    "p50": "Mediaan",
+    "p75": "p75",
+    "p90": "Hoog (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Wat is een normale rusthartslag per leeftijd?",
+      "body": "Voor volwassenen geldt een rusthartslag tussen 60 en 100 bpm als normaal, en veel cardiologen zien ongeveer 50–90 bpm als het gezonde bereik. In het NHANES-onderzoek van de CDC onder gezonde Amerikaanse volwassenen was de mediane zittende rustpols ongeveer 69 bpm bij mannen van 18–39 jaar, 68 bpm bij 40–59 jaar en 67 bpm vanaf 60 — vrijwel vlak over het hele volwassen leven. De middelste helft van de mannen (p25–p75) zat tussen ongeveer 60 en 77 bpm. Anders dan HRV verandert de rusthartslag bij volwassenen nauwelijks met de leeftijd; conditie, erfelijkheid, slaap en stress spelen een veel grotere rol. Daarom is de nuttigste vergelijking die met je eigen ochtendtrend. Volledige gids: [rusthartslag per leeftijd](/articles/resting-heart-rate-by-age)."
+    },
+    {
+      "h2": "Rusthartslag bij vrouwen: wat is normaal?",
+      "body": "De rusthartslag van vrouwen ligt een paar slagen hoger dan die van mannen, vooral omdat het hart meestal kleiner is en per slag iets minder bloed rondpompt. In NHANES was de mediaan ongeveer 74 bpm bij vrouwen van 18–39 jaar, 71 bpm bij 40–59 jaar en 70 bpm vanaf 60, met de middelste helft tussen ongeveer 64 en 82 bpm. De rusthartslag beweegt ook mee met de menstruatiecyclus — in de tweede helft van de cyclus ligt hij vaak een paar slagen hoger — en stijgt tijdens de zwangerschap. Vergelijk dus gelijke situaties: hetzelfde tijdstip, dezelfde fase van je cyclus en je weekgemiddelde in plaats van één dag. Kies \"Vrouw\" in de calculator om de tabel voor vrouwen te gebruiken."
+    },
+    {
+      "h2": "Rusthartslag te hoog: wat zijn de oorzaken?",
+      "body": "Een hogere rusthartslag dan normaal is meestal tijdelijk: cafeïne, alcohol de avond ervoor, slecht of te kort slapen, uitdroging, warmte, een zware training, stress of een opkomende infectie. Sommige medicijnen (bijvoorbeeld neusdecongestiva of schildkliermedicatie) en aandoeningen zoals bloedarmoede of een te snel werkende schildklier kunnen hem ook verhogen. Kijk naar het patroon. Een paar slagen hoger gedurende een dag of twee is gewone ruis; een ochtendrusthartslag die meerdere dagen duidelijk boven je normale niveau blijft — zeker samen met een lagere HRV — wijst erop dat je lichaam meer belasting krijgt dan het aankan. Boven 100 bpm in rust, of een hoge pols met hartkloppingen, duizeligheid of kortademigheid, is een reden om naar een arts te gaan. Lees meer: [hoe alcohol je HRV en rusthartslag beïnvloedt](/articles/how-much-alcohol-lowers-hrv) en [signalen van overtraining](/articles/overtraining-hrv-resting-heart-rate)."
+    },
+    {
+      "h2": "Hoe verlaag je je rusthartslag?",
+      "body": "De betrouwbaarste manier om je rusthartslag te verlagen is regelmatige duurtraining: rustige Zone 2-cardio, drie keer per week of vaker, zorgt dat je hart per slag meer bloed rondpompt, zodat het in rust minder slagen nodig heeft. Verbetering zie je meestal na 6–12 weken. Goed slapen, minder alcohol (vooral 's avonds), minder cafeïne later op de dag, voldoende drinken en chronische stress aanpakken helpen ook. Langzaam ademen verlaagt je hartslag tijdens de oefening en ondersteunt het herstel op de lange termijn. Volg je ochtendgemiddelde per week, niet per dag. Gidsen: [Zone 2-training](/articles/zone-2-training-aerobic-base) en [HRV op natuurlijke wijze verhogen](/articles/how-to-raise-hrv-naturally)."
+    },
+    {
+      "h2": "Rusthartslag vs. HRV",
+      "body": "Je rusthartslag vertelt hoe snel je hart in rust klopt; hartslagvariabiliteit (HRV) vertelt hoeveel de tijd tussen de slagen varieert — een teken van hoe flexibel je zenuwstelsel werkt. Ze bewegen meestal in tegengestelde richting: ben je goed hersteld, dan is je rusthartslag laag en je HRV hoog; ben je gestrest, ziek of overtraind, dan kruipt je rusthartslag omhoog en daalt je HRV, vaak tegelijk. De rusthartslag is stabieler en makkelijker te vergelijken tussen apparaten; HRV reageert sneller. Beide volgen ten opzichte van je eigen baseline zegt meer dan één van de twee. Check ook je HRV: [HRV-calculator per leeftijd](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Rusthartslag — veelgestelde vragen",
+  "faq": [
+    {
+      "q": "Wat is een normale rusthartslag per leeftijd?",
+      "a": "Voor volwassenen 60–100 bpm, en bij gezonde mensen meestal tussen de 60 en 79. De CDC NHANES-mediaan is ongeveer 69 bpm voor mannen van 18–39, 68 bpm bij 40–59 en 67 bpm bij 60+; voor vrouwen ongeveer 74, 71 en 70 bpm. Hij verandert nauwelijks met de leeftijd."
+    },
+    {
+      "q": "Wat is een normale rusthartslag voor een vrouw?",
+      "a": "Een paar slagen hoger dan bij mannen: de mediaan is ongeveer 74 bpm bij 18–39, 71 bpm bij 40–59 en 70 bpm vanaf 60, met de middelste helft van de vrouwen tussen ongeveer 64 en 82 bpm."
+    },
+    {
+      "q": "Is een rusthartslag van 50 goed?",
+      "a": "Voor fitte mensen wel — 50 bpm komt veel voor bij duursporters en wijst op een efficiënt hart. Gaat een hartslag onder 50 samen met duizeligheid, flauwvallen of ongewone vermoeidheid, ga dan naar een arts."
+    },
+    {
+      "q": "Is een rusthartslag van 90 te hoog?",
+      "a": "90 bpm valt nog binnen het normale bereik van 60–100, maar is hoger dan bij ongeveer 90% van de gezonde volwassenen. Blijft je ochtendrusthartslag rond de 90, kijk dan naar slaap, alcohol, cafeïne en stress — en bespreek het met een arts."
+    },
+    {
+      "q": "Hoe meet ik mijn rusthartslag?",
+      "a": "'s Ochtends voordat je opstaat en vóór de koffie: tel je pols 30 seconden en verdubbel het getal, of gebruik de rusthartslag van je horloge. Neem het gemiddelde van meerdere ochtenden in plaats van op één meting te vertrouwen."
+    },
+    {
+      "q": "Waarom is mijn rusthartslag op de Apple Watch lager dan bij de dokter?",
+      "a": "De Apple Watch en andere wearables meten je pols als je helemaal stil bent, vaak liggend of slapend, terwijl een meting bij de dokter zittend is en vaak wat spanning geeft. Een verschil van een paar bpm is normaal."
+    },
+    {
+      "q": "Hoe kan ik mijn rusthartslag verlagen?",
+      "a": "Regelmatige duurtraining zoals Zone 2-cardio is de sterkste hefboom, met resultaat na 6–12 weken. Beter slapen, minder alcohol en late cafeïne, voldoende drinken en stressmanagement helpen ook."
+    },
+    {
+      "q": "Wanneer is een rusthartslag gevaarlijk?",
+      "a": "Een rusthartslag boven 100 bpm (tachycardie) of een lage hartslag met duizeligheid of flauwvallen moet door een arts worden bekeken. Zoek direct hulp bij pijn op de borst, flauwvallen of een jagende, onregelmatige hartslag."
+    }
+  ],
+  "sourcesTitle": "Bronnen & methode",
+  "methodology": "De tabellen komen rechtstreeks uit het CDC/NCHS-rapport over NHANES 1999–2008 (Ostchega et al. 2011, tabellen 2–3): zittende rustpols van ongeveer 17.000 Amerikaanse volwassenen, zonder mensen met een aandoening of medicijn die de pols beïnvloedt. De groep 18–39 gebruikt de rij 20–39 en de groep 60+ de rij 60–79. Je percentiel wordt geïnterpoleerd tussen de gepubliceerde 5e–95e percentielen voor je leeftijd en geslacht. Horloges en ringen meten je rust- of slaaphartslag, die meestal een paar bpm lager ligt dan een zittende meting.",
+  "sourcesContributes": [
+    "Directe bron van de tabellen: percentielen van de zittende rustpols per leeftijd en geslacht uit NHANES 1999–2008, zonder aandoeningen en medicijnen die de pols beïnvloeden (tabellen 2–3).",
+    "Klinische context: een normale rusthartslag ligt rond 50–90 bpm, lager bij zeer fitte mensen, iets hoger bij vrouwen en deels erfelijk bepaald.",
+    "Meta-analyse (ongeveer 1,2 miljoen mensen): elke 10 bpm hogere rusthartslag hangt samen met ongeveer 9% hogere sterfte door alle oorzaken — daarom doet een lagere rusthartslag ertoe."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "article": "Rusthartslag per leeftijd",
+    "hrv": "HRV-calculator per leeftijd",
+    "camera": "Meet je pols met de camera van je telefoon",
+    "zone2": "Zone 2-hartslag"
+  }
+}

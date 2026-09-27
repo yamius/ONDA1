@@ -43,6 +43,18 @@ The adult "normal" band of 60–100 bpm is wide, and fitness moves people within
 
 Within adulthood, age itself moves resting heart rate less than you'd expect — a fit 60-year-old can easily have a lower resting heart rate than an unfit 30-year-old. Fitness, stress, sleep and stimulants explain most of the difference.
 
+## Normal resting heart rate for adults: men and women
+
+In the CDC's NHANES survey of healthy U.S. adults (seated resting pulse, Ostchega 2011), the median barely changes with age, and women run a few beats higher than men:
+
+| Age | Men — median (typical p25–p75) | Women — median (typical p25–p75) |
+|---|---|---|
+| 18–39 | 69 bpm (61–76) | 74 bpm (66–82) |
+| 40–59 | 68 bpm (61–77) | 71 bpm (64–79) |
+| 60+ | 67 bpm (60–75) | 70 bpm (64–78) |
+
+Watches and rings read resting or sleeping heart rate, which usually comes out a few bpm lower than a seated check. See your percentile for your age and sex: **[Resting Heart Rate by Age calculator](/tools/resting-heart-rate)**.
+
 ## What raises and lowers your resting heart rate
 
 Your resting heart rate is a daily readout of how your body is doing. Common influences:

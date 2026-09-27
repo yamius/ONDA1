@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Frecuencia cardíaca en reposo por edad — tabla | ONDA Life",
+    "description": "Calculadora gratis: introduce tu edad, sexo y pulso en reposo y conoce tu percentil, con tablas CDC de frecuencia cardíaca normal para hombres y mujeres.",
+    "appName": "Calculadora de frecuencia cardíaca en reposo por edad",
+    "appDescription": "Calculadora gratuita que compara tu frecuencia cardíaca en reposo con las normas CDC NHANES para tu edad y sexo y devuelve un percentil aproximado."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "current": "Frecuencia cardíaca en reposo por edad"
+  },
+  "h1": "Frecuencia cardíaca en reposo por edad",
+  "capsule": "La frecuencia cardíaca normal en reposo en adultos es de unos 60–100 lpm, y en personas sanas suele estar entre 60 y 79 lpm. La mediana ronda los 68–69 lpm en hombres y los 70–74 lpm en mujeres, y apenas cambia con la edad. Introduce tu edad, sexo y pulso en reposo para ver tu percentil — y después sigue tu propia tendencia, que importa más.",
+  "imageAlt": "Tabla de frecuencia cardíaca en reposo por edad para hombres y mujeres — calculadora gratuita de ONDA Life",
+  "sex": {
+    "label": "Sexo",
+    "male": "Hombre",
+    "female": "Mujer"
+  },
+  "age": {
+    "label": "Edad",
+    "placeholder": "p. ej., 35"
+  },
+  "value": {
+    "label": "Frecuencia cardíaca en reposo (lpm)",
+    "placeholder": "p. ej., 64"
+  },
+  "source": {
+    "label": "De dónde sale tu cifra",
+    "hint": "Lo ideal: tomarte el pulso por la mañana antes de levantarte, o usar la frecuencia cardíaca en reposo de tu reloj. App Salud del iPhone → Explorar → Corazón → Frecuencia cardíaca en reposo (Apple Watch). Oura, Whoop y Garmin muestran la frecuencia en reposo o la más baja durante el sueño, a menudo unos lpm menos que una medición sentado."
+  },
+  "result": {
+    "percentile": "Más baja que la de ~{{p}}% de {{sex}} de {{band}} años",
+    "sexMen": "los hombres",
+    "sexWomen": "las mujeres"
+  },
+  "tiers": {
+    "veryLow": "Muy baja — rango de deportista",
+    "low": "Más baja que la mayoría",
+    "typical": "Típica",
+    "higher": "Más alta que la mayoría",
+    "high": "Alta para tu edad"
+  },
+  "summaries": {
+    "veryLow": "{{v}} lpm es menos que la de aproximadamente el 90% de {{sexWord}} de {{band}} años (mediana ~{{median}} lpm). Es habitual en personas con entrenamiento de resistencia y suele indicar un corazón en forma.",
+    "low": "{{v}} lpm está por debajo de la mediana (~{{median}} lpm) de {{sexWord}} de {{band}} años: una frecuencia en reposo sana y eficiente.",
+    "typical": "{{v}} lpm está en el rango medio típico de {{sexWord}} de {{band}} años (mediana ~{{median}} lpm). El entrenamiento aeróbico, dormir bien y beber menos alcohol son las formas más fiables de bajarla en unos meses.",
+    "higher": "{{v}} lpm es más que la de aproximadamente tres cuartas partes de {{sexWord}} de {{band}} años (mediana ~{{median}} lpm). Una sola medición sube fácilmente por la cafeína, el estrés, el calor o dormir mal: revisa tu promedio matutino durante una semana.",
+    "high": "{{v}} lpm está en el 10% más alto de {{sexWord}} de {{band}} años (mediana ~{{median}} lpm). Si tu frecuencia en reposo por la mañana se mantiene así de alta, conviene comentarlo con un médico."
+  },
+  "flags": {
+    "tachy": "Una frecuencia cardíaca en reposo superior a 100 lpm se llama taquicardia. Si se mantiene así de alta en reposo o va acompañada de palpitaciones, mareo o falta de aire, consulta a un médico.",
+    "brady": "Menos de 50 lpm es normal en muchas personas entrenadas. Si va acompañada de mareo, desmayos, cansancio inusual o falta de aire, consulta a un médico."
+  },
+  "wearableNote": "Relojes y anillos miden la frecuencia en reposo o durante el sueño, que suele ser unos lpm más baja que la medición sentado en la que se basan estas normas; por eso la cifra del wearable puede parecer algo mejor de lo que es. Compara tu propio promedio semanal.",
+  "invalid": "Introduce una edad válida (18–120) y una frecuencia cardíaca en reposo válida (30–150 lpm).",
+  "disclaimer": "Estimación educativa, no consejo médico. Los percentiles proceden de la encuesta NHANES de los CDC con adultos sanos de EE. UU. (pulso sentado). Tu tendencia matutina importa más que una sola medición. La frecuencia en reposo sube con la cafeína, el estrés, el calor, las enfermedades, el alcohol y dormir mal.",
+  "tables": {
+    "menTitle": "Frecuencia cardíaca en reposo por edad — hombres",
+    "womenTitle": "Frecuencia cardíaca en reposo por edad — mujeres",
+    "caption": "Pulso en reposo sentado, lpm. CDC NHANES 1999–2008 (Ostchega 2011), adultos sanos.",
+    "age": "Edad",
+    "p10": "Baja (p10)",
+    "p25": "p25",
+    "p50": "Mediana",
+    "p75": "p75",
+    "p90": "Alta (p90)"
+  },
+  "sections": [
+    {
+      "h2": "¿Cuál es la frecuencia cardíaca normal en reposo según la edad?",
+      "body": "En adultos se considera normal una frecuencia cardíaca en reposo de 60 a 100 lpm, y muchos cardiólogos toman aproximadamente 50–90 lpm como rango saludable. En la encuesta NHANES de los CDC con adultos sanos de EE. UU., la mediana del pulso en reposo sentado fue de unos 69 lpm en hombres de 18–39 años, 68 lpm a los 40–59 y 67 lpm a partir de los 60: casi plana a lo largo de la vida adulta. La mitad central de los hombres (p25–p75) estaba entre unos 60 y 77 lpm. A diferencia de la HRV, la frecuencia en reposo apenas cambia con la edad en adultos; la forma física, la genética, el sueño y el estrés influyen mucho más. Por eso la comparación más útil es con tu propia tendencia matutina. Guía completa: [frecuencia cardíaca en reposo por edad](/articles/resting-heart-rate-by-age)."
+    },
+    {
+      "h2": "Pulso en reposo en la mujer: ¿qué es normal?",
+      "body": "La frecuencia cardíaca en reposo de las mujeres es unos latidos más alta que la de los hombres, sobre todo porque el corazón suele ser más pequeño y bombea algo menos de sangre por latido. En NHANES la mediana fue de unos 74 lpm en mujeres de 18–39 años, 71 lpm a los 40–59 y 70 lpm a partir de los 60, con la mitad central entre unos 64 y 82 lpm. La frecuencia en reposo también varía con el ciclo menstrual —suele ser unos latidos más alta en la segunda mitad— y aumenta durante el embarazo. Así que compara en condiciones equivalentes: a la misma hora, en la misma fase del ciclo y con tu promedio semanal en lugar de un solo día. Elige \"Mujer\" en la calculadora para usar la tabla femenina."
+    },
+    {
+      "h2": "¿Por qué tengo el pulso en reposo alto?",
+      "body": "Una frecuencia en reposo más alta de lo habitual suele ser pasajera: cafeína, alcohol la noche anterior, dormir poco o mal, deshidratación, calor, un entrenamiento intenso, estrés o una infección que empieza. Algunos medicamentos (por ejemplo, descongestionantes o medicación tiroidea) y afecciones como la anemia o el hipertiroidismo también pueden elevarla. Fíjate en el patrón. Unos latidos más durante uno o dos días es ruido normal; una frecuencia matutina que se mantiene claramente por encima de lo habitual varios días —sobre todo junto con una HRV más baja— sugiere que tu cuerpo soporta más carga de la que asimila. Más de 100 lpm en reposo, o un pulso alto con palpitaciones, mareo o falta de aire, es motivo para consultar a un médico. Más información: [cómo afecta el alcohol a la HRV y a la frecuencia en reposo](/articles/how-much-alcohol-lowers-hrv) y [señales de sobreentrenamiento](/articles/overtraining-hrv-resting-heart-rate)."
+    },
+    {
+      "h2": "Cómo bajar la frecuencia cardíaca en reposo",
+      "body": "La forma más fiable de bajar la frecuencia en reposo es el entrenamiento aeróbico regular: cardio constante en Zona 2 tres o más veces por semana hace que el corazón bombee más sangre por latido, así que en reposo necesita menos latidos. Las mejoras suelen notarse en 6–12 semanas. También ayudan dormir bien, reducir el alcohol (sobre todo por la noche), tomar menos cafeína por la tarde, hidratarse y gestionar el estrés crónico. La respiración lenta baja la frecuencia mientras la practicas y favorece la recuperación con el tiempo. Sigue tu promedio matutino semana a semana, no día a día. Guías: [entrenamiento en Zona 2](/articles/zone-2-training-aerobic-base) y [cómo aumentar la HRV de forma natural](/articles/how-to-raise-hrv-naturally)."
+    },
+    {
+      "h2": "Frecuencia cardíaca en reposo vs. HRV",
+      "body": "La frecuencia en reposo indica lo rápido que late tu corazón en reposo; la variabilidad de la frecuencia cardíaca (HRV) indica cuánto varía el tiempo entre latidos, una señal de la flexibilidad con la que trabaja tu sistema nervioso. Normalmente se mueven en direcciones opuestas: cuando estás bien recuperado, la frecuencia en reposo es baja y la HRV alta; con estrés, enfermedad o sobreentrenamiento, la frecuencia sube y la HRV baja, a menudo a la vez. La frecuencia en reposo es más estable y fácil de comparar entre dispositivos; la HRV reacciona antes. Seguir ambas frente a tu propia línea base es mejor que mirar solo una. Revisa también tu HRV: [Calculadora de HRV por edad](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Frecuencia cardíaca en reposo — preguntas frecuentes",
+  "faq": [
+    {
+      "q": "¿Cuál es el pulso normal por edad?",
+      "a": "En adultos es de 60–100 lpm, y en personas sanas suele estar entre 60 y 79. La mediana CDC NHANES es de unos 69 lpm en hombres de 18–39 años, 68 lpm a los 40–59 y 67 lpm a partir de los 60; en mujeres, unos 74, 71 y 70 lpm. Apenas cambia con la edad."
+    },
+    {
+      "q": "¿Cuál es el pulso normal en reposo de una mujer?",
+      "a": "Unos latidos más alto que en los hombres: la mediana es de unos 74 lpm a los 18–39 años, 71 lpm a los 40–59 y 70 lpm a partir de los 60, con la mitad central de las mujeres entre unos 64 y 82 lpm."
+    },
+    {
+      "q": "¿Es bueno tener 50 pulsaciones en reposo?",
+      "a": "En personas en forma, sí: 50 lpm es habitual en adultos con entrenamiento de resistencia y refleja un corazón eficiente. Si una frecuencia inferior a 50 va con mareo, desmayos o cansancio inusual, consulta a un médico."
+    },
+    {
+      "q": "¿Es malo tener 90 pulsaciones en reposo?",
+      "a": "90 lpm sigue dentro del rango normal de 60–100, pero es más que la de aproximadamente el 90% de los adultos sanos. Si tu frecuencia matutina en reposo se mantiene en torno a 90, conviene revisar sueño, alcohol, cafeína y estrés, y comentarlo con un médico."
+    },
+    {
+      "q": "¿Cómo medir la frecuencia cardíaca en reposo?",
+      "a": "Por la mañana, antes de levantarte y antes de la cafeína: cuenta tu pulso durante 30 segundos y multiplícalo por dos, o usa la frecuencia en reposo de tu reloj. Promedia varias mañanas en lugar de fiarte de una sola medición."
+    },
+    {
+      "q": "¿Por qué mi Apple Watch marca una frecuencia en reposo más baja que la del médico?",
+      "a": "El Apple Watch y otros wearables leen tu pulso cuando estás totalmente quieto, a menudo tumbado o dormido, mientras que en consulta se mide sentado y a menudo con algo de nervios. Una diferencia de unos lpm es normal."
+    },
+    {
+      "q": "¿Cómo bajar las pulsaciones en reposo?",
+      "a": "El ejercicio aeróbico regular, como el cardio en Zona 2, es la palanca más potente, con resultados en 6–12 semanas. También ayudan dormir mejor, menos alcohol y cafeína por la tarde, hidratarse y gestionar el estrés."
+    },
+    {
+      "q": "¿Cuándo es peligrosa la frecuencia cardíaca en reposo?",
+      "a": "Una frecuencia en reposo superior a 100 lpm (taquicardia) o una frecuencia baja con mareo o desmayos debe revisarla un médico. Busca atención urgente ante dolor en el pecho, desmayo o latidos rápidos e irregulares."
+    }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "Las tablas proceden directamente del informe CDC/NCHS sobre NHANES 1999–2008 (Ostchega et al. 2011, tablas 2–3): pulso en reposo sentado de unos 17 000 adultos de EE. UU., excluyendo a personas con afecciones o medicamentos que alteran el pulso. La franja 18–39 usa la fila 20–39 y la franja 60+ la fila 60–79. Tu percentil se interpola entre los percentiles 5.º–95.º publicados para tu edad y sexo. Relojes y anillos miden la frecuencia en reposo o durante el sueño, que suele ser unos lpm más baja que una medición sentado.",
+  "sourcesContributes": [
+    "Fuente directa de las tablas: percentiles del pulso en reposo sentado por edad y sexo de NHANES 1999–2008, excluyendo afecciones y medicamentos que alteran el pulso (tablas 2–3).",
+    "Contexto clínico: una frecuencia en reposo normal es de aproximadamente 50–90 lpm, más baja en personas muy en forma, algo más alta en mujeres y en parte genética.",
+    "Metaanálisis (unos 1,2 millones de personas): cada 10 lpm más de frecuencia en reposo se asocia a un ~9% más de mortalidad por todas las causas; por eso importa una frecuencia en reposo más baja."
+  ],
+  "related": {
+    "label": "Relacionado",
+    "article": "Frecuencia cardíaca en reposo por edad",
+    "hrv": "Calculadora de HRV por edad",
+    "camera": "Mide tu pulso con la cámara del móvil",
+    "zone2": "Frecuencia cardíaca en Zona 2"
+  }
+}

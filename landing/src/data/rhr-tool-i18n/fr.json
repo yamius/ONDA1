@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Fréquence cardiaque au repos selon l'âge | ONDA Life",
+    "description": "Calculateur gratuit : entrez âge, sexe et pouls au repos pour voir votre percentile, avec les normes CDC de fréquence cardiaque au repos hommes et femmes.",
+    "appName": "Calculateur de fréquence cardiaque au repos selon l'âge",
+    "appDescription": "Calculateur gratuit qui compare votre fréquence cardiaque au repos aux normes CDC NHANES pour votre âge et votre sexe, et donne un percentile approximatif."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "tools": "Outils",
+    "current": "Fréquence cardiaque au repos selon l'âge"
+  },
+  "h1": "Fréquence cardiaque au repos selon l'âge",
+  "capsule": "Chez l'adulte, une fréquence cardiaque au repos normale se situe entre 60 et 100 bpm, et chez les personnes en bonne santé elle tourne généralement entre 60 et 79 bpm. La médiane est d'environ 68–69 bpm chez les hommes et 70–74 bpm chez les femmes, et elle varie à peine avec l'âge. Entrez votre âge, votre sexe et votre pouls au repos pour connaître votre percentile — puis suivez votre propre tendance, qui compte davantage.",
+  "imageAlt": "Tableau de la fréquence cardiaque au repos selon l'âge pour les hommes et les femmes — calculateur gratuit ONDA Life",
+  "sex": {
+    "label": "Sexe",
+    "male": "Homme",
+    "female": "Femme"
+  },
+  "age": {
+    "label": "Âge",
+    "placeholder": "ex. 35"
+  },
+  "value": {
+    "label": "Fréquence cardiaque au repos (bpm)",
+    "placeholder": "ex. 64"
+  },
+  "source": {
+    "label": "D'où vient votre chiffre",
+    "hint": "Idéal : prenez votre pouls le matin avant de vous lever, ou utilisez la fréquence cardiaque au repos de votre montre. App Santé de l'iPhone → Parcourir → Cœur → Fréquence cardiaque au repos (Apple Watch). Oura, Whoop et Garmin affichent une fréquence au repos ou la plus basse pendant le sommeil — souvent quelques bpm de moins qu'une mesure en position assise."
+  },
+  "result": {
+    "percentile": "Plus basse que celle d'environ {{p}} % des {{sex}} de {{band}} ans",
+    "sexMen": "hommes",
+    "sexWomen": "femmes"
+  },
+  "tiers": {
+    "veryLow": "Très basse — niveau sportif",
+    "low": "Plus basse que la moyenne",
+    "typical": "Habituelle",
+    "higher": "Plus élevée que la moyenne",
+    "high": "Élevée pour votre âge"
+  },
+  "summaries": {
+    "veryLow": "{{v}} bpm, c'est moins qu'environ 90 % des {{sexWord}} en bonne santé de {{band}} ans (médiane ~{{median}} bpm). C'est fréquent chez les sportifs d'endurance et généralement le signe d'un cœur en forme.",
+    "low": "{{v}} bpm est sous la médiane (~{{median}} bpm) des {{sexWord}} de {{band}} ans — une fréquence au repos saine et efficace.",
+    "typical": "{{v}} bpm se situe dans la zone habituelle des {{sexWord}} de {{band}} ans (médiane ~{{median}} bpm). L'entraînement aérobie, un bon sommeil et moins d'alcool sont les moyens les plus fiables de la faire baisser sur quelques mois.",
+    "higher": "{{v}} bpm, c'est plus qu'environ trois quarts des {{sexWord}} de {{band}} ans (médiane ~{{median}} bpm). Une seule mesure est facilement augmentée par la caféine, le stress, la chaleur ou un mauvais sommeil — regardez votre moyenne du matin sur une semaine.",
+    "high": "{{v}} bpm fait partie des 10 % les plus élevés chez les {{sexWord}} de {{band}} ans (médiane ~{{median}} bpm). Si votre fréquence au repos du matin reste aussi haute, parlez-en à un médecin."
+  },
+  "flags": {
+    "tachy": "Une fréquence cardiaque au repos supérieure à 100 bpm s'appelle une tachycardie. Si elle reste aussi élevée au repos, ou s'accompagne de palpitations, de vertiges ou d'essoufflement, consultez un médecin.",
+    "brady": "Moins de 50 bpm est normal chez beaucoup de personnes entraînées. Si cela s'accompagne de vertiges, d'évanouissements, d'une fatigue inhabituelle ou d'essoufflement, consultez un médecin."
+  },
+  "wearableNote": "Montres et bagues mesurent la fréquence au repos ou pendant le sommeil, généralement quelques bpm plus basse que la mesure assise sur laquelle reposent ces normes — un chiffre de montre peut donc paraître un peu meilleur qu'il ne l'est. Comparez plutôt votre propre moyenne hebdomadaire.",
+  "invalid": "Entrez un âge valide (18–120) et une fréquence cardiaque au repos valide (30–150 bpm).",
+  "disclaimer": "Estimation à visée éducative, pas un avis médical. Les percentiles proviennent de l'enquête CDC NHANES menée auprès d'adultes américains en bonne santé (pouls en position assise). Votre tendance du matin compte plus qu'une mesure isolée. La fréquence au repos augmente avec la caféine, le stress, la chaleur, la maladie, l'alcool et le manque de sommeil.",
+  "tables": {
+    "menTitle": "Fréquence cardiaque au repos selon l'âge — hommes",
+    "womenTitle": "Fréquence cardiaque au repos selon l'âge — femmes",
+    "caption": "Pouls au repos en position assise, bpm. CDC NHANES 1999–2008 (Ostchega 2011), adultes en bonne santé.",
+    "age": "Âge",
+    "p10": "Basse (p10)",
+    "p25": "p25",
+    "p50": "Médiane",
+    "p75": "p75",
+    "p90": "Élevée (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Quelle est la fréquence cardiaque normale au repos selon l'âge ?",
+      "body": "Chez l'adulte, une fréquence cardiaque au repos entre 60 et 100 bpm est considérée comme normale, et de nombreux cardiologues retiennent plutôt 50–90 bpm comme zone saine. Dans l'enquête NHANES du CDC menée auprès d'adultes américains en bonne santé, le pouls médian au repos en position assise était d'environ 69 bpm chez les hommes de 18–39 ans, 68 bpm à 40–59 ans et 67 bpm à partir de 60 ans — quasiment stable tout au long de la vie adulte. La moitié centrale des hommes (p25–p75) se situait entre environ 60 et 77 bpm. Contrairement à la VFC, la fréquence au repos change à peine avec l'âge chez l'adulte ; la condition physique, la génétique, le sommeil et le stress comptent bien davantage. C'est pourquoi la comparaison la plus utile reste celle avec votre propre tendance du matin. Guide complet : [fréquence cardiaque au repos selon l'âge](/articles/resting-heart-rate-by-age)."
+    },
+    {
+      "h2": "Pouls normal chez la femme au repos",
+      "body": "La fréquence cardiaque au repos des femmes est supérieure de quelques battements à celle des hommes, surtout parce que le cœur est généralement plus petit et éjecte un peu moins de sang à chaque battement. Dans NHANES, la médiane était d'environ 74 bpm chez les femmes de 18–39 ans, 71 bpm à 40–59 ans et 70 bpm à partir de 60 ans, la moitié centrale se situant entre environ 64 et 82 bpm. La fréquence au repos varie aussi avec le cycle menstruel — elle est souvent plus élevée de quelques battements en seconde moitié de cycle — et elle augmente pendant la grossesse. Comparez donc ce qui est comparable : même moment de la journée, même phase du cycle, et votre moyenne hebdomadaire plutôt qu'un seul jour. Choisissez « Femme » dans le calculateur pour utiliser le tableau féminin."
+    },
+    {
+      "h2": "Pouls au repos trop élevé : pourquoi ?",
+      "body": "Une fréquence au repos plus élevée que d'habitude est le plus souvent passagère : caféine, alcool la veille, sommeil court ou de mauvaise qualité, déshydratation, chaleur, séance d'entraînement intense, stress ou infection qui débute. Certains médicaments (décongestionnants ou traitements thyroïdiens, par exemple) et certaines affections comme l'anémie ou l'hyperthyroïdie peuvent aussi l'augmenter. Regardez la tendance. Quelques battements de plus pendant un jour ou deux relèvent du bruit normal ; une fréquence au repos du matin qui reste nettement au-dessus de votre niveau habituel pendant plusieurs jours — surtout avec une VFC plus basse — indique que votre corps subit plus de charge qu'il n'en absorbe. Au-delà de 100 bpm au repos, ou un pouls rapide avec palpitations, vertiges ou essoufflement, consultez un médecin. À lire : [comment l'alcool affecte la VFC et la fréquence au repos](/articles/how-much-alcohol-lowers-hrv) et [signes de surentraînement](/articles/overtraining-hrv-resting-heart-rate)."
+    },
+    {
+      "h2": "Comment baisser sa fréquence cardiaque au repos",
+      "body": "Le moyen le plus fiable de faire baisser la fréquence au repos est l'entraînement aérobie régulier : du cardio en Zone 2 trois fois par semaine ou plus permet au cœur d'éjecter plus de sang à chaque battement, il a donc besoin de moins de battements au repos. Les progrès apparaissent généralement en 6 à 12 semaines. Le sommeil, la réduction de l'alcool (surtout le soir), moins de caféine en fin de journée, une bonne hydratation et la gestion du stress chronique aident aussi. La respiration lente fait baisser la fréquence cardiaque pendant la pratique et soutient la récupération dans le temps. Suivez votre moyenne du matin chaque semaine, pas au jour le jour. Guides : [entraînement en Zone 2](/articles/zone-2-training-aerobic-base) et [comment augmenter sa VFC naturellement](/articles/how-to-raise-hrv-naturally)."
+    },
+    {
+      "h2": "Fréquence cardiaque au repos ou VFC : quelle différence ?",
+      "body": "La fréquence cardiaque au repos indique à quelle vitesse votre cœur bat au repos ; la variabilité de la fréquence cardiaque (VFC, ou HRV) indique à quel point l'intervalle entre les battements varie — un signe de la souplesse de votre système nerveux. Elles évoluent généralement en sens inverse : quand vous êtes bien récupéré, la fréquence au repos est basse et la VFC élevée ; en cas de stress, de maladie ou de surentraînement, la fréquence au repos grimpe et la VFC chute, souvent en même temps. La fréquence au repos est plus stable et plus facile à comparer d'un appareil à l'autre ; la VFC réagit plus vite. Suivre les deux par rapport à votre propre référence vaut mieux que de lire l'une ou l'autre seule. Vérifiez aussi votre VFC : [Calculateur de VFC (HRV) selon l'âge](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Fréquence cardiaque au repos — questions fréquentes",
+  "faq": [
+    {
+      "q": "Quelle est la fréquence cardiaque normale au repos selon l'âge ?",
+      "a": "Chez l'adulte, 60–100 bpm, et chez les personnes en bonne santé généralement entre 60 et 79 bpm. La médiane CDC NHANES est d'environ 69 bpm chez les hommes de 18–39 ans, 68 bpm à 40–59 ans et 67 bpm à 60 ans et plus ; chez les femmes, environ 74, 71 et 70 bpm. Elle varie à peine avec l'âge."
+    },
+    {
+      "q": "Quel est le pouls normal d'une femme au repos ?",
+      "a": "Quelques battements de plus que chez l'homme : la médiane est d'environ 74 bpm à 18–39 ans, 71 bpm à 40–59 ans et 70 bpm à partir de 60 ans, la moitié centrale des femmes se situant entre environ 64 et 82 bpm."
+    },
+    {
+      "q": "Un pouls au repos de 50, c'est bien ?",
+      "a": "Chez les personnes en forme, oui — 50 bpm est courant chez les adultes entraînés en endurance et traduit un cœur efficace. Si une fréquence inférieure à 50 s'accompagne de vertiges, d'évanouissements ou d'une fatigue inhabituelle, consultez un médecin."
+    },
+    {
+      "q": "Un pouls au repos de 90, est-ce trop élevé ?",
+      "a": "90 bpm reste dans la plage normale de 60–100, mais dépasse environ 90 % des adultes en bonne santé. Si votre fréquence au repos du matin reste autour de 90, vérifiez votre sommeil, l'alcool, la caféine et le stress — et parlez-en à un médecin."
+    },
+    {
+      "q": "Comment mesurer sa fréquence cardiaque au repos ?",
+      "a": "Le matin avant de vous lever et avant la caféine : comptez votre pouls pendant 30 secondes et multipliez par deux, ou utilisez la fréquence au repos de votre montre. Faites la moyenne de plusieurs matins plutôt que de vous fier à une seule mesure."
+    },
+    {
+      "q": "Pourquoi mon Apple Watch affiche-t-elle une fréquence au repos plus basse que chez le médecin ?",
+      "a": "L'Apple Watch et les autres objets connectés mesurent votre pouls quand vous êtes parfaitement immobile, souvent allongé ou endormi, alors qu'au cabinet la mesure se fait assis et dans un contexte souvent un peu stressant. Quelques bpm d'écart sont normaux."
+    },
+    {
+      "q": "Comment faire baisser sa fréquence cardiaque au repos ?",
+      "a": "L'exercice aérobie régulier, comme le cardio en Zone 2, est le levier le plus puissant, avec des résultats en 6 à 12 semaines. Mieux dormir, moins d'alcool et de caféine tardive, bien s'hydrater et gérer le stress aident aussi."
+    },
+    {
+      "q": "Quand la fréquence cardiaque au repos est-elle dangereuse ?",
+      "a": "Une fréquence au repos supérieure à 100 bpm (tachycardie) ou une fréquence basse avec vertiges ou évanouissements doivent être vérifiées par un médecin. Consultez en urgence en cas de douleur thoracique, de malaise ou de battements rapides et irréguliers."
+    }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "Les tableaux proviennent directement du rapport CDC/NCHS sur NHANES 1999–2008 (Ostchega et al. 2011, tableaux 2–3) : pouls au repos en position assise d'environ 17 000 adultes américains, hors personnes ayant une affection ou un traitement influençant le pouls. La tranche 18–39 ans utilise la ligne 20–39 ans et la tranche 60+ la ligne 60–79 ans. Votre percentile est interpolé entre les 5e et 95e percentiles publiés pour votre âge et votre sexe. Montres et bagues mesurent la fréquence au repos ou pendant le sommeil, généralement quelques bpm plus basse qu'une mesure assise.",
+  "sourcesContributes": [
+    "Source directe des tableaux : percentiles du pouls au repos en position assise par âge et sexe, NHANES 1999–2008, hors affections et médicaments influençant le pouls (tableaux 2–3).",
+    "Contexte clinique : une fréquence cardiaque au repos normale se situe environ entre 50 et 90 bpm, plus basse chez les personnes très entraînées, légèrement plus élevée chez les femmes, et en partie génétique.",
+    "Méta-analyse (environ 1,2 million de personnes) : chaque hausse de 10 bpm de la fréquence au repos est associée à une mortalité toutes causes supérieure d'environ 9 % — d'où l'intérêt d'une fréquence au repos plus basse."
+  ],
+  "related": {
+    "label": "Voir aussi",
+    "article": "Fréquence cardiaque au repos selon l'âge",
+    "hrv": "Calculateur de VFC (HRV) selon l'âge",
+    "camera": "Mesurer son pouls avec la caméra du téléphone",
+    "zone2": "Fréquence cardiaque en Zone 2"
+  }
+}

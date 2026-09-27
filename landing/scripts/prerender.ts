@@ -386,6 +386,7 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/how-it-works': ['en', 'ru', 'es'],
   '/people/yakiv-bilenko': ['en', 'ru', 'es'],
   '/tools/hrv': [...SUPPORTED_LANGS],
+  '/tools/resting-heart-rate': [...SUPPORTED_LANGS],
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.

@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Frequência cardíaca de repouso por idade | ONDA Life",
+    "description": "Calculadora grátis: informe idade, sexo e pulso em repouso e veja seu percentil, com tabelas CDC de batimentos normais em repouso para homens e mulheres.",
+    "appName": "Calculadora de frequência cardíaca de repouso por idade",
+    "appDescription": "Calculadora gratuita que compara sua frequência cardíaca de repouso com as normas do CDC NHANES para sua idade e sexo e mostra um percentil aproximado."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "tools": "Ferramentas",
+    "current": "Frequência cardíaca de repouso por idade"
+  },
+  "h1": "Frequência cardíaca de repouso por idade",
+  "capsule": "A frequência cardíaca de repouso normal em adultos fica entre 60 e 100 bpm e, em pessoas saudáveis, costuma estar na faixa de 60 a 79 bpm. A mediana é de cerca de 68–69 bpm nos homens e 70–74 bpm nas mulheres, e quase não muda com a idade. Informe idade, sexo e pulso em repouso para ver seu percentil — e acompanhe sua própria tendência, que importa mais.",
+  "imageAlt": "Tabela de frequência cardíaca de repouso por idade para homens e mulheres — calculadora gratuita da ONDA Life",
+  "sex": {
+    "label": "Sexo",
+    "male": "Homem",
+    "female": "Mulher"
+  },
+  "age": {
+    "label": "Idade",
+    "placeholder": "ex.: 35"
+  },
+  "value": {
+    "label": "Frequência cardíaca de repouso (bpm)",
+    "placeholder": "ex.: 64"
+  },
+  "source": {
+    "label": "De onde vem o seu número",
+    "hint": "O ideal: conte o pulso de manhã, antes de levantar, ou use a frequência de repouso do seu relógio. App Saúde do iPhone → Buscar → Coração → Frequência Cardíaca em Repouso (Apple Watch). Oura, Whoop e Garmin mostram a frequência de repouso ou a mais baixa durante o sono — muitas vezes alguns bpm abaixo de uma medição sentada."
+  },
+  "result": {
+    "percentile": "Mais baixa que ~{{p}}% {{sex}} de {{band}} anos",
+    "sexMen": "dos homens",
+    "sexWomen": "das mulheres"
+  },
+  "tiers": {
+    "veryLow": "Muito baixa — faixa de atleta",
+    "low": "Mais baixa que a maioria",
+    "typical": "Típica",
+    "higher": "Mais alta que a maioria",
+    "high": "Alta para sua idade"
+  },
+  "summaries": {
+    "veryLow": "{{v}} bpm é mais baixo que cerca de 90% {{sexWord}} saudáveis de {{band}} anos (mediana ~{{median}} bpm). Isso é comum em quem treina resistência e geralmente indica um coração em boa forma.",
+    "low": "{{v}} bpm está abaixo da mediana (~{{median}} bpm) {{sexWord}} de {{band}} anos — uma frequência de repouso saudável e eficiente.",
+    "typical": "{{v}} bpm está na faixa intermediária típica {{sexWord}} de {{band}} anos (mediana ~{{median}} bpm). Treino aeróbico, bom sono e menos álcool são as formas mais confiáveis de reduzi-la ao longo de meses.",
+    "higher": "{{v}} bpm é mais alto que cerca de três quartos {{sexWord}} de {{band}} anos (mediana ~{{median}} bpm). Uma única medição sobe fácil com cafeína, estresse, calor ou sono ruim — confira sua média matinal ao longo de uma semana.",
+    "high": "{{v}} bpm está entre os 10% mais altos {{sexWord}} de {{band}} anos (mediana ~{{median}} bpm). Se sua frequência de repouso pela manhã continuar tão alta, vale conversar com um médico."
+  },
+  "flags": {
+    "tachy": "Frequência cardíaca de repouso acima de 100 bpm é chamada de taquicardia. Se ela se mantiver alta em repouso ou vier com palpitações, tontura ou falta de ar, procure um médico.",
+    "brady": "Abaixo de 50 bpm é normal para muitas pessoas treinadas. Se vier com tontura, desmaio, cansaço fora do comum ou falta de ar, procure um médico."
+  },
+  "wearableNote": "Relógios e anéis medem a frequência em repouso ou durante o sono, que costuma ficar alguns bpm abaixo da medição sentada em que estas normas se baseiam — então o número do wearable pode parecer um pouco melhor do que é. Compare sua própria média semanal.",
+  "invalid": "Informe uma idade válida (18–120) e uma frequência cardíaca de repouso válida (30–150 bpm).",
+  "disclaimer": "Estimativa educativa, não é orientação médica. Os percentis vêm da pesquisa CDC NHANES com adultos saudáveis dos EUA (pulso medido sentado). Sua tendência matinal importa mais que uma única medição. A frequência de repouso sobe com cafeína, estresse, calor, doença, álcool e sono ruim.",
+  "tables": {
+    "menTitle": "Frequência cardíaca de repouso por idade — homens",
+    "womenTitle": "Frequência cardíaca de repouso por idade — mulheres",
+    "caption": "Pulso em repouso, sentado, em bpm. CDC NHANES 1999–2008 (Ostchega 2011), adultos saudáveis.",
+    "age": "Idade",
+    "p10": "Baixa (p10)",
+    "p25": "p25",
+    "p50": "Mediana",
+    "p75": "p75",
+    "p90": "Alta (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Quantos batimentos são normais em repouso para cada idade?",
+      "body": "Em adultos, uma frequência cardíaca de repouso entre 60 e 100 bpm é considerada normal, e muitos cardiologistas tratam cerca de 50–90 bpm como a faixa saudável. Na pesquisa NHANES do CDC com adultos saudáveis dos EUA, a mediana do pulso em repouso, sentado, foi de cerca de 69 bpm nos homens de 18–39 anos, 68 bpm aos 40–59 e 67 bpm a partir dos 60 — praticamente estável ao longo da vida adulta. A metade central dos homens (p25–p75) ficou entre cerca de 60 e 77 bpm. Diferente da HRV, a frequência de repouso quase não muda com a idade em adultos; condicionamento, genética, sono e estresse pesam muito mais. Por isso a comparação mais útil é com a sua própria tendência matinal. Guia completo: [frequência cardíaca de repouso por idade](/articles/resting-heart-rate-by-age)."
+    },
+    {
+      "h2": "Qual a frequência cardíaca normal da mulher em repouso?",
+      "body": "A frequência de repouso das mulheres fica alguns batimentos acima da dos homens, principalmente porque o coração costuma ser menor e bombeia um pouco menos de sangue a cada batida. No NHANES, a mediana foi de cerca de 74 bpm nas mulheres de 18–39 anos, 71 bpm aos 40–59 e 70 bpm a partir dos 60, com a metade central entre aproximadamente 64 e 82 bpm. A frequência de repouso também varia com o ciclo menstrual — tende a ficar alguns batimentos mais alta na segunda metade do ciclo — e aumenta na gravidez. Então compare situações equivalentes: mesmo horário, mesma fase do ciclo e sua média semanal, e não um único dia. Escolha \"Mulher\" na calculadora para usar a tabela feminina."
+    },
+    {
+      "h2": "Por que minha frequência cardíaca de repouso está alta?",
+      "body": "Uma frequência de repouso mais alta que o normal costuma ser temporária: cafeína, álcool na noite anterior, sono ruim ou curto, desidratação, calor, um treino pesado, estresse ou uma infecção começando. Alguns remédios (por exemplo, descongestionantes ou medicação para tireoide) e condições como anemia ou hipertireoidismo também podem elevá-la. Observe o padrão. Alguns batimentos a mais por um ou dois dias é variação normal; uma frequência de repouso matinal que fica bem acima do seu habitual por vários dias — principalmente junto com uma HRV mais baixa — indica que seu corpo está sob mais carga do que consegue absorver. Acima de 100 bpm em repouso, ou pulso alto com palpitações, tontura ou falta de ar, é motivo para procurar um médico. Leia mais: [como o álcool afeta a HRV e a frequência de repouso](/articles/how-much-alcohol-lowers-hrv) e [sinais de overtraining](/articles/overtraining-hrv-resting-heart-rate)."
+    },
+    {
+      "h2": "Como baixar a frequência cardíaca de repouso",
+      "body": "A forma mais confiável de baixar a frequência de repouso é o treino aeróbico regular: cardio constante na Zona 2, três ou mais vezes por semana, faz o coração bombear mais sangue a cada batida, então ele precisa de menos batimentos em repouso. As melhoras costumam aparecer em 6–12 semanas. Dormir bem, cortar o álcool (principalmente à noite), reduzir a cafeína no fim do dia, manter-se hidratado e controlar o estresse crônico também ajudam. A respiração lenta reduz a frequência cardíaca durante a prática e favorece a recuperação ao longo do tempo. Acompanhe sua média matinal semana a semana, não dia a dia. Guias: [treino na Zona 2](/articles/zone-2-training-aerobic-base) e [como aumentar a HRV naturalmente](/articles/how-to-raise-hrv-naturally)."
+    },
+    {
+      "h2": "Frequência cardíaca de repouso x HRV",
+      "body": "A frequência de repouso mostra quão rápido o coração bate em repouso; a variabilidade da frequência cardíaca (HRV) mostra quanto o intervalo entre as batidas varia — um sinal de quão flexível está seu sistema nervoso. Elas costumam andar em direções opostas: quando você está bem recuperado, a frequência de repouso fica baixa e a HRV alta; com estresse, doença ou overtraining, a frequência de repouso sobe e a HRV cai, muitas vezes ao mesmo tempo. A frequência de repouso é mais estável e mais fácil de comparar entre aparelhos; a HRV reage mais rápido. Acompanhar as duas em relação à sua própria linha de base é melhor que olhar só uma. Confira também sua HRV: [Calculadora de HRV por idade](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Frequência cardíaca de repouso — perguntas frequentes",
+  "faq": [
+    {
+      "q": "Qual a frequência cardíaca de repouso normal por idade?",
+      "a": "Em adultos, 60–100 bpm; em pessoas saudáveis, geralmente entre 60 e 79. A mediana do CDC NHANES é de cerca de 69 bpm nos homens de 18–39 anos, 68 bpm aos 40–59 e 67 bpm aos 60+; nas mulheres, cerca de 74, 71 e 70 bpm. Quase não muda com a idade."
+    },
+    {
+      "q": "Qual a frequência cardíaca normal da mulher em repouso?",
+      "a": "Alguns batimentos acima da dos homens: a mediana é de cerca de 74 bpm aos 18–39 anos, 71 bpm aos 40–59 e 70 bpm a partir dos 60, com a metade central das mulheres entre cerca de 64 e 82 bpm."
+    },
+    {
+      "q": "Frequência cardíaca de repouso de 50 é bom?",
+      "a": "Para pessoas em boa forma, sim — 50 bpm é comum em adultos que treinam resistência e reflete um coração eficiente. Se uma frequência abaixo de 50 vier com tontura, desmaio ou cansaço fora do comum, procure um médico."
+    },
+    {
+      "q": "Frequência cardíaca de repouso de 90 é ruim?",
+      "a": "90 bpm ainda está dentro da faixa normal de 60–100, mas é mais alto que cerca de 90% dos adultos saudáveis. Se sua frequência de repouso pela manhã fica em torno de 90, vale revisar sono, álcool, cafeína e estresse — e conversar com um médico."
+    },
+    {
+      "q": "Como medir a frequência cardíaca de repouso?",
+      "a": "De manhã, antes de levantar e antes da cafeína: conte o pulso por 30 segundos e multiplique por dois, ou use a frequência de repouso do seu relógio. Faça a média de várias manhãs em vez de confiar em uma única medição."
+    },
+    {
+      "q": "Por que a frequência de repouso do Apple Watch é mais baixa que a medida no médico?",
+      "a": "O Apple Watch e outros wearables medem o pulso quando você está totalmente parado, muitas vezes deitado ou dormindo, enquanto no consultório a medição é sentada e costuma ser um pouco estressante. Uma diferença de alguns bpm é normal."
+    },
+    {
+      "q": "Como baixar a frequência cardíaca de repouso?",
+      "a": "Exercício aeróbico regular, como cardio na Zona 2, é a alavanca mais forte, com resultados em 6–12 semanas. Dormir melhor, menos álcool e cafeína à noite, hidratação e controle do estresse também ajudam."
+    },
+    {
+      "q": "Quando a frequência cardíaca de repouso é perigosa?",
+      "a": "Uma frequência de repouso acima de 100 bpm (taquicardia) ou uma frequência baixa com tontura ou desmaio deve ser avaliada por um médico. Procure atendimento urgente em caso de dor no peito, desmaio ou batimentos acelerados e irregulares."
+    }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "As tabelas vêm diretamente do relatório do CDC/NCHS sobre o NHANES 1999–2008 (Ostchega et al. 2011, Tabelas 2–3): pulso em repouso, sentado, de cerca de 17.000 adultos dos EUA, excluindo pessoas com condições ou medicamentos que afetam o pulso. A faixa de 18–39 anos usa a linha de 20–39 e a faixa de 60+ usa a linha de 60–79. Seu percentil é interpolado entre os percentis 5 a 95 publicados para sua idade e sexo. Relógios e anéis medem a frequência em repouso ou durante o sono, que costuma ficar alguns bpm abaixo de uma medição sentada.",
+  "sourcesContributes": [
+    "Fonte direta das tabelas: percentis do pulso em repouso, sentado, por idade e sexo do NHANES 1999–2008, excluindo condições e medicamentos que afetam o pulso (Tabelas 2–3).",
+    "Contexto clínico: uma frequência de repouso normal fica em torno de 50–90 bpm, mais baixa em pessoas muito condicionadas, um pouco mais alta em mulheres e em parte genética.",
+    "Metanálise (cerca de 1,2 milhão de pessoas): cada 10 bpm a mais na frequência de repouso está associado a cerca de 9% mais mortalidade por todas as causas — por isso uma frequência de repouso mais baixa importa."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "article": "Frequência cardíaca de repouso por idade",
+    "hrv": "Calculadora de HRV por idade",
+    "camera": "Meça seu pulso com a câmera do celular",
+    "zone2": "Frequência cardíaca na Zona 2"
+  }
+}

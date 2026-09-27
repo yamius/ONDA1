@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Frequenza cardiaca a riposo per età — tabella | ONDA Life",
+    "description": "Calcolatore gratuito: inserisci età, sesso e battiti a riposo e scopri il tuo percentile, con le tabelle CDC della frequenza cardiaca normale per età.",
+    "appName": "Calcolatore della frequenza cardiaca a riposo per età",
+    "appDescription": "Calcolatore gratuito che confronta la tua frequenza cardiaca a riposo con le norme CDC NHANES per età e sesso e restituisce un percentile approssimativo."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Strumenti",
+    "current": "Frequenza cardiaca a riposo per età"
+  },
+  "h1": "Frequenza cardiaca a riposo per età",
+  "capsule": "Una frequenza cardiaca a riposo normale negli adulti è di circa 60–100 bpm e nelle persone sane di solito si colloca tra 60 e 79 bpm. La mediana è di circa 68–69 bpm negli uomini e 70–74 bpm nelle donne, e cambia pochissimo con l'età. Inserisci età, sesso e battiti a riposo per vedere il tuo percentile — poi osserva il tuo andamento personale, che conta di più.",
+  "imageAlt": "Tabella della frequenza cardiaca a riposo per età per uomini e donne — calcolatore gratuito di ONDA Life",
+  "sex": {
+    "label": "Sesso",
+    "male": "Uomo",
+    "female": "Donna"
+  },
+  "age": {
+    "label": "Età",
+    "placeholder": "es. 35"
+  },
+  "value": {
+    "label": "Frequenza cardiaca a riposo (bpm)",
+    "placeholder": "es. 64"
+  },
+  "source": {
+    "label": "Da dove prendere il valore",
+    "hint": "Ideale: conta il polso al mattino prima di alzarti, oppure usa la frequenza a riposo del tuo smartwatch. App Salute su iPhone → Sfoglia → Cuore → Frequenza cardiaca a riposo (Apple Watch). Oura, Whoop e Garmin mostrano la frequenza a riposo o la più bassa durante il sonno — spesso qualche bpm in meno rispetto a una misura da seduti."
+  },
+  "result": {
+    "percentile": "Più bassa rispetto al ~{{p}}% tra {{sex}} di {{band}} anni",
+    "sexMen": "uomini",
+    "sexWomen": "donne"
+  },
+  "tiers": {
+    "veryLow": "Molto bassa — livello da atleta",
+    "low": "Più bassa della media",
+    "typical": "Nella norma",
+    "higher": "Più alta della media",
+    "high": "Alta per la tua età"
+  },
+  "summaries": {
+    "veryLow": "{{v}} bpm è meno di circa il 90% dei valori tra {{sexWord}} di {{band}} anni (mediana ~{{median}} bpm). È tipico di chi pratica sport di resistenza e di solito indica un cuore allenato.",
+    "low": "{{v}} bpm è sotto la mediana (~{{median}} bpm) tra {{sexWord}} di {{band}} anni — una frequenza a riposo sana ed efficiente.",
+    "typical": "{{v}} bpm rientra nella fascia centrale tipica tra {{sexWord}} di {{band}} anni (mediana ~{{median}} bpm). Allenamento aerobico, sonno di qualità e meno alcol sono i modi più affidabili per abbassarla nel giro di mesi.",
+    "higher": "{{v}} bpm è più di circa tre quarti dei valori tra {{sexWord}} di {{band}} anni (mediana ~{{median}} bpm). Una singola misura sale facilmente per caffeina, stress, caldo o sonno scarso — controlla la media mattutina di una settimana.",
+    "high": "{{v}} bpm è nel 10% più alto tra {{sexWord}} di {{band}} anni (mediana ~{{median}} bpm). Se la frequenza a riposo del mattino resta così alta, vale la pena parlarne con un medico."
+  },
+  "flags": {
+    "tachy": "Una frequenza a riposo superiore a 100 bpm si chiama tachicardia. Se resta così alta a riposo, o si accompagna a palpitazioni, capogiri o fiato corto, rivolgiti a un medico.",
+    "brady": "Sotto i 50 bpm è normale per molte persone allenate. Se si accompagna a capogiri, svenimenti, stanchezza insolita o fiato corto, rivolgiti a un medico."
+  },
+  "wearableNote": "Orologi e anelli misurano la frequenza a riposo o durante il sonno, che di solito è qualche bpm più bassa della misura da seduti su cui si basano queste norme — quindi il valore del dispositivo può sembrare un po' migliore di quanto sia. Confronta la tua media settimanale.",
+  "invalid": "Inserisci un'età valida (18–120) e una frequenza a riposo valida (30–150 bpm).",
+  "disclaimer": "Stima a scopo educativo, non è un parere medico. I percentili provengono dall'indagine CDC NHANES su adulti sani negli Stati Uniti (polso da seduti). Il tuo andamento mattutino conta più di una singola misura. La frequenza a riposo aumenta con caffeina, stress, caldo, malattia, alcol e sonno scarso.",
+  "tables": {
+    "menTitle": "Frequenza cardiaca a riposo per età — uomini",
+    "womenTitle": "Frequenza cardiaca a riposo per età — donne",
+    "caption": "Polso a riposo da seduti, bpm. CDC NHANES 1999–2008 (Ostchega 2011), adulti sani.",
+    "age": "Età",
+    "p10": "Bassa (p10)",
+    "p25": "p25",
+    "p50": "Mediana",
+    "p75": "p75",
+    "p90": "Alta (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Quanti sono i battiti normali a riposo in base all'età?",
+      "body": "Negli adulti una frequenza cardiaca a riposo tra 60 e 100 bpm è considerata normale, e molti cardiologi indicano circa 50–90 bpm come intervallo sano. Nell'indagine NHANES dei CDC su adulti sani negli Stati Uniti, la mediana del polso a riposo da seduti era di circa 69 bpm negli uomini di 18–39 anni, 68 bpm a 40–59 anni e 67 bpm dai 60 anni — quasi piatta per tutta la vita adulta. La metà centrale degli uomini (p25–p75) si collocava tra circa 60 e 77 bpm. A differenza dell'HRV, negli adulti la frequenza a riposo cambia poco con l'età: forma fisica, genetica, sonno e stress contano molto di più. Per questo il confronto più utile è con il tuo andamento mattutino. Guida completa: [frequenza cardiaca a riposo per età](/articles/resting-heart-rate-by-age)."
+    },
+    {
+      "h2": "Frequenza cardiaca normale nella donna",
+      "body": "Nelle donne la frequenza a riposo è di qualche battito più alta rispetto agli uomini, soprattutto perché il cuore di solito è più piccolo e pompa un po' meno sangue a ogni battito. In NHANES la mediana era di circa 74 bpm nelle donne di 18–39 anni, 71 bpm a 40–59 anni e 70 bpm dai 60 anni, con la metà centrale tra circa 64 e 82 bpm. La frequenza a riposo varia anche con il ciclo mestruale — tende a essere qualche battito più alta nella seconda metà del ciclo — e aumenta in gravidanza. Quindi confronta valori omogenei: stessa ora del giorno, stessa fase del ciclo e media settimanale invece di un singolo giorno. Scegli \"Donna\" nel calcolatore per usare la tabella femminile."
+    },
+    {
+      "h2": "Battiti a riposo alti: perché?",
+      "body": "Una frequenza a riposo più alta del solito è quasi sempre temporanea: caffeina, alcol la sera prima, sonno scarso o breve, disidratazione, caldo, un allenamento intenso, stress o un'infezione in arrivo. Anche alcuni farmaci (per esempio decongestionanti o terapia tiroidea) e condizioni come anemia o ipertiroidismo possono aumentarla. Guarda l'andamento. Qualche battito in più per un giorno o due è normale variabilità; una frequenza mattutina che resta ben sopra il tuo livello abituale per diversi giorni — soprattutto insieme a un'HRV più bassa — indica che il corpo sta sostenendo più carico di quanto riesca a gestire. Oltre 100 bpm a riposo, o un polso alto con palpitazioni, capogiri o fiato corto, è un motivo per rivolgersi a un medico. Approfondisci: [come l'alcol influisce su HRV e frequenza a riposo](/articles/how-much-alcohol-lowers-hrv) e [segnali di sovrallenamento](/articles/overtraining-hrv-resting-heart-rate)."
+    },
+    {
+      "h2": "Come abbassare la frequenza cardiaca a riposo",
+      "body": "Il modo più affidabile per abbassare la frequenza a riposo è l'allenamento aerobico regolare: cardio costante in Zona 2 tre o più volte a settimana fa pompare al cuore più sangue per battito, così a riposo servono meno battiti. I miglioramenti di solito si vedono in 6–12 settimane. Aiutano anche sonno, ridurre l'alcol (soprattutto la sera), meno caffeina nel pomeriggio, una buona idratazione e la gestione dello stress cronico. La respirazione lenta abbassa la frequenza mentre la pratichi e nel tempo favorisce il recupero. Monitora la media mattutina settimana per settimana, non giorno per giorno. Guide: [allenamento in Zona 2](/articles/zone-2-training-aerobic-base) e [come aumentare l'HRV in modo naturale](/articles/how-to-raise-hrv-naturally)."
+    },
+    {
+      "h2": "Frequenza cardiaca a riposo e HRV: differenze",
+      "body": "La frequenza a riposo indica quanto velocemente batte il cuore a riposo; la variabilità della frequenza cardiaca (HRV) indica quanto varia l'intervallo tra un battito e l'altro — un segno di quanto è flessibile il tuo sistema nervoso. Di solito si muovono in direzioni opposte: quando sei ben recuperato la frequenza a riposo è bassa e l'HRV alta; quando sei stressato, malato o sovrallenato la frequenza a riposo sale e l'HRV scende, spesso insieme. La frequenza a riposo è più stabile e più facile da confrontare tra dispositivi; l'HRV reagisce più in fretta. Monitorarle entrambe rispetto alla tua baseline è meglio che leggerne una sola. Controlla anche la tua HRV: [Calcolatore HRV per età](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Frequenza cardiaca a riposo — domande frequenti",
+  "faq": [
+    {
+      "q": "Qual è la frequenza cardiaca a riposo normale per età?",
+      "a": "Negli adulti è 60–100 bpm, e nelle persone sane di solito tra 60 e 79 bpm. La mediana CDC NHANES è di circa 69 bpm negli uomini di 18–39 anni, 68 bpm a 40–59 e 67 bpm dai 60; nelle donne circa 74, 71 e 70 bpm. Cambia pochissimo con l'età."
+    },
+    {
+      "q": "Qual è la frequenza cardiaca normale in una donna?",
+      "a": "Qualche battito più alta che negli uomini: la mediana è di circa 74 bpm a 18–39 anni, 71 bpm a 40–59 e 70 bpm dai 60, con la metà centrale delle donne tra circa 64 e 82 bpm."
+    },
+    {
+      "q": "50 battiti a riposo vanno bene?",
+      "a": "Per le persone allenate sì — 50 bpm è comune negli adulti che praticano sport di resistenza e riflette un cuore efficiente. Se una frequenza sotto 50 si accompagna a capogiri, svenimenti o stanchezza insolita, rivolgiti a un medico."
+    },
+    {
+      "q": "90 battiti a riposo sono troppi?",
+      "a": "90 bpm rientra ancora nell'intervallo normale 60–100, ma è più alto di circa il 90% degli adulti sani. Se la frequenza mattutina a riposo resta intorno a 90, conviene controllare sonno, alcol, caffeina e stress — e parlarne con un medico."
+    },
+    {
+      "q": "Come si misura la frequenza cardiaca a riposo?",
+      "a": "Al mattino prima di alzarti e prima della caffeina: conta il polso per 30 secondi e moltiplica per due, oppure usa la frequenza a riposo del tuo smartwatch. Fai la media di più mattine invece di fidarti di una sola misura."
+    },
+    {
+      "q": "Perché la frequenza a riposo dell'Apple Watch è più bassa di quella misurata dal medico?",
+      "a": "Apple Watch e gli altri dispositivi indossabili leggono il polso quando sei completamente fermo, spesso sdraiato o addormentato, mentre in ambulatorio la misura si fa da seduti e spesso con un po' di tensione. Una differenza di qualche bpm è normale."
+    },
+    {
+      "q": "Come posso abbassare i battiti a riposo?",
+      "a": "L'esercizio aerobico regolare, come il cardio in Zona 2, è la leva più forte, con risultati in 6–12 settimane. Aiutano anche sonno migliore, meno alcol e meno caffeina la sera, idratazione e gestione dello stress."
+    },
+    {
+      "q": "Quando i battiti a riposo alti sono pericolosi?",
+      "a": "Una frequenza a riposo oltre 100 bpm (tachicardia) o una frequenza bassa con capogiri o svenimenti vanno valutate da un medico. Cerca assistenza urgente in caso di dolore al petto, svenimento o battito accelerato e irregolare."
+    }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "Le tabelle provengono direttamente dal rapporto CDC/NCHS su NHANES 1999–2008 (Ostchega et al. 2011, Tabelle 2–3): polso a riposo da seduti di circa 17.000 adulti statunitensi, escluse le persone con condizioni o farmaci che influenzano il polso. La fascia 18–39 usa la riga 20–39 e la fascia 60+ la riga 60–79. Il tuo percentile è interpolato tra i percentili pubblicati dal 5° al 95° per età e sesso. Orologi e anelli misurano la frequenza a riposo o durante il sonno, che di solito è qualche bpm più bassa di una misura da seduti.",
+  "sourcesContributes": [
+    "Fonte diretta delle tabelle: percentili del polso a riposo da seduti per età e sesso da NHANES 1999–2008, escluse condizioni e farmaci che influenzano il polso (Tabelle 2–3).",
+    "Contesto clinico: una frequenza a riposo normale è di circa 50–90 bpm, più bassa nelle persone molto allenate, leggermente più alta nelle donne e in parte genetica.",
+    "Meta-analisi (circa 1,2 milioni di persone): ogni 10 bpm in più di frequenza a riposo si associano a una mortalità per tutte le cause più alta di circa il 9% — ecco perché una frequenza a riposo più bassa conta."
+  ],
+  "related": {
+    "label": "Correlati",
+    "article": "Frequenza cardiaca a riposo per età",
+    "hrv": "Calcolatore HRV per età",
+    "camera": "Misura il polso con la fotocamera del telefono",
+    "zone2": "Frequenza cardiaca in Zona 2"
+  }
+}

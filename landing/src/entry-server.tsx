@@ -258,6 +258,17 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/wim-hof"         element={<WimHofPage />} />
           <Route path="/tools/brain-fog"       element={<BrainFogQuizPage />} />
           <Route path="/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/es/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/ru/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/uk/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/zh/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/de/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/fr/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/it/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/nl/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/ja/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/pl/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
+          <Route path="/pt/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
           <Route path="/tools/recovery-score"  element={<RecoveryScorePage />} />
           <Route path="/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
           <Route path="/tools/breathing-rate"  element={<MicBreathingPage />} />

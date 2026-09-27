@@ -15,6 +15,7 @@ import { hubItemSlugs, hubLastModified } from '../src/data/article-topic-listing
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
+import { rhrToolCopy } from '../src/data/rhr-tool-i18n'
 import type { Lang } from '../src/i18n'
 import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
 import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
@@ -67,7 +68,6 @@ import { BURNOUT_FAQ } from '../src/data/burnout-assessment'
 import { NS_FAQ } from '../src/data/nervous-system-state'
 import { WHM_FAQ } from '../src/data/wim-hof'
 import { FOG_FAQ } from '../src/data/brain-fog'
-import { RHR_FAQ } from '../src/data/resting-hr'
 import { RECOVERY_FAQ } from '../src/data/recovery-score'
 import { CAMERA_HR_FAQ } from '../src/data/camera-heart-rate'
 import { MIC_FAQ } from '../src/data/mic-breathing'
@@ -2263,16 +2263,35 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: FOG_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
-  if (route === '/tools/resting-heart-rate') {
+  // /tools/resting-heart-rate — published in all 12 languages (copy in
+  // src/data/rhr-tool-i18n). WebApplication + FAQPage JSON-LD per language.
+  if (route === '/tools/resting-heart-rate' || /^\/[a-z]{2}\/tools\/resting-heart-rate$/.test(route)) {
+    const lang = (route === '/tools/resting-heart-rate' ? 'en' : route.slice(1, 3)) as Lang
+    const c = rhrToolCopy(lang)
     return {
-      title: 'Resting Heart Rate by Age — Is Yours Normal? | ONDA Life',
-      description:
-        'Free resting heart rate by age chart: enter your age and pulse to see where it lands against fitness-based reference ranges, what’s normal, and how to lower it.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/resting-heart-rate.png`,
-      faq: { mainEntity: RHR_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/resting-heart-rate.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/recovery-score') {

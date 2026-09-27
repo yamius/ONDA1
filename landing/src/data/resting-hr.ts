@@ -1,83 +1,102 @@
 /**
- * Resting heart rate (RHR) reference by age + fitness category.
+ * Resting heart rate (RHR) reference by age and sex.
  *
- * RHR varies more with FITNESS than with age — a fit person of any age tends
- * to sit lower. These bands are APPROXIMATE, derived from widely used resting-HR
- * fitness charts and clinical reference ranges (normal ~50–90 bpm; Nanchen 2018),
- * with the caveat that women average a few bpm higher and RHR is partly genetic.
- * A lower RHR generally reflects a fitter, more efficient heart, and each +10 bpm
- * is associated with higher mortality risk (Zhang 2016). Educational, not medical.
+ * Percentiles are taken DIRECTLY from the CDC/NCHS NHANES 1999–2008 report
+ * (Ostchega et al. 2011, National Health Statistics Reports No. 41, Tables 2–3):
+ * seated resting pulse of ~17,000 U.S. adults, excluding people with a condition
+ * or medication that affects pulse. Bands: 18–39 uses the 20–39 row, 60+ the
+ * 60–79 row (the 80+ row is based on few people). Wearables that read resting
+ * or sleeping heart rate usually come out a few bpm lower than a seated check.
+ * Educational, not medical advice.
  */
 
 import type { ScienceSource } from './sources'
+
+export type RhrSex = 'male' | 'female'
 
 export interface RhrBand {
   minAge: number
   maxAge: number
   label: string
-  /** Upper bound (inclusive) for athlete / excellent / good / average; above = elevated. */
-  athlete: number
-  excellent: number
-  good: number
-  average: number
+  /** Resting pulse (bpm) at the 5/10/25/50/75/90/95th percentile. */
+  p5: number
+  p10: number
+  p25: number
+  p50: number
+  p75: number
+  p90: number
+  p95: number
 }
 
-export const RHR_AGE_BANDS: RhrBand[] = [
-  { minAge: 18, maxAge: 25, label: '18–25', athlete: 55, excellent: 61, good: 65, average: 73 },
-  { minAge: 26, maxAge: 35, label: '26–35', athlete: 54, excellent: 61, good: 65, average: 74 },
-  { minAge: 36, maxAge: 45, label: '36–45', athlete: 56, excellent: 62, good: 66, average: 75 },
-  { minAge: 46, maxAge: 55, label: '46–55', athlete: 57, excellent: 63, good: 67, average: 76 },
-  { minAge: 56, maxAge: 65, label: '56–65', athlete: 56, excellent: 61, good: 67, average: 75 },
-  { minAge: 66, maxAge: 120, label: '65+', athlete: 55, excellent: 61, good: 65, average: 73 },
-]
+export const RHR_BANDS: Record<RhrSex, RhrBand[]> = {
+  male: [
+    { minAge: 18, maxAge: 39, label: '18–39', p5: 52, p10: 55, p25: 61, p50: 69, p75: 76, p90: 84, p95: 89 },
+    { minAge: 40, maxAge: 59, label: '40–59', p5: 52, p10: 55, p25: 61, p50: 68, p75: 77, p90: 85, p95: 90 },
+    { minAge: 60, maxAge: Infinity, label: '60+', p5: 50, p10: 54, p25: 60, p50: 67, p75: 75, p90: 84, p95: 91 },
+  ],
+  female: [
+    { minAge: 18, maxAge: 39, label: '18–39', p5: 57, p10: 60, p25: 66, p50: 74, p75: 82, p90: 89, p95: 95 },
+    { minAge: 40, maxAge: 59, label: '40–59', p5: 56, p10: 59, p25: 64, p50: 71, p75: 79, p90: 86, p95: 92 },
+    { minAge: 60, maxAge: Infinity, label: '60+', p5: 56, p10: 59, p25: 64, p50: 70, p75: 78, p90: 86, p95: 92 },
+  ],
+}
 
-export type RhrTier = 'athlete' | 'excellent' | 'good' | 'average' | 'elevated'
+/** Lower is generally better for resting pulse, so tiers run from low to high. */
+export type RhrTier = 'veryLow' | 'low' | 'typical' | 'higher' | 'high'
 
 export interface RhrResult {
   band: RhrBand
+  /** Approximate population percentile (share of people with a LOWER pulse), 1–99. */
+  percentile: number
   tier: RhrTier
-  tierLabel: string
-  summary: string
+  /** Clinical flag, independent of percentile. */
+  flag: 'tachy' | 'brady' | null
+  barPct: number
 }
 
-const TIER_LABEL: Record<RhrTier, string> = {
-  athlete: 'Athlete',
-  excellent: 'Excellent',
-  good: 'Good',
-  average: 'Average',
-  elevated: 'Above average',
+export function bandForAge(age: number, sex: RhrSex): RhrBand {
+  const bands = RHR_BANDS[sex]
+  return bands.find((b) => age >= b.minAge && age <= b.maxAge) ?? bands[0]
 }
 
-export function bandForAge(age: number): RhrBand {
-  return RHR_AGE_BANDS.find((b) => age >= b.minAge && age <= b.maxAge) ?? RHR_AGE_BANDS[0]
-}
-
-export function interpretRhr(age: number, rhr: number): RhrResult {
-  const band = bandForAge(age)
-  let tier: RhrTier
-  if (rhr <= band.athlete) tier = 'athlete'
-  else if (rhr <= band.excellent) tier = 'excellent'
-  else if (rhr <= band.good) tier = 'good'
-  else if (rhr <= band.average) tier = 'average'
-  else tier = 'elevated'
-
-  const summaryByTier: Record<RhrTier, string> = {
-    athlete: `${rhr} bpm is in the athletic range for ${band.label} — a sign of a strong, efficient heart. (Endurance athletes often sit in the 40s–50s.)`,
-    excellent: `${rhr} bpm is excellent for ${band.label} — well below average, reflecting good cardiovascular fitness.`,
-    good: `${rhr} bpm is good for ${band.label} — a healthy resting heart rate with room to lower it through aerobic training.`,
-    average: `${rhr} bpm is around average for ${band.label}. It's within the normal range, and Zone-2 cardio is the most reliable way to bring it down over time.`,
-    elevated: `${rhr} bpm is above the typical range for ${band.label}. A single reading is easily raised by caffeine, stress, poor sleep or illness — but a consistently elevated resting heart rate is worth discussing with a doctor.`,
+function estimatePercentile(v: number, b: RhrBand): number {
+  const pts: Array<[number, number]> = [
+    [b.p5, 5], [b.p10, 10], [b.p25, 25], [b.p50, 50], [b.p75, 75], [b.p90, 90], [b.p95, 95],
+  ]
+  if (v <= b.p5) return Math.max(1, Math.round(5 - (b.p5 - v) * 0.5))
+  if (v >= b.p95) return Math.min(99, Math.round(95 + (v - b.p95) * 0.5))
+  for (let i = 0; i < pts.length - 1; i++) {
+    const [v0, p0] = pts[i]
+    const [v1, p1] = pts[i + 1]
+    if (v >= v0 && v <= v1) return Math.round(p0 + ((v - v0) / (v1 - v0)) * (p1 - p0))
   }
-  return { band, tier, tierLabel: TIER_LABEL[tier], summary: summaryByTier[tier] }
+  return 50
+}
+
+export function interpretRhr(age: number, rhr: number, sex: RhrSex): RhrResult {
+  const band = bandForAge(age, sex)
+  const percentile = estimatePercentile(rhr, band)
+  const tier: RhrTier =
+    percentile <= 10 ? 'veryLow' : percentile <= 25 ? 'low' : percentile <= 75 ? 'typical' : percentile <= 90 ? 'higher' : 'high'
+  const flag = rhr > 100 ? 'tachy' : rhr < 50 ? 'brady' : null
+  return { band, percentile, tier, flag, barPct: Math.max(2, Math.min(98, percentile)) }
 }
 
 export const RHR_SOURCES: ScienceSource[] = [
+  {
+    authors: 'Ostchega Y, Porter KS, Hughes J, Dillon CF, Nwankwo T',
+    year: 2011,
+    title: 'Resting pulse rate reference data for children, adolescents, and adults: United States, 1999–2008',
+    journal: 'National Health Statistics Reports, No. 41 (CDC/NCHS)',
+    contributes: 'Direct source of the tables: seated resting pulse percentiles by age and sex from NHANES 1999–2008, excluding conditions and medications that affect pulse (Tables 2–3).',
+    url: 'https://www.cdc.gov/nchs/data/nhsr/nhsr041.pdf',
+  },
   {
     authors: 'Nanchen D',
     year: 2018,
     title: 'Resting heart rate: what is normal?',
     journal: 'Heart, 104(13):1048–1049',
-    contributes: 'Clinical reference: a normal resting heart rate is ~50–90 bpm, lower in the very fit, slightly higher in women, and partly genetic.',
+    contributes: 'Clinical context: a normal resting heart rate is roughly 50–90 bpm, lower in the very fit, slightly higher in women, and partly genetic.',
     url: 'https://doi.org/10.1136/heartjnl-2017-312731',
   },
   {
@@ -85,33 +104,7 @@ export const RHR_SOURCES: ScienceSource[] = [
     year: 2016,
     title: 'Resting heart rate and all-cause and cardiovascular mortality in the general population: a meta-analysis',
     journal: 'CMAJ, 188(3):E53–E63',
-    contributes: 'Meta-analysis (1.2M people): each +10 bpm resting heart rate ≈ +9% all-cause mortality — why a lower RHR matters.',
+    contributes: 'Meta-analysis (about 1.2 million people): each 10 bpm higher resting heart rate is linked to about 9% higher all-cause mortality — why a lower resting rate matters.',
     url: 'https://doi.org/10.1503/cmaj.150535',
-  },
-]
-
-export const RHR_METHODOLOGY =
-  'Resting heart rate is the number of times your heart beats per minute at complete rest — best measured first thing in the morning before getting up. A normal adult range is about 50–90 bpm (Nanchen 2018); well-trained people often sit in the 40s–50s. These reference bands are approximate, derived from widely used resting-HR fitness charts: they vary a little by age, but RHR depends more on fitness than age, and women average a few bpm higher than men. A lower RHR generally signals a fitter, more efficient heart — and it matters, since each 10 bpm higher resting heart rate is associated with roughly 9% higher all-cause mortality (Zhang 2016). This is an educational reference, not a diagnosis: single readings swing with caffeine, stress, sleep, heat and illness, so track your own morning trend, and see a clinician about a persistently high or very low rate or symptoms.'
-
-export const RHR_FAQ: Array<{ q: string; a: string }> = [
-  {
-    q: 'What is a normal resting heart rate by age?',
-    a: 'For most adults a normal resting heart rate is about 50–90 bpm, and it changes surprisingly little across adult age groups — fitness matters more than age. A "good" rate is roughly in the low 60s or below; athletes often sit in the 40s–50s. Use the chart on this page to see where your number falls against fitness categories for your age band.',
-  },
-  {
-    q: 'How do I measure my resting heart rate accurately?',
-    a: 'Measure first thing in the morning, before you get out of bed and before caffeine. Count your pulse for 30 seconds and double it, or use a wearable’s overnight/resting figure. Take it under the same conditions on several days and use the average — single readings are easily thrown off by stress, caffeine, heat or a poor night’s sleep.',
-  },
-  {
-    q: 'Is a lower resting heart rate better?',
-    a: 'Generally yes, within reason. A lower resting heart rate usually reflects a fitter, more efficient heart, and population data link a higher resting rate to greater mortality risk — about 9% per extra 10 bpm (Zhang 2016). Very low rates are normal in trained athletes, but a low rate with dizziness or fainting, or a persistently high rate, should be checked by a doctor.',
-  },
-  {
-    q: 'How can I lower my resting heart rate?',
-    a: 'Aerobic fitness is the most reliable lever — regular Zone-2 cardio lowers resting heart rate over weeks to months. Better sleep, less alcohol and caffeine, slow breathing/HRV practice, hydration and stress management all help too. Improvements are gradual; track your morning trend rather than reacting to any single day.',
-  },
-  {
-    q: 'Why is my resting heart rate high some mornings?',
-    a: 'Day-to-day spikes are normal and informative: alcohol the night before, poor or short sleep, illness brewing, dehydration, heat, late meals and high stress all raise morning resting heart rate. That’s why a sustained rise above your personal baseline is often an early sign you need recovery — and why the trend matters more than any one reading.',
   },
 ]

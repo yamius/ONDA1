@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "title": "Ruhepuls nach Alter — Tabelle Männer & Frauen | ONDA Life",
+    "description": "Kostenloser Ruhepuls-Rechner: Alter, Geschlecht und Ruhepuls eingeben, Perzentil sehen — mit CDC-Tabellen zum normalen Ruhepuls für Frauen und Männer.",
+    "appName": "Ruhepuls-nach-Alter-Rechner",
+    "appDescription": "Kostenloser Rechner, der deinen Ruhepuls mit den CDC-NHANES-Normwerten für dein Alter und Geschlecht vergleicht und ein ungefähres Perzentil ausgibt."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "tools": "Tools",
+    "current": "Ruhepuls nach Alter"
+  },
+  "h1": "Ruhepuls nach Alter",
+  "capsule": "Ein normaler Ruhepuls liegt bei Erwachsenen bei etwa 60–100 S/min, bei gesunden Menschen meist zwischen 60 und 79 S/min. Der Median beträgt etwa 68–69 S/min bei Männern und 70–74 S/min bei Frauen und verändert sich mit dem Alter kaum. Gib Alter, Geschlecht und Ruhepuls ein, um dein Perzentil zu sehen — noch wichtiger ist aber dein eigener Verlauf.",
+  "imageAlt": "Ruhepuls nach Alter: Tabelle für Männer und Frauen — kostenloser Rechner von ONDA Life",
+  "sex": {
+    "label": "Geschlecht",
+    "male": "Mann",
+    "female": "Frau"
+  },
+  "age": {
+    "label": "Alter",
+    "placeholder": "z. B. 35"
+  },
+  "value": {
+    "label": "Ruhepuls (S/min)",
+    "placeholder": "z. B. 64"
+  },
+  "source": {
+    "label": "Woher dein Wert kommt",
+    "hint": "Am besten: Puls morgens vor dem Aufstehen zählen oder den Ruhepuls deiner Uhr nutzen. iPhone: Health-App → Entdecken → Herz → Ruhepuls (Apple Watch). Oura, Whoop und Garmin zeigen einen Ruhepuls bzw. niedrigsten Puls im Schlaf — oft ein paar S/min niedriger als eine Messung im Sitzen."
+  },
+  "result": {
+    "percentile": "Niedriger als bei ~{{p}} % der {{sex}} im Alter von {{band}}",
+    "sexMen": "Männer",
+    "sexWomen": "Frauen"
+  },
+  "tiers": {
+    "veryLow": "Sehr niedrig — Sportlerbereich",
+    "low": "Niedriger als bei den meisten",
+    "typical": "Typisch",
+    "higher": "Höher als bei den meisten",
+    "high": "Hoch für dein Alter"
+  },
+  "summaries": {
+    "veryLow": "{{v}} S/min ist niedriger als bei etwa 90 % der gesunden {{sexWord}} im Alter von {{band}} (Median ~{{median}} S/min). Das ist bei Ausdauertrainierten verbreitet und meist ein Zeichen für ein fittes Herz.",
+    "low": "{{v}} S/min liegt unter dem Median der {{sexWord}} im Alter von {{band}} (~{{median}} S/min) — ein gesunder, effizienter Ruhepuls.",
+    "typical": "{{v}} S/min liegt im typischen Mittelfeld der {{sexWord}} im Alter von {{band}} (Median ~{{median}} S/min). Ausdauertraining, guter Schlaf und weniger Alkohol senken ihn über Monate am zuverlässigsten.",
+    "higher": "{{v}} S/min ist höher als bei etwa drei Vierteln der {{sexWord}} im Alter von {{band}} (Median ~{{median}} S/min). Ein einzelner Wert steigt leicht durch Koffein, Stress, Hitze oder schlechten Schlaf — prüfe deinen Morgendurchschnitt über eine Woche.",
+    "high": "{{v}} S/min gehört zum obersten Zehntel der {{sexWord}} im Alter von {{band}} (Median ~{{median}} S/min). Bleibt dein morgendlicher Ruhepuls so hoch, solltest du das mit einer Ärztin oder einem Arzt besprechen."
+  },
+  "flags": {
+    "tachy": "Ein Ruhepuls über 100 S/min wird Tachykardie genannt. Bleibt er in Ruhe so hoch oder kommen Herzstolpern, Schwindel oder Atemnot dazu, geh zum Arzt.",
+    "brady": "Unter 50 S/min ist für viele Trainierte normal. Kommen Schwindel, Ohnmacht, ungewöhnliche Müdigkeit oder Atemnot dazu, geh zum Arzt."
+  },
+  "wearableNote": "Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als die Messung im Sitzen, auf der diese Normwerte beruhen — ein Wearable-Wert kann also etwas besser aussehen, als er ist. Vergleiche deinen eigenen Wochendurchschnitt.",
+  "invalid": "Gib ein gültiges Alter (18–120) und einen gültigen Ruhepuls (30–150 S/min) ein.",
+  "disclaimer": "Schätzung zu Informationszwecken, keine medizinische Beratung. Die Perzentile stammen aus der CDC-NHANES-Erhebung unter gesunden US-Erwachsenen (Puls im Sitzen). Dein eigener Morgenverlauf zählt mehr als ein einzelner Wert. Der Ruhepuls steigt durch Koffein, Stress, Hitze, Krankheit, Alkohol und schlechten Schlaf.",
+  "tables": {
+    "menTitle": "Ruhepuls nach Alter — Männer",
+    "womenTitle": "Ruhepuls nach Alter — Frauen",
+    "caption": "Ruhepuls im Sitzen, S/min. CDC NHANES 1999–2008 (Ostchega 2011), gesunde Erwachsene.",
+    "age": "Alter",
+    "p10": "Niedrig (p10)",
+    "p25": "p25",
+    "p50": "Median",
+    "p75": "p75",
+    "p90": "Hoch (p90)"
+  },
+  "sections": [
+    {
+      "h2": "Normaler Ruhepuls: Was ist nach Alter normal?",
+      "body": "Bei Erwachsenen gilt ein Ruhepuls zwischen 60 und 100 S/min als normal, viele Kardiologen betrachten etwa 50–90 S/min als gesunden Bereich. In der NHANES-Erhebung der CDC unter gesunden US-Erwachsenen lag der mediane Ruhepuls im Sitzen bei Männern mit 18–39 Jahren bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min — über das Erwachsenenleben fast konstant. Die mittlere Hälfte der Männer (p25–p75) lag zwischen etwa 60 und 77 S/min. Anders als die HRV verändert sich der Ruhepuls bei Erwachsenen mit dem Alter kaum; Fitness, Gene, Schlaf und Stress spielen eine viel größere Rolle. Deshalb ist der Vergleich mit deinem eigenen Morgenverlauf am aussagekräftigsten. Ausführlicher Ratgeber: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
+    },
+    {
+      "h2": "Ruhepuls-Tabelle Frau: normale Werte für Frauen",
+      "body": "Der Ruhepuls von Frauen liegt ein paar Schläge höher als bei Männern, vor allem weil das Herz meist kleiner ist und pro Schlag etwas weniger Blut pumpt. In NHANES lag der Median bei Frauen mit 18–39 Jahren bei etwa 74 S/min, mit 40–59 bei 71 S/min und ab 60 bei 70 S/min; die mittlere Hälfte lag zwischen etwa 64 und 82 S/min. Der Ruhepuls schwankt außerdem mit dem Zyklus — in der zweiten Zyklushälfte ist er meist ein paar Schläge höher — und steigt in der Schwangerschaft. Vergleiche also Gleiches mit Gleichem: dieselbe Tageszeit, dieselbe Zyklusphase und deinen Wochendurchschnitt statt eines einzelnen Tages. Wähle im Rechner „Frau“, um die Tabelle für Frauen zu nutzen."
+    },
+    {
+      "h2": "Ruhepuls zu hoch — woran liegt das?",
+      "body": "Ein höherer Ruhepuls als sonst ist meist vorübergehend: Koffein, Alkohol am Vorabend, schlechter oder zu kurzer Schlaf, Flüssigkeitsmangel, Hitze, eine harte Trainingseinheit, Stress oder ein beginnender Infekt. Auch manche Medikamente (etwa abschwellende Mittel oder Schilddrüsenpräparate) und Erkrankungen wie Blutarmut oder eine Schilddrüsenüberfunktion können ihn erhöhen. Achte auf das Muster: Ein paar Schläge mehr an ein, zwei Tagen sind normales Rauschen; ein morgendlicher Ruhepuls, der mehrere Tage deutlich über deinem üblichen Niveau bleibt — besonders zusammen mit einer niedrigeren HRV —, zeigt, dass dein Körper mehr Belastung trägt, als er verkraftet. Über 100 S/min in Ruhe oder ein hoher Puls mit Herzstolpern, Schwindel oder Atemnot ist ein Grund, zum Arzt zu gehen. Mehr dazu: [wie Alkohol HRV und Ruhepuls beeinflusst](/articles/how-much-alcohol-lowers-hrv) und [Anzeichen von Übertraining](/articles/overtraining-hrv-resting-heart-rate)."
+    },
+    {
+      "h2": "Ruhepuls senken: Was wirklich hilft",
+      "body": "Am zuverlässigsten senkst du deinen Ruhepuls mit regelmäßigem Ausdauertraining: Gleichmäßiges Zone-2-Cardio drei- oder mehrmals pro Woche sorgt dafür, dass das Herz pro Schlag mehr Blut pumpt und in Ruhe weniger Schläge braucht. Verbesserungen zeigen sich meist nach 6–12 Wochen. Auch Schlaf, weniger Alkohol (besonders abends), weniger Koffein am späten Tag, ausreichend Trinken und der Umgang mit chronischem Stress helfen. Langsames Atmen senkt den Puls während der Übung und unterstützt langfristig die Erholung. Verfolge deinen Morgendurchschnitt wöchentlich, nicht täglich. Ratgeber: [Zone-2-Training](/articles/zone-2-training-aerobic-base) und [HRV natürlich steigern](/articles/how-to-raise-hrv-naturally)."
+    },
+    {
+      "h2": "Ruhepuls vs. HRV",
+      "body": "Der Ruhepuls zeigt, wie schnell dein Herz in Ruhe schlägt; die Herzratenvariabilität (HRV) zeigt, wie stark der Abstand zwischen den Schlägen schwankt — ein Zeichen dafür, wie flexibel dein Nervensystem arbeitet. Meist bewegen sie sich gegenläufig: Bist du gut erholt, ist der Ruhepuls niedrig und die HRV hoch; bei Stress, Krankheit oder Übertraining steigt der Ruhepuls und die HRV sinkt, oft gleichzeitig. Der Ruhepuls ist stabiler und zwischen Geräten leichter vergleichbar; die HRV reagiert schneller. Beide gegen deine eigene Baseline zu verfolgen, ist besser als nur einen Wert. Prüfe auch deine HRV: [HRV-Rechner nach Alter](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Ruhepuls — häufige Fragen",
+  "faq": [
+    {
+      "q": "Welcher Ruhepuls ist nach Alter normal?",
+      "a": "Bei Erwachsenen 60–100 S/min, bei Gesunden meist zwischen 60 und 79 S/min. Der CDC-NHANES-Median liegt bei Männern mit 18–39 bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min; bei Frauen bei etwa 74, 71 und 70 S/min. Mit dem Alter ändert er sich kaum."
+    },
+    {
+      "q": "Welcher Ruhepuls ist bei Frauen normal?",
+      "a": "Ein paar Schläge höher als bei Männern: Der Median liegt bei etwa 74 S/min mit 18–39, 71 S/min mit 40–59 und 70 S/min ab 60; die mittlere Hälfte der Frauen liegt zwischen etwa 64 und 82 S/min."
+    },
+    {
+      "q": "Ist ein Ruhepuls von 50 gut?",
+      "a": "Für fitte Menschen ja — 50 S/min ist bei Ausdauertrainierten verbreitet und spricht für ein effizientes Herz. Kommen bei einem Puls unter 50 Schwindel, Ohnmacht oder ungewöhnliche Müdigkeit dazu, geh zum Arzt."
+    },
+    {
+      "q": "Ist ein Ruhepuls von 90 zu hoch?",
+      "a": "90 S/min liegt noch im normalen Bereich von 60–100, aber höher als bei etwa 90 % der gesunden Erwachsenen. Bleibt dein morgendlicher Ruhepuls um 90, lohnt sich ein Blick auf Schlaf, Alkohol, Koffein und Stress — und ein Gespräch mit deiner Ärztin oder deinem Arzt."
+    },
+    {
+      "q": "Wie messe ich meinen Ruhepuls?",
+      "a": "Morgens vor dem Aufstehen und vor dem Kaffee: Puls 30 Sekunden zählen und verdoppeln oder den Ruhepuls deiner Uhr nutzen. Bilde den Durchschnitt mehrerer Morgen, statt einem einzelnen Wert zu vertrauen."
+    },
+    {
+      "q": "Warum ist der Ruhepuls meiner Apple Watch niedriger als beim Arzt?",
+      "a": "Die Apple Watch und andere Wearables messen deinen Puls, wenn du völlig ruhig bist, oft im Liegen oder im Schlaf, während die Messung in der Praxis im Sitzen und oft etwas angespannt erfolgt. Ein paar S/min Unterschied sind normal."
+    },
+    {
+      "q": "Wie kann ich meinen Ruhepuls senken?",
+      "a": "Regelmäßiges Ausdauertraining wie Zone-2-Cardio ist der stärkste Hebel, mit Ergebnissen nach 6–12 Wochen. Besserer Schlaf, weniger Alkohol und spätes Koffein, genug Trinken und Stressmanagement helfen ebenfalls."
+    },
+    {
+      "q": "Ab wann ist der Ruhepuls gefährlich?",
+      "a": "Ein Ruhepuls über 100 S/min (Tachykardie) oder ein niedriger Puls mit Schwindel oder Ohnmacht sollte ärztlich abgeklärt werden. Bei Brustschmerzen, Ohnmacht oder rasendem, unregelmäßigem Herzschlag such sofort medizinische Hilfe."
+    }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Die Tabellen stammen direkt aus dem CDC/NCHS-Bericht zu NHANES 1999–2008 (Ostchega et al. 2011, Tabellen 2–3): Ruhepuls im Sitzen von rund 17.000 US-Erwachsenen, ohne Personen mit Erkrankungen oder Medikamenten, die den Puls beeinflussen. Die Gruppe 18–39 nutzt die Zeile 20–39, die Gruppe 60+ die Zeile 60–79. Dein Perzentil wird zwischen den veröffentlichten 5.–95. Perzentilen für dein Alter und Geschlecht interpoliert. Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als eine Messung im Sitzen.",
+  "sourcesContributes": [
+    "Direkte Quelle der Tabellen: Perzentile des Ruhepulses im Sitzen nach Alter und Geschlecht aus NHANES 1999–2008, ohne pulsbeeinflussende Erkrankungen und Medikamente (Tabellen 2–3).",
+    "Klinischer Kontext: Ein normaler Ruhepuls liegt bei etwa 50–90 S/min, niedriger bei sehr Fitten, etwas höher bei Frauen und ist teilweise genetisch bedingt.",
+    "Metaanalyse (rund 1,2 Millionen Menschen): Jeder um 10 S/min höhere Ruhepuls ist mit etwa 9 % höherer Gesamtsterblichkeit verbunden — deshalb zählt ein niedrigerer Ruhepuls."
+  ],
+  "related": {
+    "label": "Verwandte Themen",
+    "article": "Ruhepuls nach Alter",
+    "hrv": "HRV-Rechner nach Alter",
+    "camera": "Puls mit der Handykamera messen",
+    "zone2": "Zone-2-Puls"
+  }
+}
