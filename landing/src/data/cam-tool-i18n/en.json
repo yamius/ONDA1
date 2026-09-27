@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Measure Heart Rate With Your Phone Camera — Free | ONDA Life",
+    "description": "Check your pulse with your phone camera: cover the rear camera and flash with a fingertip and see your heart rate in about 30 seconds. Free, on-device, no app.",
+    "appName": "Phone Camera Heart Rate Monitor",
+    "appDescription": "Free browser tool that estimates heart rate from a fingertip over the phone's rear camera and flash (contact photoplethysmography), processed on-device."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Camera Heart Rate" },
+  "h1": "Measure Your Heart Rate With Your Phone Camera",
+  "capsule": "You can check your pulse with just your phone: cover the rear camera and flash with a fingertip, hold still for about 30 seconds, and the camera reads the tiny colour change of your skin with each heartbeat. It's a rough estimate for heart rate only — not a medical device — and everything is processed on your phone; no video is recorded or sent.",
+  "imageAlt": "Measure heart rate with your phone camera — fingertip over the rear camera and flash, free tool from ONDA Life",
+  "warning": "Rough, educational estimate — not a medical device and not the accuracy of a wearable. Works best on a phone (rear camera + flash). Everything is processed on your device; no video is recorded or uploaded.",
+  "steps": [
+    "Use a phone. Tap start and allow camera access.",
+    "Gently cover the rear camera and flash with your fingertip.",
+    "Hold still for about 30 seconds while we read your pulse."
+  ],
+  "ui": {
+    "start": "♥ Start measurement",
+    "hold": "Keep your fingertip still over the camera and flash…",
+    "cancel": "Cancel",
+    "bpm": "bpm",
+    "estimated": "Estimated heart rate",
+    "resultNote": "A rough estimate from your fingertip. Is it normal for you?",
+    "resultLink": "Compare with resting heart rate by age",
+    "weak": "Weak signal — we couldn't read a clear pulse. Use a phone, cover the rear camera and the flash fully but gently with your fingertip, and hold still. Try again.",
+    "again": "Measure again",
+    "tryAgain": "Try again",
+    "denied": "Camera permission was denied. Allow camera access and try again.",
+    "failed": "Couldn't start the camera. On a phone, make sure no other app is using it."
+  },
+  "disclaimer": "Educational estimate, not medical advice. Phone-camera heart rate varies with the device, lighting, finger pressure and how still you hold, so treat it as a ballpark — not for any health decision. Heart rate only (not HRV, which a phone camera can't reliably capture). Camera frames are analysed live on your device and never stored or sent.",
+  "sections": [
+    {
+      "h2": "How to measure heart rate with your phone",
+      "body": "Use the rear camera, not the selfie camera: tap start, allow camera access, then rest the pad of your index finger lightly over both the camera lens and the flash so the flash shines through your fingertip. Sit down, rest your hand on a table and stay still for about 30 seconds. Press gently — pressing hard squeezes blood out of the fingertip and weakens the signal, while too little contact lets in stray light. Cold fingers also give a weaker signal, so warm your hands first. For a true resting heart rate, measure in the morning before getting up or after sitting quietly for 5 minutes."
+    },
+    {
+      "h2": "How accurate is phone camera heart rate?",
+      "body": "For heart rate at rest, a fingertip over the camera is the more accurate of the phone methods: in a study of smartphone heart-rate apps (Coppetti 2017), contact fingertip readings came much closer to an ECG than face-scanning apps — but accuracy still varied a lot between apps and conditions. Expect a reasonable ballpark when you're sitting still, and poorer readings while moving, with cold hands, in bright sunlight or with an irregular heartbeat. That's why this is an estimate, not a medical measurement. For continuous and more reliable readings, a chest strap or a validated watch is better; for any symptom, see a doctor."
+    },
+    {
+      "h2": "What is a normal heart rate?",
+      "body": "For adults at rest, 60–100 bpm is considered normal, and most healthy people sit in the 60s–70s. Fit people often have a resting heart rate in the 50s, while stress, caffeine, poor sleep, illness or having just walked around push it up. A single reading tells you little: compare readings taken the same way at the same time of day. See where your number sits for your age and sex: [resting heart rate by age](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "How to check your pulse without a phone",
+      "body": "Place two fingers (not your thumb) on the inside of your wrist below the thumb, or on the side of your neck next to your windpipe. Count the beats for 30 seconds and multiply by two — or count for a full minute if your pulse feels irregular. Do it sitting down after a few minutes of rest. A manual count and a phone-camera reading should land within a few beats of each other; if they don't, trust the manual count and repeat."
+    },
+    {
+      "h2": "Why a phone camera measures heart rate but not HRV",
+      "body": "Heart rate only needs the average number of beats per minute, which the camera can estimate. Heart rate variability (HRV) needs the exact time between individual beats, and a phone camera's frame rate and noise can't capture that reliably — small timing errors that don't matter for heart rate ruin HRV. That's why this tool shows heart rate only. HRV is best measured by a chest strap or a watch; if you have a number from Oura, Whoop, Garmin or Apple Watch, see how it compares: [HRV Calculator by Age](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Phone camera heart rate — common questions",
+  "faq": [
+    { "q": "Can I measure my heart rate with my phone camera?", "a": "Yes. Cover the rear camera and flash with a fingertip and hold still for about 30 seconds; the camera detects the colour change of your skin with each heartbeat. It gives a rough estimate of heart rate, not a medical measurement." },
+    { "q": "How accurate is phone camera heart rate?", "a": "At rest, fingertip-on-camera readings are the more accurate phone method, but accuracy varies with the phone, lighting, finger pressure and movement (Coppetti 2017). Use it as a ballpark, not for health decisions." },
+    { "q": "Does it work with the front (selfie) camera or a laptop webcam?", "a": "It works best with a phone's rear camera and flash, because the flash lights your fingertip from behind. Front cameras and webcams usually give a weak or unreliable signal." },
+    { "q": "Why does it say weak signal?", "a": "Usually the fingertip doesn't fully cover both the lens and the flash, you're pressing too hard or moving, your fingers are cold, or the flash didn't turn on. Warm your hands, press gently, rest your hand on a table and try again." },
+    { "q": "Can a phone camera measure HRV?", "a": "Not reliably. HRV needs precise timing between individual beats, which a phone camera can't capture dependably, so this tool shows heart rate only. Use a chest strap or a watch for HRV." },
+    { "q": "Is my camera video recorded?", "a": "No. Everything is processed live in your browser on your device. No image or video is saved or uploaded, and the camera turns off when you finish." },
+    { "q": "What is a normal heart rate at rest?", "a": "60–100 bpm for adults, with most healthy people in the 60s–70s and fit people often in the 50s. Compare with the resting heart rate by age calculator for your age and sex." }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "Your fingertip, lit by the camera flash, changes colour very slightly with every heartbeat as blood pulses through it. The camera sees that rhythmic change; the tool averages the red channel of each frame, filters it, and finds the dominant beat frequency to estimate your heart rate — the same contact-PPG principle as a clinical pulse oximeter (Allen 2007). Contact fingertip readings are the more reliable smartphone method, but accuracy varies widely with device, lighting, pressure and stillness (Coppetti 2017), so treat the number as a rough, educational estimate. Heart rate only, not HRV. Everything is processed live on your device; no image or video is recorded or uploaded.",
+  "sourcesContributes": [
+    "Foundational review of PPG — the optical blood-volume signal this tool reads from your fingertip.",
+    "Found contact (fingertip-on-camera) PPG more accurate than non-contact, but with large variability — why this is an estimate, not a measurement."
+  ],
+  "related": {
+    "label": "Related",
+    "rhr": "Resting heart rate by age",
+    "hrv": "HRV Calculator by Age",
+    "apps": "Best HRV biofeedback apps"
+  }
+}

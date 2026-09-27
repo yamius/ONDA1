@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Hartslag meten met je telefoon — gratis | ONDA Life",
+    "description": "Meet je hartslag met de camera van je telefoon: leg je vingertop op camera en flitser en zie je hartslag in ca. 30 seconden. Gratis, lokaal, geen app.",
+    "appName": "Hartslagmeter via telefooncamera",
+    "appDescription": "Gratis browsertool die je hartslag schat via een vingertop op de achtercamera en flitser van je telefoon (contact-fotoplethysmografie), verwerkt op je eigen toestel."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Hartslag via camera" },
+  "h1": "Hartslag meten met je telefoon",
+  "capsule": "Je kunt je hartslag meten met alleen je telefoon: bedek de achtercamera en de flitser met een vingertop, houd ongeveer 30 seconden stil, en de camera ziet de piepkleine kleurverandering van je huid bij elke hartslag. Het is een ruwe schatting, alleen van je hartslag — geen medisch hulpmiddel — en alles wordt op je telefoon verwerkt; er wordt geen video opgenomen of verstuurd.",
+  "imageAlt": "Hartslag meten met je telefooncamera — vingertop op de achtercamera en flitser, gratis tool van ONDA Life",
+  "warning": "Ruwe, informatieve schatting — geen medisch hulpmiddel en niet zo nauwkeurig als een wearable. Werkt het best op een telefoon (achtercamera + flitser). Alles wordt op je toestel verwerkt; er wordt geen video opgenomen of geüpload.",
+  "steps": [
+    "Gebruik een telefoon. Tik op start en geef toegang tot de camera.",
+    "Bedek de achtercamera en de flitser voorzichtig met je vingertop.",
+    "Houd ongeveer 30 seconden stil terwijl we je hartslag meten."
+  ],
+  "ui": {
+    "start": "♥ Start meting",
+    "hold": "Houd je vingertop stil op de camera en flitser…",
+    "cancel": "Annuleren",
+    "bpm": "slagen/min",
+    "estimated": "Geschatte hartslag",
+    "resultNote": "Een ruwe schatting via je vingertop. Is dit normaal voor jou?",
+    "resultLink": "Vergelijk met de rusthartslag per leeftijd",
+    "weak": "Zwak signaal — we konden geen duidelijke hartslag meten. Gebruik een telefoon, bedek de achtercamera en de flitser volledig maar zachtjes met je vingertop en houd stil. Probeer het opnieuw.",
+    "again": "Opnieuw meten",
+    "tryAgain": "Opnieuw proberen",
+    "denied": "Toegang tot de camera is geweigerd. Sta cameratoegang toe en probeer het opnieuw.",
+    "failed": "De camera kon niet starten. Controleer op je telefoon dat geen andere app de camera gebruikt."
+  },
+  "disclaimer": "Informatieve schatting, geen medisch advies. Hartslag via de telefooncamera hangt af van je toestel, het licht, hoe hard je drukt en hoe stil je houdt, dus zie het als een indicatie — niet voor gezondheidsbeslissingen. Alleen hartslag (geen HRV, die een telefooncamera niet betrouwbaar kan meten). Camerabeelden worden live op je toestel geanalyseerd en nooit opgeslagen of verstuurd.",
+  "sections": [
+    {
+      "h2": "Zo meet je je hartslag met je telefoon",
+      "body": "Gebruik de achtercamera, niet de selfiecamera: tik op start, geef cameratoegang en leg het kussentje van je wijsvinger licht over zowel de cameralens als de flitser, zodat de flitser door je vingertop schijnt. Ga zitten, leg je hand op tafel en blijf ongeveer 30 seconden stil. Druk zachtjes — hard drukken duwt het bloed uit je vingertop en verzwakt het signaal, terwijl te weinig contact strooilicht binnenlaat. Koude vingers geven ook een zwakker signaal, dus warm je handen eerst op. Voor een echte rusthartslag meet je 's ochtends voordat je opstaat of na 5 minuten rustig zitten."
+    },
+    {
+      "h2": "Hoe nauwkeurig is hartslag meten met de camera?",
+      "body": "Voor je hartslag in rust is een vingertop op de camera de nauwkeurigste methode met een telefoon: in een studie naar hartslag-apps voor smartphones (Coppetti 2017) kwamen metingen met de vingertop veel dichter bij een ECG dan apps die je gezicht scannen — maar de nauwkeurigheid verschilde nog sterk per app en situatie. Reken op een redelijke indicatie als je stilzit, en op minder goede metingen als je beweegt, koude handen hebt, in fel zonlicht zit of een onregelmatige hartslag hebt. Daarom is dit een schatting, geen medische meting. Voor continue en betrouwbaardere metingen is een borstband of een gevalideerd horloge beter; bij klachten ga je naar een arts."
+    },
+    {
+      "h2": "Wat is een normale hartslag?",
+      "body": "Voor volwassenen in rust geldt 60–100 slagen/min als normaal, en de meeste gezonde mensen zitten tussen de 60 en 80. Sportieve mensen hebben vaak een rusthartslag rond de 50, terwijl stress, cafeïne, slecht slapen, ziekte of net rondgelopen hebben hem omhoog duwen. Eén meting zegt weinig: vergelijk metingen die je op dezelfde manier en op hetzelfde tijdstip doet. Bekijk waar jouw waarde ligt voor je leeftijd en geslacht: [Rusthartslag per leeftijd](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Hartslag meten zonder horloge of telefoon",
+      "body": "Leg twee vingers (niet je duim) aan de binnenkant van je pols onder je duim, of in je hals naast je luchtpijp. Tel de slagen 30 seconden en vermenigvuldig met twee — of tel een volle minuut als je hartslag onregelmatig aanvoelt. Doe het zittend, na een paar minuten rust. Handmatig tellen en een meting met de telefooncamera horen maar een paar slagen te verschillen; is dat niet zo, vertrouw dan op je eigen telling en meet opnieuw."
+    },
+    {
+      "h2": "Waarom een telefooncamera wel hartslag meet, maar geen HRV",
+      "body": "Voor je hartslag is alleen het gemiddelde aantal slagen per minuut nodig, en dat kan de camera schatten. Hartslagvariabiliteit (HRV) vraagt om de exacte tijd tussen afzonderlijke slagen, en de beeldsnelheid en ruis van een telefooncamera kunnen dat niet betrouwbaar vastleggen — kleine timingfouten die voor je hartslag niet uitmaken, verpesten HRV. Daarom toont deze tool alleen je hartslag. HRV meet je het best met een borstband of een horloge; heb je een waarde van Oura, Whoop, Garmin of Apple Watch, bekijk dan hoe die zich verhoudt: [HRV-calculator per leeftijd](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Hartslag meten met de camera — veelgestelde vragen",
+  "faq": [
+    { "q": "Kan ik mijn hartslag meten met de camera van mijn telefoon?", "a": "Ja. Bedek de achtercamera en de flitser met een vingertop en houd ongeveer 30 seconden stil; de camera ziet de kleurverandering van je huid bij elke hartslag. Je krijgt een ruwe schatting van je hartslag, geen medische meting." },
+    { "q": "Hoe nauwkeurig is hartslag meten met de camera?", "a": "In rust is een vingertop op de camera de nauwkeurigste methode met een telefoon, maar de nauwkeurigheid hangt af van je telefoon, het licht, hoe hard je drukt en of je beweegt (Coppetti 2017). Gebruik het als indicatie, niet voor gezondheidsbeslissingen." },
+    { "q": "Werkt het met de voorcamera (selfiecamera) of de webcam van een laptop?", "a": "Het werkt het best met de achtercamera en flitser van een telefoon, omdat de flitser je vingertop van achteren verlicht. Voorcamera's en webcams geven meestal een zwak of onbetrouwbaar signaal." },
+    { "q": "Waarom staat er 'zwak signaal'?", "a": "Meestal bedekt je vingertop de lens en de flitser niet helemaal, druk je te hard of beweeg je, zijn je vingers koud of ging de flitser niet aan. Warm je handen op, druk zachtjes, leg je hand op tafel en probeer het opnieuw." },
+    { "q": "Kan een telefooncamera HRV meten?", "a": "Niet betrouwbaar. HRV vraagt om precieze timing tussen afzonderlijke slagen, en die kan een telefooncamera niet goed vastleggen, dus deze tool toont alleen je hartslag. Gebruik een borstband of een horloge voor HRV." },
+    { "q": "Wordt mijn camerabeeld opgenomen?", "a": "Nee. Alles wordt live in je browser op je toestel verwerkt. Er wordt geen foto of video opgeslagen of geüpload, en de camera gaat uit zodra je klaar bent." },
+    { "q": "Wat is een normale hartslag in rust?", "a": "60–100 slagen/min voor volwassenen; de meeste gezonde mensen zitten tussen de 60 en 80 en sportieve mensen vaak rond de 50. Vergelijk met de calculator voor rusthartslag per leeftijd voor jouw leeftijd en geslacht." }
+  ],
+  "sourcesTitle": "Bronnen & methode",
+  "methodology": "Je vingertop, verlicht door de flitser, verandert bij elke hartslag heel licht van kleur doordat er bloed doorheen pompt. De camera ziet die ritmische verandering; de tool middelt het rode kanaal van elk beeld, filtert het en zoekt de dominante slagfrequentie om je hartslag te schatten — hetzelfde contact-PPG-principe als een klinische saturatiemeter (Allen 2007). Metingen met de vingertop zijn de betrouwbaarste smartphonemethode, maar de nauwkeurigheid varieert sterk met toestel, licht, druk en stilzitten (Coppetti 2017), dus zie de waarde als een ruwe, informatieve schatting. Alleen hartslag, geen HRV. Alles wordt live op je toestel verwerkt; er wordt geen foto of video opgenomen of geüpload.",
+  "sourcesContributes": [
+    "Basisoverzicht van PPG — het optische bloedvolumesignaal dat deze tool via je vingertop meet.",
+    "Vond contact-PPG (vingertop op de camera) nauwkeuriger dan contactloze metingen, maar met grote spreiding — daarom is dit een schatting, geen meting."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "rhr": "Rusthartslag per leeftijd",
+    "hrv": "HRV-calculator per leeftijd",
+    "apps": "Beste HRV-biofeedback-apps"
+  }
+}

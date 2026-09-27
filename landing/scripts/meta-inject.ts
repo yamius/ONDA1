@@ -69,7 +69,7 @@ import { NS_FAQ } from '../src/data/nervous-system-state'
 import { WHM_FAQ } from '../src/data/wim-hof'
 import { FOG_FAQ } from '../src/data/brain-fog'
 import { RECOVERY_FAQ } from '../src/data/recovery-score'
-import { CAMERA_HR_FAQ } from '../src/data/camera-heart-rate'
+import { camToolCopy } from '../src/data/cam-tool-i18n'
 import { MIC_FAQ } from '../src/data/mic-breathing'
 import { BH_FAQ } from '../src/data/breath-heart'
 import {
@@ -2359,16 +2359,34 @@ export function getMetaForRoute(route: string): RouteMeta {
       },
     }
   }
-  if (route === '/tools/camera-heart-rate') {
+  // /tools/camera-heart-rate — published in all 12 languages (copy in src/data/cam-tool-i18n).
+  if (route === '/tools/camera-heart-rate' || /^\/[a-z]{2}\/tools\/camera-heart-rate$/.test(route)) {
+    const lang = (route === '/tools/camera-heart-rate' ? 'en' : route.slice(1, 3)) as Lang
+    const c = camToolCopy(lang)
     return {
-      title: 'Camera Heart Rate — Measure Pulse With Your Phone | ONDA Life',
-      description:
-        'Measure your heart rate with your phone camera — cover the rear camera and flash with a fingertip and see your pulse in real time. Rough estimate, processed on-device, not medical.',
+      title: c.meta.title,
+      description: c.meta.description,
       url,
       breadcrumbs,
       ogType: 'website',
       image: `${SITE_URL}/images/tools/camera-heart-rate.png`,
-      faq: { mainEntity: CAMERA_HR_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
+      faq: { mainEntity: c.faq.map((f) => ({ question: f.q, answer: f.a })), url },
+      jsonLd: [
+        {
+          '@context': 'https://schema.org',
+          '@type': 'WebApplication',
+          name: c.meta.appName,
+          description: c.meta.appDescription,
+          url,
+          inLanguage: lang,
+          applicationCategory: 'HealthApplication',
+          operatingSystem: 'Any (web browser with camera)',
+          isAccessibleForFree: true,
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+          image: `${SITE_URL}/images/tools/camera-heart-rate.png`,
+          publisher: { '@type': 'Organization', name: 'ONDA Life', url: SITE_URL },
+        },
+      ],
     }
   }
   if (route === '/tools/breathing-rate') {

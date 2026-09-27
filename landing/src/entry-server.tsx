@@ -282,6 +282,17 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/pt/tools/resting-heart-rate" element={<RestingHeartRatePage />} />
           <Route path="/tools/recovery-score"  element={<RecoveryScorePage />} />
           <Route path="/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/es/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/ru/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/uk/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/zh/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/de/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/fr/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/it/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/nl/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/ja/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/pl/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
+          <Route path="/pt/tools/camera-heart-rate" element={<CameraHeartRatePage />} />
           <Route path="/tools/breathing-rate"  element={<MicBreathingPage />} />
           <Route path="/tools/breath-heart-biofeedback" element={<BreathHeartBiofeedbackPage />} />
           <Route path="/reviews"               element={<ReviewsPage />} />

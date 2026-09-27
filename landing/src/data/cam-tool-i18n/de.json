@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Puls messen mit dem Handy — kostenlos, ohne App | ONDA Life",
+    "description": "Puls mit der Handykamera messen: Finger auf Rückkamera und Blitz legen und in ca. 30 Sekunden die Herzfrequenz sehen. Kostenlos, auf dem Gerät, ohne App.",
+    "appName": "Pulsmesser mit Handykamera",
+    "appDescription": "Kostenloses Browser-Tool, das die Herzfrequenz über eine Fingerkuppe auf Rückkamera und Blitz des Handys schätzt (Kontakt-Photoplethysmografie), direkt auf dem Gerät verarbeitet."
+  },
+  "breadcrumb": { "home": "Startseite", "tools": "Tools", "current": "Puls per Kamera" },
+  "h1": "Puls messen mit dem Handy",
+  "capsule": "Du kannst deinen Puls nur mit dem Handy messen: Leg eine Fingerkuppe auf Rückkamera und Blitz, halte etwa 30 Sekunden still, und die Kamera erkennt die winzige Farbveränderung deiner Haut bei jedem Herzschlag. Das ist nur eine grobe Schätzung der Herzfrequenz – kein Medizinprodukt – und alles wird auf deinem Handy verarbeitet; es wird kein Video aufgezeichnet oder gesendet.",
+  "imageAlt": "Puls messen mit der Handykamera – Fingerkuppe auf Rückkamera und Blitz, kostenloses Tool von ONDA Life",
+  "warning": "Grobe Schätzung zu Informationszwecken – kein Medizinprodukt und nicht so genau wie ein Wearable. Funktioniert am besten mit einem Handy (Rückkamera + Blitz). Alles wird auf deinem Gerät verarbeitet; es wird kein Video aufgezeichnet oder hochgeladen.",
+  "steps": [
+    "Nimm ein Handy. Tippe auf Start und erlaube den Kamerazugriff.",
+    "Bedecke Rückkamera und Blitz sanft mit deiner Fingerkuppe.",
+    "Halte etwa 30 Sekunden still, während wir deinen Puls messen."
+  ],
+  "ui": {
+    "start": "♥ Messung starten",
+    "hold": "Halte deine Fingerkuppe ruhig über Kamera und Blitz…",
+    "cancel": "Abbrechen",
+    "bpm": "S/min",
+    "estimated": "Geschätzte Herzfrequenz",
+    "resultNote": "Eine grobe Schätzung über deine Fingerkuppe. Ist das normal für dich?",
+    "resultLink": "Mit dem Ruhepuls nach Alter vergleichen",
+    "weak": "Schwaches Signal – wir konnten keinen klaren Puls erkennen. Nimm ein Handy, bedecke Rückkamera und Blitz vollständig, aber sanft mit der Fingerkuppe, und halte still. Versuch es noch einmal.",
+    "again": "Erneut messen",
+    "tryAgain": "Nochmal versuchen",
+    "denied": "Der Kamerazugriff wurde verweigert. Erlaube den Zugriff auf die Kamera und versuch es noch einmal.",
+    "failed": "Die Kamera konnte nicht gestartet werden. Stell auf dem Handy sicher, dass keine andere App sie gerade nutzt."
+  },
+  "disclaimer": "Schätzung zu Informationszwecken, keine medizinische Beratung. Die Herzfrequenz per Handykamera hängt vom Gerät, Licht, Fingerdruck und davon ab, wie still du hältst – betrachte sie als Richtwert und nicht als Grundlage für gesundheitliche Entscheidungen. Nur Herzfrequenz (keine HRV, die eine Handykamera nicht zuverlässig erfassen kann). Die Kamerabilder werden live auf deinem Gerät ausgewertet und nie gespeichert oder gesendet.",
+  "sections": [
+    {
+      "h2": "Puls mit der Handykamera messen – so geht's",
+      "body": "Nutze die Rückkamera, nicht die Selfie-Kamera: Tippe auf Start, erlaube den Kamerazugriff und lege die Kuppe deines Zeigefingers leicht auf Kameralinse und Blitz, sodass der Blitz durch deine Fingerkuppe scheint. Setz dich hin, leg die Hand auf einen Tisch und bleib etwa 30 Sekunden ruhig. Drück nur sanft – starker Druck presst das Blut aus der Fingerkuppe und schwächt das Signal, zu wenig Kontakt lässt Streulicht herein. Auch kalte Finger liefern ein schwächeres Signal, also wärm deine Hände vorher auf. Für einen echten Ruhepuls miss morgens vor dem Aufstehen oder nachdem du 5 Minuten ruhig gesessen hast."
+    },
+    {
+      "h2": "Wie genau ist die Herzfrequenz-Messung per App und Handykamera?",
+      "body": "Für die Herzfrequenz in Ruhe ist die Fingerkuppe auf der Kamera die genauere Handy-Methode: In einer Studie zu Herzfrequenz-Apps für Smartphones (Coppetti 2017) lagen Messungen per Fingerkontakt deutlich näher am EKG als Apps, die das Gesicht scannen – die Genauigkeit schwankte aber stark zwischen Apps und Bedingungen. Rechne mit einem brauchbaren Richtwert, wenn du still sitzt, und mit schlechteren Werten bei Bewegung, kalten Händen, grellem Sonnenlicht oder unregelmäßigem Herzschlag. Deshalb ist das eine Schätzung, keine medizinische Messung. Für kontinuierliche und zuverlässigere Werte ist ein Brustgurt oder eine validierte Uhr besser; bei Beschwerden geh zum Arzt."
+    },
+    {
+      "h2": "Welcher Puls ist normal?",
+      "body": "Bei Erwachsenen gelten in Ruhe 60–100 S/min als normal, die meisten Gesunden liegen zwischen 60 und 79. Trainierte Menschen haben oft einen Ruhepuls in den 50ern, während Stress, Koffein, schlechter Schlaf, Krankheit oder gerade erst Herumlaufen ihn nach oben treiben. Ein einzelner Wert sagt wenig aus: Vergleiche Messungen, die du auf die gleiche Weise zur gleichen Tageszeit machst. Sieh nach, wo dein Wert für dein Alter und Geschlecht liegt: [Ruhepuls nach Alter](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Puls messen ohne Gerät",
+      "body": "Leg zwei Finger (nicht den Daumen) auf die Innenseite deines Handgelenks unterhalb des Daumens oder seitlich an den Hals neben die Luftröhre. Zähl die Schläge 30 Sekunden lang und nimm sie mal zwei – oder zähl eine volle Minute, wenn sich dein Puls unregelmäßig anfühlt. Mach das im Sitzen nach ein paar Minuten Ruhe. Manuelles Zählen und die Messung per Handykamera sollten nur wenige Schläge auseinanderliegen; wenn nicht, vertrau dem manuellen Zählen und wiederhole die Messung."
+    },
+    {
+      "h2": "Warum die Handykamera die Herzfrequenz misst, aber nicht die HRV",
+      "body": "Für die Herzfrequenz braucht es nur die durchschnittliche Zahl der Schläge pro Minute, und die kann die Kamera schätzen. Die Herzfrequenzvariabilität (HRV) braucht den exakten Abstand zwischen einzelnen Schlägen, und Bildrate und Rauschen einer Handykamera können das nicht zuverlässig erfassen – kleine Zeitfehler, die bei der Herzfrequenz egal sind, machen die HRV unbrauchbar. Deshalb zeigt dieses Tool nur die Herzfrequenz. HRV misst man am besten mit einem Brustgurt oder einer Uhr; wenn du einen Wert von Oura, Whoop, Garmin oder der Apple Watch hast, sieh nach, wie er abschneidet: [HRV-Rechner nach Alter](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Puls per Handykamera – häufige Fragen",
+  "faq": [
+    { "q": "Kann ich meinen Puls mit der Handykamera messen?", "a": "Ja. Bedecke Rückkamera und Blitz mit einer Fingerkuppe und halte etwa 30 Sekunden still; die Kamera erkennt die Farbveränderung deiner Haut bei jedem Herzschlag. Das ergibt eine grobe Schätzung der Herzfrequenz, keine medizinische Messung." },
+    { "q": "Wie genau ist der Puls per Handykamera?", "a": "In Ruhe ist die Fingerkuppe auf der Kamera die genauere Handy-Methode, aber die Genauigkeit hängt von Handy, Licht, Fingerdruck und Bewegung ab (Coppetti 2017). Nutze sie als Richtwert, nicht für gesundheitliche Entscheidungen." },
+    { "q": "Funktioniert es mit der Frontkamera (Selfie) oder einer Laptop-Webcam?", "a": "Am besten funktioniert es mit Rückkamera und Blitz eines Handys, weil der Blitz deine Fingerkuppe von hinten durchleuchtet. Frontkameras und Webcams liefern meist ein schwaches oder unzuverlässiges Signal." },
+    { "q": "Warum steht da „schwaches Signal“?", "a": "Meist bedeckt die Fingerkuppe Linse und Blitz nicht ganz, du drückst zu fest oder bewegst dich, deine Finger sind kalt oder der Blitz ist nicht angegangen. Wärm deine Hände auf, drück sanft, leg die Hand auf einen Tisch und versuch es noch einmal." },
+    { "q": "Kann eine Handykamera die HRV messen?", "a": "Nicht zuverlässig. Die HRV braucht präzise Abstände zwischen einzelnen Schlägen, die eine Handykamera nicht verlässlich erfasst – deshalb zeigt dieses Tool nur die Herzfrequenz. Für die HRV nimm einen Brustgurt oder eine Uhr." },
+    { "q": "Wird mein Kameravideo aufgezeichnet?", "a": "Nein. Alles wird live in deinem Browser auf deinem Gerät verarbeitet. Es wird kein Bild und kein Video gespeichert oder hochgeladen, und die Kamera schaltet sich nach der Messung ab." },
+    { "q": "Welcher Ruhepuls ist normal?", "a": "60–100 S/min bei Erwachsenen; die meisten Gesunden liegen zwischen 60 und 79, Trainierte oft in den 50ern. Vergleiche mit dem Rechner für den Ruhepuls nach Alter für dein Alter und Geschlecht." }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Deine Fingerkuppe, vom Kamerablitz durchleuchtet, verändert bei jedem Herzschlag ganz leicht ihre Farbe, weil Blut hindurchpulsiert. Die Kamera sieht diese rhythmische Veränderung; das Tool mittelt den Rotkanal jedes Bildes, filtert ihn und findet die dominante Schlagfrequenz, um deine Herzfrequenz zu schätzen – dasselbe Kontakt-PPG-Prinzip wie bei einem klinischen Pulsoximeter (Allen 2007). Messungen per Fingerkontakt sind die zuverlässigere Smartphone-Methode, doch die Genauigkeit schwankt stark mit Gerät, Licht, Druck und Stillhalten (Coppetti 2017) – betrachte den Wert also als grobe Schätzung zu Informationszwecken. Nur Herzfrequenz, keine HRV. Alles wird live auf deinem Gerät verarbeitet; es wird kein Bild und kein Video aufgezeichnet oder hochgeladen.",
+  "sourcesContributes": [
+    "Grundlegender Überblick über PPG – das optische Blutvolumensignal, das dieses Tool über deine Fingerkuppe liest.",
+    "Kontakt-PPG (Finger auf der Kamera) war genauer als kontaktlose Verfahren, aber mit großer Streuung – deshalb ist das eine Schätzung, keine Messung."
+  ],
+  "related": {
+    "label": "Verwandt",
+    "rhr": "Ruhepuls nach Alter",
+    "hrv": "HRV-Rechner nach Alter",
+    "apps": "Die besten HRV-Biofeedback-Apps"
+  }
+}

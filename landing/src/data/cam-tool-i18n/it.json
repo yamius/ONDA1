@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Misurare i battiti con il telefono — Gratis | ONDA Life",
+    "description": "Misura le pulsazioni con la fotocamera: copri fotocamera posteriore e flash con un dito e leggi i battiti in circa 30 secondi. Gratis, sul dispositivo.",
+    "appName": "Cardiofrequenzimetro con fotocamera del telefono",
+    "appDescription": "Strumento gratuito nel browser che stima la frequenza cardiaca da un polpastrello appoggiato su fotocamera posteriore e flash (fotopletismografia a contatto), elaborato sul dispositivo."
+  },
+  "breadcrumb": { "home": "Home", "tools": "Strumenti", "current": "Battiti con la fotocamera" },
+  "h1": "Misurare i battiti con il telefono",
+  "capsule": "Puoi controllare le pulsazioni con il solo telefono: copri la fotocamera posteriore e il flash con un polpastrello, resta fermo per circa 30 secondi e la fotocamera rileva la minima variazione di colore della pelle a ogni battito. È una stima approssimativa della sola frequenza cardiaca, non un dispositivo medico, e tutto viene elaborato sul telefono: nessun video viene registrato o inviato.",
+  "imageAlt": "Misurare i battiti con la fotocamera del telefono: polpastrello su fotocamera posteriore e flash, strumento gratuito di ONDA Life",
+  "warning": "Stima approssimativa a scopo informativo: non è un dispositivo medico e non ha la precisione di un dispositivo indossabile. Funziona meglio su telefono (fotocamera posteriore + flash). Tutto viene elaborato sul tuo dispositivo; nessun video viene registrato o caricato.",
+  "steps": [
+    "Usa un telefono. Tocca avvia e consenti l'accesso alla fotocamera.",
+    "Copri delicatamente fotocamera posteriore e flash con il polpastrello.",
+    "Resta fermo per circa 30 secondi mentre leggiamo le pulsazioni."
+  ],
+  "ui": {
+    "start": "♥ Avvia la misurazione",
+    "hold": "Tieni il polpastrello fermo su fotocamera e flash…",
+    "cancel": "Annulla",
+    "bpm": "bpm",
+    "estimated": "Frequenza cardiaca stimata",
+    "resultNote": "Una stima approssimativa dal polpastrello. È normale per te?",
+    "resultLink": "Confronta con la frequenza cardiaca a riposo per età",
+    "weak": "Segnale debole: non siamo riusciti a leggere un battito chiaro. Usa un telefono, copri completamente ma con delicatezza fotocamera posteriore e flash con il polpastrello e resta fermo. Riprova.",
+    "again": "Misura di nuovo",
+    "tryAgain": "Riprova",
+    "denied": "L'accesso alla fotocamera è stato negato. Consenti l'accesso e riprova.",
+    "failed": "Impossibile avviare la fotocamera. Sul telefono, assicurati che nessun'altra app la stia usando."
+  },
+  "disclaimer": "Stima a scopo informativo, non un consiglio medico. La frequenza cardiaca misurata con la fotocamera varia in base al dispositivo, alla luce, alla pressione del dito e a quanto resti fermo: consideralo un valore indicativo, da non usare per decisioni sulla salute. Solo frequenza cardiaca (non HRV, che la fotocamera del telefono non riesce a rilevare in modo affidabile). I fotogrammi vengono analizzati in tempo reale sul dispositivo e mai salvati né inviati.",
+  "sections": [
+    {
+      "h2": "Come misurare la frequenza cardiaca con la fotocamera",
+      "body": "Usa la fotocamera posteriore, non quella per i selfie: tocca avvia, consenti l'accesso alla fotocamera, poi appoggia leggermente il polpastrello dell'indice sia sull'obiettivo sia sul flash, in modo che la luce attraversi il dito. Siediti, appoggia la mano su un tavolo e resta fermo per circa 30 secondi. Premi con delicatezza: premendo forte spingi il sangue fuori dal polpastrello e il segnale si indebolisce, mentre con un contatto troppo leggero entra luce esterna. Anche le dita fredde danno un segnale più debole, quindi scaldati prima le mani. Per una vera frequenza a riposo, misura al mattino prima di alzarti oppure dopo 5 minuti seduto tranquillo."
+    },
+    {
+      "h2": "Quanto è precisa la misurazione con la fotocamera?",
+      "body": "Per la frequenza a riposo, il polpastrello sulla fotocamera è il metodo più preciso tra quelli disponibili su smartphone: in uno studio sulle app per la frequenza cardiaca (Coppetti 2017), le letture a contatto con il dito si avvicinavano molto di più all'ECG rispetto alle app che scansionano il viso, ma la precisione variava comunque molto tra app e condizioni. Aspettati un valore indicativo ragionevole da seduto e fermo, e letture peggiori in movimento, con le mani fredde, sotto il sole diretto o con un battito irregolare. Per questo è una stima, non una misurazione medica. Per letture continue e più affidabili sono meglio una fascia cardio o un orologio validato; per qualsiasi sintomo, rivolgiti a un medico."
+    },
+    {
+      "h2": "Qual è una frequenza cardiaca normale?",
+      "body": "Negli adulti a riposo è considerata normale una frequenza di 60–100 bpm, e la maggior parte delle persone sane sta tra 60 e 79. Chi è allenato ha spesso una frequenza a riposo tra 50 e 59, mentre stress, caffeina, sonno scarso, malattia o l'aver appena camminato la fanno salire. Una singola lettura dice poco: confronta misurazioni fatte allo stesso modo e alla stessa ora del giorno. Scopri dove si colloca il tuo valore per età e sesso: [Frequenza cardiaca a riposo per età](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Come misurare le pulsazioni senza telefono",
+      "body": "Appoggia due dita (non il pollice) sull'interno del polso, sotto il pollice, oppure sul lato del collo accanto alla trachea. Conta i battiti per 30 secondi e moltiplica per due, oppure conta per un minuto intero se il polso ti sembra irregolare. Fallo da seduto dopo qualche minuto di riposo. Il conteggio manuale e la lettura con la fotocamera dovrebbero differire di pochi battiti; se non è così, fidati del conteggio manuale e ripeti."
+    },
+    {
+      "h2": "Perché la fotocamera misura i battiti ma non l'HRV",
+      "body": "Per la frequenza cardiaca basta il numero medio di battiti al minuto, che la fotocamera riesce a stimare. La variabilità della frequenza cardiaca (HRV) richiede invece il tempo esatto tra un battito e l'altro, e la frequenza dei fotogrammi e il rumore della fotocamera non permettono di rilevarlo in modo affidabile: piccoli errori di tempo, irrilevanti per i battiti, rovinano l'HRV. Per questo lo strumento mostra solo la frequenza cardiaca. L'HRV si misura meglio con una fascia cardio o un orologio; se hai un valore da Oura, Whoop, Garmin o Apple Watch, guarda come si confronta: [Calcolatore HRV per età](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Battiti con la fotocamera del telefono — domande frequenti",
+  "faq": [
+    { "q": "Posso misurare la frequenza cardiaca con la fotocamera del telefono?", "a": "Sì. Copri fotocamera posteriore e flash con un polpastrello e resta fermo per circa 30 secondi: la fotocamera rileva la variazione di colore della pelle a ogni battito. Fornisce una stima approssimativa della frequenza cardiaca, non una misurazione medica." },
+    { "q": "Quanto è precisa la frequenza cardiaca misurata con la fotocamera?", "a": "A riposo, il dito sulla fotocamera è il metodo più preciso su smartphone, ma la precisione varia in base a telefono, luce, pressione del dito e movimento (Coppetti 2017). Usalo come valore indicativo, non per decisioni sulla salute." },
+    { "q": "Funziona con la fotocamera frontale o con la webcam del computer?", "a": "Funziona meglio con la fotocamera posteriore e il flash del telefono, perché il flash illumina il polpastrello da dietro. Fotocamere frontali e webcam di solito danno un segnale debole o poco affidabile." },
+    { "q": "Perché compare «segnale debole»?", "a": "Di solito il polpastrello non copre del tutto obiettivo e flash, stai premendo troppo o ti muovi, hai le dita fredde oppure il flash non si è acceso. Scaldati le mani, premi con delicatezza, appoggia la mano su un tavolo e riprova." },
+    { "q": "La fotocamera del telefono può misurare l'HRV?", "a": "Non in modo affidabile. L'HRV richiede tempi precisi tra i singoli battiti, che la fotocamera non riesce a rilevare con sicurezza, quindi questo strumento mostra solo la frequenza cardiaca. Per l'HRV usa una fascia cardio o un orologio." },
+    { "q": "Il video della fotocamera viene registrato?", "a": "No. Tutto viene elaborato in tempo reale nel browser, sul tuo dispositivo. Nessuna immagine o video viene salvato o caricato, e la fotocamera si spegne quando hai finito." },
+    { "q": "Qual è una frequenza cardiaca normale a riposo?", "a": "60–100 bpm negli adulti; la maggior parte delle persone sane sta tra 60 e 79 e chi è allenato spesso tra 50 e 59. Confronta con il calcolatore della frequenza cardiaca a riposo per età e sesso." }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "Il polpastrello, illuminato dal flash, cambia leggermente colore a ogni battito mentre il sangue vi scorre. La fotocamera vede questa variazione ritmica; lo strumento calcola la media del canale rosso di ogni fotogramma, la filtra e trova la frequenza dominante del battito per stimare la frequenza cardiaca: lo stesso principio della PPG a contatto di un pulsossimetro clinico (Allen 2007). Le letture a contatto con il dito sono il metodo più affidabile su smartphone, ma la precisione varia molto in base a dispositivo, luce, pressione e immobilità (Coppetti 2017), quindi considera il valore una stima approssimativa a scopo informativo. Solo frequenza cardiaca, non HRV. Tutto viene elaborato in tempo reale sul dispositivo; nessuna immagine o video viene registrato o caricato.",
+  "sourcesContributes": [
+    "Revisione fondamentale sulla PPG, il segnale ottico del volume sanguigno che questo strumento legge dal polpastrello.",
+    "Ha rilevato che la PPG a contatto (dito sulla fotocamera) è più precisa di quella senza contatto, ma con ampia variabilità: per questo è una stima, non una misurazione."
+  ],
+  "related": {
+    "label": "Correlati",
+    "rhr": "Frequenza cardiaca a riposo per età",
+    "hrv": "Calcolatore HRV per età",
+    "apps": "Le migliori app di biofeedback HRV"
+  }
+}

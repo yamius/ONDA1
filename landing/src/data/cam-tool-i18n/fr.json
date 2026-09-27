@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Mesurer son pouls avec son téléphone — Gratuit | ONDA Life",
+    "description": "Prenez votre pouls avec la caméra du téléphone : un doigt sur l'objectif arrière et le flash, et votre fréquence cardiaque en 30 s. Gratuit, sans appli.",
+    "appName": "Cardiofréquencemètre par caméra de téléphone",
+    "appDescription": "Outil gratuit dans le navigateur qui estime la fréquence cardiaque à partir d'un doigt posé sur la caméra arrière et le flash du téléphone (photopléthysmographie de contact), traité sur l'appareil."
+  },
+  "breadcrumb": { "home": "Accueil", "tools": "Outils", "current": "Pouls par caméra" },
+  "h1": "Mesurer son pouls avec son téléphone",
+  "capsule": "Votre téléphone suffit pour prendre votre pouls : posez le bout du doigt sur la caméra arrière et le flash, restez immobile environ 30 secondes, et la caméra détecte la minuscule variation de couleur de la peau à chaque battement. C'est une estimation approximative de la fréquence cardiaque uniquement — pas un dispositif médical — et tout est traité sur votre téléphone : aucune vidéo n'est enregistrée ni envoyée.",
+  "imageAlt": "Mesurer son pouls avec la caméra du téléphone — bout du doigt sur la caméra arrière et le flash, outil gratuit ONDA Life",
+  "warning": "Estimation approximative, à visée informative — pas un dispositif médical, ni la précision d'une montre ou d'une ceinture. Fonctionne mieux sur téléphone (caméra arrière + flash). Tout est traité sur votre appareil ; aucune vidéo n'est enregistrée ni envoyée.",
+  "steps": [
+    "Utilisez un téléphone. Appuyez sur Démarrer et autorisez l'accès à la caméra.",
+    "Couvrez doucement la caméra arrière et le flash avec le bout du doigt.",
+    "Restez immobile environ 30 secondes pendant la lecture de votre pouls."
+  ],
+  "ui": {
+    "start": "♥ Démarrer la mesure",
+    "hold": "Gardez le doigt immobile sur la caméra et le flash…",
+    "cancel": "Annuler",
+    "bpm": "bpm",
+    "estimated": "Fréquence cardiaque estimée",
+    "resultNote": "Une estimation approximative à partir de votre doigt. Est-ce normal pour vous ?",
+    "resultLink": "Comparer avec la fréquence cardiaque au repos selon l'âge",
+    "weak": "Signal faible — impossible de lire un pouls net. Utilisez un téléphone, couvrez entièrement mais sans appuyer la caméra arrière et le flash avec le bout du doigt, et restez immobile. Réessayez.",
+    "again": "Mesurer à nouveau",
+    "tryAgain": "Réessayer",
+    "denied": "L'accès à la caméra a été refusé. Autorisez la caméra puis réessayez.",
+    "failed": "Impossible de démarrer la caméra. Sur téléphone, vérifiez qu'aucune autre appli ne l'utilise."
+  },
+  "disclaimer": "Estimation à visée informative, pas un avis médical. La fréquence cardiaque mesurée par la caméra varie selon l'appareil, l'éclairage, la pression du doigt et votre immobilité : considérez-la comme un ordre de grandeur, pas comme une base de décision de santé. Fréquence cardiaque uniquement (pas la VFC, qu'une caméra de téléphone ne peut pas capter de façon fiable). Les images sont analysées en direct sur votre appareil, jamais stockées ni envoyées.",
+  "sections": [
+    {
+      "h2": "Comment mesurer la fréquence cardiaque avec la caméra du téléphone",
+      "body": "Utilisez la caméra arrière, pas celle des selfies : appuyez sur Démarrer, autorisez l'accès à la caméra, puis posez légèrement la pulpe de l'index sur l'objectif et le flash à la fois, pour que la lumière du flash traverse votre doigt. Asseyez-vous, posez la main sur une table et restez immobile environ 30 secondes. Appuyez doucement : trop de pression chasse le sang du bout du doigt et affaiblit le signal, trop peu laisse passer la lumière ambiante. Les doigts froids donnent aussi un signal plus faible, alors réchauffez vos mains avant. Pour une vraie fréquence cardiaque au repos, mesurez le matin avant de vous lever ou après 5 minutes assis au calme."
+    },
+    {
+      "h2": "La mesure du pouls par la caméra est-elle fiable ?",
+      "body": "Au repos, le doigt posé sur la caméra est la méthode la plus précise parmi celles du smartphone : dans une étude sur les applis de fréquence cardiaque (Coppetti 2017), les mesures au contact du doigt étaient bien plus proches de l'ECG que les applis qui scannent le visage — mais la précision variait fortement selon les applis et les conditions. Attendez-vous à un ordre de grandeur correct assis et immobile, et à des mesures moins bonnes en mouvement, avec les mains froides, en plein soleil ou en cas de rythme irrégulier. C'est pourquoi il s'agit d'une estimation, pas d'une mesure médicale. Pour des mesures continues et plus fiables, une ceinture thoracique ou une montre validée fait mieux ; en cas de symptôme, consultez un médecin."
+    },
+    {
+      "h2": "Quelle est une fréquence cardiaque normale ?",
+      "body": "Chez l'adulte au repos, 60 à 100 bpm est considéré comme normal, et la plupart des personnes en bonne santé se situent entre 60 et 79. Les sportifs ont souvent une fréquence au repos autour de 50 à 59, tandis que le stress, la caféine, le manque de sommeil, une maladie ou le fait de venir de marcher la font monter. Une mesure isolée dit peu de chose : comparez des mesures prises de la même façon, au même moment de la journée. Situez votre chiffre selon votre âge et votre sexe : [Fréquence cardiaque au repos selon l'âge](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Comment prendre son pouls sans téléphone",
+      "body": "Placez deux doigts (pas le pouce) sur la face interne du poignet, sous le pouce, ou sur le côté du cou, à côté de la trachée. Comptez les battements pendant 30 secondes et multipliez par deux — ou comptez une minute entière si votre pouls semble irrégulier. Faites-le assis, après quelques minutes de repos. Un comptage manuel et une mesure par la caméra devraient concorder à quelques battements près ; sinon, fiez-vous au comptage manuel et recommencez."
+    },
+    {
+      "h2": "Pourquoi la caméra mesure le pouls mais pas la VFC",
+      "body": "La fréquence cardiaque ne demande que le nombre moyen de battements par minute, que la caméra peut estimer. La variabilité de la fréquence cardiaque (VFC, ou HRV) exige l'intervalle exact entre chaque battement, et la cadence d'images et le bruit d'une caméra de téléphone ne permettent pas de le capter de façon fiable — de petites erreurs de timing, sans importance pour le pouls, faussent complètement la VFC. C'est pourquoi cet outil n'affiche que la fréquence cardiaque. La VFC se mesure mieux avec une ceinture thoracique ou une montre ; si vous avez un chiffre d'Oura, Whoop, Garmin ou Apple Watch, voyez comment il se situe : [Calculateur de VFC (HRV) selon l'âge](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Pouls par la caméra du téléphone — questions fréquentes",
+  "faq": [
+    { "q": "Peut-on mesurer son pouls avec la caméra du téléphone ?", "a": "Oui. Couvrez la caméra arrière et le flash avec le bout du doigt et restez immobile environ 30 secondes ; la caméra détecte la variation de couleur de la peau à chaque battement. Vous obtenez une estimation approximative de la fréquence cardiaque, pas une mesure médicale." },
+    { "q": "La fréquence cardiaque mesurée par la caméra est-elle précise ?", "a": "Au repos, le doigt sur la caméra est la méthode la plus précise sur smartphone, mais la précision dépend du téléphone, de l'éclairage, de la pression du doigt et des mouvements (Coppetti 2017). Utilisez-la comme ordre de grandeur, pas pour des décisions de santé." },
+    { "q": "Ça marche avec la caméra frontale (selfie) ou la webcam d'un ordinateur ?", "a": "Cela fonctionne mieux avec la caméra arrière et le flash d'un téléphone, car le flash éclaire le doigt par derrière. Les caméras frontales et les webcams donnent généralement un signal faible ou peu fiable." },
+    { "q": "Pourquoi le message « signal faible » s'affiche-t-il ?", "a": "En général, le doigt ne couvre pas entièrement l'objectif et le flash, vous appuyez trop ou bougez, vos doigts sont froids, ou le flash ne s'est pas allumé. Réchauffez vos mains, appuyez doucement, posez la main sur une table et réessayez." },
+    { "q": "La caméra du téléphone peut-elle mesurer la VFC ?", "a": "Pas de façon fiable. La VFC exige un timing précis entre chaque battement, ce qu'une caméra de téléphone ne capte pas de manière sûre ; cet outil affiche donc uniquement la fréquence cardiaque. Pour la VFC, utilisez une ceinture thoracique ou une montre." },
+    { "q": "La vidéo de la caméra est-elle enregistrée ?", "a": "Non. Tout est traité en direct dans votre navigateur, sur votre appareil. Aucune image ni vidéo n'est enregistrée ou envoyée, et la caméra s'éteint à la fin de la mesure." },
+    { "q": "Quelle est une fréquence cardiaque normale au repos ?", "a": "60 à 100 bpm chez l'adulte, la plupart des personnes en bonne santé se situant entre 60 et 79 et les sportifs souvent entre 50 et 59. Comparez avec le calculateur de fréquence cardiaque au repos selon l'âge et le sexe." }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "Éclairé par le flash, le bout de votre doigt change très légèrement de couleur à chaque battement, au rythme du sang qui y afflue. La caméra capte ce changement rythmique ; l'outil fait la moyenne du canal rouge de chaque image, la filtre et repère la fréquence de battement dominante pour estimer votre pouls — le même principe de PPG de contact qu'un oxymètre de pouls clinique (Allen 2007). Les mesures au contact du doigt sont la méthode la plus fiable sur smartphone, mais la précision varie beaucoup selon l'appareil, l'éclairage, la pression et l'immobilité (Coppetti 2017) : considérez le chiffre comme une estimation approximative, à visée informative. Fréquence cardiaque uniquement, pas la VFC. Tout est traité en direct sur votre appareil ; aucune image ni vidéo n'est enregistrée ou envoyée.",
+  "sourcesContributes": [
+    "Revue de référence sur la PPG — le signal optique de volume sanguin que cet outil lit au bout de votre doigt.",
+    "A montré que la PPG de contact (doigt sur la caméra) est plus précise que sans contact, mais avec une grande variabilité — d'où une estimation, pas une mesure."
+  ],
+  "related": {
+    "label": "Voir aussi",
+    "rhr": "Fréquence cardiaque au repos selon l'âge",
+    "hrv": "Calculateur de VFC (HRV) selon l'âge",
+    "apps": "Meilleures applis de biofeedback VFC"
+  }
+}

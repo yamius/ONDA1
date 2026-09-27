@@ -1,13 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
+import { Fragment, useEffect, useRef, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
-import {
-  CAMERA_HR_FAQ,
-  CAMERA_HR_SOURCES,
-  CAMERA_HR_METHODOLOGY,
-} from '../data/camera-heart-rate'
+import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
+import { CAMERA_HR_SOURCES } from '../data/camera-heart-rate'
+import { camToolCopy } from '../data/cam-tool-i18n'
 import { SourcesSection } from '../components/SourcesSection'
 
 type Phase = 'idle' | 'measuring' | 'done' | 'error'
@@ -65,10 +62,29 @@ function computeBpm(samples: Sample[]): { ok: boolean; bpm: number; quality: num
   return { ok, bpm, quality: best }
 }
 
+/** Render inline markdown links ([text](/path)) as router links. */
+function Rich({ text, lang }: { text: string; lang: Lang }) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g)
+  return (
+    <>
+      {parts.map((p, i) => {
+        const m = p.match(/^\[([^\]]+)\]\(([^)]+)\)$/)
+        if (!m) return <Fragment key={i}>{p}</Fragment>
+        return (
+          <Link key={i} to={langHref(m[2], lang)} className="text-terminal-green hover:underline">
+            {m[1]}
+          </Link>
+        )
+      })}
+    </>
+  )
+}
+
 export function CameraHeartRatePage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
+  const c = camToolCopy(lang)
+  const hub = (['ru', 'es'] as Lang[]).includes(lang) ? `/${lang}/tools` : '/tools'
 
   const [phase, setPhase] = useState<Phase>('idle')
   const [progress, setProgress] = useState(0)
@@ -87,9 +103,9 @@ export function CameraHeartRatePage() {
   const lastLiveRef = useRef(0)
 
   useEffect(() => {
-    document.title = 'Camera Heart Rate — Measure Pulse With Your Phone | ONDA Life'
+    document.title = c.meta.title
     window.scrollTo({ top: 0 })
-  }, [])
+  }, [c])
 
   const stopAll = () => {
     if (rafRef.current) cancelAnimationFrame(rafRef.current)
@@ -202,8 +218,8 @@ export function CameraHeartRatePage() {
       const name = (err as Error)?.name
       setErrorMsg(
         name === 'NotAllowedError'
-          ? 'Camera permission was denied. Allow camera access and try again.'
-          : 'Couldn’t start the camera. On a phone, make sure no other app is using it.',
+          ? c.ui.denied
+          : c.ui.failed,
       )
       setPhase('error')
     }
@@ -213,34 +229,27 @@ export function CameraHeartRatePage() {
 
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
-      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+      <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40" aria-label="Breadcrumb">
+        <Link to={homePathFor(lang)} className="hover:text-terminal-green">{c.breadcrumb.home}</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={hub} className="hover:text-terminal-green">{c.breadcrumb.tools}</Link>
         <span>/</span>
-        <span className="text-terminal-green/70" aria-current="page">Camera Heart Rate</span>
+        <span className="text-terminal-green/70" aria-current="page">{c.breadcrumb.current}</span>
       </nav>
 
-      <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">Camera Heart Rate</h1>
-      <p className="mb-8 font-mono text-sm leading-relaxed text-white/60">
-        Measure your pulse with just your phone — no wearable. Cover the rear camera and flash with a
-        fingertip and watch your heartbeat appear in real time. A live taste of how ONDA reads your body.
-      </p>
+      <h1 className="mb-3 text-3xl font-bold tracking-tight md:text-4xl">{c.h1}</h1>
+      <p className="mb-8 text-base leading-relaxed text-white/70">{c.capsule}</p>
 
       <img
         src="/images/tools/camera-heart-rate.png"
-        alt="Camera heart rate tool — measure your pulse with your phone camera using contact photoplethysmography, from ONDA Life"
+        alt={c.imageAlt}
         width={1200}
         height={630}
         className="mb-8 w-full rounded-xl border border-white/10"
       />
 
       <div className="mb-6 rounded-xl border border-amber-400/25 bg-amber-400/5 p-4">
-        <p className="font-mono text-[11px] leading-relaxed text-amber-200/80">
-          ⚠ Rough, educational estimate — <strong>not a medical device</strong> and not a wearable’s
-          accuracy. Works best on a phone (rear camera + flash). Everything is processed on your device;
-          no video is recorded or uploaded.
-        </p>
+        <p className="font-mono text-[11px] leading-relaxed text-amber-200/80">⚠ {c.warning}</p>
       </div>
 
       <div className="mb-6 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5 text-center md:p-8">
@@ -251,12 +260,12 @@ export function CameraHeartRatePage() {
         {phase === 'idle' && (
           <div>
             <ol className="mx-auto mb-5 max-w-md space-y-1 text-left font-mono text-xs leading-relaxed text-white/60">
-              <li><span className="text-terminal-green">1.</span> Use a phone. Tap start and allow camera access.</li>
-              <li><span className="text-terminal-green">2.</span> Gently cover the <strong>rear camera + flash</strong> with your fingertip.</li>
-              <li><span className="text-terminal-green">3.</span> Hold still for ~30 seconds while we read your pulse.</li>
+              {c.steps.map((st, i) => (
+                <li key={i}><span className="text-terminal-green">{i + 1}.</span> {st}</li>
+              ))}
             </ol>
             <button onClick={start} className="rounded-lg border border-terminal-green/50 bg-terminal-green/10 px-8 py-3 font-mono text-sm font-semibold text-terminal-green transition-colors hover:bg-terminal-green/20">
-              ♥ Start measurement
+              {c.ui.start}
             </button>
           </div>
         )}
@@ -264,12 +273,12 @@ export function CameraHeartRatePage() {
         {phase === 'measuring' && (
           <div>
             <canvas ref={waveCanvas} width={320} height={80} className="mx-auto mb-4 w-full max-w-sm rounded-lg border border-white/10 bg-black/30" />
-            <div className="mb-2 text-4xl font-bold text-terminal-green">{liveBpm ?? '—'} <span className="text-lg text-white/40">bpm</span></div>
+            <div className="mb-2 text-4xl font-bold text-terminal-green">{liveBpm ?? '—'} <span className="text-lg text-white/40">{c.ui.bpm}</span></div>
             <div className="mb-3 h-1.5 w-full overflow-hidden rounded-full bg-white/10">
               <div className="h-full rounded-full bg-gradient-to-r from-terminal-cyan to-terminal-green transition-all" style={{ width: `${progress}%` }} />
             </div>
-            <p className="mb-4 font-mono text-xs text-white/50">Keep your fingertip still over the camera &amp; flash…</p>
-            <button onClick={reset} className="rounded-lg border border-white/20 bg-white/5 px-6 py-2 font-mono text-xs text-white/80 hover:bg-white/10">Cancel</button>
+            <p className="mb-4 font-mono text-xs text-white/50">{c.ui.hold}</p>
+            <button onClick={reset} className="rounded-lg border border-white/20 bg-white/5 px-6 py-2 font-mono text-xs text-white/80 hover:bg-white/10">{c.ui.cancel}</button>
           </div>
         )}
 
@@ -277,44 +286,47 @@ export function CameraHeartRatePage() {
           <div>
             {!weak && bpm ? (
               <>
-                <div className="mb-1 font-mono text-xs uppercase tracking-widest text-white/50">Estimated heart rate</div>
-                <div className="mb-3 text-5xl font-bold text-terminal-green">{bpm} <span className="text-xl text-white/40">bpm</span></div>
+                <div className="mb-1 font-mono text-xs uppercase tracking-widest text-white/50">{c.ui.estimated}</div>
+                <div className="mb-3 text-5xl font-bold text-terminal-green">{bpm} <span className="text-xl text-white/40">{c.ui.bpm}</span></div>
                 <p className="mb-4 font-mono text-xs leading-relaxed text-white/60">
-                  A rough estimate from your fingertip. Curious if it’s normal? See{' '}
-                  <Link to={`${langPrefix}/tools/resting-heart-rate`} className="text-terminal-green hover:underline">resting heart rate by age</Link>.
+                  {c.ui.resultNote}{' '}
+                  <Link to={langHref('/tools/resting-heart-rate', lang)} className="text-terminal-green hover:underline">{c.ui.resultLink}</Link>
                 </p>
               </>
             ) : (
               <p className="mb-4 font-mono text-xs leading-relaxed text-amber-300/80">
-                Weak signal — we couldn’t read a clear pulse. Use a phone, cover the rear camera <em>and</em> flash fully but gently with your fingertip, and hold still. Try again.
+                {c.ui.weak}
               </p>
             )}
-            <button onClick={start} className="rounded-lg border border-terminal-green/50 bg-terminal-green/10 px-6 py-2 font-mono text-xs text-terminal-green hover:bg-terminal-green/20">Measure again</button>
+            <button onClick={start} className="rounded-lg border border-terminal-green/50 bg-terminal-green/10 px-6 py-2 font-mono text-xs text-terminal-green hover:bg-terminal-green/20">{c.ui.again}</button>
           </div>
         )}
 
         {phase === 'error' && (
           <div>
             <p className="mb-4 font-mono text-xs leading-relaxed text-rose-300/80">{errorMsg}</p>
-            <button onClick={start} className="rounded-lg border border-terminal-green/50 bg-terminal-green/10 px-6 py-2 font-mono text-xs text-terminal-green hover:bg-terminal-green/20">Try again</button>
+            <button onClick={start} className="rounded-lg border border-terminal-green/50 bg-terminal-green/10 px-6 py-2 font-mono text-xs text-terminal-green hover:bg-terminal-green/20">{c.ui.tryAgain}</button>
           </div>
         )}
       </div>
 
-      <p className="mb-12 font-mono text-[11px] leading-relaxed text-white/30">
-        Educational estimate, not medical advice. Smartphone-camera heart rate varies with device,
-        lighting, finger pressure and stillness, so use it as a ballpark and a demo — not for any
-        health decision. Heart rate only (not HRV, which a camera can’t reliably capture). Camera
-        frames are analysed live on your device and never stored or sent.
-      </p>
+      <p className="mb-10 font-mono text-[11px] leading-relaxed text-white/30">{c.disclaimer}</p>
 
-      <AppStoreCTA ct={storeCt('tool', 'camerahr')} variant="general" />
+      <AppStoreCTA ct={storeCt('tool', 'camerahr', lang)} variant="general" lang={lang} />
 
-      <SourcesSection methodology={CAMERA_HR_METHODOLOGY} sources={CAMERA_HR_SOURCES} />
+      {c.sections.map((sec) => (
+        <section key={sec.h2} className="mb-10">
+          <h2 className="mb-3 text-xl font-bold tracking-tight md:text-2xl">{sec.h2}</h2>
+          <p className="text-sm leading-relaxed text-white/70">
+            <Rich text={sec.body} lang={lang} />
+          </p>
+        </section>
+      ))}
 
-      <h2 className="mb-4 font-mono text-sm font-bold uppercase tracking-widest text-terminal-cyan/80">Common questions</h2>
+      {/* FAQ — mirrors the FAQPage JSON-LD injected at build */}
+      <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">{c.faqTitle}</h2>
       <div className="mb-10 divide-y divide-white/5 border-y border-white/5">
-        {CAMERA_HR_FAQ.map((f) => (
+        {c.faq.map((f) => (
           <div key={f.q} className="py-4">
             <h3 className="mb-1 font-semibold text-white/90">{f.q}</h3>
             <p className="font-mono text-xs leading-relaxed text-white/50">{f.a}</p>
@@ -322,12 +334,19 @@ export function CameraHeartRatePage() {
         ))}
       </div>
 
+      <SourcesSection
+        heading={c.sourcesTitle}
+        methodology={c.methodology}
+        sources={CAMERA_HR_SOURCES.map((src, i) => ({ ...src, contributes: c.sourcesContributes[i] ?? src.contributes }))}
+      />
+
       <div className="font-mono text-xs text-white/40">
-        Related: <Link to={`${langPrefix}/tools/resting-heart-rate`} className="text-terminal-green hover:underline">Resting heart rate by age</Link>
+        {c.related.label}:{' '}
+        <Link to={langHref('/tools/resting-heart-rate', lang)} className="text-terminal-green hover:underline">{c.related.rhr}</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
+        <Link to={langHref('/tools/hrv', lang)} className="text-terminal-green hover:underline">{c.related.hrv}</Link>
         {' · '}
-        <Link to="/compare/best-hrv-biofeedback-apps" className="text-terminal-green hover:underline">Best HRV biofeedback apps</Link>
+        <Link to="/compare/best-hrv-biofeedback-apps" className="text-terminal-green hover:underline">{c.related.apps}</Link>
       </div>
     </main>
   )

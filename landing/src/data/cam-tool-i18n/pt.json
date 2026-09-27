@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Medir batimentos cardíacos pelo celular — Grátis | ONDA Life",
+    "description": "Meça seu pulso com a câmera do celular: cubra a câmera traseira e o flash com a ponta do dedo e veja seus batimentos em ~30 s. Grátis, sem app.",
+    "appName": "Medidor de batimentos cardíacos pela câmera do celular",
+    "appDescription": "Ferramenta gratuita no navegador que estima a frequência cardíaca com a ponta do dedo sobre a câmera traseira e o flash do celular (fotopletismografia de contato), processada no próprio aparelho."
+  },
+  "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Batimentos pela câmera" },
+  "h1": "Medir batimentos cardíacos pelo celular",
+  "capsule": "Dá para medir o pulso só com o celular: cubra a câmera traseira e o flash com a ponta do dedo, fique parado por cerca de 30 segundos e a câmera capta a mudança sutil de cor da pele a cada batimento. É uma estimativa aproximada, só da frequência cardíaca — não é um dispositivo médico — e tudo é processado no seu celular; nenhum vídeo é gravado ou enviado.",
+  "imageAlt": "Medir batimentos cardíacos pelo celular — ponta do dedo sobre a câmera traseira e o flash, ferramenta grátis da ONDA Life",
+  "warning": "Estimativa aproximada e educativa — não é um dispositivo médico nem tem a precisão de um wearable. Funciona melhor no celular (câmera traseira + flash). Tudo é processado no seu aparelho; nenhum vídeo é gravado ou enviado.",
+  "steps": [
+    "Use um celular. Toque em iniciar e permita o acesso à câmera.",
+    "Cubra a câmera traseira e o flash com a ponta do dedo, sem apertar.",
+    "Fique parado por cerca de 30 segundos enquanto lemos seu pulso."
+  ],
+  "ui": {
+    "start": "♥ Iniciar medição",
+    "hold": "Mantenha a ponta do dedo parada sobre a câmera e o flash…",
+    "cancel": "Cancelar",
+    "bpm": "bpm",
+    "estimated": "Frequência cardíaca estimada",
+    "resultNote": "Uma estimativa aproximada pela ponta do dedo. Está normal para você?",
+    "resultLink": "Compare com a frequência cardíaca de repouso por idade",
+    "weak": "Sinal fraco — não conseguimos ler um pulso claro. Use um celular, cubra a câmera traseira e o flash por completo, mas sem apertar, e fique parado. Tente de novo.",
+    "again": "Medir de novo",
+    "tryAgain": "Tentar de novo",
+    "denied": "O acesso à câmera foi negado. Permita o acesso à câmera e tente de novo.",
+    "failed": "Não foi possível abrir a câmera. No celular, verifique se nenhum outro app está usando."
+  },
+  "disclaimer": "Estimativa educativa, não é orientação médica. A frequência cardíaca pela câmera varia conforme o aparelho, a luz, a pressão do dedo e o quanto você fica parado, então considere um valor aproximado — não use para decisões de saúde. Mede só a frequência cardíaca (não a HRV, que a câmera do celular não capta com confiabilidade). As imagens da câmera são analisadas ao vivo no seu aparelho e nunca são salvas nem enviadas.",
+  "sections": [
+    {
+      "h2": "Como medir a frequência cardíaca com a câmera do celular",
+      "body": "Use a câmera traseira, não a de selfie: toque em iniciar, permita o acesso à câmera e apoie de leve a polpa do dedo indicador sobre a lente e o flash ao mesmo tempo, para que a luz do flash atravesse a ponta do dedo. Sente-se, apoie a mão numa mesa e fique parado por cerca de 30 segundos. Pressione de leve — apertar forte tira o sangue da ponta do dedo e enfraquece o sinal, e pouco contato deixa entrar luz de fora. Dedos frios também dão sinal mais fraco, então aqueça as mãos antes. Para a frequência de repouso de verdade, meça de manhã antes de levantar ou depois de ficar 5 minutos sentado em silêncio."
+    },
+    {
+      "h2": "A medição de pulso pela câmera do celular é precisa?",
+      "body": "Para a frequência em repouso, o dedo sobre a câmera é o método mais preciso entre os de celular: num estudo com apps de frequência cardíaca (Coppetti 2017), as leituras com o dedo encostado ficaram bem mais próximas do ECG do que os apps que escaneiam o rosto — mas a precisão ainda variou muito entre apps e condições. Espere um valor razoável quando estiver parado e leituras piores em movimento, com mãos frias, sob sol forte ou com batimento irregular. Por isso é uma estimativa, não uma medição médica. Para leituras contínuas e mais confiáveis, uma cinta peitoral ou um relógio validado é melhor; se tiver qualquer sintoma, procure um médico."
+    },
+    {
+      "h2": "Qual é a frequência cardíaca normal?",
+      "body": "Para adultos em repouso, 60–100 bpm é considerado normal, e a maioria das pessoas saudáveis fica entre 60 e 79. Quem treina costuma ter frequência de repouso na faixa dos 50, enquanto estresse, cafeína, sono ruim, doença ou ter acabado de caminhar a elevam. Uma leitura isolada diz pouco: compare medições feitas do mesmo jeito e no mesmo horário. Veja onde seu número fica para sua idade e sexo: [Frequência cardíaca de repouso por idade](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Como medir o pulso sem celular",
+      "body": "Coloque dois dedos (não o polegar) na parte interna do punho, abaixo do polegar, ou na lateral do pescoço, ao lado da traqueia. Conte os batimentos por 30 segundos e multiplique por dois — ou conte um minuto inteiro se o pulso parecer irregular. Faça isso sentado, depois de alguns minutos de descanso. A contagem manual e a leitura pela câmera devem ficar a poucos batimentos de diferença; se não ficarem, confie na contagem manual e repita."
+    },
+    {
+      "h2": "Por que a câmera do celular mede o pulso, mas não a HRV",
+      "body": "A frequência cardíaca só precisa do número médio de batimentos por minuto, que a câmera consegue estimar. A variabilidade da frequência cardíaca (HRV) precisa do intervalo exato entre cada batimento, e a taxa de quadros e o ruído da câmera do celular não captam isso com confiabilidade — pequenos erros de tempo que não importam para o pulso arruínam a HRV. Por isso esta ferramenta mostra só a frequência cardíaca. A HRV é melhor medida com cinta peitoral ou relógio; se você tem um número do Oura, Whoop, Garmin ou Apple Watch, veja como ele se compara: [Calculadora de HRV por idade](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Medir pulso pela câmera do celular — perguntas frequentes",
+  "faq": [
+    { "q": "Dá para medir os batimentos cardíacos com a câmera do celular?", "a": "Sim. Cubra a câmera traseira e o flash com a ponta do dedo e fique parado por cerca de 30 segundos; a câmera detecta a mudança de cor da pele a cada batimento. O resultado é uma estimativa aproximada da frequência cardíaca, não uma medição médica." },
+    { "q": "A medição pela câmera do celular é precisa?", "a": "Em repouso, o dedo sobre a câmera é o método de celular mais preciso, mas a precisão varia com o aparelho, a luz, a pressão do dedo e o movimento (Coppetti 2017). Use como valor aproximado, não para decisões de saúde." },
+    { "q": "Funciona com a câmera frontal (selfie) ou a webcam do notebook?", "a": "Funciona melhor com a câmera traseira e o flash do celular, porque o flash ilumina a ponta do dedo por trás. Câmeras frontais e webcams costumam dar um sinal fraco ou pouco confiável." },
+    { "q": "Por que aparece sinal fraco?", "a": "Normalmente o dedo não cobre por completo a lente e o flash, você está apertando demais ou se mexendo, os dedos estão frios ou o flash não acendeu. Aqueça as mãos, pressione de leve, apoie a mão numa mesa e tente de novo." },
+    { "q": "A câmera do celular consegue medir a HRV?", "a": "Não com confiabilidade. A HRV exige o tempo preciso entre cada batimento, que a câmera do celular não capta de forma confiável, por isso esta ferramenta mostra só a frequência cardíaca. Para HRV, use uma cinta peitoral ou um relógio." },
+    { "q": "O vídeo da câmera é gravado?", "a": "Não. Tudo é processado ao vivo no navegador, no seu aparelho. Nenhuma imagem ou vídeo é salvo ou enviado, e a câmera desliga quando você termina." },
+    { "q": "Qual é a frequência cardíaca normal em repouso?", "a": "60–100 bpm para adultos; a maioria das pessoas saudáveis fica entre 60 e 79 e quem treina costuma ficar na faixa dos 50. Compare com a calculadora de frequência cardíaca de repouso por idade para sua idade e sexo." }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "A ponta do dedo, iluminada pelo flash, muda muito levemente de cor a cada batimento, conforme o sangue pulsa por ela. A câmera vê essa mudança rítmica; a ferramenta faz a média do canal vermelho de cada quadro, filtra o sinal e encontra a frequência dominante dos batimentos para estimar sua frequência cardíaca — o mesmo princípio de PPG de contato de um oxímetro de pulso clínico (Allen 2007). As leituras com o dedo encostado são o método de celular mais confiável, mas a precisão varia muito com o aparelho, a luz, a pressão e o quanto você fica parado (Coppetti 2017), então trate o número como uma estimativa aproximada e educativa. Só frequência cardíaca, não HRV. Tudo é processado ao vivo no seu aparelho; nenhuma imagem ou vídeo é gravado ou enviado.",
+  "sourcesContributes": [
+    "Revisão fundamental sobre PPG — o sinal óptico de volume sanguíneo que esta ferramenta lê na ponta do dedo.",
+    "Mostrou que a PPG de contato (dedo sobre a câmera) é mais precisa que a sem contato, mas com grande variabilidade — por isso isto é uma estimativa, não uma medição."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "rhr": "Frequência cardíaca de repouso por idade",
+    "hrv": "Calculadora de HRV por idade",
+    "apps": "Melhores apps de biofeedback de HRV"
+  }
+}

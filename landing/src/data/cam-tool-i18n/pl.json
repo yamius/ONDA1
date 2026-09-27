@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Pomiar tętna telefonem — za darmo, online | ONDA Life",
+    "description": "Zmierz puls aparatem telefonu: zakryj palcem tylny aparat i lampę błyskową, a po ok. 30 sekundach zobaczysz tętno. Za darmo, na urządzeniu, bez aplikacji.",
+    "appName": "Pomiar tętna aparatem telefonu",
+    "appDescription": "Darmowe narzędzie w przeglądarce, które szacuje tętno na podstawie opuszki palca na tylnym aparacie i lampie błyskowej telefonu (kontaktowa fotopletyzmografia), przetwarzane na urządzeniu."
+  },
+  "breadcrumb": { "home": "Strona główna", "tools": "Narzędzia", "current": "Tętno aparatem" },
+  "h1": "Pomiar tętna telefonem",
+  "capsule": "Puls możesz sprawdzić samym telefonem: zakryj opuszką palca tylny aparat i lampę błyskową, nie ruszaj się przez około 30 sekund, a aparat odczyta drobną zmianę koloru skóry przy każdym uderzeniu serca. To przybliżony wynik, wyłącznie tętno — nie wyrób medyczny — a wszystko jest przetwarzane w telefonie; żadne wideo nie jest nagrywane ani wysyłane.",
+  "imageAlt": "Pomiar tętna telefonem — opuszka palca na tylnym aparacie i lampie błyskowej, darmowe narzędzie ONDA Life",
+  "warning": "Przybliżony, edukacyjny wynik — to nie wyrób medyczny i nie dokładność opaski czy zegarka. Najlepiej działa na telefonie (tylny aparat + lampa błyskowa). Wszystko jest przetwarzane na Twoim urządzeniu; żadne wideo nie jest nagrywane ani przesyłane.",
+  "steps": [
+    "Użyj telefonu. Stuknij „start” i zezwól na dostęp do aparatu.",
+    "Delikatnie zakryj opuszką palca tylny aparat i lampę błyskową.",
+    "Nie ruszaj się przez około 30 sekund, gdy odczytujemy puls."
+  ],
+  "ui": {
+    "start": "♥ Rozpocznij pomiar",
+    "hold": "Trzymaj opuszkę palca nieruchomo na aparacie i lampie…",
+    "cancel": "Anuluj",
+    "bpm": "ud./min",
+    "estimated": "Szacowane tętno",
+    "resultNote": "Przybliżony odczyt z opuszki palca. Czy to normalne dla Ciebie?",
+    "resultLink": "Porównaj z tętnem spoczynkowym według wieku",
+    "weak": "Słaby sygnał — nie udało się odczytać wyraźnego pulsu. Użyj telefonu, zakryj opuszką palca całkowicie, ale delikatnie tylny aparat i lampę błyskową, i nie ruszaj się. Spróbuj ponownie.",
+    "again": "Zmierz ponownie",
+    "tryAgain": "Spróbuj ponownie",
+    "denied": "Odmówiono dostępu do aparatu. Zezwól na dostęp do aparatu i spróbuj ponownie.",
+    "failed": "Nie udało się uruchomić aparatu. Na telefonie upewnij się, że nie używa go inna aplikacja."
+  },
+  "disclaimer": "Wynik edukacyjny, nie porada medyczna. Tętno mierzone aparatem telefonu zależy od urządzenia, oświetlenia, nacisku palca i tego, jak nieruchomo go trzymasz, więc traktuj je orientacyjnie — nie do podejmowania decyzji zdrowotnych. Wyłącznie tętno (nie HRV, którego aparat telefonu nie zmierzy wiarygodnie). Klatki z aparatu są analizowane na bieżąco na Twoim urządzeniu i nigdy nie są zapisywane ani wysyłane.",
+  "sections": [
+    {
+      "h2": "Jak zmierzyć tętno telefonem",
+      "body": "Użyj tylnego aparatu, nie przedniego: stuknij „start”, zezwól na dostęp do aparatu, a potem połóż lekko opuszkę palca wskazującego na obiektywie i lampie błyskowej, tak by światło lampy przeświecało przez palec. Usiądź, oprzyj dłoń na stole i nie ruszaj się przez około 30 sekund. Naciskaj delikatnie — mocny nacisk wypycha krew z opuszki i osłabia sygnał, a zbyt słaby kontakt wpuszcza światło z otoczenia. Zimne palce też dają słabszy sygnał, więc najpierw rozgrzej dłonie. Aby poznać prawdziwe tętno spoczynkowe, mierz rano przed wstaniem z łóżka albo po 5 minutach spokojnego siedzenia."
+    },
+    {
+      "h2": "Jak dokładny jest pomiar pulsu aparatem?",
+      "body": "Przy tętnie spoczynkowym palec na aparacie to dokładniejsza z metod telefonicznych: w badaniu aplikacji do pomiaru tętna (Coppetti 2017) odczyty kontaktowe z opuszki były znacznie bliższe EKG niż aplikacje skanujące twarz — ale dokładność i tak mocno różniła się między aplikacjami i warunkami. W spoczynku możesz liczyć na rozsądne przybliżenie, a gorsze odczyty w ruchu, przy zimnych dłoniach, w ostrym słońcu lub przy nieregularnym rytmie serca. Dlatego to szacunek, a nie pomiar medyczny. Do ciągłych i bardziej wiarygodnych pomiarów lepszy jest pas piersiowy lub zwalidowany zegarek; przy jakichkolwiek objawach idź do lekarza."
+    },
+    {
+      "h2": "Jakie tętno jest prawidłowe?",
+      "body": "U dorosłych w spoczynku za prawidłowe uznaje się 60–100 ud./min, a u większości zdrowych osób wynosi ono 60–79. Osoby wytrenowane często mają tętno spoczynkowe w okolicach 50–59, a stres, kofeina, słaby sen, choroba czy chwilę wcześniej odbyty spacer je podnoszą. Pojedynczy odczyt niewiele mówi: porównuj pomiary robione tak samo, o tej samej porze dnia. Sprawdź, gdzie wypada Twój wynik dla Twojego wieku i płci: [Tętno spoczynkowe według wieku](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Jak zmierzyć puls bez telefonu",
+      "body": "Przyłóż dwa palce (nie kciuk) do wewnętrznej strony nadgarstka poniżej kciuka albo do boku szyi obok tchawicy. Licz uderzenia przez 30 sekund i pomnóż przez dwa — lub licz przez pełną minutę, jeśli puls wydaje się nieregularny. Rób to na siedząco, po kilku minutach odpoczynku. Ręczne liczenie i odczyt z aparatu powinny różnić się najwyżej o kilka uderzeń; jeśli nie, zaufaj ręcznemu liczeniu i powtórz."
+    },
+    {
+      "h2": "Dlaczego aparat telefonu mierzy tętno, ale nie HRV",
+      "body": "Do tętna wystarczy średnia liczba uderzeń na minutę, którą aparat potrafi oszacować. Zmienność rytmu serca (HRV) wymaga dokładnego czasu między pojedynczymi uderzeniami, a liczba klatek i szumy aparatu telefonu nie pozwalają uchwycić go wiarygodnie — drobne błędy czasowe, bez znaczenia dla tętna, psują HRV. Dlatego to narzędzie pokazuje wyłącznie tętno. HRV najlepiej mierzyć pasem piersiowym lub zegarkiem; jeśli masz wynik z Oura, Whoop, Garmin lub Apple Watch, zobacz, jak wypada: [Kalkulator HRV według wieku](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Pomiar tętna telefonem — najczęstsze pytania",
+  "faq": [
+    { "q": "Czy mogę zmierzyć tętno aparatem telefonu?", "a": "Tak. Zakryj opuszką palca tylny aparat i lampę błyskową i nie ruszaj się przez około 30 sekund; aparat wykrywa zmianę koloru skóry przy każdym uderzeniu serca. Daje to przybliżony wynik tętna, a nie pomiar medyczny." },
+    { "q": "Jak dokładny jest pomiar tętna aparatem telefonu?", "a": "W spoczynku odczyt z palca na aparacie to dokładniejsza metoda telefoniczna, ale dokładność zależy od telefonu, oświetlenia, nacisku palca i ruchu (Coppetti 2017). Traktuj wynik orientacyjnie, nie do decyzji zdrowotnych." },
+    { "q": "Czy działa z przednim aparatem (do selfie) albo kamerką w laptopie?", "a": "Najlepiej działa z tylnym aparatem i lampą błyskową telefonu, bo lampa podświetla opuszkę od spodu. Przednie aparaty i kamerki internetowe zwykle dają słaby lub niewiarygodny sygnał." },
+    { "q": "Dlaczego pojawia się komunikat o słabym sygnale?", "a": "Zwykle opuszka nie zakrywa w pełni obiektywu i lampy, naciskasz za mocno lub się ruszasz, masz zimne palce albo lampa się nie włączyła. Rozgrzej dłonie, naciskaj delikatnie, oprzyj dłoń na stole i spróbuj ponownie." },
+    { "q": "Czy aparat telefonu zmierzy HRV?", "a": "Niewiarygodnie. HRV wymaga precyzyjnego czasu między pojedynczymi uderzeniami, którego aparat telefonu nie uchwyci pewnie, dlatego to narzędzie pokazuje tylko tętno. Do HRV użyj pasa piersiowego lub zegarka." },
+    { "q": "Czy obraz z aparatu jest nagrywany?", "a": "Nie. Wszystko jest przetwarzane na bieżąco w przeglądarce na Twoim urządzeniu. Żaden obraz ani wideo nie jest zapisywane ani wysyłane, a aparat wyłącza się po zakończeniu." },
+    { "q": "Jakie tętno spoczynkowe jest prawidłowe?", "a": "60–100 ud./min u dorosłych; u większości zdrowych osób 60–79, a u wytrenowanych często 50–59. Porównaj z kalkulatorem tętna spoczynkowego według wieku dla swojego wieku i płci." }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Opuszka palca podświetlona lampą błyskową minimalnie zmienia kolor przy każdym uderzeniu serca, gdy przepływa przez nią krew. Aparat widzi tę rytmiczną zmianę; narzędzie uśrednia kanał czerwony każdej klatki, filtruje go i znajduje dominującą częstotliwość uderzeń, by oszacować tętno — to ta sama zasada kontaktowej PPG co w klinicznym pulsoksymetrze (Allen 2007). Odczyty kontaktowe z opuszki to wiarygodniejsza metoda smartfonowa, ale dokładność mocno zależy od urządzenia, oświetlenia, nacisku i bezruchu (Coppetti 2017), więc traktuj wynik jako przybliżony i edukacyjny. Wyłącznie tętno, nie HRV. Wszystko jest przetwarzane na bieżąco na Twoim urządzeniu; żaden obraz ani wideo nie jest nagrywane ani przesyłane.",
+  "sourcesContributes": [
+    "Podstawowy przegląd PPG — optycznego sygnału objętości krwi, który to narzędzie odczytuje z opuszki palca.",
+    "Wykazało, że kontaktowa PPG (palec na aparacie) jest dokładniejsza od bezkontaktowej, ale z dużą zmiennością — dlatego to szacunek, a nie pomiar."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "rhr": "Tętno spoczynkowe według wieku",
+    "hrv": "Kalkulator HRV według wieku",
+    "apps": "Najlepsze aplikacje do biofeedbacku HRV"
+  }
+}

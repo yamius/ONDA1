@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "title": "Medir el pulso con la cámara del móvil — Gratis | ONDA Life",
+    "description": "Mide tu pulso con la cámara del móvil: cubre la cámara trasera y el flash con la yema del dedo y ve tu frecuencia cardíaca en unos 30 s. Gratis y sin app.",
+    "appName": "Pulsómetro con la cámara del móvil",
+    "appDescription": "Herramienta gratuita en el navegador que estima la frecuencia cardíaca con la yema del dedo sobre la cámara trasera y el flash del móvil (fotopletismografía de contacto), procesada en el dispositivo."
+  },
+  "breadcrumb": { "home": "Inicio", "tools": "Herramientas", "current": "Pulso con la cámara" },
+  "h1": "Medir el pulso con la cámara del móvil",
+  "capsule": "Puedes medir tu pulso solo con el móvil: cubre la cámara trasera y el flash con la yema del dedo, quédate quieto unos 30 segundos y la cámara detecta el leve cambio de color de la piel con cada latido. Es una estimación aproximada, solo de la frecuencia cardíaca, y no un dispositivo médico; todo se procesa en tu teléfono y no se graba ni se envía ningún vídeo.",
+  "imageAlt": "Medir el pulso con la cámara del móvil — yema del dedo sobre la cámara trasera y el flash, herramienta gratuita de ONDA Life",
+  "warning": "Estimación aproximada y educativa: no es un dispositivo médico ni tiene la precisión de un wearable. Funciona mejor en un móvil (cámara trasera + flash). Todo se procesa en tu dispositivo; no se graba ni se sube ningún vídeo.",
+  "steps": [
+    "Usa un móvil. Pulsa iniciar y permite el acceso a la cámara.",
+    "Cubre suavemente la cámara trasera y el flash con la yema del dedo.",
+    "Quédate quieto unos 30 segundos mientras leemos tu pulso."
+  ],
+  "ui": {
+    "start": "♥ Iniciar medición",
+    "hold": "Mantén la yema del dedo quieta sobre la cámara y el flash…",
+    "cancel": "Cancelar",
+    "bpm": "lpm",
+    "estimated": "Frecuencia cardíaca estimada",
+    "resultNote": "Una estimación aproximada tomada con tu dedo. ¿Es normal para ti?",
+    "resultLink": "Compárala con la frecuencia cardíaca en reposo por edad",
+    "weak": "Señal débil: no pudimos leer un pulso claro. Usa un móvil, cubre por completo pero con suavidad la cámara trasera y el flash con la yema del dedo y quédate quieto. Inténtalo de nuevo.",
+    "again": "Medir de nuevo",
+    "tryAgain": "Intentar de nuevo",
+    "denied": "Se denegó el permiso de la cámara. Permite el acceso a la cámara e inténtalo de nuevo.",
+    "failed": "No se pudo iniciar la cámara. En el móvil, asegúrate de que ninguna otra app la esté usando."
+  },
+  "disclaimer": "Estimación educativa, no consejo médico. La frecuencia cardíaca medida con la cámara varía según el dispositivo, la luz, la presión del dedo y lo quieto que estés, así que tómala como una cifra orientativa, no para decisiones de salud. Solo frecuencia cardíaca (no HRV, que la cámara de un móvil no puede captar de forma fiable). Los fotogramas se analizan en directo en tu dispositivo y nunca se guardan ni se envían.",
+  "sections": [
+    {
+      "h2": "Cómo medir la frecuencia cardíaca con el celular",
+      "body": "Usa la cámara trasera, no la frontal: pulsa iniciar, permite el acceso a la cámara y apoya ligeramente la yema del dedo índice sobre el objetivo y el flash, de modo que la luz atraviese el dedo. Siéntate, apoya la mano en una mesa y quédate quieto unos 30 segundos. Presiona con suavidad: si aprietas fuerte, expulsas la sangre de la yema y la señal se debilita; si el contacto es escaso, entra luz ambiental. Los dedos fríos también dan una señal más débil, así que caliéntate las manos antes. Para una frecuencia cardíaca en reposo real, mide por la mañana antes de levantarte o tras 5 minutos sentado tranquilamente."
+    },
+    {
+      "h2": "¿Qué tan precisa es una app para medir el pulso con la cámara?",
+      "body": "En reposo, el dedo sobre la cámara es el método más preciso de los que ofrece el móvil: en un estudio sobre apps de frecuencia cardíaca (Coppetti 2017), las lecturas por contacto con la yema se acercaron mucho más al ECG que las apps que escanean la cara, aunque la precisión varió mucho entre apps y condiciones. Espera una cifra razonable si estás sentado y quieto, y lecturas peores en movimiento, con las manos frías, bajo sol intenso o con un latido irregular. Por eso es una estimación y no una medición médica. Para lecturas continuas y más fiables, es mejor una banda de pecho o un reloj validado; ante cualquier síntoma, consulta a un médico."
+    },
+    {
+      "h2": "¿Cuál es una frecuencia cardíaca normal?",
+      "body": "En adultos en reposo se considera normal entre 60 y 100 lpm, y la mayoría de las personas sanas está entre 60 y 79. Las personas en buena forma suelen tener una frecuencia en reposo de 50 a 59, mientras que el estrés, la cafeína, dormir mal, estar enfermo o haber caminado un rato la elevan. Una sola lectura dice poco: compara mediciones hechas de la misma forma y a la misma hora del día. Mira dónde queda tu cifra según tu edad y sexo: [Frecuencia cardíaca en reposo por edad](/tools/resting-heart-rate)."
+    },
+    {
+      "h2": "Cómo tomarse el pulso sin celular",
+      "body": "Coloca dos dedos (no el pulgar) en la cara interna de la muñeca, bajo el pulgar, o en el lateral del cuello junto a la tráquea. Cuenta los latidos durante 30 segundos y multiplica por dos, o cuenta un minuto completo si notas el pulso irregular. Hazlo sentado tras unos minutos de reposo. El conteo manual y la lectura con la cámara deberían diferir solo en unos pocos latidos; si no es así, fíate del conteo manual y repite."
+    },
+    {
+      "h2": "Por qué la cámara del móvil mide el pulso pero no la HRV",
+      "body": "La frecuencia cardíaca solo requiere el número medio de latidos por minuto, que la cámara puede estimar. La variabilidad de la frecuencia cardíaca (HRV) requiere el tiempo exacto entre latidos individuales, y la tasa de fotogramas y el ruido de la cámara no permiten captarlo de forma fiable: pequeños errores de tiempo que no afectan a la frecuencia cardíaca arruinan la HRV. Por eso esta herramienta solo muestra la frecuencia cardíaca. La HRV se mide mejor con una banda de pecho o un reloj; si tienes una cifra de Oura, Whoop, Garmin o Apple Watch, mira cómo se compara: [Calculadora de HRV por edad](/tools/hrv)."
+    }
+  ],
+  "faqTitle": "Pulsómetro online con la cámara — preguntas frecuentes",
+  "faq": [
+    { "q": "¿Puedo medir mi frecuencia cardíaca con la cámara del móvil?", "a": "Sí. Cubre la cámara trasera y el flash con la yema del dedo y quédate quieto unos 30 segundos; la cámara detecta el cambio de color de la piel con cada latido. Da una estimación aproximada de la frecuencia cardíaca, no una medición médica." },
+    { "q": "¿Qué tan precisa es la frecuencia cardíaca medida con la cámara?", "a": "En reposo, el dedo sobre la cámara es el método más preciso del móvil, pero la precisión varía según el teléfono, la luz, la presión del dedo y el movimiento (Coppetti 2017). Úsala como referencia orientativa, no para decisiones de salud." },
+    { "q": "¿Funciona con la cámara frontal (selfie) o la webcam del portátil?", "a": "Funciona mejor con la cámara trasera y el flash del móvil, porque el flash ilumina el dedo desde atrás. Las cámaras frontales y las webcams suelen dar una señal débil o poco fiable." },
+    { "q": "¿Por qué aparece «señal débil»?", "a": "Normalmente porque la yema no cubre del todo el objetivo y el flash, presionas demasiado o te mueves, tienes los dedos fríos o el flash no se encendió. Caliéntate las manos, presiona con suavidad, apoya la mano en una mesa e inténtalo de nuevo." },
+    { "q": "¿Puede la cámara del móvil medir la HRV?", "a": "No de forma fiable. La HRV requiere medir con precisión el tiempo entre latidos, algo que la cámara del móvil no capta con seguridad, así que esta herramienta solo muestra la frecuencia cardíaca. Para la HRV, usa una banda de pecho o un reloj." },
+    { "q": "¿Se graba el vídeo de la cámara?", "a": "No. Todo se procesa en directo en tu navegador, en tu dispositivo. No se guarda ni se sube ninguna imagen o vídeo, y la cámara se apaga al terminar." },
+    { "q": "¿Cuál es una frecuencia cardíaca normal en reposo?", "a": "Entre 60 y 100 lpm en adultos; la mayoría de las personas sanas está entre 60 y 79, y las personas en buena forma a menudo entre 50 y 59. Compárala con la calculadora de frecuencia cardíaca en reposo por edad según tu edad y sexo." }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "La yema del dedo, iluminada por el flash, cambia muy ligeramente de color con cada latido al pasar la sangre. La cámara capta ese cambio rítmico; la herramienta promedia el canal rojo de cada fotograma, lo filtra y encuentra la frecuencia de latido dominante para estimar tu frecuencia cardíaca: el mismo principio de PPG de contacto que un pulsioxímetro clínico (Allen 2007). Las lecturas por contacto con la yema son el método más fiable del smartphone, pero la precisión varía mucho según el dispositivo, la luz, la presión y la quietud (Coppetti 2017), así que toma la cifra como una estimación aproximada y educativa. Solo frecuencia cardíaca, no HRV. Todo se procesa en directo en tu dispositivo; no se graba ni se sube ninguna imagen o vídeo.",
+  "sourcesContributes": [
+    "Revisión fundamental sobre la PPG, la señal óptica de volumen sanguíneo que esta herramienta lee en tu dedo.",
+    "Halló que la PPG de contacto (dedo sobre la cámara) es más precisa que la sin contacto, pero con gran variabilidad: por eso es una estimación y no una medición."
+  ],
+  "related": {
+    "label": "Relacionado",
+    "rhr": "Frecuencia cardíaca en reposo por edad",
+    "hrv": "Calculadora de HRV por edad",
+    "apps": "Mejores apps de biofeedback de HRV"
+  }
+}
