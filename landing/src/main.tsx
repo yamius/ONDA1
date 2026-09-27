@@ -137,6 +137,17 @@ const routeElements = (
               third-party script: it lives outside Layout (no Reddit route tracker) and prerender.ts
               strips the pixel/GTM from its HTML. See BaselinePage + scripts/prerender.ts. */}
           <Route path="/tools/baseline" element={<BaselinePage />} />
+          <Route path="/es/tools/baseline" element={<BaselinePage />} />
+          <Route path="/ru/tools/baseline" element={<BaselinePage />} />
+          <Route path="/uk/tools/baseline" element={<BaselinePage />} />
+          <Route path="/zh/tools/baseline" element={<BaselinePage />} />
+          <Route path="/de/tools/baseline" element={<BaselinePage />} />
+          <Route path="/fr/tools/baseline" element={<BaselinePage />} />
+          <Route path="/it/tools/baseline" element={<BaselinePage />} />
+          <Route path="/nl/tools/baseline" element={<BaselinePage />} />
+          <Route path="/ja/tools/baseline" element={<BaselinePage />} />
+          <Route path="/pl/tools/baseline" element={<BaselinePage />} />
+          <Route path="/pt/tools/baseline" element={<BaselinePage />} />
           <Route element={<Layout />}>
             <Route path="/"            element={<HomePage />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (

@@ -42,7 +42,7 @@ const routes = getPrerenderRoutes()
  * own Health figures from the URL fragment; a tag that sends location.href would leak them. Kept in
  * sync with the routes rendered outside Layout in main.tsx / entry-server.tsx.
  */
-const SCRIPT_FREE_ROUTES = new Set<string>(['/tools/baseline'])
+const SCRIPT_FREE_ROUTES = new Set<string>(['/tools/baseline', ...SUPPORTED_LANGS.filter((l) => l !== 'en').map((l) => `/${l}/tools/baseline`)])
 
 // ── Build/version beacon ─────────────────────────────────────────────
 // Stamp the real built commit + UTC build time into every page's <head>,
@@ -395,6 +395,7 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/tools/wim-hof': [...SUPPORTED_LANGS],
   '/tools/sleep-cycle': [...SUPPORTED_LANGS],
   '/tools/chronotype': [...SUPPORTED_LANGS],
+  '/tools/baseline': [...SUPPORTED_LANGS],
   '/tools/caffeine': [...SUPPORTED_LANGS],
 }
 

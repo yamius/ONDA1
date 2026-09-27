@@ -15,7 +15,7 @@ import { hubItemSlugs, hubLastModified } from '../src/data/article-topic-listing
 import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
-import { BASELINE_SEO } from '../src/lib/baseline-copy'
+import { baselineCopy } from '../src/data/baseline-i18n'
 import { rhrToolCopy } from '../src/data/rhr-tool-i18n'
 import type { Lang } from '../src/i18n'
 import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
@@ -2452,8 +2452,10 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: { mainEntity: RECOVERY_FAQ.map((f) => ({ question: f.q, answer: f.a })), url },
     }
   }
-  if (route === '/tools/baseline') {
-    const steps = BASELINE_SEO.sections.find((x) => x.steps)?.steps ?? []
+  if (route === '/tools/baseline' || /^\/[a-z]{2}\/tools\/baseline$/.test(route)) {
+    const blLang = (route === '/tools/baseline' ? 'en' : route.slice(1, 3)) as Lang
+    const BASELINE_SEO = baselineCopy(blLang).seo
+    const steps = (BASELINE_SEO.sections as Array<{ steps?: string[] }>).find((x) => x.steps)?.steps ?? []
     return {
       title: BASELINE_SEO.metaTitle,
       description: BASELINE_SEO.metaDescription,
@@ -2478,7 +2480,8 @@ export function getMetaForRoute(route: string): RouteMeta {
         {
           '@context': 'https://schema.org',
           '@type': 'HowTo',
-          name: 'How to see two weeks of your Apple Watch heart data',
+          name: BASELINE_SEO.sections.find((x) => (x as { steps?: string[] }).steps)?.h2 ?? 'How to see two weeks of your Apple Watch heart data',
+          inLanguage: blLang,
           totalTime: 'PT1M',
           step: steps.map((text, i) => ({ '@type': 'HowToStep', position: i + 1, text })),
         },

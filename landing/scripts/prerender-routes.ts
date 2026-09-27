@@ -1185,6 +1185,17 @@ const nonLocalizedStaticPaths = [
   '/tools/breathing-rate',
   '/tools/breath-heart-biofeedback',
   '/tools/baseline',
+  '/es/tools/baseline',
+  '/ru/tools/baseline',
+  '/uk/tools/baseline',
+  '/zh/tools/baseline',
+  '/de/tools/baseline',
+  '/fr/tools/baseline',
+  '/it/tools/baseline',
+  '/nl/tools/baseline',
+  '/ja/tools/baseline',
+  '/pl/tools/baseline',
+  '/pt/tools/baseline',
   '/embed/hrv',
 ]
 

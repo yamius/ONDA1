@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
+import { baselineCopy, nightsIn, type BaselineCopy } from '../data/baseline-i18n'
+import { hrvToolCopy } from '../data/hrv-tool-i18n'
 import { appStoreUrl } from '../config/appStore'
 import {
   BASELINE_WINDOW_DAYS,
@@ -11,9 +13,9 @@ import {
   spanPosition,
   type BaselineReading,
 } from '../lib/baseline'
-import { buildCardModel, type CardModel } from '../lib/baseline-card'
+import { buildCardModel, EN_CARD_TEXT, type CardModel, type CardText } from '../lib/baseline-card'
 import { BaselineCard } from '../components/baseline/BaselineCard'
-import { BASELINE_SEO, BASELINE_UI, SHORTCUT_NAME, SHORTCUT_READY, SHORTCUT_RUN_URL, SHORTCUT_URL } from '../lib/baseline-copy'
+import { SHORTCUT_NAME, SHORTCUT_READY, SHORTCUT_RUN_URL, SHORTCUT_URL } from '../lib/baseline-copy'
 
 /**
  * /tools/baseline — the Baseline tool on onda-life.com (ported from the Vallydia bridge, KK 56/57 +
@@ -57,15 +59,15 @@ const INSTALL_FLAG = 'onda_baseline_installed'
 const AUTORUN_FLAG = 'onda_baseline_autorun'
 
 /** ct=tool_baseline so a web tap on iOS shows up as its own row in App Store Connect. */
-const APP_URL = appStoreUrl('tool_baseline')
-/** The paired explainer article (task 76 §2). */
-const ARTICLE_SLUG = 'what-your-apple-watch-records'
+const appUrlFor = (lang: string) => appStoreUrl(lang === 'en' ? 'tool_baseline' : `tool_baseline_${lang}`)
 
 export function BaselinePage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
   const langPrefix = lang === 'en' ? '' : `/${lang}`
-  const ui = BASELINE_UI
+  const copy = baselineCopy(lang)
+  const ui = copy.ui
+  const crumbs = hrvToolCopy(lang).breadcrumb
 
   const [phase, setPhase] = useState<Phase>('cold')
   const [readings, setReadings] = useState<BaselineReading[]>([])
@@ -97,7 +99,7 @@ export function BaselinePage() {
       setIsApple(/iPhone|iPad|iPod|Macintosh/i.test(navigator.userAgent || ''))
       setReadings(parsed)
       const extras = parseBaselineExtras(hash)
-      const model = buildCardModel(parsed, extras)
+      const model = buildCardModel(parsed, extras, cardTextFor(copy, lang))
       // An empty card in a chat is worse than no card at all — only build one when something arrived.
       setCard(any || Object.keys(extras).length > 0 ? model : null)
       setPhase(hash.length > 1 ? 'result' : 'cold')
@@ -167,15 +169,15 @@ export function BaselinePage() {
       {/* This page renders outside the site Layout (no analytics), so it carries its own minimal
           chrome — a wordmark home and a way back to /tools. */}
       <header style={{ borderBottom: `1px solid ${C.line}`, padding: '14px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: 900, margin: '0 auto' }}>
-        <Link to={`${langPrefix}/`} style={{ color: C.ink, fontWeight: 800, letterSpacing: '.14em', fontSize: 15, textDecoration: 'none' }}>ONDA</Link>
-        <Link to={`${langPrefix}/tools`} style={{ color: C.sub, fontSize: 13.5, textDecoration: 'none' }}>← All tools</Link>
+        <Link to={homePathFor(lang)} style={{ color: C.ink, fontWeight: 800, letterSpacing: '.14em', fontSize: 15, textDecoration: 'none' }}>ONDA</Link>
+        <Link to={`${langPrefix}/tools`} style={{ color: C.sub, fontSize: 13.5, textDecoration: 'none' }}>← {crumbs.tools}</Link>
       </header>
 
       <div style={{ maxWidth: 620, margin: '0 auto', padding: '26px 20px 72px' }}>
         <nav aria-label="Breadcrumb" style={{ fontSize: 12.5, color: C.faint, marginBottom: 18 }}>
-          <Link to={`${langPrefix}/`} style={{ color: C.faint, textDecoration: 'none' }}>Home</Link>
+          <Link to={homePathFor(lang)} style={{ color: C.faint, textDecoration: 'none' }}>{crumbs.home}</Link>
           <span style={{ margin: '0 7px' }}>/</span>
-          <Link to={`${langPrefix}/tools`} style={{ color: C.faint, textDecoration: 'none' }}>Tools</Link>
+          <Link to={`${langPrefix}/tools`} style={{ color: C.faint, textDecoration: 'none' }}>{crumbs.tools}</Link>
           <span style={{ margin: '0 7px' }}>/</span>
           <span style={{ color: C.sub }}>Baseline</span>
         </nav>
@@ -188,22 +190,25 @@ export function BaselinePage() {
         {phase === 'result' ? (
           <>
             {/* The card first — it is the thing that travels; the blocks below are the working-out. */}
-            {card && !card.empty && <BaselineCard model={card} onShare={() => { /* script-free: nothing reported */ }} />}
+            {card && !card.empty && <BaselineCard model={card} text={copy.card} onShare={() => { /* script-free: nothing reported */ }} />}
 
             {readings.map((r) => (
-              <SignalBlock key={r.key} r={r} />
+              <SignalBlock key={r.key} r={r} ui={ui} label={copy.signals[r.key as keyof BaselineCopy['signals']] ?? r.label} />
             ))}
 
             <section style={{ borderTop: `1px solid ${C.line}`, paddingTop: 24, marginTop: 28 }}>
               <p style={{ fontSize: 15.5, lineHeight: 1.6, margin: '0 0 12px', color: C.ink }}>{ui.closingOne}</p>
               <p style={{ fontSize: 15.5, lineHeight: 1.6, margin: '0 0 22px', color: C.sub }}>{ui.closingTwo}</p>
               <div style={{ textAlign: 'center' }}>
-                <a href={APP_URL} target="_blank" rel="noopener noreferrer" style={btn}>{ui.appButton}</a>
+                <a href={appUrlFor(lang)} target="_blank" rel="noopener noreferrer" style={btn}>{ui.appButton}</a>
               </div>
             </section>
           </>
         ) : (
           <ColdSection
+            ui={ui}
+            seo={copy.seo}
+            appUrl={appUrlFor(lang)}
             isApple={isApple}
             installed={installed}
             autorunning={autorunning}
@@ -213,15 +218,8 @@ export function BaselinePage() {
         )}
 
         {/* Full explainer + FAQ, prerendered in both phases — what search and AI answers read. */}
-        <Explainer langPrefix={langPrefix} />
+        <Explainer seo={copy.seo} lang={lang} />
 
-        {/* Paired explainer (task 76 §2): the article explains what the watch records; the tool does it. */}
-        <p style={{ borderTop: `1px solid ${C.line}`, marginTop: 34, paddingTop: 20, fontSize: 14.5, lineHeight: 1.6, color: C.sub }}>
-          New to this?{' '}
-          <Link to={`${langPrefix}/articles/${ARTICLE_SLUG}`} style={{ color: C.accent, textDecoration: 'none' }}>
-            What your Apple Watch records over two weeks — and why the range matters more than one number →
-          </Link>
-        </p>
       </div>
     </main>
   )
@@ -240,19 +238,24 @@ const btn: React.CSSProperties = {
 
 /** The cold screen: explain the tool, then the shortcut install/run in one button at a time. */
 function ColdSection({
+  ui,
+  seo,
+  appUrl,
   isApple,
   installed,
   autorunning,
   stalled,
   onInstall,
 }: {
+  ui: BaselineCopy['ui']
+  seo: BaselineCopy['seo']
+  appUrl: string
   isApple: boolean
   installed: boolean
   autorunning: boolean
   stalled: boolean
   onInstall: () => void
 }) {
-  const ui = BASELINE_UI
   return (
     <section>
       <p style={{ fontSize: 15.5, lineHeight: 1.6, color: C.sub, margin: '0 0 22px' }}>
@@ -261,8 +264,8 @@ function ColdSection({
 
       {isApple && !SHORTCUT_READY && (
         <div style={{ textAlign: 'center' }}>
-          <p style={{ fontSize: 14, lineHeight: 1.55, color: C.sub, margin: '0 0 14px' }}>{BASELINE_SEO.unavailable}</p>
-          <a href={APP_URL} target="_blank" rel="noopener noreferrer" style={btn}>{BASELINE_SEO.unavailableButton}</a>
+          <p style={{ fontSize: 14, lineHeight: 1.55, color: C.sub, margin: '0 0 14px' }}>{seo.unavailable}</p>
+          <a href={appUrl} target="_blank" rel="noopener noreferrer" style={btn}>{seo.unavailableButton}</a>
         </div>
       )}
       {isApple && SHORTCUT_READY && (
@@ -318,12 +321,6 @@ function ColdSection({
         </div>
       )}
 
-      {/* When the shortcut link is not published yet, the explainer above still stands on its own. */}
-      {!SHORTCUT_READY && (
-        <div style={{ textAlign: 'center' }}>
-          <a href={APP_URL} target="_blank" rel="noopener noreferrer" style={btn}>See it live in the ONDA app →</a>
-        </div>
-      )}
 
       <p style={{ fontSize: 12.5, lineHeight: 1.5, color: C.faint, margin: '20px 0 0', textAlign: 'center' }}>{ui.privacyNote}</p>
     </section>
@@ -331,13 +328,12 @@ function ColdSection({
 }
 
 /** One signal — same shape whether there is data or not (an absent block reads as a bug). */
-function SignalBlock({ r }: { r: BaselineReading }) {
-  const ui = BASELINE_UI
+function SignalBlock({ r, ui, label }: { r: BaselineReading; ui: BaselineCopy['ui']; label: string }) {
   const empty = r.avg == null
   return (
     <section style={{ borderTop: `1px solid ${C.line}`, padding: '18px 0 20px' }}>
       <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12 }}>
-        <h2 style={{ fontSize: 15, fontWeight: 600, margin: 0, color: C.sub }}>{r.label}</h2>
+        <h2 style={{ fontSize: 15, fontWeight: 600, margin: 0, color: C.sub }}>{label}</h2>
         <span style={{ fontFamily: font.mono, fontSize: 11, letterSpacing: '.08em', color: C.faint }}>
           {empty ? ui.noDataTag : ui.daysTemplate.replace('{n}', String(r.days)).replace('{total}', String(BASELINE_WINDOW_DAYS))}
         </span>
@@ -367,8 +363,8 @@ function SignalBlock({ r }: { r: BaselineReading }) {
 }
 
 /** Script-free explainer: what is shown, why a range, the steps, the privacy model, the FAQ. */
-function Explainer({ langPrefix }: { langPrefix: string }) {
-  const S = BASELINE_SEO
+function Explainer({ seo, lang }: { seo: BaselineCopy['seo']; lang: Lang }) {
+  const S = seo
   const h2: React.CSSProperties = { fontSize: 21, fontWeight: 800, lineHeight: 1.25, margin: '34px 0 10px', color: C.ink }
   const p: React.CSSProperties = { fontSize: 15.5, lineHeight: 1.65, color: C.sub, margin: '0 0 12px' }
   return (
@@ -397,10 +393,23 @@ function Explainer({ langPrefix }: { langPrefix: string }) {
       <ul style={{ ...p, paddingLeft: 18 }}>
         {S.related.map((r) => (
           <li key={r.href} style={{ marginBottom: 6 }}>
-            <Link to={`${langPrefix}${r.href}`} style={{ color: C.accent, textDecoration: 'none' }}>{r.label} →</Link>
+            <Link to={langHref(r.href, lang)} style={{ color: C.accent, textDecoration: 'none' }}>{r.label} →</Link>
           </li>
         ))}
       </ul>
     </div>
   )
+}
+
+/** Card strings for a language, with plural-aware "N nights". */
+function cardTextFor(copy: BaselineCopy, lang: Lang): CardText {
+  const t = copy.cardText
+  return {
+    ...EN_CARD_TEXT,
+    ...t,
+    buttonLabel: copy.card.cardButton,
+    footer: copy.card.cardFooter,
+    nights: (n) => nightsIn(copy, lang, n),
+    short: (n) => copy.nightsShort.replace('{n}', String(n)),
+  }
 }

@@ -1312,6 +1312,138 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 434
   },
+  "/images/articles/onda-report-for-your-cardiologist.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-cardiologist.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-cardiologist.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-endocrinologist.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-endocrinologist.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-endocrinologist.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-gp.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-gp.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-gp.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-gynecologist.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-gynecologist.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-gynecologist.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-neurologist.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-neurologist.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-neurologist.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-occupational-health-doctor.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-occupational-health-doctor.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-occupational-health-doctor.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-pulmonologist.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-pulmonologist.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-pulmonologist.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-rehabilitation-team.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-rehabilitation-team.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-rehabilitation-team.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-sleep-specialist.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-sleep-specialist.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-sleep-specialist.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-sports-doctor.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-sports-doctor.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-sports-doctor.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-therapist-or-psychiatrist.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-therapist-or-psychiatrist.jpg": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/articles/onda-report-for-your-therapist-or-psychiatrist.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/articles/onda-system-feedback-biometric-loop.avif": {
     "width": 1024,
     "height": 434

@@ -1,0 +1,169 @@
+{
+  "ui": {
+    "h1": "Bekijk wat je Apple Watch al heeft vastgelegd",
+    "intro": "Een gratis tool die twee weken van je eigen Apple Gezondheid-gegevens leest — hartslag in rust, hartslagvariabiliteit en ademhalingsfrequentie — en je het bereik laat zien, niet één getal. Alles wordt op je iPhone gelezen; de cijfers worden nooit naar ons gestuurd.",
+    "title": "Je afgelopen twee weken",
+    "lead": "Gelezen uit je eigen Gezondheid-gegevens, op je toestel. Deze cijfers zijn nooit naar ons gestuurd.",
+    "daysTemplate": "{n} VAN {total} DAGEN",
+    "noDataTag": "GEEN GEGEVENS",
+    "noDataBody": "Hier is de afgelopen twee weken niets voor vastgelegd. Meestal betekent dat dat geen toestel het registreerde.",
+    "closingOne": "Dit is je bereik over twee weken. Alleen van jou, geen vergelijking met iemand anders.",
+    "closingTwo": "Wat het niet laat zien: wat er dag na dag tussen deze cijfers gebeurt, hoe ze samen bewegen en wat ze deden toen je iets veranderde. Eén momentopname is daarvoor niet genoeg — de ONDA-app is dezelfde meting, live.",
+    "appButton": "Bekijk het live in de app →",
+    "coldTitle": "Bekijk wat je Apple Watch al heeft vastgelegd",
+    "coldLead": "Een opdracht leest twee weken van je Gezondheid-gegevens op je iPhone en laat ze je hier zien — gratis, niets te installeren.",
+    "coldBody": "Je voegt hem één keer toe en tikt er één keer op — meer is het niet. Hij leest je horloge op je iPhone uit en de cijfers verlaten je iPhone nooit: ze reizen terug in het deel van het adres dat je browser voor zichzelf houdt.",
+    "coldButton": "Lees mijn horloge →",
+    "coldRunLead": "Toegevoegd. Hij start niet vanzelf — tik één keer om je horloge te lezen:",
+    "coldRunButton": "Lees mijn horloge nu →",
+    "coldRunAgain": "Niets toegevoegd? Probeer opnieuw",
+    "coldSteps": [
+      "Tik op de knop — de Opdrachten-app van Apple opent.",
+      "Tik op 'Voeg opdracht toe'.",
+      "Je bent nu in de Opdrachten-app — tik daar één keer op de opdracht. Dat is de stap die mensen missen.",
+      "Geef één keer toegang tot je gezondheidsgegevens — iOS vraagt het, wij zien ze nooit.",
+      "Je cijfers openen hier."
+    ],
+    "coldStepsTitle": "Wat er daarna gebeurt",
+    "coldTileHint": "Voeg hem toe en tik dan één keer op deze blauwe tegel — dat is de hele truc.",
+    "coldAutorun": "Opdrachten wordt geopend…",
+    "coldAutorunFallback": "Niets geopend? Tik hier:",
+    "notApple": "De opdracht heeft een iPhone nodig — hij leest Apple Gezondheid, en dat bestaat alleen daar. Open deze pagina op je telefoon en het werkt.",
+    "privacyNote": "Je cijfers blijven op je toestel. Wij ontvangen ze nooit, en deze pagina bevat geen analytics."
+  },
+  "card": {
+    "pageHeading": "Je pols is meer dan slagen per minuut",
+    "canvasAlt": "Je cijfers van twee weken op een kaart die je kunt delen",
+    "cardButton": "Delen",
+    "cardFooter": "Vraag een vriend in welk ritme hij ademt.",
+    "shareButton": "Deel mijn kaart",
+    "shareHint": "De afbeelding wordt op je telefoon gemaakt. Er wordt niets geüpload.",
+    "savedNote": "Opgeslagen op je toestel.",
+    "shareText": "Mijn twee weken, gelezen van mijn eigen horloge. De jouwe kost dertig seconden: https://onda-life.com/nl/tools/baseline"
+  },
+  "seo": {
+    "metaTitle": "Apple Watch-gegevens bekijken: 2 weken | ONDA Life",
+    "metaDescription": "Gratis: bekijk twee weken hartslag in rust, HRV en ademhaling uit je eigen Apple Gezondheid, op je iPhone, als bereik. Niets geüpload, geen app nodig.",
+    "unavailable": "De link naar de opdracht wordt voorbereid en verschijnt hier. Tot die tijd laat de ONDA-app dezelfde meting van je Apple Watch live zien.",
+    "unavailableButton": "Open de ONDA-app →",
+    "sections": [
+      {
+        "h2": "Wat de Baseline laat zien",
+        "paras": [
+          "Drie dingen die je Apple Watch al naar Apple Gezondheid schrijft, over de afgelopen 14 dagen: hartslag in rust, hartslagvariabiliteit (HRV) en ademhalingsfrequentie. Voor elk zie je je eigen bereik — de kleinste en de grootste dagwaarde — plus je gemiddelde en op hoeveel van de 14 dagen er een meting is.",
+          "Hartslag in rust is het cijfer dat de Apple Watch vastlegt terwijl je stil bent. HRV legt Apple vast als SDNN, uit korte metingen die het horloge overdag en 's nachts op de achtergrond doet. Ademhalingsfrequentie wordt vastgelegd terwijl je slaapt met slaapregistratie aan."
+        ]
+      },
+      {
+        "h2": "Waarom twee weken en een bereik, niet één getal",
+        "paras": [
+          "Eén dag beweegt mee met slaap, training, reizen, een late maaltijd of een glas wijn. Veertien dagen zijn genoeg om je gebruikelijke spreiding te laten zien — de band waarin je eigen cijfers bewegen — en die band zegt je veel meer dan één losse meting.",
+          "De Baseline gaat alleen over jou: hij zet je eigen cijfers naast elkaar, zonder vergelijking met iemand anders en zonder score."
+        ]
+      },
+      {
+        "h2": "Hoe het werkt, stap voor stap",
+        "steps": [
+          "Tik op je iPhone op 'Lees mijn horloge' — de Opdrachten-app van Apple opent met de opdracht.",
+          "Tik op 'Voeg opdracht toe'. Dit doe je maar één keer.",
+          "Tik in de Opdrachten-app één keer op de opdracht om hem uit te voeren.",
+          "iOS vraagt één keer toestemming om je Gezondheid-gegevens te lezen. Jij beslist; wij zien ze nooit.",
+          "De opdracht leest de afgelopen 14 dagen op je iPhone en opent deze pagina met je cijfers."
+        ]
+      },
+      {
+        "h2": "Waar je cijfers heen gaan: nergens",
+        "paras": [
+          "De opdracht leest Apple Gezondheid op je iPhone en geeft de cijfers terug in het deel van het webadres na het #-teken — het URL-fragment. Browsers sturen het fragment nooit naar een server, dus de cijfers bereiken deze pagina zonder ons te bereiken.",
+          "De pagina haalt ze uit de adresbalk zodra ze gelezen zijn, zodat ze niet in je geschiedenis of op een screenshot achterblijven. Deze pagina bevat geen analytics, geen advertentiepixels en geen scripts van derden, en legt niets over je bezoek vast."
+        ]
+      },
+      {
+        "h2": "Wat je nodig hebt",
+        "paras": [
+          "Een iPhone met Apple Gezondheid en een Apple Watch (of een ander toestel dat hartgegevens naar Gezondheid schrijft) die je in de afgelopen twee weken in elk geval een deel van de tijd hebt gedragen. De Opdrachten-app zit standaard in iOS. Er is geen account en niets te betalen; de ONDA-app is optioneel.",
+          "Het werkt niet op Android of op een computer, omdat het Apple Gezondheid leest, en dat bestaat alleen op de iPhone."
+        ]
+      }
+    ],
+    "faqTitle": "Apple Watch Baseline — veelgestelde vragen",
+    "faq": [
+      {
+        "q": "Hoe bekijk ik de hartgegevens van mijn Apple Watch van de afgelopen twee weken?",
+        "a": "In de Gezondheid-app op je iPhone (Bladeren → Hart), of met deze gratis Baseline-tool, die hartslag in rust, HRV en ademhalingsfrequentie van de afgelopen 14 dagen leest en elk als je eigen bereik op één pagina laat zien."
+      },
+      {
+        "q": "Wat laat de Baseline-tool zien?",
+        "a": "Twee weken hartslag in rust, hartslagvariabiliteit en ademhalingsfrequentie uit je eigen Apple Gezondheid — de kleinste en grootste dagwaarde, je gemiddelde en op hoeveel dagen er een meting is."
+      },
+      {
+        "q": "Worden mijn Apple Gezondheid-gegevens ergens heen gestuurd?",
+        "a": "Nee. De cijfers worden op je iPhone gelezen en reizen terug in het URL-fragment, dat browsers nooit naar een server sturen. De pagina bevat geen analytics of scripts van derden."
+      },
+      {
+        "q": "Waarom staat er bij een van de cijfers 'geen gegevens'?",
+        "a": "Er is de afgelopen twee weken niets voor vastgelegd. Ademhalingsfrequentie wordt bijvoorbeeld alleen vastgelegd terwijl je slaapt met slaapregistratie aan."
+      },
+      {
+        "q": "Heb ik een Apple Watch nodig?",
+        "a": "Een Apple Watch geeft de meest volledige meting. Cijfers die andere toestellen naar Gezondheid schrijven worden ook getoond, en wat niet is vastgelegd staat er als 'geen gegevens'."
+      },
+      {
+        "q": "Welke HRV legt de Apple Watch vast?",
+        "a": "SDNN, in milliseconden, uit korte metingen die het horloge op de achtergrond doet. Oura, Whoop en Garmin gebruiken RMSSD, dus hun cijfers zijn niet direct vergelijkbaar."
+      },
+      {
+        "q": "Werkt het op Android?",
+        "a": "Nee. Het leest Apple Gezondheid, en dat bestaat alleen op de iPhone. Open de pagina op een iPhone en het werkt."
+      }
+    ],
+    "relatedTitle": "Gerelateerd",
+    "related": [
+      {
+        "label": "Wat je Apple Watch in twee weken vastlegt",
+        "href": "/articles/what-your-apple-watch-records"
+      },
+      {
+        "label": "HRV op de Apple Watch: twee cijfers uitgelegd",
+        "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv"
+      },
+      {
+        "label": "HRV-calculator per leeftijd",
+        "href": "/tools/hrv"
+      },
+      {
+        "label": "Hartslag in rust per leeftijd",
+        "href": "/tools/resting-heart-rate"
+      }
+    ]
+  },
+  "signals": {
+    "rhr": "Hartslag in rust",
+    "hrv": "Hartslagvariabiliteit",
+    "rr": "Ademhalingsfrequentie"
+  },
+  "cardText": {
+    "restingPulse": "RUSTPOLS",
+    "avgSub": "gemiddelde over {nights}",
+    "mostRestless": "onrustigste nacht",
+    "calmest": "rustigste nacht",
+    "avgWalk": "gem. pols, wandelen",
+    "peak": "piek, {nights}",
+    "breathingRange": "ademhalingsbereik, {short}",
+    "breathsAsleep": "ademhalingen / min, slapend",
+    "recovery": "herstel, eerste minuut",
+    "vo2": "VO2max, schatting",
+    "spread": "een {x}x spreiding over {nights}",
+    "across": "over {nights}",
+    "hrvLow": "{v} — nachten dat je lichaam op zijn hoede bleef.",
+    "hrvHigh": "{v} — toen het eindelijk losliet.",
+    "rrLine1": "{v} is hoe je lichaam ademt zonder jou.",
+    "rrLine2": "Bij zes leid jij het ritme —",
+    "rrLine3": "je kijkt niet alleen toe."
+  },
+  "nights": {
+    "one": "{n} nacht",
+    "other": "{n} nachten"
+  },
+  "nightsShort": "{n}n"
+}

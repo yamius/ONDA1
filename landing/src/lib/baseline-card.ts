@@ -56,6 +56,10 @@ export interface CardModel {
   breathing: { lineOne: string; lineTwo: string; lineThree: string } | null;
   /** Nothing at all arrived: the card is not drawn. A blank card in a chat is worse than none. */
   empty: boolean;
+  /** The label drawn on the card's share button (localized). */
+  buttonLabel: string;
+  /** The closing line under the card (localized). */
+  footer: string;
 }
 
 /** PURE: "14 nights" only when it was fourteen; "2 nights" when it was two; "1 night" singular. */
@@ -96,9 +100,61 @@ function reading(readings: BaselineReading[], key: string): BaselineReading | nu
  * Slots are built in priority order (the ones nearly everyone has first) and then laid out from the
  * bottom of each column, so an absent figure is invisible rather than a hole.
  */
+/** Localizable card strings. Defaults reproduce the original English card exactly. */
+export interface CardText {
+  restingPulse: string
+  avgSub: string
+  mostRestless: string
+  calmest: string
+  avgWalk: string
+  peak: string
+  breathingRange: string
+  breathsAsleep: string
+  recovery: string
+  vo2: string
+  spread: string
+  across: string
+  hrvLow: string
+  hrvHigh: string
+  rrLine1: string
+  rrLine2: string
+  rrLine3: string
+  buttonLabel: string
+  footer: string
+  nights: (n: number) => string
+  short: (n: number) => string
+}
+
+const fillT = (s: string, v: Record<string, string | number>) => s.replace(/\{(\w+)\}/g, (_m, k: string) => String(v[k] ?? ''))
+
+export const EN_CARD_TEXT: CardText = {
+  restingPulse: 'RESTING PULSE',
+  avgSub: '{nights} average',
+  mostRestless: 'most restless night',
+  calmest: 'calmest night',
+  avgWalk: 'avg pulse, walking',
+  peak: 'peak, {nights}',
+  breathingRange: 'breathing range, {short}',
+  breathsAsleep: 'breaths / min, asleep',
+  recovery: 'recovery, first minute',
+  vo2: 'VO2max, est.',
+  spread: 'a {x}x spread across {nights}',
+  across: 'across {nights}',
+  hrvLow: '{v} — nights your body stayed on guard.',
+  hrvHigh: '{v} — when it finally let go.',
+  rrLine1: '{v} is how your body breathes without you.',
+  rrLine2: 'At six, you lead the rhythm —',
+  rrLine3: "you don't just watch it.",
+  buttonLabel: 'Share',
+  footer: 'Ask a friend what rhythm they breathe at.',
+  nights: (n) => nightsLabel(n),
+  short: (n) => nightsShort(n),
+}
+
 export function buildCardModel(
   readings: BaselineReading[],
   extras: Partial<Record<BaselineExtraKey, number>>,
+  t: CardText = EN_CARD_TEXT,
 ): CardModel {
   const rhr = reading(readings, "rhr");
   const hrv = reading(readings, "hrv");
@@ -108,12 +164,12 @@ export function buildCardModel(
   // then walking pulse, then the peak - which the current Shortcut no longer sends at all.
   const left: CardSlot[] = [];
   if (rhr) {
-    left.push({ value: formatValue(rhr.max, 0), caption: "most restless night" });
-    left.push({ value: formatValue(rhr.min, 0), caption: "calmest night" });
+    left.push({ value: formatValue(rhr.max, 0), caption: t.mostRestless });
+    left.push({ value: formatValue(rhr.min, 0), caption: t.calmest });
   }
-  if (extras.whr != null) left.push({ value: String(round(extras.whr)), caption: "avg pulse, walking" });
+  if (extras.whr != null) left.push({ value: String(round(extras.whr)), caption: t.avgWalk });
   if (extras.hrpeak != null && rhr) {
-    left.push({ value: String(round(extras.hrpeak)), caption: `peak, ${nightsLabel(rhr.days)}` });
+    left.push({ value: String(round(extras.hrpeak)), caption: fillT(t.peak, { nights: t.nights(rhr.days) }) });
   }
 
   // RIGHT, same idea: breathing at the bottom (almost everyone), the workout-dependent figures on top.
@@ -121,12 +177,12 @@ export function buildCardModel(
   if (rr) {
     right.push({
       value: `${formatValue(rr.min, 0)}-${formatValue(rr.max, 0)}`,
-      caption: `breathing range, ${nightsShort(rr.days)}`,
+      caption: fillT(t.breathingRange, { short: t.short(rr.days) }),
     });
-    right.push({ value: formatValue(rr.avg, 0), caption: "breaths / min, asleep" });
+    right.push({ value: formatValue(rr.avg, 0), caption: t.breathsAsleep });
   }
-  if (extras.hrr != null) right.push({ value: String(round(extras.hrr)), caption: "recovery, first minute" });
-  if (extras.vo2 != null) right.push({ value: String(round(extras.vo2)), caption: "VO2max, est." });
+  if (extras.hrr != null) right.push({ value: String(round(extras.hrr)), caption: t.recovery });
+  if (extras.vo2 != null) right.push({ value: String(round(extras.vo2)), caption: t.vo2 });
 
   const spread = hrv ? spreadMultiple(hrv.min, hrv.max) : null;
 
@@ -134,9 +190,9 @@ export function buildCardModel(
     hero: rhr
       ? {
           value: formatValue(rhr.avg, 0),
-          label: "RESTING PULSE",
+          label: t.restingPulse,
           // The window the figure actually covers, not the one the Shortcut asked for.
-          sub: `${nightsLabel(rhr.days)} average`,
+          sub: fillT(t.avgSub, { nights: t.nights(rhr.days) }),
         }
       : null,
     left,
@@ -149,19 +205,21 @@ export function buildCardModel(
             position: (hrv.avg! - hrv.min) / (hrv.max - hrv.min),
             // No spread line when the ratio would be meaningless: the bar still says everything the
             // two ends say.
-            caption: spread ? `a ${spread}x spread across ${nightsLabel(hrv.days)}` : `across ${nightsLabel(hrv.days)}`,
-            lineOne: `${formatValue(hrv.min, 0)} — nights your body stayed on guard.`,
-            lineTwo: `${formatValue(hrv.max, 0)} — when it finally let go.`,
+            caption: spread ? fillT(t.spread, { x: spread, nights: t.nights(hrv.days) }) : fillT(t.across, { nights: t.nights(hrv.days) }),
+            lineOne: fillT(t.hrvLow, { v: formatValue(hrv.min, 0) }),
+            lineTwo: fillT(t.hrvHigh, { v: formatValue(hrv.max, 0) }),
           }
         : null,
     breathing: rr
       ? {
-          lineOne: `${formatValue(rr.avg, 0)} is how your body breathes without you.`,
-          lineTwo: "At six, you lead the rhythm —",
-          lineThree: "you don't just watch it.",
+          lineOne: fillT(t.rrLine1, { v: formatValue(rr.avg, 0) }),
+          lineTwo: t.rrLine2,
+          lineThree: t.rrLine3,
         }
       : null,
     empty: !rhr && !hrv && !rr && Object.keys(extras).length === 0,
+    buttonLabel: t.buttonLabel,
+    footer: t.footer,
   };
 }
 

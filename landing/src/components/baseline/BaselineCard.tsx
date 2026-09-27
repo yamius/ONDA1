@@ -43,7 +43,7 @@ const SLOT_Y = [750, 560, 370, 190];
 
 
 
-export function BaselineCard({ model, onShare }: { model: CardModel; onShare: () => void }) {
+export function BaselineCard({ model, onShare, text = BASELINE_CARD_UI }: { model: CardModel; onShare: () => void; text?: { shareText: string; savedNote: string; pageHeading: string; canvasAlt: string; shareButton: string; shareHint: string } }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const bgRef = useRef<HTMLImageElement | null>(null);
   const [ready, setReady] = useState(false);
@@ -122,9 +122,9 @@ export function BaselineCard({ model, onShare }: { model: CardModel; onShare: ()
       // person receiving the picture has no way back. Some apps drop the text; that is the accepted
       // risk, but the text is always in the call.
       if (nav.canShare?.({ files: [file] })) {
-        await navigator.share({ files: [file], text: BASELINE_CARD_UI.shareText });
+        await navigator.share({ files: [file], text: text.shareText });
       } else if (navigator.share) {
-        await navigator.share({ text: BASELINE_CARD_UI.shareText, url: window.location.href });
+        await navigator.share({ text: text.shareText, url: window.location.href });
       } else {
         const url = URL.createObjectURL(blob);
         const a = document.createElement("a");
@@ -132,7 +132,7 @@ export function BaselineCard({ model, onShare }: { model: CardModel; onShare: ()
         a.download = "my-baseline.png";
         a.click();
         URL.revokeObjectURL(url);
-        setFallbackNote(BASELINE_CARD_UI.savedNote);
+        setFallbackNote(text.savedNote);
       }
     } catch {
       // A cancelled share sheet throws too. Nothing to report: the person simply changed their mind.
@@ -144,7 +144,7 @@ export function BaselineCard({ model, onShare }: { model: CardModel; onShare: ()
   return (
     <section style={{ margin: "0 0 30px" }}>
       <h2 style={{ fontSize: "clamp(19px, 5vw, 24px)", fontWeight: 700, lineHeight: 1.2, margin: "0 0 14px" }}>
-        {BASELINE_CARD_UI.pageHeading}
+        {text.pageHeading}
       </h2>
       {/* The button drawn on the card IS the button. A second one underneath said the same thing
           twice, and the drawn one has to exist regardless - it travels with the picture. */}
@@ -152,7 +152,7 @@ export function BaselineCard({ model, onShare }: { model: CardModel; onShare: ()
         ref={canvasRef}
         width={OUT_W}
         height={OUT_H}
-        aria-label={BASELINE_CARD_UI.canvasAlt}
+        aria-label={text.canvasAlt}
         onClick={onCanvasClick}
         style={{
           width: "100%", height: "auto", display: "block", borderRadius: 14,
@@ -164,11 +164,11 @@ export function BaselineCard({ model, onShare }: { model: CardModel; onShare: ()
           still exists - it is simply invisible. Removing the visible duplicate must not remove the
           only way in for someone not using a pointer. */}
       <button type="button" onClick={share} disabled={!ready || busy} style={SR_ONLY}>
-        {BASELINE_CARD_UI.shareButton}
+        {text.shareButton}
       </button>
       <div style={{ textAlign: "center", marginTop: 12 }}>
         <p style={{ fontSize: 12.5, lineHeight: 1.5, color: COLOR.dim, margin: 0 }}>
-          {fallbackNote ?? BASELINE_CARD_UI.shareHint}
+          {fallbackNote ?? text.shareHint}
         </p>
       </div>
     </section>
@@ -295,13 +295,13 @@ function drawCard(ctx: CanvasRenderingContext2D, bg: HTMLImageElement, m: CardMo
     ctx.fill();
     const label = font(700, 32);
     ctx.font = label;
-    const tw = ctx.measureText(BASELINE_CARD_UI.cardButton).width;
-    text(ctx, BASELINE_CARD_UI.cardButton, CARD_BUTTON.x + (CARD_BUTTON.w - tw) / 2, CARD_BUTTON.y + 22, label, COLOR.buttonInk);
+    const tw = ctx.measureText(m.buttonLabel).width;
+    text(ctx, m.buttonLabel, CARD_BUTTON.x + (CARD_BUTTON.w - tw) / 2, CARD_BUTTON.y + 22, label, COLOR.buttonInk);
   }
   // The closing line sits where the button was when there is no button, so the shared picture ends
   // on a sentence rather than on a hole.
   const footerY = withButton ? CARD_BUTTON.y + CARD_BUTTON.h + 34 : CARD_BUTTON.y + 30;
-  centred(ctx, BASELINE_CARD_UI.cardFooter, footerY, font(400, 21), COLOR.caption);
+  centred(ctx, m.footer, footerY, font(400, 21), COLOR.caption);
 
   ctx.restore();
 }

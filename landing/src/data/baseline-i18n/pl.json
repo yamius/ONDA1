@@ -1,0 +1,171 @@
+{
+  "ui": {
+    "h1": "Zobacz dane, które Twój Apple Watch już zapisał",
+    "intro": "Darmowe narzędzie, które odczytuje dwa tygodnie Twoich danych z Apple Health — tętno spoczynkowe, zmienność rytmu serca (HRV) i częstość oddechu — i pokazuje zakres, a nie jedną liczbę. Wszystko jest odczytywane na iPhonie; wartości nigdy do nas nie trafiają.",
+    "title": "Twoje ostatnie dwa tygodnie",
+    "lead": "Odczytane z Twoich danych Zdrowia, na Twoim urządzeniu. Te liczby nigdy do nas nie trafiły.",
+    "daysTemplate": "{n} Z {total} DNI",
+    "noDataTag": "BRAK DANYCH",
+    "noDataBody": "W ostatnich dwóch tygodniach nic tu nie zapisano. Zwykle oznacza to, że żadne urządzenie tego nie zapisywało.",
+    "closingOne": "To Twój zakres z dwóch tygodni. Tylko Twój, bez porównań z kimkolwiek.",
+    "closingTwo": "Czego nie pokazuje: co dzieje się między tymi liczbami z dnia na dzień, jak zmieniają się razem i jak się zachowały, gdy coś zmieniłeś. Jedna migawka na to nie wystarczy — aplikacja ONDA to ten sam odczyt, na żywo.",
+    "appButton": "Zobacz na żywo w aplikacji →",
+    "coldTitle": "Zobacz dane, które Twój Apple Watch już zapisał",
+    "coldLead": "Skrót odczytuje dwa tygodnie Twoich danych Zdrowia na iPhonie i pokazuje je tutaj — za darmo, bez instalowania czegokolwiek.",
+    "coldBody": "Dodajesz go raz, potem stukasz raz — to wszystko. Odczytuje dane zegarka na iPhonie, a liczby nigdy go nie opuszczają: wracają w tej części adresu, którą przeglądarka zachowuje dla siebie.",
+    "coldButton": "Odczytaj mój zegarek →",
+    "coldRunLead": "Dodano. Nie uruchamia się sam — stuknij raz, aby odczytać zegarek:",
+    "coldRunButton": "Odczytaj zegarek teraz →",
+    "coldRunAgain": "Nic się nie dodało? Spróbuj ponownie",
+    "coldSteps": [
+      "Stuknij przycisk — otworzy się aplikacja Skróty od Apple.",
+      "Stuknij Dodaj skrót.",
+      "Jesteś teraz w aplikacji Skróty — stuknij skrót raz, właśnie tam. Ten krok ludzie pomijają.",
+      "Zezwól raz na dostęp do danych zdrowotnych — pyta iOS, my ich nie widzimy.",
+      "Twoje liczby otworzą się tutaj."
+    ],
+    "coldStepsTitle": "Co dalej",
+    "coldTileHint": "Dodaj go, a potem stuknij raz ten niebieski kafelek — to cały trik.",
+    "coldAutorun": "Otwieranie Skrótów…",
+    "coldAutorunFallback": "Nic się nie otworzyło? Stuknij tutaj:",
+    "notApple": "Skrót wymaga iPhone'a — odczytuje Apple Health, które istnieje tylko tam. Otwórz tę stronę na telefonie, a zadziała.",
+    "privacyNote": "Twoje wartości zostają na Twoim urządzeniu. Nigdy ich nie otrzymujemy, a ta strona nie zawiera analityki."
+  },
+  "card": {
+    "pageHeading": "Twój puls to nie tylko uderzenia na minutę",
+    "canvasAlt": "Twoje wartości z dwóch tygodni na karcie do udostępnienia",
+    "cardButton": "Udostępnij",
+    "cardFooter": "Zapytaj znajomego, w jakim rytmie oddycha.",
+    "shareButton": "Udostępnij moją kartę",
+    "shareHint": "Obrazek powstaje na Twoim telefonie. Nic nie jest wysyłane.",
+    "savedNote": "Zapisano na urządzeniu.",
+    "shareText": "Moje dwa tygodnie, odczytane z mojego zegarka. Twoje zajmą trzydzieści sekund: https://onda-life.com/pl/tools/baseline"
+  },
+  "seo": {
+    "metaTitle": "Dane z Apple Watch: historia tętna i HRV | ONDA Life",
+    "metaDescription": "Darmowe narzędzie: odczytaj 2 tygodnie danych z Apple Health — tętno spoczynkowe, HRV i oddech — na iPhonie i zobacz swój zakres. Nic nie jest wysyłane.",
+    "unavailable": "Link do skrótu jest przygotowywany i pojawi się tutaj. Do tego czasu aplikacja ONDA pokazuje ten sam odczyt z Twojego Apple Watch, na żywo.",
+    "unavailableButton": "Otwórz aplikację ONDA →",
+    "sections": [
+      {
+        "h2": "Co pokazuje Baseline",
+        "paras": [
+          "Trzy wartości, które Twój Apple Watch już zapisuje w Apple Health, z ostatnich 14 dni: tętno spoczynkowe, zmienność rytmu serca (HRV) i częstość oddechu. Dla każdej widzisz swój własny zakres — najmniejszą i największą wartość dzienną — a także średnią i liczbę dni z 14, w których jest odczyt.",
+          "Tętno spoczynkowe to wartość, którą Apple Watch zapisuje, gdy pozostajesz w bezruchu. HRV Apple zapisuje jako SDNN, z krótkich odczytów wykonywanych przez zegarek w tle w dzień i w nocy. Częstość oddechu jest zapisywana podczas snu, gdy zegarek rejestruje sen."
+        ]
+      },
+      {
+        "h2": "Dlaczego dwa tygodnie i zakres, a nie jedna liczba",
+        "paras": [
+          "Pojedynczy dzień zmienia się wraz ze snem, treningiem, podróżą, późnym posiłkiem czy kieliszkiem wina. Czternaście dni wystarczy, by pokazać Twój zwykły przedział — pasmo, w którym poruszają się Twoje wartości — i to pasmo mówi znacznie więcej niż jakikolwiek pojedynczy odczyt.",
+          "Baseline dotyczy tylko Ciebie: pokazuje Twoje własne wartości obok siebie, bez porównań z innymi i bez punktacji."
+        ]
+      },
+      {
+        "h2": "Jak to działa krok po kroku",
+        "steps": [
+          "Na iPhonie stuknij „Odczytaj mój zegarek” — otworzy się aplikacja Skróty od Apple ze skrótem.",
+          "Stuknij Dodaj skrót. To jednorazowy krok.",
+          "W aplikacji Skróty stuknij skrót raz, aby go uruchomić.",
+          "iOS raz poprosi o zgodę na odczyt danych Zdrowia. Ty decydujesz; my ich nie widzimy.",
+          "Skrót odczytuje ostatnie 14 dni na iPhonie i otwiera tę stronę z Twoimi wartościami."
+        ]
+      },
+      {
+        "h2": "Dokąd trafiają Twoje liczby: donikąd",
+        "paras": [
+          "Skrót odczytuje Apple Health na iPhonie i przekazuje wartości w części adresu po znaku # — fragmencie URL. Przeglądarki nigdy nie wysyłają fragmentu na serwer, więc liczby trafiają na tę stronę, nie trafiając do nas.",
+          "Strona usuwa je z paska adresu zaraz po odczytaniu, więc nie zostają w historii ani na zrzucie ekranu. Ta strona nie zawiera analityki, pikseli reklamowych ani skryptów zewnętrznych i nie zapisuje niczego o Twojej wizycie."
+        ]
+      },
+      {
+        "h2": "Czego potrzebujesz",
+        "paras": [
+          "iPhone'a z Apple Health i Apple Watch (lub innego urządzenia zapisującego dane serca w Zdrowiu) noszonego przynajmniej przez część ostatnich dwóch tygodni. Aplikacja Skróty jest wbudowana w iOS. Nie ma konta ani opłat; aplikacja ONDA jest opcjonalna.",
+          "Nie działa na Androidzie ani na komputerze, bo odczytuje Apple Health, które istnieje tylko na iPhonie."
+        ]
+      }
+    ],
+    "faqTitle": "Apple Watch Baseline — częste pytania",
+    "faq": [
+      {
+        "q": "Jak zobaczyć dane serca z Apple Watch z ostatnich dwóch tygodni?",
+        "a": "W aplikacji Zdrowie na iPhonie (Przeglądaj → Serce) albo w tym darmowym narzędziu Baseline, które odczytuje tętno spoczynkowe, HRV i częstość oddechu z ostatnich 14 dni i pokazuje każdą wartość jako Twój własny zakres na jednej stronie."
+      },
+      {
+        "q": "Co pokazuje narzędzie Baseline?",
+        "a": "Dwa tygodnie Twojego tętna spoczynkowego, zmienności rytmu serca i częstości oddechu z Twojego Apple Health — najmniejszą i największą wartość dzienną, średnią i liczbę dni z odczytem."
+      },
+      {
+        "q": "Czy moje dane z Apple Health są gdzieś wysyłane?",
+        "a": "Nie. Wartości są odczytywane na iPhonie i wracają we fragmencie URL, którego przeglądarki nigdy nie wysyłają na serwer. Strona nie zawiera analityki ani skryptów zewnętrznych."
+      },
+      {
+        "q": "Dlaczego przy jednej z wartości widać brak danych?",
+        "a": "W ostatnich dwóch tygodniach nic dla niej nie zapisano. Częstość oddechu, na przykład, jest zapisywana tylko podczas snu, gdy zegarek rejestruje sen."
+      },
+      {
+        "q": "Czy potrzebuję Apple Watch?",
+        "a": "Apple Watch daje najpełniejszy odczyt. Wartości zapisane w Zdrowiu przez inne urządzenia też są pokazywane, a to, czego nie zapisano, wyświetla się jako brak danych."
+      },
+      {
+        "q": "Które HRV zapisuje Apple Watch?",
+        "a": "SDNN, w milisekundach, z krótkich odczytów wykonywanych przez zegarek w tle. Oura, Whoop i Garmin używają RMSSD, więc ich liczb nie da się bezpośrednio porównać."
+      },
+      {
+        "q": "Czy działa na Androidzie?",
+        "a": "Nie. Odczytuje Apple Health, które istnieje tylko na iPhonie. Otwórz stronę na iPhonie, a zadziała."
+      }
+    ],
+    "relatedTitle": "Powiązane",
+    "related": [
+      {
+        "label": "Co Twój Apple Watch zapisuje w ciągu dwóch tygodni",
+        "href": "/articles/what-your-apple-watch-records"
+      },
+      {
+        "label": "HRV w Apple Watch: dwie liczby wyjaśnione",
+        "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv"
+      },
+      {
+        "label": "Kalkulator HRV według wieku",
+        "href": "/tools/hrv"
+      },
+      {
+        "label": "Tętno spoczynkowe według wieku",
+        "href": "/tools/resting-heart-rate"
+      }
+    ]
+  },
+  "signals": {
+    "rhr": "Tętno spoczynkowe",
+    "hrv": "Zmienność rytmu serca",
+    "rr": "Częstość oddechu"
+  },
+  "cardText": {
+    "restingPulse": "PULS SPOCZYNKOWY",
+    "avgSub": "średnia, {nights}",
+    "mostRestless": "najbardziej niespokojna noc",
+    "calmest": "najspokojniejsza noc",
+    "avgWalk": "śr. puls, chód",
+    "peak": "szczyt, {nights}",
+    "breathingRange": "zakres oddechu, {short}",
+    "breathsAsleep": "oddechy / min, we śnie",
+    "recovery": "powrót, pierwsza minuta",
+    "vo2": "VO2max, szac.",
+    "spread": "rozrzut {x}x w ciągu {nights}",
+    "across": "w ciągu {nights}",
+    "hrvLow": "{v} — noce, gdy ciało było w gotowości.",
+    "hrvHigh": "{v} — gdy wreszcie odpuściło.",
+    "rrLine1": "{v} — tak ciało oddycha bez Ciebie.",
+    "rrLine2": "Przy sześciu to Ty prowadzisz rytm —",
+    "rrLine3": "a nie tylko go obserwujesz."
+  },
+  "nights": {
+    "one": "{n} noc",
+    "few": "{n} noce",
+    "many": "{n} nocy",
+    "other": "{n} nocy"
+  },
+  "nightsShort": "{n} n."
+}

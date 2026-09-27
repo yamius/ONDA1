@@ -1,0 +1,169 @@
+{
+  "ui": {
+    "h1": "Apple Watch Daten ansehen: was deine Uhr schon aufgezeichnet hat",
+    "intro": "Ein kostenloses Tool, das zwei Wochen deiner eigenen Apple-Health-Daten liest – Ruhepuls, Herzfrequenzvariabilität und Atemfrequenz – und dir deine Spanne zeigt, nicht eine einzelne Zahl. Alles wird auf deinem iPhone gelesen; die Werte werden nie an uns gesendet.",
+    "title": "Deine letzten zwei Wochen",
+    "lead": "Aus deinen eigenen Health-Daten gelesen, auf deinem Gerät. Diese Zahlen wurden nie an uns gesendet.",
+    "daysTemplate": "{n} VON {total} TAGEN",
+    "noDataTag": "KEINE DATEN",
+    "noDataBody": "In den letzten zwei Wochen wurde hierfür nichts aufgezeichnet. Meist hat einfach kein Gerät diesen Wert geschrieben.",
+    "closingOne": "Das ist deine Spanne über zwei Wochen. Nur deine – kein Vergleich mit anderen.",
+    "closingTwo": "Was sie nicht zeigt: was zwischen diesen Zahlen von Tag zu Tag passiert, wie sie sich gemeinsam bewegen und was sie taten, als du etwas verändert hast. Eine Momentaufnahme reicht dafür nicht – die ONDA App zeigt dieselben Werte, live.",
+    "appButton": "Live in der App ansehen →",
+    "coldTitle": "Sieh dir an, was deine Apple Watch schon aufgezeichnet hat",
+    "coldLead": "Ein Kurzbefehl liest zwei Wochen deiner Health-Daten auf deinem iPhone und zeigt sie dir hier – kostenlos, ohne Installation.",
+    "coldBody": "Einmal hinzufügen, einmal tippen – das ist alles. Er liest deine Uhr auf deinem iPhone, und die Zahlen verlassen es nie: Sie reisen in dem Teil der Adresse zurück, den dein Browser für sich behält.",
+    "coldButton": "Meine Uhr auslesen →",
+    "coldRunLead": "Hinzugefügt. Er startet nicht von selbst – tippe einmal, um deine Uhr auszulesen:",
+    "coldRunButton": "Jetzt meine Uhr auslesen →",
+    "coldRunAgain": "Nichts hinzugefügt? Nochmal versuchen",
+    "coldSteps": [
+      "Tippe auf den Button – Apples Kurzbefehle-App öffnet sich.",
+      "Tippe auf „Kurzbefehl hinzufügen“.",
+      "Du bist jetzt in der Kurzbefehle-App – tippe dort einmal auf den Kurzbefehl. Diesen Schritt übersehen viele.",
+      "Erlaube einmalig den Zugriff auf deine Health-Daten – iOS fragt, wir sehen sie nie.",
+      "Deine Zahlen öffnen sich hier."
+    ],
+    "coldStepsTitle": "So geht es weiter",
+    "coldTileHint": "Hinzufügen, dann einmal auf diese blaue Kachel tippen – das ist der ganze Trick.",
+    "coldAutorun": "Kurzbefehle wird geöffnet …",
+    "coldAutorunFallback": "Nichts geöffnet? Hier tippen:",
+    "notApple": "Der Kurzbefehl braucht ein iPhone – er liest Apple Health, das es nur dort gibt. Öffne diese Seite auf deinem Handy, dann klappt es.",
+    "privacyNote": "Deine Werte bleiben auf deinem Gerät. Wir erhalten sie nie, und diese Seite enthält kein Analytics."
+  },
+  "card": {
+    "pageHeading": "Dein Puls ist mehr als Schläge pro Minute",
+    "canvasAlt": "Deine Werte aus zwei Wochen auf einer Karte zum Teilen",
+    "cardButton": "Teilen",
+    "cardFooter": "Frag einen Freund, in welchem Rhythmus er atmet.",
+    "shareButton": "Meine Karte teilen",
+    "shareHint": "Das Bild entsteht auf deinem Handy. Nichts wird hochgeladen.",
+    "savedNote": "Auf deinem Gerät gespeichert.",
+    "shareText": "Meine zwei Wochen, direkt von meiner Uhr gelesen. Bei dir dauert es dreißig Sekunden: https://onda-life.com/de/tools/baseline"
+  },
+  "seo": {
+    "metaTitle": "Apple Watch Daten ansehen: Ruhepuls & HRV | ONDA Life",
+    "metaDescription": "Kostenlos: Ruhepuls, HRV und Atemfrequenz der letzten 14 Tage aus Apple Health auf deinem iPhone ansehen – als deine Spanne. Kein Upload, keine App nötig.",
+    "unavailable": "Der Link zum Kurzbefehl wird gerade vorbereitet und erscheint bald hier. Bis dahin zeigt die ONDA App dieselben Werte deiner Apple Watch, live.",
+    "unavailableButton": "ONDA App öffnen →",
+    "sections": [
+      {
+        "h2": "Was die Baseline zeigt",
+        "paras": [
+          "Drei Werte, die deine Apple Watch ohnehin in Apple Health schreibt, über die letzten 14 Tage: Ruhepuls, Herzfrequenzvariabilität (HRV) und Atemfrequenz. Für jeden siehst du deine eigene Spanne – den kleinsten und den größten Tageswert – dazu deinen Durchschnitt und an wie vielen der 14 Tage ein Wert vorliegt.",
+          "Der Ruhepuls ist der Wert, den die Apple Watch aufzeichnet, während du ruhst. HRV zeichnet Apple als SDNN auf, aus kurzen Messungen, die die Uhr tagsüber und nachts im Hintergrund macht. Die Atemfrequenz wird im Schlaf aufgezeichnet, wenn die Schlaferfassung aktiviert ist."
+        ]
+      },
+      {
+        "h2": "Warum zwei Wochen und eine Spanne statt einer Zahl",
+        "paras": [
+          "Ein einzelner Tag schwankt mit Schlaf, Training, Reisen, einem späten Essen oder einem Glas Wein. Vierzehn Tage reichen, um deine übliche Spanne zu zeigen – das Band, in dem sich deine eigenen Werte bewegen – und dieses Band sagt dir viel mehr als jeder einzelne Wert.",
+          "Die Baseline dreht sich nur um dich: Sie zeigt deine eigenen Werte nebeneinander, ohne Vergleich mit anderen und ohne Punktzahl."
+        ]
+      },
+      {
+        "h2": "So funktioniert es, Schritt für Schritt",
+        "steps": [
+          "Tippe auf deinem iPhone auf „Meine Uhr auslesen“ – Apples Kurzbefehle-App öffnet sich mit dem Kurzbefehl.",
+          "Tippe auf „Kurzbefehl hinzufügen“. Das machst du nur einmal.",
+          "Tippe in der Kurzbefehle-App einmal auf den Kurzbefehl, um ihn auszuführen.",
+          "iOS fragt einmalig nach der Erlaubnis, deine Health-Daten zu lesen. Du entscheidest; wir sehen sie nie.",
+          "Der Kurzbefehl liest die letzten 14 Tage auf deinem iPhone und öffnet diese Seite mit deinen Werten."
+        ]
+      },
+      {
+        "h2": "Wohin deine Zahlen gehen: nirgendwohin",
+        "paras": [
+          "Der Kurzbefehl liest Apple Health auf deinem iPhone und gibt die Werte im Teil der Webadresse nach dem #-Zeichen zurück – dem URL-Fragment. Browser senden das Fragment nie an einen Server, daher erreichen die Zahlen diese Seite, ohne uns zu erreichen.",
+          "Die Seite entfernt sie aus der Adresszeile, sobald sie gelesen sind, sodass sie weder in deinem Verlauf noch auf einem Screenshot bleiben. Diese Seite enthält kein Analytics, keine Werbepixel und keine Skripte von Drittanbietern und speichert nichts über deinen Besuch."
+        ]
+      },
+      {
+        "h2": "Was du brauchst",
+        "paras": [
+          "Ein iPhone mit Apple Health und eine Apple Watch (oder ein anderes Gerät, das Herzdaten in Health schreibt), die du in den letzten zwei Wochen zumindest zeitweise getragen hast. Die Kurzbefehle-App ist in iOS integriert. Kein Konto, nichts zu bezahlen; die ONDA App ist optional.",
+          "Auf Android oder am Computer funktioniert es nicht, weil es Apple Health liest, das es nur auf dem iPhone gibt."
+        ]
+      }
+    ],
+    "faqTitle": "Apple Watch Baseline – häufige Fragen",
+    "faq": [
+      {
+        "q": "Wie sehe ich die Herzdaten meiner Apple Watch aus den letzten zwei Wochen?",
+        "a": "In der Health-App auf deinem iPhone (Entdecken → Herz) oder mit diesem kostenlosen Baseline-Tool, das Ruhepuls, HRV und Atemfrequenz der letzten 14 Tage liest und jeden Wert als deine eigene Spanne auf einer Seite zeigt."
+      },
+      {
+        "q": "Was zeigt das Baseline-Tool?",
+        "a": "Zwei Wochen Ruhepuls, Herzfrequenzvariabilität und Atemfrequenz aus deinem eigenen Apple Health – den kleinsten und größten Tageswert, deinen Durchschnitt und an wie vielen Tagen ein Wert vorliegt."
+      },
+      {
+        "q": "Werden meine Apple-Health-Daten irgendwohin gesendet?",
+        "a": "Nein. Die Werte werden auf deinem iPhone gelesen und reisen im URL-Fragment zurück, das Browser nie an einen Server senden. Die Seite enthält kein Analytics und keine Skripte von Drittanbietern."
+      },
+      {
+        "q": "Warum steht bei einem Wert „keine Daten“?",
+        "a": "In den letzten zwei Wochen wurde dafür nichts aufgezeichnet. Die Atemfrequenz etwa wird nur im Schlaf aufgezeichnet, wenn die Schlaferfassung aktiviert ist."
+      },
+      {
+        "q": "Brauche ich eine Apple Watch?",
+        "a": "Mit einer Apple Watch bekommst du die vollständigsten Werte. Werte, die andere Geräte in Health schreiben, werden ebenfalls gezeigt, und was nicht aufgezeichnet wurde, erscheint als „keine Daten“."
+      },
+      {
+        "q": "Welche HRV zeichnet die Apple Watch auf?",
+        "a": "SDNN, in Millisekunden, aus kurzen Messungen, die die Uhr im Hintergrund macht. Oura, Whoop und Garmin nutzen RMSSD, daher sind ihre Zahlen nicht direkt vergleichbar."
+      },
+      {
+        "q": "Funktioniert es auf Android?",
+        "a": "Nein. Es liest Apple Health, das es nur auf dem iPhone gibt. Öffne die Seite auf einem iPhone, dann funktioniert es."
+      }
+    ],
+    "relatedTitle": "Verwandte Themen",
+    "related": [
+      {
+        "label": "Was deine Apple Watch in zwei Wochen aufzeichnet",
+        "href": "/articles/what-your-apple-watch-records"
+      },
+      {
+        "label": "Apple Watch HRV: zwei Zahlen erklärt",
+        "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv"
+      },
+      {
+        "label": "HRV-Rechner nach Alter",
+        "href": "/tools/hrv"
+      },
+      {
+        "label": "Ruhepuls nach Alter",
+        "href": "/tools/resting-heart-rate"
+      }
+    ]
+  },
+  "signals": {
+    "rhr": "Ruhepuls",
+    "hrv": "Herzfrequenzvariabilität",
+    "rr": "Atemfrequenz"
+  },
+  "cardText": {
+    "restingPulse": "RUHEPULS",
+    "avgSub": "Schnitt aus {nights}",
+    "mostRestless": "unruhigste Nacht",
+    "calmest": "ruhigste Nacht",
+    "avgWalk": "Ø Puls beim Gehen",
+    "peak": "Spitze, {nights}",
+    "breathingRange": "Atemspanne, {short}",
+    "breathsAsleep": "Atemzüge/Min. im Schlaf",
+    "recovery": "Erholung, erste Minute",
+    "vo2": "VO2max, geschätzt",
+    "spread": "{x}-fache Spanne über {nights}",
+    "across": "über {nights}",
+    "hrvLow": "{v} – Nächte, in denen dein Körper auf der Hut blieb.",
+    "hrvHigh": "{v} – als er endlich losließ.",
+    "rrLine1": "{v} – so atmet dein Körper ohne dich.",
+    "rrLine2": "Bei sechs gibst du den Rhythmus vor –",
+    "rrLine3": "statt ihm nur zuzusehen."
+  },
+  "nights": {
+    "one": "{n} Nacht",
+    "other": "{n} Nächte"
+  },
+  "nightsShort": "{n} N."
+}

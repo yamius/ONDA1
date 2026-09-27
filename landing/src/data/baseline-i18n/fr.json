@@ -1,0 +1,169 @@
+{
+  "ui": {
+    "h1": "Voir les données que votre Apple Watch a déjà enregistrées",
+    "intro": "Un outil gratuit qui lit deux semaines de votre propre app Santé — pouls au repos, variabilité de la fréquence cardiaque et fréquence respiratoire — et vous montre une plage, pas un seul chiffre. Tout est lu sur votre iPhone ; les valeurs ne nous sont jamais envoyées.",
+    "title": "Vos deux dernières semaines",
+    "lead": "Lu depuis vos propres données Santé, sur votre appareil. Ces chiffres ne nous ont jamais été envoyés.",
+    "daysTemplate": "{n} JOURS SUR {total}",
+    "noDataTag": "AUCUNE DONNÉE",
+    "noDataBody": "Rien d'enregistré pour cette valeur ces deux dernières semaines. En général, aucun appareil ne l'écrivait.",
+    "closingOne": "Voici votre plage sur deux semaines. La vôtre seulement, sans comparaison avec qui que ce soit.",
+    "closingTwo": "Ce qu'elle ne montre pas : ce qui se passe entre ces chiffres d'un jour à l'autre, comment ils bougent ensemble, et ce qu'ils ont fait quand vous avez changé quelque chose. Un seul instantané n'y suffit pas — l'app ONDA fait la même lecture, en direct.",
+    "appButton": "Voir en direct dans l'app →",
+    "coldTitle": "Voir les données que votre Apple Watch a déjà enregistrées",
+    "coldLead": "Un raccourci lit deux semaines de vos données Santé sur votre iPhone et vous les affiche ici — gratuit, rien à installer.",
+    "coldBody": "Vous l'ajoutez une fois, puis vous le touchez une fois — c'est tout. Il lit votre montre sur votre iPhone, et les chiffres n'en sortent jamais : ils reviennent dans la partie de l'adresse que votre navigateur garde pour lui.",
+    "coldButton": "Lire ma montre →",
+    "coldRunLead": "Ajouté. Il ne se lance pas tout seul — touchez une fois pour lire votre montre :",
+    "coldRunButton": "Lire ma montre maintenant →",
+    "coldRunAgain": "Rien n'a été ajouté ? Réessayez",
+    "coldSteps": [
+      "Touchez le bouton — l'app Raccourcis d'Apple s'ouvre.",
+      "Touchez Ajouter un raccourci.",
+      "Vous êtes maintenant dans l'app Raccourcis — touchez le raccourci une fois, juste là. C'est l'étape qu'on oublie.",
+      "Autorisez vos données de santé une fois — iOS vous le demande, nous ne les voyons jamais.",
+      "Vos chiffres s'ouvrent ici."
+    ],
+    "coldStepsTitle": "La suite",
+    "coldTileHint": "Ajoutez-le, puis touchez cette tuile bleue une fois — tout est là.",
+    "coldAutorun": "Ouverture de Raccourcis…",
+    "coldAutorunFallback": "Rien ne s'est ouvert ? Touchez ici :",
+    "notApple": "Le raccourci nécessite un iPhone — il lit l'app Santé d'Apple, qui n'existe que là. Ouvrez cette page sur votre téléphone et tout fonctionnera.",
+    "privacyNote": "Vos valeurs restent sur votre appareil. Nous ne les recevons jamais, et cette page ne contient aucun outil d'analyse."
+  },
+  "card": {
+    "pageHeading": "Votre pouls, ce n'est pas que des battements par minute",
+    "canvasAlt": "Vos valeurs sur deux semaines, dessinées sur une carte à partager",
+    "cardButton": "Partager",
+    "cardFooter": "Demandez à un ami à quel rythme il respire.",
+    "shareButton": "Partager ma carte",
+    "shareHint": "L'image est créée sur votre téléphone. Rien n'est envoyé.",
+    "savedNote": "Enregistrée sur votre appareil.",
+    "shareText": "Mes deux semaines, lues sur ma propre montre. La vôtre prend trente secondes : https://onda-life.com/fr/tools/baseline"
+  },
+  "seo": {
+    "metaTitle": "Voir vos données Apple Watch : VFC et pouls | ONDA Life",
+    "metaDescription": "Outil gratuit : lisez 14 jours de votre app Santé — pouls au repos, VFC, fréquence respiratoire — sur votre iPhone et voyez votre plage. Rien n'est envoyé.",
+    "unavailable": "Le lien du raccourci est en préparation et apparaîtra ici. En attendant, l'app ONDA affiche la même lecture de votre Apple Watch, en direct.",
+    "unavailableButton": "Ouvrir l'app ONDA →",
+    "sections": [
+      {
+        "h2": "Ce que montre la Baseline",
+        "paras": [
+          "Trois valeurs que votre Apple Watch écrit déjà dans l'app Santé, sur les 14 derniers jours : fréquence cardiaque au repos, variabilité de la fréquence cardiaque (VFC) et fréquence respiratoire. Pour chacune, vous voyez votre propre plage — la plus petite et la plus grande valeur quotidienne — ainsi que votre moyenne et le nombre de jours sur 14 qui ont une mesure.",
+          "La fréquence cardiaque au repos est la valeur que l'Apple Watch enregistre quand vous êtes immobile. La VFC est enregistrée par Apple sous forme de SDNN, à partir de courtes mesures que la montre prend en arrière-plan, de jour comme de nuit. La fréquence respiratoire est enregistrée pendant votre sommeil, avec la fonction Sommeil activée."
+        ]
+      },
+      {
+        "h2": "Pourquoi deux semaines et une plage, pas un seul chiffre",
+        "paras": [
+          "Une seule journée varie avec le sommeil, l'entraînement, un voyage, un repas tardif ou un verre de vin. Quatorze jours suffisent à montrer votre amplitude habituelle — la bande dans laquelle vos propres valeurs évoluent — et cette bande est bien plus parlante qu'une mesure isolée.",
+          "La Baseline ne parle que de vous : elle montre vos propres valeurs côte à côte, sans comparaison avec les autres et sans score."
+        ]
+      },
+      {
+        "h2": "Comment ça marche, étape par étape",
+        "steps": [
+          "Sur votre iPhone, touchez « Lire ma montre » — l'app Raccourcis d'Apple s'ouvre avec le raccourci.",
+          "Touchez Ajouter un raccourci. Cette étape n'a lieu qu'une fois.",
+          "Dans l'app Raccourcis, touchez le raccourci une fois pour le lancer.",
+          "iOS demande une fois l'autorisation de lire vos données Santé. Vous décidez ; nous ne les voyons jamais.",
+          "Le raccourci lit les 14 derniers jours sur votre iPhone et ouvre cette page avec vos valeurs."
+        ]
+      },
+      {
+        "h2": "Où vont vos chiffres : nulle part",
+        "paras": [
+          "Le raccourci lit l'app Santé sur votre iPhone et renvoie les valeurs dans la partie de l'adresse web située après le signe # — le fragment d'URL. Les navigateurs n'envoient jamais le fragment à un serveur : les chiffres arrivent sur cette page sans jamais nous parvenir.",
+          "La page les retire de la barre d'adresse dès leur lecture, pour qu'ils ne restent ni dans votre historique ni sur une capture d'écran. Cette page ne contient aucun outil d'analyse, aucun pixel publicitaire ni script tiers, et n'enregistre rien de votre visite."
+        ]
+      },
+      {
+        "h2": "Ce qu'il vous faut",
+        "paras": [
+          "Un iPhone avec l'app Santé, et une Apple Watch (ou un autre appareil qui écrit des données cardiaques dans Santé) portée au moins une partie des deux dernières semaines. L'app Raccourcis est intégrée à iOS. Pas de compte, rien à payer ; l'app ONDA est facultative.",
+          "Cela ne fonctionne pas sur Android ni sur ordinateur, car l'outil lit l'app Santé d'Apple, qui n'existe que sur iPhone."
+        ]
+      }
+    ],
+    "faqTitle": "Baseline Apple Watch — questions fréquentes",
+    "faq": [
+      {
+        "q": "Comment voir l'historique cardiaque de mon Apple Watch sur les deux dernières semaines ?",
+        "a": "Dans l'app Santé de votre iPhone (Parcourir → Cœur), ou avec cet outil Baseline gratuit, qui lit la fréquence cardiaque au repos, la VFC et la fréquence respiratoire des 14 derniers jours et affiche chacune comme votre propre plage, sur une seule page."
+      },
+      {
+        "q": "Que montre l'outil Baseline ?",
+        "a": "Deux semaines de votre fréquence cardiaque au repos, de votre variabilité de la fréquence cardiaque et de votre fréquence respiratoire, tirées de votre propre app Santé — la plus petite et la plus grande valeur quotidienne, votre moyenne et le nombre de jours avec une mesure."
+      },
+      {
+        "q": "Mes données Santé sont-elles envoyées quelque part ?",
+        "a": "Non. Les valeurs sont lues sur votre iPhone et reviennent dans le fragment d'URL, que les navigateurs n'envoient jamais à un serveur. La page ne contient aucun outil d'analyse ni script tiers."
+      },
+      {
+        "q": "Pourquoi une des valeurs indique-t-elle « aucune donnée » ?",
+        "a": "Rien n'a été enregistré pour elle ces deux dernières semaines. La fréquence respiratoire, par exemple, n'est enregistrée que pendant le sommeil, avec la fonction Sommeil activée."
+      },
+      {
+        "q": "Ai-je besoin d'une Apple Watch ?",
+        "a": "Une Apple Watch donne la lecture la plus complète. Les valeurs écrites dans Santé par d'autres appareils s'affichent aussi, et tout ce qui n'a pas été enregistré apparaît comme « aucune donnée »."
+      },
+      {
+        "q": "Quelle VFC l'Apple Watch enregistre-t-elle ?",
+        "a": "Le SDNN, en millisecondes, à partir de courtes mesures prises en arrière-plan par la montre. Oura, Whoop et Garmin utilisent le RMSSD : leurs chiffres ne sont donc pas directement comparables."
+      },
+      {
+        "q": "Est-ce que ça fonctionne sur Android ?",
+        "a": "Non. L'outil lit l'app Santé d'Apple, qui n'existe que sur iPhone. Ouvrez la page sur un iPhone et tout fonctionne."
+      }
+    ],
+    "relatedTitle": "À lire aussi",
+    "related": [
+      {
+        "label": "Ce que votre Apple Watch enregistre en deux semaines",
+        "href": "/articles/what-your-apple-watch-records"
+      },
+      {
+        "label": "VFC Apple Watch : deux chiffres expliqués",
+        "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv"
+      },
+      {
+        "label": "Calculateur de VFC par âge",
+        "href": "/tools/hrv"
+      },
+      {
+        "label": "Fréquence cardiaque au repos par âge",
+        "href": "/tools/resting-heart-rate"
+      }
+    ]
+  },
+  "signals": {
+    "rhr": "Fréquence cardiaque au repos",
+    "hrv": "Variabilité de la fréquence cardiaque",
+    "rr": "Fréquence respiratoire"
+  },
+  "cardText": {
+    "restingPulse": "POULS AU REPOS",
+    "avgSub": "moyenne sur {nights}",
+    "mostRestless": "nuit la plus agitée",
+    "calmest": "nuit la plus calme",
+    "avgWalk": "pouls moyen, en marchant",
+    "peak": "pic, {nights}",
+    "breathingRange": "plage respiratoire, {short}",
+    "breathsAsleep": "respirations / min, en dormant",
+    "recovery": "récupération, 1re minute",
+    "vo2": "VO2max, est.",
+    "spread": "un écart de {x}x sur {nights}",
+    "across": "sur {nights}",
+    "hrvLow": "{v} — des nuits où votre corps restait sur le qui-vive.",
+    "hrvHigh": "{v} — quand il a enfin lâché prise.",
+    "rrLine1": "{v}, c'est ainsi que votre corps respire sans vous.",
+    "rrLine2": "À six, c'est vous qui menez le rythme —",
+    "rrLine3": "vous ne faites pas que le regarder."
+  },
+  "nights": {
+    "one": "{n} nuit",
+    "other": "{n} nuits"
+  },
+  "nightsShort": "{n} n."
+}

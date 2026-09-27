@@ -1,0 +1,169 @@
+{
+  "ui": {
+    "h1": "Vedi i dati che il tuo Apple Watch ha già registrato",
+    "intro": "Uno strumento gratuito che legge due settimane della tua app Salute — battito a riposo, variabilità della frequenza cardiaca e frequenza respiratoria — e ti mostra l'intervallo, non un singolo numero. Tutto viene letto sul tuo iPhone; i valori non ci vengono mai inviati.",
+    "title": "Le tue ultime due settimane",
+    "lead": "Letti dai tuoi dati di Salute, sul tuo dispositivo. Questi numeri non ci sono mai stati inviati.",
+    "daysTemplate": "{n} DI {total} GIORNI",
+    "noDataTag": "NESSUN DATO",
+    "noDataBody": "Nessun valore registrato per questa voce nelle ultime due settimane. Di solito significa che nessun dispositivo lo stava scrivendo.",
+    "closingOne": "Questo è il tuo intervallo su due settimane. Solo tuo, nessun confronto con altri.",
+    "closingTwo": "Cosa non mostra: cosa succede tra questi numeri giorno per giorno, come si muovono insieme e come sono cambiati quando hai cambiato qualcosa. Una sola istantanea non basta — l'app ONDA fa la stessa lettura, dal vivo.",
+    "appButton": "Guardalo dal vivo nell'app →",
+    "coldTitle": "Vedi i dati che il tuo Apple Watch ha già registrato",
+    "coldLead": "Un comando rapido legge due settimane dei tuoi dati di Salute sul tuo iPhone e te li mostra qui — gratis, niente da installare.",
+    "coldBody": "Lo aggiungi una volta, poi lo tocchi una volta — tutto qui. Legge il tuo watch sul tuo iPhone e i numeri non lo lasciano mai: tornano nella parte dell'indirizzo che il browser tiene per sé.",
+    "coldButton": "Leggi il mio watch →",
+    "coldRunLead": "Aggiunto. Non parte da solo — tocca una volta per leggere il tuo watch:",
+    "coldRunButton": "Leggi il mio watch ora →",
+    "coldRunAgain": "Non si è aggiunto nulla? Riprova",
+    "coldSteps": [
+      "Tocca il pulsante — si apre l'app Comandi Rapidi di Apple.",
+      "Tocca Aggiungi comando rapido.",
+      "Ora sei nell'app Comandi Rapidi — tocca il comando una volta, proprio lì. È il passaggio che molti saltano.",
+      "Consenti l'accesso ai dati di salute una volta — lo chiede iOS, noi non li vediamo mai.",
+      "I tuoi numeri si aprono qui."
+    ],
+    "coldStepsTitle": "Cosa succede dopo",
+    "coldTileHint": "Aggiungilo, poi tocca una volta questo riquadro blu — tutto qui.",
+    "coldAutorun": "Apertura di Comandi Rapidi…",
+    "coldAutorunFallback": "Non si è aperto nulla? Tocca qui:",
+    "notApple": "Il comando rapido richiede un iPhone — legge l'app Salute, che esiste solo lì. Apri questa pagina sul telefono e funzionerà.",
+    "privacyNote": "I tuoi valori restano sul tuo dispositivo. Non li riceviamo mai e questa pagina non contiene strumenti di analisi."
+  },
+  "card": {
+    "pageHeading": "Il tuo battito non è solo battiti al minuto",
+    "canvasAlt": "I tuoi valori di due settimane su una card da condividere",
+    "cardButton": "Condividi",
+    "cardFooter": "Chiedi a un amico a che ritmo respira.",
+    "shareButton": "Condividi la mia card",
+    "shareHint": "L'immagine viene creata sul tuo telefono. Non viene caricato nulla.",
+    "savedNote": "Salvata sul tuo dispositivo.",
+    "shareText": "Le mie due settimane, lette dal mio watch. Per le tue bastano trenta secondi: https://onda-life.com/it/tools/baseline"
+  },
+  "seo": {
+    "metaTitle": "Vedere i dati Apple Watch: 2 settimane | ONDA Life",
+    "metaDescription": "Gratis: leggi due settimane della tua app Salute — battito a riposo, HRV e respirazione — sull'iPhone e vedi il tuo intervallo. Nessun upload, nessuna app.",
+    "unavailable": "Il link al comando rapido è in preparazione e apparirà qui. Nel frattempo, l'app ONDA mostra la stessa lettura dal tuo Apple Watch, dal vivo.",
+    "unavailableButton": "Apri l'app ONDA →",
+    "sections": [
+      {
+        "h2": "Cosa mostra la Baseline",
+        "paras": [
+          "Tre valori che il tuo Apple Watch scrive già nell'app Salute, negli ultimi 14 giorni: frequenza cardiaca a riposo, variabilità della frequenza cardiaca (HRV) e frequenza respiratoria. Per ognuno vedi il tuo intervallo — il valore giornaliero più piccolo e quello più grande — più la tua media e in quanti dei 14 giorni c'è una lettura.",
+          "La frequenza cardiaca a riposo è il valore che Apple Watch registra mentre sei fermo. L'HRV viene registrata da Apple come SDNN, da brevi letture che l'orologio fa in background di giorno e di notte. La frequenza respiratoria viene registrata mentre dormi con la funzione Sonno attiva."
+        ]
+      },
+      {
+        "h2": "Perché due settimane e un intervallo, non un solo numero",
+        "paras": [
+          "Un singolo giorno cambia con il sonno, l'allenamento, un viaggio, una cena tardi o un bicchiere di vino. Quattordici giorni bastano per mostrare la tua fascia abituale — quella in cui si muovono i tuoi valori — e quella fascia dice molto più di una singola lettura.",
+          "La Baseline riguarda solo te: mostra i tuoi valori uno accanto all'altro, senza confronti con altri e senza punteggi."
+        ]
+      },
+      {
+        "h2": "Come funziona, passo dopo passo",
+        "steps": [
+          "Sul tuo iPhone tocca \"Leggi il mio watch\" — si apre l'app Comandi Rapidi di Apple con il comando.",
+          "Tocca Aggiungi comando rapido. Lo fai una sola volta.",
+          "Nell'app Comandi Rapidi tocca il comando una volta per eseguirlo.",
+          "iOS chiede una volta il permesso di leggere i tuoi dati di Salute. Decidi tu; noi non li vediamo mai.",
+          "Il comando legge gli ultimi 14 giorni sul tuo iPhone e apre questa pagina con i tuoi valori."
+        ]
+      },
+      {
+        "h2": "Dove vanno i tuoi numeri: da nessuna parte",
+        "paras": [
+          "Il comando legge l'app Salute sul tuo iPhone e restituisce i valori nella parte dell'indirizzo web dopo il segno # — il frammento dell'URL. I browser non inviano mai il frammento a un server, quindi i numeri arrivano a questa pagina senza arrivare a noi.",
+          "La pagina li rimuove dalla barra degli indirizzi appena vengono letti, così non restano nella cronologia né in uno screenshot. Questa pagina non contiene strumenti di analisi, pixel pubblicitari o script di terze parti e non registra nulla della tua visita."
+        ]
+      },
+      {
+        "h2": "Cosa ti serve",
+        "paras": [
+          "Un iPhone con l'app Salute e un Apple Watch (o un altro dispositivo che scrive dati cardiaci in Salute) indossato almeno per parte delle ultime due settimane. L'app Comandi Rapidi è integrata in iOS. Nessun account e niente da pagare; l'app ONDA è facoltativa.",
+          "Non funziona su Android né su computer, perché legge l'app Salute, che esiste solo su iPhone."
+        ]
+      }
+    ],
+    "faqTitle": "Apple Watch Baseline — domande frequenti",
+    "faq": [
+      {
+        "q": "Come vedo i dati cardiaci del mio Apple Watch delle ultime due settimane?",
+        "a": "Nell'app Salute sul tuo iPhone (Sfoglia → Cuore), oppure con questo strumento gratuito Baseline, che legge frequenza cardiaca a riposo, HRV e frequenza respiratoria degli ultimi 14 giorni e mostra ciascuna come tuo intervallo in un'unica pagina."
+      },
+      {
+        "q": "Cosa mostra lo strumento Baseline?",
+        "a": "Due settimane di frequenza cardiaca a riposo, variabilità della frequenza cardiaca e frequenza respiratoria dalla tua app Salute — il valore giornaliero più piccolo e più grande, la tua media e in quanti giorni c'è una lettura."
+      },
+      {
+        "q": "I miei dati di Salute vengono inviati da qualche parte?",
+        "a": "No. I valori vengono letti sul tuo iPhone e tornano nel frammento dell'URL, che i browser non inviano mai a un server. La pagina non contiene strumenti di analisi né script di terze parti."
+      },
+      {
+        "q": "Perché per uno dei valori compare \"nessun dato\"?",
+        "a": "Nelle ultime due settimane non è stato registrato nulla. La frequenza respiratoria, per esempio, viene registrata solo mentre dormi con la funzione Sonno attiva."
+      },
+      {
+        "q": "Serve un Apple Watch?",
+        "a": "Un Apple Watch dà la lettura più completa. Vengono mostrati anche i valori scritti in Salute da altri dispositivi, e ciò che non è stato registrato compare come nessun dato."
+      },
+      {
+        "q": "Quale HRV registra Apple Watch?",
+        "a": "SDNN, in millisecondi, da brevi letture che l'orologio fa in background. Oura, Whoop e Garmin usano RMSSD, quindi i loro numeri non sono direttamente confrontabili."
+      },
+      {
+        "q": "Funziona su Android?",
+        "a": "No. Legge l'app Salute, che esiste solo su iPhone. Apri la pagina su un iPhone e funziona."
+      }
+    ],
+    "relatedTitle": "Correlati",
+    "related": [
+      {
+        "label": "Cosa registra il tuo Apple Watch in due settimane",
+        "href": "/articles/what-your-apple-watch-records"
+      },
+      {
+        "label": "HRV di Apple Watch: due numeri spiegati",
+        "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv"
+      },
+      {
+        "label": "Calcolatore HRV per età",
+        "href": "/tools/hrv"
+      },
+      {
+        "label": "Frequenza cardiaca a riposo per età",
+        "href": "/tools/resting-heart-rate"
+      }
+    ]
+  },
+  "signals": {
+    "rhr": "Frequenza cardiaca a riposo",
+    "hrv": "Variabilità della frequenza cardiaca",
+    "rr": "Frequenza respiratoria"
+  },
+  "cardText": {
+    "restingPulse": "BATTITO A RIPOSO",
+    "avgSub": "media di {nights}",
+    "mostRestless": "notte più agitata",
+    "calmest": "notte più calma",
+    "avgWalk": "battito medio, camminando",
+    "peak": "picco, {nights}",
+    "breathingRange": "intervallo respiro, {short}",
+    "breathsAsleep": "respiri / min, nel sonno",
+    "recovery": "recupero, primo minuto",
+    "vo2": "VO2max, stima",
+    "spread": "scarto di {x}x in {nights}",
+    "across": "in {nights}",
+    "hrvLow": "{v} — notti in cui il corpo è rimasto in guardia.",
+    "hrvHigh": "{v} — quando finalmente ha mollato la presa.",
+    "rrLine1": "{v}: così respira il tuo corpo senza di te.",
+    "rrLine2": "A sei, il ritmo lo guidi tu —",
+    "rrLine3": "non ti limiti a guardarlo."
+  },
+  "nights": {
+    "one": "{n} notte",
+    "other": "{n} notti"
+  },
+  "nightsShort": "{n}n"
+}

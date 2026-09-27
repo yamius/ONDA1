@@ -62,7 +62,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-27T00:38:15+02:00"
   },
   "attention-trainable-skill-meditation": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -198,7 +198,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "doctors-and-your-data": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-09-26T16:06:06+02:00"
+    "modified": "2026-09-26T19:23:02+02:00"
   },
   "does-dopamine-detox-work": {
     "published": "2026-06-04T15:03:27+02:00",
@@ -286,7 +286,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-much-alcohol-lowers-hrv": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-26T01:41:15+02:00"
+    "modified": "2026-09-27T14:11:38+02:00"
   },
   "how-much-meditation-do-you-need": {
     "published": "2026-09-23T15:19:19+02:00",
@@ -322,11 +322,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-measure-hrv-consistently": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-27T00:38:15+02:00"
   },
   "how-to-raise-hrv-naturally": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-27T00:38:15+02:00"
   },
   "how-to-regulate-emotions": {
     "published": "2026-09-19T01:24:54+02:00",
@@ -346,7 +346,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
-    "modified": "2026-09-12T12:28:48+02:00"
+    "modified": "2026-09-27T00:19:39+02:00"
   },
   "hrv-harmony-of-rhythms": {
     "published": "2026-09-22T07:30:24+02:00",
@@ -510,7 +510,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-26T01:41:15+02:00"
+    "modified": "2026-09-27T00:19:39+02:00"
   },
   "nose-vs-mouth-breathing": {
     "published": "2026-09-22T08:22:18+02:00",
@@ -522,51 +522,51 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "onda-report-for-your-cardiologist": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-09-26T13:37:15+02:00"
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-endocrinologist": {
-    "published": "2026-09-26T17:01:52.287Z",
-    "modified": "2026-09-26T17:01:52.287Z"
+    "published": "2026-09-26T19:23:02+02:00",
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-gp": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-09-26T13:37:15+02:00"
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-gynecologist": {
-    "published": "2026-09-26T17:01:52.549Z",
-    "modified": "2026-09-26T17:01:52.549Z"
+    "published": "2026-09-26T19:23:02+02:00",
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-neurologist": {
-    "published": "2026-09-26T17:01:52.285Z",
-    "modified": "2026-09-26T17:01:52.285Z"
+    "published": "2026-09-26T19:23:02+02:00",
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-occupational-health-doctor": {
-    "published": "2026-09-26T17:01:52.552Z",
-    "modified": "2026-09-26T17:01:52.552Z"
+    "published": "2026-09-26T19:23:02+02:00",
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-pulmonologist": {
-    "published": "2026-09-26T17:01:52.551Z",
-    "modified": "2026-09-26T17:01:52.551Z"
+    "published": "2026-09-26T19:23:02+02:00",
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-rehabilitation-team": {
-    "published": "2026-09-26T17:01:52.554Z",
-    "modified": "2026-09-26T17:01:52.554Z"
+    "published": "2026-09-26T19:23:02+02:00",
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-sleep-specialist": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-09-26T13:37:15+02:00"
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-sports-doctor": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-09-26T13:37:15+02:00"
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "onda-report-for-your-therapist-or-psychiatrist": {
     "published": "2026-09-26T16:06:06+02:00",
-    "modified": "2026-09-26T16:06:06+02:00"
+    "modified": "2026-09-26T21:39:48+02:00"
   },
   "overtraining-hrv-resting-heart-rate": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-27T00:38:15+02:00"
   },
   "phase-locked-acoustic-sleep": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -610,7 +610,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resting-heart-rate-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-26T01:41:15+02:00"
+    "modified": "2026-09-27T13:36:18+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
@@ -662,7 +662,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "talk-to-your-doctor-about-wearable-data": {
     "published": "2026-09-26T13:37:15+02:00",
-    "modified": "2026-09-26T13:37:15+02:00"
+    "modified": "2026-09-26T23:20:06+02:00"
   },
   "tanden-breathing-serotonin": {
     "published": "2026-09-23T14:20:18+02:00",
@@ -710,11 +710,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "what-to-do-after-low-hrv-reading": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-27T00:38:15+02:00"
   },
   "what-your-apple-watch-records": {
     "published": "2026-09-05T18:33:27+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-27T00:38:15+02:00"
   },
   "wim-hof-breathing-inflammation": {
     "published": "2026-09-22T18:48:54+02:00",
@@ -738,7 +738,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "your-baseline-knows-first": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-21T12:24:17+02:00"
+    "modified": "2026-09-27T00:38:15+02:00"
   },
   "zazen-zen-meditation-brain": {
     "published": "2026-09-23T18:39:06+02:00",

@@ -1,0 +1,156 @@
+{
+  "ui": {
+    "h1": "查看 Apple Watch 已记录的心率数据",
+    "intro": "一个免费工具：读取你自己两周的 Apple 健康数据——静息脉搏、心率变异性和呼吸频率——并展示你的范围，而不只是一个数字。所有读取都在你的 iPhone 上完成；这些数字从不发送给我们。",
+    "title": "你的最近两周",
+    "lead": "在你的设备上，从你自己的健康数据中读取。这些数字从未发送给我们。",
+    "daysTemplate": "{total} 天中有 {n} 天",
+    "noDataTag": "无数据",
+    "noDataBody": "最近两周这一项没有记录。通常是因为没有设备写入这项数据。",
+    "closingOne": "这是你两周内的范围。只属于你，不与任何人比较。",
+    "closingTwo": "它没有展示的：这些数字每天之间如何变化、彼此如何联动，以及你改变某些习惯时它们的走势。一张快照做不到——ONDA App 是同样的读数，实时呈现。",
+    "appButton": "在 App 中实时查看 →",
+    "coldTitle": "查看 Apple Watch 已记录的数据",
+    "coldLead": "一个快捷指令在你的 iPhone 上读取两周健康数据，并在这里展示给你——免费，无需安装。",
+    "coldBody": "添加一次，再轻点一次——就这么简单。它在你的 iPhone 上读取手表数据，数字从不离开手机：它们随网址中浏览器只留给自己的那一部分传回来。",
+    "coldButton": "读取我的手表 →",
+    "coldRunLead": "已添加。它不会自动运行——轻点一次读取手表：",
+    "coldRunButton": "立即读取我的手表 →",
+    "coldRunAgain": "没有添加成功？再试一次",
+    "coldSteps": [
+      "轻点按钮——Apple 的“快捷指令” App 会打开。",
+      "轻点“添加快捷指令”。",
+      "现在你在“快捷指令” App 中——就在那里轻点一次该快捷指令。这是大家最容易漏掉的一步。",
+      "允许读取健康数据一次——由 iOS 询问，我们看不到。",
+      "你的数字会在这里打开。"
+    ],
+    "coldStepsTitle": "接下来会发生什么",
+    "coldTileHint": "添加后，轻点这个蓝色方块一次——诀窍就这么多。",
+    "coldAutorun": "正在打开“快捷指令”…",
+    "coldAutorunFallback": "没有打开？轻点这里：",
+    "notApple": "快捷指令需要 iPhone——它读取的是 Apple 健康，只存在于 iPhone 上。在手机上打开此页面即可使用。",
+    "privacyNote": "你的数字留在你的设备上。我们从不接收，本页面也没有任何统计分析。"
+  },
+  "card": {
+    "pageHeading": "你的脉搏不只是每分钟的心跳数",
+    "canvasAlt": "你两周的数字绘制成一张可分享的卡片",
+    "cardButton": "分享",
+    "cardFooter": "问问朋友，他们的呼吸是什么节奏。",
+    "shareButton": "分享我的卡片",
+    "shareHint": "图片在你的手机上生成，不会上传任何内容。",
+    "savedNote": "已保存到你的设备。",
+    "shareText": "我的两周，读自我自己的手表。你的只需三十秒：https://onda-life.com/zh/tools/baseline"
+  },
+  "seo": {
+    "metaTitle": "查看 Apple Watch 数据：两周心率与 HRV 记录 | ONDA Life",
+    "metaDescription": "免费工具：在 iPhone 上读取两周 Apple 健康数据——静息心率、HRV 与呼吸频率，查看你的范围。不上传，无需 App。",
+    "unavailable": "快捷指令链接正在准备中，稍后会显示在这里。在此之前，ONDA App 可实时展示来自 Apple Watch 的同样读数。",
+    "unavailableButton": "打开 ONDA App →",
+    "sections": [
+      {
+        "h2": "Baseline 展示什么",
+        "paras": [
+          "你的 Apple Watch 在最近 14 天已写入 Apple 健康的三项数据：静息心率、心率变异性（HRV）和呼吸频率。每一项你都能看到自己的范围——最小和最大的每日数值——以及平均值和 14 天中有读数的天数。",
+          "静息心率是 Apple Watch 在你静止时记录的数值。HRV 由 Apple 以 SDNN 记录，来自手表在白天和夜间后台进行的短时读数。呼吸频率在你开启睡眠记录并佩戴手表入睡时记录。"
+        ]
+      },
+      {
+        "h2": "为什么是两周和一个范围，而不是一个数字",
+        "paras": [
+          "单独一天会随睡眠、训练、旅行、晚餐太晚或一杯酒而变动。十四天足以展示你惯常的区间——你自己的数字所在的那条带——看这条带远比看任何单次读数更有用。",
+          "Baseline 只关于你：它把你自己的数字并排展示，不与任何人比较，也没有评分。"
+        ]
+      },
+      {
+        "h2": "使用步骤",
+        "steps": [
+          "在 iPhone 上轻点“读取我的手表”——Apple 的“快捷指令” App 会打开该快捷指令。",
+          "轻点“添加快捷指令”。只需做一次。",
+          "在“快捷指令” App 中轻点该快捷指令一次来运行。",
+          "iOS 会询问一次是否允许读取健康数据。由你决定；我们看不到。",
+          "快捷指令在 iPhone 上读取最近 14 天，并用你的数字打开此页面。"
+        ]
+      },
+      {
+        "h2": "你的数字去了哪里：哪儿也没去",
+        "paras": [
+          "快捷指令在 iPhone 上读取 Apple 健康，并把数字放在网址 # 号之后的部分——即 URL 片段——传回。浏览器从不把片段发送给服务器，因此数字到达此页面，却不会到达我们。",
+          "页面读取后会立即把它们从地址栏移除，不会留在浏览历史或截图中。本页面没有统计分析、没有广告像素、没有第三方脚本，也不记录你的任何访问信息。"
+        ]
+      },
+      {
+        "h2": "你需要什么",
+        "paras": [
+          "一部装有 Apple 健康的 iPhone，以及在最近两周至少部分时间佩戴的 Apple Watch（或其他向健康写入心脏数据的设备）。“快捷指令” App 是 iOS 内置的。无需账户，无需付费；ONDA App 可选。",
+          "它无法在 Android 或电脑上使用，因为它读取的是 Apple 健康，只存在于 iPhone 上。"
+        ]
+      }
+    ],
+    "faqTitle": "Apple Watch Baseline——常见问题",
+    "faq": [
+      {
+        "q": "如何查看 Apple Watch 最近两周的心率数据？",
+        "a": "在 iPhone 的“健康” App 中（浏览 → 心脏），或使用这个免费的 Baseline 工具：它读取最近 14 天的静息心率、HRV 和呼吸频率，并在同一页面以你自己的范围展示。"
+      },
+      {
+        "q": "Baseline 工具展示什么？",
+        "a": "来自你自己 Apple 健康的两周静息心率、心率变异性和呼吸频率——最小和最大的每日数值、平均值，以及有读数的天数。"
+      },
+      {
+        "q": "我的 Apple 健康数据会被发送到别处吗？",
+        "a": "不会。数字在你的 iPhone 上读取，并通过 URL 片段传回，浏览器从不把它发送给服务器。本页面没有统计分析或第三方脚本。"
+      },
+      {
+        "q": "为什么某一项显示无数据？",
+        "a": "最近两周这一项没有记录。例如，呼吸频率只在你开启睡眠记录并佩戴手表入睡时记录。"
+      },
+      {
+        "q": "我需要 Apple Watch 吗？",
+        "a": "Apple Watch 提供最完整的读数。其他设备写入健康的数字也会展示，没有记录的项目显示为无数据。"
+      },
+      {
+        "q": "Apple Watch 记录的是哪种 HRV？",
+        "a": "SDNN，单位为毫秒，来自手表在后台进行的短时读数。Oura、Whoop 和 Garmin 使用 RMSSD，因此它们的数字不能直接比较。"
+      },
+      {
+        "q": "它能在 Android 上使用吗？",
+        "a": "不能。它读取的是 Apple 健康，只存在于 iPhone 上。在 iPhone 上打开此页面即可使用。"
+      }
+    ],
+    "relatedTitle": "相关内容",
+    "related": [
+      { "label": "Apple Watch 两周内记录了什么", "href": "/articles/what-your-apple-watch-records" },
+      { "label": "Apple Watch HRV：两个数字的含义", "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv" },
+      { "label": "按年龄的 HRV 计算器", "href": "/tools/hrv" },
+      { "label": "按年龄的静息心率", "href": "/tools/resting-heart-rate" }
+    ]
+  },
+  "signals": {
+    "rhr": "静息心率",
+    "hrv": "心率变异性",
+    "rr": "呼吸频率"
+  },
+  "cardText": {
+    "restingPulse": "静息脉搏",
+    "avgSub": "{nights}平均",
+    "mostRestless": "最不安稳的一夜",
+    "calmest": "最平静的一夜",
+    "avgWalk": "步行平均脉搏",
+    "peak": "峰值，{nights}",
+    "breathingRange": "呼吸区间，{short}",
+    "breathsAsleep": "次/分，睡眠中",
+    "recovery": "恢复，第一分钟",
+    "vo2": "VO2max，估算",
+    "spread": "{nights}内相差 {x} 倍",
+    "across": "{nights}内",
+    "hrvLow": "{v}——身体保持戒备的夜晚。",
+    "hrvHigh": "{v}——终于放松下来的时候。",
+    "rrLine1": "{v} 是你的身体自己呼吸的节奏。",
+    "rrLine2": "到了每分钟六次，由你引领节奏——",
+    "rrLine3": "而不只是旁观。"
+  },
+  "nights": {
+    "other": "{n} 晚"
+  },
+  "nightsShort": "{n}晚"
+}

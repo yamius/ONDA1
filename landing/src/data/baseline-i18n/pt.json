@@ -1,0 +1,169 @@
+{
+  "ui": {
+    "h1": "Veja os dados que seu Apple Watch já registrou",
+    "intro": "Uma ferramenta gratuita que lê duas semanas do seu próprio app Saúde — pulso em repouso, variabilidade da frequência cardíaca e frequência respiratória — e mostra a sua faixa, não um número isolado. Tudo é lido no seu iPhone; os valores nunca são enviados para nós.",
+    "title": "Suas últimas duas semanas",
+    "lead": "Lido dos seus próprios dados do Saúde, no seu aparelho. Estes números nunca foram enviados para nós.",
+    "daysTemplate": "{n} DE {total} DIAS",
+    "noDataTag": "SEM DADOS",
+    "noDataBody": "Nada foi registrado para este item nas últimas duas semanas. Geralmente significa que nenhum aparelho estava gravando este dado.",
+    "closingOne": "Esta é a sua faixa em duas semanas. Só sua, sem comparação com ninguém.",
+    "closingTwo": "O que ela não mostra: o que acontece entre esses números no dia a dia, como eles se movem juntos e o que fizeram quando você mudou algo. Um retrato só não basta para isso — o app ONDA faz a mesma leitura, ao vivo.",
+    "appButton": "Ver ao vivo no app →",
+    "coldTitle": "Veja os dados que seu Apple Watch já registrou",
+    "coldLead": "Um atalho lê duas semanas dos seus dados do Saúde no iPhone e os mostra aqui para você — grátis, sem instalar nada.",
+    "coldBody": "Você adiciona uma vez e toca uma vez — é só isso. Ele lê o seu relógio no iPhone, e os números nunca saem dele: voltam na parte do endereço que o navegador guarda só para si.",
+    "coldButton": "Ler meu relógio →",
+    "coldRunLead": "Adicionado. Ele não começa sozinho — toque uma vez para ler seu relógio:",
+    "coldRunButton": "Ler meu relógio agora →",
+    "coldRunAgain": "Não adicionou? Tente de novo",
+    "coldSteps": [
+      "Toque no botão — o app Atalhos da Apple abre.",
+      "Toque em Adicionar Atalho.",
+      "Agora você está no app Atalhos — toque no atalho uma vez, ali mesmo. É o passo que as pessoas esquecem.",
+      "Permita o acesso aos dados de saúde uma vez — o iOS pergunta, nós nunca vemos.",
+      "Seus números abrem aqui."
+    ],
+    "coldStepsTitle": "O que acontece em seguida",
+    "coldTileHint": "Adicione e depois toque uma vez neste bloco azul — esse é todo o truque.",
+    "coldAutorun": "Abrindo o Atalhos…",
+    "coldAutorunFallback": "Nada abriu? Toque aqui:",
+    "notApple": "O atalho precisa de um iPhone — ele lê o app Saúde, que só existe lá. Abra esta página no celular e vai funcionar.",
+    "privacyNote": "Seus valores ficam no seu aparelho. Nós nunca os recebemos, e esta página não tem analytics."
+  },
+  "card": {
+    "pageHeading": "Seu pulso não é só batimentos por minuto",
+    "canvasAlt": "Seus valores de duas semanas desenhados em um cartão para compartilhar",
+    "cardButton": "Compartilhar",
+    "cardFooter": "Pergunte a um amigo em que ritmo ele respira.",
+    "shareButton": "Compartilhar meu cartão",
+    "shareHint": "A imagem é criada no seu celular. Nada é enviado.",
+    "savedNote": "Salvo no seu aparelho.",
+    "shareText": "Minhas duas semanas, lidas do meu próprio relógio. O seu leva trinta segundos: https://onda-life.com/pt/tools/baseline"
+  },
+  "seo": {
+    "metaTitle": "Ver dados do Apple Watch: 2 semanas de VFC | ONDA Life",
+    "metaDescription": "Grátis: veja 2 semanas do seu app Saúde — FC em repouso, VFC e respiração — no iPhone, como a sua faixa. Nada é enviado, sem instalar app.",
+    "unavailable": "O link do atalho está sendo preparado e aparecerá aqui. Enquanto isso, o app ONDA mostra a mesma leitura do seu Apple Watch, ao vivo.",
+    "unavailableButton": "Abrir o app ONDA →",
+    "sections": [
+      {
+        "h2": "O que o Baseline mostra",
+        "paras": [
+          "Três dados que o seu Apple Watch já grava no app Saúde, nos últimos 14 dias: frequência cardíaca em repouso, variabilidade da frequência cardíaca (VFC/HRV) e frequência respiratória. Para cada um você vê a sua própria faixa — o menor e o maior valor diário — além da sua média e de quantos dos 14 dias têm leitura.",
+          "A frequência cardíaca em repouso é o valor que o Apple Watch registra enquanto você está parado. A VFC é registrada pela Apple como SDNN, a partir de leituras curtas que o relógio faz em segundo plano durante o dia e a noite. A frequência respiratória é registrada enquanto você dorme com o recurso Sono ativado."
+        ]
+      },
+      {
+        "h2": "Por que duas semanas e uma faixa, e não um número",
+        "paras": [
+          "Um único dia varia com o sono, o treino, uma viagem, um jantar tarde ou uma taça de vinho. Catorze dias bastam para mostrar a sua amplitude habitual — a faixa em que os seus próprios valores se movem — e essa faixa diz muito mais do que qualquer leitura isolada.",
+          "O Baseline é só sobre você: mostra os seus próprios valores lado a lado, sem comparação com ninguém e sem pontuação."
+        ]
+      },
+      {
+        "h2": "Como funciona, passo a passo",
+        "steps": [
+          "No iPhone, toque em \"Ler meu relógio\" — o app Atalhos da Apple abre com o atalho.",
+          "Toque em Adicionar Atalho. Isso é feito uma só vez.",
+          "No app Atalhos, toque no atalho uma vez para executá-lo.",
+          "O iOS pede uma vez permissão para ler seus dados do Saúde. Você decide; nós nunca vemos.",
+          "O atalho lê os últimos 14 dias no seu iPhone e abre esta página com os seus valores."
+        ]
+      },
+      {
+        "h2": "Para onde vão seus números: para lugar nenhum",
+        "paras": [
+          "O atalho lê o app Saúde no seu iPhone e devolve os valores na parte do endereço web depois do sinal # — o fragmento da URL. Os navegadores nunca enviam o fragmento a um servidor, então os números chegam a esta página sem chegar até nós.",
+          "A página os remove da barra de endereço assim que são lidos, para que não fiquem no seu histórico nem em uma captura de tela. Esta página não tem analytics, pixels de publicidade nem scripts de terceiros, e não registra nada sobre a sua visita."
+        ]
+      },
+      {
+        "h2": "Do que você precisa",
+        "paras": [
+          "Um iPhone com o app Saúde e um Apple Watch (ou outro aparelho que grave dados cardíacos no Saúde) usado em pelo menos parte das últimas duas semanas. O app Atalhos já vem no iOS. Não há conta nem nada a pagar; o app ONDA é opcional.",
+          "Não funciona no Android nem no computador, porque lê o app Saúde, que só existe no iPhone."
+        ]
+      }
+    ],
+    "faqTitle": "Apple Watch Baseline — perguntas frequentes",
+    "faq": [
+      {
+        "q": "Como vejo o histórico de frequência cardíaca do Apple Watch das últimas duas semanas?",
+        "a": "No app Saúde do iPhone (Buscar → Coração), ou com esta ferramenta gratuita Baseline, que lê a frequência cardíaca em repouso, a VFC e a frequência respiratória dos últimos 14 dias e mostra cada uma como a sua própria faixa em uma só página."
+      },
+      {
+        "q": "O que a ferramenta Baseline mostra?",
+        "a": "Duas semanas da sua frequência cardíaca em repouso, variabilidade da frequência cardíaca e frequência respiratória do seu próprio app Saúde — o menor e o maior valor diário, a sua média e quantos dias têm leitura."
+      },
+      {
+        "q": "Meus dados do app Saúde são enviados para algum lugar?",
+        "a": "Não. Os valores são lidos no seu iPhone e voltam no fragmento da URL, que os navegadores nunca enviam a um servidor. A página não tem analytics nem scripts de terceiros."
+      },
+      {
+        "q": "Por que aparece sem dados para um dos valores?",
+        "a": "Nada foi registrado para ele nas últimas duas semanas. A frequência respiratória, por exemplo, só é registrada enquanto você dorme com o recurso Sono ativado."
+      },
+      {
+        "q": "Preciso de um Apple Watch?",
+        "a": "O Apple Watch dá a leitura mais completa. Valores gravados no Saúde por outros aparelhos também aparecem, e o que não foi registrado aparece como sem dados."
+      },
+      {
+        "q": "Qual VFC o Apple Watch registra?",
+        "a": "SDNN, em milissegundos, a partir de leituras curtas que o relógio faz em segundo plano. Oura, Whoop e Garmin usam RMSSD, então os números deles não são diretamente comparáveis."
+      },
+      {
+        "q": "Funciona no Android?",
+        "a": "Não. Ele lê o app Saúde, que só existe no iPhone. Abra a página em um iPhone e funciona."
+      }
+    ],
+    "relatedTitle": "Relacionados",
+    "related": [
+      {
+        "label": "O que o seu Apple Watch registra em duas semanas",
+        "href": "/articles/what-your-apple-watch-records"
+      },
+      {
+        "label": "VFC no Apple Watch: dois números explicados",
+        "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv"
+      },
+      {
+        "label": "Calculadora de VFC por idade",
+        "href": "/tools/hrv"
+      },
+      {
+        "label": "Frequência cardíaca em repouso por idade",
+        "href": "/tools/resting-heart-rate"
+      }
+    ]
+  },
+  "signals": {
+    "rhr": "Frequência cardíaca em repouso",
+    "hrv": "Variabilidade da frequência cardíaca",
+    "rr": "Frequência respiratória"
+  },
+  "cardText": {
+    "restingPulse": "PULSO EM REPOUSO",
+    "avgSub": "média de {nights}",
+    "mostRestless": "noite mais agitada",
+    "calmest": "noite mais calma",
+    "avgWalk": "pulso médio, caminhando",
+    "peak": "pico, {nights}",
+    "breathingRange": "faixa respiratória, {short}",
+    "breathsAsleep": "respirações / min, dormindo",
+    "recovery": "recuperação, 1º minuto",
+    "vo2": "VO2máx, est.",
+    "spread": "variação de {x}x em {nights}",
+    "across": "em {nights}",
+    "hrvLow": "{v} — noites em que o corpo ficou em alerta.",
+    "hrvHigh": "{v} — quando ele enfim relaxou.",
+    "rrLine1": "{v} é como o seu corpo respira sem você.",
+    "rrLine2": "Com seis, você conduz o ritmo —",
+    "rrLine3": "não só o observa."
+  },
+  "nights": {
+    "one": "{n} noite",
+    "other": "{n} noites"
+  },
+  "nightsShort": "{n}n"
+}
