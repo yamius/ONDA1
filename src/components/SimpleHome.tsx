@@ -64,7 +64,7 @@ export function SimpleHero({ light, traffic }: { light: boolean; traffic: Traffi
         {/* Calm ongoing-monitoring promise — GREEN ONLY. In yellow/red we're
             already showing the deviation, so "we'll tell you" no longer fits. */}
         {traffic.light === 'green' && (
-          <p className={`mt-4 pt-4 border-t text-xs leading-snug ${light ? 'text-slate-400 border-slate-200/70' : 'text-white/40 border-white/10'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
+          <p data-testid="reassure-line" className={`mt-4 pt-4 border-t text-xs leading-snug ${light ? 'text-slate-400 border-slate-200/70' : 'text-white/40 border-white/10'}`}>{t('baseline.reassure', 'Мы сообщим, если увидим отклонение от нормы — просто продолжай носить часы.')}</p>
         )}
       </div>
     </div>

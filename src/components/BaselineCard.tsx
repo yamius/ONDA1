@@ -249,7 +249,7 @@ export function BaselineCard({ data, source, emptyHint, liveHr, liveBr, shift, t
           YELLOW/RED → the state title + which-metric/how-long line (same copy as
           the traffic-light hero) so the detailed card says WHAT is off. */}
       {trafficLight === 'green' ? (
-        <div className="absolute w-full px-8 text-center" style={{ bottom: '3.5%' }}>
+        <div data-testid="reassure-line" className="absolute w-full px-8 text-center" style={{ bottom: '3.5%' }}>
           <p style={{ color: p.gray, fontSize: '2.9cqw', lineHeight: 1.35, textShadow: p.cloud }}>{t('baseline.reassure')}</p>
         </div>
       ) : (trafficLight === 'yellow' || trafficLight === 'red') && statusTitle ? (

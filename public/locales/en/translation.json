@@ -29,11 +29,11 @@
   },
   "reminders": {
     "checkin_title": "ONDA",
-    "checkin_a1": "4 nights in your usual range. Resting pulse steady around {{x}}. A short practice keeps the rhythm going.",
-    "checkin_a2": "Another 4 steady nights — your body's in its normal range. Anything that helped? Note it in your journal.",
-    "checkin_a3": "Your body's in its rhythm. Want to see more? Switch to Expert mode in Settings.",
+    "checkin_a1": "4 nights in your usual range (resting pulse ≈{{x}}). A short practice keeps it going.",
+    "checkin_a2": "Another 4 steady nights — you're in your range. What helped? Add a note.",
+    "checkin_a3": "You're in your rhythm. Want more detail? Turn on Expert mode in Settings.",
     "checkin_b1": "A few quiet minutes today? A short practice keeps your rhythm going.",
-    "checkin_b2": "Quick check-in: about 30 seconds with your iPhone camera, and your pulse is saved to your journal. Watch your history grow.",
+    "checkin_b2": "~30s with your iPhone camera saves your pulse to your journal.",
     "daily_title": "ONDA",
     "streak_title": "ONDA",
     "daily_body": [
