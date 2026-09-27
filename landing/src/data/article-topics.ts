@@ -287,6 +287,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "nicotine-vaping-hrv-heart-rate": "lifestyle",
   "nightly-flush-glymphatic-neural-cache": "sleep-body-clock",
   "normal-hrv-by-age": "hrv-heart-rate",
+  "hrv-questions-answered": "hrv-heart-rate",
   "nose-vs-mouth-breathing": "breathing",
   "om-chanting-brain-vagus": "breathing",
   "overtraining-hrv-resting-heart-rate": "heart-fitness-metabolism",

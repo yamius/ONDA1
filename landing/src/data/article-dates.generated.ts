@@ -352,6 +352,10 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-22T07:30:24+02:00",
     "modified": "2026-09-26T01:41:15+02:00"
   },
+  "hrv-questions-answered": {
+    "published": "2026-09-27T21:01:58.680Z",
+    "modified": "2026-09-27T21:01:58.680Z"
+  },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
     "modified": "2026-09-06T17:46:56+02:00"

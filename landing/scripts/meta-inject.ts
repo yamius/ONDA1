@@ -12,7 +12,7 @@ import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug, articles } from '../src/data/articles'
 import { ARTICLE_TOPIC_HUBS, getArticleTopicHub, getPrimaryHubForArticle, type ArticleTopicSlug } from '../src/data/article-topics'
 import { hubItemSlugs, hubLastModified } from '../src/data/article-topic-listing'
-import { ARTICLE_FAQ as FAQ_SCHEMA } from '../src/data/article-faq'
+import { ARTICLE_FAQ as FAQ_SCHEMA, ARTICLE_FAQ_SCHEMA_ONLY } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
 import { baselineCopy } from '../src/data/baseline-i18n'
@@ -3102,7 +3102,7 @@ export function getMetaForRoute(route: string): RouteMeta {
           url,
         }
       }
-      const faqItems = FAQ_SCHEMA[slug]
+      const faqItems = FAQ_SCHEMA[slug] ?? ARTICLE_FAQ_SCHEMA_ONLY[slug]
       if (faqItems && faqItems.length > 0) {
         meta.faq = { mainEntity: faqItems, url }
       }

@@ -1,3 +1,4 @@
+import { HRV_QUESTIONS_SCHEMA } from './hrv-questions'
 /**
  * FAQ question/answer pairs per article slug.
  *
@@ -2992,4 +2993,9 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     { question: "Why does alcohol stay longer in some people?", answer: "Body weight, sex, body water, genetics, liver health, medication and food all change how high your blood alcohol rises and how long it lasts. Women and lighter people usually reach a higher level from the same drinks, so it takes them longer to clear." },
     { question: "How long does alcohol affect sleep and recovery?", answer: "Even one or two drinks can raise overnight resting heart rate, lower HRV and cut REM sleep that night. After heavier drinking, recovery markers can stay below your normal for the next night as well." },
   ],
+}
+
+/** FAQPage JSON-LD only — for pages whose Q&A is already the visible body (no second "Common Questions" block). */
+export const ARTICLE_FAQ_SCHEMA_ONLY: Record<string, { question: string; answer: string }[]> = {
+  'hrv-questions-answered': HRV_QUESTIONS_SCHEMA,
 }

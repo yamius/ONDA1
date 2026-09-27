@@ -29,6 +29,8 @@ There is no universal "good" HRV number — it depends heavily on your age, and 
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — enter your age and HRV to see your percentile.
 
+More quick answers → **[HRV Questions, Answered](/articles/hrv-questions-answered)** — 41 short answers on what lowers HRV, what raises it and how to measure it.
+
 ## Typical HRV ranges by age
 
 These are population norms for overnight RMSSD — the number rings and straps report. The median is the middle value; the typical range covers the middle half of healthy people (25th–75th percentile). HRV varies enormously between individuals, so two healthy people the same age can differ by 40 ms or more. Use this as orientation, not a scoreboard:

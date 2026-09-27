@@ -1,0 +1,97 @@
+/**
+ * HRV questions hub — single source for the article body (grouped H2/H3) and the
+ * FAQPage JSON-LD (via ARTICLE_FAQ_SCHEMA_ONLY, so the Q&A is not rendered twice).
+ * Question set checked 2026-09-27 against GSC queries + Bing "related searches".
+ * Answers: first sentence answers; one figure or source; link deeper. EN only.
+ */
+export interface HrvQuestion {
+  id: string
+  q: string
+  /** Markdown allowed (links). Stripped to plain text for JSON-LD. */
+  a: string
+}
+export interface HrvQuestionGroup {
+  title: string
+  items: HrvQuestion[]
+}
+
+export const HRV_QUESTION_GROUPS: HrvQuestionGroup[] = [
+  {
+    title: 'What HRV is',
+    items: [
+      { id: 'what-is-hrv', q: 'What is HRV?', a: 'Heart rate variability (HRV) is the variation in time between consecutive heartbeats, measured in milliseconds. A heart beating at 60 bpm does not fire exactly once per second — the gaps shift by tens of milliseconds, mostly under the control of the vagus nerve. More variation at rest usually means the "rest and digest" side of your nervous system is active. [Full explainer →](/topics/hrv)' },
+      { id: 'what-does-hrv-measure', q: 'What does HRV actually measure?', a: 'HRV measures how much the beat-to-beat interval changes, which mostly reflects parasympathetic (vagal) activity on the heart. It is an indirect window on your autonomic nervous system — not a measure of heart strength or fitness on its own. Breathing, posture, sleep, alcohol and stress all move it. [HRV & heart rate guides →](/articles/topic/hrv-heart-rate)' },
+      { id: 'is-higher-hrv-better', q: 'Is higher HRV better?', a: 'Within your own range, usually yes: a higher HRV at rest tends to go with better recovery and lower stress load. But comparing your number to someone else\'s is misleading — genetics, age and device explain most of the difference. What matters is whether your HRV is trending up or down against your own baseline. [Normal HRV by age →](/articles/normal-hrv-by-age)' },
+      { id: 'rmssd-vs-sdnn', q: 'What is the difference between RMSSD and SDNN?', a: 'They are two ways to calculate HRV. RMSSD looks at differences between neighbouring beats and tracks vagal activity; Oura, Whoop, Garmin and Polar report it. SDNN is the overall spread of all intervals in a window; Apple Watch reports SDNN. The two are not interchangeable, so compare each only with its own norms. [HRV calculator with both modes →](/tools/hrv)' },
+      { id: 'hrv-vs-heart-rate', q: 'What is the difference between HRV and heart rate?', a: 'Heart rate counts how many beats per minute; HRV measures how uneven the spacing between those beats is. They usually move in opposite directions — when resting heart rate rises (stress, illness, alcohol), HRV tends to fall. Watching both together is more informative than either alone. [HRV & heart rate guides →](/articles/topic/hrv-heart-rate)' },
+      { id: 'breathing-and-hrv', q: 'Why does HRV change when I breathe in and out?', a: 'Your heart speeds up slightly on each inhale and slows on each exhale — a normal pattern called respiratory sinus arrhythmia. Slow breathing makes these swings larger, which is why HRV readings jump during a breathing session. Research on resonance breathing (Lehrer and colleagues) shows the swings are largest at around 5–7 breaths per minute for most adults. [Resonance breathing →](/tools/resonance-breathing)' },
+    ],
+  },
+  {
+    title: 'Normal ranges and numbers',
+    items: [
+      { id: 'what-is-a-good-hrv', q: 'What is a good HRV?', a: 'There is no single good HRV number. As an orientation, median overnight RMSSD is roughly 58 ms at 18–29 and falls to about 30 ms in your 60s, with healthy people spread widely around those medians. A "good" HRV is one that is stable or rising against your own baseline. [Normal HRV by age →](/articles/normal-hrv-by-age)' },
+      { id: 'healthy-hrv', q: 'What is a healthy HRV?', a: 'A healthy HRV is one that sits inside your own usual range and recovers after stress, travel or a hard workout. Population ranges are very wide — two healthy people of the same age can differ by 40 ms or more. Use age norms for orientation and your two-week trend for decisions. [See your own range →](/tools/baseline)' },
+      { id: 'hrv-range-by-age', q: 'What is the normal HRV range by age?', a: 'Typical overnight RMSSD (middle half of healthy adults) is about 42–78 ms at 18–29, 36–68 ms in your 30s, 30–56 ms in your 40s and narrower after that. Apple Watch SDNN has its own, different norms. Enter your age and number to see your percentile. [HRV calculator by age →](/tools/hrv)' },
+      { id: 'is-my-number-good', q: 'Is an HRV of 20, 30, 50 or 100 good?', a: 'It depends on your age, your device and your own baseline. 30 ms can be typical at 60 and on the low side at 25; 100 ms is high for most adults but normal for some athletes. A single number without context says little — check where it sits for your age, then watch your trend. [Check your number →](/tools/hrv)' },
+      { id: 'lower-than-friend', q: 'Why is my HRV lower than my friend\'s?', a: 'Because HRV varies enormously between people for reasons that are not about health: genetics, age, body size, fitness history and which device measures it. Comparing with a friend is like comparing shoe sizes. The useful comparison is you this week against you over the last few weeks. [Why every device shows a different HRV →](/articles/hrv-different-every-device)' },
+      { id: 'men-women-hrv', q: 'Do men and women have different HRV?', a: 'Yes, slightly. A 2016 meta-analysis (Koenig and Thayer) found women on average have higher vagal HRV measures but lower overall variability than men of the same age. The differences are small next to the spread between individuals, so sex matters less than age and your own baseline.' },
+      { id: 'hrv-and-age', q: 'Does HRV decrease with age?', a: 'Yes. HRV falls steadily through adulthood — the median roughly halves between your twenties and your sixties — and the decline is steepest in early and middle adulthood. Regular aerobic exercise and good sleep slow the fall but do not stop it, so always compare yourself with your own age group. [Normal HRV by age →](/articles/normal-hrv-by-age)' },
+    ],
+  },
+  {
+    title: 'What lowers HRV',
+    items: [
+      { id: 'why-is-my-hrv-low', q: 'Why is my HRV suddenly low?', a: 'The usual culprits are short or broken sleep, alcohol the night before, a hard training session, an oncoming illness, dehydration or a stressful day. One low reading is normal variation; a drop that lasts several days alongside a rising resting heart rate is worth attention. [What to do after a low HRV reading →](/articles/what-to-do-after-low-hrv-reading)' },
+      { id: 'alcohol-hrv', q: 'Does alcohol lower HRV, and for how long?', a: 'Yes, and in a dose-dependent way. In a large Firstbeat study (Pietilä 2018) even one or two drinks lowered overnight HRV, and heavier drinking cut it sharply; the effect is usually strongest the first night and fades over one to several days. [How much alcohol lowers HRV →](/articles/how-much-alcohol-lowers-hrv) · [Alcohol calculator →](/tools/alcohol)' },
+      { id: 'caffeine-hrv', q: 'Does caffeine affect HRV?', a: 'Modestly. Caffeine itself has a small, mixed effect on HRV, but late caffeine shortens and lightens sleep, and that often shows up as a lower overnight HRV. Timing matters more than the cup. [Caffeine, HRV and resting heart rate →](/articles/caffeine-hrv-resting-heart-rate) · [Caffeine calculator →](/tools/caffeine)' },
+      { id: 'nicotine-hrv', q: 'Does nicotine or vaping lower HRV?', a: 'Yes. Nicotine activates the sympathetic nervous system, raising heart rate and lowering HRV within minutes, and regular smokers and vapers tend to have lower HRV than non-users. HRV tends to improve after quitting. [Nicotine, vaping and HRV →](/articles/nicotine-vaping-hrv-heart-rate)' },
+      { id: 'stress-hrv', q: 'Does stress lower HRV?', a: 'Yes. Psychological stress shifts the nervous system toward "fight or flight", which lowers HRV — you can often see it on the night after a hard day. Chronic stress keeps it lower for longer. Slow breathing is one of the few ways to raise HRV in the moment. [Anxiety, breathing and HRV →](/articles/anxiety-panic-breathing-hrv)' },
+      { id: 'overtraining-hrv', q: 'Can overtraining show up in HRV?', a: 'Often, yes. A run of lower-than-usual HRV together with a higher resting heart rate is a common sign that training load is outpacing recovery. Many coaches use the 7-day HRV average against the athlete\'s own baseline to adjust intensity. [Overtraining, HRV and resting heart rate →](/articles/overtraining-hrv-resting-heart-rate)' },
+      { id: 'illness-hrv', q: 'Does being sick lower HRV?', a: 'Usually. Infection and fever push heart rate up and HRV down, and wearable studies — including the Mount Sinai Warrior Watch study of Apple Watch users (Hirten 2021) — saw HRV changes around the time of COVID-19 infection. A drop is not a diagnosis, but it is a reason to rest.' },
+      { id: 'sleep-hrv', q: 'Why is my HRV low after a bad night\'s sleep?', a: 'Most of the parasympathetic recovery that HRV reflects happens during sleep, especially deep sleep. Short, late or broken sleep leaves less of it, so the overnight average drops. A regular bedtime is one of the most reliable ways to steady HRV. [Sleep cycle calculator →](/tools/sleep-cycle)' },
+      { id: 'dehydration-hrv', q: 'Can dehydration lower HRV?', a: 'It can. Low fluid volume makes the heart work harder to keep blood pressure up, which raises heart rate and tends to lower HRV. The effect is usually smaller than sleep or alcohol, but it can add up after a hot day, a long flight or heavy exercise.' },
+    ],
+  },
+  {
+    title: 'How to raise HRV',
+    items: [
+      { id: 'raise-hrv', q: 'How can I raise my HRV naturally?', a: 'The levers with the best evidence are regular aerobic exercise, consistent sleep timing, less alcohol, managing stress and daily slow breathing. None works overnight; together they shift your baseline over weeks. [How to raise HRV naturally →](/articles/how-to-raise-hrv-naturally)' },
+      { id: 'how-fast-hrv-improves', q: 'How fast can HRV improve?', a: 'It depends on the lever. Slow breathing raises HRV within minutes during the session; cutting alcohol shows up within a night or two; better sleep in one to three weeks; aerobic training over one to two months. Judge change on a weekly average, not a single morning.' },
+      { id: 'breathing-raises-hrv', q: 'Does breathing increase HRV?', a: 'Yes — slow breathing is the fastest way to raise HRV. Breathing at around six breaths a minute makes the heart\'s natural speed-up and slow-down much larger, and a 2022 meta-analysis (Laborde and colleagues) confirmed that voluntary slow breathing raises vagal HRV measures. [Breathing timer →](/tools/breathing)' },
+      { id: 'best-breathing-for-hrv', q: 'Which breathing technique is best for HRV?', a: 'Slow, even breathing at your resonance pace — typically 5–7 breaths per minute — produces the largest HRV swings. Box breathing and 4-7-8 also slow you down, and the physiological sigh is good for a quick reset. Consistency beats the choice of technique. [Resonance breathing →](/tools/resonance-breathing) · [4-7-8 breathing →](/articles/4-7-8-breathing)' },
+      { id: 'meditation-hrv', q: 'Does meditation increase HRV?', a: 'It can, especially practices that slow the breath. Studies show mixed results for meditation alone, while practices built around slow breathing raise HRV more reliably. Measuring your own response is the honest way to find out what works for you. [Meditation with measurable progress →](/articles/meditation-with-measurable-progress)' },
+      { id: 'cold-wim-hof-hrv', q: 'Do cold showers or Wim Hof breathing raise HRV?', a: 'Cold exposure activates the vagus nerve briefly and can nudge HRV up afterwards, but the long-term evidence is thin. Wim Hof breathing is fast hyperventilation followed by breath holds — a different tool from slow breathing, and not the first choice for raising HRV. [Honest limits of breathing and cold →](/articles/hrv-breathing-cold-honest-limits) · [Wim Hof timer →](/tools/wim-hof)' },
+      { id: 'biofeedback-hrv', q: 'Can you train HRV with biofeedback?', a: 'Yes. HRV biofeedback shows your heart rhythm live while you breathe slowly, so you can find the pace that produces the biggest swings. Clinical studies use it for stress and anxiety, and it is how apps like ONDA guide breathing. [Best HRV biofeedback apps →](/compare/best-hrv-biofeedback-apps)' },
+    ],
+  },
+  {
+    title: 'Measuring HRV and devices',
+    items: [
+      { id: 'when-to-measure', q: 'When is the best time to measure HRV?', a: 'Either overnight (what rings and straps average) or right after waking, lying still, before coffee or your phone. The key is doing it the same way every time — a morning reading and an afternoon reading are not comparable. [How to measure HRV consistently →](/articles/how-to-measure-hrv-consistently)' },
+      { id: 'how-to-measure', q: 'How do I measure HRV?', a: 'A chest strap gives the most accurate beat-to-beat data; watches and rings are good enough for trends if you wear them consistently. You can also get a short estimate from a phone camera with a fingertip over the lens. Pick one method and stick with it. [Camera heart rate tool →](/tools/camera-heart-rate)' },
+      { id: 'devices-differ', q: 'Why does my HRV differ between Apple Watch, Oura and Garmin?', a: 'They measure at different times, over different windows, and with different formulas — Apple Watch reports SDNN, most others report RMSSD. A 45 on one is not a 45 on another. Compare each device only with itself. [Why HRV is different on every device →](/articles/hrv-different-every-device)' },
+      { id: 'apple-watch-accuracy', q: 'How accurate is Apple Watch HRV?', a: 'At rest it is accurate enough for tracking trends; during movement it is much less reliable. Apple Watch records SDNN from its optical sensor during quiet moments and Breathe sessions, so its numbers are not comparable with ring or strap RMSSD. [Apple Watch recovery HRV vs overall HRV →](/articles/apple-watch-recovery-hrv-vs-overall-hrv)' },
+      { id: 'phone-camera-hrv', q: 'Can I measure HRV with my phone camera?', a: 'You can get a reasonable heart rate and a rough short-term HRV estimate by resting a fingertip over the camera and flash. It is sensitive to movement and pressure, so treat it as a spot check rather than a replacement for a strap. [Train HRV with an iPhone camera →](/articles/train-hrv-iphone-camera-no-wearable)' },
+      { id: 'best-hrv-tracker', q: 'What is the best HRV tracker?', a: 'For accuracy, a chest strap such as the Polar H10; for effortless overnight trends, a ring or a watch you already wear. The best tracker is the one you will wear every night. [Best HRV trackers of 2026 →](/reviews/compare/best-hrv-trackers-2026)' },
+      { id: 'reading-or-trend', q: 'Should I look at a single HRV reading or the trend?', a: 'The trend. Day-to-day HRV moves a lot for ordinary reasons, so one morning tells you little. A 7-day average against your 2–4 week range is far more meaningful. [See your two-week range →](/tools/baseline)' },
+      { id: 'baseline-days', q: 'How many days of data make an HRV baseline?', a: 'About two weeks of consistent readings gives a usable range; a month is better. Before that, the numbers mostly reflect noise and whatever happened that week. [Your baseline knows first →](/articles/your-baseline-knows-first)' },
+    ],
+  },
+  {
+    title: 'HRV and your health',
+    items: [
+      { id: 'low-hrv-health', q: 'Can low HRV be a sign of a health problem?', a: 'In research, lower HRV is associated with higher cardiovascular risk (for example in the Framingham cohort, Tsuji 1994) and with conditions such as diabetes. But a low number on a wearable is not a diagnosis — age, device and a bad night explain most low readings.' },
+      { id: 'see-a-doctor', q: 'When should I talk to a doctor about my HRV?', a: 'If a sustained change in HRV or resting heart rate comes with symptoms — chest pain, fainting, palpitations, unusual shortness of breath — see a doctor promptly. Without symptoms, bring your trend to a routine appointment. [How to talk to your doctor about wearable data →](/articles/talk-to-your-doctor-about-wearable-data)' },
+      { id: 'hrv-anxiety', q: 'Is HRV linked to anxiety?', a: 'Yes. A 2014 meta-analysis (Chalmers and colleagues) found people with anxiety disorders have lower HRV on average. Slow breathing that raises HRV is also one of the simplest tools for calming an anxious moment. [Anxiety, panic and breathing →](/articles/anxiety-panic-breathing-hrv)' },
+      { id: 'hrv-readiness', q: 'Does HRV predict recovery or readiness?', a: 'It is one useful signal. Studies that guided training by morning HRV (for example Kiviniemi 2007) found similar or better fitness gains than fixed plans. Combine it with resting heart rate, sleep and how you feel rather than letting one number decide. [Heart rate recovery as a fitness marker →](/articles/heart-rate-recovery-fitness-marker)' },
+    ],
+  },
+]
+
+export const HRV_QUESTIONS_FLAT = HRV_QUESTION_GROUPS.flatMap((g) => g.items)
+
+const stripMd = (s: string) =>
+  s.replace(/\s*(?:·\s*)?\[[^\]]*→\]\([^)]*\)/g, '').replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').trim()
+
+export const HRV_QUESTIONS_SCHEMA = HRV_QUESTIONS_FLAT.map((x) => ({ question: x.q, answer: stripMd(x.a) }))
