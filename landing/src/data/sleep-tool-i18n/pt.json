@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Calculadora de sono — Que horas devo dormir? | ONDA Life",
+    "description": "Calculadora de sono grátis: informe a hora de acordar e veja os melhores horários para dormir, em ciclos de 90 minutos, para acordar menos cansado.",
+    "appName": "Calculadora de ciclos do sono",
+    "appDescription": "Calculadora de sono grátis que sugere horários para dormir ou acordar alinhados a ciclos do sono de ~90 minutos, incluindo o tempo para pegar no sono."
+  },
+  "breadcrumb": {
+    "home": "Início",
+    "tools": "Ferramentas",
+    "current": "Calculadora de sono"
+  },
+  "h1": "Calculadora de sono: que horas devo dormir?",
+  "capsule": "Para acordar menos grogue, organize o sono em ciclos completos de cerca de 90 minutos e conte uns 15 minutos para pegar no sono. Para acordar às 7:00, isso significa deitar por volta das 21:45 ou 23:15 (6 ou 5 ciclos). Informe a hora de acordar ou a hora de dormir — ou toque em \"Vou dormir agora\" — para ver seus melhores horários.",
+  "imageAlt": "Calculadora de sono — melhores horários para dormir e acordar com base em ciclos do sono de 90 minutos, ferramenta grátis da ONDA Life",
+  "ui": {
+    "modeWake": "Sei a que horas preciso acordar",
+    "modeBed": "Sei a que horas vou dormir",
+    "wake": "Hora de acordar",
+    "bed": "Hora de dormir",
+    "now": "Vou dormir agora",
+    "resultWake": "Vá para a cama em um destes horários",
+    "resultBed": "Programe o despertador para um destes horários",
+    "best": "(melhor primeiro)",
+    "cycles": "{{n}} ciclos · {{h}} h",
+    "note": "Inclui cerca de 15 minutos para pegar no sono. 5–6 ciclos (7,5–9 h) são ideais para a maioria dos adultos.",
+    "invalid": "Informe um horário válido."
+  },
+  "disclaimer": "O ciclo de 90 minutos é uma média — os ciclos reais duram cerca de 70–120 minutos e o primeiro costuma ser mais curto —, então use estes horários como guia, não como garantia. O total de sono e uma rotina regular importam mais do que acertar um ciclo exato. Conteúdo apenas educativo, não é aconselhamento médico.",
+  "sections": [
+    {
+      "h2": "Que horas devo dormir?",
+      "body": "Conte para trás a partir da hora de acordar em ciclos de 90 minutos e some cerca de 15 minutos para pegar no sono. Para a maioria dos adultos, a meta é 5 ou 6 ciclos (7,5 ou 9 horas de sono). Exemplos: para acordar às 6:00, deite por volta das 20:45 ou 22:15; para acordar às 6:30, por volta das 21:15 ou 22:45; para acordar às 7:00, por volta das 21:45 ou 23:15; para acordar às 7:30, por volta das 22:15 ou 23:45. Se você costuma levar mais de 15 minutos para dormir, deite esse tempo mais cedo. Um horário regular para dormir — inclusive nos fins de semana — importa tanto quanto o minuto exato. Saiba mais: [quantas horas de sono você precisa](/articles/how-much-sleep-do-you-need)."
+    },
+    {
+      "h2": "Como funcionam os ciclos do sono?",
+      "body": "Durante a noite você passa por ciclos repetidos de sono leve, sono profundo e sono REM (dos sonhos). Cada ciclo dura em média cerca de 90 minutos, e a maioria das pessoas passa por quatro a seis por noite. O sono profundo predomina na primeira metade da noite, e o REM na segunda. Ser acordado no sono profundo causa aquela sensação pesada e confusa chamada inércia do sono; acordar perto do fim de um ciclo, em sono mais leve, costuma ser mais fácil. Essa é a ideia por trás desta calculadora — mas os ciclos variam de cerca de 70 a 120 minutos, então ela é um guia útil, não um relógio exato."
+    },
+    {
+      "h2": "Quantas horas dormir por idade?",
+      "body": "Segundo a National Sleep Foundation, adultos de 18–64 anos precisam de 7–9 horas, adultos a partir de 65 anos de 7–8 horas, adolescentes de 14–17 anos de 8–10 horas e crianças de 6–13 anos de 9–11 horas. Em ciclos do sono, isso equivale a cerca de 5–6 ciclos para a maioria dos adultos. Dormir regularmente menos de 7 horas acumula débito de sono — acompanhe com a [calculadora de débito de sono](/tools/sleep-debt)."
+    },
+    {
+      "h2": "Por que acordo cansado mesmo dormindo 8 horas?",
+      "body": "Motivos comuns: o despertador tira você do sono profundo no meio de um ciclo; seu horário de dormir muda muito entre dias úteis e fins de semana (jet lag social); álcool ou uma refeição pesada tarde fragmentam a segunda metade da noite; ainda há cafeína no organismo; ou o quarto está quente, claro ou barulhento demais. Se você ronca alto, para de respirar durante a noite ou sente muito sono de dia mesmo dormindo o suficiente, converse com um médico — podem ser sinais de apneia do sono. Confira seu [horário limite para cafeína](/tools/caffeine) e seu [cronotipo](/tools/chronotype)."
+    },
+    {
+      "h2": "Dicas para dormir mais rápido",
+      "body": "Mantenha o mesmo horário de acordar todos os dias, pegue luz natural pela manhã, pare com a cafeína cerca de 8 horas antes de dormir e deixe o quarto fresco, escuro e silencioso. Na última hora, diminua as luzes e deixe o celular de lado. Se a mente estiver acelerada, respirar devagar com uma expiração longa — como a respiração 4-7-8 — ajuda muita gente a relaxar: experimente no [Timer de respiração: quadrada, 4-7-8 e coerente](/tools/breathing)."
+    }
+  ],
+  "faqTitle": "Calculadora de sono — perguntas frequentes",
+  "faq": [
+    {
+      "q": "Que horas devo dormir se acordo às 6?",
+      "a": "Por volta das 20:45 (6 ciclos, 9 h de sono) ou das 22:15 (5 ciclos, 7,5 h), já incluindo cerca de 15 minutos para pegar no sono."
+    },
+    {
+      "q": "Que horas devo dormir se acordo às 7?",
+      "a": "Por volta das 21:45 (6 ciclos, 9 h) ou das 23:15 (5 ciclos, 7,5 h), já incluindo cerca de 15 minutos para pegar no sono."
+    },
+    {
+      "q": "Quanto tempo dura um ciclo do sono?",
+      "a": "Cerca de 90 minutos em média, mas varia de aproximadamente 70 a 120 minutos, e o primeiro ciclo da noite costuma ser mais curto."
+    },
+    {
+      "q": "De quantos ciclos do sono eu preciso?",
+      "a": "A maioria dos adultos se sai melhor com 5–6 ciclos por noite, ou 7,5–9 horas. Quatro ciclos (6 horas) é uma noite curta que acumula débito de sono se virar hábito."
+    },
+    {
+      "q": "É melhor dormir 6 ou 7 horas?",
+      "a": "7 horas ou mais é o mínimo recomendado para adultos. Se você só consegue dormir cerca de 6, acordar no fim do quarto ciclo (6 horas mais o tempo para pegar no sono) pode ser mais fácil do que acordar no meio de um ciclo."
+    },
+    {
+      "q": "Por que acordo grogue?",
+      "a": "Geralmente porque o despertador acordou você no sono profundo (inércia do sono), ou por sono curto ou irregular, álcool ou cafeína tarde. Acordar no fim de um ciclo e manter uma rotina regular ajudam."
+    },
+    {
+      "q": "O ciclo do sono de 90 minutos é exato?",
+      "a": "Não, é uma média. Use os horários sugeridos como guia e ajuste em 10–15 minutos conforme você se sente ao acordar."
+    }
+  ],
+  "sourcesTitle": "Fontes e metodologia",
+  "methodology": "O sono alterna entre NREM e REM em ciclos de cerca de 90 minutos em média (Feinberg & Floyd 1979; IOM 2006). Acordar perto do fim de um ciclo, em sono mais leve, tende a deixar menos grogue do que ser acordado no sono profundo. A partir da hora de acordar, subtraímos ciclos completos de 90 minutos mais cerca de 15 minutos para pegar no sono; a partir da hora de dormir, somamos. Para adultos, 5–6 ciclos (cerca de 7,5–9 horas) estão de acordo com a recomendação da National Sleep Foundation. Os ciclos reais variam de cerca de 70 a 120 minutos e o primeiro costuma ser mais curto, então use estes valores como guia. Conteúdo apenas educativo, não é aconselhamento médico.",
+  "sourcesContributes": [
+    "Quantifica os períodos dos ciclos NREM–REM ao longo da noite, sustentando a média de ~90 minutos usada aqui.",
+    "Descrição de referência da alternância NREM–REM em intervalos de aproximadamente 90 minutos durante a noite.",
+    "Duração de sono recomendada por idade — a base da orientação de 5–6 ciclos (7,5–9 h) para adultos."
+  ],
+  "related": {
+    "label": "Relacionados",
+    "debt": "Calculadora de débito de sono",
+    "chronotype": "Teste de cronotipo",
+    "caffeine": "Horário limite para cafeína",
+    "breathing": "Timer de respiração para dormir"
+  }
+}

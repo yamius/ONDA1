@@ -258,6 +258,17 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/tools/one-rep-max"     element={<OneRepMaxCalculatorPage />} />
           <Route path="/tools/body-fat"        element={<BodyFatCalculatorPage />} />
           <Route path="/tools/sleep-cycle"     element={<SleepCycleCalculatorPage />} />
+          <Route path="/es/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/ru/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/uk/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/zh/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/de/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/fr/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/it/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/nl/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/ja/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/pl/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
+          <Route path="/pt/tools/sleep-cycle" element={<SleepCycleCalculatorPage />} />
           <Route path="/tools/cognitive-shuffle" element={<CognitiveShufflePage />} />
           <Route path="/tools/breathing"       element={<BreathingPacerPage />} />
           <Route path="/es/tools/breathing" element={<BreathingPacerPage />} />

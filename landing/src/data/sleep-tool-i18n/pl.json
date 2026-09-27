@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Kalkulator snu — o której iść spać? | ONDA Life",
+    "description": "Darmowy kalkulator snu: podaj godzinę pobudki, a poznasz najlepszą porę zaśnięcia (lub odwrotnie) dopasowaną do 90-minutowych cykli snu.",
+    "appName": "Kalkulator cykli snu",
+    "appDescription": "Darmowy kalkulator snu, który podpowiada porę pójścia spać lub pobudki dopasowaną do ok. 90-minutowych cykli snu, z uwzględnieniem czasu zasypiania."
+  },
+  "breadcrumb": {
+    "home": "Strona główna",
+    "tools": "Narzędzia",
+    "current": "Kalkulator snu"
+  },
+  "h1": "Kalkulator snu: o której iść spać?",
+  "capsule": "Aby budzić się mniej zaspanym, planuj sen w pełnych cyklach trwających około 90 minut i doliczaj mniej więcej 15 minut na zaśnięcie. Przy pobudce o 7:00 oznacza to pójście spać około 21:45 lub 23:15 (6 lub 5 cykli). Wpisz godzinę pobudki albo godzinę pójścia spać — lub stuknij „Idę spać teraz” — i poznaj swoje najlepsze godziny.",
+  "imageAlt": "Kalkulator snu — najlepsze godziny zasypiania i pobudki według 90-minutowych cykli snu, darmowe narzędzie ONDA Life",
+  "ui": {
+    "modeWake": "Wiem, o której muszę wstać",
+    "modeBed": "Wiem, o której pójdę spać",
+    "wake": "Godzina pobudki",
+    "bed": "Godzina pójścia spać",
+    "now": "Idę spać teraz",
+    "resultWake": "Połóż się spać o jednej z tych godzin",
+    "resultBed": "Ustaw budzik na jedną z tych godzin",
+    "best": "(najlepsze na początku)",
+    "cycles": "{{n}} cykli · {{h}} h",
+    "note": "Uwzględnia około 15 minut na zaśnięcie. Większości dorosłych odpowiada 5–6 cykli (7,5–9 h).",
+    "invalid": "Wpisz prawidłową godzinę."
+  },
+  "disclaimer": "90-minutowy cykl to wartość średnia — rzeczywiste cykle trwają około 70–120 minut, a pierwszy bywa krótszy — więc traktuj te godziny jako wskazówkę, a nie gwarancję. Łączna ilość snu i regularny rytm są ważniejsze niż trafienie w dokładny koniec cyklu. Treść edukacyjna, nie stanowi porady medycznej.",
+  "sections": [
+    {
+      "h2": "O której iść spać?",
+      "body": "Odlicz od godziny pobudki pełne 90-minutowe cykle i dodaj około 15 minut na zaśnięcie. Dla większości dorosłych celem jest 5 lub 6 cykli (7,5 lub 9 godzin snu). Przykłady: przy pobudce o 6:00 idź spać około 20:45 lub 22:15; o 6:30 — około 21:15 lub 22:45; o 7:00 — około 21:45 lub 23:15; o 7:30 — około 22:15 lub 23:45. Jeśli zasypianie zajmuje ci zwykle dłużej niż 15 minut, kładź się odpowiednio wcześniej. Stała pora snu — także w weekendy — jest równie ważna jak dokładna minuta. Więcej: [ile snu potrzebujesz](/articles/how-much-sleep-do-you-need)."
+    },
+    {
+      "h2": "Jak działają cykle snu?",
+      "body": "W nocy przechodzisz przez powtarzające się cykle snu płytkiego, głębokiego i REM (snu z marzeniami sennymi). Każdy cykl trwa średnio około 90 minut, a większość osób przechodzi od czterech do sześciu cykli na noc. W pierwszej połowie nocy dominuje sen głęboki, w drugiej — REM. Wybudzenie z głębokiego snu wywołuje uczucie ciężkości i dezorientacji, zwane inercją senną; pobudka pod koniec cyklu, w płytszym śnie, jest zwykle łatwiejsza. Na tym opiera się ten kalkulator — ale cykle trwają od około 70 do 120 minut, więc to pomocna wskazówka, a nie dokładny zegar."
+    },
+    {
+      "h2": "Ile godzin snu potrzebujesz w zależności od wieku?",
+      "body": "Według National Sleep Foundation dorośli w wieku 18–64 lat potrzebują 7–9 godzin snu, osoby 65+ 7–8 godzin, nastolatki 14–17 lat 8–10 godzin, a dzieci 6–13 lat 9–11 godzin. W cyklach snu to dla większości dorosłych około 5–6 cykli. Regularne spanie krócej niż 7 godzin prowadzi do długu snu — sprawdź go w [kalkulatorze długu snu](/tools/sleep-debt)."
+    },
+    {
+      "h2": "Dlaczego budzę się zmęczony nawet po 8 godzinach snu?",
+      "body": "Najczęstsze powody: budzik wyrywa cię z głębokiego snu w środku cyklu; pora snu mocno różni się między dniami roboczymi a weekendem (społeczny jet lag); alkohol lub późny, ciężki posiłek rozbijają drugą połowę nocy; kofeina wciąż działa; albo w sypialni jest za ciepło, za jasno lub za głośno. Jeśli głośno chrapiesz, masz przerwy w oddychaniu w nocy lub w ciągu dnia jesteś bardzo senny mimo wystarczającej ilości snu, porozmawiaj z lekarzem — to mogą być objawy obturacyjnego bezdechu sennego. Sprawdź też [godzinę ostatniej kawy](/tools/caffeine) i swój [chronotyp](/tools/chronotype)."
+    },
+    {
+      "h2": "Jak szybciej zasnąć?",
+      "body": "Wstawaj codziennie o tej samej porze, łap rano dzienne światło, odstaw kofeinę około 8 godzin przed snem i dbaj, by sypialnia była chłodna, ciemna i cicha. W ostatniej godzinie przed snem przyciemnij światło i odłóż telefon. Jeśli myśli pędzą, wielu osobom pomaga powolny oddech z długim wydechem — na przykład oddychanie 4-7-8: wypróbuj je w narzędziu [Timer oddechowy: oddychanie pudełkowe, 4-7-8 i koherentne](/tools/breathing)."
+    }
+  ],
+  "faqTitle": "Kalkulator snu — najczęstsze pytania",
+  "faq": [
+    {
+      "q": "O której iść spać, jeśli wstaję o 6:00?",
+      "a": "Około 20:45 (6 cykli, 9 h snu) lub 22:15 (5 cykli, 7,5 h), wliczając około 15 minut na zaśnięcie."
+    },
+    {
+      "q": "O której iść spać, jeśli wstaję o 7:00?",
+      "a": "Około 21:45 (6 cykli, 9 h) lub 23:15 (5 cykli, 7,5 h), wliczając około 15 minut na zaśnięcie."
+    },
+    {
+      "q": "Ile trwa cykl snu?",
+      "a": "Średnio około 90 minut, ale waha się od około 70 do 120 minut, a pierwszy cykl w nocy jest często krótszy."
+    },
+    {
+      "q": "Ile cykli snu potrzebuję?",
+      "a": "Większość dorosłych czuje się najlepiej po 5–6 cyklach, czyli 7,5–9 godzinach snu. Cztery cykle (6 godzin) to krótka noc, która — jeśli stanie się nawykiem — prowadzi do długu snu."
+    },
+    {
+      "q": "Lepiej spać 6 czy 7 godzin?",
+      "a": "7 godzin lub więcej to zalecane minimum dla dorosłych. Jeśli możesz spać tylko około 6 godzin, pobudka pod koniec czwartego cyklu (6 godzin plus czas na zaśnięcie) może być łatwiejsza niż w środku cyklu."
+    },
+    {
+      "q": "Dlaczego po przebudzeniu czuję się otępiały?",
+      "a": "Zwykle dlatego, że budzik wybudził cię z głębokiego snu (inercja senna), albo z powodu zbyt krótkiego lub nieregularnego snu, alkoholu czy późnej kofeiny. Pomaga pobudka pod koniec cyklu i regularny rytm dnia."
+    },
+    {
+      "q": "Czy 90-minutowy cykl snu jest dokładny?",
+      "a": "Nie, to wartość średnia. Traktuj proponowane godziny jako wskazówkę i koryguj je o 10–15 minut w zależności od tego, jak się czujesz po przebudzeniu."
+    }
+  ],
+  "sourcesTitle": "Źródła i metodologia",
+  "methodology": "Sen przebiega naprzemiennie w fazach NREM i REM, w cyklach trwających średnio około 90 minut (Feinberg & Floyd 1979; IOM 2006). Pobudka pod koniec cyklu, w płytszym śnie, zwykle daje mniejsze uczucie otępienia niż wybudzenie z głębokiego snu. Od godziny pobudki odejmujemy pełne 90-minutowe cykle plus około 15 minut na zaśnięcie; do godziny pójścia spać je dodajemy. U dorosłych 5–6 cykli (około 7,5–9 godzin) odpowiada zaleceniom National Sleep Foundation. Rzeczywiste cykle trwają około 70–120 minut, a pierwszy bywa krótszy, więc traktuj wyniki jako wskazówkę. Treść edukacyjna, nie stanowi porady medycznej.",
+  "sourcesContributes": [
+    "Określa długość cykli NREM–REM w ciągu nocy, potwierdzając stosowaną tu średnią ok. 90 minut.",
+    "Referencyjny opis cykliczności NREM–REM w odstępach około 90 minut w ciągu nocy.",
+    "Zalecana długość snu według wieku — podstawa wskazówki 5–6 cykli (7,5–9 h) dla dorosłych."
+  ],
+  "related": {
+    "label": "Powiązane",
+    "debt": "Kalkulator długu snu",
+    "chronotype": "Test chronotypu",
+    "caffeine": "Godzina ostatniej kawy",
+    "breathing": "Timer oddechowy na sen"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Sleep Calculator — What Time Should I Go to Bed? | ONDA Life",
+    "description": "Free sleep calculator: enter your wake-up time to get the best bedtimes, or your bedtime to get wake-up times, timed to 90-minute sleep cycles so you wake less groggy.",
+    "appName": "Sleep Cycle Calculator",
+    "appDescription": "Free sleep calculator that suggests bedtimes or wake-up times aligned to ~90-minute sleep cycles, including time to fall asleep."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Sleep Calculator"
+  },
+  "h1": "Sleep Calculator: What Time Should I Go to Bed?",
+  "capsule": "To wake up feeling less groggy, time your sleep in whole cycles of about 90 minutes and allow roughly 15 minutes to fall asleep. For a 7:00 AM wake-up, that means going to bed at about 9:45 PM or 11:15 PM (6 or 5 cycles). Enter your wake-up time or your bedtime — or tap \"Going to bed now\" — to get your best times.",
+  "imageAlt": "Sleep calculator — best bedtimes and wake-up times based on 90-minute sleep cycles, free tool from ONDA Life",
+  "ui": {
+    "modeWake": "I know when I need to wake up",
+    "modeBed": "I know when I'll go to bed",
+    "wake": "Wake-up time",
+    "bed": "Bedtime",
+    "now": "Going to bed now",
+    "resultWake": "Go to bed at one of these times",
+    "resultBed": "Set your alarm for one of these times",
+    "best": "(best first)",
+    "cycles": "{{n}} cycles · {{h}} h",
+    "note": "Includes about 15 minutes to fall asleep. 5–6 cycles (7.5–9 h) suit most adults.",
+    "invalid": "Enter a valid time."
+  },
+  "disclaimer": "The 90-minute cycle is an average — real cycles run about 70–120 minutes and the first is often shorter — so treat these times as a guide, not a guarantee. Total sleep and a regular schedule matter more than hitting an exact cycle. Educational only, not medical advice.",
+  "sections": [
+    {
+      "h2": "What time should I go to bed?",
+      "body": "Count back from your wake-up time in 90-minute cycles and add about 15 minutes to fall asleep. For most adults, 5 or 6 cycles (7.5 or 9 hours of sleep) is the target. Examples: to wake at 6:00 AM, go to bed around 8:45 PM or 10:15 PM; to wake at 6:30, around 9:15 or 10:45 PM; to wake at 7:00, around 9:45 or 11:15 PM; to wake at 7:30, around 10:15 or 11:45 PM. If you often need longer than 15 minutes to fall asleep, go to bed that much earlier. A regular bedtime — even on weekends — matters as much as the exact minute. More: [how much sleep do you need](/articles/how-much-sleep-do-you-need)."
+    },
+    {
+      "h2": "How do sleep cycles work?",
+      "body": "During the night you move through repeating cycles of light sleep, deep sleep and REM (dream) sleep. Each cycle lasts about 90 minutes on average, and most people go through four to six a night. Deep sleep dominates the first half of the night, REM the second. Being woken from deep sleep causes the heavy, confused feeling called sleep inertia; waking near the end of a cycle, in lighter sleep, usually feels easier. That's the idea behind this calculator — but cycles vary between about 70 and 120 minutes, so it's a helpful guide rather than an exact clock."
+    },
+    {
+      "h2": "How much sleep do I need by age?",
+      "body": "According to the National Sleep Foundation, adults 18–64 need 7–9 hours, adults 65 and over 7–8 hours, teenagers 14–17 need 8–10 hours and children 6–13 need 9–11 hours. In sleep cycles, that's about 5–6 cycles for most adults. Regularly sleeping less than 7 hours builds up sleep debt — track it with the [sleep debt calculator](/tools/sleep-debt)."
+    },
+    {
+      "h2": "Why do I wake up tired even after 8 hours?",
+      "body": "Common reasons: the alarm pulls you out of deep sleep mid-cycle; your bedtime shifts a lot between weekdays and weekends (social jet lag); alcohol or a late heavy meal fragments the second half of the night; caffeine is still in your system; or the room is too warm, bright or noisy. If you snore loudly, stop breathing at night or feel very sleepy during the day despite enough sleep, talk to a doctor — these can be signs of sleep apnoea. Check your [caffeine cut-off time](/tools/caffeine) and your [chronotype](/tools/chronotype)."
+    },
+    {
+      "h2": "Tips to fall asleep faster",
+      "body": "Keep the same wake-up time every day, get daylight in the morning, stop caffeine about 8 hours before bed, and keep the bedroom cool, dark and quiet. In the last hour, dim the lights and put the phone away. If your mind races, slow breathing with a long exhale — such as 4-7-8 breathing — helps many people wind down: try it in the [breathing timer](/tools/breathing)."
+    }
+  ],
+  "faqTitle": "Sleep calculator — common questions",
+  "faq": [
+    {
+      "q": "What time should I go to bed if I wake up at 6?",
+      "a": "Around 8:45 PM (6 cycles, 9 h of sleep) or 10:15 PM (5 cycles, 7.5 h), including about 15 minutes to fall asleep."
+    },
+    {
+      "q": "What time should I go to bed if I wake up at 7?",
+      "a": "Around 9:45 PM (6 cycles, 9 h) or 11:15 PM (5 cycles, 7.5 h), including about 15 minutes to fall asleep."
+    },
+    {
+      "q": "How long is a sleep cycle?",
+      "a": "About 90 minutes on average, but it varies between about 70 and 120 minutes, and the first cycle of the night is often shorter."
+    },
+    {
+      "q": "How many sleep cycles do I need?",
+      "a": "Most adults do best with 5–6 cycles a night, or 7.5–9 hours. Four cycles (6 hours) is a short night that builds sleep debt if it becomes a habit."
+    },
+    {
+      "q": "Is it better to sleep 6 or 7 hours?",
+      "a": "7 hours or more is the recommended minimum for adults. If you can only get about 6, waking at the end of the fourth cycle (6 hours plus time to fall asleep) may feel easier than waking mid-cycle."
+    },
+    {
+      "q": "Why do I feel groggy when I wake up?",
+      "a": "Usually because the alarm woke you from deep sleep (sleep inertia), or because of short or irregular sleep, alcohol or late caffeine. Waking at the end of a cycle and keeping a regular schedule help."
+    },
+    {
+      "q": "Is the 90-minute sleep cycle exact?",
+      "a": "No, it's an average. Use the suggested times as a guide and adjust by 10–15 minutes based on how you feel when you wake up."
+    }
+  ],
+  "sourcesTitle": "Sources & methodology",
+  "methodology": "Sleep alternates between NREM and REM in cycles averaging about 90 minutes (Feinberg & Floyd 1979; IOM 2006). Waking near the end of a cycle, in lighter sleep, tends to feel less groggy than being woken from deep sleep. From your wake-up time we subtract whole 90-minute cycles plus about 15 minutes to fall asleep; from your bedtime we add them. For adults, 5–6 cycles (about 7.5–9 hours) aligns with the National Sleep Foundation recommendation. Real cycles range about 70–120 minutes and the first is often shorter, so treat these as guides. Educational only, not medical advice.",
+  "sourcesContributes": [
+    "Quantifies NREM–REM cycle periods across the night, supporting the ~90-minute average used here.",
+    "Reference description of NREM–REM cycling at roughly 90-minute intervals through the night.",
+    "Recommended sleep duration by age — the basis for the 5–6 cycles (7.5–9 h) guidance for adults."
+  ],
+  "related": {
+    "label": "Related",
+    "debt": "Sleep debt calculator",
+    "chronotype": "Chronotype quiz",
+    "caffeine": "Caffeine cut-off time",
+    "breathing": "Breathing timer for sleep"
+  }
+}

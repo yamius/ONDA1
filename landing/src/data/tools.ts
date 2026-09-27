@@ -137,7 +137,7 @@ export const TOOLS: ToolEntry[] = [
   },
   {
     slug: 'sleep-cycle',
-    name: 'Sleep Cycle Calculator',
+    name: 'Sleep Calculator — What Time to Go to Bed',
     blurb: 'Find the best bedtime or wake time by aligning your alarm with ~90-minute sleep cycles, so you wake in lighter sleep and less groggy.',
     live: true,
     category: 'SLEEP',

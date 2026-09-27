@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Slaapcalculator — Hoe laat moet ik gaan slapen? | ONDA Life",
+    "description": "Gratis slaapcalculator: vul je wektijd in voor de beste bedtijden, of je bedtijd voor wektijden, afgestemd op slaapcycli van 90 minuten. Minder suf wakker.",
+    "appName": "Slaapcyclus-calculator",
+    "appDescription": "Gratis slaapcalculator die bedtijden of wektijden voorstelt op basis van slaapcycli van ~90 minuten, inclusief de tijd om in slaap te vallen."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Tools",
+    "current": "Slaapcalculator"
+  },
+  "h1": "Slaapcalculator: hoe laat moet ik gaan slapen?",
+  "capsule": "Wil je minder suf wakker worden? Plan je slaap in hele cycli van ongeveer 90 minuten en reken zo'n 15 minuten om in slaap te vallen. Moet je om 7:00 op, dan ga je rond 21:45 of 23:15 naar bed (6 of 5 cycli). Vul je wektijd of bedtijd in — of tik op \"Ik ga nu slapen\" — en zie je beste tijden.",
+  "imageAlt": "Slaapcalculator — beste bedtijden en wektijden op basis van slaapcycli van 90 minuten, gratis tool van ONDA Life",
+  "ui": {
+    "modeWake": "Ik weet hoe laat ik op moet",
+    "modeBed": "Ik weet hoe laat ik naar bed ga",
+    "wake": "Wektijd",
+    "bed": "Bedtijd",
+    "now": "Ik ga nu slapen",
+    "resultWake": "Ga op een van deze tijden naar bed",
+    "resultBed": "Zet je wekker op een van deze tijden",
+    "best": "(beste eerst)",
+    "cycles": "{{n}} cycli · {{h}} u",
+    "note": "Inclusief ongeveer 15 minuten om in slaap te vallen. 5–6 cycli (7,5–9 u) passen bij de meeste volwassenen.",
+    "invalid": "Vul een geldige tijd in."
+  },
+  "disclaimer": "De cyclus van 90 minuten is een gemiddelde — echte cycli duren zo'n 70–120 minuten en de eerste is vaak korter — dus zie deze tijden als richtlijn, niet als garantie. Je totale slaap en een vast ritme zijn belangrijker dan precies een cyclus raken. Alleen ter informatie, geen medisch advies.",
+  "sections": [
+    {
+      "h2": "Hoe laat moet ik gaan slapen?",
+      "body": "Tel vanaf je wektijd terug in cycli van 90 minuten en tel er ongeveer 15 minuten bij op om in slaap te vallen. Voor de meeste volwassenen is 5 of 6 cycli (7,5 of 9 uur slaap) het doel. Voorbeelden: om 6:00 op, dan naar bed rond 20:45 of 22:15; om 6:30 op, rond 21:15 of 22:45; om 7:00 op, rond 21:45 of 23:15; om 7:30 op, rond 22:15 of 23:45. Heb je vaak langer dan 15 minuten nodig om in slaap te vallen, ga dan zoveel eerder naar bed. Een vaste bedtijd — ook in het weekend — is net zo belangrijk als de exacte minuut. Meer: [hoeveel slaap heb je nodig](/articles/how-much-sleep-do-you-need)."
+    },
+    {
+      "h2": "Slaapcyclus berekenen: hoe werken slaapcycli?",
+      "body": "'s Nachts doorloop je steeds terugkerende cycli van lichte slaap, diepe slaap en REM-slaap (droomslaap). Elke cyclus duurt gemiddeld ongeveer 90 minuten en de meeste mensen doorlopen er vier tot zes per nacht. In de eerste helft van de nacht overheerst diepe slaap, in de tweede helft REM. Word je uit diepe slaap gewekt, dan krijg je dat zware, verwarde gevoel dat slaapdronkenheid heet; wakker worden aan het eind van een cyclus, in lichtere slaap, voelt meestal makkelijker. Dat is het idee achter deze calculator — maar cycli variëren van ongeveer 70 tot 120 minuten, dus het is een handige richtlijn en geen exacte klok."
+    },
+    {
+      "h2": "Hoeveel slaap heb ik nodig per leeftijd?",
+      "body": "Volgens de National Sleep Foundation hebben volwassenen van 18–64 jaar 7–9 uur nodig, 65-plussers 7–8 uur, tieners van 14–17 jaar 8–10 uur en kinderen van 6–13 jaar 9–11 uur. In slaapcycli is dat voor de meeste volwassenen zo'n 5–6 cycli. Slaap je structureel minder dan 7 uur, dan bouw je een slaaptekort op — houd het bij met de [slaaptekort-calculator](/tools/sleep-debt)."
+    },
+    {
+      "h2": "Waarom word ik moe wakker, zelfs na 8 uur?",
+      "body": "Veelvoorkomende oorzaken: de wekker haalt je midden in een cyclus uit je diepe slaap; je bedtijd verschilt sterk tussen doordeweeks en het weekend (sociale jetlag); alcohol of een late, zware maaltijd verstoort de tweede helft van de nacht; er zit nog cafeïne in je lijf; of de slaapkamer is te warm, te licht of te rumoerig. Snurk je hard, stop je 's nachts met ademen of ben je overdag erg slaperig ondanks genoeg slaap, overleg dan met je huisarts — dit kunnen tekenen van slaapapneu zijn. Check je [cafeïne-stoptijd](/tools/caffeine) en je [chronotype](/tools/chronotype)."
+    },
+    {
+      "h2": "Tips om sneller in slaap te vallen",
+      "body": "Sta elke dag op dezelfde tijd op, pak 's ochtends daglicht, stop ongeveer 8 uur voor bedtijd met cafeïne en houd de slaapkamer koel, donker en stil. Dim in het laatste uur de lichten en leg je telefoon weg. Blijft je hoofd malen, dan helpt rustig ademen met een lange uitademing — zoals 4-7-8-ademhaling — veel mensen om tot rust te komen: probeer het in de [Ademhalingstimer: box breathing, 4-7-8 en coherent ademen](/tools/breathing)."
+    }
+  ],
+  "faqTitle": "Slaapcalculator — veelgestelde vragen",
+  "faq": [
+    {
+      "q": "Hoe laat moet ik naar bed als ik om 6 uur op moet?",
+      "a": "Rond 20:45 (6 cycli, 9 u slaap) of 22:15 (5 cycli, 7,5 u), inclusief ongeveer 15 minuten om in slaap te vallen."
+    },
+    {
+      "q": "Hoe laat moet ik naar bed als ik om 7 uur op moet?",
+      "a": "Rond 21:45 (6 cycli, 9 u) of 23:15 (5 cycli, 7,5 u), inclusief ongeveer 15 minuten om in slaap te vallen."
+    },
+    {
+      "q": "Hoe lang duurt een slaapcyclus?",
+      "a": "Gemiddeld ongeveer 90 minuten, maar het varieert van zo'n 70 tot 120 minuten, en de eerste cyclus van de nacht is vaak korter."
+    },
+    {
+      "q": "Hoeveel slaapcycli heb ik nodig?",
+      "a": "De meeste volwassenen doen het het best met 5–6 cycli per nacht, oftewel 7,5–9 uur. Vier cycli (6 uur) is een korte nacht die een slaaptekort opbouwt als het een gewoonte wordt."
+    },
+    {
+      "q": "Is 6 of 7 uur slapen beter?",
+      "a": "7 uur of meer is het aanbevolen minimum voor volwassenen. Lukt maar zo'n 6 uur, dan voelt wakker worden aan het eind van de vierde cyclus (6 uur plus inslaaptijd) mogelijk makkelijker dan midden in een cyclus."
+    },
+    {
+      "q": "Waarom voel ik me suf als ik wakker word?",
+      "a": "Meestal omdat de wekker je uit diepe slaap haalde (slaapdronkenheid), of door te korte of onregelmatige slaap, alcohol of late cafeïne. Wakker worden aan het eind van een cyclus en een vast ritme helpen."
+    },
+    {
+      "q": "Is de slaapcyclus van 90 minuten exact?",
+      "a": "Nee, het is een gemiddelde. Gebruik de voorgestelde tijden als richtlijn en schuif 10–15 minuten op basis van hoe je je voelt als je wakker wordt."
+    }
+  ],
+  "sourcesTitle": "Bronnen & methode",
+  "methodology": "Slaap wisselt tussen NREM en REM in cycli van gemiddeld ongeveer 90 minuten (Feinberg & Floyd 1979; IOM 2006). Wakker worden aan het eind van een cyclus, in lichtere slaap, voelt meestal minder suf dan gewekt worden uit diepe slaap. Van je wektijd trekken we hele cycli van 90 minuten af plus ongeveer 15 minuten om in slaap te vallen; bij je bedtijd tellen we ze op. Voor volwassenen sluit 5–6 cycli (ongeveer 7,5–9 uur) aan bij het advies van de National Sleep Foundation. Echte cycli duren zo'n 70–120 minuten en de eerste is vaak korter, dus zie dit als richtlijn. Alleen ter informatie, geen medisch advies.",
+  "sourcesContributes": [
+    "Kwantificeert de duur van NREM–REM-cycli door de nacht heen en onderbouwt het hier gebruikte gemiddelde van ~90 minuten.",
+    "Standaardbeschrijving van NREM–REM-cycli met tussenpozen van ongeveer 90 minuten door de nacht.",
+    "Aanbevolen slaapduur per leeftijd — de basis voor het advies van 5–6 cycli (7,5–9 u) voor volwassenen."
+  ],
+  "related": {
+    "label": "Gerelateerd",
+    "debt": "Slaaptekort-calculator",
+    "chronotype": "Chronotype-test",
+    "caffeine": "Cafeïne-stoptijd",
+    "breathing": "Ademhalingstimer voor het slapen"
+  }
+}

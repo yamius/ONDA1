@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Calculadora de sueño — ¿A qué hora debo dormir? | ONDA Life",
+    "description": "Calculadora de sueño gratis: indica a qué hora te levantas y te decimos a qué hora dormir, según ciclos de sueño de 90 minutos para despertar descansado.",
+    "appName": "Calculadora de ciclos de sueño",
+    "appDescription": "Calculadora de sueño gratuita que sugiere horas para acostarse o despertarse alineadas con ciclos de sueño de ~90 minutos, incluido el tiempo para quedarse dormido."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "tools": "Herramientas",
+    "current": "Calculadora de sueño"
+  },
+  "h1": "Calculadora de sueño: ¿a qué hora debo acostarme?",
+  "capsule": "Para despertar menos aturdido, organiza tu sueño en ciclos completos de unos 90 minutos y calcula unos 15 minutos para quedarte dormido. Si te levantas a las 7:00, eso significa acostarte hacia las 21:45 o las 23:15 (6 o 5 ciclos). Indica tu hora de despertar o de acostarte —o pulsa «Me acuesto ahora»— para ver tus mejores horas.",
+  "imageAlt": "Calculadora de sueño — mejores horas para acostarse y despertarse según ciclos de sueño de 90 minutos, herramienta gratuita de ONDA Life",
+  "ui": {
+    "modeWake": "Sé a qué hora tengo que levantarme",
+    "modeBed": "Sé a qué hora me voy a acostar",
+    "wake": "Hora de despertar",
+    "bed": "Hora de acostarse",
+    "now": "Me acuesto ahora",
+    "resultWake": "Acuéstate a una de estas horas",
+    "resultBed": "Pon la alarma a una de estas horas",
+    "best": "(la mejor primero)",
+    "cycles": "{{n}} ciclos · {{h}} h",
+    "note": "Incluye unos 15 minutos para quedarte dormido. 5–6 ciclos (7,5–9 h) son adecuados para la mayoría de los adultos.",
+    "invalid": "Introduce una hora válida."
+  },
+  "disclaimer": "El ciclo de 90 minutos es un promedio —los ciclos reales duran unos 70–120 minutos y el primero suele ser más corto—, así que toma estas horas como una guía, no como una garantía. Dormir lo suficiente y tener un horario regular importa más que acertar un ciclo exacto. Contenido educativo, no es consejo médico.",
+  "sections": [
+    {
+      "h2": "¿A qué hora debo dormirme?",
+      "body": "Cuenta hacia atrás desde tu hora de despertar en ciclos de 90 minutos y suma unos 15 minutos para quedarte dormido. Para la mayoría de los adultos, el objetivo son 5 o 6 ciclos (7,5 o 9 horas de sueño). Ejemplos: para levantarte a las 6:00, acuéstate hacia las 20:45 o las 22:15; para las 6:30, hacia las 21:15 o las 22:45; para las 7:00, hacia las 21:45 o las 23:15; para las 7:30, hacia las 22:15 o las 23:45. Si sueles tardar más de 15 minutos en dormirte, acuéstate ese tiempo antes. Una hora de acostarse regular —también los fines de semana— importa tanto como el minuto exacto. Más: [cuántas horas de sueño necesitas](/articles/how-much-sleep-do-you-need)."
+    },
+    {
+      "h2": "¿Cómo funcionan los ciclos de sueño?",
+      "body": "Durante la noche pasas por ciclos repetidos de sueño ligero, sueño profundo y sueño REM (en el que se sueña). Cada ciclo dura unos 90 minutos de promedio, y la mayoría de las personas completa entre cuatro y seis por noche. El sueño profundo predomina en la primera mitad de la noche y el REM en la segunda. Despertar en pleno sueño profundo provoca esa sensación pesada y confusa llamada inercia del sueño; despertar cerca del final de un ciclo, en sueño más ligero, suele resultar más fácil. En esa idea se basa esta calculadora, pero los ciclos varían entre unos 70 y 120 minutos, así que es una guía útil, no un reloj exacto."
+    },
+    {
+      "h2": "¿Cuántas horas dormir según la edad?",
+      "body": "Según la National Sleep Foundation, los adultos de 18–64 años necesitan 7–9 horas; los de 65 años o más, 7–8 horas; los adolescentes de 14–17, 8–10 horas, y los niños de 6–13, 9–11 horas. En ciclos de sueño, son unos 5–6 ciclos para la mayoría de los adultos. Dormir habitualmente menos de 7 horas acumula deuda de sueño: contrólala con la [calculadora de deuda de sueño](/tools/sleep-debt)."
+    },
+    {
+      "h2": "¿Por qué me despierto cansado aunque duerma 8 horas?",
+      "body": "Motivos frecuentes: la alarma te saca del sueño profundo a mitad de un ciclo; tu hora de acostarte cambia mucho entre semana y el fin de semana (jet lag social); el alcohol o una cena copiosa y tardía fragmentan la segunda mitad de la noche; aún tienes cafeína en el organismo; o la habitación está demasiado caliente, iluminada o ruidosa. Si roncas fuerte, dejas de respirar por la noche o tienes mucho sueño de día pese a dormir lo suficiente, consulta a un médico: pueden ser señales de apnea del sueño. Revisa tu [hora límite para la cafeína](/tools/caffeine) y tu [cronotipo](/tools/chronotype)."
+    },
+    {
+      "h2": "Consejos para dormirte más rápido",
+      "body": "Levántate a la misma hora todos los días, toma luz natural por la mañana, deja la cafeína unas 8 horas antes de acostarte y mantén el dormitorio fresco, oscuro y silencioso. En la última hora, baja las luces y deja el móvil. Si tu mente no para, respirar despacio con una exhalación larga —como la respiración 4-7-8— ayuda a muchas personas a relajarse: pruébala en el [Temporizador de respiración: cuadrada, 4-7-8 y coherente](/tools/breathing)."
+    }
+  ],
+  "faqTitle": "Calculadora de sueño — preguntas frecuentes",
+  "faq": [
+    {
+      "q": "¿A qué hora debo acostarme si me levanto a las 6:00?",
+      "a": "Hacia las 20:45 (6 ciclos, 9 h de sueño) o las 22:15 (5 ciclos, 7,5 h), incluidos unos 15 minutos para quedarte dormido."
+    },
+    {
+      "q": "¿A qué hora debo acostarme si me levanto a las 7:00?",
+      "a": "Hacia las 21:45 (6 ciclos, 9 h) o las 23:15 (5 ciclos, 7,5 h), incluidos unos 15 minutos para quedarte dormido."
+    },
+    {
+      "q": "¿Cuánto dura un ciclo de sueño?",
+      "a": "Unos 90 minutos de promedio, pero varía entre unos 70 y 120 minutos, y el primer ciclo de la noche suele ser más corto."
+    },
+    {
+      "q": "¿Cuántos ciclos de sueño necesito?",
+      "a": "A la mayoría de los adultos les va mejor con 5–6 ciclos por noche, es decir, 7,5–9 horas. Cuatro ciclos (6 horas) es una noche corta que acumula deuda de sueño si se vuelve costumbre."
+    },
+    {
+      "q": "¿Es mejor dormir 6 o 7 horas?",
+      "a": "7 horas o más es el mínimo recomendado para adultos. Si solo puedes dormir unas 6, despertar al final del cuarto ciclo (6 horas más el tiempo para dormirte) puede resultar más fácil que despertar a mitad de un ciclo."
+    },
+    {
+      "q": "¿Por qué me siento aturdido al despertar?",
+      "a": "Normalmente porque la alarma te despertó en pleno sueño profundo (inercia del sueño), o por dormir poco o de forma irregular, el alcohol o la cafeína tardía. Despertar al final de un ciclo y mantener un horario regular ayuda."
+    },
+    {
+      "q": "¿El ciclo de sueño de 90 minutos es exacto?",
+      "a": "No, es un promedio. Usa las horas sugeridas como guía y ajústalas 10–15 minutos según cómo te sientas al despertar."
+    }
+  ],
+  "sourcesTitle": "Fuentes y metodología",
+  "methodology": "El sueño alterna entre NREM y REM en ciclos de unos 90 minutos de promedio (Feinberg & Floyd 1979; IOM 2006). Despertar cerca del final de un ciclo, en sueño más ligero, suele producir menos aturdimiento que despertar en pleno sueño profundo. A tu hora de despertar le restamos ciclos completos de 90 minutos más unos 15 minutos para dormirte; a tu hora de acostarte se los sumamos. Para adultos, 5–6 ciclos (unas 7,5–9 horas) coinciden con la recomendación de la National Sleep Foundation. Los ciclos reales oscilan entre unos 70 y 120 minutos y el primero suele ser más corto, así que tómalos como una guía. Contenido educativo, no es consejo médico.",
+  "sourcesContributes": [
+    "Cuantifica la duración de los ciclos NREM–REM a lo largo de la noche, lo que respalda el promedio de ~90 minutos usado aquí.",
+    "Descripción de referencia de la alternancia NREM–REM a intervalos de unos 90 minutos durante la noche.",
+    "Duración de sueño recomendada por edad: la base de la pauta de 5–6 ciclos (7,5–9 h) para adultos."
+  ],
+  "related": {
+    "label": "Relacionado",
+    "debt": "Calculadora de deuda de sueño",
+    "chronotype": "Test de cronotipo",
+    "caffeine": "Hora límite para la cafeína",
+    "breathing": "Temporizador de respiración para dormir"
+  }
+}

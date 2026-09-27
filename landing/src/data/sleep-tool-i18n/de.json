@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Schlafrechner — Wann soll ich schlafen gehen? | ONDA Life",
+    "description": "Kostenloser Schlafrechner: Gib deine Weckzeit ein und erhalte die besten Schlafenszeiten, abgestimmt auf 90-Minuten-Schlafzyklen für leichteres Aufwachen.",
+    "appName": "Schlafzyklus-Rechner",
+    "appDescription": "Kostenloser Schlafrechner, der Schlafenszeiten oder Weckzeiten passend zu ~90-minütigen Schlafzyklen vorschlägt – inklusive Einschlafzeit."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "tools": "Tools",
+    "current": "Schlafrechner"
+  },
+  "h1": "Schlafrechner: Wann soll ich schlafen gehen?",
+  "capsule": "Um weniger benommen aufzuwachen, plane deinen Schlaf in ganzen Zyklen von etwa 90 Minuten und rechne rund 15 Minuten zum Einschlafen ein. Wenn du um 7:00 aufstehen willst, gehst du also am besten gegen 21:45 oder 23:15 ins Bett (6 bzw. 5 Zyklen). Gib deine Weckzeit oder deine Schlafenszeit ein – oder tippe auf „Ich gehe jetzt schlafen“ –, um deine besten Zeiten zu sehen.",
+  "imageAlt": "Schlafrechner – beste Schlafens- und Weckzeiten auf Basis von 90-Minuten-Schlafzyklen, kostenloses Tool von ONDA Life",
+  "ui": {
+    "modeWake": "Ich weiß, wann ich aufstehen muss",
+    "modeBed": "Ich weiß, wann ich ins Bett gehe",
+    "wake": "Weckzeit",
+    "bed": "Schlafenszeit",
+    "now": "Ich gehe jetzt schlafen",
+    "resultWake": "Geh zu einer dieser Zeiten ins Bett",
+    "resultBed": "Stell deinen Wecker auf eine dieser Zeiten",
+    "best": "(beste zuerst)",
+    "cycles": "{{n}} Zyklen · {{h}} Std.",
+    "note": "Inklusive etwa 15 Minuten zum Einschlafen. 5–6 Zyklen (7,5–9 Std.) passen für die meisten Erwachsenen.",
+    "invalid": "Gib eine gültige Uhrzeit ein."
+  },
+  "disclaimer": "Der 90-Minuten-Zyklus ist ein Durchschnittswert – echte Zyklen dauern etwa 70–120 Minuten, und der erste ist oft kürzer. Sieh diese Zeiten also als Orientierung, nicht als Garantie. Die gesamte Schlafdauer und ein regelmäßiger Rhythmus sind wichtiger, als einen Zyklus exakt zu treffen. Nur zur Information, keine medizinische Beratung.",
+  "sections": [
+    {
+      "h2": "Wann soll ich schlafen gehen?",
+      "body": "Rechne von deiner Weckzeit in 90-Minuten-Zyklen zurück und addiere etwa 15 Minuten zum Einschlafen. Für die meisten Erwachsenen sind 5 oder 6 Zyklen (7,5 oder 9 Stunden Schlaf) das Ziel. Beispiele: Willst du um 6:00 aufstehen, geh gegen 20:45 oder 22:15 ins Bett; für 6:30 gegen 21:15 oder 22:45; für 7:00 gegen 21:45 oder 23:15; für 7:30 gegen 22:15 oder 23:45. Brauchst du oft länger als 15 Minuten zum Einschlafen, geh entsprechend früher ins Bett. Eine feste Schlafenszeit – auch am Wochenende – ist genauso wichtig wie die exakte Minute. Mehr dazu: [Wie viel Schlaf brauche ich?](/articles/how-much-sleep-do-you-need)"
+    },
+    {
+      "h2": "Schlafzyklus-Rechner: Wie funktionieren Schlafzyklen?",
+      "body": "Nachts durchläufst du wiederkehrende Zyklen aus Leichtschlaf, Tiefschlaf und REM-Schlaf (Traumschlaf). Jeder Zyklus dauert im Schnitt etwa 90 Minuten, und die meisten Menschen durchlaufen vier bis sechs pro Nacht. In der ersten Nachthälfte überwiegt der Tiefschlaf, in der zweiten der REM-Schlaf. Wirst du aus dem Tiefschlaf gerissen, fühlst du dich schwer und benommen – das nennt man Schlafträgheit. Aufzuwachen gegen Ende eines Zyklus, im leichteren Schlaf, fällt meist leichter. Darauf basiert dieser Rechner – doch Zyklen schwanken zwischen etwa 70 und 120 Minuten, er ist also eine hilfreiche Orientierung und keine exakte Uhr."
+    },
+    {
+      "h2": "Wie viel Schlaf brauche ich je nach Alter?",
+      "body": "Laut der National Sleep Foundation brauchen Erwachsene von 18–64 Jahren 7–9 Stunden, Erwachsene ab 65 Jahren 7–8 Stunden, Jugendliche von 14–17 Jahren 8–10 Stunden und Kinder von 6–13 Jahren 9–11 Stunden. In Schlafzyklen sind das für die meisten Erwachsenen etwa 5–6 Zyklen. Wer regelmäßig weniger als 7 Stunden schläft, baut ein Schlafdefizit auf – behalte es mit dem [Schlafdefizit-Rechner](/tools/sleep-debt) im Blick."
+    },
+    {
+      "h2": "Warum bin ich nach 8 Stunden Schlaf trotzdem müde?",
+      "body": "Häufige Gründe: Der Wecker reißt dich mitten im Zyklus aus dem Tiefschlaf; deine Schlafenszeit schwankt stark zwischen Werktagen und Wochenende (sozialer Jetlag); Alkohol oder ein spätes, schweres Essen stören die zweite Nachthälfte; es ist noch Koffein in deinem Körper; oder das Zimmer ist zu warm, zu hell oder zu laut. Wenn du laut schnarchst, nachts Atemaussetzer hast oder dich trotz genug Schlaf tagsüber sehr schläfrig fühlst, sprich mit einer Ärztin oder einem Arzt – das können Anzeichen einer Schlafapnoe sein. Prüfe deine [Koffein-Deadline](/tools/caffeine) und deinen [Chronotyp](/tools/chronotype)."
+    },
+    {
+      "h2": "Tipps, um schneller einzuschlafen",
+      "body": "Steh jeden Tag zur gleichen Zeit auf, hol dir morgens Tageslicht, verzichte etwa 8 Stunden vor dem Schlafengehen auf Koffein und halte das Schlafzimmer kühl, dunkel und ruhig. Dimme in der letzten Stunde das Licht und leg das Handy weg. Wenn die Gedanken kreisen, hilft vielen eine langsame Atmung mit langer Ausatmung – etwa die 4-7-8-Atmung – beim Runterkommen: Probier sie im [Atemtimer: Box Breathing, 4-7-8 Atmung und kohärente Atmung](/tools/breathing) aus."
+    }
+  ],
+  "faqTitle": "Schlafrechner – häufige Fragen",
+  "faq": [
+    {
+      "q": "Wann soll ich schlafen gehen, wenn ich um 6 Uhr aufstehe?",
+      "a": "Gegen 20:45 (6 Zyklen, 9 Std. Schlaf) oder 22:15 (5 Zyklen, 7,5 Std.), inklusive etwa 15 Minuten zum Einschlafen."
+    },
+    {
+      "q": "Wann soll ich schlafen gehen, wenn ich um 7 Uhr aufstehe?",
+      "a": "Gegen 21:45 (6 Zyklen, 9 Std.) oder 23:15 (5 Zyklen, 7,5 Std.), inklusive etwa 15 Minuten zum Einschlafen."
+    },
+    {
+      "q": "Wie lange dauert ein Schlafzyklus?",
+      "a": "Im Durchschnitt etwa 90 Minuten, er schwankt aber zwischen etwa 70 und 120 Minuten, und der erste Zyklus der Nacht ist oft kürzer."
+    },
+    {
+      "q": "Wie viele Schlafzyklen brauche ich?",
+      "a": "Die meisten Erwachsenen fahren mit 5–6 Zyklen pro Nacht am besten, also 7,5–9 Stunden. Vier Zyklen (6 Stunden) sind eine kurze Nacht, die ein Schlafdefizit aufbaut, wenn sie zur Gewohnheit wird."
+    },
+    {
+      "q": "Ist es besser, 6 oder 7 Stunden zu schlafen?",
+      "a": "7 Stunden oder mehr sind das empfohlene Minimum für Erwachsene. Wenn du nur etwa 6 schaffst, fällt das Aufwachen am Ende des vierten Zyklus (6 Stunden plus Einschlafzeit) oft leichter als mitten im Zyklus."
+    },
+    {
+      "q": "Warum fühle ich mich nach dem Aufwachen benommen?",
+      "a": "Meist, weil dich der Wecker aus dem Tiefschlaf geholt hat (Schlafträgheit), oder wegen zu kurzen oder unregelmäßigen Schlafs, Alkohol oder spätem Koffein. Am Ende eines Zyklus aufzuwachen und einen regelmäßigen Rhythmus einzuhalten hilft."
+    },
+    {
+      "q": "Ist der 90-Minuten-Schlafzyklus exakt?",
+      "a": "Nein, er ist ein Durchschnittswert. Nutze die vorgeschlagenen Zeiten als Orientierung und passe sie um 10–15 Minuten an, je nachdem, wie du dich beim Aufwachen fühlst."
+    }
+  ],
+  "sourcesTitle": "Quellen & Methodik",
+  "methodology": "Der Schlaf wechselt zwischen NREM- und REM-Phasen in Zyklen von durchschnittlich etwa 90 Minuten (Feinberg & Floyd 1979; IOM 2006). Aufzuwachen gegen Ende eines Zyklus, im leichteren Schlaf, fühlt sich meist weniger benommen an, als aus dem Tiefschlaf geweckt zu werden. Von deiner Weckzeit ziehen wir ganze 90-Minuten-Zyklen plus etwa 15 Minuten zum Einschlafen ab; zu deiner Schlafenszeit zählen wir sie hinzu. Für Erwachsene entsprechen 5–6 Zyklen (etwa 7,5–9 Stunden) der Empfehlung der National Sleep Foundation. Echte Zyklen dauern etwa 70–120 Minuten, und der erste ist oft kürzer – sieh die Zeiten also als Orientierung. Nur zur Information, keine medizinische Beratung.",
+  "sourcesContributes": [
+    "Quantifiziert die Dauer der NREM-REM-Zyklen über die Nacht und stützt den hier verwendeten Durchschnitt von ~90 Minuten.",
+    "Referenzbeschreibung des NREM-REM-Wechsels in Abständen von etwa 90 Minuten über die Nacht.",
+    "Empfohlene Schlafdauer nach Alter – die Grundlage für die Empfehlung von 5–6 Zyklen (7,5–9 Std.) für Erwachsene."
+  ],
+  "related": {
+    "label": "Verwandte Tools",
+    "debt": "Schlafdefizit-Rechner",
+    "chronotype": "Chronotyp-Test",
+    "caffeine": "Koffein-Deadline",
+    "breathing": "Atemtimer zum Einschlafen"
+  }
+}

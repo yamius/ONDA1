@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Calcolatore sonno — A che ora andare a letto? | ONDA Life",
+    "description": "Calcolatore del sonno gratuito: inserisci l'ora della sveglia o di andare a letto e scopri gli orari migliori in base ai cicli del sonno da 90 minuti.",
+    "appName": "Calcolatore dei cicli del sonno",
+    "appDescription": "Calcolatore del sonno gratuito che suggerisce a che ora andare a letto o svegliarsi seguendo cicli del sonno di circa 90 minuti, incluso il tempo per addormentarsi."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "tools": "Strumenti",
+    "current": "Calcolatore del sonno"
+  },
+  "h1": "Calcolatore del sonno: a che ora devo andare a dormire?",
+  "capsule": "Per svegliarti meno intontito, calcola il sonno in cicli completi di circa 90 minuti e considera circa 15 minuti per addormentarti. Con la sveglia alle 7:00, significa andare a letto verso le 21:45 o le 23:15 (6 o 5 cicli). Inserisci l'ora della sveglia o quella in cui vai a letto — oppure tocca \"Vado a letto adesso\" — per scoprire gli orari migliori.",
+  "imageAlt": "Calcolatore del sonno — orari migliori per andare a letto e svegliarsi in base ai cicli del sonno di 90 minuti, strumento gratuito di ONDA Life",
+  "ui": {
+    "modeWake": "So a che ora devo svegliarmi",
+    "modeBed": "So a che ora andrò a letto",
+    "wake": "Ora della sveglia",
+    "bed": "Ora di andare a letto",
+    "now": "Vado a letto adesso",
+    "resultWake": "Vai a letto a uno di questi orari",
+    "resultBed": "Imposta la sveglia a uno di questi orari",
+    "best": "(i migliori per primi)",
+    "cycles": "{{n}} cicli · {{h}} h",
+    "note": "Include circa 15 minuti per addormentarsi. 5–6 cicli (7,5–9 h) sono adatti alla maggior parte degli adulti.",
+    "invalid": "Inserisci un orario valido."
+  },
+  "disclaimer": "Il ciclo di 90 minuti è una media — i cicli reali durano circa 70–120 minuti e il primo è spesso più breve — quindi considera questi orari un'indicazione, non una garanzia. Le ore di sonno totali e orari regolari contano più del centrare un ciclo esatto. Solo a scopo informativo, non è un consiglio medico.",
+  "sections": [
+    {
+      "h2": "A che ora andare a dormire?",
+      "body": "Parti dall'ora della sveglia, torna indietro di cicli da 90 minuti e aggiungi circa 15 minuti per addormentarti. Per la maggior parte degli adulti l'obiettivo è 5 o 6 cicli (7,5 o 9 ore di sonno). Esempi: per svegliarti alle 6:00, vai a letto verso le 20:45 o le 22:15; per svegliarti alle 6:30, verso le 21:15 o le 22:45; per svegliarti alle 7:00, verso le 21:45 o le 23:15; per svegliarti alle 7:30, verso le 22:15 o le 23:45. Se spesso ti servono più di 15 minuti per addormentarti, vai a letto con altrettanto anticipo. Un orario regolare — anche nel weekend — conta quanto il minuto esatto. Approfondisci: [quante ore bisogna dormire](/articles/how-much-sleep-do-you-need)."
+    },
+    {
+      "h2": "Come funzionano i cicli del sonno?",
+      "body": "Durante la notte attraversi cicli ripetuti di sonno leggero, sonno profondo e sonno REM (dei sogni). Ogni ciclo dura in media circa 90 minuti e la maggior parte delle persone ne completa da quattro a sei per notte. Il sonno profondo prevale nella prima metà della notte, il REM nella seconda. Essere svegliati dal sonno profondo provoca quella sensazione di pesantezza e confusione chiamata inerzia del sonno; svegliarsi verso la fine di un ciclo, in una fase più leggera, di solito è più facile. È l'idea alla base di questo calcolatore — ma i cicli variano tra circa 70 e 120 minuti, quindi è una guida utile, non un orologio preciso."
+    },
+    {
+      "h2": "Quante ore dormire in base all'età?",
+      "body": "Secondo la National Sleep Foundation, gli adulti tra 18 e 64 anni hanno bisogno di 7–9 ore, quelli da 65 anni in su di 7–8 ore, gli adolescenti di 14–17 anni di 8–10 ore e i bambini di 6–13 anni di 9–11 ore. In cicli del sonno, per la maggior parte degli adulti sono circa 5–6 cicli. Dormire regolarmente meno di 7 ore accumula un debito di sonno — tienilo sotto controllo con il [calcolatore del debito di sonno](/tools/sleep-debt)."
+    },
+    {
+      "h2": "Perché mi sveglio stanco anche dopo 8 ore?",
+      "body": "Le cause più comuni: la sveglia ti strappa dal sonno profondo a metà ciclo; l'orario in cui vai a letto cambia molto tra settimana e weekend (jet lag sociale); l'alcol o una cena pesante e tardiva frammentano la seconda metà della notte; la caffeina è ancora in circolo; oppure la stanza è troppo calda, luminosa o rumorosa. Se russi forte, smetti di respirare durante la notte o hai molto sonno di giorno nonostante abbia dormito abbastanza, parlane con un medico — possono essere segni di apnee notturne. Controlla il tuo [orario limite per la caffeina](/tools/caffeine) e il tuo [cronotipo](/tools/chronotype)."
+    },
+    {
+      "h2": "Consigli per addormentarsi più velocemente",
+      "body": "Mantieni la stessa ora della sveglia ogni giorno, esponiti alla luce del giorno al mattino, smetti con la caffeina circa 8 ore prima di dormire e tieni la camera fresca, buia e silenziosa. Nell'ultima ora abbassa le luci e metti via il telefono. Se la mente corre, una respirazione lenta con espirazione lunga — come la respirazione 4-7-8 — aiuta molte persone a rilassarsi: provala con il [timer per la respirazione](/tools/breathing)."
+    }
+  ],
+  "faqTitle": "Calcolatore del sonno — domande frequenti",
+  "faq": [
+    {
+      "q": "A che ora devo andare a dormire se mi sveglio alle 6?",
+      "a": "Verso le 20:45 (6 cicli, 9 h di sonno) o le 22:15 (5 cicli, 7,5 h), inclusi circa 15 minuti per addormentarti."
+    },
+    {
+      "q": "A che ora devo andare a dormire se mi sveglio alle 7?",
+      "a": "Verso le 21:45 (6 cicli, 9 h) o le 23:15 (5 cicli, 7,5 h), inclusi circa 15 minuti per addormentarti."
+    },
+    {
+      "q": "Quanto dura un ciclo del sonno?",
+      "a": "In media circa 90 minuti, ma varia tra circa 70 e 120 minuti, e il primo ciclo della notte è spesso più breve."
+    },
+    {
+      "q": "Di quanti cicli del sonno ho bisogno?",
+      "a": "La maggior parte degli adulti sta meglio con 5–6 cicli a notte, cioè 7,5–9 ore. Quattro cicli (6 ore) sono una notte corta che, se diventa un'abitudine, accumula debito di sonno."
+    },
+    {
+      "q": "È meglio dormire 6 o 7 ore?",
+      "a": "7 ore o più è il minimo raccomandato per gli adulti. Se riesci a dormire solo circa 6 ore, svegliarti alla fine del quarto ciclo (6 ore più il tempo per addormentarti) può risultare più facile che svegliarti a metà ciclo."
+    },
+    {
+      "q": "Perché mi sento intontito al risveglio?",
+      "a": "Di solito perché la sveglia ti ha svegliato dal sonno profondo (inerzia del sonno), oppure per un sonno breve o irregolare, alcol o caffeina presa tardi. Svegliarsi alla fine di un ciclo e mantenere orari regolari aiuta."
+    },
+    {
+      "q": "Il ciclo del sonno di 90 minuti è preciso?",
+      "a": "No, è una media. Usa gli orari suggeriti come guida e aggiustali di 10–15 minuti in base a come ti senti al risveglio."
+    }
+  ],
+  "sourcesTitle": "Fonti e metodologia",
+  "methodology": "Il sonno alterna fasi NREM e REM in cicli di circa 90 minuti in media (Feinberg & Floyd 1979; IOM 2006). Svegliarsi verso la fine di un ciclo, in una fase più leggera, tende a lasciare meno intontiti che essere svegliati dal sonno profondo. Dall'ora della sveglia sottraiamo cicli interi di 90 minuti più circa 15 minuti per addormentarsi; dall'ora in cui vai a letto li aggiungiamo. Per gli adulti, 5–6 cicli (circa 7,5–9 ore) corrispondono alla raccomandazione della National Sleep Foundation. I cicli reali variano tra circa 70 e 120 minuti e il primo è spesso più breve, quindi considera questi orari come indicazioni. Solo a scopo informativo, non è un consiglio medico.",
+  "sourcesContributes": [
+    "Quantifica la durata dei cicli NREM–REM nel corso della notte, a sostegno della media di ~90 minuti usata qui.",
+    "Descrizione di riferimento dell'alternanza NREM–REM a intervalli di circa 90 minuti durante la notte.",
+    "Durata del sonno raccomandata per età — la base dell'indicazione di 5–6 cicli (7,5–9 h) per gli adulti."
+  ],
+  "related": {
+    "label": "Correlati",
+    "debt": "Calcolatore del debito di sonno",
+    "chronotype": "Test del cronotipo",
+    "caffeine": "Orario limite per la caffeina",
+    "breathing": "Timer per la respirazione per dormire"
+  }
+}

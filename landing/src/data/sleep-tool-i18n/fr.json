@@ -1,0 +1,97 @@
+{
+  "meta": {
+    "title": "Calculateur de sommeil — Quand se coucher ? | ONDA Life",
+    "description": "Calculateur de sommeil gratuit : à quelle heure se coucher ou se réveiller selon les cycles du sommeil de 90 minutes, pour un réveil moins difficile.",
+    "appName": "Calculateur de cycles du sommeil",
+    "appDescription": "Calculateur de sommeil gratuit qui propose des heures de coucher ou de réveil alignées sur des cycles d'environ 90 minutes, temps d'endormissement compris."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "tools": "Outils",
+    "current": "Calculateur de sommeil"
+  },
+  "h1": "Calculateur de sommeil : à quelle heure se coucher ?",
+  "capsule": "Pour vous réveiller moins groggy, calez votre nuit sur des cycles complets d'environ 90 minutes et prévoyez à peu près 15 minutes pour vous endormir. Pour un réveil à 7:00, couchez-vous vers 21:45 ou 23:15 (6 ou 5 cycles). Indiquez votre heure de réveil ou de coucher — ou touchez « Je me couche maintenant » — pour obtenir vos meilleurs horaires.",
+  "imageAlt": "Calculateur de sommeil — meilleures heures de coucher et de réveil selon les cycles du sommeil de 90 minutes, outil gratuit d'ONDA Life",
+  "ui": {
+    "modeWake": "Je sais à quelle heure je dois me réveiller",
+    "modeBed": "Je sais à quelle heure je vais me coucher",
+    "wake": "Heure de réveil",
+    "bed": "Heure du coucher",
+    "now": "Je me couche maintenant",
+    "resultWake": "Couchez-vous à l'une de ces heures",
+    "resultBed": "Réglez votre réveil sur l'une de ces heures",
+    "best": "(la meilleure en premier)",
+    "cycles": "{{n}} cycles · {{h}} h",
+    "note": "Inclut environ 15 minutes d'endormissement. 5 à 6 cycles (7,5 à 9 h) conviennent à la plupart des adultes.",
+    "invalid": "Saisissez une heure valide."
+  },
+  "disclaimer": "Le cycle de 90 minutes est une moyenne — les cycles réels durent environ 70 à 120 minutes et le premier est souvent plus court — ces horaires sont donc indicatifs, sans garantie. La durée totale de sommeil et la régularité des horaires comptent davantage que le cycle exact. Contenu éducatif, pas un avis médical.",
+  "sections": [
+    {
+      "h2": "À quelle heure se coucher ?",
+      "body": "Comptez à rebours depuis votre heure de réveil par cycles de 90 minutes et ajoutez environ 15 minutes pour vous endormir. Pour la plupart des adultes, l'objectif est de 5 ou 6 cycles (7,5 ou 9 heures de sommeil). Exemples : pour un réveil à 6:00, couchez-vous vers 20:45 ou 22:15 ; à 6:30, vers 21:15 ou 22:45 ; à 7:00, vers 21:45 ou 23:15 ; à 7:30, vers 22:15 ou 23:45. S'il vous faut souvent plus de 15 minutes pour vous endormir, couchez-vous d'autant plus tôt. Un coucher régulier — même le week-end — compte autant que la minute exacte. En savoir plus : [combien d'heures de sommeil faut-il](/articles/how-much-sleep-do-you-need)."
+    },
+    {
+      "h2": "Comment fonctionnent les cycles du sommeil ?",
+      "body": "Pendant la nuit, vous enchaînez des cycles de sommeil léger, de sommeil profond et de sommeil paradoxal (celui des rêves). Chaque cycle dure en moyenne environ 90 minutes, et la plupart des gens en font quatre à six par nuit. Le sommeil profond domine la première moitié de la nuit, le paradoxal la seconde. Être réveillé en plein sommeil profond provoque cette sensation lourde et confuse appelée inertie du sommeil ; se réveiller vers la fin d'un cycle, en sommeil léger, est généralement plus facile. C'est le principe de ce calculateur — mais les cycles varient d'environ 70 à 120 minutes : c'est un repère utile, pas une horloge exacte."
+    },
+    {
+      "h2": "Combien d'heures dormir selon l'âge ?",
+      "body": "Selon la National Sleep Foundation, les adultes de 18 à 64 ans ont besoin de 7 à 9 heures, les 65 ans et plus de 7 à 8 heures, les adolescents de 14 à 17 ans de 8 à 10 heures et les enfants de 6 à 13 ans de 9 à 11 heures. En cycles, cela représente environ 5 à 6 cycles pour la plupart des adultes. Dormir régulièrement moins de 7 heures crée une dette de sommeil — suivez-la avec le [calculateur de dette de sommeil](/tools/sleep-debt)."
+    },
+    {
+      "h2": "Pourquoi suis-je fatigué même après 8 heures de sommeil ?",
+      "body": "Raisons fréquentes : le réveil vous tire du sommeil profond en plein cycle ; votre heure de coucher varie beaucoup entre la semaine et le week-end (jet lag social) ; l'alcool ou un repas lourd tardif fragmente la seconde moitié de la nuit ; la caféine est encore présente dans votre organisme ; ou la chambre est trop chaude, lumineuse ou bruyante. Si vous ronflez fort, faites des pauses respiratoires la nuit ou êtes très somnolent en journée malgré un sommeil suffisant, parlez-en à un médecin — ce peuvent être des signes d'apnée du sommeil. Vérifiez votre [heure limite pour la caféine](/tools/caffeine) et votre [chronotype](/tools/chronotype)."
+    },
+    {
+      "h2": "Conseils pour s'endormir plus vite",
+      "body": "Gardez la même heure de réveil chaque jour, exposez-vous à la lumière du jour le matin, arrêtez la caféine environ 8 heures avant le coucher et gardez la chambre fraîche, sombre et calme. Dans la dernière heure, baissez les lumières et rangez le téléphone. Si vos pensées s'emballent, une respiration lente avec une longue expiration — comme la respiration 4-7-8 — aide beaucoup de personnes à se détendre : essayez-la avec le [Minuteur de respiration : cohérence cardiaque, respiration carrée et 4-7-8](/tools/breathing)."
+    }
+  ],
+  "faqTitle": "Calculateur de sommeil — questions fréquentes",
+  "faq": [
+    {
+      "q": "À quelle heure se coucher pour se réveiller à 6 h ?",
+      "a": "Vers 20:45 (6 cycles, 9 h de sommeil) ou 22:15 (5 cycles, 7,5 h), en comptant environ 15 minutes pour s'endormir."
+    },
+    {
+      "q": "À quelle heure se coucher pour se réveiller à 7 h ?",
+      "a": "Vers 21:45 (6 cycles, 9 h) ou 23:15 (5 cycles, 7,5 h), en comptant environ 15 minutes pour s'endormir."
+    },
+    {
+      "q": "Combien de temps dure un cycle du sommeil ?",
+      "a": "Environ 90 minutes en moyenne, mais cela varie d'environ 70 à 120 minutes, et le premier cycle de la nuit est souvent plus court."
+    },
+    {
+      "q": "Combien de cycles du sommeil faut-il par nuit ?",
+      "a": "La plupart des adultes se portent mieux avec 5 à 6 cycles par nuit, soit 7,5 à 9 heures. Quatre cycles (6 heures), c'est une nuit courte qui crée une dette de sommeil si elle devient une habitude."
+    },
+    {
+      "q": "Vaut-il mieux dormir 6 ou 7 heures ?",
+      "a": "7 heures ou plus est le minimum recommandé pour les adultes. Si vous ne pouvez dormir qu'environ 6 heures, se réveiller à la fin du quatrième cycle (6 heures plus le temps d'endormissement) peut être plus facile qu'en plein cycle."
+    },
+    {
+      "q": "Pourquoi suis-je groggy au réveil ?",
+      "a": "Généralement parce que le réveil vous a tiré du sommeil profond (inertie du sommeil), ou à cause d'un sommeil court ou irrégulier, de l'alcool ou d'une caféine trop tardive. Se réveiller en fin de cycle et garder des horaires réguliers aide."
+    },
+    {
+      "q": "Le cycle du sommeil de 90 minutes est-il exact ?",
+      "a": "Non, c'est une moyenne. Utilisez les horaires proposés comme repère et ajustez de 10 à 15 minutes selon votre ressenti au réveil."
+    }
+  ],
+  "sourcesTitle": "Sources et méthodologie",
+  "methodology": "Le sommeil alterne entre sommeil lent (NREM) et sommeil paradoxal (REM) par cycles d'environ 90 minutes en moyenne (Feinberg & Floyd 1979 ; IOM 2006). Se réveiller vers la fin d'un cycle, en sommeil léger, donne généralement moins de sensation groggy qu'un réveil en sommeil profond. À partir de votre heure de réveil, nous soustrayons des cycles complets de 90 minutes plus environ 15 minutes d'endormissement ; à partir de votre heure de coucher, nous les ajoutons. Pour les adultes, 5 à 6 cycles (environ 7,5 à 9 heures) correspondent à la recommandation de la National Sleep Foundation. Les cycles réels vont d'environ 70 à 120 minutes et le premier est souvent plus court : ces horaires sont donc indicatifs. Contenu éducatif, pas un avis médical.",
+  "sourcesContributes": [
+    "Quantifie la durée des cycles NREM–REM au fil de la nuit, à l'appui de la moyenne d'environ 90 minutes utilisée ici.",
+    "Description de référence de l'alternance NREM–REM à intervalles d'environ 90 minutes pendant la nuit.",
+    "Durée de sommeil recommandée selon l'âge — base de la recommandation de 5 à 6 cycles (7,5 à 9 h) pour les adultes."
+  ],
+  "related": {
+    "label": "À voir aussi",
+    "debt": "Calculateur de dette de sommeil",
+    "chronotype": "Test de chronotype",
+    "caffeine": "Heure limite pour la caféine",
+    "breathing": "Minuteur de respiration pour dormir"
+  }
+}

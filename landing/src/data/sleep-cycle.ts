@@ -27,18 +27,17 @@ export function parseTime(value: string): number | null {
   return h * 60 + min
 }
 
-export function fmt(totalMin: number): string {
+/** Format minutes-since-midnight as a clock time in the page language (12 h or 24 h by locale). */
+export function fmtTime(totalMin: number, lang: string): string {
   const m = ((Math.round(totalMin) % 1440) + 1440) % 1440
-  const h = Math.floor(m / 60)
-  const min = m % 60
-  const ampm = h < 12 ? 'AM' : 'PM'
-  const h12 = h % 12 === 0 ? 12 : h % 12
-  return `${h12}:${String(min).padStart(2, '0')} ${ampm}`
+  const d = new Date(Date.UTC(2020, 0, 1, Math.floor(m / 60), m % 60))
+  return new Intl.DateTimeFormat(lang, { hour: 'numeric', minute: '2-digit', timeZone: 'UTC' }).format(d)
 }
 
 export interface CycleOption {
   cycles: number
-  time: string // HH:MM AM/PM
+  /** Minutes since midnight. */
+  minutes: number
   totalSleepH: number
 }
 
@@ -46,7 +45,7 @@ export interface CycleOption {
 export function bedtimesForWake(wakeMin: number): CycleOption[] {
   return [6, 5, 4, 3].map((cycles) => {
     const bedMin = wakeMin - (cycles * CYCLE_MIN + FALL_ASLEEP_MIN)
-    return { cycles, time: fmt(bedMin), totalSleepH: Math.round((cycles * CYCLE_MIN) / 6) / 10 }
+    return { cycles, minutes: bedMin, totalSleepH: Math.round((cycles * CYCLE_MIN) / 6) / 10 }
   })
 }
 
@@ -54,7 +53,7 @@ export function bedtimesForWake(wakeMin: number): CycleOption[] {
 export function wakesForBedtime(bedMin: number): CycleOption[] {
   return [6, 5, 4, 3].map((cycles) => {
     const wakeMin = bedMin + FALL_ASLEEP_MIN + cycles * CYCLE_MIN
-    return { cycles, time: fmt(wakeMin), totalSleepH: Math.round((cycles * CYCLE_MIN) / 6) / 10 }
+    return { cycles, minutes: wakeMin, totalSleepH: Math.round((cycles * CYCLE_MIN) / 6) / 10 }
   })
 }
 
@@ -80,33 +79,7 @@ export const SLEEP_CYCLE_SOURCES: ScienceSource[] = [
     year: 2015,
     title: "National Sleep Foundation's sleep time duration recommendations",
     journal: 'Sleep Health, 1(1):40–43',
-    contributes: 'Underpins the "aim for 5–6 cycles (7.5–9 h)" guidance for adults.',
+    contributes: 'Recommended sleep duration by age — the basis for the 5–6 cycles (7.5–9 h) guidance for adults.',
     url: 'https://doi.org/10.1016/j.sleh.2014.12.010',
-  },
-]
-
-export const SLEEP_CYCLE_METHODOLOGY =
-  'Sleep alternates between NREM and REM in cycles averaging about 90 minutes (Feinberg & Floyd 1979; IOM 2006). Waking near the end of a cycle — in lighter sleep — tends to feel less groggy than being woken from deep sleep, which is the idea behind cycle-timed alarms. From your fixed wake time we subtract whole 90-minute cycles plus about 15 minutes to fall asleep, and suggest bedtimes that land you on a boundary; for adults, 5–6 cycles (≈7.5–9 hours) aligns with the National Sleep Foundation recommendation. The 90-minute figure is an average: real cycles range ~70–120 minutes and the first is often shorter, so treat these as guides rather than exact times. Total sleep duration matters more than hitting a precise cycle. Educational only, not medical advice.'
-
-export const SLEEP_CYCLE_FAQ: Array<{ q: string; a: string }> = [
-  {
-    q: 'Where does the 90-minute sleep cycle come from?',
-    a: 'It is the long-standing average for the NREM–REM cycle in adults, documented by sleep researchers such as Feinberg & Floyd (1979) and summarised in the Institute of Medicine’s sleep physiology review (2006). Full citations are in the Sources section on this page. Real cycles vary (~70–120 minutes), so it is an average, not a fixed clock.',
-  },
-  {
-    q: 'What time should I go to bed to wake up at a set time?',
-    a: 'Work backwards from your wake time in 90-minute cycles, allowing ~15 minutes to fall asleep. Aiming to wake at the end of a cycle — typically after 5 or 6 cycles (7.5 or 9 hours) for adults — tends to feel less groggy than waking mid-cycle. This calculator lists those bedtimes for you.',
-  },
-  {
-    q: 'Why do I wake up groggy even after 8 hours?',
-    a: 'Grogginess (sleep inertia) is worst when an alarm pulls you out of deep NREM sleep mid-cycle. Waking nearer the end of a cycle, in lighter sleep, usually feels better — which is why cycle-timed bedtimes can help even when total sleep is unchanged. Inconsistent sleep timing, alcohol and a warm or bright room also worsen morning grogginess.',
-  },
-  {
-    q: 'Is the 90-minute cycle exact for everyone?',
-    a: 'No. It is a population average. Individual cycles range from about 70 to 120 minutes, the first cycle of the night is often shorter, and cycle length shifts across the night and with age. Use the suggested times as a helpful guide and adjust based on how you actually feel on waking.',
-  },
-  {
-    q: 'How many sleep cycles do I need?',
-    a: 'Most adults do best on 5–6 full cycles a night — roughly 7.5–9 hours — in line with the National Sleep Foundation and AASM recommendations of at least 7 hours. Four cycles (6 hours) is a workable minimum for the occasional short night, but routinely sleeping that little builds up sleep debt.',
   },
 ]
