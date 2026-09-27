@@ -287,16 +287,19 @@ function tCheckin(type: CheckinNotifType): string {
  * user (who keeps opening and re-planning) never actually receives one — it slides
  * forward — while a non-opener gets the whole series. Idempotent: cancels first.
  */
-export async function scheduleCheckinSeriesB(startVariant: 0 | 1): Promise<boolean> {
+export async function scheduleCheckinSeriesB(startVariant: 0 | 1, opts?: { fast?: boolean }): Promise<boolean> {
   if (!isSupported()) return false;
   const perm = await checkPermission();
   if (perm !== 'granted') return false;
   if (!getCheckinsEnabled()) return false;
 
   await cancelCheckinSeriesB();
+  const fast = !!opts?.fast; // INTERNAL test: minute spacing instead of days
   const notifications: ScheduleOptions['notifications'] = [];
   for (let i = 0; i < CHECKIN_B_COUNT; i++) {
-    const at = nextOccurrence(13, 0, (i + 1) * CHECKIN_B_INTERVAL_DAYS);
+    const at = fast
+      ? new Date(Date.now() + (i + 1) * 60 * 1000)                    // +1,+2,+3,+4 min
+      : nextOccurrence(13, 0, (i + 1) * CHECKIN_B_INTERVAL_DAYS);      // +3,+6,+9,+12 days
     const variant = ((startVariant + i) % 2) as 0 | 1;
     const type: CheckinNotifType = variant === 0 ? 'B1' : 'B2';
     notifications.push({
@@ -304,7 +307,7 @@ export async function scheduleCheckinSeriesB(startVariant: 0 | 1): Promise<boole
       title: checkinTitle(),
       body: tCheckin(type),
       schedule: { at, allowWhileIdle: true },
-      extra: { kind: 'checkin', checkin_type: type, segment: 'no_watch' as CheckinNotifSegment },
+      extra: { kind: 'checkin', checkin_type: type, segment: 'no_watch' as CheckinNotifSegment, simulated: fast },
     });
   }
   try {
@@ -313,6 +316,43 @@ export async function scheduleCheckinSeriesB(startVariant: 0 | 1): Promise<boole
   } catch (e) {
     console.warn('[notifications] checkin B series schedule failed', e);
     return false;
+  }
+}
+
+/** INTERNAL test: fire a single B1/B2 after a short delay (marked simulated). */
+export async function scheduleCheckinTestSingle(type: 'B1' | 'B2', delaySeconds = 4): Promise<boolean> {
+  if (!isSupported()) return false;
+  const perm = await checkPermission();
+  if (perm !== 'granted') return false;
+  try {
+    await LocalNotifications.schedule({
+      notifications: [{
+        id: 4090,
+        title: checkinTitle(),
+        body: tCheckin(type),
+        schedule: { at: new Date(Date.now() + delaySeconds * 1000), allowWhileIdle: true },
+        extra: { kind: 'checkin', checkin_type: type, segment: 'no_watch' as CheckinNotifSegment, simulated: true },
+      }],
+    });
+    return true;
+  } catch (e) {
+    console.warn('[notifications] checkin test single failed', e);
+    return false;
+  }
+}
+
+/** INTERNAL test: the app's pending (scheduled, not-yet-delivered) local notifications. */
+export async function getPendingNotifications(): Promise<Array<{ id: number; title?: string; at?: string }>> {
+  if (!isSupported()) return [];
+  try {
+    const res = await LocalNotifications.getPending();
+    return (res.notifications || []).map((n) => ({
+      id: n.id,
+      title: n.title,
+      at: (n.schedule && (n.schedule as { at?: Date }).at) ? new Date((n.schedule as { at?: Date }).at as Date).toLocaleString() : undefined,
+    })).sort((a, b) => a.id - b.id);
+  } catch {
+    return [];
   }
 }
 
@@ -333,7 +373,7 @@ export async function cancelCheckinSeriesB(): Promise<void> {
  * notification we scheduled. Use it to send a Tenjin event with the
  * copy_variant_id so we can A/B copy.
  */
-export function onNotificationOpened(cb: (info: { kind: string; copy_variant_id?: number; streak?: number; checkin_type?: CheckinNotifType; segment?: CheckinNotifSegment }) => void) {
+export function onNotificationOpened(cb: (info: { kind: string; copy_variant_id?: number; streak?: number; checkin_type?: CheckinNotifType; segment?: CheckinNotifSegment; simulated?: boolean }) => void) {
   if (!isSupported()) return () => {};
   const handle = LocalNotifications.addListener('localNotificationActionPerformed', (event) => {
     const extra = event.notification?.extra || {};
@@ -343,6 +383,7 @@ export function onNotificationOpened(cb: (info: { kind: string; copy_variant_id?
       streak: extra.streak,
       checkin_type: extra.checkin_type,
       segment: extra.segment,
+      simulated: extra.simulated === true,
     });
   });
   return () => {

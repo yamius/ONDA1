@@ -74,6 +74,8 @@ import {
   getCheckinsEnabled,
   scheduleCheckinSeriesB,
   cancelCheckinSeriesB,
+  scheduleCheckinTestSingle,
+  getPendingNotifications,
 } from './services/notifications';
 import { loadCheckinState, saveCheckinState, dayKey as checkinDayKey } from './lib/checkins';
 import { calculatePracticeOnd } from './utils/ondCalculator';
@@ -754,6 +756,10 @@ const OndaLevel1 = () => {
   // deviation. Tagged debug:true; the device is internal-marked so it's filtered
   // from the real funnel anyway.
   const [entryEventsSent, setEntryEventsSent] = useState(false);
+  // Calm check-ins test mode (task 16, INTERNAL only): A1/A2 alternation ref +
+  // pending-notification list display.
+  const checkinTestVariantRef = useRef<0 | 1>(0);
+  const [checkinPendingList, setCheckinPendingList] = useState<string | null>(null);
   const fireEntryEventsDebug = () => {
     try {
       track('baseline_filled', { source: 'watch', coverage_days: 14, debug: true });
@@ -4461,7 +4467,9 @@ const OndaLevel1 = () => {
 
     const offOpened = onNotificationOpened((info) => {
       if (info.kind === 'checkin') {
-        try { track('checkin_push_opened', { segment: info.segment, type: info.checkin_type }); } catch { /* noop */ }
+        // Simulated (internal test) opens route so the tester sees the screen, but
+        // never hit real analytics — same rule as the signal test mode.
+        if (!info.simulated) { try { track('checkin_push_opened', { segment: info.segment, type: info.checkin_type }); } catch { /* noop */ } }
         const type = info.checkin_type;
         if (type === 'A1' || type === 'B1') {
           startRecommendedPractice(null);            // → recommended practice
@@ -9858,6 +9866,28 @@ const OndaLevel1 = () => {
                   <button type="button" onClick={fireEntryEventsDebug} data-testid="fire-entry-events" className={`rounded px-2 py-1 ${isLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-400/15 text-emerald-200'}`}>Fire entry events → GA4</button>
                   {entryEventsSent && <span className="text-emerald-400">sent ✓</span>}
                 </div>
+                {/* Calm check-ins test mode (task 16). All sends marked simulated:true
+                    → no real analytics. Background the app after tapping to see the banner. */}
+                <div className="mt-2 mb-1 opacity-70">🌿 Calm check-ins</div>
+                <div className="flex items-center gap-2 flex-wrap">
+                  <button type="button" data-testid="cc-sim-steady" className={`rounded px-2 py-1 ${isLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-400/15 text-emerald-200'}`}
+                    onClick={() => { const type = checkinTestVariantRef.current === 0 ? 'A1' : 'A2'; checkinTestVariantRef.current = checkinTestVariantRef.current === 0 ? 1 : 0; try { HealthKitHeartRate.simulateCheckin({ type, delaySeconds: 4 }); } catch { /* noop */ } }}>
+                    4 steady → A1/A2
+                  </button>
+                  <button type="button" data-testid="cc-sim-a3" className={`rounded px-2 py-1 ${isLight ? 'bg-emerald-100 text-emerald-700' : 'bg-emerald-400/15 text-emerald-200'}`}
+                    onClick={() => { try { HealthKitHeartRate.simulateCheckin({ type: 'A3', delaySeconds: 4 }); } catch { /* noop */ } }}>A3</button>
+                  <button type="button" data-testid="cc-b1-now" className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}
+                    onClick={() => { scheduleCheckinTestSingle('B1', 4); }}>B1 now</button>
+                  <button type="button" data-testid="cc-b2-now" className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}
+                    onClick={() => { scheduleCheckinTestSingle('B2', 4); }}>B2 now</button>
+                  <button type="button" data-testid="cc-series-fast" className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}
+                    onClick={() => { scheduleCheckinSeriesB(0, { fast: true }); }}>Compress B series (min)</button>
+                  <button type="button" data-testid="cc-pending" className={`rounded px-2 py-1 ${isLight ? 'bg-violet-100 text-violet-700' : 'bg-white/10 text-white/80'}`}
+                    onClick={async () => { const p = await getPendingNotifications(); setCheckinPendingList(p.length ? p.map((n) => `#${n.id}${n.at ? ' @ ' + n.at : ''}`).join('\n') : 'none pending'); }}>Show scheduled</button>
+                  <button type="button" data-testid="cc-reset-primer" className={`rounded px-2 py-1 ${isLight ? 'bg-amber-100 text-amber-700' : 'bg-amber-400/15 text-amber-200'}`}
+                    onClick={() => { try { ['onda_camera_grants', 'onda_checkin_primer_dismissed', 'onda_checkin_primer_last'].forEach((k) => localStorage.removeItem(k)); } catch { /* noop */ } cameraGrantHandledRef.current = false; setCheckinPendingList('permission primer reset'); }}>Reset permission prompt</button>
+                </div>
+                {checkinPendingList && <pre className="mt-1 whitespace-pre-wrap opacity-70">{checkinPendingList}</pre>}
               </div>
             )}
         </nav>

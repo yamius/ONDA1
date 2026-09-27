@@ -131,6 +131,9 @@ export interface HealthKitHeartRatePlugin {
   startAnomalyMonitoring(): Promise<{ started: boolean }>;
   /** Post a time-sensitive local notification after a delay (internal signal test mode). */
   scheduleTestPush(options: { title?: string; body?: string; delaySeconds?: number }): Promise<{ ok: boolean }>;
+  /** INTERNAL test mode (task 16): post a Segment-A calm check-in NOW via the native
+   *  path (marked simulated). type A1|A2|A3; delaySeconds lets you background the app. */
+  simulateCheckin(options: { type: 'A1' | 'A2' | 'A3'; delaySeconds?: number; restingPulse?: number }): Promise<{ ok: boolean }>;
   /** Render an HTML report to a PDF ON-DEVICE and open the native share sheet. */
   exportPdf(options: {
     html: string;

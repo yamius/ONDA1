@@ -23,6 +23,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "setCheckinStrings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "scheduleTestPush", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "simulateCheckin", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportPdf", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "exportHtml", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startRealtimeMonitoring", returnType: CAPPluginReturnPromise),
@@ -951,6 +952,35 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         // Calm — NOT time-sensitive (a "you're fine" nudge must never break Focus/DND).
         let req = UNNotificationRequest(identifier: "onda_checkin", content: content, trigger: nil)
         UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+    }
+
+    /// INTERNAL test mode (task 16): post a Segment-A calm notification NOW (through
+    /// the same native path), without waiting for 4 real steady nights. Marked
+    /// simulated:true so JS never sends real analytics for it. A small delay lets
+    /// the tester background the app to see the banner (foreground never shows one).
+    @objc func simulateCheckin(_ call: CAPPluginCall) {
+        let d = UserDefaults.standard
+        let type = call.getString("type") ?? "A1"
+        let delay = call.getDouble("delaySeconds") ?? 4
+        let restingPulse = call.getInt("restingPulse") ?? 60
+        let title = d.string(forKey: "checkin_title") ?? "ONDA"
+        var body: String
+        switch type {
+        case "A2": body = d.string(forKey: "checkin_a2") ?? "Another 4 steady nights — your body's in its normal range."
+        case "A3": body = d.string(forKey: "checkin_a3") ?? "Your body's in its rhythm. Want more? Switch to Expert mode in Settings."
+        default:
+            let tmpl = d.string(forKey: "checkin_a1") ?? "4 nights in your usual range. Resting pulse steady around {x}."
+            body = tmpl.replacingOccurrences(of: "{{x}}", with: String(restingPulse)).replacingOccurrences(of: "{x}", with: String(restingPulse))
+        }
+        let content = UNMutableNotificationContent()
+        content.title = title
+        content.body = body
+        content.sound = .default
+        content.userInfo = ["checkin_type": type, "segment": "watch", "simulated": true]
+        let trigger = delay > 0 ? UNTimeIntervalNotificationTrigger(timeInterval: delay, repeats: false) : nil
+        let req = UNNotificationRequest(identifier: "onda_checkin_test_\(type)", content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(req, withCompletionHandler: nil)
+        call.resolve(["ok": true])
     }
 
     // Post a time-sensitive local notification after a delay — used by the internal
