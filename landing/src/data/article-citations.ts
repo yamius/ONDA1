@@ -174,6 +174,17 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.3389/fpsyt.2020.00467"
     }
   ],
+  "bohr-effect-oxygen-telemetry": [
+    {
+      "title": "The magnitude of the Bohr effect profoundly influences the shape and position of the blood oxygen equilibrium curve",
+      "authors": "Malte H et al.",
+      "year": 2021,
+      "journal": "Comp Biochem Physiol A Mol Integr Physiol",
+      "doi": "10.1016/j.cbpa.2020.110880",
+      "pmid": "33358924",
+      "url": "https://doi.org/10.1016/j.cbpa.2020.110880"
+    }
+  ],
   "box-breathing-how-it-works": [
     {
       "title": "How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing",
@@ -198,6 +209,137 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "authors": "Balban MY et al.",
       "year": 2023,
       "journal": "Cell Reports Medicine",
+      "doi": "10.1016/j.xcrm.2022.100895",
+      "pmid": "36630953",
+      "url": "https://doi.org/10.1016/j.xcrm.2022.100895"
+    }
+  ],
+  "breathing-exercises-older-adults": [
+    {
+      "title": "Benefits from one session of deep and slow breathing on vagal tone and anxiety in young and older adults",
+      "authors": "Magnon V et al.",
+      "year": 2021,
+      "journal": "Scientific Reports",
+      "doi": "10.1038/s41598-021-98736-9",
+      "pmid": "34588511",
+      "url": "https://doi.org/10.1038/s41598-021-98736-9"
+    }
+  ],
+  "breathing-for-focus-and-attention": [
+    {
+      "title": "Nasal Respiration Entrains Human Limbic Oscillations and Modulates Cognitive Function",
+      "authors": "Zelano C et al.",
+      "year": 2016,
+      "journal": "Journal of Neuroscience",
+      "doi": "10.1523/JNEUROSCI.2586-16.2016",
+      "pmid": "27927961",
+      "url": "https://doi.org/10.1523/JNEUROSCI.2586-16.2016"
+    },
+    {
+      "title": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress in Healthy Adults",
+      "authors": "Ma X et al.",
+      "year": 2017,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2017.00874",
+      "pmid": "28626434",
+      "url": "https://doi.org/10.3389/fpsyg.2017.00874"
+    }
+  ],
+  "breathing-lowers-stress-hormones": [
+    {
+      "title": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress in Healthy Adults",
+      "authors": "Ma X et al.",
+      "year": 2017,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2017.00874",
+      "pmid": "28626434",
+      "url": "https://doi.org/10.3389/fpsyg.2017.00874"
+    }
+  ],
+  "breathwork-command-line-interface": [
+    {
+      "title": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+      "authors": "Balban MY et al.",
+      "year": 2023,
+      "journal": "Cell Rep Med",
+      "doi": "10.1016/j.xcrm.2022.100895",
+      "pmid": "36630953",
+      "url": "https://doi.org/10.1016/j.xcrm.2022.100895"
+    },
+    {
+      "title": "How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing",
+      "authors": "Zaccaro A et al.",
+      "year": 2018,
+      "journal": "Front Hum Neurosci",
+      "doi": "10.3389/fnhum.2018.00353",
+      "pmid": "30245619",
+      "url": "https://doi.org/10.3389/fnhum.2018.00353"
+    }
+  ],
+  "cacao-stem-cells": [
+    {
+      "title": "Improvement of endothelial function with dietary flavanols is associated with mobilization of circulating angiogenic cells in patients with coronary artery disease",
+      "authors": "Heiss C et al.",
+      "year": 2010,
+      "journal": "J Am Coll Cardiol",
+      "doi": "10.1016/j.jacc.2010.03.039",
+      "pmid": "20620742",
+      "url": "https://doi.org/10.1016/j.jacc.2010.03.039"
+    }
+  ],
+  "caffeine-half-life-sleep-pressure": [
+    {
+      "title": "Actions of caffeine in the brain with special reference to factors that contribute to its widespread use",
+      "authors": "Fredholm BB et al.",
+      "year": 1999,
+      "journal": "Pharmacol Rev",
+      "pmid": "10049999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10049999/"
+    },
+    {
+      "title": "Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed",
+      "authors": "Drake C et al.",
+      "year": 2013,
+      "journal": "J Clin Sleep Med",
+      "doi": "10.5664/jcsm.3170",
+      "pmid": "24235903",
+      "url": "https://doi.org/10.5664/jcsm.3170"
+    }
+  ],
+  "caffeine-hrv-resting-heart-rate": [
+    {
+      "title": "Actions of caffeine in the brain with special reference to factors that contribute to its widespread use",
+      "authors": "Fredholm BB et al.",
+      "year": 1999,
+      "journal": "Pharmacol Rev",
+      "pmid": "10049999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10049999/"
+    },
+    {
+      "title": "Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed",
+      "authors": "Drake C et al.",
+      "year": 2013,
+      "journal": "J Clin Sleep Med",
+      "doi": "10.5664/jcsm.3170",
+      "pmid": "24235903",
+      "url": "https://doi.org/10.5664/jcsm.3170"
+    }
+  ],
+  "calm-your-nervous-system-down": [
+    {
+      "title": "How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing",
+      "authors": "Zaccaro A et al.",
+      "year": 2018,
+      "journal": "Front Hum Neurosci",
+      "doi": "10.3389/fnhum.2018.00353",
+      "pmid": "30245619",
+      "url": "https://doi.org/10.3389/fnhum.2018.00353"
+    },
+    {
+      "title": "Brief structured respiration practices enhance mood and reduce physiological arousal",
+      "authors": "Balban MY et al.",
+      "year": 2023,
+      "journal": "Cell Rep Med",
       "doi": "10.1016/j.xcrm.2022.100895",
       "pmid": "36630953",
       "url": "https://doi.org/10.1016/j.xcrm.2022.100895"
@@ -365,6 +507,46 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.3389/fpubh.2017.00222"
     }
   ],
+  "cold-exposure-vagus-nerve": [
+    {
+      "title": "Habituation of the cold shock response: A systematic review and meta-analysis",
+      "authors": "Barwood MJ et al.",
+      "year": 2024,
+      "journal": "J Therm Biol",
+      "doi": "10.1016/j.jtherbio.2023.103775",
+      "pmid": "38211547",
+      "url": "https://doi.org/10.1016/j.jtherbio.2023.103775"
+    },
+    {
+      "title": "Autonomic conflict: a different way to die during cold water immersion?",
+      "authors": "Shattock MJ et al.",
+      "year": 2012,
+      "journal": "J Physiol",
+      "doi": "10.1113/jphysiol.2012.229864",
+      "pmid": "22547634",
+      "url": "https://doi.org/10.1113/jphysiol.2012.229864"
+    }
+  ],
+  "cpg-neural-autopilot": [
+    {
+      "title": "The CPGs for Limbed Locomotion-Facts and Fiction",
+      "authors": "Grillner S et al.",
+      "year": 2021,
+      "journal": "Int J Mol Sci",
+      "doi": "10.3390/ijms22115882",
+      "pmid": "34070932",
+      "url": "https://doi.org/10.3390/ijms22115882"
+    },
+    {
+      "title": "Central pattern generators and the control of rhythmic movements",
+      "authors": "Marder E et al.",
+      "year": 2001,
+      "journal": "Curr Biol",
+      "doi": "10.1016/s0960-9822(01)00581-4",
+      "pmid": "11728329",
+      "url": "https://doi.org/10.1016/s0960-9822(01)00581-4"
+    }
+  ],
   "electric-medicine-neuromodulation": [
     {
       "title": "Non-invasive vagus nerve stimulation in healthy humans reduces sympathetic nerve activity",
@@ -417,6 +599,32 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1023/a:1009554825745",
       "pmid": "10999236",
       "url": "https://doi.org/10.1023/a:1009554825745"
+    }
+  ],
+  "how-much-sleep-do-you-need": [
+    {
+      "title": "The Cumulative Cost of Additional Wakefulness: Dose-Response Effects on Neurobehavioral Functions and Sleep Physiology From Chronic Sleep Restriction and Total Sleep Deprivation",
+      "authors": "Van Dongen et al.",
+      "year": 2003,
+      "journal": "Sleep",
+      "doi": "10.1093/sleep/26.2.117",
+      "url": "https://doi.org/10.1093/sleep/26.2.117"
+    },
+    {
+      "title": "National Sleep Foundation's sleep time duration recommendations: methodology and results summary",
+      "authors": "Hirshkowitz et al.",
+      "year": 2015,
+      "journal": "Sleep Health",
+      "doi": "10.1016/j.sleh.2014.12.010",
+      "url": "https://doi.org/10.1016/j.sleh.2014.12.010"
+    },
+    {
+      "title": "Recommended Amount of Sleep for a Healthy Adult: A Joint Consensus Statement of the American Academy of Sleep Medicine and Sleep Research Society",
+      "authors": "Watson et al.",
+      "year": 2015,
+      "journal": "Sleep",
+      "doi": "10.5665/sleep.4716",
+      "url": "https://doi.org/10.5665/sleep.4716"
     }
   ],
   "how-to-beat-jet-lag": [
@@ -662,6 +870,78 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.2196/27487",
       "pmid": "35040799",
       "url": "https://doi.org/10.2196/27487"
+    }
+  ],
+  "hrv-harmony-of-rhythms": [
+    {
+      "title": "Heart rate variability biofeedback: how and why does it work?",
+      "authors": "Lehrer et al.",
+      "year": 2014,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2014.00756",
+      "url": "https://doi.org/10.3389/fpsyg.2014.00756"
+    }
+  ],
+  "humming-breath-vagus": [
+    {
+      "title": "A randomized trial of the immediate effect of Bee-Humming Breathing exercise on blood pressure and heart rate variability in patients with essential hypertension",
+      "authors": "Ghati N et al.",
+      "year": 2021,
+      "journal": "Explore (NY)",
+      "doi": "10.1016/j.explore.2020.03.009",
+      "pmid": "32620379",
+      "url": "https://doi.org/10.1016/j.explore.2020.03.009"
+    }
+  ],
+  "idle-state-alpha-rhythms": [
+    {
+      "title": "Shaping functional architecture by oscillatory alpha activity: gating by inhibition",
+      "authors": "Jensen O et al.",
+      "year": 2010,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2010.00186",
+      "pmid": "21119777",
+      "url": "https://doi.org/10.3389/fnhum.2010.00186"
+    },
+    {
+      "title": "EEG alpha oscillations: the inhibition-timing hypothesis",
+      "authors": "Klimesch W et al.",
+      "year": 2007,
+      "journal": "Brain Research Reviews",
+      "doi": "10.1016/j.brainresrev.2006.06.003",
+      "pmid": "16887192",
+      "url": "https://doi.org/10.1016/j.brainresrev.2006.06.003"
+    }
+  ],
+  "interoceptive-precision-sensor-calibration": [
+    {
+      "title": "Interoceptive inference, emotion, and the embodied self",
+      "authors": "Seth AK",
+      "year": 2013,
+      "journal": "Trends in Cognitive Sciences",
+      "doi": "10.1016/j.tics.2013.09.007",
+      "pmid": "24126130",
+      "url": "https://doi.org/10.1016/j.tics.2013.09.007"
+    }
+  ],
+  "jhana-meditation-stages": [
+    {
+      "title": "Intensive whole-brain 7T MRI case study of volitional control of brain activity in deep absorptive meditation states",
+      "authors": "Yang WFZ et al.",
+      "year": 2024,
+      "journal": "Cerebral Cortex",
+      "doi": "10.1093/cercor/bhad408",
+      "pmid": "37943791",
+      "url": "https://doi.org/10.1093/cercor/bhad408"
+    },
+    {
+      "title": "Case study of ecstatic meditation: fMRI and EEG evidence of self-stimulating a reward system",
+      "authors": "Hagerty MR et al.",
+      "year": 2013,
+      "journal": "Neural Plasticity",
+      "doi": "10.1155/2013/653572",
+      "pmid": "23738149",
+      "url": "https://doi.org/10.1155/2013/653572"
     }
   ],
   "mbsr-mindfulness-clinical-evidence": [
@@ -917,6 +1197,25 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "journal": "The Lancet",
       "doi": "10.1016/S0140-6736(14)62000-6",
       "url": "https://doi.org/10.1016/S0140-6736(14)62000-6"
+    }
+  ],
+  "name-it-to-tame-it-affect-labeling": [
+    {
+      "title": "Putting feelings into words: affect labeling disrupts amygdala activity in response to affective stimuli",
+      "authors": "Lieberman MD et al.",
+      "year": 2007,
+      "journal": "Psychological Science",
+      "doi": "10.1111/j.1467-9280.2007.01916.x",
+      "pmid": "17576282",
+      "url": "https://doi.org/10.1111/j.1467-9280.2007.01916.x"
+    },
+    {
+      "title": "Writing About Emotional Experiences as a Therapeutic Process",
+      "authors": "Pennebaker JW",
+      "year": 1997,
+      "journal": "Psychological Science",
+      "doi": "10.1111/j.1467-9280.1997.tb00403.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.1997.tb00403.x"
     }
   ],
   "nightly-flush-glymphatic-neural-cache": [
@@ -1354,6 +1653,158 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "journal": "Frontiers in Human Neuroscience",
       "doi": "10.3389/fnhum.2018.00397",
       "url": "https://doi.org/10.3389/fnhum.2018.00397"
+    }
+  ],
+  "vagus-nerve-master-key": [
+    {
+      "title": "Vagus Nerve as Modulator of the Brain-Gut Axis in Psychiatric and Inflammatory Disorders.",
+      "authors": "Breit et al.",
+      "year": 2018,
+      "journal": "Front Psychiatry",
+      "doi": "10.3389/fpsyt.2018.00044",
+      "pmid": "29593576",
+      "url": "https://doi.org/10.3389/fpsyt.2018.00044"
+    }
+  ],
+  "ventral-tegmental-core-motivational-salience": [
+    {
+      "title": "Dopamine in motivational control: rewarding, aversive, and alerting.",
+      "authors": "Bromberg-Martin et al.",
+      "year": 2010,
+      "journal": "Neuron",
+      "doi": "10.1016/j.neuron.2010.11.022",
+      "pmid": "21144997",
+      "url": "https://doi.org/10.1016/j.neuron.2010.11.022"
+    }
+  ],
+  "vipassana-meditation-attention-brain": [
+    {
+      "title": "Meditation experience is associated with increased cortical thickness.",
+      "authors": "Lazar et al.",
+      "year": 2005,
+      "journal": "Neuroreport",
+      "doi": "10.1097/01.wnr.0000186598.66243.19",
+      "pmid": "16272874",
+      "url": "https://doi.org/10.1097/01.wnr.0000186598.66243.19"
+    }
+  ],
+  "vo2max-increase-aerobic-engine": [
+    {
+      "title": "Aerobic high-intensity intervals improve VO2max more than moderate training.",
+      "authors": "Helgerud et al.",
+      "year": 2007,
+      "journal": "Med Sci Sports Exerc",
+      "doi": "10.1249/mss.0b013e3180304570",
+      "pmid": "17414804",
+      "url": "https://doi.org/10.1249/mss.0b013e3180304570"
+    },
+    {
+      "title": "Accelerated longitudinal decline of aerobic capacity in healthy older adults.",
+      "authors": "Fleg et al.",
+      "year": 2005,
+      "journal": "Circulation",
+      "doi": "10.1161/CIRCULATIONAHA.105.545459",
+      "pmid": "16043637",
+      "url": "https://doi.org/10.1161/CIRCULATIONAHA.105.545459"
+    }
+  ],
+  "wearables-train-not-just-track": [
+    {
+      "title": "Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring",
+      "authors": "Plews DJ et al.",
+      "year": 2013,
+      "journal": "Sports Medicine",
+      "doi": "10.1007/s40279-013-0071-8",
+      "pmid": "23852425",
+      "url": "https://doi.org/10.1007/s40279-013-0071-8"
+    },
+    {
+      "title": "Heart Rate Variability Biofeedback Improves Emotional and Physical Health and Performance: A Systematic Review and Meta Analysis",
+      "authors": "Lehrer P et al.",
+      "year": 2020,
+      "journal": "Applied Psychophysiology and Biofeedback",
+      "doi": "10.1007/s10484-020-09466-z",
+      "pmid": "32385728",
+      "url": "https://doi.org/10.1007/s10484-020-09466-z"
+    }
+  ],
+  "what-is-my-chronotype": [
+    {
+      "title": "A self-assessment questionnaire to determine morningness-eveningness in human circadian rhythms",
+      "authors": "Horne JA, Östberg O",
+      "year": 1976,
+      "journal": "International Journal of Chronobiology",
+      "pmid": "1027738",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1027738/"
+    },
+    {
+      "title": "Life between clocks: daily temporal patterns of human chronotypes",
+      "authors": "Roenneberg T et al.",
+      "year": 2003,
+      "journal": "Journal of Biological Rhythms",
+      "doi": "10.1177/0748730402239679",
+      "pmid": "12568247",
+      "url": "https://doi.org/10.1177/0748730402239679"
+    },
+    {
+      "title": "Circadian typology: a comprehensive review",
+      "authors": "Adan A et al.",
+      "year": 2012,
+      "journal": "Chronobiology International",
+      "doi": "10.3109/07420528.2012.719971",
+      "pmid": "23004349",
+      "url": "https://doi.org/10.3109/07420528.2012.719971"
+    }
+  ],
+  "what-to-do-after-low-hrv-reading": [
+    {
+      "title": "Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring",
+      "authors": "Plews DJ et al.",
+      "year": 2013,
+      "journal": "Sports Medicine",
+      "doi": "10.1007/s40279-013-0071-8",
+      "pmid": "23852425",
+      "url": "https://doi.org/10.1007/s40279-013-0071-8"
+    }
+  ],
+  "what-your-apple-watch-records": [
+    {
+      "title": "Accuracy in Wrist-Worn, Sensor-Based Measurements of Heart Rate and Energy Expenditure in a Diverse Cohort",
+      "authors": "Shcherbina A et al.",
+      "year": 2017,
+      "journal": "Journal of Personalized Medicine",
+      "doi": "10.3390/jpm7020003",
+      "pmid": "28538708",
+      "url": "https://doi.org/10.3390/jpm7020003"
+    },
+    {
+      "title": "Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring",
+      "authors": "Plews DJ et al.",
+      "year": 2013,
+      "journal": "Sports Medicine",
+      "doi": "10.1007/s40279-013-0071-8",
+      "pmid": "23852425",
+      "url": "https://doi.org/10.1007/s40279-013-0071-8"
+    }
+  ],
+  "wim-hof-breathing-inflammation": [
+    {
+      "title": "Voluntary activation of the sympathetic nervous system and attenuation of the innate immune response in humans",
+      "authors": "Kox M et al.",
+      "year": 2014,
+      "journal": "PNAS",
+      "doi": "10.1073/pnas.1322174111",
+      "pmid": "24799686",
+      "url": "https://doi.org/10.1073/pnas.1322174111"
+    },
+    {
+      "title": "The Effects of Cold Exposure Training and a Breathing Exercise on the Inflammatory Response in Humans: A Pilot Study",
+      "authors": "Zwaag J et al.",
+      "year": 2022,
+      "journal": "Psychosomatic Medicine",
+      "doi": "10.1097/PSY.0000000000001065",
+      "pmid": "35213875",
+      "url": "https://doi.org/10.1097/PSY.0000000000001065"
     }
   ],
   "wind-down-before-sleep-breathing": [
