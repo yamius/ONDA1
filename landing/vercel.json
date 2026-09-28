@@ -18,6 +18,7 @@
       "destination": "/articles/cognitive-architecture-neural-throughput",
       "statusCode": 301
     },
+    { "source": "/:lang(es|ru|uk)/reviews/:slug(amazfit-helio-ring|apple-watch-series-12|apple-watch-ultra-4|circular-ring-2|fitbit-air|garmin-fenix-8|luna-ring|oura-ring-5|ringconn-gen-3|ultrahuman-ring-pro)", "destination": "/reviews/:slug", "permanent": true },
     { "source": "/p/mundi", "destination": "/decks/onda-pitch-mundi-x9k4.pdf", "statusCode": 302 },
     { "source": "/p/info", "destination": "/decks/onda-eurostar-framework-r3p8.pdf", "statusCode": 302 },
     { "source": "/p/radboud", "destination": "/decks/onda-radboud-donders-m4t7.pdf", "statusCode": 302 },

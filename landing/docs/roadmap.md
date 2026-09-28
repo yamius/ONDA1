@@ -356,3 +356,21 @@ eventually replace the score cards (needs owner accounts).
 - Images: 74 PNG sources → 147 WebP + 138 AVIF variants
 - TITLE_MAX 60 / DESC_MAX 160
 - Build: 843 pages, validate-seo clean, ~61s warm
+
+---
+
+## Phase 7 — Translation quality & freshness (opened 2026-09-28)
+
+**Context:** translations now follow one schema + workflow (`docs/translations.md`;
+`scripts/i18n-export.ts` → translate → `scripts/i18n-import.ts --publish`), and the build
+reports gaps in `.cache/translation-report.md` and `.cache/localized-english.md`.
+The first full audit (2026-09-28) found:
+
+| # | Task | Scope | Acceptance | Status |
+|---|---|---|---|---|
+| 7.1 | Unpublish localized reviews that have no translation (category pilots published every review in the category, incl. untranslated ones → EN text under /es /ru /uk URLs) | 10 HRV-tracker reviews × es/ru/uk = 30 URLs | Pilot categories publish only reviews with a translation; report shows 0 "published, not translated". The 30 old URLs 301 → EN via `vercel.json` (redirect `/:lang(es|ru|uk)/reviews/:slug(…)`) — **remove a slug from that redirect when its translation is published** | ✅ 2026-09-28 |
+| 7.2 | Refresh stale translations: EN was edited after translating — incl. the 2026-06-07 honesty/claims audit (softened claims, new titles/descriptions) and later internal-link sweeps. Translations still carry the old, stronger claims | ~210 articles (es 74, zh 53, uk 48, ru 37) + ~90 reviews; 661 review / 425 article / 161 glossary links missing | Re-translate from current EN via the pipeline, audited articles first, es + ru first; report shows 0 "behind EN" | ⏳ |
+| 7.3 | Sample quality audit per language (native-ness, calques, terminology consistency e.g. HRV vs ВСР, claim drift vs EN) | 3–4 items × 11 languages, agent editor | Score + list of recurring errors per language; fixes applied | ⏳ |
+| 7.4 | Native human review for es + ru key pages (principle #5 — no MT at scale without sample human review) | ~10 top pages per language | Reviewer sign-off; corrections merged | ⏳ owner (needs reviewer) |
+| 7.5 | Hot-item translation cadence: one high-traffic article/review/comparison per step into all 11 languages (≤ 11 new URLs per step — principle #6) | by GSC impressions / AI-Overview citations | Done: Resona Health VIBE review, Apple Watch Series 12 vs Whoop 5.0 | 🔄 ongoing |
+| 7.6 | Russian glossary (215 terms translated) is held by the drip schedule — decide whether to publish earlier | 215 URLs (release in batches) | Decision + schedule | ⏳ owner |

@@ -851,12 +851,33 @@ export const REVIEW_PILOT_LANGS: readonly string[] = Object.keys(REVIEW_PILOTS)
 
 /** Prerendered review routes for one language pilot — hub, methodology,
  *  every review and comparison in the piloted categories. */
+/** Translated review/comparison slugs per language (public/locales/<lang>/reviews.json).
+ *  A category pilot publishes ONLY these — an untranslated review in a live category
+ *  would otherwise go out as English text under a /<lang>/ URL (roadmap 7.1).
+ *  A review "is translated" when its body has the long-form text, not just the
+ *  card lines (verdict/productType) that head-to-head pages borrow. */
+const translatedReviewSlugs: Record<string, { reviews: Set<string>; comparisons: Set<string> }> = (() => {
+  const out: Record<string, { reviews: Set<string>; comparisons: Set<string> }> = {}
+  for (const lang of ['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt']) {
+    let f: { bodies?: Record<string, { content?: string }>; comparisons?: Record<string, unknown> } = {}
+    try {
+      f = JSON.parse(readFileSync(join(__dirname, '..', 'public', 'locales', lang, 'reviews.json'), 'utf-8'))
+    } catch { /* no reviews file */ }
+    out[lang] = {
+      reviews: new Set(Object.entries(f.bodies ?? {}).filter(([, b]) => typeof b?.content === 'string').map(([s]) => s)),
+      comparisons: new Set(Object.keys(f.comparisons ?? {})),
+    }
+  }
+  return out
+})()
+
 function pilotReviewRoutes(lang: string, cats: ReadonlySet<string>): string[] {
+  const tr = translatedReviewSlugs[lang]
   return [
     `/${lang}/reviews`,
     `/${lang}/reviews/methodology`,
-    ...reviews.filter((r) => cats.has(r.category)).map((r) => `/${lang}/reviews/${r.slug}`),
-    ...comparisons.filter((c) => cats.has(c.category)).map((c) => `/${lang}/reviews/compare/${c.slug}`),
+    ...reviews.filter((r) => cats.has(r.category) && tr?.reviews.has(r.slug)).map((r) => `/${lang}/reviews/${r.slug}`),
+    ...comparisons.filter((c) => cats.has(c.category) && tr?.comparisons.has(c.slug)).map((c) => `/${lang}/reviews/compare/${c.slug}`),
   ]
 }
 
@@ -982,7 +1003,8 @@ export function reviewLocalizedLangs(slug: string): readonly string[] {
   const langs: string[] = ['en']
   if (cat) {
     for (const [lang, cats] of Object.entries(REVIEW_PILOTS)) {
-      if (cats.has(cat)) langs.push(lang)
+      const tr = translatedReviewSlugs[lang]
+      if (cats.has(cat) && (rev ? tr?.reviews.has(slug) : tr?.comparisons.has(slug))) langs.push(lang)
     }
   }
   for (const lang of headToHeadLangsBySlug[slug] ?? []) langs.push(lang)
