@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { articles } from '../data/articles'
+import { ARTICLE_CATALOG as articles } from '../generated/article-catalog'
 import { ARTICLE_TOPIC_HUBS } from '../data/article-topics'
 import { hubAvailable, localizedArticlesForTopic, unhubbedLocalizedArticles } from '../data/article-topic-listing'
 import { LOCALIZED_COVERAGE } from '../data/localized-coverage.generated'

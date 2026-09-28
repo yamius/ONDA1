@@ -4,7 +4,7 @@
  * (hub <lastmod>) so the visible list, the structured data and the sitemap
  * always agree. Only articles that exist in the registry are listed.
  */
-import { articles, type Article } from './articles'
+import { ARTICLE_CATALOG as articles, type ArticleMeta as Article } from '../generated/article-catalog'
 import { ARTICLE_DATES } from './article-dates.generated'
 import { LOCALIZED_COVERAGE } from './localized-coverage.generated'
 import {

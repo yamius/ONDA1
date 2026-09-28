@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { articles } from '../data/articles'
+import { ARTICLE_CATALOG as articles } from '../generated/article-catalog'
 import { OptimizedImage } from './OptimizedImage'
 import { langFromPath, langHref } from '../i18n'
 

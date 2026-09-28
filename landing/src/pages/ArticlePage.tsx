@@ -6,12 +6,11 @@ import rehypeSlug from 'rehype-slug'
 import remarkGfm from 'remark-gfm'
 import { NotFoundPage } from './NotFoundPage'
 import { OptimizedImage } from '../components/OptimizedImage'
-import { getArticleBySlug } from '../data/articles'
-import { glossaryTerms } from '../data/glossary'
+import { readArticle } from '../lib/article-content'
+import { GLOSSARY_INDEX as glossaryTerms } from '../generated/glossary-index'
 import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
-import { ARTICLE_FAQ } from '../data/article-faq'
 import { getPrimaryHubForArticle } from '../data/article-topics'
 import { langFromPath, langHref } from '../i18n'
 
@@ -263,7 +262,10 @@ export function ArticlePage() {
   const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tArticles } = useTranslation('articles')
   const { t: tGloss } = useTranslation('glossary')
-  const article = slug ? getArticleBySlug(slug) : undefined
+  // Full body of THIS article only (browser: fetched per article, suspends until in;
+  // prerender: in-memory registry). See src/lib/article-content.ts.
+  const resolved = slug ? readArticle(slug, lang) : undefined
+  const article = resolved?.article
 
   // Translation helpers — fall back to original EN field if no translation exists.
   const tField = (key: string, fallback: string): string =>
@@ -280,7 +282,7 @@ export function ArticlePage() {
   // bodies.<slug>.faq is authored (never an EN block on a localized page).
   const tFaq: { question: string; answer: string }[] = (() => {
     if (!article) return []
-    if (lang === 'en') return ARTICLE_FAQ[article.slug] ?? []
+    if (lang === 'en') return resolved?.faq ?? []
     const fromI18n = tArticles(`bodies.${slug}.faq`, { returnObjects: true, defaultValue: null }) as
       | { question: string; answer: string }[]
       | null

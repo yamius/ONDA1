@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, matchRoutes, createRoutesFromElements } f
 import './index.css'
 import { Layout } from './components/Layout'
 import i18n, { langFromPath, SUPPORTED_LANGS, ensureNamespace } from './i18n'
+import { loadArticle } from './lib/article-loader'
 
 // Sync language with URL before hydration so first paint matches the prerendered HTML
 void i18n.changeLanguage(langFromPath(window.location.pathname))
@@ -74,7 +75,7 @@ const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricP
 const EmotonPage         = lazyNs('emoton', () => import('./pages/EmotonPage').then(m => ({ default: m.EmotonPage })))
 const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
 const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
-const ArticlesSlugRouter = lazyNs(['articles', 'glossary'], () => import('./components/ArticlesSlugRouter'))
+const ArticlesSlugRouter = lazyNs(['articles', 'glossary-light'], () => import('./components/ArticlesSlugRouter'))
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
 const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
 const HowItWorksPage        = lazy(() => import('./pages/HowItWorksPage').then(m => ({ default: m.HowItWorksPage })))
@@ -467,10 +468,16 @@ const app = (
 // preload target can never drift from what actually mounts.
 const container = document.getElementById('root')!
 const matched = matchRoutes(createRoutesFromElements(routeElements), window.location.pathname) ?? []
-const preloads = matched
+const preloads: Promise<unknown>[] = matched
   .map((m) => (m.route.element as ReactElement | undefined)?.type)
   .filter((t): t is Preloadable => typeof t === 'function' && 'preload' in (t as object))
   .map((t) => t.preload())
+// Article pages: also fetch this one article's body before hydrating, so the
+// first render matches the prerendered HTML without suspending.
+const articleMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?articles\/([^/]+)\/?$/)
+if (articleMatch && articleMatch[2] !== 'topic') {
+  preloads.push(loadArticle(articleMatch[2], langFromPath(window.location.pathname)))
+}
 void Promise.all(preloads)
   .catch(() => { /* a chunk/namespace that fails to preload still renders below (it just suspends once) */ })
   .then(() => {

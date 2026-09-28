@@ -10,7 +10,8 @@ import { getTermBySlug, glossaryTerms, glossaryLayer } from '../data/glossary'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
-import { getArticlesForTerm } from '../data/articles'
+import { TERM_ARTICLES } from '../generated/term-articles'
+import { getArticleMeta } from '../lib/article-content'
 import { langFromPath, langHref } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -150,7 +151,9 @@ export function GlossaryTermPage() {
     return <NotFoundPage />
   }
 
-  const relatedArticles = getArticlesForTerm(term.slug, term.title)
+  const relatedArticles = (TERM_ARTICLES[term.slug] ?? [])
+    .map((s) => getArticleMeta(s))
+    .filter((a): a is NonNullable<typeof a> => !!a)
 
   const relatedTerms = term.relatedSlugs
     ? term.relatedSlugs

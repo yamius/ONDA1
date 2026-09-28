@@ -100,16 +100,53 @@ export function isLang(s: string | undefined | null): s is Lang {
  * scripts/prerender.ts registers every bundle from disk before rendering.
  */
 const _nsCache = new Map<string, Promise<void>>()
+type JsonLoader = () => Promise<unknown>
+let _loaders: { locale: Record<string, JsonLoader>; generated: Record<string, JsonLoader> } | null = null
+// Explicit file lists so the FULL per-language articles.json (every body of a
+// language) is never emitted as a browser chunk. Built lazily: this module is also
+// imported by the Node prerender, where import.meta.glob does not exist and
+// ensureNamespace is never called.
+function loaders() {
+  if (!_loaders) {
+    _loaders = {
+      // (A negated pattern applies to the whole list, so the tiny EN articles.json —
+      // UI strings only, EN bodies live in src/data/articles — is its own glob.)
+      locale: {
+        ...import.meta.glob(['../public/locales/*/*.json', '!../public/locales/*/articles.json'], { import: 'default' }),
+        ...import.meta.glob('../public/locales/en/articles.json', { import: 'default' }),
+      },
+      generated: import.meta.glob('./generated/i18n/*/*.json', { import: 'default' }),
+    }
+  }
+  return _loaders
+}
+/**
+ * Which file backs (language, namespace) in the browser:
+ *  - 'articles' (non-EN): light index — titles/descriptions only; one article's full
+ *    body is fetched on demand by src/lib/article-loader.ts.
+ *  - 'glossary-light': the 'glossary' namespace with only title/shortDescription per
+ *    term (article pages); glossary pages load the full 'glossary'.
+ */
+function loaderFor(l: Lang, ns: string): JsonLoader | undefined {
+  const { locale, generated } = loaders()
+  if (ns === 'glossary-light') {
+    return l === 'en' ? locale['../public/locales/en/glossary.json'] : generated[`./generated/i18n/${l}/glossary-light.json`]
+  }
+  if (ns === 'articles' && l !== 'en') return generated[`./generated/i18n/${l}/articles.json`]
+  return locale[`../public/locales/${l}/${ns}.json`]
+}
 export function ensureNamespace(lng: Lang, ns: string): Promise<void> {
   const langs: Lang[] = lng === 'en' ? ['en'] : [lng, 'en']
+  const target = ns === 'glossary-light' ? 'glossary' : ns
   return Promise.all(
     langs.map((l) => {
       const key = `${l}:${ns}`
       let p = _nsCache.get(key)
       if (!p) {
-        p = import(`../public/locales/${l}/${ns}.json`)
-          .then((m: { default: Record<string, unknown> }) => {
-            i18n.addResourceBundle(l, ns, m.default, true, true)
+        const load = loaderFor(l, ns)
+        p = (load ? load() : Promise.reject(new Error('no locale file')))
+          .then((data) => {
+            i18n.addResourceBundle(l, target, data as Record<string, unknown>, true, true)
           })
           .catch(() => {
             /* missing locale file — i18next falls back to the 'en' bundle */

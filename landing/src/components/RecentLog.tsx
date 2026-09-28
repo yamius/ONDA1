@@ -17,7 +17,7 @@
  * up via the same helper.
  */
 import { Link, useLocation } from 'react-router-dom'
-import { articles } from '../data/articles'
+import { ARTICLE_CATALOG as articles } from '../generated/article-catalog'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { langFromPath, langHref } from '../i18n'
 

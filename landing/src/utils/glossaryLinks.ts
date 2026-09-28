@@ -4,7 +4,7 @@
  * Skips replacements inside existing markdown links and code blocks.
  */
 
-import { glossaryTerms } from '../data/glossary'
+import { GLOSSARY_INDEX as glossaryTerms } from '../generated/glossary-index'
 import { LOCALIZED_COVERAGE } from '../data/localized-coverage.generated'
 
 /** Common abbreviations for glossary terms (used in articles). */

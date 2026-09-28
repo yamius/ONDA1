@@ -11,7 +11,7 @@ import { useParams, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { getTopicBySlug } from '../data/topics'
-import { getArticleBySlug } from '../data/articles'
+import { getArticleMeta as getArticleBySlug } from '../lib/article-content'
 import { getTermBySlug } from '../data/glossary'
 
 export function TopicPage() {

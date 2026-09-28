@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { articles } from '../data/articles'
+import { ARTICLE_CATALOG as articles } from '../generated/article-catalog'
 import { glossaryTerms } from '../data/glossary'
 import { parts } from './PartPage'
 import { levelsData } from '../data/levels'
