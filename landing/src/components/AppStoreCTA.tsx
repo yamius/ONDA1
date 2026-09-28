@@ -12,6 +12,8 @@
  * - Visible content only — never put this in JSON-LD.
  */
 import { useEffect, useState } from 'react'
+import { useLocation } from 'react-router-dom'
+import { langFromPath } from '../i18n'
 import { appStoreUrl } from '../config/appStore'
 
 export type CtaVariant = 'general' | 'hrv' | 'meditation' | 'glossary' | 'tool'
@@ -164,7 +166,10 @@ interface Props {
 
 export default function AppStoreCTA({ ct, variant = 'general', lang, layout = 'block', className = '' }: Props) {
   const href = appStoreUrl(ct)
-  const l = asLang(lang)
+  // Most callers don't pass `lang` — take it from the URL so a localized page
+  // never shows the English CTA.
+  const { pathname } = useLocation()
+  const l = asLang(lang ?? langFromPath(pathname))
   const text = COPY[variant][l]
   if (layout === 'line') {
     return (

@@ -157,6 +157,9 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`about-${l}`} path={`/${l}/about`} element={<AboutPage />} />
           ))}
           <Route path="/glossary"    element={<GlossaryPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`glossary-${l}`} path={`/${l}/glossary`} element={<GlossaryPage />} />
+          ))}
           <Route path="/articles"    element={<ArticlesPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`articles-${l}`} path={`/${l}/articles`} element={<ArticlesPage />} />
@@ -171,6 +174,9 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`sitemap-${l}`} path={`/${l}/sitemap`} element={<SitemapPage />} />
           ))}
           <Route path="/glossary/:slug"  element={<GlossaryTermPage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+            <Route key={`gloss-${l}`} path={`/${l}/glossary/:slug`} element={<GlossaryTermPage />} />
+          ))}
           {/* ONDA Library topic hubs — must mirror main.tsx or SSR renders 404. */}
           <Route path="/articles/topic/:topic" element={<ArticleTopicHubPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
