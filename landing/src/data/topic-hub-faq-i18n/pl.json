@@ -1,0 +1,225 @@
+{
+  "heading": "Najczęstsze pytania: {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "Jakie jest prawidłowe tętno spoczynkowe w zależności od wieku?",
+        "a": "U dorosłych w każdym wieku prawidłowe tętno spoczynkowe wynosi od 60 do 100 uderzeń na minutę; duże zmiany zachodzą w dzieciństwie — noworodki mają 100–160 bpm, a tętno stabilizuje się w okresie nastoletnim. U wytrenowanych dorosłych często wynosi 40–59 bpm. W granicach normy więcej mówi Twój własny trend niż średnia dla populacji.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Tętno spoczynkowe a wiek"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Kalkulator tętna spoczynkowego"
+          }
+        ]
+      },
+      {
+        "q": "Które tętno spoczynkowe jest zdrowsze: 50 czy 80?",
+        "a": "Obie wartości mieszczą się w normie, ale niższe tętno spoczynkowe zwykle odzwierciedla lepszą wydolność układu krążenia, bo silniejsze serce przepompowuje więcej krwi przy każdym uderzeniu. W dużych badaniach populacyjnych tętno bliżej górnej granicy normy wiąże się z wyższym ryzykiem w dłuższej perspektywie. Najważniejsze jest to, gdzie jesteś na tle swojej grupy wiekowej i czy Twój wynik nie rośnie z czasem.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Tętno spoczynkowe a wiek"
+          }
+        ]
+      },
+      {
+        "q": "Czy tętno spoczynkowe 45 to dobry wynik?",
+        "a": "U wytrenowanych sportowców wytrzymałościowych tętno spoczynkowe w okolicach 40–49 bpm jest częste i zwykle świadczy o dobrej formie. Jeśli nie jesteś bardzo aktywny, a Twoje tętno jest tak niskie — zwłaszcza gdy towarzyszą mu zawroty głowy, omdlenia, nietypowe zmęczenie lub duszność — warto skonsultować się z lekarzem.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Tętno spoczynkowe a wiek"
+          }
+        ]
+      },
+      {
+        "q": "Jakie tętno spoczynkowe jest niebezpieczne?",
+        "a": "Tętno spoczynkowe, które stale przekracza 100 bpm (tachykardia) lub spada poniżej 60 bpm u osoby niebędącej sportowcem (bradykardia), wykracza poza typowy zakres dla dorosłych i warto omówić je z lekarzem. Niezwłocznie szukaj pomocy, jeśli bardzo szybkiemu lub bardzo wolnemu tętnu towarzyszy ból w klatce piersiowej, omdlenie lub duszność.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Jak rozmawiać z lekarzem o danych z zegarka"
+          }
+        ]
+      },
+      {
+        "q": "Jakie HRV jest dobre?",
+        "a": "Nie ma jednej dobrej wartości HRV: spada ona z wiekiem i różni się w zależności od urządzenia. Mediana nocnego RMSSD to około 58 ms u dwudziestolatków i około 30 ms u sześćdziesięciolatków, przy szerokim zakresie zdrowych wartości. Dobre HRV to takie, które jest stabilne lub rośnie w porównaniu z Twoją własną linią bazową.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "Prawidłowe HRV a wiek"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 pytania o HRV — odpowiedzi"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "Kalkulator HRV"
+          }
+        ]
+      },
+      {
+        "q": "Dlaczego mam wyższe tętno spoczynkowe niż zwykle?",
+        "a": "Najczęstsze przyczyny przejściowego wzrostu to alkohol, krótka lub przerywana noc, intensywny okres treningowy, rozwijająca się infekcja, odwodnienie, upał i stres. Zwykle towarzyszy mu niższe HRV. Jeśli tętno wraca do normy w ciągu kilku dni, była to normalna reakcja; jeśli pozostaje podwyższone, najpierw zadbaj o regenerację.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "Co zrobić po niskim wyniku HRV"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Przetrenowanie, HRV i tętno spoczynkowe"
+          }
+        ]
+      },
+      {
+        "q": "Ile dni pomiarów potrzeba, by poznać swoją prawdziwą linię bazową?",
+        "a": "Około dwóch tygodni regularnych pomiarów daje użyteczny zakres dla tętna spoczynkowego i HRV; miesiąc jest jeszcze lepszy. Do tego czasu większość tego, co widzisz, to zwykłe wahania z dnia na dzień.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "Twoja linia bazowa wie pierwsza"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "Zobacz swój dwutygodniowy zakres"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "Jaka technika oddechowa najlepiej pomaga na lęk?",
+        "a": "Przy nagłym nasileniu fizjologiczne westchnienie (dwa wdechy nosem, jeden długi wydech) działa już po kilku oddechach. Na kilka spokojnych minut pomocne są oddychanie pudełkowe (box breathing, 4-4-4-4) lub 4-7-8 — spowalniają oddech i wydłużają wydech. Najlepsza technika to ta, po którą naprawdę sięgniesz, gdy lęk zaczyna narastać.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "Fizjologiczne westchnienie"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Oddychanie pudełkowe"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Timer oddechowy"
+          }
+        ]
+      },
+      {
+        "q": "Jak szybko uspokoić układ nerwowy?",
+        "a": "Wydłuż wydech względem wdechu. Długi, powolny wydech pobudza nerw błędny i spowalnia pracę serca w ciągu minuty lub dwóch; nucenie podczas wydechu wzmacnia ten efekt. Pięć minut powolnego oddychania w tempie około sześciu oddechów na minutę wystarcza większości osób, by poczuć zmianę.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Oddech z nuceniem a nerw błędny"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Rytmomierz oddechu rezonansowego"
+          }
+        ]
+      },
+      {
+        "q": "Jaka technika oddechowa najlepiej pomaga zasnąć?",
+        "a": "Najpopularniejsza jest technika 4-7-8: wdech nosem na 4, zatrzymanie na 7, wydech ustami na 8 — przez cztery powtórzenia. Wielu osobom z bezsennością pomaga też dziesięć minut powolnego oddychania w łóżku w tempie około sześciu oddechów na minutę. Wybierz jedną technikę i stosuj ją co wieczór tak samo.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Oddychanie 4-7-8"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Koherencja serca a bezsenność"
+          }
+        ]
+      },
+      {
+        "q": "Na czym polega wojskowa metoda zasypiania?",
+        "a": "Tak zwana metoda wojskowa polega na rozluźnianiu ciała partia po partii — twarz, ramiona, ręce, nogi — przy powolnym, głębokim oddechu, a następnie na wyciszeniu umysłu prostym obrazem przez około dziesięć sekund. Część oddechowa to zwykłe, powolne oddychanie przeponowe; najlepiej działa w połączeniu ze stałą porą snu.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Oddychanie 4-7-8"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Timer oddechowy"
+          }
+        ]
+      },
+      {
+        "q": "Ile minut dziennie ćwiczyć oddech?",
+        "a": "Pięć minut dziennie to realistyczny początek i tyle stosuje wiele badań. Metoda koherencji serca to trzy sesje po pięć minut: rano, w południe i wieczorem. Regularność jest ważniejsza niż długość.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "Krótka codzienna rutyna oddechowa"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "Metoda koherencji serca 365"
+          }
+        ]
+      },
+      {
+        "q": "Czym jest oddychanie rezonansowe (koherentne) i jak znaleźć swoje tempo?",
+        "a": "Oddychanie rezonansowe to powolny, równy oddech — zwykle wdech i wydech po około pięć sekund — w tempie, przy którym tętno najsilniej zmienia się z każdym oddechem. U większości dorosłych to od pięciu do siedmiu oddechów na minutę; swoje tempo znajdziesz, próbując kilku rytmów i sprawdzając, przy którym czujesz się i mierzysz najspokojniej.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Przewodnik po oddychaniu koherentnym"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Znajdź swoje tempo rezonansowe"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Rytmomierz oddechu rezonansowego"
+          }
+        ]
+      },
+      {
+        "q": "Oddychać nosem czy ustami?",
+        "a": "W spoczynku i podczas większości ćwiczeń oddechowych — nosem: nos filtruje i ogrzewa powietrze oraz naturalnie spowalnia oddech. Niektóre techniki, np. 4-7-8, celowo zakładają wydech ustami.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Oddychanie nosem a ustami"
+          }
+        ]
+      },
+      {
+        "q": "Czy metoda Wima Hofa i szybkie oddychanie są bezpieczne?",
+        "a": "Dla zdrowych dorosłych w pozycji siedzącej lub leżącej zwykle tak — ale nigdy nie ćwicz w wodzie ani w jej pobliżu, podczas prowadzenia pojazdu ani na stojąco, ponieważ wstrzymywanie oddechu może prowadzić do omdlenia. Kobiety w ciąży oraz osoby z padaczką, chorobami serca lub nieleczonym nadciśnieniem powinny najpierw zapytać lekarza.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Oddychanie Wima Hofa a stan zapalny"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Timer Wim Hof"
+          }
+        ]
+      },
+      {
+        "q": "Jak rozpoznać, czy duszność wynika z lęku?",
+        "a": "Duszność związana z lękiem zwykle pojawia się razem z niepokojem, kołataniem serca lub mrowieniem i słabnie, gdy się uspokajasz i wydłużasz wydech. Nie wykluczysz samodzielnie przyczyny sercowej lub płucnej: pilnie szukaj pomocy, jeśli duszności towarzyszy ból w klatce piersiowej, omdlenie, sine usta albo jeśli jest nowa, silna lub się nasila.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Lęk, panika i oddech"
+          }
+        ]
+      }
+    ]
+  }
+}

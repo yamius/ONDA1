@@ -1,0 +1,225 @@
+{
+  "heading": "Preguntas frecuentes sobre {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "¿Cuál es la frecuencia cardíaca en reposo normal según la edad?",
+        "a": "En adultos de cualquier edad, la frecuencia cardíaca en reposo normal está entre 60 y 100 latidos por minuto; los grandes cambios se producen en la infancia: los recién nacidos van a 100–160 lpm y la frecuencia se va estabilizando durante la adolescencia. Los adultos en buena forma física suelen estar entre 40 y 59. Dentro del rango normal, tu propia tendencia dice más que la media de la población.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frecuencia cardíaca en reposo por edad"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Calculadora de frecuencia cardíaca en reposo"
+          }
+        ]
+      },
+      {
+        "q": "¿Qué pulso en reposo es más sano, 50 u 80?",
+        "a": "Ambos están dentro del rango normal, pero una frecuencia en reposo más baja suele reflejar una mejor forma cardiovascular, porque un corazón más fuerte bombea más sangre en cada latido. En grandes estudios de población, una frecuencia en reposo cercana al límite superior del rango normal se asocia a un mayor riesgo a largo plazo. Lo que más importa es dónde te sitúas para tu edad y si tu cifra va subiendo.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frecuencia cardíaca en reposo por edad"
+          }
+        ]
+      },
+      {
+        "q": "¿Es bueno tener 45 pulsaciones en reposo?",
+        "a": "En deportistas de resistencia entrenados, una frecuencia en reposo de 40 y pico es habitual y suele ser señal de buena forma. Si no eres muy activo y tu frecuencia es así de baja —sobre todo si hay mareos, desmayos, cansancio inusual o falta de aire—, conviene consultarlo con un médico.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frecuencia cardíaca en reposo por edad"
+          }
+        ]
+      },
+      {
+        "q": "¿Qué frecuencia cardíaca en reposo es peligrosa?",
+        "a": "Una frecuencia en reposo que se mantiene por encima de 100 lpm (taquicardia), o por debajo de 60 lpm en alguien que no es deportista (bradicardia), está fuera del rango habitual en adultos y conviene comentarla con un médico. Busca atención médica cuanto antes si una frecuencia muy rápida o muy lenta va acompañada de dolor en el pecho, desmayo o falta de aire.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Cómo hablar con tu médico sobre los datos del reloj"
+          }
+        ]
+      },
+      {
+        "q": "¿Cuál es una buena VFC?",
+        "a": "No existe una única cifra de VFC buena: disminuye con la edad y varía según el dispositivo. La mediana del RMSSD nocturno ronda los 58 ms a los veinte años y unos 30 ms a los sesenta, con una amplia variación saludable. Una buena VFC es la que se mantiene estable o sube respecto a tu propia línea base.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "VFC normal por edad"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 preguntas sobre la VFC, respondidas"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "Calculadora de VFC"
+          }
+        ]
+      },
+      {
+        "q": "¿Por qué tengo el pulso en reposo más alto de lo normal?",
+        "a": "Las causas habituales de una subida temporal son el alcohol, una noche corta o interrumpida, un bloque de entrenamiento duro, una enfermedad incipiente, la deshidratación, el calor y el estrés. Suele ir acompañada de una VFC más baja. Si se normaliza en pocos días, era una respuesta normal; si sigue alta, revisa primero tu recuperación.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "Qué hacer tras una lectura de VFC baja"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Sobreentrenamiento, VFC y frecuencia cardíaca en reposo"
+          }
+        ]
+      },
+      {
+        "q": "¿Cuántos días de datos necesito para ver mi línea base real?",
+        "a": "Unas dos semanas de mediciones constantes dan un rango útil para la frecuencia cardíaca en reposo y la VFC; un mes es mejor. Hasta entonces, la mayor parte de lo que ves es el ruido normal del día a día.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "Tu línea base lo sabe antes"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "Consulta tu rango de dos semanas"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "¿Cuál es la mejor técnica de respiración para la ansiedad?",
+        "a": "Ante un pico repentino, el suspiro fisiológico (dos inhalaciones por la nariz y una exhalación larga) funciona en pocas respiraciones. Para unos minutos de calma, la respiración cuadrada (4-4-4-4) o la 4-7-8 ayudan a bajar el ritmo y alargar la exhalación. La mejor técnica es la que de verdad vas a usar cuando empiece la ansiedad.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "El suspiro fisiológico"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Respiración cuadrada"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Temporizador de respiración"
+          }
+        ]
+      },
+      {
+        "q": "¿Cómo calmar el sistema nervioso rápidamente?",
+        "a": "Haz que la exhalación sea más larga que la inhalación. Una espiración larga y lenta activa el nervio vago y ralentiza el corazón en uno o dos minutos; tararear mientras exhalas refuerza el efecto. Cinco minutos de respiración lenta, a unas seis respiraciones por minuto, bastan para que la mayoría note el cambio.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Respiración con zumbido y nervio vago"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guía de respiración de resonancia"
+          }
+        ]
+      },
+      {
+        "q": "¿Cuál es la mejor técnica de respiración para dormir?",
+        "a": "La 4-7-8 es la más popular: inhala por la nariz contando 4, retén 7 y exhala por la boca contando 8, durante cuatro ciclos. Respirar despacio, a unas seis respiraciones por minuto, durante diez minutos en la cama también ayuda a muchas personas con insomnio a relajarse. Elige una y repítela igual cada noche.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respiración 4-7-8"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Coherencia cardíaca para el insomnio"
+          }
+        ]
+      },
+      {
+        "q": "¿En qué consiste la técnica militar para dormir?",
+        "a": "El llamado método militar relaja el cuerpo por partes —cara, hombros, brazos, piernas— mientras respiras de forma lenta y profunda, y después despeja la mente con una imagen sencilla durante unos diez segundos. La parte respiratoria es una respiración abdominal lenta normal; funciona mejor junto con un horario fijo para acostarse.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respiración 4-7-8"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Temporizador de respiración"
+          }
+        ]
+      },
+      {
+        "q": "¿Cuántos minutos al día hay que hacer ejercicios de respiración?",
+        "a": "Cinco minutos al día es un comienzo realista y es lo que usan muchos estudios. La rutina de coherencia cardíaca son tres sesiones de cinco minutos: mañana, mediodía y noche. La constancia importa más que la duración.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "Una rutina breve de respiración diaria"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "El método 365 de coherencia cardíaca"
+          }
+        ]
+      },
+      {
+        "q": "¿Qué es la respiración de resonancia (coherente) y cómo encuentro mi ritmo?",
+        "a": "La respiración de resonancia es una respiración lenta y regular —normalmente inhalando y exhalando unos cinco segundos cada vez— al ritmo en que tu frecuencia cardíaca oscila más con cada respiración. Para la mayoría de los adultos está entre cinco y siete respiraciones por minuto; encuentras el tuyo probando varios ritmos y observando cuál se siente y se mide como el más tranquilo.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Guía de respiración coherente"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Encuentra tu ritmo de resonancia"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guía de respiración de resonancia"
+          }
+        ]
+      },
+      {
+        "q": "¿Es mejor respirar por la nariz o por la boca?",
+        "a": "En reposo y durante la mayoría de las prácticas de respiración, por la nariz: filtra y calienta el aire y ralentiza la respiración de forma natural. Algunas técnicas, como la 4-7-8, exhalan por la boca a propósito.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Respirar por la nariz o por la boca"
+          }
+        ]
+      },
+      {
+        "q": "¿Es segura la respiración Wim Hof o la respiración rápida?",
+        "a": "Para adultos sanos sentados o tumbados, normalmente sí, pero nunca la practiques en el agua o cerca de ella, mientras conduces o de pie, porque las retenciones de la respiración pueden provocar desmayos. Las personas embarazadas o con epilepsia, enfermedades cardíacas o hipertensión no controlada deben consultar antes a un médico.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Respiración Wim Hof e inflamación"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Temporizador Wim Hof"
+          }
+        ]
+      },
+      {
+        "q": "¿Cómo saber si la falta de aire es por ansiedad?",
+        "a": "La falta de aire por ansiedad suele ir acompañada de preocupación, corazón acelerado u hormigueo, y mejora a medida que te calmas y alargas la exhalación. No puedes descartar tú mismo una causa cardíaca o pulmonar: busca ayuda urgente si la falta de aire va acompañada de dolor en el pecho, desmayo o labios azulados, o si es nueva, intensa o va a peor.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Ansiedad, pánico y respiración"
+          }
+        ]
+      }
+    ]
+  }
+}

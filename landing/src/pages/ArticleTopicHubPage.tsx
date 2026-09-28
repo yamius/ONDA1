@@ -7,7 +7,7 @@ import type { Article } from '../data/articles'
 import { getArticleTopicHub, type ArticleTopicSlug } from '../data/article-topics'
 import { hubAvailable, localizedHubListing, localizedWorldGroups } from '../data/article-topic-listing'
 import { libraryCopy, fillLib } from '../data/library-i18n'
-import { TOPIC_HUB_FAQ } from '../data/topic-hub-faq'
+import { hubFaqFor } from '../data/topic-hub-faq'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
@@ -47,6 +47,7 @@ export function ArticleTopicHubPage() {
     .filter((s) => hubAvailable(s, lang))
     .map((s) => getArticleTopicHub(s))
     .filter((h): h is NonNullable<typeof h> => !!h)
+  const faq = hubFaqFor(hub.slug as ArticleTopicSlug, lang)
   const titleOf = (a: Article) => t(`bodies.${a.slug}.title`, { defaultValue: a.title }) as string
   const descOf = (a: Article) => t(`bodies.${a.slug}.description`, { defaultValue: a.description }) as string
 
@@ -114,19 +115,19 @@ export function ArticleTopicHubPage() {
         </section>
       )}
 
-      {lang === 'en' && TOPIC_HUB_FAQ[hub.slug as ArticleTopicSlug] && (
+      {faq && (
         <section className="mt-16 border-t border-white/10 pt-10" aria-labelledby="hub-faq">
           <h2 id="hub-faq" className="mb-6 text-xl font-bold tracking-tight md:text-2xl">
-            Common questions about {name}
+            {fillLib(faq.heading, { topic: name })}
           </h2>
           <div className="space-y-8">
-            {TOPIC_HUB_FAQ[hub.slug as ArticleTopicSlug]!.map((f) => (
+            {faq.items.map((f) => (
               <div key={f.q}>
                 <h3 className="mb-2 text-base font-semibold text-white/90">{f.q}</h3>
                 <p className="mb-2 max-w-3xl text-sm leading-relaxed text-white/60">{f.a}</p>
                 <p className="flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs">
                   {f.links.map((l) => (
-                    <Link key={l.href} to={l.href} className="text-terminal-green/80 hover:text-terminal-green hover:underline">
+                    <Link key={l.href} to={langHref(l.href, lang)} className="text-terminal-green/80 hover:text-terminal-green hover:underline">
                       {l.label} →
                     </Link>
                   ))}

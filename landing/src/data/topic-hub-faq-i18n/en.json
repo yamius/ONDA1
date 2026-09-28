@@ -1,0 +1,225 @@
+{
+  "heading": "Common questions about {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "What is a normal resting heart rate by age?",
+        "a": "For adults of every age, a normal resting heart rate is 60 to 100 beats per minute; the big changes happen in childhood, when newborns run at 100–160 bpm and rates settle through the teens. Fit adults often sit in the 40s or 50s. Within the normal range, your own trend tells you more than the population average.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Resting heart rate by age"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Resting heart rate calculator"
+          }
+        ]
+      },
+      {
+        "q": "Which resting heart rate is healthier, 50 or 80?",
+        "a": "Both are within the normal range, but a lower resting heart rate usually reflects better cardiovascular fitness, because a stronger heart moves more blood per beat. In large population studies a resting rate toward the top of the normal range is linked with higher long-term risk. What matters most is where you sit for your age and whether your number is drifting up.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Resting heart rate by age"
+          }
+        ]
+      },
+      {
+        "q": "Is a resting heart rate of 45 good?",
+        "a": "In trained endurance athletes, a resting heart rate in the 40s is common and usually a sign of fitness. If you are not very active and your rate is this low — especially with dizziness, fainting, unusual tiredness or shortness of breath — it is worth checking with a doctor.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Resting heart rate by age"
+          }
+        ]
+      },
+      {
+        "q": "What is an unsafe resting heart rate?",
+        "a": "A resting rate that stays above 100 bpm (tachycardia), or below 60 bpm in someone who is not an athlete (bradycardia), is outside the usual adult range and worth discussing with a doctor. Seek care promptly if a very fast or very slow rate comes with chest pain, fainting or breathlessness.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Talking to your doctor about watch data"
+          }
+        ]
+      },
+      {
+        "q": "What is a good HRV?",
+        "a": "There is no single good HRV number: it falls with age and differs by device. Median overnight RMSSD is roughly 58 ms in your twenties and about 30 ms in your sixties, with a wide healthy spread. A good HRV is one that is stable or rising against your own baseline.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "Normal HRV by age"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 HRV questions, answered"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "HRV calculator"
+          }
+        ]
+      },
+      {
+        "q": "Why is my resting heart rate higher than usual?",
+        "a": "The common causes of a temporary rise are alcohol, a short or broken night, a hard training block, an oncoming illness, dehydration, heat and stress. It usually comes with a lower HRV. If it settles within a few days, it was a normal response; if it stays up, look at recovery first.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "What to do after a low HRV reading"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Overtraining, HRV and resting heart rate"
+          }
+        ]
+      },
+      {
+        "q": "How many days of data do I need to see my real baseline?",
+        "a": "About two weeks of consistent readings gives a usable range for resting heart rate and HRV; a month is better. Until then, most of what you see is ordinary day-to-day noise.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "Your baseline knows first"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "See your two-week range"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "What is the best breathing technique for anxiety?",
+        "a": "For a sudden spike, the physiological sigh (two inhales through the nose, one long exhale) works within a few breaths. For a few calm minutes, box breathing (4-4-4-4) or 4-7-8 help by slowing you down and lengthening the exhale. The best technique is the one you will actually use when anxiety starts.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "The physiological sigh"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Box breathing"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Breathing timer"
+          }
+        ]
+      },
+      {
+        "q": "How can I calm my nervous system quickly?",
+        "a": "Make the exhale longer than the inhale. A long, slow out-breath activates the vagus nerve and slows the heart within a minute or two; humming while you exhale adds to the effect. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Humming breath and the vagus nerve"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Resonance breathing pacer"
+          }
+        ]
+      },
+      {
+        "q": "What is the best breathing technique for sleep?",
+        "a": "4-7-8 is the most popular: inhale through the nose for 4, hold for 7, exhale through the mouth for 8, for four rounds. Slow breathing at about six breaths per minute for ten minutes in bed also helps many people with insomnia settle. Pick one and keep it the same every night.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "4-7-8 breathing"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Cardiac coherence for insomnia"
+          }
+        ]
+      },
+      {
+        "q": "What is the military breathing technique for sleep?",
+        "a": "The so-called military method relaxes the body part by part — face, shoulders, arms, legs — while you breathe slowly and deeply, then clears the mind with a simple image for about ten seconds. The breathing part is ordinary slow belly breathing; it works best combined with a regular bedtime.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "4-7-8 breathing"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Breathing timer"
+          }
+        ]
+      },
+      {
+        "q": "How many minutes a day should I do breathing exercises?",
+        "a": "Five minutes a day is a realistic start and is what many studies use. The cardiac coherence routine is three sessions of five minutes, morning, midday and evening. Consistency matters more than length.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "A short daily breathing routine"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "The 365 cardiac coherence method"
+          }
+        ]
+      },
+      {
+        "q": "What is resonance (coherent) breathing, and how do I find my rate?",
+        "a": "Resonance breathing is slow, even breathing — typically inhaling and exhaling for about five seconds each — at the pace where your heart rate swings most with each breath. For most adults that is between five and seven breaths per minute; you find yours by trying a few paces and noting which feels and measures calmest.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Coherent breathing guide"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Find your resonance rate"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Resonance breathing pacer"
+          }
+        ]
+      },
+      {
+        "q": "Should I breathe through my nose or my mouth?",
+        "a": "At rest and during most breathing practice, through the nose: it filters and warms the air and naturally slows the breath. Some techniques, such as 4-7-8, deliberately exhale through the mouth.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Nose vs mouth breathing"
+          }
+        ]
+      },
+      {
+        "q": "Is Wim Hof or fast breathing safe?",
+        "a": "For healthy adults sitting or lying down, usually yes — but never practise it in or near water, while driving, or standing, because the breath holds can cause fainting. People who are pregnant or have epilepsy, heart conditions or uncontrolled high blood pressure should ask a doctor first.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Wim Hof breathing and inflammation"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Wim Hof timer"
+          }
+        ]
+      },
+      {
+        "q": "How can I tell if shortness of breath is from anxiety?",
+        "a": "Anxiety-related breathlessness usually comes with worry, a racing heart or tingling and eases as you calm down and slow your exhale. You cannot rule out a heart or lung cause yourself: get urgent help for breathlessness with chest pain, fainting, blue lips, or if it is new, severe or getting worse.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Anxiety, panic and breathing"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "heading": "Questions fréquentes : {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "Quelle est la fréquence cardiaque au repos normale selon l'âge ?",
+        "a": "Chez l'adulte, quel que soit l'âge, une fréquence cardiaque au repos normale se situe entre 60 et 100 battements par minute ; les grands changements ont lieu pendant l'enfance : un nouveau-né est à 100–160 bpm, puis la fréquence se stabilise à l'adolescence. Les adultes en bonne forme physique sont souvent entre 40 et 59 bpm. Dans la plage normale, votre propre tendance vous en dit plus que la moyenne de la population.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Fréquence cardiaque au repos selon l'âge"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Calculateur de fréquence cardiaque au repos"
+          }
+        ]
+      },
+      {
+        "q": "Fréquence cardiaque au repos à 50 ou à 80 : laquelle est la meilleure ?",
+        "a": "Les deux sont dans la plage normale, mais une fréquence au repos plus basse reflète généralement une meilleure condition cardiovasculaire, car un cœur plus fort éjecte davantage de sang à chaque battement. Dans les grandes études de population, une fréquence au repos proche du haut de la plage normale est associée à un risque plus élevé à long terme. L'essentiel est votre position par rapport à votre âge et le fait que votre valeur augmente ou non avec le temps.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Fréquence cardiaque au repos selon l'âge"
+          }
+        ]
+      },
+      {
+        "q": "Une fréquence cardiaque au repos de 45, c'est bien ?",
+        "a": "Chez les sportifs d'endurance entraînés, une fréquence au repos entre 40 et 49 est courante et généralement signe de bonne condition physique. Si vous êtes peu actif et que votre fréquence est aussi basse — surtout avec des vertiges, des malaises, une fatigue inhabituelle ou un essoufflement — il est préférable d'en parler à un médecin.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Fréquence cardiaque au repos selon l'âge"
+          }
+        ]
+      },
+      {
+        "q": "À partir de quelle fréquence cardiaque au repos faut-il s'inquiéter ?",
+        "a": "Une fréquence au repos qui reste au-dessus de 100 bpm (tachycardie), ou en dessous de 60 bpm chez une personne non sportive (bradycardie), sort de la plage habituelle chez l'adulte et mérite d'être discutée avec un médecin. Consultez rapidement si une fréquence très rapide ou très lente s'accompagne de douleurs thoraciques, d'un malaise ou d'un essoufflement.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Parler de vos données de montre à votre médecin"
+          }
+        ]
+      },
+      {
+        "q": "Qu'est-ce qu'une bonne VFC ?",
+        "a": "Il n'existe pas de « bonne » valeur unique de VFC : elle diminue avec l'âge et varie selon l'appareil. Le RMSSD nocturne médian est d'environ 58 ms à 20–29 ans et d'environ 30 ms à 60–69 ans, avec une large plage de valeurs saines. Une bonne VFC est une VFC stable ou en hausse par rapport à votre propre référence.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "VFC normale selon l'âge"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 questions sur la VFC, avec réponses"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "Calculateur de VFC"
+          }
+        ]
+      },
+      {
+        "q": "Pourquoi ma fréquence cardiaque au repos est-elle plus élevée que d'habitude ?",
+        "a": "Les causes fréquentes d'une hausse temporaire sont l'alcool, une nuit courte ou agitée, une période d'entraînement intense, une maladie qui couve, la déshydratation, la chaleur et le stress. Elle s'accompagne généralement d'une VFC plus basse. Si elle redescend en quelques jours, c'était une réaction normale ; si elle reste élevée, commencez par regarder votre récupération.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "Que faire après une VFC basse"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Surentraînement, VFC et fréquence cardiaque au repos"
+          }
+        ]
+      },
+      {
+        "q": "Combien de jours de données faut-il pour connaître sa vraie référence ?",
+        "a": "Environ deux semaines de mesures régulières donnent une plage exploitable pour la fréquence cardiaque au repos et la VFC ; un mois, c'est mieux. D'ici là, l'essentiel de ce que vous voyez correspond aux fluctuations ordinaires d'un jour à l'autre.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "Votre référence le sait avant vous"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "Voir votre plage sur deux semaines"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "Quelle est la meilleure technique de respiration contre l'anxiété ?",
+        "a": "Pour un pic soudain, le soupir physiologique (deux inspirations par le nez, une longue expiration) agit en quelques respirations. Pour quelques minutes de calme, la respiration carrée (4-4-4-4) ou la 4-7-8 aident en ralentissant le rythme et en allongeant l'expiration. La meilleure technique est celle que vous utiliserez vraiment quand l'anxiété monte.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "Le soupir physiologique"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Respiration carrée"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Minuteur de respiration"
+          }
+        ]
+      },
+      {
+        "q": "Comment calmer rapidement son système nerveux ?",
+        "a": "Faites une expiration plus longue que l'inspiration. Une expiration longue et lente active le nerf vague et ralentit le cœur en une à deux minutes ; fredonner en expirant renforce l'effet. Cinq minutes de respiration lente, à environ six respirations par minute, suffisent à la plupart des gens pour sentir la différence.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Respiration fredonnée et nerf vague"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guide de respiration en résonance"
+          }
+        ]
+      },
+      {
+        "q": "Quelle est la meilleure technique de respiration pour dormir ?",
+        "a": "La 4-7-8 est la plus populaire : inspirez par le nez sur 4 temps, retenez sur 7, expirez par la bouche sur 8, pendant quatre cycles. Respirer lentement, à environ six respirations par minute pendant dix minutes au lit, aide aussi de nombreuses personnes insomniaques à s'apaiser. Choisissez-en une et gardez la même chaque soir.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respiration 4-7-8"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Cohérence cardiaque contre l'insomnie"
+          }
+        ]
+      },
+      {
+        "q": "En quoi consiste la technique de respiration militaire pour s'endormir ?",
+        "a": "La méthode dite militaire consiste à détendre le corps partie par partie — visage, épaules, bras, jambes — en respirant lentement et profondément, puis à vider son esprit avec une image simple pendant une dizaine de secondes. La partie respiratoire est une simple respiration abdominale lente ; elle fonctionne mieux associée à une heure de coucher régulière.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respiration 4-7-8"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Minuteur de respiration"
+          }
+        ]
+      },
+      {
+        "q": "Combien de minutes par jour faut-il faire des exercices de respiration ?",
+        "a": "Cinq minutes par jour sont un début réaliste, et c'est ce qu'utilisent de nombreuses études. La routine de cohérence cardiaque comprend trois séances de cinq minutes : matin, midi et soir. La régularité compte plus que la durée.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "Une courte routine de respiration quotidienne"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "La méthode de cohérence cardiaque 365"
+          }
+        ]
+      },
+      {
+        "q": "Qu'est-ce que la respiration en résonance (cohérente) et comment trouver son rythme ?",
+        "a": "La respiration en résonance est une respiration lente et régulière — généralement environ cinq secondes d'inspiration et cinq secondes d'expiration — au rythme où votre fréquence cardiaque varie le plus à chaque respiration. Pour la plupart des adultes, cela correspond à cinq à sept respirations par minute ; vous trouvez le vôtre en essayant quelques rythmes et en notant celui qui vous semble, et se mesure, le plus apaisant.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Guide de la respiration cohérente"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Trouver votre rythme de résonance"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guide de respiration en résonance"
+          }
+        ]
+      },
+      {
+        "q": "Faut-il respirer par le nez ou par la bouche ?",
+        "a": "Au repos et pendant la plupart des exercices de respiration, par le nez : il filtre et réchauffe l'air et ralentit naturellement la respiration. Certaines techniques, comme la 4-7-8, prévoient volontairement une expiration par la bouche.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Respiration nasale ou buccale"
+          }
+        ]
+      },
+      {
+        "q": "La méthode Wim Hof ou la respiration rapide sont-elles sans danger ?",
+        "a": "Pour les adultes en bonne santé, assis ou allongés, généralement oui — mais ne la pratiquez jamais dans l'eau ou à proximité, en conduisant ou debout, car les apnées peuvent provoquer un évanouissement. Les femmes enceintes et les personnes souffrant d'épilepsie, de problèmes cardiaques ou d'hypertension non contrôlée doivent d'abord demander l'avis d'un médecin.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Respiration Wim Hof et inflammation"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Minuteur Wim Hof"
+          }
+        ]
+      },
+      {
+        "q": "Comment savoir si un essoufflement est dû à l'anxiété ?",
+        "a": "L'essoufflement lié à l'anxiété s'accompagne généralement d'inquiétude, d'un cœur qui s'emballe ou de picotements, et diminue quand vous vous calmez et ralentissez votre expiration. Vous ne pouvez pas écarter vous-même une cause cardiaque ou pulmonaire : demandez une aide urgente en cas d'essoufflement avec douleur thoracique, malaise, lèvres bleutées, ou s'il est nouveau, intense ou s'aggrave.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Anxiété, panique et respiration"
+          }
+        ]
+      }
+    ]
+  }
+}

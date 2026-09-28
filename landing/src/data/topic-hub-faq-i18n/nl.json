@@ -1,0 +1,225 @@
+{
+  "heading": "Veelgestelde vragen over {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "Wat is een normale hartslag in rust per leeftijd?",
+        "a": "Voor volwassenen van elke leeftijd ligt een normale rusthartslag tussen 60 en 100 slagen per minuut; de grote veranderingen gebeuren in de kindertijd, wanneer pasgeborenen op 100–160 bpm zitten en de hartslag zich tijdens de tienerjaren stabiliseert. Fitte volwassenen zitten vaak in de 40 of 50. Binnen het normale bereik zegt je eigen trend meer dan het gemiddelde van de bevolking.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Rusthartslag per leeftijd"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Rusthartslag berekenen"
+          }
+        ]
+      },
+      {
+        "q": "Welke rusthartslag is gezonder: 50 of 80?",
+        "a": "Beide vallen binnen het normale bereik, maar een lagere rusthartslag weerspiegelt meestal een betere cardiovasculaire conditie, omdat een sterker hart per slag meer bloed rondpompt. In grote bevolkingsstudies hangt een rusthartslag aan de bovenkant van het normale bereik samen met een hoger risico op de lange termijn. Het belangrijkst is waar je zit voor je leeftijd en of je waarde langzaam stijgt.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Rusthartslag per leeftijd"
+          }
+        ]
+      },
+      {
+        "q": "Is een rusthartslag van 45 goed?",
+        "a": "Bij getrainde duursporters is een rusthartslag in de 40 gebruikelijk en meestal een teken van een goede conditie. Ben je niet erg actief en is je hartslag zo laag — vooral met duizeligheid, flauwvallen, ongewone vermoeidheid of kortademigheid — dan is het verstandig een arts te raadplegen.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Rusthartslag per leeftijd"
+          }
+        ]
+      },
+      {
+        "q": "Wanneer is een rusthartslag gevaarlijk?",
+        "a": "Een rusthartslag die boven de 100 bpm blijft (tachycardie), of onder de 60 bpm bij iemand die geen sporter is (bradycardie), valt buiten het gebruikelijke bereik voor volwassenen en is het bespreken met een arts waard. Zoek snel hulp als een zeer snelle of zeer trage hartslag samengaat met pijn op de borst, flauwvallen of benauwdheid.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Je horlogegegevens bespreken met je arts"
+          }
+        ]
+      },
+      {
+        "q": "Wat is een goede HRV?",
+        "a": "Er bestaat niet één goede HRV-waarde: ze daalt met de leeftijd en verschilt per apparaat. De mediane nachtelijke RMSSD is ongeveer 58 ms in je twintiger jaren en rond de 30 ms in je zestiger jaren, met een brede gezonde spreiding. Een goede HRV is er een die stabiel blijft of stijgt ten opzichte van je eigen basislijn.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "Normale HRV per leeftijd"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 vragen over HRV beantwoord"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "HRV-calculator"
+          }
+        ]
+      },
+      {
+        "q": "Waarom is mijn rusthartslag hoger dan normaal?",
+        "a": "Veelvoorkomende oorzaken van een tijdelijke stijging zijn alcohol, een korte of onderbroken nacht, een zware trainingsperiode, een opkomende ziekte, uitdroging, hitte en stress. Meestal gaat het samen met een lagere HRV. Zakt het binnen een paar dagen weer, dan was het een normale reactie; blijft het hoog, kijk dan eerst naar je herstel.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "Wat te doen na een lage HRV-meting"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Overtraining, HRV en rusthartslag"
+          }
+        ]
+      },
+      {
+        "q": "Hoeveel dagen aan metingen heb ik nodig voor mijn echte basislijn?",
+        "a": "Ongeveer twee weken consequente metingen geven een bruikbaar bereik voor rusthartslag en HRV; een maand is beter. Tot die tijd is het meeste wat je ziet gewone dagelijkse ruis.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "Je basislijn weet het als eerste"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "Bekijk je bereik over twee weken"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "Wat is de beste ademhalingstechniek bij angst?",
+        "a": "Bij een plotselinge piek werkt de fysiologische zucht (twee keer inademen door de neus, één keer lang uitademen) binnen een paar ademhalingen. Voor een paar rustige minuten helpen box breathing (4-4-4-4) of 4-7-8 doordat ze je vertragen en de uitademing verlengen. De beste techniek is de techniek die je echt gebruikt wanneer de angst opkomt.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "De fysiologische zucht"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Box breathing"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Ademhalingstimer"
+          }
+        ]
+      },
+      {
+        "q": "Hoe kalmeer ik snel mijn zenuwstelsel?",
+        "a": "Maak de uitademing langer dan de inademing. Een lange, langzame uitademing activeert de nervus vagus en vertraagt het hart binnen een à twee minuten; neuriën tijdens het uitademen versterkt het effect. Vijf minuten langzaam ademen op ongeveer zes ademhalingen per minuut is voor de meeste mensen genoeg om het verschil te voelen.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Neuriënd ademen en de nervus vagus"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Pacer voor resonantie-ademhaling"
+          }
+        ]
+      },
+      {
+        "q": "Wat is de beste ademhalingstechniek om in slaap te vallen?",
+        "a": "4-7-8 is het populairst: adem 4 tellen in door de neus, houd 7 tellen vast en adem 8 tellen uit door de mond, vier rondes lang. Tien minuten langzaam ademen in bed op ongeveer zes ademhalingen per minuut helpt ook veel mensen met slapeloosheid tot rust te komen. Kies er één en houd die elke avond hetzelfde.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "4-7-8-ademhaling"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Hartcoherentie bij slapeloosheid"
+          }
+        ]
+      },
+      {
+        "q": "Wat is de militaire ademhalingstechniek om te slapen?",
+        "a": "De zogenoemde militaire methode ontspant het lichaam deel voor deel — gezicht, schouders, armen, benen — terwijl je langzaam en diep ademt, en maakt daarna het hoofd leeg met een eenvoudig beeld van ongeveer tien seconden. Het ademhalingsdeel is gewone langzame buikademhaling; het werkt het best in combinatie met een vaste bedtijd.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "4-7-8-ademhaling"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Ademhalingstimer"
+          }
+        ]
+      },
+      {
+        "q": "Hoeveel minuten per dag moet ik ademhalingsoefeningen doen?",
+        "a": "Vijf minuten per dag is een realistisch begin en is wat veel studies gebruiken. De hartcoherentie-routine bestaat uit drie sessies van vijf minuten: 's ochtends, 's middags en 's avonds. Regelmaat is belangrijker dan duur.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "Een korte dagelijkse ademroutine"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "De 365-methode voor hartcoherentie"
+          }
+        ]
+      },
+      {
+        "q": "Wat is resonantie-ademhaling (coherent ademen) en hoe vind ik mijn tempo?",
+        "a": "Resonantie-ademhaling is langzaam, gelijkmatig ademen — meestal zo'n vijf seconden in en vijf seconden uit — op het tempo waarbij je hartslag per ademhaling het sterkst meebeweegt. Voor de meeste volwassenen ligt dat tussen vijf en zeven ademhalingen per minuut; je vindt het jouwe door een paar tempo's te proberen en te noteren welk tempo het rustigst voelt en meet.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Gids voor coherent ademen"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Vind je resonantietempo"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Pacer voor resonantie-ademhaling"
+          }
+        ]
+      },
+      {
+        "q": "Moet ik door mijn neus of door mijn mond ademen?",
+        "a": "In rust en bij de meeste ademhalingsoefeningen door de neus: die filtert en verwarmt de lucht en vertraagt vanzelf de ademhaling. Sommige technieken, zoals 4-7-8, ademen bewust uit door de mond.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Neus- versus mondademhaling"
+          }
+        ]
+      },
+      {
+        "q": "Is de Wim Hof-methode of snel ademen veilig?",
+        "a": "Voor gezonde volwassenen die zitten of liggen meestal wel — maar oefen het nooit in of bij water, tijdens het autorijden of staand, omdat het inhouden van de adem tot flauwvallen kan leiden. Wie zwanger is of epilepsie, een hartaandoening of onbehandelde hoge bloeddruk heeft, moet eerst een arts raadplegen.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Wim Hof-ademhaling en ontsteking"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Wim Hof-timer"
+          }
+        ]
+      },
+      {
+        "q": "Hoe weet ik of kortademigheid door angst komt?",
+        "a": "Kortademigheid door angst gaat meestal samen met piekeren, een snelle hartslag of tintelingen en neemt af als je tot rust komt en je uitademing vertraagt. Een oorzaak in hart of longen kun je zelf niet uitsluiten: zoek direct hulp bij kortademigheid met pijn op de borst, flauwvallen of blauwe lippen, of als ze nieuw of ernstig is of erger wordt.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Angst, paniek en ademhaling"
+          }
+        ]
+      }
+    ]
+  }
+}

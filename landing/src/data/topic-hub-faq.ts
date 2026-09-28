@@ -134,3 +134,31 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
   ],
 }
+
+// ── Localized blocks (src/data/topic-hub-faq-i18n/<lang>.json; en.json mirrors the above) ──
+import type { Lang } from '../i18n'
+import es from './topic-hub-faq-i18n/es.json'
+import ru from './topic-hub-faq-i18n/ru.json'
+import uk from './topic-hub-faq-i18n/uk.json'
+import zh from './topic-hub-faq-i18n/zh.json'
+import de from './topic-hub-faq-i18n/de.json'
+import fr from './topic-hub-faq-i18n/fr.json'
+import it from './topic-hub-faq-i18n/it.json'
+import nl from './topic-hub-faq-i18n/nl.json'
+import ja from './topic-hub-faq-i18n/ja.json'
+import pl from './topic-hub-faq-i18n/pl.json'
+import pt from './topic-hub-faq-i18n/pt.json'
+
+type HubFaqFile = { heading: string; hubs: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> }
+const LOCALIZED: Partial<Record<Lang, HubFaqFile>> = { es, ru, uk, zh, de, fr, it, nl, ja, pl, pt } as Partial<Record<Lang, HubFaqFile>>
+
+/** The hub's FAQ block in this language, or null (heading has a {topic} placeholder). */
+export function hubFaqFor(topic: ArticleTopicSlug, lang: Lang): { heading: string; items: HubFaqItem[] } | null {
+  if (lang === 'en') {
+    const items = TOPIC_HUB_FAQ[topic]
+    return items ? { heading: 'Common questions about {topic}', items } : null
+  }
+  const f = LOCALIZED[lang]
+  const items = f?.hubs[topic]
+  return f && items ? { heading: f.heading, items } : null
+}

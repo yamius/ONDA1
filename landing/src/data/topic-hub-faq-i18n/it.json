@@ -1,0 +1,225 @@
+{
+  "heading": "Domande frequenti su {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "Qual è la frequenza cardiaca a riposo normale in base all'età?",
+        "a": "Negli adulti di qualsiasi età, una frequenza cardiaca a riposo normale è compresa tra 60 e 100 battiti al minuto; i grandi cambiamenti avvengono nell'infanzia, quando i neonati viaggiano a 100–160 bpm e i valori si stabilizzano durante l'adolescenza. Gli adulti allenati hanno spesso valori tra 40 e 59. All'interno dell'intervallo normale, il tuo andamento personale dice più della media della popolazione.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frequenza cardiaca a riposo per età"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Calcolatore della frequenza cardiaca a riposo"
+          }
+        ]
+      },
+      {
+        "q": "È più sana una frequenza a riposo di 50 o di 80?",
+        "a": "Entrambe rientrano nell'intervallo normale, ma una frequenza cardiaca a riposo più bassa di solito riflette una migliore forma cardiovascolare, perché un cuore più forte pompa più sangue a ogni battito. Nei grandi studi di popolazione, una frequenza a riposo vicina al limite superiore del normale è associata a un rischio più alto nel lungo periodo. Conta soprattutto dove ti collochi per la tua età e se il tuo valore tende a salire.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frequenza cardiaca a riposo per età"
+          }
+        ]
+      },
+      {
+        "q": "Una frequenza cardiaca a riposo di 45 va bene?",
+        "a": "Negli atleti di resistenza allenati, una frequenza cardiaca a riposo tra 40 e 49 è comune e di solito è segno di buona forma. Se non sei molto attivo e la tua frequenza è così bassa — soprattutto con capogiri, svenimenti, stanchezza insolita o fiato corto — è bene sentire un medico.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frequenza cardiaca a riposo per età"
+          }
+        ]
+      },
+      {
+        "q": "Quale frequenza cardiaca a riposo è pericolosa?",
+        "a": "Una frequenza a riposo che resta sopra i 100 bpm (tachicardia), o sotto i 60 bpm in chi non è un atleta (bradicardia), è fuori dall'intervallo abituale per un adulto ed è bene parlarne con un medico. Rivolgiti subito a un medico se una frequenza molto alta o molto bassa si accompagna a dolore al petto, svenimento o mancanza di fiato.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Parlare con il medico dei dati dello smartwatch"
+          }
+        ]
+      },
+      {
+        "q": "Qual è un buon valore di HRV?",
+        "a": "Non esiste un unico valore di HRV \"buono\": diminuisce con l'età e varia da un dispositivo all'altro. L'RMSSD notturno mediano è di circa 58 ms sui vent'anni e di circa 30 ms sui sessanta, con un'ampia variabilità sana. Un buon HRV è quello stabile o in crescita rispetto alla tua baseline personale.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "HRV normale per età"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 domande sull'HRV, con risposta"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "Calcolatore HRV"
+          }
+        ]
+      },
+      {
+        "q": "Perché la mia frequenza cardiaca a riposo è più alta del solito?",
+        "a": "Le cause comuni di un aumento temporaneo sono alcol, una notte breve o interrotta, un periodo di allenamento intenso, una malattia in arrivo, disidratazione, caldo e stress. Di solito si accompagna a un HRV più basso. Se si normalizza in pochi giorni, era una risposta normale; se resta alta, guarda prima al recupero.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "Cosa fare dopo una lettura di HRV bassa"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Sovrallenamento, HRV e frequenza a riposo"
+          }
+        ]
+      },
+      {
+        "q": "Quanti giorni di dati servono per conoscere la mia vera baseline?",
+        "a": "Circa due settimane di misurazioni costanti danno un intervallo utilizzabile per frequenza cardiaca a riposo e HRV; un mese è meglio. Fino ad allora, gran parte di ciò che vedi è normale rumore quotidiano.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "La tua baseline lo sa prima"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "Scopri il tuo intervallo di due settimane"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "Qual è la migliore tecnica di respirazione per l'ansia?",
+        "a": "Per un picco improvviso, il sospiro fisiologico (due inspirazioni dal naso, una lunga espirazione) agisce in pochi respiri. Per qualche minuto di calma, la box breathing (4-4-4-4) o la 4-7-8 aiutano rallentando il respiro e allungando l'espirazione. La tecnica migliore è quella che userai davvero quando l'ansia comincia.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "Il sospiro fisiologico"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Box breathing (respirazione quadrata)"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Timer per la respirazione"
+          }
+        ]
+      },
+      {
+        "q": "Come calmare velocemente il sistema nervoso?",
+        "a": "Rendi l'espirazione più lunga dell'inspirazione. Un'espirazione lunga e lenta attiva il nervo vago e rallenta il cuore in un paio di minuti; canticchiare a bocca chiusa mentre espiri ne aumenta l'effetto. Cinque minuti di respirazione lenta a circa sei respiri al minuto bastano alla maggior parte delle persone per sentire il cambiamento.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Respiro a bocca chiusa (humming) e nervo vago"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guida per la respirazione di risonanza"
+          }
+        ]
+      },
+      {
+        "q": "Qual è la migliore tecnica di respirazione per dormire?",
+        "a": "La 4-7-8 è la più popolare: inspira dal naso per 4, trattieni per 7, espira dalla bocca per 8, per quattro cicli. Anche respirare lentamente a circa sei respiri al minuto per dieci minuti a letto aiuta molte persone con insonnia a rilassarsi. Scegline una e mantienila uguale ogni sera.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respirazione 4-7-8"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Coerenza cardiaca per l'insonnia"
+          }
+        ]
+      },
+      {
+        "q": "Cos'è la tecnica di respirazione militare per addormentarsi?",
+        "a": "Il cosiddetto metodo militare rilassa il corpo una parte alla volta — viso, spalle, braccia, gambe — mentre respiri lentamente e profondamente, poi libera la mente con un'immagine semplice per circa dieci secondi. La parte respiratoria è una normale respirazione addominale lenta; funziona meglio abbinata a un orario regolare per andare a letto.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respirazione 4-7-8"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Timer per la respirazione"
+          }
+        ]
+      },
+      {
+        "q": "Quanti minuti al giorno fare esercizi di respirazione?",
+        "a": "Cinque minuti al giorno sono un inizio realistico e sono ciò che usano molti studi. La routine di coerenza cardiaca prevede tre sessioni da cinque minuti: mattina, mezzogiorno e sera. La costanza conta più della durata.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "Una breve routine di respirazione quotidiana"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "Il metodo 365 di coerenza cardiaca"
+          }
+        ]
+      },
+      {
+        "q": "Cos'è la respirazione di risonanza (coerente) e come trovo il mio ritmo?",
+        "a": "La respirazione di risonanza è un respiro lento e regolare — di solito circa cinque secondi di inspirazione e cinque di espirazione — al ritmo in cui la frequenza cardiaca oscilla di più a ogni respiro. Per la maggior parte degli adulti è tra cinque e sette respiri al minuto; trovi il tuo provando alcuni ritmi e notando quale risulta, a sensazione e nelle misurazioni, il più calmo.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Guida alla respirazione coerente"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Trova il tuo ritmo di risonanza"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guida per la respirazione di risonanza"
+          }
+        ]
+      },
+      {
+        "q": "Meglio respirare con il naso o con la bocca?",
+        "a": "A riposo e nella maggior parte delle pratiche di respirazione, con il naso: filtra e riscalda l'aria e rallenta naturalmente il respiro. Alcune tecniche, come la 4-7-8, prevedono di proposito l'espirazione dalla bocca.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Respirare con il naso o con la bocca"
+          }
+        ]
+      },
+      {
+        "q": "Il metodo Wim Hof o la respirazione rapida sono sicuri?",
+        "a": "Per adulti sani seduti o sdraiati, di solito sì — ma non praticarla mai in acqua o vicino all'acqua, alla guida o in piedi, perché le apnee possono causare svenimenti. Chi è in gravidanza o ha epilessia, problemi cardiaci o pressione alta non controllata dovrebbe prima consultare un medico.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Respirazione Wim Hof e infiammazione"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Timer Wim Hof"
+          }
+        ]
+      },
+      {
+        "q": "Come capire se il fiato corto è dovuto all'ansia?",
+        "a": "La mancanza di fiato legata all'ansia di solito si accompagna a preoccupazione, battito accelerato o formicolii e si attenua man mano che ti calmi e rallenti l'espirazione. Non puoi escludere da solo una causa cardiaca o polmonare: chiedi aiuto urgente se la mancanza di fiato si presenta con dolore al petto, svenimento, labbra bluastre, oppure se è nuova, intensa o peggiora.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Ansia, panico e respirazione"
+          }
+        ]
+      }
+    ]
+  }
+}

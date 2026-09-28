@@ -1,0 +1,225 @@
+{
+  "heading": "Häufige Fragen zu {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "Welcher Ruhepuls ist normal nach Alter?",
+        "a": "Für Erwachsene jeden Alters liegt ein normaler Ruhepuls bei 60 bis 100 Schlägen pro Minute; die großen Veränderungen passieren in der Kindheit: Neugeborene liegen bei 100–160 bpm, bis zur Jugend pendelt sich der Wert ein. Trainierte Erwachsene liegen oft bei 40 bis 59. Innerhalb des Normalbereichs sagt dein eigener Verlauf mehr aus als der Bevölkerungsdurchschnitt.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Ruhepuls nach Alter"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Ruhepuls-Rechner"
+          }
+        ]
+      },
+      {
+        "q": "Ist ein Ruhepuls von 50 oder 80 gesünder?",
+        "a": "Beide liegen im Normalbereich, aber ein niedrigerer Ruhepuls spricht meist für eine bessere Herz-Kreislauf-Fitness, weil ein kräftigeres Herz pro Schlag mehr Blut pumpt. In großen Bevölkerungsstudien ist ein Ruhepuls im oberen Normalbereich mit einem höheren langfristigen Risiko verbunden. Am wichtigsten ist, wo du für dein Alter liegst und ob dein Wert nach oben driftet.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Ruhepuls nach Alter"
+          }
+        ]
+      },
+      {
+        "q": "Ist ein Ruhepuls von 45 gut?",
+        "a": "Bei trainierten Ausdauersportlern ist ein Ruhepuls um die 40 üblich und meist ein Zeichen von Fitness. Wenn du nicht sehr aktiv bist und dein Puls so niedrig ist – besonders zusammen mit Schwindel, Ohnmacht, ungewöhnlicher Müdigkeit oder Atemnot –, solltest du das ärztlich abklären lassen.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Ruhepuls nach Alter"
+          }
+        ]
+      },
+      {
+        "q": "Ab wann ist der Ruhepuls gefährlich?",
+        "a": "Ein Ruhepuls, der dauerhaft über 100 bpm liegt (Tachykardie) oder bei Nicht-Sportlern unter 60 bpm (Bradykardie), liegt außerhalb des üblichen Bereichs für Erwachsene und sollte mit einer Ärztin oder einem Arzt besprochen werden. Suche umgehend Hilfe, wenn ein sehr schneller oder sehr langsamer Puls mit Brustschmerzen, Ohnmacht oder Atemnot einhergeht.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Mit dem Arzt über Smartwatch-Daten sprechen"
+          }
+        ]
+      },
+      {
+        "q": "Was ist ein guter HRV-Wert?",
+        "a": "Es gibt keinen einzelnen guten HRV-Wert: Die HRV sinkt mit dem Alter und unterscheidet sich je nach Gerät. Der Median des nächtlichen RMSSD liegt mit Anfang zwanzig bei etwa 58 ms und mit sechzig bei etwa 30 ms, mit großer gesunder Streuung. Eine gute HRV ist eine, die im Vergleich zu deinem eigenen Ausgangswert stabil bleibt oder steigt.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "Normale HRV nach Alter"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 Fragen zur HRV, beantwortet"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "HRV-Rechner"
+          }
+        ]
+      },
+      {
+        "q": "Warum ist mein Ruhepuls höher als sonst?",
+        "a": "Häufige Ursachen für einen vorübergehenden Anstieg sind Alkohol, eine kurze oder unterbrochene Nacht, eine harte Trainingsphase, ein beginnender Infekt, Flüssigkeitsmangel, Hitze und Stress. Meist geht er mit einer niedrigeren HRV einher. Normalisiert er sich innerhalb weniger Tage, war es eine normale Reaktion; bleibt er erhöht, schau zuerst auf deine Erholung.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "Was tun bei einem niedrigen HRV-Wert"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Übertraining, HRV und Ruhepuls"
+          }
+        ]
+      },
+      {
+        "q": "Wie viele Tage Daten brauche ich für meinen echten Ausgangswert?",
+        "a": "Etwa zwei Wochen regelmäßiger Messungen ergeben einen brauchbaren Bereich für Ruhepuls und HRV; ein Monat ist besser. Bis dahin ist das meiste, was du siehst, gewöhnliches Tag-zu-Tag-Rauschen.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "Dein Ausgangswert weiß es zuerst"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "Deinen Zwei-Wochen-Bereich ansehen"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "Welche Atemtechnik hilft am besten gegen Angst?",
+        "a": "Bei einem plötzlichen Angstschub wirkt der physiologische Seufzer (zweimal durch die Nase einatmen, einmal lang ausatmen) schon nach wenigen Atemzügen. Für ein paar ruhige Minuten helfen Box Breathing (4-4-4-4) oder 4-7-8, weil sie dich verlangsamen und die Ausatmung verlängern. Die beste Technik ist die, die du tatsächlich anwendest, wenn die Angst beginnt.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "Der physiologische Seufzer"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Box Breathing"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Atem-Timer"
+          }
+        ]
+      },
+      {
+        "q": "Wie kann ich mein Nervensystem schnell beruhigen?",
+        "a": "Mach die Ausatmung länger als die Einatmung. Ein langer, langsamer Ausatem aktiviert den Vagusnerv und verlangsamt den Herzschlag innerhalb von ein, zwei Minuten; Summen beim Ausatmen verstärkt den Effekt. Fünf Minuten langsames Atmen mit etwa sechs Atemzügen pro Minute reichen den meisten Menschen, um die Veränderung zu spüren.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Summendes Atmen und der Vagusnerv"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Taktgeber für Resonanzatmung"
+          }
+        ]
+      },
+      {
+        "q": "Welche Atemtechnik hilft am besten beim Einschlafen?",
+        "a": "4-7-8 ist am beliebtesten: 4 Sekunden durch die Nase einatmen, 7 halten, 8 durch den Mund ausatmen, vier Runden lang. Auch zehn Minuten langsames Atmen mit etwa sechs Atemzügen pro Minute im Bett helfen vielen Menschen mit Schlafstörungen, zur Ruhe zu kommen. Wähle eine Technik und bleib jeden Abend dabei.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "4-7-8-Atmung"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Herzkohärenz bei Schlafstörungen"
+          }
+        ]
+      },
+      {
+        "q": "Was ist die Militär-Methode zum Einschlafen?",
+        "a": "Die sogenannte Militär-Methode entspannt den Körper Stück für Stück – Gesicht, Schultern, Arme, Beine –, während du langsam und tief atmest, und leert dann den Kopf etwa zehn Sekunden lang mit einem einfachen Bild. Der Atemteil ist gewöhnliche langsame Bauchatmung; am besten wirkt sie zusammen mit einer festen Schlafenszeit.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "4-7-8-Atmung"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Atem-Timer"
+          }
+        ]
+      },
+      {
+        "q": "Wie viele Minuten am Tag sollte ich Atemübungen machen?",
+        "a": "Fünf Minuten am Tag sind ein realistischer Einstieg und entsprechen dem, was viele Studien verwenden. Die Herzkohärenz-Routine besteht aus drei Einheiten à fünf Minuten: morgens, mittags und abends. Regelmäßigkeit ist wichtiger als Dauer.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "Eine kurze tägliche Atemroutine"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "Die Herzkohärenz-Methode 365"
+          }
+        ]
+      },
+      {
+        "q": "Was ist Resonanzatmung (kohärentes Atmen) und wie finde ich meine Frequenz?",
+        "a": "Resonanzatmung ist langsames, gleichmäßiges Atmen – meist etwa fünf Sekunden ein und fünf Sekunden aus – in dem Tempo, bei dem deine Herzfrequenz mit jedem Atemzug am stärksten schwankt. Bei den meisten Erwachsenen liegt das zwischen fünf und sieben Atemzügen pro Minute; deine eigene Frequenz findest du, indem du ein paar Tempi ausprobierst und darauf achtest, welches sich am ruhigsten anfühlt und misst.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Leitfaden kohärentes Atmen"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Deine Resonanzfrequenz finden"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Taktgeber für Resonanzatmung"
+          }
+        ]
+      },
+      {
+        "q": "Sollte ich durch die Nase oder durch den Mund atmen?",
+        "a": "In Ruhe und bei den meisten Atemübungen durch die Nase: Sie filtert und wärmt die Luft und verlangsamt den Atem ganz natürlich. Manche Techniken wie 4-7-8 atmen bewusst durch den Mund aus.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Nasen- vs. Mundatmung"
+          }
+        ]
+      },
+      {
+        "q": "Ist die Wim-Hof-Methode oder schnelles Atmen gefährlich?",
+        "a": "Für gesunde Erwachsene im Sitzen oder Liegen meist nicht – aber übe sie niemals im oder am Wasser, beim Autofahren oder im Stehen, denn das Luftanhalten kann zu Ohnmacht führen. Schwangere sowie Menschen mit Epilepsie, Herzerkrankungen oder unkontrolliertem Bluthochdruck sollten vorher ärztlichen Rat einholen.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Wim-Hof-Atmung und Entzündungen"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Wim-Hof-Timer"
+          }
+        ]
+      },
+      {
+        "q": "Woran erkenne ich, ob Atemnot von Angst kommt?",
+        "a": "Angstbedingte Atemnot geht meist mit Sorgen, Herzrasen oder Kribbeln einher und lässt nach, wenn du dich beruhigst und langsamer ausatmest. Eine Ursache an Herz oder Lunge kannst du selbst nicht ausschließen: Hol dir sofort Hilfe bei Atemnot mit Brustschmerzen, Ohnmacht, blauen Lippen oder wenn sie neu, stark oder schlimmer wird.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Angst, Panik und Atmung"
+          }
+        ]
+      }
+    ]
+  }
+}

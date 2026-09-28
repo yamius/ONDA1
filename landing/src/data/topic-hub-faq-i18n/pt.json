@@ -1,0 +1,225 @@
+{
+  "heading": "Perguntas frequentes sobre {topic}",
+  "hubs": {
+    "hrv-heart-rate": [
+      {
+        "q": "Qual é a frequência cardíaca de repouso normal por idade?",
+        "a": "Para adultos de qualquer idade, a frequência cardíaca de repouso normal é de 60 a 100 batimentos por minuto; as grandes mudanças acontecem na infância, quando recém-nascidos ficam em 100–160 bpm e a frequência se estabiliza ao longo da adolescência. Adultos bem condicionados costumam ficar na faixa dos 40 ou 50. Dentro da faixa normal, a sua própria tendência diz mais do que a média da população.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frequência cardíaca de repouso por idade"
+          },
+          {
+            "href": "/tools/resting-heart-rate",
+            "label": "Calculadora de frequência cardíaca de repouso"
+          }
+        ]
+      },
+      {
+        "q": "O que é mais saudável: frequência cardíaca de repouso de 50 ou de 80?",
+        "a": "As duas estão dentro da faixa normal, mas uma frequência de repouso mais baixa geralmente reflete melhor condicionamento cardiovascular, porque um coração mais forte bombeia mais sangue a cada batimento. Em grandes estudos populacionais, uma frequência de repouso próxima do limite superior da faixa normal está associada a maior risco a longo prazo. O que mais importa é onde você está para a sua idade e se o seu número está subindo.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frequência cardíaca de repouso por idade"
+          }
+        ]
+      },
+      {
+        "q": "Frequência cardíaca de repouso de 45 é boa?",
+        "a": "Em atletas de resistência treinados, uma frequência de repouso na faixa dos 40 é comum e geralmente é sinal de bom condicionamento. Se você não é muito ativo e sua frequência está tão baixa — principalmente com tontura, desmaios, cansaço fora do comum ou falta de ar — vale a pena consultar um médico.",
+        "links": [
+          {
+            "href": "/articles/resting-heart-rate-by-age",
+            "label": "Frequência cardíaca de repouso por idade"
+          }
+        ]
+      },
+      {
+        "q": "Qual frequência cardíaca de repouso é perigosa?",
+        "a": "Uma frequência de repouso que se mantém acima de 100 bpm (taquicardia), ou abaixo de 60 bpm em quem não é atleta (bradicardia), está fora da faixa habitual para adultos e vale a pena conversar sobre isso com um médico. Procure atendimento rapidamente se uma frequência muito alta ou muito baixa vier acompanhada de dor no peito, desmaio ou falta de ar.",
+        "links": [
+          {
+            "href": "/articles/talk-to-your-doctor-about-wearable-data",
+            "label": "Como conversar com o médico sobre os dados do relógio"
+          }
+        ]
+      },
+      {
+        "q": "Qual é uma boa VFC?",
+        "a": "Não existe um único número de VFC bom: ela diminui com a idade e varia de um dispositivo para outro. O RMSSD noturno mediano fica em torno de 58 ms aos vinte e poucos anos e cerca de 30 ms aos sessenta, com uma ampla variação saudável. Uma boa VFC é aquela que se mantém estável ou sobe em relação à sua própria linha de base.",
+        "links": [
+          {
+            "href": "/articles/normal-hrv-by-age",
+            "label": "VFC normal por idade"
+          },
+          {
+            "href": "/articles/hrv-questions-answered",
+            "label": "52 perguntas sobre VFC, respondidas"
+          },
+          {
+            "href": "/tools/hrv",
+            "label": "Calculadora de VFC"
+          }
+        ]
+      },
+      {
+        "q": "Por que minha frequência cardíaca de repouso está mais alta que o normal?",
+        "a": "As causas mais comuns de um aumento temporário são álcool, uma noite curta ou mal dormida, um período de treino pesado, uma doença começando, desidratação, calor e estresse. Geralmente vem junto com uma VFC mais baixa. Se voltar ao normal em poucos dias, foi uma resposta normal; se continuar alta, olhe primeiro para a recuperação.",
+        "links": [
+          {
+            "href": "/articles/what-to-do-after-low-hrv-reading",
+            "label": "O que fazer depois de uma leitura de VFC baixa"
+          },
+          {
+            "href": "/articles/overtraining-hrv-resting-heart-rate",
+            "label": "Overtraining, VFC e frequência cardíaca de repouso"
+          }
+        ]
+      },
+      {
+        "q": "Quantos dias de dados preciso para ver minha linha de base real?",
+        "a": "Cerca de duas semanas de medições consistentes já dão uma faixa útil para a frequência cardíaca de repouso e a VFC; um mês é melhor. Até lá, a maior parte do que você vê é a variação comum do dia a dia.",
+        "links": [
+          {
+            "href": "/articles/your-baseline-knows-first",
+            "label": "Sua linha de base sabe primeiro"
+          },
+          {
+            "href": "/tools/baseline",
+            "label": "Veja sua faixa de duas semanas"
+          }
+        ]
+      }
+    ],
+    "breathing": [
+      {
+        "q": "Qual é a melhor técnica de respiração para ansiedade?",
+        "a": "Para um pico repentino, o suspiro fisiológico (duas inspirações pelo nariz, uma expiração longa) funciona em poucas respirações. Para alguns minutos de calma, a respiração quadrada (4-4-4-4) ou a 4-7-8 ajudam a desacelerar e alongar a expiração. A melhor técnica é aquela que você vai realmente usar quando a ansiedade começar.",
+        "links": [
+          {
+            "href": "/articles/physiological-sigh",
+            "label": "O suspiro fisiológico"
+          },
+          {
+            "href": "/articles/box-breathing-how-it-works",
+            "label": "Respiração quadrada"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Timer de respiração"
+          }
+        ]
+      },
+      {
+        "q": "Como acalmar o sistema nervoso rápido?",
+        "a": "Faça a expiração mais longa que a inspiração. Uma expiração longa e lenta ativa o nervo vago e desacelera o coração em um ou dois minutos; cantarolar enquanto expira reforça o efeito. Cinco minutos de respiração lenta, a cerca de seis respirações por minuto, bastam para a maioria das pessoas sentir a mudança.",
+        "links": [
+          {
+            "href": "/articles/humming-breath-vagus",
+            "label": "Respiração com zumbido e o nervo vago"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guia de respiração ressonante"
+          }
+        ]
+      },
+      {
+        "q": "Qual é a melhor técnica de respiração para dormir?",
+        "a": "A 4-7-8 é a mais popular: inspire pelo nariz contando 4, segure por 7, solte o ar pela boca por 8, durante quatro ciclos. Respirar devagar, a cerca de seis respirações por minuto, por dez minutos na cama também ajuda muitas pessoas com insônia a relaxar. Escolha uma e repita a mesma todas as noites.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respiração 4-7-8"
+          },
+          {
+            "href": "/articles/cardiac-coherence-insomnia-sleep",
+            "label": "Coerência cardíaca para insônia"
+          }
+        ]
+      },
+      {
+        "q": "O que é a técnica de respiração militar para dormir?",
+        "a": "O chamado método militar relaxa o corpo parte por parte — rosto, ombros, braços, pernas — enquanto você respira de forma lenta e profunda, e depois esvazia a mente com uma imagem simples por cerca de dez segundos. A parte da respiração é a respiração abdominal lenta comum; funciona melhor combinada com um horário regular para dormir.",
+        "links": [
+          {
+            "href": "/articles/4-7-8-breathing",
+            "label": "Respiração 4-7-8"
+          },
+          {
+            "href": "/tools/breathing",
+            "label": "Timer de respiração"
+          }
+        ]
+      },
+      {
+        "q": "Quantos minutos por dia devo fazer exercícios de respiração?",
+        "a": "Cinco minutos por dia é um começo realista e é o que muitos estudos usam. A rotina de coerência cardíaca são três sessões de cinco minutos: manhã, meio-dia e noite. Constância importa mais que duração.",
+        "links": [
+          {
+            "href": "/articles/short-daily-breathing-routine",
+            "label": "Uma rotina curta de respiração diária"
+          },
+          {
+            "href": "/articles/cardiac-coherence-365-method",
+            "label": "O método 365 de coerência cardíaca"
+          }
+        ]
+      },
+      {
+        "q": "O que é respiração ressonante (coerente) e como encontro meu ritmo?",
+        "a": "A respiração ressonante é uma respiração lenta e regular — normalmente inspirando e expirando por cerca de cinco segundos cada — no ritmo em que sua frequência cardíaca mais oscila a cada respiração. Para a maioria dos adultos, fica entre cinco e sete respirações por minuto; você encontra o seu testando alguns ritmos e observando qual parece e mede como o mais calmo.",
+        "links": [
+          {
+            "href": "/articles/coherent-breathing-guide",
+            "label": "Guia de respiração coerente"
+          },
+          {
+            "href": "/articles/find-your-resonance-breathing-rate",
+            "label": "Encontre seu ritmo de ressonância"
+          },
+          {
+            "href": "/tools/resonance-breathing",
+            "label": "Guia de respiração ressonante"
+          }
+        ]
+      },
+      {
+        "q": "Devo respirar pelo nariz ou pela boca?",
+        "a": "Em repouso e na maioria das práticas de respiração, pelo nariz: ele filtra e aquece o ar e desacelera a respiração naturalmente. Algumas técnicas, como a 4-7-8, soltam o ar pela boca de propósito.",
+        "links": [
+          {
+            "href": "/articles/nose-vs-mouth-breathing",
+            "label": "Respiração nasal vs. pela boca"
+          }
+        ]
+      },
+      {
+        "q": "A respiração Wim Hof ou respiração rápida é segura?",
+        "a": "Para adultos saudáveis, sentados ou deitados, geralmente sim — mas nunca pratique dentro ou perto da água, dirigindo ou em pé, porque as retenções de ar podem causar desmaio. Gestantes e pessoas com epilepsia, problemas cardíacos ou pressão alta não controlada devem consultar um médico antes.",
+        "links": [
+          {
+            "href": "/articles/wim-hof-breathing-inflammation",
+            "label": "Respiração Wim Hof e inflamação"
+          },
+          {
+            "href": "/tools/wim-hof",
+            "label": "Timer Wim Hof"
+          }
+        ]
+      },
+      {
+        "q": "Como saber se a falta de ar é de ansiedade?",
+        "a": "A falta de ar ligada à ansiedade costuma vir com preocupação, coração acelerado ou formigamento, e melhora conforme você se acalma e desacelera a expiração. Você não consegue descartar sozinho uma causa cardíaca ou pulmonar: procure ajuda urgente se a falta de ar vier com dor no peito, desmaio, lábios arroxeados, ou se for nova, intensa ou estiver piorando.",
+        "links": [
+          {
+            "href": "/articles/anxiety-panic-breathing-hrv",
+            "label": "Ansiedade, pânico e respiração"
+          }
+        ]
+      }
+    ]
+  }
+}
