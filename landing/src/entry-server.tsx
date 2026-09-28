@@ -89,12 +89,13 @@ registerServerReviewSource({ review: getFullReview, comparison: getFullCompariso
 import { ComparisonPage } from './pages/ComparisonPage'
 import { getArticleBySlug } from './data/articles'
 import { ARTICLE_FAQ } from './data/article-faq'
+import { ARTICLE_CITATIONS } from './data/article-citations'
 import { registerServerArticleSource } from './lib/article-content'
 
 // Prerender renders from the full in-memory registry (the browser fetches one article at a time).
 registerServerArticleSource((slug) => {
   const article = getArticleBySlug(slug)
-  return article ? { article, faq: ARTICLE_FAQ[slug] ?? [] } : undefined
+  return article ? { article: { ...article, citations: ARTICLE_CITATIONS[slug] }, faq: ARTICLE_FAQ[slug] ?? [] } : undefined
 })
 
 // NOTE: the heavy/lazy i18n namespaces (glossary, articles, reviews + the

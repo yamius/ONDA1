@@ -5,8 +5,12 @@ export interface HowToStep {
   protocolId?: string
 }
 
+import type { StudyCitation } from '../article-citations'
+
 export interface Article {
   slug: string
+  /** Verified primary sources (src/data/article-citations.ts) — merged in, not authored here. */
+  citations?: StudyCitation[]
   title: string
   /** Optional: subtitle under h1 (distinctive styling) */
   subtitle?: string

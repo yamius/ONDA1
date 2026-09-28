@@ -12,6 +12,7 @@ import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { getPrimaryHubForArticle } from '../data/article-topics'
+import { ui } from '../data/ui-i18n'
 import { langFromPath, langHref, homePathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -1094,6 +1095,24 @@ export function ArticlePage() {
             → {tNeuralSuggestion.linkText}
           </Link>
         </div>
+      )}
+
+      {article.citations && article.citations.length > 0 && (
+        <section className="mt-12 border-t border-white/10 pt-8" aria-labelledby="sources">
+          <h2 id="sources" className="mb-4 font-mono text-xs font-bold uppercase tracking-widest text-white/50">
+            {ui(lang).sources}
+          </h2>
+          <ol className="list-decimal space-y-2 pl-5 font-mono text-xs leading-relaxed text-white/55">
+            {article.citations.map((c) => (
+              <li key={c.url}>
+                {c.authors} ({c.year}). {c.title}.{c.journal ? <em> {c.journal}.</em> : null}{' '}
+                <a href={c.url} target="_blank" rel="noopener noreferrer" className="text-terminal-cyan underline decoration-terminal-cyan/30 underline-offset-2 hover:text-terminal-cyan/80">
+                  {c.doi ? `doi:${c.doi}` : c.url.replace(/^https?:\/\//, '')}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </section>
       )}
 
       {relatedTerms.length > 0 && (

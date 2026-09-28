@@ -15,6 +15,7 @@ import { hubItemSlugs, hubLastModified, hubAvailable, localizedHubItemSlugs, loc
 import { libraryCopy, fillLib } from '../src/data/library-i18n'
 import { TOPIC_HUB_FAQ, hubFaqFor } from '../src/data/topic-hub-faq'
 import { ARTICLE_FAQ as FAQ_SCHEMA, ARTICLE_FAQ_SCHEMA_ONLY } from '../src/data/article-faq'
+import { ARTICLE_CITATIONS, type StudyCitation } from '../src/data/article-citations'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
 import { baselineCopy } from '../src/data/baseline-i18n'
@@ -238,6 +239,18 @@ function wordTrim(s: string, max: number): string {
  *      meaningful stem), fall back to a plain word-trim of the whole title.
  * Deterministic and idempotent — safe to run on every build.
  */
+/** Library hub meta description: the intro's first sentence when it is a proper
+ *  snippet (70–160 chars), else the intro cut on a word boundary — the tile
+ *  one-liner is too short for a SERP snippet (roadmap 9.6). */
+function hubMetaDescription(intro: string, tile: string): string {
+  const first = intro.split(/(?<=[.!?。！？])\s+/)[0]?.trim() ?? ''
+  if (first.length >= 70 && first.length <= 160) return first
+  if (intro.length <= 160) return intro.length >= 70 ? intro : tile
+  const cut = intro.slice(0, 158)
+  const sp = cut.lastIndexOf(' ')
+  return `${(sp > 100 ? cut.slice(0, sp) : cut).replace(/[\s,;:—–-]+$/, '')}…`
+}
+
 export function clampTitleToIdeal(title: string, max = TITLE_IDEAL): string {
   if (title.length <= max) return title
 
@@ -503,6 +516,9 @@ export interface RouteMeta {
     description: string
     url: string
     items: { url: string; name: string }[]
+    /** YYYY-MM-DD — freshness signal on the CollectionPage (roadmap 9.4). */
+    datePublished?: string
+    dateModified?: string
   }
   /** Generic extra JSON-LD nodes emitted verbatim (each as its own script).
    *  For pages whose JSON-LD is built in a useEffect that prerender can't run. */
@@ -810,6 +826,7 @@ function buildTechArticleJsonLd(
     dependencies?: string
     proficiencyLevel?: string
     educationalLevel?: string
+    citations?: StudyCitation[]
   }
 ): string {
   const article: Record<string, unknown> = {
@@ -879,6 +896,19 @@ function buildTechArticleJsonLd(
   if (opts?.dependencies) article.dependencies = opts.dependencies
   if (opts?.proficiencyLevel) article.proficiencyLevel = opts.proficiencyLevel
   if (opts?.educationalLevel) article.educationalLevel = opts.educationalLevel
+  // Verified primary sources (roadmap 9.1) — schema.org citation → ScholarlyArticle.
+  if (opts?.citations?.length) {
+    article.citation = opts.citations.map((c) => ({
+      '@type': 'ScholarlyArticle',
+      name: c.title,
+      author: c.authors,
+      datePublished: String(c.year),
+      ...(c.journal ? { isPartOf: { '@type': 'Periodical', name: c.journal } } : {}),
+      url: c.url,
+      ...(c.doi ? { identifier: { '@type': 'PropertyValue', propertyID: 'DOI', value: c.doi } } : {}),
+      ...(c.doi ? { sameAs: `https://doi.org/${c.doi}` } : {}),
+    }))
+  }
   return JSON.stringify(article)
 }
 
@@ -1468,6 +1498,8 @@ function buildComparisonItemListJsonLd(il: NonNullable<RouteMeta['itemList']>): 
     url: il.url,
     isPartOf: { '@id': `${SITE_URL}/#website` },
     author: { '@id': AUTHOR_ID },
+    ...(il.datePublished ? { datePublished: il.datePublished } : {}),
+    ...(il.dateModified ? { dateModified: il.dateModified } : {}),
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: il.items.length,
@@ -3191,7 +3223,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       return {
         ...(hubFaq ? { faq: { url, mainEntity: hubFaq.items.map((f) => ({ question: f.q, answer: f.a })) } } : {}),
         title: longTitle.length <= 60 ? longTitle : `${name} | ${lc.ui.hubTitleSuffix}`,
-        description: hc?.tile ?? hub.tile,
+        description: hubMetaDescription(hc?.intro ?? hub.intro, hc?.tile ?? hub.tile),
         ...(hub.image ? { image: `${SITE_URL}${hub.image}` } : {}),
         url,
         breadcrumbs: [
@@ -3226,7 +3258,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       return {
         ...(hubFaq ? { faq: { url, mainEntity: hubFaq.map((f) => ({ question: f.q, answer: f.a })) } } : {}),
         title: longTitle.length <= 60 ? longTitle : `${hub.name} | ONDA Library`,
-        description: hub.tile,
+        description: hubMetaDescription(hub.intro, hub.tile),
         ...(hub.image ? { image: `${SITE_URL}${hub.image}` } : {}),
         url,
         breadcrumbs,
@@ -3436,6 +3468,8 @@ export function getMetaForRoute(route: string): RouteMeta {
         breadcrumbs,
         ogType: 'article',
         itemList: {
+          datePublished: h2h.datePublished,
+          dateModified: h2h.dateModified,
           name: h2h.title,
           description: h2h.description,
           url,
@@ -3464,7 +3498,7 @@ export function getMetaForRoute(route: string): RouteMeta {
         ogType: 'article',
         // Branded ranked-round-up card as og:image (roadmap 6.5).
         image: `${SITE_URL}/images/reviews/${comparison.slug}.png`,
-        itemList: { name: comparison.title, description: comparison.description, url, items },
+        itemList: { name: comparison.title, description: comparison.description, url, items, datePublished: comparison.datePublished, dateModified: comparison.dateModified },
         faq: comparison.faq.length
           ? { mainEntity: comparison.faq.map((f) => ({ question: f.q, answer: f.a })), url }
           : undefined,
@@ -3701,6 +3735,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
             dependencies: meta.techArticle.dependencies,
             proficiencyLevel: meta.techArticle.proficiencyLevel,
             educationalLevel: meta.techArticle.educationalLevel,
+            citations: ARTICLE_CITATIONS[meta.techArticle.url.split('/articles/')[1] ?? ''],
           }
         : undefined
     const techArticleScript = `<script type="application/ld+json">${buildTechArticleJsonLd(

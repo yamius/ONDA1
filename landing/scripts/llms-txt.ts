@@ -20,6 +20,7 @@ import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
 import { reviews, comparisons } from '../src/data/reviews'
 import { TOOLS } from '../src/data/tools'
+import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
 import { METRIC_DETAILS, metricSummary, metricPlainText } from '../src/data/bioMetrics'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
 import { resonanceBreathingJsonLd } from '../src/pages/ResonanceBreathingGuidePage'
@@ -86,7 +87,7 @@ ONDA Life also publishes an original knowledge base on the science it builds on 
 This file follows the llms.txt convention (https://llmstxt.org/) so AI search and reasoning systems can discover and cite ONDA Life content accurately.
 
 - All content is original to ONDA Life and may be cited with attribution to onda-life.com.
-- The site ships in 5 languages (en, es, ru, uk, zh). The canonical URLs below are EN; localized variants live at /:lang/<path>.
+- The site ships in 12 languages (en, es, ru, uk, zh, de, fr, it, nl, ja, pl, pt). The canonical URLs below are EN; localized variants live at /:lang/<path> (each page lists its translations via hreflang).
 - For full article and glossary bodies in markdown, use /llms-full.txt.
 `
 
@@ -181,6 +182,10 @@ ${partLines.join('\n')}
     }
     articlesBlock.push('')
   }
+  sections.push(
+    `## Library topics (the ONDA Library is organised into these hubs; start here to find the right article)\n\n` +
+      ARTICLE_TOPIC_HUBS.map((h) => `- [${h.name}](${SITE_URL}/articles/topic/${h.slug}): ${h.tile}`).join('\n'),
+  )
   sections.push(`## Articles\n\n${articlesBlock.join('\n')}`)
 
   // Glossary

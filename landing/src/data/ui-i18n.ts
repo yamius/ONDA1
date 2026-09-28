@@ -18,6 +18,7 @@ interface UiStrings {
   ondaTermTitle: string
   scientificTerm: string
   latest: string
+  sources: string
 }
 
 export const UI_I18N: Record<Lang, UiStrings> = {
@@ -32,6 +33,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'ONDA Life’s own terminology, not an established scientific term',
     scientificTerm: 'SCIENTIFIC TERM',
     latest: 'latest',
+    sources: 'Sources',
   },
   es: {
     efnLabel: 'Marco experiencial — no es una afirmación médica',
@@ -44,6 +46,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Terminología propia de ONDA Life, no un término científico establecido',
     scientificTerm: 'TÉRMINO CIENTÍFICO',
     latest: 'lo último',
+    sources: 'Fuentes',
   },
   ru: {
     efnLabel: 'Практическая модель — не медицинское утверждение',
@@ -56,6 +59,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Собственная терминология ONDA Life, не устоявшийся научный термин',
     scientificTerm: 'НАУЧНЫЙ ТЕРМИН',
     latest: 'новое',
+    sources: 'Источники',
   },
   uk: {
     efnLabel: 'Практична модель — не медичне твердження',
@@ -68,6 +72,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Власна термінологія ONDA Life, не усталений науковий термін',
     scientificTerm: 'НАУКОВИЙ ТЕРМІН',
     latest: 'нове',
+    sources: 'Джерела',
   },
   zh: {
     efnLabel: '体验式框架 — 并非医学声明',
@@ -80,6 +85,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'ONDA Life 自己的术语，并非既定的科学术语',
     scientificTerm: '科学术语',
     latest: '最新',
+    sources: '参考文献',
   },
   de: {
     efnLabel: 'Erfahrungsmodell — keine medizinische Aussage',
@@ -92,6 +98,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Eigene Terminologie von ONDA Life, kein etablierter wissenschaftlicher Begriff',
     scientificTerm: 'WISSENSCHAFTLICHER BEGRIFF',
     latest: 'neueste',
+    sources: 'Quellen',
   },
   fr: {
     efnLabel: 'Cadre expérientiel — pas une allégation médicale',
@@ -104,6 +111,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Terminologie propre à ONDA Life, pas un terme scientifique établi',
     scientificTerm: 'TERME SCIENTIFIQUE',
     latest: 'récents',
+    sources: 'Sources',
   },
   it: {
     efnLabel: 'Modello esperienziale — non un’affermazione medica',
@@ -116,6 +124,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Terminologia propria di ONDA Life, non un termine scientifico consolidato',
     scientificTerm: 'TERMINE SCIENTIFICO',
     latest: 'più recenti',
+    sources: 'Fonti',
   },
   nl: {
     efnLabel: 'Ervaringsmodel — geen medische claim',
@@ -128,6 +137,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Eigen terminologie van ONDA Life, geen gevestigde wetenschappelijke term',
     scientificTerm: 'WETENSCHAPPELIJKE TERM',
     latest: 'nieuwste',
+    sources: 'Bronnen',
   },
   ja: {
     efnLabel: '体験的なフレームワーク — 医学的な主張ではありません',
@@ -140,6 +150,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'ONDA Life 独自の用語（確立された科学用語ではありません）',
     scientificTerm: '科学用語',
     latest: '最新',
+    sources: '参考文献',
   },
   pl: {
     efnLabel: 'Model doświadczeniowy — nie jest to twierdzenie medyczne',
@@ -152,6 +163,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Własna terminologia ONDA Life, nie ugruntowany termin naukowy',
     scientificTerm: 'TERMIN NAUKOWY',
     latest: 'najnowsze',
+    sources: 'Źródła',
   },
   pt: {
     efnLabel: 'Modelo experiencial — não é uma afirmação médica',
@@ -164,6 +176,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
     ondaTermTitle: 'Terminologia própria da ONDA Life, não um termo científico estabelecido',
     scientificTerm: 'TERMO CIENTÍFICO',
     latest: 'mais recentes',
+    sources: 'Fontes',
   },
 }
 

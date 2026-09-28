@@ -21,6 +21,7 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { articles, type Article } from '../src/data/articles'
 import { ARTICLE_FAQ } from '../src/data/article-faq'
+import { ARTICLE_CITATIONS } from '../src/data/article-citations'
 import { glossaryTerms } from '../src/data/glossary'
 import { ALL_REVIEWS, ALL_COMPARISONS } from '../src/data/reviews'
 import { ALL_HEAD_TO_HEADS } from '../src/data/reviews/head-to-head'
@@ -50,6 +51,8 @@ for (const a of articles) {
   for (const [k, v] of Object.entries(a)) if (!(CATALOG_KEYS as readonly string[]).includes(k)) body[k] = v
   const faq = ARTICLE_FAQ[a.slug]
   if (faq?.length) body.faq = faq
+  const cites = ARTICLE_CITATIONS[a.slug]
+  if (cites?.length) body.citations = cites
   const json = JSON.stringify(body)
   enBytes += json.length
   writeFileSync(join(CONTENT, 'en', `${a.slug}.json`), json)
