@@ -52,12 +52,68 @@
     "faq": "[ FAQ ]",
     "product": "Product",
     "overall": "Overall",
-    "metaReviewTitle": "{{name}} review — scored {{score}}/10"
+    "metaReviewTitle": "Análise do {{name}} — nota {{score}}/10",
+    "commonQuestions": "Perguntas frequentes",
+    "headToHeadHeading": "Comparação direta"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
     "evidence-based": "Evidence-based assessment"
   },
-  "bodies": {},
-  "comparisons": {}
+  "bodies": {
+    "resona-health-vibe": {
+      "verdict": "Melhor porta de entrada para PEMF vestível: $299, mais de 130 protocolos, controle pelo app e nenhum tapete para instalar. Intensidade de campo menor que a dos tapetes de corpo inteiro, por design.",
+      "summary": "O Resona Health VIBE é a opção de entrada em PEMF vestível: um dispositivo de bolso com mais de 130 protocolos direcionados, agendamento pelo app e preço de $299. A intensidade de campo é bem menor que a dos tapetes de corpo inteiro — a proposta é o uso direcionado e localizado, não uma sessão passiva de corpo inteiro. É a melhor porta de entrada para quem tem curiosidade sobre PEMF, mas ainda não quer investir mais de $2.000 em um tapete.",
+      "description": "Análise do Resona Health VIBE: a entrada mais fácil em PEMF vestível — $299, mais de 130 protocolos pelo app, sem tapete. Intensidade menor que tapetes.",
+      "bestFor": "Ideal para quem tem curiosidade sobre PEMF e quer começar sem grande compromisso, busca PEMF vestível e portátil ou quer um dispositivo de uso direcionado com muitos protocolos por menos de $300.",
+      "testNote": "Avaliação baseada em evidências — pontuada a partir da documentação do produto da Resona Health e de análises de PEMF vestível de 2026. Não testado na prática pela ONDA.",
+      "pros": [
+        "Melhor custo-benefício de entrada em PEMF — $299 contra mais de $2.000 dos tapetes",
+        "Mais de 130 protocolos documentados, com controle pelo app",
+        "Formato vestível / portátil",
+        "Forma de baixo compromisso para conhecer PEMF antes de investir em um tapete"
+      ],
+      "cons": [
+        "Intensidade de campo menor que a dos tapetes de corpo inteiro (por design)",
+        "Sem aplicação simultânea no corpo inteiro",
+        "Marca nova, sem décadas de histórico",
+        "Uso apenas direcionado — não é uma sessão passiva deitado em um tapete"
+      ],
+      "scoreNotes": {
+        "field-strength": "O formato vestível implica intensidade de pico menor que a dos tapetes de corpo inteiro. Projetado para uso direcionado e localizado, não para exposição do corpo inteiro ao campo.",
+        "waveform-evidence": "Mais de 130 protocolos baseados em pesquisas documentadas sobre frequências de PEMF. Não tem uma forma de onda proprietária com pesquisa própria — usa a literatura existente.",
+        "build": "Construção vestível de bolso, garantia de 2 anos. Marca nova, mas bem avaliada no segmento de PEMF vestível em 2026.",
+        "programmability": "A melhor programabilidade da categoria de entrada — mais de 130 protocolos com controle e agendamento pelo app. Acesso real a parâmetros pelo preço.",
+        "form-factor": "Formato vestível / de bolso. Apenas uso direcionado e localizado — sem cobertura de corpo inteiro como um tapete. Excelente em portabilidade e para protocolos em movimento.",
+        "value": "$299 — a porta de entrada com melhor custo-benefício em PEMF. Difícil contestar pelo preço, para quem tem curiosidade sobre PEMF."
+      },
+      "content": "## Onde se destaca\n\nO Resona Health VIBE é a opção de entrada em PEMF vestível — um dispositivo de $299 com mais de 130 protocolos documentados, agendamento pelo app e portabilidade de bolso. É a forma de menor compromisso para conhecer PEMF sem investir mais de $2.000 em um tapete.\n\n## Onde deixa a desejar\n\nIntensidade de campo e cobertura de corpo inteiro. O formato vestível implica intensidade de pico menor e aplicação apenas direcionada — você não tem a sessão passiva de corpo inteiro deitado em um tapete. É uma marca nova, sem décadas de histórico.\n\n## Para quem é\n\nEscolha o Resona Health VIBE se você tem curiosidade sobre PEMF e quer começar sem grande compromisso, ou se quer um dispositivo vestível e portátil para protocolos direcionados. Para sessões de corpo inteiro em tapete, OMI ou Healthy Wave. Para um sinal respaldado por pesquisa, Bemer. Para PEMF voltado ao sono, EarthPulse.\n\n---\n\n## Leitura complementar\n\n- [A arquitetura bioelétrica da cura](/articles/bioelectric-architecture-healing)\n- [Protocolos de recuperação mitocondrial](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "Quanto custa o Resona Health VIBE?",
+          "a": "O Resona Health VIBE custa $299 como dispositivo vestível independente, com o app incluído. É o melhor custo-benefício de entrada em PEMF, contra mais de $2.000 dos tapetes de corpo inteiro, o que o torna a forma de menor compromisso para conhecer PEMF. A ONDA dá nota 8.5/10 em custo-benefício."
+        },
+        {
+          "q": "O que o Resona Health VIBE faz?",
+          "a": "O Resona Health VIBE é um dispositivo PEMF vestível de bolso que oferece mais de 130 protocolos controlados pelo app, com agendamento. Foi projetado para uso direcionado e localizado, não para sessões de corpo inteiro, por isso a intensidade de campo é menor que a dos tapetes de corpo inteiro, por design. A ONDA dá nota geral 6.8/10."
+        },
+        {
+          "q": "Para quem o Resona Health VIBE é mais indicado?",
+          "a": "O Resona Health VIBE é mais indicado para quem tem curiosidade sobre PEMF e quer começar sem grande compromisso, busca PEMF vestível e portátil ou quer um dispositivo de uso direcionado com muitos protocolos por menos de $300. Não é para aplicação simultânea no corpo inteiro — nesse caso, um tapete de corpo inteiro é a melhor escolha."
+        }
+      ]
+    }
+  },
+  "comparisons": {},
+  "criteria": {
+    "field-strength": "Intensidade de campo e dose",
+    "waveform-evidence": "Forma de onda e evidências científicas",
+    "build": "Qualidade de construção e durabilidade",
+    "programmability": "Programabilidade e protocolos",
+    "form-factor": "Formato e variedade de aplicadores",
+    "value": "Custo-benefício"
+  },
+  "categories": {
+    "pemf": "Dispositivos PEMF"
+  }
 }

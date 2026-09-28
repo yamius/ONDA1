@@ -848,9 +848,32 @@ function pilotReviewRoutes(lang: string, cats: ReadonlySet<string>): string[] {
   ]
 }
 
-const localizedReviewRoutes = Object.entries(REVIEW_PILOTS).flatMap(([lang, cats]) =>
-  pilotReviewRoutes(lang, cats),
+/**
+ * Single reviews published in a language WITHOUT opening their whole category
+ * (a category pilot publishes every review in it, translated or not). Use this
+ * for a fully translated review: bodies.<slug> must exist in
+ * public/locales/<lang>/reviews.json. Date-gated like the rest.
+ */
+const REVIEW_SLUG_ROLLOUT: readonly { lang: string; slug: string; publishOn: string }[] = [
+  // Resona Health VIBE — top GSC query + most AI-Overview-cited page (2026-09-28).
+  ...['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'].map((lang) => ({
+    lang,
+    slug: 'resona-health-vibe',
+    publishOn: '2026-09-28',
+  })),
+]
+const liveReviewSlugLocale = REVIEW_SLUG_ROLLOUT.filter(
+  (e) => e.publishOn <= REVIEW_BUILD_DATE && reviews.some((r) => r.slug === e.slug),
 )
+const reviewSlugLangs: Record<string, string[]> = {}
+for (const e of liveReviewSlugLocale) (reviewSlugLangs[e.slug] ??= []).push(e.lang)
+
+const localizedReviewRoutes = [
+  ...Object.entries(REVIEW_PILOTS).flatMap(([lang, cats]) => pilotReviewRoutes(lang, cats)),
+  ...liveReviewSlugLocale
+    .filter((e) => !REVIEW_PILOTS[e.lang]?.has(reviews.find((r) => r.slug === e.slug)!.category))
+    .map((e) => `/${e.lang}/reviews/${e.slug}`),
+]
 
 /**
  * Localised head-to-head duels — /<lang>/reviews/vs/<slug>. Head-to-heads have
@@ -951,6 +974,7 @@ export function reviewLocalizedLangs(slug: string): readonly string[] {
     }
   }
   for (const lang of headToHeadLangsBySlug[slug] ?? []) langs.push(lang)
+  for (const lang of reviewSlugLangs[slug] ?? []) if (!langs.includes(lang)) langs.push(lang)
   return langs
 }
 const ES_PILOT_ARTICLE_SET = new Set<string>(ES_PILOT_ARTICLE_SLUGS)

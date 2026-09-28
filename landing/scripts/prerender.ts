@@ -257,7 +257,7 @@ interface ReviewsFile {
   hub?: { h1?: string; intro?: string }
   methodology?: { h1?: string; intro?: string }
   ui?: { metaReviewTitle?: string }
-  bodies?: Record<string, { description?: string }>
+  bodies?: Record<string, { description?: string; faq?: { q: string; a: string }[] }>
   comparisons?: Record<string, { title?: string; description?: string }>
   headToHeads?: Record<string, { title?: string; description?: string }>
 }
@@ -902,6 +902,18 @@ for (const route of routes) {
               .replace('{{score}}', review.overallScore.toFixed(1))} | ONDA Life`
           }
           desc = rf.bodies?.[reviewInfo.slug]?.description ?? ''
+          // FAQPage must describe the Q&A actually shown: the translated FAQ when the
+          // body has one, otherwise drop the English FAQPage from this localized URL.
+          const lfaq = rf.bodies?.[reviewInfo.slug]?.faq
+          out = out.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (whole, json: string) => {
+            let data: Record<string, unknown>
+            try { data = JSON.parse(json) } catch { return whole }
+            if (data['@type'] !== 'FAQPage') return whole
+            if (!lfaq?.length) return ''
+            data.inLanguage = reviewInfo.lang
+            data.mainEntity = lfaq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
+            return `<script type="application/ld+json">${JSON.stringify(data)}</script>`
+          })
         }
         const url = reviewUrlFor(reviewInfo.kind, reviewInfo.slug, reviewInfo.lang)
         const escUrl = escAttr(url)

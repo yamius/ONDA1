@@ -52,12 +52,68 @@
     "faq": "[ FAQ ]",
     "product": "Product",
     "overall": "Overall",
-    "metaReviewTitle": "{{name}} review — scored {{score}}/10"
+    "metaReviewTitle": "{{name}} — recenzja i ocena {{score}}/10",
+    "commonQuestions": "Częste pytania",
+    "headToHeadHeading": "Bezpośrednie porównania"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
     "evidence-based": "Evidence-based assessment"
   },
-  "bodies": {},
-  "comparisons": {}
+  "bodies": {
+    "resona-health-vibe": {
+      "verdict": "Najlepszy start z noszonym PEMF — $299, ponad 130 protokołów, sterowanie z aplikacji, bez instalowania maty. Celowo niższe natężenie pola niż w matach całego ciała.",
+      "summary": "Resona Health VIBE to noszony PEMF z poziomu podstawowego — kieszonkowe urządzenie z ponad 130 celowanymi protokołami, harmonogramem sterowanym z aplikacji i ceną $299. Natężenie pola jest znacznie niższe niż w matach na całe ciało — założeniem konstrukcji jest miejscowe, celowane użycie, a nie bierna sesja całego ciała. Najlepszy punkt wejścia dla osób zaciekawionych PEMF, które nie są gotowe wydać $2,000+ na matę.",
+      "description": "Recenzja Resona Health VIBE: najłatwiejszy start z noszonym PEMF — $299, ponad 130 protokołów w aplikacji, bez maty. Niższe natężenie pola niż maty.",
+      "bestFor": "Najlepszy dla osób zaciekawionych PEMF, które chcą zacząć bez dużego zobowiązania, szukają przenośnego, noszonego PEMF lub urządzenia z bogatą biblioteką protokołów do celowanego użycia poniżej $300.",
+      "testNote": "Ocena oparta na dowodach — punktacja na podstawie dokumentacji produktu Resona Health i recenzji noszonych urządzeń PEMF z 2026 roku. ONDA nie testowała urządzenia osobiście.",
+      "pros": [
+        "Najlepszy stosunek jakości do ceny wśród podstawowych PEMF — $299 wobec $2,000+ za maty",
+        "Ponad 130 udokumentowanych protokołów sterowanych z aplikacji",
+        "Noszona, przenośna forma",
+        "Sposób na poznanie PEMF bez dużego zobowiązania, zanim zainwestujesz w matę"
+      ],
+      "cons": [
+        "Niższe natężenie pola niż w matach całego ciała (z założenia)",
+        "Brak jednoczesnej sesji na całe ciało",
+        "Nowy gracz bez wieloletniej historii marki",
+        "Wyłącznie celowane użycie — nie jest to bierna sesja na leżąco na macie"
+      ],
+      "scoreNotes": {
+        "field-strength": "Noszona forma oznacza niższe natężenie szczytowe niż w matach całego ciała. Zaprojektowane do miejscowego, celowanego użycia, a nie do ekspozycji całego ciała na pole.",
+        "waveform-evidence": "Ponad 130 protokołów opartych na udokumentowanych badaniach częstotliwości PEMF. Brak własnych badań nad unikalnym przebiegiem — urządzenie korzysta z istniejącej literatury.",
+        "build": "Kieszonkowa, noszona konstrukcja, 2 lata gwarancji. Nowy gracz, ale dobrze oceniany w segmencie noszonych PEMF w 2026 roku.",
+        "programmability": "Najlepsza programowalność na poziomie podstawowym — ponad 130 protokołów ze sterowaniem i harmonogramem w aplikacji. Realny dostęp do parametrów jak na tę cenę.",
+        "form-factor": "Forma noszona, kieszonkowa. Tylko miejscowe, celowane użycie — bez pokrycia całego ciała jak na macie. Świetna przenośność i protokoły w drodze.",
+        "value": "$299 — najlepszy stosunek jakości do ceny na start z PEMF. Trudno z tym dyskutować przy tej cenie, jeśli PEMF dopiero Cię ciekawi."
+      },
+      "content": "## Mocne strony\n\nResona Health VIBE to noszony PEMF z poziomu podstawowego — urządzenie za $299 z ponad 130 udokumentowanymi protokołami, harmonogramem sterowanym z aplikacji i kieszonkowymi wymiarami. Najlepszy sposób, by poznać PEMF bez dużego zobowiązania i bez wydawania $2,000+ na matę.\n\n## Słabe strony\n\nNatężenie pola i pokrycie całego ciała. Noszona forma oznacza niższe natężenie szczytowe i wyłącznie celowane użycie — nie dostajesz biernej sesji na całe ciało na leżąco na macie. To nowy gracz bez wieloletniej historii marki.\n\n## Dla kogo\n\nWybierz Resona Health VIBE, jeśli PEMF Cię ciekawi i chcesz zacząć bez dużego zobowiązania albo potrzebujesz przenośnego, noszonego urządzenia do celowanych protokołów. Do sesji na macie całego ciała — OMI lub Healthy Wave. Po sygnał poparty badaniami — Bemer. Po PEMF ukierunkowany na sen — EarthPulse.\n\n---\n\n## Dalsza lektura\n\n- [Bioelektryczna architektura gojenia](/articles/bioelectric-architecture-healing)\n- [Protokoły regeneracji mitochondriów](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "Ile kosztuje Resona Health VIBE?",
+          "a": "Resona Health VIBE kosztuje $299 jako samodzielne urządzenie noszone, z aplikacją w cenie. To najlepszy stosunek jakości do ceny wśród podstawowych PEMF, wobec $2,000+ za maty całego ciała, co czyni go sposobem na poznanie PEMF przy najmniejszym zobowiązaniu. ONDA ocenia jego wartość na 8.5/10."
+        },
+        {
+          "q": "Do czego służy Resona Health VIBE?",
+          "a": "Resona Health VIBE to kieszonkowe, noszone urządzenie PEMF oferujące ponad 130 protokołów sterowanych z aplikacji, z harmonogramem. Jest zaprojektowane do celowanego, miejscowego użycia, a nie do sesji na całe ciało, dlatego natężenie pola jest z założenia niższe niż w matach całego ciała. Ogólna ocena ONDA: 6.8/10."
+        },
+        {
+          "q": "Dla kogo najlepiej sprawdzi się Resona Health VIBE?",
+          "a": "Resona Health VIBE najlepiej sprawdzi się u osób zaciekawionych PEMF, które chcą zacząć bez dużego zobowiązania, szukają przenośnego, noszonego PEMF lub urządzenia z bogatą biblioteką protokołów do celowanego użycia poniżej $300. Nie nadaje się do jednoczesnej sesji na całe ciało — tu lepszym wyborem jest mata."
+        }
+      ]
+    }
+  },
+  "comparisons": {},
+  "criteria": {
+    "field-strength": "Natężenie pola i dawka",
+    "waveform-evidence": "Przebieg sygnału i dowody z badań",
+    "build": "Jakość wykonania i trwałość",
+    "programmability": "Programowalność i protokoły",
+    "form-factor": "Forma i zakres aplikatorów",
+    "value": "Stosunek jakości do ceny"
+  },
+  "categories": {
+    "pemf": "Urządzenia PEMF"
+  }
 }

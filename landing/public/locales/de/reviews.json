@@ -52,12 +52,68 @@
     "faq": "[ FAQ ]",
     "product": "Produkt",
     "overall": "Gesamt",
-    "metaReviewTitle": "{{name}} im Test — Note {{score}}/10"
+    "metaReviewTitle": "{{name}} im Test — Note {{score}}/10",
+    "commonQuestions": "Häufige Fragen",
+    "headToHeadHeading": "Im direkten Vergleich"
   },
   "testStatus": {
     "hands-on": "Praxistest",
     "evidence-based": "Evidenzbasierte Bewertung"
   },
-  "bodies": {},
-  "comparisons": {}
+  "bodies": {
+    "resona-health-vibe": {
+      "verdict": "Der beste tragbare PEMF-Einstieg — $299, 130+ Protokolle, per App gesteuert, keine Matte nötig. Bewusst geringere Feldintensität als Ganzkörpermatten.",
+      "summary": "Resona Health VIBE ist die tragbare PEMF-Einstiegsklasse — ein Gerät im Taschenformat mit 130+ gezielten Protokollen, Zeitplänen per App und einem Preis von $299. Die Feldintensität ist deutlich geringer als bei Ganzkörpermatten — das Konzept setzt auf gezielte, lokale Anwendung statt auf passive Ganzkörpersitzungen. Der beste Einstieg für PEMF-Interessierte, die noch nicht $2,000+ in eine Matte investieren wollen.",
+      "description": "Resona Health VIBE im Test: der einfachste tragbare PEMF-Einstieg — $299, 130+ Protokolle per App, keine Matte. Geringere Feldintensität als Ganzkörpermatten.",
+      "bestFor": "Ideal für PEMF-Interessierte, die unverbindlich einsteigen möchten, tragbares PEMF suchen oder ein protokollreiches Gerät für gezielte Anwendung unter $300 wollen.",
+      "testNote": "Evidenzbasierte Bewertung — benotet anhand der Produktdokumentation von Resona Health und von Tests tragbarer PEMF-Geräte aus 2026. Nicht von ONDA praktisch getestet.",
+      "pros": [
+        "Bestes Preis-Leistungs-Verhältnis im PEMF-Einstieg — $299 statt $2,000+ für Matten",
+        "130+ dokumentierte Protokolle mit App-Steuerung",
+        "Tragbare, mobile Bauform",
+        "Unverbindlicher Weg, PEMF vor dem Kauf einer Matte auszuprobieren"
+      ],
+      "cons": [
+        "Geringere Feldintensität als Ganzkörpermatten (konzeptbedingt)",
+        "Keine gleichzeitige Ganzkörperanwendung",
+        "Neuer Anbieter ohne jahrzehntelange Markenhistorie",
+        "Nur für gezielte Anwendung — keine passive Sitzung auf der Matte"
+      ],
+      "scoreNotes": {
+        "field-strength": "Die tragbare Bauform bedeutet eine geringere Spitzenintensität als bei Ganzkörpermatten. Ausgelegt für gezielte, lokale Anwendung, nicht für eine Ganzkörper-Feldexposition.",
+        "waveform-evidence": "130+ Protokolle auf Basis dokumentierter PEMF-Frequenzforschung. Kein eigener Forschungsvorsprung bei einer einzelnen Wellenform — stützt sich auf die vorhandene Literatur.",
+        "build": "Tragbares Gerät im Taschenformat, 2 Jahre Garantie. Neuer Anbieter, aber im Segment tragbarer PEMF-Geräte 2026 gut bewertet.",
+        "programmability": "Beste Programmierbarkeit in der Einstiegsklasse — 130+ Protokolle mit App-Steuerung und Zeitplänen. Für den Preis echter Zugriff auf Parameter.",
+        "form-factor": "Tragbares Taschenformat. Nur gezielte, lokale Anwendung — keine Ganzkörperabdeckung wie bei einer Matte. Hervorragend für Mobilität und Protokolle unterwegs.",
+        "value": "$299 — der Einstieg mit dem besten Preis-Leistungs-Verhältnis bei PEMF. Für PEMF-Interessierte zu diesem Preis kaum zu schlagen."
+      },
+      "content": "## Wo es überzeugt\n\nResona Health VIBE ist die tragbare PEMF-Einstiegsklasse — ein Gerät für $299 mit 130+ dokumentierten Protokollen, Zeitplänen per App und Taschenformat. Der unverbindlichste Weg, PEMF kennenzulernen, ohne $2,000+ in eine Matte zu investieren.\n\n## Wo es Schwächen hat\n\nFeldintensität und Ganzkörperabdeckung. Die tragbare Bauform bedeutet geringere Spitzenintensität und ausschließlich gezielte Anwendung — die passive Ganzkörpersitzung auf der Matte gibt es hier nicht. Neuer Anbieter ohne jahrzehntelange Markenhistorie.\n\n## Für wen es geeignet ist\n\nWählen Sie Resona Health VIBE, wenn Sie PEMF-interessiert sind und unverbindlich einsteigen möchten oder ein tragbares Gerät für gezielte Protokolle suchen. Für Ganzkörpersitzungen auf der Matte: OMI oder Healthy Wave. Für ein forschungsgestütztes Signal: Bemer. Für PEMF speziell rund um den Schlaf: EarthPulse.\n\n---\n\n## Weiterführende Lektüre\n\n- [Die bioelektrische Architektur der Heilung](/articles/bioelectric-architecture-healing)\n- [Protokolle zur mitochondrialen Regeneration](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "Wie viel kostet Resona Health VIBE?",
+          "a": "Resona Health VIBE kostet $299 als eigenständiges tragbares Gerät inklusive App. Das ist das beste Preis-Leistungs-Verhältnis im PEMF-Einstieg, verglichen mit $2,000+ für Ganzkörpermatten, und damit der unverbindlichste Weg, PEMF auszuprobieren. ONDA bewertet das Preis-Leistungs-Verhältnis mit 8.5/10."
+        },
+        {
+          "q": "Was macht Resona Health VIBE?",
+          "a": "Resona Health VIBE ist ein tragbares PEMF-Gerät im Taschenformat mit 130+ per App gesteuerten Protokollen und Zeitplänen. Es ist für gezielte, lokale Anwendung statt für Ganzkörpersitzungen ausgelegt, daher ist die Feldintensität konzeptbedingt geringer als bei Ganzkörpermatten. ONDA bewertet es insgesamt mit 6.8/10."
+        },
+        {
+          "q": "Für wen eignet sich Resona Health VIBE am besten?",
+          "a": "Resona Health VIBE eignet sich am besten für PEMF-Interessierte, die unverbindlich einsteigen möchten, tragbares PEMF suchen oder ein protokollreiches Gerät für gezielte Anwendung unter $300 wollen. Für eine gleichzeitige Ganzkörperanwendung ist es nicht gedacht — dafür ist eine Ganzkörpermatte die bessere Wahl."
+        }
+      ]
+    }
+  },
+  "comparisons": {},
+  "criteria": {
+    "field-strength": "Feldstärke und Dosis",
+    "waveform-evidence": "Wellenform und Studienlage",
+    "build": "Verarbeitung und Langlebigkeit",
+    "programmability": "Programmierbarkeit und Protokolle",
+    "form-factor": "Bauform und Applikatoren",
+    "value": "Preis-Leistung"
+  },
+  "categories": {
+    "pemf": "PEMF-Geräte"
+  }
 }

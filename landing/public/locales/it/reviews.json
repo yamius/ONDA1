@@ -52,12 +52,68 @@
     "faq": "[ FAQ ]",
     "product": "Product",
     "overall": "Overall",
-    "metaReviewTitle": "{{name}} review — scored {{score}}/10"
+    "metaReviewTitle": "Recensione {{name}} — voto {{score}}/10",
+    "commonQuestions": "Domande frequenti",
+    "headToHeadHeading": "Confronto diretto"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
     "evidence-based": "Evidence-based assessment"
   },
-  "bodies": {},
-  "comparisons": {}
+  "bodies": {
+    "resona-health-vibe": {
+      "verdict": "Il miglior punto d'ingresso nella PEMF indossabile: $299, oltre 130 protocolli, controllo via app, nessun tappetino da installare. Intensità di campo inferiore ai tappetini total body, per scelta progettuale.",
+      "summary": "Resona Health VIBE è la fascia d'ingresso della PEMF indossabile: un dispositivo tascabile con oltre 130 protocolli mirati, programmazione tramite app e un prezzo di $299. L'intensità di campo è molto inferiore a quella dei tappetini total body: la filosofia progettuale punta a un uso mirato e localizzato, non a una sessione passiva su tutto il corpo. Il miglior punto d'ingresso per chi è curioso della PEMF ma non è pronto a spendere oltre $2.000 per un tappetino.",
+      "description": "Recensione di Resona Health VIBE: l'ingresso più semplice nella PEMF indossabile. $299, oltre 130 protocolli via app, nessun tappetino da installare.",
+      "bestFor": "Ideale per chi è curioso della PEMF e cerca un ingresso a basso impegno, una PEMF indossabile e portatile o un dispositivo mirato ricco di protocolli sotto i $300.",
+      "testNote": "Valutazione basata sulle evidenze: punteggi ricavati dalla documentazione di prodotto di Resona Health e dalle recensioni 2026 di dispositivi PEMF indossabili. Non testato direttamente da ONDA.",
+      "pros": [
+        "Il miglior rapporto qualità-prezzo nella fascia d'ingresso PEMF: $299 contro oltre $2.000 dei tappetini",
+        "Oltre 130 protocolli documentati con controllo via app",
+        "Formato indossabile / portatile",
+        "Un modo a basso impegno per esplorare la PEMF prima di investire in un tappetino"
+      ],
+      "cons": [
+        "Intensità di campo inferiore ai tappetini total body (per scelta progettuale)",
+        "Nessun trattamento simultaneo su tutto il corpo",
+        "Marchio nuovo, senza una storia pluridecennale",
+        "Solo uso mirato: non è una sessione passiva sdraiati sul tappetino"
+      ],
+      "scoreNotes": {
+        "field-strength": "Il formato indossabile comporta un'intensità di picco inferiore rispetto ai tappetini total body. Pensato per un uso mirato e localizzato, non per l'esposizione del corpo intero al campo.",
+        "waveform-evidence": "Oltre 130 protocolli tratti dalla ricerca documentata sulle frequenze PEMF. Nessun vantaggio da ricerca proprietaria su una singola forma d'onda: si basa sulla letteratura esistente.",
+        "build": "Costruzione indossabile tascabile, garanzia di 2 anni. Marchio nuovo ma ben recensito nel segmento PEMF indossabile del 2026.",
+        "programmability": "La migliore programmabilità della fascia d'ingresso: oltre 130 protocolli con controllo e programmazione via app. Un reale accesso ai parametri per questo prezzo.",
+        "form-factor": "Formato indossabile / tascabile. Solo uso mirato e localizzato, nessuna copertura total body da tappetino. Eccellente per la portabilità e i protocolli in movimento.",
+        "value": "$299: il punto d'ingresso con il miglior rapporto qualità-prezzo nella PEMF. A questo prezzo è difficile trovare di meglio per chi è curioso della PEMF."
+      },
+      "content": "## Dove eccelle\n\nResona Health VIBE è la fascia d'ingresso della PEMF indossabile: un dispositivo da $299 con oltre 130 protocolli documentati, programmazione tramite app e portabilità tascabile. Il modo a più basso impegno per esplorare la PEMF senza spendere oltre $2.000 per un tappetino.\n\n## Dove è carente\n\nIntensità di campo e copertura del corpo intero. Il formato indossabile comporta un'intensità di picco inferiore e un trattamento solo mirato: non si ottiene la sessione passiva su tutto il corpo sdraiati sul tappetino. Marchio nuovo, senza una storia pluridecennale.\n\n## A chi è rivolto\n\nScegli Resona Health VIBE se sei curioso della PEMF e vuoi un ingresso a basso impegno, oppure se cerchi un dispositivo indossabile e portatile per protocolli mirati. Per sessioni total body su tappetino, OMI o Healthy Wave. Per un segnale supportato dalla ricerca, Bemer. Per la PEMF dedicata al sonno, EarthPulse.\n\n---\n\n## Letture di approfondimento\n\n- [L'architettura bioelettrica della guarigione](/articles/bioelectric-architecture-healing)\n- [Protocolli di recupero mitocondriale](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "Quanto costa Resona Health VIBE?",
+          "a": "Resona Health VIBE costa $299 come dispositivo indossabile autonomo, app inclusa. È il miglior rapporto qualità-prezzo nella fascia d'ingresso PEMF, contro oltre $2.000 dei tappetini total body, ed è quindi il modo a più basso impegno per esplorare la PEMF. ONDA gli assegna 8.5/10 per il rapporto qualità-prezzo."
+        },
+        {
+          "q": "Cosa fa Resona Health VIBE?",
+          "a": "Resona Health VIBE è un dispositivo PEMF indossabile e tascabile che offre oltre 130 protocolli controllati via app, con programmazione. È pensato per un uso mirato e localizzato anziché per sessioni su tutto il corpo, quindi l'intensità di campo è inferiore a quella dei tappetini total body per scelta progettuale. ONDA gli assegna 6.8/10 complessivo."
+        },
+        {
+          "q": "A chi è più adatto Resona Health VIBE?",
+          "a": "Resona Health VIBE è ideale per chi è curioso della PEMF e cerca un ingresso a basso impegno, una PEMF indossabile e portatile o un dispositivo mirato ricco di protocolli sotto i $300. Non è adatto al trattamento simultaneo di tutto il corpo, per il quale un tappetino total body è la scelta migliore."
+        }
+      ]
+    }
+  },
+  "comparisons": {},
+  "criteria": {
+    "field-strength": "Intensità di campo e dose",
+    "waveform-evidence": "Forma d'onda ed evidenze scientifiche",
+    "build": "Qualità costruttiva e durata",
+    "programmability": "Programmabilità e protocolli",
+    "form-factor": "Formato e gamma di applicatori",
+    "value": "Rapporto qualità-prezzo"
+  },
+  "categories": {
+    "pemf": "Dispositivi PEMF"
+  }
 }

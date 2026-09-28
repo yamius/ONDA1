@@ -28,12 +28,69 @@
     "verdict": "Verdict",
     "faq": "[ FAQ ]",
     "product": "Product",
-    "overall": "Overall"
+    "overall": "Overall",
+    "commonQuestions": "常见问题",
+    "headToHeadHeading": "正面对比",
+    "metaReviewTitle": "{{name}} 评测 — 评分 {{score}}/10"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
     "evidence-based": "Evidence-based assessment"
   },
-  "bodies": {},
-  "comparisons": {}
+  "bodies": {
+    "resona-health-vibe": {
+      "verdict": "最佳可穿戴 PEMF 入门之选——$299，130+ 种方案，App 控制，无需铺设理疗垫。场强低于全身理疗垫，这是有意为之的设计。",
+      "summary": "Resona Health VIBE 属于可穿戴 PEMF 入门档——口袋大小的设备，提供 130+ 种针对性方案，可通过 App 设定日程，售价 $299。其场强远低于全身理疗垫，设计理念是针对局部部位使用，而非被动的全身疗程。对于好奇 PEMF、但还不准备花 $2,000+ 购买理疗垫的用户，这是最好的入门选择。",
+      "description": "Resona Health VIBE 评测：最易上手的可穿戴 PEMF——$299，130+ 种 App 控制方案，无需铺设理疗垫。场强低于全身理疗垫。",
+      "bestFor": "适合想低门槛尝试 PEMF、需要便携可穿戴 PEMF，或想要一台 $300 以内、方案丰富的局部使用设备的用户。",
+      "testNote": "基于证据的评估——依据 Resona Health 产品资料和 2026 年可穿戴 PEMF 评测打分。ONDA 未进行实机测试。",
+      "pros": [
+        "PEMF 入门档中性价比最高——$299，对比理疗垫的 $2,000+",
+        "130+ 种有文档说明的方案，支持 App 控制",
+        "可穿戴 / 便携外形",
+        "在投资理疗垫之前，以低门槛方式探索 PEMF"
+      ],
+      "cons": [
+        "场强低于全身理疗垫（设计使然）",
+        "无法同时进行全身疗程",
+        "新品牌，缺乏数十年的品牌积淀",
+        "仅适用于局部使用——不是躺在垫子上的被动疗程"
+      ],
+      "scoreNotes": {
+        "field-strength": "可穿戴外形意味着峰值强度低于全身理疗垫。专为针对局部使用而设计，而非全身场暴露。",
+        "waveform-evidence": "130+ 种方案取自已有文献记载的 PEMF 频率研究。没有独家的单一波形研究壁垒——依托的是现有文献。",
+        "build": "口袋大小的可穿戴设计，2 年保修。虽是新品牌，但在 2026 年可穿戴 PEMF 细分领域评价良好。",
+        "programmability": "入门档中可编程性最佳——130+ 种方案，支持 App 控制和日程设定。以这个价格能真正调节参数。",
+        "form-factor": "可穿戴 / 口袋外形。仅限局部使用——无法像理疗垫那样覆盖全身。便携性出色，适合随时随地使用方案。",
+        "value": "$299——PEMF 中性价比最高的入门之选。对好奇 PEMF 的用户来说，这个价格很难挑剔。"
+      },
+      "content": "## 优势所在\n\nResona Health VIBE 属于可穿戴 PEMF 入门档——售价 $299，提供 130+ 种有文档说明的方案，可通过 App 设定日程，口袋大小，便于携带。无需花 $2,000+ 购买理疗垫，就能以最低门槛探索 PEMF。\n\n## 不足之处\n\n场强和全身覆盖。可穿戴外形意味着峰值强度较低，且只能局部使用——无法获得躺在垫子上的被动全身疗程。新品牌，缺乏数十年的品牌积淀。\n\n## 适合人群\n\n如果你对 PEMF 感到好奇、想低门槛入门，或想要一台用于针对性方案的便携可穿戴设备，可以选择 Resona Health VIBE。想要全身理疗垫疗程，选 OMI 或 Healthy Wave；想要有研究支持的信号，选 Bemer；想要专注睡眠的 PEMF，选 EarthPulse。\n\n---\n\n## 延伸阅读\n\n- [愈合的生物电架构](/articles/bioelectric-architecture-healing)\n- [线粒体恢复方案](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "Resona Health VIBE 多少钱？",
+          "a": "Resona Health VIBE 作为独立可穿戴设备售价 $299，含 App。相比 $2,000+ 的全身理疗垫，它是 PEMF 入门档中性价比最高的选择，也是探索 PEMF 门槛最低的方式。ONDA 在性价比一项给它打 8.5/10。"
+        },
+        {
+          "q": "Resona Health VIBE 有什么作用？",
+          "a": "Resona Health VIBE 是一款口袋大小的可穿戴 PEMF 设备，提供 130+ 种 App 控制的方案，并支持日程设定。它专为针对局部使用而设计，而非全身疗程，因此场强有意低于全身理疗垫。ONDA 给它的综合评分为 6.8/10。"
+        },
+        {
+          "q": "Resona Health VIBE 最适合哪些人？",
+          "a": "Resona Health VIBE 最适合想低门槛尝试 PEMF、需要便携可穿戴 PEMF，或想要一台 $300 以内、方案丰富的局部使用设备的用户。它不适合需要同时进行全身疗程的场景，这种情况下全身理疗垫是更好的选择。"
+        }
+      ]
+    }
+  },
+  "comparisons": {},
+  "criteria": {
+    "field-strength": "场强与剂量",
+    "waveform-evidence": "波形与研究证据",
+    "build": "做工与耐用性",
+    "programmability": "可编程性与方案",
+    "form-factor": "外形与施加器范围",
+    "value": "性价比"
+  },
+  "categories": {
+    "pemf": "PEMF 设备"
+  }
 }

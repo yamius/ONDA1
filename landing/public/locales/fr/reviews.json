@@ -52,12 +52,68 @@
     "faq": "[ FAQ ]",
     "product": "Produit",
     "overall": "Global",
-    "metaReviewTitle": "Test {{name}} — note {{score}}/10"
+    "metaReviewTitle": "Test {{name}} — note {{score}}/10",
+    "commonQuestions": "Questions fréquentes",
+    "headToHeadHeading": "Comparatifs face à face"
   },
   "testStatus": {
     "hands-on": "Testé en conditions réelles",
     "evidence-based": "Évaluation fondée sur les preuves"
   },
-  "bodies": {},
-  "comparisons": {}
+  "bodies": {
+    "resona-health-vibe": {
+      "verdict": "Le meilleur point d’entrée dans la PEMF portable — 299 $, plus de 130 protocoles, pilotage par appli, aucun tapis à installer. Intensité de champ plus faible que les tapis corps entier, par conception.",
+      "summary": "Le Resona Health VIBE représente l’entrée de gamme de la PEMF portable : un appareil de poche avec plus de 130 protocoles ciblés, une programmation pilotée par appli et un prix de 299 $. L’intensité de champ est bien plus faible que celle des tapis corps entier — sa philosophie repose sur un usage ciblé et localisé plutôt que sur une séance passive sur tout le corps. Le meilleur point d’entrée pour les curieux de la PEMF qui ne sont pas prêts à investir plus de 2 000 $ dans un tapis.",
+      "description": "Test du Resona Health VIBE : l’entrée la plus simple dans la PEMF portable — 299 $, 130+ protocoles via appli, sans tapis. Champ plus faible qu’un tapis.",
+      "bestFor": "Idéal pour les curieux de la PEMF qui veulent une entrée sans gros engagement, une PEMF portable, ou un appareil à usage ciblé riche en protocoles à moins de 300 $.",
+      "testNote": "Évaluation fondée sur les preuves — notée à partir de la documentation produit de Resona Health et des tests 2026 d’appareils PEMF portables. Non testé en conditions réelles par ONDA.",
+      "pros": [
+        "Meilleur rapport qualité-prix d’entrée de gamme en PEMF — 299 $ contre plus de 2 000 $ pour les tapis",
+        "Plus de 130 protocoles documentés, pilotés par appli",
+        "Format portable / à porter sur soi",
+        "Une façon peu engageante de découvrir la PEMF avant d’investir dans un tapis"
+      ],
+      "cons": [
+        "Intensité de champ plus faible que les tapis corps entier (par conception)",
+        "Pas de traitement simultané du corps entier",
+        "Nouvel acteur sans plusieurs décennies d’historique de marque",
+        "Usage ciblé uniquement — pas de séance passive allongé sur un tapis"
+      ],
+      "scoreNotes": {
+        "field-strength": "Le format portable implique une intensité maximale plus faible que les tapis corps entier. Conçu pour un usage ciblé et localisé, pas pour une exposition du corps entier au champ.",
+        "waveform-evidence": "Plus de 130 protocoles tirés de la recherche documentée sur les fréquences PEMF. Pas d’avantage de recherche exclusif sur une forme d’onde propriétaire — s’appuie sur la littérature existante.",
+        "build": "Appareil de poche à porter sur soi, garantie de 2 ans. Nouvel acteur, mais bien noté dans le segment PEMF portable en 2026.",
+        "programmability": "Meilleure programmabilité de l’entrée de gamme — plus de 130 protocoles avec pilotage et programmation par appli. Un vrai accès aux paramètres pour ce prix.",
+        "form-factor": "Format portable / de poche. Usage ciblé et localisé uniquement — pas de couverture corps entier comme un tapis. Excellent pour la portabilité et les protocoles en déplacement.",
+        "value": "299 $ — le point d’entrée au meilleur rapport qualité-prix en PEMF. Difficile de faire mieux à ce prix pour les curieux de la PEMF."
+      },
+      "content": "## Ses points forts\n\nLe Resona Health VIBE représente l’entrée de gamme de la PEMF portable : un appareil à 299 $ avec plus de 130 protocoles documentés, une programmation pilotée par appli et un format de poche. La façon la moins engageante de découvrir la PEMF sans investir plus de 2 000 $ dans un tapis.\n\n## Ses limites\n\nL’intensité de champ et la couverture du corps entier. Le format portable implique une intensité maximale plus faible et un traitement uniquement ciblé — pas de séance passive corps entier allongé sur un tapis. Nouvel acteur sans plusieurs décennies d’historique de marque.\n\n## Pour qui\n\nChoisissez le Resona Health VIBE si la PEMF vous intrigue et que vous voulez une entrée peu engageante, ou si vous cherchez un appareil portable pour des protocoles ciblés. Pour des séances corps entier sur tapis, OMI ou Healthy Wave. Pour un signal appuyé par la recherche, Bemer. Pour une PEMF dédiée au sommeil, EarthPulse.\n\n---\n\n## Pour aller plus loin\n\n- [L’architecture bioélectrique de la guérison](/articles/bioelectric-architecture-healing)\n- [Protocoles de récupération mitochondriale](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "Combien coûte le Resona Health VIBE ?",
+          "a": "Le Resona Health VIBE coûte 299 $ en tant qu’appareil portable autonome, appli incluse. C’est le meilleur rapport qualité-prix d’entrée de gamme en PEMF, contre plus de 2 000 $ pour les tapis corps entier, ce qui en fait la façon la moins engageante de découvrir la PEMF. ONDA lui attribue 8,5/10 pour le rapport qualité-prix."
+        },
+        {
+          "q": "À quoi sert le Resona Health VIBE ?",
+          "a": "Le Resona Health VIBE est un appareil PEMF de poche à porter sur soi, qui propose plus de 130 protocoles pilotés par appli, avec programmation. Il est conçu pour un usage ciblé et localisé plutôt que pour des séances corps entier ; son intensité de champ est donc, par conception, plus faible que celle des tapis corps entier. ONDA lui attribue une note globale de 6,8/10."
+        },
+        {
+          "q": "À qui s’adresse le Resona Health VIBE ?",
+          "a": "Le Resona Health VIBE convient surtout aux curieux de la PEMF qui veulent une entrée peu engageante, une PEMF portable, ou un appareil à usage ciblé riche en protocoles à moins de 300 $. Il ne convient pas au traitement simultané du corps entier, pour lequel un tapis corps entier est le meilleur choix."
+        }
+      ]
+    }
+  },
+  "comparisons": {},
+  "criteria": {
+    "field-strength": "Intensité du champ et dose",
+    "waveform-evidence": "Forme d’onde et preuves scientifiques",
+    "build": "Qualité de fabrication et longévité",
+    "programmability": "Programmabilité et protocoles",
+    "form-factor": "Format et gamme d’applicateurs",
+    "value": "Rapport qualité-prix"
+  },
+  "categories": {
+    "pemf": "Appareils PEMF"
+  }
 }

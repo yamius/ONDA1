@@ -81,7 +81,9 @@
     "winner": "Ganador",
     "why": "Por qué",
     "faqHeading": "Preguntas frecuentes",
-    "seeFullRanking": "Ver la clasificación completa"
+    "seeFullRanking": "Ver la clasificación completa",
+    "commonQuestions": "Preguntas habituales",
+    "headToHeadHeading": "Comparativas cara a cara"
   },
   "testStatus": {
     "hands-on": "Probado en persona",
@@ -90,7 +92,8 @@
   "categories": {
     "hrv-wearable": "Monitores de HRV",
     "meditation-app": "Apps de meditación",
-    "sleep-app": "Apps de sueño"
+    "sleep-app": "Apps de sueño",
+    "pemf": "Dispositivos PEMF"
   },
   "criteria": {
     "tracking-accuracy": "Precisión del seguimiento del sueño",
@@ -109,7 +112,12 @@
     "content-library": "Biblioteca de contenido",
     "teaching": "Calidad de la enseñanza",
     "personalization": "Personalización",
-    "evidence": "Base de evidencia"
+    "evidence": "Base de evidencia",
+    "field-strength": "Intensidad de campo y dosis",
+    "waveform-evidence": "Forma de onda y evidencia científica",
+    "build": "Calidad de construcción y durabilidad",
+    "programmability": "Programabilidad y protocolos",
+    "form-factor": "Formato y variedad de aplicadores"
   },
   "bodies": {
     "sleep-cycle": {
@@ -981,6 +989,48 @@
         "evidence": "Creada por un diseñador de mindfulness respetado; creíble, aunque no es un programa orientado a la investigación."
       },
       "content": "## En qué destaca\n\nBuddhify es la app de pago único en una categoría construida casi por completo sobre suscripciones: pagas una vez y la posees para siempre. Sus más de 200 meditaciones se organizan no como un curso sino por situación — el trayecto al trabajo, una pausa laboral, despertarse de noche, sentir estrés — así que abres la app, eliges lo que estás haciendo de verdad y empiezas. Para meditar sobre la marcha, ese enfoque es de verdad útil, y el tono es en todo momento sereno, práctico y libre de jerga de bienestar.\n\n## En qué se queda corta\n\nLa biblioteca es más pequeña que la de los gigantes de suscripción, y no hay una progresión adaptativa basada en cursos — trazas tu propio camino por momentos en lugar de que te lleven por un plan. La característica rueda de colores tiene encanto pero se siente algo anticuada frente a Calm o Headspace, y la muestra gratuita es pobre.\n\n## Para quién es\n\nElige Buddhify si quieres pagar una vez y no volver a ver un aviso de suscripción, y te gusta la idea de meditaciones a juego con lo que sea que estés haciendo ahora mismo. Si quieres la biblioteca más grande o un curso estructurado desde cero, Insight Timer o Headspace te servirán mejor."
+    },
+    "resona-health-vibe": {
+      "verdict": "La mejor puerta de entrada al PEMF portátil: 299 $, más de 130 protocolos, control desde la app y sin esterilla que instalar. Menor intensidad de campo que las esterillas de cuerpo completo, por diseño.",
+      "summary": "Resona Health VIBE es la gama de entrada del PEMF portátil: un dispositivo de bolsillo con más de 130 protocolos localizados, programación desde la app y un precio de 299 $. La intensidad de campo es mucho menor que la de las esterillas de cuerpo completo: su filosofía de diseño es el uso localizado y dirigido, no la sesión pasiva de cuerpo entero. Es la mejor puerta de entrada para quienes sienten curiosidad por el PEMF pero no están listos para gastar más de 2000 $ en una esterilla.",
+      "description": "Reseña de Resona Health VIBE: la forma más fácil de probar el PEMF portátil. 299 $, más de 130 protocolos en la app y sin esterilla. Menor intensidad de campo.",
+      "bestFor": "Ideal para quienes sienten curiosidad por el PEMF y buscan una entrada sin gran compromiso, un PEMF portátil o un dispositivo de uso localizado con muchos protocolos por menos de 300 $.",
+      "testNote": "Evaluación basada en evidencia: puntuada a partir de la documentación de producto de Resona Health y de reseñas de PEMF portátil de 2026. ONDA no lo ha probado en persona.",
+      "pros": [
+        "La mejor relación calidad-precio de gama de entrada en PEMF: 299 $ frente a más de 2000 $ de las esterillas",
+        "Más de 130 protocolos documentados con control desde la app",
+        "Formato portátil y ponible",
+        "Una forma de bajo compromiso de explorar el PEMF antes de invertir en una esterilla"
+      ],
+      "cons": [
+        "Menor intensidad de campo que las esterillas de cuerpo completo (por diseño)",
+        "No permite tratamiento simultáneo de cuerpo entero",
+        "Marca nueva, sin décadas de trayectoria",
+        "Solo para uso localizado: no ofrece una sesión pasiva tumbado en una esterilla"
+      ],
+      "scoreNotes": {
+        "field-strength": "El formato ponible implica una intensidad máxima menor que la de las esterillas de cuerpo completo. Está pensado para un uso localizado y dirigido, no para exponer todo el cuerpo al campo.",
+        "waveform-evidence": "Más de 130 protocolos basados en la investigación documentada sobre frecuencias PEMF. No cuenta con investigación propia sobre una forma de onda exclusiva: se apoya en la literatura existente.",
+        "build": "Construcción ponible de bolsillo y 2 años de garantía. Marca nueva, pero bien valorada en el segmento de PEMF portátil de 2026.",
+        "programmability": "La mejor programabilidad de la gama de entrada: más de 130 protocolos con control y programación desde la app. Ofrece acceso real a los parámetros para su precio.",
+        "form-factor": "Formato ponible y de bolsillo. Solo uso localizado, sin la cobertura de cuerpo entero de una esterilla. Excelente por su portabilidad y para protocolos sobre la marcha.",
+        "value": "299 $: la puerta de entrada al PEMF con mejor relación calidad-precio. Difícil de superar a este precio para quienes sienten curiosidad por el PEMF."
+      },
+      "content": "## Dónde destaca\n\nResona Health VIBE es la gama de entrada del PEMF portátil: un dispositivo de 299 $ con más de 130 protocolos documentados, programación desde la app y un tamaño de bolsillo. Es la mejor forma, con poco compromiso, de explorar el PEMF sin gastar más de 2000 $ en una esterilla.\n\n## Dónde se queda corto\n\nEn intensidad de campo y cobertura de cuerpo entero. El formato ponible implica una intensidad máxima menor y un uso solo localizado: no tienes la sesión pasiva de cuerpo entero tumbado en una esterilla. Es una marca nueva, sin décadas de trayectoria.\n\n## Para quién es\n\nElige Resona Health VIBE si sientes curiosidad por el PEMF y quieres empezar sin gran compromiso, o si buscas un dispositivo portátil para protocolos localizados. Para sesiones de cuerpo entero en esterilla, OMI o Healthy Wave. Para una señal respaldada por investigación, Bemer. Para PEMF enfocado en el sueño, EarthPulse.\n\n---\n\n## Lecturas de contexto\n\n- [La arquitectura bioeléctrica de la recuperación](/articles/bioelectric-architecture-healing)\n- [Protocolos de recuperación mitocondrial](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta Resona Health VIBE?",
+          "a": "Resona Health VIBE cuesta 299 $ como dispositivo ponible independiente, con la app incluida. Es la mejor relación calidad-precio de la gama de entrada en PEMF, frente a más de 2000 $ de las esterillas de cuerpo completo, lo que lo convierte en la forma de menor compromiso de explorar el PEMF. ONDA le da un 8,5/10 en relación calidad-precio."
+        },
+        {
+          "q": "¿Qué hace Resona Health VIBE?",
+          "a": "Resona Health VIBE es un dispositivo PEMF ponible de bolsillo que ofrece más de 130 protocolos controlados y programables desde la app. Está pensado para un uso localizado y dirigido, no para sesiones de cuerpo entero, por lo que su intensidad de campo es menor que la de las esterillas de cuerpo completo, por diseño. ONDA le da un 6,8/10 en total."
+        },
+        {
+          "q": "¿Para quién es más adecuado Resona Health VIBE?",
+          "a": "Resona Health VIBE es ideal para quienes sienten curiosidad por el PEMF y buscan una entrada sin gran compromiso, un PEMF portátil o un dispositivo de uso localizado con muchos protocolos por menos de 300 $. No está pensado para el tratamiento simultáneo de cuerpo entero; para eso, una esterilla de cuerpo completo es mejor opción."
+        }
+      ]
     }
   },
   "comparisons": {

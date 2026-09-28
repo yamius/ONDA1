@@ -52,12 +52,68 @@
     "faq": "[ FAQ ]",
     "product": "Product",
     "overall": "Overall",
-    "metaReviewTitle": "{{name}} review — scored {{score}}/10"
+    "metaReviewTitle": "{{name}} review — score {{score}}/10",
+    "commonQuestions": "Veelgestelde vragen",
+    "headToHeadHeading": "Rechtstreeks vergeleken"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
     "evidence-based": "Evidence-based assessment"
   },
-  "bodies": {},
-  "comparisons": {}
+  "bodies": {
+    "resona-health-vibe": {
+      "verdict": "Beste draagbare instap in PEMF — $299, 130+ protocollen, bediening via de app, geen mat die je hoeft te installeren. Bewust een lagere veldsterkte dan full-body matten.",
+      "summary": "Resona Health VIBE is het draagbare instapniveau in PEMF — een zakformaat apparaat met 130+ gerichte protocollen, planning via de app en een prijs van $299. De veldsterkte ligt veel lager dan bij full-body matten: het ontwerp is gericht op lokaal, gericht gebruik in plaats van een passieve sessie voor het hele lichaam. De beste instap voor wie nieuwsgierig is naar PEMF, maar nog geen $2.000+ aan een mat wil uitgeven.",
+      "description": "Resona Health VIBE review: de makkelijkste draagbare PEMF-instap — $299, 130+ protocollen via de app, geen mat nodig. Lagere veldsterkte dan full-body matten.",
+      "bestFor": "Ideaal voor wie nieuwsgierig is naar PEMF en laagdrempelig wil beginnen, een draagbaar PEMF-apparaat zoekt, of een protocolrijk apparaat voor gericht gebruik wil voor minder dan $300.",
+      "testNote": "Evidence-based beoordeling — gescoord op basis van de productdocumentatie van Resona Health en reviews van draagbare PEMF-apparaten uit 2026. Niet zelf getest door ONDA.",
+      "pros": [
+        "Beste prijs-kwaliteitverhouding in het PEMF-instapsegment — $299 tegenover $2.000+ voor matten",
+        "130+ gedocumenteerde protocollen met bediening via de app",
+        "Draagbaar, compact formaat",
+        "Laagdrempelige manier om PEMF te verkennen voordat je in een mat investeert"
+      ],
+      "cons": [
+        "Lagere veldsterkte dan full-body matten (bewuste ontwerpkeuze)",
+        "Geen gelijktijdige toepassing op het hele lichaam",
+        "Nieuwe speler zonder decennialange merkgeschiedenis",
+        "Alleen voor gericht gebruik — geen passieve sessie liggend op een mat"
+      ],
+      "scoreNotes": {
+        "field-strength": "Door het draagbare formaat is de piekintensiteit lager dan bij full-body matten. Ontworpen voor gericht, lokaal gebruik, niet voor blootstelling van het hele lichaam aan het veld.",
+        "waveform-evidence": "130+ protocollen gebaseerd op gedocumenteerd onderzoek naar PEMF-frequenties. Geen eigen, exclusief onderzoek naar één golfvorm — het apparaat steunt op de bestaande literatuur.",
+        "build": "Draagbare bouw in zakformaat, 2 jaar garantie. Nieuwe speler, maar goed beoordeeld in het segment draagbare PEMF-apparaten van 2026.",
+        "programmability": "Beste programmeerbaarheid in het instapsegment — 130+ protocollen met bediening en planning via de app. Voor deze prijs krijg je echt toegang tot de instellingen.",
+        "form-factor": "Draagbaar formaat dat in je zak past. Alleen voor gericht, lokaal gebruik — geen dekking van het hele lichaam zoals een mat. Uitstekend voor draagbaarheid en protocollen onderweg.",
+        "value": "$299 — de beste instap qua prijs-kwaliteit in PEMF. Voor wie nieuwsgierig is naar PEMF is er voor deze prijs weinig op aan te merken."
+      },
+      "content": "## Waar het uitblinkt\n\nResona Health VIBE is het draagbare instapniveau in PEMF — een apparaat van $299 met 130+ gedocumenteerde protocollen, planning via de app en een formaat dat in je zak past. De meest laagdrempelige manier om PEMF te verkennen zonder $2.000+ aan een mat uit te geven.\n\n## Waar het tekortschiet\n\nVeldsterkte en dekking van het hele lichaam. Door het draagbare formaat is de piekintensiteit lager en is alleen gericht gebruik mogelijk — je krijgt niet de passieve sessie voor het hele lichaam die je liggend op een mat hebt. Nieuwe speler zonder decennialange merkgeschiedenis.\n\n## Voor wie het is\n\nKies Resona Health VIBE als je nieuwsgierig bent naar PEMF en laagdrempelig wilt beginnen, of als je een draagbaar apparaat zoekt voor gerichte protocollen. Voor sessies op een full-body mat: OMI of Healthy Wave. Voor een signaal met onderzoek erachter: Bemer. Voor PEMF specifiek rond slaap: EarthPulse.\n\n---\n\n## Achtergrond\n\n- [De bio-elektrische architectuur van herstel](/articles/bioelectric-architecture-healing)\n- [Protocollen voor mitochondriaal herstel](/articles/mitochondrial-recovery-protocols)\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost de Resona Health VIBE?",
+          "a": "De Resona Health VIBE kost $299 als losstaand draagbaar apparaat, inclusief de app. Dat is de beste prijs-kwaliteitverhouding in het PEMF-instapsegment, tegenover $2.000+ voor full-body matten, en daarmee de meest laagdrempelige manier om PEMF te verkennen. ONDA geeft het een 8,5/10 voor prijs-kwaliteit."
+        },
+        {
+          "q": "Wat doet de Resona Health VIBE?",
+          "a": "De Resona Health VIBE is een draagbaar PEMF-apparaat in zakformaat met 130+ protocollen die je via de app bedient en inplant. Het is ontworpen voor gericht, lokaal gebruik in plaats van sessies voor het hele lichaam, dus de veldsterkte is bewust lager dan bij full-body matten. ONDA geeft het in totaal een 6,8/10."
+        },
+        {
+          "q": "Voor wie is de Resona Health VIBE het meest geschikt?",
+          "a": "De Resona Health VIBE is het meest geschikt voor wie nieuwsgierig is naar PEMF en laagdrempelig wil beginnen, een draagbaar PEMF-apparaat zoekt, of een protocolrijk apparaat voor gericht gebruik wil onder de $300. Het is niet bedoeld voor gelijktijdige toepassing op het hele lichaam; daarvoor is een full-body mat de betere keuze."
+        }
+      ]
+    }
+  },
+  "comparisons": {},
+  "criteria": {
+    "field-strength": "Veldsterkte en dosis",
+    "waveform-evidence": "Golfvorm en wetenschappelijk bewijs",
+    "build": "Bouwkwaliteit en levensduur",
+    "programmability": "Programmeerbaarheid en protocollen",
+    "form-factor": "Formaat en toepassingsmogelijkheden",
+    "value": "Prijs-kwaliteit"
+  },
+  "categories": {
+    "pemf": "PEMF-apparaten"
+  }
 }
