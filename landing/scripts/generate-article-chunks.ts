@@ -240,6 +240,36 @@ console.log(
     `catalog ${Math.round(readFileSync(join(GEN, 'review-catalog.ts'), 'utf-8').length / 1024)}K | locales ${reviewReport.join(' ')}`,
 )
 
+// ── Leak sentinels for scripts/check-budget.mjs ────────────────────────────
+// Plain-text snippets taken from inside several bodies of every collection. If
+// any of them shows up in a browser JS chunk, a full registry got bundled again.
+function snippet(text: string | undefined): string | null {
+  if (!text) return null
+  const m = text.slice(Math.floor(text.length / 3)).match(/[A-Za-z][A-Za-z ,]{44,}[A-Za-z]/)
+  return m ? m[0].slice(0, 45) : null
+}
+function localSnippet(text: unknown): string | null {
+  if (typeof text !== 'string') return null
+  const m = text.slice(Math.floor(text.length / 3)).match(/[\p{L}][\p{L} ,]{34,}[\p{L}]/u)
+  return m ? m[0].slice(0, 35) : null
+}
+const sentinels: { collection: string; text: string }[] = []
+const every = <T,>(arr: T[], n: number) => arr.filter((_, i) => i % Math.max(1, Math.floor(arr.length / n)) === 0).slice(0, n)
+for (const a of every(articles, 4)) { const t = snippet(a.content); if (t) sentinels.push({ collection: 'articles/en', text: t }) }
+for (const r of every(ALL_REVIEWS, 3)) { const t = snippet(r.content); if (t) sentinels.push({ collection: 'reviews/en', text: t }) }
+for (const h of every(ALL_HEAD_TO_HEADS, 3)) { const t = snippet(h.content); if (t) sentinels.push({ collection: 'h2h/en', text: t }) }
+for (const g of every(glossaryTerms, 3)) { const t = snippet(g.content); if (t) sentinels.push({ collection: 'glossary/en', text: t }) }
+for (const lang of ['ru', 'es', 'de']) {
+  try {
+    const bodies = JSON.parse(readFileSync(join(LOCALES, lang, 'articles.json'), 'utf-8')).bodies ?? {}
+    for (const b of every(Object.values(bodies) as Record<string, unknown>[], 2)) {
+      const t = localSnippet(b.content)
+      if (t) sentinels.push({ collection: `articles/${lang}`, text: t })
+    }
+  } catch { /* locale without articles */ }
+}
+writeFileSync(join(GEN, 'content-sentinels.json'), JSON.stringify(sentinels, null, 1))
+
 console.log(
   `[article-chunks] en:${articles.length} bodies (${Math.round(enBytes / 1024)}K total), catalog ${Math.round(JSON.stringify(catalog).length / 1024)}K, ` +
     `terms→articles ${Object.keys(termArticles).length} | locales ${report.join(' ')}`,
