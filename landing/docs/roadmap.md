@@ -374,3 +374,23 @@ The first full audit (2026-09-28) found:
 | 7.4 | Native human review for es + ru key pages (principle #5 — no MT at scale without sample human review) | ~10 top pages per language | Reviewer sign-off; corrections merged | ⏳ owner (needs reviewer) |
 | 7.5 | Hot-item translation cadence: one high-traffic article/review/comparison per step into all 11 languages (≤ 11 new URLs per step — principle #6) | by GSC impressions / AI-Overview citations | Done: Resona Health VIBE review, Apple Watch Series 12 vs Whoop 5.0 | 🔄 ongoing |
 | 7.6 | Russian glossary (215 terms translated) is held by the drip schedule — decide whether to publish earlier | 215 URLs (release in batches) | Decision + schedule | ⏳ owner |
+
+---
+
+## Phase 8 — Site-structure gaps (audit 2026-09-28)
+
+Found by `node scripts/audit-structure.mjs` (crawls the built `dist/`, report in
+`.cache/structure-audit.md`). Clean: hreflang (0 missing / 0 non-reciprocal / lang matches URL),
+canonicals (all self), sitemap (0 dead URLs; only `/get` absent — intentional), reachability
+(all pages reachable via links + hreflang, none deeper than 4 clicks).
+
+| # | Gap | Scale | Fix | Status |
+|---|---|---|---|---|
+| 8.1 | Broken links to `/es/the-stack` | 215 es glossary pages | link through langHref (no /es/the-stack page) | ⏳ |
+| 8.2 | Review texts link to two articles that don't exist (`bioelectric-architecture-healing`, `mitochondrial-recovery-protocols`) | 112 links (EN + translations) | repoint to existing articles or 301 | ⏳ |
+| 8.3 | Header/footer link to `/{it,ja,nl,pl,pt}` and `/{…}/about` — articles-only languages have no home/about | ~450 links | homePathFor/localizedPathFor fall back for articles-only languages | ⏳ |
+| 8.4 | In-content links to `/{uk,zh,de,fr}/measurements` (page exists only en/ru/es) and to localized articles not yet published in that language (es glossary → queued es articles) | ~180 links | langHref checks that the localized page exists for every path (build-time page set), not only for articles/glossary/reviews | ⏳ |
+| 8.5 | Localized article titles cut to the part before ":" / "(" when > 60 chars (`fitTitle`) — e.g. "VFC — ONDA Life", "Sudarshan Kriya Yoga — ONDA Life" | all long localized article titles | word-trim instead of taking the head segment | ⏳ |
+| 8.6 | es glossary descriptions truncated to "El " | 2 terms | fix the truncation/data | ⏳ |
+| 8.7 | Localized part pages titled generic "Protocolo / Протокол \| ONDA Life" | es/ru/uk parts | use the part title | ⏳ |
+| 8.8 | Orphans (reachable only via hreflang): localized Resona / AW12-vs-Whoop in de…pt (no localized review hub), 19 es head-to-heads not listed in the es hub, es/ru `compare`, `faq`, author page not linked | 43 pages | link from localized hubs/footers; list h2h in localized review hub | ⏳ |
