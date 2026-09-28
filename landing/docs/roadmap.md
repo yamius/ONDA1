@@ -404,3 +404,23 @@ links + 11 home links moved to `langHref` / `homePathFor`; review texts repointe
 articles and category URL slugs; `OtherLanguages` links on review/comparison/duel pages.
 Remaining nits: glossary acronym titles identical in en/es (fine), `/fr/bio/bpm` and `/de/sitemap`
 titles untranslated.
+
+---
+
+## Phase 9 — SEO + GEO audit (2026-09-28)
+
+`node scripts/audit-seo-geo.mjs` over `dist/` (2536 indexable pages; report `.cache/seo-geo-audit.md`).
+**Healthy:** 0 titles > 65 chars, 0 missing descriptions, 0 images without alt, 0 invalid JSON-LD,
+og:title/og:image everywhere, articles 100% TechArticle + author + dateModified (78% FAQPage),
+tools/h2h/comparisons 100% FAQPage, robots.txt welcomes all AI crawlers, llms.txt + llms-full.txt live.
+
+| # | Gap | Scope | Why it matters | Effort | Status |
+|---|---|---|---|---|---|
+| 9.1 | Study citations are plain text ("Balban et al., 2023") — no DOI/PubMed links, no JSON-LD `citation` | all 187 EN articles (+ translations inherit) | GEO/E-E-A-T: AI engines and Google weigh verifiable primary sources; a linked DOI is the strongest trust signal for YMYL | L — resolve each citation to a real DOI/PMID (never invent), then link inline + emit `citation` ScholarlyArticle list | ⏳ |
+| 9.2 | No `twitter:card` meta | 2535 pages | X/LinkedIn/Slack previews fall back to minimal cards | S — one line in meta-inject | ⏳ |
+| 9.3 | `llms.txt` says "5 languages" (now 12) and omits the 10 ONDA Library topic hubs | 1 file | AI discovery index out of date | S | ⏳ |
+| 9.4 | No `dateModified` on glossary terms, h2h duels, comparisons, tools, hubs | ~900 pages | freshness signal for Google + AI answers | S–M — dates from git (like article-dates) | ⏳ |
+| 9.5 | Thin glossary terms (< 300 words) | 237 (mostly es) | thin-content risk; weak answers | M — add "why it matters / how to measure / related" block | ⏳ |
+| 9.6 | Library hub meta descriptions too short (tile one-liners, < 70 chars) | ~90 hubs × langs | CTR + snippet quality | S — use the hub intro's first sentence | ⏳ |
+| 9.7 | Articles rarely use question-form H2s (5%); reviews/comparisons don't open with an answer paragraph (7% / 0%) | ~1100 pages | GEO extraction: AI answers lift question-headed sections and first-paragraph answers | M — editorial pass on top-traffic pages first | ⏳ |
+| 9.8 | Thin localized library hubs (de/fr ≈ 200–280 words) and a few bio/metric pages | ~50 | minor | S — translated intro + hub FAQ (already exists for 2 hubs) | ⏳ |
