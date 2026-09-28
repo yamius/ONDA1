@@ -1109,9 +1109,14 @@ export function ArticlePage() {
                   <h4 className="font-semibold transition-colors group-hover:text-terminal-green">
                     {tGloss(`bodies.${related.slug}.title`, { defaultValue: related.title })}
                   </h4>
-                  <p className="mt-1 font-mono text-xs text-white/30">
-                    {(tGloss(`bodies.${related.slug}.shortDescription`, { defaultValue: related.shortDescription }) as string).slice(0, 80)}...
-                  </p>
+                  {/* Localized page: show the description only when it's translated —
+                      never an English line inside a translated article. */}
+                  {(() => {
+                    const d = tGloss(`bodies.${related.slug}.shortDescription`, {
+                      defaultValue: lang === 'en' ? related.shortDescription : '',
+                    }) as string
+                    return d ? <p className="mt-1 font-mono text-xs text-white/30">{d.slice(0, 80)}...</p> : null
+                  })()}
                 </div>
                 <span className="font-mono text-sm text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
                   →

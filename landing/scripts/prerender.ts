@@ -706,8 +706,9 @@ for (const route of routes) {
       : isArticleLocalized && articleInfo ? articleInfo.lang
       : isReviewLocalized && reviewInfo ? reviewInfo.lang
       : isGlossaryLocalized && glossaryInfo ? glossaryInfo.lang
-      : /^\/[a-z]{2}\/articles\/topic\//.test(route) ? langFromPath(route)
-      : 'en'
+      // Every other /<lang>/… page (tools, hubs, how-it-works, …): the language is
+      // the URL prefix — otherwise the shared Layout (menu, footer) renders in EN.
+      : langFromPath(route)
     const basePath = isLocalized ? stripLangPrefix(route) : route
 
     const html = renderToString(createApp(route, lang))

@@ -19,7 +19,10 @@
 import { Link, useLocation } from 'react-router-dom'
 import { ARTICLE_CATALOG as articles } from '../generated/article-catalog'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
-import { langFromPath, langHref } from '../i18n'
+import { useTranslation } from 'react-i18next'
+import { langFromPath, langHref, type Lang } from '../i18n'
+import { LOCALIZED_COVERAGE } from '../data/localized-coverage.generated'
+import { ui } from '../data/ui-i18n'
 
 interface LogItem {
   slug: string
@@ -31,9 +34,12 @@ interface LogItem {
 
 const ITEMS_LIMIT = 5
 
-function recentItems(limit: number): LogItem[] {
+/** Localized home: only articles that exist in that language (never an EN title on /ru). */
+function recentItems(limit: number, lang: Lang): LogItem[] {
   const items: LogItem[] = []
+  const cov = LOCALIZED_COVERAGE[lang]?.articles
   for (const a of articles) {
+    if (lang !== 'en' && !cov?.has(a.slug)) continue
     const d = ARTICLE_DATES[a.slug]
     if (!d) continue
     const publishedMs = new Date(d.published).getTime()
@@ -64,8 +70,9 @@ function fmtDate(d: Date): string {
 }
 
 export function RecentLog() {
-  const items = recentItems(ITEMS_LIMIT)
   const lang = langFromPath(useLocation().pathname)
+  const { t } = useTranslation('articles')
+  const items = recentItems(ITEMS_LIMIT, lang)
   if (items.length === 0) return null
 
   return (
@@ -78,7 +85,7 @@ export function RecentLog() {
           to={langHref('/articles', lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
-          latest →
+          {ui(lang).latest} →
         </Link>
       </div>
       <div className="space-y-4">
@@ -94,10 +101,10 @@ export function RecentLog() {
               <span className="text-terminal-cyan/60">{item.type}</span>
             </div>
             <h3 className="font-semibold transition-colors group-hover:text-terminal-green">
-              {item.title}
+              {t(`bodies.${item.slug}.title`, { defaultValue: item.title })}
             </h3>
             <p className="mt-1 line-clamp-1 font-mono text-xs text-white/40">
-              {item.description}
+              {t(`bodies.${item.slug}.description`, { defaultValue: item.description })}
             </p>
           </Link>
         ))}

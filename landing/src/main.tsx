@@ -56,7 +56,7 @@ function lazyNs(ns: string | string[], load: () => Promise<{ default: ComponentT
   })
 }
 
-const HomePage           = lazy(() => import('./pages/HomePage').then(m => ({ default: m.HomePage })))
+const HomePage           = lazyNs('articles', () => import('./pages/HomePage').then(m => ({ default: m.HomePage })))
 const AboutPage          = lazyNs('about', () => import('./pages/AboutPage').then(m => ({ default: m.AboutPage })))
 const GlossaryPage       = lazyNs('glossary', () => import('./pages/GlossaryPage').then(m => ({ default: m.GlossaryPage })))
 const ArticlesPage       = lazyNs('articles', () => import('./pages/ArticlesPage').then(m => ({ default: m.ArticlesPage })))

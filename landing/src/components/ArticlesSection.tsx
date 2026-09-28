@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { ARTICLE_CATALOG as articles } from '../generated/article-catalog'
 import { OptimizedImage } from './OptimizedImage'
 import { langFromPath, langHref } from '../i18n'
+import { LOCALIZED_COVERAGE } from '../data/localized-coverage.generated'
 
 function shuffle<T>(arr: T[]): T[] {
   const out = [...arr]
@@ -16,12 +17,16 @@ function shuffle<T>(arr: T[]): T[] {
 
 export function ArticlesSection() {
   const { t } = useTranslation('home')
+  const { t: tA } = useTranslation('articles')
   const lang = langFromPath(useLocation().pathname)
-  const [displayArticles, setDisplayArticles] = useState(() => articles.slice(0, 3))
+  // Localized home: only articles that exist in that language, with their translated titles.
+  const pool = lang === 'en' ? articles : articles.filter((a) => LOCALIZED_COVERAGE[lang]?.articles.has(a.slug))
+  const [displayArticles, setDisplayArticles] = useState(() => pool.slice(0, 3))
 
   useEffect(() => {
-    setDisplayArticles(shuffle(articles).slice(0, 3))
-  }, [])
+    setDisplayArticles(shuffle(pool).slice(0, 3))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lang])
 
   return (
     <section className="relative px-4 py-16 md:px-6 md:py-24">
@@ -64,10 +69,10 @@ export function ArticlesSection() {
                 {article.category}
               </span>
               <h3 className="mb-2 text-base font-semibold leading-tight transition-colors group-hover:text-terminal-green">
-                {article.title}
+                {tA(`bodies.${article.slug}.title`, { defaultValue: article.title }) as string}
               </h3>
               <p className="font-mono text-xs leading-relaxed text-white/40 line-clamp-2">
-                {article.description}
+                {tA(`bodies.${article.slug}.description`, { defaultValue: article.description }) as string}
               </p>
               <span className="mt-2 block font-mono text-xs text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
                 →
@@ -82,7 +87,7 @@ export function ArticlesSection() {
             to={langHref('/articles', lang)}
             className="inline-flex items-center gap-2 rounded-lg border border-terminal-green/20 bg-terminal-green/5 px-5 py-2.5 font-mono text-sm text-terminal-green transition-all hover:border-terminal-green/40 hover:bg-terminal-green/10"
           >
-            {t('articles.viewAll', { count: articles.length })}
+            {t('articles.viewAll', { count: pool.length })}
             <span aria-hidden>→</span>
           </Link>
         </div>

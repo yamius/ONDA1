@@ -17,6 +17,7 @@ import { NotFoundPage } from './NotFoundPage'
 import { readReview, getReviewBySlug, getHeadToHeadsForProduct } from '../lib/review-content'
 import { getCriterion } from '../data/reviews/criteria'
 import { langFromPath, langHref } from '../i18n'
+import { splitAt, ui } from '../data/ui-i18n'
 
 export function ReviewPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -139,15 +140,14 @@ export function ReviewPage() {
       {review.category === 'hrv-wearable' && (
         <aside className="mb-10 rounded-xl border border-terminal-green/25 bg-terminal-green/[0.06] p-5">
           <p className="mb-1 font-mono text-[10px] font-bold uppercase tracking-widest text-terminal-green/80">
-            Before you buy
+            {ui(lang).beforeYouBuy}
           </p>
           <p className="text-[15px] leading-relaxed text-white/80">
-            You may already own the data. Our free{' '}
+            {splitAt(ui(lang).baselinePromo, 'tool')[0]}
             <Link to={langHref('/tools/baseline', lang)} className="text-terminal-green underline decoration-terminal-green/40 underline-offset-2 hover:decoration-terminal-green">
               Apple Watch Baseline
-            </Link>{' '}
-            tool reads two weeks of your resting heart rate, HRV and breathing off your own Apple
-            Health — the range, not one number — on your iPhone, with nothing uploaded.
+            </Link>
+            {splitAt(ui(lang).baselinePromo, 'tool')[1]}
           </p>
         </aside>
       )}

@@ -13,6 +13,7 @@ import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { TERM_ARTICLES } from '../generated/term-articles'
 import { getArticleMeta } from '../lib/article-content'
 import { langFromPath, langHref } from '../i18n'
+import { ui } from '../data/ui-i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -198,14 +199,13 @@ export function GlossaryTermPage() {
           </span>
         ) : (
           <span className="rounded-md border border-white/15 px-3 py-1 font-mono text-[10px] tracking-wider text-white/45">
-            SCIENTIFIC TERM
+            {ui(lang).scientificTerm}
           </span>
         )}
       </div>
       {glossaryLayer(term.slug) === 'onda' && (
         <p className="mb-4 font-mono text-xs leading-relaxed text-amber-300/80">
-          This is ONDA Life&rsquo;s own terminology — a metaphor from the ONDA model, not an
-          established scientific term.
+          {ui(lang).ondaTermNote}
         </p>
       )}
 

@@ -8,6 +8,7 @@ import {
   GLOSSARY_CATEGORIES,
 } from '../data/glossary-categories'
 import { langFromPath, homePathFor } from '../i18n'
+import { ui } from '../data/ui-i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -176,7 +177,7 @@ export function GlossaryPage() {
                 {glossaryLayer(term.slug) === 'onda' && (
                   <span
                     className="rounded-md border border-amber-300/25 bg-amber-300/5 px-2 py-0.5 font-mono text-[10px] text-amber-300/80"
-                    title="ONDA Life's own terminology, not an established scientific term"
+                    title={ui(lang).ondaTermTitle}
                   >
                     ONDA
                   </span>
