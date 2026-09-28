@@ -56,7 +56,7 @@ Choose Blueair 7770i for Swedish premium HEPASilent + GermShield. For higher cov
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
 `,
   references: [

@@ -52,7 +52,7 @@ You mainly want the best sleep stories and a huge, beautifully produced library 
 
 ## Also worth comparing
 
-For the structured-teaching alternative, see [Balance vs Headspace](/reviews/vs/balance-vs-headspace) and [Headspace vs Calm](/reviews/vs/headspace-vs-calm). Full field: [best meditation apps](/reviews/meditation-app).`,
+For the structured-teaching alternative, see [Balance vs Headspace](/reviews/vs/balance-vs-headspace) and [Headspace vs Calm](/reviews/vs/headspace-vs-calm). Full field: [best meditation apps](/reviews/meditation-apps).`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

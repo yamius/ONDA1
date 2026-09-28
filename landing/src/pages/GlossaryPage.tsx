@@ -7,7 +7,7 @@ import {
   FEATURED_TERM_SLUGS,
   GLOSSARY_CATEGORIES,
 } from '../data/glossary-categories'
-import { langFromPath, homePathFor } from '../i18n'
+import { langFromPath, homePathFor, langHref } from '../i18n'
 import { ui } from '../data/ui-i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
@@ -98,7 +98,7 @@ export function GlossaryPage() {
             return (
               <Link
                 key={slug}
-                to={`${langPrefix}/glossary/${slug}`}
+                to={langHref(`/glossary/${slug}`, lang)}
                 className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/40 transition-all hover:border-white/20 hover:text-white/60"
               >
                 {tField(term.slug, 'title', term.title)}
@@ -166,7 +166,7 @@ export function GlossaryPage() {
         {filtered.map((term) => (
           <Link
             key={term.slug}
-            to={`${langPrefix}/glossary/${term.slug}`}
+            to={langHref(`/glossary/${term.slug}`, lang)}
             className="glass-card group rounded-xl p-6 transition-all hover:border-terminal-green/10"
           >
             <div className="mb-2 flex items-center justify-between">
@@ -227,11 +227,11 @@ export function GlossaryPage() {
             {t('about.p3', {
               defaultValue: 'For the applied side, see',
             })}{' '}
-            <Link to={`${langPrefix}/measurements`} className="text-terminal-green hover:underline">
+            <Link to={langHref(`/measurements`, lang)} className="text-terminal-green hover:underline">
               {t('about.measuresLink', { defaultValue: 'what ONDA measures' })}
             </Link>{' '}
             {t('about.and', { defaultValue: 'and the' })}{' '}
-            <Link to={`${langPrefix}/hrv-biofeedback`} className="text-terminal-green hover:underline">
+            <Link to={langHref(`/hrv-biofeedback`, lang)} className="text-terminal-green hover:underline">
               {t('about.hrvLink', { defaultValue: 'HRV biofeedback explainer' })}
             </Link>
             .

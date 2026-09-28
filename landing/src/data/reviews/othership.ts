@@ -57,7 +57,7 @@ Choose Othership if you want breathwork as cinematic experience with music and l
 ## Background reading
 
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why music + breath pair for nervous-system regulation
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing) — vagal tone and parasympathetic activation
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — vagal tone and parasympathetic activation
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors) — why community ritual pairs with circadian alignment
 `,
   references: [

@@ -52,7 +52,7 @@ You want the deepest 16 mm amplitude, integrated heat and breathing training, an
 
 ## Also worth comparing
 
-For the previous Hyperice flagship, see the [Hypervolt 2 Pro](/reviews/hypervolt-2-pro); for the full field, the [best massage guns](/reviews/massage-gun).`,
+For the previous Hyperice flagship, see the [Hypervolt 2 Pro](/reviews/hypervolt-2-pro); for the full field, the [best massage guns](/reviews/massage-guns).`,
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

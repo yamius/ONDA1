@@ -56,8 +56,8 @@ Choose Lumara Viso if you want maximum LED count and three-wavelength coverage i
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'Lumara — official site', url: 'https://www.lumara.com/' },

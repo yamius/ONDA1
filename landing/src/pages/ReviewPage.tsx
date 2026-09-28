@@ -8,6 +8,7 @@
  * Body content is localised via the `reviews` i18n namespace
  * (bodies.<slug>.*), falling back to the English fields in the data file.
  */
+import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
@@ -16,7 +17,7 @@ import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { readReview, getReviewBySlug, getHeadToHeadsForProduct } from '../lib/review-content'
 import { getCriterion } from '../data/reviews/criteria'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 import { splitAt, ui } from '../data/ui-i18n'
 
 export function ReviewPage() {
@@ -62,7 +63,7 @@ export function ReviewPage() {
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
         <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
@@ -255,6 +256,7 @@ export function ReviewPage() {
         </article>
       )}
 
+      <OtherLanguages className="mb-8" />
       <AppStoreCTA ct={storeCt('rv', `${review.slug}_end`, lang)} variant={ctaVariantForCategory(review.category)} lang={lang} />
 
       {tFaq.length > 0 && (

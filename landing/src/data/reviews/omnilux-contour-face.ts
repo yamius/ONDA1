@@ -56,8 +56,8 @@ Choose Omnilux Contour Face if you want the FDA-cleared dermatology reference wi
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing) — photobiomodulation and cellular ATP
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols) — red light as mitochondrial-energy adjunct
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — photobiomodulation and cellular ATP
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — red light as mitochondrial-energy adjunct
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors)
 `,
   references: [

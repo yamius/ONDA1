@@ -52,7 +52,7 @@ Warranty scope, brand history and Jacuzzi backing matter most.
 
 ## Also worth comparing
 
-Against the category leader, see [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) and [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Full field: [best infrared saunas](/reviews/sauna).`,
+Against the category leader, see [Sun Home Equinox vs Sunlighten mPulse](/reviews/vs/sun-home-equinox-vs-sunlighten-mpulse) and [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Full field: [best infrared saunas](/reviews/infrared-sauna).`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

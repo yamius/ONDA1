@@ -52,7 +52,7 @@ You want the richest wavelength spectrum, cleaner EMF and a near-premium build, 
 
 ## Also worth comparing
 
-Against the premium reference, see [Hooga HG500 vs Joovv Solo 3.0](/reviews/vs/hooga-hg500-vs-joovv-solo-3). Full field: [best red light therapy panels](/reviews/red-light).`,
+Against the premium reference, see [Hooga HG500 vs Joovv Solo 3.0](/reviews/vs/hooga-hg500-vs-joovv-solo-3). Full field: [best red light therapy panels](/reviews/red-light-therapy).`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

@@ -2,13 +2,12 @@ import { useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { JETLAG_FAQ, computeJetlag, parseTime, type Direction, type JetlagResult } from '../data/jetlag'
 
 export function JetlagPlannerPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
 
   const [usualWake, setUsualWake] = useState('07:00')
   const [zones, setZones] = useState('6')
@@ -29,9 +28,9 @@ export function JetlagPlannerPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={langHref(`/`, lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={langHref(`/tools`, lang)} className="hover:text-terminal-green">Tools</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">Jet Lag</span>
       </nav>
@@ -141,11 +140,11 @@ export function JetlagPlannerPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/how-to-beat-jet-lag`} className="text-terminal-green hover:underline">How to beat jet lag</Link>
+        Read the guide: <Link to={langHref(`/articles/how-to-beat-jet-lag`, lang)} className="text-terminal-green hover:underline">How to beat jet lag</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/chronotype`} className="text-terminal-green hover:underline">Chronotype quiz</Link>
+        Related: <Link to={langHref(`/tools/chronotype`, lang)} className="text-terminal-green hover:underline">Chronotype quiz</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/sleep-debt`} className="text-terminal-green hover:underline">Sleep debt</Link>
+        <Link to={langHref(`/tools/sleep-debt`, lang)} className="text-terminal-green hover:underline">Sleep debt</Link>
       </div>
     </main>
   )

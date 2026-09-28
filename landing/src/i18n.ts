@@ -193,18 +193,6 @@ export const ARTICLES_ONLY_LANGS: readonly Lang[] = ['it', 'nl', 'ja', 'pl', 'pt
  * so langHref must keep links to them on the bare EN URL rather than emit a
  * /<lang>/... route that soft-404s. Revisit when either is localized.
  */
-// EN-only destinations. langHref must return the bare EN path for these so a
-// localized page never links to a /<lang>/... route that has no prerender.
-// (/tools and /topics HUBS are localized to ru/es, but their detail pages
-// — /tools/<slug>, /topics/<slug> — are EN-only, and langHref can't tell hub
-// from detail by prefix, so the whole prefix stays EN-safe here; the localized
-// hubs link to their own /<lang> URL directly, not via langHref.)
-const NON_LOCALIZED_PREFIXES = [
-  '/the-stack', '/topics', '/tools', '/research',
-  // /compare hub is localized but /compare/<slug> detail pages are EN-only, and
-  // langHref can't tell hub from detail by prefix, so /compare stays EN-safe here.
-  '/compare',
-]
 
 /**
  * Prefix an internal path with the active language so navigation keeps the
@@ -221,37 +209,25 @@ export const ALL_LANG_PAGES: readonly string[] = ['/tools', '/tools/hrv', '/tool
 
 export function langHref(path: string, lang: Lang): string {
   if (lang === 'en' || !path.startsWith('/')) return path
-  const parts = path.split('/').filter(Boolean)
+  // Keep ?query / #hash; decide on the bare path.
+  const cut = path.search(/[?#]/)
+  const bare = cut >= 0 ? path.slice(0, cut) : path
+  const suffix = cut >= 0 ? path.slice(cut) : ''
+  const base = bare.length > 1 ? bare.replace(/\/+$/, '') : '/'
+  const parts = base.split('/').filter(Boolean)
   if (isLang(parts[0])) return path
-  if (ALL_LANG_PAGES.includes(path)) return `/${lang}${path}`
-  if (LANG_PAGE_EXCLUDE[lang]?.includes(path)) return path
-  if (NON_LOCALIZED_PREFIXES.some((p) => path === p || path.startsWith(p + '/'))) return path
-  if (ARTICLES_ONLY_LANGS.includes(lang) && parts[0] !== 'articles') return path
-  // Partial-localized content (articles, glossary): the localized pages are
-  // drip-/pilot-prerendered, so only some slugs exist per locale. If this
-  // locale has no prerendered page for the slug, fall back to the EN URL
-  // rather than link to a /<lang>/... route that 404s (HTTP 404 + SPA shell).
+  // Only link to /<lang>/… when that page is actually prerendered in this language
+  // (build-time sets in localized-coverage.generated.ts); otherwise the EN URL.
+  // A /<lang>/ URL that isn't built is served as the SPA shell with HTTP 200 —
+  // a soft 404 for crawlers (roadmap 8.3/8.4).
   const cov = LOCALIZED_COVERAGE[lang]
-  if (cov) {
-    if (parts[0] === 'articles' && parts[1] === 'topic' && parts[2]) {
-      return cov.hubs.has(parts[2]) ? `/${lang}${path}` : path
-    }
-    if (parts[0] === 'articles' && parts[1] && !cov.articles.has(parts[1])) return path
-    // Glossary: detail pages are coverage-gated; the bare /glossary index has no
-    // localized prerender while this locale has zero localized glossary slugs,
-    // so fall back to EN for the index too.
-    if (parts[0] === 'glossary') {
-      if (parts[1] ? !cov.glossary.has(parts[1]) : cov.glossary.size === 0) return path
-    }
-    // Reviews are nested (/, /vs/<slug>, /compare/<slug>, /<category>) and only
-    // partially localized per locale. The coverage set holds the full remainder
-    // after 'reviews' ('' = the index); fall back to EN for anything not present.
-    if (parts[0] === 'reviews') {
-      const remainder = parts.slice(1).join('/')
-      if (!cov.reviews.has(remainder)) return path
-    }
-  }
-  return `/${lang}${path}`
+  if (!cov) return path
+  const localized = (ok: boolean) => (ok ? (base === '/' ? `/${lang}${suffix}` : `/${lang}${base}${suffix}`) : path)
+  if (parts[0] === 'articles' && parts[1] === 'topic' && parts[2]) return localized(cov.hubs.has(parts[2]))
+  if (parts[0] === 'articles' && parts[1]) return localized(cov.articles.has(parts[1]))
+  if (parts[0] === 'glossary' && parts[1]) return localized(cov.glossary.has(parts[1]))
+  if (parts[0] === 'reviews') return localized(cov.reviews.has(parts.slice(1).join('/')))
+  return localized(cov.pages.has(base))
 }
 
 /**
@@ -320,83 +296,12 @@ export function stripLangPrefix(pathname: string): string {
  */
 export function localizedPathFor(pathname: string, lang: Lang): string {
   const basePath = stripLangPrefix(pathname)
-
-  if (ALL_LANG_PAGES.includes(basePath)) return lang === 'en' ? basePath : `/${lang}${basePath}`
-
-  // Metric detail page: preserve the metric slug across language switches.
-  const metricMatch = basePath.match(/^\/bio\/([^/]+)$/)
-  if (metricMatch) {
-    return lang === 'en' || ARTICLES_ONLY_LANGS.includes(lang) ? `/bio/${metricMatch[1]}` : `/${lang}/bio/${metricMatch[1]}`
-  }
-
-  // Level detail page: preserve level number across language switches.
-  const levelMatch = basePath.match(/^\/level\/(\d+)$/)
-  if (levelMatch) {
-    return lang === 'en' || ARTICLES_ONLY_LANGS.includes(lang) ? `/level/${levelMatch[1]}` : `/${lang}/level/${levelMatch[1]}`
-  }
-
-  // Part detail page: preserve slug across language switches.
-  const partMatch = basePath.match(/^\/part\/([^/]+)$/)
-  if (partMatch) {
-    return lang === 'en' || PART_UNTRANSLATED_LANGS.includes(lang) ? `/part/${partMatch[1]}` : `/${lang}/part/${partMatch[1]}`
-  }
-
-  // Article detail page: preserve slug across language switches — but only if
-  // the localized page is actually prerendered for this locale; otherwise fall
-  // back to EN so we never point at a /<lang>/... route that 404s.
-  // ONDA Library topic hub: keep the topic when the hub exists in that language, else the library.
+  if (lang === 'en') return basePath
+  // Language switcher on a topic hub the target language doesn't have → its library.
   const hubMatch = basePath.match(/^\/articles\/topic\/([^/]+)$/)
-  if (hubMatch) {
-    if (lang === 'en') return basePath
-    const cov = LOCALIZED_COVERAGE[lang]
-    return cov?.hubs.has(hubMatch[1]) ? `/${lang}${basePath}` : `/${lang}/articles`
-  }
-
-  const articleMatch = basePath.match(/^\/articles\/([^/]+)$/)
-  if (articleMatch) {
-    const slug = articleMatch[1]
-    if (lang === 'en' || !LOCALIZED_COVERAGE[lang]?.articles.has(slug)) return `/articles/${slug}`
-    return `/${lang}/articles/${slug}`
-  }
-
-  // Glossary detail page: same coverage-gated fallback.
-  const glossaryMatch = basePath.match(/^\/glossary\/([^/]+)$/)
-  if (glossaryMatch) {
-    const slug = glossaryMatch[1]
-    if (lang === 'en' || !LOCALIZED_COVERAGE[lang]?.glossary.has(slug)) return `/glossary/${slug}`
-    return `/${lang}/glossary/${slug}`
-  }
-
-  // Reviews (index + nested review/comparison/category pages): coverage-gated.
-  const reviewMatch = basePath.match(/^\/reviews(?:\/(.*))?$/)
-  if (reviewMatch) {
-    const remainder = reviewMatch[1] ?? ''
-    if (lang === 'en' || !LOCALIZED_COVERAGE[lang]?.reviews.has(remainder)) return basePath
-    return `/${lang}${basePath}`
-  }
-
-  // Pages with /:lang/ variants but no per-slug data — keep the user in their
-  // language. Without this, switching to e.g. "UK" from /glossary would dump
-  // the user back on /glossary (EN) since localizedPathFor's default branch
-  // strips the lang prefix.
-  // Only /glossary still rides this shim — its localized index is gated
-  // behind the glossary rollout, so it is not in LOCALIZED_PAGES. Everything
-  // else (/articles, /contact, /sitemap, /privacy, /terms…) is handled by the
-  // LOCALIZED_BASE_PATHS branch below.
-  const flatLocalized = ['/glossary']
-  if (flatLocalized.includes(basePath)) {
-    return lang === 'en' ? basePath : `/${lang}${basePath}`
-  }
-
-  if (LOCALIZED_BASE_PATHS.includes(basePath)) {
-    if (lang === 'en' || !isPageLocalizedFor(basePath, lang)) return basePath
-    return basePath === '/' ? `/${lang}` : `/${lang}${basePath}`
-  }
-
-  // Non-localized page (Articles, Glossary, etc) — keep the user on the same
-  // URL. The base path is already EN-only since these pages have no /:lang/
-  // variants registered.
-  return basePath
+  if (hubMatch && !LOCALIZED_COVERAGE[lang]?.hubs.has(hubMatch[1])) return langHref('/articles', lang)
+  // Same rule as every link: /<lang>/… only when that page exists, else the EN URL.
+  return langHref(basePath, lang)
 }
 
 /** All prerender route variants for localized pages: 4 base paths × 5 langs = 20. */

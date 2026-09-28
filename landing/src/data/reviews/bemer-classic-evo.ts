@@ -58,9 +58,9 @@ Choose Bemer Classic Evo if you want the most-researched PEMF waveform with FDA 
 
 The biology of why pulsed electromagnetic fields modulate cellular ion gradients and microcirculation.
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing) — how endogenous and applied electromagnetic fields shape tissue repair
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — how endogenous and applied electromagnetic fields shape tissue repair
 - [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — why circulation drives nightly brain cleanup
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols) — adjunct PEMF for cellular energy restoration
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — adjunct PEMF for cellular energy restoration
 `,
   references: [
     { label: 'Bemer Group — official site', url: 'https://www.bemergroup.com/' },

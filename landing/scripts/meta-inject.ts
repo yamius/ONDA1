@@ -152,7 +152,7 @@ function decodeBasicEntities(s: string): string {
  *  on one and re-encoding them would risk double-encoding the meta-inject
  *  (raw-input) call path. */
 function encodeBasicEntities(s: string): string {
-  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
 }
 
 const HTML_ENTITY_RE = /&(?:amp|lt|gt|quot|apos|#39);/

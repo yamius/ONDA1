@@ -56,7 +56,7 @@ Choose Intake Breathing if you can\'t adapt to mouth tape and want the most effe
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
 - [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
 `,

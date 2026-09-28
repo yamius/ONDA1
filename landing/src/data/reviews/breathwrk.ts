@@ -57,7 +57,7 @@ Choose Breathwrk if you want the largest structured library and science-grounded
 ## Background reading
 
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — breathwork pairs with audio entrainment for sleep onset
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing) — vagal tone and parasympathetic activation
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — vagal tone and parasympathetic activation
 - [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why parasympathetic recovery drives sleep depth
 `,
   references: [

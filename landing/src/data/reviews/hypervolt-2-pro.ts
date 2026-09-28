@@ -60,8 +60,8 @@ Choose Hypervolt 2 Pro if you want premium percussion at $200 less than Theragun
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 `,
   references: [
     { label: 'Hyperice — official site', url: 'https://hyperice.com/' },

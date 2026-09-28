@@ -9,7 +9,7 @@ import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { reviews, comparisons, headToHeads, LIVE_REVIEW_CATEGORIES, getReviewBySlug } from '../lib/review-content'
 import { CATEGORY_LABELS, CATEGORY_URL_SLUGS } from '../data/reviews/criteria'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 
 export function ReviewsPage() {
   const { pathname } = useLocation()
@@ -31,7 +31,7 @@ export function ReviewsPage() {
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{tReviews('breadcrumb.reviews')}</span>
       </nav>

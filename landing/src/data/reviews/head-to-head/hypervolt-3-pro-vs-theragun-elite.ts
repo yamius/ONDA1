@@ -52,7 +52,7 @@ You want the deeper 16 mm amplitude, the Therabody app and multi-grip handle, an
 
 ## Also worth comparing
 
-For Therabody’s flagship, see [Hypervolt 3 Pro vs Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus). Full field: [best massage guns](/reviews/massage-gun).`,
+For Therabody’s flagship, see [Hypervolt 3 Pro vs Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus). Full field: [best massage guns](/reviews/massage-guns).`,
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

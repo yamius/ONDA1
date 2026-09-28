@@ -56,7 +56,7 @@ Choose TOLOCO if $69 vs $99 is meaningful and you accept reduced stall force. Fo
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'TOLOCO Amazon store', url: 'https://www.amazon.com/stores/TOLOCO/' },

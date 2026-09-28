@@ -56,8 +56,8 @@ Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For Western
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'JOVS — official site', url: 'https://www.jovs.com/' },

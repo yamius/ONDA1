@@ -7,6 +7,7 @@
  * Body content is localised via the `reviews` i18n namespace
  * (comparisons.<slug>.*), falling back to the English data file.
  */
+import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
@@ -15,7 +16,7 @@ import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { readComparison, getReviewsForComparison, getReviewBySlug } from '../lib/review-content'
 import { getCriteria } from '../data/reviews/criteria'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 
 export function ComparisonPage() {
   const { slug } = useParams<{ slug: string }>()
@@ -42,7 +43,7 @@ export function ComparisonPage() {
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
         <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
@@ -199,6 +200,7 @@ export function ComparisonPage() {
         </article>
       )}
 
+      <OtherLanguages className="mb-8" />
       <AppStoreCTA ct={storeCt('rvhub', `cmp_${comparison.slug}`, lang)} variant={ctaVariantForCategory(comparison.category)} lang={lang} />
 
       {comparison.faq.length > 0 && (

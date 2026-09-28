@@ -56,8 +56,8 @@ Choose HigherDOSE PEMF Mat for consumer-polished multi-modality recovery at $1,2
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors)
 `,
   references: [

@@ -56,8 +56,8 @@ Choose LightStim for Wrinkles for FDA-cleared peer-reviewed evidence at accessib
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'LightStim — official site', url: 'https://www.lightstim.com/' },

@@ -56,7 +56,7 @@ Choose Dyson Big+Quiet for premium consumer brand + best smart features + formal
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
 `,
   references: [

@@ -56,7 +56,7 @@ Choose Honeywell HPA300 for budget large-room coverage with Honeywell brand-trus
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
 `,
   references: [

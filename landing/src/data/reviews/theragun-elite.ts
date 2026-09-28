@@ -56,8 +56,8 @@ Choose Theragun Elite for rational Therabody value — same app, same amplitude,
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 `,
   references: [
     { label: 'Therabody — official site', url: 'https://www.therabody.com/' },

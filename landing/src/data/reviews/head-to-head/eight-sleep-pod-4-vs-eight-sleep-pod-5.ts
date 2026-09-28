@@ -52,7 +52,7 @@ Buy the Pod 5 Ultra. The adjustable base, top-down hydro blanket, built-in audio
 
 ## Either way
 
-The Autopilot subscription applies to both. For the wider field of climate systems, see the [best smart sleep-climate systems](/reviews/sleep-climate).`,
+The Autopilot subscription applies to both. For the wider field of climate systems, see the [best smart sleep-climate systems](/reviews/smart-sleep-climate).`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

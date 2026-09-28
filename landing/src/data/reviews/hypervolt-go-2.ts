@@ -56,8 +56,8 @@ Choose Hypervolt Go 2 for premium-brand travel mini. For Hyperice full-size prem
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 `,
   references: [
     { label: 'Hyperice — official site', url: 'https://hyperice.com/' },

@@ -56,8 +56,8 @@ Choose Wim Hof Method app if you're committed to the WHM specifically. For broad
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing) — autonomic-system modulation via voluntary breath
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols) — Wim Hof crossover with cold exposure
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — autonomic-system modulation via voluntary breath
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — Wim Hof crossover with cold exposure
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
 `,
   references: [

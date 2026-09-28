@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import {
   ONE_REP_MAX_FAQ,
   ONE_REP_MAX_SOURCES,
@@ -15,7 +15,6 @@ import { SourcesSection } from '../components/SourcesSection'
 export function OneRepMaxCalculatorPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
 
   const [unit, setUnit] = useState<'kg' | 'lb'>('kg')
   const [weight, setWeight] = useState('100')
@@ -37,9 +36,9 @@ export function OneRepMaxCalculatorPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={langHref(`/`, lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={langHref(`/tools`, lang)} className="hover:text-terminal-green">Tools</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">One-Rep Max</span>
       </nav>
@@ -155,11 +154,11 @@ export function OneRepMaxCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/how-to-calculate-one-rep-max`} className="text-terminal-green hover:underline">How to calculate your 1RM</Link>
+        Read the guide: <Link to={langHref(`/articles/how-to-calculate-one-rep-max`, lang)} className="text-terminal-green hover:underline">How to calculate your 1RM</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/protein`} className="text-terminal-green hover:underline">Protein target</Link>
+        Related: <Link to={langHref(`/tools/protein`, lang)} className="text-terminal-green hover:underline">Protein target</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/zone-2`} className="text-terminal-green hover:underline">Zone 2 heart rate</Link>
+        <Link to={langHref(`/tools/zone-2`, lang)} className="text-terminal-green hover:underline">Zone 2 heart rate</Link>
       </div>
     </main>
   )

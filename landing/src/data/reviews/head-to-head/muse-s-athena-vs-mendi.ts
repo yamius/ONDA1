@@ -52,7 +52,7 @@ You want the simplest, cheapest way to build a daily focus habit, with no subscr
 
 ## Also worth comparing
 
-Against the gamified EEG option, see [Muse 2 vs FocusCalm vs Mendi](/reviews/vs/muse-2-vs-focuscalm-vs-mendi) and the [Muse S Athena vs Muse 2](/reviews/vs/muse-s-athena-vs-muse-2). Full field: [best EEG headsets](/reviews/eeg-headset).`,
+Against the gamified EEG option, see [Muse 2 vs FocusCalm vs Mendi](/reviews/vs/muse-2-vs-focuscalm-vs-mendi) and the [Muse S Athena vs Muse 2](/reviews/vs/muse-s-athena-vs-muse-2). Full field: [best EEG headsets](/reviews/eeg-headsets).`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

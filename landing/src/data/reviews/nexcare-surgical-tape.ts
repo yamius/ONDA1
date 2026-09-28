@@ -56,7 +56,7 @@ Choose 3M Nexcare for cost-conscious DIY mouth tape — clinical adhesive at low
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
 `,
   references: [

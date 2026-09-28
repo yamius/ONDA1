@@ -6,7 +6,7 @@ import { ArticleReactions, ArticleValidationArrows } from '../components/Article
 import { ProtocolToggle } from '../components/ProtocolToggle'
 import { ARTICLE_PROTOCOL_ORDER } from '../data/protocol-ids'
 import { API_ENABLED } from '../config/features'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 const DONE_PREFIX = 'md_done_'
@@ -311,7 +311,6 @@ export function MdArticlePage() {
   const { slug } = useParams<{ slug: string }>()
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tArticles } = useTranslation('articles')
   const [article, setArticle] = useState<MdArticle | null>(null)
   const [loading, setLoading] = useState(true)
@@ -367,7 +366,7 @@ export function MdArticlePage() {
     return (
       <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
         <p className="font-mono text-sm text-white/40">[ 404: ARTICLE NOT FOUND ]</p>
-        <Link to={`${langPrefix}/articles`} className="mt-4 inline-block font-mono text-xs text-terminal-green underline">
+        <Link to={langHref(`/articles`, lang)} className="mt-4 inline-block font-mono text-xs text-terminal-green underline">
           {tArticles('detail.backToArticles', { defaultValue: '← Back to Articles' })}
         </Link>
       </div>
@@ -381,9 +380,9 @@ export function MdArticlePage() {
     <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
       {/* Breadcrumb */}
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tArticles('breadcrumb.home')}</Link>
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">{tArticles('breadcrumb.home')}</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/articles`} className="transition-colors hover:text-white/50">{tArticles('breadcrumb.current')}</Link>
+        <Link to={langHref(`/articles`, lang)} className="transition-colors hover:text-white/50">{tArticles('breadcrumb.current')}</Link>
         <span>/</span>
         <span className="text-terminal-green/60" aria-current="page">{article.title}</span>
       </nav>
@@ -475,7 +474,7 @@ export function MdArticlePage() {
           {tArticles('detail.relatedGlossaryTerms', { defaultValue: 'RELATED GLOSSARY TERMS' })}
         </h3>
         <Link
-          to={`${langPrefix}/glossary`}
+          to={langHref(`/glossary`, lang)}
           className="font-mono text-xs text-terminal-green/60 underline decoration-terminal-green/20 underline-offset-2 transition-colors hover:text-terminal-green"
         >
           {tArticles('detail.browseFullGlossary', { defaultValue: '→ Browse full Glossary' })}
@@ -485,7 +484,7 @@ export function MdArticlePage() {
       {/* Back to Articles */}
       <div className="mt-12">
         <Link
-          to={`${langPrefix}/articles`}
+          to={langHref(`/articles`, lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-white/60"
         >
           {tArticles('detail.backToArticles', { defaultValue: '← Back to Articles' })}

@@ -21,7 +21,7 @@ import {
 } from '../lib/review-content'
 import { CATEGORY_LABELS, CATEGORY_URL_SLUGS, getCategoryByUrlSlug } from '../data/reviews/criteria'
 import type { ReviewCategory } from '../data/reviews/types'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
 
 /** Per-category intro copy. Kept here rather than in i18n so each page has
@@ -142,7 +142,7 @@ export function ReviewCategoryPage() {
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">
           {tReviews('breadcrumb.home', { defaultValue: 'Home' })}
         </Link>
         <span>/</span>

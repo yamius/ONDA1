@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import {
   DETOX_DURATIONS,
   DETOX_HABITS,
@@ -16,7 +16,6 @@ import { SourcesSection } from '../components/SourcesSection'
 export function DigitalDetoxPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
 
   const [durationId, setDurationId] = useState('daily')
   const [selected, setSelected] = useState<string[]>([])
@@ -34,9 +33,9 @@ export function DigitalDetoxPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={langHref(`/`, lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={langHref(`/tools`, lang)} className="hover:text-terminal-green">Tools</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">Digital Detox</span>
       </nav>
@@ -129,9 +128,9 @@ export function DigitalDetoxPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
-        Related: <Link to={`${langPrefix}/tools/dopamine-detox`} className="text-terminal-green hover:underline">Dopamine reset</Link>
+        Related: <Link to={langHref(`/tools/dopamine-detox`, lang)} className="text-terminal-green hover:underline">Dopamine reset</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/breathing`} className="text-terminal-green hover:underline">Breathing pacer</Link>
+        <Link to={langHref(`/tools/breathing`, lang)} className="text-terminal-green hover:underline">Breathing pacer</Link>
       </div>
     </main>
   )

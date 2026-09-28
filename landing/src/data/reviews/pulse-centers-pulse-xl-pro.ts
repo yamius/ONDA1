@@ -56,8 +56,8 @@ Choose Pulse Centers Pulse XL Pro if you're running serious athletic recovery or
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing) — high-intensity PEMF in tissue repair
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols) — PEMF as athletic-recovery modality
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — high-intensity PEMF in tissue repair
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — PEMF as athletic-recovery modality
 `,
   references: [
     { label: 'Pulse Centers — official site', url: 'https://pulsecenters.com/' },

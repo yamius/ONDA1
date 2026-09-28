@@ -56,8 +56,8 @@ Choose MagnaWave Mini for portable high-intensity coil PEMF for athletic recover
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'MagnaWave PEMF — official site', url: 'https://magnawavepemf.com/' },

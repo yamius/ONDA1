@@ -12,7 +12,7 @@ import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { TERM_ARTICLES } from '../generated/term-articles'
 import { getArticleMeta } from '../lib/article-content'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 import { ui } from '../data/ui-i18n'
 
 const SITE_URL = 'https://onda-life.com'
@@ -177,11 +177,11 @@ export function GlossaryTermPage() {
     <div className="mx-auto max-w-3xl px-4 pb-16 md:px-6">
       {/* Breadcrumb */}
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">
           {tGloss('breadcrumb.home')}
         </Link>
         <span>/</span>
-        <Link to={`${langPrefix}/glossary`} className="transition-colors hover:text-white/50">
+        <Link to={langHref(`/glossary`, lang)} className="transition-colors hover:text-white/50">
           {tGloss('breadcrumb.current')}
         </Link>
         <span>/</span>
@@ -317,7 +317,7 @@ export function GlossaryTermPage() {
             {relatedArticles.map((article) => (
               <Link
                 key={article.slug}
-                to={`${langPrefix}/articles/${article.slug}`}
+                to={langHref(`/articles/${article.slug}`, lang)}
                 className="glass-card group flex items-start gap-4 rounded-lg p-5 transition-all hover:border-cyan-500/20"
               >
                 <span className="text-2xl" aria-hidden="true">
@@ -350,7 +350,7 @@ export function GlossaryTermPage() {
             {relatedTerms.map((related) => (
               <Link
                 key={related.slug}
-                to={`${langPrefix}/glossary/${related.slug}`}
+                to={langHref(`/glossary/${related.slug}`, lang)}
                 className="glass-card group flex items-center justify-between rounded-lg p-4 transition-all hover:border-terminal-green/10"
               >
                 <div>
@@ -373,7 +373,7 @@ export function GlossaryTermPage() {
       {/* Back to glossary */}
       <div className="mt-12">
         <Link
-          to={`${langPrefix}/glossary`}
+          to={langHref(`/glossary`, lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
           {tGloss('term.backToGlossary')}
@@ -384,19 +384,19 @@ export function GlossaryTermPage() {
       <div className="mt-16 border-t border-white/5 pt-10">
         <h3 className="mb-6 font-mono text-xs tracking-widest text-white/30">{tGloss('term.exploreMore')}</h3>
         <div className="flex flex-wrap gap-3">
-          <Link to={`${langPrefix}/glossary`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+          <Link to={langHref(`/glossary`, lang)} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
             {tGloss('term.links.fullGlossary')}
           </Link>
-          <Link to={`${langPrefix}/articles`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+          <Link to={langHref(`/articles`, lang)} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
             {tGloss('term.links.allArticles')}
           </Link>
-          <Link to={`${langPrefix}/bio`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+          <Link to={langHref(`/bio`, lang)} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
             {tGloss('term.links.bioOs')}
           </Link>
-          <Link to={`${langPrefix}/the-stack`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+          <Link to={langHref(`/the-stack`, lang)} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
             {tGloss('term.links.theStack')}
           </Link>
-          <Link to={lang === 'en' ? '/' : `/${lang}`} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
+          <Link to={homePathFor(lang)} className="rounded-lg border border-white/10 px-4 py-2 font-mono text-xs text-white/40 transition-colors hover:border-terminal-green/30 hover:text-terminal-green/70">
             {tGloss('term.links.home')}
           </Link>
         </div>

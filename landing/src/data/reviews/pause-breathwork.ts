@@ -56,7 +56,7 @@ Choose Pause Breathwork if you're buying breathwork for somatic / emotional rele
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
 `,
   references: [

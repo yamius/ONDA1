@@ -56,8 +56,8 @@ Choose Theragun PRO Plus for spec-ceiling percussion therapy with Therabody ecos
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols) — percussion + circulation in muscle recovery
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — percussion + circulation in muscle recovery
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
 `,
   references: [

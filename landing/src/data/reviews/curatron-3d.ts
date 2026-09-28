@@ -56,8 +56,8 @@ Choose Curatron 3D for medical-grade dual-applicator PEMF at mid-tier pricing. F
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'Curatronic — official site', url: 'https://www.curatronic.com/' },

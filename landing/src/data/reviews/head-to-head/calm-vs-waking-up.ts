@@ -52,7 +52,7 @@ You’re an experienced or serious meditator who wants depth, rigour and philoso
 
 ## Also worth comparing
 
-For the structured-learning middle ground, see [Headspace vs Calm](/reviews/vs/headspace-vs-calm) and [Headspace vs Waking Up](/reviews/vs/headspace-vs-waking-up). Full field: [best meditation apps](/reviews/meditation-app).`,
+For the structured-learning middle ground, see [Headspace vs Calm](/reviews/vs/headspace-vs-calm) and [Headspace vs Waking Up](/reviews/vs/headspace-vs-waking-up). Full field: [best meditation apps](/reviews/meditation-apps).`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

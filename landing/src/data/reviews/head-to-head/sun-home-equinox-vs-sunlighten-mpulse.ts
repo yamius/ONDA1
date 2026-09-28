@@ -52,7 +52,7 @@ You want the category benchmark — independent 3-wavelength infrared control an
 
 ## Also worth comparing
 
-See [Sun Home Equinox vs Clearlight Sanctuary 2](/reviews/vs/sun-home-equinox-vs-clearlight-sanctuary-2) and [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Full field: [best infrared saunas](/reviews/sauna).`,
+See [Sun Home Equinox vs Clearlight Sanctuary 2](/reviews/vs/sun-home-equinox-vs-clearlight-sanctuary-2) and [Sunlighten mPulse vs Clearlight Sanctuary 2](/reviews/vs/sunlighten-mpulse-vs-clearlight-sanctuary-2). Full field: [best infrared saunas](/reviews/infrared-sauna).`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

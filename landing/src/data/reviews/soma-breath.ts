@@ -57,7 +57,7 @@ Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and
 ## Background reading
 
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors)
 `,
   references: [

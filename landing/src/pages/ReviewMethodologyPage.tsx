@@ -12,12 +12,11 @@
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { REVIEW_CATEGORIES, CATEGORY_LABELS, getCriteria } from '../data/reviews/criteria'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 
 export function ReviewMethodologyPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tReviews } = useTranslation('reviews')
 
   return (
@@ -26,7 +25,7 @@ export function ReviewMethodologyPage() {
         className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30"
         aria-label="Breadcrumb"
       >
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.home')}</Link>
         <span>/</span>
         <Link to={langHref(`/reviews`, lang)} className="transition-colors hover:text-white/50">{tReviews('breadcrumb.reviews')}</Link>
         <span>/</span>
@@ -134,7 +133,7 @@ export function ReviewMethodologyPage() {
       <h2 className="mb-3 text-xl font-bold tracking-tight">{tReviews('methodology.authorHeading')}</h2>
       <p className="mb-10 font-mono text-sm leading-relaxed text-white/60">
         {tReviews('methodology.authorBody')}{' '}
-        <Link to={`${langPrefix}/about`} className="text-terminal-green/70 hover:text-terminal-green">
+        <Link to={langHref(`/about`, lang)} className="text-terminal-green/70 hover:text-terminal-green">
           {tReviews('methodology.authorLink')}
         </Link>
         .

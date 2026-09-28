@@ -56,7 +56,7 @@ Choose iBreathe if you already know which technique you want and just need a cle
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 `,
   references: [
     { label: 'iBreathe — official site', url: 'https://ibreathe.app/' },

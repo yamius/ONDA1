@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import {
   FOG_QUESTIONS,
   FOG_FAQ,
@@ -15,7 +15,6 @@ import { SourcesSection } from '../components/SourcesSection'
 export function BrainFogQuizPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
 
   const [answers, setAnswers] = useState<Record<string, number>>({})
 
@@ -37,9 +36,9 @@ export function BrainFogQuizPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={langHref(`/`, lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={langHref(`/tools`, lang)} className="hover:text-terminal-green">Tools</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">Brain Fog</span>
       </nav>
@@ -134,7 +133,7 @@ export function BrainFogQuizPage() {
                 {s.info.tools.map((t, i) => (
                   <span key={t.slug}>
                     {i > 0 && ' · '}
-                    <Link to={`${langPrefix}/tools/${t.slug}`} className="text-terminal-green hover:underline">{t.label}</Link>
+                    <Link to={langHref(`/tools/${t.slug}`, lang)} className="text-terminal-green hover:underline">{t.label}</Link>
                   </span>
                 ))}
               </div>
@@ -169,11 +168,11 @@ export function BrainFogQuizPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/how-to-get-rid-of-brain-fog`} className="text-terminal-green hover:underline">How to get rid of brain fog</Link>
+        Read the guide: <Link to={langHref(`/articles/how-to-get-rid-of-brain-fog`, lang)} className="text-terminal-green hover:underline">How to get rid of brain fog</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/dopamine-detox`} className="text-terminal-green hover:underline">Dopamine reset</Link>
+        Related: <Link to={langHref(`/tools/dopamine-detox`, lang)} className="text-terminal-green hover:underline">Dopamine reset</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/nervous-system`} className="text-terminal-green hover:underline">Nervous system state</Link>
+        <Link to={langHref(`/tools/nervous-system`, lang)} className="text-terminal-green hover:underline">Nervous system state</Link>
       </div>
     </main>
   )

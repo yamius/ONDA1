@@ -64,7 +64,6 @@ const appUrlFor = (lang: string) => appStoreUrl(lang === 'en' ? 'tool_baseline' 
 export function BaselinePage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const copy = baselineCopy(lang)
   const ui = copy.ui
   const crumbs = hrvToolCopy(lang).breadcrumb
@@ -170,14 +169,14 @@ export function BaselinePage() {
           chrome — a wordmark home and a way back to /tools. */}
       <header style={{ borderBottom: `1px solid ${C.line}`, padding: '14px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', maxWidth: 900, margin: '0 auto' }}>
         <Link to={homePathFor(lang)} style={{ color: C.ink, fontWeight: 800, letterSpacing: '.14em', fontSize: 15, textDecoration: 'none' }}>ONDA</Link>
-        <Link to={`${langPrefix}/tools`} style={{ color: C.sub, fontSize: 13.5, textDecoration: 'none' }}>← {crumbs.tools}</Link>
+        <Link to={langHref(`/tools`, lang)} style={{ color: C.sub, fontSize: 13.5, textDecoration: 'none' }}>← {crumbs.tools}</Link>
       </header>
 
       <div style={{ maxWidth: 620, margin: '0 auto', padding: '26px 20px 72px' }}>
         <nav aria-label="Breadcrumb" style={{ fontSize: 12.5, color: C.faint, marginBottom: 18 }}>
           <Link to={homePathFor(lang)} style={{ color: C.faint, textDecoration: 'none' }}>{crumbs.home}</Link>
           <span style={{ margin: '0 7px' }}>/</span>
-          <Link to={`${langPrefix}/tools`} style={{ color: C.faint, textDecoration: 'none' }}>{crumbs.tools}</Link>
+          <Link to={langHref(`/tools`, lang)} style={{ color: C.faint, textDecoration: 'none' }}>{crumbs.tools}</Link>
           <span style={{ margin: '0 7px' }}>/</span>
           <span style={{ color: C.sub }}>Baseline</span>
         </nav>

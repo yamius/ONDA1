@@ -52,7 +52,7 @@ You want to learn to meditate through structured courses, with a broad polished 
 
 ## Also worth comparing
 
-For the sleep-and-content leader, see [Balance vs Calm](/reviews/vs/balance-vs-calm) and [Headspace vs Calm](/reviews/vs/headspace-vs-calm). Full field: [best meditation apps](/reviews/meditation-app).`,
+For the sleep-and-content leader, see [Balance vs Calm](/reviews/vs/balance-vs-calm) and [Headspace vs Calm](/reviews/vs/headspace-vs-calm). Full field: [best meditation apps](/reviews/meditation-apps).`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

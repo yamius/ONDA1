@@ -42,8 +42,8 @@ export function SitemapPage() {
 
   const mainLinks = [
     { to: lang === 'en' ? '/' : `/${lang}`, label: t('main.home') },
-    { to: lang === 'en' ? '/about' : `/${lang}/about`, label: t('main.about') },
-    { to: '/people/yakiv-bilenko', label: 'Yakiv Bilenko (founder)' },
+    { to: langHref('/about', lang), label: t('main.about') },
+    { to: langHref('/people/yakiv-bilenko', lang), label: 'Yakiv Bilenko (founder)' },
     { to: lang === 'en' ? '/inner-spectrum' : `/${lang}/inner-spectrum`, label: t('main.philosophy') },
     { to: langHref('/articles', lang), label: t('main.articles') },
     { to: langHref('/glossary', lang), label: t('main.glossary') },
@@ -56,11 +56,11 @@ export function SitemapPage() {
     { to: '/resonance-breathing', label: 'Resonance breathing' },
     { to: '/hrv-vs-coherence', label: 'HRV vs coherence' },
     { to: '/apple-watch-hrv-biofeedback', label: 'Apple Watch HRV biofeedback' },
-    { to: '/faq', label: 'FAQ' },
+    { to: langHref('/faq', lang), label: 'FAQ' },
     { to: '/measurements', label: 'What ONDA measures' },
     { to: '/how-it-works', label: 'How ONDA works' },
     { to: '/research', label: 'The science behind ONDA' },
-    { to: '/compare', label: 'ONDA vs alternatives' },
+    { to: langHref('/compare', lang), label: 'ONDA vs alternatives' },
   ]
 
   return (
@@ -119,7 +119,7 @@ export function SitemapPage() {
           <ul className="space-y-2">
             {Object.entries(levelsData).map(([num, level]) => (
               <li key={num}>
-                <Link to={`${langPrefix}/level/${num}`} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
+                <Link to={langHref(`/level/${num}`, lang)} className="text-sm text-white/50 transition-colors hover:text-cyan-400">
                   {t('levelLabel', { n: num, name: t(`levels.${num}.name`, { ns: 'level', defaultValue: level.name }) as string })}
                 </Link>
               </li>

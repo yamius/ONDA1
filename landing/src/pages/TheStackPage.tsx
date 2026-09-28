@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { ExperientialFrameworkNote } from '../components/ExperientialFrameworkNote'
 import { useTranslation } from 'react-i18next'
 import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, PROTOCOL_TO_ARTICLE } from '../data/protocol-ids'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 
 const PAGE_TITLE = 'The Stack | System Configuration | ONDA Life'
 const PAGE_DESC =
@@ -192,7 +192,6 @@ export function TheStackPage() {
   const [activeProtocolIds, setActiveProtocolIds] = useState<Set<string>>(getActiveProtocolIds)
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
   const { t: tArticles } = useTranslation('articles')
 
   useEffect(() => {
@@ -301,7 +300,7 @@ export function TheStackPage() {
 
       <div className="mt-16 border-t border-white/5 pt-8">
         <Link
-          to={`${langPrefix}/articles`}
+          to={langHref(`/articles`, lang)}
           className="text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
           {tArticles('detail.backToArticles', { defaultValue: '← Back to Articles' })}

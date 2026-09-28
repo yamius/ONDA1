@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import {
   ACTIVITY_LEVELS,
   CALORIE_GOALS,
@@ -18,7 +18,6 @@ import { SourcesSection } from '../components/SourcesSection'
 export function TdeeCalculatorPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
 
   const [sex, setSex] = useState<Sex>('male')
   const [age, setAge] = useState('35')
@@ -50,9 +49,9 @@ export function TdeeCalculatorPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={langHref(`/`, lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={langHref(`/tools`, lang)} className="hover:text-terminal-green">Tools</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">TDEE</span>
       </nav>
@@ -225,11 +224,11 @@ export function TdeeCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/how-to-calculate-maintenance-calories`} className="text-terminal-green hover:underline">How to calculate maintenance calories</Link>
+        Read the guide: <Link to={langHref(`/articles/how-to-calculate-maintenance-calories`, lang)} className="text-terminal-green hover:underline">How to calculate maintenance calories</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/protein`} className="text-terminal-green hover:underline">Protein target</Link>
+        Related: <Link to={langHref(`/tools/protein`, lang)} className="text-terminal-green hover:underline">Protein target</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/vo2max`} className="text-terminal-green hover:underline">VO₂max estimator</Link>
+        <Link to={langHref(`/tools/vo2max`, lang)} className="text-terminal-green hover:underline">VO₂max estimator</Link>
       </div>
     </main>
   )

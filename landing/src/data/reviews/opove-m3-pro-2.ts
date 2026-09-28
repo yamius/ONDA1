@@ -56,8 +56,8 @@ Choose OPOVE M3 Pro 2 for mid-budget premium-tier percussion. For higher stall f
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 `,
   references: [
     { label: 'OPOVE — official site', url: 'https://opove.com/' },

@@ -52,7 +52,7 @@ You want one integrated smart bed — adjustable firmness per side plus climate,
 
 ## Also worth comparing
 
-For the subscription-free climate-only route, see [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Full field: [best smart sleep-climate systems](/reviews/sleep-climate).`,
+For the subscription-free climate-only route, see [Pod 5 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-5-vs-chilipad-dock-pro). Full field: [best smart sleep-climate systems](/reviews/smart-sleep-climate).`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

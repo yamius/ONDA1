@@ -1135,6 +1135,18 @@ console.log('[build] all stages complete')
  * the colon + brand.
  */
 function fitTitle(base: string, suffix: string): string {
+  const MAX = 60
+  if (`${base}${suffix}`.length <= MAX) return `${base}${suffix}`
+  if (base.length <= MAX) return base
+  // The segment before ":" / "(" only when it is a real title on its own —
+  // "VFC (HRV): 52 respuestas…" must not become "VFC — ONDA Life" (roadmap 8.5).
   const head = base.split(/\s*[:：]\s*|\s+\(/)[0]
-  return [`${base}${suffix}`, base, `${head}${suffix}`].find((t) => t.length <= 60) ?? head
+  if (head.length >= 25 && `${head}${suffix}`.length <= MAX) return `${head}${suffix}`
+  // Otherwise keep the meaning, not the brand: word-trim the title itself to MAX
+  // (CJK: by characters) and never end on a dangling short word ("…sobre la").
+  const cut = base.slice(0, MAX + 1)
+  const sp = cut.lastIndexOf(' ')
+  let trimmed = sp > MAX * 0.6 ? cut.slice(0, sp) : base.slice(0, MAX)
+  for (let i = 0; i < 3 && / \S{1,3}$/.test(trimmed); i++) trimmed = trimmed.replace(/ \S{1,3}$/, '')
+  return trimmed.replace(/[\s,:;(—–-]+$/, '')
 }

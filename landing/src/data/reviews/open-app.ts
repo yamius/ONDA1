@@ -57,7 +57,7 @@ Choose Open if you want one premium app for breath + meditation + movement rathe
 ## Background reading
 
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors)
 `,
   references: [

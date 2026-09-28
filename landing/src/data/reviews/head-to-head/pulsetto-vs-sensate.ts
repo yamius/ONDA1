@@ -52,7 +52,7 @@ You want a gentle, passive, sound-based wind-down and prefer no electrical stimu
 
 ## Also worth comparing
 
-Against the vibration-based option, see [Sensate vs Apollo Neuro](/reviews/vs/sensate-vs-apollo-neuro) and [Apollo Neuro vs Pulsetto](/reviews/vs/apollo-neuro-vs-pulsetto). Full field: [best vagus nerve stimulators](/reviews/vagus-stim).`,
+Against the vibration-based option, see [Sensate vs Apollo Neuro](/reviews/vs/sensate-vs-apollo-neuro) and [Apollo Neuro vs Pulsetto](/reviews/vs/apollo-neuro-vs-pulsetto). Full field: [best vagus nerve stimulators](/reviews/vagus-nerve-stimulators).`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

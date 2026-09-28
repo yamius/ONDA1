@@ -56,8 +56,8 @@ Choose Ekrin B37 for lifetime-warranty mid-tier percussion with athlete brand pe
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 `,
   references: [
     { label: 'Ekrin Athletics — official site', url: 'https://www.ekrinathletics.com/' },

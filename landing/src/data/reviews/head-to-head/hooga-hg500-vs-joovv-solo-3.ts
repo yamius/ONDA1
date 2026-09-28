@@ -52,7 +52,7 @@ Build quality, FDA registration, brand and a modular ecosystem you can expand ju
 
 ## Also worth comparing
 
-For the spectrum-rich mid-tier, see [Hooga HG500 vs PlatinumLED BIOMAX 600](/reviews/vs/hooga-hg500-vs-platinumled-biomax-600). Full field: [best red light therapy panels](/reviews/red-light).`,
+For the spectrum-rich mid-tier, see [Hooga HG500 vs PlatinumLED BIOMAX 600](/reviews/vs/hooga-hg500-vs-platinumled-biomax-600). Full field: [best red light therapy panels](/reviews/red-light-therapy).`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

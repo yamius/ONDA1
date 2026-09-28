@@ -52,7 +52,7 @@ Only when it’s discounted well below the 3 Pro and you don’t need the extra 
 
 ## Also worth comparing
 
-Cross-shop the 3 Pro against [Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus). Full field: [best massage guns](/reviews/massage-gun).`,
+Cross-shop the 3 Pro against [Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus). Full field: [best massage guns](/reviews/massage-guns).`,
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

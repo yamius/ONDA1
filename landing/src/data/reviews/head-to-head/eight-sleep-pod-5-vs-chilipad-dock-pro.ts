@@ -52,7 +52,7 @@ You want the climate hardware alone, done well, without the subscription — and
 
 ## Also worth comparing
 
-If you want the same debate one generation down, see [Pod 4 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-4-vs-chilipad-dock-pro). Full field: [best smart sleep-climate systems](/reviews/sleep-climate).`,
+If you want the same debate one generation down, see [Pod 4 vs ChiliPad Dock Pro](/reviews/vs/eight-sleep-pod-4-vs-chilipad-dock-pro). Full field: [best smart sleep-climate systems](/reviews/smart-sleep-climate).`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

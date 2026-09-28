@@ -54,7 +54,7 @@ Price and the subscription. The Pod 5 Ultra starts around $6,099 (queen) — rou
 
 ## Who it is for
 
-Choose the Pod 5 Ultra if you want the maximal full-bed system and the price is not the deciding factor. If you want the Eight Sleep sleep-climate experience for the best value, the [Pod 4](/reviews/eight-sleep-pod-4) — or the cheaper Pod 5 Core — is the smarter buy. For the wider field, see the [best smart sleep-climate systems](/reviews/sleep-climate).
+Choose the Pod 5 Ultra if you want the maximal full-bed system and the price is not the deciding factor. If you want the Eight Sleep sleep-climate experience for the best value, the [Pod 4](/reviews/eight-sleep-pod-4) — or the cheaper Pod 5 Core — is the smarter buy. For the wider field, see the [best smart sleep-climate systems](/reviews/smart-sleep-climate).
 `,
   references: [
     { label: 'Eight Sleep — official site', url: 'https://www.eightsleep.com/' },

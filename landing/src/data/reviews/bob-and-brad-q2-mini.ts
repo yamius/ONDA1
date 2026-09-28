@@ -56,7 +56,7 @@ Choose Bob and Brad Q2 Mini for budget mini with brand credibility. For premium 
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'Bob and Brad — official site', url: 'https://bobandbrad.com/' },

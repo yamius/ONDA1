@@ -56,8 +56,8 @@ Choose Shark CryoGlow if you want cooling + LED combined into one device for inf
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'Shark Beauty — official site', url: 'https://www.sharkbeauty.com/' },

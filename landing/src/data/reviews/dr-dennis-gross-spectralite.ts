@@ -56,8 +56,8 @@ Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with 
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'Dr. Dennis Gross Skincare — official site', url: 'https://drdennisgross.com/' },

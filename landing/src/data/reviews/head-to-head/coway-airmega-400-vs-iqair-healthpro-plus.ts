@@ -52,7 +52,7 @@ You need the deepest filtration — allergies, VOCs, chemical sensitivity or med
 
 ## Also worth comparing
 
-See [Coway Airmega 400 vs Dyson Big+Quiet](/reviews/vs/coway-airmega-400-vs-dyson-purifier-big-quiet) and [Dyson vs IQAir](/reviews/vs/dyson-purifier-big-quiet-vs-iqair-healthpro-plus). Full field: [best air purifiers](/reviews/air-purifier).`,
+See [Coway Airmega 400 vs Dyson Big+Quiet](/reviews/vs/coway-airmega-400-vs-dyson-purifier-big-quiet) and [Dyson vs IQAir](/reviews/vs/dyson-purifier-big-quiet-vs-iqair-healthpro-plus). Full field: [best air purifiers](/reviews/air-purifiers).`,
   relatedComparisonSlug: 'best-air-purifiers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

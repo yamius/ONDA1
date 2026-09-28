@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import { VO2MAX_FAQ, VO2MAX_SOURCES, VO2MAX_METHODOLOGY, estimateVo2max, classifyVo2max, type Sex, type Vo2Result } from '../data/vo2max'
 import { SourcesSection } from '../components/SourcesSection'
 
@@ -17,7 +17,6 @@ const CAT_COLOR: Record<string, string> = {
 export function Vo2maxCalculatorPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
 
   const [age, setAge] = useState('35')
   const [sex, setSex] = useState<Sex>('male')
@@ -51,9 +50,9 @@ export function Vo2maxCalculatorPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={langHref(`/`, lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={langHref(`/tools`, lang)} className="hover:text-terminal-green">Tools</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">VO₂max</span>
       </nav>
@@ -162,11 +161,11 @@ export function Vo2maxCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/vo2max-increase-aerobic-engine`} className="text-terminal-green hover:underline">How to increase VO₂max</Link>
+        Read the guide: <Link to={langHref(`/articles/vo2max-increase-aerobic-engine`, lang)} className="text-terminal-green hover:underline">How to increase VO₂max</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/zone-2`} className="text-terminal-green hover:underline">Zone 2 heart rate</Link>
+        Related: <Link to={langHref(`/tools/zone-2`, lang)} className="text-terminal-green hover:underline">Zone 2 heart rate</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/hrv`} className="text-terminal-green hover:underline">HRV interpreter</Link>
+        <Link to={langHref(`/tools/hrv`, lang)} className="text-terminal-green hover:underline">HRV interpreter</Link>
       </div>
     </main>
   )

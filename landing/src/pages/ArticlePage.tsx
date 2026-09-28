@@ -12,7 +12,7 @@ import { injectArticleGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
 import { getPrimaryHubForArticle } from '../data/article-topics'
-import { langFromPath, langHref } from '../i18n'
+import { langFromPath, langHref, homePathFor } from '../i18n'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -832,11 +832,11 @@ export function ArticlePage() {
   return (
     <div className="mx-auto max-w-4xl px-4 pb-16 md:px-6">
       <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to={lang === 'en' ? '/' : `/${lang}`} className="transition-colors hover:text-white/50">
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">
           {tArticles('breadcrumb.home')}
         </Link>
         <span>/</span>
-        <Link to={`${langPrefix}/articles`} className="transition-colors hover:text-white/50">
+        <Link to={langHref(`/articles`, lang)} className="transition-colors hover:text-white/50">
           {tArticles('breadcrumb.current')}
         </Link>
         <span>/</span>
@@ -897,7 +897,7 @@ export function ArticlePage() {
       {/* Visible author byline — E-E-A-T signal for YMYL (schema author lives in meta-inject). */}
       <p className="mb-2 font-mono text-xs text-white/35">
         {tArticles('detail.by', { defaultValue: 'By' })}{' '}
-        <Link to={`${langPrefix}/about`} className="text-terminal-green hover:underline" rel="author">Yakiv Bilenko</Link>
+        <Link to={langHref(`/about`, lang)} className="text-terminal-green hover:underline" rel="author">Yakiv Bilenko</Link>
         {' · '}{tArticles('detail.authorRole', { defaultValue: 'Architect & Gestalt psychologist, founder of ONDA Life' })}
       </p>
       <div className="mb-10 flex items-center justify-between gap-3 font-mono text-xs">
@@ -1132,7 +1132,7 @@ export function ArticlePage() {
 
       <div className="mt-12">
         <Link
-          to={`${langPrefix}/articles`}
+          to={langHref(`/articles`, lang)}
           className="font-mono text-xs text-white/30 transition-colors hover:text-terminal-green/60"
         >
           {tArticles('detail.backToArticles', { defaultValue: '← Back to Articles' })}

@@ -52,7 +52,7 @@ You want the highest raw stall force and the most attachments for the same money
 
 ## Also worth comparing
 
-Cross-shop against [Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus) and [Theragun Elite](/reviews/vs/hypervolt-3-pro-vs-theragun-elite). Full field: [best massage guns](/reviews/massage-gun).`,
+Cross-shop against [Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus) and [Theragun Elite](/reviews/vs/hypervolt-3-pro-vs-theragun-elite). Full field: [best massage guns](/reviews/massage-guns).`,
   relatedComparisonSlug: 'best-massage-guns-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',

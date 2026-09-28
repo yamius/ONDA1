@@ -386,11 +386,21 @@ canonicals (all self), sitemap (0 dead URLs; only `/get` absent — intentional)
 
 | # | Gap | Scale | Fix | Status |
 |---|---|---|---|---|
-| 8.1 | Broken links to `/es/the-stack` | 215 es glossary pages | link through langHref (no /es/the-stack page) | ⏳ |
-| 8.2 | Review texts link to two articles that don't exist (`bioelectric-architecture-healing`, `mitochondrial-recovery-protocols`) | 112 links (EN + translations) | repoint to existing articles or 301 | ⏳ |
-| 8.3 | Header/footer link to `/{it,ja,nl,pl,pt}` and `/{…}/about` — articles-only languages have no home/about | ~450 links | homePathFor/localizedPathFor fall back for articles-only languages | ⏳ |
-| 8.4 | In-content links to `/{uk,zh,de,fr}/measurements` (page exists only en/ru/es) and to localized articles not yet published in that language (es glossary → queued es articles) | ~180 links | langHref checks that the localized page exists for every path (build-time page set), not only for articles/glossary/reviews | ⏳ |
-| 8.5 | Localized article titles cut to the part before ":" / "(" when > 60 chars (`fitTitle`) — e.g. "VFC — ONDA Life", "Sudarshan Kriya Yoga — ONDA Life" | all long localized article titles | word-trim instead of taking the head segment | ⏳ |
-| 8.6 | es glossary descriptions truncated to "El " | 2 terms | fix the truncation/data | ⏳ |
-| 8.7 | Localized part pages titled generic "Protocolo / Протокол \| ONDA Life" | es/ru/uk parts | use the part title | ⏳ |
-| 8.8 | Orphans (reachable only via hreflang): localized Resona / AW12-vs-Whoop in de…pt (no localized review hub), 19 es head-to-heads not listed in the es hub, es/ru `compare`, `faq`, author page not linked | 43 pages | link from localized hubs/footers; list h2h in localized review hub | ⏳ |
+| 8.1 | Broken links to `/es/the-stack` | 215 es glossary pages | link through langHref (no /es/the-stack page) | ✅ 2026-09-28 |
+| 8.2 | Review texts link to two articles that don't exist (`bioelectric-architecture-healing`, `mitochondrial-recovery-protocols`) | 112 links (EN + translations) | repoint to existing articles or 301 | ✅ 2026-09-28 |
+| 8.3 | Header/footer link to `/{it,ja,nl,pl,pt}` and `/{…}/about` — articles-only languages have no home/about | ~450 links | homePathFor/localizedPathFor fall back for articles-only languages | ✅ 2026-09-28 |
+| 8.4 | In-content links to `/{uk,zh,de,fr}/measurements` (page exists only en/ru/es) and to localized articles not yet published in that language (es glossary → queued es articles) | ~180 links | langHref checks that the localized page exists for every path (build-time page set), not only for articles/glossary/reviews | ✅ 2026-09-28 |
+| 8.5 | Localized article titles cut to the part before ":" / "(" when > 60 chars (`fitTitle`) — e.g. "VFC — ONDA Life", "Sudarshan Kriya Yoga — ONDA Life" | all long localized article titles | word-trim instead of taking the head segment | ✅ 2026-09-28 |
+| 8.6 | es glossary descriptions truncated to "El " | 2 terms | fix the truncation/data | ✅ 2026-09-28 |
+| 8.7 | Localized part pages titled generic "Protocolo / Протокол \| ONDA Life" | es/ru/uk parts | use the part title | ✅ 2026-09-28 |
+| 8.8 | Orphans (reachable only via hreflang): localized Resona / AW12-vs-Whoop in de…pt (no localized review hub), 19 es head-to-heads not listed in the es hub, es/ru `compare`, `faq`, author page not linked | 43 pages | link from localized hubs/footers; list h2h in localized review hub | ✅ 2026-09-28 |
+
+**Result (re-audit 2026-09-28):** broken internal links 125 → 0 · orphans 43 → 1 (`/get`, intentional) ·
+descriptions with quotes fixed site-wide (truncateForBudget dropped `&quot;`) · long localized titles
+word-trimmed instead of cut to the segment before ":" (also fixed the "Protocolo | ONDA Life" parts).
+How: build-time `pages` set per language in `localized-coverage.generated.ts`; `langHref` /
+`localizedPathFor` link `/<lang>/…` only when that page is built; 116 hand-built `${langPrefix}/…`
+links + 11 home links moved to `langHref` / `homePathFor`; review texts repointed to existing
+articles and category URL slugs; `OtherLanguages` links on review/comparison/duel pages.
+Remaining nits: glossary acronym titles identical in en/es (fine), `/fr/bio/bpm` and `/de/sitemap`
+titles untranslated.

@@ -56,7 +56,7 @@ Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors) — why circadian-aligned protocols matter for recovery hardware
 `,
   references: [

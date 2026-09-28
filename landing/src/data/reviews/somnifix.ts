@@ -56,7 +56,7 @@ Choose Somnifix if you want FDA-registered medical-credibility mouth tape with s
 
 ## Background reading
 
-- [Bioelectric architecture of healing](/articles/bioelectric-architecture-healing)
+- [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
 - [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
 `,

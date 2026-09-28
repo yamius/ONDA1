@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import AppStoreCTA from '../components/AppStoreCTA'
 import { storeCt } from '../lib/storeCt'
 import { Link, useLocation } from 'react-router-dom'
-import { langFromPath } from '../i18n'
+import { langFromPath, langHref } from '../i18n'
 import {
   FASTING_PROTOCOLS,
   FAST_PHASES,
@@ -15,7 +15,6 @@ import {
 export function FastingCalculatorPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
-  const langPrefix = lang === 'en' ? '' : `/${lang}`
 
   const [protocolId, setProtocolId] = useState('16-8')
   const [eatStart, setEatStart] = useState('12:00')
@@ -39,9 +38,9 @@ export function FastingCalculatorPage() {
   return (
     <main className="mx-auto max-w-3xl px-5 py-12 md:px-6 md:py-16">
       <nav className="mb-6 flex items-center gap-2 font-mono text-xs text-white/40">
-        <Link to={`${langPrefix}/`} className="hover:text-terminal-green">Home</Link>
+        <Link to={langHref(`/`, lang)} className="hover:text-terminal-green">Home</Link>
         <span>/</span>
-        <Link to={`${langPrefix}/tools`} className="hover:text-terminal-green">Tools</Link>
+        <Link to={langHref(`/tools`, lang)} className="hover:text-terminal-green">Tools</Link>
         <span>/</span>
         <span className="text-terminal-green/70" aria-current="page">Fasting</span>
       </nav>
@@ -142,11 +141,11 @@ export function FastingCalculatorPage() {
       </div>
 
       <div className="font-mono text-xs text-white/40">
-        Read the guide: <Link to={`${langPrefix}/articles/intermittent-fasting-metabolic-switch`} className="text-terminal-green hover:underline">Intermittent fasting explained</Link>
+        Read the guide: <Link to={langHref(`/articles/intermittent-fasting-metabolic-switch`, lang)} className="text-terminal-green hover:underline">Intermittent fasting explained</Link>
         {' · '}
-        Related: <Link to={`${langPrefix}/tools/tdee`} className="text-terminal-green hover:underline">TDEE calculator</Link>
+        Related: <Link to={langHref(`/tools/tdee`, lang)} className="text-terminal-green hover:underline">TDEE calculator</Link>
         {' · '}
-        <Link to={`${langPrefix}/tools/caffeine`} className="text-terminal-green hover:underline">Caffeine cut-off</Link>
+        <Link to={langHref(`/tools/caffeine`, lang)} className="text-terminal-green hover:underline">Caffeine cut-off</Link>
       </div>
     </main>
   )

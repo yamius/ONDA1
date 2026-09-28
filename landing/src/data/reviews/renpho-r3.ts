@@ -56,7 +56,7 @@ Choose Renpho R3 for pure spec-per-dollar Amazon budget. For Bob and Brad PT cre
 
 ## Background reading
 
-- [Mitochondrial recovery protocols](/articles/mitochondrial-recovery-protocols)
+- [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid)
 `,
   references: [
     { label: 'Renpho — official site', url: 'https://www.renpho.com/' },
