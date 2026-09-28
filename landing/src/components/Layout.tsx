@@ -386,7 +386,7 @@ export function Layout() {
             <div className="hidden md:block" />
             <div className="flex justify-center">
               <Link
-                to={currentLang === 'en' ? '/sitemap' : `/${currentLang}/sitemap`}
+                to={langHref('/sitemap', currentLang)}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
                 {t('footer.sitemap')}
@@ -394,13 +394,13 @@ export function Layout() {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 md:justify-end">
               <Link
-                to={currentLang === 'en' ? '/privacy' : `/${currentLang}/privacy`}
+                to={langHref('/privacy', currentLang)}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
                 {t('footer.privacy')}
               </Link>
               <Link
-                to={currentLang === 'en' ? '/terms' : `/${currentLang}/terms`}
+                to={langHref('/terms', currentLang)}
                 className="font-mono text-[10px] text-white/20 transition-colors hover:text-white/30 border-b border-dotted border-white/10 pb-0.5"
               >
                 {t('footer.terms')}

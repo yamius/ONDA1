@@ -184,6 +184,7 @@ export function langHref(path: string, lang: Lang): string {
   const parts = path.split('/').filter(Boolean)
   if (isLang(parts[0])) return path
   if (ALL_LANG_PAGES.includes(path)) return `/${lang}${path}`
+  if (LANG_PAGE_EXCLUDE[lang]?.includes(path)) return path
   if (NON_LOCALIZED_PREFIXES.some((p) => path === p || path.startsWith(p + '/'))) return path
   if (ARTICLES_ONLY_LANGS.includes(lang) && parts[0] !== 'articles') return path
   // Partial-localized content (articles, glossary): the localized pages are
