@@ -263,6 +263,9 @@ const OndaLevel1 = () => {
   // here (above the camera-session effect) so the effect's deps can reference it.
   const [cameraCheckinActive, setCameraCheckinActive] = useState(false);
   const [checkinToast, setCheckinToast] = useState<string | null>(null);
+  // Scroll target for the biometric block, so a B2 camera check-in tap can bring
+  // the live pulse readout into view instead of leaving the user at the top.
+  const cameraSectionRef = useRef<HTMLDivElement | null>(null);
 
   // Ref to store CURRENT vitals - updated every render, accessible in async functions
   const vitalsRef = useRef(vitalsData);
@@ -4500,6 +4503,8 @@ const OndaLevel1 = () => {
         } else if (type === 'B2') {
           setCameraCheckinActive(true);              // → camera check-in → diary
           try { cameraPpg.start(); } catch { /* noop */ }
+          // Bring the live pulse readout into view (opening from a push lands at the top).
+          window.setTimeout(() => { try { cameraSectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' }); } catch { /* noop */ } }, 600);
         }
         return;
       }
@@ -7044,7 +7049,7 @@ const OndaLevel1 = () => {
             verdict is exactly the anxiety score this audience came to ONDA
             to escape. One calm HR-RSA curve now lives inside the coherence
             hero; the busy 3-line dashboard is gone. */}
-        <div className="mb-6">
+        <div className="mb-6" ref={cameraSectionRef}>
           {/* Diary/Timeline entry — DETAILED mode only. Compact keeps nothing:
               no timeline, no diary — the traffic light is fully automatic (task 85). */}
           {appMode !== 'simple' && (
