@@ -13,6 +13,7 @@ import { getArticleBySlug, articles } from '../src/data/articles'
 import { ARTICLE_TOPIC_HUBS, getArticleTopicHub, getPrimaryHubForArticle, type ArticleTopicSlug } from '../src/data/article-topics'
 import { hubItemSlugs, hubLastModified, hubAvailable, localizedHubItemSlugs, localizedHubLastModified } from '../src/data/article-topic-listing'
 import { libraryCopy, fillLib } from '../src/data/library-i18n'
+import { TOPIC_HUB_FAQ } from '../src/data/topic-hub-faq'
 import { ARTICLE_FAQ as FAQ_SCHEMA, ARTICLE_FAQ_SCHEMA_ONLY } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
@@ -3219,7 +3220,9 @@ export function getMetaForRoute(route: string): RouteMeta {
       // Keep under the ~60-char title limit (long names drop the "Guides & Research" tail
       // instead of being cut mid-phrase).
       const longTitle = `${hub.name} — Guides & Research | ONDA Library`
+      const hubFaq = TOPIC_HUB_FAQ[topic]
       return {
+        ...(hubFaq ? { faq: { url, mainEntity: hubFaq.map((f) => ({ question: f.q, answer: f.a })) } } : {}),
         title: longTitle.length <= 60 ? longTitle : `${hub.name} | ONDA Library`,
         description: hub.tile,
         ...(hub.image ? { image: `${SITE_URL}${hub.image}` } : {}),
