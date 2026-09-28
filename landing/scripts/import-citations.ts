@@ -21,6 +21,7 @@ const known = new Set(articles.map((a) => a.slug))
 const merged: Record<string, StudyCitation[]> = { ...ARTICLE_CITATIONS }
 let verified = 0
 let skipped = 0
+const rejected: string[] = []
 for (const f of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
   const d = JSON.parse(readFileSync(join(dir, f), 'utf-8')) as { slug: string; sources: Record<string, unknown>[] }
   if (!known.has(d.slug)) {
@@ -49,9 +50,43 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
       url: doi ? `https://doi.org/${doi}` : `https://pubmed.ncbi.nlm.nih.gov/${pmid}/`,
     })
   }
-  if (list.length) merged[d.slug] = list
-  verified += list.length
+  // Independent re-check against Crossref: the DOI must exist and its first author
+  // surname + year must match what the lookup claimed. Mismatches are dropped.
+  const checked: StudyCitation[] = []
+  for (const c of list) {
+    if (!c.doi) {
+      checked.push(c) // PMID-only (e.g. NCHS reports): accepted as resolved by the agent
+      continue
+    }
+    try {
+      const r = await fetch(`https://api.crossref.org/works/${encodeURIComponent(c.doi)}`)
+      if (!r.ok) throw new Error(`HTTP ${r.status}`)
+      const m = (await r.json()).message as { author?: { family?: string }[]; issued?: { 'date-parts'?: number[][] }; title?: string[] }
+      const plain = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9 ]/g, ' ')
+      const claimed = plain(c.authors.split(/[ ,]/)[0] ?? '')
+      const families = (m.author ?? []).map((a) => plain(a.family ?? '').trim()).filter(Boolean)
+      const fam = families[0] ?? ''
+      const yr = m.issued?.['date-parts']?.[0]?.[0]
+      const yearOk = Math.abs(Number(yr) - c.year) <= 1
+      // Title check (used when Crossref lists no authors, e.g. consensus statements).
+      const words = (s: string) => new Set(plain(s).split(/\s+/).filter((w) => w.length > 3))
+      const tw = words(c.title), cw = words(m.title?.[0] ?? '')
+      const titleOverlap = tw.size && cw.size ? [...tw].filter((w) => cw.has(w)).length / Math.min(tw.size, cw.size) : 0
+      const authorOk = families.length
+        ? families.some((f) => f && (claimed.includes(f) || f.includes(claimed)))
+        : titleOverlap >= 0.8
+      if (yearOk && authorOk && titleOverlap >= 0.5) checked.push(c)
+      else {
+        rejected.push(`${d.slug}: ${c.doi} (Crossref: ${fam || '?'} ${yr ?? '?'} ≠ ${c.authors} ${c.year})`)
+      }
+    } catch (e) {
+      rejected.push(`${d.slug}: ${c.doi} (${(e as Error).message})`)
+    }
+  }
+  if (checked.length) merged[d.slug] = checked
+  verified += checked.length
 }
+for (const r of rejected) console.warn(`[citations] rejected ${r}`)
 
 const file = join('src', 'data', 'article-citations.ts')
 const src = readFileSync(file, 'utf-8')
