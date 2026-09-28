@@ -178,9 +178,12 @@ const routeElements = (
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`gloss-${l}`} path={`/${l}/glossary/:slug`} element={<GlossaryTermPage />} />
             ))}
-            {/* ONDA Library topic hubs (EN only for now). More specific than
-                /articles/:slug, so article URLs are unaffected. */}
+            {/* ONDA Library topic hubs (all languages; a localized hub 404s when it has too few
+                translated articles). More specific than /articles/:slug, so article URLs are unaffected. */}
             <Route path="/articles/topic/:topic" element={<ArticleTopicHubPage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
+              <Route key={`topic-${l}`} path={`/${l}/articles/topic/:topic`} element={<ArticleTopicHubPage />} />
+            ))}
             <Route path="/articles/:slug"  element={<ArticlesSlugRouter />} />
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`art-${l}`} path={`/${l}/articles/:slug`} element={<ArticlesSlugRouter />} />

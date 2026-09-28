@@ -1,0 +1,99 @@
+{
+  "ui": {
+    "metaTitle": "ONDA Library — Breathing, HRV & Meditation Guides | ONDA Life",
+    "metaDescription": "Free, sourced guides: normal HRV by age, 4-7-8 and box breathing, the physiological sigh, sleep and stress. Ten topics, plus free calculators and breathing timers.",
+    "home": "Home",
+    "library": "Library",
+    "badge": "[ ONDA LIBRARY ]",
+    "h1": "ONDA Library",
+    "subtitle": "Science-based guides on breathing, HRV, meditation and the nervous system. Pick a topic to start.",
+    "articlesOne": "{n} article",
+    "articlesOther": "{n} articles",
+    "moreGuides": "More guides in this language",
+    "englishLibrary": "The full library in English →",
+    "reviews": "Device reviews →",
+    "glossary": "Glossary →",
+    "topicClusters": "Topic clusters →",
+    "aboutH2": "About the ONDA Library",
+    "aboutP1": "The ONDA Library is a long-form collection on the nervous system, heart-rate variability, breathing, meditation, sleep and recovery — written to explain the mechanism, not just list tips. Where a claim is well-supported we cite it; where an idea is a framing or still experimental, we say so.",
+    "aboutP2": "Every guide sits in a topic, each with its own hub page and a recommended place to start. To go deeper on the measured side, see {measurements} and {research}.",
+    "measurementsLink": "what ONDA measures",
+    "researchLink": "the evidence",
+    "startHere": "Start here",
+    "readGuide": "Read the guide →",
+    "allGuides": "All {topic} guides ({n})",
+    "relatedTopics": "Related topics",
+    "allTopics": "All topics",
+    "hubTitleSuffix": "ONDA Library",
+    "hubMetaTitle": "{topic} — Guides & Research | ONDA Library"
+  },
+  "countries": {
+    "Japan": "Japan",
+    "India": "India",
+    "Germany": "Germany",
+    "Netherlands": "Netherlands",
+    "France": "France"
+  },
+  "hubs": {
+    "meditation": {
+      "name": "Meditation with Progress",
+      "tile": "Meditation you can measure — how practice changes your brain and body, and how to see it.",
+      "intro": "Meditation works — and its progress is measurable. These guides cover what research shows about how meditation changes your brain and nervous system, the major traditions from Zen to Vipassana to the jhanas, how much practice you actually need, and the honest risks few apps mention. The common thread: meditation is a trainable skill, and you can track your progress instead of practicing blind.",
+      "imageAlt": "Meditation with Progress — illustration: a seated meditator silhouette with an ascending mint progress line of light rising behind them."
+    },
+    "breathing": {
+      "name": "Breathing Techniques",
+      "tile": "From the physiological sigh to pranayama — what each technique does and when to use it.",
+      "intro": "Breathing is the fastest lever you have on your nervous system. Here you'll find the techniques worth knowing — coherent breathing, the physiological sigh, 4-7-8, box breathing, and traditional pranayama like Nadi Shodhana and Bhramari — explained through the physiology behind them. Each guide covers how to do it, what the research shows, and which technique fits which moment: calming fast, winding down, or energizing.",
+      "imageAlt": "Breathing Techniques — illustration: stylized lungs made of light with flowing breath waves moving in and out."
+    },
+    "hrv-heart-rate": {
+      "name": "HRV & Heart Rate",
+      "tile": "What your HRV and resting heart rate mean — and how to move them.",
+      "intro": "Heart rate variability and resting heart rate are two of the most useful signals your body gives you — if you read them correctly. These guides explain what's normal for your age, why your personal baseline matters more than any average, how to measure consistently across devices, what a low reading really means, and which habits raise HRV over time.",
+      "imageAlt": "HRV & Heart Rate — illustration: a glowing heart with a variable-rhythm waveform flowing out of it."
+    },
+    "stress-vagus": {
+      "name": "Stress & the Vagus Nerve",
+      "tile": "How stress lives in your body — cortisol, the vagus nerve, and how to switch off.",
+      "intro": "Chronic stress isn't only in your head — it's a nervous system stuck in \"on.\" These guides explain how the vagus nerve, cortisol and the stress response work, why some people can't switch off, and what reliably brings the body back to calm: breathing, cold, nature, and a healthier relationship with your own signals.",
+      "imageAlt": "Stress & the Vagus Nerve — illustration: a glowing nerve path running from the brain down to the heart and gut, shifting from tense red to calm mint."
+    },
+    "sleep-body-clock": {
+      "name": "Sleep & Body Clock",
+      "tile": "Sleep, light and your circadian rhythm — why timing matters as much as hours.",
+      "intro": "Good sleep depends as much on timing as on hours. These guides cover how much sleep you need, how light sets your body clock, why social jet lag harms more than being a night owl, and practical ways to wind down — from breathing before bed to Yoga Nidra and clinical approaches to insomnia.",
+      "imageAlt": "Sleep & Body Clock — illustration: a bed beneath a circular arc where the sun sets and the moon rises, a faint clock ring around it."
+    },
+    "lifestyle": {
+      "name": "Lifestyle Effects",
+      "tile": "What alcohol, caffeine, screens and late meals do to your numbers.",
+      "intro": "Everyday habits leave a clear trace in your heart rate and HRV. These guides show — with data — what alcohol, caffeine, nicotine, late meals and screen time do to your body overnight, how long the effects last, and what dopamine, brain fog and \"digital overload\" really are.",
+      "imageAlt": "Lifestyle Effects — illustration: a coffee cup, a wine glass and a phone arranged around a central heart-rate line."
+    },
+    "heart-fitness-metabolism": {
+      "name": "Heart, Fitness & Metabolism",
+      "tile": "Blood pressure, aerobic fitness and metabolic health — the long game.",
+      "intro": "Your cardiovascular and metabolic health is built over years. These guides cover blood pressure and slow breathing, VO2 max and Zone 2 training, heart rate recovery, overtraining, nutrition basics, hormones and metabolic flexibility — including what yoga and breathing research shows for blood sugar and metabolic syndrome.",
+      "imageAlt": "Heart, Fitness & Metabolism — illustration: a runner silhouette merging with a heart shape and a smooth pulse wave."
+    },
+    "brain-focus-aging": {
+      "name": "Brain, Focus & Aging",
+      "tile": "Attention, memory and a healthier aging brain.",
+      "intro": "Focus and memory aren't fixed traits — they respond to how you breathe, rest and train your attention. These guides explore the neuroscience of concentration and flow, how breathing affects memory, practices like Trataka, and what research says about keeping the brain and body young.",
+      "imageAlt": "Brain, Focus & Aging — illustration: a brain with a single focused beam of light passing through it."
+    },
+    "doctors-your-data": {
+      "name": "Doctors and Your Data",
+      "tile": "Which specialist can use your heart, HRV and sleep trends — and how to bring your data to an appointment.",
+      "intro": "Your watch records weeks of resting heart rate, HRV, breathing and sleep that no doctor normally sees. These guides show who can use that history for what — your GP, a cardiologist, a sleep specialist, a therapist or psychiatrist, a sports doctor — how to put it on one page, and where watch data stops: it points to a question, it is never a diagnosis.",
+      "imageAlt": "Doctors and Your Data — illustration: five doctor silhouettes in a calm semicircle, each marked by a glowing symbol (heart, moon, brain, runner, medical cross), connected by thin mint lines to a single one-page report in the center."
+    },
+    "world": {
+      "name": "Science From Around the World",
+      "tile": "Research you won't find in most English sources — from Japan, India, Germany, the Netherlands and France.",
+      "intro": "Much of the most interesting research on breathing, sleep and the nervous system was done outside the English-speaking world. This collection brings it together: Japanese studies on forest bathing and Zen, Indian pranayama trials, German chronobiology, Dutch research on the Wim Hof Method, and France's cardiac coherence tradition.",
+      "imageAlt": "Science From Around the World — illustration: a dark globe with glowing points on Japan, India, Germany, the Netherlands and France, connected by thin arcs of light."
+    }
+  }
+}

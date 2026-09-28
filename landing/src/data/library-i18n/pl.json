@@ -1,0 +1,101 @@
+{
+  "ui": {
+    "metaTitle": "Biblioteka ONDA — oddech, HRV i medytacja | ONDA Life",
+    "metaDescription": "Darmowe poradniki oparte na źródłach: HRV wg wieku, oddech 4-7-8 i pudełkowy, fizjologiczne westchnienie, sen i stres. Plus kalkulatory i timery oddechu.",
+    "home": "Strona główna",
+    "library": "Biblioteka",
+    "badge": "[ BIBLIOTEKA ONDA ]",
+    "h1": "Biblioteka ONDA",
+    "subtitle": "Poradniki oparte na nauce o oddychaniu, HRV, medytacji i układzie nerwowym. Wybierz temat, aby zacząć.",
+    "articlesOne": "{n} artykuł",
+    "articlesFew": "{n} artykuły",
+    "articlesMany": "{n} artykułów",
+    "articlesOther": "{n} artykułu",
+    "moreGuides": "Więcej materiałów po polsku",
+    "englishLibrary": "Pełna biblioteka po angielsku →",
+    "reviews": "Recenzje urządzeń →",
+    "glossary": "Słowniczek →",
+    "topicClusters": "Grupy tematyczne →",
+    "aboutH2": "O Bibliotece ONDA",
+    "aboutP1": "Biblioteka ONDA to zbiór obszernych tekstów o układzie nerwowym, zmienności rytmu serca, oddychaniu, medytacji, śnie i regeneracji — pisanych tak, by wyjaśniać mechanizm, a nie tylko podawać wskazówki. Gdy twierdzenie ma mocne podstawy, podajemy źródła; gdy idea jest jedynie ujęciem lub wciąż eksperymentem, mówimy o tym otwarcie.",
+    "aboutP2": "Każdy poradnik należy do jednego tematu, a każdy temat ma własną stronę i polecany punkt startowy. Aby zgłębić stronę pomiarową, zobacz {measurements} oraz {research}.",
+    "measurementsLink": "co mierzy ONDA",
+    "researchLink": "dowody naukowe",
+    "startHere": "Zacznij tutaj",
+    "readGuide": "Przeczytaj poradnik →",
+    "allGuides": "Wszystkie poradniki: {topic} ({n})",
+    "relatedTopics": "Powiązane tematy",
+    "allTopics": "Wszystkie tematy",
+    "hubTitleSuffix": "Biblioteka ONDA",
+    "hubMetaTitle": "{topic} — poradniki i badania | Biblioteka ONDA"
+  },
+  "countries": {
+    "Japan": "Japonia",
+    "India": "Indie",
+    "Germany": "Niemcy",
+    "Netherlands": "Holandia",
+    "France": "Francja"
+  },
+  "hubs": {
+    "meditation": {
+      "name": "Medytacja z postępami",
+      "tile": "Medytacja, którą można zmierzyć — jak praktyka zmienia mózg i ciało oraz jak to zobaczyć.",
+      "intro": "Medytacja działa — a jej postępy da się zmierzyć. Te poradniki pokazują, co badania mówią o wpływie medytacji na mózg i układ nerwowy, omawiają główne tradycje od zen, przez vipassanę, po jhany, podpowiadają, ile praktyki naprawdę potrzebujesz, i uczciwie opisują ryzyka, o których mało która aplikacja wspomina. Wspólna myśl: medytacja to umiejętność, którą można trenować, a postępy warto śledzić zamiast ćwiczyć na ślepo.",
+      "imageAlt": "Medytacja z postępami — ilustracja: sylwetka medytującej osoby, za którą wznosi się miętowa, świetlista linia postępu."
+    },
+    "breathing": {
+      "name": "Techniki oddechowe",
+      "tile": "Od fizjologicznego westchnienia po pranajamę — co daje każda technika i kiedy jej używać.",
+      "intro": "Oddech to najszybsza dźwignia wpływu na układ nerwowy. Znajdziesz tu techniki warte poznania — oddech koherentny, fizjologiczne westchnienie, 4-7-8, oddech pudełkowy oraz tradycyjną pranajamę, jak Nadi Shodhana i Bhramari — wyjaśnione przez fizjologię, która za nimi stoi. Każdy poradnik mówi, jak ćwiczyć, co pokazują badania i która technika pasuje do jakiej chwili: szybkie uspokojenie, wyciszenie przed snem czy dodanie energii.",
+      "imageAlt": "Techniki oddechowe — ilustracja: stylizowane płuca ze światła z falami oddechu płynącymi do środka i na zewnątrz."
+    },
+    "hrv-heart-rate": {
+      "name": "HRV i tętno",
+      "tile": "Co oznaczają Twoje HRV i tętno spoczynkowe — i jak na nie wpływać.",
+      "intro": "Zmienność rytmu serca i tętno spoczynkowe to dwa z najbardziej przydatnych sygnałów, jakie daje ciało — jeśli czyta się je poprawnie. Te poradniki wyjaśniają, co jest normą dla Twojego wieku, dlaczego osobista linia bazowa znaczy więcej niż jakakolwiek średnia, jak mierzyć konsekwentnie na różnych urządzeniach, co naprawdę oznacza niski wynik i które nawyki z czasem podnoszą HRV.",
+      "imageAlt": "HRV i tętno — ilustracja: świecące serce, z którego wypływa fala o zmiennym rytmie."
+    },
+    "stress-vagus": {
+      "name": "Stres i nerw błędny",
+      "tile": "Jak stres zapisuje się w ciele — kortyzol, nerw błędny i sposoby, by się wyłączyć.",
+      "intro": "Przewlekły stres to nie tylko sprawa głowy — to układ nerwowy utknięty w trybie „włączony”. Te poradniki wyjaśniają, jak działają nerw błędny, kortyzol i reakcja stresowa, dlaczego niektórzy nie potrafią się wyłączyć i co niezawodnie przywraca ciału spokój: oddech, zimno, natura i zdrowsza relacja z własnymi sygnałami.",
+      "imageAlt": "Stres i nerw błędny — ilustracja: świecąca ścieżka nerwu biegnąca od mózgu do serca i jelit, przechodząca od napiętej czerwieni do spokojnej mięty."
+    },
+    "sleep-body-clock": {
+      "name": "Sen i zegar biologiczny",
+      "tile": "Sen, światło i rytm dobowy — dlaczego pora snu liczy się tak samo jak jego długość.",
+      "intro": "Dobry sen zależy od pory tak samo jak od liczby godzin. Te poradniki omawiają, ile snu potrzebujesz, jak światło nastawia zegar biologiczny, dlaczego społeczny jet lag szkodzi bardziej niż bycie nocnym markiem, oraz praktyczne sposoby na wyciszenie — od oddechu przed snem po jogę nidrę i kliniczne podejścia do bezsenności.",
+      "imageAlt": "Sen i zegar biologiczny — ilustracja: łóżko pod kolistym łukiem, na którym zachodzi słońce i wschodzi księżyc, otoczone delikatnym pierścieniem zegara."
+    },
+    "lifestyle": {
+      "name": "Wpływ stylu życia",
+      "tile": "Co alkohol, kofeina, ekrany i późne posiłki robią z Twoimi wynikami.",
+      "intro": "Codzienne nawyki zostawiają wyraźny ślad w tętnie i HRV. Te poradniki pokazują — na danych — co alkohol, kofeina, nikotyna, późne posiłki i czas przed ekranem robią z organizmem w nocy, jak długo trwa ich wpływ i czym naprawdę są dopamina, mgła mózgowa i „cyfrowe przeciążenie”.",
+      "imageAlt": "Wpływ stylu życia — ilustracja: filiżanka kawy, kieliszek wina i telefon ułożone wokół centralnej linii tętna."
+    },
+    "heart-fitness-metabolism": {
+      "name": "Serce, kondycja i metabolizm",
+      "tile": "Ciśnienie krwi, wydolność tlenowa i zdrowie metaboliczne — gra długoterminowa.",
+      "intro": "Zdrowie sercowo-naczyniowe i metaboliczne buduje się latami. Te poradniki omawiają ciśnienie krwi i powolny oddech, VO2 max i trening w strefie 2, powrót tętna po wysiłku, przetrenowanie, podstawy żywienia, hormony i elastyczność metaboliczną — w tym to, co badania nad jogą i oddechem mówią o poziomie cukru we krwi i zespole metabolicznym.",
+      "imageAlt": "Serce, kondycja i metabolizm — ilustracja: sylwetka biegacza zlewająca się z kształtem serca i płynną falą tętna."
+    },
+    "brain-focus-aging": {
+      "name": "Mózg, koncentracja i starzenie",
+      "tile": "Uwaga, pamięć i zdrowiej starzejący się mózg.",
+      "intro": "Koncentracja i pamięć nie są cechami stałymi — reagują na to, jak oddychasz, odpoczywasz i trenujesz uwagę. Te poradniki zgłębiają neuronaukę skupienia i stanu flow, wpływ oddechu na pamięć, praktyki takie jak trataka oraz to, co badania mówią o utrzymaniu młodego mózgu i ciała.",
+      "imageAlt": "Mózg, koncentracja i starzenie — ilustracja: mózg, przez który przechodzi pojedyncza skupiona wiązka światła."
+    },
+    "doctors-your-data": {
+      "name": "Lekarze i Twoje dane",
+      "tile": "Który specjalista może wykorzystać trendy tętna, HRV i snu — i jak przynieść dane na wizytę.",
+      "intro": "Zegarek zapisuje tygodnie danych o tętnie spoczynkowym, HRV, oddechu i śnie, których lekarz zwykle nie widzi. Te poradniki pokazują, kto i do czego może tę historię wykorzystać — lekarz rodzinny, kardiolog, specjalista od snu, psychoterapeuta lub psychiatra, lekarz sportowy — jak zmieścić ją na jednej stronie i gdzie kończą się możliwości danych z zegarka: wskazują pytanie, nigdy nie są rozpoznaniem.",
+      "imageAlt": "Lekarze i Twoje dane — ilustracja: pięć sylwetek lekarzy w spokojnym półkolu, każda oznaczona świecącym symbolem (serce, księżyc, mózg, biegacz, krzyż medyczny), połączonych cienkimi miętowymi liniami z jednostronicowym raportem pośrodku."
+    },
+    "world": {
+      "name": "Nauka z całego świata",
+      "tile": "Badania, których nie znajdziesz w większości anglojęzycznych źródeł — z Japonii, Indii, Niemiec, Holandii i Francji.",
+      "intro": "Wiele najciekawszych badań nad oddechem, snem i układem nerwowym powstało poza światem anglojęzycznym. Ten zbiór łączy je w jednym miejscu: japońskie badania nad kąpielami leśnymi i zen, indyjskie próby z pranajamą, niemiecką chronobiologię, holenderskie badania metody Wima Hofa i francuską tradycję koherencji sercowej.",
+      "imageAlt": "Nauka z całego świata — ilustracja: ciemny glob ze świecącymi punktami na Japonii, Indiach, Niemczech, Holandii i Francji, połączonymi cienkimi łukami światła."
+    }
+  }
+}

@@ -30,6 +30,8 @@ import i18n, {
 import { getPrerenderRoutes, LOCALIZED_ROUTE_SET, LOCALIZED_METRIC_ROUTE_SET, LOCALIZED_LEVEL_ROUTE_SET, LOCALIZED_PART_ROUTE_SET, LOCALIZED_ARTICLE_ROUTE_SET, LOCALIZED_REVIEW_ROUTE_SET, LOCALIZED_GLOSSARY_ROUTE_SET, articleLocalizedLangs, reviewLocalizedLangs, glossaryLocalizedLangs, REVIEW_PILOT_LANGS, GLOSSARY_INDEX_LANGS } from './prerender-routes'
 import { getMetaForRoute, injectMetaIntoHtml, truncateForBudget, clampTitleToIdeal, TITLE_MAX, DESC_MAX } from './meta-inject'
 import { getReviewBySlug, getComparisonBySlug } from '../src/data/reviews'
+import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
+import { hubLangs } from '../src/data/article-topic-listing'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const projectRoot = join(__dirname, '..')
@@ -373,6 +375,8 @@ function pageUrlFor(basePath: string, lang: Lang): string {
  * Emitted here so the hreflang cluster is STATIC (prerender skips useEffect).
  */
 const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
+  // ONDA Library topic hubs: cluster = the languages in which each hub exists.
+  ...Object.fromEntries(ARTICLE_TOPIC_HUBS.map((h) => [`/articles/topic/${h.slug}`, hubLangs(h.slug) as Lang[]])),
   '/product': ['en', 'ru', 'es'],
   '/topics': ['en', 'ru', 'es'],
   '/faq': ['en', 'ru', 'es'],
@@ -700,6 +704,7 @@ for (const route of routes) {
       : isArticleLocalized && articleInfo ? articleInfo.lang
       : isReviewLocalized && reviewInfo ? reviewInfo.lang
       : isGlossaryLocalized && glossaryInfo ? glossaryInfo.lang
+      : /^\/[a-z]{2}\/articles\/topic\//.test(route) ? langFromPath(route)
       : 'en'
     const basePath = isLocalized ? stripLangPrefix(route) : route
 

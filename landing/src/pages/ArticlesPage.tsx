@@ -2,10 +2,10 @@ import { useEffect, useState, useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { articles } from '../data/articles'
-import { FEATURED_ARTICLE_SLUGS } from '../data/articles-categories'
-import { TOPICS } from '../data/topics'
 import { ARTICLE_TOPIC_HUBS } from '../data/article-topics'
-import { liveCountForTopic } from '../data/article-topic-listing'
+import { hubAvailable, localizedArticlesForTopic, unhubbedLocalizedArticles } from '../data/article-topic-listing'
+import { LOCALIZED_COVERAGE } from '../data/localized-coverage.generated'
+import { libraryCopy, articlesCount } from '../data/library-i18n'
 import { OptimizedImage } from '../components/OptimizedImage'
 import { API_ENABLED } from '../config/features'
 import { langFromPath, homePathFor, langHref } from '../i18n'
@@ -41,64 +41,16 @@ function setMeta(name: string, content: string, isProperty = false) {
   el.setAttribute('content', content)
 }
 
-// ── Series: "Doctors and Your Data" — hub + one guide per specialist ─────────
-const DOCTORS_SERIES_HUB = 'doctors-and-your-data'
-const DOCTORS_SERIES_GUIDES = [
-  'talk-to-your-doctor-about-wearable-data',
-  'onda-report-for-your-gp',
-  'onda-report-for-your-cardiologist',
-  'onda-report-for-your-sleep-specialist',
-  'onda-report-for-your-therapist-or-psychiatrist',
-  'onda-report-for-your-sports-doctor',
-  'onda-report-for-your-neurologist',
-  'onda-report-for-your-endocrinologist',
-  'onda-report-for-your-gynecologist',
-  'onda-report-for-your-pulmonologist',
-  'onda-report-for-your-occupational-health-doctor',
-  'onda-report-for-your-rehabilitation-team',
-]
-
-function DoctorsSeriesSection({ lang }: { lang: ReturnType<typeof langFromPath> }) {
-  const { t } = useTranslation('articles')
-  const title = (slug: string) => {
-    const a = articles.find((x) => x.slug === slug)
-    return t(`bodies.${slug}.title`, { defaultValue: a?.title ?? slug }) as string
-  }
-  return (
-    <section aria-labelledby="series-doctors" className="glass-card mb-10 rounded-xl p-6 md:p-8">
-      <div className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-green/60">
-        {t('series.label', { defaultValue: 'Series' })}
-      </div>
-      <h2 id="series-doctors" className="mb-2 text-xl font-bold tracking-tight md:text-2xl">
-        <Link to={langHref(`/articles/${DOCTORS_SERIES_HUB}`, lang)} className="transition-colors hover:text-terminal-green">
-          {t('series.doctors.heading', { defaultValue: 'Doctors and Your Data' })}
-        </Link>
-      </h2>
-      <p className="mb-5 max-w-2xl font-mono text-xs leading-relaxed text-white/50">
-        {t('series.doctors.description', {
-          defaultValue: 'Which specialist can use your heart, HRV and sleep trends — and how to bring your data to an appointment.',
-        })}
-      </p>
-      <ul className="mb-5 grid gap-2 sm:grid-cols-2">
-        {DOCTORS_SERIES_GUIDES.map((slug) => (
-          <li key={slug}>
-            <Link
-              to={langHref(`/articles/${slug}`, lang)}
-              className="block rounded-lg border border-white/10 px-4 py-2 font-mono text-xs leading-snug text-white/60 transition-all hover:border-terminal-green/30 hover:text-terminal-green"
-            >
-              {title(slug)}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <Link
-        to={langHref(`/articles/${DOCTORS_SERIES_HUB}`, lang)}
-        className="font-mono text-[11px] tracking-wider text-terminal-green/70 hover:text-terminal-green"
-      >
-        {t('series.doctors.cta', { defaultValue: 'Start with the guide →' })}
-      </Link>
-    </section>
-  )
+// Sections that exist only in some languages — link to EN elsewhere (no /<lang> 404s).
+const SECTION_LANGS: Record<string, readonly string[]> = {
+  '/measurements': ['es', 'ru'],
+  '/research': [],
+  '/topics': ['es', 'ru'],
+  '/reviews': ['es', 'ru', 'uk'],
+  '/glossary': ['es'],
+}
+function sectionHref(path: string, lang: ReturnType<typeof langFromPath>): string {
+  return lang === 'en' || !SECTION_LANGS[path]?.includes(lang) ? path : `/${lang}${path}`
 }
 
 export function ArticlesPage() {
@@ -128,7 +80,7 @@ export function ArticlesPage() {
   }, [])
 
   const allArticles: ArticleCard[] = useMemo(() => [
-    ...articles.map((a) => ({
+    ...articles.filter((a) => lang === 'en' || LOCALIZED_COVERAGE[lang]?.articles.has(a.slug)).map((a) => ({
       slug: a.slug,
       title: t(`bodies.${a.slug}.title`, { defaultValue: a.title }) as string,
       description: t(`bodies.${a.slug}.description`, { defaultValue: a.description }) as string,
@@ -159,13 +111,6 @@ export function ArticlesPage() {
     const matchesCategory = !activeCategory || article.category === activeCategory
     return matchesSearch && matchesCategory
   }), [allArticles, search, activeCategory])
-
-  const featuredArticles = useMemo(
-    () => FEATURED_ARTICLE_SLUGS
-      .map((slug) => allArticles.find((a) => a.slug === slug))
-      .filter((a): a is ArticleCard => !!a),
-    [allArticles]
-  )
 
   useEffect(() => {
     const title = t('meta.title')
@@ -214,61 +159,76 @@ export function ArticlesPage() {
     </div>
   )
 
-  // ── EN: ONDA Library — 10 topic tiles → /articles/topic/<topic> hubs ─────────
-  // Localized /<lang>/articles keep the flat layout below until the locale hubs
-  // ship. Search (and the ?q= SearchAction target) still works: a query swaps
-  // the tiles for a filtered result list.
-  if (lang === 'en') {
-    const searching = search.trim().length > 0
-    return (
-      <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6">
-        <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-          <Link to="/" className="transition-colors hover:text-white/50">{t('breadcrumb.home')}</Link>
-          <span>/</span>
-          <span className="text-terminal-green/60" aria-current="page">{t('breadcrumb.current')}</span>
-        </nav>
-        <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">{t('badge')}</div>
-        <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">{t('h1')}</h1>
-        <p className="mb-10 max-w-2xl text-base leading-relaxed text-white/60">{t('subtitle')}</p>
+  // ── ONDA Library — topic tiles → /<lang>/articles/topic/<topic> hubs ──────
+  // Every language uses the same layout. A localized page shows only hubs with
+  // enough translated articles (hubAvailable); translated articles from thinner
+  // topics are listed below the tiles. A search query swaps the tiles for results.
+  const copy = libraryCopy(lang)
+  const ui = copy.ui
+  const searching = search.trim().length > 0
+  const hubs = ARTICLE_TOPIC_HUBS.filter((h) => hubAvailable(h.slug, lang))
+  const extra = unhubbedLocalizedArticles(lang)
+  const card = (a: (typeof articles)[number]): ArticleCard => ({
+    slug: a.slug,
+    title: t(`bodies.${a.slug}.title`, { defaultValue: a.title }) as string,
+    description: t(`bodies.${a.slug}.description`, { defaultValue: a.description }) as string,
+    category: a.category,
+    path: langHref(`/articles/${a.slug}`, lang),
+    image: a.image,
+  })
+  const [aboutBefore, aboutMid, aboutAfter] = ui.aboutP2.split(/\{measurements\}|\{research\}/)
+  return (
+    <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6">
+      <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
+        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">{ui.home}</Link>
+        <span>/</span>
+        <span className="text-terminal-green/60" aria-current="page">{ui.library}</span>
+      </nav>
+      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">{ui.badge}</div>
+      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">{ui.h1}</h1>
+      <p className="mb-10 max-w-2xl text-base leading-relaxed text-white/60">{ui.subtitle}</p>
 
-        <div className="mb-10">
-          <div className="relative">
-            <span className="absolute top-1/2 left-4 -translate-y-1/2 font-mono text-sm text-terminal-green/40">{'>'}</span>
-            <input
-              type="text"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder={t('searchPlaceholder')}
-              aria-label={t('searchPlaceholder')}
-              className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 pl-8 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-terminal-green/30"
-            />
-          </div>
+      <div className="mb-10">
+        <div className="relative">
+          <span className="absolute top-1/2 left-4 -translate-y-1/2 font-mono text-sm text-terminal-green/40">{'>'}</span>
+          <input
+            type="text"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder={t('searchPlaceholder')}
+            aria-label={t('searchPlaceholder')}
+            className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 pl-8 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-terminal-green/30"
+          />
         </div>
+      </div>
 
-        {searching ? (
-          <section aria-label="Search results">
-            {renderGrid(filtered)}
-            {filtered.length === 0 && (
-              <p className="py-20 text-center font-mono text-sm text-white/30">{t('noResults')}</p>
-            )}
-          </section>
-        ) : (
+      {searching ? (
+        <section aria-label="Search results">
+          {renderGrid(filtered)}
+          {filtered.length === 0 && (
+            <p className="py-20 text-center font-mono text-sm text-white/30">{t('noResults')}</p>
+          )}
+        </section>
+      ) : (
+        <>
           <section aria-label="Topics">
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {ARTICLE_TOPIC_HUBS.map((hub) => {
+              {hubs.map((hub) => {
+                const hc = copy.hubs[hub.slug]
                 const cover = articles.find((a) => a.slug === hub.startHere)
-                const count = liveCountForTopic(hub.slug)
+                const count = localizedArticlesForTopic(hub.slug, lang).length
+                const img = hub.image ?? cover?.image
                 return (
                   <Link
                     key={hub.slug}
-                    to={`/articles/topic/${hub.slug}`}
+                    to={langHref(`/articles/topic/${hub.slug}`, lang)}
                     className="glass-card group flex flex-col overflow-hidden rounded-xl transition-all hover:border-terminal-green/20"
                   >
-                    {(hub.image ?? cover?.image) && (
+                    {img && (
                       <div className="aspect-video w-full overflow-hidden border-b border-white/5">
                         <OptimizedImage
-                          src={(hub.image ?? cover?.image) as string}
-                          alt={hub.imageAlt ?? hub.name}
+                          src={img}
+                          alt={hc?.imageAlt || hc?.name || hub.name}
                           loading="lazy"
                           width={640}
                           height={360}
@@ -278,11 +238,11 @@ export function ArticlesPage() {
                     )}
                     <div className="flex flex-1 flex-col p-5">
                       <h2 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
-                        {hub.name}
+                        {hc?.name ?? hub.name}
                       </h2>
-                      <p className="mb-4 flex-1 font-mono text-xs leading-relaxed text-white/45">{hub.tile}</p>
+                      <p className="mb-4 flex-1 font-mono text-xs leading-relaxed text-white/45">{hc?.tile ?? hub.tile}</p>
                       <span className="font-mono text-[11px] tracking-wider text-terminal-green/60">
-                        {count} {count === 1 ? 'article' : 'articles'} →
+                        {articlesCount(copy, lang, count)} →
                       </span>
                     </div>
                   </Link>
@@ -290,217 +250,45 @@ export function ArticlesPage() {
               })}
             </div>
           </section>
-        )}
 
-        <nav className="mt-12 flex flex-wrap gap-3 border-t border-white/10 pt-6" aria-label="More">
-          <Link to="/reviews" className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
-            Device reviews →
-          </Link>
-          <Link to="/glossary" className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
-            Glossary →
-          </Link>
-          <Link to="/topics" className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/35 transition-all hover:border-white/20 hover:text-white/60">
-            Topic clusters →
-          </Link>
-        </nav>
-
-        <section className="mt-14 border-t border-white/10 pt-10">
-          <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">About the ONDA Library</h2>
-          <div className="space-y-4 font-mono text-sm leading-relaxed text-white/60">
-            <p>
-              The ONDA Library is a long-form collection on the nervous system, heart-rate variability, breathing,
-              meditation, sleep and recovery — written to explain the mechanism, not just list tips. Where a claim is
-              well-supported we cite it; where an idea is a framing or still experimental, we say so.
-            </p>
-            <p>
-              Every guide sits in one of ten topics, each with its own hub page and a recommended place to start. To
-              go deeper on the measured side, see{' '}
-              <Link to="/measurements" className="text-terminal-green hover:underline">what ONDA measures</Link> and{' '}
-              <Link to="/research" className="text-terminal-green hover:underline">the evidence</Link>.
-            </p>
-          </div>
-        </section>
-      </div>
-    )
-  }
-
-  return (
-    <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6">
-      <nav className="mb-8 flex items-center gap-2 font-mono text-xs text-white/30" aria-label="Breadcrumb">
-        <Link to={homePathFor(lang)} className="transition-colors hover:text-white/50">
-          {t('breadcrumb.home')}
-        </Link>
-        <span>/</span>
-        <span className="text-terminal-green/60" aria-current="page">
-          {t('breadcrumb.current')}
-        </span>
-      </nav>
-      <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-        {t('badge')}
-      </div>
-      <h1 className="mb-4 text-2xl font-bold tracking-tight md:text-5xl">
-        {t('h1')}
-      </h1>
-      <p className="mb-12 max-w-2xl font-mono text-sm text-white/40">
-        {t('subtitle')}
-      </p>
-
-      {/* Search */}
-      <div className="mb-8">
-        <div className="relative">
-          <span className="absolute top-1/2 left-4 -translate-y-1/2 font-mono text-sm text-terminal-green/40">
-            {'>'}
-          </span>
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder={t('searchPlaceholder')}
-            className="w-full rounded-lg border border-white/10 bg-surface px-4 py-3 pl-8 font-mono text-sm text-white placeholder-white/20 outline-none transition-colors focus:border-terminal-green/30"
-          />
-        </div>
-      </div>
-
-      {/* Browse by topic — chips link to pillar hubs (pillar-cluster strategy).
-          Each chip is a hard link, not an inline filter, so internal link
-          equity flows to the hub pages and Google sees a clean topical
-          hierarchy from /articles into /topics/<slug>. */}
-      <div className="mb-10">
-        <div className="mb-3 flex items-baseline justify-between">
-          <h2 className="font-mono text-[10px] uppercase tracking-widest text-terminal-cyan/60">
-            {t('browse.heading', { defaultValue: '[ BROWSE_BY_TOPIC ]' })}
-          </h2>
-          <span className="font-mono text-[10px] tracking-wider text-white/30">
-            {t('browse.total', { count: allArticles.length, defaultValue: '{{count}} articles total' })}
-          </span>
-        </div>
-        <div className="flex flex-wrap gap-2 overflow-x-auto pb-2">
-          {TOPICS.map((topic) => {
-            const count = topic.articleSlugs.length
-            if (count === 0) return null
-            const live = !!topic.pillar
-            const shortName = topic.name.split(' — ')[0]
-            return (
-              <Link
-                key={topic.slug}
-                to={`/topics/${topic.slug}`}
-                className={`rounded-lg border px-4 py-1.5 font-mono text-xs transition-all ${
-                  live
-                    ? 'border-white/10 text-white/60 hover:border-terminal-green/30 hover:text-terminal-green'
-                    : 'border-white/10 text-white/40 hover:border-white/20 hover:text-white/60'
-                }`}
-                title={live ? topic.tagline : `${topic.tagline} — pillar coming soon`}
-              >
-                {t(`topics.${topic.slug}`, { defaultValue: shortName })} ({count})
-              </Link>
-            )
-          })}
-        </div>
-      </div>
-
-      {!search && <DoctorsSeriesSection lang={lang} />}
-
-      {/* Articles grid */}
-      <div className="grid gap-6 md:grid-cols-2">
-        {filtered.map((article) => (
-          <Link
-            key={article.path}
-            to={article.path}
-            className="glass-card group rounded-xl overflow-hidden transition-all hover:border-terminal-green/10"
-            data-testid={'isMd' in article && article.isMd ? `card-md-article-${article.slug}` : undefined}
-          >
-            {article.image && (
-              <div className="aspect-video w-full overflow-hidden border-b border-white/5">
-                <OptimizedImage
-                  src={article.image}
-                  alt={article.title}
-                  loading="lazy"
-                  width={640}
-                  height={360}
-                  className="h-full w-full object-cover transition-transform group-hover:scale-105"
-                />
-              </div>
-            )}
-            <div className="p-6">
-              <div className="mb-2 flex items-center justify-between">
-                <span className="rounded-md border border-white/10 bg-white/5 px-3 py-0.5 font-mono text-[10px] text-white/30">
-                  {t(`categories.${article.category}`, { defaultValue: article.category }) as string}
-                </span>
-                <span className="font-mono text-xs text-terminal-green/0 transition-all group-hover:text-terminal-green/60">
-                  →
-                </span>
-              </div>
-              <h3 className="mb-2 text-lg font-semibold transition-colors group-hover:text-terminal-green">
-                {article.title}
-              </h3>
-              <p className="font-mono text-xs leading-relaxed text-white/40">
-                {article.description}
-              </p>
-            </div>
-          </Link>
-        ))}
-      </div>
-
-      {filtered.length === 0 && (
-        <div className="py-20 text-center">
-          <p className="font-mono text-sm text-white/30">
-            {t('noResults')}
-          </p>
-        </div>
+          {extra.length > 0 && (
+            <section className="mt-14" aria-labelledby="more-guides">
+              <h2 id="more-guides" className="mb-5 font-mono text-xs uppercase tracking-widest text-terminal-cyan/70">
+                {ui.moreGuides} ({extra.length})
+              </h2>
+              {renderGrid(extra.map(card))}
+            </section>
+          )}
+        </>
       )}
 
-      {/* Featured Articles */}
-      <div className="mt-16">
-        <h2 className="mb-4 font-mono text-xs tracking-widest text-terminal-green/60">
-          {t('featuredHeader')}
-        </h2>
-        <div className="flex flex-wrap gap-3">
-          {featuredArticles.map((article) => (
-            <Link
-              key={article.slug}
-              to={article.path}
-              className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/40 transition-all hover:border-white/20 hover:text-white/60"
-            >
-              {article.title}
-            </Link>
-          ))}
-        </div>
-      </div>
+      <nav className="mt-12 flex flex-wrap gap-3 border-t border-white/10 pt-6" aria-label="More">
+        {lang !== 'en' && (
+          <Link to="/articles" hrefLang="en" className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
+            {ui.englishLibrary}
+          </Link>
+        )}
+        <Link to={sectionHref('/reviews', lang)} className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
+          {ui.reviews}
+        </Link>
+        <Link to={sectionHref('/glossary', lang)} className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
+          {ui.glossary}
+        </Link>
+        <Link to={sectionHref('/topics', lang)} className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/35 transition-all hover:border-white/20 hover:text-white/60">
+          {ui.topicClusters}
+        </Link>
+      </nav>
 
-      {/* ── About the knowledge base — closing SEO/answer-engine body ────── */}
-      <section className="mt-16 border-t border-white/10 pt-10">
-        <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">
-          {t('about.heading', { defaultValue: 'About this knowledge base' })}
-        </h2>
+      <section className="mt-14 border-t border-white/10 pt-10">
+        <h2 className="mb-4 text-xl font-bold tracking-tight md:text-2xl">{ui.aboutH2}</h2>
         <div className="space-y-4 font-mono text-sm leading-relaxed text-white/60">
+          <p>{ui.aboutP1}</p>
           <p>
-            {t('about.p1', {
-              defaultValue:
-                'ONDA’s knowledge base is a long-form library on the nervous system, heart-rate variability, breathwork, sleep, recovery and the science of self-regulation — written to explain the mechanism, not just list tips. Where a claim is well-supported we cite it; where an idea is a framing or still experimental, we say so and keep it separate from the measured science.',
-            })}
-          </p>
-          <p>
-            {t('about.p2', {
-              defaultValue:
-                'Articles are grouped into topic hubs by cluster — HRV, circadian rhythm, dopamine, metabolism, breathwork, neuroplasticity, cognition and more — so each piece sits inside the whole system it belongs to rather than standing alone. Use the topic chips above to enter a cluster, or search to jump straight to a term.',
-            })}
-          </p>
-          <p>
-            {t('about.p3', {
-              defaultValue: 'To go deeper on the measured side, see',
-            })}{' '}
-            <Link to={langHref('/measurements', lang)} className="text-terminal-green hover:underline">
-              {t('about.measuresLink', { defaultValue: 'what ONDA measures' })}
-            </Link>
-            ,{' '}
-            <Link to={langHref('/research', lang)} className="text-terminal-green hover:underline">
-              {t('about.researchLink', { defaultValue: 'the evidence' })}
-            </Link>{' '}
-            {t('about.and', { defaultValue: 'and the' })}{' '}
-            <Link to={langHref('/glossary', lang)} className="text-terminal-green hover:underline">
-              {t('about.glossaryLink', { defaultValue: 'glossary' })}
-            </Link>
-            .
+            {aboutBefore}
+            <Link to={sectionHref('/measurements', lang)} className="text-terminal-green hover:underline">{ui.measurementsLink}</Link>
+            {aboutMid}
+            <Link to={sectionHref('/research', lang)} className="text-terminal-green hover:underline">{ui.researchLink}</Link>
+            {aboutAfter}
           </p>
         </div>
       </section>

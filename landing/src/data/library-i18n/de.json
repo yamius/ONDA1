@@ -1,0 +1,99 @@
+{
+  "ui": {
+    "metaTitle": "ONDA Bibliothek — Atmung, HRV & Meditation | ONDA Life",
+    "metaDescription": "Kostenlose, belegte Ratgeber: normale HRV nach Alter, 4-7-8- und Box-Atmung, der physiologische Seufzer, Schlaf und Stress – plus Rechner und Atem-Timer.",
+    "home": "Startseite",
+    "library": "Bibliothek",
+    "badge": "[ ONDA BIBLIOTHEK ]",
+    "h1": "ONDA Bibliothek",
+    "subtitle": "Wissenschaftlich fundierte Ratgeber zu Atmung, HRV, Meditation und Nervensystem. Wähle ein Thema, um zu beginnen.",
+    "articlesOne": "{n} Artikel",
+    "articlesOther": "{n} Artikel",
+    "moreGuides": "Weitere Ratgeber auf Deutsch",
+    "englishLibrary": "Die vollständige Bibliothek auf Englisch →",
+    "reviews": "Geräte-Tests →",
+    "glossary": "Glossar →",
+    "topicClusters": "Themen-Cluster →",
+    "aboutH2": "Über die ONDA Bibliothek",
+    "aboutP1": "Die ONDA Bibliothek ist eine ausführliche Sammlung zu Nervensystem, Herzratenvariabilität, Atmung, Meditation, Schlaf und Erholung – geschrieben, um die Mechanismen zu erklären, nicht nur um Tipps aufzulisten. Wo eine Aussage gut belegt ist, nennen wir die Quelle; wo eine Idee nur ein Denkmodell oder noch experimentell ist, sagen wir das.",
+    "aboutP2": "Jeder Ratgeber gehört zu einem Thema, jedes mit eigener Übersichtsseite und einem empfohlenen Einstieg. Wer tiefer in die Messseite einsteigen möchte, findet mehr unter {measurements} und {research}.",
+    "measurementsLink": "was ONDA misst",
+    "researchLink": "die Studienlage",
+    "startHere": "Hier beginnen",
+    "readGuide": "Ratgeber lesen →",
+    "allGuides": "Alle Ratgeber zu {topic} ({n})",
+    "relatedTopics": "Verwandte Themen",
+    "allTopics": "Alle Themen",
+    "hubTitleSuffix": "ONDA Bibliothek",
+    "hubMetaTitle": "{topic} — Ratgeber & Forschung | ONDA Library"
+  },
+  "countries": {
+    "Japan": "Japan",
+    "India": "Indien",
+    "Germany": "Deutschland",
+    "Netherlands": "Niederlande",
+    "France": "Frankreich"
+  },
+  "hubs": {
+    "meditation": {
+      "name": "Meditation mit Fortschritt",
+      "tile": "Meditation, die sich messen lässt – wie Praxis Gehirn und Körper verändert und wie du es sehen kannst.",
+      "intro": "Meditation wirkt – und ihr Fortschritt ist messbar. Diese Ratgeber zeigen, was die Forschung darüber weiß, wie Meditation Gehirn und Nervensystem verändert, stellen die großen Traditionen von Zen über Vipassana bis zu den Jhanas vor, klären, wie viel Übung du wirklich brauchst, und benennen ehrlich die Risiken, die kaum eine App erwähnt. Der rote Faden: Meditation ist eine trainierbare Fähigkeit, und du kannst deinen Fortschritt verfolgen, statt blind zu üben.",
+      "imageAlt": "Meditation mit Fortschritt – Illustration: Silhouette einer sitzenden meditierenden Person, hinter der eine aufsteigende mintfarbene Fortschrittslinie aus Licht emporsteigt."
+    },
+    "breathing": {
+      "name": "Atemtechniken",
+      "tile": "Vom physiologischen Seufzer bis Pranayama – was jede Technik bewirkt und wann sie passt.",
+      "intro": "Die Atmung ist dein schnellster Hebel für das Nervensystem. Hier findest du die Techniken, die sich zu kennen lohnen – kohärente Atmung, den physiologischen Seufzer, 4-7-8, Box-Atmung und traditionelles Pranayama wie Nadi Shodhana und Bhramari –, erklärt anhand der Physiologie dahinter. Jeder Ratgeber zeigt, wie es geht, was die Forschung sagt und welche Technik zu welchem Moment passt: schnell beruhigen, herunterfahren oder Energie tanken.",
+      "imageAlt": "Atemtechniken – Illustration: stilisierte Lungen aus Licht mit fließenden Atemwellen, die ein- und ausströmen."
+    },
+    "hrv-heart-rate": {
+      "name": "HRV & Herzfrequenz",
+      "tile": "Was deine HRV und dein Ruhepuls bedeuten – und wie du sie beeinflusst.",
+      "intro": "Herzratenvariabilität und Ruhepuls gehören zu den nützlichsten Signalen deines Körpers – wenn man sie richtig liest. Diese Ratgeber erklären, was in deinem Alter normal ist, warum deine persönliche Baseline mehr zählt als jeder Durchschnitt, wie du geräteübergreifend konsistent misst, was ein niedriger Wert wirklich bedeutet und welche Gewohnheiten die HRV langfristig steigern.",
+      "imageAlt": "HRV & Herzfrequenz – Illustration: ein leuchtendes Herz, aus dem eine Wellenform mit variablem Rhythmus fließt."
+    },
+    "stress-vagus": {
+      "name": "Stress & Vagusnerv",
+      "tile": "Wie Stress im Körper wirkt – Cortisol, der Vagusnerv und wie du abschaltest.",
+      "intro": "Chronischer Stress ist nicht nur Kopfsache – er ist ein Nervensystem, das auf „an“ feststeckt. Diese Ratgeber erklären, wie Vagusnerv, Cortisol und Stressreaktion funktionieren, warum manche Menschen nicht abschalten können und was den Körper zuverlässig zur Ruhe bringt: Atmung, Kälte, Natur und ein gesünderer Umgang mit den eigenen Signalen.",
+      "imageAlt": "Stress & Vagusnerv – Illustration: eine leuchtende Nervenbahn vom Gehirn hinab zu Herz und Bauch, die von angespanntem Rot zu ruhigem Mint wechselt."
+    },
+    "sleep-body-clock": {
+      "name": "Schlaf & innere Uhr",
+      "tile": "Schlaf, Licht und dein zirkadianer Rhythmus – warum der Zeitpunkt so wichtig ist wie die Stunden.",
+      "intro": "Guter Schlaf hängt ebenso vom Zeitpunkt ab wie von der Dauer. Diese Ratgeber zeigen, wie viel Schlaf du brauchst, wie Licht deine innere Uhr stellt, warum sozialer Jetlag mehr schadet als eine Nachteule zu sein, und praktische Wege zum Herunterfahren – von Atemübungen vor dem Schlafen bis zu Yoga Nidra und klinischen Ansätzen bei Schlaflosigkeit.",
+      "imageAlt": "Schlaf & innere Uhr – Illustration: ein Bett unter einem Kreisbogen, an dem die Sonne unter- und der Mond aufgeht, umgeben von einem zarten Uhrenring."
+    },
+    "lifestyle": {
+      "name": "Einfluss des Lebensstils",
+      "tile": "Was Alkohol, Koffein, Bildschirme und spätes Essen mit deinen Werten machen.",
+      "intro": "Alltägliche Gewohnheiten hinterlassen eine deutliche Spur in Herzfrequenz und HRV. Diese Ratgeber zeigen – mit Daten –, was Alkohol, Koffein, Nikotin, spätes Essen und Bildschirmzeit über Nacht mit deinem Körper machen, wie lange die Effekte anhalten und was Dopamin, Brain Fog und „digitale Überlastung“ wirklich sind.",
+      "imageAlt": "Einfluss des Lebensstils – Illustration: eine Kaffeetasse, ein Weinglas und ein Smartphone rund um eine zentrale Herzfrequenzlinie."
+    },
+    "heart-fitness-metabolism": {
+      "name": "Herz, Fitness & Stoffwechsel",
+      "tile": "Blutdruck, Ausdauer und Stoffwechselgesundheit – das lange Spiel.",
+      "intro": "Deine Herz-Kreislauf- und Stoffwechselgesundheit entsteht über Jahre. Diese Ratgeber behandeln Blutdruck und langsames Atmen, VO2max und Zone-2-Training, Herzfrequenzerholung, Übertraining, Ernährungsgrundlagen, Hormone und metabolische Flexibilität – einschließlich dessen, was die Forschung zu Yoga und Atmung bei Blutzucker und metabolischem Syndrom zeigt.",
+      "imageAlt": "Herz, Fitness & Stoffwechsel – Illustration: die Silhouette eines Läufers, die mit einer Herzform und einer sanften Pulswelle verschmilzt."
+    },
+    "brain-focus-aging": {
+      "name": "Gehirn, Fokus & Altern",
+      "tile": "Aufmerksamkeit, Gedächtnis und ein gesünder alterndes Gehirn.",
+      "intro": "Fokus und Gedächtnis sind keine festen Eigenschaften – sie reagieren darauf, wie du atmest, dich erholst und deine Aufmerksamkeit trainierst. Diese Ratgeber erkunden die Neurowissenschaft von Konzentration und Flow, wie Atmung das Gedächtnis beeinflusst, Praktiken wie Trataka und was die Forschung darüber sagt, Gehirn und Körper jung zu halten.",
+      "imageAlt": "Gehirn, Fokus & Altern – Illustration: ein Gehirn, durch das ein einzelner gebündelter Lichtstrahl verläuft."
+    },
+    "doctors-your-data": {
+      "name": "Ärzte und deine Daten",
+      "tile": "Welche Fachärzte deine Herz-, HRV- und Schlaftrends nutzen können – und wie du deine Daten zum Termin mitbringst.",
+      "intro": "Deine Uhr zeichnet über Wochen Ruhepuls, HRV, Atmung und Schlaf auf – Daten, die normalerweise kein Arzt sieht. Diese Ratgeber zeigen, wer diesen Verlauf wofür nutzen kann – Hausärztin, Kardiologe, Schlafmedizinerin, Therapeut oder Psychiaterin, Sportmediziner –, wie du alles auf eine Seite bringst und wo die Grenzen von Uhrdaten liegen: Sie werfen eine Frage auf, sie sind niemals ein Befund.",
+      "imageAlt": "Ärzte und deine Daten – Illustration: fünf Arzt-Silhouetten in einem ruhigen Halbkreis, jede mit einem leuchtenden Symbol (Herz, Mond, Gehirn, Läufer, medizinisches Kreuz), über feine mintfarbene Linien mit einem einseitigen Bericht in der Mitte verbunden."
+    },
+    "world": {
+      "name": "Wissenschaft aus aller Welt",
+      "tile": "Forschung, die man in den meisten englischen Quellen nicht findet – aus Japan, Indien, Deutschland, den Niederlanden und Frankreich.",
+      "intro": "Ein Großteil der spannendsten Forschung zu Atmung, Schlaf und Nervensystem entstand außerhalb der englischsprachigen Welt. Diese Sammlung bringt sie zusammen: japanische Studien zum Waldbaden und zu Zen, indische Pranayama-Studien, deutsche Chronobiologie, niederländische Forschung zur Wim-Hof-Methode und Frankreichs Tradition der kardialen Kohärenz.",
+      "imageAlt": "Wissenschaft aus aller Welt – Illustration: ein dunkler Globus mit leuchtenden Punkten auf Japan, Indien, Deutschland, den Niederlanden und Frankreich, verbunden durch feine Lichtbögen."
+    }
+  }
+}

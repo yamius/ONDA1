@@ -1,0 +1,99 @@
+{
+  "ui": {
+    "metaTitle": "Biblioteca ONDA — Respiração, VFC e Meditação | ONDA Life",
+    "metaDescription": "Guias gratuitos com fontes: VFC normal por idade, respiração 4-7-8 e quadrada, suspiro fisiológico, sono e estresse. Com calculadoras e timers grátis.",
+    "home": "Início",
+    "library": "Biblioteca",
+    "badge": "[ BIBLIOTECA ONDA ]",
+    "h1": "Biblioteca ONDA",
+    "subtitle": "Guias baseados em ciência sobre respiração, VFC, meditação e sistema nervoso. Escolha um tema para começar.",
+    "articlesOne": "{n} artigo",
+    "articlesOther": "{n} artigos",
+    "moreGuides": "Mais guias em português",
+    "englishLibrary": "A biblioteca completa em inglês →",
+    "reviews": "Análises de dispositivos →",
+    "glossary": "Glossário →",
+    "topicClusters": "Grupos de temas →",
+    "aboutH2": "Sobre a Biblioteca ONDA",
+    "aboutP1": "A Biblioteca ONDA é uma coleção aprofundada sobre sistema nervoso, variabilidade da frequência cardíaca, respiração, meditação, sono e recuperação — escrita para explicar o mecanismo, não apenas listar dicas. Quando uma afirmação tem bom respaldo, citamos a fonte; quando uma ideia é uma interpretação ou ainda experimental, deixamos isso claro.",
+    "aboutP2": "Cada guia pertence a um tema, e cada tema tem sua própria página e um ponto de partida recomendado. Para se aprofundar no lado das medições, veja {measurements} e {research}.",
+    "measurementsLink": "o que o ONDA mede",
+    "researchLink": "as evidências",
+    "startHere": "Comece aqui",
+    "readGuide": "Ler o guia →",
+    "allGuides": "Todos os guias de {topic} ({n})",
+    "relatedTopics": "Temas relacionados",
+    "allTopics": "Todos os temas",
+    "hubTitleSuffix": "Biblioteca ONDA",
+    "hubMetaTitle": "{topic} — Guias e pesquisas | Biblioteca ONDA"
+  },
+  "countries": {
+    "Japan": "Japão",
+    "India": "Índia",
+    "Germany": "Alemanha",
+    "Netherlands": "Holanda",
+    "France": "França"
+  },
+  "hubs": {
+    "meditation": {
+      "name": "Meditação com progresso",
+      "tile": "Meditação que você pode medir — como a prática muda seu cérebro e seu corpo, e como enxergar isso.",
+      "intro": "A meditação funciona — e seu progresso pode ser medido. Estes guias mostram o que as pesquisas revelam sobre como a meditação muda o cérebro e o sistema nervoso, as grandes tradições do Zen ao Vipassana e às jhanas, quanta prática você realmente precisa e os riscos reais que poucos apps mencionam. O fio condutor: meditação é uma habilidade treinável, e você pode acompanhar seu progresso em vez de praticar às cegas.",
+      "imageAlt": "Meditação com progresso — ilustração: silhueta de uma pessoa meditando sentada, com uma linha de luz verde-menta ascendente subindo atrás dela."
+    },
+    "breathing": {
+      "name": "Técnicas de respiração",
+      "tile": "Do suspiro fisiológico ao pranayama — o que cada técnica faz e quando usar.",
+      "intro": "A respiração é a alavanca mais rápida que você tem sobre o seu sistema nervoso. Aqui estão as técnicas que valem a pena conhecer — respiração coerente, suspiro fisiológico, 4-7-8, respiração quadrada e pranayamas tradicionais como Nadi Shodhana e Bhramari — explicadas pela fisiologia por trás delas. Cada guia mostra como fazer, o que as pesquisas indicam e qual técnica combina com cada momento: acalmar rápido, desacelerar ou ganhar energia.",
+      "imageAlt": "Técnicas de respiração — ilustração: pulmões estilizados feitos de luz, com ondas de ar entrando e saindo."
+    },
+    "hrv-heart-rate": {
+      "name": "VFC e frequência cardíaca",
+      "tile": "O que sua VFC e sua frequência cardíaca de repouso significam — e como melhorá-las.",
+      "intro": "A variabilidade da frequência cardíaca (VFC) e a frequência cardíaca de repouso estão entre os sinais mais úteis que seu corpo oferece — se você souber lê-los. Estes guias explicam o que é normal para sua idade, por que sua linha de base pessoal importa mais do que qualquer média, como medir de forma consistente entre dispositivos, o que uma leitura baixa realmente significa e quais hábitos elevam a VFC ao longo do tempo.",
+      "imageAlt": "VFC e frequência cardíaca — ilustração: um coração luminoso do qual sai uma onda de ritmo variável."
+    },
+    "stress-vagus": {
+      "name": "Estresse e nervo vago",
+      "tile": "Como o estresse se instala no corpo — cortisol, nervo vago e como desligar.",
+      "intro": "O estresse crônico não está só na cabeça — é um sistema nervoso travado no modo \"ligado\". Estes guias explicam como funcionam o nervo vago, o cortisol e a resposta ao estresse, por que algumas pessoas não conseguem desligar e o que de fato traz o corpo de volta à calma: respiração, frio, natureza e uma relação mais saudável com os próprios sinais.",
+      "imageAlt": "Estresse e nervo vago — ilustração: um caminho nervoso luminoso que desce do cérebro até o coração e o intestino, passando de um vermelho tenso a um verde-menta calmo."
+    },
+    "sleep-body-clock": {
+      "name": "Sono e relógio biológico",
+      "tile": "Sono, luz e ritmo circadiano — por que o horário importa tanto quanto as horas.",
+      "intro": "Dormir bem depende tanto do horário quanto da quantidade de horas. Estes guias mostram quanto sono você precisa, como a luz ajusta seu relógio biológico, por que o jet lag social faz mais mal do que ser notívago e formas práticas de desacelerar — da respiração antes de dormir ao Yoga Nidra e às abordagens clínicas para a insônia.",
+      "imageAlt": "Sono e relógio biológico — ilustração: uma cama sob um arco circular onde o sol se põe e a lua nasce, com um leve anel de relógio ao redor."
+    },
+    "lifestyle": {
+      "name": "Efeitos do estilo de vida",
+      "tile": "O que álcool, cafeína, telas e refeições tardias fazem com seus números.",
+      "intro": "Os hábitos do dia a dia deixam marcas claras na sua frequência cardíaca e na VFC. Estes guias mostram — com dados — o que álcool, cafeína, nicotina, refeições tardias e tempo de tela fazem com seu corpo durante a noite, quanto tempo os efeitos duram e o que realmente são dopamina, névoa mental e \"sobrecarga digital\".",
+      "imageAlt": "Efeitos do estilo de vida — ilustração: uma xícara de café, uma taça de vinho e um celular dispostos em torno de uma linha central de frequência cardíaca."
+    },
+    "heart-fitness-metabolism": {
+      "name": "Coração, condicionamento e metabolismo",
+      "tile": "Pressão arterial, condicionamento aeróbico e saúde metabólica — o jogo de longo prazo.",
+      "intro": "Sua saúde cardiovascular e metabólica se constrói ao longo dos anos. Estes guias abordam pressão arterial e respiração lenta, VO2 máx. e treino na Zona 2, recuperação da frequência cardíaca, overtraining, noções básicas de nutrição, hormônios e flexibilidade metabólica — incluindo o que as pesquisas sobre yoga e respiração mostram para glicemia e síndrome metabólica.",
+      "imageAlt": "Coração, condicionamento e metabolismo — ilustração: a silhueta de um corredor se fundindo com a forma de um coração e uma onda de pulso suave."
+    },
+    "brain-focus-aging": {
+      "name": "Cérebro, foco e envelhecimento",
+      "tile": "Atenção, memória e um cérebro que envelhece de forma mais saudável.",
+      "intro": "Foco e memória não são traços fixos — eles respondem à forma como você respira, descansa e treina sua atenção. Estes guias exploram a neurociência da concentração e do estado de flow, como a respiração afeta a memória, práticas como o Trataka e o que as pesquisas dizem sobre manter o cérebro e o corpo jovens.",
+      "imageAlt": "Cérebro, foco e envelhecimento — ilustração: um cérebro atravessado por um único feixe de luz concentrado."
+    },
+    "doctors-your-data": {
+      "name": "Médicos e seus dados",
+      "tile": "Qual especialista pode usar suas tendências de coração, VFC e sono — e como levar seus dados à consulta.",
+      "intro": "Seu relógio registra semanas de frequência cardíaca de repouso, VFC, respiração e sono que nenhum médico normalmente vê. Estes guias mostram quem pode usar esse histórico e para quê — clínico geral, cardiologista, especialista em sono, terapeuta ou psiquiatra, médico do esporte —, como reunir tudo em uma página e onde os dados do relógio param: eles apontam para uma pergunta, nunca são um diagnóstico.",
+      "imageAlt": "Médicos e seus dados — ilustração: cinco silhuetas de médicos em um semicírculo tranquilo, cada uma marcada por um símbolo luminoso (coração, lua, cérebro, corredor, cruz médica), ligadas por finas linhas verde-menta a um único relatório de uma página no centro."
+    },
+    "world": {
+      "name": "Ciência ao redor do mundo",
+      "tile": "Pesquisas que você não encontra na maioria das fontes em inglês — do Japão, Índia, Alemanha, Holanda e França.",
+      "intro": "Boa parte das pesquisas mais interessantes sobre respiração, sono e sistema nervoso foi feita fora do mundo anglófono. Esta coleção reúne tudo: estudos japoneses sobre banho de floresta e Zen, ensaios indianos com pranayama, a cronobiologia alemã, pesquisas holandesas sobre o Método Wim Hof e a tradição francesa da coerência cardíaca.",
+      "imageAlt": "Ciência ao redor do mundo — ilustração: um globo escuro com pontos luminosos no Japão, Índia, Alemanha, Holanda e França, ligados por finos arcos de luz."
+    }
+  }
+}

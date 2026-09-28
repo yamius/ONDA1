@@ -6,7 +6,10 @@
  */
 import { articles, type Article } from './articles'
 import { ARTICLE_DATES } from './article-dates.generated'
+import { LOCALIZED_COVERAGE } from './localized-coverage.generated'
 import {
+  ARTICLE_PRIMARY_TOPIC,
+  ARTICLE_TOPIC_HUBS,
   ARTICLE_WORLD,
   WORLD_COUNTRIES,
   getArticleTopicHub,
@@ -82,4 +85,66 @@ export function hubLastModified(topic: ArticleTopicSlug): string | null {
   const newest = liveArticlesForTopic(topic)[0]
   const d = newest ? articleModified(newest.slug) : ''
   return d ? d.slice(0, 10) : null
+}
+
+// ── Localized hubs (/<lang>/articles/topic/<topic>) ─────────────────────────
+// A localized hub lists only articles that have a prerendered page in that
+// language, and exists only when it has at least MIN_LOCALIZED_HUB of them
+// (thinner topics are listed flat on /<lang>/articles instead).
+export const MIN_LOCALIZED_HUB = 3
+const HUB_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'] as const
+
+function covered(lang: string, slug: string): boolean {
+  return lang === 'en' || !!LOCALIZED_COVERAGE[lang]?.articles.has(slug)
+}
+
+export function localizedArticlesForTopic(topic: ArticleTopicSlug, lang: string): Article[] {
+  return liveArticlesForTopic(topic).filter((a) => covered(lang, a.slug))
+}
+
+export function hubAvailable(topic: ArticleTopicSlug, lang: string): boolean {
+  return lang === 'en' || localizedArticlesForTopic(topic, lang).length >= MIN_LOCALIZED_HUB
+}
+
+/** Languages in which a hub page exists (hreflang cluster + prerender). */
+export function hubLangs(topic: ArticleTopicSlug): string[] {
+  return HUB_LANGS.filter((l) => hubAvailable(topic, l))
+}
+
+/** Start here = the EN pick when translated, else the newest translated article. */
+export function localizedHubListing(topic: ArticleTopicSlug, lang: string): HubListing {
+  if (lang === 'en') return hubListing(topic)
+  const hub = getArticleTopicHub(topic)
+  const all = localizedArticlesForTopic(topic, lang)
+  const startHere = all.find((a) => a.slug === hub?.startHere) ?? all[0]
+  return { startHere, rest: all.filter((a) => a.slug !== startHere?.slug) }
+}
+
+export function localizedWorldGroups(lang: string): WorldGroup[] {
+  const { rest } = localizedHubListing('world', lang)
+  return WORLD_COUNTRIES.map((country) => ({
+    country,
+    articles: rest.filter((a) => ARTICLE_WORLD[a.slug] === country),
+  })).filter((g) => g.articles.length > 0)
+}
+
+export function localizedHubItemSlugs(topic: ArticleTopicSlug, lang: string): string[] {
+  const { startHere, rest } = localizedHubListing(topic, lang)
+  const ordered = topic === 'world' ? localizedWorldGroups(lang).flatMap((g) => g.articles) : rest
+  return [...(startHere ? [startHere.slug] : []), ...ordered.map((a) => a.slug)]
+}
+
+export function localizedHubLastModified(topic: ArticleTopicSlug, lang: string): string | null {
+  const newest = localizedArticlesForTopic(topic, lang)[0]
+  const d = newest ? articleModified(newest.slug) : ''
+  return d ? d.slice(0, 10) : null
+}
+
+/** Translated articles whose primary topic has no hub in this language, newest first. */
+export function unhubbedLocalizedArticles(lang: string): Article[] {
+  if (lang === 'en') return []
+  const open = new Set(ARTICLE_TOPIC_HUBS.filter((h) => hubAvailable(h.slug, lang)).map((h) => h.slug))
+  return [...bySlug.values()]
+    .filter((a) => covered(lang, a.slug) && ARTICLE_PRIMARY_TOPIC[a.slug] && !open.has(ARTICLE_PRIMARY_TOPIC[a.slug]))
+    .sort(byModifiedDesc)
 }

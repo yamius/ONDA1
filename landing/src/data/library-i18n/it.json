@@ -1,0 +1,99 @@
+{
+  "ui": {
+    "metaTitle": "Biblioteca ONDA — Respirazione, HRV e meditazione | ONDA Life",
+    "metaDescription": "Guide gratuite e documentate: HRV normale per età, respirazione 4-7-8 e box breathing, sospiro fisiologico, sonno e stress. Più calcolatori e timer gratuiti.",
+    "home": "Home",
+    "library": "Biblioteca",
+    "badge": "[ BIBLIOTECA ONDA ]",
+    "h1": "Biblioteca ONDA",
+    "subtitle": "Guide basate sulla scienza su respirazione, HRV, meditazione e sistema nervoso. Scegli un tema per iniziare.",
+    "articlesOne": "{n} articolo",
+    "articlesOther": "{n} articoli",
+    "moreGuides": "Altre guide in italiano",
+    "englishLibrary": "La biblioteca completa in inglese →",
+    "reviews": "Recensioni dei dispositivi →",
+    "glossary": "Glossario →",
+    "topicClusters": "Aree tematiche →",
+    "aboutH2": "Informazioni sulla Biblioteca ONDA",
+    "aboutP1": "La Biblioteca ONDA è una raccolta di approfondimenti su sistema nervoso, variabilità della frequenza cardiaca, respirazione, meditazione, sonno e recupero — scritti per spiegare il meccanismo, non solo per elencare consigli. Quando un'affermazione è ben supportata citiamo le fonti; quando un'idea è un'interpretazione o è ancora sperimentale, lo diciamo.",
+    "aboutP2": "Ogni guida appartiene a un tema, ciascuno con la propria pagina hub e un punto di partenza consigliato. Per approfondire il lato delle misurazioni, vedi {measurements} e {research}.",
+    "measurementsLink": "cosa misura ONDA",
+    "researchLink": "le evidenze scientifiche",
+    "startHere": "Inizia da qui",
+    "readGuide": "Leggi la guida →",
+    "allGuides": "Tutte le guide su {topic} ({n})",
+    "relatedTopics": "Temi correlati",
+    "allTopics": "Tutti i temi",
+    "hubTitleSuffix": "Biblioteca ONDA",
+    "hubMetaTitle": "{topic} — Guide e ricerca | ONDA Library"
+  },
+  "countries": {
+    "Japan": "Giappone",
+    "India": "India",
+    "Germany": "Germania",
+    "Netherlands": "Paesi Bassi",
+    "France": "Francia"
+  },
+  "hubs": {
+    "meditation": {
+      "name": "Meditazione con progressi",
+      "tile": "Una meditazione che puoi misurare — come la pratica cambia cervello e corpo, e come vederlo.",
+      "intro": "La meditazione funziona — e i suoi progressi sono misurabili. Queste guide raccontano cosa mostra la ricerca su come la meditazione cambia il cervello e il sistema nervoso, le grandi tradizioni dallo Zen alla Vipassana fino ai jhana, quanta pratica serve davvero e i rischi reali di cui poche app parlano. Il filo conduttore: la meditazione è un'abilità allenabile, e puoi seguire i tuoi progressi invece di praticare alla cieca.",
+      "imageAlt": "Meditazione con progressi — illustrazione: la silhouette di una persona seduta in meditazione, con alle spalle una linea di luce color menta che sale come un grafico di progresso."
+    },
+    "breathing": {
+      "name": "Tecniche di respirazione",
+      "tile": "Dal sospiro fisiologico al pranayama — cosa fa ogni tecnica e quando usarla.",
+      "intro": "Il respiro è la leva più rapida che hai sul tuo sistema nervoso. Qui trovi le tecniche che vale la pena conoscere — respirazione coerente, sospiro fisiologico, 4-7-8, box breathing e pranayama tradizionali come Nadi Shodhana e Bhramari — spiegate attraverso la fisiologia che le sostiene. Ogni guida spiega come praticarla, cosa dice la ricerca e quale tecnica è adatta a quale momento: calmarsi in fretta, rilassarsi a fine giornata o ritrovare energia.",
+      "imageAlt": "Tecniche di respirazione — illustrazione: polmoni stilizzati fatti di luce, con onde di respiro che entrano ed escono."
+    },
+    "hrv-heart-rate": {
+      "name": "HRV e frequenza cardiaca",
+      "tile": "Cosa significano la tua HRV e la frequenza cardiaca a riposo — e come migliorarle.",
+      "intro": "La variabilità della frequenza cardiaca e la frequenza cardiaca a riposo sono tra i segnali più utili che il corpo ti offre — se li leggi correttamente. Queste guide spiegano cosa è normale per la tua età, perché il tuo valore di riferimento personale conta più di qualsiasi media, come misurare in modo coerente con dispositivi diversi, cosa significa davvero un valore basso e quali abitudini fanno salire la HRV nel tempo.",
+      "imageAlt": "HRV e frequenza cardiaca — illustrazione: un cuore luminoso da cui esce un tracciato dal ritmo variabile."
+    },
+    "stress-vagus": {
+      "name": "Stress e nervo vago",
+      "tile": "Come lo stress vive nel corpo — cortisolo, nervo vago e come staccare la spina.",
+      "intro": "Lo stress cronico non è solo nella testa — è un sistema nervoso bloccato su \"acceso\". Queste guide spiegano come funzionano il nervo vago, il cortisolo e la risposta allo stress, perché alcune persone non riescono a staccare e cosa riporta il corpo alla calma in modo affidabile: respiro, freddo, natura e un rapporto più sano con i propri segnali.",
+      "imageAlt": "Stress e nervo vago — illustrazione: un percorso nervoso luminoso che scende dal cervello al cuore e all'intestino, passando da un rosso teso a un verde menta calmo."
+    },
+    "sleep-body-clock": {
+      "name": "Sonno e orologio biologico",
+      "tile": "Sonno, luce e ritmo circadiano — perché l'orario conta quanto le ore.",
+      "intro": "Un buon sonno dipende dall'orario tanto quanto dalle ore dormite. Queste guide spiegano di quanto sonno hai bisogno, come la luce regola l'orologio biologico, perché il jet lag sociale fa più danni dell'essere nottambuli e modi pratici per rilassarsi — dalla respirazione prima di dormire allo Yoga Nidra fino agli approcci clinici all'insonnia.",
+      "imageAlt": "Sonno e orologio biologico — illustrazione: un letto sotto un arco circolare dove il sole tramonta e sorge la luna, circondato da un tenue anello di orologio."
+    },
+    "lifestyle": {
+      "name": "Effetti dello stile di vita",
+      "tile": "Cosa fanno ai tuoi numeri alcol, caffeina, schermi e cene tardive.",
+      "intro": "Le abitudini quotidiane lasciano una traccia chiara nella frequenza cardiaca e nella HRV. Queste guide mostrano — dati alla mano — cosa fanno al corpo durante la notte alcol, caffeina, nicotina, pasti tardivi e tempo davanti agli schermi, quanto durano gli effetti e cosa sono davvero dopamina, nebbia mentale e \"sovraccarico digitale\".",
+      "imageAlt": "Effetti dello stile di vita — illustrazione: una tazza di caffè, un bicchiere di vino e uno smartphone disposti attorno a una linea centrale della frequenza cardiaca."
+    },
+    "heart-fitness-metabolism": {
+      "name": "Cuore, forma fisica e metabolismo",
+      "tile": "Pressione, capacità aerobica e salute metabolica — una partita a lungo termine.",
+      "intro": "La salute cardiovascolare e metabolica si costruisce negli anni. Queste guide trattano pressione arteriosa e respirazione lenta, VO2 max e allenamento in Zona 2, recupero della frequenza cardiaca, sovrallenamento, basi di nutrizione, ormoni e flessibilità metabolica — incluso cosa mostra la ricerca su yoga e respirazione per glicemia e sindrome metabolica.",
+      "imageAlt": "Cuore, forma fisica e metabolismo — illustrazione: la silhouette di un runner che si fonde con la forma di un cuore e un'onda del polso morbida."
+    },
+    "brain-focus-aging": {
+      "name": "Cervello, concentrazione e invecchiamento",
+      "tile": "Attenzione, memoria e un cervello che invecchia meglio.",
+      "intro": "Concentrazione e memoria non sono tratti fissi — rispondono a come respiri, riposi e alleni l'attenzione. Queste guide esplorano le neuroscienze della concentrazione e del flow, come il respiro influisce sulla memoria, pratiche come il Trataka e cosa dice la ricerca su come mantenere giovani cervello e corpo.",
+      "imageAlt": "Cervello, concentrazione e invecchiamento — illustrazione: un cervello attraversato da un unico fascio di luce concentrato."
+    },
+    "doctors-your-data": {
+      "name": "I medici e i tuoi dati",
+      "tile": "Quale specialista può usare i tuoi andamenti di cuore, HRV e sonno — e come portare i dati a una visita.",
+      "intro": "Il tuo orologio registra settimane di frequenza cardiaca a riposo, HRV, respirazione e sonno che di solito nessun medico vede. Queste guide mostrano chi può usare questo storico e per cosa — il medico di base, il cardiologo, lo specialista del sonno, lo psicoterapeuta o lo psichiatra, il medico sportivo — come riassumerlo in una sola pagina e dove si fermano i dati dell'orologio: indicano una domanda, non sono mai una diagnosi.",
+      "imageAlt": "I medici e i tuoi dati — illustrazione: cinque silhouette di medici disposte in un semicerchio sereno, ognuna contrassegnata da un simbolo luminoso (cuore, luna, cervello, runner, croce medica), collegate da sottili linee color menta a un unico report di una pagina al centro."
+    },
+    "world": {
+      "name": "La scienza dal mondo",
+      "tile": "Ricerche che non trovi nella maggior parte delle fonti in inglese — da Giappone, India, Germania, Paesi Bassi e Francia.",
+      "intro": "Molte delle ricerche più interessanti su respirazione, sonno e sistema nervoso sono state condotte fuori dal mondo anglofono. Questa raccolta le riunisce: studi giapponesi sul forest bathing e sullo Zen, sperimentazioni indiane sul pranayama, la cronobiologia tedesca, le ricerche olandesi sul Metodo Wim Hof e la tradizione francese della coerenza cardiaca.",
+      "imageAlt": "La scienza dal mondo — illustrazione: un globo scuro con punti luminosi su Giappone, India, Germania, Paesi Bassi e Francia, collegati da sottili archi di luce."
+    }
+  }
+}

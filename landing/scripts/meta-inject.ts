@@ -11,13 +11,14 @@ import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
 import { getArticleBySlug, articles } from '../src/data/articles'
 import { ARTICLE_TOPIC_HUBS, getArticleTopicHub, getPrimaryHubForArticle, type ArticleTopicSlug } from '../src/data/article-topics'
-import { hubItemSlugs, hubLastModified } from '../src/data/article-topic-listing'
+import { hubItemSlugs, hubLastModified, hubAvailable, localizedHubItemSlugs, localizedHubLastModified } from '../src/data/article-topic-listing'
+import { libraryCopy, fillLib } from '../src/data/library-i18n'
 import { ARTICLE_FAQ as FAQ_SCHEMA, ARTICLE_FAQ_SCHEMA_ONLY } from '../src/data/article-faq'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
 import { hrvToolCopy } from '../src/data/hrv-tool-i18n'
 import { baselineCopy } from '../src/data/baseline-i18n'
 import { rhrToolCopy } from '../src/data/rhr-tool-i18n'
-import type { Lang } from '../src/i18n'
+import { SUPPORTED_LANGS, type Lang } from '../src/i18n'
 import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
 import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
 import { HOW_IT_WORKS_I18N } from '../src/data/how-it-works-i18n'
@@ -428,6 +429,8 @@ export interface RouteMeta {
     glossarySlugs: readonly string[]
     /** YYYY-MM-DD — newest article in the hub (ONDA Library hubs). */
     dateModified?: string
+    /** '' for EN, '/ru' etc. for localized ONDA Library hubs (ItemList URLs). */
+    langPrefix?: string
   }
   /** Article image for og:image, twitter:image (absolute URL) */
   image?: string
@@ -1083,6 +1086,7 @@ function buildTopicHubJsonLd(
   articleSlugs: readonly string[],
   glossarySlugs: readonly string[],
   dateModified?: string,
+  langPrefix = '',
 ): string {
   let position = 1
   const items: Record<string, unknown>[] = []
@@ -1090,7 +1094,7 @@ function buildTopicHubJsonLd(
     items.push({
       '@type': 'ListItem',
       position: position++,
-      url: `${SITE_URL}/articles/${s}`,
+      url: `${SITE_URL}${langPrefix}/articles/${s}`,
     })
   }
   for (const s of glossarySlugs) {
@@ -3148,6 +3152,63 @@ export function getMetaForRoute(route: string): RouteMeta {
     }
   }
 
+  // /<lang>/articles — localized ONDA Library: ItemList over the hubs that exist in that language.
+  const libIdxMatch = route.match(/^\/([a-z]{2})\/articles$/)
+  if (libIdxMatch && (SUPPORTED_LANGS as readonly string[]).includes(libIdxMatch[1])) {
+    const lang = libIdxMatch[1] as Lang
+    const lc = libraryCopy(lang)
+    const hubs = ARTICLE_TOPIC_HUBS.filter((h) => hubAvailable(h.slug, lang))
+    return {
+      title: lc.ui.metaTitle,
+      description: lc.ui.metaDescription,
+      url,
+      breadcrumbs: [
+        { name: lc.ui.home, url: `${SITE_URL}/${lang}` },
+        { name: lc.ui.library, url },
+      ],
+      itemList: {
+        name: lc.ui.h1,
+        description: lc.ui.subtitle,
+        url,
+        items: hubs.map((h) => ({ url: `${SITE_URL}/${lang}/articles/topic/${h.slug}`, name: lc.hubs[h.slug]?.name ?? h.name })),
+      },
+    }
+  }
+
+  // /<lang>/articles/topic/:topic — localized ONDA Library hub (only translated articles).
+  const libLocTopicMatch = route.match(/^\/([a-z]{2})\/articles\/topic\/([^/]+)$/)
+  if (libLocTopicMatch) {
+    const lang = libLocTopicMatch[1] as Lang
+    const hub = getArticleTopicHub(libLocTopicMatch[2])
+    if (hub && hubAvailable(hub.slug as ArticleTopicSlug, lang)) {
+      const topic = hub.slug as ArticleTopicSlug
+      const lc = libraryCopy(lang)
+      const hc = lc.hubs[hub.slug]
+      const name = hc?.name ?? hub.name
+      const longTitle = fillLib(lc.ui.hubMetaTitle, { topic: name })
+      return {
+        title: longTitle.length <= 60 ? longTitle : `${name} | ${lc.ui.hubTitleSuffix}`,
+        description: hc?.tile ?? hub.tile,
+        ...(hub.image ? { image: `${SITE_URL}${hub.image}` } : {}),
+        url,
+        breadcrumbs: [
+          { name: lc.ui.home, url: `${SITE_URL}/${lang}` },
+          { name: lc.ui.library, url: `${SITE_URL}/${lang}/articles` },
+          { name, url },
+        ],
+        topicHub: {
+          name: `${name} — ${lc.ui.hubTitleSuffix}`,
+          description: hc?.intro ?? hub.intro,
+          url,
+          articleSlugs: localizedHubItemSlugs(topic, lang),
+          glossarySlugs: [],
+          dateModified: localizedHubLastModified(topic, lang) ?? undefined,
+          langPrefix: `/${lang}`,
+        },
+      }
+    }
+  }
+
   // /articles/topic/:topic — ONDA Library topic hub: CollectionPage + ItemList
   // (Start here first, then the list in rendered order), dateModified = newest article.
   const libTopicMatch = route.match(/^\/articles\/topic\/([^/]+)$/)
@@ -3600,6 +3661,7 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
       meta.topicHub.articleSlugs,
       meta.topicHub.glossarySlugs,
       meta.topicHub.dateModified,
+      meta.topicHub.langPrefix,
     )}</script>`
     out = out.replace('</head>', `  ${topicScript}\n</head>`)
   }

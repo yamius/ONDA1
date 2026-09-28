@@ -126,6 +126,7 @@ function getPriority(route: string): string {
   if (route === '/topics') return '0.9'
   if (route.startsWith('/topics/')) return '0.85'
   if (route.startsWith('/articles/topic/')) return '0.85'
+  if (/^\/[a-z]{2}\/articles\/topic\//.test(route)) return '0.75'
   if (route === '/contact') return '0.8'
   if (route.startsWith('/level/')) return '0.8'
   const articleSlug = articleSlugFromRoute(route)

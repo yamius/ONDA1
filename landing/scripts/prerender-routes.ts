@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url'
 import { glossaryTerms } from '../src/data/glossary'
 import { articles } from '../src/data/articles'
 import { ARTICLE_TOPIC_HUBS, ARTICLE_PRIMARY_TOPIC } from '../src/data/article-topics'
+import { hubLangs } from '../src/data/article-topic-listing'
 
 // Every published article must belong to an ONDA Library topic hub, otherwise it
 // silently drops out of /articles (orphan). Fail the build with a clear fix.
@@ -1218,6 +1219,10 @@ export function getPrerenderRoutes(): string[] {
     ...articles.map((a) => `/articles/${a.slug}`),
     // ONDA Library topic hubs (EN) — /articles/topic/<topic>
     ...ARTICLE_TOPIC_HUBS.map((h) => `/articles/topic/${h.slug}`),
+    // Localized hubs — only where the topic has enough translated articles (hubLangs).
+    ...ARTICLE_TOPIC_HUBS.flatMap((h) =>
+      hubLangs(h.slug).filter((l) => l !== 'en').map((l) => `/${l}/articles/topic/${h.slug}`),
+    ),
     ...localizedEsArticleRoutes,
     ...localizedRuArticleRoutes,
     ...localizedLocaleArticleRoutes,
