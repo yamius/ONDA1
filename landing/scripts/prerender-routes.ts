@@ -276,6 +276,7 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'onda-report-for-your-occupational-health-doctor', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-rehabilitation-team', publishOn: '2026-09-26' },
   { slug: 'how-much-alcohol-lowers-hrv', publishOn: '2026-09-26' },
+  { slug: 'hrv-questions-answered', publishOn: '2026-09-28' },
 ]
 
 /**
@@ -449,6 +450,7 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'onda-report-for-your-occupational-health-doctor', publishOn: '2026-09-26' },
   { slug: 'onda-report-for-your-rehabilitation-team', publishOn: '2026-09-26' },
   { slug: 'how-much-alcohol-lowers-hrv', publishOn: '2026-09-26' },
+  { slug: 'hrv-questions-answered', publishOn: '2026-09-28' },
 ]
 
 /** Build date (UTC) — the gate every rollout schedule compares against. */
@@ -602,6 +604,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   zh: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing',
@@ -618,6 +621,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   de: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -633,6 +637,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   fr: [
     'yoga-nidra-sleep-science', 'physiological-sigh', '4-7-8-breathing', 'cardiac-coherence-insomnia-sleep',
@@ -648,6 +653,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   it: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -663,6 +669,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   nl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -678,6 +685,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   ja: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -693,6 +701,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   pl: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -708,6 +717,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
   pt: [
     'normal-hrv-by-age', 'resting-heart-rate-by-age', 'alternate-nostril-breathing',
@@ -723,6 +733,7 @@ const ARTICLE_LOCALE_EARLY: Readonly<Record<string, readonly string[]>> = {
     'how-to-raise-hrv-naturally', 'what-to-do-after-low-hrv-reading', 'how-to-measure-hrv-consistently', 'how-much-alcohol-lowers-hrv',
     'your-baseline-knows-first', 'what-your-apple-watch-records', 'overtraining-hrv-resting-heart-rate', 'apple-watch-recovery-hrv-vs-overall-hrv',
     'how-long-does-alcohol-stay-in-your-system',
+    'hrv-questions-answered',
   ],
 }
 function articleRolloutDate(start: string, index: number): string {

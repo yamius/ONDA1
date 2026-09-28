@@ -162,7 +162,7 @@ interface PartFile {
  */
 interface ArticlesFile {
   breadcrumb?: { home?: string; current?: string }
-  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[]; faq?: { question: string; answer: string }[]; imageAlt?: string }>
+  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[]; faq?: { question: string; answer: string }[]; faqSchema?: { question: string; answer: string }[]; imageAlt?: string }>
 }
 
 /**
@@ -187,10 +187,12 @@ function localizeArticleJsonLd(html: string, lang: Lang, slug: string, url: stri
     try { data = JSON.parse(json) } catch { return whole }
     const type = data['@type']
     if (type === 'FAQPage') {
-      if (!body.faq?.length) return ''
+      // faqSchema: Q&A that IS the visible body (e.g. hrv-questions-answered) — schema only.
+      const faqList = body.faq?.length ? body.faq : body.faqSchema
+      if (!faqList?.length) return ''
       data.inLanguage = lang
       if (data.url) data.url = url
-      data.mainEntity = body.faq.map((f) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } }))
+      data.mainEntity = faqList.map((f) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } }))
       return `<script type="application/ld+json">${JSON.stringify(data)}</script>`
     }
     if (type === 'TechArticle' || type === 'Article' || type === 'BlogPosting') {

@@ -1,0 +1,301 @@
+{
+  "title": "HRV-vragen beantwoord: 52 heldere antwoorden over hartslagvariabiliteit",
+  "description": "Wat is een goede HRV? Waarom is de mijne laag? 52 korte antwoorden met bronnen over hartslagvariabiliteit, met links naar gidsen en gratis calculators.",
+  "intro": "Korte, directe antwoorden op de vragen die mensen echt stellen over hartslagvariabiliteit (HRV). Elk antwoord begint met het antwoord, geeft waar nodig één cijfer of bron en linkt naar een uitgebreidere gids of een gratis calculator. Deze pagina bevat algemene informatie en is geen medisch advies.",
+  "neuralSuggestion": {
+    "text": "De meeste HRV-vragen komen op hetzelfde uit: je eigen bereik zegt meer dan welk gemiddelde ook.",
+    "linkText": "Bekijk je bereik over twee weken →"
+  },
+  "groups": [
+    {
+      "title": "Wat HRV is",
+      "items": [
+        {
+          "id": "what-is-hrv",
+          "q": "Wat is HRV?",
+          "a": "Hartslagvariabiliteit (HRV) is de variatie in tijd tussen opeenvolgende hartslagen, gemeten in milliseconden. Denk aan een drummer die bij elke ademhaling een beetje versnelt en vertraagt, in plaats van aan een metronoom: een hart dat op 60 bpm klopt, slaat niet precies één keer per seconde — de tussenpozen verschuiven tientallen milliseconden, grotendeels aangestuurd door de nervus vagus. Meer variatie in rust betekent meestal dat de \"rust en vertering\"-kant van je zenuwstelsel actief is. [Volledige uitleg →](/topics/hrv)"
+        },
+        {
+          "id": "what-does-hrv-measure",
+          "q": "Wat meet HRV eigenlijk?",
+          "a": "HRV meet hoeveel het interval van slag tot slag verandert, wat vooral de parasympathische (vagale) invloed op het hart weerspiegelt. Het is een indirect venster op je autonome zenuwstelsel — op zichzelf geen maat voor hartkracht of conditie. Ademhaling, houding, slaap, alcohol en stress beïnvloeden het allemaal. [Gidsen over HRV en hartslag →](/articles/topic/hrv-heart-rate)"
+        },
+        {
+          "id": "is-higher-hrv-better",
+          "q": "Is een hogere HRV beter?",
+          "a": "Binnen je eigen bereik meestal wel: een hogere HRV in rust gaat vaak samen met beter herstel en minder stressbelasting. Maar je getal vergelijken met dat van een ander is misleidend — genetica, leeftijd en apparaat verklaren het grootste deel van het verschil. Waar het om gaat is of je HRV stijgt of daalt ten opzichte van je eigen basislijn. [Normale HRV per leeftijd →](/articles/normal-hrv-by-age)"
+        },
+        {
+          "id": "rmssd-vs-sdnn",
+          "q": "Wat is het verschil tussen RMSSD en SDNN?",
+          "a": "Het zijn twee manieren om HRV te berekenen. RMSSD kijkt naar verschillen tussen opeenvolgende slagen en volgt de vagale activiteit; Oura, Whoop, Garmin en Polar rapporteren die. SDNN is de totale spreiding van alle intervallen in een tijdvenster; Apple Watch rapporteert SDNN. De twee zijn niet uitwisselbaar, dus vergelijk elk alleen met de eigen normen. [HRV-calculator met beide modi →](/tools/hrv)"
+        },
+        {
+          "id": "hrv-vs-heart-rate",
+          "q": "Wat is het verschil tussen HRV en hartslag?",
+          "a": "Hartslag telt hoeveel slagen per minuut; HRV meet hoe ongelijk de afstand tussen die slagen is. Ze bewegen meestal in tegengestelde richting — als je rusthartslag stijgt (stress, ziekte, alcohol), daalt HRV vaak. Beide samen volgen zegt meer dan één van de twee. [Gidsen over HRV en hartslag →](/articles/topic/hrv-heart-rate)"
+        },
+        {
+          "id": "breathing-and-hrv",
+          "q": "Waarom verandert mijn HRV als ik in- en uitadem?",
+          "a": "Je hart versnelt licht bij elke inademing en vertraagt bij elke uitademing — een normaal patroon dat respiratoire sinusaritmie heet. Langzaam ademen maakt deze schommelingen groter, daarom schiet HRV omhoog tijdens een ademsessie. Onderzoek naar resonantieademhaling (Lehrer en collega's) laat zien dat de schommelingen bij de meeste volwassenen het grootst zijn bij ongeveer 5–7 ademhalingen per minuut. [Resonantieademhaling →](/tools/resonance-breathing)"
+        }
+      ]
+    },
+    {
+      "title": "Normale waarden en getallen",
+      "items": [
+        {
+          "id": "what-is-a-good-hrv",
+          "q": "Wat is een goede HRV?",
+          "a": "Er bestaat niet één goed HRV-getal. Ter oriëntatie: de mediane nachtelijke RMSSD is ongeveer 58 ms bij 18–29 jaar en daalt tot zo'n 30 ms rond je zestigste, met een grote spreiding rond die medianen bij gezonde mensen. Elders zie je hogere cijfers (WHOOP plaatst bijvoorbeeld veel twintigers op 55–105 ms), omdat elke bron andere mensen, apparaten en tijdstippen gebruikt. Een \"goede\" HRV is stabiel of stijgend ten opzichte van je eigen basislijn. [Normale HRV per leeftijd →](/articles/normal-hrv-by-age)"
+        },
+        {
+          "id": "healthy-hrv",
+          "q": "Wat is een gezonde HRV?",
+          "a": "Een gezonde HRV ligt binnen je eigen gebruikelijke bereik en herstelt na stress, reizen of een zware training. Bevolkingsbereiken zijn erg breed — twee gezonde mensen van dezelfde leeftijd kunnen 40 ms of meer verschillen. Gebruik leeftijdsnormen ter oriëntatie en je trend over twee weken voor beslissingen. [Bekijk je eigen bereik →](/tools/baseline)"
+        },
+        {
+          "id": "hrv-range-by-age",
+          "q": "Wat is een normale HRV per leeftijd?",
+          "a": "De typische nachtelijke RMSSD (middelste helft van gezonde volwassenen) is ongeveer 42–78 ms bij 18–29 jaar, 36–68 ms in je dertiger jaren, 30–56 ms in je veertiger jaren en daarna smaller. Apple Watch SDNN heeft eigen, andere normen. Vul je leeftijd en getal in om je percentiel te zien. [HRV-calculator per leeftijd →](/tools/hrv)"
+        },
+        {
+          "id": "is-my-number-good",
+          "q": "Is een HRV van 20, 30 of 43 goed? Waarom is de mijne maar 30?",
+          "a": "Dat hangt af van je leeftijd, je apparaat en je eigen basislijn. 20 ms kan normaal zijn als je in de zeventig bent; 30 ms is typisch op je 60e en aan de lage kant op je 25e; 43 ms ligt rond het midden voor veertigers; 100 ms is hoog voor de meeste volwassenen maar normaal voor sommige sporters. Eén getal zonder context zegt weinig — kijk waar het ligt voor je leeftijd en volg dan je trend. [Check je getal →](/tools/hrv)"
+        },
+        {
+          "id": "high-hrv",
+          "q": "Is een heel hoge HRV goed? Waarom is mijn HRV zo hoog?",
+          "a": "Meestal is het goed nieuws: fitte, uitgeruste mensen zitten vaak hoog. Maar een plotselinge sprong ver boven je normale waarde kan ook komen door onregelmatige of extra slagen, een losse sensor of — bij sporters die zwaar trainen — diepe vermoeidheid. Gaat een nieuwe, ongewoon hoge HRV samen met hartkloppingen, duizeligheid of uitputting, bespreek het dan met een arts. [Waarom elk apparaat een andere HRV toont →](/articles/hrv-different-every-device)"
+        },
+        {
+          "id": "lower-than-friend",
+          "q": "Waarom is mijn HRV lager dan die van een vriend?",
+          "a": "Omdat HRV enorm verschilt tussen mensen om redenen die niets met gezondheid te maken hebben: genetica, leeftijd, lichaamsbouw, trainingsverleden en welk apparaat meet. Vergelijken met een vriend is als schoenmaten vergelijken. De nuttige vergelijking is jij deze week tegenover jij in de afgelopen weken. [Waarom elk apparaat een andere HRV toont →](/articles/hrv-different-every-device)"
+        },
+        {
+          "id": "men-women-hrv",
+          "q": "Hebben mannen en vrouwen een andere HRV?",
+          "a": "Ja, een beetje. Een meta-analyse uit 2016 (Koenig and Thayer) vond dat vrouwen gemiddeld hogere vagale HRV-waarden hebben, maar een lagere totale variabiliteit dan mannen van dezelfde leeftijd. De verschillen zijn klein vergeleken met de spreiding tussen individuen, dus geslacht telt minder dan leeftijd en je eigen basislijn."
+        },
+        {
+          "id": "hrv-and-age",
+          "q": "Daalt HRV met de leeftijd?",
+          "a": "Ja. HRV daalt gestaag tijdens de volwassenheid — de mediaan halveert ongeveer tussen je twintigste en je zestigste — en de daling is het sterkst in de vroege en middelste volwassenheid. Regelmatige duursport en goede slaap remmen de daling maar stoppen haar niet, dus vergelijk jezelf altijd met je eigen leeftijdsgroep. [Normale HRV per leeftijd →](/articles/normal-hrv-by-age)"
+        },
+        {
+          "id": "hrv-all-over-the-place",
+          "q": "Waarom schommelt mijn HRV zo erg?",
+          "a": "Omdat het hoort te bewegen. HRV reageert op de slaap van afgelopen nacht, een drankje, een zware training, stress en zelfs hoe je ademde tijdens de meting. Dagelijkse schommelingen zijn normaal; volg het 7-daags gemiddelde tegenover je eigen bereik in plaats van één getal. [HRV consequent meten →](/articles/how-to-measure-hrv-consistently)"
+        },
+        {
+          "id": "hrv-during-sleep",
+          "q": "Wat is een goede HRV 's nachts, en waarom verandert die tijdens de slaap?",
+          "a": "Nachtelijke HRV is meestal je betrouwbaarste getal, omdat er verder niets gebeurt. De vagale activiteit is meestal het sterkst in de diepe (non-REM) slaap en onregelmatiger in de REM-slaap, dus HRV stijgt en daalt door de nacht heen; horloges en ringen rapporteren een gemiddelde of een steekproef daarvan. Vergelijk nachten met nachten, niet met losse metingen overdag."
+        }
+      ]
+    },
+    {
+      "title": "Wat HRV verlaagt",
+      "items": [
+        {
+          "id": "why-is-my-hrv-low",
+          "q": "Waarom is mijn HRV ineens laag?",
+          "a": "De gebruikelijke boosdoeners zijn korte of onderbroken slaap, alcohol de avond ervoor, een zware training, een opkomende ziekte, uitdroging of een stressvolle dag. Eén lage meting is normale variatie; een daling die meerdere dagen aanhoudt samen met een stijgende rusthartslag verdient aandacht. [Wat te doen na een lage HRV-meting →](/articles/what-to-do-after-low-hrv-reading)"
+        },
+        {
+          "id": "alcohol-hrv",
+          "q": "Verlaagt alcohol je HRV, en hoe lang?",
+          "a": "Ja, en afhankelijk van de hoeveelheid. In een grote Firstbeat-studie (Pietilä 2018) verlaagden zelfs één of twee drankjes de nachtelijke HRV, en meer drinken verlaagde haar sterk; het effect is meestal de eerste nacht het grootst en verdwijnt in één tot enkele dagen. [Hoeveel alcohol je HRV verlaagt →](/articles/how-much-alcohol-lowers-hrv) · [Alcoholcalculator →](/tools/alcohol)"
+        },
+        {
+          "id": "caffeine-hrv",
+          "q": "Heeft cafeïne invloed op HRV?",
+          "a": "Beperkt. Cafeïne zelf heeft een klein, wisselend effect op HRV, maar late cafeïne maakt de slaap korter en lichter, en dat zie je vaak terug als een lagere nachtelijke HRV. Het tijdstip telt meer dan het kopje. [Cafeïne, HRV en rusthartslag →](/articles/caffeine-hrv-resting-heart-rate) · [Cafeïnecalculator →](/tools/caffeine)"
+        },
+        {
+          "id": "nicotine-hrv",
+          "q": "Verlaagt nicotine of vapen je HRV?",
+          "a": "Ja. Nicotine activeert het sympathische zenuwstelsel, verhoogt binnen enkele minuten de hartslag en verlaagt HRV, en vaste rokers en vapers hebben meestal een lagere HRV dan niet-gebruikers. Na het stoppen verbetert HRV vaak. [Nicotine, vapen en HRV →](/articles/nicotine-vaping-hrv-heart-rate)"
+        },
+        {
+          "id": "stress-hrv",
+          "q": "Verlaagt stress je HRV?",
+          "a": "Ja. Psychische stress verschuift het zenuwstelsel richting \"vechten of vluchten\", wat HRV verlaagt — je ziet het vaak in de nacht na een zware dag. Chronische stress houdt haar langer laag. Langzaam ademen is een van de weinige manieren om HRV op het moment zelf te verhogen. [Angst, ademhaling en HRV →](/articles/anxiety-panic-breathing-hrv)"
+        },
+        {
+          "id": "overtraining-hrv",
+          "q": "Is overtraining te zien aan je HRV?",
+          "a": "Vaak wel. Een reeks lager dan gebruikelijke HRV-waarden samen met een hogere rusthartslag is een veelvoorkomend teken dat de trainingsbelasting het herstel voorbijloopt. Veel coaches gebruiken het 7-daags HRV-gemiddelde tegenover de eigen basislijn van de sporter om de intensiteit bij te stellen. [Overtraining, HRV en rusthartslag →](/articles/overtraining-hrv-resting-heart-rate)"
+        },
+        {
+          "id": "illness-hrv",
+          "q": "Verlaagt ziek zijn je HRV?",
+          "a": "Meestal wel. Infectie en koorts duwen de hartslag omhoog en HRV omlaag, en studies met wearables — waaronder de Mount Sinai Warrior Watch-studie bij Apple Watch-gebruikers (Hirten 2021) — zagen HRV-veranderingen rond het moment van een COVID-19-infectie. Een daling is geen diagnose, maar wel een reden om rust te nemen."
+        },
+        {
+          "id": "sleep-hrv",
+          "q": "Waarom is mijn HRV laag na een slechte nacht?",
+          "a": "Het meeste parasympathische herstel dat HRV weerspiegelt gebeurt tijdens de slaap, vooral de diepe slaap. Korte, late of onderbroken slaap laat daar minder van over, dus het nachtelijke gemiddelde daalt. Een vaste bedtijd is een van de betrouwbaarste manieren om HRV stabiel te houden. [Slaapcycluscalculator →](/tools/sleep-cycle)"
+        },
+        {
+          "id": "dehydration-hrv",
+          "q": "Kan uitdroging je HRV verlagen?",
+          "a": "Dat kan. Een laag vochtvolume laat het hart harder werken om de bloeddruk op peil te houden, wat de hartslag verhoogt en HRV meestal verlaagt. Het effect is meestal kleiner dan dat van slaap of alcohol, maar het kan oplopen na een warme dag, een lange vlucht of zware inspanning."
+        },
+        {
+          "id": "late-meals-hrv",
+          "q": "Verlaagt laat eten je HRV?",
+          "a": "Vaak wel. Een grote of late maaltijd houdt de spijsvertering en hartslag hoog in de eerste uren van de slaap, en gegevens van wearables laten daarna vaak een lagere nachtelijke HRV zien. Het bewijs is vooral observationeel, maar twee tot drie uur voor het slapengaan klaar zijn met eten is een eenvoudig experiment om bij jezelf te doen."
+        },
+        {
+          "id": "low-but-fit",
+          "q": "Waarom is mijn HRV laag terwijl ik fit ben?",
+          "a": "Conditie verhoogt het plafond, maar trainingsbelasting, korte slaap, stress, reizen of een opkomende verkoudheid kunnen HRV toch omlaag trekken — en door genetica zitten sommige mensen hun hele leven lager. Is je HRV onder je eigen gebruikelijke bereik gezakt, kijk dan eerst naar recente belasting en herstel. [Overtraining, HRV en rusthartslag →](/articles/overtraining-hrv-resting-heart-rate)"
+        }
+      ]
+    },
+    {
+      "title": "HRV verhogen",
+      "items": [
+        {
+          "id": "raise-hrv",
+          "q": "Hoe kan ik mijn HRV op een natuurlijke manier verhogen?",
+          "a": "De knoppen met het beste bewijs zijn regelmatige duursport, vaste slaaptijden, minder alcohol, stress beheersen en dagelijks langzaam ademen. Geen daarvan werkt van de ene op de andere dag; samen verschuiven ze je basislijn in de loop van weken. [HRV natuurlijk verhogen →](/articles/how-to-raise-hrv-naturally)"
+        },
+        {
+          "id": "how-fast-hrv-improves",
+          "q": "Hoe snel kan je HRV verbeteren?",
+          "a": "Dat hangt van de knop af. Langzaam ademen verhoogt HRV binnen minuten tijdens de sessie; minder alcohol is binnen een nacht of twee te zien; betere slaap binnen één tot drie weken; duurtraining over één tot twee maanden. Beoordeel verandering aan de hand van een weekgemiddelde, niet van één ochtend."
+        },
+        {
+          "id": "breathing-raises-hrv",
+          "q": "Verhoogt ademhaling je HRV?",
+          "a": "Ja — langzaam ademen is de snelste manier om HRV te verhogen. Ademen op ongeveer zes ademhalingen per minuut maakt het natuurlijke versnellen en vertragen van het hart veel groter, en een meta-analyse uit 2022 (Laborde en collega's) bevestigde dat bewust langzaam ademen vagale HRV-waarden verhoogt. [Ademhalingstimer →](/tools/breathing)"
+        },
+        {
+          "id": "best-breathing-for-hrv",
+          "q": "Welke ademhalingstechniek is het beste voor HRV?",
+          "a": "Langzaam, gelijkmatig ademen op je resonantietempo — meestal 5–7 ademhalingen per minuut — geeft de grootste HRV-schommelingen. Box breathing en 4-7-8 vertragen je ook, en de fysiologische zucht is goed voor een snelle reset. Regelmaat telt meer dan de keuze van techniek. [Resonantieademhaling →](/tools/resonance-breathing) · [4-7-8-ademhaling →](/articles/4-7-8-breathing)"
+        },
+        {
+          "id": "meditation-hrv",
+          "q": "Verhoogt meditatie je HRV?",
+          "a": "Dat kan, vooral bij oefeningen die de ademhaling vertragen. Studies naar meditatie alleen geven wisselende resultaten, terwijl oefeningen rond langzaam ademen HRV betrouwbaarder verhogen. Je eigen reactie meten is de eerlijke manier om uit te vinden wat voor jou werkt. [Meditatie met meetbare vooruitgang →](/articles/meditation-with-measurable-progress)"
+        },
+        {
+          "id": "cold-wim-hof-hrv",
+          "q": "Verhogen koude douches of de Wim Hof-ademhaling je HRV?",
+          "a": "Kou activeert kortstondig de nervus vagus en kan HRV daarna iets verhogen, maar het bewijs op lange termijn is dun. De Wim Hof-ademhaling is snel hyperventileren gevolgd door de adem inhouden — een ander hulpmiddel dan langzaam ademen, en niet de eerste keus om HRV te verhogen. [Eerlijke grenzen van ademhaling en kou →](/articles/hrv-breathing-cold-honest-limits) · [Wim Hof-timer →](/tools/wim-hof)"
+        },
+        {
+          "id": "biofeedback-hrv",
+          "q": "Kun je HRV trainen met biofeedback?",
+          "a": "Ja. HRV-biofeedback toont je hartritme live terwijl je langzaam ademt, zodat je het tempo vindt dat de grootste schommelingen geeft. Klinische studies gebruiken het bij stress en angst, en zo begeleiden apps als ONDA de ademhaling. [Beste HRV-biofeedback-apps →](/compare/best-hrv-biofeedback-apps)"
+        }
+      ]
+    },
+    {
+      "title": "HRV meten en apparaten",
+      "items": [
+        {
+          "id": "when-to-measure",
+          "q": "Wanneer kun je HRV het beste meten?",
+          "a": "Ofwel 's nachts (wat ringen en banden middelen), ofwel direct na het wakker worden, stil liggend, vóór koffie of je telefoon. Het belangrijkste is dat je het elke keer op dezelfde manier doet — een ochtendmeting en een middagmeting zijn niet vergelijkbaar. [HRV consequent meten →](/articles/how-to-measure-hrv-consistently)"
+        },
+        {
+          "id": "how-to-measure",
+          "q": "Hoe meet ik mijn HRV?",
+          "a": "Een borstband geeft de nauwkeurigste gegevens van slag tot slag; horloges en ringen zijn goed genoeg voor trends als je ze consequent draagt. Je kunt ook een korte schatting krijgen met een telefooncamera door een vingertop op de lens te leggen. Kies één methode en houd je eraan. [Hartslag meten met de camera →](/tools/camera-heart-rate)"
+        },
+        {
+          "id": "devices-differ",
+          "q": "Waarom verschilt mijn HRV tussen Apple Watch, Oura en Garmin?",
+          "a": "Ze meten op andere momenten, over andere tijdvensters en met andere formules — Apple Watch rapporteert SDNN, de meeste andere RMSSD. Een 45 op het ene apparaat is geen 45 op het andere. Vergelijk elk apparaat alleen met zichzelf. [Waarom HRV op elk apparaat anders is →](/articles/hrv-different-every-device)"
+        },
+        {
+          "id": "apple-watch-accuracy",
+          "q": "Hoe nauwkeurig is de HRV van de Apple Watch?",
+          "a": "In rust is die nauwkeurig genoeg om trends te volgen; tijdens beweging is die veel minder betrouwbaar. Apple Watch registreert SDNN met de optische sensor tijdens rustige momenten en Ademhalen-sessies, dus de getallen zijn niet vergelijkbaar met RMSSD van ringen of banden. [Apple Watch Recovery HRV vs. algemene HRV →](/articles/apple-watch-recovery-hrv-vs-overall-hrv)"
+        },
+        {
+          "id": "apple-watch-find",
+          "q": "Waar vind ik HRV op de Apple Watch, en waarom is die zo laag?",
+          "a": "Open de Gezondheid-app op je iPhone en zoek op Hartslagvariabiliteit. Apple Watch rapporteert al lang SDNN, dat lager uitvalt dan de RMSSD-cijfers van ringen en banden, dus het lijkt in vergelijking vaak laag. Series 12 en Ultra 4 voegen een aparte Recovery HRV toe. [Apple Watch Recovery HRV vs. algemene HRV →](/articles/apple-watch-recovery-hrv-vs-overall-hrv)"
+        },
+        {
+          "id": "watch-status",
+          "q": "Mijn horloge zegt dat mijn HRV \"uit balans\" is of \"aandacht nodig\" heeft. Moet ik een arts bellen?",
+          "a": "Daarvoor alleen niet. Labels zoals de HRV-status van Garmin of de HRV-balans van Oura vergelijken recente nachten met je eigen basislijn, dus ze signaleren een verandering, geen ziekte. Rust, slaap en train een paar dagen rustiger. Bel een arts als het samengaat met pijn op de borst, flauwvallen, hartkloppingen of kortademigheid. [Wat te doen na een lage HRV-meting →](/articles/what-to-do-after-low-hrv-reading)"
+        },
+        {
+          "id": "phone-camera-hrv",
+          "q": "Kan ik HRV meten met de camera van mijn telefoon?",
+          "a": "Je kunt een redelijke hartslag en een ruwe schatting van de kortetermijn-HRV krijgen door een vingertop op de camera en flitser te leggen. Het is gevoelig voor beweging en druk, dus zie het als een losse check en niet als vervanging van een borstband. [HRV trainen met een iPhone-camera →](/articles/train-hrv-iphone-camera-no-wearable)"
+        },
+        {
+          "id": "best-hrv-tracker",
+          "q": "Wat is de beste HRV-tracker?",
+          "a": "Voor nauwkeurigheid een borstband zoals de Polar H10; voor moeiteloze nachtelijke trends een ring of een horloge dat je al draagt. De beste tracker is de tracker die je elke nacht draagt. [Beste HRV-trackers van 2026 →](/reviews/compare/best-hrv-trackers-2026)"
+        },
+        {
+          "id": "reading-or-trend",
+          "q": "Moet ik naar één HRV-meting kijken of naar de trend?",
+          "a": "Naar de trend. HRV beweegt van dag tot dag flink om gewone redenen, dus één ochtend zegt weinig. Een 7-daags gemiddelde tegenover je bereik over 2–4 weken is veel betekenisvoller. [Bekijk je bereik over twee weken →](/tools/baseline)"
+        },
+        {
+          "id": "baseline-days",
+          "q": "Hoeveel dagen data heb je nodig voor een HRV-basislijn?",
+          "a": "Ongeveer twee weken consequente metingen geeft een bruikbaar bereik; een maand is beter. Daarvoor weerspiegelen de getallen vooral ruis en wat er die week gebeurde. [Je basislijn weet het eerst →](/articles/your-baseline-knows-first)"
+        }
+      ]
+    },
+    {
+      "title": "HRV en je gezondheid",
+      "items": [
+        {
+          "id": "low-hrv-health",
+          "q": "Kan een lage HRV wijzen op een gezondheidsprobleem?",
+          "a": "In onderzoek hangt een lagere HRV samen met een hoger cardiovasculair risico (bijvoorbeeld in het Framingham-cohort, Tsuji 1994) en met aandoeningen zoals diabetes. Maar een laag getal op een wearable is geen diagnose — leeftijd, apparaat en een slechte nacht verklaren de meeste lage metingen."
+        },
+        {
+          "id": "dangerously-low",
+          "q": "Wat is een gevaarlijk lage HRV?",
+          "a": "Er is geen enkele grenswaarde die op zichzelf gevaarlijk is. Een HRV die laag is voor je leeftijd hangt in onderzoeksgroepen samen met een hoger risico, maar op een wearable zijn de betekenisvolle signalen een aanhoudende daling onder je eigen bereik en eventuele klachten die daarbij horen. Kijk waar je getal ligt voor je leeftijd en volg dan de trend. [HRV-calculator per leeftijd →](/tools/hrv)"
+        },
+        {
+          "id": "should-i-worry",
+          "q": "Moet ik me zorgen maken over een lage HRV? Kun je lang leven met een lage HRV?",
+          "a": "Meestal niet. Veel gezonde mensen hebben een lage HRV door leeftijd, genetica of apparaat, en leven lang. Een lagere HRV is een risicomarker in grote populaties, geen oordeel over één persoon. Het telt meer als hij daalt en laag blijft, of samengaat met klachten."
+        },
+        {
+          "id": "can-low-hrv-be-reversed",
+          "q": "Kan een lage HRV weer omhoog?",
+          "a": "Vaak kan die worden verhoogd, binnen grenzen die leeftijd en genetica stellen. Duursport, regelmatige slaap, minder alcohol en dagelijks langzaam ademen verhogen HRV in studies allemaal over weken tot maanden. Een lage HRV door een medische aandoening verbetert vooral door die aandoening te behandelen. [HRV natuurlijk verhogen →](/articles/how-to-raise-hrv-naturally)"
+        },
+        {
+          "id": "see-a-doctor",
+          "q": "Wanneer moet ik met een arts over mijn HRV praten?",
+          "a": "Als een aanhoudende verandering in HRV of rusthartslag samengaat met klachten — pijn op de borst, flauwvallen, hartkloppingen, ongewone kortademigheid — ga dan snel naar een arts. Zonder klachten kun je je trend meenemen naar een gewone afspraak. [Met je arts praten over wearable-data →](/articles/talk-to-your-doctor-about-wearable-data)"
+        },
+        {
+          "id": "cardiologists-hrv",
+          "q": "Wat zeggen cardiologen over HRV?",
+          "a": "Cardiologen bestuderen HRV al tientallen jaren — een lage HRV na een hartaanval voorspelde een hogere sterfte in een klassieke studie uit 1987 (Kleiger en collega's), en een taskforce legde in 1996 de meetstandaarden vast die nog steeds worden gebruikt. Maar HRV is in de kliniek geen routinematige losse test, en HRV van wearables wordt gezien als een trend om te bespreken, niet als een diagnose. [Met je arts praten over wearable-data →](/articles/talk-to-your-doctor-about-wearable-data)"
+        },
+        {
+          "id": "hrv-anxiety",
+          "q": "Hangt HRV samen met angst?",
+          "a": "Ja. Een meta-analyse uit 2014 (Chalmers en collega's) vond dat mensen met angststoornissen gemiddeld een lagere HRV hebben. Langzaam ademen, dat HRV verhoogt, is ook een van de eenvoudigste hulpmiddelen om een angstig moment te kalmeren. [Angst, paniek en ademhaling →](/articles/anxiety-panic-breathing-hrv)"
+        },
+        {
+          "id": "hrv-readiness",
+          "q": "Voorspelt HRV herstel of paraatheid?",
+          "a": "Het is één nuttig signaal. Studies waarin training werd gestuurd op de ochtend-HRV (bijvoorbeeld Kiviniemi 2007) vonden vergelijkbare of betere conditiewinst dan vaste schema's. Combineer het met rusthartslag, slaap en hoe je je voelt in plaats van één getal te laten beslissen. [Hartslagherstel als conditiemarker →](/articles/heart-rate-recovery-fitness-marker)"
+        }
+      ]
+    }
+  ]
+}
