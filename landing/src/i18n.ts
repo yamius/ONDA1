@@ -76,7 +76,10 @@ if (!i18n.isInitialized) {
     ns: ['home', 'about', 'inner-spectrum', 'bio', 'bio-metric', 'level', 'part', 'contact', 'sitemap', 'privacy', 'terms', 'glossary', 'articles', 'reviews', 'emoton'],
     defaultNS: 'home',
     interpolation: { escapeValue: false },
-    react: { useSuspense: false },
+    // bindI18nStore 'added': re-render when a lazily loaded namespace bundle
+    // arrives (ensureNamespace → addResourceBundle). Without it, switching
+    // language on an open page kept showing EN defaultValues until a reload.
+    react: { useSuspense: false, bindI18n: 'languageChanged loaded', bindI18nStore: 'added' },
     initImmediate: false,
   })
 }
@@ -193,6 +196,9 @@ export function langHref(path: string, lang: Lang): string {
   // rather than link to a /<lang>/... route that 404s (HTTP 404 + SPA shell).
   const cov = LOCALIZED_COVERAGE[lang]
   if (cov) {
+    if (parts[0] === 'articles' && parts[1] === 'topic' && parts[2]) {
+      return cov.hubs.has(parts[2]) ? `/${lang}${path}` : path
+    }
     if (parts[0] === 'articles' && parts[1] && !cov.articles.has(parts[1])) return path
     // Glossary: detail pages are coverage-gated; the bare /glossary index has no
     // localized prerender while this locale has zero localized glossary slugs,
@@ -301,6 +307,14 @@ export function localizedPathFor(pathname: string, lang: Lang): string {
   // Article detail page: preserve slug across language switches — but only if
   // the localized page is actually prerendered for this locale; otherwise fall
   // back to EN so we never point at a /<lang>/... route that 404s.
+  // ONDA Library topic hub: keep the topic when the hub exists in that language, else the library.
+  const hubMatch = basePath.match(/^\/articles\/topic\/([^/]+)$/)
+  if (hubMatch) {
+    if (lang === 'en') return basePath
+    const cov = LOCALIZED_COVERAGE[lang]
+    return cov?.hubs.has(hubMatch[1]) ? `/${lang}${basePath}` : `/${lang}/articles`
+  }
+
   const articleMatch = basePath.match(/^\/articles\/([^/]+)$/)
   if (articleMatch) {
     const slug = articleMatch[1]

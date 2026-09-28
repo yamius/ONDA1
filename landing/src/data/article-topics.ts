@@ -400,3 +400,15 @@ export function slugsForTopic(topic: ArticleTopicSlug): string[] {
   if (topic === 'world') return Object.keys(ARTICLE_WORLD)
   return Object.keys(ARTICLE_PRIMARY_TOPIC).filter((s) => ARTICLE_PRIMARY_TOPIC[s] === topic)
 }
+
+/** A localized hub (/<lang>/articles/topic/<t>) exists only with at least this many translated articles. */
+export const MIN_LOCALIZED_HUB = 3
+
+/** Cheap hub-existence check from slug coverage alone (used by i18n link helpers, no article registry). */
+export function localizedHubExists(topic: string, covered: (slug: string) => boolean): boolean {
+  const slugs =
+    topic === 'world'
+      ? Object.keys(ARTICLE_WORLD)
+      : Object.keys(ARTICLE_PRIMARY_TOPIC).filter((s) => ARTICLE_PRIMARY_TOPIC[s] === topic)
+  return slugs.filter(covered).length >= MIN_LOCALIZED_HUB
+}

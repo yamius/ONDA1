@@ -8,6 +8,7 @@ import { articles, type Article } from './articles'
 import { ARTICLE_DATES } from './article-dates.generated'
 import { LOCALIZED_COVERAGE } from './localized-coverage.generated'
 import {
+  MIN_LOCALIZED_HUB,
   ARTICLE_PRIMARY_TOPIC,
   ARTICLE_TOPIC_HUBS,
   ARTICLE_WORLD,
@@ -91,7 +92,7 @@ export function hubLastModified(topic: ArticleTopicSlug): string | null {
 // A localized hub lists only articles that have a prerendered page in that
 // language, and exists only when it has at least MIN_LOCALIZED_HUB of them
 // (thinner topics are listed flat on /<lang>/articles instead).
-export const MIN_LOCALIZED_HUB = 3
+export { MIN_LOCALIZED_HUB }
 const HUB_LANGS = ['en', 'es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'] as const
 
 function covered(lang: string, slug: string): boolean {
