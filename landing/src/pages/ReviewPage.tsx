@@ -14,7 +14,8 @@ import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
-import { getReviewBySlug, getCriterion, getHeadToHeadsForProduct } from '../data/reviews'
+import { readReview, getReviewBySlug, getHeadToHeadsForProduct } from '../lib/review-content'
+import { getCriterion } from '../data/reviews/criteria'
 import { langFromPath, langHref } from '../i18n'
 
 export function ReviewPage() {
@@ -22,7 +23,8 @@ export function ReviewPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
   const { t: tReviews } = useTranslation('reviews')
-  const review = slug ? getReviewBySlug(slug) : undefined
+  // Full text of THIS review only (browser: fetched on demand; prerender: registry).
+  const review = slug ? readReview(slug, lang) : undefined
   if (!review) return <NotFoundPage />
 
   // Translation helpers — fall back to the original EN field if no translation.

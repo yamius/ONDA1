@@ -5,6 +5,7 @@ import './index.css'
 import { Layout } from './components/Layout'
 import i18n, { langFromPath, SUPPORTED_LANGS, ensureNamespace } from './i18n'
 import { loadArticle } from './lib/article-loader'
+import { loadEntry } from './lib/content-loader'
 
 // Sync language with URL before hydration so first paint matches the prerendered HTML
 void i18n.changeLanguage(langFromPath(window.location.pathname))
@@ -477,6 +478,15 @@ const preloads: Promise<unknown>[] = matched
 const articleMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?articles\/([^/]+)\/?$/)
 if (articleMatch && articleMatch[2] !== 'topic') {
   preloads.push(loadArticle(articleMatch[2], langFromPath(window.location.pathname)))
+}
+// Review / comparison / head-to-head pages: same, one entry. (A category URL like
+// /reviews/hrv-trackers just misses the body file — harmless, the page doesn't read it.)
+const reviewMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?reviews\/(?:(compare|vs)\/)?([^/]+)\/?$/)
+const termMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?glossary\/([^/]+)\/?$/)
+if (termMatch) preloads.push(loadEntry('glossary', termMatch[1], langFromPath(window.location.pathname)))
+if (reviewMatch && reviewMatch[2] !== 'methodology') {
+  const collection = reviewMatch[1] === 'compare' ? 'comparisons' : reviewMatch[1] === 'vs' ? 'h2h' : 'reviews'
+  preloads.push(loadEntry(collection, reviewMatch[2], langFromPath(window.location.pathname)))
 }
 void Promise.all(preloads)
   .catch(() => { /* a chunk/namespace that fails to preload still renders below (it just suspends once) */ })

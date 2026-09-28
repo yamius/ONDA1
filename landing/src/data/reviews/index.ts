@@ -247,7 +247,7 @@ import bestAirPurifiers2026 from './best-air-purifiers-2026'
 const TODAY = new Date().toISOString().slice(0, 10)
 
 /** Full registry — including date-gated future entries. Internal only. */
-const ALL_REVIEWS: ToolReview[] = [
+export const ALL_REVIEWS: ToolReview[] = [
   ouraRing4,
   ouraRing5,
   whoop5,
@@ -445,7 +445,7 @@ export const reviews: ToolReview[] = ALL_REVIEWS.filter(
 )
 
 /** Full registry of comparisons — including date-gated future entries. */
-const ALL_COMPARISONS: Comparison[] = [
+export const ALL_COMPARISONS: Comparison[] = [
   bestHrvTrackers2026,
   bestMeditationApps2026,
   bestSleepApps2026,

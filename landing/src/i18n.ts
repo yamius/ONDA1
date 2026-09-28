@@ -112,8 +112,8 @@ function loaders() {
       // (A negated pattern applies to the whole list, so the tiny EN articles.json —
       // UI strings only, EN bodies live in src/data/articles — is its own glob.)
       locale: {
-        ...import.meta.glob(['../public/locales/*/*.json', '!../public/locales/*/articles.json'], { import: 'default' }),
-        ...import.meta.glob('../public/locales/en/articles.json', { import: 'default' }),
+        ...import.meta.glob(['../public/locales/*/*.json', '!../public/locales/*/articles.json', '!../public/locales/*/reviews.json', '!../public/locales/*/glossary.json'], { import: 'default' }),
+        ...import.meta.glob(['../public/locales/en/articles.json', '../public/locales/en/reviews.json', '../public/locales/en/glossary.json'], { import: 'default' }),
       },
       generated: import.meta.glob('./generated/i18n/*/*.json', { import: 'default' }),
     }
@@ -129,11 +129,11 @@ function loaders() {
  */
 function loaderFor(l: Lang, ns: string): JsonLoader | undefined {
   const { locale, generated } = loaders()
-  if (ns === 'glossary-light') {
-    return l === 'en' ? locale['../public/locales/en/glossary.json'] : generated[`./generated/i18n/${l}/glossary-light.json`]
+  const file = ns === 'glossary-light' ? 'glossary' : ns
+  if (l !== 'en' && (file === 'articles' || file === 'reviews' || file === 'glossary')) {
+    return generated[`./generated/i18n/${l}/${file}.json`]
   }
-  if (ns === 'articles' && l !== 'en') return generated[`./generated/i18n/${l}/articles.json`]
-  return locale[`../public/locales/${l}/${ns}.json`]
+  return locale[`../public/locales/${l}/${file}.json`]
 }
 export function ensureNamespace(lng: Lang, ns: string): Promise<void> {
   const langs: Lang[] = lng === 'en' ? ['en'] : [lng, 'en']

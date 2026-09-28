@@ -9,11 +9,7 @@ import { storeCt } from '../lib/storeCt'
 import { useLocation, useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
-import {
-  getHeadToHeadBySlug,
-  getReviewBySlug,
-  getComparisonBySlug,
-} from '../data/reviews'
+import { readHeadToHead, getReviewBySlug, getComparisonBySlug } from '../lib/review-content'
 import { langFromPath, langHref } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
 
@@ -23,7 +19,8 @@ export function HeadToHeadPage() {
   const lang = langFromPath(pathname)
   const { t: tReviews } = useTranslation('reviews')
 
-  const h2h = slug ? getHeadToHeadBySlug(slug) : undefined
+  // Full text of THIS duel only (browser: fetched on demand; prerender: registry).
+  const h2h = slug ? readHeadToHead(slug, lang) : undefined
   if (!h2h) return <NotFoundPage />
 
   // Localized body override: reads locales/<lang>/reviews.json →

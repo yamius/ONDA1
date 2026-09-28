@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { glossaryTerms, glossaryLayer } from '../data/glossary'
+import { glossaryTerms, glossaryLayer } from '../lib/glossary-content'
 import {
   CATEGORY_DESCRIPTIONS,
   FEATURED_TERM_SLUGS,

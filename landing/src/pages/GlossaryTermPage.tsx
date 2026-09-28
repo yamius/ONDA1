@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next'
 import { NotFoundPage } from './NotFoundPage'
 import Markdown from 'react-markdown'
 import rehypeSlug from 'rehype-slug'
-import { getTermBySlug, glossaryTerms, glossaryLayer } from '../data/glossary'
+import { readTerm, glossaryTerms, glossaryLayer } from '../lib/glossary-content'
 import { injectGlossaryLinks } from '../utils/glossaryLinks'
 import { syncOgLocale } from '../utils/ogLocale'
 import { ARTICLE_DATES } from '../data/article-dates.generated'
@@ -30,10 +30,11 @@ function setMeta(name: string, content: string, isProperty = false) {
 
 export function GlossaryTermPage() {
   const { slug } = useParams<{ slug: string }>()
-  const term = slug ? getTermBySlug(slug) : undefined
   const { t: tGloss } = useTranslation('glossary')
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
+  // Full text of THIS term only (browser: fetched on demand; prerender: full glossary).
+  const term = slug ? readTerm(slug, lang) : undefined
   const langPrefix = lang === 'en' ? '' : `/${lang}`
   const tField = (termSlug: string, key: string, fallback: string): string =>
     tGloss(`bodies.${termSlug}.${key}`, { defaultValue: fallback }) as string

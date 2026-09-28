@@ -7,7 +7,8 @@
  */
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { reviews, comparisons, headToHeads, LIVE_REVIEW_CATEGORIES, CATEGORY_LABELS, CATEGORY_URL_SLUGS, getReviewBySlug } from '../data/reviews'
+import { reviews, comparisons, headToHeads, LIVE_REVIEW_CATEGORIES, getReviewBySlug } from '../lib/review-content'
+import { CATEGORY_LABELS, CATEGORY_URL_SLUGS } from '../data/reviews/criteria'
 import { langFromPath, langHref } from '../i18n'
 
 export function ReviewsPage() {

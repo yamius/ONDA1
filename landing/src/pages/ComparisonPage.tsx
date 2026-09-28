@@ -13,12 +13,8 @@ import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
-import {
-  getComparisonBySlug,
-  getReviewsForComparison,
-  getReviewBySlug,
-  getCriteria,
-} from '../data/reviews'
+import { readComparison, getReviewsForComparison, getReviewBySlug } from '../lib/review-content'
+import { getCriteria } from '../data/reviews/criteria'
 import { langFromPath, langHref } from '../i18n'
 
 export function ComparisonPage() {
@@ -26,7 +22,8 @@ export function ComparisonPage() {
   const { pathname } = useLocation()
   const lang = langFromPath(pathname)
   const { t: tReviews } = useTranslation('reviews')
-  const comparison = slug ? getComparisonBySlug(slug) : undefined
+  // Full text of THIS comparison only (browser: fetched on demand; prerender: registry).
+  const comparison = slug ? readComparison(slug, lang) : undefined
   if (!comparison) return <NotFoundPage />
 
   const tField = (key: string, fallback: string): string =>

@@ -12,7 +12,7 @@ import Markdown from 'react-markdown'
 import { NotFoundPage } from './NotFoundPage'
 import { getTopicBySlug } from '../data/topics'
 import { getArticleMeta as getArticleBySlug } from '../lib/article-content'
-import { getTermBySlug } from '../data/glossary'
+import { getTermBySlug } from '../lib/glossary-content'
 
 export function TopicPage() {
   const { slug } = useParams<{ slug: string }>()

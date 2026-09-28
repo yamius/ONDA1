@@ -17,12 +17,10 @@ import {
   comparisons,
   headToHeads,
   LIVE_REVIEW_CATEGORIES,
-  CATEGORY_LABELS,
-  CATEGORY_URL_SLUGS,
-  getCategoryByUrlSlug,
   getReviewBySlug,
-  type ReviewCategory,
-} from '../data/reviews'
+} from '../lib/review-content'
+import { CATEGORY_LABELS, CATEGORY_URL_SLUGS, getCategoryByUrlSlug } from '../data/reviews/criteria'
+import type { ReviewCategory } from '../data/reviews/types'
 import { langFromPath, langHref } from '../i18n'
 import { NotFoundPage } from './NotFoundPage'
 

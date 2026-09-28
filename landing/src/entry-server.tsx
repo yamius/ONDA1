@@ -77,7 +77,15 @@ import { ReviewMethodologyPage } from './pages/ReviewMethodologyPage'
 import { ReviewPage } from './pages/ReviewPage'
 import { ReviewCategoryPage } from './pages/ReviewCategoryPage'
 import { HeadToHeadPage } from './pages/HeadToHeadPage'
-import { CATEGORY_URL_SLUG_SET } from './data/reviews'
+import { CATEGORY_URL_SLUG_SET, getReviewBySlug as getFullReview, getComparisonBySlug as getFullComparison, getHeadToHeadBySlug as getFullHeadToHead } from './data/reviews'
+import { registerServerReviewSource } from './lib/review-content'
+import { getTermBySlug as getFullTerm } from './data/glossary'
+import { registerServerGlossarySource } from './lib/glossary-content'
+
+registerServerGlossarySource(getFullTerm)
+
+// Prerender renders reviews from the full registry (the browser fetches one entry at a time).
+registerServerReviewSource({ review: getFullReview, comparison: getFullComparison, h2h: getFullHeadToHead })
 import { ComparisonPage } from './pages/ComparisonPage'
 import { getArticleBySlug } from './data/articles'
 import { ARTICLE_FAQ } from './data/article-faq'

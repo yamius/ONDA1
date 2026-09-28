@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { getTermBySlug } from '../data/glossary'
+import { getTermBySlug } from '../lib/glossary-content'
 import { langFromPath, langHref } from '../i18n'
 
 interface GlossaryTooltipProps {

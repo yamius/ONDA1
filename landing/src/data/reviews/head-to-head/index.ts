@@ -214,7 +214,7 @@ import headspaceVsInsight from './headspace-vs-insight-timer'
 import healthyMindsVsWakingUp from './healthy-minds-program-vs-waking-up'
 
 /** The full registry — including any future-dated entries. Internal only. */
-const ALL_HEAD_TO_HEADS: HeadToHead[] = [
+export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   // Three-way duels
   ouraVsWhoopVsApple,
   threeRings,

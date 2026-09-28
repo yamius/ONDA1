@@ -9,7 +9,7 @@
  * routing logic and the data definitions cannot drift apart.
  */
 import { useParams } from 'react-router-dom'
-import { CATEGORY_URL_SLUG_SET } from '../data/reviews'
+import { CATEGORY_URL_SLUG_SET } from '../data/reviews/criteria'
 import { ReviewPage } from '../pages/ReviewPage'
 import { ReviewCategoryPage } from '../pages/ReviewCategoryPage'
 

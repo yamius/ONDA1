@@ -11,7 +11,7 @@
  */
 import { useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
-import { REVIEW_CATEGORIES, CATEGORY_LABELS, getCriteria } from '../data/reviews'
+import { REVIEW_CATEGORIES, CATEGORY_LABELS, getCriteria } from '../data/reviews/criteria'
 import { langFromPath, langHref } from '../i18n'
 
 export function ReviewMethodologyPage() {
