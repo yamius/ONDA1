@@ -162,7 +162,7 @@ interface PartFile {
  */
 interface ArticlesFile {
   breadcrumb?: { home?: string; current?: string }
-  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[]; faq?: { question: string; answer: string }[]; faqSchema?: { question: string; answer: string }[]; imageAlt?: string }>
+  bodies?: Record<string, { title?: string; description?: string; howToSteps?: { name: string; text: string }[]; faq?: { q: string; a: string }[]; faqSchema?: { q: string; a: string }[]; imageAlt?: string }>
 }
 
 /**
@@ -192,7 +192,7 @@ function localizeArticleJsonLd(html: string, lang: Lang, slug: string, url: stri
       if (!faqList?.length) return ''
       data.inLanguage = lang
       if (data.url) data.url = url
-      data.mainEntity = faqList.map((f) => ({ '@type': 'Question', name: f.question, acceptedAnswer: { '@type': 'Answer', text: f.answer } }))
+      data.mainEntity = faqList.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
       return `<script type="application/ld+json">${JSON.stringify(data)}</script>`
     }
     if (type === 'TechArticle' || type === 'Article' || type === 'BlogPosting') {
@@ -259,11 +259,39 @@ interface ReviewsFile {
   ui?: { metaReviewTitle?: string }
   bodies?: Record<string, { description?: string; faq?: { q: string; a: string }[] }>
   comparisons?: Record<string, { title?: string; description?: string }>
-  headToHeads?: Record<string, { title?: string; description?: string }>
+  headToHeads?: Record<string, { title?: string; description?: string; faq?: { q: string; a: string }[] }>
 }
 const reviewsByLang: Record<Lang, ReviewsFile> = {} as Record<Lang, ReviewsFile>
 for (const lang of SUPPORTED_LANGS) {
   reviewsByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'reviews.json'), 'utf-8')) as ReviewsFile
+}
+
+/** Localized review/h2h FAQPage: rewrite the EN one to the translated Q&A, drop it when
+ *  there is no translation, and add one when the page had none but a translation exists. */
+function localizeFaqJsonLd(html: string, lang: string, url: string, faq?: { q: string; a: string }[]): string {
+  let found = false
+  let out = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (whole, json: string) => {
+    let data: Record<string, unknown>
+    try { data = JSON.parse(json) } catch { return whole }
+    if (data['@type'] !== 'FAQPage') return whole
+    found = true
+    if (!faq?.length) return ''
+    data.inLanguage = lang
+    data.mainEntity = faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
+    return `<script type="application/ld+json">${JSON.stringify(data)}</script>`
+  })
+  if (!found && faq?.length) {
+    const data = {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      url,
+      inLanguage: lang,
+      mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+    }
+    out = out.replace('</head>', `  <script type="application/ld+json">${JSON.stringify(data)}</script>
+</head>`)
+  }
+  return out
 }
 
 type ReviewKind = 'hub' | 'methodology' | 'review' | 'comparison' | 'headToHead'
@@ -893,6 +921,7 @@ for (const route of routes) {
           const h = rf.headToHeads?.[reviewInfo.slug]
           title = h?.title ? fitTitle(h.title, ' | ONDA Life') : ''
           desc = h?.description ?? ''
+          out = localizeFaqJsonLd(out, reviewInfo.lang, reviewUrlFor('headToHead', reviewInfo.slug, reviewInfo.lang), h?.faq)
         } else {
           const review = getReviewBySlug(reviewInfo.slug)
           if (review) {
@@ -902,18 +931,7 @@ for (const route of routes) {
               .replace('{{score}}', review.overallScore.toFixed(1))} | ONDA Life`
           }
           desc = rf.bodies?.[reviewInfo.slug]?.description ?? ''
-          // FAQPage must describe the Q&A actually shown: the translated FAQ when the
-          // body has one, otherwise drop the English FAQPage from this localized URL.
-          const lfaq = rf.bodies?.[reviewInfo.slug]?.faq
-          out = out.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (whole, json: string) => {
-            let data: Record<string, unknown>
-            try { data = JSON.parse(json) } catch { return whole }
-            if (data['@type'] !== 'FAQPage') return whole
-            if (!lfaq?.length) return ''
-            data.inLanguage = reviewInfo.lang
-            data.mainEntity = lfaq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } }))
-            return `<script type="application/ld+json">${JSON.stringify(data)}</script>`
-          })
+          out = localizeFaqJsonLd(out, reviewInfo.lang, reviewUrlFor('review', reviewInfo.slug, reviewInfo.lang), rf.bodies?.[reviewInfo.slug]?.faq)
         }
         const url = reviewUrlFor(reviewInfo.kind, reviewInfo.slug, reviewInfo.lang)
         const escUrl = escAttr(url)

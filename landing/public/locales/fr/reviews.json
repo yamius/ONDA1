@@ -54,7 +54,15 @@
     "overall": "Global",
     "metaReviewTitle": "Test {{name}} — note {{score}}/10",
     "commonQuestions": "Questions fréquentes",
-    "headToHeadHeading": "Comparatifs face à face"
+    "headToHeadHeading": "Comparatifs face à face",
+    "choose": "Choisir",
+    "criterion": "Critère",
+    "faqHeading": "Questions fréquentes",
+    "headToHeadBreakdownHeading": "Comparatif détaillé",
+    "seeFullRanking": "Voir le classement complet",
+    "tie": "Égalité",
+    "why": "Pourquoi",
+    "winner": "Gagnant"
   },
   "testStatus": {
     "hands-on": "Testé en conditions réelles",
@@ -102,6 +110,14 @@
           "a": "Le Resona Health VIBE convient surtout aux curieux de la PEMF qui veulent une entrée peu engageante, une PEMF portable, ou un appareil à usage ciblé riche en protocoles à moins de 300 $. Il ne convient pas au traitement simultané du corps entier, pour lequel un tapis corps entier est le meilleur choix."
         }
       ]
+    },
+    "apple-watch-series-12": {
+      "verdict": "La meilleure Apple Watch à ce jour pour la VFC : une mesure 24× plus fréquente et une distinction Recovery vs Overall HRV — mais toujours une montre connectée avant tout, dont l’autonomie reste en concurrence avec le port nocturne.",
+      "productType": "Montre connectée"
+    },
+    "whoop-5-0": {
+      "verdict": "Un coach de récupération au poignet : VFC nocturne continue et analyse fine de l’effort, verrouillées derrière un abonnement perpétuel.",
+      "productType": "Bracelet sans écran"
     }
   },
   "comparisons": {},
@@ -115,5 +131,60 @@
   },
   "categories": {
     "pemf": "Appareils PEMF"
+  },
+  "headToHeads": {
+    "apple-watch-series-12-vs-whoop-5-0": {
+      "title": "Apple Watch Series 12 vs Whoop 5.0 : lequel choisir ? (2026)",
+      "description": "Apple Watch Series 12 vs Whoop 5.0 pour la VFC et la récupération : montre sans abonnement ou coach de récupération sur abonnement. Qui gagne où.",
+      "intro": "Ces deux appareils répondent à la même question de deux façons. La Series 12 de septembre 2026 mesure enfin la VFC assez souvent, et avec la bonne métrique (la Recovery HRV basée sur le RMSSD), pour devenir un vrai signal de récupération — dans une montre connectée sans abonnement. Le Whoop 5.0 est un bracelet uniquement sur abonnement, conçu dès le départ autour de la VFC nocturne continue et du coaching récupération-effort le plus pointu de la catégorie. L’un est une montre à tout faire ; l’autre, un coach dédié.",
+      "verdict": "Pas de vainqueur absolu — choisissez selon que vous voulez un coaching ou un appareil à tout faire. Le Whoop 5.0 domine pour la VFC nocturne continue, le coaching récupération-effort et l’autonomie de plusieurs jours ; la Series 12 l’emporte en tant que montre connectée sans abonnement, avec ECG, dont la VFC est désormais assez fiable pour guider vos décisions.",
+      "bestForA": "Choisissez la Series 12 si vous voulez une seule montre connectée sans abonnement — ECG, notifications d’hypertension, applications — avec une VFC enfin assez fiable pour guider vos décisions.",
+      "bestForB": "Choisissez le Whoop 5.0 si le coaching récupération-effort dicte votre entraînement et que vous voulez une VFC nocturne continue grâce à un bracelet sans écran — en acceptant l’abonnement permanent.",
+      "axes": [
+        {
+          "name": "VFC nocturne continue",
+          "note": "Le Whoop mesure la VFC en continu toute la nuit et affiche une moyenne sur l’ensemble du sommeil ; la Series 12 mesure souvent (24× plus qu’avant), mais c’est une montre que vous ne porterez peut-être pas toutes les nuits."
+        },
+        {
+          "name": "Coaching de récupération",
+          "note": "Le modèle Recovery + Strain de Whoop est le coach de forme quotidienne le plus pointu des wearables grand public. La Series 12 vous donne les chiffres (Recovery vs Overall HRV), mais des conseils plus légers."
+        },
+        {
+          "name": "Autonomie / port nocturne",
+          "note": "Le Whoop tient ~14 jours et se recharge au poignet sans être retiré ; l’autonomie d’environ 1 jour de la Series 12 entre en concurrence avec la mesure nocturne."
+        },
+        {
+          "name": "Abonnement / coût",
+          "note": "La Series 12 coûte 399 $ en une fois, sans abonnement. Le Whoop fonctionne uniquement sur abonnement, à ~239 $/an — moins cher la première année, mais un coût qui ne s’arrête jamais."
+        },
+        {
+          "name": "Montre connectée au quotidien",
+          "note": "La Series 12 a un écran, des applications, des notifications, le paiement, l’ECG et les notifications d’hypertension ; le Whoop est un bracelet de récupération sans écran."
+        },
+        {
+          "name": "Comparabilité de la métrique VFC",
+          "note": "La Recovery HRV de la Series 12 repose désormais sur le RMSSD, la même famille que celle utilisée par Whoop : les deux sont enfin comparables sur le fond."
+        },
+        {
+          "name": "Accès aux données",
+          "note": "HealthKit d’Apple (désormais avec le RMSSD natif) est plus ouvert que l’écosystème largement fermé de Whoop."
+        }
+      ],
+      "faq": [
+        {
+          "q": "L’Apple Watch Series 12 est-elle aussi bonne que le Whoop pour la récupération ?",
+          "a": "Pour les chiffres, l’écart s’est nettement réduit — la Recovery HRV de la Series 12, basée sur le RMSSD, appartient à la même famille de métriques que celle de Whoop. Le Whoop garde l’avantage pour la mesure nocturne continue, un coaching récupération-effort plus pointu et une autonomie d’environ 14 jours. La Series 12 l’emporte en tant que montre connectée sans abonnement, avec ECG."
+        },
+        {
+          "q": "L’Apple Watch Series 12 nécessite-t-elle un abonnement comme le Whoop ?",
+          "a": "Non. La Series 12 coûte 399 $ en une fois, sans abonnement. Le Whoop fonctionne uniquement sur abonnement, à environ 239 $ par an — le bracelet est inclus, mais si vous arrêtez de payer, il cesse de fonctionner."
+        },
+        {
+          "q": "Whoop ou Apple Watch pour la VFC : lequel acheter ?",
+          "a": "Pour un coaching de récupération à appliquer au quotidien et une VFC nocturne continue, le Whoop 5.0. Pour un seul appareil qui gère aussi l’ECG, les applications et le paiement, sans abonnement, avec une VFC désormais assez fiable pour guider vos décisions, la Series 12. Un athlète qui s’entraîne en fonction de ce signal penchera pour Whoop ; la plupart des gens pencheront pour l’Apple Watch."
+        }
+      ],
+      "content": "## En bref\n\nChoisissez selon l’usage. Le Whoop 5.0 est le coach de récupération dédié — VFC nocturne continue, le modèle Recovery-and-Strain le plus pointu, un bracelet sans écran d’environ 14 jours d’autonomie — mais sur abonnement. La Series 12 est une montre connectée sans abonnement dont la VFC, depuis la mise à jour Health Sensing System de septembre 2026, est enfin assez fiable pour guider vos décisions, avec en prime l’ECG et les notifications d’hypertension.\n\n## Pourquoi la Series 12 a comblé l’écart\n\nApple affiche désormais une Recovery HRV basée sur le RMSSD, mesurée bien plus souvent — le même type de métrique que celle du modèle de récupération de Whoop. Voir [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) et [pourquoi la VFC diffère d’un appareil à l’autre](/articles/hrv-different-every-device).\n\n## La réserve honnête\n\nLe Whoop est conçu pour être porté 24 h/24 et vous coacher chaque jour ; l’Apple Watch est une montre connectée généraliste que vous ne porterez peut-être pas toutes les nuits, et son autonomie d’environ 1 jour entre en concurrence avec la mesure nocturne. Si la VFC nocturne continue est tout l’enjeu, consultez les [meilleurs capteurs de VFC de 2026](/reviews/compare/best-hrv-trackers-2026) — une bague ou un bracelet vous conviendra peut-être mieux qu’une montre."
+    }
   }
 }

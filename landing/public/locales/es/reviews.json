@@ -1112,10 +1112,6 @@
       "verdict": "Para la señal de HRV nocturno y de sueño más limpia en algo que puedas llevar a todas horas, el Oura Ring 4 gana en conjunto. Los deportistas que entrenan con una puntuación diaria de recuperación deberían mirar el Whoop 5.0, y quien quiera una precisión de referencia debería recurrir a la banda pectoral Polar H10. Por debajo de ellos el campo está apretado, y la respuesta correcta es sobre todo cuestión de encaje: el RingConn Gen 2 por valor y autonomía, el Samsung Galaxy Ring para usuarios de Android, Garmin y Apple para un dispositivo de uso diario que lo hace todo, el Withings ScanWatch 2 para un cribado clínico discreto, y el Fitbit Charge 6 como rampa de acceso económica. El único dispositivo al que acercarse con cautela es el Ultrahuman Ring Air — excelente sobre el papel, pero ensombrecido por informes generalizados sobre la fiabilidad de la batería.",
       "content": "## Cómo los clasificamos\n\nCada dispositivo se puntuó con la [metodología de reseñas](/reviews/methodology) publicada por ONDA: siete criterios ponderados, con la precisión de la medición de HRV con el mayor peso porque es la métrica para la que existe esta categoría. La puntuación global es la media ponderada — no un número elegido a ojo.\n\nTodos se evaluaron a partir de las especificaciones del fabricante, reseñas independientes de 2026 y literatura de validación publicada en lugar de pruebas en persona, así que toma las puntuaciones como un punto de partida basado en evidencia.\n\n## La versión corta\n\nLas puntuaciones se agrupan de forma muy ajustada — cada dispositivo de aquí es genuinamente capaz, y la elección correcta es sobre todo cuestión de cómo quieres llevarlo. El Oura Ring 4 gana porque hace la tarea central, el HRV nocturno y el sueño, mejor que cualquier otra cosa que puedas llevar a todas horas. El Polar H10 encabezaría una clasificación de precisión pura, pero una banda pectoral es un instrumento deliberado, no un wearable de estilo de vida. A partir de ahí se divide por necesidad: Whoop para deportistas, RingConn por valor, Samsung para Android, Garmin y Apple para un dispositivo de uso diario que lo hace todo, Withings para un cribado clínico discreto, Fitbit para empezar con poco presupuesto — y el Ultrahuman Ring Air solo con su salvedad de fiabilidad de la batería firmemente en mente.",
       "picks": {
-        "oura-ring-4": {
-          "award": "Mejor en conjunto",
-          "takeaway": "Los datos de HRV nocturno y de sueño más precisos, en el formato más pequeño — si aceptas la suscripción."
-        },
         "whoop-5-0": {
           "award": "Mejor para deportistas",
           "takeaway": "HRV nocturno continuo y el coaching de recuperación más nítido, para quien entrena con la señal."
@@ -1136,21 +1132,9 @@
           "award": "Mejor para Android",
           "takeaway": "Seguimiento de anillo estilo Oura para usuarios de Android, sin suscripción — si vives en Samsung Health."
         },
-        "ultrahuman-ring-air": {
-          "award": "Anillo más cómodo",
-          "takeaway": "Un anillo ligerísimo y sin suscripción con un seguimiento del sueño sólido — ensombrecido por informes de fiabilidad de la batería."
-        },
-        "apple-watch-series-11": {
-          "award": "Mejor smartwatch todoterreno",
-          "takeaway": "El smartwatch más capaz de aquí, pero hace comprobaciones puntuales del HRV en lugar de seguirlo."
-        },
         "ringconn-gen-2": {
           "award": "Mejor autonomía",
           "takeaway": "Una batería de ~12 días y funciones de anillo premium por aproximadamente la mitad del coste a largo plazo — la opción de valor."
-        },
-        "fitbit-charge-6": {
-          "award": "Mejor opción económica",
-          "takeaway": "La rampa de acceso barata y fiable al seguimiento de HRV — válida para tendencias, no un instrumento de recuperación."
         }
       },
       "faq": [

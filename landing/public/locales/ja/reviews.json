@@ -54,7 +54,15 @@
     "overall": "Overall",
     "metaReviewTitle": "{{name}} レビュー — 評価 {{score}}/10",
     "commonQuestions": "よくある質問",
-    "headToHeadHeading": "直接比較"
+    "headToHeadHeading": "直接比較",
+    "choose": "選ぶなら",
+    "criterion": "評価項目",
+    "faqHeading": "よくある質問",
+    "headToHeadBreakdownHeading": "項目別の比較",
+    "seeFullRanking": "ランキング全体を見る",
+    "tie": "引き分け",
+    "why": "理由",
+    "winner": "勝者"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -102,6 +110,14 @@
           "a": "Resona Health VIBEは、PEMFに興味があり気軽に始めたい人、持ち運べるウェアラブルPEMFが欲しい人、$300未満でプロトコルが豊富な部位別デバイスを求める人に最適です。全身を同時にカバーしたい場合は向いておらず、フルボディマットのほうが適しています。"
         }
       ]
+    },
+    "apple-watch-series-12": {
+      "verdict": "HRVに関しては歴代最高のApple Watch。計測頻度は24倍になり、Recovery HRVとOverall HRVの区別も追加。ただしあくまでスマートウォッチが本分で、バッテリーは依然として夜間装着と両立させにくい面があります。",
+      "productType": "スマートウォッチ"
+    },
+    "whoop-5-0": {
+      "verdict": "手首に着けるリカバリーコーチ。夜間の連続HRVと鋭いストレイン分析を備えるが、終わりのないメンバーシップが前提です。",
+      "productType": "画面のないバンド"
     }
   },
   "comparisons": {},
@@ -115,5 +131,60 @@
   },
   "categories": {
     "pemf": "PEMFデバイス"
+  },
+  "headToHeads": {
+    "apple-watch-series-12-vs-whoop-5-0": {
+      "title": "Apple Watch Series 12 vs Whoop 5.0 比較（2026）",
+      "description": "HRVとリカバリーで比べるApple Watch Series 12とWhoop 5.0。新Health Sensing System搭載のサブスク不要スマートウォッチと、サブスク専用のリカバリーコーチ。それぞれの強みを解説。",
+      "intro": "この2つは同じ問いに別々の方法で答えます。2026年9月発売のSeries 12は、ついにHRVを十分な頻度で、しかも適切な指標（RMSSDベースのRecovery HRV）で計測するようになり、サブスク不要のスマートウォッチでありながら本格的なリカバリー指標として使えるレベルになりました。一方のWhoop 5.0は、夜間の連続HRV計測を軸にゼロから設計されたサブスク専用バンドで、リカバリーとストレインのコーチングはこのカテゴリーで最も鋭いものです。片方は何でもこなすウォッチ、もう片方は専属コーチです。",
+      "verdict": "総合的な勝者はありません。コーチングを求めるか、何でもこなすデバイスを求めるかで選びましょう。夜間の連続HRV、リカバリーとストレインのコーチング、数日持つバッテリーではWhoop 5.0が優位。サブスク不要でECGを備え、HRVが実際の判断に使えるレベルになったスマートウォッチという点ではSeries 12が勝ります。",
+      "bestForA": "ECG、高血圧通知、アプリを備えたサブスク不要のスマートウォッチを1台で済ませたく、しかもHRVがようやく判断材料として使える水準になったものを求めるならSeries 12。",
+      "bestForB": "リカバリーとストレインのコーチングをトレーニングの軸にしていて、画面のないバンドで夜間の連続HRVを取りたいなら、継続的なメンバーシップ料金を受け入れたうえでWhoop 5.0。",
+      "axes": [
+        {
+          "name": "夜間の連続HRV",
+          "note": "Whoopは夜通しHRVを連続計測し、睡眠全体の平均値を示します。Series 12も高頻度（従来の24倍）で計測しますが、毎晩着けるとは限らないウォッチです。"
+        },
+        {
+          "name": "リカバリーのコーチング",
+          "note": "WhoopのRecovery + Strainモデルは、一般向けウェアラブルで最も鋭い日々のコンディション（レディネス）コーチです。Series 12は数値（Recovery HRVとOverall HRV）は示すものの、ガイダンスは控えめです。"
+        },
+        {
+          "name": "バッテリー／夜間の装着",
+          "note": "Whoopは約14日持ち、外さずに装着したまま充電できます。Series 12のバッテリーは約1日で、夜間計測と両立させにくい面があります。"
+        },
+        {
+          "name": "サブスク／コスト",
+          "note": "Series 12は$399の買い切りでサブスク不要。Whoopはサブスク専用で年額約$239。初年度は安いものの、費用はずっと続きます。"
+        },
+        {
+          "name": "日常のスマートウォッチ機能",
+          "note": "Series 12は画面、アプリ、通知、決済、ECG、高血圧通知を備えています。Whoopは画面のないリカバリーバンドです。"
+        },
+        {
+          "name": "HRV指標の比較しやすさ",
+          "note": "Series 12のRecovery HRVはRMSSDベースになり、Whoopと同系統の指標になったため、両者はようやく同じ種類の値として比較できるようになりました。"
+        },
+        {
+          "name": "データへのアクセス",
+          "note": "AppleのHealthKit（RMSSDにネイティブ対応）は、ほぼクローズドなWhoopのエコシステムよりオープンです。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "リカバリー計測でApple Watch Series 12はWhoopに匹敵しますか？",
+          "a": "数値に関しては以前よりずっと近づいています。Series 12のRMSSDベースのRecovery HRVは、Whoopと同系統の指標です。ただし夜間の連続計測、より鋭いリカバリーとストレインのコーチング、約14日のバッテリーでは依然Whoopが優位です。Series 12はECG付きでサブスク不要のスマートウォッチである点が強みです。"
+        },
+        {
+          "q": "Apple Watch Series 12にはWhoopのようなサブスクが必要ですか？",
+          "a": "いいえ。Series 12は$399の買い切りで、サブスクはありません。Whoopはサブスク専用で年額約$239です。バンド本体は含まれますが、支払いをやめると使えなくなります。"
+        },
+        {
+          "q": "HRV計測ならWhoopとApple Watch、どちらを買うべき？",
+          "a": "毎日の判断に使うリカバリーコーチングと夜間の連続HRVを求めるならWhoop 5.0。ECG、アプリ、決済もこなし、サブスク不要で、HRVも判断に使える水準になった1台を求めるならSeries 12。この指標をもとにトレーニングするアスリートはWhoop寄り、多くの人はApple Watch寄りです。"
+        }
+      ],
+      "content": "## 要点まとめ\n\n用途で選びましょう。Whoop 5.0は専属のリカバリーコーチです。夜間の連続HRV、最も鋭いRecovery-and-Strainモデル、約14日持つ画面のないバンドを、サブスクリプションで提供します。Series 12はサブスク不要のスマートウォッチで、2026年9月のHealth Sensing Systemアップデートにより、HRVがようやく判断材料として使える水準になり、さらにECGと高血圧通知も備えています。\n\n## Series 12が差を縮めた理由\n\nAppleは現在、RMSSDベースのRecovery HRVをはるかに高い頻度で計測・表示しています。これはWhoopのリカバリーモデルが使っているのと同じ種類の指標です。詳しくは[Recovery HRVとOverall HRVの違い](/articles/apple-watch-recovery-hrv-vs-overall-hrv)と[HRVがデバイスごとに異なる値になる理由](/articles/hrv-different-every-device)をご覧ください。\n\n## 正直な注意点\n\nWhoopは24時間365日装着して毎日コーチングを受けるための設計です。Apple Watchは汎用のスマートウォッチで毎晩着けるとは限らず、約1日のバッテリーは夜間計測と両立させにくい面があります。夜間の連続HRVこそが目的なら、[2026年のおすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)をご覧ください。ウォッチよりリングやバンドのほうが合っているかもしれません。"
+    }
   }
 }

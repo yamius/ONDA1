@@ -31,7 +31,15 @@
     "overall": "Overall",
     "commonQuestions": "常见问题",
     "headToHeadHeading": "正面对比",
-    "metaReviewTitle": "{{name}} 评测 — 评分 {{score}}/10"
+    "metaReviewTitle": "{{name}} 评测 — 评分 {{score}}/10",
+    "choose": "选择",
+    "criterion": "评估标准",
+    "faqHeading": "常见问题",
+    "headToHeadBreakdownHeading": "逐项对比",
+    "seeFullRanking": "查看完整排名",
+    "tie": "平手",
+    "why": "原因",
+    "winner": "胜出"
   },
   "testStatus": {
     "hands-on": "Hands-on tested",
@@ -79,6 +87,14 @@
           "a": "Resona Health VIBE 最适合想低门槛尝试 PEMF、需要便携可穿戴 PEMF，或想要一台 $300 以内、方案丰富的局部使用设备的用户。它不适合需要同时进行全身疗程的场景，这种情况下全身理疗垫是更好的选择。"
         }
       ]
+    },
+    "apple-watch-series-12": {
+      "verdict": "迄今为止测 HRV 最好的 Apple Watch：采样频率提高 24 倍，并区分 Recovery HRV 与 Overall HRV——但它首先仍是一款智能手表，续航依然与夜间佩戴相冲突。",
+      "productType": "智能手表"
+    },
+    "whoop-5-0": {
+      "verdict": "戴在手腕上的恢复教练：连续夜间 HRV 与精准的负荷洞察，但必须绑定永久会员。",
+      "productType": "无屏手环"
     }
   },
   "comparisons": {},
@@ -92,5 +108,60 @@
   },
   "categories": {
     "pemf": "PEMF 设备"
+  },
+  "headToHeads": {
+    "apple-watch-series-12-vs-whoop-5-0": {
+      "title": "Apple Watch Series 12 与 Whoop 5.0 对比（2026）",
+      "description": "从 HRV 与恢复角度对比 Apple Watch Series 12 和 Whoop 5.0：一款无需订阅、搭载全新健康感知系统的智能手表，一款仅限订阅的恢复教练。看看各自的优势所在。",
+      "intro": "两者用两种方式回答同一个问题。2026 年 9 月发布的 Series 12 终于能以足够高的频率、并以正确的指标（基于 RMSSD 的 Recovery HRV）采样 HRV，使其成为真正的恢复信号——而且是在一款无需订阅的智能手表里。Whoop 5.0 是一款仅限订阅的手环，从一开始就围绕连续夜间 HRV 打造，拥有同类产品中最精准的恢复与负荷指导。一个是全能手表，另一个是专职教练。",
+      "verdict": "没有绝对的赢家——取决于你想要的是训练指导还是一台全能设备。Whoop 5.0 在连续夜间 HRV、恢复与负荷指导以及多日续航方面领先；Series 12 的优势在于它是一款无需订阅、带 ECG 的智能手表，而且其 HRV 现在已经足够可靠，可以据此行动。",
+      "bestForA": "如果你想要一款无需订阅的智能手表——ECG、高血压通知、各类应用——同时 HRV 终于足够可靠、可以据此行动，就选 Series 12。",
+      "bestForB": "如果恢复与负荷指导决定你的训练方式，并且你想从一款无屏手环获得连续夜间 HRV——同时接受持续的会员费用——就选 Whoop 5.0。",
+      "axes": [
+        {
+          "name": "连续夜间 HRV",
+          "note": "Whoop 整夜连续采样 HRV，并给出全程睡眠平均值；Series 12 采样频繁（比以前多 24 倍），但作为手表，你未必每晚都佩戴。"
+        },
+        {
+          "name": "恢复指导",
+          "note": "Whoop 的 Recovery + Strain 模型是消费级可穿戴设备中最精准的每日状态指导。Series 12 提供数据（Recovery HRV 与 Overall HRV），但指导较为简略。"
+        },
+        {
+          "name": "续航 / 夜间佩戴",
+          "note": "Whoop 续航约 14 天，无需摘下即可佩戴充电；Series 12 约 1 天的续航与夜间测量相互冲突。"
+        },
+        {
+          "name": "订阅 / 成本",
+          "note": "Series 12 一次性支付 $399，无需订阅。Whoop 仅限订阅，约 $239/年——第一年更便宜，但这是一笔永久的持续开销。"
+        },
+        {
+          "name": "日常智能手表",
+          "note": "Series 12 有屏幕、应用、通知、支付、ECG 和高血压通知；Whoop 是一款无屏恢复手环。"
+        },
+        {
+          "name": "HRV 指标可比性",
+          "note": "Series 12 的 Recovery HRV 现已基于 RMSSD，与 Whoop 使用的指标同属一类，两者终于可以在同一维度上比较。"
+        },
+        {
+          "name": "数据访问",
+          "note": "Apple 的 HealthKit（现已原生支持 RMSSD）比 Whoop 基本封闭的生态系统更开放。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apple Watch Series 12 在恢复监测方面和 Whoop 一样好吗？",
+          "a": "就数据而言，差距比以前小得多——Series 12 基于 RMSSD 的 Recovery HRV 与 Whoop 属于同一类指标。Whoop 在连续夜间采样、更精准的恢复与负荷指导以及约 14 天续航方面仍然领先。Series 12 的优势在于它是一款无需订阅、带 ECG 的智能手表。"
+        },
+        {
+          "q": "Apple Watch Series 12 像 Whoop 一样需要订阅吗？",
+          "a": "不需要。Series 12 一次性支付 $399，无需订阅。Whoop 仅限订阅，约 $239/年——手环包含在内，但一旦停止付费就无法使用。"
+        },
+        {
+          "q": "测 HRV 选 Whoop 还是 Apple Watch？",
+          "a": "如果你需要每天据此行动的恢复指导和连续夜间 HRV，选 Whoop 5.0。如果你想要一台同时具备 ECG、应用和支付功能、无需订阅、HRV 也已足够可靠的设备，选 Series 12。依据这一信号训练的运动员更适合 Whoop；大多数人更适合 Apple Watch。"
+        }
+      ],
+      "content": "## 简要结论\n\n按用途来选。Whoop 5.0 是专职的恢复教练——连续夜间 HRV、最精准的 Recovery-and-Strain 模型、约 14 天续航的无屏手环——但需要订阅。Series 12 是一款无需订阅的智能手表，在 2026 年 9 月健康感知系统更新后，其 HRV 终于足够可靠、可以据此行动，另外还有 ECG 和高血压通知。\n\n## Series 12 为何缩小了差距\n\nApple 现在提供基于 RMSSD、采样频率大幅提高的 Recovery HRV——与 Whoop 恢复模型所用的指标属于同一类。参见 [Recovery HRV 与 Overall HRV 的区别](/articles/apple-watch-recovery-hrv-vs-overall-hrv) 以及 [为什么不同设备测出的 HRV 各不相同](/articles/hrv-different-every-device)。\n\n## 需要坦白的一点\n\nWhoop 专为 24/7 佩戴和每日指导而设计；Apple Watch 是一款通用智能手表，你未必每晚都戴，而且约 1 天的续航与夜间测量相互冲突。如果连续夜间 HRV 才是你的核心需求，请查看 [2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)——戒指或手环可能比手表更适合你。"
+    }
   }
 }

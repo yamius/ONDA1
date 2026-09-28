@@ -54,7 +54,15 @@
     "overall": "Gesamt",
     "metaReviewTitle": "{{name}} im Test — Note {{score}}/10",
     "commonQuestions": "Häufige Fragen",
-    "headToHeadHeading": "Im direkten Vergleich"
+    "headToHeadHeading": "Im direkten Vergleich",
+    "choose": "Wähle",
+    "criterion": "Kriterium",
+    "faqHeading": "Häufige Fragen",
+    "headToHeadBreakdownHeading": "Direktvergleich im Detail",
+    "seeFullRanking": "Zum vollständigen Ranking",
+    "tie": "Unentschieden",
+    "why": "Warum",
+    "winner": "Sieger"
   },
   "testStatus": {
     "hands-on": "Praxistest",
@@ -102,6 +110,14 @@
           "a": "Resona Health VIBE eignet sich am besten für PEMF-Interessierte, die unverbindlich einsteigen möchten, tragbares PEMF suchen oder ein protokollreiches Gerät für gezielte Anwendung unter $300 wollen. Für eine gleichzeitige Ganzkörperanwendung ist es nicht gedacht — dafür ist eine Ganzkörpermatte die bessere Wahl."
         }
       ]
+    },
+    "apple-watch-series-12": {
+      "verdict": "Die beste Apple Watch bisher für HRV: 24× häufigere Messung und eine Aufteilung in Recovery und Overall HRV – aber weiterhin in erster Linie eine Smartwatch, und der Akku konkurriert weiter mit dem Tragen über Nacht.",
+      "productType": "Smartwatch"
+    },
+    "whoop-5-0": {
+      "verdict": "Ein Recovery-Coach am Handgelenk: kontinuierliche nächtliche HRV und präzise Strain-Einblicke – gebunden an eine dauerhafte Mitgliedschaft.",
+      "productType": "Band ohne Display"
     }
   },
   "comparisons": {},
@@ -115,5 +131,60 @@
   },
   "categories": {
     "pemf": "PEMF-Geräte"
+  },
+  "headToHeads": {
+    "apple-watch-series-12-vs-whoop-5-0": {
+      "title": "Apple Watch Series 12 vs. Whoop 5.0 im Vergleich (2026)",
+      "description": "Apple Watch Series 12 vs. Whoop 5.0 für HRV und Erholung: Smartwatch ohne Abo gegen reinen Abo-Recovery-Coach. Wo jedes Gerät vorn liegt.",
+      "intro": "Beide beantworten dieselbe Frage auf zwei Arten. Die Series 12 vom September 2026 misst die HRV endlich oft genug – und in der richtigen Kennzahl (RMSSD-basierte Recovery HRV) –, um ein echtes Erholungssignal zu liefern, und das in einer Smartwatch ohne Abo. Whoop 5.0 ist ein reines Abo-Band, das von Grund auf um kontinuierliche nächtliche HRV und das präziseste Recovery- und Strain-Coaching der Kategorie herum gebaut ist. Das eine ist eine Uhr für alles, das andere ein spezialisierter Coach.",
+      "verdict": "Keinen Gesamtsieger – entscheide danach, ob du Coaching oder ein Alleskönner-Gerät willst. Whoop 5.0 liegt vorn bei kontinuierlicher nächtlicher HRV, Recovery- und Strain-Coaching und mehrtägiger Akkulaufzeit; die Series 12 punktet als Smartwatch ohne Abo mit EKG, deren HRV jetzt gut genug ist, um danach zu handeln.",
+      "bestForA": "Wähle die Series 12, wenn du eine einzige Smartwatch ohne Abo willst – mit EKG, Hinweisen auf Bluthochdruck und Apps – und einer HRV, die endlich gut genug ist, um danach zu handeln.",
+      "bestForB": "Wähle Whoop 5.0, wenn Recovery- und Strain-Coaching dein Training bestimmt und du kontinuierliche nächtliche HRV von einem Band ohne Display willst – und die laufende Mitgliedschaft in Kauf nimmst.",
+      "axes": [
+        {
+          "name": "Kontinuierliche nächtliche HRV",
+          "note": "Whoop misst die HRV die ganze Nacht durchgehend und gibt einen Durchschnitt über den gesamten Schlaf aus; die Series 12 misst häufig (24× öfter als zuvor), ist aber eine Uhr, die du vielleicht nicht jede Nacht trägst."
+        },
+        {
+          "name": "Recovery-Coaching",
+          "note": "Das Recovery- und Strain-Modell von Whoop ist der präziseste Coach für die tägliche Einsatzbereitschaft bei Consumer-Wearables. Die Series 12 liefert die Zahlen (Recovery vs. Overall HRV), aber weniger Anleitung."
+        },
+        {
+          "name": "Akku / Tragen über Nacht",
+          "note": "Whoop hält ca. 14 Tage und lädt am Körper, ohne abgenommen zu werden; der Akku der Series 12 mit ca. 1 Tag konkurriert mit der nächtlichen Messung."
+        },
+        {
+          "name": "Abo / Kosten",
+          "note": "Die Series 12 kostet einmalig $399, ohne Abo. Whoop gibt es nur im Abo für ca. $239/Jahr – im ersten Jahr günstiger, aber dauerhaft laufende Kosten."
+        },
+        {
+          "name": "Smartwatch für den Alltag",
+          "note": "Die Series 12 hat Display, Apps, Benachrichtigungen, Bezahlfunktion, EKG und Hinweise auf Bluthochdruck; Whoop ist ein Recovery-Band ohne Display."
+        },
+        {
+          "name": "Vergleichbarkeit der HRV-Kennzahl",
+          "note": "Die Recovery HRV der Series 12 basiert jetzt auf RMSSD, derselben Kennzahlenfamilie wie bei Whoop – damit sind beide endlich grundsätzlich vergleichbar."
+        },
+        {
+          "name": "Datenzugang",
+          "note": "Apples HealthKit (jetzt mit nativem RMSSD) ist offener als das weitgehend geschlossene Ökosystem von Whoop."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Ist die Apple Watch Series 12 für die Erholung so gut wie Whoop?",
+          "a": "Bei den Zahlen liegt sie viel näher als früher – die RMSSD-basierte Recovery HRV der Series 12 gehört zur selben Kennzahlenfamilie wie bei Whoop. Whoop führt weiterhin bei der kontinuierlichen nächtlichen Messung, beim präziseren Recovery- und Strain-Coaching und mit ca. 14 Tagen Akkulaufzeit. Die Series 12 punktet als Smartwatch ohne Abo mit EKG."
+        },
+        {
+          "q": "Braucht die Apple Watch Series 12 ein Abo wie Whoop?",
+          "a": "Nein. Die Series 12 kostet einmalig $399, ohne Abo. Whoop gibt es nur im Abo für etwa $239 pro Jahr – das Band ist inklusive, doch wer nicht mehr zahlt, kann es nicht mehr nutzen."
+        },
+        {
+          "q": "Whoop oder Apple Watch für HRV – was soll ich kaufen?",
+          "a": "Für Recovery-Coaching, nach dem du täglich handelst, und kontinuierliche nächtliche HRV: Whoop 5.0. Für ein einziges Gerät, das auch EKG, Apps und Bezahlen ohne Abo bietet und dessen HRV jetzt gut genug zum Handeln ist: die Series 12. Wer gezielt nach diesem Signal trainiert, tendiert zu Whoop; die meisten tendieren zur Apple Watch."
+        }
+      ],
+      "content": "## Die Kurzfassung\n\nEntscheide nach dem Einsatzzweck. Whoop 5.0 ist der spezialisierte Recovery-Coach – kontinuierliche nächtliche HRV, das präziseste Recovery- und Strain-Modell, ein Band ohne Display mit ca. 14 Tagen Laufzeit – hinter einem Abo. Die Series 12 ist eine Smartwatch ohne Abo, deren HRV nach dem Update des Health Sensing System im September 2026 endlich gut genug ist, um danach zu handeln – dazu EKG und Hinweise auf Bluthochdruck.\n\n## Warum die Series 12 aufgeholt hat\n\nApple meldet jetzt eine RMSSD-basierte Recovery HRV, die deutlich häufiger gemessen wird – dieselbe Art Kennzahl, die auch das Recovery-Modell von Whoop nutzt. Siehe [Recovery HRV vs. Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) und [warum die HRV auf jedem Gerät anders ausfällt](/articles/hrv-different-every-device).\n\n## Die ehrliche Einschränkung\n\nWhoop ist dafür gebaut, rund um die Uhr getragen zu werden und dich täglich zu coachen; die Apple Watch ist eine Allround-Smartwatch, die du vielleicht nicht jede Nacht trägst, und ihr Akku mit ca. 1 Tag Laufzeit konkurriert mit der nächtlichen Messung. Wenn es dir vor allem um kontinuierliche nächtliche HRV geht, sieh dir die [besten HRV-Tracker 2026](/reviews/compare/best-hrv-trackers-2026) an – ein Ring oder Band kann dir besser dienen als eine Uhr."
+    }
   }
 }

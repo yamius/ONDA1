@@ -32,6 +32,7 @@ import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRo
 
 // Pages localized into all 5 languages — each gets its own prerendered HTML
 // per language. Generated from LOCALIZED_PAGES (single source of truth in i18n.ts).
+import { LOCALE_PUBLISH, type PublishCollection } from './locale-publish'
 const localizedRoutes = localizedRouteVariants()
 
 // /bio/:metric variants × 5 languages.
@@ -456,6 +457,9 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
 /** Build date (UTC) — the gate every rollout schedule compares against. */
 const BUILD_DATE = new Date().toISOString().slice(0, 10)
 
+/** Entries of scripts/locale-publish.ts that are due at build time, per collection. */
+const livePublish = (c: PublishCollection) => LOCALE_PUBLISH.filter((e) => e.collection === c && e.publishOn <= BUILD_DATE)
+
 /** Article slugs with a live /ru/articles/<slug> URL — the base pilot plus
  *  rollout entries whose publishOn date has been reached at build time. */
 export const RU_PILOT_ARTICLE_SLUGS: readonly string[] = [
@@ -532,6 +536,10 @@ const liveGlossaryByLang: Record<string, string[]> = (() => {
   return out
 })()
 
+for (const e of livePublish('glossary')) {
+  const list = (liveGlossaryByLang[e.lang] ??= [])
+  if (!list.includes(e.slug) && glossaryTerms.some((t) => t.slug === e.slug)) list.push(e.slug)
+}
 const liveGlossarySetByLang: Record<string, Set<string>> = Object.fromEntries(
   Object.entries(liveGlossaryByLang).map(([lang, slugs]) => [lang, new Set(slugs)]),
 )
@@ -771,6 +779,10 @@ const liveLocaleArticles: Record<string, string[]> = (() => {
   }
   return out
 })()
+for (const e of livePublish('articles')) {
+  const list = (liveLocaleArticles[e.lang] ??= [])
+  if (!list.includes(e.slug) && articles.some((a) => a.slug === e.slug)) list.push(e.slug)
+}
 const liveLocaleArticleSetByLang: Record<string, Set<string>> = Object.fromEntries(
   Object.entries(liveLocaleArticles).map(([lang, slugs]) => [lang, new Set(slugs)]),
 )
@@ -854,25 +866,22 @@ function pilotReviewRoutes(lang: string, cats: ReadonlySet<string>): string[] {
  * for a fully translated review: bodies.<slug> must exist in
  * public/locales/<lang>/reviews.json. Date-gated like the rest.
  */
-const REVIEW_SLUG_ROLLOUT: readonly { lang: string; slug: string; publishOn: string }[] = [
-  // Resona Health VIBE — top GSC query + most AI-Overview-cited page (2026-09-28).
-  ...['es', 'ru', 'uk', 'zh', 'de', 'fr', 'it', 'nl', 'ja', 'pl', 'pt'].map((lang) => ({
-    lang,
-    slug: 'resona-health-vibe',
-    publishOn: '2026-09-28',
-  })),
-]
+const REVIEW_SLUG_ROLLOUT = LOCALE_PUBLISH.filter((e) => e.collection === 'reviews')
 const liveReviewSlugLocale = REVIEW_SLUG_ROLLOUT.filter(
   (e) => e.publishOn <= REVIEW_BUILD_DATE && reviews.some((r) => r.slug === e.slug),
 )
+const liveComparisonLocale = livePublish('comparisons').filter((e) => comparisons.some((c) => c.slug === e.slug))
 const reviewSlugLangs: Record<string, string[]> = {}
-for (const e of liveReviewSlugLocale) (reviewSlugLangs[e.slug] ??= []).push(e.lang)
+for (const e of [...liveReviewSlugLocale, ...liveComparisonLocale]) (reviewSlugLangs[e.slug] ??= []).push(e.lang)
 
 const localizedReviewRoutes = [
   ...Object.entries(REVIEW_PILOTS).flatMap(([lang, cats]) => pilotReviewRoutes(lang, cats)),
   ...liveReviewSlugLocale
     .filter((e) => !REVIEW_PILOTS[e.lang]?.has(reviews.find((r) => r.slug === e.slug)!.category))
     .map((e) => `/${e.lang}/reviews/${e.slug}`),
+  ...liveComparisonLocale
+    .filter((e) => !REVIEW_PILOTS[e.lang]?.has(comparisons.find((c) => c.slug === e.slug)!.category))
+    .map((e) => `/${e.lang}/reviews/compare/${e.slug}`),
 ]
 
 /**
@@ -902,7 +911,7 @@ const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishO
   { lang: 'es', slug: 'oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11', publishOn: '2026-09-18' },
   { lang: 'ru', slug: 'apple-watch-series-12-vs-series-11', publishOn: '2026-11-09' },
   { lang: 'ru', slug: 'apple-watch-series-12-vs-oura-ring-4', publishOn: '2026-11-09' },
-  { lang: 'ru', slug: 'apple-watch-series-12-vs-whoop-5-0', publishOn: '2026-11-09' },
+  // (apple-watch-series-12-vs-whoop-5-0 in every other language: scripts/locale-publish.ts)
   { lang: 'ru', slug: 'apple-watch-series-12-vs-garmin-venu-4', publishOn: '2026-11-09' },
   { lang: 'ru', slug: 'apple-watch-ultra-4-vs-garmin-fenix-8', publishOn: '2026-11-09' },
   { lang: 'ru', slug: 'oura-ring-5-vs-apple-watch-series-11', publishOn: '2026-11-09' },
@@ -957,7 +966,10 @@ const HEADTOHEAD_LOCALE_ROLLOUT: readonly { lang: string; slug: string; publishO
   { lang: 'ru', slug: 'veri-vs-levels', publishOn: '2026-11-16' },
   { lang: 'ru', slug: 'zoe-vs-levels', publishOn: '2026-11-16' },
 ]
-const liveHeadToHeadLocale = HEADTOHEAD_LOCALE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE)
+const liveHeadToHeadLocale = [
+  ...HEADTOHEAD_LOCALE_ROLLOUT.filter((e) => e.publishOn <= BUILD_DATE),
+  ...livePublish('h2h'),
+]
 const localizedHeadToHeadRoutes = liveHeadToHeadLocale.map((e) => `/${e.lang}/reviews/vs/${e.slug}`)
 const headToHeadLangsBySlug: Record<string, string[]> = {}
 for (const e of liveHeadToHeadLocale) (headToHeadLangsBySlug[e.slug] ??= []).push(e.lang)

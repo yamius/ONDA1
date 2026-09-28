@@ -47,7 +47,7 @@ for (const lang of LANGS) {
     description: d.description,
     neuralSuggestion: { text: d.neuralSuggestion.text, linkText: d.neuralSuggestion.linkText },
     content: `\n${d.intro}\n\n${toc}\n\n${body}\n`,
-    faqSchema: d.groups.flatMap((g) => g.items.map((x) => ({ question: x.q, answer: stripMd(x.a) }))),
+    faqSchema: d.groups.flatMap((g) => g.items.map((x) => ({ q: x.q, a: stripMd(x.a) }))),
   }
   writeFileSync(file, JSON.stringify(json, null, 2) + '\n')
   console.log(`${lang}: ${d.groups.reduce((n, g) => n + g.items.length, 0)} questions`)

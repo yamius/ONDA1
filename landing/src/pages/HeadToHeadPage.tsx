@@ -100,8 +100,12 @@ export function HeadToHeadPage() {
             <h3 className="mb-1 text-lg font-semibold transition-colors group-hover:text-terminal-green">
               {p.name}
             </h3>
-            <p className="mb-3 font-mono text-[11px] text-white/35">{p.productType}</p>
-            <p className="font-mono text-xs leading-relaxed text-white/55">{p.verdict}</p>
+            <p className="mb-3 font-mono text-[11px] text-white/35">
+              {tReviews(`bodies.${p.slug}.productType`, { defaultValue: p.productType })}
+            </p>
+            <p className="font-mono text-xs leading-relaxed text-white/55">
+              {tReviews(`bodies.${p.slug}.verdict`, { defaultValue: p.verdict })}
+            </p>
           </Link>
         ))}
       </section>

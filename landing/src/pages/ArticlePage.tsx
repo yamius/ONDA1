@@ -286,7 +286,10 @@ export function ArticlePage() {
     const fromI18n = tArticles(`bodies.${slug}.faq`, { returnObjects: true, defaultValue: null }) as
       | { question: string; answer: string }[]
       | null
-    return Array.isArray(fromI18n) ? fromI18n : []
+    // Translations use the canonical { q, a } (src/data/i18n-schema.ts).
+    return Array.isArray(fromI18n)
+      ? (fromI18n as unknown as { q: string; a: string }[]).map((f) => ({ question: f.q, answer: f.a }))
+      : []
   })()
   const tHowToSteps = article?.howToSteps
     ? (() => {
