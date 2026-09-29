@@ -19,6 +19,8 @@
       "statusCode": 301
     },
     { "source": "/:lang(es|ru|uk)/reviews/:slug(amazfit-helio-ring|apple-watch-series-12|apple-watch-ultra-4|circular-ring-2|fitbit-air|garmin-fenix-8|luna-ring|oura-ring-5|ringconn-gen-3|ultrahuman-ring-pro)", "destination": "/reviews/:slug", "permanent": true },
+    { "source": "/glossary/insular-cortex", "destination": "/glossary/insula", "permanent": true },
+    { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/glossary/insular-cortex", "destination": "/:lang/glossary/insula", "permanent": true },
     { "source": "/topics", "destination": "/articles", "permanent": true },
     { "source": "/topics/hrv", "destination": "/articles/topic/hrv-heart-rate", "permanent": true },
     { "source": "/topics/breathwork", "destination": "/articles/topic/breathing", "permanent": true },

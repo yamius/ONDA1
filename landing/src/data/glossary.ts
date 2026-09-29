@@ -577,37 +577,6 @@ The ultimate goal of ONDA is to develop the "observer" — the aspect of mind th
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
   {
-    slug: 'insular-cortex',
-    title: 'Insular Cortex',
-    category: 'Neuroscience',
-    shortDescription:
-      'A deep brain region (the insula) that serves as the primary hub for interoception, self-awareness, and emotional processing.',
-    content: `
-
-The **insular cortex** (or insula) is a region of the cerebral cortex folded deep within the lateral sulcus. It is the brain's primary center for interoception — the sense of the body's internal state.
-
-## Functions
-
-- **Interoceptive awareness** — sensing heartbeat, breath, gut signals
-- **Emotional experience** — translating body signals into felt emotions
-- **Self-awareness** — the neural basis of "I exist" experience
-- **Empathy** — understanding others' internal states through simulation
-- **Decision-making** — gut feelings that guide choices
-
-## Anterior vs. Posterior Insula
-
-| Region | Function | ONDA Relevance |
-|--------|----------|---------------|
-| **Posterior** | Raw body signals | Level 1: Primary interoception |
-| **Anterior** | Emotional interpretation | Level 2: Emotional awareness |
-
-## In ONDA Life
-
-The insula is the key target of Level 1 practices. By training interoceptive accuracy, you strengthen the insula's ability to provide clear, reliable signals about your internal state — the foundation of all self-regulation.
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
-  },
-  {
     slug: 'vagus-nerve',
     title: 'Vagus Nerve',
     category: 'Body Systems',
@@ -929,10 +898,16 @@ The **insula** (or insular cortex) is a region of the cerebral cortex folded dee
 - **Emotional experience** — translating body signals into felt emotions
 - **Self-awareness** — the neural basis of "I exist"
 - **Empathy** — simulating others' internal states
+- **Decision-making** — gut feelings that guide choices
 
-## Relation to Insular Cortex
+## Anterior vs. Posterior Insula
 
-The terms "insula" and "insular cortex" refer to the same structure. The insula is the primary target of Level 1 interoceptive practices.
+| Region | Function | ONDA Relevance |
+|--------|----------|---------------|
+| **Posterior** | Raw body signals | Level 1: Primary interoception |
+| **Anterior** | Emotional interpretation | Level 2: Emotional awareness |
+
+"Insula" and "insular cortex" are two names for the same structure. The insula is the primary target of Level 1 interoceptive practices.
 
 ## Why does the insula matter?
 
@@ -6044,7 +6019,7 @@ The **brainstem** is the posterior part of the brain, continuous with the spinal
 
 Part 1 works with "the connection between the brainstem and the insula" for primary interoception. Part 2 activates "ancient brainstem structures" for automatic locomotion. Part 3 tunes "the brainstem and reticular formation."
 `,
-    relatedSlugs: ['reticular-formation', 'vagus-nerve', 'insular-cortex', 'primary-interoception'],
+    relatedSlugs: ['reticular-formation', 'vagus-nerve', 'insula', 'primary-interoception'],
   },
   {
     slug: 'body-schema',
@@ -6112,7 +6087,7 @@ C-tactile fibers are affected mainly by the speed, pressure, and temperature of 
 
 Part 13 engages "C-tactile fibers and proprioceptive integration to create an ultra-precise body map." These pathways link skin to the brain\'s well-being centers — essential for sensory expansion and embodiment clarity.
 `,
-    relatedSlugs: ['insular-cortex', 'interoception', 'somatosensory-cortex', 'vagus-nerve'],
+    relatedSlugs: ['insula', 'interoception', 'somatosensory-cortex', 'vagus-nerve'],
   },
   {
     slug: 'co-regulation',

@@ -558,7 +558,7 @@ export const levelsData: Record<number, LevelData> = {
     ],
     glossaryLinks: [
       { label: 'Interoception', slug: 'interoception' },
-      { label: 'Insular Cortex', slug: 'insular-cortex' },
+      { label: 'Insula', slug: 'insula' },
       { label: 'Thalamus', slug: 'thalamus' },
       { label: 'Galvanic Skin Response', slug: 'galvanic-skin-response' },
       { label: 'Body Schema', slug: 'body-schema' },

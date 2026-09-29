@@ -122,7 +122,6 @@ export const SLUG_TO_CATEGORY: Record<string, string> = {
   'medial-prefrontal-cortex': 'Neural Hardware',
   'orbitofrontal-cortex': 'Neural Hardware',
   'anterior-cingulate-cortex': 'Neural Hardware',
-  'insular-cortex': 'Neural Hardware',
   insula: 'Neural Hardware',
   hippocampus: 'Neural Hardware',
   thalamus: 'Neural Hardware',
