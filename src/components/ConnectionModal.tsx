@@ -390,7 +390,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                           </div>
                         </div>
                         <div className={`font-semibold ${'text-text-primary/80'}`}>
-                          {hkHeartRate && recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
+                          {hkHeartRate && recoveryRate !== null ? `${recoveryRate > 0 ? "+" : ""}${recoveryRate.toFixed(1)} bpm/s` : '--'}
                         </div>
                       </button>
 
@@ -1062,7 +1062,7 @@ export const ConnectionModal: React.FC<ConnectionModalProps> = ({
                         </div>
                       </div>
                       <div className={`font-semibold ${'text-text-primary/80'}`}>
-                        {hr && recoveryRate !== null ? `${(recoveryRate * 100).toFixed(0)}%` : '--'}
+                        {hr && recoveryRate !== null ? `${recoveryRate > 0 ? "+" : ""}${recoveryRate.toFixed(1)} bpm/s` : '--'}
                       </div>
                     </div>
 

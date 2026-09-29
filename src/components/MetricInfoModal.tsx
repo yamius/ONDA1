@@ -9,8 +9,9 @@ interface MetricInfoModalProps {
 
 /**
  * Description popup for an individual biometric card on the Connection screen.
- * Source of truth for the texts is `src/data/bioMetrics.ts`, which mirrors
- * the structured copy on the public bio page (https://onda-life.com/bio).
+ * Source of truth for the texts is `src/data/bioMetrics.ts`. The texts describe
+ * the app's own formulas in `src/hooks/useVitals.ts` and intentionally differ
+ * from the website's in-browser camera tool (https://onda-life.com/bio).
  *
  * Style intentionally matches the parent ConnectionModal — same outer frame,
  * same close button, same scroll behaviour — minus the extra ornamentation
