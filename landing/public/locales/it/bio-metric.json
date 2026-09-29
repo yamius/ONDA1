@@ -31,6 +31,7 @@
   "metrics": {
     "flow": {
       "title": "Flow: una combinazione sperimentale di Concentrazione e Rilassamento",
+      "seoTitle": "Flow: indice sperimentale di focus e calma",
       "shortTitle": "🌊 Flow",
       "sections": [
         {
@@ -85,6 +86,7 @@
     },
     "fatigue": {
       "title": "Affaticamento: un indice sperimentale da Energia e Stress",
+      "seoTitle": "Affaticamento: indice sperimentale",
       "shortTitle": "🪫 Affaticamento",
       "sections": [
         {
@@ -139,6 +141,7 @@
     },
     "excitement": {
       "title": "Eccitazione: un indice sperimentale di attivazione",
+      "seoTitle": "Eccitazione: indice sperimentale di attivazione",
       "shortTitle": "✨ Eccitazione",
       "sections": [
         {
@@ -189,6 +192,7 @@
     },
     "focus": {
       "title": "Concentrazione: un indice sperimentale",
+      "seoTitle": "Concentrazione: un indice sperimentale",
       "shortTitle": "🎯 Concentrazione",
       "sections": [
         {
@@ -243,6 +247,7 @@
     },
     "relaxation": {
       "title": "Rilassamento / Calma: un indice sperimentale",
+      "seoTitle": "Rilassamento / Calma: un indice sperimentale",
       "shortTitle": "🌿 Rilassamento / Calma",
       "sections": [
         {
@@ -297,6 +302,7 @@
     },
     "alarm": {
       "title": "Allarme / Ansia: un indice sperimentale",
+      "seoTitle": "Allarme / Ansia: un indice sperimentale",
       "shortTitle": "🚨 Allarme / Ansia",
       "sections": [
         {
@@ -351,6 +357,7 @@
     },
     "acceleration": {
       "title": "Accelerazione FC: variazione media tra un battito e l'altro",
+      "seoTitle": "Accelerazione FC: variazione media tra battiti",
       "shortTitle": "⚡ Accelerazione FC",
       "sections": [
         {
@@ -396,6 +403,7 @@
     },
     "slope": {
       "title": "Pendenza del trend FC: il tuo polso sale o scende?",
+      "seoTitle": "Trend FC: il tuo polso sale o scende?",
       "shortTitle": "📈 Pendenza del trend FC",
       "sections": [
         {
@@ -445,6 +453,7 @@
     },
     "recovery": {
       "title": "Tasso di recupero: quanto il polso è tornato indietro dal suo picco",
+      "seoTitle": "Recupero: quanto in fretta si calma il polso",
       "shortTitle": "🔄 Tasso di recupero %",
       "sections": [
         {
@@ -494,6 +503,7 @@
     },
     "csi": {
       "title": "CSI: indice di stabilità cardiaca (variazione RR rispetto alla sua media)",
+      "seoTitle": "CSI: l'indice di stabilità cardiaca spiegato",
       "shortTitle": "🎯 Indice di stabilità cardiaca (CSI)",
       "sections": [
         {
@@ -540,6 +550,7 @@
     },
     "hrv": {
       "title": "HRV (RMSSD): cosa dice la variazione tra un battito e l'altro",
+      "seoTitle": "HRV (RMSSD): la variazione tra battiti",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
@@ -595,6 +606,7 @@
     },
     "energy": {
       "title": "Energia %: un indice sperimentale da frequenza cardiaca e ritmo",
+      "seoTitle": "Energia %: un indice sperimentale dal polso",
       "shortTitle": "🔋 Energia %",
       "sections": [
         {
@@ -649,6 +661,7 @@
     },
     "stress": {
       "title": "Stress %: un indice sperimentale dall'irregolarità del ritmo",
+      "seoTitle": "Stress %: indice sperimentale di irregolarità",
       "shortTitle": "⚡ Stress %",
       "sections": [
         {
@@ -703,6 +716,7 @@
     },
     "br": {
       "title": "Frequenza respiratoria: cosa significano i tuoi respiri al minuto",
+      "seoTitle": "Frequenza respiratoria: respiri al minuto",
       "shortTitle": "🌬️ /min — Frequenza respiratoria",
       "sections": [
         {
@@ -748,6 +762,7 @@
     },
     "bpm": {
       "title": "BPM: la tua frequenza cardiaca e cosa la cambia",
+      "seoTitle": "BPM: la tua frequenza cardiaca spiegata",
       "shortTitle": "❤️ BPM — Frequenza cardiaca",
       "sections": [
         {

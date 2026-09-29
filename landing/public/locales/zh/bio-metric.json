@@ -31,6 +31,7 @@
   "metrics": {
     "flow": {
       "title": "心流：专注与放松的实验性混合指标",
+      "seoTitle": "心流：专注与放松的实验性指标",
       "shortTitle": "🌊 心流",
       "sections": [
         {
@@ -85,6 +86,7 @@
     },
     "fatigue": {
       "title": "疲劳：由能量和压力得出的实验性指数",
+      "seoTitle": "疲劳：基于能量与压力的实验指数",
       "shortTitle": "🪫 疲劳",
       "sections": [
         {
@@ -139,6 +141,7 @@
     },
     "excitement": {
       "title": "兴奋：实验性唤醒指数",
+      "seoTitle": "兴奋：实验性唤醒指数",
       "shortTitle": "✨ 兴奋",
       "sections": [
         {
@@ -189,6 +192,7 @@
     },
     "focus": {
       "title": "专注 / 集中：实验性指数",
+      "seoTitle": "专注 / 集中：实验性指数",
       "shortTitle": "🎯 专注 / 集中",
       "sections": [
         {
@@ -243,6 +247,7 @@
     },
     "relaxation": {
       "title": "放松 / 平静：实验性指数",
+      "seoTitle": "放松 / 平静：实验性指数",
       "shortTitle": "🌿 放松 / 平静",
       "sections": [
         {
@@ -297,6 +302,7 @@
     },
     "alarm": {
       "title": "警觉 / 焦虑：实验性指数",
+      "seoTitle": "警觉 / 焦虑：实验性指数",
       "shortTitle": "🚨 警觉 / 焦虑",
       "sections": [
         {
@@ -351,6 +357,7 @@
     },
     "acceleration": {
       "title": "心率加速度：逐拍间期的平均变化",
+      "seoTitle": "心率加速度：逐拍平均变化",
       "shortTitle": "⚡ 心率加速度",
       "sections": [
         {
@@ -396,6 +403,7 @@
     },
     "slope": {
       "title": "心率趋势斜率：你的脉搏在上升还是下降？",
+      "seoTitle": "心率趋势斜率：脉搏在升还是降？",
       "shortTitle": "📈 心率趋势斜率",
       "sections": [
         {
@@ -445,6 +453,7 @@
     },
     "recovery": {
       "title": "恢复率：你的脉搏从峰值回落了多少",
+      "seoTitle": "恢复率：脉搏回落有多快",
       "shortTitle": "🔄 恢复率 %",
       "sections": [
         {
@@ -494,6 +503,7 @@
     },
     "csi": {
       "title": "CSI：心脏稳定性指数（RR 间期变化相对其平均值）",
+      "seoTitle": "CSI：心脏稳定性指数详解",
       "shortTitle": "🎯 心脏稳定性指数（CSI）",
       "sections": [
         {
@@ -540,6 +550,7 @@
     },
     "hrv": {
       "title": "HRV（RMSSD）：逐拍变化告诉你什么",
+      "seoTitle": "HRV（RMSSD）：逐拍变化详解",
       "shortTitle": "📊 HRV（RMSSD）",
       "sections": [
         {
@@ -595,6 +606,7 @@
     },
     "energy": {
       "title": "能量 %：由心率和节律得出的实验性指数",
+      "seoTitle": "能量 %：基于心率的实验性指数",
       "shortTitle": "🔋 能量 %",
       "sections": [
         {
@@ -649,6 +661,7 @@
     },
     "stress": {
       "title": "压力 %：由节律不规则程度得出的实验性指数",
+      "seoTitle": "压力 %：节律不规则的实验指数",
       "shortTitle": "⚡ 压力 %",
       "sections": [
         {
@@ -703,6 +716,7 @@
     },
     "br": {
       "title": "呼吸频率：每分钟呼吸次数意味着什么",
+      "seoTitle": "呼吸频率：每分钟呼吸次数详解",
       "shortTitle": "🌬️ /min — 呼吸频率",
       "sections": [
         {
@@ -748,6 +762,7 @@
     },
     "bpm": {
       "title": "BPM：你的心率及影响它的因素",
+      "seoTitle": "BPM：你的心率及其影响因素",
       "shortTitle": "❤️ BPM — 心率",
       "sections": [
         {

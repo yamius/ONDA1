@@ -176,7 +176,7 @@ const dup = (key) => {
 }
 const dt = dup('title'), dd = dup('desc')
 say(`## Duplicate titles: ${dt.length} groups · duplicate descriptions: ${dd.length} groups`)
-for (const [t, ps] of dt.slice(0, 12)) say(`  - title ×${ps.length} "${t.slice(0, 70)}" e.g. ${ps.slice(0, 3).map((x) => '`' + x + '`').join(', ')}`)
+for (const [t, ps] of dt.slice(0, 40)) say(`  - title ×${ps.length} "${t.slice(0, 70)}" e.g. ${ps.slice(0, 3).map((x) => '`' + x + '`').join(', ')}`)
 for (const [t, ps] of dd.slice(0, 8)) say(`  - desc ×${ps.length} "${t.slice(0, 70)}" e.g. ${ps.slice(0, 3).map((x) => '`' + x + '`').join(', ')}`)
 say()
 const noH1 = [...meta].filter(([p, m]) => !noindex(p) && m.h1 === 0).map(([p]) => p)

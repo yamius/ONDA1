@@ -268,6 +268,22 @@ for (const lang of SUPPORTED_LANGS) {
 
 /** Localized review/h2h FAQPage: rewrite the EN one to the translated Q&A, drop it when
  *  there is no translation, and add one when the page had none but a translation exists. */
+/** Clean end for a subtitle cut at a character budget: drop the partial last
+ *  word, anything from an unclosed "(", and trailing short function words
+ *  ("im", "от", "de"…) so the title never ends mid-phrase. */
+function tidyCut(s: string): string {
+  let t = s.replace(/\s+\S*$/, '')
+  if (t.lastIndexOf('(') > t.lastIndexOf(')')) t = t.slice(0, t.lastIndexOf('('))
+  for (let i = 0; i < 3; i++) t = t.replace(/[\s,;:–—-]+$/, '').replace(/\s+\S{1,3}$/u, '')
+  return t.replace(/[\s,;:–—-]+$/, '')
+}
+
+const GLOSSARY_SUFFIX: Record<string, string> = {
+  es: 'Glosario ONDA Life', ru: 'Глоссарий ONDA Life', uk: 'Глосарій ONDA Life', zh: 'ONDA Life 术语表',
+  de: 'ONDA Life Glossar', fr: 'Glossaire ONDA Life', it: 'Glossario ONDA Life', nl: 'ONDA Life woordenlijst',
+  ja: 'ONDA Life 用語集', pl: 'Słownik ONDA Life', pt: 'Glossário ONDA Life',
+}
+
 function localizeFaqJsonLd(html: string, lang: string, url: string, faq?: { q: string; a: string }[]): string {
   let found = false
   let out = html.replace(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g, (whole, json: string) => {
@@ -571,8 +587,21 @@ function applyMetricLocalizedMeta(html: string, metric: string, lang: Lang): str
   // Translated subtitles run longer than EN, and meta-inject tail-cuts anything
   // over budget with "…". Degrade gracefully instead: drop "Bio OS", then the
   // poetic subtitle after the colon, keeping the metric name + brand intact.
-  const title = [`${m.title} | ONDA Life Bio OS`, `${m.title} | ONDA Life`, `${m.title.split(/\s*[:：]\s*/)[0]} | ONDA Life`]
-    .find((t) => t.length <= 60) ?? `${m.title.split(/\s*[:：]\s*/)[0]} | ONDA Life`
+  // Keep as much of the translated subtitle as fits (cut at a word boundary):
+  // the bare metric name ("CSI | ONDA Life") is identical in every language.
+  const [name, ...rest] = m.title.split(/\s*[:：]\s*/)
+  const sub = rest.join(': ')
+  const room = 60 - ' | ONDA Life'.length - name.length - 2
+  const cutSub = sub && room > 8
+    ? (sub.length <= room ? sub : tidyCut(sub.slice(0, room)))
+    : ''
+  // Prefer the hand-written short seoTitle (≤47 chars, a complete phrase per
+  // language); the cut subtitle is only a fallback for metrics without one.
+  const seoTitle = (m as { seoTitle?: string }).seoTitle
+  const title = seoTitle
+    ? `${seoTitle} | ONDA Life`
+    : [`${m.title} | ONDA Life Bio OS`, `${m.title} | ONDA Life`]
+        .find((t) => t.length <= 60) ?? (cutSub ? `${name}: ${cutSub} | ONDA Life` : `${name} | ONDA Life`)
   const desc = file.ui.metaDescriptionTpl.replace('{{title}}', m.title)
   const url = metricUrlFor(metric, lang)
   const escTitle = escAttr(title)
@@ -980,7 +1009,9 @@ for (const route of routes) {
           desc = gf.meta?.description ?? ''
         } else {
           const body = gf.bodies?.[glossaryInfo.slug]
-          if (body?.title) title = `${body.title} | ONDA Life Glossary`
+          // Localized suffix: an untranslated term name ("Apoptosis") plus the EN
+          // suffix made the title identical to the EN page's.
+          if (body?.title) title = `${body.title} | ${GLOSSARY_SUFFIX[glossaryInfo.lang] ?? 'ONDA Life Glossary'}`
           desc = body?.shortDescription ?? ''
         }
         const url = glossaryUrlFor(glossaryInfo.kind, glossaryInfo.slug, glossaryInfo.lang)

@@ -31,6 +31,7 @@
   "metrics": {
     "flow": {
       "title": "Flow: een experimentele mix van focus en ontspanning",
+      "seoTitle": "Flow: experimentele index voor focus en rust",
       "shortTitle": "🌊 Flow",
       "sections": [
         {
@@ -85,6 +86,7 @@
     },
     "fatigue": {
       "title": "Vermoeidheid: een experimentele index uit Energie en Stress",
+      "seoTitle": "Vermoeidheid: een experimentele index",
       "shortTitle": "🪫 Vermoeidheid",
       "sections": [
         {
@@ -139,6 +141,7 @@
     },
     "excitement": {
       "title": "Opwinding: een experimentele index voor activatie",
+      "seoTitle": "Opwinding: een experimentele activatie-index",
       "shortTitle": "✨ Opwinding",
       "sections": [
         {
@@ -189,6 +192,7 @@
     },
     "focus": {
       "title": "Focus / concentratie: een experimentele index",
+      "seoTitle": "Focus / concentratie: een experimentele index",
       "shortTitle": "🎯 Focus / concentratie",
       "sections": [
         {
@@ -243,6 +247,7 @@
     },
     "relaxation": {
       "title": "Ontspanning / rust: een experimentele index",
+      "seoTitle": "Ontspanning / rust: een experimentele index",
       "shortTitle": "🌿 Ontspanning / rust",
       "sections": [
         {
@@ -297,6 +302,7 @@
     },
     "alarm": {
       "title": "Alarm / angst: een experimentele index",
+      "seoTitle": "Alarm / angst: een experimentele index",
       "shortTitle": "🚨 Alarm / angst",
       "sections": [
         {
@@ -351,6 +357,7 @@
     },
     "acceleration": {
       "title": "HR-versnelling: gemiddelde verandering van slag tot slag",
+      "seoTitle": "HR-versnelling: verandering van slag tot slag",
       "shortTitle": "⚡ HR-versnelling",
       "sections": [
         {
@@ -396,6 +403,7 @@
     },
     "slope": {
       "title": "HR-trendhelling: stijgt of daalt je polsslag?",
+      "seoTitle": "HR-trend: stijgt of daalt je polsslag?",
       "shortTitle": "📈 HR-trendhelling",
       "sections": [
         {
@@ -445,6 +453,7 @@
     },
     "recovery": {
       "title": "Herstelsnelheid: hoe ver je polsslag terug is van de piek",
+      "seoTitle": "Herstelsnelheid: hoe snel je pols tot rust komt",
       "shortTitle": "🔄 Herstelsnelheid %",
       "sections": [
         {
@@ -494,6 +503,7 @@
     },
     "csi": {
       "title": "CSI: Cardiac Stability Index (RR-variatie ten opzichte van het gemiddelde)",
+      "seoTitle": "CSI: de hartstabiliteitsindex uitgelegd",
       "shortTitle": "🎯 Cardiac Stability Index (CSI)",
       "sections": [
         {
@@ -540,6 +550,7 @@
     },
     "hrv": {
       "title": "HRV (RMSSD): wat de variatie van slag tot slag je vertelt",
+      "seoTitle": "HRV (RMSSD): variatie van slag tot slag",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
@@ -595,6 +606,7 @@
     },
     "energy": {
       "title": "Energie %: een experimentele index uit hartslag en ritme",
+      "seoTitle": "Energie %: een experimentele hartslagindex",
       "shortTitle": "🔋 Energie %",
       "sections": [
         {
@@ -649,6 +661,7 @@
     },
     "stress": {
       "title": "Stress %: een experimentele index uit onregelmatigheid van het ritme",
+      "seoTitle": "Stress %: experimentele onregelmatigheidsindex",
       "shortTitle": "⚡ Stress %",
       "sections": [
         {
@@ -703,6 +716,7 @@
     },
     "br": {
       "title": "Ademfrequentie: wat je ademhalingen per minuut betekenen",
+      "seoTitle": "Ademfrequentie: ademhalingen per minuut",
       "shortTitle": "🌬️ /min — Ademfrequentie",
       "sections": [
         {
@@ -748,6 +762,7 @@
     },
     "bpm": {
       "title": "BPM: je hartslag en wat die verandert",
+      "seoTitle": "BPM: je hartslag en wat die verandert",
       "shortTitle": "❤️ BPM — Hartslag",
       "sections": [
         {

@@ -31,6 +31,7 @@
   "metrics": {
     "flow": {
       "title": "Flow: ein experimenteller Mix aus Fokus und Entspannung",
+      "seoTitle": "Flow: experimenteller Fokus- und Ruheindex",
       "shortTitle": "🌊 Flow",
       "sections": [
         {
@@ -85,6 +86,7 @@
     },
     "fatigue": {
       "title": "Müdigkeit: ein experimenteller Index aus Energie und Stress",
+      "seoTitle": "Müdigkeit: experimenteller Energie-Stress-Index",
       "shortTitle": "🪫 Müdigkeit",
       "sections": [
         {
@@ -139,6 +141,7 @@
     },
     "excitement": {
       "title": "Aufregung: ein experimenteller Erregungsindex",
+      "seoTitle": "Aufregung: ein experimenteller Erregungsindex",
       "shortTitle": "✨ Aufregung",
       "sections": [
         {
@@ -189,6 +192,7 @@
     },
     "focus": {
       "title": "Fokus / Konzentration: ein experimenteller Index",
+      "seoTitle": "Fokus / Konzentration: experimenteller Index",
       "shortTitle": "🎯 Fokus / Konzentration",
       "sections": [
         {
@@ -243,6 +247,7 @@
     },
     "relaxation": {
       "title": "Entspannung / Ruhe: ein experimenteller Index",
+      "seoTitle": "Entspannung / Ruhe: ein experimenteller Index",
       "shortTitle": "🌿 Entspannung / Ruhe",
       "sections": [
         {
@@ -297,6 +302,7 @@
     },
     "alarm": {
       "title": "Alarm / Angst: ein experimenteller Index",
+      "seoTitle": "Alarm / Angst: ein experimenteller Index",
       "shortTitle": "🚨 Alarm / Angst",
       "sections": [
         {
@@ -351,6 +357,7 @@
     },
     "acceleration": {
       "title": "HF-Beschleunigung: mittlere Veränderung von Schlag zu Schlag",
+      "seoTitle": "HF-Beschleunigung: Änderung pro Herzschlag",
       "shortTitle": "⚡ HF-Beschleunigung",
       "sections": [
         {
@@ -396,6 +403,7 @@
     },
     "slope": {
       "title": "HF-Trendsteigung: steigt oder fällt dein Puls?",
+      "seoTitle": "HF-Trend: steigt oder fällt dein Puls?",
       "shortTitle": "📈 HF-Trendsteigung",
       "sections": [
         {
@@ -445,6 +453,7 @@
     },
     "recovery": {
       "title": "Erholungsrate: wie weit dein Puls von seiner Spitze zurück ist",
+      "seoTitle": "Erholungsrate: wie schnell sich dein Puls legt",
       "shortTitle": "🔄 Erholungsrate %",
       "sections": [
         {
@@ -494,6 +503,7 @@
     },
     "csi": {
       "title": "CSI: Cardiac Stability Index (RR-Schwankung im Verhältnis zum Mittelwert)",
+      "seoTitle": "CSI: der Herzstabilitätsindex erklärt",
       "shortTitle": "🎯 Cardiac Stability Index (CSI)",
       "sections": [
         {
@@ -540,6 +550,7 @@
     },
     "hrv": {
       "title": "HRV (RMSSD): was die Schwankung von Schlag zu Schlag verrät",
+      "seoTitle": "HRV (RMSSD): Schlag-zu-Schlag-Schwankung",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
@@ -595,6 +606,7 @@
     },
     "energy": {
       "title": "Energie %: ein experimenteller Index aus Herzfrequenz und Rhythmus",
+      "seoTitle": "Energie %: experimenteller Herzfrequenzindex",
       "shortTitle": "🔋 Energie %",
       "sections": [
         {
@@ -649,6 +661,7 @@
     },
     "stress": {
       "title": "Stress %: ein experimenteller Index aus Rhythmus-Unregelmäßigkeit",
+      "seoTitle": "Stress %: ein Index der Rhythmus-Unruhe",
       "shortTitle": "⚡ Stress %",
       "sections": [
         {
@@ -703,6 +716,7 @@
     },
     "br": {
       "title": "Atemfrequenz: was deine Atemzüge pro Minute bedeuten",
+      "seoTitle": "Atemfrequenz: Atemzüge pro Minute erklärt",
       "shortTitle": "🌬️ /min — Atemfrequenz",
       "sections": [
         {
@@ -748,6 +762,7 @@
     },
     "bpm": {
       "title": "BPM: deine Herzfrequenz und was sie verändert",
+      "seoTitle": "BPM: deine Herzfrequenz und was sie verändert",
       "shortTitle": "❤️ BPM — Herzfrequenz",
       "sections": [
         {

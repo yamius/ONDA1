@@ -31,6 +31,7 @@
   "metrics": {
     "flow": {
       "title": "フロー：集中とリラックスを組み合わせた実験的な指標",
+      "seoTitle": "フロー：集中とリラックスの実験的指標",
       "shortTitle": "🌊 フロー",
       "sections": [
         {
@@ -85,6 +86,7 @@
     },
     "fatigue": {
       "title": "疲労：エネルギーとストレスから算出する実験的な指標",
+      "seoTitle": "疲労：エネルギーとストレスの実験的指標",
       "shortTitle": "🪫 疲労",
       "sections": [
         {
@@ -139,6 +141,7 @@
     },
     "excitement": {
       "title": "興奮：実験的な覚醒度の指標",
+      "seoTitle": "興奮：実験的な覚醒度の指標",
       "shortTitle": "✨ 興奮",
       "sections": [
         {
@@ -189,6 +192,7 @@
     },
     "focus": {
       "title": "集中：実験的な指標",
+      "seoTitle": "集中：実験的な指標とその見方",
       "shortTitle": "🎯 集中",
       "sections": [
         {
@@ -243,6 +247,7 @@
     },
     "relaxation": {
       "title": "リラックス：実験的な指標",
+      "seoTitle": "リラックス：実験的な指標とその見方",
       "shortTitle": "🌿 リラックス",
       "sections": [
         {
@@ -297,6 +302,7 @@
     },
     "alarm": {
       "title": "警戒・不安：実験的な指標",
+      "seoTitle": "警戒・不安：実験的な指標",
       "shortTitle": "🚨 警戒・不安",
       "sections": [
         {
@@ -351,6 +357,7 @@
     },
     "acceleration": {
       "title": "心拍加速度：拍ごとの変化の平均",
+      "seoTitle": "心拍加速度：拍ごとの変化の平均",
       "shortTitle": "⚡ 心拍加速度",
       "sections": [
         {
@@ -396,6 +403,7 @@
     },
     "slope": {
       "title": "心拍トレンドの傾き：脈拍は上がっている？下がっている？",
+      "seoTitle": "心拍トレンド：脈拍は上昇か下降か",
       "shortTitle": "📈 心拍トレンドの傾き",
       "sections": [
         {
@@ -445,6 +453,7 @@
     },
     "recovery": {
       "title": "回復率：脈拍がピークからどれだけ戻ったか",
+      "seoTitle": "回復率：脈拍が落ち着く速さ",
       "shortTitle": "🔄 回復率 %",
       "sections": [
         {
@@ -494,6 +503,7 @@
     },
     "csi": {
       "title": "CSI：心拍安定性指数（平均に対するRR間隔のばらつき）",
+      "seoTitle": "CSI：心拍安定性指数の解説",
       "shortTitle": "🎯 心拍安定性指数（CSI）",
       "sections": [
         {
@@ -540,6 +550,7 @@
     },
     "hrv": {
       "title": "HRV（RMSSD）：拍ごとの変動からわかること",
+      "seoTitle": "HRV（RMSSD）：拍ごとの変動の解説",
       "shortTitle": "📊 HRV（RMSSD）",
       "sections": [
         {
@@ -595,6 +606,7 @@
     },
     "energy": {
       "title": "エネルギー %：心拍数とリズムから算出する実験的な指標",
+      "seoTitle": "エネルギー %：心拍の実験的指標",
       "shortTitle": "🔋 エネルギー %",
       "sections": [
         {
@@ -649,6 +661,7 @@
     },
     "stress": {
       "title": "ストレス %：リズムの不規則さから算出する実験的な指標",
+      "seoTitle": "ストレス %：リズム不規則さの指標",
       "shortTitle": "⚡ ストレス %",
       "sections": [
         {
@@ -703,6 +716,7 @@
     },
     "br": {
       "title": "呼吸数：毎分の呼吸回数が意味すること",
+      "seoTitle": "呼吸数：毎分の呼吸回数の解説",
       "shortTitle": "🌬️ /min — 呼吸数",
       "sections": [
         {
@@ -748,6 +762,7 @@
     },
     "bpm": {
       "title": "BPM：心拍数とそれを変えるもの",
+      "seoTitle": "BPM：心拍数とそれを変えるもの",
       "shortTitle": "❤️ BPM — 心拍数",
       "sections": [
         {
