@@ -30,7 +30,7 @@
   },
   "metrics": {
     "flow": {
-      "title": "Flow: An Experimental Blend of Focus and Relaxation",
+      "title": "Flow: An Experimental Focus + Relaxation Index",
       "shortTitle": "🌊 Flow",
       "sections": [
         {
@@ -84,7 +84,7 @@
       ]
     },
     "fatigue": {
-      "title": "Fatigue: An Experimental Index from Energy and Stress",
+      "title": "Fatigue: An Experimental Energy/Stress Index",
       "shortTitle": "🪫 Fatigue",
       "sections": [
         {
@@ -444,7 +444,7 @@
       ]
     },
     "recovery": {
-      "title": "Recovery Rate: How Far Your Pulse Has Come Back from Its Peak",
+      "title": "Recovery Rate: How Fast Your Pulse Settles",
       "shortTitle": "🔄 Recovery Rate %",
       "sections": [
         {
@@ -493,7 +493,7 @@
       ]
     },
     "csi": {
-      "title": "CSI: Cardiac Stability Index (RR Variation Relative to Its Average)",
+      "title": "CSI: Cardiac Stability Index Explained",
       "shortTitle": "🎯 Cardiac Stability Index (CSI)",
       "sections": [
         {
@@ -539,7 +539,7 @@
       ]
     },
     "hrv": {
-      "title": "HRV (RMSSD): What Beat-to-Beat Variation Tells You",
+      "title": "HRV (RMSSD): Beat-to-Beat Variation Explained",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
@@ -594,7 +594,7 @@
       ]
     },
     "energy": {
-      "title": "Energy %: An Experimental Index from Heart Rate and Rhythm",
+      "title": "Energy %: An Experimental Heart-Rate Index",
       "shortTitle": "🔋 Energy %",
       "sections": [
         {
@@ -648,7 +648,7 @@
       ]
     },
     "stress": {
-      "title": "Stress %: An Experimental Index from Rhythm Irregularity",
+      "title": "Stress %: An Experimental Irregularity Index",
       "shortTitle": "⚡ Stress %",
       "sections": [
         {
@@ -702,7 +702,7 @@
       ]
     },
     "br": {
-      "title": "Breathing Rate: What Your Breaths per Minute Mean",
+      "title": "Breathing Rate: Breaths per Minute Explained",
       "shortTitle": "🌬️ /min — Breathing Rate",
       "sections": [
         {

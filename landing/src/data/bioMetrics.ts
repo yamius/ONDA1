@@ -15,7 +15,7 @@ export interface MetricDetail {
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
   "flow": {
     "key": "flow",
-    "title": "Flow: An Experimental Blend of Focus and Relaxation",
+    "title": "Flow: An Experimental Focus + Relaxation Index",
     "shortTitle": "🌊 Flow",
     "sections": [
       {
@@ -70,7 +70,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
   },
   "fatigue": {
     "key": "fatigue",
-    "title": "Fatigue: An Experimental Index from Energy and Stress",
+    "title": "Fatigue: An Experimental Energy/Stress Index",
     "shortTitle": "🪫 Fatigue",
     "sections": [
       {
@@ -437,7 +437,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
   },
   "recovery": {
     "key": "recovery",
-    "title": "Recovery Rate: How Far Your Pulse Has Come Back from Its Peak",
+    "title": "Recovery Rate: How Fast Your Pulse Settles",
     "shortTitle": "🔄 Recovery Rate %",
     "sections": [
       {
@@ -487,7 +487,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
   },
   "csi": {
     "key": "csi",
-    "title": "CSI: Cardiac Stability Index (RR Variation Relative to Its Average)",
+    "title": "CSI: Cardiac Stability Index Explained",
     "shortTitle": "🎯 Cardiac Stability Index (CSI)",
     "sections": [
       {
@@ -534,7 +534,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
   },
   "hrv": {
     "key": "hrv",
-    "title": "HRV (RMSSD): What Beat-to-Beat Variation Tells You",
+    "title": "HRV (RMSSD): Beat-to-Beat Variation Explained",
     "shortTitle": "📊 HRV (RMSSD)",
     "sections": [
       {
@@ -590,7 +590,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
   },
   "energy": {
     "key": "energy",
-    "title": "Energy %: An Experimental Index from Heart Rate and Rhythm",
+    "title": "Energy %: An Experimental Heart-Rate Index",
     "shortTitle": "🔋 Energy %",
     "sections": [
       {
@@ -645,7 +645,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
   },
   "stress": {
     "key": "stress",
-    "title": "Stress %: An Experimental Index from Rhythm Irregularity",
+    "title": "Stress %: An Experimental Irregularity Index",
     "shortTitle": "⚡ Stress %",
     "sections": [
       {
@@ -700,7 +700,7 @@ export const METRIC_DETAILS: Record<string, MetricDetail> = {
   },
   "br": {
     "key": "br",
-    "title": "Breathing Rate: What Your Breaths per Minute Mean",
+    "title": "Breathing Rate: Breaths per Minute Explained",
     "shortTitle": "🌬️ /min — Breathing Rate",
     "sections": [
       {
