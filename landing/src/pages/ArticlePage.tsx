@@ -65,7 +65,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'dopamine-stacking-preventing-circuit-overload': '3 min 15 sec',
   'cacao-stem-cells': '2 min 45 sec',
   'circadian-reset-mastering-light': '3 min 45 sec',
-  'metabolic-flexibility-dual-fuel-system': '6 min 10 sec',
+  'metabolic-flexibility-dual-fuel-system': '7 min 30 sec',
   'neuroplasticity-flow-overclocking': '5 min 30 sec',
   'gut-brain-axis-data-link': '4 min 50 sec',
   'breathwork-command-line-interface': '2 min 30 sec',

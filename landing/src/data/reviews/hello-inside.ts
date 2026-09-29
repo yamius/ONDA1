@@ -58,8 +58,7 @@ Choose Hello Inside if you read and learn in German and want a CGM programme tha
 
 The metabolic biology these programmes surface — and the protocols the data unlocks.
 
-- [Metabolic flexibility and the dual-fuel system](/articles/metabolic-flexibility-dual-fuel-system) — why fat-to-glucose switching is the metric CGM data makes visible
-- [Metabolic redundancy and hybrid power architecture](/articles/metabolic-redundancy-hybrid-power-architecture) — reading glucose curves as the runtime state of your fuel substrates
+- [Metabolic flexibility: what it is and how to tell](/articles/metabolic-flexibility-dual-fuel-system) — what a glucose curve can and cannot tell you about fuel switching
 - [Energy sensor: leptin](/articles/energy-sensor-leptin) — why leptin sits behind the satiety patterns CGM curves draw
 `,
   references: [

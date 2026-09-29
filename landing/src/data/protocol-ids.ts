@@ -92,9 +92,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'circadian-light-spectral-shift': 'circadian-lighting-dark-therapy',
   'circadian-light-photic-firewall': 'circadian-lighting-dark-therapy',
   // metabolic-flexibility-dual-fuel-system
-  'metabolic-fasted-window': 'metabolic-flexibility-dual-fuel-system',
-  'metabolic-glucose-buffer': 'metabolic-flexibility-dual-fuel-system',
-  'metabolic-zone2': 'metabolic-flexibility-dual-fuel-system',
+  'metflex-post-meal-walk': 'metabolic-flexibility-dual-fuel-system',
+  'metflex-aerobic-base': 'metabolic-flexibility-dual-fuel-system',
+  'metflex-meal-order': 'metabolic-flexibility-dual-fuel-system',
   // glp1-biology-muscle-preservation
   'glp1-fiber-pre-loading': 'glp1-biology-muscle-preservation',
   'glp1-berberine-pulsing': 'glp1-biology-muscle-preservation',

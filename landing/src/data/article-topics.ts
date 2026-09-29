@@ -269,7 +269,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "meditation-with-apple-watch": "meditation",
   "meditation-with-measurable-progress": "meditation",
   "metabolic-flexibility-dual-fuel-system": "heart-fitness-metabolism",
-  "metabolic-redundancy-hybrid-power-architecture": "heart-fitness-metabolism",
   "mitochondrial-biogenesis-cellular-power-grid": "brain-focus-aging",
   "mitochondrial-dna-red-light": "brain-focus-aging",
   "molecular-psychology-hormonal-firmware": "stress-vagus",

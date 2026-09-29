@@ -32,4 +32,6 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('reviews', 'resona-health-vibe', '2026-09-28'),
   // Hottest comparison (GSC clicks). ES was already live via the h2h rollout.
   ...everywhere('h2h', 'apple-watch-series-12-vs-whoop-5-0', '2026-09-28', ALL.filter((l) => l !== 'es')),
+  ...everywhere('articles', 'energy-sensor-leptin', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'metabolic-flexibility-dual-fuel-system', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

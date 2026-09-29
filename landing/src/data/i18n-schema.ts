@@ -46,6 +46,8 @@ export const TRANSLATION_SCHEMA = {
     path: 'bodies',
     fields: {
       title: text,
+      /** Optional short <title> (≤ ~48 chars) — used instead of cutting the long title. */
+      seoTitle: text,
       subtitle: text,
       description: text,
       content: markdown,

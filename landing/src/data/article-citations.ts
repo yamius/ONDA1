@@ -1389,12 +1389,13 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "metabolic-flexibility-dual-fuel-system": [
     {
-      "title": "Exercise, GLUT4, and Skeletal Muscle Glucose Uptake",
-      "authors": "Richter EA et al.",
-      "year": 2013,
-      "journal": "Physiological Reviews",
-      "doi": "10.1152/physrev.00038.2012",
-      "url": "https://doi.org/10.1152/physrev.00038.2012"
+      "title": "Fuel selection in human skeletal muscle in insulin resistance: a reexamination",
+      "authors": "Kelley DE et al.",
+      "year": 2000,
+      "journal": "Diabetes",
+      "doi": "10.2337/diabetes.49.5.677",
+      "pmid": "10905472",
+      "url": "https://doi.org/10.2337/diabetes.49.5.677"
     },
     {
       "title": "Metabolic Flexibility in Health and Disease",
@@ -1402,17 +1403,53 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "year": 2017,
       "journal": "Cell Metabolism",
       "doi": "10.1016/j.cmet.2017.04.015",
+      "pmid": "28467922",
       "url": "https://doi.org/10.1016/j.cmet.2017.04.015"
-    }
-  ],
-  "metabolic-redundancy-hybrid-power-architecture": [
+    },
     {
-      "title": "Metabolic Flexibility in Health and Disease",
-      "authors": "Goodpaster BH et al.",
-      "year": 2017,
-      "journal": "Cell Metabolism",
-      "doi": "10.1016/j.cmet.2017.04.015",
-      "url": "https://doi.org/10.1016/j.cmet.2017.04.015"
+      "title": "Assessment of Metabolic Flexibility by Means of Measuring Blood Lactate, Fat, and Carbohydrate Oxidation Responses to Exercise in Professional Endurance Athletes and Less-Fit Individuals",
+      "authors": "San-Millán I et al.",
+      "year": 2018,
+      "journal": "Sports Medicine",
+      "doi": "10.1007/s40279-017-0751-x",
+      "pmid": "28623613",
+      "url": "https://doi.org/10.1007/s40279-017-0751-x"
+    },
+    {
+      "title": "Exercise, GLUT4, and skeletal muscle glucose uptake",
+      "authors": "Richter EA et al.",
+      "year": 2013,
+      "journal": "Physiological Reviews",
+      "doi": "10.1152/physrev.00038.2012",
+      "pmid": "23899560",
+      "url": "https://doi.org/10.1152/physrev.00038.2012"
+    },
+    {
+      "title": "The Acute Effects of Interrupting Prolonged Sitting Time in Adults with Standing and Light-Intensity Walking on Biomarkers of Cardiometabolic Health in Adults: A Systematic Review and Meta-analysis",
+      "authors": "Buffey AJ et al.",
+      "year": 2022,
+      "journal": "Sports Medicine",
+      "doi": "10.1007/s40279-022-01649-4",
+      "pmid": "35147898",
+      "url": "https://doi.org/10.1007/s40279-022-01649-4"
+    },
+    {
+      "title": "Food Order Has a Significant Impact on Postprandial Glucose and Insulin Levels",
+      "authors": "Shukla AP et al.",
+      "year": 2015,
+      "journal": "Diabetes Care",
+      "doi": "10.2337/dc15-0429",
+      "pmid": "26106234",
+      "url": "https://doi.org/10.2337/dc15-0429"
+    },
+    {
+      "title": "Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity: The TREAT Randomized Clinical Trial",
+      "authors": "Lowe DA et al.",
+      "year": 2020,
+      "journal": "JAMA Internal Medicine",
+      "doi": "10.1001/jamainternmed.2020.4153",
+      "pmid": "32986097",
+      "url": "https://doi.org/10.1001/jamainternmed.2020.4153"
     }
   ],
   "mitochondrial-biogenesis-cellular-power-grid": [

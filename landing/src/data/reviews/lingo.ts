@@ -60,7 +60,7 @@ The metabolic biology these programmes surface — and the protocols the data un
 
 - [Continuous hormone monitoring](/articles/chm-continuous-hormone-monitoring) — why CGM is the closest consumer product to the hormone-stream future
 - [The gut-brain axis as a data link](/articles/gut-brain-axis-data-link) — where microbiome and glucose patterns meet
-- [Metabolic flexibility and the dual-fuel system](/articles/metabolic-flexibility-dual-fuel-system) — why fat-to-glucose switching is the metric CGM data makes visible
+- [Metabolic flexibility: what it is and how to tell](/articles/metabolic-flexibility-dual-fuel-system) — what a glucose curve can and cannot tell you about fuel switching
 `,
   references: [
     { label: 'Lingo — official site', url: 'https://www.hellolingo.com/' },

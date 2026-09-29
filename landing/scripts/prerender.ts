@@ -893,12 +893,14 @@ for (const route of routes) {
         // og:url, og:locale to the localised values, then emit the cluster.
         const body = articlesByLang[articleInfo.lang].bodies?.[articleInfo.slug]
         const subtitle = body?.title ?? ''
+        const seoTitle = (body as { seoTitle?: string } | undefined)?.seoTitle
         const desc = body?.description ?? ''
         const url = articleUrlFor(articleInfo.slug, articleInfo.lang)
         const escUrl = escAttr(url)
         out = out.replace(/<link\s+rel="canonical"\s+href="[^"]*">/i, `<link rel="canonical" href="${escUrl}">`)
         if (subtitle) {
-          const title = fitTitle(subtitle, " — ONDA Life")
+          // Hand-written short seoTitle wins; otherwise fit the long title.
+          const title = seoTitle ? `${seoTitle} — ONDA Life` : fitTitle(subtitle, " — ONDA Life")
           const escTitle = escAttr(title)
           out = out.replace(/<title>[^<]*<\/title>/i, `<title>${escTitle}</title>`)
           out = out.replace(/<meta\s+name="title"\s+content="[^"]*">/i, `<meta name="title" content="${escTitle}">`)

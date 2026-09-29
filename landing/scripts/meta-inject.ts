@@ -327,7 +327,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'circadian-reset-mastering-light':
     'How light sets your circadian clock — using photic timing to ease circadian drift, insomnia, and brain fog.',
   'metabolic-flexibility-dual-fuel-system':
-    'How metabolic flexibility between glucose and ketones works — for steadier energy and less brain fog.',
+    'Metabolic flexibility is your ability to shift between burning fat and carbs. How it is measured, why it is not ketosis, and which habits actually improve it.',
   'neuroplasticity-flow-overclocking':
     'How BDNF, flow states, and myelination relate to learning and focus — and what practice can actually influence.',
   'gut-brain-axis-data-link':

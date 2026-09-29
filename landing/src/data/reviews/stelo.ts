@@ -59,8 +59,7 @@ Choose Stelo if you want the most accurate CGM hardware available at the best pr
 The metabolic biology these programmes surface — and the protocols the data unlocks.
 
 - [The gut-brain axis as a data link](/articles/gut-brain-axis-data-link) — where microbiome and glucose patterns meet
-- [Metabolic flexibility and the dual-fuel system](/articles/metabolic-flexibility-dual-fuel-system) — why fat-to-glucose switching is the metric CGM data makes visible
-- [Metabolic redundancy and hybrid power architecture](/articles/metabolic-redundancy-hybrid-power-architecture) — reading glucose curves as the runtime state of your fuel substrates
+- [Metabolic flexibility: what it is and how to tell](/articles/metabolic-flexibility-dual-fuel-system) — what a glucose curve can and cannot tell you about fuel switching
 `,
   references: [
     { label: 'Stelo — official site', url: 'https://www.stelo.com/' },

@@ -26,7 +26,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
-    "modified": "2026-05-25T19:35:33+02:00"
+    "modified": "2026-09-29T21:37:54+02:00"
   },
   "adrenal-governor-thermal-runaway": {
     "published": "2026-04-01T13:38:29Z",
@@ -234,7 +234,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "energy-sensor-leptin": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T21:37:54+02:00"
   },
   "fascial-tensegrity-protocol-myofascial-noise": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -443,10 +443,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
     "modified": "2026-09-29T10:50:12+02:00"
-  },
-  "metabolic-redundancy-hybrid-power-architecture": {
-    "published": "2026-04-21T13:10:41Z",
-    "modified": "2026-09-29T12:26:39+02:00"
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -1642,7 +1638,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-28T20:58:44+02:00"
+    "modified": "2026-09-29T21:37:54+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1650,7 +1646,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-28T16:01:23+02:00"
+    "modified": "2026-09-29T21:07:41+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",

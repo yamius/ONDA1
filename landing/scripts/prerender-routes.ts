@@ -153,7 +153,6 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'hydraulic-viscosity-onda-transport-bus', publishOn: '2026-07-06' },
   { slug: 'longevity-hardware-cellular-cleanup', publishOn: '2026-07-06' },
   { slug: 'longevity-protocol-biological-clock-reset', publishOn: '2026-07-06' },
-  { slug: 'metabolic-redundancy-hybrid-power-architecture', publishOn: '2026-07-06' },
   { slug: 'mitochondrial-biogenesis-cellular-power-grid', publishOn: '2026-07-06' },
   { slug: 'mitochondrial-dna-red-light', publishOn: '2026-07-06' },
   { slug: 'neural-bridge-alpha-flow-gateway', publishOn: '2026-07-06' },
@@ -343,7 +342,6 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   // from current EN (old bodies stale); full link parity. Batch 2026-10-12.
   { slug: 'glp1-biology-muscle-preservation', publishOn: '2026-10-12' },
   { slug: 'metabolic-flexibility-dual-fuel-system', publishOn: '2026-10-12' },
-  { slug: 'metabolic-redundancy-hybrid-power-architecture', publishOn: '2026-10-12' },
   { slug: 'mitochondrial-biogenesis-cellular-power-grid', publishOn: '2026-10-12' },
   { slug: 'mitochondrial-dna-red-light', publishOn: '2026-10-12' },
   { slug: 'longevity-hardware-cellular-cleanup', publishOn: '2026-10-12' },

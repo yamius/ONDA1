@@ -551,18 +551,6 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Train resolution deliberately: pair attention with objective HRV data to calibrate what you feel against what is measured, run a slow, structured body scan to map sensations, and use graded interoceptive exposure \u2014 noticing uncomfortable internal signals without reacting \u2014 to widen tolerance.",
     },
   ],
-  "metabolic-redundancy-hybrid-power-architecture": [
-    {
-      question: "What is metabolic flexibility?",
-      answer:
-        "Metabolic flexibility is the ability to switch cleanly between fuel sources \u2014 glucose for high-octane bursts and fat or ketones for stable baseline energy. A flexible system has a redundancy layer, so a dip in one fuel does not crash performance.",
-    },
-    {
-      question: "How do I stop the afternoon energy crash?",
-      answer:
-        "Crashes come from running on glucose alone. Build dual-fuel capacity with periodic glycogen-depletion cycles that train fat-burning, order meals to smooth the glucose curve (protein and fibre before starch), and add mild thermal stress \u2014 together they remove the spike-and-crash pattern.",
-    },
-  ],
   "muscle-metabolic-marker": [
     {
       question: "Why is muscle considered a marker of biological age?",
@@ -722,14 +710,24 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   'metabolic-flexibility-dual-fuel-system': [
     {
-      question: 'How do I achieve metabolic flexibility?',
+      question: 'What is metabolic flexibility?',
       answer:
-        'By utilizing intermittent fasting, reducing refined carbohydrate intake, and performing zone 2 cardio. This trains your mitochondria to switch efficiently between burning glucose and stored body fat.',
+        'Metabolic flexibility is the ability to shift between burning mostly fat and mostly carbohydrate as conditions change: mainly fat after an overnight fast, more glucose after a meal or during harder exercise. Researchers measure it as the change in the ratio of carbon dioxide breathed out to oxygen used. The shift is blunted in insulin resistance.',
     },
     {
-      question: 'What is the benefit of being metabolically flexible?',
+      question: 'Is metabolic flexibility the same as ketosis?',
       answer:
-        "It provides stable energy levels throughout the day, eliminates 'energy crashes' after meals, and improves cognitive clarity and physical endurance.",
+        'No. Ketosis is one specific state, reached through long fasting or a very low-carb diet, in which the liver makes ketones from fat. Metabolic flexibility is the ability to switch between fat and carbohydrate burning in everyday life. Healthy muscle burns plenty of fat between meals without being in ketosis.',
+    },
+    {
+      question: 'Can a continuous glucose monitor measure metabolic flexibility?',
+      answer:
+        'No. A CGM shows blood glucose: how high it rises after meals and how quickly it falls. That is useful, but it does not show which fuel your muscles are burning. Metabolic flexibility is measured in labs with indirect calorimetry, sometimes combined with blood lactate during exercise.',
+    },
+    {
+      question: 'How can I improve metabolic flexibility?',
+      answer:
+        'Regular aerobic exercise is the best-supported lever, because it adds glucose transporters and mitochondria to muscle. Walking after meals and breaking up long sitting lowers post-meal glucose and insulin. Keeping muscle, sleeping enough and managing waist size support insulin sensitivity. Fasting windows alone have not beaten regular meals in trials.',
     },
   ],
   'circadian-reset-mastering-light': [
