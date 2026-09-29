@@ -84,6 +84,9 @@ export function useVitals() {
   const coherenceRef = useRef(-1);
   // EMA state for the DISPLAYED breathing estimate (sentinel -1, see ewma).
   const brSmoothRef = useRef(-1);
+  // Recent raw breathing-rate estimates (one per 2s tick, ~30s window) — the
+  // real breathing mean/variability that feed the emotional indices.
+  const brHistoryRef = useRef<number[]>([]);
 
   // Feed the shared HR buffer at a steady 1 Hz from whichever non-camera,
   // non-BLE source is live (Apple Watch via WCSession / HealthKit / Android
@@ -140,6 +143,7 @@ export function useVitals() {
         setHrv(null);
         coherenceRef.current = -1;
         brSmoothRef.current = -1;
+        brHistoryRef.current = [];
         return;
       }
 
@@ -182,6 +186,18 @@ export function useVitals() {
       if (brSmoothed != null) brSmoothRef.current = brSmoothed;
       setBr(brSmoothed);
       console.log('Breathing Rate:', brValue, '→ smoothed', brSmoothed);
+
+      // Breathing variability over the last ~30s of estimates (15 ticks × 2s).
+      if (brValue != null) {
+        const hist = brHistoryRef.current;
+        hist.push(brValue);
+        if (hist.length > 15) hist.shift();
+      }
+      const brHist = brHistoryRef.current;
+      const brMeanWin = brHist.length ? brHist.reduce((a, v) => a + v, 0) / brHist.length : brValue;
+      const brStdWin = brHist.length >= 5
+        ? Math.sqrt(brHist.reduce((a, v) => a + (v - (brMeanWin as number)) ** 2, 0) / brHist.length)
+        : null; // not enough history yet → neutral steadiness (see below)
 
       // Update baseline for BR
       const b = baseline.current;
@@ -280,8 +296,10 @@ export function useVitals() {
           br0: b.brMean,
           brStd: b.brVar,
           hrStdWin: hrStd,
-          brMeanWin: brValue,
-          brStdWin: 0.5,
+          brMeanWin: brMeanWin ?? brValue,
+          // Until ~10s of estimates exist, assume moderate variability (20% of
+          // the mean → Sbr 0.5) instead of claiming perfectly steady breathing.
+          brStdWin: brStdWin ?? 0.2 * (brMeanWin ?? brValue),
           dhr_dt: dhrDtRef.current,
           energy01: energy01,
           stress01: stress01

@@ -24,7 +24,7 @@ const HEALTH_NOTE =
   'This is a wellness tool, not a medical device. If you notice an irregular pulse, unusual palpitations, or a heart rate that is often very high or very low at rest, talk to a doctor.'
 
 const HEURISTIC_NOTE =
-  'This is an experimental heuristic score, not a validated scientific measure, and it does not detect emotions. It only combines how your current heart rate and estimated breathing compare with your own recent values. Use it as a rough direction signal and compare it with how you actually feel.'
+  'This is an experimental heuristic score, not a validated scientific measure, and it does not detect emotions. It only combines how your current heart rate and estimated breathing compare with your own recent values. "Breathing steadiness" means how little your estimated breathing rate has varied over the last ~30 seconds (its spread relative to its average). Use it as a rough direction signal and compare it with how you actually feel.'
 
 export const METRIC_DETAILS: Record<string, MetricDetail> = {
   flow: {
