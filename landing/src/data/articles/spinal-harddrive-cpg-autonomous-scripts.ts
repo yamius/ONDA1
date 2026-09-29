@@ -83,9 +83,9 @@ Three techniques to return control to where it belongs — the spinal cord:
 
 ### Technique 2: Rhythmic Entrainment (CPG Synchronization)
 
-> **Action:** Use an external rhythm source (metronome, ONDA breathing tempo, music with clear rhythmic structure) to anchor movement during exercise, walking, or breathwork sessions. Match your movement cadence to the external rhythm for 10–20 minutes.
+> **Action:** Use an external rhythm source (metronome, slow paced breathing, music with clear rhythmic structure) to anchor movement during exercise, walking, or breathwork sessions. Match your movement cadence to the external rhythm for 10–20 minutes.
 
-**Logic:** CPGs are oscillator networks — they entrain to external rhythmic inputs via the auditory-motor system (a direct neural pathway linking auditory cortex to spinal motor circuits, used clinically in gait rehabilitation). External rhythm provides a phase-locking signal that synchronizes the CPG oscillators and shifts them toward maximum efficiency mode — the state where energy consumption per unit of output is minimized. This is why music improves endurance: it is not motivational, it is a CPG synchronization tool. ONDA breathing at 0.1 Hz provides a complementary entrainment signal through the respiratory CPG, which cross-couples with locomotor CPGs and cardiac rhythm.
+**Logic:** CPGs are oscillator networks — they entrain to external rhythmic inputs via the auditory-motor system (a direct neural pathway linking auditory cortex to spinal motor circuits, used clinically in gait rehabilitation). External rhythm provides a phase-locking signal that synchronizes the CPG oscillators and shifts them toward maximum efficiency mode — the state where energy consumption per unit of output is minimized. This is why music improves endurance: it is not motivational, it is a CPG synchronization tool. Breathing at 0.1 Hz provides a complementary entrainment signal through the respiratory CPG, which cross-couples with locomotor CPGs and cardiac rhythm.
 
 ### Technique 3: Eyes-Closed Drills (Cortical Withdrawal Training)
 
@@ -114,7 +114,7 @@ Three techniques to return control to where it belongs — the spinal cord:
     },
     {
       name: 'Rhythmic Entrainment (CPG Synchronization)',
-      text: 'Use an external rhythm source (metronome, ONDA breathing tempo at 0.1 Hz, music with clear beat) to anchor movement cadence for 10–20 minutes. Phase-locks spinal CPG oscillators via the auditory-motor pathway, shifting them into minimum energy-per-output efficiency mode.',
+      text: 'Use an external rhythm source (metronome, slow paced breathing at 0.1 Hz, music with clear beat) to anchor movement cadence for 10–20 minutes. Phase-locks spinal CPG oscillators via the auditory-motor pathway, shifting them into minimum energy-per-output efficiency mode.',
       protocolId: 'cpg-rhythmic-entrainment',
     },
     {

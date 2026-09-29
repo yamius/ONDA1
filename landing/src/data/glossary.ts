@@ -6346,9 +6346,9 @@ Allostatic load accumulates when defense mechanisms (such as [cortisol](/glossar
 
 ## ONDA_STRATEGY: DEBT REPAYMENT
 
-In ONDA protocols, we use biometric data to manage and "pay down" this debt:
+In ONDA protocols, we use biometric data to notice and "pay down" this debt:
 
-- **Recovery Loading:** If the Readiness Score (based on HRV) is low, the system suggests reducing training intensity and increasing sleep duration to prevent load accumulation.
+- **Recovery Loading:** If your resting HR or HRV drifts outside your personal baseline range, treat it as a cue to ease training intensity and prioritize sleep to prevent load accumulation.
 - **Vagal Tone Activation:** Utilizing breathing techniques and cold therapy to activate the [Vagus Nerve](/glossary/vagus-nerve), which serves as the primary "kill switch" for the allostatic response.
 - **Stress Buffering:** Implementing timely micro-breaks throughout the day to prevent the cumulative effect of stress from reaching a tipping point.`,
     relatedSlugs: ['cortisol', 'hpa-axis', 'heart-rate-variability'],
@@ -6393,7 +6393,7 @@ Hormesis functions by activating survival pathways that typically remain in a "d
 
 ## ONDA_STRATEGY: FORGING PROTOCOLS
 
-In the ONDA app, we utilize dosed stress to expand your adaptive bandwidth:
+In the ONDA framework, dosed stress is used to expand your adaptive bandwidth:
 
 - **Cold/Heat Shock:** Ice baths or saunas are classic examples of thermal hormesis that activate metabolic defense layers.
 - **Intermittent Fasting:** Hunger, acting as a hormetic stressor, triggers [Autophagy](/glossary/autophagy) (cellular cleanup).

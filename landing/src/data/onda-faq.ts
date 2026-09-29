@@ -82,23 +82,13 @@ export const ONDA_FAQ: FaqGroup[] = [
       },
       {
         q: 'Does ONDA work without an Apple Watch?',
-        a: 'Yes. ONDA can measure your pulse with the iPhone camera (photoplethysmography), so you get a resting HRV reading with just your phone. An Apple Watch adds continuous heart data and live feedback, but it is not required to start.',
+        a: 'Yes. ONDA can measure your pulse with the iPhone camera (photoplethysmography), so you can start with just your phone and also get a breathing estimate. HRV, continuous heart data and live coherence feedback need an Apple Watch, but it is not required to start.',
         link: { to: '/tools/camera-heart-rate', label: 'Camera heart rate' },
       },
       {
         q: 'Does ONDA use the iPhone camera to measure pulse?',
-        a: 'Yes. By placing a fingertip over the camera, ONDA reads the tiny colour changes in your skin with each heartbeat (PPG) to measure heart rate and compute HRV at rest — no wearable required.',
+        a: 'Yes. By placing a fingertip over the camera, ONDA reads the tiny colour changes in your skin with each heartbeat (PPG) to measure your resting heart rate and a breathing estimate — no wearable required.',
         link: { to: '/how-it-works', label: 'How ONDA works' },
-      },
-      {
-        q: 'What does ONDA’s stress score mean?',
-        a: 'The stress score is ONDA’s estimate of your current physiological state from your heart-rate and HRV patterns. It is an interpretation to guide practice, not a measurement of “stress” and not a medical assessment.',
-        link: { to: '/measurements', label: 'What ONDA measures' },
-      },
-      {
-        q: 'What does ONDA’s energy score mean?',
-        a: 'The energy score is ONDA’s estimate of readiness or activation, derived from the same heart-rate and HRV signals. Like the stress score, it is a contextual estimate, not a directly measured quantity.',
-        link: { to: '/measurements', label: 'What ONDA measures' },
       },
       {
         q: 'Is ONDA free?',

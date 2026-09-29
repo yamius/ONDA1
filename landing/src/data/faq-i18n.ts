@@ -91,19 +91,11 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
           },
           {
             q: 'Работает ли ONDA без Apple Watch?',
-            a: 'Да. ONDA может измерять пульс камерой iPhone (фотоплетизмография), так что вы получаете измерение HRV в покое одним телефоном. Apple Watch добавляет непрерывные данные сердца и живую обратную связь, но для старта не обязателен.',
+            a: 'Да. ONDA может измерять пульс камерой iPhone (фотоплетизмография), так что начать можно с одним телефоном и получить ещё и оценку дыхания. Для HRV, непрерывных данных сердца и живой обратной связи по когерентности нужны Apple Watch, но для старта они не обязательны.',
           },
           {
             q: 'Использует ли ONDA камеру iPhone для измерения пульса?',
-            a: 'Да. Приложив палец к камере, ONDA считывает крошечные изменения цвета кожи при каждом ударе сердца (PPG), чтобы измерить пульс и вычислить HRV в покое — носимый не нужен.',
-          },
-          {
-            q: 'Что означает показатель стресса в ONDA?',
-            a: 'Показатель стресса — это оценка ONDA вашего текущего физиологического состояния по паттернам пульса и HRV. Это интерпретация для практики, а не измерение «стресса» и не медицинская оценка.',
-          },
-          {
-            q: 'Что означает показатель энергии в ONDA?',
-            a: 'Показатель энергии — это оценка готовности или активации от ONDA, выведенная из тех же сигналов пульса и HRV. Как и показатель стресса, это контекстная оценка, а не напрямую измеренная величина.',
+            a: 'Да. Приложив палец к камере, ONDA считывает крошечные изменения цвета кожи при каждом ударе сердца (PPG), чтобы измерить пульс в покое и оценить дыхание — носимый не нужен.',
           },
           {
             q: 'ONDA бесплатна?',
@@ -290,19 +282,11 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
           },
           {
             q: '¿Funciona ONDA sin un Apple Watch?',
-            a: 'Sí. ONDA puede medir tu pulso con la cámara del iPhone (fotopletismografía), así que obtienes una lectura de VFC en reposo solo con tu teléfono. Un Apple Watch añade datos cardíacos continuos y feedback en vivo, pero no es necesario para empezar.',
+            a: 'Sí. ONDA puede medir tu pulso con la cámara del iPhone (fotopletismografía), así que puedes empezar solo con tu teléfono y obtener además una estimación de la respiración. La VFC, los datos cardíacos continuos y el feedback de coherencia en vivo necesitan un Apple Watch, pero no es necesario para empezar.',
           },
           {
             q: '¿ONDA usa la cámara del iPhone para medir el pulso?',
-            a: 'Sí. Al poner un dedo sobre la cámara, ONDA lee los pequeños cambios de color de tu piel con cada latido (PPG) para medir la frecuencia cardíaca y calcular la VFC en reposo — sin wearable.',
-          },
-          {
-            q: '¿Qué significa la puntuación de estrés de ONDA?',
-            a: 'La puntuación de estrés es la estimación de ONDA de tu estado fisiológico actual a partir de tus patrones de frecuencia cardíaca y VFC. Es una interpretación para guiar la práctica, no una medición del «estrés» ni una evaluación médica.',
-          },
-          {
-            q: '¿Qué significa la puntuación de energía de ONDA?',
-            a: 'La puntuación de energía es la estimación de ONDA de tu preparación o activación, derivada de las mismas señales de frecuencia cardíaca y VFC. Como la de estrés, es una estimación contextual, no una cantidad medida directamente.',
+            a: 'Sí. Al poner un dedo sobre la cámara, ONDA lee los pequeños cambios de color de tu piel con cada latido (PPG) para medir tu frecuencia cardíaca en reposo y estimar la respiración — sin wearable.',
           },
           {
             q: '¿ONDA es gratis?',

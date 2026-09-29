@@ -87,7 +87,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
         kicker: '[ HOW ONDA USES EACH ]',
         title: 'How ONDA uses HRV and coherence',
         paras: [
-          'ONDA measures HRV from your heartbeat (iPhone camera or Apple Watch) and shows a **live coherence score** during practice, so you can see your rhythm organise as you breathe — the in-the-moment guide. Over time it tracks your **resting-HRV trend** as the measure of progress. See exactly {{measuresLink}}, {{howLink}}, and {{hrvLink}} overall.',
+          'ONDA reads your heartbeat (iPhone camera or Apple Watch) and — with an Apple Watch — shows a **live coherence score** during practice, so you can see your rhythm organise as you breathe — the in-the-moment guide. Over time it tracks your **resting-HRV trend** as the measure of progress. See exactly {{measuresLink}}, {{howLink}}, and {{hrvLink}} overall.',
         ],
       },
     ],

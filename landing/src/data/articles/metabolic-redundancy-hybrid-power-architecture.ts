@@ -4,7 +4,7 @@ const article: Article = {
   slug: 'metabolic-redundancy-hybrid-power-architecture',
   title: 'Metabolic Redundancy: Hybrid Power Architecture',
   description:
-    'Most people run on a single fuel source — glucose. ONDA trains the mitochondrial switch for dual-fuel operation: stable energy for 12+ hours without crashes or brain fog.',
+    'Most people run on a single fuel source — glucose. ONDA protocols aim to support the mitochondrial switch for dual-fuel operation: steadier energy with fewer crashes.',
   category: 'Biological Software',
   introStyle: 'emerald',
   relatedSlugs: [
@@ -76,7 +76,7 @@ Short periods of low-carb intake combined with ONDA protocols force mitochondria
 Specific nutrient sequencing — fiber, then protein, then carbohydrates — flattens glucose spikes and avoids contact bounce in the endocrine system.
 
 ### Thermal Stress
-ONDA cold protocols activate brown adipose tissue, which acts as a high-efficiency energy converter, increasing total system output and metabolic range.
+Cold-exposure protocols activate brown adipose tissue, which acts as a high-efficiency energy converter, increasing total system output and metabolic range.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: Apple Watch / CGM

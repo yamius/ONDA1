@@ -74,7 +74,7 @@ The honest boundary: this trains the autonomic self-regulation dimension of HRV.
 
 You can slow your breathing blind and it helps. But you learn far faster when you can *see* it working — which is the whole point of HRV biofeedback. An app that reads your pulse (from the [iPhone camera or an Apple Watch](/measurements)) and renders your heart rhythm live lets you find the exact pace and depth that maximises *your* swing, and confirms the practice is landing instead of hoping.
 
-That's what ONDA is built for: it paces your breathing and shows your rhythm organising in real time — see [HRV biofeedback](/hrv-biofeedback). One honest note: the live **coherence score** unlocks with an Apple Watch; on the phone camera you still get live pulse and a breathing estimate. And measure your progress properly — HRV is noisy, so [track the trend, not a single reading](/articles/how-to-measure-hrv-consistently).
+That's what ONDA is built for: it guides your breathing and shows your rhythm organising in real time — see [HRV biofeedback](/hrv-biofeedback). One honest note: the live **coherence score** unlocks with an Apple Watch; on the phone camera you still get live pulse and a breathing estimate. And measure your progress properly — HRV is noisy, so [track the trend, not a single reading](/articles/how-to-measure-hrv-consistently).
 
 ---
 

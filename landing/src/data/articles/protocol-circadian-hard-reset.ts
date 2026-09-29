@@ -49,7 +49,7 @@ const article: Article = {
 
 ## Step 1: How do you know your body clock is off?
 
-Consistently low HRV on waking and midnight glucose spikes are the two primary signals — measure the scale of the desync before performing a Hard Reset. In the ONDA ecosystem, we prioritize two primary sensors:
+Consistently low HRV on waking and midnight glucose spikes are the two primary signals — measure the scale of the desync before performing a Hard Reset. In the ONDA framework, we prioritize two primary signals:
 
 **HRV as a Stress Indicator:** If your HRV is consistently low upon waking, your system failed to "reboot" overnight. Your clock is stuck in High Performance mode, never entering Recovery.
 
@@ -85,7 +85,7 @@ Reset it with 72-hour strict adherence to three primary **Zeitgebers** (time-giv
 
 ## Step 3: Monitoring Uptime (Verification)
 
-Post-reset, analyze Sleep Architecture within the ONDA app.
+Post-reset, check your sleep regularity and duration in ONDA's Life Rhythm.
 
 **Target:** 15–20% increase in Deep Sleep phase within the first 3 nights.
 

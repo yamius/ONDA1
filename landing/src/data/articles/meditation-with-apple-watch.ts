@@ -11,7 +11,7 @@ const article: Article = {
   title: 'Meditation With Your Apple Watch: A Biofeedback Coach on Your Wrist',
   seoTitle: 'Meditation With Apple Watch (HRV Biofeedback) | ONDA Life',
   description:
-    'Your Apple Watch already reads your heartbeat. The right app turns that into live meditation biofeedback — pacing your breath and showing your heart rhythm settle in real time. How to meditate with Apple Watch HRV.',
+    'Your Apple Watch already reads your heartbeat. The right app turns that into live meditation biofeedback — guiding your breath and showing your heart rhythm settle in real time. How to meditate with Apple Watch HRV.',
   category: 'ONDA Protocol',
   relatedSlugs: ['what-your-apple-watch-records', 'apple-watch-recovery-hrv-vs-overall-hrv', 'meditation-app-with-biofeedback', 'heart-rate-variability', 'coherent-breathing-guide'],
   introStyle: 'blue',
@@ -20,7 +20,7 @@ const article: Article = {
     "An Apple Watch projecting a live coherence wave as the wearer breathes — continuous pulse, no chest strap, the Watch as a biofeedback coach.",
   imageTitle: "Meditation with your Apple Watch — a biofeedback coach on your wrist",
   imageCaption:
-    "Meditating with Apple Watch HRV — the wrist pulse becomes a live coherence coach that paces your breath and shows your heart rhythm settle.",
+    "Meditating with Apple Watch HRV — the wrist pulse becomes a live coherence coach that guides your breath and shows your heart rhythm settle.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'The Watch already reads your heart. Point that signal at your breath and it becomes a coach.',
@@ -64,7 +64,7 @@ For the fuller picture of what the Watch records over time, see [what your Apple
 
 ## Section 4: How ONDA uses the Watch
 
-ONDA is built to turn the Apple Watch into exactly this coach. It reads the Watch's pulse, paces your breathing, and shows your heart rhythm organising into a live [coherence](/glossary/coherence) score as you practise — the deep dive is in [Apple Watch HRV biofeedback](/apple-watch-hrv-biofeedback) and [what it measures](/measurements). It pairs that live loop with a structured, level-by-level practice program, so the Watch isn't just showing a number — it's guiding a progression.
+ONDA is built to turn the Apple Watch into exactly this coach. It reads the Watch's pulse, guides your breathing, and shows your heart rhythm organising into a live [coherence](/glossary/coherence) score as you practise — the deep dive is in [Apple Watch HRV biofeedback](/apple-watch-hrv-biofeedback) and [what it measures](/measurements). It pairs that live loop with a structured, level-by-level practice program, so the Watch isn't just showing a number — it's guiding a progression.
 
 And it's approachable: **free to start** — first reading in about 90 seconds, first practices free — then a subscription. Freemium with a paywall, so you can feel the Watch-driven feedback before committing.
 

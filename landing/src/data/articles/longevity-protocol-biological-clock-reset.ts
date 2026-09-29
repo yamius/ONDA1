@@ -77,7 +77,7 @@ To move beyond basic alignment and into Age Deceleration, implement the three-la
 
 ### Protocol 3: Data-Driven Wind Down
 
-> **Action:** Monitor DFA alpha 1 (heart rate fractal correlation) via the ONDA app during the evening. Deploy VNS if sympathetic tone remains elevated past the target window.
+> **Action:** Watch your pulse and breathing settle via the ONDA app during the evening (DFA alpha 1, a heart-rate fractal-correlation index, needs a dedicated HRV tool). Deploy VNS if sympathetic tone remains elevated past the target window.
 
 **Logic:** DFA alpha 1 is one of the most sensitive early indicators of autonomic balance. A value above 1.0 signals parasympathetic dominance and readiness for restorative sleep. We ensure the nervous system has fully transitioned from High-Load to Rest before sleep onset. If the data shows persistent sympathetic tone, a targeted VNS (Vagus Nerve Stimulation) patch — slow paced breathing at 0.1 Hz — forces the transition within 8–12 minutes.
 

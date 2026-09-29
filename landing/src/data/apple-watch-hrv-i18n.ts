@@ -86,7 +86,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ WATCH VS CAMERA ]',
         title: 'Apple Watch vs iPhone camera',
         paras: [
-          'You don’t strictly need the Watch. ONDA can read your pulse with the iPhone camera (PPG) for a resting HRV reading. The Apple Watch adds continuous heart data and smoother live feedback and is the better option if you own one — but the camera is a genuine no-extra-hardware alternative. See {{productLink}}.',
+          'You don’t strictly need the Watch. ONDA can read your pulse with the iPhone camera (PPG) for a resting pulse and breathing estimate; HRV needs an Apple Watch. The Apple Watch adds continuous heart data and smoother live feedback and is the better option if you own one — but the camera is a genuine no-extra-hardware alternative. See {{productLink}}.',
         ],
       },
     ],
@@ -106,7 +106,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
       },
       {
         q: 'Do I need an Apple Watch for HRV biofeedback with ONDA?',
-        a: 'No. ONDA also works with the iPhone camera (photoplethysmography) for a resting HRV reading. An Apple Watch adds continuous heart data and live feedback, but it isn’t required to start.',
+        a: 'No. ONDA also works with the iPhone camera (photoplethysmography) for a resting pulse and breathing reading; HRV and the coherence score need an Apple Watch, which adds continuous heart data and live feedback, but it isn’t required to start.',
       },
       {
         q: 'Is Apple Watch HRV biofeedback a medical tool?',
@@ -190,7 +190,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ ЧАСЫ ПРОТИВ КАМЕРЫ ]',
         title: 'Apple Watch против камеры iPhone',
         paras: [
-          'Строго говоря, часы не обязательны. ONDA может считывать пульс камерой iPhone (PPG) для замера HRV в покое. Apple Watch добавляют непрерывные данные сердца и более гладкую живую обратную связь и предпочтительнее, если они у вас есть, — но камера это настоящая альтернатива без дополнительного оборудования. Смотрите {{productLink}}.',
+          'Строго говоря, часы не обязательны. ONDA может считывать пульс камерой iPhone (PPG) для замера пульса и дыхания в покое; для HRV нужны Apple Watch. Apple Watch добавляют непрерывные данные сердца и более гладкую живую обратную связь и предпочтительнее, если они у вас есть, — но камера это настоящая альтернатива без дополнительного оборудования. Смотрите {{productLink}}.',
         ],
       },
     ],
@@ -210,7 +210,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
       },
       {
         q: 'Нужны ли Apple Watch для HRV-биофидбека с ONDA?',
-        a: 'Нет. ONDA также работает с камерой iPhone (фотоплетизмография) для замера HRV в покое. Apple Watch добавляют непрерывные данные сердца и живую обратную связь, но для старта не обязательны.',
+        a: 'Нет. ONDA также работает с камерой iPhone (фотоплетизмография) для замера пульса и дыхания в покое; HRV и показатель когерентности требуют Apple Watch, которые добавляют непрерывные данные сердца и живую обратную связь, но для старта не обязательны.',
       },
       {
         q: 'HRV-биофидбек на Apple Watch — это медицинский инструмент?',
@@ -294,7 +294,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ RELOJ VS CÁMARA ]',
         title: 'Apple Watch vs cámara del iPhone',
         paras: [
-          'No necesitas el reloj estrictamente. ONDA puede leer tu pulso con la cámara del iPhone (PPG) para una lectura de VFC en reposo. El Apple Watch añade datos cardíacos continuos y un feedback en vivo más suave, y es la mejor opción si tienes uno — pero la cámara es una alternativa genuina sin hardware extra. Mira {{productLink}}.',
+          'No necesitas el reloj estrictamente. ONDA puede leer tu pulso con la cámara del iPhone (PPG) para una lectura de pulso y respiración en reposo; la VFC requiere un Apple Watch. El Apple Watch añade datos cardíacos continuos y un feedback en vivo más suave, y es la mejor opción si tienes uno — pero la cámara es una alternativa genuina sin hardware extra. Mira {{productLink}}.',
         ],
       },
     ],
@@ -314,7 +314,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
       },
       {
         q: '¿Necesito un Apple Watch para el biofeedback de VFC con ONDA?',
-        a: 'No. ONDA también funciona con la cámara del iPhone (fotopletismografía) para una lectura de VFC en reposo. Un Apple Watch añade datos cardíacos continuos y feedback en vivo, pero no es necesario para empezar.',
+        a: 'No. ONDA también funciona con la cámara del iPhone (fotopletismografía) para una lectura de pulso y respiración en reposo; la VFC y la puntuación de coherencia requieren un Apple Watch, que añade datos cardíacos continuos y feedback en vivo, pero no es necesario para empezar.',
       },
       {
         q: '¿El biofeedback de VFC en Apple Watch es una herramienta médica?',

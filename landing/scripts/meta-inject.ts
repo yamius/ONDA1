@@ -404,7 +404,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'spinal-harddrive-cpg-autonomous-scripts':
     'CPGs are spinal neural circuits that execute complex movement without brain input. The ONDA Harddrive Protocol uses sensory priming, rhythmic entrainment, and eyes-closed drills to free the prefrontal cortex for strategic thought.',
   'rhythmic-entrainment-system-frequencies':
-    'Biological oscillators waste energy when out of phase. The ONDA Entrainment Protocol locks breath, heart, CPGs, and brain to a single 0.1 Hz master clock via pacing, locomotor-respiratory coupling, and acoustic entrainment.',
+    'Biological oscillators waste energy when out of phase. The ONDA Entrainment Protocol locks breath, heart, CPGs, and brain to a single 0.1 Hz master clock via slow breathing, locomotor-respiratory coupling, and acoustic entrainment.',
   'spinal-intelligence-decentralized-control':
     'The spinal cord is a distributed processor with motor memory and reflex logic. The ONDA Protocol develops edge-computing movement intelligence via unpredictable loading, proprioceptive focus, and Alpha-state triggers.',
   'adrenal-governor-thermal-runaway':

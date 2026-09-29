@@ -92,7 +92,7 @@ Three overrides improve overnight clearance — a 4-hour pre-sleep fast, a cool 
 
 ### Override 3: Vagus Lockdown
 
-> **Action:** 10–15 minutes of evening Vagus Nerve stimulation via ONDA resonance breathing (0.1 Hz, 5s inhale / 5s exhale) or cold water throat gargling (30 seconds) 30–60 minutes before sleep.
+> **Action:** 10–15 minutes of evening Vagus Nerve stimulation via slow resonance breathing (about 0.1 Hz, 5s inhale / 5s exhale) or cold water throat gargling (30 seconds) 30–60 minutes before sleep.
 
 **Logic:** Evening VNS shifts the system from Sympathetic "Survival" mode into Parasympathetic "Deep Recovery" mode — opening the autonomic gates for cerebrospinal fluid circulation. Vagal activation reduces cortisol, lowers heart rate variability entropy, and stabilizes the arterial pulse wave that drives the glymphatic pump. The system enters sleep pre-configured for maximum purge throughput rather than requiring the first 1–2 sleep cycles to transition out of stress-activated state.
 

@@ -113,8 +113,8 @@ This curbs 'Human Error'—the tendency to ignore biological signals in favor of
 
 ## [ HARDWARE_VALIDATION ]
 
-DEVICE: ONDA App (Apple Health / Google Fit Integration).
-METRIC: Readiness Score & Strain Balance.
+DEVICE: ONDA App (iPhone camera / Apple Watch / Apple Health).
+METRIC: Resting HR, HRV & Breathing Rate.
 STATUS: Feedback Loop Closed. Optimization Continuous.
 
 ---

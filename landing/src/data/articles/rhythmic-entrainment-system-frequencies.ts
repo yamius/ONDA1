@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'Frequency Locked — 0.1 Hz Master Clock, Locomotor-Respiratory Coupling, and the Elimination of Phase Desync for Coherent Flow',
   seoTitle: 'Rhythmic Entrainment: The 0.1 Hz Master Clock | ONDA Life',
   description:
-    'Biological oscillators — CPGs, lungs, heart, brain — waste energy when out of phase. The ONDA Entrainment Protocol uses 0.1 Hz pacing, locomotor-respiratory coupling (LRC), and acoustic entrainment to lock all system frequencies into a single coherent rhythm and eliminate internal resistance.',
+    'Biological oscillators — CPGs, lungs, heart, brain — waste energy when out of phase. The ONDA Entrainment Protocol uses slow breathing near 0.1 Hz, locomotor-respiratory coupling (LRC), and acoustic entrainment to lock all system frequencies into a single coherent rhythm and eliminate internal resistance.',
   category: 'ONDA Protocol',
   relatedSlugs: [
     'heart-rate-variability',
@@ -81,7 +81,7 @@ Three techniques to force synchronization from noise to signal:
 
 ### Technique 1: 0.1 Hz Audio/Visual Pacing (Master Clock Injection)
 
-> **Action:** Use ONDA's 0.1 Hz pacing interface — a visual or auditory cue cycling at exactly 6 cycles per minute — as a breathing anchor for 5–10 minutes before a work session, exercise session, or any high-demand cognitive task. Inhale on the rising signal; exhale on the falling signal.
+> **Action:** Use a visual or auditory cue cycling at exactly 6 cycles per minute (0.1 Hz) as a breathing anchor for 5–10 minutes before a work session, exercise session, or any high-demand cognitive task. Inhale on the rising signal; exhale on the falling signal.
 
 **Logic:** External 0.1 Hz pacing provides a phase-reference signal that the respiratory system entrains to via the auditory-autonomic pathway. Within 3–5 cycles, heart rate variability begins to mirror the respiratory rhythm at 0.1 Hz — the HRV coherence signature. Within 5 minutes, the full respiratory-cardiac-thalamic-cortical chain is phase-locked. The pacing cue does not "command" the heart to slow down. It provides a stable reference frequency that the entire coupled oscillator system organizes around. The system chooses the energy-minimum configuration — which is coherence.
 

@@ -75,7 +75,7 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     whyColMeditation: 'Медитация (Headspace)',
     whyRows: [
       'HRV-биофидбек в реальном времени',
-      'Живой показатель когерентности',
+      'Живой показатель когерентности (с Apple Watch)',
       'Работает без носимого (камера iPhone)',
       'Структурированная программа',
     ],
@@ -136,7 +136,7 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     whyColMeditation: 'App de meditación (Headspace)',
     whyRows: [
       'Biofeedback de VFC en tiempo real',
-      'Puntuación de coherencia en vivo',
+      'Puntuación de coherencia en vivo (con Apple Watch)',
       'Funciona sin wearable (cámara del iPhone)',
       'Programa estructurado',
     ],

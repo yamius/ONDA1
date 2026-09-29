@@ -24,7 +24,7 @@ interface UiStrings {
 export const UI_I18N: Record<Lang, UiStrings> = {
   en: {
     efnLabel: 'Experiential framework — not a medical claim',
-    efnBody: 'The ONDA Path — its levels, stages and higher-state language — is an experiential framework: a practice and a way of describing subjective experience, not a hierarchy of clinically validated biological states. The evidence-backed part of ONDA is HRV biofeedback and paced breathing — see {science} and {measures}.',
+    efnBody: 'The ONDA Path — its levels, stages and higher-state language — is an experiential framework: a practice and a way of describing subjective experience, not a hierarchy of clinically validated biological states. The evidence-backed part of ONDA is HRV biofeedback and guided slow breathing — see {science} and {measures}.',
     efnScience: 'the science behind ONDA',
     efnMeasures: 'what ONDA measures',
     beforeYouBuy: 'Before you buy',
@@ -37,7 +37,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   es: {
     efnLabel: 'Marco experiencial — no es una afirmación médica',
-    efnBody: 'El Camino ONDA — sus niveles, etapas y su lenguaje de estados superiores — es un marco experiencial: una práctica y una forma de describir la experiencia subjetiva, no una jerarquía de estados biológicos validados clínicamente. La parte de ONDA respaldada por evidencia es el biofeedback de VFC y la respiración pautada — consulta {science} y {measures}.',
+    efnBody: 'El Camino ONDA — sus niveles, etapas y su lenguaje de estados superiores — es un marco experiencial: una práctica y una forma de describir la experiencia subjetiva, no una jerarquía de estados biológicos validados clínicamente. La parte de ONDA respaldada por evidencia es el biofeedback de VFC y la respiración lenta guiada — consulta {science} y {measures}.',
     efnScience: 'la ciencia detrás de ONDA',
     efnMeasures: 'lo que mide ONDA',
     beforeYouBuy: 'Antes de comprar',
@@ -50,7 +50,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   ru: {
     efnLabel: 'Практическая модель — не медицинское утверждение',
-    efnBody: 'Путь ONDA — его уровни, этапы и язык высших состояний — это практическая модель: практика и способ описывать субъективный опыт, а не иерархия клинически подтверждённых биологических состояний. Научно обоснованная часть ONDA — это биофидбек ВСР и дыхание в заданном ритме: см. {science} и {measures}.',
+    efnBody: 'Путь ONDA — его уровни, этапы и язык высших состояний — это практическая модель: практика и способ описывать субъективный опыт, а не иерархия клинически подтверждённых биологических состояний. Научно обоснованная часть ONDA — это биофидбек ВСР и направляемое медленное дыхание: см. {science} и {measures}.',
     efnScience: 'научную основу ONDA',
     efnMeasures: 'что измеряет ONDA',
     beforeYouBuy: 'Перед покупкой',
@@ -63,7 +63,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   uk: {
     efnLabel: 'Практична модель — не медичне твердження',
-    efnBody: 'Шлях ONDA — його рівні, етапи та мова вищих станів — це практична модель: практика і спосіб описувати суб’єктивний досвід, а не ієрархія клінічно підтверджених біологічних станів. Науково обґрунтована частина ONDA — це біофідбек ВСР і дихання в заданому ритмі: див. {science} і {measures}.',
+    efnBody: 'Шлях ONDA — його рівні, етапи та мова вищих станів — це практична модель: практика і спосіб описувати суб’єктивний досвід, а не ієрархія клінічно підтверджених біологічних станів. Науково обґрунтована частина ONDA — це біофідбек ВСР і кероване повільне дихання: див. {science} і {measures}.',
     efnScience: 'наукову основу ONDA',
     efnMeasures: 'що вимірює ONDA',
     beforeYouBuy: 'Перед покупкою',
@@ -76,7 +76,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   zh: {
     efnLabel: '体验式框架 — 并非医学声明',
-    efnBody: 'ONDA 之路——它的层级、阶段和关于更高状态的语言——是一个体验式框架：一种练习，也是一种描述主观体验的方式，而不是经临床验证的生物状态等级。ONDA 中有证据支持的部分是 HRV 生物反馈和节律呼吸——参见{science}和{measures}。',
+    efnBody: 'ONDA 之路——它的层级、阶段和关于更高状态的语言——是一个体验式框架：一种练习，也是一种描述主观体验的方式，而不是经临床验证的生物状态等级。ONDA 中有证据支持的部分是 HRV 生物反馈和引导式慢呼吸——参见{science}和{measures}。',
     efnScience: 'ONDA 背后的科学',
     efnMeasures: 'ONDA 测量什么',
     beforeYouBuy: '购买之前',
@@ -102,7 +102,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   fr: {
     efnLabel: 'Cadre expérientiel — pas une allégation médicale',
-    efnBody: 'Le Chemin ONDA — ses niveaux, ses étapes et son langage des états supérieurs — est un cadre expérientiel : une pratique et une façon de décrire l’expérience subjective, pas une hiérarchie d’états biologiques validés cliniquement. La partie d’ONDA fondée sur des preuves, c’est le biofeedback de VFC et la respiration rythmée — voir {science} et {measures}.',
+    efnBody: 'Le Chemin ONDA — ses niveaux, ses étapes et son langage des états supérieurs — est un cadre expérientiel : une pratique et une façon de décrire l’expérience subjective, pas une hiérarchie d’états biologiques validés cliniquement. La partie d’ONDA fondée sur des preuves, c’est le biofeedback de VFC et la respiration lente guidée — voir {science} et {measures}.',
     efnScience: 'la science derrière ONDA',
     efnMeasures: 'ce que mesure ONDA',
     beforeYouBuy: 'Avant d’acheter',
@@ -141,7 +141,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   ja: {
     efnLabel: '体験的なフレームワーク — 医学的な主張ではありません',
-    efnBody: 'ONDA パス——そのレベル、段階、高次の状態を表す言葉——は体験的なフレームワークです。実践であり主観的な体験を表す方法であって、臨床的に検証された生物学的状態の階層ではありません。ONDA のうちエビデンスに基づく部分は HRV バイオフィードバックと一定のリズムの呼吸です。{science}と{measures}をご覧ください。',
+    efnBody: 'ONDA パス——そのレベル、段階、高次の状態を表す言葉——は体験的なフレームワークです。実践であり主観的な体験を表す方法であって、臨床的に検証された生物学的状態の階層ではありません。ONDA のうちエビデンスに基づく部分は HRV バイオフィードバックとガイド付きのゆっくりした呼吸です。{science}と{measures}をご覧ください。',
     efnScience: 'ONDA の科学的根拠',
     efnMeasures: 'ONDA が測定するもの',
     beforeYouBuy: '購入する前に',
@@ -154,7 +154,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   pl: {
     efnLabel: 'Model doświadczeniowy — nie jest to twierdzenie medyczne',
-    efnBody: 'Ścieżka ONDA — jej poziomy, etapy i język wyższych stanów — to model doświadczeniowy: praktyka i sposób opisywania subiektywnego doświadczenia, a nie hierarchia klinicznie potwierdzonych stanów biologicznych. Częścią ONDA opartą na dowodach jest biofeedback HRV i oddychanie w zadanym rytmie — zobacz {science} i {measures}.',
+    efnBody: 'Ścieżka ONDA — jej poziomy, etapy i język wyższych stanów — to model doświadczeniowy: praktyka i sposób opisywania subiektywnego doświadczenia, a nie hierarchia klinicznie potwierdzonych stanów biologicznych. Częścią ONDA opartą na dowodach jest biofeedback HRV i prowadzone powolne oddychanie — zobacz {science} i {measures}.',
     efnScience: 'naukowe podstawy ONDA',
     efnMeasures: 'co mierzy ONDA',
     beforeYouBuy: 'Zanim kupisz',
@@ -167,7 +167,7 @@ export const UI_I18N: Record<Lang, UiStrings> = {
   },
   pt: {
     efnLabel: 'Modelo experiencial — não é uma afirmação médica',
-    efnBody: 'O Caminho ONDA — seus níveis, etapas e a linguagem dos estados superiores — é um modelo experiencial: uma prática e uma forma de descrever a experiência subjetiva, não uma hierarquia de estados biológicos validados clinicamente. A parte da ONDA baseada em evidências é o biofeedback de VFC e a respiração ritmada — veja {science} e {measures}.',
+    efnBody: 'O Caminho ONDA — seus níveis, etapas e a linguagem dos estados superiores — é um modelo experiencial: uma prática e uma forma de descrever a experiência subjetiva, não uma hierarquia de estados biológicos validados clinicamente. A parte da ONDA baseada em evidências é o biofeedback de VFC e a respiração lenta guiada — veja {science} e {measures}.',
     efnScience: 'a ciência por trás da ONDA',
     efnMeasures: 'o que a ONDA mede',
     beforeYouBuy: 'Antes de comprar',

@@ -195,7 +195,7 @@ export function ResearchPage() {
             A NOTE ON WHAT WE MEASURE (AND DON&rsquo;T)
           </div>
           <p className="font-mono text-xs leading-relaxed text-white/70 md:text-sm">
-            During practice, ONDA shows a live <strong>coherence</strong> score —
+            During practice with an Apple Watch, ONDA shows a live <strong>coherence</strong> score —
             a real-time signal of how smooth and rhythmic your heart rhythm is as
             you breathe. Your longer-term <strong>resting-HRV trend</strong> is
             read from your device via Apple Health. We&rsquo;re precise about this

@@ -86,7 +86,7 @@ Three targeted triggers to engage Alpha manually — without waiting for it to "
 
 > **Action:** 5–10 minutes of 0.1 Hz resonance breathing (5s inhale / 5s exhale) during or immediately before high-demand work sessions, or as a transition between task blocks.
 
-**Logic:** ONDA's resonance breathing creates the biochemical foundation for the brain to shift from Beta to Alpha via the baroreflex-brain coupling pathway. At 0.1 Hz, the heart's coherent oscillation propagates via vagal afferents to the brainstem and thalamus — literally "telling" the brain to settle. The thalamus shifts its firing pattern from Beta-frequency gating to Alpha-frequency gating, and the cortex follows. Heart coherence drives brain coherence. The HRV-Alpha coupling is bidirectional: high HRV predicts Alpha amplitude, and Alpha entrainment increases HRV.
+**Logic:** Slow, guided breathing like ONDA's practices creates the physiological foundation for the brain to shift from Beta to Alpha via the baroreflex-brain coupling pathway. At 0.1 Hz, the heart's coherent oscillation propagates via vagal afferents to the brainstem and thalamus — literally "telling" the brain to settle. The thalamus shifts its firing pattern from Beta-frequency gating to Alpha-frequency gating, and the cortex follows. Heart coherence drives brain coherence. The HRV-Alpha coupling is bidirectional: high HRV predicts Alpha amplitude, and Alpha entrainment increases HRV.
 
 ### Trigger 3: Digital Decoupling
 

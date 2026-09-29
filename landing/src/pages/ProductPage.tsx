@@ -115,7 +115,7 @@ const EN_COPY: ProductCopy = {
   whyColMeditation: 'A meditation app (Headspace)',
   whyRows: [
     'Real-time HRV biofeedback',
-    'Live coherence score',
+    'Live coherence score (with Apple Watch)',
     'Works with no wearable (iPhone camera)',
     'Structured, progressive program',
   ],

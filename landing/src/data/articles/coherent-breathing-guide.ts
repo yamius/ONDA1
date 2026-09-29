@@ -71,7 +71,7 @@ Coherent breathing differs from [box breathing and 4-7-8](/articles/box-breathin
 
 > **The Hack:** Test 6.5, 6, 5.5, 5 and 4.5/min for a couple of minutes each; keep the one that feels smoothest and calmest.
 
-**The Logic:** Everyone’s resonance frequency differs slightly. The exact rate is best confirmed against live HRV (what the ONDA app does), but feel gets you close.
+**The Logic:** Everyone’s resonance frequency differs slightly. The exact rate is best confirmed against live heart-rhythm feedback (what an HRV-biofeedback app like ONDA shows), but feel gets you close.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: HRV reading during the session

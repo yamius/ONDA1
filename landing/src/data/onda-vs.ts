@@ -97,7 +97,7 @@ export const ONDA_VS: OndaVsEntry[] = [
       'Resting-HRV trend over time': 'Overnight HRV is Oura’s strength — arguably more continuous than a spot reading.',
     },
     bestForOnda:
-      'Choose ONDA if you want to actively train your nervous system — real-time HRV biofeedback and paced breathing you can feel working — without buying a wearable.',
+      'Choose ONDA if you want to actively train your nervous system — real-time HRV biofeedback and guided breathing you can feel working — without buying a wearable.',
     bestForThem:
       'Choose Oura if you want passive, accurate overnight tracking of sleep, readiness and HRV in a ring you forget you’re wearing.',
     verdict:
@@ -140,7 +140,7 @@ export const ONDA_VS: OndaVsEntry[] = [
       'Works with no wearable or chest strap (iPhone camera)': 'WHOOP requires its band and a membership.',
     },
     bestForOnda:
-      'Choose ONDA if you want to actively train recovery — real-time HRV biofeedback and paced breathing — without a band or subscription hardware.',
+      'Choose ONDA if you want to actively train recovery — real-time HRV biofeedback and guided breathing — without a band or subscription hardware.',
     bestForThem:
       'Choose WHOOP if you train hard and want continuous recovery, strain and HRV monitoring with a daily coaching loop.',
     verdict:
@@ -203,7 +203,7 @@ export const ONDA_VS: OndaVsEntry[] = [
       },
       {
         q: 'What makes ONDA’s meditation system different from Headspace’s courses?',
-        a: 'Structure and feedback. ONDA is built as a progressive, multi-level program where sessions unlock in sequence — closer to a curriculum than a library — and it reads your pulse (phone camera or Apple Watch) to show a live coherence score, so you feel the practice working rather than trusting audio alone. Headspace’s strength is the breadth of its guided-meditation library; ONDA’s is measurable, structured nervous-system training.',
+        a: 'Structure and feedback. ONDA is built as a progressive, multi-level program where sessions unlock in sequence — closer to a curriculum than a library — and it reads your pulse (phone camera or Apple Watch), with a live coherence score on an Apple Watch, so you feel the practice working rather than trusting audio alone. Headspace’s strength is the breadth of its guided-meditation library; ONDA’s is measurable, structured nervous-system training.',
       },
     ],
   },
@@ -217,7 +217,7 @@ export const ONDA_VS: OndaVsEntry[] = [
     description:
       'Looking for an alternative to Calm? ONDA is a science-based, structured practice app with real-time HRV biofeedback — a level-by-level program vs a meditation-and-sleep content library. An objective capability comparison from ONDA Life.',
     intro:
-      'Calm is a large meditation and sleep-content app, best known for its sleep stories and relaxing audio. ONDA is a physiological trainer: real-time HRV biofeedback and paced breathing so you can see your nervous system respond — delivered through a structured, level-by-level program rather than a library you browse. Calm helps you wind down with content; ONDA gives you a measurable practice you progress through.',
+      'Calm is a large meditation and sleep-content app, best known for its sleep stories and relaxing audio. ONDA is a physiological trainer: real-time HRV biofeedback and guided breathing so you can see your nervous system respond — delivered through a structured, level-by-level program rather than a library you browse. Calm helps you wind down with content; ONDA gives you a measurable practice you progress through.',
     them: {
       'Real-time HRV biofeedback (live feedback as you breathe)': 'no',
       'Live coherence score': 'no',
@@ -254,7 +254,7 @@ export const ONDA_VS: OndaVsEntry[] = [
       },
       {
         q: 'What makes ONDA’s practice system different from Calm?',
-        a: 'Structure and feedback. ONDA is a progressive, multi-level program where sessions unlock in order — a curriculum rather than a content shelf — and it reads your pulse (phone camera or Apple Watch) to show a live coherence score, so you feel the practice working. Calm’s strength is its relaxation and sleep-content library; ONDA’s is structured, biofeedback-driven training.',
+        a: 'Structure and feedback. ONDA is a progressive, multi-level program where sessions unlock in order — a curriculum rather than a content shelf — and it reads your pulse (phone camera or Apple Watch), with a live coherence score on an Apple Watch, so you feel the practice working. Calm’s strength is its relaxation and sleep-content library; ONDA’s is structured, biofeedback-driven training.',
       },
     ],
   },

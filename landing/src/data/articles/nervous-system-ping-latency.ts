@@ -95,7 +95,7 @@ Three-layer intervention to reduce systemic latency:
 
 > **Action:** Perform HRV biofeedback sessions immediately following high-load events (intense exercise, high-stakes meetings, conflict). Train the return to coherence, not just the coherence itself.
 
-**Logic:** Regular load-followed-by-recovery training teaches your processor to handle spikes without crashing into permanent Panic Mode. You are training the transition, not just the baseline. The ONDA app tracks DFA alpha 1 in real time during these sessions — when the value crosses 1.0, the system has completed the recovery cycle.
+**Logic:** Regular load-followed-by-recovery training teaches your processor to handle spikes without crashing into permanent Panic Mode. You are training the transition, not just the baseline. The ONDA app shows your pulse and breathing in real time during these sessions — and, with an Apple Watch, your coherence — so you can see the recovery settle.
 
 ---
 

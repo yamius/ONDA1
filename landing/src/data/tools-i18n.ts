@@ -192,7 +192,7 @@ export const TOOLS_EN: ToolsCopy = {
   intro1:
     'Free interactive calculators for the metrics that matter — HRV, sleep, heart-rate zones, caffeine timing, protein and more. Every tool reads your number against the published evidence, not a round-number rule of thumb, and tells you what actually moves it.',
   intro2Pre:
-    'No sign-up, no account, nothing to install — they run right in your browser. When you want the same numbers tracked automatically over time instead of typed in once, that’s what ',
+    'No sign-up, no account, nothing to install — they run right in your browser. When you want your resting pulse, HRV and breathing rate tracked automatically over time instead of typed in once, that’s what ',
   ondaLink: 'ONDA Life',
   intro2Post: ' does on your iPhone and Apple Watch.',
   bioOsTitle: 'Bio OS — live biometric dashboard',

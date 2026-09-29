@@ -93,7 +93,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         kicker: '[ HOW ONDA DOES IT ]',
         title: 'How ONDA implements HRV biofeedback',
         paras: [
-          'ONDA is an HRV biofeedback and guided-breathing app. It reads your heartbeat from the iPhone camera (photoplethysmography) or an Apple Watch, computes HRV and a live coherence score, and shows your heart rhythm responding as you breathe at your resonance pace — inside a guided, progressive 8-level practice. You see your body organise in real time; that’s the loop that makes it a trainer, not a passive tracker.',
+          'ONDA is an HRV biofeedback and guided-breathing app. It reads your heartbeat from the iPhone camera (photoplethysmography) or an Apple Watch (HRV and the live coherence score need the Watch), and shows your heart rhythm responding as you breathe slowly — inside a guided, progressive 8-level practice. You see your body organise in real time; that’s the loop that makes it a trainer, not a passive tracker.',
           'It’s free to start, with no account. See the full {{productLink}}, or how ONDA compares in the {{compareBestLink}}.',
         ],
         box: {
@@ -145,7 +145,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
       },
       {
         q: 'Is ONDA HRV biofeedback?',
-        a: 'Yes. ONDA is an HRV biofeedback and guided-breathing app: it shows a live coherence score and your heart-rhythm response as you breathe, using the iPhone camera or an Apple Watch, inside a guided practice. It is not a medical device.',
+        a: 'Yes. ONDA is an HRV biofeedback and guided-breathing app: it shows your heart-rhythm response as you breathe, using the iPhone camera or an Apple Watch — with a live coherence score on Apple Watch — inside a guided practice. It is not a medical device.',
       },
       {
         q: 'Is there an app with real-time HRV biofeedback?',
@@ -228,7 +228,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         kicker: '[ КАК ДЕЛАЕТ ONDA ]',
         title: 'Как ONDA реализует HRV-биофидбек',
         paras: [
-          'ONDA — приложение HRV-биофидбека и направляемого дыхания. Оно считывает пульс с камеры iPhone (фотоплетизмография) или с Apple Watch, вычисляет HRV и живой показатель когерентности и показывает, как ритм сердца отвечает на дыхание в резонансном темпе, — внутри направляемой прогрессивной практики из 8 уровней. Вы видите, как тело организуется в реальном времени; это и есть петля, делающая ONDA тренажёром, а не пассивным трекером.',
+          'ONDA — приложение HRV-биофидбека и направляемого дыхания. Оно считывает пульс с камеры iPhone (фотоплетизмография) или с Apple Watch (HRV и живой показатель когерентности требуют часов) и показывает, как ритм сердца отвечает на медленное дыхание, — внутри направляемой прогрессивной практики из 8 уровней. Вы видите, как тело организуется в реальном времени; это и есть петля, делающая ONDA тренажёром, а не пассивным трекером.',
           'Начать бесплатно, без аккаунта. Смотрите полные {{productLink}} или как ONDA сравнивается в {{compareBestLink}}.',
         ],
         box: {
@@ -280,7 +280,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
       },
       {
         q: 'ONDA — это HRV-биофидбек?',
-        a: 'Да. ONDA — приложение HRV-биофидбека и направляемого дыхания: оно показывает живой показатель когерентности и отклик ритма сердца на ваше дыхание, используя камеру iPhone или Apple Watch, внутри направляемой практики. Это не медицинский прибор.',
+        a: 'Да. ONDA — приложение HRV-биофидбека и направляемого дыхания: оно показывает отклик ритма сердца на ваше дыхание, используя камеру iPhone или Apple Watch (живой показатель когерентности — с Apple Watch), внутри направляемой практики. Это не медицинский прибор.',
       },
       {
         q: 'Есть ли приложение с HRV-биофидбеком в реальном времени?',
@@ -363,7 +363,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         kicker: '[ CÓMO LO HACE ONDA ]',
         title: 'Cómo implementa ONDA el biofeedback de VFC',
         paras: [
-          'ONDA es una app de biofeedback de VFC y respiración guiada. Lee tu latido desde la cámara del iPhone (fotopletismografía) o un Apple Watch, calcula la VFC y una puntuación de coherencia en vivo, y muestra cómo tu ritmo cardíaco responde mientras respiras a tu ritmo de resonancia — dentro de una práctica guiada y progresiva de 8 niveles. Ves cómo tu cuerpo se organiza en tiempo real; ese es el bucle que la convierte en un entrenador, no en un rastreador pasivo.',
+          'ONDA es una app de biofeedback de VFC y respiración guiada. Lee tu latido desde la cámara del iPhone (fotopletismografía) o un Apple Watch (la VFC y la puntuación de coherencia en vivo requieren el reloj), y muestra cómo tu ritmo cardíaco responde mientras respiras despacio — dentro de una práctica guiada y progresiva de 8 niveles. Ves cómo tu cuerpo se organiza en tiempo real; ese es el bucle que la convierte en un entrenador, no en un rastreador pasivo.',
           'Es gratis para empezar, sin cuenta. Mira los {{productLink}} completos, o cómo se compara ONDA en las {{compareBestLink}}.',
         ],
         box: {
@@ -415,7 +415,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
       },
       {
         q: '¿ONDA es biofeedback de VFC?',
-        a: 'Sí. ONDA es una app de biofeedback de VFC y respiración guiada: muestra una puntuación de coherencia en vivo y la respuesta de tu ritmo cardíaco mientras respiras, usando la cámara del iPhone o un Apple Watch, dentro de una práctica guiada. No es un dispositivo médico.',
+        a: 'Sí. ONDA es una app de biofeedback de VFC y respiración guiada: muestra la respuesta de tu ritmo cardíaco mientras respiras, usando la cámara del iPhone o un Apple Watch (con puntuación de coherencia en vivo en Apple Watch), dentro de una práctica guiada. No es un dispositivo médico.',
       },
       {
         q: '¿Existe una app con biofeedback de VFC en tiempo real?',

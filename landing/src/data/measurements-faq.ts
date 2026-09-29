@@ -10,19 +10,19 @@ export interface MeasurementsFaqItem {
 export const MEASUREMENTS_FAQ: MeasurementsFaqItem[] = [
   {
     q: 'What does ONDA actually measure?',
-    a: 'ONDA directly measures heart rate and heart-rate variability (HRV) from beat-to-beat intervals — via an Apple Watch or Apple Health, or the iPhone camera (PPG) at rest. From those it derives your resting-HRV trend and, with an Apple Watch, a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
+    a: 'ONDA measures heart rate via an Apple Watch, Apple Health or the iPhone camera (PPG) at rest, and reads heart-rate variability (HRV, SDNN) from Apple Health when an Apple Watch is connected. From those it derives your resting-HRV trend and, with an Apple Watch, a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
   },
   {
     q: 'Is ONDA’s coherence score a medical or clinical measurement?',
     a: 'No. Coherence is a derived synchronization metric — how rhythmically your heart rhythm oscillates with your breathing during a session. It is real-time biofeedback, not a clinical biomarker or diagnosis.',
   },
   {
-    q: 'Does ONDA’s stress score mean I am clinically stressed?',
-    a: 'No. The stress and energy scores are ONDA’s estimates from your HR and HRV patterns — interpretations to guide practice, not measurements of stress and not a medical assessment.',
+    q: 'Do ONDA’s signals mean something is medically wrong?',
+    a: 'No. ONDA’s signals are descriptive comparisons with your own baseline — interpretations to guide practice, not measurements of stress and not a medical assessment.',
   },
   {
     q: 'Can ONDA measure HRV without an Apple Watch?',
-    a: 'Yes — the iPhone camera measures your pulse (PPG) at rest, which ONDA uses to compute HRV. An Apple Watch adds continuous heart data and live feedback, but is not required for a resting HRV reading.',
+    a: 'Not yet — the iPhone camera measures your resting pulse and a breathing estimate; HRV appears once an Apple Watch (or another tracker writing HRV to Apple Health) is connected.',
   },
   {
     q: 'Is ONDA a medical device?',

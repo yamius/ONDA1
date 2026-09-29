@@ -246,7 +246,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
     faq: [
       {
         q: 'What’s the best breathing app with real-time feedback?',
-        a: 'ONDA Life — it shows a live coherence score and your real heart-rhythm response as you breathe, using just your phone or Apple Watch. Breathwrk has the biggest exercise library (feedback is a premium add-on), Elite HRV offers a data-first resonance pacer, Othership is the most immersive, and Prana Breath is the most customisable. Pick by whether you want live feedback built in, exercise variety, immersion or fine control.',
+        a: 'ONDA Life — it shows your real heart-rhythm response as you breathe, using just your phone or Apple Watch (with a live coherence score on Apple Watch). Breathwrk has the biggest exercise library (feedback is a premium add-on), Elite HRV offers a data-first resonance pacer, Othership is the most immersive, and Prana Breath is the most customisable. Pick by whether you want live feedback built in, exercise variety, immersion or fine control.',
       },
       {
         q: 'Can a breathing app show my heart responding in real time?',
@@ -274,7 +274,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best for actively training your nervous system',
         capsKey: 'onda',
         blurb:
-          'ONDA is built for training, not tracking: real-time HRV biofeedback and paced breathing you act on in the moment, across a guided 8-level path — with your phone or Apple Watch. It gives you something to do, then shows your resting-HRV trend over weeks.',
+          'ONDA is built for training, not tracking: real-time HRV biofeedback and guided breathing you act on in the moment, across a guided 8-level path — with your phone or Apple Watch. It gives you something to do, then shows your resting-HRV trend over weeks.',
         pros: [
           'Purpose-built for active HRV training, not passive scores',
           'Real-time feedback + resting-HRV trend over time',
@@ -542,7 +542,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
       {
         q: 'Which HRV app works without a wearable?',
-        a: 'ONDA and HRV4Training both measure HRV from the iPhone camera (PPG), so no wearable or chest strap is required. ONDA uses it for a live biofeedback loop; HRV4Training uses it for a validated morning reading. Passive trackers like Oura, WHOOP and Apple Watch always need the device itself.',
+        a: 'ONDA and HRV4Training both read your pulse from the iPhone camera (PPG), so no wearable or chest strap is required to start; ONDA’s HRV comes from an Apple Watch. ONDA uses it for a live biofeedback loop; HRV4Training uses it for a validated morning reading. Passive trackers like Oura, WHOOP and Apple Watch always need the device itself.',
       },
       {
         q: 'Do I need more than one HRV app?',
@@ -566,7 +566,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
         tag: 'Best all-in-one breathing + HRV + live feedback',
         capsKey: 'onda',
         blurb:
-          'ONDA is built around exactly this loop: it paces your breathing, reads your pulse from the iPhone camera or an Apple Watch, and shows your heart rhythm organise in real time — a live coherence score with an Apple Watch — inside a guided, progressive 8-level practice. No chest strap, free to start. The three elements aren’t bolted together; they’re the core.',
+          'ONDA is built around exactly this loop: it guides your breathing, reads your pulse from the iPhone camera or an Apple Watch, and shows your heart rhythm organise in real time — a live coherence score with an Apple Watch — inside a guided, progressive 8-level practice. No chest strap, free to start. The three elements aren’t bolted together; they’re the core.',
         pros: [
           'Breathing, HRV and live feedback in one loop — no extra hardware',
           'Live coherence with an Apple Watch; live pulse + breathing from the camera alone',
@@ -634,7 +634,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
     faq: [
       {
         q: 'Which app combines breathing, HRV and real-time feedback?',
-        a: 'ONDA is built around that exact loop — it paces your breathing, reads your HRV from the iPhone camera or an Apple Watch, and shows your heart rhythm respond live (with a coherence score on an Apple Watch), inside a guided practice and with no chest strap. Elite HRV also combines the three but is measurement-first and wants a chest strap; HRV4Training and Breathwrk include the elements but as add-ons to a daily reading or a breathing library.',
+        a: 'ONDA is built around that exact loop — it guides your breathing, reads your pulse from the iPhone camera or an Apple Watch, and shows your heart rhythm respond live (with a coherence score on an Apple Watch), inside a guided practice and with no chest strap. Elite HRV also combines the three but is measurement-first and wants a chest strap; HRV4Training and Breathwrk include the elements but as add-ons to a daily reading or a breathing library.',
       },
       {
         q: 'Why do so few apps do all three?',

@@ -71,7 +71,7 @@ The headline: for acute arousal, a few minutes of slow, exhale-led breathing is 
 
 Knowing the breath is the lever is one thing; *feeling* it move the needle is another — and that's the gap a feedback loop closes.
 
-ONDA is an [HRV biofeedback](/hrv-biofeedback) app: it reads your heartbeat from the phone camera or an Apple Watch, paces you at your resonance breathing rate, and renders your own heart rhythm organising in real time as a coherence score. Instead of breathing blind and hoping, you watch the runaway loop actually settle — see [what it measures](/measurements) and [how it works](/how-it-works). That visible proof is oddly powerful mid-anxiety, when the brain insists nothing is helping.
+ONDA is an [HRV biofeedback](/hrv-biofeedback) app: it reads your heartbeat from the phone camera or an Apple Watch, guides slow breathing, and with an Apple Watch renders your own heart rhythm organising in real time as a coherence score. Instead of breathing blind and hoping, you watch the runaway loop actually settle — see [what it measures](/measurements) and [how it works](/how-it-works). That visible proof is oddly powerful mid-anxiety, when the brain insists nothing is helping.
 
 Now the firewall, plainly: this is a **self-regulation practice, not a treatment for an anxiety disorder**. Breathing tools sit alongside therapy, medication and professional care — they don't replace them, and ONDA is not a medical device.
 

@@ -25,7 +25,7 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
   en: {
     metaTitle: 'How ONDA Works — HRV, Coherence & the Biofeedback Loop | ONDA Life',
     metaDescription:
-      'How ONDA works: from Apple Watch or iPhone-camera pulse to beat intervals, HRV (RMSSD/SDNN), a live coherence score and paced resonance breathing — explained with its limits.',
+      'How ONDA works: from Apple Watch or iPhone-camera pulse to beat intervals, HRV (SDNN), a live coherence score (Apple Watch) and guided slow breathing — explained with its limits.',
     kicker: '[ HOW ONDA WORKS ]',
     h1: 'How ONDA works.',
     heroLead:
@@ -34,14 +34,14 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
     loop: [
       { n: '1', title: 'Signal in', body: 'ONDA reads your heartbeat — from the Apple Watch optical sensor (or Apple Health), or from the iPhone camera measuring the colour change in your fingertip (photoplethysmography, PPG).' },
       { n: '2', title: 'Beat intervals', body: 'From that signal ONDA extracts the time between consecutive heartbeats — the beat-to-beat (RR) intervals. This series is the raw material for every heart-rhythm number.' },
-      { n: '3', title: 'HRV + rhythm', body: 'ONDA computes HRV from the variation in those intervals, and tracks the shape of the heart-rhythm wave in real time as you breathe.' },
-      { n: '4', title: 'Live feedback', body: 'The current rhythm and a coherence score are shown live, so you can see your body respond to each breath — the biofeedback loop that makes ONDA an active trainer, not a passive tracker.' },
+      { n: '3', title: 'HRV + rhythm', body: 'ONDA tracks the shape of the heart-rhythm wave in real time as you breathe; HRV (SDNN) comes from Apple Health once an Apple Watch is connected.' },
+      { n: '4', title: 'Live feedback', body: 'The current rhythm is shown live — plus a coherence score with an Apple Watch — so you can see your body respond to each breath, the biofeedback loop that makes ONDA an active trainer, not a passive tracker.' },
       { n: '5', title: 'Paced breathing', body: 'A visual guide encourages slow, even breaths near your resonance frequency — the pace that most strongly organizes the heart rhythm.' },
       { n: '6', title: 'Trend over time', body: 'Session by session, ONDA records your resting-HRV baseline and its direction — the long-term signal the practice is designed to move.' },
     ],
     hrvHeading: 'How ONDA computes HRV',
     hrvParas: [
-      'Heart-rate variability is the variation in the time between heartbeats. ONDA computes it from the beat-to-beat (RR) interval series — primarily as **RMSSD** (the root mean square of successive differences), the short-term measure most closely tied to parasympathetic (vagal) activity, and reports **SDNN** where a broader window applies. On Apple Watch, ONDA can use the HRV that Apple Health already derives; from the iPhone camera, it computes HRV from the pulse waveform at rest.',
+      'Heart-rate variability is the variation in the time between heartbeats. For your baseline ONDA uses HRV as **SDNN** — the measure Apple Health derives from beat-to-beat (RR) intervals recorded by an Apple Watch; the live in-practice variability tile is a simpler heart-rate-variation estimate, not a clinical HRV value. The iPhone camera gives your resting pulse and a breathing estimate; HRV appears once an Apple Watch is connected.',
       'A clean reading needs a stable signal and a short quiet window. Motion, a poor camera contact or an irregular rhythm add noise, so readings are most reliable at rest; when the signal is too poor to trust, ONDA asks you to retake it rather than showing a number it cannot stand behind.',
     ],
     coherenceHeading: 'How ONDA computes coherence',
@@ -66,7 +66,7 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
   ru: {
     metaTitle: 'Как работает ONDA — HRV, когерентность и петля биофидбека | ONDA Life',
     metaDescription:
-      'Как работает ONDA: от пульса с Apple Watch или камеры iPhone к интервалам между ударами, HRV (RMSSD/SDNN), живому показателю когерентности и размеренному резонансному дыханию — с оговорками о пределах.',
+      'Как работает ONDA: от пульса с Apple Watch или камеры iPhone к интервалам между ударами, HRV (SDNN), живому показателю когерентности (Apple Watch) и направляемому медленному дыханию — с оговорками о пределах.',
     kicker: '[ КАК РАБОТАЕТ ONDA ]',
     h1: 'Как работает ONDA.',
     heroLead:
@@ -75,14 +75,14 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
     loop: [
       { n: '1', title: 'Сигнал на входе', body: 'ONDA считывает сердцебиение — с оптического датчика Apple Watch (или из Apple Health), либо с камеры iPhone, измеряющей изменение цвета кончика пальца (фотоплетизмография, PPG).' },
       { n: '2', title: 'Интервалы между ударами', body: 'Из этого сигнала ONDA извлекает время между последовательными ударами — интервалы от удара к удару (RR). Этот ряд — сырьё для каждого числа о ритме сердца.' },
-      { n: '3', title: 'HRV + ритм', body: 'ONDA вычисляет HRV из вариации этих интервалов и отслеживает форму волны ритма сердца в реальном времени во время дыхания.' },
-      { n: '4', title: 'Живая обратная связь', body: 'Текущий ритм и показатель когерентности показываются вживую, так что вы видите, как тело отвечает на каждый вдох, — та самая петля биофидбека, что делает ONDA активным тренажёром, а не пассивным трекером.' },
+      { n: '3', title: 'HRV + ритм', body: 'ONDA отслеживает форму волны ритма сердца в реальном времени во время дыхания; HRV (SDNN) приходит из Apple Health после подключения Apple Watch.' },
+      { n: '4', title: 'Живая обратная связь', body: 'Текущий ритм показывается вживую — а с Apple Watch ещё и показатель когерентности, — так что вы видите, как тело отвечает на каждый вдох, — та самая петля биофидбека, что делает ONDA активным тренажёром, а не пассивным трекером.' },
       { n: '5', title: 'Размеренное дыхание', body: 'Визуальная подсказка ведёт к медленным ровным вдохам около вашей резонансной частоты — темпа, который сильнее всего организует ритм сердца.' },
       { n: '6', title: 'Тренд со временем', body: 'От сессии к сессии ONDA записывает ваш базовый уровень HRV в покое и его направление — долгосрочный сигнал, который призвана сдвигать практика.' },
     ],
     hrvHeading: 'Как ONDA вычисляет HRV',
     hrvParas: [
-      'Вариабельность сердечного ритма — это вариация во времени между ударами сердца. ONDA вычисляет её из ряда интервалов между ударами (RR) — прежде всего как **RMSSD** (среднеквадратичное последовательных разностей), краткосрочную меру, теснее всего связанную с парасимпатической (вагальной) активностью, и приводит **SDNN**, где применимо более широкое окно. На Apple Watch ONDA может использовать HRV, которую Apple Health уже выводит; с камеры iPhone она вычисляет HRV из формы пульсовой волны в покое.',
+      'Вариабельность сердечного ритма — это вариация во времени между ударами сердца. Для базового уровня ONDA использует HRV в виде **SDNN** — меры, которую Apple Health выводит из интервалов между ударами (RR), записанных Apple Watch; живой показатель вариабельности во время практики — упрощённая оценка колебаний пульса, а не клиническое значение HRV. Камера iPhone даёт пульс в покое и оценку дыхания; HRV появляется после подключения Apple Watch.',
       'Чистому замеру нужен стабильный сигнал и короткое спокойное окно. Движение, плохой контакт с камерой или нерегулярный ритм добавляют шум, поэтому замеры надёжнее всего в покое; когда сигнал слишком плох, чтобы ему доверять, ONDA просит переснять, а не показывает число, за которое не может отвечать.',
     ],
     coherenceHeading: 'Как ONDA вычисляет когерентность',
@@ -107,7 +107,7 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
   es: {
     metaTitle: 'Cómo funciona ONDA — VFC, coherencia y el bucle de biofeedback | ONDA Life',
     metaDescription:
-      'Cómo funciona ONDA: del pulso del Apple Watch o la cámara del iPhone a los intervalos entre latidos, la VFC (RMSSD/SDNN), una puntuación de coherencia en vivo y la respiración de resonancia pautada — con sus límites.',
+      'Cómo funciona ONDA: del pulso del Apple Watch o la cámara del iPhone a los intervalos entre latidos, la VFC (SDNN), una puntuación de coherencia en vivo (Apple Watch) y la respiración lenta guiada — con sus límites.',
     kicker: '[ CÓMO FUNCIONA ONDA ]',
     h1: 'Cómo funciona ONDA.',
     heroLead:
@@ -116,14 +116,14 @@ export const HOW_IT_WORKS_I18N: Record<'en' | 'ru' | 'es', HiwCopy> = {
     loop: [
       { n: '1', title: 'Señal de entrada', body: 'ONDA lee tu latido — desde el sensor óptico del Apple Watch (o Apple Salud), o desde la cámara del iPhone que mide el cambio de color en tu dedo (fotopletismografía, PPG).' },
       { n: '2', title: 'Intervalos entre latidos', body: 'De esa señal ONDA extrae el tiempo entre latidos consecutivos — los intervalos latido a latido (RR). Esta serie es la materia prima de cada número del ritmo cardíaco.' },
-      { n: '3', title: 'VFC + ritmo', body: 'ONDA calcula la VFC a partir de la variación de esos intervalos, y sigue la forma de la onda del ritmo cardíaco en tiempo real mientras respiras.' },
-      { n: '4', title: 'Feedback en vivo', body: 'El ritmo actual y una puntuación de coherencia se muestran en vivo, para que veas cómo tu cuerpo responde a cada respiración — el bucle de biofeedback que hace de ONDA un entrenador activo, no un rastreador pasivo.' },
+      { n: '3', title: 'VFC + ritmo', body: 'ONDA sigue la forma de la onda del ritmo cardíaco en tiempo real mientras respiras; la VFC (SDNN) llega desde Apple Salud al conectar un Apple Watch.' },
+      { n: '4', title: 'Feedback en vivo', body: 'El ritmo actual se muestra en vivo — y, con un Apple Watch, una puntuación de coherencia — para que veas cómo tu cuerpo responde a cada respiración: el bucle de biofeedback que hace de ONDA un entrenador activo, no un rastreador pasivo.' },
       { n: '5', title: 'Respiración pautada', body: 'Una guía visual te lleva hacia respiraciones lentas y parejas cerca de tu frecuencia de resonancia — el ritmo que más organiza el ritmo cardíaco.' },
       { n: '6', title: 'Tendencia en el tiempo', body: 'Sesión a sesión, ONDA registra tu línea base de VFC en reposo y su dirección — la señal a largo plazo que la práctica está diseñada para mover.' },
     ],
     hrvHeading: 'Cómo calcula ONDA la VFC',
     hrvParas: [
-      'La variabilidad de la frecuencia cardíaca es la variación en el tiempo entre latidos. ONDA la calcula a partir de la serie de intervalos latido a latido (RR) — principalmente como **RMSSD** (la raíz cuadrática media de las diferencias sucesivas), la medida a corto plazo más ligada a la actividad parasimpática (vagal), y reporta **SDNN** donde aplica una ventana más amplia. En Apple Watch, ONDA puede usar la VFC que Apple Salud ya deriva; desde la cámara del iPhone, calcula la VFC a partir de la forma de onda del pulso en reposo.',
+      'La variabilidad de la frecuencia cardíaca es la variación en el tiempo entre latidos. Para tu línea base ONDA usa la VFC como **SDNN** — la medida que Apple Salud deriva de los intervalos latido a latido (RR) registrados por un Apple Watch; el indicador de variabilidad en vivo durante la práctica es una estimación más simple de la variación del pulso, no un valor clínico de VFC. La cámara del iPhone da tu pulso en reposo y una estimación de la respiración; la VFC aparece al conectar un Apple Watch.',
       'Una lectura limpia necesita una señal estable y una ventana corta en calma. El movimiento, un mal contacto con la cámara o un ritmo irregular añaden ruido, así que las lecturas son más fiables en reposo; cuando la señal es demasiado pobre para fiarse, ONDA te pide repetirla en lugar de mostrar un número que no puede respaldar.',
     ],
     coherenceHeading: 'Cómo calcula ONDA la coherencia',
