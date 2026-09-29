@@ -158,6 +158,36 @@ try {
   }
 } catch {}
 
+// Per-page dates for every other EN route (keys `page:<route pattern>`, e.g.
+// `page:/faq`, `page:/bio/:metric`): newest git date among the page component
+// and the src/data files it imports (page copy usually lives in *-i18n.ts).
+{
+  const entry = readFileSync(join(__dirname, '..', 'src', 'entry-server.tsx'), 'utf-8')
+  const later = (a, b) => (!a ? b : !b ? a : a > b ? a : b)
+  const earlier = (a, b) => (!a ? b : !b ? a : a < b ? a : b)
+  for (const m of entry.matchAll(/path="(\/(?!(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)(?:\/|"))[a-z0-9/:-]*)"\s+element=\{<(\w+)/g)) {
+    const route = m[1]
+    if (route.startsWith('/tools/') || route.includes('/articles/:') || route.includes('/glossary/:') || route.startsWith('/reviews/')) continue
+    const pageFile = join(__dirname, '..', 'src', 'pages', `${m[2]}.tsx`)
+    if (!existsSync(pageFile)) continue
+    const files = [pageFile]
+    for (const im of readFileSync(pageFile, 'utf-8').matchAll(/from '\.\.\/data\/([\w.-]+)'/g)) {
+      for (const ext of ['.ts', '.tsx', '/index.ts']) {
+        const f = join(__dirname, '..', 'src', 'data', im[1] + ext)
+        if (existsSync(f)) { files.push(f); break }
+      }
+    }
+    if (route.startsWith('/bio')) files.push(join(__dirname, '..', 'public', 'locales', 'en', 'bio-metric.json'))
+    let published = null, modified = null
+    for (const f of files) {
+      const d = fileDates(f)
+      published = earlier(published, d.published)
+      modified = later(modified, d.modified)
+    }
+    dates[`page:${route}`] = { published, modified }
+  }
+}
+
 // Per-tool dates: the page component behind each EN /tools/<x> route (keys `tool:/tools/<x>`).
 const entryServer = readFileSync(join(__dirname, '..', 'src', 'entry-server.tsx'), 'utf-8')
 for (const m of entryServer.matchAll(/path="(\/tools\/[a-z0-9-]+)"\s+element=\{<(\w+)\s*\/>\}/g)) {

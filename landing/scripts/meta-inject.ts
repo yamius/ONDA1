@@ -4050,5 +4050,29 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
     }
   }
 
+  // Freshness + authorship for pages whose JSON-LD carries no date (about,
+  // faq, product, /bio/*, /level/*…): a WebPage node with git dates of the
+  // page component and its data files (article-dates.mjs `page:<route>`).
+  if (!/"dateModified"/.test(out) && !meta.noindex) {
+    const pageDates =
+      ARTICLE_DATES[`page:${basePath || '/'}`] ??
+      Object.entries(ARTICLE_DATES).find(([k]) =>
+        k.startsWith('page:') && k.includes(':', 5) &&
+        new RegExp('^' + k.slice(5).replace(/:[^/]+/g, '[^/]+') + '$').test(basePath),
+      )?.[1]
+    if (pageDates) {
+      // No name/inLanguage: localized passes rewrite titles after this runs.
+      const node = {
+        '@context': 'https://schema.org',
+        '@type': 'WebPage',
+        url: meta.url,
+        datePublished: pageDates.published,
+        dateModified: pageDates.modified,
+        author: { '@type': 'Person', '@id': AUTHOR_ID, name: AUTHOR_NAME, url: AUTHOR_URL },
+      }
+      out = out.replace('</head>', `  <script type="application/ld+json">${JSON.stringify(node)}</script>\n</head>`)
+    }
+  }
+
   return out
 }

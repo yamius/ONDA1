@@ -30,7 +30,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "adrenal-governor-thermal-runaway": {
     "published": "2026-04-01T13:38:29Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "ai-biomarker-tracking-predictive": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -50,11 +50,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "anti-entropy-neural-architecture": {
     "published": "2026-03-30T20:35:54Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "anxiety-panic-breathing-hrv": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "app-between-meditation-and-fitness-tracker": {
     "published": "2026-09-19T01:18:42+02:00",
@@ -178,7 +178,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "coherent-breathing-guide": {
     "published": "2026-06-04T17:34:04+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "cold-exposure-vagus-nerve": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -214,7 +214,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "dysautonomia-long-covid-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "eating-late-heart-rate-sleep": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -326,7 +326,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-raise-hrv-naturally": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "how-to-regulate-emotions": {
     "published": "2026-09-19T01:24:54+02:00",
@@ -370,7 +370,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "idle-state-alpha-rhythms": {
     "published": "2026-03-31T16:27:38Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "intermittent-fasting-metabolic-switch": {
     "published": "2026-06-04T00:39:42+02:00",
@@ -390,7 +390,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "mbsr-mindfulness-clinical-evidence": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -434,7 +434,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "meditation-with-apple-watch": {
     "published": "2026-09-19T00:21:25+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "meditation-with-measurable-progress": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -446,7 +446,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "metabolic-redundancy-hybrid-power-architecture": {
     "published": "2026-04-21T13:10:41Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -478,7 +478,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "neural-bridge-alpha-flow-gateway": {
     "published": "2026-03-31T16:32:31Z",
@@ -594,7 +594,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "protocol-circadian-hard-reset": {
     "published": "2026-03-24T09:33:24Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "quiet-mode-alpha-cortisol-buffer": {
     "published": "2026-03-31T22:01:43Z",
@@ -618,7 +618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "screen-apnea-breathing": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -642,7 +642,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "spinal-harddrive-cpg-autonomous-scripts": {
     "published": "2026-03-31T22:15:23Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "spinal-intelligence-decentralized-control": {
     "published": "2026-03-31T22:40:04Z",
@@ -658,7 +658,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "system-feedback-biometric-loop": {
     "published": "2026-03-09T00:06:14+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
@@ -758,7 +758,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-29T11:44:03+02:00"
+    "modified": "2026-09-29T12:26:39+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T09:44:03.000Z",
@@ -1590,11 +1590,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:allostatic-load": {
     "published": "2026-09-29T09:44:03.000Z",
-    "modified": "2026-09-29T10:19:35.000Z"
+    "modified": "2026-09-29T10:26:39.000Z"
   },
   "glossary:hormesis": {
     "published": "2026-09-29T09:44:03.000Z",
-    "modified": "2026-09-29T10:19:35.000Z"
+    "modified": "2026-09-29T10:26:39.000Z"
   },
   "glossary:cortex-stack": {
     "published": "2026-09-29T09:44:03.000Z",
@@ -1619,6 +1619,134 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "glossary:hydraulic-viscosity": {
     "published": "2026-09-29T09:44:03.000Z",
     "modified": "2026-09-29T09:44:03.000Z"
+  },
+  "page:/embed/hrv": {
+    "published": "2026-06-04T22:48:07+02:00",
+    "modified": "2026-09-27T00:19:39+02:00"
+  },
+  "page:/": {
+    "published": "2026-02-22T18:17:04+01:00",
+    "modified": "2026-06-05T15:35:36+02:00"
+  },
+  "page:/about": {
+    "published": "2026-02-23T14:18:07+01:00",
+    "modified": "2026-09-06T17:46:56+02:00"
+  },
+  "page:/glossary": {
+    "published": "2026-02-22T18:17:04+01:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/articles": {
+    "published": "2026-02-26T14:26:34+01:00",
+    "modified": "2026-09-28T20:58:44+02:00"
+  },
+  "page:/contact": {
+    "published": "2026-02-26T15:36:15+01:00",
+    "modified": "2026-05-03T00:03:26+02:00"
+  },
+  "page:/the-stack": {
+    "published": "2026-02-27T00:46:50+01:00",
+    "modified": "2026-09-28T20:58:44+02:00"
+  },
+  "page:/sitemap": {
+    "published": "2026-02-26T01:46:23+01:00",
+    "modified": "2026-09-29T13:56:55+02:00"
+  },
+  "page:/articles/topic/:topic": {
+    "published": "2026-09-24T00:24:48+02:00",
+    "modified": "2026-09-28T16:01:23+02:00"
+  },
+  "page:/part/:slug": {
+    "published": "2026-02-24T15:51:07+01:00",
+    "modified": "2026-09-06T21:14:19+02:00"
+  },
+  "page:/level/:number": {
+    "published": "2026-02-26T01:46:23+01:00",
+    "modified": "2026-09-25T15:22:31+02:00"
+  },
+  "page:/inner-spectrum": {
+    "published": "2026-03-14T01:25:20Z",
+    "modified": "2026-09-06T21:14:19+02:00"
+  },
+  "page:/privacy": {
+    "published": "2026-04-04T21:35:09Z",
+    "modified": "2026-05-03T00:03:26+02:00"
+  },
+  "page:/terms": {
+    "published": "2026-04-04T21:35:09Z",
+    "modified": "2026-05-03T00:03:26+02:00"
+  },
+  "page:/emoton": {
+    "published": "2026-06-12T09:17:00+02:00",
+    "modified": "2026-06-19T14:51:46+02:00"
+  },
+  "page:/bio": {
+    "published": "2026-03-22T21:42:54Z",
+    "modified": "2026-09-29T13:56:55+02:00"
+  },
+  "page:/bio/:metric": {
+    "published": "2026-03-23T01:05:26Z",
+    "modified": "2026-09-29T13:56:55+02:00"
+  },
+  "page:/topics": {
+    "published": "2026-05-09T13:49:45+02:00",
+    "modified": "2026-09-09T07:46:13+02:00"
+  },
+  "page:/topics/:slug": {
+    "published": "2026-05-09T13:49:45+02:00",
+    "modified": "2026-09-28T16:22:13+02:00"
+  },
+  "page:/research": {
+    "published": "2026-05-22T18:20:34+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/measurements": {
+    "published": "2026-09-06T17:37:13+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/how-it-works": {
+    "published": "2026-09-06T17:37:13+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/product": {
+    "published": "2026-09-06T18:55:14+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/faq": {
+    "published": "2026-09-06T19:08:55+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/people/yakiv-bilenko": {
+    "published": "2026-09-06T20:46:58+02:00",
+    "modified": "2026-09-12T00:33:40+02:00"
+  },
+  "page:/hrv-biofeedback": {
+    "published": "2026-09-06T18:43:00+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/resonance-breathing": {
+    "published": "2026-09-06T18:43:00+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/hrv-vs-coherence": {
+    "published": "2026-09-07T20:12:03+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/apple-watch-hrv-biofeedback": {
+    "published": "2026-09-07T20:12:03+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/compare": {
+    "published": "2026-09-06T18:55:14+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/tools": {
+    "published": "2026-06-03T18:28:47+02:00",
+    "modified": "2026-09-29T12:26:39+02:00"
+  },
+  "page:/reviews": {
+    "published": "2026-05-15T20:16:55+02:00",
+    "modified": "2026-09-28T20:58:44+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
