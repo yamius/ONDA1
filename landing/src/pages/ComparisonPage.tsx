@@ -59,6 +59,30 @@ export function ComparisonPage() {
       <p className="mb-6 font-mono text-xs text-white/30">
         {tReviews('ui.updated')} {comparison.dateModified}
       </p>
+      {/* EN: answer-first summary built from the ranked picks — the direct
+          answer to "what is the best …?" before the hero image (GEO). */}
+      {lang === 'en' && (() => {
+        const [top, ...rest] = comparison.picks
+        const lc = (t: string) => (/^[A-Z][a-z]/.test(t) ? t.charAt(0).toLowerCase() + t.slice(1) : t)
+        const topReview = top && getReviewBySlug(top.reviewSlug)
+        if (!topReview) return null
+        const others = rest.slice(0, 3)
+          .map((p) => ({ p, r: getReviewBySlug(p.reviewSlug) }))
+          .filter((x) => x.r)
+          .map((x) => `${x.r!.name} (${lc(x.p.award.replace(/s*([^)]*)/g, ""))})`)
+        const list = others.length > 1 ? `${others.slice(0, -1).join(', ')} and ${others.at(-1)}` : others[0]
+        const scope = comparison.title.replace(/\s*\((\d{4})\)\s*$/, ' of $1').replace(/\b[A-Z][a-z]+\b/g, (w) => w.toLowerCase())
+        return (
+          <div className="mb-8 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5">
+            <p id="comparison-answer" className="text-[15px] leading-relaxed text-white/85">
+              Our top pick among the {scope} is{' '}
+              <span className="font-semibold text-white/95">{topReview.name}</span>{' '}
+              ({topReview.overallScore.toFixed(1)}/10): {lc(top.takeaway)}
+              {list ? ` Other winners: ${list}.` : ''}
+            </p>
+          </div>
+        )
+      })()}
       {/* Branded round-up card — og:image + visible hero (roadmap 6.5). */}
       <img
         src={`/images/reviews/${slug}.png`}

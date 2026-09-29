@@ -167,7 +167,10 @@ try {
   const earlier = (a, b) => (!a ? b : !b ? a : a < b ? a : b)
   for (const m of entry.matchAll(/path="(\/(?!(?:es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)(?:\/|"))[a-z0-9/:-]*)"\s+element=\{<(\w+)/g)) {
     const route = m[1]
-    if (route.startsWith('/tools/') || route.includes('/articles/:') || route.includes('/glossary/:') || route.startsWith('/reviews/')) continue
+    // Content types with their own per-item dates (articles, glossary, tools,
+    // single reviews/comparisons/duels) are dated elsewhere.
+    if (route.startsWith('/tools/') || route.includes('/articles/:') || route.includes('/glossary/:') ||
+        route === '/reviews/:slug' || route.startsWith('/reviews/compare/') || route.startsWith('/reviews/vs/')) continue
     const pageFile = join(__dirname, '..', 'src', 'pages', `${m[2]}.tsx`)
     if (!existsSync(pageFile)) continue
     const files = [pageFile]
@@ -186,6 +189,28 @@ try {
     }
     dates[`page:${route}`] = { published, modified }
   }
+  // Slug routers without their own page file:
+  // /compare/<slug> (ONDA-vs pages + app round-ups) — dated by their data files;
+  // /reviews/<category> hubs — by the newest change anywhere in src/data/reviews
+  // (applied only to pages that carry no dateModified of their own).
+  const dataDir = join(__dirname, '..', 'src', 'data')
+  const span = (files) => {
+    let published = null, modified = null
+    for (const f of files.filter((x) => existsSync(x))) {
+      const d = fileDates(f)
+      published = earlier(published, d.published)
+      modified = later(modified, d.modified)
+    }
+    return { published, modified }
+  }
+  dates['page:/compare/:slug'] = span(['onda-vs.ts', 'onda-roundups.ts', 'compare-i18n.ts'].map((f) => join(dataDir, f)))
+  try {
+    const log = (args) => execSync(`git log ${args} --format=%aI -- "${join(dataDir, 'reviews')}"`, {
+      cwd: repoRoot, stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 16 * 1024 * 1024,
+    }).toString().trim().split('\n').filter(Boolean)
+    const all = log('')
+    if (all.length) dates['page:/reviews/:slug'] = { published: all[all.length - 1], modified: all[0] }
+  } catch {}
 }
 
 // Per-tool dates: the page component behind each EN /tools/<x> route (keys `tool:/tools/<x>`).

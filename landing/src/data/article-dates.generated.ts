@@ -758,7 +758,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-29T20:11:15+02:00"
+    "modified": "2026-09-29T20:34:14+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -878,7 +878,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:insula": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:25:57.000Z"
+    "modified": "2026-09-29T18:34:14.000Z"
   },
   "glossary:cortisol": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1522,7 +1522,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:brainstem": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:25:57.000Z"
+    "modified": "2026-09-29T18:34:14.000Z"
   },
   "glossary:body-schema": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1530,7 +1530,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:c-tactile-fibers": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:25:57.000Z"
+    "modified": "2026-09-29T18:34:14.000Z"
   },
   "glossary:co-regulation": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1630,11 +1630,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-09-29T20:34:14+02:00"
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-29T18:33:50+02:00"
+    "modified": "2026-09-29T20:34:14+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1646,7 +1646,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-09-29T13:56:55+02:00"
+    "modified": "2026-09-29T20:34:14+02:00"
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
@@ -1654,11 +1654,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
-    "modified": "2026-09-06T21:14:19+02:00"
+    "modified": "2026-09-29T20:34:14+02:00"
   },
   "page:/level/:number": {
     "published": "2026-02-26T01:46:23+01:00",
-    "modified": "2026-09-25T15:22:31+02:00"
+    "modified": "2026-09-29T20:34:14+02:00"
   },
   "page:/inner-spectrum": {
     "published": "2026-03-14T01:25:20Z",
@@ -1735,6 +1735,18 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "page:/reviews": {
     "published": "2026-05-15T20:16:55+02:00",
     "modified": "2026-09-28T20:58:44+02:00"
+  },
+  "page:/reviews/methodology": {
+    "published": "2026-05-15T20:16:55+02:00",
+    "modified": "2026-09-28T20:58:44+02:00"
+  },
+  "page:/compare/:slug": {
+    "published": "2026-09-06T18:55:14+02:00",
+    "modified": "2026-09-29T18:33:50+02:00"
+  },
+  "page:/reviews/:slug": {
+    "published": "2026-05-15T20:16:55+02:00",
+    "modified": "2026-09-29T19:27:56+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
