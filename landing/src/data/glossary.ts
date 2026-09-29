@@ -1379,6 +1379,19 @@ Reich observed that psychological defenses manifest physically — the body "arm
 
 The concept is central to Western body-oriented psychotherapy (Bioenergetics, Somatic Experiencing, and related approaches). The goal is to soften the armor through breath, movement, and awareness — releasing held tension and restoring vitality.
 
+
+## Is body armor a scientific concept?
+
+No, body armor is a historical idea from psychoanalysis, not a scientifically validated finding. Reich developed it in the 1930s and 1940s from clinical observation, and his later theories, such as "orgone energy," were rejected by mainstream science. The claim that emotions or memories are literally stored in specific muscles has not been established.
+
+What research does support is narrower. Chronic stress, anxiety, and threat vigilance are linked to higher resting muscle tension, especially in the neck, shoulders, and jaw, and this tension is associated with tension-type headache and some neck and back pain. Emotional states also change posture and breathing patterns in measurable ways.
+
+## What does the research say about body-oriented therapies?
+
+Body-oriented therapies are an active research area, but the evidence is mixed and often limited by small studies. Approaches such as Somatic Experiencing, body psychotherapy, progressive muscle relaxation, and yoga-based programs have shown benefits for stress, anxiety, or trauma symptoms in some trials. Progressive muscle relaxation has the longest research record.
+
+However, these results do not prove that therapies work by "releasing armor." Improvements may come from relaxation, better body awareness, the therapeutic relationship, or changed breathing, and researchers are still studying which parts matter most.
+
 ## In ONDA Life
 
 Part 3 ("I Adapt") targets "reduction of muscular tension (the \u2018body armor\u2019)." As you master gravity and develop interoceptive efficiency, chronic holding patterns release. The body transitions from defensive rigidity to responsive fluidity.
@@ -2405,6 +2418,19 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Social sensing involves the mirror neuron system, anterior cingulate cortex, and limbic structures. The brain integrates these signals to infer intentions, emotional states, and social dynamics — enabling "reading" others without explicit analysis.
 
+
+## Why does social sensing matter?
+
+Social sensing matters because humans rely on others for safety, cooperation, and belonging, and reading social cues quickly helps people coordinate and avoid conflict. Picking up a change in someone's tone or expression lets you adjust what you say before a misunderstanding grows.
+
+It also affects your own body. Perceiving warmth or threat in others can shift heart rate, breathing, and muscle tension, and supportive social contact is associated with lower physiological stress responses in many studies. Feeling socially excluded, by contrast, tends to activate stress systems.
+
+## What affects social sensing?
+
+Social sensing is shaped by state, experience, and culture. Stress, fatigue, and anxiety can bias perception toward threat, making neutral faces or voices seem more negative. Sleep deprivation has been linked to reduced accuracy in recognizing emotions from faces.
+
+Culture influences which cues people focus on and how they interpret them, so eye contact or expressiveness can mean different things across groups. Individual differences are large, and conditions such as autism or social anxiety are associated with different, not simply weaker, ways of processing social information. It is also worth being cautious about popular claims: the idea that micro-expressions reliably reveal hidden emotions or lies has weak scientific support, and people are generally less accurate at reading others than they believe.
+
 ## In ONDA Life
 
 Part 6 trains "Social Sensing" through the Anterior Cingulate Cortex — the detector for social errors and signals. We develop the ability to read and broadcast signals of safety and status through the subtlest movements, turning social intuition into a precise navigational tool.
@@ -2712,6 +2738,17 @@ The gap is built through:
 - **Signal-to-noise optimization** — clearer perception reduces reactive "noise"
 - **Perceptual stabilization** — theta/alpha states ground the mind
 - **Metacognitive monitoring** — observing our own reactions before acting
+
+
+## What does the research say about the cognitive gap?
+
+The cognitive gap is a psychological idea rather than a formal scientific construct, so there is no study that measures "the gap" directly. It is a useful way of describing something researchers do study under other names, and it is often traced to ideas popularized by the psychiatrist Viktor Frankl.
+
+The closest measurable process is response inhibition, the ability to stop an automatic action, which is tested in the lab with tasks like the stop-signal and go/no-go paradigms. Another is cognitive reappraisal, rethinking what an event means so that the emotional response changes; studies generally find it lowers self-reported distress and is linked to prefrontal involvement. Mindfulness research also looks at reactivity, and some studies suggest training may reduce how strongly people react to emotional stimuli, though results vary and many studies are small.
+
+## What affects the cognitive gap?
+
+Anything that strains self-control tends to narrow the space between stimulus and response. Sleep loss, acute stress, strong emotion, hunger, pain, and alcohol are all associated with more impulsive or reactive behavior. Practice matters as well: habits formed through repetition, such as pausing to breathe or naming a feeling before acting, can make a considered response more available when it counts.
 
 ## In ONDA Life
 
@@ -3990,6 +4027,19 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Foundation** — emotions and thoughts are built on sensation
 - **Trainable** — practices like interoceptive calibration increase sensitivity
 
+
+## Why do sensations matter?
+
+Sensations matter because they are the data the brain uses to regulate the body and to decide how you feel. Signals about heart rate, breathing, gut state, temperature, and muscle tension travel to the brain continuously, and the brain uses them to adjust blood pressure, digestion, and energy use.
+
+They also shape everyday experience and choices. Hunger, thirst, and fatigue are sensation-driven cues. When people notice these signals earlier and read them more accurately, they may have more room to respond before a state becomes intense, though the evidence is still developing.
+
+## What affects sensations?
+
+Attention, context, and expectation all change what you sense. The brain does not simply record raw input; it combines incoming signals with predictions based on past experience, so the same heartbeat can feel alarming during worry and unremarkable during exercise. Focusing attention on a body area tends to make its signals more noticeable.
+
+Physical factors matter too. Sleep loss, illness, pain, medications, and hormonal changes can dull or amplify body signals. Anxiety is often linked to heightened attention to internal sensations, while some conditions are associated with reduced awareness of them. Studies of interoception also show large differences between individuals, and accuracy on one task, such as heartbeat counting, does not always predict accuracy on others.
+
 ## In ONDA Life
 
 Part 1 "Interoceptive Calibration" develops the ability to feel pulsation, pressure, and internal movement. Part 11 "Interoception in Contact" uses sensations to feel one's own and others' boundaries in real-time. Sensations are the bedrock of self-awareness.
@@ -4765,6 +4815,19 @@ The Muscle Metabolic Marker article covers peptide patch protocols for recovery 
 - **Performance windows** — align demanding tasks with peak free hormone levels
 - **Crash prevention** — alerts when levels drop below baseline
 - **Circadian mapping** — see how hormones track with sleep and light
+
+
+## Why does continuous hormone monitoring matter?
+
+Continuous hormone monitoring matters because many hormones change quickly across the day, so a single test captures only one moment. Cortisol, for example, normally peaks shortly after waking and falls toward evening, and it also spikes briefly with stress. Seeing the full curve could, in principle, reveal patterns that one blood draw would miss.
+
+For now, though, this is mostly a future promise. The practical value for everyday users has not yet been clearly shown, and hormone readings are hard to interpret without clinical context.
+
+## How is CHM measured?
+
+Today, hormones are reliably measured mainly with standard lab tests, not wearables. Blood tests are the clinical standard for most hormones, saliva tests are commonly used for cortisol (including repeated samples to map its daily rhythm), and urine tests are used for some hormone metabolites.
+
+Continuous consumer sensors are mostly at the research or early-product stage. Most prototypes try to detect cortisol or other hormones in sweat or skin fluid. Key challenges include low hormone concentrations, variable sweat rates, sensor drift over time, and uncertain agreement between sweat and blood levels. Independent validation against lab methods is still limited, so results from such devices should be treated with caution.
 
 ## In ONDA Life
 
@@ -6100,6 +6163,19 @@ Part 6 describes "co-regulation — the ability to calm oneself through another 
 - **Force transmission** — movement distributes through the network
 - **Information network** — mechanoreceptors throughout fascia relay mechanical and energetic signals
 - **Global** — local restriction affects global function
+
+
+## Why does tensegrity matter?
+
+Tensegrity matters because it offers one way to explain how living structures stay stable yet flexible without relying on rigid stacking alone. At the level of single cells, the idea helps explain how mechanical forces on the cell surface reach the nucleus and can influence gene activity, cell shape, and cell behavior, a process called mechanotransduction.
+
+At the whole-body level, the idea is often called "biotensegrity." It shapes how many manual therapists and physical therapists think about posture and about pain that shows up far from its apparent source. It is best treated as a useful teaching model rather than a proven description of human anatomy.
+
+## What does the research say about tensegrity?
+
+The research is strongest for cellular tensegrity and much weaker for the whole-body version. Donald Ingber and colleagues showed in lab studies that the cell's internal scaffolding (the cytoskeleton) behaves in ways consistent with a tension-compression model.
+
+Biotensegrity as a model of the entire body is influential but debated. Critics point out that bones do bear compressive loads directly through joints, and that the model is hard to test. Cadaver and imaging studies do show that force can pass between neighboring muscles through fascia, but how much this matters for everyday movement or pain is still unclear.
 
 ## In ONDA Life
 
