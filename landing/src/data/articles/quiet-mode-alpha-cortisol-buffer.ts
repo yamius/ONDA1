@@ -47,7 +47,7 @@ const article: Article = {
 
 ---
 
-## The Architecture: The Cortisol Buffer
+## How do alpha brain waves buffer stress and cortisol?
 
 The Alpha rhythm functions as a protective layer between the external world and your internal state — not a wall, but an active filter that processes threat signals without triggering the full cascade:
 
@@ -59,7 +59,7 @@ The Alpha rhythm functions as a protective layer between the external world and 
 
 ---
 
-## The Critical Error: Thermal Runaway
+## What happens when your nervous system never switches off?
 
 Without regular engagement of Quiet Mode, the nervous system enters a self-amplifying failure cascade — Thermal Runaway:
 

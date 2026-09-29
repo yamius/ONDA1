@@ -48,7 +48,7 @@ const article: Article = {
 
 ---
 
-## The Architecture: The HRV Buffer
+## What does HRV say about your resilience to stress?
 
 HRV is the visualization of your **Dynamic Buffer**. The higher your variability, the more adaptation scenarios are pre-programmed into your physiological software. Two systems, same external load — completely different outcomes:
 

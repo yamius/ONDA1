@@ -59,7 +59,7 @@ System efficiency depends on the proper delegation of authority across three dis
 
 ---
 
-## The Critical Error: Micromanagement
+## Why does overthinking your movement make it worse?
 
 The primary bug in modern biomechanics is **Over-conscious Control** — the prefrontal cortex attempting to directly manage motor sequences that are evolutionarily designed to run without it:
 
@@ -95,7 +95,7 @@ Three techniques to return control to where it belongs — the spinal cord:
 
 ---
 
-## Impact Log: Operational Flow
+## What are the benefits of letting movement run on autopilot?
 
 **Cognitive Offloading:** You can think deeply, problem-solve, or process information while moving — because the "processor" is free from body-management duties. The cognitive bandwidth freed by delegating movement to the spinal harddrive is available for the high-level tasks that only the prefrontal cortex can perform. Walking meetings, thinking walks, creative strolls: these are not procrastination. They are deliberate cognitive offloading via CPG delegation.
 

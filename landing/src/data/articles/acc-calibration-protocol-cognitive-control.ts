@@ -25,9 +25,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Logic — Processor Offloading
+## Section 1: Why does constant task-switching wear out your focus?
 
-Three structural levers define the calibration.
+Frequent task-switching places a heavy computational load on the ACC, and three structural levers define the calibration.
 
 ### Thermal Control
 
@@ -43,7 +43,7 @@ Reduce the load on the node and return cognitive flexibility to a FOCUS_LOCKED s
 
 ---
 
-## Section 2: The ONDA Protocol — Restoring the Arbiter
+## Section 2: How do you train cognitive control day to day?
 
 This protocol pairs single-task execution with a mindfulness gate to switch the system into a [ FOCUS_LOCKED ] state.
 
@@ -72,9 +72,9 @@ Reduces the sensitivity of the ACC to background system noise and minor distract
 
 ---
 
-## Section 3: Impact Log — System Output
+## Section 3: What changes when you train cognitive control?
 
-Regular execution of the ACC calibration protocol delivers the following.
+Regular execution of the ACC calibration protocol brings longer uninterrupted focus, less mental fatigue and more resilience to distraction.
 
 **Focus Retention:** Increased duration of uninterrupted focus on the primary task.
 

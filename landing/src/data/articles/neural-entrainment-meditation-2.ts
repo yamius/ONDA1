@@ -44,9 +44,9 @@ Traditional meditation has long been a "black box" operation—subjective, incon
 
 ---
 
-## The Logic: The Frequency Following Response
+## How does neural entrainment work?
 
-The biological mechanism behind this is the Frequency Following Response (FFR).
+Neural entrainment works through a biological mechanism called the Frequency Following Response (FFR).
 
 **Oscillatory Coupling:** When the brain is exposed to a rhythmic sensory stimulus (auditory or visual), the neurons in the auditory cortex begin to fire at the same frequency as the stimulus.
 

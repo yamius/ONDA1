@@ -46,7 +46,9 @@ const article: Article = {
 
 ---
 
-## Anchor 1: The Photonic Trigger
+## Anchor 1: Why does morning sunlight set your body clock?
+
+Morning sunlight sets your body clock because the first light hitting your retina is the master signal every other circadian protocol runs on.
 
 **Signal: Low-Angle Sunlight**
 
@@ -60,7 +62,9 @@ This is your primary Boot Loader for the entire system. Every other circadian pr
 
 ---
 
-## Anchor 2: The Thermal Reset
+## Anchor 2: How does temperature affect your circadian rhythm?
+
+Temperature affects your circadian rhythm because the body's thermoregulatory system is a timing device, and a constant indoor temperature mutes it.
 
 **Signal: Thermal Variance**
 
@@ -72,7 +76,9 @@ Brown adipose tissue (BAT), activated by cold exposure, is particularly sensitiv
 
 ---
 
-## Anchor 3: The Metabolic Gate
+## Anchor 3: Does meal timing affect your body clock?
+
+Yes — your liver, kidneys and gut have their own clocks, wound by food rather than light.
 
 **Signal: The First Bite**
 

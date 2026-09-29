@@ -51,7 +51,7 @@ Not all watch data is equal in a clinical conversation.
 - Brand-specific scores (readiness, recovery, stress, body battery).
 - Months of raw data with no summary.
 
-## Prepare a one-page summary
+## How do you prepare wearable data for a doctor's appointment?
 
 Before the appointment, spend twenty minutes turning your data into one page:
 
@@ -64,7 +64,7 @@ Before the appointment, spend twenty minutes turning your data into one page:
 
 Print it or have it ready as a PDF. One page gets read. Forty screenshots don't.
 
-## How to frame it in the room
+## How should you present wearable data to your doctor?
 
 Lead with how you feel, then support it with data — not the other way round. Compare:
 

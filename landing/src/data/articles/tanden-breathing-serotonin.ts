@@ -33,7 +33,7 @@ Tanden breathing (丹田呼吸法) is a Japanese practice of slow, deep breathin
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## What tanden breathing is
+## What is tanden breathing?
 
 The *tanden* (or *dantian* in Chinese tradition) is a focal point in the lower abdomen, long central to Japanese martial arts, Zen practice, and traditional breathing methods. Tanden breathing means breathing slowly and deeply so that the movement and awareness are centered there — low in the belly, not high in the chest — with a long, controlled exhale.
 
@@ -45,13 +45,13 @@ The most distinctive research comes from Japanese neuroscience. Studies using br
 
 This matters because [serotonin](/articles/system-stability-serotonin) is central to mood, calm alertness, and emotional regulation. Low serotonin activity is associated with low mood and poor stress resilience. If a specific style of slow, rhythmic breathing can activate serotonin neurons, that offers a mechanism for the steady, clear-headed calm — not just drowsy relaxation — that practitioners describe. It complements the vagus-nerve story rather than replacing it: slow breathing calms the body through the vagus *and* appears to engage mood chemistry in the brain.
 
-## It works for beginners — fast
+## Does tanden breathing work for beginners?
 
 You don't have to be an experienced meditator for this. A Japanese study had 15 healthy volunteers with **no meditation experience** do focused-attention Tanden breathing for 20 minutes, while measuring the brain and blood with near-infrared spectroscopy, EEG, and blood tests. In a single session they showed increased oxygenated blood flow in the anterior prefrontal cortex, an EEG shift toward calm alpha activity, and a **significant rise in whole-blood serotonin** — and their negative mood dropped compared to before. The chain was measured, not assumed: focused abdominal breathing → prefrontal activation + serotonin rise → better mood.
 
 That answers a common worry — "meditation only works if you've done it for years." The *deepest* changes do take practice, but a real, biologically grounded mood lift is available from the very first 20-minute session. And unlike the usual vagus-only "calming down" story, this is an active, mood-*elevating* shift through serotonin — worth knowing if you're reaching for breath in a low mood, not just an anxious one.
 
-## Why "from the belly" matters
+## Why does breathing from the belly matter?
 
 The emphasis on the lower abdomen isn't mystical — it's mechanical. Breathing low into the belly engages the diaphragm fully, which produces the slow, deep breath that activates the baroreflex and the [vagus nerve](/glossary/vagus-nerve) and raises heart rate variability (HRV). Shallow chest breathing can't do this. Japanese HRV-biofeedback research links this abdominal, tanden-centered breathing to improved circulation and better autonomic balance — the same [autonomic and hormonal shift measured for abdominal breathing](/articles/breathing-lowers-stress-hormones).
 

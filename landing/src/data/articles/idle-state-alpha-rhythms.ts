@@ -48,7 +48,7 @@ const article: Article = {
 
 ---
 
-## The Architecture: System Readiness
+## Why do alpha brain waves matter for performance?
 
 Three mechanisms explain why Alpha rhythm is the critical hardware foundation for high performance:
 
@@ -60,9 +60,9 @@ Three mechanisms explain why Alpha rhythm is the critical hardware foundation fo
 
 ---
 
-## The Critical Error: The Beta Trap
+## What is the beta trap?
 
-Most high-demand environments create and sustain the Beta Trap — chronic High-Beta entrainment from which the system cannot exit without deliberate intervention:
+The Beta Trap is chronic High-Beta entrainment from which the system cannot exit without deliberate intervention — and most high-demand environments create and sustain it:
 
 **High Latency:** Constant sympathetic activation and cortisol elevation create measurable lag in decision-making and creative output — the [biological latency](/articles/biological-latency-optimizing-system-ping) that separates reaction from anticipation. The Amygdala hijacks prefrontal processing bandwidth, slowing complex reasoning by routing everything through a threat-evaluation filter that most inputs do not require.
 

@@ -37,7 +37,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Why ~6 breaths a minute
+## Section 1: Why breathe at about 6 breaths a minute?
 
 Around six breaths per minute (0.1 Hz) is the **resonance frequency** of the cardiovascular system. Breathe there and you maximally stimulate the baroreflex — the loop that buffers blood pressure — driving large, coherent heart-rate oscillations and shifting the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve) (Lehrer 2003; Lehrer & Gevirtz 2014). This is the engine of HRV biofeedback.
 
@@ -45,7 +45,7 @@ It isn’t exactly six for everyone — personal resonance sits between about 4.
 
 ---
 
-## Section 2: What it does
+## Section 2: What does coherent breathing do?
 
 A controlled study had people breathe at resonance frequency for 15 minutes; it raised HRV and improved mood versus sitting quietly (Steffen 2017). Acutely, coherent breathing reliably increases HRV and lowers arousal; practised regularly it’s associated with better stress resilience, blood pressure and emotional regulation. It is not a cure for anxiety disorders, but it’s one of the most evidence-grounded, zero-cost self-regulation tools there is.
 

@@ -25,9 +25,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Bohr Effect — Mechanics of Oxygen Delivery
+## Section 1: How does CO2 help oxygen reach your tissues?
 
-Two structural facts define the system.
+Hemoglobin needs CO2 present to release oxygen into tissues, and two structural facts define the system.
 
 ### Binding Affinity
 
@@ -57,9 +57,9 @@ Controlled and deep respiration removes metabolic heat and prevents the system f
 
 ---
 
-## Section 3: The Critical Error — Shallow Data Buffers
+## Section 3: What does shallow breathing do to your brain?
 
-When an operator relies on shallow respiration under heavy cognitive load, two system errors occur.
+Shallow breathing under heavy cognitive load leaves the brain short of oxygen, and two system errors occur.
 
 **Internal Suffocation:** The brain receives insufficient oxygen, dropping the processing speed of the prefrontal cortex.
 

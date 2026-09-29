@@ -25,9 +25,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Logic — System Arbiter and Error Monitor
+## Section 1: What does the anterior cingulate cortex do?
 
-The ACC arbitrates three classes of decisions.
+The ACC arbitrates three classes of decisions: conflict monitoring, cost-benefit analysis of cognitive control, and error prevention.
 
 ### Conflict Monitoring
 
@@ -43,7 +43,7 @@ Upon detecting deviations from the target ONDA protocol, the node issues a malfu
 
 ---
 
-## Section 2: The Architecture — Two Branches of Control
+## Section 2: What is the difference between the dorsal and ventral ACC?
 
 The ACC architecture is split into two functional zones, each managing specific system tasks.
 
@@ -57,9 +57,9 @@ Handles emotional appraisal and autonomic regulation. Its purpose is to reduce s
 
 ---
 
-## Section 3: ONDA Insight — Managing System Noise (Jitter)
+## Section 3: What happens in the brain when focus starts to slip?
 
-When the Acetylcholine Lens begins to lose its focal definition due to oxygen deprivation or a drop in dopamine, background system noise (Jitter) is introduced.
+When focus starts to slip, the anterior cingulate cortex activates. When the Acetylcholine Lens begins to lose its focal definition due to oxygen deprivation or a drop in dopamine, background system noise (Jitter) is introduced.
 
 At this point, the anterior cingulate cortex activates.
 

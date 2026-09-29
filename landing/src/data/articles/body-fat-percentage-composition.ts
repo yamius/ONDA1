@@ -32,17 +32,17 @@ const article: Article = {
 
 ---
 
-## Section 1: Essential vs storage fat
+## Section 1: What is a healthy body-fat percentage?
 
-Not all fat is surplus. **Essential fat** — the minimum for hormones, nerves, and organ protection — is about **2–5% in men and 10–13% in women** (women's higher floor supports reproductive function). Everything above that is **storage fat**, the buffer you can actually move.
+A rough healthy range is ~14–17% for men and ~21–24% for women — and not all fat is surplus. **Essential fat** — the minimum for hormones, nerves, and organ protection — is about **2–5% in men and 10–13% in women** (women's higher floor supports reproductive function). Everything above that is **storage fat**, the buffer you can actually move.
 
 Rough healthy ("fitness") ranges: ~14–17% for men, ~21–24% for women, with athletic bands a notch lower. "Ideal" depends on age, genetics and goals — chasing essential-fat levels year-round is neither sustainable nor healthy.
 
 ---
 
-## Section 2: How to measure it
+## Section 2: How do you measure body-fat percentage?
 
-Every method trades accuracy for access:
+You can measure it with DEXA, a Bod Pod or cheaper methods — every method trades accuracy for access:
 
 - **DEXA / Bod Pod** — most accurate, but you pay and travel for them.
 - **Skinfold calipers** — good with a skilled tester; operator-dependent.

@@ -38,7 +38,7 @@ Meditation is marketed almost universally as risk-free — pure wellness, only u
 
 The scale of the gap is striking. One of the largest studies in meditation science — a Wellcome Trust–funded trial (MYRIAD) of over 8,000 UK schoolchildren — found that school-based mindfulness *failed* to improve wellbeing compared to usual teaching, and may even have had detrimental effects on those already at risk of mental-health problems. Findings like this rarely make headlines, because they cut against the wellness narrative. An honest guide to meditation has to include them.
 
-## What the adverse effects can be
+## What are the side effects of meditation?
 
 Drawing on the research, reported adverse effects range from mild to serious:
 
@@ -51,7 +51,7 @@ Drawing on the research, reported adverse effects range from mild to serious:
 
 Estimates of how common these are vary widely — some studies find around 1% affected, others report figures far higher depending on how it's measured and the intensity of practice. The honest summary: adverse effects are real, not rare enough to ignore, and more likely with intensive practice (long retreats, many hours) than with short daily sessions.
 
-## Who is most at risk
+## Who is most at risk from meditation's side effects?
 
 The risk isn't evenly distributed. More vulnerable are:
 
@@ -62,7 +62,7 @@ The risk isn't evenly distributed. More vulnerable are:
 
 For a typical person doing 10–20 minutes of gentle daily practice, the risk is low. The concerns rise with intensity, vulnerability, and lack of support — one more reason [a modest daily dose](/articles/how-much-meditation-do-you-need) beats heroic sessions.
 
-## How to meditate safely
+## How can you meditate safely?
 
 None of this means don't meditate — it means practice wisely:
 

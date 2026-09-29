@@ -44,7 +44,7 @@ You can't out-think a physiological surge with more thinking. But you can reach 
 
 ---
 
-## Section 2: The breath buys the pause
+## Section 2: How does breathing help regulate emotions?
 
 A slow breath with a long exhale stimulates the vagus nerve and pulls the body back toward the [parasympathetic](/glossary/parasympathetic-nervous-system) 'settle' side, damping the surge just enough to re-open the gap. That's the physiological version of "count to ten" — except it works, because it acts on the actual mechanism rather than on your willpower.
 
@@ -52,17 +52,17 @@ Do it *early* — at the first flicker of the reaction, before it accelerates �
 
 ---
 
-## Section 3: Name it, and the volume drops
+## Section 3: Does naming an emotion make it less intense?
 
-The breath calms the body; naming calms the story. Putting a feeling into words — "I'm angry," "I'm overwhelmed" — measurably lowers its intensity by shifting processing from the reactive threat-centre toward the regulating prefrontal regions. It's called affect labeling, and it pairs perfectly with the breath: one works bottom-up on the physiology, the other top-down on the meaning, and they meet in the middle. Full mechanism in [name it to tame it](/articles/name-it-to-tame-it-affect-labeling).
+Yes — putting a feeling into words — "I'm angry," "I'm overwhelmed" — measurably lowers its intensity by shifting processing from the reactive threat-centre toward the regulating prefrontal regions. The breath calms the body; naming calms the story. It's called affect labeling, and it pairs perfectly with the breath: one works bottom-up on the physiology, the other top-down on the meaning, and they meet in the middle. Full mechanism in [name it to tame it](/articles/name-it-to-tame-it-affect-labeling).
 
 So the in-the-moment move is two-handed: **breathe** to buy the pause, and **name** the feeling to take its edge off. Together they re-open the gap wide enough to choose.
 
 ---
 
-## Section 4: Training resilience before you need it
+## Section 4: Can you train emotional regulation?
 
-Here's the part that turns coping into capacity: emotional regulation is *trainable*, and you build it when you're calm, not mid-blowup. A nervous system with a stronger parasympathetic brake — higher [HRV](/glossary/heart-rate-variability) — recovers from emotional spikes faster and reacts less violently to begin with. Daily slow-breathing practice ([and the vagal-tone exercises](/articles/vagus-nerve-exercises)) trains exactly that brake, so the pause is easier to find when a real trigger hits.
+Yes — emotional regulation is *trainable*, and you build it when you're calm, not mid-blowup. A nervous system with a stronger parasympathetic brake — higher [HRV](/glossary/heart-rate-variability) — recovers from emotional spikes faster and reacts less violently to begin with. Daily slow-breathing practice ([and the vagal-tone exercises](/articles/vagus-nerve-exercises)) trains exactly that brake, so the pause is easier to find when a real trigger hits.
 
 This is where feedback earns its place — and it's what makes an app useful here rather than just another stress-*measurer*. An [HRV biofeedback](/hrv-biofeedback) app reads your pulse (iPhone camera or Apple Watch) and shows your heart rhythm settle as you breathe, so you train the calm response and can see it working — the difference between an app that trains a calm reaction and one that only tells you you're stressed. Honest limits: the live coherence score needs an Apple Watch; and this is a **self-regulation practice, not psychiatric treatment**. For emotions that overwhelm your life, a professional — not an app — is the right help; breathing skills sit alongside that care.
 

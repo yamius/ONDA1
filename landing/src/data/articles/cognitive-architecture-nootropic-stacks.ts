@@ -42,13 +42,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: THE ACETYLCHOLINE UPLOAD ]
+## What does acetylcholine do for focus and memory?
 
 Acetylcholine is the primary neurotransmitter for executive function, focus, and memory encoding. In technical terms, it determines the 'Write Speed' of your brain. Most cognitive lag is caused by a depletion of Choline—the raw material for Acetylcholine. By providing the system with high-bioavailability precursors, you ensure that your neural circuits have the necessary resources for Neuroplasticity.
 
 ---
 
-## [ SECTION 2: SMOOTHING THE SIGNAL (ALPHA WAVES) ]
+## Why do anxiety and overstimulation undermine focus?
 
 High-performance states often fail due to 'System Noise'—anxiety or over-stimulation. A perfect stack doesn't just push the gas pedal; it stabilizes the signal. Using compounds that increase Alpha Waves allows the brain to maintain intense focus while remaining in a state of 'Relaxed Alertness,' preventing the Amygdala from hijacking your cognitive resources.
 

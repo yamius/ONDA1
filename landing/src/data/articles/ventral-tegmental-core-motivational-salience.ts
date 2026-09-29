@@ -25,7 +25,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The Ventral Tegmental Core — Reactor Operations
+## Section 1: What neurons make up the ventral tegmental area?
 
 The core is comprised of three primary neuron types.
 
@@ -43,9 +43,9 @@ Provide high-speed bursts of excitation when a genuine, mission-critical signal 
 
 ---
 
-## Section 2: The Dopamine Signal — System Telemetry
+## Section 2: What does dopamine in the VTA actually signal?
 
-Dopamine within the VTA is not merely a "reward chemical" released after a task is completed. In ONDA, we define it as a Prediction Error signal.
+Dopamine within the VTA signals prediction error — it is not merely a "reward chemical" released after a task is completed. In ONDA, we define it as a Prediction Error signal.
 
 ### Anticipation (Zero-Latency Signal)
 
@@ -61,7 +61,7 @@ When overloaded by low-grade stimuli (such as social media notifications or inst
 
 ---
 
-## Section 3: The Critical Error — Motivational Leakage
+## Section 3: What happens when the VTA is overstimulated?
 
 When the VTA reactor is overdriven, it triggers Motivational Leakage.
 

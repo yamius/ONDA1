@@ -86,7 +86,7 @@ Three mechanisms activated by resonant frequency breathing:
 
 ---
 
-## Impact Log: System Harmony
+## What are the benefits of resonant frequency breathing?
 
 **Autonomic Balance:** The [Sympathetic](/glossary/sympathetic-nervous-system) and [Parasympathetic](/glossary/parasympathetic-nervous-system) branches stop competing and begin operating as a coordinated duet. Neither dominates — both contribute to the oscillation. This is the biological definition of [coherence](/glossary/coherence).
 

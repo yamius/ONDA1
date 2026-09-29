@@ -29,7 +29,7 @@ const article: Article = {
   content: `
 Structured yoga and breathing practice, added on top of standard medication, has been shown in Indian trials to improve blood sugar control, heart rate variability (HRV), and cardiometabolic risk in people with type 2 diabetes. India has one of the world's largest diabetic populations, which is partly why Indian researchers have studied this so thoroughly. In one randomized controlled trial, men with newly treated type 2 diabetes who added a structured yoga module (postures plus pranayama) to their oral medication for 12 weeks improved their HRV, sympathovagal balance, and metabolic markers, and lowered cardiovascular risk — more than medication alone. This positions yoga and breathing not as a cure, but as a genuine complement to diabetes care, working partly through the autonomic nervous system that diabetes tends to disrupt.
 
-## Why the autonomic nervous system matters in diabetes
+## Why does the autonomic nervous system matter in diabetes?
 
 Type 2 diabetes doesn't only raise blood sugar — over time it can damage the autonomic nervous system, lowering HRV and tilting the balance toward sympathetic ("fight or flight") dominance. This autonomic dysfunction is part of why diabetes raises cardiovascular risk. That's the opening for breathing and yoga: practices that raise HRV and restore parasympathetic ("rest and digest") activity address one of the mechanisms behind diabetic complications, alongside the blood-sugar problem itself.
 
@@ -51,7 +51,7 @@ Most of these studies are modest in size and several are single-center, so the f
 
 Several mechanisms overlap. Slow breathing and relaxation lower stress hormones like cortisol, which raise blood sugar — so calming the stress response can help glycemic control (see [how breathing lowers stress hormones](/articles/breathing-lowers-stress-hormones)). Improved HRV and baroreflex function restore autonomic balance, easing the cardiovascular strain diabetes causes — the same loop behind [slow breathing and blood pressure](/articles/high-blood-pressure-slow-breathing). Yoga postures add physical activity, which improves insulin sensitivity. It's a whole-system effect, which is why structured programs combining postures, breathing, and relaxation tend to outperform any single element.
 
-## How to use it safely
+## How can people with diabetes use yoga breathing safely?
 
 - **Add it to your treatment, don't replace anything.** These benefits appeared *on top of* medication.
 - **Favor structured, gentle practice** — slow pranayama, relaxation, and appropriate postures. Avoid intense forceful breathing if you have cardiovascular complications.

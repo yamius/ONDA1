@@ -36,15 +36,15 @@ const article: Article = {
 
 ---
 
-## Section 1: The Reward Circuitry
+## Section 1: How does the brain's dopamine reward circuit work?
 
 The dopamine pathway begins in the [Ventral Tegmental Area (VTA)](/articles/ventral-tegmental-core-motivational-salience) and projects to the Nucleus Accumbens. This is the core of your motivation engine. When this circuit is active, your Prefrontal Cortex shifts into 'High-Focus' mode, directing all system resources toward a specific goal. However, if this circuit is overstimulated by synthetic triggers, the Limbic System overrides your rational OS, leading to compulsive behaviors and "Brain Fog."
 
 ---
 
-## Section 2: The Baseline vs. The Spike
+## Section 2: Why do dopamine spikes lower your baseline?
 
-Your biological "Satisfaction Level" depends on your Dopamine Baseline. When you experience a massive spike (a 'Cheap Dopamine' hit), your system triggers Homeostasis, forcing a proportional "crash" to balance the scales. Chronic spiking leads to a lower baseline, making everyday tasks feel grey and uninspiring. The good news: through neuroplasticity, this balance can gradually reshape with consistent habits over time. To maintain high performance, you must protect your baseline from extreme volatility.
+Big dopamine spikes drag down your Dopamine Baseline, which sets your biological "Satisfaction Level." When you experience a massive spike (a 'Cheap Dopamine' hit), your system triggers Homeostasis, forcing a proportional "crash" to balance the scales. Chronic spiking leads to a lower baseline, making everyday tasks feel grey and uninspiring. The good news: through neuroplasticity, this balance can gradually reshape with consistent habits over time. To maintain high performance, you must protect your baseline from extreme volatility.
 
 ---
 

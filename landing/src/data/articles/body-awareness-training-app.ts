@@ -35,9 +35,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The blind spot you live inside
+## Section 1: What happens when you have low body awareness?
 
-Here is the day-to-day cost of low body awareness. You do not notice the tension building in the two hours before the argument — you notice the argument. You do not feel your breathing climb into your chest during the meeting — you feel wired and flat afterward and blame the coffee. You miss the early, quiet, correctable version of every state and only meet the loud, late one.
+With low body awareness, you miss stress building until it has already boiled over. You do not notice the tension building in the two hours before the argument — you notice the argument. You do not feel your breathing climb into your chest during the meeting — you feel wired and flat afterward and blame the coffee. You miss the early, quiet, correctable version of every state and only meet the loud, late one.
 
 This is not a character flaw. Your interoceptive signals are genuinely faint, and modern life is loud on top of them — a constant wash of notifications and dopamine hits that drowns out the slow whisper of the body. So the signal is there; you have just stopped reading it. The result is that you react to your own physiology late, downstream, when the only options left are damage control.
 
@@ -45,9 +45,9 @@ The fix is not more willpower. It is resolution. If you could feel the 5-bpm ris
 
 ---
 
-## Section 2: Body awareness is a measurable sense, not a mood
+## Section 2: Can body awareness be measured and trained?
 
-"Body awareness" sounds soft, like a vibe you either have or you don't. It isn't. It is a specific, measurable perceptual skill: how accurately you can detect what your body is actually doing right now. Your heart rate, your breathing, the swing between [sympathetic](/glossary/sympathetic-nervous-system) "go" and [parasympathetic](/glossary/parasympathetic-nervous-system) "settle" — these are real physical quantities, and your ability to sense them can be sharpened like eyesight.
+Yes — body awareness is a specific, measurable perceptual skill: how accurately you can detect what your body is actually doing right now. Your heart rate, your breathing, the swing between [sympathetic](/glossary/sympathetic-nervous-system) "go" and [parasympathetic](/glossary/parasympathetic-nervous-system) "settle" — these are real physical quantities, and your ability to sense them can be sharpened like eyesight.
 
 Two things make it trainable. First, the signal is objective — a heartbeat is a fact, not a feeling, so you can check yourself against it. Second, the sense improves with feedback: pair an internal sensation with an external readout enough times and the brain builds the map that lets you feel it unaided. (If you want the underlying neuroscience — predictive coding, sensor drift, prediction error — that is the mechanism deep-dive in [interoceptive precision](/articles/interoceptive-precision-sensor-calibration); this page is the practical, day-to-day version.)
 

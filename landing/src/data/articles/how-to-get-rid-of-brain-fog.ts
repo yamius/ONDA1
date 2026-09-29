@@ -37,7 +37,7 @@ const article: Article = {
 
 ---
 
-## Section 1: It's a symptom, not a condition
+## Section 1: Is brain fog a medical condition?
 
 In a study that scraped hundreds of first-person accounts, "brain fog" mostly meant forgetfulness, trouble concentrating, mental slowness and a sense of effort — a cluster of symptoms, not a disease (McWhirter 2023). It can stem from everyday lifestyle factors *or* from medical causes (thyroid problems, anaemia, depression, post-viral syndromes, medication). So the playbook is: fix the obvious modifiable drivers first, and if it persists, see a doctor.
 
@@ -59,7 +59,7 @@ Sitting all day, dehydration, blood-sugar swings and no daylight all dull thinki
 
 ---
 
-## Section 3: The fastest path out
+## Section 3: What is the fastest way to get rid of brain fog?
 
 Don't fix all four blindly — find your biggest driver and start there. The [Brain Fog Quiz](/tools/brain-fog) scores all four and tells you which is most likely clouding you, with the matched protocol. Then give it a few days: most lifestyle-driven fog lifts quickly once the dominant cause is addressed.
 

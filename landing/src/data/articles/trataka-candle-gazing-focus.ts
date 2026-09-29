@@ -28,7 +28,7 @@ const article: Article = {
   content: `
 Trataka is a yogic practice of steady gazing at a single fixed point — traditionally a candle flame — and Indian research has linked it to improved cognitive function and attention. It sits at a crossroads: part concentration exercise, part meditation, part eye practice. By holding your gaze on one point and gently returning whenever attention drifts, you train the mind's ability to focus and quiet its restless jumping. A study of trataka in older adults reported improved cognitive functions, and the practice is traditionally used to sharpen concentration and prepare the mind for meditation. In an age of fractured, screen-scattered attention, it's a simple, low-tech way to rebuild the muscle of focus.
 
-## What trataka is
+## What is trataka meditation?
 
 *Trataka* means "to gaze steadily." The classic form is *bahiranga* (external) trataka: you sit and gaze at a small fixed object — most often a candle flame in a dim room — for as long as is comfortable, then close your eyes and hold the after-image in the mind's eye. There's also *antaranga* (internal) trataka, focusing on an inner point or image.
 
@@ -42,9 +42,9 @@ The practice does two things at once. Externally, it fixes the eyes and, through
 
 The evidence base is small, so trataka is best understood as a promising traditional attention practice with early supportive research — not a heavily proven intervention.
 
-## Why steady gazing calms and focuses
+## Why does candle gazing calm and focus the mind?
 
-There's a reason staring into a flame feels settling. Fixing your gaze on one unmoving point reduces the flood of visual input and eye movement that normally keeps the mind scanning. With less to track, the mind quiets. And the discipline of returning your attention every time it wanders is how attentional control is built — repetitions for focus, the way you'd do repetitions for a muscle.
+Candle gazing calms and focuses the mind because it cuts down what your eyes and mind have to track. Fixing your gaze on one unmoving point reduces the flood of visual input and eye movement that normally keeps the mind scanning. With less to track, the mind quiets. And the discipline of returning your attention every time it wanders is how attentional control is built — repetitions for focus, the way you'd do repetitions for a muscle.
 
 That makes trataka a natural complement to breathing practice. Slow breathing calms the body through the vagus nerve; trataka steadies the mind through the eyes and attention. A few minutes of gazing settled by [slow coherent breathing](/articles/coherent-breathing-guide) — or used before a focus task alongside [breathing for focus](/articles/breathing-for-focus-and-attention) — reinforce each other.
 

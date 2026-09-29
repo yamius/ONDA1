@@ -43,19 +43,19 @@ const article: Article = {
 
 ---
 
-## Section 1: The Insulin Gatekeeper
+## Section 1: How does insulin decide which fuel your body burns?
 
 Insulin is the storage hormone that determines which fuel your system burns. High insulin levels act as a 'Software Lock,' preventing your body from accessing stored fat. To unlock your dual-fuel capability, you must master Insulin Sensitivity. When insulin is high, glucose spikes dominate and fat-burning is blocked. When insulin drops—through fasting or strategic eating—your Mitochondria can finally access the fat reserve and produce Ketones.
 
 ---
 
-## Section 2: Mitochondrial Efficiency
+## Section 2: How do mitochondria affect metabolic flexibility?
 
-Your [mitochondria](/glossary/mitochondria) are the cellular power plants. [Metabolic flexibility](/glossary/metabolic-flexibility) depends on the health of these organelles. When mitochondria are "out of shape," they struggle to oxidize fatty acids, leaving you dependent on the next sugar hit. [ATP](/glossary/atp) production suffers. Healthy mitochondria efficiently burn both glucose and fat — and they support [autophagy](/glossary/autophagy), the cellular cleanup process that removes damaged proteins. Your metabolic "bandwidth" is determined by mitochondrial capacity.
+[Metabolic flexibility](/glossary/metabolic-flexibility) depends on the health of your [mitochondria](/glossary/mitochondria), the cellular power plants. When mitochondria are "out of shape," they struggle to oxidize fatty acids, leaving you dependent on the next sugar hit. [ATP](/glossary/atp) production suffers. Healthy mitochondria efficiently burn both glucose and fat — and they support [autophagy](/glossary/autophagy), the cellular cleanup process that removes damaged proteins. Your metabolic "bandwidth" is determined by mitochondrial capacity.
 
 ---
 
-## Section 3: The Ketogenic Backup
+## Section 3: What is ketosis good for?
 
 Ketosis isn't just a diet; it's a high-performance metabolic state. Ketones are a "cleaner" fuel for the brain, producing fewer reactive oxygen species (ROS) than glucose. Accessing this state is like switching your CPU to a more stable power supply. When you're metabolically flexible, you can enter Ketosis during a fasted window—and your brain runs on Ketones instead of demanding the next glucose spike. This is what tends to smooth out the energy rollercoaster.
 

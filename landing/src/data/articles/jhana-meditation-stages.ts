@@ -31,7 +31,7 @@ The jhanas are perhaps the clearest example of meditation as a measurable progre
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## What the jhanas are
+## What are the jhanas in meditation?
 
 *Jhana* (Pali) means meditative absorption — a state of deep, stable, unified concentration. The tradition describes eight jhanas in sequence, each entered from the one before, and each subtler than the last.
 
@@ -45,7 +45,7 @@ Most meditation lacks obvious milestones — you practice, and progress is diffu
 
 And crucially, the stages aren't only subjective. The emerging neuroscience shows they have distinct, measurable neural signatures — meaning the "levels" of meditation correspond to real, trackable changes in the brain.
 
-## What the brain scans reveal
+## What do brain scans show about jhana meditation?
 
 Harvard's Meditation Research Program (led by Matthew Sacchet at MGH) has produced a series of studies using 7 Tesla fMRI and EEG on expert jhana practitioners:
 
@@ -55,7 +55,7 @@ Harvard's Meditation Research Program (led by Matthew Sacchet at MGH) has produc
 
 Researchers describe advanced meditation as "the deconstruction of the brain's cortical hierarchy" — a striking, measurable account of what deep absorption does.
 
-## The takeaway for everyday meditators
+## Do you need to reach the jhanas to benefit from meditation?
 
 You don't need to reach the jhanas — they require immense practice, and the studied experts had tens of thousands of hours. But the jhanas matter for everyone as a *proof of concept*: they demonstrate, at the far end of the spectrum, that meditation is a graded skill with measurable neural correlates. If the deepest states show up so clearly on brain scans and progress in an orderly, trackable way, it underlines the broader truth — meditation produces real, staged, measurable change, from your very first sessions upward. The same [experience-linked signatures](/articles/meditation-gamma-waves-experience) appear, less dramatically, across ordinary practice.
 

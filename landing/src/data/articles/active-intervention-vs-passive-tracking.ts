@@ -37,9 +37,9 @@ const article: Article = {
 
 ---
 
-## Two different jobs
+## What is the difference between passive tracking and active intervention?
 
-The confusion in the market is that both are called "wearables," but they answer opposite questions:
+Passive tracking tells you how you recovered, while active intervention changes your physiological state in the moment — both are called "wearables," but they answer opposite questions:
 
 - **Passive tracking** — a ring, band or watch records [HRV](/glossary/heart-rate-variability), resting heart rate and sleep, usually overnight, and shows you trends. It tells you **how you recovered**. It is diagnostic: a mirror, not a lever.
 - **Active intervention** — a device or app that changes your physiological state in the moment: paced-breathing [HRV biofeedback](/hrv-biofeedback), vagus-nerve stimulation, light or acoustic entrainment. It gives you **something to do** about the state the tracker just described.
@@ -48,9 +48,9 @@ Tracking is the thermometer. Intervention is the thermostat. Most people have bo
 
 ---
 
-## Why the shift is happening now
+## Why are people moving from tracking to active intervention?
 
-Three things converged in 2026:
+The shift is happening because three things converged in 2026:
 
 1. **Measurement plateaued into a good-enough commodity.** Overnight HRV from a decent ring is now accurate enough that the *next* ring's marginally-better number changes nothing you'd act on. The data is no longer the bottleneck.
 2. **The "so what?" problem got loud.** A generation of users has years of recovery scores and no mechanism to move them. A low number without an intervention is just a notification that stresses you out — which, ironically, lowers HRV further.
@@ -64,9 +64,9 @@ ONDA is deliberately on the **active** side. It is an HRV biofeedback and guided
 
 It is not a tracker, and it does not pretend to be. It reads your heartbeat from the iPhone camera or an Apple Watch to drive the feedback in the moment; your long-term resting-HRV trend still comes from whatever device you sleep in. Which is the honest punchline:
 
-## You probably want one of each
+## Do you need both a tracker and a biofeedback app?
 
-This is not tracker-versus-app tribalism. The two halves are complementary:
+You probably want one of each, because the two halves are complementary — this is not tracker-versus-app tribalism:
 
 - Keep a **passive tracker** for the overnight recovery trend — the measurement you can't take while asleep. Our [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) rank those on accuracy.
 - Add an **active practice** for the part a tracker can't do — actually shifting state. Compare the options in [best active HRV training apps](/compare/best-active-hrv-training-apps).

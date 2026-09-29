@@ -31,13 +31,13 @@ Zen koans — paradoxical riddles like "what is the sound of one hand clapping?"
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## What koans are
+## What is a Zen koan?
 
 A koan is a question or statement used in Rinzai Zen that cannot be answered by ordinary logic. "What is the sound of one hand clapping?" "What was your original face before your parents were born?" A student sits with the koan during [zazen](/articles/zazen-zen-meditation-brain), turning it over — not to find a clever answer, but until the analytical mind, unable to resolve the paradox, exhausts itself and gives way to a different, more direct mode of understanding.
 
 This tradition is serious and structured. In Rinzai Zen, established in Japan in 1195, practitioners may dedicate years — often up to seven — to a rigorous curriculum built around zazen and koan contemplation. Koans aren't puzzles for entertainment; they're a systematic method for loosening the grip of conceptual thought.
 
-## The two brain networks koans engage
+## Which brain networks do koans engage?
 
 Modern neuroscience gives us a framework for what koans do, centered on two brain systems:
 

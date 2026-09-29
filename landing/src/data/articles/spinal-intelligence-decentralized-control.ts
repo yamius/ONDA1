@@ -61,7 +61,7 @@ How intelligence is distributed across three processing layers in the ONDA syste
 
 ---
 
-## The Critical Error: Cognitive Interference
+## Why does conscious control get in the way of movement?
 
 The biggest barrier to spinal intelligence is Cognitive Interference — the cortex inserting itself into execution-level processes it was never designed to manage:
 
@@ -97,7 +97,7 @@ Three techniques to train the system to trust its periphery:
 
 ---
 
-## Impact Log: The Supreme Coordination
+## What are the benefits of training spinal reflexes?
 
 **Reactive Resilience:** The ability to regain balance and avoid injury in extreme situations on autopilot — the direct result of a calibrated spinal reflex network. Reactive resilience is not a function of strength or conditioning. It is a function of the speed and precision of the spinal interneuron response. A well-developed spinal intelligence system responds to the slip before the brain knows it happened.
 

@@ -47,9 +47,9 @@ const article: Article = {
 
 ---
 
-## The Diagnostics: Measuring the Lag
+## How is heart rate variability measured?
 
-We don't just count beats per minute. We analyze the **R-R intervals** — the milliseconds between each heartbeat. The pattern of those intervals tells the entire story of your network's current state.
+HRV is measured from the **R-R intervals** — the milliseconds between each heartbeat — not just by counting beats per minute. The pattern of those intervals tells the entire story of your network's current state.
 
 **The Static Signal — High Latency:**
 If your heart beats like a metronome (perfectly regular), your HRV is low. This indicates that your Sympathetic nervous system is "overclocked" and dominating the network. The system is locked in a single mode. Your ping is spiking.

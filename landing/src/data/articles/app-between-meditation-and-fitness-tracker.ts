@@ -35,7 +35,9 @@ const article: Article = {
 
 ---
 
-## Section 1: What each side gets wrong
+## Section 1: What's wrong with meditation apps and fitness trackers?
+
+Meditation apps practice without measuring, and fitness trackers measure without helping you practice.
 
 **Meditation apps** are content libraries. They're good at delivering guided sessions, but they're one-directional and blind: the app talks, you listen, and nothing comes back. You can't tell if a session landed, whether you're improving, or which practice actually helps *you*. Faith, not feedback.
 
@@ -45,15 +47,15 @@ Each half is missing exactly what the other has.
 
 ---
 
-## Section 2: Why the gap matters (and why habits die in it)
+## Section 2: Why do people quit meditation apps and ignore their trackers?
 
-The gap isn't academic — it's why most people bounce off both. Meditation apps lose you because there's no sense of progress; without feedback, motivation quietly starves. Trackers lose you because a number you can't act on becomes noise you learn to ignore. Both failures come from the same missing piece: a **closed loop** where you measure, do something, and see the result.
+People bounce off both because meditation apps give no sense of progress and trackers give numbers you can't act on. Meditation apps lose you because there's no sense of progress; without feedback, motivation quietly starves. Trackers lose you because a number you can't act on becomes noise you learn to ignore. Both failures come from the same missing piece: a **closed loop** where you measure, do something, and see the result.
 
 That loop is the difference between [active intervention and passive tracking](/articles/active-intervention-vs-passive-tracking). Passive tracking reports the past. An active loop lets you change the present and watch it change — which is what actually builds a habit, because the payoff is immediate and visible.
 
 ---
 
-## Section 3: What the middle actually is
+## Section 3: What does an app between meditation and fitness tracking do?
 
 The app in the gap does three things neither side does alone:
 

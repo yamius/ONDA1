@@ -35,13 +35,13 @@ Rehabilitation brings together several professionals. A **rehabilitation doctor*
 
 What they all share is a single question: *how much can this body do today, and how do we safely build from here?*
 
-## The day after tells more than the day of
+## How do you know if a rehab session was too much?
 
-Here's the most useful idea for anyone recovering: **how your body responds the next day often says more than how the effort felt at the time.**
+Look at the next day: **how your body responds the next day often says more than how the effort felt at the time.**
 
 A walk that felt fine can be followed by a night of elevated heart rate, low HRV and poor sleep — a sign the load was more than your body could absorb yet. For some conditions, particularly after viral illness and in people prone to post-exertional crashes, symptoms can appear 24 to 48 hours after an activity. That delay is exactly why feelings alone are an unreliable guide, and why a trend across days is so useful to a rehabilitation team.
 
-## How a rehabilitation team can read your report
+## What can a rehabilitation team learn from your heart rate data?
 
 **Resting heart rate trend.** As recovery progresses, resting heart rate often settles back toward your pre-illness normal. A steady downward drift is encouraging; a jump after increasing activity suggests the step was too big.
 
@@ -51,7 +51,7 @@ A walk that felt fine can be followed by a night of elevated heart rate, low HRV
 
 **Your notes — as a training diary.** What you did each day (walk length, sessions, stairs), how you felt during and after, sleep, and symptoms. Together with the numbers, this lets a physiotherapist see cause and effect.
 
-## What help a rehabilitation team can offer
+## How can a rehabilitation team help you recover safely?
 
 **Set safe starting points and intensities.** In cardiac rehab, exercise intensity is usually set from clinical testing and supervised, often using perceived effort as well as heart rate — especially because some heart medications, like beta blockers, blunt heart rate. Targets should come from your team, not from a general chart.
 

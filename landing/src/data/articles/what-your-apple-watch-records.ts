@@ -38,7 +38,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The three things it records at rest
+## Section 1: What does an Apple Watch record while you sleep?
 
 Three signals do most of the work, and all three are collected while you sleep, when nothing you're doing is in the way:
 
@@ -48,7 +48,7 @@ Three signals do most of the work, and all three are collected while you sleep, 
 
 None of these needs a workout or a chest strap. They are a by-product of wearing the watch to bed.
 
-## Section 2: Why one number tells you almost nothing
+## Section 2: Why is a single resting heart rate reading not enough?
 
 A single resting heart rate — "62 this morning" — is a snapshot with no context. Was that low for you, or a quiet exception? You can't tell from one reading.
 

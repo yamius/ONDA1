@@ -45,19 +45,19 @@ const article: Article = {
 
 ---
 
-## Section 1: The Master Oscillator (SCN)
+## Section 1: How does light set your body clock?
 
 Your eyes act as data ports for light, sending signals directly to the Suprachiasmatic Nucleus. This tiny region in the hypothalamus receives photons and translates them into timing instructions for every cell in your body. Melatonin and Cortisol are the primary output signals—one for shutdown, one for boot-up. Photoreceptors in the retina are especially sensitive to blue wavelengths, which is why screens at night act as a "Force Quit" for your sleep architecture.
 
 ---
 
-## Section 2: The Adenosine Pressure
+## Section 2: What builds up sleep pressure during the day?
 
-Sleep debt is a real variable. Adenosine builds up during wakefulness like cache files that need clearing. The longer you're awake, the more adenosine accumulates—and the stronger the drive to sleep. Homeostasis demands that you clear this cache. When you don't, the system runs with corrupted state: metabolic lag, brain fog, and a Circadian Rhythm that drifts further from the solar cycle. ATP breakdown produces adenosine; deep sleep clears it.
+Adenosine builds up during wakefulness like cache files that need clearing. The longer you're awake, the more adenosine accumulates—and the stronger the drive to sleep. Homeostasis demands that you clear this cache. When you don't, the system runs with corrupted state: metabolic lag, brain fog, and a Circadian Rhythm that drifts further from the solar cycle. ATP breakdown produces adenosine; deep sleep clears it.
 
 ---
 
-## Section 3: Blue Light & Digital Caffeine
+## Section 3: How do screens at night affect your sleep?
 
 Screens at 11 PM act as a "Force Quit" for your sleep architecture. Blue light suppresses Melatonin by tricking the SCN into thinking it's still noon. Your brain never receives the shutdown signal. The result: you lie in bed with a body that thinks it's midday. To initiate Deep Sleep, you must block the blue spectrum after sunset. It's digital caffeine—and it's hijacking your System Clock.
 

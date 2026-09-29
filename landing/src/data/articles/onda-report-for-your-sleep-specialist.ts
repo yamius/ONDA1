@@ -40,7 +40,7 @@ Poor sleep has very different causes, and each needs a different approach. A sle
 
 Your data doesn't answer these questions on its own. But it helps point toward the right one.
 
-## How a sleep specialist can read your report
+## What can a sleep specialist learn from your watch data?
 
 **Sleep timing and regularity.** When you actually fell asleep and woke up, night after night. A specialist looks for irregular schedules, weekend shifts and late drift — the pattern behind body-clock problems and social jet lag. This is often more accurate than what people recall.
 
@@ -52,7 +52,7 @@ Your data doesn't answer these questions on its own. But it helps point toward t
 
 **Your notes.** Caffeine, alcohol, late screens, a stressful week, travel, new medication. For sleep, context explains a great deal, and it's the part a questionnaire usually misses.
 
-## What help a sleep specialist can offer
+## How can a sleep specialist help with poor sleep?
 
 **Identify the type of sleep problem.** Combining your history, symptoms, questionnaires and your data, they can distinguish insomnia, body-clock disorders and possible breathing-related problems — each with a different treatment.
 
@@ -64,9 +64,9 @@ Your data doesn't answer these questions on its own. But it helps point toward t
 
 **Review medications and substances.** Many medicines, as well as alcohol and caffeine, affect sleep. Dated notes make the links easier to spot.
 
-## The trap: when tracking makes sleep worse
+## Can sleep tracking make your sleep worse?
 
-Sleep researchers have a name for it: **orthosomnia** — becoming so preoccupied with getting "perfect" sleep data that the anxiety itself makes sleep worse. People lie awake worrying about their score, or trust the app over how they actually feel.
+Yes — sleep researchers call it **orthosomnia** — becoming so preoccupied with getting "perfect" sleep data that the anxiety itself makes sleep worse. People lie awake worrying about their score, or trust the app over how they actually feel.
 
 A good sleep specialist will steer you away from this, and it's worth knowing before you go. Use your data to spot **patterns over weeks**, not to grade each night. If checking your numbers makes you anxious, that's a signal to look less often. The goal is better sleep, not a better score.
 

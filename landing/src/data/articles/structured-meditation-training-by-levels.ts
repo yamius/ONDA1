@@ -38,7 +38,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Why a shelf of sessions doesn't build a skill
+## Section 1: Why doesn't a library of meditation sessions build a skill?
 
 Learning anything real — an instrument, a language, a lift — follows the same shape: progressive overload in the right order. You master a foundation, then build on it. Nobody learns piano by shuffling random pieces by mood.
 
@@ -48,7 +48,7 @@ Nervous-system regulation is a trainable skill like any other. It deserves a cur
 
 ---
 
-## Section 2: What "structured training" actually means
+## Section 2: What is structured meditation training?
 
 A structured program has properties a library doesn't:
 
@@ -82,7 +82,7 @@ It's a different proposition from a [Headspace](/compare/onda-vs-headspace) or [
 
 ---
 
-## Section 5: How to train, not just dabble
+## Section 5: How do you train meditation instead of just dabbling?
 
 If you want practice that actually changes you, treat it like training. **Follow the sequence** instead of cherry-picking by mood. **Practise in order**, letting each stage settle before the next. **Watch a real signal** so progress is measurable, not vibes. And **let the structure carry you** on the days motivation is thin — that's the entire point of a path: it decides the next step so you don't have to.
 

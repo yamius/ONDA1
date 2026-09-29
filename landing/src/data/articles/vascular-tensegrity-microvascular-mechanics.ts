@@ -59,7 +59,7 @@ The tensegrity matrix absorbs biochemical and physical shocks, protecting fragil
 
 ---
 
-## Section 3: ONDA Insight — Reducing Myofascial Noise
+## Section 3: How does muscle tension from stress or sitting affect blood flow?
 
 Prolonged sedentary work or psychological stress causes the neck, shoulder, and masticatory (jaw) muscles to lock up. This creates an imbalance in structural tension and compresses the vascular pathways.
 

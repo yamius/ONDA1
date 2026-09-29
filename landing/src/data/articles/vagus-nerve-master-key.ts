@@ -41,15 +41,15 @@ The parasympathetic nervous system doesn't just make you feel relaxed — it lit
 
 ---
 
-## Section 2: Measuring the Signal
+## Section 2: How do you measure vagal tone?
 
-You can't optimize what you don't measure. The gold standard for vagal tone is Heart Rate Variability (HRV) — the variation in time between heartbeats. A healthy, resilient nervous system shows high HRV: the heart constantly adjusts its rhythm in response to breathing and environmental demands. Low HRV often indicates chronic stress, poor recovery, or a nervous system stuck in defensive mode.
+Vagal tone is measured through Heart Rate Variability, because you can't optimize what you don't measure. The gold standard for vagal tone is Heart Rate Variability (HRV) — the variation in time between heartbeats. A healthy, resilient nervous system shows high HRV: the heart constantly adjusts its rhythm in response to breathing and environmental demands. Low HRV often indicates chronic stress, poor recovery, or a nervous system stuck in defensive mode.
 
 Biofeedback devices — from smartwatches to dedicated HRV monitors — make this visible. You can see in real time how your breathing affects your heart rhythm. Extended exhales increase HRV. Stressful thoughts decrease it. This feedback loop is how you train your vagus nerve: observe, adjust, repeat.
 
 ---
 
-## Section 3: The Polyvagal Perspective
+## Section 3: What is polyvagal theory?
 
 Stephen Porges' Polyvagal Theory reframes the autonomic nervous system as a three-state ladder, not a simple on/off switch. The ventral vagal state (safety, social engagement) sits at the top. The sympathetic state (mobilization, fight-or-flight) sits in the middle. The dorsal vagal state (freeze, shutdown) sits at the bottom. We move between these states constantly — often without conscious awareness.
 

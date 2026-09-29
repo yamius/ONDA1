@@ -37,7 +37,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Stress is supposed to be a spike, not a plateau
+## Section 1: Is the stress response supposed to switch off?
 
 The stress response is a loop with an off-switch. A threat arrives, the [sympathetic](/glossary/sympathetic-nervous-system) branch fires, [cortisol](/glossary/cortisol) and heart rate climb, and then — when the threat passes — the [parasympathetic](/glossary/parasympathetic-nervous-system) branch brings you back down and [variability](/glossary/heart-rate-variability) returns. That recovery *is* health. A body that spikes and recovers cleanly is doing exactly what it should.
 
@@ -45,17 +45,17 @@ Chronic stress breaks the off-switch. The plateau replaces the spike. And becaus
 
 ---
 
-## Section 2: The tell is HRV that stays down — into sleep
+## Section 2: How does chronic stress show up in your HRV?
 
-This is where the data is unambiguous. Studies of high-strain work — high effort, low reward — find **lower HRV not just during work, but through leisure and sleep, on work days and weekends alike.** A study of nurses under prolonged occupational stress found reduced high-frequency and low-frequency HRV power during work *and a lack of recovery in the non-working, resting periods.* The parasympathetic brake stayed off the clock.
+Studies of high-strain work — high effort, low reward — find **lower HRV not just during work, but through leisure and sleep, on work days and weekends alike.** A study of nurses under prolonged occupational stress found reduced high-frequency and low-frequency HRV power during work *and a lack of recovery in the non-working, resting periods.* The parasympathetic brake stayed off the clock.
 
 That's the signature that matters. Anyone's HRV drops under an acute stressor — that's normal. The chronic-stress fingerprint is **HRV that fails to rebound when the stressor is gone**: a flat evening, a shallow night, a baseline that has quietly settled lower and stopped coming back up.
 
 ---
 
-## Section 3: Why you can't feel it
+## Section 3: Why can't you feel chronic stress?
 
-You'd think chronic sympathetic tone would be obvious. It isn't — because it's your reference point now. Interoception recalibrates to the plateau; "wired but tired," "can't switch off," "fine, just busy" all describe a nervous system stuck in mild activation that no longer registers as unusual. The felt sense adapts. The measured signal doesn't — which is exactly why it's worth measuring.
+Chronic sympathetic tone isn't obvious to you because it's your reference point now. Interoception recalibrates to the plateau; "wired but tired," "can't switch off," "fine, just busy" all describe a nervous system stuck in mild activation that no longer registers as unusual. The felt sense adapts. The measured signal doesn't — which is exactly why it's worth measuring.
 
 ---
 

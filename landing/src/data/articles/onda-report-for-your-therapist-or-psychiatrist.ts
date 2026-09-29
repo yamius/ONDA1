@@ -41,7 +41,7 @@ They're often confused, and they'll use your data differently.
 
 As a Gestalt-trained therapist, I've long seen that people often know what their body is doing before they can put it into words. Research points the same way. Heart rate variability is linked to how flexibly the nervous system regulates emotion: on average, people with higher resting HRV tend to show better emotional regulation, and lower HRV is more common in groups experiencing anxiety or depression. That doesn't mean a number tells you your mental state — it varies hugely between people. But it means the body carries real, relevant information that talk alone can miss.
 
-## How a therapist can use your report
+## How can a therapist use your heart rate and HRV data?
 
 **Spot triggers you didn't see.** Your timeline marks the days your resting heart rate, HRV or breathing left your usual range. Next to your notes, patterns appear: the Sunday evenings before work, the week of a family visit, the nights after a particular kind of argument. These become concrete starting points for the session.
 
@@ -53,7 +53,7 @@ As a Gestalt-trained therapist, I've long seen that people often know what their
 
 **Support breathing and regulation skills.** If your therapist teaches regulation techniques, slow breathing practice gives an immediate, observable response — your heart settling — which some people find more convincing than being told to "calm down." HRV biofeedback has been studied as a supportive tool for stress and anxiety, alongside therapy rather than instead of it.
 
-## How a psychiatrist can use your report
+## How can a psychiatrist use your heart rate data?
 
 **Watch medication effects.** Some psychiatric medications can change heart rate or sleep. A dated trend shows whether a change began when a medication started or its dose changed — useful information to discuss, never a reason to adjust medication yourself.
 
@@ -61,7 +61,7 @@ As a Gestalt-trained therapist, I've long seen that people often know what their
 
 **Add context between appointments.** Psychiatric appointments can be short and weeks apart. Your timeline and notes fill in what happened in between.
 
-## What it can't and shouldn't do
+## Can HRV diagnose anxiety or depression?
 
 - **It doesn't diagnose.** No heart-rate or HRV pattern diagnoses anxiety, depression or any other condition.
 - **It isn't treatment.** Breathing practice can support therapy and treatment; it doesn't replace them.

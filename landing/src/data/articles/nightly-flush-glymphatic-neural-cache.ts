@@ -47,9 +47,9 @@ const article: Article = {
 
 ---
 
-## The Architecture: Hydraulic Clearance
+## What does glymphatic clearance depend on?
 
-Glymphatic clearance efficiency is not random. It depends on three critical system parameters:
+Glymphatic clearance efficiency depends on three critical system parameters:
 
 **Stage N3 (Deep Sleep):** The cleanup script only triggers during this phase. If your sleep is fragmented or too short, the "flush" is interrupted mid-cycle, leaving residual waste in the system. Each night of poor sleep is a dirty run — metabolic debt that accumulates over years.
 
@@ -59,7 +59,7 @@ Glymphatic clearance efficiency is not random. It depends on three critical syst
 
 ---
 
-## The Incident: What Happens During a "Dirty Run"
+## What happens when the brain doesn't clear its waste overnight?
 
 When the glymphatic system fails to clear the cache — due to insufficient Deep Sleep, low HRV, or poor positioning — **Neural Lag** occurs:
 

@@ -31,21 +31,21 @@ Experienced meditators have a distinctive brain signature — elevated gamma bra
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## What gamma waves are
+## What are gamma brain waves?
 
-Your brain produces electrical rhythms at different frequencies, from slow delta waves in deep sleep to fast gamma waves — the quickest, above roughly 30 Hz. Gamma activity is associated with heightened awareness, focused attention, and the binding together of information across the brain into unified conscious experience. It's the signature of a brain that is intensely, coherently engaged.
+Gamma waves are the brain's fastest electrical rhythms, above roughly 30 Hz — at the opposite end from the slow delta waves of deep sleep. Gamma activity is associated with heightened awareness, focused attention, and the binding together of information across the brain into unified conscious experience. It's the signature of a brain that is intensely, coherently engaged.
 
 What makes gamma interesting for meditation is that it appears both *during* practice and, in experienced practitioners, as a lasting *trait* — a change in how the brain works even at rest. That distinction matters: a state effect fades when you stop; a trait effect means the practice has changed you.
 
-## The experience correlation — why it signals progress
+## Does meditation experience increase gamma waves?
 
-The most important finding for anyone practicing is this: gamma amplitude was **positively correlated with meditation experience.** More practice, more gamma. This turns a brain rhythm into something like a fitness marker — evidence that meditation builds a measurable capacity over time, the way training builds muscle.
+Yes — the most important finding for anyone practicing is that gamma amplitude was **positively correlated with meditation experience.** More practice, more gamma. This turns a brain rhythm into something like a fitness marker — evidence that meditation builds a measurable capacity over time, the way training builds muscle.
 
 It also held across three different traditions, suggesting a common neural signature of meditative training rather than a quirk of one technique. And researchers ruled out that the gamma came from eye or muscle movement artifacts, confirming it as genuine brain activity. Higher gamma in experienced meditators isn't an accident of measurement — it's the brain reflecting accumulated practice.
 
-## Meditation traditions share a measurable core
+## Do different meditation traditions change the brain in the same way?
 
-Beyond gamma, high-density EEG research across four Indian-rooted traditions — Vipassana, Brahma Kumaris Raja Yoga, Heartfulness, and Isha Yoga — found that machine-learning classifiers could distinguish meditative from non-meditative brain states with about 91% accuracy. Notably, classification worked *better* in advanced meditators than in beginners, again pointing to a stronger, more distinct neural signature with experience.
+They appear to share a measurable core: beyond gamma, high-density EEG research across four Indian-rooted traditions — Vipassana, Brahma Kumaris Raja Yoga, Heartfulness, and Isha Yoga — found that machine-learning classifiers could distinguish meditative from non-meditative brain states with about 91% accuracy. Notably, classification worked *better* in advanced meditators than in beginners, again pointing to a stronger, more distinct neural signature with experience.
 
 This is a striking convergence: whatever the tradition, deep meditation produces a recognizable, measurable brain state — and that state becomes more pronounced and distinguishable as you train. Meditation isn't an unmeasurable mystery; it has a neural fingerprint that sharpens with practice. (One of those traditions, [open-eyed Rajyoga](/articles/rajyoga-open-eye-meditation), has its own distinct EEG signature.)
 

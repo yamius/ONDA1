@@ -29,7 +29,7 @@ Your GP (family doctor) is usually the right first person to see your watch data
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
-## Why start with your GP
+## Why show your heart rate data to your GP first?
 
 A GP sees the whole person. A cardiologist looks at the heart, a sleep specialist at sleep — but a family doctor holds your history, medications, previous test results and life context in one place. That makes them the best person to answer the first, most important question: *is this change something, or nothing?*
 
@@ -47,7 +47,7 @@ A good report — like the PDF ONDA exports — has a few blocks. Here's what a 
 
 **Your notes.** What you wrote down when something changed — illness, a stressful week, new medication, travel, alcohol, poor sleep. For a GP, this context is often worth as much as the numbers, because it explains many changes on its own.
 
-## What help a GP can offer
+## How can a GP help with your heart rate data?
 
 With symptoms plus a clear trend, a family doctor can typically:
 
@@ -61,9 +61,9 @@ With symptoms plus a clear trend, a family doctor can typically:
 
 **Follow up over time.** After a change — new medication, recovering from illness, a lifestyle change — your trend shows whether things are returning to your baseline. That makes follow-up appointments more concrete than "how have you been feeling?"
 
-## What a GP won't do with it
+## Can a GP diagnose a condition from your HRV?
 
-Be realistic. Your GP won't diagnose a condition from HRV alone — it isn't used that way in routine care. Watch and camera readings aren't medical-grade measurements, and a single low value usually reflects a bad night rather than disease. Some doctors are more comfortable with wearable data than others; if yours is cautious, the summary still helps, because it turns a vague complaint into a dated, measurable change.
+Not on its own: your GP won't diagnose a condition from HRV alone — it isn't used that way in routine care. Watch and camera readings aren't medical-grade measurements, and a single low value usually reflects a bad night rather than disease. Some doctors are more comfortable with wearable data than others; if yours is cautious, the summary still helps, because it turns a vague complaint into a dated, measurable change.
 
 ## How to make the appointment count
 

@@ -27,7 +27,7 @@ const article: Article = {
   content: `
 Alternate nostril breathing — Nadi Shodhana in yoga — is a technique where you close one nostril, inhale, then switch nostrils and exhale, alternating throughout. It lowers heart rate, calms the nervous system, and is associated in research with reduced blood pressure and improved heart rate variability (HRV). Here's the honest mechanism: the calm comes mainly from the slow, controlled pace it forces you into — not from the nostril-switching itself. It takes about five minutes and is best for winding down or steadying a scattered mind, rather than stopping acute panic, where a [physiological sigh](/articles/physiological-sigh) works faster.
 
-## How to do alternate nostril breathing
+## How do you do alternate nostril breathing?
 
 Sit comfortably with a straight spine. Use your right thumb and ring finger to control your nostrils:
 
@@ -38,7 +38,7 @@ Sit comfortably with a straight spine. Use your right thumb and ring finger to c
 
 That's one full cycle. Continue for three to five minutes, keeping the breath slow, smooth and even. Don't force the length — a comfortable, unhurried pace matters more than a long one. If holding the finger position is distracting, simply imagine breathing through one side at a time; the slow rhythm is what does the work.
 
-## Why it works — and what actually matters
+## Why does alternate nostril breathing calm you down?
 
 Nadi Shodhana's calming effect has a straightforward explanation: it slows your breathing down and makes it even and deliberate. Slow breathing — roughly five to six breaths per minute — is one of the most robustly supported ways to activate the vagus nerve, shift toward the parasympathetic "rest and digest" state, and raise HRV in real time. The alternating nostrils give your mind a simple task to focus on, which helps you stay with the practice, but the physiological benefit comes overwhelmingly from the pace. That same pace is what a [resonance breathing rate](/articles/find-your-resonance-breathing-rate) targets directly.
 
@@ -46,7 +46,7 @@ Indian clinical research backs the calming effect: in a randomized trial of hype
 
 Traditional yoga also describes alternate nostril breathing as "balancing" the two hemispheres of the brain. The honest state of the evidence: this specific claim is weakly supported. What's well supported is that slow, controlled breathing calms the nervous system — and Nadi Shodhana is a pleasant, structured way to get there.
 
-## When to use it
+## When should you use alternate nostril breathing?
 
 Alternate nostril breathing suits calm, deliberate moments more than emergencies:
 

@@ -35,15 +35,15 @@ const article: Article = {
 
 ---
 
-## Section 1: Why focus is a body state, not just a mental act
+## Section 1: Why can't I focus even when I try hard?
 
-Your ability to concentrate depends on being in the right band of arousal — alert but not wired. Too little and you drift; too much [sympathetic](/glossary/sympathetic-nervous-system) activation and attention fragments into threat-scanning, hopping from stimulus to stimulus. That over-aroused, scattered state is exactly where most "I can't focus" afternoons live.
+Focus that keeps collapsing is usually a body-state problem, not a willpower one: your ability to concentrate depends on being in the right band of arousal — alert but not wired. Too little and you drift; too much [sympathetic](/glossary/sympathetic-nervous-system) activation and attention fragments into threat-scanning, hopping from stimulus to stimulus. That over-aroused, scattered state is exactly where most "I can't focus" afternoons live.
 
 And modern attention is under specific assault. A day of fragmented, notification-driven input trains the spotlight to *want* to jump — the slide covered in [digital dementia and attentional control](/articles/digital-dementia-attentional-control). Layer on [screen apnea](/articles/screen-apnea-breathing) — the shallow, held breathing that creeps in while you stare at a screen — and you've got a nervous system nudged toward exactly the state focus can't survive in.
 
 ---
 
-## Section 2: What slow breathing does to attention
+## Section 2: Does slow breathing improve focus?
 
 Slow, paced breathing works on focus indirectly but powerfully: it pulls your autonomic balance back toward a calm-alert state. A longer exhale raises vagal tone and settles the over-arousal that scatters attention, moving you out of threat-scanning and into a steadier band where the spotlight can actually rest.
 
@@ -53,9 +53,9 @@ The honest boundary: this steadies the *state* that supports attention. It's a s
 
 ---
 
-## Section 2b: The nose, brain rhythms and memory
+## Section 2b: Is nose breathing better for focus and memory?
 
-The route of the breath matters too, not just the pace. Research on nasal breathing found that breathing through the nose entrains — synchronizes — electrical rhythms in brain regions involved in memory and emotion, and that this effect largely disappears when you breathe through the mouth (Zelano et al., 2016). In that work, people also recognized and remembered things better when those things arrived during a nasal inhale. It's a concrete, physical reason why "breathe through your nose" is cognitive advice, not just a fitness tip (more in [nose vs mouth breathing](/articles/nose-vs-mouth-breathing)).
+Yes — the route of the breath matters too, not just the pace. Research on nasal breathing found that breathing through the nose entrains — synchronizes — electrical rhythms in brain regions involved in memory and emotion, and that this effect largely disappears when you breathe through the mouth (Zelano et al., 2016). In that work, people also recognized and remembered things better when those things arrived during a nasal inhale. It's a concrete, physical reason why "breathe through your nose" is cognitive advice, not just a fitness tip (more in [nose vs mouth breathing](/articles/nose-vs-mouth-breathing)).
 
 Indian pranayama research points in the same direction. Studies using the P3 brain-wave response — an electrical marker of attention and cognitive processing — reported faster, stronger P3 responses after pranayama practice, including in people with type 2 diabetes, who are at higher risk of cognitive decline. These are modest, mostly small studies, so read them as supportive rather than definitive. The practical translation is simple: slow down and keep your mouth closed before and during demanding thinking. Gaze-based concentration practice like [trataka](/articles/trataka-candle-gazing-focus) trains the same attention from a different angle.
 

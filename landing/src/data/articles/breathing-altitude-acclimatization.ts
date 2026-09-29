@@ -29,19 +29,19 @@ const article: Article = {
   content: `
 Breathing technique may help your body adapt to high altitude faster. On a Kilimanjaro expedition, 26 participants used [Wim Hof Method breathing](/articles/wim-hof-breathing-inflammation) — a form of controlled hyperventilation — to prevent or reduce the symptoms of acute mountain sickness, and researchers reported it may accelerate altitude acclimatization. The idea is physiologically plausible: deliberate deep breathing raises blood oxygen and shifts blood chemistry in ways that mimic part of the body's natural adaptation to thin air. This is promising rather than proven — a field observation, not a large controlled trial — but it points to breathing as a low-cost tool worth understanding if you head for high places.
 
-## What happens to your body at altitude
+## What happens to your body at high altitude?
 
 As you climb, the air thins and each breath delivers less oxygen. Your body responds by breathing faster and deeper, and over days it makes deeper adaptations — producing more red blood cells and adjusting blood chemistry. Until those adaptations catch up, many people experience acute mountain sickness (AMS): headache, nausea, fatigue, poor sleep and dizziness, usually above 2,500 metres. AMS is essentially your body lagging behind the altitude — the gap between how much oxygen you're getting and how much adaptation you've made.
 
 Anything that helps close that gap faster — safely — is valuable, because AMS can range from miserable to, in severe forms, dangerous.
 
-## What the Kilimanjaro observation found
+## Can breathing techniques help prevent altitude sickness?
 
-On a climb of Mount Kilimanjaro (5,895 m), 26 participants used Wim Hof Method breathing techniques as they ascended. The report indicated that this controlled-hyperventilation breathing helped prevent or reverse symptoms of acute mountain sickness, suggesting it may accelerate acclimatization to altitude.
+A report from Kilimanjaro suggests they may: on a climb of Mount Kilimanjaro (5,895 m), 26 participants used Wim Hof Method breathing techniques as they ascended. The report indicated that this controlled-hyperventilation breathing helped prevent or reverse symptoms of acute mountain sickness, suggesting it may accelerate acclimatization to altitude.
 
 The proposed mechanism is straightforward: the deep, forceful breathing temporarily raises oxygen saturation and lowers carbon dioxide, nudging blood chemistry (pH and oxygen delivery) in a direction that partly anticipates the body's slower natural adjustment. In effect, the breathing may give your physiology a head start on adapting to thin air. It's worth being clear about the evidence level: this is a field observation from an expedition, not a large randomized controlled trial, so it should be read as a promising lead rather than settled proof.
 
-## Breathing techniques used at altitude
+## Which breathing techniques are used at altitude?
 
 Two distinct breathing approaches matter in the mountains, and they do different jobs:
 

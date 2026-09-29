@@ -32,7 +32,7 @@ Naikan is a Japanese method of structured self-reflection — a kind of meditati
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## The three questions
+## What are the three Naikan questions?
 
 Naikan's entire method rests on reflecting, about a specific person or period, on three questions:
 
@@ -42,7 +42,7 @@ Naikan's entire method rests on reflecting, about a specific person or period, o
 
 Notably, there's no fourth question — "what troubles has this person caused *me*?" Its deliberate absence is the heart of the method. We spend enormous mental energy, often automatically, cataloguing how others have wronged or disappointed us. Naikan sets that habitual grievance-tracking aside and directs attention to what we've received, what we've given, and the trouble we've caused. This reorientation reliably surfaces a very different picture of our relationships and our lives.
 
-## Why the structure works
+## Why does Naikan's structure work?
 
 Naikan is powerful precisely *because* it's structured. Left to its own devices, self-reflection tends to loop through familiar grooves — grievances, worries, self-justification (the same [default-mode rumination](/articles/zen-koans-brain-cognition) other meditation research describes). Naikan interrupts that by imposing three specific channels for attention, all of which point toward recognition of support received and impact given.
 
@@ -52,7 +52,7 @@ The effect is a shift in perspective. Reflecting concretely on what you've recei
 
 Naikan is often mentioned alongside [Morita therapy](/articles/morita-therapy-tracking-paradox) as one of Japan's two homegrown psychotherapies, and they complement each other. Morita teaches acceptance of feelings as they are (*arugamama*) and redirection toward constructive action; Naikan restructures how you see your relationships and history through gratitude and responsibility. Where Morita addresses your relationship to your inner states, Naikan addresses your relationship to others and your past. Both, notably, work not by suppressing thought but by *reorganizing* attention — a distinctly Japanese contemplative approach that differs from the Western emphasis on either emptying the mind or challenging thoughts directly.
 
-## How to practice Naikan
+## How do you practice Naikan?
 
 You can do a simplified Naikan reflection on your own:
 

@@ -44,13 +44,13 @@ The findings are remarkably consistent across studies:
 
 Together they show forest bathing shifting the whole system: nervous system toward calm, stress hormones down, and even immune markers up.
 
-## Phytoncides: why the air itself matters
+## What are phytoncides, and why do they matter in forest bathing?
 
 The most distinctive finding is that part of the effect comes from what you *breathe*, not just what you see. Trees release volatile compounds called **phytoncides** — terpenes and similar molecules that plants emit to defend against microbes. Japanese research proposes that inhaling phytoncides calms the brain through the olfactory (smell) pathway, helping balance the autonomic nervous system, suppress stress-hormone release, and boost NK-cell activity.
 
 This is why forest bathing isn't just "outdoor exercise." Air analysis in the studied forests measured these tree-derived compounds directly, linking the chemistry of the forest air to the measured drop in stress. You're not only moving and relaxing — you're breathing a subtly medicinal atmosphere.
 
-## How to actually do shinrin-yoku
+## How do you practice forest bathing (shinrin-yoku)?
 
 Forest bathing is deliberately slow and sensory — the opposite of a workout:
 

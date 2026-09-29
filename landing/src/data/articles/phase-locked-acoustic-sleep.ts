@@ -44,7 +44,7 @@ For decades, sleep was treated as a black box—you closed your eyes and hoped f
 
 ---
 
-## The Logic: Compression & Quality
+## Why does boosting deep (slow-wave) sleep matter?
 
 **The Delta Motor:** During Deep Sleep, your brain's glymphatic system flushes out metabolic waste (beta-amyloid). Left uncleared, that residue is the [neural entropy](/articles/anti-entropy-neural-architecture) that slowly degrades cognitive architecture. By amplifying Delta waves, you accelerate this "Cellular Cleanup."
 

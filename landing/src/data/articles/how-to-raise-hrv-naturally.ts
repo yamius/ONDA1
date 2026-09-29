@@ -38,7 +38,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What HRV actually is (so the levers make sense)
+## Section 1: What is HRV?
 
 HRV is the tiny beat-to-beat variation in your pulse. Counterintuitively, *more* variation is better: it means your [parasympathetic](/glossary/parasympathetic-nervous-system) "rest" branch, carried by the [vagus nerve](/glossary/vagus-nerve), is active and your heart is responsive rather than locked into a rigid metronome. Low HRV tends to track stress, fatigue, poor sleep and under-recovery; higher HRV tracks a system with headroom.
 
@@ -60,9 +60,9 @@ None of these is a hack. They're the foundation, and no breathing app substitute
 
 ---
 
-## Section 3: The lever you can train directly — slow breathing
+## Section 3: What raises HRV the fastest?
 
-Here's the part most "raise your HRV" lists bury: **slow, paced breathing acutely raises HRV within minutes**, and practised regularly it can lift your resting baseline over time. It's the one lever that's both immediate and trainable.
+**Slow, paced breathing acutely raises HRV within minutes**, and practised regularly it can lift your resting baseline over time. It's the one lever that's both immediate and trainable.
 
 The mechanism is clean. Breathe slowly — long, with the exhale leading — and you stimulate the baroreflex and hand tone to the parasympathetic branch on each out-breath. Your heart rate rises on the inhale and falls on the exhale in a wide, organised swing. That swing *is* HRV, amplified on purpose. Do it daily and you're not just measuring HRV — you're [training the nervous system's latency](/articles/hrv-training-nervous-system-latency) to relax faster.
 
@@ -78,7 +78,7 @@ That's what ONDA is built for: it paces your breathing and shows your rhythm org
 
 ---
 
-## Section 5: A realistic plan
+## Section 5: What is a realistic plan to raise HRV?
 
 Stack the levers in order of leverage. **Protect sleep and its regularity first** — it's the biggest mover. **Cut evening alcohol, late caffeine and late meals.** **Train aerobically, and recover.** Then **add a few minutes of slow, exhale-led breathing daily**, ideally with feedback so you can see it work and improve your pace. Give it weeks, judge it by your own baseline trend, and let the immediate breathing win keep you motivated while the slow levers compound.
 

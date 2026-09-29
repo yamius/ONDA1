@@ -37,15 +37,17 @@ const article: Article = {
 
 ---
 
-## Section 1: How it works
+## Section 1: How does box breathing work?
 
-You can't consciously command your heart rate or your stress chemistry — but breathing is the one autonomic function you *can* drive manually, and it back-propagates to the rest of the system. Slow, paced breathing at around six breaths per minute shifts the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) ("rest-and-digest") branch, raises [heart-rate variability](/glossary/heart-rate-variability) and lowers arousal (Zaccaro 2018; Lehrer & Gevirtz 2014).
+Box breathing works by slowing your breath toward about six breaths per minute, which shifts you out of fight-or-flight. You can't consciously command your heart rate or your stress chemistry — but breathing is the one autonomic function you *can* drive manually, and it back-propagates to the rest of the system. Slow, paced breathing at around six breaths per minute shifts the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) ("rest-and-digest") branch, raises [heart-rate variability](/glossary/heart-rate-variability) and lowers arousal (Zaccaro 2018; Lehrer & Gevirtz 2014).
 
 Box breathing's equal 4-4-4-4 rhythm lands you near that rate, and the breath-holds add a deliberate, almost meditative structure that gives a busy mind something simple to track. The result: a fast, portable way to step out of fight-or-flight.
 
 ---
 
-## Section 2: When to use which pattern
+## Section 2: Should you use box breathing or 4-7-8?
+
+Use box breathing for steady focus under pressure and 4-7-8 as a stronger off-switch for sleep.
 
 - **Box (4-4-4-4)** — steady focus under pressure. Best before a stressful event, or to settle without making yourself sleepy. The held breaths build composure.
 - **4-7-8** — a stronger off-switch for sleep. The long hold and even longer exhale push your breathing rate right down and emphasise the calming out-breath.

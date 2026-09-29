@@ -50,9 +50,9 @@ const article: Article = {
 
 ---
 
-## The Architecture: Three Defense Layers
+## How does the brain clear waste during sleep?
 
-Defending against entropy is not a single intervention — it is a layered system with three interdependent components:
+The brain clears waste through nightly glymphatic flushing, supported by autophagy and a cool brain temperature — not a single intervention but a layered system with three interdependent components:
 
 **Layer 1 — Clearance Efficiency:** The higher your glymphatic throughput at night, the less metabolic sediment remains by morning. This prevents the cumulative micro-damage effect: each cleared night resets the baseline, each dirty run adds to the debt. Clearance efficiency is controlled by HRV (arterial pump pressure), sleep stage architecture (N3 duration), and sleep position (lateral outflow optimization).
 
@@ -62,9 +62,9 @@ Defending against entropy is not a single intervention — it is a layered syste
 
 ---
 
-## The Critical Error: Accumulated Technical Debt
+## What happens to your brain when you skip deep sleep?
 
-Skipping even one night of high-quality clearance is a form of **Technical Debt**:
+Skipping even one night of high-quality clearance reduces cognitive reserve, and over time it adds up as **Technical Debt**:
 
 **Short-term:** Reduced cognitive reserve. Latency in memory retrieval. Elevated synaptic noise floor. The system operates — but at reduced throughput.
 
@@ -74,9 +74,9 @@ The critical insight: neurodegeneration is not a disease that "strikes." It is a
 
 ---
 
-## ONDA Protocol: Executing the Purge
+## How can you improve your brain's overnight clearance?
 
-Three strict system overrides to minimize entropy accumulation:
+Three overrides improve overnight clearance — a 4-hour pre-sleep fast, a cool head, and evening vagus nerve stimulation:
 
 ### Override 1: The Fasting Window
 

@@ -47,9 +47,9 @@ const article: Article = {
 
 ---
 
-## Step 1: Identifying the Drift (Diagnostics)
+## Step 1: How do you know your body clock is off?
 
-Before performing a Hard Reset, you must measure the scale of the desync. In the ONDA ecosystem, we prioritize two primary sensors:
+Consistently low HRV on waking and midnight glucose spikes are the two primary signals — measure the scale of the desync before performing a Hard Reset. In the ONDA ecosystem, we prioritize two primary sensors:
 
 **HRV as a Stress Indicator:** If your HRV is consistently low upon waking, your system failed to "reboot" overnight. Your clock is stuck in High Performance mode, never entering Recovery.
 
@@ -59,9 +59,9 @@ The delta between your subjective fatigue and your biometric output reveals the 
 
 ---
 
-## Step 2: The Recalibration Protocol (Execution)
+## Step 2: How do you reset your circadian rhythm?
 
-To force a full system reflash, implement 72-hour strict adherence to three primary **Zeitgebers** (time-givers):
+Reset it with 72-hour strict adherence to three primary **Zeitgebers** (time-givers):
 
 ### Protocol 1: Light Injection (The Optical Patch)
 

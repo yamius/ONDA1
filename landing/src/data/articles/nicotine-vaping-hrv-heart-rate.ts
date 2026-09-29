@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Nicotine is a stimulant, full stop
+## Section 1: Does nicotine raise your heart rate?
 
 Whatever the delivery — cigarette, vape, pouch — nicotine acts as a **sympathomimetic**: it stimulates the sympathetic nervous system, releasing adrenaline-family signals that **raise heart rate and blood pressure.** That's the opposite of a relaxant's physiology. The subjective calm comes from relieving withdrawal and from ritual, not from any downregulation of the stress response — under the hood, the stress response is being *turned up.*
 
@@ -44,7 +44,7 @@ This is why the "it relaxes me" story is so sticky and so misleading: the felt e
 
 ---
 
-## Section 2: What it does to HRV
+## Section 2: How does nicotine affect HRV?
 
 Because nicotine pushes toward sympathetic dominance, it **reduces [heart-rate variability](/glossary/heart-rate-variability)** — the marker of parasympathetic, recovery-side tone. Higher heart rate, lower variability: the signature of a system tilted toward *go.* With cigarettes this comes bundled with all the other harms of combustion; with vaping the combustion is gone but the nicotine — and its autonomic effect — is not.
 
@@ -52,9 +52,9 @@ Vaping deserves its own note here. It tends to deliver nicotine not as a few dis
 
 ---
 
-## Section 3: The withdrawal wobble
+## Section 3: Does nicotine withdrawal affect your heart rhythm?
 
-There's a second pattern worth naming: nicotine's short half-life means regular users cycle through mini-withdrawals all day, each with its own autonomic turbulence — restlessness, a stress bump, a craving that reads as anxiety. The next hit smooths it, which cements the loop. From the outside it looks like the substance manages stress. From the inside of your data, it's often *creating* the very fluctuations it then relieves.
+Yes: nicotine's short half-life means regular users cycle through mini-withdrawals all day, each with its own autonomic turbulence — restlessness, a stress bump, a craving that reads as anxiety. The next hit smooths it, which cements the loop. From the outside it looks like the substance manages stress. From the inside of your data, it's often *creating* the very fluctuations it then relieves.
 
 ---
 

@@ -33,9 +33,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Mitochondrial Switch
+## Section 1: How does the body choose between sugar and fat for fuel?
 
-At the heart of this system is the mitochondrial switch. Its job is to determine the most efficient fuel for the current load.
+The mitochondrial switch at the heart of this system chooses: its job is to determine the most efficient fuel for the current load.
 
 ### High-Octane Mode (Glucose)
 Fast energy for peak cognitive bursts or explosive movement. Powerful, but leaves behind oxidative byproducts.
@@ -48,9 +48,9 @@ When glucose runs low, a flexible system transitions to fats with less of a perf
 
 ---
 
-## Section 2: Fuel Lock-In
+## Section 2: Why does the body lose the ability to burn fat?
 
-The modern human suffers from fuel lock-in. Due to a constant surplus of carbohydrates, the switch becomes rusted, and the body forgets how to access its fat stores.
+Due to a constant surplus of carbohydrates, the switch becomes rusted, and the body forgets how to access its fat stores — the fuel lock-in the modern human suffers from.
 
 ### Energy Crashes
 Sharp drops in cognitive ability two hours after eating. The primary grid collapses with no backup available.
@@ -65,7 +65,7 @@ High insulin levels create background static that interferes with the vagus nerv
 
 ---
 
-## Section 3: System Priming
+## Section 3: How do you restore metabolic flexibility?
 
 We restore metabolic flexibility by re-flashing the biochemical pathways.
 

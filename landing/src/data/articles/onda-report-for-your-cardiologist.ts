@@ -29,7 +29,7 @@ A cardiologist is the specialist most at home with heart-rate data — but they 
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
-## Why a cardiologist sees your data differently
+## How does a cardiologist look at your heart data?
 
 A GP asks *is this something or nothing?* A cardiologist, usually seeing you after a referral, asks narrower questions: *is the heart involved, how, and how much?* They think in terms of rhythm, rate, structure and response to effort — and they have tools a watch doesn't: ECGs, extended rhythm monitoring, heart ultrasound and exercise testing.
 
@@ -45,7 +45,7 @@ That changes what's useful. Your report is most valuable to a cardiologist as a 
 
 **Signals and your notes.** The dates when a measure left your range, and what you wrote at the time, let a cardiologist line up episodes with symptoms. "Palpitations on the evenings of the 4th, 9th and 15th, resting pulse higher that week" is far more useful than "I get palpitations sometimes."
 
-## What help a cardiologist can offer
+## How can a cardiologist help with what your watch picked up?
 
 **Choose the right rhythm test.** A watch that tracks pulse can't tell what kind of rhythm you're having. If your timeline shows symptoms coming and going, a cardiologist may use an ECG, a Holter monitor (continuous ECG over a day or more) or a longer-term event monitor to actually capture the rhythm during an episode. Your data helps them judge how often episodes happen — and therefore how long monitoring needs to be.
 
@@ -69,7 +69,7 @@ This matters more with a cardiologist than anywhere else:
 
 If you have chest pain, fainting, a very fast or irregular heartbeat with feeling unwell, or severe breathlessness, seek emergency care. Don't check your app first.
 
-## How to prepare for the appointment
+## How should you prepare for a cardiologist appointment?
 
 - **Bring your one-page report**, for the period around your symptoms.
 - **List episodes with dates and times**, what you felt, how long it lasted, what you were doing.

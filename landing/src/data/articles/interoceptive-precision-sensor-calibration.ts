@@ -34,9 +34,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Predictive Engine
+## Section 1: How does the brain sense what is happening inside the body?
 
-The brain functions as a Predictive Engine. It doesn't passively receive signals — it builds a model of the body's state and continuously tests it against incoming data.
+The brain senses the body by prediction: it functions as a Predictive Engine. It doesn't passively receive signals — it builds a model of the body's state and continuously tests it against incoming data.
 
 **Top-Down Prediction:** The brain expects a certain state — for example, "I am currently under high stress."
 
@@ -53,7 +53,7 @@ The goal of interoceptive training is to reduce prediction error — not by supp
 
 ---
 
-## Section 2: Sensor Drift
+## Section 2: Why do people lose touch with their body's signals?
 
 Modern lifestyles cause **Sensor Drift** — a state where internal sensors begin to provide false readings.
 
@@ -99,7 +99,7 @@ ONDA updates the interoceptive firmware through directed attention and data-matc
 
 ---
 
-## Section 4: The Intuitive Operating System
+## Section 4: What are the benefits of better interoception?
 
 Developing Interoceptive Precision delivers measurable system upgrades:
 

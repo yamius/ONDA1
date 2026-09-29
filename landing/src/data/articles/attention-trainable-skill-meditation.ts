@@ -30,7 +30,7 @@ Attention is not a fixed trait you're born with — it's a trainable skill, and 
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## The novice-vs-experienced evidence
+## Does meditation really train attention?
 
 The strongest case that attention is trainable comes from comparing beginners to seasoned practitioners — because if the brain differences grow with practice, the skill is being *built*, not just possessed by naturally focused people. And that's exactly what the research repeatedly shows:
 
@@ -47,13 +47,13 @@ There's a widespread, uneasy sense that our attention spans are shrinking — fr
 
 This reframes meditation not as a spiritual luxury but as **attention training** — deliberate reps for a capacity modern life is actively degrading. You're going to train your attention one way or another; meditation is choosing to train it toward focus rather than fragmentation.
 
-## Attention as reps, not talent
+## Is focus a talent or something you can practice?
 
 The most freeing implication is that focus isn't about talent or willpower — it's about practice. Every time you notice your mind has wandered during meditation and gently return it to the breath, that *return* is one repetition of the attention "muscle." It can feel like failure ("my mind wandered again"), but noticing and returning is exactly the exercise — the rep that builds the skill. Experienced meditators aren't people whose minds never wander; they're people who've done enough reps that returning has become strong and quick.
 
 This means anyone can improve, regardless of starting point. A scattered beginner isn't disqualified — they're at rep one. The brain research guarantees the trajectory is real: keep doing the reps, and the measurable signatures of trained attention develop.
 
-## How to train attention
+## How do you train your attention with meditation?
 
 - **Practice returning, not staying.** The goal isn't a blank, wander-free mind — it's noticing wandering and returning. Each return is a rep.
 - **Start short and consistent.** A few minutes daily builds the skill faster than occasional long sessions — [consistency drives the changes](/articles/how-much-meditation-do-you-need).

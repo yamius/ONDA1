@@ -45,21 +45,21 @@ Strip away the hype and a solid, modest core remains:
 
 All three are real. All three are **short-lived**. They buy you a window of calm and recovery, which is genuinely valuable — just not the same as a structural change.
 
-## The nuance most apps skip
+## Does a high HRV during breathing mean your nervous system is healthier?
 
-Here's a subtlety Dutch physiotherapy sources are careful about, and most wellness apps gloss over: **a high HRV during a breathing exercise doesn't automatically mean your nervous system has become structurally healthier.** Part of that spike simply comes from the breathing temporarily imposing rhythm on your heartbeat. It's a real effect, but it's the exercise doing it live — not necessarily proof of lasting change.
+Not automatically — a subtlety Dutch physiotherapy sources are careful about, and most wellness apps gloss over: **a high HRV during a breathing exercise doesn't automatically mean your nervous system has become structurally healthier.** Part of that spike simply comes from the breathing temporarily imposing rhythm on your heartbeat. It's a real effect, but it's the exercise doing it live — not necessarily proof of lasting change.
 
 There's an even finer point: the popular shorthand "HRV equals vagus activity" isn't fully justified. At slow breathing rates, the breakdown of acetylcholine (the vagal messenger) is more complete, which actually reduces its moment-to-moment effect on respiratory sinus arrhythmia — and the sympathetic system may influence the pattern more than the simple story suggests. HRV is a useful window into autonomic balance, but it's not a clean one-to-one readout of "vagus tone."
 
-## Higher HRV isn't always better
+## Is a higher HRV always better?
 
-One more honest complication, and it cuts against the usual "more HRV = healthier" message. HRV is not a simple "higher is better" score. In some contexts an unusually **high** HRV is not a good sign: recent sleep research found that certain cardiovascular and endocrine conditions were associated with *elevated* overnight HRV, and that nocturnal HRV patterns can flag early signs of problems like stroke or depression rather than just signalling great health. Separate research makes a related point from another angle — in one study HRV wasn't a sensitive enough marker to distinguish personality or anxiety traits at all, because the differences were too subtle.
+No — HRV is not a simple "higher is better" score, an honest complication that cuts against the usual "more HRV = healthier" message. In some contexts an unusually **high** HRV is not a good sign: recent sleep research found that certain cardiovascular and endocrine conditions were associated with *elevated* overnight HRV, and that nocturnal HRV patterns can flag early signs of problems like stroke or depression rather than just signalling great health. Separate research makes a related point from another angle — in one study HRV wasn't a sensitive enough marker to distinguish personality or anxiety traits at all, because the differences were too subtle.
 
 The takeaway isn't "ignore HRV." It's that HRV is a rich, context-dependent signal, not a leaderboard. What's meaningful is [your own pattern](/articles/normal-hrv-by-age) and its stability over time — not chasing the highest possible number, and not assuming a high reading always means you're winning.
 
-## So is it worth doing? Yes — for what it is
+## Are breathing exercises and cold exposure worth doing?
 
-None of this means breathing and cold are pointless. A short, repeatable moment of calm on demand is a real tool: it interrupts a stress spike, helps you wind down, and over consistent practice can support better regulation. The honest framing is simply this — **you're getting reliable short-term shifts, not a permanent nervous-system rebuild.** Practices that promise the latter are overselling; practices used for the former deliver exactly what they should. For the fuller menu of what genuinely moves HRV, see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally).
+Yes — none of this means breathing and cold are pointless. A short, repeatable moment of calm on demand is a real tool: it interrupts a stress spike, helps you wind down, and over consistent practice can support better regulation. The honest framing is simply this — **you're getting reliable short-term shifts, not a permanent nervous-system rebuild.** Practices that promise the latter are overselling; practices used for the former deliver exactly what they should. For the fuller menu of what genuinely moves HRV, see [how to raise HRV naturally](/articles/how-to-raise-hrv-naturally).
 
 This matters for how you judge your own results. If your HRV climbs during a session and settles afterward, that's not failure — that's the technique working as it actually works. Lasting change, if it comes, shows up slowly as a drifting baseline over weeks, not as one dramatic reading.
 

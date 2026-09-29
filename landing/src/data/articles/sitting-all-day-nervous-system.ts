@@ -35,9 +35,9 @@ const article: Article = {
 
 ---
 
-## Section 1: Sitting is a signal, not just a posture
+## Section 1: Does sitting all day affect your nervous system?
 
-Let's kill the hype first: sitting isn't poison, and "sitting is the new smoking" is an overstatement. But prolonged, unbroken sedentary time does register in your physiology, and one of the places it shows is autonomic balance. Long stretches without movement are associated with **reduced [heart-rate variability](/glossary/heart-rate-variability)** and a shift toward [sympathetic](/glossary/sympathetic-nervous-system) dominance — the same low-grade activation pattern you'd rather not be marinating in for eight hours a day.
+Yes, though less dramatically than the hype suggests: sitting isn't poison, and "sitting is the new smoking" is an overstatement. But prolonged, unbroken sedentary time does register in your physiology, and one of the places it shows is autonomic balance. Long stretches without movement are associated with **reduced [heart-rate variability](/glossary/heart-rate-variability)** and a shift toward [sympathetic](/glossary/sympathetic-nervous-system) dominance — the same low-grade activation pattern you'd rather not be marinating in for eight hours a day.
 
 The key word is *unbroken*. Your body reads continuous stillness differently from the same amount of sitting broken up by movement. The dose that matters is the length of the uninterrupted block.
 
@@ -51,7 +51,7 @@ Stack a screen on top and it compounds — long focused sitting is also where [s
 
 ---
 
-## Section 3: The fix is small and frequent, not big and occasional
+## Section 3: How do you undo the effects of sitting all day?
 
 Here's the encouraging part: the antidote to unbroken sitting isn't a marathon at the gym — it's *breaking the block.* Short, frequent interruptions — standing, a two-minute walk, a set of movements every half hour or so — blunt most of the autonomic cost, because they restore the movement input your system is missing. Frequency beats intensity here. A gym session at 6pm is great for other reasons, but it doesn't undo eight hours of uninterrupted stillness the way a movement break every half hour does.
 

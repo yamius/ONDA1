@@ -29,13 +29,13 @@ const article: Article = {
   content: `
 In France, cardiac coherence — slow breathing that raises heart rate variability (HRV) — is used in clinical practice for chronic insomnia, and the logic is precise: insomnia is largely a state of nervous-system "hyperarousal," and cardiac coherence directly lowers that arousal. Rather than treating insomnia as simply "not sleepy enough," this approach treats it as too much activation — a sympathetic nervous system stuck in "on." Because HRV tracks that hyperarousal, and slow coherent breathing measurably shifts you toward parasympathetic calm, it targets the mechanism that keeps you awake instead of trying to force sleep.
 
-## Insomnia as hyperarousal, not just sleeplessness
+## Is insomnia really a problem of hyperarousal?
 
-The key idea is a reframe. Chronic insomnia is often less about failing to feel sleepy and more about persistent physiological and emotional over-activation: the stress-coping systems stay switched on, anxiety about sleep builds, and the sympathetic ("fight or flight") branch dominates when it should be quieting. That is why so many people with insomnia feel exhausted yet wired — the body is tired, but the nervous system won't stand down.
+Chronic insomnia is often less about failing to feel sleepy and more about persistent physiological and emotional over-activation: the stress-coping systems stay switched on, anxiety about sleep builds, and the sympathetic ("fight or flight") branch dominates when it should be quieting. That is why so many people with insomnia feel exhausted yet wired — the body is tired, but the nervous system won't stand down.
 
 Seen this way, the goal isn't to force sleep but to **lower arousal** so that sleep can arrive on its own. HRV plays a double role here: it is a *marker* of the sympathetic hyperarousal seen in insomnia, and, through biofeedback, a *lever* to reduce it.
 
-## A clinical tradition, not a wellness trend
+## Where does cardiac coherence for insomnia come from?
 
 In France, cardiac coherence grew out of a clinical biofeedback tradition in neurophysiology rather than out of the wellness industry. French clinicians built insomnia protocols on two ideas: that HRV reflects sympathetic hyperarousal in people who sleep badly, and that biofeedback can reduce the emotional activation that fuels it. The result is a defined technique delivered by trained practitioners — not just "breathe to relax," but a structured practice with a rationale. The evidence base is still mostly clinical experience and small studies, so treat it as a well-reasoned supportive tool rather than a proven cure.
 
@@ -48,7 +48,7 @@ In France, cardiac coherence grew out of a clinical biofeedback tradition in neu
 
 Because it lowers arousal rather than forcing sleep, it sidesteps the central trap of insomnia: *trying* to sleep creates the very tension that prevents it.
 
-## How to practice — the 365 method, pointed at the night
+## How do you practice cardiac coherence for insomnia?
 
 The standard French protocol is the [365 method](/articles/cardiac-coherence-365-method): three times a day, about six breaths per minute, five minutes. For insomnia:
 

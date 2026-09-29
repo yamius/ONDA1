@@ -49,7 +49,7 @@ const article: Article = {
 
 ---
 
-## The Hack: Overriding the Control Loop
+## Why does breathing at 6 breaths per minute affect blood pressure?
 
 Breathing at 0.1 Hz — exactly 6 cycles per minute — causes your respiratory rhythm to phase-lock with the natural oscillatory frequency of your blood pressure: the **Mayer Waves**.
 
@@ -59,7 +59,9 @@ Breathing at 0.1 Hz — exactly 6 cycles per minute — causes your respiratory 
 
 ---
 
-## System Restore: 3 Technical Benefits
+## What are the benefits of 0.1 Hz resonance breathing?
+
+The three benefits are blood-pressure leveling, stronger vagal tone, and brain-heart coherence.
 
 ### Benefit 1 — Blood Pressure Auto-Leveling
 

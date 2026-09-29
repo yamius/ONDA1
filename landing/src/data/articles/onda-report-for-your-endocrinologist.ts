@@ -29,7 +29,7 @@ Your hormones set the pace your heart runs at. Thyroid hormone, in particular, w
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
-## The thyroid: a dial on your resting heart rate
+## How does your thyroid affect your resting heart rate?
 
 Thyroid hormone raises the body's overall metabolic rate, and the heart is one of the first organs to respond.
 
@@ -39,9 +39,9 @@ Thyroid hormone raises the body's overall metabolic rate, and the heart is one o
 
 A resting heart rate that climbs steadily over weeks without an obvious reason — no illness, no new training, no stressful period — is exactly the kind of change worth mentioning to a doctor. It doesn't mean you have a thyroid problem; many things raise heart rate. But combined with symptoms, it can be the prompt to check. Thyroid problems are common and very treatable, and they're diagnosed with a simple blood test.
 
-## Diabetes: when HRV connects to real clinical testing
+## Does HRV matter if you have diabetes?
 
-Most of the time, consumer HRV has little role in medicine. Diabetes is one of the exceptions where HRV-type measures matter clinically.
+Yes — diabetes is one of the exceptions where HRV-type measures matter clinically, even though most of the time consumer HRV has little role in medicine.
 
 Over years, high blood sugar can damage the autonomic nerves that control the heart — a complication called **cardiovascular autonomic neuropathy**. One of its early features is **reduced heart rate variability**: the heart's beat-to-beat flexibility shrinks because its nervous control is weakening. Later signs can include a resting heart rate that stays unusually high and dizziness on standing.
 
@@ -57,7 +57,7 @@ Doctors test for it with **cardiovascular autonomic reflex tests** — heart rat
 
 **Your notes.** Symptoms, weight changes, new medications, illness, and — for diabetes — anything notable about glucose control, entered with dates.
 
-## What help an endocrinologist can offer
+## How can an endocrinologist help with your heart rate data?
 
 **Confirm with blood tests.** Thyroid function is diagnosed with blood tests (such as TSH and thyroid hormone levels); diabetes control is assessed with glucose and HbA1c. Your data can point to *when* to test and what changed; the tests say *what* is happening.
 

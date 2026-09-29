@@ -27,9 +27,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Predictive Engine
+## Section 1: How does the brain keep up with reality in real time?
 
-To minimize latency, the brain uses predictive coding. It doesn't wait for all packets to arrive; it predicts reality.
+The brain keeps up by using predictive coding to minimize latency. It doesn't wait for all packets to arrive; it predicts reality.
 
 ### Feed-Forward Stream
 Incoming raw data from sensors.
@@ -59,9 +59,9 @@ Unstable reaction speeds. One moment you are sharp; the next, the system hangs o
 
 ---
 
-## Section 3: Latency Overclocking
+## Section 3: How can you speed up your reaction time?
 
-We reduce system ping through hardware and software optimization.
+You reduce biological latency through hardware and software optimization — myelin maintenance, alpha-sync and error margin reduction.
 
 ### Myelin Maintenance
 Myelin is the insulation of your cables. The denser it is, the faster the impulse travels. We use specific nutrient protocols and sleep cycles to patch this insulation.

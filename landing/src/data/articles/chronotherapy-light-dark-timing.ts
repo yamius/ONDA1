@@ -35,17 +35,17 @@ Your circadian rhythm — the roughly 24-hour internal clock set mainly by light
 
 Chronotherapy turns that relationship into treatment. If a disturbed clock worsens mood, then *correcting the clock* — with precisely timed light, dark, or sleep changes — can improve it. German and Swiss chronobiology has developed this into structured clinical protocols with good antidepressant and mood-stabilizing effects.
 
-## Light therapy — the well-known one
+## What is bright light therapy used for?
 
 Bright light therapy is the first-choice treatment for seasonal affective disorder (SAD, or winter depression), and it also helps some non-seasonal depression and sleep disorders. The mechanism is direct: bright light in the morning, hitting specialized light-sensitive cells in the eye, advances and stabilizes the body clock and suppresses melatonin, producing an activating, mood-lifting effect. Timing is everything — the same light at the wrong circadian moment can shift the clock the wrong way, which is why clinicians calculate exposure relative to a person's own rhythm. The everyday, non-clinical version is simply [getting bright morning light and dimming the evening](/articles/circadian-lighting-dark-therapy).
 
-## Wake therapy — the surprising one
+## How does wake therapy work for depression?
 
-Here's the counterintuitive part. *Wake therapy* — deliberately staying awake for a night under clinical supervision — can produce a rapid antidepressant effect, sometimes within hours, in people with depression. It sounds backwards: sleep deprivation usually harms mood. But in depression, a single controlled night without sleep can reset something in the disturbed circadian and sleep-homeostatic system, lifting mood quickly. The effect is often fragile — a night of recovery sleep can undo it — which is why it's combined with light therapy and a sleep-phase advance into "triple chronotherapy" to make the improvement stick. **This is strictly a clinical intervention, done under supervision — not something to attempt on your own** — but it's a vivid demonstration of how powerfully sleep timing influences mood.
+*Wake therapy* — deliberately staying awake for a night under clinical supervision — can produce a rapid antidepressant effect, sometimes within hours, in people with depression. It sounds backwards: sleep deprivation usually harms mood. But in depression, a single controlled night without sleep can reset something in the disturbed circadian and sleep-homeostatic system, lifting mood quickly. The effect is often fragile — a night of recovery sleep can undo it — which is why it's combined with light therapy and a sleep-phase advance into "triple chronotherapy" to make the improvement stick. **This is strictly a clinical intervention, done under supervision — not something to attempt on your own** — but it's a vivid demonstration of how powerfully sleep timing influences mood.
 
-## Dark therapy and timing
+## What is dark therapy?
 
-The mirror image of light therapy is *dark therapy*: extended darkness (or blocking blue light) used to calm mania and help stop "rapid cycling" — rapid switching between depression and mania in bipolar disorder. And beyond light and dark, chronotherapy includes shifting the sleep phase (moving bedtime and wake time to realign the clock) and interpersonal social rhythm therapy, which stabilizes daily social timekeepers — regular meals, activity, and sleep — to prevent mood episodes. The common thread is that *when* things happen, not just what, is treated as medicine.
+*Dark therapy* is the mirror image of light therapy: extended darkness (or blocking blue light) used to calm mania and help stop "rapid cycling" — rapid switching between depression and mania in bipolar disorder. And beyond light and dark, chronotherapy includes shifting the sleep phase (moving bedtime and wake time to realign the clock) and interpersonal social rhythm therapy, which stabilizes daily social timekeepers — regular meals, activity, and sleep — to prevent mood episodes. The common thread is that *when* things happen, not just what, is treated as medicine.
 
 ## What this means for you
 

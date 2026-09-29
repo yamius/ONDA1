@@ -50,13 +50,13 @@ Your dopamine system has a finite capacity for peak arousal. Frequent 'Stacking'
 
 ---
 
-## The Baseline vs. The Spike
+## What is your dopamine baseline?
 
-In the ONDA model, your **dopamine baseline** is your 'Idle Power.' It determines your daily drive and mood. A 'Spike' (from a notification or sugar) provides a temporary 'Overclock,' but it is always followed by a 'Refractory Period.' If you stack spikes, your system aggressively lowers the baseline to prevent 'Circuit Overheat,' leaving you in a state of chronic fatigue. This is the core of **receptor downregulation**—your brain's protective response to overstimulation.
+Your **dopamine baseline** is your 'Idle Power': it determines your daily drive and mood. A 'Spike' (from a notification or sugar) provides a temporary 'Overclock,' but it is always followed by a 'Refractory Period.' If you stack spikes, your system aggressively lowers the baseline to prevent 'Circuit Overheat,' leaving you in a state of chronic fatigue. This is the core of **receptor downregulation**—your brain's protective response to overstimulation.
 
 ---
 
-## Glutamate Overload
+## What happens in your brain when you stack stimuli?
 
 When you stack stimuli, you trigger a massive release of Glutamate, the brain's primary excitatory neurotransmitter. Without sufficient 'Cooling' (GABA), this leads to **glutamate excitotoxicity**—a 'Storm' that causes neural noise, anxiety, and the inability to focus on a single task. Your 'Processor' is spinning at 100%, but no useful code is being written. **Biohacking focus** requires taming this storm.
 

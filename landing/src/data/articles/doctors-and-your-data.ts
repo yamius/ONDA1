@@ -86,7 +86,7 @@ In most healthcare systems, the GP is the right first step: they see your whole 
 **Rehabilitation team.** Recovery comes in steps and setbacks — and the day after an effort tells more than the day of.
 → **[Recovery Isn't a Straight Line](/articles/onda-report-for-your-rehabilitation-team)**
 
-## What every doctor has in common
+## What makes your health data useful to any doctor?
 
 Whoever you see, the same rules make your data useful:
 

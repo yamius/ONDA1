@@ -32,7 +32,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The half-life problem
+## Section 1: How long does caffeine stay in your system?
 
 Caffeine has a half-life of roughly **5–6 hours** — meaning half the dose is still in your bloodstream that long after you drink it, and a quarter is still there 10–12 hours later. A 2 p.m. coffee can leave a meaningful dose circulating at bedtime.
 
@@ -40,9 +40,9 @@ That residual caffeine doesn't always stop you falling asleep — it quietly ste
 
 ---
 
-## Section 2: The other clock — cortisol
+## Section 2: When should you drink your first coffee of the day?
 
-Caffeine also interacts with your [circadian rhythm](/glossary/circadian-rhythm). Your natural [cortisol](/glossary/cortisol) wake-up pulse peaks in the first hour after waking, so caffeine the instant you rise is partly wasted — and trains tolerance. Delaying your first cup 60–90 minutes lets cortisol do its job, then hands off to caffeine as it dips.
+Delay your first cup 60–90 minutes after waking, because caffeine also interacts with your [circadian rhythm](/glossary/circadian-rhythm). Your natural [cortisol](/glossary/cortisol) wake-up pulse peaks in the first hour after waking, so caffeine the instant you rise is partly wasted — and trains tolerance. Delaying your first cup 60–90 minutes lets cortisol do its job, then hands off to caffeine as it dips.
 
 ---
 

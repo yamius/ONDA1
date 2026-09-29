@@ -37,9 +37,9 @@ The biggest obstacle to sticking with meditation is that it can feel like nothin
 
 That shift — from "trust the process" to "the process leaves marks you can measure" — is what makes meditation trainable like a skill. Just as you'd track strength gains in the gym, the effects of meditation show up in gray matter, white matter, stress hormones, and heart rate variability (HRV). You can't feel your gray matter grow, but you can see the downstream signs.
 
-## The timeline of measurable change
+## How fast does meditation change the brain?
 
-The research reveals a surprisingly quick progression:
+Faster than most people expect — the research reveals a surprisingly quick progression:
 
 - **Within 2–4 weeks — white matter changes.** Randomized controlled trials found changes in the white matter surrounding the anterior and posterior cingulate cortex — brain regions central to attention and self-regulation — after just 2 to 4 weeks, following only 5 to 10 hours of mindfulness training. These changes correlated with improved emotional states.
 - **Around 10 hours — gray matter growth.** A randomized study found that roughly 10 hours of mindfulness training increased gray matter volume in the posterior cingulate cortex, a key hub for self-awareness and perspective.
@@ -47,15 +47,15 @@ The research reveals a surprisingly quick progression:
 
 The pattern is consistent: meaningful, measurable adaptation begins within weeks, not years — provided you actually practice.
 
-## Practice time predicts results — the dose-response
+## Does meditating more lead to bigger results?
 
 One of the most useful findings for anyone starting out is that the amount you practice tends to predict how much you benefit. Studies designed to test "dose-response" effects hypothesize that larger doses of meditation training yield larger effects, and research on cellular markers has found that the total time spent practicing correlates with the degree of biological change. In plain terms: this is trainable, and consistency is the lever — [how much you actually need](/articles/how-much-meditation-do-you-need) is less than most people think.
 
 This is empowering rather than discouraging. It means progress isn't random or purely a matter of talent; it responds to the work you put in, like any trainable skill.
 
-## Why seeing progress matters
+## Why do most people quit meditation?
 
-Here's the practical heart of it. The reason most people quit meditation is the absence of visible feedback — nothing seems to change, so motivation fades. But we now know change *is* happening; the problem is you can't feel it directly. This is exactly where objective measurement helps. If you can see *some* signal of your nervous system adapting — your HRV trending up, your resting heart rate settling, your response to a [calming breath session](/articles/coherent-breathing-guide) — you get the feedback loop that keeps you practicing long enough for the deeper changes to accrue.
+Most people quit meditation because of the absence of visible feedback — nothing seems to change, so motivation fades. But we now know change *is* happening; the problem is you can't feel it directly. This is exactly where objective measurement helps. If you can see *some* signal of your nervous system adapting — your HRV trending up, your resting heart rate settling, your response to a [calming breath session](/articles/coherent-breathing-guide) — you get the feedback loop that keeps you practicing long enough for the deeper changes to accrue.
 
 Meditation with visible progress isn't just more satisfying; it's more likely to actually work, because it solves the adherence problem that undermines silent, feedback-free practice — which is exactly why [measuring your progress](/articles/measuring-meditation-progress) matters.
 

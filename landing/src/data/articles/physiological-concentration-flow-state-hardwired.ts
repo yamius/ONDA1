@@ -27,9 +27,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Cognitive Triad
+## Section 1: Which brain chemicals drive focus?
 
-To enter FOCUS_LOCKED mode, the brain deploys three protocols at once.
+Focus runs on three brain chemicals at once: norepinephrine (arousal), acetylcholine (selection) and dopamine (reward).
 
 ### Arousal (Norepinephrine)
 
@@ -45,7 +45,7 @@ This is the fuel for persistence. Dopamine signals that the system is moving in 
 
 ---
 
-## Section 2: Diffuse Attention
+## Section 2: Why does concentration fall apart?
 
 When physiology is compromised, the focus lens becomes opaque and attention spreads across the system.
 

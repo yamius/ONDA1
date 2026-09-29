@@ -45,13 +45,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: THE PHOTIC RECEPTOR GAP ]
+## Which eye cells tell your body clock that it's daytime?
 
 Inside your retina, a specialized set of receptors (mRGCs) detects blue light to signal the Suprachiasmatic Nucleus (SCN)—the master clock of your CPU. When these receptors are hit by high-frequency blue light after sunset, the system fails to initiate the MELATONIN_UPLOAD sequence. This leads to fragmented sleep and systemic 'Clock Drift.'
 
 ---
 
-## [ SECTION 2: DARK THERAPY — THE SYSTEM COOL-DOWN ]
+## What is dark therapy?
 
 Dark Therapy is the intentional restriction of short-wavelength light to allow for complete neural recovery. By creating a 'Photic Firewall' in the evening, you protect the brain's ability to clear metabolic waste through the Glymphatic System. Without a period of true biological darkness, the hardware never fully enters 'Deep Sleep' mode.
 

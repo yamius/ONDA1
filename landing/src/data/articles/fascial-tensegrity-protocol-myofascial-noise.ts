@@ -25,7 +25,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The Logic — Clearing Physical Compression
+## Section 1: What goes wrong when your fascia locks up?
 
 Three failure modes appear when the matrix locks up.
 

@@ -37,7 +37,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The spike — cold shock is a sympathetic alarm
+## Section 1: What does cold shock do to your body?
 
 Cold hitting the skin triggers the **cold-shock response**: an immediate [sympathetic](/glossary/sympathetic-nervous-system) surge. Heart rate jumps, blood vessels clamp, and — most importantly — you gasp. That involuntary gasp and the rapid breathing that follows are the dangerous part of cold exposure, because a gasp underwater is how cold water kills. On dry land in a shower it's harmless, but it's the same reflex: the body treating cold as a threat and flooding the system with *go*.
 
@@ -45,15 +45,15 @@ This is real stress, deliberately chosen. Which is exactly what makes it trainab
 
 ---
 
-## Section 2: The rebound — parasympathetic overcorrection
+## Section 2: How does cold exposure activate the vagus nerve?
 
-Here's the part that matters. After the spike, as you stay in the cold and especially once you come out, the body swings the other way: the [parasympathetic](/glossary/parasympathetic-nervous-system) branch re-engages, often strongly. Cold-water immersion has been shown to increase vagal, parasympathetic activity — the [vagus nerve](/glossary/vagus-nerve) reasserting control, heart rate settling, [variability](/glossary/heart-rate-variability) rising. That's the source of the clear-headed calm afterward: not the cold itself, but the vagal rebound the cold provokes.
+After the spike, as you stay in the cold and especially once you come out, the body swings the other way: the [parasympathetic](/glossary/parasympathetic-nervous-system) branch re-engages, often strongly. Cold-water immersion has been shown to increase vagal, parasympathetic activity — the [vagus nerve](/glossary/vagus-nerve) reasserting control, heart rate settling, [variability](/glossary/heart-rate-variability) rising. That's the source of the clear-headed calm afterward: not the cold itself, but the vagal rebound the cold provokes.
 
 You've essentially forced your nervous system through a full stress-and-recovery cycle in a few minutes — and every rep trains the recovery.
 
 ---
 
-## Section 3: The breath is the control knob
+## Section 3: How should you breathe during cold exposure?
 
 The whole practice hinges on one thing: **controlling the gasp.** The cold's power over you lives in that panicked first breath. If you can meet the water and keep your breathing slow and deliberate instead of gasping, you stay ahead of the cold-shock response — you keep the [sympathetic](/glossary/sympathetic-nervous-system) spike from bootstrapping into panic, and you steer straight toward the parasympathetic rebound.
 

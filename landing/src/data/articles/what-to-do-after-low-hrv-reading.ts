@@ -45,7 +45,7 @@ The rule that matters: **a single value is nearly meaningless; the trend against
 
 ---
 
-## Section 2: What a genuinely low stretch is telling you
+## Section 2: What does a consistently low HRV mean?
 
 When your HRV really is depressed for a few days, it's your autonomic nervous system reporting **load** — not disease. The usual, honest suspects:
 
@@ -59,7 +59,7 @@ It's a "your body is carrying something — ease up and recover" signal, not a "
 
 ---
 
-## Section 3: What to actually do about it
+## Section 3: What should you do when your HRV is low?
 
 The response to a low HRV stretch is the same short list that raises HRV in general, applied *now*: protect tonight's sleep, skip the evening drink, hydrate, and pull the training load back from hammer to easy. Let recovery happen instead of forcing through it — a low reading is your cue to bank a rest day, not to prove something.
 

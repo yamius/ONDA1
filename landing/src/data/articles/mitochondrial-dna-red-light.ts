@@ -44,9 +44,9 @@ Mitochondria are more than mere "power plants." A key step in cellular energy pr
 
 ---
 
-## The Logic: Deep Dive
+## How does red light affect mitochondrial energy?
 
-Why does light drive energy? Within the mitochondria, ATP Synthase is a nanomotor that rotates at speeds up to 9,000 RPM. This motor is submerged in mitochondrial water.
+Near-infrared light is absorbed in the mitochondria, where energy production depends on a spinning motor: within the mitochondria, ATP Synthase is a nanomotor that rotates at speeds up to 9,000 RPM. This motor is submerged in mitochondrial water.
 
 **Structured Water (EZ Water) — speculative:** A fringe hypothesis (associated with Gerald Pollack) proposes that water near membranes can form a "fourth phase." This is not accepted mainstream biophysics; we include it only as a contested idea, not a mechanism we rely on.
 

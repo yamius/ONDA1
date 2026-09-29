@@ -28,13 +28,13 @@ const article: Article = {
   content: `
 Bhastrika pranayama — "bellows breath," a vigorous yogic breathing technique — measurably reduces anxiety and changes how the brain's emotion centers work. In a randomized controlled trial using functional MRI, four weeks of Bhastrika practice significantly decreased anxiety and negative mood, and altered activity in the brain regions that process emotion: the amygdala (the brain's threat detector), the anterior cingulate, the anterior insula, and the prefrontal cortex. That's notable because it shows a breathing technique reaching beyond the heart and lungs into the neural circuitry of emotion itself.
 
-## What Bhastrika is
+## What is Bhastrika breathing?
 
 Bhastrika, or bellows breath, is a fast, forceful pranayama: active, powerful inhalations and exhalations that move air like a blacksmith's bellows. Unlike slow calming breathwork, it's an energizing technique that raises heart rate and sympathetic ("fight or flight") activity in the moment — it belongs to the fast family described in [fast vs slow pranayama](/articles/fast-vs-slow-pranayama). That makes the anxiety-reducing result over time especially interesting: a style that is stimulating during practice nonetheless produced calmer emotional processing across weeks of training.
 
-## The brain-imaging trial
+## Does Bhastrika breathing reduce anxiety?
 
-Most breathing research measures the heart and hormones. This study looked at the brain directly. In a randomized controlled trial, healthy young adults were assessed with functional MRI at baseline and again after four weeks of Bhastrika practice, using both an emotion-processing task and resting-state scans.
+In a randomized brain-imaging trial, four weeks of Bhastrika significantly reduced anxiety and negative affect. Most breathing research measures the heart and hormones. This study looked at the brain directly. In a randomized controlled trial, healthy young adults were assessed with functional MRI at baseline and again after four weeks of Bhastrika practice, using both an emotion-processing task and resting-state scans.
 
 The results showed up on two levels. Psychologically, the practice significantly reduced anxiety and negative affect. Neurologically, it modulated activity in the brain's emotion-processing hubs — most notably the **amygdala** (which drives fear and threat responses), along with the **anterior cingulate cortex**, **anterior insula**, and **prefrontal cortex**, regions that together govern how you perceive, regulate, and respond to emotion.
 
@@ -46,9 +46,9 @@ The amygdala is central to the anxiety response — when it's overactive, the wo
 
 It also fits a broader pattern. Slow pranayama calms through the vagus nerve and baroreflex; [humming breath](/articles/humming-breath-vagus) stimulates the vagus mechanically; and here, Bhastrika appears to reshape emotional brain activity over weeks. Different techniques, different routes — converging on a calmer nervous system. Bhastrika is also one component of [Sudarshan Kriya Yoga](/articles/sudarshan-kriya-yoga-breathing), the most clinically studied breathing sequence.
 
-## How to practice Bhastrika safely
+## How do you practice Bhastrika safely?
 
-Because Bhastrika is vigorous, technique and caution matter:
+Practice it seated and with care — because Bhastrika is vigorous, technique and caution matter:
 
 - **Sit upright and comfortable.** Never practice standing, in water, or while driving — the intensity can cause light-headedness.
 - **Breathe actively through the nose** — forceful, equal inhalations and exhalations from the diaphragm, like a bellows.

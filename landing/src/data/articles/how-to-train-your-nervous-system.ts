@@ -43,7 +43,7 @@ Training it means two concrete things: **strengthening the parasympathetic brake
 
 ---
 
-## Section 2: The main lever — slow breathing
+## Section 2: What is the best way to train your nervous system?
 
 The most direct, best-supported way to train the parasympathetic brake is slow, paced breathing. A long, slow exhale stimulates the vagus nerve and hands tone to the "settle" branch on every out-breath; do it regularly and you're not just relaxing in the moment — you're rehearsing the down-regulation until it gets faster and more automatic.
 
@@ -74,9 +74,9 @@ That combination is what ONDA is built for — the live feedback loop plus an au
 
 ---
 
-## Section 5: A realistic training plan
+## Section 5: What does a realistic nervous system training plan look like?
 
-Treat it like any training program. **Protect the foundation** — sleep, recovery, aerobic base, and boundaries around chronic stress. **Do the active rep daily** — a few minutes of slow, exhale-led breathing, ideally with feedback so you can see the brake engage. **Follow a sequence** rather than cherry-picking, so the skill compounds. And **judge it over weeks** by your own HRV trend and, more tellingly, by how fast you notice yourself coming down after stress in real life. That return getting quicker is the whole goal.
+A realistic plan treats it like any training program. **Protect the foundation** — sleep, recovery, aerobic base, and boundaries around chronic stress. **Do the active rep daily** — a few minutes of slow, exhale-led breathing, ideally with feedback so you can see the brake engage. **Follow a sequence** rather than cherry-picking, so the skill compounds. And **judge it over weeks** by your own HRV trend and, more tellingly, by how fast you notice yourself coming down after stress in real life. That return getting quicker is the whole goal.
 
 > **The Hack:** Stop treating your nervous system like weather. Train it: a few minutes of slow, longer-exhale breathing daily rehearses the tense-to-calm transition until it's fast and automatic — and watching your heart rhythm respond with feedback proves the brake is engaging. Foundation plus daily rep plus feedback is how the system actually changes.
 

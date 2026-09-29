@@ -47,13 +47,13 @@ Your attention is protected. Analog morning, [monotasking blocks](/articles/acc-
 
 ---
 
-## Section 1: The Cost of Context Switching
+## Section 1: What does context switching cost your focus?
 
 Every time you switch from a deep task to a notification, your brain pays a 'Switching Tax.' It takes an average of 23 minutes to return to full focus. Chronic context switching causes Cortisol to rise and lowers your functional IQ by 10 points. You are not multitasking; you are just 'throttling' your own processor.
 
 ---
 
-## Section 2: Protecting the Prefrontal Cortex
+## Section 2: Why does the prefrontal cortex matter for attention?
 
 The Prefrontal Cortex (PFC) is the 'Executive Suite' of your brain. It is the most metabolically expensive part of your hardware. 'Digital Dementia' occurs when the PFC is bypassed by the Limbic System's craving for instant feedback. To work on this, we train the inhibitory control that lets you say 'No' to the ping.
 

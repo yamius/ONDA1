@@ -51,7 +51,7 @@ This is genuinely important, and it's easy to overstate, so here's the honest fr
 
 It does *not* mean you become immune to disease, or that breathing cures inflammatory illness. As the researchers themselves are careful to note, this is a temporary, controlled activation — a proof that the lever exists, not a treatment. Overselling it ("breathe away your autoimmune disease") goes far beyond what the science supports — the same overclaiming trap covered in [the honest limits of breathing and cold](/articles/hrv-breathing-cold-honest-limits).
 
-## How the Wim Hof breathing works
+## How does Wim Hof breathing work?
 
 The Wim Hof breathing is a form of controlled hyperventilation: rounds of deep, full breaths followed by a breath-hold. Physiologically, it drives a strong, deliberate sympathetic surge — including the adrenaline release seen in the studies — which is what appears to modulate the subsequent immune response. This is notably different from slow, calming breathwork: where [slow breathing at six breaths per minute](/articles/how-to-raise-hrv-naturally) activates the *parasympathetic* "rest and digest" system, Wim Hof breathing intentionally activates the *sympathetic* system first. Both are legitimate tools with different purposes — one calms, the other primes and, in this research, modulates immunity.
 

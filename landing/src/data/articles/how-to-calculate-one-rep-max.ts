@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The formulas
+## Section 1: What formulas estimate your one-rep max?
 
 Two long-standing equations estimate 1RM from a sub-maximal set:
 
@@ -47,13 +47,13 @@ They agree closely at low reps and diverge as reps climb, so reporting both (and
 
 ---
 
-## Section 2: Why a heavy set of ≤6 reps is best
+## Section 2: How many reps give the most accurate 1RM estimate?
 
 A validation study found these equations correlate strongly with measured 1RM (r > 0.95) but are **most accurate at roughly six reps or fewer**, drifting as reps rise because endurance and technique start to dominate the result (LeSuer 1997). A genuinely hard triple predicts your max far better than a light set of fifteen. So: use a recent, close-to-failure set in the 2–6 rep range, with clean form.
 
 ---
 
-## Section 3: Programming from it
+## Section 3: How do you set training weights from your 1RM?
 
 > **The Hack:** Set training loads as a percentage of your estimated 1RM — ~85–95% for low-rep strength work, ~67–80% for moderate-rep hypertrophy — and round to the nearest plate.
 

@@ -35,7 +35,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Why "just relax" doesn't work
+## Section 1: Why can't you just tell yourself to relax?
 
 The feeling of being wired is your [sympathetic](/glossary/sympathetic-nervous-system) branch stuck on — heart rate up, muscles primed, attention scanning. You can't consciously reach in and switch it off. You can't will your heart rate down, cancel the adrenaline, or think your [parasympathetic](/glossary/parasympathetic-nervous-system) branch back online. That's why "just relax," "stop worrying" and "calm down" are useless as instructions: they target the conscious mind, and the problem isn't there.
 
@@ -43,17 +43,17 @@ Almost every node in the system is involuntary. Except one.
 
 ---
 
-## Section 2: The one input you control — the breath
+## Section 2: How does breathing calm your nervous system?
 
-Breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. A slow breath with a **long exhale** stimulates the [vagus nerve](/glossary/vagus-nerve) and hands tone to the parasympathetic "settle" branch — the heart slows on the out-breath, and the whole system starts following the breath toward calm.
+A slow breath with a long exhale calms your nervous system because breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. A slow breath with a **long exhale** stimulates the [vagus nerve](/glossary/vagus-nerve) and hands tone to the parasympathetic "settle" branch — the heart slows on the out-breath, and the whole system starts following the breath toward calm.
 
 This is the reach-in switch your thoughts can't find. You don't argue your nervous system down; you *breathe* it down, and the physiology does the rest. The exhale, specifically, is the lever — a longer out-breath than in-breath raises vagal tone fastest.
 
 ---
 
-## Section 3: How to do it in the moment
+## Section 3: How do you calm your nervous system down fast?
 
-When you're wired and need to come down:
+When you're wired and need to come down, use slow breathing with a long exhale:
 
 - **Breathe low and slow, exhale-led.** Try in for 4, out for 6 (or any ratio where the exhale is clearly longer). Belly, not chest.
 - **Give it a few minutes.** The shift isn't instant — a minute or two of slow breathing is where the parasympathetic brake actually catches.

@@ -89,7 +89,7 @@ This is the core claim of Molecular Psychology: **a feeling is a readout, not a 
 
 ---
 
-## 3. The Instruction Set
+## 3. Which molecules shape your moods?
 
 Eight molecules do most of the core computation. Learn to read them as an instruction set — each one a command that biases the system toward a specific operational mode.
 
@@ -108,9 +108,9 @@ Notice the pattern: there is no "happiness molecule" and no "depression molecule
 
 ---
 
-## 4. Legacy Code: Why the Firmware Resists
+## 4. Why can't you simply decide to feel differently?
 
-If emotions are molecular, why can't you simply decide to feel differently? Because firmware is, by design, persistent. Three mechanisms lock the legacy code in place.
+You can't simply decide to feel differently because emotions are molecular, and that firmware is, by design, persistent. Three mechanisms lock the legacy code in place.
 
 **Set Points.** The endocrine system defends a baseline the way a thermostat defends a temperature. Push [cortisol](/glossary/cortisol) down with a single calm afternoon and the [HPA axis](/glossary/hpa-axis) quietly compensates it back up. The baseline — not the moment — is what you actually live inside.
 
@@ -124,9 +124,9 @@ The encouraging half of this: firmware is *writable*. [Neuroplasticity](/glossar
 
 ---
 
-## 5. The Rewrite Protocol
+## 5. How can you change your mood chemistry?
 
-You do not patch molecular firmware from the application layer — talking to yourself does not change a receptor count. You patch it bottom-up, by feeding the system the inputs that shift the chemistry. Three protocols, in order.
+You change it bottom-up, by feeding the system the inputs that shift the chemistry — you do not patch molecular firmware from the application layer, because talking to yourself does not change a receptor count. Three protocols, in order.
 
 ### [ PROTOCOL 01 ] Input Audit — The Profile Follows Behavior
 

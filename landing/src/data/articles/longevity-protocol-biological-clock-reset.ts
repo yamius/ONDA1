@@ -47,7 +47,7 @@ const article: Article = {
 
 ---
 
-## The Science: The Methylation Link
+## How is your circadian rhythm linked to biological age?
 
 Research in epigenetics reveals that the proteins managing our circadian rhythms also control the enzymes that "tag" our DNA — the same methylation patterns used by the Horvath Clock to calculate biological age.
 

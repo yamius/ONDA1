@@ -50,7 +50,7 @@ Every serious study of pre-symptomatic physiology lands on the same sentence. It
 
 ---
 
-## Section 2: What "your body knows first" actually means
+## Section 2: Can a wearable detect strain before you feel it?
 
 When your system takes on load — physical, viral, circadian, emotional — the autonomic response often shows up in the measurable layer before it reaches the felt layer. Researchers watching continuous wearable data have repeatedly seen resting heart rate and breathing rate move away from an individual's baseline **one to three days before** that person reported feeling unwell (Mishra 2020; Alavi 2022). The device wasn't diagnosing anything. It was noticing a shift in the person's own corridor that the person hadn't consciously registered yet.
 
@@ -58,7 +58,7 @@ That is the honest version of "your body knows before you do." Not prophecy. Not
 
 ---
 
-## Section 3: Why you can't feel it yourself
+## Section 3: Why can't you feel these changes yourself?
 
 Interoception — your sense of your own internal state — is famously coarse. You feel hunger, pain, a pounding heart. You do not feel a five-beat rise in resting pulse, a fifteen-percent dip in variability, or a breathing rate creeping up by two a minute overnight. Those are exactly the signals that move first, and exactly the ones below the threshold of conscious sensation.
 
@@ -76,7 +76,7 @@ That restraint is the point. A tool that shouted "illness detected" would be bot
 
 ---
 
-## Section 5: What to do with an early signal
+## Section 5: What should you do with an early wearable signal?
 
 An early signal is an invitation to pay attention, not to panic. When your corridor flags a drift, the useful responses are boring and real: protect your sleep, ease off the training load, hydrate, and give your nervous system a deliberate parasympathetic nudge. Slow, [exhale-led breathing](/articles/coherent-breathing-guide) raises [vagal](/glossary/vagus-nerve) tone within minutes and is the lowest-risk lever you have — see the live version in [HRV biofeedback](/hrv-biofeedback).
 

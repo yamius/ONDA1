@@ -27,7 +27,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The Damping System
+## Section 1: How does the brain filter out neural noise?
 
 Within the ONDA architecture, the noise-suppression layer is a multi-stage filter.
 
@@ -45,7 +45,7 @@ Alpha rhythm (8–12 Hz) acts as an idle frequency that actively inhibits irrele
 
 ---
 
-## Section 2: Stochastic Resonance
+## Section 2: What happens when noise overwhelms the neural signal?
 
 When SNR drops to a critical level, the system enters **Stochastic Resonance** — noise begins to dominate control.
 

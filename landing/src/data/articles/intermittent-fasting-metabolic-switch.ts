@@ -32,15 +32,15 @@ const article: Article = {
 
 ---
 
-## Section 1: What "the switch" actually is
+## Section 1: What is the metabolic switch in intermittent fasting?
 
-A few hours after your last meal, insulin falls and the body works through stored [glucose](/glossary/glucose-spikes) (glycogen). Around the 12-hour mark, glycogen runs low and the system pivots to burning fat, producing [ketones](/glossary/ketones) for fuel. This shift — and the metabolic flexibility it trains — is the real point of fasting.
+The metabolic switch is the pivot from burning stored glucose to burning fat. A few hours after your last meal, insulin falls and the body works through stored [glucose](/glossary/glucose-spikes) (glycogen). Around the 12-hour mark, glycogen runs low and the system pivots to burning fat, producing [ketones](/glossary/ketones) for fuel. This shift — and the metabolic flexibility it trains — is the real point of fasting.
 
 Want to see it on a timeline? The [Intermittent Fasting Calculator](/tools/fasting) maps your eating/fasting windows against the metabolic phases for any protocol (16:8, 18:6, 20:4, OMAD).
 
 ---
 
-## Section 2: The phases of a fast
+## Section 2: What happens to your body during a fast, hour by hour?
 
 - **0–4 h (fed):** Insulin rises, the last meal is absorbed.
 - **4–12 h (post-absorptive):** Insulin drops; the body draws on glycogen.
@@ -73,9 +73,9 @@ This is why 16:8 is the popular entry point: a 16-hour fast reaches the start of
 
 ---
 
-## Section 4: Who should NOT fast
+## Section 4: Who should not do intermittent fasting?
 
-Fasting is a tool, not a mandate. **Skip it** during pregnancy or breastfeeding, with a history of disordered eating, with type 1 diabetes or on glucose-lowering medication without medical supervision, or if you have certain other conditions. If you take regular medication or have a health condition, check with a clinician first. Done wrong, chronic under-eating tanks sleep, hormones and [homeostasis](/glossary/homeostasis) — the opposite of the goal.
+**Skip fasting** during pregnancy or breastfeeding, with a history of disordered eating, with type 1 diabetes or on glucose-lowering medication without medical supervision, or if you have certain other conditions — it is a tool, not a mandate. If you take regular medication or have a health condition, check with a clinician first. Done wrong, chronic under-eating tanks sleep, hormones and [homeostasis](/glossary/homeostasis) — the opposite of the goal.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: Continuous glucose monitor / morning energy log

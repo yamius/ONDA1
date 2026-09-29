@@ -36,19 +36,19 @@ In the early 2000s, Richard Davidson's lab collaborated with Tibetan Buddhist mo
 
 [Gamma synchrony](/articles/meditation-gamma-waves-experience) is associated with moments of peak awareness, when the brain binds information into a unified conscious experience. The monks could enter it more or less at will, sustain it, and produce it far more powerfully than novices. As researchers summarized, this suggested that attention and mental states are **flexible skills that can be trained** — not fixed traits.
 
-## Why studying experts matters
+## Why do scientists study expert meditators?
 
-You might reasonably ask: what does a monk with 30,000 hours have to do with me? The answer is that experts reveal the *ceiling* of what's trainable, and the trajectory toward it. If the deepest expertise produces such dramatic, measurable brain changes, it proves the brain is profoundly plastic in response to mental training — which means your own practice, at your own level, is moving you along the same path.
+Expert meditators — a monk with 30,000 hours, say — matter to your own practice because experts reveal the *ceiling* of what's trainable, and the trajectory toward it. If the deepest expertise produces such dramatic, measurable brain changes, it proves the brain is profoundly plastic in response to mental training — which means your own practice, at your own level, is moving you along the same path.
 
 The expert studies also established meditation as a serious object of neuroscience. Before Davidson's monk research, meditation was often dismissed as unmeasurable or merely relaxing. Demonstrating extraordinary, replicable brain signatures in experts legitimized the whole field and opened the door to studying [how these changes develop with practice](/articles/meditation-brain-changes-how-fast).
 
-## Structural changes, not just states
+## Does meditation change the brain's structure?
 
-Beyond the dramatic gamma findings, other researchers documented that meditation changes the brain's *structure*, not only its momentary state. Sara Lazar's work at Harvard found that experienced meditators had increased cortical thickness in attention- and sensory-processing regions, and that meditation was associated with preserved gray matter that would otherwise thin with age. Long-term practice, in other words, leaves a lasting physical mark — the brain equivalent of muscle built through training.
+Yes: beyond the dramatic gamma findings, other researchers documented that meditation changes the brain's *structure*, not only its momentary state. Sara Lazar's work at Harvard found that experienced meditators had increased cortical thickness in attention- and sensory-processing regions, and that meditation was associated with preserved gray matter that would otherwise thin with age. Long-term practice, in other words, leaves a lasting physical mark — the brain equivalent of muscle built through training.
 
 Together, the expert research paints a consistent picture: meditation, practiced deeply and long, produces both altered brain states (like gamma synchrony) and altered brain structure (like thicker cortex). Both scale with experience — the fingerprint of [a trainable skill](/articles/attention-trainable-skill-meditation).
 
-## The trained mind is a real thing
+## Is a trained mind actually measurable?
 
 The deepest implication is philosophical as much as scientific: these studies establish that a "trained mind" is not a metaphor but a measurable reality. Just as an athlete's trained body differs visibly from an untrained one, an expert meditator's trained brain differs measurably from a novice's — in its rhythms, its structure, and its capacities. Attention, emotional regulation, and equanimity are not fixed endowments but trainable faculties, and the training leaves evidence — all the way up to [the staged absorption of the jhanas](/articles/jhana-meditation-stages).
 

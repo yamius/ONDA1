@@ -28,13 +28,13 @@ const article: Article = {
   content: `
 Yoga Nidra — literally "yogic sleep" — is a guided practice of deep relaxation done lying down, and research suggests it can improve sleep quality by shifting the brain toward slower, sleep-like brainwaves while calming the autonomic nervous system. Unlike ordinary seated meditation, Yoga Nidra deliberately walks you to the edge of sleep and holds you there, in a state between waking and sleeping. Studies of this Indian practice and related techniques like OM chanting and slow pranayama link them to stronger vagal (parasympathetic) tone, lower arousal, and better scores on standard sleep measures. For people who lie awake with a racing mind, it's a structured, low-risk way to let the nervous system down.
 
-## What Yoga Nidra is
+## What is Yoga Nidra?
 
 Yoga Nidra is not sleep and not quite meditation — it's a systematic guided relaxation, usually 20 to 45 minutes, done lying on your back while a voice leads you through stages: settling the body, following the breath, a body scan rotating awareness through each part, and gentle imagery. You stay just barely awake, aware but deeply relaxed. The goal is the hypnagogic state — the drowsy threshold between waking and sleep — sustained on purpose rather than passed through in seconds.
 
 That threshold is exactly where the nervous system downshifts, which is why the practice acts so directly on sleep and stress.
 
-## What the research shows
+## What does research show about Yoga Nidra?
 
 Research on Yoga Nidra and related yogic practices points to two converging effects — one in the brain, one in the autonomic nervous system.
 

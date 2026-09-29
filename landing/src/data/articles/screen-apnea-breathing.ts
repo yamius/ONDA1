@@ -37,7 +37,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What screen apnea is (and isn't)
+## Section 1: What is screen apnea?
 
 Screen apnea is the unconscious tendency to hold or shorten your breath while concentrating on a device — email, a spreadsheet, an endless feed. It is a *habit of attention*, triggered by low-grade stress and the forward-leaning posture of screen focus. It is **not** sleep apnea, and it is **not** a medical disorder — don't let anyone tell you it is. It's a behavioural pattern, and that's good news, because behavioural patterns respond to attention and practice.
 
@@ -45,7 +45,7 @@ What makes it sneaky is that it's silent and invisible from the inside. You don'
 
 ---
 
-## Section 2: Why a held breath ripples outward
+## Section 2: How does holding your breath at a screen affect your body?
 
 Breathing isn't just gas exchange — it's a lever on your whole autonomic state. When you unconsciously freeze the breath, a few things follow. CO₂ drifts, the body reads the shallow, stalled pattern as mild threat, and [sympathetic](/glossary/sympathetic-nervous-system) tone edges up. Do that for hours a day and you're marinating in a low, self-inflicted stress signal — which is exactly why screen apnea is linked to more tension, more fatigue and worse concentration over a working day.
 
@@ -53,9 +53,9 @@ The irony is sharp: the shallow breathing you fall into *while* focusing quietly
 
 ---
 
-## Section 3: The breath is the fix — because it's the one you can control
+## Section 3: How do you fix screen apnea?
 
-Here's the leverage. Breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. You can't consciously lower a stress-tightened pulse — but you can take one slow, full, longer-on-the-exhale breath, and the [parasympathetic](/glossary/parasympathetic-nervous-system) branch responds within seconds via the [vagus nerve](/glossary/vagus-nerve). A single deliberate minute resets the pattern the screen imposed.
+With your breath — the one lever you control. Breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. You can't consciously lower a stress-tightened pulse — but you can take one slow, full, longer-on-the-exhale breath, and the [parasympathetic](/glossary/parasympathetic-nervous-system) branch responds within seconds via the [vagus nerve](/glossary/vagus-nerve). A single deliberate minute resets the pattern the screen imposed.
 
 That's why the 20% who *don't* get screen apnea are the trained breathers. They're not more disciplined about email. They've built a breathing default that holds even under focus — and that default is trainable.
 

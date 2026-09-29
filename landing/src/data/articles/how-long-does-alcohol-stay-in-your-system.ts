@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: How fast it clears
+## Section 1: How fast does alcohol leave your body?
 
 Once it’s in your blood, alcohol is eliminated at approximately **0.015% BAC per hour** — close to **one standard drink (14 g) per hour**. So a blood-alcohol level of 0.08% takes about five hours to reach zero; four or five drinks in an evening can mean alcohol in your system past 4–6 hours, sometimes into the next morning.
 
@@ -44,9 +44,9 @@ The detectable *traces* linger far longer than the *impairing* level: alcohol sh
 
 ---
 
-## Section 2: Why nothing speeds it up
+## Section 2: Can you sober up faster?
 
-The rate-limiting step is your liver’s enzymes (mainly alcohol dehydrogenase), which work at a near-constant pace you can’t hurry. Caffeine masks drowsiness but doesn’t change BAC; food slows *absorption* (lowering the peak) but not *elimination*; water helps the hangover, not the clearance. The only variable that matters once you’ve drunk is **time**.
+No — the rate-limiting step is your liver’s enzymes (mainly alcohol dehydrogenase), which work at a near-constant pace you can’t hurry. Caffeine masks drowsiness but doesn’t change BAC; food slows *absorption* (lowering the peak) but not *elimination*; water helps the hangover, not the clearance. The only variable that matters once you’ve drunk is **time**.
 
 It does vary between people — body size, sex, genetics, liver health and medication shift the numbers — which is exactly why a calculator gives an estimate, never a green light to drive.
 

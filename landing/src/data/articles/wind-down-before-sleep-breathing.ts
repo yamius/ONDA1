@@ -35,7 +35,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Why your body won't clock out
+## Section 1: Why can't you fall asleep even when you're in bed on time?
 
 Sleep onset requires a handover — from the day's activated, alert state to the [parasympathetic](/glossary/parasympathetic-nervous-system) 'settle' state that lets you drift off. Your heart rate needs to fall, your arousal needs to drop, your nervous system needs to believe the threats of the day are done.
 
@@ -43,7 +43,7 @@ Modern evenings fight that handover. Work bleeds late, screens keep the system s
 
 ---
 
-## Section 2: The most reliable off-ramp — slow breathing
+## Section 2: How does slow breathing help you fall asleep?
 
 The fastest, most direct way to signal "day's over" to your nervous system is a slow, exhale-led breath. A long out-breath stimulates the vagus nerve, hands tone to the parasympathetic branch, and starts your heart rate falling — exactly the shift sleep onset needs. You're not forcing sleep (you can't); you're producing the *state* that lets sleep happen.
 

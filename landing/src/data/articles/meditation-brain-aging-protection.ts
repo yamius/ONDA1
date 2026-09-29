@@ -32,13 +32,13 @@ Meditation may help protect the aging brain — the evidence is promising, if st
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## How the brain normally ages
+## How does the brain change with age?
 
 With age, the brain undergoes predictable changes: gray matter volume shrinks, especially in regions like the prefrontal cortex; white matter integrity declines; and the brain's networks become less "small-world" — a less optimal trade-off between efficiency and cost. Attention, memory, and processing speed tend to decline alongside. Not all of this is inevitable in the same degree — lifestyle strongly influences the pace — which is exactly why researchers began asking whether mental training like meditation could slow it.
 
-## What the research shows
+## Can meditation slow brain aging?
 
-The findings are consistent enough to be genuinely interesting, while still early:
+Early research suggests it may help preserve the aging brain — the findings are consistent enough to be genuinely interesting, while still early:
 
 - **Preserved gray matter.** Studies comparing long-term meditators to non-meditators have found that meditators show less age-related gray matter loss — their brains appeared, in effect, better preserved with age.
 - **Network reorganization, even short-term.** A longitudinal study of older adults found that just 8 weeks of meditation training (versus relaxation training) reshaped the aging brain's network organization — decreasing over-connectivity within the default mode network and between networks, shifts the researchers interpreted as more efficient processing and a more "self-detached" perspective.
@@ -52,9 +52,9 @@ Researchers themselves urge caution, and so should we. Much of the evidence is c
 
 So the honest statement is: meditation shows real, repeated associations with a better-preserved aging brain, and short-term trials show favorable network changes — but it's not a guaranteed anti-aging cure, and the science is still maturing. Meditate for its well-established benefits, and treat the brain-aging protection as a promising bonus supported by growing (not yet conclusive) evidence.
 
-## Why it's still worth doing for your brain
+## Is meditation worth doing for brain health?
 
-Even with the caveats, meditation is a low-cost, low-risk practice with well-established benefits — lower stress, better attention, improved emotional regulation — all of which independently support brain health as you age. Chronic stress is known to harm the brain; meditation reliably lowers it. So even setting aside the direct brain-preservation research, meditation supports healthy brain aging through its solid, proven effects — and [structural change starts sooner than most expect](/articles/meditation-brain-changes-how-fast).
+Yes — even with the caveats, meditation is a low-cost, low-risk practice with well-established benefits — lower stress, better attention, improved emotional regulation — all of which independently support brain health as you age. Chronic stress is known to harm the brain; meditation reliably lowers it. So even setting aside the direct brain-preservation research, meditation supports healthy brain aging through its solid, proven effects — and [structural change starts sooner than most expect](/articles/meditation-brain-changes-how-fast).
 
 For older adults specifically, pairing it with gentle slow breathing is a natural fit — the calming lever still works at any age (see [breathing exercises for older adults](/articles/breathing-exercises-older-adults)).
 

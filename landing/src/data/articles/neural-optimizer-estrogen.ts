@@ -59,13 +59,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: HIPPOCAMPAL ARCHITECTURE ]
+## How does estrogen affect the brain?
 
 Estrogen literally 'builds' connections. It promotes the production of BDNF (Brain-Derived Neurotrophic Factor), making the system teachable and adaptive. At the hardware level, estrogen protects mitochondria from oxidative stress. When this protocol is active, the system is capable of processing complex data arrays with minimal energy expenditure.
 
 ---
 
-## [ SECTION 2: THE METABOLIC GUARDIAN ]
+## How does estrogen affect metabolism?
 
 \`Estrogen\` manages resource allocation. It increases sensitivity to insulin and leptin, preventing 'system overheating' (inflammation). Across the menstrual month these estrogen swings define four distinct work modes — see [cyclical architecture](/articles/femtech-cyclical-architecture). Keeping estrogen within the optimal range is the key to ensuring that stored energy is directed toward cognitive expansion rather than being stored as ballast.
 

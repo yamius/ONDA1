@@ -61,13 +61,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: THE TRUST CODE (OXYTOCIN_PROTOCOL) ]
+## What does oxytocin do in social situations?
 
-\`Oxytocin\` acts as the "glue" of the neural network. Its primary function is to downregulate Amygdala activity, effectively removing the "background noise" of social anxiety. In the ONDA framework, this allows the system to enter a state of coherence with other nodes (individuals). High oxytocin levels increase the precision of non-verbal signal processing, transforming the brain into a high-sensitivity receiver for social data.
+\`Oxytocin\` acts as the "glue" of the neural network: its primary function is to downregulate Amygdala activity, effectively removing the "background noise" of social anxiety. In the ONDA framework, this allows the system to enter a state of coherence with other nodes (individuals). High oxytocin levels increase the precision of non-verbal signal processing, transforming the brain into a high-sensitivity receiver for social data.
 
 ---
 
-## [ SECTION 2: THE STATUS CODE (TESTOSTERONE_DRIVE) ]
+## What does testosterone do in social behavior?
 
 \`Testosterone\` governs boundaries and hierarchical positioning. It modulates "System Confidence," allowing the individual to broadcast their unique code into the environment. Contrary to popular belief, testosterone does not inherently cause aggression; it amplifies the drive to maintain status and territory. When synchronized with Oxytocin, it facilitates a "Protector" archetype—a leader who secures the network without destroying its internal connections.
 

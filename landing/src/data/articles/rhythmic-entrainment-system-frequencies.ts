@@ -63,7 +63,7 @@ How ONDA establishes the hierarchy of rhythms — four coupled oscillator layers
 
 ---
 
-## The Critical Error: Phase Desync
+## What happens when your body rhythms fall out of sync?
 
 Modern life forces the biological system into chronic Phase Desync — a state where the body's oscillators are all running, but none of them are talking to each other:
 
@@ -99,7 +99,7 @@ Three techniques to force synchronization from noise to signal:
 
 ---
 
-## Impact Log: Resonance Efficiency
+## What are the benefits of rhythmic entrainment?
 
 **Effortless Power:** Increased endurance and output capacity by eliminating internal resistance. When biological oscillators are phase-locked, force production, oxygen delivery, and metabolic clearance all peak simultaneously rather than asynchronously. The system is not working harder — it is working without fighting itself. The efficiency gain is real and measurable: entrained athletes demonstrate lower oxygen consumption per unit of output at equivalent speeds compared to their desynchronized baseline.
 

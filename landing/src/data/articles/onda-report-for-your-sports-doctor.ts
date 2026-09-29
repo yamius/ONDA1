@@ -40,7 +40,7 @@ A sports medicine doctor sits between training and health. The questions they us
 
 Your data helps them answer the first two faster, and flags when the last two matter.
 
-## How a sports doctor can read your report
+## What can a sports doctor learn from your resting heart rate and HRV?
 
 **Resting heart rate trend.** In general, as aerobic fitness improves, resting heart rate tends to drift down over weeks. A resting heart rate that climbs and stays above your normal for several days — without an obvious reason — often means your body is under more load than it's handling: accumulated fatigue, poor sleep, illness coming on, or not eating enough.
 
@@ -50,7 +50,7 @@ Your data helps them answer the first two faster, and flags when the last two ma
 
 **Signals and notes.** Dates when measures left your range, alongside your notes on training blocks, races, travel, illness and sleep, let a sports doctor line up the numbers with what you actually did.
 
-## What help a sports doctor can offer
+## Can a sports doctor tell overreaching from overtraining?
 
 **Tell overreaching from overtraining.** Short-term overreaching — a planned hard block with temporary fatigue — is normal and recovers with rest. Overtraining syndrome is a longer-lasting, harder-to-fix state. Weeks of trends make the difference easier to see, and a sports doctor can help adjust the plan before a hard block turns into months lost.
 
@@ -62,7 +62,7 @@ Your data helps them answer the first two faster, and flags when the last two ma
 
 **Refer when symptoms point to the heart.** Chest pain, unusual breathlessness, palpitations or dizziness during exercise need a heart check, not a training tweak. A sports doctor will refer you to a cardiologist when that's warranted.
 
-## Where watch data stops
+## How accurate is wrist heart rate during hard exercise?
 
 - **Wrist heart rate is less reliable during hard exercise**, especially intervals and strength work. Resting and overnight values are more trustworthy than mid-workout readings.
 - **Single days are noise.** One low HRV morning usually means a bad night or a glass of wine, not overtraining.

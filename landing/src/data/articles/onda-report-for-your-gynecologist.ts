@@ -29,7 +29,7 @@ For many women, resting heart rate and HRV aren't steady numbers — they move w
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
-## Why hormones show up in your heart rate
+## Why do hormones change your heart rate and HRV?
 
 Sex hormones influence the autonomic nervous system and body temperature. After ovulation, rising progesterone raises body temperature slightly and, on average, resting heart rate goes up by a few beats while HRV goes down, until the next period begins. Studies using wearables have seen this rhythm clearly across large groups — though the size of the shift varies a lot between women, and some, especially on hormonal contraception, see little change.
 
@@ -46,7 +46,7 @@ A gynecologist can use a few months of data to:
 
 Add cycle days and symptoms to your notes; that's what makes these patterns readable.
 
-## During pregnancy
+## Is it normal for resting heart rate to rise during pregnancy?
 
 In pregnancy, resting heart rate normally rises gradually as blood volume and the heart's workload increase, and HRV tends to fall. Seeing this on your watch is expected, not alarming in itself.
 
@@ -54,7 +54,7 @@ Your data can be a calm, informative record to share with your midwife or obstet
 
 Seek care promptly in pregnancy for chest pain, severe breathlessness, fainting, a severe headache or vision changes, bleeding, or anything that feels seriously wrong.
 
-## Around menopause
+## How does perimenopause show up in heart rate data?
 
 Perimenopause — the years before periods stop — often brings changes that show up in data:
 

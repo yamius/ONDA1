@@ -30,9 +30,9 @@ You need less meditation than you might think — but consistency matters more t
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## The dose-response: more helps, but only if you do it
+## Does more meditation give more benefit?
 
-The research points to a genuine dose-response relationship: more practice generally means more benefit. Trials examining cellular and psychological markers find that total time spent practicing correlates with the degree of change. So in principle, more is better.
+Yes — the research points to a genuine dose-response relationship: more practice generally means more benefit. Trials examining cellular and psychological markers find that total time spent practicing correlates with the degree of change. So in principle, more is better.
 
 But there's a crucial catch that dose-response studies also reveal: **higher doses reduce engagement.** When researchers assign longer daily sessions (say 30 minutes), more people drop out or skip days than with shorter sessions. The "best" dose on paper is undermined if you can't sustain it. This is why the real-world optimal dose isn't the theoretical maximum — it's the largest amount you'll consistently do. A reliable 10 minutes beats an aspirational 30 you quit after a week.
 
@@ -46,9 +46,9 @@ Modest, consistent practice is backed by real data:
 
 The message is encouraging: you don't need hour-long sessions or silent retreats to change your physiology. You need a short practice, most days, for a few weeks.
 
-## Why consistency beats duration
+## Is it better to meditate longer or more often?
 
-Meditation and breathing work like physical training: the adaptation comes from repeated, regular stimulus, not from occasional marathons. Ten minutes daily gives your nervous system a consistent signal to strengthen the pathways of calm and attention. A single 70-minute session once a week doesn't — the gap is too long, and the intensity too much for a beginner to sustain.
+More often wins: meditation and breathing work like physical training, and the adaptation comes from repeated, regular stimulus, not from occasional marathons. Ten minutes daily gives your nervous system a consistent signal to strengthen the pathways of calm and attention. A single 70-minute session once a week doesn't — the gap is too long, and the intensity too much for a beginner to sustain.
 
 Consistency also compounds. Each session is a small deposit; the benefits accrue with total time practiced. Miss a day and you've lost little; quit entirely because the sessions were too long and you've lost everything. This is why the durable approach is short, frequent, and sustainable — the logic behind structured protocols like the [365 method](/articles/cardiac-coherence-365-method).
 

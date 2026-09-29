@@ -44,15 +44,15 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: NEURAL NOISE MANAGEMENT ]
+## Why do stress and poor sleep make learning harder?
 
-Every cognitive load requires pristine 'Hardware' status. If your Cortisol is spiking and your sleep is fragmented, any attempt at learning is equivalent to writing data onto a corrupted disk sector. We begin by calibrating foundational rhythms to create the substrate for Neurogenesis and stable working memory.
+Learning requires pristine 'Hardware' status, so spiking cortisol and fragmented sleep work against it. If your Cortisol is spiking and your sleep is fragmented, any attempt at learning is equivalent to writing data onto a corrupted disk sector. We begin by calibrating foundational rhythms to create the substrate for Neurogenesis and stable working memory.
 
 ---
 
-## [ SECTION 2: PHOTIC & METABOLIC CALIBRATION ]
+## How do light and nutrition affect brain fog?
 
-Your eyes are data input ports. The light they receive directly programs your hormonal output. By optimizing the solar window and 'Fuel Input' (nutrition), we work to reduce the metabolic lag—commonly felt as 'brain fog'—that disrupts high-level processing.
+Light and nutrition both shape brain fog, starting with your eyes as data input ports. The light they receive directly programs your hormonal output. By optimizing the solar window and 'Fuel Input' (nutrition), we work to reduce the metabolic lag—commonly felt as 'brain fog'—that disrupts high-level processing.
 
 ---
 

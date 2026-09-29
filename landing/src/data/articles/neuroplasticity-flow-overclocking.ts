@@ -41,19 +41,19 @@ const article: Article = {
 
 ---
 
-## Section 1: The BDNF Catalyst
+## Section 1: What is BDNF and why does it matter?
 
 BDNF is the "Miracle-Gro" for your brain. It is a protein that supports the survival of existing neurons and encourages the growth of new ones. High levels of BDNF make your brain more "plastic," allowing you to learn new skills and overwrite old habits at a 10x rate. The Hippocampus is particularly rich in BDNF—and it is the seat of memory formation and Neurogenesis. When you trigger BDNF release (through intense exercise, novel learning, or both), you open a "Plasticity Window" where synaptic connections form at an accelerated pace.
 
 ---
 
-## Section 2: The Flow State Mechanics
+## Section 2: What happens in the brain during a flow state?
 
 Flow State is a high-bandwidth cognitive state where the Prefrontal Cortex (the inner critic) temporarily shuts down—a process called Transient Hypofrontality. This allows for seamless information processing and massive increases in creativity and pattern recognition. Alpha Waves and Theta Waves dominate during Flow—the brain shifts from scattered High-Beta (anxious, distracted) to focused Alpha (calm alertness) and creative Theta (insight, flow). Mastering the transition into Flow is the key to peak cognitive performance.
 
 ---
 
-## Section 3: Myelin and Skill Acquisition
+## Section 3: How does myelin help you learn skills?
 
 Every time you repeat a high-quality action, your brain wraps the neural pathway in Myelin—an insulating sheath that increases the speed of electrical signals. Mastering Flow is essentially a process of rapid myelination. The Basal Ganglia and other motor-learning circuits depend on myelin for automaticity. When you practice in Flow, you are not just "getting better"—you are physically insulating the right circuits, making them faster and more reliable. Neural efficiency is the result of targeted myelination.
 

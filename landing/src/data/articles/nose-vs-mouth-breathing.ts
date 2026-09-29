@@ -28,9 +28,9 @@ const article: Article = {
   content: `
 Nose breathing and mouth breathing affect your body differently — not just how much air you move, but your autonomic balance and your ability to concentrate. Japanese research comparing the two, in a randomized design, measured heart rate variability (HRV) and sustained attention under each condition, finding measurable differences in autonomic function between nose and mouth breathing. The short version: nasal breathing tends to support a calmer, more regulated autonomic state and steadier focus, while habitual mouth breathing is associated with a less favorable pattern. How you breathe — not just how deeply — shapes your nervous system.
 
-## Why the route of air matters
+## Does it matter if you breathe through your nose or mouth?
 
-It's easy to think a breath is a breath, but the path the air takes changes the physiology. Nasal breathing filters, warms and humidifies air, and — importantly for your nervous system — it's slower and more resistive than mouth breathing. That natural resistance encourages a longer, more controlled breath, which is exactly the pattern that activates the [vagus nerve](/glossary/vagus-nerve) and shifts you toward "rest and digest." Mouth breathing, by contrast, tends to be faster and shallower, which can nudge you toward a more sympathetic (activated) state.
+Yes — the path the air takes changes the physiology, even if it's easy to think a breath is a breath. Nasal breathing filters, warms and humidifies air, and — importantly for your nervous system — it's slower and more resistive than mouth breathing. That natural resistance encourages a longer, more controlled breath, which is exactly the pattern that activates the [vagus nerve](/glossary/vagus-nerve) and shifts you toward "rest and digest." Mouth breathing, by contrast, tends to be faster and shallower, which can nudge you toward a more sympathetic (activated) state.
 
 Nasal breathing also engages nitric oxide produced in the nasal passages, which supports blood flow and oxygen uptake — a benefit you skip entirely when breathing through the mouth.
 
@@ -40,11 +40,11 @@ A randomized study compared nose breathing and mouth breathing within the same p
 
 The finding: the breathing route produced measurable differences in autonomic function, and nasal breathing was associated with better markers than mouth breathing. In other words, simply switching from mouth to nose breathing shifted the autonomic balance — and this tied into differences in concentration on the attention task. It's a controlled demonstration that *how* you route your breath, independent of depth, changes both your nervous system and your focus.
 
-## The focus connection
+## Does nose breathing improve focus?
 
-This is the part most breathing advice misses. We usually frame breathing as a calming tool, but the research also linked nasal breathing to steadier sustained attention. That makes physiological sense: a regulated autonomic state — not too activated, not sluggish — is the foundation for focus. If mouth breathing tips you slightly toward a scattered, sympathetic-leaning state, and nasal breathing keeps you regulated, then something as simple as keeping your mouth closed during deep work could support concentration. It's a low-effort lever hiding in plain sight — and it pairs well with [breathing for focus and attention](/articles/breathing-for-focus-and-attention).
+The research linked nasal breathing to steadier sustained attention — the part most breathing advice misses, since we usually frame breathing as a calming tool. That makes physiological sense: a regulated autonomic state — not too activated, not sluggish — is the foundation for focus. If mouth breathing tips you slightly toward a scattered, sympathetic-leaning state, and nasal breathing keeps you regulated, then something as simple as keeping your mouth closed during deep work could support concentration. It's a low-effort lever hiding in plain sight — and it pairs well with [breathing for focus and attention](/articles/breathing-for-focus-and-attention).
 
-## When each matters
+## When should you breathe through your nose vs your mouth?
 
 - **Default to nose breathing** at rest, during focus work, and during slow breathing practice — it supports a calm, regulated state and steadier attention.
 - **Mouth breathing has its place** during hard physical exertion, when you need maximum airflow. That's appropriate; the concern is *habitual* mouth breathing at rest.

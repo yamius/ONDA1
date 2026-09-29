@@ -35,7 +35,7 @@ When you breathe slowly, your heart rate naturally rises on the inhale and falls
 
 Physiologically, this balances the sympathetic ("gas") and parasympathetic ("brake") branches of the autonomic nervous system, with a measurable rise in heart rate variability (HRV). Subjectively, it feels like calm and clarity. What makes the French framing useful is its precision: it's not vague "deep breathing," but a specific rate (six per minute) held for a specific time, which is exactly what the physiology responds to.
 
-## The 365 method
+## What is the 365 method of cardiac coherence?
 
 The 365 method is the practical protocol that made cardiac coherence a household practice in France:
 
@@ -45,9 +45,9 @@ The 365 method is the practical protocol that made cardiac coherence a household
 
 Three sessions matter because the calming effect of a single session is real but temporary — spacing three across the day keeps your nervous system returning to balance. Morning sets a calm tone, midday interrupts accumulated stress, and an evening session supports winding down. It's a rhythm of regulation, not a one-off rescue.
 
-## The science behind six breaths a minute
+## Why is six breaths a minute the target for cardiac coherence?
 
-Why six? Because that's close to the **resonance frequency** of the human cardiovascular system — the rate at which the heart-rate rhythm and the baroreflex (your blood-pressure control loop) oscillate together at maximum amplitude, around 0.1 Hz. Breathing at this rate produces the strongest, smoothest HRV response, and it's worth [finding your own resonance rate](/articles/find-your-resonance-breathing-rate), which varies a little from person to person.
+Six breaths a minute is close to the **resonance frequency** of the human cardiovascular system — the rate at which the heart-rate rhythm and the baroreflex (your blood-pressure control loop) oscillate together at maximum amplitude, around 0.1 Hz. Breathing at this rate produces the strongest, smoothest HRV response, and it's worth [finding your own resonance rate](/articles/find-your-resonance-breathing-rate), which varies a little from person to person.
 
 Recent comparative research supports the emphasis on this pace and on the exhale. A 2025 study comparing square breathing, [4-7-8](/articles/4-7-8-breathing), and six-breaths-per-minute breathing found that the six-per-minute rhythm most strongly activated the vagus nerve and significantly raised HRV — and that an exhale longer than the inhale sends the most intense vagal signal to the brainstem. There's also a dose-response: longer sessions produce longer-lasting autonomic effects, which is part of why the 365 method uses repeated five-minute blocks rather than a single quick breath.
 

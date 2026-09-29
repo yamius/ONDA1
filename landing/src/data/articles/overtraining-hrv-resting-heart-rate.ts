@@ -38,17 +38,17 @@ const article: Article = {
 
 ---
 
-## Section 1: Fitness is built in the rest, not the rep
+## Section 1: Why does fitness improve during recovery, not during training?
 
-Hard training works by overload: you stress a system past its comfort, and it rebuilds a little stronger. But *only if rebuilding is allowed to happen.* Adaptation requires the recovery phase — that's not a slogan, it's the mechanism. Load without adequate recovery isn't extra training; it's accumulated fatigue with no payoff, and past a point, a performance *decline*.
+Because hard training works by overload: you stress a system past its comfort, and it rebuilds a little stronger during recovery. But *only if rebuilding is allowed to happen.* Adaptation requires the recovery phase — that's not a slogan, it's the mechanism. Load without adequate recovery isn't extra training; it's accumulated fatigue with no payoff, and past a point, a performance *decline*.
 
 This is why "more" is the wrong dial past a certain volume. The athletes who improve aren't the ones who train the most — they're the ones who match hard work to real recovery, block after block.
 
 ---
 
-## Section 2: The autonomic turn — RHR up, HRV down
+## Section 2: What happens to resting heart rate and HRV when you overtrain?
 
-When load outruns recovery, the autonomic nervous system tells on you before your performance fully collapses. Two signals move together:
+When load outruns recovery, resting heart rate creeps up and HRV drops — the autonomic nervous system tells on you before your performance fully collapses. Two signals move together:
 
 - **Resting heart rate creeps up.** An elevated morning pulse against your baseline is a classic marker of accumulated fatigue or an incomplete recovery — the body idling higher because it never fully stood down.
 - **HRV drops.** Reduced resting [variability](/glossary/heart-rate-variability) (RMSSD) is repeatedly associated with fatigue, overreaching and blunted performance. As training exceeds your adaptive capacity, variability falls and its night-to-night stability degrades.
@@ -63,9 +63,9 @@ Two more of your own numbers sharpen the picture. **Heart-rate recovery** — ho
 
 ---
 
-## Section 4: Reading the turn before it costs you
+## Section 4: How can you spot overtraining early?
 
-The whole point of monitoring is to catch the turn early — while it's a deload decision, not an injury. With a **personal baseline**, an elevated resting pulse and a suppressed [HRV](/glossary/heart-rate-variability) that persist for several days read as a clear departure from your corridor: the signal to insert recovery *now*. ONDA reads resting heart rate, HRV, one-minute recovery and estimated VO₂max from an Apple Watch and holds them against your own normal, so overtraining stops being a feeling you argue with and becomes a pattern you can act on — [your data, your deload](/measurements).
+Watch for an elevated resting pulse and a suppressed HRV against your own baseline — the point of monitoring is to catch the turn early, while it's a deload decision, not an injury. With a **personal baseline**, an elevated resting pulse and a suppressed [HRV](/glossary/heart-rate-variability) that persist for several days read as a clear departure from your corridor: the signal to insert recovery *now*. ONDA reads resting heart rate, HRV, one-minute recovery and estimated VO₂max from an Apple Watch and holds them against your own normal, so overtraining stops being a feeling you argue with and becomes a pattern you can act on — [your data, your deload](/measurements).
 
 Firewall, plainly: these are descriptive training signals, not medical readings. Persistent fatigue, a resting heart rate that stays high, or performance that keeps sliding despite rest deserve a coach and, if health is in question, a doctor — not just an app.
 

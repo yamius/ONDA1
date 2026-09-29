@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Lark, owl, or in between
+## Section 1: How do you find out if you're a lark or an owl?
 
 Researchers measure chronotype with tools like the Morningness–Eveningness Questionnaire (Horne & Östberg 1976) and the Munich ChronoType Questionnaire, which uses your sleep timing on *free* days — when no alarm forces you — as the truest read (Roenneberg 2003). Most people are intermediate; true extreme larks and owls sit at the tails.
 
@@ -44,7 +44,7 @@ The quickest self-check: on a holiday with no obligations, when do you naturally
 
 ---
 
-## Section 2: It’s largely genetic — and shifts with age
+## Section 2: Is chronotype genetic, and does it change with age?
 
 Chronotype is substantially heritable and changes predictably across life: children skew early, adolescents shift dramatically late (peaking around age 20 — biology, not attitude), then drift earlier again with age (Adan 2012; Roenneberg 2003). You can nudge it a little with light and routine, but you can’t simply will an owl into a lark. Working *with* your type beats fighting it.
 

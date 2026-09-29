@@ -38,15 +38,15 @@ The pattern is simple and takes about ten seconds per round:
 
 Repeat one to five times. Most people feel a shift after the first or second cycle. That's the whole technique — no counting, no app, no special posture. You can do it at your desk, in a meeting, or lying in bed, and no one will notice.
 
-## Why it works — the physiology
+## Why does the physiological sigh work?
 
-Two mechanisms fire at once. The **double inhale** reinflates alveoli — tiny air sacs in your lungs that collapse when you breathe shallowly for a long time (which is exactly what happens during stress or screen time). Reinflating them clears out accumulated carbon dioxide and restores efficient gas exchange.
+It works because two mechanisms fire at once. The **double inhale** reinflates alveoli — tiny air sacs in your lungs that collapse when you breathe shallowly for a long time (which is exactly what happens during stress or screen time). Reinflating them clears out accumulated carbon dioxide and restores efficient gas exchange.
 
 The **long exhale** is where the calm comes from. Whenever your exhale is longer than your inhale, you stimulate the vagus nerve — the main pathway of your parasympathetic "rest and digest" system. This slows your heart rate, lowers blood pressure, and tells your brain there's no threat. It's not a belief or a mood; it's a measurable autonomic shift, and it shows up in real time as a rise in heart rate variability (HRV). This is why the physiological sigh calms you within a breath or two, while techniques that rely on sustained focus take longer.
 
-## Physiological sigh vs box breathing vs 4-7-8
+## Is the physiological sigh better than box breathing or 4-7-8?
 
-Three of the most searched breathing techniques do different jobs. The physiological sigh is the fastest for acute moments; [box breathing](/articles/box-breathing-how-it-works) builds sustained steadiness; [4-7-8 breathing](/articles/4-7-8-breathing) is oriented toward winding down for sleep.
+Not better, just different: these three of the most searched breathing techniques do different jobs. The physiological sigh is the fastest for acute moments; [box breathing](/articles/box-breathing-how-it-works) builds sustained steadiness; [4-7-8 breathing](/articles/4-7-8-breathing) is oriented toward winding down for sleep.
 
 | Technique | Pattern | Speed | Best for |
 |---|---|---|---|
@@ -56,7 +56,7 @@ Three of the most searched breathing techniques do different jobs. The physiolog
 
 If you only learn one, learn the physiological sigh — it's the only one that reliably works in seconds, and it needs no counting.
 
-## When to use it
+## When should you use the physiological sigh?
 
 The physiological sigh shines in the moments when you don't have time for a longer practice:
 

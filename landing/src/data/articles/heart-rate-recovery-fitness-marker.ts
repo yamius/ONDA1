@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What heart-rate recovery measures
+## Section 1: What does heart-rate recovery measure?
 
 Heart-rate recovery (HRR) is simple: peak your effort, stop, and count how far your pulse drops in the next 60 seconds. A big drop is good. A small one isn't.
 
@@ -44,9 +44,9 @@ What it's actually reading is **parasympathetic reactivation** — how quickly t
 
 ---
 
-## Section 2: Fast drop = fitness. Slow drop = flag.
+## Section 2: What is a good heart-rate recovery?
 
-As you get fitter, your heart-rate recovery gets faster — a well-conditioned athlete's pulse can shed a large chunk of beats in that first minute, while a deconditioned or fatigued one drifts down slowly. That's why HRR tracks your training state so well: it moves as your engine improves.
+A fast drop is a good heart-rate recovery, and it gets faster as you get fitter — a well-conditioned athlete's pulse can shed a large chunk of beats in that first minute, while a deconditioned or fatigued one drifts down slowly. That's why HRR tracks your training state so well: it moves as your engine improves.
 
 It also carries weight beyond the gym. A landmark study in the *New England Journal of Medicine* (Cole, 1999) found that an abnormally slow heart-rate recovery after exercise independently predicted long-term mortality risk — the clearest evidence that this simple drop reflects something deep about autonomic health. That's context, not a reason to panic over one reading: HRR is a genuine signal, and it's yours to track over time.
 
@@ -73,7 +73,7 @@ The firewall: this is a **descriptive fitness signal, not a medical screening**.
 
 ---
 
-## Section 5: Training the drop
+## Section 5: How do you improve heart-rate recovery?
 
 You improve heart-rate recovery the way you improve the engine behind it: aerobic base work. Consistent [zone-2 training](/articles/zone-2-training-aerobic-base) builds the parasympathetic tone that makes the post-effort brake snap back faster, and it's the same base that raises your [VO₂max](/articles/vo2max-increase-aerobic-engine). On the recovery side, protecting sleep and using slow [exhale-led breathing](/articles/coherent-breathing-guide) to support vagal tone both feed the same system. Then let the trend confirm it — a recovery that's speeding up over months is fitness you can see.
 

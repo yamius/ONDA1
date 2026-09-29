@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: How a phone camera reads your pulse
+## Section 1: How can a phone camera read your pulse?
 
 Put a fingertip over the rear camera and its lens, and the phone does **photoplethysmography (PPG)** — the same optical trick your Apple Watch uses. With each heartbeat, blood pulses through your fingertip and slightly changes how much light passes through the skin; the camera picks up that rhythmic change and turns it into a pulse signal. No chest strap, no ring, no Bluetooth pairing — just a finger and a lens.
 
@@ -71,7 +71,7 @@ Two honest notes: don't compare a camera reading to a watch or ring reading — 
 
 ---
 
-## Section 5: Getting a clean camera reading
+## Section 5: How do you get a clean camera pulse reading?
 
 To make the phone camera work well: cover both the lens **and** its light fully but gently with the pad of your finger, hold **still** (movement is the enemy of an optical reading), rest your hand on something stable, and give it a few seconds to lock on before you start. Then run your slow, exhale-led breathing and watch the pulse settle. When you're ready for the deeper signal, add the watch — but you can build the entire habit first with nothing but the phone.
 

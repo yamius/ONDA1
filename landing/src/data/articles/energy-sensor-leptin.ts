@@ -58,13 +58,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: THE ANXIETY AND OVERLOAD CYCLE ]
+## What happens when leptin levels stay too high?
 
 When leptin levels are chronically high due to excessive sugar or fat intake, the brain's receptors simply 'shut down' to avoid circuit overload. This creates a feedback loop: the more energy is stored, the less the brain can see it. The system then demands rapid glucose (Input) just to get a survival signal. This is a classic write-error in the metabolic code.
 
 ---
 
-## [ SECTION 2: LEPTIN AND CIRCADIAN RHYTHMS ]
+## How is leptin linked to sleep and your circadian rhythm?
 
 \`Leptin\` is a nocturnal hormone. Its peak should occur during the dark hours to suppress hunger during sleep. If you use 'night-time feeding' or are exposed to high-intensity blue light before bed, you de-calibrate this sensor. Leptin restoration is impossible without first aligning the System Clock (Circadian Rhythm).
 

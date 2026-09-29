@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What resonance breathing actually is
+## Section 1: What is resonance breathing?
 
 Around six breaths a minute — roughly 0.1 Hz — the cardiovascular system has a natural resonance. Breathe at that frequency and you maximally stimulate the baroreflex, the loop that buffers blood pressure, producing large, coherent oscillations in heart rate and shifting you toward [parasympathetic](/glossary/parasympathetic-nervous-system) calm. That's the mechanism behind [coherent breathing](/articles/coherent-breathing-guide) and the [0.1 Hz baroreflex shift](/articles/baroreflex-01hz-shift).
 
@@ -44,7 +44,7 @@ At resonance, a small rhythmic input — your breath — produces a large, calmi
 
 ---
 
-## Section 2: Why ~6 a minute is a starting point, not your answer
+## Section 2: Is 6 breaths a minute the right resonance rate for everyone?
 
 Six breaths a minute is the population average, and it's a fine place to begin. But your personal resonance rate depends on your physiology — your height and blood volume among other things — so it typically lands somewhere in the **~4.5 to 7 breaths-per-minute** range. Taller people tend to resonate a little slower; the exact figure is yours to find.
 
@@ -52,7 +52,7 @@ This is why a fixed "4-7-8" or "inhale 5, exhale 5" rule works for some people a
 
 ---
 
-## Section 3: How to find it — the low-tech way
+## Section 3: How can you find your resonance breathing rate without a device?
 
 You can get close by feel. Try breathing at a few slow paces, holding each for a minute or two, and notice which one feels the most effortless and settling — the pace where the breath seems to "carry itself" and your body drops into calm with the least effort. Sweep through roughly 4.5, 5, 5.5, 6 and 6.5 breaths a minute (a breath every ~13, 12, 11, 10 and 9 seconds), bias the exhale a little longer than the inhale, and pay attention to which rate your body likes best.
 

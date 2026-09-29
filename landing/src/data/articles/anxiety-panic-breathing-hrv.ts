@@ -38,17 +38,17 @@ const article: Article = {
 
 ---
 
-## Section 1: The alarm that fires with no fire
+## Section 1: Why do panic attacks happen when there's no real danger?
 
-At the base of the brain sits a fast, dumb, brilliant threat detector — it scans for danger in the background and, when tripped, floods the body with a sympathetic surge before your conscious mind gets a vote. Heart rate up, breathing up, blood to the muscles. Perfect if there's a bear.
+Panic happens when the brain's threat detector fires at shadows and the body's alarm signals feed back into it. At the base of the brain sits a fast, dumb, brilliant threat detector — it scans for danger in the background and, when tripped, floods the body with a sympathetic surge before your conscious mind gets a vote. Heart rate up, breathing up, blood to the muscles. Perfect if there's a bear.
 
 In anxiety and panic, the detector fires at shadows: a crowded train, an email, a bodily sensation. The hardware is working; the *threshold* is miscalibrated. And because the system is a loop — body signals feed the brain's threat estimate — a small spike can bootstrap itself into a full attack in under a minute.
 
 ---
 
-## Section 2: Why breathing is the weak point in the loop
+## Section 2: Why can breathing stop a panic attack?
 
-Almost every node in that loop is involuntary. You cannot consciously lower your heart rate, cancel adrenaline, or talk your amygdala down mid-surge. But one node is different.
+Breathing can stop the loop because it is the only autonomic function with a manual override. Almost every node in that loop is involuntary. You cannot consciously lower your heart rate, cancel adrenaline, or talk your amygdala down mid-surge. But one node is different.
 
 Breathing is the only autonomic function with a manual override — and it back-propagates to the rest of the system. Fast, shallow chest-breathing (hyperventilation) is both a *symptom* of panic and an *accelerant*: it drops CO₂, which produces the tingling, light-headedness and air-hunger that the brain reads as more danger. Slow it down and you cut the accelerant.
 
@@ -56,9 +56,9 @@ The mechanism runs through [heart-rate variability](/glossary/heart-rate-variabi
 
 ---
 
-## Section 3: What the trials actually found
+## Section 3: Does HRV biofeedback breathing actually reduce anxiety?
 
-This is not folk wisdom dressed up. Two threads of real evidence:
+Yes — this is not folk wisdom dressed up, and two threads of real evidence back it:
 
 - **HRV biofeedback for anxiety.** A meta-analysis pooling controlled trials of HRV-biofeedback breathing found a meaningful reduction in self-reported stress and anxiety across studies (Goessl 2017). The active ingredient is exactly the slow, paced, feedback-guided breathing described above.
 - **The exhale beats the mindfulness.** A 2023 randomised trial compared brief daily breathwork against mindfulness meditation and found that short, exhale-emphasised breathing ("cyclic sighing") improved mood and lowered physiological arousal *more* than the meditation control (Balban 2023). The out-breath, specifically, did the work.

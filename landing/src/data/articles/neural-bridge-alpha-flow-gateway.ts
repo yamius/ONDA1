@@ -47,7 +47,7 @@ const article: Article = {
 
 ---
 
-## The Architecture: The Gatekeeper Effect
+## What do alpha brain waves do?
 
 The Alpha rhythm functions as the system administrator of your neural network — not a passive filter, but an active routing mechanism:
 
@@ -59,9 +59,9 @@ The Alpha rhythm functions as the system administrator of your neural network �
 
 ---
 
-## The Critical Error: Closed Gates
+## What causes creative block?
 
-When the bridge is blocked by excessive stress, cortisol load, or cognitive overload, the system enters **Creative Block** — a specific failure mode distinct from general fatigue:
+Excessive stress, cortisol load, or cognitive overload block the bridge, and the system enters **Creative Block** — a specific failure mode distinct from general fatigue:
 
 **Input Saturation:** You consume massive amounts of content but cannot output a single original architectural thought. The channel is at maximum inbound capacity. No bandwidth remains for outbound synthesis. More input at this point actively degrades creative output.
 

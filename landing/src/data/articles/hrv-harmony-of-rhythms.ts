@@ -34,7 +34,7 @@ The Anglo-American wearable world flattened HRV into a morning readiness number.
 
 When your body is well-regulated, its rhythms nest and synchronize: breath modulates heartbeat, heartbeat aligns with blood-pressure waves, and daily circadian cycles set the backdrop. When you're stressed, sick, or living against your clock, this coordination breaks down — and HRV drops. So a falling HRV isn't just "you're tired"; it's "your rhythms are losing their harmony." (This is also why there's no single "good" number — see [normal HRV by age](/articles/normal-hrv-by-age).)
 
-## The rhythms that make up the harmony
+## Which body rhythms does HRV reflect?
 
 Chronobiology describes the body as a nested set of oscillations, each with its own timescale:
 
@@ -52,7 +52,7 @@ This reframing explains why slow, paced breathing works so reliably. Breathe at 
 
 This is why "coherence" is a better word than "relaxation" for what breathing practice does. You're not just calming down; you're bringing your body's oscillators into phase.
 
-## What throws the rhythms out of tune
+## What lowers HRV?
 
 The same things that lower HRV are, in this framework, sources of rhythmic disorder:
 

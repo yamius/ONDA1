@@ -38,13 +38,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: CORTISOL — THE SYSTEM STRESS GRAPH ]
+## What can continuous cortisol monitoring reveal?
 
 Continuous Cortisol monitoring allows for the detection of 'silent energy leaks.' If your graph doesn't dip by evening, your biocomputer is running in overheat mode, burning through neural resources and blocking lipolysis (fat burning). CHM patches allow you to identify the exact moment when stress shifts from adaptive (useful) to destructive.
 
 ---
 
-## [ SECTION 2: TESTOSTERONE & CYCLICAL OUTPUT ]
+## How do hormonal cycles like testosterone affect your mental performance?
 
 For both men and women, hormonal cycles dictate cognitive bandwidth. Real-time monitoring allows for the scheduling of 'High-Intensity Tasks' during peak hormonal windows and shifting into 'Deep Recovery' when levels dip. This is the ultimate optimization of biorhythms: aligning the workload with the system's chemical capacity.
 

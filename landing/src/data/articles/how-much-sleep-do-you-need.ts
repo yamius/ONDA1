@@ -36,9 +36,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The numbers, by age
+## Section 1: How many hours of sleep do you need by age?
 
-The National Sleep Foundation’s expert panel set recommended ranges (Hirshkowitz 2015):
+Most adults (18–64) need 7–9 hours, per the recommended ranges set by the National Sleep Foundation’s expert panel (Hirshkowitz 2015):
 
 - **Teens (14–17):** 8–10 hours
 - **Young adults & adults (18–64):** 7–9 hours
@@ -49,15 +49,15 @@ The American Academy of Sleep Medicine independently recommends **at least 7 hou
 
 ---
 
-## Section 2: Why "I only need 5–6 hours" is usually wrong
+## Section 2: Can you function well on 5–6 hours of sleep?
 
-True short-sleepers — people genuinely unimpaired on under six hours — are vanishingly rare (a specific genetic trait). For everyone else, chronic short sleep degrades attention, memory and mood, and you adapt to *feeling* normal while your performance keeps dropping — you lose the ability to judge your own impairment. The deficit is real even when the grogginess fades.
+Almost certainly not: true short-sleepers — people genuinely unimpaired on under six hours — are vanishingly rare (a specific genetic trait). For everyone else, chronic short sleep degrades attention, memory and mood, and you adapt to *feeling* normal while your performance keeps dropping — you lose the ability to judge your own impairment. The deficit is real even when the grogginess fades.
 
 ---
 
-## Section 3: Sleep debt accumulates — and only partly repays
+## Section 3: Can you catch up on sleep debt?
 
-Sleep loss adds up. In a landmark study, people restricted to six hours a night for two weeks were as impaired as those kept awake for two full nights — but rated themselves only slightly sleepy (Van Dongen 2003). The cost is cumulative and largely invisible from the inside.
+Only partly — sleep loss adds up, and you can’t undo months of loss in one weekend. In a landmark study, people restricted to six hours a night for two weeks were as impaired as those kept awake for two full nights — but rated themselves only slightly sleepy (Van Dongen 2003). The cost is cumulative and largely invisible from the inside.
 
 You can repay *some* debt — a few extra hours across several nights helps — but you can’t bank sleep in advance or undo months of loss in one weekend. The durable fix is hitting your need most nights.
 

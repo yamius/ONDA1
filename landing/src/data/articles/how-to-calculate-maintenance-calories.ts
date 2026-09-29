@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The two-step calculation
+## Section 1: How do you calculate maintenance calories?
 
 **Step 1 — BMR.** Your basal metabolic rate is what you’d burn lying in bed all day. The Mifflin–St Jeor equation is the most accurate common predictor (Frankenfield 2005):
 - Men: BMR = 10·weight(kg) + 6.25·height(cm) − 5·age + 5
@@ -48,7 +48,7 @@ The [TDEE Calculator](/tools/tdee) does both and adds a macro split — but the 
 
 ---
 
-## Section 2: Why the formula is only a starting point
+## Section 2: How accurate are maintenance calorie formulas?
 
 Predictive equations are accurate to roughly **±10%** for most people (Frankenfield 2005) — but real metabolism varies with body composition, genetics, and especially non-exercise activity (NEAT: fidgeting, walking, standing), which can swing daily burn by hundreds of calories. So treat your calculated TDEE as a hypothesis, not a fact.
 

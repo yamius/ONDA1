@@ -25,9 +25,9 @@ const article: Article = {
 
 ---
 
-## Section 1: The Biological Shader
+## Section 1: How does acetylcholine sharpen your attention?
 
-When you direct your focus, the basal forebrain releases acetylcholine into specific cortical regions. Two hardware effects happen at once.
+Acetylcholine sharpens attention by amplifying the neurons you focus on and dampening the rest: when you direct your focus, the basal forebrain releases acetylcholine into specific cortical regions. Two hardware effects happen at once.
 
 ### Target Amplification
 
@@ -39,7 +39,7 @@ Neurons outside the lens are dampened. Static drops and the signal-to-noise rati
 
 ---
 
-## Section 2: Why the Lens Blurs
+## Section 2: Why does focus get foggy?
 
 The quality of the acetylcholine lens depends on precursor availability and receptor health.
 
@@ -59,9 +59,9 @@ Attention is not only chemical. Sodium, potassium, and calcium determine whether
 
 ---
 
-## Section 3: Lens Calibration
+## Section 3: How can you sharpen acetylcholine-driven focus?
 
-ONDA sharpens the image with three protocols.
+You can sharpen it with three protocols: high-intensity inhalation patterns, a visual anchor, and keeping precursor levels up.
 
 ### Direct Stimulation
 

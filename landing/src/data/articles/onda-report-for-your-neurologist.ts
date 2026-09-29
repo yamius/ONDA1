@@ -48,7 +48,7 @@ Here's something few people know. One of the standard tests of autonomic functio
 
 Six breaths a minute is the same pace used in coherent or resonance breathing. In other words, the clinic uses slow breathing to *measure* how well your nervous system controls your heart — the same rhythm many people use to *train* it. Your watch or a breathing app can't perform this test for you, but it's a neat reminder that HRV and slow breathing sit at the centre of how neurology looks at the heart.
 
-## How a neurologist can read your report
+## What can a neurologist learn from your heart rate data?
 
 **Resting heart rate baseline and swings.** A neurologist will look not only at your average resting heart rate but at how unstable it is: large day-to-day swings, a baseline that drifted up after an illness, or a pattern of bad and better weeks.
 
@@ -58,7 +58,7 @@ Six breaths a minute is the same pace used in coherent or resonance breathing. I
 
 **Signals and notes — the most valuable part here.** Autonomic problems come in flares. A dated record of bad days, what triggered them (standing a long time, heat, a big meal, alcohol, a busy day), and how long recovery took gives a neurologist something they rarely get: the rhythm of your illness over time.
 
-## What help a neurologist can offer
+## How can a neurologist help with autonomic symptoms?
 
 **Confirm what's happening with proper tests.** Depending on symptoms, this may include an active stand test or a tilt-table test (heart rate and blood pressure measured while lying and then upright), the deep-breathing heart rate test, the Valsalva manoeuvre, and sometimes tests of sweating or blood flow. These show what a watch only hints at.
 
@@ -70,7 +70,7 @@ Six breaths a minute is the same pace used in coherent or resonance breathing. I
 
 **Track change.** Autonomic recovery is usually slow. A baseline gradually settling, fewer flare days and faster recovery after them are real, visible signs of progress over months.
 
-## Where watch data stops
+## Can a smartwatch diagnose POTS or dysautonomia?
 
 - **It can't diagnose POTS or dysautonomia.** Formal diagnosis needs measured heart rate *and* blood pressure while lying and standing, under clinical conditions.
 - **Don't test yourself to the point of fainting.** If your doctor asks you to record heart rate lying and standing at home, do it exactly as instructed, with something to hold and ideally someone nearby.

@@ -30,7 +30,7 @@ Zazen — the seated meditation at the heart of Zen — has one of the longest r
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## What zazen is
+## What is zazen?
 
 Zazen ("seated meditation") is the core practice of Zen Buddhism, brought to Japan and refined over centuries. In its classic form, you sit upright and still, often facing a wall, and simply *be present* — following the breath, or in some schools "just sitting" (shikantaza) with open, choiceless awareness. In the Rinzai school, practitioners also contemplate koans — paradoxical questions like "what is the sound of one hand clapping?" — designed to exhaust conceptual thinking and provoke direct insight.
 
@@ -44,7 +44,7 @@ Zen meditation research goes back to the landmark Japanese studies of Kasamatsu 
 - **Theta rises with experience.** This is the key progress finding: increased theta appears specifically in *experienced* practitioners, not novices. The brain signature of deep zazen is something you build — a trained capacity, visible on EEG, that beginners don't yet show. Attention, as one review put it, is "a flexible skill, which can be trained."
 - **Prefrontal and default-mode shifts.** Neuroimaging finds zazen changes activity in the prefrontal cortex and anterior cingulate (attention and self-regulation hubs), and alters the default mode network — enhancing detached, moment-to-moment processing while [reducing conceptual thinking and self-reference](/articles/vipassana-meditation-attention-brain).
 
-## Why "theta rises with experience" matters
+## Why does theta rising with experience matter?
 
 This single finding captures why zazen is worth understanding as trainable. A beginner sitting in zazen and a Zen monk sitting in zazen do not have the same brain activity — the monk shows the deeper theta signature the beginner hasn't developed yet. The difference isn't talent or belief; it's accumulated practice.
 

@@ -38,13 +38,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: HARDWARE RHYTHM ]
+## How do central pattern generators create rhythm?
 
 CPGs operate on the principle of mutual inhibition between neurons. This is the biological analog of a pendulum or a CPU clock generator. They allow us to perform complex mechanical work in 'Background Mode.' Hacking the CPG allows athletes and biohackers to reach a state of 'Effortless Motion.'
 
 ---
 
-## [ SECTION 2: REBOOTING THE PATTERN ]
+## What weakens your body's movement rhythms?
 
 The modern environment 'breaks' CPG firmware. Monotonous movement and lack of sensory diversity lead to the degradation of rhythmic circuits. To restore them, we must input non-standard signals, forcing these neural loops to recalibrate under new load conditions.
 

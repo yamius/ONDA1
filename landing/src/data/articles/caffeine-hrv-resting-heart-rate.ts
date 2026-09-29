@@ -37,7 +37,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The half-life is the whole story
+## Section 1: How long does caffeine stay in your body?
 
 Caffeine's half-life averages **five to six hours**. That is the number almost nobody accounts for. A coffee at 3 p.m. means roughly half its caffeine is still in you at 8 or 9 p.m., and a meaningful fraction past midnight. You don't feel it as a jolt anymore — tolerance blunts the *sensation* long before it clears the *effect* — but your autonomic nervous system is still reading it.
 
@@ -45,9 +45,9 @@ The result is a low, steady tilt toward the [sympathetic](/glossary/sympathetic-
 
 ---
 
-## Section 2: What it does to the overnight signal
+## Section 2: Does caffeine affect your HRV and resting heart rate at night?
 
-Caffeine leaves a signature in three places ONDA actually watches:
+Yes — caffeine leaves a signature in three places ONDA actually watches:
 
 - **Resting heart rate ticks up.** A stimulant keeps the baseline pulse a few beats higher than it would otherwise settle — a small rise, but one that shows against your own corridor.
 - **Overnight HRV flattens.** With sympathetic tone held up, beat-to-beat [variability](/glossary/heart-rate-variability) — the marker of parasympathetic recovery — reads lower. Sleep studies find higher LF/HF ratios and QT variability during REM after evening caffeine: the autonomic fingerprint of a nervous system that never fully let go.
@@ -57,9 +57,9 @@ None of this is dramatic on any single night. It is a *tax*, not a catastrophe �
 
 ---
 
-## Section 3: Why there's no universal cutoff
+## Section 3: What time should you stop drinking coffee?
 
-Here is the part the "no caffeine after 2 p.m." rule gets wrong: **the right cutoff is not the same for two people, and it isn't willpower.** It's genetics and metabolism. Fast metabolizers clear caffeine quickly and can drink it late with little cost; slow metabolizers carry an afternoon cup deep into the night. Habitual heavy users develop partial tolerance to the acute autonomic effect; occasional users get hit harder.
+There's no universal cutoff — here is the part the "no caffeine after 2 p.m." rule gets wrong: **the right cutoff is not the same for two people, and it isn't willpower.** It's genetics and metabolism. Fast metabolizers clear caffeine quickly and can drink it late with little cost; slow metabolizers carry an afternoon cup deep into the night. Habitual heavy users develop partial tolerance to the acute autonomic effect; occasional users get hit harder.
 
 So a population rule is the wrong tool. The only cutoff that means anything is *yours*, and the only way to find it is to watch how your own overnight numbers respond to caffeine at different times.
 

@@ -29,15 +29,15 @@ const article: Article = {
   content: `
 OM chanting — the vocalized hum of the ancient Indian mantra — appears to calm the brain's emotion centers, and brain imaging offers a glimpse of how. In an fMRI study, chanting OM was accompanied by significant deactivation of the limbic system: the amygdala (the brain's threat detector), the hippocampus, and the orbitofrontal and cingulate cortex. The authors noted that a similar pattern is reported with clinical vagus nerve stimulation, used medically for depression and epilepsy — suggesting OM chanting may engage related calming circuitry, without any device. And when participants made a similar but non-humming sound ("ssss"), the deactivation did not appear, pointing to the resonant hum itself.
 
-## What the brain imaging found
+## What does OM chanting do to the brain?
 
-The study (Kalyani et al., 2011) scanned volunteers with fMRI while they chanted OM, compared with rest and with a control sound. During OM, researchers observed deactivation — a quieting — across limbic regions on both sides of the brain: the amygdala, hippocampus, parahippocampal gyri, orbitofrontal cortex, anterior cingulate and thalamus. These are regions that generate and process fear, threat and strong emotion.
+In brain imaging, OM chanting quieted the brain's emotional (limbic) regions. The study (Kalyani et al., 2011) scanned volunteers with fMRI while they chanted OM, compared with rest and with a control sound. During OM, researchers observed deactivation — a quieting — across limbic regions on both sides of the brain: the amygdala, hippocampus, parahippocampal gyri, orbitofrontal cortex, anterior cingulate and thalamus. These are regions that generate and process fear, threat and strong emotion.
 
 The control condition is what makes it interesting. Saying "ssss" — similar effort, but without OM's vibrating hum — did not produce the same deactivation. That suggests the effect isn't just from making a sound or from the effort of vocalizing, but from the resonant quality of OM. The honest caveat: it was a small study of about a dozen volunteers, so it is an intriguing signal rather than settled neuroscience.
 
-## The vagus nerve connection
+## Does OM chanting stimulate the vagus nerve?
 
-Why would humming a syllable quiet the amygdala? The leading hypothesis is the vagus nerve. OM produces a strong vibration in the throat and is felt in the ears. The vagus nerve has a branch in the larynx and an auricular branch in the ear, and the authors proposed that OM's vibration stimulates these branches — shifting autonomic balance toward parasympathetic "rest and digest" and quieting the limbic system. That is why they compared the pattern with clinical vagus nerve stimulation (VNS). The comparison is a hypothesis about mechanism, not proof that chanting equals a medical device.
+Possibly — the vagus nerve is the leading hypothesis for why humming a syllable would quiet the amygdala. OM produces a strong vibration in the throat and is felt in the ears. The vagus nerve has a branch in the larynx and an auricular branch in the ear, and the authors proposed that OM's vibration stimulates these branches — shifting autonomic balance toward parasympathetic "rest and digest" and quieting the limbic system. That is why they compared the pattern with clinical vagus nerve stimulation (VNS). The comparison is a hypothesis about mechanism, not proof that chanting equals a medical device.
 
 Heart-rhythm research fits the picture: studies of OM chanting and humming report increases in high-frequency HRV, the marker associated with vagal (parasympathetic) activity.
 
@@ -45,7 +45,7 @@ Heart-rhythm research fits the picture: studies of OM chanting and humming repor
 
 Mechanically, OM chanting is humming breath with meaning attached. It shares the core of [Bhramari, the humming bee breath](/articles/humming-breath-vagus): vibration in the larynx plus a long, controlled exhale. OM adds resonance and, for many people, the focus a mantra provides. If slow breathing calms through pace and Bhramari through hum, OM adds a third route — resonant sound — and it's the one with brain-imaging work behind it. Contrast the fast, activating breath of [Bhastrika](/articles/bhastrika-pranayama-brain-anxiety), which reaches the emotional brain by a very different path. For more everyday options, see [vagus nerve exercises](/articles/vagus-nerve-exercises).
 
-## How to practice OM chanting
+## How do you practice OM chanting?
 
 - **Sit comfortably** with a straight spine and relaxed shoulders.
 - **Inhale slowly through the nose**, then chant "OM" on a long, steady exhale — let the "O" open and the "M" hum, feeling the vibration in your throat, chest and head.

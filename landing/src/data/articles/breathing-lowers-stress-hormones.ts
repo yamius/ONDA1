@@ -35,16 +35,16 @@ HRV is an excellent, non-invasive window into your nervous system, but it's an i
 
 Japanese physiology research took the harder path. By collecting saliva and urine before and after breathing sessions, these studies could confirm not just that the heart rhythm shifted, but that the underlying stress chemistry changed too. That closes an important gap: it shows the calm is real at the hormonal level, not only in the beat-to-beat pattern.
 
-## What the studies found
+## Does breathing lower cortisol and adrenaline?
 
-Two Japanese studies stand out, both using conscious abdominal (diaphragmatic) breathing:
+Yes — in two Japanese studies of conscious abdominal (diaphragmatic) breathing, stress hormones dropped significantly:
 
 - **Healthy women (11 participants).** During abdominal breathing, frequency analysis of the heartbeat showed the parasympathetic system became dominant. In urine samples, **noradrenaline, adrenaline and cortisol all dropped significantly** after abdominal breathing. Serotonin, linked to alertness, did not change. The conclusion: abdominal breathing is not a stressor on the body — it reliably maintains a relaxed state.
 - **Healthy older adults (14 participants, Tanaka et al.).** During conscious abdominal breathing, heart rate fell, both systolic and diastolic blood pressure dropped, and the parasympathetic index rose. Stress hormones decreased significantly, and the breathing was not a burden for older participants — it kept them relaxed rather than taxing them (see also [breathing exercises for older adults](/articles/breathing-exercises-older-adults)).
 
 Together these show a consistent picture across ages and sexes: slow abdominal breathing shifts you toward parasympathetic dominance *and* lowers the measurable hormones of stress.
 
-## Why abdominal breathing does this
+## Why does abdominal breathing reduce stress hormones?
 
 The mechanism ties back to the [vagus nerve](/glossary/vagus-nerve) and the baroreflex. Slow, deep abdominal breathing — roughly six breaths per minute — brings the heart-rate and blood-pressure rhythms into resonance, strongly activating the baroreflex (the blood-pressure regulating loop in your arteries). Japanese HRV-biofeedback research proposes that this baroreflex activation projects to the hypothalamus, influencing the body's broader autonomic and hormonal homeostasis — including the stress-hormone axis.
 

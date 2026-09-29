@@ -49,9 +49,9 @@ The adrenal glands are not the problem — they are executing commands correctly
 
 ---
 
-## The Architecture: Power Management Unit (PMU)
+## When is cortisol healthy and when is it chronic stress?
 
-Power management in ONDA is divided into three distinct operating zones — defined by the relationship between cortisol output, neural state, and the load the output is actually serving:
+Cortisol is essential at baseline and useful in short performance spikes, but becomes a problem as chronic stress (Redline). Power management in ONDA is divided into three distinct operating zones — defined by the relationship between cortisol output, neural state, and the load the output is actually serving:
 
 **Baseline:** The minimum cortisol level required to maintain metabolism, immune surveillance, circadian timing, and alertness. Cortisol is not a "bad" hormone — at baseline, it is essential. Operating in the Alpha rhythm fits precisely within this range: Alpha state correlates with cortisol levels sufficient for metabolic function but below the threshold at which neuroinflammation, receptor desensitization, and hippocampal damage occur. Baseline is sustainable indefinitely.
 
@@ -61,9 +61,9 @@ Power management in ONDA is divided into three distinct operating zones — defi
 
 ---
 
-## The Critical Error: Thermal Runaway
+## What happens to your body under chronic stress?
 
-Without an active limiter, the endocrine system enters Thermal Runaway — the same self-amplifying failure cascade described in the Quiet Mode article, now viewed from the hormonal substrate:
+Under chronic stress, receptors stop responding to cortisol at normal levels, the adrenals fire at non-threats, and you end up anxious but unable to focus. Without an active limiter, the endocrine system enters Thermal Runaway — the same self-amplifying failure cascade described in the Quiet Mode article, now viewed from the hormonal substrate:
 
 **Signal Desensitization:** Receptors stop responding to cortisol at normal concentrations. The HPA axis compensates by increasing output. Basal cortisol rises. The system now requires elevated cortisol just to feel normal — and even higher cortisol to produce the performance spike it previously achieved at lower levels. The classic adrenal exhaustion trajectory is not the glands "running out" of cortisol; it is the progressive receptor downregulation that makes the existing cortisol output increasingly ineffective.
 
@@ -73,9 +73,9 @@ Without an active limiter, the endocrine system enters Thermal Runaway — the s
 
 ---
 
-## ONDA Protocol: Setting the Limiter
+## How can you keep stress hormones from running away?
 
-Three techniques to calibrate the Adrenal Governor and prevent Redline entry:
+Three techniques keep stress hormones in check — HRV thresholding, daily Alpha-state breathing sessions, and an anticipatory reset before predictable stress:
 
 ### Technique 1: HRV Thresholding (Load Indicator Monitoring)
 

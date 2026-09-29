@@ -40,13 +40,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: ATP AND THE VOLTAGE GAP ]
+## What happens when your mitochondria run low on power?
 
-Energy in the human machine is a matter of electrical potential. Mitochondria produce ATP by pumping protons across a membrane, creating a 'Voltage' that drives cellular work. When mitochondria become 'leaky' or sparse, your system experiences brownouts—brain fog, fatigue, and slow recovery. Increasing mitochondrial density effectively raises your system's 'RAM' for physical and cognitive tasks.
+When mitochondria become 'leaky' or sparse, your system experiences brownouts—brain fog, fatigue, and slow recovery. Energy in the human machine is a matter of electrical potential: mitochondria produce ATP by pumping protons across a membrane, creating a 'Voltage' that drives cellular work. Increasing mitochondrial density effectively raises your system's 'RAM' for physical and cognitive tasks.
 
 ---
 
-## [ SECTION 2: THE PGC-1α MASTER SWITCH ]
+## What triggers the growth of new mitochondria?
 
 The primary command for building new mitochondria is the activation of the PGC-1α protein. This is the 'Master Switch' for mitochondrial biogenesis. In the ONDA model, PGC-1α is triggered by specific stressors that signal the hardware to expand its energy capacity. Without these signals, the system stays in a low-power, 'Legacy' state.
 

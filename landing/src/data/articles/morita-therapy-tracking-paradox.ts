@@ -34,15 +34,15 @@ Morita developed his approach treating anxiety and what were then called neurose
 
 *Psychic interaction* is the mechanism. Fix your attention hard on a sensation — a skipped heartbeat, a tight chest, a flush of warmth — and it sharpens and locks in. The heightened sensation grabs more attention; the attention amplifies the sensation. What might have been a passing flicker becomes a loud, fixed symptom, purely through the loop of watching it. Modern psychology describes similar attention-feedback effects; Morita mapped it a hundred years ago.
 
-## Why fighting a symptom backfires
+## Why does fighting anxiety make it worse?
 
 Morita's second key idea is that trying to *control* or *eliminate* a feeling usually makes it stronger. He called this counterproductive struggle *hakarai* — the effort to force an unwanted feeling away. The harder you push against anxiety, the more you feed the cycle: the effort itself is attention on the thing you're trying to escape.
 
 This is why "just calm down" fails. Feelings arise on their own and can't be suppressed on command. The struggle is the trap.
 
-## Arugamama: accepting things as they are
+## What is arugamama in Morita therapy?
 
-Morita's remedy is *arugamama*. Rather than battling anxiety or a symptom, you let it be present without trying to erase it, and redirect your energy — what Morita called the "desire for life" (生の欲望) — into constructive action. It is often described as a Japanese precursor to modern acceptance-based approaches, predating them by decades.
+*Arugamama* is Morita's remedy: rather than battling anxiety or a symptom, you let it be present without trying to erase it, and redirect your energy — what Morita called the "desire for life" (生の欲望) — into constructive action. It is often described as a Japanese precursor to modern acceptance-based approaches, predating them by decades.
 
 The shift is subtle but powerful: stop trying to make the feeling go away, stop monitoring it for change, and turn toward what you actually want to do. The symptom, no longer fed by attention and struggle, tends to loosen on its own. Its Japanese sibling, [Naikan](/articles/naikan-japanese-reflection), works on a different axis — your relationships and your past — but by the same principle of reorganizing attention rather than suppressing thought.
 

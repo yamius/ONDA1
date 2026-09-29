@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The most personal number you don't know
+## Section 1: What is a normal resting breathing rate?
 
 At rest, a typical adult breathes somewhere between about **12 and 20 times a minute** — but the population range isn't the point. Your own resting rate is remarkably stable: night after night, it settles into a narrow personal band. That stability is exactly what makes a *departure* meaningful. When your normal is 14 and you're suddenly running 17 overnight, that's not noise — it's a three-breath shift in one of your steadiest signals.
 
@@ -44,7 +44,7 @@ Like resting heart rate and [HRV](/glossary/heart-rate-variability), respiratory
 
 ---
 
-## Section 2: What makes it drift
+## Section 2: What makes your breathing rate change?
 
 Respiratory rate is wired straight into your autonomic state, so it moves with the things that load your system:
 
@@ -73,9 +73,9 @@ The firewall, plainly: an elevated respiratory rate is **descriptive, not diagno
 
 ---
 
-## Section 5: The one you can also steer
+## Section 5: Can you control your breathing rate?
 
-Here's what makes respiratory rate unique among your vitals: it's the only one you can *directly* move. You can't will your heart rate down, but you can slow your breath — and when you do, the rest of the system follows. Slow, [exhale-led breathing](/articles/coherent-breathing-guide) drops the rate on purpose, raises vagal tone, and pulls the whole autonomic state toward calm. For the deeper mechanics of breathing tolerance and CO₂, see [CO₂ tolerance](/articles/co2-tolerance-expanding-oxygen-limit); for why a drifting baseline is worth watching at all, see [your baseline knows first](/articles/your-baseline-knows-first).
+Yes — and that makes respiratory rate unique among your vitals: it's the only one you can *directly* move. You can't will your heart rate down, but you can slow your breath — and when you do, the rest of the system follows. Slow, [exhale-led breathing](/articles/coherent-breathing-guide) drops the rate on purpose, raises vagal tone, and pulls the whole autonomic state toward calm. For the deeper mechanics of breathing tolerance and CO₂, see [CO₂ tolerance](/articles/co2-tolerance-expanding-oxygen-limit); for why a drifting baseline is worth watching at all, see [your baseline knows first](/articles/your-baseline-knows-first).
 
 > **The Hack:** Learn your normal resting respiratory rate the way you know your resting pulse. It's one of your steadiest signals, so a two-or-three-breath rise that holds overnight is an early, honest flag — and it's the one vital you can also reach in and steer, one slow breath at a time.
 

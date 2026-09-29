@@ -45,7 +45,7 @@ You can't manage a state you can't detect. Everything downstream — calmer reac
 
 ---
 
-## Section 2: What "consciousness training" actually is — and what it isn't
+## Section 2: What is consciousness training?
 
 Strip the word of its baggage and three concrete, trainable skills remain:
 
@@ -57,7 +57,7 @@ That's it. Together they are the skill of *noticing-and-steering* your own state
 
 ---
 
-## Section 3: You can't train what you can't see
+## Section 3: Why is self-awareness so hard to build alone?
 
 The reason self-awareness is so hard to build alone: the signal is faint and you're grading your own homework. Sit and "observe your state" and mostly you get a story *about* your state, not the state itself.
 
@@ -80,7 +80,7 @@ ONDA is **free to start** (first reading in about 90 seconds, 3 free practices t
 
 ---
 
-## Section 5: How to actually build the observer
+## Section 5: How do you build self-awareness day to day?
 
 Treat it like training, not like waiting for insight. **Practise with a live signal** so noticing has something to calibrate against — try predicting your pulse or breathing rate before you look, then check, because closing that gap between what you *feel* and what's *true* is the whole skill. **Follow a sequence** instead of cherry-picking by mood; the skill compounds in order. **Aim your attention on purpose** for short daily reps — steering focus back to the breath *is* the exercise, not a failure when it wanders. And **build the habit off the mat**: once the internal signal is legible, you start catching the clenched jaw and the shallow breath in real life, hours earlier than you used to.
 

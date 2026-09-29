@@ -39,13 +39,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: THE DATA BUS (VAGUS NERVE) ]
+## What role does the vagus nerve play in neuromodulation?
 
 The Vagus Nerve is the primary communication channel between your CPU (the brain) and the rest of the system (the organs). Modulating this nerve allows for an immediate system-wide shift from 'Emergency Mode' (Sympathetic) to 'System Recovery' (Parasympathetic). In 2026, this no longer requires implants; non-invasive wearable modules targeting the auricular branch or the neck are sufficient to bypass the standard hormonal lag.
 
 ---
 
-## [ SECTION 2: NEURAL OVERCLOCKING (tDCS) ]
+## What is tDCS (transcranial direct current stimulation)?
 
 Transcranial Direct Current Stimulation (tDCS) allows for the manipulation of neuronal excitability thresholds. This is effectively 'overclocking' specific brain regions: we apply a current to the Prefrontal Cortex to accelerate data processing or to the Motor Cortex to expedite the encoding of new physical skills.
 

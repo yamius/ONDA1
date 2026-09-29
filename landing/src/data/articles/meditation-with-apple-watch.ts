@@ -34,17 +34,17 @@ const article: Article = {
 
 ---
 
-## Section 1: Why the Apple Watch is a natural meditation instrument
+## Section 1: Why is the Apple Watch good for meditation?
 
-Meditation and breathwork work by shifting your autonomic balance toward the calm, [parasympathetic](/glossary/parasympathetic-nervous-system) side — and that shift shows up in your heartbeat as rising [heart-rate variability](/glossary/heart-rate-variability). The Apple Watch reads your pulse continuously, which makes it perfectly placed to catch that shift *as it happens*.
+The Apple Watch reads your pulse continuously, so it can catch the calming shift of meditation as it happens: meditation and breathwork work by shifting your autonomic balance toward the calm, [parasympathetic](/glossary/parasympathetic-nervous-system) side — and that shift shows up in your heartbeat as rising [heart-rate variability](/glossary/heart-rate-variability). The Apple Watch reads your pulse continuously, which makes it perfectly placed to catch that shift *as it happens*.
 
 The gap is that Apple's built-in tools mostly *record* — a Mindfulness minute here, an HRV data point there — rather than feed the signal back to you live while you breathe. Recording tells you what happened. **Biofeedback** shows you the change in real time, so you can steer it. That live loop is what turns a passive tracker into an active meditation coach.
 
 ---
 
-## Section 2: What "meditation with Apple Watch biofeedback" looks like
+## Section 2: What does meditation with Apple Watch biofeedback look like?
 
-In practice it's simple. A biofeedback app takes the Watch's continuous pulse, paces your breathing, and renders your heart rhythm on screen as you go. Slow the breath, lengthen the exhale, and you watch the line smooth into a wide, even wave — the visible signature of [coherence](/glossary/coherence). Speed up or tense, and it ripples apart. You are, in effect, playing your own nervous system and getting instant marks.
+In practice it's simple: a biofeedback app takes the Watch's continuous pulse, paces your breathing, and renders your heart rhythm on screen as you go. Slow the breath, lengthen the exhale, and you watch the line smooth into a wide, even wave — the visible signature of [coherence](/glossary/coherence). Speed up or tense, and it ripples apart. You are, in effect, playing your own nervous system and getting instant marks.
 
 That feedback does two things a timer can't: it removes the "am I doing this right?" doubt, and it teaches your body the exact pace that calms *you*, faster than guided audio alone.
 

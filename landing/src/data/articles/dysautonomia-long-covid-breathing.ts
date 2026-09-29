@@ -38,7 +38,7 @@ const article: Article = {
 
 ---
 
-## Section 1: The system that runs in the background
+## Section 1: What is the autonomic nervous system?
 
 Your [autonomic nervous system](/glossary/autonomic-nervous-system) (ANS) is the biocomputer's background process. You never consciously run it, yet it sets your heart rate, dilates your pupils, moves blood to your legs when you stand, and switches you between "fight-or-flight" (sympathetic) and "rest-and-digest" (parasympathetic).
 
@@ -48,9 +48,9 @@ It was largely a niche diagnosis until a wave of post-viral illness put it on th
 
 ---
 
-## Section 2: Why it shows up as low HRV
+## Section 2: Why does dysautonomia show up as low HRV?
 
-Here's the detail that makes this trackable. The single best window into autonomic balance is [heart-rate variability](/glossary/heart-rate-variability) — the beat-to-beat variation in your pulse. A relaxed, parasympathetically-toned system produces *irregular*, adaptive spacing between beats (high HRV). A system stuck in sympathetic overdrive produces metronomic, rigid beats (low HRV).
+The single best window into autonomic balance is [heart-rate variability](/glossary/heart-rate-variability) — the beat-to-beat variation in your pulse. A relaxed, parasympathetically-toned system produces *irregular*, adaptive spacing between beats (high HRV). A system stuck in sympathetic overdrive produces metronomic, rigid beats (low HRV).
 
 Dysautonomia, almost by definition, tends to drag HRV down and keep it there. That is why post-viral autonomic studies lean so heavily on HRV as a marker — it is a non-invasive readout of the exact system that's misbehaving (Shaffer & Ginsberg 2017).
 

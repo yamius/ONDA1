@@ -61,13 +61,13 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: TSH AS A SYSTEMIC STRESS MARKER ]
+## Why do stress and poor sleep raise TSH?
 
-TSH is extremely sensitive to external noise. Caloric deficits, chronic sleep deprivation, or excess cortisol force the brain to artificially 'downclock' thyroid activity, raising TSH as a protective measure. The system perceives these as 'famine conditions' and shifts the metabolism into survival mode. At ONDA, we learn to distinguish between actual hardware failure (pathology) and temporary software glitches caused by stress.
+TSH rises under stress because caloric deficits, chronic sleep deprivation, or excess cortisol force the brain to artificially 'downclock' thyroid activity, raising TSH as a protective measure. The system perceives these as 'famine conditions' and shifts the metabolism into survival mode. At ONDA, we learn to distinguish between actual hardware failure (pathology) and temporary software glitches caused by stress.
 
 ---
 
-## [ SECTION 2: COGNITIVE EFFICIENCY ]
+## How does thyroid function affect mental clarity?
 
 The thyroid gland determines the speed of neural transmission. An optimal TSH range (at ONDA, we aim for a 'functional optimum' of 0.5–2.0 mIU/L) ensures maximum mental clarity. Moving outside these parameters leads to 'input lag' in the prefrontal cortex—you lose the ability for deep focus and rapid decision-making.
 

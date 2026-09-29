@@ -28,7 +28,7 @@ const article: Article = {
   content: `
 Not all yoga poses calm you equally — different postures shift your heart rate and blood pressure in different directions, and researchers, many of them in India, have measured the differences. Relaxation and forward-folding poses tend to lower heart rate and blood pressure by shifting you toward "rest and digest," while inversions, backbends, and standing poses can transiently raise them. Knowing which is which lets you use yoga deliberately: calming poses to wind down, and the understanding that a vigorous sequence is activating, not sedating, in the moment. Even a single session can produce a short-lived dip in blood pressure afterward; lasting change comes from regular practice.
 
-## Poses are not all the same
+## Do all yoga poses affect heart rate the same way?
 
 The popular image of yoga as uniformly relaxing is misleading. A pose's effect on your cardiovascular system depends on its physical demand and body position:
 
@@ -38,7 +38,7 @@ The popular image of yoga as uniformly relaxing is misleading. A pose's effect o
 
 Indian comparative studies measured heart rate and blood pressure across different asanas in healthy volunteers and found distinct cardiovascular responses by body position and effort. The calm of yoga is real — but it comes mostly from the gentle, relaxation-oriented parts of a practice.
 
-## What the research measured
+## Does yoga lower blood pressure?
 
 **A single session lowers pressure briefly.** Crossover trials of a single flowing yoga session found systolic pressure lower shortly afterward than after sitting — but back to baseline within about an hour. A session gives a real, immediate dip; lasting change needs regular practice.
 

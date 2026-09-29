@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Naming a feeling changes the brain that's feeling it
+## Section 1: Does naming a feeling calm the brain?
 
 In a landmark neuroimaging study — Lieberman and colleagues, *"Putting Feelings Into Words"* (2007) — researchers found that the simple act of labeling an emotion **dampened activity in the amygdala**, the brain's fast threat detector, while engaging the prefrontal regions that regulate it. Putting the feeling into words literally shifted the processing from raw alarm toward deliberate regulation.
 
@@ -44,7 +44,7 @@ The folk version — *name it to tame it* — turns out to be neurologically acc
 
 ---
 
-## Section 2: Why an unnamed feeling stays loud
+## Section 2: Why does an unnamed feeling stay so intense?
 
 Left unlabeled, an emotion runs as pure signal — arousal without a handle. It keeps the threat system engaged, drives rumination (the mind circling the same formless dread), and feeds the same [sympathetic](/glossary/sympathetic-nervous-system) activation that shows up in a fast pulse and shallow breath. The feeling and the body loop, each amplifying the other, with no exit because there's nothing to grab onto.
 
@@ -52,7 +52,7 @@ Naming is the handle. It doesn't deny the feeling — it makes it *addressable*.
 
 ---
 
-## Section 3: Writing it down goes further than thinking it
+## Section 3: Is writing feelings down better than just thinking them?
 
 Affect labeling works in your head; it works better on the page. There's a long research line — most associated with James Pennebaker's **expressive writing** studies — showing that writing about emotional experiences, even for a few minutes over a few days, is associated with measurable improvements in stress and wellbeing. Writing forces the vague into the specific: it demands a word, a subject, a shape. That extra structure is part of the mechanism, not a side effect.
 

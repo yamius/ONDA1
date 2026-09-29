@@ -44,7 +44,7 @@ That's passive tracking: a dashboard of the past. It's genuinely useful for spot
 
 ---
 
-## Section 2: What "training with a wearable" means
+## Section 2: What does training with a wearable mean?
 
 Training turns the wearable from a reporter into a coach. It means using the data as a *cue for action*, and — better — using a live signal to practise a skill in real time:
 
@@ -71,7 +71,7 @@ Being straight about the boundaries: ONDA is **not** a passive all-day tracker �
 
 ---
 
-## Section 5: Building the self-tracking + self-training loop
+## Section 5: How do you combine self-tracking with self-training?
 
 Make the two halves talk to each other. **Keep your tracker** for the passive trend — that's its job and it's good at it. **Add a training tool** that turns a signal into a practice. **Let the data trigger the practice**: a low-recovery morning is a cue for an easy day and a down-regulation session, not just a red number. And **train the live signal** a few minutes daily so the skill is there when the data flags it. That's the complete quantified-self loop the tracking-only setup was always missing.
 

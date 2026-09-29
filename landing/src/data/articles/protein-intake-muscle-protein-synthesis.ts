@@ -32,15 +32,15 @@ const article: Article = {
 
 ---
 
-## Section 1: The real target
+## Section 1: How much protein do you need per day?
 
-The RDA of 0.8 g/kg is a floor — the minimum to *avoid deficiency* in a sedentary person, not the level for performance or body composition. The evidence-based range for active people, from the ISSN and ACSM position stands, is **1.4–2.0 g/kg/day**. A large meta-analysis (Morton 2018) put the plateau for maximising muscle gain at about **1.6 g/kg**; in a calorie deficit, pushing to ~2.0–2.4 g/kg better protects lean mass.
+More than the RDA: 0.8 g/kg is a floor — the minimum to *avoid deficiency* in a sedentary person, not the level for performance or body composition. The evidence-based range for active people, from the ISSN and ACSM position stands, is **1.4–2.0 g/kg/day**. A large meta-analysis (Morton 2018) put the plateau for maximising muscle gain at about **1.6 g/kg**; in a calorie deficit, pushing to ~2.0–2.4 g/kg better protects lean mass.
 
 Run your number against your bodyweight and goal in the [Protein Intake Calculator](/tools/protein) — it also splits the target across meals.
 
 ---
 
-## Section 2: Distribution beats the single hit
+## Section 2: Does protein timing matter, or only the daily total?
 
 Total daily protein matters most, but *how you spread it* matters too. Muscle protein synthesis is triggered when a meal crosses a **leucine threshold** — roughly **0.4 g of protein per kg of bodyweight per meal**. One giant dinner can overshoot what a single session of synthesis can use; 3–4 evenly spaced feedings keep the build queue running all day.
 

@@ -32,7 +32,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What Zone 2 actually is
+## Section 1: What is Zone 2 training?
 
 Zone 2 is the intensity just below your **first lactate threshold** — the point where blood lactate starts to climb above resting levels (roughly 2 mmol/L). In practice it sits around **60–70% of your maximum heart rate**, and it has one unmistakable signature: you can hold a full conversation, but you'd rather not. Breathe through your nose, talk in complete sentences — if you're gasping, you've drifted into Zone 3.
 
@@ -40,7 +40,7 @@ The exact band is personal. Pull your numbers — and all five training zones �
 
 ---
 
-## Section 2: Why the base layer matters
+## Section 2: Why does Zone 2 training matter?
 
 At this intensity your cells preferentially burn fat, and the training stimulus targets the slow-twitch fibres and their power plants. Over weeks, three things upgrade:
 

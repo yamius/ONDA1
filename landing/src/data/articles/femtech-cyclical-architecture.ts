@@ -39,13 +39,13 @@ The diagram below maps your [hormonal firmware](/articles/molecular-psychology-h
 
 ---
 
-## [ SECTION 1: HORMONAL FIRMWARE UPDATES ]
+## How does the menstrual cycle change brain performance?
 
-Hormonal firmware updates weekly. In the Follicular Phase (MAX_PERFORMANCE_MODE), the brain is optimized for neuroplasticity and rapid learning. In the Luteal Phase (SYSTEM_MAINTENANCE_MODE), the priority shifts to resource conservation and thermoregulation. Ignoring these toggles is a violation of the system's base code.
+Brain performance shifts across the cycle, with hormonal firmware updating weekly. In the Follicular Phase (MAX_PERFORMANCE_MODE), the brain is optimized for neuroplasticity and rapid learning. In the Luteal Phase (SYSTEM_MAINTENANCE_MODE), the priority shifts to resource conservation and thermoregulation. Ignoring these toggles is a violation of the system's base code.
 
 ---
 
-## [ SECTION 2: METABOLIC FLEXIBILITY ]
+## How does the menstrual cycle affect metabolism?
 
 Insulin sensitivity and amino acid requirements fluctuate based on estrogen levels. We don't just 'count calories'—we calibrate the fuel mix to match the current metabolic request. This allows for the maintenance of body composition without putting undue stress on the endocrine axis.
 

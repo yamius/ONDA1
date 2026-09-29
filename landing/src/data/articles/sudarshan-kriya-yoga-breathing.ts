@@ -30,7 +30,7 @@ const article: Article = {
   content: `
 Sudarshan Kriya Yoga (SKY) is a structured breathing practice that has been studied more seriously than almost any other — including trials for depression, PTSD, and stress. In a landmark Indian study at NIMHANS, SKY was compared head-to-head with electroconvulsive therapy (ECT) and the antidepressant imipramine in patients with melancholic depression: its remission rate was lower than ECT but comparable to the antidepressant. Other trials report lower cortisol and reduced PTSD symptoms, including in military veterans. It's a striking body of evidence for a breathing technique — though, as we'll cover honestly, the overall quality is mixed and larger trials are still needed.
 
-## What Sudarshan Kriya is
+## What is Sudarshan Kriya Yoga?
 
 SKY is not a single breath but a structured sequence, taught over several days and then practiced regularly. It integrates several elements in a set order:
 
@@ -55,11 +55,11 @@ The research on SKY is unusually ambitious for a breathing technique:
 
 This record deserves an honest frame. Systematic reviews conclude that while several trials report positive effects on mood and stress, the overall evidence is of **mixed quality**, and larger, well-controlled randomized trials are needed before firm conclusions. Many studies are small; some lack rigorous controls; some were run by researchers connected to the organization that teaches it. The NIMHANS comparison is striking but is one study, decades old. So the fair statement is: promising and unusually serious for breathwork, but not definitive. SKY is a supportive practice, not a replacement for treatment of depression or PTSD — anyone with those conditions should work with a professional.
 
-## Why it might work
+## Why might Sudarshan Kriya work?
 
 Several mechanisms are proposed. The slow Ujjayi component shifts the body toward parasympathetic dominance, amplifying the normal breath-linked rise and fall of heart rate (respiratory sinus arrhythmia) — the same lever as [coherent breathing](/articles/coherent-breathing-guide). The rhythmic, high-ventilation cycling adds a strong activating contrast. And the reported drop in cortisol points to a genuine shift in stress chemistry, not just a feeling of relaxation (see [how to lower cortisol](/articles/how-to-lower-cortisol)).
 
-## Practicing SKY
+## How do you learn Sudarshan Kriya?
 
 SKY is unusual among the techniques on this site in that it's **taught, not self-learned.** The full Sudarshan Kriya is traditionally learned in a structured course with a trained instructor, because it combines forceful and slow techniques in a specific sequence that's hard to reproduce from text. If you're drawn to it, the appropriate path is a proper course, then regular home practice. The gentler component — slow Ujjayi-style breathing — you can practice on your own. The fast parts carry the same cautions as Bhastrika: seated only, never in water or while driving, and not without medical advice if you have heart or lung conditions, uncontrolled blood pressure, or are pregnant.
 

@@ -36,7 +36,7 @@ Meditation has a feedback problem. In the gym, you see the weight go up. Running
 
 This isn't a failure of willpower; it's a failure of feedback. The benefits are real and measurable — research shows changes in brain structure, stress hormones and HRV within weeks — but the *experience* is subtle. Bridging that gap between real change and felt change is the single most useful thing you can do to make meditation stick.
 
-## What you can actually measure
+## What can you measure to track meditation progress?
 
 Your autonomic nervous system — the part meditation trains — leaves clear signals you can track:
 
@@ -51,9 +51,9 @@ The shift here is from asking "did that feel relaxing?" to seeing "my HRV rose a
 
 It also lets you experiment intelligently. You can see which practices shift your nervous system most — slow breathing, a body scan, a particular pace — and lean into what objectively works for *you*, rather than following generic advice.
 
-## An honest caveat: progress isn't linear
+## Is meditation progress linear?
 
-One important honesty: your numbers will bounce around day to day. HRV is sensitive to sleep, alcohol, stress and illness, so [a single low reading](/articles/how-to-measure-hrv-consistently) doesn't mean your practice failed — it usually means you slept badly or had a hard day. The signal is in the **trend over weeks**, not any single day. Chasing a perfect daily score is a trap (and can even become its own source of anxiety). The healthy way to measure progress is to watch the direction of your baseline over time, and otherwise let each session be what it is.
+No — your numbers will bounce around day to day. HRV is sensitive to sleep, alcohol, stress and illness, so [a single low reading](/articles/how-to-measure-hrv-consistently) doesn't mean your practice failed — it usually means you slept badly or had a hard day. The signal is in the **trend over weeks**, not any single day. Chasing a perfect daily score is a trap (and can even become its own source of anxiety). The healthy way to measure progress is to watch the direction of your baseline over time, and otherwise let each session be what it is.
 
 ## How to track your progress
 

@@ -31,13 +31,13 @@ Meditation may influence markers of cellular aging — but the honest answer is 
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## Telomeres, briefly
+## What are telomeres?
 
 Telomeres are protective caps at the ends of your chromosomes, like the plastic tips on shoelaces. Each time a cell divides, they shorten; when they get too short, the cell can no longer divide properly. Telomere length is therefore used as one marker of cellular aging, and chronic stress is known to accelerate telomere shortening — which is precisely why researchers wondered whether stress-reducing practices like meditation might slow it. Telomerase is the enzyme that can rebuild telomeres, and its activity is another marker of interest.
 
-## What the research honestly shows
+## Does meditation lengthen telomeres?
 
-The evidence is mixed, and honesty here matters more than hype:
+Possibly, but the evidence is mixed, and honesty here matters more than hype:
 
 - **Some studies show benefit linked to practice.** In a 12-week trial of Kirtan Kriya meditation (a chanting-based practice) versus music listening in adults with subjective cognitive decline, changes in telomerase activity correlated with the number of practice sessions — more practice, more effect. Improvements in memory also correlated with rises in telomerase and telomere length. A residential retreat study found meditation influenced disease-associated molecular signatures, though it also identified a strong "vacation effect" shared by non-meditating controls.
 - **Some rigorous trials show no effect.** A well-controlled 18-month meditation trial in older adults (the Age-Well study) found no significant effect on telomere length overall — consistent with an earlier 9-month controlled trial that also found none. However, secondary analysis suggested individual factors and responsiveness mattered: telomere maintenance improved in some subgroups.
@@ -49,7 +49,7 @@ The grown-up interpretation is this: meditation is **not** a proven fountain of 
 
 The practical takeaway isn't "meditate to live forever." It's that the well-established benefits of meditation — lower stress, better emotional regulation, improved HRV and cardiovascular health — are themselves linked to healthier aging, and the cellular research adds a tentative, practice-dependent layer on top. Meditate for the solid, measurable benefits; treat the anti-aging angle as a promising bonus, not a promise.
 
-## Why practice commitment is the theme
+## Does more meditation mean bigger cellular effects?
 
 Across the studies, one signal recurs: the cellular effects, where present, scale with practice time and engagement. This fits everything else we know about meditation — it's [dose-dependent and trainable](/articles/meditation-brain-changes-how-fast). Occasional, half-hearted practice is unlikely to move a marker as stable as telomere length; consistent, committed practice is where the (modest) signals appear. Once again, consistency is the lever.
 

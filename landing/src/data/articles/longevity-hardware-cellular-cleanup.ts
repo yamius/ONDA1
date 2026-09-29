@@ -43,13 +43,13 @@ const article: Article = {
 
 ---
 
-## Section 1: The Zombie Cell Problem
+## Section 1: What are zombie cells?
 
-Cellular Senescence is a protective mechanism that goes wrong. When a cell is too damaged to function, it should undergo apoptosis (programmed cell death). Instead, some cells linger, secreting a 'toxic cocktail' known as SASP. This creates systemic 'Noise' (inflammation), which accelerates the aging of your entire CPU and power grid.
+Zombie cells are senescent cells — the product of Cellular Senescence, a protective mechanism that goes wrong. When a cell is too damaged to function, it should undergo apoptosis (programmed cell death). Instead, some cells linger, secreting a 'toxic cocktail' known as SASP. This creates systemic 'Noise' (inflammation), which accelerates the aging of your entire CPU and power grid.
 
 ---
 
-## Section 2: Autophagy — The Recycling Script
+## Section 2: What is autophagy?
 
 [Autophagy](/glossary/autophagy) is your body's internal recycling program. During periods of nutrient scarcity, your cells start breaking down old, misfolded proteins and damaged organelles to create new energy. This 'Deep Clean' is essential for maintaining mitochondrial health and preventing the buildup of biological 'Junk Data.'
 

@@ -32,7 +32,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What the number means
+## Section 1: What does your VO₂max number mean?
 
 VO₂max is measured in millilitres of oxygen per kilogram of bodyweight per minute (ml/kg/min). It reflects the whole oxygen pipeline: lungs in, heart pumping, blood delivering, [mitochondria](/glossary/mitochondria) consuming. A bottleneck anywhere caps the number.
 
@@ -40,7 +40,7 @@ You don't need a lab to get a working estimate. The [VO₂max Estimator](/tools/
 
 ---
 
-## Section 2: The decline — and the override
+## Section 2: Does VO₂max decline with age?
 
 VO₂max falls about **10% per decade** after 30 if you do nothing. That decline is not a fixed law; it's an untrained default. Consistent aerobic work can hold a 50-year-old at the fitness of an untrained 30-year-old. You are not raising a number for vanity — you are buying back decades of capacity.
 

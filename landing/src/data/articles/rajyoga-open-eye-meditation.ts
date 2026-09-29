@@ -31,15 +31,15 @@ Rajyoga meditation, taught by the Brahma Kumaris, is unusual in one immediately 
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## What Rajyoga is
+## What is Rajyoga meditation?
 
 Rajyoga, in the Brahma Kumaris tradition, is a form of meditation practiced with open eyes and a soft gaze, often toward a point of light. Its classic "seed-stage" meditation moves through stages: focusing on a feeling of peace, realizing oneself as a soul (a point of conscious light), and a sense of communion with a supreme source. Unlike breath-focused or body-scan practices, it's primarily a practice of directed thought and self-identity — a reflective, awareness-based meditation rather than a concentration-on-sensation one.
 
 The open-eyed aspect is not incidental. It makes the practice usable in daily life — you can hold the meditative attitude with eyes open, in activity — and it keeps practitioners alert rather than drifting toward sleep, which is a common obstacle in eyes-closed meditation.
 
-## The measurable brain signature
+## What does Rajyoga meditation do to the brain?
 
-EEG research on experienced Rajyoga meditators reveals a specific pattern. Studying long-term practitioners during open-eyed seed-stage meditation, researchers found — compared to a resting baseline — **reduced delta activity and increased low-alpha activity.** Delta is associated with drowsiness and sleep; its reduction indicates the meditators were not drifting off despite the relaxed state. Increased low-alpha reflects a calm but alert, internally focused awareness.
+It shifts brain activity toward reduced delta and increased low-alpha, according to EEG research on experienced Rajyoga meditators. Studying long-term practitioners during open-eyed seed-stage meditation, researchers found — compared to a resting baseline — **reduced delta activity and increased low-alpha activity.** Delta is associated with drowsiness and sleep; its reduction indicates the meditators were not drifting off despite the relaxed state. Increased low-alpha reflects a calm but alert, internally focused awareness.
 
 Source-localization analysis showed the practice engaged specific brain networks — including executive-control and self-referential networks — consistent with its content: attention modulation and self-related processing (the focus on identity as "a soul"). In plain terms, the brain-activity pattern matched what the meditation is actually doing: calm, alert, self-reflective attention with open eyes. It's one of the traditions with a [distinct, experience-linked EEG signature](/articles/meditation-gamma-waves-experience).
 
@@ -49,7 +49,7 @@ The measurable effects aren't only in the brain. Research on the cardiorespirato
 
 Together, the brain and heart findings make Rajyoga a well-characterized practice: we can point to specific, measurable changes it produces, rather than relying only on practitioners' reports.
 
-## Why open-eyed meditation is worth knowing
+## Why meditate with your eyes open?
 
 For a lot of people, closing their eyes to meditate backfires — they get sleepy, or their mind races in the dark. Rajyoga's open-eyed method sidesteps this. The EEG evidence (reduced delta) confirms that practitioners stay alert rather than drowsy, and the open eyes make the practice portable into ordinary activity. If eyes-closed sitting hasn't worked for you, an eyes-open, awareness-and-identity-based practice is a legitimate, research-backed alternative — a reminder that "meditation" is a family of distinct techniques, not one method.
 

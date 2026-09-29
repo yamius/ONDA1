@@ -36,7 +36,7 @@ const article: Article = {
 
 ---
 
-## Section 1: How much you actually need
+## Section 1: How much water should you drink a day?
 
 A practical baseline is about **35 ml of water per kg of bodyweight** per day — roughly 2.4 litres for a 70 kg adult, 3 litres for a 90 kg one. Because about **20% of your water comes from food**, the target from *drinks* is a little lower than your total need. Then adjust up for:
 

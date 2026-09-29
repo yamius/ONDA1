@@ -48,13 +48,13 @@ Your gut-brain axis is online. The bidirectional communication between your micr
 
 ---
 
-## Section 1: The Serotonin Factory
+## Section 1: How much of your serotonin is made in the gut?
 
-While your brain uses Serotonin to regulate mood, 95% of this critical neurotransmitter is manufactured in your gut. Your microbiome acts as a chemical plant, producing the raw data packets that determine your level of happiness and calm. If the production line is compromised by a poor diet, your brain effectively runs out of 'System Stability' tokens, leading to anxiety and depressive states.
+About 95% of your serotonin is manufactured in your gut, even though your brain uses this critical neurotransmitter to regulate mood. Your microbiome acts as a chemical plant, producing the raw data packets that determine your level of happiness and calm. If the production line is compromised by a poor diet, your brain effectively runs out of 'System Stability' tokens, leading to anxiety and depressive states.
 
 ---
 
-## Section 2: The Vagal Highway
+## Section 2: How does the vagus nerve connect the gut and the brain?
 
 The Vagus Nerve serves as the high-speed data cable between your gut and your brainstem. Interestingly, 80-90% of the nerve fibers are 'Afferent'—meaning they carry information from the gut to the brain, not the other way around. Your gut is constantly 'uploading' reports on your internal state, which your brain then translates into feelings and intuitions.
 

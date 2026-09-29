@@ -29,9 +29,9 @@ const article: Article = {
   content: `
 Metabolic syndrome — the cluster of raised blood pressure, high blood sugar, excess waist fat, and abnormal cholesterol that raises heart-disease risk — is increasingly common in young, sedentary adults, and Indian research suggests pranayama can help. In a study of medical students with raised BMI and/or blood pressure, a pranayama program improved clinical predictors of metabolic syndrome. That matters because metabolic syndrome usually creeps in quietly during busy, sedentary years, and a few minutes of daily breathing is about as low-cost and accessible as an intervention gets — no gym, no equipment. It is a complement to diet and movement, not a substitute.
 
-## Metabolic syndrome is starting younger
+## Can young people get metabolic syndrome?
 
-Metabolic syndrome was once thought of as a middle-aged problem. Sedentary lifestyles, poor diets, chronic stress and screen-bound days are pushing it into younger people — including students. Medical students were studied precisely because their demanding, sedentary, high-stress routine puts them at risk of raised BMI and blood pressure early. Because the syndrome is driven partly by chronic stress and autonomic imbalance — not only by diet — practices that calm the nervous system have a plausible role alongside the obvious fixes.
+Yes — metabolic syndrome was once thought of as a middle-aged problem, but not anymore. Sedentary lifestyles, poor diets, chronic stress and screen-bound days are pushing it into younger people — including students. Medical students were studied precisely because their demanding, sedentary, high-stress routine puts them at risk of raised BMI and blood pressure early. Because the syndrome is driven partly by chronic stress and autonomic imbalance — not only by diet — practices that calm the nervous system have a plausible role alongside the obvious fixes.
 
 ## What the research found
 
@@ -39,11 +39,11 @@ Researchers screened young undergraduate medical students and selected those wit
 
 It fits a broader pattern. Slow breathing lowers blood pressure through the baroreflex (see [slow breathing and blood pressure](/articles/high-blood-pressure-slow-breathing)); it lowers stress hormones like cortisol (see [how breathing lowers stress hormones](/articles/breathing-lowers-stress-hormones)); and structured yoga-and-pranayama programs have improved glucose, lipids and waist circumference in people at metabolic risk (see [yoga and breathing for type 2 diabetes](/articles/yoga-breathing-diabetes-blood-sugar)).
 
-## Why breathing helps a metabolic problem
+## How can breathing help metabolic syndrome?
 
 It sounds surprising that breathing could touch a metabolic condition, but the link runs through stress physiology. Chronic stress keeps cortisol and sympathetic activity elevated, which promotes abdominal fat storage, raises blood pressure and worsens insulin resistance — several components of metabolic syndrome at once. Slow breathing pushes back on that axis: it shifts you toward parasympathetic dominance, lowers blood pressure and supports healthier HRV. It won't replace diet and exercise — the foundations — but it targets the stress component that ties the cluster together.
 
-## How to use it
+## How should you practice pranayama for metabolic health?
 
 - **Practice slow breathing daily** — a few minutes of slow, exhale-led breathing, once or twice a day. Slow breathing (roughly five to six breaths a minute) is the pattern most studied for blood pressure and HRV.
 - **Combine it with the basics.** Movement, a better diet and less sitting are the essentials. Together they work; alone, breathing is a smaller lever.

@@ -48,15 +48,15 @@ Your breath is the direct interface to your brainstem. Diaphragmatic breathing s
 
 ---
 
-## Section 1: The CO2 Tolerance Variable
+## Section 1: What makes you feel the urge to breathe?
 
 Your urge to breathe isn't driven by a lack of oxygen, but by the accumulation of Carbon Dioxide (CO2). In the ONDA model, your CO2 Tolerance is like your system's 'RAM'—it determines how much metabolic stress you can handle before your hardware triggers a panic response. High tolerance allows for efficient oxygen delivery to the Prefrontal Cortex, maintaining cognitive clarity under pressure.
 
 ---
 
-## Section 2: The Diaphragmatic Pump
+## Section 2: How does diaphragmatic breathing calm the nervous system?
 
-The diaphragm is more than a muscle; it is a mechanical pump for the Vagus Nerve. Deep, diaphragmatic breathing physically massages the vagal fibers, sending a 'System Clear' signal to the Autonomic Nervous System. Conversely, vertical (shoulder) breathing acts as an 'Emergency Interrupt,' signaling the brain that a threat is present.
+Deep diaphragmatic breathing calms you because the diaphragm acts as a mechanical pump for the Vagus Nerve. Deep, diaphragmatic breathing physically massages the vagal fibers, sending a 'System Clear' signal to the Autonomic Nervous System. Conversely, vertical (shoulder) breathing acts as an 'Emergency Interrupt,' signaling the brain that a threat is present.
 
 ---
 

@@ -37,9 +37,9 @@ const article: Article = {
 
 ---
 
-## Section 1: What "meditation app with biofeedback" actually means
+## Section 1: What is a meditation app with biofeedback?
 
-Most meditation and mindfulness apps are **content libraries** — a deep shelf of guided audio you press play on. They're good at what they do, but they are one-directional: the app talks, you listen, and nothing comes back.
+A meditation app with biofeedback measures a live physiological signal — usually your heartbeat — and feeds it back to you as you practise, unlike most meditation and mindfulness apps are **content libraries** — a deep shelf of guided audio you press play on. They're good at what they do, but they are one-directional: the app talks, you listen, and nothing comes back.
 
 A **biofeedback** app closes the loop. It measures a live physiological signal — usually your heartbeat — and feeds it back to you as you practise, so the session responds to *you*. The signal of choice is [heart-rate variability](/glossary/heart-rate-variability): the tiny beat-to-beat changes in your pulse that track the balance of your nervous system. When you breathe slowly and your body relaxes, HRV rises in a smooth, organised wave. A biofeedback app renders that wave so you can *see* the calm arriving, and steer toward it.
 
@@ -47,7 +47,7 @@ That's the whole difference. One app plays you content; the other turns your own
 
 ---
 
-## Section 2: Why the feedback loop matters
+## Section 2: Why does a feedback loop matter in meditation?
 
 Feedback changes practice in three concrete ways:
 
@@ -59,9 +59,9 @@ This is the difference between **passive** listening and an **active**, measured
 
 ---
 
-## Section 3: What makes a meditation app "science-based"
+## Section 3: What makes a meditation app science-based?
 
-"Science-based" gets stamped on everything, so here's a usable test: **does the app rest on a measurable mechanism, and can it show you that mechanism working on you?**
+A meditation app is science-based when it passes a usable test (useful, since "science-based" gets stamped on everything): **does the app rest on a measurable mechanism, and can it show you that mechanism working on you?**
 
 The mechanism here is real and well-studied. Slow, paced breathing raises vagal tone and HRV within minutes; it's one of the best-supported, lowest-risk self-regulation levers there is. An app is science-based in the strong sense when it doesn't just *tell* you that — it *measures* it on your body and shows the response. A mindfulness app with HRV isn't a gimmick; the HRV is the evidence that the practice is doing what it claims.
 

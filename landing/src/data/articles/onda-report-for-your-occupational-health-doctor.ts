@@ -43,7 +43,7 @@ That puts them in a unique position: unlike most doctors, they can influence the
 
 Both patterns tend to show up in the body: a nervous system that stays on high alert, sleep that doesn't restore, and recovery that only happens — if at all — away from work.
 
-## How an occupational health doctor can read your report
+## What can an occupational health doctor learn from your heart rate data?
 
 **Workdays versus days off.** The most revealing comparison. If your resting heart rate is higher and HRV lower on workdays, and both recover on weekends or holidays, your data shows how much your job costs your body — and how much rest gives back. If they *don't* recover even on days off, that's important too.
 
@@ -53,7 +53,7 @@ Both patterns tend to show up in the body: a nervous system that stays on high a
 
 **Your notes.** Shift types, long days, deadlines, conflict, sick days, how rested you felt. The link between work events and your body is what makes this data useful here.
 
-## What help an occupational health doctor can offer
+## How can an occupational health doctor help with shift work and stress?
 
 **Advise on shift patterns.** Some schedules are easier on the body than others. For example, rotations that move forward — day, then evening, then night — are generally easier to adapt to than rotations that move backward, and enough recovery time between blocks matters. An occupational health doctor can recommend changes to you and, where appropriate, to your employer.
 
@@ -65,9 +65,9 @@ Both patterns tend to show up in the body: a nervous system that stays on high a
 
 **Coordinate with other care.** Where stress has become anxiety or depression, or sleep has become a disorder, they can work with your GP, a therapist or a sleep specialist.
 
-## A word about confidentiality
+## Will an occupational health doctor share your data with your employer?
 
-This matters with occupational health more than with any other doctor. Depending on your country and your employer, an occupational health doctor may share **conclusions about your fitness for work or recommended adjustments** with your employer — though usually not your detailed medical information. Before you share your data, ask plainly: *"What will be shared with my employer, and what stays between us?"* Then decide what to show. Your data is yours.
+Possibly — and this matters with occupational health more than with any other doctor: depending on your country and your employer, an occupational health doctor may share **conclusions about your fitness for work or recommended adjustments** with your employer — though usually not your detailed medical information. Before you share your data, ask plainly: *"What will be shared with my employer, and what stays between us?"* Then decide what to show. Your data is yours.
 
 ## Where watch data stops
 

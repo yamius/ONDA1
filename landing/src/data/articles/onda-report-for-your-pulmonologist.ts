@@ -29,13 +29,13 @@ How fast you breathe at rest is one of the quietest numbers your watch records â
 
 *Part of our series [Doctors and Your Data](/articles/doctors-and-your-data).*
 
-## Why breathing rate is such an honest signal
+## Why is night-time breathing rate a useful health signal?
 
 Breathing rate is hard to fake and slow to change. At night, without talking, moving or thinking about it, your breathing settles into a personal rhythm that stays within a narrow band for most people. That stability is exactly what makes changes stand out.
 
 Research using wearables has explored how a rise in resting breathing rate and heart rate can appear around the start of respiratory infections, sometimes before symptoms are obvious. For people with long-term lung conditions, a sustained rise from their usual breathing rate can accompany a flare. A watch can't tell you *why* your breathing changed â€” but it can show clearly *that* it did, and when.
 
-## How a pulmonologist can read your report
+## What can a pulmonologist learn from your breathing rate data?
 
 **Night-time breathing rate baseline and trend.** Your normal range, and any sustained rise above it. A single high night means little; several nights in a row, especially with symptoms, is worth noting.
 
@@ -45,7 +45,7 @@ Research using wearables has explored how a rise in resting breathing rate and h
 
 **Your notes.** For lung problems, context is everything: triggers (cold air, exercise, pollen, pets, smoke, colds), night-time symptoms like coughing or waking breathless, how often you used a reliever inhaler, and how long episodes lasted.
 
-## What help a pulmonologist can offer
+## How can a pulmonologist help beyond your watch data?
 
 **Measure your lungs directly.** Depending on symptoms, a lung specialist may use spirometry (how much and how fast you can breathe out), peak flow, tests of airway inflammation, oxygen measurements, exercise testing or imaging. These show what a watch only hints at.
 

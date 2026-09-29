@@ -37,15 +37,15 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: THE HEMOGLOBIN LOCK ]
+## How does CO₂ help your cells get oxygen?
 
-Oxygen travels through the blood on hemoglobin like cargo on a truck. But to 'unload' that cargo into your muscles or brain, you need a key: Carbon Dioxide. If the system is CO₂ deficient, the truck simply drives past the cells. By training tolerance, we teach the system to retain this key, unlocking hidden energy reserves.
+Carbon dioxide is the key that lets hemoglobin 'unload' the oxygen it carries through the blood, like cargo on a truck, into your muscles or brain. If the system is CO₂ deficient, the truck simply drives past the cells. By training tolerance, we teach the system to retain this key, unlocking hidden energy reserves.
 
 ---
 
-## [ SECTION 2: CHEMORECEPTOR CALIBRATION ]
+## Can you train your brain to be less sensitive to CO₂?
 
-The receptors in your brainstem are sensors that react to blood acidification (low pH). We can programmatically alter their 'activation threshold.' By gradually exposing the system to controlled hypercapnic stress (high CO₂), we rewrite the respiratory center's software, making it less prone to panic.
+Yes: the brainstem receptors that react to blood acidification (low pH) have an 'activation threshold' that can be altered. By gradually exposing the system to controlled hypercapnic stress (high CO₂), we rewrite the respiratory center's software, making it less prone to panic.
 
 ---
 

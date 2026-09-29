@@ -39,7 +39,7 @@ const article: Article = {
 
 ---
 
-## [ SECTION 1: MYOKINES — EXECUTING NEURAL CODE ]
+## How does muscle exercise affect the brain?
 
 Every load-bearing muscle contraction triggers the release of Myokines—signaling molecules (data packets) that communicate directly with your brain. One specific myokine, BDNF, directly stimulates the growth of new neurons. Thus, training your muscles is a direct firmware update for your cognitive Software.
 

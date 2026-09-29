@@ -38,7 +38,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What social jet lag actually is
+## Section 1: What is social jet lag?
 
 Social jet lag is the gap between the sleep your body clock wants and the sleep your calendar imposes — measured as the difference between your mid-sleep point on free days versus work days. Shift your bedtime and wake time around the weekend and you've effectively flown a couple of time zones west on Friday and back east on Monday, without leaving your bed. The term was coined by German chronobiologist Till Roenneberg, whose work established that it's this *mismatch* — not sleep duration alone — that tracks with poorer health.
 
@@ -46,9 +46,9 @@ It is not a fringe problem. More than **30% of people carry a social jet lag of 
 
 ---
 
-## Section 2: The autonomic tax — flatter HRV
+## Section 2: How does social jet lag affect HRV?
 
-Here's the part that shows up in the data. A field study of healthy young men found that in the first hours of sleep, those with **high social jet lag had lower [heart-rate variability](/glossary/heart-rate-variability) on work nights** than on free nights — the low-SJL group stayed steady across both. In adolescents, a bedtime that swung by roughly an hour was associated with measurably lower HRV, a core marker of cardiovascular and autonomic function.
+It tends to lower it — and that shows up in the data. A field study of healthy young men found that in the first hours of sleep, those with **high social jet lag had lower [heart-rate variability](/glossary/heart-rate-variability) on work nights** than on free nights — the low-SJL group stayed steady across both. In adolescents, a bedtime that swung by roughly an hour was associated with measurably lower HRV, a core marker of cardiovascular and autonomic function.
 
 Lower HRV means less parasympathetic recovery during exactly the window meant for it. Social jet lag is now treated as a **chronic stressor** in the literature — not because any single irregular night is dangerous, but because the misalignment repeats, and the recovery you skip doesn't get refunded.
 
@@ -78,7 +78,7 @@ Honest framing: this is descriptive, not diagnostic. Life Rhythm doesn't score y
 
 ---
 
-## Section 6: Anchoring the clock
+## Section 6: How do you fix social jet lag?
 
 The fix is unglamorous and effective: **anchor your wake time first.** A consistent rise time — even on weekends, even after a late night — is the strongest single lever on circadian stability, more reliable than a fixed bedtime. Add morning light to lock it in, keep the weekend drift under an hour, and give the evening a fixed wind-down ritual so bedtime stops floating. For the travel version of the same machinery, see [how to beat jet lag](/articles/how-to-beat-jet-lag); to work with your clock instead of against it, find [your chronotype](/articles/what-is-my-chronotype).
 

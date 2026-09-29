@@ -34,7 +34,7 @@ const article: Article = {
 
 ---
 
-## Section 1: Why short works
+## Section 1: Is a short breathing session enough?
 
 Slow breathing shifts your autonomic balance toward the calm [parasympathetic](/glossary/parasympathetic-nervous-system) side within *minutes* — you don't need a long session to reach the state. A few minutes of paced, exhale-led breathing raises [vagal](/glossary/vagus-nerve) tone and settles arousal on the spot. The acute effect is fast by design.
 
@@ -70,7 +70,7 @@ That visible payoff is exactly what turns a short routine into a daily one: you 
 
 ---
 
-## Section 5: Building the habit
+## Section 5: How do you make a breathing habit stick?
 
 Anchor the five minutes to something you already do every day — after brushing your teeth, before your first email, on sitting down at your desk. Keep the bar low enough that you never have an excuse, protect the streak more than the duration, and let the immediate calm be the reward that brings you back. Once it's automatic, lengthening it is easy — but automatic-and-short always beats ambitious-and-abandoned. Pair it with the other [HRV-raising levers](/articles/how-to-raise-hrv-naturally) and the small daily rep quietly compounds.
 

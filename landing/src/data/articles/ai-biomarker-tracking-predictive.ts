@@ -44,7 +44,7 @@ Most trackers tell you how you slept last night. Predictive Analytics tells you 
 
 ---
 
-## The Logic: From Reactive to Predictive
+## Can biomarkers predict illness or overtraining before symptoms?
 
 **The 3-Day Window:** Physiological markers often begin to degrade 48–72 hours before clinical symptoms of illness or overtraining appear.
 

@@ -38,15 +38,15 @@ const article: Article = {
 
 ---
 
-## Section 1: Why HRV moves so much
+## Section 1: Why does HRV change so much from reading to reading?
 
-[Heart-rate variability](/glossary/heart-rate-variability) reflects the moment-to-moment balance of your autonomic nervous system, and that balance shifts constantly. Time of day moves it — HRV follows a circadian curve. Posture moves it — lying, sitting and standing give different numbers. Your breathing moves it hardest of all — slow breathing inflates it, fast breathing deflates it. Recent caffeine, a recent meal, a recent workout, alcohol the night before, even talking or a stray stressful thought all shift the reading.
+[Heart-rate variability](/glossary/heart-rate-variability) moves so much because it reflects the moment-to-moment balance of your autonomic nervous system, and that balance shifts constantly. Time of day moves it — HRV follows a circadian curve. Posture moves it — lying, sitting and standing give different numbers. Your breathing moves it hardest of all — slow breathing inflates it, fast breathing deflates it. Recent caffeine, a recent meal, a recent workout, alcohol the night before, even talking or a stray stressful thought all shift the reading.
 
 None of that is a malfunction. It's the metric doing its job — tracking a system that genuinely changes minute to minute. Which means an HRV number without its *context* tells you almost nothing.
 
 ---
 
-## Section 2: The one rule — measure the same way, every time
+## Section 2: How do you measure HRV consistently?
 
 Everything about reading HRV well collapses into a single principle: **standardize the conditions so the only thing changing is you.** If you take every reading at the same time, in the same position, breathing the same way, you strip out the noise from time-of-day, posture and breath — and whatever's left is a real signal about your recovery state. Change the conditions and you're comparing apples to a different fruit each day.
 
@@ -76,9 +76,9 @@ And don't compare across devices. Each one uses different sensors and math, so y
 
 ---
 
-## Section 5: Trust the trend, not the reading
+## Section 5: Should you trust a single HRV reading?
 
-The final reframe, and the most important: **a single HRV number is almost meaningless; a consistent series is gold.** Don't react to today's value — watch where it sits relative to your own recent normal and which way it's trending. A steady, standardized series is what turns HRV from an anxiety-generator into an actual signal about your recovery, your training, and [when your baseline is drifting](/articles/your-baseline-knows-first).
+No — the final reframe, and the most important: **a single HRV number is almost meaningless; a consistent series is gold.** Don't react to today's value — watch where it sits relative to your own recent normal and which way it's trending. A steady, standardized series is what turns HRV from an anxiety-generator into an actual signal about your recovery, your training, and [when your baseline is drifting](/articles/your-baseline-knows-first).
 
 > **The Hack:** Measure HRV the same way every single time — same hour, same position, before caffeine, breathing normally — or let an overnight read do it for you, since sleep standardizes the conditions automatically. Then ignore any single number and follow the trend against your own baseline. Consistency is the whole game.
 

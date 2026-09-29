@@ -49,15 +49,15 @@ Your nervous system latency is being measured. High variability = adaptive OS. L
 
 ---
 
-## Section 1: The Tug-of-War
+## Section 1: What controls heart rate variability?
 
 Your heart rate is a constant negotiation between the Sympathetic (Gas pedal) and Parasympathetic (Brakes) branches. A healthy system never stays at a fixed rhythm; it is constantly oscillating. This 'jitter' in the timing is exactly what we measure to determine your Vagal Tone. When the two branches are in balance, your HRV is high, signaling that your Homeostasis is stable.
 
 ---
 
-## Section 2: HRV as a Recovery Indicator
+## Section 2: What does a low morning HRV mean?
 
-Think of HRV as your 'Battery Health' percentage. If you wake up with an HRV significantly below your baseline, your Central Nervous System (CNS) has not finished clearing the 'Cache' from yesterday's stress. Training hard or making big decisions in this state is like trying to run 4K video on a 1% charge—it leads to a 'System Crash' (Burnout). A consistently high HRV baseline is what builds the [fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — the operational headroom that absorbs stress spikes before they cascade into a crash.
+If you wake up with an HRV significantly below your baseline, your Central Nervous System (CNS) has not finished clearing the 'Cache' from yesterday's stress. Think of HRV as your 'Battery Health' percentage. Training hard or making big decisions in this state is like trying to run 4K video on a 1% charge—it leads to a 'System Crash' (Burnout). A consistently high HRV baseline is what builds the [fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — the operational headroom that absorbs stress spikes before they cascade into a crash.
 
 ---
 

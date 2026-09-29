@@ -47,9 +47,9 @@ const article: Article = {
 
 ---
 
-## The Hardware: Drivers of Flow
+## What drives cerebrospinal fluid flow in the brain?
 
-Three technical parameters determine the efficiency of your internal hydraulics:
+Three technical parameters determine how efficiently CSF flows through your internal hydraulics:
 
 **Arterial Power (Pulsatility):** Your heart rate and vascular elasticity directly impact the power of the pump. Low HRV and stiff, calcified vessels reduce the amplitude of arterial pulsations — slowing CSF flow velocity and leaving metabolic byproducts in deeper tissue layers. High HRV + elastic arteries = maximum piston stroke = maximum clearance throughput.
 
@@ -59,7 +59,7 @@ Three technical parameters determine the efficiency of your internal hydraulics:
 
 ---
 
-## The System Failure: Hydraulic Stasis
+## What happens when CSF flow slows down?
 
 When flow slows — due to low HRV, poor sleep architecture, or suboptimal positioning — the system enters **Hydraulic Stasis**:
 

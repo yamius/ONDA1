@@ -31,7 +31,7 @@ Vipassana — one of the oldest meditation techniques, a practice of careful, no
 
 *This article is part of our complete guide to [Meditation With Measurable Progress](/articles/meditation-with-measurable-progress).*
 
-## What Vipassana is
+## What is Vipassana meditation?
 
 Vipassana, meaning "insight" or "clear seeing," is a Buddhist practice with roots over two millennia old. Its method is deceptively simple: you observe the sensations of the body — the breath, physical feelings, their arising and passing — with sustained, equanimous attention, without reacting to them, judging them, or trying to change them. You simply watch, and in watching without grabbing or pushing away, you train a particular kind of stable, non-reactive awareness.
 
@@ -46,13 +46,13 @@ Vipassana is among the more heavily studied meditation techniques, and the findi
 - **A quieter default mode network.** During meditation, Vipassana reduces activity in the default mode network — the system active during mind-wandering and self-referential rumination. A quieter DMN means less of the automatic, often anxious, self-focused mental chatter.
 - **Readable meditation depth.** In a study of expert practitioners using 64-channel EEG and machine learning, researchers classified high versus low meditative depth with about 81% accuracy from brain activity across theta, alpha, and gamma bands — showing that depth of practice is a real, measurable neural state.
 
-## Why quieting the default mode network matters
+## Why does quieting the default mode network matter?
 
 The default mode network is worth dwelling on, because its reduction is central to why Vipassana helps. The DMN is what runs when you're not focused on a task — replaying the past, rehearsing the future, narrating "you." Overactivity in this network is associated with rumination, anxiety, and unhappiness (the "wandering mind is an unhappy mind" finding). By training you to rest attention on present sensation without reacting, Vipassana quiets this network — which is a plausible mechanism for the reductions in stress and reactivity practitioners report.
 
 This also connects to a wiser relationship with your own mind: rather than being swept into every thought and sensation, you learn to observe them and let them pass — the essence of equanimity, now visible as a shift in brain activity.
 
-## How progress builds
+## Do the effects of Vipassana grow with practice?
 
 The through-line of the research is that these effects **scale with experience.** Cortical thickness, gamma amplitude, and the distinctiveness of the meditative state are all more pronounced in seasoned practitioners. This means Vipassana is [trainable](/articles/meditation-brain-changes-how-fast) — the brain adapts progressively with sustained practice, not all at once. Like physical training, the early weeks build a foundation, and depth accumulates over months and years.
 
