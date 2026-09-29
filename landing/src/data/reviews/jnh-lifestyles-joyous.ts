@@ -67,6 +67,11 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['therasage-thera-sauna-personal', 'higherdose-blanket-v4', 'almost-heaven-salem'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "How much does a JNH Lifestyles Joyous sauna cost?", a: "The JNH Lifestyles Joyous starts at about $1,800 for a 1-person cabin and about $3,000 for a 3-person model, with typical configurations around $2,200. That makes it the cheapest credible cabin IR sauna, well below the $5,000-plus premium tier." },
+    { q: "Is the JNH Joyous full-spectrum infrared?", a: "No. The JNH Joyous is far-IR only, using basic ceramic emitters with no near or mid IR. That is the main trade for its low price, along with less rigorous EMF discipline than premium brands. It does include Canadian hemlock construction and basic Bluetooth audio." },
+    { q: "Who is the JNH Lifestyles Joyous best for?", a: "It suits buyers who want a real cabin IR sauna at the lowest credible price. It offers Canadian hemlock construction, a 5-year warranty on heaters and several capacity options. Buyers who want full-spectrum IR or strict low-EMF engineering should look at premium brands." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

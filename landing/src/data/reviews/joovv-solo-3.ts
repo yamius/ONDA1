@@ -67,6 +67,12 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Photobiomodulation therapy — clinical evidence review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'platinumled-biomax-600', 'gembared-vesta'],
+  faq: [
+    { q: "How much does the Joovv Solo 3.0 cost?", a: "The Joovv Solo 3.0 costs $1,295, the most expensive panel in its comparison. Because Solo panels are modular, a stand-mounted full-body stack runs $3,000–$5,000 in total. Most of the premium goes to build quality and verification rather than inflated specs." },
+    { q: "Is the Joovv Solo 3.0 FDA-registered?", a: "Yes. The Joovv Solo 3.0 is FDA-registered as a Class II device for skin indications. It pairs 660 nm red with 850 nm near-infrared, has independently verified irradiance close to advertised figures, and offers low EMF and low flicker." },
+    { q: "Is the Joovv Solo 3.0 worth it?", a: "Mostly, yes, if you want the category-reference build. It has verified irradiance, FDA registration, published researcher partnerships and a multi-year warranty, plus modular panels that grow into a full-body setup. If price decides it, the Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost." },
+    { q: "What are the downsides of the Joovv Solo 3.0?", a: "Price is the main one: $1,295 per panel and $3,000–$5,000 for a full-body stack. It also offers no exotic wavelength options such as 810, 830 or 940 nm, and it uses a single front-emitter layout rather than a bidirectional design." },
+  ],
   datePublished: '2026-05-23',
   dateModified: '2026-05-23',
 }

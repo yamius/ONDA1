@@ -67,6 +67,12 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'Sensate stress/HRV pilot RCT (open-access)', url: 'https://www.getsensate.com/science' },
   ],
   relatedSlugs: ['apollo-neuro', 'pulsetto', 'xen-by-neuvana'],
+  faq: [
+    { q: "Is the Sensate worth it?", a: "Sensate is worth it for evening wind-down rituals where comfort matters more than strong stimulation. It is the most pleasant device in its category to use, pairs vibration with sound, and needs no electrodes or pads. Expect a subtle effect, though: its mechanism evidence is thinner than electrical tVNS." },
+    { q: "How much does the Sensate cost?", a: "Sensate costs $299 one-time for the device. The full session library requires the Sensate+ subscription, at roughly $79 per year. Factor that ongoing cost in, because the sound-paired sessions are a large part of what makes the device a complete wind-down ritual." },
+    { q: "What are the downsides of the Sensate?", a: "Sensate's downsides are thinner mechanism evidence than electrical tVNS and an effect that feels subtle next to direct vagal stimulation. The full library sits behind the Sensate+ annual subscription, and the device is phone-tethered, so the app must run during every session." },
+    { q: "Who is the Sensate best for?", a: "Sensate is best for people who want a sound-paired evening wind-down ritual and value comfort and calm over acute stimulation. It suits sleep-onset use and anyone wary of skin contact, since it uses no electrodes or pads. Those wanting direct vagal stimulation should look at electrical tVNS instead." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

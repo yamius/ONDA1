@@ -63,6 +63,11 @@ Choose Renpho R3 for pure spec-per-dollar Amazon budget. For Bob and Brad PT cre
   ],
   relatedSlugs: ['bob-and-brad-q2-mini', 'opove-m3-pro-2', 'toloco-massage-gun'],
   publishOn: '2026-07-20',
+  faq: [
+    { q: "Is the Renpho R3 worth it?", a: "The Renpho R3 is worth it as a pure spec-per-dollar massage gun. At $99 it offers a 40 lbs stall force, 12 mm amplitude, a brushless motor and 5 attachments. It has no app, a standard single-grip handle and only a 1-year warranty." },
+    { q: "How much does the Renpho R3 cost?", a: "The Renpho R3 is listed at $99, including 5 attachments. That buys a 40 lbs stall force, 12 mm amplitude and a brushless motor, with a 1-year warranty and no app. It is sold widely through Amazon, with a large consumer-feedback base." },
+    { q: "What are the downsides of the Renpho R3?", a: "The Renpho R3 has no app or smart features, no brand credibility moat, a standard single-grip handle, and only a 1-year warranty. It is a spec-per-dollar play rather than a premium brand purchase. Expect only basic features." },
+  ],
   datePublished: '2026-07-20',
   dateModified: '2026-07-20',
 }

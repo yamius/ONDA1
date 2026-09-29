@@ -68,6 +68,12 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['finnleo-hallmark', 'sunlighten-mpulse', 'jnh-lifestyles-joyous'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "Is the Almost Heaven Salem Barrel Sauna worth it?", a: "Yes, for anyone who wants a traditional Finnish sauna outdoors. The Salem uses convection heat with löyly steam, premium American-built western red cedar, and the Finnish sauna model with the deepest research evidence base. It is not worth it if you specifically want infrared, since it works by a different mechanism." },
+    { q: "How much does the Almost Heaven Salem cost?", a: "The Almost Heaven Salem costs about $5,500 in the electric-heater configuration, and the wood-burning option adds roughly $500. That is premium pricing for what is fundamentally simple convection heat, with the money going into American-built western red cedar construction and a multi-decade brand reliability record." },
+    { q: "What are the downsides of the Almost Heaven Salem?", a: "The Salem is outdoor-only, and it is not an IR sauna, so it delivers a different mechanism and effect from infrared cabins. The wood-burning option requires fire safety planning, and the premium price buys what is fundamentally simple convection heat rather than advanced technology." },
+    { q: "Who is the Almost Heaven Salem best for?", a: "The Almost Heaven Salem is best for people who want a traditional Finnish sauna experience outdoors with a premium cedar build. It fits users who value convection heat and löyly steam, the Finnish cohort research base, and having no electronics in heat delivery over infrared." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

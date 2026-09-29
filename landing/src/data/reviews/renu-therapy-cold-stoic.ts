@@ -66,6 +66,12 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Renu Therapy — official site', url: 'https://renutherapy.com/' },
   ],
   relatedSlugs: ['plunge', 'coldture', 'bluecube-cold-plunge'],
+  faq: [
+    { q: "Is the Renu Therapy Cold Stoic worth it?", a: "The Cold Stoic is worth it if you are installing a cold plunge indoors where chiller noise matters. It has the quietest chiller among premium plunges, an insulated build for indoor temperature management, ozone sanitation and a 3-year warranty." },
+    { q: "How much does the Renu Therapy Cold Stoic cost?", a: "The Renu Therapy Cold Stoic is listed at $5,500 one-time, with the chiller, ozone and a 3-year warranty included. That is comparable to The Plunge's premium pricing. The premium buys the quietest chiller among premium plunges, which matters most for indoor installation." },
+    { q: "What are the downsides of the Renu Therapy Cold Stoic?", a: "Its temperature floor of 40°F is slightly less aggressive than the Plunge's 39°F, pricing of $5,500 or more is comparable to the Plunge, its brand recognition is narrower, and its protocol-guidance content is less developed." },
+    { q: "Renu Cold Stoic vs Plunge: which is better?", a: "Choose the Renu Cold Stoic for indoor installs, since it has the quietest premium chiller. Choose The Plunge for a slightly colder 39°F floor and wider brand recognition. Pricing is comparable, and both include ozone and a 3-year warranty." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

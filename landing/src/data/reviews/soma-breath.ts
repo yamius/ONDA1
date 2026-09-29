@@ -65,6 +65,12 @@ Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and
   ],
   relatedSlugs: ['breathwrk', 'othership', 'wim-hof-method-app'],
   publishOn: '2026-06-29',
+  faq: [
+    { q: "Is SOMA Breath worth it?", a: "SOMA Breath is worth it if you want rhythmic, music-paced breathwork with ceremony framing and a global certified-facilitator community. It is less science-grounded than Breathwrk, has a smaller library and offers no HRV biofeedback, so clinically minded users may prefer alternatives." },
+    { q: "How much does SOMA Breath cost?", a: "SOMA Breath costs about $99 as an annual subscription, and a free trial is available. The subscription covers its rhythmic music breathwork sessions and ceremony-style journeys, which blend Wim Hof crossover with pranayama elements." },
+    { q: "SOMA Breath vs Breathwrk: which is better?", a: "Breathwrk is more science-grounded and has a larger library. SOMA Breath stands out for rhythmic music-paced breathing, ceremony production and a global practitioner network. Choose Breathwrk for clinical breadth, SOMA for ritual and community." },
+    { q: "What are the downsides of SOMA Breath?", a: "SOMA Breath is less science-grounded than Breathwrk, has a smaller library and offers no HRV biofeedback. Its ceremony framing may also not suit users seeking pure clinical breathwork without the journey-style production." },
+  ],
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
 }

@@ -67,6 +67,12 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'Apollo wearable HRV/recovery RCT — University of Pittsburgh', url: 'https://apolloneuro.com/pages/science' },
   ],
   relatedSlugs: ['sensate', 'pulsetto', 'nurosym'],
+  faq: [
+    { q: "Is the Apollo Neuro worth it?", a: "Yes, if you want gentle, all-day vagal modulation. Apollo Neuro is the most wearable device in its category, using vibrotactile rather than electrical stimulation, backed by founder-led University of Pittsburgh research on HRV and recovery. It is less worth it if you want strong acute responses, where electrical tVNS is more effective." },
+    { q: "How much does the Apollo Neuro cost?", a: "The Apollo Neuro costs $349 as a one-time purchase. An optional Apollo+ subscription runs about $15 per month and unlocks premium content. The base device includes seven distinct programmes for different states and is worn on the wrist or ankle." },
+    { q: "What are the downsides of the Apollo Neuro?", a: "The Apollo Neuro's vibrotactile mechanism is less direct than electrical tVNS, and it has no on-device HRV measurement. Premium content is gated behind the Apollo+ subscription, and users seeking strong acute responses will find it less effective than tVNS devices." },
+    { q: "Who is the Apollo Neuro best for?", a: "The Apollo Neuro is best for daily-wear vagal modulation: people who want something gentle, non-electrical and easy to integrate into life. It needs no pads, skin contact or titration, and it is the only device in its category designed for genuine all-day wear." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

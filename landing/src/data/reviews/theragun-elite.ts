@@ -64,6 +64,12 @@ Choose Theragun Elite for rational Therabody value — same app, same amplitude,
   ],
   relatedSlugs: ['theragun-pro-plus', 'hypervolt-2-pro', 'achedaway-pro'],
   publishOn: '2026-07-20',
+  faq: [
+    { q: "Is the Theragun Elite worth it?", a: "Yes, for most premium buyers. The Theragun Elite has the same 16 mm amplitude, Therabody app and 2-year warranty as the PRO Plus for $200 less, and it is lighter. It trades down to 40 lbs stall force and has no OLED display." },
+    { q: "How much does the Theragun Elite cost?", a: "The Theragun Elite costs $399 with 5 attachments. That is $200 less than the Theragun PRO Plus and the same price as the Hypervolt 2 Pro, which offers higher stall force." },
+    { q: "Theragun Elite vs Theragun PRO Plus: which is better?", a: "For most users, the Elite. It shares the PRO Plus's 16 mm amplitude, app and warranty for $200 less and is lighter. The PRO Plus adds 60 lbs stall force versus 40, an OLED display and a sixth attachment, differences the review calls immaterial for 90% of users." },
+    { q: "What are the downsides of the Theragun Elite?", a: "The Elite's stall force is 40 lbs versus 60 on the PRO Plus, it lacks the OLED display, and it includes 5 attachments rather than 6. At $399 it also matches the Hypervolt 2 Pro's price with lower stall force." },
+  ],
   datePublished: '2026-07-20',
   dateModified: '2026-07-20',
 }

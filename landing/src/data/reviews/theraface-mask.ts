@@ -64,6 +64,11 @@ Choose TheraFace Mask if you\'re already in the Therabody ecosystem and want coo
   ],
   relatedSlugs: ['higherdose-red-light-face-mask', 'currentbody-series-2', 'omnilux-contour-face'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "Is the TheraFace Mask worth it?", a: "The TheraFace Mask is worth it mainly for people already in the Therabody ecosystem who want to pair it with TheraFace Pro. It offers red, blue and amber light, app-controlled protocols and premium build. It lacks a peer-reviewed dermatology evidence moat and costs $649." },
+    { q: "How much does the TheraFace Mask cost?", a: "The TheraFace Mask costs $649 standalone. That is premium pricing, and the review notes the brand premium leans on Theragun pedigree rather than red-light credibility, so weigh ecosystem value before buying." },
+    { q: "What are the downsides of the TheraFace Mask?", a: "The TheraFace Mask has no peer-reviewed dermatology evidence moat, costs a premium $649, and has no neck flap on the standard model. Its brand premium relies on Theragun pedigree more than red-light credibility." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

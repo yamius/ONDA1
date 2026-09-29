@@ -68,6 +68,11 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['endel', 'bettersleep', 'sleepio'],
+  faq: [
+    { q: "Is Pzizz worth it?", a: "Pzizz is worth it if you just want to be played to sleep, with no tracking. It generates a fresh, non-repeating soundscape each session, adds dedicated nap and focus modules, and is quick to start. It offers no sleep tracking or analytics at all, by design." },
+    { q: "How much does Pzizz cost?", a: "Pzizz is listed at $70 per year, or as a one-time unlock. A limited free version also exists, but the full module set, including nap and focus, needs a paid plan. There is no sleep tracking at any tier." },
+    { q: "What are the downsides of Pzizz?", a: "Pzizz has no sleep tracking whatsoever and no insights or analytics, by design. It does one thing only, and the full module set requires a subscription, so the free version is limited. If you want sleep analytics, it is the wrong app." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

@@ -68,6 +68,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'Home-based tDCS for major depression — randomised trial (The Lancet Digital Health)', url: 'https://www.thelancet.com/journals/landig/article/PIIS2589-7500(23)00077-X/fulltext' },
   ],
   relatedSlugs: ['myndlift', 'sens-ai', 'muse-s-athena'],
+  faq: [
+    { q: "Is Flow Neuroscience an EEG headset?", a: "No. Flow Neuroscience is a tDCS headset: it stimulates the brain with direct current rather than measuring brain activity. It is indicated for major depression, CE-marked as a Class IIa medical device in the EU, and paired with a structured cognitive-behavioural programme app." },
+    { q: "How much does Flow Neuroscience cost?", a: "Flow costs about $499 (£399) for the device, plus a monthly subscription for the therapy app. That subscription covers the integrated 8-week behavioural-therapy programme. Budget for both, because the ongoing app fee sits on top of the hardware price." },
+    { q: "Does Flow Neuroscience work for depression?", a: "Flow has real randomised-trial evidence for depression, published in Brain Stimulation and elsewhere, and it is prescribed within parts of the UK NHS as a depression-pathway option. That gives it the strongest regulatory and trial backing in its category, though its indication is restricted to major depression." },
+    { q: "Who is Flow Neuroscience best for?", a: "Flow is best for people with major depression who want a take-home device with regulatory and trial backing. It is a poor fit for general brain training or tinkering: the platform is closed, with no developer access or raw data, and it is not indicated for anything beyond depression." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

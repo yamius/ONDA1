@@ -68,6 +68,12 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['healthy-minds-program', 'medito', 'headspace'],
+  faq: [
+    { q: "Is Smiling Mind worth it?", a: "Yes. Smiling Mind is completely free from an Australian nonprofit and offers age-specific programs built with psychologists and educators, making it excellent for families and classrooms. It is less polished, with a smaller library and lighter advanced practice than the big paid apps." },
+    { q: "How much does Smiling Mind cost?", a: "Smiling Mind is completely free. It is run by an Australian nonprofit, and its age-specific programs for children, teens and adults are available without a paid tier, which makes it an easy choice for families and schools." },
+    { q: "What are the downsides of Smiling Mind?", a: "Smiling Mind is less polished than the big paid apps and has a smaller library. Programs are grouped by age rather than adaptively personalised, and it is light on advanced practice for experienced meditators." },
+    { q: "Who is Smiling Mind best for?", a: "Smiling Mind is best for families and schools. It offers free, age-specific programs for children, teens and adults, built with psychologists and educators. Experienced practitioners wanting advanced content or adaptive personalisation may outgrow it." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

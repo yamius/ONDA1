@@ -67,6 +67,12 @@ The biology of why pulsed electromagnetic fields modulate cellular ion gradients
   ],
   relatedSlugs: ['healthy-wave-multi-wave', 'pulse-centers-pulse-xl-pro', 'higherdose-pemf-mat'],
   publishOn: '2026-06-22',
+  faq: [
+    { q: "Is the Bemer Classic Evo worth it?", a: "Yes, if research depth matters most to you. The Bemer Classic Evo has the most-published PEMF waveform, with 50+ peer-reviewed studies, plus FDA Class II clearance and a 25-year brand track record. Its $5,490 price is the main point of contention, and the proprietary signal locks you into Bemer's ecosystem." },
+    { q: "How much does the Bemer Classic Evo cost?", a: "The Bemer Classic Evo costs $5,490 for the set: control unit, B.Body mat, B.Spot and B.Pad. That premium price reflects the research moat around the proprietary Bemer biorhythmic signal rather than raw field strength, which is deliberately low." },
+    { q: "What are the downsides of the Bemer Classic Evo?", a: "The Bemer Classic Evo is expensive at $5,490 and has low raw field intensity compared with coil systems, by design. Its proprietary signal locks you into Bemer's ecosystem and protocols, and some markets sell it through an MLM-style distribution model." },
+    { q: "Who is the Bemer Classic Evo best for?", a: "The Bemer Classic Evo is best for users who want the most-researched PEMF waveform in a coordinated multi-applicator system. It suits buyers who value FDA Class II clearance and a multi-decade brand pedigree enough to pay premium pricing." },
+  ],
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',
 }

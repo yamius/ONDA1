@@ -67,6 +67,11 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['sunlighten-mpulse', 'clearlight-sanctuary-2', 'therasage-thera-sauna-personal'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "Is the Sun Home Equinox worth it?", a: "The Sun Home Equinox is worth it if you want full-spectrum IR near category-leader level at a lower price. It has separate near and far emitters, chromotherapy, Bluetooth audio and a cedar cabin with 5-year warranty. It is a newer brand with less rigorous wavelength control than Sunlighten mPulse." },
+    { q: "How much does the Sun Home Equinox cost?", a: "The Sun Home Equinox starts at about $6,000 for the 2-person configuration. That sits in mid-premium territory, below comparable Sunlighten or Clearlight models, and includes chromotherapy lighting and Bluetooth audio." },
+    { q: "Sun Home Equinox vs Sunlighten mPulse: which is better?", a: "Sunlighten mPulse is the stronger pick for rigorous wavelength control and published research. Sun Home Equinox offers full-spectrum IR with bundled extras at mid-premium pricing below comparable Sunlighten models. Choose Equinox for value, mPulse for proven precision." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

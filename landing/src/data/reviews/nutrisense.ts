@@ -67,6 +67,12 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },
   ],
   relatedSlugs: ['ultrahuman-m1', 'levels', 'zoe', 'signos'],
+  faq: [
+    { q: "Is Nutrisense worth it?", a: "Nutrisense is worth it if you want a registered dietitian alongside your CGM data. Every subscriber gets an assigned RD with weekly written reviews, plus Dexcom G7 sensors and MyFitnessPal and Cronometer integration. It costs more than Levels, and coach quality varies between dietitians." },
+    { q: "How much does Nutrisense cost?", a: "Nutrisense is listed at $280 to $310 per month, which includes the registered dietitian and Dexcom G7 sensors. It is available in the US only as of 2026, and it costs more than Levels once the dietitian is included." },
+    { q: "What are the downsides of Nutrisense?", a: "Nutrisense is more expensive than Levels once the dietitian is factored in, its insight engine is less deep than Levels app-side, it is US-only as of 2026, and coach quality varies between RDs, so there is a luck-of-the-draw element." },
+    { q: "Nutrisense vs Levels: which is better?", a: "Choose Nutrisense for human coaching: every subscriber gets a registered dietitian and weekly written reviews. Choose Levels for a deeper app-side insight engine at a lower price. Both use Dexcom G7, so the sensor accuracy ceiling is the same." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

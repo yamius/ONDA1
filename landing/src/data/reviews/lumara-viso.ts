@@ -64,6 +64,12 @@ Choose Lumara Viso if you want maximum LED count and three-wavelength coverage i
   ],
   relatedSlugs: ['omnilux-contour-face', 'currentbody-series-2', 'higherdose-red-light-face-mask'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "Is the Lumara Viso worth it?", a: "The Lumara Viso is worth it if you want spec maximalism: 470 LEDs, the highest count in consumer red light masks, plus red, NIR and amber wavelengths, an integrated neck flap and flexible medical-grade silicone. If dermatology-clinical pedigree matters more, its lighter evidence base is the trade-off." },
+    { q: "How much does the Lumara Viso cost?", a: "The Lumara Viso flagship is listed at $650, with the neck flap included. That is premium pricing for a red light mask, and the review notes the brand leans on LED count in its marketing rather than on published studies." },
+    { q: "What are the downsides of the Lumara Viso?", a: "The Lumara Viso has a lighter clinical-evidence moat than Omnilux, premium pricing at $650, and it comes from a newer brand without a multi-year track record. Its spec-driven marketing leans on LED count over published studies, so buyers get specs rather than device-specific research." },
+    { q: "Lumara Viso vs Omnilux: which is better?", a: "Omnilux is the stronger pick for clinical evidence, while the Lumara Viso wins on raw specs. Viso offers 470 LEDs, three wavelengths and an included neck flap in flexible silicone; its evidence moat is lighter than Omnilux's. Choose Viso for coverage, Omnilux for dermatology pedigree." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

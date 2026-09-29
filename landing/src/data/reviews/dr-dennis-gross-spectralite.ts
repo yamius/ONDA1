@@ -64,6 +64,12 @@ Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with 
   ],
   relatedSlugs: ['omnilux-contour-face', 'currentbody-series-2', 'lightstim-for-wrinkles'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "Is the Dr. Dennis Gross SpectraLite FaceWare Pro worth it?", a: "Yes, if you want dermatology-brand pedigree and acne coverage. The SpectraLite FaceWare Pro is FDA-cleared, combines red and blue light for anti-aging and acne, and has the shortest session in the category at 3 minutes. Its hard shell is less comfortable than silicone masks." },
+    { q: "How much does the Dr. Dennis Gross SpectraLite FaceWare Pro cost?", a: "The Dr. Dennis Gross SpectraLite FaceWare Pro costs $455. That is premium pricing for an FDA-cleared red and blue light mask, though it comes without the flexible silicone comfort or neck flap of some competitors." },
+    { q: "What are the downsides of the Dr. Dennis Gross SpectraLite?", a: "The SpectraLite's hard-shell construction is less comfortable than flexible silicone masks, and it has no neck flap. It is heavy for extended unattended wear, and at $455 it is premium-priced without silicone comfort. Its strengths are FDA clearance and a 3-minute session." },
+    { q: "Who is the Dr. Dennis Gross SpectraLite best for?", a: "The SpectraLite FaceWare Pro is best for users who want dermatology-brand pedigree with dual red and blue light for anti-aging and acne. It suits those who accept a hard-shell comfort trade-off in exchange for a fast 3-minute protocol." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

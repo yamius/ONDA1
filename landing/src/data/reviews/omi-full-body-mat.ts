@@ -64,6 +64,11 @@ Choose OMI Full Body Mat for straightforward mid-tier single-modality PEMF at ac
   ],
   relatedSlugs: ['healthy-wave-multi-wave', 'higherdose-pemf-mat', 'earthpulse-sleep-on-command'],
   publishOn: '2026-06-22',
+  faq: [
+    { q: "Is the OMI Full Body PEMF Mat worth it?", a: "The OMI mat is worth it if you want straightforward, single-modality PEMF at accessible pricing. It uses the FDA bone-healing waveform research band, is simple for daily use, and has a 5-year mat warranty. It lacks parameter control, IR or red light stacking, and a proprietary research moat." },
+    { q: "How much does the OMI Full Body PEMF Mat cost?", a: "The OMI full-body mat with controller is listed at $1,750, within a mid-tier range of $1,500 to $2,000, and it comes with a 5-year mat warranty. There is no IR or red light stacking at that price." },
+    { q: "What are the downsides of the OMI Full Body PEMF Mat?", a: "The OMI mat relies on black-box presets with limited parameter exposure, is single-modality with no IR or red light stacking, has no proprietary research moat, and carries less brand recognition than Bemer or HigherDOSE. It is a simple, single-purpose mat." },
+  ],
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',
 }

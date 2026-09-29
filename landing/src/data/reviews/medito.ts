@@ -68,6 +68,12 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['healthy-minds-program', 'smiling-mind', 'insight-timer'],
+  faq: [
+    { q: "Is Medito worth it?", a: "Medito is worth it if you want a meditation app that is completely free, open-source and ad-free, with no account required. It covers the fundamentals well and is backed by a transparent nonprofit, though its library is smaller than the paid giants and it lacks adaptive personalisation." },
+    { q: "How much does Medito cost?", a: "Medito costs nothing. It is completely free, run as an open-source nonprofit, with no ads, no paywall and no account required. That makes it one of the most privacy-friendly ways to start a meditation practice without any financial commitment." },
+    { q: "What are the downsides of Medito?", a: "Medito has a smaller library than the paid giants, no adaptive personalisation, and less depth for advanced practice. It is also not a research-led app. For the fundamentals it is solid, but experienced meditators may outgrow it." },
+    { q: "Who is Medito best for?", a: "Medito is best for anyone who wants a fully free, ad-free, open-source meditation app with no account and no paywall. Privacy-conscious beginners benefit most, since it covers the fundamentals well without asking for personal data or payment." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

@@ -64,6 +64,12 @@ Choose CurrentBody Series 2 if you want the consumer-market reference with integ
   ],
   relatedSlugs: ['omnilux-contour-face', 'dr-dennis-gross-spectralite', 'higherdose-red-light-face-mask'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "Is the CurrentBody Series 2 LED mask worth it?", a: "Yes, if comfort and neck coverage matter. The CurrentBody Series 2 uses flexible medical-grade silicone, red 633 nm and near-infrared 830 nm LEDs, and an integrated neck flap. It has less clinical-evidence moat than Omnilux, being FDA registered but not Class II cleared." },
+    { q: "How much does the CurrentBody Series 2 cost?", a: "The CurrentBody Series 2 costs $470 with the integrated neck flap. That is premium pricing for a consumer red light mask with 10-minute sessions, a polished flexible silicone build and coverage from forehead to neck." },
+    { q: "What are the downsides of the CurrentBody Series 2?", a: "The CurrentBody Series 2 is FDA registered but not Class II cleared like Omnilux, and the brand leans on scale rather than peer-reviewed studies. At $470 it is premium-priced, and it has no customisable session modes." },
+    { q: "CurrentBody Series 2 vs Dr. Dennis Gross SpectraLite: which is better?", a: "CurrentBody Series 2 is better for comfort and neck coverage; SpectraLite is better for dermatology pedigree and acne. CurrentBody uses flexible silicone with a neck flap, while SpectraLite adds blue light but has a hard shell and no neck flap." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

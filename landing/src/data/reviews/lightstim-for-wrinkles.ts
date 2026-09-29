@@ -64,6 +64,11 @@ Choose LightStim for Wrinkles for FDA-cleared peer-reviewed evidence at accessib
   ],
   relatedSlugs: ['solawave-wand-4-in-1', 'omnilux-contour-face', 'dr-dennis-gross-spectralite'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "Is LightStim for Wrinkles FDA-cleared?", a: "Yes. LightStim for Wrinkles is the longest-running FDA-cleared consumer red light device, with more than a decade of brand history and peer-reviewed studies on this specific device. It uses four wavelengths: 605, 630, 660 and 855 nm." },
+    { q: "How much does LightStim for Wrinkles cost?", a: "The LightStim for Wrinkles handheld costs $249. Given its FDA clearance and device-specific peer-reviewed studies, that makes it the best evidence-per-dollar option in consumer red light therapy. The trade-off is convenience: it is a handheld you position by hand each session, with no app." },
+    { q: "LightStim vs a red light face mask: which is better?", a: "LightStim has the stronger evidence base, but it is a handheld you must actively move across your face each session, which is slower than a lie-on mask. Masks let you do other things during treatment. LightStim also has no app or session programming." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

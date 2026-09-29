@@ -66,6 +66,11 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Ice Barrel — official site', url: 'https://icebarrel.com/' },
   ],
   relatedSlugs: ['plunge', 'inergize-cold-tub', 'cold-pod'],
+  faq: [
+    { q: "Does the Ice Barrel 500 have a chiller?", a: "No. The Ice Barrel 500 has no chiller: you fill it with water and ice. That keeps the upfront price at $1,200, roughly a fifth of The Plunge, but daily ice becomes a real operating expense, and how well it holds temperature depends on your climate." },
+    { q: "How much does it cost to run an Ice Barrel 500?", a: "Beyond the $1,200 purchase price, the main running cost is ice, about $5–15 per session depending on your climate. Over regular use that adds up, which is the daily friction of any non-chiller plunge. It also demands more maintenance than chiller-built tubs." },
+    { q: "Who is the Ice Barrel 500 best for?", a: "It suits people who want a clean, compact cold plunge without paying chiller-tier prices. Its vertical footprint fits small spaces, it is outdoor-rated and easy to drain, and it has proven multi-year reliability. The warranty is one year, versus three for The Plunge." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

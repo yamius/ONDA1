@@ -64,6 +64,11 @@ Choose Levoit Core 300 as starter purifier for single bedroom at $99. For larger
   ],
   relatedSlugs: ['levoit-core-600s', 'coway-airmega-ap-1512hh', 'honeywell-hpa300'],
   publishOn: '2026-07-27',
+  faq: [
+    { q: "How big a room does the Levoit Core 300 cover?", a: "The Levoit Core 300 is AHAM-certified for 219 sq ft, which makes it a bedroom-scale purifier. For larger rooms, step up to the Levoit Core 600S at 635 sq ft or the Honeywell HPA300 at 465 sq ft." },
+    { q: "Is the Levoit Core 300 worth $99?", a: "Yes, as a starter purifier. For $99 you get True HEPA H13 filtration with an activated-carbon layer, the cheapest filter ownership in the category, and quiet operation of about 24 dB on low. It suits users entering the category who need to clean a single bedroom." },
+    { q: "Does the Levoit Core 300 have an app or auto mode?", a: "No. The Core 300 has no app, no sensor and no auto mode, just three manual speeds. It is a purely mechanical entry-level device in a plastic budget build. For app control and auto mode, the Levoit Core 600S is the step up at $299." },
+  ],
   datePublished: '2026-07-27',
   dateModified: '2026-07-27',
 }

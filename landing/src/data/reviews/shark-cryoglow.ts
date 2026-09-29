@@ -64,6 +64,11 @@ Choose Shark CryoGlow if you want cooling + LED combined into one device for inf
   ],
   relatedSlugs: ['solawave-wand-4-in-1', 'higherdose-red-light-face-mask', 'theraface-mask'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "Is the Shark CryoGlow worth it?", a: "The Shark CryoGlow is worth it if you want cooling and LED in one device. Its cooling element genuinely helps with puffiness and it offers red plus blue light. If maximum LED dose is your priority, a pure silicone mask is the better pick, because the cooling element compromises LED dose." },
+    { q: "How much does the Shark CryoGlow cost?", a: "The Shark CryoGlow costs $349 as a standalone device. For that price you get a hybrid mask combining a cooling element with dual red and blue LED spectrum, backed by the Shark Beauty brand, rather than a single-modality LED mask." },
+    { q: "What are the downsides of the Shark CryoGlow?", a: "The CryoGlow's cooling element compromises LED dose, and the hybrid design is heavier and more complex to use daily than a pure silicone mask. There is also limited peer-reviewed clinical evidence on the cooling-plus-LED combination specifically, so its benefits rest more on concept than proof." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

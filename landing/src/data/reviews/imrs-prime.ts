@@ -64,6 +64,11 @@ Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi
   ],
   relatedSlugs: ['bemer-classic-evo', 'curatron-3d', 'omi-full-body-mat'],
   publishOn: '2026-06-22',
+  faq: [
+    { q: "iMRS Prime vs Bemer: which is better?", a: "iMRS Prime costs less than Bemer and offers a comparable Swiss-engineered build plus a coordinated mat, pillow and spot applicator system. Bemer keeps a research advantage: its proprietary single waveform is better studied. Choose iMRS for price and applicators, Bemer for waveform evidence." },
+    { q: "How much does the iMRS Prime cost?", a: "The iMRS Prime costs about $4,000 in the configuration with a full-body mat, pillow and spot applicator. That is mid-premium pricing, below Bemer, for a Swiss-engineered build from a multi-decade brand, though without clear research differentiation from Bemer to justify the choice on evidence alone." },
+    { q: "What frequencies does the iMRS Prime use?", a: "The iMRS Prime uses a sawtooth waveform with documented Schumann (7.83 Hz) protocols and circadian-aligned morning and evening presets. It exposes fewer adjustable parameters than the Healthy Wave Multi-Wave, so it suits users who prefer presets over manual tuning." },
+  ],
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',
 }

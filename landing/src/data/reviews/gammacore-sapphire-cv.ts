@@ -68,6 +68,12 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'nVNS for cluster headache — randomised trial (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5654415/' },
   ],
   relatedSlugs: ['truvaga-350', 'nurosym', 'livanova-vns-therapy'],
+  faq: [
+    { q: "Do you need a prescription for gammaCore?", a: "Yes. In the US, gammaCore Sapphire CV is prescription-only, so access is gated by a physician. It is the only non-invasive vagus nerve stimulator with FDA clearance, and that clearance covers migraine and cluster-headache treatment, not general wellness use." },
+    { q: "How much does gammaCore cost?", a: "gammaCore costs around $600, with refill cards extra. The actual cost varies by payer, and the refill model can lock you in over time. Because a prescription is required, you get it through a physician rather than as a simple retail purchase." },
+    { q: "How does gammaCore work?", a: "gammaCore is a handheld device you press against the side of the neck over the carotid artery. It delivers a proprietary 5 kHz waveform burst in fixed 2-minute sessions, targeting the cervical vagal trunk directly rather than the ear branch. Dosing is clinically calibrated, with no customisable protocols." },
+    { q: "Is gammaCore worth it?", a: "For clinically indicated migraine or cluster-headache patients, yes: it has the deepest randomised-trial evidence base of any device in its category. For general stress relief or wellness it is the wrong tool, because it is a clinical device with narrow indications and prescription gating." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

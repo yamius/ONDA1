@@ -64,6 +64,11 @@ Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For Western
   ],
   relatedSlugs: ['dr-dennis-gross-spectralite', 'lumara-viso', 'currentbody-series-2'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "How many wavelengths does the JOVS DPL mask have?", a: "The JOVS DPL Photofacial Mask has seven wavelength modes, including red, blue, amber and green, the broadest spectrum coverage among consumer masks. It also offers multiple session modes for different indications, all at a $399 price." },
+    { q: "Who is the JOVS DPL Photofacial Mask best for?", a: "It suits buyers who want maximum wavelength coverage at mid-tier pricing and value spec over Western clinical credentials. It brings K-beauty engineering and seven modes for $399. Buyers who prioritise comfort or clinical evidence may prefer silicone masks or brands with a longer Western track record." },
+    { q: "What are the downsides of the JOVS DPL Photofacial Mask?", a: "Its Western clinical-evidence base is light, and its hard-shell hybrid build is less comfortable than silicone masks. There is no neck flap. JOVS is recognised in K-beauty but newer in the Western red-light market, without a multi-year track record there." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

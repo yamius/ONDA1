@@ -3404,6 +3404,14 @@ export function getMetaForRoute(route: string): RouteMeta {
               url,
               articleSlugs: topic.articleSlugs,
               glossarySlugs: topic.glossarySlugs,
+              // Freshness = newest git date among the hub's articles.
+              dateModified:
+                topic.articleSlugs
+                  .map((s) => ARTICLE_DATES[s]?.modified)
+                  .filter((d): d is string => !!d)
+                  .sort()
+                  .at(-1)
+                  ?.slice(0, 10) ?? undefined,
             }
           : undefined,
       }

@@ -66,6 +66,12 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Cold-water immersion and vagal tone (Frontiers in Physiology)', url: 'https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.876283/full' },
   ],
   relatedSlugs: ['inergize-cold-tub', 'edge-tub', 'coldture', 'morozko-forge'],
+  faq: [
+    { q: "Is The Plunge All-In worth it?", a: "The Plunge All-In is worth it for serious daily cold-plunge users who want category-leading turnkey hardware. Its 1 HP chiller holds 39°F even in summer heat, ozone cuts water changes to every 2 to 4 weeks, and it is indoor and outdoor rated with a 3-year warranty." },
+    { q: "How much does The Plunge All-In cost?", a: "The Plunge All-In is listed at $5,990 one-time, with ozone, the chiller and a 3-year warranty included. The review notes that price puts it out of reach of casual experimenters. It needs a 110V outlet and a level surface." },
+    { q: "What are the downsides of The Plunge All-In?", a: "At $5,990 it is out of reach for casual experimenters. It needs a 110V outlet and a level surface, has a real footprint that does not suit small apartments, and faces long lead times during peak demand." },
+    { q: "Plunge vs Renu Therapy Cold Stoic: which is better?", a: "The Plunge reaches a slightly colder floor, 39°F versus Renu's 40°F, and has wider brand recognition. The Renu Cold Stoic has the quietest chiller among premium plunges, making it better for indoor installs. Both include ozone and a 3-year warranty." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

@@ -64,6 +64,12 @@ Choose Dyson Big+Quiet for premium consumer brand + best smart features + formal
   ],
   relatedSlugs: ['iqair-healthpro-plus', 'molekule-air-pro', 'coway-airmega-400'],
   publishOn: '2026-07-27',
+  faq: [
+    { q: "Is the Dyson Purifier Big+Quiet Formaldehyde worth it?", a: "Yes, if you want the best smart features and quiet operation. It pairs True HEPA H13 and carbon with a formaldehyde-destroying layer, a formaldehyde sensor unique in the category and about 24 dB on low. It offers less filtration depth than IQAir's HyperHEPA H14." },
+    { q: "How much does the Dyson Purifier Big+Quiet Formaldehyde cost?", a: "The Dyson Purifier Big+Quiet Formaldehyde costs $999 standalone. Its filter cost is moderate on top of that premium purchase price, which buys full app integration, built-in sensors and large-room coverage. It runs at about 24 dB on low." },
+    { q: "What are the downsides of the Dyson Purifier Big+Quiet?", a: "The Dyson uses True HEPA H13 rather than IQAir's HyperHEPA H14 and costs a premium $999. Its cylindrical tower form factor is not for everyone, and filter costs are moderate. In exchange you get the best smart-feature execution in the category." },
+    { q: "Dyson Big+Quiet vs IQAir: which is better?", a: "IQAir is better for filtration depth; the Dyson is better for smart features and polish. IQAir uses HyperHEPA H14, while the Dyson uses H13 but adds formaldehyde destruction, a full app, built-in sensors and very quiet operation." },
+  ],
   datePublished: '2026-07-27',
   dateModified: '2026-07-27',
 }

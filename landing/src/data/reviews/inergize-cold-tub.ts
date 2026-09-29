@@ -66,6 +66,11 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Inergize Health — official site', url: 'https://inergizehealth.com/' },
   ],
   relatedSlugs: ['ice-barrel-500', 'edge-tub', 'plunge'],
+  faq: [
+    { q: "Can you add a chiller to the Inergize Cold Tub later?", a: "Yes, that is the main appeal. You can run the Inergize tub as an ice-fill plunge first and add its separate chiller later, about $1,300 on top of the $1,500 tub. That splits the upfront cost and lets you upgrade once your practice is established." },
+    { q: "Inergize Cold Tub vs The Plunge: which is better?", a: "The Plunge has a more powerful integrated chiller and a longer reliability track record. Inergize is cheaper to start and modular, with better insulation than inflatable or barrel options. Once you add the chiller, though, the total cost approaches Edge Tub territory." },
+    { q: "What are the downsides of the Inergize Cold Tub?", a: "The add-on chiller is less powerful than the unit integrated into The Plunge, and the full setup approaches Edge Tub pricing. Its multi-year reliability record is thinner than The Plunge, and the warranty is split component by component rather than covering the whole system." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

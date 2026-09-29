@@ -65,6 +65,12 @@ Choose Othership if you want breathwork as cinematic experience with music and l
   ],
   relatedSlugs: ['breathwrk', 'soma-breath', 'open-app'],
   publishOn: '2026-06-29',
+  faq: [
+    { q: "Is Othership worth it?", a: "Othership is worth it if you buy breathwork as an experience. It has the best production value in the category, with cinematic, music-driven sessions and live community classes scheduled daily. It is the most expensive breathwork subscription and cites less peer-reviewed evidence than Breathwrk." },
+    { q: "How much does Othership cost?", a: "Othership is listed at $150 per year as an annual subscription, with a free trial available. That is the highest premium subscription among breathwork apps covered in the review. You pay for cinematic, music-driven sessions and daily live community classes." },
+    { q: "What are the downsides of Othership?", a: "Othership costs $150 a year, the highest in breathwork apps. It cites less peer-reviewed evidence than Breathwrk, has a smaller raw session count, and places less focus on Buteyko and clinical research. It is an experience-first app rather than a clinical tool." },
+    { q: "Othership vs Breathwrk: which is better?", a: "Othership is better for immersive, music-driven sessions and daily live classes. Breathwrk is better for evidence citation, raw session count and Buteyko or clinical-research focus. Pick based on whether you want an experience or structured, evidence-led practice." },
+  ],
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
 }

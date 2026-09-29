@@ -67,6 +67,11 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
   relatedSlugs: ['eight-sleep-pod-4', 'chilipad-dock-pro', 'tempur-breeze-pro'],
   publishOn: '2026-06-15',
+  faq: [
+    { q: "Is the Sleep Number Climate360 worth it?", a: "The Climate360 is worth it if you want climate control built into the mattress rather than added as a pad. It also includes mature SleepIQ tracking of HRV, breathing rate and sleep stages, with no subscription. Its climate range is less aggressive than dedicated systems, and it cannot be retrofitted." },
+    { q: "How much does the Sleep Number Climate360 cost?", a: "The Sleep Number Climate360 starts at about $5,500 for a queen, with pricing varying by size. It requires buying the Sleep Number 360 bed itself; the climate feature cannot be added to an existing mattress. No subscription is required." },
+    { q: "What are the downsides of the Sleep Number Climate360?", a: "Its climate range is less aggressive than dedicated systems, and it requires a Sleep Number 360 bed purchase rather than a retrofit. Pricing is premium smart-bed territory without biohacker positioning, and the climate hardware cannot be removed or upgraded separately." },
+  ],
   datePublished: '2026-06-15',
   dateModified: '2026-06-15',
 }

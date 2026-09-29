@@ -67,6 +67,11 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
   relatedSlugs: ['sleep-number-climate360', 'slumber-cloud-dryline', 'bedjet-3'],
   publishOn: '2026-06-15',
+  faq: [
+    { q: "Is the Tempur-Breeze Pro worth it?", a: "The Tempur-Breeze Pro is worth it if you want cooler-than-average sleep without active climate hardware. It needs no hub, water tank or subscription and comes with a 10-year warranty. Its passive cooling can't be adjusted, fades through the night, and there is no tracking." },
+    { q: "How much does the Tempur-Breeze Pro cost?", a: "The Tempur-Breeze Pro costs about $3,800 for a queen, varying by mattress profile. That is premium mattress pricing without smart-system features, though no subscription is ever required." },
+    { q: "What are the downsides of the Tempur-Breeze Pro?", a: "The Tempur-Breeze Pro has no active climate control, so temperature cannot be adjusted, and its passive cooling diminishes through the night. It has no tracking and carries premium pricing without smart-system features." },
+  ],
   datePublished: '2026-06-15',
   dateModified: '2026-06-15',
 }

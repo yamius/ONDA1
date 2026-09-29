@@ -64,6 +64,12 @@ Choose Coway Airmega 400 for premium-tier coverage at mid-premium price. For cli
   ],
   relatedSlugs: ['blueair-healthprotect-7770i', 'iqair-healthpro-plus', 'levoit-core-600s'],
   publishOn: '2026-07-27',
+  faq: [
+    { q: "Is the Coway Airmega 400 worth it?", a: "Yes, it is the best mid-premium value. The Coway Airmega 400 pairs True HEPA H13 and carbon with 1,560 sq ft AHAM-certified coverage and a PM2.5 sensor with auto mode for $479. It closes most of the spec gap to premium models at about half the price." },
+    { q: "How much does the Coway Airmega 400 cost?", a: "The Coway Airmega 400 costs $479 standalone. Long-term filter costs are strong at about $100 per year, which keeps ownership economics favorable compared with premium purifiers that cost roughly twice as much upfront. It covers 1,560 sq ft with True HEPA H13 and carbon." },
+    { q: "What are the downsides of the Coway Airmega 400?", a: "The Coway Airmega 400 lacks PECO or HyperHEPA differentiation, and its app is less polished than Dyson's. The tower form factor is large at its 1,560 sq ft scale, and it has no HomeKit or Google Home integration." },
+    { q: "Coway Airmega 400 vs Blueair HealthProtect 7770i: which is better?", a: "The Coway Airmega 400 is better for coverage and value. It costs $479 versus $820, covers more space and has a 12-month filter cycle versus Blueair's 6-month. The Blueair is better for its HEPASilent and GermShield modes." },
+  ],
   datePublished: '2026-07-27',
   dateModified: '2026-07-27',
 }

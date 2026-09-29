@@ -62,6 +62,12 @@ Choose the Pod 5 Ultra if you want the maximal full-bed system and the price is 
   ],
   relatedSlugs: ['eight-sleep-pod-4', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro', 'bedjet-3'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Is the Eight Sleep Pod 5 worth it?", a: "Only if you want the maximal full-bed system. The Pod 5 Ultra adds an adjustable base, top-down hydro blanket, built-in audio and snore mitigation, but roughly doubles the price. Core dual-zone climate and HRV tech match the Pod 4, which remains the value." },
+    { q: "How much does the Eight Sleep Pod 5 cost?", a: "The Eight Sleep Pod 5 Ultra costs $6,099 for a queen and about $6,300 for a king, plus roughly $20 per month for the Autopilot subscription. The cover-only Pod 5 Core is cheaper for buyers who want the core experience." },
+    { q: "What are the downsides of the Eight Sleep Pod 5?", a: "The Pod 5 Ultra roughly doubles the price for additive rather than core features, and the Autopilot subscription is still required. Autopilot 4.0 also comes to the Pod 4, reducing the reason to upgrade, and the install is bigger with ecosystem lock-in." },
+    { q: "Eight Sleep Pod 5 vs Pod 4: which is better?", a: "The Pod 4 is the better value; the Pod 5 Ultra is better only if you want a full bed system with an adjustable base, top-down blanket, audio and snore mitigation. Both share core dual-zone climate and HRV tech, and Autopilot 4.0 reaches the Pod 4 too." },
+  ],
   datePublished: '2026-09-06',
   dateModified: '2026-09-06',
 }

@@ -68,6 +68,12 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },
   ],
   relatedSlugs: ['levels', 'nutrisense', 'stelo'],
+  faq: [
+    { q: "Is Signos worth it?", a: "Signos is worth it if weight loss is your main CGM goal and you respond to coaching nudges. It has the category's best AI-coaching loop with real-time meal and exercise prompts, runs on Dexcom G7 hardware, and costs less than Levels with similar accuracy. General biohackers may find the weight-loss framing too narrow." },
+    { q: "How much does Signos cost?", a: "Signos costs about $140 to $160 per month, including Dexcom G7 sensors. That is cheaper than Levels with similar accuracy. Note that an annual commitment locks the price, so check the plan terms carefully before signing up." },
+    { q: "What are the downsides of Signos?", a: "Signos's weight-loss framing may not suit users wanting general biohacker insight, and the default plan includes no human registered dietitian. Its insight engine is less academically deep than Levels, and an annual commitment locks the price, reducing flexibility if you want to stop early." },
+    { q: "Signos vs Levels: which is better?", a: "Choose Signos if weight loss is the goal and AI coaching nudges motivate you; it is cheaper than Levels on the same Dexcom G7 hardware. Choose Levels if you want deeper, more academic metabolic insight for general biohacking rather than a weight-loss programme." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

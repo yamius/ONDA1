@@ -66,6 +66,11 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Morozko Forge — official site', url: 'https://morozkoforge.com/' },
   ],
   relatedSlugs: ['plunge', 'coldture', 'renu-therapy-cold-stoic'],
+  faq: [
+    { q: "Is the Morozko Forge worth it?", a: "The Morozko Forge is worth it only if you specifically chase extreme cold-exposure depth and Wim Hof-style protocols. Its best-in-class chiller is the only consumer device that can form surface ice. For general cold-exposure practice it is overkill, and pricing starts at $10,000." },
+    { q: "How much does the Morozko Forge cost?", a: "The Morozko Forge starts at $10,000, and a full configuration runs $12,000 or more. Some configurations also require 220V, which means electrical work on top of the purchase price, and lead times can be long." },
+    { q: "What are the downsides of the Morozko Forge?", a: "The Morozko Forge costs $10,000 or more, which is out of reach for most users, and it is overkill for general cold exposure. Some configurations require 220V electrical work, and buyers face long lead times and limited distribution." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

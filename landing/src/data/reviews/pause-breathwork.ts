@@ -64,6 +64,11 @@ Choose Pause Breathwork if you're buying breathwork for somatic / emotional rele
   ],
   relatedSlugs: ['breathwrk', 'othership', 'soma-breath'],
   publishOn: '2026-06-29',
+  faq: [
+    { q: "Is Pause Breathwork worth it?", a: "Pause is worth it if you want breathwork as an emotional or somatic-release tool. It is the best somatic-focused breathwork app, with trauma-informed framing and longer journey-style sessions. It is less suited to daily structured practice and offers no HRV biofeedback." },
+    { q: "How much does Pause Breathwork cost?", a: "Pause Breathwork is listed at $90 per year as an annual subscription, with a free trial available. That buys access to its somatic, trauma-informed journey sessions rather than a short daily breathing protocol. Its sessions are longer journeys." },
+    { q: "What are the downsides of Pause Breathwork?", a: "Pause has a narrow, somatic and holotropic-dominant technique scope, is less suited to daily structured breath practice, offers no HRV biofeedback, and its longer sessions do not fit short daily windows. It is built for emotional release, not a quick structured daily protocol." },
+  ],
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
 }

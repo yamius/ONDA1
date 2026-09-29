@@ -64,6 +64,11 @@ Choose HigherDOSE Red Light Face Mask for consumer-polished daily-use mask in th
   ],
   relatedSlugs: ['currentbody-series-2', 'theraface-mask', 'omnilux-contour-face'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "How much does the HigherDOSE Red Light Face Mask cost?", a: "The HigherDOSE Red Light Face Mask costs $345 on its own. That is cheaper than dermatology-reference masks, and it buys a flexible silicone mask with a polished app. What you trade for the lower price is irradiance and clinical depth rather than comfort." },
+    { q: "What wavelengths does the HigherDOSE mask use?", a: "The HigherDOSE mask uses red light at 633 nm and near-infrared at 830 nm, delivered at modest irradiance. There are no multi-wavelength variants, so buyers who want broader spectrum coverage or maximum output should look at spec-maximalist competitors instead." },
+    { q: "What are the downsides of the HigherDOSE Red Light Face Mask?", a: "Its clinical-evidence base is light, and its irradiance is modest compared with spec-maximalist competitors. It has no neck flap and no multi-wavelength variants. The pitch is consumer-friendliness and the HigherDOSE ecosystem, which pairs with its PEMF mat and sauna blanket, rather than dermatology depth." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

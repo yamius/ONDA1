@@ -68,6 +68,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'EmotivPRO academic-publication index', url: 'https://www.emotiv.com/publications' },
   ],
   relatedSlugs: ['neurosity-crown', 'muse-s-athena', 'neurosky-mindwave-mobile-2'],
+  faq: [
+    { q: "Is the Emotiv Insight 2 worth it?", a: "Yes, for researchers and serious self-experimenters. The Emotiv Insight 2 has five EEG channels, the EmotivPRO toolchain used in hundreds of published studies, and an established SDK. Raw-data access requires a Pro subscription, and its guided content trails Muse." },
+    { q: "How much does the Emotiv Insight 2 cost?", a: "The Emotiv Insight 2 costs $499 for the device, plus about $99 per year for the Pro subscription required for raw-data access. Without Pro you still get live cognitive-performance metrics such as focus, stress and engagement." },
+    { q: "What are the downsides of the Emotiv Insight 2?", a: "Raw-data access on the Emotiv Insight 2 requires a Pro subscription, which feels like double-paying. Its guided-content library is modest compared with Muse, its UX is less polished than consumer alternatives, and it has no sleep tracking." },
+    { q: "Emotiv Insight 2 vs Muse: which is better?", a: "The Emotiv Insight 2 is better for research-grade EEG; Muse is better for guided meditation. Emotiv's five channels give better cortical coverage than Muse plus an academic toolchain, while Muse has a larger guided-content library." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

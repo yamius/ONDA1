@@ -68,6 +68,11 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['headspace', 'waking-up', 'calm'],
+  faq: [
+    { q: "Is Happier Meditation the same as Ten Percent Happier?", a: "Yes. Happier Meditation is the new name for Ten Percent Happier. The app is still built around the quality of its teachers, with 500-plus guided sessions and courses from a relatable, expert roster. The recent rebrand can make it harder to find in search." },
+    { q: "How much does Happier Meditation cost?", a: "Happier Meditation costs about $100 per year, which makes it one of the more expensive meditation apps. The free tier is thin, so you realistically need the subscription. What you pay for is teaching quality rather than library size, which is smaller than Insight Timer or Calm." },
+    { q: "Who is Happier Meditation best for?", a: "Happier Meditation is best for people who value teaching quality, especially skeptics. Its framing is no-woo, its teachers are relatable experts, and the app is polished and well-reviewed. If you want the biggest library or a usable free tier, Insight Timer is a better match." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

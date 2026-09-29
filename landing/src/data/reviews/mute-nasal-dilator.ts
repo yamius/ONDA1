@@ -64,6 +64,11 @@ Choose Mute Nasal Dilator if you tolerate internal devices and want clinical-evi
   ],
   relatedSlugs: ['intake-breathing', 'breathe-right-original', 'somnifix'],
   publishOn: '2026-07-13',
+  faq: [
+    { q: "Is the Mute Nasal Dilator worth it?", a: "Mute is worth it for committed mouth-breathers who tolerate internal devices. It offers the strongest mechanical mechanism among nasal dilators, published clinical airflow studies, and it is invisible externally. Expect an adaptation curve, and note that it costs more per night than external strips." },
+    { q: "How much does the Mute Nasal Dilator cost?", a: "Mute is listed at $25 for a 3-pack, with each stent reusable for about a week. Because it comes in three sizes, you also need to buy a sizing kit first, and its per-night cost is higher than external strips." },
+    { q: "What are the downsides of the Mute Nasal Dilator?", a: "Mute has an adaptation curve, and the first nights feel strange. Internal insertion is not tolerated by everyone, a sizing kit is needed because it comes in three sizes, and its per-night cost is higher than external strips." },
+  ],
   datePublished: '2026-07-13',
   dateModified: '2026-07-13',
 }

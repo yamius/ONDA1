@@ -68,6 +68,12 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'VNS Therapy outcomes registry — 100,000+ patient data (Epilepsia)', url: 'https://onlinelibrary.wiley.com/journal/15281167' },
   ],
   relatedSlugs: ['gammacore-sapphire-cv', 'nurosym', 'truvaga-350'],
+  faq: [
+    { q: "What is LivaNova VNS Therapy (SenTiva)?", a: "LivaNova VNS Therapy (SenTiva) is a surgically implanted device that directly stimulates the cervical vagus nerve. It is FDA-approved for drug-resistant epilepsy and treatment-resistant depression, and is restricted to clinically indicated patients with a prescribing specialist. It is not a consumer device, and decisions about it belong with that specialist." },
+    { q: "How much does LivaNova VNS Therapy cost?", a: "The listed reference cost is around $27,500 for the procedure plus device, typically insurance-covered for indicated conditions. It cannot be bought directly: costs are insurance-mediated and access runs through a prescribing specialist, so the price a patient sees depends on their coverage rather than a retail price." },
+    { q: "What are the downsides of LivaNova VNS Therapy?", a: "The main downsides are that it is a surgical implant rather than a consumer device, it is limited to clinically indicated patients with a prescribing specialist, and voice change and throat discomfort during stimulation are common. Procedure costs are insurance-mediated, so it is not directly purchasable." },
+    { q: "How does LivaNova VNS compare with consumer VNS devices?", a: "LivaNova is the clinical gold standard for VNS, with twenty-plus years of evidence and direct cervical vagus stimulation, the most efficacious approach. The review treats it as a reference point for understanding what non-invasive consumer VNS devices can and cannot replicate, not as an alternative you choose off the shelf." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

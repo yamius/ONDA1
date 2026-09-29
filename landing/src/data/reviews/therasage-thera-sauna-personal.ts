@@ -67,6 +67,11 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['sunlighten-mpulse', 'higherdose-blanket-v4', 'sun-home-equinox'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "Is the Therasage TheraSauna worth it?", a: "The TheraSauna is worth it if you want full-spectrum IR at mid-tier pricing. It comes in tent and cabin formats with third-party-verified low EMF. Wavelength separation is less rigorous than Sunlighten mPulse, and the build is less premium than Sunlighten or Clearlight." },
+    { q: "How much does the Therasage TheraSauna cost?", a: "The Therasage TheraSauna starts at about $1,500 for the tent and $3,500 for the cabin configuration. That puts full-spectrum IR at mid-tier pricing, with tent and cabin options covering different install scenarios." },
+    { q: "What are the downsides of the Therasage TheraSauna?", a: "Its wavelength separation is less rigorous than Sunlighten mPulse, its EMF profile is higher than SaunaSpace Faraday, and its build is less premium than Sunlighten or Clearlight cabins. Brand recognition is also narrower than category leaders." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

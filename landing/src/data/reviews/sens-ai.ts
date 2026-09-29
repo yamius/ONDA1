@@ -68,6 +68,11 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'Transcranial photobiomodulation — clinical evidence review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
   ],
   relatedSlugs: ['neurosity-crown', 'muse-s-athena', 'mendi'],
+  faq: [
+    { q: "Is the Sens.ai worth it?", a: "Sens.ai is worth it only if you specifically want EEG, photobiomodulation and HRV in one headset. It is the only device combining all three in a single programme, with strong cross-modal session analysis and premium build, but it is also the most expensive headset in the category and its ecosystem is less mature than Muse or Emotiv." },
+    { q: "How much does the Sens.ai cost?", a: "The Sens.ai costs $1,495 for the device, plus a subscription to unlock the full programmes. That makes it the most expensive headset in this category. The price buys a combined EEG, photobiomodulation and HRV system with progression-tracked content, not a basic meditation headband." },
+    { q: "What are the downsides of the Sens.ai?", a: "The main downsides are price, $1,495 plus subscription, and a closed data model that does not suit developers or researchers. The headset is heavy, so it is not for overnight wear or use while moving, and as a newer entry its ecosystem is less mature than Muse or Emotiv." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

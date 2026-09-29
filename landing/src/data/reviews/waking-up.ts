@@ -68,6 +68,12 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['headspace', 'insight-timer', 'calm'],
+  faq: [
+    { q: "Is Waking Up worth it?", a: "Waking Up is worth it for practitioners past the basics who want depth. It has the highest-calibre instructors, pairs practice with philosophy and conversations, and is secular and rigorous. It is the most expensive app reviewed, not built for beginners, and has no sleep content." },
+    { q: "How much does Waking Up cost?", a: "Waking Up costs about $130 per year, the most expensive meditation app in the review. It is offered free to anyone who genuinely cannot afford it, so price need not be a barrier." },
+    { q: "What are the downsides of Waking Up?", a: "Waking Up is the most expensive app reviewed and is not built for complete beginners. Its curated library is smaller, has no sleep content, and is lighter on adaptive personalisation than other major meditation apps." },
+    { q: "Who is Waking Up best for?", a: "Waking Up is best for practitioners past the basics who want serious instruction and philosophy. It suits people who value secular, intellectually rigorous teaching. Complete beginners or anyone wanting sleep content should look elsewhere." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

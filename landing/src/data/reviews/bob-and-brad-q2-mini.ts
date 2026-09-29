@@ -63,6 +63,12 @@ Choose Bob and Brad Q2 Mini for budget mini with brand credibility. For premium 
   ],
   relatedSlugs: ['renpho-r3', 'hypervolt-go-2', 'opove-m3-pro-2'],
   publishOn: '2026-07-20',
+  faq: [
+    { q: "Is the Bob and Brad Q2 Mini worth it?", a: "Yes, for budget buyers. The Bob and Brad Q2 Mini offers a brushless motor, about 6 hours of battery life and 4 attachments for $99, backed by the Famous Physical Therapists brand. Its 35 lbs stall force and 10 mm amplitude are modest, so it is not for users who want premium power." },
+    { q: "How much does the Bob and Brad Q2 Mini cost?", a: "The Bob and Brad Q2 Mini costs $99 with 4 attachments. For that price you get a mini form factor with a brushless motor, 35 lbs stall force, 10 mm amplitude and roughly 6 hours of battery life, which is long for its size." },
+    { q: "What are the downsides of the Bob and Brad Q2 Mini?", a: "The Bob and Brad Q2 Mini has modest 35 lbs stall force and a 10 mm amplitude, versus 14–16 mm on premium massage guns. It also has no app or smart features and no multi-grip handle for reaching awkward spots." },
+    { q: "Who is the Bob and Brad Q2 Mini best for?", a: "The Bob and Brad Q2 Mini is best for budget-conscious buyers who want a credible-brand mini massage gun at $99. It suits people who trust the Bob and Brad physical-therapist framing and accept reduced stall force for the price." },
+  ],
   datePublished: '2026-07-20',
   dateModified: '2026-07-20',
 }

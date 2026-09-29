@@ -67,6 +67,11 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },
   ],
   relatedSlugs: ['stelo', 'levels', 'ultrahuman-m1'],
+  faq: [
+    { q: "Do you need a prescription for Lingo?", a: "No. Lingo is Abbott's over-the-counter CGM, sold without a prescription or subscription. It uses Libre 3 hardware with reliable, calibration-free 14-day wear, and you simply buy sensors as you need them. It is the cheapest legitimate consumer CGM access in the US." },
+    { q: "How much does Lingo cost?", a: "Lingo costs $49 per two-week sensor, or $89 for a pack of four, which works out to roughly $22 per month. There is no subscription; you buy single sensors as you need them. That makes it the lowest-cost entry into continuous glucose monitoring." },
+    { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics and the more accurate Dexcom G7, at around $199 a month. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

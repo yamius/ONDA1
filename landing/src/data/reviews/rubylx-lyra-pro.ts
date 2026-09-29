@@ -67,6 +67,12 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'RubyLx third-party lab reports — Lyra Pro', url: 'https://rubylx.com/pages/lab-testing' },
   ],
   relatedSlugs: ['gembared-vesta', 'platinumled-biomax-600', 'joovv-solo-3'],
+  faq: [
+    { q: "Is the RubyLx Lyra Pro worth it?", a: "The Lyra Pro is worth it for buyers who want every spec independently verified. It is the most third-party tested panel in consumer red light, with published lab reports for irradiance, EMF, flicker and spectrum, and five-wavelength coverage. It lacks FDA Class II registration." },
+    { q: "How much does the RubyLx Lyra Pro cost?", a: "The RubyLx Lyra Pro is listed at $1,099 one-time, with the stand included. That is cheaper than Joovv, though full-body coverage requires stacking more than one panel. Its published lab reports cover irradiance, EMF, flicker and spectrum, and it offers five-wavelength coverage." },
+    { q: "What are the downsides of the RubyLx Lyra Pro?", a: "RubyLx has a smaller brand following, so its reliability track record is shorter than Joovv or Mito Red. The Lyra Pro has no FDA Class II registration, full-body use requires stacking panels, and there is no modular ecosystem like Joovv's." },
+    { q: "RubyLx Lyra Pro vs Joovv: which is better?", a: "The Lyra Pro is cheaper than Joovv with comparable EMF discipline and more published third-party lab testing. Joovv offers a modular ecosystem and a longer reliability track record. Pick RubyLx for verified specs and value, Joovv for its ecosystem." },
+  ],
   datePublished: '2026-05-23',
   dateModified: '2026-05-23',
 }

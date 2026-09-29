@@ -67,6 +67,11 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'hooga-hg500', 'biolight-pro-900'],
+  faq: [
+    { q: "Infraredi Pro 1500 vs MitoPRO 1500: which is better?", a: "The Infraredi Pro 1500 matches the MitoPRO 1500 on panel size and four-wavelength spectrum for about $200 less, with stand and door mount included. Mito Red has the more established brand, a larger biohacker community and a longer reliability record. Infraredi wins on price." },
+    { q: "How much does the Infraredi Pro 1500 cost?", a: "The Infraredi Pro 1500 costs $999 as a one-time purchase, with the stand and door mount included rather than sold as upsells. That makes it a strong value for a large panel, although it has no FDA Class II registration." },
+    { q: "What are the downsides of the Infraredi Pro 1500?", a: "Infraredi is a newer brand, so its multi-year reliability record is thinner than Joovv or Mito Red. It lacks FDA Class II registration, and its published EMF and flicker results have been less independently re-verified than those of Joovv or PlatinumLED." },
+  ],
   datePublished: '2026-05-23',
   dateModified: '2026-05-23',
 }

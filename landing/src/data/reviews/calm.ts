@@ -68,6 +68,12 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['headspace', 'insight-timer', 'waking-up'],
+  faq: [
+    { q: "Is Calm worth it?", a: "Yes, for sleep and relaxation, if you pay for Premium. Calm has the most polished interface in the category and a vast library with celebrity-narrated Sleep Stories and soundscapes. Its free tier is thin, and it is lighter on rigorous, structured meditation courses." },
+    { q: "How much does Calm cost?", a: "Calm Premium costs about $70 per year. Premium is required to get real value, because the free tier is thin and most of the library, including Sleep Stories and soundscapes, sits behind the subscription. Its interface is the most polished in the category." },
+    { q: "What are the downsides of Calm?", a: "Calm's free tier is thin, so Premium is required to get real value. It focuses more on relaxation than rigorous meditation instruction and is lighter on structured, progressive courses than teaching-focused apps. Its strength is sleep and relaxation content." },
+    { q: "Calm vs Balance: which is better?", a: "Calm is better for sleep and relaxation; Balance is better for an adaptive meditation plan. Calm offers Sleep Stories, soundscapes and a larger library, while Balance personalises a course-style plan and offers a 12-month free trial." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

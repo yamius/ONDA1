@@ -65,6 +65,12 @@ Choose Open if you want one premium app for breath + meditation + movement rathe
   ],
   relatedSlugs: ['breathwrk', 'othership', 'soma-breath'],
   publishOn: '2026-06-29',
+  faq: [
+    { q: "Is the Open app worth it?", a: "Open is worth it if you want one premium app covering breathwork, meditation and movement instead of stacking three specialist apps. It has named-instructor production, live classes and native Apple Watch support. Each modality's library is smaller than the specialists', such as Breathwrk or Calm." },
+    { q: "How much does Open cost?", a: "Open is listed at $120 per year as an annual subscription, with a free trial available. The review calls this premium pricing, justified mainly if you use all three modalities rather than just one. It also includes live classes." },
+    { q: "What are the downsides of the Open app?", a: "Open's per-modality library is smaller than specialists like Breathwrk for breath or Calm for meditation. At $120 a year it is premium-priced, its hybrid focus dilutes pure breathwork depth, and it has less Buteyko and clinical-modality breadth than Breathwrk." },
+    { q: "Open vs Breathwrk: which is better?", a: "Choose Open for breathwork, meditation and movement in one polished app with live classes and Apple Watch support. Choose Breathwrk if you want pure breathwork depth, including more Buteyko and clinical-modality breadth, since Open's hybrid focus dilutes that." },
+  ],
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
 }

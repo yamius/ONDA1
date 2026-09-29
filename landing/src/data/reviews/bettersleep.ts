@@ -68,6 +68,12 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['pzizz', 'endel', 'sleep-cycle'],
+  faq: [
+    { q: "Is BetterSleep worth it?", a: "Yes, if your main problem is falling asleep. BetterSleep has the deepest wind-down library of any sleep app, with mixable soundscapes, SleepTales, meditations and breathing. It is not worth it as a measurement tool, because its sleep tracking is the lighter half of the app." },
+    { q: "How much does BetterSleep cost?", a: "BetterSleep Premium costs about $60 per year, and a free tier is available. The full content library, including the complete range of mixable soundscapes, SleepTales and meditations, requires the Premium subscription. Tracking is included, but it is the lighter half of the app." },
+    { q: "What are the downsides of BetterSleep?", a: "BetterSleep's tracking is light and not a serious measurement tool. The volume of content can overwhelm new users, the full library needs a subscription, and it offers no distinctive clinical sleep method. It is a relaxation app first and a tracker second." },
+    { q: "BetterSleep vs AutoSleep: which is better?", a: "BetterSleep is better for getting to sleep; AutoSleep is better for measuring it. BetterSleep is a relaxation app first with the deepest wind-down content library, while AutoSleep is a purist Apple Watch tracker with no wind-down content at all." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

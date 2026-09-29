@@ -68,6 +68,12 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['headspace', 'calm', 'insight-timer'],
+  faq: [
+    { q: "Is Balance worth it?", a: "Yes, if you want a meditation plan that adapts to you. Balance builds a personalised plan around your level, goals and feedback, and gives a full 12-month free trial. The adaptation is not flawless, the library is smaller than Calm or Insight Timer, and the Android app has drawn reliability complaints." },
+    { q: "How much does Balance cost?", a: "Balance costs about $70 per year, charged after a 12-month free trial. That makes the first full year free to test the adaptive, personalised plan before committing, and the price after the trial is reasonable for a meditation subscription." },
+    { q: "What are the downsides of Balance?", a: "Balance's personalisation does not always pick the right level, and its Android app has drawn reliability complaints. Its library is smaller than Calm or Insight Timer, and a subscription is required once the trial year ends." },
+    { q: "Balance vs Calm: which is better?", a: "Balance is better for a personalised, course-style meditation plan; Calm is better for sleep and relaxation content. Balance adapts to your level and goals and offers a year free, while Calm offers a larger library built around Sleep Stories and soundscapes." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

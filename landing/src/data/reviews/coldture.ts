@@ -66,6 +66,12 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Coldture — official site', url: 'https://coldture.com/' },
   ],
   relatedSlugs: ['plunge', 'renu-therapy-cold-stoic', 'morozko-forge'],
+  faq: [
+    { q: "Is Coldture worth it?", a: "Yes, especially in cold climates. Coldture is a Canadian-built premium tub with an integrated chiller, the strongest winter performance among consumer premium tubs, ozone sanitation and a 3-year warranty. Its protocol-guidance content is less developed, and US distribution is slower." },
+    { q: "How much does a Coldture cost?", a: "A Coldture costs about $4,500 as a one-time purchase, including the chiller, ozone sanitation and cold-climate rating. It is a premium-tier tub rather than a casual purchase, priced slightly below The Plunge. It also carries a 3-year warranty." },
+    { q: "What are the downsides of Coldture?", a: "Coldture's brand recognition outside Canada and the EU is thinner than The Plunge. Its protocol-guidance content library is less developed, US distribution is slower than US-based competitors, and at premium-tier pricing it is not a casual purchase." },
+    { q: "Coldture vs The Plunge: which is better?", a: "Coldture is better for cold-climate and EU or Canadian buyers; The Plunge has stronger brand recognition and protocol content. Coldture is slightly cheaper with an outdoor winter rating and better EU and Canada distribution, while its guidance library is less developed." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

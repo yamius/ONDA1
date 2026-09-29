@@ -64,6 +64,12 @@ Choose Breathe Right Original as the first nasal-airway-opener to try — cheape
   ],
   relatedSlugs: ['intake-breathing', 'mute-nasal-dilator', 'nexcare-surgical-tape'],
   publishOn: '2026-07-13',
+  faq: [
+    { q: "Are Breathe Right Original strips worth it?", a: "Yes, as the first nasal strip to try. Breathe Right Original has a decades-long FDA-cleared track record, the best per-night value in the nasal-airway category, and ubiquitous drugstore availability. Its spring-tension mechanism is weaker than magnetic or internal dilators, so some users later upgrade." },
+    { q: "How much do Breathe Right Original strips cost?", a: "Breathe Right Original costs about $10 for a 30-strip pack, roughly $0.33 per night. That is the best per-night value in the nasal-airway category, and sensitive-skin and clear variants are also available. Each strip is single-use and disposable." },
+    { q: "What are the downsides of Breathe Right Original?", a: "Breathe Right Original uses a weaker mechanism than magnetic or internal alternatives, and each strip is single-use and disposable. The strip is visible externally, and its adhesion fails with skincare products or sweat. Sensitive-skin and clear variants are available for some of these issues." },
+    { q: "Who are Breathe Right Original strips best for?", a: "Breathe Right Original is best for first-time nasal-airway-opener users who want the drugstore reference at the lowest per-night cost. It is the one to try before committing to premium magnetic or internal alternatives. It has a decades-long FDA-cleared track record." },
+  ],
   datePublished: '2026-07-13',
   dateModified: '2026-07-13',
 }

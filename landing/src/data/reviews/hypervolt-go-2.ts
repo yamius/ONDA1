@@ -64,6 +64,11 @@ Choose Hypervolt Go 2 for premium-brand travel mini. For Hyperice full-size prem
   ],
   relatedSlugs: ['hypervolt-2-pro', 'bob-and-brad-q2-mini', 'theragun-elite'],
   publishOn: '2026-07-20',
+  faq: [
+    { q: "How much does the Hypervolt Go 2 cost?", a: "The Hypervolt Go 2 costs $129 with two attachments. That is $30 more than the budget Bob and Brad Q2 Mini, and the premium buys the Hyperice brand, app integration, a brushless motor and the quietest travel-mini operation at 50 dB." },
+    { q: "Hypervolt Go 2 vs Hypervolt 2 Pro: which should I get?", a: "The Go 2 has half the stall force of the Hypervolt 2 Pro, 30 lbs versus 60, with 12 mm amplitude. In exchange it is pocket-sized and much cheaper. Choose the Go 2 for travel and light use, and the 2 Pro for deeper home recovery." },
+    { q: "What are the downsides of the Hypervolt Go 2?", a: "The Go 2 trades power for portability: it has half the stall force of the Hypervolt 2 Pro. It ships with only two attachments, carries a one-year warranty, and costs $30 more than the budget Bob and Brad Q2 Mini." },
+  ],
   datePublished: '2026-07-20',
   dateModified: '2026-07-20',
 }

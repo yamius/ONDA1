@@ -65,6 +65,11 @@ Choose IQAir HealthPro Plus for clinical-grade HEPA filtration — accept lack o
   ],
   relatedSlugs: ['molekule-air-pro', 'dyson-purifier-big-quiet', 'coway-airmega-400'],
   publishOn: '2026-07-27',
+  faq: [
+    { q: "Is the IQAir HealthPro Plus worth $1,099?", a: "It is if you want clinical-grade filtration. Its HyperHEPA H14 filter captures 99.5% of particles down to 0.003 microns, it is used in hospital deployments, and filter cartridges last 2–4 years. If you want an app, sensors or auto mode, the price buys none of those." },
+    { q: "How is HyperHEPA different from True HEPA?", a: "The IQAir HealthPro Plus's HyperHEPA H14 filter captures 99.5% of particles down to 0.003 microns, while True HEPA H13 filters are rated at 0.3 microns. It also adds a heavy V5-Cell activated-carbon module for VOCs. Nothing else in the consumer category matches that spec." },
+    { q: "What are the downsides of the IQAir HealthPro Plus?", a: "It costs $1,099 and has no app, no sensors and no auto mode, so control is manual only. It is also loud on high speed, at around 65 dB. You are paying for filtration depth and multi-decade Swiss pedigree, not convenience features." },
+  ],
   datePublished: '2026-07-27',
   dateModified: '2026-07-27',
 }

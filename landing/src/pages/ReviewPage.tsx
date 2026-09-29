@@ -40,10 +40,12 @@ export function ReviewPage() {
   const tSummary = tField('summary', review.summary)
   const tBestFor = tField('bestFor', review.bestFor)
   const tTestNote = tField('testNote', review.testNote)
-  // FAQ: a translation's own bodies.<slug>.faq when present, else the EN list.
+  // FAQ: a translation's own bodies.<slug>.faq when present; the EN list only on
+  // EN pages (an untranslated FAQ is dropped, matching the localized FAQPage JSON-LD).
   const tFaq = (() => {
     const v = tReviews(`bodies.${slug}.faq`, { returnObjects: true, defaultValue: null })
-    return Array.isArray(v) ? (v as { q: string; a: string }[]) : (review.faq ?? [])
+    if (Array.isArray(v)) return v as { q: string; a: string }[]
+    return lang === 'en' ? (review.faq ?? []) : []
   })()
   const tContent = tField('content', review.content)
   const tPros = tList('pros', review.pros)

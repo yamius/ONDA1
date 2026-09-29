@@ -68,6 +68,11 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['sleep-cycle', 'pillow', 'sleep-as-android'],
+  faq: [
+    { q: "Is SleepScore worth it?", a: "SleepScore is worth it if you want sleep data turned into concrete, science-led recommendations. It tracks contact-free with nothing to wear or charge and gives the most actionable advice among the sleep apps reviewed. Its phone sonar is still an estimate, and the useful analysis requires Premium." },
+    { q: "How much does SleepScore cost?", a: "SleepScore Premium costs about $50 per year, and a free tier is available. The most useful analysis sits behind Premium, so budget for the subscription if the science-led recommendations are the reason you want the app." },
+    { q: "What are the downsides of SleepScore?", a: "SleepScore's phone-based sonar is an estimate, not wearable-grade tracking. Wind-down content is light, the useful analysis sits behind Premium, and the app is less polished than Sleep Cycle, its closest mainstream alternative." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

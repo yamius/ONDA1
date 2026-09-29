@@ -67,6 +67,12 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
   relatedSlugs: ['eight-sleep-pod-4', 'chilipad-dock-pro', 'bedjet-3'],
   publishOn: '2026-06-15',
+  faq: [
+    { q: "Is the Eight Sleep Pod Cover Pro worth it?", a: "Yes, if you want Pod 4 capability without replacing your mattress. The Cover Pro has the same dual-zone water cooling and heating from 13 to 43°C, HRV and sleep tracking, and Autopilot. It still costs $2,000+ and requires the subscription." },
+    { q: "How much does the Eight Sleep Pod Cover Pro cost?", a: "The Eight Sleep Pod Cover Pro costs about $2,200 for a queen size, plus roughly $20 per month for the subscription. It is a cheaper entry into the Eight Sleep ecosystem than the full system because no mattress is included." },
+    { q: "What are the downsides of the Eight Sleep Pod Cover Pro?", a: "The Cover Pro has the same subscription requirement as the full Pod 4 system and fits mattresses only up to about 14 inches thick. The heavier cover changes mattress feel slightly, and it is still expensive at $2,000+." },
+    { q: "Who is the Eight Sleep Pod Cover Pro best for?", a: "The Pod Cover Pro is best for people who want Pod 4 capability on their existing mattress. It gives entry to Eight Sleep's dual-zone climate, HRV and sleep tracking, and Autopilot without buying a new mattress." },
+  ],
   datePublished: '2026-06-15',
   dateModified: '2026-06-15',
 }

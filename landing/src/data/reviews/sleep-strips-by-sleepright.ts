@@ -64,6 +64,12 @@ Choose SleepRight Nasal Breathe Aid for budget internal nasal dilation. For prem
   ],
   relatedSlugs: ['mute-nasal-dilator', 'breathe-right-original', 'intake-breathing'],
   publishOn: '2026-07-13',
+  faq: [
+    { q: "Is the SleepRight Nasal Breathe Aid worth it?", a: "Yes, if cost matters. The SleepRight Nasal Breathe Aid offers the best per-night value among internal nasal dilators, around $0.15 a night, with a reusable cone lasting about three months and built-in adjustable sizing. It is less anatomically optimised than Mute and has limited clinical validation." },
+    { q: "How much does the SleepRight Nasal Breathe Aid cost?", a: "The SleepRight Nasal Breathe Aid costs about $12 for a reusable pair that lasts roughly three months. That works out to around $0.15 per night, the best per-night value in the internal nasal dilator category." },
+    { q: "SleepRight vs Mute: which is better?", a: "Mute is the more anatomically optimised design with a more refined polymer stent. SleepRight is the budget pick: a reusable cone at about $0.15 per night with adjustable sizing. Choose SleepRight to try internal dilation without committing to Mute pricing." },
+    { q: "What are the downsides of the SleepRight Nasal Breathe Aid?", a: "SleepRight is less anatomically optimised than Mute, and its cone design is less refined than Mute's polymer stent. It has limited peer-reviewed clinical validation, and some users report moderate nostril irritation, so comfort varies from person to person." },
+  ],
   datePublished: '2026-07-13',
   dateModified: '2026-07-13',
 }

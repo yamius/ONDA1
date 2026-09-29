@@ -68,6 +68,11 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['pzizz', 'bettersleep', 'sleep-cycle'],
+  faq: [
+    { q: "Does Endel track your sleep?", a: "No. Endel is an audio app, not a sleep tracker. It generates AI soundscapes that adapt in real time to inputs like time of day, weather and, when paired with a wearable, heart rate. You get distinctive ambient sound for sleep, focus and relaxation, but no sleep tracking, insights or analytics about your night." },
+    { q: "How much does Endel cost?", a: "Endel costs about $60 per year, and it offers only a short trial. The free tier is thin, so in practice you are paying a subscription for a single-purpose app: adaptive soundscapes for sleep, focus and relaxation, rather than a broader sleep or wellness toolkit." },
+    { q: "Is Endel worth it?", a: "Endel is worth it if you want distinctive, adaptive ambient audio to fall asleep to. Its soundscapes shift with time of day and other inputs, unlike a fixed playlist, and the app is calmly designed. It is not worth it if you want sleep data, since it offers no tracking or analytics." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

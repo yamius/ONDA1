@@ -68,6 +68,11 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['smiling-mind', 'medito', 'waking-up'],
+  faq: [
+    { q: "Is the Healthy Minds Program really free?", a: "Yes. The Healthy Minds Program is completely free, with no subscription and no ads, because it is donation-funded. Despite the zero price, it is the most scientifically validated app in its comparison, backed by dozens of peer-reviewed studies." },
+    { q: "Who created the Healthy Minds Program?", a: "The Healthy Minds Program was founded by neuroscientist Richard Davidson. It teaches a structured framework built on four pillars, Awareness, Connection, Insight and Purpose, and has been validated across dozens of peer-reviewed studies, making it the most evidence-grounded app in the comparison." },
+    { q: "What are the downsides of the Healthy Minds Program?", a: "Its library is focused rather than sprawling, and it follows a fixed journey instead of an adaptive plan. Production is less polished than Calm, and there is no sleep-story-style relaxation content. For evidence-based practice at zero cost, those trade-offs are modest." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

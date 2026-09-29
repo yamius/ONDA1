@@ -68,6 +68,12 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['pillow', 'sleepscore', 'sleep-as-android'],
+  faq: [
+    { q: "Is Sleep Cycle worth it?", a: "Sleep Cycle is worth it if you want a polished, low-effort sleep tracker with a smart alarm that wakes you in light sleep. Its free tier is genuinely useful. It is not a fall-asleep aid, though, and phone-on-bed tracking is less precise than a wearable." },
+    { q: "How much does Sleep Cycle cost?", a: "Sleep Cycle Premium costs about $50 per year, and there is a usable free tier. Premium, or pairing a watch, is needed for the best data such as snoring and heart rate. The free version still gives you the smart alarm and clean sleep analysis." },
+    { q: "What are the downsides of Sleep Cycle?", a: "Sleep Cycle's wind-down content is light and it is not a fall-asleep aid. Phone-on-bed tracking is less precise than a wearable, and the best data, like snoring and heart rate, requires Premium or a watch, so the free tier only goes so far." },
+    { q: "Sleep Cycle vs SleepScore: which is better?", a: "Pick Sleep Cycle for a more polished, low-effort tracker with a smart alarm and a useful free tier. Pick SleepScore if you want contact-free sonar tracking and the most concrete, science-led recommendations, accepting that its useful analysis sits behind Premium." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

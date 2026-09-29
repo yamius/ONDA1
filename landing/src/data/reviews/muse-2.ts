@@ -68,6 +68,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'Muse EEG headband — independent signal-quality validation (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.00109/full' },
   ],
   relatedSlugs: ['muse-s-athena', 'focuscalm', 'neurosity-crown'],
+  faq: [
+    { q: "Is the Muse 2 worth it?", a: "The Muse 2 is worth it for first-time EEG meditation users. It is the most popular consumer EEG headband, with a mature ecosystem, the lowest price among genuinely EEG meditation devices, heart rate plus EEG in one device, and no mandatory subscription. It does not track sleep." },
+    { q: "How much does the Muse 2 cost?", a: "The Muse 2 is listed at $249 one-time, with no mandatory subscription, so full features come with the device. That is the lowest price among genuinely EEG-based meditation devices in the review. It also combines heart rate and EEG sensing in one band." },
+    { q: "What are the downsides of the Muse 2?", a: "The Muse 2 has no sleep tracking, older hardware than the Muse S Athena with no fNIRS or overnight wear, a limited developer SDK, and a rigid band that is less comfortable than soft-band alternatives." },
+    { q: "Muse 2 vs Muse S Athena: which is better?", a: "Choose the Muse 2 for the cheapest entry into EEG meditation at $249. Choose the Muse S Athena at $499 if you want sleep tracking, fNIRS and a soft band comfortable enough for overnight wear, since the Muse 2 lacks all three." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

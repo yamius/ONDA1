@@ -68,6 +68,11 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'BrainCo — consumer EEG research summary', url: 'https://www.brainco.tech/' },
   ],
   relatedSlugs: ['muse-2', 'mendi', 'neurosky-mindwave-mobile-2'],
+  faq: [
+    { q: "How much does FocusCalm cost?", a: "The FocusCalm headband costs $199, with an optional FocusCalm Plus subscription on top. That makes it cheaper than Muse 2 and Neurosity Crown. The catch is that premium training content is gated behind Plus, so the full content library costs more than the hardware alone." },
+    { q: "FocusCalm vs Muse 2: which should I buy?", a: "FocusCalm is the cheaper option and has a polished, programme-driven library of guided focus and calm sessions. Its trade-off is signal depth: it uses a single forehead electrode, which is informationally thinner than multi-electrode systems. It also has no sleep tracking and no raw data or SDK." },
+    { q: "Who is FocusCalm best for?", a: "FocusCalm is best for first-time EEG users who want content-driven focus training without a developer toolchain. The soft headband is comfortable for daily 10–20 minute sessions, and the app offers structured progression. Anyone who wants raw data or deeper signal should look at multi-electrode alternatives." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

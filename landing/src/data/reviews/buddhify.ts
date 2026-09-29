@@ -68,6 +68,12 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Meditation app clinical research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=meditation+app+randomized+controlled+trial' },
   ],
   relatedSlugs: ['headspace', 'calm', 'medito'],
+  faq: [
+    { q: "Is Buddhify worth it?", a: "Yes, if you want to pay once and own a meditation app. Buddhify offers 200-plus meditations organised by situation, such as commuting or can't sleep, with no subscription. The trade-offs are a smaller library, no adaptive progression and a dated interface." },
+    { q: "How much does Buddhify cost?", a: "Buddhify costs about $30 as a one-time purchase, with no subscription. The free sample before you buy is thin, so most of the 200-plus meditations are only accessible after purchase, but you then own the app for good." },
+    { q: "What are the downsides of Buddhify?", a: "Buddhify has a smaller library than the subscription giants and no adaptive, course-based progression. Its interface feels a little dated, and the free sample before buying is thin, which makes it hard to judge before paying." },
+    { q: "Who is Buddhify best for?", a: "Buddhify is best for people who want a one-time-purchase app with meditations for whatever they are doing right now. Its situation-based organisation, covering moments like commuting or a work break, makes it a natural pick for meditating on the go." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

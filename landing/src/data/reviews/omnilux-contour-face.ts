@@ -65,6 +65,12 @@ Choose Omnilux Contour Face if you want the FDA-cleared dermatology reference wi
   ],
   relatedSlugs: ['currentbody-series-2', 'dr-dennis-gross-spectralite', 'lumara-viso'],
   publishOn: '2026-07-06',
+  faq: [
+    { q: "Is the Omnilux Contour Face worth it?", a: "The Omnilux Contour Face is worth it if you want the FDA-cleared dermatology reference. It holds FDA Class II clearance, has peer-reviewed studies on the specific device, honest irradiance specs, and the best comfort in the category from flexible medical-grade silicone. Programmability is minimal." },
+    { q: "How much does the Omnilux Contour Face cost?", a: "The Omnilux Contour Face is listed at $395. The neck flap is not included with the standard Contour and is sold separately, so budget extra if you want neck coverage as well as the face." },
+    { q: "What are the downsides of the Omnilux Contour Face?", a: "It carries premium $395 pricing, the standard version has no neck flap, it offers only a single 10-minute protocol with no advanced programmability, and it has no blue or amber wavelength variants, by design, because of its clinical focus." },
+    { q: "Omnilux Contour Face vs Lumara Viso: which is better?", a: "Omnilux is better for clinical evidence, with FDA Class II clearance and device-specific peer-reviewed studies. The Lumara Viso offers more LEDs, three wavelengths and an included neck flap, but has a lighter evidence moat and costs more at $650." },
+  ],
   datePublished: '2026-07-06',
   dateModified: '2026-07-06',
 }

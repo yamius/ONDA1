@@ -68,6 +68,12 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },
   ],
   relatedSlugs: ['ultrahuman-m1', 'levels', 'lingo', 'signos'],
+  faq: [
+    { q: "Is Stelo by Dexcom worth it?", a: "Stelo is worth it if you want Dexcom G7 accuracy at the lowest price without a coaching subscription. It is FDA-cleared OTC, needs no prescription and offers 15-day sensor wear. Its insight engine is simpler than Levels, there is no human coach, and it ships US-only." },
+    { q: "How much does Stelo cost?", a: "Stelo costs $99 for two sensors, about 30 days of wear, or $89 per month on subscription. No prescription is needed. It is the cheapest way to put Dexcom hardware on your body." },
+    { q: "Stelo vs Levels: which is better?", a: "Both use Dexcom G7 hardware with the same accuracy ceiling. Stelo is cheaper and needs no coaching subscription. Levels has a deeper insight engine with food-by-food ranking history and broader third-party integration. Choose Stelo for price, Levels for insight depth." },
+    { q: "What are the downsides of Stelo?", a: "Stelo's insight engine is simpler than Levels, with no food-by-food ranking history. There is no human coach, only app guidance, it ships US-only through Dexcom, and third-party app integration is limited compared with Levels." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

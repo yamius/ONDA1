@@ -68,6 +68,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'fNIRS neurofeedback — clinical review (NeuroImage)', url: 'https://www.sciencedirect.com/science/article/pii/S1053811919309668' },
   ],
   relatedSlugs: ['muse-s-athena', 'focuscalm', 'sens-ai'],
+  faq: [
+    { q: "Is Mendi worth it?", a: "Mendi is worth it if you want the simplest neurofeedback experience focused on prefrontal attention training. Its game-based format has the easiest learning curve in the category, it uses a comfortable single forehead band, and there is no subscription. It does not include a meditation library or sleep tracking." },
+    { q: "How much does Mendi cost?", a: "Mendi is listed at $299 as a one-time purchase, with no subscription required. That covers the single forehead band and its game-based neurofeedback training, though it does not include a meditation library or sleep tracking." },
+    { q: "What are the downsides of Mendi?", a: "Mendi is not EEG: it uses fNIRS, a different and narrower signal, and it measures only one region, the prefrontal cortex. It has no meditation library or sleep tracking, and its data platform is closed, with no developer access." },
+    { q: "Who is Mendi best for?", a: "Mendi is best for users seeking the simplest neurofeedback experience focused purely on prefrontal attention training. Its fNIRS signal can also be useful if EEG-based neurofeedback has not worked for you, since it measures a different signal modality." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

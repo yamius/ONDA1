@@ -64,6 +64,11 @@ Choose SomniFit if you want the cheapest credible branded mouth tape and your sk
   ],
   relatedSlugs: ['nexcare-surgical-tape', 'hostage-tape', 'ayo-sleep-tape'],
   publishOn: '2026-07-13',
+  faq: [
+    { q: "Are SomniFit Sleep Strips worth it?", a: "SomniFit Sleep Strips are worth it if you want a cheap branded mouth tape and don't have sensitive skin or a beard. They are the cheapest credible branded option after Nexcare DIY, with no subscription pressure. The basic adhesive struggles with beards and oily skin." },
+    { q: "How much do SomniFit Sleep Strips cost?", a: "SomniFit Sleep Strips cost about $8 for a 30-strip pack, roughly $0.27 per night. There is no subscription pressure; you simply buy packs as needed, making them the cheapest credible branded mouth tape after Nexcare DIY." },
+    { q: "What are the downsides of SomniFit Sleep Strips?", a: "SomniFit's basic adhesive causes moderate skin reactions in sensitive users and struggles with beards and oily skin. It lacks biohacker brand polish, and there is minimal peer-reviewed evidence behind it compared with better-established options." },
+  ],
   datePublished: '2026-07-13',
   dateModified: '2026-07-13',
 }

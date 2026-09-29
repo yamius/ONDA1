@@ -67,6 +67,12 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Photobiomodulation in chronic conditions — review (Lasers in Surgery and Medicine)', url: 'https://onlinelibrary.wiley.com/journal/10969101' },
   ],
   relatedSlugs: ['joovv-solo-3', 'platinumled-biomax-600', 'hooga-hg500'],
+  faq: [
+    { q: "Is the Mito Red MitoPRO 1500 worth it?", a: "The MitoPRO 1500 is worth it for biohackers who want premium four-wavelength coverage (630, 660, 830 and 850 nm) without Joovv pricing. Its irradiance has been verified by independent meters, and it carries a multi-year warranty. It lacks FDA Class II registration, which Joovv has." },
+    { q: "How much does the Mito Red MitoPRO 1500 cost?", a: "The Mito Red MitoPRO 1500 is listed at $1,199 one-time. A single 36-inch panel covers half the body, so a stacked full-body setup runs about $2,400, and stand or mount hardware adds to the headline price." },
+    { q: "What are the downsides of the Mito Red MitoPRO 1500?", a: "It has no FDA Class II registration, and a single 36-inch panel is half-body, so full-body coverage requires stacking two. Stands and mounts add cost, and its EMF and flicker testing, though published, is less independently re-verified than Joovv's." },
+    { q: "Mito Red MitoPRO 1500 vs Joovv: which is better?", a: "The MitoPRO 1500 is cheaper than the Joovv Solo 3.0 for comparable build and coverage, and offers four wavelengths. Joovv holds FDA Class II registration and more independently re-verified EMF and flicker testing. Pick Mito Red for value, Joovv for regulatory pedigree." },
+  ],
   datePublished: '2026-05-23',
   dateModified: '2026-05-23',
 }

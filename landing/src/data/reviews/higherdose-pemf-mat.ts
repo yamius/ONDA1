@@ -65,6 +65,11 @@ Choose HigherDOSE PEMF Mat for consumer-polished multi-modality recovery at $1,2
   ],
   relatedSlugs: ['resona-health-vibe', 'healthy-wave-multi-wave', 'omi-full-body-mat', 'bemer-classic-evo'],
   publishOn: '2026-06-22',
+  faq: [
+    { q: "How much does the HigherDOSE PEMF Mat cost?", a: "The full-size HigherDOSE PEMF Mat costs $1,295. For that you get PEMF stacked with far-infrared, amethyst and tourmaline, plus a polished app. Its warranty is only one year, which is short compared with the three-to-five-year norms among competing PEMF mats." },
+    { q: "HigherDOSE PEMF Mat vs Bemer: which is better?", a: "Bemer and Healthy Wave are stronger technically, with more field intensity and research backing. HigherDOSE wins on consumer experience: slick branding, a polished app and multi-modality stacking at an accessible price. Choose HigherDOSE for daily-use friendliness and Bemer for PEMF depth." },
+    { q: "What are the downsides of the HigherDOSE PEMF Mat?", a: "Its PEMF intensity is modest compared with Healthy Wave or clinical mats, and it runs a single Schumann frequency with no protocol depth. Research backing is light, since the marketing leans on the multi-modality stack rather than PEMF specifics. The one-year warranty is also short." },
+  ],
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',
 }

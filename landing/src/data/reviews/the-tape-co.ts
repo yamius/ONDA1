@@ -64,6 +64,11 @@ Choose The Tape Co. if you want X-pattern safety design with corner-of-mouth air
   ],
   relatedSlugs: ['hostage-tape', 'somnifix', 'dream-recovery-mouth-tape'],
   publishOn: '2026-07-13',
+  faq: [
+    { q: "Is The Tape Co. mouth tape worth it?", a: "The Tape Co. is worth it if safety design matters most. Its X-pattern allows corner-of-mouth airflow and reduces adhesive contact for sensitive skin, with no subscription pressure. It has no FDA registration, is a newer brand, and its two-piece application adds friction." },
+    { q: "How much does The Tape Co. cost?", a: "The Tape Co. costs about $18 for a 30-strip pack, roughly $0.60 per night. That is mid-tier per-night cost without premium brand polish, and there is no subscription pressure." },
+    { q: "What are the downsides of The Tape Co.?", a: "The Tape Co. has no FDA registration and, as a newer brand, lacks a multi-year track record. Its two-piece application is higher friction than single-piece strips, and it costs mid-tier without premium brand polish." },
+  ],
   datePublished: '2026-07-13',
   dateModified: '2026-07-13',
 }

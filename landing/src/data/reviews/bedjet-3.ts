@@ -67,6 +67,12 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
   relatedSlugs: ['chilipad-cube', 'ooler-sleep-system', 'eight-sleep-pod-cover-pro'],
   publishOn: '2026-06-15',
+  faq: [
+    { q: "Is the BedJet 3 worth it?", a: "Yes, if mild climate control is enough for you. The BedJet 3 is the cheapest serious sleep-climate option, needs no water management and heats faster than water systems. It is not worth it if you need aggressive cooling in peak heat or want sleep and HRV tracking." },
+    { q: "How much does the BedJet 3 cost?", a: "The BedJet 3 costs about $600 for a single unit, with no subscription required. Dual-zone control needs two units, so couples wanting separate temperatures on each side of the bed should budget for a second one." },
+    { q: "What are the downsides of the BedJet 3?", a: "The BedJet 3 cools less aggressively than water systems in peak heat and has no sleep tracking or HRV. Its fan noise is audible at about 40 dB at moderate intensity, and it is single-zone unless you buy two units." },
+    { q: "BedJet 3 vs Eight Sleep: which is better?", a: "Eight Sleep is better for rigorous temperature control, while the BedJet 3 is better for affordability and easy setup. BedJet pushes air through a duct under the sheet with no water tank, is cheaper and needs no subscription, but its temperature control is less rigorous." },
+  ],
   datePublished: '2026-06-15',
   dateModified: '2026-06-15',
 }

@@ -67,6 +67,11 @@ The biology of why infrared sauna works at the mitochondrial level.
   ],
   relatedSlugs: ['clearlight-sanctuary-2', 'saunaspace-faraday', 'sun-home-equinox'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "Is the Sunlighten mPulse 3-in-1 worth it?", a: "The mPulse is worth it for serious daily IR sauna users. It delivers true near, mid and far wavelengths with programmable control, independently measured ultra-low EMF under 1 mG seated, a cedar build with 7-year warranty, and substantial published research. It is premium-priced and needs dedicated space." },
+    { q: "How much does the Sunlighten mPulse cost?", a: "The Sunlighten mPulse costs from about $5,000 for a 1-person unit to $10,000 for a 4-person model. That places it in the premium tier. Larger configurations also need 220V electrical, which adds to installation planning." },
+    { q: "What are the downsides of the Sunlighten mPulse?", a: "The mPulse costs $5,000 to $10,000+, needs dedicated install space of at least 4×4 ft, and larger configurations require 220V electrical. Lead times can also stretch during peak demand, so plan the purchase ahead." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

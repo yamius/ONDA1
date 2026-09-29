@@ -68,6 +68,12 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'taVNS modulates HRV in healthy participants (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8088823/' },
   ],
   relatedSlugs: ['gammacore-sapphire-cv', 'pulsetto', 'truvaga-350'],
+  faq: [
+    { q: "Is Nurosym worth it?", a: "Nurosym is worth it if evidence matters more than form factor. It has the deepest peer-reviewed research base of any consumer tVNS device, disclosed stimulation parameters, and is a UK-manufactured, CE-marked Class IIa medical device. Expect a single programme and a wired ear clip." },
+    { q: "How much does Nurosym cost?", a: "Nurosym is listed at £599, about $750, as a one-time purchase with no subscription and no app required to use it. The review notes that price puts it out of reach of casual users. It is a CE-marked Class IIa device." },
+    { q: "What are the downsides of Nurosym?", a: "Nurosym offers a single programme with less variety than app-driven competitors, no on-device HRV measurement or session logging, a £599 price that puts it out of reach of casual users, and a wired clip that is less convenient than a wireless wearable." },
+    { q: "Nurosym vs Pulsetto: which is better?", a: "Nurosym is better for evidence: it has the deepest peer-reviewed research base in consumer tVNS. Pulsetto is cheaper at $269, is neck-worn and offers four guided programmes, but its independent clinical evidence is thinner than Nurosym's." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

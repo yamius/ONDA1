@@ -62,6 +62,11 @@ Only for someone who wants a portable frequency gadget and a big preset library 
   ],
   relatedSlugs: ['healthy-wave-multi-wave', 'bemer-classic-evo', 'higherdose-pemf-mat', 'resona-health-vibe'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Is the Qi Coil worth it?", a: "The review does not find the Qi Coil worth its price. Its core mechanism relies on Rife and scalar theory with no credible clinical evidence, and it discloses no PEMF waveform, frequency range or intensity. It is portable and has a large preset library, but pricing is extreme." },
+    { q: "How much does the Qi Coil cost?", a: "The Qi Coil Mini system is listed at $797. The 3S costs $4,995 and the Max Scalar costs $9,995, which the review calls extreme pricing for what is delivered. None of the tiers disclose PEMF waveform, frequency range or intensity." },
+    { q: "What are the downsides of the Qi Coil?", a: "The Qi Coil's mechanism rests on Rife and scalar theory without credible clinical evidence, it does not disclose PEMF waveform, frequency range or intensity, its $797 to $9,995 pricing is extreme, and its medbed and scalar marketing overstates what a consumer coil can do." },
+  ],
   datePublished: '2026-09-06',
   dateModified: '2026-09-06',
 }

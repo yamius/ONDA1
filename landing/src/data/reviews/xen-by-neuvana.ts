@@ -67,6 +67,11 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'Auricular tVNS mechanism review (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2019.00854/full' },
   ],
   relatedSlugs: ['nurosym', 'pulsetto', 'apollo-neuro'],
+  faq: [
+    { q: "Is Xen by Neuvana worth it?", a: "Xen is worth it if you want auricular tVNS in a familiar earbud form paired with music. It needs no subscription and offers focus, calm and sleep modes. Independent clinical evidence on the Xen device itself is thin, and the electrodes are fiddlier than a tragus clip." },
+    { q: "How much does Xen by Neuvana cost?", a: "Xen by Neuvana costs $399 one-time, with no subscription required for full functionality. That includes multiple modes covering focus, calm and sleep, with stimulation paired to music." },
+    { q: "What are the downsides of Xen by Neuvana?", a: "Independent clinical evidence on the Xen device is thin. In-ear electrode placement is fiddlier than a tragus clip, the earbuds are cabled to a control unit, and there is no on-device HRV measurement." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

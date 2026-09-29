@@ -67,6 +67,12 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['higherdose-blanket-v4', 'therasage-thera-sauna-personal', 'jnh-lifestyles-joyous'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "Is the Relax Sauna Portable worth it?", a: "The Relax Sauna is worth it if you want an upright portable far-IR sauna without committing to a cabin or blanket. It comes from a long-running brand with documented low EMF, folds for storage and needs no install. It is far-IR only and costs more than the HigherDose Blanket." },
+    { q: "How much does the Relax Sauna Portable cost?", a: "The Relax Sauna Portable is listed at $1,500 one-time for the chair and tent configuration. That is pricier than the HigherDose Blanket for portable infrared, but it needs no installation and folds for storage. It is a chair and tent design." },
+    { q: "What are the downsides of the Relax Sauna Portable?", a: "It is far-IR only with no near or mid IR, pricier than the HigherDose Blanket for portable IR, has a smaller user base than mainstream IR brands, and its chair-and-tent setup is more involved than a blanket." },
+    { q: "Relax Sauna vs HigherDose Blanket: which is better?", a: "The HigherDose Blanket is cheaper and simpler to set up. The Relax Sauna suits users uncomfortable lying prone in a blanket, with an upright chair-and-tent design, documented low EMF and a long reliability track record." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

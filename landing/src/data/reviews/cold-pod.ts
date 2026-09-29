@@ -66,6 +66,12 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Cold Pod — official site', url: 'https://thecoldpod.com/' },
   ],
   relatedSlugs: ['ice-barrel-500', 'inergize-cold-tub', 'penguin-chillers'],
+  faq: [
+    { q: "Is the Cold Pod worth it?", a: "Yes, as a low-commitment way to start cold plunging. The Cold Pod is the cheapest legitimate cold-plunge entry at $220, inflates in 10 minutes and folds for storage. It has no chiller, so you pay for ice daily, and the inflatable build is less durable long-term." },
+    { q: "How much does the Cold Pod cost?", a: "The Cold Pod costs about $220 upfront as a one-time purchase. Ice is a separate daily operating expense, because the tub has no chiller and runs on ice-fill operation, filled via a garden hose. It inflates in 10 minutes via the included pump." },
+    { q: "What are the downsides of the Cold Pod?", a: "The Cold Pod has no chiller, so ice is a daily cost. Its inflatable build is less durable than rigid tubs over multi-year ownership, water changes are manual with no ozone, and insulation holds cold for less time than rigid insulated tubs." },
+    { q: "Who is the Cold Pod best for?", a: "The Cold Pod is best for first-time cold-plunge users who want an inflatable, portable, low-commitment entry. It fits flats and small homes and lets you test daily practice before committing to a fixed installation. It is the cheapest legitimate cold-plunge entry." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

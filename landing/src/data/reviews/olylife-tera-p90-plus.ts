@@ -64,6 +64,11 @@ Choose OlyLife TERA P90 Plus only if you explicitly discount the terahertz marke
   ],
   relatedSlugs: ['resona-health-vibe', 'omi-full-body-mat', 'higherdose-pemf-mat'],
   publishOn: '2026-06-22',
+  faq: [
+    { q: "Is the OlyLife TERA P90 Plus worth it?", a: "It is worth it only for budget buyers who value the PEMF component and discount the terahertz marketing. You get a portable handheld wand with real PEMF at documented frequencies. The terahertz claims overstate the evidence, and MLM-style distribution makes the warranty inconsistent." },
+    { q: "How much does the OlyLife TERA P90 Plus cost?", a: "The TERA P90 Plus standalone wand is listed at $550, within a budget range of $400 to $700. Because it is sold through MLM-style distribution, warranty support can be inconsistent depending on where you buy it." },
+    { q: "What are the downsides of the OlyLife TERA P90 Plus?", a: "Its terahertz marketing claims overstate the published evidence, MLM-style distribution leads to inconsistent warranty support, it offers limited parameter exposure and protocol depth, and as a handheld wand it provides no whole-body mat coverage. Value it for PEMF alone." },
+  ],
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',
 }

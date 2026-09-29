@@ -67,6 +67,11 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'Hoolest HRV recovery and sleep-onset research summary', url: 'https://www.hoolest.com/pages/science' },
   ],
   relatedSlugs: ['pulsetto', 'apollo-neuro', 'vagustim'],
+  faq: [
+    { q: "How does the Hoolest VeRelief Prime work?", a: "The VeRelief Prime is a handheld tVNS device with grip electrodes. You hold it to the ear to target the auricular branch of the vagus nerve, or to the neck for the cervical branch, for high-intensity 3–5 minute sessions aimed at recovery and pre-sleep relaxation." },
+    { q: "Does the Hoolest VeRelief Prime need a subscription?", a: "No. The VeRelief Prime costs $279 as a one-time purchase, with no subscription required. It was designed by Arizona State University spin-out Hoolest Performance, and the founders have published their own HRV and sleep-onset research on the device." },
+    { q: "Hoolest VeRelief Prime vs Pulsetto: which is better?", a: "Pulsetto offers more protocol variety and works as a passive wearable. The VeRelief Prime is built for athletes: short, intense sessions that fit recovery workflows. The trade-off is that you must hold it during sessions, and its higher peak intensity can be uncomfortable." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

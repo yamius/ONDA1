@@ -68,6 +68,12 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['pillow', 'sleep-cycle', 'sleep-as-android'],
+  faq: [
+    { q: "Is AutoSleep worth it?", a: "Yes, for Apple Watch owners who want accurate sleep data without a subscription. AutoSleep tracks automatically and in detail for a one-time purchase. It is not worth it if you need help falling asleep, because it only measures sleep and has no wind-down content at all." },
+    { q: "How much does AutoSleep cost?", a: "AutoSleep costs about $6 as a one-time purchase, with no subscription ever required. It runs on iOS and Apple Watch only. That single low price covers automatic, accurate Apple Watch sleep tracking plus detailed analysis and long-term trends." },
+    { q: "What are the downsides of AutoSleep?", a: "AutoSleep measures sleep but does nothing to improve it: there is no wind-down content whatsoever. It works only on iOS and Apple Watch, and its dense interface rewards time spent on setup, which can put off users who want something simple out of the box." },
+    { q: "Who is AutoSleep best for?", a: "AutoSleep is best for Apple Watch owners who want accurate, automatic sleep data and no subscription. It suits data-focused users who are happy with a purist tracker and do not need soundscapes, stories or other relaxation content." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

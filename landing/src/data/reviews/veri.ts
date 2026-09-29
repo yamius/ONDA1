@@ -67,6 +67,12 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },
   ],
   relatedSlugs: ['hello-inside', 'zoe', 'levels'],
+  faq: [
+    { q: "Is Veri worth it?", a: "Veri is worth it for EU biohackers who want Levels-style glucose insight where Levels isn't available. It has a polished multi-language app, Garmin, Oura and MyFitnessPal integration, and raw data export. Its Libre 3 accuracy lags Dexcom G7 and insight depth lags Levels." },
+    { q: "How much does Veri cost?", a: "Veri costs €199 for setup plus €99 to €129 per month. The default plan does not include a human coach, so the monthly fee covers the app, CGM insight and integrations with Garmin, Oura and MyFitnessPal." },
+    { q: "Veri vs Levels: which is better?", a: "Levels offers deeper insight for serious users on Dexcom G7 hardware, which is more accurate than Veri's Libre 3. Veri wins on EU availability, multi-language support and integrations. Choose Veri if you are in the EU, Levels otherwise." },
+    { q: "What are the downsides of Veri?", a: "Veri's Libre 3 accuracy lags Dexcom G7, the default plan has no human coach, its insight depth lags Levels for serious users, and US availability is limited, so it mainly makes sense for EU buyers." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

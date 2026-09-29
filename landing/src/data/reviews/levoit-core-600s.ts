@@ -64,6 +64,11 @@ Choose Levoit Core 600S for mid-budget smart features at $299. For mid-premium c
   ],
   relatedSlugs: ['levoit-core-300', 'coway-airmega-400', 'winix-5500-2'],
   publishOn: '2026-07-27',
+  faq: [
+    { q: "What smart features does the Levoit Core 600S have?", a: "The Core 600S connects to the VeSync app and has a PM2.5 sensor with auto mode, the best smart features in the mid-budget category. It also pairs True HEPA H13 with an activated-carbon layer, all for $299, the rational default for smart features without premium pricing." },
+    { q: "How big a room does the Levoit Core 600S cover?", a: "The Core 600S is AHAM-certified for 635 sq ft, which suits a bedroom or medium room. That is well below the 1,560 sq ft of the Coway Airmega 400, so very large open spaces call for a bigger unit." },
+    { q: "What are the downsides of the Levoit Core 600S?", a: "It covers 635 sq ft, far less than the Coway Airmega 400. It has no premium-tier filtration, a plastic build rather than metal, and its sensor is only moderately accurate compared with Dyson or IQAir. For $299, most buyers will find those trades acceptable." },
+  ],
   datePublished: '2026-07-27',
   dateModified: '2026-07-27',
 }

@@ -65,6 +65,11 @@ Choose Intake Breathing if you can\'t adapt to mouth tape and want the most effe
   ],
   relatedSlugs: ['mute-nasal-dilator', 'breathe-right-original', 'hostage-tape'],
   publishOn: '2026-07-13',
+  faq: [
+    { q: "How does Intake Breathing work?", a: "Intake Breathing is an external nasal dilator. Small adhesive tabs on each nostril hold a flexible magnetic band that mechanically widens the nostrils overnight. The band is reusable, while the adhesive tabs are replaced over time. James Nestor recommends it in his book Breath." },
+    { q: "How much does Intake Breathing cost?", a: "The Intake Breathing starter kit costs about $40, and replacement adhesive tabs run roughly $20 per month. That is premium pricing compared with Breathe Right strips, though the reusable magnetic band helps the long-term ownership economics." },
+    { q: "Intake Breathing vs mouth tape: which should I try?", a: "Intake suits committed mouth-breathers who cannot adapt to mouth tape. Rather than sealing the lips, it opens the nasal airway, and it is the most effective external nasal dilator approach. It is visible on the face, though, and it has no FDA Class II clearance." },
+  ],
   datePublished: '2026-07-13',
   dateModified: '2026-07-13',
 }

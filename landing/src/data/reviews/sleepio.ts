@@ -68,6 +68,11 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Digital CBT-I clinical trials (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=digital+CBT-I+insomnia' },
   ],
   relatedSlugs: ['sleep-cycle', 'rise', 'bettersleep'],
+  faq: [
+    { q: "Is Sleepio worth it?", a: "Sleepio is worth it if you have genuine insomnia and want treatment rather than tracking. It is a clinically validated CBT-I program with strong published trial evidence. It asks for real commitment over several weeks, and it is overkill if you sleep fine and just want stats." },
+    { q: "How much does Sleepio cost?", a: "Sleepio costs around $400, though pricing varies. It is free in some regions through health services or employers, so check that route first. If you pay directly, there is no meaningful free tier to try before committing." },
+    { q: "What are the downsides of Sleepio?", a: "Sleepio is not a tracker or a sound library, and it requires real commitment over several weeks. If you pay directly, there is no meaningful free tier. It is also overkill for people who sleep fine and only want sleep statistics." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

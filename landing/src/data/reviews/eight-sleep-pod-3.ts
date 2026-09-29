@@ -67,6 +67,12 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
   relatedSlugs: ['eight-sleep-pod-4', 'eight-sleep-pod-cover-pro', 'chilipad-dock-pro'],
   publishOn: '2026-06-15',
+  faq: [
+    { q: "Is the Eight Sleep Pod 3 worth it?", a: "Yes, when it is discounted. The Pod 3 offers the same Eight Sleep app, tracking and Autopilot as the Pod 4 at a lower price. Its climate recovery is less aggressive in peak heat, it is discontinued with inventory only, and it still needs the subscription." },
+    { q: "How much does the Eight Sleep Pod 3 cost?", a: "The Eight Sleep Pod 3 costs about $1,800 as discounted inventory, plus roughly $20 per month for the subscription. It is a cheaper entry into the Eight Sleep ecosystem than the Pod 4, which is the active flagship." },
+    { q: "What are the downsides of the Eight Sleep Pod 3?", a: "The Pod 3 has less aggressive climate recovery than the Pod 4 in peak heat and is discontinued for new production, so only inventory remains. It carries the same subscription requirement as the Pod 4, which is now the active flagship." },
+    { q: "Eight Sleep Pod 3 vs Pod 4: which is better?", a: "The Pod 4 is better for climate performance; the Pod 3 is better for value when discounted. Both share the app, tracking and Autopilot, but the Pod 3 has a slightly narrower climate range and costs about $1,800 versus $4,000." },
+  ],
   datePublished: '2026-06-15',
   dateModified: '2026-06-15',
 }

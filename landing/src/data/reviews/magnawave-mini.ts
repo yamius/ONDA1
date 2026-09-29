@@ -64,6 +64,12 @@ Choose MagnaWave Mini for portable high-intensity coil PEMF for athletic recover
   ],
   relatedSlugs: ['pulse-centers-pulse-xl-pro', 'curatron-3d', 'imrs-prime'],
   publishOn: '2026-06-22',
+  faq: [
+    { q: "Is the MagnaWave Mini worth it?", a: "The MagnaWave Mini is worth it for athletic recovery or rehabilitation users who want high-intensity coil PEMF in a portable, travel-friendly build. It delivers clinical-tier intensity below Pulse Centers pricing, backed by a multi-decade equine and athletic PEMF pedigree, but lacks whole-body mat coverage." },
+    { q: "How much does the MagnaWave Mini cost?", a: "The MagnaWave Mini is listed at $4,200 for the Mini configuration with the standard applicator set. The review calls this mid-tier pricing: below a full Pulse Centers clinic setup, but without the consumer-app polish found on cheaper wellness devices." },
+    { q: "What are the downsides of the MagnaWave Mini?", a: "The MagnaWave Mini is coil-only, so there is no whole-body mat coverage. It is less app-driven than consumer devices, its brand recognition skews equine and clinical rather than consumer wellness, and its mid-tier price comes without consumer-app polish." },
+    { q: "MagnaWave Mini vs Pulse Centers: which is better?", a: "The MagnaWave Mini suits users who want portable, high-intensity coil PEMF at sub-Pulse-Centers pricing. Pulse Centers is the fuller clinic-grade option at a higher price. For travel-friendly athletic recovery or rehab use, the review points to the MagnaWave Mini." },
+  ],
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',
 }

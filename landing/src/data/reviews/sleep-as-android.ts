@@ -68,6 +68,11 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['sleep-cycle', 'sleepscore', 'pillow'],
+  faq: [
+    { q: "Is Sleep as Android worth it?", a: "Yes, for Android users. Sleep as Android is the most complete sleep app on the platform, combining tracking, a smart alarm, wind-down sounds, and snore and sleep-talk recording at low cost with wide wearable integration. It rewards tinkering, and without a wearable its phone tracking is only an estimate." },
+    { q: "How much does Sleep as Android cost?", a: "Sleep as Android costs about $12, a low, essentially one-time-style price. It is available on Android only. For that you get tracking, smart alarm, wind-down sounds, snore recording and broad wearable integration in one app." },
+    { q: "What are the downsides of Sleep as Android?", a: "Sleep as Android is Android only, and it is feature-dense, so it rewards tinkering more than casual use. Phone-based tracking is an estimate unless you pair a wearable, and the app is less polished than the mainstream iOS sleep apps." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

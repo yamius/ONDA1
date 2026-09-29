@@ -68,6 +68,11 @@ The science of what meditation actually does at the nervous-system level.
     { label: 'Headspace clinical studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=headspace+meditation+randomized+controlled+trial' },
   ],
   relatedSlugs: ['insight-timer', 'calm', 'waking-up'],
+  faq: [
+    { q: "Is Headspace good for beginners?", a: "Yes. Headspace is the strongest app for learning to meditate from scratch. Its courses are well structured, the teaching is clear and beginner-friendly, and it has put real research behind its programs. Once you are past the basics, though, it can start to feel light." },
+    { q: "Is Headspace free?", a: "Not in any meaningful way. The Headspace free tier is barely a sample, essentially a product tour, so a subscription is needed for any real practice. The paid plan costs about $70 per year and unlocks the structured courses that make the app worth using." },
+    { q: "Headspace vs Insight Timer: which is better?", a: "Headspace is better for structured learning, with clear courses that guide beginners step by step. Insight Timer is better for breadth and value, with a far larger library and a genuinely usable free tier. Pick Headspace to learn the basics; pick Insight Timer if you want variety." },
+  ],
   datePublished: '2026-05-15',
   dateModified: '2026-05-15',
 }

@@ -67,6 +67,12 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Photobiomodulation in chronic conditions (Lasers in Surgery and Medicine)', url: 'https://onlinelibrary.wiley.com/journal/10969101' },
   ],
   relatedSlugs: ['biolight-pro-900', 'platinumled-biomax-600', 'hooga-hg500'],
+  faq: [
+    { q: "Is the Bon Charge Red Light Therapy Panel worth it?", a: "It is worth it mainly for EU and Australian buyers who want an established consumer brand. The panel offers solid build, half-body coverage, included mounting hardware and a multi-year warranty. Its technical disclosure is thinner than biohacker brands, and the pricing carries a brand premium without a standout differentiator." },
+    { q: "How much does the Bon Charge Red Light Therapy Panel cost?", a: "The Bon Charge Red Light Therapy Panel costs $899 as a one-time purchase, with stand and door-mount hardware included. That covers a half-body panel with two wavelengths, 660 and 850 nm, plus a multi-year warranty." },
+    { q: "What are the downsides of the Bon Charge Red Light Therapy Panel?", a: "Bon Charge discloses fewer technical details, such as independent EMF testing and flicker rates, than biohacker-targeted brands. It offers only two wavelengths, has no FDA Class II registration, and charges brand-premium pricing without a standout differentiator." },
+    { q: "Who is the Bon Charge Red Light Therapy Panel best for?", a: "The Bon Charge panel is best for EU and Australian buyers who want a wellness-positioned red light panel from an established consumer brand. It suits those who prefer consistent build quality and brand presence over detailed technical specs." },
+  ],
   datePublished: '2026-05-23',
   dateModified: '2026-05-23',
 }

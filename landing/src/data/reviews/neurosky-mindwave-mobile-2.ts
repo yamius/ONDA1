@@ -68,6 +68,11 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'ThinkGear SDK — developer documentation', url: 'https://developer.neurosky.com/' },
   ],
   relatedSlugs: ['focuscalm', 'emotiv-insight-2', 'muse-2'],
+  faq: [
+    { q: "Is the NeuroSky MindWave Mobile 2 worth it?", a: "It is worth it for students, hobbyists and developers who want the cheapest legitimate way to learn EEG basics. It offers an open ThinkGear SDK with raw Bluetooth data and a decade of tutorials. It is single-channel, though, and its first-party apps are largely abandoned." },
+    { q: "How much does the NeuroSky MindWave Mobile 2 cost?", a: "The NeuroSky MindWave Mobile 2 is listed at $110 one-time, with no subscription. That makes it the cheapest legitimate consumer EEG headset by a wide margin, and its open ThinkGear SDK adds no extra cost." },
+    { q: "What are the downsides of the NeuroSky MindWave Mobile 2?", a: "Its single-channel EEG is informationally thin, it has no first-party content library, its hardware and SDK reflect mid-2010s expectations, and NeuroSky has largely abandoned its first-party apps, leaving you dependent on third-party software. It remains a learning tool, not a polished consumer product." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

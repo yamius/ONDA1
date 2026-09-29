@@ -67,6 +67,12 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'platinumled-biomax-600', 'hooga-hg500'],
+  faq: [
+    { q: "Is the BioLight Pro 900 worth it?", a: "Yes, if you want a competent four-wavelength panel under $1,000. The BioLight Pro 900 covers 600, 660, 830 and 850 nm with published third-party EMF testing. It has no standout differentiator, no FDA Class II registration, and a smaller brand following than Joovv or Mito Red." },
+    { q: "How much does the BioLight Pro 900 cost?", a: "The BioLight Pro 900 costs $899 as a one-time purchase, with stand and door-mount hardware included. That is cheaper than MitoPRO with comparable build, and it comes with a multi-year warranty. It covers four wavelengths: 600, 660, 830 and 850 nm." },
+    { q: "What are the downsides of the BioLight Pro 900?", a: "The BioLight Pro 900 is competent rather than standout, with no category-defining differentiator. It lacks FDA Class II registration, has a smaller brand following than Joovv or Mito Red, and skips 480, 810 and 940 nm wavelengths." },
+    { q: "Who is the BioLight Pro 900 best for?", a: "The BioLight Pro 900 is best for buyers who want a competent four-wavelength red light panel under $1,000 without paying the Joovv brand premium. It fits those who value published EMF testing and included mounting hardware over brand recognition." },
+  ],
   datePublished: '2026-05-23',
   dateModified: '2026-05-23',
 }

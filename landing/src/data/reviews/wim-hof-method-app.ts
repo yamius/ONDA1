@@ -65,6 +65,12 @@ Choose Wim Hof Method app if you're committed to the WHM specifically. For broad
   ],
   relatedSlugs: ['breathwrk', 'othership', 'soma-breath'],
   publishOn: '2026-06-29',
+  faq: [
+    { q: "Is the Wim Hof Method app worth it?", a: "The Wim Hof Method app is worth it if you are committed to that method. It is the official reference, with structured level-based progression, certified-instructor courses and integrated cold-exposure protocols. It covers only one method, so pair it with Breathwrk for technique breadth." },
+    { q: "How much does the Wim Hof Method app cost?", a: "The Wim Hof Method app costs about $70 as an annual subscription, and a free tier is available. The subscription unlocks structured level-based progression and certified-instructor courses." },
+    { q: "Wim Hof Method app vs Breathwrk: which is better?", a: "Choose the Wim Hof Method app for the official method, structured progression and cold-exposure integration. Choose Breathwrk for breadth across techniques like Buteyko, 4-7-8 and cyclic sighing. The review suggests pairing them." },
+    { q: "What are the downsides of the Wim Hof Method app?", a: "The app focuses on a single method with no Buteyko, 4-7-8 or cyclic sighing depth. Its UX is less polished than Othership, its scope is narrower than Breathwrk, and cold protocols assume access to cold immersion." },
+  ],
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
 }

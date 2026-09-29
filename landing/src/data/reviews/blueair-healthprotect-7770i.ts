@@ -64,6 +64,12 @@ Choose Blueair 7770i for Swedish premium HEPASilent + GermShield. For higher cov
   ],
   relatedSlugs: ['coway-airmega-400', 'dyson-purifier-big-quiet', 'iqair-healthpro-plus'],
   publishOn: '2026-07-27',
+  faq: [
+    { q: "Is the Blueair HealthProtect 7770i worth it?", a: "Yes, if quiet operation and Swedish premium engineering matter to you. HEPASilent ion-charge filtration delivers HEPA-equivalent capture at lower noise, plus a GermShield always-on mode. You pay $820 and accept smaller coverage and higher filter cost than the Coway Airmega 400." },
+    { q: "How much does the Blueair HealthProtect 7770i cost?", a: "The Blueair HealthProtect 7770i costs $820 standalone. Its filters run on a 6-month cycle, compared with Coway's 12-month cycle, so ongoing filter cost is higher than with Coway models of similar class. It includes real-time PM2.5 and VOC sensors and app integration." },
+    { q: "What are the downsides of the Blueair HealthProtect 7770i?", a: "The Blueair HealthProtect 7770i has premium $820 pricing and lacks HyperHEPA or PECO differentiation. Its 6-month filter cycle is shorter than Coway's 12-month, and its coverage is smaller than the Coway Airmega 400. Noise, however, is among the lowest in the premium category." },
+    { q: "Blueair HealthProtect 7770i vs Coway Airmega 400: which is better?", a: "The Coway Airmega 400 is better for coverage and value; the Blueair is better for quiet premium engineering. Coway covers more space for $479 with a 12-month filter cycle, while Blueair adds HEPASilent and GermShield modes at $820." },
+  ],
   datePublished: '2026-07-27',
   dateModified: '2026-07-27',
 }

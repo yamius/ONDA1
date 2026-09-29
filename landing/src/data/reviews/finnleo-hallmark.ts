@@ -68,6 +68,11 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['almost-heaven-salem', 'sunlighten-mpulse', 'saunaspace-faraday'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "How much does a Finnleo Hallmark sauna cost?", a: "A 2-person indoor Finnleo Hallmark runs about $8,000, and even the entry configuration costs more than $6,000. That buys Finnish-built hemlock or nordic white spruce panelling and a Helo-engineered heater. Larger heaters also need 220V electrical, which can add to the installation budget." },
+    { q: "Is the Finnleo Hallmark an infrared sauna?", a: "No. The Finnleo Hallmark is a traditional Finnish sauna, not an infrared cabin. It uses full convection heat at 80–95°C from a Helo-engineered heater, with löyly steam when you pour water on the stones. That is the heat profile the Finnish cohort studies on sauna use are built on." },
+    { q: "What are the downsides of the Finnleo Hallmark?", a: "The main downsides are price, placement and power. It is premium-priced, it is indoor-only with ventilation requirements, and larger heaters require 220V electrical. It also works by a different mechanism than IR cabin saunas, so buyers specifically after infrared should look elsewhere." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

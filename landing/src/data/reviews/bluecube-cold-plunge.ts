@@ -66,6 +66,12 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'BlueCube Baths — official site', url: 'https://bluecubebaths.com/' },
   ],
   relatedSlugs: ['morozko-forge', 'plunge', 'renu-therapy-cold-stoic'],
+  faq: [
+    { q: "Is the BlueCube Cold Plunge worth it?", a: "Yes for clinics, gyms and multi-user households, but no for typical single-user home practice. BlueCube has the highest-capacity chiller in its category, supporting continuous back-to-back plunges, plus commercial-grade build and ozone and UV sanitation. For one person at home it is overbuilt." },
+    { q: "How much does the BlueCube Cold Plunge cost?", a: "The BlueCube Cold Plunge starts at about $11,000, and full commercial spec runs $14,000 or more. Installation may also require electrical work, since 220V power is often needed, so budget for setup on top of the tub." },
+    { q: "What are the downsides of the BlueCube Cold Plunge?", a: "The BlueCube costs $11,000+ and is overkill for single-user home use. It has a large footprint, often requires 220V power, and installation may need electrical work, making it the wrong shape for typical home users." },
+    { q: "Who is the BlueCube Cold Plunge best for?", a: "The BlueCube Cold Plunge is best for clinical, athletic-facility or multi-user household use where chiller capacity matters. Its chiller recovers fast enough for continuous back-to-back plunges, backed by commercial-grade build and 5-year component warranties. It is overbuilt for single-user home practice." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

@@ -65,6 +65,12 @@ Choose Breathwrk if you want the largest structured library and science-grounded
   ],
   relatedSlugs: ['othership', 'soma-breath', 'wim-hof-method-app'],
   publishOn: '2026-06-29',
+  faq: [
+    { q: "Is Breathwrk worth it?", a: "Yes, for structured daily breathwork. Breathwrk has the largest structured breathwork library in the category, full technique coverage and science-grounded copy, with native Apple Watch support. It is guided rather than HRV-driven, and the deep library requires a subscription." },
+    { q: "How much does Breathwrk cost?", a: "Breathwrk costs about $70 per year for the annual subscription, and a free tier is available. The subscription is required to access the deep library of hundreds of guided sessions across calm, energy, sleep, focus and performance." },
+    { q: "What are the downsides of Breathwrk?", a: "Breathwrk has no HRV-driven session adaptation and no community or live-session layer like Othership. The deep library needs a subscription, and it has less holotropic or emotional-release focus than Pause or SOMA. It is guided rather than biofeedback-driven." },
+    { q: "Who is Breathwrk best for?", a: "Breathwrk is best for users who want the largest structured breathwork library with science-grounded copy and full technique coverage, including box, 4-7-8, Wim Hof, Tummo, cyclic sighing and Buteyko. It is the rational default for daily practice." },
+  ],
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
 }

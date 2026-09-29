@@ -67,6 +67,12 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Abbott Libre Sense — sport sensor specification', url: 'https://www.freestyle.abbott/uk-en/libre-sense.html' },
   ],
   relatedSlugs: ['veri', 'hello-inside', 'lingo'],
+  faq: [
+    { q: "Is Supersapiens worth it?", a: "Supersapiens is worth it for EU endurance athletes who want race-day glucose pacing. It is the only CGM programme built natively for endurance sport, with Strava, Garmin and TrainingPeaks integration. It offers no meal scoring or coaching and has withdrawn from the US." },
+    { q: "How much does Supersapiens cost?", a: "Supersapiens costs €250+ for the device plus about €100 per month for the sensor subscription. It is available in the EU only as of 2026, and there is no coaching layer at any price tier." },
+    { q: "Is Supersapiens available in the US?", a: "No. As of 2026 Supersapiens is EU only; it withdrew from the US market. It remains focused on European endurance athletes who want race-day glucose pacing integrated with Strava, Garmin and TrainingPeaks." },
+    { q: "What are the downsides of Supersapiens?", a: "Supersapiens is EU only, with no general-nutrition meal scoring and no coaching layer at any tier. Its niche endurance audience also limits long-term product investment, which matters for a subscription you plan to keep." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

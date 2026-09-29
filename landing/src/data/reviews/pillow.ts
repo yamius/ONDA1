@@ -68,6 +68,11 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep tracking app validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+tracking+app+validation' },
   ],
   relatedSlugs: ['sleep-cycle', 'sleepscore', 'autosleep'],
+  faq: [
+    { q: "Is Pillow worth it?", a: "Pillow is worth it for iPhone and Apple Watch owners who want detailed, well-presented sleep analysis. It offers accurate Apple Watch tracking, weekly to yearly views and metric comparisons that help explain a poor night. It is iOS-only and light on wind-down content." },
+    { q: "How much does Pillow cost?", a: "Pillow Premium is listed at $50 per year. The app is iOS and Apple Watch only, and its fuller features require the subscription, so Android users and non-subscribers get a limited experience. The review praises its well-presented weekly to yearly views." },
+    { q: "What are the downsides of Pillow?", a: "Pillow is iOS-only with no Android version, leans heavily on owning an Apple Watch, has minimal wind-down content, and needs a subscription for its fuller features. It is best as a detailed analysis tool for Apple Watch owners rather than a relaxation or wind-down app." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

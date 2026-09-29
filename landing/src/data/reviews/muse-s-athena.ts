@@ -68,6 +68,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'Muse EEG headband — independent signal-quality validation (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.00109/full' },
   ],
   relatedSlugs: ['muse-2', 'neurosity-crown', 'mendi'],
+  faq: [
+    { q: "Is the Muse S Athena worth it?", a: "The Muse S Athena is worth it for serious consumer brain-training users. It combines EEG, fNIRS and sleep tracking in a single soft band, offers the deepest brain-training content library after a decade of iteration, and needs no mandatory subscription. Developers wanting raw data may prefer Neurosity Crown." },
+    { q: "How much does the Muse S Athena cost?", a: "The Muse S Athena is listed at $499 one-time, with no mandatory subscription, so the full feature set comes with the device. That is twice the cost of the entry-level Muse 2. It adds EEG, fNIRS and sleep tracking in one soft band." },
+    { q: "What are the downsides of the Muse S Athena?", a: "Its first-party SDK is limited, its premium price is double the Muse 2, and its dry electrodes are adequate for consumer use but not research-grade. Sensor fusion of EEG and fNIRS is also still evolving in how the app interprets it." },
+    { q: "Muse S Athena vs Neurosity Crown: which is better?", a: "The Muse S Athena is better for guided brain training and sleep, with the deepest content library and overnight comfort. The Neurosity Crown is better for developers, offering an open SDK and eight electrodes, but costs about three times as much and has no deep content library." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

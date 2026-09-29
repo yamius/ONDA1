@@ -67,6 +67,12 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'electroCore — published nVNS trial library', url: 'https://www.electrocore.com/clinical-evidence' },
   ],
   relatedSlugs: ['gammacore-sapphire-cv', 'nurosym', 'pulsetto'],
+  faq: [
+    { q: "Is the Truvaga 350 worth it?", a: "The Truvaga 350 is worth it if you want gammaCore-style cervical tVNS without a prescription. It uses the same hardware platform as FDA-cleared gammaCore and targets the vagal trunk directly. Its consumer use is not FDA-cleared, and its 350-session cap obscures long-term cost." },
+    { q: "How much does the Truvaga 350 cost?", a: "The Truvaga 350 costs $499 one-time, and it provides 350 sessions before retirement. That lifetime cap makes the long-term cost less obvious than the upfront price suggests, so factor in how often you plan to use it." },
+    { q: "What are the downsides of the Truvaga 350?", a: "Truvaga is not FDA-cleared for its consumer indication and is sold as a wellness device. The 350-use cap hides long-term cost, sessions are fixed at 2 minutes with intensity the only variable, and there is no on-device HRV biofeedback." },
+    { q: "Truvaga 350 vs gammaCore: which is better?", a: "Truvaga uses the same hardware platform as the FDA-cleared gammaCore but needs no prescription or insurance approval. gammaCore holds the FDA clearance; Truvaga is sold as a wellness device. Choose Truvaga for easy access to cervical tVNS." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

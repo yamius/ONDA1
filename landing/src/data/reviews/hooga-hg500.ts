@@ -67,6 +67,11 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'biolight-pro-900', 'infraredi-pro-1500'],
+  faq: [
+    { q: "Is the Hooga HG500 worth it?", a: "Yes, for a first red-light panel. At $349 with stand and door mount included, the HG500 delivers independently tested irradiance close to its claims and EMF readings in the same range as panels three times the price. You give up hardware refinement and wavelength breadth, not core performance." },
+    { q: "What wavelengths does the Hooga HG500 use?", a: "The HG500 uses two wavelengths, 660 nm red and 850 nm near-infrared, from 100 5W LEDs. It has no 630 nm, 810 nm or more exotic additions. Buyers who want broader spectrum coverage will need a pricier panel such as the GembaRed Vesta or Joovv." },
+    { q: "Hooga HG500 vs Joovv: which should I buy?", a: "The Hooga costs about a third of Joovv while keeping most of the basic spec: honest irradiance and low EMF. Joovv adds FDA registration, a more premium build, more LEDs and a modular system. Choose Hooga for value, Joovv if you want the category-reference build." },
+  ],
   datePublished: '2026-05-23',
   dateModified: '2026-05-23',
 }

@@ -67,6 +67,11 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['sunlighten-mpulse', 'clearlight-sanctuary-2', 'therasage-thera-sauna-personal'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "Is the SaunaSpace Faraday worth it?", a: "The SaunaSpace Faraday is worth it for biohackers prioritising near-IR protocols and EMF discipline. It uses tungsten-filament incandescent near-IR, full Faraday-cage shielding, and poplar construction with a 5-year warranty. It offers no mid or far IR, and tent setups require assembly." },
+    { q: "How much does the SaunaSpace Faraday cost?", a: "The SaunaSpace Faraday tent configuration is listed at $5,000, and the cabin version starts at $6,500. Tent configurations require assembly, and both come with the brand's 5-year warranty. The price covers tungsten-filament near-IR with full Faraday-cage EMF shielding." },
+    { q: "What are the downsides of the SaunaSpace Faraday?", a: "It is near-IR only, with no mid or far IR. Tent configurations require assembly, premium pricing starts above $4,000 for the base setup, and its user base is smaller than mainstream IR brands such as Sunlighten and Clearlight." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

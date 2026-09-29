@@ -66,6 +66,12 @@ The biology of why cold exposure works — and the protocols that compound with 
     { label: 'Edge Tub — official site', url: 'https://edgetheory.com/' },
   ],
   relatedSlugs: ['plunge', 'inergize-cold-tub', 'ice-barrel-500'],
+  faq: [
+    { q: "Is the Edge Tub worth it?", a: "Yes, it is the best value in the chiller-built cold-plunge tier. The Edge Tub offers hardware comparable to The Plunge, holds 39°F under typical use and includes ozone filtration, at roughly half the price. It is a newer brand with a thinner reliability track record." },
+    { q: "How much does the Edge Tub cost?", a: "The Edge Tub costs about $2,495 as a one-time purchase, with the chiller and ozone sanitation included. That is roughly half The Plunge's price for comparable chiller capability, and it is rated for indoor or outdoor use." },
+    { q: "What are the downsides of the Edge Tub?", a: "The Edge Tub is a newer brand with thinner multi-year reliability data than The Plunge, and it carries a 2-year warranty versus Plunge's 3-year. Its chiller recovers slightly slower in peak summer heat, and protocol guidance content is less developed." },
+    { q: "Edge Tub vs The Plunge: which is better?", a: "The Edge Tub is better for value; The Plunge is better for track record and warranty. Edge offers comparable chiller hardware at roughly half the price, while Plunge has a 3-year warranty and more developed protocol guidance." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }

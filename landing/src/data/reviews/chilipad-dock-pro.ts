@@ -67,6 +67,12 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
   ],
   relatedSlugs: ['eight-sleep-pod-4', 'chilipad-cube', 'ooler-sleep-system'],
   publishOn: '2026-06-15',
+  faq: [
+    { q: "Is the ChiliPad Dock Pro worth it?", a: "Yes, if you want premium water cooling without a subscription. The ChiliPad Dock Pro offers dual-zone active cooling and heating from 13 to 46°C comparable to Eight Sleep, with full features and no ongoing fees. It lacks HRV tracking and sleep-stage detection." },
+    { q: "How much does the ChiliPad Dock Pro cost?", a: "The ChiliPad Dock Pro costs about $1,700 for a queen-size dual-zone setup, with no subscription. All features come with the hardware, which gives it a cleaner ownership model than Eight Sleep's membership approach. It does not include HRV tracking." },
+    { q: "What are the downsides of the ChiliPad Dock Pro?", a: "The ChiliPad Dock Pro has no HRV tracking or sleep-stage detection, and the Sleepme app is lighter than Eight Sleep's. Climate recovery is marginally slower than the Pod 4, and the pad on top of the mattress changes its feel slightly." },
+    { q: "ChiliPad Dock Pro vs Eight Sleep Pod 4: which is better?", a: "The ChiliPad Dock Pro is better for subscription-free ownership; the Pod 4 is better for integrated HRV and sleep tracking. Climate hardware is comparable, but the Pod 4 costs about $4,000 plus roughly $20 per month, versus $1,700 with no fees." },
+  ],
   datePublished: '2026-06-15',
   dateModified: '2026-06-15',
 }

@@ -63,6 +63,11 @@ Choose iBreathe if you already know which technique you want and just need a cle
   ],
   relatedSlugs: ['breathwrk', 'prana-breath', 'breathe-to-relax'],
   publishOn: '2026-06-29',
+  faq: [
+    { q: "Is iBreathe free?", a: "Yes. iBreathe is completely free for the core experience, with no subscription pressure. An optional $5 premium purchase removes ads. For a clean breath timer with a visual guide, that makes it one of the best-value breathwork apps available." },
+    { q: "What breathing techniques does iBreathe include?", a: "iBreathe covers a narrow set of techniques: box breathing, 4-7-8 and custom timings. There is no curated session library or instructor content, so it suits people who already know which techniques they want and just need a clean timer." },
+    { q: "Does iBreathe work on Apple Watch?", a: "Yes. iBreathe has native Apple Watch support alongside its clean, minimalist phone app with a visual breath guide. It does not measure HRV or offer any biofeedback, though, so it guides your pace without showing how your body responds." },
+  ],
   datePublished: '2026-06-29',
   dateModified: '2026-06-29',
 }

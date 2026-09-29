@@ -67,6 +67,11 @@ The metabolic biology these programmes surface — and the protocols the data un
     { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },
   ],
   relatedSlugs: ['ultrahuman-m1', 'nutrisense', 'stelo', 'zoe'],
+  faq: [
+    { q: "How much does Levels cost?", a: "Levels costs about $199 per month, including Dexcom G7 sensors, or about $2,388 per year on an annual plan. That makes it the most expensive consumer CGM programme. The annual plan is cheaper than paying monthly, but it locks you into the cost." },
+    { q: "Does Levels include a coach?", a: "No. There is no human coach in the default tier. Levels relies on app intelligence, with food-by-food impact analysis, time-in-range scoring and meal-by-meal guidance, plus content from its medical advisory board. Users who want human coaching should look at other programmes." },
+    { q: "Levels vs Lingo: which CGM should I choose?", a: "Levels gives the deepest insights and uses the more accurate Dexcom G7, but costs about $199 a month and is US-only. Lingo needs no subscription and is the cheapest legitimate entry, offering a simpler per-meal score on Libre 3. Choose Levels for depth, Lingo for cost." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

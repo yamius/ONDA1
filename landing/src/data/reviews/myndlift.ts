@@ -68,6 +68,11 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { label: 'Remote neurofeedback for ADHD — clinical evidence (Frontiers in Human Neuroscience)', url: 'https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2019.00091/full' },
   ],
   relatedSlugs: ['muse-2', 'flow-neuroscience', 'sens-ai'],
+  faq: [
+    { q: "Is Myndlift worth it?", a: "Myndlift is worth it for patients with a diagnosed condition working with a licensed prescribing provider. It is the most clinically credible neurofeedback option in the consumer-adjacent space, with provider-designed programmes and outcome tracking against validated symptom scales. It is not directly purchasable as a consumer product." },
+    { q: "How much does Myndlift cost?", a: "Myndlift typically costs $300 to $600 per month through a licensed provider, and insurance coverage varies and is often patchy. It is not sold directly to consumers, so the provider sets up and adjusts the programme." },
+    { q: "What are the downsides of Myndlift?", a: "Myndlift requires a licensed clinical provider, costs $300 to $600 per month with patchy insurance coverage, keeps data on a closed platform with no raw access for the patient, and has a patient-side app that is functional rather than polished." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

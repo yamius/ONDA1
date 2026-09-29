@@ -67,6 +67,12 @@ The biology behind what these devices target — and the protocols that compound
     { label: 'taVNS for major depression — randomised trial (Brain Stimulation)', url: 'https://www.brainstimjrnl.com/article/S1935-861X(15)00879-1/fulltext' },
   ],
   relatedSlugs: ['nurosym', 'pulsetto', 'hoolest-verelief-prime'],
+  faq: [
+    { q: "Is Vagustim worth it?", a: "Vagustim is worth it for EU users wanting protocol variety with solid evidence. It is a CE-marked Class IIa medical device with a wider, disclosed protocol library than Nurosym and a published trial base on HRV and anxiety, with no subscription. Setup is more involved than a single ear clip." },
+    { q: "How much does Vagustim cost?", a: "Vagustim costs €499, about $540, as a one-time purchase. No subscription is required to use its protocol library, which is wider than Nurosym's and comes with disclosed stimulation parameters." },
+    { q: "Vagustim vs Nurosym: which is better?", a: "Vagustim offers a wider protocol library with disclosed parameters and comparable evidence. Nurosym has stronger brand recognition outside the EU and a simpler single-ear-clip setup. Choose Vagustim for protocol variety in EU markets." },
+    { q: "What are the downsides of Vagustim?", a: "Vagustim has less brand recognition than Nurosym outside the EU, a multi-electrode setup more involved than a single ear clip, and no on-device HRV biofeedback. Support and warranty processes are weaker outside EU markets." },
+  ],
   datePublished: '2026-05-21',
   dateModified: '2026-05-21',
 }

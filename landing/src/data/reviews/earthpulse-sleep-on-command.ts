@@ -65,6 +65,12 @@ Choose EarthPulse if your PEMF thesis is sleep — under-mattress install, overn
   ],
   relatedSlugs: ['bemer-classic-evo', 'omi-full-body-mat', 'resona-health-vibe'],
   publishOn: '2026-06-22',
+  faq: [
+    { q: "Is the EarthPulse Sleep on Command worth it?", a: "Yes, if you want PEMF specifically for sleep. EarthPulse sits under your mattress and runs Schumann 7.83 Hz and delta-band protocols overnight for $899. It is not worth it for active recovery, because it is sleep-only with a single applicator." },
+    { q: "How much does the EarthPulse Sleep on Command cost?", a: "The EarthPulse Sleep on Command costs $899 for the standalone under-mattress unit. That is accessible pricing within PEMF, compared with multi-applicator systems such as the Bemer Classic Evo at $5,490. It installs under the mattress and runs overnight." },
+    { q: "What are the downsides of the EarthPulse Sleep on Command?", a: "EarthPulse has a narrow use case: sleep only, not active recovery. It offers no multi-applicator coverage for daytime sessions, limited parameter customisation, and smaller community and brand recognition than Bemer. Within sleep, though, it is executed well." },
+    { q: "Who is the EarthPulse Sleep on Command best for?", a: "EarthPulse is best for people buying PEMF specifically for sleep enhancement, including sleep onset, deep sleep and overnight recovery. It suits users who want to set it once under the mattress rather than run daytime sessions." },
+  ],
   datePublished: '2026-06-22',
   dateModified: '2026-06-22',
 }

@@ -68,6 +68,11 @@ The sleep biology behind what these apps measure and the protocols they support.
     { label: 'Sleep and circadian rhythm research (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=sleep+debt+circadian+rhythm' },
   ],
   relatedSlugs: ['sleep-cycle', 'sleepio', 'sleepscore'],
+  faq: [
+    { q: "Is RISE worth it?", a: "RISE is worth it if you care about daytime energy and timing more than nightly scores. It tracks sleep debt and circadian rhythm consistently and builds a useful daily energy schedule. Its sleep debt is a model rather than a measurement, and wind-down content is light." },
+    { q: "How much does RISE cost?", a: "RISE is listed at $60 per year, with only a short trial and a thin free tier. In practice you need the subscription to use its sleep debt and daily energy schedule features. It focuses on daytime energy." },
+    { q: "What are the downsides of RISE?", a: "RISE's sleep debt figure is a model, not a measurement. It is light on wind-down content, has a thin free tier, and is a single-angle app that does one thing: frame sleep around daytime energy." },
+  ],
   datePublished: '2026-05-16',
   dateModified: '2026-05-16',
 }

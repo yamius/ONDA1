@@ -65,6 +65,11 @@ Choose the Hypervolt 3 Pro if you want the strongest, quietest, longest-running 
   ],
   relatedSlugs: ['hypervolt-2-pro', 'theragun-pro-plus', 'theragun-elite'],
   publishOn: '2026-09-06',
+  faq: [
+    { q: "Hypervolt 3 Pro vs Hypervolt 2 Pro: what changed?", a: "The Hypervolt 3 Pro is a clear upgrade. Stall force rises to about 70 lbs from 60, it runs quieter at around 51 dB, battery life doubles to four hours, and attachments are 33% larger. It also adds a six-speed dial and pressure sensor, and costs $50 less." },
+    { q: "How much does the Hypervolt 3 Pro cost?", a: "The Hypervolt 3 Pro costs $349. It tops the Hypervolt 3 line launched in March 2026, which also includes the Go 3 at $149 and the Hypervolt 3 at $249. It is $50 below the Hypervolt 2 Pro's launch price." },
+    { q: "Hypervolt 3 Pro vs Theragun PRO Plus: which should I buy?", a: "On value, the Hypervolt 3 Pro is the premium gun to beat: it is strong, quiet and long-lasting at a lower price. The Theragun PRO Plus still offers deeper amplitude, 16 mm versus about 14 mm, and a more versatile multi-grip handle. Pick Theragun only if you need that depth." },
+  ],
   datePublished: '2026-09-06',
   dateModified: '2026-09-06',
 }

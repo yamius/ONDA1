@@ -67,6 +67,11 @@ The biology of why heat exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['therasage-thera-sauna-personal', 'relax-sauna-portable', 'sunlighten-mpulse'],
   publishOn: '2026-06-04',
+  faq: [
+    { q: "How much does the HigherDose Sauna Blanket V4 cost?", a: "The HigherDose Infrared Sauna Blanket V4 costs $599 as a one-time purchase with no installation. That makes it an accessible entry into IR sauna practice without committing to a cabin. Its warranty is only one year, compared with seven years for Sunlighten and lifetime for Clearlight." },
+    { q: "Is a sauna blanket as good as an infrared sauna cabin?", a: "Not quite. The HigherDose blanket is far-IR only, with no near or mid IR, and the research base for blankets is thinner than for cabin IR. It is wellness-positioned rather than clinical-grade. Its advantage is form factor: it folds, stores and fits any home." },
+    { q: "Who should buy the HigherDose Sauna Blanket V4?", a: "It suits people who want IR sauna practice but lack the space or budget for a cabin. It is the most portable IR sauna form factor available, needs no install and has documented low EMF. Buyers who want full-spectrum IR or a long warranty should consider a cabin." },
+  ],
   datePublished: '2026-05-25',
   dateModified: '2026-05-25',
 }
