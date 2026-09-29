@@ -91,6 +91,22 @@ export function ReviewPage() {
         {tReviews('ui.updated')} {review.dateModified}
       </p>
 
+      {/* Score + verdict — directly under the H1, above the image */}
+      <div className="mb-8 flex items-start gap-5 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5">
+        <div className="shrink-0 text-center">
+          <div className="font-mono text-3xl font-bold text-terminal-green">
+            {review.overallScore.toFixed(1)}
+          </div>
+          <div className="font-mono text-[10px] tracking-widest text-white/30">/ 10</div>
+        </div>
+        {/* One answer-first paragraph: the verdict, then who it is for (GEO:
+            answer engines lift the first substantive paragraph). */}
+        <p id="review-verdict" className="text-[15px] leading-relaxed text-white/85">
+          <span className="font-semibold text-white/95">{tVerdict}</span>{' '}
+          <span className="text-white/60">{tBestFor}</span>
+        </p>
+      </div>
+
       {/* Branded score card — og:image + Product.image + visible hero (6.5).
           Falls back to the generated card when no explicit product photo. */}
       <img
@@ -100,20 +116,6 @@ export function ReviewPage() {
         height={630}
         className="mb-8 w-full rounded-xl border border-white/10"
       />
-
-      {/* Score + verdict */}
-      <div className="mb-8 flex items-start gap-5 rounded-xl border border-terminal-green/20 bg-terminal-green/5 p-5">
-        <div className="shrink-0 text-center">
-          <div className="font-mono text-3xl font-bold text-terminal-green">
-            {review.overallScore.toFixed(1)}
-          </div>
-          <div className="font-mono text-[10px] tracking-widest text-white/30">/ 10</div>
-        </div>
-        <div>
-          <p className="mb-1 font-semibold text-white/90">{tVerdict}</p>
-          <p className="font-mono text-xs text-white/40">{tBestFor}</p>
-        </div>
-      </div>
       <AppStoreCTA layout="line" ct={storeCt('rv', review.slug, lang)} variant={ctaVariantForCategory(review.category)} lang={lang} />
 
       <p id="review-summary" className="mb-6 font-mono text-sm leading-relaxed text-white/60">

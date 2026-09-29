@@ -33,7 +33,7 @@ const coldPod: ToolReview = {
     'Manual water changes, no ozone',
     'Insulation hold time shorter than rigid insulated tubs',
   ],
-  bestFor: 'Best for first-time cold-plunge users wanting an inflatable, portable, low-commitment entry.',
+  bestFor: 'Best for first-time cold-plunge users wanting an inflatable, portable, low-commitment way to test the practice before committing to a fixed installation.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Cold Pod product documentation and independent 2026 consumer reviews. Not hands-on tested by ONDA.',
