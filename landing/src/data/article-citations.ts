@@ -547,6 +547,71 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1016/s0960-9822(01)00581-4"
     }
   ],
+  "does-dopamine-detox-work": [
+    {
+      "title": "The dopamine motive system: implications for drug and food addiction",
+      "authors": "Volkow ND et al.",
+      "year": 2017,
+      "journal": "Nature Reviews Neuroscience",
+      "doi": "10.1038/nrn.2017.130",
+      "pmid": "29142296",
+      "url": "https://doi.org/10.1038/nrn.2017.130"
+    },
+    {
+      "title": "Maladaptive or misunderstood? Dopamine fasting as a potential intervention for behavioral addiction",
+      "authors": "Fei J et al.",
+      "year": 2022,
+      "journal": "Lifestyle Medicine",
+      "doi": "10.1002/lim2.54",
+      "url": "https://doi.org/10.1002/lim2.54"
+    }
+  ],
+  "dopamine-architecture-mastering-desire": [
+    {
+      "title": "A neural substrate of prediction and reward",
+      "authors": "Schultz W et al.",
+      "year": 1997,
+      "journal": "Science",
+      "doi": "10.1126/science.275.5306.1593",
+      "pmid": "9054347",
+      "url": "https://doi.org/10.1126/science.275.5306.1593"
+    }
+  ],
+  "dysautonomia-long-covid-breathing": [
+    {
+      "title": "An Overview of Heart Rate Variability Metrics and Norms",
+      "authors": "Shaffer F et al.",
+      "year": 2017,
+      "journal": "Frontiers in Public Health",
+      "doi": "10.3389/fpubh.2017.00258",
+      "url": "https://doi.org/10.3389/fpubh.2017.00258"
+    },
+    {
+      "title": "How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing",
+      "authors": "Zaccaro A et al.",
+      "year": 2018,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2018.00353",
+      "url": "https://doi.org/10.3389/fnhum.2018.00353"
+    },
+    {
+      "title": "Heart rate variability biofeedback: how and why does it work?",
+      "authors": "Lehrer PM et al.",
+      "year": 2014,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2014.00756",
+      "url": "https://doi.org/10.3389/fpsyg.2014.00756"
+    },
+    {
+      "title": "HEART Rate Variability Biofeedback for LOng COVID Dysautonomia (HEARTLOC): Results of a Feasibility Study",
+      "authors": "Corrado J et al.",
+      "year": 2024,
+      "journal": "Advances in Rehabilitation Science and Practice",
+      "doi": "10.1177/27536351241227261",
+      "pmid": "38298551",
+      "url": "https://doi.org/10.1177/27536351241227261"
+    }
+  ],
   "electric-medicine-neuromodulation": [
     {
       "title": "Non-invasive vagus nerve stimulation in healthy humans reduces sympathetic nerve activity",
@@ -599,6 +664,105 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1023/a:1009554825745",
       "pmid": "10999236",
       "url": "https://doi.org/10.1023/a:1009554825745"
+    }
+  ],
+  "forest-bathing-shinrin-yoku-science": [
+    {
+      "title": "The physiological effects of Shinrin-yoku (taking in the forest atmosphere or forest bathing): evidence from field experiments in 24 forests across Japan",
+      "authors": "Park BJ et al.",
+      "year": 2010,
+      "journal": "Environmental Health and Preventive Medicine",
+      "doi": "10.1007/s12199-009-0086-9",
+      "pmid": "19568835",
+      "url": "https://doi.org/10.1007/s12199-009-0086-9"
+    },
+    {
+      "title": "Visiting a forest, but not a city, increases human natural killer activity and expression of anti-cancer proteins",
+      "authors": "Li Q et al.",
+      "year": 2008,
+      "journal": "International Journal of Immunopathology and Pharmacology",
+      "doi": "10.1177/039463200802100113",
+      "pmid": "18336737",
+      "url": "https://doi.org/10.1177/039463200802100113"
+    },
+    {
+      "title": "Therapeutic effect of forest bathing on human hypertension in the elderly",
+      "authors": "Mao GX et al.",
+      "year": 2012,
+      "journal": "Journal of Cardiology",
+      "doi": "10.1016/j.jjcc.2012.08.003",
+      "pmid": "22948092",
+      "url": "https://doi.org/10.1016/j.jjcc.2012.08.003"
+    }
+  ],
+  "glp1-biology-muscle-preservation": [
+    {
+      "title": "Obesity: the protein leverage hypothesis",
+      "authors": "Simpson SJ et al.",
+      "year": 2005,
+      "journal": "Obesity Reviews",
+      "doi": "10.1111/j.1467-789X.2005.00178.x",
+      "pmid": "15836464",
+      "url": "https://doi.org/10.1111/j.1467-789X.2005.00178.x"
+    }
+  ],
+  "glymphatic-flush-clearing-neural-cache": [
+    {
+      "title": "Sleep Drives Metabolite Clearance from the Adult Brain",
+      "authors": "Xie L et al.",
+      "year": 2013,
+      "journal": "Science",
+      "doi": "10.1126/science.1241224",
+      "url": "https://doi.org/10.1126/science.1241224"
+    },
+    {
+      "title": "The Effect of Body Posture on Brain Glymphatic Transport",
+      "authors": "Lee H et al.",
+      "year": 2015,
+      "journal": "Journal of Neuroscience",
+      "doi": "10.1523/jneurosci.1625-15.2015",
+      "url": "https://doi.org/10.1523/jneurosci.1625-15.2015"
+    }
+  ],
+  "gut-brain-axis-data-link": [
+    {
+      "title": "The Microbiota-Gut-Brain Axis",
+      "authors": "Cryan JF et al.",
+      "year": 2019,
+      "journal": "Physiological Reviews",
+      "doi": "10.1152/physrev.00018.2018",
+      "url": "https://doi.org/10.1152/physrev.00018.2018"
+    }
+  ],
+  "heart-rate-recovery-fitness-marker": [
+    {
+      "title": "Heart-rate recovery immediately after exercise as a predictor of mortality.",
+      "authors": "Cole CR et al.",
+      "year": 1999,
+      "journal": "The New England Journal of Medicine",
+      "doi": "10.1056/NEJM199910283411804",
+      "pmid": "10536127",
+      "url": "https://doi.org/10.1056/NEJM199910283411804"
+    }
+  ],
+  "high-blood-pressure-slow-breathing": [
+    {
+      "title": "Slow breathing improves arterial baroreflex sensitivity and decreases blood pressure in essential hypertension.",
+      "authors": "Joseph CN et al.",
+      "year": 2005,
+      "journal": "Hypertension",
+      "doi": "10.1161/01.HYP.0000179581.68566.7d",
+      "pmid": "16129818",
+      "url": "https://doi.org/10.1161/01.HYP.0000179581.68566.7d"
+    },
+    {
+      "title": "How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing.",
+      "authors": "Zaccaro A et al.",
+      "year": 2018,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2018.00353",
+      "pmid": "30245619",
+      "url": "https://doi.org/10.3389/fnhum.2018.00353"
     }
   ],
   "how-much-sleep-do-you-need": [
@@ -1216,6 +1380,111 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "journal": "Psychological Science",
       "doi": "10.1111/j.1467-9280.1997.tb00403.x",
       "url": "https://doi.org/10.1111/j.1467-9280.1997.tb00403.x"
+    }
+  ],
+  "neural-entrainment-meditation-2": [
+    {
+      "title": "Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: a meta-analysis",
+      "authors": "Garcia-Argibay et al.",
+      "year": 2018,
+      "journal": "Psychological Research",
+      "doi": "10.1007/s00426-018-1066-8",
+      "pmid": "30073406",
+      "url": "https://doi.org/10.1007/s00426-018-1066-8"
+    }
+  ],
+  "neural-hydraulics-csf-flow": [
+    {
+      "title": "Sleep Drives Metabolite Clearance from the Adult Brain",
+      "authors": "Xie et al.",
+      "year": 2013,
+      "journal": "Science",
+      "doi": "10.1126/science.1241224",
+      "pmid": "24136970",
+      "url": "https://doi.org/10.1126/science.1241224"
+    },
+    {
+      "title": "Cerebral Arterial Pulsation Drives Paravascular CSF-Interstitial Fluid Exchange in the Murine Brain",
+      "authors": "Iliff et al.",
+      "year": 2013,
+      "journal": "The Journal of Neuroscience",
+      "doi": "10.1523/JNEUROSCI.1592-13.2013",
+      "pmid": "24227727",
+      "url": "https://doi.org/10.1523/JNEUROSCI.1592-13.2013"
+    },
+    {
+      "title": "Coupled electrophysiological, hemodynamic, and cerebrospinal fluid oscillations in human sleep",
+      "authors": "Fultz et al.",
+      "year": 2019,
+      "journal": "Science",
+      "doi": "10.1126/science.aax5440",
+      "pmid": "31672896",
+      "url": "https://doi.org/10.1126/science.aax5440"
+    }
+  ],
+  "neural-optimizer-estrogen": [
+    {
+      "title": "Estradiol regulates hippocampal dendritic spine density via an N-methyl-D-aspartate receptor-dependent mechanism",
+      "authors": "Woolley CS et al.",
+      "year": 1994,
+      "journal": "The Journal of Neuroscience",
+      "doi": "10.1523/jneurosci.14-12-07680.1994",
+      "url": "https://doi.org/10.1523/jneurosci.14-12-07680.1994"
+    },
+    {
+      "title": "Sex differences in Alzheimer risk: Brain imaging of endocrine vs chronologic aging",
+      "authors": "Mosconi L et al.",
+      "year": 2017,
+      "journal": "Neurology",
+      "doi": "10.1212/wnl.0000000000004425",
+      "url": "https://doi.org/10.1212/wnl.0000000000004425"
+    }
+  ],
+  "neural-signal-to-noise-cleaning-system-channel": [
+    {
+      "title": "Shaping Functional Architecture by Oscillatory Alpha Activity: Gating by Inhibition",
+      "authors": "Jensen O et al.",
+      "year": 2010,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2010.00186",
+      "url": "https://doi.org/10.3389/fnhum.2010.00186"
+    },
+    {
+      "title": "Appraising the brain's energy budget",
+      "authors": "Raichle ME et al.",
+      "year": 2002,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "doi": "10.1073/pnas.172399499",
+      "url": "https://doi.org/10.1073/pnas.172399499"
+    }
+  ],
+  "neuroplasticity-flow-overclocking": [
+    {
+      "title": "A meta-analytic review of the effects of exercise on brain-derived neurotrophic factor",
+      "authors": "Szuhany KL et al.",
+      "year": 2015,
+      "journal": "Journal of Psychiatric Research",
+      "doi": "10.1016/j.jpsychires.2014.10.003",
+      "pmid": "25455510",
+      "url": "https://doi.org/10.1016/j.jpsychires.2014.10.003"
+    },
+    {
+      "title": "Neurocognitive mechanisms underlying the experience of flow",
+      "authors": "Dietrich A",
+      "year": 2004,
+      "journal": "Consciousness and Cognition",
+      "doi": "10.1016/j.concog.2004.07.002",
+      "pmid": "15522630",
+      "url": "https://doi.org/10.1016/j.concog.2004.07.002"
+    },
+    {
+      "title": "A new mechanism of nervous system plasticity: activity-dependent myelination",
+      "authors": "Fields RD",
+      "year": 2015,
+      "journal": "Nature Reviews Neuroscience",
+      "doi": "10.1038/nrn4023",
+      "pmid": "26585800",
+      "url": "https://doi.org/10.1038/nrn4023"
     }
   ],
   "nightly-flush-glymphatic-neural-cache": [
