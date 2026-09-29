@@ -281,7 +281,7 @@ A body in homeostatic balance is a body ready for growth. Without this foundatio
 | **Primary** | Heartbeat, breath rhythm, gut motility | Brainstem → Insula |
 | **Emotional** | Feelings as body sensations | Insula → Anterior Cingulate |
 | **Reflective** | Conscious body awareness | Prefrontal Cortex |
-
+
 ## Why does primary interoception matter?
 
 Primary interoception matters because the brain uses these body signals to regulate heart rate, breathing, digestion, and body temperature, most of it without conscious awareness. Only a small part of this incoming information ever becomes something you notice and can report.
@@ -667,7 +667,7 @@ The **Mammalian Dive Reflex** is an automatic physiological response triggered w
 - **Peripheral vasoconstriction** — blood shifts to core organs
 - **Vagal activation** — the parasympathetic system takes control
 - **Stress reset** — can interrupt sympathetic dominance
-
+
 ## Why does the mammalian dive reflex matter?
 
 The mammalian dive reflex matters because it is one of the strongest natural brakes on heart rate, and it can be triggered simply by cold water on the face. It helps conserve oxygen for the brain and heart during breath-holding, which partly explains how people can survive short periods underwater.
@@ -933,7 +933,7 @@ The **insula** (or insular cortex) is a region of the cerebral cortex folded dee
 ## Relation to Insular Cortex
 
 The terms "insula" and "insular cortex" refer to the same structure. The insula is the primary target of Level 1 interoceptive practices.
-
+
 ## Why does the insula matter?
 
 The insula matters because it helps link what is happening inside the body with decisions and behavior. Brain imaging shows it is active in pain, thirst, disgust, craving, and uncertainty, and it is considered a key part of the salience network, which helps shift attention toward what matters in the moment.
@@ -1053,7 +1053,7 @@ Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") pr
 ## How They Work
 
 CPGs are "half-center" networks — mutually inhibiting neuron groups that alternate activation, creating oscillating output. Once activated, they can sustain rhythm with minimal sensory feedback.
-
+
 ## Why do central pattern generators matter?
 
 Central pattern generators matter because they free the brain from planning every step or breath. The brain sets goals such as start, stop, speed up, or turn, and brainstem and spinal circuits turn those commands into timed muscle activity. The breathing rhythm is a clear example: it comes from a pattern-generating network in the brainstem, including a region called the pre-Bötzinger complex.
@@ -1194,7 +1194,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Gliding** — healthy fascia allows smooth sliding between layers
 - **Force transmission** — transfers force efficiently when aligned
 - **Proprioception** — contains sensory receptors for body awareness
-
+
 ## Why does fascia matter?
 
 Fascia matters because it organizes the body's soft tissues and shapes how they move against each other. Deep fascia gives muscles attachment surfaces and helps compartmentalize them, while looser layers carry blood vessels, lymphatics, and nerves between structures.
@@ -1230,7 +1230,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Circuit** — how neurons connect and communicate
 - **Systems** — brainstem, cerebellum, cortex, autonomic nervous system
 - **Integrative** — how neural activity produces movement, emotion, thought
-
+
 ## Why does neurophysiology matter?
 
 Neurophysiology matters because it explains how the nervous system actually works in real time, which is the basis for diagnosing and treating many neurological conditions. Knowing how nerve cells generate and pass along electrical signals helps clinicians tell whether a problem lies in a nerve, the spinal cord, or the brain itself.
@@ -1338,7 +1338,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Automatic** — CPGs can generate rhythm without continuous brain input
 - **Adaptive** — modulated by sensory feedback (terrain, obstacles)
 - **Energy-efficient** — when well-tuned, uses minimal effort
-
+
 ## Why does locomotion matter?
 
 Locomotion matters because walking ability is closely tied to independence and overall health, especially with aging. Walking speed is used in geriatric medicine as a simple marker of function, and slower gait is linked to higher risk of falls, disability, and hospitalization.
@@ -1437,7 +1437,7 @@ Part 4 trains the nervous system to transition smoothly between Ventral Vagus (s
 ## The Chain
 
 Reticular Formation → Thalamus → Motor Cortex. This pathway allows the brain to detect environmental changes and issue reactions "before the thought" — bypassing slow cognitive filters.
-
+
 ## Why does neuroception matter?
 
 Neuroception matters mainly as a framework: it gives therapists and clients a simple way to talk about why the body can feel unsafe even when the mind knows a situation is safe. It has become influential in trauma-informed therapy, education, and coaching.
@@ -1931,7 +1931,7 @@ DHEA is usually measured with a blood test for DHEA sulfate (DHEA-S), its more s
 - **Psychological** — confidence, risk-taking, status
 - **Neuroprotective** — supports brain function
 - **Balance** — moderate levels support "calm dominance"
-
+
 ## Why does testosterone matter?
 
 Testosterone matters because it shapes male sexual development and helps maintain health in adults of all sexes. Before birth and at puberty it drives the development of male reproductive organs, a deeper voice, and body and facial hair, and it supports sperm production.
@@ -2427,7 +2427,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Attention** — enhances focus on salient stimuli
 - **Inhibitory control** — supports suppression of impulsive reactions
 - **Signal-to-noise** — improves extraction of signal from noise
-
+
 ## Why does norepinephrine matter?
 
 Norepinephrine matters because it helps set how awake and ready to act the body and brain are from moment to moment. In the brain, activity in the locus coeruleus rises with novelty, uncertainty, and threat, and it falls during sleep, reaching its lowest levels during REM sleep.
@@ -2649,7 +2649,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Location** — often prominent in frontal and temporal regions during meditation
 - **Subjective** — dreamy, diffuse awareness, creative flow
 - **Memory** — theta in hippocampus supports memory consolidation
-
+
 ## Why does theta state matter?
 
 Theta activity matters because it is one of the clearest windows researchers have into how the brain coordinates learning and navigation. In animal studies, rhythmic theta in the hippocampus organizes the timing of neuron firing, which is thought to help link events and places into memories.
@@ -2765,7 +2765,7 @@ The **Dorsal Attention Network** (DAN) is a network of brain regions that suppor
 ## Function
 
 The DAN directs attention to task-relevant stimuli and suppresses irrelevant ones. It works in opposition to the Default Mode Network — when DAN is active, DMN tends to be suppressed.
-
+
 ## Why does the dorsal attention network matter?
 
 The dorsal attention network matters because it lets you hold attention on a goal even when other things compete for it. It helps keep a location, object, or feature "in mind" as a target, and it is closely tied to planning where the eyes will move next. This makes it central to everyday tasks like reading, searching a crowded scene, or driving.
@@ -2882,7 +2882,7 @@ The **Ventral Tegmental Area** (VTA) is a group of neurons in the midbrain that 
 - **Motivation** — drives goal-directed behavior
 - **Learning** — reinforces successful actions
 - **Addiction vulnerability** — overstimulation leads to compulsive seeking
-
+
 ## Why does the ventral tegmental area matter?
 
 The ventral tegmental area matters because it helps the brain decide what is worth pursuing. Its dopamine neurons fire more when an outcome is better than expected and dip when it is worse, a teaching signal that shapes which cues and habits people learn to approach.
@@ -3060,7 +3060,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 ## Depletion and Restoration
 
-Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycles) allow timely restoration. Working against these cycles leads to cognitive burnout.
+Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycles) allow timely restoration. Working against these cycles leads to cognitive burnout.
 ## Why do neurotransmitters matter?
 
 Neurotransmitters matter because nearly every signal in the nervous system depends on them, including signals that leave the brain to control the heart, gut, and muscles. Acetylcholine, for example, is the messenger the vagus nerve uses to slow the heartbeat, and it is also what motor nerves release to make skeletal muscles contract.
@@ -3161,7 +3161,7 @@ The **hippocampus** is a structure in the medial temporal lobe critical for memo
 - **Spatial navigation** — cognitive maps, "mental GPS"
 - **Future simulation** — reconstructing past experiences to model new scenarios
 - **Context** — binding events to time and place
-
+
 ## Why does the hippocampus matter?
 
 The hippocampus matters because without it, people cannot reliably form new memories of facts and events. The famous patient H.M., who had both hippocampi removed to treat epilepsy, could still hold a conversation and learn new motor skills but could not remember new experiences for more than a few minutes.
@@ -3930,7 +3930,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Behavioral** — facial expression, posture, voice
 - **Experiential** — the felt sense (feelings)
 - **Functional** — prepare the body for action (approach, avoid, connect)
-
+
 ## Why do emotions matter?
 
 Emotions matter because they shape attention, memory, and decisions. Events that stir strong feelings tend to be remembered more vividly, and people with damage to certain frontal brain regions that process emotional signals often struggle to make sound everyday choices even when their reasoning skills remain intact.
@@ -4380,7 +4380,7 @@ The **Enteric Nervous System** (ENS) is a complex network of over 100 million ne
 
 - **Visceral Awareness** — Practice scanning sensations in the abdominal area to decode "gut feelings" and intuitive signals.
 - **Microbiome Support** — Maintaining a healthy microbiome is viewed as a foundation for cognitive performance and emotional stability.
-
+
 ## Why does the enteric nervous system matter?
 
 The enteric nervous system matters because it runs most of the day-to-day work of digestion. It coordinates the muscle contractions that move food along the gut, called peristalsis, and controls secretion of fluids and local blood flow.
@@ -4436,7 +4436,7 @@ The **microbiome** is the ecosystem of trillions of microorganisms (bacteria, fu
 - **SCFA production** — fiber fermentation yields short-chain fatty acids that cross the Blood-Brain Barrier
 - **Immune modulation** — shapes systemic inflammation and neuroinflammation
 - **Gut-brain axis** — constant bidirectional communication with the brain
-
+
 ## Why does the microbiome matter?
 
 The microbiome matters because it helps digest food the body cannot break down on its own, makes certain vitamins such as vitamin K and some B vitamins, and helps train the immune system from infancy onward. A diverse, stable microbial community also crowds out harmful microbes, a protective effect known as colonization resistance.
@@ -4469,7 +4469,7 @@ The **Blood-Brain Barrier** (BBB) is a semi-permeable membrane of endothelial ce
 - **Selective transport** — allows glucose, amino acids, and specific metabolites
 - **SCFA passage** — short-chain fatty acids from gut fermentation can cross and reduce neuroinflammation
 - **Gut-brain link** — microbiome metabolites influence brain health through BBB transport
-
+
 ## Why does the blood-brain barrier matter?
 
 The blood-brain barrier matters because neurons need a very stable chemical environment to signal reliably. Levels of ions, hormones, and amino acids in the blood can shift after a meal or during exercise, and the barrier buffers the brain from these swings. Its tightness comes from "tight junctions" that seal the gaps between endothelial cells, supported by pericytes and the end-feet of astrocytes, which together form the neurovascular unit.
@@ -4502,7 +4502,7 @@ Prebiotic fiber and a healthy microbiome produce SCFAs that cross the Blood-Brai
 - **Oxygen delivery** — the Bohr effect: CO2 helps release oxygen from hemoglobin to tissues
 - **Prefrontal cortex** — high CO2 tolerance supports cognitive clarity under pressure
 - **Trainable** — breath-hold exercises and controlled breathing can increase tolerance
-
+
 ## Why does CO2 tolerance matter?
 
 CO2 tolerance matters because it shapes how comfortable breathing feels, especially during stress, exercise, and breath-holding. People who are very sensitive to rising CO2 may feel breathless sooner and tend to breathe faster than their bodies need.
@@ -5213,7 +5213,7 @@ The Mitochondrial DNA Red Light article covers protocols for supporting mitochon
 - **Nitric oxide** — light can dissociate NO from cytochrome c oxidase, restoring respiration
 - **Water viscosity** — some models suggest light reduces viscosity around proteins
 - **NIR penetration** — 700–1400 nm penetrates several cm into tissue
-
+
 ## Why does photobiomodulation matter?
 
 Photobiomodulation matters because it is one of the few light-based approaches studied as a drug-free way to influence tissue repair, pain, and inflammation. It is used in clinical settings such as supportive care for oral mucositis during cancer treatment, and it is widely sold in consumer red-light devices.
@@ -5618,7 +5618,7 @@ The Phase-Locked Sleep article covers delta amplification protocols using phase-
 - **Priority** — the brain prioritizes SWS early in the night
 - **Deprivation** — SWS loss impairs cognition and recovery
 - **Phase-locking** — acoustic stimulation can be timed to SWS for amplification
-
+
 ## Why does slow-wave sleep matter?
 
 Slow-wave sleep matters because it is the stage most strongly tied to how rested and alert a person feels after sleeping. Pressure for deep sleep builds the longer someone stays awake, and slow-wave activity rises after sleep loss, which is why a recovery night usually contains more of it. During this stage, heart rate and blood pressure fall, and parasympathetic activity is at its highest of the night.
