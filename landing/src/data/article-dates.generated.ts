@@ -1638,7 +1638,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-28T20:58:44+02:00"
+    "modified": "2026-09-29T18:33:50+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1682,11 +1682,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/bio": {
     "published": "2026-03-22T21:42:54Z",
-    "modified": "2026-09-29T13:56:55+02:00"
+    "modified": "2026-09-29T19:15:48+02:00"
   },
   "page:/bio/:metric": {
     "published": "2026-03-23T01:05:26Z",
-    "modified": "2026-09-29T13:56:55+02:00"
+    "modified": "2026-09-29T19:15:48+02:00"
   },
   "page:/research": {
     "published": "2026-05-22T18:20:34+02:00",
@@ -1730,7 +1730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/compare": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-09-29T18:33:50+02:00"
   },
   "page:/tools": {
     "published": "2026-06-03T18:28:47+02:00",
