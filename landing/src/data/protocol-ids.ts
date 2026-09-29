@@ -180,9 +180,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'serotonin-solar-loading': 'system-stability-serotonin',
   'serotonin-prebiotic-input': 'system-stability-serotonin',
   // energy-sensor-leptin
-  'leptin-silence-window': 'energy-sensor-leptin',
-  'leptin-protein-first': 'energy-sensor-leptin',
-  'leptin-thermal-reset': 'energy-sensor-leptin',
+  'leptin-sleep-duration': 'energy-sensor-leptin',
+  'leptin-steady-loss': 'energy-sensor-leptin',
+  'leptin-satiating-meals': 'energy-sensor-leptin',
   // neural-optimizer-estrogen
   'estrogen-phyto-patch': 'neural-optimizer-estrogen',
   'estrogen-resistance-training': 'neural-optimizer-estrogen',

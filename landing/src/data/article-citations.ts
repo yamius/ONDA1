@@ -652,6 +652,87 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1038/372425a0",
       "pmid": "7984236",
       "url": "https://doi.org/10.1038/372425a0"
+    },
+    {
+      "title": "Serum immunoreactive-leptin concentrations in normal-weight and obese humans",
+      "authors": "Considine RV et al.",
+      "year": 1996,
+      "journal": "N Engl J Med",
+      "doi": "10.1056/NEJM199602013340503",
+      "pmid": "8532024",
+      "url": "https://doi.org/10.1056/NEJM199602013340503"
+    },
+    {
+      "title": "Responses of leptin to short-term fasting and refeeding in humans: a link with ketogenesis but not ketones themselves",
+      "authors": "Kolaczynski JW et al.",
+      "year": 1996,
+      "journal": "Diabetes",
+      "doi": "10.2337/diab.45.11.1511",
+      "pmid": "8866554",
+      "url": "https://doi.org/10.2337/diab.45.11.1511"
+    },
+    {
+      "title": "Congenital leptin deficiency is associated with severe early-onset obesity in humans",
+      "authors": "Montague CT et al.",
+      "year": 1997,
+      "journal": "Nature",
+      "doi": "10.1038/43185",
+      "pmid": "9202122",
+      "url": "https://doi.org/10.1038/43185"
+    },
+    {
+      "title": "Effects of recombinant leptin therapy in a child with congenital leptin deficiency",
+      "authors": "Farooqi IS et al.",
+      "year": 1999,
+      "journal": "N Engl J Med",
+      "doi": "10.1056/NEJM199909163411204",
+      "pmid": "10486419",
+      "url": "https://doi.org/10.1056/NEJM199909163411204"
+    },
+    {
+      "title": "Brief communication: Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite",
+      "authors": "Spiegel K et al.",
+      "year": 2004,
+      "journal": "Ann Intern Med",
+      "doi": "10.7326/0003-4819-141-11-200412070-00008",
+      "pmid": "15583226",
+      "url": "https://doi.org/10.7326/0003-4819-141-11-200412070-00008"
+    },
+    {
+      "title": "Short sleep duration is associated with reduced leptin, elevated ghrelin, and increased body mass index",
+      "authors": "Taheri S et al.",
+      "year": 2004,
+      "journal": "PLoS Med",
+      "doi": "10.1371/journal.pmed.0010062",
+      "pmid": "15602591",
+      "url": "https://doi.org/10.1371/journal.pmed.0010062"
+    },
+    {
+      "title": "Obesity and leptin resistance: distinguishing cause from effect",
+      "authors": "Myers MG Jr et al.",
+      "year": 2010,
+      "journal": "Trends Endocrinol Metab",
+      "doi": "10.1016/j.tem.2010.08.002",
+      "pmid": "20846876",
+      "url": "https://doi.org/10.1016/j.tem.2010.08.002"
+    },
+    {
+      "title": "Adaptive thermogenesis in humans",
+      "authors": "Rosenbaum M et al.",
+      "year": 2010,
+      "journal": "Int J Obes (Lond)",
+      "doi": "10.1038/ijo.2010.184",
+      "pmid": "20935667",
+      "url": "https://doi.org/10.1038/ijo.2010.184"
+    },
+    {
+      "title": "Leptin, Obesity, and Leptin Resistance: Where Are We 25 Years Later?",
+      "authors": "Izquierdo AG et al.",
+      "year": 2019,
+      "journal": "Nutrients",
+      "doi": "10.3390/nu11112704",
+      "pmid": "31717265",
+      "url": "https://doi.org/10.3390/nu11112704"
     }
   ],
   "fast-vs-slow-pranayama": [

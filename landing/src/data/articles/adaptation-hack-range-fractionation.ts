@@ -49,7 +49,7 @@ Instead of performing standard 3×10 sets with a fixed weight, you fragment the 
 
 ### 2. MODULE: NUTRITION & HORMONES (Nutritional Fractionation)
 
-Aligning with the protocols for [Leptin](/articles/energy-sensor-leptin) and Insulin — alternate **Deep Deficit** (16–24 hour fasting periods) with **Surplus Refeed** windows that signal system safety and resource abundance.
+Some people alternate stricter eating days with fuller **refeed** days. Whether this changes appetite hormones in people is unproven — dieting lowers [leptin](/articles/energy-sensor-leptin) either way — so treat it as a personal experiment, not a hormonal reset.
 
 This prevents the metabolic downclocking that inevitably follows prolonged linear caloric deficits.
 

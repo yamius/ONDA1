@@ -371,7 +371,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'system-stability-serotonin':
     'Learn how to calibrate your inner status and cognitive calm. Explore the link between posture, gut health, and serotonin production.',
   'energy-sensor-leptin':
-    'Master your hunger signals. Learn how to recalibrate leptin sensitivity, fix metabolic resistance, and restore energy balance using ONDA protocols.',
+    'Leptin tells your brain how much fat you store. Why high leptin does not stop hunger, why dieting lowers it, how short sleep cuts it, and what actually helps.',
   'neural-optimizer-estrogen':
     'Discover how estrogen functions as a neural optimizer, enhancing memory and protecting the brain from inflammation and cognitive decline.',
   'protocol-circadian-hard-reset':
@@ -2724,14 +2724,13 @@ export function getMetaForRoute(route: string): RouteMeta {
                         : slug === 'energy-sensor-leptin'
                           ? {
                               keywords: [
+                                'Leptin',
                                 'Leptin Resistance',
-                                'Intermittent Fasting',
-                                'Metabolic Health',
-                                'Circadian Rhythm',
-                                'Biohacking Hunger',
-                                'ONDA Protocol',
+                                'Sleep and Appetite',
+                                'Hunger Hormones',
+                                'Weight Loss Plateau',
                               ],
-                              audience: 'Biohackers, High-Performers, Metabolic Optimization',
+                              audience: 'Adults managing appetite, weight and sleep',
                               proficiencyLevel: 'Intermediate',
                             }
                           : slug === 'neural-optimizer-estrogen'

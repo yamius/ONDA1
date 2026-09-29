@@ -478,14 +478,24 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   "energy-sensor-leptin": [
     {
-      question: "What is leptin resistance?",
+      question: "What does leptin do?",
       answer:
-        "Leptin is the hormone fat cells use to report energy reserves to the brain. In leptin resistance the brain stops \"hearing\" that signal \u2014 so it perceives scarcity despite full stores, driving persistent hunger, cravings and a stalled metabolism.",
+        "Leptin is a hormone made mainly by fat cells that tells the brain how much energy the body has stored. Levels rise with body fat and fall quickly when you eat less. It acts on the hypothalamus, which balances appetite and energy use; people born unable to make leptin develop severe early-onset obesity.",
     },
     {
-      question: "How do I restore leptin sensitivity?",
+      question: "What is leptin resistance, and can you test for it?",
       answer:
-        "Give the sensor quiet windows: a consistent overnight fasting window so leptin signalling can reset, protein at the start of meals to blunt the spike, and morning light plus solid sleep \u2014 leptin sensitivity is tightly tied to circadian rhythm. Cold exposure adds a further reset.",
+        "Leptin resistance describes the brain responding weakly to leptin: most people with obesity have high leptin, yet their hunger is not suppressed. Researchers say the term covers several mechanisms, and there is no clinical test for it. A leptin blood test mostly reflects how much body fat you have.",
+    },
+    {
+      question: "Does lack of sleep affect leptin and hunger?",
+      answer:
+        "Yes. In a 2004 controlled study, two nights of restricted sleep lowered leptin about 18%, raised the hunger hormone ghrelin about 28%, and increased hunger, especially for calorie-dense foods. A large cohort study found habitual 5-hour sleepers had lower leptin and higher ghrelin than 8-hour sleepers.",
+    },
+    {
+      question: "Does intermittent fasting or cold exposure reset leptin?",
+      answer:
+        "No human evidence shows that. Fasting actually lowers leptin, which starts dropping within about 12 hours without food, and no trial shows cold showers or plunges restore leptin signaling. What reliably helps appetite is enough sleep, a modest calorie deficit, and filling meals with protein and fiber.",
     },
   ],
   "femtech-cyclical-architecture": [
