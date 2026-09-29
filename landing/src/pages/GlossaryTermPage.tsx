@@ -76,7 +76,7 @@ export function GlossaryTermPage() {
     const removeLd = (id: string) =>
       document.querySelector(`script[data-ld="${id}"]`)?.remove()
 
-    const glossaryDates = ARTICLE_DATES.__glossary
+    const glossaryDates = ARTICLE_DATES[`glossary:${term.slug}`] ?? ARTICLE_DATES.__glossary
     const isOnda = glossaryLayer(term.slug) === 'onda'
     const definedTermLd = {
       '@context': 'https://schema.org',

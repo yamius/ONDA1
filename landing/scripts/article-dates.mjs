@@ -126,6 +126,45 @@ for (const slug of articleSlugs) {
 const glossaryDates = fileDates(glossaryFile)
 dates.__glossary = glossaryDates
 
+// Per-term glossary dates: blame glossary.ts once and take the oldest/newest
+// line time inside each term's block (keys `glossary:<slug>`).
+try {
+  const blame = execSync(`git blame --line-porcelain -- "${glossaryFile}"`, {
+    cwd: repoRoot, stdio: ['ignore', 'pipe', 'ignore'], maxBuffer: 64 * 1024 * 1024,
+  }).toString().split('\n')
+  let time = 0
+  let current = null
+  let blockStart = []
+  for (const line of blame) {
+    if (line.startsWith('author-time ')) time = Number(line.slice(12))
+    else if (line.startsWith('\t')) {
+      const code = line.slice(1)
+      if (/^  \{\s*$/.test(code)) { current = null; blockStart = [time]; continue }
+      const m = code.match(/^    slug: '([^']+)'/)
+      if (m && !current) {
+        current = { slug: m[1], min: Math.min(...blockStart, time), max: Math.max(...blockStart, time) }
+        dates[`glossary:${current.slug}`] = current
+        continue
+      }
+      if (current) { current.min = Math.min(current.min, time); current.max = Math.max(current.max, time) }
+      else blockStart.push(time)
+    }
+  }
+  for (const k of Object.keys(dates)) {
+    const v = dates[k]
+    if (k.startsWith('glossary:') && typeof v.min === 'number') {
+      dates[k] = { published: new Date(v.min * 1000).toISOString(), modified: new Date(v.max * 1000).toISOString() }
+    }
+  }
+} catch {}
+
+// Per-tool dates: the page component behind each EN /tools/<x> route (keys `tool:/tools/<x>`).
+const entryServer = readFileSync(join(__dirname, '..', 'src', 'entry-server.tsx'), 'utf-8')
+for (const m of entryServer.matchAll(/path="(\/tools\/[a-z0-9-]+)"\s+element=\{<(\w+)\s*\/>\}/g)) {
+  const file = join(__dirname, '..', 'src', 'pages', `${m[2]}.tsx`)
+  if (existsSync(file)) dates[`tool:${m[1]}`] = fileDates(file)
+}
+
 const body =
   banner +
   '\nexport const ARTICLE_DATES: Record<string, { published: string; modified: string }> = ' +

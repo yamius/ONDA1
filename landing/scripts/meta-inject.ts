@@ -779,6 +779,7 @@ function buildDefinedTermJsonLd(
   description: string,
   url: string,
   termSet?: { id: string; name: string; url: string },
+  dates?: { published: string; modified: string },
 ): string {
   const set = termSet ?? { id: `${SITE_URL}/glossary#glossary`, name: 'ONDA Life Glossary', url: `${SITE_URL}/glossary` }
   const term = {
@@ -787,6 +788,7 @@ function buildDefinedTermJsonLd(
     name,
     description,
     url,
+    ...(dates ? { datePublished: dates.published, dateModified: dates.modified } : {}),
     inDefinedTermSet: {
       '@type': 'DefinedTermSet',
       '@id': set.id,
@@ -3679,9 +3681,22 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   const breadcrumbScript = `<script type="application/ld+json">${buildBreadcrumbListJsonLd(meta.breadcrumbs)}</script>`
   out = out.replace('</head>', `  ${breadcrumbScript}\n</head>`)
 
+  // Per-item git dates (article-dates.mjs): glossary terms and tools, any language.
+  const basePath = (() => {
+    try {
+      const p = new URL(meta.url).pathname.replace(/\/$/, '')
+      const seg = p.split('/')[1]
+      return (SUPPORTED_LANGS as readonly string[]).includes(seg) ? p.slice(seg.length + 1) : p
+    } catch {
+      return ''
+    }
+  })()
+  const glossaryDates = basePath.startsWith('/glossary/') ? ARTICLE_DATES[`glossary:${basePath.slice(10)}`] : undefined
+  const toolDates = basePath.startsWith('/tools/') ? ARTICLE_DATES[`tool:${basePath}`] : undefined
+
   // JSON-LD: DefinedTerm (glossary pages only)
   if (meta.definedTerm) {
-    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url, meta.definedTerm.termSet)}</script>`
+    const definedTermScript = `<script type="application/ld+json">${buildDefinedTermJsonLd(meta.definedTerm.name, meta.definedTerm.description, meta.definedTerm.url, meta.definedTerm.termSet, glossaryDates)}</script>`
     out = out.replace('</head>', `  ${definedTermScript}\n</head>`)
   }
 
@@ -3848,7 +3863,11 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // Emitting them here makes the structured data visible to non-JS crawlers
   // (GPTBot, PerplexityBot, Bing) that never hydrate the page.
   if (meta.jsonLd && meta.jsonLd.length > 0) {
-    for (const node of meta.jsonLd) {
+    for (const raw of meta.jsonLd) {
+      const node =
+        toolDates && raw['@type'] === 'WebApplication' && !raw.dateModified
+          ? { ...raw, datePublished: toolDates.published, dateModified: toolDates.modified }
+          : raw
       const s = `<script type="application/ld+json">${JSON.stringify(node)}</script>`
       out = out.replace('</head>', `  ${s}\n</head>`)
     }
