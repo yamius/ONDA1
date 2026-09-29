@@ -20,7 +20,7 @@ const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 
 /** Maps article slug to TheStack section id (for /the-stack#section-id anchor) */
 const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
-  'vagus-nerve-master-key': 'nervous-system',
+  'vagus-nerve-exercises': 'nervous-system',
   'breathwork-command-line-interface': 'nervous-system',
   'hrv-training-nervous-system-latency': 'nervous-system',
   'dopamine-architecture-mastering-desire': 'reward-logic',
@@ -59,7 +59,6 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
 }
 
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
-  'vagus-nerve-master-key': '4 min 20 sec',
   'dopamine-architecture-mastering-desire': '7 min',
   'cacao-stem-cells': '2 min 45 sec',
   'circadian-reset-mastering-light': '3 min 45 sec',

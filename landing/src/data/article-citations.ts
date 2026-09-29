@@ -2108,20 +2108,22 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "vagus-nerve-exercises": [
     {
+      "title": "Vagus Nerve as Modulator of the Brain-Gut Axis in Psychiatric and Inflammatory Disorders",
+      "authors": "Breit S, Kupferberg A, Rogler G, Hasler G",
+      "year": 2018,
+      "journal": "Frontiers in Psychiatry",
+      "doi": "10.3389/fpsyt.2018.00044",
+      "pmid": "29593576",
+      "url": "https://doi.org/10.3389/fpsyt.2018.00044"
+    },
+    {
       "title": "Heart Rate Variability and Cardiac Vagal Tone in Psychophysiological Research – Recommendations for Experiment Planning, Data Analysis, and Data Reporting",
-      "authors": "Laborde S et al.",
+      "authors": "Laborde S, Mosley E, Thayer JF",
       "year": 2017,
       "journal": "Frontiers in Psychology",
       "doi": "10.3389/fpsyg.2017.00213",
+      "pmid": "28265249",
       "url": "https://doi.org/10.3389/fpsyg.2017.00213"
-    },
-    {
-      "title": "The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system",
-      "authors": "Porges SW",
-      "year": 2009,
-      "journal": "Cleveland Clinic Journal of Medicine",
-      "doi": "10.3949/ccjm.76.s2.17",
-      "url": "https://doi.org/10.3949/ccjm.76.s2.17"
     },
     {
       "title": "Breath of Life: The Respiratory Vagal Stimulation Model of Contemplative Activity",
@@ -2129,18 +2131,26 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "year": 2018,
       "journal": "Frontiers in Human Neuroscience",
       "doi": "10.3389/fnhum.2018.00397",
+      "pmid": "30356789",
       "url": "https://doi.org/10.3389/fnhum.2018.00397"
-    }
-  ],
-  "vagus-nerve-master-key": [
+    },
     {
-      "title": "Vagus Nerve as Modulator of the Brain-Gut Axis in Psychiatric and Inflammatory Disorders.",
-      "authors": "Breit et al.",
-      "year": 2018,
-      "journal": "Front Psychiatry",
-      "doi": "10.3389/fpsyt.2018.00044",
-      "pmid": "29593576",
-      "url": "https://doi.org/10.3389/fpsyt.2018.00044"
+      "title": "The polyvagal theory: New insights into adaptive reactions of the autonomic nervous system",
+      "authors": "Porges SW",
+      "year": 2009,
+      "journal": "Cleveland Clinic Journal of Medicine",
+      "doi": "10.3949/ccjm.76.s2.17",
+      "pmid": "19376991",
+      "url": "https://doi.org/10.3949/ccjm.76.s2.17"
+    },
+    {
+      "title": "Fundamental challenges and likely refutations of the five basic premises of the polyvagal theory",
+      "authors": "Grossman P",
+      "year": 2023,
+      "journal": "Biological Psychology",
+      "doi": "10.1016/j.biopsycho.2023.108589",
+      "pmid": "37230290",
+      "url": "https://doi.org/10.1016/j.biopsycho.2023.108589"
     }
   ],
   "ventral-tegmental-core-motivational-salience": [

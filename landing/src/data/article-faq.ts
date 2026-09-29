@@ -660,16 +660,16 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         'Because thought sits on the application layer, and emotion is set by the firmware layer below it. When hormones and neurotransmitters have already biased the system toward threat, conscious reframing cannot override the chemistry — it can only narrate it. Durable change works bottom-up: fix the molecular inputs first, and the thoughts follow.',
     },
   ],
-  'vagus-nerve-master-key': [
+  'vagus-nerve-exercises': [
     {
-      question: 'How can I stimulate my Vagus Nerve?',
+      question: 'How can I stimulate my vagus nerve?',
       answer:
-        'You can stimulate the Vagus Nerve through deep diaphragmatic breathing, cold exposure (face dunking), gargling, and singing. These activities trigger the parasympathetic nervous system and improve heart rate variability (HRV).',
+        'The best-supported way is slow breathing with a longer exhale than inhale, for example in for 4 and out for 6, for a few minutes. Humming or gargling and cold water on the face also activate vagal pathways. Practised most days, slow breathing tends to raise resting HRV over weeks.',
     },
     {
-      question: 'What are the signs of low vagal tone?',
+      question: 'How is vagal tone measured?',
       answer:
-        'Common signs include chronic stress, difficulty relaxing, digestive issues, high resting heart rate, and poor emotional regulation.',
+        'Indirectly, through heart-rate variability: RMSSD, high-frequency HRV and respiratory sinus arrhythmia. These are proxies, not a gold standard, because breathing rate, posture, caffeine, alcohol and illness also change them. A morning reading taken the same way each day and watched as a trend is the most useful approach.',
     },
   ],
   'dopamine-architecture-mastering-desire': [

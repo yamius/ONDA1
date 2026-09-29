@@ -36,4 +36,5 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('articles', 'metabolic-flexibility-dual-fuel-system', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'dopamine-architecture-mastering-desire', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'nightly-flush-glymphatic-neural-cache', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'vagus-nerve-exercises', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

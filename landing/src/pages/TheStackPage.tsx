@@ -42,14 +42,14 @@ const STACK_COMPONENTS: Component[] = [
   {
     name: 'NERVOUS_SYSTEM',
     protocols: [
-      { id: 'breathwork-resonant-frequency', name: 'RESONANT_FREQUENCY', params: '(5.5-5.5)' },
+      { id: 'vagus-exhale', name: 'LONG_EXHALE_BRAKE', params: '(4-6)' },
+      { id: 'vagus-hum', name: 'HUM_RESET', params: '(60s)' },
       { id: 'breathwork-box-breathing', name: 'BOX_BREATHING', params: '(4-4-4-4)' },
       { id: 'breathwork-physiological-sigh', name: 'PHYSIOLOGICAL_SIGH', params: '(INSTANT_REBOOT)' },
       { id: 'breathwork-nasal-only', name: 'NITRIC_OXIDE_BOOST', params: '(NASAL_ONLY)' },
-      { id: 'vagus-ocular-vagal', name: 'OCULAR_VAGAL_RECENTERING', params: '' },
       { id: 'hrv-hrv-baseline', name: 'MORNING_BASELINE_SCAN', params: '(HRV)' },
       { id: 'hrv-biofeedback-resync', name: 'BIOFEEDBACK_RESYNC', params: '(5.5s_BREATH)' },
-      { id: 'vagus-cold-spike', name: 'COLD_EXPOSURE_SPIKE', params: '(30s_VAGUS)' },
+      { id: 'vagus-cold', name: 'COLD_FACE_RESET', params: '(30s_VAGUS)' },
       { id: 'hrv-cold-spike', name: 'COLD_EXPOSURE_SPIKE', params: '(30s_HRV)' },
       { id: 'cpg-cross-lateral', name: 'CROSS_LATERAL_RESET', params: '(5min_BEAR_CRAWL)' },
       { id: 'cpg-cadence-hack', name: 'RHYTHMIC_ENTRAINMENT', params: '(120-140_BPM)' },

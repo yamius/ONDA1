@@ -58,7 +58,7 @@ Choose Nurosym if you are running a structured tVNS self-experiment, want disclo
 
 The biology behind what these devices target — and the protocols that compound with the hardware.
 
-- [Vagus nerve: the master key](/articles/vagus-nerve-master-key) — why the vagus nerve sits upstream of HRV, sleep, mood and inflammation
+- [Vagus nerve exercises](/articles/vagus-nerve-exercises) — why the vagus nerve sits upstream of HRV, sleep, mood and inflammation
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — the regulatory and mechanistic landscape behind non-invasive VNS
 - [ACC and coherence monitoring](/articles/anterior-cingulate-core-coherence-monitoring) — how vagal tone shapes attention and emotional regulation upstream
 `,

@@ -2,7 +2,7 @@
  * Featured articles and categories for Articles page.
  */
 export const FEATURED_ARTICLE_SLUGS = [
-  'vagus-nerve-master-key',
+  'vagus-nerve-exercises',
   'neuroplasticity-flow-overclocking',
   'neural-entrainment-meditation-2',
   'electric-medicine-neuromodulation',

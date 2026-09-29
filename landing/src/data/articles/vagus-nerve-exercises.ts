@@ -37,11 +37,25 @@ const article: Article = {
 
 ---
 
+## What is the vagus nerve, in plain terms?
+
+The vagus nerve is the main nerve of the [parasympathetic](/glossary/parasympathetic-nervous-system) system, running from the brainstem to the heart, lungs and gut. Most of its traffic goes *up*, not down: roughly 80–90% of its fibres are sensory (afferent), carrying signals about the state of your organs to the brain, while the remaining 10–20% carry commands back to the body (Breit 2018). On the "down" side, vagal fibres release acetylcholine at the heart, which slows the heartbeat — that is the brake the exercises below lean on.
+
+This two-way wiring is why breathing works as a lever: you can't will your heart to slow, but you can change your breathing, and the vagus relays the result in both directions.
+
+---
+
 ## How do you know vagus nerve exercises are working?
 
-You know they're working when your HRV rises: vagal activity shows up in your [heart-rate variability](/glossary/heart-rate-variability) — higher vagal tone, higher HRV, and a faster return to calm after stress (Laborde 2017). That's the honest throughline: the techniques below all converge on the same mechanism (more vagal output, less [sympathetic](/glossary/sympathetic-nervous-system) drive), and the "vagal states" framing comes from polyvagal theory (Porges 2009), whose broad map is useful even if some specifics are debated.
+You know they're working when your HRV rises: vagal activity shows up in your [heart-rate variability](/glossary/heart-rate-variability) — higher vagal tone, higher HRV, and a faster return to calm after stress (Laborde 2017). The techniques below all converge on the same mechanism: more vagal output, less [sympathetic](/glossary/sympathetic-nervous-system) drive.
 
 Not sure which state you're actually in? The [Nervous System State quiz](/tools/nervous-system) reads fight-or-flight vs shutdown vs regulated and gives you the matching protocol.
+
+### How is vagal tone measured?
+
+Vagal tone can't be measured directly in everyday life; it is estimated from heart-rate variability. The usual indices are RMSSD (beat-to-beat variation), high-frequency HRV, and respiratory sinus arrhythmia — the heart speeding up slightly on the inhale and slowing on the exhale. These are indirect proxies, not a gold standard: breathing rate and depth, posture, time of day, caffeine, alcohol and illness all move them, which is why researchers recommend controlling or at least reporting breathing when HRV is used as a vagal marker (Laborde 2017).
+
+In practice, that means comparing like with like: a morning reading taken the same way each day, watched as a trend over weeks, tells you more than any single number. ONDA reads HRV from Apple Watch via Apple Health for exactly this kind of baseline.
 
 ---
 
@@ -56,11 +70,17 @@ Slow, long-exhale breathing is the strongest, best-evidenced vagus nerve exercis
 
 ### What's mostly hype
 
-"Vagus nerve resets" promising to cure anxiety, autoimmune disease or inflammation in one move outrun the evidence. Supplements and most gadgets marketed for the vagus are weakly supported. The boring basics — breath, sleep, movement, connection — do the real work.
+"Vagus nerve resets" promising to cure anxiety, autoimmune disease or inflammation in one move outrun the evidence. Supplements and most gadgets marketed for the vagus are weakly supported, and popular tricks like holding your eyes to one side "until you sigh" have no published evidence behind them. The boring basics — breath, sleep, movement, connection — do the real work.
+
+### What about polyvagal theory?
+
+Much of the "vagal states" language online — safe and social, fight-or-flight, shutdown — comes from polyvagal theory (Porges 2009). It is popular in therapy because it gives people a simple map of how their body reacts to feeling safe or threatened. But several of its core anatomical and evolutionary claims, such as a separate "ventral vagal" system unique to mammals driving social engagement, are disputed by physiologists (Grossman 2023). Use the map as a way to notice your state, not as settled biology. The exercises here don't depend on it: slow breathing slows the heart through the vagus either way.
 
 ---
 
-## Section 3: Vagal Firmware Protocols
+## How do you do the three core exercises?
+
+Start with the long exhale, add a hum when you want a quick reset, and keep the cold-face trick for acute spikes.
 
 ### PROTOCOL 1: The Exhale Brake
 

@@ -30,9 +30,9 @@ const article: Article = {
     '[SYSTEM_STABILITY_CHECK]: Analyzing rMSSD intervals to measure autonomic adaptive capacity.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'High HRV starts with the Vagus Nerve. Access the Vagus Nerve Master Key to start your upgrade.',
-    link: '/articles/vagus-nerve-master-key',
-    linkText: 'Vagus Nerve Master Key',
+    text: 'High HRV starts with the Vagus Nerve. Start with simple vagus nerve exercises.',
+    link: '/articles/vagus-nerve-exercises',
+    linkText: 'Vagus Nerve Exercises',
   },
   content: `
 ## [ SYSTEM LATENCY DIAGNOSTICS ]

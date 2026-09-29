@@ -318,8 +318,6 @@ export interface BreadcrumbItem {
 
 /** SEO descriptions for articles (150–160 chars). Honest, keyword-forward — no overclaim register. */
 const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
-  'vagus-nerve-master-key':
-    'How the vagus nerve regulates your stress response and recovery — and what slow, paced breathing can actually influence.',
   'dopamine-architecture-mastering-desire':
     'Dopamine drives wanting and learning, not pleasure. What the science shows about motivation, why "reset your baseline" claims overreach, and what really helps.',
   'circadian-reset-mastering-light':

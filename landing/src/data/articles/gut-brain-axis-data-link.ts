@@ -29,9 +29,9 @@ const article: Article = {
     '[LINK_ESTABLISHED]: Real-time bi-directional telemetry between enteric and central nervous systems.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'A clean gut needs a calm mind. Optimize your signal with the Vagus Nerve Master Key.',
-    link: '/articles/vagus-nerve-master-key',
-    linkText: 'Vagus Nerve Master Key',
+    text: 'A clean gut needs a calm mind. Calm it with a few minutes of vagus nerve exercises.',
+    link: '/articles/vagus-nerve-exercises',
+    linkText: 'Vagus Nerve Exercises',
   },
   content: `
 ## [ PERIPHERAL DATA LINK ]

@@ -63,7 +63,6 @@ const localizedPartRoutes = partRouteVariants(partSlugs)
 const RU_ARTICLE_PILOT_BASE: readonly string[] = [
   // 11 featured pillar articles (same set as ES — overlapping pilots is
   // intentional so we can compare ES vs RU SERP performance per slug).
-  'vagus-nerve-master-key',
   'neuroplasticity-flow-overclocking',
   'neural-entrainment-meditation-2',
   'electric-medicine-neuromodulation',
@@ -90,7 +89,6 @@ const RU_ARTICLE_PILOT_BASE: readonly string[] = [
  */
 const ES_ARTICLE_PILOT_BASE: readonly string[] = [
   // 11 featured pillar articles (FEATURED_ARTICLE_SLUGS).
-  'vagus-nerve-master-key',
   'neuroplasticity-flow-overclocking',
   'neural-entrainment-meditation-2',
   'electric-medicine-neuromodulation',

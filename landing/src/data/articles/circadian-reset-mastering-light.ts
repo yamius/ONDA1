@@ -31,7 +31,7 @@ const article: Article = {
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Light sets the clock; breath sets the tone. Learn how to calibrate your recovery with the Vagus Nerve Protocol.',
-    link: '/articles/vagus-nerve-master-key',
+    link: '/articles/vagus-nerve-exercises',
     linkText: 'Vagus Nerve Protocol',
   },
   content: `

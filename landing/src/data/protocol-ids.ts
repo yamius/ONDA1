@@ -16,7 +16,7 @@ export const ARTICLE_PROTOCOL_ORDER: Record<string, string[]> = {
 
 const ARTICLE_SHORT: Record<string, string> = {
   'cacao-stem-cells': 'cacao',
-  'vagus-nerve-master-key': 'vagus',
+  'vagus-nerve-exercises': 'vagus',
   'breathwork-command-line-interface': 'breathwork',
   'hrv-training-nervous-system-latency': 'hrv',
   'dopamine-architecture-mastering-desire': 'dopamine',
@@ -57,10 +57,11 @@ const ARTICLE_SHORT: Record<string, string> = {
 
 /** Protocol base id -> article slug (for building unique IDs) */
 export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
-  // vagus-nerve-master-key
-  'breathwork-resonant-frequency': 'vagus-nerve-master-key',
-  'vagus-cold-spike': 'vagus-nerve-master-key',
-  'vagus-ocular-vagal': 'vagus-nerve-master-key',
+  // vagus-nerve-exercises
+  'vagus-exhale': 'vagus-nerve-exercises',
+  'vagus-hum': 'vagus-nerve-exercises',
+  'vagus-cold': 'vagus-nerve-exercises',
+  'vagus-habit': 'vagus-nerve-exercises',
   // breathwork-command-line-interface
   'breathwork-box-breathing': 'breathwork-command-line-interface',
   'breathwork-physiological-sigh': 'breathwork-command-line-interface',

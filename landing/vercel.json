@@ -27,6 +27,8 @@
     { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/articles/dopamine-stacking-preventing-circuit-overload", "destination": "/:lang/articles/dopamine-architecture-mastering-desire", "permanent": true },
     { "source": "/articles/glymphatic-flush-clearing-neural-cache", "destination": "/articles/nightly-flush-glymphatic-neural-cache", "permanent": true },
     { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/articles/glymphatic-flush-clearing-neural-cache", "destination": "/:lang/articles/nightly-flush-glymphatic-neural-cache", "permanent": true },
+    { "source": "/articles/vagus-nerve-master-key", "destination": "/articles/vagus-nerve-exercises", "permanent": true },
+    { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/articles/vagus-nerve-master-key", "destination": "/:lang/articles/vagus-nerve-exercises", "permanent": true },
     { "source": "/topics", "destination": "/articles", "permanent": true },
     { "source": "/topics/hrv", "destination": "/articles/topic/hrv-heart-rate", "permanent": true },
     { "source": "/topics/breathwork", "destination": "/articles/topic/breathing", "permanent": true },

@@ -466,7 +466,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "neural-bridge-alpha-flow-gateway": {
     "published": "2026-03-31T16:32:31Z",
@@ -478,7 +478,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "neural-hydraulics-csf-flow": {
     "published": "2026-03-30T20:30:05Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "neural-optimizer-estrogen": {
     "published": "2026-03-10T14:37:54Z",
@@ -498,7 +498,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nightly-flush-glymphatic-neural-cache": {
     "published": "2026-03-30T20:04:48Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "normal-hrv-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
@@ -582,7 +582,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "protocol-circadian-hard-reset": {
     "published": "2026-03-24T09:33:24Z",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "quiet-mode-alpha-cortisol-buffer": {
     "published": "2026-03-31T22:01:43Z",
@@ -671,10 +671,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
     "modified": "2026-09-29T09:45:29+02:00"
-  },
-  "vagus-nerve-master-key": {
-    "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
   },
   "vascular-tensegrity-microvascular-mechanics": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -1622,7 +1618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-29T23:05:30+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1630,7 +1626,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-29T23:05:30+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1638,7 +1634,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-29T23:05:30+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
@@ -1734,7 +1730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-09-29T22:24:20+02:00"
+    "modified": "2026-09-29T23:22:17+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

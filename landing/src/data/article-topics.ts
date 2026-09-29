@@ -87,7 +87,7 @@ export const ARTICLE_TOPIC_HUBS: ArticleTopicHub[] = [
     tile: 'How stress lives in your body — cortisol, the vagus nerve, and how to switch off.',
     intro:
       'Chronic stress isn\'t only in your head — it\'s a nervous system stuck in "on." These guides explain how the vagus nerve, cortisol and the stress response work, why some people can\'t switch off, and what reliably brings the body back to calm: breathing, cold, nature, and a healthier relationship with your own signals.',
-    startHere: 'vagus-nerve-master-key',
+    startHere: 'vagus-nerve-exercises',
     neighbors: ['breathing', 'sleep-body-clock', 'hrv-heart-rate'],
   },
   {
@@ -315,7 +315,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "train-hrv-iphone-camera-no-wearable": "hrv-heart-rate",
   "trataka-candle-gazing-focus": "brain-focus-aging",
   "vagus-nerve-exercises": "stress-vagus",
-  "vagus-nerve-master-key": "stress-vagus",
   "vascular-tensegrity-microvascular-mechanics": "heart-fitness-metabolism",
   "ventral-tegmental-core-motivational-salience": "brain-focus-aging",
   "vipassana-meditation-attention-brain": "meditation",
