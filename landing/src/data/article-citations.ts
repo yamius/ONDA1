@@ -568,6 +568,15 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "dopamine-architecture-mastering-desire": [
     {
+      "title": "Human physiological responses to immersion into water of different temperatures",
+      "authors": "Šrámek P et al.",
+      "year": 2000,
+      "journal": "European Journal of Applied Physiology",
+      "doi": "10.1007/s004210050065",
+      "pmid": "10751106",
+      "url": "https://doi.org/10.1007/s004210050065"
+    },
+    {
       "title": "A neural substrate of prediction and reward",
       "authors": "Schultz W et al.",
       "year": 1997,
