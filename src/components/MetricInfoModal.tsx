@@ -1,6 +1,20 @@
 import { X } from 'lucide-react';
 import { Capacitor } from '@capacitor/core';
+import { useTranslation } from 'react-i18next';
 import { METRIC_DETAILS, type MetricDetail } from '../data/bioMetrics';
+import { METRIC_DETAILS_ES } from '../data/bioMetrics.es';
+import { METRIC_DETAILS_RU } from '../data/bioMetrics.ru';
+import { METRIC_DETAILS_UK } from '../data/bioMetrics.uk';
+import { METRIC_DETAILS_ZH } from '../data/bioMetrics.zh';
+
+// Metric descriptions per UI language; English is the fallback.
+const DETAILS_BY_LANG: Record<string, Record<string, MetricDetail>> = {
+  en: METRIC_DETAILS,
+  es: METRIC_DETAILS_ES,
+  ru: METRIC_DETAILS_RU,
+  uk: METRIC_DETAILS_UK,
+  zh: METRIC_DETAILS_ZH,
+};
 
 interface MetricInfoModalProps {
   metricKey: string | null;
@@ -17,17 +31,20 @@ interface MetricInfoModalProps {
  * same close button, same scroll behaviour — minus the extra ornamentation
  * (no arrows, no per-card decorative chrome) per the request.
  *
- * The bio copy is currently English-only because the marketing page itself
- * is English-only. When the bio page gets localized, swap METRIC_DETAILS for
- * an i18n-keyed equivalent here.
+ * Translations live next to it in src/data/bioMetrics.<lang>.ts (es, ru, uk,
+ * zh); the popup follows the UI language and falls back to English. Keep the
+ * translations in sync when bioMetrics.ts changes.
  */
 export const MetricInfoModal: React.FC<MetricInfoModalProps> = ({
   metricKey,
   onClose,
 }) => {
+  const { i18n } = useTranslation();
   if (!metricKey) return null;
 
-  const detail: MetricDetail | undefined = METRIC_DETAILS[metricKey];
+  const lang = (i18n.resolvedLanguage || i18n.language || 'en').split('-')[0];
+  const detail: MetricDetail | undefined =
+    (DETAILS_BY_LANG[lang] ?? METRIC_DETAILS)[metricKey] ?? METRIC_DETAILS[metricKey];
   if (!detail) return null;
 
   const isAndroid = Capacitor.getPlatform() === 'android';
