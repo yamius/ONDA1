@@ -17,7 +17,7 @@
   "term": {
     "relatedDeepDives": "RELATED DEEP DIVES",
     "relatedTerms": "RELATED TERMS",
-    "upgradeKnowledge": "Upgrade your knowledge: Learn how to optimize {{term}} in our full guide.",
+    "upgradeKnowledge": "Read the full guide related to {{term}}.",
     "backToGlossary": "← Back to Glossary",
     "exploreMore": "EXPLORE MORE",
     "links": {

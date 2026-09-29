@@ -784,6 +784,9 @@ for (const route of routes) {
           ? (glossaryInfo.kind === 'index' ? '/glossary' : `/glossary/${glossaryInfo.slug}`)
           : route
     const meta = getMetaForRoute(metaRoute)
+    // The glossary FAQPage is built from the EN entry text — never emit it on
+    // a localized glossary page.
+    if (isGlossaryLocalized) delete meta.faq
     out = injectMetaIntoHtml(out, meta)
 
     if (isLocalized) {

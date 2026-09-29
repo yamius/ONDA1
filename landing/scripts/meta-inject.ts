@@ -6,6 +6,7 @@ import { IMAGE_DIMENSIONS } from '../src/data/image-manifest.generated'
 import { getTermBySlug, glossaryTerms } from '../src/data/glossary'
 import { getTopicBySlug, TOPICS } from '../src/data/topics'
 import { GLOSSARY_SEO } from '../src/data/glossary-seo'
+import { glossaryLayer } from '../src/data/glossary-layer'
 import { levelsData } from '../src/data/levels'
 import { PART_SEO } from '../src/data/part-seo'
 import { parts } from '../src/pages/PartPage'
@@ -772,6 +773,29 @@ function buildQuotationJsonLd(text: string, articleUrl: string): string {
     creator: { '@id': AUTHOR_ID },
     isPartOf: { '@id': `${articleUrl}#article` },
   })
+}
+
+/** Q&A pairs for a glossary entry, taken from its own markdown: the definition
+ *  paragraph answers "What is X?", and each question-form H2 is answered by the
+ *  first paragraph under it. Markdown is flattened to plain text. */
+function glossaryFaq(title: string, content: string): { question: string; answer: string }[] {
+  const plain = (s: string) =>
+    s.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/[*_`]/g, '').replace(/\s+/g, ' ').trim()
+  const isPara = (b: string) => b && !/^(#|[-*•>|]|\d+\.)/.test(b.trim())
+  const blocks = content.split(/\r?\n\s*\r?\n/).map((b) => b.trim()).filter(Boolean)
+  const out: { question: string; answer: string }[] = []
+  const firstPara = blocks.find((b) => isPara(b))
+  const name = /^[A-Z][a-z]+(?: [a-z]+)*$/.test(title) ? title.toLowerCase() : title
+  if (firstPara && !blocks.some((b) => /^#{2,3}\s+What (is|are)\b/i.test(b))) {
+    out.push({ question: `What is ${name}?`, answer: plain(firstPara) })
+  }
+  blocks.forEach((b, i) => {
+    const h = b.match(/^#{2,3}\s+(.+\?)\s*$/)
+    if (!h) return
+    const next = blocks.slice(i + 1).find((x) => isPara(x) || /^#/.test(x))
+    if (next && isPara(next)) out.push({ question: plain(h[1]), answer: plain(next) })
+  })
+  return out.filter((q) => q.answer.split(' ').length >= 8)
 }
 
 function buildDefinedTermJsonLd(
@@ -3168,6 +3192,13 @@ export function getMetaForRoute(route: string): RouteMeta {
         url,
         breadcrumbs,
         definedTerm: { name: term.title, description, url },
+        // FAQPage from the entry's own text (science terms only — ONDA
+        // metaphors must not be lifted as facts): "What is X?" → the
+        // definition paragraph, plus every question-form H2 → its first paragraph.
+        ...(glossaryLayer(slug) === 'science' ? (() => {
+          const faq = glossaryFaq(term.title, term.content)
+          return faq.length >= 2 ? { faq: { mainEntity: faq, url } } : {}
+        })() : {}),
       }
     }
   }

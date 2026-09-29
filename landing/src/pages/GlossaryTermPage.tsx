@@ -43,6 +43,10 @@ export function GlossaryTermPage() {
   const tTitle = term ? tField(term.slug, 'title', term.title) : ''
   const tShortDescription = term ? tField(term.slug, 'shortDescription', term.shortDescription) : ''
   const tContent = term ? tField(term.slug, 'content', term.content) : ''
+  const whatIsHeading =
+    term && lang === 'en' && !/^#{2,3}\s+What (is|are)/im.test(tContent)
+      ? `What is ${/^[A-Z][a-z]+(?: [a-z]+)*$/.test(tTitle) ? tTitle.toLowerCase() : tTitle}?`
+      : null
 
   useEffect(() => {
     if (!term) return
@@ -219,6 +223,11 @@ export function GlossaryTermPage() {
 
       {/* Markdown content */}
       <article className="prose-onda">
+        {/* EN: a question heading right above the definition paragraph (GEO:
+            answer engines lift question-headed, answer-first sections). */}
+        {whatIsHeading && (
+          <h2 className="mb-4 text-2xl font-bold tracking-tight scroll-mt-24">{whatIsHeading}</h2>
+        )}
         <Markdown
           rehypePlugins={[rehypeSlug]}
           components={{
