@@ -37,15 +37,17 @@ const article: Article = {
 
 ---
 
-## Section 1: How to know it's working
+## How do you know vagus nerve exercises are working?
 
-Vagal activity shows up in your [heart-rate variability](/glossary/heart-rate-variability) — higher vagal tone, higher HRV, and a faster return to calm after stress (Laborde 2017). That's the honest throughline: the techniques below all converge on the same mechanism (more vagal output, less [sympathetic](/glossary/sympathetic-nervous-system) drive), and the "vagal states" framing comes from polyvagal theory (Porges 2009), whose broad map is useful even if some specifics are debated.
+You know they're working when your HRV rises: vagal activity shows up in your [heart-rate variability](/glossary/heart-rate-variability) — higher vagal tone, higher HRV, and a faster return to calm after stress (Laborde 2017). That's the honest throughline: the techniques below all converge on the same mechanism (more vagal output, less [sympathetic](/glossary/sympathetic-nervous-system) drive), and the "vagal states" framing comes from polyvagal theory (Porges 2009), whose broad map is useful even if some specifics are debated.
 
 Not sure which state you're actually in? The [Nervous System State quiz](/tools/nervous-system) reads fight-or-flight vs shutdown vs regulated and gives you the matching protocol.
 
 ---
 
-## Section 2: What actually works (ranked)
+## Which vagus nerve exercises actually work?
+
+Slow, long-exhale breathing is the strongest, best-evidenced vagus nerve exercise; humming, cold on the face and slow social contact follow.
 
 - **Slow, long-exhale breathing** — the strongest, best-evidenced lever. Making the exhale longer than the inhale stimulates the vagus and shifts state fast (Gerritsen & Band 2018). This is the engine behind every breathing app, and the [Breathing Pacer](/tools/breathing) automates it.
 - **Humming, chanting, gargling** — the vagus innervates the larynx, so vocal-cord vibration gives it gentle stimulation. Low-cost, surprisingly effective for a quick reset.

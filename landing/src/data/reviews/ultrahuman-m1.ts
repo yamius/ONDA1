@@ -44,11 +44,11 @@ const ultrahumanM1: ToolReview = {
 
 Ultrahuman M1 is the only CGM programme in this list that ships as part of a broader biomarker platform rather than as a standalone glucose tool. The Ultrahuman app is the same app that runs the Ultrahuman Ring Air — so glucose curves sit on the same timeline as HRV, sleep stages, movement and recovery scores. That cross-signal view is genuinely useful: post-meal glucose spikes correlated with next-morning HRV, or overnight glucose stability versus deep-sleep duration, are insights a CGM-only programme cannot produce.
 
-## Where it falls short
+## What are the downsides of Ultrahuman M1?
 
 Almost all the differentiation depends on also owning the Ring Air. As a standalone CGM, Ultrahuman M1 is a Libre 3 wrapper with a competent app — less accurate than Dexcom G7, more expensive per month than Stelo. Reports of Ring Air battery reliability also affect the wider ecosystem play. There is no human coaching tier at any price.
 
-## Who it is for
+## Who should buy Ultrahuman M1?
 
 Choose Ultrahuman M1 if you already own (or plan to own) the Ultrahuman Ring Air and want glucose data composing with HRV, sleep and recovery in one place. If CGM is the only thing you want and you are not buying into the ring ecosystem, Stelo or Levels is the better fit.
 

@@ -45,15 +45,15 @@ The bigger and richer the meal, and the closer to sleep, the longer the overlap.
 
 ---
 
-## Section 2: What the numbers actually show — honestly
+## How much does eating late raise your heart rate?
 
-Here is where most "eat early" content oversells. The effect is **real but modest, and it varies by person.** Tracker-scale data has put a late meal (within about three hours of bed) at roughly a **3% higher heart rate and a 7% lower HRV** overnight. But the best-controlled studies are gentler: some crossover trials feeding people late find sleeping heart rate up by *under a beat per minute*, and at least one found overnight HRV essentially unchanged while morning cortisol rose instead.
+A late meal (within about three hours of bed) raises overnight heart rate by roughly 3% and lowers HRV by about 7% in tracker-scale data — and here is where most "eat early" content oversells. The effect is **real but modest, and it varies by person.** Tracker-scale data has put a late meal (within about three hours of bed) at roughly a **3% higher heart rate and a 7% lower HRV** overnight. But the best-controlled studies are gentler: some crossover trials feeding people late find sleeping heart rate up by *under a beat per minute*, and at least one found overnight HRV essentially unchanged while morning cortisol rose instead.
 
 So the honest headline isn't "late eating wrecks your sleep." It's: **there's a small, genuine autonomic cost, its size depends on you, the meal, and the timing — and you can only know your version by measuring it.** That personal variability is a feature of the problem, not a reason to ignore it.
 
 ---
 
-## Section 3: Why "3 hours before bed" is a starting point, not a law
+## How long before bed should you stop eating?
 
 The common rule — finish eating about three hours before bed, four if you're sensitive — is a reasonable default precisely *because* responses differ. A fast metabolizer with a modest dinner may see nothing. Someone eating a large, high-fat meal at 10 p.m. may see a clear bump in overnight heart rate and a flatter HRV. The rule points you at the right neighbourhood; your own data tells you the exact address.
 

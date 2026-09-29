@@ -44,11 +44,11 @@ const almostHeavenSalem: ToolReview = {
 
 Almost Heaven Salem is the traditional Finnish-style outdoor barrel sauna. Not IR — convection heat with optional löyly steam, 80–95°C operating temperature, the format the Finnish cardiovascular and cognitive cohort studies were actually run on. For users who want traditional sauna over IR, this is the right shape.
 
-## Where it falls short
+## What are the downsides of the Almost Heaven Salem?
 
-It is not IR. Different mechanism, different effect profile, different evidence base. Outdoor-only installation. Wood-burning configuration requires fire safety planning. Footprint is large.
+The main downside is that it is not IR. Different mechanism, different effect profile, different evidence base. Outdoor-only installation. Wood-burning configuration requires fire safety planning. Footprint is large.
 
-## Who it is for
+## Who should buy the Almost Heaven Salem?
 
 Choose Almost Heaven Salem if you want traditional Finnish sauna experience with premium cedar build, outdoor installation, and the deepest sauna-research literature behind your mechanism. For IR cabin sauna, Sunlighten or Clearlight.
 

@@ -44,11 +44,11 @@ const resonaVibe: ToolReview = {
 
 Resona Health VIBE is the wearable PEMF entry tier — $299 device with 130+ documented protocols, app-controlled scheduling, and pocket-sized portability. Best low-commitment way to explore PEMF without committing $2,000+ to a mat.
 
-## Where it falls short
+## What are the downsides of Resona Health VIBE?
 
-Field intensity and whole-body coverage. Wearable form factor means lower peak intensity and targeted-only treatment — you don't get the passive lie-on-mat whole-body session. New player without multi-decade brand pedigree.
+The main downsides of the Resona Health VIBE are lower field intensity and no whole-body coverage. Wearable form factor means lower peak intensity and targeted-only treatment — you don't get the passive lie-on-mat whole-body session. New player without multi-decade brand pedigree.
 
-## Who it is for
+## Who should buy Resona Health VIBE?
 
 Choose Resona Health VIBE if you're PEMF-curious and want a low-commitment entry, or if you want a portable wearable for targeted protocols. For whole-body mat sessions, OMI or Healthy Wave. For research-backed signal, Bemer. For sleep-specific PEMF, EarthPulse.
 

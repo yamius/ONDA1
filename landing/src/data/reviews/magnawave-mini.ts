@@ -44,11 +44,11 @@ const magnawaveMini: ToolReview = {
 
 MagnaWave Mini is the portable clinical coil PEMF reference — multi-decade brand pedigree in equine and athletic recovery, distilled into a travel-friendly build at mid-tier pricing. Bridges the gap between consumer mats and full Pulse Centers clinic systems.
 
-## Where it falls short
+## What are the downsides of the MagnaWave Mini?
 
-Coil-only form factor and consumer UX. No whole-body mat coverage; you actively position applicators per session. Brand recognition skews clinical/equine rather than consumer wellness.
+Its main downsides are the coil-only form factor and consumer UX. No whole-body mat coverage; you actively position applicators per session. Brand recognition skews clinical/equine rather than consumer wellness.
 
-## Who it is for
+## Who should buy the MagnaWave Mini?
 
 Choose MagnaWave Mini for portable high-intensity coil PEMF for athletic recovery and rehab at sub-Pulse-Centers pricing. For full clinical coil system, Pulse Centers Pulse XL Pro. For whole-body consumer mat, Healthy Wave or Bemer. For mid-tier coil + mat dual, Curatron 3D.
 

@@ -44,11 +44,11 @@ const kineonMovePlus: ToolReview = {
 
 Kineon Move+ is the joint-pain specialist of the red-light category. The wrap holds a stack of medical-grade 808 nm laser diodes alongside 650/850 nm LEDs around a joint, delivering meaningfully higher dose at depth than any LED-only panel can. FDA Class II registration for joint photobiomodulation gives it a regulatory tier the panels do not have for that indication.
 
-## Where it falls short
+## What are the downsides of the Kineon Move+?
 
 It is not a panel and cannot replace one. The wrap covers a single joint per session; full-body or skin photobiomodulation is the wrong job. Premium pricing for a narrow indication means the value calculus only works when joint pain is the specific use case.
 
-## Who it is for
+## Who should buy the Kineon Move+?
 
 Choose Kineon Move+ if you have a specific joint-pain indication (knee, elbow, shoulder) and want laser-grade dose with FDA backing. For general red-light therapy, full-body photobiomodulation, or skin indications — choose a panel (Joovv, Mito Red, PlatinumLED). Not substitutes; different jobs.
 
@@ -66,7 +66,8 @@ The photobiomodulation mechanism behind why red light therapy works.
     { label: 'Kineon Move+ — official product page', url: 'https://kineon.io/move-plus' },
     { label: 'Laser photobiomodulation for knee osteoarthritis — systematic review', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8421064/' },
   ],
-  relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'hooga-hg500'],  faq: [
+  relatedSlugs: ['joovv-solo-3', 'mito-red-mitopro-1500', 'hooga-hg500'],
+  faq: [
     { q: "What does the Kineon Move+ do?", a: "The Kineon Move+ is a wrap-around device delivering targeted joint photobiomodulation using medical-grade 808 nm laser diodes plus 650/850 nm LEDs. The 14W laser output reaches deeper tissue than LED-only panels and is FDA Class II registered for joint pain. ONDA scores it 7.3/10 overall." },
     { q: "How much does the Kineon Move+ cost?", a: "The Kineon Move+ costs $799 one-time, battery-powered and USB-C charged. That is premium pricing reasonable for laser-delivery hardware, but expensive if treated as a full-body panel substitute. ONDA scores it 7.5/10 on value." },
     { q: "Who is the Kineon Move+ best for?", a: "The Kineon Move+ is best for users with specific joint pain (knee, elbow, shoulder) wanting laser-grade dose delivery with FDA backing. It is not a panel substitute; for full-body or skin photobiomodulation, choose a panel like Joovv, Mito Red or PlatinumLED instead." },

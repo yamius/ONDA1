@@ -44,11 +44,11 @@ const iceBarrel500: ToolReview = {
 
 Ice Barrel 500 is the cleanest non-chiller cold-plunge form factor on the market. Upright barrel, food-grade plastic, insulated walls, vertical footprint that fits where horizontal tubs cannot. For users who want to test daily cold plunge without the $5K commitment to chiller hardware, this is the right shape.
 
-## Where it falls short
+## What are the downsides of the Ice Barrel 500?
 
-You pay for ice every day. In cold climates this is negligible (use snow); in warm climates this is $5–15/day. Annualised it can rival the multi-year amortised cost of a chiller-built unit. Water changes are manual, no ozone, and the temperature hold time per fill is bounded.
+The main downside is that you pay for ice every day. In cold climates this is negligible (use snow); in warm climates this is $5–15/day. Annualised it can rival the multi-year amortised cost of a chiller-built unit. Water changes are manual, no ozone, and the temperature hold time per fill is bounded.
 
-## Who it is for
+## Who should buy the Ice Barrel 500?
 
 Choose Ice Barrel 500 if you want to test daily cold plunge before committing to chiller hardware — or if your climate is cold enough that ice cost is a non-issue. For warm climates with daily-use intent, run the chiller-built numbers (Plunge or Edge) before settling on barrel.
 

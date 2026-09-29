@@ -44,11 +44,11 @@ const inergizeColdTub: ToolReview = {
 
 Inergize takes the modular approach to cold plunge: buy the tub now, add a chiller later if daily-use practice solidifies. At $1,500 tub-only it splits the chiller-tier upfront cost across phases. For users who want better insulation than barrel or inflatable options but are not ready for $5K turnkey, this is the right shape.
 
-## Where it falls short
+## What are the downsides of the Inergize Cold Tub?
 
 The chiller (when added) is less capable than Plunge’s integrated 1 HP unit — slower recovery, weaker summer performance. Total cost with chiller approaches Edge Tub territory. Multi-year reliability data is thinner than the category leaders.
 
-## Who it is for
+## Who should buy the Inergize Cold Tub?
 
 Choose Inergize if the modular upgrade path is the value — testing daily practice with ice-fill before paying for the chiller. For all-in turnkey, Plunge or Edge. For pure budget testing, Cold Pod or Ice Barrel.
 

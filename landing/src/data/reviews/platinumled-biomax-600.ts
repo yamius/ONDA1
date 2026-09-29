@@ -44,11 +44,11 @@ const platinumledBiomax600: ToolReview = {
 
 PlatinumLED BIOMAX 600 is the panel that wins on spectrum breadth and EMF discipline at the price tier just below Joovv and MitoPRO. The six-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 nm) is wider than anything else in this list, and PlatinumLED is one of the few brands that publicly publishes its third-party EMF and flicker test reports rather than just claiming the numbers.
 
-## Where it falls short
+## What are the downsides of PlatinumLED BIOMAX 600?
 
-The BIOMAX 600 is mid-size — smaller than Joovv Solo 3.0 or MitoPRO 1500. For full-body coverage you stack two. The six-wavelength claim is partly marketing: the 480 nm blue is a small share of total output, and the smaller LED counts for the less-common bands mean their effective dose is modest. No FDA Class II registration like Joovv.
+The main downside of the BIOMAX 600 is size: it is mid-size — smaller than Joovv Solo 3.0 or MitoPRO 1500. For full-body coverage you stack two. The six-wavelength claim is partly marketing: the 480 nm blue is a small share of total output, and the smaller LED counts for the less-common bands mean their effective dose is modest. No FDA Class II registration like Joovv.
 
-## Who it is for
+## Who should buy PlatinumLED BIOMAX 600?
 
 Choose PlatinumLED BIOMAX 600 if you want broad-spectrum coverage and published EMF testing at $300 below Joovv, and the mid-size panel fits your use case. For larger half-body or modular full-body needs, Mito Red or Joovv. For pure budget, Hooga HG500.
 

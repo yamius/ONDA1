@@ -44,11 +44,11 @@ const chilipadCube: ToolReview = {
 
 ChiliPad Cube is the long-running mid-tier Sleepme pad — the device that brought water-cooled sleep climate to the mainstream consumer market. Similar cooling/heating range to the premium Dock Pro at meaningfully lower price.
 
-## Where it falls short
+## What are the downsides of ChiliPad Cube?
 
-Less app granularity. No climate scheduling. No HRV tracking. The Cube is a climate tool with a basic app, not a smart sleep system.
+ChiliPad Cube's main downside is less app granularity. No climate scheduling. No HRV tracking. The Cube is a climate tool with a basic app, not a smart sleep system.
 
-## Who it is for
+## Who should buy ChiliPad Cube?
 
 Choose ChiliPad Cube if you want water-cooled sleep climate at mid-tier price and you do not need scheduling or tracking. For premium with scheduling, Dock Pro. For air-flow at similar price, BedJet 3.
 

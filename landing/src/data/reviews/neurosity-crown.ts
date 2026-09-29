@@ -45,11 +45,11 @@ const neurosityCrown: ToolReview = {
 
 Neurosity Crown is the EEG headset for people who would rather write code than press buttons. Eight dry electrodes give it the broadest cortical coverage in the consumer space — beyond Muse’s four — and the SDK is genuinely first-class: raw-EEG streaming over JavaScript, Python and Swift, no subscription gate, no proprietary middle layer. The built-in focus-music streaming adapts to the live signal in real time, which is the user-facing demo of what the platform can do; the deeper value is everything you can build on top of it.
 
-## Where it falls short
+## What are the downsides of the Neurosity Crown?
 
-Almost everything Muse leads on. There is no deep guided-meditation library, no sleep tracking, no soft band for overnight wear, and the price is roughly three times Muse S Athena’s. For a user who just wants meditation feedback, the Crown is the wrong shape — overbuilt and underprogrammed for that use case.
+It falls short on almost everything Muse leads on. There is no deep guided-meditation library, no sleep tracking, no soft band for overnight wear, and the price is roughly three times Muse S Athena’s. For a user who just wants meditation feedback, the Crown is the wrong shape — overbuilt and underprogrammed for that use case.
 
-## Who it is for
+## Who should buy the Neurosity Crown?
 
 Choose Neurosity Crown if you are a developer, researcher or hands-on biohacker who wants raw EEG data on a programmable platform with no subscription tax. If you want a polished consumer experience for meditation and sleep, Muse S Athena. If you want a budget-friendly EEG entry, Muse 2 or NeuroSky.
 

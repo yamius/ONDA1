@@ -44,11 +44,11 @@ const breatheToRelax: ToolReview = {
 
 Breathe2Relax is the evidence-backed free breathwork reference — built by the US National Center for Telehealth & Technology with published validation studies on PTSD and combat-stress outcomes. Clinical credibility no consumer-built free app matches.
 
-## Where it falls short
+## What are the downsides of Breathe2Relax?
 
-UX and scope. Breathe2Relax is built for a specific clinical purpose (diaphragmatic breathing for stress and PTSD); the UI is dated, the library is narrow, and the app is no longer actively iterated. It's a free tool with a clinical thesis, not a 2026 content platform.
+Its main downsides are UX and scope. Breathe2Relax is built for a specific clinical purpose (diaphragmatic breathing for stress and PTSD); the UI is dated, the library is narrow, and the app is no longer actively iterated. It's a free tool with a clinical thesis, not a 2026 content platform.
 
-## Who it is for
+## Who should buy Breathe2Relax?
 
 Choose Breathe2Relax if you want evidence-backed free diaphragmatic breathing — especially in clinical, PTSD or stress-management contexts. For curated library, Breathwrk. For modern free UI, iBreathe. For Android customisation, Prana Breath.
 

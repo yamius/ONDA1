@@ -44,11 +44,11 @@ const levels: ToolReview = {
 
 Levels is the programme that turned CGM into a consumer category for non-diabetics, and the app is still the most thoughtful piece of software in the field. Meals do not just appear on a timeline — each is scored, ranked against your own history, decomposed into peak [glucose spike](/glossary/glucose-spikes), AUC and time-to-baseline, and rolled into daily and weekly time-in-range views that train [metabolic flexibility](/glossary/metabolic-flexibility). The underlying hardware is Dexcom G7, which independent MARD comparison puts at the top of the consumer-CGM accuracy ranking. The medical advisory board adds credibility most coaching-light programmes do not have.
 
-## Where it falls short
+## What are the downsides of Levels?
 
-Price is the deciding constraint. At $199 a month — $2,388 a year — Levels is roughly twice the cost of the OTC Dexcom Stelo programme that uses the same sensor, and three times the cost of an Abbott Lingo subscription. The trade is real depth of insight, but it is also out of reach for anyone who is curious rather than committed. There is no human coach by default; if a registered dietitian is part of what you need, Nutrisense is the right shape.
+Price is the biggest downside of Levels and the deciding constraint. At $199 a month — $2,388 a year — Levels is roughly twice the cost of the OTC Dexcom Stelo programme that uses the same sensor, and three times the cost of an Abbott Lingo subscription. The trade is real depth of insight, but it is also out of reach for anyone who is curious rather than committed. There is no human coach by default; if a registered dietitian is part of what you need, Nutrisense is the right shape.
 
-## Who it is for
+## Who should buy Levels?
 
 Choose Levels if you treat CGM as an instrument rather than an experiment — you want the deepest insight engine, you trust app intelligence over human coaching, and the cost is acceptable for what is essentially a year of food-by-food research on yourself. If price matters and you want most of the insight at a third of the cost, Dexcom Stelo is the right tool. If human coaching is the priority, Nutrisense.
 

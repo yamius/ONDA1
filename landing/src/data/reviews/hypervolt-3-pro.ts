@@ -44,11 +44,11 @@ const hypervolt3Pro: ToolReview = {
 
 The Hypervolt 3 Pro is a clean upgrade over the [Hypervolt 2 Pro](/reviews/hypervolt-2-pro). Stall force climbs to around 70 lbs, the new QuietGlide motor drops noise to ~51 dB, battery life reaches four hours, and the redesigned attachments are 33% larger for better coverage — and Hyperice launched it at $349, below the 2 Pro. A six-speed digital dial, a pressure sensor and full Hyperice app connectivity round it out.
 
-## Where it falls short
+## What are the downsides of the Hypervolt 3 Pro?
 
-Amplitude. The deep-stroke crown still belongs to [Theragun PRO Plus](/reviews/theragun-pro-plus) at 16 mm; the Hypervolt stays in the ~14 mm class, so for the deepest tissue reach Theragun remains the pick. The single-grip handle is also less versatile than Theragun’s multi-grip triangle, and the app is refined rather than reinvented.
+Its main downside is amplitude. The deep-stroke crown still belongs to [Theragun PRO Plus](/reviews/theragun-pro-plus) at 16 mm; the Hypervolt stays in the ~14 mm class, so for the deepest tissue reach Theragun remains the pick. The single-grip handle is also less versatile than Theragun’s multi-grip triangle, and the app is refined rather than reinvented.
 
-## Who it is for
+## Who should buy the Hypervolt 3 Pro?
 
 Choose the Hypervolt 3 Pro if you want the strongest, quietest, longest-running Hyperice yet — at a lower price than the gun it replaces. For the deepest amplitude and best warranty, [Theragun PRO Plus](/reviews/theragun-pro-plus). For a smaller premium option, the Hypervolt 3 ($249). See the full [Hypervolt 3 Pro vs Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus) breakdown.
 

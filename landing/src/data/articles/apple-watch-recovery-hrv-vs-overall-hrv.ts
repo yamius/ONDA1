@@ -54,9 +54,9 @@ More frequent sampling of a noisy signal is why the number can look jumpier than
 
 ---
 
-## Section 2: Recovery HRV vs Overall HRV — the real difference
+## What is the difference between Recovery HRV and Overall HRV?
 
-The two numbers answer different questions, and the split is not cosmetic (gadgetsandwearables, September 2026):
+Recovery HRV is based on RMSSD and tracks day-to-day recovery, while Overall HRV continues Apple's historical SDNN metric over longer windows — the two numbers answer different questions, and the split is not cosmetic (gadgetsandwearables, September 2026):
 
 - **Recovery HRV** — aimed at *day-to-day* stress and recovery. It is the number to watch for "am I recovered today?" and it is the one analysed against your personal overnight baseline. Under the hood it is based on **RMSSD**.
 - **Overall HRV** — a *broader* view of your HRV over longer windows, oriented toward general and cardiovascular-health context rather than daily readiness. This is the continuation of Apple's historical HRV metric, **SDNN**.
@@ -65,7 +65,7 @@ So the reason they don't match is simple: **they are different statistics of the
 
 ---
 
-## Section 3: SDNN vs RMSSD — why this is a big deal
+## Why does SDNN vs RMSSD matter?
 
 For years there was a quiet mismatch in the wearable world. Apple Watch stored HRV in [HealthKit](/articles/what-your-apple-watch-records) as **SDNN** — the standard deviation of the intervals between normal heartbeats. But the recovery scores from Whoop, Oura and Garmin are built primarily on **RMSSD** — the root-mean-square of successive differences, which tracks the parasympathetic (vagal) branch more directly.
 
@@ -75,9 +75,9 @@ In 2026 that changed. Alongside the Series 12, **HealthKit added \`heartRateVari
 
 ---
 
-## Section 4: The trap — don't stitch the old and new history together
+## Can you combine old Apple Watch HRV history with Recovery HRV?
 
-Here is the practical warning most people miss. Because Recovery HRV (RMSSD) and Overall HRV (SDNN) are **different metrics on different scales**, you cannot take your old SDNN history and simply continue it as RMSSD.
+No — because Recovery HRV (RMSSD) and Overall HRV (SDNN) are **different metrics on different scales**, you cannot take your old SDNN history and simply continue it as RMSSD.
 
 - Your RMSSD number will usually read **higher** than your SDNN number for the same night — it is a different calculation, not an improvement.
 - A chart that splices SDNN months onto RMSSD months is a broken time series. Treat the two as separate lines.

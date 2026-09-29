@@ -44,11 +44,11 @@ const healthyWaveMultiWave: ToolReview = {
 
 Healthy Wave Multi-Wave wins the 2026 PEMF-mat aggregator rankings on a multi-modality thesis: PEMF, far-infrared, red light and negative-ion crystals in one mat. The controller exposes real parameters (waveform, frequency, intensity) rather than hiding behind branded presets, and pricing comes in at roughly half the Bemer Classic Evo.
 
-## Where it falls short
+## What are the downsides of Healthy Wave Multi-Wave?
 
-No single-waveform research moat. Bemer's 50+ peer-reviewed studies on the specific biorhythmic signal cannot be matched here — Healthy Wave uses well-documented PEMF frequencies (Schumann, bone-healing band) but no proprietary signal research. For users buying PEMF specifically for waveform-research-backing, Bemer remains the reference.
+The main downside of Healthy Wave Multi-Wave is that it has no single-waveform research moat. Bemer's 50+ peer-reviewed studies on the specific biorhythmic signal cannot be matched here — Healthy Wave uses well-documented PEMF frequencies (Schumann, bone-healing band) but no proprietary signal research. For users buying PEMF specifically for waveform-research-backing, Bemer remains the reference.
 
-## Who it is for
+## Who should buy Healthy Wave Multi-Wave?
 
 Choose Healthy Wave Multi-Wave if you want PEMF stacked with IR and red light in one device and you prioritise modality coverage over single-waveform research. For research-backed Bemer signal, Bemer Classic Evo. For high-intensity coil applicators, Pulse Centers Pulse XL Pro. For consumer-friendly entry pricing, HigherDOSE PEMF Mat.
 

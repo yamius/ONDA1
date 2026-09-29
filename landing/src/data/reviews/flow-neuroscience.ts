@@ -45,11 +45,11 @@ const flowNeuroscience: ToolReview = {
 
 Flow Neuroscience is the clinical reference for take-home tDCS — the most regulated, most trial-backed device in this list. CE-marked as a Class IIa medical device in the EU, paired with a structured eight-week behavioural-therapy programme, and prescribed within parts of the UK NHS as a depression-pathway option. The published randomised-trial evidence for tDCS in major depression is real and growing; Flow’s contribution is packaging that into a take-home protocol patients actually complete.
 
-## Where it falls short
+## What are the downsides of Flow Neuroscience?
 
 It is not an EEG headset. Flow stimulates the dorsolateral prefrontal cortex with 2 mA of direct current; it does not measure brain activity. Indication is restricted to major depression — for general focus, meditation or sleep, Flow is the wrong tool. The platform is closed, the price includes a monthly therapy-app subscription on top of the hardware, and outside the UK NHS pathways the full cost is out-of-pocket.
 
-## Who it is for
+## Who should buy Flow Neuroscience?
 
 Choose Flow Neuroscience if you have major depression and a clinician open to discussing it as a take-home option. For general brain training, meditation feedback or sleep tracking, this is the wrong category — Muse S Athena and the EEG-based devices are the right shape. Flow is included here as the clinical reference for what regulated, trial-backed brain-targeted hardware looks like.
 

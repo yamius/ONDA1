@@ -71,7 +71,8 @@ for (const { path, html } of pages) {
   const h2 = [...body.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)].map((m) => text(m[1]))
   const qHeadings = [...body.matchAll(/<h[23][^>]*>([\s\S]*?)<\/h[23]>/g)].map((m) => text(m[1])).filter((t) => /[?？]$/.test(t)).length
   // first real paragraph of the main content (answer-first check)
-  const firstP = text((main.match(/<p[^>]*>([\s\S]*?)<\/p>/) ?? [])[1] ?? '')
+  // skip short meta lines ("Updated 2026-09-17", bylines, eyebrows) — the answer is the first real paragraph
+  const firstP = [...main.matchAll(/<p[^>]*>([\s\S]*?)<\/p>/g)].map((m) => text(m[1])).find((t) => wordCount(t, lang) >= 12) ?? ''
   const extLinks = [...main.matchAll(/href="(https?:\/\/[^"]+)"/g)].map((m) => m[1]).filter((u) => !u.includes('onda-life.com'))
   const sciLinks = extLinks.filter((u) => /pubmed|ncbi|doi\.org|nature\.com|frontiersin|sciencedirect|springer|wiley|jamanetwork|bmj|thelancet|nih\.gov|plos|mdpi|oup\.com|sagepub|tandfonline|cell\.com|ahajournals|biorxiv|medrxiv|who\.int|cdc\.gov/.test(u)).length
   rows.push({

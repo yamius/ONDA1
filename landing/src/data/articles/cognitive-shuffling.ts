@@ -61,9 +61,9 @@ This is **cognitive arousal** — the engine of most "I can't switch off" insomn
 
 ---
 
-## What cognitive shuffling actually is
+## What is cognitive shuffling?
 
-The technique was developed by cognitive scientist **Luc Beaudoin** at Simon Fraser University, who called it *serial diverse imagining* (SDI). The idea is deceptively simple: deliberately imagine a series of random, unrelated, concrete objects — \`mushroom\` … \`fence\` … \`telescope\` — holding each for a second before the next replaces it.
+Cognitive shuffling is a falling-asleep technique of deliberately imagining a series of random, unrelated, concrete objects. The technique was developed by cognitive scientist **Luc Beaudoin** at Simon Fraser University, who called it *serial diverse imagining* (SDI). The idea is deceptively simple: deliberately imagine a series of random, unrelated, concrete objects — \`mushroom\` … \`fence\` … \`telescope\` — holding each for a second before the next replaces it.
 
 Why random and *neutral*? Because that is almost exactly what your brain does on its own in the seconds before sleep. Researchers call those drifting, disconnected pre-sleep images **hypnagogia**. By manufacturing that state on purpose, you signal to the brain that it is safe to let go — while crowding out the coherent, emotionally loaded thinking that keeps you wired.
 
@@ -81,7 +81,7 @@ The honest caveats: the research base is still small, mostly student samples, an
 
 ---
 
-## How to do it manually
+## How do you do cognitive shuffling?
 
 You can run the whole thing in your head — see the step-by-step protocol in the box on this page. In short: pick a neutral seed word, spin off unrelated concrete images from each letter, picture each briefly, and let attention drift. Keep the images disconnected and never build a story.
 
@@ -106,7 +106,7 @@ Picking your own words keeps a sliver of your mind "on duty." To remove even tha
 
 ---
 
-## Who it helps — and who it won't
+## Who does cognitive shuffling help?
 
 Cognitive shuffling is best for the most common kind of sleeplessness: a busy, looping mind at lights-out. If that's you, it's one of the highest-value, lowest-effort things to try.
 

@@ -31,9 +31,9 @@ There is no universal "good" HRV number — it depends heavily on your age, and 
 
 More quick answers → **[HRV Questions, Answered](/articles/hrv-questions-answered)** — 52 short answers on what lowers HRV, what raises it and how to measure it.
 
-## Typical HRV ranges by age
+## What is a normal HRV for my age?
 
-These are population norms for overnight RMSSD — the number rings and straps report. The median is the middle value; the typical range covers the middle half of healthy people (25th–75th percentile). HRV varies enormously between individuals, so two healthy people the same age can differ by 40 ms or more. Use this as orientation, not a scoreboard:
+A normal overnight RMSSD runs from a median of about 58 ms at ages 18–29 down to about 26 ms at 70+ — these are population norms for overnight RMSSD, the number rings and straps report. The median is the middle value; the typical range covers the middle half of healthy people (25th–75th percentile). HRV varies enormously between individuals, so two healthy people the same age can differ by 40 ms or more. Use this as orientation, not a scoreboard:
 
 | Age | Median RMSSD | Typical range (p25–p75) |
 |---|---|---|
@@ -46,9 +46,9 @@ These are population norms for overnight RMSSD — the number rings and straps r
 
 If your number sits inside or near your age band, that's normal. If it sits below, that alone means little — it could be your genetics, your device, or a rough week. What matters is the direction it moves over time. How these norms were built (Nunan 2010, Umetani 1998, Voss 2015) is explained on the [HRV calculator](/tools/hrv) page.
 
-## Normal HRV on Apple Watch (SDNN)
+## What is a normal HRV on Apple Watch?
 
-Apple Watch doesn't show RMSSD — it shows SDNN, a different HRV measure, so its numbers can't be compared with the table above. In a study of about 1,900 healthy adults (Voss 2015, 5-minute resting ECG), SDNN ran:
+A normal Apple Watch HRV (SDNN) runs from a median of about 46 ms at ages 18–34 down to about 26 ms at 65+ — Apple Watch shows SDNN, not RMSSD, so its numbers can't be compared with the table above. In a study of about 1,900 healthy adults (Voss 2015, 5-minute resting ECG), SDNN ran:
 
 | Age | Median SDNN | Typical range (p25–p75) |
 |---|---|---|
@@ -60,15 +60,15 @@ Apple Watch doesn't show RMSSD — it shows SDNN, a different HRV measure, so it
 
 Apple Watch takes short readings of about a minute several times a day and at night, so single values jump around more than a lab recording. Compare your 7-day average in the Health app, not one reading.
 
-## Why HRV drops with age
+## Why does HRV drop with age?
 
-HRV reflects the flexibility of your autonomic nervous system — how nimbly it switches between "fight or flight" and "rest and digest." That flexibility gradually declines with age as the vagus nerve's influence on the heart weakens and the cardiovascular system stiffens. This is normal and expected; a 55-year-old with an HRV of 35 ms is not "worse off" than a 25-year-old at 70 ms. They're at different points on the same curve. The decline is also not fixed — fitness, sleep, and consistent [slow-breathing practice](/articles/how-to-raise-hrv-naturally) can slow it and even reverse short-term dips.
+HRV drops with age because the flexibility of your autonomic nervous system — how nimbly it switches between "fight or flight" and "rest and digest" — gradually declines as the vagus nerve's influence on the heart weakens and the cardiovascular system stiffens. This is normal and expected; a 55-year-old with an HRV of 35 ms is not "worse off" than a 25-year-old at 70 ms. They're at different points on the same curve. The decline is also not fixed — fitness, sleep, and consistent [slow-breathing practice](/articles/how-to-raise-hrv-naturally) can slow it and even reverse short-term dips.
 
 ## Why your baseline beats any average
 
 Here's the core problem with age charts: the range within one age is far wider than the difference between ages. That makes the population average almost useless for judging your own health. What is useful is your **personal baseline** — your own typical HRV over the last few weeks — and how today compares to it. A drop from your normal of 60 ms down to 40 ms is a real, meaningful signal about your recovery. The number 40 on its own is not; for someone else it might be perfectly normal. HRV is a you-versus-you metric, not a you-versus-everyone one — which is exactly [why your own baseline knows first](/articles/your-baseline-knows-first).
 
-## What lowers your HRV
+## What lowers your HRV?
 
 Day to day, HRV moves in response to how you're recovering. The most common things that push it down:
 

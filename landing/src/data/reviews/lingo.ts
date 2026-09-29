@@ -44,11 +44,11 @@ const lingo: ToolReview = {
 
 Lingo is the cheapest legitimate path into CGM for a US non-diabetic. Abbott’s Libre 3 sensor — the same reliable 14-day platform used by Ultrahuman M1, Veri and Hello Inside — sold OTC without a prescription, with no subscription requirement. A single sensor is $49; a four-pack drops the effective monthly cost to about $22. The app is deliberately simple: a per-meal “Lingo Count” spike score rather than a deep analytics suite. For a first-time CGM user who wants to experiment without committing to a $200-a-month programme, that simplicity is the value.
 
-## Where it falls short
+## What are the downsides of the Lingo?
 
 It is a beginner tool. The single-score insight layer becomes frustrating once you have learned to read your own curves — there is no AUC decomposition, no food-by-food ranking history, no coaching. The third-party integration list is short, and Libre 3 accuracy lags Dexcom G7 marginally in independent comparison. As an instrument for ongoing biohacker self-experimentation, Lingo is the entry point, not the destination.
 
-## Who it is for
+## Who should buy the Lingo?
 
 Choose Lingo if you have never worn a CGM and want the lowest-cost legitimate way to find out whether it changes anything for you. If you have outgrown the beginner framing and want depth, Levels or Stelo are the natural next steps.
 

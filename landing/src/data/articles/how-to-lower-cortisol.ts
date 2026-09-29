@@ -37,7 +37,7 @@ const article: Article = {
 
 ---
 
-## Section 1: What cortisol actually does
+## What does cortisol actually do?
 
 [Cortisol](/glossary/cortisol) follows a daily [circadian](/glossary/circadian-rhythm) curve: it peaks in the first hour after waking (the cortisol awakening response) and tapers to a low at night so you can sleep. That rhythm is healthy and necessary. Trouble starts when chronic stress, poor sleep or constant stimulation flatten or elevate the curve — keeping the [sympathetic](/glossary/sympathetic-nervous-system) "fight-or-flight" system switched on when it should be off.
 
@@ -45,13 +45,13 @@ So the goal is not "low cortisol." It's a *well-shaped* cortisol rhythm — high
 
 ---
 
-## Section 2: The "cortisol detox" myth
+## Does a "cortisol detox" work?
 
-There is no diet, supplement or juice that "flushes" cortisol. The viral "cortisol detox" and "cortisol face" content vastly overstates what food can do and invents a mechanism that doesn't exist — major clinical sources are blunt that lifestyle, not a detox, is what moves cortisol. Genuinely high cortisol from a medical cause (Cushing's syndrome) is rare and needs a doctor, not a smoothie. For everyday stress-driven elevation, the levers below are the real ones.
+No — there is no diet, supplement or juice that "flushes" cortisol. The viral "cortisol detox" and "cortisol face" content vastly overstates what food can do and invents a mechanism that doesn't exist — major clinical sources are blunt that lifestyle, not a detox, is what moves cortisol. Genuinely high cortisol from a medical cause (Cushing's syndrome) is rare and needs a doctor, not a smoothie. For everyday stress-driven elevation, the levers below are the real ones.
 
 ---
 
-## Section 3: What actually lowers it
+## What actually lowers cortisol?
 
 ### PROTOCOL 1: Sleep Is the Master Lever
 

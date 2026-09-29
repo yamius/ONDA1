@@ -29,9 +29,9 @@ A normal resting heart rate for most adults is 60 to 100 beats per minute, but t
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
 
-## Typical resting heart rate by age
+## What is a normal resting heart rate by age?
 
-The adult "normal" band of 60–100 bpm is wide, and fitness moves people within it more than age does. These are general ranges for a healthy resting heart rate:
+A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness moves people within it more than age does. These are general ranges for a healthy resting heart rate:
 
 | Age | Typical resting heart rate |
 |---|---|
@@ -55,9 +55,9 @@ In the CDC's NHANES survey of healthy U.S. adults (seated resting pulse, Ostcheg
 
 Watches and rings read resting or sleeping heart rate, which usually comes out a few bpm lower than a seated check. See your percentile for your age and sex: **[Resting Heart Rate by Age calculator](/tools/resting-heart-rate)**.
 
-## What raises and lowers your resting heart rate
+## What raises and lowers your resting heart rate?
 
-Your resting heart rate is a daily readout of how your body is doing. Common influences:
+Sleep, exercise, alcohol, caffeine, stress and illness are the most common things that move your resting heart rate — a daily readout of how your body is doing. Common influences:
 
 **Lowers it (usually good):** regular aerobic exercise, good sleep, hydration, slow breathing practice. Endurance training is the strongest long-term lever — it's why athletes sit in the 40s and 50s.
 
@@ -65,11 +65,11 @@ Your resting heart rate is a daily readout of how your body is doing. Common inf
 
 A single elevated reading usually means one rough night or a recent coffee. A sustained rise above your baseline is the more meaningful signal.
 
-## Resting heart rate while sleeping
+## What is your resting heart rate while sleeping?
 
 Your lowest resting heart rate of the day usually occurs during deep sleep, when parasympathetic "rest and digest" activity dominates. This overnight low is one of the most stable, comparable numbers you can track, because it's measured under consistent conditions — no caffeine, movement or stress in the moment. It's also where alcohol and late meals show up clearly: both keep your sleeping heart rate elevated through the night, which is why you can wake up unrecovered even after a full night in bed. Tracking your overnight resting heart rate against your own normal is one of the clearest windows into your recovery.
 
-## When resting heart rate matters
+## When does resting heart rate matter?
 
 A resting heart rate inside the normal range for your age and fitness is reassuring, but the number to watch is the *change*. A steady climb of several beats above your personal baseline — sustained over days, not one reading — can reflect illness, overtraining, stress, or poor sleep. Conversely, a resting heart rate that trends down as you get fitter is a sign of improving cardiovascular health. Extremes in either direction — persistently very high, or very low with symptoms like dizziness or fatigue — are worth discussing with a doctor, but resting heart rate on its own is a signal, not a diagnosis.
 

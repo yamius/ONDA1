@@ -44,11 +44,11 @@ const pranaBreath: ToolReview = {
 
 Prana Breath is the customisable-pattern breathwork reference — deep parameter exposure, long-running Android-first app, mostly-free model with a $10 one-time premium unlock. The pattern engine lets users build any breath timing they want.
 
-## Where it falls short
+## What are the downsides of Prana Breath?
 
-UX polish and curated content. Prana Breath feels dated next to Breathwrk or Othership; there's no cinematic production, no journey arcs, no curated science copy. The pattern engine is powerful but assumes the user already knows which timings to use.
+Prana Breath's main downsides are UX polish and curated content. Prana Breath feels dated next to Breathwrk or Othership; there's no cinematic production, no journey arcs, no curated science copy. The pattern engine is powerful but assumes the user already knows which timings to use.
 
-## Who it is for
+## Who should buy Prana Breath?
 
 Choose Prana Breath for cheap, customisable breath-pattern practice — especially on Android, where premium options are weaker. For curated structured library, Breathwrk. For free entry on iOS, iBreathe. For HRV biofeedback, Inhale.
 
