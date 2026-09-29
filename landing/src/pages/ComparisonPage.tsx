@@ -69,7 +69,7 @@ export function ComparisonPage() {
         const others = rest.slice(0, 3)
           .map((p) => ({ p, r: getReviewBySlug(p.reviewSlug) }))
           .filter((x) => x.r)
-          .map((x) => `${x.r!.name} (${lc(x.p.award.replace(/s*([^)]*)/g, ""))})`)
+          .map((x) => `${x.r!.name} (${lc(x.p.award.replace(/\s*\([^)]*\)/g, ''))})`)
         const list = others.length > 1 ? `${others.slice(0, -1).join(', ')} and ${others.at(-1)}` : others[0]
         const scope = comparison.title.replace(/\s*\((\d{4})\)\s*$/, ' of $1').replace(/\b[A-Z][a-z]+\b/g, (w) => w.toLowerCase())
         return (
