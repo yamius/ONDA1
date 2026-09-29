@@ -45,11 +45,11 @@ const endel: ToolReview = {
 
 Endel generates its soundscapes rather than playing fixed tracks. An AI engine adapts the audio in real time to inputs — time of day, weather, and, paired with a wearable, heart rate — so a sleep soundscape at midnight is not the same as one at dusk. It is distinctive, beautifully designed, and covers focus and relaxation as well as sleep.
 
-## Where it falls short
+## What are the downsides of Endel?
 
 It is an audio app, full stop. Endel reads inputs to shape sound; it does not track or measure your sleep, and there are no insights to review. The free tier is a short trial, so the experience effectively requires a subscription.
 
-## Who it is for
+## Who should buy Endel?
 
 Choose Endel if you want adaptive, generative ambient audio and the aesthetics matter to you. If you want to know how you actually slept, pair it with a tracker — or choose one instead.
 

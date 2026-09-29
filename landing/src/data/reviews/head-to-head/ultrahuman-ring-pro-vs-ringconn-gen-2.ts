@@ -42,11 +42,11 @@ const ringProVsRingconn: HeadToHead = {
 
 Two subscription-free rings, different tiers. The [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is the premium option (~$479, ~15-day battery, on-ring processing); the [RingConn Gen 2](/reviews/ringconn-gen-2) is the value champion (~$249, ~12-day battery, solid tracking).
 
-## When the Ultrahuman Ring Pro is the right pick
+## When is the Ultrahuman Ring Pro the right pick?
 
 You want the richer feature set, onboard processing and the longest battery, and the higher price is acceptable.
 
-## When the RingConn Gen 2 is the right pick
+## When is the RingConn Gen 2 the right pick?
 
 You want a subscription-free ring with a long battery and dependable tracking for the lowest price.
 

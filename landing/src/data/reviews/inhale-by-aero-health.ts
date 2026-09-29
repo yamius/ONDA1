@@ -44,11 +44,11 @@ const inhale: ToolReview = {
 
 Inhale by Aero Health is the only breathwork app closing the biofeedback loop with Apple Watch HRV measurement — pre-session reading, guided protocol, post-session reading, adaptive recommendation. Aligns with the published Lehrer/Vaschillo HRV-biofeedback research.
 
-## Where it falls short
+## What are the downsides of Inhale by Aero Health?
 
 Library size and Apple Watch dependence. Inhale's structured library is smaller than Breathwrk or Othership, and the biofeedback differentiator requires you to wear Apple Watch consistently. For users without a watch, much of the value evaporates.
 
-## Who it is for
+## Who should buy Inhale by Aero Health?
 
 Choose Inhale by Aero Health if you wear Apple Watch and want HRV-driven adaptive breathwork. For largest structured library, Breathwrk. For cinematic music sessions, Othership. For free entry without biofeedback, iBreathe.
 

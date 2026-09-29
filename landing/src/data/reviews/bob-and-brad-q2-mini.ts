@@ -44,11 +44,11 @@ const bobAndBradQ2: ToolReview = {
 
 Bob and Brad Q2 Mini is the budget-tier reference — credible PT-brand framing from the "Famous Physical Therapists" YouTube channel, brushless motor at $99, excellent portability. Best budget mini value.
 
-## Where it falls short
+## What are the downsides of Bob and Brad Q2 Mini?
 
 Stall force and app. 35 lbs stall force is half of premium-tier specs; no app integration. For users wanting premium percussion, premium tier required.
 
-## Who it is for
+## Who should buy Bob and Brad Q2 Mini?
 
 Choose Bob and Brad Q2 Mini for budget mini with brand credibility. For premium travel mini, Hypervolt Go 2. For higher budget specs, OPOVE M3 Pro 2. For lowest-cost budget, Renpho R3.
 

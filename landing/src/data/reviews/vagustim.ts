@@ -44,11 +44,11 @@ const vagustim: ToolReview = {
 
 Vagustim is the strongest non-Nurosym auricular tVNS device on evidence. It is CE-marked as a Class IIa medical device, and the trial base — from Turkish and German clinical-research groups — covers HRV modulation, depression, anxiety and IBS protocols. Where Nurosym ships a single, deliberately spartan programme, Vagustim layers a library of protocol presets on top of the ear clip, each with disclosed pulse parameters configurable per condition.
 
-## Where it falls short
+## What are the downsides of Vagustim?
 
 Distribution is the constraint. Brand recognition outside the EU is thin, customer support and warranty processes vary by region, and the multi-electrode setup (tragus clip plus secondary pads for some protocols) is more involved than a single ear clip. For a first-time user that adds friction. There is no on-device HRV measurement — like every other ear-clip device here, biofeedback has to come from a paired wearable.
 
-## Who it is for
+## Who should buy Vagustim?
 
 Choose Vagustim if you are in an EU market, want clinical-grade evidence comparable to Nurosym, and prefer a wider protocol library to a single deliberately constrained programme. If you are outside the EU, Nurosym’s distribution and support are more reliable. If you want fewer electrodes and a phone-app driven UX, Pulsetto is closer to that shape.
 

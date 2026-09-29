@@ -47,11 +47,11 @@ const saunaspaceVsSunlighten: HeadToHead = {
 
 Two premium IR saunas with two different wavelength philosophies. SaunaSpace bets on near-IR incandescent with full Faraday-cage EMF shielding. Sunlighten bets on full-spectrum programmable delivery. Pick on which bet matches your IR-sauna philosophy.
 
-## When SaunaSpace Faraday is the right pick
+## When is SaunaSpace Faraday the right pick?
 
 If near-IR-only via tungsten-filament incandescent bulbs is your wavelength bet — and full Faraday-cage EMF shielding matters — SaunaSpace is the right shape. The biohacker community has built around this philosophy.
 
-## When Sunlighten mPulse is the right pick
+## When is Sunlighten mPulse the right pick?
 
 If you want full-spectrum IR with the ability to programme near, mid and far separately per session — Sunlighten is the right shape. The deepest published-research footprint and traditional cabin form factor are bonuses.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',

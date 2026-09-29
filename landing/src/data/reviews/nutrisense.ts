@@ -44,11 +44,11 @@ const nutrisense: ToolReview = {
 
 Nutrisense is the CGM programme for people who want a person, not an app, helping them interpret the data. Every subscriber is paired with a registered dietitian who reviews glucose curves — flagging [glucose spikes](/glossary/glucose-spikes) and coaching toward [insulin sensitivity](/glossary/insulin-sensitivity) — sends weekly written summaries, and answers questions through in-app messaging. The hardware is Dexcom G7, the same sensor underneath Levels and Stelo, so the accuracy ceiling is identical — the difference is the coach. For users who need accountability or who do not trust themselves to interpret meal data alone, that human layer is exactly the value proposition.
 
-## Where it falls short
+## What are the downsides of Nutrisense?
 
 It is the most expensive programme in this list once the coaching tier is included — $280 to $310 a month. The app insights are competent rather than category-leading; Levels still has the deeper meal-impact analysis at $80 less. Coach quality also varies between RDs — the assignment is luck-of-the-draw and a poor match can be the difference between value and waste. US-only as of 2026.
 
-## Who it is for
+## Who should buy Nutrisense?
 
 Choose Nutrisense if a registered dietitian working through your data weekly is what makes the difference between sustained behaviour change and a $200 month of charts. If you trust the app and want the deepest insight engine on its own, Levels is the right shape. If you want the same Dexcom G7 sensor without coaching at a fraction of the cost, Stelo.
 

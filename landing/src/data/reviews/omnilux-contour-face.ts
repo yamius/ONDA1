@@ -44,11 +44,11 @@ const omniluxContourFace: ToolReview = {
 
 Omnilux Contour Face is the dermatology reference — the mask used in clinical practices and the device backed by peer-reviewed studies on its specific waveform and dose. FDA Class II clearance puts it in a regulatory tier most consumer masks don't reach. Medical-grade flexible silicone delivers the best wearable comfort in the category.
 
-## Where it falls short
+## What are the downsides of Omnilux Contour Face?
 
 Price and scope. At $395 Omnilux is premium-tier; competitors at half the price (LightStim, Solawave) cover lighter use cases. Single 10-minute protocol — no programmability for users wanting modes / sessions. No neck flap on the standard Contour without paying extra.
 
-## Who it is for
+## Who should buy Omnilux Contour Face?
 
 Choose Omnilux Contour Face if you want the FDA-cleared dermatology reference with peer-reviewed clinical evidence and best-in-class comfort. For larger consumer market share, CurrentBody Series 2. For dermatology-brand alternative, Dr. Dennis Gross SpectraLite. For handheld at lower price, LightStim.
 

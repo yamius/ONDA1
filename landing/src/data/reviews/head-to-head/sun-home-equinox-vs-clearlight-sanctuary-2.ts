@@ -42,11 +42,11 @@ const sunHomeVsClearlight: HeadToHead = {
 
 The [Sun Home Equinox](/reviews/sun-home-equinox) is the value-forward newcomer with the highest heat and integrated red light; the [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) is the Jacuzzi-backed premium with the longer warranty, slightly cheaper at base.
 
-## When the Sun Home Equinox is the right pick
+## When is the Sun Home Equinox the right pick?
 
 You want the hottest cabin, integrated red-light and chromotherapy, and a price-disciplined package.
 
-## When the Clearlight Sanctuary 2 is the right pick
+## When is the Clearlight Sanctuary 2 the right pick?
 
 Warranty scope, brand history and Jacuzzi backing matter most.
 

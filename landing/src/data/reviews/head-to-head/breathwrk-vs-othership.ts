@@ -47,11 +47,11 @@ const breathwrkVsOthership: HeadToHead = {
 
 Both are premium-tier breathwork apps. Breathwrk is the structured-library reference. Othership is the cinematic-experience reference.
 
-## When Breathwrk is the right pick
+## When is Breathwrk the right pick?
 
 If you want the largest structured catalogue, broadest technique coverage and science-grounded copy at the best price — Breathwrk is the right shape. The rational default for daily breathwork practice.
 
-## When Othership is the right pick
+## When is Othership the right pick?
 
 If you want breathwork as cinematic music-driven experience with live community classes — Othership is the right shape. Production value the rest of the category cannot match. Accept the higher subscription.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',

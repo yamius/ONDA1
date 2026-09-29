@@ -44,11 +44,11 @@ const iqairHealthPro: ToolReview = {
 
 IQAir HealthPro Plus is the clinical-grade air-purifier reference — HyperHEPA H14 captures particles down to 0.003 microns, multi-decade Swiss brand pedigree, used in hospital and clinical deployments. Nothing else in consumer category matches the filtration spec.
 
-## Where it falls short
+## What are the downsides of IQAir HealthPro Plus?
 
 Smart features and high-speed noise. No app, no sensors, no auto mode — IQAir is a pure mechanical filter device. Fan noise on high speed (~65 dB) is loud. For users wanting smart integration, Dyson or Molekule better fit.
 
-## Who it is for
+## Who should buy IQAir HealthPro Plus?
 
 Choose IQAir HealthPro Plus for clinical-grade HEPA filtration — accept lack of smart features. For premium smart features, Dyson Big+Quiet. For PECO premium, Molekule Air Pro. For mid-premium smart, Coway Airmega 400.
 

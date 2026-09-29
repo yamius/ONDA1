@@ -56,15 +56,15 @@ const threeMeditation: HeadToHead = {
 
 Three different jobs. Headspace teaches; Calm soothes (especially sleep); Insight Timer hosts the largest free library. Pick on which job you actually have.
 
-## When Headspace is the right pick
+## When is Headspace the right pick?
 
 If you have never meditated and want a structured introduction to mindfulness — clear curriculum, consistent teaching voice, daily progression — Headspace is the right shape. The Basics course is unmatched as a beginner path.
 
-## When Calm is the right pick
+## When is Calm the right pick?
 
 If sleep content matters as much as meditation, or you respond to celebrity narration, Calm is the right shape. Sleep Stories are the format Calm invented and still own; the meditation library is competent but the differentiator is the sleep content.
 
-## When Insight Timer is the right pick
+## When is Insight Timer the right pick?
 
 If you want the largest free meditation library on the market — and access to premier teachers (Tara Brach, Jack Kornfield, Sharon Salzberg) at no cost — Insight Timer is the right shape. The free tier is genuinely free; the optional Member Plus is cheaper than the other two.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',

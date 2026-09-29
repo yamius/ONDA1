@@ -46,11 +46,11 @@ const breathwrkVsSoma: HeadToHead = {
 
 Both are sub-$100/year structured breathwork apps. Breathwrk is the science-grounded structured-library reference. SOMA is the rhythmic-music-paced ceremony-framing alternative.
 
-## When Breathwrk is the right pick
+## When is Breathwrk the right pick?
 
 If you want the largest structured catalogue with evidence-grounded copy and broadest technique coverage — Breathwrk is the right shape at lower price.
 
-## When SOMA Breath is the right pick
+## When is SOMA Breath the right pick?
 
 If you want beat-paced rhythmic music breathwork with ceremony framing and access to a global certified-facilitator community — SOMA is the right shape.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',

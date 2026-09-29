@@ -44,11 +44,11 @@ const ibreathe: ToolReview = {
 
 iBreathe is the free minimalist breathwork reference — clean visual breath guide, core techniques (box, 4-7-8, custom), Apple Watch native, no subscription. Best execution of the simple-timer thesis at the unbeatable price of zero.
 
-## Where it falls short
+## What are the downsides of iBreathe?
 
 No curated content, no instructor library, no evidence copy, no biofeedback. iBreathe is a breath timer with a clean UI — not a breathwork content platform.
 
-## Who it is for
+## Who should buy iBreathe?
 
 Choose iBreathe if you already know which technique you want and just need a clean visual timer at zero cost. For curated library, Breathwrk. For free with somatic depth, Breathe2Relax. For Android customisation at near-free price, Prana Breath.
 

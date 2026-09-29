@@ -42,11 +42,11 @@ const circularVsGen3: HeadToHead = {
 
 Two subscription-free rings chasing heart health. The [Circular Ring 2](/reviews/circular-ring-2) has unique on-ring ECG/AFib but unfinished software; the [RingConn Gen 3](/reviews/ringconn-gen-3) offers vascular/sleep-apnea insights and a haptic alarm that actually ship, with a longer battery.
 
-## When the Circular Ring 2 is the right pick
+## When is the Circular Ring 2 the right pick?
 
 On-ring ECG/AFib specifically matters to you, and you accept unfinished software as an early adopter.
 
-## When the RingConn Gen 3 is the right pick
+## When is the RingConn Gen 3 the right pick?
 
 You want subscription-free heart-health features, a haptic alarm and a long battery that all work today.
 

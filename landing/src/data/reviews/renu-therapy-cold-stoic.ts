@@ -44,11 +44,11 @@ const renuTherapyColdStoic: ToolReview = {
 
 Renu Therapy Cold Stoic is the premium-tier choice for indoor installation. The chiller is meaningfully quieter than Plunge’s, the build is optimised for indoor temperature control, and the form factor fits typical home wellness-room spaces. For users putting the plunge in a basement, garage or dedicated room, this is the right shape.
 
-## Where it falls short
+## What are the downsides of Renu Therapy Cold Stoic?
 
 Temperature floor sits at 40°F versus Plunge’s 39°F — marginal in practice but real on paper. Brand recognition is narrower than the category leader. Pricing is comparable to Plunge without the same content ecosystem.
 
-## Who it is for
+## Who should buy Renu Therapy Cold Stoic?
 
 Choose Renu Therapy Cold Stoic if indoor installation and chiller noise are deciding factors. For outdoor install, Plunge or Coldture make more sense. For absolute temperature floor, Morozko Forge.
 

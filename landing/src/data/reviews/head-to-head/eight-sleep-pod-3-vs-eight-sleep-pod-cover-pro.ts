@@ -46,11 +46,11 @@ const pod3VsCoverPro: HeadToHead = {
 
 Same Eight Sleep ecosystem, same subscription. Pod 3 is the previous-gen full mattress system at clearance pricing; Cover Pro is the current-gen cover on your existing mattress.
 
-## When Pod 3 is the right pick
+## When is Pod 3 the right pick?
 
 If you are replacing your mattress in 2026, you find a deep Pod 3 inventory discount, and you accept the slightly narrower climate range — Pod 3 buys you the integrated mattress build cheaper than Pod 4.
 
-## When Pod Cover Pro is the right pick
+## When is Pod Cover Pro the right pick?
 
 If you have a mattress you like, or you want the current-gen Pod 4-platform climate range and sensors on whatever bed you own — Cover Pro is the rational choice. Stable current-gen platform, transferrable, no inventory roulette.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',

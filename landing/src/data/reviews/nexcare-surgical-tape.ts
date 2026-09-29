@@ -44,11 +44,11 @@ const nexcareSurgical: ToolReview = {
 
 3M Nexcare Sensitive Skin Surgical Tape is the DIY biohacker secret — clinical-grade medical paper tape at $0.05/night vs $0.43/night for Hostage Tape. Same 3M medical adhesive used in hospital wound dressings. Unbeatable on cost.
 
-## Where it falls short
+## What are the downsides of 3M Nexcare Sensitive Skin Surgical Tape?
 
 Friction and brand polish. Requires cutting per use, no pre-cut strips, no subscription convenience. Less beard-friendly than Hostage Tape acrylic adhesive engineered specifically for stubble.
 
-## Who it is for
+## Who should buy 3M Nexcare Sensitive Skin Surgical Tape?
 
 Choose 3M Nexcare for cost-conscious DIY mouth tape — clinical adhesive at lowest possible price. For convenience + beard-friendly brand, Hostage Tape. For FDA-registered porous safety, Somnifix. For premium silicone, Dream Recovery.
 

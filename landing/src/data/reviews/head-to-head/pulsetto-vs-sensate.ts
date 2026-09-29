@@ -42,11 +42,11 @@ const pulsettoVsSensate: HeadToHead = {
 
 [Pulsetto](/reviews/pulsetto) delivers electrical vagus stimulation (tVNS) with HRV tracking and wearable integration; [Sensate](/reviews/sensate) uses gentle infrasonic sound for a passive calm — no electrical stimulation.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 You want active vagus stimulation with protocol variety, HRV tracking and Oura/Apple integration, at a lower one-time price.
 
-## When Sensate is the right pick
+## When is Sensate the right pick?
 
 You want a gentle, passive, sound-based wind-down and prefer no electrical stimulation.
 

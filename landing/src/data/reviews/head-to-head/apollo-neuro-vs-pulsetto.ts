@@ -47,11 +47,11 @@ const apolloNeuroVsPulsetto: HeadToHead = {
 
 Apollo Neuro and Pulsetto are not the same kind of device. Apollo is a vibrotactile all-day wearable; Pulsetto is an electrical tVNS collar for session-based use. The right pick depends on which use case you want — and many users end up using both.
 
-## When Apollo Neuro is the right pick
+## When is Apollo Neuro the right pick?
 
 If you want vagal modulation in your life — in the office, on a flight, during sleep — without any session ritual or electrode setup, Apollo is the right shape. The effect is gentler by design but always available, and the independent research base is the strongest in the consumer non-electrical category.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 If you want a stronger acute parasympathetic shift in a structured 4–20 minute session — pre-sleep wind-down, post-stress reset, focus priming — Pulsetto is the right shape. The electrical tVNS effect is more pronounced than Apollo’s vibrotactile modulation, and the four guided programmes cover the common use cases.
 

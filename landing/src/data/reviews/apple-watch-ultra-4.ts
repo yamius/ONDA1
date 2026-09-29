@@ -47,11 +47,11 @@ The Apple Watch Ultra 4, announced in September 2026, pairs the Series 12’s al
 
 On top of that sits the most complete sensor package on any watch here: single-lead ECG, hypertension notifications, a 40 m depth and dive sensor, multi-band GPS and satellite connectivity, in a rugged 49 mm titanium case with no subscription.
 
-## Where it falls short
+## What are the downsides of Apple Watch Ultra 4?
 
 The physics are still wrist-optical. Apple calls it its most accurate heart sensing, and the new system genuinely closes the gap — but a finger-based ring or an ECG chest strap remains more precise for the overnight number itself. And it is a lot of watch: from $799, large and heavy, with much of the price going to dive, satellite and multisport features rather than HRV. If you want that HRV system in a smaller, cheaper package, the [Apple Watch Series 12](/reviews/apple-watch-series-12) has the same one — it just can’t match the battery.
 
-## Who it is for
+## Who should buy Apple Watch Ultra 4?
 
 Choose the Ultra 4 if you are an athlete or outdoors user who wants Apple’s new HRV system *and* the battery to wear it every night, and you will use the rugged, dive and satellite features. If HRV and everyday health are the point and you don’t need the ruggedness, the Series 12 is the smarter buy; if a clean overnight HRV trend is your single priority, a ring still leads — see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).
 

@@ -44,11 +44,11 @@ const rubylxLyraPro: ToolReview = {
 
 RubyLx Lyra Pro is the panel built for buyers who do not trust marketing-stated specs. RubyLx submits each model to third-party labs for irradiance, EMF, flicker and spectrum verification, then publishes the full lab reports. Independent measurements come in within 5% of manufacturer claims across the board — the tightest match in this list. Five-wavelength coverage, premium build, EMF and flicker discipline match the Joovv/GembaRed tier.
 
-## Where it falls short
+## What are the downsides of RubyLx Lyra Pro?
 
 RubyLx is a smaller brand than Joovv, Mito Red or PlatinumLED. The multi-year reliability track record is shorter, the modular ecosystem (Joovv) is absent, and the no FDA Class II registration carries the same implication as for everyone outside Joovv. The pricing is premium but justified by the testing transparency.
 
-## Who it is for
+## Who should buy RubyLx Lyra Pro?
 
 Choose RubyLx Lyra Pro if every published specification must be independently verifiable before purchase, and you trust a smaller brand’s testing discipline over a larger brand’s marketing. For modular scaling, Joovv. For EMF-shielded engineering, GembaRed. For pure value, Hooga.
 

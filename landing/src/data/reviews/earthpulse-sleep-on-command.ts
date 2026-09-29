@@ -44,11 +44,11 @@ const earthpulse: ToolReview = {
 
 EarthPulse Sleep on Command is the sleep-niche PEMF reference — under-mattress install, Schumann and delta-band overnight protocols, accessible $899 pricing. Best execution of the sleep-specific PEMF use case.
 
-## Where it falls short
+## What are the downsides of EarthPulse Sleep on Command?
 
 Single use case. EarthPulse is built for sleep — it's not a daytime recovery mat or a spot-treatment coil. Users wanting general recovery PEMF should look elsewhere.
 
-## Who it is for
+## Who should buy EarthPulse Sleep on Command?
 
 Choose EarthPulse if your PEMF thesis is sleep — under-mattress install, overnight Schumann/delta protocols, set-once daily use. For general daytime recovery, OMI or Healthy Wave. For Bemer-style biorhythmic protocols, Bemer Classic Evo.
 

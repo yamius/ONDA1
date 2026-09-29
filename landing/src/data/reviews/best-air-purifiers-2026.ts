@@ -94,7 +94,7 @@ Every air purifier was scored against ONDA\'s published [review methodology](/re
 
 All ten were assessed from manufacturer documentation, AHAM certification records and 2026 consumer / Wirecutter reviews rather than hands-on testing.
 
-## The short version
+## Best Air Purifiers: which should you buy?
 
 Three buying questions resolve the category cleanly:
 

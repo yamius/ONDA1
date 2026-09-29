@@ -48,11 +48,11 @@ const joovvVsPlatinumLed: HeadToHead = {
 
 Two premium-tier panels with different priorities. Joovv buys you FDA registration and modular scaling; PlatinumLED buys you six wavelengths and published EMF testing at $300 less. Both are credible.
 
-## When Joovv Solo 3.0 is the right pick
+## When is Joovv Solo 3.0 the right pick?
 
 If FDA Class II registration matters and you plan to scale to full-body via the modular Solo system, Joovv is the right shape. The $1,295 panel buys regulatory status and the modular ecosystem.
 
-## When PlatinumLED BIOMAX 600 is the right pick
+## When is PlatinumLED BIOMAX 600 the right pick?
 
 If wavelength breadth (six bands vs Joovv’s two), published third-party EMF testing, and saving $296 are the deciding factors, PlatinumLED is the right shape. Most spec-focused biohacker buyers land here.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',

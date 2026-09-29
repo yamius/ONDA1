@@ -42,11 +42,11 @@ const whoop50VsRingPro: HeadToHead = {
 
 Rent a recovery coach or own a ring. The [Whoop 5.0](/reviews/whoop-5-0) is a subscription-only band (~$239/year) with the deepest recovery-and-strain coaching from continuous overnight HRV. The [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is a one-time $479 ring you own, with a category-leading ~15-day battery — though its long-term reliability is unproven.
 
-## When the Whoop 5.0 is the right pick
+## When is the Whoop 5.0 the right pick?
 
 You train on a daily recovery score, want the cleanest continuous overnight HRV and the most prescriptive coaching, and the yearly membership is acceptable.
 
-## When the Ultrahuman Ring Pro is the right pick
+## When is the Ultrahuman Ring Pro the right pick?
 
 You refuse a recurring fee, want to own the hardware with an exceptional battery, and you are comfortable being an early adopter of a redesigned product.
 

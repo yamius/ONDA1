@@ -44,11 +44,11 @@ const hypervoltGo2: ToolReview = {
 
 Hypervolt Go 2 is the premium travel mini — Hyperice brand and app ecosystem in pocket form factor. Best portability in premium category with quiet brushless motor.
 
-## Where it falls short
+## What are the downsides of Hyperice Hypervolt Go 2?
 
 Stall force and attachment count. 30 lbs stall force is half the Hypervolt 2 Pro spec; only 2 attachments included. For users wanting full premium percussion, Hypervolt 2 Pro or Theragun Elite.
 
-## Who it is for
+## Who should buy Hyperice Hypervolt Go 2?
 
 Choose Hypervolt Go 2 for premium-brand travel mini. For Hyperice full-size premium, Hypervolt 2 Pro. For budget travel mini, Bob and Brad Q2 Mini.
 

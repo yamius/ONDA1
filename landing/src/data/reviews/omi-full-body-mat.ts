@@ -44,11 +44,11 @@ const omiFullBodyMat: ToolReview = {
 
 OMI Full Body Mat is the mid-tier PEMF reference — straightforward single-modality PEMF mat using FDA bone-healing waveform research, simple daily-use operation, and accessible $1,500–$2,000 pricing.
 
-## Where it falls short
+## What are the downsides of OMI Full Body PEMF Mat?
 
 No multi-modality stacking, no proprietary research moat, limited parameter exposure. Users wanting IR + red light + PEMF stacking should look at Healthy Wave; users wanting research-backed proprietary waveforms should look at Bemer.
 
-## Who it is for
+## Who should buy OMI Full Body PEMF Mat?
 
 Choose OMI Full Body Mat for straightforward mid-tier single-modality PEMF at accessible pricing. For multi-modality, Healthy Wave Multi-Wave. For Bemer waveform research, Bemer Classic Evo. For consumer-brand polish, HigherDOSE PEMF Mat.
 

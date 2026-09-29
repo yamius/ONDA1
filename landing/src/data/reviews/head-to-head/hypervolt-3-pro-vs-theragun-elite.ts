@@ -42,11 +42,11 @@ const hv3ProVsTheragunElite: HeadToHead = {
 
 The [Hypervolt 3 Pro](/reviews/hypervolt-3-pro) leads on power, quiet and price; the [Theragun Elite](/reviews/theragun-elite) leads on stroke depth (16 mm) and the Therabody ecosystem.
 
-## When the Hypervolt 3 Pro is the right pick
+## When is the Hypervolt 3 Pro the right pick?
 
 You want the strongest, quietest, longest-running gun for less, and don’t need Theragun’s deeper stroke.
 
-## When the Theragun Elite is the right pick
+## When is the Theragun Elite the right pick?
 
 You want the deeper 16 mm amplitude, the Therabody app and multi-grip handle, and the ecosystem matters.
 

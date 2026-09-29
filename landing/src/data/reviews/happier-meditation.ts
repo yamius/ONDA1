@@ -45,11 +45,11 @@ const happierMeditation: ToolReview = {
 
 Happier Meditation — the app formerly known as Ten Percent Happier — is built around one thing above all: the quality of its teachers. Its 500-plus guided meditations come from a relatable, expert roster, and reviewers consistently single out the calibre and variety of the voices. The app itself is polished and easy to use, an Apple "Best Of" winner, and its skeptic-friendly framing avoids the vague wellness language that puts some people off the category.
 
-## Where it falls short
+## What are the downsides of Happier Meditation?
 
 Price is the sticking point. At around 100 USD a year it is one of the more expensive options here — more than Calm or Headspace — and the free tier is thin, so the teaching everyone praises sits behind a subscription. The library, while well-curated, is not as deep as Insight Timer's.
 
-## Who it is for
+## Who should buy Happier Meditation?
 
 Choose Happier Meditation if teaching quality is what you care about most and the price is acceptable. If you want the same calibre of instruction with more philosophical depth, look at Waking Up; if budget matters, Insight Timer and the free apps deliver more for less.
 

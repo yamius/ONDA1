@@ -44,11 +44,11 @@ const supersapiens: ToolReview = {
 
 Supersapiens is the only CGM programme in this list aimed at the endurance-athletic use case rather than general metabolic health. The Libre Sense sensor under it is Abbott’s sport-tuned Libre variant, and the app reframes glucose data accordingly: race-day fuelling targets, intra-session glycaemic dips, recovery-window curves, all integrated with Strava, Garmin and TrainingPeaks. For a triathlete or cyclist already coached on power and HR, adding glucose is a clean fit.
 
-## Where it falls short
+## What are the downsides of Supersapiens?
 
 The programme is regulatorily marooned. Supersapiens withdrew from the US in 2022–2023 after FDA friction over its general-purpose claims, and 2026 availability remains EU-only. There is no meal-by-meal scoring for general nutrition — the entire framing assumes you already have a sport context. No coaching is included.
 
-## Who it is for
+## Who should buy Supersapiens?
 
 Choose Supersapiens if you are an endurance athlete in an EU market who wants race-day glucose pacing in your Garmin/TrainingPeaks stack. For general biohacker insight, this is the wrong shape — Levels, Stelo or Veri are the right fits. If you are in the US, Supersapiens is not currently an option.
 

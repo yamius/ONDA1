@@ -47,11 +47,11 @@ const sunlightenVsClearlight: HeadToHead = {
 
 Two premium full-spectrum IR cabin saunas at comparable price points. Sunlighten wins on wavelength rigour and FDA registration; Clearlight wins on Jacuzzi-backed warranty and marginally lower price.
 
-## When Sunlighten mPulse is the right pick
+## When is Sunlighten mPulse the right pick?
 
 If true 3-wavelength control (programmable near / mid / far separately) is the deciding feature, or FDA Class II registration matters — Sunlighten is the right shape. The deepest published-research footprint is the bonus.
 
-## When Clearlight Sanctuary 2 is the right pick
+## When is Clearlight Sanctuary 2 the right pick?
 
 If you want Jacuzzi-backed lifetime heater warranty at marginally lower price for comparable full-spectrum IR — Clearlight is the right shape. The hypoallergenic basswood option is also unique.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',

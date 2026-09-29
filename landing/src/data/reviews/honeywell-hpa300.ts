@@ -44,11 +44,11 @@ const honeywellHpa300: ToolReview = {
 
 Honeywell HPA300 is the budget large-room reference — True HEPA H13 + carbon + 465 sq ft coverage at $249. Honeywell home-appliance brand-trust play with strong consumer review base.
 
-## Where it falls short
+## What are the downsides of Honeywell HPA300?
 
 Smart features and noise. No app, no sensor, no auto mode; loud on Turbo. For users wanting smart features, Levoit Core 600S better fit at higher price.
 
-## Who it is for
+## Who should buy Honeywell HPA300?
 
 Choose Honeywell HPA300 for budget large-room coverage with Honeywell brand-trust. For smart features, Levoit Core 600S. For Wirecutter-favorite, Coway Airmega AP-1512HH. For PlasmaWave option, Winix 5500-2.
 

@@ -48,11 +48,11 @@ const sleepioVsPzizz: HeadToHead = {
 
 Sleepio and Pzizz are not really alternatives. Sleepio is a clinical intervention for diagnosed insomnia; Pzizz is a nightly audio ritual to fall asleep faster. Pick on whether you have a clinical sleep problem or a daily wind-down need.
 
-## When Sleepio is the right pick
+## When is Sleepio the right pick?
 
 If you have chronic insomnia — six weeks of trouble falling or staying asleep, daytime impact — Sleepio is the right shape. It is the most clinically-validated digital sleep intervention on the market and the only one with NICE recommendation and NHS prescribing pathways. The six-week structured CBT-I commitment is the cost; durable improvement in insomnia severity is the value.
 
-## When Pzizz is the right pick
+## When is Pzizz the right pick?
 
 If you want help getting to sleep tonight, without a structured programme, Pzizz is the right shape. The generative dreamscape audio works as a press-play nightly ritual; the nap mode and focus mode add daytime use cases. For clinical insomnia it is not the right tool — but it is a good nightly companion for users who just want to wind down.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',

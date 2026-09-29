@@ -48,11 +48,11 @@ const hoolestVsPulsetto: HeadToHead = {
 
 Hoolest VeRelief Prime and Pulsetto are similar-priced consumer cervical tVNS devices that target different use cases. Hoolest is athlete-shaped: short intense sessions, founder research, dual ear-and-neck targeting. Pulsetto is daily-use-shaped: collar form factor, guided programmes, longer sessions.
 
-## When Hoolest is the right pick
+## When is Hoolest the right pick?
 
 If athletic recovery or pre-sleep parasympathetic priming is the reason you are buying — and short, intense, high-engagement sessions fit your routine better than long ambient ones — Hoolest VeRelief Prime is the right shape. The dual ear/neck targeting and the founder-published research are the differentiators.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 If you want a daily-use device with structured guided programmes you can run while reading, working or winding down — Pulsetto is the right shape. The four-mode library covers more use cases than Hoolest’s intensity-only adjustment, and the collar form factor makes it easier to engage with daily.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

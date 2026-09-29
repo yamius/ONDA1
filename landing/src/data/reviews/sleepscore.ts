@@ -45,11 +45,11 @@ const sleepscore: ToolReview = {
 
 SleepScore comes from a research-oriented company, and it shows. It tracks without contact — using sonar through the phone speaker and microphone — breaks the night into dozens of parameters, and, crucially, turns that into personalised recommendations rather than just a number. Of the mainstream trackers here, it is the strongest at telling you what to actually change.
 
-## Where it falls short
+## What are the downsides of SleepScore?
 
 The contact-free sonar approach is clever but still a phone-based estimate, not wearable-grade. Wind-down content is light, and the genuinely useful analysis and history sit behind the paid plan.
 
-## Who it is for
+## Who should buy SleepScore?
 
 Choose SleepScore if you want a tracker that does something with the data — concrete, science-led recommendations — and you would rather not wear anything to bed. If you want the deepest raw tracking, a wearable-paired app like Pillow or AutoSleep goes further.
 

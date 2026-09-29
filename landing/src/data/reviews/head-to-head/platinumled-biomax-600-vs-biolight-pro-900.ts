@@ -48,11 +48,11 @@ const platinumledVsBioLight: HeadToHead = {
 
 PlatinumLED wins on most spec and brand axes; BioLight wins on price. The decision is whether the extra spectrum, testing transparency and brand depth justify $100 over BioLight.
 
-## When PlatinumLED BIOMAX 600 is the right pick
+## When is PlatinumLED BIOMAX 600 the right pick?
 
 If you want the broadest wavelength coverage in the mid-tier, published third-party EMF testing and the more mature brand, PlatinumLED is the right shape. Most spec-focused mid-tier buyers land here.
 
-## When BioLight Pro 900 is the right pick
+## When is BioLight Pro 900 the right pick?
 
 If you want competent four-wavelength mid-size coverage at the lowest mid-tier price and brand maturity is not deciding, BioLight is the right shape. Solid value play at $899.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',

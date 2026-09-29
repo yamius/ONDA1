@@ -45,11 +45,11 @@ const autosleep: ToolReview = {
 
 AutoSleep is the purist's Apple Watch sleep tracker. It tracks automatically — no buttons, no "I'm going to bed" — and it is detailed and accurate, with a devoted following among Apple Watch owners. Best of all, it is a one-time purchase: a few dollars, once, with no subscription at all, which in a category full of recurring fees is rare.
 
-## Where it falls short
+## What are the downsides of AutoSleep?
 
 It is tracking and nothing else. There is no wind-down content whatsoever — no sounds, no stories — so it does nothing to help you fall asleep, only to measure once you do. It is iOS and Apple Watch only, the interface is dense, and there is no real free tier.
 
-## Who it is for
+## Who should buy AutoSleep?
 
 Choose AutoSleep if you own an Apple Watch, you only want data, and you are tired of subscriptions. If you want help getting to sleep, or you are on Android, it is the wrong app.
 

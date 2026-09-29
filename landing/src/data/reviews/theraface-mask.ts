@@ -44,11 +44,11 @@ const therafaceMask: ToolReview = {
 
 TheraFace Mask is Therabody\'s 2026 red light face mask — three-wavelength coverage (red + blue + amber), app-controlled protocols, premium build leveraging the Theragun brand. The right device for users already in the Therabody ecosystem who want a coordinated stack.
 
-## Where it falls short
+## What are the downsides of TheraFace Mask?
 
 Clinical evidence and price. TheraFace lacks the peer-reviewed dermatology moat of Omnilux or Dr. Dennis Gross — the Theragun pedigree is real but doesn\'t carry into red-light credibility. At $649 the premium relies on brand position rather than evidence.
 
-## Who it is for
+## Who should buy TheraFace Mask?
 
 Choose TheraFace Mask if you\'re already in the Therabody ecosystem and want coordinated face-mask + TheraFace Pro. For dermatology evidence, Omnilux Contour Face. For dermatology brand pedigree, Dr. Dennis Gross. For consumer market leader, CurrentBody Series 2.
 

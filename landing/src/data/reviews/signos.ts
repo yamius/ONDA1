@@ -44,11 +44,11 @@ const signos: ToolReview = {
 
 Signos is the CGM programme that picked a specific job — weight loss — and built around it. The Dexcom G7 sensor underneath is the same one Levels and Nutrisense ship, but the app is the difference: an AI agent watches glucose curves in real time and pushes meal-by-meal recommendations, exercise nudges and snack-stack suggestions through notifications. The framing is consistent: glucose spikes drive insulin, insulin drives fat storage, and the app helps you flatten the curves that matter.
 
-## Where it falls short
+## What are the downsides of Signos?
 
 That same focus is the limit. If you want general biohacker insight — flow-state glucose stability, fasting metabolic adaptation, post-workout recovery curves — Levels gives you a more open analytical frame. The default plan has no human coach; access to a registered dietitian is a separate tier. Annual commitment locks the price even if the programme stops fitting your goals.
 
-## Who it is for
+## Who should buy Signos?
 
 Choose Signos if weight loss is the primary reason you are wearing a CGM and you respond well to in-app AI nudges. If you want a deeper general-purpose insight engine, Levels. If you want a human coach, Nutrisense. The hardware is the same in all three — pick on what sits above it.
 

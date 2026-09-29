@@ -47,11 +47,11 @@ const intakeVsMute: HeadToHead = {
 
 Both are premium nasal dilators. Intake is external magnetic. Mute is internal polymer stent. Different mechanisms; different tolerability profiles.
 
-## When Intake Breathing is the right pick
+## When is Intake Breathing the right pick?
 
 If you want premium external magnetic dilation without internal insertion — Intake is the right shape. Comfortable from night one, lower annual cost, James Nestor-recommended.
 
-## When Mute Nasal Dilator is the right pick
+## When is Mute Nasal Dilator the right pick?
 
 If you tolerate internal devices and want the strongest mechanism with published clinical airflow studies — Mute is the right shape. Invisible externally, most direct mechanical dilation.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',

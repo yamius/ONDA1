@@ -45,11 +45,11 @@ const medito: ToolReview = {
 
 Medito is the no-strings app. Built by the Medito Foundation, an Amsterdam nonprofit with open-source code, it follows a simple principle: no trials, no premium tier, nothing locked behind a paywall, ever. It needs no account, runs no ads, and still covers the fundamentals properly — beginner courses, breathing exercises, sleep meditations and sessions for stress and anxiety. For a free, private, genuinely independent option, it is the cleanest one here.
 
-## Where it falls short
+## What are the downsides of Medito?
 
 It is the fundamentals, not the full range. The library is smaller than the paid giants and shorter on advanced material, there is no adaptive personalisation, and it is an honest community project rather than a research-led program like the Healthy Minds Program. Depth runs out sooner.
 
-## Who it is for
+## Who should buy Medito?
 
 Choose Medito if you want a completely free, ad-free, open-source app with no account and no upsells — especially if you are privacy-conscious or simply opposed to paying to meditate. If you want a larger library or a science-led framework, Insight Timer and the Healthy Minds Program go further.
 

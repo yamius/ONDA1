@@ -42,11 +42,11 @@ const balanceVsCalm: HeadToHead = {
 
 [Balance](/reviews/balance) is the adaptive, personalised plan with a generous free first year; [Calm](/reviews/calm) is the most polished sleep-and-relaxation library in the category.
 
-## When Balance is the right pick
+## When is Balance the right pick?
 
 You want a daily plan that adapts to your goals, and a full free year to try it.
 
-## When Calm is the right pick
+## When is Calm the right pick?
 
 You mainly want the best sleep stories and a huge, beautifully produced library to explore.
 

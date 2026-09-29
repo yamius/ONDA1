@@ -44,11 +44,11 @@ const tempurBreezePro: ToolReview = {
 
 Tempur-Breeze Pro is the passive cooling mattress alternative to active climate systems. Phase-change materials and cool-touch covers run the mattress surface 3–5°C cooler than standard memory foam — without any hub, water tank, or scheduling. For users who want cooler-than-average sleep but not the ceremony of active climate hardware, this is the alternative.
 
-## Where it falls short
+## What are the downsides of Tempur-Breeze Pro Cooling Mattress?
 
 Not active climate. The cooling effect is passive and diminishes as the night progresses. No temperature control. No scheduling. No tracking. As a "sleep climate" tool it is the gentlest possible intervention.
 
-## Who it is for
+## Who should buy Tempur-Breeze Pro Cooling Mattress?
 
 Choose Tempur-Breeze Pro if you want a premium mattress that runs cooler than standard memory foam, without any active hardware. For real climate control, Eight Sleep Pod 4 or ChiliPad Dock Pro. For air-flow at lower price, BedJet 3.
 

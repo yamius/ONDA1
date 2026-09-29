@@ -94,7 +94,7 @@ Every device was scored against ONDA's published [review methodology](/reviews/m
 
 All ten were assessed from manufacturer documentation, independent 2026 reviews and the published sauna and IR-therapy literature rather than hands-on testing.
 
-## The short version
+## Best Infrared Sauna & Sauna: which should you buy?
 
 Three buying questions resolve the category cleanly:
 

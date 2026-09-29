@@ -45,11 +45,11 @@ const sensAi: ToolReview = {
 
 Sens.ai is the only headset in this list that ships as a multi-modal device. Five-channel dry EEG over the scalp, an ear-clip HRV sensor, and an array of near-infrared LEDs over the prefrontal cortex for transcranial photobiomodulation — three independent biomarkers and one independent intervention, woven into a single 25-minute programme. The cross-modal session analysis genuinely uses all three signals; nothing else in the consumer space does this.
 
-## Where it falls short
+## What are the downsides of Sens.ai?
 
 Price first. At $1495 plus an ongoing programme subscription, Sens.ai is the most expensive entry in this category — more than the Neurosity Crown without the Crown’s developer access. The data model is closed by design; raw export is limited. The headset is also physically substantial, comfortable only in a sit-down session rather than for movement or sleep. For users who want one or two of the modalities but not all three, single-purpose devices are better value.
 
-## Who it is for
+## Who should buy Sens.ai?
 
 Choose Sens.ai if the multi-modal stack — EEG + photobiomodulation + HRV in a single programme — is specifically what you want, and the price is acceptable. If you want EEG alone with the deepest content, Muse S Athena. If you want EEG with open data, Neurosity Crown.
 

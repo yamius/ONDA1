@@ -45,11 +45,11 @@ const calm: ToolReview = {
 
 Calm is the most polished app in this comparison. The interface is close to flawless, and the library is enormous — guided meditations, celebrity-narrated Sleep Stories, soundscapes, music and masterclasses. If your reason for installing a meditation app is to fall asleep more easily or to wind down, Calm is the strongest pick here: sleep and relaxation are clearly where its energy goes.
 
-## Where it falls short
+## What are the downsides of Calm?
 
 The free tier is thin. The Daily Calm is genuinely useful, but the library proper sits behind Premium, so without a subscription the app is closer to a sample than a practice. And while the content is broad and beautifully produced, it leans toward relaxation rather than the structured, progressive instruction that Headspace and Waking Up build their courses around.
 
-## Who it is for
+## Who should buy Calm?
 
 Choose Calm if sleep and relaxation are your priority and a polished, soothing experience matters to you — and you are happy to pay for the full library. If you want to genuinely learn to meditate, or to practise for free, look at Headspace or Insight Timer.
 

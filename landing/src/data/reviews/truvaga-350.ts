@@ -44,11 +44,11 @@ const truvaga350: ToolReview = {
 
 Truvaga 350 is the most credible cervical-VNS device a consumer can buy without a prescription. electroCore — the company behind the FDA-cleared gammaCore line — repackaged its medical hardware platform as a wellness device, keeping the same handheld form factor and the same 5 kHz burst waveform that runs in the prescription unit. Manufacturing provenance and safety profile inherit directly from the clinical line, which is unusual at this price point.
 
-## Where it falls short
+## What are the downsides of Truvaga 350?
 
 The consumer version is no longer regulated as a medical device — Truvaga is sold for general wellness, and the wellness-indication clinical evidence is much thinner than gammaCore’s headache record. The 350 designation is literal: 350 two-minute sessions and the unit retires, after which you pay for a refresh. There is no on-device HRV, and protocol variety is limited to intensity.
 
-## Who it is for
+## Who should buy Truvaga 350?
 
 Choose Truvaga 350 if you want cervical-trunk tVNS — the same approach used in the FDA-cleared device — without going through a clinician, and you are willing to accept thinner wellness-indication evidence in exchange for accessibility. If you want the deepest research base, Nurosym (auricular) has the trial record. If you have a real headache diagnosis, gammaCore is the right tool.
 

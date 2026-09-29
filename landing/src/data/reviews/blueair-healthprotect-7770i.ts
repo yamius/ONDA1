@@ -44,11 +44,11 @@ const blueair7770: ToolReview = {
 
 Blueair HealthProtect 7770i is the Swedish premium reference — HEPASilent ion-charge filtration delivers HEPA-equivalent capture at lower noise, GermShield always-on continuous mode, full smart-feature integration. Multi-decade European brand pedigree.
 
-## Where it falls short
+## What are the downsides of Blueair HealthProtect 7770i?
 
 Coverage and filter cost vs Coway. 540 sq ft vs Coway Airmega 400\'s 1560 sq ft AHAM coverage. 6-month filter cycle vs Coway 12-month.
 
-## Who it is for
+## Who should buy Blueair HealthProtect 7770i?
 
 Choose Blueair 7770i for Swedish premium HEPASilent + GermShield. For higher coverage at lower price, Coway Airmega 400. For clinical HEPA, IQAir HealthPro Plus. For Dyson polish, Dyson Big+Quiet.
 

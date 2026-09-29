@@ -42,11 +42,11 @@ const plungeVsColdPod: HeadToHead = {
 
 [The Plunge All-In](/reviews/plunge) is the finished cold-plunge appliance — built-in chiller, filtration, no ice, ready daily — at a premium price. [Cold Pod](/reviews/cold-pod) is the cheapest legitimate entry: a $220 inflatable tub you fill with ice.
 
-## When The Plunge is the right pick
+## When is The Plunge the right pick?
 
 You want a permanent, always-cold plunge with no ice runs and clean water for weeks, and the $5,990 is within budget. It is the appliance you stop thinking about.
 
-## When the Cold Pod is the right pick
+## When is the Cold Pod the right pick?
 
 You want to start cold exposure now for the least money, and you are fine buying ice and refilling it. It is the honest, portable entry — just watch the running cost.
 

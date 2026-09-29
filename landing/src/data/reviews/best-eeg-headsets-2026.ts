@@ -94,7 +94,7 @@ Every device was scored against ONDA’s published [review methodology](/reviews
 
 All ten devices were assessed from manufacturer documentation, published validation literature where available and independent 2026 reviews rather than hands-on testing, so treat the scores as an evidence-based starting point.
 
-## The short version
+## Best EEG & Brain-Training Headsets: which should you buy?
 
 The category divides on modality and on intent.
 

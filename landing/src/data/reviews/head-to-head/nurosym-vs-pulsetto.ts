@@ -47,11 +47,11 @@ const nurosymVsPulsetto: HeadToHead = {
 
 Nurosym is the clinical-grade auricular tVNS device with the deepest evidence base in consumer tVNS; Pulsetto is the accessible cervical tVNS collar with the widest protocol library at a third of the price. Pick on whether evidence depth or daily-use form factor matters more.
 
-## When Nurosym is the right pick
+## When is Nurosym the right pick?
 
 For self-experimenters and biohackers who want to reference the literature, Nurosym is the right shape. The 25 Hz pulse parameters are disclosed and consistent with the published trial protocols, the hardware is the same platform used in those trials, and the deliberate single-programme spartan UX matches how the research treats the device.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 For users who want a polished daily-use experience with guided sleep, stress, anxiety and pain programmes, Pulsetto is the right shape. The neck collar is faster to put on than an ear clip, the four-mode library covers the common use cases, and at $269 it is a third of the entry cost of Nurosym.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

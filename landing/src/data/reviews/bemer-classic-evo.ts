@@ -44,11 +44,11 @@ const bemerClassicEvo: ToolReview = {
 
 Bemer Classic Evo is the PEMF category reference — the device with the deepest published research base on a specific consumer waveform. The Bemer biorhythmic signal has 50+ peer-reviewed studies on microcirculation; no other consumer PEMF brand has that research moat. FDA Class II clearance and a multi-decade brand pedigree compound the credibility advantage.
 
-## Where it falls short
+## What are the downsides of Bemer Classic Evo?
 
 Price and intensity. At $5,490 Bemer is the most expensive consumer PEMF mat by a meaningful margin, and the raw field intensity (35–150 µT) is dramatically lower than coil systems like Pulse Centers (200,000+ µT peak). Bemer's thesis is that waveform shape matters more than peak intensity — true per their research, but it leaves the device vulnerable to "underpowered" criticism from intensity-first competitors.
 
-## Who it is for
+## Who should buy Bemer Classic Evo?
 
 Choose Bemer Classic Evo if you want the most-researched PEMF waveform with FDA Class II clearance and you accept premium pricing. For high-intensity coil work, Pulse Centers. For multi-modality at lower price, Healthy Wave Multi-Wave. For wearable PEMF at the entry tier, Resona Health VIBE.
 

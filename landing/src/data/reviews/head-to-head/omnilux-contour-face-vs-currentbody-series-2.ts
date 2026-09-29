@@ -47,11 +47,11 @@ const omniluxVsCurrentbody: HeadToHead = {
 
 Both are premium flexible-silicone red light face masks. Omnilux is the clinical-evidence reference. CurrentBody is the consumer-market reference with integrated neck coverage.
 
-## When Omnilux Contour Face is the right pick
+## When is Omnilux Contour Face the right pick?
 
 If you want FDA Class II clearance and peer-reviewed dermatology evidence on the specific device — Omnilux is the right shape. Used in dermatology practices; clinical credibility unmatched.
 
-## When CurrentBody Series 2 is the right pick
+## When is CurrentBody Series 2 the right pick?
 
 If you want integrated neck flap, largest consumer customer base and feature-refined polish from multiple user-feedback iterations — CurrentBody is the right shape. The rational consumer default.`,
   relatedComparisonSlug: 'best-red-light-face-masks-2026',

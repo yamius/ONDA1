@@ -44,11 +44,11 @@ const molekuleAirPro: ToolReview = {
 
 Molekule Air Pro is the premium PECO-technology entry — photocatalytic oxidation destroys VOCs and pathogens at molecular level beyond what HEPA filters catch, combined with True HEPA H13 layer. Polished consumer UX with full smart-feature integration.
 
-## Where it falls short
+## What are the downsides of Molekule Air Pro?
 
 PECO efficacy beyond HEPA claims have been debated in independent reviews; Molekule reached FTC settlements clarifying the marketing boundaries. Higher long-term filter cost than IQAir.
 
-## Who it is for
+## Who should buy Molekule Air Pro?
 
 Choose Molekule Air Pro for PECO technology + premium smart features. For clinical-grade HEPA without smart features, IQAir HealthPro Plus. For consumer-polished smart features at lower price, Dyson Big+Quiet or Coway Airmega 400.
 

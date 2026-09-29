@@ -44,11 +44,11 @@ const mitoRedMitoPro1500: ToolReview = {
 
 The Mito Red MitoPRO 1500 is the panel biohackers actually buy when they want most of a Joovv at a meaningful discount. The four-wavelength coverage (630 + 660 + 830 + 850 nm) is the richest spectrum in this list — Joovv runs only two — and independent meter readings sit close to the manufacturer-stated irradiance. Build, EMF and flicker are in the same league as Joovv. The brand has a strong biohacker following and the marketing is restrained for the category.
 
-## Where it falls short
+## What are the downsides of Mito Red MitoPRO 1500?
 
 The MitoPRO 1500 is not FDA-registered the way the Joovv Solo 3.0 is. For most consumer use cases this does not matter — the underlying photobiomodulation evidence is mechanism-level, not device-specific — but it is a real difference if Class II clearance matters to you. Stand and mount hardware add to the headline price for full-body setups.
 
-## Who it is for
+## Who should buy Mito Red MitoPRO 1500?
 
 Choose Mito Red MitoPRO 1500 if you want premium four-wavelength coverage with honest spec discipline, at a price meaningfully under Joovv. If FDA registration or modular stacking is the deciding criterion, Joovv is the right shape. If price is the deciding criterion, Hooga HG500 covers most of the basic spec at a third of the cost.
 

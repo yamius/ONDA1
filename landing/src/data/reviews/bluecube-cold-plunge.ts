@@ -44,11 +44,11 @@ const blueCubeColdPlunge: ToolReview = {
 
 BlueCube is the commercial-tier cold plunge — built for clinics, gyms and multi-user households where back-to-back continuous use is the load case. The chiller capacity and sanitation systems are overbuilt for single-user home practice but exactly right for the commercial use case.
 
-## Where it falls short
+## What are the downsides of BlueCube Cold Plunge?
 
 Price and overkill. For single-user home practice, BlueCube is more capability than you will use at twice the cost of Plunge.
 
-## Who it is for
+## Who should buy BlueCube Cold Plunge?
 
 Choose BlueCube if you are running a clinic, athletic facility, or household with three or more users sharing the plunge. For single-user home use, Plunge, Edge or Coldture deliver more than enough capability at a third of the cost.
 

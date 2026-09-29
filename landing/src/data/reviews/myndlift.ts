@@ -45,11 +45,11 @@ const myndlift: ToolReview = {
 
 Myndlift is the clinical reference for what neurofeedback can be when an actual clinician designs the protocol and adjusts it week by week. The patient wears a Muse 2 headband (or the multi-site channel extender for richer EEG), runs sessions at home, and the data flows back to the licensed supervising provider — who tunes the protocol, tracks symptom scales (ASRS for ADHD, GAD-7 for anxiety) and reports outcomes. It is the only platform in this category whose pedigree rests on supervised clinical use rather than consumer self-direction.
 
-## Where it falls short
+## What are the downsides of Myndlift?
 
 You cannot buy it directly. Access is gated by a licensed mental-health provider who has Myndlift in their practice; the monthly cost ($300–$600) reflects clinical supervision rather than just hardware and software. The data model is closed by design — raw EEG access does not flow back to the patient. As a consumer biohacker tool it is the wrong shape; as a clinical tool with diagnosed need, it is the most defensible option in this list.
 
-## Who it is for
+## Who should buy Myndlift?
 
 Choose Myndlift if you have a diagnosed condition (ADHD, anxiety, post-traumatic stress, sleep disorder) and a licensed mental-health provider willing to prescribe and supervise. For self-directed brain training, Muse S Athena or Neurosity Crown are the right consumer shapes; Myndlift is the clinical reference point in the same category.
 

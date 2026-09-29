@@ -48,11 +48,11 @@ const healthyMindsVsWakingUp: HeadToHead = {
 
 Healthy Minds is the research-lab app with a structured framework and a genuinely free model. Waking Up is the philosophical project under Sam Harris with non-dual practice and philosophy lectures. Different approaches to credibility; pick on which matches what you actually want.
 
-## When Healthy Minds Program is the right pick
+## When is Healthy Minds Program the right pick?
 
 If you want a science-backed meditation framework from a credible research lab — Richard Davidson’s four-pillar training (awareness, connection, insight, purpose) — and a genuinely free app, Healthy Minds is the right shape. The no-paywall model is unique in the consumer space.
 
-## When Waking Up is the right pick
+## When is Waking Up the right pick?
 
 If you want meditation as part of a wider inquiry into mind and philosophy, with Sam Harris’ teaching voice plus lectures from neuroscientists and philosophers around it, Waking Up is the right shape. The free-access policy means cost is never the blocker.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',

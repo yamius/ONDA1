@@ -54,15 +54,15 @@ const iqairVsMolekuleVsDyson: HeadToHead = {
 
 Three premium air purifiers, three different theses. IQAir = clinical HEPA depth. Molekule = PECO + premium smart. Dyson = consumer polish + formaldehyde + smartest.
 
-## When IQAir HealthPro Plus is the right pick
+## When is IQAir HealthPro Plus the right pick?
 
 If your purchase decision is filtration-depth driven and you want clinical-grade HEPA with Swiss pedigree — IQAir is the right shape. Accept lack of smart features.
 
-## When Molekule Air Pro is the right pick
+## When is Molekule Air Pro the right pick?
 
 If you want PECO photocatalytic VOC destruction + premium smart features — Molekule is the right shape. Accept FTC-settlement marketing context and higher long-term filter cost.
 
-## When Dyson Big+Quiet is the right pick
+## When is Dyson Big+Quiet the right pick?
 
 If you want premium consumer-brand polish + best smart features + formaldehyde destruction + quietest operation at lowest premium price — Dyson is the right shape. The rational premium choice for most users.`,
   relatedComparisonSlug: 'best-air-purifiers-2026',

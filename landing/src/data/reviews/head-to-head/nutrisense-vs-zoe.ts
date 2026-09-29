@@ -48,11 +48,11 @@ const nutrisenseVsZoe: HeadToHead = {
 
 Nutrisense is ongoing CGM with a human dietitian on the data. Zoe is a multi-biomarker personalised-nutrition programme where CGM is one of three signals. They look adjacent but serve different jobs.
 
-## When Nutrisense is the right pick
+## When is Nutrisense the right pick?
 
 If you want continuous CGM data plus a registered dietitian working through it weekly — accountability through a person, on the most accurate consumer sensor — Nutrisense is the right shape. The coach is the value; the data is the input.
 
-## When Zoe is the right pick
+## When is Zoe the right pick?
 
 If you want personalised nutrition grounded in real published science, and a one-time multi-biomarker reset (CGM + gut microbiome + blood) followed by ongoing food-ranking guidance is what you want — Zoe is the right shape. The PREDICT studies are the scientific anchor; the food rankings are the deliverable.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

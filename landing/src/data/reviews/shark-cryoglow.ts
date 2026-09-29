@@ -44,11 +44,11 @@ const sharkCryoglow: ToolReview = {
 
 Shark CryoGlow is the 2026 hybrid form-factor novelty — active facial cooling combined with red + blue LED in one device. Cooling element is genuinely useful and Shark Beauty brand pedigree is real (Shark vacuum / appliance crossover into beauty hardware).
 
-## Where it falls short
+## What are the downsides of Shark CryoGlow?
 
 LED dose and hybrid trade-offs. Cooling element shares the form factor with LEDs and limits dose. Hybrid form factor adds weight and complexity vs pure silicone masks. Limited peer-reviewed clinical evidence on the cooling + LED combination specifically.
 
-## Who it is for
+## Who should buy Shark CryoGlow?
 
 Choose Shark CryoGlow if you want cooling + LED combined into one device for inflammation / puffiness work. For pure LED clinical evidence, Omnilux Contour Face. For pure LED consumer market leader, CurrentBody Series 2. For budget multi-modality handheld, Solawave Wand.
 

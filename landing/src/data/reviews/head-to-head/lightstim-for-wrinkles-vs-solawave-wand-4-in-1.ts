@@ -46,11 +46,11 @@ const lightstimVsSolawave: HeadToHead = {
 
 Both are handheld red light devices under $300. LightStim is the FDA-cleared decade-long clinical reference. Solawave is the budget multi-modality consumer entry.
 
-## When LightStim for Wrinkles is the right pick
+## When is LightStim for Wrinkles the right pick?
 
 If you want FDA-cleared handheld red light with peer-reviewed clinical evidence on the specific device — LightStim is the right shape. Four-wavelength coverage, documented dose, 1+ decade track record.
 
-## When Solawave Wand 4-in-1 is the right pick
+## When is Solawave Wand 4-in-1 the right pick?
 
 If you want budget entry to red light with multi-modality consumer stack — Solawave is the right shape. Single red wavelength, modest dose, but the LED + microcurrent + warmth + massage bundle is solid consumer value at $169.`,
   relatedComparisonSlug: 'best-red-light-face-masks-2026',

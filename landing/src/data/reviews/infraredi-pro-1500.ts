@@ -44,11 +44,11 @@ const infraredi: ToolReview = {
 
 Infraredi Pro 1500 is the large-panel value pick. Comparable coverage to MitoPRO 1500, comparable four-wavelength spectrum (630 + 660 + 830 + 850 nm), comparable EMF testing — at $200 less and with stand and door mount included rather than sold separately. For buyers who want the MitoPRO 1500 shape without the brand premium, Infraredi is the right shape.
 
-## Where it falls short
+## What are the downsides of Infraredi Pro 1500?
 
 Brand maturity. Infraredi is newer than Joovv or Mito Red, and the multi-year reliability track record is thinner. EMF and flicker testing is published but less independently re-verified than the larger brands. No FDA Class II registration.
 
-## Who it is for
+## Who should buy Infraredi Pro 1500?
 
 Choose Infraredi Pro 1500 if MitoPRO-class large-panel coverage at $200 less is the deciding criterion and you are comfortable with a newer brand. For the established biohacker community, Mito Red. For pure budget, Hooga.
 

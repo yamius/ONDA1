@@ -44,11 +44,11 @@ const sleepNumberClimate360: ToolReview = {
 
 Sleep Number Climate360 is the smart-bed approach to sleep climate. The Climate is built into the Sleep Number 360 mattress rather than added as a cover — no pad to install, no hub on the nightstand, no water tank. Mature SleepIQ tracking and multi-decade brand reliability are included.
 
-## Where it falls short
+## What are the downsides of Sleep Number Climate360?
 
 Climate range is less aggressive than dedicated water-cooled systems (Eight Sleep, ChiliPad). Mattress-integrated means you cannot retrofit on an existing bed. Premium pricing without biohacker positioning means most committed sleep-climate users prefer Eight Sleep or Sleepme.
 
-## Who it is for
+## Who should buy Sleep Number Climate360?
 
 Choose Sleep Number Climate360 if you want smart-bed climate built into the mattress with no separate layer. For aggressive dedicated cooling, Eight Sleep Pod 4 or ChiliPad Dock Pro. For mattress-on-existing-bed, Pod Cover Pro.
 

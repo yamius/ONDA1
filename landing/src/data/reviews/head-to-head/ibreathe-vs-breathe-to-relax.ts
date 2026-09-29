@@ -46,11 +46,11 @@ const ibreatheVsB2r: HeadToHead = {
 
 Both are free breathwork apps. iBreathe is the modern minimalist timer. Breathe2Relax is the clinical-evidence-backed diaphragmatic-breathing app.
 
-## When iBreathe is the right pick
+## When is iBreathe the right pick?
 
 If you want a clean modern minimalist breath timer with visual guide and Apple Watch native support at zero cost — iBreathe is the right shape. Modern UI, no subscription pressure.
 
-## When Breathe2Relax is the right pick
+## When is Breathe2Relax the right pick?
 
 If you want evidence-backed diaphragmatic breathing — especially in clinical, PTSD or stress-management contexts — Breathe2Relax is the right shape. Dated UI, but the validation studies are unmatched at zero cost.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',

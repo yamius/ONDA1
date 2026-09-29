@@ -44,11 +44,11 @@ const eightSleepPodCoverPro: ToolReview = {
 
 Eight Sleep Pod Cover Pro is the cover-only Pod — same dual-zone climate, same Autopilot, same HRV tracking — fitting on your existing mattress. For users not ready to replace their mattress, this is the entry into Eight Sleep at $1,500-2,000 lower than the full Pod 4 system.
 
-## Where it falls short
+## What are the downsides of Eight Sleep Pod Cover Pro?
 
 Same subscription model as Pod 4. Mattress compatibility limited to ~14 inch thickness. The cover slightly changes mattress feel.
 
-## Who it is for
+## Who should buy Eight Sleep Pod Cover Pro?
 
 Choose Eight Sleep Pod Cover Pro if you want Pod 4 capability on your existing mattress. For full Pod 4 system, more flexible install. For subscription-free, ChiliPad.
 

@@ -45,11 +45,11 @@ const withingsScanwatch: ToolReview = {
 
 The Withings ScanWatch 2 is the clinical-health pick of this comparison. It looks like an ordinary analog watch, but it carries a regulator-cleared single-lead ECG, SpO2, a temperature sensor and breathing-disturbance detection — and it runs for roughly a month on a charge. It is the easiest device here to simply wear and forget, and there is no subscription: the clinical features are unlocked at purchase.
 
-## Where it falls short
+## What are the downsides of Withings ScanWatch 2?
 
 For dedicated HRV work it is competent rather than class-leading. The ECG is an on-demand spot reading, not a continuous protocol, so the all-night HRV signal is still optical — fine for trends, short of the reference-grade accuracy of a chest strap. It is also less recovery-focused than Oura or Whoop: HRV is one health metric among many here, not the headline.
 
-## Who it is for
+## Who should buy Withings ScanWatch 2?
 
 Choose the Withings ScanWatch 2 if you want a discreet, long-lasting watch with genuine clinical screening — ECG, SpO2, apnea — and no subscription, and you treat HRV as one signal among several. If overnight HRV and recovery are the whole point, a dedicated ring or band will track them more closely.
 

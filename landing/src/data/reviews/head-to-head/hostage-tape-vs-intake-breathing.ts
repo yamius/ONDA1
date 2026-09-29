@@ -46,11 +46,11 @@ const hostageVsIntake: HeadToHead = {
 
 Two opposite approaches to nasal breathing. Hostage Tape forces it via mouth seal. Intake makes it easier via nostril dilation. Different mechanisms; can be stacked.
 
-## When Hostage Tape is the right pick
+## When is Hostage Tape the right pick?
 
 If you\'re committed to forcing nasal breathing via mouth seal and you\'ve ruled out sleep apnea — Hostage Tape is the right shape. Direct mechanism, subscription convenience.
 
-## When Intake Breathing is the right pick
+## When is Intake Breathing the right pick?
 
 If you can\'t adapt to mouth tape or you want lower-risk entry — Intake is the right shape. Comfortable from night one, no sleep-apnea contraindication, makes nasal breathing easier without forcing it.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',

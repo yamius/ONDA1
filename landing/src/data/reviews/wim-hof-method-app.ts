@@ -44,11 +44,11 @@ const wimHofMethodApp: ToolReview = {
 
 Wim Hof Method app is the official reference for the Wim Hof breath protocol — structured rounds at varying levels, cold-exposure protocols, certified-instructor video courses, and credible citation of the Radboud University immune-response and autonomic-system studies that put the method on the scientific map.
 
-## Where it falls short
+## What are the downsides of Wim Hof Method?
 
 Single-method focus. The app is excellent for Wim Hof Method specifically; it does not cover Buteyko, 4-7-8, cyclic sighing or the broader breathwork landscape with the depth Breathwrk does. Cold-exposure integration assumes you have access to cold immersion hardware.
 
-## Who it is for
+## Who should buy Wim Hof Method?
 
 Choose Wim Hof Method app if you're committed to the WHM specifically. For broad technique coverage, Breathwrk. For cinematic music breathwork, Othership. For rhythmic music breathwork with certifications, SOMA Breath.
 

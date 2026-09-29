@@ -45,11 +45,11 @@ const pzizz: ToolReview = {
 
 Pzizz does one thing and does it well: it plays you to sleep. Its "dreamscape" algorithm builds a unique mix of music, voiceover and sound effects every session, so the audio never gets familiar enough to stop working — the usual failure mode of a fixed playlist. Dedicated nap and focus modules extend the same idea to daytime. The app is refreshingly simple: pick a module, set a timer, sleep.
 
-## Where it falls short
+## What are the downsides of Pzizz?
 
 It is a fall-asleep aid and nothing else. There is no tracking, no analytics, no insight into your night — by design, but it means Pzizz cannot tell you whether anything is improving. The full module set needs a subscription.
 
-## Who it is for
+## Who should buy Pzizz?
 
 Choose Pzizz if you simply want to be played to sleep and have no interest in tracking. If you want to measure your night, or want a broader relaxation library, a tracker or BetterSleep is the better fit.
 

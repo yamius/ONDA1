@@ -42,11 +42,11 @@ const gen3VsGen2: HeadToHead = {
 
 A straight upgrade. The [RingConn Gen 3](/reviews/ringconn-gen-3) adds a haptic motor, vascular/blood-pressure trends, sleep-apnea insights and a longer battery over the [RingConn Gen 2](/reviews/ringconn-gen-2); the Gen 2 is the cheaper value pick. Both subscription-free.
 
-## When the Gen 3 is the right pick
+## When is the Gen 3 the right pick?
 
 You want the new features — silent haptic alerts, vascular/sleep-apnea insights — and the longest battery.
 
-## When the Gen 2 is the right pick
+## When is the Gen 2 the right pick?
 
 You want dependable subscription-free sleep and HRV tracking for less.
 

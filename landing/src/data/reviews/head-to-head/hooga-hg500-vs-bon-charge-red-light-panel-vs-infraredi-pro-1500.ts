@@ -55,15 +55,15 @@ const threeValuePanels: HeadToHead = {
 
 Three value-tier panels at three different price points. Hooga is pure budget. Bon Charge is wellness-brand mid-tier. Infraredi is large-panel value at the top of the under-$1,000 tier.
 
-## When Hooga HG500 is the right pick
+## When is Hooga HG500 the right pick?
 
 If budget is the deciding factor and you want verified two-wavelength specs at the lowest legitimate price, Hooga is the right shape. Most first-time buyers should start here.
 
-## When Bon Charge is the right pick
+## When is Bon Charge the right pick?
 
 If you are in an EU/AU market and want a panel from an established wellness brand, Bon Charge is the right shape. The $550 over Hooga buys brand recognition and somewhat more premium build, not better specs.
 
-## When Infraredi Pro 1500 is the right pick
+## When is Infraredi Pro 1500 the right pick?
 
 If you want the largest half-body coverage and broadest spectrum under $1,000, Infraredi is the right shape. Closest thing to MitoPRO at a $200 discount.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',

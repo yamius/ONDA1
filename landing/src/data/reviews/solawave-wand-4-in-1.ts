@@ -44,11 +44,11 @@ const solawave: ToolReview = {
 
 Solawave Wand 4-in-1 is the budget red light entry — handheld wand stacking red LED with microcurrent, warmth and massage at $169. Multi-modality consumer convenience and accessible pricing make it the entry tier in the category.
 
-## Where it falls short
+## What are the downsides of Solawave Wand 4-in-1?
 
 Dose, wavelength scope and clinical evidence. Single red wavelength only, narrow per-zone coverage, modest irradiance, light evidence base. For users serious about red light therapy, masks deliver more dose per session at higher cost.
 
-## Who it is for
+## Who should buy Solawave Wand 4-in-1?
 
 Choose Solawave Wand for budget-conscious entry to red light therapy with multi-modality consumer convenience. For FDA-cleared handheld evidence reference, LightStim for Wrinkles. For lie-on mask convenience, CurrentBody Series 2. For clinical-evidence reference, Omnilux Contour Face.
 

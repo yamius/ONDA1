@@ -99,7 +99,7 @@ Every massage gun was scored against ONDA\'s published [review methodology](/rev
 
 All ten were assessed from manufacturer documentation and 2026 athletic / fitness reviews at scale rather than hands-on testing.
 
-## The short version
+## Best Massage Guns: which should you buy?
 
 Three buying questions resolve the category cleanly:
 

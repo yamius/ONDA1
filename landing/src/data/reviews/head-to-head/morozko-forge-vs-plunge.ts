@@ -47,11 +47,11 @@ const morozkoVsPlunge: HeadToHead = {
 
 Morozko Forge is the extreme-protocol cold-plunge tub; The Plunge is the typical daily-use cold-plunge tub. For most users, Plunge delivers the benefits at less than half the cost.
 
-## When Morozko Forge is the right pick
+## When is Morozko Forge the right pick?
 
 If extreme cold-exposure depth (sub-40°F, ice formation, Wim Hof Method) is the explicit use case, Morozko is the only consumer device that delivers. Otherwise it is overkill at twice the cost.
 
-## When The Plunge is the right pick
+## When is The Plunge the right pick?
 
 If typical daily-use cold-plunge practice is the goal — and 39°F floor is colder than the published research even requires — Plunge is the right shape. The $4,000+ savings versus Morozko buys a lot of other biohacker hardware.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',

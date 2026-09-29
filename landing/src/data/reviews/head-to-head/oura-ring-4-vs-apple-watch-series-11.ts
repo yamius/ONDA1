@@ -48,11 +48,11 @@ const ouraVsAppleWatch: HeadToHead = {
 
 For HRV and sleep — the things Oura was built to do — Oura wins decisively. For general smartwatch features, Apple wins. They are different products with overlapping HRV listings; the comparison is mostly about whether HRV is the reason you are buying.
 
-## When Oura is the right pick
+## When is Oura the right pick?
 
 If you want to track HRV and sleep as the central job and you are willing to absorb the $5.99/month membership, Oura is the right shape. The form factor, the 7-day battery, the continuous overnight signal and the sleep model all line up around the HRV use case in a way Apple Watch does not.
 
-## When Apple Watch is the right pick
+## When is Apple Watch the right pick?
 
 If HRV is a feature on the list but not the deciding criterion, Apple Watch is the right shape — ECG, messaging, payments, apps, fall detection, the deepest smartwatch ecosystem available. Just do not pretend it is the HRV tool Oura is.
 

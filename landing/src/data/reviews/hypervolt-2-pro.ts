@@ -44,15 +44,15 @@ const hypervolt2Pro: ToolReview = {
 
 > Hyperice released the Hypervolt 3 line in March 2026. The new [Hypervolt 3 Pro](/reviews/hypervolt-3-pro) raises stall force to ~70 lbs, runs quieter (~51 dB), lasts four hours per charge and ships larger attachments — at a lower $349. If you are buying new, it is the better pick; the Hypervolt 2 Pro remains a strong value if discounted below it.
 
-## Where it leads
+## What does Hyperice Hypervolt 2 Pro do well?
 
 Hypervolt 2 Pro is the Theragun rival — matching the spec ceiling on stall force, marginally quieter, lighter, $200 cheaper. Strong NBA/NFL distribution pedigree. The rational premium choice for users who reject Therabody pricing.
 
-## Where it falls short
+## What are the downsides of Hyperice Hypervolt 2 Pro?
 
 Amplitude and warranty. 14 mm amplitude trails Theragun\'s 16 mm; 1-year warranty trails Theragun\'s 2-year. Single-grip handle less versatile than Theragun\'s multi-grip design.
 
-## Who it is for
+## Who should buy Hyperice Hypervolt 2 Pro?
 
 Choose Hypervolt 2 Pro if you want premium percussion at $200 less than Theragun PRO Plus. For deepest amplitude + best warranty, Theragun PRO Plus. For mid-tier premium, Theragun Elite. For travel mini, Hypervolt Go 2.
 

@@ -45,11 +45,11 @@ const muse2: ToolReview = {
 
 Muse 2 is the device that taught the consumer EEG market what good looks like. The four dry electrodes are not research-grade but they are adequate; the meditation content library is the deepest in the consumer space; the app has been polished through more than a decade of iteration. At $249 it is the cheapest legitimate EEG meditation headband on the market that still has a real ecosystem behind it.
 
-## Where it falls short
+## What are the downsides of Muse 2?
 
 Time is the issue. The Muse 2 hardware predates the Athena variant and lacks fNIRS, sleep tracking and overnight wear. For pure meditation use the gap matters less than the price difference suggests — but if you want sleep, you have outgrown this device. The developer SDK is limited, so biohackers wanting raw signal access reach for Neurosity Crown instead.
 
-## Who it is for
+## Who should buy Muse 2?
 
 Choose Muse 2 if meditation feedback is the only thing you want from an EEG headset and price matters. If you want sleep tracking on top, Muse S Athena. If you want raw EEG data for self-experimentation, Neurosity Crown.
 

@@ -44,11 +44,11 @@ const cowayAp1512: ToolReview = {
 
 Coway Airmega AP-1512HH is the Wirecutter-favorite budget reference — multi-year recommendation track record, True HEPA H13 + carbon + PM2.5 sensor + auto mode at $229. Best budget brand-trust play.
 
-## Where it falls short
+## What are the downsides of Coway Airmega AP-1512HH?
 
 App integration and coverage. No app integration vs Levoit Core 600S. Smaller 361 sq ft coverage vs Levoit 635 sq ft.
 
-## Who it is for
+## Who should buy Coway Airmega AP-1512HH?
 
 Choose Coway AP-1512HH for budget Wirecutter-trust reference. For app integration at slightly higher price, Levoit Core 600S. For PlasmaWave option, Winix 5500-2. For entry budget, Levoit Core 300.
 

@@ -44,11 +44,11 @@ const relaxSaunaPortable: ToolReview = {
 
 Relax Sauna Portable is the upright portable far-IR option for users uncomfortable with the prone blanket form factor. Chair-and-tent design, foldable, no install, documented low EMF, 20+ year brand track record. For users who want seated IR exposure that packs away, this is the right shape.
 
-## Where it falls short
+## What are the downsides of Relax Sauna Portable?
 
 Pricier than HigherDose Blanket for narrower form-factor flexibility. Far-IR-only spectrum. Smaller user base and research footprint than mainstream IR brands.
 
-## Who it is for
+## Who should buy Relax Sauna Portable?
 
 Choose Relax Sauna Portable if you want upright seated portable IR and the chair-tent ergonomic specifically suits you. For blanket-style portable, HigherDose. For cabin IR, Sunlighten / Clearlight / JNH.
 

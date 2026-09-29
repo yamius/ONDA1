@@ -94,7 +94,7 @@ Every device was scored against ONDA's published [review methodology](/reviews/m
 
 All ten devices were assessed from manufacturer documentation, published trial records, regulatory clearances and independent 2026 reviews rather than hands-on testing, so treat the scores as an evidence-based starting point.
 
-## The short version
+## Best Vagus Nerve Stimulators: which should you buy?
 
 The field splits cleanly into four mechanism classes, and the right pick depends mostly on what you want the stimulation to do.
 

@@ -50,15 +50,15 @@ const threeBudgetPlunge: HeadToHead = {
 
 Three different budget shapes. Ice Barrel is the popular vertical barrel; Cold Pod is the cheapest inflatable portable; Inergize is the rigid modular tub that can upgrade to chiller.
 
-## When Ice Barrel 500 is the right pick
+## When is Ice Barrel 500 the right pick?
 
 If you want the popular vertical-barrel form with proven multi-year reliability and your vertical footprint matters — Ice Barrel is the right shape.
 
-## When Cold Pod is the right pick
+## When is Cold Pod the right pick?
 
 If $220 upfront is the deciding price point or you need a tub that folds away when not in use — Cold Pod is the right shape. Best for testing cold-plunge practice with minimum commitment.
 
-## When Inergize Cold Tub is the right pick
+## When is Inergize Cold Tub the right pick?
 
 If you want the option to upgrade to chiller-built later — start with ice-fill at $1,500 tub-only, add the chiller for ~$1,300 when daily-use intent is established. The modular path makes sense for users not sure they will commit to daily use.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',

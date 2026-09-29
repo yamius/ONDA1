@@ -46,11 +46,11 @@ const levelsVsNutrisense: HeadToHead = {
 
 Levels and Nutrisense ship the same Dexcom G7 sensor. The decision is between two coaching models — app intelligence (Levels) or a registered dietitian (Nutrisense). Pick on which model you will actually engage with.
 
-## When Levels is the right pick
+## When is Levels the right pick?
 
 Levels is the right shape for users who treat CGM as a self-experiment instrument: log meals, run protocols, read the curves, iterate. The app does the heavy lifting and the content library backs it up — which is enough for users who would have skipped the weekly RD message at Nutrisense anyway. It is also $80–$110/month cheaper.
 
-## When Nutrisense is the right pick
+## When is Nutrisense the right pick?
 
 Nutrisense is the right shape when accountability is the value. A registered dietitian reviewing your data weekly, sending written summaries and answering questions in-app is the difference between sustained behavioural change and a $200 month of charts for many users. Pay the premium only if you will use the coach.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

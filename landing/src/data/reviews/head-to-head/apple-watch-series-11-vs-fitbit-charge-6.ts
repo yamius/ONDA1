@@ -48,11 +48,11 @@ const appleWatchVsFitbit: HeadToHead = {
 
 Apple Watch and Fitbit Charge 6 are not really substitutes — they target different jobs. Apple is the most capable smartwatch on the market; Fitbit is the cheapest credible passive HRV tracker. Decide on what you actually want from the device.
 
-## When Apple Watch is the right pick
+## When is Apple Watch the right pick?
 
 If you are on iPhone and want a watch that handles messaging, payments, ECG, fall detection, third-party apps and a thousand other things, Apple Watch is the right shape. HRV is one feature among many — not the centre, and not the best in this list.
 
-## When Fitbit Charge 6 is the right pick
+## When is Fitbit Charge 6 the right pick?
 
 If HRV and sleep tracking are the reason you are buying and you would rather not pay smartwatch prices for features you will not use, Fitbit Charge 6 is the right shape. The continuous overnight HRV pipeline, the seven-day battery and the cross-platform support are exactly what a tracker should be — at roughly 40% of Apple’s price.
 

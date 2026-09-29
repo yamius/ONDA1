@@ -53,7 +53,7 @@ Two real things: the sensors, and the fit. The Ring 5 is about **40% slimmer and
 
 Unchanged, and still the main mark against it: the ring is only half the purchase. Without the monthly membership the app collapses to basic scores, raw beat-to-beat data is never fully exposed, and at $399 ($499 for premium finishes) this is the priciest way into a smart ring.
 
-## Who it is for
+## Who should buy Oura Ring 5?
 
 Choose the Oura Ring 5 if you are buying fresh and want the most accurate overnight HRV and sleep in the slimmest thing you can wear around the clock, and the subscription is acceptable. If you already run a Ring 4, you are not missing the app features — upgrade only if the sensors or the slimmer fit genuinely matter to you.
 

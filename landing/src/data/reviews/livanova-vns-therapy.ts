@@ -44,11 +44,11 @@ const livanovaVnsTherapy: ToolReview = {
 
 LivaNova VNS Therapy is included in this list as the reference point — the implanted device that every non-invasive vagus stimulator is trying to approximate at one degree of indirection. A pulse generator the size of a small pocket watch is surgically placed under the left collarbone and wired to the cervical vagus nerve; the device fires on a clinician-programmed duty cycle and (in the SenTiva variant) closes the loop with on-device ECG-based seizure prediction. The evidence base is overwhelming: FDA-approved since 1997 for drug-resistant epilepsy and since 2005 for treatment-resistant depression, with registry data on more than 100,000 implanted patients and hundreds of peer-reviewed studies.
 
-## Where it falls short
+## What are the downsides of LivaNova VNS Therapy (SenTiva)?
 
 It is a surgical implant. The patient pathway is a neurosurgeon, a hospital procedure, post-operative recovery, lifetime carriage of the device, and the well-documented intermittent side effects — voice change and throat discomfort during stimulation cycles. It is restricted to clinically-indicated patients with prescribing specialist sign-off, and costs are insurance-mediated rather than directly purchasable.
 
-## Who it is for
+## Who should buy LivaNova VNS Therapy (SenTiva)?
 
 Not a consumer recommendation. LivaNova VNS Therapy is the gold-standard medical device for drug-resistant epilepsy and treatment-resistant depression — the right tool for the people meeting those criteria, prescribed by a specialist. For everyone else, non-invasive cervical (gammaCore, Truvaga) or auricular (Nurosym, Vagustim) devices approximate the mechanism without surgery, at known cost to the strength of the effect.
 

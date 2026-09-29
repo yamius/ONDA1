@@ -55,15 +55,15 @@ const threeVagusForms: HeadToHead = {
 
 Three different mechanisms and three different daily-use shapes. Apollo for ambient daytime. Sensate for evening wind-down. Hoolest for short intense sessions. They layer rather than substitute.
 
-## When Apollo Neuro is the right pick
+## When is Apollo Neuro the right pick?
 
 If you want vagal modulation that runs in your day — work, sleep, training — without ceremony or electrodes, Apollo is the right shape. The vibrotactile mechanism is indirect but real, the University of Pittsburgh evidence is solid, and 24/7 wearability is the use case.
 
-## When Sensate is the right pick
+## When is Sensate the right pick?
 
 If a focused evening wind-down ritual with paired soundscapes is the use case, Sensate is the right shape. The infrasonic chest device is the most pleasant in the vagus-modulation category; the trade is sit-down session-based use only.
 
-## When Hoolest VeRelief Prime is the right pick
+## When is Hoolest VeRelief Prime the right pick?
 
 If you want short, intense parasympathetic priming around training and sleep, Hoolest is the right shape. The dual ear/neck targeting and the founder-published athletic-recovery research are the differentiators. Active engagement required for the session.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

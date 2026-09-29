@@ -47,11 +47,11 @@ const proPlusVsElite: HeadToHead = {
 
 Same Therabody ecosystem. PRO Plus adds 60 lbs stall force + OLED display. Elite delivers the same 16 mm amplitude + same warranty + same app at $200 less.
 
-## When PRO Plus is the right pick
+## When is PRO Plus the right pick?
 
 If you need 60 lbs stall force for deep-tissue protocols or you want OLED pressure feedback display — PRO Plus is the right shape.
 
-## When Elite is the right pick
+## When is Elite the right pick?
 
 If you want the full Therabody ecosystem and 16 mm amplitude without paying for stall-force ceiling you don\'t need — Elite is the right shape. The rational Therabody buy.`,
   relatedComparisonSlug: 'best-massage-guns-2026',

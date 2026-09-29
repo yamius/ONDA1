@@ -48,11 +48,11 @@ const zoeVsLevels: HeadToHead = {
 
 Zoe is a nutrition programme that uses CGM as one input among three; Levels is a CGM programme. The decision is whether you want a one-time multi-biomarker reset or continuous glucose data.
 
-## When Zoe is the right pick
+## When is Zoe the right pick?
 
 If you want personalised nutrition grounded in real published science — and the two-week CGM phase is enough — Zoe is the right shape. The PREDICT studies and the multi-biomarker model are the reason most users land here. The annual £60/month subscription buys you the food rankings, not new glucose data.
 
-## When Levels is the right pick
+## When is Levels the right pick?
 
 If you want CGM as an ongoing instrument — running meal experiments, tracking time-in-range as a daily metric, iterating on glucose curves week by week — Levels is the right shape. The deeper insight engine and the more accurate sensor justify the premium pricing for users who treat the device as a serious tool.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

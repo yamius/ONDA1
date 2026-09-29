@@ -54,15 +54,15 @@ const threePremiumSauna: HeadToHead = {
 
 Three premium IR saunas with three different philosophies. Sunlighten on programmable full-spectrum, Clearlight on Jacuzzi-backed combined full-spectrum, SaunaSpace on near-IR-only with Faraday-cage shielding. All three premium-tier; pick on which philosophy fits your IR-sauna goal.
 
-## When Sunlighten mPulse is the right pick
+## When is Sunlighten mPulse the right pick?
 
 For users wanting programmable per-wavelength control (near / mid / far separately), FDA Class II registration and the deepest published-research footprint. The category reference for premium full-spectrum.
 
-## When Clearlight Sanctuary 2 is the right pick
+## When is Clearlight Sanctuary 2 the right pick?
 
 For users wanting Jacuzzi-backed lifetime heater warranty and full-spectrum IR at the most accessible price in the premium tier. The hypoallergenic basswood option is unique.
 
-## When SaunaSpace Faraday is the right pick
+## When is SaunaSpace Faraday the right pick?
 
 For users specifically wanting near-IR-only via tungsten-filament incandescent bulbs and full Faraday-cage EMF shielding. The biohacker premium for near-IR purists.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',

@@ -94,7 +94,7 @@ Every app was scored against ONDA\'s published [review methodology](/reviews/met
 
 All ten were assessed from app documentation, App Store listings, founder public communications and independent 2026 user reviews rather than hands-on testing.
 
-## The short version
+## Best Breathwork Apps: which should you buy?
 
 Three buying questions resolve the category cleanly:
 

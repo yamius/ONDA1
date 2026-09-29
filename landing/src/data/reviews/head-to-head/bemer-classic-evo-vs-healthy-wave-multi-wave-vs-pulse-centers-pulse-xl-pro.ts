@@ -55,15 +55,15 @@ const bemerVsHealthyWaveVsPulse: HeadToHead = {
 
 Three premium PEMF systems, three different theses. Bemer = research-backed daily mat. Healthy Wave = multi-modality mat at half the price. Pulse Centers = high-intensity clinical coil.
 
-## When Bemer Classic Evo is the right pick
+## When is Bemer Classic Evo the right pick?
 
 If your PEMF decision is research-driven and you want daily passive whole-body mat use with FDA Class II clearance — Bemer is the right shape. Accept the premium pricing as the cost of the research moat.
 
-## When Healthy Wave Multi-Wave is the right pick
+## When is Healthy Wave Multi-Wave the right pick?
 
 If you want recovery-modality coverage per session and don\'t need the proprietary research moat — Healthy Wave stacks PEMF with far-IR and red light at half the Bemer price. Three modalities in one mat.
 
-## When Pulse Centers Pulse XL Pro is the right pick
+## When is Pulse Centers Pulse XL Pro the right pick?
 
 If you\'re running serious athletic recovery or rehab where high-intensity targeted coil PEMF is the protocol — Pulse Centers is the right shape. Clinical-grade output, professional context, prosumer pricing.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',

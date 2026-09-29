@@ -44,11 +44,11 @@ const dysonBigQuiet: ToolReview = {
 
 Dyson Purifier Big+Quiet Formaldehyde is the premium consumer-brand reference — Dyson airflow engineering, True HEPA H13, formaldehyde-destruction catalyst layer, best-in-category smart features. Quietest premium device at $999.
 
-## Where it falls short
+## What are the downsides of Dyson Purifier Big+Quiet Formaldehyde?
 
 True HEPA H13 vs IQAir HyperHEPA H14 — slightly less filtration depth. Cylindrical tower form factor not for everyone. Filter cost moderate vs IQAir long-term economics.
 
-## Who it is for
+## Who should buy Dyson Purifier Big+Quiet Formaldehyde?
 
 Choose Dyson Big+Quiet for premium consumer brand + best smart features + formaldehyde focus. For clinical HEPA depth, IQAir HealthPro Plus. For PECO premium, Molekule Air Pro. For mid-premium without Dyson polish, Coway Airmega 400.
 

@@ -45,11 +45,11 @@ const amazfitHelioRing: ToolReview = {
 
 The Amazfit Helio Ring’s pitch is simple: a capable smart ring for $199 with no subscription. It is light titanium, comfortable to sleep in, and tracks [HRV](/glossary/heart-rate-variability) (RMSSD), heart rate, SpO2, skin temperature and sleep, all synced to the cross-platform Zepp app. Sleep tracking in particular punches above the price. For a subscription-free ring at this cost, that is a real value proposition.
 
-## Where it falls short
+## What are the downsides of Amazfit Helio Ring?
 
 Two things hold it back. First, it ships in only three sizes (8, 10, 12), so a large share of people simply can’t get a proper fit — and fit is everything for optical accuracy and comfort. Second, real-world battery is only about 2.5–3 days, well behind Oura (6–9) and RingConn (~12). The sensors are budget-tier, and the Zepp app, while capable, is less polished and explanatory than Oura’s.
 
-## Who it is for
+## Who should buy Amazfit Helio Ring?
 
 Choose the Amazfit Helio Ring if you want the cheapest capable, subscription-free ring and one of its three sizes fits you. If you need a wider size range, longer battery or the best accuracy, look at the [RingConn Gen 2](/reviews/ringconn-gen-2) (value, ~12-day battery), the [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring), or [Oura](/reviews/oura-ring-4) if you accept its subscription.
 

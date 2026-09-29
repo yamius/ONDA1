@@ -46,11 +46,11 @@ const wimHofVsSoma: HeadToHead = {
 
 Both apps include Wim Hof rounds. WHM app is the official method reference; SOMA layers WHM inside rhythmic music breathwork with broader pranayama context.
 
-## When Wim Hof Method app is the right pick
+## When is Wim Hof Method app the right pick?
 
 If you are committed to the WHM specifically and want the official curriculum, structured level progression, cold-exposure integration and Radboud research citations — WHM app is the right shape.
 
-## When SOMA Breath is the right pick
+## When is SOMA Breath the right pick?
 
 If you want rhythmic music-paced breathwork that includes WHM-style rounds within broader pranayama context — SOMA is the right shape. Different pacing, broader scope.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',

@@ -55,15 +55,15 @@ const topThreePanels: HeadToHead = {
 
 Three premium-tier panels with three different premium philosophies. Joovv buys FDA registration and modular scaling. Mito Red buys broad-spectrum biohacker value. PlatinumLED buys six-wavelength coverage and EMF testing transparency. All credible at $1,000+.
 
-## When Joovv Solo 3.0 is the right pick
+## When is Joovv Solo 3.0 the right pick?
 
 If FDA Class II registration matters and modular full-body scaling fits your setup plan, Joovv is the right shape. The premium pricing buys the regulatory layer and the modular ecosystem.
 
-## When Mito Red MitoPRO 1500 is the right pick
+## When is Mito Red MitoPRO 1500 the right pick?
 
 If you want broad four-wavelength coverage in a large half-body panel with honest spec discipline at $96 below Joovv, Mito Red is the right shape. Most premium-tier biohacker buyers land here.
 
-## When PlatinumLED BIOMAX 600 is the right pick
+## When is PlatinumLED BIOMAX 600 the right pick?
 
 If six-wavelength spectrum and the most-publicly-published EMF testing are deciding criteria at $296 below Joovv, PlatinumLED is the right shape. Best value for spectrum-focused buyers.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',

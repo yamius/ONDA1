@@ -45,11 +45,11 @@ const rise: ToolReview = {
 
 RISE asks a different question from the rest of the field. Not "how did you sleep?" but "what should you do with today?" It tracks two things — your accumulated sleep debt and your circadian rhythm — and turns them into a daily energy schedule: when you will peak, when you will hit an afternoon dip, when your optimal wind-down window opens. For anyone who cares about energy and timing rather than a nightly grade, that framing is genuinely useful.
 
-## Where it falls short
+## What are the downsides of RISE?
 
 Sleep debt is a model, not a direct measurement, so treat the numbers as a well-reasoned estimate. Wind-down content is light, the free tier is a short trial, and RISE does one thing — if you want a sound library or a smart alarm, it is not that app.
 
-## Who it is for
+## Who should buy RISE?
 
 Choose RISE if you want to manage daytime energy and time your day around your rhythm. If you mainly want nightly tracking stats or help falling asleep, a tracker or a relaxation app fits better.
 

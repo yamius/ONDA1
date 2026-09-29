@@ -44,11 +44,11 @@ const gammacoreSapphireCv: ToolReview = {
 
 gammaCore Sapphire CV is the only non-invasive [vagus nerve](/glossary/vagus-nerve) stimulator with FDA clearance — a fact that puts it in a different regulatory tier from everything else in this list. It is cleared for migraine prevention, episodic-migraine acute treatment, and cluster-headache acute and preventive treatment, backed by more than thirty randomised controlled trials over the past decade. The device is held against the side of the neck over the carotid sheath and delivers a proprietary 5 kHz burst waveform for two-minute sessions; dosing is set clinically rather than by app.
 
-## Where it falls short
+## What are the downsides of gammaCore Sapphire CV?
 
 That same regulatory and clinical rigour limits its use. It is prescription-only, its indications are headache-specific, and there is no programme variety: dose, duration and waveform are fixed. It does not measure HRV, does not integrate with any health app, and at roughly six hundred dollars before refill cards it is expensive even before insurance enters the picture. As a wellness or general-recovery tool it is the wrong shape — Truvaga 350, made by the same company, exists for exactly that use case.
 
-## Who it is for
+## Who should buy gammaCore Sapphire CV?
 
 Choose gammaCore if you have a clinical migraine or cluster-headache diagnosis and a prescriber who will write for it. For general HRV training, stress reduction or experimental tVNS, Nurosym (auricular, evidence-backed) or Truvaga 350 (cervical, OTC) are the right tools — not this one.
 

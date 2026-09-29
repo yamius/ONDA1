@@ -44,11 +44,11 @@ const olylifeTera: ToolReview = {
 
 OlyLife TERA P90 Plus is the popular budget PEMF + terahertz wand — accessible pricing, portable handheld form factor, and real PEMF component using documented frequencies. Widely distributed via direct-marketing channels.
 
-## Where it falls short
+## What are the downsides of OlyLife TERA P90 Plus?
 
 The terahertz marketing. Consumer-device terahertz output and biological-effect literature do not match the marketing claims — the PEMF component is real, the terahertz component is the editorial concern. MLM-style distribution channels also create warranty inconsistency.
 
-## Who it is for
+## Who should buy OlyLife TERA P90 Plus?
 
 Choose OlyLife TERA P90 Plus only if you explicitly discount the terahertz marketing and value the budget PEMF wand component. For research-grounded budget wearable, Resona Health VIBE. For full-body mat, OMI or Healthy Wave.
 

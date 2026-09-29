@@ -47,11 +47,11 @@ const finnleoVsAlmostHeaven: HeadToHead = {
 
 Both deliver traditional Finnish sauna heat with multi-decade brand pedigree. Finnleo Hallmark is the indoor Finnish-built reference; Almost Heaven Salem is the outdoor American red cedar barrel.
 
-## When Finnleo Hallmark is the right pick
+## When is Finnleo Hallmark the right pick?
 
 If you have indoor install space and want premium Finnish manufacturing pedigree with Helo-engineered heat delivery — Finnleo is the right shape. The format matches the published research.
 
-## When Almost Heaven Salem is the right pick
+## When is Almost Heaven Salem the right pick?
 
 If you have outdoor install space and want a traditional cedar barrel sauna with American-built construction — Almost Heaven is the right shape. The wood-burning heater option is unique and the price is marginally lower.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',

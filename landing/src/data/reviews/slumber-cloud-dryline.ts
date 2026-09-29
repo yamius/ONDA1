@@ -44,11 +44,11 @@ const slumberCloudDryline: ToolReview = {
 
 Slumber Cloud DryLine sheets are the cheapest legitimate way to sleep cooler. NASA-derived Outlast phase-change materials absorb body heat and dissipate it through the night — passive cooling without any active hardware. At $150-250 per set, the lowest-commitment entry into "cooler sleep" in this category.
 
-## Where it falls short
+## What are the downsides of Slumber Cloud DryLine Cooling Sheets?
 
 Not active climate. Passive cooling effect concentrates in early-night phase and diminishes as the materials saturate. No control. No tracking. As a substitute for active climate hardware, it does not compete.
 
-## Who it is for
+## Who should buy Slumber Cloud DryLine Cooling Sheets?
 
 Choose Slumber Cloud DryLine if you want the cheapest credible step toward cooler sleep without committing to a $1,500+ active system. For real climate control, Eight Sleep, ChiliPad, or BedJet are the right shape.
 

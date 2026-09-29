@@ -94,7 +94,7 @@ Every programme was scored against ONDA’s published [review methodology](/revi
 
 All ten programmes were assessed from manufacturer documentation, the published Dexcom G7 and Abbott Libre 3 validation literature, and independent 2026 reviews rather than hands-on testing, so treat the scores as an evidence-based starting point.
 
-## The short version
+## Best Continuous Glucose Monitors for Biohackers: which should you buy?
 
 The market is hardware-converged and software-divergent. Two sensors carry the entire non-diabetic CGM category in 2026: **Abbott Libre 3** (Lingo, Ultrahuman M1, Veri, Hello Inside, Zoe, Supersapiens) and **Dexcom G7** (Levels, Stelo, Nutrisense, Signos). The wrappers are what you are actually buying.
 

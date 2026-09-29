@@ -44,11 +44,11 @@ const higherdoseBlanketV4: ToolReview = {
 
 HigherDose Sauna Blanket V4 is the portable IR sauna that brought the category to consumers without space or budget for cabins. Folds for storage, no install, $599. The crystal-infused inner layer is marketing-flavoured but the underlying IR delivery is real and the EMF profile is documented low. For users in apartments, rentals or small homes, this is the right shape.
 
-## Where it falls short
+## What are the downsides of HigherDose Infrared Sauna Blanket V4?
 
 Far-IR only. No near or mid IR. The spectrum narrowness limits the depth of benefits that wider-spectrum cabins (Sunlighten, Clearlight) deliver. Research base on sauna blankets specifically is thinner than cabin IR.
 
-## Who it is for
+## Who should buy HigherDose Infrared Sauna Blanket V4?
 
 Choose HigherDose Blanket if portability and accessible price matter more than spectrum breadth. For full-spectrum cabin IR, Sunlighten or Clearlight. For near-IR-only biohacker setup, SaunaSpace.
 

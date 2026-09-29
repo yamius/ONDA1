@@ -42,11 +42,11 @@ const ringProVsSamsung: HeadToHead = {
 
 Two subscription-free rings. The [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is cross-platform with a ~15-day battery; the [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is a comfortable, cheaper ring that shines inside the Samsung ecosystem.
 
-## When the Ultrahuman Ring Pro is the right pick
+## When is the Ultrahuman Ring Pro the right pick?
 
 You want the longest battery and cross-platform support, and you don’t want to be tied to one phone brand.
 
-## When the Samsung Galaxy Ring is the right pick
+## When is the Samsung Galaxy Ring the right pick?
 
 You own a Samsung Galaxy phone, want tight Samsung Health integration, and prefer a cheaper, more established ring.
 

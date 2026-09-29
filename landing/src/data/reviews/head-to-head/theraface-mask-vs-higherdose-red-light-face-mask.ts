@@ -47,11 +47,11 @@ const therafaceVsHigherDose: HeadToHead = {
 
 Both are recovery-brand crossover red light face masks. TheraFace is the Therabody premium with three-wavelength coverage. HigherDOSE is the HigherDOSE ecosystem entry at half the price.
 
-## When TheraFace Mask is the right pick
+## When is TheraFace Mask the right pick?
 
 If you want three-wavelength coverage (red + blue + amber) and you\'re already in the Therabody ecosystem with TheraFace Pro — TheraFace Mask is the right shape. Premium price reflects the brand and the third wavelength.
 
-## When HigherDOSE Red Light Face Mask is the right pick
+## When is HigherDOSE Red Light Face Mask the right pick?
 
 If you want HigherDOSE-ecosystem coordination (PEMF mat, sauna blanket) at meaningfully lower price — HigherDOSE is the right shape. Two-wavelength coverage is sufficient for the standard anti-aging use case.`,
   relatedComparisonSlug: 'best-red-light-face-masks-2026',

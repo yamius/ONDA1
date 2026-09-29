@@ -50,11 +50,11 @@ const ouraVsUltrahuman: HeadToHead = {
 
 Oura Ring 4 wins for most users on app maturity, sleep-model depth and reliability. Ultrahuman Ring Air wins specifically when no-subscription, lightest-possible-form-factor, or native CGM integration is the deciding criterion.
 
-## When Oura is the right pick
+## When is Oura the right pick?
 
 If you want the most polished smart-ring experience and the analytics depth that justifies the membership, Oura is the right shape. The $5.99 a month is the cost of admission to the most mature consumer-HRV-and-sleep app on the market.
 
-## When Ultrahuman is the right pick
+## When is Ultrahuman the right pick?
 
 If you want a smart ring without a subscription, the lightest possible form factor, or you already use (or plan to use) the Ultrahuman M1 CGM for the unique cross-signal glucose + HRV + sleep view, Ultrahuman is the right shape. Just go in aware of the battery-reliability caveat.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

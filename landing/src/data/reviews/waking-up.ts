@@ -45,11 +45,11 @@ const wakingUp: ToolReview = {
 
 Waking Up, built by the neuroscientist and philosopher Sam Harris, is the most intellectually serious app in this comparison. It treats meditation not as a relaxation tool but as a way to examine the nature of consciousness, and it pairs practice with a genuine body of theory — lessons on philosophy and psychology, and conversations with leading thinkers. The teaching, from Harris and a set of high-calibre guest instructors, is the deepest and most rigorous here.
 
-## Where it falls short
+## What are the downsides of Waking Up?
 
 That depth is narrow by design. The library is curated and comparatively small, there is no sleep content, and the introductory course moves quickly into advanced ideas — a complete beginner can feel out of their depth. It is also the most expensive option, although a standing offer of free access to anyone who genuinely cannot afford it takes the edge off the price.
 
-## Who it is for
+## Who should buy Waking Up?
 
 Choose Waking Up if you already have a basic practice and want to go deeper — into rigorous instruction and the philosophy behind it — and the price (or the scholarship) works for you. If you are starting from zero, begin with Headspace and move to Waking Up once a practice is established.
 

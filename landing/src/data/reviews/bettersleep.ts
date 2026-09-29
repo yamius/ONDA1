@@ -45,11 +45,11 @@ const bettersleep: ToolReview = {
 
 BetterSleep is built around the part of the night most trackers ignore — winding down. Its content library is the deepest of any sleep app here: mixable soundscapes you tune yourself, SleepTales, guided meditations and breathing exercises. If your problem is lying awake rather than not knowing your sleep stats, this is the app that addresses it directly.
 
-## Where it falls short
+## What are the downsides of BetterSleep?
 
 Tracking exists but is the lighter half of the app — phone-based, basic, not a serious measurement tool. The volume of content can be overwhelming, and the full library sits behind a subscription. There is no distinctive clinical method, just well-made relaxation content.
 
-## Who it is for
+## Who should buy BetterSleep?
 
 Choose BetterSleep if you mainly need help falling asleep and want the richest possible library of sounds and stories to do it. If you want accurate tracking or a clinical program, a dedicated tracker or Sleepio will serve you better.
 

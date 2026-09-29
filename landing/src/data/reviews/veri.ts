@@ -44,11 +44,11 @@ const veri: ToolReview = {
 
 Veri is the CGM programme an EU biohacker reaches for when Levels is not an option. The app is polished, the integrations cover the wearables Europeans actually use (Garmin, Oura, Polar via export), and multi-language support is real rather than machine-translated. Meal scoring, time-in-range and AUC views are competent and clean. Crucially, raw glucose data export is supported — something Zoe and Lingo do not offer.
 
-## Where it falls short
+## What are the downsides of Veri?
 
 In the US Veri competes against programmes shipping Dexcom G7, which lags Libre 3 only marginally but lags it consistently in independent comparison. Insight depth is one tier below Levels — there is no food-by-food ranking history or deep AUC decomposition. No human coach is included by default. As a general-purpose CGM tool it is solid; as the deepest biohacker instrument, it is not.
 
-## Who it is for
+## Who should buy Veri?
 
 Choose Veri if you are in an EU market and want a polished, locally-supported CGM programme with Garmin/Oura integration baked in. If you are in the US, Stelo (Dexcom G7, cheaper) or Levels (deepest insights) are better fits.
 

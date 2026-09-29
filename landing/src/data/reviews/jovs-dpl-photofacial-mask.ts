@@ -44,11 +44,11 @@ const jovsDpl: ToolReview = {
 
 JOVS DPL Photofacial Mask is the K-beauty multi-wavelength entry — seven wavelength modes (red, blue, amber, green and more), accessible $399 pricing, Korean engineering pedigree. Best spectrum coverage in the consumer face-mask category.
 
-## Where it falls short
+## What are the downsides of JOVS DPL Photofacial Mask?
 
 Western clinical evidence and comfort. JOVS has K-beauty market credibility but limited Western peer-reviewed validation on the specific device. Hard-shell hybrid build is less comfortable than full silicone alternatives.
 
-## Who it is for
+## Who should buy JOVS DPL Photofacial Mask?
 
 Choose JOVS DPL for maximum wavelength coverage at mid-tier pricing. For Western clinical evidence reference, Omnilux Contour Face. For consumer market leader silicone, CurrentBody Series 2. For dermatology-brand dual-spectrum, Dr. Dennis Gross.
 

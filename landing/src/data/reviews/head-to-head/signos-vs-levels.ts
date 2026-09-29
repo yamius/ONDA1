@@ -48,11 +48,11 @@ const signosVsLevels: HeadToHead = {
 
 Signos and Levels ship the same Dexcom G7 sensor. The decision is whether you want AI weight-loss coaching or a general-purpose biohacker insight engine. They solve different jobs, even though they look like the same product.
 
-## When Signos is the right pick
+## When is Signos the right pick?
 
 If weight loss is the explicit reason you are wearing a CGM and you respond well to in-app AI nudges pushing meal-by-meal recommendations, Signos is the right shape. The behavioural directiveness is the value — and it costs ~$500/year less than Levels.
 
-## When Levels is the right pick
+## When is Levels the right pick?
 
 If you treat CGM as a general-purpose self-experimentation instrument — running fasting protocols, tracking time-in-range as a metric, iterating on food curves week by week without a weight-loss frame — Levels is the right shape. The deeper insight engine and the broader content library are what the premium pays for.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

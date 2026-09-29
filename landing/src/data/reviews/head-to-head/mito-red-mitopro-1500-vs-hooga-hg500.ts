@@ -48,11 +48,11 @@ const mitoRedVsHooga: HeadToHead = {
 
 MitoPRO wins on every hardware axis — spectrum, irradiance, size, build. Hooga wins on value by a wide margin. The decision is whether you need premium or whether budget covers your use case.
 
-## When Mito Red MitoPRO 1500 is the right pick
+## When is Mito Red MitoPRO 1500 the right pick?
 
 If broader four-wavelength coverage, larger half-body panel, higher irradiance and premium build are worth $850 over Hooga for your use case — and they are for serious daily users — MitoPRO is the right shape.
 
-## When Hooga HG500 is the right pick
+## When is Hooga HG500 the right pick?
 
 If you want verified red-light therapy hardware at the lowest legitimate price, Hooga is the right shape. Most first-time buyers should start here; upgrade later if the use case justifies it.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',

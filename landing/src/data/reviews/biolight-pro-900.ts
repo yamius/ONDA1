@@ -44,11 +44,11 @@ const bioLightPro900: ToolReview = {
 
 BioLight Pro 900 is the panel that does most things right without doing any one thing exceptionally. Four-wavelength coverage matches the MitoPRO 1500 spectrum (minus the 630 nm), independent EMF testing is published in the same range as Joovv, stand and mount hardware are included rather than upsold, and the price undercuts Joovv and MitoPRO by $300–$400. Solid mid-premium execution.
 
-## Where it falls short
+## What are the downsides of BioLight Pro 900?
 
 Nothing about the BioLight Pro 900 stands out the way Joovv stands out on modular scaling, MitoPRO on spectrum, PlatinumLED on EMF testing or GembaRed on engineering rigour. It is a competent panel at a fair price; the lack of differentiation is the differentiator. Smaller brand following also means thinner long-term reliability data.
 
-## Who it is for
+## Who should buy BioLight Pro 900?
 
 Choose BioLight Pro 900 if you want a four-wavelength mid-size panel under $1,000 and you do not specifically value any of the things Joovv, Mito Red, PlatinumLED or GembaRed lead on. For most buyers, one of those four is the right shape; BioLight wins specifically when value at the four-wavelength tier is the deciding criterion.
 

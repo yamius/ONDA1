@@ -44,11 +44,11 @@ const ouraRing5VsUltrahuman: HeadToHead = {
 
 The [Oura Ring 5](/reviews/oura-ring-5) is the accuracy-leading flagship with a mandatory subscription. The [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is the subscription-free alternative with strong sleep tracking and a battery-reliability question.
 
-## When the Oura Ring 5 is the right pick
+## When is the Oura Ring 5 the right pick?
 
 Accuracy and app depth are the priority, you want upgraded sensors and the best software, and the membership is an acceptable cost.
 
-## When the Ultrahuman Ring Air is the right pick
+## When is the Ultrahuman Ring Air the right pick?
 
 Avoiding a subscription is the priority, you want the lightest, cross-platform ring, and you will accept the battery risk to own it outright.
 

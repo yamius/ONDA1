@@ -45,11 +45,11 @@ const museSAthena: ToolReview = {
 
 Muse S Athena is the most complete consumer brain-training headset in 2026. Interaxon kept everything that made the original Muse line work — soft headband, deep meditation content library, sleep-friendly form factor — and added two things almost no competitor has: [prefrontal](/glossary/prefrontal-cortex) fNIRS oxygenation sensing alongside the four-channel EEG, and explicit sleep staging — including [slow-wave sleep](/glossary/slow-wave-sleep) — derived from the EEG signal itself. The combination is genuinely novel in the consumer space; the meditation, focus and sleep modules all draw on it.
 
-## Where it falls short
+## What are the downsides of Muse S Athena?
 
 For developers and biohackers wanting raw signal access, this is the wrong tool. The first-party SDK is limited and Interaxon’s priority has consistently been polish over openness; Muse Direct exists for raw-EEG export but is third-party and clunky. Pure-EEG signal quality is also adequate rather than research-grade — these are dry electrodes in a soft band, not gelled clinical sensors.
 
-## Who it is for
+## Who should buy Muse S Athena?
 
 Choose Muse S Athena if you want one consumer device that handles meditation, focus and sleep with the deepest content library in the market and no subscription gate. If raw EEG access is the deciding feature, Neurosity Crown is the right pick. If price is the deciding feature, Muse 2 covers most of the same meditation use case for half the cost.
 

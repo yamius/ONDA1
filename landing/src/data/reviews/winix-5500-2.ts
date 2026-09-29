@@ -44,11 +44,11 @@ const winix5500: ToolReview = {
 
 Winix 5500-2 is the budget HEPA reference with sensor — True HEPA H13, activated carbon, built-in air-quality sensor with auto mode at $249. Strong Korean brand pedigree and best long-term filter cost economics.
 
-## Where it falls short
+## What are the downsides of Winix 5500-2?
 
 App integration and PlasmaWave. No app — sensor and auto mode are LED-only. PlasmaWave ion-charge has ozone concerns (can be disabled). For users wanting app + smart features, Levoit Core 600S better fit.
 
-## Who it is for
+## Who should buy Winix 5500-2?
 
 Choose Winix 5500-2 for budget auto-mode sensor without paying app premium. For app + smart features, Levoit Core 600S. For Wirecutter-favorite alternative, Coway Airmega AP-1512HH. For premium, Coway Airmega 400.
 

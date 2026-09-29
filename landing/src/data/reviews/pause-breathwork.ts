@@ -44,11 +44,11 @@ const pauseBreathwork: ToolReview = {
 
 Pause Breathwork is the somatic / emotional-release-focused breathwork reference — Samantha Skelly's app delivering longer journey-style sessions with trauma-informed framing drawing on Peter Levine and Bessel van der Kolk's somatic-therapy literature. Best execution of breathwork-as-emotional-tool.
 
-## Where it falls short
+## What are the downsides of Pause Breathwork?
 
 Narrow technique scope and longer session format. Pause is not the right shape for daily 5-minute box-breathing practice — it's built for 20–60 minute emotional-release journeys. No HRV biofeedback, less clinical-protocol coverage than Breathwrk.
 
-## Who it is for
+## Who should buy Pause Breathwork?
 
 Choose Pause Breathwork if you're buying breathwork for somatic / emotional release work. For daily structured nervous-system practice, Breathwrk. For cinematic music journeys, Othership. For Wim Hof specifically, the Wim Hof Method app.
 

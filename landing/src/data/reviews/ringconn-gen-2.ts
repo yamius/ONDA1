@@ -45,13 +45,13 @@ const ringconnGen2: ToolReview = {
 
 The RingConn Gen 2 is the value pick of the smart-ring field. It costs roughly half what an Oura Ring 4 does over time, takes no subscription, and its battery is the standout number in this entire comparison — around twelve days per charge, with a case that extends that to months. It is light, titanium, properly waterproof, and even adds sleep-apnea screening. For [HRV](/glossary/heart-rate-variability) and sleep its accuracy sits solidly in the same conversation as the pricier rings.
 
-## Where it falls short
+## What are the downsides of RingConn Gen 2?
 
 You feel the budget in the software and the data. The app is functional rather than polished, there is no open API, and your data largely stays inside the RingConn app. None of the individual metrics is class-leading — this is a device that is good at everything and best, in this field, only at battery life and price.
 
 **2026 note.** The Gen 2 remains the value benchmark, but the field has moved on around it: the [RingConn Gen 3](/reviews/ringconn-gen-3) and Oura's Ring 5 now sit above it on accuracy and features. Independent 2026 testing still puts finger-based rings ahead of wrist wearables for overnight HRV, and the Gen 2's numbers hold up in that company — but if you want the sharpest ring, look at the newer generation rather than this one.
 
-## Who it is for
+## Who should buy RingConn Gen 2?
 
 Choose the RingConn Gen 2 if you want most of what a premium ring does — overnight HRV, sleep, stress — for noticeably less money and with no recurring fee, and you care more about battery life than about polished software or open data. If you want the most accurate ring or the deepest app, the Oura Ring 4 still leads.
 

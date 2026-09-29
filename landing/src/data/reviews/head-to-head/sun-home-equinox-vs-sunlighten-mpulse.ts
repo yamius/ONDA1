@@ -42,11 +42,11 @@ const sunHomeVsSunlighten: HeadToHead = {
 
 The [Sunlighten mPulse](/reviews/sunlighten-mpulse) is the premium category leader — true 3-wavelength control and a premium cedar build; the [Sun Home Equinox](/reviews/sun-home-equinox) is the value-forward challenger with higher heat and integrated red light.
 
-## When the Sun Home Equinox is the right pick
+## When is the Sun Home Equinox the right pick?
 
 You want the hottest cabin, integrated red light and chromotherapy, at a disciplined price.
 
-## When the Sunlighten mPulse is the right pick
+## When is the Sunlighten mPulse the right pick?
 
 You want the category benchmark — independent 3-wavelength infrared control and premium build.
 

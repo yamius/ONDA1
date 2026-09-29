@@ -44,11 +44,11 @@ const somnifit: ToolReview = {
 
 SomniFit Sleep Strips is the budget branded mouth tape — accessible pricing, single-piece simplicity, no subscription pressure. Works adequately for users without sensitive skin or beards.
 
-## Where it falls short
+## What are the downsides of SomniFit Sleep Strips?
 
 Adhesive quality and brand polish. Basic acrylic adhesive causes more skin reactions than premium alternatives; struggles with beards and oily skin. No biohacker brand polish or evidence depth.
 
-## Who it is for
+## Who should buy SomniFit Sleep Strips?
 
 Choose SomniFit if you want the cheapest credible branded mouth tape and your skin isn\'t sensitive. For DIY savings, Nexcare Surgical Tape. For beard-friendly biohacker brand, Hostage Tape. For sensitive skin, Dream Recovery or AYO.
 

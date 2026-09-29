@@ -47,11 +47,11 @@ const hostageVsDream: HeadToHead = {
 
 Both are premium mouth tapes with different adhesive theses. Hostage Tape is beard-friendly acrylic with subscription convenience. Dream Recovery is sensitive-skin silicone-gel with reusability.
 
-## When Hostage Tape is the right pick
+## When is Hostage Tape the right pick?
 
 If you have a beard or want subscription convenience — Hostage Tape\'s acrylic adhesive is the right shape at lower annual cost.
 
-## When Dream Recovery is the right pick
+## When is Dream Recovery the right pick?
 
 If you have sensitive skin or want premium silicone-gel reusable design — Dream Recovery is the right shape. Gentler adhesive, reusable strips, no subscription lock-in.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',

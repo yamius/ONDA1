@@ -47,11 +47,11 @@ const plungeVsIceBarrel: HeadToHead = {
 
 Plunge and Ice Barrel solve different operating models. Plunge is the chiller-built daily-use tool; Ice Barrel is the ice-fill barrel for occasional or cold-climate use.
 
-## When The Plunge is the right pick
+## When is The Plunge the right pick?
 
 If daily-use cold plunge is the goal and you want a set-and-forget tub that holds 39°F automatically, Plunge is the right shape. Daily operating cost is electricity only.
 
-## When Ice Barrel 500 is the right pick
+## When is Ice Barrel 500 the right pick?
 
 If you are in a cold climate where ice cost is negligible, or doing occasional cold-plunge practice — Ice Barrel saves $4,800 upfront. The vertical footprint also fits smaller spaces.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',

@@ -44,11 +44,11 @@ const chilipadDockPro: ToolReview = {
 
 ChiliPad Dock Pro is Sleepme’s subscription-free answer to Eight Sleep. Comparable dual-zone water cooling/heating with no ongoing fees, multi-year reliability track record, and a cleaner ownership model. The trade is no HRV tracking and a lighter app — the device is a climate tool, not a tracker.
 
-## Where it falls short
+## What are the downsides of ChiliPad Dock Pro?
 
 No HRV. No sleep-stage detection. Sleepme app does climate schedules, not biofeedback. For users who already wear an Oura or Whoop, this is irrelevant; for users wanting integrated tracking, Eight Sleep is the right shape.
 
-## Who it is for
+## Who should buy ChiliPad Dock Pro?
 
 Choose ChiliPad Dock Pro if you want premium water-cooled sleep climate without subscription. For integrated HRV/tracking, Eight Sleep Pod 4. For air-flow at lower price, BedJet 3.
 

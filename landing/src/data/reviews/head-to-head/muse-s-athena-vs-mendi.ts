@@ -42,11 +42,11 @@ const museAthenaVsMendi: HeadToHead = {
 
 The [Muse S Athena](/reviews/muse-s-athena) is the most complete headset — EEG plus fNIRS, sleep tracking and neurofeedback; [Mendi](/reviews/mendi) is a simple, cheaper fNIRS focus trainer with a game-like bar and no learning curve.
 
-## When the Muse S Athena is the right pick
+## When is the Muse S Athena the right pick?
 
 You want the fullest brain-training device — richer measurement, sleep tracking and versatility across meditation, focus and sleep.
 
-## When Mendi is the right pick
+## When is Mendi the right pick?
 
 You want the simplest, cheapest way to build a daily focus habit, with no subscription and no learning curve.
 

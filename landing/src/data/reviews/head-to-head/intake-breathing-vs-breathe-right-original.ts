@@ -47,11 +47,11 @@ const intakeVsBreatheRight: HeadToHead = {
 
 Both are external nasal dilators. Intake is premium magnetic with reusability. Breathe Right is FDA-cleared drugstore standard.
 
-## When Intake Breathing is the right pick
+## When is Intake Breathing the right pick?
 
 If you want stronger external magnetic dilation with reusable design and James Nestor endorsement — Intake is the right shape. Premium tier external dilator.
 
-## When Breathe Right Original is the right pick
+## When is Breathe Right Original the right pick?
 
 If you want the FDA-cleared drugstore reference at lowest per-night cost — Breathe Right is the right shape. Try this first before committing to premium alternatives.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',

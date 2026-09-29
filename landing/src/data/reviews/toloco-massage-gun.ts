@@ -44,11 +44,11 @@ const tolocoGun: ToolReview = {
 
 TOLOCO Massage Gun is the cheapest credible budget entry — $69 at Amazon scale with 10 attachments and LCD touchscreen. Best raw-cost play if absolute price dominates.
 
-## Where it falls short
+## What are the downsides of TOLOCO Massage Gun?
 
 Stall force and brand. Lowest stall force in roundup (25-30 lbs); thin brand pedigree; variable build quality reports. For users wanting credible specs, Renpho R3 or Bob and Brad Q2 Mini better fits at $99.
 
-## Who it is for
+## Who should buy TOLOCO Massage Gun?
 
 Choose TOLOCO if $69 vs $99 is meaningful and you accept reduced stall force. For credible budget specs, Renpho R3 or Bob and Brad Q2 Mini at $99.
 

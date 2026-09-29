@@ -44,11 +44,11 @@ const othership: ToolReview = {
 
 Othership is the premium production-value reference in breathwork apps — cinematic music-driven sessions, live community classes, and the highest-polish UX in the category. The Toronto-based brand crossover from physical sauna and cold-plunge spaces gives the app a community layer no other breathwork app matches.
 
-## Where it falls short
+## What are the downsides of Othership?
 
 Price and evidence depth. At $150/year Othership is the most expensive breathwork sub by ~2x; the production justifies it for the right user but it's a premium ask. Evidence citations lean on lived experience and ceremony framing rather than peer-reviewed depth — Breathwrk's science-grounded copy is more rigorous.
 
-## Who it is for
+## Who should buy Othership?
 
 Choose Othership if you want breathwork as cinematic experience with music and live community. For largest structured library at lower price, Breathwrk. For rhythmic music breathwork with certifications, SOMA Breath. For free entry, iBreathe or Breathe2Relax.
 

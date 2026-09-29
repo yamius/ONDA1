@@ -56,15 +56,15 @@ const ouraVsWhoopVsGarmin: HeadToHead = {
 
 Three different jobs in three different form factors. Oura is the passive HRV-and-sleep instrument. Whoop is the active recovery coach. Garmin is the training watch with analytics. The right pick depends on what you actually want from the device.
 
-## When Oura Ring 4 is the right pick
+## When is Oura Ring 4 the right pick?
 
 If HRV and sleep tracking are the reason you are buying, Oura is the right shape. The ring form factor, the 7-day battery and the consumer-reference sleep model all align around that use case.
 
-## When Whoop 5.0 is the right pick
+## When is Whoop 5.0 the right pick?
 
 If you train hard and use the daily Recovery score as coaching that changes your training, Whoop is the right shape. The subscription model is the cost of admission; the coaching loop is the value.
 
-## When Garmin Venu 4 is the right pick
+## When is Garmin Venu 4 the right pick?
 
 If training analytics and watch-on-wrist convenience are what you want — and you would rather pay once than subscribe — Garmin is the right shape. First-party training-load, VO2 max and recovery models plus a smartwatch display, no subscription, multi-day battery.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

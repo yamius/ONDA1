@@ -48,11 +48,11 @@ const gembaredVsJoovv: HeadToHead = {
 
 Two different paths to the premium tier. GembaRed Vesta buys you the cleanest possible build and broadest spectrum at $96 less. Joovv Solo 3.0 buys you FDA registration and modular scaling at $96 more. Pick on which axis matters most.
 
-## When GembaRed Vesta is the right pick
+## When is GembaRed Vesta the right pick?
 
 If EMF discipline is a first-class criterion (you are sensitive to it or running long daily sessions), and six-wavelength spectrum is the spec value, GembaRed is the right shape. The engineer-founder transparency is the supporting reason.
 
-## When Joovv Solo 3.0 is the right pick
+## When is Joovv Solo 3.0 the right pick?
 
 If FDA Class II registration matters to you, modular full-body scaling fits your setup plan, and the larger brand’s warranty/support footprint matters, Joovv is the right shape.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',

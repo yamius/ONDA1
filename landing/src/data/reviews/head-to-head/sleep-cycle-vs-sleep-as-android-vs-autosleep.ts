@@ -55,15 +55,15 @@ const sleepCycleVsSleepAsAndroidVsAutoSleep: HeadToHead = {
 
 Three phone-based sleep trackers across three platform-positioning angles. Platform decides; secondary factors are customisation depth (Sleep as Android), Apple Watch integration (AutoSleep), or cross-platform polish (Sleep Cycle).
 
-## When Sleep Cycle is the right pick
+## When is Sleep Cycle the right pick?
 
 If you want a polished tracker that works equally on iPhone and Android — clean UX, smart alarm, decade-old track record, deeper wind-down content — Sleep Cycle is the right shape. Most users land here.
 
-## When Sleep as Android is the right pick
+## When is Sleep as Android the right pick?
 
 If you are Android-only and value deep customisation — Tasker integration, smart-alarm automation, multiple tracking method options — Sleep as Android is the right shape. The plugin ecosystem alone justifies the pick for power users.
 
-## When AutoSleep is the right pick
+## When is AutoSleep the right pick?
 
 If you are an iPhone user with an Apple Watch and want native HealthKit-integrated automatic sleep tracking with no smart-alarm gimmickry, AutoSleep is the right shape. Apple Watch wrist sensors give richer sleep-stage data than phone-only options.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',

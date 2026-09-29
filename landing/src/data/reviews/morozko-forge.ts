@@ -44,11 +44,11 @@ const morozkoForge: ToolReview = {
 
 Morozko Forge is the only consumer cold-plunge that can literally freeze the water surface. The chiller is overbuilt for typical protocols; the trade-off makes sense if extreme cold-exposure depth is the use case. Wim Hof Method affiliation gives it the strongest protocol pedigree in the consumer market.
 
-## Where it falls short
+## What are the downsides of Morozko Forge?
 
 Price. $10,000+ is roughly double The Plunge for capability most users will never use. Overkill for general daily-practice cold exposure.
 
-## Who it is for
+## Who should buy Morozko Forge?
 
 Choose Morozko Forge if extreme protocols (sub-40°F, ice-surface formation, prolonged exposure) are the deciding criteria. For general daily cold-exposure practice, The Plunge or Coldture deliver the same downstream benefits at a third of the cost.
 

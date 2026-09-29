@@ -46,11 +46,11 @@ const othershipVsOpen: HeadToHead = {
 
 Both are premium hybrid apps with cinematic UX. Othership focuses on pure breathwork; Open blends breath + meditation + movement.
 
-## When Othership is the right pick
+## When is Othership the right pick?
 
 If breathwork is the goal and you want it as cinematic music-driven experience with the strongest live community layer — Othership is the right shape.
 
-## When Open is the right pick
+## When is Open the right pick?
 
 If you want one premium app covering breath + meditation + movement rather than stacking three specialist apps, with named-instructor production — Open is the right shape at lower price.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',

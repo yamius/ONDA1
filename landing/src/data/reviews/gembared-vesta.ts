@@ -44,11 +44,11 @@ const gembaredVesta: ToolReview = {
 
 The GembaRed Vesta is the panel built by someone who actually cares about the power-supply hardware behind the LEDs. The fully-shielded design produces the lowest EMF measurement in this list at the standard treatment distance, flicker is below research-threshold levels, and the six-wavelength spectrum matches the underlying photobiomodulation literature exactly. The founder publishes the engineering rationale openly, which is rare in a category dominated by marketing claims.
 
-## Where it falls short
+## What are the downsides of GembaRed Vesta?
 
 GembaRed is a smaller brand than Joovv, Mito Red or PlatinumLED. Reliability track record is shorter, mid-size panel format means full-body needs stacking, and the premium pricing puts it in the same range as MitoPRO and BIOMAX 600 without the modular scalability of Joovv. The EMF discipline is the reason to choose it; for users who do not weight that, the value proposition is thinner.
 
-## Who it is for
+## Who should buy GembaRed Vesta?
 
 Choose GembaRed Vesta if EMF and flicker are first-class criteria — you want the cleanest possible build and you trust the engineer-founder transparency. For modular full-body scaling, Joovv. For maximum half-body coverage, MitoPRO 1500. For the broadest established brand and the same EMF discipline at lower price, PlatinumLED BIOMAX 600.
 

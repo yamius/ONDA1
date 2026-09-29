@@ -42,11 +42,11 @@ const pod5VsBedjet: HeadToHead = {
 
 Opposite ends of the market. The [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is the maximal water-cooled smart bed — precise dual-zone cooling, HRV tracking, Autopilot software, full-bed extras — at ~$6,099 plus a subscription. The [BedJet 3](/reviews/bedjet-3) blows cooled or heated air under the sheet for ~$600, no water, no tracking.
 
-## When the Eight Sleep Pod 5 is the right pick
+## When is the Eight Sleep Pod 5 the right pick?
 
 You want the most rigorous cooling and integrated recovery tracking, and the premium price and subscription are acceptable. This is the system for data-first sleep optimisation.
 
-## When the BedJet 3 is the right pick
+## When is the BedJet 3 the right pick?
 
 You want effective, affordable bed cooling without water management or a subscription, easy install, and you do not need built-in tracking or precise per-degree control.
 

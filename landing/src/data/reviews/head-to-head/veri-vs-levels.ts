@@ -48,11 +48,11 @@ const veriVsLevels: HeadToHead = {
 
 For US users, Levels is the better product on most analytical axes. For EU users, Veri is the only one of the two that actually ships — and it is a polished, capable programme in its own right.
 
-## When Veri is the right pick
+## When is Veri the right pick?
 
 If you are in an EU market, Veri is the right shape — same job as Levels (consumer CGM coaching with biohacker positioning), at €99–€129/month, with native Garmin and Oura integration, multi-language support and local availability. Levels is not an option for most European users.
 
-## When Levels is the right pick
+## When is Levels the right pick?
 
 If you are in the US, Levels remains the right shape — the deeper meal-impact analytics, the more accurate sensor, the more mature app. The premium pricing is the cost of the analytical depth; EU readers can keep this comparison filed under "what to know about the cross-border alternative".`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

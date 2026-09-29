@@ -47,11 +47,11 @@ const bemerVsHealthyWave: HeadToHead = {
 
 Bemer is the research-backed reference. Healthy Wave is the modality-stacked alternative at half the price. Different theses, both defensible.
 
-## When Bemer Classic Evo is the right pick
+## When is Bemer Classic Evo the right pick?
 
 If your PEMF purchase decision is driven by waveform research backing — the Bemer biorhythmic signal\'s 50+ peer-reviewed studies are not matched anywhere else in consumer PEMF. FDA Class II clearance compounds the credibility. Accept the premium pricing.
 
-## When Healthy Wave Multi-Wave is the right pick
+## When is Healthy Wave Multi-Wave the right pick?
 
 If you want recovery-modality coverage per session and you don\'t need the proprietary research moat — Healthy Wave stacks PEMF with far-infrared and red light therapy at meaningfully lower price. Three modalities in one mat, real parameter control, half the Bemer cost.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',

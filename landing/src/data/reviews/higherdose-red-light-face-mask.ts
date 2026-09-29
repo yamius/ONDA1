@@ -44,11 +44,11 @@ const higherDoseFaceMask: ToolReview = {
 
 HigherDOSE Red Light Face Mask is the consumer-brand reference — polished UX, flexible silicone build, HigherDOSE ecosystem crossover from PEMF mat and sauna blanket, accessible $345 pricing. Best execution of the consumer-friendly daily-use thesis.
 
-## Where it falls short
+## What are the downsides of HigherDOSE Red Light Face Mask?
 
 Clinical evidence and irradiance. HigherDOSE is FDA registered with brand-funded research; no peer-reviewed dermatology moat. Modest irradiance and no neck flap. For users buying on clinical depth or spec maximalism, dermatology references (Omnilux, Dr. Dennis Gross) or spec leaders (Lumara) outperform.
 
-## Who it is for
+## Who should buy HigherDOSE Red Light Face Mask?
 
 Choose HigherDOSE Red Light Face Mask for consumer-polished daily-use mask in the HigherDOSE ecosystem at accessible pricing. For FDA Class II evidence, Omnilux. For consumer market leader, CurrentBody Series 2. For dermatology brand, Dr. Dennis Gross.
 

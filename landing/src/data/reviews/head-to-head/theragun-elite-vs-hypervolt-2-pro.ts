@@ -47,11 +47,11 @@ const eliteVsHypervolt: HeadToHead = {
 
 Both $399 mid-premium. Elite delivers Therabody ecosystem + 16 mm amplitude + 2-year warranty + 40 lbs stall. Hypervolt 2 Pro delivers 60 lbs stall + 14 mm amplitude + 1-year warranty.
 
-## When Theragun Elite is the right pick
+## When is Theragun Elite the right pick?
 
 If you want Therabody app ecosystem and 2-year warranty with deeper amplitude — Elite is the right shape at $399.
 
-## When Hypervolt 2 Pro is the right pick
+## When is Hypervolt 2 Pro the right pick?
 
 If you want 60 lbs stall force at $399 — Hypervolt is the right shape. Same price; trade Therabody ecosystem for higher stall force.`,
   relatedComparisonSlug: 'best-massage-guns-2026',

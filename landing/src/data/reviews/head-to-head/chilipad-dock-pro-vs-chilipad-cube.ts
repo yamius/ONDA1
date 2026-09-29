@@ -46,11 +46,11 @@ const dockProVsCube: HeadToHead = {
 
 Same water-cooling mechanism, different tiers. Dock Pro adds dual-zone, scheduling and a higher-capacity chiller. Cube delivers core single-zone water cooling at half the price.
 
-## When Dock Pro is the right pick
+## When is Dock Pro the right pick?
 
 If you sleep with a partner who needs a different temperature, or you want app-based climate scheduling, or you live in a hot/humid climate that pushes a smaller chiller — Dock Pro is the right shape.
 
-## When Cube is the right pick
+## When is Cube the right pick?
 
 If you sleep alone, you want set-and-forget water cooling, and your bedroom climate is not extreme — Cube is the right shape. Same Sleepme architecture, half the price.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',

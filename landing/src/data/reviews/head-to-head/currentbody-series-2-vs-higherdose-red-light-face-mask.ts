@@ -46,11 +46,11 @@ const currentbodyVsHigherDose: HeadToHead = {
 
 Both are consumer-brand flexible-silicone red light face masks. CurrentBody is the market-share leader with integrated neck flap. HigherDOSE is the polished consumer-brand ecosystem entry.
 
-## When CurrentBody Series 2 is the right pick
+## When is CurrentBody Series 2 the right pick?
 
 If you want integrated neck coverage, higher LED dose and the largest consumer customer base — CurrentBody is the right shape. The rational consumer default for face + neck.
 
-## When HigherDOSE Red Light Face Mask is the right pick
+## When is HigherDOSE Red Light Face Mask the right pick?
 
 If you want polished consumer-brand UX in the HigherDOSE ecosystem (paired with PEMF mat / sauna blanket) at lower price — HigherDOSE is the right shape. Accept face-only coverage and lighter LED dose.`,
   relatedComparisonSlug: 'best-red-light-face-masks-2026',

@@ -47,11 +47,11 @@ const dysonVsIqair: HeadToHead = {
 
 Both premium $1,000+ purifiers. Dyson is consumer-brand polish + smart features + formaldehyde. IQAir is clinical HEPA depth + Swiss pedigree.
 
-## When Dyson Big+Quiet is the right pick
+## When is Dyson Big+Quiet the right pick?
 
 If you want premium smart features + formaldehyde focus + quietest operation — Dyson is the right shape at $999. Consumer-brand polish over clinical depth.
 
-## When IQAir HealthPro Plus is the right pick
+## When is IQAir HealthPro Plus the right pick?
 
 If you want clinical-grade HyperHEPA H14 depth + multi-decade Swiss pedigree — IQAir is the right shape. Accept lack of smart features.`,
   relatedComparisonSlug: 'best-air-purifiers-2026',

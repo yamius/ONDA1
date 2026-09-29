@@ -44,11 +44,11 @@ const apolloNeuro: ToolReview = {
 
 Apollo Neuro is the easiest device in this category to actually live with. It is worn on the wrist or ankle like a band, delivers low-frequency vibration rather than electrical pulses, and runs in the background — no setup, no pads, no titration. The founding team at University of Pittsburgh has published peer-reviewed [HRV](/glossary/heart-rate-variability) and recovery trials on it — the vibration is pitched as a safety cue that nudges the [vagus nerve](/glossary/vagus-nerve) toward [parasympathetic](/glossary/parasympathetic-nervous-system) tone — which is more than most non-electrical vagal devices can claim. Seven programmes cover different intent states (calm, energy, sleep, focus, recover, social, clear), with intensity and duration both adjustable.
 
-## Where it falls short
+## What are the downsides of Apollo Neuro?
 
 The mechanism is the catch. Vibrotactile stimulation modulates autonomic tone via mechanoreceptor pathways and reaches the vagus indirectly — it is not transcutaneous vagus nerve stimulation in the strict sense. Users coming from electrical tVNS often describe the effect as gentler and slower; the acute parasympathetic shift is real but less pronounced than what an ear clip or neck collar can produce. The premium content library sits behind Apollo+, though basic operation is unsubscribed.
 
-## Who it is for
+## Who should buy Apollo Neuro?
 
 Choose Apollo Neuro if you want a vagal-modulation device you can actually wear all day, in the office, while sleeping, while exercising, without any setup ritual. If you want a stronger acute electrical effect, Nurosym, Truvaga 350 or Pulsetto are better fits. Pair the two if you can — many users run Apollo Neuro as the daily passive baseline and an electrical tVNS device for targeted sessions.
 

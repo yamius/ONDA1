@@ -44,11 +44,11 @@ const hoolestVeReliefPrime: ToolReview = {
 
 Hoolest VeRelief Prime is the most athlete-shaped device in this category. It is a handheld stimulator gripped in the hand and pressed against either the ear or the side of the neck, delivering a short (3–5 minute), high-intensity tVNS session. The company is an Arizona State University spin-out, and the founding team has published HRV-recovery and sleep-onset research on the device itself — a level of investigator transparency unusual at this price point.
 
-## Where it falls short
+## What are the downsides of Hoolest VeRelief Prime?
 
 It is not a passive wearable. The user has to actively hold the device against the chosen site for the full session, which makes it less suited to ambient daily use than Apollo Neuro or a wearable like Pulsetto. Peak intensities are higher than ear-clip devices, so the sensation can be sharp for first-time users. Programme variety is narrower than Pulsetto’s four-mode library.
 
-## Who it is for
+## Who should buy Hoolest VeRelief Prime?
 
 Choose Hoolest VeRelief Prime if you want a short, intense parasympathetic session before sleep or after training, and you prefer an athlete-built tool over a wellness wearable. If you want passive all-day vagal modulation, Apollo Neuro is the right shape. If you want a guided, programme-driven daily device, Pulsetto delivers more variety for similar money.
 

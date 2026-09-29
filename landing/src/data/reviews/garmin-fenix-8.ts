@@ -45,11 +45,11 @@ const garminFenix8: ToolReview = {
 
 The Fenix 8 has the best heart-sensor hardware Garmin fits to a wrist: the **Elevate v5** suite adds an ECG app and skin-temperature to the usual optical [HRV](/glossary/heart-rate-variability), heart rate and Pulse Ox. Garmin HRV Status builds an overnight baseline over roughly three weeks and flags balanced-versus-unbalanced, feeding a morning report alongside Body Battery and sleep. The killer feature for HRV specifically is battery: up to ~28 days on the 47 mm Solar and ~48 days on the 51 mm, so the watch is almost never off your wrist charging — which is exactly what a continuous overnight HRV record needs. And like all Garmin, there is no subscription.
 
-## Where it falls short
+## What are the downsides of Garmin Fenix 8?
 
 It is a ~$1,000 expedition-grade multisport watch. For HRV alone, that is enormous overkill: a ring or a chest strap tracks overnight HRV just as well, or better, for a fraction of the price and far less bulk. The Fenix 8 is large and heavy to sleep in, HRV Status is not more overnight-specialised than a dedicated recovery tracker, and Garmin Connect — while deep — is a cluttered, dated experience next to Oura or Apple. You are paying for multi-band GPS, a 40 m dive computer, a flashlight and a speaker, not the heart math.
 
-## Who it is for
+## Who should buy Garmin Fenix 8?
 
 Buy the Fenix 8 if you want one no-subscription watch that does serious training, outdoor navigation and diving *and* competent HRV, with battery life that makes nightly wear trivial. If overnight HRV precision is the only thing you care about, spend a fifth of the money on a ring or a strap.
 

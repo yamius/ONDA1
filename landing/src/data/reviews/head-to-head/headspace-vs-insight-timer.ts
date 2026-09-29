@@ -48,11 +48,11 @@ const headspaceVsInsight: HeadToHead = {
 
 Headspace is curriculum-led teaching under one voice; Insight Timer is the largest free meditation library on the market. Pick on whether you want structured learning or open exploration.
 
-## When Headspace is the right pick
+## When is Headspace the right pick?
 
 If you want a structured introduction to mindfulness with a clear curriculum and a consistent teaching voice, Headspace is the right shape. The Basics course is the strongest beginner path in the category; the $70/year subscription is the cost of curated polish.
 
-## When Insight Timer is the right pick
+## When is Insight Timer the right pick?
 
 If you want the largest free meditation library on the market — access to Tara Brach, Jack Kornfield and thousands of other teachers at no cost — Insight Timer is the right shape. The free tier is genuinely free; Member Plus is optional.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',

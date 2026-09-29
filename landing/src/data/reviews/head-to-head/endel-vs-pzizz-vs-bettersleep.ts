@@ -55,15 +55,15 @@ const endelVsPzizzVsBettersleep: HeadToHead = {
 
 Three sleep-audio apps with three different content philosophies. Endel for AI-adaptive ambient. Pzizz for dreamscape voice-and-music. BetterSleep for the deepest mixable library. Pick on which audio style fits your sleep ritual.
 
-## When Endel is the right pick
+## When is Endel the right pick?
 
 If you want AI-generated ambient soundscapes that adapt to context — time of day, weather, heart rate — Endel is the right shape. The adaptive generation is unique; the trade is no narration and a narrower library.
 
-## When Pzizz is the right pick
+## When is Pzizz the right pick?
 
 If a dreamscape voice-and-music sleep-onset ritual works for you, Pzizz is the right shape. Press-play and the experience does the rest. For acute sleep-onset difficulty, this is the most opinionated tool.
 
-## When BetterSleep is the right pick
+## When is BetterSleep the right pick?
 
 If you want the deepest mixable content library — soundscapes, sleep stories, meditations, layerable audio — BetterSleep is the right shape. The breadth and the mixability are the differentiators; the trade is no AI adaptivity or generative voice.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',

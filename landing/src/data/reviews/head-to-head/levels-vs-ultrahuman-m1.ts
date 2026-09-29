@@ -48,11 +48,11 @@ const levelsVsUltrahumanM1: HeadToHead = {
 
 Levels is the deeper glucose-only programme on the better CGM hardware; Ultrahuman M1 is the better ecosystem play if you already live in the Ultrahuman Ring stack. The decision is whether CGM is the central instrument or one signal among many.
 
-## When Levels is the right pick
+## When is Levels the right pick?
 
 If you treat CGM as the primary instrument — running structured meal experiments, tracking time-in-range as a serious metric, paying for analytics depth — Levels is the right shape. Dexcom G7 hardware plus the deepest insight engine in the category.
 
-## When Ultrahuman M1 is the right pick
+## When is Ultrahuman M1 the right pick?
 
 If you already own the Ultrahuman Ring Air or plan to, M1 is the right shape because glucose composed with HRV and sleep on one timeline is a meaningful cross-signal view nothing else in the consumer market offers. As a standalone CGM programme it is the wrong choice — go for Levels or Stelo instead.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

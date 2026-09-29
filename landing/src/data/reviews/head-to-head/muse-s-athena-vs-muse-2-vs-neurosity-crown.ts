@@ -55,15 +55,15 @@ const threeEeg: HeadToHead = {
 
 Three different intents in three different headsets. Athena is the all-rounder; Muse 2 is the value entry; Crown is the developer platform. Pick on what you actually want from the device.
 
-## When Muse S Athena is the right pick
+## When is Muse S Athena the right pick?
 
 For users who want one consumer device handling meditation, focus and sleep with deep content and unique sensor fusion (EEG + fNIRS), Athena is the right shape. The lack of mandatory subscription and the soft sleep-friendly band are the differentiators.
 
-## When Muse 2 is the right pick
+## When is Muse 2 the right pick?
 
 For users who want a real EEG meditation headband at the entry-tier price, Muse 2 is the right shape. Same four-channel EEG and same content library as Athena; no sleep tracking, rigid band, $250 cheaper.
 
-## When Neurosity Crown is the right pick
+## When is Neurosity Crown the right pick?
 
 For developers, researchers and biohackers who want raw EEG over an open SDK with no subscription gate, Crown is the right shape. Eight dry electrodes — more cortical coverage than Muse — plus JavaScript/Python/Swift APIs out of the box. The trade is the absence of consumer content; bring your own application.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',

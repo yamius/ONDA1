@@ -48,11 +48,11 @@ const gammacoreVsNurosym: HeadToHead = {
 
 gammaCore and Nurosym are the two non-invasive vagus stimulators with real evidence behind them — and they target different conditions. gammaCore for clinical headache indications with a prescription; Nurosym for self-directed consumer tVNS with the deepest non-indication-specific evidence base.
 
-## When gammaCore is the right pick
+## When is gammaCore the right pick?
 
 If you have a diagnosed migraine or cluster-headache condition and a clinician willing to prescribe, gammaCore is the right tool. The FDA clearance and the headache-specific trial base are the value. For general wellness, autonomic modulation or HRV training, it is the wrong shape — the indication is narrow on purpose.
 
-## When Nurosym is the right pick
+## When is Nurosym the right pick?
 
 If you want clinical-grade tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. The Parasym hardware appears in dozens of peer-reviewed trials across exactly those indications; the parameters are disclosed; no prescription gate.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

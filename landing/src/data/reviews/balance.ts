@@ -45,11 +45,11 @@ const balance: ToolReview = {
 
 Balance is the personalisation pick of this group. Rather than dropping you into a vast catalogue, it builds an adaptive plan — tuned to your experience level, how often you practise and the feedback you give after sessions — and adjusts as you go. It also has the most generous on-ramp here: a full 12-month free trial, so you can run a real practice for a year before deciding to pay.
 
-## Where it falls short
+## What are the downsides of Balance?
 
 The adaptation is good, not perfect — independent reviews note it does not always pick the right course level. The bigger issue is reliability on Android, where users have reported audio cutting out mid-session and subscription glitches. And the library, while well-built, is smaller than the sprawling catalogues of Calm or Insight Timer.
 
-## Who it is for
+## Who should buy Balance?
 
 Choose Balance if you want a plan that meets you where you are and adapts over time, and the year-long free trial appeals. If you want the largest library, or you are on Android and reliability worries you, Insight Timer or Headspace are safer picks.
 

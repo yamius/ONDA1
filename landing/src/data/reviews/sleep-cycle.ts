@@ -45,11 +45,11 @@ const sleepCycle: ToolReview = {
 
 Sleep Cycle is the most popular sleep tracker for a reason: it does the core job cleanly. It measures your night through the phone microphone and accelerometer — or through heart rate if you wear an Apple Watch — and its long-running idea, the smart alarm, rouses you within a window when you are in lighter sleep rather than [deep sleep](/glossary/deep-sleep), so you wake less groggy. The analysis it hands back is readable: trends and a nightly breakdown, not a wall of numbers.
 
-## Where it falls short
+## What are the downsides of Sleep Cycle?
 
 It is a tracker first. Wind-down content — sounds, sleep-aid audio — exists but is thin next to a dedicated relaxation app, and phone-on-the-bed tracking is inherently less precise than a wearable on your wrist. The better data, from snoring to heart rate to deeper trends, sits behind the Premium plan.
 
-## Who it is for
+## Who should buy Sleep Cycle?
 
 Choose Sleep Cycle if you want a polished, low-effort tracker with a smart alarm and a free tier you can actually live on. If you mainly need help falling asleep, a relaxation app will serve you better; if you want clinical-grade precision, a wearable will.
 

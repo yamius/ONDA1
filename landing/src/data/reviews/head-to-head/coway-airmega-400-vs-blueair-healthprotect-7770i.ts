@@ -46,11 +46,11 @@ const cowayVsBlueair: HeadToHead = {
 
 Coway Airmega 400 is the mid-premium value reference with largest AHAM coverage. Blueair HealthProtect 7770i is the Swedish premium with HEPASilent + GermShield tech.
 
-## When Coway Airmega 400 is the right pick
+## When is Coway Airmega 400 the right pick?
 
 If you want largest AHAM coverage at mid-premium price — Coway is the right shape at $479. The rational mid-premium default.
 
-## When Blueair HealthProtect 7770i is the right pick
+## When is Blueair HealthProtect 7770i the right pick?
 
 If you want Swedish HEPASilent + GermShield always-on premium tech — Blueair is the right shape at $820. Accept smaller coverage and higher filter cost.`,
   relatedComparisonSlug: 'best-air-purifiers-2026',

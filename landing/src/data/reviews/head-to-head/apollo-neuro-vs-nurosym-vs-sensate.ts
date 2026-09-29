@@ -55,15 +55,15 @@ const apolloVsNurosymVsSensate: HeadToHead = {
 
 Three independent mechanisms targeting the same nerve. Apollo is all-day vibrotactile, Nurosym is clinical-grade electrical, Sensate is infrasonic-and-soundscape ritual. Pick on which mechanism fits your routine.
 
-## When Apollo Neuro is the right pick
+## When is Apollo Neuro the right pick?
 
 If you want vagal modulation that runs through your day without ceremony, Apollo is the right shape. The vibrotactile mechanism is indirect but real, the University of Pittsburgh evidence is solid, and 24/7 wearability is the use case.
 
-## When Nurosym is the right pick
+## When is Nurosym the right pick?
 
 If you are running structured tVNS self-experiments, want disclosed parameters, and value the deepest published evidence base, Nurosym is the right shape. The Parasym hardware is the most-cited consumer auricular tVNS platform in the literature.
 
-## When Sensate is the right pick
+## When is Sensate the right pick?
 
 If a pleasant focused evening wind-down ritual is what you want, Sensate is the right shape. The soundscape-paired infrasonic sessions are the most enjoyable experience in this group; the trade is sit-down session-based use only.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

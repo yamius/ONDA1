@@ -48,11 +48,11 @@ const nurosymVsVagustim: HeadToHead = {
 
 Same anatomy, two different philosophies. Nurosym is the spartan single-programme platform with the deepest evidence base. Vagustim is the protocol-rich EU alternative with broader presets at a lower price.
 
-## When Nurosym is the right pick
+## When is Nurosym the right pick?
 
 If you are running structured tVNS self-experiments, want the deepest published evidence base to reference and prefer a deliberately spartan single-programme approach, Nurosym is the right shape. The Parasym hardware is the most-cited consumer auricular tVNS platform in the literature.
 
-## When Vagustim is the right pick
+## When is Vagustim the right pick?
 
 If you are in an EU market and want a wider library of disclosed-parameter presets covering sleep, stress, depression, anxiety and IBS protocols, Vagustim is the right shape. The lower price and the protocol variety are the differentiators; the trade is brand recognition and trial volume.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

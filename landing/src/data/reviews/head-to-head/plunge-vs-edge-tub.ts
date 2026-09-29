@@ -47,11 +47,11 @@ const plungeVsEdge: HeadToHead = {
 
 Plunge is the premium category leader; Edge is the price-disciplined challenger with comparable hardware. The decision rests on whether the brand premium is worth $3,500 to you.
 
-## When The Plunge is the right pick
+## When is The Plunge the right pick?
 
 If you want the category-defining build with longest multi-year reliability data, marginal chiller-power edge, 3-year warranty and the founder content ecosystem — The Plunge is the right shape.
 
-## When Edge Tub is the right pick
+## When is Edge Tub the right pick?
 
 If you want chiller-built cold-plunge capability at the most accessible price in the tier — Edge is the right shape. For typical home daily-use practice the hardware delivers what most users actually need.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',

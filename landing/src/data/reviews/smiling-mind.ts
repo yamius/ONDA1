@@ -45,11 +45,11 @@ const smilingMind: ToolReview = {
 
 Smiling Mind is a completely free app from an Australian nonprofit, and its distinctive strength is breadth of audience rather than breadth of catalogue. It was built with psychologists and educators, and it offers age-specific programs — for children, teens, families, the workplace and healthcare workers. For a parent who wants one app the whole household can use, or for a classroom, nothing else here is as well suited.
 
-## Where it falls short
+## What are the downsides of Smiling Mind?
 
 It is plainer than the big paid apps — production and interface are simple, the library is smaller than the giants, and content is grouped by age and setting rather than adaptively tailored to you. For a solo adult chasing advanced practice, the depth runs out sooner than in Waking Up or Insight Timer.
 
-## Who it is for
+## Who should buy Smiling Mind?
 
 Choose Smiling Mind if you want a free, credible app for a family or a school — age-appropriate programs, no cost, no paywall. A solo practitioner who wants depth or a vast library will be better served elsewhere.
 

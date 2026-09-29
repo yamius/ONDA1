@@ -42,11 +42,11 @@ const calmVsWakingUp: HeadToHead = {
 
 [Calm](/reviews/calm) is the polished sleep-and-relaxation library, easy for anyone; [Waking Up](/reviews/waking-up) is the deepest, most philosophical app, for serious meditators.
 
-## When Calm is the right pick
+## When is Calm the right pick?
 
 You want the best sleep stories and a big, polished library for relaxation and easy everyday meditation.
 
-## When Waking Up is the right pick
+## When is Waking Up the right pick?
 
 You’re an experienced or serious meditator who wants depth, rigour and philosophy over breadth.
 

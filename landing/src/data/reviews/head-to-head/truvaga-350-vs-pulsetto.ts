@@ -48,11 +48,11 @@ const truvagaVsPulsetto: HeadToHead = {
 
 Truvaga 350 wins on hardware provenance and stimulation precision; Pulsetto wins on protocol variety, daily-use form factor and price. The session-lifetime cap on Truvaga is the wildcard for long-term ownership economics.
 
-## When Truvaga 350 is the right pick
+## When is Truvaga 350 the right pick?
 
 If you value the gammaCore lineage — the same manufacturing pedigree, the same waveform, the same company as the only FDA-cleared non-invasive VNS device — Truvaga 350 is the right shape. The clinical heritage is real, even if the consumer indication itself is not FDA-cleared.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 If you want a daily-use collar with four guided programmes, structured 4–20 minute sessions and no session lifetime cap, Pulsetto is the right shape. At $269 versus Truvaga’s $499 it is roughly half the price for broader programme variety. Most consumer users land here.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

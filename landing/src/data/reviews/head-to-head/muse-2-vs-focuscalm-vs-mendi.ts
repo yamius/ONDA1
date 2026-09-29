@@ -55,15 +55,15 @@ const muse2VsFocusCalmVsMendi: HeadToHead = {
 
 Three entry-tier brain-training headbands at three different signal modalities. Muse 2 is the most-mature consumer EEG meditation platform; FocusCalm is content-driven focus training at the lowest price; Mendi is the simplest fNIRS focus game.
 
-## When Muse 2 is the right pick
+## When is Muse 2 the right pick?
 
 If you want the most mature consumer EEG meditation experience — four-channel signal, decade-old ecosystem, mature content library — at the entry-tier price, Muse 2 is the right shape. Most first-time users land here.
 
-## When FocusCalm is the right pick
+## When is FocusCalm the right pick?
 
 If focus and calm training is the specific use case, the soft headband matters for daily-wear comfort, and the $50-cheaper-than-Muse price matters — FocusCalm is the right shape. Single-channel EEG is the trade.
 
-## When Mendi is the right pick
+## When is Mendi the right pick?
 
 If you want the simplest possible neurofeedback experience — single sensor, single game, instant feedback, no learning curve — Mendi is the right shape. The narrowest scope of the three by design.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',

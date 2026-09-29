@@ -48,11 +48,11 @@ const sensAiVsMuse: HeadToHead = {
 
 Muse S Athena is the better all-rounder; Sens.ai is the right pick only when multi-modal active intervention is specifically what you want. The price gap is significant — Muse delivers most of what most users actually need at a third of the cost.
 
-## When Sens.ai is the right pick
+## When is Sens.ai the right pick?
 
 If the EEG + photobiomodulation + HRV stack in one programme is the experience you want — and you are paying for active intervention (PBM light therapy) rather than measurement alone — Sens.ai is the right shape. Premium pricing with an ongoing subscription; high-engagement users only.
 
-## When Muse S Athena is the right pick
+## When is Muse S Athena the right pick?
 
 If you want the most mature consumer brain-training experience — meditation, focus, sleep tracking, sensor fusion (EEG + fNIRS), no mandatory subscription — Muse S Athena is the right shape. Three times cheaper than Sens.ai for most of the same job.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',

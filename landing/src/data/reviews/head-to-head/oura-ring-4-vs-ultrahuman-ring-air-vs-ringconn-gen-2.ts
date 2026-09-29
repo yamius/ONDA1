@@ -59,15 +59,15 @@ const threeRings: HeadToHead = {
 
 Three different optimal points on the smart-ring trade-off surface. Oura for polish, Ultrahuman for form factor + CGM ecosystem, RingConn for value + battery. Most users do not need to think much harder than that.
 
-## When Oura Ring 4 is the right pick
+## When is Oura Ring 4 the right pick?
 
 If you want the most mature consumer-ring experience and the deepest sleep model, Oura is the right shape. The $5.99/month membership is the cost of admission to a decade of iteration and the consumer-reference analytics. Most users still land here.
 
-## When Ultrahuman Ring Air is the right pick
+## When is Ultrahuman Ring Air the right pick?
 
 If ring weight matters more than anything else, Ultrahuman is the lightest smart ring on the market. If you are using or planning to use the Ultrahuman M1 CGM, the native unified-ecosystem view is unique. Just go in aware of the battery-reliability caveat.
 
-## When RingConn Gen 2 is the right pick
+## When is RingConn Gen 2 the right pick?
 
 If subscription-free is a hard requirement and you want the longest battery in the category, RingConn is the right shape. It is also the cheapest over three years by a meaningful margin. The trade is a slightly less mature app and shallower sleep analytics than Oura.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

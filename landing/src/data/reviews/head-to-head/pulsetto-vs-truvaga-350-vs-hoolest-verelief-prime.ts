@@ -55,15 +55,15 @@ const pulsettoVsTruvagaVsHoolest: HeadToHead = {
 
 Three consumer cervical/handheld tVNS devices for users avoiding prescription gates. Pulsetto for daily-use guided programmes. Truvaga for clinical-platform consumer experience. Hoolest for athletic recovery.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 If you want a polished daily-use collar with four guided programmes at the most accessible price, Pulsetto is the right shape. Most first-time consumer cervical-tVNS users land here.
 
-## When Truvaga 350 is the right pick
+## When is Truvaga 350 the right pick?
 
 If you value the gammaCore platform lineage without the prescription gate, Truvaga is the right shape. Same 5 kHz burst waveform as the FDA-cleared device; the consumer indication itself is general wellness.
 
-## When Hoolest VeRelief Prime is the right pick
+## When is Hoolest VeRelief Prime the right pick?
 
 If you want short, intense parasympathetic priming around training and sleep — and the dual ear/neck targeting is a useful feature — Hoolest is the right shape. Founder-published athletic-recovery research is the distinguishing evidence base.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

@@ -47,11 +47,11 @@ const cowayApVsLevoit300: HeadToHead = {
 
 Both budget True HEPA. Coway AP-1512HH is the Wirecutter-favorite with sensor + larger coverage at $229. Levoit Core 300 is the $99 bedroom-scale entry.
 
-## When Coway Airmega AP-1512HH is the right pick
+## When is Coway Airmega AP-1512HH the right pick?
 
 If you want sensor + auto mode + Wirecutter brand-trust + larger coverage at budget price — Coway is the right shape at $229.
 
-## When Levoit Core 300 is the right pick
+## When is Levoit Core 300 the right pick?
 
 If you want cheapest credible entry to single bedroom — Levoit Core 300 at $99 is the right shape. Accept no sensor + bedroom-scale coverage.`,
   relatedComparisonSlug: 'best-air-purifiers-2026',

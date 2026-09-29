@@ -44,11 +44,11 @@ const bedjet3: ToolReview = {
 
 BedJet 3 is the air-flow alternative in a category dominated by water-cooled systems. The fan unit pushes heated or cooled air through a duct that runs under the sheet — no water tank to refill, no pad to install, no subscription. At $500-700 it is the most affordable serious sleep-climate option.
 
-## Where it falls short
+## What are the downsides of BedJet 3?
 
 Air-flow cools less aggressively than water-cooled systems. In peak summer heat with high humidity, BedJet noticeably lags Eight Sleep and ChiliPad. Fan noise is audible. Single-zone in base configuration.
 
-## Who it is for
+## Who should buy BedJet 3?
 
 Choose BedJet 3 if you want affordable sleep climate without water management — and your climate needs are moderate. For aggressive cooling in peak heat, water-cooled (ChiliPad, Eight Sleep). For tracking, Eight Sleep.
 

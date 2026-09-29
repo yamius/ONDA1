@@ -42,11 +42,11 @@ const cowayVsIqair: HeadToHead = {
 
 The [Coway Airmega 400](/reviews/coway-airmega-400) is the large-room value champion; the [IQAir HealthPro Plus](/reviews/iqair-healthpro-plus) is the clinical reference — HyperHEPA H14 medical-grade filtration at more than double the price.
 
-## When the Coway Airmega 400 is the right pick
+## When is the Coway Airmega 400 the right pick?
 
 You want verified large-room HEPA filtration at strong value, without paying for clinical-grade capture.
 
-## When the IQAir HealthPro Plus is the right pick
+## When is the IQAir HealthPro Plus the right pick?
 
 You need the deepest filtration — allergies, VOCs, chemical sensitivity or medical-grade reassurance.
 

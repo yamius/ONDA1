@@ -44,11 +44,11 @@ const openApp: ToolReview = {
 
 Open is the premium hybrid app — breathwork + meditation + movement in one polished daily-practice platform. Named-instructor production (Manoj Dias, Cory Muscara), cinematic UX, live class layer. The hybrid thesis is the differentiator: one app instead of stacking three specialists.
 
-## Where it falls short
+## What are the downsides of Open?
 
 Pure-breathwork depth. Open's per-modality library is smaller than specialist apps — Breathwrk has more breath sessions, Calm has more meditation content. The hybrid serves users who value modality stacking over depth in any one.
 
-## Who it is for
+## Who should buy Open?
 
 Choose Open if you want one premium app for breath + meditation + movement rather than three specialist apps. For pure breathwork depth, Breathwrk. For cinematic music breathwork, Othership. For meditation depth, Calm or Headspace.
 

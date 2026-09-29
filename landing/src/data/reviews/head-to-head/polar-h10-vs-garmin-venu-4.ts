@@ -48,11 +48,11 @@ const polarH10VsGarmin: HeadToHead = {
 
 Polar H10 is the accuracy reference; Garmin Venu 4 is the continuous-wear training watch. They serve different jobs, and committed athletes often own both.
 
-## When Polar H10 is the right pick
+## When is Polar H10 the right pick?
 
 If ground-truth HRV accuracy is what you want — for a structured morning protocol, for validating another device, or for app-agnostic measurement — Polar H10 is the right shape. At ~$90 with no subscription and a replaceable coin cell, it is the cheapest device in the HRV category and the most accurate at once.
 
-## When Garmin Venu 4 is the right pick
+## When is Garmin Venu 4 the right pick?
 
 If you want continuous overnight HRV plus a training-analytics smartwatch — VO2 max, training load, recovery hours, body battery — Garmin Venu 4 is the right shape. No subscription, multi-day battery, Strava and TrainingPeaks integration first-party.
 

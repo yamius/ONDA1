@@ -45,11 +45,11 @@ const ringconnGen3: ToolReview = {
 
 The RingConn Gen 3 is the most complete subscription-free ring RingConn has shipped. The headline is value plus features: a one-time $349 with no membership, a ~10-14 day battery, and a first-in-category haptic motor that enables silent alarms and alerts (elevated heart rate, inactivity, step goals). It adds new vascular-health and nighttime blood-pressure trend tracking, sleep-apnea pattern insights, and a universal wireless charging case, and it works across iPhone and Android. As a no-subscription package it is hard to beat.
 
-## Where it falls short
+## What are the downsides of RingConn Gen 3?
 
 Accuracy and polish. RingConn’s [HRV](/glossary/heart-rate-variability) and sleep tracking are good and improved, but Oura remains the validated reference, and the RingConn app is less explanatory. The new vascular and blood-pressure features are trend-level insights, not diagnostic tools — useful for spotting patterns, not for medical decisions.
 
-## Who it is for
+## Who should buy RingConn Gen 3?
 
 Choose the RingConn Gen 3 if you want the strongest subscription-free ring — long battery, silent haptic alerts, a broad sensor suite — and you don’t want to pay Oura’s ongoing membership. If you want the most accurate data and the best app, [Oura Ring 5](/reviews/oura-ring-5) still leads, at a subscription; for the previous, cheaper RingConn, see the [Gen 2](/reviews/ringconn-gen-2).
 

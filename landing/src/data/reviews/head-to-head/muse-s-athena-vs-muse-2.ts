@@ -48,11 +48,11 @@ const museSAthenaVsMuse2: HeadToHead = {
 
 Athena is Muse 2 with sleep tracking, fNIRS sensing and a sleep-friendly form factor, at twice the price. If sleep matters, Athena. If you only want meditation feedback, Muse 2 covers it for half the cost.
 
-## When Athena is the right pick
+## When is Athena the right pick?
 
 For users who want one device that handles meditation by day and sleep tracking by night, Athena is the only Muse that works. The fNIRS addition meaningfully improves session-level neurofeedback accuracy by giving the app a second independent biomarker. The soft sleep-friendly band is the form-factor reason most users move to Athena even before they value the new sensors.
 
-## When Muse 2 is the right pick
+## When is Muse 2 the right pick?
 
 Muse 2 remains the most cost-effective real-EEG meditation headband. If you wear another device for sleep (Oura, Whoop, Apple Watch) and only need EEG-feedback for sit-up meditation sessions, Muse 2 is the right shape — the content library is the same and the EEG signal is identical.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',

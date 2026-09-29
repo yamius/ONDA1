@@ -42,11 +42,11 @@ const lunaVsOura4: HeadToHead = {
 
 Budget vs reference. The [Noise Luna Ring Gen 2](/reviews/luna-ring) is ~$300 with no subscription and accurate sleep tracking; the [Oura Ring 4](/reviews/oura-ring-4) is the accuracy-and-app leader at $349 plus a membership.
 
-## When the Noise Luna Ring is the right pick
+## When is the Noise Luna Ring the right pick?
 
 You want the cheaper, subscription-free ring with good sleep tracking and don’t mind the charging case.
 
-## When the Oura Ring 4 is the right pick
+## When is the Oura Ring 4 the right pick?
 
 Accuracy, app polish, fit range and single-charge battery matter more than price, and the membership is acceptable.
 

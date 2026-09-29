@@ -44,11 +44,11 @@ const xenByNeuvana: ToolReview = {
 
 Xen by Neuvana takes the most consumer-friendly approach to auricular tVNS in this list. It packages the stimulator as in-ear electrodes built into earbuds, with the parameter playing on top of music from a phone — so a session feels closer to wearing AirPods than wearing a medical device. Modes cover focus, calm and sleep, and intensity is user-controlled. No subscription is required for full operation.
 
-## Where it falls short
+## What are the downsides of Xen by Neuvana?
 
 The evidence base is the weak point. The auricular tVNS mechanism inherits credibility from the broader Parasym/Nurosym literature, but Xen-specific peer-reviewed RCTs do not yet exist; what is published is company-sponsored. The earbud form factor also has a practical downside — in-ear electrode placement is more finicky than a tragus clip, and the device tethers to a control unit by cable.
 
-## Who it is for
+## Who should buy Xen by Neuvana?
 
 Choose Xen by Neuvana if the earbud form factor and music-paired sessions make daily use realistic for you, and you are comfortable with a thinner device-specific evidence base. If clinical-grade evidence is the priority, Nurosym is the right pick. If you want a wider protocol library at a lower price, Pulsetto delivers more for less.
 

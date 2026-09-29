@@ -48,11 +48,11 @@ const ouraVsSamsungRing: HeadToHead = {
 
 This is a tie that breaks on which ecosystem you live in. The hardware is comparable, the sleep analytics gap favours Oura, and the subscription gap favours Samsung. Platform alignment decides.
 
-## When Oura is the right pick
+## When is Oura the right pick?
 
 If you are on iPhone or you have a cross-platform household where the device needs to work for everyone, Oura is the right shape. The app is the most mature in the category, the sleep model is the consumer reference, and the membership is the cost of admission to the deepest smart-ring analytics on the market.
 
-## When Samsung Galaxy Ring is the right pick
+## When is Samsung Galaxy Ring the right pick?
 
 If you are inside the Samsung ecosystem — Galaxy phone, Galaxy Watch, Samsung Health — Samsung Galaxy Ring is the right shape. The Galaxy Watch + Galaxy Ring cross-validation is unique, the subscription-free model saves $215 over three years, and Samsung Health is a credible health-data platform. For iPhone users it is the wrong shape; for Android users outside Samsung it loses most of its integration advantage.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

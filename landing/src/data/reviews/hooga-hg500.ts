@@ -44,11 +44,11 @@ const hoogaHg500: ToolReview = {
 
 Hooga HG500 is the cheapest legitimate red-light therapy panel on the consumer market. Two-wavelength coverage (660 + 850 nm), 100 5W LEDs, honestly-specced irradiance and EMF figures in the same range as panels three times the price. Stand and door-mount included. The marketing is restrained for the category — no peak-irradiance-at-touching-the-LED games. For first-time buyers or buyers who treat red light as one of many tools rather than the centrepiece, this is the right entry.
 
-## Where it falls short
+## What are the downsides of Hooga HG500?
 
 You give up wavelength breadth (no 630/810/830 nm), LED count, and the premium build feel of Joovv or Mito Red. No FDA Class II registration. Smaller community/support footprint than the larger brands. The panel does what it does well; it just does less than premium options.
 
-## Who it is for
+## Who should buy Hooga HG500?
 
 Choose Hooga HG500 if budget is the deciding criterion and you want verified specs at the entry tier. For wavelength breadth, MitoPRO 1500 or PlatinumLED BIOMAX 600. For premium build and FDA registration, Joovv Solo 3.0.
 

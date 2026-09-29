@@ -44,11 +44,11 @@ const cowayAirmega400: ToolReview = {
 
 Coway Airmega 400 is the mid-premium reference — True HEPA H13 + carbon + AHAM-certified 1560 sq ft coverage + built-in sensors at $479. Best CADR-per-dollar in category and best long-term filter economics.
 
-## Where it falls short
+## What are the downsides of Coway Airmega 400?
 
 No HyperHEPA or PECO differentiation. For users wanting clinical-tier filtration depth (IQAir) or PECO VOC destruction (Molekule), premium tier required.
 
-## Who it is for
+## Who should buy Coway Airmega 400?
 
 Choose Coway Airmega 400 for premium-tier coverage at mid-premium price. For clinical HEPA depth, IQAir HealthPro Plus. For Dyson smart polish, Dyson Big+Quiet. For European premium, Blueair HealthProtect 7770i.
 

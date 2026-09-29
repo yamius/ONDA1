@@ -44,11 +44,11 @@ const saunaspaceFaraday: ToolReview = {
 
 SaunaSpace Faraday is the near-IR-specific premium sauna. Instead of carbon-fibre far-IR heaters, it uses tungsten-filament incandescent bulbs that deliver the near-IR spectrum closer to natural sunlight. Combined with full Faraday-cage EMF shielding and all-wood construction, it occupies a distinct premium niche that biohackers specifically seek out.
 
-## Where it falls short
+## What are the downsides of SaunaSpace Faraday?
 
 Near-IR-only. Users who want full-spectrum IR will find SaunaSpace’s wavelength coverage narrower than Sunlighten or Clearlight by design. Tent configurations require assembly. Mainstream IR-sauna users typically end up at Sunlighten or Clearlight instead.
 
-## Who it is for
+## Who should buy SaunaSpace Faraday?
 
 Choose SaunaSpace Faraday if near-IR-specific exposure and maximum EMF shielding are the deciding criteria. For full-spectrum cabin IR, Sunlighten mPulse. For portable IR, HigherDose Blanket.
 

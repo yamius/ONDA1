@@ -44,11 +44,11 @@ const edgeTub: ToolReview = {
 
 Edge Tub is the price-disciplined challenger in the chiller-built cold-plunge category. Comparable chiller capacity to The Plunge, ozone sanitation included, similar form factor — at roughly $2,495 versus The Plunge’s $5,990. For users who want chiller-built hardware without paying the category-leader premium, this is the right shape.
 
-## Where it falls short
+## What are the downsides of Edge Tub?
 
 Edge is newer and the multi-year reliability data is still being built. The warranty is shorter (2 years vs Plunge’s 3), and the chiller recovery in peak summer heat is marginally slower. Founder and content presence is also less developed.
 
-## Who it is for
+## Who should buy Edge Tub?
 
 Choose Edge Tub if you want chiller-built cold-plunge capability at the most accessible price in the tier. If multi-year reliability and the deepest manufacturer support are deciding criteria, The Plunge is the right shape.
 

@@ -54,15 +54,15 @@ const eightSleepVsChilipadVsBedjet: HeadToHead = {
 
 Three systems resolve the category cleanly: Eight Sleep (premium + tracking + subscription), ChiliPad (subscription-free water), BedJet (subscription-free air, cheapest).
 
-## When Eight Sleep Pod 4 is the right pick
+## When is Eight Sleep Pod 4 the right pick?
 
 If you want integrated HRV and sleep tracking so you don't need a separate wearable, plus Autopilot climate scheduling — and you accept the ongoing subscription. The hardware-as-wearable model is unique in the category.
 
-## When ChiliPad Dock Pro is the right pick
+## When is ChiliPad Dock Pro the right pick?
 
 If you already wear an Oura or Whoop and you want the same water-cooled climate without paying the Eight Sleep subscription. Roughly half the 3-year ownership cost of Eight Sleep with comparable climate hardware.
 
-## When BedJet 3 is the right pick
+## When is BedJet 3 the right pick?
 
 If you want the cheapest credible entry into active sleep-climate, you live in a mild-to-moderate climate, and you don't want to manage a water reservoir. The air-flow approach is enough for most users outside summer peaks — at roughly 1/6 the Eight Sleep 3-year total cost.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',

@@ -44,11 +44,11 @@ const eightSleepPod3: ToolReview = {
 
 Eight Sleep Pod 3 is the cheap-discounted entry into the Eight Sleep ecosystem. Same app, same Autopilot, same HRV tracking — narrower climate range and discontinued for new production but available from inventory at meaningfully lower prices.
 
-## Where it falls short
+## What are the downsides of Eight Sleep Pod 3?
 
 Discontinued for new production. Climate recovery slightly less aggressive than Pod 4 in peak summer heat. Same subscription requirement.
 
-## Who it is for
+## Who should buy Eight Sleep Pod 3?
 
 Choose Eight Sleep Pod 3 if Pod 3 inventory is available at discount and Eight Sleep's ecosystem is what you want. For latest hardware, Pod 4. For subscription-free, ChiliPad.
 

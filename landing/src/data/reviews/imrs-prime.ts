@@ -44,11 +44,11 @@ const imrsPrime: ToolReview = {
 
 iMRS Prime is the rational Bemer alternative — Swiss-engineered multi-applicator PEMF system at meaningfully lower price. Sawtooth waveform with circadian-aligned preset protocols (morning energising, evening calming) and a multi-decade brand pedigree.
 
-## Where it falls short
+## What are the downsides of iMRS Prime?
 
 No research moat. Where Bemer has 50+ peer-reviewed studies on the specific biorhythmic signal, iMRS uses well-documented general PEMF frequencies without a proprietary single-waveform research base. Brand recognition in the US market is lower.
 
-## Who it is for
+## Who should buy iMRS Prime?
 
 Choose iMRS Prime if you're cross-shopping Bemer and want Swiss-engineered multi-applicator hardware at lower price. For research-backed biorhythmic signal, Bemer Classic Evo. For multi-modality stacking, Healthy Wave Multi-Wave. For mid-tier with dual coil/mat, Curatron 3D.
 

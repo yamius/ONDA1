@@ -44,11 +44,11 @@ const sunHomeEquinox: ToolReview = {
 
 Sun Home Equinox is the newer mid-premium IR sauna brand that bundles chromotherapy and audio to differentiate from Sunlighten / Clearlight while undercutting them on price. Full-spectrum delivery via separate near and far emitters, cedar build, 5-year warranty. Solid execution from a credible newer entrant.
 
-## Where it falls short
+## What are the downsides of Sun Home Equinox?
 
 Newer brand presence means less multi-year reliability data and thinner published-research footprint than Sunlighten or Clearlight. The bundled features are competently implemented but unlikely to be the reason most users buy a sauna.
 
-## Who it is for
+## Who should buy Sun Home Equinox?
 
 Choose Sun Home Equinox if you want category-leader-tier full-spectrum IR with marginally lower price and bundled extras. For longest-established brand pedigree, Sunlighten or Clearlight remain the safer picks.
 

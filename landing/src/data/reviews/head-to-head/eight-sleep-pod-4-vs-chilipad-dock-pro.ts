@@ -46,11 +46,11 @@ const eightSleepVsChilipad: HeadToHead = {
 
 Both deliver premium dual-zone water-cooled sleep climate. Eight Sleep bundles integrated HRV/sleep tracking behind an ongoing subscription; ChiliPad ships clean hardware with no subscription and no built-in tracking.
 
-## When Eight Sleep Pod 4 is the right pick
+## When is Eight Sleep Pod 4 the right pick?
 
 If you want HRV and sleep tracking integrated into the climate system so you don't need a separate wearable, and you want Autopilot to adjust temperature by sleep stage automatically — Eight Sleep is the right shape. The subscription is the cost of admission.
 
-## When ChiliPad Dock Pro is the right pick
+## When is ChiliPad Dock Pro the right pick?
 
 If you already wear an Oura or Whoop and you want the climate hardware alone without the subscription tax — ChiliPad is the right shape. Same dual-zone water cooling, roughly half the 3-year ownership cost.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',

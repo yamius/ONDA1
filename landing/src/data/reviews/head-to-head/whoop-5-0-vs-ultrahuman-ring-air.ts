@@ -44,11 +44,11 @@ const whoopVsUltrahuman: HeadToHead = {
 
 This is a rent-vs-own decision. [WHOOP 5.0](/reviews/whoop-5-0) is a band you pay for every year in exchange for the deepest recovery-and-strain coaching in a screenless tracker. [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is a ring you buy once, subscription-free, strong on sleep — with a battery-reliability asterisk.
 
-## When WHOOP 5.0 is the right pick
+## When is WHOOP 5.0 the right pick?
 
 You train seriously and want the closed loop: continuous 24/7 HRV, a daily Recovery score and Strain target, and coaching that learns from a behaviour journal. If that depth is worth $239 a year, WHOOP is unmatched among screenless devices.
 
-## When the Ultrahuman Ring Air is the right pick
+## When is the Ultrahuman Ring Air the right pick?
 
 You want a light, discreet, subscription-free tracker centred on sleep and readiness, and you would rather own the hardware than rent it. Accept the battery-reliability risk and it is a strong one-time buy.
 

@@ -48,11 +48,11 @@ const bettersleepVsSleepCycle: HeadToHead = {
 
 BetterSleep is the content app — wind-down audio, sleep stories, mixable soundscapes. Sleep Cycle is the tracking app — smart alarm, sleep-stage estimates, trend analytics. Different jobs, same shelf.
 
-## When BetterSleep is the right pick
+## When is BetterSleep the right pick?
 
 If your sleep problem is falling asleep — getting your nervous system into sleep mode — BetterSleep is the right shape. The content library is deeper than Sleep Cycle’s and the mixable audio layers let you build your own wind-down soundscapes.
 
-## When Sleep Cycle is the right pick
+## When is Sleep Cycle the right pick?
 
 If you want to track sleep — smart alarm, sleep-stage estimates, snoring detection, multi-month trends — Sleep Cycle is the right shape. The implementation has been iterated for over a decade and the smart alarm is the category-defining version.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',

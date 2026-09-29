@@ -42,11 +42,11 @@ const cowayVsDyson: HeadToHead = {
 
 The [Coway Airmega 400](/reviews/coway-airmega-400) is the large-room value champion — verified HEPA coverage for under half the price; the [Dyson Purifier Big+Quiet](/reviews/dyson-purifier-big-quiet) adds a polished app, formaldehyde destruction and cooling airflow at a premium.
 
-## When the Coway Airmega 400 is the right pick
+## When is the Coway Airmega 400 the right pick?
 
 You want verified large-room HEPA filtration and coverage at the best price.
 
-## When the Dyson Purifier Big+Quiet is the right pick
+## When is the Dyson Purifier Big+Quiet the right pick?
 
 You want the design, app, formaldehyde-destroying layer and cooling function, and the premium is worth it.
 

@@ -42,11 +42,11 @@ const ringProVsOura5: HeadToHead = {
 
 The [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is the subscription-free flagship — one-time $479, ~15-day battery, on-ring processing. The [Oura Ring 5](/reviews/oura-ring-5) is the accuracy leader with the best app, at $399 plus a mandatory membership.
 
-## When the Ultrahuman Ring Pro is the right pick
+## When is the Ultrahuman Ring Pro the right pick?
 
 You refuse a recurring fee, you want the longest battery in the category, and you’re fine being an early adopter of a redesigned ring.
 
-## When the Oura Ring 5 is the right pick
+## When is the Oura Ring 5 the right pick?
 
 Accuracy and app depth are the priority, you want upgraded sensors and the most polished experience, and the membership is acceptable.
 

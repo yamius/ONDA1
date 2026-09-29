@@ -94,7 +94,7 @@ Every system was scored against ONDA\'s published [review methodology](/reviews/
 
 All ten were assessed from manufacturer documentation, FDA registration records and independent 2026 consumer/clinician reviews rather than hands-on testing.
 
-## The short version
+## Best PEMF Devices: which should you buy?
 
 Three buying questions resolve the category cleanly:
 

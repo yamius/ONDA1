@@ -47,11 +47,11 @@ const higherdoseVsTherasage: HeadToHead = {
 
 HigherDose Blanket and Therasage TheraSauna are not really substitutes — different form factors targeting different install scenarios. HigherDose is the no-install portable; Therasage is the tent or cabin with broader spectrum coverage.
 
-## When HigherDose Blanket V4 is the right pick
+## When is HigherDose Blanket V4 the right pick?
 
 If portability is the deciding factor — renters, small homes, travel, no dedicated install space — HigherDose is the right shape. The $599 price and zero-install footprint are the differentiators.
 
-## When Therasage TheraSauna Personal is the right pick
+## When is Therasage TheraSauna Personal the right pick?
 
 If you have install space and want full-spectrum IR (near + mid + far) at mid-tier pricing — Therasage is the right shape. Closer to the premium cabin experience without the $5K+ commitment.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',

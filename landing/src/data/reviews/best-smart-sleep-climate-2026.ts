@@ -99,7 +99,7 @@ Every system was scored against ONDA's published [review methodology](/reviews/m
 
 All ten were assessed from manufacturer documentation and independent 2026 consumer / biohacker reviews rather than hands-on testing.
 
-## The short version
+## Best Smart Sleep Climate Systems: which should you buy?
 
 Three buying questions resolve the category cleanly:
 

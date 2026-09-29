@@ -46,11 +46,11 @@ const chilipadVsBedjet: HeadToHead = {
 
 Both are subscription-free sleep-climate systems. ChiliPad is dual-zone water cooling — most aggressive against summer heat, requires water management. BedJet is air-flow — clean install, easier to live with, weaker against peak summer humidity, roughly half the price.
 
-## When ChiliPad Dock Pro is the right pick
+## When is ChiliPad Dock Pro the right pick?
 
 If you live in a hot/humid climate where you need aggressive cooling against peak summer nights, and you want independent his/her temperature without buying two devices — ChiliPad is the right shape. Accept the water management.
 
-## When BedJet 3 is the right pick
+## When is BedJet 3 the right pick?
 
 If you live in a mild-to-moderate climate, you want the simplest possible install with no water management, and you want to spend $600-900 instead of $1,700 — BedJet is the right shape. The air-flow approach is enough for most users outside summer peaks.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',

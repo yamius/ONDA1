@@ -44,11 +44,11 @@ const currentbodySeries2: ToolReview = {
 
 CurrentBody Series 2 is the consumer-market reference — biggest customer base, polished silicone build refined across multiple iterations, and the integrated neck flap that became the 2026 spec war winner. CurrentBody owns the consumer-facing red light mask category and the Series 2 is the rational default for buyers who value market scale and feature parity.
 
-## Where it falls short
+## What are the downsides of CurrentBody Series 2 LED Light Therapy Face Mask?
 
 Clinical-evidence moat. CurrentBody is FDA registered but not Class II cleared like Omnilux; brand-funded studies exist but no peer-reviewed dermatology literature on the specific device matches Omnilux's depth. For users buying on clinical credibility, Omnilux still wins.
 
-## Who it is for
+## Who should buy CurrentBody Series 2 LED Light Therapy Face Mask?
 
 Choose CurrentBody Series 2 if you want the consumer-market reference with integrated neck flap and polished silicone build. For FDA Class II clinical evidence, Omnilux Contour Face. For dermatology brand pedigree, Dr. Dennis Gross. For premium spec maximalism, Lumara Viso.
 

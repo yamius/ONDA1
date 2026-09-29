@@ -48,11 +48,11 @@ const headspaceVsWakingUp: HeadToHead = {
 
 Headspace and Waking Up sit on the same shelf and solve different jobs. Headspace is the gentle structured curriculum; Waking Up is philosophical inquiry. Pick on which framing matches what you actually want from meditation.
 
-## When Headspace is the right pick
+## When is Headspace the right pick?
 
 If you have never meditated and want a friendly, structured introduction — Basics, sleep sounds, breath work, progress tracking — Headspace is the right shape. The teaching is deliberately practical and accessible; the goal is daily practice, not philosophical depth.
 
-## When Waking Up is the right pick
+## When is Waking Up the right pick?
 
 If you want meditation as part of a wider inquiry into mind, consciousness and attention — and you want Sam Harris’ teaching voice plus lectures from neuroscientists and philosophers around it — Waking Up is the right shape. The library is non-linear and assumes intellectual engagement. The free-access policy means cost is never the blocker.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',

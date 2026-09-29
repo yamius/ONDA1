@@ -44,11 +44,11 @@ const intakeBreathing: ToolReview = {
 
 Intake Breathing is the premium external nasal dilator reference — magnetic reusable band design, James Nestor-recommended, most effective external dilation approach. Best fit for mouth-breathers who reject mouth tape.
 
-## Where it falls short
+## What are the downsides of Intake Breathing?
 
 Cost and visibility. Subscription-style adhesive-tab replacement ongoing cost, premium positioning vs $5 Breathe Right strips. External device visible on the face.
 
-## Who it is for
+## Who should buy Intake Breathing?
 
 Choose Intake Breathing if you can\'t adapt to mouth tape and want the most effective external nasal dilator. For internal nasal stent, Mute. For drugstore reference, Breathe Right. For mouth tape, Hostage Tape or Somnifix.
 

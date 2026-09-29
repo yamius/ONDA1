@@ -46,11 +46,11 @@ const resonaVsOlylife: HeadToHead = {
 
 Two sub-$700 portable PEMF devices. Resona is the honest, protocol-rich, app-controlled budget winner. OlyLife is acceptable only if you discount the terahertz marketing.
 
-## When Resona Health VIBE is the right pick
+## When is Resona Health VIBE the right pick?
 
 If you\'re PEMF-curious and want the cheapest credible entry, or you want a portable wearable with 130+ documented protocols and app control — Resona is the right shape. Honest marketing, direct distribution, 2-year warranty.
 
-## When OlyLife TERA P90 Plus is the right pick
+## When is OlyLife TERA P90 Plus the right pick?
 
 Only if you find a specific deal, explicitly discount the terahertz claims, and value the handheld wand form factor over Resona\'s wearable. The PEMF component is real; the rest of the marketing is the editorial concern.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',

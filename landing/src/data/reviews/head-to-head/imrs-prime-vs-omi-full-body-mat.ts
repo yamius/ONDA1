@@ -47,11 +47,11 @@ const imrsVsOmi: HeadToHead = {
 
 Same mid-market segment, different complexity tiers. iMRS adds multi-applicator coverage and circadian protocols. OMI delivers core single-modality mat at half the price.
 
-## When iMRS Prime is the right pick
+## When is iMRS Prime the right pick?
 
 If you want multi-applicator Swiss-engineered PEMF with circadian-aligned protocols and you want a coordinated mat + pillow + spot system from a single controller — iMRS is the right shape.
 
-## When OMI Full Body Mat is the right pick
+## When is OMI Full Body Mat the right pick?
 
 If you want straightforward single-modality PEMF mat use at accessible $1,500–$2,000 pricing — OMI is the right shape. FDA bone-healing waveform band, simple operation, 5-year warranty.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',

@@ -45,11 +45,11 @@ const circularRing2: ToolReview = {
 
 No other smart ring is this ambitious. The Circular Ring 2 puts an ECG sensor on your finger with atrial-fibrillation detection — a first for the category — and pairs it with "Kira," a subscription-free AI coach that reads 140+ biometric markers and personalises after a 14-day calibration. The combination of ECG, AFib, a proactive AI and no subscription genuinely doesn’t exist elsewhere.
 
-## Where it falls short
+## What are the downsides of Circular Ring 2?
 
 Execution. Independent 2026 reviews were clear: the software got in the way. The headline ECG and AFib monitoring never fully worked during testing, and promised blood-pressure and glucose features had not arrived. For a ring whose entire pitch is advanced heart-rhythm sensing, features that don’t reliably work are a serious problem, not a footnote.
 
-## Who it is for
+## Who should buy Circular Ring 2?
 
 Choose the Circular Ring 2 only if you’re an early adopter who wants on-ring ECG/AFib and AI coaching and accepts buying the potential rather than a finished product. If you want features that work today, the [RingConn Gen 3](/reviews/ringconn-gen-3) (subscription-free, with vascular and sleep-apnea insights that ship) or [Oura Ring 5](/reviews/oura-ring-5) are safer.
 

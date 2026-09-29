@@ -44,11 +44,11 @@ const theragunProPlus: ToolReview = {
 
 Theragun PRO Plus is the percussion-therapy reference — top stall force, deepest amplitude, quietest brushless motor, best app in category. The premium-tier definition.
 
-## Where it falls short
+## What are the downsides of Theragun PRO Plus?
 
 Weight and price. At ~2.9 lbs the device is heavy for 20-minute single-hand sessions; at $599 it\'s the most expensive consumer massage gun. For users not maximising spec ceiling, Theragun Elite at $399 covers 90% of use cases.
 
-## Who it is for
+## Who should buy Theragun PRO Plus?
 
 Choose Theragun PRO Plus for spec-ceiling percussion therapy with Therabody ecosystem. For mid-tier Therabody, Theragun Elite. For Hyperice alternative, Hypervolt 2 Pro. For budget alternative, Achedaway Pro or OPOVE M3 Pro 2.
 

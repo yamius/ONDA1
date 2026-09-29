@@ -45,11 +45,11 @@ const headspace: ToolReview = {
 
 Headspace is the app to choose if you want to actually learn to meditate. Its courses are genuinely structured — they take a complete beginner from "what is meditation" to a steady daily practice — and the teaching is the clearest in this comparison. Headspace has also funded and published clinical research on its programs, which, for an evidence-minded user, sets it apart from apps that lean on vague wellness language.
 
-## Where it falls short
+## What are the downsides of Headspace?
 
 The free tier is the weak point: it is essentially a guided tour of the product, not enough to build a practice on. The library, while broad, does not match the sheer volume of Insight Timer, and once you are past the foundational courses Headspace can start to feel light next to the depth Waking Up offers.
 
-## Who it is for
+## Who should buy Headspace?
 
 Choose Headspace if you are new to meditation and want a clear, well-taught path rather than an overwhelming library — and you are willing to subscribe. If you want depth beyond the basics, or a usable free option, Waking Up and Insight Timer are the better fits.
 

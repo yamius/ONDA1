@@ -46,11 +46,11 @@ const pod4VsCoverPro: HeadToHead = {
 
 Same climate hardware, same tracking, same subscription. The only meaningful differences are form factor (integrated system vs cover-on-existing-mattress) and price (~$3,500-5,000 vs ~$2,200).
 
-## When Pod 4 is the right pick
+## When is Pod 4 the right pick?
 
 If you are replacing your mattress in 2026 anyway, the integrated Pod 4 system delivers the cleanest fit and a coordinated multi-year build. Pay the premium for the unified product.
 
-## When Pod Cover Pro is the right pick
+## When is Pod Cover Pro the right pick?
 
 If you have a mattress you like and you want Eight Sleep climate and tracking on it — Cover Pro is the rational choice. Same software, same climate range, ~40% cheaper, and transferrable to your next mattress.`,
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',

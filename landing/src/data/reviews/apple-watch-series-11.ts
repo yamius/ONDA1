@@ -45,7 +45,7 @@ const appleWatchSeries11: ToolReview = {
 
 As a piece of hardware the Apple Watch Series 11 is the most capable device in this comparison: an optical sensor paired with a genuine single-lead ECG, a bright display, and the deepest third-party ecosystem through HealthKit. It is also the only one here with no subscription — the purchase price buys the device outright. For someone who wants one wearable that handles notifications, workouts, payments and health, nothing else here competes.
 
-## Where it falls short
+## What are the downsides of Apple Watch Series 11?
 
 For dedicated HRV work it is the weakest of the three. The watch records HRV in irregular background spot-checks rather than a structured overnight protocol, and Apple's own Vitals view does not even surface HRV as a headline metric. Combined with a battery that realistically needs a daily charge — awkward for consistent all-night wear — it produces a sparse, uneven HRV record next to Oura or Whoop.
 
@@ -53,7 +53,7 @@ For dedicated HRV work it is the weakest of the three. The watch records HRV in 
 
 **Superseded (September 2026).** The [Apple Watch Series 12](/reviews/apple-watch-series-12) has replaced this model as Apple's current watch, and it directly addresses the HRV weakness above: its new Health Sensing System samples HRV about 24× more often and splits it into Recovery HRV (RMSSD) and Overall HRV (SDNN). If HRV is your reason to buy, [the Series 12 is the upgrade](/reviews/vs/apple-watch-series-12-vs-series-11); the Series 11 remains a good value while discounted.
 
-## Who it is for
+## Who should buy Apple Watch Series 11?
 
 Choose the Apple Watch Series 11 if you want a single excellent all-round smartwatch and treat HRV as a useful bonus rather than the point. If overnight HRV and recovery are your primary reason to buy, a dedicated tracker will give you a far cleaner signal.
 

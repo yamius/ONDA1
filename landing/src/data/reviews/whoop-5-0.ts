@@ -47,11 +47,11 @@ The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-che
 
 **2026 validation update.** Independent HRV and sleep comparisons through 2026 continue to place Whoop among the stronger wrist-worn options — its overnight HRV and sleep-stage agreement typically land in the ~75–86% range against reference devices. That is short of a finger-based ring or an ECG chest strap, but it is dependable enough that the *trend* Whoop reports each morning is one you can train on.
 
-## Where it falls short
+## What are the downsides of Whoop 5.0?
 
 Whoop is sold as a membership, not a product. There is no hardware to own — stop paying and the band stops working — and the roughly 239 USD first year is an ongoing cost, not a one-time purchase. The app is powerful but dense: Strain, Recovery and the AI coach reward users who want to study their data and can overwhelm those who do not. Raw data access, as with Oura, is limited.
 
-## Who it is for
+## Who should buy Whoop 5.0?
 
 Choose the Whoop 5.0 if you are an athlete or serious trainer who makes decisions on a daily recovery score and wants continuous overnight [HRV](/glossary/heart-rate-variability) without a screen on your wrist. If you dislike perpetual subscriptions, or you want a device that also tells the time, the alternatives will fit better.
 

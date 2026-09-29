@@ -55,15 +55,15 @@ const headspaceVsWakingUpVsHealthyMinds: HeadToHead = {
 
 Three meditation apps that take credibility seriously. Headspace as friendly curriculum, Waking Up as philosophical project, Healthy Minds as research-lab framework. Pick on which anchor matches what you want from meditation.
 
-## When Headspace is the right pick
+## When is Headspace the right pick?
 
 If you have never meditated and want a friendly, structured introduction — Basics course, gentle pacing, consistent teaching voice — Headspace is the right shape. The teaching is deliberately practical and accessible.
 
-## When Waking Up is the right pick
+## When is Waking Up the right pick?
 
 If you want meditation as part of a wider inquiry into mind, consciousness and attention — with Sam Harris’ voice and lectures from credible neuroscientists and philosophers around it — Waking Up is the right shape. The free-access policy means cost is never the blocker.
 
-## When Healthy Minds Program is the right pick
+## When is Healthy Minds Program the right pick?
 
 If you want a science-based meditation framework from a credible research lab, and a no-paywall app, Healthy Minds is the right shape. The four-pillar curriculum (awareness, connection, insight, purpose) is the structured value.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',

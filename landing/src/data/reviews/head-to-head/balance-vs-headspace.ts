@@ -42,11 +42,11 @@ const balanceVsHeadspace: HeadToHead = {
 
 [Balance](/reviews/balance) is the adaptive, personalised app with a generous free first year; [Headspace](/reviews/headspace) is the structured teacher with the deepest research base in the category.
 
-## When Balance is the right pick
+## When is Balance the right pick?
 
 You want a daily plan that adapts to your goals and check-ins, and a full free year to try it properly.
 
-## When Headspace is the right pick
+## When is Headspace the right pick?
 
 You want to learn to meditate through structured courses, with a broad polished library and strong evidence behind it.
 

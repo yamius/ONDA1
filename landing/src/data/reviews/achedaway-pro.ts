@@ -44,11 +44,11 @@ const achedawayPro: ToolReview = {
 
 Achedaway Pro is the spec-maximalist biohacker dark horse — 80 lbs stall force (highest in category), 16 mm amplitude, 7 attachments, $349. Best raw spec-per-dollar in premium percussion.
 
-## Where it falls short
+## What are the downsides of Achedaway Pro?
 
 App and brand polish. No Therabody / Hyperice app ecosystem; no Bluetooth or smart features. Brand pedigree thinner than premium-tier competitors. For users buying on app + ecosystem, Therabody or Hyperice better fit.
 
-## Who it is for
+## Who should buy Achedaway Pro?
 
 Choose Achedaway Pro for spec-maximalist percussion without paying for premium-brand polish. For Therabody app + ecosystem, Theragun Elite. For Hyperice alternative, Hypervolt 2 Pro. For budget, Bob and Brad Q2 Mini or OPOVE M3 Pro 2.
 

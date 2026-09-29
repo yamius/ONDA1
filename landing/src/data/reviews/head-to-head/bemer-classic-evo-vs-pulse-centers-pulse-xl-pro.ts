@@ -47,11 +47,11 @@ const bemerVsPulseCenters: HeadToHead = {
 
 Two different theses about what PEMF should do. Bemer bets on waveform research with low-intensity daily mat use. Pulse Centers bets on high-intensity targeted coil work for clinical and athletic recovery.
 
-## When Bemer Classic Evo is the right pick
+## When is Bemer Classic Evo the right pick?
 
 If you want daily passive whole-body PEMF — lie down on the mat, run a session, build the practice. Research-backed waveform, FDA Class II, daily-use friendliness. The right shape for general wellness and recovery.
 
-## When Pulse Centers Pulse XL Pro is the right pick
+## When is Pulse Centers Pulse XL Pro the right pick?
 
 If you\'re running serious athletic recovery or rehab protocols where high-intensity targeted coil PEMF is the protocol — Pulse Centers is the right shape. Clinical-grade output, active positioning, professional context. Overkill for daily wellness.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',

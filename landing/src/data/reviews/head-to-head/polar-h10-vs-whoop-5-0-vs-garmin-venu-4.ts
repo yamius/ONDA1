@@ -55,15 +55,15 @@ const polarVsWhoopVsGarmin: HeadToHead = {
 
 Three different roles. Polar H10 for reference HRV accuracy. Whoop for daily recovery coaching. Garmin for training analytics with no subscription. Committed athletes often own two of three.
 
-## When Polar H10 is the right pick
+## When is Polar H10 the right pick?
 
 If reference-grade HRV accuracy is the deciding criterion — for a structured morning protocol, for validating another device, for app-agnostic measurement — Polar H10 is the right shape. At ~$90 with a replaceable coin cell and a multi-year lifespan, it is the cheapest device in the HRV category and the most accurate at once.
 
-## When Whoop 5.0 is the right pick
+## When is Whoop 5.0 the right pick?
 
 If the daily Recovery score is the coaching mechanism that changes your training, Whoop is the right shape. The subscription is the cost of admission; the coaching loop is the value proposition.
 
-## When Garmin Venu 4 is the right pick
+## When is Garmin Venu 4 the right pick?
 
 If you want a training-analytics smartwatch with first-party VO2 max, training-load and recovery-hours models — and you would rather pay once than subscribe — Garmin is the right shape. The five-day battery and the lack of subscription gating are the differentiators.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

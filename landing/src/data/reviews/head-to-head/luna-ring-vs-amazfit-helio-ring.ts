@@ -42,11 +42,11 @@ const lunaVsHelio: HeadToHead = {
 
 Two budget subscription-free rings. The [Amazfit Helio Ring](/reviews/amazfit-helio-ring) is cheaper ($199) and lighter but limited to three sizes; the [Noise Luna Ring Gen 2](/reviews/luna-ring) (~$300) has a wider size range, a charging case for long total battery and a voice assistant.
 
-## When the Noise Luna Ring is the right pick
+## When is the Noise Luna Ring the right pick?
 
 You want good sleep tracking, more fit options and the charging-case convenience, and $300 is fine.
 
-## When the Amazfit Helio Ring is the right pick
+## When is the Amazfit Helio Ring the right pick?
 
 You want the cheapest, lightest subscription-free ring and a size fits you.
 

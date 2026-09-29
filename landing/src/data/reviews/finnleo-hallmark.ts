@@ -44,11 +44,11 @@ const finnleoHallmark: ToolReview = {
 
 Finnleo Hallmark is the premium traditional indoor Finnish sauna. Finnish-built, Helo-engineered heater, hemlock or nordic spruce construction, full löyly-capable convection heat. This is the format the Finnish cardiovascular and cognitive cohort studies were built on — the deepest evidence base in the sauna category sits behind this mechanism.
 
-## Where it falls short
+## What are the downsides of Finnleo Hallmark?
 
 Not IR. Premium pricing. Indoor installation with ventilation requirements. Most users buying their first sauna land at IR or budget convection; Finnleo is for users specifically wanting the Finnish-pedigree traditional experience.
 
-## Who it is for
+## Who should buy Finnleo Hallmark?
 
 Choose Finnleo Hallmark if traditional Finnish indoor sauna with premium Finnish manufacturing is the deciding criterion. For traditional outdoor barrel, Almost Heaven Salem. For IR cabin, Sunlighten or Clearlight.
 

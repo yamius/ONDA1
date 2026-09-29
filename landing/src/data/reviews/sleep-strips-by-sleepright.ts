@@ -44,11 +44,11 @@ const sleepRightStrips: ToolReview = {
 
 SleepRight Nasal Breathe Aid is the budget internal nasal dilator — reusable polymer cone inserts at $0.15/night, multi-year SleepRight brand pedigree. Functional cost-conscious alternative for users wanting internal mechanical dilation.
 
-## Where it falls short
+## What are the downsides of SleepRight Nasal Breathe Aid?
 
 Anatomical optimisation and clinical evidence. SleepRight cones are less anatomically refined than Rhinomed Mute polymer stents; clinical-evidence base lighter.
 
-## Who it is for
+## Who should buy SleepRight Nasal Breathe Aid?
 
 Choose SleepRight Nasal Breathe Aid for budget internal nasal dilation. For premium internal stent with clinical evidence, Mute. For external magnetic dilator, Intake Breathing. For drugstore external strip, Breathe Right.
 

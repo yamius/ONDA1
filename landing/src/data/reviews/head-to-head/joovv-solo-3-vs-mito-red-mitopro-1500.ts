@@ -48,11 +48,11 @@ const joovvVsMitoRed: HeadToHead = {
 
 Two top-tier biohacker panels with comparable build and verification. Joovv wins on regulatory status, modular scaling and EMF discipline; MitoPRO wins on wavelength spectrum and price. Pick on the axis you actually weight.
 
-## When Joovv Solo 3.0 is the right pick
+## When is Joovv Solo 3.0 the right pick?
 
 If FDA Class II registration is a real value (not just a nice-to-have), modular full-body scaling matters for your setup, and the tightest published EMF discipline matters — Joovv is the right shape. The $100 premium over MitoPRO buys regulatory status and the modular ecosystem.
 
-## When Mito Red MitoPRO 1500 is the right pick
+## When is Mito Red MitoPRO 1500 the right pick?
 
 If broader wavelength coverage (630 + 660 + 830 + 850 nm vs Joovv’s 660 + 850 nm) is what you actually want, and the $100 saving plus the cheaper full-body cost matter, MitoPRO is the right shape. Most biohackers land here.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',

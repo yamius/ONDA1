@@ -44,11 +44,11 @@ const ekrinB37: ToolReview = {
 
 Ekrin B37 is the lifetime-warranty mid-tier — athlete-focused brand, brushless motor, longest battery in mid-tier, lifetime warranty (only in category). Best long-term ownership value.
 
-## Where it falls short
+## What are the downsides of Ekrin B37?
 
 Amplitude and app. 12 mm amplitude trails premium 14–16 mm; no app integration. For users wanting premium amplitude, Theragun Elite or Hypervolt 2 Pro better fit.
 
-## Who it is for
+## Who should buy Ekrin B37?
 
 Choose Ekrin B37 for lifetime-warranty mid-tier percussion with athlete brand pedigree. For higher amplitude at same price, OPOVE M3 Pro 2. For premium app + amplitude, Theragun Elite.
 

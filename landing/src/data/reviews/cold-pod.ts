@@ -44,11 +44,11 @@ const coldPod: ToolReview = {
 
 Cold Pod is the cheapest legitimate way to start cold plunge. Inflatable construction, ice-fill operation, fold-down storage, $220. For users who want to test whether daily cold plunge changes anything before committing to a $1,200 Ice Barrel or $5,990 Plunge, this is the right shape.
 
-## Where it falls short
+## What are the downsides of Cold Pod?
 
 Inflatable construction is the trade. Insulation hold time is shorter than rigid tubs, multi-year durability is weaker, and manual water management means more session-to-session maintenance.
 
-## Who it is for
+## Who should buy Cold Pod?
 
 Choose Cold Pod if you are testing cold-plunge practice and want the cheapest credible entry path. Once daily-use intent is established, the chiller-built tier (Edge, Plunge) or barrel-style (Ice Barrel) is the natural upgrade.
 

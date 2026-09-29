@@ -46,11 +46,11 @@ const eightSleepPod4: ToolReview = {
 
 Eight Sleep Pod 4 is the smart sleep-climate system that defined the consumer category. Dual-zone water cooling/heating (13–43°C), built-in HRV and sleep tracking that obviates the need for a separate wearable, and Autopilot programmable climate that adjusts by detected sleep stage overnight. Hardware build and multi-year reliability are both solid.
 
-## Where it falls short
+## What are the downsides of Eight Sleep Pod 4?
 
 Subscription. Full features (Autopilot, advanced HRV insights, climate scheduling) require ongoing Eight Sleep membership — the category's biggest editorial point of contention. Without the subscription you have an expensive heated cover. Total 3-year ownership including subscription approaches $5,000-7,000.
 
-## Who it is for
+## Who should buy Eight Sleep Pod 4?
 
 Choose Eight Sleep Pod 4 if you want category-leading sleep-climate hardware with integrated tracking and you accept the subscription model. For subscription-free water cooling, ChiliPad Dock Pro. For air-flow at lower price, BedJet 3. For climate without tracking, Sleep Number Climate360.
 

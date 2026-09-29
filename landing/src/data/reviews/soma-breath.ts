@@ -44,11 +44,11 @@ const somaBreath: ToolReview = {
 
 SOMA Breath is the rhythmic music breathwork reference — beat-paced sessions, Wim Hof crossover, pranayama elements and a global practitioner certification network. Strong ceremony production and a unique pacing approach distinct from voice-guided alternatives.
 
-## Where it falls short
+## What are the downsides of SOMA Breath?
 
 Evidence depth and library size vs Breathwrk. SOMA leans heavier on ceremony framing than peer-reviewed citations, and the library is smaller than the structured-default Breathwrk. No HRV biofeedback.
 
-## Who it is for
+## Who should buy SOMA Breath?
 
 Choose SOMA Breath for rhythmic music-paced breathwork with ceremony framing and certification community access. For largest structured library, Breathwrk. For cinematic music + live classes, Othership. For free entry, iBreathe.
 

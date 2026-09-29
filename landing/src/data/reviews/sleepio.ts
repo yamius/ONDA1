@@ -45,11 +45,11 @@ const sleepio: ToolReview = {
 
 Sleepio is the only app here that sets out to treat a sleep disorder rather than measure or soothe one. It delivers cognitive behavioural therapy for insomnia (CBT-I) — the first-line clinical treatment — as a structured, week-by-week course, driven by a sleep diary. It is backed by published randomised trials, and in some regions it is offered free through a health service or employer. If you have genuine insomnia, this is the clinically serious choice.
 
-## Where it falls short
+## What are the downsides of Sleepio?
 
 It is not a tracker and not a sound library — if you want nightly stats or soundscapes, it is the wrong app. The course asks for real commitment over several weeks, and paid directly it is expensive. For someone who sleeps fine and just wants data, it is overkill.
 
-## Who it is for
+## Who should buy Sleepio?
 
 Choose Sleepio if you have a real, persistent sleep problem and want evidence-based treatment. If you sleep adequately and want measurement or relaxation, a tracker like Sleep Cycle or a library like BetterSleep is the better fit.
 

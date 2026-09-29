@@ -54,15 +54,15 @@ const breathwrkVsOthershipVsWhm: HeadToHead = {
 
 Three category-defining breathwork apps, three different theses. Breathwrk = structured library. Othership = cinematic experience. Wim Hof Method = official single-method.
 
-## When Breathwrk is the right pick
+## When is Breathwrk the right pick?
 
 If you want the largest structured catalogue with broadest technique coverage and science-grounded copy at the best premium-tier price — Breathwrk is the right shape. The rational default.
 
-## When Othership is the right pick
+## When is Othership the right pick?
 
 If you want breathwork as cinematic music-driven experience with the strongest live community — Othership is the right shape. Production justifies the higher subscription for the right user.
 
-## When Wim Hof Method app is the right pick
+## When is Wim Hof Method app the right pick?
 
 If you\'re committed to WHM specifically and want the official curriculum with structured progression, cold-exposure integration and Radboud University research citations — WHM app is the right shape.`,
   relatedComparisonSlug: 'best-breathwork-apps-2026',

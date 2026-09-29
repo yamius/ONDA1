@@ -44,11 +44,11 @@ const pulseCentersXLPro: ToolReview = {
 
 Pulse Centers Pulse XL Pro is the high-intensity reference in consumer-accessible PEMF — 200,000+ µT peak via coil applicators, vs Bemer's 35–150 µT mat output. The build is clinical-grade and the user base skews professional (chiropractic, athletic recovery, equine).
 
-## Where it falls short
+## What are the downsides of Pulse Centers Pulse XL Pro?
 
 Price and form factor. At $7,000–$15,000+ this is prosumer/clinic pricing, not casual consumer. Coil applicators require active positioning per session — you don't passively lie on a mat. The targeted spot-treatment model is excellent for rehab and athletic recovery; it's overkill for general daily wellness.
 
-## Who it is for
+## Who should buy Pulse Centers Pulse XL Pro?
 
 Choose Pulse Centers Pulse XL Pro if you're running serious athletic recovery or rehab protocols and want the highest-intensity coil-based PEMF available to consumers. For research-backed mat-style PEMF, Bemer Classic Evo. For multi-modality mat coverage, Healthy Wave Multi-Wave. For accessible entry-tier PEMF, Resona Health VIBE.
 

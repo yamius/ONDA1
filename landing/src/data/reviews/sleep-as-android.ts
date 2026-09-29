@@ -45,11 +45,11 @@ const sleepAsAndroid: ToolReview = {
 
 Sleep as Android is the most complete sleep app on Android. It tracks your night, wakes you with a sleep-cycle smart alarm, and packs in an unusual depth of features — lullabies and nature sounds, snore and sleep-talk recording, anti-snoring nudges, and integration with a range of wearables. For an Android user who wants one app that does most things, nothing else on the platform matches it.
 
-## Where it falls short
+## What are the downsides of Sleep as Android?
 
 All those features make it feel techy and dense — it rewards tinkering more than the polished mainstream apps do. Phone-based tracking is an estimate unless you pair a wearable, and the app is Android-only.
 
-## Who it is for
+## Who should buy Sleep as Android?
 
 Choose Sleep as Android if you are on Android and want a powerful, configurable all-in-one — tracking, smart alarm and wind-down sounds together. iPhone users, or anyone who wants simplicity over options, should look elsewhere.
 

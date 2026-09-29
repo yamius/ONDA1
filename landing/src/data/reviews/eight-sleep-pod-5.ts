@@ -52,7 +52,7 @@ The additions are real but they sit on top of an unchanged core. Dual-zone tempe
 
 Price and the subscription. The Pod 5 Ultra starts around $6,099 (queen) — roughly double the Pod 4 — and still requires the Autopilot membership for full features. That is a lot of money for additive comforts when the core experience is shared.
 
-## Who it is for
+## Who should buy Eight Sleep Pod 5?
 
 Choose the Pod 5 Ultra if you want the maximal full-bed system and the price is not the deciding factor. If you want the Eight Sleep sleep-climate experience for the best value, the [Pod 4](/reviews/eight-sleep-pod-4) — or the cheaper Pod 5 Core — is the smarter buy. For the wider field, see the [best smart sleep-climate systems](/reviews/smart-sleep-climate).
 `,

@@ -45,11 +45,11 @@ const mendi: ToolReview = {
 
 Mendi is the gentlest entry into neurofeedback. The fNIRS sensor on the forehead measures blood-oxygenation changes in the prefrontal cortex — a different signal from EEG, simpler to interpret — and feeds it into a single game: a ball rises as you sustain prefrontal activity, falls as you lose focus. There is nothing else to learn. Sessions are short, the app is clean, and the device is the most comfortable in this list.
 
-## Where it falls short
+## What are the downsides of Mendi?
 
 Mendi is also the narrowest entry. fNIRS is not EEG — different modality, different interpretation, single-region measurement only — and the platform offers no meditation library, no sleep tracking, no developer access. For users who want anything beyond pure prefrontal attention training, Mendi is the wrong shape.
 
-## Who it is for
+## Who should buy Mendi?
 
 Choose Mendi if the simplest possible neurofeedback experience is exactly what you want, or if EEG-based devices have not produced a clear signal for you and a different modality is worth trying. For meditation breadth, Muse S Athena or Muse 2. For real EEG with developer access, Neurosity Crown or Emotiv Insight 2.
 

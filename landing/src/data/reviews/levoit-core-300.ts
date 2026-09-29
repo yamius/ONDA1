@@ -44,11 +44,11 @@ const levoitCore300: ToolReview = {
 
 Levoit Core 300 is the entry-budget reference — True HEPA H13 + activated carbon at $99 with 219 sq ft bedroom coverage. Best starter purifier for category entry; cheapest filter ownership long-term.
 
-## Where it falls short
+## What are the downsides of Levoit Core 300?
 
 Coverage and smart features. 219 sq ft is bedroom-only scale; no app, no sensor, no auto mode. For users wanting larger coverage or smart features, mid-budget required.
 
-## Who it is for
+## Who should buy Levoit Core 300?
 
 Choose Levoit Core 300 as starter purifier for single bedroom at $99. For larger coverage + smart features, Levoit Core 600S. For Wirecutter-trust budget, Coway Airmega AP-1512HH. For Korean budget with sensor, Winix 5500-2.
 

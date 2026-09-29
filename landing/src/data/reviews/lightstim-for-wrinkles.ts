@@ -44,11 +44,11 @@ const lightstim: ToolReview = {
 
 LightStim for Wrinkles is the longest-running FDA-cleared consumer red light device — multi-decade clinical track record, four-wavelength coverage, peer-reviewed studies on the specific device. Among the deepest evidence bases in the category at accessible $249 pricing.
 
-## Where it falls short
+## What are the downsides of LightStim for Wrinkles?
 
 Form factor. Handheld means active positioning across face zones per session — slower and less convenient than lie-on masks. No app, no programmability, no integrated session timing. The brand UX feels dated next to 2026 mask competitors.
 
-## Who it is for
+## Who should buy LightStim for Wrinkles?
 
 Choose LightStim for Wrinkles for FDA-cleared peer-reviewed evidence at accessible pricing and you accept handheld active use. For lie-on mask with FDA Class II, Omnilux Contour Face. For consumer market leader, CurrentBody Series 2. For ultra-budget handheld alternative, Solawave Wand.
 

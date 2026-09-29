@@ -45,11 +45,11 @@ const neuroskyMindwaveMobile2: ToolReview = {
 
 The MindWave Mobile 2 is the cheapest legitimate path into consumer EEG. The ThinkGear SDK is well-documented after more than a decade of community use, the raw-data Bluetooth stream is open, and the device at ~$110 is the only entry in this list a student or hobbyist can buy on a small budget. As a learning instrument it remains useful.
 
-## Where it falls short
+## What are the downsides of NeuroSky MindWave Mobile 2?
 
 Everywhere else. Single-channel EEG is informationally thin compared to the four channels of Muse, the five of Emotiv Insight, or the eight of Neurosity Crown. The first-party content library is effectively abandoned; third-party app quality varies wildly. The whole platform is showing its age — a 2024 device this is not.
 
-## Who it is for
+## Who should buy NeuroSky MindWave Mobile 2?
 
 Choose NeuroSky MindWave Mobile 2 if you are a student, developer or hobbyist who wants the cheapest legitimate way to learn EEG basics and to build something on top of the SDK. For modern consumer experience, Muse 2 or FocusCalm. For serious developer work, Neurosity Crown or Emotiv Insight 2.
 

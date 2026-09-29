@@ -55,15 +55,15 @@ const threeCgm: HeadToHead = {
 
 Same Dexcom G7 sensor, three different wrappers. Pick on what sits above the hardware: deepest app intelligence (Levels), registered dietitian (Nutrisense), or cheapest legitimate access (Stelo).
 
-## When Levels is the right pick
+## When is Levels the right pick?
 
 If you treat CGM as a serious instrument — running protocols, iterating on meal experiments, tracking time-in-range as a metric — Levels is the right shape. The depth of the insight engine is the value; the $199/month is the cost.
 
-## When Nutrisense is the right pick
+## When is Nutrisense the right pick?
 
 If you need a person, not an app, helping you interpret the data, Nutrisense is the right shape. The registered dietitian is the value proposition; the $280–$310/month is the cost of the human coaching layer.
 
-## When Stelo is the right pick
+## When is Stelo the right pick?
 
 If you want Dexcom G7 hardware at the lowest legitimate price — no coaching, no premium analytics, just the sensor and a clean app — Stelo is the right shape. It is the cheapest path to ongoing CGM in 2026 and the right starting point for users not sure they want CGM long-term.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

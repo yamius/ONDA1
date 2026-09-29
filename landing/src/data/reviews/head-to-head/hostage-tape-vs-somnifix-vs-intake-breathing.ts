@@ -54,15 +54,15 @@ const hostageVsSomnifixVsIntake: HeadToHead = {
 
 Three category-defining nasal-breathing aids, three different theses. Hostage Tape = beard-friendly biohacker mouth seal. Somnifix = FDA-registered porous mouth tape. Intake = premium external nasal dilator.
 
-## When Hostage Tape is the right pick
+## When is Hostage Tape the right pick?
 
 If you have a beard and want subscription-convenient biohacker-brand mouth tape — Hostage Tape is the right shape at lowest annual cost.
 
-## When Somnifix is the right pick
+## When is Somnifix the right pick?
 
 If you want FDA-registered medical credibility with porous safety design that allows emergency mouth exhale — Somnifix is the right shape. Multi-year track record.
 
-## When Intake Breathing is the right pick
+## When is Intake Breathing the right pick?
 
 If you can\'t adapt to mouth tape or you want lower-risk entry with no sleep-apnea contraindication — Intake is the right shape. Premium external magnetic dilation, James Nestor-recommended.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',

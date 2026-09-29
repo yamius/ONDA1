@@ -94,7 +94,7 @@ Every panel was scored against ONDA’s published [review methodology](/reviews/
 
 All ten panels were assessed from manufacturer documentation, third-party irradiance and EMF test reports from biohacker review sites, the published photobiomodulation literature underlying device claims, and independent 2026 reviews. Not hands-on tested by ONDA. Treat the scores as an evidence-based starting point.
 
-## The short version
+## Best Red Light Therapy Panels: which should you buy?
 
 The category splits into three honest tiers and one specialist:
 

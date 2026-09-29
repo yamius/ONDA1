@@ -42,11 +42,11 @@ const hv3ProVsAchedaway: HeadToHead = {
 
 Both $349. The [Achedaway Pro](/reviews/achedaway-pro) wins on raw specs — 80 lbs stall force and seven attachments; the [Hypervolt 3 Pro](/reviews/hypervolt-3-pro) wins on quiet operation, the Hyperice app and brand support.
 
-## When the Hypervolt 3 Pro is the right pick
+## When is the Hypervolt 3 Pro the right pick?
 
 You want the quietest premium gun with a polished app and guided routines, and value Hyperice’s pedigree and support.
 
-## When the Achedaway Pro is the right pick
+## When is the Achedaway Pro the right pick?
 
 You want the highest raw stall force and the most attachments for the same money, and don’t need an app.
 

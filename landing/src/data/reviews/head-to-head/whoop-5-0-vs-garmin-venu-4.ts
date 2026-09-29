@@ -48,11 +48,11 @@ const whoop50VsGarminVenu4: HeadToHead = {
 
 For most trainers, Garmin Venu 4 is the better long-term shape — comparable HRV, deeper training analytics, no subscription, and a five-day battery on a smartwatch display. Whoop wins specifically when the daily Recovery score is the coaching mechanism that actually changes your training day-to-day.
 
-## When Whoop is the right pick
+## When is Whoop the right pick?
 
 If you train hard, value daily readiness as a coaching prompt, and the no-display band fits your contact-sport or pool workouts better than a watch, Whoop is the right shape. The subscription is the cost of admission for the coaching model.
 
-## When Garmin is the right pick
+## When is Garmin the right pick?
 
 If you would rather pay once, look at a watch face on your wrist, and have Strava and TrainingPeaks integration first-party in your training stack, Garmin Venu 4 is the right shape. Over three years it costs less than half of Whoop with no functional gap for most training use cases.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

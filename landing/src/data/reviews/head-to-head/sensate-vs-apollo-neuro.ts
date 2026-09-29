@@ -48,11 +48,11 @@ const sensateVsApollo: HeadToHead = {
 
 Apollo Neuro is the broader, more versatile passive vagus-modulation device with deeper independent evidence. Sensate is the more pleasant focused evening wind-down ritual. Different jobs; pick on which one you want.
 
-## When Sensate is the right pick
+## When is Sensate the right pick?
 
 If pre-sleep wind-down is the primary use case and a paired-soundscape session is what makes you actually engage with the device, Sensate is the right shape. The infrasonic-plus-sound ritual is the most pleasant experience in this whole category. As a daily passive tool it is the wrong shape — sessions are sit-down 10–30 minute commitments.
 
-## When Apollo Neuro is the right pick
+## When is Apollo Neuro the right pick?
 
 If you want vagal modulation that runs in your life — at work, in transit, while training, while sleeping — without any session ritual, Apollo is the right shape. The seven modes cover most use cases, the wrist/ankle/clip-on form factor is genuinely wearable around the clock, and the University of Pittsburgh research base is the strongest in non-electrical vagus modulation.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

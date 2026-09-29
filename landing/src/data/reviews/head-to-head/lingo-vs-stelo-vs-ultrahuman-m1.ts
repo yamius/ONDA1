@@ -55,15 +55,15 @@ const threeOtcCgm: HeadToHead = {
 
 Three non-coaching CGM programmes for users explicitly avoiding the Levels/Nutrisense/Signos subscription model. Pick on sensor accuracy (Stelo), entry cost (Lingo) or ecosystem fit (Ultrahuman M1).
 
-## When Lingo is the right pick
+## When is Lingo the right pick?
 
 If you have never worn a CGM and want the cheapest legitimate way to try one, Lingo is the right shape. $49 single sensors with no subscription is the most flexible entry path in the consumer CGM market.
 
-## When Stelo is the right pick
+## When is Stelo the right pick?
 
 If you want the most accurate OTC sensor — same Dexcom G7 hardware as Levels and Nutrisense at a third of those programmes’ cost — Stelo is the right shape. The accuracy advantage over Libre 3 is real even if small.
 
-## When Ultrahuman M1 is the right pick
+## When is Ultrahuman M1 the right pick?
 
 If you already own the Ultrahuman Ring Air or plan to, M1 is the right shape because the unified glucose + HRV + sleep view in one app is unique. As a standalone CGM it is not differentiated from Lingo or Veri.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

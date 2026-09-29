@@ -44,11 +44,11 @@ const plunge: ToolReview = {
 
 The Plunge All-In is the cold-plunge tub that defined consumer expectations for the category. The 1 HP integrated chiller is the most capable in the consumer space, the ozone sanitation system cuts water-change frequency to every 2–4 weeks rather than weekly, and the build holds up outdoors in the multi-year ownership reports. Founder Michael Garrett built the company around the cold-exposure community, and the protocol guidance is honest about what the research supports — the [norepinephrine](/glossary/norepinephrine) and [dopamine](/glossary/dopamine) surge cold drives, framed as [hormesis](/glossary/hormesis) rather than a cure-all.
 
-## Where it falls short
+## What are the downsides of The Plunge All-In?
 
 Price. At $5,990 it is premium-tier, and the footprint is real — this is not a small-apartment fit. Installation requires a level surface and 110V outlet, and lead times during peak demand can stretch into months.
 
-## Who it is for
+## Who should buy The Plunge All-In?
 
 Choose The Plunge All-In if cold plunge is a serious daily practice and you want the turnkey hardware that defined the category. For occasional experimentation, a budget option like Cold Pod or Ice Barrel covers the use case for under $500.
 

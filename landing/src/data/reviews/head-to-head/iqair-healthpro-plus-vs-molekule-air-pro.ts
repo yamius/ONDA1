@@ -46,11 +46,11 @@ const iqairVsMolekule: HeadToHead = {
 
 Both premium $1,000+ air purifiers with different filtration theses. IQAir is clinical HyperHEPA H14. Molekule is PECO + True HEPA H13 + premium smart features.
 
-## When IQAir HealthPro Plus is the right pick
+## When is IQAir HealthPro Plus the right pick?
 
 If you want clinical-grade HEPA filtration with Swiss pedigree and best long-term ownership economics — IQAir is the right shape. Accept lack of smart features.
 
-## When Molekule Air Pro is the right pick
+## When is Molekule Air Pro the right pick?
 
 If you want PECO photocatalytic VOC destruction + premium smart-feature integration — Molekule is the right shape. Accept higher long-term filter cost and PECO efficacy debate.`,
   relatedComparisonSlug: 'best-air-purifiers-2026',

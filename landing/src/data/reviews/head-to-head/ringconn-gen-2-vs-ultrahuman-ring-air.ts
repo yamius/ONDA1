@@ -51,11 +51,11 @@ const ringconnVsUltrahuman: HeadToHead = {
 
 RingConn Gen 2 is the better value choice for most users — longer battery, cleaner reliability, lower price, comparable analytics. Ultrahuman wins when ring weight or CGM integration is what you specifically want.
 
-## When RingConn is the right pick
+## When is RingConn the right pick?
 
 If you want most of an Oura at half the long-term cost — subscription-free, 12-day battery, polished app — RingConn Gen 2 is the right shape. The battery alone is reason enough: charging windows are the place HRV continuity breaks, and a 12-day cycle is the cleanest in the category.
 
-## When Ultrahuman is the right pick
+## When is Ultrahuman the right pick?
 
 If you cannot tolerate a heavier ring on your finger, Ultrahuman Ring Air at 2.4g is the answer. If you already use or plan to use the Ultrahuman M1 CGM, the native unified-ecosystem view is unique and meaningful. Outside those two cases RingConn is the better-value pick.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

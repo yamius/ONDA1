@@ -47,11 +47,11 @@ const headspaceVsCalm: HeadToHead = {
 
 Headspace teaches meditation; Calm provides ambient wellness content that includes meditation. Both work; the right pick depends on whether you want to learn or to consume.
 
-## When Headspace is the right pick
+## When is Headspace the right pick?
 
 If you have never meditated and want to learn — the Basics course, the structured curriculum, the consistent teacher voice — Headspace is the right shape. The library is narrower but deliberately so; the value is the teaching quality, not the breadth.
 
-## When Calm is the right pick
+## When is Calm the right pick?
 
 If sleep content matters as much as meditation, or you respond better to celebrity narration than to a single teacher voice, Calm is the right shape. The library is broader, the Sleep Stories format is category-defining, and the ambient soundscapes work as background content in a way Headspace does not.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',

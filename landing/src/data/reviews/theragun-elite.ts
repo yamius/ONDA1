@@ -44,11 +44,11 @@ const theragunElite: ToolReview = {
 
 Theragun Elite is the rational Therabody value — same 16 mm amplitude as PRO Plus flagship, same Therabody app and 2-year warranty, $200 less. For 90% of users the spec gap to PRO Plus is not material.
 
-## Where it falls short
+## What are the downsides of Theragun Elite?
 
 Stall force vs Hypervolt 2 Pro. At the same $399 price point, Hypervolt 2 Pro delivers 60 lbs stall force vs Theragun Elite\'s 40 lbs. Trade Therabody ecosystem for higher Hyperice stall force.
 
-## Who it is for
+## Who should buy Theragun Elite?
 
 Choose Theragun Elite for rational Therabody value — same app, same amplitude, lower price than PRO Plus. For higher stall force at same price, Hypervolt 2 Pro. For spec ceiling, Theragun PRO Plus.
 

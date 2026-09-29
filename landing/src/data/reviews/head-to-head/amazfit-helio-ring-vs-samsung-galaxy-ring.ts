@@ -42,11 +42,11 @@ const helioVsSamsung: HeadToHead = {
 
 Two subscription-free rings, very different prices. The [Amazfit Helio Ring](/reviews/amazfit-helio-ring) is $199 and cross-platform; the [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is ~$399 with a better battery, build and Samsung integration.
 
-## When the Amazfit Helio Ring is the right pick
+## When is the Amazfit Helio Ring the right pick?
 
 Lowest price and cross-platform support are the priority, and a size fits you.
 
-## When the Samsung Galaxy Ring is the right pick
+## When is the Samsung Galaxy Ring the right pick?
 
 You own a Samsung Galaxy phone and want a more polished ring with better battery and fit range.
 

@@ -55,15 +55,15 @@ const pulsettoVsNurosymVsApollo: HeadToHead = {
 
 The three devices solve different jobs. Pulsetto is the daily-use cervical tVNS collar with guided programmes; Nurosym is the clinical-grade auricular tVNS with the deepest evidence; Apollo Neuro is the all-day passive vibrotactile wearable. They are not really substitutes — they layer.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 If you want a polished daily-use device with structured sleep, stress, anxiety and pain programmes, and cervical electrical tVNS is the mechanism you want, Pulsetto is the right shape. Most consumer first-time users land here because the form factor and the price are accessible.
 
-## When Nurosym is the right pick
+## When is Nurosym the right pick?
 
 If peer-reviewed evidence and disclosed stimulation parameters are the deciding criteria — you are running self-experiments, want to cite the literature, value clinical provenance — Nurosym is the right shape. The Parasym hardware has the deepest published auricular tVNS research base in the consumer space.
 
-## When Apollo Neuro is the right pick
+## When is Apollo Neuro the right pick?
 
 If you want vagal modulation that runs in your day without ceremony — at work, during sleep, in training — Apollo is the right shape. The vibrotactile mechanism is indirect but real, the University of Pittsburgh evidence is solid, and the device is genuinely wearable 24/7.
 

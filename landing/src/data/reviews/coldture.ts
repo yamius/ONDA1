@@ -44,11 +44,11 @@ const coldture: ToolReview = {
 
 Coldture is the Canadian-built premium answer to The Plunge — comparable hardware optimised for cold-climate winter operation, slightly cheaper, better distribution into Canada and EU markets. For users in cold climates who want chiller-built tubs that hold up outdoors year-round, this is the right shape.
 
-## Where it falls short
+## What are the downsides of Coldture?
 
 US brand recognition is thinner than Plunge’s. Protocol-guidance content is less developed. US shipping is slower than US-based competitors.
 
-## Who it is for
+## Who should buy Coldture?
 
 Choose Coldture if you are in Canada, EU or a cold-climate US region where outdoor winter operation is the deciding factor. For US warm-climate users, Plunge or Edge are likely the more practical fits.
 

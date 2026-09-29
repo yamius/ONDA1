@@ -45,11 +45,11 @@ const pillow: ToolReview = {
 
 Pillow is the sleep tracker built around the Apple Watch. Worn overnight, the watch lets it track automatically and in more detail than a phone on the nightstand, and the app turns that into genuinely useful analysis — every metric opens into weekly, monthly and yearly views, and you can compare metrics to work out what wrecked a particular night. It is also one of the easier sleep apps to navigate.
 
-## Where it falls short
+## What are the downsides of Pillow?
 
 It is iOS-only, and it leans hard on the Apple Watch — without one you lose much of what makes it good. Wind-down content is minimal; this is a measurement app, not a fall-asleep aid. And the fuller feature set sits behind a subscription.
 
-## Who it is for
+## Who should buy Pillow?
 
 Choose Pillow if you are on iPhone, wear an Apple Watch to bed, and want detailed, well-presented sleep analysis. Android users, or anyone without a watch, should look elsewhere.
 

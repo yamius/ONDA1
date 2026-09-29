@@ -44,11 +44,11 @@ const therasageTheraSaunaPersonal: ToolReview = {
 
 Therasage occupies the mid-tier IR sauna sweet spot — full-spectrum delivery at half the cost of Sunlighten or Clearlight, with credible EMF documentation. The biohacker community knows the brand, and the tent / cabin configuration choice covers more install scenarios than fixed-cabin competitors.
 
-## Where it falls short
+## What are the downsides of Therasage TheraSauna Personal?
 
 Wavelength rigour and EMF discipline are both a tier below the category leaders. Brand recognition is narrower. Cabin build is less premium than Sunlighten cedar.
 
-## Who it is for
+## Who should buy Therasage TheraSauna Personal?
 
 Choose Therasage TheraSauna Personal if you want full-spectrum biohacker IR at mid-tier pricing. For premium full-spectrum, Sunlighten or Clearlight. For near-IR-specific, SaunaSpace.
 

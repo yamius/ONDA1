@@ -51,7 +51,7 @@ This is where it fails an evidence-first read. There is no reliable evidence tha
 
 Judged as PEMF specifically, the numbers a buyer needs are missing: no disclosed waveform, no frequency range, no intensity beyond a compact ~15 Gauss claim. A legitimate mat like the [Healthy Wave Multi-Wave](/reviews/healthy-wave-multi-wave) exposes real parameters and stacks PEMF + infrared + red light for less than the mid Qi Coil tiers; the [Bemer Classic Evo](/reviews/bemer-classic-evo) has an actual published-signal research base. Qi Coil offers neither.
 
-## Who it is for
+## Who should buy Qi Coil?
 
 Only for someone who wants a portable frequency gadget and a big preset library for subjective, ritual use, and to whom the price is not an obstacle. For PEMF chosen on evidence and disclosed specs, see the [best PEMF devices](/reviews/pemf-devices) — start with Healthy Wave or Bemer.
 `,

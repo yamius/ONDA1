@@ -44,11 +44,11 @@ const pulsetto: ToolReview = {
 
 Pulsetto is the easiest way into consumer cervical tVNS. The neck-worn collar makes daily use simple — no clip to fiddle with, no handheld to hold against the carotid — and the app drives four distinct programmes (sleep, stress, anxiety, pain) instead of asking the user to titrate intensity themselves. At $269 it is also the cheapest cervical device in this list, and the parameters are documented inside the app rather than hidden.
 
-## Where it falls short
+## What are the downsides of Pulsetto?
 
 The trade-off is evidence. Most of the supporting research is company-sponsored or in pilot stage; the deeper randomised-trial base belongs to Nurosym and gammaCore. The neck pads need periodic saline or gel-pad replacement, which adds friction. And the more sophisticated features — additional programmes, deeper insights — sit behind the Pulsetto+ subscription, so the $269 ticket understates the full ownership cost a little.
 
-## Who it is for
+## Who should buy Pulsetto?
 
 Choose Pulsetto if you want a polished daily-use cervical tVNS device with structured programmes and minimal setup, and you are comfortable with a lighter independent-evidence base in exchange for accessibility. If clinical-grade evidence is the deciding criterion, Nurosym is the right pick. If you want a one-time-purchase device with no app subscription, Truvaga 350 is closer to that shape.
 

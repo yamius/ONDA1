@@ -48,11 +48,11 @@ const flowVsApollo: HeadToHead = {
 
 Flow Neuroscience and Apollo Neuro look adjacent but are not really substitutes. Flow is a CE-marked clinical device for diagnosed major depression; Apollo is a consumer wellness wearable for general vagal modulation. The decision is whether you have a clinical condition or a wellness intent.
 
-## When Flow Neuroscience is the right pick
+## When is Flow Neuroscience the right pick?
 
 If you have major depression and a clinician open to discussing tDCS as a take-home option, Flow is the right shape. The CE-marked regulatory status, the published trial base in Lancet Digital Health, and the structured 8-week behavioural-therapy programme are the value. For general wellness this is the wrong tool — the indication is narrow on purpose.
 
-## When Apollo Neuro is the right pick
+## When is Apollo Neuro the right pick?
 
 If you want passive vagal modulation through the day — for recovery, stress, sleep, focus — without a clinical indication or a structured programme commitment, Apollo is the right shape. The vibrotactile mechanism is real; the University of Pittsburgh research base is solid; daily wearability is the use case.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

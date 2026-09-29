@@ -48,11 +48,11 @@ const sleepCycleVsSleepAsAndroid: HeadToHead = {
 
 Sleep Cycle wins on polish and cross-platform reach; Sleep as Android wins on Android-only customisation depth. Pick on platform first, customisation second.
 
-## When Sleep Cycle is the right pick
+## When is Sleep Cycle the right pick?
 
 If you want a polished, low-friction sleep tracker that works the same on iPhone and Android, and you value a clean app over deep customisation, Sleep Cycle is the right shape. The sleep-soundscape library and the consistent UX across platforms are the differentiators.
 
-## When Sleep as Android is the right pick
+## When is Sleep as Android the right pick?
 
 If you are on Android and you would rather have automation, plugin ecosystem and granular control than a polished out-of-box experience, Sleep as Android is the right shape. The Tasker integration alone is reason enough for power users. For iPhone users it is not an option.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',

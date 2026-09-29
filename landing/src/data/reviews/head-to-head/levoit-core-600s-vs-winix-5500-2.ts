@@ -47,11 +47,11 @@ const levoitVsWinix: HeadToHead = {
 
 Both mid-budget True HEPA + carbon. Levoit Core 600S adds VeSync app + larger coverage. Winix 5500-2 adds PlasmaWave option + Korean brand at $50 less.
 
-## When Levoit Core 600S is the right pick
+## When is Levoit Core 600S the right pick?
 
 If you want app integration + larger coverage + Alexa / Google Home — Levoit is the right shape at $299.
 
-## When Winix 5500-2 is the right pick
+## When is Winix 5500-2 the right pick?
 
 If you want Korean brand pedigree + PlasmaWave option + lower price — Winix is the right shape at $249. Accept no app integration.`,
   relatedComparisonSlug: 'best-air-purifiers-2026',

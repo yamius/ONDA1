@@ -48,11 +48,11 @@ const mendiVsMuse2: HeadToHead = {
 
 Mendi and Muse 2 are not really substitutes — they use different sensor modalities for different jobs. Pick on what you actually want from the device.
 
-## When Mendi is the right pick
+## When is Mendi the right pick?
 
 If you want the simplest possible neurofeedback experience — a single forehead band, one game, instant feedback on prefrontal activity — Mendi is the right shape. The fNIRS modality is novel in the consumer space; the easy-to-engage format is the value.
 
-## When Muse 2 is the right pick
+## When is Muse 2 the right pick?
 
 If meditation is the use case, Muse 2 is the right shape — four-channel EEG, decade-old ecosystem, mature meditation library. The content library alone is reason enough.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',

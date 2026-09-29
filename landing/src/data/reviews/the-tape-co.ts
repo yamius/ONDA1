@@ -44,11 +44,11 @@ const theTapeCo: ToolReview = {
 
 The Tape Co. is the indie X-pattern mouth tape — cross design leaves corner-of-mouth uncovered for emergency airflow, safer mechanism than full-seal alternatives. Indie biohacker positioning with a real safety-design differentiator.
 
-## Where it falls short
+## What are the downsides of The Tape Co.?
 
 Brand recognition and validation. Indie brand without FDA registration or peer-reviewed studies; newer ~2024 launch without multi-year track record.
 
-## Who it is for
+## Who should buy The Tape Co.?
 
 Choose The Tape Co. if you want X-pattern safety design with corner-of-mouth airflow. For biohacker brand polish, Hostage Tape. For FDA-registered porous safety, Somnifix. For premium silicone, Dream Recovery.
 

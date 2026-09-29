@@ -45,11 +45,11 @@ const lunaRing: ToolReview = {
 
 The Noise Luna Ring Gen 2’s pitch is value: core smart-ring tracking, no subscription, around $300. It covers heart rate, [HRV](/glossary/heart-rate-variability), SpO2, skin temperature and sleep, with a voice-activated Luna AI assistant. Sleep staging is its strongest area — accurate in independent testing — and automatic activity detection works reliably. The pocket charging case pushes total battery toward a headline ~30 days.
 
-## Where it falls short
+## What are the downsides of Noise Luna Ring Gen 2?
 
 The single-charge battery is only about four days, a step behind class leaders that run a week or more, so you lean on the case. The app has some teething issues, and accuracy — while fine for trends — is below Oura’s validated reference. This is a practical alternative, not a groundbreaking one.
 
-## Who it is for
+## Who should buy Noise Luna Ring Gen 2?
 
 Choose the Noise Luna Ring Gen 2 if you want a cheap, subscription-free ring with good sleep tracking and don’t mind topping up with the case. For a longer single-charge battery at a similar no-subscription price, see the [RingConn Gen 2](/reviews/ringconn-gen-2); for the cheapest option, the [Amazfit Helio Ring](/reviews/amazfit-helio-ring); for the accuracy reference, [Oura](/reviews/oura-ring-4).
 

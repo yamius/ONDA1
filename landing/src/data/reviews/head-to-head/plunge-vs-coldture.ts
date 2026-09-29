@@ -46,11 +46,11 @@ const plungeVsColdture: HeadToHead = {
 
 The Plunge and Coldture are the two premium chiller-built cold-plunge tubs. Plunge is the US category leader with the deepest content ecosystem; Coldture is the Canadian-built cold-climate specialist at a marginally lower price.
 
-## When The Plunge is the right pick
+## When is The Plunge the right pick?
 
 If you are in the US, want the longest-established brand pedigree and the deepest founder content library — The Plunge is the right shape. The temperate-climate baseline is where its engineering shines.
 
-## When Coldture is the right pick
+## When is Coldture the right pick?
 
 If you are in Canada, EU or a cold-climate US region installing outdoors, Coldture’s winter-engineered chiller and insulation outperform Plunge. The lower price is a bonus.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',

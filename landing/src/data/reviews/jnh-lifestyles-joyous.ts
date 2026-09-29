@@ -44,11 +44,11 @@ const jnhLifestylesJoyous: ToolReview = {
 
 JNH Lifestyles Joyous is the cheapest credible cabin IR sauna. Canadian hemlock build, ceramic far-IR emitters, multiple person-capacity configurations, $1,800–$3,000 depending on size. For users who want a cabin form factor without $5K+ premium-tier commitment, this is the right shape.
 
-## Where it falls short
+## What are the downsides of JNH Lifestyles Joyous?
 
 Far-IR only — no near or mid IR. EMF documentation is manufacturer-stated rather than third-party-verified at premium-brand rigour. The build is solid but not premium-tier.
 
-## Who it is for
+## Who should buy JNH Lifestyles Joyous?
 
 Choose JNH Lifestyles Joyous if a cabin form factor at budget pricing is the deciding criterion. For full-spectrum IR, Sunlighten or Clearlight. For portable IR without cabin commitment, HigherDose Blanket.
 

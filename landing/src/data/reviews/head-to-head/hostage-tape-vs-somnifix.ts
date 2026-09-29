@@ -47,11 +47,11 @@ const hostageVsSomnifix: HeadToHead = {
 
 Both are premium mouth tapes. Hostage Tape is the viral biohacker brand with beard-friendly engineering. Somnifix is the FDA-registered medical original.
 
-## When Hostage Tape is the right pick
+## When is Hostage Tape the right pick?
 
 If you have a beard or want subscription convenience and beard-friendly acrylic adhesive — Hostage Tape is the right shape at lower annual cost.
 
-## When Somnifix is the right pick
+## When is Somnifix the right pick?
 
 If you want FDA-registered porous safety design with multi-year medical credibility track record — Somnifix is the right shape. Safer mechanism for users uncertain about sleep-apnea contraindications.`,
   relatedComparisonSlug: 'best-mouth-tape-nasal-breathing-2026',

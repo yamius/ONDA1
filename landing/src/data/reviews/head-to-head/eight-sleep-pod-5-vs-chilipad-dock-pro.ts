@@ -42,11 +42,11 @@ const pod5VsChilipad: HeadToHead = {
 
 Same core job, very different wrappers. The [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is the maximal smart-bed system — HRV tracking, Autopilot software, top-down climate and full-bed extras — at ~$6,099 plus a subscription. The [ChiliPad Dock Pro](/reviews/chilipad-dock-pro) delivers the same dual-zone water cooling for ~$1,700 once, no subscription, no tracking.
 
-## When the Eight Sleep Pod 5 is the right pick
+## When is the Eight Sleep Pod 5 the right pick?
 
 You want tracking and software baked in — HRV and sleep staging without a wearable, Autopilot adjusting temperature by sleep stage — plus the top-down blanket, adjustable base and audio, and the price and membership are acceptable.
 
-## When the ChiliPad Dock Pro is the right pick
+## When is the ChiliPad Dock Pro the right pick?
 
 You want the climate hardware alone, done well, without the subscription — and you already wear an Oura or WHOOP for the data. Same dual-zone water cooling, roughly a quarter of the 3-year cost.
 

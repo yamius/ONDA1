@@ -42,11 +42,11 @@ const ouraRing5VsWhoop: HeadToHead = {
 
 Two screenless trackers, two philosophies. The [Oura Ring 5](/reviews/oura-ring-5) is the sleep-first ring with the most accurate overnight HRV and sleep. [WHOOP 5.0](/reviews/whoop-5-0) is the training-first band with continuous HRV and daily recovery-and-strain coaching.
 
-## When the Oura Ring 5 is the right pick
+## When is the Oura Ring 5 the right pick?
 
 Sleep and recovery are the priority and you want the cleanest overnight data in the most comfortable all-day wearable. Accept the membership and it is the reference.
 
-## When WHOOP 5.0 is the right pick
+## When is WHOOP 5.0 the right pick?
 
 You train seriously and want continuous HRV — including during workouts — plus a coaching loop that turns Strain and Recovery into a daily plan.
 

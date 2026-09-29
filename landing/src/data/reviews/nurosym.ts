@@ -44,11 +44,11 @@ const nurosym: ToolReview = {
 
 Nurosym wins this comparison on the criterion that matters most for medical devices: evidence. The underlying Parasym hardware has been the experimental platform for dozens of published trials of transcutaneous auricular VNS — stimulating the [vagus nerve](/glossary/vagus-nerve) to shift autonomic balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch, with measured [HRV](/glossary/heart-rate-variability) modulation, inflammatory-marker reduction and long-COVID symptom studies — which no other consumer tVNS device can claim. The parameters are documented (25 Hz pulse, 200–1000 µs pulse width, intensity user-titrated), so a clinician or self-experimenter can describe exactly what dose is being delivered.
 
-## Where it falls short
+## What are the downsides of Nurosym?
 
 The same austerity that makes Nurosym credible makes it spartan. There is one stimulation programme, no app, no on-device HRV, no session log, and the unit is tethered to the ear clip by a cable. At £599 it is also the most expensive ear-clip device in this list. If you want guided modes for sleep, focus and stress, Pulsetto offers more programme variety at a lower price — even if its evidence base is thinner.
 
-## Who it is for
+## Who should buy Nurosym?
 
 Choose Nurosym if you are running a structured tVNS self-experiment, want disclosed parameters you can reference against the literature, and are willing to pay clinical pricing for clinical provenance. If you want a polished consumer experience with modes and a phone app, Pulsetto, Xen by Neuvana or Truvaga are better fits.
 

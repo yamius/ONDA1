@@ -44,11 +44,11 @@ const opoveM3: ToolReview = {
 
 OPOVE M3 Pro 2 is the mid-budget value reference — 55 lbs stall force at $179, premium-tier specs at fraction of premium pricing. Best mid-budget percussion buy.
 
-## Where it falls short
+## What are the downsides of OPOVE M3 Pro 2?
 
 App and brand polish. No app integration; brand pedigree lower than Theragun / Hyperice. For users buying on app + ecosystem, premium brands better fit.
 
-## Who it is for
+## Who should buy OPOVE M3 Pro 2?
 
 Choose OPOVE M3 Pro 2 for mid-budget premium-tier percussion. For higher stall force at premium pricing, Theragun PRO Plus or Achedaway Pro. For budget Bob and Brad / Renpho, even cheaper alternatives.
 

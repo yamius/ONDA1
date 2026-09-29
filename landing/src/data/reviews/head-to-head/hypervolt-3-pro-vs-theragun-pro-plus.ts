@@ -42,11 +42,11 @@ const hv3ProVsTheragunProPlus: HeadToHead = {
 
 The March 2026 Hypervolt 3 update flipped the value math. The [Hypervolt 3 Pro](/reviews/hypervolt-3-pro) now out-muscles the [Theragun PRO Plus](/reviews/theragun-pro-plus) on stall force and undercuts it by $250, while Theragun keeps the deepest amplitude, the richest feature set and the longer warranty.
 
-## When the Hypervolt 3 Pro is the right pick
+## When is the Hypervolt 3 Pro the right pick?
 
 You want the strongest, quietest, longest-running gun for the money — ~70 lbs of stall force at $349 — and you do not specifically need Theragun’s deeper stroke or extra features.
 
-## When the Theragun PRO Plus is the right pick
+## When is the Theragun PRO Plus the right pick?
 
 You want the deepest 16 mm amplitude, integrated heat and breathing training, an OLED display, multi-grip versatility and a 2-year warranty — and the $599 premium is acceptable.
 

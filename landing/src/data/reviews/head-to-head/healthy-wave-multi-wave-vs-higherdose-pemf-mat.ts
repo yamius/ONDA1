@@ -46,11 +46,11 @@ const healthyWaveVsHigherDose: HeadToHead = {
 
 Both are multi-modality recovery mats. Healthy Wave is the PEMF-first technical mat. HigherDOSE is the consumer-brand recovery experience mat with light PEMF.
 
-## When Healthy Wave Multi-Wave is the right pick
+## When is Healthy Wave Multi-Wave the right pick?
 
 If you\'re buying for the PEMF capability — Healthy Wave delivers real parameter control, higher intensity and 5-year warranty. The right shape for users who want PEMF protocol depth alongside the modality stack.
 
-## When HigherDOSE PEMF Mat is the right pick
+## When is HigherDOSE PEMF Mat the right pick?
 
 If you want a polished consumer recovery experience at lower price — HigherDOSE wraps a simpler PEMF stack in better consumer UX and brand polish. Accept the 1-year warranty and the light PEMF depth.`,
   relatedComparisonSlug: 'best-pemf-devices-2026',

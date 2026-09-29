@@ -42,11 +42,11 @@ const gen3VsRingPro: HeadToHead = {
 
 The two premium subscription-free rings of 2026. The [RingConn Gen 3](/reviews/ringconn-gen-3) is the value-and-features pick ($349, haptic alerts, vascular/sleep-apnea insights); the [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) is the battery-and-processing pick ($479, ~15-day battery, on-ring dual-core).
 
-## When the RingConn Gen 3 is the right pick
+## When is the RingConn Gen 3 the right pick?
 
 You want the best value, a haptic silent alarm and vascular/sleep-apnea insights, and $130 less matters.
 
-## When the Ultrahuman Ring Pro is the right pick
+## When is the Ultrahuman Ring Pro the right pick?
 
 You want the longest battery, on-ring processing and metabolic-leaning metrics, and the higher price is worth it.
 

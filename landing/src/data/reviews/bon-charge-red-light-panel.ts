@@ -44,11 +44,11 @@ const bonCharge: ToolReview = {
 
 Bon Charge is the wellness-positioned red-light brand for buyers who already live in the Bon Charge ecosystem (blue-blocker glasses, grounding products) and want a panel from the same brand. Build quality is solid, the stand and door-mount hardware come included, and the EU/AU distribution is well-established.
 
-## Where it falls short
+## What are the downsides of Bon Charge Red Light Therapy Panel?
 
 Technical disclosure. Bon Charge publishes less detail on independent EMF testing and flicker rates than biohacker-targeted brands. Two-wavelength coverage is conservative compared to MitoPRO’s four or PlatinumLED’s six. No standout differentiator on hardware that justifies the brand premium beyond consumer-recognition.
 
-## Who it is for
+## Who should buy Bon Charge Red Light Therapy Panel?
 
 Choose Bon Charge if you are in an EU/AU market and want a panel from an established wellness brand with consistent build quality. For maximum spec disclosure, Joovv or PlatinumLED. For value at the half-body tier, BioLight or Hooga.
 

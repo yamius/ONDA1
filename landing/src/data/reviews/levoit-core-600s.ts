@@ -44,11 +44,11 @@ const levoitCore600s: ToolReview = {
 
 Levoit Core 600S is the mid-budget smart reference — True HEPA H13, VeSync app, PM2.5 sensor, auto mode at $299. Best mid-budget smart features and cheapest long-term filter ownership.
 
-## Where it falls short
+## What are the downsides of Levoit Core 600S?
 
 Coverage and build quality vs Coway Airmega 400. 635 sq ft vs Coway 1560 sq ft AHAM coverage. Plastic build vs premium-brand metal.
 
-## Who it is for
+## Who should buy Levoit Core 600S?
 
 Choose Levoit Core 600S for mid-budget smart features at $299. For mid-premium coverage doubling, Coway Airmega 400. For premium smart, Dyson Big+Quiet. For entry budget, Levoit Core 300.
 

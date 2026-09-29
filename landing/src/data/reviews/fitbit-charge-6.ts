@@ -45,11 +45,11 @@ const fitbitCharge6: ToolReview = {
 
 The Fitbit Charge 6 is the affordable on-ramp to HRV tracking. At well under half the price of most devices here it gives you overnight HRV, respiratory rate, SpO2 and the long-refined Fitbit sleep tracking — and, since a 2026 change, HRV trends are free rather than locked behind Premium. As a small, light band with a multi-day battery it is easy to wear every night.
 
-## Where it falls short
+## What are the downsides of Fitbit Charge 6?
 
 It is a mainstream tracker, not a recovery instrument. HRV is reported as a basic overnight figure without the depth or framing of an Oura or a Whoop, the data lives inside the Google Fitbit ecosystem with limited export, and the app pushes Premium and the newer Google Health Premium tier persistently. The numbers are fine; the ceiling is low.
 
-## Who it is for
+## Who should buy Fitbit Charge 6?
 
 Choose the Fitbit Charge 6 if you want a cheap, reliable, comfortable band that covers HRV and sleep well enough to track your trends, and you are not trying to train on the data. If HRV is the main reason you are buying, a dedicated ring or band will give you far more to work with.
 

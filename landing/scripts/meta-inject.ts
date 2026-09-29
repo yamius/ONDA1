@@ -3155,7 +3155,12 @@ export function getMetaForRoute(route: string): RouteMeta {
     const term = getTermBySlug(slug)
     if (term) {
       const seo = GLOSSARY_SEO[slug]
-      const title = seo?.title ?? `${term.title} | ONDA Life Glossary`
+      // Short terms (acronyms like "ATP") make weak 20-char titles — ask the question instead.
+      const title =
+        seo?.title ??
+        (term.title.length <= 8
+          ? `What Is ${term.title}? Definition & Role | ONDA Life`
+          : `${term.title} | ONDA Life Glossary`)
       const description = seo?.description ?? term.shortDescription
       return {
         title,
@@ -3862,11 +3867,34 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
   // never runs — so the static HTML would otherwise carry only breadcrumbs.
   // Emitting them here makes the structured data visible to non-JS crawlers
   // (GPTBot, PerplexityBot, Bing) that never hydrate the page.
-  if (meta.jsonLd && meta.jsonLd.length > 0) {
-    for (const raw of meta.jsonLd) {
+  // Every /tools/<x> page is a free web app: tools whose meta carries no
+  // WebApplication node get a generic one from the page title/description.
+  const isToolPage = /^\/tools\/[^/]+$/.test(basePath)
+  const toolNodes = [...(meta.jsonLd ?? [])]
+  if (isToolPage && !meta.softwareApplication && !toolNodes.some((n) => n['@type'] === 'WebApplication')) {
+    const seg = new URL(meta.url).pathname.split('/')[1]
+    toolNodes.push({
+      '@context': 'https://schema.org',
+      '@type': 'WebApplication',
+      name: meta.title.replace(/\s*[|—–-]\s*ONDA Life.*$/, ''),
+      description: meta.description,
+      url: meta.url,
+      inLanguage: (SUPPORTED_LANGS as readonly string[]).includes(seg) ? seg : 'en',
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'Any (web browser)',
+      isAccessibleForFree: true,
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    })
+  }
+  if (toolNodes.length > 0) {
+    for (const raw of toolNodes) {
       const node =
-        toolDates && raw['@type'] === 'WebApplication' && !raw.dateModified
-          ? { ...raw, datePublished: toolDates.published, dateModified: toolDates.modified }
+        isToolPage && raw['@type'] === 'WebApplication'
+          ? {
+              ...raw,
+              ...(toolDates && !raw.dateModified ? { datePublished: toolDates.published, dateModified: toolDates.modified } : {}),
+              ...(raw.author ? {} : { author: { '@type': 'Person', '@id': AUTHOR_ID, name: AUTHOR_NAME, url: AUTHOR_URL } }),
+            }
           : raw
       const s = `<script type="application/ld+json">${JSON.stringify(node)}</script>`
       out = out.replace('</head>', `  ${s}\n</head>`)

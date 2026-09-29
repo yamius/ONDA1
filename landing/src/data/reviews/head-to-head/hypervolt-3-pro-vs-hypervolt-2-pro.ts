@@ -42,11 +42,11 @@ const hv3ProVsHv2Pro: HeadToHead = {
 
 The [Hypervolt 3 Pro](/reviews/hypervolt-3-pro) is a straight generational upgrade over the [Hypervolt 2 Pro](/reviews/hypervolt-2-pro): more stall force, longer battery, quieter, bigger attachments — and a lower launch price.
 
-## When the Hypervolt 3 Pro is the right pick
+## When is the Hypervolt 3 Pro the right pick?
 
 Buying new, almost always. It’s better on every hardware axis and costs less at list.
 
-## When the Hypervolt 2 Pro is the right pick
+## When is the Hypervolt 2 Pro the right pick?
 
 Only when it’s discounted well below the 3 Pro and you don’t need the extra power or battery.
 

@@ -42,11 +42,11 @@ const helioVsOura4: HeadToHead = {
 
 The classic cheap-vs-reference ring choice. The [Amazfit Helio Ring](/reviews/amazfit-helio-ring) is $199 with no subscription; the [Oura Ring 4](/reviews/oura-ring-4) is the accuracy-and-app leader at $349 plus a membership.
 
-## When the Amazfit Helio Ring is the right pick
+## When is the Amazfit Helio Ring the right pick?
 
 You want the cheapest subscription-free ring with decent sleep tracking, and a size fits you.
 
-## When the Oura Ring 4 is the right pick
+## When is the Oura Ring 4 the right pick?
 
 Accuracy, battery, app polish and fit range matter more than price, and the membership is acceptable.
 

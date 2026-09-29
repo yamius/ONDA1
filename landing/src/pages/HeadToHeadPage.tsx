@@ -74,6 +74,14 @@ export function HeadToHeadPage() {
 
       {/* Verdict card — the single quotable answer to "which one". */}
       <section className="mb-10 rounded-xl border border-terminal-green/30 bg-terminal-green/5 p-6">
+        {/* EN: the verdict answers a question-form heading (GEO extraction). */}
+        {lang === 'en' && (
+          <h2 className="mb-3 text-lg font-semibold text-white/90">
+            {products.length === 2
+              ? `${products[0].name} or ${products[1].name}: which is better?`
+              : `${products.slice(0, -1).map((p) => p.name).join(', ')} or ${products[products.length - 1].name}: which is better?`}
+          </h2>
+        )}
         <p className="mb-2 font-mono text-xs tracking-widest text-terminal-green/80">
           {winner ? `WINNER: ${winner.name}` : 'VERDICT: TIE'}
         </p>

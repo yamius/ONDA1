@@ -48,11 +48,11 @@ const neurosityVsEmotiv: HeadToHead = {
 
 Neurosity Crown wins for developers and biohackers who want raw EEG access without subscription. Emotiv Insight 2 wins specifically for academic-style research where the EmotivPRO toolchain’s publication base matters.
 
-## When Neurosity Crown is the right pick
+## When is Neurosity Crown the right pick?
 
 If you want to build something on top of EEG — a focus app, a productivity tool, a research project — and you would rather pay once than maintain an ongoing subscription for raw data, Neurosity Crown is the right shape. The eight-channel hardware and the JavaScript/Python/Swift SDK are the differentiators.
 
-## When Emotiv Insight 2 is the right pick
+## When is Emotiv Insight 2 the right pick?
 
 If you are running academic-style analysis and want to cite the EmotivPRO toolchain in your work, Emotiv is the right shape. The five-channel hardware is good enough for most cortical-region work, the live cognitive metrics are broader than Neurosity’s, and the Pro subscription is acceptable when academic-toolchain depth is the value you are paying for.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',

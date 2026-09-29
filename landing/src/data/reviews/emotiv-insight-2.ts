@@ -45,11 +45,11 @@ const emotivInsight2: ToolReview = {
 
 Emotiv Insight 2 occupies the sliver of the EEG market between consumer and research. Five semi-dry electrodes is more than Muse and fewer than Crown, the academic toolchain (EmotivPRO) is the most-cited in this category by a wide margin, and the live cognitive-performance metrics — focus, stress, engagement, excitement, interest, relaxation — are the strongest multi-dimensional readout in the consumer space. For a hobbyist who wants to do real EEG analysis without buying medical-grade gear, this is the right shape.
 
-## Where it falls short
+## What are the downsides of Emotiv Insight 2?
 
 The data model. Raw-EEG access requires the EmotivPRO subscription on top of the $499 hardware purchase, which feels like double-paying compared to Neurosity Crown’s SDK-included model. Guided content is modest — Emotiv treats the device as an instrument, not a content platform. And there is no sleep tracking.
 
-## Who it is for
+## Who should buy Emotiv Insight 2?
 
 Choose Emotiv Insight 2 if you want a research-grade toolchain at consumer pricing and the subscription-for-raw-data trade is acceptable. If raw data without subscription is the deciding criterion, Neurosity Crown. If meditation content is the deciding criterion, Muse S Athena or Muse 2.
 

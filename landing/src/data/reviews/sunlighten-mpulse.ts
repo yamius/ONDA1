@@ -44,11 +44,11 @@ const sunlightenMpulse: ToolReview = {
 
 Sunlighten mPulse 3-in-1 is the IR sauna that sets the standard for what "full-spectrum" should mean. Most competitors put a far-IR emitter behind the panel and call it full-spectrum; mPulse delivers near, mid and far IR through three independent emitter systems, programmable per session. Combined with cedar build, third-party-verified EMF and FDA Class II registration, this is the premium-tier reference.
 
-## Where it falls short
+## What are the downsides of Sunlighten mPulse 3-in-1?
 
 Price and footprint. $5,000+ for the smallest configuration, dedicated install space required, lead times during peak demand.
 
-## Who it is for
+## Who should buy Sunlighten mPulse 3-in-1?
 
 Choose Sunlighten mPulse if true 3-wavelength IR and verified low-EMF discipline are the deciding criteria, and you want the premium-tier build that has been the category reference for over a decade. For budget cabin IR, JNH or Therasage. For portable, HigherDose Blanket. For near-IR-only, SaunaSpace.
 

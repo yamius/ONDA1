@@ -44,11 +44,11 @@ const breathwrk: ToolReview = {
 
 Breathwrk is the structured breathwork reference — biggest library, broadest technique coverage, most science-grounded copy. The Stanford cyclic-sighing research, polyvagal theory and Huberman lab protocols all show up cited honestly. The library size and Apple Watch native support make it the rational default for daily breathwork practice.
 
-## Where it falls short
+## What are the downsides of Breathwrk?
 
 No community or live-session layer (Othership's differentiator), no HRV-driven session adaptation (Inhale's differentiator), and less holotropic / emotional-release focus than Pause or SOMA. Breathwrk is excellent for structured daily practice; it's not the right shape for deep emotional-release sessions or for community-driven breathwork culture.
 
-## Who it is for
+## Who should buy Breathwrk?
 
 Choose Breathwrk if you want the largest structured library and science-grounded copy at the best premium-tier price. For community + music-driven sessions, Othership. For HRV biofeedback, Inhale. For emotional release, Pause Breathwork. For free entry, iBreathe or Breathe2Relax.
 

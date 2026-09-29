@@ -55,15 +55,15 @@ const ouraVsWhoopVsApple: HeadToHead = {
 
 Three different jobs in three different form factors. Oura is the passive HRV-and-sleep instrument. Whoop is the active recovery coach. Apple Watch is the do-everything smartwatch where HRV is one feature. The honest answer is that most committed users end up with more than one.
 
-## When Oura Ring 4 is the right pick
+## When is Oura Ring 4 the right pick?
 
 If HRV and sleep tracking are the reason you are buying, Oura is the right shape. The continuous overnight pipeline, the consumer-reference sleep model, the 7-day battery and the ring form factor all line up around that use case.
 
-## When Whoop 5.0 is the right pick
+## When is Whoop 5.0 the right pick?
 
 If you train hard and use the daily Recovery score as coaching that changes your training, Whoop is the right shape. The subscription model is the cost of admission; the coaching loop is the value.
 
-## When Apple Watch Series 11 is the right pick
+## When is Apple Watch Series 11 the right pick?
 
 If you want a smartwatch — messaging, payments, ECG, third-party apps, the deepest iPhone integration on the market — and HRV is one feature on the list rather than the centre, Apple Watch is the right shape. Just do not pretend it is the HRV instrument the other two are.
 

@@ -48,11 +48,11 @@ const appleWatchVsGarminVenu4: HeadToHead = {
 
 Apple Watch Series 11 is the better all-purpose smartwatch; Garmin Venu 4 is the better HRV-and-training instrument. The HRV question is genuinely settled in Garmin’s favour because Apple Watch spot-checks HRV rather than tracking it overnight — and overnight is when HRV matters.
 
-## When Apple Watch is the right pick
+## When is Apple Watch the right pick?
 
 If you are in the iPhone ecosystem and want a watch that handles messaging, payments, ECG, fall detection, emergency SOS, fitness rings and a thousand third-party apps — and HRV is a feature you check occasionally — Apple Watch is the right shape. It is the best general-purpose smartwatch on the market.
 
-## When Garmin is the right pick
+## When is Garmin the right pick?
 
 If training is the reason you are buying — structured workouts, recovery hours, body battery, multi-day continuous HRV — Garmin Venu 4 is the right shape. The five-day battery, training-load model, and lack of subscription gating are exactly what training-driven users actually use. For HRV specifically, Garmin is the unambiguous winner here.
 

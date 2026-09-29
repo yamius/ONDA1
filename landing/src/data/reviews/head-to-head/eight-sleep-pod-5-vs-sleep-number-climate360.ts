@@ -42,11 +42,11 @@ const pod5VsClimate360: HeadToHead = {
 
 Two premium smart beds, two philosophies. The [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is the biohacker climate-and-tracking layer — aggressive dual-zone cooling, deep HRV, adaptive Autopilot — added to your bed, with a subscription. The [Sleep Number Climate360](/reviews/sleep-number-climate360) is a mainstream all-in-one smart bed with adjustable firmness and climate built into the mattress, and mature SleepIQ tracking.
 
-## When the Eight Sleep Pod 5 is the right pick
+## When is the Eight Sleep Pod 5 the right pick?
 
 Cooling aggressiveness, HRV depth and adaptive software are the priority, and you want your bed to actively manage recovery. The subscription is the cost of admission.
 
-## When the Sleep Number Climate360 is the right pick
+## When is the Sleep Number Climate360 the right pick?
 
 You want one integrated smart bed — adjustable firmness per side plus climate, nothing to layer on — with dependable tracking and no membership for the core experience.
 

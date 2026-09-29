@@ -86,7 +86,7 @@ Every app was scored against ONDA's published [review methodology](/reviews/meth
 
 Each app was assessed from public information, app-store data and independent 2026 reviews rather than a long hands-on trial, so treat the scores as an evidence-based starting point.
 
-## The short version
+## Best Meditation Apps: which should you buy?
 
 The apps are close, and the right answer depends on where you are — and on your budget. Insight Timer wins for range and for being genuinely free. The free, science-based apps punch hard: the Healthy Minds Program lands second overall. Headspace is the cleanest start for a beginner, Calm owns sleep, Smiling Mind fits families, Balance adapts to you, and Waking Up and Happier Meditation go deepest on teaching. Medito is the open-source, free-forever pick. Start with the row that matches your stage and your wallet, not the highest number.`,
   datePublished: '2026-05-15',

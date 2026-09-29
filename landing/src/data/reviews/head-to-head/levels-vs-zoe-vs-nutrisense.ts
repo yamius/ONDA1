@@ -55,15 +55,15 @@ const levelsVsZoeVsNutrisense: HeadToHead = {
 
 Three nutrition-focused CGM programmes that look adjacent but solve different jobs. Levels for continuous app-driven insight. Zoe for a multi-biomarker scientific reset. Nutrisense for ongoing CGM with a human dietitian on top.
 
-## When Levels is the right pick
+## When is Levels the right pick?
 
 If you treat CGM as a self-experimentation instrument — running meal protocols, tracking time-in-range, iterating week by week — Levels is the right shape. The deepest app insights on the most accurate sensor; the $199/month is the cost.
 
-## When Zoe is the right pick
+## When is Zoe the right pick?
 
 If you want personalised nutrition grounded in real published science and a one-time multi-biomarker reset (CGM + microbiome + blood) followed by ongoing food rankings is what you want, Zoe is the right shape. The PREDICT studies are the scientific anchor.
 
-## When Nutrisense is the right pick
+## When is Nutrisense the right pick?
 
 If accountability through a registered dietitian working through your data weekly is the value, Nutrisense is the right shape. Same Dexcom G7 hardware as Levels; the difference is the human coaching layer.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

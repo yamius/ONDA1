@@ -44,11 +44,11 @@ const ringProVsRingAir: HeadToHead = {
 
 The Ring Pro roughly triples the battery, adds on-ring processing, and fixes the availability and reliability problems that dog the Ring Air.
 
-## When the Ring Pro is the right pick
+## When is the Ring Pro the right pick?
 
 Almost always — it is the current, US-available, longer-lasting Ultrahuman ring.
 
-## When the Ring Air is the right pick
+## When is the Ring Air the right pick?
 
 Only where it’s still legally sold, heavily discounted, and you accept the battery-reliability risk. Not an option for US buyers.
 

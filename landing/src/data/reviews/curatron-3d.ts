@@ -44,11 +44,11 @@ const curatron3d: ToolReview = {
 
 Curatron 3D delivers medical-grade PEMF with both mat and coil applicators, transparent published protocols and FDA registration — at mid-tier pricing between Bemer mats and Pulse Centers clinic coil systems. Strong choice for users who want clinical credibility without prosumer cost.
 
-## Where it falls short
+## What are the downsides of Curatron 3D?
 
 Brand recognition and UX. Curatronic has multi-decade medical-PEMF pedigree but lower consumer brand recognition than Bemer in the US market. The user interface is clinician-friendly rather than consumer-polished. No multi-modality stacking — PEMF only.
 
-## Who it is for
+## Who should buy Curatron 3D?
 
 Choose Curatron 3D for medical-grade dual-applicator PEMF at mid-tier pricing. For consumer-polished Bemer waveform, Bemer Classic Evo. For higher-intensity clinical coil, Pulse Centers Pulse XL Pro. For multi-modality consumer mat, Healthy Wave Multi-Wave.
 

@@ -45,11 +45,11 @@ const focuscalm: ToolReview = {
 
 FocusCalm bets on content. The single forehead EEG electrode is enough to produce a credible focus/calm metric, and the app wraps it in a structured programme of guided sessions, mini-games and progression tracking that pull a first-time user through the early weeks more reliably than a measurement-first device like Emotiv. At $199 the hardware is the second-cheapest legitimate EEG headset in this list, beaten only by the educational-tier NeuroSky.
 
-## Where it falls short
+## What are the downsides of FocusCalm?
 
 A single electrode is informationally thin. Multi-channel systems like Muse, Crown and Emotiv reveal more about what the brain is doing during a session; FocusCalm reduces it to one score. There is no raw data access, no SDK and no developer ecosystem — the platform is closed by design. And premium content sits behind the FocusCalm Plus subscription, so the $199 ticket understates the full ownership cost.
 
-## Who it is for
+## Who should buy FocusCalm?
 
 Choose FocusCalm if you want the cheapest legitimate EEG-feedback experience with real content depth and you do not care about raw data. If meditation depth is the deciding criterion, Muse 2 or Muse S Athena are the better fit at higher cost. If raw EEG is the point, look at Neurosity Crown or Emotiv Insight 2.
 

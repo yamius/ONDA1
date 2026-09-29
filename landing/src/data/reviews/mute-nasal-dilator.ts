@@ -44,11 +44,11 @@ const muteNasal: ToolReview = {
 
 Mute Nasal Dilator is the internal nasal stent reference — strongest mechanical mechanism in the dilator category, published clinical airflow studies, FDA registered. Best evidence-backed nasal airway opener for users who tolerate internal devices.
 
-## Where it falls short
+## What are the downsides of Mute Nasal Dilator?
 
 Adaptation curve and tolerability. Internal insertion is not universally comfortable; first nights feel strange and a subset of users never adapt. Three sizes required for fit; sizing kit purchase recommended.
 
-## Who it is for
+## Who should buy Mute Nasal Dilator?
 
 Choose Mute Nasal Dilator if you tolerate internal devices and want clinical-evidence-backed mechanical dilation. For external magnetic alternative, Intake Breathing. For passive external strips, Breathe Right. For mouth tape, Hostage Tape or Somnifix.
 

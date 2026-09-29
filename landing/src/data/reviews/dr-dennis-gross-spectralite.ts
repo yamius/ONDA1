@@ -44,11 +44,11 @@ const drDennisGross: ToolReview = {
 
 Dr. Dennis Gross SpectraLite FaceWare Pro is the dermatology-brand reference — backed by Dr. Dennis Gross\'s decades of dermatology practice and the rare dual red + blue spectrum protocol (anti-aging + acne in alternating modes). FDA-cleared, brand-funded studies, strong skincare-vertical credibility.
 
-## Where it falls short
+## What are the downsides of Dr. Dennis Gross SpectraLite FaceWare Pro?
 
 Hard-shell comfort. The Pro is meaningfully better than the original FaceWare but still hard-plastic — flexible-silicone competitors (Omnilux, CurrentBody, Lumara) deliver better wearability. No neck flap. Heavy for long unattended sessions.
 
-## Who it is for
+## Who should buy Dr. Dennis Gross SpectraLite FaceWare Pro?
 
 Choose Dr. Dennis Gross SpectraLite if you want dermatology-brand pedigree with dual red + blue spectrum and accept the hard-shell trade. For FDA Class II silicone, Omnilux Contour Face. For consumer market reference with neck flap, CurrentBody Series 2. For premium spec maximalism, Lumara Viso.
 

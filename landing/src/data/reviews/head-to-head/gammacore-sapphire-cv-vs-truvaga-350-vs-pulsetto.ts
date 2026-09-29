@@ -55,15 +55,15 @@ const threeCervical: HeadToHead = {
 
 Three regulatory tiers on the same vagal-trunk target. gammaCore for clinical headache patients; Truvaga for consumers wanting the gammaCore platform without prescription; Pulsetto for the most accessible consumer cervical tVNS at the lowest price.
 
-## When gammaCore Sapphire CV is the right pick
+## When is gammaCore Sapphire CV the right pick?
 
 If you have a diagnosed migraine or cluster-headache condition and a prescriber willing to write for it, gammaCore is the right tool. The FDA clearance and 30+ randomised trials are the regulatory value. Wrong shape for general wellness.
 
-## When Truvaga 350 is the right pick
+## When is Truvaga 350 the right pick?
 
 If you want the gammaCore hardware platform — same 5 kHz cervical waveform, same manufacturing pedigree — without going through a clinician, Truvaga is the right shape. The wellness indication is consumer-direct; the clinical evidence is for the platform, not Truvaga’s labelling.
 
-## When Pulsetto is the right pick
+## When is Pulsetto the right pick?
 
 If you want a daily-use cervical tVNS collar with four guided programmes and no clinical commitment, Pulsetto is the right shape. The lowest price, the broadest protocol library, and the no-cap session lifetime are the differentiators. Most consumer users land here.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

@@ -48,11 +48,11 @@ const whoopVsPolarH10: HeadToHead = {
 
 Polar H10 is the accuracy reference; Whoop is the continuous-wear coach. They are not really substitutes — most serious HRV users own both for different jobs.
 
-## When Whoop is the right pick
+## When is Whoop the right pick?
 
 If continuous overnight HRV plus daily Recovery coaching is what you actually use, Whoop is the right shape. The strap-free band is the form factor that makes 24/7 wear realistic; the coaching is the value proposition.
 
-## When Polar H10 is the right pick
+## When is Polar H10 the right pick?
 
 If you want ground-truth HRV — for a structured morning protocol, for validating another device, for app-agnostic measurement — Polar H10 is the right shape. At ~$90 with no subscription and a ~400-hour battery on a replaceable coin cell, it is the cheapest device in the HRV category and the most accurate at once.
 

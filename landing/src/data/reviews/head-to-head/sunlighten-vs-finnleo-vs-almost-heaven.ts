@@ -50,15 +50,15 @@ const irVsTraditional: HeadToHead = {
 
 Three premium saunas crossing the IR / traditional / outdoor barrel divide. Pick on heat source philosophy first, install context second.
 
-## When Sunlighten mPulse is the right pick
+## When is Sunlighten mPulse the right pick?
 
 If you want IR cabin sauna with programmable per-wavelength control and the deepest IR-sauna research footprint — Sunlighten is the right shape. The lower air temperatures (50–65°C) are easier to tolerate for some users.
 
-## When Finnleo Hallmark is the right pick
+## When is Finnleo Hallmark the right pick?
 
 If you want premium traditional Finnish indoor sauna with Helo-engineered heater — Finnleo is the right shape. The format matches the deepest published research evidence base in the sauna category.
 
-## When Almost Heaven Salem is the right pick
+## When is Almost Heaven Salem the right pick?
 
 If you want traditional outdoor cedar barrel sauna and have the outdoor space — Almost Heaven is the right shape. The wood-burning heater option is unique to this category; American red cedar build at marginally lower price than Finnleo.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',

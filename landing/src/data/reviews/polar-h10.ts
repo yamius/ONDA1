@@ -45,13 +45,13 @@ const polarH10: ToolReview = {
 
 The Polar H10 is not really a wearable — it is a measurement instrument, and within this comparison it is the reference the others are judged against. Its electrical ECG sensor reads the heart's signal directly rather than inferring it from blood flow, and peer-reviewed validation finds near-perfect agreement with clinical ECG for resting [HRV](/glossary/heart-rate-variability). It also broadcasts raw beat-to-beat (RR) intervals over both Bluetooth and ANT+, so it pairs with effectively any HRV app. At around 90 USD with no subscription, nothing else here is this accurate or this open.
 
-## Where it falls short
+## What are the downsides of Polar H10?
 
 The trade-off is deliberate. A chest strap is not something you wear around the clock — there is no all-day passive tracking, and it does no sleep staging at all, which costs it heavily on the two criteria built around 24/7 lifestyle use. For a morning orthostatic measurement or a training session it is ideal; as a continuous recovery monitor it is the wrong tool.
 
 **2026 note.** Nothing has displaced it. Through 2026 the H10 remains the reference every ring, band and watch is validated against — when a study reports a wearable at "~80% agreement," the H10 (or a clinical ECG) is the 100% it is measured against. If you buy any optical wearable and want to know how much to trust its HRV number, the H10 is still the cheapest way to check it against ground truth.
 
-## Who it is for
+## Who should buy Polar H10?
 
 Choose the Polar H10 if you want ground-truth HRV — a clean, app-agnostic signal for a structured morning protocol, or for validating another device — and you are willing to put a strap on to get it. If you want HRV collected passively while you sleep, pair it with one of the rings or bands here, or pick one of them instead.
 

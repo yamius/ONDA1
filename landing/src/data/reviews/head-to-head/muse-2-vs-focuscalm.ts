@@ -48,11 +48,11 @@ const muse2VsFocuscalm: HeadToHead = {
 
 Muse 2 wins on signal density and ecosystem maturity. FocusCalm wins on focus-and-calm training content at a slightly lower price and a softer headband. Both are credible at the entry tier.
 
-## When Muse 2 is the right pick
+## When is Muse 2 the right pick?
 
 If you want the most mature consumer EEG meditation experience for under $250 — four-channel signal, decade-old ecosystem, broader content, no mandatory subscription — Muse 2 is the right shape. Most users land here.
 
-## When FocusCalm is the right pick
+## When is FocusCalm the right pick?
 
 If focus and calm training is the specific use case, the softer headband matters for daily-wear comfort, and the $50 price difference shifts your decision — FocusCalm is fine. Just go in aware that single-channel EEG limits the analytical depth compared with Muse’s four channels.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',

@@ -47,11 +47,11 @@ const steloVsLingo: HeadToHead = {
 
 Stelo wins on accuracy at a small price premium; Lingo wins on cost flexibility for occasional wear. Both are OTC — no prescription, no coaching subscription — which sets them apart from Levels, Nutrisense, Signos and the rest of the premium-tier CGM market.
 
-## When Stelo is the right pick
+## When is Stelo the right pick?
 
 If you want the most accurate consumer CGM hardware available — the same Dexcom G7 sensor underneath Levels and Nutrisense — at roughly a third of those programmes’ cost, Stelo is the right shape. The 30-minute warm-up versus Lingo’s 60-minute matters more than it sounds when you swap sensors every two weeks.
 
-## When Lingo is the right pick
+## When is Lingo the right pick?
 
 If you are not sure CGM will change anything for you and want the cheapest legitimate way to find out, or you plan to wear a CGM occasionally rather than continuously, Lingo is the right shape. $49 single sensors with no subscription beats Stelo’s monthly model on flexibility.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',

@@ -45,11 +45,11 @@ const fitbitAir: ToolReview = {
 
 The Fitbit Air’s pitch is access. At **$99.99** it is the cheapest device here that tracks [HRV](/glossary/heart-rate-variability) continuously, 24/7 — a screenless, pebble-sized pod (with a swappable band) that also reads SpO2, breathing rate, skin temperature and sleep, and runs about a week per charge. The form factor is a WHOOP-style “no screen, just data” band at a fraction of WHOOP’s cost. Most importantly for a Fitbit, the **core metrics — HR, sleep, HRV, SpO2, AFib — work without Premium**; the $9.99/month tier only adds Google Health Coach and guided workouts. It is the least-friction, lowest-cost on-ramp to a continuous HRV trend.
 
-## Where it falls short
+## What are the downsides of Fitbit Air?
 
 It is brand new (launched May 2026), so there is **no independent HRV-validation data yet** — the accuracy score here reflects that uncertainty, not a measured result. The sensor is optical PPG only, with no ECG, and wrist PPG is the noisiest place to compute beat-to-beat intervals. Data also stays inside the Fitbit/Google ecosystem, which has historically been closed to clean export and layers a Premium upsell over everything. Screenless means the phone is mandatory to see anything.
 
-## Who it is for
+## Who should buy Fitbit Air?
 
 Choose the Fitbit Air if you want the cheapest honest way to start watching a 24/7 HRV and sleep trend, without paying a subscription to see the basics. If you need validated accuracy or open data, a chest strap or a proven ring is the safer buy — revisit the Air once independent validation exists.
 

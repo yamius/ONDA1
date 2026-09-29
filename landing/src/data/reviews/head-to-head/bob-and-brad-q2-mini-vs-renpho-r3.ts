@@ -47,11 +47,11 @@ const bobVsRenpho: HeadToHead = {
 
 Both $99 budget. Bob and Brad Q2 Mini is the PT-brand mini portable. Renpho R3 is the Amazon-bestseller full-size with higher specs.
 
-## When Bob and Brad Q2 Mini is the right pick
+## When is Bob and Brad Q2 Mini the right pick?
 
 If you want PT-brand credibility from "Famous Physical Therapists" YouTube and mini portable form factor — Bob and Brad is the right shape at $99.
 
-## When Renpho R3 is the right pick
+## When is Renpho R3 the right pick?
 
 If you want higher stall force + deeper amplitude in full-size budget form — Renpho is the right shape. Same $99; raw-spec value wins over brand framing.`,
   relatedComparisonSlug: 'best-massage-guns-2026',

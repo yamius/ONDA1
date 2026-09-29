@@ -42,11 +42,11 @@ const ouraRing5VsAppleWatch11: HeadToHead = {
 
 The [Oura Ring 5](/reviews/oura-ring-5) is a dedicated sleep-and-HRV instrument; the [Apple Watch Series 11](/reviews/apple-watch-series-11) is an outstanding smartwatch that does health casually. If recovery data is the goal, the ring wins; if you want a wrist computer, the Watch does.
 
-## When the Oura Ring 5 is the right pick
+## When is the Oura Ring 5 the right pick?
 
 Sleep, overnight HRV and recovery are what you care about, and you want days of battery in something you forget you are wearing.
 
-## When the Apple Watch Series 11 is the right pick
+## When is the Apple Watch Series 11 the right pick?
 
 You want notifications, apps, GPS, ECG, workouts and calls on your wrist — with no subscription — and casual health tracking is enough.
 

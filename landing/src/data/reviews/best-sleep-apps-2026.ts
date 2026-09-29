@@ -90,7 +90,7 @@ Every app was scored against ONDA's published [review methodology](/reviews/meth
 
 Each app was assessed from public information, app-store data, published trials and independent 2026 reviews rather than a long hands-on trial, so treat the scores as an evidence-based starting point.
 
-## The short version
+## Best Sleep Apps: which should you buy?
 
 These apps are not really competitors — they do three different jobs. Trackers (Sleep Cycle, SleepScore, Pillow, AutoSleep, Sleep as Android) measure your night. Sound libraries (BetterSleep, Pzizz, Endel) play you to sleep. Sleepio treats insomnia as a clinical condition, and RISE reframes the whole thing around daytime energy. Sleep Cycle tops the table as the most rounded pick, but the right answer is whichever row matches the job you need done — and your platform.`,
   datePublished: '2026-05-16',

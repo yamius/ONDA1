@@ -50,15 +50,15 @@ const threePremiumPlunge: HeadToHead = {
 
 Three premium chiller-built cold-plunge tubs at comparable price points and feature sets. Pick on install context: US temperate (Plunge), cold-climate outdoor (Coldture), or indoor-quiet (Renu Therapy).
 
-## When The Plunge is the right pick
+## When is The Plunge the right pick?
 
 If you are in the US in a temperate climate and want the category-defining brand, content ecosystem and longest established consumer track record — The Plunge is the right shape. The $1,500+ price premium over Coldture buys the brand pedigree.
 
-## When Coldture is the right pick
+## When is Coldture the right pick?
 
 If you are in Canada, EU or a cold-climate US region installing outdoors — Coldture’s winter-engineered chiller and insulation outperform Plunge. Also the cheapest of the three.
 
-## When Renu Therapy Cold Stoic is the right pick
+## When is Renu Therapy Cold Stoic the right pick?
 
 If you are installing indoors and chiller noise matters (basement, garage near living spaces, wellness room) — Renu Therapy’s quiet chiller is the deciding feature. Temperature floor is marginally less aggressive than Plunge’s but rarely the deciding factor.`,
   relatedComparisonSlug: 'best-cold-plunge-2026',

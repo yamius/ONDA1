@@ -42,11 +42,11 @@ const circularVsOura5: HeadToHead = {
 
 Innovation vs execution. The [Circular Ring 2](/reviews/circular-ring-2) has unique on-ring ECG/AFib and no subscription, but unfinished software; the [Oura Ring 5](/reviews/oura-ring-5) is less novel but the most accurate, most polished ring — for a membership.
 
-## When the Circular Ring 2 is the right pick
+## When is the Circular Ring 2 the right pick?
 
 You’re an early adopter excited by on-ring ECG/AFib and AI coaching, and accept that the software isn’t finished.
 
-## When the Oura Ring 5 is the right pick
+## When is the Oura Ring 5 the right pick?
 
 You want a ring that works reliably today, with the best accuracy and app, and accept the subscription.
 

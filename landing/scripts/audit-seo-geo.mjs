@@ -87,6 +87,9 @@ for (const { path, html } of pages) {
   })
 }
 
+// --lang en → audit one language only (report .cache/seo-geo-audit-<lang>.md)
+const onlyLang = process.argv.includes('--lang') ? process.argv[process.argv.indexOf('--lang') + 1] : null
+if (onlyLang) rows.splice(0, rows.length, ...rows.filter((r) => r.lang === onlyLang))
 const out = []
 const say = (s = '') => out.push(s)
 const pct = (n, d) => (d ? `${Math.round((100 * n) / d)}%` : '—')
@@ -137,5 +140,5 @@ say()
 say('## Heavy HTML (> 400 KB)')
 for (const r of rows.filter((r) => r.kb > 400).sort((a, b) => b.kb - a.kb).slice(0, 10)) say(`- \`${r.path}\` ${r.kb} KB`)
 mkdirSync('.cache', { recursive: true })
-writeFileSync(join('.cache', 'seo-geo-audit.md'), out.join('\n'))
+writeFileSync(join('.cache', onlyLang ? `seo-geo-audit-${onlyLang}.md` : 'seo-geo-audit.md'), out.join('\n'))
 console.log(out.join('\n').slice(0, 9000))

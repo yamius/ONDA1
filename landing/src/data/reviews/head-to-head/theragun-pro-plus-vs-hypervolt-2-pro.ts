@@ -47,11 +47,11 @@ const theragunVsHypervolt: HeadToHead = {
 
 Both are 60 lbs stall force premium massage guns. Theragun PRO Plus has 16 mm amplitude + 2-year warranty. Hypervolt 2 Pro has 14 mm amplitude + 1-year warranty at $200 less.
 
-## When Theragun PRO Plus is the right pick
+## When is Theragun PRO Plus the right pick?
 
 If you want deepest amplitude (16 mm) and longest warranty in category — Theragun is the right shape. Therabody ecosystem and pedigree compound the value.
 
-## When Hypervolt 2 Pro is the right pick
+## When is Hypervolt 2 Pro the right pick?
 
 If you want comparable stall force at $200 less — Hypervolt is the right shape. Lighter, quieter, NBA/NFL athlete pedigree.`,
   relatedComparisonSlug: 'best-massage-guns-2026',

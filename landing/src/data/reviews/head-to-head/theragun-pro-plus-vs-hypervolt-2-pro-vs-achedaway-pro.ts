@@ -54,15 +54,15 @@ const theragunVsHypervoltVsAchedaway: HeadToHead = {
 
 Three premium massage guns, three different theses. Theragun PRO Plus = ecosystem + amplitude + warranty. Hypervolt 2 Pro = same stall at lower price. Achedaway Pro = highest stall at sub-Theragun pricing without app.
 
-## When Theragun PRO Plus is the right pick
+## When is Theragun PRO Plus the right pick?
 
 If you want the category reference — spec ceiling, best app, longest warranty, Therabody ecosystem — Theragun PRO Plus is the right shape. Accept premium pricing.
 
-## When Hypervolt 2 Pro is the right pick
+## When is Hypervolt 2 Pro the right pick?
 
 If you want matching premium stall force at $200 less with Hyperice ecosystem — Hypervolt is the right shape. The rational $399 premium choice.
 
-## When Achedaway Pro is the right pick
+## When is Achedaway Pro the right pick?
 
 If you want highest stall force (80 lbs) at sub-Theragun pricing and you don\'t need app integration — Achedaway is the right shape. Best raw-spec premium value at $349.`,
   relatedComparisonSlug: 'best-massage-guns-2026',

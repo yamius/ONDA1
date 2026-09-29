@@ -48,11 +48,11 @@ const calmVsInsightTimer: HeadToHead = {
 
 Calm is curated polish at a subscription; Insight Timer is the largest free meditation library on the market. Pick on whether you want a content-publisher experience or a content-platform experience.
 
-## When Calm is the right pick
+## When is Calm the right pick?
 
 If you respond well to celebrity narration, want sleep stories as the headline feature, and the polished consistent curation is the value you are paying for, Calm is the right shape. The ~$70/year is the cost of admission to the cleanest meditation-app experience in the consumer market.
 
-## When Insight Timer is the right pick
+## When is Insight Timer the right pick?
 
 If you want the largest free library on the market, you like exploring across thousands of teachers, and a search-driven (not algorithmically curated) experience fits how you actually meditate — Insight Timer is the right shape. The free tier is genuinely free; the optional Member Plus is cheaper than Calm.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',

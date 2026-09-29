@@ -44,11 +44,11 @@ const ultrahumanVsSamsungRing: HeadToHead = {
 
 Two subscription-free rings at the same overall standing. [Ultrahuman Ring Air](/reviews/ultrahuman-ring-air) is the lightest, most open (cross-platform) option, undercut by battery-reliability reports. [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is the comfortable, well-supported choice — if you live in the Galaxy ecosystem.
 
-## When the Ultrahuman Ring Air is the right pick
+## When is the Ultrahuman Ring Air the right pick?
 
 You are on iPhone or a non-Samsung Android, want the lightest ring, and value a metabolic-leaning app. Accept the battery risk and it is the more flexible buy.
 
-## When the Samsung Galaxy Ring is the right pick
+## When is the Samsung Galaxy Ring the right pick?
 
 You already carry a Samsung Galaxy phone and want a reliable, subscription-free ring that plugs straight into Samsung Health and your Galaxy Watch data.
 

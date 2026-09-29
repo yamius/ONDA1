@@ -42,11 +42,11 @@ const oura5VsGalaxy: HeadToHead = {
 
 Same job, opposite trade-offs. The [Oura Ring 5](/reviews/oura-ring-5) is the accuracy-and-app leader and works on any phone, but charges a membership. The [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring) is subscription-free with every feature unlocked at purchase — but it is Samsung/Android-locked and less accurate.
 
-## When the Oura Ring 5 is the right pick
+## When is the Oura Ring 5 the right pick?
 
 Accuracy and app depth are the priority, you may be on iPhone or Android, and the ~$6/month membership is acceptable.
 
-## When the Samsung Galaxy Ring is the right pick
+## When is the Samsung Galaxy Ring the right pick?
 
 You own a Samsung phone, live in Samsung Health, and want Oura-style ring tracking with no ongoing fee.
 

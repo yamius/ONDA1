@@ -45,11 +45,11 @@ const healthyMindsProgram: ToolReview = {
 
 The Healthy Minds Program is the most evidence-grounded app in this comparison, and it is completely free. It was founded by the neuroscientist Richard Davidson, it carries no ads and no subscription, and its outcomes have been measured across more than fifty peer-reviewed studies. The practice is built as a structured framework — Foundations, then Awareness, Connection, Insight and Purpose — so it teaches a coherent model of a trained mind, not just a catalogue of sessions.
 
-## Where it falls short
+## What are the downsides of Healthy Minds Program?
 
 It is focused rather than vast: there is no sprawling library, no celebrity sleep stories, and the journey is fixed rather than adaptive. Production is clean but plainer than Calm's, and if you want endless variety or sleep-specific content, this is not that app.
 
-## Who it is for
+## Who should buy Healthy Minds Program?
 
 Choose the Healthy Minds Program if you want a free, ad-free practice grounded in real science and a clear framework — and you value substance over polish or breadth. It pairs especially well with anyone who came to meditation through an interest in the underlying neuroscience.
 

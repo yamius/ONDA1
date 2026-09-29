@@ -42,11 +42,11 @@ const helioVsRingconn: HeadToHead = {
 
 Two budget, subscription-free rings. The [Amazfit Helio Ring](/reviews/amazfit-helio-ring) is the cheapest ($199) and lightest; the [RingConn Gen 2](/reviews/ringconn-gen-2) costs $50 more but fixes the Helio’s weak spots — a ~12-day battery and a wider size range.
 
-## When the Amazfit Helio Ring is the right pick
+## When is the Amazfit Helio Ring the right pick?
 
 Lowest price and lightest ring are the priority, and one of its three sizes fits you.
 
-## When the RingConn Gen 2 is the right pick
+## When is the RingConn Gen 2 the right pick?
 
 You want a much longer battery, better fit range and dependable tracking, and $50 more is fine.
 

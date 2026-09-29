@@ -47,11 +47,11 @@ const goVsQ2: HeadToHead = {
 
 Both travel minis. Hypervolt Go 2 is the premium Hyperice ecosystem at $129. Bob and Brad Q2 Mini is the PT-brand budget at $99 with longer battery + more attachments + slightly higher stall.
 
-## When Hypervolt Go 2 is the right pick
+## When is Hypervolt Go 2 the right pick?
 
 If you already use Hyperice main devices and want app ecosystem integration in travel form — Hypervolt Go 2 is the right shape. Premium brand polish at $129.
 
-## When Bob and Brad Q2 Mini is the right pick
+## When is Bob and Brad Q2 Mini the right pick?
 
 If you want PT-brand credibility + longer battery + more attachments + lower price — Bob and Brad is the right shape. Better raw value at $30 less.`,
   relatedComparisonSlug: 'best-massage-guns-2026',

@@ -55,15 +55,15 @@ const threeSleep: HeadToHead = {
 
 Three different sleep problems and three different products. Sleepio treats insomnia. Sleep Cycle measures sleep. Pzizz aids sleep onset. Pick on which problem you actually have.
 
-## When Sleepio is the right pick
+## When is Sleepio the right pick?
 
 If you have chronic insomnia — six weeks of trouble falling or staying asleep with daytime impact — Sleepio is the right shape. It is the most clinically-validated digital intervention in the consumer space and the only one with NICE recommendation. The six-week structured CBT-I commitment is the cost; durable insomnia improvement is the value.
 
-## When Sleep Cycle is the right pick
+## When is Sleep Cycle the right pick?
 
 If you want to track sleep — smart alarm, sleep-stage estimates, snoring detection, multi-month trends — Sleep Cycle is the right shape. A decade of iteration on the smart-alarm implementation makes it the category-defining tool for waking up less groggy.
 
-## When Pzizz is the right pick
+## When is Pzizz the right pick?
 
 If you want help getting to sleep tonight without a programme, Pzizz is the right shape. Generative dreamscape audio purpose-built for sleep onset — press-play and the experience does the rest. For clinical insomnia it is not the right tool; for nightly wind-down it is.`,
   relatedComparisonSlug: 'best-sleep-apps-2026',

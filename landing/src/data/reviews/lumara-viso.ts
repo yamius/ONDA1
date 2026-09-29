@@ -44,11 +44,11 @@ const lumaraViso: ToolReview = {
 
 Lumara Viso is the 2026 spec-maximalist reference — 470 LEDs, three-wavelength coverage (red + NIR + amber), flexible silicone with integrated neck flap. The LED count is by far the highest in the consumer category and the wavelength mix is broader than the standard red + NIR pair.
 
-## Where it falls short
+## What are the downsides of Lumara Viso?
 
 Clinical evidence and price. Lumara is a newer brand than Omnilux, CurrentBody or Dr. Dennis Gross — FDA registered but no peer-reviewed studies on the specific device yet. At $650 the premium relies on spec maximalism rather than clinical-evidence moat. For evidence-first buyers, Omnilux remains the rational reference.
 
-## Who it is for
+## Who should buy Lumara Viso?
 
 Choose Lumara Viso if you want maximum LED count and three-wavelength coverage in premium silicone. For FDA Class II evidence reference, Omnilux Contour Face. For consumer market leader with neck flap, CurrentBody Series 2. For dermatology-brand pedigree, Dr. Dennis Gross.
 

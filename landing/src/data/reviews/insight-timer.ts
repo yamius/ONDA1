@@ -45,11 +45,11 @@ const insightTimer: ToolReview = {
 
 Insight Timer is the largest meditation library in the world, and the one app in this comparison you can genuinely build a practice on without paying. It works less like a curated course and more like a YouTube for meditation: hundreds of thousands of sessions, thousands of teachers, hourly live events and an active community. For range — and for a free tier that is a real offer rather than a teaser — nothing here comes close.
 
-## Where it falls short
+## What are the downsides of Insight Timer?
 
 Breadth has a cost. Because the library is crowd-sourced, quality varies session to session, and there is far less structured hand-holding than a Headspace course gives you — you largely curate your own path. The app is feature-rich to the point of feeling cluttered, and the content is unevenly grounded.
 
-## Who it is for
+## Who should buy Insight Timer?
 
 Choose Insight Timer if you want the widest possible choice, strong value, and the freedom to practise for free — and you are comfortable doing some of the curation yourself. If you would rather be guided along a clear, vetted path, Headspace is the more structured choice.
 

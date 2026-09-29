@@ -44,11 +44,11 @@ const breatheRight: ToolReview = {
 
 Breathe Right Original is the drugstore-standard nasal strip — FDA-cleared, decades-long brand track record, ubiquitous distribution, best per-night value. The category reference everyone tries first.
 
-## Where it falls short
+## What are the downsides of Breathe Right Original?
 
 Mechanism. External spring-tension leverage is weaker than magnetic external (Intake Breathing) or internal mechanical (Mute) approaches — Breathe Right opens the nostrils less aggressively. Single-use disposable design adds long-term cost vs reusable alternatives.
 
-## Who it is for
+## Who should buy Breathe Right Original?
 
 Choose Breathe Right Original as the first nasal-airway-opener to try — cheapest credible entry, lowest commitment. If it works, great; if you want more aggressive dilation, graduate to Intake Breathing or Mute.
 

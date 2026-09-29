@@ -42,11 +42,11 @@ const hoogaVsJoovv: HeadToHead = {
 
 The [Hooga HG500](/reviews/hooga-hg500) is the budget reference — honest specs and a solid build for about a third of the Joovv price. The [Joovv Solo 3.0](/reviews/joovv-solo-3) is the premium category leader — modular, FDA-registered and beautifully built.
 
-## When the Hooga HG500 is the right pick
+## When is the Hooga HG500 the right pick?
 
 You want real red-light results (660/850 nm) and a solid panel for the lowest sensible price, and you don’t need the premium brand or modular stacking.
 
-## When the Joovv Solo 3.0 is the right pick
+## When is the Joovv Solo 3.0 the right pick?
 
 Build quality, FDA registration, brand and a modular ecosystem you can expand justify paying roughly three times as much.
 

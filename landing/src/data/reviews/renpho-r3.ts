@@ -44,11 +44,11 @@ const renphoR3: ToolReview = {
 
 Renpho R3 is the Amazon-bestseller budget reference — best raw-spec budget value at $99. Strong Amazon consumer-feedback base, brushless motor, 5 attachments.
 
-## Where it falls short
+## What are the downsides of Renpho R3?
 
 Brand credibility and app. No PT-framing moat (vs Bob and Brad); no app integration. For users buying on brand credibility, Bob and Brad better fit.
 
-## Who it is for
+## Who should buy Renpho R3?
 
 Choose Renpho R3 for pure spec-per-dollar Amazon budget. For Bob and Brad PT credibility, Q2 Mini. For higher-spec mid-budget, OPOVE M3 Pro 2.
 

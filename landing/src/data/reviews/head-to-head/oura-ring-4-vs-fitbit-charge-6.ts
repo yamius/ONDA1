@@ -42,11 +42,11 @@ const ouraVsFitbitCharge6: HeadToHead = {
 
 [Oura Ring 4](/reviews/oura-ring-4) is the precision sleep-and-HRV instrument with a mandatory subscription. [Fitbit Charge 6](/reviews/fitbit-charge-6) is the $159 on-ramp — reliable, screen-and-GPS, and enough to start, with real depth behind Premium.
 
-## When the Oura Ring 4 is the right pick
+## When is the Oura Ring 4 the right pick?
 
 Accuracy is the point. Validated sleep staging, reference-grade overnight HRV and a genuine Readiness score make Oura the better recovery tool — worth it if the membership does not put you off.
 
-## When the Fitbit Charge 6 is the right pick
+## When is the Fitbit Charge 6 the right pick?
 
 Budget and breadth. For $159 you get usable HRV, a screen, GPS and Google apps — a great first wearable if you do not need ring-grade precision.
 

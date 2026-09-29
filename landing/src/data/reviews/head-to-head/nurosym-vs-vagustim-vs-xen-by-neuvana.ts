@@ -55,15 +55,15 @@ const nurosymVsVagustimVsXen: HeadToHead = {
 
 Three consumer auricular tVNS devices targeting the same nerve via different form factors. Nurosym for evidence, Vagustim for EU protocol variety, Xen for earbud familiarity. Pick on which axis matters.
 
-## When Nurosym is the right pick
+## When is Nurosym the right pick?
 
 If clinical-grade evidence and disclosed parameters are the deciding criteria, Nurosym is the right shape. The Parasym hardware behind it is the most-cited consumer auricular tVNS platform in the literature.
 
-## When Vagustim is the right pick
+## When is Vagustim the right pick?
 
 If you are in an EU market and want a wider library of disclosed-parameter presets covering sleep, stress, depression, anxiety and IBS — at a lower price than Nurosym — Vagustim is the right shape.
 
-## When Xen by Neuvana is the right pick
+## When is Xen by Neuvana the right pick?
 
 If the earbud form factor and music-paired sessions make daily use realistic for you — and you are comfortable with a thinner device-specific evidence base — Xen is the right shape. Most consumer-friendly auricular tVNS in this group.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',

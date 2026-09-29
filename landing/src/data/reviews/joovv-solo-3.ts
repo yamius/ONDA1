@@ -44,11 +44,11 @@ const joovvSolo3: ToolReview = {
 
 The Joovv Solo 3.0 is the panel against which the rest of this category is measured. Independent irradiance testing comes close to the manufacturer-stated figure, EMF measurements at the standard treatment distance sit below 0.5 mG, flicker rate is published and clean. The Solo is also the only modular panel in this list: a single Solo is half-body, two link vertically for most of the upper body, three stack into a full-body wall. The FDA Class II registration covers consumer-skin indications honestly.
 
-## Where it falls short
+## What are the downsides of Joovv Solo 3.0?
 
 Price. $1,295 for a Solo 3.0 is the most expensive single panel in this list; a true full-body Joovv stack runs $3,000–$5,000. The wavelength options are standard 660 + 850 nm only — no 810 nm, 830 nm or 940 nm for users who want a richer spectrum. Layout is single-direction front-emitter, not bidirectional.
 
-## Who it is for
+## Who should buy Joovv Solo 3.0?
 
 Choose Joovv Solo 3.0 if you want the category-reference build and you accept that verification, EMF discipline and modular scalability have a price. If price is the deciding criterion, Mito Red MitoPRO 1500 or Hooga HG500 cover most of the spec at a fraction of the cost; if you want EMF-shielded premium with independent testing, GembaRed Vesta is the cleaner build at slightly lower price.
 

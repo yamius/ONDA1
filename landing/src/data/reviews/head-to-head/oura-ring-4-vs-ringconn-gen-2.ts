@@ -48,11 +48,11 @@ const ouraVsRingconn: HeadToHead = {
 
 Oura wins on analytics depth and app maturity; RingConn wins on battery, subscription model and total cost. Most users land on Oura for the polish; the minority who land on RingConn are the right minority for the subscription-free model.
 
-## When Oura Ring 4 is the right pick
+## When is Oura Ring 4 the right pick?
 
 If app maturity, the deepest consumer sleep model and Readiness scoring are the deciding criteria, Oura is the right shape. The $5.99/month membership is the cost of admission to a decade of iteration.
 
-## When RingConn Gen 2 is the right pick
+## When is RingConn Gen 2 the right pick?
 
 If subscription-free is a hard requirement, you want the longest battery in the smart-ring category and the lowest 3-year total cost of ownership matters, RingConn is the right shape. The trade is a slightly less mature app and shallower sleep analytics.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',

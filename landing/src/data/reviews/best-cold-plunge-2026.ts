@@ -94,7 +94,7 @@ Every tub was scored against ONDA's published [review methodology](/reviews/meth
 
 All ten were assessed from manufacturer documentation, independent 2026 reviews and the cold-exposure research literature rather than hands-on testing.
 
-## The short version
+## Best Cold Plunge & Ice Bath: which should you buy?
 
 Three buying questions resolve the category cleanly:
 
