@@ -487,6 +487,7 @@
     },
     "normal-hrv-by-age": {
       "title": "VFC normale selon l’âge : qu’est-ce qu’une bonne VFC ?",
+      "seoTitle": "VFC normale selon l’âge : quelle bonne VFC ?",
       "description": "Il n’existe pas une seule bonne VFC : elle dépend de l’âge et de votre ligne de base. Plages par âge et pourquoi votre tendance compte plus.",
       "neuralSuggestion": {
         "text": "Arrêtez de vous demander « 45 ms, c’est bien ? ». Ce qui compte, c’est si VOTRE VFC monte ou baisse.",
@@ -520,6 +521,7 @@
     },
     "resting-heart-rate-by-age": {
       "title": "Fréquence cardiaque au repos selon l’âge : quelle est la normale ?",
+      "seoTitle": "Fréquence cardiaque au repos selon l’âge",
       "description": "Pouls au repos normal chez l’adulte : 60–100 bpm, selon l’âge et la forme. Valeurs typiques par âge et ce qui le fait monter ou baisser.",
       "neuralSuggestion": {
         "text": "Une mesure dit peu. La tendance de votre pouls au repos par rapport à votre normale en dit beaucoup.",
@@ -604,6 +606,7 @@
     },
     "nose-vs-mouth-breathing": {
       "title": "Respirer par le nez ou par la bouche : l’effet sur le système nerveux",
+      "seoTitle": "Respirer par le nez ou la bouche : effets",
       "description": "Respirer par le nez agit autrement que par la bouche sur l’équilibre autonome et la concentration. Ce qu’a montré la recherche japonaise et quand choisir.",
       "neuralSuggestion": {
         "text": "Une minute par le nez, puis une par la bouche : la différence se voit souvent nettement dans votre rythme cardiaque.",
@@ -670,6 +673,7 @@
     },
     "cardiac-coherence-365-method": {
       "title": "Cohérence cardiaque et méthode 365 : la respiration à la française",
+      "seoTitle": "Cohérence cardiaque et méthode 365",
       "description": "Cohérence cardiaque : 6 respirations par minute, 3 fois par jour, 5 minutes (méthode 365). Une tradition clinique française pour équilibrer les nerfs.",
       "neuralSuggestion": {
         "text": "Une séance apaise mais son effet s’estompe — c’est précisément pourquoi la méthode 365 en répartit trois dans la journée.",
@@ -721,6 +725,7 @@
     },
     "how-much-meditation-do-you-need": {
       "title": "Combien de méditation faut-il pour voir des résultats ?",
+      "seoTitle": "Combien de méditation faut-il vraiment ?",
       "description": "Combien de temps et à quelle fréquence méditer ? 10 à 12 minutes par jour suffisent pour des effets mesurables, et voir ses progrès aide à tenir.",
       "neuralSuggestion": {
         "text": "La meilleure dose n’est pas le maximum théorique, mais la plus grande que vous tiendrez vraiment. 10 minutes fiables valent mieux que 30 rêvées.",
@@ -772,6 +777,7 @@
     },
     "measuring-meditation-progress": {
       "title": "Comment mesurer vos progrès en méditation (au lieu de deviner)",
+      "seoTitle": "Comment mesurer vos progrès en méditation",
       "description": "Les progrès en méditation semblent invisibles, mais ils se mesurent : VFC, pouls au repos, réponse du corps. Comment les suivre objectivement.",
       "neuralSuggestion": {
         "text": "Le tableau de score qui a toujours manqué à la méditation. Regardez la tendance hebdomadaire de votre ligne de base, jamais le chiffre d’un seul jour.",
@@ -823,6 +829,7 @@
     },
     "humming-breath-vagus": {
       "title": "Respiration bourdonnante (Bhramari) : stimuler le nerf vague simplement",
+      "seoTitle": "Bhramari : stimuler le nerf vague",
       "description": "La respiration bourdonnante (Bhramari) stimule le nerf vague par la vibration du larynx. Comment la pratiquer, pourquoi elle agit et quand.",
       "neuralSuggestion": {
         "text": "Le bourdonnement donne au nerf vague une impulsion directe et mécanique. Regardez votre pouls se poser pendant que vous bourdonnez.",
@@ -874,6 +881,7 @@
     },
     "doctors-and-your-data": {
       "title": "Les médecins et vos données : quel spécialiste pour votre cœur, VFC et sommeil",
+      "seoTitle": "Les médecins et vos données de santé",
       "description": "Votre montre enregistre des mois de pouls, VFC, respiration et sommeil. Lequel de 11 médecins peut s’en servir, pour quoi, et comment les présenter.",
       "neuralSuggestion": {
         "text": "Commencez par le guide général, puis choisissez le médecin adapté à votre question.",
@@ -903,6 +911,7 @@
     },
     "talk-to-your-doctor-about-wearable-data": {
       "title": "Parler à votre médecin des données de votre montre (sans être éconduit)",
+      "seoTitle": "Parler à son médecin des données de sa montre",
       "description": "Votre montre collecte des mois de fréquence cardiaque, VFC et sommeil. Ce que les médecins trouvent utile, un résumé d’une page et les bonnes questions.",
       "neuralSuggestion": {
         "text": "Les symptômes d’abord, les données ensuite — une page avec votre ligne de base, ce qui a changé et quand.",
@@ -936,6 +945,7 @@
     },
     "onda-report-for-your-gp": {
       "title": "Montrer vos données cardiaques à votre médecin généraliste",
+      "seoTitle": "Vos données cardiaques chez le généraliste",
       "description": "Votre médecin traitant est souvent le premier à voir vos données de montre. Comment il lit un rapport de pouls et de VFC, et comment en tirer parti.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -969,6 +979,7 @@
     },
     "onda-report-for-your-cardiologist": {
       "title": "Montrer vos données cardiaques à un cardiologue : ce qu’il peut en faire",
+      "seoTitle": "Vos données cardiaques chez le cardiologue",
       "description": "Un cardiologue lit vos tendances cardiaques autrement qu’un généraliste : ce qu’il tire d’un rapport, les examens possibles et les limites de la montre.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1002,6 +1013,7 @@
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Montrer vos données nocturnes à un spécialiste du sommeil",
+      "seoTitle": "Données de sommeil : le spécialiste du sommeil",
       "description": "Chaque nuit, votre montre note pouls, VFC, respiration, horaires. Ce qu’en tire un spécialiste du sommeil, les examens possibles, le piège des scores.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1035,6 +1047,7 @@
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Montrer vos données de récupération à un médecin du sport",
+      "seoTitle": "Données de récupération : médecin du sport",
       "description": "Fréquence cardiaque au repos et VFC montrent comment votre corps encaisse l’entraînement. Comment un médecin du sport s’en sert, du surmenage à la reprise.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1068,6 +1081,7 @@
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Apporter vos données corporelles en thérapie : comment un thérapeute ou un psychiatre peut s’en servir",
+      "seoTitle": "Apporter vos données corporelles en thérapie",
       "description": "Le stress laisse des traces dans votre pouls, VFC, respiration et sommeil. Comment un thérapeute ou un psychiatre peut exploiter cet historique.",
       "neuralSuggestion": {
         "text": "Un miroir, pas un verdict : apportez les moments qui ont compté, ne partagez que ce que vous choisissez.",
@@ -1101,6 +1115,7 @@
     },
     "onda-report-for-your-neurologist": {
       "title": "Pouls et système nerveux : vos données pour le neurologue (POTS, COVID long)",
+      "seoTitle": "Pouls et neurologue : POTS et COVID long",
       "description": "Cœur qui s’emballe debout, fatigue après l’effort, COVID long : comment un neurologue lit votre pouls et votre VFC, et pourquoi son test respire à 6/min.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1134,6 +1149,7 @@
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Pouls et hormones : vos données pour l’endocrinologue (thyroïde, diabète)",
+      "seoTitle": "Pouls et hormones : données pour l’endocrino",
       "description": "Une thyroïde déréglée peut accélérer ou ralentir le pouls au repos, le diabète peut baisser la VFC. Ce qu’un endocrinologue tire de vos données.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1167,6 +1183,7 @@
     },
     "onda-report-for-your-gynecologist": {
       "title": "Votre cycle dans votre pouls : données pour le gynécologue (ménopause)",
+      "seoTitle": "Votre cycle dans votre pouls : le gynécologue",
       "description": "Pouls au repos et VFC varient au fil du cycle menstruel, de la grossesse et de la ménopause. Ce qu’un gynécologue peut en tirer, et ses limites.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1200,6 +1217,7 @@
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Votre respiration en chiffres : données pour le pneumologue (asthme)",
+      "seoTitle": "Votre respiration en chiffres : pneumologue",
       "description": "Votre montre suit votre respiration nocturne. Comment un pneumologue lit ce signal, et pourquoi la rééducation respiratoire est recommandée.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1233,6 +1251,7 @@
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Travail posté, burn-out : vos données pour le médecin du travail",
+      "seoTitle": "Travail posté, burn-out : médecin du travail",
       "description": "Travail de nuit, longues journées, stress : leur empreinte sur pouls, VFC et sommeil. Ce qu’en fait le médecin du travail, et la confidentialité.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1266,6 +1285,7 @@
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "La récupération n’est pas linéaire : vos données pour la rééducation",
+      "seoTitle": "Récupération non linéaire : la rééducation",
       "description": "Après une maladie, une opération ou un accident cardiaque : comment médecin MPR et kiné utilisent pouls, VFC et respiration pour doser votre reprise.",
       "neuralSuggestion": {
         "text": "Apportez une page, pas votre téléphone : votre ligne de base, ce qui a changé et quand, vos notes et vos questions.",
@@ -1393,6 +1413,7 @@
     },
     "how-to-measure-hrv-consistently": {
       "title": "Comment mesurer la VFC pour que le chiffre ait vraiment un sens",
+      "seoTitle": "Comment mesurer la VFC de façon régulière",
       "description": "La VFC varie avec l’heure, la posture, la respiration, la caféine et les repas. Des règles simples pour des mesures comparables ; la tendance prime.",
       "neuralSuggestion": {
         "text": "Une valeur de VFC isolée ne veut presque rien dire. Une série régulière est l’une des choses les plus utiles que vous possédiez.",
@@ -1440,6 +1461,7 @@
     },
     "how-much-alcohol-lowers-hrv": {
       "title": "De combien l’alcool fait-il baisser votre VFC ? Les données par nombre de verres",
+      "seoTitle": "Alcool et VFC : la baisse par nombre de verres",
       "description": "L’alcool fait baisser la VFC et monter le pouls au repos la nuit, selon la dose. Ce que chaque verre coûte à votre récupération, d’après les données.",
       "neuralSuggestion": {
         "text": "L’effet de deux verres de vin sur votre VFC n’est pas le même que sur celle des autres. Voyez le vôtre.",
@@ -1473,6 +1495,7 @@
     },
     "your-baseline-knows-first": {
       "title": "Votre ligne de base le sait avant vous : le signal que votre corps envoie avant que vous le remarquiez",
+      "seoTitle": "Votre ligne de base le sait avant vous",
       "description": "Pouls au repos, VFC et respiration s’écartent de votre normale avant que vous vous sentiez « pas bien ». Pourquoi l’écart, pas le chiffre, est le signal.",
       "neuralSuggestion": {
         "text": "Une ligne de base n’est utile que si quelque chose vous la relit. C’est tout le rôle du signal.",
@@ -1520,6 +1543,7 @@
     },
     "what-your-apple-watch-records": {
       "title": "Ce que votre Apple Watch enregistre en deux semaines",
+      "seoTitle": "Ce que votre Apple Watch enregistre",
       "description": "Votre Apple Watch enregistre chaque nuit pouls au repos, VFC et respiration. Ce que sont ces chiffres, et pourquoi deux semaines d’écart en disent plus.",
       "neuralSuggestion": {
         "text": "Voyez vos deux semaines, lues depuis votre montre sur votre iPhone — rien n’est envoyé en ligne.",
@@ -1531,6 +1555,7 @@
     },
     "overtraining-hrv-resting-heart-rate": {
       "title": "Le surentraînement a un chiffre : quand vos signaux de récupération basculent",
+      "seoTitle": "Surentraînement, pouls au repos et VFC",
       "description": "S’entraîner plus n’est pas progresser : la récupération décide. Si la charge la dépasse, le pouls au repos monte et la VFC baisse. Lisez le virage à temps.",
       "neuralSuggestion": {
         "text": "L’entraînement est le stimulus. La récupération est là où l’adaptation se produit vraiment — si vous la laissez faire.",
@@ -1578,6 +1603,7 @@
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "L’Apple Watch affiche désormais deux VFC : VFC de récupération vs VFC globale",
+      "seoTitle": "Apple Watch : VFC de récupération vs globale",
       "description": "En septembre 2026, Apple a scindé la VFC de l’Apple Watch en VFC de récupération et VFC globale. Ce qui a changé et pourquoi ne pas fusionner l’historique.",
       "neuralSuggestion": {
         "text": "Ce sont des mesures nocturnes passives. Entraîner votre VFC sur le moment est un tout autre travail.",
@@ -1625,6 +1651,7 @@
     },
     "how-long-does-alcohol-stay-in-your-system": {
       "title": "Combien de temps l'alcool reste-t-il dans le sang ?",
+      "seoTitle": "Combien de temps l'alcool reste dans le sang ?",
       "description": "Combien de temps l'alcool reste dans le corps, sa vitesse d'élimination (~un verre par heure), pourquoi rien ne l'accélère et ses effets sur le sommeil.",
       "neuralSuggestion": {
         "text": "Estimez votre taux d'alcoolémie et le nombre d'heures avant qu'il revienne à zéro selon votre poids et vos consommations.",
@@ -1676,6 +1703,7 @@
     },
     "hrv-questions-answered": {
       "title": "VFC (HRV) : 52 réponses claires sur la variabilité cardiaque",
+      "seoTitle": "VFC (HRV) : 52 réponses courtes",
       "description": "Quelle est une bonne VFC ? Pourquoi est-elle basse ? Alcool, café, respiration : 52 réponses courtes et sourcées sur la variabilité de la fréquence cardiaque.",
       "neuralSuggestion": {
         "text": "La plupart des questions sur la VFC mènent à la même conclusion : votre propre plage compte plus que n'importe quelle moyenne.",

@@ -1578,6 +1578,7 @@
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "Apple Watch に 2 つの HRV：リカバリー HRV とオーバーオール HRV の違い",
+      "seoTitle": "リカバリーHRVとオーバーオールHRVの違い",
       "description": "2026 年 9 月、Apple Watch のHRVはリカバリー HRV とオーバーオール HRV に分かれ、約 5 分ごとの測定に。変更点と、新旧の履歴をつなげられない理由。",
       "neuralSuggestion": {
         "text": "これらは夜間の受動的な指標です。その瞬間に HRV を鍛えるのは、まったく別の仕事です。",

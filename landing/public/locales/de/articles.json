@@ -553,6 +553,7 @@
     },
     "alternate-nostril-breathing": {
       "title": "Wechselatmung (Nadi Shodhana): Wirkung und Anleitung",
+      "seoTitle": "Wechselatmung (Nadi Shodhana): Anleitung",
       "description": "Wechselatmung (Nadi Shodhana) beruhigt das Nervensystem und kann den Blutdruck senken. So geht sie, warum das langsame Tempo wirkt und wann du sie nutzt.",
       "neuralSuggestion": {
         "text": "Die Ruhe kommt vom Tempo, nicht von den Nasenlöchern. Prüf es an deinen eigenen Daten.",
@@ -604,6 +605,7 @@
     },
     "nose-vs-mouth-breathing": {
       "title": "Nasen- oder Mundatmung: Was sie im Nervensystem verändert",
+      "seoTitle": "Nasen- oder Mundatmung: Nerven und Fokus",
       "description": "Nasenatmung wirkt anders auf deine autonome Balance und Konzentration als Mundatmung. Was japanische Forschung fand und wann welche Atmung zählt.",
       "neuralSuggestion": {
         "text": "Je eine Minute durch die Nase, dann durch den Mund – der Unterschied zeigt sich oft deutlich in deinem Herzrhythmus.",
@@ -637,6 +639,7 @@
     },
     "meditation-vs-breathwork": {
       "title": "Meditation oder Breathwork: Was solltest du wählen?",
+      "seoTitle": "Meditation oder Breathwork: Was wählen?",
       "description": "Meditation und Breathwork beruhigen verschieden: Das eine trainiert Aufmerksamkeit, das andere verändert direkt die Physiologie. Vergleich und Kombination.",
       "neuralSuggestion": {
         "text": "Kein Entweder-oder. Mit dem Atem schnell in die Ruhe, dann aus ihr heraus meditieren – Feuerlöscher und Brandschutz.",
@@ -670,6 +673,7 @@
     },
     "cardiac-coherence-365-method": {
       "title": "Kardiale Kohärenz und die 365-Methode: Atmen nach französischer Art",
+      "seoTitle": "Kardiale Kohärenz und die 365-Methode",
       "description": "Kardiale Kohärenz: 6 Atemzüge pro Minute, 3-mal täglich, 5 Minuten (365-Methode) – eine französische klinische Tradition zum Ausgleich des Nervensystems.",
       "neuralSuggestion": {
         "text": "Eine Einheit beruhigt, doch die Wirkung verblasst – genau deshalb verteilt die 365-Methode drei über den Tag.",
@@ -721,6 +725,7 @@
     },
     "how-much-meditation-do-you-need": {
       "title": "Wie viel Meditation brauchst du, um Ergebnisse zu sehen?",
+      "seoTitle": "Wie viel Meditation brauchst du?",
       "description": "Wie lange und wie oft meditieren? Schon 10–12 Minuten täglich bewirken messbare Veränderungen – und sichtbarer Fortschritt hilft beim Dranbleiben.",
       "neuralSuggestion": {
         "text": "Die beste Dosis ist nicht das theoretische Maximum, sondern die größte, die du wirklich durchhältst. Verlässliche 10 Minuten schlagen angestrebte 30.",
@@ -772,6 +777,7 @@
     },
     "measuring-meditation-progress": {
       "title": "So misst du deinen Meditationsfortschritt (statt zu raten)",
+      "seoTitle": "Meditationsfortschritt messen: So geht's",
       "description": "Fortschritt in der Meditation wirkt unsichtbar, ist aber messbar – über HRV, Ruhepuls und die Reaktion deines Körpers. So verfolgst du ihn objektiv.",
       "neuralSuggestion": {
         "text": "Die Anzeigetafel, die der Meditation immer gefehlt hat. Beobachte den Wochentrend deiner Baseline – jage nie der Zahl eines einzelnen Tages nach.",
@@ -823,6 +829,7 @@
     },
     "humming-breath-vagus": {
       "title": "Summ-Atmung (Bhramari): der einfachste Weg, den Vagusnerv zu stimulieren",
+      "seoTitle": "Summ-Atmung (Bhramari) für den Vagusnerv",
       "description": "Summ-Atmung (Bhramari) stimuliert den Vagusnerv über Vibration im Kehlkopf. So geht die Bienenatmung, warum sie wirkt und wann sie hilft.",
       "neuralSuggestion": {
         "text": "Summen gibt dem Vagusnerv einen direkten, mechanischen Anstoß. Sieh zu, wie sich dein Puls beim Summen beruhigt.",
@@ -874,6 +881,7 @@
     },
     "doctors-and-your-data": {
       "title": "Ärzte und deine Daten: Welcher Arzt deine Herz- und Schlaftrends nutzt",
+      "seoTitle": "Ärzte und deine Gesundheitsdaten",
       "description": "Deine Uhr erfasst Monate an Puls, HRV, Atmung und Schlaf. Welcher von 11 Ärzten sie wofür nutzt – vom Hausarzt bis zum Lungenfacharzt.",
       "neuralSuggestion": {
         "text": "Beginne mit dem allgemeinen Leitfaden und wähle dann den Arzt, der zu deiner Frage passt.",
@@ -903,6 +911,7 @@
     },
     "talk-to-your-doctor-about-wearable-data": {
       "title": "Mit dem Arzt über Uhrdaten sprechen – ohne abgewimmelt zu werden",
+      "seoTitle": "Uhrdaten beim Arzt: So wirst du ernst genommen",
       "description": "Deine Uhr sammelt Monate an Puls-, HRV- und Schlafdaten. Was Ärzte wirklich nützlich finden, wie du eine einseitige Übersicht erstellst und was du fragst.",
       "neuralSuggestion": {
         "text": "Erst die Beschwerden, dann die Daten – eine Seite mit deiner Baseline, was sich wann verändert hat.",
@@ -936,6 +945,7 @@
     },
     "onda-report-for-your-gp": {
       "title": "Deine Herzdaten beim Hausarzt: Was er damit anfangen kann",
+      "seoTitle": "Deine Herzdaten beim Hausarzt",
       "description": "Dein Hausarzt sieht deine Uhrdaten meist als Erster. Wie er einen Puls- und HRV-Bericht liest, wie er helfen kann und wie du den Termin optimal nutzt.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -969,6 +979,7 @@
     },
     "onda-report-for-your-cardiologist": {
       "title": "Deine Herzdaten beim Kardiologen: Was er damit kann – und was nicht",
+      "seoTitle": "Deine Herzdaten beim Kardiologen",
       "description": "Ein Kardiologe liest Pulstrends anders als der Hausarzt. Was er aus Ruhepuls, HRV und Atmung liest, welche Tests folgen und wo Uhrdaten enden.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1002,6 +1013,7 @@
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Deine Nachtdaten beim Schlafmediziner: Was sie verraten – und was nicht",
+      "seoTitle": "Deine Nachtdaten beim Schlafmediziner",
       "description": "Deine Uhr zeichnet jede Nacht Puls, HRV, Atmung und Schlafzeiten auf. Was ein Schlafmediziner daraus liest, welche Tests folgen; Score-Fixierung schadet.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1035,6 +1047,7 @@
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Erholungsdaten beim Sportmediziner: Übertraining und Wiedereinstieg",
+      "seoTitle": "Erholungsdaten beim Sportmediziner",
       "description": "Trends von Ruhepuls und HRV zeigen, wie dein Körper Training verkraftet. Ein Sportmediziner erkennt so Overreaching und hilft beim Comeback.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1068,6 +1081,7 @@
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Deine Körperdaten in der Therapie: Wie ein Therapeut oder Psychiater sie nutzen kann",
+      "seoTitle": "Deine Körperdaten in der Therapie",
       "description": "Stress und Gefühle hinterlassen Spuren in Puls, HRV, Atmung und Schlaf. Wie Therapeut oder Psychiater diesen Verlauf nutzen können – auch bei Medikamenten.",
       "neuralSuggestion": {
         "text": "Ein Spiegel, kein Urteil: Bring die Momente mit, die zählten, und teile nur, was du möchtest.",
@@ -1101,6 +1115,7 @@
     },
     "onda-report-for-your-neurologist": {
       "title": "Pulsdaten beim Neurologen: POTS, Dysautonomie und Long COVID",
+      "seoTitle": "Pulsdaten beim Neurologen: POTS, Long COVID",
       "description": "Herzrasen beim Aufstehen, Erschöpfung nach kleinen Anstrengungen, Long COVID? Wie ein Neurologe deinen Puls- und HRV-Verlauf nutzen kann.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1134,6 +1149,7 @@
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Puls und Hormone beim Endokrinologen: Schilddrüse und Diabetes",
+      "seoTitle": "Puls und Hormone: Daten für Endokrinologen",
       "description": "Hormone bestimmen dein Herztempo: Die Schilddrüse verschiebt den Ruhepuls, Diabetes senkt die HRV. Wie ein Endokrinologe deinen Pulsverlauf nutzen kann.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1167,6 +1183,7 @@
     },
     "onda-report-for-your-gynecologist": {
       "title": "Dein Zyklus im Puls: Was der Frauenarzt mit deinen Daten anfangen kann",
+      "seoTitle": "Dein Zyklus im Puls: Daten für Frauenärzte",
       "description": "Ruhepuls und HRV verändern sich im Zyklus, in der Schwangerschaft und in den Wechseljahren. Wie dein Frauenarzt diesen Verlauf nutzen kann.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1200,6 +1217,7 @@
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Deine Atmung in Zahlen: Daten beim Lungenfacharzt (Asthma, Atemnot)",
+      "seoTitle": "Deine Atmung in Zahlen: Lungenfacharzt",
       "description": "Deine nächtliche Atemfrequenz ändert sich oft vor Beschwerden. Wie ein Lungenfacharzt sie nutzt – und warum Atemtherapie in Leitlinien steht.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1233,6 +1251,7 @@
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Deine Arbeitswoche im Puls: Schichtarbeit und Burnout beim Betriebsarzt",
+      "seoTitle": "Schichtarbeit und Burnout: Betriebsarzt",
       "description": "Nachtschichten und Dauerstress hinterlassen Spuren in Ruhepuls, HRV und Schlaf. Wie ein Betriebsarzt sie nutzt – und was zur Schweigepflicht gilt.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1266,6 +1285,7 @@
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "Genesung ist keine Gerade: Deine Daten für Reha und Physiotherapie",
+      "seoTitle": "Genesung ist keine Gerade: Daten für Reha",
       "description": "Nach Krankheit, OP oder Herzinfarkt verläuft die Genesung in Stufen und Rückschlägen. Wie dein Reha-Team Puls, HRV und Atmung zum Dosieren nutzen kann.",
       "neuralSuggestion": {
         "text": "Bring eine Seite mit, nicht dein Handy: deine Baseline, was sich wann verändert hat, deine Notizen und deine Fragen.",
@@ -1393,6 +1413,7 @@
     },
     "how-to-measure-hrv-consistently": {
       "title": "HRV so messen, dass die Zahl wirklich etwas bedeutet",
+      "seoTitle": "HRV richtig messen: gleiche Zeit, gleiche Art",
       "description": "HRV schwankt mit Tageszeit, Haltung, Atmung, Koffein und Essen – ein Zufallswert ist Rauschen. Regeln für vergleichbare Werte – und warum der Trend zählt.",
       "neuralSuggestion": {
         "text": "Eine einzelne HRV-Zahl ist fast bedeutungslos. Eine konsistente Messreihe gehört zum Nützlichsten, was du besitzt.",
@@ -1440,6 +1461,7 @@
     },
     "how-much-alcohol-lowers-hrv": {
       "title": "Wie stark senkt Alkohol deine HRV? Die Daten nach Anzahl der Drinks",
+      "seoTitle": "Wie stark senkt Alkohol die HRV?",
       "description": "Alkohol senkt die HRV und erhöht den nächtlichen Ruhepuls – dosisabhängig. Was jeder Drink deine Erholung kostet, laut Wearable- und Studiendaten.",
       "neuralSuggestion": {
         "text": "Die Wirkung von zwei Gläsern Wein auf deine HRV ist nicht dieselbe wie bei anderen. Sieh deine.",
@@ -1473,6 +1495,7 @@
     },
     "your-baseline-knows-first": {
       "title": "Deine Baseline weiß es zuerst: Das Signal, das dein Körper sendet, bevor du es merkst",
+      "seoTitle": "Baseline-Abweichung: Der Körper weiß es zuerst",
       "description": "Ruhepuls, HRV und Atmung weichen von deinem Normalwert ab, bevor du dich „komisch“ fühlst. Warum die Abweichung – nicht die Zahl – das Signal ist.",
       "neuralSuggestion": {
         "text": "Eine Baseline nützt nur, wenn dir jemand sie zurückspiegelt. Genau das ist die Aufgabe des Signals.",
@@ -1520,6 +1543,7 @@
     },
     "what-your-apple-watch-records": {
       "title": "Was deine Apple Watch über zwei Wochen aufzeichnet",
+      "seoTitle": "Was deine Apple Watch aufzeichnet",
       "description": "Deine Apple Watch erfasst jede Nacht Ruhepuls, HRV und Atmung. Was diese Werte sind – und warum zwei Wochen Spannweite mehr verraten als ein Messwert.",
       "neuralSuggestion": {
         "text": "Sieh deine eigenen zwei Wochen, direkt von deiner Uhr auf deinem iPhone ausgelesen – nichts wird hochgeladen.",
@@ -1531,6 +1555,7 @@
     },
     "overtraining-hrv-resting-heart-rate": {
       "title": "Übertraining hat eine Zahl: Wenn deine Erholungssignale kippen",
+      "seoTitle": "Übertraining: Ruhepuls und HRV-Erholung",
       "description": "Mehr Training ist nicht mehr Fortschritt – die Erholung entscheidet. Wenn die Last die Erholung überholt, steigt der Ruhepuls und die HRV sinkt.",
       "neuralSuggestion": {
         "text": "Training ist der Reiz. In der Erholung findet die Anpassung tatsächlich statt – wenn du sie zulässt.",
@@ -1578,6 +1603,7 @@
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "Die Apple Watch zeigt jetzt zwei HRV-Werte: Recovery HRV vs. Overall HRV",
+      "seoTitle": "Apple Watch: Recovery HRV vs. Overall HRV",
       "description": "Im September 2026 teilte Apple die HRV in Recovery HRV und Overall HRV auf. Was sich änderte – und warum du alte und neue Verläufe nicht mischen darfst.",
       "neuralSuggestion": {
         "text": "Das sind passive Nachtwerte. Deine HRV im Moment zu trainieren, ist eine völlig andere Aufgabe.",
@@ -1625,6 +1651,7 @@
     },
     "how-long-does-alcohol-stay-in-your-system": {
       "title": "Wie lange ist Alkohol im Blut? Abbauzeit und Promille pro Stunde",
+      "seoTitle": "Wie lange ist Alkohol im Blut?",
       "description": "Wie lange Alkohol im Körper bleibt, wie schnell er abgebaut wird (~ein Getränk pro Stunde), warum nichts das beschleunigt und was er mit Schlaf macht.",
       "neuralSuggestion": {
         "text": "Schätze deinen Promillewert und die Stunden bis zum Abbau – passend zu deinem Gewicht und deinen Getränken.",
@@ -1676,6 +1703,7 @@
     },
     "hrv-questions-answered": {
       "title": "HRV-Fragen beantwortet: 52 klare Antworten zur Herzratenvariabilität",
+      "seoTitle": "HRV-Fragen beantwortet: 52 kurze Antworten",
       "description": "Was ist ein guter HRV-Wert? Warum ist meiner niedrig? Wirken Alkohol, Koffein, Atmung? 52 kurze, belegte Antworten zur Herzratenvariabilität.",
       "neuralSuggestion": {
         "text": "Die meisten HRV-Fragen enden am selben Punkt: Dein eigener Bereich zählt mehr als jeder Durchschnitt.",

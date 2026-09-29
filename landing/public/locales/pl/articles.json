@@ -55,6 +55,7 @@
   "bodies": {
     "normal-hrv-by-age": {
       "title": "Prawidłowe HRV według wieku: jakie HRV jest dobre?",
+      "seoTitle": "Prawidłowe HRV według wieku: jakie jest dobre?",
       "description": "Nie ma jednej dobrej wartości HRV: zależy ona od wieku i twojej linii bazowej. Typowe zakresy według wieku i dlaczego twój trend znaczy więcej niż średnia.",
       "neuralSuggestion": {
         "text": "Przestań pytać „czy 45 ms to dobrze?”. Liczy się, czy TWOJE HRV rośnie, czy spada.",
@@ -88,6 +89,7 @@
     },
     "resting-heart-rate-by-age": {
       "title": "Tętno spoczynkowe według wieku: jakie jest prawidłowe?",
+      "seoTitle": "Tętno spoczynkowe według wieku: norma",
       "description": "Prawidłowe tętno spoczynkowe u dorosłych: 60–100 uderzeń/min, zależnie od wieku i kondycji. Wartości według wieku i co je podnosi lub obniża.",
       "neuralSuggestion": {
         "text": "Jeden pomiar mówi niewiele. Trend tętna spoczynkowego względem twojej normy mówi dużo.",
@@ -121,6 +123,7 @@
     },
     "alternate-nostril-breathing": {
       "title": "Oddychanie naprzemienne (Nadi Shodhana): korzyści",
+      "seoTitle": "Oddychanie naprzemienne (Nadi Shodhana)",
       "description": "Oddychanie naprzemienne (Nadi Shodhana) uspokaja układ nerwowy i może obniżać ciśnienie. Technika, rola wolnego tempa i kiedy go używać.",
       "neuralSuggestion": {
         "text": "Spokój daje tempo, a nie nozdrza. Sprawdź to na własnych danych.",
@@ -172,6 +175,7 @@
     },
     "nose-vs-mouth-breathing": {
       "title": "Oddychanie nosem czy ustami: co to zmienia w układzie nerwowym",
+      "seoTitle": "Oddychanie nosem czy ustami: układ nerwowy",
       "description": "Oddychanie nosem inaczej wpływa na równowagę autonomiczną i koncentrację niż oddychanie ustami. Co wykazały japońskie badania i kiedy które ma znaczenie.",
       "neuralSuggestion": {
         "text": "Minuta nosem, potem minuta ustami — różnicę często wyraźnie widać w twoim rytmie serca.",
@@ -238,6 +242,7 @@
     },
     "cardiac-coherence-365-method": {
       "title": "Koherencja serca i metoda 365: oddychanie po francusku",
+      "seoTitle": "Koherencja serca i metoda 365",
       "description": "Koherencja serca: 6 oddechów na minutę, 3 razy dziennie po 5 minut (metoda 365). Francuska tradycja kliniczna równoważenia układu nerwowego.",
       "neuralSuggestion": {
         "text": "Jedna sesja uspokaja, ale efekt mija — właśnie dlatego metoda 365 rozkłada trzy sesje na cały dzień.",
@@ -289,6 +294,7 @@
     },
     "how-much-meditation-do-you-need": {
       "title": "Ile medytacji potrzebujesz, żeby zobaczyć efekty?",
+      "seoTitle": "Ile medytacji potrzebujesz?",
       "description": "Jak długo i jak często medytować, żeby mieć realne korzyści? Już 10–12 minut dziennie daje mierzalne zmiany, a widoczne postępy pomagają wytrwać.",
       "neuralSuggestion": {
         "text": "Najlepsza dawka to nie teoretyczne maksimum, tylko największa, którą naprawdę utrzymasz. Pewne 10 minut wygrywa z wymarzonymi 30.",
@@ -340,6 +346,7 @@
     },
     "measuring-meditation-progress": {
       "title": "Jak mierzyć postępy w medytacji (zamiast zgadywać)",
+      "seoTitle": "Jak mierzyć postępy w medytacji",
       "description": "Postępy w medytacji wydają się niewidoczne, ale da się je zmierzyć: HRV, tętno spoczynkowe, reakcja ciała. Jak śledzić je obiektywnie.",
       "neuralSuggestion": {
         "text": "Tablica wyników, której medytacji zawsze brakowało. Patrz na tygodniowy trend linii bazowej — nigdy nie goń liczby z jednego dnia.",
@@ -391,6 +398,7 @@
     },
     "humming-breath-vagus": {
       "title": "Oddech z mruczeniem (Bhramari): najprostszy sposób na pobudzenie nerwu błędnego",
+      "seoTitle": "Bhramari: oddech z mruczeniem a nerw błędny",
       "description": "Oddech z mruczeniem (Bhramari) pobudza nerw błędny wibracją krtani. Jak go wykonywać, dlaczego działa i kiedy go stosować.",
       "neuralSuggestion": {
         "text": "Mruczenie daje nerwowi błędnemu bezpośredni, mechaniczny impuls. Zobacz, jak uspokaja się tętno, gdy mruczysz.",
@@ -475,6 +483,7 @@
     },
     "physiological-sigh": {
       "title": "Fizjologiczne westchnienie: najszybszy sposób na uspokojenie układu nerwowego",
+      "seoTitle": "Fizjologiczne westchnienie: szybki spokój",
       "description": "Fizjologiczne westchnienie — dwa wdechy i długi wydech — to najszybsza technika oddechowa na stres. Jak działa i kiedy jej używać.",
       "neuralSuggestion": {
         "text": "Zwykle nie widać, jak działa technika oddechowa. Zobacz na żywo, jak spada tętno, gdy wzdychasz.",
@@ -577,6 +586,7 @@
     },
     "cardiac-coherence-insomnia-sleep": {
       "title": "Koherencja serca przy bezsenności: francuskie podejście kliniczne",
+      "seoTitle": "Koherencja serca przy bezsenności",
       "description": "We Francji koherencja serca — wolny oddech podnoszący HRV — służy przy przewlekłej bezsenności, obniżając nadmierne pobudzenie. Metoda i praktyka.",
       "neuralSuggestion": {
         "text": "Nie goń za snem — obniż pobudzenie. Wieczorna sesja koherencji robi miejsce, by sen przyszedł sam.",
@@ -610,6 +620,7 @@
     },
     "bhastrika-pranayama-brain-anxiety": {
       "title": "Bhastrika pranajama a mózg: jak oddech miecha zmienia lęk",
+      "seoTitle": "Bhastrika pranajama, mózg i lęk",
       "description": "Randomizowane badanie z obrazowaniem mózgu wykazało, że bhastrika zmniejsza lęk i zmienia aktywność ciała migdałowatego i kory przedczołowej.",
       "neuralSuggestion": {
         "text": "Pobudza od razu, uspokaja z czasem. Rób bhastrikę rano — a wolną technikę, gdy potrzebujesz spokoju od razu.",
@@ -643,6 +654,7 @@
     },
     "om-chanting-brain-vagus": {
       "title": "Recytowanie OM a mózg: jak święty dźwięk wycisza ciało migdałowate",
+      "seoTitle": "OM, ciało migdałowate i nerw błędny",
       "description": "Badanie fMRI wykazało, że recytowanie OM wycisza ciało migdałowate i hipokamp, podobnie jak stymulacja nerwu błędnego. Nauka o świętym dźwięku.",
       "neuralSuggestion": {
         "text": "Pozwól wybrzmieć „M”. Wibracja i długi wydech robią swoje — wiara nie jest potrzebna.",
@@ -676,6 +688,7 @@
     },
     "trataka-candle-gazing-focus": {
       "title": "Trataka (wpatrywanie się w świecę): joga dla skupienia i spokoju",
+      "seoTitle": "Trataka: wpatrywanie w świecę dla skupienia",
       "description": "Trataka — spokojne wpatrywanie się w jeden punkt, np. płomień świecy — to jogiczna praktyka koncentracji wiązana z lepszymi funkcjami poznawczymi i uwagą.",
       "neuralSuggestion": {
         "text": "Powracanie to właśnie praktyka. Za każdym razem, gdy uwaga ucieka, a ty ją przyprowadzasz, to jedno powtórzenie dla skupienia.",
@@ -709,6 +722,7 @@
     },
     "sudarshan-kriya-yoga-breathing": {
       "title": "Sudarshan Kriya Yoga: technika oddechowa porównywana z antydepresantami",
+      "seoTitle": "Sudarshan Kriya Yoga (SKY): co mówią badania",
       "description": "Sudarshan Kriya Yoga (SKY): technika oddechowa badana w depresji, PTSD i stresie — w jednym badaniu porównywalna z antydepresantem. Dowody i zastrzeżenia.",
       "neuralSuggestion": {
         "text": "Obiecujące i wyjątkowo poważne dowody — ale pełnej kriji ucz się od nauczyciela i nigdy nie stosuj jej zamiast leczenia.",
@@ -742,6 +756,7 @@
     },
     "yoga-poses-heart-rate-blood-pressure": {
       "title": "Jak różne pozycje jogi wpływają na tętno i ciśnienie krwi",
+      "seoTitle": "Pozycje jogi, tętno i ciśnienie krwi",
       "description": "Nie wszystkie pozycje jogi działają na serce tak samo: odwrócone, wygięcia w tył i pozycje relaksacyjne zmieniają tętno i ciśnienie krwi na różne sposoby.",
       "neuralSuggestion": {
         "text": "Pozycje uspokajające, by się wyciszyć, pobudzające, by się rozbudzić — i zawsze kończ w savasanie.",
@@ -775,6 +790,7 @@
     },
     "yoga-breathing-diabetes-blood-sugar": {
       "title": "Joga i oddech przy cukrzycy typu 2: co pokazują badania z Indii",
+      "seoTitle": "Joga i oddech przy cukrzycy typu 2: badania",
       "description": "Joga i pranajama dodane do standardowego leczenia poprawiły w badaniach z Indii cukier, HRV i ryzyko kardiometaboliczne w cukrzycy typu 2. Dowody.",
       "neuralSuggestion": {
         "text": "Uzupełnienie leczenia cukrzycy, nigdy zamiennik. Nie odstawiaj leków, mierz glukozę i buduj praktykę przez tygodnie.",
@@ -808,6 +824,7 @@
     },
     "morita-therapy-tracking-paradox": {
       "title": "Paradoks obserwowania własnego ciała: czego uczy japońska terapia Mority",
+      "seoTitle": "Terapia Mority i paradoks śledzenia zdrowia",
       "description": "Zbyt silne skupienie na objawie może go nasilić — japońska terapia Mority opisała to sto lat temu. Czego uczy o lęku, monitorowaniu zdrowia i arugamama.",
       "neuralSuggestion": {
         "text": "Świadomy, nie zafiksowany. Zerknij na trend, a potem działaj — oddychaj, odpoczywaj, ruszaj się — i pozwól liczbie podążyć.",
@@ -841,6 +858,7 @@
     },
     "pranayama-metabolic-syndrome": {
       "title": "Oddech a zespół metaboliczny: badania u młodych dorosłych",
+      "seoTitle": "Pranajama a zespół metaboliczny",
       "description": "Zespół metaboliczny narasta u młodych, siedzących osób. Badanie z Indii: pranajama poprawiła ciśnienie i markery metaboliczne u studentów medycyny.",
       "neuralSuggestion": {
         "text": "Mała, darmowa dźwignia na osi stresu — na dodatek do ruchu i diety, nigdy zamiast nich.",
@@ -874,6 +892,7 @@
     },
     "doctors-and-your-data": {
       "title": "Lekarze i twoje dane: który specjalista wykorzysta twoje trendy",
+      "seoTitle": "Lekarze i twoje dane",
       "description": "Który z 11 lekarzy wykorzysta dane z zegarka (tętno, HRV, oddech, sen): od lekarza rodzinnego i kardiologa po endokrynologa i pulmonologa i jak je pokazać.",
       "neuralSuggestion": {
         "text": "Zacznij od ogólnego poradnika, a potem wybierz lekarza, który pasuje do twojego pytania.",
@@ -903,6 +922,7 @@
     },
     "talk-to-your-doctor-about-wearable-data": {
       "title": "Jak rozmawiać z lekarzem o danych z zegarka (i nie zostać zbytym)",
+      "seoTitle": "Jak rozmawiać z lekarzem o danych z zegarka",
       "description": "Zegarek zbiera miesiące danych o tętnie, HRV i śnie, których lekarz nie widzi. Co naprawdę się przydaje, jak przygotować jedną stronę i o co pytać.",
       "neuralSuggestion": {
         "text": "Najpierw objawy, potem dane — jedna strona z linią bazową, tym, co się zmieniło, i kiedy.",
@@ -936,6 +956,7 @@
     },
     "onda-report-for-your-gp": {
       "title": "Dane o sercu u lekarza rodzinnego: co może z nimi zrobić",
+      "seoTitle": "Dane o sercu u lekarza rodzinnego",
       "description": "Lekarz rodzinny zwykle pierwszy widzi dane z zegarka. Jak odczyta raport tętna i HRV, jak może pomóc i jak najlepiej wykorzystać wizytę.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -969,6 +990,7 @@
     },
     "onda-report-for-your-cardiologist": {
       "title": "Dane o sercu u kardiologa: co może (a czego nie) z nimi zrobić",
+      "seoTitle": "Dane o sercu u kardiologa",
       "description": "Kardiolog czyta trendy tętna inaczej niż lekarz rodzinny. Co wyciągnie z raportu tętna, HRV i oddechu, jakie badania może zlecić i gdzie kończą się dane.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1002,6 +1024,7 @@
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Dane z nocy u specjalisty snu: co mówią, a czego nie",
+      "seoTitle": "Dane z nocy u specjalisty snu",
       "description": "Zegarek zapisuje każdą noc: tętno, HRV, oddech i pory snu. Co z tej historii wyczyta specjalista snu, jakie badania może zlecić i czemu obsesja szkodzi.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1035,6 +1058,7 @@
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Dane o regeneracji u lekarza sportowego: trening i powrót",
+      "seoTitle": "Dane o regeneracji u lekarza sportowego",
       "description": "Trendy tętna spoczynkowego i HRV pokazują, jak znosisz trening. Jak lekarz sportowy je wykorzysta: przeciążenie, ukryte przyczyny, bezpieczny powrót.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1068,6 +1092,7 @@
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Dane z ciała na terapii: jak może je wykorzystać terapeuta lub psychiatra",
+      "seoTitle": "Dane z ciała na terapii",
       "description": "Stres i emocje zostawiają ślad w tętnie, HRV, oddechu i śnie. Jak terapeuta lub psychiatra może wykorzystać tę historię — od wyzwalaczy po leki.",
       "neuralSuggestion": {
         "text": "Lustro, nie wyrok: przynieś ważne momenty i udostępnij tylko to, co wybierzesz.",
@@ -1101,6 +1126,7 @@
     },
     "onda-report-for-your-neurologist": {
       "title": "Tętno a układ nerwowy: dane dla neurologa (POTS, long COVID)",
+      "seoTitle": "Tętno dla neurologa: POTS i long COVID",
       "description": "Tętno skacze po wstaniu, męczysz się po małym wysiłku, nie wracasz do formy po COVID? Jak neurolog wykorzysta dane o tętnie i HRV (POTS, dysautonomia).",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1134,6 +1160,7 @@
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Tętno a hormony: dane dla endokrynologa (tarczyca, cukrzyca)",
+      "seoTitle": "Tętno a hormony: dane dla endokrynologa",
       "description": "Hormony ustawiają tempo serca: tarczyca podnosi lub obniża tętno spoczynkowe, cukrzyca może obniżać HRV. Jak endokrynolog wykorzysta twoje dane.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1167,6 +1194,7 @@
     },
     "onda-report-for-your-gynecologist": {
       "title": "Cykl w twoim tętnie: dane dla ginekologa (cykl, ciąża, menopauza)",
+      "seoTitle": "Cykl w twoim tętnie: dane dla ginekologa",
       "description": "Tętno spoczynkowe i HRV zmieniają się w cyklu miesiączkowym, w ciąży i w okresie menopauzy. Jak ginekolog wykorzysta te dane i czego z nich nie odczyta.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1200,6 +1228,7 @@
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Twój oddech w liczbach: dane dla pulmonologa (astma, duszność)",
+      "seoTitle": "Twój oddech w liczbach: dane dla pulmonologa",
       "description": "Zegarek mierzy nocną częstość oddechów — sygnał, który często zmienia się, zanim poczujesz chorobę. Jak pulmonolog wykorzysta dane o oddechu i tętnie.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1233,6 +1262,7 @@
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Tydzień pracy w twoim tętnie: dane dla lekarza medycyny pracy",
+      "seoTitle": "Praca zmianowa i wypalenie: dane dla lekarza",
       "description": "Nocne zmiany, nadgodziny i przewlekły stres w pracy zostawiają ślad w tętnie, HRV i śnie. Jak wykorzysta to lekarz medycyny pracy i co z poufnością.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1266,6 +1296,7 @@
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "Powrót do zdrowia to nie linia prosta: dane dla rehabilitacji",
+      "seoTitle": "Powrót do zdrowia: dane dla rehabilitacji",
       "description": "Po chorobie, operacji lub zawale powrót do formy idzie krokami i cofnięciami. Jak lekarz rehabilitacji i fizjoterapeuta wykorzystają twoje tętno i HRV.",
       "neuralSuggestion": {
         "text": "Przynieś jedną stronę, nie telefon: linię bazową, co się zmieniło i kiedy, notatki i pytania.",
@@ -1393,6 +1424,7 @@
     },
     "how-to-measure-hrv-consistently": {
       "title": "Jak mierzyć HRV, żeby liczba naprawdę coś znaczyła",
+      "seoTitle": "Jak mierzyć HRV powtarzalnie",
       "description": "HRV zmienia się z porą dnia, pozycją, oddechem, kofeiną i posiłkiem — przypadkowy odczyt to szum. Zasady porównywalnych pomiarów i czemu liczy się trend.",
       "neuralSuggestion": {
         "text": "Pojedyncza wartość HRV prawie nic nie znaczy. Spójna seria pomiarów to jedna z najcenniejszych rzeczy, jakie masz.",
@@ -1440,6 +1472,7 @@
     },
     "how-much-alcohol-lowers-hrv": {
       "title": "O ile alkohol obniża HRV? Dane według liczby drinków",
+      "seoTitle": "O ile alkohol obniża HRV? Dane według drinków",
       "description": "Alkohol obniża HRV i podnosi nocne tętno spoczynkowe, zależnie od dawki. Ile każdy drink kosztuje twoją regenerację — dane z urządzeń i badań naukowych.",
       "neuralSuggestion": {
         "text": "Dwa kieliszki wina nie działają na twoje HRV tak samo jak na kogoś innego. Zobacz swoje.",
@@ -1473,6 +1506,7 @@
     },
     "your-baseline-knows-first": {
       "title": "Twoja linia bazowa wie pierwsza: sygnał, który ciało wysyła, zanim go zauważysz",
+      "seoTitle": "Ciało wie pierwsze: odchylenie od normy",
       "description": "Tętno spoczynkowe, HRV i oddech odchodzą od twojej normy, zanim poczujesz, że coś jest nie tak. Dlaczego sygnałem jest odchylenie, a nie sama liczba.",
       "neuralSuggestion": {
         "text": "Linia bazowa jest przydatna tylko wtedy, gdy coś ci ją odczytuje. Na tym polega cała rola sygnału.",
@@ -1520,6 +1554,7 @@
     },
     "what-your-apple-watch-records": {
       "title": "Co twój Apple Watch zapisuje w ciągu dwóch tygodni",
+      "seoTitle": "Co zapisuje twój Apple Watch",
       "description": "Apple Watch co noc po cichu zapisuje tętno spoczynkowe, HRV i oddech. Czym są te liczby i dlaczego dwa tygodnie zakresu mówią więcej niż jeden odczyt.",
       "neuralSuggestion": {
         "text": "Zobacz swoje własne dwa tygodnie, odczytane z zegarka na twoim iPhonie — nic nie jest wysyłane.",
@@ -1531,6 +1566,7 @@
     },
     "overtraining-hrv-resting-heart-rate": {
       "title": "Przetrenowanie ma liczbę: kiedy sygnały regeneracji się odwracają",
+      "seoTitle": "Przetrenowanie, tętno spoczynkowe i HRV",
       "description": "Więcej treningu to nie więcej postępu — decyduje regeneracja. Gdy obciążenie ją wyprzedza, tętno spoczynkowe rośnie, a HRV spada. Jak odczytać ten zwrot.",
       "neuralSuggestion": {
         "text": "Trening to bodziec. Adaptacja zachodzi w czasie regeneracji — jeśli jej na to pozwolisz.",
@@ -1578,6 +1614,7 @@
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "Apple Watch pokazuje teraz dwie wartości HRV: Recovery HRV i Overall HRV",
+      "seoTitle": "Recovery HRV a Overall HRV w Apple Watch",
       "description": "We wrześniu 2026 Apple podzielił HRV w Apple Watch na Recovery HRV i Overall HRV oraz dodał RMSSD do HealthKit. Co się zmieniło i czemu nie łączyć historii",
       "neuralSuggestion": {
         "text": "To pasywne metryki nocne. Trenowanie HRV w danej chwili to zupełnie inne zadanie.",
@@ -1625,6 +1662,7 @@
     },
     "how-long-does-alcohol-stay-in-your-system": {
       "title": "Ile alkohol utrzymuje się w organizmie? Czas trzeźwienia",
+      "seoTitle": "Ile alkohol utrzymuje się w organizmie?",
       "description": "Ile alkohol utrzymuje się w organizmie, jak szybko znika (ok. jeden drink na godzinę), dlaczego nic tego nie przyspiesza i jak wpływa na sen i regenerację.",
       "neuralSuggestion": {
         "text": "Oszacuj promile we krwi i liczbę godzin do wytrzeźwienia dla swojej wagi i wypitych drinków.",
@@ -1676,6 +1714,7 @@
     },
     "hrv-questions-answered": {
       "title": "Pytania o HRV: 52 konkretne odpowiedzi o zmienności rytmu serca",
+      "seoTitle": "Pytania o HRV: 52 krótkie odpowiedzi",
       "description": "Jakie HRV jest dobre? Dlaczego moje jest niskie? Czy alkohol, kofeina lub oddech je zmieniają? 52 krótkie odpowiedzi ze źródłami i linkami.",
       "neuralSuggestion": {
         "text": "Większość pytań o HRV prowadzi do tego samego wniosku: Twój własny zakres jest ważniejszy niż jakakolwiek średnia.",

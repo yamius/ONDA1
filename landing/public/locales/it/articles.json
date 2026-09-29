@@ -88,6 +88,7 @@
     },
     "resting-heart-rate-by-age": {
       "title": "Frequenza cardiaca a riposo per età: qual è normale?",
+      "seoTitle": "Frequenza cardiaca a riposo per età",
       "description": "Frequenza cardiaca a riposo normale negli adulti: 60–100 bpm, a seconda di età e forma fisica. Valori per età e cosa la alza o la abbassa.",
       "neuralSuggestion": {
         "text": "Una misurazione dice poco. La tendenza della tua frequenza a riposo rispetto alla tua normalità dice molto.",
@@ -121,6 +122,7 @@
     },
     "alternate-nostril-breathing": {
       "title": "Respirazione a narici alternate (Nadi Shodhana): benefici",
+      "seoTitle": "Respirazione a narici alternate",
       "description": "La respirazione a narici alternate (Nadi Shodhana) calma il sistema nervoso e può abbassare la pressione. Tecnica, ruolo del ritmo lento e quando usarla.",
       "neuralSuggestion": {
         "text": "La calma viene dal ritmo, non dalle narici. Verificalo sui tuoi dati.",
@@ -172,6 +174,7 @@
     },
     "nose-vs-mouth-breathing": {
       "title": "Respirare con il naso o con la bocca: cosa cambia per il sistema nervoso",
+      "seoTitle": "Respirare con il naso o con la bocca",
       "description": "Respirare con il naso agisce su equilibrio autonomico e concentrazione diversamente dalla bocca. Cosa ha trovato la ricerca giapponese e quando conta.",
       "neuralSuggestion": {
         "text": "Un minuto con il naso, poi uno con la bocca: la differenza spesso si vede chiaramente nel tuo ritmo cardiaco.",
@@ -238,6 +241,7 @@
     },
     "cardiac-coherence-365-method": {
       "title": "Coerenza cardiaca e metodo 365: il respiro alla francese",
+      "seoTitle": "Coerenza cardiaca e metodo 365",
       "description": "Coerenza cardiaca: 6 respiri al minuto, 3 volte al giorno, per 5 minuti (metodo 365). Una tradizione clinica francese per riequilibrare il sistema nervoso.",
       "neuralSuggestion": {
         "text": "Una sessione calma, ma l’effetto svanisce: proprio per questo il metodo 365 ne distribuisce tre nella giornata.",
@@ -340,6 +344,7 @@
     },
     "measuring-meditation-progress": {
       "title": "Come misurare i progressi nella meditazione (invece di indovinare)",
+      "seoTitle": "Come misurare i progressi nella meditazione",
       "description": "I progressi nella meditazione sembrano invisibili, ma si misurano con HRV, battito a riposo e risposta del corpo. Come seguirli in modo oggettivo.",
       "neuralSuggestion": {
         "text": "Il tabellone che alla meditazione è sempre mancato. Guarda la tendenza settimanale della tua baseline, mai il numero di un singolo giorno.",
@@ -391,6 +396,7 @@
     },
     "humming-breath-vagus": {
       "title": "Respirazione del ronzio (Bhramari): il modo più semplice per stimolare il nervo vago",
+      "seoTitle": "Bhramari: stimolare il nervo vago",
       "description": "La respirazione del ronzio, o Bhramari, stimola il nervo vago con la vibrazione della laringe. Come farla, perché aumenta il tono vagale e quando usarla.",
       "neuralSuggestion": {
         "text": "Il ronzio dà al nervo vago una spinta diretta e meccanica. Guarda il tuo battito calmarsi mentre ronzi.",
@@ -442,6 +448,7 @@
     },
     "yoga-nidra-sleep-science": {
       "title": "Yoga Nidra per dormire: la scienza del «sonno yogico»",
+      "seoTitle": "Yoga Nidra per dormire: cosa dice la scienza",
       "description": "Lo Yoga Nidra, il «sonno yogico», può migliorare il sonno portando il cervello verso onde più lente e calmando i nervi. Cosa dice la ricerca e come farlo.",
       "neuralSuggestion": {
         "text": "Non cercare di dormire: segui la voce. È il calo dell’attivazione a far arrivare il sonno.",
@@ -475,6 +482,7 @@
     },
     "physiological-sigh": {
       "title": "Sospiro fisiologico: il modo più rapido per calmare il sistema nervoso",
+      "seoTitle": "Sospiro fisiologico: calmarsi in fretta",
       "description": "Il sospiro fisiologico — due inspirazioni e una lunga espirazione — è la tecnica più rapida contro lo stress. Come funziona e quando usarlo.",
       "neuralSuggestion": {
         "text": "Di solito non puoi vedere una tecnica di respirazione funzionare. Guarda il battito scendere dal vivo mentre sospiri.",
@@ -577,6 +585,7 @@
     },
     "cardiac-coherence-insomnia-sleep": {
       "title": "Coerenza cardiaca contro l’insonnia: l’approccio clinico francese",
+      "seoTitle": "Coerenza cardiaca contro l’insonnia",
       "description": "In Francia la coerenza cardiaca, una respirazione lenta che alza la HRV, si usa contro l’insonnia cronica abbassando l’iperattivazione. Metodo e pratica.",
       "neuralSuggestion": {
         "text": "Non inseguire il sonno: abbassa l’attivazione. Una sessione serale di coerenza fa spazio al sonno perché arrivi da sé.",
@@ -610,6 +619,7 @@
     },
     "bhastrika-pranayama-brain-anxiety": {
       "title": "Bhastrika pranayama e cervello: come il «respiro del mantice» cambia l’ansia",
+      "seoTitle": "Bhastrika pranayama, cervello e ansia",
       "description": "Uno studio randomizzato con risonanza ha mostrato che il Bhastrika riduce l’ansia e cambia l’attività di amigdala, insula e corteccia prefrontale.",
       "neuralSuggestion": {
         "text": "Energizzante sul momento, più calma nel giro di settimane. Usa il Bhastrika al mattino, e una tecnica lenta quando ti serve calma subito.",
@@ -643,6 +653,7 @@
     },
     "om-chanting-brain-vagus": {
       "title": "Il canto dell’OM e il cervello: come il suono sacro calma l’amigdala",
+      "seoTitle": "Canto dell’OM, amigdala e nervo vago",
       "description": "Uno studio con risonanza ha rilevato che il canto dell’OM calma amigdala e ippocampo, come la stimolazione del nervo vago. La scienza del suono sacro.",
       "neuralSuggestion": {
         "text": "Lascia vibrare la M. La vibrazione e la lunga espirazione fanno il lavoro, senza bisogno di credere.",
@@ -676,6 +687,7 @@
     },
     "trataka-candle-gazing-focus": {
       "title": "Trataka (fissare la candela): la pratica yogica per concentrazione e calma",
+      "seoTitle": "Trataka: fissare la candela per concentrarsi",
       "description": "Trataka — fissare con calma un punto, come la fiamma di una candela — è una pratica yogica di concentrazione legata a migliore cognizione e attenzione.",
       "neuralSuggestion": {
         "text": "Tornare è la pratica. Ogni volta che l’attenzione vaga e la riporti, è una ripetizione per la concentrazione.",
@@ -709,6 +721,7 @@
     },
     "sudarshan-kriya-yoga-breathing": {
       "title": "Sudarshan Kriya Yoga: la respirazione studiata a confronto con gli antidepressivi",
+      "seoTitle": "Sudarshan Kriya Yoga: prove e limiti",
       "description": "Sudarshan Kriya Yoga (SKY): respirazione studiata per depressione, PTSD e stress, in uno studio paragonabile a un antidepressivo. Prove e limiti.",
       "neuralSuggestion": {
         "text": "Prove promettenti e insolitamente serie — ma impara il kriya completo da un insegnante e non usarlo mai al posto delle cure.",
@@ -742,6 +755,7 @@
     },
     "yoga-poses-heart-rate-blood-pressure": {
       "title": "Come le diverse posizioni yoga influenzano frequenza cardiaca e pressione",
+      "seoTitle": "Posizioni yoga, battito e pressione",
       "description": "Non tutte le posizioni yoga agiscono allo stesso modo: inversioni, piegamenti all'indietro e rilassamento cambiano battito e pressione in modo diverso.",
       "neuralSuggestion": {
         "text": "Posizioni calmanti per rallentare, posizioni attivanti per svegliarti — e concludi sempre in savasana.",
@@ -775,6 +789,7 @@
     },
     "yoga-breathing-diabetes-blood-sugar": {
       "title": "Yoga e respirazione per il diabete di tipo 2: cosa mostra la ricerca indiana",
+      "seoTitle": "Yoga e respirazione per il diabete di tipo 2",
       "description": "Yoga e pranayama aggiunti alle cure standard hanno migliorato glicemia, HRV e rischio cardiometabolico nel diabete di tipo 2 in studi indiani. Le prove.",
       "neuralSuggestion": {
         "text": "Un complemento alla cura del diabete, mai un sostituto. Mantieni i farmaci, controlla la glicemia e costruisci la pratica nel corso delle settimane.",
@@ -808,6 +823,7 @@
     },
     "morita-therapy-tracking-paradox": {
       "title": "Il paradosso di osservare il proprio corpo: la lezione della terapia Morita",
+      "seoTitle": "Terapia Morita e il paradosso del tracking",
       "description": "Fissarsi su un sintomo può peggiorarlo: la terapia Morita giapponese lo descrisse un secolo fa. Cosa insegna su ansia, monitoraggio e arugamama.",
       "neuralSuggestion": {
         "text": "Informato, non ossessionato. Dai un'occhiata alla tendenza, poi agisci — respira, riposa, muoviti — e lascia che il numero segua.",
@@ -841,6 +857,7 @@
     },
     "pranayama-metabolic-syndrome": {
       "title": "La respirazione può aiutare la sindrome metabolica? Ricerca sui giovani adulti",
+      "seoTitle": "Pranayama e sindrome metabolica nei giovani",
       "description": "Sindrome metabolica in aumento nei giovani sedentari: in uno studio indiano il pranayama ha migliorato pressione e marcatori metabolici.",
       "neuralSuggestion": {
         "text": "Una piccola leva gratuita sull'asse dello stress — in aggiunta a movimento e dieta, mai al loro posto.",
@@ -874,6 +891,7 @@
     },
     "doctors-and-your-data": {
       "title": "I medici e i tuoi dati: quale specialista può usare cuore, HRV e sonno",
+      "seoTitle": "I medici e i tuoi dati",
       "description": "Il tuo orologio registra mesi di battito, HRV, respiro e sonno. Quale di 11 medici può usarli e per cosa: dal medico di base al cardiologo, al pneumologo.",
       "neuralSuggestion": {
         "text": "Inizia dalla guida generale, poi scegli il medico adatto alla tua domanda.",
@@ -903,6 +921,7 @@
     },
     "talk-to-your-doctor-about-wearable-data": {
       "title": "Come parlare con il medico dei dati del tuo orologio (senza essere liquidato)",
+      "seoTitle": "Parlare al medico dei dati dell’orologio",
       "description": "Il tuo orologio raccoglie mesi di dati su battito, HRV e sonno. Cosa trovano utile i medici, come preparare un riepilogo di una pagina e cosa chiedere.",
       "neuralSuggestion": {
         "text": "Prima i sintomi, poi i dati: una pagina con la tua baseline, cosa è cambiato e quando.",
@@ -936,6 +955,7 @@
     },
     "onda-report-for-your-gp": {
       "title": "Mostrare i dati del cuore al medico di base: cosa può farne",
+      "seoTitle": "I dati del cuore al medico di base",
       "description": "Il medico di famiglia è spesso il primo a vedere i dati del tuo orologio. Come legge un report di battito e HRV, come ti aiuta e come sfruttare la visita.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -969,6 +989,7 @@
     },
     "onda-report-for-your-cardiologist": {
       "title": "Mostrare i dati del cuore a un cardiologo: cosa può (e non può) farne",
+      "seoTitle": "I dati del cuore al cardiologo",
       "description": "Il cardiologo legge le tendenze del battito in modo diverso dal medico di base. Cosa ricava dal report, quali esami può usare e dove si fermano i dati.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1002,6 +1023,7 @@
     },
     "onda-report-for-your-sleep-specialist": {
       "title": "Mostrare i dati notturni a uno specialista del sonno: cosa dicono e cosa no",
+      "seoTitle": "I dati notturni allo specialista del sonno",
       "description": "Ogni notte l'orologio registra battito, HRV, respiro e orari. Cosa ne ricava lo specialista del sonno, che esami usa e perché fissarsi sui punteggi nuoce.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1035,6 +1057,7 @@
     },
     "onda-report-for-your-sports-doctor": {
       "title": "Mostrare i dati di recupero a un medico dello sport: allenamento e ripresa sicura",
+      "seoTitle": "I dati di recupero al medico dello sport",
       "description": "Battito a riposo e HRV mostrano come reagisci all'allenamento. Come li usa il medico dello sport: overreaching, recupero scarso, ritorno dopo una malattia.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1068,6 +1091,7 @@
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Portare i dati del corpo in terapia: come può usarli uno psicoterapeuta o uno psichiatra",
+      "seoTitle": "Portare i dati del corpo in terapia",
       "description": "Stress ed emozioni lasciano tracce in battito, HRV, respiro e sonno. Come uno psicoterapeuta o uno psichiatra può usarle per trigger, progressi e farmaci.",
       "neuralSuggestion": {
         "text": "Uno specchio, non un verdetto: porta i momenti che contano e condividi solo ciò che scegli.",
@@ -1101,6 +1125,7 @@
     },
     "onda-report-for-your-neurologist": {
       "title": "Battito e sistema nervoso: cosa può farne il neurologo (POTS, disautonomia, long COVID)",
+      "seoTitle": "Battito e neurologo: POTS e long COVID",
       "description": "Tachicardia quando ti alzi, stanchezza dopo piccoli sforzi, recupero lento dopo un virus: come il neurologo usa battito e HRV per POTS e disautonomia.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1134,6 +1159,7 @@
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Battito e ormoni: cosa può farne l'endocrinologo (tiroide, diabete)",
+      "seoTitle": "Battito e ormoni: dati per l'endocrinologo",
       "description": "La tiroide può alzare o abbassare il battito a riposo e il diabete ridurre la HRV. Come li usa l'endocrinologo e dove servono le analisi del sangue.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1167,6 +1193,7 @@
     },
     "onda-report-for-your-gynecologist": {
       "title": "Il ciclo nel tuo battito: cosa può farne il ginecologo (ciclo, gravidanza, menopausa)",
+      "seoTitle": "Il ciclo nel battito: dati per il ginecologo",
       "description": "Battito a riposo e HRV cambiano con il ciclo mestruale, in gravidanza e in menopausa. Come il ginecologo può usare questi dati e cosa non possono dire.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1200,6 +1227,7 @@
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Il tuo respiro in numeri: cosa può farne il pneumologo (asma, fiato corto)",
+      "seoTitle": "Il respiro in numeri: dati per il pneumologo",
       "description": "L'orologio misura il respiro notturno, un segnale che cambia prima che tu stia male. Come lo usa il pneumologo e il ruolo della rieducazione respiratoria.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1233,6 +1261,7 @@
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "La settimana lavorativa nel battito: cosa può farne il medico del lavoro (turni, burnout)",
+      "seoTitle": "Turni e burnout: dati per il medico del lavoro",
       "description": "Turni di notte, orari lunghi e stress lasciano il segno su battito a riposo, HRV e sonno. Come li legge il medico del lavoro, e la riservatezza.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1266,6 +1295,7 @@
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "Il recupero non è una linea retta: cosa possono farne fisiatra e fisioterapista",
+      "seoTitle": "Il recupero non è una linea retta",
       "description": "Dopo una malattia, un intervento o un evento cardiaco il recupero va a gradini. Come la riabilitazione usa battito, HRV e respiro per dosare la ripresa.",
       "neuralSuggestion": {
         "text": "Porta una sola pagina, non il telefono: la tua baseline, cosa è cambiato e quando, le tue note e le tue domande.",
@@ -1393,6 +1423,7 @@
     },
     "how-to-measure-hrv-consistently": {
       "title": "Come misurare l'HRV perché il numero significhi davvero qualcosa",
+      "seoTitle": "Come misurare l'HRV in modo costante",
       "description": "L'HRV cambia con orario, postura, respiro, caffeina e pasti: una lettura casuale è rumore. Le regole per renderla confrontabile e perché conta la tendenza.",
       "neuralSuggestion": {
         "text": "Un singolo numero di HRV è quasi privo di significato. Una serie costante è una delle cose più utili che possiedi.",
@@ -1440,6 +1471,7 @@
     },
     "how-much-alcohol-lowers-hrv": {
       "title": "Quanto abbassa l'alcol la tua HRV? I dati per numero di bicchieri",
+      "seoTitle": "Quanto l'alcol abbassa l'HRV: i dati",
       "description": "L'alcol abbassa la variabilità cardiaca e alza la frequenza a riposo notturna, in base alla dose. Quanto costa ogni bicchiere al tuo recupero, dai dati.",
       "neuralSuggestion": {
         "text": "L'effetto di due bicchieri di vino sulla tua HRV non è uguale a quello su chiunque altro. Guarda il tuo.",
@@ -1473,6 +1505,7 @@
     },
     "your-baseline-knows-first": {
       "title": "La tua baseline lo sa prima: il segnale che il corpo invia prima che tu te ne accorga",
+      "seoTitle": "La tua baseline lo sa prima di te",
       "description": "Frequenza a riposo, HRV e respiro si scostano dalla tua normalità prima che tu ti senta «giù». Perché conta lo scostamento, non il numero.",
       "neuralSuggestion": {
         "text": "Una baseline serve solo se qualcosa te la rilegge. È esattamente il compito del segnale.",
@@ -1520,6 +1553,7 @@
     },
     "what-your-apple-watch-records": {
       "title": "Cosa registra il tuo Apple Watch in due settimane",
+      "seoTitle": "Cosa registra il tuo Apple Watch",
       "description": "Ogni notte Apple Watch registra polso a riposo, HRV e respiro. Cosa sono questi numeri e perché due settimane di intervallo dicono più di una lettura.",
       "neuralSuggestion": {
         "text": "Guarda le tue due settimane, lette dal tuo orologio sul tuo iPhone: nulla viene caricato.",
@@ -1531,6 +1565,7 @@
     },
     "overtraining-hrv-resting-heart-rate": {
       "title": "Il sovrallenamento ha un numero: quando i segnali di recupero si invertono",
+      "seoTitle": "Sovrallenamento, battito a riposo e HRV",
       "description": "Più allenamento non è più progresso: decide il recupero. Se il carico lo supera, la frequenza a riposo sale e la HRV scende. Come leggere la svolta.",
       "neuralSuggestion": {
         "text": "L’allenamento è lo stimolo. Il recupero è dove avviene davvero l’adattamento, se glielo permetti.",
@@ -1578,6 +1613,7 @@
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "Apple Watch ora mostra due valori di HRV: HRV di recupero vs HRV complessiva",
+      "seoTitle": "Apple Watch: HRV di recupero vs complessiva",
       "description": "A settembre 2026 Apple ha diviso la HRV di Apple Watch in HRV di recupero e HRV complessiva e aggiunto l’RMSSD. Cosa cambia e perché non unire gli storici.",
       "neuralSuggestion": {
         "text": "Sono metriche notturne passive. Allenare la tua HRV sul momento è tutt’altro lavoro.",
@@ -1625,6 +1661,7 @@
     },
     "how-long-does-alcohol-stay-in-your-system": {
       "title": "Quanto tempo resta l'alcol nel corpo e nel sangue?",
+      "seoTitle": "Quanto tempo resta l'alcol nel corpo?",
       "description": "Quanto resta l'alcol nel corpo, quanto velocemente si smaltisce (~un drink all'ora), perché niente lo accelera e cosa fa al sonno e al recupero.",
       "neuralSuggestion": {
         "text": "Stima il tuo tasso alcolemico e le ore necessarie per smaltirlo in base al tuo peso e a ciò che hai bevuto.",
@@ -1676,6 +1713,7 @@
     },
     "hrv-questions-answered": {
       "title": "Domande sull'HRV: 52 risposte chiare sulla variabilità cardiaca",
+      "seoTitle": "Domande sull'HRV: 52 risposte brevi",
       "description": "Qual è un buon HRV? Perché il mio è basso? Alcol, caffè o respirazione lo cambiano? 52 risposte brevi e con fonti sulla variabilità della frequenza cardiaca.",
       "neuralSuggestion": {
         "text": "Quasi tutte le domande sull'HRV portano allo stesso punto: il tuo intervallo personale conta più di qualsiasi media.",

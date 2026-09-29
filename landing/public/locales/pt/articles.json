@@ -88,6 +88,7 @@
     },
     "resting-heart-rate-by-age": {
       "title": "Frequência cardíaca em repouso por idade: qual é o normal?",
+      "seoTitle": "Frequência cardíaca em repouso por idade",
       "description": "Frequência cardíaca em repouso normal em adultos: 60–100 bpm, conforme idade e condicionamento. Valores por idade e o que a faz subir ou cair.",
       "neuralSuggestion": {
         "text": "Uma medição diz pouco. A tendência da sua frequência em repouso em relação ao seu normal diz muito.",
@@ -121,6 +122,7 @@
     },
     "alternate-nostril-breathing": {
       "title": "Respiração alternada (Nadi Shodhana): benefícios e como fazer",
+      "seoTitle": "Respiração alternada (Nadi Shodhana)",
       "description": "A respiração alternada pelas narinas (Nadi Shodhana) acalma o sistema nervoso e pode baixar a pressão. Técnica, papel do ritmo lento e quando usar.",
       "neuralSuggestion": {
         "text": "A calma vem do ritmo, não das narinas. Confira nos seus próprios dados.",
@@ -172,6 +174,7 @@
     },
     "nose-vs-mouth-breathing": {
       "title": "Respirar pelo nariz ou pela boca: o que muda no sistema nervoso",
+      "seoTitle": "Respirar pelo nariz ou pela boca?",
       "description": "Respirar pelo nariz age no equilíbrio autonômico e na concentração de um jeito diferente da boca. O que a pesquisa japonesa achou e quando cada uma importa.",
       "neuralSuggestion": {
         "text": "Um minuto pelo nariz, depois um pela boca: a diferença costuma aparecer claramente no seu ritmo cardíaco.",
@@ -238,6 +241,7 @@
     },
     "cardiac-coherence-365-method": {
       "title": "Coerência cardíaca e método 365: a respiração à francesa",
+      "seoTitle": "Coerência cardíaca e o método 365",
       "description": "Coerência cardíaca: 6 respirações por minuto, 3 vezes ao dia, por 5 minutos (método 365). Uma tradição clínica francesa para equilibrar o sistema nervoso.",
       "neuralSuggestion": {
         "text": "Uma sessão acalma, mas o efeito passa — é exatamente por isso que o método 365 distribui três ao longo do dia.",
@@ -289,6 +293,7 @@
     },
     "how-much-meditation-do-you-need": {
       "title": "Quanta meditação você precisa para ver resultados?",
+      "seoTitle": "Quanta meditação você precisa?",
       "description": "Quanto tempo e com que frequência meditar? 10–12 minutos por dia já trazem mudanças mensuráveis, e ver o progresso ajuda a manter.",
       "neuralSuggestion": {
         "text": "A melhor dose não é o máximo teórico, e sim a maior que você realmente vai manter. 10 minutos confiáveis valem mais que 30 idealizados.",
@@ -340,6 +345,7 @@
     },
     "measuring-meditation-progress": {
       "title": "Como medir seu progresso na meditação (em vez de adivinhar)",
+      "seoTitle": "Como medir seu progresso na meditação",
       "description": "O progresso na meditação parece invisível, mas dá para medir pela VFC, pela frequência em repouso e pela resposta do corpo. Veja como acompanhar.",
       "neuralSuggestion": {
         "text": "O placar que sempre faltou à meditação. Olhe a tendência semanal da sua linha de base — nunca corra atrás do número de um só dia.",
@@ -391,6 +397,7 @@
     },
     "humming-breath-vagus": {
       "title": "Respiração do zumbido (Bhramari): o jeito mais simples de estimular o nervo vago",
+      "seoTitle": "Respiração Bhramari e o nervo vago",
       "description": "A respiração do zumbido (Bhramari) estimula o nervo vago com a vibração da laringe. Como fazer, por que funciona e quando usar.",
       "neuralSuggestion": {
         "text": "O zumbido dá ao nervo vago um empurrão direto e mecânico. Veja seu pulso se acalmar enquanto você zumbe.",
@@ -442,6 +449,7 @@
     },
     "yoga-nidra-sleep-science": {
       "title": "Yoga Nidra para dormir: a ciência do “sono yóguico”",
+      "seoTitle": "Yoga Nidra para dormir: o que diz a ciência",
       "description": "O Yoga Nidra, o “sono yóguico”, pode melhorar o sono com ondas cerebrais mais lentas e nervos mais calmos. O que a pesquisa mostra e como praticar.",
       "neuralSuggestion": {
         "text": "Não tente dormir — siga a voz. É a queda da ativação que deixa o sono chegar.",
@@ -475,6 +483,7 @@
     },
     "physiological-sigh": {
       "title": "Suspiro fisiológico: o jeito mais rápido de acalmar o sistema nervoso",
+      "seoTitle": "Suspiro fisiológico: acalme-se rápido",
       "description": "O suspiro fisiológico — duas inspirações e uma longa expiração — é a técnica mais rápida contra o estresse. Como funciona e quando usar.",
       "neuralSuggestion": {
         "text": "Normalmente você não vê uma técnica de respiração funcionando. Veja seu pulso cair ao vivo enquanto você suspira.",
@@ -526,6 +535,7 @@
     },
     "4-7-8-breathing": {
       "title": "Respiração 4-7-8: como funciona e quando não funciona",
+      "seoTitle": "Respiração 4-7-8 para dormir: como funciona",
       "description": "Respiração 4-7-8: inspira 4, segura 7, expira 8. Por que a expiração longa acalma, como fazer e quando ela realmente ajuda a dormir.",
       "neuralSuggestion": {
         "text": "Contando segundos e torcendo? Veja seu pulso realmente desacelerar à medida que as expirações ficam mais longas.",
@@ -577,6 +587,7 @@
     },
     "cardiac-coherence-insomnia-sleep": {
       "title": "Coerência cardíaca para a insônia: a abordagem clínica francesa",
+      "seoTitle": "Coerência cardíaca para a insônia",
       "description": "Na França, a coerência cardíaca — respiração lenta que aumenta a VFC — é usada contra a insônia crônica, baixando a hiperativação. Método e prática.",
       "neuralSuggestion": {
         "text": "Não corra atrás do sono — baixe a ativação. Uma sessão de coerência à noite abre espaço para o sono chegar sozinho.",
@@ -610,6 +621,7 @@
     },
     "bhastrika-pranayama-brain-anxiety": {
       "title": "Bhastrika pranayama e o cérebro: como a respiração do fole muda a ansiedade",
+      "seoTitle": "Bhastrika pranayama, cérebro e ansiedade",
       "description": "Um estudo randomizado com imagem cerebral mostrou que o Bhastrika reduz a ansiedade e muda a atividade da amígdala, da ínsula e do pré-frontal.",
       "neuralSuggestion": {
         "text": "Energizante na hora, mais calma em semanas. Use o Bhastrika de manhã — e uma técnica lenta quando precisar de calma imediata.",
@@ -643,6 +655,7 @@
     },
     "om-chanting-brain-vagus": {
       "title": "O canto do OM e o cérebro: como o som sagrado acalma a amígdala",
+      "seoTitle": "Canto do OM, amígdala e nervo vago",
       "description": "Um estudo de ressonância mostrou que o canto do OM acalma a amígdala e o hipocampo, num padrão que os autores compararam à estimulação do nervo vago.",
       "neuralSuggestion": {
         "text": "Deixe o M vibrar. A vibração e a expiração longa fazem o trabalho — não é preciso crer em nada.",
@@ -676,6 +689,7 @@
     },
     "trataka-candle-gazing-focus": {
       "title": "Trataka (olhar a vela): a prática de yoga para foco e calma",
+      "seoTitle": "Trataka (olhar a vela) para foco",
       "description": "Trataka — olhar com calma para um ponto, como a chama de uma vela — é uma prática yóguica de concentração associada a melhor cognição e atenção.",
       "neuralSuggestion": {
         "text": "Voltar é a prática. Cada vez que a atenção se desvia e você a traz de volta, é uma repetição para o foco.",
@@ -709,6 +723,7 @@
     },
     "sudarshan-kriya-yoga-breathing": {
       "title": "Sudarshan Kriya Yoga: a respiração comparada a antidepressivos",
+      "seoTitle": "Sudarshan Kriya Yoga: evidências e limites",
       "description": "Sudarshan Kriya Yoga (SKY): respiração estudada em depressão, TEPT e estresse — num estudo, comparável a um antidepressivo. Evidências e ressalvas.",
       "neuralSuggestion": {
         "text": "Evidências promissoras e incomumente sérias — mas aprenda a kriya completa com um instrutor e nunca a use no lugar de tratamento.",
@@ -742,6 +757,7 @@
     },
     "yoga-poses-heart-rate-blood-pressure": {
       "title": "Como diferentes posturas de yoga afetam frequência cardíaca e pressão",
+      "seoTitle": "Posturas de yoga, frequência e pressão",
       "description": "Nem toda postura de yoga age igual no coração: invertidas, extensões e posturas de relaxamento mudam frequência cardíaca e pressão de formas diferentes.",
       "neuralSuggestion": {
         "text": "Posturas calmantes para desacelerar, ativadoras para despertar — e termine sempre em savasana.",
@@ -775,6 +791,7 @@
     },
     "yoga-breathing-diabetes-blood-sugar": {
       "title": "Yoga e respiração no diabetes tipo 2: o que mostra a pesquisa indiana",
+      "seoTitle": "Yoga e respiração no diabetes tipo 2",
       "description": "Yoga e pranayama somados ao tratamento padrão melhoraram glicemia, VFC e risco cardiometabólico no diabetes tipo 2 em estudos indianos. As evidências.",
       "neuralSuggestion": {
         "text": "Um complemento ao cuidado do diabetes, nunca um substituto. Mantenha a medicação, monitore a glicose e construa a prática ao longo de semanas.",
@@ -808,6 +825,7 @@
     },
     "morita-therapy-tracking-paradox": {
       "title": "O paradoxo de vigiar o próprio corpo: o que ensina a terapia Morita",
+      "seoTitle": "Terapia Morita e o paradoxo de se monitorar",
       "description": "Focar demais num sintoma pode piorá-lo — a terapia Morita japonesa descreveu isso há um século. O que ensina sobre ansiedade, monitoramento e arugamama.",
       "neuralSuggestion": {
         "text": "Informado, não obcecado. Dê uma olhada na tendência e depois aja — respire, descanse, mova-se — e deixe o número acompanhar.",
@@ -841,6 +859,7 @@
     },
     "pranayama-metabolic-syndrome": {
       "title": "A respiração ajuda na síndrome metabólica? Pesquisa com jovens adultos",
+      "seoTitle": "Pranayama e síndrome metabólica em jovens",
       "description": "A síndrome metabólica cresce entre jovens sedentários. Estudo indiano: o pranayama melhorou pressão e marcadores metabólicos em estudantes de medicina.",
       "neuralSuggestion": {
         "text": "Uma alavanca pequena e gratuita no eixo do estresse — além de movimento e alimentação, nunca no lugar deles.",
@@ -874,6 +893,7 @@
     },
     "doctors-and-your-data": {
       "title": "Os médicos e os seus dados: qual especialista pode usá-los",
+      "seoTitle": "Os médicos e os seus dados",
       "description": "Qual de 11 médicos pode usar os dados de frequência cardíaca, VFC, respiração e sono do seu relógio — do clínico geral ao pneumologista — e como.",
       "neuralSuggestion": {
         "text": "Comece pelo guia geral e depois escolha o médico que combina com a sua dúvida.",
@@ -903,6 +923,7 @@
     },
     "talk-to-your-doctor-about-wearable-data": {
       "title": "Como falar com seu médico sobre os dados do seu relógio",
+      "seoTitle": "Dados do relógio: como falar com o médico",
       "description": "O que os médicos acham útil nos dados de frequência cardíaca, VFC e sono do seu relógio, como montar um resumo de uma página e quais perguntas fazer.",
       "neuralSuggestion": {
         "text": "Sintomas primeiro, dados depois — uma página com sua linha de base, o que mudou e quando.",
@@ -936,6 +957,7 @@
     },
     "onda-report-for-your-gp": {
       "title": "Seus dados cardíacos e o clínico geral: o que ele pode fazer",
+      "seoTitle": "Seus dados cardíacos para o clínico geral",
       "description": "O clínico geral costuma ser o primeiro a ver os dados do seu relógio. Como ele lê um relatório de frequência cardíaca e VFC e como aproveitar a consulta.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -969,6 +991,7 @@
     },
     "onda-report-for-your-cardiologist": {
       "title": "Seus dados cardíacos e o cardiologista: o que ele pode fazer",
+      "seoTitle": "Seus dados cardíacos para o cardiologista",
       "description": "Como o cardiologista lê um relatório de frequência cardíaca de repouso, VFC e respiração, que exames pode usar depois e onde os dados do relógio param.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -1068,6 +1091,7 @@
     },
     "onda-report-for-your-therapist-or-psychiatrist": {
       "title": "Levando os dados do seu corpo para a terapia: como um terapeuta ou psiquiatra pode usá-los",
+      "seoTitle": "Levando os dados do corpo para a terapia",
       "description": "Estresse e emoções deixam marcas na frequência cardíaca, VFC e sono. Como terapeuta ou psiquiatra usam esse histórico: gatilhos, progresso, medicação.",
       "neuralSuggestion": {
         "text": "Um espelho, não um veredito: leve os momentos que importaram e compartilhe só o que escolher.",
@@ -1101,6 +1125,7 @@
     },
     "onda-report-for-your-neurologist": {
       "title": "Frequência cardíaca e o neurologista: POTS, disautonomia e COVID longa",
+      "seoTitle": "Frequência cardíaca, POTS e COVID longa",
       "description": "Coração dispara ao ficar de pé, cansaço após pequenos esforços, COVID longa: como o neurologista usa seu histórico de frequência cardíaca e VFC.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -1134,6 +1159,7 @@
     },
     "onda-report-for-your-endocrinologist": {
       "title": "Frequência cardíaca e hormônios: o endocrinologista (tireoide, diabetes)",
+      "seoTitle": "Frequência cardíaca e hormônios",
       "description": "A tireoide acelera ou desacelera o pulso de repouso e o diabetes pode baixar a VFC. Como o endocrinologista usa seu histórico cardíaco.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -1167,6 +1193,7 @@
     },
     "onda-report-for-your-gynecologist": {
       "title": "Seu ciclo na frequência cardíaca: ginecologista, gravidez e menopausa",
+      "seoTitle": "Seu ciclo na frequência cardíaca",
       "description": "Frequência cardíaca de repouso e VFC mudam no ciclo menstrual, na gravidez e na menopausa. Como o ginecologista usa esse histórico e o que ele não mostra.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -1200,6 +1227,7 @@
     },
     "onda-report-for-your-pulmonologist": {
       "title": "Sua respiração em números: o pneumologista, asma e falta de ar",
+      "seoTitle": "Sua respiração em números: o pneumologista",
       "description": "Seu relógio registra quantas vezes você respira à noite. Como o pneumologista usa esse histórico e por que a reeducação respiratória está nas diretrizes.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -1233,6 +1261,7 @@
     },
     "onda-report-for-your-occupational-health-doctor": {
       "title": "Seu trabalho no seu pulso: o médico do trabalho, turnos e burnout",
+      "seoTitle": "Turnos e burnout: dados ao médico do trabalho",
       "description": "Plantões noturnos, jornadas longas e estresse crônico marcam a frequência cardíaca, a VFC e o sono. Como o médico do trabalho usa isso — e o sigilo.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -1266,6 +1295,7 @@
     },
     "onda-report-for-your-rehabilitation-team": {
       "title": "A recuperação não é linear: seus dados para fisiatra e fisioterapeuta",
+      "seoTitle": "A recuperação não é linear: seus dados",
       "description": "Após doença, cirurgia ou infarto, a recuperação tem degraus e recaídas. Como a equipe de reabilitação usa pulso, VFC e respiração para dosar seu retorno.",
       "neuralSuggestion": {
         "text": "Leve uma página, não o seu celular: sua linha de base, o que mudou e quando, suas anotações e suas perguntas.",
@@ -1393,6 +1423,7 @@
     },
     "how-to-measure-hrv-consistently": {
       "title": "Como medir a HRV para que o número realmente signifique algo",
+      "seoTitle": "Como medir a HRV de forma consistente",
       "description": "A HRV oscila com horário, postura, respiração, cafeína e refeição — leitura aleatória é ruído. Regras para torná-la comparável e por que a tendência vence.",
       "neuralSuggestion": {
         "text": "Um número de HRV isolado quase não significa nada. Uma série consistente é uma das coisas mais úteis que você tem.",
@@ -1440,6 +1471,7 @@
     },
     "how-much-alcohol-lowers-hrv": {
       "title": "Quanto o álcool reduz sua HRV? Os dados por número de doses",
+      "seoTitle": "Quanto o álcool reduz sua HRV?",
       "description": "O álcool reduz a HRV e eleva a frequência cardíaca em repouso à noite, conforme a dose. Quanto cada dose custa à sua recuperação, segundo os dados.",
       "neuralSuggestion": {
         "text": "O efeito de duas taças de vinho na sua HRV não é o mesmo que em outra pessoa. Veja o seu.",
@@ -1473,6 +1505,7 @@
     },
     "your-baseline-knows-first": {
       "title": "Sua linha de base sabe primeiro: o sinal que seu corpo envia antes de você perceber",
+      "seoTitle": "Sua linha de base sabe primeiro",
       "description": "Sua FC de repouso, HRV e respiração se desviam do seu normal antes de você se sentir “estranho”. Por que o desvio, e não o número, é o sinal.",
       "neuralSuggestion": {
         "text": "Uma linha de base só é útil se algo a ler de volta para você. Esse é todo o trabalho do sinal.",
@@ -1531,6 +1564,7 @@
     },
     "overtraining-hrv-resting-heart-rate": {
       "title": "O overtraining tem um número: quando seus sinais de recuperação viram",
+      "seoTitle": "Overtraining, frequência em repouso e HRV",
       "description": "Treinar mais não é progredir mais — a recuperação decide. Quando a carga supera a recuperação, a FC de repouso sobe e a HRV cai. Leia a virada a tempo.",
       "neuralSuggestion": {
         "text": "O treino é o estímulo. A recuperação é onde a adaptação de fato acontece — se você deixar.",
@@ -1578,6 +1612,7 @@
     },
     "apple-watch-recovery-hrv-vs-overall-hrv": {
       "title": "O Apple Watch agora mostra dois números de HRV: HRV de recuperação vs HRV geral",
+      "seoTitle": "Apple Watch: HRV de recuperação vs geral",
       "description": "Em setembro de 2026 a Apple dividiu a HRV do Apple Watch em HRV de recuperação e HRV geral e adicionou RMSSD ao HealthKit. O que mudou e por quê.",
       "neuralSuggestion": {
         "text": "Essas são métricas noturnas passivas. Treinar sua HRV no momento é um trabalho completamente diferente.",
@@ -1676,6 +1711,7 @@
     },
     "hrv-questions-answered": {
       "title": "VFC (HRV): 52 perguntas e respostas diretas sobre variabilidade cardíaca",
+      "seoTitle": "HRV: 52 perguntas e respostas diretas",
       "description": "Qual é uma boa VFC? Por que a minha está baixa? Álcool, cafeína ou respiração mudam a VFC? 52 respostas curtas e com fontes, com guias e calculadoras grátis.",
       "neuralSuggestion": {
         "text": "A maioria das perguntas sobre VFC termina no mesmo lugar: a sua própria faixa importa mais do que qualquer média.",
