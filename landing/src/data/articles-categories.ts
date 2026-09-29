@@ -8,7 +8,7 @@ export const FEATURED_ARTICLE_SLUGS = [
   'electric-medicine-neuromodulation',
   'muscle-metabolic-marker',
   'chm-continuous-hormone-monitoring',
-  'glymphatic-flush-clearing-neural-cache',
+  'nightly-flush-glymphatic-neural-cache',
   'cpg-neural-autopilot',
   'co2-tolerance-expanding-oxygen-limit',
   'dopamine-architecture-mastering-desire',

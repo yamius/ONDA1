@@ -841,24 +841,6 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1111/j.1467-789X.2005.00178.x"
     }
   ],
-  "glymphatic-flush-clearing-neural-cache": [
-    {
-      "title": "Sleep Drives Metabolite Clearance from the Adult Brain",
-      "authors": "Xie L et al.",
-      "year": 2013,
-      "journal": "Science",
-      "doi": "10.1126/science.1241224",
-      "url": "https://doi.org/10.1126/science.1241224"
-    },
-    {
-      "title": "The Effect of Body Posture on Brain Glymphatic Transport",
-      "authors": "Lee H et al.",
-      "year": 2015,
-      "journal": "Journal of Neuroscience",
-      "doi": "10.1523/jneurosci.1625-15.2015",
-      "url": "https://doi.org/10.1523/jneurosci.1625-15.2015"
-    }
-  ],
   "gut-brain-axis-data-link": [
     {
       "title": "The Microbiota-Gut-Brain Axis",
@@ -1661,6 +1643,15 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "nightly-flush-glymphatic-neural-cache": [
     {
+      "title": "A paravascular pathway facilitates CSF flow through the brain parenchyma and the clearance of interstitial solutes, including amyloid β",
+      "authors": "Iliff JJ et al.",
+      "year": 2012,
+      "journal": "Science Translational Medicine",
+      "doi": "10.1126/scitranslmed.3003748",
+      "pmid": "22896675",
+      "url": "https://doi.org/10.1126/scitranslmed.3003748"
+    },
+    {
       "title": "Sleep drives metabolite clearance from the adult brain",
       "authors": "Xie L et al.",
       "year": 2013,
@@ -1668,6 +1659,51 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1126/science.1241224",
       "pmid": "24136970",
       "url": "https://doi.org/10.1126/science.1241224"
+    },
+    {
+      "title": "The Effect of Body Posture on Brain Glymphatic Transport",
+      "authors": "Lee H et al.",
+      "year": 2015,
+      "journal": "Journal of Neuroscience",
+      "doi": "10.1523/JNEUROSCI.1625-15.2015",
+      "pmid": "26245965",
+      "url": "https://doi.org/10.1523/JNEUROSCI.1625-15.2015"
+    },
+    {
+      "title": "β-Amyloid accumulation in the human brain after one night of sleep deprivation",
+      "authors": "Shokri-Kojori E et al.",
+      "year": 2018,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "doi": "10.1073/pnas.1721694115",
+      "pmid": "29632177",
+      "url": "https://doi.org/10.1073/pnas.1721694115"
+    },
+    {
+      "title": "Coupled electrophysiological, hemodynamic, and cerebrospinal fluid oscillations in human sleep",
+      "authors": "Fultz NE et al.",
+      "year": 2019,
+      "journal": "Science",
+      "doi": "10.1126/science.aax5440",
+      "pmid": "31672896",
+      "url": "https://doi.org/10.1126/science.aax5440"
+    },
+    {
+      "title": "Sleep deprivation impairs molecular clearance from the human brain",
+      "authors": "Eide PK et al.",
+      "year": 2021,
+      "journal": "Brain",
+      "doi": "10.1093/brain/awaa443",
+      "pmid": "33829232",
+      "url": "https://doi.org/10.1093/brain/awaa443"
+    },
+    {
+      "title": "Brain clearance is reduced during sleep and anesthesia",
+      "authors": "Miao A et al.",
+      "year": 2024,
+      "journal": "Nature Neuroscience",
+      "doi": "10.1038/s41593-024-01638-y",
+      "pmid": "38741022",
+      "url": "https://doi.org/10.1038/s41593-024-01638-y"
     }
   ],
   "normal-hrv-by-age": [

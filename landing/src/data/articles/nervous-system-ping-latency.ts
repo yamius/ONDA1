@@ -34,9 +34,9 @@ const article: Article = {
     '[ LATENCY_AUDIT ] — Neural ping rate measured. LATENCY: LOW — 15ms. PACKET_LOSS: eliminated. System coherence: active.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Nervous system latency is reduced. Now audit the deeper oscillation layer — the glymphatic flush that clears neural cache during sleep.',
-    link: '/articles/glymphatic-flush-clearing-neural-cache',
-    linkText: 'Glymphatic Flush Protocol',
+    text: 'Does sleep really help the brain clear waste? What the glymphatic research shows in people, and where it is still disputed.',
+    link: '/articles/nightly-flush-glymphatic-neural-cache',
+    linkText: 'Does Sleep Really Clean Your Brain?',
   },
   content: `
 ## [ THE PING RATE OF LIFE ]

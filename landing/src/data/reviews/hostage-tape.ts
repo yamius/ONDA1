@@ -58,7 +58,7 @@ Choose Hostage Tape if you have a beard and want subscription-convenient biohack
 
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — nasal breathing and vagal tone
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Hostage Tape — official site', url: 'https://hostagetape.com/' },

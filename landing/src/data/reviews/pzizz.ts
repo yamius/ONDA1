@@ -60,8 +60,7 @@ Choose Pzizz if you simply want to be played to sleep and have no interest in tr
 The sleep biology behind what these apps measure and the protocols they support.
 
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why audio-paired sleep onset works
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep is the metabolic window of the brain
-- [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — the cleanup cycle sleep stages enable
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Pzizz — official site', url: 'https://pzizz.com' },

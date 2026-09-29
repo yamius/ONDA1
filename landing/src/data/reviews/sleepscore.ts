@@ -61,7 +61,7 @@ The sleep biology behind what these apps measure and the protocols they support.
 
 - [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — how to actually shift the rhythm when you have to
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — why audio-paired sleep onset works
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep is the metabolic window of the brain
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'SleepScore — official site', url: 'https://www.sleepscore.com' },

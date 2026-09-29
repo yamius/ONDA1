@@ -57,7 +57,7 @@ Choose Pause Breathwork if you're buying breathwork for somatic / emotional rele
 ## Background reading
 
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Pause Breathwork — official site', url: 'https://www.pausebreathwork.com/' },

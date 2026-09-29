@@ -25,9 +25,9 @@ const STACK_COMPONENTS: Component[] = [
     name: 'OS_STATES',
     protocols: [
       { id: 'phase-lock-delta-wave-amplification', name: 'DELTA_WAVE_AMPLIFICATION', params: '(PHASE_LOCKED)' },
-      { id: 'glymph-sleep-posture', name: 'GRAVITATIONAL_DRAINAGE', params: '(LATERAL_10-15deg)' },
-      { id: 'glymph-thermal-flush', name: 'THERMAL_FLUSH', params: '(HOT_BATH_90min)' },
-      { id: 'glymph-insulin-block', name: 'DIETARY_FIREWALL', params: '(3-4h_PRE_SLEEP)' },
+      { id: 'glymphatic-sleep-duration', name: 'SLEEP_DURATION', params: '(7-9h_REGULAR)' },
+      { id: 'glymphatic-limit-evening-alcohol', name: 'NO_ALCOHOL_NEAR_BED', params: '(EVENING)' },
+      { id: 'glymphatic-check-sleep-apnea', name: 'SNORING_CHECK', params: '(ASK_A_DOCTOR)' },
     ],
   },
   {

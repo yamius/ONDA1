@@ -34,9 +34,9 @@ const article: Article = {
     '[ SYSTEM_CLOCK: RECALIBRATING ] — Zeitgeber signal detected. Melatonin synthesis terminating. Cortisol stack initializing.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Clock aligned. Now optimize the recovery architecture — explore the glymphatic flush protocol.',
-    link: '/articles/glymphatic-flush-clearing-neural-cache',
-    linkText: 'Glymphatic Flush Protocol',
+    text: 'Does sleep really help the brain clear waste? What the glymphatic research shows in people, and where it is still disputed.',
+    link: '/articles/nightly-flush-glymphatic-neural-cache',
+    linkText: 'Does Sleep Really Clean Your Brain?',
   },
   content: `
 ## [ BIOLOGY AS CODE ]

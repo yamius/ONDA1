@@ -38,7 +38,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'electric-medicine-neuromodulation': 'neural-hardware',
   'muscle-metabolic-marker': 'power-grid',
   'chm-continuous-hormone-monitoring': 'system-forecasting',
-  'glymphatic-flush-clearing-neural-cache': 'os-states',
+  'nightly-flush-glymphatic-neural-cache': 'os-states',
   'cpg-neural-autopilot': 'nervous-system',
   'co2-tolerance-expanding-oxygen-limit': 'nervous-system',
   'femtech-cyclical-architecture': 'system-forecasting',
@@ -82,7 +82,6 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'electric-medicine-neuromodulation': '4 min 45 sec',
   'muscle-metabolic-marker': '4 min 20 sec',
   'chm-continuous-hormone-monitoring': '5 min 10 sec',
-  'glymphatic-flush-clearing-neural-cache': '4 min 50 sec',
   'cpg-neural-autopilot': '4 min 40 sec',
   'co2-tolerance-expanding-oxygen-limit': '4 min 50 sec',
   'femtech-cyclical-architecture': '5 min 30 sec',
@@ -102,7 +101,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'fault-tolerant-human-hrv-buffer': '4 min 55 sec',
   'resonant-frequency-system-coherence': '4 min 50 sec',
   'baroreflex-01hz-shift': '5 min 10 sec',
-  'nightly-flush-glymphatic-neural-cache': '5 min 05 sec',
+  'nightly-flush-glymphatic-neural-cache': '7 min',
   'neural-hydraulics-csf-flow': '5 min 15 sec',
   'anti-entropy-neural-architecture': '5 min 30 sec',
   'idle-state-alpha-rhythms': '5 min 00 sec',
@@ -450,14 +449,13 @@ export function ArticlePage() {
       const isElectricMedicineProtocol = isProtocol && article.slug === 'electric-medicine-neuromodulation'
       const isMuscleProtocol = isProtocol && article.slug === 'muscle-metabolic-marker'
       const isChmProtocol = isProtocol && article.slug === 'chm-continuous-hormone-monitoring'
-      const isGlymphaticProtocol = isProtocol && article.slug === 'glymphatic-flush-clearing-neural-cache'
       const isCpgProtocol = isProtocol && article.slug === 'cpg-neural-autopilot'
       const isCo2ToleranceProtocol = isProtocol && article.slug === 'co2-tolerance-expanding-oxygen-limit'
       const isFemtechProtocol = isProtocol && article.slug === 'femtech-cyclical-architecture'
       return (
         <h3
           id={id}
-          className={`mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}
+          className={`mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}
           {...props}
         >
           {children}
@@ -600,16 +598,6 @@ export function ArticlePage() {
           content.includes('task calendar') ||
           content.includes('baseline threshold') ||
           content.includes('automated system notifications'))
-      const isGlymphaticProtocol =
-        isHackBlock &&
-        article.slug === 'glymphatic-flush-clearing-neural-cache' &&
-        (content.includes('lateral position') ||
-          content.includes('right side') ||
-          content.includes('head-of-bed') ||
-          content.includes('hot bath') ||
-          content.includes('17–18°C') ||
-          content.includes('Zero caloric') ||
-          content.includes('3–4 hours before'))
       const isCpgProtocol =
         isHackBlock &&
         article.slug === 'cpg-neural-autopilot' &&
@@ -647,7 +635,6 @@ export function ArticlePage() {
         !isNeuromodProtocol &&
         !isMuscleProtocol &&
         !isChmProtocol &&
-        !isGlymphaticProtocol &&
         !isCpgProtocol &&
         !isFemtechProtocol &&
         !isCacaoStemCellsProtocol &&
@@ -686,8 +673,6 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4'
       } else if (isChmProtocol) {
         blockquoteClass = 'border-l-2 border-amber-500 bg-amber-500/5 pl-6 pr-4'
-      } else if (isGlymphaticProtocol) {
-        blockquoteClass = 'border-l-2 border-indigo-500 bg-indigo-500/5 pl-6 pr-4'
       } else if (isCpgProtocol) {
         blockquoteClass = 'border-l-2 border-blue-500 bg-blue-500/5 pl-6 pr-4'
       } else if (isFemtechProtocol) {

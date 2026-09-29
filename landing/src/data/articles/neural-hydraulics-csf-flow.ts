@@ -34,9 +34,9 @@ const article: Article = {
     '[ PULSE_AMPLITUDE: ACTIVE ] [ HYDRAULIC_RESISTANCE: LOW ] [ STAGE_N3: LOCKED ] — CSF flow initiated. The hydraulic purge is running.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Hydraulics primed. Now maximize the overnight purge — 3 patches for glymphatic cache clearance during N3 sleep.',
+    text: 'Does sleep really help the brain clear waste? What the glymphatic research shows in people, and where it is still disputed.',
     link: '/articles/nightly-flush-glymphatic-neural-cache',
-    linkText: 'Glymphatic Nightly Flush Protocol',
+    linkText: 'Does Sleep Really Clean Your Brain?',
   },
   content: `
 ## [ THE PUMP BEHIND THE THOUGHT ]

@@ -60,7 +60,7 @@ The biology of why bed-temperature regulation drives sleep depth and recovery.
 
 - [Circadian reset: mastering light](/articles/circadian-reset-mastering-light) — why bed-temperature regulation pairs with light timing for sleep depth
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — cooling pairs with audio entrainment for faster sleep onset
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deeper sleep stages from cooling drive brain cleanup
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Sleep Number Climate360 — official', url: 'https://www.sleepnumber.com/c/climate360' },

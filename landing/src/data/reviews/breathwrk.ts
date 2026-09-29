@@ -58,7 +58,7 @@ Choose Breathwrk if you want the largest structured library and science-grounded
 
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — breathwork pairs with audio entrainment for sleep onset
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — vagal tone and parasympathetic activation
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why parasympathetic recovery drives sleep depth
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Breathwrk — official site', url: 'https://www.breathwrk.com/' },

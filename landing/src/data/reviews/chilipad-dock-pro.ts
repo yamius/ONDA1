@@ -58,8 +58,7 @@ Choose ChiliPad Dock Pro if you want premium water-cooled sleep climate without 
 
 The biology of why bed-temperature regulation drives sleep depth and recovery.
 
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deeper sleep stages from cooling drive brain cleanup
-- [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — the metabolic-window benefit cooler sleep amplifies
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 - [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — where cooling fits into a sleep-rhythm reset routine
 `,
   references: [

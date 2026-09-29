@@ -59,8 +59,7 @@ Choose Sleep Cycle if you want a polished, low-effort tracker with a smart alarm
 
 The sleep biology behind what these apps measure and the protocols they support.
 
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep is the metabolic window of the brain
-- [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — the cleanup cycle sleep stages enable
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 - [Neural hydraulics: CSF flow](/articles/neural-hydraulics-csf-flow) — CSF circulation during sleep as the substrate of glymphatic clearance
 `,
   references: [

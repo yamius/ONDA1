@@ -57,7 +57,7 @@ Choose EarthPulse if your PEMF thesis is sleep — under-mattress install, overn
 ## Background reading
 
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep) — overnight entrainment paired with PEMF
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why deep sleep drives recovery
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 - [Ancestral sync — circadian anchors](/articles/ancestral-sync-circadian-anchors)
 `,
   references: [

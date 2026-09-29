@@ -58,7 +58,7 @@ Choose Theragun PRO Plus for spec-ceiling percussion therapy with Therabody ecos
 
 - [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — percussion + circulation in muscle recovery
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Therabody — official site', url: 'https://www.therabody.com/' },

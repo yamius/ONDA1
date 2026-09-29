@@ -58,7 +58,7 @@ Choose Tempur-Breeze Pro if you want a premium mattress that runs cooler than st
 
 The biology of why bed-temperature regulation drives sleep depth and recovery.
 
-- [Glymphatic flush: clearing the neural cache](/articles/glymphatic-flush-clearing-neural-cache) — the metabolic-window benefit cooler sleep amplifies
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 - [Protocol: the circadian hard reset](/articles/protocol-circadian-hard-reset) — where cooling fits into a sleep-rhythm reset routine
 - [Ancestral sync and circadian anchors](/articles/ancestral-sync-circadian-anchors) — why nocturnal cooling matches the ancestral baseline
 `,

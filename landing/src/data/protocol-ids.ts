@@ -39,7 +39,6 @@ const ARTICLE_SHORT: Record<string, string> = {
   'electric-medicine-neuromodulation': 'neuromod',
   'muscle-metabolic-marker': 'muscle',
   'chm-continuous-hormone-monitoring': 'chm',
-  'glymphatic-flush-clearing-neural-cache': 'glymph',
   'cpg-neural-autopilot': 'cpg',
   'co2-tolerance-expanding-oxygen-limit': 'co2',
   'femtech-cyclical-architecture': 'femtech',
@@ -133,10 +132,10 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'chm-cortisol-sync': 'chm-continuous-hormone-monitoring',
   'chm-performance-window': 'chm-continuous-hormone-monitoring',
   'chm-crash-prevention': 'chm-continuous-hormone-monitoring',
-  // glymphatic-flush-clearing-neural-cache
-  'glymph-sleep-posture': 'glymphatic-flush-clearing-neural-cache',
-  'glymph-thermal-flush': 'glymphatic-flush-clearing-neural-cache',
-  'glymph-insulin-block': 'glymphatic-flush-clearing-neural-cache',
+  // nightly-flush-glymphatic-neural-cache
+  'glymphatic-sleep-duration': 'nightly-flush-glymphatic-neural-cache',
+  'glymphatic-limit-evening-alcohol': 'nightly-flush-glymphatic-neural-cache',
+  'glymphatic-check-sleep-apnea': 'nightly-flush-glymphatic-neural-cache',
   // cpg-neural-autopilot
   'cpg-cross-lateral': 'cpg-neural-autopilot',
   'cpg-cadence-hack': 'cpg-neural-autopilot',

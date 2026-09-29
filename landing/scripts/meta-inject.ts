@@ -387,7 +387,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'baroreflex-01hz-shift':
     'At 0.1 Hz your breathing locks with Mayer Waves, hijacking the baroreflex to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal in under 90 seconds.',
   'nightly-flush-glymphatic-neural-cache':
-    'The glymphatic system only runs during Deep Sleep — flushing beta-amyloids via 60% expanded intercellular space. The ONDA purge protocol maximizes N3 depth, arterial pulsatility, and lateral positioning.',
+    'Sleep likely helps the brain clear waste, but most evidence is from mice and a 2024 study disputes it. What is proven in humans, sleep position, and what helps.',
   'neural-hydraulics-csf-flow':
     'The brain is a hydraulic machine — arteries act as pistons, CSF flushes metabolic waste, posture controls pressure. The ONDA hydraulic protocol primes vascular elasticity, gravity, and breath for full nightly purge.',
   'anti-entropy-neural-architecture':
@@ -2847,16 +2847,15 @@ export function getMetaForRoute(route: string): RouteMeta {
                           : slug === 'nightly-flush-glymphatic-neural-cache'
                             ? {
                                 keywords: [
-                                  'Glymphatic System Optimization',
-                                  'Deep Sleep Brain Detox',
-                                  'Beta-Amyloid Clearance',
-                                  'Neural Cache Clearance',
-                                  'Stage N3 Sleep',
-                                  'Cerebrospinal Fluid Circulation',
-                                  'Sleep Position Optimization',
-                                  'ONDA Protocol',
+                                  'glymphatic system',
+                                  'does sleep clean the brain',
+                                  'sleep and brain waste clearance',
+                                  'cerebrospinal fluid sleep',
+                                  'amyloid beta sleep deprivation',
+                                  'sleep position glymphatic',
+                                  'sleep and Alzheimer risk',
                                 ],
-                                audience: 'Biohackers, Neuroscientists, Longevity Researchers, High-Performers',
+                                audience: 'Adults interested in sleep and brain health',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }

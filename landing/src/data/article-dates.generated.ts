@@ -194,7 +194,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "digital-dementia-attentional-control": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:05:30+02:00"
   },
   "doctors-and-your-data": {
     "published": "2026-09-26T13:37:15+02:00",
@@ -206,7 +206,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "dopamine-architecture-mastering-desire": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:05:30+02:00"
   },
   "dysautonomia-long-covid-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
@@ -258,10 +258,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glp1-biology-muscle-preservation": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-05-25T19:35:33+02:00"
-  },
-  "glymphatic-flush-clearing-neural-cache": {
-    "published": "2026-03-04T14:27:07+01:00",
     "modified": "2026-05-25T19:35:33+02:00"
   },
   "gut-brain-axis-data-link": {
@@ -1626,7 +1622,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-29T22:24:20+02:00"
+    "modified": "2026-09-29T23:05:30+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1634,7 +1630,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-29T22:24:20+02:00"
+    "modified": "2026-09-29T23:05:30+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1642,7 +1638,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-29T22:24:20+02:00"
+    "modified": "2026-09-29T23:05:30+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",

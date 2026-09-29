@@ -58,7 +58,7 @@ Choose Somnifix if you want FDA-registered medical-credibility mouth tape with s
 
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation)
 - [Phase-locked acoustic sleep](/articles/phase-locked-acoustic-sleep)
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache)
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Somnifix — official site', url: 'https://somnifix.com/' },

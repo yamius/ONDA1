@@ -224,7 +224,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "find-your-resonance-breathing-rate": "breathing",
   "forest-bathing-shinrin-yoku-science": "stress-vagus",
   "glp1-biology-muscle-preservation": "heart-fitness-metabolism",
-  "glymphatic-flush-clearing-neural-cache": "sleep-body-clock",
   "gut-brain-axis-data-link": "lifestyle",
   "heart-rate-recovery-fitness-marker": "heart-fitness-metabolism",
   "high-blood-pressure-slow-breathing": "heart-fitness-metabolism",

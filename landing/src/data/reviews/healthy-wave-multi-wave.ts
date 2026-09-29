@@ -58,7 +58,7 @@ Choose Healthy Wave Multi-Wave if you want PEMF stacked with IR and red light in
 
 - [Electric medicine and neuromodulation](/articles/electric-medicine-neuromodulation) — how applied electromagnetic fields shape tissue repair
 - [Mitochondrial biogenesis](/articles/mitochondrial-biogenesis-cellular-power-grid) — PEMF and red light as adjunct cellular-energy modalities
-- [Nightly flush: the glymphatic system](/articles/nightly-flush-glymphatic-neural-cache) — why circulation drives recovery
+- [Does sleep really clean your brain? The glymphatic evidence](/articles/nightly-flush-glymphatic-neural-cache) — what is shown in people, and what is still disputed
 `,
   references: [
     { label: 'Healthy Wave / HealthyLine — official site', url: 'https://www.healthyline.com/' },
