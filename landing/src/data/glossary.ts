@@ -281,6 +281,16 @@ A body in homeostatic balance is a body ready for growth. Without this foundatio
 | **Primary** | Heartbeat, breath rhythm, gut motility | Brainstem → Insula |
 | **Emotional** | Feelings as body sensations | Insula → Anterior Cingulate |
 | **Reflective** | Conscious body awareness | Prefrontal Cortex |
+
+## Why does primary interoception matter?
+
+Primary interoception matters because the brain uses these body signals to regulate heart rate, breathing, digestion, and body temperature, most of it without conscious awareness. Only a small part of this incoming information ever becomes something you notice and can report.
+
+People differ a lot in how accurately they perceive signals like their heartbeat, and accuracy, confidence, and self-reported awareness do not always match. Some research links interoceptive differences to anxiety, depression, and eating disorders, but findings are mixed and the direction of cause is unclear.
+
+## How is primary interoception measured?
+
+Primary interoception is usually measured with heartbeat perception tasks. In the heartbeat counting task, people silently count their heartbeats over short periods and compare the count with a recorded ECG or pulse; in heartbeat discrimination tasks, they judge whether tones are in sync with their pulse. Both methods have known problems: counting scores can be inflated by guessing or knowledge of one's typical heart rate, and discrimination tasks are hard for many people. Questionnaires measure self-reported body awareness, which is a different thing from measured accuracy. Researchers increasingly test breathing and gut sensations too.
 
 ## In ONDA Life
 
@@ -1043,6 +1053,16 @@ Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") pr
 ## How They Work
 
 CPGs are "half-center" networks — mutually inhibiting neuron groups that alternate activation, creating oscillating output. Once activated, they can sustain rhythm with minimal sensory feedback.
+
+## Why do central pattern generators matter?
+
+Central pattern generators matter because they free the brain from planning every step or breath. The brain sets goals such as start, stop, speed up, or turn, and brainstem and spinal circuits turn those commands into timed muscle activity. The breathing rhythm is a clear example: it comes from a pattern-generating network in the brainstem, including a region called the pre-Bötzinger complex.
+
+Much of what we know comes from animals such as lampreys, cats, and rodents, where isolated spinal cords can still produce rhythmic output. In humans the evidence for walking CPGs is more indirect, drawn mainly from infant stepping reflexes and from people with spinal cord injury.
+
+## What happens when central pattern generators go wrong?
+
+When central pattern generators or their control lose balance, rhythm and coordination suffer. After spinal cord injury, the circuits below the injury may remain but lack drive from the brain; rehabilitation research uses treadmill training and spinal cord stimulation to try to reactivate them, with promising but still limited results. Problems with the breathing rhythm generator can cause irregular breathing or pauses, as seen in some forms of central sleep apnea.
 
 ## In ONDA Life
 
@@ -1210,6 +1230,18 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Circuit** — how neurons connect and communicate
 - **Systems** — brainstem, cerebellum, cortex, autonomic nervous system
 - **Integrative** — how neural activity produces movement, emotion, thought
+
+## Why does neurophysiology matter?
+
+Neurophysiology matters because it explains how the nervous system actually works in real time, which is the basis for diagnosing and treating many neurological conditions. Knowing how nerve cells generate and pass along electrical signals helps clinicians tell whether a problem lies in a nerve, the spinal cord, or the brain itself.
+
+It also connects basic science to medicine. Much of what is known about how anesthetics, anti-seizure drugs, and many other medications act on the brain comes from neurophysiological research on ion channels and synapses.
+
+## How is neurophysiology measured?
+
+Neurophysiology is measured mainly by recording the electrical activity of nerves, muscles, and the brain. Common clinical tests include electroencephalography (EEG), which records brain waves from the scalp; nerve conduction studies, which measure how fast signals travel along peripheral nerves; electromyography (EMG), which records muscle activity; and evoked potentials, which track the brain's response to sights, sounds, or touch.
+
+In research, scientists also record from single cells with microelectrodes or patch clamps. Brain imaging methods such as functional MRI track blood flow instead of electrical signals, so they measure neural activity only indirectly.
 
 ## In ONDA Life
 
@@ -1306,6 +1338,16 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Automatic** — CPGs can generate rhythm without continuous brain input
 - **Adaptive** — modulated by sensory feedback (terrain, obstacles)
 - **Energy-efficient** — when well-tuned, uses minimal effort
+
+## Why does locomotion matter?
+
+Locomotion matters because walking ability is closely tied to independence and overall health, especially with aging. Walking speed is used in geriatric medicine as a simple marker of function, and slower gait is linked to higher risk of falls, disability, and hospitalization.
+
+Walking also depends on much more than the spinal cord. The brainstem starts and adjusts gait, the cerebellum fine-tunes timing and balance, and the cortex takes over when steps need precision, such as stepping over an obstacle. Vision, the inner ear, and sensors in muscles and joints feed this system continuously.
+
+## What happens when locomotion goes wrong?
+
+When locomotion goes wrong, the pattern of the problem often points to its cause. Parkinson's disease tends to cause short, shuffling steps and episodes of "freezing," while cerebellar problems cause a wide, unsteady gait. Stroke often produces asymmetric walking, and nerve damage in the feet can reduce the sensory feedback needed for balance. Pain, muscle weakness, and fear of falling can also change gait. Physical therapists and neurologists assess these patterns because many causes can be treated or improved with training.
 
 ## In ONDA Life
 
@@ -2723,6 +2765,18 @@ The **Dorsal Attention Network** (DAN) is a network of brain regions that suppor
 ## Function
 
 The DAN directs attention to task-relevant stimuli and suppresses irrelevant ones. It works in opposition to the Default Mode Network — when DAN is active, DMN tends to be suppressed.
+
+## Why does the dorsal attention network matter?
+
+The dorsal attention network matters because it lets you hold attention on a goal even when other things compete for it. It helps keep a location, object, or feature "in mind" as a target, and it is closely tied to planning where the eyes will move next. This makes it central to everyday tasks like reading, searching a crowded scene, or driving.
+
+It does not work alone. A second system, the ventral attention network, centered on the right temporoparietal junction and inferior frontal cortex, responds when something unexpected but important appears and can interrupt the current focus. Healthy attention depends on the balance between these two systems.
+
+## What happens when the dorsal attention network goes wrong?
+
+When the dorsal attention network is disrupted, people have trouble directing and sustaining focus on purpose. The clearest example is spatial neglect after a stroke, usually on the right side of the brain, where a person ignores one side of space. Research suggests that neglect involves an imbalance between left and right dorsal attention regions, not only local tissue damage.
+
+Altered activity in this network has also been reported in ADHD and some other conditions, but findings vary between studies, and the evidence does not yet support using it as a diagnostic marker.
 
 ## In ONDA Life
 
@@ -3006,7 +3060,17 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 ## Depletion and Restoration
 
-Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycles) allow timely restoration. Working against these cycles leads to cognitive burnout.
+Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycles) allow timely restoration. Working against these cycles leads to cognitive burnout.
+## Why do neurotransmitters matter?
+
+Neurotransmitters matter because nearly every signal in the nervous system depends on them, including signals that leave the brain to control the heart, gut, and muscles. Acetylcholine, for example, is the messenger the vagus nerve uses to slow the heartbeat, and it is also what motor nerves release to make skeletal muscles contract.
+
+Their effects depend on the receptor, not only on the chemical. The same neurotransmitter can excite one cell and inhibit another, depending on which receptor subtype that cell carries. This is why many medications work by blocking, mimicking, or prolonging the action of a neurotransmitter at specific receptors rather than simply adding more of it.
+
+## How are neurotransmitters measured?
+
+Neurotransmitters are hard to measure directly in living people, so most measurements are indirect. PET imaging with radioactive tracers can estimate receptor availability or release in the brain, and magnetic resonance spectroscopy can estimate glutamate and GABA levels in a region. Blood and urine levels of substances like serotonin or their breakdown products mostly reflect activity in the body, not the brain, and say little about mood or focus. Tests sold to "check your neurotransmitters" from urine are not considered reliable by mainstream medicine.
+
 ## Scientific Basis
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
@@ -3866,6 +3930,18 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Behavioral** — facial expression, posture, voice
 - **Experiential** — the felt sense (feelings)
 - **Functional** — prepare the body for action (approach, avoid, connect)
+
+## Why do emotions matter?
+
+Emotions matter because they shape attention, memory, and decisions. Events that stir strong feelings tend to be remembered more vividly, and people with damage to certain frontal brain regions that process emotional signals often struggle to make sound everyday choices even when their reasoning skills remain intact.
+
+Emotions also play a social role. Facial expressions and tone of voice let others read our intentions and respond, which helps coordinate relationships. How accurately emotions are read across cultures is still debated.
+
+## What happens when emotions go wrong?
+
+When emotions go wrong, they may be too intense, last too long, fit the situation poorly, or be hard to recognize or put into words. Persistent patterns like these are part of many mental health conditions, including depression, anxiety disorders, and post-traumatic stress disorder. Difficulty identifying and describing one's own feelings is known as alexithymia.
+
+Researchers disagree about what emotions fundamentally are. The basic-emotion view holds that a small set of emotions have distinct, built-in patterns, while the constructed-emotion view argues that the brain builds each emotion from bodily sensations, context, and learned concepts. The evidence remains mixed, which is why emotional problems are usually described in terms of regulation and experience rather than a single faulty brain circuit.
 
 ## In ONDA Life
 
