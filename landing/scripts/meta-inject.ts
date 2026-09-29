@@ -386,7 +386,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'fault-tolerant-human-hrv-buffer':
     'Low HRV = no headroom — any load triggers cascade failure. The ONDA hardening protocol builds your HRV buffer via hormetic loading, VNS calibration, and predictive morning HRV monitoring.',
   'resonant-frequency-system-coherence':
-    'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where HRV peaks, vascular resistance drops, and the brain shifts to Alpha/Theta clarity. The ONDA resonance scan finds yours.',
+    'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where HRV peaks, vascular resistance drops, and the brain shifts to Alpha/Theta clarity. A simple resonance scan with an HRV monitor finds yours.',
   'baroreflex-01hz-shift':
     'At 0.1 Hz your breathing locks with Mayer Waves, hijacking the baroreflex to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal in under 90 seconds.',
   'nightly-flush-glymphatic-neural-cache':

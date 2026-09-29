@@ -89,7 +89,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ HOW ONDA GUIDES IT ]',
         title: 'How ONDA guides resonance breathing',
         paras: [
-          'ONDA pairs a resonance-breathing pacer with live HRV feedback and a coherence score, using the iPhone camera or an Apple Watch — so you don’t just breathe at the right pace, you see your heart rhythm organise in response. That closed loop is what turns slow breathing into training. It’s free to start; see the full {{productLink}} and {{hrvLink}}.',
+          'ONDA guides slow breathing with text and audio cues and shows your heart rhythm live as you breathe — with the iPhone camera or an Apple Watch, and with a coherence score when you use an Apple Watch — so you don’t just breathe slowly, you see your heart rhythm organise in response. That closed loop is what turns slow breathing into training. It’s free to start; see the full {{productLink}} and {{hrvLink}}.',
         ],
       },
     ],
@@ -187,7 +187,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ КАК ВЕДЁТ ONDA ]',
         title: 'Как ONDA ведёт резонансное дыхание',
         paras: [
-          'ONDA соединяет пейсер резонансного дыхания с живой обратной связью по HRV и показателем когерентности, используя камеру iPhone или Apple Watch, — так вы не просто дышите в нужном темпе, а видите, как ритм сердца организуется в ответ. Эта замкнутая петля и превращает медленное дыхание в тренировку. Начать бесплатно; смотрите полные {{productLink}} и {{hrvLink}}.',
+          'ONDA ведёт медленное дыхание текстовыми и голосовыми подсказками и показывает ритм сердца вживую, пока вы дышите, — через камеру iPhone или Apple Watch, а с Apple Watch ещё и показатель когерентности, — так вы не просто дышите медленно, а видите, как ритм сердца организуется в ответ. Эта замкнутая петля и превращает медленное дыхание в тренировку. Начать бесплатно; смотрите полные {{productLink}} и {{hrvLink}}.',
         ],
       },
     ],
@@ -285,7 +285,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ CÓMO LA GUÍA ONDA ]',
         title: 'Cómo guía ONDA la respiración de resonancia',
         paras: [
-          'ONDA combina un marcapasos de respiración de resonancia con feedback de VFC en vivo y una puntuación de coherencia, usando la cámara del iPhone o un Apple Watch — así no solo respiras al ritmo correcto, sino que ves cómo tu ritmo cardíaco se organiza en respuesta. Ese bucle cerrado es lo que convierte la respiración lenta en entrenamiento. Es gratis para empezar; mira los {{productLink}} completos y el {{hrvLink}}.',
+          'ONDA guía la respiración lenta con indicaciones de texto y audio y te muestra tu ritmo cardíaco en vivo mientras respiras — con la cámara del iPhone o un Apple Watch, y con una puntuación de coherencia si usas un Apple Watch — así no solo respiras despacio, sino que ves cómo tu ritmo cardíaco se organiza en respuesta. Ese bucle cerrado es lo que convierte la respiración lenta en entrenamiento. Es gratis para empezar; mira los {{productLink}} completos y el {{hrvLink}}.',
         ],
       },
     ],

@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'Coherence Optimization — Scanning Your Personal Resonance Frequency and Locking In System Harmony',
   seoTitle: 'Resonant Frequency: Find Your HRV Peak | ONDA Life',
   description:
-    'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where heart, brain, and lungs phase-lock into coherence and HRV peaks. The ONDA resonance scan identifies your exact frequency and calibrates it for life.',
+    'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where heart, brain, and lungs phase-lock into coherence and HRV peaks. A simple resonance scan — a breathing-rate sweep with an HRV monitor — finds yours.',
   category: 'Biological Software',
   relatedSlugs: [
     'heart-rate-variability',
@@ -49,7 +49,7 @@ const article: Article = {
 
 ## The Diagnostics: Scanning for the Peak
 
-We don't use the "one size fits all" 6-second inhale rule. Within the ONDA ecosystem, we perform a **Resonance Scan** — a systematic sweep to find the exact frequency where your biological oscillator reaches maximum amplitude.
+Instead of a "one size fits all" 6-second inhale rule, HRV-biofeedback research uses a **Resonance Scan** — a systematic sweep you run yourself with a breathing timer and an HRV monitor to find the frequency where your biological oscillator reaches maximum amplitude.
 
 **Step 1 — Frequency Sweep:**
 Test several breathing patterns in sequence: 5.0, 5.5, 6.0, and 6.5 breaths per minute. Each pattern is held for 3–4 minutes at rest, with HRV recorded throughout.

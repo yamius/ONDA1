@@ -702,7 +702,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Bodily** — rooted in interoception and physiological rhythms
 - **Present-moment** — no narrative, no past or future
 - **Unconditional** — the raw fact of existence
-
+
 ## Why does Proto-consciousness matter?
 
 Proto-consciousness matters mainly as a theoretical idea for approaching one of the hardest questions in science: how conscious experience arises. The concept suggests that simpler precursors of awareness might exist before full human-style consciousness.
@@ -740,7 +740,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 | **Gastric** | 0.05 Hz | Digestion, peristalsis |
 | **Circadian** | 1/24 hr | Sleep-wake, hormones |
 | **Ultradian** | 90–120 min | Attention cycles, rest |
-
+
 ## Why do Physiological Rhythms matter?
 
 Physiological rhythms matter because nearly every body system runs on repeating cycles, and healthy function depends on those cycles staying coordinated. They range from fast rhythms such as heartbeats and breathing to daily circadian cycles and monthly hormonal patterns.
@@ -799,7 +799,7 @@ Level 1 "Homeostatic Alignment" works directly with the hypothalamus to establis
 - **Relaxation** → enhanced natural killer cell activity
 - **Social connection** → stronger immune response
 - **Meditation** → reduced inflammatory markers
-
+
 ## Why does Psychoneuroimmunology matter?
 
 Psychoneuroimmunology matters because it shows that the mind, nervous system, and immune system are closely connected. It helps explain how psychological stress can affect immune function and how immune signals can influence mood and behavior.
@@ -961,7 +961,7 @@ One marker of Part 1 progress is "reduced levels of basal cortisol." Level 1 pra
 ## Stress and Peristalsis
 
 Under sympathetic activation (stress), peristalsis slows or stops — the body prioritizes survival over digestion. Chronic stress leads to irregular, sluggish peristalsis.
-
+
 ## Why does Peristalsis matter?
 
 Peristalsis matters because it keeps food, fluid, and waste moving in the right direction through the digestive tract. Without these coordinated waves, digestion and nutrient absorption would stall.
@@ -1045,7 +1045,7 @@ The **Vestibulo-Ocular Reflex** (VOR) is a reflex that stabilizes visual images 
 - Foundation for visual navigation
 - Contributes to the feeling of stability within flow
 - Involves vestibular system, brainstem, and eye muscles
-
+
 ## Why does Vestibulo-Ocular Reflex matter?
 
 The vestibulo-ocular reflex matters because it keeps vision clear while the head moves. When you turn your head, it automatically moves the eyes in the opposite direction with very short delay, so the image stays steady on the retina.
@@ -1080,7 +1080,7 @@ The **vestibular system** is the sensory system in the inner ear that provides t
 - **Semicircular canals** — detect rotational movement
 - **Otolith organs** — detect linear acceleration and gravity
 - **Vestibular nerve** — carries signals to brainstem and cerebellum
-
+
 ## Why does Vestibular System matter?
 
 The vestibular system matters because it tells the brain how the head is moving and which way is down. Its sensors in the inner ear, the semicircular canals and the otolith organs, detect rotation, acceleration and gravity.
@@ -1116,7 +1116,7 @@ The **cerebellum** ("little brain") is a structure at the back of the brain that
 - **Balance** — postural control
 - **Motor learning** — refining movement through practice
 - **Noise reduction** — eliminating jerky, uncoordinated output
-
+
 ## Why does the Cerebellum matter?
 
 The cerebellum matters because it makes movement smooth, accurate, and well-timed. It compares intended movements with feedback from the body and corrects errors, which is essential for balance, coordination, and learning motor skills like riding a bike.
@@ -1200,7 +1200,7 @@ The **reticular formation** is a diffuse network of neurons in the brainstem tha
 - **Motor control** — modulates muscle tone, posture, locomotion
 - **Sensory filtering** — gates incoming sensory information
 - **Autonomic regulation** — influences heart rate, breathing
-
+
 ## Why does Reticular Formation matter?
 
 The reticular formation matters because it links many basic body functions into one coordinated system. This network of neurons running through the brainstem contributes to arousal, sleep-wake transitions, posture, muscle tone, and reflexes such as swallowing, coughing and vomiting.
@@ -1236,7 +1236,7 @@ The **sensorimotor cortex** refers to the brain regions that integrate sensory i
 - **Sensory feedback** — S1 receives touch, proprioception, pain
 - **Sensorimotor integration** — the loop that enables precise, adaptive movement
 - **Motor learning** — plasticity for skill acquisition
-
+
 ## Why does Sensorimotor Cortex matter?
 
 The sensorimotor cortex matters because smooth movement depends on sensing and acting at the same time. It combines the primary motor cortex, which sends commands to muscles, with the primary somatosensory cortex, which receives touch and body-position signals, allowing constant adjustment as we move.
@@ -1483,7 +1483,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Golgi tendon organs** — detect muscle tension
 - **Joint receptors** — detect joint angle and position
 - **Vestibular system** — head position and movement
-
+
 ## Why does Proprioception matter?
 
 Proprioception matters because it lets you know where your body parts are without looking. Sensors in muscles, tendons, and joints constantly report position and movement to the brain.
@@ -1546,7 +1546,7 @@ The **motor cortex** is the region of the cerebral cortex responsible for planni
 - **Primary motor cortex (M1)** — direct output to spinal cord and muscles
 - **Premotor cortex** — movement preparation, sensory-guided action
 - **Supplementary motor area** — internally guided movement, sequences
-
+
 ## Why does the Motor Cortex matter?
 
 The motor cortex matters because it is the main brain region that sends commands for voluntary movement. Its neurons project down the spinal cord to control muscles, especially for precise, skilled actions such as moving individual fingers or speaking.
@@ -1582,7 +1582,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Circuit** — how neurons connect and communicate
 - **Systems** — brain regions, neural pathways
 - **Behavioral** — how neural activity produces action and experience
-
+
 ## Why does Neurobiology matter?
 
 Neurobiology matters because it explains how the nervous system produces sensation, movement, emotion, and thought at the level of cells and circuits. It links molecules, neurons, and networks to the behavior we observe in everyday life.
@@ -1621,7 +1621,7 @@ The **cognitive system** refers to the brain networks that support higher-order 
 ## Speed of Processing
 
 Cognitive processing operates on the order of hundreds of milliseconds. Sensory-motor pathways (reticular formation → thalamus → motor cortex) can respond in tens of milliseconds — "before the thought."
-
+
 ## Why does the Cognitive System matter?
 
 The cognitive system matters because it governs how you perceive, remember, reason, and decide. Attention, working memory, language, and executive control together shape how you learn, solve problems, and respond to daily demands.
@@ -1653,7 +1653,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **HPA axis** — hypothalamus → pituitary → adrenal (stress response)
 - **Hypothalamic-pituitary** — growth, reproduction, metabolism
 - **Autonomic-endocrine** — sympathetic/parasympathetic effects on hormone release
-
+
 ## Why does Neuroendocrinology matter?
 
 Neuroendocrinology matters because it describes how the brain controls hormones and how hormones in turn affect the brain. This two-way link governs stress responses, growth, reproduction, metabolism, sleep, and body temperature.
@@ -1776,7 +1776,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Lymph nodes** — filter and immune activation sites
 - **Lymphatic vessels** — no central pump; rely on muscle contraction
 - **Stress metabolites** — lactic acid, inflammatory markers cleared via lymph
-
+
 ## Why does Lymphology matter?
 
 Lymphology matters because the lymphatic system handles tasks the bloodstream cannot do alone. It returns fluid that leaks out of blood vessels back into circulation, carries dietary fats from the gut, and moves immune cells and antigens to lymph nodes.
@@ -1867,7 +1867,7 @@ The **thymus** is a gland located behind the breastbone that plays a key role in
 - **T-cell maturation** — trains immune cells
 - **Immune competence** — strong thymus = robust immune response
 - **Stress sensitivity** — chronic stress can impair thymic function
-
+
 ## Why does Thymus matter?
 
 The thymus matters because it trains T cells, a central part of the adaptive immune system. Immature T cells travel there from the bone marrow and learn to recognize foreign threats while ignoring the body's own tissues.
@@ -1902,7 +1902,7 @@ The **basal ganglia** are a group of nuclei deep in the brain that control volun
 - **Posture** — stable, "unshakeable" positions
 - **Habits** — automatic, well-learned behaviors
 - **Reward** — dopamine-driven motivation
-
+
 ## Why do the Basal Ganglia matter?
 
 The basal ganglia matter because they help select which actions and habits to carry out and which to suppress. They work in loops with the cortex and thalamus, releasing wanted movements while holding back competing ones.
@@ -2025,7 +2025,7 @@ The **ventral vagal** (or ventral vagus) is the myelinated branch of the vagus n
 - **Social engagement** — facial expression, voice tone, listening
 - **Calm alertness** — heart beats powerfully and steadily
 - **Safety** — the body perceives no threat
-
+
 ## Why does Ventral Vagus matter?
 
 The idea of the ventral vagus matters mainly because it is central to polyvagal theory, a popular framework in therapy and wellness. The theory proposes that a newer, myelinated branch of the vagus nerve supports calm social engagement, linking heart regulation with facial expression and voice.
@@ -2059,7 +2059,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Coherence** — synchronized oscillation; ordered rather than random
 - **Biophotonics** — ultra-weak photon emission from cells; possible signaling
 - **Electromagnetic fields** — cells generate and may respond to EM fields
-
+
 ## Why does Quantum Biology matter?
 
 Quantum biology matters because a few biological processes appear to rely on quantum effects normally associated with physics labs. Examples studied include electron and proton tunneling in some enzymes and quantum effects in photosynthetic energy transfer.
@@ -2115,7 +2115,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Ultra-weak photon emission** — cells emit light in the visible range
 - **Coherence** — emission may be coherent under certain conditions
 - **Stress correlation** — emission patterns may change with stress/health
-
+
 ## Why does Biophotonics matter?
 
 Biophotonics matters because light-based methods are central to modern biology and medicine. Pulse oximeters, optical heart-rate sensors, fluorescence microscopy, and many laser and imaging techniques all rely on how light interacts with living tissue.
@@ -2179,7 +2179,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Empathy** — resonating with others' emotional states
 - **Imitation** — learning through observation
 - **Social intuition** — "reading" others without conscious analysis
-
+
 ## Why do Mirror Neurons matter?
 
 Mirror neurons matter because they suggested a simple way the brain might connect doing an action with seeing it done. First found in monkeys, these cells fire both when an animal performs an action and when it watches another perform the same action.
@@ -2216,7 +2216,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Anxiety reduction** — lowers baseline anxiety (counteracts amygdala reactivity)
 - **Aggression reduction** — dampens defensive aggression
 - **Social salience** — enhances attention to social cues
-
+
 ## Why does Oxytocin matter?
 
 Oxytocin matters because it plays essential roles in childbirth, breastfeeding, and social bonding. It triggers uterine contractions during labor and the milk let-down reflex during nursing, functions that are well established.
@@ -2375,7 +2375,7 @@ The **dorsolateral prefrontal cortex** (dlPFC) is the upper outer region of the 
 - **Cognitive clarity** — sharp, undistracted thinking
 - **Focus retention** — maintaining attention under load
 - **Inhibition** — suppressing irrelevant responses
-
+
 ## Why does the Dorsolateral Prefrontal Cortex matter?
 
 The dorsolateral prefrontal cortex matters because it supports the skills people use to stay on task: holding information in mind, planning steps, and switching strategies when rules change. It is one of the regions most consistently active in working-memory and executive-control experiments.
@@ -2411,7 +2411,7 @@ The **visual cortex** is the region of the occipital lobe that processes visual 
 - **V3** — form, dynamic form
 - **V4** — color, object recognition
 - **V5 (MT)** — motion, movement vectors
-
+
 ## Why does Visual Cortex matter?
 
 The visual cortex matters because it turns signals from the eyes into what we actually see. The primary visual cortex (V1), in the occipital lobe, detects basic features such as edges, orientation and motion, and passes information on to higher visual areas.
@@ -2469,7 +2469,7 @@ The **P300** (or P3) is an event-related potential (ERP) — an electrical respo
 - **Amplitude** — stronger when stimulus is more salient or surprising
 - **Location** — maximal over parietal cortex
 - **Function** — attention allocation, context updating, decision-making
-
+
 ## Why does P300 matter?
 
 P300 matters because it offers a measurable window into attention and how the brain evaluates important or unexpected events. It is one of the most studied brain responses in cognitive neuroscience.
@@ -2504,7 +2504,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Ballistic** — once initiated, trajectory is largely fixed
 - **Suppressed vision** — we are effectively "blind" during the movement
 - **Precision** — can be trained for stability and controllability
-
+
 ## Why does Saccades matter?
 
 Saccades matter because they are how we actually see detail. Only a small central area of the retina, the fovea, gives sharp vision, so the eyes jump several times per second to point it at whatever is important, such as words when reading or faces in a crowd.
@@ -2689,7 +2689,7 @@ The **locus coeruleus** is a small nucleus in the brainstem that is the primary 
 - **Attention** — enhances focus on salient stimuli
 - **Stress response** — activates under threat or challenge
 - **Cognitive flexibility** — supports task switching
-
+
 ## Why does the Locus Coeruleus matter?
 
 The locus coeruleus matters because it is the brain's main source of noradrenaline, even though it is a tiny cluster of neurons in the brainstem. Its fibers reach almost the entire brain and spinal cord, so it can shift the overall state of alertness quickly.
@@ -2770,7 +2770,7 @@ The **Nucleus Accumbens** is a key structure in the ventral striatum that receiv
 - **Motivation** — translates desire into action
 - **Addiction** — central to compulsive reward-seeking
 - **Social reward** — responds to social cues and connection
-
+
 ## Why does the Nucleus Accumbens matter?
 
 The nucleus accumbens matters because it is a central hub for motivation, linking what we want with what we do. It receives dopamine signals and helps translate the expectation of reward into action.
@@ -2803,7 +2803,7 @@ Part 8 works with the Nucleus Accumbens through intermittent rewards and high-yi
 - **90-minute cycle** — deep work, creative flow
 - **20-minute cycle** — short breaks, recovery
 - **Neurotransmitter depletion** — focus depletes; rest restores
-
+
 ## Why does Ultradian Rhythm matter?
 
 Ultradian rhythms matter because many body processes repeat more than once a day rather than following a single 24-hour cycle. The clearest example is sleep, which cycles between non-REM and REM stages several times each night, each cycle lasting roughly 90 minutes on average.
@@ -2838,7 +2838,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Function** — temporal binding, feature integration
 - **Attention** — gamma increases during focused attention
 - **Consciousness** — some theories link gamma to conscious perception
-
+
 ## Why does Gamma Binding matter?
 
 Gamma binding matters because it is one proposed answer to a basic question in neuroscience: how the brain combines separate features, such as color, shape, and motion, into one perceived object. The idea is that neurons coding related features fire in step at gamma frequencies, marking them as belonging together.
@@ -2873,7 +2873,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Signal-to-noise** — "highlights" important neural connections
 - **Learning** — supports plasticity and memory
 - **Cortical activation** — selectively amplifies task-relevant circuits
-
+
 ## Why does Cholinergic Modulation matter?
 
 Cholinergic modulation matters because acetylcholine helps tune attention, learning, and memory in the brain. Neurons in the basal forebrain send acetylcholine widely across the cortex and hippocampus, sharpening responses to important signals.
@@ -2934,7 +2934,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Location** — often strongest in frontal lobes during focused tasks
 - **Subjective** — alert, engaged, thinking
 - **Function** — sustained attention, cognitive control
-
+
 ## Why does Beta Rhythm matter?
 
 Beta rhythm matters because it tracks active, engaged brain states such as focused thinking, problem-solving, and holding a movement steady. In the motor system, beta activity tends to drop just before and during a movement and rebound afterward, which researchers use to study motor control.
@@ -2970,7 +2970,7 @@ The **frontal lobes** are the largest of the four cerebral lobes, occupying the 
 ## Executive Functions
 
 The frontal lobes enable us to set goals, resist impulses, and maintain focus. They are the "conductor" of the brain — coordinating other regions for goal-directed behavior.
-
+
 ## Why do the Frontal Lobes matter?
 
 The frontal lobes matter because they support much of what people think of as deliberate behavior: planning, decision-making, controlling impulses, speaking, and voluntary movement. They are the largest lobes of the human brain and connect widely with other regions.
@@ -3051,7 +3051,7 @@ The **posterior parietal cortex** (PPC) is a region of the parietal lobe that in
 - **Attention** — directing attention in space
 - **Sensorimotor integration** — linking perception to action
 - **Body schema** — sense of body position and boundaries
-
+
 ## Why does the Posterior Parietal Cortex matter?
 
 The posterior parietal cortex matters because it combines information from vision, touch, and body position to build a sense of where things are in space. This lets people reach for objects, navigate, and direct attention to the right place.
@@ -3086,7 +3086,7 @@ The **Reticular Activating System** (RAS) is a diffuse network in the brainstem 
 - **Sensory filtering** — gates what gets attention
 - **Selective attention** — prioritizes relevant stimuli
 - **Pattern matching** — notices what aligns with expectations
-
+
 ## Why does Reticular Activating System matter?
 
 The reticular activating system matters because it helps keep the brain awake and able to attend. Its ascending pathways from the brainstem, through the thalamus and to the cortex, support the shift from sleep to wakefulness and help set overall alertness.
@@ -3121,7 +3121,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Emotional arousal** — increases with stress, excitement, engagement
 - **Belief indicator** — body responds to imagined scenarios as if real
 - **Biofeedback** — can be measured and trained
-
+
 ## Why does the Galvanic Skin Response matter?
 
 The galvanic skin response matters because it is one of the few simple, direct signals of sympathetic nervous system activity. Sweat glands in the skin are controlled almost entirely by sympathetic nerves, so changes in skin conductance track arousal.
@@ -3202,7 +3202,7 @@ The **occipital cortex** is the visual processing center at the back of the brai
 - **V2** — contour integration, texture
 - **V3** — motion, form
 - **V4** — color, object recognition
-
+
 ## Why does the Occipital Cortex (V1–V4) matter?
 
 The occipital cortex matters because it is where the brain first processes visual information from the eyes. Without it, the eyes can still detect light, but the brain cannot turn those signals into normal conscious sight.
@@ -3237,7 +3237,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Attention** — gamma increases with focused attention
 - **Insight** — "aha" moments correlate with gamma bursts
 - **Consciousness** — proposed marker of conscious processing
-
+
 ## Why does γ-Synchronization matter?
 
 γ-synchronization matters because coordinated fast rhythms appear to help groups of neurons communicate efficiently. When neurons fire in step in the gamma range, their combined signal has a stronger effect on downstream cells, which may support attention, perception, and memory.
@@ -3272,7 +3272,7 @@ The **medial prefrontal cortex** (mPFC) is the midline region of the prefrontal 
 - **Value and reward** — what matters, what to pursue
 - **Mental simulation** — playing out future scenarios
 - **Emotional regulation** — top-down control of limbic responses
-
+
 ## Why does the Medial Prefrontal Cortex matter?
 
 The medial prefrontal cortex matters because it sits at the center of how the brain links thinking, emotion, and the sense of self. It is involved in reflecting on oneself, thinking about other people's minds, and weighing the value of choices.
@@ -3353,7 +3353,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Hebb's rule** — "neurons that fire together wire together"
 - **Pruning** — unused connections weaken; used ones strengthen
 - **Reconsolidation** — memories can be modified when recalled
-
+
 ## Why does Synaptic Connections matter?
 
 Synaptic connections matter because they are where learning and memory are physically stored. Each time neurons communicate, the strength of the connection between them can change, a property called synaptic plasticity.
@@ -3387,7 +3387,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Speech production** — grammatical structure, word retrieval
 - **Articulation** — motor planning for vocal output
 - **Expressive language** — turning thought into spoken words
-
+
 ## Why does Broca's Area matter?
 
 Broca's area matters because it is central to producing fluent speech and organizing grammar. Located in the left inferior frontal gyrus in most people, it helps plan the sequence of sounds and words needed to speak.
@@ -3421,7 +3421,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Language comprehension** — decoding auditory and written input
 - **Semantic processing** — meaning, context, nuance
 - **Receptive language** — understanding what others say
-
+
 ## Why does Wernicke's Area matter?
 
 Wernicke's area matters because it is closely tied to understanding language. Located in the rear part of the superior temporal gyrus, usually in the left hemisphere, it helps connect the sounds of words with their meanings.
@@ -3480,7 +3480,7 @@ The **thyroid gland** is located in the neck and produces hormones (T3, T4) that
 - **Energy and vitality** — physical and mental stamina
 - **Temperature regulation** — body heat production
 - **Growth and development** — especially in early life
-
+
 ## Why does Thyroid Gland matter?
 
 The thyroid gland matters because its hormones help set the pace of metabolism in nearly every tissue. Thyroxine (T4) and triiodothyronine (T3) influence energy use, body temperature, heart rate, digestion and brain development in children.
@@ -3515,7 +3515,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Amygdala dampening** — reduced fear reactivity
 - **Reframing** — threat → challenge, fear → excitement
 - **Physiological shift** — same arousal, different interpretation
-
+
 ## Why does Cognitive Reappraisal matter?
 
 Cognitive reappraisal matters because changing how you interpret a situation can change how you feel about it. Seeing a job interview as a chance to learn rather than a test you might fail can reduce distress before the emotion fully builds.
@@ -3548,7 +3548,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Intentionality** — understanding goals and motives
 - **Belief attribution** — knowing what others know or believe
 - **Social prediction** — forecasting reactions and responses
-
+
 ## Why does Theory of Mind (ToM) matter?
 
 Theory of mind matters because social life depends on understanding that others have their own beliefs, feelings and intentions. It lets us predict behavior, notice deception, cooperate and interpret jokes or sarcasm.
@@ -3583,7 +3583,7 @@ The **orbitofrontal cortex** (OFC) is the ventral part of the prefrontal cortex,
 - **Social cognition** — reading social cues, maintaining harmony
 - **Emotional regulation** — modulating limbic responses
 - **Ethical choices** — moral reasoning in real-time
-
+
 ## Why does the Orbitofrontal Cortex matter?
 
 The orbitofrontal cortex matters because it helps the brain judge the value of choices and update those judgments when circumstances change. It sits just above the eye sockets and combines information about senses, emotions, and past outcomes.
@@ -3618,7 +3618,7 @@ The **right temporoparietal junction** (rTPJ) is a region at the boundary of the
 - **Mental model of others** — representing what others think or feel
 - **Non-verbal reading** — body language, gaze, gesture
 - **Self-other distinction** — knowing where "I" ends and "you" begins
-
+
 ## Why does Right Temporoparietal Junction (rTPJ) matter?
 
 The right temporoparietal junction matters because it helps us tell our own perspective apart from someone else's. Brain imaging studies consistently show it activating when people think about what others believe or intend, especially when those beliefs differ from reality.
@@ -3653,7 +3653,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Territoriality** — defense of resources and relationships
 - **Boundary protection** — "us vs. them" modulation
 - **Stress response** — HPA axis modulation
-
+
 ## Why does Vasopressin matter?
 
 Vasopressin matters because it is one of the body's main tools for holding on to water. Released from the pituitary gland when blood becomes too concentrated or blood volume drops, it signals the kidneys to reabsorb water and produce more concentrated urine.
@@ -3688,7 +3688,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **HRV synchronization** — heart rate variability aligns between partners
 - **Alpha-rhythm coherence** — relaxed, attentive states synchronize
 - **Bidirectional** — both participants influence and are influenced
-
+
 ## Why does Inter-brain Synchrony matter?
 
 Inter-brain synchrony matters because it may help explain how people coordinate, communicate, and feel connected. When two people interact, aligned brain activity could reflect shared attention, mutual prediction, or a common understanding of what is happening.
@@ -3831,7 +3831,7 @@ The **pelvic diaphragm** (or pelvic floor) is the muscular layer that forms the 
 - **Sphincter control** — continence
 - **Breath coordination** — moves with the diaphragm in the breath cycle
 - **Tone** — chronic stress can create hypertonicity (holding) or hypotonicity (collapse)
-
+
 ## Why does the Pelvic Diaphragm matter?
 
 The pelvic diaphragm matters because it supports the pelvic organs, including the bladder, bowel, and uterus, and helps control continence. This group of muscles forms a sling at the base of the pelvis.
@@ -3866,7 +3866,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Triadic** — self, other, and object of attention
 - **Coordinating** — aligns intentions and actions
 - **Synergy** — creates a single focus as the group's center
-
+
 ## Why does Joint Attention matter?
 
 Joint attention matters because it is one of the foundations of social learning and language. When a child and caregiver look at the same object and both know they are sharing that focus, the child can link words to things and learn from others' reactions.
@@ -3901,7 +3901,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Euphoria** — "runner's high," collective flow
 - **Social bonding** — released during synchronized activities
 - **Stress buffering** — counteract cortisol effects
-
+
 ## Why do Endorphins matter?
 
 Endorphins matter because they are part of the body's built-in system for dampening pain and stress. They act on the same opioid receptors targeted by morphine, reducing pain signals and contributing to feelings of calm or well-being.
@@ -3936,7 +3936,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Shared field** — a collective "space" of coordinated activity
 - **Bidirectional** — each participant influences and is influenced
 - **Measurable** — EEG, HRV, breathing can show coupling
-
+
 ## Why does Neural Coupling matter?
 
 Neural coupling matters because the brain works through coordination, not isolated regions. When groups of neurons align their activity in time, information can pass between them more effectively, which supports perception, attention, memory, and movement.
@@ -3994,7 +3994,7 @@ The **oxytocin system** (окситоциновая система) refers to th
 - **Bonding** — pair-bonding, mother-infant, group cohesion
 - **Cooperation** — "hormonal glue" of collective action
 - **Amygdala modulation** — reduces fear reactivity in social contexts
-
+
 ## Why does the Oxytocin System matter?
 
 The oxytocin system matters because it coordinates how the body and brain respond to social connection, reproduction, and some forms of stress. It includes the neurons that make oxytocin, the pathways that release it, and the receptors spread through the brain and body.
@@ -4029,7 +4029,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Coherent mode** — organized, ordered brain activity across participants
 - **Collective** — the group functions as a unified neural network
 - **Measurable** — EEG coherence, HRV alignment, gamma synchronization
-
+
 ## Why does Inter-brain Coherence matter?
 
 Inter-brain coherence matters because it offers a way to study social interaction as it happens, rather than one brain at a time. By recording two or more people together, researchers can ask whether their brain signals become more aligned during conversation, cooperation, or shared attention.
@@ -4313,7 +4313,7 @@ The Breathwork CLI article covers protocols (Box Breathing, Physiological Sigh) 
 - **Oxygen uptake** — nasal breathing increases oxygen absorption by ~20%
 - **Air conditioning** — nasal passages filter, warm, and humidify air
 - **Antimicrobial** — NO has mild antimicrobial properties in the respiratory tract
-
+
 ## Why does Nitric Oxide matter?
 
 Nitric oxide matters because it is one of the body's key signals for relaxing blood vessels and regulating blood flow. Cells lining the blood vessels produce it, and it tells the surrounding smooth muscle to relax, which widens vessels and helps control blood pressure.
@@ -4349,7 +4349,7 @@ The Breathwork CLI article recommends strict nasal breathing for low-to-moderate
 - **Cathodal stimulation** — decreases cortical excitability
 - **F3 zone** — common target for cognitive focus (left Dorsolateral Prefrontal Cortex)
 - **Dose** — typically 1–2 mA for 10–20 minutes
-
+
 ## Why does tDCS matter?
 
 Transcranial direct current stimulation (tDCS) matters because it offers a noninvasive way to nudge brain activity. A weak electrical current passed between scalp electrodes is thought to shift how easily neurons fire in the targeted area, rather than directly making them fire.
@@ -4405,7 +4405,7 @@ The **F3 zone** is an electrode position in the international 10–20 EEG system
 - **Left DLPFC** — implicated in verbal working memory, planning, and cognitive control
 - **Standard target** — widely used in research for depression and cognition
 - **Reproducible** — 10–20 system allows consistent placement across sessions
-
+
 ## Why does the F3 Zone matter?
 
 The F3 zone matters because it is a standard reference point for placing sensors over the left frontal region of the head. A fixed, named location lets researchers and clinicians compare recordings or stimulation targets across people and studies.
@@ -4439,7 +4439,7 @@ The Electric Medicine article describes tDCS protocols targeting the F3 zone for
 - **BDNF** — Brain-Derived Neurotrophic Factor; supports neuroplasticity and cognitive function
 - **Irisin** — promotes fat oxidation and browning of white adipose tissue
 - **IL-6** — acute exercise raises IL-6, which can have anti-inflammatory effects in context
-
+
 ## Why do Myokines matter?
 
 Myokines matter because they are one of the main ways working muscle communicates with the rest of the body. When muscles contract, they release signaling proteins that travel in the blood and act on fat tissue, the liver, bone, the immune system, and the brain.
@@ -4474,7 +4474,7 @@ The Muscle Metabolic Marker article covers how myokines connect muscle health to
 - **Hormonal changes** — declining testosterone, growth hormone
 - **Inflammation** — chronic low-grade inflammation promotes catabolism
 - **Nutrition** — inadequate protein and resistance stimulus
-
+
 ## Why does Sarcopenia matter?
 
 Sarcopenia matters because muscle strength is closely linked to independence as people age. Losing muscle mass and function makes it harder to climb stairs, carry groceries or get up from a chair, and it is associated with a higher risk of falls, fractures and hospitalization.
@@ -4509,14 +4509,14 @@ The Muscle Metabolic Marker article covers protocols for grip calibration, metab
 - **Tendon/ligament repair** — BPC-157 has shown promise in preclinical models
 - **Gut healing** — BPC-157 may support gut barrier integrity
 - **Recovery window** — often used during high-intensity training cycles
-
+
 ## Why does BPC-157 / TB-500 matter?
 
 BPC-157 and TB-500 matter mostly because they are widely promoted online for injury recovery despite a thin evidence base. Both are unapproved research peptides: they are not approved as medicines by the FDA or comparable regulators for human use.
 
 Most supportive data come from animal and cell studies. Well-designed human clinical trials are lacking, so their effectiveness and long-term safety in people are unknown. Products sold online are also unregulated, which raises concerns about purity, contamination, and accurate labeling.
 
-## What affects BPC-157 / TB-500?
+## What does the research show on BPC-157 / TB-500?
 
 What we know about these peptides is shaped mainly by the kind of research available. Animal studies of BPC-157 have explored tendon, gut, and blood-vessel healing, and TB-500 is a synthetic peptide related to thymosin beta-4, a natural protein involved in cell movement and tissue repair. Results in rodents often do not carry over to humans. Regulatory status also matters: the World Anti-Doping Agency prohibits these substances in sport, and US regulators have restricted their use in compounded drugs. Anyone considering them should talk with a physician about approved, evidence-based options.
 
@@ -4564,7 +4564,7 @@ The CHM article covers protocols for stress-response calibration, performance wi
 - **Cortisol timing** — evening cortisol elevation blocks lipolysis during the metabolic window when fat oxidation typically peaks
 - **Insulin** — high insulin suppresses lipolysis; fasting and low-carb states promote it
 - **Sleep** — deep sleep supports growth hormone release, which favors fat mobilization
-
+
 ## Why does Lipolysis matter?
 
 Lipolysis matters because it is how the body unlocks stored fat for energy. Fat is kept mainly as triglycerides in fat cells, and lipolysis splits them into glycerol and free fatty acids that muscles, the heart, and other tissues can use.
@@ -4598,7 +4598,7 @@ The **Free Hormonal Index** refers to the fraction of a hormone that is unbound 
 - **Bioavailability** — free hormone determines tissue-level activity
 - **Total vs. free** — total testosterone can be normal while free is low (e.g., high SHBG)
 - **Performance** — cognitive and physical performance correlate with free hormone availability
-
+
 ## Why does the Free Hormonal Index matter?
 
 The free hormonal index matters because only the unbound fraction of a hormone can easily enter tissues and act on them. Total hormone levels can look normal while the active fraction is high or low, depending on how much binding protein is present.
@@ -4633,7 +4633,7 @@ The **Glymphatic Pathway** is the brain's waste-clearance system. Cerebrospinal 
 - **Temperature** — core temperature drop promotes clearance
 - **Posture** — lateral sleep position may enhance flow
 - **Insulin** — caloric intake before sleep can impair clearance
-
+
 ## Why does the Glymphatic Pathway matter?
 
 The glymphatic pathway matters because brain tissue has no conventional lymphatic vessels, yet it still needs to clear waste produced by active cells. This fluid-exchange system is thought to help remove metabolic byproducts, including proteins such as amyloid-beta and tau.
@@ -4667,7 +4667,7 @@ The Glymphatic Flush article covers sleep posture, thermal flush, and dietary fi
 - **Waste clearance** — carries beta-amyloid, tau, and other metabolites out of the brain
 - **Buoyancy** — reduces effective brain weight
 - **Chemical stability** — maintains stable ionic environment for neurons
-
+
 ## Why does CSF matter?
 
 Cerebrospinal fluid matters because it cushions and supports the brain and spinal cord. The brain floats in it, which greatly reduces its effective weight and helps protect it from sudden movement.
@@ -4723,7 +4723,7 @@ The Glymphatic Flush article covers Thermal Flush, Dietary Firewall, and sleep p
 - **Sensory feedback** — CPGs adapt to load, terrain, and proprioceptive input
 - **Ground contact time** — gait efficiency correlates with CPG tuning
 - **Cross-lateral patterns** — crawling and cross-body movements recalibrate CPGs
-
+
 ## Why does CPG matter?
 
 Central pattern generators matter because they produce rhythmic movements like breathing, walking, and chewing without needing a conscious command for each cycle. Networks in the brainstem and spinal cord generate the basic rhythm automatically.
@@ -4757,7 +4757,7 @@ The CPG Neural Autopilot article covers cross-lateral reset, cadence hack, and s
 - **Locomotion** — left/right leg alternation in walking
 - **Breathing** — inspiratory vs. expiratory neuron pools
 - **Sleep-wake** — flip-flop switch between wake and sleep centers
-
+
 ## Why does Mutual Inhibition matter?
 
 Mutual inhibition matters because it is a simple circuit that lets the nervous system choose between options. When two groups of neurons suppress each other, the more active one tends to win, producing a clear either-or outcome instead of a muddled mix.
@@ -4791,7 +4791,7 @@ The CPG article explains how mutual inhibition underlies autonomous rhythmic mov
 - **Asymmetry** — uneven GCT suggests CPG imbalance or compensation
 - **Cadence** — higher cadence usually shortens GCT
 - **Surfaces** — uneven terrain and minimalist footwear can recalibrate CPG and GCT
-
+
 ## Why does Ground Contact Time matter?
 
 Ground contact time matters because it reflects how quickly a runner absorbs and returns force with each step. Shorter contact times generally occur at faster speeds and are associated with using the elastic recoil of tendons and muscles.
@@ -4825,7 +4825,7 @@ The **Bohr Effect** describes how carbon dioxide (CO₂) facilitates oxygen rele
 - **Over-breathing** — reduces tissue oxygenation despite normal blood oxygen
 - **Breath-hold training** — increases CO₂ tolerance, improving O₂ delivery under stress
 - **BOLT** — breath-hold time correlates with CO₂ tolerance and Bohr effect efficiency
-
+
 ## Why does the Bohr Effect matter?
 
 The Bohr effect matters because it helps deliver oxygen where the body needs it most. Working muscles produce more carbon dioxide and acid, which lowers hemoglobin's grip on oxygen and releases more of it into those active tissues.
@@ -4857,7 +4857,7 @@ The CO2 Tolerance article covers BOLT test, box breathing, and apnea tables to o
 - **Not maximal** — BOLT is submaximal; it reflects chemoreceptor sensitivity
 - **Trainable** — breathwork (box breathing, apnea tables) can increase BOLT
 - **Practical** — correlates with exercise performance and stress resilience
-
+
 ## Why does BOLT matter?
 
 BOLT matters because it offers a simple, equipment-free way to track how comfortable you are holding your breath after a normal exhale. Breathing coaches use it as a rough, personal indicator of breathing habits and sensitivity to carbon dioxide.
@@ -4889,7 +4889,7 @@ The CO2 Tolerance article covers BOLT testing and protocols to improve it.
 - **CO₂ tolerance** — higher tolerance = better O₂ delivery via Bohr effect
 - **Stress resilience** — breath-hold under load mimics metabolic stress
 - **Prefrontal clarity** — high CO₂ tolerance supports cognitive performance under pressure
-
+
 ## Why does Hypercapnic Stress matter?
 
 Hypercapnic stress matters because carbon dioxide, not low oxygen, is the main signal that drives the urge to breathe. When CO2 rises, chemoreceptors in the brainstem and major arteries respond strongly, increasing breathing and activating stress responses.
@@ -4924,7 +4924,7 @@ The CO2 Tolerance article covers apnea tables and box breathing as hypercapnic s
 - **Proton gradient** — depends on electron transport chain creating ΔpH
 - **Photobiomodulation** — red/NIR light may enhance ATP production via cytochrome c oxidase
 - **Water viscosity** — lower viscosity around proteins can accelerate enzymatic turnover
-
+
 ## Why does ATP Synthase matter?
 
 ATP synthase matters because it makes most of the ATP your cells use for energy. Muscle contraction, nerve signaling, ion pumps, and protein building all run on ATP, and the body constantly recycles its limited ATP supply to keep up with demand.
@@ -4956,7 +4956,7 @@ The Mitochondrial DNA Red Light article covers how red light protocols may suppo
 - **Maternal inheritance** — mtDNA is passed primarily through the maternal line
 - **Mutation rate** — higher than nuclear DNA due to oxidative stress
 - **Red light** — photobiomodulation may support mtDNA integrity and biogenesis
-
+
 ## Why does mtDNA matter?
 
 mtDNA matters because it carries genes mitochondria need to produce energy. Although most mitochondrial proteins are coded in the cell nucleus, mtDNA encodes several key parts of the energy-producing chain, so errors in it can reduce a cell's energy supply.
@@ -5013,7 +5013,7 @@ The Mitochondrial DNA Red Light article covers photonic charging protocols using
 - **Interfacial water** — proposed "structured water" layers around proteins, said to behave differently from bulk water (a contested, non-mainstream idea)
 - **Reaction rates** — lower viscosity could increase diffusion and turnover
 - **PBM hypothesis** — one proposed mechanism for photobiomodulation effects
-
+
 ## Why does Water Viscosity matter?
 
 Water viscosity matters because it describes how easily water flows, which affects everything from blood flow to how molecules move inside cells. Viscosity is a physical property: thicker fluids resist flow more, and water's relatively low viscosity lets it move and mix easily.
@@ -5070,7 +5070,7 @@ The Mitochondrial DNA Red Light article covers NIR protocols for mitochondrial a
 - **Zombie cells** — accumulate with age, driving chronic inflammation
 - **Senolytics** — compounds that selectively eliminate senescent cells
 - **Apoptosis** — programmed cell death; senolytics induce it in senescent cells
-
+
 ## Why does Senescence matter?
 
 Cellular senescence matters because it is one of the body's ways of stopping damaged cells from multiplying. When a cell has too much DNA damage or other stress, it can enter a permanent growth arrest instead of risking becoming cancerous.
@@ -5104,7 +5104,7 @@ The Senolytic High-Dosing article covers quercetin/fisetin and other senolytic p
 - **Development** — sculpting tissues (e.g., webbing between fingers)
 - **Homeostasis** — removing damaged, infected, or senescent cells
 - **Senolytics** — induce apoptosis preferentially in senescent cells
-
+
 ## Why does Apoptosis matter?
 
 Apoptosis matters because the body depends on orderly cell death to stay healthy. It shapes organs during development (for example, separating fingers in the embryo), removes cells with damaged DNA, and ends immune responses once an infection is cleared.
@@ -5138,7 +5138,7 @@ The Senolytic article explains how senolytic compounds trigger apoptosis in "zom
 - **IL-6, IL-8** — pro-inflammatory cytokines
 - **MMPs** — matrix metalloproteinases that degrade tissue
 - **Spread** — SASP can induce senescence in neighboring cells
-
+
 ## Why does SASP matter?
 
 The senescence-associated secretory phenotype (SASP) matters because it lets a small number of aging cells influence the tissue around them. Senescent cells release a mix of inflammatory signals, growth factors and enzymes that can remodel tissue and recruit immune cells.
@@ -5172,7 +5172,7 @@ The Senolytic article covers protocols to reduce SASP burden by clearing senesce
 - **High-dose protocols** — senolytic effects may require doses above typical dietary intake
 - **Cycling** — often used in "hit and run" protocols: high dose for 2–3 days, then 30 days off
 - **Combination** — sometimes combined with other senolytics (e.g., dasatinib) in research
-
+
 ## Why do Quercetin & Fisetin matter?
 
 Quercetin and fisetin matter because they are natural plant compounds being studied as possible senolytics, substances that may help clear aging, dysfunctional "senescent" cells. These cells build up with age and release inflammatory signals.
@@ -5206,7 +5206,7 @@ The Senolytic High-Dosing article covers quercetin/fisetin protocols.
 - **Pace vs. age** — reflects rate of change, not absolute "age"
 - **Intervention tracking** — can show if interventions slow aging pace
 - **Multi-system** — correlates with cardiovascular, metabolic, cognitive, and physical decline
-
+
 ## Why does DunedinPACE matter?
 
 DunedinPACE matters because it tries to estimate how fast a person is aging right now, rather than how old their body appears overall. That makes it a "speedometer" rather than an "odometer," which researchers hope makes it more sensitive to change over time.
@@ -5241,7 +5241,7 @@ The Senolytic article references DunedinPACE as a biomarker for aging and interv
 - **Micro-drift** — detecting subtle trending changes (e.g., +2 bpm RHR over 3 nights)
 - **Biological signature** — mapping your unique optimal-state pattern
 - **Telemetry** — continuous data collection enables modeling
-
+
 ## Why does Predictive Modeling matter?
 
 Predictive modeling matters because it describes an influential theory that the brain constantly forecasts incoming information rather than passively receiving it. In this view, perception relies heavily on expectations, which are updated when predictions and reality do not match.
@@ -5275,7 +5275,7 @@ The AI Biomarker Tracking article covers predictive sync and anomaly detection p
 - **Individual** — each person has a unique signature
 - **Clean signal** — established during a "clean" period (e.g., 21 days of high-fidelity wearables)
 - **Deviation** — micro-drifts from signature can precede systemic crashes
-
+
 ## Why does a Biological Signature matter?
 
 A biological signature matters because it lets clinicians and researchers recognize a condition or state from a consistent pattern of measurable signals rather than a single number. A combination of blood markers, heart-rhythm features, or gene activity is often more informative than any one value alone.
@@ -5351,7 +5351,7 @@ The AI Biomarker Tracking article describes how telemetry enables predictive syn
 - **Sleep** — acoustic stimulation phase-locked to slow-wave sleep can enhance delta amplitude
 - **EEG** — frequency-following response to binaural beats
 - **Precision** — requires real-time detection of the internal rhythm (e.g., via EEG or actigraphy)
-
+
 ## Why does Phase-Locked matter?
 
 Phase-locking matters because it shows when two rhythms keep a consistent timing relationship, which often signals that they are coordinated. In the body, this helps explain how separate oscillating systems work together.
@@ -5409,7 +5409,7 @@ The Phase-Locked Sleep article covers delta amplification and phase-locked acous
 - **Amplitude** — high amplitude correlates with sleep depth
 - **Stimulation** — phase-locked acoustic stimulation can enhance delta amplitude
 - **Bone conduction** — sound via skull can stimulate without waking
-
+
 ## Why do Delta Waves matter?
 
 Delta waves matter because they are the signature of deep, slow-wave sleep, the most restorative stage of sleep. During this stage, growth hormone release peaks and the brain appears to consolidate certain memories.
@@ -5463,7 +5463,7 @@ The Phase-Locked Sleep and Glymphatic Flush articles cover protocols for optimiz
 - **Sleep stimulation** — delta wave amplification during SWS
 - **Hearing aids** — for conductive hearing loss
 - **Low arousal** — skull transmission is less likely to cause startle than air-conducted sound
-
+
 ## Why does Bone Conduction matter?
 
 Bone conduction matters because it lets sound reach the inner ear by vibrating the skull, bypassing the ear canal and middle ear. This is part of why your own voice sounds different on a recording: you normally hear it partly through bone.
@@ -5495,7 +5495,7 @@ The Phase-Locked Sleep article covers bone conduction for acoustic deep sleep st
 - **Stereo required** — each ear must receive a different frequency
 - **Frequency-following** — the perceived beat may influence dominant EEG frequency
 - **State shifting** — different beat frequencies target different states (e.g., 4 Hz for theta)
-
+
 ## Why do Binaural Beats matter?
 
 Binaural beats matter mainly as a popular, low-cost tool people try for relaxation, focus, or sleep, and as a research window into how the brain combines sound from both ears. The perceived "beat" is created inside the auditory brainstem, not in the air.
@@ -5527,7 +5527,7 @@ The Neural Entrainment article covers binaural beats and closed-loop neural sync
 - **Entrainment** — external rhythm "pulls" internal rhythm toward it
 - **Stimulus types** — auditory (binaural beats), visual (flicker), tactile
 - **Individual variability** — not everyone responds equally
-
+
 ## Why does the Frequency Following Response matter?
 
 The frequency following response matters because it shows how precisely the brain encodes the timing and pitch of sound. Since it mirrors features of the incoming signal, it gives researchers an objective window into auditory processing that does not rely on a person's reports.
@@ -5562,7 +5562,7 @@ A **Closed-Loop System** uses feedback from its output to modify its input. In n
 - **Processing** — algorithm determines target vs. current
 - **Actuation** — stimulus (sound, light) is adjusted
 - **Feedback** — loop continues until target state is achieved
-
+
 ## Why does a Closed-Loop System matter?
 
 A closed-loop system matters because it adjusts its output based on continuous feedback, which is how the body keeps itself stable. Blood pressure, body temperature, and blood sugar are all held within narrow ranges by sensors that detect change and trigger corrections.
@@ -5595,7 +5595,7 @@ The Neural Entrainment article covers closed-loop neural sync protocols using EE
 - **Tensioners** — positions that create mechanical load on nerve pathways (e.g., slump test, straight leg raise)
 - **Sliders** — movements that promote gliding without excessive stretch
 - **Double-crush** — multiple sites of compression can compound dysfunction
-
+
 ## Why does Neurodynamics matter?
 
 Neurodynamics matters because the brain is not a static wiring diagram; its function depends on how activity changes from moment to moment. Studying these patterns helps explain how the brain switches between states such as rest, focus, and sleep.
@@ -5630,7 +5630,7 @@ The **posterior cingulate cortex** (PCC) is a region at the back of the cingulat
 - **DMN hub** — active during mind-wandering, less active during focused attention
 - **Witness position** — PCC modulation can support the sense of "outsideness" — observing thoughts rather than being absorbed by them
 - **Spatial orientation** — contributes to the sense of where "I" am in relation to the world
-
+
 ## Why does the Posterior Cingulate Cortex (PCC) matter?
 
 The posterior cingulate cortex matters because it is a central hub of the default mode network, the set of brain regions most active during rest, mind-wandering, and self-reflection. It helps connect memory, self-related thinking, and awareness of the environment.
@@ -5665,7 +5665,7 @@ The **Central Executive Network** (CEN) is a large-scale brain network that supp
 - **Working memory** — holding and manipulating information
 - **Meta-attention** — attending to the process of attention itself ("witness" mode)
 - **Inhibition** — suppressing irrelevant thoughts and distractions
-
+
 ## Why does the Central Executive Network (CEN) matter?
 
 The central executive network matters because it supports goal-directed thinking: holding information in working memory, planning, and shifting attention on purpose. It is anchored in the dorsolateral prefrontal cortex and the posterior parietal cortex.
@@ -5698,7 +5698,7 @@ The **somatosensory cortex** (S1 and S2) is the region of the parietal lobe that
 - **Proprioception** — joint position, movement sense
 - **Body schema** — integrated sense of body boundaries and position in space
 - **Sensory expansion** — training can sharpen discrimination and expand the "felt" body
-
+
 ## Why does Somatosensory Cortex (S1/S2) matter?
 
 The somatosensory cortex matters because it turns raw signals from skin, muscles and joints into the sense of touch and body position. It lets you recognize an object by feel, judge texture and pressure, and know where your limbs are without looking.
@@ -5756,7 +5756,7 @@ Part 1 works with "the connection between the brainstem and the insula" for prim
 - **Movement planning** — required for coordinated action
 - **Body boundaries** — the felt edge between "me" and "not me"
 - **Dynamic** — updates in real time with movement and sensation
-
+
 ## Why does Body Schema matter?
 
 Body schema matters because it lets you move without consciously checking where each limb is. It is the brain's continuously updated model of body position and size, built from muscle and joint sensors, touch, vision, and the vestibular system.
@@ -5791,7 +5791,7 @@ Part 13 targets "Synchronizing the Body Schema (where I am) and the Body Image (
 - **Social touch** — grooming, hugging, gentle contact
 - **Insula pathway** — connects to emotional and interoceptive centers
 - **Well-being** — CT activation supports parasympathetic tone
-
+
 ## Why do C-Tactile Fibers matter?
 
 C-tactile fibers matter because they carry the pleasant, emotional side of touch. They respond best to slow, gentle stroking at about skin temperature, like a caress, and send signals to brain areas linked to emotion and body awareness, such as the insula.
@@ -5824,7 +5824,7 @@ Part 13 engages "C-tactile fibers and proprioceptive integration to create an ul
 - **Social engagement** — facial muscles, hearing tuned to human voice
 - **Rhythm alignment** — breathing, heart rate, movement synchronize
 - **Bidirectional** — both participants influence and are influenced
-
+
 ## Why does Co-regulation matter?
 
 Co-regulation matters because people help steady each other's emotions and body states through connection. A calm caregiver can soothe a distressed infant, and supportive adults can help each other recover from stress faster than they would alone.
@@ -5880,7 +5880,7 @@ Part 14 (I Channel) works with "Fascial Chains (Tensegrity)" — "connective tis
 - **Thermoregulation** — heat distribution (cold extremities = vasoconstriction)
 - **Microcirculation** — tissue perfusion and nutrient delivery
 - **Autonomic** — sympathetic and parasympathetic regulation
-
+
 ## Why does Vasomotricity matter?
 
 Vasomotricity matters because the widening and narrowing of blood vessels directs blood where it is needed. It helps regulate blood pressure, sends more blood to working muscles, and controls heat loss through the skin.
@@ -5915,7 +5915,7 @@ The **premotor cortex** is the region of the frontal lobe just anterior to the p
 - **Sensory-motor integration** — links perception to action
 - **Mirror neurons** — fire when observing and performing actions
 - **Sequencing** — coordinates multi-step movements
-
+
 ## Why does the Premotor Cortex matter?
 
 The premotor cortex matters because it helps plan and prepare movements before they happen. It sits just in front of the primary motor cortex and shapes actions based on goals and sensory cues.
@@ -6158,7 +6158,7 @@ Post-sauna or post-cold session: reduced muscle soreness, faster recovery, and i
 ## How to Build It
 
 Antifragility requires **variability**, not just intensity. Constant, predictable stress produces adaptation plateaus. Unpredictable range variation — different loads, temperatures, recovery cycles — keeps the system in a perpetual upgrade loop.
-
+
 ## Why does Antifragility matter?
 
 Antifragility matters because it describes how many living systems get stronger from moderate, well-timed stress rather than merely surviving it. Muscles adapt to training load, bones remodel in response to impact, and the cardiovascular system becomes more efficient after repeated aerobic effort.
@@ -6469,7 +6469,7 @@ We don't just train the body — we offload the Cortex Stack to ensure you have 
 - **Receptor desensitization** — overdriven by notifications and refined sugar, requiring exponentially more input for the same drive
 - **Context switching** — the reactor scans for fast fuel, scattering focus
 - **Voltage drop** — apathy and fatigue even with full glycogen reserves
-
+
 ## Why does Motivational Salience matter?
 
 Motivational salience matters because it determines which things in the environment grab attention and drive effort. A cue that signals reward or threat becomes salient, pulling focus and energizing behavior toward or away from it.
