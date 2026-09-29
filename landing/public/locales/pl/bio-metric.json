@@ -5,7 +5,7 @@
     "ondaPrinciple": "The ONDA Principle",
     "back": "← Back to Bio OS",
     "ctaReady": "Ready to measure?",
-    "ctaSubtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "ctaSubtitle": "Aplikacja ONDA działa z aparatem iPhone’a, Apple Watch i Apple Health.",
     "appStoreSup": "Download on the",
     "appStoreLabel": "App Store",
     "appStoreAria": "Download ONDA Life on App Store",
@@ -26,673 +26,781 @@
       "errorGeneric": "Something went wrong. Please try again later.",
       "close": "Close"
     },
-    "measurementDisclaimer": "Estimated from a single camera (PPG) reading — an educational estimate, not a medical measurement. State labels (Flow, Focus, Alarm…) are rough, experimental patterns, not emotion detection."
+    "measurementDisclaimer": "Oszacowanie z jednego pomiaru kamerą (PPG) — wartość edukacyjna, a nie pomiar medyczny. Etykiety stanów (Flow, Skupienie, Alarm…) to przybliżone, eksperymentalne wzorce, a nie wykrywanie emocji."
   },
   "metrics": {
     "flow": {
-      "title": "Flow: The State of Biological Resonance",
+      "title": "Flow: eksperymentalne połączenie skupienia i relaksu",
       "shortTitle": "🌊 Flow",
       "sections": [
         {
-          "heading": "The Point of Optimum",
-          "body": "Flow is the holy grail of performance. At ONDA, we estimate a flow-like pattern when the signal suggests synchronization: high attentional focus while maintaining profound internal calm. It is the moment when you are entirely absorbed in a task, yet your body isn't paying an excessive price for it."
+          "heading": "Czym jest ta liczba",
+          "body": "Flow to tutaj eksperymentalny wskaźnik, który próbuje uchwycić stan często opisywany podczas pochłaniającej pracy: uwaga pozostaje stabilna, a ciało dość spokojne. Narzędzie w przeglądarce nie odczyta Twojej uwagi ani myśli. Łączy jedynie dwa inne swoje wskaźniki, Skupienie i Relaks, które same wynikają z tętna i nieregularności odstępów między uderzeniami serca."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Flow = 0,6 × Skupienie + 0,4 × Relaks, w zakresie 0–100%. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo. Ponieważ Skupienie i Relaks rosną, gdy tętno jest umiarkowane, a rytm stabilny (niski CSI), Flow rośnie w tych samych sytuacjach."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0–25% · Disconnected",
-              "text": "The conditions for flow are absent — either the Alarm index is elevated, energy is low, or focus is scattered. Attempting deep work here is fighting the biology."
+              "label": "Wyżej",
+              "text": "Podczas pomiaru tętno było umiarkowane, a odstępy między uderzeniami dość równe. Może to towarzyszyć spokojnej, zaangażowanej uwadze, ale może też po prostu oznaczać, że siedziałeś nieruchomo przy czystym sygnale."
             },
             {
-              "label": "25–50% · Approaching",
-              "text": "The system is warming up toward coherence. Focus is beginning to establish itself, stress is declining. A short breathing exercise or a clear intention can push you into the zone."
-            },
-            {
-              "label": "50–75% · In the Zone",
-              "text": "Your signal looks consistent with a flow-like pattern: moderate HR, stable rhythm, low alarm. You are fully capable of sustained, high-quality work with minimal cognitive friction."
-            },
-            {
-              "label": "75–100% · Deep Resonance",
-              "text": "Rare and optimal. All three conditions are perfectly aligned — activation, stability, silence. This is the state where hours feel like minutes and output far exceeds effort. Protect it."
+              "label": "Niżej",
+              "text": "Tętno było wyższe, rytm wyglądał na bardziej nieregularny albo jedno i drugie. Obniżają go też ruch, zmiana nacisku palca i słabe światło, bo dodają szumu do sygnału z kamery."
             }
           ]
         },
         {
-          "heading": "The Formula of Flow",
-          "body": "Unlike an ordinary working state, Flow in ONDA has a distinct biometric signature:",
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. Psychologiczny stan „flow” bada się kwestionariuszami i wynikami zadań; nie ma uznanego sposobu, by wykryć go z 15-sekundowego pomiaru z opuszka palca."
+        },
+        {
+          "heading": "Co naprawdę pomaga",
           "bullets": [
             {
-              "label": "Moderate Activation",
-              "text": "Your heart rate is slightly above your resting baseline. This provides the brain with the necessary drive and resources without crossing into the alarm stage."
+              "label": "Ogranicz rozpraszacze",
+              "text": "Wyłącz powiadomienia i wybierz jedno zadanie. Częste przełączanie się niezawodnie rozbija koncentrację."
             },
             {
-              "label": "Rhythmic Stability",
-              "text": "Your heart operates like a finely tuned machine — without jerks or chaos. This allows you to hold focus for hours without feeling mental friction."
+              "label": "Wolny oddech przed głęboką pracą",
+              "text": "Kilka minut wolnego, spokojnego oddychania często nieco obniża tętno i stabilizuje rytm."
             },
             {
-              "label": "Absence of Noise",
-              "text": "The Alarm index is at zero. You are engaged but not overwhelmed. You aren't fighting the task; you are merging with it."
+              "label": "Sen i przerwy",
+              "text": "Łatwiej utrzymać uwagę, gdy jesteś wypoczęty; pomagają też krótkie przerwy mniej więcej co godzinę."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "The Flow state is the most efficient form of existence. Here, you produce maximum results with minimum attrition. ONDA helps you do more than just \"stumble\" into this state; it helps you understand which conditions (breathing, time of day, prep level) lead to it. We teach you to find your \"zone,\" where the challenge perfectly meets your skill."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "Flow is not luck; it is a biophysical skill. Tune your rhythm, remove the excess noise, and the world around you will vanish, leaving only you and your craft."
+          "highlight": "Traktuj Flow jako ciekawostkę, a nie wynik do bicia: rośnie, gdy tętno jest umiarkowane, a rytm stabilny."
         }
       ]
     },
     "fatigue": {
-      "title": "Fatigue: The Physiological Tax on Effort",
-      "shortTitle": "🪫 Fatigue",
+      "title": "Zmęczenie: eksperymentalny wskaźnik z Energii i Stresu",
+      "shortTitle": "🪫 Zmęczenie",
       "sections": [
         {
-          "heading": "The Cost of Movement",
-          "body": "Fatigue in ONDA is more than just a desire to sleep. It is a rough estimate of the \"biological cost\" of your recent efforts. This estimate rises when your energy reserves look depleted and your stress levels remain chronically elevated. It is a signal that your system has shifted from efficient operation to a state of attrition."
+          "heading": "Czym jest ta liczba",
+          "body": "Zmęczenie na tej stronie to eksperymentalny wskaźnik. Nie mierzy senności, zmęczenia mięśni ani przetrenowania. Jest liczone z dwóch innych wskaźników narzędzia, Energii i Stresu, więc rośnie, gdy tętno przekracza około 75 uderzeń/min i gdy rytm między uderzeniami wygląda na nieregularny."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Zmęczenie = 60 × (1 − Energia/100) + 0,2 × Stres, w zakresie 0–100%. Energia spada, gdy tętno rośnie powyżej 75 uderzeń/min i gdy rośnie CSI (nieregularność odstępów między uderzeniami); Stres = CSI × 130. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0–20% · Recovered",
-              "text": "Energy reserves are intact, stress is low, HRV is healthy. Your system is operating from a position of abundance — ready for high demands."
+              "label": "Wyżej",
+              "text": "Tętno było podwyższone i/lub odstępy między uderzeniami mocno się różniły względem średniej. Może to wynikać ze zmęczenia, ale też z kawy, wejścia po schodach, mówienia albo zaszumionego sygnału z kamery."
             },
             {
-              "label": "20–45% · Accumulated Load",
-              "text": "Normal end-of-day wear. Manageable with standard recovery: sleep, nutrition, a pause. Performance is slightly reduced but not yet compromised."
-            },
-            {
-              "label": "45–70% · Depletion Zone",
-              "text": "Energy deficit is significant. HRV is dropping, resting HR is creeping up, recovery after micro-stressors is slow. Continuing to push here increases error rate and burnout risk."
-            },
-            {
-              "label": "70–100% · Biological Red Alert",
-              "text": "The system is in attrition mode. Any attempt to \"push through\" yields diminishing returns at an accelerating cost. The only productive action is structured rest — sleep, stillness, or deep parasympathetic recovery."
+              "label": "Niżej",
+              "text": "Podczas pomiaru tętno było umiarkowane, a rytm wyglądał na stabilny."
             }
           ]
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your body reports fatigue through three distinct biometric markers:",
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. Rzetelna ocena zmęczenia zwykle opiera się na trendach z wielu dni (tętno spoczynkowe, HRV mierzone codziennie rano w ten sam sposób, sen), a nie na jednym krótkim pomiarze."
+        },
+        {
+          "heading": "Co naprawdę pomaga",
           "bullets": [
             {
-              "label": "Reduced HRV",
-              "text": "The heart loses its adaptability and fluidity, becoming \"rigid\" and monotonic."
+              "label": "Regularny sen",
+              "text": "Stałe pory zasypiania i wstawania to jeden z najpewniejszych sposobów, by czuć się mniej wyczerpanym."
             },
             {
-              "label": "Elevated Resting HR",
-              "text": "Even while seated, your heart beats faster than usual, struggling to compensate for the deficit in internal resources."
+              "label": "Śledź trendy, nie chwile",
+              "text": "Jeśli chcesz monitorować regenerację, mierz codziennie o tej samej porze, siedząc nieruchomo, i patrz na cały tydzień, a nie na jedną liczbę."
             },
             {
-              "label": "Slow Recovery",
-              "text": "Your ability to return to baseline after any micro-stressor (even a simple phone call) drops significantly."
+              "label": "Lekki ruch i przerwy",
+              "text": "Krótki spacer lub kilka minut wolnego oddechu pomaga zresetować się w długim dniu."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Fatigue is insidious because we often get used to it and stop noticing its weight. ONDA makes this invisible burden visible. A high Fatigue index is not a failure; it is a command to shift gears. This is the time when any attempt to \"push through\" will yield diminishing returns, increasing the risk of burnout and errors."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "Fatigue is your body's way of protecting its assets. Respect this signal. Sometimes, the most productive thing you can do is get a full night's sleep or an hour of silence."
+          "highlight": "Wysoka wartość Zmęczenia to sygnał, by sprawdzić podstawy (sen, kofeina, niedawna aktywność), a nie diagnoza."
         }
       ]
     },
     "excitement": {
-      "title": "Excitement: The Energy of Anticipation",
-      "shortTitle": "✨ Excitement",
+      "title": "Ekscytacja: eksperymentalny wskaźnik pobudzenia",
+      "shortTitle": "✨ Ekscytacja",
       "sections": [
         {
-          "heading": "Positive Drive",
-          "body": "Excitement is the state of \"bright\" mobilization within your system. Much like anxiety, it involves a rise in heart rate and breathing frequency, but with a critical distinction: in ONDA, this index only climbs when your stress scores remain within a healthy range. We read this pattern as readiness for play, creativity, or a significant event rather than a threat response."
+          "heading": "Czym jest ta liczba",
+          "body": "Ekscytacja to tutaj eksperymentalny wskaźnik ogólnego pobudzenia fizjologicznego. Rośnie wraz z tętnem powyżej 60 uderzeń/min i w niewielkim stopniu z częstością oddechu. Nie odróżni pozytywnej ekscytacji od nerwów, wysiłku fizycznego czy kofeiny, bo w każdym z tych przypadków ciało reaguje szybszym tętnem."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Ekscytacja = 1,5 × (tętno − 60) + 0,5 × częstość oddechu, w zakresie 0–100%. Tętno to 60 000 podzielone przez średni odstęp RR; częstość oddechu jest szacowana z powolnych zmian sygnału tętna i liczona jako 0, gdy narzędzie nie znajdzie wyraźnego rytmu. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0–20% · Neutral",
-              "text": "No positive arousal detected. The system is in a resting or low-activation state. Useful for recovery, but not for performance or creative output."
+              "label": "Wyżej",
+              "text": "Tętno było wyraźnie powyżej 60 uderzeń/min. Na przykład przy 80 uderzeniach/min i 15 oddechach na minutę wskaźnik wynosi około 38%, a przy 100 uderzeniach/min około 68%."
             },
             {
-              "label": "20–50% · Mild Charge",
-              "text": "A gentle energizing — the body is warming up with motivation and light anticipation. Ideal for starting tasks that require sustained engagement."
-            },
-            {
-              "label": "50–75% · Drive",
-              "text": "Clear positive mobilization with stable rhythm. HR is elevated but stress is contained. This is the optimal zone for high-performance work, sport, or creative flow."
-            },
-            {
-              "label": "75–100% · Full Surge",
-              "text": "Peak eustress. The system is fully primed. This state is rare and time-limited — use it strategically. It transitions into anxiety if stress scores begin to rise alongside."
+              "label": "Niżej",
+              "text": "Tętno było bliskie 60 uderzeń/min lub niższe. Wielu zrelaksowanych, wysportowanych dorosłych ma takie wartości w spoczynku."
             }
           ]
         },
         {
-          "heading": "The Biology of Joy",
-          "body": "In a state of Excitement, your body prepares for action, but it does so efficiently:",
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. W praktyce ten wskaźnik to głównie przeskalowane tętno, więc dotyczą go te same zastrzeżenia co samego tętna."
+        },
+        {
+          "heading": "Co naprawdę pomaga",
           "bullets": [
             {
-              "label": "Productive Surge",
-              "text": "Your heart beats faster to saturate your muscles and brain with oxygen, yet the rhythm remains stable and confident."
+              "label": "Nazwij przyczynę",
+              "text": "Jeśli liczba jest wysoka, zastanów się, co się właśnie wydarzyło: ruch, kawa, stresująca wiadomość czy oczekiwanie. Reakcja ciała w każdym przypadku jest podobna."
             },
             {
-              "label": "Eustress",
-              "text": "This is \"positive stress\" — the kind that doesn't drain your reserves but instead makes you feel alive and engaged."
-            },
-            {
-              "label": "Lack of Constraint",
-              "text": "Unlike anxiety, there is no \"tunnel vision\" here. You maintain a broad perspective and a high capacity for creativity."
+              "label": "Wolny wydech na uspokojenie",
+              "text": "Jeśli chcesz się uspokoić, kilka oddechów z wydechem dłuższym niż wdech zwykle obniża tętno w ciągu minuty lub dwóch."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "We help you recalibrate your internal signals. Often, people mistake excitement for anxiety and try to suppress it. ONDA can hint at the difference: your heart rate is high, but your rhythm looks stable — a sign you may be charged rather than afraid. This insight allows you to use the energy of excitement as fuel for achievement rather than a reason for worry."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "Excitement is energy directed outward. Embrace the surge; it is a sign that your system is primed for greatness."
+          "highlight": "Ekscytacja to w zasadzie „o ile Twoje tętno jest teraz powyżej 60 uderzeń/min”, wyrażone w procentach."
         }
       ]
     },
     "focus": {
-      "title": "Focus / Concentration: The Physiology of Immersion",
-      "shortTitle": "🎯 Focus / Concentration",
+      "title": "Skupienie / Koncentracja: eksperymentalny wskaźnik",
+      "shortTitle": "🎯 Skupienie / Koncentracja",
       "sections": [
         {
-          "heading": "The Flow State",
-          "body": "Focus / Concentration is not an act of will, but a result of harmony within your system. At ONDA, this index is calculated as the balance between your energy levels and the absence of internal noise (stress). It’s our proxy for a focus-like state — when your energy is sufficient and internal noise (stress) stays low, so attention comes more easily."
+          "heading": "Czym jest ta liczba",
+          "body": "Skupienie to tutaj eksperymentalny wskaźnik. Nie mierzy uwagi, a kamera przy opuszku palca nie wie, o czym myślisz. Uśrednia dwa inne wskaźniki narzędzia, Energię i odwrócony Stres, więc jest najwyższe, gdy tętno jest umiarkowane (około 75 uderzeń/min lub mniej), a rytm między uderzeniami stabilny."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Skupienie = 0,5 × Energia + 0,5 × (100 − Stres), w zakresie 0–100%. Energia = 90 − 1,5 × (tętno powyżej 75 uderzeń/min) − 80 × CSI; Stres = 130 × CSI, gdzie CSI to odchylenie standardowe odstępów RR podzielone przez ich średnią. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0–25% · Scattered",
-              "text": "High internal noise or low energy. Sustained attention is biologically inaccessible in this state. Tasks will demand disproportionate effort with poor output quality."
+              "label": "Wyżej",
+              "text": "Umiarkowane tętno i równe odstępy między uderzeniami podczas pomiaru. Może to towarzyszyć spokojnej, równej pracy, ale zrelaksowana osoba, która niczego nie czyta, uzyska ten sam wynik."
             },
             {
-              "label": "25–50% · Warming Up",
-              "text": "The system is partially available for focus. Surface-level tasks are possible, but deep cognitive work will be fragmented. A short breathing reset can shift you into the next zone."
-            },
-            {
-              "label": "50–75% · Engaged",
-              "text": "Energy is sufficient, stress is moderate. You are capable of sustained concentration. This is the standard working zone for most productive individuals."
-            },
-            {
-              "label": "75–100% · Deep Focus",
-              "text": "Optimal state. Prefrontal cortex is fully in control, amygdala is quiet, rhythm is stable. This pattern often accompanies flow — where effort fades and performance feels easy."
+              "label": "Niżej",
+              "text": "Szybsze tętno, bardziej nieregularny rytm albo zaszumiony sygnał przez ruch palca."
             }
           ]
         },
         {
-          "heading": "The Architecture of Attention",
-          "body": "In ONDA, peak concentration occurs when three conditions are met:",
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. W badaniach laboratoryjnych sygnały serca zmieniają się przy koncentracji, ale nie w sposób, który pozwoliłby krótkiemu pomiarowi z kamery ocenić, jak bardzo jesteś skupiony."
+        },
+        {
+          "heading": "Co naprawdę pomaga",
           "bullets": [
             {
-              "label": "Moderate Heart Rate",
-              "text": "Your heart isn't racing, but it isn't \"sleeping\" either. This is the zone of optimal activation, where the brain receives just enough resources for complex tasks."
+              "label": "Jedno zadanie naraz",
+              "text": "Wyznacz jasny cel na najbliższe 25–50 minut i usuń oczywiste rozpraszacze."
             },
             {
-              "label": "Stable Rhythm",
-              "text": "The absence of sharp spikes (low CSI) means your nervous system isn't being distracted by internal interference."
+              "label": "Najpierw spokojne ciało",
+              "text": "Kilka minut wolnego oddechu przed wymagającą pracą może obniżyć pobudzenie, jeśli czujesz się nakręcony."
             },
             {
-              "label": "Low Stress",
-              "text": "Your amygdala is calm, allowing the prefrontal cortex to maintain total control over your attentional focus."
+              "label": "Odpoczynek",
+              "text": "Sen, nawodnienie i regularne przerwy robią dla koncentracji więcej niż jakakolwiek pojedyncza liczba."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "We often mistake \"busyness\" for \"productivity.\" The Focus index reveals the difference. You may be very busy, but if your concentration score is low, you are spending three times more energy on the same task. ONDA helps you notice moments that look like \"Restful Alertness\" — attentive yet physiologically calm."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "Focus isn't about what you do; it's about the state you're in. Create silence within your rhythm, and attention will follow naturally."
+          "highlight": "Skupienie rośnie, gdy tętno jest umiarkowane, a rytm stabilny. To wskazówka o Twoim ciele, a nie odczyt Twojego umysłu."
         }
       ]
     },
     "relaxation": {
-      "title": "Relaxation / Calmness: The State of Deep Stillness",
-      "shortTitle": "🌿 Relaxation / Calmness",
+      "title": "Relaks / Spokój: eksperymentalny wskaźnik",
+      "shortTitle": "🌿 Relaks / Spokój",
       "sections": [
         {
-          "heading": "The Art of Presence",
-          "body": "Relaxation / Calmness is not merely the absence of stress; it is an active state of physiological wellbeing. At ONDA, this index is calculated as the inverse of chaos (CSI) combined with your energy reserve. It estimates how settled your rhythm looks — low cardiac noise alongside energy reserve — a proxy for readiness for high-quality rest or deep creativity."
+          "heading": "Czym jest ta liczba",
+          "body": "Relaks to tutaj eksperymentalny wskaźnik, który rośnie, gdy rytm między uderzeniami wygląda na stabilny, a wskaźnik Energii jest wysoki (co w tym narzędziu oznacza głównie, że tętno nie przekracza około 75 uderzeń/min). Nie mierzy tego, jak spokojnie się czujesz, i nie jest zwalidowaną oceną relaksu."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Relaks = 60 × (1 − min(1; 1,5 × CSI)) + 0,2 × Energia, w zakresie 0–100%. CSI to odchylenie standardowe odstępów RR podzielone przez ich średnią. Częstość oddechu nie wchodzi do tego wzoru, choć wolne oddychanie często rzeczywiście pomaga się zrelaksować. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0–25% · Surface Tension",
-              "text": "The system is still carrying biological noise — elevated CSI, shallow breathing, or low energy reserve. True rest is not yet accessible. Intervention (slow breathing, stillness) is needed."
+              "label": "Wyżej",
+              "text": "Odstępy RR niewiele się różniły względem średniej, a tętno było umiarkowane. Nieruchoma pozycja i czysty sygnał podnoszą wynik."
             },
             {
-              "label": "25–50% · Settling",
-              "text": "The nervous system is beginning to downshift. Rhythm is stabilizing. This is the transitional zone — the body is on its way to calm but has not arrived yet."
-            },
-            {
-              "label": "50–75% · Active Calm",
-              "text": "Low biological noise, steady breath, sufficient energy headroom. You are in Restful Alertness — fully present and open, without the undertone of vigilance."
-            },
-            {
-              "label": "75–100% · Deep Stillness",
-              "text": "Optimal state for regeneration, creativity, and deep focus. Tissue repair accelerates, immune activity peaks, and the brain shifts into consolidation and insight mode."
+              "label": "Niżej",
+              "text": "Rytm wyglądał na bardziej nieregularny (wyższy CSI) albo tętno było szybsze. Ruch palca także dodaje nieregularności i obniża wynik."
             }
           ]
         },
         {
-          "heading": "The Signature of \"Restful Alertness\"",
-          "body": "A high Calmness score is the result of three synchronized factors:",
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. Jedna osobliwość: w rzeczywistej fizjologii zrelaksowane ciało często wykazuje większą zmienność między uderzeniami związaną z oddechem, a ten wskaźnik nagradza mniejszą zmienność. To kolejny powód, by traktować go wyłącznie jako przybliżoną wskazówkę."
+        },
+        {
+          "heading": "Co naprawdę pomaga",
           "bullets": [
             {
-              "label": "Rhythmic Purity",
-              "text": "Your heart beats with minimal unjustified fluctuations (low CSI)."
+              "label": "Wolny oddech",
+              "text": "Wolne oddychanie, około 5–7 oddechów na minutę ze swobodnym, dłuższym wydechem, to dobrze zbadany sposób uspokojenia ciała u większości osób."
             },
             {
-              "label": "Stable Breathing",
-              "text": "A slow, steady rhythm of inhales and exhales that nourishes the brain without overtaxing the system."
+              "label": "Postawa i bezruch",
+              "text": "Usiądź wygodnie, opuść ramiona i oprzyj dłoń tak, by palec leżał na obiektywie bez mocnego nacisku."
             },
             {
-              "label": "Biological Headroom",
-              "text": "Your heart has ample \"cardiovascular headroom\" (Energy Reserve), allowing you to remain relaxed even as your environment shifts."
+              "label": "Kilka spokojnych minut",
+              "text": "Tętno zwykle uspokaja się w ciągu kilku minut odpoczynku, a nie sekund."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "The Calmness state is the mode where your body shifts from survival to thriving. It is in this zone that maximum tissue regeneration, immune strengthening, and neural \"rewiring\" occur. We track this metric so you can learn not just to relax, but to achieve Restful Alertness — a state where you are profoundly calm yet entirely present and attentive."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "Relaxation is not weakness; it is the ultimate form of efficiency. The higher your Calmness index, the less effort it takes to remain yourself."
+          "highlight": "Relaks odzwierciedla tu głównie umiarkowane tętno i stabilnie wyglądający rytm. To, jak się czujesz, jest ważniejsze niż liczba."
         }
       ]
     },
     "alarm": {
-      "title": "Alarm / Anxiety: Your System's Code Red",
-      "shortTitle": "🚨 Alarm / Anxiety",
+      "title": "Alarm / Niepokój: eksperymentalny wskaźnik",
+      "shortTitle": "🚨 Alarm / Niepokój",
       "sections": [
         {
-          "heading": "The Invisible Threat Detector",
-          "body": "Alarm / Anxiety is a composite index within ONDA that analyzes the synergy between your heart rate and your breathing. We look for a specific pattern: a simultaneous rise in HR and an increased respiratory rate. This is a pattern often linked to the \"Fight-or-Flight\" response. The index flags when that pattern appears — a cue to check in with yourself, not a diagnosis."
+          "heading": "Czym jest ta liczba",
+          "body": "Alarm to tutaj eksperymentalny wskaźnik zbudowany z nieregularności rytmu i częstości oddechu. Nie jest testem lęku i nie wykryje strachu ani zmartwienia. Rośnie, gdy odstępy między uderzeniami wyglądają na nieregularne względem średniej (wysoki CSI) i gdy szacowana częstość oddechu przekracza 15 oddechów na minutę."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Alarm = 0,7 × Stres + 3 × (częstość oddechu − 15, jeśli powyżej 15), w zakresie 0–100%. Stres = 130 × CSI. Samo tętno nie wchodzi do tego wzoru. Częstość oddechu jest szacowana z powolnych wahań sygnału tętna i liczona jako 0, gdy nie ma wyraźnego rytmu. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0–20% · Baseline Calm",
-              "text": "No alarm signals detected. HR and breathing are in a balanced, low-arousal state. Your nervous system is fully in parasympathetic mode."
+              "label": "Wyżej",
+              "text": "Odstępy między uderzeniami mocno się różniły względem średniej i/lub oszacowany oddech przekraczał 15 na minutę. Mówienie, ruch palca, zimne palce lub słabe światło mogą go podnieść tak samo jak stresująca chwila."
             },
             {
-              "label": "20–50% · Mild Activation",
-              "text": "Low-level arousal — normal during focused work or light activity. The body is alert but not mobilized. Manageable without intervention."
-            },
-            {
-              "label": "50–75% · Elevated Alarm",
-              "text": "Clear fight-or-flight pattern emerging. HR is rising alongside breathing rate. This is the zone of unnoticed chronic stress — you may feel \"fine,\" but your biology disagrees."
-            },
-            {
-              "label": "75–100% · Acute Mobilization",
-              "text": "Full sympathetic surge. The amygdala has taken control. Cortisol and adrenaline are spiking. Immediate intervention — a deep exhale, a pause, breath-hold reset — is highly effective here."
+              "label": "Niżej",
+              "text": "Rytm wyglądał na stabilny, a oddech oszacowano na 15 na minutę lub wolniej."
             }
           ]
         },
         {
-          "heading": "The Psychosomatic Echo",
-          "body": "High values in this index indicate that your body is in a state of acute mobilization:",
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. Jeśli czujesz niepokój lub źle się czujesz, zaufaj temu odczuciu bardziej niż tej liczbie i poszukaj odpowiedniej pomocy. Niski wynik nie oznacza, że wszystko jest w porządku, a wysoki nie oznacza, że coś jest nie tak."
+        },
+        {
+          "heading": "Co naprawdę pomaga",
           "bullets": [
             {
-              "label": "Biological Level",
-              "text": "Blood shifts from digestive organs to muscles, the brain receives a signal of external danger, and cortisol levels spike."
+              "label": "Dłuższe wydechy",
+              "text": "Wdech przez około 4 sekundy i wydech przez około 6 to prosty sposób, by zwolnić, gdy czujesz się napięty."
             },
             {
-              "label": "Mental Level",
-              "text": "The prefrontal cortex (responsible for logic) gives way to the amygdala. You begin to experience restlessness, tunnel vision, or cognitive \"tightness.\""
+              "label": "Zmierz ponownie spokojnie",
+              "text": "Usiądź, oprzyj przedramię na stole, trzymaj palec nieruchomo i zmierz ponownie po minucie. Wiele wysokich odczytów to szum sygnału."
+            },
+            {
+              "label": "Westchnienie fizjologiczne",
+              "text": "Dwa krótkie wdechy nosem i długi wydech to kolejny szybki, niewymagający wysiłku sposób, by się uspokoić."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Anxiety often masks itself as ordinary fatigue or high productivity. The Alarm index can hint at this: you might just be drinking coffee, yet your rhythm looks like the body is bracing for a threat. ONDA gives you the chance to spot this pattern early and use conscious breathing to \"cancel\" the alarm signal before it turns into a panic attack or total burnout."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "Your body cannot lie. If the Alarm index is rising, it's not a reason to panic — it's a reason for a deep exhale. Reclaim control through your body when your mind feels powerless."
+          "highlight": "Alarm reaguje na nieregularnie wyglądający rytm i szybszy oddech. Zanim coś z niego wyczytasz, sprawdź sygnał i otoczenie."
         }
       ]
     },
     "acceleration": {
-      "title": "HR Acceleration: The Intensity of Biological Response",
-      "shortTitle": "⚡ HR Acceleration",
+      "title": "Przyspieszenie HR: średnia zmiana między uderzeniami",
+      "shortTitle": "⚡ Przyspieszenie HR",
       "sections": [
         {
-          "heading": "Dynamics Beyond Speed",
-          "body": "HR Acceleration is the second derivative of your heart rhythm. While the Trend Slope shows the direction of your movement, Acceleration measures the intensity with which that movement gains momentum. It is a gauge of how sharply your system \"hits the gas\" or, conversely, how smoothly it begins to apply the brakes."
+          "heading": "Co pokazuje ta liczba",
+          "body": "Przyspieszenie HR to tutaj mała liczba opisująca, czy odstępy między uderzeniami w ciągu ostatnich 15 sekund średnio wydłużały się, czy skracały z uderzenia na uderzenie. Wbrew nazwie jest to prosta średnia kolejnych różnic, a nie prawdziwa druga pochodna tętna."
         },
         {
-          "heading": "Reading the Impulse",
-          "body": "Acceleration reveals the hidden dynamics of your adaptation:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Narzędzie bierze różnice między kolejnymi odstępami RR (w ms), uśrednia je (pomijając pierwszą) i dzieli przez 100. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "Positive Acceleration · The Surge",
-              "text": "Your heart rate is beginning to speed up faster than it was a second ago. This is a sign of an \"acute\" reaction—such as a sudden startle, a sharp thought about a deadline, or a physical burst. Your sympathetic system is firing at full capacity, mobilizing resources right here and right now."
+              "label": "Dodatnie",
+              "text": "Odstępy RR średnio się wydłużały, czyli tętno w tym oknie spadało. Często dzieje się tak podczas wolnego wydechu lub gdy się uspokajasz."
             },
             {
-              "label": "Negative Acceleration · The Deceleration",
-              "text": "The rate of change in your heart rate is falling. Even if your heart is still beating fast, it has stopped accelerating. This is the first sign that the peak has passed and the system is beginning to stabilize. You are regaining control over the stress."
+              "label": "Ujemne",
+              "text": "Odstępy RR się skracały, więc tętno rosło, na przykład przy wdechu, po ruchu albo gdy się spinasz."
+            },
+            {
+              "label": "Bliskie zera",
+              "text": "Brak wyraźnego kierunku. To najczęstsza wartość w spoczynku, bo naturalne przyspieszanie i zwalnianie przy każdym oddechu się znosi."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "HR Acceleration is a detector of your reactivity. Excessively sharp spikes in acceleration can indicate high anxiety or a low stress-tolerance threshold. ONDA tracks these \"jerks,\" helping you develop biological smoothness—the ability to enter high-performance states without the jarring and exhausting surges that drain your system."
+          "heading": "Dlaczego tak skacze",
+          "body": "Serce naturalnie nieco przyspiesza przy wdechu i zwalnia przy wydechu (niemiarowość oddechowa zatokowa). W 15-sekundowym oknie, które obejmuje tylko dwa lub trzy oddechy, to, w którym miejscu cyklu oddechowego okno się zaczyna i kończy, silnie wpływa na tę wartość. Błędy czasowe kamery rzędu kilku milisekund na uderzenie dodają kolejny szum. Małe wartości w obu kierunkach najlepiej czytać jako „brak istotnej zmiany”."
         },
         {
-          "highlight": "Power is not in the surge, but in the smoothness of the transition. The fewer sharp accelerations in your rhythm, the more carefully you preserve your vital energy."
+          "heading": "Ważne ograniczenia",
+          "body": "To nie jest standardowa miara kliniczna ani sportowa i nie ma dla niej ustalonych norm. Jest pokazywana wyłącznie jako szybki wskaźnik kierunku, a nie jako pomiar medyczny czy sprawnościowy."
+        },
+        {
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
+        },
+        {
+          "highlight": "Dodatnie oznacza, że uderzenia się rozsuwały (tętno zwalniało); ujemne – że się zagęszczały (tętno rosło)."
         }
       ]
     },
     "slope": {
-      "title": "HR Trend Slope: The Vector of Biological Direction",
-      "shortTitle": "📈 HR Trend Slope",
+      "title": "Trend HR: czy Twoje tętno rośnie, czy spada?",
+      "shortTitle": "📈 Trend HR",
       "sections": [
         {
-          "heading": "The Direction of Flow",
-          "body": "HR Trend Slope is a mathematical indicator of where your system is headed right now. We use linear regression to understand the overall trajectory of your heart rate throughout the measurement window. It's not just a number; it's a compass needle pointing toward your immediate physiological future."
+          "heading": "Co pokazuje ta liczba",
+          "body": "Nachylenie trendu HR mówi, czy tętno w bieżącym oknie pomiaru rosło, czy spadało. Przydaje się do obserwowania zmiany na żywo, na przykład uspokajania się tętna przy wolnym oddechu albo jego wzrostu po wstaniu."
         },
         {
-          "heading": "Reading the Vector",
-          "body": "The direction of the slope speaks to the dynamics of your adaptation:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Narzędzie dopasowuje prostą (regresja liniowa) do kolejnych odstępów RR, uderzenie po uderzeniu. Następnie odwraca znak i dzieli przez 100, tak aby wartość dodatnia oznaczała rosnące tętno (krótsze odstępy), a ujemna – spadające tętno (dłuższe odstępy). Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "Negative Slope · Descending",
-              "text": "Your heart rate is gradually slowing down. This is the classic \"relaxation response.\" Your nervous system is successfully dampening arousal and shifting into recovery mode. This is the ideal scenario for meditation or winding down after work."
+              "label": "Dodatnie",
+              "text": "Tętno w tym oknie rosło: na przykład po ruchu, mówieniu, wstaniu lub przy napięciu."
             },
             {
-              "label": "Positive Slope · Ascending",
-              "text": "Your heart rate is accelerating. This signals rising emotional or physical arousal. Your body is preparing for action or reacting to a stressor that emerged during the session."
+              "label": "Ujemne",
+              "text": "Tętno spadało: typowe, gdy siadasz, relaksujesz się lub oddychasz wolno z dłuższymi wydechami."
             },
             {
-              "label": "Zero Slope · Plateau",
-              "text": "A steady state. Your system is in equilibrium, maintaining its current level of activation without sharp fluctuations."
+              "label": "Bliskie zera",
+              "text": "Tętno było mniej więcej płaskie. W stabilnym spoczynku tego właśnie należy się spodziewać."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Trend Slope allows you to see the inertia of your nervous system. If you are trying to relax but the trend remains positive, it means your \"braking system\" hasn't kicked in yet. This metric helps you understand how effectively your chosen practice (breathing, music, a pause) is actually shifting your biological course."
+          "heading": "Dlaczego bywa zaszumiony",
+          "body": "W ciągu 15 sekund tętno naturalnie rośnie i spada z każdym oddechem, więc dopasowana prosta może przechylić się w jedną lub drugą stronę tylko z powodu miejsca, w którym zaczyna się okno. Pomiar czasu uderzeń z kamery też ma drobne błędy. Szukaj stałego znaku przez pół minuty lub dłużej, zamiast reagować na pojedynczą wartość."
         },
         {
-          "highlight": "It's not about where you are, but which way you're moving. A negative trend is your ticket to a state of deep restoration."
+          "heading": "Prosty eksperyment",
+          "body": "Usiądź nieruchomo, poczekaj, aż odczyt się ustabilizuje, a potem oddychaj wolno: około 4 sekund wdechu i 6 sekund wydechu przez minutę. Wiele osób widzi, jak nachylenie przesuwa się w stronę wartości ujemnych, gdy tętno się uspokaja. Potem wstań i zobacz, jak zmienia się na dodatnie, gdy tętno na chwilę rośnie."
+        },
+        {
+          "heading": "Ważne ograniczenia",
+          "body": "To wskaźnik trendu w czasie rzeczywistym dla tego narzędzia w przeglądarce. Nie ma standardowej normy i nie jest pomiarem medycznym."
+        },
+        {
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
+        },
+        {
+          "highlight": "Dodatnie oznacza, że tętno rośnie; ujemne – że się uspokaja."
         }
       ]
     },
     "recovery": {
-      "title": "Recovery Rate: The Index of Returning to Self",
-      "shortTitle": "🔄 Recovery Rate %",
+      "title": "Wskaźnik powrotu: jak daleko tętno wróciło od szczytu",
+      "shortTitle": "🔄 Wskaźnik powrotu %",
       "sections": [
         {
-          "heading": "The Art of the Finish",
-          "body": "Recovery Rate is a measure of how effectively your heart can \"downshift\" after exertion. At ONDA, we calculate how quickly your heart rate returns from its peak during the current session to your baseline average. It is a measurement of your ability to exit a state of arousal and return to your center of gravity."
+          "heading": "Co pokazuje ta liczba",
+          "body": "Wskaźnik powrotu w tym narzędziu to miara w obrębie okna. Bierze najwyższe tętno z ostatnich 15 sekund i sprawdza, jak daleko najnowsze uderzenie wróciło od tego szczytu w stronę średniej z okna. To nie to samo co kliniczny test „powrotu tętna” (heart rate recovery), który mierzy, o ile uderzeń na minutę spada tętno w pierwszej minucie po intensywnym wysiłku."
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "In the wild, survival belongs not to the one who runs the fastest, but to the one who calms down the quickest after the chase. In the modern world, it works the same way:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Dla każdego uderzenia narzędzie przelicza odstęp RR na uderzenia na minutę. Jeśli szczyt jest co najmniej 2 uderzenia/min powyżej średniej z okna, Powrót = (szczyt − ostatnie uderzenie) ÷ (szczyt − średnia) × 100, w zakresie 0–100%. Jeśli nie było wyraźnego szczytu, wartość wynosi 0. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0% · Stuck",
-              "text": "Your heart rate is frozen at its peak. Your body continues to \"fight shadows\" even after the external trigger is gone. This is a sign of nervous system rigidity and accumulated fatigue."
+              "label": "Blisko 100%",
+              "text": "Ostatnie uderzenie wróciło do średniej z okna (lub poniżej), więc krótki skok już minął."
             },
             {
-              "label": "100% · Full Calm",
-              "text": "Your heart has completely returned to its baseline or even lower. This is the gold standard of biological flexibility."
+              "label": "Około 50%",
+              "text": "Tętno wróciło mniej więcej w połowie drogi od niedawnego szczytu."
+            },
+            {
+              "label": "Blisko 0%",
+              "text": "Albo tętno wciąż jest na szczycie, albo nie było zauważalnego szczytu (stabilny odczyt też pokazuje 0). Sprawdź pozostałe liczby, by to rozróżnić."
             }
           ]
         },
         {
-          "heading": "The Biological Echo",
-          "body": "Your recovery speed depends directly on the tone of your Vagus Nerve. A high Recovery Rate means your \"parasympathetic brake\" is functioning perfectly. This allows you to switch between tasks without carrying the stress of the previous moment into the next."
+          "heading": "Dlaczego tak się zmienia",
+          "body": "Tętno naturalnie rośnie przy każdym wdechu i spada przy każdym wydechu, więc „szczyt” to często po prostu szczyt cyklu oddechowego, a wartość może się wahać z uderzenia na uderzenie. Pojedyncze fałszywe lub pominięte przez kamerę uderzenie także może stworzyć sztuczny szczyt."
         },
         {
-          "highlight": "It's not the height of the peak that matters, but the speed of the descent. True power lies in the ability to quickly return to a state of equilibrium."
+          "heading": "Regeneracja w szerszym sensie",
+          "body": "W skali godzin i dni regenerację lepiej oceniać po trendach: porannym tętnie spoczynkowym, HRV mierzonym codziennie tak samo, śnie i samopoczuciu. Po wysiłku szybszy spadek tętna w pierwszej minucie jest zwykle oznaką dobrej kondycji."
+        },
+        {
+          "heading": "Ważne ograniczenia",
+          "body": "To przybliżony, eksperymentalny wskaźnik tego narzędzia w przeglądarce, a nie miara medyczna ani treningowa."
+        },
+        {
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
+        },
+        {
+          "highlight": "Wysoka wartość oznacza, że tętno wróciło blisko średniej po niedawnym szczycie; 0% może też po prostu oznaczać, że szczytu nie było."
         }
       ]
     },
     "csi": {
-      "title": "CSI: Cardiac Stability Index",
-      "shortTitle": "🎯 Cardiac Stability Index (CSI)",
+      "title": "CSI: wskaźnik stabilności rytmu serca (zmienność RR względem średniej)",
+      "shortTitle": "🎯 Wskaźnik stabilności rytmu (CSI)",
       "sections": [
         {
-          "heading": "The Architecture of Rhythm",
-          "body": "CSI (Cardiac Stability Index) is a unique coefficient that allows ONDA to look deeper than a regular pulse. We take the standard deviation of your heart cycles and divide it by the mean heart rate. This allows us to measure the pure consistency of your heart, independent of how fast it happens to be beating at the moment."
+          "heading": "Co pokazuje ta liczba",
+          "body": "CSI w tym narzędziu to współczynnik zmienności odstępów między uderzeniami: jak bardzo odstępy różnią się względem ich średniej długości. Ponieważ jest dzielony przez średni odstęp, pozwala porównywać równomierność rytmu przy różnym tętnie. Niżej oznacza bardziej podobne odstępy, wyżej – większą zmienność."
         },
         {
-          "heading": "Stability vs. Chaos",
-          "body": "CSI is the detector of \"biological noise\" within your system:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "CSI = odchylenie standardowe odstępów RR ÷ średni odstęp RR. Na przykład jeśli odstępy wynoszą średnio 800 ms z odchyleniem standardowym 40 ms, CSI wynosi 0,05. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Dlaczego wartości z kamery są wysokie",
+          "body": "Kamera telefonu mierzy czas uderzeń z dokładnością do kilku milisekund, a niektóre szczyty są źle umiejscowione, więc zmierzony rozrzut jest większy niż rzeczywisty. W praktyce na tej stronie typowe są odczyty około 0,3; niższe wartości oznaczają czystszy, stabilniejszy sygnał.",
           "bullets": [
             {
-              "label": "0.03 – 0.10 · Diamond Stability",
-              "text": "Your heart is operating with the precision of a Swiss watch. This is a state of deep physiological confidence. The system wastes no resources on unnecessary fluctuations, operating in a mode of maximum economy and focus."
+              "label": "Niżej (wyraźnie poniżej 0,3)",
+              "text": "Odstępy były dość równe, a sygnał czysty."
             },
             {
-              "label": "0.11 – 0.24 · Dynamic Balance",
-              "text": "The natural rhythm of a living organism. Your heart fluidly adjusts to external stimuli while maintaining its overall structural integrity."
+              "label": "Około 0,3",
+              "text": "Typowy odczyt z kamery."
             },
             {
-              "label": "0.25+ · Biological Noise",
-              "text": "A signal of instability. High CSI often indicates \"glitches\" in nerve impulse transmission, extreme fatigue, or measurement noise. This is a state where the system is losing control over its rhythm."
+              "label": "Wyraźnie wyżej",
+              "text": "Odstępy mocno się różniły: często przez ruch, zbyt mocny nacisk, zimne palce lub słabe światło; czasem przez rzeczywiście nieregularne uderzenia."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "CSI is the foundation upon which your Stress % is built. While HRV tells us about your flexibility, CSI informs us about your structural reliability. A low CSI is a sign that your internal \"operating system\" is running without errors in the code."
+          "heading": "CSI a zmienność rytmu serca",
+          "body": "Pewna zmienność między uderzeniami jest zdrowa: serce lekko przyspiesza przy każdym wdechu i zwalnia przy wydechu, a osoby w dobrej kondycji często mają jej więcej w spoczynku. Zatem niżej nie znaczy automatycznie „lepiej” w fizjologii. W tym narzędziu CSI służy jednak głównie do sprawdzenia, jak stabilny i czysty był odczyt, i zasila wskaźniki Stresu (130 × CSI), Energii, Relaksu i Alarmu."
         },
         {
-          "highlight": "True power lies in stability. The less noise in your rhythm, the more clarity in your mind."
+          "heading": "Uwaga zdrowotna",
+          "body": "Jeśli zauważasz utrzymujące się nieregularne tętno, kołatanie serca, zawroty głowy lub duszność, skonsultuj się z lekarzem. Odczyt z kamery w przeglądarce nie wykryje ani nie wykluczy arytmii, takich jak migotanie przedsionków."
+        },
+        {
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
+        },
+        {
+          "highlight": "CSI to rozrzut odstępów między uderzeniami podzielony przez ich średnią; typowe odczyty z kamery wynoszą około 0,3."
         }
       ]
     },
     "hrv": {
-      "title": "HRV: The Index of Your Biological Agility",
+      "title": "HRV (RMSSD): co mówi zmienność między uderzeniami",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
-          "heading": "The Internal Microscope",
-          "body": "HRV (Heart Rate Variability) is the most sophisticated and informative metric in the ONDA arsenal. Unlike heart rate, which simply counts beats, HRV measures the microscopic fluctuations in time between those beats in milliseconds. We use the RMSSD algorithm to assess how fluidly your heart responds to every movement, thought, or breath."
+          "heading": "Czym jest HRV",
+          "body": "Zmienność rytmu serca (HRV) to naturalna zmienność czasu między uderzeniami serca. Zdrowe serce nie tyka jak metronom: odstępy wydłużają się i skracają wraz z oddechem, pozycją ciała i aktywnością układu nerwowego. RMSSD, pierwiastek ze średniej kwadratów kolejnych różnic, to jedna z najczęściej stosowanych miar HRV; odzwierciedla głównie aktywność przywspółczulną (nerwu błędnego), czyli stronę układu nerwowego odpowiedzialną za „odpoczynek i trawienie”."
         },
         {
-          "heading": "A Mirror of the Vagus Nerve",
-          "body": "HRV is a direct status report on your Vagus Nerve activity:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Narzędzie bierze każdą parę kolejnych odstępów RR, podnosi ich różnicę do kwadratu, uśrednia te kwadraty i wyciąga pierwiastek, co daje wartość w milisekundach. Wartości powyżej 100 ms są obcinane do 100. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Typowe zakresy i co na nie wpływa",
+          "body": "Spoczynkowe RMSSD u zdrowych dorosłych bardzo się różni, często mniej więcej 20–80 ms; zwykle jest wyższe u osób młodszych i sprawniejszych, a z wiekiem spada. Zazwyczaj obniża się po złym śnie, alkoholu, chorobie, intensywnym treningu lub ostrym stresie, a rośnie przy dobrej regeneracji. Różnice między ludźmi są duże, więc Twój własny trend jest ważniejszy niż porównanie z innymi.",
           "bullets": [
             {
-              "label": "High HRV (40–70 ms and above)",
-              "text": "Your heart adapts instantly to changes. This is a sign of a powerful parasympathetic response. You are in a state of high biological resilience: calm, focused, and ready for action."
+              "label": "Wyżej niż zwykle",
+              "text": "Często, gdy jesteś wypoczęty i zrelaksowany."
             },
             {
-              "label": "Low HRV (below 20–25 ms)",
-              "text": "Your autonomic nervous system is \"locked.\" Your heart is beating too metrically, like a robot. This is a signal that your recovery resources are drained, and the system is operating at the edge of its adaptive capacity."
+              "label": "Niżej niż zwykle",
+              "text": "Częste przy zmęczeniu, stresie, alkoholu, chorobie lub późnym ciężkim posiłku."
             }
           ]
         },
         {
-          "heading": "Why It Matters More Than Pulse",
-          "body": "Two people can have the exact same heart rate, but entirely different health profiles. The difference lies in HRV. High variability means your \"internal OS\" is constantly scanning the environment and micro-adjusting your rhythm. Low variability is a sign of biological fragility."
+          "heading": "Dlaczego odczyty z kamery są przybliżone",
+          "body": "RMSSD zależy od pomiaru czasu z dokładnością do milisekund. Kamera telefonu z około 30 klatkami na sekundę, lekko przesuwający się palec i okno trwające tylko 15 sekund dodają błędu, zwykle zawyżając wartość. Standardowe krótkoterminowe pomiary HRV wykorzystują co najmniej kilka minut EKG lub pas piersiowy. Traktuj tę liczbę jako przybliżone oszacowanie i porównuj tylko odczyty wykonane w ten sam sposób."
         },
         {
-          "heading": "Training with ONDA",
-          "body": "HRV is dynamic. It drops due to alcohol, lack of sleep, or overtraining, but it can be \"strengthened.\" By using the breathing protocols in ONDA, you are essentially exercising your Vagus Nerve, raising your baseline HRV and, consequently, your resilience to life's storms."
+          "heading": "Praktyczne wskazówki",
+          "bullets": [
+            {
+              "label": "Mierz konsekwentnie",
+              "text": "Aby śledzić trendy, mierz o tej samej porze (na przykład po przebudzeniu), siedząc nieruchomo i oddychając normalnie."
+            },
+            {
+              "label": "Wolny oddech",
+              "text": "Wolne oddychanie w tempie około 6 oddechów na minutę zwykle zwiększa zmienność między uderzeniami na czas ćwiczenia."
+            },
+            {
+              "label": "Najpierw podstawy",
+              "text": "Regularny sen, ograniczenie alkoholu i wysiłek tlenowy wiążą się z czasem z wyższym spoczynkowym HRV."
+            }
+          ]
         },
         {
-          "highlight": "High HRV is your ability to bend without breaking. It is the measure of your life force, expressed in milliseconds."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
+        },
+        {
+          "highlight": "RMSSD odzwierciedla aktywność nerwu błędnego; wersja z kamery to przybliżone oszacowanie, najbardziej przydatne w porównaniu z Twoimi własnymi odczytami."
         }
       ]
     },
     "energy": {
-      "title": "Energy %: Your Biological Power Reserve",
-      "shortTitle": "🔋 Energy %",
+      "title": "Energia %: eksperymentalny wskaźnik z tętna i rytmu",
+      "shortTitle": "🔋 Energia %",
       "sections": [
         {
-          "heading": "Your Internal Battery",
-          "body": "At ONDA, Energy % is not a subjective feeling of alertness; it is a rough estimate of your cardiovascular reserve. It is a mathematical ratio of how far your heart rate is from its elevated ceiling and how stable your cardiac rhythm is at this very second. The higher the score, the more physiological capacity your body has to handle new tasks."
+          "heading": "Czym jest ta liczba",
+          "body": "Energia to tutaj eksperymentalny wskaźnik, a nie miara tego, jak energicznie się czujesz, Twojej kondycji ani „baterii”. Zaczyna się od 90% i spada, gdy tętno przekracza 75 uderzeń/min oraz gdy rytm między uderzeniami jest nieregularny względem średniej (CSI)."
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your Energy score inevitably drops under the influence of three factors:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Energia = 90 − 1,5 × (tętno − 75, jeśli powyżej 75) − 80 × CSI, w zakresie 10–100%. Na przykład przy 70 uderzeniach/min i typowym dla kamery CSI 0,3 Energia wynosi około 66%, a przy 95 uderzeniach/min i tym samym CSI – około 36%. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "Accumulated Fatigue",
-              "text": "When the system fails to recover sufficiently during sleep."
+              "label": "Wyżej",
+              "text": "Tętno było na poziomie około 75 uderzeń/min lub niżej, a rytm wyglądał na stabilny."
             },
             {
-              "label": "High BPM",
-              "text": "Running at \"high RPMs\" quickly burns through available fuel."
-            },
-            {
-              "label": "Prolonged Stress",
-              "text": "Constant turbulence in your rhythm (low stability) forces the heart to spend more resources just to maintain basic functions."
+              "label": "Niżej",
+              "text": "Szybsze tętno (kawa, ruch, upał, stres, choroba) i/lub nieregularnie wyglądający rytm, co często jest po prostu zaszumionym sygnałem."
             }
           ]
         },
         {
-          "heading": "What the Numbers Tell You",
-          "body": "",
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. Ze względu na wzór Energia nie może przekroczyć 90%, a tętno spoczynkowe poniżej 75 uderzeń/min nie jest już dodatkowo nagradzane."
+        },
+        {
+          "heading": "Co naprawdę pomaga",
           "bullets": [
             {
-              "label": "80–100% · Full Charge",
-              "text": "Your system is in a state of abundance. You are ready for intense cognitive loads, demanding workouts, and strategic decision-making."
+              "label": "Sen",
+              "text": "Regularny, wystarczający sen to najsilniejsza dźwignia dziennej energii."
             },
             {
-              "label": "40–70% · Operating Range",
-              "text": "Reserves are beginning to dwindle. It's time to pace yourself. Your efficiency is still high, but the \"price\" of each subsequent effort is rising."
+              "label": "Ruch i światło dzienne",
+              "text": "Krótki spacer, zwłaszcza rano na zewnątrz, często pomaga bardziej niż dodatkowa kofeina."
             },
             {
-              "label": "Below 30% · Critical Low",
-              "text": "You are operating \"on credit.\" In this state, your body perceives any new event as a threat. The brain enters a strict power-saving mode, dialing down creativity and empathy."
+              "label": "Krótkie resety",
+              "text": "Kilka minut wolnego oddechu może obniżyć przyspieszone tętno i pomóc poczuć się spokojniej."
             }
           ]
         },
         {
-          "heading": "The Art of Recharging",
-          "body": "Energy % is our most dynamic metric. It can plummet after a difficult conversation and surge after 10 minutes of deep meditation or a short walk. ONDA helps you see these fluctuations in real-time, turning energy management from guesswork into an exact science."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "Don't wait for the tank to hit empty. A high Energy Score is your insurance against mistakes. If the score is in the red zone, any work will be counterproductive. Charge the system first, then act."
+          "highlight": "Energia spada tu przy tętnie powyżej 75 uderzeń/min i nieregularnie wyglądającym rytmie. To przybliżona wskazówka, a nie wskaźnik paliwa."
         }
       ]
     },
     "stress": {
-      "title": "Stress %: The Biological Turbulence Index",
-      "shortTitle": "⚡ Stress %",
+      "title": "Stres %: eksperymentalny wskaźnik z nieregularności rytmu",
+      "shortTitle": "⚡ Stres %",
       "sections": [
         {
-          "heading": "Beyond Emotions",
-          "body": "At ONDA, Stress % is not a psychological state; it is a rough index of irregularity in your cardiac rhythm. This score is derived from the Cardiac Stability Index. We don't just analyze your pulse; we examine the micro-deviations in the rhythm of every single beat. The higher the irregularity and \"noise\" in these intervals, the higher your biological stress score."
+          "heading": "Czym jest ta liczba",
+          "body": "Stres na tej stronie to eksperymentalny wskaźnik. To po prostu wskaźnik stabilności rytmu serca (CSI), czyli zmienność odstępów między uderzeniami względem ich średniej, przeskalowana na procenty. Nie mierzy hormonów stresu, emocji ani tego, jak bardzo czujesz się zestresowany, i nie jest zwalidowaną oceną stresu."
         },
         {
-          "heading": "What Does Your Score Mean?",
-          "body": "Stress is the \"spending\" of your life force. We've categorized it into three zones:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Stres = 130 × CSI, w zakresie 0–100%. Typowe dla kamery CSI około 0,3 daje mniej więcej 40%. Tętno i częstość oddechu nie wchodzą do tego wzoru. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Jak ją odczytywać",
           "bullets": [
             {
-              "label": "0 – 30% · The Flow Zone",
-              "text": "Your system is in a state of coherence. Your heart is working rhythmically and efficiently. This is the ideal time for complex decision-making and deep work."
+              "label": "Wyżej",
+              "text": "Odstępy między uderzeniami bardziej różniły się względem średniej. Może to towarzyszyć napięciu, ale najczęstszą przyczyną przy kamerze telefonu jest szum sygnału: ruch palca, zbyt mocny nacisk, zimne dłonie lub słabe światło."
             },
             {
-              "label": "30 – 60% · The Adaptive Zone",
-              "text": "You are under a load. This is a normal state during an active day, but if you remain here for too long, your cognitive resources begin to drain."
-            },
-            {
-              "label": "60%+ · The Burnout Zone",
-              "text": "Acute physiological stress. Your nervous system is overwhelmed. In this state, the brain dials down the prefrontal cortex (logic) and shifts control to the amygdala (fear and impulsivity)."
+              "label": "Niżej",
+              "text": "Odstępy były bardziej równe, a sygnał czystszy."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "The most dangerous stress is the kind you don't feel. You might be sitting in silence, yet your Stress % shows 70%. This means an invisible struggle is happening inside: lack of sleep, hidden inflammation, or information overload. ONDA makes the invisible visible, allowing you to hit pause before exhaustion sets in."
+          "heading": "Ważne ograniczenia",
+          "body": "To eksperymentalna heurystyka zbudowana z kilku danych pochodzących z kamery. Nie jest zwalidowaną miarą fizjologiczną, nie wykrywa emocji i nie jest badaniem medycznym. Traktuj ją jako przybliżoną wskazówkę, w którą stronę zmienia się sygnał, a nie jako werdykt o tym, jak się czujesz. W rzeczywistej fizjologii ostry stres zwykle obniża krótkoterminową zmienność rytmu serca, a nie ją zwiększa, więc wyższy wynik nieregularności nie jest wiarygodnym objawem stresu. Jeśli stres wpływa na Twoje codzienne życie, rozmowa ze specjalistą da więcej niż jakikolwiek odczyt."
         },
         {
-          "highlight": "Stress isn't what happens to you; it's how your body spends its resources in response. A high percentage is a signal to re-evaluate your priorities in this very moment."
+          "heading": "Co naprawdę pomaga",
+          "bullets": [
+            {
+              "label": "Wolny oddech z dłuższym wydechem",
+              "text": "Kilka minut wolnego oddychania to jeden z najprostszych sposobów, by uspokoić ciało."
+            },
+            {
+              "label": "Lepsze odczyty",
+              "text": "Oprzyj przedramię na stole, lekko zakryj kamerę i trzymaj nieruchomo przez 30 sekund lub dłużej, zanim spojrzysz na liczbę."
+            },
+            {
+              "label": "Codzienne nawyki",
+              "text": "Sen, regularny ruch, czas na świeżym powietrzu i kontakty z ludźmi pomagają w radzeniu sobie ze stresem długoterminowo."
+            }
+          ]
+        },
+        {
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
+        },
+        {
+          "highlight": "Stres to tutaj 130 × CSI: przybliżona wskazówka o nieregularności rytmu, silnie zależna od jakości sygnału."
         }
       ]
     },
     "br": {
-      "title": "Breathing Rate: The Bridge Between Worlds",
-      "shortTitle": "🌬️ /min — Breathing Rate",
+      "title": "Częstość oddechu: co oznacza liczba oddechów na minutę",
+      "shortTitle": "🌬️ /min — Częstość oddechu",
       "sections": [
         {
-          "heading": "The Only Manual Override",
-          "body": "Breathing Rate is a unique biometric parameter. Unlike your heartbeat or digestion, breathing is the only function of the Autonomic Nervous System that you can control directly. It is your \"remote control\" for your internal state."
+          "heading": "Czym jest częstość oddechu",
+          "body": "Częstość oddechu to liczba oddechów na minutę. To jeden z podstawowych parametrów życiowych, a zarazem ten, który najłatwiej świadomie zmienić – dlatego wolny oddech jest stosowany w wielu metodach relaksacji."
         },
         {
-          "heading": "The Rhythm of Calm vs. The Rhythm of Survival",
-          "body": "Your breathing frequency is a live broadcast of how your brain perceives its environment:",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Oddech nieznacznie zmienia siłę każdej fali tętna w opuszku palca. Narzędzie wygładza amplitudę sygnału tętna w oknie około 5 sekund, wyszukuje szczyty tej powolnej fali (co najmniej 2 sekundy od siebie), bierze medianę czasu między nimi i przelicza ją na oddechy na minutę. Wartość pokazuje tylko wtedy, gdy znajdzie co najmniej pięć takich szczytów, a wynik mieści się w zakresie 6–30 oddechów na minutę; w przeciwnym razie nic nie pokazuje. Ponieważ okno jest krótkie, a efekt subtelny, jest to przybliżone oszacowanie."
+        },
+        {
+          "heading": "Typowe zakresy",
           "bullets": [
             {
-              "label": "Shallow and Fast Breathing",
-              "text": "An alarm signal. When you breathe from the upper chest more than 16–20 times per minute, you are telling your body: \"We are in danger.\" This sustains high cortisol levels and keeps the brain in a state of constant vigilance."
+              "label": "Około 12–20 na minutę",
+              "text": "Zwykły zakres spoczynkowy u dorosłych."
             },
             {
-              "label": "Deep and Slow Breathing",
-              "text": "A safety signal. Reducing your frequency to 6–10 cycles per minute activates the Vagus Nerve. This instantly shifts the system into a mode of deep focus and emotional stability."
+              "label": "Wolniej (około 6–10)",
+              "text": "Typowe podczas świadomego wolnego oddychania, medytacji lub głębokiego odpoczynku."
+            },
+            {
+              "label": "Szybciej (powyżej około 20 w spoczynku)",
+              "text": "Może towarzyszyć wysiłkowi, lękowi, gorączce lub chorobie. Utrzymujący się szybki oddech w spoczynku lub duszność warto skonsultować z lekarzem."
             }
           ]
         },
         {
-          "heading": "Biological Feedback",
-          "body": "At ONDA, we track your breathing rate to identify moments of \"Screen Apnea\"—when you unconsciously hold your breath or breathe erratically while checking emails or performing complex tasks. These micro-pauses trigger a cascade of stress responses that you might not even notice."
+          "heading": "Dlaczego wolny oddech jest popularny",
+          "body": "Wolne oddychanie, często około 5–7 oddechów na minutę ze swobodnym, dłuższym wydechem, zwykle zwiększa wahania tętna podążające za każdym oddechem i wiąże się z poczuciem spokoju. To technika o niskim ryzyku i dobrze zbadana. Jeśli zakręci Ci się w głowie, wróć do normalnego oddechu."
         },
         {
-          "heading": "The Art of Slowing Down",
-          "body": "Optimal breathing at rest is a rhythm that is almost invisible. The fewer cycles you need to saturate your blood with oxygen, the more efficiently your metabolic system is functioning. We teach you to \"under-breathe\"—making each breath rarer but higher in quality, turning every cycle into an act of restoration."
+          "heading": "Wskazówki dla lepszego odczytu",
+          "body": "Oprzyj dłoń, trzymaj palec nieruchomo z lekkim naciskiem, oddychaj naturalnie i daj narzędziu co najmniej 20–30 sekund. Mówienie lub ruch sprawiają, że oszacowanie jest niewiarygodne."
         },
         {
-          "highlight": "Breathing is the only way to speak to your heart in its own language. By slowing the inhale, you dictate peace to your mind."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
+        },
+        {
+          "highlight": "Częstość oddechu jest tu szacowana z powolnego wzrostu i spadku sygnału tętna; traktuj ją jako przybliżoną."
         }
       ]
     },
     "bpm": {
-      "title": "BPM: The Rhythm of Your Internal Operating System",
-      "shortTitle": "❤️ BPM — Heart Rate",
+      "title": "BPM: Twoje tętno i co je zmienia",
+      "shortTitle": "❤️ BPM — Tętno",
       "sections": [
         {
-          "heading": "The Biological Metronome",
-          "body": "BPM (Beats Per Minute) is more than just the speed at which your heart pumps blood. Within the ONDA ecosystem, we view the pulse as the primary interface of your Autonomic Nervous System. It is a live graph of how your body allocates resources in response to the challenges of the outside world."
+          "heading": "Czym jest tętno",
+          "body": "Tętno to liczba uderzeń serca na minutę (uderzenia/min). Rośnie, gdy ciało potrzebuje większego przepływu krwi, na przykład podczas ruchu, w upale, przy stresie, chorobie lub po kofeinie, a spada w czasie odpoczynku i snu. Tętno spoczynkowe to przydatny codzienny wskaźnik zdrowia, gdy śledzisz je w czasie."
         },
         {
-          "heading": "A Symphony of Two States",
-          "body": "Your heart is constantly balancing between two \"conductors\":",
+          "heading": "Jak to narzędzie ją oblicza",
+          "body": "Opuszek palca na kamerze lekko zmienia kolor z każdym uderzeniem tętna (fotopletyzmografia, PPG). Narzędzie wyszukuje każdy szczyt tętna w kanale czerwonym, mierzy czas między szczytami (odstępy RR), odrzuca nieprawdopodobne i oblicza tętno jako 60 000 podzielone przez średni odstęp w milisekundach. Wyniki poza zakresem 40–180 uderzeń/min są odrzucane. Narzędzie analizuje przesuwające się 15-sekundowe okno nagrania z opuszka palca (około 30 klatek na sekundę), wyszukuje każdy szczyt tętna, zachowuje tylko odstępy między uderzeniami (RR) w zakresie 400–1500 ms, mieszczące się w granicach 22% od mediany, i wygładza wyświetlane liczby, aby zmieniały się stopniowo."
+        },
+        {
+          "heading": "Typowe zakresy",
           "bullets": [
             {
-              "label": "Sympathetic Drive",
-              "text": "When your pulse rises, your body enters a high-performance or defensive mode. This is mobilization — essential for a sprint, but toxic when sustained."
+              "label": "Około 60–100 uderzeń/min",
+              "text": "Powszechnie podawany prawidłowy zakres spoczynkowy u dorosłych. Wiele zdrowych osób, zwłaszcza aktywnych, ma w spoczynku niższe tętno."
             },
             {
-              "label": "Parasympathetic Calm",
-              "text": "A low heart rate is a signal of safety. In this state, the body initiates tissue regeneration, memory consolidation, and deep recovery."
+              "label": "Poniżej 60 uderzeń/min",
+              "text": "Często prawidłowe u osób wysportowanych i w głębokim odpoczynku; skonsultuj się z lekarzem, jeśli towarzyszą temu zawroty głowy, omdlenia lub nietypowe zmęczenie."
+            },
+            {
+              "label": "Powyżej 100 uderzeń/min w spoczynku",
+              "text": "Może wystąpić po kofeinie, przy stresie, odwodnieniu lub chorobie. Jeśli utrzymuje się w spoczynku lub towarzyszy mu ból w klatce piersiowej albo duszność, zasięgnij porady lekarza."
             }
           ]
         },
         {
-          "heading": "Why Do We Track the Numbers?",
-          "body": "Your resting heart rate is your baseline biological cost of living.",
+          "heading": "Jak dokładny jest odczyt z kamery?",
+          "body": "Tętno z kamery jest zwykle bliskie wynikowi urządzenia referencyjnego, gdy trzymasz palec nieruchomo przy dobrym świetle, ale jest mniej wiarygodne przy ruchu, zimnych palcach, mocnym nacisku lub słabym oświetleniu. To edukacyjne oszacowanie, a nie pomiar medyczny."
+        },
+        {
+          "heading": "Praktyczne wskazówki",
           "bullets": [
             {
-              "label": "High BPM while seated",
-              "text": "You are wasting energy. Your body is \"running a marathon\" while you are simply answering emails. This is a direct path to cognitive burnout."
+              "label": "Mierz tętno spoczynkowe konsekwentnie",
+              "text": "Na przykład siedząc spokojnie przez minutę po przebudzeniu, przed kawą."
             },
             {
-              "label": "Optimal BPM",
-              "text": "This is the \"silent cruise\" mode — where the system operates at maximum efficiency, leaving a massive reserve for unexpected tasks."
+              "label": "Wolny oddech",
+              "text": "Kilka minut wolnego oddechu z dłuższym wydechem często nieco obniża tętno."
+            },
+            {
+              "label": "Nawyki długoterminowe",
+              "text": "Regularny wysiłek tlenowy, dobry sen i ograniczenie alkoholu zwykle obniżają tętno spoczynkowe w ciągu tygodni."
             }
           ]
         },
         {
-          "heading": "A Tool for Calibration",
-          "body": "BPM in the ONDA app is a mirror. By noticing an abnormal spike in your pulse, you gain the opportunity to intervene consciously. We don't just measure beats; we teach you to master them. A short breathing session or a shift in focus can instantly \"drop\" your pulse, switching your brain from survival mode to creative flow."
+          "body": "Aplikacja ONDA to osobny produkt: skupia się na tętnie, oddechu oraz – z Apple Watch – koherencji. Nie korzysta ze wzorów z tej strony."
         },
         {
-          "highlight": "A high pulse is expensive. A low pulse is intentional. Manage the rhythm to manage your life."
+          "highlight": "Z tętna najwięcej się dowiesz, gdy mierzysz je za każdym razem tak samo i patrzysz na trend."
         }
       ]
     }

@@ -5,7 +5,7 @@
     "ondaPrinciple": "El principio ONDA",
     "back": "← Volver a Bio OS",
     "ctaReady": "¿Listo para medir?",
-    "ctaSubtitle": "Conecta un tracker Bluetooth para biofeedback continuo y preciso.",
+    "ctaSubtitle": "La app ONDA funciona con la cámara de tu iPhone, el Apple Watch y Apple Health.",
     "appStoreSup": "Descargar en",
     "appStoreLabel": "App Store",
     "appStoreAria": "Descargar ONDA Life en App Store",
@@ -26,673 +26,781 @@
       "errorGeneric": "Algo salió mal. Inténtalo de nuevo más tarde.",
       "close": "Cerrar"
     },
-    "measurementDisclaimer": "Estimado a partir de una sola lectura de cámara (PPG): es una estimación educativa, no una medición médica. Las etiquetas de estado (Flow, Focus, Alarm…) son patrones aproximados y experimentales, no detección de emociones."
+    "measurementDisclaimer": "Estimado a partir de una sola lectura con la cámara (PPG): una estimación educativa, no una medición médica. Las etiquetas de estado (Flujo, Foco, Alarma…) son patrones aproximados y experimentales, no detección de emociones."
   },
   "metrics": {
     "flow": {
-      "title": "Flujo: el estado de resonancia biológica",
+      "title": "Flujo: un índice experimental que combina Foco y Relajación",
       "shortTitle": "🌊 Flujo",
       "sections": [
         {
-          "heading": "El punto óptimo",
-          "body": "El flujo es el santo grial del rendimiento. En ONDA estimamos un patrón de tipo flujo cuando la señal sugiere sincronización: alta concentración con calma interna profunda. Es el momento en que estás totalmente absorto en una tarea y, sin embargo, tu cuerpo no paga un precio excesivo por ello."
+          "heading": "Qué es este número",
+          "body": "Aquí el Flujo es un índice experimental que intenta reflejar una combinación que la gente suele describir durante el trabajo absorto: una atención que se mantiene estable mientras el cuerpo sigue razonablemente tranquilo. La herramienta del navegador no puede leer tu atención ni tu mente. Solo combina otros dos de sus índices, Foco y Relajación, que a su vez salen de tu frecuencia cardíaca y de la irregularidad de tus intervalos entre latidos."
         },
         {
-          "heading": "Qué significan los valores",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Flujo = 0,6 × Foco + 0,4 × Relajación, limitado a 0–100 %. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual. Como Foco y Relajación suben cuando tu frecuencia cardíaca es moderada y tu ritmo es estable (CSI bajo), el Flujo sube en las mismas situaciones."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0–25% · Desconectado",
-              "text": "Faltan las condiciones para el flujo: índice de alarma elevado, energía baja o foco disperso. Intentar trabajo profundo aquí es luchar contra la biología."
+              "label": "Más alto",
+              "text": "Tu pulso era moderado y tus intervalos entre latidos bastante uniformes durante la lectura. Puede acompañar a una atención tranquila y concentrada, pero también puede significar simplemente que estuviste quieto con una señal limpia."
             },
             {
-              "label": "25–50% · Acercándose",
-              "text": "El sistema se calienta hacia la coherencia. El foco empieza a establecerse, el estrés disminuye. Una respiración corta o una intención clara pueden empujarte a la zona."
-            },
-            {
-              "label": "50–75% · En la zona",
-              "text": "La firma biométrica del flujo está activa: HR moderado, ritmo estable, alarma baja. Eres totalmente capaz de un trabajo sostenido y de calidad con mínima fricción cognitiva."
-            },
-            {
-              "label": "75–100% · Resonancia profunda",
-              "text": "Raro y óptimo. Las tres condiciones perfectamente alineadas: activación, estabilidad, silencio. Es el estado donde las horas se sienten como minutos y el rendimiento supera el esfuerzo. Protégelo."
+              "label": "Más bajo",
+              "text": "La frecuencia cardíaca era más alta, el ritmo parecía más irregular, o ambas cosas. El movimiento, los cambios de presión del dedo y la mala iluminación también lo bajan, porque añaden ruido a la señal de la cámara."
             }
           ]
         },
         {
-          "heading": "La fórmula del flujo",
-          "body": "A diferencia de un estado de trabajo común, el flujo en ONDA tiene una firma biométrica clara:",
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. El estado psicológico llamado «flujo» se estudia con cuestionarios y rendimiento en tareas, y no existe una forma aceptada de detectarlo con una lectura de 15 segundos en la yema del dedo."
+        },
+        {
+          "heading": "Lo que realmente ayuda",
           "bullets": [
             {
-              "label": "Activación moderada",
-              "text": "Tu HR está ligeramente por encima de la línea base de reposo. Eso da al cerebro el impulso y los recursos necesarios sin cruzar al estadio de alarma."
+              "label": "Reduce las interrupciones",
+              "text": "Cierra las notificaciones y elige una sola tarea. Cambiar de tarea a menudo es una forma segura de romper la concentración."
             },
             {
-              "label": "Estabilidad rítmica",
-              "text": "Tu corazón opera como una máquina afinada — sin sacudidas ni caos. Eso te permite sostener el foco durante horas sin sentir fricción mental."
+              "label": "Respiración lenta antes del trabajo profundo",
+              "text": "Unos minutos de respiración lenta y relajada suelen bajar un poco la frecuencia cardíaca y hacer el ritmo más estable."
             },
             {
-              "label": "Ausencia de ruido",
-              "text": "El índice de alarma está en cero. Estás comprometido pero no abrumado. No luchas con la tarea; te fundes con ella."
+              "label": "Sueño y pausas",
+              "text": "Es más fácil mantener la atención cuando has descansado; las pausas cortas cada hora más o menos también ayudan."
             }
           ]
         },
         {
-          "heading": "¿Por qué está en ONDA?",
-          "body": "El flujo es la forma más eficiente de existencia. Aquí produces el máximo resultado con el mínimo desgaste. ONDA te ayuda a hacer más que «caer» en él; te ayuda a entender qué condiciones (respiración, hora del día, nivel de preparación) lo provocan. Te enseñamos a encontrar tu «zona», donde el reto se ajusta exactamente a tu habilidad."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "El flujo no es suerte; es una habilidad biofísica. Afina tu ritmo, retira el ruido sobrante, y el mundo a tu alrededor se desvanecerá, dejando solo a ti y a tu oficio."
+          "highlight": "Usa el Flujo como curiosidad, no como una puntuación que perseguir: sube cuando tu pulso es moderado y tu ritmo es estable."
         }
       ]
     },
     "fatigue": {
-      "title": "Fatiga: el impuesto fisiológico al esfuerzo",
+      "title": "Fatiga: un índice experimental a partir de Energía y Estrés",
       "shortTitle": "🪫 Fatiga",
       "sections": [
         {
-          "heading": "El coste del movimiento",
-          "body": "La fatiga en ONDA es más que ganas de dormir. Es una estimación aproximada del «coste biológico» de tus esfuerzos recientes. Esta estimación sube cuando tus reservas de energía parecen agotadas y tu estrés se mantiene elevado. Es la señal de que tu sistema ha pasado de una operación eficiente a un estado de desgaste."
+          "heading": "Qué es este número",
+          "body": "En esta página, la Fatiga es un índice experimental. No mide la somnolencia, la fatiga muscular ni el sobreentrenamiento. Se calcula a partir de otros dos índices de la herramienta, Energía y Estrés, así que sube cuando tu frecuencia cardíaca supera unos 75 lpm y cuando tu ritmo entre latidos parece irregular."
         },
         {
-          "heading": "Qué significan los valores",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Fatiga = 60 × (1 − Energía/100) + 0,2 × Estrés, limitado a 0–100 %. La Energía baja cuando la frecuencia cardíaca pasa de 75 lpm y cuando aumenta el CSI (la irregularidad de tus intervalos entre latidos); el Estrés es CSI × 130. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0–20% · Recuperado",
-              "text": "Reservas energéticas intactas, estrés bajo, HRV saludable. Tu sistema opera desde la abundancia — listo para grandes demandas."
+              "label": "Más alto",
+              "text": "Tu pulso estaba elevado y/o tus intervalos entre latidos variaban mucho respecto a su media. El cansancio puede provocarlo, pero también el café, acabar de subir escaleras, hablar o una señal de cámara con ruido."
             },
             {
-              "label": "20–45% · Carga acumulada",
-              "text": "Desgaste normal de fin de jornada. Manejable con recuperación estándar: sueño, nutrición, una pausa. Rendimiento ligeramente reducido pero no comprometido."
-            },
-            {
-              "label": "45–70% · Zona de agotamiento",
-              "text": "Déficit energético significativo. HRV cayendo, HR de reposo subiendo, recuperación lenta tras micro-estresores. Empujar aquí aumenta el riesgo de errores y de burnout."
-            },
-            {
-              "label": "70–100% · Alerta roja biológica",
-              "text": "Sistema en modo de desgaste. Cualquier intento de «empujar» da rendimientos decrecientes a un coste creciente. La única acción productiva es el descanso estructurado: sueño, quietud o recuperación parasimpática profunda."
+              "label": "Más bajo",
+              "text": "La frecuencia cardíaca era moderada y el ritmo parecía estable durante la lectura."
             }
           ]
         },
         {
-          "heading": "La anatomía del agotamiento",
-          "body": "Tu cuerpo reporta fatiga a través de tres marcadores biométricos:",
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. Una evaluación real de la fatiga suele mirar tendencias a lo largo de días (frecuencia cardíaca en reposo, HRV medida igual cada mañana, sueño), no una sola lectura corta."
+        },
+        {
+          "heading": "Lo que realmente ayuda",
           "bullets": [
             {
-              "label": "HRV reducido",
-              "text": "El corazón pierde adaptabilidad y fluidez, volviéndose «rígido» y monótono."
+              "label": "Sueño regular",
+              "text": "Acostarte y levantarte a horas fijas es una de las formas más fiables de sentirte menos agotado."
             },
             {
-              "label": "HR de reposo elevado",
-              "text": "Incluso sentado, tu corazón late más rápido de lo habitual, intentando compensar el déficit de recursos internos."
+              "label": "Sigue tendencias, no momentos",
+              "text": "Si quieres controlar tu recuperación, mide a la misma hora cada día, sentado y quieto, y mira la semana en lugar de un solo número."
             },
             {
-              "label": "Recuperación lenta",
-              "text": "Tu capacidad de volver a la línea base tras cualquier micro-estresor (incluso una llamada) cae notablemente."
+              "label": "Movimiento suave y pausas",
+              "text": "Un paseo corto o unos minutos de respiración lenta pueden ayudarte a reiniciarte en un día largo."
             }
           ]
         },
         {
-          "heading": "¿Por qué está en ONDA?",
-          "body": "La fatiga es insidiosa porque solemos acostumbrarnos y dejar de notar su peso. ONDA hace visible esta carga invisible. Un índice alto no es un fracaso, sino una orden de cambiar de marcha. Cualquier «aguantar» aquí da retornos decrecientes y sube el riesgo de burnout y de error."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "La fatiga es la forma en que tu cuerpo protege sus activos. Respeta esta señal. A veces, lo más productivo que puedes hacer es dormir bien o pasar una hora en silencio."
+          "highlight": "Un valor de Fatiga alto es una invitación a revisar lo básico (sueño, cafeína, actividad reciente), no un diagnóstico."
         }
       ]
     },
     "excitement": {
-      "title": "Excitación: la energía de la anticipación",
+      "title": "Excitación: un índice experimental de activación",
       "shortTitle": "✨ Excitación",
       "sections": [
         {
-          "heading": "Empuje positivo",
-          "body": "La excitación es un estado de movilización «luminosa» del sistema. Como la ansiedad, implica un alza de HR y de la frecuencia respiratoria, pero con una distinción crítica: en ONDA este índice solo sube si el estrés permanece en rango saludable. Solemos leer este patrón como preparación para el juego, la creatividad o un evento significativo, más que como una respuesta a una amenaza."
+          "heading": "Qué es este número",
+          "body": "Aquí la Excitación es un índice experimental de activación fisiológica general. Sube con la frecuencia cardíaca por encima de 60 lpm y, un poco, con la frecuencia respiratoria. No puede distinguir la emoción positiva de los nervios, el esfuerzo físico o la cafeína, porque el cuerpo responde a todos ellos con un pulso más rápido."
         },
         {
-          "heading": "Qué significan los valores",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Excitación = 1,5 × (frecuencia cardíaca − 60) + 0,5 × frecuencia respiratoria, limitado a 0–100 %. La frecuencia cardíaca es 60.000 dividido entre el intervalo RR medio; la frecuencia respiratoria se estima a partir de cambios lentos en la señal del pulso y cuenta como 0 cuando la herramienta no encuentra un ritmo claro. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0–20% · Neutro",
-              "text": "Sin activación positiva detectada. Sistema en reposo o baja activación. Útil para recuperación, no para rendimiento o creatividad."
+              "label": "Más alto",
+              "text": "Tu frecuencia cardíaca estaba bastante por encima de 60 lpm. Por ejemplo, a 80 lpm y 15 respiraciones por minuto el índice ronda el 38 %; a 100 lpm, el 68 %."
             },
             {
-              "label": "20–50% · Carga ligera",
-              "text": "Energización suave — el cuerpo se calienta con motivación y leve anticipación. Ideal para iniciar tareas que requieren compromiso sostenido."
-            },
-            {
-              "label": "50–75% · Empuje",
-              "text": "Movilización positiva clara con ritmo estable. HR elevado pero estrés contenido. Es la zona óptima para trabajo de alto rendimiento, deporte o flujo creativo."
-            },
-            {
-              "label": "75–100% · Pico",
-              "text": "Eustrés máximo. Sistema totalmente preparado. Estado raro y limitado en el tiempo — úsalo estratégicamente. Pasa a ansiedad si los marcadores de estrés empiezan a subir en paralelo."
+              "label": "Más bajo",
+              "text": "Tu pulso estaba cerca de 60 lpm o por debajo. Muchos adultos relajados y en forma están aquí en reposo."
             }
           ]
         },
         {
-          "heading": "La biología de la alegría",
-          "body": "En estado de excitación, el cuerpo se prepara para la acción, pero lo hace de forma eficiente:",
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. En la práctica, este índice es sobre todo una frecuencia cardíaca reescalada, así que arrastra las mismas limitaciones que la propia frecuencia cardíaca."
+        },
+        {
+          "heading": "Lo que realmente ayuda",
           "bullets": [
             {
-              "label": "Subida productiva",
-              "text": "El corazón late más rápido para saturar de oxígeno músculos y cerebro, pero el ritmo se mantiene estable y firme."
+              "label": "Identifica la causa",
+              "text": "Si el número es alto, pregúntate qué acaba de pasar: movimiento, café, un mensaje estresante o expectación. La respuesta del cuerpo es parecida en todos los casos."
             },
             {
-              "label": "Eustrés",
-              "text": "Es el «estrés positivo» — el que no agota tus reservas, sino que te hace sentir vivo y comprometido."
-            },
-            {
-              "label": "Sin contracción",
-              "text": "A diferencia de la ansiedad, no hay «visión túnel». Conservas una mirada amplia y una alta capacidad creativa."
+              "label": "Exhala despacio para calmarte",
+              "text": "Si quieres tranquilizarte, unas respiraciones con la exhalación más larga que la inhalación suelen bajar la frecuencia cardíaca en uno o dos minutos."
             }
           ]
         },
         {
-          "heading": "¿Por qué está en ONDA?",
-          "body": "Te ayudamos a recalibrar tus señales internas. A menudo confundimos excitación con ansiedad y tratamos de suprimirla. ONDA puede dar una pista: tu HR está alto, pero tu ritmo se ve estable — una señal de que quizá estés cargado más que asustado. Esto te permite usar la energía de la excitación como combustible y no como motivo de preocupación."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "La excitación es energía dirigida hacia fuera. Abraza la subida; es señal de que tu sistema está listo para la grandeza."
+          "highlight": "La Excitación es básicamente «cuánto por encima de 60 lpm está tu pulso ahora mismo», expresado como porcentaje."
         }
       ]
     },
     "focus": {
-      "title": "Foco / concentración: la fisiología de la inmersión",
+      "title": "Foco / concentración: un índice experimental",
       "shortTitle": "🎯 Foco / concentración",
       "sections": [
         {
-          "heading": "El estado de flujo",
-          "body": "Foco / concentración no es un acto de voluntad, sino el resultado de la armonía del sistema. En ONDA este índice se calcula como el balance entre tu nivel de energía y la ausencia de ruido interno (estrés). Es nuestro indicador aproximado de un estado de tipo foco — cuando tu energía es suficiente y el ruido interno (estrés) se mantiene bajo, la atención llega con más facilidad."
+          "heading": "Qué es este número",
+          "body": "Aquí el Foco es un índice experimental. No mide la atención, y una cámara sobre la yema del dedo no puede saber en qué estás pensando. Promedia otros dos índices de la herramienta, Energía y Estrés invertido, así que es más alto cuando tu frecuencia cardíaca es moderada (unos 75 lpm o menos) y tu ritmo entre latidos es estable."
         },
         {
-          "heading": "Qué significan los valores",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Foco = 0,5 × Energía + 0,5 × (100 − Estrés), limitado a 0–100 %. Energía = 90 − 1,5 × (frecuencia cardíaca por encima de 75 lpm) − 80 × CSI; Estrés = 130 × CSI, donde el CSI es la desviación estándar de tus intervalos RR dividida entre su media. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0–25% · Disperso",
-              "text": "Mucho ruido interno o poca energía. La atención sostenida es biológicamente inaccesible. Las tareas requerirán esfuerzo desproporcionado con baja calidad."
+              "label": "Más alto",
+              "text": "Pulso moderado e intervalos entre latidos uniformes durante la lectura. Puede ir unido a un trabajo tranquilo y constante, pero una persona relajada que no esté leyendo nada obtendrá la misma puntuación."
             },
             {
-              "label": "25–50% · Calentando",
-              "text": "El sistema está parcialmente disponible para el foco. Tareas superficiales son posibles, pero el trabajo cognitivo profundo será fragmentado. Una breve respiración puede llevarte a la siguiente zona."
-            },
-            {
-              "label": "50–75% · Comprometido",
-              "text": "Energía suficiente, estrés moderado. Eres capaz de concentración sostenida. Es la zona estándar de trabajo de la mayoría de personas productivas."
-            },
-            {
-              "label": "75–100% · Foco profundo",
-              "text": "Estado óptimo. Corteza prefrontal totalmente al mando, amígdala silenciosa, ritmo estable. Es la firma fisiológica del flujo — donde el esfuerzo desaparece y el rendimiento alcanza su pico."
+              "label": "Más bajo",
+              "text": "Un pulso más rápido, un ritmo más irregular o una señal con ruido por el movimiento del dedo."
             }
           ]
         },
         {
-          "heading": "La arquitectura de la atención",
-          "body": "En ONDA, la concentración pico ocurre cuando se cumplen tres condiciones:",
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. En estudios de laboratorio las señales cardíacas cambian con la concentración, pero no de una forma que permita a una lectura corta con la cámara decirte lo concentrado que estás."
+        },
+        {
+          "heading": "Lo que realmente ayuda",
           "bullets": [
             {
-              "label": "HR moderado",
-              "text": "Tu corazón no se dispara, pero tampoco «duerme». Es la zona de activación óptima, donde el cerebro recibe los recursos justos para tareas complejas."
+              "label": "Una tarea cada vez",
+              "text": "Fija un objetivo claro para los próximos 25–50 minutos y elimina las distracciones evidentes."
             },
             {
-              "label": "Ritmo estable",
-              "text": "La ausencia de picos bruscos (CSI bajo) significa que el sistema nervioso no se distrae con interferencias internas."
+              "label": "Primero calma el cuerpo",
+              "text": "Unos minutos de respiración lenta antes de un trabajo exigente pueden bajar la activación si te sientes acelerado."
             },
             {
-              "label": "Estrés bajo",
-              "text": "Tu amígdala está calma, permitiendo que la corteza prefrontal mantenga el control total del foco atencional."
+              "label": "Descanso",
+              "text": "El sueño, la hidratación y las pausas regulares hacen más por la concentración que cualquier número."
             }
           ]
         },
         {
-          "heading": "¿Por qué importa para ONDA?",
-          "body": "A menudo confundimos «estar ocupado» con «ser productivo». El índice de foco revela la diferencia. Puedes estar muy ocupado, pero si tu puntuación de concentración es baja, gastas tres veces más energía en la misma tarea. ONDA te ayuda a capturar ese momento de «alerta tranquila» — donde estás profundamente atento y biológicamente sereno."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "El foco no es lo que haces; es el estado en el que estás. Crea silencio en tu ritmo, y la atención lo seguirá naturalmente."
+          "highlight": "El Foco sube cuando tu pulso es moderado y tu ritmo es estable. Es una pista sobre tu cuerpo, no una lectura de tu mente."
         }
       ]
     },
     "relaxation": {
-      "title": "Relajación / calma: el estado de quietud profunda",
+      "title": "Relajación / calma: un índice experimental",
       "shortTitle": "🌿 Relajación / calma",
       "sections": [
         {
-          "heading": "El arte de la presencia",
-          "body": "Relajación / calma no es solo la ausencia de estrés; es un estado activo de bienestar fisiológico. En ONDA este índice se calcula como el inverso del caos (CSI) combinado con la reserva de energía. Estima cuán asentado se ve tu ritmo —bajo ruido cardíaco junto con reserva de energía— como indicio de disposición para un descanso de calidad o una creatividad profunda."
+          "heading": "Qué es este número",
+          "body": "Aquí la Relajación es un índice experimental que sube cuando tu ritmo entre latidos parece estable y tu índice de Energía es alto (lo que en esta herramienta significa sobre todo que tu frecuencia cardíaca no pasa de unos 75 lpm). No mide lo tranquilo que te sientes y no es una puntuación de relajación validada."
         },
         {
-          "heading": "Qué significan los valores",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Relajación = 60 × (1 − mín(1; 1,5 × CSI)) + 0,2 × Energía, limitado a 0–100 %. El CSI es la desviación estándar de tus intervalos RR dividida entre su media. Ten en cuenta que la frecuencia respiratoria no forma parte de esta fórmula, aunque respirar despacio suele ayudar a relajarse. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0–25% · Tensión superficial",
-              "text": "El sistema aún arrastra ruido biológico — CSI elevado, respiración superficial o reserva energética baja. El verdadero descanso aún no es accesible. Hace falta intervenir (respiración lenta, quietud)."
+              "label": "Más alto",
+              "text": "Tus intervalos RR variaron poco respecto a su media y tu pulso era moderado. Estar quieto con una señal limpia lo hace subir."
             },
             {
-              "label": "25–50% · Asentando",
-              "text": "El sistema nervioso empieza a bajar de marcha. El ritmo se estabiliza. Es la zona de transición — el cuerpo va camino a la calma pero aún no ha llegado."
-            },
-            {
-              "label": "50–75% · Calma activa",
-              "text": "Bajo ruido biológico, respiración estable, suficiente margen energético. Estás en alerta tranquila — totalmente presente y abierto, sin trasfondo de vigilancia."
-            },
-            {
-              "label": "75–100% · Quietud profunda",
-              "text": "Estado óptimo para la regeneración, la creatividad y el foco profundo. La reparación tisular se acelera, la inmunidad alcanza su pico, el cerebro entra en modo de consolidación e insight."
+              "label": "Más bajo",
+              "text": "El ritmo parecía más irregular (CSI más alto) o tu pulso era más rápido. Mover el dedo también añade irregularidad y baja la puntuación."
             }
           ]
         },
         {
-          "heading": "La firma de la «alerta tranquila»",
-          "body": "Una calma alta es el resultado de tres factores sincronizados:",
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. Una peculiaridad: en la fisiología real, un cuerpo relajado suele mostrar más variación entre latidos ligada a la respiración, mientras que este índice premia una variación menor. Es un motivo más para tomarlo solo como una pista aproximada."
+        },
+        {
+          "heading": "Lo que realmente ayuda",
           "bullets": [
             {
-              "label": "Pureza rítmica",
-              "text": "Tu corazón late con fluctuaciones mínimas e injustificadas (CSI bajo)."
+              "label": "Respiración lenta",
+              "text": "Respirar despacio, unas 5–7 respiraciones por minuto con una exhalación más larga y relajada, es una forma bien estudiada de calmar el cuerpo para la mayoría de las personas."
             },
             {
-              "label": "Respiración estable",
-              "text": "Un ritmo lento y regular de inhalaciones y exhalaciones que nutre el cerebro sin sobrecargar el sistema."
+              "label": "Postura y quietud",
+              "text": "Siéntate cómodo, relaja los hombros y apoya la mano para que el dedo se quede sobre la lente sin apretar."
             },
             {
-              "label": "Margen biológico",
-              "text": "Tu corazón tiene un amplio «margen cardiovascular» (Reserva de energía), permitiéndote permanecer relajado incluso si cambia el entorno."
+              "label": "Unos minutos de calma",
+              "text": "La frecuencia cardíaca suele asentarse tras varios minutos de reposo, no en segundos."
             }
           ]
         },
         {
-          "heading": "¿Por qué importa para ONDA?",
-          "body": "El estado de calma es el modo en que el cuerpo pasa de la supervivencia al florecimiento. Es en esta zona donde ocurre la máxima regeneración tisular, el fortalecimiento inmunitario y la «recableado» neural. Seguimos esta métrica para que aprendas no solo a relajarte, sino a alcanzar la alerta tranquila — un estado donde estás profundamente calmo y, a la vez, totalmente presente y atento."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "La relajación no es debilidad; es la forma suprema de la eficiencia. Cuanto mayor tu calma, menos esfuerzo cuesta seguir siendo tú."
+          "highlight": "Aquí la Relajación refleja sobre todo un pulso moderado y un ritmo de aspecto estable. Cómo te sientes importa más que el número."
         }
       ]
     },
     "alarm": {
-      "title": "Alarma: el código rojo de tu sistema",
-      "shortTitle": "🚨 Alarma",
+      "title": "Alarma / ansiedad: un índice experimental",
+      "shortTitle": "🚨 Alarma / ansiedad",
       "sections": [
         {
-          "heading": "El detector invisible de amenazas",
-          "body": "Alarma es un índice compuesto en ONDA que analiza la sinergia entre tu HR y tu respiración. Buscamos un patrón específico: un alza simultánea de HR y de la frecuencia respiratoria. Es un patrón que suele asociarse al modo «lucha o huida». El índice avisa cuando aparece ese patrón — una señal para revisarte, no un diagnóstico."
+          "heading": "Qué es este número",
+          "body": "Aquí la Alarma es un índice experimental construido a partir de la irregularidad del ritmo y la frecuencia respiratoria. No es un test de ansiedad y no puede detectar miedo ni preocupación. Sube cuando tus intervalos entre latidos parecen irregulares respecto a su media (CSI alto) y cuando tu frecuencia respiratoria estimada supera las 15 respiraciones por minuto."
         },
         {
-          "heading": "Qué significan los valores",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Alarma = 0,7 × Estrés + 3 × (frecuencia respiratoria − 15, si pasa de 15), limitado a 0–100 %. Estrés = 130 × CSI. La frecuencia cardíaca en sí no forma parte de esta fórmula. La frecuencia respiratoria se estima a partir de oscilaciones lentas de la señal del pulso y cuenta como 0 cuando no se encuentra un ritmo claro. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0–20% · Calma basal",
-              "text": "Sin señales de alarma. HR y respiración en estado equilibrado de baja activación. El sistema nervioso está totalmente en modo parasimpático."
+              "label": "Más alto",
+              "text": "Los intervalos entre latidos variaron mucho respecto a su media y/o la respiración estimada superó las 15 por minuto. Hablar, mover el dedo, tener los dedos fríos o la poca luz pueden subirlo tanto como un momento de estrés."
             },
             {
-              "label": "20–50% · Activación leve",
-              "text": "Activación de bajo nivel — normal durante trabajo concentrado o actividad ligera. Cuerpo alerta pero no movilizado. Manejable sin intervención."
-            },
-            {
-              "label": "50–75% · Alarma elevada",
-              "text": "Patrón claro de lucha-o-huida emergiendo. HR sube junto con la respiración. Es la zona del estrés crónico no notado — puedes sentirte «bien», pero tu biología no está de acuerdo."
-            },
-            {
-              "label": "75–100% · Movilización aguda",
-              "text": "Subida simpática total. La amígdala ha tomado el control. Cortisol y adrenalina disparados. Aquí, una intervención inmediata —exhalación profunda, pausa, reseteo con apnea— resulta muy eficaz."
+              "label": "Más bajo",
+              "text": "El ritmo parecía estable y la respiración estimada era de 15 por minuto o menos."
             }
           ]
         },
         {
-          "heading": "El eco psicosomático",
-          "body": "Valores altos en este índice indican que el cuerpo está en movilización aguda:",
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. Si te sientes ansioso o mal, fíate de esa sensación antes que de este número y busca la ayuda adecuada. Una puntuación baja no significa que estés bien, y una alta no significa que algo vaya mal."
+        },
+        {
+          "heading": "Lo que realmente ayuda",
           "bullets": [
             {
-              "label": "Nivel biológico",
-              "text": "La sangre se redistribuye desde los órganos digestivos a los músculos, el cerebro recibe señal de peligro externo y el cortisol se dispara."
+              "label": "Exhalaciones más largas",
+              "text": "Inhalar unos 4 segundos y exhalar unos 6 es una forma sencilla de frenar cuando te sientes tenso."
             },
             {
-              "label": "Nivel mental",
-              "text": "La corteza prefrontal (responsable de la lógica) cede ante la amígdala. Aparecen inquietud, visión túnel o «contractura» cognitiva."
+              "label": "Vuelve a medir con calma",
+              "text": "Siéntate, apoya el brazo en una mesa, mantén el dedo quieto y mide de nuevo al cabo de un minuto. Muchas lecturas altas son ruido de la señal."
+            },
+            {
+              "label": "Suspiro fisiológico",
+              "text": "Dos inhalaciones cortas por la nariz seguidas de una exhalación larga son otra forma rápida y sencilla de calmarte."
             }
           ]
         },
         {
-          "heading": "¿Por qué está en ONDA?",
-          "body": "La ansiedad suele disfrazarse de fatiga ordinaria o alta productividad. El índice de alarma puede dar una pista: puede que solo estés tomando café, pero tu cuerpo se comporta como si lo estuviese cazando un depredador. ONDA te da la oportunidad de detectar este patrón a tiempo y «cancelar» la señal con respiración consciente, antes de que se convierta en pánico o burnout."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "El cuerpo no miente. Si la alarma sube, no es razón para entrar en pánico — es razón para una exhalación profunda. Recupera el control a través del cuerpo cuando la mente parece impotente."
+          "highlight": "La Alarma reacciona a un ritmo de aspecto irregular y a una respiración más rápida. Revisa la señal y tu entorno antes de sacar conclusiones."
         }
       ]
     },
     "acceleration": {
-      "title": "Aceleración del HR: la intensidad de la respuesta biológica",
+      "title": "Aceleración del HR: el cambio medio entre latidos",
       "shortTitle": "⚡ Aceleración del HR",
       "sections": [
         {
-          "heading": "Dinámica más allá de la velocidad",
-          "body": "La aceleración del HR es la segunda derivada de tu ritmo cardíaco. Si la pendiente de tendencia muestra la dirección del movimiento, la aceleración mide la intensidad con la que ese movimiento gana inercia. Es un indicador de cuán bruscamente el sistema «pisa el acelerador» o, por el contrario, con cuánta suavidad empieza a frenar."
+          "heading": "Qué muestra este número",
+          "body": "Aquí la Aceleración del HR es un número pequeño que indica si tus intervalos entre latidos se fueron alargando o acortando, de media, de un latido al siguiente durante los últimos 15 segundos. A pesar del nombre, es un simple promedio de diferencias sucesivas, no una verdadera segunda derivada de la frecuencia cardíaca."
         },
         {
-          "heading": "Leer el impulso",
-          "body": "La aceleración revela la dinámica oculta de tu adaptación:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "La herramienta toma las diferencias entre intervalos RR consecutivos (en ms), las promedia (omitiendo la primera) y divide entre 100. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "Aceleración positiva · Subida",
-              "text": "Tu HR empieza a subir más rápido que hace un segundo. Es señal de una reacción «aguda» — un susto, un pensamiento brusco sobre un plazo, un estallido físico. Tu sistema simpático trabaja a tope, movilizando recursos aquí y ahora."
+              "label": "Positivo",
+              "text": "Los intervalos RR se alargaban de media, es decir, la frecuencia cardíaca iba bajando durante la ventana. Suele pasar durante una exhalación lenta o cuando te vas calmando."
             },
             {
-              "label": "Aceleración negativa · Desaceleración",
-              "text": "La tasa de cambio del HR está cayendo. Aunque el corazón siga latiendo rápido, ha dejado de acelerar. Es la primera señal de que el pico ha pasado y el sistema empieza a estabilizarse. Estás recuperando el control sobre el estrés."
+              "label": "Negativo",
+              "text": "Los intervalos RR se acortaban, así que la frecuencia cardíaca iba subiendo; por ejemplo, al inhalar, después de moverte o cuando te tensas."
+            },
+            {
+              "label": "Cerca de cero",
+              "text": "Sin deriva clara. Es el valor más habitual en reposo, porque la aceleración y desaceleración naturales con cada respiración se compensan."
             }
           ]
         },
         {
-          "heading": "¿Por qué está en ONDA?",
-          "body": "La aceleración del HR es un detector de tu reactividad. Picos excesivamente bruscos pueden indicar alta ansiedad o un umbral bajo de tolerancia al estrés. ONDA rastrea estos «tirones», ayudándote a desarrollar suavidad biológica — la capacidad de entrar en estados de alto rendimiento sin las subidas bruscas y agotadoras que drenan el sistema."
+          "heading": "Por qué salta tanto",
+          "body": "Tu corazón se acelera un poco al inhalar y se ralentiza al exhalar (arritmia sinusal respiratoria). En una ventana de 15 segundos, que solo contiene dos o tres respiraciones, el punto del ciclo respiratorio en que empieza y acaba la ventana influye mucho en este valor. Los errores de temporización de la cámara, de unos pocos milisegundos por latido, añaden más ruido. Los valores pequeños en cualquier dirección se leen mejor como «sin cambio significativo»."
         },
         {
-          "highlight": "La fuerza no está en el subidón, sino en la suavidad de la transición. Cuantas menos aceleraciones bruscas en tu ritmo, mejor preservas tu energía vital."
+          "heading": "Límites importantes",
+          "body": "No es una métrica clínica ni de ciencias del deporte estándar, y no tiene rangos normales establecidos. Se muestra solo como indicador rápido de dirección, no como medida médica o de forma física."
+        },
+        {
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
+        },
+        {
+          "highlight": "Positivo significa que los latidos se espaciaban (pulso bajando); negativo, que se juntaban (pulso subiendo)."
         }
       ]
     },
     "slope": {
-      "title": "Pendiente de tendencia del HR: el vector de dirección biológica",
+      "title": "Pendiente de tendencia del HR: ¿tu pulso sube o baja?",
       "shortTitle": "📈 Pendiente de tendencia del HR",
       "sections": [
         {
-          "heading": "La dirección del flujo",
-          "body": "La pendiente de tendencia del HR es un indicador matemático de hacia dónde se dirige tu sistema ahora mismo. Usamos regresión lineal para entender la trayectoria global del HR durante la ventana de medición. No es solo un número; es una aguja de brújula que apunta al futuro fisiológico inmediato."
+          "heading": "Qué muestra este número",
+          "body": "La pendiente de tendencia del HR te dice si tu frecuencia cardíaca iba subiendo o bajando a lo largo de la ventana de medición actual. Sirve para ver un cambio en tiempo real, como tu pulso asentándose al respirar despacio o subiendo después de ponerte de pie."
         },
         {
-          "heading": "Leer el vector",
-          "body": "La dirección de la pendiente habla de la dinámica de tu adaptación:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "La herramienta ajusta una línea recta (regresión lineal) a tus intervalos RR en orden, latido a latido. Después invierte el signo y divide entre 100, de modo que un valor positivo significa que la frecuencia cardíaca sube (intervalos más cortos) y uno negativo que baja (intervalos más largos). La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "Pendiente negativa · Descendente",
-              "text": "Tu HR baja de forma gradual. Es la clásica «respuesta de relajación». El sistema nervioso amortigua el arousal y entra en modo de recuperación. Escenario ideal para meditación o cierre del día."
+              "label": "Positivo",
+              "text": "Tu pulso tendía a subir durante la ventana: por ejemplo, después de moverte, hablar, ponerte de pie o en un momento de tensión."
             },
             {
-              "label": "Pendiente positiva · Ascendente",
-              "text": "Tu HR se acelera. Es signo de un aumento de la activación emocional o física. El cuerpo se prepara para actuar o reacciona a un estresor surgido durante la sesión."
+              "label": "Negativo",
+              "text": "Tu pulso tendía a bajar: es habitual al sentarte, relajarte o respirar despacio con exhalaciones más largas."
             },
             {
-              "label": "Pendiente cero · Meseta",
-              "text": "Estado estable. El sistema está en equilibrio, manteniendo su nivel de activación sin oscilaciones bruscas."
+              "label": "Cerca de cero",
+              "text": "La frecuencia cardíaca estaba más o menos plana. Es lo esperable en reposo estable."
             }
           ]
         },
         {
-          "heading": "¿Por qué está en ONDA?",
-          "body": "La pendiente de tendencia te permite ver la inercia del sistema nervioso. Si intentas relajarte y la tendencia sigue siendo positiva, significa que tu «freno» aún no ha entrado. Esta métrica te ayuda a entender si tu práctica (respiración, música, pausa) está cambiando realmente tu rumbo biológico."
+          "heading": "Por qué puede tener ruido",
+          "body": "En 15 segundos tu frecuencia cardíaca sube y baja de forma natural con cada respiración, así que la línea ajustada puede inclinarse hacia un lado u otro solo por dónde empieza la ventana. La temporización de los latidos con la cámara también tiene pequeños errores. Busca un signo constante durante medio minuto o más en lugar de reaccionar a un solo valor."
         },
         {
-          "highlight": "No se trata de dónde estás, sino de hacia dónde te mueves. Una tendencia negativa es tu billete a la restauración profunda."
+          "heading": "Un experimento sencillo",
+          "body": "Siéntate quieto, deja que la lectura se asiente y luego respira despacio: unos 4 segundos inhalando y 6 exhalando durante un minuto. Mucha gente ve cómo la pendiente se va hacia valores negativos a medida que el pulso baja. Después ponte de pie y observa cómo se vuelve positiva al subir brevemente la frecuencia cardíaca."
+        },
+        {
+          "heading": "Límites importantes",
+          "body": "Es un indicador de tendencia en tiempo real de esta herramienta del navegador. No tiene un rango normal estándar y no es una medida médica."
+        },
+        {
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
+        },
+        {
+          "highlight": "Positivo significa que tu pulso sube; negativo, que va bajando."
         }
       ]
     },
     "recovery": {
-      "title": "Velocidad de recuperación: el índice del retorno a uno mismo",
+      "title": "Velocidad de recuperación: cuánto ha vuelto tu pulso desde su pico",
       "shortTitle": "🔄 Velocidad de recuperación %",
       "sections": [
         {
-          "heading": "El arte del cierre",
-          "body": "La velocidad de recuperación mide cuán eficientemente tu corazón puede «bajar de marcha» tras un esfuerzo. En ONDA calculamos la rapidez con la que tu HR vuelve desde su pico en la sesión actual hacia tu media base. Es la medida de tu capacidad para salir de un estado de activación y volver a tu centro de gravedad."
+          "heading": "Qué muestra este número",
+          "body": "En esta herramienta, la Velocidad de recuperación es una medida dentro de la ventana. Toma la frecuencia cardíaca más alta de los últimos 15 segundos y mira cuánto ha vuelto el latido más reciente desde ese pico hacia la media de la ventana. No es lo mismo que la prueba clínica de «recuperación de la frecuencia cardíaca», que mide cuántos latidos por minuto baja tu pulso en el primer minuto tras un ejercicio intenso."
         },
         {
-          "heading": "¿Por qué importa?",
-          "body": "En la naturaleza no sobrevive el más rápido en la carrera, sino el que se calma antes tras la persecución. En el mundo moderno funciona igual:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Para cada latido, la herramienta convierte el intervalo RR en latidos por minuto. Si el pico está al menos 2 lpm por encima de la media de la ventana, Recuperación = (pico − último latido) ÷ (pico − media) × 100, limitado a 0–100 %. Si no hubo un pico claro, el valor es 0. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0% · Atascado",
-              "text": "Tu HR está congelado en su pico. El cuerpo sigue «luchando con sombras» incluso cuando el disparador externo ya no está. Es señal de rigidez del sistema nervioso y fatiga acumulada."
+              "label": "Cerca del 100 %",
+              "text": "El último latido ha vuelto a tu media de la ventana (o por debajo), así que cualquier pico breve ya ha pasado."
             },
             {
-              "label": "100% · Calma total",
-              "text": "El corazón ha vuelto plenamente a su línea base o por debajo. Es el estándar de oro de la flexibilidad biológica."
+              "label": "Alrededor del 50 %",
+              "text": "Tu pulso ha recorrido más o menos la mitad del camino de vuelta desde su pico reciente."
+            },
+            {
+              "label": "Cerca del 0 %",
+              "text": "O tu pulso sigue en su pico, o no hubo ningún pico apreciable (una lectura estable también muestra 0). Mira los otros números para distinguir un caso del otro."
             }
           ]
         },
         {
-          "heading": "El eco biológico",
-          "body": "Tu velocidad de recuperación depende directamente del tono del nervio vago. Una alta tasa significa que tu «freno parasimpático» funciona perfectamente. Permite cambiar entre tareas sin arrastrar el estrés del momento previo al siguiente."
+          "heading": "Por qué se mueve tanto",
+          "body": "La frecuencia cardíaca sube de forma natural en cada inhalación y baja en cada exhalación, así que el «pico» suele ser solo la cima de un ciclo respiratorio y el valor puede oscilar de un latido a otro. Un solo latido falso o perdido por la cámara también puede crear un pico artificial."
         },
         {
-          "highlight": "No importa la altura del pico, sino la velocidad del descenso. La verdadera fuerza está en volver pronto al equilibrio."
+          "heading": "La recuperación en sentido amplio",
+          "body": "A lo largo de horas y días, la recuperación se valora mejor con tendencias: frecuencia cardíaca en reposo por la mañana, HRV medida igual cada día, sueño y cómo te sientes. Después del ejercicio, una bajada más rápida de la frecuencia cardíaca en el primer minuto suele ser señal de buena forma física."
+        },
+        {
+          "heading": "Límites importantes",
+          "body": "Es un indicador aproximado y experimental de esta herramienta del navegador, no una métrica médica ni de entrenamiento."
+        },
+        {
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
+        },
+        {
+          "highlight": "Alto significa que tu pulso ha vuelto cerca de su media tras un pico reciente; 0 % también puede significar simplemente que no hubo pico."
         }
       ]
     },
     "csi": {
-      "title": "CSI: Índice de estabilidad cardíaca",
+      "title": "CSI: Índice de estabilidad cardíaca (variación RR respecto a su media)",
       "shortTitle": "🎯 Índice de estabilidad cardíaca (CSI)",
       "sections": [
         {
-          "heading": "La arquitectura del ritmo",
-          "body": "CSI (Cardiac Stability Index) es un coeficiente único que permite a ONDA mirar más profundo que el pulso ordinario. Tomamos la desviación estándar de tus ciclos cardíacos y la dividimos por la frecuencia media. Esto permite medir la pura consistencia del corazón, independientemente de cuán rápido lata en este momento."
+          "heading": "Qué muestra este número",
+          "body": "En esta herramienta, el CSI es el coeficiente de variación de tus intervalos entre latidos: cuánto varían los intervalos en comparación con su duración media. Como se divide entre el intervalo medio, permite comparar la regularidad del ritmo con distintas frecuencias cardíacas. Más bajo significa intervalos más parecidos; más alto, más variación."
         },
         {
-          "heading": "Estabilidad vs. caos",
-          "body": "El CSI es el detector del «ruido biológico» del sistema:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "CSI = desviación estándar de los intervalos RR ÷ intervalo RR medio. Por ejemplo, si tus intervalos promedian 800 ms con una desviación estándar de 40 ms, el CSI es 0,05. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Por qué los valores de la cámara parecen altos",
+          "body": "Con la cámara de un teléfono, la temporización de los latidos solo es precisa a unos pocos milisegundos y algunos picos se sitúan mal, así que la dispersión medida es mayor que la real. En la práctica, en esta página son típicas las lecturas de alrededor de 0,3; los valores más bajos indican una señal más limpia y estable.",
           "bullets": [
             {
-              "label": "0,03–0,10 · Estabilidad de diamante",
-              "text": "Tu corazón opera con la precisión de un reloj suizo. Es un estado de profunda confianza fisiológica. El sistema no malgasta recursos en oscilaciones innecesarias y trabaja en máxima economía y foco."
+              "label": "Más bajo (claramente por debajo de 0,3)",
+              "text": "Los intervalos eran bastante uniformes y la señal estaba limpia."
             },
             {
-              "label": "0,11–0,24 · Equilibrio dinámico",
-              "text": "El ritmo natural de un organismo vivo. El corazón se adapta con fluidez a los estímulos manteniendo su integridad estructural."
+              "label": "Alrededor de 0,3",
+              "text": "Una lectura típica con la cámara."
             },
             {
-              "label": "0,25+ · Ruido biológico",
-              "text": "Señal de inestabilidad. Un CSI alto suele indicar «glitches» en la transmisión nerviosa, fatiga extrema o ruido de medición. El sistema pierde el control del ritmo."
+              "label": "Claramente más alto",
+              "text": "Los intervalos variaron mucho: a menudo por movimiento, presionar demasiado, dedos fríos o mala luz; a veces por latidos realmente irregulares."
             }
           ]
         },
         {
-          "heading": "¿Por qué importa para ONDA?",
-          "body": "El CSI es la base sobre la que se construye tu Estrés %. Mientras el HRV nos habla de tu flexibilidad, el CSI informa sobre tu fiabilidad estructural. Un CSI bajo es señal de que tu «sistema operativo» interno corre sin errores en el código."
+          "heading": "El CSI y la variabilidad de la frecuencia cardíaca",
+          "body": "Cierta variación entre latidos es sana: el corazón se acelera un poco en cada inhalación y se ralentiza en cada exhalación, y las personas en buena forma suelen mostrar más de esto en reposo. Así que, en fisiología, más bajo no es automáticamente «mejor». En esta herramienta, sin embargo, el CSI sirve sobre todo para comprobar lo estable y limpia que fue la lectura, y alimenta los índices de Estrés (130 × CSI), Energía, Relajación y Alarma."
         },
         {
-          "highlight": "La verdadera fuerza está en la estabilidad. Cuanto menos ruido en tu ritmo, más claridad en tu mente."
+          "heading": "Nota de salud",
+          "body": "Si notas un pulso irregular persistente, palpitaciones, mareo o falta de aire, consulta a un médico. Una lectura con la cámara en el navegador no puede detectar ni descartar arritmias como la fibrilación auricular."
+        },
+        {
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
+        },
+        {
+          "highlight": "El CSI es la dispersión de tus intervalos entre latidos dividida entre su media; las lecturas típicas con la cámara rondan 0,3."
         }
       ]
     },
     "hrv": {
-      "title": "HRV: el índice de tu agilidad biológica",
+      "title": "HRV (RMSSD): qué te dice la variación entre latidos",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
-          "heading": "El microscopio interior",
-          "body": "El HRV (Variabilidad de la Frecuencia Cardíaca) es la métrica más sofisticada e informativa del arsenal de ONDA. A diferencia del HR, que solo cuenta latidos, el HRV mide las fluctuaciones microscópicas de tiempo entre ellos en milisegundos. Usamos el algoritmo RMSSD para evaluar con qué fluidez responde el corazón a cada movimiento, pensamiento o respiración."
+          "heading": "Qué es la HRV",
+          "body": "La variabilidad de la frecuencia cardíaca (HRV) es la variación natural del tiempo entre latidos. Un corazón sano no marca el ritmo como un metrónomo: los intervalos se alargan y se acortan con la respiración, la postura y la actividad del sistema nervioso. El RMSSD, la raíz cuadrada media de las diferencias sucesivas, es una de las medidas de HRV más usadas y refleja sobre todo la actividad parasimpática (vagal), la parte de «descanso y digestión» del sistema nervioso."
         },
         {
-          "heading": "Un espejo del nervio vago",
-          "body": "El HRV es un reporte directo del estado del nervio vago:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "La herramienta toma cada par de intervalos RR consecutivos, eleva al cuadrado su diferencia, promedia esos cuadrados y saca la raíz cuadrada, lo que da un valor en milisegundos. Los valores por encima de 100 ms se limitan a 100. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Rangos típicos y qué influye en ellos",
+          "body": "El RMSSD en reposo de adultos sanos varía mucho, a menudo entre unos 20 y 80 ms, y suele ser más alto en personas jóvenes y en forma y más bajo con la edad. Normalmente baja tras dormir mal, el alcohol, una enfermedad, un entrenamiento intenso o el estrés agudo, y sube con una buena recuperación. Las diferencias entre personas son grandes, así que tu propia tendencia importa más que compararte con otros.",
           "bullets": [
             {
-              "label": "HRV alto (40–70 ms y más)",
-              "text": "El corazón se adapta al instante a los cambios. Señal de una respuesta parasimpática potente. Estás en alta resiliencia biológica: tranquilo, enfocado y listo para actuar."
+              "label": "Más alto de lo habitual para ti",
+              "text": "Suele verse cuando estás descansado y relajado."
             },
             {
-              "label": "HRV bajo (por debajo de 20–25 ms)",
-              "text": "El sistema autónomo está «bloqueado». El corazón late demasiado métricamente, como un robot. Es señal de que las reservas de recuperación se agotaron y el sistema opera al borde de su capacidad adaptativa."
+              "label": "Más bajo de lo habitual para ti",
+              "text": "Frecuente con cansancio, estrés, alcohol, enfermedad o una cena copiosa y tardía."
             }
           ]
         },
         {
-          "heading": "Por qué importa más que el pulso",
-          "body": "Dos personas pueden tener el mismo HR y un perfil de salud completamente distinto. La diferencia está en el HRV. Una alta variabilidad significa que tu «SO interno» escanea el entorno y micro-ajusta el ritmo. Una baja variabilidad es señal de fragilidad biológica."
+          "heading": "Por qué las lecturas con la cámara son aproximadas",
+          "body": "El RMSSD depende de una temporización al milisegundo. La cámara de un teléfono a unos 30 fotogramas por segundo, un dedo que se desplaza ligeramente y una ventana de solo 15 segundos añaden error, que normalmente infla el valor. Las mediciones estándar de HRV a corto plazo usan al menos unos minutos de ECG o una banda de pecho. Toma el número de aquí como una estimación aproximada y compara solo lecturas hechas de la misma manera."
         },
         {
-          "heading": "Entrenar con ONDA",
-          "body": "El HRV es dinámico. Cae con alcohol, falta de sueño o sobreentrenamiento, pero puede «fortalecerse». Usando los protocolos de respiración de ONDA estás entrenando tu nervio vago, elevando el HRV base y, por tanto, tu resiliencia ante las tormentas."
+          "heading": "Consejos prácticos",
+          "bullets": [
+            {
+              "label": "Mide siempre igual",
+              "text": "Para ver tendencias, mide a la misma hora (por ejemplo, al despertar), sentado y quieto, respirando con normalidad."
+            },
+            {
+              "label": "Respiración lenta",
+              "text": "Respirar despacio, a unas 6 respiraciones por minuto, suele aumentar la variación entre latidos mientras lo haces."
+            },
+            {
+              "label": "Lo básico primero",
+              "text": "El sueño regular, poco alcohol y el ejercicio aeróbico se asocian con una HRV en reposo más alta con el tiempo."
+            }
+          ]
         },
         {
-          "highlight": "Un HRV alto es tu capacidad de doblarte sin romperte. Es la medida de tu fuerza vital, expresada en milisegundos."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
+        },
+        {
+          "highlight": "El RMSSD refleja la actividad vagal; la versión con cámara de aquí es una estimación aproximada, más útil cuando la comparas con tus propias lecturas."
         }
       ]
     },
     "energy": {
-      "title": "Energía %: tu reserva biológica de potencia",
+      "title": "Energía %: un índice experimental a partir de la frecuencia cardíaca y el ritmo",
       "shortTitle": "🔋 Energía %",
       "sections": [
         {
-          "heading": "Tu batería interior",
-          "body": "En ONDA, Energía % no es una sensación subjetiva de viveza; es una estimación aproximada de tu reserva cardiovascular. Es la razón matemática entre cuán lejos está tu HR del techo elevado y cuán estable es tu ritmo cardíaco en este segundo. A más puntuación, más capacidad fisiológica para tareas nuevas."
+          "heading": "Qué es este número",
+          "body": "Aquí la Energía es un índice experimental, no una medida de lo enérgico que te sientes, de tu forma física ni una «batería». Empieza en el 90 % y baja cuando tu frecuencia cardíaca pasa de 75 lpm y cuando tu ritmo entre latidos es irregular respecto a su media (CSI)."
         },
         {
-          "heading": "La anatomía del agotamiento",
-          "body": "Tu puntuación de energía cae bajo la influencia de tres factores:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Energía = 90 − 1,5 × (frecuencia cardíaca − 75, si pasa de 75) − 80 × CSI, limitado a 10–100 %. Por ejemplo, a 70 lpm con un CSI típico de cámara de 0,3, la Energía ronda el 66 %; a 95 lpm con el mismo CSI, el 36 %. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "Fatiga acumulada",
-              "text": "Cuando el sistema no logra recuperarse lo suficiente durante el sueño."
+              "label": "Más alto",
+              "text": "Tu pulso estaba en unos 75 lpm o menos y el ritmo parecía estable."
             },
             {
-              "label": "BPM alto",
-              "text": "Operar a «altas RPM» quema rápidamente el combustible disponible."
-            },
-            {
-              "label": "Estrés prolongado",
-              "text": "La turbulencia constante en el ritmo (baja estabilidad) obliga al corazón a gastar más recursos solo en mantener funciones básicas."
+              "label": "Más bajo",
+              "text": "Un pulso más rápido (café, movimiento, calor, estrés, enfermedad) y/o un ritmo de aspecto irregular, que a menudo es solo una señal con ruido."
             }
           ]
         },
         {
-          "heading": "Lo que dicen los números",
-          "body": "",
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. Por cómo está hecha la fórmula, la Energía no puede superar el 90 % y un pulso en reposo por debajo de 75 lpm no suma nada más."
+        },
+        {
+          "heading": "Lo que realmente ayuda",
           "bullets": [
             {
-              "label": "80–100% · Carga completa",
-              "text": "Sistema en abundancia. Listo para cargas cognitivas intensas, entrenamientos exigentes y decisiones estratégicas."
+              "label": "Sueño",
+              "text": "Dormir lo suficiente y con regularidad es la palanca más potente para la energía durante el día."
             },
             {
-              "label": "40–70% · Rango operativo",
-              "text": "Las reservas empiezan a menguar. Toca dosificarse. La eficiencia sigue alta, pero el «precio» de cada esfuerzo sucesivo aumenta."
+              "label": "Movimiento y luz natural",
+              "text": "Un paseo corto, sobre todo al aire libre por la mañana, suele ayudar más que otra dosis de cafeína."
             },
             {
-              "label": "Por debajo del 30% · Crítico",
-              "text": "Operas «a crédito». En este estado el cuerpo percibe cualquier evento nuevo como una amenaza. El cerebro entra en modo estricto de ahorro, bajando creatividad y empatía."
+              "label": "Pausas cortas",
+              "text": "Unos minutos de respiración lenta pueden bajar un pulso acelerado y ayudarte a sentirte más asentado."
             }
           ]
         },
         {
-          "heading": "El arte de recargar",
-          "body": "Energía % es nuestra métrica más dinámica. Puede desplomarse tras una conversación difícil y dispararse tras 10 minutos de meditación profunda o un paseo corto. ONDA te muestra estas oscilaciones en tiempo real y convierte la gestión de la energía en ciencia exacta."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "No esperes a que el depósito quede vacío. Una alta puntuación de energía es tu seguro contra los errores. En zona roja cualquier trabajo será contraproducente. Carga primero el sistema y luego actúa."
+          "highlight": "Aquí la Energía baja con un pulso por encima de 75 lpm y un ritmo de aspecto irregular. Es una pista aproximada, no un indicador de combustible."
         }
       ]
     },
     "stress": {
-      "title": "Estrés %: el índice de turbulencia biológica",
+      "title": "Estrés %: un índice experimental a partir de la irregularidad del ritmo",
       "shortTitle": "⚡ Estrés %",
       "sections": [
         {
-          "heading": "Más allá de las emociones",
-          "body": "En ONDA, Estrés % no es un estado psicológico; es un índice aproximado de la irregularidad de tu ritmo cardíaco. Esta puntuación se deriva del Índice de Estabilidad Cardíaca. No solo analizamos tu pulso; examinamos las microdesviaciones del ritmo en cada latido. A mayor irregularidad y «ruido» en estos intervalos, mayor la puntuación de estrés estimada — una señal orientativa, no una medición clínica."
+          "heading": "Qué es este número",
+          "body": "En esta página, el Estrés es un índice experimental. Es simplemente el Índice de estabilidad cardíaca (CSI), la variación de tus intervalos entre latidos respecto a su media, reescalado a porcentaje. No mide hormonas del estrés, emociones ni lo estresado que te sientes, y no es una puntuación de estrés validada."
         },
         {
-          "heading": "¿Qué significa tu puntuación?",
-          "body": "El estrés es el «gasto» de tu fuerza vital. Lo dividimos en tres zonas:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "Estrés = 130 × CSI, limitado a 0–100 %. Un CSI típico de cámara de unos 0,3 da aproximadamente un 40 %. La frecuencia cardíaca y la respiratoria no forman parte de esta fórmula. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Cómo interpretarlo",
           "bullets": [
             {
-              "label": "0–30% · Zona de flujo",
-              "text": "Sistema en coherencia. El corazón trabaja con ritmo y eficiencia. Momento ideal para decisiones complejas y trabajo profundo."
+              "label": "Más alto",
+              "text": "Tus intervalos entre latidos variaron más respecto a su media. Puede acompañar a la tensión, pero la causa más frecuente con la cámara del teléfono es el ruido de la señal: mover el dedo, presionar demasiado, manos frías o poca luz."
             },
             {
-              "label": "30–60% · Zona adaptativa",
-              "text": "Estás bajo carga. Estado normal en un día activo, pero si te quedas demasiado tiempo aquí, los recursos cognitivos empiezan a drenarse."
-            },
-            {
-              "label": "60%+ · Zona de burnout",
-              "text": "Estrés fisiológico agudo. El sistema nervioso está saturado. El cerebro baja la corteza prefrontal (lógica) y le pasa el control a la amígdala (miedo e impulsividad)."
+              "label": "Más bajo",
+              "text": "Los intervalos eran más uniformes y la señal más limpia."
             }
           ]
         },
         {
-          "heading": "¿Por qué importa?",
-          "body": "El estrés más peligroso es el que no sientes. Puedes estar sentado en silencio y, sin embargo, tu Estrés % marca 70%. Significa que dentro hay una lucha invisible: falta de sueño, inflamación oculta o sobrecarga informativa. ONDA hace visible lo invisible y te permite pulsar pausa antes del agotamiento."
+          "heading": "Límites importantes",
+          "body": "Es una heurística experimental basada en unos pocos datos obtenidos con la cámara. No es una medida fisiológica validada, no detecta emociones y no es una prueba médica. Tómalo como una pista aproximada de hacia dónde se mueve tu señal, no como un veredicto sobre cómo te sientes. En la fisiología real, el estrés agudo suele reducir la variabilidad de la frecuencia cardíaca a corto plazo en lugar de aumentarla, así que una puntuación de irregularidad más alta no es una señal fiable de estrés. Si el estrés está afectando a tu día a día, hablar con un profesional es más útil que cualquier lectura."
         },
         {
-          "highlight": "El estrés no es lo que te ocurre; es cómo gasta tus recursos tu cuerpo en respuesta. Un porcentaje alto es la señal de revisar tus prioridades en este mismo momento."
+          "heading": "Lo que realmente ayuda",
+          "bullets": [
+            {
+              "label": "Respiración lenta con exhalación más larga",
+              "text": "Varios minutos de respiración lenta son una de las formas más sencillas de calmar el cuerpo."
+            },
+            {
+              "label": "Mejores lecturas",
+              "text": "Apoya el antebrazo en una mesa, cubre la cámara con suavidad y quédate quieto 30 segundos o más antes de mirar el número."
+            },
+            {
+              "label": "Hábitos diarios",
+              "text": "El sueño, el ejercicio regular, el tiempo al aire libre y el contacto social ayudan con el estrés a largo plazo."
+            }
+          ]
+        },
+        {
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
+        },
+        {
+          "highlight": "Aquí el Estrés es 130 × CSI: una pista aproximada de irregularidad del ritmo, muy influida por la calidad de la señal."
         }
       ]
     },
     "br": {
-      "title": "Frecuencia respiratoria: el puente entre mundos",
+      "title": "Frecuencia respiratoria: qué significan tus respiraciones por minuto",
       "shortTitle": "🌬️ /min — Frecuencia respiratoria",
       "sections": [
         {
-          "heading": "El único modo manual",
-          "body": "La frecuencia respiratoria es un parámetro biométrico único. A diferencia del latido o de la digestión, la respiración es la única función del Sistema Nervioso Autónomo que puedes controlar directamente. Es tu «mando a distancia» del estado interno."
+          "heading": "Qué es la frecuencia respiratoria",
+          "body": "La frecuencia respiratoria es el número de respiraciones que haces por minuto. Es una de las constantes vitales básicas y también la que más fácilmente puedes cambiar a voluntad, por eso la respiración lenta se usa en muchos métodos de relajación."
         },
         {
-          "heading": "Ritmo de calma vs. ritmo de supervivencia",
-          "body": "Tu frecuencia respiratoria es una emisión en directo de cómo el cerebro percibe el entorno:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "La respiración cambia ligeramente la intensidad de cada onda de pulso en la yema del dedo. La herramienta suaviza el tamaño de la señal del pulso a lo largo de unos 5 segundos, encuentra los picos de esa onda lenta (separados al menos 2 segundos), toma la mediana del tiempo entre ellos y la convierte en respiraciones por minuto. Solo muestra un valor si encuentra al menos cinco de esos picos y el resultado está entre 6 y 30 respiraciones por minuto; si no, no muestra nada. Como la ventana es corta y el efecto es sutil, es una estimación aproximada."
+        },
+        {
+          "heading": "Rangos típicos",
           "bullets": [
             {
-              "label": "Respiración corta y rápida",
-              "text": "Señal de alarma. Cuando respiras desde el pecho alto a más de 16–20 ciclos/min, le dices al cuerpo: «estamos en peligro». Eso mantiene el cortisol elevado y al cerebro en vigilancia constante."
+              "label": "Unas 12–20 por minuto",
+              "text": "El rango habitual en reposo para adultos."
             },
             {
-              "label": "Respiración profunda y lenta",
-              "text": "Señal de seguridad. Bajar la frecuencia a 6–10 ciclos/min activa el nervio vago. El sistema entra al instante en foco profundo y estabilidad emocional."
+              "label": "Más lenta (unas 6–10)",
+              "text": "Frecuente durante la respiración lenta deliberada, la meditación o el descanso profundo."
+            },
+            {
+              "label": "Más rápida (más de unas 20 en reposo)",
+              "text": "Puede aparecer con el esfuerzo, la ansiedad, la fiebre o una enfermedad. Si la respiración rápida en reposo persiste, o notas falta de aire, conviene consultarlo con un médico."
             }
           ]
         },
         {
-          "heading": "Biofeedback",
-          "body": "En ONDA seguimos tu frecuencia respiratoria para detectar momentos de «apnea de pantalla» — cuando, sin darte cuenta, contienes la respiración o respiras de forma irregular mientras revisas correos o haces tareas complejas. Estas micro-pausas disparan una cascada de respuestas de estrés que ni notas."
+          "heading": "Por qué la respiración lenta es tan popular",
+          "body": "Respirar despacio, a menudo a unas 5–7 respiraciones por minuto con una exhalación relajada y más larga, suele aumentar las oscilaciones de la frecuencia cardíaca que siguen a cada respiración y se asocia con sentirse más tranquilo. Es una técnica de bajo riesgo y bien estudiada. Si te mareas, vuelve a respirar con normalidad."
         },
         {
-          "heading": "El arte de ralentizar",
-          "body": "La respiración óptima en reposo es un ritmo casi invisible. Cuantos menos ciclos necesites para saturar tu sangre de oxígeno, más eficiente trabaja tu metabolismo. Te enseñamos a «sub-respirar» — hacer cada respiración más rara pero de mayor calidad, convirtiendo cada ciclo en un acto de restauración."
+          "heading": "Consejos para una mejor lectura",
+          "body": "Apoya la mano, mantén el dedo quieto con una presión ligera, respira con naturalidad y dale a la herramienta al menos 20–30 segundos. Hablar o moverte hace que la estimación no sea fiable."
         },
         {
-          "highlight": "La respiración es la única forma de hablar con el corazón en su propio idioma. Al ralentizar la inhalación, dictas paz a tu mente."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
+        },
+        {
+          "highlight": "Aquí la frecuencia respiratoria se estima a partir de la subida y bajada lentas de la señal de tu pulso; tómala como aproximada."
         }
       ]
     },
     "bpm": {
-      "title": "BPM: el ritmo de tu sistema operativo interno",
+      "title": "BPM: tu frecuencia cardíaca y qué la cambia",
       "shortTitle": "❤️ BPM — Frecuencia cardíaca",
       "sections": [
         {
-          "heading": "El metrónomo biológico",
-          "body": "BPM (latidos por minuto) es más que la velocidad a la que tu corazón bombea sangre. En el ecosistema ONDA vemos el pulso como la interfaz principal del Sistema Nervioso Autónomo. Es un gráfico en directo de cómo el cuerpo asigna recursos en respuesta a los desafíos del mundo exterior."
+          "heading": "Qué es la frecuencia cardíaca",
+          "body": "La frecuencia cardíaca es el número de latidos por minuto (lpm). Sube cuando el cuerpo necesita más flujo sanguíneo, por ejemplo con el movimiento, el calor, el estrés, una enfermedad o tras la cafeína, y baja durante el descanso y el sueño. La frecuencia cardíaca en reposo es un marcador de salud cotidiano útil cuando la sigues a lo largo del tiempo."
         },
         {
-          "heading": "Una sinfonía de dos estados",
-          "body": "Tu corazón equilibra constantemente dos «directores»:",
+          "heading": "Cómo lo calcula esta herramienta",
+          "body": "La yema del dedo sobre la cámara cambia ligeramente de color con cada pulso (fotopletismografía, PPG). La herramienta encuentra cada pico de pulso en el canal rojo, mide el tiempo entre picos (intervalos RR), descarta los inverosímiles y calcula la frecuencia cardíaca como 60.000 dividido entre el intervalo medio en milisegundos. Se descartan los resultados fuera de 40–180 lpm. La herramienta trabaja con una ventana móvil de 15 segundos de vídeo de la yema del dedo (unos 30 fotogramas por segundo), detecta cada pico de pulso, conserva solo los intervalos entre latidos (RR) de 400 a 1.500 ms que estén dentro del 22 % de la mediana y suaviza los números mostrados para que cambien de forma gradual."
+        },
+        {
+          "heading": "Rangos típicos",
           "bullets": [
             {
-              "label": "Drive simpático",
-              "text": "Cuando el pulso sube, el cuerpo entra en modo alto rendimiento o defensa. Es la movilización — esencial para un sprint, tóxica si se sostiene."
+              "label": "Unos 60–100 lpm",
+              "text": "El rango normal en reposo que se suele citar para adultos. Muchas personas sanas, sobre todo las activas, tienen menos en reposo."
             },
             {
-              "label": "Calma parasimpática",
-              "text": "Un HR bajo es señal de seguridad. En este estado el cuerpo activa la regeneración tisular, la consolidación de memoria y la recuperación profunda."
+              "label": "Por debajo de 60 lpm",
+              "text": "A menudo normal en personas en forma y durante el descanso profundo; consulta a un médico si va acompañado de mareo, desmayos o un cansancio inusual."
+            },
+            {
+              "label": "Por encima de 100 lpm en reposo",
+              "text": "Puede deberse a la cafeína, el estrés, la deshidratación o una enfermedad. Si sigue alta en reposo o va acompañada de dolor en el pecho o falta de aire, busca consejo médico."
             }
           ]
         },
         {
-          "heading": "¿Por qué seguimos los números?",
-          "body": "Tu HR de reposo es tu coste biológico base de vivir.",
+          "heading": "¿Qué precisión tiene una lectura con la cámara?",
+          "body": "La frecuencia cardíaca medida con la cámara suele acercarse a la de un dispositivo de referencia si te quedas quieto con buena luz, pero es menos fiable con movimiento, dedos fríos, mucha presión o poca iluminación. Es una estimación educativa, no una medición médica."
+        },
+        {
+          "heading": "Consejos prácticos",
           "bullets": [
             {
-              "label": "BPM alto sentado",
-              "text": "Estás malgastando energía. Tu cuerpo «corre un maratón» mientras solo respondes correos. Camino directo al burnout cognitivo."
+              "label": "Mide la frecuencia en reposo siempre igual",
+              "text": "Por ejemplo, sentado tranquilo durante un minuto al despertar, antes del café."
             },
             {
-              "label": "BPM óptimo",
-              "text": "Es el modo «crucero silencioso» — donde el sistema opera al máximo de eficiencia, dejando una reserva enorme para tareas inesperadas."
+              "label": "Respiración lenta",
+              "text": "Unos minutos de respiración lenta con una exhalación más larga suelen bajar un poco la frecuencia cardíaca."
+            },
+            {
+              "label": "Hábitos a largo plazo",
+              "text": "El ejercicio aeróbico regular, dormir bien y limitar el alcohol tienden a bajar la frecuencia cardíaca en reposo en unas semanas."
             }
           ]
         },
         {
-          "heading": "Una herramienta de calibración",
-          "body": "El BPM en la app de ONDA es un espejo. Al notar un pico anómalo, ganas la oportunidad de intervenir conscientemente. No solo medimos latidos; te enseñamos a dominarlos. Una breve sesión de respiración o un cambio de foco puede «bajar» el pulso al instante, conmutando el cerebro de modo supervivencia a flujo creativo."
+          "body": "La app ONDA es un producto aparte: se centra en el pulso, la respiración y, con un Apple Watch, la coherencia. No usa las fórmulas de esta página."
         },
         {
-          "highlight": "Un pulso alto es caro. Un pulso bajo es intencional. Domina el ritmo para dominar la vida."
+          "highlight": "Se aprende más de la frecuencia cardíaca cuando la mides siempre de la misma manera y miras la tendencia."
         }
       ]
     }

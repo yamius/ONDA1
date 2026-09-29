@@ -1,6 +1,6 @@
 {
   "title": "Bio OS",
-  "subtitle": "Real-time biometric analysis — no wearable required.",
+  "subtitle": "Estimativas biométricas aproximadas no seu navegador, sem precisar de wearable.",
   "subtitle2": "Place your finger on the back camera to begin.",
   "tapStop": "tap to stop",
   "tapStart": "tap to start",
@@ -26,7 +26,7 @@
   "rows": {
     "hrv": {
       "label": "HRV surrogate",
-      "desc": "HR variability over time"
+      "desc": "variação entre batimentos (RMSSD)"
     },
     "csi": {
       "label": "Cardiac Stability Index",
@@ -34,39 +34,39 @@
     },
     "recovery": {
       "label": "Recovery Rate",
-      "desc": "HR normalization speed after stress"
+      "desc": "quanto a FC já voltou do pico recente"
     },
     "trend": {
       "label": "HR trend slope",
-      "desc": "trend over 30-60s"
+      "desc": "FC subindo ou caindo em ~15 s"
     },
     "accel": {
       "label": "HR Acceleration",
-      "desc": "how fast HR rises"
+      "desc": "variação média entre batimentos"
     },
     "alarm": {
       "label": "Alarm / Anxiety",
-      "desc": "HR rise + BR rise"
+      "desc": "irregularidade do ritmo + respiração mais rápida"
     },
     "relaxation": {
       "label": "Relaxation / Calmness",
-      "desc": "low HR + stable BR"
+      "desc": "ritmo estável + FC moderada"
     },
     "focus": {
       "label": "Focus / Concentration",
-      "desc": "average HR + low variability"
+      "desc": "FC moderada + ritmo estável"
     },
     "excitement": {
       "label": "Excitement",
-      "desc": "HR↑↑ sharp moment"
+      "desc": "FC acima de 60 bpm"
     },
     "fatigue": {
       "label": "Fatigue",
-      "desc": "HR above baseline, BR↓, energy↓"
+      "desc": "FC acima de 75 bpm + ritmo irregular"
     },
     "flow": {
       "label": "Flow",
-      "desc": "HR slightly above baseline, stable BR"
+      "desc": "combinação de Foco e Relaxamento"
     }
   },
   "status": {
@@ -75,8 +75,8 @@
     "calibrating": "Real-time metrics. Calibrating baseline..."
   },
   "ctaPrimary": {
-    "title": "Want 24/7 monitoring?",
-    "subtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "title": "Quer ir além?",
+    "subtitle": "O app ONDA funciona com a câmera do seu iPhone, o Apple Watch e o app Saúde da Apple.",
     "button": "Download ONDA Life"
   },
   "descriptions": {
@@ -84,81 +84,81 @@
     "main": [
       {
         "title": "❤️ BPM — Heart Rate",
-        "text": "The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake.",
+        "text": "Batimentos por minuto, estimados a partir do pulso óptico na ponta do dedo. Faixa típica de repouso em adultos: cerca de 60–100 bpm, muitas vezes menor em pessoas ativas. Cafeína, movimento e estresse a elevam.",
         "key": "bpm"
       },
       {
         "title": "🌬️ /min — Breathing Rate",
-        "text": "Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation.",
+        "text": "Respirações por minuto aproximadas, estimadas a partir da subida e descida lentas do sinal de pulso. Faixa típica em repouso: 12–20. Exibida apenas quando um ritmo claro é encontrado.",
         "key": "br"
       },
       {
         "title": "⚡ Stress %",
-        "text": "Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress.",
+        "text": "Experimental: 130 × CSI (o quão irregulares parecem seus intervalos entre batimentos). Uma leitura típica de câmera fica em torno de 40%. Muito influenciado pelo movimento e pela qualidade do sinal; não é uma medida de estresse validada.",
         "key": "stress"
       },
       {
         "title": "🔋 Energy %",
-        "text": "Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress.",
+        "text": "Experimental: começa em 90% e cai à medida que a frequência cardíaca passa de 75 bpm e o ritmo parece mais irregular. Uma pista aproximada, não uma medida de quão enérgico você está.",
         "key": "energy"
       }
     ],
     "advanced": [
       {
         "title": "HRV surrogate (RMSSD)",
-        "text": "Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms.",
+        "text": "RMSSD: raiz quadrada da média dos quadrados das diferenças sucessivas entre intervalos de batimentos, em ms (limitado a 100). Reflete a atividade vagal (parassimpática). Leituras de câmera em 15 s são aproximadas e muitas vezes ficam altas.",
         "key": "hrv"
       },
       {
         "title": "Cardiac Stability Index (CSI)",
-        "text": "Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise.",
+        "text": "Desvio padrão dos intervalos entre batimentos dividido pela média deles. Mais baixo = intervalos mais regulares e sinal mais limpo. Leituras típicas de câmera ficam em torno de 0,3; valores claramente mais altos geralmente indicam movimento ou ruído.",
         "key": "csi"
       },
       {
         "title": "Recovery Rate %",
-        "text": "How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below.",
+        "text": "Quanto o último batimento já voltou da frequência cardíaca mais alta dos últimos 15 s em direção à média da janela. 100% = de volta à média; 0% = ainda no pico, ou nenhum pico.",
         "key": "recovery"
       },
       {
         "title": "HR Trend Slope",
-        "text": "Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity).",
+        "text": "Tendência linear dos seus intervalos entre batimentos na janela, com o sinal invertido. Positivo = frequência cardíaca subindo; negativo = frequência cardíaca desacelerando.",
         "key": "slope"
       },
       {
         "title": "HR Acceleration",
-        "text": "Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising.",
+        "text": "Variação média entre intervalos de batimentos consecutivos. Positivo = intervalos se alongando (pulso desacelerando); negativo = encurtando (pulso subindo). Perto de zero em repouso.",
         "key": "acceleration"
       }
     ],
     "emotional": [
       {
         "title": "Alarm / Anxiety",
-        "text": "Composite of rising HR and elevated breathing rate. High values indicate a fight-or-flight activation pattern in the autonomic nervous system.",
+        "text": "Experimental: 0,7 × Estresse mais um acréscimo quando a respiração estimada passa de 15/min. Sobe com um ritmo aparentemente irregular e respiração mais rápida; não é um teste de ansiedade.",
         "key": "alarm"
       },
       {
         "title": "Relaxation / Calmness",
-        "text": "Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness.",
+        "text": "Experimental: mais alto quando o ritmo parece estável (CSI baixo) e a Energia está alta (pulso não acima de ~75 bpm).",
         "key": "relaxation"
       },
       {
         "title": "Focus / Concentration",
-        "text": "Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal.",
+        "text": "Experimental: média entre Energia e o inverso do Estresse. Mais alto com pulso moderado e ritmo estável; não consegue medir atenção.",
         "key": "focus"
       },
       {
         "title": "Excitement",
-        "text": "Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response.",
+        "text": "Experimental: sobe com a frequência cardíaca acima de 60 bpm (e um pouco com a frequência respiratória). Não distingue excitação de nervosismo, esforço ou cafeína.",
         "key": "excitement"
       },
       {
         "title": "Fatigue",
-        "text": "Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery.",
+        "text": "Experimental: sobe quando a Energia cai e o Estresse aumenta, ou seja, com pulso acima de 75 bpm e ritmo aparentemente irregular. Não é uma medida de cansaço.",
         "key": "fatigue"
       },
       {
         "title": "Flow",
-        "text": "The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone.",
+        "text": "Experimental: 60% Foco + 40% Relaxamento. Mais alto com pulso moderado e ritmo estável; não consegue detectar um estado de flow.",
         "key": "flow"
       }
     ],
@@ -168,7 +168,7 @@
   },
   "ctaDownload": {
     "title": "Ready to measure?",
-    "subtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "subtitle": "O app ONDA funciona com a câmera do seu iPhone, o Apple Watch e o app Saúde da Apple.",
     "appStoreSup": "Download on the",
     "appStoreLabel": "App Store",
     "appStoreAria": "Download ONDA Life on App Store",
@@ -191,7 +191,7 @@
   },
   "meta": {
     "title": "Bio OS — Live Biometrics in Your Browser | ONDA Life",
-    "description": "Measure your heart rate, stress, energy and HRV right in the browser — no wearable required. Place your finger on the camera and get real-time biometric analysis.",
+    "description": "Estime sua frequência cardíaca, frequência respiratória e HRV no navegador com a câmera do celular, sem precisar de wearable. Leituras aproximadas e educativas, mais índices de estado experimentais.",
     "ogImageAlt": "ONDA Life Bio OS — Live biometrics in your browser via the device camera."
   },
   "emotionalDisclaimer": "Rough, experimental patterns inferred from heart-rate and breathing changes on a single camera reading — directional hints, not emotion detection or a measurement."

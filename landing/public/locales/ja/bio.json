@@ -1,6 +1,6 @@
 {
   "title": "Bio OS",
-  "subtitle": "Real-time biometric analysis — no wearable required.",
+  "subtitle": "ブラウザで生体情報をおおまかに推定 — ウェアラブル不要。",
   "subtitle2": "Place your finger on the back camera to begin.",
   "tapStop": "tap to stop",
   "tapStart": "tap to start",
@@ -26,7 +26,7 @@
   "rows": {
     "hrv": {
       "label": "HRV surrogate",
-      "desc": "HR variability over time"
+      "desc": "拍ごとの変動（RMSSD）"
     },
     "csi": {
       "label": "Cardiac Stability Index",
@@ -34,39 +34,39 @@
     },
     "recovery": {
       "label": "Recovery Rate",
-      "desc": "HR normalization speed after stress"
+      "desc": "直近のピークから心拍数がどれだけ戻ったか"
     },
     "trend": {
       "label": "HR trend slope",
-      "desc": "trend over 30-60s"
+      "desc": "約15秒間で心拍数が上昇中か下降中か"
     },
     "accel": {
       "label": "HR Acceleration",
-      "desc": "how fast HR rises"
+      "desc": "拍ごとの変化の平均"
     },
     "alarm": {
       "label": "Alarm / Anxiety",
-      "desc": "HR rise + BR rise"
+      "desc": "リズムの不規則さ + 速い呼吸"
     },
     "relaxation": {
       "label": "Relaxation / Calmness",
-      "desc": "low HR + stable BR"
+      "desc": "安定したリズム + ほどよい心拍数"
     },
     "focus": {
       "label": "Focus / Concentration",
-      "desc": "average HR + low variability"
+      "desc": "ほどよい心拍数 + 安定したリズム"
     },
     "excitement": {
       "label": "Excitement",
-      "desc": "HR↑↑ sharp moment"
+      "desc": "60 bpmを超える心拍数"
     },
     "fatigue": {
       "label": "Fatigue",
-      "desc": "HR above baseline, BR↓, energy↓"
+      "desc": "75 bpmを超える心拍数 + 不規則なリズム"
     },
     "flow": {
       "label": "Flow",
-      "desc": "HR slightly above baseline, stable BR"
+      "desc": "集中とリラックスの組み合わせ"
     }
   },
   "status": {
@@ -75,8 +75,8 @@
     "calibrating": "Real-time metrics. Calibrating baseline..."
   },
   "ctaPrimary": {
-    "title": "Want 24/7 monitoring?",
-    "subtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "title": "さらに先へ進みたいですか？",
+    "subtitle": "ONDAアプリは、iPhoneのカメラ、Apple Watch、Appleヘルスケアと連携します。",
     "button": "Download ONDA Life"
   },
   "descriptions": {
@@ -84,81 +84,81 @@
     "main": [
       {
         "title": "❤️ BPM — Heart Rate",
-        "text": "The number of heartbeats per minute measured from the optical pulse in your fingertip. Normal resting range: 55–90 BPM. Elevated BPM may signal stress, physical exertion, or stimulant intake.",
+        "text": "指先の光学的な脈波から推定した1分あたりの心拍数です。大人の典型的な安静時の範囲は約60〜100 bpmで、運動習慣のある人ではもっと低いことがよくあります。カフェイン、体の動き、ストレスで上がります。",
         "key": "bpm"
       },
       {
         "title": "🌬️ /min — Breathing Rate",
-        "text": "Respiratory rate derived from the slow amplitude modulation of the PPG signal. Normal range: 12–20 breaths/min. Higher values indicate stress or physical activity; lower values appear during deep relaxation.",
+        "text": "脈波信号のゆっくりした上下から推定した、1分あたりのおおよその呼吸数です。典型的な安静時の範囲は12〜20回。明確なリズムが見つかったときだけ表示されます。",
         "key": "br"
       },
       {
         "title": "⚡ Stress %",
-        "text": "Derived from the Cardiac Stability Index. High heart rate variability irregularity → higher stress score. A score under 30 % indicates a calm state; 60 %+ suggests acute physiological stress.",
+        "text": "実験的：130 × CSI（拍間間隔がどれだけ不規則に見えるか）。カメラ測定の典型的な値は約40%です。体の動きや信号の質に強く左右され、検証済みのストレス指標ではありません。",
         "key": "stress"
       },
       {
         "title": "🔋 Energy %",
-        "text": "Reflects cardiovascular reserve: how far your heart rate is from its elevated ceiling and how stable the rhythm is. Higher score = more physiological capacity left. Drops with fatigue, high BPM, or prolonged stress.",
+        "text": "実験的：90%から始まり、心拍数が75 bpmを超えて上がるほど、またリズムが不規則に見えるほど下がります。おおまかなヒントであり、あなたの活力を測るものではありません。",
         "key": "energy"
       }
     ],
     "advanced": [
       {
         "title": "HRV surrogate (RMSSD)",
-        "text": "Root Mean Square of Successive Differences between adjacent RR intervals, in milliseconds. Reflects parasympathetic nervous system activity. Higher = more adaptive autonomic regulation. Typical camera-derived range: 15–70 ms.",
+        "text": "RMSSD：拍間間隔の連続する差の二乗平均平方根（ms、上限100）。迷走神経（副交感神経）の活動を反映します。15秒間のカメラ測定はおおまかで、高めに出ることがよくあります。",
         "key": "hrv"
       },
       {
         "title": "Cardiac Stability Index (CSI)",
-        "text": "Standard deviation of RR intervals divided by mean RR interval. Measures rhythmic consistency independent of heart rate. Lower values (0.03–0.10) indicate a very stable rhythm; values above 0.25 suggest irregular beats or measurement noise.",
+        "text": "拍間間隔の標準偏差をその平均で割った値。低いほど間隔が均一で、信号がきれいです。カメラ測定の典型的な値は約0.3で、明らかに高い値はたいてい体の動きやノイズによるものです。",
         "key": "csi"
       },
       {
         "title": "Recovery Rate %",
-        "text": "How completely the heart rate has returned toward its mean after the highest recorded beat in this session. 0 % = HR still at its peak; 100 % = fully recovered to baseline or below.",
+        "text": "直近15秒で最も高い心拍数から、最新の拍がウィンドウの平均に向けてどれだけ戻ったか。100% = 平均に戻った、0% = まだピークにある、またはピークがない。",
         "key": "recovery"
       },
       {
         "title": "HR Trend Slope",
-        "text": "Linear regression slope of RR intervals over the measurement window. Negative = heart rate gradually slowing (relaxation response). Positive = HR accelerating (rising arousal or activity).",
+        "text": "ウィンドウ内の拍間間隔の直線的な傾向を、符号を反転したもの。プラス = 心拍数が上昇中、マイナス = 心拍数が落ち着いてきている。",
         "key": "slope"
       },
       {
         "title": "HR Acceleration",
-        "text": "Second derivative of RR intervals — the rate of change of the trend. Positive = HR is speeding up faster than before. Negative = the rate of change is decelerating, even if HR is still rising.",
+        "text": "連続する拍間間隔の変化の平均。プラス = 間隔が長くなっている（脈拍が遅くなっている）、マイナス = 短くなっている（脈拍が上がっている）。安静時はほぼゼロ。",
         "key": "acceleration"
       }
     ],
     "emotional": [
       {
         "title": "Alarm / Anxiety",
-        "text": "Composite of rising HR and elevated breathing rate. High values indicate a fight-or-flight activation pattern in the autonomic nervous system.",
+        "text": "実験的：0.7 × ストレスに、推定呼吸数が毎分15回を超えると加算。不規則に見えるリズムと速い呼吸で上がります。不安のテストではありません。",
         "key": "alarm"
       },
       {
         "title": "Relaxation / Calmness",
-        "text": "Inverse of CSI plus energy reserve. High score = low HR variability irregularity, slow stable breathing, and ample cardiovascular headroom — the signature of restful alertness.",
+        "text": "実験的：リズムが安定して見え（CSIが低い）、エネルギーが高い（脈拍が約75 bpmを超えていない）ほど高くなります。",
         "key": "relaxation"
       },
       {
         "title": "Focus / Concentration",
-        "text": "Blend of energy level and inverse stress. Peaks when HR is moderate, rhythm is stable, and stress is low — consistent with sustained attentional effort without overarousal.",
+        "text": "実験的：エネルギーとストレスの反転値の平均。脈拍がほどよくリズムが安定しているときに最も高くなります。注意力を測ることはできません。",
         "key": "focus"
       },
       {
         "title": "Excitement",
-        "text": "Rises with HR elevation above resting baseline and higher breathing rate. Distinguishable from alarm by the absence of extreme stress scores — it is positive arousal rather than threat response.",
+        "text": "実験的：心拍数が60 bpmを超えると上がります（呼吸数でも少し上がります）。興奮と緊張、運動、カフェインを区別することはできません。",
         "key": "excitement"
       },
       {
         "title": "Fatigue",
-        "text": "Increases when energy is depleted and stress is chronically elevated. Reflects the physiological cost of prolonged effort: reduced HRV, elevated HR at rest, and slow recovery.",
+        "text": "実験的：エネルギーが下がりストレスが上がるほど、つまり脈拍が75 bpmを超え、リズムが不規則に見えるほど上がります。疲れを測るものではありません。",
         "key": "fatigue"
       },
       {
         "title": "Flow",
-        "text": "The optimal performance state: high focus, moderate relaxation, and HR slightly above resting without alarm. Appears when you are fully engaged but not overwhelmed — the zone.",
+        "text": "実験的：60% 集中 + 40% リラックス。脈拍がほどよくリズムが安定していると高くなります。フロー状態を検出することはできません。",
         "key": "flow"
       }
     ],
@@ -168,7 +168,7 @@
   },
   "ctaDownload": {
     "title": "Ready to measure?",
-    "subtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "subtitle": "ONDAアプリは、iPhoneのカメラ、Apple Watch、Appleヘルスケアと連携します。",
     "appStoreSup": "Download on the",
     "appStoreLabel": "App Store",
     "appStoreAria": "Download ONDA Life on App Store",
@@ -191,7 +191,7 @@
   },
   "meta": {
     "title": "Bio OS — Live Biometrics in Your Browser | ONDA Life",
-    "description": "Measure your heart rate, stress, energy and HRV right in the browser — no wearable required. Place your finger on the camera and get real-time biometric analysis.",
+    "description": "スマートフォンのカメラで、心拍数・呼吸数・HRVをブラウザ上で推定 — ウェアラブル不要。おおまかな教育目的の測定値と、実験的な状態指標を表示します。",
     "ogImageAlt": "ONDA Life Bio OS — Live biometrics in your browser via the device camera."
   },
   "emotionalDisclaimer": "Rough, experimental patterns inferred from heart-rate and breathing changes on a single camera reading — directional hints, not emotion detection or a measurement."

@@ -5,7 +5,7 @@
     "ondaPrinciple": "The ONDA Principle",
     "back": "← Back to Bio OS",
     "ctaReady": "Ready to measure?",
-    "ctaSubtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "ctaSubtitle": "ONDAアプリは、iPhoneのカメラ、Apple Watch、Appleヘルスケアと連携します。",
     "appStoreSup": "Download on the",
     "appStoreLabel": "App Store",
     "appStoreAria": "Download ONDA Life on App Store",
@@ -26,673 +26,781 @@
       "errorGeneric": "Something went wrong. Please try again later.",
       "close": "Close"
     },
-    "measurementDisclaimer": "Estimated from a single camera (PPG) reading — an educational estimate, not a medical measurement. State labels (Flow, Focus, Alarm…) are rough, experimental patterns, not emotion detection."
+    "measurementDisclaimer": "カメラ（PPG）による1回の測定からの推定値です。教育目的の推定であり、医学的な測定ではありません。状態のラベル（フロー、集中、警戒など）はおおまかな実験的パターンであり、感情の検出ではありません。"
   },
   "metrics": {
     "flow": {
-      "title": "Flow: The State of Biological Resonance",
-      "shortTitle": "🌊 Flow",
+      "title": "フロー：集中とリラックスを組み合わせた実験的な指標",
+      "shortTitle": "🌊 フロー",
       "sections": [
         {
-          "heading": "The Point of Optimum",
-          "body": "Flow is the holy grail of performance. At ONDA, we estimate a flow-like pattern when the signal suggests synchronization: high attentional focus while maintaining profound internal calm. It is the moment when you are entirely absorbed in a task, yet your body isn't paying an excessive price for it."
+          "heading": "この数値は何か",
+          "body": "ここでのフローは、没頭して作業しているときによく語られる状態、つまり注意が安定しつつ体がほどよく落ち着いている組み合わせを捉えようとする実験的な指標です。ブラウザのツールがあなたの注意や心を読むことはできません。このツールの別の2つの指標「集中」と「リラックス」を組み合わせているだけで、それらは心拍数と拍間間隔の不規則さから計算されています。"
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "このツールでの計算方法",
+          "body": "フロー = 0.6 × 集中 + 0.4 × リラックス（0〜100%に制限）。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。集中とリラックスはどちらも、心拍数がほどよく、リズムが安定している（CSIが低い）ときに上がるため、フローも同じ状況で上がります。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0–25% · Disconnected",
-              "text": "The conditions for flow are absent — either the Alarm index is elevated, energy is low, or focus is scattered. Attempting deep work here is fighting the biology."
+              "label": "高い",
+              "text": "測定中の脈拍がほどよく、拍間間隔がかなり均一でした。落ち着いて集中している状態に伴うこともありますが、単にじっと座っていて信号がきれいだっただけ、ということもあります。"
             },
             {
-              "label": "25–50% · Approaching",
-              "text": "The system is warming up toward coherence. Focus is beginning to establish itself, stress is declining. A short breathing exercise or a clear intention can push you into the zone."
-            },
-            {
-              "label": "50–75% · In the Zone",
-              "text": "Your signal looks consistent with a flow-like pattern: moderate HR, stable rhythm, low alarm. You are fully capable of sustained, high-quality work with minimal cognitive friction."
-            },
-            {
-              "label": "75–100% · Deep Resonance",
-              "text": "Rare and optimal. All three conditions are perfectly aligned — activation, stability, silence. This is the state where hours feel like minutes and output far exceeds effort. Protect it."
+              "label": "低い",
+              "text": "心拍数が高かった、リズムがより不規則に見えた、またはその両方です。指の動き、押す強さの変化、暗い照明もカメラ信号にノイズを加えるため、値を下げます。"
             }
           ]
         },
         {
-          "heading": "The Formula of Flow",
-          "body": "Unlike an ordinary working state, Flow in ONDA has a distinct biometric signature:",
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。「フロー」と呼ばれる心理状態は質問紙や課題の成績で研究されており、15秒の指先の測定からそれを検出する確立された方法はありません。"
+        },
+        {
+          "heading": "実際に役立つこと",
           "bullets": [
             {
-              "label": "Moderate Activation",
-              "text": "Your heart rate is slightly above your resting baseline. This provides the brain with the necessary drive and resources without crossing into the alarm stage."
+              "label": "中断を減らす",
+              "text": "通知を切り、タスクをひとつに絞りましょう。頻繁な切り替えは集中を確実に途切れさせます。"
             },
             {
-              "label": "Rhythmic Stability",
-              "text": "Your heart operates like a finely tuned machine — without jerks or chaos. This allows you to hold focus for hours without feeling mental friction."
+              "label": "深い作業の前にゆっくり呼吸",
+              "text": "数分間ゆったりとゆっくり呼吸すると、心拍数が少し下がり、リズムが安定することがよくあります。"
             },
             {
-              "label": "Absence of Noise",
-              "text": "The Alarm index is at zero. You are engaged but not overwhelmed. You aren't fighting the task; you are merging with it."
+              "label": "睡眠と休憩",
+              "text": "休息がとれていると注意を保ちやすくなります。1時間ほどごとの短い休憩も役立ちます。"
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "The Flow state is the most efficient form of existence. Here, you produce maximum results with minimum attrition. ONDA helps you do more than just \"stumble\" into this state; it helps you understand which conditions (breathing, time of day, prep level) lead to it. We teach you to find your \"zone,\" where the challenge perfectly meets your skill."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "Flow is not luck; it is a biophysical skill. Tune your rhythm, remove the excess noise, and the world around you will vanish, leaving only you and your craft."
+          "highlight": "フローは追いかけるスコアではなく、好奇心の対象として使ってください。脈拍がほどよく、リズムが安定していると上がります。"
         }
       ]
     },
     "fatigue": {
-      "title": "Fatigue: The Physiological Tax on Effort",
-      "shortTitle": "🪫 Fatigue",
+      "title": "疲労：エネルギーとストレスから算出する実験的な指標",
+      "shortTitle": "🪫 疲労",
       "sections": [
         {
-          "heading": "The Cost of Movement",
-          "body": "Fatigue in ONDA is more than just a desire to sleep. It is a rough estimate of the \"biological cost\" of your recent efforts. This estimate rises when your energy reserves look depleted and your stress levels remain chronically elevated. It is a signal that your system has shifted from efficient operation to a state of attrition."
+          "heading": "この数値は何か",
+          "body": "このページの疲労は実験的な指標です。眠気、筋肉の疲労、オーバートレーニングを測るものではありません。ツール内の別の2つの指標「エネルギー」と「ストレス」から計算されるため、心拍数が約75 bpmを超えるときや、拍間のリズムが不規則に見えるときに上がります。"
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "このツールでの計算方法",
+          "body": "疲労 = 60 × (1 − エネルギー/100) + 0.2 × ストレス（0〜100%に制限）。エネルギーは心拍数が75 bpmを超えて上がるほど、またCSI（拍間間隔の不規則さ）が上がるほど下がります。ストレスはCSI × 130です。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0–20% · Recovered",
-              "text": "Energy reserves are intact, stress is low, HRV is healthy. Your system is operating from a position of abundance — ready for high demands."
+              "label": "高い",
+              "text": "脈拍が高かった、または拍間間隔が平均に比べて大きくばらついていました。疲れているとこうなることもありますが、コーヒー、階段を上った直後、会話中、ノイズの多いカメラ信号でも同じようになります。"
             },
             {
-              "label": "20–45% · Accumulated Load",
-              "text": "Normal end-of-day wear. Manageable with standard recovery: sleep, nutrition, a pause. Performance is slightly reduced but not yet compromised."
-            },
-            {
-              "label": "45–70% · Depletion Zone",
-              "text": "Energy deficit is significant. HRV is dropping, resting HR is creeping up, recovery after micro-stressors is slow. Continuing to push here increases error rate and burnout risk."
-            },
-            {
-              "label": "70–100% · Biological Red Alert",
-              "text": "The system is in attrition mode. Any attempt to \"push through\" yields diminishing returns at an accelerating cost. The only productive action is structured rest — sleep, stillness, or deep parasympathetic recovery."
+              "label": "低い",
+              "text": "測定中の心拍数はほどよく、リズムは安定して見えました。"
             }
           ]
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your body reports fatigue through three distinct biometric markers:",
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。実際の疲労の評価では、1回の短い測定ではなく、数日単位の傾向（安静時心拍数、毎朝同じ方法で測ったHRV、睡眠）を見るのが一般的です。"
+        },
+        {
+          "heading": "実際に役立つこと",
           "bullets": [
             {
-              "label": "Reduced HRV",
-              "text": "The heart loses its adaptability and fluidity, becoming \"rigid\" and monotonic."
+              "label": "規則正しい睡眠",
+              "text": "就寝と起床の時刻をそろえることは、疲れにくくなる最も確かな方法のひとつです。"
             },
             {
-              "label": "Elevated Resting HR",
-              "text": "Even while seated, your heart beats faster than usual, struggling to compensate for the deficit in internal resources."
+              "label": "瞬間ではなく傾向を見る",
+              "text": "回復を把握したいなら、毎日同じ時刻に、じっと座って測り、1つの数値ではなく1週間の流れを見ましょう。"
             },
             {
-              "label": "Slow Recovery",
-              "text": "Your ability to return to baseline after any micro-stressor (even a simple phone call) drops significantly."
+              "label": "軽い運動と休憩",
+              "text": "短い散歩や数分間のゆっくりした呼吸は、長い一日の途中で気持ちを切り替える助けになります。"
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Fatigue is insidious because we often get used to it and stop noticing its weight. ONDA makes this invisible burden visible. A high Fatigue index is not a failure; it is a command to shift gears. This is the time when any attempt to \"push through\" will yield diminishing returns, increasing the risk of burnout and errors."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "Fatigue is your body's way of protecting its assets. Respect this signal. Sometimes, the most productive thing you can do is get a full night's sleep or an hour of silence."
+          "highlight": "疲労の値が高いのは、基本（睡眠、カフェイン、直前の活動）を見直すきっかけであって、診断ではありません。"
         }
       ]
     },
     "excitement": {
-      "title": "Excitement: The Energy of Anticipation",
-      "shortTitle": "✨ Excitement",
+      "title": "興奮：実験的な覚醒度の指標",
+      "shortTitle": "✨ 興奮",
       "sections": [
         {
-          "heading": "Positive Drive",
-          "body": "Excitement is the state of \"bright\" mobilization within your system. Much like anxiety, it involves a rise in heart rate and breathing frequency, but with a critical distinction: in ONDA, this index only climbs when your stress scores remain within a healthy range. We read this pattern as readiness for play, creativity, or a significant event rather than a threat response."
+          "heading": "この数値は何か",
+          "body": "ここでの興奮は、全般的な生理的覚醒度を示す実験的な指標です。心拍数が60 bpmを超えると上がり、呼吸数によっても少し上がります。前向きな興奮と、緊張、身体的な負荷、カフェインとを区別することはできません。体はそのどれに対しても脈拍を速めるからです。"
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "このツールでの計算方法",
+          "body": "興奮 = 1.5 × (心拍数 − 60) + 0.5 × 呼吸数（0〜100%に制限）。心拍数は60,000を平均RR間隔で割った値です。呼吸数は脈波信号のゆっくりした変化から推定し、明確なリズムが見つからないときは0として扱います。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0–20% · Neutral",
-              "text": "No positive arousal detected. The system is in a resting or low-activation state. Useful for recovery, but not for performance or creative output."
+              "label": "高い",
+              "text": "心拍数が60 bpmを大きく上回っていました。たとえば80 bpm、呼吸数が毎分15回なら指標は約38%、100 bpmなら約68%です。"
             },
             {
-              "label": "20–50% · Mild Charge",
-              "text": "A gentle energizing — the body is warming up with motivation and light anticipation. Ideal for starting tasks that require sustained engagement."
-            },
-            {
-              "label": "50–75% · Drive",
-              "text": "Clear positive mobilization with stable rhythm. HR is elevated but stress is contained. This is the optimal zone for high-performance work, sport, or creative flow."
-            },
-            {
-              "label": "75–100% · Full Surge",
-              "text": "Peak eustress. The system is fully primed. This state is rare and time-limited — use it strategically. It transitions into anxiety if stress scores begin to rise alongside."
+              "label": "低い",
+              "text": "脈拍が60 bpm前後かそれ以下でした。リラックスした健康な大人の多くは、安静時にこのあたりにあります。"
             }
           ]
         },
         {
-          "heading": "The Biology of Joy",
-          "body": "In a state of Excitement, your body prepares for action, but it does so efficiently:",
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。実際には、この指標はほぼ心拍数を尺度変換したものなので、心拍数そのものと同じ注意点があります。"
+        },
+        {
+          "heading": "実際に役立つこと",
           "bullets": [
             {
-              "label": "Productive Surge",
-              "text": "Your heart beats faster to saturate your muscles and brain with oxygen, yet the rhythm remains stable and confident."
+              "label": "原因を考える",
+              "text": "値が高いときは、直前に何があったかを考えてみましょう。体を動かした、コーヒーを飲んだ、ストレスのかかるメッセージを受け取った、何かを待ち構えていた。どの場合も体の反応は似ています。"
             },
             {
-              "label": "Eustress",
-              "text": "This is \"positive stress\" — the kind that doesn't drain your reserves but instead makes you feel alive and engaged."
-            },
-            {
-              "label": "Lack of Constraint",
-              "text": "Unlike anxiety, there is no \"tunnel vision\" here. You maintain a broad perspective and a high capacity for creativity."
+              "label": "ゆっくり吐いて落ち着く",
+              "text": "落ち着きたいときは、吸う息より吐く息を長くして数回呼吸すると、1〜2分で心拍数が下がる傾向があります。"
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "We help you recalibrate your internal signals. Often, people mistake excitement for anxiety and try to suppress it. ONDA can hint at the difference: your heart rate is high, but your rhythm looks stable — a sign you may be charged rather than afraid. This insight allows you to use the energy of excitement as fuel for achievement rather than a reason for worry."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "Excitement is energy directed outward. Embrace the surge; it is a sign that your system is primed for greatness."
+          "highlight": "興奮とは要するに「いまの脈拍が60 bpmをどれだけ上回っているか」をパーセントで表したものです。"
         }
       ]
     },
     "focus": {
-      "title": "Focus / Concentration: The Physiology of Immersion",
-      "shortTitle": "🎯 Focus / Concentration",
+      "title": "集中：実験的な指標",
+      "shortTitle": "🎯 集中",
       "sections": [
         {
-          "heading": "The Flow State",
-          "body": "Focus / Concentration is not an act of will, but a result of harmony within your system. At ONDA, this index is calculated as the balance between your energy levels and the absence of internal noise (stress). It’s our proxy for a focus-like state — when your energy is sufficient and internal noise (stress) stays low, so attention comes more easily."
+          "heading": "この数値は何か",
+          "body": "ここでの集中は実験的な指標です。注意力を測るものではなく、指先に当てたカメラがあなたの考えていることを知ることはできません。ツール内の別の2つの指標、エネルギーとストレスの反転値を平均しているため、心拍数がほどよく（約75 bpm以下）、拍間のリズムが安定しているときに最も高くなります。"
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "このツールでの計算方法",
+          "body": "集中 = 0.5 × エネルギー + 0.5 × (100 − ストレス)（0〜100%に制限）。エネルギー = 90 − 1.5 × (75 bpmを超えた分の心拍数) − 80 × CSI、ストレス = 130 × CSI。CSIはRR間隔の標準偏差をその平均で割った値です。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0–25% · Scattered",
-              "text": "High internal noise or low energy. Sustained attention is biologically inaccessible in this state. Tasks will demand disproportionate effort with poor output quality."
+              "label": "高い",
+              "text": "測定中の脈拍がほどよく、拍間間隔が均一でした。落ち着いて着実に作業しているときに見られることもありますが、何もせずにくつろいでいる人でも同じ値になります。"
             },
             {
-              "label": "25–50% · Warming Up",
-              "text": "The system is partially available for focus. Surface-level tasks are possible, but deep cognitive work will be fragmented. A short breathing reset can shift you into the next zone."
-            },
-            {
-              "label": "50–75% · Engaged",
-              "text": "Energy is sufficient, stress is moderate. You are capable of sustained concentration. This is the standard working zone for most productive individuals."
-            },
-            {
-              "label": "75–100% · Deep Focus",
-              "text": "Optimal state. Prefrontal cortex is fully in control, amygdala is quiet, rhythm is stable. This pattern often accompanies flow — where effort fades and performance feels easy."
+              "label": "低い",
+              "text": "脈拍が速い、リズムがより不規則、または指の動きによる信号のノイズです。"
             }
           ]
         },
         {
-          "heading": "The Architecture of Attention",
-          "body": "In ONDA, peak concentration occurs when three conditions are met:",
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。実験室の研究では集中に伴って心臓の信号が変化しますが、短いカメラ測定であなたの集中度がわかるような変化ではありません。"
+        },
+        {
+          "heading": "実際に役立つこと",
           "bullets": [
             {
-              "label": "Moderate Heart Rate",
-              "text": "Your heart isn't racing, but it isn't \"sleeping\" either. This is the zone of optimal activation, where the brain receives just enough resources for complex tasks."
+              "label": "一度にひとつのタスク",
+              "text": "次の25〜50分の明確な目標を決め、わかりやすい気が散るものを取り除きましょう。"
             },
             {
-              "label": "Stable Rhythm",
-              "text": "The absence of sharp spikes (low CSI) means your nervous system isn't being distracted by internal interference."
+              "label": "まず体を落ち着かせる",
+              "text": "気が高ぶっているなら、負荷の高い作業の前に数分ゆっくり呼吸すると覚醒度を下げられます。"
             },
             {
-              "label": "Low Stress",
-              "text": "Your amygdala is calm, allowing the prefrontal cortex to maintain total control over your attentional focus."
+              "label": "休息",
+              "text": "睡眠、水分補給、定期的な休憩は、どんな数値よりも集中に役立ちます。"
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "We often mistake \"busyness\" for \"productivity.\" The Focus index reveals the difference. You may be very busy, but if your concentration score is low, you are spending three times more energy on the same task. ONDA helps you notice moments that look like \"Restful Alertness\" — attentive yet physiologically calm."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "Focus isn't about what you do; it's about the state you're in. Create silence within your rhythm, and attention will follow naturally."
+          "highlight": "集中は脈拍がほどよく、リズムが安定していると上がります。体についてのヒントであって、心を読み取るものではありません。"
         }
       ]
     },
     "relaxation": {
-      "title": "Relaxation / Calmness: The State of Deep Stillness",
-      "shortTitle": "🌿 Relaxation / Calmness",
+      "title": "リラックス：実験的な指標",
+      "shortTitle": "🌿 リラックス",
       "sections": [
         {
-          "heading": "The Art of Presence",
-          "body": "Relaxation / Calmness is not merely the absence of stress; it is an active state of physiological wellbeing. At ONDA, this index is calculated as the inverse of chaos (CSI) combined with your energy reserve. It estimates how settled your rhythm looks — low cardiac noise alongside energy reserve — a proxy for readiness for high-quality rest or deep creativity."
+          "heading": "この数値は何か",
+          "body": "ここでのリラックスは、拍間のリズムが安定して見え、エネルギー指標が高い（このツールでは主に心拍数が約75 bpmを超えていないことを意味します）ときに上がる実験的な指標です。あなたがどれだけ落ち着いていると感じるかを測るものではなく、検証済みのリラックススコアでもありません。"
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "このツールでの計算方法",
+          "body": "リラックス = 60 × (1 − min(1, 1.5 × CSI)) + 0.2 × エネルギー（0〜100%に制限）。CSIはRR間隔の標準偏差をその平均で割った値です。ゆっくりした呼吸はリラックスに役立つことが多いものの、呼吸数はこの計算式に含まれていない点に注意してください。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0–25% · Surface Tension",
-              "text": "The system is still carrying biological noise — elevated CSI, shallow breathing, or low energy reserve. True rest is not yet accessible. Intervention (slow breathing, stillness) is needed."
+              "label": "高い",
+              "text": "RR間隔のばらつきが平均に比べて小さく、脈拍がほどよい状態でした。じっと座っていて信号がきれいだと値が上がります。"
             },
             {
-              "label": "25–50% · Settling",
-              "text": "The nervous system is beginning to downshift. Rhythm is stabilizing. This is the transitional zone — the body is on its way to calm but has not arrived yet."
-            },
-            {
-              "label": "50–75% · Active Calm",
-              "text": "Low biological noise, steady breath, sufficient energy headroom. You are in Restful Alertness — fully present and open, without the undertone of vigilance."
-            },
-            {
-              "label": "75–100% · Deep Stillness",
-              "text": "Optimal state for regeneration, creativity, and deep focus. Tissue repair accelerates, immune activity peaks, and the brain shifts into consolidation and insight mode."
+              "label": "低い",
+              "text": "リズムがより不規則に見えた（CSIが高い）か、脈拍が速かった状態です。指の動きも不規則さを加え、スコアを下げます。"
             }
           ]
         },
         {
-          "heading": "The Signature of \"Restful Alertness\"",
-          "body": "A high Calmness score is the result of three synchronized factors:",
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。ひとつ癖があります。実際の生理学では、リラックスした体は呼吸に伴う拍間の変動がむしろ大きくなることが多いのに、この指標は変動が小さいほど高くなります。これも、おおまかなヒントとしてだけ扱うべき理由のひとつです。"
+        },
+        {
+          "heading": "実際に役立つこと",
           "bullets": [
             {
-              "label": "Rhythmic Purity",
-              "text": "Your heart beats with minimal unjustified fluctuations (low CSI)."
+              "label": "ゆっくりした呼吸",
+              "text": "毎分5〜7回程度でゆっくり呼吸し、力を抜いて吐く息を長めにするのは、多くの人にとって体を落ち着かせるよく研究された方法です。"
             },
             {
-              "label": "Stable Breathing",
-              "text": "A slow, steady rhythm of inhales and exhales that nourishes the brain without overtaxing the system."
+              "label": "姿勢と静止",
+              "text": "楽に座って肩の力を抜き、手を支えて、強く押さずに指をレンズに当てたままにしましょう。"
             },
             {
-              "label": "Biological Headroom",
-              "text": "Your heart has ample \"cardiovascular headroom\" (Energy Reserve), allowing you to remain relaxed even as your environment shifts."
+              "label": "静かな数分間",
+              "text": "心拍数はふつう、数秒ではなく数分の安静で落ち着いていきます。"
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "The Calmness state is the mode where your body shifts from survival to thriving. It is in this zone that maximum tissue regeneration, immune strengthening, and neural \"rewiring\" occur. We track this metric so you can learn not just to relax, but to achieve Restful Alertness — a state where you are profoundly calm yet entirely present and attentive."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "Relaxation is not weakness; it is the ultimate form of efficiency. The higher your Calmness index, the less effort it takes to remain yourself."
+          "highlight": "ここでのリラックスは主に、ほどよい脈拍と安定して見えるリズムを反映しています。数値よりも、あなたがどう感じるかのほうが大切です。"
         }
       ]
     },
     "alarm": {
-      "title": "Alarm / Anxiety: Your System's Code Red",
-      "shortTitle": "🚨 Alarm / Anxiety",
+      "title": "警戒・不安：実験的な指標",
+      "shortTitle": "🚨 警戒・不安",
       "sections": [
         {
-          "heading": "The Invisible Threat Detector",
-          "body": "Alarm / Anxiety is a composite index within ONDA that analyzes the synergy between your heart rate and your breathing. We look for a specific pattern: a simultaneous rise in HR and an increased respiratory rate. This is a pattern often linked to the \"Fight-or-Flight\" response. The index flags when that pattern appears — a cue to check in with yourself, not a diagnosis."
+          "heading": "この数値は何か",
+          "body": "ここでの警戒は、リズムの不規則さと呼吸数から作った実験的な指標です。不安のテストではなく、恐れや心配を検出することはできません。拍間間隔が平均に比べて不規則に見えるとき（CSIが高い）と、推定呼吸数が毎分15回を超えるときに上がります。"
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "このツールでの計算方法",
+          "body": "警戒 = 0.7 × ストレス + 3 × (呼吸数 − 15、15を超える場合)（0〜100%に制限）。ストレス = 130 × CSI。心拍数そのものはこの計算式に含まれていません。呼吸数は脈波信号のゆっくりした揺れから推定し、明確なリズムが見つからないときは0として扱います。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0–20% · Baseline Calm",
-              "text": "No alarm signals detected. HR and breathing are in a balanced, low-arousal state. Your nervous system is fully in parasympathetic mode."
+              "label": "高い",
+              "text": "拍間間隔が平均に比べて大きくばらついた、または呼吸数が毎分15回を超えると推定されました。話す、指を動かす、指が冷たい、光が弱いといったことでも、ストレスのかかる瞬間と同じくらい値が上がります。"
             },
             {
-              "label": "20–50% · Mild Activation",
-              "text": "Low-level arousal — normal during focused work or light activity. The body is alert but not mobilized. Manageable without intervention."
-            },
-            {
-              "label": "50–75% · Elevated Alarm",
-              "text": "Clear fight-or-flight pattern emerging. HR is rising alongside breathing rate. This is the zone of unnoticed chronic stress — you may feel \"fine,\" but your biology disagrees."
-            },
-            {
-              "label": "75–100% · Acute Mobilization",
-              "text": "Full sympathetic surge. The amygdala has taken control. Cortisol and adrenaline are spiking. Immediate intervention — a deep exhale, a pause, breath-hold reset — is highly effective here."
+              "label": "低い",
+              "text": "リズムは安定して見え、呼吸数は毎分15回以下と推定されました。"
             }
           ]
         },
         {
-          "heading": "The Psychosomatic Echo",
-          "body": "High values in this index indicate that your body is in a state of acute mobilization:",
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。不安や体調不良を感じるなら、この数値よりもその感覚を信じ、適切な助けを求めてください。スコアが低いから大丈夫というわけではなく、高いから何か問題があるというわけでもありません。"
+        },
+        {
+          "heading": "実際に役立つこと",
           "bullets": [
             {
-              "label": "Biological Level",
-              "text": "Blood shifts from digestive organs to muscles, the brain receives a signal of external danger, and cortisol levels spike."
+              "label": "吐く息を長く",
+              "text": "約4秒吸って約6秒吐くのは、気が張っているときにペースを落とすシンプルな方法です。"
             },
             {
-              "label": "Mental Level",
-              "text": "The prefrontal cortex (responsible for logic) gives way to the amygdala. You begin to experience restlessness, tunnel vision, or cognitive \"tightness.\""
+              "label": "落ち着いて測り直す",
+              "text": "座って腕をテーブルに置き、指を動かさずに、1分後にもう一度測りましょう。高い値の多くは信号のノイズです。"
+            },
+            {
+              "label": "生理的ため息",
+              "text": "鼻から短く2回吸い、そのあと長く吐く。これも手軽に落ち着ける方法のひとつです。"
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Anxiety often masks itself as ordinary fatigue or high productivity. The Alarm index can hint at this: you might just be drinking coffee, yet your rhythm looks like the body is bracing for a threat. ONDA gives you the chance to spot this pattern early and use conscious breathing to \"cancel\" the alarm signal before it turns into a panic attack or total burnout."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "Your body cannot lie. If the Alarm index is rising, it's not a reason to panic — it's a reason for a deep exhale. Reclaim control through your body when your mind feels powerless."
+          "highlight": "警戒は、不規則に見えるリズムと速い呼吸に反応します。何かを読み取る前に、信号と周りの状況を確認してください。"
         }
       ]
     },
     "acceleration": {
-      "title": "HR Acceleration: The Intensity of Biological Response",
-      "shortTitle": "⚡ HR Acceleration",
+      "title": "心拍加速度：拍ごとの変化の平均",
+      "shortTitle": "⚡ 心拍加速度",
       "sections": [
         {
-          "heading": "Dynamics Beyond Speed",
-          "body": "HR Acceleration is the second derivative of your heart rhythm. While the Trend Slope shows the direction of your movement, Acceleration measures the intensity with which that movement gains momentum. It is a gauge of how sharply your system \"hits the gas\" or, conversely, how smoothly it begins to apply the brakes."
+          "heading": "この数値が示すもの",
+          "body": "ここでの心拍加速度は、直近15秒のあいだに拍間間隔が1拍ごとに平均して長くなっていたか短くなっていたかを表す小さな数値です。名前とは違い、心拍数の本当の2階微分ではなく、連続する差の単純な平均です。"
         },
         {
-          "heading": "Reading the Impulse",
-          "body": "Acceleration reveals the hidden dynamics of your adaptation:",
+          "heading": "このツールでの計算方法",
+          "body": "連続するRR間隔の差（ms）をとり、最初の1つを除いて平均し、100で割ります。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "Positive Acceleration · The Surge",
-              "text": "Your heart rate is beginning to speed up faster than it was a second ago. This is a sign of an \"acute\" reaction—such as a sudden startle, a sharp thought about a deadline, or a physical burst. Your sympathetic system is firing at full capacity, mobilizing resources right here and right now."
+              "label": "プラス",
+              "text": "RR間隔が平均して長くなっていた、つまりウィンドウ内で心拍数が下がっていました。ゆっくり吐いているときや落ち着いていくときによく起こります。"
             },
             {
-              "label": "Negative Acceleration · The Deceleration",
-              "text": "The rate of change in your heart rate is falling. Even if your heart is still beating fast, it has stopped accelerating. This is the first sign that the peak has passed and the system is beginning to stabilize. You are regaining control over the stress."
+              "label": "マイナス",
+              "text": "RR間隔が短くなっていた、つまり心拍数が上がっていました。たとえば吸っているとき、体を動かした後、緊張したときです。"
+            },
+            {
+              "label": "ほぼゼロ",
+              "text": "はっきりした変化はありません。呼吸ごとの自然な加速と減速が打ち消し合うため、安静時に最もよく見られる値です。"
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "HR Acceleration is a detector of your reactivity. Excessively sharp spikes in acceleration can indicate high anxiety or a low stress-tolerance threshold. ONDA tracks these \"jerks,\" helping you develop biological smoothness—the ability to enter high-performance states without the jarring and exhausting surges that drain your system."
+          "heading": "値が大きく動く理由",
+          "body": "心臓は息を吸うとわずかに速くなり、吐くと遅くなります（呼吸性洞性不整脈）。呼吸が2〜3回しか入らない15秒のウィンドウでは、ウィンドウが呼吸周期のどこで始まりどこで終わるかがこの値に大きく影響します。1拍あたり数ミリ秒のカメラのタイミング誤差もノイズを増やします。どちらの方向でも小さな値は「意味のある変化なし」と読むのが最適です。"
         },
         {
-          "highlight": "Power is not in the surge, but in the smoothness of the transition. The fewer sharp accelerations in your rhythm, the more carefully you preserve your vital energy."
+          "heading": "重要な限界",
+          "body": "これは臨床やスポーツ科学の標準的な指標ではなく、確立された正常範囲もありません。方向を手早く示す目安として表示しているだけで、医学的・フィットネス上の測定ではありません。"
+        },
+        {
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
+        },
+        {
+          "highlight": "プラスは拍の間隔が広がっていた（脈拍が遅くなっている）、マイナスは詰まっていた（脈拍が上がっている）ことを意味します。"
         }
       ]
     },
     "slope": {
-      "title": "HR Trend Slope: The Vector of Biological Direction",
-      "shortTitle": "📈 HR Trend Slope",
+      "title": "心拍トレンドの傾き：脈拍は上がっている？下がっている？",
+      "shortTitle": "📈 心拍トレンドの傾き",
       "sections": [
         {
-          "heading": "The Direction of Flow",
-          "body": "HR Trend Slope is a mathematical indicator of where your system is headed right now. We use linear regression to understand the overall trajectory of your heart rate throughout the measurement window. It's not just a number; it's a compass needle pointing toward your immediate physiological future."
+          "heading": "この数値が示すもの",
+          "body": "心拍トレンドの傾きは、現在の測定ウィンドウで心拍数が上向きか下向きかを示します。ゆっくり呼吸して脈拍が落ち着いていく、立ち上がって上がっていく、といった変化をリアルタイムで見るのに便利です。"
         },
         {
-          "heading": "Reading the Vector",
-          "body": "The direction of the slope speaks to the dynamics of your adaptation:",
+          "heading": "このツールでの計算方法",
+          "body": "RR間隔を1拍ずつ順に並べ、直線（線形回帰）を当てはめます。その符号を反転して100で割るので、プラスは心拍数の上昇（間隔が短くなる）、マイナスは心拍数の低下（間隔が長くなる）を意味します。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "Negative Slope · Descending",
-              "text": "Your heart rate is gradually slowing down. This is the classic \"relaxation response.\" Your nervous system is successfully dampening arousal and shifting into recovery mode. This is the ideal scenario for meditation or winding down after work."
+              "label": "プラス",
+              "text": "ウィンドウ内で脈拍が上向きでした。たとえば体を動かした後、話しているとき、立ったとき、緊張しているときです。"
             },
             {
-              "label": "Positive Slope · Ascending",
-              "text": "Your heart rate is accelerating. This signals rising emotional or physical arousal. Your body is preparing for action or reacting to a stressor that emerged during the session."
+              "label": "マイナス",
+              "text": "脈拍が下向きでした。座ったとき、リラックスしたとき、吐く息を長くしてゆっくり呼吸しているときによく見られます。"
             },
             {
-              "label": "Zero Slope · Plateau",
-              "text": "A steady state. Your system is in equilibrium, maintaining its current level of activation without sharp fluctuations."
+              "label": "ゼロに近い",
+              "text": "心拍数はほぼ横ばいでした。落ち着いた安静時にはこれが普通です。"
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Trend Slope allows you to see the inertia of your nervous system. If you are trying to relax but the trend remains positive, it means your \"braking system\" hasn't kicked in yet. This metric helps you understand how effectively your chosen practice (breathing, music, a pause) is actually shifting your biological course."
+          "heading": "ノイズが出やすい理由",
+          "body": "15秒のあいだにも心拍数は呼吸ごとに自然に上下するため、ウィンドウの始まる位置だけで当てはめた直線がどちらかに傾くことがあります。カメラによる拍のタイミングにも小さな誤差があります。1つの値に反応するのではなく、30秒以上同じ符号が続くかを見てください。"
         },
         {
-          "highlight": "It's not about where you are, but which way you're moving. A negative trend is your ticket to a state of deep restoration."
+          "heading": "簡単な実験",
+          "body": "じっと座って測定が落ち着くのを待ち、1分間ゆっくり呼吸します（約4秒吸って6秒吐く）。脈拍が落ち着くにつれて傾きがマイナス側に動くのを見る人が多いでしょう。次に立ち上がると、心拍数が一時的に上がり、プラスに変わるのがわかります。"
+        },
+        {
+          "heading": "重要な限界",
+          "body": "これはこのブラウザツールのリアルタイムの傾向指標です。標準的な正常範囲はなく、医学的な測定ではありません。"
+        },
+        {
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
+        },
+        {
+          "highlight": "プラスは脈拍が上がっている、マイナスは落ち着いてきていることを意味します。"
         }
       ]
     },
     "recovery": {
-      "title": "Recovery Rate: The Index of Returning to Self",
-      "shortTitle": "🔄 Recovery Rate %",
+      "title": "回復率：脈拍がピークからどれだけ戻ったか",
+      "shortTitle": "🔄 回復率 %",
       "sections": [
         {
-          "heading": "The Art of the Finish",
-          "body": "Recovery Rate is a measure of how effectively your heart can \"downshift\" after exertion. At ONDA, we calculate how quickly your heart rate returns from its peak during the current session to your baseline average. It is a measurement of your ability to exit a state of arousal and return to your center of gravity."
+          "heading": "この数値が示すもの",
+          "body": "このツールの回復率は、ウィンドウ内だけで完結する指標です。直近15秒で最も高い心拍数を見て、最新の拍がそのピークからウィンドウの平均に向けてどれだけ戻ったかを示します。激しい運動後の最初の1分で脈拍が何拍下がるかを測る臨床的な「心拍回復」テストとは別物です。"
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "In the wild, survival belongs not to the one who runs the fastest, but to the one who calms down the quickest after the chase. In the modern world, it works the same way:",
+          "heading": "このツールでの計算方法",
+          "body": "各拍のRR間隔を1分あたりの拍数に換算します。ピークがウィンドウ平均より2 bpm以上高い場合、回復率 = (ピーク − 最新の拍) ÷ (ピーク − 平均) × 100（0〜100%に制限）。明確なピークがなければ値は0です。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0% · Stuck",
-              "text": "Your heart rate is frozen at its peak. Your body continues to \"fight shadows\" even after the external trigger is gone. This is a sign of nervous system rigidity and accumulated fatigue."
+              "label": "100%近く",
+              "text": "最新の拍がウィンドウの平均（またはそれ以下）に戻っていて、短い上昇は過ぎています。"
             },
             {
-              "label": "100% · Full Calm",
-              "text": "Your heart has completely returned to its baseline or even lower. This is the gold standard of biological flexibility."
+              "label": "50%前後",
+              "text": "脈拍が直近のピークから半分ほど戻っています。"
+            },
+            {
+              "label": "0%近く",
+              "text": "脈拍がまだピークにあるか、目立ったピークがまったくなかった（安定した測定でも0になります）かのどちらかです。見分けるには他の数値を確認してください。"
             }
           ]
         },
         {
-          "heading": "The Biological Echo",
-          "body": "Your recovery speed depends directly on the tone of your Vagus Nerve. A high Recovery Rate means your \"parasympathetic brake\" is functioning perfectly. This allows you to switch between tasks without carrying the stress of the previous moment into the next."
+          "heading": "値が大きく動く理由",
+          "body": "心拍数は吸うたびに自然に上がり、吐くたびに下がるため、「ピーク」は単に呼吸周期の頂点であることが多く、値は拍ごとに揺れます。カメラが拍を1つ誤検出したり見逃したりするだけでも、見かけのピークが生じます。"
         },
         {
-          "highlight": "It's not the height of the peak that matters, but the speed of the descent. True power lies in the ability to quickly return to a state of equilibrium."
+          "heading": "より広い意味での回復",
+          "body": "数時間から数日の単位では、回復は傾向で判断するのが適切です。朝の安静時心拍数、毎日同じ方法で測ったHRV、睡眠、そして自分の体感です。運動後、最初の1分で心拍数が速く下がるのは、一般に体力が良好なしるしです。"
+        },
+        {
+          "heading": "重要な限界",
+          "body": "これはこのブラウザツールのおおまかな実験的指標であり、医学的な指標でもトレーニング指標でもありません。"
+        },
+        {
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
+        },
+        {
+          "highlight": "高い値は、直近のピークのあと脈拍が平均近くに戻ったことを意味します。0%は単にピークがなかっただけのこともあります。"
         }
       ]
     },
     "csi": {
-      "title": "CSI: Cardiac Stability Index",
-      "shortTitle": "🎯 Cardiac Stability Index (CSI)",
+      "title": "CSI：心拍安定性指数（平均に対するRR間隔のばらつき）",
+      "shortTitle": "🎯 心拍安定性指数（CSI）",
       "sections": [
         {
-          "heading": "The Architecture of Rhythm",
-          "body": "CSI (Cardiac Stability Index) is a unique coefficient that allows ONDA to look deeper than a regular pulse. We take the standard deviation of your heart cycles and divide it by the mean heart rate. This allows us to measure the pure consistency of your heart, independent of how fast it happens to be beating at the moment."
+          "heading": "この数値が示すもの",
+          "body": "このツールのCSIは、拍間間隔の変動係数です。つまり、間隔の平均の長さに比べてどれだけばらついているかを表します。平均間隔で割っているため、心拍数が違っていてもリズムの均一さを比べられます。低いほど間隔がそろっていて、高いほどばらつきが大きいことを意味します。"
         },
         {
-          "heading": "Stability vs. Chaos",
-          "body": "CSI is the detector of \"biological noise\" within your system:",
+          "heading": "このツールでの計算方法",
+          "body": "CSI = RR間隔の標準偏差 ÷ RR間隔の平均。たとえば間隔の平均が800 ms、標準偏差が40 msなら、CSIは0.05です。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "カメラの値が高く見える理由",
+          "body": "スマートフォンのカメラでは拍のタイミングの精度が数ミリ秒程度しかなく、ピークの位置がずれることもあるため、測定されるばらつきは実際より大きくなります。このページでは実際には0.3前後が典型的な値で、それより低いほど信号がきれいで安定しています。",
           "bullets": [
             {
-              "label": "0.03 – 0.10 · Diamond Stability",
-              "text": "Your heart is operating with the precision of a Swiss watch. This is a state of deep physiological confidence. The system wastes no resources on unnecessary fluctuations, operating in a mode of maximum economy and focus."
+              "label": "低い（0.3を大きく下回る）",
+              "text": "間隔はかなり均一で、信号はきれいでした。"
             },
             {
-              "label": "0.11 – 0.24 · Dynamic Balance",
-              "text": "The natural rhythm of a living organism. Your heart fluidly adjusts to external stimuli while maintaining its overall structural integrity."
+              "label": "0.3前後",
+              "text": "カメラ測定の典型的な値です。"
             },
             {
-              "label": "0.25+ · Biological Noise",
-              "text": "A signal of instability. High CSI often indicates \"glitches\" in nerve impulse transmission, extreme fatigue, or measurement noise. This is a state where the system is losing control over its rhythm."
+              "label": "明らかに高い",
+              "text": "間隔が大きくばらつきました。多くは指の動き、強く押しすぎ、指が冷たい、光が弱いことが原因で、まれに本当に不規則な拍のこともあります。"
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "CSI is the foundation upon which your Stress % is built. While HRV tells us about your flexibility, CSI informs us about your structural reliability. A low CSI is a sign that your internal \"operating system\" is running without errors in the code."
+          "heading": "CSIと心拍変動",
+          "body": "拍と拍の間にある程度の変動があるのは健康なことです。心臓は吸うたびにわずかに速くなり、吐くたびに遅くなり、体力のある人ほど安静時にこの変動が大きい傾向があります。したがって生理学的には、低ければ自動的に「良い」わけではありません。ただしこのツールでは、CSIは主に測定がどれだけ安定してきれいだったかの確認であり、ストレス（130 × CSI）、エネルギー、リラックス、警戒の各指標に使われます。"
         },
         {
-          "highlight": "True power lies in stability. The less noise in your rhythm, the more clarity in your mind."
+          "heading": "健康に関する注意",
+          "body": "不規則な脈が続く、動悸、めまい、息切れがある場合は医師に相談してください。ブラウザのカメラ測定では、心房細動などの不整脈を検出することも否定することもできません。"
+        },
+        {
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
+        },
+        {
+          "highlight": "CSIは拍間間隔のばらつきをその平均で割ったものです。カメラ測定の典型的な値は0.3前後です。"
         }
       ]
     },
     "hrv": {
-      "title": "HRV: The Index of Your Biological Agility",
-      "shortTitle": "📊 HRV (RMSSD)",
+      "title": "HRV（RMSSD）：拍ごとの変動からわかること",
+      "shortTitle": "📊 HRV（RMSSD）",
       "sections": [
         {
-          "heading": "The Internal Microscope",
-          "body": "HRV (Heart Rate Variability) is the most sophisticated and informative metric in the ONDA arsenal. Unlike heart rate, which simply counts beats, HRV measures the microscopic fluctuations in time between those beats in milliseconds. We use the RMSSD algorithm to assess how fluidly your heart responds to every movement, thought, or breath."
+          "heading": "HRVとは",
+          "body": "心拍変動（HRV）は、心拍と心拍の間隔に生じる自然な変動です。健康な心臓はメトロノームのように一定には打たず、呼吸、姿勢、神経系の働きに応じて間隔が伸び縮みします。RMSSD（連続する差の二乗平均平方根）は最も広く使われるHRV指標のひとつで、主に副交感神経（迷走神経）の活動、つまり神経系の「休息と消化」側を反映します。"
         },
         {
-          "heading": "A Mirror of the Vagus Nerve",
-          "body": "HRV is a direct status report on your Vagus Nerve activity:",
+          "heading": "このツールでの計算方法",
+          "body": "連続するRR間隔の組ごとに差を二乗し、その平均をとって平方根を求め、ミリ秒単位の値を出します。100 msを超える値は100に丸められます。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "典型的な範囲と影響する要因",
+          "body": "健康な大人の安静時RMSSDは幅が広く、おおむね20〜80 msほどで、若く体力のある人ほど高く、年齢とともに低くなる傾向があります。睡眠不足、飲酒、病気、激しいトレーニング、急性のストレスの後には下がり、よく回復していると上がるのが普通です。個人差が大きいので、他人との比較よりも自分自身の傾向のほうが重要です。",
           "bullets": [
             {
-              "label": "High HRV (40–70 ms and above)",
-              "text": "Your heart adapts instantly to changes. This is a sign of a powerful parasympathetic response. You are in a state of high biological resilience: calm, focused, and ready for action."
+              "label": "いつもより高い",
+              "text": "休息がとれてリラックスしているときによく見られます。"
             },
             {
-              "label": "Low HRV (below 20–25 ms)",
-              "text": "Your autonomic nervous system is \"locked.\" Your heart is beating too metrically, like a robot. This is a signal that your recovery resources are drained, and the system is operating at the edge of its adaptive capacity."
+              "label": "いつもより低い",
+              "text": "疲労、ストレス、飲酒、病気、遅い時間の重い食事のあとによく見られます。"
             }
           ]
         },
         {
-          "heading": "Why It Matters More Than Pulse",
-          "body": "Two people can have the exact same heart rate, but entirely different health profiles. The difference lies in HRV. High variability means your \"internal OS\" is constantly scanning the environment and micro-adjusting your rhythm. Low variability is a sign of biological fragility."
+          "heading": "カメラ測定がおおまかな理由",
+          "body": "RMSSDはミリ秒単位のタイミングに左右されます。毎秒約30フレームのスマートフォンのカメラ、わずかにずれる指先、わずか15秒のウィンドウは、どれも誤差を加え、たいてい値を大きくします。標準的な短時間HRV測定では、心電図や胸部ストラップで少なくとも数分間記録します。ここでの数値はおおまかな推定として扱い、同じ方法で測ったもの同士だけを比べてください。"
         },
         {
-          "heading": "Training with ONDA",
-          "body": "HRV is dynamic. It drops due to alcohol, lack of sleep, or overtraining, but it can be \"strengthened.\" By using the breathing protocols in ONDA, you are essentially exercising your Vagus Nerve, raising your baseline HRV and, consequently, your resilience to life's storms."
+          "heading": "実践のヒント",
+          "bullets": [
+            {
+              "label": "一定の条件で測る",
+              "text": "傾向を見るには、同じ時刻（たとえば起床後）に、じっと座って、普段どおりに呼吸して測りましょう。"
+            },
+            {
+              "label": "ゆっくりした呼吸",
+              "text": "毎分約6回のゆっくりした呼吸は、行っているあいだ拍ごとの変動を大きくするのが一般的です。"
+            },
+            {
+              "label": "まず基本から",
+              "text": "規則正しい睡眠、控えめな飲酒、有酸素運動は、長期的に安静時HRVが高いことと関連しています。"
+            }
+          ]
         },
         {
-          "highlight": "High HRV is your ability to bend without breaking. It is the measure of your life force, expressed in milliseconds."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
+        },
+        {
+          "highlight": "RMSSDは迷走神経の活動を反映します。ここでのカメラ版はおおまかな推定で、自分自身の測定値と比べるときに最も役立ちます。"
         }
       ]
     },
     "energy": {
-      "title": "Energy %: Your Biological Power Reserve",
-      "shortTitle": "🔋 Energy %",
+      "title": "エネルギー %：心拍数とリズムから算出する実験的な指標",
+      "shortTitle": "🔋 エネルギー %",
       "sections": [
         {
-          "heading": "Your Internal Battery",
-          "body": "At ONDA, Energy % is not a subjective feeling of alertness; it is a rough estimate of your cardiovascular reserve. It is a mathematical ratio of how far your heart rate is from its elevated ceiling and how stable your cardiac rhythm is at this very second. The higher the score, the more physiological capacity your body has to handle new tasks."
+          "heading": "この数値は何か",
+          "body": "ここでのエネルギーは実験的な指標で、あなたが感じる活力、体力、「バッテリー」を測るものではありません。90%から始まり、心拍数が75 bpmを超えるときや、拍間のリズムが平均に比べて不規則なとき（CSI）に下がります。"
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your Energy score inevitably drops under the influence of three factors:",
+          "heading": "このツールでの計算方法",
+          "body": "エネルギー = 90 − 1.5 × (心拍数 − 75、75を超える場合) − 80 × CSI（10〜100%に制限）。たとえば70 bpmでカメラの典型的なCSIが0.3なら、エネルギーは約66%です。同じCSIで95 bpmなら約36%です。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "Accumulated Fatigue",
-              "text": "When the system fails to recover sufficiently during sleep."
+              "label": "高い",
+              "text": "脈拍が約75 bpm以下で、リズムは安定して見えました。"
             },
             {
-              "label": "High BPM",
-              "text": "Running at \"high RPMs\" quickly burns through available fuel."
-            },
-            {
-              "label": "Prolonged Stress",
-              "text": "Constant turbulence in your rhythm (low stability) forces the heart to spend more resources just to maintain basic functions."
+              "label": "低い",
+              "text": "脈拍が速い（コーヒー、運動、暑さ、ストレス、病気）、またはリズムが不規則に見える（多くは単なる信号のノイズ）状態です。"
             }
           ]
         },
         {
-          "heading": "What the Numbers Tell You",
-          "body": "",
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。計算式の性質上、エネルギーは90%を超えることがなく、安静時の脈拍が75 bpmを下回ってもそれ以上評価は上がりません。"
+        },
+        {
+          "heading": "実際に役立つこと",
           "bullets": [
             {
-              "label": "80–100% · Full Charge",
-              "text": "Your system is in a state of abundance. You are ready for intense cognitive loads, demanding workouts, and strategic decision-making."
+              "label": "睡眠",
+              "text": "規則正しく十分な睡眠は、日中の活力に最も強く効く要素です。"
             },
             {
-              "label": "40–70% · Operating Range",
-              "text": "Reserves are beginning to dwindle. It's time to pace yourself. Your efficiency is still high, but the \"price\" of each subsequent effort is rising."
+              "label": "運動と日光",
+              "text": "短い散歩、特に朝に屋外を歩くことは、カフェインを増やすより役立つことがよくあります。"
             },
             {
-              "label": "Below 30% · Critical Low",
-              "text": "You are operating \"on credit.\" In this state, your body perceives any new event as a threat. The brain enters a strict power-saving mode, dialing down creativity and empathy."
+              "label": "短いリセット",
+              "text": "数分間ゆっくり呼吸すると、速い脈拍が落ち着き、気持ちも落ち着きやすくなります。"
             }
           ]
         },
         {
-          "heading": "The Art of Recharging",
-          "body": "Energy % is our most dynamic metric. It can plummet after a difficult conversation and surge after 10 minutes of deep meditation or a short walk. ONDA helps you see these fluctuations in real-time, turning energy management from guesswork into an exact science."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "Don't wait for the tank to hit empty. A high Energy Score is your insurance against mistakes. If the score is in the red zone, any work will be counterproductive. Charge the system first, then act."
+          "highlight": "ここでのエネルギーは、75 bpmを超える脈拍と不規則に見えるリズムで下がります。燃料計ではなく、おおまかなヒントです。"
         }
       ]
     },
     "stress": {
-      "title": "Stress %: The Biological Turbulence Index",
-      "shortTitle": "⚡ Stress %",
+      "title": "ストレス %：リズムの不規則さから算出する実験的な指標",
+      "shortTitle": "⚡ ストレス %",
       "sections": [
         {
-          "heading": "Beyond Emotions",
-          "body": "At ONDA, Stress % is not a psychological state; it is a rough index of irregularity in your cardiac rhythm. This score is derived from the Cardiac Stability Index. We don't just analyze your pulse; we examine the micro-deviations in the rhythm of every single beat. The higher the irregularity and \"noise\" in these intervals, the higher your biological stress score."
+          "heading": "この数値は何か",
+          "body": "このページのストレスは実験的な指標です。心拍安定性指数（CSI）、つまり平均に対する拍間間隔のばらつきを、パーセントに換算しただけのものです。ストレスホルモン、感情、ストレスの感じ方を測るものではなく、検証済みのストレススコアでもありません。"
         },
         {
-          "heading": "What Does Your Score Mean?",
-          "body": "Stress is the \"spending\" of your life force. We've categorized it into three zones:",
+          "heading": "このツールでの計算方法",
+          "body": "ストレス = 130 × CSI（0〜100%に制限）。カメラの典型的なCSIである約0.3なら、およそ40%になります。心拍数と呼吸数はこの計算式に含まれていません。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "読み方",
           "bullets": [
             {
-              "label": "0 – 30% · The Flow Zone",
-              "text": "Your system is in a state of coherence. Your heart is working rhythmically and efficiently. This is the ideal time for complex decision-making and deep work."
+              "label": "高い",
+              "text": "拍間間隔が平均に比べてよりばらついていました。緊張に伴うこともありますが、スマートフォンのカメラで最も多い原因は信号のノイズです。指を動かす、強く押しすぎる、手が冷たい、光が弱い、などです。"
             },
             {
-              "label": "30 – 60% · The Adaptive Zone",
-              "text": "You are under a load. This is a normal state during an active day, but if you remain here for too long, your cognitive resources begin to drain."
-            },
-            {
-              "label": "60%+ · The Burnout Zone",
-              "text": "Acute physiological stress. Your nervous system is overwhelmed. In this state, the brain dials down the prefrontal cortex (logic) and shifts control to the amygdala (fear and impulsivity)."
+              "label": "低い",
+              "text": "間隔はより均一で、信号はよりきれいでした。"
             }
           ]
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "The most dangerous stress is the kind you don't feel. You might be sitting in silence, yet your Stress % shows 70%. This means an invisible struggle is happening inside: lack of sleep, hidden inflammation, or information overload. ONDA makes the invisible visible, allowing you to hit pause before exhaustion sets in."
+          "heading": "重要な限界",
+          "body": "これはカメラ由来のいくつかの入力から作った実験的なヒューリスティックです。検証済みの生理学的指標ではなく、感情の検出でも医学的検査でもありません。あなたの気分についての判定ではなく、信号がどちらに動いているかを示すおおまかなヒントとして扱ってください。実際の生理学では、急性のストレスは短時間の心拍変動を上げるよりむしろ下げることが多いため、不規則さのスコアが高いことは信頼できるストレスのサインではありません。ストレスが日常生活に影響しているなら、どんな測定値よりも専門家に相談するほうが役に立ちます。"
         },
         {
-          "highlight": "Stress isn't what happens to you; it's how your body spends its resources in response. A high percentage is a signal to re-evaluate your priorities in this very moment."
+          "heading": "実際に役立つこと",
+          "bullets": [
+            {
+              "label": "吐く息を長くしたゆっくりした呼吸",
+              "text": "数分間ゆっくり呼吸するのは、体を落ち着かせる最もシンプルな方法のひとつです。"
+            },
+            {
+              "label": "より良い測定",
+              "text": "前腕をテーブルに置き、カメラを軽く覆い、30秒以上じっとしてから数値を見ましょう。"
+            },
+            {
+              "label": "日々の習慣",
+              "text": "睡眠、定期的な運動、屋外で過ごす時間、人とのつながりは、長期的なストレスに役立ちます。"
+            }
+          ]
+        },
+        {
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
+        },
+        {
+          "highlight": "ここでのストレスは130 × CSIです。リズムの不規則さを示すおおまかなヒントで、信号の質に強く左右されます。"
         }
       ]
     },
     "br": {
-      "title": "Breathing Rate: The Bridge Between Worlds",
-      "shortTitle": "🌬️ /min — Breathing Rate",
+      "title": "呼吸数：毎分の呼吸回数が意味すること",
+      "shortTitle": "🌬️ /min — 呼吸数",
       "sections": [
         {
-          "heading": "The Only Manual Override",
-          "body": "Breathing Rate is a unique biometric parameter. Unlike your heartbeat or digestion, breathing is the only function of the Autonomic Nervous System that you can control directly. It is your \"remote control\" for your internal state."
+          "heading": "呼吸数とは",
+          "body": "呼吸数は1分あたりの呼吸の回数です。基本的なバイタルサインのひとつであり、意識して最も変えやすいものでもあります。そのため、多くのリラクゼーション法でゆっくりした呼吸が使われています。"
         },
         {
-          "heading": "The Rhythm of Calm vs. The Rhythm of Survival",
-          "body": "Your breathing frequency is a live broadcast of how your brain perceives its environment:",
+          "heading": "このツールでの計算方法",
+          "body": "呼吸によって、指先の脈波の強さがわずかに変化します。ツールは脈波信号の大きさを約5秒かけて平滑化し、そのゆっくりした波のピーク（2秒以上離れたもの）を検出して、ピーク間の時間の中央値をとり、1分あたりの呼吸数に換算します。そのようなピークが5つ以上見つかり、結果が毎分6〜30回の範囲にある場合にだけ値を表示し、それ以外は何も表示しません。ウィンドウが短く効果もわずかなため、これはおおよその推定です。"
+        },
+        {
+          "heading": "典型的な範囲",
           "bullets": [
             {
-              "label": "Shallow and Fast Breathing",
-              "text": "An alarm signal. When you breathe from the upper chest more than 16–20 times per minute, you are telling your body: \"We are in danger.\" This sustains high cortisol levels and keeps the brain in a state of constant vigilance."
+              "label": "毎分約12〜20回",
+              "text": "大人の通常の安静時の範囲です。"
             },
             {
-              "label": "Deep and Slow Breathing",
-              "text": "A safety signal. Reducing your frequency to 6–10 cycles per minute activates the Vagus Nerve. This instantly shifts the system into a mode of deep focus and emotional stability."
+              "label": "遅い（約6〜10回）",
+              "text": "意識したゆっくりした呼吸、瞑想、深い休息のときによく見られます。"
+            },
+            {
+              "label": "速い（安静時に約20回超）",
+              "text": "運動、不安、発熱、病気に伴うことがあります。安静時に速い呼吸が続く場合や息苦しさがある場合は、医師に相談する価値があります。"
             }
           ]
         },
         {
-          "heading": "Biological Feedback",
-          "body": "At ONDA, we track your breathing rate to identify moments of \"Screen Apnea\"—when you unconsciously hold your breath or breathe erratically while checking emails or performing complex tasks. These micro-pauses trigger a cascade of stress responses that you might not even notice."
+          "heading": "ゆっくりした呼吸が人気の理由",
+          "body": "毎分5〜7回程度でゆっくり、力を抜いて吐く息を長めに呼吸すると、呼吸に伴う心拍数の揺れが大きくなる傾向があり、落ち着いた感覚と関連しています。リスクが低く、よく研究された方法です。ふらつきを感じたら、普段の呼吸に戻してください。"
         },
         {
-          "heading": "The Art of Slowing Down",
-          "body": "Optimal breathing at rest is a rhythm that is almost invisible. The fewer cycles you need to saturate your blood with oxygen, the more efficiently your metabolic system is functioning. We teach you to \"under-breathe\"—making each breath rarer but higher in quality, turning every cycle into an act of restoration."
+          "heading": "より良く測るためのヒント",
+          "body": "手を支え、軽い圧で指を動かさずに当て、自然に呼吸して、少なくとも20〜30秒待ちましょう。話したり動いたりすると推定は当てになりません。"
         },
         {
-          "highlight": "Breathing is the only way to speak to your heart in its own language. By slowing the inhale, you dictate peace to your mind."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
+        },
+        {
+          "highlight": "ここでの呼吸数は、脈波信号のゆっくりした上下から推定したものです。おおよその値として扱ってください。"
         }
       ]
     },
     "bpm": {
-      "title": "BPM: The Rhythm of Your Internal Operating System",
-      "shortTitle": "❤️ BPM — Heart Rate",
+      "title": "BPM：心拍数とそれを変えるもの",
+      "shortTitle": "❤️ BPM — 心拍数",
       "sections": [
         {
-          "heading": "The Biological Metronome",
-          "body": "BPM (Beats Per Minute) is more than just the speed at which your heart pumps blood. Within the ONDA ecosystem, we view the pulse as the primary interface of your Autonomic Nervous System. It is a live graph of how your body allocates resources in response to the challenges of the outside world."
+          "heading": "心拍数とは",
+          "body": "心拍数は1分あたりの心拍の回数（bpm）です。運動、暑さ、ストレス、病気、カフェイン摂取後など、体がより多くの血流を必要とするときに上がり、休息や睡眠中に下がります。安静時心拍数は、時間をかけて記録すれば日常的に役立つ健康の目安になります。"
         },
         {
-          "heading": "A Symphony of Two States",
-          "body": "Your heart is constantly balancing between two \"conductors\":",
+          "heading": "このツールでの計算方法",
+          "body": "カメラに当てた指先は、脈拍ごとにわずかに色が変わります（光電式容積脈波、PPG）。ツールは赤チャンネルで各脈波のピークを検出し、ピーク間の時間（RR間隔）を測り、ありえない値を除いて、60,000をミリ秒単位の平均間隔で割って心拍数を求めます。40〜180 bpmの範囲外の結果は破棄します。このツールは、指先の動画（毎秒約30フレーム）を直近15秒のスライディングウィンドウで処理し、各脈波のピークを検出して、400〜1,500 msの範囲内かつ中央値から22%以内の拍間（RR）間隔だけを使います。表示される数値は、急に変わらないよう平滑化されます。"
+        },
+        {
+          "heading": "典型的な範囲",
           "bullets": [
             {
-              "label": "Sympathetic Drive",
-              "text": "When your pulse rises, your body enters a high-performance or defensive mode. This is mobilization — essential for a sprint, but toxic when sustained."
+              "label": "約60〜100 bpm",
+              "text": "大人の安静時の正常範囲としてよく挙げられる値です。健康な人、特に運動習慣のある人の多くはこれより低くなります。"
             },
             {
-              "label": "Parasympathetic Calm",
-              "text": "A low heart rate is a signal of safety. In this state, the body initiates tissue regeneration, memory consolidation, and deep recovery."
+              "label": "60 bpm未満",
+              "text": "体力のある人や深い休息中にはよくあることです。めまい、失神、いつにない疲れを伴う場合は医師に相談してください。"
+            },
+            {
+              "label": "安静時に100 bpm超",
+              "text": "カフェイン、ストレス、脱水、病気のあとに起こることがあります。安静時に高いままの場合や、胸の痛みや息苦しさを伴う場合は、医療機関に相談してください。"
             }
           ]
         },
         {
-          "heading": "Why Do We Track the Numbers?",
-          "body": "Your resting heart rate is your baseline biological cost of living.",
+          "heading": "カメラ測定の精度は？",
+          "body": "明るい場所でじっとしていれば、カメラによる心拍数はたいてい基準機器に近い値になりますが、動き、冷たい指、強い押し付け、暗い照明では信頼性が下がります。教育目的の推定であり、医学的な測定ではありません。"
+        },
+        {
+          "heading": "実践のヒント",
           "bullets": [
             {
-              "label": "High BPM while seated",
-              "text": "You are wasting energy. Your body is \"running a marathon\" while you are simply answering emails. This is a direct path to cognitive burnout."
+              "label": "安静時心拍数を一定の条件で測る",
+              "text": "たとえば起床後、コーヒーの前に、1分ほど静かに座ってから測りましょう。"
             },
             {
-              "label": "Optimal BPM",
-              "text": "This is the \"silent cruise\" mode — where the system operates at maximum efficiency, leaving a massive reserve for unexpected tasks."
+              "label": "ゆっくりした呼吸",
+              "text": "吐く息を長くして数分ゆっくり呼吸すると、心拍数が少し下がることがよくあります。"
+            },
+            {
+              "label": "長期的な習慣",
+              "text": "定期的な有酸素運動、良い睡眠、控えめな飲酒は、数週間かけて安静時心拍数を下げる傾向があります。"
             }
           ]
         },
         {
-          "heading": "A Tool for Calibration",
-          "body": "BPM in the ONDA app is a mirror. By noticing an abnormal spike in your pulse, you gain the opportunity to intervene consciously. We don't just measure beats; we teach you to master them. A short breathing session or a shift in focus can instantly \"drop\" your pulse, switching your brain from survival mode to creative flow."
+          "body": "ONDAアプリは別の製品です。脈拍と呼吸、そしてApple Watchがあればコヒーレンスに焦点を当てています。このページの計算式は使っていません。"
         },
         {
-          "highlight": "A high pulse is expensive. A low pulse is intentional. Manage the rhythm to manage your life."
+          "highlight": "心拍数は、毎回同じ方法で測って傾向を見ると、最も多くのことがわかります。"
         }
       ]
     }

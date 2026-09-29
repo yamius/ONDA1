@@ -5,7 +5,7 @@
     "ondaPrinciple": "The ONDA Principle",
     "back": "← Back to Bio OS",
     "ctaReady": "Ready to measure?",
-    "ctaSubtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "ctaSubtitle": "De ONDA-app werkt met je iPhone-camera, Apple Watch en Apple Health.",
     "appStoreSup": "Download on the",
     "appStoreLabel": "App Store",
     "appStoreAria": "Download ONDA Life on App Store",
@@ -26,673 +26,781 @@
       "errorGeneric": "Something went wrong. Please try again later.",
       "close": "Close"
     },
-    "measurementDisclaimer": "Estimated from a single camera (PPG) reading — an educational estimate, not a medical measurement. State labels (Flow, Focus, Alarm…) are rough, experimental patterns, not emotion detection."
+    "measurementDisclaimer": "Geschat uit één camerameting (PPG) — een educatieve schatting, geen medische meting. Toestandslabels (Flow, Focus, Alarm…) zijn ruwe, experimentele patronen, geen emotieherkenning."
   },
   "metrics": {
     "flow": {
-      "title": "Flow: The State of Biological Resonance",
+      "title": "Flow: een experimentele mix van focus en ontspanning",
       "shortTitle": "🌊 Flow",
       "sections": [
         {
-          "heading": "The Point of Optimum",
-          "body": "Flow is the holy grail of performance. At ONDA, we estimate a flow-like pattern when the signal suggests synchronization: high attentional focus while maintaining profound internal calm. It is the moment when you are entirely absorbed in a task, yet your body isn't paying an excessive price for it."
+          "heading": "Wat dit getal is",
+          "body": "Flow is hier een experimentele index die probeert een combinatie te vangen die mensen vaak beschrijven bij geconcentreerd werk: aandacht die vast blijft terwijl het lichaam redelijk rustig blijft. De browsertool kan je aandacht of je gedachten niet lezen. Hij combineert alleen twee andere indexen, Focus en Ontspanning, die zelf uit je hartslag en de onregelmatigheid van je slag-tot-slag-intervallen komen."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Flow = 0,6 × Focus + 0,4 × Ontspanning, begrensd op 0–100%. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen. Omdat Focus en Ontspanning allebei stijgen als je hartslag gematigd is en je ritme gelijkmatig (lage CSI), stijgt Flow in dezelfde situaties."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0–25% · Disconnected",
-              "text": "The conditions for flow are absent — either the Alarm index is elevated, energy is low, or focus is scattered. Attempting deep work here is fighting the biology."
+              "label": "Hoger",
+              "text": "Je polsslag was gematigd en je slagintervallen waren tijdens de meting vrij gelijk. Dat kan samengaan met rustige, betrokken aandacht, maar het kan ook gewoon betekenen dat je stil zat met een schoon signaal."
             },
             {
-              "label": "25–50% · Approaching",
-              "text": "The system is warming up toward coherence. Focus is beginning to establish itself, stress is declining. A short breathing exercise or a clear intention can push you into the zone."
-            },
-            {
-              "label": "50–75% · In the Zone",
-              "text": "Your signal looks consistent with a flow-like pattern: moderate HR, stable rhythm, low alarm. You are fully capable of sustained, high-quality work with minimal cognitive friction."
-            },
-            {
-              "label": "75–100% · Deep Resonance",
-              "text": "Rare and optimal. All three conditions are perfectly aligned — activation, stability, silence. This is the state where hours feel like minutes and output far exceeds effort. Protect it."
+              "label": "Lager",
+              "text": "De hartslag was hoger, het ritme leek onregelmatiger, of allebei. Bewegen, wisselende vingerdruk en slecht licht drukken de waarde ook, omdat ze ruis aan het camerasignaal toevoegen."
             }
           ]
         },
         {
-          "heading": "The Formula of Flow",
-          "body": "Unlike an ordinary working state, Flow in ONDA has a distinct biometric signature:",
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. De psychologische toestand die \"flow\" heet, wordt onderzocht met vragenlijsten en taakprestaties, en er is geen geaccepteerde manier om die te herkennen uit een vingertopmeting van 15 seconden."
+        },
+        {
+          "heading": "Wat echt helpt",
           "bullets": [
             {
-              "label": "Moderate Activation",
-              "text": "Your heart rate is slightly above your resting baseline. This provides the brain with the necessary drive and resources without crossing into the alarm stage."
+              "label": "Minder onderbrekingen",
+              "text": "Zet meldingen uit en kies één taak. Vaak wisselen is een betrouwbare manier om je concentratie te breken."
             },
             {
-              "label": "Rhythmic Stability",
-              "text": "Your heart operates like a finely tuned machine — without jerks or chaos. This allows you to hold focus for hours without feeling mental friction."
+              "label": "Rustig ademen voor diep werk",
+              "text": "Een paar minuten rustig, ontspannen ademen verlaagt de hartslag vaak iets en maakt het ritme gelijkmatiger."
             },
             {
-              "label": "Absence of Noise",
-              "text": "The Alarm index is at zero. You are engaged but not overwhelmed. You aren't fighting the task; you are merging with it."
+              "label": "Slaap en pauzes",
+              "text": "Aandacht is makkelijker vast te houden als je uitgerust bent; korte pauzes ongeveer elk uur helpen ook."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "The Flow state is the most efficient form of existence. Here, you produce maximum results with minimum attrition. ONDA helps you do more than just \"stumble\" into this state; it helps you understand which conditions (breathing, time of day, prep level) lead to it. We teach you to find your \"zone,\" where the challenge perfectly meets your skill."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "Flow is not luck; it is a biophysical skill. Tune your rhythm, remove the excess noise, and the world around you will vanish, leaving only you and your craft."
+          "highlight": "Gebruik Flow uit nieuwsgierigheid, niet als score om na te jagen: de waarde stijgt als je polsslag gematigd is en je ritme gelijkmatig."
         }
       ]
     },
     "fatigue": {
-      "title": "Fatigue: The Physiological Tax on Effort",
-      "shortTitle": "🪫 Fatigue",
+      "title": "Vermoeidheid: een experimentele index uit Energie en Stress",
+      "shortTitle": "🪫 Vermoeidheid",
       "sections": [
         {
-          "heading": "The Cost of Movement",
-          "body": "Fatigue in ONDA is more than just a desire to sleep. It is a rough estimate of the \"biological cost\" of your recent efforts. This estimate rises when your energy reserves look depleted and your stress levels remain chronically elevated. It is a signal that your system has shifted from efficient operation to a state of attrition."
+          "heading": "Wat dit getal is",
+          "body": "Vermoeidheid op deze pagina is een experimentele index. Het is geen meting van slaperigheid, spiervermoeidheid of overtraining. De waarde wordt berekend uit twee andere indexen in de tool, Energie en Stress, en stijgt dus als je hartslag boven ongeveer 75 bpm ligt en je slag-tot-slag-ritme onregelmatig lijkt."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Vermoeidheid = 60 × (1 − Energie/100) + 0,2 × Stress, begrensd op 0–100%. Energie daalt naarmate de hartslag boven 75 bpm uitkomt en CSI (de onregelmatigheid van je slagintervallen) stijgt; Stress is CSI × 130. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0–20% · Recovered",
-              "text": "Energy reserves are intact, stress is low, HRV is healthy. Your system is operating from a position of abundance — ready for high demands."
+              "label": "Hoger",
+              "text": "Je polsslag was verhoogd en/of je slagintervallen varieerden sterk ten opzichte van hun gemiddelde. Moe zijn kan dat veroorzaken, maar ook koffie, net de trap op lopen, praten of een ruisig camerasignaal."
             },
             {
-              "label": "20–45% · Accumulated Load",
-              "text": "Normal end-of-day wear. Manageable with standard recovery: sleep, nutrition, a pause. Performance is slightly reduced but not yet compromised."
-            },
-            {
-              "label": "45–70% · Depletion Zone",
-              "text": "Energy deficit is significant. HRV is dropping, resting HR is creeping up, recovery after micro-stressors is slow. Continuing to push here increases error rate and burnout risk."
-            },
-            {
-              "label": "70–100% · Biological Red Alert",
-              "text": "The system is in attrition mode. Any attempt to \"push through\" yields diminishing returns at an accelerating cost. The only productive action is structured rest — sleep, stillness, or deep parasympathetic recovery."
+              "label": "Lager",
+              "text": "De hartslag was gematigd en het ritme leek tijdens de meting gelijkmatig."
             }
           ]
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your body reports fatigue through three distinct biometric markers:",
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. Echte beoordeling van vermoeidheid kijkt meestal naar trends over dagen (rusthartslag, HRV die elke ochtend op dezelfde manier gemeten wordt, slaap), niet naar één korte meting."
+        },
+        {
+          "heading": "Wat echt helpt",
           "bullets": [
             {
-              "label": "Reduced HRV",
-              "text": "The heart loses its adaptability and fluidity, becoming \"rigid\" and monotonic."
+              "label": "Regelmatige slaap",
+              "text": "Vaste bedtijden en opstatijden zijn een van de betrouwbaarste manieren om je minder uitgeput te voelen."
             },
             {
-              "label": "Elevated Resting HR",
-              "text": "Even while seated, your heart beats faster than usual, struggling to compensate for the deficit in internal resources."
+              "label": "Volg trends, geen momenten",
+              "text": "Wil je je herstel volgen, meet dan elke dag op hetzelfde tijdstip, stilzittend, en kijk naar de week in plaats van naar één getal."
             },
             {
-              "label": "Slow Recovery",
-              "text": "Your ability to return to baseline after any micro-stressor (even a simple phone call) drops significantly."
+              "label": "Rustig bewegen en pauzes",
+              "text": "Een korte wandeling of een paar minuten rustig ademen kan je helpen opnieuw te beginnen op een lange dag."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Fatigue is insidious because we often get used to it and stop noticing its weight. ONDA makes this invisible burden visible. A high Fatigue index is not a failure; it is a command to shift gears. This is the time when any attempt to \"push through\" will yield diminishing returns, increasing the risk of burnout and errors."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "Fatigue is your body's way of protecting its assets. Respect this signal. Sometimes, the most productive thing you can do is get a full night's sleep or an hour of silence."
+          "highlight": "Een hoge vermoeidheidswaarde is een aanleiding om de basis te checken (slaap, cafeïne, recente activiteit), geen diagnose."
         }
       ]
     },
     "excitement": {
-      "title": "Excitement: The Energy of Anticipation",
-      "shortTitle": "✨ Excitement",
+      "title": "Opwinding: een experimentele index voor activatie",
+      "shortTitle": "✨ Opwinding",
       "sections": [
         {
-          "heading": "Positive Drive",
-          "body": "Excitement is the state of \"bright\" mobilization within your system. Much like anxiety, it involves a rise in heart rate and breathing frequency, but with a critical distinction: in ONDA, this index only climbs when your stress scores remain within a healthy range. We read this pattern as readiness for play, creativity, or a significant event rather than a threat response."
+          "heading": "Wat dit getal is",
+          "body": "Opwinding is hier een experimentele index voor algemene fysiologische activatie. De waarde stijgt met een hartslag boven 60 bpm en, een beetje, met de ademfrequentie. De index kan positieve opwinding niet onderscheiden van nervositeit, lichamelijke inspanning of cafeïne, omdat het lichaam die allemaal laat zien met een snellere polsslag."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Opwinding = 1,5 × (hartslag − 60) + 0,5 × ademfrequentie, begrensd op 0–100%. De hartslag is 60.000 gedeeld door het gemiddelde RR-interval; de ademfrequentie wordt geschat uit trage veranderingen in het polssignaal en telt als 0 als de tool geen duidelijk ritme vindt. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0–20% · Neutral",
-              "text": "No positive arousal detected. The system is in a resting or low-activation state. Useful for recovery, but not for performance or creative output."
+              "label": "Hoger",
+              "text": "Je hartslag lag duidelijk boven 60 bpm. Bij 80 bpm en 15 ademhalingen per minuut is de index bijvoorbeeld ongeveer 38%; bij 100 bpm ongeveer 68%."
             },
             {
-              "label": "20–50% · Mild Charge",
-              "text": "A gentle energizing — the body is warming up with motivation and light anticipation. Ideal for starting tasks that require sustained engagement."
-            },
-            {
-              "label": "50–75% · Drive",
-              "text": "Clear positive mobilization with stable rhythm. HR is elevated but stress is contained. This is the optimal zone for high-performance work, sport, or creative flow."
-            },
-            {
-              "label": "75–100% · Full Surge",
-              "text": "Peak eustress. The system is fully primed. This state is rare and time-limited — use it strategically. It transitions into anxiety if stress scores begin to rise alongside."
+              "label": "Lager",
+              "text": "Je polsslag lag dicht bij 60 bpm of lager. Veel ontspannen, fitte volwassenen zitten daar in rust."
             }
           ]
         },
         {
-          "heading": "The Biology of Joy",
-          "body": "In a state of Excitement, your body prepares for action, but it does so efficiently:",
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. In de praktijk is deze index grotendeels een herschaalde hartslag, dus gelden dezelfde kanttekeningen als bij de hartslag zelf."
+        },
+        {
+          "heading": "Wat echt helpt",
           "bullets": [
             {
-              "label": "Productive Surge",
-              "text": "Your heart beats faster to saturate your muscles and brain with oxygen, yet the rhythm remains stable and confident."
+              "label": "Benoem de oorzaak",
+              "text": "Is het getal hoog, vraag je dan af wat er net gebeurde: bewegen, koffie, een stressvol bericht of spanning vooraf. De reactie van het lichaam is in elk geval vergelijkbaar."
             },
             {
-              "label": "Eustress",
-              "text": "This is \"positive stress\" — the kind that doesn't drain your reserves but instead makes you feel alive and engaged."
-            },
-            {
-              "label": "Lack of Constraint",
-              "text": "Unlike anxiety, there is no \"tunnel vision\" here. You maintain a broad perspective and a high capacity for creativity."
+              "label": "Lang uitademen om te kalmeren",
+              "text": "Wil je tot rust komen, dan verlagen een paar ademhalingen met een langere uitademing dan inademing de hartslag meestal binnen een minuut of twee."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "We help you recalibrate your internal signals. Often, people mistake excitement for anxiety and try to suppress it. ONDA can hint at the difference: your heart rate is high, but your rhythm looks stable — a sign you may be charged rather than afraid. This insight allows you to use the energy of excitement as fuel for achievement rather than a reason for worry."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "Excitement is energy directed outward. Embrace the surge; it is a sign that your system is primed for greatness."
+          "highlight": "Opwinding is in feite \"hoe ver je polsslag nu boven 60 bpm ligt\", uitgedrukt als percentage."
         }
       ]
     },
     "focus": {
-      "title": "Focus / Concentration: The Physiology of Immersion",
-      "shortTitle": "🎯 Focus / Concentration",
+      "title": "Focus / concentratie: een experimentele index",
+      "shortTitle": "🎯 Focus / concentratie",
       "sections": [
         {
-          "heading": "The Flow State",
-          "body": "Focus / Concentration is not an act of will, but a result of harmony within your system. At ONDA, this index is calculated as the balance between your energy levels and the absence of internal noise (stress). It’s our proxy for a focus-like state — when your energy is sufficient and internal noise (stress) stays low, so attention comes more easily."
+          "heading": "Wat dit getal is",
+          "body": "Focus is hier een experimentele index. De index meet geen aandacht, en een camera op je vingertop kan niet weten waar je aan denkt. Hij middelt twee andere indexen in de tool, Energie en omgekeerde Stress, en is dus het hoogst als je hartslag gematigd is (op of onder ongeveer 75 bpm) en je slag-tot-slag-ritme gelijkmatig."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Focus = 0,5 × Energie + 0,5 × (100 − Stress), begrensd op 0–100%. Energie = 90 − 1,5 × (hartslag boven 75 bpm) − 80 × CSI; Stress = 130 × CSI, waarbij CSI de standaardafwijking van je RR-intervallen gedeeld door hun gemiddelde is. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0–25% · Scattered",
-              "text": "High internal noise or low energy. Sustained attention is biologically inaccessible in this state. Tasks will demand disproportionate effort with poor output quality."
+              "label": "Hoger",
+              "text": "Gematigde polsslag en gelijke slagintervallen tijdens de meting. Dat kan samengaan met rustig, gestaag werk, maar iemand die ontspannen niets zit te doen scoort hetzelfde."
             },
             {
-              "label": "25–50% · Warming Up",
-              "text": "The system is partially available for focus. Surface-level tasks are possible, but deep cognitive work will be fragmented. A short breathing reset can shift you into the next zone."
-            },
-            {
-              "label": "50–75% · Engaged",
-              "text": "Energy is sufficient, stress is moderate. You are capable of sustained concentration. This is the standard working zone for most productive individuals."
-            },
-            {
-              "label": "75–100% · Deep Focus",
-              "text": "Optimal state. Prefrontal cortex is fully in control, amygdala is quiet, rhythm is stable. This pattern often accompanies flow — where effort fades and performance feels easy."
+              "label": "Lager",
+              "text": "Een snellere polsslag, een onregelmatiger ritme of een ruisig signaal door vingerbewegingen."
             }
           ]
         },
         {
-          "heading": "The Architecture of Attention",
-          "body": "In ONDA, peak concentration occurs when three conditions are met:",
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. Hartsignalen veranderen in laboratoriumstudies wel met concentratie, maar niet op een manier waardoor een korte camerameting je kan vertellen hoe geconcentreerd je bent."
+        },
+        {
+          "heading": "Wat echt helpt",
           "bullets": [
             {
-              "label": "Moderate Heart Rate",
-              "text": "Your heart isn't racing, but it isn't \"sleeping\" either. This is the zone of optimal activation, where the brain receives just enough resources for complex tasks."
+              "label": "Eén taak tegelijk",
+              "text": "Stel een duidelijk doel voor de komende 25–50 minuten en haal voor de hand liggende afleiding weg."
             },
             {
-              "label": "Stable Rhythm",
-              "text": "The absence of sharp spikes (low CSI) means your nervous system isn't being distracted by internal interference."
+              "label": "Eerst het lichaam kalmeren",
+              "text": "Een paar minuten rustig ademen voor veeleisend werk kan de activatie verlagen als je opgefokt bent."
             },
             {
-              "label": "Low Stress",
-              "text": "Your amygdala is calm, allowing the prefrontal cortex to maintain total control over your attentional focus."
+              "label": "Rust",
+              "text": "Slaap, voldoende drinken en regelmatige pauzes doen meer voor je concentratie dan welk getal ook."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "We often mistake \"busyness\" for \"productivity.\" The Focus index reveals the difference. You may be very busy, but if your concentration score is low, you are spending three times more energy on the same task. ONDA helps you notice moments that look like \"Restful Alertness\" — attentive yet physiologically calm."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "Focus isn't about what you do; it's about the state you're in. Create silence within your rhythm, and attention will follow naturally."
+          "highlight": "Focus stijgt als je polsslag gematigd is en je ritme gelijkmatig. Het is een hint over je lichaam, geen lezing van je gedachten."
         }
       ]
     },
     "relaxation": {
-      "title": "Relaxation / Calmness: The State of Deep Stillness",
-      "shortTitle": "🌿 Relaxation / Calmness",
+      "title": "Ontspanning / rust: een experimentele index",
+      "shortTitle": "🌿 Ontspanning / rust",
       "sections": [
         {
-          "heading": "The Art of Presence",
-          "body": "Relaxation / Calmness is not merely the absence of stress; it is an active state of physiological wellbeing. At ONDA, this index is calculated as the inverse of chaos (CSI) combined with your energy reserve. It estimates how settled your rhythm looks — low cardiac noise alongside energy reserve — a proxy for readiness for high-quality rest or deep creativity."
+          "heading": "Wat dit getal is",
+          "body": "Ontspanning is hier een experimentele index die stijgt als je slag-tot-slag-ritme gelijkmatig lijkt en je Energie-index hoog is (wat in deze tool vooral betekent dat je hartslag niet boven ongeveer 75 bpm ligt). Het is geen meting van hoe rustig je je voelt en geen gevalideerde ontspanningsscore."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Ontspanning = 60 × (1 − min(1, 1,5 × CSI)) + 0,2 × Energie, begrensd op 0–100%. CSI is de standaardafwijking van je RR-intervallen gedeeld door hun gemiddelde. Let op: de ademfrequentie zit niet in deze formule, ook al helpt rustig ademen vaak wel om te ontspannen. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0–25% · Surface Tension",
-              "text": "The system is still carrying biological noise — elevated CSI, shallow breathing, or low energy reserve. True rest is not yet accessible. Intervention (slow breathing, stillness) is needed."
+              "label": "Hoger",
+              "text": "Je RR-intervallen varieerden weinig ten opzichte van hun gemiddelde en je polsslag was gematigd. Stilzitten met een schoon signaal verhoogt de waarde."
             },
             {
-              "label": "25–50% · Settling",
-              "text": "The nervous system is beginning to downshift. Rhythm is stabilizing. This is the transitional zone — the body is on its way to calm but has not arrived yet."
-            },
-            {
-              "label": "50–75% · Active Calm",
-              "text": "Low biological noise, steady breath, sufficient energy headroom. You are in Restful Alertness — fully present and open, without the undertone of vigilance."
-            },
-            {
-              "label": "75–100% · Deep Stillness",
-              "text": "Optimal state for regeneration, creativity, and deep focus. Tissue repair accelerates, immune activity peaks, and the brain shifts into consolidation and insight mode."
+              "label": "Lager",
+              "text": "Het ritme leek onregelmatiger (hogere CSI) of je polsslag was sneller. Vingerbewegingen voegen ook onregelmatigheid toe en verlagen de score."
             }
           ]
         },
         {
-          "heading": "The Signature of \"Restful Alertness\"",
-          "body": "A high Calmness score is the result of three synchronized factors:",
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. Een eigenaardigheid: in de echte fysiologie laat een ontspannen lichaam vaak juist méér slag-tot-slag-variatie zien die met de ademhaling samenhangt, terwijl deze index minder variatie beloont. Nog een reden om hem alleen als ruwe hint te zien."
+        },
+        {
+          "heading": "Wat echt helpt",
           "bullets": [
             {
-              "label": "Rhythmic Purity",
-              "text": "Your heart beats with minimal unjustified fluctuations (low CSI)."
+              "label": "Rustig ademen",
+              "text": "Langzaam ademen, ongeveer 5–7 ademhalingen per minuut met een ontspannen, langere uitademing, is voor de meeste mensen een goed onderzochte manier om het lichaam te kalmeren."
             },
             {
-              "label": "Stable Breathing",
-              "text": "A slow, steady rhythm of inhales and exhales that nourishes the brain without overtaxing the system."
+              "label": "Houding en stilte",
+              "text": "Zit comfortabel, laat je schouders zakken en laat je hand rusten, zodat je vinger op de lens blijft zonder hard te drukken."
             },
             {
-              "label": "Biological Headroom",
-              "text": "Your heart has ample \"cardiovascular headroom\" (Energy Reserve), allowing you to remain relaxed even as your environment shifts."
+              "label": "Een paar rustige minuten",
+              "text": "De hartslag komt meestal in een paar minuten rust tot bedaren, niet in seconden."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "The Calmness state is the mode where your body shifts from survival to thriving. It is in this zone that maximum tissue regeneration, immune strengthening, and neural \"rewiring\" occur. We track this metric so you can learn not just to relax, but to achieve Restful Alertness — a state where you are profoundly calm yet entirely present and attentive."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "Relaxation is not weakness; it is the ultimate form of efficiency. The higher your Calmness index, the less effort it takes to remain yourself."
+          "highlight": "Ontspanning weerspiegelt hier vooral een gematigde polsslag en een gelijkmatig ogend ritme. Hoe je je voelt, telt meer dan het getal."
         }
       ]
     },
     "alarm": {
-      "title": "Alarm / Anxiety: Your System's Code Red",
-      "shortTitle": "🚨 Alarm / Anxiety",
+      "title": "Alarm / angst: een experimentele index",
+      "shortTitle": "🚨 Alarm / angst",
       "sections": [
         {
-          "heading": "The Invisible Threat Detector",
-          "body": "Alarm / Anxiety is a composite index within ONDA that analyzes the synergy between your heart rate and your breathing. We look for a specific pattern: a simultaneous rise in HR and an increased respiratory rate. This is a pattern often linked to the \"Fight-or-Flight\" response. The index flags when that pattern appears — a cue to check in with yourself, not a diagnosis."
+          "heading": "Wat dit getal is",
+          "body": "Alarm is hier een experimentele index op basis van onregelmatigheid van het ritme en ademfrequentie. Het is geen angsttest en de index kan geen angst of zorgen herkennen. De waarde stijgt als je slag-tot-slag-intervallen onregelmatig lijken ten opzichte van hun gemiddelde (hoge CSI) en als je geschatte ademfrequentie boven 15 ademhalingen per minuut ligt."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Alarm = 0,7 × Stress + 3 × (ademfrequentie − 15, als die boven 15 ligt), begrensd op 0–100%. Stress = 130 × CSI. De hartslag zelf zit niet in deze formule. De ademfrequentie wordt geschat uit trage schommelingen in het polssignaal en telt als 0 als er geen duidelijk ritme wordt gevonden. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0–20% · Baseline Calm",
-              "text": "No alarm signals detected. HR and breathing are in a balanced, low-arousal state. Your nervous system is fully in parasympathetic mode."
+              "label": "Hoger",
+              "text": "De slagintervallen varieerden sterk ten opzichte van hun gemiddelde en/of de ademhaling werd boven 15 per minuut geschat. Praten, je vinger bewegen, koude vingers of weinig licht kunnen de waarde net zo goed verhogen als een stressvol moment."
             },
             {
-              "label": "20–50% · Mild Activation",
-              "text": "Low-level arousal — normal during focused work or light activity. The body is alert but not mobilized. Manageable without intervention."
-            },
-            {
-              "label": "50–75% · Elevated Alarm",
-              "text": "Clear fight-or-flight pattern emerging. HR is rising alongside breathing rate. This is the zone of unnoticed chronic stress — you may feel \"fine,\" but your biology disagrees."
-            },
-            {
-              "label": "75–100% · Acute Mobilization",
-              "text": "Full sympathetic surge. The amygdala has taken control. Cortisol and adrenaline are spiking. Immediate intervention — a deep exhale, a pause, breath-hold reset — is highly effective here."
+              "label": "Lager",
+              "text": "Het ritme leek gelijkmatig en de ademhaling werd op 15 per minuut of langzamer geschat."
             }
           ]
         },
         {
-          "heading": "The Psychosomatic Echo",
-          "body": "High values in this index indicate that your body is in a state of acute mobilization:",
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. Voel je je angstig of niet goed, vertrouw dan op dat gevoel in plaats van op dit getal en zoek passende hulp. Een lage score betekent niet dat alles goed is, en een hoge score betekent niet dat er iets mis is."
+        },
+        {
+          "heading": "Wat echt helpt",
           "bullets": [
             {
-              "label": "Biological Level",
-              "text": "Blood shifts from digestive organs to muscles, the brain receives a signal of external danger, and cortisol levels spike."
+              "label": "Langer uitademen",
+              "text": "Ongeveer 4 seconden in- en ongeveer 6 seconden uitademen is een eenvoudige manier om te vertragen als je gespannen bent."
             },
             {
-              "label": "Mental Level",
-              "text": "The prefrontal cortex (responsible for logic) gives way to the amygdala. You begin to experience restlessness, tunnel vision, or cognitive \"tightness.\""
+              "label": "Rustig opnieuw meten",
+              "text": "Ga zitten, leg je arm op een tafel, houd je vinger stil en meet na een minuut opnieuw. Veel hoge metingen zijn signaalruis."
+            },
+            {
+              "label": "Fysiologische zucht",
+              "text": "Twee korte inademingen door de neus gevolgd door een lange uitademing is nog een snelle, makkelijke manier om tot rust te komen."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Anxiety often masks itself as ordinary fatigue or high productivity. The Alarm index can hint at this: you might just be drinking coffee, yet your rhythm looks like the body is bracing for a threat. ONDA gives you the chance to spot this pattern early and use conscious breathing to \"cancel\" the alarm signal before it turns into a panic attack or total burnout."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "Your body cannot lie. If the Alarm index is rising, it's not a reason to panic — it's a reason for a deep exhale. Reclaim control through your body when your mind feels powerless."
+          "highlight": "Alarm reageert op een onregelmatig ogend ritme en snellere ademhaling. Controleer het signaal en je omgeving voordat je er iets in leest."
         }
       ]
     },
     "acceleration": {
-      "title": "HR Acceleration: The Intensity of Biological Response",
-      "shortTitle": "⚡ HR Acceleration",
+      "title": "HR-versnelling: gemiddelde verandering van slag tot slag",
+      "shortTitle": "⚡ HR-versnelling",
       "sections": [
         {
-          "heading": "Dynamics Beyond Speed",
-          "body": "HR Acceleration is the second derivative of your heart rhythm. While the Trend Slope shows the direction of your movement, Acceleration measures the intensity with which that movement gains momentum. It is a gauge of how sharply your system \"hits the gas\" or, conversely, how smoothly it begins to apply the brakes."
+          "heading": "Wat dit getal laat zien",
+          "body": "HR-versnelling is hier een klein getal dat beschrijft of je slag-tot-slag-intervallen in de laatste 15 seconden gemiddeld langer of korter werden van de ene slag naar de volgende. Ondanks de naam is het een eenvoudig gemiddelde van opeenvolgende verschillen, geen echte tweede afgeleide van de hartslag."
         },
         {
-          "heading": "Reading the Impulse",
-          "body": "Acceleration reveals the hidden dynamics of your adaptation:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "De tool neemt de verschillen tussen opeenvolgende RR-intervallen (in ms), middelt die (de eerste wordt overgeslagen) en deelt door 100. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "Positive Acceleration · The Surge",
-              "text": "Your heart rate is beginning to speed up faster than it was a second ago. This is a sign of an \"acute\" reaction—such as a sudden startle, a sharp thought about a deadline, or a physical burst. Your sympathetic system is firing at full capacity, mobilizing resources right here and right now."
+              "label": "Positief",
+              "text": "De RR-intervallen werden gemiddeld langer, dus de hartslag zakte tijdens het venster. Dat gebeurt vaak bij een langzame uitademing of als je tot rust komt."
             },
             {
-              "label": "Negative Acceleration · The Deceleration",
-              "text": "The rate of change in your heart rate is falling. Even if your heart is still beating fast, it has stopped accelerating. This is the first sign that the peak has passed and the system is beginning to stabilize. You are regaining control over the stress."
+              "label": "Negatief",
+              "text": "De RR-intervallen werden korter, dus de hartslag liep op, bijvoorbeeld bij een inademing, na bewegen of als je gespannen raakt."
+            },
+            {
+              "label": "Rond nul",
+              "text": "Geen duidelijke verschuiving. Dit is in rust de meest voorkomende waarde, omdat het natuurlijke versnellen en vertragen bij elke ademhaling elkaar opheft."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "HR Acceleration is a detector of your reactivity. Excessively sharp spikes in acceleration can indicate high anxiety or a low stress-tolerance threshold. ONDA tracks these \"jerks,\" helping you develop biological smoothness—the ability to enter high-performance states without the jarring and exhausting surges that drain your system."
+          "heading": "Waarom het zo springt",
+          "body": "Je hart versnelt van nature iets als je inademt en vertraagt als je uitademt (respiratoire sinusaritmie). In een venster van 15 seconden met maar twee of drie ademhalingen bepaalt het moment in de ademcyclus waarop het venster begint en eindigt deze waarde sterk. Timingfouten van de camera van een paar milliseconden per slag voegen nog meer ruis toe. Kleine waarden in beide richtingen lees je het best als \"geen betekenisvolle verandering\"."
         },
         {
-          "highlight": "Power is not in the surge, but in the smoothness of the transition. The fewer sharp accelerations in your rhythm, the more carefully you preserve your vital energy."
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is geen standaardmaat uit de kliniek of sportwetenschap, en er zijn geen vastgestelde normaalwaarden voor. De waarde wordt alleen getoond als snelle richtingsindicator, niet als medische of fitnessmeting."
+        },
+        {
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
+        },
+        {
+          "highlight": "Positief betekent dat de slagen verder uit elkaar kwamen (polsslag vertraagt); negatief dat ze dichter op elkaar kwamen (polsslag stijgt)."
         }
       ]
     },
     "slope": {
-      "title": "HR Trend Slope: The Vector of Biological Direction",
-      "shortTitle": "📈 HR Trend Slope",
+      "title": "HR-trendhelling: stijgt of daalt je polsslag?",
+      "shortTitle": "📈 HR-trendhelling",
       "sections": [
         {
-          "heading": "The Direction of Flow",
-          "body": "HR Trend Slope is a mathematical indicator of where your system is headed right now. We use linear regression to understand the overall trajectory of your heart rate throughout the measurement window. It's not just a number; it's a compass needle pointing toward your immediate physiological future."
+          "heading": "Wat dit getal laat zien",
+          "body": "De HR-trendhelling vertelt je of je hartslag in het huidige meetvenster opliep of zakte. Dat is handig om een verandering live te zien gebeuren, zoals je polsslag die tot rust komt als je langzaam ademt of die oploopt nadat je opstaat."
         },
         {
-          "heading": "Reading the Vector",
-          "body": "The direction of the slope speaks to the dynamics of your adaptation:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "De tool trekt een rechte lijn (lineaire regressie) door je RR-intervallen op volgorde, slag voor slag. Daarna wordt het teken omgedraaid en door 100 gedeeld, zodat een positieve waarde betekent dat de hartslag stijgt (intervallen worden korter) en een negatieve waarde dat de hartslag daalt (intervallen worden langer). De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "Negative Slope · Descending",
-              "text": "Your heart rate is gradually slowing down. This is the classic \"relaxation response.\" Your nervous system is successfully dampening arousal and shifting into recovery mode. This is the ideal scenario for meditation or winding down after work."
+              "label": "Positief",
+              "text": "Je polsslag liep tijdens het venster op: bijvoorbeeld na bewegen, praten, opstaan of bij spanning."
             },
             {
-              "label": "Positive Slope · Ascending",
-              "text": "Your heart rate is accelerating. This signals rising emotional or physical arousal. Your body is preparing for action or reacting to a stressor that emerged during the session."
+              "label": "Negatief",
+              "text": "Je polsslag liep terug: gebruikelijk als je gaat zitten, ontspant of langzaam ademt met langere uitademingen."
             },
             {
-              "label": "Zero Slope · Plateau",
-              "text": "A steady state. Your system is in equilibrium, maintaining its current level of activation without sharp fluctuations."
+              "label": "Rond nul",
+              "text": "De hartslag was ongeveer vlak. In stabiele rust is dat wat je mag verwachten."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Trend Slope allows you to see the inertia of your nervous system. If you are trying to relax but the trend remains positive, it means your \"braking system\" hasn't kicked in yet. This metric helps you understand how effectively your chosen practice (breathing, music, a pause) is actually shifting your biological course."
+          "heading": "Waarom het ruisig kan zijn",
+          "body": "Binnen 15 seconden stijgt en daalt je hartslag van nature met elke ademhaling, dus de lijn kan de ene of de andere kant op hellen puur door waar het venster begint. De slagtiming via de camera heeft ook kleine fouten. Let op een consistent teken gedurende een halve minuut of langer in plaats van te reageren op één waarde."
         },
         {
-          "highlight": "It's not about where you are, but which way you're moving. A negative trend is your ticket to a state of deep restoration."
+          "heading": "Een eenvoudig experiment",
+          "body": "Zit stil, laat de meting stabiliseren en adem dan een minuut lang langzaam: ongeveer 4 seconden in en 6 seconden uit. Veel mensen zien de helling richting negatieve waarden gaan terwijl hun polsslag zakt. Sta daarna op en zie hoe hij positief wordt doordat de hartslag kort stijgt."
+        },
+        {
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een realtime trendindicator voor deze browsertool. Er is geen standaard normaalbereik en het is geen medische meting."
+        },
+        {
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
+        },
+        {
+          "highlight": "Positief betekent dat je polsslag oploopt; negatief dat hij rustiger wordt."
         }
       ]
     },
     "recovery": {
-      "title": "Recovery Rate: The Index of Returning to Self",
-      "shortTitle": "🔄 Recovery Rate %",
+      "title": "Herstelsnelheid: hoe ver je polsslag terug is van de piek",
+      "shortTitle": "🔄 Herstelsnelheid %",
       "sections": [
         {
-          "heading": "The Art of the Finish",
-          "body": "Recovery Rate is a measure of how effectively your heart can \"downshift\" after exertion. At ONDA, we calculate how quickly your heart rate returns from its peak during the current session to your baseline average. It is a measurement of your ability to exit a state of arousal and return to your center of gravity."
+          "heading": "Wat dit getal laat zien",
+          "body": "Herstelsnelheid is in deze tool een meting binnen het venster. Ze kijkt naar de hoogste hartslag in de laatste 15 seconden en bepaalt hoe ver de laatste slag van die piek is teruggekomen richting het gemiddelde van het venster. Het is niet hetzelfde als de klinische \"hartslagherstel\"-test, die meet hoeveel slagen per minuut je polsslag daalt in de eerste minuut na zware inspanning."
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "In the wild, survival belongs not to the one who runs the fastest, but to the one who calms down the quickest after the chase. In the modern world, it works the same way:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Voor elke slag zet de tool het RR-interval om in slagen per minuut. Als de piek minstens 2 bpm boven het venstergemiddelde ligt, is Herstel = (piek − laatste slag) ÷ (piek − gemiddelde) × 100, begrensd op 0–100%. Was er geen duidelijke piek, dan is de waarde 0. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0% · Stuck",
-              "text": "Your heart rate is frozen at its peak. Your body continues to \"fight shadows\" even after the external trigger is gone. This is a sign of nervous system rigidity and accumulated fatigue."
+              "label": "Rond 100%",
+              "text": "De laatste slag zit weer op (of onder) je gemiddelde voor het venster, dus een korte piek is voorbij."
             },
             {
-              "label": "100% · Full Calm",
-              "text": "Your heart has completely returned to its baseline or even lower. This is the gold standard of biological flexibility."
+              "label": "Rond 50%",
+              "text": "Je polsslag is ongeveer halverwege terug van zijn recente piek."
+            },
+            {
+              "label": "Rond 0%",
+              "text": "Je polsslag zit nog op zijn piek, of er was helemaal geen merkbare piek (een stabiele meting toont ook 0). Kijk naar de andere getallen om die twee uit elkaar te houden."
             }
           ]
         },
         {
-          "heading": "The Biological Echo",
-          "body": "Your recovery speed depends directly on the tone of your Vagus Nerve. A high Recovery Rate means your \"parasympathetic brake\" is functioning perfectly. This allows you to switch between tasks without carrying the stress of the previous moment into the next."
+          "heading": "Waarom het zo beweegt",
+          "body": "De hartslag stijgt van nature bij elke inademing en daalt bij elke uitademing, dus de \"piek\" is vaak gewoon het hoogste punt van een ademcyclus en de waarde kan van slag tot slag schommelen. Eén valse of gemiste slag van de camera kan ook een kunstmatige piek opleveren."
         },
         {
-          "highlight": "It's not the height of the peak that matters, but the speed of the descent. True power lies in the ability to quickly return to a state of equilibrium."
+          "heading": "Herstel in bredere zin",
+          "body": "Over uren en dagen beoordeel je herstel beter aan de hand van trends: rusthartslag in de ochtend, HRV die elke dag op dezelfde manier gemeten wordt, slaap en hoe je je voelt. Na inspanning is een snellere daling van de hartslag in de eerste minuut over het algemeen een teken van goede conditie."
+        },
+        {
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een ruwe, experimentele indicator van deze browsertool, geen medische of trainingsmaat."
+        },
+        {
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
+        },
+        {
+          "highlight": "Hoog betekent dat je polsslag na een recente piek weer bij zijn gemiddelde zit; 0% kan ook gewoon betekenen dat er geen piek was."
         }
       ]
     },
     "csi": {
-      "title": "CSI: Cardiac Stability Index",
+      "title": "CSI: Cardiac Stability Index (RR-variatie ten opzichte van het gemiddelde)",
       "shortTitle": "🎯 Cardiac Stability Index (CSI)",
       "sections": [
         {
-          "heading": "The Architecture of Rhythm",
-          "body": "CSI (Cardiac Stability Index) is a unique coefficient that allows ONDA to look deeper than a regular pulse. We take the standard deviation of your heart cycles and divide it by the mean heart rate. This allows us to measure the pure consistency of your heart, independent of how fast it happens to be beating at the moment."
+          "heading": "Wat dit getal laat zien",
+          "body": "CSI is in deze tool de variatiecoëfficiënt van je slag-tot-slag-intervallen: hoeveel de intervallen variëren vergeleken met hun gemiddelde lengte. Omdat er gedeeld wordt door het gemiddelde interval, kun je de gelijkmatigheid van het ritme bij verschillende hartslagen vergelijken. Lager betekent dat de intervallen meer op elkaar leken; hoger betekent meer variatie."
         },
         {
-          "heading": "Stability vs. Chaos",
-          "body": "CSI is the detector of \"biological noise\" within your system:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "CSI = standaardafwijking van de RR-intervallen ÷ gemiddeld RR-interval. Als je intervallen bijvoorbeeld gemiddeld 800 ms zijn met een standaardafwijking van 40 ms, is CSI 0,05. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Waarom camerawaarden hoog lijken",
+          "body": "Met een telefooncamera is de slagtiming maar tot op een paar milliseconden nauwkeurig en worden sommige pieken verkeerd geplaatst, dus de gemeten spreiding is groter dan de echte. In de praktijk zijn waarden rond 0,3 gebruikelijk op deze pagina; lagere waarden betekenen een schoner, stabieler signaal.",
           "bullets": [
             {
-              "label": "0.03 – 0.10 · Diamond Stability",
-              "text": "Your heart is operating with the precision of a Swiss watch. This is a state of deep physiological confidence. The system wastes no resources on unnecessary fluctuations, operating in a mode of maximum economy and focus."
+              "label": "Lager (ruim onder 0,3)",
+              "text": "De intervallen waren vrij gelijk en het signaal was schoon."
             },
             {
-              "label": "0.11 – 0.24 · Dynamic Balance",
-              "text": "The natural rhythm of a living organism. Your heart fluidly adjusts to external stimuli while maintaining its overall structural integrity."
+              "label": "Rond 0,3",
+              "text": "Een gebruikelijke cameragemeten waarde."
             },
             {
-              "label": "0.25+ · Biological Noise",
-              "text": "A signal of instability. High CSI often indicates \"glitches\" in nerve impulse transmission, extreme fatigue, or measurement noise. This is a state where the system is losing control over its rhythm."
+              "label": "Duidelijk hoger",
+              "text": "De intervallen varieerden sterk: vaak door bewegen, te hard drukken, koude vingers of slecht licht; soms door echt onregelmatige slagen."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "CSI is the foundation upon which your Stress % is built. While HRV tells us about your flexibility, CSI informs us about your structural reliability. A low CSI is a sign that your internal \"operating system\" is running without errors in the code."
+          "heading": "CSI en hartslagvariabiliteit",
+          "body": "Wat variatie tussen slagen is gezond: het hart versnelt iets bij elke inademing en vertraagt bij elke uitademing, en mensen met een goede conditie laten daar in rust vaak meer van zien. Lager is fysiologisch dus niet automatisch \"beter\". In deze tool is CSI echter vooral een controle op hoe stabiel en schoon de meting was, en de waarde voedt de indexen Stress (130 × CSI), Energie, Ontspanning en Alarm."
         },
         {
-          "highlight": "True power lies in stability. The less noise in your rhythm, the more clarity in your mind."
+          "heading": "Gezondheidsnoot",
+          "body": "Merk je een aanhoudend onregelmatige polsslag, hartkloppingen, duizeligheid of kortademigheid, ga dan naar een arts. Een browsercamerameting kan ritmestoornissen zoals boezemfibrilleren niet opsporen of uitsluiten."
+        },
+        {
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
+        },
+        {
+          "highlight": "CSI is de spreiding van je slagintervallen gedeeld door hun gemiddelde; gebruikelijke camerawaarden liggen rond 0,3."
         }
       ]
     },
     "hrv": {
-      "title": "HRV: The Index of Your Biological Agility",
+      "title": "HRV (RMSSD): wat de variatie van slag tot slag je vertelt",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
-          "heading": "The Internal Microscope",
-          "body": "HRV (Heart Rate Variability) is the most sophisticated and informative metric in the ONDA arsenal. Unlike heart rate, which simply counts beats, HRV measures the microscopic fluctuations in time between those beats in milliseconds. We use the RMSSD algorithm to assess how fluidly your heart responds to every movement, thought, or breath."
+          "heading": "Wat HRV is",
+          "body": "Hartslagvariabiliteit (HRV) is de natuurlijke variatie in de tijd tussen hartslagen. Een gezond hart tikt niet als een metronoom: intervallen worden langer en korter met de ademhaling, houding en activiteit van het zenuwstelsel. RMSSD, de wortel van het gemiddelde van de gekwadrateerde opeenvolgende verschillen, is een van de meest gebruikte HRV-maten en weerspiegelt vooral parasympathische (vagale) activiteit, de \"rust en verteer\"-kant van het zenuwstelsel."
         },
         {
-          "heading": "A Mirror of the Vagus Nerve",
-          "body": "HRV is a direct status report on your Vagus Nerve activity:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "De tool neemt elk paar opeenvolgende RR-intervallen, kwadrateert hun verschil, middelt die kwadraten en neemt de wortel, wat een waarde in milliseconden oplevert. Waarden boven 100 ms worden op 100 begrensd. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Gebruikelijke waarden en wat ze beïnvloedt",
+          "body": "De RMSSD in rust verschilt sterk tussen gezonde volwassenen, vaak ruwweg 20–80 ms, en is meestal hoger bij jongere en fittere mensen en lager met de leeftijd. Hij daalt meestal na slecht slapen, alcohol, ziekte, zware training of acute stress, en stijgt bij goed herstel. De verschillen tussen mensen zijn groot, dus je eigen trend telt meer dan de vergelijking met anderen.",
           "bullets": [
             {
-              "label": "High HRV (40–70 ms and above)",
-              "text": "Your heart adapts instantly to changes. This is a sign of a powerful parasympathetic response. You are in a state of high biological resilience: calm, focused, and ready for action."
+              "label": "Hoger dan normaal voor jou",
+              "text": "Vaak te zien als je uitgerust en ontspannen bent."
             },
             {
-              "label": "Low HRV (below 20–25 ms)",
-              "text": "Your autonomic nervous system is \"locked.\" Your heart is beating too metrically, like a robot. This is a signal that your recovery resources are drained, and the system is operating at the edge of its adaptive capacity."
+              "label": "Lager dan normaal voor jou",
+              "text": "Gebruikelijk bij vermoeidheid, stress, alcohol, ziekte of een late, zware maaltijd."
             }
           ]
         },
         {
-          "heading": "Why It Matters More Than Pulse",
-          "body": "Two people can have the exact same heart rate, but entirely different health profiles. The difference lies in HRV. High variability means your \"internal OS\" is constantly scanning the environment and micro-adjusting your rhythm. Low variability is a sign of biological fragility."
+          "heading": "Waarom camerametingen ruw zijn",
+          "body": "RMSSD hangt af van timing op milliseconden. Een telefooncamera met ongeveer 30 beelden per seconde, een vingertop die iets verschuift en een venster van maar 15 seconden voegen allemaal fouten toe, waardoor de waarde meestal te hoog uitvalt. Standaard kortdurende HRV-metingen gebruiken minstens een paar minuten ECG of een borstband. Zie het getal hier als ruwe schatting en vergelijk alleen metingen die op dezelfde manier zijn gedaan."
         },
         {
-          "heading": "Training with ONDA",
-          "body": "HRV is dynamic. It drops due to alcohol, lack of sleep, or overtraining, but it can be \"strengthened.\" By using the breathing protocols in ONDA, you are essentially exercising your Vagus Nerve, raising your baseline HRV and, consequently, your resilience to life's storms."
+          "heading": "Praktische tips",
+          "bullets": [
+            {
+              "label": "Meet consequent",
+              "text": "Meet voor trends op hetzelfde tijdstip (bijvoorbeeld na het wakker worden), stilzittend en normaal ademend."
+            },
+            {
+              "label": "Rustig ademen",
+              "text": "Langzaam ademen met ongeveer 6 ademhalingen per minuut verhoogt meestal de variatie van slag tot slag zolang je het doet."
+            },
+            {
+              "label": "Eerst de basis",
+              "text": "Regelmatige slaap, beperkt alcoholgebruik en duursport hangen op termijn samen met een hogere HRV in rust."
+            }
+          ]
         },
         {
-          "highlight": "High HRV is your ability to bend without breaking. It is the measure of your life force, expressed in milliseconds."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
+        },
+        {
+          "highlight": "RMSSD weerspiegelt vagale activiteit; de cameraversie hier is een ruwe schatting, het nuttigst in vergelijking met je eigen metingen."
         }
       ]
     },
     "energy": {
-      "title": "Energy %: Your Biological Power Reserve",
-      "shortTitle": "🔋 Energy %",
+      "title": "Energie %: een experimentele index uit hartslag en ritme",
+      "shortTitle": "🔋 Energie %",
       "sections": [
         {
-          "heading": "Your Internal Battery",
-          "body": "At ONDA, Energy % is not a subjective feeling of alertness; it is a rough estimate of your cardiovascular reserve. It is a mathematical ratio of how far your heart rate is from its elevated ceiling and how stable your cardiac rhythm is at this very second. The higher the score, the more physiological capacity your body has to handle new tasks."
+          "heading": "Wat dit getal is",
+          "body": "Energie is hier een experimentele index, geen meting van hoe energiek je je voelt, van je conditie of een \"batterij\". De waarde begint op 90% en daalt als je hartslag boven 75 bpm ligt en als je slag-tot-slag-ritme onregelmatig is ten opzichte van het gemiddelde (CSI)."
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your Energy score inevitably drops under the influence of three factors:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Energie = 90 − 1,5 × (hartslag − 75, als die boven 75 ligt) − 80 × CSI, begrensd op 10–100%. Bij 70 bpm met een gebruikelijke camera-CSI van 0,3 is Energie bijvoorbeeld ongeveer 66%; bij 95 bpm met dezelfde CSI ongeveer 36%. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "Accumulated Fatigue",
-              "text": "When the system fails to recover sufficiently during sleep."
+              "label": "Hoger",
+              "text": "Je polsslag lag op of onder ongeveer 75 bpm en het ritme leek gelijkmatig."
             },
             {
-              "label": "High BPM",
-              "text": "Running at \"high RPMs\" quickly burns through available fuel."
-            },
-            {
-              "label": "Prolonged Stress",
-              "text": "Constant turbulence in your rhythm (low stability) forces the heart to spend more resources just to maintain basic functions."
+              "label": "Lager",
+              "text": "Een snellere polsslag (koffie, bewegen, warmte, stress, ziekte) en/of een onregelmatig ogend ritme, wat vaak gewoon een ruisig signaal is."
             }
           ]
         },
         {
-          "heading": "What the Numbers Tell You",
-          "body": "",
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. Door de formule kan Energie niet boven 90% komen en wordt een rusthartslag onder 75 bpm niet verder beloond."
+        },
+        {
+          "heading": "Wat echt helpt",
           "bullets": [
             {
-              "label": "80–100% · Full Charge",
-              "text": "Your system is in a state of abundance. You are ready for intense cognitive loads, demanding workouts, and strategic decision-making."
+              "label": "Slaap",
+              "text": "Voldoende, regelmatige slaap is de sterkste hefboom voor energie overdag."
             },
             {
-              "label": "40–70% · Operating Range",
-              "text": "Reserves are beginning to dwindle. It's time to pace yourself. Your efficiency is still high, but the \"price\" of each subsequent effort is rising."
+              "label": "Bewegen en daglicht",
+              "text": "Een korte wandeling, vooral buiten in de ochtend, helpt vaak meer dan extra cafeïne."
             },
             {
-              "label": "Below 30% · Critical Low",
-              "text": "You are operating \"on credit.\" In this state, your body perceives any new event as a threat. The brain enters a strict power-saving mode, dialing down creativity and empathy."
+              "label": "Korte resets",
+              "text": "Een paar minuten rustig ademen kan een jagende polsslag verlagen en je rustiger laten voelen."
             }
           ]
         },
         {
-          "heading": "The Art of Recharging",
-          "body": "Energy % is our most dynamic metric. It can plummet after a difficult conversation and surge after 10 minutes of deep meditation or a short walk. ONDA helps you see these fluctuations in real-time, turning energy management from guesswork into an exact science."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "Don't wait for the tank to hit empty. A high Energy Score is your insurance against mistakes. If the score is in the red zone, any work will be counterproductive. Charge the system first, then act."
+          "highlight": "Energie daalt hier bij een polsslag boven 75 bpm en een onregelmatig ogend ritme. Het is een ruwe hint, geen brandstofmeter."
         }
       ]
     },
     "stress": {
-      "title": "Stress %: The Biological Turbulence Index",
+      "title": "Stress %: een experimentele index uit onregelmatigheid van het ritme",
       "shortTitle": "⚡ Stress %",
       "sections": [
         {
-          "heading": "Beyond Emotions",
-          "body": "At ONDA, Stress % is not a psychological state; it is a rough index of irregularity in your cardiac rhythm. This score is derived from the Cardiac Stability Index. We don't just analyze your pulse; we examine the micro-deviations in the rhythm of every single beat. The higher the irregularity and \"noise\" in these intervals, the higher your biological stress score."
+          "heading": "Wat dit getal is",
+          "body": "Stress op deze pagina is een experimentele index. Het is gewoon de Cardiac Stability Index (CSI), de variatie van je slag-tot-slag-intervallen ten opzichte van hun gemiddelde, omgerekend naar een percentage. De index meet geen stresshormonen, emoties of hoe gestrest je je voelt, en is geen gevalideerde stressscore."
         },
         {
-          "heading": "What Does Your Score Mean?",
-          "body": "Stress is the \"spending\" of your life force. We've categorized it into three zones:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Stress = 130 × CSI, begrensd op 0–100%. Een gebruikelijke camera-CSI van ongeveer 0,3 geeft zo’n 40%. Hartslag en ademfrequentie zitten niet in deze formule. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Hoe je het leest",
           "bullets": [
             {
-              "label": "0 – 30% · The Flow Zone",
-              "text": "Your system is in a state of coherence. Your heart is working rhythmically and efficiently. This is the ideal time for complex decision-making and deep work."
+              "label": "Hoger",
+              "text": "Je slagintervallen varieerden meer ten opzichte van hun gemiddelde. Dat kan samengaan met spanning, maar de meest voorkomende oorzaak bij een telefooncamera is signaalruis: je vinger bewegen, te hard drukken, koude handen of zwak licht."
             },
             {
-              "label": "30 – 60% · The Adaptive Zone",
-              "text": "You are under a load. This is a normal state during an active day, but if you remain here for too long, your cognitive resources begin to drain."
-            },
-            {
-              "label": "60%+ · The Burnout Zone",
-              "text": "Acute physiological stress. Your nervous system is overwhelmed. In this state, the brain dials down the prefrontal cortex (logic) and shifts control to the amygdala (fear and impulsivity)."
+              "label": "Lager",
+              "text": "De intervallen waren gelijker en het signaal was schoner."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "The most dangerous stress is the kind you don't feel. You might be sitting in silence, yet your Stress % shows 70%. This means an invisible struggle is happening inside: lack of sleep, hidden inflammation, or information overload. ONDA makes the invisible visible, allowing you to hit pause before exhaustion sets in."
+          "heading": "Belangrijke beperkingen",
+          "body": "Dit is een experimentele vuistregel, gebouwd op een paar camerawaarden. Het is geen gevalideerde fysiologische meting, geen emotieherkenning en geen medische test. Zie het als een ruwe hint over de richting waarin je signaal beweegt, niet als een oordeel over hoe je je voelt. In de echte fysiologie verlaagt acute stress de kortetermijn-hartslagvariabiliteit meestal eerder dan dat die stijgt, dus een hogere onregelmatigheidsscore is geen betrouwbaar stressteken. Heeft stress invloed op je dagelijks leven, dan heb je meer aan een gesprek met een professional dan aan welke meting ook."
         },
         {
-          "highlight": "Stress isn't what happens to you; it's how your body spends its resources in response. A high percentage is a signal to re-evaluate your priorities in this very moment."
+          "heading": "Wat echt helpt",
+          "bullets": [
+            {
+              "label": "Rustig ademen met een langere uitademing",
+              "text": "Een paar minuten langzaam ademen is een van de eenvoudigste manieren om het lichaam te kalmeren."
+            },
+            {
+              "label": "Betere metingen",
+              "text": "Leg je onderarm op een tafel, bedek de camera licht en houd 30 seconden of langer stil voordat je naar het getal kijkt."
+            },
+            {
+              "label": "Dagelijkse gewoonten",
+              "text": "Slaap, regelmatig bewegen, tijd buiten en sociaal contact helpen allemaal tegen stress op lange termijn."
+            }
+          ]
+        },
+        {
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
+        },
+        {
+          "highlight": "Stress is hier 130 × CSI: een ruwe hint over onregelmatigheid van het ritme, sterk beïnvloed door de signaalkwaliteit."
         }
       ]
     },
     "br": {
-      "title": "Breathing Rate: The Bridge Between Worlds",
-      "shortTitle": "🌬️ /min — Breathing Rate",
+      "title": "Ademfrequentie: wat je ademhalingen per minuut betekenen",
+      "shortTitle": "🌬️ /min — Ademfrequentie",
       "sections": [
         {
-          "heading": "The Only Manual Override",
-          "body": "Breathing Rate is a unique biometric parameter. Unlike your heartbeat or digestion, breathing is the only function of the Autonomic Nervous System that you can control directly. It is your \"remote control\" for your internal state."
+          "heading": "Wat ademfrequentie is",
+          "body": "De ademfrequentie is het aantal ademhalingen per minuut. Het is een van de basale vitale functies, en ook de functie die je het makkelijkst bewust kunt veranderen. Daarom wordt rustig ademen in veel ontspanningsmethoden gebruikt."
         },
         {
-          "heading": "The Rhythm of Calm vs. The Rhythm of Survival",
-          "body": "Your breathing frequency is a live broadcast of how your brain perceives its environment:",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Ademen verandert de sterkte van elke polsgolf in je vingertop een beetje. De tool vlakt de grootte van het polssignaal af over ongeveer 5 seconden, zoekt de pieken van die trage golf (minstens 2 seconden uit elkaar), neemt de mediane tijd daartussen en zet die om in ademhalingen per minuut. De tool toont alleen een waarde als hij minstens vijf van zulke pieken vindt en de uitkomst tussen 6 en 30 ademhalingen per minuut ligt; anders toont hij niets. Omdat het venster kort is en het effect subtiel, is dit een benaderende schatting."
+        },
+        {
+          "heading": "Gebruikelijke waarden",
           "bullets": [
             {
-              "label": "Shallow and Fast Breathing",
-              "text": "An alarm signal. When you breathe from the upper chest more than 16–20 times per minute, you are telling your body: \"We are in danger.\" This sustains high cortisol levels and keeps the brain in a state of constant vigilance."
+              "label": "Ongeveer 12–20 per minuut",
+              "text": "Het gebruikelijke rustbereik voor volwassenen."
             },
             {
-              "label": "Deep and Slow Breathing",
-              "text": "A safety signal. Reducing your frequency to 6–10 cycles per minute activates the Vagus Nerve. This instantly shifts the system into a mode of deep focus and emotional stability."
+              "label": "Langzamer (ongeveer 6–10)",
+              "text": "Gebruikelijk bij bewust langzaam ademen, meditatie of diepe rust."
+            },
+            {
+              "label": "Sneller (boven ongeveer 20 in rust)",
+              "text": "Kan samengaan met inspanning, angst, koorts of ziekte. Aanhoudend snel ademen in rust, of kortademigheid, is het waard om door een arts te laten nakijken."
             }
           ]
         },
         {
-          "heading": "Biological Feedback",
-          "body": "At ONDA, we track your breathing rate to identify moments of \"Screen Apnea\"—when you unconsciously hold your breath or breathe erratically while checking emails or performing complex tasks. These micro-pauses trigger a cascade of stress responses that you might not even notice."
+          "heading": "Waarom rustig ademen populair is",
+          "body": "Langzaam ademen, vaak rond 5–7 ademhalingen per minuut met een ontspannen, langere uitademing, vergroot meestal de hartslagschommelingen die bij elke ademhaling horen en gaat samen met je rustiger voelen. Het is een goed onderzochte techniek met weinig risico. Word je licht in je hoofd, ga dan terug naar normaal ademen."
         },
         {
-          "heading": "The Art of Slowing Down",
-          "body": "Optimal breathing at rest is a rhythm that is almost invisible. The fewer cycles you need to saturate your blood with oxygen, the more efficiently your metabolic system is functioning. We teach you to \"under-breathe\"—making each breath rarer but higher in quality, turning every cycle into an act of restoration."
+          "heading": "Tips voor een betere meting",
+          "body": "Laat je hand rusten, houd je vinger stil met lichte druk, adem normaal en geef de tool minstens 20–30 seconden. Praten of bewegen maakt de schatting onbetrouwbaar."
         },
         {
-          "highlight": "Breathing is the only way to speak to your heart in its own language. By slowing the inhale, you dictate peace to your mind."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
+        },
+        {
+          "highlight": "De ademfrequentie wordt hier geschat uit het trage stijgen en dalen van je polssignaal; zie haar als benadering."
         }
       ]
     },
     "bpm": {
-      "title": "BPM: The Rhythm of Your Internal Operating System",
-      "shortTitle": "❤️ BPM — Heart Rate",
+      "title": "BPM: je hartslag en wat die verandert",
+      "shortTitle": "❤️ BPM — Hartslag",
       "sections": [
         {
-          "heading": "The Biological Metronome",
-          "body": "BPM (Beats Per Minute) is more than just the speed at which your heart pumps blood. Within the ONDA ecosystem, we view the pulse as the primary interface of your Autonomic Nervous System. It is a live graph of how your body allocates resources in response to the challenges of the outside world."
+          "heading": "Wat hartslag is",
+          "body": "Hartslag is het aantal hartslagen per minuut (bpm). Hij stijgt als je lichaam meer doorbloeding nodig heeft, bijvoorbeeld bij bewegen, warmte, stress, ziekte of na cafeïne, en daalt in rust en tijdens de slaap. De rusthartslag is een nuttige dagelijkse gezondheidsmarker als je hem over tijd volgt."
         },
         {
-          "heading": "A Symphony of Two States",
-          "body": "Your heart is constantly balancing between two \"conductors\":",
+          "heading": "Hoe deze tool het berekent",
+          "body": "Je vingertop op de camera verandert bij elke polsslag een beetje van kleur (fotoplethysmografie, PPG). De tool vindt elke polspiek in het rode kanaal, meet de tijd tussen de pieken (RR-intervallen), laat onwaarschijnlijke weg en berekent de hartslag als 60.000 gedeeld door het gemiddelde interval in milliseconden. Uitkomsten buiten 40–180 bpm worden verworpen. De tool werkt met een doorlopend venster van 15 seconden vingertopvideo (ongeveer 30 beelden per seconde), vindt elke polspiek, houdt alleen slag-tot-slag-intervallen (RR) tussen 400 en 1.500 ms over die binnen 22% van de mediaan liggen, en vlakt de getoonde getallen af zodat ze geleidelijk veranderen."
+        },
+        {
+          "heading": "Gebruikelijke waarden",
           "bullets": [
             {
-              "label": "Sympathetic Drive",
-              "text": "When your pulse rises, your body enters a high-performance or defensive mode. This is mobilization — essential for a sprint, but toxic when sustained."
+              "label": "Ongeveer 60–100 bpm",
+              "text": "Het vaak genoemde normale rustbereik voor volwassenen. Veel gezonde mensen, vooral actieve, zitten in rust lager."
             },
             {
-              "label": "Parasympathetic Calm",
-              "text": "A low heart rate is a signal of safety. In this state, the body initiates tissue regeneration, memory consolidation, and deep recovery."
+              "label": "Onder 60 bpm",
+              "text": "Vaak normaal bij fitte mensen en in diepe rust; ga naar een arts als het samengaat met duizeligheid, flauwvallen of ongewone vermoeidheid."
+            },
+            {
+              "label": "Boven 100 bpm in rust",
+              "text": "Kan volgen op cafeïne, stress, uitdroging of ziekte. Blijft hij in rust hoog of gaat hij samen met pijn op de borst of kortademigheid, vraag dan medisch advies."
             }
           ]
         },
         {
-          "heading": "Why Do We Track the Numbers?",
-          "body": "Your resting heart rate is your baseline biological cost of living.",
+          "heading": "Hoe nauwkeurig is een camerameting?",
+          "body": "Een hartslag via de camera ligt meestal dicht bij een referentieapparaat als je stilhoudt in goed licht, maar is minder betrouwbaar bij bewegen, koude vingers, hard drukken of weinig licht. Het is een educatieve schatting, geen medische meting."
+        },
+        {
+          "heading": "Praktische tips",
           "bullets": [
             {
-              "label": "High BPM while seated",
-              "text": "You are wasting energy. Your body is \"running a marathon\" while you are simply answering emails. This is a direct path to cognitive burnout."
+              "label": "Meet je rusthartslag consequent",
+              "text": "Bijvoorbeeld een minuut rustig zittend na het wakker worden, voor de koffie."
             },
             {
-              "label": "Optimal BPM",
-              "text": "This is the \"silent cruise\" mode — where the system operates at maximum efficiency, leaving a massive reserve for unexpected tasks."
+              "label": "Rustig ademen",
+              "text": "Een paar minuten langzaam ademen met een langere uitademing verlaagt de hartslag vaak iets."
+            },
+            {
+              "label": "Gewoonten op lange termijn",
+              "text": "Regelmatige duursport, goede slaap en beperkt alcoholgebruik verlagen de rusthartslag meestal in de loop van weken."
             }
           ]
         },
         {
-          "heading": "A Tool for Calibration",
-          "body": "BPM in the ONDA app is a mirror. By noticing an abnormal spike in your pulse, you gain the opportunity to intervene consciously. We don't just measure beats; we teach you to master them. A short breathing session or a shift in focus can instantly \"drop\" your pulse, switching your brain from survival mode to creative flow."
+          "body": "De ONDA-app is een apart product: die richt zich op polsslag, ademhaling en, met een Apple Watch, coherentie. De app gebruikt de formules op deze pagina niet."
         },
         {
-          "highlight": "A high pulse is expensive. A low pulse is intentional. Manage the rhythm to manage your life."
+          "highlight": "Van je hartslag leer je het meest als je hem elke keer op dezelfde manier meet en naar de trend kijkt."
         }
       ]
     }

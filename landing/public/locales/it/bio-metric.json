@@ -5,7 +5,7 @@
     "ondaPrinciple": "The ONDA Principle",
     "back": "← Back to Bio OS",
     "ctaReady": "Ready to measure?",
-    "ctaSubtitle": "Connect a Bluetooth tracker for continuous precise biofeedback.",
+    "ctaSubtitle": "L'app ONDA funziona con la fotocamera dell'iPhone, Apple Watch e Apple Health.",
     "appStoreSup": "Download on the",
     "appStoreLabel": "App Store",
     "appStoreAria": "Download ONDA Life on App Store",
@@ -26,673 +26,781 @@
       "errorGeneric": "Something went wrong. Please try again later.",
       "close": "Close"
     },
-    "measurementDisclaimer": "Estimated from a single camera (PPG) reading — an educational estimate, not a medical measurement. State labels (Flow, Focus, Alarm…) are rough, experimental patterns, not emotion detection."
+    "measurementDisclaimer": "Stima da una singola lettura con la fotocamera (PPG): una stima educativa, non una misura medica. Le etichette di stato (Flow, Concentrazione, Allarme…) sono schemi approssimativi e sperimentali, non rilevamento delle emozioni."
   },
   "metrics": {
     "flow": {
-      "title": "Flow: The State of Biological Resonance",
+      "title": "Flow: una combinazione sperimentale di Concentrazione e Rilassamento",
       "shortTitle": "🌊 Flow",
       "sections": [
         {
-          "heading": "The Point of Optimum",
-          "body": "Flow is the holy grail of performance. At ONDA, we estimate a flow-like pattern when the signal suggests synchronization: high attentional focus while maintaining profound internal calm. It is the moment when you are entirely absorbed in a task, yet your body isn't paying an excessive price for it."
+          "heading": "Cos'è questo numero",
+          "body": "Qui il Flow è un indice sperimentale che cerca di cogliere una combinazione spesso descritta durante il lavoro assorbente: un'attenzione che resta stabile mentre il corpo rimane abbastanza calmo. Lo strumento nel browser non può leggere la tua attenzione né la tua mente. Si limita a combinare due dei suoi altri indici, Concentrazione e Rilassamento, che a loro volta derivano dalla frequenza cardiaca e dall'irregolarità degli intervalli tra un battito e l'altro."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Flow = 0,6 × Concentrazione + 0,4 × Rilassamento, limitato a 0–100%. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente. Poiché Concentrazione e Rilassamento salgono entrambi quando la frequenza cardiaca è moderata e il ritmo è regolare (CSI basso), il Flow sale nelle stesse situazioni."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0–25% · Disconnected",
-              "text": "The conditions for flow are absent — either the Alarm index is elevated, energy is low, or focus is scattered. Attempting deep work here is fighting the biology."
+              "label": "Più alto",
+              "text": "Durante la lettura il polso era moderato e gli intervalli tra i battiti piuttosto regolari. Può accompagnare un'attenzione calma e coinvolta, ma può anche significare semplicemente che sei rimasto fermo con un segnale pulito."
             },
             {
-              "label": "25–50% · Approaching",
-              "text": "The system is warming up toward coherence. Focus is beginning to establish itself, stress is declining. A short breathing exercise or a clear intention can push you into the zone."
-            },
-            {
-              "label": "50–75% · In the Zone",
-              "text": "Your signal looks consistent with a flow-like pattern: moderate HR, stable rhythm, low alarm. You are fully capable of sustained, high-quality work with minimal cognitive friction."
-            },
-            {
-              "label": "75–100% · Deep Resonance",
-              "text": "Rare and optimal. All three conditions are perfectly aligned — activation, stability, silence. This is the state where hours feel like minutes and output far exceeds effort. Protect it."
+              "label": "Più basso",
+              "text": "La frequenza cardiaca era più alta, il ritmo sembrava più irregolare, o entrambe le cose. Anche movimento, variazioni di pressione del dito e luce scarsa lo abbassano, perché aggiungono rumore al segnale della fotocamera."
             }
           ]
         },
         {
-          "heading": "The Formula of Flow",
-          "body": "Unlike an ordinary working state, Flow in ONDA has a distinct biometric signature:",
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. Lo stato psicologico chiamato \"flow\" si studia con questionari e prestazioni nei compiti, e non esiste un modo riconosciuto per rilevarlo da una lettura di 15 secondi sul polpastrello."
+        },
+        {
+          "heading": "Cosa aiuta davvero",
           "bullets": [
             {
-              "label": "Moderate Activation",
-              "text": "Your heart rate is slightly above your resting baseline. This provides the brain with the necessary drive and resources without crossing into the alarm stage."
+              "label": "Riduci le interruzioni",
+              "text": "Chiudi le notifiche e scegli un solo compito. Passare spesso da una cosa all'altra è un modo sicuro per perdere la concentrazione."
             },
             {
-              "label": "Rhythmic Stability",
-              "text": "Your heart operates like a finely tuned machine — without jerks or chaos. This allows you to hold focus for hours without feeling mental friction."
+              "label": "Respirazione lenta prima del lavoro profondo",
+              "text": "Qualche minuto di respirazione lenta e rilassata spesso abbassa un po' la frequenza cardiaca e rende il ritmo più regolare."
             },
             {
-              "label": "Absence of Noise",
-              "text": "The Alarm index is at zero. You are engaged but not overwhelmed. You aren't fighting the task; you are merging with it."
+              "label": "Sonno e pause",
+              "text": "L'attenzione si mantiene più facilmente quando sei riposato; aiutano anche brevi pause circa ogni ora."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "The Flow state is the most efficient form of existence. Here, you produce maximum results with minimum attrition. ONDA helps you do more than just \"stumble\" into this state; it helps you understand which conditions (breathing, time of day, prep level) lead to it. We teach you to find your \"zone,\" where the challenge perfectly meets your skill."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "Flow is not luck; it is a biophysical skill. Tune your rhythm, remove the excess noise, and the world around you will vanish, leaving only you and your craft."
+          "highlight": "Usa il Flow come curiosità, non come punteggio da inseguire: sale quando il polso è moderato e il ritmo è regolare."
         }
       ]
     },
     "fatigue": {
-      "title": "Fatigue: The Physiological Tax on Effort",
-      "shortTitle": "🪫 Fatigue",
+      "title": "Affaticamento: un indice sperimentale da Energia e Stress",
+      "shortTitle": "🪫 Affaticamento",
       "sections": [
         {
-          "heading": "The Cost of Movement",
-          "body": "Fatigue in ONDA is more than just a desire to sleep. It is a rough estimate of the \"biological cost\" of your recent efforts. This estimate rises when your energy reserves look depleted and your stress levels remain chronically elevated. It is a signal that your system has shifted from efficient operation to a state of attrition."
+          "heading": "Cos'è questo numero",
+          "body": "In questa pagina l'Affaticamento è un indice sperimentale. Non misura la sonnolenza, la fatica muscolare o il sovrallenamento. Si calcola da altri due indici dello strumento, Energia e Stress, quindi sale quando la frequenza cardiaca supera circa 75 bpm e quando il ritmo battito-battito sembra irregolare."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Affaticamento = 60 × (1 − Energia/100) + 0,2 × Stress, limitato a 0–100%. L'Energia scende quando la frequenza cardiaca sale oltre 75 bpm e quando aumenta il CSI (l'irregolarità degli intervalli tra i battiti); lo Stress è CSI × 130. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0–20% · Recovered",
-              "text": "Energy reserves are intact, stress is low, HRV is healthy. Your system is operating from a position of abundance — ready for high demands."
+              "label": "Più alto",
+              "text": "Il polso era elevato e/o gli intervalli tra i battiti variavano molto rispetto alla loro media. Può succedere quando sei stanco, ma anche dopo un caffè, dopo aver fatto le scale, mentre parli o con un segnale della fotocamera rumoroso."
             },
             {
-              "label": "20–45% · Accumulated Load",
-              "text": "Normal end-of-day wear. Manageable with standard recovery: sleep, nutrition, a pause. Performance is slightly reduced but not yet compromised."
-            },
-            {
-              "label": "45–70% · Depletion Zone",
-              "text": "Energy deficit is significant. HRV is dropping, resting HR is creeping up, recovery after micro-stressors is slow. Continuing to push here increases error rate and burnout risk."
-            },
-            {
-              "label": "70–100% · Biological Red Alert",
-              "text": "The system is in attrition mode. Any attempt to \"push through\" yields diminishing returns at an accelerating cost. The only productive action is structured rest — sleep, stillness, or deep parasympathetic recovery."
+              "label": "Più basso",
+              "text": "Durante la lettura la frequenza cardiaca era moderata e il ritmo sembrava regolare."
             }
           ]
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your body reports fatigue through three distinct biometric markers:",
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. Una vera valutazione della stanchezza di solito guarda gli andamenti su più giorni (frequenza cardiaca a riposo, HRV misurata ogni mattina nello stesso modo, sonno), non una singola lettura breve."
+        },
+        {
+          "heading": "Cosa aiuta davvero",
           "bullets": [
             {
-              "label": "Reduced HRV",
-              "text": "The heart loses its adaptability and fluidity, becoming \"rigid\" and monotonic."
+              "label": "Sonno regolare",
+              "text": "Orari regolari per andare a letto e svegliarsi sono uno dei modi più affidabili per sentirsi meno esausti."
             },
             {
-              "label": "Elevated Resting HR",
-              "text": "Even while seated, your heart beats faster than usual, struggling to compensate for the deficit in internal resources."
+              "label": "Segui gli andamenti, non i singoli momenti",
+              "text": "Se vuoi monitorare il recupero, misura ogni giorno alla stessa ora, seduto e fermo, e guarda la settimana anziché un singolo numero."
             },
             {
-              "label": "Slow Recovery",
-              "text": "Your ability to return to baseline after any micro-stressor (even a simple phone call) drops significantly."
+              "label": "Movimento leggero e pause",
+              "text": "Una breve passeggiata o qualche minuto di respirazione lenta possono aiutarti a ricaricarti durante una giornata lunga."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Fatigue is insidious because we often get used to it and stop noticing its weight. ONDA makes this invisible burden visible. A high Fatigue index is not a failure; it is a command to shift gears. This is the time when any attempt to \"push through\" will yield diminishing returns, increasing the risk of burnout and errors."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "Fatigue is your body's way of protecting its assets. Respect this signal. Sometimes, the most productive thing you can do is get a full night's sleep or an hour of silence."
+          "highlight": "Un valore alto di Affaticamento è uno spunto per controllare le basi (sonno, caffeina, attività recente), non una diagnosi."
         }
       ]
     },
     "excitement": {
-      "title": "Excitement: The Energy of Anticipation",
-      "shortTitle": "✨ Excitement",
+      "title": "Eccitazione: un indice sperimentale di attivazione",
+      "shortTitle": "✨ Eccitazione",
       "sections": [
         {
-          "heading": "Positive Drive",
-          "body": "Excitement is the state of \"bright\" mobilization within your system. Much like anxiety, it involves a rise in heart rate and breathing frequency, but with a critical distinction: in ONDA, this index only climbs when your stress scores remain within a healthy range. We read this pattern as readiness for play, creativity, or a significant event rather than a threat response."
+          "heading": "Cos'è questo numero",
+          "body": "Qui l'Eccitazione è un indice sperimentale di attivazione fisiologica generale. Sale con la frequenza cardiaca sopra i 60 bpm e, in piccola parte, con la frequenza respiratoria. Non può distinguere l'entusiasmo dal nervosismo, dallo sforzo fisico o dalla caffeina, perché in tutti questi casi il corpo risponde con un polso più veloce."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Eccitazione = 1,5 × (frequenza cardiaca − 60) + 0,5 × frequenza respiratoria, limitata a 0–100%. La frequenza cardiaca è 60.000 diviso l'intervallo RR medio; la frequenza respiratoria si stima dalle variazioni lente del segnale del polso e vale 0 quando lo strumento non trova un ritmo chiaro. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0–20% · Neutral",
-              "text": "No positive arousal detected. The system is in a resting or low-activation state. Useful for recovery, but not for performance or creative output."
+              "label": "Più alto",
+              "text": "La frequenza cardiaca era ben sopra i 60 bpm. Per esempio, a 80 bpm e 15 respiri al minuto l'indice è circa il 38%; a 100 bpm è circa il 68%."
             },
             {
-              "label": "20–50% · Mild Charge",
-              "text": "A gentle energizing — the body is warming up with motivation and light anticipation. Ideal for starting tasks that require sustained engagement."
-            },
-            {
-              "label": "50–75% · Drive",
-              "text": "Clear positive mobilization with stable rhythm. HR is elevated but stress is contained. This is the optimal zone for high-performance work, sport, or creative flow."
-            },
-            {
-              "label": "75–100% · Full Surge",
-              "text": "Peak eustress. The system is fully primed. This state is rare and time-limited — use it strategically. It transitions into anxiety if stress scores begin to rise alongside."
+              "label": "Più basso",
+              "text": "Il polso era vicino ai 60 bpm o più basso. Molti adulti rilassati e allenati stanno qui a riposo."
             }
           ]
         },
         {
-          "heading": "The Biology of Joy",
-          "body": "In a state of Excitement, your body prepares for action, but it does so efficiently:",
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. In pratica questo indice è soprattutto una frequenza cardiaca riscalata, quindi ha gli stessi limiti della frequenza cardiaca stessa."
+        },
+        {
+          "heading": "Cosa aiuta davvero",
           "bullets": [
             {
-              "label": "Productive Surge",
-              "text": "Your heart beats faster to saturate your muscles and brain with oxygen, yet the rhythm remains stable and confident."
+              "label": "Individua la causa",
+              "text": "Se il numero è alto, chiediti cosa è appena successo: movimento, caffè, un messaggio stressante o un'attesa. La risposta del corpo è simile in tutti questi casi."
             },
             {
-              "label": "Eustress",
-              "text": "This is \"positive stress\" — the kind that doesn't drain your reserves but instead makes you feel alive and engaged."
-            },
-            {
-              "label": "Lack of Constraint",
-              "text": "Unlike anxiety, there is no \"tunnel vision\" here. You maintain a broad perspective and a high capacity for creativity."
+              "label": "Espirazione lenta per calmarti",
+              "text": "Se vuoi calmarti, qualche respiro con l'espirazione più lunga dell'inspirazione tende ad abbassare la frequenza cardiaca in un minuto o due."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "We help you recalibrate your internal signals. Often, people mistake excitement for anxiety and try to suppress it. ONDA can hint at the difference: your heart rate is high, but your rhythm looks stable — a sign you may be charged rather than afraid. This insight allows you to use the energy of excitement as fuel for achievement rather than a reason for worry."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "Excitement is energy directed outward. Embrace the surge; it is a sign that your system is primed for greatness."
+          "highlight": "L'Eccitazione è in sostanza \"quanto il tuo polso è sopra i 60 bpm in questo momento\", espresso in percentuale."
         }
       ]
     },
     "focus": {
-      "title": "Focus / Concentration: The Physiology of Immersion",
-      "shortTitle": "🎯 Focus / Concentration",
+      "title": "Concentrazione: un indice sperimentale",
+      "shortTitle": "🎯 Concentrazione",
       "sections": [
         {
-          "heading": "The Flow State",
-          "body": "Focus / Concentration is not an act of will, but a result of harmony within your system. At ONDA, this index is calculated as the balance between your energy levels and the absence of internal noise (stress). It’s our proxy for a focus-like state — when your energy is sufficient and internal noise (stress) stays low, so attention comes more easily."
+          "heading": "Cos'è questo numero",
+          "body": "Qui la Concentrazione è un indice sperimentale. Non misura l'attenzione, e una fotocamera sul polpastrello non può sapere a cosa stai pensando. Fa la media di altri due indici dello strumento, Energia e Stress inverso, quindi è massima quando la frequenza cardiaca è moderata (circa 75 bpm o meno) e il ritmo battito-battito è regolare."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Concentrazione = 0,5 × Energia + 0,5 × (100 − Stress), limitata a 0–100%. Energia = 90 − 1,5 × (frequenza cardiaca oltre 75 bpm) − 80 × CSI; Stress = 130 × CSI, dove il CSI è la deviazione standard degli intervalli RR divisa per la loro media. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0–25% · Scattered",
-              "text": "High internal noise or low energy. Sustained attention is biologically inaccessible in this state. Tasks will demand disproportionate effort with poor output quality."
+              "label": "Più alto",
+              "text": "Polso moderato e intervalli regolari durante la lettura. Può accompagnare un lavoro calmo e costante, ma una persona rilassata che non sta leggendo nulla otterrà lo stesso punteggio."
             },
             {
-              "label": "25–50% · Warming Up",
-              "text": "The system is partially available for focus. Surface-level tasks are possible, but deep cognitive work will be fragmented. A short breathing reset can shift you into the next zone."
-            },
-            {
-              "label": "50–75% · Engaged",
-              "text": "Energy is sufficient, stress is moderate. You are capable of sustained concentration. This is the standard working zone for most productive individuals."
-            },
-            {
-              "label": "75–100% · Deep Focus",
-              "text": "Optimal state. Prefrontal cortex is fully in control, amygdala is quiet, rhythm is stable. This pattern often accompanies flow — where effort fades and performance feels easy."
+              "label": "Più basso",
+              "text": "Un polso più veloce, un ritmo più irregolare o un segnale rumoroso per il movimento del dito."
             }
           ]
         },
         {
-          "heading": "The Architecture of Attention",
-          "body": "In ONDA, peak concentration occurs when three conditions are met:",
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. Negli studi di laboratorio i segnali cardiaci cambiano con la concentrazione, ma non in un modo che permetta a una breve lettura con la fotocamera di dirti quanto sei concentrato."
+        },
+        {
+          "heading": "Cosa aiuta davvero",
           "bullets": [
             {
-              "label": "Moderate Heart Rate",
-              "text": "Your heart isn't racing, but it isn't \"sleeping\" either. This is the zone of optimal activation, where the brain receives just enough resources for complex tasks."
+              "label": "Un compito alla volta",
+              "text": "Fissa un obiettivo chiaro per i prossimi 25–50 minuti ed elimina le distrazioni evidenti."
             },
             {
-              "label": "Stable Rhythm",
-              "text": "The absence of sharp spikes (low CSI) means your nervous system isn't being distracted by internal interference."
+              "label": "Prima calma il corpo",
+              "text": "Qualche minuto di respirazione lenta prima di un lavoro impegnativo può ridurre l'attivazione se ti senti agitato."
             },
             {
-              "label": "Low Stress",
-              "text": "Your amygdala is calm, allowing the prefrontal cortex to maintain total control over your attentional focus."
+              "label": "Riposo",
+              "text": "Sonno, idratazione e pause regolari fanno per la concentrazione più di qualsiasi numero."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "We often mistake \"busyness\" for \"productivity.\" The Focus index reveals the difference. You may be very busy, but if your concentration score is low, you are spending three times more energy on the same task. ONDA helps you notice moments that look like \"Restful Alertness\" — attentive yet physiologically calm."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "Focus isn't about what you do; it's about the state you're in. Create silence within your rhythm, and attention will follow naturally."
+          "highlight": "La Concentrazione sale quando il polso è moderato e il ritmo è regolare. È un indizio sul tuo corpo, non una lettura della tua mente."
         }
       ]
     },
     "relaxation": {
-      "title": "Relaxation / Calmness: The State of Deep Stillness",
-      "shortTitle": "🌿 Relaxation / Calmness",
+      "title": "Rilassamento / Calma: un indice sperimentale",
+      "shortTitle": "🌿 Rilassamento / Calma",
       "sections": [
         {
-          "heading": "The Art of Presence",
-          "body": "Relaxation / Calmness is not merely the absence of stress; it is an active state of physiological wellbeing. At ONDA, this index is calculated as the inverse of chaos (CSI) combined with your energy reserve. It estimates how settled your rhythm looks — low cardiac noise alongside energy reserve — a proxy for readiness for high-quality rest or deep creativity."
+          "heading": "Cos'è questo numero",
+          "body": "Qui il Rilassamento è un indice sperimentale che sale quando il ritmo battito-battito sembra regolare e l'indice di Energia è alto (il che, in questo strumento, significa soprattutto che la frequenza cardiaca non supera circa 75 bpm). Non misura quanto ti senti calmo e non è un punteggio di rilassamento validato."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Rilassamento = 60 × (1 − min(1; 1,5 × CSI)) + 0,2 × Energia, limitato a 0–100%. Il CSI è la deviazione standard degli intervalli RR divisa per la loro media. Nota che la frequenza respiratoria non fa parte di questa formula, anche se respirare lentamente spesso aiuta davvero a rilassarsi. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0–25% · Surface Tension",
-              "text": "The system is still carrying biological noise — elevated CSI, shallow breathing, or low energy reserve. True rest is not yet accessible. Intervention (slow breathing, stillness) is needed."
+              "label": "Più alto",
+              "text": "Gli intervalli RR variavano poco rispetto alla loro media e il polso era moderato. Stare fermi con un segnale pulito lo fa salire."
             },
             {
-              "label": "25–50% · Settling",
-              "text": "The nervous system is beginning to downshift. Rhythm is stabilizing. This is the transitional zone — the body is on its way to calm but has not arrived yet."
-            },
-            {
-              "label": "50–75% · Active Calm",
-              "text": "Low biological noise, steady breath, sufficient energy headroom. You are in Restful Alertness — fully present and open, without the undertone of vigilance."
-            },
-            {
-              "label": "75–100% · Deep Stillness",
-              "text": "Optimal state for regeneration, creativity, and deep focus. Tissue repair accelerates, immune activity peaks, and the brain shifts into consolidation and insight mode."
+              "label": "Più basso",
+              "text": "Il ritmo sembrava più irregolare (CSI più alto) o il polso era più veloce. Anche il movimento del dito aggiunge irregolarità e abbassa il punteggio."
             }
           ]
         },
         {
-          "heading": "The Signature of \"Restful Alertness\"",
-          "body": "A high Calmness score is the result of three synchronized factors:",
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. Una stranezza: nella fisiologia reale un corpo rilassato mostra spesso più variazione tra i battiti legata al respiro, mentre questo indice premia una variazione minore. È un motivo in più per considerarlo solo un indizio approssimativo."
+        },
+        {
+          "heading": "Cosa aiuta davvero",
           "bullets": [
             {
-              "label": "Rhythmic Purity",
-              "text": "Your heart beats with minimal unjustified fluctuations (low CSI)."
+              "label": "Respirazione lenta",
+              "text": "Respirare lentamente, circa 5–7 respiri al minuto con un'espirazione rilassata e più lunga, è un modo ben studiato per calmare il corpo per la maggior parte delle persone."
             },
             {
-              "label": "Stable Breathing",
-              "text": "A slow, steady rhythm of inhales and exhales that nourishes the brain without overtaxing the system."
+              "label": "Postura e immobilità",
+              "text": "Siediti comodo, abbassa le spalle e appoggia la mano in modo che il dito resti sull'obiettivo senza premere forte."
             },
             {
-              "label": "Biological Headroom",
-              "text": "Your heart has ample \"cardiovascular headroom\" (Energy Reserve), allowing you to remain relaxed even as your environment shifts."
+              "label": "Qualche minuto di quiete",
+              "text": "La frequenza cardiaca di solito si stabilizza in diversi minuti di riposo, non in pochi secondi."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "The Calmness state is the mode where your body shifts from survival to thriving. It is in this zone that maximum tissue regeneration, immune strengthening, and neural \"rewiring\" occur. We track this metric so you can learn not just to relax, but to achieve Restful Alertness — a state where you are profoundly calm yet entirely present and attentive."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "Relaxation is not weakness; it is the ultimate form of efficiency. The higher your Calmness index, the less effort it takes to remain yourself."
+          "highlight": "Qui il Rilassamento riflette soprattutto un polso moderato e un ritmo dall'aspetto regolare. Come ti senti conta più del numero."
         }
       ]
     },
     "alarm": {
-      "title": "Alarm / Anxiety: Your System's Code Red",
-      "shortTitle": "🚨 Alarm / Anxiety",
+      "title": "Allarme / Ansia: un indice sperimentale",
+      "shortTitle": "🚨 Allarme / Ansia",
       "sections": [
         {
-          "heading": "The Invisible Threat Detector",
-          "body": "Alarm / Anxiety is a composite index within ONDA that analyzes the synergy between your heart rate and your breathing. We look for a specific pattern: a simultaneous rise in HR and an increased respiratory rate. This is a pattern often linked to the \"Fight-or-Flight\" response. The index flags when that pattern appears — a cue to check in with yourself, not a diagnosis."
+          "heading": "Cos'è questo numero",
+          "body": "Qui l'Allarme è un indice sperimentale basato sull'irregolarità del ritmo e sulla frequenza respiratoria. Non è un test dell'ansia e non può rilevare paura o preoccupazione. Sale quando gli intervalli tra i battiti sembrano irregolari rispetto alla loro media (CSI alto) e quando la frequenza respiratoria stimata supera i 15 respiri al minuto."
         },
         {
-          "heading": "What the Values Mean",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Allarme = 0,7 × Stress + 3 × (frequenza respiratoria − 15, se sopra 15), limitato a 0–100%. Stress = 130 × CSI. La frequenza cardiaca in sé non fa parte di questa formula. La frequenza respiratoria si stima dalle oscillazioni lente del segnale del polso e vale 0 quando non si trova un ritmo chiaro. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0–20% · Baseline Calm",
-              "text": "No alarm signals detected. HR and breathing are in a balanced, low-arousal state. Your nervous system is fully in parasympathetic mode."
+              "label": "Più alto",
+              "text": "Gli intervalli tra i battiti variavano molto rispetto alla loro media e/o la respirazione era stimata sopra i 15 al minuto. Parlare, muovere il dito, avere le dita fredde o poca luce possono alzarlo quanto un momento di stress."
             },
             {
-              "label": "20–50% · Mild Activation",
-              "text": "Low-level arousal — normal during focused work or light activity. The body is alert but not mobilized. Manageable without intervention."
-            },
-            {
-              "label": "50–75% · Elevated Alarm",
-              "text": "Clear fight-or-flight pattern emerging. HR is rising alongside breathing rate. This is the zone of unnoticed chronic stress — you may feel \"fine,\" but your biology disagrees."
-            },
-            {
-              "label": "75–100% · Acute Mobilization",
-              "text": "Full sympathetic surge. The amygdala has taken control. Cortisol and adrenaline are spiking. Immediate intervention — a deep exhale, a pause, breath-hold reset — is highly effective here."
+              "label": "Più basso",
+              "text": "Il ritmo sembrava regolare e la respirazione era stimata a 15 al minuto o meno."
             }
           ]
         },
         {
-          "heading": "The Psychosomatic Echo",
-          "body": "High values in this index indicate that your body is in a state of acute mobilization:",
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. Se ti senti ansioso o poco bene, fidati di questa sensazione più che di questo numero e cerca l'aiuto adeguato. Un punteggio basso non significa che stai bene, e uno alto non significa che qualcosa non va."
+        },
+        {
+          "heading": "Cosa aiuta davvero",
           "bullets": [
             {
-              "label": "Biological Level",
-              "text": "Blood shifts from digestive organs to muscles, the brain receives a signal of external danger, and cortisol levels spike."
+              "label": "Espirazioni più lunghe",
+              "text": "Inspirare per circa 4 secondi ed espirare per circa 6 è un modo semplice per rallentare quando ti senti agitato."
             },
             {
-              "label": "Mental Level",
-              "text": "The prefrontal cortex (responsible for logic) gives way to the amygdala. You begin to experience restlessness, tunnel vision, or cognitive \"tightness.\""
+              "label": "Rimisura con calma",
+              "text": "Siediti, appoggia il braccio su un tavolo, tieni il dito fermo e misura di nuovo dopo un minuto. Molte letture alte sono rumore del segnale."
+            },
+            {
+              "label": "Sospiro fisiologico",
+              "text": "Due brevi inspirazioni dal naso seguite da una lunga espirazione sono un altro modo rapido e poco impegnativo per calmarti."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Anxiety often masks itself as ordinary fatigue or high productivity. The Alarm index can hint at this: you might just be drinking coffee, yet your rhythm looks like the body is bracing for a threat. ONDA gives you the chance to spot this pattern early and use conscious breathing to \"cancel\" the alarm signal before it turns into a panic attack or total burnout."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "Your body cannot lie. If the Alarm index is rising, it's not a reason to panic — it's a reason for a deep exhale. Reclaim control through your body when your mind feels powerless."
+          "highlight": "L'Allarme reagisce a un ritmo dall'aspetto irregolare e a una respirazione più veloce. Controlla il segnale e l'ambiente prima di trarne conclusioni."
         }
       ]
     },
     "acceleration": {
-      "title": "HR Acceleration: The Intensity of Biological Response",
-      "shortTitle": "⚡ HR Acceleration",
+      "title": "Accelerazione FC: variazione media tra un battito e l'altro",
+      "shortTitle": "⚡ Accelerazione FC",
       "sections": [
         {
-          "heading": "Dynamics Beyond Speed",
-          "body": "HR Acceleration is the second derivative of your heart rhythm. While the Trend Slope shows the direction of your movement, Acceleration measures the intensity with which that movement gains momentum. It is a gauge of how sharply your system \"hits the gas\" or, conversely, how smoothly it begins to apply the brakes."
+          "heading": "Cosa mostra questo numero",
+          "body": "Qui l'Accelerazione FC è un piccolo numero che indica se, negli ultimi 15 secondi, gli intervalli tra i battiti si stavano in media allungando o accorciando da un battito al successivo. Nonostante il nome, è una semplice media delle differenze successive, non una vera derivata seconda della frequenza cardiaca."
         },
         {
-          "heading": "Reading the Impulse",
-          "body": "Acceleration reveals the hidden dynamics of your adaptation:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Lo strumento calcola le differenze tra intervalli RR consecutivi (in ms), ne fa la media (saltando la prima) e divide per 100. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "Positive Acceleration · The Surge",
-              "text": "Your heart rate is beginning to speed up faster than it was a second ago. This is a sign of an \"acute\" reaction—such as a sudden startle, a sharp thought about a deadline, or a physical burst. Your sympathetic system is firing at full capacity, mobilizing resources right here and right now."
+              "label": "Positivo",
+              "text": "Gli intervalli RR si stavano in media allungando, quindi la frequenza cardiaca scendeva durante la finestra. Succede spesso durante un'espirazione lenta o quando ti rilassi."
             },
             {
-              "label": "Negative Acceleration · The Deceleration",
-              "text": "The rate of change in your heart rate is falling. Even if your heart is still beating fast, it has stopped accelerating. This is the first sign that the peak has passed and the system is beginning to stabilize. You are regaining control over the stress."
+              "label": "Negativo",
+              "text": "Gli intervalli RR si stavano accorciando, quindi la frequenza cardiaca saliva, per esempio durante un'inspirazione, dopo un movimento o quando ti irrigidisci."
+            },
+            {
+              "label": "Vicino a zero",
+              "text": "Nessuna tendenza chiara. È il valore più comune a riposo, perché l'accelerazione e il rallentamento naturali a ogni respiro si compensano."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "HR Acceleration is a detector of your reactivity. Excessively sharp spikes in acceleration can indicate high anxiety or a low stress-tolerance threshold. ONDA tracks these \"jerks,\" helping you develop biological smoothness—the ability to enter high-performance states without the jarring and exhausting surges that drain your system."
+          "heading": "Perché oscilla così tanto",
+          "body": "Il cuore accelera naturalmente un po' quando inspiri e rallenta quando espiri (aritmia sinusale respiratoria). In una finestra di 15 secondi che contiene solo due o tre respiri, il punto del ciclo respiratorio in cui la finestra inizia e finisce influisce molto su questo valore. Gli errori di temporizzazione della fotocamera, di pochi millisecondi per battito, aggiungono altro rumore. Valori piccoli in entrambe le direzioni vanno letti come \"nessuna variazione significativa\"."
         },
         {
-          "highlight": "Power is not in the surge, but in the smoothness of the transition. The fewer sharp accelerations in your rhythm, the more carefully you preserve your vital energy."
+          "heading": "Limiti importanti",
+          "body": "Non è una metrica clinica o sportiva standard e non esistono intervalli di normalità stabiliti. Viene mostrata solo come rapido indicatore di direzione, non come misura medica o di forma fisica."
+        },
+        {
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
+        },
+        {
+          "highlight": "Positivo significa che i battiti si stavano distanziando (polso che rallenta); negativo che si stavano avvicinando (polso che sale)."
         }
       ]
     },
     "slope": {
-      "title": "HR Trend Slope: The Vector of Biological Direction",
-      "shortTitle": "📈 HR Trend Slope",
+      "title": "Pendenza del trend FC: il tuo polso sale o scende?",
+      "shortTitle": "📈 Pendenza del trend FC",
       "sections": [
         {
-          "heading": "The Direction of Flow",
-          "body": "HR Trend Slope is a mathematical indicator of where your system is headed right now. We use linear regression to understand the overall trajectory of your heart rate throughout the measurement window. It's not just a number; it's a compass needle pointing toward your immediate physiological future."
+          "heading": "Cosa mostra questo numero",
+          "body": "La pendenza del trend FC indica se la frequenza cardiaca stava salendo o scendendo nella finestra di misurazione attuale. È utile per osservare un cambiamento in tempo reale, come il polso che si calma mentre respiri lentamente o che sale dopo che ti alzi in piedi."
         },
         {
-          "heading": "Reading the Vector",
-          "body": "The direction of the slope speaks to the dynamics of your adaptation:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Lo strumento traccia una retta (regressione lineare) attraverso i tuoi intervalli RR in ordine, battito dopo battito. Poi inverte il segno e divide per 100, così un valore positivo significa che la frequenza cardiaca sale (intervalli più corti) e uno negativo che scende (intervalli più lunghi). Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "Negative Slope · Descending",
-              "text": "Your heart rate is gradually slowing down. This is the classic \"relaxation response.\" Your nervous system is successfully dampening arousal and shifting into recovery mode. This is the ideal scenario for meditation or winding down after work."
+              "label": "Positivo",
+              "text": "Il polso tendeva a salire durante la finestra: per esempio dopo un movimento, mentre parli, quando ti alzi o in un momento di tensione."
             },
             {
-              "label": "Positive Slope · Ascending",
-              "text": "Your heart rate is accelerating. This signals rising emotional or physical arousal. Your body is preparing for action or reacting to a stressor that emerged during the session."
+              "label": "Negativo",
+              "text": "Il polso tendeva a scendere: succede spesso quando ti siedi, ti rilassi o respiri lentamente con espirazioni più lunghe."
             },
             {
-              "label": "Zero Slope · Plateau",
-              "text": "A steady state. Your system is in equilibrium, maintaining its current level of activation without sharp fluctuations."
+              "label": "Vicino a zero",
+              "text": "La frequenza cardiaca era più o meno piatta. A riposo stabile è ciò che ci si aspetta."
             }
           ]
         },
         {
-          "heading": "Why is it in ONDA?",
-          "body": "Trend Slope allows you to see the inertia of your nervous system. If you are trying to relax but the trend remains positive, it means your \"braking system\" hasn't kicked in yet. This metric helps you understand how effectively your chosen practice (breathing, music, a pause) is actually shifting your biological course."
+          "heading": "Perché può essere rumorosa",
+          "body": "In 15 secondi la frequenza cardiaca sale e scende naturalmente a ogni respiro, quindi la retta può inclinarsi da una parte o dall'altra solo per il punto in cui inizia la finestra. Anche la temporizzazione dei battiti rilevata dalla fotocamera ha piccoli errori. Cerca un segno costante per almeno mezzo minuto invece di reagire a un singolo valore."
         },
         {
-          "highlight": "It's not about where you are, but which way you're moving. A negative trend is your ticket to a state of deep restoration."
+          "heading": "Un semplice esperimento",
+          "body": "Siediti fermo, lascia stabilizzare la lettura, poi respira lentamente: circa 4 secondi dentro e 6 fuori per un minuto. Molte persone vedono la pendenza andare verso valori negativi mentre il polso si calma. Poi alzati e guardala diventare positiva mentre la frequenza cardiaca sale per un momento."
+        },
+        {
+          "heading": "Limiti importanti",
+          "body": "È un indicatore di tendenza in tempo reale di questo strumento nel browser. Non ha un intervallo di normalità standard e non è una misura medica."
+        },
+        {
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
+        },
+        {
+          "highlight": "Positivo significa che il polso sta salendo; negativo che sta scendendo."
         }
       ]
     },
     "recovery": {
-      "title": "Recovery Rate: The Index of Returning to Self",
-      "shortTitle": "🔄 Recovery Rate %",
+      "title": "Tasso di recupero: quanto il polso è tornato indietro dal suo picco",
+      "shortTitle": "🔄 Tasso di recupero %",
       "sections": [
         {
-          "heading": "The Art of the Finish",
-          "body": "Recovery Rate is a measure of how effectively your heart can \"downshift\" after exertion. At ONDA, we calculate how quickly your heart rate returns from its peak during the current session to your baseline average. It is a measurement of your ability to exit a state of arousal and return to your center of gravity."
+          "heading": "Cosa mostra questo numero",
+          "body": "In questo strumento il Tasso di recupero è una misura interna alla finestra. Guarda la frequenza cardiaca più alta degli ultimi 15 secondi e calcola quanto l'ultimo battito è tornato indietro da quel picco verso la media della finestra. Non è il test clinico di \"recupero della frequenza cardiaca\", che misura di quanti battiti al minuto scende il polso nel primo minuto dopo uno sforzo intenso."
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "In the wild, survival belongs not to the one who runs the fastest, but to the one who calms down the quickest after the chase. In the modern world, it works the same way:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Per ogni battito lo strumento converte l'intervallo RR in battiti al minuto. Se il picco supera la media della finestra di almeno 2 bpm, Recupero = (picco − ultimo battito) ÷ (picco − media) × 100, limitato a 0–100%. Se non c'è stato un picco chiaro, il valore è 0. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0% · Stuck",
-              "text": "Your heart rate is frozen at its peak. Your body continues to \"fight shadows\" even after the external trigger is gone. This is a sign of nervous system rigidity and accumulated fatigue."
+              "label": "Vicino al 100%",
+              "text": "L'ultimo battito è tornato alla media della finestra (o sotto), quindi un eventuale breve picco è passato."
             },
             {
-              "label": "100% · Full Calm",
-              "text": "Your heart has completely returned to its baseline or even lower. This is the gold standard of biological flexibility."
+              "label": "Intorno al 50%",
+              "text": "Il polso è tornato indietro circa a metà dal suo picco recente."
+            },
+            {
+              "label": "Vicino allo 0%",
+              "text": "O il polso è ancora al suo picco, o non c'è stato alcun picco evidente (anche una lettura stabile mostra 0). Guarda gli altri numeri per distinguere i due casi."
             }
           ]
         },
         {
-          "heading": "The Biological Echo",
-          "body": "Your recovery speed depends directly on the tone of your Vagus Nerve. A high Recovery Rate means your \"parasympathetic brake\" is functioning perfectly. This allows you to switch between tasks without carrying the stress of the previous moment into the next."
+          "heading": "Perché cambia così tanto",
+          "body": "La frequenza cardiaca sale naturalmente a ogni inspirazione e scende a ogni espirazione, quindi il \"picco\" è spesso solo il culmine di un ciclo respiratorio e il valore può oscillare da un battito all'altro. Anche un singolo battito falso o mancato della fotocamera può creare un picco artificiale."
         },
         {
-          "highlight": "It's not the height of the peak that matters, but the speed of the descent. True power lies in the ability to quickly return to a state of equilibrium."
+          "heading": "Il recupero in senso più ampio",
+          "body": "Su ore e giorni il recupero si valuta meglio con gli andamenti: frequenza cardiaca a riposo al mattino, HRV misurata ogni giorno nello stesso modo, sonno e come ti senti. Dopo l'esercizio, un calo più rapido della frequenza cardiaca nel primo minuto è in genere un segno di buona forma fisica."
+        },
+        {
+          "heading": "Limiti importanti",
+          "body": "È un indicatore approssimativo e sperimentale di questo strumento nel browser, non una metrica medica o di allenamento."
+        },
+        {
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
+        },
+        {
+          "highlight": "Alto significa che il polso è tornato vicino alla media dopo un picco recente; 0% può anche significare semplicemente che non c'è stato un picco."
         }
       ]
     },
     "csi": {
-      "title": "CSI: Cardiac Stability Index",
-      "shortTitle": "🎯 Cardiac Stability Index (CSI)",
+      "title": "CSI: indice di stabilità cardiaca (variazione RR rispetto alla sua media)",
+      "shortTitle": "🎯 Indice di stabilità cardiaca (CSI)",
       "sections": [
         {
-          "heading": "The Architecture of Rhythm",
-          "body": "CSI (Cardiac Stability Index) is a unique coefficient that allows ONDA to look deeper than a regular pulse. We take the standard deviation of your heart cycles and divide it by the mean heart rate. This allows us to measure the pure consistency of your heart, independent of how fast it happens to be beating at the moment."
+          "heading": "Cosa mostra questo numero",
+          "body": "In questo strumento il CSI è il coefficiente di variazione degli intervalli tra i battiti: quanto variano gli intervalli rispetto alla loro durata media. Poiché è diviso per l'intervallo medio, permette di confrontare la regolarità del ritmo a frequenze cardiache diverse. Più basso significa intervalli più simili; più alto significa più variazione."
         },
         {
-          "heading": "Stability vs. Chaos",
-          "body": "CSI is the detector of \"biological noise\" within your system:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "CSI = deviazione standard degli intervalli RR ÷ intervallo RR medio. Per esempio, se i tuoi intervalli sono in media di 800 ms con una deviazione standard di 40 ms, il CSI è 0,05. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Perché i valori con la fotocamera sembrano alti",
+          "body": "Con la fotocamera del telefono la temporizzazione dei battiti è precisa solo a pochi millisecondi e alcuni picchi vengono collocati male, quindi la variazione misurata è maggiore di quella reale. In pratica, su questa pagina sono tipiche letture intorno a 0,3; valori più bassi indicano un segnale più pulito e stabile.",
           "bullets": [
             {
-              "label": "0.03 – 0.10 · Diamond Stability",
-              "text": "Your heart is operating with the precision of a Swiss watch. This is a state of deep physiological confidence. The system wastes no resources on unnecessary fluctuations, operating in a mode of maximum economy and focus."
+              "label": "Più basso (ben sotto 0,3)",
+              "text": "Gli intervalli erano piuttosto regolari e il segnale pulito."
             },
             {
-              "label": "0.11 – 0.24 · Dynamic Balance",
-              "text": "The natural rhythm of a living organism. Your heart fluidly adjusts to external stimuli while maintaining its overall structural integrity."
+              "label": "Intorno a 0,3",
+              "text": "Una lettura tipica con la fotocamera."
             },
             {
-              "label": "0.25+ · Biological Noise",
-              "text": "A signal of instability. High CSI often indicates \"glitches\" in nerve impulse transmission, extreme fatigue, or measurement noise. This is a state where the system is losing control over its rhythm."
+              "label": "Nettamente più alto",
+              "text": "Gli intervalli variavano molto: spesso per movimento, pressione eccessiva, dita fredde o luce scarsa; a volte per battiti davvero irregolari."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter for ONDA?",
-          "body": "CSI is the foundation upon which your Stress % is built. While HRV tells us about your flexibility, CSI informs us about your structural reliability. A low CSI is a sign that your internal \"operating system\" is running without errors in the code."
+          "heading": "CSI e variabilità della frequenza cardiaca",
+          "body": "Una certa variazione tra i battiti è sana: il cuore accelera leggermente a ogni inspirazione e rallenta a ogni espirazione, e le persone allenate spesso ne mostrano di più a riposo. Quindi più basso non è automaticamente \"meglio\" dal punto di vista fisiologico. In questo strumento, però, il CSI serve soprattutto a verificare quanto la lettura fosse stabile e pulita, e alimenta gli indici di Stress (130 × CSI), Energia, Rilassamento e Allarme."
         },
         {
-          "highlight": "True power lies in stability. The less noise in your rhythm, the more clarity in your mind."
+          "heading": "Nota sulla salute",
+          "body": "Se noti un polso irregolare persistente, palpitazioni, capogiri o affanno, rivolgiti a un medico. Una lettura con la fotocamera nel browser non può rilevare né escludere aritmie come la fibrillazione atriale."
+        },
+        {
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
+        },
+        {
+          "highlight": "Il CSI è la variazione degli intervalli tra i battiti divisa per la loro media; le letture tipiche con la fotocamera sono intorno a 0,3."
         }
       ]
     },
     "hrv": {
-      "title": "HRV: The Index of Your Biological Agility",
+      "title": "HRV (RMSSD): cosa dice la variazione tra un battito e l'altro",
       "shortTitle": "📊 HRV (RMSSD)",
       "sections": [
         {
-          "heading": "The Internal Microscope",
-          "body": "HRV (Heart Rate Variability) is the most sophisticated and informative metric in the ONDA arsenal. Unlike heart rate, which simply counts beats, HRV measures the microscopic fluctuations in time between those beats in milliseconds. We use the RMSSD algorithm to assess how fluidly your heart responds to every movement, thought, or breath."
+          "heading": "Cos'è l'HRV",
+          "body": "La variabilità della frequenza cardiaca (HRV) è la variazione naturale del tempo tra un battito e l'altro. Un cuore sano non batte come un metronomo: gli intervalli si allungano e si accorciano con il respiro, la postura e l'attività del sistema nervoso. L'RMSSD, la radice quadrata della media dei quadrati delle differenze successive, è una delle misure di HRV più usate e riflette soprattutto l'attività parasimpatica (vagale), il lato \"riposo e digestione\" del sistema nervoso."
         },
         {
-          "heading": "A Mirror of the Vagus Nerve",
-          "body": "HRV is a direct status report on your Vagus Nerve activity:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Lo strumento prende ogni coppia di intervalli RR consecutivi, eleva al quadrato la loro differenza, fa la media di questi quadrati e ne estrae la radice quadrata, ottenendo un valore in millisecondi. I valori sopra i 100 ms vengono limitati a 100. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Intervalli tipici e cosa li influenza",
+          "body": "L'RMSSD a riposo negli adulti sani varia molto, spesso all'incirca tra 20 e 80 ms, e tende a essere più alto nelle persone più giovani e allenate e più basso con l'età. Di solito cala dopo un sonno scarso, alcol, malattia, allenamenti intensi o stress acuto, e sale con un buon recupero. Le differenze tra persone sono grandi, quindi conta più il tuo andamento che il confronto con gli altri.",
           "bullets": [
             {
-              "label": "High HRV (40–70 ms and above)",
-              "text": "Your heart adapts instantly to changes. This is a sign of a powerful parasympathetic response. You are in a state of high biological resilience: calm, focused, and ready for action."
+              "label": "Più alto del solito",
+              "text": "Si vede spesso quando sei riposato e rilassato."
             },
             {
-              "label": "Low HRV (below 20–25 ms)",
-              "text": "Your autonomic nervous system is \"locked.\" Your heart is beating too metrically, like a robot. This is a signal that your recovery resources are drained, and the system is operating at the edge of its adaptive capacity."
+              "label": "Più basso del solito",
+              "text": "Comune con stanchezza, stress, alcol, malattia o un pasto pesante a tarda sera."
             }
           ]
         },
         {
-          "heading": "Why It Matters More Than Pulse",
-          "body": "Two people can have the exact same heart rate, but entirely different health profiles. The difference lies in HRV. High variability means your \"internal OS\" is constantly scanning the environment and micro-adjusting your rhythm. Low variability is a sign of biological fragility."
+          "heading": "Perché le letture con la fotocamera sono approssimative",
+          "body": "L'RMSSD dipende da tempi al millisecondo. Una fotocamera del telefono a circa 30 fotogrammi al secondo, un polpastrello che si sposta leggermente e una finestra di soli 15 secondi aggiungono errore, di solito gonfiando il valore. Le misurazioni standard dell'HRV a breve termine usano almeno qualche minuto di ECG o una fascia toracica. Considera il numero qui come una stima approssimativa e confronta solo letture fatte nello stesso modo."
         },
         {
-          "heading": "Training with ONDA",
-          "body": "HRV is dynamic. It drops due to alcohol, lack of sleep, or overtraining, but it can be \"strengthened.\" By using the breathing protocols in ONDA, you are essentially exercising your Vagus Nerve, raising your baseline HRV and, consequently, your resilience to life's storms."
+          "heading": "Consigli pratici",
+          "bullets": [
+            {
+              "label": "Misura in modo costante",
+              "text": "Per seguire gli andamenti, misura sempre alla stessa ora (per esempio dopo il risveglio), seduto e fermo, respirando normalmente."
+            },
+            {
+              "label": "Respirazione lenta",
+              "text": "Respirare lentamente, a circa 6 respiri al minuto, di solito aumenta la variazione tra i battiti mentre lo fai."
+            },
+            {
+              "label": "Prima le basi",
+              "text": "Sonno regolare, poco alcol ed esercizio aerobico sono associati nel tempo a un'HRV a riposo più alta."
+            }
+          ]
         },
         {
-          "highlight": "High HRV is your ability to bend without breaking. It is the measure of your life force, expressed in milliseconds."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
+        },
+        {
+          "highlight": "L'RMSSD riflette l'attività vagale; la versione con la fotocamera è una stima approssimativa, utile soprattutto per il confronto con le tue stesse letture."
         }
       ]
     },
     "energy": {
-      "title": "Energy %: Your Biological Power Reserve",
-      "shortTitle": "🔋 Energy %",
+      "title": "Energia %: un indice sperimentale da frequenza cardiaca e ritmo",
+      "shortTitle": "🔋 Energia %",
       "sections": [
         {
-          "heading": "Your Internal Battery",
-          "body": "At ONDA, Energy % is not a subjective feeling of alertness; it is a rough estimate of your cardiovascular reserve. It is a mathematical ratio of how far your heart rate is from its elevated ceiling and how stable your cardiac rhythm is at this very second. The higher the score, the more physiological capacity your body has to handle new tasks."
+          "heading": "Cos'è questo numero",
+          "body": "Qui l'Energia è un indice sperimentale, non una misura di quanto ti senti energico, della tua forma fisica o di una \"batteria\". Parte dal 90% e scende quando la frequenza cardiaca supera i 75 bpm e quando il ritmo battito-battito è irregolare rispetto alla sua media (CSI)."
         },
         {
-          "heading": "The Anatomy of Depletion",
-          "body": "Your Energy score inevitably drops under the influence of three factors:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Energia = 90 − 1,5 × (frequenza cardiaca − 75, se sopra 75) − 80 × CSI, limitata a 10–100%. Per esempio, a 70 bpm con un CSI tipico da fotocamera di 0,3 l'Energia è circa il 66%; a 95 bpm con lo stesso CSI è circa il 36%. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "Accumulated Fatigue",
-              "text": "When the system fails to recover sufficiently during sleep."
+              "label": "Più alto",
+              "text": "Il polso era intorno ai 75 bpm o meno e il ritmo sembrava regolare."
             },
             {
-              "label": "High BPM",
-              "text": "Running at \"high RPMs\" quickly burns through available fuel."
-            },
-            {
-              "label": "Prolonged Stress",
-              "text": "Constant turbulence in your rhythm (low stability) forces the heart to spend more resources just to maintain basic functions."
+              "label": "Più basso",
+              "text": "Un polso più veloce (caffè, movimento, caldo, stress, malattia) e/o un ritmo dall'aspetto irregolare, che spesso è solo un segnale rumoroso."
             }
           ]
         },
         {
-          "heading": "What the Numbers Tell You",
-          "body": "",
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. Per come è costruita la formula, l'Energia non può superare il 90% e un polso a riposo sotto i 75 bpm non viene premiato ulteriormente."
+        },
+        {
+          "heading": "Cosa aiuta davvero",
           "bullets": [
             {
-              "label": "80–100% · Full Charge",
-              "text": "Your system is in a state of abundance. You are ready for intense cognitive loads, demanding workouts, and strategic decision-making."
+              "label": "Sonno",
+              "text": "Un sonno regolare e sufficiente è la leva più forte per l'energia durante il giorno."
             },
             {
-              "label": "40–70% · Operating Range",
-              "text": "Reserves are beginning to dwindle. It's time to pace yourself. Your efficiency is still high, but the \"price\" of each subsequent effort is rising."
+              "label": "Movimento e luce naturale",
+              "text": "Una breve passeggiata, soprattutto all'aperto al mattino, spesso aiuta più di altra caffeina."
             },
             {
-              "label": "Below 30% · Critical Low",
-              "text": "You are operating \"on credit.\" In this state, your body perceives any new event as a threat. The brain enters a strict power-saving mode, dialing down creativity and empathy."
+              "label": "Brevi pause",
+              "text": "Qualche minuto di respirazione lenta può abbassare un polso accelerato e aiutarti a sentirti più tranquillo."
             }
           ]
         },
         {
-          "heading": "The Art of Recharging",
-          "body": "Energy % is our most dynamic metric. It can plummet after a difficult conversation and surge after 10 minutes of deep meditation or a short walk. ONDA helps you see these fluctuations in real-time, turning energy management from guesswork into an exact science."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "Don't wait for the tank to hit empty. A high Energy Score is your insurance against mistakes. If the score is in the red zone, any work will be counterproductive. Charge the system first, then act."
+          "highlight": "Qui l'Energia scende con un polso sopra i 75 bpm e un ritmo dall'aspetto irregolare. È un indizio approssimativo, non un indicatore del carburante."
         }
       ]
     },
     "stress": {
-      "title": "Stress %: The Biological Turbulence Index",
+      "title": "Stress %: un indice sperimentale dall'irregolarità del ritmo",
       "shortTitle": "⚡ Stress %",
       "sections": [
         {
-          "heading": "Beyond Emotions",
-          "body": "At ONDA, Stress % is not a psychological state; it is a rough index of irregularity in your cardiac rhythm. This score is derived from the Cardiac Stability Index. We don't just analyze your pulse; we examine the micro-deviations in the rhythm of every single beat. The higher the irregularity and \"noise\" in these intervals, the higher your biological stress score."
+          "heading": "Cos'è questo numero",
+          "body": "In questa pagina lo Stress è un indice sperimentale. È semplicemente l'indice di stabilità cardiaca (CSI), la variazione degli intervalli tra i battiti rispetto alla loro media, riscalata in percentuale. Non misura gli ormoni dello stress, le emozioni o quanto ti senti stressato, e non è un punteggio di stress validato."
         },
         {
-          "heading": "What Does Your Score Mean?",
-          "body": "Stress is the \"spending\" of your life force. We've categorized it into three zones:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Stress = 130 × CSI, limitato a 0–100%. Un CSI tipico da fotocamera di circa 0,3 dà circa il 40%. Frequenza cardiaca e frequenza respiratoria non fanno parte di questa formula. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Come leggerlo",
           "bullets": [
             {
-              "label": "0 – 30% · The Flow Zone",
-              "text": "Your system is in a state of coherence. Your heart is working rhythmically and efficiently. This is the ideal time for complex decision-making and deep work."
+              "label": "Più alto",
+              "text": "Gli intervalli tra i battiti variavano di più rispetto alla loro media. Può accompagnare la tensione, ma con la fotocamera del telefono la causa più comune è il rumore del segnale: dito che si muove, pressione eccessiva, mani fredde o luce debole."
             },
             {
-              "label": "30 – 60% · The Adaptive Zone",
-              "text": "You are under a load. This is a normal state during an active day, but if you remain here for too long, your cognitive resources begin to drain."
-            },
-            {
-              "label": "60%+ · The Burnout Zone",
-              "text": "Acute physiological stress. Your nervous system is overwhelmed. In this state, the brain dials down the prefrontal cortex (logic) and shifts control to the amygdala (fear and impulsivity)."
+              "label": "Più basso",
+              "text": "Gli intervalli erano più regolari e il segnale più pulito."
             }
           ]
         },
         {
-          "heading": "Why Does It Matter?",
-          "body": "The most dangerous stress is the kind you don't feel. You might be sitting in silence, yet your Stress % shows 70%. This means an invisible struggle is happening inside: lack of sleep, hidden inflammation, or information overload. ONDA makes the invisible visible, allowing you to hit pause before exhaustion sets in."
+          "heading": "Limiti importanti",
+          "body": "Si tratta di un'euristica sperimentale costruita su pochi dati ricavati dalla fotocamera. Non è una misura fisiologica validata, non rileva le emozioni e non è un esame medico. Consideralo un indizio approssimativo sulla direzione in cui si muove il tuo segnale, non un verdetto su come ti senti. Nella fisiologia reale lo stress acuto di solito riduce la variabilità della frequenza cardiaca a breve termine invece di aumentarla, quindi un punteggio di irregolarità più alto non è un segnale affidabile di stress. Se lo stress incide sulla tua vita quotidiana, parlarne con un professionista è più utile di qualsiasi lettura."
         },
         {
-          "highlight": "Stress isn't what happens to you; it's how your body spends its resources in response. A high percentage is a signal to re-evaluate your priorities in this very moment."
+          "heading": "Cosa aiuta davvero",
+          "bullets": [
+            {
+              "label": "Respirazione lenta con espirazione più lunga",
+              "text": "Qualche minuto di respirazione lenta è uno dei modi più semplici per calmare il corpo."
+            },
+            {
+              "label": "Letture migliori",
+              "text": "Appoggia l'avambraccio su un tavolo, copri la fotocamera con delicatezza e resta fermo per almeno 30 secondi prima di guardare il numero."
+            },
+            {
+              "label": "Abitudini quotidiane",
+              "text": "Sonno, esercizio regolare, tempo all'aperto e contatti sociali aiutano tutti contro lo stress a lungo termine."
+            }
+          ]
+        },
+        {
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
+        },
+        {
+          "highlight": "Qui lo Stress è 130 × CSI: un indizio approssimativo sull'irregolarità del ritmo, molto influenzato dalla qualità del segnale."
         }
       ]
     },
     "br": {
-      "title": "Breathing Rate: The Bridge Between Worlds",
-      "shortTitle": "🌬️ /min — Breathing Rate",
+      "title": "Frequenza respiratoria: cosa significano i tuoi respiri al minuto",
+      "shortTitle": "🌬️ /min — Frequenza respiratoria",
       "sections": [
         {
-          "heading": "The Only Manual Override",
-          "body": "Breathing Rate is a unique biometric parameter. Unlike your heartbeat or digestion, breathing is the only function of the Autonomic Nervous System that you can control directly. It is your \"remote control\" for your internal state."
+          "heading": "Cos'è la frequenza respiratoria",
+          "body": "La frequenza respiratoria è il numero di respiri che fai al minuto. È uno dei parametri vitali di base ed è anche quello che puoi cambiare più facilmente di proposito, motivo per cui la respirazione lenta è usata in molti metodi di rilassamento."
         },
         {
-          "heading": "The Rhythm of Calm vs. The Rhythm of Survival",
-          "body": "Your breathing frequency is a live broadcast of how your brain perceives its environment:",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Il respiro cambia leggermente l'intensità di ogni onda del polso nel polpastrello. Lo strumento smussa l'ampiezza del segnale del polso su circa 5 secondi, trova i picchi di quest'onda lenta (distanti almeno 2 secondi), prende il tempo mediano tra di essi e lo converte in respiri al minuto. Mostra un valore solo quando trova almeno cinque picchi di questo tipo e il risultato è tra 6 e 30 respiri al minuto; altrimenti non mostra nulla. Poiché la finestra è breve e l'effetto è sottile, si tratta di una stima approssimativa."
+        },
+        {
+          "heading": "Intervalli tipici",
           "bullets": [
             {
-              "label": "Shallow and Fast Breathing",
-              "text": "An alarm signal. When you breathe from the upper chest more than 16–20 times per minute, you are telling your body: \"We are in danger.\" This sustains high cortisol levels and keeps the brain in a state of constant vigilance."
+              "label": "Circa 12–20 al minuto",
+              "text": "L'intervallo abituale a riposo per gli adulti."
             },
             {
-              "label": "Deep and Slow Breathing",
-              "text": "A safety signal. Reducing your frequency to 6–10 cycles per minute activates the Vagus Nerve. This instantly shifts the system into a mode of deep focus and emotional stability."
+              "label": "Più lenta (circa 6–10)",
+              "text": "Comune durante la respirazione lenta volontaria, la meditazione o il riposo profondo."
+            },
+            {
+              "label": "Più veloce (oltre circa 20 a riposo)",
+              "text": "Può accompagnare sforzo, ansia, febbre o malattia. Una respirazione costantemente veloce a riposo, o la mancanza di fiato, merita un controllo medico."
             }
           ]
         },
         {
-          "heading": "Biological Feedback",
-          "body": "At ONDA, we track your breathing rate to identify moments of \"Screen Apnea\"—when you unconsciously hold your breath or breathe erratically while checking emails or performing complex tasks. These micro-pauses trigger a cascade of stress responses that you might not even notice."
+          "heading": "Perché la respirazione lenta è così diffusa",
+          "body": "Respirare lentamente, spesso intorno a 5–7 respiri al minuto con un'espirazione rilassata e più lunga, tende ad aumentare le oscillazioni della frequenza cardiaca che seguono ogni respiro ed è associato a una sensazione di maggiore calma. È una tecnica a basso rischio e ben studiata. Se ti gira la testa, torna a respirare normalmente."
         },
         {
-          "heading": "The Art of Slowing Down",
-          "body": "Optimal breathing at rest is a rhythm that is almost invisible. The fewer cycles you need to saturate your blood with oxygen, the more efficiently your metabolic system is functioning. We teach you to \"under-breathe\"—making each breath rarer but higher in quality, turning every cycle into an act of restoration."
+          "heading": "Consigli per una lettura migliore",
+          "body": "Appoggia la mano, tieni il dito fermo con una pressione leggera, respira normalmente e lascia allo strumento almeno 20–30 secondi. Parlare o muoversi rende la stima inaffidabile."
         },
         {
-          "highlight": "Breathing is the only way to speak to your heart in its own language. By slowing the inhale, you dictate peace to your mind."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
+        },
+        {
+          "highlight": "Qui la frequenza respiratoria è stimata dal lento salire e scendere del segnale del polso; considerala approssimativa."
         }
       ]
     },
     "bpm": {
-      "title": "BPM: The Rhythm of Your Internal Operating System",
-      "shortTitle": "❤️ BPM — Heart Rate",
+      "title": "BPM: la tua frequenza cardiaca e cosa la cambia",
+      "shortTitle": "❤️ BPM — Frequenza cardiaca",
       "sections": [
         {
-          "heading": "The Biological Metronome",
-          "body": "BPM (Beats Per Minute) is more than just the speed at which your heart pumps blood. Within the ONDA ecosystem, we view the pulse as the primary interface of your Autonomic Nervous System. It is a live graph of how your body allocates resources in response to the challenges of the outside world."
+          "heading": "Cos'è la frequenza cardiaca",
+          "body": "La frequenza cardiaca è il numero di battiti del cuore al minuto (bpm). Sale quando il corpo ha bisogno di più flusso sanguigno, per esempio durante il movimento, con il caldo, lo stress, una malattia o dopo la caffeina, e scende durante il riposo e il sonno. La frequenza cardiaca a riposo è un utile indicatore di salute quotidiano se la segui nel tempo."
         },
         {
-          "heading": "A Symphony of Two States",
-          "body": "Your heart is constantly balancing between two \"conductors\":",
+          "heading": "Come lo calcola questo strumento",
+          "body": "Il polpastrello sopra la fotocamera cambia leggermente colore a ogni pulsazione (fotopletismografia, PPG). Lo strumento trova ogni picco del polso nel canale rosso, misura il tempo tra i picchi (intervalli RR), scarta quelli non plausibili e calcola la frequenza cardiaca come 60.000 diviso l'intervallo medio in millisecondi. I risultati fuori dall'intervallo 40–180 bpm vengono scartati. Lo strumento lavora su una finestra mobile di 15 secondi di video del polpastrello (circa 30 fotogrammi al secondo), individua ogni picco del polso, conserva solo gli intervalli battito-battito (RR) tra 400 e 1.500 ms che si discostano meno del 22% dalla mediana e smussa i valori mostrati in modo che cambino gradualmente."
+        },
+        {
+          "heading": "Intervalli tipici",
           "bullets": [
             {
-              "label": "Sympathetic Drive",
-              "text": "When your pulse rises, your body enters a high-performance or defensive mode. This is mobilization — essential for a sprint, but toxic when sustained."
+              "label": "Circa 60–100 bpm",
+              "text": "L'intervallo normale a riposo citato più spesso per gli adulti. Molte persone sane, soprattutto quelle attive, stanno più in basso a riposo."
             },
             {
-              "label": "Parasympathetic Calm",
-              "text": "A low heart rate is a signal of safety. In this state, the body initiates tissue regeneration, memory consolidation, and deep recovery."
+              "label": "Sotto i 60 bpm",
+              "text": "Spesso normale nelle persone allenate e durante il riposo profondo; consulta un medico se si accompagna a capogiri, svenimenti o stanchezza insolita."
+            },
+            {
+              "label": "Sopra i 100 bpm a riposo",
+              "text": "Può seguire caffeina, stress, disidratazione o malattia. Se resta alta a riposo o si accompagna a dolore al petto o mancanza di fiato, chiedi un parere medico."
             }
           ]
         },
         {
-          "heading": "Why Do We Track the Numbers?",
-          "body": "Your resting heart rate is your baseline biological cost of living.",
+          "heading": "Quanto è precisa una lettura con la fotocamera?",
+          "body": "La frequenza cardiaca rilevata con la fotocamera di solito è vicina a quella di un dispositivo di riferimento quando resti fermo con una buona luce, ma è meno affidabile con movimento, dita fredde, pressione forte o luce scarsa. È una stima educativa, non una misura medica."
+        },
+        {
+          "heading": "Consigli pratici",
           "bullets": [
             {
-              "label": "High BPM while seated",
-              "text": "You are wasting energy. Your body is \"running a marathon\" while you are simply answering emails. This is a direct path to cognitive burnout."
+              "label": "Misura la FC a riposo in modo costante",
+              "text": "Per esempio stando seduto tranquillo per un minuto dopo il risveglio, prima del caffè."
             },
             {
-              "label": "Optimal BPM",
-              "text": "This is the \"silent cruise\" mode — where the system operates at maximum efficiency, leaving a massive reserve for unexpected tasks."
+              "label": "Respirazione lenta",
+              "text": "Qualche minuto di respirazione lenta con un'espirazione più lunga spesso abbassa un po' la frequenza cardiaca."
+            },
+            {
+              "label": "Abitudini a lungo termine",
+              "text": "Esercizio aerobico regolare, buon sonno e poco alcol tendono ad abbassare la frequenza cardiaca a riposo nel giro di settimane."
             }
           ]
         },
         {
-          "heading": "A Tool for Calibration",
-          "body": "BPM in the ONDA app is a mirror. By noticing an abnormal spike in your pulse, you gain the opportunity to intervene consciously. We don't just measure beats; we teach you to master them. A short breathing session or a shift in focus can instantly \"drop\" your pulse, switching your brain from survival mode to creative flow."
+          "body": "L'app ONDA è un prodotto separato: si concentra su polso, respirazione e, con un Apple Watch, coerenza. Non usa le formule di questa pagina."
         },
         {
-          "highlight": "A high pulse is expensive. A low pulse is intentional. Manage the rhythm to manage your life."
+          "highlight": "Dalla frequenza cardiaca impari di più quando la misuri sempre nello stesso modo e ne guardi l'andamento."
         }
       ]
     }
