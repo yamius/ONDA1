@@ -25,8 +25,6 @@ import { TermsPage } from './pages/TermsPage'
 import { BioPage } from './pages/BioPage'
 import { BioMetricPage } from './pages/BioMetricPage'
 import { EmotonPage } from './pages/EmotonPage'
-import { TopicsPage } from './pages/TopicsPage'
-import { TopicPage } from './pages/TopicPage'
 import { ResearchPage } from './pages/ResearchPage'
 import { MeasurementsPage } from './pages/MeasurementsPage'
 import { HowItWorksPage } from './pages/HowItWorksPage'
@@ -216,10 +214,6 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`bio-${l}`} path={`/${l}/bio`} element={<BioPage />} />
           ))}
           <Route path="/bio/:metric"    element={<BioMetricPage />} />
-          <Route path="/topics"         element={<TopicsPage />} />
-          <Route path="/ru/topics"      element={<TopicsPage />} />
-          <Route path="/es/topics"      element={<TopicsPage />} />
-          <Route path="/topics/:slug"   element={<TopicPage />} />
           {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
             <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
           ))}

@@ -1688,14 +1688,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-03-23T01:05:26Z",
     "modified": "2026-09-29T13:56:55+02:00"
   },
-  "page:/topics": {
-    "published": "2026-05-09T13:49:45+02:00",
-    "modified": "2026-09-09T07:46:13+02:00"
-  },
-  "page:/topics/:slug": {
-    "published": "2026-05-09T13:49:45+02:00",
-    "modified": "2026-09-28T16:22:13+02:00"
-  },
   "page:/research": {
     "published": "2026-05-22T18:20:34+02:00",
     "modified": "2026-09-29T12:26:39+02:00"

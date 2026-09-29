@@ -13,7 +13,7 @@
         {
           "id": "what-is-hrv",
           "q": "What is HRV?",
-          "a": "Heart rate variability (HRV) is the variation in time between consecutive heartbeats, measured in milliseconds. Think of a drummer who speeds up and slows down a little with every breath rather than a metronome: a heart beating at 60 bpm does not fire exactly once per second — the gaps shift by tens of milliseconds, mostly under the control of the vagus nerve. More variation at rest usually means the \"rest and digest\" side of your nervous system is active. [Full explainer →](/topics/hrv)"
+          "a": "Heart rate variability (HRV) is the variation in time between consecutive heartbeats, measured in milliseconds. Think of a drummer who speeds up and slows down a little with every breath rather than a metronome: a heart beating at 60 bpm does not fire exactly once per second — the gaps shift by tens of milliseconds, mostly under the control of the vagus nerve. More variation at rest usually means the \"rest and digest\" side of your nervous system is active. [Full explainer →](/articles/topic/hrv-heart-rate)"
         },
         {
           "id": "what-does-hrv-measure",

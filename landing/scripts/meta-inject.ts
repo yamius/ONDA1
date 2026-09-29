@@ -4,7 +4,6 @@
  */
 import { IMAGE_DIMENSIONS } from '../src/data/image-manifest.generated'
 import { getTermBySlug, glossaryTerms } from '../src/data/glossary'
-import { getTopicBySlug, TOPICS } from '../src/data/topics'
 import { GLOSSARY_SEO } from '../src/data/glossary-seo'
 import { glossaryLayer } from '../src/data/glossary-layer'
 import { levelsData } from '../src/data/levels'
@@ -34,7 +33,6 @@ import { FAQ_I18N } from '../src/data/faq-i18n'
 import { TOOLS } from '../src/data/tools'
 import { TOOLS_I18N, TOOLS_EN } from '../src/data/tools-i18n'
 import { localizedToolCard } from '../src/data/tools-localized'
-import { TOPICS_I18N } from '../src/data/topics-i18n'
 import { COMPARE_I18N } from '../src/data/compare-i18n'
 import { ARTICLE_DATES } from '../src/data/article-dates.generated'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
@@ -435,7 +433,7 @@ export interface RouteMeta {
   /** Force <meta name=robots content="noindex, nofollow"> on the page.
    *  Used for placeholder topic hubs that haven't been reviewed yet. */
   noindex?: boolean
-  /** Topic hub data — for /topics/:slug pages with pillar in place. */
+  /** Topic hub data — for ONDA Library /articles/topic/<t> hubs. */
   topicHub?: {
     name: string
     description: string
@@ -3371,81 +3369,6 @@ export function getMetaForRoute(route: string): RouteMeta {
       faq: faqItems?.length
         ? { mainEntity: faqItems, url }
         : undefined,
-    }
-  }
-
-  // /topics — index of all topic hubs.
-  // /ru/topics, /es/topics — localized topics hub. Hub pages themselves EN-only,
-  // so ItemList entries keep EN /topics/<slug> URLs.
-  if (route === '/ru/topics' || route === '/es/topics') {
-    const c = route === '/ru/topics' ? TOPICS_I18N.ru : TOPICS_I18N.es
-    return {
-      title: c.metaTitle,
-      description: c.metaDescription,
-      url,
-      breadcrumbs,
-      itemList: {
-        name: c.h1,
-        description: c.metaDescription,
-        url,
-        items: TOPICS.filter((t) => !!t.pillar).map((t) => ({
-          url: `${SITE_URL}/topics/${t.slug}`,
-          name: t.name,
-        })),
-      },
-    }
-  }
-  if (route === '/topics') {
-    return {
-      title: 'Topic Hubs | ONDA Life — Articles by Cluster',
-      description:
-        'Articles and glossary terms grouped by semantic cluster: HRV, Circadian, Dopamine, Metabolic, Breathwork, Neuroplasticity, Cognitive, Spinal, Hormones, Longevity.',
-      url,
-      breadcrumbs,
-      itemList: {
-        name: 'Topic Hubs',
-        description: 'Pillar hubs grouping ONDA articles and glossary terms by cluster.',
-        url,
-        items: TOPICS.filter((t) => !!t.pillar).map((t) => ({
-          url: `${SITE_URL}/topics/${t.slug}`,
-          name: t.name,
-        })),
-      },
-    }
-  }
-
-  // /topics/:slug — single hub. Hubs without `pillar` ship with noindex
-  // so half-finished placeholders never enter Google's index. Hubs WITH
-  // pillar emit topicHub data for CollectionPage + ItemList JSON-LD.
-  const topicMatch = route.match(/^\/topics\/([^/]+)$/)
-  if (topicMatch) {
-    const topic = getTopicBySlug(topicMatch[1])
-    if (topic) {
-      const live = !!topic.pillar
-      return {
-        title: `${topic.name} | ONDA Life`,
-        description: topic.shortDescription,
-        url,
-        breadcrumbs,
-        noindex: !live,
-        topicHub: live
-          ? {
-              name: topic.name,
-              description: topic.shortDescription,
-              url,
-              articleSlugs: topic.articleSlugs,
-              glossarySlugs: topic.glossarySlugs,
-              // Freshness = newest git date among the hub's articles.
-              dateModified:
-                topic.articleSlugs
-                  .map((s) => ARTICLE_DATES[s]?.modified)
-                  .filter((d): d is string => !!d)
-                  .sort()
-                  .at(-1)
-                  ?.slice(0, 10) ?? undefined,
-            }
-          : undefined,
-      }
     }
   }
 

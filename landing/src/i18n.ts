@@ -197,7 +197,7 @@ export const ARTICLES_ONLY_LANGS: readonly Lang[] = ['it', 'nl', 'ja', 'pl', 'pt
 /**
  * Prefix an internal path with the active language so navigation keeps the
  * user in their chosen language. EN returns the path unchanged (bare root);
- * already-prefixed paths and non-localized routes (/the-stack, /topics) are
+ * already-prefixed paths and non-localized routes (/the-stack) are
  * returned as-is. Idempotent — safe to apply more than once.
  *
  * Every internal <Link to> / markdown link rendered inside the app must run

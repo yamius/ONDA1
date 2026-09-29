@@ -408,7 +408,6 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   // ONDA Library topic hubs: cluster = the languages in which each hub exists.
   ...Object.fromEntries(ARTICLE_TOPIC_HUBS.map((h) => [`/articles/topic/${h.slug}`, hubLangs(h.slug) as Lang[]])),
   '/product': ['en', 'ru', 'es'],
-  '/topics': ['en', 'ru', 'es'],
   '/faq': ['en', 'ru', 'es'],
   '/tools': [...SUPPORTED_LANGS],
   '/compare': ['en', 'ru', 'es'],

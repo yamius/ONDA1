@@ -13,7 +13,7 @@
         {
           "id": "what-is-hrv",
           "q": "C'est quoi la VFC (HRV) ?",
-          "a": "La variabilité de la fréquence cardiaque (VFC) est la variation du temps entre deux battements consécutifs, mesurée en millisecondes. Imaginez un batteur qui accélère et ralentit un peu à chaque respiration plutôt qu'un métronome : un cœur à 60 bpm ne bat pas exactement une fois par seconde — les intervalles varient de plusieurs dizaines de millisecondes, surtout sous le contrôle du nerf vague. Plus de variation au repos signifie généralement que la partie « repos et digestion » de votre système nerveux est active. [Explication complète →](/topics/hrv)"
+          "a": "La variabilité de la fréquence cardiaque (VFC) est la variation du temps entre deux battements consécutifs, mesurée en millisecondes. Imaginez un batteur qui accélère et ralentit un peu à chaque respiration plutôt qu'un métronome : un cœur à 60 bpm ne bat pas exactement une fois par seconde — les intervalles varient de plusieurs dizaines de millisecondes, surtout sous le contrôle du nerf vague. Plus de variation au repos signifie généralement que la partie « repos et digestion » de votre système nerveux est active. [Explication complète →](/articles/topic/hrv-heart-rate)"
         },
         {
           "id": "what-does-hrv-measure",

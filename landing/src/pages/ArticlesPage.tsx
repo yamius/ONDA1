@@ -45,7 +45,6 @@ function setMeta(name: string, content: string, isProperty = false) {
 const SECTION_LANGS: Record<string, readonly string[]> = {
   '/measurements': ['es', 'ru'],
   '/research': [],
-  '/topics': ['es', 'ru'],
   '/reviews': ['es', 'ru', 'uk'],
   '/glossary': ['es'],
 }
@@ -273,9 +272,6 @@ export function ArticlesPage() {
         </Link>
         <Link to={sectionHref('/glossary', lang)} className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/50 transition-all hover:border-white/20 hover:text-white/70">
           {ui.glossary}
-        </Link>
-        <Link to={sectionHref('/topics', lang)} className="rounded-lg border border-white/10 px-4 py-1.5 font-mono text-xs text-white/35 transition-all hover:border-white/20 hover:text-white/60">
-          {ui.topicClusters}
         </Link>
       </nav>
 

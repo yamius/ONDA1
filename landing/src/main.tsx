@@ -74,8 +74,6 @@ const TermsPage          = lazyNs('terms', () => import('./pages/TermsPage').the
 const BioPage            = lazyNs('bio', () => import('./pages/BioPage').then(m => ({ default: m.BioPage })))
 const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricPage').then(m => ({ default: m.BioMetricPage })))
 const EmotonPage         = lazyNs('emoton', () => import('./pages/EmotonPage').then(m => ({ default: m.EmotonPage })))
-const TopicsPage         = lazy(() => import('./pages/TopicsPage').then(m => ({ default: m.TopicsPage })))
-const TopicPage          = lazy(() => import('./pages/TopicPage').then(m => ({ default: m.TopicPage })))
 const ArticlesSlugRouter = lazyNs(['articles', 'glossary-light'], () => import('./components/ArticlesSlugRouter'))
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
 const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
@@ -222,10 +220,6 @@ const routeElements = (
             {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => (
               <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
             ))}
-            <Route path="/topics"         element={<TopicsPage />} />
-            <Route path="/ru/topics"      element={<TopicsPage />} />
-            <Route path="/es/topics"      element={<TopicsPage />} />
-            <Route path="/topics/:slug"   element={<TopicPage />} />
             <Route path="/research"              element={<ResearchPage />} />
             <Route path="/measurements"          element={<MeasurementsPage />} />
             <Route path="/ru/measurements"       element={<MeasurementsPage />} />

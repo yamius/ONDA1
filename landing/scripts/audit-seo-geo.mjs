@@ -34,7 +34,6 @@ const typeOf = (p) => {
   if (/^\/reviews\/./.test(b)) return 'review-or-category'
   if (/^\/tools\/./.test(b)) return 'tool'
   if (/^\/(level|part|bio)\//.test(b)) return 'path/bio'
-  if (/^\/topics\//.test(b)) return 'topic-pillar'
   return 'other'
 }
 const decode = (s) => s.replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#x27;|&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>')

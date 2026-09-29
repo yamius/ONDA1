@@ -21,7 +21,6 @@ import { hubLangs } from '../src/data/article-topic-listing'
     )
   }
 }
-import { TOPIC_SLUGS, INDEXED_TOPIC_SLUGS } from '../src/data/topics'
 import { parts } from '../src/pages/PartPage'
 import { levelsData } from '../src/data/levels'
 import { METRIC_DETAILS } from '../src/data/bioMetrics'
@@ -1041,9 +1040,6 @@ export const ALL_PILOT_ARTICLE_SLUGS: readonly string[] = Array.from(
 const nonLocalizedStaticPaths = [
   '/glossary',
   '/the-stack',
-  '/topics',
-  '/ru/topics',
-  '/es/topics',
   '/reviews',
   '/reviews/methodology',
   // /research — dedicated research-partner landing, linked from the
@@ -1269,13 +1265,6 @@ const nonLocalizedStaticPaths = [
   '/embed/hrv',
 ]
 
-// Every topic hub URL is prerendered. Hubs without a pillar render
-// with <meta name=robots content=noindex> so the placeholder never
-// pollutes Google's index — the URL still resolves for direct navigation
-// from /topics. INDEXED_TOPIC_SLUGS is the subset that actually goes
-// into sitemap.xml + hreflang (driven by data/topics.ts).
-const topicHubRoutes = TOPIC_SLUGS.map((s) => `/topics/${s}`)
-
 const staticPaths = [
   ...localizedRoutes,
   ...nonLocalizedStaticPaths,
@@ -1298,7 +1287,6 @@ export function getPrerenderRoutes(): string[] {
     ...localizedPartRoutes,
     ...localizedLevelRoutes,
     ...localizedMetricRoutes,
-    ...topicHubRoutes,
     // Per-category landing pages — /reviews/hrv-trackers, /reviews/cgm, etc.
     // Each gets its own focused page that ranks for the dominant search
     // keyword ("best HRV tracker", "best CGM", "best EEG headset") instead
@@ -1327,7 +1315,6 @@ export function getPrerenderRoutes(): string[] {
 }
 
 /** Slugs that should appear in sitemap.xml (i.e. have a pillar). */
-export { INDEXED_TOPIC_SLUGS }
 
 /** Set of all routes that are localized variants of static pages — used by prerender + sitemap. */
 export const LOCALIZED_ROUTE_SET = new Set(localizedRoutes)

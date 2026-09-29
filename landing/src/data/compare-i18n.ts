@@ -6,7 +6,7 @@
  * matrix (a big readability win for the flagship table). NOT localized:
  * competitor names, category labels, round-up/head-to-head titles + verdicts —
  * they are the same content as the English-only /compare/<slug> detail pages
- * the cards link to, so they stay EN (mirrors /tools and /topics). Cross-links
+ * the cards link to, so they stay EN (mirrors /tools). Cross-links
  * resolve through langHref (localized where a route exists, EN otherwise).
  *
  * axisLabels is keyed by the exact CAPABILITIES strings in onda-vs.ts.
