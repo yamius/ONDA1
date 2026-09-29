@@ -3061,6 +3061,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 ## Depletion and Restoration
 
 Sustained focus depletes neurotransmitters. Ultradian rhythms (90/20-minute cycles) allow timely restoration. Working against these cycles leads to cognitive burnout.
+
 ## Why do neurotransmitters matter?
 
 Neurotransmitters matter because nearly every signal in the nervous system depends on them, including signals that leave the brain to control the heart, gut, and muscles. Acetylcholine, for example, is the messenger the vagus nerve uses to slow the heartbeat, and it is also what motor nerves release to make skeletal muscles contract.
