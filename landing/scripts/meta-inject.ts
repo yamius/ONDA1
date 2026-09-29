@@ -321,9 +321,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'vagus-nerve-master-key':
     'How the vagus nerve regulates your stress response and recovery — and what slow, paced breathing can actually influence.',
   'dopamine-architecture-mastering-desire':
-    'How dopamine works as a prediction-error signal — understanding drive, reward, and the traps that hijack it.',
-  'dopamine-stacking-preventing-circuit-overload':
-    'How chasing dopamine leads to burnout — and what actually helps the reward system settle and recover.',
+    'Dopamine drives wanting and learning, not pleasure. What the science shows about motivation, why "reset your baseline" claims overreach, and what really helps.',
   'circadian-reset-mastering-light':
     'How light sets your circadian clock — using photic timing to ease circadian drift, insomnia, and brain fog.',
   'metabolic-flexibility-dual-fuel-system':
@@ -2631,19 +2629,7 @@ export function getMetaForRoute(route: string): RouteMeta {
       }
       const hackQuotes = extractHackQuotes(article.content)
       const techArticleExtras =
-        slug === 'dopamine-stacking-preventing-circuit-overload'
-          ? {
-              keywords: [
-                'dopamine baseline',
-                'receptor downregulation',
-                'glutamate excitotoxicity',
-                'neurochemistry optimization',
-                'biohacking focus',
-                'intermittent fasting for brain',
-              ],
-              audience: 'Biohackers, Neuroscientists, High-Performers',
-            }
-          : slug === 'cacao-stem-cells'
+        slug === 'cacao-stem-cells'
             ? {
                 keywords: [
                   'stem cell mobilization',

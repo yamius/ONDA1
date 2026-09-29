@@ -29,7 +29,7 @@ const article: Article = {
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Stacking stimuli fries your receptors. Learn to prevent circuit overload with Dopamine Stacking protocols.',
-    link: '/articles/dopamine-stacking-preventing-circuit-overload',
+    link: '/articles/dopamine-architecture-mastering-desire',
     linkText: 'Dopamine Stacking',
   },
   content: `

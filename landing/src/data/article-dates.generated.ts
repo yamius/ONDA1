@@ -208,10 +208,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-02-26T15:36:15+01:00",
     "modified": "2026-09-29T10:50:12+02:00"
   },
-  "dopamine-stacking-preventing-circuit-overload": {
-    "published": "2026-03-08T01:19:56+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
-  },
   "dysautonomia-long-covid-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
     "modified": "2026-09-29T12:26:39+02:00"
@@ -442,7 +438,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "metabolic-flexibility-dual-fuel-system": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T22:24:20+02:00"
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
@@ -1630,7 +1626,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-29T20:34:14+02:00"
+    "modified": "2026-09-29T22:24:20+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1638,7 +1634,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-29T21:37:54+02:00"
+    "modified": "2026-09-29T22:24:20+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1646,7 +1642,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-29T21:07:41+02:00"
+    "modified": "2026-09-29T22:24:20+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
@@ -1742,7 +1738,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-09-29T19:27:56+02:00"
+    "modified": "2026-09-29T22:24:20+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

@@ -418,18 +418,6 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Hand rhythmic movement back to the CPGs instead of micromanaging it consciously. A cross-lateral reset re-establishes clean left-right coordination, cadence entrainment locks a steady rhythm, and sensory override (varying terrain or surface) retunes the pattern \u2014 turning effortful motion into flow.",
     },
   ],
-  "dopamine-stacking-preventing-circuit-overload": [
-    {
-      question: "What is dopamine stacking?",
-      answer:
-        "Dopamine stacking is layering several stimulating inputs at once \u2014 music plus scrolling plus snacking plus a screen. Each adds a spike, and together they overdrive the reward circuit, flattening your baseline so ordinary tasks start to feel grey and effortful.",
-    },
-    {
-      question: "How do I prevent dopamine burnout?",
-      answer:
-        "Protect the baseline rather than chasing spikes. Monotask to give the reward circuit one input at a time, run periodic \"data fasts\" from hyper-stimulating inputs to let receptors resensitise, and use cold exposure to raise baseline dopamine slowly and cleanly instead of with a crash-prone spike.",
-    },
-  ],
   "electric-medicine-neuromodulation": [
     {
       question: "What is neuromodulation?",
@@ -698,14 +686,24 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   'dopamine-architecture-mastering-desire': [
     {
-      question: 'How do I fix my dopamine levels?',
+      question: 'Is dopamine the pleasure chemical?',
       answer:
-        "To stabilize dopamine, implement a 'Dopamine Fast' by reducing hyper-stimulating inputs (social media, ultra-processed food), getting morning sunlight, and practicing delayed gratification.",
+        'No. Dopamine is more closely tied to wanting than to liking. In animal studies, cutting dopamine left the enjoyment of sweet tastes intact but reduced the effort animals would spend to get them. Dopamine makes rewards and the cues that predict them stand out as worth pursuing (Berridge and Robinson, 1998).',
     },
     {
-      question: 'What is a dopamine baseline?',
+      question: 'What is a reward prediction error?',
       answer:
-        'The dopamine baseline is the steady level of dopamine circulating in your system. Spiking it too high with cheap rewards leads to a subsequent crash below the baseline, causing lack of motivation.',
+        'It is the gap between the reward you expected and the one you got. Monkey studies showed dopamine neurons fire more for an unexpected reward, shift their response to cues that predict it, and dip when an expected reward fails to arrive (Schultz, 1997). This signal helps the brain learn what leads to good outcomes.',
+    },
+    {
+      question: 'Can phones or sugar lower your dopamine baseline?',
+      answer:
+        'There is little direct evidence in people that phones or sugar lower a measurable dopamine baseline or reduce receptors. Those findings come from drug addiction research. The better-supported explanation is habit learning: cues followed by quick rewards become harder to resist, and slower effortful tasks feel less appealing by comparison.',
+    },
+    {
+      question: 'Does cold water raise dopamine by 250%?',
+      answer:
+        'Not in the way it is usually quoted. In a 2000 study, one hour of immersion in 14 °C water raised plasma dopamine, measured in the blood, by about 250%. That is not brain dopamine, it was not a two-minute shower, and the study reported no three-to-four-hour effect.',
     },
   ],
   'metabolic-flexibility-dual-fuel-system': [

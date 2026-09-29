@@ -20,7 +20,6 @@ const ARTICLE_SHORT: Record<string, string> = {
   'breathwork-command-line-interface': 'breathwork',
   'hrv-training-nervous-system-latency': 'hrv',
   'dopamine-architecture-mastering-desire': 'dopamine',
-  'dopamine-stacking-preventing-circuit-overload': 'dopamine-stack',
   'digital-dementia-attentional-control': 'digital',
   'circadian-reset-mastering-light': 'circadian',
   'circadian-lighting-dark-therapy': 'circadian-light',
@@ -72,13 +71,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'hrv-biofeedback-resync': 'hrv-training-nervous-system-latency',
   'hrv-cold-spike': 'hrv-training-nervous-system-latency',
   // dopamine-architecture-mastering-desire
-  'dopamine-intermittent-reward': 'dopamine-architecture-mastering-desire',
-  'dopamine-morning-light': 'dopamine-architecture-mastering-desire',
-  'dopamine-cold-baseline': 'dopamine-architecture-mastering-desire',
-  // dopamine-stacking-preventing-circuit-overload
-  'dopamine-stacking-monotasking': 'dopamine-stacking-preventing-circuit-overload',
-  'dopamine-stacking-zero-input': 'dopamine-stacking-preventing-circuit-overload',
-  'dopamine-stacking-cold-shock': 'dopamine-stacking-preventing-circuit-overload',
+  'dopamine-small-next-step': 'dopamine-architecture-mastering-desire',
+  'dopamine-cue-control': 'dopamine-architecture-mastering-desire',
+  'dopamine-sleep-exercise': 'dopamine-architecture-mastering-desire',
   // digital-dementia-attentional-control
   'digital-analog-morning': 'digital-dementia-attentional-control',
   'digital-monotasking': 'digital-dementia-attentional-control',

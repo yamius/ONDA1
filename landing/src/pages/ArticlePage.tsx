@@ -24,7 +24,6 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'breathwork-command-line-interface': 'nervous-system',
   'hrv-training-nervous-system-latency': 'nervous-system',
   'dopamine-architecture-mastering-desire': 'reward-logic',
-  'dopamine-stacking-preventing-circuit-overload': 'reward-logic',
   'digital-dementia-attentional-control': 'reward-logic',
   'circadian-reset-mastering-light': 'energy-grid',
   'circadian-lighting-dark-therapy': 'energy-grid',
@@ -61,8 +60,7 @@ const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
 
 const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'vagus-nerve-master-key': '4 min 20 sec',
-  'dopamine-architecture-mastering-desire': '5 min 15 sec',
-  'dopamine-stacking-preventing-circuit-overload': '3 min 15 sec',
+  'dopamine-architecture-mastering-desire': '7 min',
   'cacao-stem-cells': '2 min 45 sec',
   'circadian-reset-mastering-light': '3 min 45 sec',
   'metabolic-flexibility-dual-fuel-system': '7 min 30 sec',
@@ -444,7 +442,6 @@ export function ArticlePage() {
       const isHRVProtocol = isProtocol && article.slug === 'hrv-training-nervous-system-latency'
       const isDigitalDementiaProtocol = isProtocol && article.slug === 'digital-dementia-attentional-control'
       const isDopamineProtocol = isProtocol && article.slug === 'dopamine-architecture-mastering-desire'
-      const isDopamineStackingProtocol = isProtocol && article.slug === 'dopamine-stacking-preventing-circuit-overload'
       const isCacaoStemCellsProtocol = isProtocol && article.slug === 'cacao-stem-cells'
       const isLongevityProtocol = isProtocol && article.slug === 'longevity-hardware-cellular-cleanup'
       const isCognitiveProtocol = isProtocol && article.slug === 'cognitive-architecture-nootropic-stacks'
@@ -460,7 +457,7 @@ export function ArticlePage() {
       return (
         <h3
           id={id}
-          className={`mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol || isDopamineStackingProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}
+          className={`mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isGlymphaticProtocol ? 'text-indigo-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}
           {...props}
         >
           {children}
@@ -641,8 +638,6 @@ export function ArticlePage() {
           content.includes('Inhale (4s)') ||
           content.includes('breath-holds') ||
           content.includes('Apnea'))
-      const isDopamineStackingProtocol =
-        isHackBlock && article.slug === 'dopamine-stacking-preventing-circuit-overload'
       const isCacaoStemCellsProtocol = isHackBlock && article.slug === 'cacao-stem-cells'
       const isCognitiveNeuralProtocol = isHackBlock && article.slug === 'cognitive-architecture-neural-throughput'
       const isMorningProtocol =
@@ -699,8 +694,6 @@ export function ArticlePage() {
         blockquoteClass = 'border-l-2 border-rose-500 bg-rose-500/5 pl-6 pr-4'
       } else if (isCo2ToleranceProtocol) {
         blockquoteClass = 'border-l-2 border-cyan-500 bg-cyan-500/5 pl-6 pr-4'
-      } else if (isDopamineStackingProtocol) {
-        blockquoteClass = 'border-l-2 border-purple-500 bg-purple-500/5 pl-6 pr-4'
       } else if (isCacaoStemCellsProtocol) {
         blockquoteClass = 'border-l-2 border-emerald-500 bg-emerald-500/5 pl-6 pr-4'
       } else if (isHackBlock) {

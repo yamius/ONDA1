@@ -34,4 +34,5 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('h2h', 'apple-watch-series-12-vs-whoop-5-0', '2026-09-28', ALL.filter((l) => l !== 'es')),
   ...everywhere('articles', 'energy-sensor-leptin', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'metabolic-flexibility-dual-fuel-system', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'dopamine-architecture-mastering-desire', '2026-09-29', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

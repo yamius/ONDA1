@@ -106,7 +106,6 @@ const ES_ARTICLE_PILOT_BASE: readonly string[] = [
   'circadian-reset-mastering-light',
   'metabolic-flexibility-dual-fuel-system',
   'breathwork-command-line-interface',
-  'dopamine-stacking-preventing-circuit-overload',
   'nightly-flush-glymphatic-neural-cache',
   'nervous-system-ping-latency',
   'fault-tolerant-human-hrv-buffer',
@@ -362,7 +361,6 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'cognitive-architecture-neural-throughput', publishOn: '2026-10-19' },
   { slug: 'cognitive-architecture-nootropic-stacks', publishOn: '2026-10-19' },
   { slug: 'digital-dementia-attentional-control', publishOn: '2026-10-19' },
-  { slug: 'dopamine-stacking-preventing-circuit-overload', publishOn: '2026-10-19' },
   // Structural / spinal / feedback pillars — RE-TRANSLATED. Batch 2026-10-26.
   { slug: 'hydraulic-viscosity-onda-transport-bus', publishOn: '2026-10-26' },
   { slug: 'neural-hydraulics-csf-flow', publishOn: '2026-10-26' },

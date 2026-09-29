@@ -23,6 +23,8 @@
     { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/glossary/insular-cortex", "destination": "/:lang/glossary/insula", "permanent": true },
     { "source": "/articles/metabolic-redundancy-hybrid-power-architecture", "destination": "/articles/metabolic-flexibility-dual-fuel-system", "permanent": true },
     { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/articles/metabolic-redundancy-hybrid-power-architecture", "destination": "/:lang/articles/metabolic-flexibility-dual-fuel-system", "permanent": true },
+    { "source": "/articles/dopamine-stacking-preventing-circuit-overload", "destination": "/articles/dopamine-architecture-mastering-desire", "permanent": true },
+    { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/articles/dopamine-stacking-preventing-circuit-overload", "destination": "/:lang/articles/dopamine-architecture-mastering-desire", "permanent": true },
     { "source": "/topics", "destination": "/articles", "permanent": true },
     { "source": "/topics/hrv", "destination": "/articles/topic/hrv-heart-rate", "permanent": true },
     { "source": "/topics/breathwork", "destination": "/articles/topic/breathing", "permanent": true },

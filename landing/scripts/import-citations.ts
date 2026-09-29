@@ -72,7 +72,10 @@ for (const f of readdirSync(dir).filter((f) => f.endsWith('.json'))) {
       const words = (s: string) => new Set(plain(s).split(/\s+/).filter((w) => w.length > 3))
       const tw = words(c.title), cw = words(m.title?.[0] ?? '')
       const titleOverlap = tw.size && cw.size ? [...tw].filter((w) => cw.has(w)).length / Math.min(tw.size, cw.size) : 0
-      const authorOk = families.length
+      // Crossref sometimes stores mangled names ("?r?mek" for Šrámek): when any
+      // author name carries replacement characters, match on title + year instead.
+      const mangled = (m.author ?? []).some((a) => /[?�]/.test(a.family ?? ''))
+      const authorOk = families.length && !mangled
         ? families.some((f) => f && (claimed.includes(f) || f.includes(claimed)))
         : titleOverlap >= 0.8
       if (yearOk && authorOk && titleOverlap >= 0.5) checked.push(c)

@@ -211,7 +211,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "digital-dementia-attentional-control": "lifestyle",
   "does-dopamine-detox-work": "lifestyle",
   "dopamine-architecture-mastering-desire": "lifestyle",
-  "dopamine-stacking-preventing-circuit-overload": "lifestyle",
   "dysautonomia-long-covid-breathing": "breathing",
   "eating-late-heart-rate-sleep": "lifestyle",
   "electric-medicine-neuromodulation": "stress-vagus",

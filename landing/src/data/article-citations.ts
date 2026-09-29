@@ -568,13 +568,13 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "dopamine-architecture-mastering-desire": [
     {
-      "title": "Human physiological responses to immersion into water of different temperatures",
-      "authors": "Šrámek P et al.",
-      "year": 2000,
-      "journal": "European Journal of Applied Physiology",
-      "doi": "10.1007/s004210050065",
-      "pmid": "10751106",
-      "url": "https://doi.org/10.1007/s004210050065"
+      "title": "What is the role of dopamine in reward: hedonic impact, reward learning, or incentive salience?",
+      "authors": "Berridge KC et al.",
+      "year": 1998,
+      "journal": "Brain Research Reviews",
+      "doi": "10.1016/s0165-0173(98)00019-8",
+      "pmid": "9858756",
+      "url": "https://doi.org/10.1016/s0165-0173(98)00019-8"
     },
     {
       "title": "A neural substrate of prediction and reward",
@@ -584,6 +584,51 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1126/science.275.5306.1593",
       "pmid": "9054347",
       "url": "https://doi.org/10.1126/science.275.5306.1593"
+    },
+    {
+      "title": "The mysterious motivational functions of mesolimbic dopamine",
+      "authors": "Salamone JD et al.",
+      "year": 2012,
+      "journal": "Neuron",
+      "doi": "10.1016/j.neuron.2012.10.021",
+      "pmid": "23141060",
+      "url": "https://doi.org/10.1016/j.neuron.2012.10.021"
+    },
+    {
+      "title": "Neurobiologic Advances from the Brain Disease Model of Addiction",
+      "authors": "Volkow ND et al.",
+      "year": 2016,
+      "journal": "New England Journal of Medicine",
+      "doi": "10.1056/NEJMra1511480",
+      "pmid": "26816013",
+      "url": "https://doi.org/10.1056/NEJMra1511480"
+    },
+    {
+      "title": "Human physiological responses to immersion into water of different temperatures",
+      "authors": "Šrámek P et al.",
+      "year": 2000,
+      "journal": "European Journal of Applied Physiology",
+      "doi": "10.1007/s004210050065",
+      "pmid": "10751106",
+      "url": "https://doi.org/10.1007/s004210050065"
+    },
+    {
+      "title": "Effects of exercise training on older patients with major depression",
+      "authors": "Blumenthal JA et al.",
+      "year": 1999,
+      "journal": "Archives of Internal Medicine",
+      "doi": "10.1001/archinte.159.19.2349",
+      "pmid": "10547175",
+      "url": "https://doi.org/10.1001/archinte.159.19.2349"
+    },
+    {
+      "title": "Impulse control disorders in Parkinson disease: a cross-sectional study of 3090 patients",
+      "authors": "Weintraub D et al.",
+      "year": 2010,
+      "journal": "Archives of Neurology",
+      "doi": "10.1001/archneurol.2010.65",
+      "pmid": "20457959",
+      "url": "https://doi.org/10.1001/archneurol.2010.65"
     }
   ],
   "dysautonomia-long-covid-breathing": [

@@ -65,15 +65,12 @@ const STACK_COMPONENTS: Component[] = [
   {
     name: 'REWARD_LOGIC',
     protocols: [
-      { id: 'dopamine-intermittent-reward', name: 'INTERMITTENT_REWARD', params: '(COIN_FLIP)' },
-      { id: 'dopamine-morning-light', name: 'MORNING_LIGHT_TRIGGER', params: '(10-15min)' },
-      { id: 'dopamine-cold-baseline', name: 'COLD_INDUCED_BASELINE', params: '(2min)' },
+      { id: 'dopamine-small-next-step', name: 'SMALL_NEXT_STEP', params: '(ONE_CLEAR_STEP)' },
+      { id: 'dopamine-cue-control', name: 'CUE_CONTROL', params: '(PHONE_OUT_OF_REACH)' },
+      { id: 'dopamine-sleep-exercise', name: 'SLEEP_AND_MOVEMENT', params: '(DAILY)' },
       { id: 'digital-analog-morning', name: 'ANALOG_MORNING', params: '(60min_NO_DIGITAL)' },
       { id: 'digital-monotasking', name: 'MONOTASKING_BLOCKS', params: '(90min_DEEP_WORK)' },
       { id: 'digital-dopamine-fast', name: 'DOPAMINE_FAST', params: '(4h_SUNDAY)' },
-      { id: 'dopamine-stacking-monotasking', name: 'MONOTASKING_KERNEL', params: '(ONE_ACTIVITY_AT_A_TIME)' },
-      { id: 'dopamine-stacking-zero-input', name: 'ZERO_INPUT_FAST', params: '(90min_NO_SCREENS)' },
-      { id: 'dopamine-stacking-cold-shock', name: 'COLD_SHOCK_BASELINE', params: '(2min_3-10C)' },
     ],
   },
   {
