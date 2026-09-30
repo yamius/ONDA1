@@ -2390,8 +2390,8 @@
     },
     "signos-vs-levels": {
       "title": "Signos vs Levels (2026)",
-      "description": "Signos vs Levels — comparación directa de ONDA de dos programas de CGM sobre Dexcom G7. Coaching de IA para pérdida de peso frente al motor de insights para biohackers más profundo.",
-      "intro": "Signos y Levels son los dos programas de CGM que más se comparan una vez que el comprador reduce el campo al hardware Dexcom G7. El mismo sensor debajo, objetivos distintos encima. Signos se construyó para la pérdida de peso — un agente de IA que empuja indicaciones comida a comida para aplanar los picos de glucosa. Levels se construyó como motor de insights para biohackers — la analítica de impacto de las comidas más profunda, con un consejo médico asesor solvente. La decisión es qué tarea tienes.",
+      "description": "Signos vs Levels — comparación directa de ONDA de dos programas de CGM sobre la plataforma Dexcom G7. Coaching de IA para pérdida de peso frente al motor de insights para biohackers más profundo.",
+      "intro": "Signos y Levels son los dos programas de CGM que más se comparan una vez que el comprador reduce el campo al hardware de la plataforma Dexcom G7 (Levels ahora envía Stelo, la versión OTC). La misma plataforma de sensor debajo, objetivos distintos encima. Signos se construyó para la pérdida de peso — un agente de IA que empuja indicaciones comida a comida para aplanar los picos de glucosa. Levels se construyó como motor de insights para biohackers — la analítica de impacto de las comidas más profunda, con un consejo médico asesor solvente. La decisión es qué tarea tienes.",
       "verdict": "Tareas distintas. Signos para pérdida de peso con coaching de IA que impulsa el cambio de conducta a diario. Levels para insight continuo de biohacker sin el enfoque de pérdida de peso.",
       "bestForA": "Elige Signos si la pérdida de peso es la razón principal por la que llevas un CGM y respondes bien a las indicaciones de IA dentro de la app — sugerencias comida a comida, avisos de ejercicio, consejos para acompañar los snacks.",
       "bestForB": "Elige Levels si tratas el CGM como un instrumento de biohacker de propósito general — ejecutando protocolos, siguiendo el tiempo en rango, iterando experimentos con comidas sin un enfoque de pérdida de peso.",
@@ -2426,7 +2426,7 @@
         },
         {
           "name": "Precio",
-          "note": "Signos: $140–$160/month. Levels: $199/month. Signos es notablemente más barato."
+          "note": "Signos: $140–$160/month con sensores continuos. Levels: membresía de $399–$1,329/year con 1–2 meses de CGM incluidos; el CGM adicional es un complemento de pago. Levels es más barato para bloques ocasionales de CGM; Signos es más sencillo para uso continuo."
         }
       ],
       "faq": [
@@ -2444,10 +2444,10 @@
         },
         {
           "q": "¿Es Signos más barato que Levels?",
-          "a": "Sí — Signos cuesta $140–$160/month frente a los $199 de Levels. Ambos incluyen sensores Dexcom G7. En un año la diferencia ronda los $500."
+          "a": "Ya no en el precio de referencia. Signos cuesta $140–$160/month con sensores continuos; Levels ahora vende membresías anuales ($399 Core con un mes de CGM, $1,329 Complete con dos meses) y cobra aparte por más CGM. Para bloques ocasionales de CGM Levels es más barato; para uso continuo la diferencia se reduce."
         }
       ],
-      "content": "## En resumen\n\nSignos y Levels vienen con el mismo sensor Dexcom G7. La decisión es si quieres coaching de IA para pérdida de peso o un motor de insights para biohackers de propósito general. Resuelven tareas distintas, aunque parezcan el mismo producto.\n\n## Cuándo Signos es la elección correcta\n\nSi la pérdida de peso es la razón explícita por la que llevas un CGM y respondes bien a las indicaciones de IA dentro de la app que empujan recomendaciones comida a comida, Signos es la forma adecuada. La directividad conductual es el valor — y cuesta unos $500/año menos que Levels.\n\n## Cuándo Levels es la elección correcta\n\nSi tratas el CGM como un instrumento de autoexperimentación de propósito general — ejecutando protocolos de ayuno, siguiendo el tiempo en rango como métrica, iterando sobre las curvas de comida semana a semana sin un enfoque de pérdida de peso — Levels es la forma adecuada. El motor de insights más profundo y la biblioteca de contenidos más amplia son lo que paga el sobreprecio."
+      "content": "## En resumen\n\nSignos y Levels vienen con el mismo sensor de la plataforma Dexcom G7 (Levels, mediante Stelo). La decisión es si quieres coaching de IA para pérdida de peso o un motor de insights para biohackers de propósito general. Resuelven tareas distintas, aunque parezcan el mismo producto.\n\n## Cuándo Signos es la elección correcta\n\nSi la pérdida de peso es la razón explícita por la que llevas un CGM y respondes bien a las indicaciones de IA dentro de la app que empujan recomendaciones comida a comida, Signos es la forma adecuada. La directividad conductual es el valor — y cuesta unos $500/año menos que Levels.\n\n## Cuándo Levels es la elección correcta\n\nSi tratas el CGM como un instrumento de autoexperimentación de propósito general — ejecutando protocolos de ayuno, siguiendo el tiempo en rango como métrica, iterando sobre las curvas de comida semana a semana sin un enfoque de pérdida de peso — Levels es la forma adecuada. El motor de insights más profundo y la biblioteca de contenidos más amplia son lo que paga el sobreprecio."
     },
     "stelo-vs-lingo": {
       "title": "Stelo by Dexcom vs Lingo by Abbott (2026)",
@@ -2455,7 +2455,7 @@
       "intro": "Stelo y Lingo son los dos CGM de venta libre autorizados por la FDA en EE. UU. — los primeros monitores de glucosa de consumo que puedes comprar sin receta. Stelo funciona con Dexcom G7; Lingo funciona con Abbott Libre 3. Ambos son de venta libre, ambos apuntan a biohackers no diabéticos y ambos son deliberadamente más simples que los programas con coaching (Levels, Nutrisense). La elección se reduce a precisión del sensor frente a precio.",
       "verdict": "Stelo gana en precisión de hardware a cambio de un pequeño sobreprecio. Lingo gana en flexibilidad de coste — compra sensores sueltos de 2 semanas según los necesites, sin suscripción.",
       "bestForA": "Elige Stelo by Dexcom si la precisión del sensor te importa más que los últimos $50/month — obtienes el mismo hardware Dexcom G7 que Levels y Nutrisense a un tercio del coste.",
-      "bestForB": "Elige Lingo by Abbott si el coste es el factor decisivo o quieres llevar un CGM de forma ocasional en vez de continua — sensores sueltos de 2 semanas a $49 cada uno.",
+      "bestForB": "Elige Lingo by Abbott si el coste es el factor decisivo o quieres llevar un CGM de forma ocasional en vez de continua — sensores sueltos de 2 semanas a $54 cada uno.",
       "axes": [
         {
           "name": "Precisión del sensor",
@@ -2475,7 +2475,7 @@
         },
         {
           "name": "Flexibilidad de precio",
-          "note": "Lingo: $49 por sensor suelto de 2 semanas, $89 por 4 (~$22/month efectivos). Stelo: suscripción de $99/month o $89/month en suscripción."
+          "note": "Lingo: $54 por sensor suelto de 2 semanas; los planes de varios sensores reducen el coste por sensor. Stelo: $99 por dos sensores (~30 días) o $89/month en suscripción."
         },
         {
           "name": "Sin suscripción obligatoria",
@@ -2493,7 +2493,7 @@
         },
         {
           "q": "¿Cuál es más barato, Stelo o Lingo?",
-          "a": "Lingo es más barato en el nivel de entrada por sensor suelto — $49 por sensor de 2 semanas, o $89 por cuatro (~$22/month efectivos). Stelo cuesta $99/month por dos sensores o $89/month en suscripción. Si quieres llevar un CGM de forma continua, la diferencia se reduce; para uso ocasional Lingo gana en flexibilidad de coste."
+          "a": "Lingo es más barato en el nivel de entrada por sensor suelto — $54 por sensor de 2 semanas; los planes de varios sensores reducen el coste por sensor. Stelo cuesta $99 por dos sensores (~30 días) o $89/month en suscripción. Si quieres llevar un CGM de forma continua, la diferencia se reduce; para uso ocasional Lingo gana en flexibilidad de coste."
         },
         {
           "q": "¿Alguno requiere receta?",
@@ -2501,16 +2501,16 @@
         },
         {
           "q": "¿Puedo pasar los datos de Stelo o Lingo a Levels o Nutrisense?",
-          "a": "No, no directamente. Cada programa está bloqueado por hardware a su propia app. Los sensores subyacentes son el mismo hardware físico (Stelo = Dexcom G7 = Levels/Nutrisense; Lingo = Libre 3 = Ultrahuman/Veri/Zoe), pero las apps no leen de forma cruzada los sensores de las demás."
+          "a": "No, no directamente. Cada programa está bloqueado por hardware a su propia app. Los sensores subyacentes son el mismo hardware físico (Stelo = plataforma Dexcom G7 = Levels, que ahora envía Stelo, y Nutrisense; Lingo = Libre 3 = Ultrahuman/Veri/Zoe), pero las apps no leen de forma cruzada los sensores de las demás."
         }
       ],
-      "content": "## En resumen\n\nStelo gana en precisión a cambio de un pequeño sobreprecio; Lingo gana en flexibilidad de coste para uso ocasional. Ambos son de venta libre — sin receta, sin suscripción de coaching — lo que los separa de Levels, Nutrisense, Signos y del resto del mercado de CGM de gama premium.\n\n## Cuándo Stelo es la elección correcta\n\nSi quieres el hardware de CGM de consumo más preciso disponible — el mismo sensor Dexcom G7 que hay debajo de Levels y Nutrisense — a aproximadamente un tercio del coste de esos programas, Stelo es la forma adecuada. El calentamiento de 30 minutos frente a los 60 de Lingo importa más de lo que suena cuando cambias de sensor cada dos semanas.\n\n## Cuándo Lingo es la elección correcta\n\nSi no tienes claro que el CGM vaya a cambiar algo para ti y quieres la forma legítima más barata de averiguarlo, o piensas llevar un CGM de forma ocasional en vez de continua, Lingo es la forma adecuada. Los sensores sueltos de $49 sin suscripción superan al modelo mensual de Stelo en flexibilidad."
+      "content": "## En resumen\n\nStelo gana en precisión a cambio de un pequeño sobreprecio; Lingo gana en flexibilidad de coste para uso ocasional. Ambos son de venta libre — sin receta, sin suscripción de coaching — lo que los separa de Levels, Nutrisense, Signos y del resto del mercado de CGM de gama premium.\n\n## Cuándo Stelo es la elección correcta\n\nSi quieres el hardware de CGM de consumo más preciso disponible — el mismo sensor Dexcom G7 que hay debajo de Levels y Nutrisense — a aproximadamente un tercio del coste de esos programas, Stelo es la forma adecuada. El calentamiento de 30 minutos frente a los 60 de Lingo importa más de lo que suena cuando cambias de sensor cada dos semanas.\n\n## Cuándo Lingo es la elección correcta\n\nSi no tienes claro que el CGM vaya a cambiar algo para ti y quieres la forma legítima más barata de averiguarlo, o piensas llevar un CGM de forma ocasional en vez de continua, Lingo es la forma adecuada. Los sensores sueltos de $54 sin suscripción superan al modelo mensual de Stelo en flexibilidad."
     },
     "veri-vs-levels": {
       "title": "Veri vs Levels (2026)",
-      "description": "Veri vs Levels — comparación directa de ONDA de dos programas de CGM para biohackers. Programa europeo pulido sobre Libre 3 frente a Levels, disponible solo en EE. UU. sobre Dexcom G7.",
+      "description": "Veri vs Levels — comparación directa de ONDA de dos programas de CGM para biohackers. Programa europeo pulido sobre Libre 3 frente a Levels, disponible solo en EE. UU. sobre Dexcom Stelo.",
       "intro": "Veri y Levels son los dos programas de CGM de consumo que más comparan entre sí los biohackers europeos al decidir qué pueden comprar realmente. Levels tiene la analítica más profunda y el sensor más preciso, pero solo se vende en EE. UU. Veri es el equivalente pulido y orientado a Europa sobre hardware Libre 3. La decisión suele resolverse antes de puntuar — cualquiera que sea el que se envía a tu país.",
-      "verdict": "Decide la geografía. Levels para usuarios de EE. UU. que quieren el motor de insights más profundo sobre Dexcom G7. Veri para usuarios europeos que quieren una experiencia estilo Levels en su región.",
+      "verdict": "Decide la geografía. Levels para usuarios de EE. UU. que quieren el motor de insights más profundo sobre Dexcom Stelo. Veri para usuarios europeos que quieren una experiencia estilo Levels en su región.",
       "bestForA": "Elige Veri si estás en un mercado de la UE — disponibilidad local, soporte multilingüe, integración con Garmin/Oura de serie. La forma adecuada allí donde Levels no llega.",
       "bestForB": "Elige Levels si estás en EE. UU. — el motor de insights más profundo sobre el sensor más preciso justifica el precio premium para un uso serio de biohacker.",
       "axes": [
@@ -2520,7 +2520,7 @@
         },
         {
           "name": "Precisión del sensor",
-          "note": "Levels: Dexcom G7 (MARD ~8,2 %). Veri: Abbott Libre 3 (MARD ~9 %). Levels tiene el sensor marginalmente más preciso."
+          "note": "Levels: Dexcom Stelo, plataforma G7 (MARD ~8,2 %). Veri: Abbott Libre 3 (MARD ~9 %). Levels tiene el sensor marginalmente más preciso."
         },
         {
           "name": "Profundidad de los insights",
@@ -2544,20 +2544,20 @@
         },
         {
           "name": "Precio",
-          "note": "Veri: €199 de configuración + €99–€129/month. Levels: $199/month con sensores incluidos. Veri es más barato, sobre todo al comparar el coste total mes a mes en moneda de la UE."
+          "note": "Veri: €199 de configuración + €99–€129/month. Levels: membresía de $399–$1,329/year con 1–2 meses de CGM incluidos (solo EE. UU.). Mercados y modelos de facturación distintos — para la mayoría de usuarios de la UE, Veri es la única opción real."
         }
       ],
       "faq": [
         {
           "q": "¿Debería elegir Veri o Levels?",
-          "a": "La geografía decide para la mayoría. Si estás en EE. UU., Levels — motor de insights más profundo, sensor más preciso (Dexcom G7). Si estás en Europa, Veri — Levels no se envía a la mayoría de los mercados de la UE, y Veri es el equivalente europeo pulido."
+          "a": "La geografía decide para la mayoría. Si estás en EE. UU., Levels — motor de insights más profundo, sensor más preciso (Dexcom Stelo, plataforma G7). Si estás en Europa, Veri — Levels no se envía a la mayoría de los mercados de la UE, y Veri es el equivalente europeo pulido."
         },
         {
           "q": "¿Levels se envía a Europa?",
           "a": "No — Levels es solo para EE. UU. a fecha de 2026. Los biohackers europeos recurren a Veri, Hello Inside o Zoe como alternativas disponibles localmente."
         },
         {
-          "q": "¿Es el sensor Dexcom G7 de Levels mucho mejor que el Libre 3 de Veri?",
+          "q": "¿Es el sensor Dexcom Stelo (plataforma G7) de Levels mucho mejor que el Libre 3 de Veri?",
           "a": "Marginalmente — Dexcom G7 se sitúa en MARD ~8,2 % frente al Libre 3 en MARD ~9 %. La diferencia es real pero pequeña. Para la mayoría de los casos de uso de biohackers no diabéticos cualquiera de los dos sensores es lo bastante preciso; el factor decisivo es la envoltura, no el hardware."
         },
         {
@@ -2573,15 +2573,15 @@
       "intro": "Zoe y Levels son los dos programas de consumo que más se sopesan uno contra otro cuando el objetivo es la nutrición y no la glucosa por sí sola. Ocupan estantes adyacentes: Zoe usa una fase de CGM de dos semanas junto a una prueba de microbioma intestinal y un panel de biomarcadores en sangre, y luego te mantiene con clasificaciones de alimentos personalizadas; Levels usa un CGM continuo con el análisis de impacto de las comidas más profundo del mercado. La decisión es entre un reinicio multibiomarcador y un seguimiento continuo de la glucosa.",
       "verdict": "Son productos distintos. Zoe para un reinicio de nutrición con respaldo científico que combina CGM + microbioma + biomarcadores en sangre. Levels para insight continuo de glucosa sobre el mejor hardware de CGM.",
       "bestForA": "Elige Zoe si quieres nutrición personalizada con base en ciencia real — los estudios PREDICT de Tim Spector — fusionando CGM, microbioma intestinal y biomarcadores en sangre en un único modelo de clasificación de alimentos.",
-      "bestForB": "Elige Levels si quieres un CGM continuo como instrumento de autoexperimentación — el motor de impacto de comidas más profundo sobre Dexcom G7, el sensor de consumo más preciso.",
+      "bestForB": "Elige Levels si quieres un CGM continuo como instrumento de autoexperimentación — el motor de impacto de comidas más profundo sobre Dexcom Stelo (plataforma G7), el sensor de consumo más preciso.",
       "axes": [
         {
           "name": "Uso de CGM continuo",
-          "note": "Levels usa el CGM en continuo mientras mantengas la suscripción. Zoe usa el CGM solo dos semanas — los datos alimentan el modelo de clasificación inicial y luego termina."
+          "note": "Las membresías de Levels incluyen 1–2 meses de CGM al año, con meses adicionales como complemento de pago. Zoe usa el CGM solo dos semanas — los datos alimentan el modelo de clasificación inicial y luego termina."
         },
         {
           "name": "Precisión del sensor",
-          "note": "Levels: Dexcom G7 (MARD ~8,2 %). Zoe: Abbott Libre (MARD ~9–11 %, variante de sensor más antigua). Levels tiene el sensor más preciso."
+          "note": "Levels: Dexcom Stelo, plataforma G7 (MARD ~8,2 %). Zoe: Abbott Libre (MARD ~9–11 %, variante de sensor más antigua). Levels tiene el sensor más preciso."
         },
         {
           "name": "Visión multibiomarcador",
@@ -2605,7 +2605,7 @@
         },
         {
           "name": "Precio (año 1)",
-          "note": "Zoe: £300 de configuración + £60/mo × 12 = ~$1,250/year. Levels: $199/mo × 12 = ~$2,388/year. Zoe es más barato el año 1, pero la fase de CGM es más corta."
+          "note": "Zoe: £300 de configuración + £60/mo × 12 = ~$1,250/year. Levels: $399/year (Core, 1 mes de CGM) a $1,329/year (Complete, 2 meses de CGM). Coste del año 1 comparable; Levels ofrece más tiempo de CGM."
         }
       ],
       "faq": [
@@ -2631,7 +2631,7 @@
     "levels-vs-nutrisense-vs-stelo": {
       "title": "Levels vs Nutrisense vs Stelo (2026)",
       "description": "Levels vs Nutrisense vs Stelo — comparación a tres bandas de ONDA de los tres principales programas de CGM sobre Dexcom G7. Inteligencia de la app, dietista humana y valor OTC en una sola decisión.",
-      "intro": "Levels, Nutrisense y Stelo son los tres programas de CGM más comparados por los biohackers no diabéticos — los tres funcionan sobre Dexcom G7, el sensor de consumo más preciso. El mismo hardware, tres envoltorios distintos: Levels apuesta por la inteligencia de la app, Nutrisense añade una dietista titulada y Stelo es el programa de consumo OTC del propio Dexcom, sin coaching. La decisión gira únicamente en torno a lo que se sitúa por encima del sensor.",
+      "intro": "Levels, Nutrisense y Stelo son los tres programas de CGM más comparados por los biohackers no diabéticos — los tres funcionan sobre la plataforma de sensores Dexcom G7 (Levels ahora envía Stelo, el sensor OTC de Dexcom sobre la plataforma G7), el sensor de consumo más preciso. El mismo hardware, tres envoltorios distintos: Levels apuesta por la inteligencia de la app, Nutrisense añade una dietista titulada y Stelo es el programa de consumo OTC del propio Dexcom, sin coaching. La decisión gira únicamente en torno a lo que se sitúa por encima del sensor.",
       "verdict": "Tres tareas distintas sobre el mismo hardware. Levels para los insights de app más profundos. Nutrisense para una dietista titulada. Stelo para el mismo sensor a un tercio del coste.",
       "bestForA": "Elige Levels si confías más en la inteligencia de la app que en el coaching humano, quieres el motor de insights alimento por alimento más profundo y tratas el CGM como un instrumento de autoexperimentación.",
       "bestForB": "Elige Nutrisense si la responsabilidad que aporta una dietista titulada es lo que hace que el programa funcione para ti — revisiones escritas semanales, mensajería en la app, la capa humana sobre los datos.",
@@ -2667,7 +2667,7 @@
         },
         {
           "name": "Precio",
-          "note": "Stelo: 89–99 $/month. Levels: 199 $/month. Nutrisense: 280–310 $/month con dietista. Stelo cuesta aproximadamente un tercio de Levels y un cuarto de Nutrisense."
+          "note": "Stelo: 89–99 $/month. Levels: membresía de 399–1329 $/año con solo 1–2 meses de CGM incluidos (el CGM adicional es un complemento de pago). Nutrisense: 280–310 $/month con dietista. Para uso continuo, Stelo es el más barato de los tres."
         }
       ],
       "faq": [
@@ -2692,7 +2692,7 @@
           "a": "Sí — Stelo es la entrada legítima más barata al CGM Dexcom G7. Si lo encuentras útil y quieres analíticas más profundas, pásate a Levels. Si quieres un coach, a Nutrisense. Stelo tiene la forma justa para una prueba sin compromiso."
         }
       ],
-      "content": "## En resumen\n\nEl mismo sensor Dexcom G7, tres envoltorios distintos. Elige por lo que se sitúa por encima del hardware: la inteligencia de app más profunda (Levels), una dietista titulada (Nutrisense) o el acceso legítimo más barato (Stelo).\n\n## Cuándo Levels es la elección correcta\n\nSi tratas el CGM como un instrumento serio — ejecutando protocolos, iterando sobre experimentos con comidas, midiendo el tiempo en rango como métrica — Levels tiene la forma justa. La profundidad del motor de insights es el valor; los 199 $/month son el coste.\n\n## Cuándo Nutrisense es la elección correcta\n\nSi necesitas a una persona, no a una app, que te ayude a interpretar los datos, Nutrisense tiene la forma justa. La dietista titulada es la propuesta de valor; los 280–310 $/month son el coste de la capa de coaching humano.\n\n## Cuándo Stelo es la elección correcta\n\nSi quieres el hardware Dexcom G7 al precio legítimo más bajo — sin coaching, sin analíticas premium, solo el sensor y una app limpia — Stelo tiene la forma justa. Es el camino más barato hacia un CGM continuo en 2026 y el punto de partida idóneo para quien no tiene claro si quiere CGM a largo plazo."
+      "content": "## En resumen\n\nEl mismo sensor Dexcom G7, tres envoltorios distintos. Elige por lo que se sitúa por encima del hardware: la inteligencia de app más profunda (Levels), una dietista titulada (Nutrisense) o el acceso legítimo más barato (Stelo).\n\n## Cuándo Levels es la elección correcta\n\nSi tratas el CGM como un instrumento serio — ejecutando protocolos, iterando sobre experimentos con comidas, midiendo el tiempo en rango como métrica — Levels tiene la forma justa. La profundidad del motor de insights es el valor; la membresía (399–1329 $ al año, más meses de CGM adicionales para uso continuo) es el coste.\n\n## Cuándo Nutrisense es la elección correcta\n\nSi necesitas a una persona, no a una app, que te ayude a interpretar los datos, Nutrisense tiene la forma justa. La dietista titulada es la propuesta de valor; los 280–310 $/month son el coste de la capa de coaching humano.\n\n## Cuándo Stelo es la elección correcta\n\nSi quieres el hardware Dexcom G7 al precio legítimo más bajo — sin coaching, sin analíticas premium, solo el sensor y una app limpia — Stelo tiene la forma justa. Es el camino más barato hacia un CGM continuo en 2026 y el punto de partida idóneo para quien no tiene claro si quiere CGM a largo plazo."
     },
     "levels-vs-nutrisense": {
       "title": "Levels vs Nutrisense (2026)",
@@ -2724,7 +2724,7 @@
         },
         {
           "name": "Precio",
-          "note": "Levels: 199 $/month. Nutrisense: 280–310 $/month incluyendo la dietista. Levels es el más barato de los dos — lo que pagas en Nutrisense es el coach."
+          "note": "Levels: membresía de 399–1329 $/año (1–2 meses de CGM incluidos; el CGM adicional es un complemento de pago). Nutrisense: 280–310 $/month incluyendo la dietista. Levels es el más barato de los dos — lo que pagas en Nutrisense es el coach."
         }
       ],
       "faq": [
@@ -2745,23 +2745,23 @@
           "a": "Sí — ambos funcionan sobre el mismo sensor Dexcom G7 y no hay bloqueo de plataforma para el hardware en sí. Los datos históricos no se transfieren; si cambias, empiezas de cero en la nueva app."
         }
       ],
-      "content": "## En resumen\n\nLevels y Nutrisense montan el mismo sensor Dexcom G7. La decisión está entre dos modelos de coaching — la inteligencia de la app (Levels) o una dietista titulada (Nutrisense). Elige según el modelo con el que realmente te vayas a implicar.\n\n## Cuándo Levels es la elección correcta\n\nLevels tiene la forma justa para quien trata el CGM como un instrumento de autoexperimentación: registrar comidas, ejecutar protocolos, leer las curvas, iterar. La app hace el trabajo pesado y la biblioteca de contenidos lo respalda — suficiente para quien se habría saltado de todos modos el mensaje semanal de la dietista en Nutrisense. Además es 80–110 $/month más barato.\n\n## Cuándo Nutrisense es la elección correcta\n\nNutrisense tiene la forma justa cuando la responsabilidad es el valor. Una dietista titulada que revisa tus datos cada semana, envía resúmenes escritos y responde preguntas en la app es, para muchos usuarios, la diferencia entre un cambio de conducta sostenido y un mes de 200 $ en gráficas. Paga el sobrecoste solo si vas a usar al coach."
+      "content": "## En resumen\n\nLevels y Nutrisense montan el mismo sensor de la plataforma Dexcom G7 (Levels ahora incluye Stelo, la versión OTC). La decisión está entre dos modelos de coaching — la inteligencia de la app (Levels) o una dietista titulada (Nutrisense). Elige según el modelo con el que realmente te vayas a implicar.\n\n## Cuándo Levels es la elección correcta\n\nLevels tiene la forma justa para quien trata el CGM como un instrumento de autoexperimentación: registrar comidas, ejecutar protocolos, leer las curvas, iterar. La app hace el trabajo pesado y la biblioteca de contenidos lo respalda — suficiente para quien se habría saltado de todos modos el mensaje semanal de la dietista en Nutrisense. Además es mucho más barato — una membresía anual de 399–1329 $ frente a 280–310 $ al mes.\n\n## Cuándo Nutrisense es la elección correcta\n\nNutrisense tiene la forma justa cuando la responsabilidad es el valor. Una dietista titulada que revisa tus datos cada semana, envía resúmenes escritos y responde preguntas en la app es, para muchos usuarios, la diferencia entre un cambio de conducta sostenido y un mes de 200 $ en gráficas. Paga el sobrecoste solo si vas a usar al coach."
     },
     "levels-vs-ultrahuman-m1": {
       "title": "Levels vs Ultrahuman M1 (2026)",
       "description": "Levels vs Ultrahuman M1 — comparación cara a cara de ONDA de dos programas de CGM para biohackers. Insights profundos solo de glucosa frente a un ecosistema de señales cruzadas: glucosa + VFC + sueño.",
-      "intro": "Levels y Ultrahuman M1 son los dos programas de CGM para biohackers que más se comparan después de Levels y Nutrisense. Sensores distintos — Dexcom G7 (Levels) frente a Abbott Libre 3 (Ultrahuman) — pero la diferencia más profunda es la filosofía de producto. Levels es un motor de insights centrado en la glucosa; Ultrahuman es un módulo de CGM dentro de un ecosistema más amplio que incluye el Ring Air y analíticas de señales cruzadas.",
+      "intro": "Levels y Ultrahuman M1 son los dos programas de CGM para biohackers que más se comparan después de Levels y Nutrisense. Sensores distintos — Dexcom Stelo, plataforma G7 (Levels) frente a Abbott Libre 3 (Ultrahuman) — pero la diferencia más profunda es la filosofía de producto. Levels es un motor de insights centrado en la glucosa; Ultrahuman es un módulo de CGM dentro de un ecosistema más amplio que incluye el Ring Air y analíticas de señales cruzadas.",
       "verdict": "Depende de lo que quieras. Levels para el motor de insights de glucosa más profundo sobre el mejor hardware de CGM. Ultrahuman M1 para la glucosa combinada con VFC, sueño y recuperación del Ultrahuman Ring Air.",
-      "bestForA": "Elige Levels si el CGM es el instrumento central y quieres el análisis de impacto de las comidas más profundo sobre Dexcom G7 — el sensor más preciso de la categoría de consumo.",
+      "bestForA": "Elige Levels si el CGM es el instrumento central y quieres el análisis de impacto de las comidas más profundo sobre Dexcom Stelo (plataforma G7) — el sensor más preciso de la categoría de consumo.",
       "bestForB": "Elige Ultrahuman M1 si ya tienes (o planeas tener) el Ultrahuman Ring Air y quieres los datos de glucosa combinados con VFC, sueño y recuperación en una sola app.",
       "axes": [
         {
           "name": "Precisión del sensor",
-          "note": "Levels usa Dexcom G7 (MARD ~8,2 %). Ultrahuman M1 usa Abbott Libre 3 (MARD ~9 %). Levels tiene el sensor más preciso."
+          "note": "Levels envía Dexcom Stelo (plataforma G7, MARD ~8,2 %). Ultrahuman M1 usa Abbott Libre 3 (MARD ~9 %). Levels tiene el sensor más preciso."
         },
         {
           "name": "Duración del sensor",
-          "note": "Ultrahuman M1 (Libre 3): 14 días. Levels (Dexcom G7): 10 días. Ligera ventaja de Ultrahuman en la frecuencia de cambio de sensor."
+          "note": "Levels (Dexcom Stelo): 15 días. Ultrahuman M1 (Libre 3): 14 días. Frecuencia de cambio casi idéntica, ligera ventaja de Levels."
         },
         {
           "name": "Profundidad de insights de glucosa",
@@ -2781,7 +2781,7 @@
         },
         {
           "name": "Precio",
-          "note": "Ultrahuman M1: ~99 $ por sensor de 14 días (sin suscripción de CGM obligatoria si ya tienes el anillo). Levels: 199 $/month con sensores incluidos. Ultrahuman es más barato."
+          "note": "Ultrahuman M1: ~99 $ por sensor de 14 días (sin suscripción de CGM obligatoria si ya tienes el anillo). Levels: membresías por niveles — 80 $/año solo app, 399 $/año Core (1 mes de CGM), 1329 $/año Complete (2 meses de CGM); el CGM adicional es un complemento de pago. Cuál sale más barato depende de cuánto tiempo lleves el sensor."
         },
         {
           "name": "Usabilidad autónoma",
@@ -2791,10 +2791,10 @@
       "faq": [
         {
           "q": "¿Debería elegir Levels o Ultrahuman M1?",
-          "a": "Levels si el CGM es la tarea decisiva y quieres el análisis de impacto de las comidas más profundo sobre el sensor más preciso (Dexcom G7). Ultrahuman M1 si ya tienes (o planeas tener) el Ultrahuman Ring Air y quieres la glucosa combinada con VFC y sueño en una sola app."
+          "a": "Levels si el CGM es la tarea decisiva y quieres el análisis de impacto de las comidas más profundo sobre la plataforma de sensor más precisa (Dexcom Stelo, basado en G7). Ultrahuman M1 si ya tienes (o planeas tener) el Ultrahuman Ring Air y quieres la glucosa combinada con VFC y sueño en una sola app."
         },
         {
-          "q": "¿Es mejor Dexcom G7 (Levels) que Libre 3 (Ultrahuman)?",
+          "q": "¿Es mejor Dexcom Stelo/G7 (Levels) que Libre 3 (Ultrahuman)?",
           "a": "Marginalmente. Dexcom G7 se sitúa en un MARD ~8,2 % frente al MARD ~9 % de Libre 3 en comparaciones independientes. La diferencia es constante pero pequeña — la mayoría de los usos de biohacking no diabético quedan bien cubiertos por cualquiera de los dos."
         },
         {
@@ -2803,7 +2803,7 @@
         },
         {
           "q": "¿Cuál es más barato a largo plazo?",
-          "a": "Ultrahuman M1 a ~99 $ por sensor de 14 días (~215 $/month si se lleva de forma continua, menos si es intermitente). Levels a 199 $/month con sensores Dexcom G7 de 10 días. Ultrahuman es más barato, sobre todo si ya tienes el anillo y te saltas por completo el modelo de suscripción de CGM."
+          "a": "Ultrahuman M1 a ~99 $ por sensor de 14 días (~215 $/month si se lleva de forma continua, menos si es intermitente). Levels ahora es una membresía — 80 $ al año solo app, 399 $ al año Core con un mes de CGM, 1329 $ al año Complete con dos meses — con el CGM adicional como complemento de pago. Para bloques ocasionales de CGM Levels es más barato; para uso continuo, ambos cuestan aproximadamente lo que valen los sensores."
         }
       ],
       "content": "## En resumen\n\nLevels es el programa más profundo, centrado solo en glucosa y sobre el mejor hardware de CGM; Ultrahuman M1 es la mejor apuesta de ecosistema si ya vives dentro del stack del anillo Ultrahuman. La decisión es si el CGM es el instrumento central o una señal más entre varias.\n\n## Cuándo Levels es la elección correcta\n\nSi tratas el CGM como el instrumento principal — ejecutando experimentos con comidas estructurados, midiendo el tiempo en rango como una métrica seria, pagando por profundidad analítica — Levels tiene la forma justa. Hardware Dexcom G7 más el motor de insights más profundo de la categoría.\n\n## Cuándo Ultrahuman M1 es la elección correcta\n\nSi ya tienes el Ultrahuman Ring Air o planeas tenerlo, M1 tiene la forma justa porque la glucosa combinada con VFC y sueño en una sola línea temporal es una vista de señales cruzadas significativa que nada más ofrece en el mercado de consumo. Como programa de CGM autónomo es la elección equivocada — opta por Levels o Stelo."
@@ -2813,17 +2813,17 @@
       "description": "Levels vs Zoe vs Nutrisense — comparación a tres bandas de ONDA de tres programas de CGM centrados en la nutrición. Motor de insights continuo, fusión científica multibiomarcador y coaching con dietista titulada en una sola decisión.",
       "intro": "Levels, Zoe y Nutrisense son los tres programas de CGM que comparan los usuarios centrados en la nutrición cuando importan las capas de expertos y la profundidad metodológica. Tres filosofías distintas sobre la misma entrada (datos de CGM): Levels apuesta por la inteligencia de la app y la profundidad continua, Zoe ejecuta un reinicio científico multibiomarcador y Nutrisense combina el CGM continuo con una dietista titulada.",
       "verdict": "Tres productos distintos. Levels para el motor de insights de CGM continuo más profundo. Zoe para una nutrición personalizada respaldada por la ciencia. Nutrisense para el coaching de una dietista humana sobre datos continuos.",
-      "bestForA": "Elige Levels si tratas el CGM como un instrumento de autoexperimentación y quieres el motor de insights alimento por alimento más profundo sobre el sensor más preciso (Dexcom G7).",
+      "bestForA": "Elige Levels si tratas el CGM como un instrumento de autoexperimentación y quieres el motor de insights alimento por alimento más profundo sobre la plataforma de sensor más precisa (Dexcom Stelo, basado en G7).",
       "bestForB": "Elige Zoe si quieres una nutrición personalizada basada en ciencia publicada — CGM + microbioma intestinal + biomarcadores en sangre fusionados en un único modelo de ranking de alimentos surgido de los estudios PREDICT.",
       "bestForC": "Elige Nutrisense si la responsabilidad que aporta una dietista titulada trabajando tus datos cada semana es lo que hace que el programa funcione para ti.",
       "axes": [
         {
           "name": "Uso continuo del CGM",
-          "note": "Levels y Nutrisense: Dexcom G7 continuo mientras mantengas la suscripción. Zoe: solo una fase de Libre de 2 semanas. Levels y Nutrisense empatan; Zoe es acotado."
+          "note": "Nutrisense: Dexcom G7 continuo mientras mantengas la suscripción. Levels: las membresías incluyen 1–2 meses de CGM al año, con meses adicionales como complemento de pago. Zoe: solo una fase de Libre de 2 semanas. Gana Nutrisense."
         },
         {
           "name": "Precisión del sensor",
-          "note": "Levels y Nutrisense montan ambos Dexcom G7 (MARD ~8,2 %). Zoe monta Libre (MARD ~9–11 %). Levels y Nutrisense empatan en hardware."
+          "note": "Levels (Stelo) y Nutrisense (G7) montan ambos la plataforma Dexcom G7 (MARD ~8,2 %). Zoe monta Libre (MARD ~9–11 %). Levels y Nutrisense empatan en hardware."
         },
         {
           "name": "Profundidad de insights de la app",
@@ -2847,7 +2847,7 @@
         },
         {
           "name": "Coste del primer año",
-          "note": "Zoe: ~1250 $ (300 £ de alta + 60 £/mes). Levels: ~2388 $ (199 $/mes). Nutrisense: ~3500 $ (280–310 $/mes con dietista). Zoe es el más barato el primer año."
+          "note": "Levels: de 399 $ (Core, 1 mes de CGM) a 1329 $ (Complete, 2 meses de CGM) al año. Zoe: ~1250 $ (300 £ de alta + 60 £/mes). Nutrisense: ~3500 $ (280–310 $/mes con dietista). Levels Core es el más barato el primer año, pero llevar el CGM de forma continua cuesta aparte."
         }
       ],
       "faq": [
@@ -2865,21 +2865,21 @@
         },
         {
           "q": "¿Merece la pena Nutrisense frente al sobrecoste sobre Levels?",
-          "a": "Solo si de verdad vas a implicarte con la dietista titulada cada semana. El hardware Dexcom G7 es idéntico al de Levels; lo que pagas es la capa de coaching humano. Para quien se saltaría el mensaje de la dietista, Levels con 80–110 $/month menos tiene más sentido."
+          "a": "Solo si de verdad vas a implicarte con la dietista titulada cada semana. El hardware de la plataforma Dexcom G7 equivale al Stelo de Levels; lo que pagas es la capa de coaching humano. Para quien se saltaría el mensaje de la dietista, Levels con 80–110 $/month menos tiene más sentido."
         },
         {
           "q": "¿Puedo combinar dos de estos?",
           "a": "Algunos usuarios empiezan con Zoe para el reinicio multibiomarcador y luego pasan a Levels o Nutrisense para el CGM continuo. Los tres se combinan bien porque enfatizan cosas distintas — ciencia multibiomarcador (Zoe), profundidad continua de la app (Levels), coaching humano (Nutrisense)."
         }
       ],
-      "content": "## En resumen\n\nTres programas de CGM centrados en la nutrición que parecen adyacentes pero resuelven tareas distintas. Levels para insights continuos guiados por la app. Zoe para un reinicio científico multibiomarcador. Nutrisense para el CGM continuo con una dietista humana por encima.\n\n## Cuándo Levels es la elección correcta\n\nSi tratas el CGM como un instrumento de autoexperimentación — ejecutando protocolos de comidas, midiendo el tiempo en rango, iterando semana a semana — Levels tiene la forma justa. Los insights de app más profundos sobre el sensor más preciso; los 199 $/month son el coste.\n\n## Cuándo Zoe es la elección correcta\n\nSi quieres una nutrición personalizada fundamentada en ciencia publicada real y lo que buscas es un reinicio multibiomarcador único (CGM + microbioma + sangre) seguido de rankings de alimentos continuos, Zoe tiene la forma justa. Los estudios PREDICT son el ancla científica.\n\n## Cuándo Nutrisense es la elección correcta\n\nSi la responsabilidad que aporta una dietista titulada trabajando tus datos cada semana es el valor, Nutrisense tiene la forma justa. El mismo hardware Dexcom G7 que Levels; la diferencia es la capa de coaching humano."
+      "content": "## En resumen\n\nTres programas de CGM centrados en la nutrición que parecen adyacentes pero resuelven tareas distintas. Levels para insights continuos guiados por la app. Zoe para un reinicio científico multibiomarcador. Nutrisense para el CGM continuo con una dietista humana por encima.\n\n## Cuándo Levels es la elección correcta\n\nSi tratas el CGM como un instrumento de autoexperimentación — ejecutando protocolos de comidas, midiendo el tiempo en rango, iterando semana a semana — Levels tiene la forma justa. Los insights de app más profundos sobre el sensor más preciso; la membresía (399–1329 $ al año, más meses de CGM adicionales para uso continuo) es el coste.\n\n## Cuándo Zoe es la elección correcta\n\nSi quieres una nutrición personalizada fundamentada en ciencia publicada real y lo que buscas es un reinicio multibiomarcador único (CGM + microbioma + sangre) seguido de rankings de alimentos continuos, Zoe tiene la forma justa. Los estudios PREDICT son el ancla científica.\n\n## Cuándo Nutrisense es la elección correcta\n\nSi la responsabilidad que aporta una dietista titulada trabajando tus datos cada semana es el valor, Nutrisense tiene la forma justa. El mismo hardware de la plataforma Dexcom G7 que el Stelo de Levels; la diferencia es la capa de coaching humano."
     },
     "lingo-vs-stelo-vs-ultrahuman-m1": {
       "title": "Lingo vs Stelo vs Ultrahuman M1 (2026)",
       "description": "Lingo vs Stelo vs Ultrahuman M1 — comparación a tres bandas de ONDA de tres programas de CGM sin coaching. Entrada más barata, OTC de Dexcom y apuesta de ecosistema de anillo en una sola decisión.",
       "intro": "Lingo, Stelo y Ultrahuman M1 son los tres programas de CGM que comparan los usuarios cuando las suscripciones con coaching (Levels, Nutrisense, Signos) no se quieren explícitamente. Tres sensores distintos, tres posicionamientos distintos: Lingo (Abbott Libre 3) es la entrada OTC legítima más barata; Stelo (Dexcom G7) es la opción OTC más precisa; Ultrahuman M1 (Libre 3) es la apuesta de ecosistema para usuarios de anillo.",
       "verdict": "Tres tareas distintas. Lingo para la entrada más barata sin suscripción. Stelo para el sensor OTC más preciso. Ultrahuman M1 para usuarios dentro del ecosistema del anillo Ultrahuman.",
-      "bestForA": "Elige Lingo de Abbott si quieres el acceso a CGM de consumo legítimo más barato — sensores individuales de 2 semanas por 49 $, sin suscripción, con el modelo de insights más sencillo.",
+      "bestForA": "Elige Lingo de Abbott si quieres el acceso a CGM de consumo legítimo más barato — sensores individuales de 2 semanas por 54 $, sin suscripción, con el modelo de insights más sencillo.",
       "bestForB": "Elige Stelo de Dexcom si quieres el CGM de consumo OTC más preciso — el mismo hardware Dexcom G7 que Levels y Nutrisense por 89–99 $/month sin coaching.",
       "bestForC": "Elige Ultrahuman M1 si ya tienes o planeas tener el Ultrahuman Ring Air — un ecosistema unificado nativo (glucosa + VFC + sueño) en una sola app.",
       "axes": [
@@ -2909,17 +2909,17 @@
         },
         {
           "name": "Barrera de entrada más baja",
-          "note": "Lingo: 49 $ por un sensor de 2 semanas — la entrada legítima a CGM más barata. Stelo: suscripción de 89–99 $. Ultrahuman: ~99 $ por sensor más el coste del ecosistema del anillo."
+          "note": "Lingo: 54 $ por un sensor de 2 semanas — la entrada legítima a CGM más barata. Stelo: 99 $ por dos sensores o 89 $/mes en suscripción. Ultrahuman: ~99 $ por sensor más el coste del ecosistema del anillo."
         },
         {
           "name": "Mejor valor en uso continuo",
-          "note": "Ultrahuman M1 (~99 $ por sensor de 14 días = ~215 $/mes) si ya tienes el anillo. Stelo: 99 $/mes. Lingo: 89 $ el pack de 4 al mes. Ajustado."
+          "note": "Ultrahuman M1 (~99 $ por sensor de 14 días = ~215 $/mes) si ya tienes el anillo. Stelo: 89–99 $/mes. Lingo: ~108 $/mes a precio de sensor suelto, menos con planes de varios sensores. Ajustado."
         }
       ],
       "faq": [
         {
           "q": "¿Cuál es el mejor CGM OTC: Lingo, Stelo o Ultrahuman M1?",
-          "a": "Stelo para el hardware más preciso (Dexcom G7). Lingo para la entrada legítima más barata (sensores individuales de 49 $). Ultrahuman M1 para usuarios del ecosistema del anillo que quieren glucosa + VFC + sueño unificados en una sola app."
+          "a": "Stelo para el hardware más preciso (Dexcom G7). Lingo para la entrada legítima más barata (sensores individuales de 54 $). Ultrahuman M1 para usuarios del ecosistema del anillo que quieren glucosa + VFC + sueño unificados en una sola app."
         },
         {
           "q": "¿Son lo mismo que Levels y Nutrisense?",
@@ -2927,7 +2927,7 @@
         },
         {
           "q": "¿Cuál tiene el mejor coste a largo plazo?",
-          "a": "Aproximadamente comparables, en torno a 90–100 $/month si se llevan de forma continua. Lingo tiene más flexibilidad porque puedes saltarte meses fácilmente (sensores individuales de 49 $). Stelo y Ultrahuman M1 están más orientados a un patrón de suscripción."
+          "a": "Aproximadamente comparables, en torno a 90–100 $/month si se llevan de forma continua. Lingo tiene más flexibilidad porque puedes saltarte meses fácilmente (sensores individuales de 54 $). Stelo y Ultrahuman M1 están más orientados a un patrón de suscripción."
         },
         {
           "q": "¿Merece la pena Ultrahuman M1 sin el anillo?",
@@ -2938,7 +2938,7 @@
           "a": "Lingo, de forma deliberada — una única puntuación de pico por comida, el Lingo Count. Stelo es moderada. Ultrahuman es la más compleja de las tres porque muestra datos de señales cruzadas de la plataforma Ultrahuman más amplia."
         }
       ],
-      "content": "## En resumen\n\nTres programas de CGM sin coaching para usuarios que evitan explícitamente el modelo de suscripción de Levels/Nutrisense/Signos. Elige por la precisión del sensor (Stelo), el coste de entrada (Lingo) o el encaje de ecosistema (Ultrahuman M1).\n\n## Cuándo Lingo es la elección correcta\n\nSi nunca has llevado un CGM y quieres la forma legítima más barata de probar uno, Lingo tiene la forma justa. Sensores individuales de 49 $ sin suscripción es el camino de entrada más flexible del mercado de CGM de consumo.\n\n## Cuándo Stelo es la elección correcta\n\nSi quieres el sensor OTC más preciso — el mismo hardware Dexcom G7 que Levels y Nutrisense a un tercio del coste de esos programas — Stelo tiene la forma justa. La ventaja de precisión sobre Libre 3 es real aunque pequeña.\n\n## Cuándo Ultrahuman M1 es la elección correcta\n\nSi ya tienes el Ultrahuman Ring Air o planeas tenerlo, M1 tiene la forma justa porque la vista unificada de glucosa + VFC + sueño en una sola app es única. Como CGM autónomo no se diferencia de Lingo o Veri."
+      "content": "## En resumen\n\nTres programas de CGM sin coaching para usuarios que evitan explícitamente el modelo de suscripción de Levels/Nutrisense/Signos. Elige por la precisión del sensor (Stelo), el coste de entrada (Lingo) o el encaje de ecosistema (Ultrahuman M1).\n\n## Cuándo Lingo es la elección correcta\n\nSi nunca has llevado un CGM y quieres la forma legítima más barata de probar uno, Lingo tiene la forma justa. Sensores individuales de 54 $ sin suscripción es el camino de entrada más flexible del mercado de CGM de consumo.\n\n## Cuándo Stelo es la elección correcta\n\nSi quieres el sensor OTC más preciso — el mismo hardware Dexcom G7 que Levels y Nutrisense a un tercio del coste de esos programas — Stelo tiene la forma justa. La ventaja de precisión sobre Libre 3 es real aunque pequeña.\n\n## Cuándo Ultrahuman M1 es la elección correcta\n\nSi ya tienes el Ultrahuman Ring Air o planeas tenerlo, M1 tiene la forma justa porque la vista unificada de glucosa + VFC + sueño en una sola app es única. Como CGM autónomo no se diferencia de Lingo o Veri."
     },
     "bettersleep-vs-sleep-cycle": {
       "title": "BetterSleep vs Sleep Cycle (2026)",

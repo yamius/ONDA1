@@ -70,7 +70,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   faq: [
     { q: "Do you need a prescription for Lingo?", a: "No. Lingo is Abbott's over-the-counter CGM, sold without a prescription or subscription. It uses Libre 3 hardware with reliable, calibration-free 14-day wear, and you simply buy sensors as you need them. It is the cheapest legitimate consumer CGM access in the US." },
     { q: "How much does Lingo cost?", a: "Lingo costs $54 for a two-week plan (one sensor, no auto-renew), with multi-sensor and subscription plans that cost less per sensor. No subscription is required: you can buy single sensors as you need them. That makes it the lowest-cost entry into continuous glucose monitoring for a US non-diabetic." },
-    { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics and the more accurate Dexcom G7, as a membership from about $80 a year (app-only) to $1,329 a year. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
+    { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics and the slightly more accurate Dexcom Stelo (G7 platform), as a membership from about $80 a year (app-only) to $1,329 a year. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-09-30',

@@ -38,12 +38,12 @@ const ouraRing4: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',
-  price: { usd: 349, note: '+ ~6 USD/month membership required for full data', asOf: '2026-05-15' },
+  price: { usd: 349, note: 'from $349 (Silver/Black; premium finishes cost more) — still sold by Oura alongside the Ring 5 and often discounted at retailers (~$320-399 seen Sept 2026); + ~6 USD/month membership required for full data', asOf: '2026-09-30' },
   link: 'https://ouraring.com',
   linkType: 'official',
   content: `## Where it leads
 
-> The Oura Ring 5 (June 2026) is now the current flagship — slimmer, with upgraded sensors. But its headline new software features also roll out to the Ring 4, so this ring stays highly relevant, often at a lower price. See [Oura Ring 5 vs Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4).
+> The Oura Ring 5 (June 2026) is now the current flagship — slimmer, with upgraded sensors. Oura still sells the Ring 4 on its own store (from $349), and retailers have discounted it since the Ring 5 launch. But its headline new software features also roll out to the Ring 4, so this ring stays highly relevant, often at a lower price. See [Oura Ring 5 vs Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4).
 
 For the one job that matters most to ONDA — a clean overnight [HRV](/glossary/heart-rate-variability) signal — the Oura Ring 4 is among the strongest consumer devices of 2026. Worn on the finger, its optical sensor holds a stable reading through the night, and published Bland–Altman work puts its nighttime RMSSD within a few milliseconds of an ECG chest strap. Sleep staging is the other half of the story: independent validation against clinical polysomnography lands near 79% epoch-by-epoch agreement on [deep sleep](/glossary/deep-sleep) and REM — the best of the three devices here.
 
@@ -77,7 +77,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default ouraRing4

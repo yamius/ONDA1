@@ -42,7 +42,7 @@ const eightSleepPod4: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-> Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen dual-zone) — compare Pod 4 pricing against it. On the Pod 5: the Pod 5 Ultra adds an adjustable base, top-down cooling and audio, but roughly doubles the price, and the core temp/HRV tech and the new Autopilot 4.0 software also reach the Pod 4. That keeps this the value pick. See [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).
+> Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen, $2,999 king), and Eight Sleep's own store now lists only the Pod 6 — the Pod 4 survives mainly as remaining or third-party stock. At its ~$4,000 queen price the Pod 4 is no longer the cheaper way into Eight Sleep; only buy it at a discount clearly below the Pod 6. On the Pod 5: the Pod 5 Ultra adds an adjustable base, top-down cooling and audio, but roughly doubles the price, and the core temp/HRV tech and the new Autopilot 4.0 software also reach the Pod 4. See [Pod 4 vs Pod 5](/reviews/vs/eight-sleep-pod-4-vs-eight-sleep-pod-5).
 
 Eight Sleep Pod 4 is the smart sleep-climate system that defined the consumer category. Dual-zone water cooling/heating (13–43°C), built-in HRV and sleep tracking that obviates the need for a separate wearable, and Autopilot programmable climate that adjusts by detected sleep stage overnight. Hardware build and multi-year reliability are both solid.
 

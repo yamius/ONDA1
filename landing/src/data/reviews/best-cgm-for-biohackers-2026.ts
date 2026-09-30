@@ -17,7 +17,7 @@ const bestCgmForBiohackers2026: Comparison = {
     {
       reviewSlug: 'nutrisense',
       award: 'Best for human coaching',
-      takeaway: 'A registered dietitian assigned to every subscriber, alongside the same Dexcom G7 hardware as Levels.',
+      takeaway: 'A registered dietitian assigned to every subscriber, on Dexcom G7 — the same sensor platform as Levels’ Stelo.',
     },
     {
       reviewSlug: 'zoe',
@@ -61,11 +61,11 @@ const bestCgmForBiohackers2026: Comparison = {
     },
   ],
   verdict:
-    'Hardware splits the field into two camps and almost nothing else does. Eight of these ten programmes are software and coaching wrappers around either Abbott Libre 3 or Dexcom G7 — so the right buying question is not which sensor, it is which wrapper. Levels wins overall on insight depth, on the most accurate sensor (Dexcom G7), now sold as tiered memberships ($80–$1,329 a year) that include only one to two months of CGM. Nutrisense delivers a registered dietitian on the same sensor for slightly more. Stelo is the same Dexcom G7 hardware at roughly a third of the long-term cost, with a simpler insight engine. Zoe is the only programme treating CGM as part of a wider biomarker fusion. Ultrahuman M1 is the right pick if you already own (or plan to own) the Ultrahuman Ring Air. Signos is the AI-driven weight-loss specialist; Veri is the EU equivalent of Levels; Lingo is the cheapest legitimate entry; Hello Inside fits German-speaking users; Supersapiens is for EU endurance athletes. Pick the wrapper that matches your goal, not the brand that markets hardest.',
+    'Hardware splits the field into two camps and almost nothing else does. Eight of these ten programmes are software and coaching wrappers around either Abbott Libre 3 or Dexcom G7 — so the right buying question is not which sensor, it is which wrapper. Levels wins overall on insight depth, on the most accurate sensor platform (Dexcom Stelo, built on G7), now sold as tiered memberships ($80–$1,329 a year) that include only one to two months of CGM. Nutrisense delivers a registered dietitian on the same sensor for slightly more. Stelo is the same Dexcom G7 hardware at roughly a third of the long-term cost, with a simpler insight engine. Zoe is the only programme treating CGM as part of a wider biomarker fusion. Ultrahuman M1 is the right pick if you already own (or plan to own) the Ultrahuman Ring Air. Signos is the AI-driven weight-loss specialist; Veri is the EU equivalent of Levels; Lingo is the cheapest legitimate entry; Hello Inside fits German-speaking users; Supersapiens is for EU endurance athletes. Pick the wrapper that matches your goal, not the brand that markets hardest.',
   faq: [
     {
       q: 'What is the best CGM for biohackers in 2026?',
-      a: 'For the deepest insight engine and the most accurate sensor, Levels — on Dexcom G7, as a membership from $80 a year (app-only) to $399–$1,329 a year with one to two months of CGM included. For the same sensor at a third of the long-term cost, Dexcom Stelo. For a registered dietitian alongside the data, Nutrisense. For multi-biomarker personalised nutrition, Zoe. The right pick depends on what trade-off matters most to you.',
+      a: 'For the deepest insight engine and the most accurate sensor, Levels — shipping Dexcom Stelo (no prescription), as a membership from $80 a year (app-only) to $399–$1,329 a year with one to two months of CGM included. For the same sensor at a third of the long-term cost, Dexcom Stelo. For a registered dietitian alongside the data, Nutrisense. For multi-biomarker personalised nutrition, Zoe. The right pick depends on what trade-off matters most to you.',
     },
     {
       q: 'Do I need a prescription for a CGM in 2026?',
@@ -96,7 +96,7 @@ All ten programmes were assessed from manufacturer documentation, the published 
 
 ## Best Continuous Glucose Monitors for Biohackers: which should you buy?
 
-The market is hardware-converged and software-divergent. Two sensors carry the entire non-diabetic CGM category in 2026: **Abbott Libre 3** (Lingo, Ultrahuman M1, Veri, Hello Inside, Zoe, Supersapiens) and **Dexcom G7** (Levels, Stelo, Nutrisense, Signos). The wrappers are what you are actually buying.
+The market is hardware-converged and software-divergent. Two sensors carry the entire non-diabetic CGM category in 2026: **Abbott Libre 3** (Lingo, Ultrahuman M1, Veri, Hello Inside, Zoe, Supersapiens) and **Dexcom G7 platform** (Levels via Stelo, Stelo, Nutrisense, Signos). The wrappers are what you are actually buying.
 
 Two clean breakpoints in the price ladder:
 

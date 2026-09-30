@@ -6,9 +6,9 @@ const signosVsLevels: HeadToHead = {
   productBSlug: 'levels',
   title: 'Signos vs Levels (2026)',
   description:
-    'Signos vs Levels — side-by-side ONDA comparison of two CGM programmes on Dexcom G7. Weight-loss AI coaching versus the deepest biohacker insight engine.',
+    'Signos vs Levels — side-by-side ONDA comparison of two CGM programmes on the Dexcom G7 platform. Weight-loss AI coaching versus the deepest biohacker insight engine.',
   intro:
-    'Signos and Levels are the two CGM programmes most often compared once buyers narrow the field to Dexcom G7 hardware. Same sensor underneath, different goals on top. Signos was built for weight loss — an AI agent pushing meal-by-meal nudges to flatten glucose spikes. Levels was built as a biohacker insight engine — the deepest meal-impact analytics with a credible medical advisory board. The decision is about which job you have.',
+    'Signos and Levels are the two CGM programmes most often compared once buyers narrow the field to Dexcom G7-platform hardware (Levels now ships Stelo, the OTC version). Same sensor platform underneath, different goals on top. Signos was built for weight loss — an AI agent pushing meal-by-meal nudges to flatten glucose spikes. Levels was built as a biohacker insight engine — the deepest meal-impact analytics with a credible medical advisory board. The decision is about which job you have.',
   winnerSlug: null,
   verdict:
     'Different jobs. Signos for weight loss with AI coaching pushing daily behaviour change. Levels for ongoing biohacker insight without a weight-loss framing.',
@@ -17,7 +17,7 @@ const signosVsLevels: HeadToHead = {
   bestForB:
     'Choose Levels if you treat CGM as a general-purpose biohacker instrument — running protocols, tracking time-in-range, iterating on meal experiments without a weight-loss frame.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'tie', note: 'Both run Dexcom G7 — same hardware, same MARD ~8.2%, same 10-day wear. Indistinguishable on sensor.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Same Dexcom G7 platform and similar accuracy (MARD ~8.2%). Signos ships G7 (10-day wear); Levels now ships Stelo (15-day wear, no prescription). Near-identical on sensor.' },
     { name: 'Programme goal', winner: 'tie', note: 'Signos: weight loss via glucose-spike management. Levels: general biohacker insight. Different jobs.' },
     { name: 'Coaching model', winner: 'a', note: 'Signos: real-time AI agent surfacing meal-by-meal nudges and exercise prompts. Levels: app-only insights, no real-time coaching.' },
     { name: 'Insight depth', winner: 'b', note: 'Levels has the deeper meal-impact engine — AUC decomposition, food-by-food ranking history, time-in-range views. Signos is competent but weight-loss framed.' },
@@ -33,7 +33,7 @@ const signosVsLevels: HeadToHead = {
     },
     {
       q: 'Are Signos and Levels the same hardware?',
-      a: 'Yes. Both ship Dexcom G7 — the same sensor with the same 10-day wear and the same MARD ~8.2% accuracy. The differentiation is the app, the coaching model and the framing.',
+      a: 'Very close. Signos ships Dexcom G7 and Levels now ships Dexcom Stelo, the over-the-counter sensor built on the G7 platform, with similar accuracy (MARD ~8.2%). The real difference is the app, the coaching model and the framing.',
     },
     {
       q: 'Does Signos really work for weight loss?',
@@ -46,7 +46,7 @@ const signosVsLevels: HeadToHead = {
   ],
   content: `## The short version
 
-Signos and Levels ship the same Dexcom G7 sensor. The decision is whether you want AI weight-loss coaching or a general-purpose biohacker insight engine. They solve different jobs, even though they look like the same product.
+Signos and Levels ship the same Dexcom G7-platform sensor (Levels via Stelo). The decision is whether you want AI weight-loss coaching or a general-purpose biohacker insight engine. They solve different jobs, even though they look like the same product.
 
 ## When is Signos the right pick?
 

@@ -70,11 +70,11 @@ The metabolic biology these programmes surface — and the protocols the data un
   faq: [
     { q: "Is Zoe worth it?", a: "Zoe is worth it if you want personalised nutrition grounded in published science, not just glucose curves. It is the only programme fusing CGM, gut microbiome and blood biomarkers, led by Tim Spector with PREDICT-backed food rankings. Its CGM phase is only two weeks." },
     { q: "How much does Zoe cost?", a: "Zoe costs £300 for setup plus £60 per month for its multi-biomarker programme. The CGM portion lasts two weeks only. The review rates its long-term cost as lower than Levels or Nutrisense." },
-    { q: "Zoe vs Levels: which is better?", a: "Zoe is better for science-backed personalised nutrition combining CGM, microbiome and blood biomarkers, at lower long-term cost. Levels suits ongoing glucose tracking; Zoe's CGM lasts only two weeks, has no raw data export and uses Libre rather than Dexcom G7." },
+    { q: "Zoe vs Levels: which is better?", a: "Zoe is better for science-backed personalised nutrition combining CGM, microbiome and blood biomarkers, at lower long-term cost. Levels suits ongoing glucose tracking; Zoe's CGM lasts only two weeks, has no raw data export and uses Libre rather than Levels' Dexcom Stelo (G7 platform)." },
     { q: "What are the downsides of Zoe?", a: "Zoe's CGM phase is fixed at two weeks, so it is not an ongoing CGM tool. There is no raw glucose data export, Libre accuracy lags Dexcom G7, and availability is UK-focused with slower US expansion." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-30',
 }
 
 export default zoe

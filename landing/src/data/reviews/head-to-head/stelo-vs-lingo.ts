@@ -40,7 +40,7 @@ const steloVsLingo: HeadToHead = {
     },
     {
       q: 'Can I get Stelo or Lingo data into Levels or Nutrisense?',
-      a: 'No, not directly. Each programme is hardware-locked to its own app. The underlying sensors are the same physical hardware (Stelo = Dexcom G7 = Levels/Nutrisense; Lingo = Libre 3 = Ultrahuman/Veri/Zoe) but the apps do not cross-read each other’s sensors.',
+      a: 'No, not directly. Each programme is hardware-locked to its own app. The underlying sensors are the same physical hardware (Stelo = Dexcom G7 platform = Levels, which now ships Stelo, and Nutrisense; Lingo = Libre 3 = Ultrahuman/Veri/Zoe) but the apps do not cross-read each other’s sensors.',
     },
   ],
   content: `## The short version

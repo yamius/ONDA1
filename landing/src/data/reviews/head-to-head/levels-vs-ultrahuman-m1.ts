@@ -8,17 +8,17 @@ const levelsVsUltrahumanM1: HeadToHead = {
   description:
     'Levels vs Ultrahuman M1 — side-by-side ONDA comparison of two biohacker CGM programmes. Deep glucose-only insights versus cross-signal glucose + HRV + sleep ecosystem.',
   intro:
-    'Levels and Ultrahuman M1 are the two biohacker CGM programmes most often compared after Levels and Nutrisense. Different sensors — Dexcom G7 (Levels) vs Abbott Libre 3 (Ultrahuman) — but the deeper difference is product philosophy. Levels is a glucose-focused insight engine; Ultrahuman is a CGM module inside a broader ecosystem that includes the Ring Air and cross-signal analytics.',
+    'Levels and Ultrahuman M1 are the two biohacker CGM programmes most often compared after Levels and Nutrisense. Different sensors — Dexcom Stelo, G7 platform (Levels) vs Abbott Libre 3 (Ultrahuman) — but the deeper difference is product philosophy. Levels is a glucose-focused insight engine; Ultrahuman is a CGM module inside a broader ecosystem that includes the Ring Air and cross-signal analytics.',
   winnerSlug: null,
   verdict:
     'Depends on what you want. Levels for the deepest glucose-only insight engine on the best CGM hardware. Ultrahuman M1 for glucose composed with HRV, sleep and recovery from the Ultrahuman Ring Air.',
   bestForA:
-    'Choose Levels if CGM is the central instrument and you want the deepest meal-impact analysis on Dexcom G7 — the most accurate sensor in the consumer category.',
+    'Choose Levels if CGM is the central instrument and you want the deepest meal-impact analysis on Dexcom Stelo (G7 platform) — the most accurate sensor in the consumer category.',
   bestForB:
     'Choose Ultrahuman M1 if you already own (or plan to own) the Ultrahuman Ring Air and want glucose data composed with HRV, sleep and recovery in one app.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'a', note: 'Levels uses Dexcom G7 (MARD ~8.2%). Ultrahuman M1 uses Abbott Libre 3 (MARD ~9%). Levels has the more accurate sensor.' },
-    { name: 'Sensor wear time', winner: 'b', note: 'Ultrahuman M1 (Libre 3): 14 days. Levels (Dexcom G7): 10 days. Slight Ultrahuman edge on sensor change cadence.' },
+    { name: 'Sensor accuracy', winner: 'a', note: 'Levels ships Dexcom Stelo (G7 platform, MARD ~8.2%). Ultrahuman M1 uses Abbott Libre 3 (MARD ~9%). Levels has the more accurate sensor.' },
+    { name: 'Sensor wear time', winner: 'a', note: 'Levels (Dexcom Stelo): 15 days. Ultrahuman M1 (Libre 3): 14 days. Near-identical change cadence, slight Levels edge.' },
     { name: 'Glucose insight depth', winner: 'a', note: 'Levels has the deeper meal-impact engine — AUC decomposition, food-by-food ranking history, time-in-range views. Ultrahuman is competent but glucose-specific depth is shallower.' },
     { name: 'Cross-signal integration', winner: 'b', note: 'Ultrahuman M1 composes glucose with HRV, sleep and recovery from the Ring Air in one timeline — unique cross-modal view. Levels integrates with Oura via Apple Health but it is bolt-on.' },
     { name: 'Coaching', winner: 'tie', note: 'Both app-only by default. Neither includes a human coach without a separate tier.' },
@@ -29,10 +29,10 @@ const levelsVsUltrahumanM1: HeadToHead = {
   faq: [
     {
       q: 'Should I pick Levels or Ultrahuman M1?',
-      a: 'Levels if CGM is the deciding job and you want the deepest meal-impact analysis on the most accurate sensor (Dexcom G7). Ultrahuman M1 if you already own (or plan to own) the Ultrahuman Ring Air and want glucose composing with HRV and sleep in one app.',
+      a: 'Levels if CGM is the deciding job and you want the deepest meal-impact analysis on the most accurate sensor platform (Dexcom Stelo, built on G7). Ultrahuman M1 if you already own (or plan to own) the Ultrahuman Ring Air and want glucose composing with HRV and sleep in one app.',
     },
     {
-      q: 'Is Dexcom G7 (Levels) better than Libre 3 (Ultrahuman)?',
+      q: 'Is Dexcom Stelo/G7 (Levels) better than Libre 3 (Ultrahuman)?',
       a: 'Marginally. Dexcom G7 sits at MARD ~8.2% versus Libre 3 at MARD ~9% in independent comparison. The gap is consistent but small — most non-diabetic biohacker use cases are well-served by either.',
     },
     {

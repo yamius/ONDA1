@@ -44,7 +44,7 @@ const levelsVsNutrisense: HeadToHead = {
   ],
   content: `## The short version
 
-Levels and Nutrisense ship the same Dexcom G7 sensor. The decision is between two coaching models — app intelligence (Levels) or a registered dietitian (Nutrisense). Pick on which model you will actually engage with.
+Levels and Nutrisense ship the same Dexcom G7-platform sensor (Levels now includes Stelo, the OTC version). The decision is between two coaching models — app intelligence (Levels) or a registered dietitian (Nutrisense). Pick on which model you will actually engage with.
 
 ## When is Levels the right pick?
 

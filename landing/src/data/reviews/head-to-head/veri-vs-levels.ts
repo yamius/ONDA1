@@ -6,19 +6,19 @@ const veriVsLevels: HeadToHead = {
   productBSlug: 'levels',
   title: 'Veri vs Levels (2026)',
   description:
-    'Veri vs Levels — side-by-side ONDA comparison of two biohacker CGM programmes. Polished EU programme on Libre 3 versus US-only Levels on Dexcom G7.',
+    'Veri vs Levels — side-by-side ONDA comparison of two biohacker CGM programmes. Polished EU programme on Libre 3 versus US-only Levels on Dexcom Stelo.',
   intro:
     'Veri and Levels are the two consumer CGM programmes EU biohackers most often compare against each other when deciding what they can actually buy. Levels has the deeper analytics and the more accurate sensor, but ships US-only. Veri is the polished EU-focused equivalent on Libre 3 hardware. The decision often resolves before scoring — whichever ships to your country.',
   winnerSlug: null,
   verdict:
-    'Geography decides. Levels for US users who want the deepest insight engine on Dexcom G7. Veri for EU users who want a Levels-style experience in their region.',
+    'Geography decides. Levels for US users who want the deepest insight engine on Dexcom Stelo. Veri for EU users who want a Levels-style experience in their region.',
   bestForA:
     'Choose Veri if you are in an EU market — local availability, multi-language support, Garmin/Oura integration baked in. The right shape where Levels does not ship.',
   bestForB:
     'Choose Levels if you are in the US — the deeper insight engine on the more accurate sensor justifies the premium pricing for serious biohacker use.',
   axes: [
     { name: 'Geographic availability', winner: 'a', note: 'Veri: EU-focused with broad European market coverage. Levels: US-only. For European users this axis often decides the comparison.' },
-    { name: 'Sensor accuracy', winner: 'b', note: 'Levels: Dexcom G7 (MARD ~8.2%). Veri: Abbott Libre 3 (MARD ~9%). Levels has the marginally more accurate sensor.' },
+    { name: 'Sensor accuracy', winner: 'b', note: 'Levels: Dexcom Stelo, G7 platform (MARD ~8.2%). Veri: Abbott Libre 3 (MARD ~9%). Levels has the marginally more accurate sensor.' },
     { name: 'Insight depth', winner: 'b', note: 'Levels has the deeper meal-impact engine — AUC decomposition, food-by-food ranking history. Veri is competent but a tier behind on analytical depth.' },
     { name: 'App polish', winner: 'tie', note: 'Both are polished consumer apps; Levels is more mature, Veri is cleaner in places. Roughly equal.' },
     { name: 'Third-party integrations', winner: 'a', note: 'Veri integrates Garmin, Oura, MyFitnessPal natively. Levels integrates Apple Health and Oura. Veri has the broader EU-relevant integration list.' },
@@ -29,14 +29,14 @@ const veriVsLevels: HeadToHead = {
   faq: [
     {
       q: 'Should I pick Veri or Levels?',
-      a: 'Geography decides for most users. If you are in the US, Levels — deeper insight engine, more accurate sensor (Dexcom G7). If you are in Europe, Veri — Levels does not ship to most EU markets, and Veri is the polished EU equivalent.',
+      a: 'Geography decides for most users. If you are in the US, Levels — deeper insight engine, more accurate sensor (Dexcom Stelo, G7 platform). If you are in Europe, Veri — Levels does not ship to most EU markets, and Veri is the polished EU equivalent.',
     },
     {
       q: 'Does Levels ship to Europe?',
       a: 'No — Levels is US-only as of 2026. European biohackers reach for Veri, Hello Inside or Zoe as locally-available alternatives.',
     },
     {
-      q: 'Is the Dexcom G7 sensor in Levels much better than Veri’s Libre 3?',
+      q: 'Is the Dexcom Stelo (G7-platform) sensor in Levels much better than Veri’s Libre 3?',
       a: 'Marginally — Dexcom G7 sits at MARD ~8.2% versus Libre 3 at MARD ~9%. The gap is real but small. For most non-diabetic biohacker use cases either sensor is accurate enough; the deciding factor is the wrapper, not the hardware.',
     },
     {

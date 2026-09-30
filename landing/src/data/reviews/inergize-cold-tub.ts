@@ -19,7 +19,7 @@ const inergizeColdTub: ToolReview = {
     { criterionId: 'water-management', score: 6.5, note: 'Optional ozone add-on; base config is manual water changes.' },
     { criterionId: 'form-factor', score: 7.5, note: 'Indoor or outdoor, 67×31 inches footprint. Drain via spigot. Modular install — tub first, chiller later.' },
     { criterionId: 'evidence', score: 6.0, note: 'Honest about being a configurable mid-tier option; doesn’t overclaim hardware vs Plunge.' },
-    { criterionId: 'value', score: 8.0, note: '$1,500 tub-only, $2,800 with chiller. Modular pricing is the differentiator — splits the chiller-tier cost across phases.' },
+    { criterionId: 'value', score: 8.0, note: 'Scored on the earlier $1,500 tub / ~$1,300 chiller pricing. As of Sept 2026 Inergize lists the Elite Tub (tub + 0.8 HP Elite Chiller) at $2,990 on sale and the Elite Chiller alone at $2,690; no standalone portable tub is listed.' },
   ],
   pros: [
     'Modular tub-then-chiller path — split upfront cost across phases',
@@ -37,10 +37,12 @@ const inergizeColdTub: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Inergize product documentation and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 1500, note: 'tub-only; chiller add-on ~$1,300', asOf: '2026-05-25' },
+  price: { usd: 2990, note: 'Elite Tub = portable tub + 0.8 HP Elite Chiller (sale price; list $3,990). Elite Chiller alone $2,690; certified-refurbished tub + chiller $1,790; Spire cedar tub from $5,990 (tub only) / $7,990 with chiller', asOf: '2026-09-30' },
   link: 'https://inergizehealth.com/',
   linkType: 'official',
-  content: `## Where it leads
+  content: `> Update (September 2026): Inergize's current lineup no longer lists a standalone tub at the $1,500 price reviewed here. The closest match is the Elite Tub — a portable tub bundled with the 0.8 HP Elite Chiller (37-104°F) at $2,990 on sale (list $3,990). The Elite Chiller is also sold alone ($2,690) for use with another tub, a certified-refurbished tub + chiller is $1,790, and the cedar Spire tub starts at $5,990 without chiller. The modular tub-first, chiller-later path described below is therefore now mainly possible by pairing the standalone chiller with a tub you already own.
+
+## Where it leads
 
 Inergize takes the modular approach to cold plunge: buy the tub now, add a chiller later if daily-use practice solidifies. At $1,500 tub-only it splits the chiller-tier upfront cost across phases. For users who want better insulation than barrel or inflatable options but are not ready for $5K turnkey, this is the right shape.
 
@@ -67,12 +69,12 @@ The biology of why cold exposure works — and the protocols that compound with 
   ],
   relatedSlugs: ['ice-barrel-500', 'edge-tub', 'plunge'],
   faq: [
-    { q: "Can you add a chiller to the Inergize Cold Tub later?", a: "Yes, that is the main appeal. You can run the Inergize tub as an ice-fill plunge first and add its separate chiller later, about $1,300 on top of the $1,500 tub. That splits the upfront cost and lets you upgrade once your practice is established." },
+    { q: "Can you add a chiller to the Inergize Cold Tub later?", a: "Yes, that is the main appeal. You can run the Inergize tub as an ice-fill plunge first and add its separate chiller later, which is how it was originally sold at about $1,500 for the tub plus about $1,300 for the chiller. As of September 2026 Inergize lists the tub bundled with its Elite Chiller ($2,990 on sale) and the Elite Chiller alone ($2,690), so the split-purchase path is now mainly chiller-plus-your-own-tub. It splits the upfront cost and lets you upgrade once your practice is established." },
     { q: "Inergize Cold Tub vs The Plunge: which is better?", a: "The Plunge has a more powerful integrated chiller and a longer reliability track record. Inergize is cheaper to start and modular, with better insulation than inflatable or barrel options. Once you add the chiller, though, the total cost approaches Edge Tub territory." },
     { q: "What are the downsides of the Inergize Cold Tub?", a: "The add-on chiller is less powerful than the unit integrated into The Plunge, and the full setup approaches Edge Tub pricing. Its multi-year reliability record is thinner than The Plunge, and the warranty is split component by component rather than covering the whole system." },
   ],
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-09-30',
 }
 
 export default inergizeColdTub

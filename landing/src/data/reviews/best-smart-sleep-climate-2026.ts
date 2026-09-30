@@ -12,7 +12,7 @@ const bestSmartSleepClimate2026: Comparison = {
     {
       reviewSlug: 'eight-sleep-pod-4',
       award: 'Best overall value',
-      takeaway: 'Dual-zone water cooling/heating + built-in HRV tracking + the Autopilot 4.0 software — the core Eight Sleep experience for less than half the Pod 5 Ultra’s price.',
+      takeaway: 'Dual-zone water cooling/heating + built-in HRV tracking + the Autopilot 4.0 software — the core Eight Sleep experience for less than half the Pod 5 Ultra’s price. Since Sept 2026 the new Pod 6 ($2,899 queen, $1,999 Solo) undercuts the Pod 4’s ~$4,000 list — buy the Pod 4 only at a clear discount.',
     },
     {
       reviewSlug: 'eight-sleep-pod-5',
@@ -93,7 +93,7 @@ const bestSmartSleepClimate2026: Comparison = {
       a: 'BedJet 3 cools effectively in mild to moderate climates. In peak summer heat with high humidity, water-cooled systems (Eight Sleep, ChiliPad) cool noticeably more aggressively. For temperate-climate users, air-flow is enough.',
     },
   ],
-  content: `> Update (September 2026): Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen dual-zone). Pod 5 prices below are its last list prices — compare any remaining Pod 5 stock against Pod 6 pricing.
+  content: `> Update (September 2026): Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen; $2,999 king), and Eight Sleep's store now lists only the Pod 6. The Pod 4 value case below assumed Pod 4 vs Pod 5 pricing — at list price the Pod 6 is now cheaper than the Pod 4. Pod 5 prices below are its last list prices — compare any remaining Pod 5 stock against Pod 6 pricing.
 
 ## How we ranked them
 

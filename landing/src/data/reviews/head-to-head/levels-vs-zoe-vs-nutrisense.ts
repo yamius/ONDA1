@@ -14,14 +14,14 @@ const levelsVsZoeVsNutrisense: HeadToHead = {
   verdict:
     'Three different products. Levels for the deepest ongoing CGM insight engine. Zoe for science-backed personalised nutrition. Nutrisense for human dietitian coaching on continuous data.',
   bestForA:
-    'Choose Levels if you treat CGM as a self-experimentation instrument and want the deepest food-by-food insight engine on the most accurate sensor (Dexcom G7).',
+    'Choose Levels if you treat CGM as a self-experimentation instrument and want the deepest food-by-food insight engine on the most accurate sensor platform (Dexcom Stelo, built on G7).',
   bestForB:
     'Choose Zoe if you want personalised nutrition grounded in published science — CGM + gut microbiome + blood biomarkers fused into a single food-ranking model from the PREDICT studies.',
   bestForC:
     'Choose Nutrisense if accountability through a registered dietitian working with your data weekly is what makes the programme work for you.',
   axes: [
     { name: 'Continuous CGM use', winner: 'c', note: 'Nutrisense: continuous Dexcom G7 for as long as you subscribe. Levels: memberships include 1–2 months of CGM a year, extra months as an add-on. Zoe: 2-week Libre phase only. Nutrisense wins.' },
-    { name: 'Sensor accuracy', winner: 'tie', note: 'Levels and Nutrisense both run Dexcom G7 (MARD ~8.2%). Zoe runs Libre (MARD ~9–11%). Levels and Nutrisense tie on hardware.' },
+    { name: 'Sensor accuracy', winner: 'tie', note: 'Levels (Stelo) and Nutrisense (G7) both run the Dexcom G7 platform (MARD ~8.2%). Zoe runs Libre (MARD ~9–11%). Levels and Nutrisense tie on hardware.' },
     { name: 'App insight depth', winner: 'a', note: 'Levels has the deepest meal-impact engine — AUC decomposition, food-by-food ranking, time-in-range views. Nutrisense competent; Zoe lighter on glucose but unique multi-biomarker.' },
     { name: 'Human coaching', winner: 'c', note: 'Nutrisense: registered dietitian for every subscriber. Levels and Zoe: app-only by default. Nutrisense wins on human layer.' },
     { name: 'Scientific lineage', winner: 'b', note: 'Zoe: PREDICT-1 and PREDICT-2 studies from King’s College London (Tim Spector), published in Nature Medicine. Levels has a credible medical board; Nutrisense has RD involvement.' },
@@ -44,7 +44,7 @@ const levelsVsZoeVsNutrisense: HeadToHead = {
     },
     {
       q: 'Is Nutrisense worth the premium over Levels?',
-      a: 'Only if you would actually engage with the registered dietitian weekly. The Dexcom G7 hardware is identical to Levels; what you pay for is the human coaching layer. For users who would skip the RD message, Levels at $80–$110/month less makes more sense.',
+      a: 'Only if you would actually engage with the registered dietitian weekly. The Dexcom G7-platform hardware matches Levels’ Stelo; what you pay for is the human coaching layer. For users who would skip the RD message, Levels at $80–$110/month less makes more sense.',
     },
     {
       q: 'Can I do two of these?',
@@ -65,7 +65,7 @@ If you want personalised nutrition grounded in real published science and a one-
 
 ## When is Nutrisense the right pick?
 
-If accountability through a registered dietitian working through your data weekly is the value, Nutrisense is the right shape. Same Dexcom G7 hardware as Levels; the difference is the human coaching layer.`,
+If accountability through a registered dietitian working through your data weekly is the value, Nutrisense is the right shape. Same Dexcom G7-platform hardware as Levels’ Stelo; the difference is the human coaching layer.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',

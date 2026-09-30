@@ -5,16 +5,16 @@ const levels: ToolReview = {
   name: 'Levels',
   brand: 'Levels Health',
   category: 'cgm',
-  productType: 'CGM coaching programme (Dexcom G7)',
+  productType: 'CGM coaching programme (Dexcom Stelo)',
   description:
-    'Levels review: the most polished biohacker CGM, built on Dexcom G7 — best-in-class food-by-food insights now sold as tiered memberships from $15/month. Is it worth it?',
+    'Levels review: the most polished biohacker CGM, built on Dexcom Stelo — best-in-class food-by-food insights now sold as tiered memberships from $15/month. Is it worth it?',
   verdict:
     'The most polished biohacker CGM programme — best-in-class insights, now in tiered memberships (from $80/year app-only to $1,329/year with labs and two months of CGM).',
   summary:
-    'Levels is the CGM programme that defined the biohacker category. It ships Dexcom G7 sensors with an app whose food-by-food impact analysis, time-in-range scoring and meal-by-meal coaching are the deepest in the market. There is no human coach by default — Levels bets on app intelligence plus content from its medical advisory board. Levels has moved from a flat ~$199/month programme to tiered memberships: an app-only plan ($80/year), Core ($399/year with one month of CGM and two lab panels) and Complete ($1,329/year with two months of CGM, comprehensive labs and a nutritionist session). Continuous CGM beyond the included month(s) is an add-on.',
+    'Levels is the CGM programme that defined the biohacker category. It ships Dexcom Stelo sensors (Dexcom’s over-the-counter CGM, no prescription needed) with an app whose food-by-food impact analysis, time-in-range scoring and meal-by-meal coaching are the deepest in the market. There is no human coach by default — Levels bets on app intelligence plus content from its medical advisory board. Levels has moved from a flat ~$199/month programme to tiered memberships: an app-only plan ($80/year), Core ($399/year with one month of CGM and two lab panels) and Complete ($1,329/year with two months of CGM, comprehensive labs and a nutritionist session). Continuous CGM beyond the included month(s) is an add-on. Members can also connect their own Stelo or Dexcom G7 (G7 needs a prescription, which Levels can arrange through partner physicians) or any CGM that syncs to Apple Health or Health Connect.',
   overallScore: 8.4,
   scores: [
-    { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom G7 — the most accurate consumer CGM on independent comparison, MARD ~8.2% versus reference. 10-day wear, 30-minute warm-up.' },
+    { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom Stelo — the OTC sensor built on the Dexcom G7 platform, among the most accurate consumer CGMs on independent comparison (G7-platform MARD ~8.2% versus reference). 15-day wear, 30-minute warm-up, no prescription. Score unchanged: the switch from G7 to Stelo keeps the same sensor platform.' },
     { criterionId: 'insights', score: 9.0, note: 'The deepest meal-impact analysis on the market — per-meal score, AUC, peak, time-to-baseline, plus daily/weekly time-in-range and glucose variability views.' },
     { criterionId: 'coaching', score: 7.5, note: 'No human coach included by default; the app is the coach, supported by a deep content library and a medical advisory board. Add-on coaching available separately.' },
     { criterionId: 'app-integration', score: 8.5, note: 'Polished iOS/Android app. Integrates with Apple Health and Oura; MyFitnessPal food logging supported.' },
@@ -23,7 +23,7 @@ const levels: ToolReview = {
   ],
   pros: [
     'The deepest food-by-food insight analysis in the category',
-    'Dexcom G7 — the most accurate consumer CGM hardware',
+    'Dexcom Stelo (G7 platform) — top-tier consumer CGM accuracy, no prescription needed',
     'Polished app and content library backed by a credible medical board',
     'Apple Health and Oura integration out of the box',
   ],
@@ -36,13 +36,13 @@ const levels: ToolReview = {
   bestFor: 'Best for serious biohackers who want the deepest CGM insight tool and will pay premium for it.',
   testStatus: 'evidence-based',
   testNote:
-    'Evidence-based assessment — scored from Levels product documentation, Dexcom G7 validation literature and independent 2026 reviews. Not hands-on tested by ONDA.',
+    'Evidence-based assessment — scored from Levels product documentation and support articles, Dexcom G7-platform validation literature and independent 2026 reviews. Not hands-on tested by ONDA.',
   price: { usd: 399, note: 'Core membership $399/year (1 month CGM + 2 lab panels); app-only $80/year; Complete $1,329/year; extra CGM is an add-on', asOf: '2026-09-30' },
   link: 'https://www.levels.com/',
   linkType: 'official',
   content: `## Where it leads
 
-Levels is the programme that turned CGM into a consumer category for non-diabetics, and the app is still the most thoughtful piece of software in the field. Meals do not just appear on a timeline — each is scored, ranked against your own history, decomposed into peak [glucose spike](/glossary/glucose-spikes), AUC and time-to-baseline, and rolled into daily and weekly time-in-range views that train [metabolic flexibility](/glossary/metabolic-flexibility). The underlying hardware is Dexcom G7, which independent MARD comparison puts at the top of the consumer-CGM accuracy ranking. The medical advisory board adds credibility most coaching-light programmes do not have.
+Levels is the programme that turned CGM into a consumer category for non-diabetics, and the app is still the most thoughtful piece of software in the field. Meals do not just appear on a timeline — each is scored, ranked against your own history, decomposed into peak [glucose spike](/glossary/glucose-spikes), AUC and time-to-baseline, and rolled into daily and weekly time-in-range views that train [metabolic flexibility](/glossary/metabolic-flexibility). The included sensor is now Dexcom Stelo — the over-the-counter, no-prescription sensor built on the Dexcom G7 platform, which independent MARD comparison puts at the top of the consumer-CGM accuracy ranking. The medical advisory board adds credibility most coaching-light programmes do not have.
 
 ## What are the downsides of Levels?
 
@@ -70,7 +70,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   faq: [
     { q: "How much does Levels cost?", a: "As of September 2026 Levels sells tiered memberships: about $80 per year for the app alone (bring your own CGM), $399 per year for Core (one month of CGM plus two lab panels) and $1,329 per year for Complete (two months of CGM, comprehensive labs and a nutritionist session). Extra CGM months are an add-on. The old flat ~$199-a-month programme is gone." },
     { q: "Does Levels include a coach?", a: "No. There is no human coach in the default tier. Levels relies on app intelligence, with food-by-food impact analysis, time-in-range scoring and meal-by-meal guidance, plus content from its medical advisory board. Users who want human coaching should look at other programmes." },
-    { q: "Levels vs Lingo: which CGM should I choose?", a: "Levels gives the deepest insights and uses the more accurate Dexcom G7, but is a membership (from $80 a year app-only to $1,329 a year) and is US-only. Lingo needs no subscription and is the cheapest legitimate entry, offering a simpler per-meal score on Libre 3. Choose Levels for depth, Lingo for cost." },
+    { q: "Levels vs Lingo: which CGM should I choose?", a: "Levels gives the deepest insights and ships Dexcom Stelo (G7 platform, slightly more accurate than Libre 3), but is a membership (from $80 a year app-only to $1,329 a year) and is US-only. Lingo needs no subscription and is the cheapest legitimate entry, offering a simpler per-meal score on Libre 3. Choose Levels for depth, Lingo for cost." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-09-30',
