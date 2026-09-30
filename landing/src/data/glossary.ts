@@ -125,32 +125,20 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     title: 'Molecular Psychology',
     category: 'Neuroscience',
     shortDescription:
-      'Understanding psychological states through their molecular basis — hormones, neurotransmitters, and peptides.',
+      'A research field linking genes, brain chemistry and brain systems to differences in personality, emotion and behaviour.',
     content: `
 
-**Molecular Psychology** bridges the gap between subjective experience and biochemistry. Every emotion, thought, and behavior has a molecular signature.
+**Molecular psychology** is a research field that studies how genes, brain chemistry and brain systems relate to differences between people in personality, emotion and behaviour. It combines behavioural genetics, molecular genetics and neuroscience.
 
-## Key Molecules in ONDA
+## What it does not claim
 
-| Molecule | Role | ONDA Practice |
-|----------|------|---------------|
-| **Cortisol** | Stress response | Breathing practices (Level 1) |
-| **Oxytocin** | Social bonding | Group practices (Level 4) |
-| **BDNF** | Neuroplasticity | Cognitive practices (Level 3) |
-| **Serotonin** | Mood regulation | Rhythmic movement (Level 1-2) |
-| **Dopamine** | Motivation & reward | Gamified progression system |
-| **GABA** | Calm & inhibition | Stillness practices (Level 2) |
+It does not claim that each emotion is a single molecule. Most traits are linked to many genes with tiny effects each, plus environment and life experience. Hormones and brain chemicals such as cortisol, dopamine and serotonin influence mood, but thoughts, sleep, stress and relationships influence them in return.
 
-## Why It Matters
+## ONDA scope
 
-Traditional meditation apps say "feel calmer." ONDA Life says "reduce cortisol by activating the parasympathetic nervous system through specific breathing ratios." The difference is precision.
+ONDA does not measure hormones, neurotransmitters or mood. With an Apple Watch it reads HRV, resting heart rate and sleep data — indirect signs of stress load — and offers guided breathing practices.
 
-## Hormonal Firmware
-
-Your endocrine system is the "firmware" that runs beneath conscious awareness. Hormonal patterns established in childhood continue to run unless deliberately updated. ONDA practices target these patterns at the molecular level.
-
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+Read more: [Do hormones control your mood?](/articles/molecular-psychology-hormonal-firmware)`,
   },
   {
     slug: 'interoception',

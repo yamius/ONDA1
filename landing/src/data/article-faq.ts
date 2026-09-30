@@ -645,17 +645,22 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'What is molecular psychology?',
       answer:
-        'Molecular Psychology is the framework that treats every psychological state — mood, confidence, anxiety, calm — as the runtime output of measurable molecules: hormones and neurotransmitters binding to receptors. Instead of analyzing feelings as abstract narrative, it identifies the chemical signal underneath and the physical inputs that produced it.',
+        'Molecular psychology is a research field that studies how genes, brain chemistry and brain systems relate to differences between people in personality, emotion and behaviour. It combines behavioural genetics, molecular genetics and neuroscience. It does not claim that each feeling is a single molecule: most traits involve many genes with tiny effects, plus environment and experience.',
     },
     {
-      question: 'Can you actually change your emotional baseline?',
+      question: 'Do hormones control your mood?',
       answer:
-        'Yes, but not by intention alone. Baselines are defended by set points and receptor density, so they resist single interventions. They respond to repeated physical input: consistent light timing, movement, sleep, and social contact shift the molecular profile over weeks. Consistency rewrites the firmware; intensity does not.',
+        'Partly. Cortisol, sex hormones, thyroid hormones and brain chemicals such as dopamine and serotonin all influence mood, but they work together with sleep, stress, thoughts, health and relationships, and the influence runs both ways: worry raises cortisol, and support can lower the stress response. Hormones play a clear role in thyroid disease, PMDD, after birth and around menopause.',
     },
     {
-      question: "Why doesn't positive thinking change how I feel?",
+      question: 'Is depression caused by low serotonin?',
       answer:
-        'Because thought sits on the application layer, and emotion is set by the firmware layer below it. When hormones and neurotransmitters have already biased the system toward threat, conscious reframing cannot override the chemistry — it can only narrate it. Durable change works bottom-up: fix the molecular inputs first, and the thoughts follow.',
+        'The simple low-serotonin explanation is not well supported: a 2022 umbrella review found no consistent evidence that depression is caused by lowered serotonin. Depression has many causes. Antidepressants still work better than placebo for many people, so never stop or reduce one without planning it with your doctor.',
+    },
+    {
+      question: 'What actually improves mood?',
+      answer:
+        'Regular sleep, exercise (walking or jogging, yoga and strength training have the best evidence), talking therapies such as CBT, and regular contact with people you trust. Therapy produces measurable changes in brain activity. Effects build over weeks. If low mood lasts more than two weeks, see a doctor; if you have thoughts of harming yourself, contact a crisis line (in the US, call or text 988).',
     },
   ],
   'vagus-nerve-exercises': [

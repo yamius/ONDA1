@@ -374,6 +374,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Three ancestral Zeitgeber anchors — morning light, thermal reset, and metabolic gate — to lock your circadian clock and prevent epigenetic drift. ONDA Protocol.',
   'longevity-protocol-biological-clock-reset':
     'Reset your epigenetic age with the ONDA Deep Reset stack: 48-hour dark surge, pulsed hormesis, and DFA-guided wind down to optimize the Horvath Clock and slow biological aging.',
+  'molecular-psychology-hormonal-firmware':
+    'Partly, but not alone. Hormones and brain chemicals shape mood together with sleep, stress, thoughts and people. What the evidence shows and what helps.',
   'nervous-system-ping-latency':
     'Only weakly. Higher resting HRV is linked to slightly better focus and steadier reactions, but effects are small. What HRV measures and what training can do.',
   'fault-tolerant-human-hrv-buffer':
@@ -2773,6 +2775,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 audience: 'Longevity Researchers, Biohackers, High-Performers',
                                 proficiencyLevel: 'Advanced',
                                 educationalLevel: 'Advanced',
+                              }
+                          : slug === 'molecular-psychology-hormonal-firmware'
+                            ? {
+                                keywords: [
+                                  'Do Hormones Control Mood',
+                                  'Molecular Psychology',
+                                  'Hormones and Mood',
+                                  'Chemical Imbalance Depression',
+                                  'Serotonin Theory of Depression',
+                                  'Dual-Hormone Hypothesis',
+                                  'PMDD and Perimenopause Mood',
+                                  'What Improves Mood',
+                                ],
+                                audience: 'Curious readers, People with mood changes, Wearable users',
+                                proficiencyLevel: 'Beginner',
+                                educationalLevel: 'Intermediate',
                               }
                           : slug === 'nervous-system-ping-latency'
                             ? {

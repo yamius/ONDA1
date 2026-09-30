@@ -738,7 +738,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:molecular-psychology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T11:28:32.000Z"
   },
   "glossary:interoception": {
     "published": "2026-09-29T18:09:37.000Z",

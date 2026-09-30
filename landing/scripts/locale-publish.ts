@@ -42,4 +42,5 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('articles', 'neural-bridge-alpha-flow-gateway', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'nervous-system-ping-latency', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'nervous-system-ping-latency', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'molecular-psychology-hormonal-firmware', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

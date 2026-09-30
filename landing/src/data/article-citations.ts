@@ -1820,6 +1820,138 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1111/php.12864"
     }
   ],
+  "molecular-psychology-hormonal-firmware": [
+    {
+      "title": "How the study of digital footprints can supplement research in behavioral genetics and molecular psychology",
+      "authors": "Montag C, et al.",
+      "year": 2022,
+      "journal": "Molecular Psychology: Brain, Behavior, and Society",
+      "doi": "10.12688/molpsychol.17401.1",
+      "url": "https://doi.org/10.12688/molpsychol.17401.1"
+    },
+    {
+      "title": "Protective and damaging effects of stress mediators",
+      "authors": "McEwen BS",
+      "year": 1998,
+      "journal": "New England Journal of Medicine",
+      "doi": "10.1056/NEJM199801153380307",
+      "pmid": "9428819",
+      "url": "https://doi.org/10.1056/NEJM199801153380307"
+    },
+    {
+      "title": "The theory of constructed emotion: an active inference account of interoception and categorization",
+      "authors": "Barrett LF",
+      "year": 2017,
+      "journal": "Social Cognitive and Affective Neuroscience",
+      "doi": "10.1093/scan/nsw154",
+      "pmid": "27798257",
+      "url": "https://doi.org/10.1093/scan/nsw154"
+    },
+    {
+      "title": "The serotonin theory of depression: a systematic umbrella review of the evidence",
+      "authors": "Moncrieff J, Cooper RE, Stockmann T, Amendola S, Hengartner MP, Horowitz MA",
+      "year": 2022,
+      "journal": "Molecular Psychiatry",
+      "doi": "10.1038/s41380-022-01661-0",
+      "pmid": "35854107",
+      "url": "https://doi.org/10.1038/s41380-022-01661-0"
+    },
+    {
+      "title": "Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: a systematic review and network meta-analysis",
+      "authors": "Cipriani A, et al.",
+      "year": 2018,
+      "journal": "Lancet",
+      "doi": "10.1016/S0140-6736(17)32802-7",
+      "pmid": "29477251",
+      "url": "https://doi.org/10.1016/S0140-6736(17)32802-7"
+    },
+    {
+      "title": "Testosterone and cortisol jointly regulate dominance: evidence for a dual-hormone hypothesis",
+      "authors": "Mehta PH, Josephs RA",
+      "year": 2010,
+      "journal": "Hormones and Behavior",
+      "doi": "10.1016/j.yhbeh.2010.08.020",
+      "url": "https://doi.org/10.1016/j.yhbeh.2010.08.020"
+    },
+    {
+      "title": "A meta-analytical evaluation of the dual-hormone hypothesis: Does cortisol moderate the relationship between testosterone and status, dominance, risk taking, aggression, and psychopathy?",
+      "authors": "Dekkers TJ, van Rentergem JAA, Meijer B, Popma A, Wagemaker E, Huizenga HM",
+      "year": 2019,
+      "journal": "Neuroscience and Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2018.12.004",
+      "pmid": "30529754",
+      "url": "https://doi.org/10.1016/j.neubiorev.2018.12.004"
+    },
+    {
+      "title": "Oxytocin increases trust in humans",
+      "authors": "Kosfeld M, Heinrichs M, Zak PJ, Fischbacher U, Fehr E",
+      "year": 2005,
+      "journal": "Nature",
+      "doi": "10.1038/nature03701",
+      "pmid": "15931222",
+      "url": "https://doi.org/10.1038/nature03701"
+    },
+    {
+      "title": "Does Oxytocin Increase Trust in Humans? A Critical Review of Research",
+      "authors": "Nave G, Camerer C, McCullough M",
+      "year": 2015,
+      "journal": "Perspectives on Psychological Science",
+      "doi": "10.1177/1745691615600138",
+      "pmid": "26581735",
+      "url": "https://doi.org/10.1177/1745691615600138"
+    },
+    {
+      "title": "The effects of psychotherapy on brain function: a systematic and critical review",
+      "authors": "Barsaglini A, et al.",
+      "year": 2014,
+      "journal": "Progress in Neurobiology",
+      "doi": "10.1016/j.pneurobio.2013.10.006",
+      "url": "https://doi.org/10.1016/j.pneurobio.2013.10.006"
+    },
+    {
+      "title": "Insomnia as a predictor of depression: a meta-analytic evaluation of longitudinal epidemiological studies",
+      "authors": "Baglioni C, et al.",
+      "year": 2011,
+      "journal": "Journal of Affective Disorders",
+      "doi": "10.1016/j.jad.2011.01.011",
+      "pmid": "21300408",
+      "url": "https://doi.org/10.1016/j.jad.2011.01.011"
+    },
+    {
+      "title": "Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials",
+      "authors": "Noetel M, et al.",
+      "year": 2024,
+      "journal": "BMJ",
+      "doi": "10.1136/bmj-2023-075847",
+      "pmid": "38355154",
+      "url": "https://doi.org/10.1136/bmj-2023-075847"
+    },
+    {
+      "title": "Differential behavioral effects of gonadal steroids in women with and in those without premenstrual syndrome",
+      "authors": "Schmidt PJ, Nieman LK, Danaceau MA, Adams LF, Rubinow DR",
+      "year": 1998,
+      "journal": "New England Journal of Medicine",
+      "doi": "10.1056/NEJM199801223380401",
+      "pmid": "9435325",
+      "url": "https://doi.org/10.1056/NEJM199801223380401"
+    },
+    {
+      "title": "Effects of gonadal steroids in women with a history of postpartum depression",
+      "authors": "Bloch M, et al.",
+      "year": 2000,
+      "journal": "American Journal of Psychiatry",
+      "doi": "10.1176/appi.ajp.157.6.924",
+      "url": "https://doi.org/10.1176/appi.ajp.157.6.924"
+    },
+    {
+      "title": "Associations of hormones and menopausal status with depressed mood in women with no history of depression",
+      "authors": "Freeman EW, et al.",
+      "year": 2006,
+      "journal": "Archives of General Psychiatry",
+      "doi": "10.1001/archpsyc.63.4.375",
+      "url": "https://doi.org/10.1001/archpsyc.63.4.375"
+    }
+  ],
   "muscle-metabolic-marker": [
     {
       "title": "Prognostic value of grip strength: findings from the Prospective Urban Rural Epidemiology (PURE) study",
