@@ -10,6 +10,7 @@
  */
 import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
+import HrvContextBox from '../components/HrvContextBox'
 import { storeCt } from '../lib/storeCt'
 import { useParams, useLocation, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -260,6 +261,7 @@ export function ReviewPage() {
         </article>
       )}
 
+      {review.category === 'hrv-wearable' && <HrvContextBox lang={lang} />}
       <OtherLanguages className="mb-8" />
       <AppStoreCTA ct={storeCt('rv', `${review.slug}_end`, lang)} variant={ctaVariantForCategory(review.category)} lang={lang} />
 

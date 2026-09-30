@@ -6,6 +6,7 @@
  */
 import { OtherLanguages } from '../components/OtherLanguages'
 import AppStoreCTA, { ctaVariantForCategory } from '../components/AppStoreCTA'
+import HrvContextBox from '../components/HrvContextBox'
 import { storeCt } from '../lib/storeCt'
 import { useLocation, useParams, Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
@@ -198,6 +199,7 @@ export function HeadToHeadPage() {
         <Markdown>{tr('content', h2h.content)}</Markdown>
       </article>
 
+      {products.some((p) => p?.category === 'hrv-wearable') && <HrvContextBox lang={lang} />}
       <OtherLanguages className="mb-8" />
       <AppStoreCTA ct={storeCt('vs', h2h.slug.replace(/-vs-/g, '_'), lang)} variant={ctaVariantForCategory(a.category)} lang={lang} />
 
