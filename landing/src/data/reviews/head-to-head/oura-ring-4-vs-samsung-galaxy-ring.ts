@@ -19,7 +19,7 @@ const ouraVsSamsungRing: HeadToHead = {
   axes: [
     { name: 'HRV measurement', winner: 'a', note: 'Both track HRV optically overnight; Oura’s pipeline is marginally tighter in independent comparison. Small gap.' },
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model remains the consumer reference. Samsung’s sleep analytics are competent but a tier behind.' },
-    { name: 'Cross-platform support', winner: 'a', note: 'Oura runs natively on both iPhone and Android with full feature parity. Samsung Galaxy Ring functions on Android only — the iPhone app is read-only.' },
+    { name: 'Cross-platform support', winner: 'a', note: 'Oura runs natively on both iPhone and Android with full feature parity. Samsung Galaxy Ring works with Android only; there is no iPhone support.' },
     { name: 'Ecosystem integration', winner: 'b', note: 'Samsung Galaxy Ring composes natively with Galaxy Watch (HRV + sleep cross-validation), Samsung Health and Samsung devices. The strongest single-brand health ecosystem.' },
     { name: 'Battery life', winner: 'b', note: 'Samsung: ~7 days. Oura: ~7 days. Roughly equal, slight Samsung edge in larger sizes.' },
     { name: 'Subscription', winner: 'b', note: 'Samsung: no subscription required. Oura: $5.99/month membership for full features. Over three years Samsung saves ~$215.' },
@@ -33,7 +33,7 @@ const ouraVsSamsungRing: HeadToHead = {
     },
     {
       q: 'Does Samsung Galaxy Ring work with iPhone?',
-      a: 'Read-only. The Samsung Health iPhone app shows ring data but lacks full setup and management features — Samsung treats iPhone as a viewer, not a primary platform. For iPhone users Oura is the right shape.',
+      a: 'No. The Galaxy Ring works with Android phones and Samsung Health only; there is no iPhone support. For iPhone users, Oura is the right shape.',
     },
     {
       q: 'Is the Oura membership worth it over Samsung Galaxy Ring?',

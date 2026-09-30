@@ -29,6 +29,14 @@ import fitbitAirVsCharge6 from './fitbit-air-vs-fitbit-charge-6'
 import fenix8VsVenu4 from './garmin-fenix-8-vs-garmin-venu-4'
 import series12VsSeries11 from './apple-watch-series-12-vs-series-11'
 import series12VsOura4 from './apple-watch-series-12-vs-oura-ring-4'
+import h2hNew_appleWatchSeries12VsOuraRing5 from './apple-watch-series-12-vs-oura-ring-5'
+import h2hNew_appleWatchUltra4VsAppleWatchSeries12 from './apple-watch-ultra-4-vs-apple-watch-series-12'
+import h2hNew_appleWatchUltra4VsWhoop50 from './apple-watch-ultra-4-vs-whoop-5-0'
+import h2hNew_appleWatchSeries12VsSamsungGalaxyRing from './apple-watch-series-12-vs-samsung-galaxy-ring'
+import h2hNew_appleWatchSeries12VsGarminFenix8 from './apple-watch-series-12-vs-garmin-fenix-8'
+import h2hNew_appleWatchSeries12VsFitbitCharge6 from './apple-watch-series-12-vs-fitbit-charge-6'
+import h2hNew_appleWatchSeries12VsUltrahumanRingPro from './apple-watch-series-12-vs-ultrahuman-ring-pro'
+import h2hNew_garminVenu4VsOuraRing5 from './garmin-venu-4-vs-oura-ring-5'
 import series12VsWhoop50 from './apple-watch-series-12-vs-whoop-5-0'
 import ultra4VsFenix8 from './apple-watch-ultra-4-vs-garmin-fenix-8'
 import series12VsVenu4 from './apple-watch-series-12-vs-garmin-venu-4'
@@ -244,6 +252,14 @@ export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   fenix8VsVenu4,
   series12VsSeries11,
   series12VsOura4,
+  h2hNew_appleWatchSeries12VsOuraRing5,
+  h2hNew_appleWatchUltra4VsAppleWatchSeries12,
+  h2hNew_appleWatchUltra4VsWhoop50,
+  h2hNew_appleWatchSeries12VsSamsungGalaxyRing,
+  h2hNew_appleWatchSeries12VsGarminFenix8,
+  h2hNew_appleWatchSeries12VsFitbitCharge6,
+  h2hNew_appleWatchSeries12VsUltrahumanRingPro,
+  h2hNew_garminVenu4VsOuraRing5,
   series12VsWhoop50,
   ultra4VsFenix8,
   series12VsVenu4,

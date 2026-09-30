@@ -17,23 +17,23 @@ const appleWatchVsFitbit: HeadToHead = {
   bestForB:
     'Choose Fitbit Charge 6 if you want the cheapest credible HRV-and-sleep tracker, you live in Google Fit, and you do not need a smartwatch interface.',
   axes: [
-    { name: 'HRV measurement', winner: 'b', note: 'Fitbit tracks HRV continuously overnight (within Fitbit Premium); Apple Watch spot-checks via Breathe app rather than continuously. Fitbit edges Apple specifically on HRV.' },
+    { name: 'HRV measurement', winner: 'b', note: 'Fitbit tracks HRV overnight, and HRV trends are now free; Apple Watch spot-checks via Breathe app rather than continuously. Fitbit edges Apple specifically on HRV.' },
     { name: 'Sleep tracking', winner: 'b', note: 'Fitbit has the more mature sleep-staging model — a decade of iteration on the same sleep-first product line. Apple sleep tracking is competent but a secondary feature.' },
     { name: 'Smartwatch features', winner: 'a', note: 'Apple: ECG, messaging, payments, apps, fall detection, emergency SOS, third-party ecosystem. Fitbit: notifications and a small button — not a smartwatch.' },
     { name: 'Display and interaction', winner: 'a', note: 'Apple’s Always-On Retina is the best in the category. Fitbit Charge 6 has a small AMOLED suited for glanceable data, not interaction.' },
     { name: 'Battery life', winner: 'b', note: 'Fitbit Charge 6: ~7 days. Apple Watch: ~18–36h depending on always-on. Fitbit wins comfortably on charging-windows-for-HRV-continuity.' },
-    { name: 'Subscription requirements', winner: 'a', note: 'Apple: no subscription for core features. Fitbit: HRV trends and detailed sleep insights gated behind Fitbit Premium (~$10/month).' },
+    { name: 'Subscription requirements', winner: 'a', note: 'Apple: no subscription for core features. Fitbit: HRV trends are now free, but fuller insights still push Fitbit Premium.' },
     { name: 'Platform support', winner: 'b', note: 'Apple Watch: iPhone-only. Fitbit Charge 6: iPhone and Android with full functionality. Fitbit is cross-platform.' },
     { name: 'Price', winner: 'b', note: 'Apple Watch Series 11: ~$399. Fitbit Charge 6: ~$160. Fitbit is roughly 40% of the price.' },
   ],
   faq: [
     {
       q: 'Is Apple Watch or Fitbit Charge 6 better for HRV?',
-      a: 'Fitbit Charge 6, specifically for HRV. Fitbit tracks HRV continuously overnight (with Fitbit Premium for full features); Apple Watch takes spot-check measurements rather than continuous tracking. If HRV is the reason you are buying, Fitbit is the right shape.',
+      a: 'Fitbit Charge 6, specifically for HRV. Fitbit tracks HRV overnight, with HRV trends now free; Apple Watch takes spot-check measurements rather than continuous tracking. If HRV is the reason you are buying, Fitbit is the right shape.',
     },
     {
       q: 'Do I need Fitbit Premium for HRV?',
-      a: 'Most useful HRV insights — Daily Readiness Score, trend analytics — require Fitbit Premium (~$10/month). The raw HRV measurement is collected without it. For trend-only use, the free tier is enough.',
+      a: 'No. HRV trends are now free on the Fitbit Charge 6. Fitbit Premium still unlocks fuller insights, and the app keeps promoting it.',
     },
     {
       q: 'Is Apple Watch worth $240 more than Fitbit Charge 6?',
