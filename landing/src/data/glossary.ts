@@ -1919,6 +1919,10 @@ Age, sleep, body weight, illness, and certain medications are among the main inf
 
 Short or disrupted sleep, obesity, type 2 diabetes, and serious illness are associated with lower levels. Opioids and anabolic steroids can suppress the body's own production. Low testosterone, or unusually high levels in women, should be evaluated by a doctor.
 
+## In ONDA Life
+
+Part 5 of the ONDA practice path, "I Guard the Territory", uses posture, breathing and attention practices aimed at steady, calm presence. ONDA does not measure testosterone, and there is no evidence that these practices raise it.
+
 Read more: [Oxytocin and testosterone: what they really do](/articles/endocrine-social-drive-oxytocin-testosterone)`,
   },
   {
@@ -1986,9 +1990,7 @@ Basal ganglia dysfunction is also implicated in Tourette syndrome, obsessive-com
 
 ## In ONDA Life
 
-Part 5 engages the basal ganglia for "formation of stable, \u2018unshakeable\u2019 postures." Combined with deep postural muscles, this creates an internal framework of strength — the body as territory, occupied with calm dominance.
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+Part 5 of the ONDA practice path, "I Guard the Territory", uses posture, breathing and attention practices aimed at steady, calm presence. The basal ganglia help turn repeated movements into habits, which is why regular practice matters; ONDA does not measure brain activity.`,
   },
   {
     slug: 'endocrine-system',
@@ -2012,9 +2014,7 @@ The **endocrine system** is a network of glands that produce and secrete hormone
 
 ## In ONDA Life
 
-Part 5 "Endocrine System (Dominance Hormonal Circuit)" reconfigures the body through hormonal balance: adrenals shift from cortisol to DHEA, pituitary-gonadal axis supports the "winner's state," thymus links safety with immune strength.
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+Part 5 of the ONDA practice path, "I Guard the Territory", uses posture, breathing and attention practices aimed at steady, calm presence. ONDA does not measure hormones, and there is no evidence that these practices shift cortisol to DHEA or raise testosterone.`,
   },
   {
     slug: 'gonads',
@@ -2034,9 +2034,7 @@ The **gonads** are the primary reproductive glands: the **testes** in men and **
 
 ## Pituitary-Gonadal Axis
 
-The hypothalamus and pituitary regulate gonadal function through gonadotropins (LH, FSH). Part 5 engages this axis for "moderate testosterone stimulation" — the hormonal basis of calm dominance.
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).
+The hypothalamus and pituitary regulate gonadal function through gonadotropins (LH, FSH). Sleep, body weight, age, illness and some medicines are among the main influences on this axis.
 
 ## Why do the Gonads matter?
 
@@ -2296,6 +2294,10 @@ In the brain, it influences social recognition, trust, and attachment. Its reput
 Oxytocin release is affected by physical and social signals. Stretching of the cervix during labor and suckling during breastfeeding are strong, well-documented triggers. Warm touch, hugging, and positive social interaction are also associated with release, though effects in everyday situations are smaller and harder to measure.
 
 Measuring oxytocin reliably is a real challenge. Blood levels may not reflect activity in the brain, and different lab methods can give inconsistent results. Studies using oxytocin nasal sprays drew a lot of attention, but many early findings about trust or social behavior have not held up well in larger replication attempts. Stress, relationships, and individual differences in oxytocin receptors all appear to shape how people respond.
+
+## In ONDA Life
+
+Part 6 of the ONDA practice path, "I'm Part of the Pack", focuses on social connection and co-regulation — calming together with other people. ONDA does not measure oxytocin, and there is no evidence that these practices raise it.
 
 Read more: [Oxytocin and testosterone: what they really do](/articles/endocrine-social-drive-oxytocin-testosterone)`,
   },

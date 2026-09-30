@@ -214,7 +214,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "endocrine-social-drive-oxytocin-testosterone": {
     "published": "2026-03-10T13:31:48Z",
-    "modified": "2026-09-30T11:32:45+02:00"
+    "modified": "2026-09-30T15:17:44+02:00"
   },
   "energy-governor-tsh": {
     "published": "2026-03-10T22:24:32Z",
@@ -722,7 +722,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-30T14:29:12+02:00"
+    "modified": "2026-09-30T15:17:44+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -966,7 +966,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:testosterone": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T13:08:12.000Z"
+    "modified": "2026-09-30T13:55:41.000Z"
   },
   "glossary:thymus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -974,15 +974,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:basal-ganglia": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T13:55:41.000Z"
   },
   "glossary:endocrine-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T13:55:41.000Z"
   },
   "glossary:gonads": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T13:55:41.000Z"
   },
   "glossary:autonomic-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1014,7 +1014,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:oxytocin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T13:08:12.000Z"
+    "modified": "2026-09-30T13:55:41.000Z"
   },
   "glossary:anterior-cingulate-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T14:43:16+02:00"
+    "modified": "2026-09-30T15:17:44+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1606,7 +1606,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-30T14:43:16+02:00"
+    "modified": "2026-09-30T15:17:44+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
