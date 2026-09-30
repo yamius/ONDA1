@@ -359,7 +359,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'system-feedback-biometric-loop':
     'Stop tracking and start optimizing. Learn how ONDA turns your biometric data into immediate corrective protocols for peak performance.',
   'endocrine-social-drive-oxytocin-testosterone':
-    'Learn to balance the trust protocol (Oxytocin) and the status protocol (Testosterone) for optimal social resonance and charismatic leadership.',
+    'Oxytocin is not a simple trust hormone and testosterone is not a simple aggression hormone. What studies show, which findings failed, and what shapes both.',
   'hpa-axis-control-cortisol-aggression':
     'Master your stress architecture. Learn how to manage the HPA axis, cortisol spikes, and reactive aggression using ONDA neuro-protocols.',
   'system-stability-serotonin':
@@ -2666,14 +2666,14 @@ export function getMetaForRoute(route: string): RouteMeta {
                   : slug === 'endocrine-social-drive-oxytocin-testosterone'
                     ? {
                         keywords: [
-                          'Oxytocin',
-                          'Testosterone',
-                          'Endocrine System',
-                          'Social Resonance',
-                          'Biohacking Social Skills',
-                          'ONDA Protocol',
+                          'Oxytocin and Trust',
+                          'What Does Oxytocin Do',
+                          'Testosterone and Aggression',
+                          'Testosterone and Dominance',
+                          'How to Raise Testosterone Naturally',
+                          'Oxytocin Nasal Spray',
                         ],
-                        audience: 'Biohackers, High-Performers, Human Endocrine Architecture',
+                        audience: 'General Public, People Interested in Hormones and Relationships',
                         proficiencyLevel: 'Intermediate',
                       }
                     : slug === 'hpa-axis-control-cortisol-aggression'

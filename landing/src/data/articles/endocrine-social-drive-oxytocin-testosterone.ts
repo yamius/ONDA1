@@ -1,135 +1,155 @@
 import type { Article } from './types'
 
 /**
- * Endocrine Social Drive: Oxytocin vs Testosterone
- * SEO: Oxytocin, Testosterone, Endocrine System, Social Resonance, Biohacking Social Skills, ONDA Protocol.
+ * Oxytocin and testosterone in social life — investigation.
+ * Oxytocin: trust spray finding (Kosfeld 2005) did not replicate well (Nave
+ * 2015); intranasal studies underpowered (Walum 2016); effects depend on
+ * context and person (Bartz 2011) and include in-group favouritism and
+ * defensive aggression toward outsiders (De Dreu 2010). Touch and support
+ * buffer stress (Cohen 2014 hugs); social ties and survival (Holt-Lunstad
+ * 2010). Testosterone: not a simple aggression hormone — weak links
+ * (Geniole 2020 meta-analysis); belief vs hormone in bargaining (Eisenegger
+ * 2009); dual-hormone hypothesis (Mehta & Josephs 2010) only marginally
+ * supported (Dekkers 2019); fatherhood lowers testosterone (Gettler 2011);
+ * sleep restriction lowers it (Leproult 2011); diagnosis and treatment only
+ * with symptoms + repeated low morning levels (Bhasin 2018); power posing
+ * does not change hormones (Ranehill 2015).
+ * Removed from the old version: "high T + high oxytocin = charismatic
+ * leadership" matrix, "oxytocin removes social anxiety by downregulating the
+ * amygdala", "eye contact triggers mirror neurons and oxytocin", "chest voice
+ * resonates with the vagus nerve", "touch is the fastest friend-or-foe
+ * verification", salivary cortisol + HRV coherence "validation", social-modem
+ * and sovereignty metaphors.
+ * Honest firewall: ONDA does not measure hormones or social behaviour.
  */
 const article: Article = {
   slug: 'endocrine-social-drive-oxytocin-testosterone',
-  title: 'Endocrine Social Drive: Oxytocin vs Testosterone',
-  subtitle: 'Balancing Social Resonance and Hierarchical Sovereignty',
-  seoTitle: 'Endocrine Social Drive: Oxytocin vs Testosterone | ONDA Life',
+  title: 'Oxytocin and Testosterone: What They Really Do in Social Life',
+  subtitle:
+    'Is oxytocin the "trust hormone" and testosterone the "dominance hormone"? What the research shows about both — and why the popular stories are mostly wrong.',
+  seoTitle: 'Oxytocin and Testosterone: What They Really Do | ONDA Life',
   description:
-    'Learn to balance the trust protocol (Oxytocin) and the status protocol (Testosterone) for optimal social resonance and charismatic leadership.',
+    'Oxytocin is not a simple trust hormone and testosterone is not a simple aggression hormone. What studies show, which findings failed, and what shapes both.',
   category: 'Biological Software',
   relatedSlugs: [
     'oxytocin',
     'testosterone',
     'endocrine-system',
-    'vagus-nerve',
-    'amygdala',
     'cortisol',
-    'heart-rate-variability',
+    'amygdala',
   ],
   introStyle: 'rose',
   image: '/images/articles/endocrine-social-drive-oxytocin-testosterone.webp',
   imageAlt:
-    '3D holographic visualization of endocrine social drive: gold neural node (status/Testosterone) and cyan node (trust/Oxytocin) with biometric overlays (HRV, glucose, cortisol). Social coherence interface. ONDA Life.',
-  imageTitle:
-    '[ ENDOCRINE_SOCIAL_DRIVE ]: Oxytocin and Testosterone dual-stack calibration for social resonance and hierarchical sovereignty.',
+    'Illustration of two glowing nodes, representing oxytocin and testosterone and their roles in social behaviour.',
+  imageTitle: 'Oxytocin and testosterone in social life',
   imageCaption:
-    '[ SOCIAL_COHERENCE: ACTIVE ]: Gold (status) and cyan (trust) neural nodes with biometric loop data. Connection strength and hierarchy stability visualized.',
+    'Both hormones influence social behaviour, but their effects depend strongly on the situation and the person.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Can a wearable track your hormones yet? What research sweat sensors can do, and which tests are reliable today.',
-    link: '/articles/chm-continuous-hormone-monitoring',
-    linkText: 'Can You Track Cortisol Continuously Yet?',
+    text: 'Do hormones really control how you feel? What the science shows about hormones, brain chemicals and mood.',
+    link: '/articles/molecular-psychology-hormonal-firmware',
+    linkText: 'Do Hormones Control Your Mood? →',
   },
   howToSteps: [
     {
-      name: 'PROTOCOL_01 > DIRECT NEURAL LINK (Visual Calibration)',
-      text: 'Maintain steady, non-threatening eye contact for 3–5 second windows during interactions.',
-      protocolId: 'visual-calibration',
+      name: 'Invest in close relationships',
+      text: 'Make regular time for people you trust — a call, a walk, a shared meal. Warm contact and support are linked to better stress resilience and health.',
+      protocolId: 'social-close-ties',
     },
     {
-      name: 'PROTOCOL_02 > VOCAL RESONANCE MODULATION',
-      text: 'Speak from the lower register (chest voice) specifically during the exhalation phase.',
-      protocolId: 'vocal-resonance',
+      name: 'Protect your sleep',
+      text: 'Aim for 7 to 9 hours. In men, one week of sleeping about 5 hours a night lowered daytime testosterone by 10 to 15%.',
+      protocolId: 'social-sleep-hormones',
     },
     {
-      name: 'PROTOCOL_03 > TACTILE DATA INPUT',
-      text: 'Utilize brief, intentional physical contact (e.g., a firm handshake or a hand on the shoulder) in appropriate contexts.',
-      protocolId: 'tactile-input',
+      name: 'Test before you treat',
+      text: 'If you suspect low testosterone, see a doctor for symptoms review and repeated morning blood tests. Avoid online "boosters" and testosterone without a diagnosis.',
+      protocolId: 'social-test-first',
     },
   ],
   content: `
-## [ ANALYZING THE ENDOCRINE INTERFACE ]
+## [ CASE FILE: THE SOCIAL HORMONES ]
 
-> "The human biological system operates within a complex social grid where behavior is governed by two primary controllers: Oxytocin (the trust and connection protocol) and Testosterone (the status and expansion protocol).
->
-> A common system error in modern social nodes is a dissonance between these signals. An excess of Testosterone without Oxytocin modulation leads to isolation and network fragmentation. Conversely, high Oxytocin without a Testosterone foundation results in a loss of individual sovereignty. The objective is to calibrate this \`Dual-Stack\` for maximum social resonance and stable leadership."
+> "A popular article says social life runs on two hormones. Oxytocin is the trust protocol that switches off social anxiety. Testosterone is the status protocol. Balance both — through eye contact, a deep chest voice and a firm handshake — and you become a charismatic leader.
 
----
-
-## What does oxytocin do in social situations?
-
-\`Oxytocin\` acts as the "glue" of the neural network: its primary function is to downregulate Amygdala activity, effectively removing the "background noise" of social anxiety. In the ONDA framework, this allows the system to enter a state of coherence with other nodes (individuals). High oxytocin levels increase the precision of non-verbal signal processing, transforming the brain into a high-sensitivity receiver for social data.
+> Oxytocin and testosterone really do affect social behaviour. But is oxytocin really a trust spray? Does testosterone make people aggressive? And can a handshake change your hormones?"
 
 ---
 
-## What does testosterone do in social behavior?
+## Section 1: What does oxytocin actually do?
 
-\`Testosterone\` governs boundaries and hierarchical positioning. It modulates "System Confidence," allowing the individual to broadcast their unique code into the environment. Contrary to popular belief, testosterone does not inherently cause aggression; it amplifies the drive to maintain status and territory. When synchronized with Oxytocin, it facilitates a "Protector" archetype—a leader who secures the network without destroying its internal connections.
+Oxytocin is a hormone made in the hypothalamus. Its best-proven jobs are physical: it triggers contractions during labour and the milk let-down reflex during breastfeeding.
 
----
+In the brain, oxytocin is involved in bonding between parents and babies and between partners, and in paying attention to social cues. Warm touch, hugs and close contact are associated with its release, although this is hard to measure in everyday life.
 
-## [ EXECUTION_PROTOCOLS: SOCIAL_SYNC ]
-
-### PROTOCOL_01 > DIRECT NEURAL LINK (Visual Calibration)
-
-> **The Hack:** Maintain steady, non-threatening eye contact for 3–5 second windows during interactions.
-
-**The Logic:** Eye contact is associated with mirror-neuron engagement and is thought to support Oxytocin signalling. It acts like a biochemical "handshake," helping nudge the recipient's system from "Threat Detection" toward "Connection Mode."
-
-\`[ STATUS: ACTIVE ]\`
+**The effects depend on context and the person.** In some people and situations, oxytocin increases closeness; in others it increases envy or wariness (Bartz 2011). In one experiment, oxytocin made people more cooperative with their own group — but also more defensive toward outsiders (De Dreu 2010). It is not simply a "love hormone".
 
 ---
 
-### PROTOCOL_02 > VOCAL RESONANCE MODULATION
+## Section 2: Is oxytocin the "trust hormone"?
 
-> **The Hack:** Speak from the lower register (chest voice) specifically during the exhalation phase.
+That idea is mostly based on one famous study that did not hold up well.
 
-**The Logic:** Lower frequencies resonate with the Vagus nerve, signaling system stability to the surrounding environment. This is a Testosterone-driven marker of strength that remains non-threatening when paired with Oxytocin-derived calm.
+In 2005, people who received an oxytocin nasal spray trusted a partner with more money in an investment game (Kosfeld 2005). But a critical review found that attempts to repeat this result mostly failed, and concluded that the link between oxytocin and trust is not reliable (Nave 2015). Many nasal-spray studies were too small to give trustworthy answers (Walum 2016).
 
-\`[ STATUS: ACTIVE ]\`
+Nasal sprays sold online to "increase trust" or "reduce social anxiety" have no good evidence behind them.
 
----
-
-### PROTOCOL_03 > TACTILE DATA INPUT
-
-> **The Hack:** Utilize brief, intentional physical contact (e.g., a firm handshake or a hand on the shoulder) in appropriate contexts.
-
-**The Logic:** Stimulating C-tactile afferent fibers is the fastest hardware-level method to verify "Friend-or-Foe" status and reinforce network structure.
-
-\`[ STATUS: ACTIVE ]\`
+What does help: close, supportive relationships. In one study of 404 adults, people who received more hugs and social support were less likely to get sick when exposed to a cold virus under stress (Cohen 2014). Across 148 studies, people with stronger social relationships had about 50% better odds of survival over the follow-up period (Holt-Lunstad 2010).
 
 ---
 
-## [ SYSTEM CORRECTION LOG ]
+## Section 3: Does testosterone make people aggressive or dominant?
 
-- \`HIGH_TESTOSTERONE / LOW_OXYTOCIN\`
-  - Result: Dominance without connection.
-  - System Risk: High conflict probability and social isolation.
+Only weakly, and it depends on the situation.
 
-- \`LOW_TESTOSTERONE / HIGH_OXYTOCIN\`
-  - Result: Compliance without boundaries.
-  - System Risk: Loss of sovereignty and diminished influence.
+- **Aggression.** A large meta-analysis found only weak links between testosterone and aggression in people (Geniole 2020).
+- **Fairness.** In one experiment, women given testosterone made fairer offers in a bargaining game. But women who **believed** they had received testosterone acted less fairly — the myth itself changed behaviour more than the hormone (Eisenegger 2009).
+- **Status.** The "dual-hormone" idea says testosterone is linked to dominance only when cortisol is low (Mehta & Josephs 2010). A meta-analysis found only marginal support, with very small effects (Dekkers 2019).
 
-- \`HIGH_TESTOSTERONE / HIGH_OXYTOCIN\`
-  - Result: Charismatic leadership and stable resonance.
-  - System State: OPTIMAL_INFLUENCE.
+Testosterone does play a role in competition and seeking status, but it is one factor among many — not a switch for confidence or charisma.
 
 ---
 
-## [ HARDWARE_VALIDATION ]
+## Section 4: What actually changes testosterone?
 
-METRIC: Salivary Cortisol reduction + HRV Coherence during social interaction.
-\`STATUS: Social Drive Stabilized. Network Resonance Optimal.\`
+Your life situation and health matter more than posture or voice tricks.
+
+- **Relationships and fatherhood.** Men who became fathers and were involved in childcare showed larger drops in testosterone (Gettler 2011). Hormones follow social roles, not only the other way round.
+- **Sleep.** One week of sleeping about 5 hours a night lowered daytime testosterone in young healthy men by 10 to 15% (Leproult 2011).
+- **Age, weight and illness.** Levels slowly decline with age; obesity, type 2 diabetes, some medicines (such as opioids) and serious illness are linked to lower levels.
+- **Posture.** "Power poses" did not change testosterone or cortisol in a larger replication study (Ranehill 2015).
 
 ---
 
-> [ FINALIZE_ANALYSIS ]
-> The endocrine system is your social modem. By balancing the drive for status with the protocol for trust, you upgrade from a reactive biological unit to a proactive architect of social reality.
+## Section 5: Should you test or boost your testosterone?
+
+Only with a doctor, and only if you have symptoms. Low testosterone is diagnosed when there are clear symptoms (such as low sex drive, erection problems or loss of body hair) **and** repeated low morning blood tests (Bhasin 2018). Testosterone treatment without a diagnosis can suppress your own production and fertility and has other risks.
+
+"Testosterone booster" supplements sold online are generally not supported by good evidence, and anabolic steroids are harmful.
+
+**Myth-check:**
+
+- *"High testosterone plus high oxytocin makes a charismatic leader."* — There is no study showing this.
+- *"Eye contact triggers mirror neurons and oxytocin."* — Not established in people.
+- *"A deep chest voice resonates with the vagus nerve."* — No evidence.
+- *"Oxytocin spray reduces social anxiety and builds trust."* — Early findings did not replicate.
+
+---
+
+## Section 6: Can ONDA measure these hormones?
+
+No. ONDA does not measure oxytocin, testosterone or social behaviour.
+
+With an Apple Watch, ONDA reads heart rate variability (HRV), resting heart rate and sleep data from Apple Health. Sleep is one of the strongest everyday influences on testosterone, so sleep trends are worth watching. ONDA also offers guided breathing practices that can help you calm down before a stressful conversation.
+
+---
+
+## Section 7: When should you see a doctor?
+
+See a doctor if you have signs of low testosterone (low sex drive, erection problems, loss of body hair, unexplained tiredness or low mood), before taking any testosterone or "booster" product, or if women notice new excess hair growth, acne or irregular periods, which can be signs of high androgen levels.
+
+Also seek help if loneliness, social anxiety or relationship problems last for weeks and affect daily life — talking therapy works well for these.
 `,
 }
 

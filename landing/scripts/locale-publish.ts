@@ -45,4 +45,5 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('articles', 'molecular-psychology-hormonal-firmware', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'system-stability-serotonin', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'neural-optimizer-estrogen', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'endocrine-social-drive-oxytocin-testosterone', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

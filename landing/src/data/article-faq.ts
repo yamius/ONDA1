@@ -433,16 +433,21 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Transcranial direct current stimulation uses very low current and is generally well tolerated in research settings, but it is not a casual consumer tool. Dose, electrode placement and timing matter, and it should be approached cautiously and ideally with informed guidance.",
     },
   ],
-  "endocrine-social-drive-oxytocin-testosterone": [
+  'endocrine-social-drive-oxytocin-testosterone': [
     {
-      question: "How do oxytocin and testosterone shape social behaviour?",
+      question: 'Is oxytocin the trust hormone?',
       answer:
-        "They run two complementary protocols. Oxytocin is the trust code \u2014 it builds belonging, safety and connection. Testosterone is the status code \u2014 it drives assertiveness and presence. Charismatic, grounded social behaviour comes from balancing the two, not maxing either.",
+        'Not reliably. A famous 2005 study found that an oxytocin nasal spray increased trust in a money game, but later attempts mostly failed to repeat it, and many spray studies were too small. Oxytocin affects bonding and attention to social cues, but its effects depend on the situation and the person.',
     },
     {
-      question: "How do I build natural presence and charisma?",
+      question: 'Does testosterone make you aggressive?',
       answer:
-        "Presence is largely physiological. Steady, calm eye contact calibrates the trust signal, lower and slower vocal resonance projects status without aggression, and appropriate, confident body language reinforces both \u2014 letting others\u2019 nervous systems read you as safe and grounded.",
+        'Only weakly. A large meta-analysis found weak links between testosterone and aggression in people. In one experiment, women given testosterone bargained more fairly, while those who only believed they got it acted less fairly.',
+    },
+    {
+      question: 'How can I raise testosterone naturally?',
+      answer:
+        'Sleep enough, keep a healthy weight and stay active. One week of about 5 hours of sleep a night lowered testosterone in young men by 10 to 15%. Power poses do not change hormone levels. If you have symptoms of low testosterone, see a doctor for repeated morning blood tests rather than buying boosters.',
     },
   ],
   "energy-governor-tsh": [

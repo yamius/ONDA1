@@ -466,7 +466,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "neural-optimizer-estrogen": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T14:43:16+02:00"
   },
   "neural-signal-to-noise-cleaning-system-channel": {
     "published": "2026-04-21T12:43:38Z",
@@ -966,7 +966,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:testosterone": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T13:08:12.000Z"
   },
   "glossary:thymus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1014,7 +1014,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:oxytocin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T13:08:12.000Z"
   },
   "glossary:anterior-cingulate-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T14:29:12+02:00"
+    "modified": "2026-09-30T14:43:16+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1606,7 +1606,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-30T14:29:12+02:00"
+    "modified": "2026-09-30T14:43:16+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",

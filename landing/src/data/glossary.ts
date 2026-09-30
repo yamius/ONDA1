@@ -1896,17 +1896,16 @@ DHEA is usually measured with a blood test for DHEA sulfate (DHEA-S), its more s
     title: 'Testosterone',
     category: 'Neuroscience',
     shortDescription:
-      'The primary male sex hormone — also in women; supports dominance, confidence, and metabolic vigor.',
+      'The main male sex hormone, also made in women; supports muscle, bone, sex drive and red blood cells. Links to dominance are weak.',
     content: `
 
-**Testosterone** is a steroid hormone produced in the testes (men), ovaries (women), and adrenal glands. It supports muscle mass, bone density, libido, and — at moderate levels — confidence and assertiveness without aggression.
+**Testosterone** is a steroid hormone produced in the testes (men), ovaries (women), and adrenal glands. It supports muscle mass, bone density, sex drive and red blood cell production.
 
 ## Key Effects
 
-- **Metabolic** — muscle building, fat distribution
-- **Psychological** — confidence, risk-taking, status
-- **Neuroprotective** — supports brain function
-- **Balance** — moderate levels support "calm dominance"
+- **Body** — muscle, bone, fat distribution, red blood cells
+- **Sexual health** — sex drive, sperm production
+- **Behaviour** — small, context-dependent links to competition and status; weak links to aggression
 
 ## Why does testosterone matter?
 
@@ -1920,11 +1919,7 @@ Age, sleep, body weight, illness, and certain medications are among the main inf
 
 Short or disrupted sleep, obesity, type 2 diabetes, and serious illness are associated with lower levels. Opioids and anabolic steroids can suppress the body's own production. Low testosterone, or unusually high levels in women, should be evaluated by a doctor.
 
-## In ONDA Life
-
-Part 5 engages the Pituitary-Gonadal axis for "moderate testosterone stimulation" — the "winner's state." The feedback loop: Hypothalamus activation → Increased testosterone → Decreased cortisol = calm dominance without aggression.
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+Read more: [Oxytocin and testosterone: what they really do](/articles/endocrine-social-drive-oxytocin-testosterone)`,
   },
   {
     slug: 'thymus',
@@ -2277,7 +2272,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     title: 'Oxytocin',
     category: 'Neuroscience',
     shortDescription:
-      'The "bonding hormone" — promotes trust, belonging, and social connection; lowers anxiety and aggression.',
+      'A hormone for labour, breastfeeding and bonding. Its "trust hormone" reputation is oversimplified: effects depend on context and person.',
     relatedSlugs: ['amygdala', 'vagus-nerve', 'anterior-cingulate-cortex'],
     content: `
 
@@ -2285,11 +2280,10 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 ## Key Effects
 
-- **Trust** — increases willingness to cooperate
-- **Bonding** — strengthens attachment (parent-child, romantic, social)
-- **Anxiety reduction** — lowers baseline anxiety (counteracts amygdala reactivity)
-- **Aggression reduction** — dampens defensive aggression
-- **Social salience** — enhances attention to social cues
+- **Birth and breastfeeding** — triggers labour contractions and milk let-down (well established)
+- **Bonding** — involved in parent-child and partner attachment
+- **Social attention** — influences attention to social cues
+- **Context-dependent** — can increase closeness in some situations and wariness toward outsiders in others
 
 ## Why does Oxytocin matter?
 
@@ -2303,11 +2297,7 @@ Oxytocin release is affected by physical and social signals. Stretching of the c
 
 Measuring oxytocin reliably is a real challenge. Blood levels may not reflect activity in the brain, and different lab methods can give inconsistent results. Studies using oxytocin nasal sprays drew a lot of attention, but many early findings about trust or social behavior have not held up well in larger replication attempts. Stress, relationships, and individual differences in oxytocin receptors all appear to shape how people respond.
 
-## In ONDA Life
-
-Part 6 "Oxytocin Profile" works with the hormone of trust and belonging. The goal is to train the system to produce oxytocin in response to safe social contact — which automatically lowers baseline anxiety and aggression, enabling social engagement without fear.
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+Read more: [Oxytocin and testosterone: what they really do](/articles/endocrine-social-drive-oxytocin-testosterone)`,
   },
   {
     slug: 'anterior-cingulate-cortex',

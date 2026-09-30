@@ -161,9 +161,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'neural-co-regulation': 'cognitive-architecture-neural-throughput',
   'neural-photic-anchor': 'cognitive-architecture-neural-throughput',
   // endocrine-social-drive-oxytocin-testosterone
-  'visual-calibration': 'endocrine-social-drive-oxytocin-testosterone',
-  'vocal-resonance': 'endocrine-social-drive-oxytocin-testosterone',
-  'tactile-input': 'endocrine-social-drive-oxytocin-testosterone',
+  'social-close-ties': 'endocrine-social-drive-oxytocin-testosterone',
+  'social-sleep-hormones': 'endocrine-social-drive-oxytocin-testosterone',
+  'social-test-first': 'endocrine-social-drive-oxytocin-testosterone',
   // hpa-axis-control-cortisol-aggression
   'hpa-forced-deceleration': 'hpa-axis-control-cortisol-aggression',
   'hpa-micro-loading': 'hpa-axis-control-cortisol-aggression',

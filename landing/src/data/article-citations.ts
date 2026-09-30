@@ -954,13 +954,124 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "endocrine-social-drive-oxytocin-testosterone": [
     {
+      "title": "Social effects of oxytocin in humans: context and person matter",
+      "authors": "Bartz JA et al.",
+      "year": 2011,
+      "journal": "Trends in Cognitive Sciences",
+      "doi": "10.1016/j.tics.2011.05.002",
+      "url": "https://doi.org/10.1016/j.tics.2011.05.002"
+    },
+    {
+      "title": "The Neuropeptide Oxytocin Regulates Parochial Altruism in Intergroup Conflict Among Humans",
+      "authors": "De Dreu CKW et al.",
+      "year": 2010,
+      "journal": "Science",
+      "doi": "10.1126/science.1189047",
+      "url": "https://doi.org/10.1126/science.1189047"
+    },
+    {
       "title": "Oxytocin increases trust in humans",
       "authors": "Kosfeld M et al.",
       "year": 2005,
       "journal": "Nature",
       "doi": "10.1038/nature03701",
-      "pmid": "15931222",
       "url": "https://doi.org/10.1038/nature03701"
+    },
+    {
+      "title": "Does Oxytocin Increase Trust in Humans? A Critical Review of Research",
+      "authors": "Nave G et al.",
+      "year": 2015,
+      "journal": "Perspectives on Psychological Science",
+      "doi": "10.1177/1745691615600138",
+      "url": "https://doi.org/10.1177/1745691615600138"
+    },
+    {
+      "title": "Statistical and Methodological Considerations for the Interpretation of Intranasal Oxytocin Studies",
+      "authors": "Walum H et al.",
+      "year": 2016,
+      "journal": "Biological Psychiatry",
+      "doi": "10.1016/j.biopsych.2015.06.016",
+      "url": "https://doi.org/10.1016/j.biopsych.2015.06.016"
+    },
+    {
+      "title": "Does Hugging Provide Stress-Buffering Social Support? A Study of Susceptibility to Upper Respiratory Infection and Illness",
+      "authors": "Cohen S et al.",
+      "year": 2014,
+      "journal": "Psychological Science",
+      "doi": "10.1177/0956797614559284",
+      "url": "https://doi.org/10.1177/0956797614559284"
+    },
+    {
+      "title": "Social Relationships and Mortality Risk: A Meta-analytic Review",
+      "authors": "Holt-Lunstad J et al.",
+      "year": 2010,
+      "journal": "PLoS Medicine",
+      "doi": "10.1371/journal.pmed.1000316",
+      "url": "https://doi.org/10.1371/journal.pmed.1000316"
+    },
+    {
+      "title": "Is testosterone linked to human aggression? A meta-analytic examination of the relationship between baseline, dynamic, and manipulated testosterone on human aggression",
+      "authors": "Geniole SN et al.",
+      "year": 2020,
+      "journal": "Hormones and Behavior",
+      "doi": "10.1016/j.yhbeh.2019.104644",
+      "url": "https://doi.org/10.1016/j.yhbeh.2019.104644"
+    },
+    {
+      "title": "Prejudice and truth about the effect of testosterone on human bargaining behaviour",
+      "authors": "Eisenegger C et al.",
+      "year": 2009,
+      "journal": "Nature",
+      "doi": "10.1038/nature08711",
+      "url": "https://doi.org/10.1038/nature08711"
+    },
+    {
+      "title": "Testosterone and cortisol jointly regulate dominance: evidence for a dual-hormone hypothesis",
+      "authors": "Mehta PH, Josephs RA",
+      "year": 2010,
+      "journal": "Hormones and Behavior",
+      "doi": "10.1016/j.yhbeh.2010.08.020",
+      "url": "https://doi.org/10.1016/j.yhbeh.2010.08.020"
+    },
+    {
+      "title": "A meta-analytical evaluation of the dual-hormone hypothesis: Does cortisol moderate the relationship between testosterone and status, dominance, risk taking, aggression, and psychopathy?",
+      "authors": "Dekkers TJ et al.",
+      "year": 2019,
+      "journal": "Neuroscience & Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2018.12.004",
+      "url": "https://doi.org/10.1016/j.neubiorev.2018.12.004"
+    },
+    {
+      "title": "Longitudinal evidence that fatherhood decreases testosterone in human males",
+      "authors": "Gettler LT et al.",
+      "year": 2011,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "doi": "10.1073/pnas.1105403108",
+      "url": "https://doi.org/10.1073/pnas.1105403108"
+    },
+    {
+      "title": "Effect of 1 Week of Sleep Restriction on Testosterone Levels in Young Healthy Men",
+      "authors": "Leproult R, Van Cauter E",
+      "year": 2011,
+      "journal": "JAMA",
+      "doi": "10.1001/jama.2011.710",
+      "url": "https://doi.org/10.1001/jama.2011.710"
+    },
+    {
+      "title": "Assessing the Robustness of Power Posing",
+      "authors": "Ranehill E et al.",
+      "year": 2015,
+      "journal": "Psychological Science",
+      "doi": "10.1177/0956797614553946",
+      "url": "https://doi.org/10.1177/0956797614553946"
+    },
+    {
+      "title": "Testosterone Therapy in Men With Hypogonadism: An Endocrine Society Clinical Practice Guideline",
+      "authors": "Bhasin S et al.",
+      "year": 2018,
+      "journal": "The Journal of Clinical Endocrinology & Metabolism",
+      "doi": "10.1210/jc.2018-00229",
+      "url": "https://doi.org/10.1210/jc.2018-00229"
     }
   ],
   "energy-sensor-leptin": [
