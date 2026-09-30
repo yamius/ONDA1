@@ -374,19 +374,24 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   "chm-continuous-hormone-monitoring": [
     {
-      question: "What is continuous hormone monitoring?",
+      question: "Is there a wearable that measures cortisol?",
       answer:
-        "Continuous hormone monitoring (CHM) replaces occasional static bloodwork with a dynamic, ongoing read of your internal chemistry \u2014 tracking patterns like the daily cortisol curve and cyclical testosterone output rather than a single isolated data point.",
+        "Not one that is validated and sold to consumers. Research teams have built sweat patches and a smartwatch prototype that detect cortisol, and tested them in small studies. Watches and rings that show \"stress\" estimate it from heart rate, HRV or skin signals; they do not measure any hormone.",
     },
     {
-      question: "How can I track my cortisol rhythm without constant lab tests?",
+      question: "How accurate are sweat cortisol sensors?",
       answer:
-        "Cortisol follows a predictable daily curve \u2014 a sharp morning rise and a gradual evening fall. You can read its pattern through proxy signals: wake energy, afternoon dips, sleep onset and HRV. A disrupted curve (flat mornings, wired evenings) is the signal to recalibrate.",
+        "In pilot studies, sweat cortisol tracked blood or saliva cortisol well enough to show the daily rhythm and stress responses. But sweat rate, pH, dilution and breakdown on the skin all vary, and how hormones pass from blood into sweat is still poorly understood. Large, long-term validation is missing.",
     },
     {
-      question: "How do I optimise my performance window with hormone data?",
+      question: "Why does cortisol change so much during the day?",
       answer:
-        "Map demanding cognitive and physical work onto your natural hormonal peaks rather than fighting them. Schedule high-stakes effort when cortisol and testosterone output is highest, and protect recovery windows when they fall \u2014 this prevents the hormonal crash that follows chronic mistiming.",
+        "It follows a strong daily rhythm: low at night, a sharp rise in the first 30–45 minutes after waking (the cortisol awakening response), then a gradual fall toward evening. It also rises briefly with stress, exercise and illness, which is why one random reading says little and doctors use timed tests.",
+    },
+    {
+      question: "How is cortisol tested properly?",
+      answer:
+        "With lab tests read by a clinician. For suspected excess, guidelines use 24-hour urine cortisol, late-night salivary cortisol or a dexamethasone suppression test. For suspected deficiency, a stimulation test is standard, with morning blood cortisol as a screen. HRV and resting heart rate reflect stress load but are not hormone readings.",
     },
   ],
   "co2-tolerance-expanding-oxygen-limit": [

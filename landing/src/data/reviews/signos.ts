@@ -60,7 +60,7 @@ The metabolic biology these programmes surface — and the protocols the data un
 
 - [GLP-1 biology and muscle preservation](/articles/glp1-biology-muscle-preservation) — what CGM data shows during GLP-1 protocol use
 - [AI biomarker tracking](/articles/ai-biomarker-tracking-predictive) — CGM as the highest-density consumer biomarker stream available
-- [Continuous hormone monitoring](/articles/chm-continuous-hormone-monitoring) — why CGM is the closest consumer product to the hormone-stream future
+- [Can you track cortisol continuously yet?](/articles/chm-continuous-hormone-monitoring) — why no consumer wearable measures hormones today, unlike glucose
 `,
   references: [
     { label: 'Signos — official site', url: 'https://www.signos.com/' },

@@ -62,7 +62,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "apple-watch-recovery-hrv-vs-overall-hrv": {
     "published": "2026-09-17T17:21:46+02:00",
-    "modified": "2026-09-29T09:45:29+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "attention-trainable-skill-meditation": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -158,7 +158,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "co2-tolerance-expanding-oxygen-limit": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "cognitive-architecture-neural-throughput": {
     "published": "2026-03-08T13:29:07+01:00",
@@ -170,7 +170,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cognitive-shuffling": {
     "published": "2026-06-04T00:30:56+02:00",
-    "modified": "2026-09-29T09:45:29+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "coherent-breathing-guide": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -210,7 +210,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "eating-late-heart-rate-sleep": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-29T09:45:29+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -270,11 +270,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-long-does-alcohol-stay-in-your-system": {
     "published": "2026-06-04T22:53:28+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "how-much-alcohol-lowers-hrv": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-29T09:45:29+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "how-much-meditation-do-you-need": {
     "published": "2026-09-23T15:19:19+02:00",
@@ -1350,11 +1350,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:chm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:11:15.000Z"
+    "modified": "2026-09-30T09:23:04.000Z"
   },
   "glossary:lipolysis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T09:23:04.000Z"
   },
   "glossary:free-hormonal-index": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1614,7 +1614,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-29T23:59:57+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1622,7 +1622,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-29T23:59:57+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1630,7 +1630,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-29T23:59:57+02:00"
+    "modified": "2026-09-30T10:48:26+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",

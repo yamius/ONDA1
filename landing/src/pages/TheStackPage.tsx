@@ -147,9 +147,9 @@ const STACK_COMPONENTS: Component[] = [
     name: 'SYSTEM_FORECASTING',
     protocols: [
       { id: 'predictive-anomaly-detection-pulse', name: 'ANOMALY_DETECTION_PULSE', params: '(PREDICTIVE_SYNC)' },
-      { id: 'chm-cortisol-sync', name: 'STRESS_RESPONSE_CALIBRATION', params: '(CORTISOL_SYNC)' },
-      { id: 'chm-performance-window', name: 'PERFORMANCE_WINDOW_OPTIMIZATION', params: '(PEAK_TESTOSTERONE)' },
-      { id: 'chm-crash-prevention', name: 'HORMONAL_CRASH_PREVENTION', params: '(BASELINE_ALERT)' },
+      { id: 'chm-lab-cortisol-test', name: 'LAB_CORTISOL_TEST', params: '(BLOOD_SALIVA_URINE)' },
+      { id: 'chm-hrv-rhr-trend', name: 'HRV_RHR_TREND', params: '(INDIRECT_STRESS_LOAD)' },
+      { id: 'chm-regular-wake-light', name: 'REGULAR_WAKE_AND_LIGHT', params: '(MORNING_DAYLIGHT)' },
       { id: 'femtech-phase-sync', name: 'PHASE_SYNCHRONIZATION', params: '(CYCLE_SYNCING_DAYS_7-14)' },
       { id: 'femtech-bbt-tracking', name: 'THERMAL_MONITORING', params: '(BBT_OURA_EVIE)' },
       { id: 'femtech-micronutrient-load', name: 'NUTRITIONAL_PATCH', params: '(MG_CARBS_PRE_CYCLE)' },

@@ -4779,17 +4779,10 @@ The Muscle Metabolic Marker article covers peptide patch protocols for recovery 
     title: 'CHM',
     category: 'OS States',
     shortDescription:
-      'Continuous Hormone Monitoring — real-time tracking of hormonal fluctuations via wearable biosensors.',
+      'Continuous Hormone Monitoring — the idea of tracking hormones like cortisol with wearable sensors; research-stage only, no validated consumer device.',
     content: `
 
-**CHM** (Continuous Hormone Monitoring) refers to wearable biosensors that track hormone levels (cortisol, testosterone, estrogen, etc.) in near real-time, rather than via single blood draws or saliva tests.
-
-## Key Applications
-
-- **Cortisol sync** — identify stress-response patterns throughout the day
-- **Performance windows** — align demanding tasks with peak free hormone levels
-- **Crash prevention** — alerts when levels drop below baseline
-- **Circadian mapping** — see how hormones track with sleep and light
+**CHM** (Continuous Hormone Monitoring) refers to wearable biosensors designed to track hormone levels (such as cortisol or oestradiol) repeatedly through the day, rather than via single blood draws or saliva tests. So far these sensors exist as research prototypes tested in small studies; no validated consumer device is available.
 
 
 ## Why does continuous hormone monitoring matter?
@@ -4806,7 +4799,7 @@ Continuous consumer sensors are mostly at the research or early-product stage. M
 
 ## In ONDA Life
 
-The CHM article covers protocols for stress-response calibration, performance window optimization, and hormonal crash prevention.
+ONDA does not measure cortisol or any hormone. The CHM article explains what research sensors can do today, which lab tests are reliable, and why HRV and resting heart rate are indirect stress-load signals, not hormone readings.
 `,
     relatedSlugs: ['cortisol', 'testosterone', 'circadian-rhythm'],
   },
@@ -4822,7 +4815,7 @@ The CHM article covers protocols for stress-response calibration, performance wi
 
 ## Key Points
 
-- **Cortisol timing** — evening cortisol elevation blocks lipolysis during the metabolic window when fat oxidation typically peaks
+- **Cortisol timing** — cortisol follows a daily rhythm (highest after waking); how its timing affects fat use day to day is not well established
 - **Insulin** — high insulin suppresses lipolysis; fasting and low-carb states promote it
 - **Sleep** — deep sleep supports growth hormone release, which favors fat mobilization
 

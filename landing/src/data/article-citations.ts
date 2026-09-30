@@ -411,6 +411,116 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1007/s10484-020-09466-z"
     }
   ],
+  "chm-continuous-hormone-monitoring": [
+    {
+      "title": "Molecularly selective nanoporous membrane-based wearable organic electrochemical device for noninvasive cortisol sensing",
+      "authors": "Parlak O, Keene ST, Marais A, Curto VF, Salleo A",
+      "year": 2018,
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.aar2904",
+      "pmid": "30035216",
+      "url": "https://doi.org/10.1126/sciadv.aar2904"
+    },
+    {
+      "title": "Investigation of cortisol dynamics in human sweat using a graphene-based wireless mHealth system",
+      "authors": "Torrente-Rodríguez RM et al.",
+      "year": 2020,
+      "journal": "Matter",
+      "doi": "10.1016/j.matt.2020.01.021",
+      "pmid": "32266329",
+      "url": "https://doi.org/10.1016/j.matt.2020.01.021"
+    },
+    {
+      "title": "Wearable aptamer-field-effect transistor sensing system for noninvasive cortisol monitoring",
+      "authors": "Wang B et al.",
+      "year": 2022,
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.abk0967",
+      "pmid": "34985954",
+      "url": "https://doi.org/10.1126/sciadv.abk0967"
+    },
+    {
+      "title": "Stressomic: A wearable microfluidic biosensor for dynamic profiling of multiple stress hormones in sweat",
+      "authors": "Tu J et al.",
+      "year": 2025,
+      "journal": "Science Advances",
+      "doi": "10.1126/sciadv.adx6491",
+      "pmid": "40768584",
+      "url": "https://doi.org/10.1126/sciadv.adx6491"
+    },
+    {
+      "title": "A wearable aptamer nanobiosensor for non-invasive female hormone monitoring",
+      "authors": "Ye C, Wang M, Min J, et al.; Gao W",
+      "year": 2024,
+      "journal": "Nature Nanotechnology",
+      "doi": "10.1038/s41565-023-01513-0",
+      "pmid": "37770648",
+      "url": "https://doi.org/10.1038/s41565-023-01513-0"
+    },
+    {
+      "title": "Accessing analytes in biofluids for peripheral biochemical monitoring",
+      "authors": "Heikenfeld J et al.",
+      "year": 2019,
+      "journal": "Nature Biotechnology",
+      "doi": "10.1038/s41587-019-0040-3",
+      "pmid": "30804536",
+      "url": "https://doi.org/10.1038/s41587-019-0040-3"
+    },
+    {
+      "title": "Free cortisol levels after awakening: a reliable biological marker for the assessment of adrenocortical activity",
+      "authors": "Pruessner JC et al.",
+      "year": 1997,
+      "journal": "Life Sciences",
+      "doi": "10.1016/s0024-3205(97)01008-4",
+      "pmid": "9416776",
+      "url": "https://doi.org/10.1016/s0024-3205(97)01008-4"
+    },
+    {
+      "title": "Assessment of the cortisol awakening response: Expert consensus guidelines",
+      "authors": "Stalder T et al.",
+      "year": 2016,
+      "journal": "Psychoneuroendocrinology",
+      "doi": "10.1016/j.psyneuen.2015.10.010",
+      "pmid": "26563991",
+      "url": "https://doi.org/10.1016/j.psyneuen.2015.10.010"
+    },
+    {
+      "title": "Diurnal cortisol slopes and mental and physical health outcomes: A systematic review and meta-analysis",
+      "authors": "Adam EK, Quinn ME, Tavernier R, McQuillan MT, Dahlke KA, Gilbert KE",
+      "year": 2017,
+      "journal": "Psychoneuroendocrinology",
+      "doi": "10.1016/j.psyneuen.2017.05.018",
+      "pmid": "28578301",
+      "url": "https://doi.org/10.1016/j.psyneuen.2017.05.018"
+    },
+    {
+      "title": "Salivary cortisol as a biomarker in stress research",
+      "authors": "Hellhammer DH, Wüst S, Kudielka BM",
+      "year": 2009,
+      "journal": "Psychoneuroendocrinology",
+      "doi": "10.1016/j.psyneuen.2008.10.026",
+      "pmid": "19095358",
+      "url": "https://doi.org/10.1016/j.psyneuen.2008.10.026"
+    },
+    {
+      "title": "The diagnosis of Cushing's syndrome: an Endocrine Society Clinical Practice Guideline",
+      "authors": "Nieman LK et al.",
+      "year": 2008,
+      "journal": "Journal of Clinical Endocrinology & Metabolism",
+      "doi": "10.1210/jc.2008-0125",
+      "pmid": "18334580",
+      "url": "https://doi.org/10.1210/jc.2008-0125"
+    },
+    {
+      "title": "Diagnosis and Treatment of Primary Adrenal Insufficiency: An Endocrine Society Clinical Practice Guideline",
+      "authors": "Bornstein SR et al.",
+      "year": 2016,
+      "journal": "Journal of Clinical Endocrinology & Metabolism",
+      "doi": "10.1210/jc.2015-1710",
+      "pmid": "26760044",
+      "url": "https://doi.org/10.1210/jc.2015-1710"
+    }
+  ],
   "chronic-stress-nervous-system-never-off": [
     {
       "title": "Protective and damaging effects of stress mediators",

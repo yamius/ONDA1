@@ -410,6 +410,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Trapezius lock and cervical compression strangle cerebral blood flow. The ONDA Fascial Tensegrity Protocol pairs targeted myofascial release with humming vagal exhale to restore structural balance.',
   'vascular-tensegrity-microvascular-mechanics':
     'The vascular network is a tensegrity transport bus, not a pipeline. Balanced fascial tension delivers oxygen and nutrients to the cortex with zero impedance and absorbs mechanical shocks.',
+  'chm-continuous-hormone-monitoring':
+    'Not yet: no validated consumer wearable measures cortisol. Research sweat sensors exist; saliva, blood and urine tests remain the standard. What to track instead.',
   'co2-tolerance-expanding-oxygen-limit':
     'The urge to breathe is driven mostly by CO₂, not low oxygen. What the BOLT breath-hold test measures, why it is barely validated, and how to practice safely.',
   'anterior-cingulate-core-coherence-monitoring':
@@ -3048,6 +3050,22 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 audience: 'Biohackers, High-Performers, Movement Practitioners, Neuroscientists',
                                 proficiencyLevel: 'Advanced',
                                 educationalLevel: 'Advanced',
+                              }
+                          : slug === 'chm-continuous-hormone-monitoring'
+                            ? {
+                                keywords: [
+                                  'continuous cortisol monitoring',
+                                  'cortisol wearable',
+                                  'sweat cortisol sensor',
+                                  'wearable hormone monitor',
+                                  'cortisol awakening response',
+                                  'late-night salivary cortisol',
+                                  'diurnal cortisol rhythm',
+                                  'HRV and stress',
+                                ],
+                                audience: 'Adults interested in stress, hormones and wearables',
+                                proficiencyLevel: 'Beginner',
+                                educationalLevel: 'Intermediate',
                               }
                           : slug === 'co2-tolerance-expanding-oxygen-limit'
                             ? {

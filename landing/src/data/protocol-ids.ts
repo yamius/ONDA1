@@ -129,9 +129,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'muscle-metabolic-overclocking': 'muscle-metabolic-marker',
   'muscle-peptide-patch': 'muscle-metabolic-marker',
   // chm-continuous-hormone-monitoring
-  'chm-cortisol-sync': 'chm-continuous-hormone-monitoring',
-  'chm-performance-window': 'chm-continuous-hormone-monitoring',
-  'chm-crash-prevention': 'chm-continuous-hormone-monitoring',
+  'chm-lab-cortisol-test': 'chm-continuous-hormone-monitoring',
+  'chm-hrv-rhr-trend': 'chm-continuous-hormone-monitoring',
+  'chm-regular-wake-light': 'chm-continuous-hormone-monitoring',
   // nightly-flush-glymphatic-neural-cache
   'glymphatic-sleep-duration': 'nightly-flush-glymphatic-neural-cache',
   'glymphatic-limit-evening-alcohol': 'nightly-flush-glymphatic-neural-cache',

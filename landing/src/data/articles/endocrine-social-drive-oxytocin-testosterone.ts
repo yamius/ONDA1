@@ -31,9 +31,9 @@ const article: Article = {
     '[ SOCIAL_COHERENCE: ACTIVE ]: Gold (status) and cyan (trust) neural nodes with biometric loop data. Connection strength and hierarchy stability visualized.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Monitor hormonal markers in real time. Explore continuous hormone monitoring for stress-response calibration.',
+    text: 'Can a wearable track your hormones yet? What research sweat sensors can do, and which tests are reliable today.',
     link: '/articles/chm-continuous-hormone-monitoring',
-    linkText: 'CHM: Continuous Hormone Monitoring',
+    linkText: 'Can You Track Cortisol Continuously Yet?',
   },
   howToSteps: [
     {

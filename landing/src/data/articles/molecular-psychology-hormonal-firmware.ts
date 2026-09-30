@@ -41,9 +41,9 @@ const article: Article = {
     '[ THE_CHEMICAL-OS-FIRMWARE ]: Application Layer (thoughts) → Operating System (psycho-neural network) → Firmware Layer (endocrine system). The molecule moves first.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'You cannot patch firmware you cannot read. Turn the invisible chemical layer into live telemetry.',
+    text: 'Can you actually watch your hormones change during the day? The honest state of wearable hormone sensors.',
     link: '/articles/chm-continuous-hormone-monitoring',
-    linkText: 'Continuous Hormone Monitoring →',
+    linkText: 'Can You Track Cortisol Continuously Yet? →',
   },
   content: `
 ID: molecular_psychology_01
