@@ -2620,6 +2620,22 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "journal": "PLOS ONE",
       "doi": "10.1371/journal.pone.0118308",
       "url": "https://doi.org/10.1371/journal.pone.0118308"
+    },
+    {
+      "title": "Heart rate variability with photoplethysmography in 8 million individuals: a cross-sectional study",
+      "authors": "Natarajan A et al.",
+      "year": 2020,
+      "journal": "The Lancet Digital Health",
+      "doi": "10.1016/S2589-7500(20)30246-6",
+      "url": "https://doi.org/10.1016/S2589-7500(20)30246-6"
+    },
+    {
+      "title": "A Systematic Review and Meta-Analysis of Within-Person Changes in Cardiac Vagal Activity across the Menstrual Cycle: Implications for Female Health and Future Studies",
+      "authors": "Schmalenberger KM et al.",
+      "year": 2019,
+      "journal": "Journal of Clinical Medicine",
+      "doi": "10.3390/jcm8111946",
+      "url": "https://doi.org/10.3390/jcm8111946"
     }
   ],
   "nose-vs-mouth-breathing": [

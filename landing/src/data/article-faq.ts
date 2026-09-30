@@ -143,6 +143,16 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
       answer:
         "A single low reading is usually just a rough night. Persistently low HRV that doesn't recover with better sleep and less stress is worth discussing with a doctor — but HRV alone is not a diagnosis.",
     },
+    {
+      question: "Is normal HRV different for men and women?",
+      answer:
+        "Slightly, mostly in younger adults: women under about 30 tend to have somewhat lower HRV than men, and the gap fades after about 50. The difference is small compared with how much people vary, so the same age ranges work as a rough guide. In women, HRV also tends to be lower in the second half of the menstrual cycle.",
+    },
+    {
+      question: "When is low HRV a reason to see a doctor?",
+      answer:
+        "A single low reading is rarely a concern. Look at your 7-day average against your own baseline. See a doctor if low HRV comes with chest pain, shortness of breath, fainting, a racing or irregular heartbeat or unusual tiredness, or if your resting heart rate is also clearly higher than usual.",
+    },
   ],
   "resting-heart-rate-by-age": [
     {

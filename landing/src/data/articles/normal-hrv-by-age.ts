@@ -60,6 +60,21 @@ A normal Apple Watch HRV (SDNN) runs from a median of about 46 ms at ages 18–3
 
 Apple Watch takes short readings of about a minute several times a day and at night, so single values jump around more than a lab recording. Compare your 7-day average in the Health app, not one reading.
 
+## Is normal HRV different for men and women?
+
+Slightly, and mostly in younger adults. In a large 24-hour ECG study, women under about 30 had somewhat lower HRV than men of the same age, and the difference faded after about 50 (Umetani 1998). The gap is small compared with the spread between individuals, so the same age table works for both sexes as a rough guide. For women, HRV also shifts across the menstrual cycle: vagal HRV tends to be lower in the second half of the cycle, after ovulation (Schmalenberger 2019), so compare the same phase of the cycle when you look at trends.
+
+A study of wearable data from about 8 million people confirmed the same picture at scale: HRV falls steadily with age, and people of the same age differ widely (Natarajan 2020).
+
+## Is my HRV too low?
+
+A single low number is rarely a reason to worry. Check three things first:
+
+1. **Compare like with like.** RMSSD (rings, straps, Whoop, Garmin, Oura) and SDNN (the standard Apple Watch HRV) are different measures, so use the matching table above. Apple Watch Series 12 also shows an RMSSD-based Recovery HRV — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
+2. **Look at your 7-day average**, not one night. One bad night, a drink or a cold can drop HRV sharply.
+3. **Compare with your own baseline.** A sustained drop of more than about 10–20% below your usual range for a week or more is worth attention.
+
+See a doctor if a low HRV comes with symptoms such as chest pain, shortness of breath, fainting, a racing or irregular heartbeat, or unusual tiredness — or if your resting heart rate is also clearly higher than usual. HRV on its own is not a diagnosis.
 ## Why does HRV drop with age?
 
 HRV drops with age because the flexibility of your autonomic nervous system — how nimbly it switches between "fight or flight" and "rest and digest" — gradually declines as the vagus nerve's influence on the heart weakens and the cardiovascular system stiffens. This is normal and expected; a 55-year-old with an HRV of 35 ms is not "worse off" than a 25-year-old at 70 ms. They're at different points on the same curve. The decline is also not fixed — fitness, sleep, and consistent [slow-breathing practice](/articles/how-to-raise-hrv-naturally) can slow it and even reverse short-term dips.
