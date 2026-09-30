@@ -28,6 +28,7 @@ import { PEOPLE_I18N } from '../src/data/people-i18n'
 import { getOndaVs, ONDA_VS } from '../src/data/onda-vs'
 import { getRoundup } from '../src/data/onda-roundups'
 import { ONDA_FAQ_FLAT } from '../src/data/onda-faq'
+import { SERP_OVERRIDES } from '../src/data/serp-overrides'
 import { PRODUCT_I18N } from '../src/data/product-i18n'
 import { FAQ_I18N } from '../src/data/faq-i18n'
 import { TOOLS } from '../src/data/tools'
@@ -196,7 +197,7 @@ export const TITLE_IDEAL = 60
 /** Trailing words too weak to end a title on — dropped after a word trim. */
 const TRAILING_STOPWORDS = new Set([
   'a', 'an', 'and', 'or', 'the', 'to', 'of', 'for', 'your', 'with', 'in', 'on',
-  'at', 'by', 'from', 'into', 'is', 'are', 'how', 'what', 'find',
+  'at', 'by', 'from', 'into', 'is', 'are', 'how', 'what', 'find', '&', 'vs', 'vs.', '+',
 ])
 
 /**
@@ -223,6 +224,10 @@ function wordTrim(s: string, max: number): string {
       parts.pop()
       out = parts.join(' ').replace(/[\s,;:.!?\-–—…]+$/, '')
     } else break
+  }
+  // Never end on an unclosed parenthetical ("… HRV (SDNN vs").
+  if (out.lastIndexOf('(') > out.lastIndexOf(')')) {
+    out = out.slice(0, out.lastIndexOf('(')).replace(/[\s,;:.!?\-–—…]+$/, '')
   }
   return out
 }
@@ -1532,6 +1537,12 @@ function buildComparisonItemListJsonLd(il: NonNullable<RouteMeta['itemList']>): 
 }
 
 export function getMetaForRoute(route: string): RouteMeta {
+  const meta = getMetaForRouteBase(route)
+  const o = SERP_OVERRIDES[route]
+  return o ? { ...meta, ...(o.title ? { title: o.title } : {}), ...(o.description ? { description: o.description } : {}) } : meta
+}
+
+function getMetaForRouteBase(route: string): RouteMeta {
   const url = buildCanonicalUrl(route)
 
   const breadcrumbs = buildBreadcrumbs(route)

@@ -7,7 +7,7 @@ const resonaVibe: ToolReview = {
   category: 'pemf',
   productType: 'Wearable PEMF device with 130+ protocols',
   description:
-    'Resona Health VIBE review: the easiest wearable PEMF entry —     99, 130+ app-controlled protocols, no mat to install. Lower field intensity than full-body mats.',
+    'Resona Health VIBE review: the easiest wearable PEMF entry — $299, 130+ app-controlled protocols, no mat to install. Lower field intensity than full-body mats.',
   verdict:
     'Best wearable PEMF entry point — $299, 130+ protocols, app-controlled, no mat install. Lower field intensity than full-body mats, by design.',
   summary:

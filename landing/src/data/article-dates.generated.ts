@@ -722,7 +722,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-30T15:17:44+02:00"
+    "modified": "2026-09-30T16:02:08+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -966,7 +966,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:testosterone": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T13:55:41.000Z"
+    "modified": "2026-09-30T14:02:08.000Z"
   },
   "glossary:thymus": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -974,15 +974,15 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:basal-ganglia": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T13:55:41.000Z"
+    "modified": "2026-09-30T14:02:08.000Z"
   },
   "glossary:endocrine-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T13:55:41.000Z"
+    "modified": "2026-09-30T14:02:08.000Z"
   },
   "glossary:gonads": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T13:55:41.000Z"
+    "modified": "2026-09-30T14:02:08.000Z"
   },
   "glossary:autonomic-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1014,7 +1014,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:oxytocin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T13:55:41.000Z"
+    "modified": "2026-09-30T14:02:08.000Z"
   },
   "glossary:anterior-cingulate-cortex": {
     "published": "2026-09-29T18:09:37.000Z",
