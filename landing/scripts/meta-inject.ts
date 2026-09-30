@@ -1577,7 +1577,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
     // title/description are overridden per-language by applyLocalizedMeta
     // (prerender.ts) from locales/<lang>/emoton.json; kept here as the EN base.
     return {
-      title: "Feelings Wheel — Name What You're Feeling · Emoton",
+      title: "Emoton: Free Feelings Wheel — Name What You Feel",
       description:
         'A free interactive feelings wheel. Name what you feel right now, then take a quiet moment to be with it — no sign-up, no diagnosis, no advice.',
       url,
@@ -3909,7 +3909,24 @@ export function injectMetaIntoHtml(html: string, meta: RouteMeta): string {
     const orgScript = `<script type="application/ld+json">${buildOrganizationJsonLd()}</script>`
     const siteScript = `<script type="application/ld+json">${buildWebSiteJsonLd()}</script>`
     const datasetScript = `<script type="application/ld+json">${buildDatasetJsonLd()}</script>`
-    out = out.replace('</head>', `  ${orgScript}\n  ${siteScript}\n  ${datasetScript}\n</head>`)
+    // The app entity on the brand page too (same @id as /product), so a
+    // "onda life" search resolves to the app, not just the website.
+    const appScript = `<script type="application/ld+json">${JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'SoftwareApplication',
+      '@id': `${SITE_URL}/product#app`,
+      name: 'ONDA Life',
+      alternateName: 'ONDA',
+      applicationCategory: 'HealthApplication',
+      operatingSystem: 'iOS, watchOS',
+      description:
+        'HRV biofeedback and guided-breathing app: breathing practice with live feedback from your own heart rhythm, across an 8-level path for your nervous system.',
+      url: `${SITE_URL}/product`,
+      downloadUrl: 'https://apps.apple.com/app/id6755912529',
+      offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+      publisher: { '@id': `${SITE_URL}#organization` },
+    })}</script>`
+    out = out.replace('</head>', `  ${orgScript}\n  ${siteScript}\n  ${appScript}\n  ${datasetScript}\n</head>`)
   }
 
   // Replace og:* and twitter:* meta tags

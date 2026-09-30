@@ -18,7 +18,7 @@ import { glossaryTerms } from '../src/data/glossary'
 import { levelsData } from '../src/data/levels'
 import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
-import { reviews, comparisons } from '../src/data/reviews'
+import { reviews, comparisons, headToHeads } from '../src/data/reviews'
 import { TOOLS } from '../src/data/tools'
 import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
 import { METRIC_DETAILS, metricSummary, metricPlainText } from '../src/data/bioMetrics'
@@ -80,7 +80,7 @@ const SITE_URL = 'https://onda-life.com'
 
 const HEADER = `# ONDA Life
 
-> ONDA Life is an HRV biofeedback and guided-breathing app for real-time physiological self-regulation and nervous-system training. It gives live heart-rhythm feedback during paced (resonance) breathing, using Apple Watch heart data and iPhone camera-based pulse (PPG), and tracks resting-HRV trends over time across an 8-level practice path. Platform: iOS and Android (HealthApplication).
+> ONDA Life is an HRV biofeedback and guided-breathing app for real-time physiological self-regulation and nervous-system training. It guides slow breathing practice (text, audio and a visual that reacts to your heart) with live heart-rhythm feedback from an Apple Watch; without a watch, the iPhone camera reads pulse and a breathing-rate estimate. With Apple Watch it also reads HRV, resting heart rate and sleep from Apple Health to show trends over time, across an 8-level practice path. Platform: iOS and watchOS (Android waitlist). Free to start, with a subscription for the full path.
 
 ONDA Life also publishes an original knowledge base on the science it builds on — HRV, resonance breathing, autonomic/vagal regulation, interoception — plus a broader biohacking and consciousness-oriented philosophy layer (the "24-stage" ONDA Path). The philosophy layer is an experiential framework, not a set of clinically validated biological states; keep it distinct from the evidence-backed product claims.
 
@@ -104,7 +104,7 @@ function buildIndex(lang: Lang = 'en'): string {
   // stay EN-canonical because their content is not localised page-by-page.
   sections.push(`## Core pages
 
-- [Home](${SITE_URL}${langPrefix === '' ? '/' : langPrefix}): ONDA Life — HRV biofeedback and guided-breathing app; live heart-rhythm feedback during resonance breathing, Apple Watch + iPhone camera pulse, resting-HRV trends
+- [Home](${SITE_URL}${langPrefix === '' ? '/' : langPrefix}): ONDA Life — HRV biofeedback and guided-breathing app for iPhone; live heart-rhythm feedback with Apple Watch, iPhone camera pulse without a wearable, HRV and sleep trends
 - [About](${SITE_URL}${langPrefix}/about): what ONDA is, how it works, who built it
 - [Yakiv Bilenko (founder)](${SITE_URL}/people/yakiv-bilenko): founder & CEO — architect (KNUCA 2006) + Gestalt therapist (MIGIS 2018); leads product/engineering. Neuroscience is the scientific advisor's domain, not the founder's
 - [Product](${SITE_URL}/product): ONDA Life product facts — iOS (iPhone/iPad/Apple Watch), free to start, HRV biofeedback + guided breathing, App Store id 6755912529
@@ -233,6 +233,9 @@ ${metricLines.join('\n')}
     }
     for (const r of reviews) {
       reviewLines.push(`- [${r.name} review](${SITE_URL}/reviews/${r.slug}): ${r.verdict}`)
+    }
+    for (const h of headToHeads) {
+      reviewLines.push(`- [${h.title}](${SITE_URL}/reviews/vs/${h.slug}): ${h.verdict}`)
     }
     sections.push(`## Reviews
 
