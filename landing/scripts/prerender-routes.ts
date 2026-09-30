@@ -107,7 +107,6 @@ const ES_ARTICLE_PILOT_BASE: readonly string[] = [
   'fault-tolerant-human-hrv-buffer',
   'resonant-frequency-system-coherence',
   'baroreflex-01hz-shift',
-  'idle-state-alpha-rhythms',
   'interoceptive-precision-sensor-calibration',
 ]
 
@@ -157,7 +156,6 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   // Batch 4 — 2026-07-13
   { slug: 'physiological-concentration-flow-state-hardwired', publishOn: '2026-07-13' },
   { slug: 'protocol-circadian-hard-reset', publishOn: '2026-07-13' },
-  { slug: 'quiet-mode-alpha-cortisol-buffer', publishOn: '2026-07-13' },
   { slug: 'rhythmic-entrainment-system-frequencies', publishOn: '2026-07-13' },
   { slug: 'senolytic-high-dosing-longevity', publishOn: '2026-07-13' },
   { slug: 'spinal-harddrive-cpg-autonomous-scripts', publishOn: '2026-07-13' },
@@ -327,8 +325,6 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'phase-locked-acoustic-sleep', publishOn: '2026-10-05' },
   { slug: 'hpa-axis-control-cortisol-aggression', publishOn: '2026-10-05' },
   { slug: 'adrenal-governor-thermal-runaway', publishOn: '2026-10-05' },
-  { slug: 'quiet-mode-alpha-cortisol-buffer', publishOn: '2026-10-05' },
-  { slug: 'idle-state-alpha-rhythms', publishOn: '2026-10-05' },
   { slug: 'neural-bridge-alpha-flow-gateway', publishOn: '2026-10-05' },
   { slug: 'physiological-concentration-flow-state-hardwired', publishOn: '2026-10-05' },
   // Metabolism / mitochondria / longevity / hormones pillars — RE-TRANSLATED

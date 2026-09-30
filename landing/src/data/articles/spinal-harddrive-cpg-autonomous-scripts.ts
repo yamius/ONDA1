@@ -34,9 +34,9 @@ const article: Article = {
     '[ CPG_STATUS: AUTONOMOUS_ACTIVE ] [ COGNITIVE_LOAD: LOW ] — Script running. The brain issued the command once. The harddrive handles the rest.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Harddrive calibrated. Now reduce the cortisol load that forces the brain back into micromanagement — Quiet Mode disengages the override reflex.',
-    link: '/articles/quiet-mode-alpha-cortisol-buffer',
-    linkText: 'Quiet Mode: Alpha Cortisol Buffer Protocol',
+    text: 'Curious what alpha brain waves really do for calm and focus? See what the research shows.',
+    link: '/articles/neural-bridge-alpha-flow-gateway',
+    linkText: 'Alpha Brain Waves: Calm, Creativity and Flow',
   },
   content: `
 ## [ LOW-LEVEL DRIVERS ]

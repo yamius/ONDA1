@@ -1058,55 +1058,26 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         'CPGs are oscillator networks that entrain to external rhythmic inputs via the auditory-motor pathway — a direct neural connection between auditory cortex and spinal motor circuits, used clinically in gait rehabilitation for stroke and Parkinson\'s patients. External rhythm provides a phase-locking signal that synchronizes CPG oscillators and shifts them toward maximum efficiency mode — where energy consumption per unit of movement output is minimized. This is the mechanism behind the well-documented ergogenic (performance-enhancing) effect of music during endurance exercise: it is not motivational in origin, it is a CPG synchronization tool. Breathing at 0.1 Hz provides a complementary entrainment signal via the respiratory CPG, which cross-couples with locomotor CPGs and cardiac rhythm.',
     },
   ],
-  'quiet-mode-alpha-cortisol-buffer': [
-    {
-      question: 'How do Alpha waves (8–12 Hz) actively suppress cortisol and sympathetic arousal?',
-      answer:
-        'Alpha dominance interrupts the stress cascade via the prefrontal cortex. Sustained High-Beta neural activity drives tonic CRH (corticotropin-releasing hormone) release through an amygdala-hypothalamus loop. When Alpha power increases, the prefrontal cortex shifts from task-positive to default-mode operation and exerts inhibitory control over amygdala activation — reducing the perceived threat signal forwarded to the hypothalamus. With a diminished HPA axis input signal, CRH and ACTH output decreases, and the adrenal glands deprioritize cortisol production. The suppression is active, not passive: Alpha directly engages the top-down regulatory pathway, not merely the absence of stress.',
-    },
-    {
-      question: 'What is Thermal Runaway in the context of chronic stress and why does it prevent sleep?',
-      answer:
-        'Thermal Runaway is the self-amplifying failure cascade that occurs when the nervous system loses access to the Alpha-state buffer. In this mode, chronic High-Beta entrainment becomes the default state — the brain keeps scanning for threats even after the threat is gone, because the threat-detection loop has decoupled from actual threat input. Sleep latency increases because the Beta-to-Delta sleep transition requires Alpha as the mandatory intermediate state. A brain locked in Beta at bedtime cannot skip the bridge and enter Theta or Delta directly. The result is that more exhaustion without Alpha intervention worsens sleep latency, not improves it — the system needs access to the Alpha bridge, not simply "enough tiredness."',
-    },
-    {
-      question: 'Why does a slight forward head tilt (the Alpha-Drop) enhance Alpha wave generation?',
-      answer:
-        'The slight forward head tilt (~10–15° chin lowering) in the Alpha-Drop protocol works via two physical mechanisms. First, it increases CSF pressure at the occipital pole — the primary location of Alpha generators in the cortex — marginally improving the electrochemical environment for 8–12 Hz oscillation. Second, it reduces activation of the cervical sympathetic chain, which runs adjacent to the cervical vertebrae and contributes to sympathetic tone when the head is in an upright or extended position. The head-forward tilt passively reduces this input. Combined with eyes-closed sensory reduction and exhale-extended breathing, the Alpha-Drop creates three simultaneous hardware conditions that facilitate occipital Alpha generation without requiring willpower or technique mastery.',
-    },
-  ],
   'neural-bridge-alpha-flow-gateway': [
     {
-      question: 'What is the Alpha-Theta bridge and how does it enable creative insights?',
+      question: 'What are alpha brain waves?',
       answer:
-        'The Alpha-Theta bridge is the transitional brain state at the border of Alpha (8–12 Hz) and Theta (4–8 Hz) where the conscious prefrontal workspace becomes permeable to subconscious Theta-stored material — deep memory traces, non-linear associations, and emotional pattern networks. In this state, the prefrontal "censor" that normally filters out divergent ideas partially relaxes, allowing Theta content to surface into Alpha-range awareness. Insights experienced as "Eureka moments" are this bridging event made conscious — the result of Alpha-Gamma coupling propagating Theta-generated associations into prefrontal attention.',
+        'Alpha waves are a rhythm in the brain’s electrical activity of about 8–12 cycles per second, recorded with EEG. They are strongest at the back of the head when you are awake, relaxed and have your eyes closed, and they shrink when you open your eyes. Hans Berger first described them in 1929.',
     },
     {
-      question: 'What is cross-frequency coupling and why does Alpha act as a carrier for Gamma waves?',
+      question: 'Do alpha waves make you more creative?',
       answer:
-        'Cross-frequency coupling (CFC) is the mechanism by which oscillations at different frequencies modulate each other. In the neural bridge context, Alpha waves (8–12 Hz) act as the phase carrier for Gamma bursts (30–80 Hz) — a phenomenon called phase-amplitude coupling. Alpha phase determines when Gamma amplitude is high (insight windows) and when it is suppressed. Without a stable Alpha carrier, Gamma bursts occur at random phases and are not coordinated across brain regions — insights are generated but not broadcast to the conscious workspace. A stable Alpha bridge synchronizes the timing of Gamma insight events with prefrontal attention windows, making them accessible.',
+        'Alpha activity tends to rise while people generate ideas, and a review of EEG studies called this one of the most consistent findings in creativity research (Fink & Benedek 2014). It seems to reflect attention turned inward. That does not show that raising alpha on purpose makes you more creative.',
     },
     {
-      question: 'How does the diffused focus technique open the neural bridge faster than relaxation?',
+      question: 'Do alpha waves lower cortisol or stress?',
       answer:
-        'Narrow screen-focus activates the dorsal attention network and frontal eye fields in High-Beta mode — a target-seeking, threat-scanning posture that actively suppresses Alpha and the default mode network. Switching to panoramic, diffused vision (soft gaze, full peripheral awareness) shifts activation to the ventral attention network and default mode network, which are associated with Alpha dominance and creative synthesis. This visual-posture switch is a direct hardware trigger: it acts on the alpha generators in the occipital cortex within seconds via visuomotor feedback loops — bypassing the slow, top-down cognitive effort required to "try to relax." The bridge opens faster via the eyes than via conscious intention.',
-    },
-  ],
-  'idle-state-alpha-rhythms': [
-    {
-      question: 'What is the Alpha State (8–12 Hz) and why is it the optimal baseline for high performance?',
-      answer:
-        'The Alpha State (8–12 Hz) is the brain\'s "neutral gear" — a state of synchronized, low-noise neural activity where the thalamocortical system is maximally ready to engage any cognitive mode without residual friction from previous states. Alpha dominance indicates high thalamocortical gating efficiency (irrelevant sensory signals filtered), default mode network activation (strategic, integrative thinking), and inter-regional coherence (prefrontal-limbic coordination). Unlike the popular misconception of Alpha as "relaxation," it is the technical prerequisite for flow state entry — the system cannot enter deep focus from High-Beta; it must transit through Alpha first.',
+        'There is no good evidence that alpha waves themselves lower cortisol. Activities that often go with more alpha, such as eyes-closed rest, slow breathing and meditation, can help you feel calmer, but that does not mean alpha is switching off stress hormones.',
     },
     {
-      question: 'What is the Beta Trap and how does it degrade cognitive performance over the workday?',
+      question: 'Can binaural beats or an app put my brain into alpha?',
       answer:
-        'The Beta Trap is the state of chronic High-Beta entrainment (15–30 Hz) from which the modern high-demand brain cannot exit without deliberate intervention. Sustained stress, continuous digital input, and context switching maintain constant Amygdala-prefrontal competition — suppressing Alpha and keeping the system in reactive threat-evaluation mode. The cognitive costs compound over the workday: High-Beta neural firing consumes up to 3x more glucose than Alpha baseline, depleting prefrontal resources faster and degrading decision quality progressively from morning to evening. The trap closes completely when the inability to return to Idle prevents restorative sleep, starting the next day from an already-depleted baseline.',
-    },
-    {
-      question: 'How does 0.1 Hz resonance breathing shift the brain from Beta to Alpha?',
-      answer:
-        'At 0.1 Hz baroreflex resonance, the heart generates a coherent oscillation that propagates via vagal afferents to the brainstem nucleus tractus solitarius and then to the thalamus. This pathway shifts thalamic firing from High-Beta gating (high vigilance, high filtering against incoming signals) to Alpha-frequency gating (readiness mode, efficient filtering of irrelevant signals). The thalamic shift propagates to the cortex within 2–3 minutes of sustained resonance breathing. HRV and Alpha amplitude are bidirectionally coupled: high HRV predicts high resting Alpha power, and Alpha entrainment (via visual reset or resonance breathing) measurably increases HRV coherence.',
+        'The evidence is mixed. A meta-analysis found binaural beats had a medium effect on memory, attention, anxiety and pain, but a systematic review of EEG studies found inconsistent evidence that they actually shift brain rhythms. Apps without an EEG, including ONDA, cannot measure alpha waves; ONDA reads pulse, breathing and, with an Apple Watch, HRV.',
     },
   ],
   'anti-entropy-neural-architecture': [

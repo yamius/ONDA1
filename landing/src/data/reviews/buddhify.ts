@@ -60,7 +60,7 @@ Choose Buddhify if you want to pay once and never see a subscription prompt agai
 The science of what meditation actually does at the nervous-system level.
 
 - [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
-- [Neural bridge: the alpha-to-flow gateway](/articles/neural-bridge-alpha-flow-gateway) — the EEG transition from idle to engaged focus
+- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
 `,
   references: [

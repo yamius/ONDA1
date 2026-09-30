@@ -237,8 +237,8 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "What are alpha brain waves?",
-      a: "Alpha waves are brain rhythms at 8 to 12 Hz that dominate during relaxed, awake rest — typically with eyes closed or attention unfocused. They mark a calm but alert state, as opposed to the faster beta rhythms of busy, effortful thinking.",
-      links: [{ href: "/articles/idle-state-alpha-rhythms", label: "The idle state: alpha rhythms" }],
+      a: "Alpha waves are brain rhythms at 8 to 12 Hz that are strongest during relaxed, awake rest with the eyes closed, and also rise when attention turns inward. They are best understood as a sign of the brain turning down areas it does not need, not simply as a calm state.",
+      links: [{ href: "/articles/neural-bridge-alpha-flow-gateway", label: "Alpha brain waves: calm, creativity and flow" }],
     },
     {
       q: "Do breathing exercises work for older adults?",

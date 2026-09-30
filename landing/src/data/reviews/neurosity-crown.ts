@@ -61,7 +61,7 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
 
 - [ACC calibration: cognitive-control protocol](/articles/acc-calibration-protocol-cognitive-control) — how prefrontal control loops show up in EEG
 - [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
-- [Idle-state alpha rhythms](/articles/idle-state-alpha-rhythms) — the resting cortex signal that meditation and focus headsets exploit
+- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 `,
   references: [
     { label: 'Neurosity Crown — official product page', url: 'https://neurosity.co/crown' },

@@ -390,12 +390,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'The brain is a hydraulic machine — arteries act as pistons, CSF flushes metabolic waste, posture controls pressure. The ONDA hydraulic protocol primes vascular elasticity, gravity, and breath for full nightly purge.',
   'anti-entropy-neural-architecture':
     'Aging is accumulated entropy. The ONDA Anti-Entropy Protocol layers glymphatic clearance, autophagy-sync fasting, and thermal regulation to halt beta-amyloid drift before it crosses the irreversibility threshold.',
-  'idle-state-alpha-rhythms':
-    'Alpha waves (8–12 Hz) are the brain\'s neutral gear — noise-cancelled, energy-efficient, globally coherent. The ONDA idle protocol triggers Alpha manually via visual reset, 0.1 Hz coupling, and digital decoupling.',
   'neural-bridge-alpha-flow-gateway':
-    'Alpha waves (8–12 Hz) are the network gateway to Theta insight storage and Gamma-bound flow. The ONDA bridge protocol opens cross-frequency coupling via 0.1 Hz resonance, diffused focus, and 90-second system silence.',
-  'quiet-mode-alpha-cortisol-buffer':
-    'Alpha waves (8–12 Hz) are the brain\'s active noise-cancellation layer — suppressing cortisol, filtering amygdala reactivity, and restoring vagal tone. The ONDA Quiet Mode uses exhale extension, peripheral awareness, and the Alpha-Drop.',
+    'Alpha waves are an 8–12 Hz brain rhythm that grows when you close your eyes or turn attention inward. What they do, what they do not, and what really helps.',
   'spinal-harddrive-cpg-autonomous-scripts':
     'CPGs are spinal neural circuits that execute complex movement without brain input. The ONDA Harddrive Protocol uses sensory priming, rhythmic entrainment, and eyes-closed drills to free the prefrontal cortex for strategic thought.',
   'rhythmic-entrainment-system-frequencies':
@@ -2891,22 +2887,6 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 proficiencyLevel: 'Advanced',
                                 educationalLevel: 'Advanced',
                               }
-                          : slug === 'idle-state-alpha-rhythms'
-                            ? {
-                                keywords: [
-                                  'Alpha Waves Brain Optimization',
-                                  'Neural Idle State',
-                                  'Beta Trap Burnout Prevention',
-                                  '8-12 Hz Brain Performance',
-                                  'Thalamocortical Alpha Gating',
-                                  'Flow State Prerequisites',
-                                  'Cognitive Baseline Optimization',
-                                  'ONDA Protocol',
-                                ],
-                                audience: 'Biohackers, High-Performers, Knowledge Workers, Athletes',
-                                proficiencyLevel: 'Intermediate',
-                                educationalLevel: 'Intermediate',
-                              }
                           : slug === 'adrenal-governor-thermal-runaway'
                             ? {
                                 keywords: [
@@ -2971,35 +2951,19 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }
-                          : slug === 'quiet-mode-alpha-cortisol-buffer'
-                            ? {
-                                keywords: [
-                                  'Alpha Relaxation Cortisol Buffer',
-                                  'Parasympathetic Activation Protocol',
-                                  'Quiet Mode Stress Recovery',
-                                  'Vagal Tone Alpha Rhythm',
-                                  'Exhale Extension Baroreflex',
-                                  'Amygdala Buffering Technique',
-                                  'Thermal Runaway Prevention',
-                                  'ONDA Protocol',
-                                ],
-                                audience: 'Biohackers, High-Performers, Knowledge Workers, Burnout Recovery',
-                                proficiencyLevel: 'Intermediate',
-                                educationalLevel: 'Intermediate',
-                              }
                           : slug === 'neural-bridge-alpha-flow-gateway'
                             ? {
                                 keywords: [
-                                  'Alpha-Theta Bridge Flow State',
-                                  'Neural Gateway Creativity',
-                                  'Cross-Frequency Coupling Brain',
-                                  'Alpha Gamma Coupling Insights',
-                                  'Flow State Biohacking',
-                                  'Diffused Focus Technique',
-                                  'Insight Delivery Protocol',
-                                  'ONDA Protocol',
+                                  'Alpha Brain Waves',
+                                  'What Are Alpha Waves',
+                                  'Alpha Waves Creativity',
+                                  'Alpha Waves Flow State',
+                                  'Alpha Waves and Stress',
+                                  'Binaural Beats Alpha',
+                                  'Alpha Neurofeedback',
+                                  'EEG Alpha Rhythm',
                                 ],
-                                audience: 'Biohackers, Creatives, High-Performers, Knowledge Workers',
+                                audience: 'Curious readers, Meditators, Knowledge Workers, Creatives',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }

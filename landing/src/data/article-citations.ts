@@ -1507,26 +1507,6 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1016/j.explore.2020.03.009"
     }
   ],
-  "idle-state-alpha-rhythms": [
-    {
-      "title": "Shaping functional architecture by oscillatory alpha activity: gating by inhibition",
-      "authors": "Jensen O et al.",
-      "year": 2010,
-      "journal": "Frontiers in Human Neuroscience",
-      "doi": "10.3389/fnhum.2010.00186",
-      "pmid": "21119777",
-      "url": "https://doi.org/10.3389/fnhum.2010.00186"
-    },
-    {
-      "title": "EEG alpha oscillations: the inhibition-timing hypothesis",
-      "authors": "Klimesch W et al.",
-      "year": 2007,
-      "journal": "Brain Research Reviews",
-      "doi": "10.1016/j.brainresrev.2006.06.003",
-      "pmid": "16887192",
-      "url": "https://doi.org/10.1016/j.brainresrev.2006.06.003"
-    }
-  ],
   "interoceptive-precision-sensor-calibration": [
     {
       "title": "Interoceptive inference, emotion, and the embodied self",
@@ -1869,6 +1849,115 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1111/j.1467-9280.1997.tb00403.x"
     }
   ],
+  "neural-bridge-alpha-flow-gateway": [
+    {
+      "title": "Über das Elektrenkephalogramm des Menschen",
+      "authors": "Berger H",
+      "year": 1929,
+      "journal": "Archiv für Psychiatrie und Nervenkrankheiten",
+      "doi": "10.1007/BF01797193",
+      "url": "https://doi.org/10.1007/BF01797193"
+    },
+    {
+      "title": "EEG differences between eyes-closed and eyes-open resting conditions",
+      "authors": "Barry RJ, Clarke AR, Johnstone SJ, Magee CA, Rushby JA",
+      "year": 2007,
+      "journal": "Clinical Neurophysiology",
+      "doi": "10.1016/j.clinph.2007.07.028",
+      "pmid": "17911042",
+      "url": "https://doi.org/10.1016/j.clinph.2007.07.028"
+    },
+    {
+      "title": "α-band oscillations, attention, and controlled access to stored information",
+      "authors": "Klimesch W",
+      "year": 2012,
+      "journal": "Trends in Cognitive Sciences",
+      "doi": "10.1016/j.tics.2012.10.007",
+      "pmid": "23141428",
+      "url": "https://doi.org/10.1016/j.tics.2012.10.007"
+    },
+    {
+      "title": "Shaping functional architecture by oscillatory alpha activity: gating by inhibition",
+      "authors": "Jensen O, Mazaheri A",
+      "year": 2010,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2010.00186",
+      "pmid": "21119777",
+      "url": "https://doi.org/10.3389/fnhum.2010.00186"
+    },
+    {
+      "title": "EEG alpha power and creative ideation",
+      "authors": "Fink A, Benedek M",
+      "year": 2014,
+      "journal": "Neuroscience & Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2012.12.002",
+      "pmid": "23246442",
+      "url": "https://doi.org/10.1016/j.neubiorev.2012.12.002"
+    },
+    {
+      "title": "Neural activity when people solve verbal problems with insight",
+      "authors": "Jung-Beeman M, Bowden EM, Haberman J, Frymiare JL, Arambel-Liu S, Greenblatt R, Reber PJ, Kounios J",
+      "year": 2004,
+      "journal": "PLoS Biology",
+      "doi": "10.1371/journal.pbio.0020097",
+      "pmid": "15094802",
+      "url": "https://doi.org/10.1371/journal.pbio.0020097"
+    },
+    {
+      "title": "EEG Correlates of the Flow State: A Combination of Increased Frontal Theta and Moderate Frontocentral Alpha Rhythm in the Mental Arithmetic Task",
+      "authors": "Katahira K, Yamazaki Y, Yamaoka C, Ozaki H, Nakagawa S, Nagata N",
+      "year": 2018,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2018.00300",
+      "pmid": "29593605",
+      "url": "https://doi.org/10.3389/fpsyg.2018.00300"
+    },
+    {
+      "title": "A systematic review of the neurophysiology of mindfulness on EEG oscillations",
+      "authors": "Lomas T, Ivtzan I, Fu CH",
+      "year": 2015,
+      "journal": "Neuroscience & Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2015.09.018",
+      "pmid": "26441373",
+      "url": "https://doi.org/10.1016/j.neubiorev.2015.09.018"
+    },
+    {
+      "title": "How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing",
+      "authors": "Zaccaro A, Piarulli A, Laurino M, Garbella E, Menicucci D, Neri B, Gemignani A",
+      "year": 2018,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2018.00353",
+      "pmid": "30245619",
+      "url": "https://doi.org/10.3389/fnhum.2018.00353"
+    },
+    {
+      "title": "Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: a meta-analysis",
+      "authors": "Garcia-Argibay M, Santed MA, Reales JM",
+      "year": 2019,
+      "journal": "Psychological Research",
+      "doi": "10.1007/s00426-018-1066-8",
+      "pmid": "30073406",
+      "url": "https://doi.org/10.1007/s00426-018-1066-8"
+    },
+    {
+      "title": "Binaural beats to entrain the brain? A systematic review of the effects of binaural beat stimulation on brain oscillatory activity, and the implications for psychological research and intervention",
+      "authors": "Ingendoh RM, Posny ES, Heine A",
+      "year": 2023,
+      "journal": "PLoS One",
+      "doi": "10.1371/journal.pone.0286023",
+      "pmid": "37205669",
+      "url": "https://doi.org/10.1371/journal.pone.0286023"
+    },
+    {
+      "title": "Neurofeedback of Alpha Activity on Memory in Healthy Participants: A Systematic Review and Meta-Analysis",
+      "authors": "Yeh WH, Hsueh JJ, Shaw FZ",
+      "year": 2020,
+      "journal": "Frontiers in Human Neuroscience",
+      "doi": "10.3389/fnhum.2020.562360",
+      "pmid": "33469422",
+      "url": "https://doi.org/10.3389/fnhum.2020.562360"
+    }
+  ],
   "neural-entrainment-meditation-2": [
     {
       "title": "Efficacy of binaural auditory beats in cognition, anxiety, and pain perception: a meta-analysis",
@@ -2206,17 +2295,6 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1016/j.cub.2017.04.059",
       "pmid": "28578930",
       "url": "https://doi.org/10.1016/j.cub.2017.04.059"
-    }
-  ],
-  "quiet-mode-alpha-cortisol-buffer": [
-    {
-      "title": "How Breath-Control Can Change Your Life: A Systematic Review on Psycho-Physiological Correlates of Slow Breathing.",
-      "authors": "Zaccaro A et al.",
-      "year": 2018,
-      "journal": "Front Hum Neurosci",
-      "doi": "10.3389/fnhum.2018.00353",
-      "pmid": "30245619",
-      "url": "https://doi.org/10.3389/fnhum.2018.00353"
     }
   ],
   "rajyoga-open-eye-meditation": [

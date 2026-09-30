@@ -60,7 +60,7 @@ Choose Balance if you want a plan that meets you where you are and adapts over t
 The science of what meditation actually does at the nervous-system level.
 
 - [Neural entrainment through meditation](/articles/neural-entrainment-meditation-2) — why structured practice rewires baseline cortical states
-- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
 `,
   references: [

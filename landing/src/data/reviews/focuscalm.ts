@@ -60,7 +60,7 @@ Choose FocusCalm if you want the cheapest legitimate EEG-feedback experience wit
 The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
 
 - [Adaptation and range fractionation](/articles/adaptation-hack-range-fractionation) — training cognitive states by deliberate variation
-- [Idle-state alpha rhythms](/articles/idle-state-alpha-rhythms) — the resting cortex signal that meditation and focus headsets exploit
+- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
 `,
   references: [

@@ -59,7 +59,7 @@ Choose Medito if you want a completely free, ad-free, open-source app with no ac
 
 The science of what meditation actually does at the nervous-system level.
 
-- [Quiet-mode alpha and the cortisol buffer](/articles/quiet-mode-alpha-cortisol-buffer) — the stress-regulation mechanism meditation engages
+- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Rhythmic entrainment and system frequencies](/articles/rhythmic-entrainment-system-frequencies) — why paced audio and breath protocols compound with practice
 - [Physiological concentration: flow-state hardwiring](/articles/physiological-concentration-flow-state-hardwired) — what neurochemistry the flow state actually requires
 `,

@@ -59,7 +59,7 @@ Choose Muse S Athena if you want one consumer device that handles meditation, fo
 
 The neuroscience these headsets feed back — and the cognitive states the EEG signal reveals.
 
-- [Idle-state alpha rhythms](/articles/idle-state-alpha-rhythms) — the resting cortex signal that meditation and focus headsets exploit
+- [Alpha brain waves: calm, creativity and flow](/articles/neural-bridge-alpha-flow-gateway) — what the alpha rhythm does, and what alpha headsets, apps and music can and cannot change
 - [Acetylcholine as the attention lens](/articles/acetylcholine-lens-neuro-mechanics) — the neurochemistry behind focus that EEG resolves
 - [Cognitive architecture: neural throughput](/articles/cognitive-architecture-neural-throughput) — reading EEG as the bandwidth signal of your cognitive system
 `,

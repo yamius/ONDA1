@@ -138,7 +138,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "chm-continuous-hormone-monitoring": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T11:32:45+02:00"
   },
   "chronic-stress-nervous-system-never-off": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -218,7 +218,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "endocrine-social-drive-oxytocin-testosterone": {
     "published": "2026-03-10T13:31:48Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T11:32:45+02:00"
   },
   "energy-governor-tsh": {
     "published": "2026-03-10T22:24:32Z",
@@ -356,10 +356,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-05-01T23:21:51+02:00",
     "modified": "2026-05-18T09:59:04+02:00"
   },
-  "idle-state-alpha-rhythms": {
-    "published": "2026-03-31T16:27:38Z",
-    "modified": "2026-09-29T12:26:39+02:00"
-  },
   "intermittent-fasting-metabolic-switch": {
     "published": "2026-06-04T00:39:42+02:00",
     "modified": "2026-09-29T10:50:12+02:00"
@@ -442,7 +438,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "molecular-psychology-hormonal-firmware": {
     "published": "2026-05-18T08:38:26+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T11:32:45+02:00"
   },
   "morita-therapy-tracking-paradox": {
     "published": "2026-09-24T12:08:14+02:00",
@@ -579,10 +575,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   "protocol-circadian-hard-reset": {
     "published": "2026-03-24T09:33:24Z",
     "modified": "2026-09-29T23:22:17+02:00"
-  },
-  "quiet-mode-alpha-cortisol-buffer": {
-    "published": "2026-03-31T22:01:43Z",
-    "modified": "2026-09-29T10:50:12+02:00"
   },
   "rajyoga-open-eye-meditation": {
     "published": "2026-09-23T16:02:36+02:00",
@@ -738,7 +730,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-29T20:34:14+02:00"
+    "modified": "2026-09-30T11:32:45+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1350,11 +1342,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:chm": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T09:23:04.000Z"
+    "modified": "2026-09-30T09:32:45.000Z"
   },
   "glossary:lipolysis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T09:23:04.000Z"
+    "modified": "2026-09-30T09:32:45.000Z"
   },
   "glossary:free-hormonal-index": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1614,7 +1606,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T10:48:26+02:00"
+    "modified": "2026-09-30T11:32:45+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1622,7 +1614,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-30T10:48:26+02:00"
+    "modified": "2026-09-30T11:32:45+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1726,7 +1718,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-09-29T23:59:57+02:00"
+    "modified": "2026-09-30T11:32:45+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
