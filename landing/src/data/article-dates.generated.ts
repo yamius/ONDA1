@@ -254,7 +254,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "gut-brain-axis-data-link": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-09-29T23:59:57+02:00"
+    "modified": "2026-09-30T14:29:12+02:00"
   },
   "heart-rate-recovery-fitness-marker": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -630,7 +630,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "system-stability-serotonin": {
     "published": "2026-03-10T14:37:54Z",
-    "modified": "2026-05-18T11:01:28+02:00"
+    "modified": "2026-09-30T14:29:12+02:00"
   },
   "talk-to-your-doctor-about-wearable-data": {
     "published": "2026-09-26T13:37:15+02:00",
@@ -722,7 +722,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-30T13:35:06+02:00"
+    "modified": "2026-09-30T14:29:12+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1286,11 +1286,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:enteric-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T12:11:07.000Z"
+    "modified": "2026-09-30T12:29:12.000Z"
   },
   "glossary:serotonin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T12:11:07.000Z"
+    "modified": "2026-09-30T12:29:12.000Z"
   },
   "glossary:microbiome": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T13:35:06+02:00"
+    "modified": "2026-09-30T14:29:12+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1606,7 +1606,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-30T12:56:25+02:00"
+    "modified": "2026-09-30T14:29:12+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",

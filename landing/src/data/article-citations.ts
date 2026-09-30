@@ -2269,20 +2269,108 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "neural-optimizer-estrogen": [
     {
-      "title": "Estradiol regulates hippocampal dendritic spine density via an N-methyl-D-aspartate receptor-dependent mechanism",
-      "authors": "Woolley CS et al.",
-      "year": 1994,
+      "title": "Estradiol mediates fluctuation in hippocampal synapse density during the estrous cycle in the adult rat",
+      "authors": "Woolley CS, McEwen BS",
+      "year": 1992,
       "journal": "The Journal of Neuroscience",
-      "doi": "10.1523/jneurosci.14-12-07680.1994",
-      "url": "https://doi.org/10.1523/jneurosci.14-12-07680.1994"
+      "doi": "10.1523/JNEUROSCI.12-07-02549.1992",
+      "url": "https://doi.org/10.1523/JNEUROSCI.12-07-02549.1992"
     },
     {
-      "title": "Sex differences in Alzheimer risk: Brain imaging of endocrine vs chronologic aging",
-      "authors": "Mosconi L et al.",
-      "year": 2017,
+      "title": "Effects of the menopause transition and hormone use on cognitive performance in midlife women",
+      "authors": "Greendale GA et al.",
+      "year": 2009,
       "journal": "Neurology",
-      "doi": "10.1212/wnl.0000000000004425",
-      "url": "https://doi.org/10.1212/wnl.0000000000004425"
+      "doi": "10.1212/WNL.0b013e3181a71193",
+      "url": "https://doi.org/10.1212/WNL.0b013e3181a71193"
+    },
+    {
+      "title": "Menopause impacts human brain structure, connectivity, energy metabolism, and amyloid-beta deposition",
+      "authors": "Mosconi L et al.",
+      "year": 2021,
+      "journal": "Scientific Reports",
+      "doi": "10.1038/s41598-021-90084-y",
+      "url": "https://doi.org/10.1038/s41598-021-90084-y"
+    },
+    {
+      "title": "Associations of Hormones and Menopausal Status With Depressed Mood in Women With No History of Depression",
+      "authors": "Freeman EW et al.",
+      "year": 2006,
+      "journal": "Archives of General Psychiatry",
+      "doi": "10.1001/archpsyc.63.4.375",
+      "url": "https://doi.org/10.1001/archpsyc.63.4.375"
+    },
+    {
+      "title": "Duration of Menopausal Vasomotor Symptoms Over the Menopause Transition",
+      "authors": "Avis NE et al.",
+      "year": 2015,
+      "journal": "JAMA Internal Medicine",
+      "doi": "10.1001/jamainternmed.2014.8063",
+      "url": "https://doi.org/10.1001/jamainternmed.2014.8063"
+    },
+    {
+      "title": "The 2022 hormone therapy position statement of The North American Menopause Society",
+      "authors": "The North American Menopause Society",
+      "year": 2022,
+      "journal": "Menopause",
+      "doi": "10.1097/GME.0000000000002028",
+      "url": "https://doi.org/10.1097/GME.0000000000002028"
+    },
+    {
+      "title": "Effects of Hormone Therapy on Cognition and Mood in Recently Postmenopausal Women: Findings from the Randomized, Controlled KEEPS-Cognitive and Affective Study",
+      "authors": "Gleason CE et al.",
+      "year": 2015,
+      "journal": "PLOS Medicine",
+      "doi": "10.1371/journal.pmed.1001833",
+      "url": "https://doi.org/10.1371/journal.pmed.1001833"
+    },
+    {
+      "title": "Estrogen Plus Progestin and the Incidence of Dementia and Mild Cognitive Impairment in Postmenopausal Women",
+      "authors": "Shumaker SA et al.",
+      "year": 2003,
+      "journal": "JAMA",
+      "doi": "10.1001/jama.289.20.2651",
+      "url": "https://doi.org/10.1001/jama.289.20.2651"
+    },
+    {
+      "title": "Type and timing of menopausal hormone therapy and breast cancer risk: individual participant meta-analysis of the worldwide epidemiological evidence",
+      "authors": "Collaborative Group on Hormonal Factors in Breast Cancer",
+      "year": 2019,
+      "journal": "The Lancet",
+      "doi": "10.1016/S0140-6736(19)31709-X",
+      "url": "https://doi.org/10.1016/S0140-6736(19)31709-X"
+    },
+    {
+      "title": "The 2023 nonhormone therapy position statement of The North American Menopause Society",
+      "authors": "The North American Menopause Society",
+      "year": 2023,
+      "journal": "Menopause",
+      "doi": "10.1097/GME.0000000000002200",
+      "url": "https://doi.org/10.1097/GME.0000000000002200"
+    },
+    {
+      "title": "Fezolinetant for treatment of moderate-to-severe vasomotor symptoms associated with menopause (SKYLIGHT 1): a phase 3 randomised controlled study",
+      "authors": "Lederman S et al.",
+      "year": 2023,
+      "journal": "The Lancet",
+      "doi": "10.1016/S0140-6736(23)00085-5",
+      "url": "https://doi.org/10.1016/S0140-6736(23)00085-5"
+    },
+    {
+      "title": "Extracted or synthesized soybean isoflavones reduce menopausal hot flash frequency and severity",
+      "authors": "Taku K et al.",
+      "year": 2012,
+      "journal": "Menopause",
+      "doi": "10.1097/gme.0b013e3182410159",
+      "url": "https://doi.org/10.1097/gme.0b013e3182410159"
+    },
+    {
+      "title": "High-Intensity Resistance and Impact Training Improves Bone Mineral Density and Physical Function in Postmenopausal Women With Osteopenia and Osteoporosis: The LIFTMOR Randomized Controlled Trial",
+      "authors": "Watson SL et al.",
+      "year": 2017,
+      "journal": "Journal of Bone and Mineral Research",
+      "doi": "10.1002/jbmr.3284",
+      "url": "https://doi.org/10.1002/jbmr.3284"
     }
   ],
   "neural-signal-to-noise-cleaning-system-channel": [

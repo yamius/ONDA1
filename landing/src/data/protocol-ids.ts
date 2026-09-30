@@ -177,9 +177,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'leptin-steady-loss': 'energy-sensor-leptin',
   'leptin-satiating-meals': 'energy-sensor-leptin',
   // neural-optimizer-estrogen
-  'estrogen-phyto-patch': 'neural-optimizer-estrogen',
-  'estrogen-resistance-training': 'neural-optimizer-estrogen',
-  'estrogen-omega3-shield': 'neural-optimizer-estrogen',
+  'estrogen-symptom-log': 'neural-optimizer-estrogen',
+  'estrogen-treatment-talk': 'neural-optimizer-estrogen',
+  'estrogen-sleep-strength': 'neural-optimizer-estrogen',
   // energy-governor-tsh
   'tsh-fuel-check': 'energy-governor-tsh',
   'tsh-thermal-test': 'energy-governor-tsh',

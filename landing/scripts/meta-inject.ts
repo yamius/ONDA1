@@ -367,7 +367,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'energy-sensor-leptin':
     'Leptin tells your brain how much fat you store. Why high leptin does not stop hunger, why dieting lowers it, how short sleep cuts it, and what actually helps.',
   'neural-optimizer-estrogen':
-    'Discover how estrogen functions as a neural optimizer, enhancing memory and protecting the brain from inflammation and cognitive decline.',
+    'Brain fog in perimenopause is real but usually temporary. How estrogen affects the brain, what hormone therapy can and cannot do, and other options that work.',
   'protocol-circadian-hard-reset':
     'The 72-hour Circadian Hard Reset: three Zeitgeber interventions — Photonic Anchor, Thermal Spike, Metabolic Gate — to reflash a drifted biological clock in under three days.',
   'ancestral-sync-circadian-anchors':
@@ -2718,15 +2718,15 @@ export function getMetaForRoute(route: string): RouteMeta {
                           : slug === 'neural-optimizer-estrogen'
                             ? {
                                 keywords: [
-                                  'Estrogen',
-                                  'Neuroplasticity',
-                                  'BDNF',
-                                  'Brain Fog',
-                                  'Cognitive Longevity',
-                                  'Biohacking Hormones',
-                                  'ONDA Protocol',
+                                  'Estrogen and the Brain',
+                                  'Perimenopause Brain Fog',
+                                  'Menopause Memory Problems',
+                                  'Hormone Therapy and Cognition',
+                                  'Hot Flush Treatment',
+                                  'Fezolinetant',
+                                  'Non-Hormonal Menopause Treatment',
                                 ],
-                                audience: 'Biohackers, High-Performers, Cognitive Optimization',
+                                audience: 'Women in Perimenopause and Menopause, General Public',
                                 proficiencyLevel: 'Intermediate',
                               }
                           : slug === 'protocol-circadian-hard-reset'

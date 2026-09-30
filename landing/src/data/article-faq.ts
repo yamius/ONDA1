@@ -554,21 +554,26 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Binaural beats can shift the dominant EEG frequency via the frequency-following response, with effects that vary between individuals. Closed-loop systems \u2014 which read your brain state in real time and adapt the stimulus \u2014 are more reliable than fixed, open-loop tracks.",
     },
   ],
-  "neural-optimizer-estrogen": [
+  'neural-optimizer-estrogen': [
     {
-      question: "How does estrogen affect the brain?",
+      question: 'Is perimenopause brain fog real?',
       answer:
-        "Estrogen is a powerful neural optimiser. It supports hippocampal architecture and memory, promotes synaptic plasticity, improves cerebral blood flow and acts as an anti-inflammatory and metabolic guardian for neural tissue \u2014 well beyond its reproductive role.",
+        'Yes, but it is usually mild and temporary. In the SWAN study, women stopped showing the normal improvement on repeated memory and speed tests during perimenopause, and the improvement returned after menopause. Poor sleep, night sweats and low mood add to the fog.',
     },
     {
-      question: "Why does cognition change when estrogen drops?",
+      question: 'Does hormone therapy help brain fog?',
       answer:
-        "As estrogen declines \u2014 for example through perimenopause \u2014 its protective and metabolic support for the brain weakens, which can surface as brain fog, slower recall and lower stress resilience. The hardware is intact; the optimiser signal has faded.",
+        'Hormone therapy is the most effective treatment for hot flushes and night sweats, which can improve sleep and focus. But it is not a proven memory treatment: in the KEEPS trial it neither helped nor harmed thinking, and it should not be used to prevent dementia.',
     },
     {
-      question: "How can I support estrogen-related brain health?",
+      question: 'What helps hot flushes without hormones?',
       answer:
-        "Resistance training drives plasticity and supports hormonal and metabolic health, omega-3 fatty acids provide an anti-inflammatory shield for neural tissue, and dietary phytoestrogens may offer mild support. Significant symptoms warrant a conversation with a clinician.",
+        'Options with good evidence include cognitive behavioural therapy, clinical hypnosis, certain antidepressants (SSRIs and SNRIs), gabapentin and fezolinetant. Supplements, paced breathing and cooling tricks are not recommended as treatments, although a cool bedroom can help comfort.',
+    },
+    {
+      question: 'How long do menopause hot flushes last?',
+      answer:
+        'In the SWAN study, hot flushes and night sweats lasted a median of 7.4 years, and longer when they started early in perimenopause. Talk to a doctor if they affect your sleep or daily life.',
     },
   ],
   "neural-signal-to-noise-cleaning-system-channel": [
