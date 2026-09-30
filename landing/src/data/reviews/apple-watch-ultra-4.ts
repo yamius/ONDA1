@@ -61,7 +61,7 @@ Choose the Ultra 4 if you are an athlete or outdoors user who wants Apple’s ne
 
 - [Apple Watch Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) — the 2026 two-number change, explained
 - [Why HRV reads differently on every device](/articles/hrv-different-every-device) — SDNN vs RMSSD across brands
-- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 `,
   references: [
     { label: 'Apple Newsroom — Apple unveils Apple Watch Ultra 4 (Sept 2026)', url: 'https://www.apple.com/newsroom/2026/09/apple-unveils-apple-watch-ultra-4/' },

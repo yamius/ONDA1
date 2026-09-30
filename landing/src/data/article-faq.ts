@@ -360,18 +360,6 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Reactive tracking logs what already happened \u2014 a static snapshot you review after the fact. Predictive tracking uses historical biomarker data and machine learning to forecast future states, so you intervene before burnout or illness rather than after.",
     },
   ],
-  "biological-latency-optimizing-system-ping": [
-    {
-      question: "What is biological latency?",
-      answer:
-        "Biological latency is the delay between a stimulus arriving and your nervous system producing a processed response \u2014 your internal \"ping rate\". High latency shows up as slow reactions, decision ghosting and a feeling of always being a step behind.",
-    },
-    {
-      question: "How do I improve my reaction time and processing speed?",
-      answer:
-        "Three levers: protect myelin integrity with consistent deep sleep (myelin sets raw conduction speed), use alpha-synchronisation breathing to lower neural jitter, and train predictive coding so the brain pre-loads likely outcomes instead of computing them from scratch.",
-    },
-  ],
   "chm-continuous-hormone-monitoring": [
     {
       question: "Is there a wearable that measures cortisol?",
@@ -796,18 +784,6 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         'The physiological sigh (double inhale through nose, long exhale) is an instant reboot for acute stress. Use it before meetings, during anxiety spikes, or when you need to downshift quickly.',
     },
   ],
-  'hrv-training-nervous-system-latency': [
-    {
-      question: 'What does HRV tell me about my nervous system?',
-      answer:
-        'HRV (Heart Rate Variability) reflects the balance between sympathetic and parasympathetic tone. Higher HRV indicates better stress resilience, faster recovery, and a more responsive nervous system.',
-    },
-    {
-      question: 'How do I improve my HRV baseline?',
-      answer:
-        'Morning baseline scans, resonant breathing (5.5s inhale/exhale), cold exposure, and consistent sleep improve HRV. Track it daily to calibrate your recovery protocols.',
-    },
-  ],
   'digital-dementia-attentional-control': [
     {
       question: 'What is the attentional firewall?',
@@ -1189,19 +1165,24 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   'nervous-system-ping-latency': [
     {
-      question: 'What is HRV and why does it measure nervous system latency?',
+      question: 'Does higher HRV mean you react faster?',
       answer:
-        'HRV (Heart Rate Variability) measures the millisecond variation between heartbeats (R-R intervals). High variability indicates that the Parasympathetic branch (Vagus Nerve) is actively modulating cardiac rhythm, meaning the system responds fast to incoming signals and returns to baseline quickly — low latency. A metronome-like, low-variability heartbeat signals Sympathetic overactivation: the network is stuck, recovery is slow, and the "ping" is high.',
+        'Only weakly. Studies find that people with higher resting HRV tend to do slightly better on attention and self-control tasks and have steadier reaction times, but meta-analyses put the link at about r = 0.09–0.15. That is real at the group level but says very little about any one person.',
     },
     {
-      question: 'What is resonant frequency breathing and how does it reduce ANS latency?',
+      question: 'Is HRV a measure of nervous system speed or latency?',
       answer:
-        'Resonant frequency breathing synchronizes the heart, lungs, and baroreflex at a shared oscillation frequency — typically ~0.1 Hz (one full breath cycle every 10 seconds). At this rate, cardiac oscillation, blood pressure waves, and cerebral blood flow phase-lock into a coherent wave, dramatically increasing HRV during the session. The elevated baseline persists for hours. This is not relaxation; it is network synchronization that reduces autonomic response lag.',
+        'No. HRV is the small variation in time between heartbeats, mostly reflecting how much the vagus nerve is adjusting your heart rate, together with breathing. It does not measure how fast signals travel along your nerves or how quickly your brain processes information.',
     },
     {
-      question: 'How long does HRV biofeedback training take to show results?',
+      question: 'Can HRV biofeedback improve focus or reaction time?',
       answer:
-        'Short-term effects (elevated HRV, reduced cortisol, improved cognitive switching) appear within a single 10–20 minute resonant frequency breathing session. Structural improvements in vagal tone and resting HRV baseline become measurable after 4–6 weeks of consistent daily practice. Load-followed-by-recovery training — performing biofeedback immediately after high-stress events — accelerates the adaptation timeline.',
+        'The evidence is modest. HRV rises during slow resonance breathing, and a 2020 meta-analysis found small to moderate benefits of HRV biofeedback, mostly for anxiety, depression and performance. Some studies report better attention, mainly in stressed or clinical groups. A faster reaction time in healthy people has not been shown.',
+    },
+    {
+      question: 'Does low HRV mean my brain is slow?',
+      answer:
+        'No. HRV varies widely between healthy people, falls with age, and drops with poor sleep, alcohol, illness, hard training, stress and even demanding mental work. Compare readings with your own weekly average, and see a doctor if concentration problems or an unusually low HRV persist with other symptoms.',
     },
   ],
   'longevity-protocol-biological-clock-reset': [

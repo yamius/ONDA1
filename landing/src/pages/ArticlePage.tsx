@@ -22,7 +22,7 @@ const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 const ARTICLE_SLUG_TO_STACK_SECTION: Record<string, string> = {
   'vagus-nerve-exercises': 'nervous-system',
   'breathwork-command-line-interface': 'nervous-system',
-  'hrv-training-nervous-system-latency': 'nervous-system',
+  'nervous-system-ping-latency': 'nervous-system',
   'dopamine-architecture-mastering-desire': 'reward-logic',
   'digital-dementia-attentional-control': 'reward-logic',
   'circadian-reset-mastering-light': 'energy-grid',
@@ -66,7 +66,6 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'neuroplasticity-flow-overclocking': '5 min 30 sec',
   'gut-brain-axis-data-link': '4 min 50 sec',
   'breathwork-command-line-interface': '2 min 30 sec',
-  'hrv-training-nervous-system-latency': '3 min 50 sec',
   'digital-dementia-attentional-control': '4 min 10 sec',
   'longevity-hardware-cellular-cleanup': '7 min 05 sec',
   'cognitive-architecture-nootropic-stacks': '5 min 40 sec',
@@ -96,7 +95,7 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'protocol-circadian-hard-reset': '4 min 30 sec',
   'ancestral-sync-circadian-anchors': '4 min 45 sec',
   'longevity-protocol-biological-clock-reset': '5 min 20 sec',
-  'nervous-system-ping-latency': '4 min 40 sec',
+  'nervous-system-ping-latency': '7 min 30 sec',
   'fault-tolerant-human-hrv-buffer': '4 min 55 sec',
   'resonant-frequency-system-coherence': '4 min 50 sec',
   'baroreflex-01hz-shift': '5 min 10 sec',
@@ -409,10 +408,9 @@ export function ArticlePage() {
       const text = typeof children === 'string' ? children : String(children)
       const isSystemStatus = text.includes('System Status') && article.slug === 'gut-brain-axis-data-link'
       const isCLIStatus = text.includes('CLI Active') && article.slug === 'breathwork-command-line-interface'
-      const isHRVStatus = text.includes('SCANNING HRV') && article.slug === 'hrv-training-nervous-system-latency'
       const isFirewallStatus = text.includes('FIREWALL: ACTIVE') && article.slug === 'digital-dementia-attentional-control'
       const isLongevityStatus = text.includes('SYSTEM LIFESPAN: EXTENDED') && article.slug === 'longevity-hardware-cellular-cleanup'
-      const isStatusBlock = isSystemStatus || isCLIStatus || isHRVStatus || isFirewallStatus || isLongevityStatus
+      const isStatusBlock = isSystemStatus || isCLIStatus || isFirewallStatus || isLongevityStatus
       const isTechIntro = /^\[.*\]$/.test(text.trim()) && !isStatusBlock
       return (
         <h2
@@ -434,7 +432,6 @@ export function ArticlePage() {
       const isCognitiveNeuralProtocol = isProtocol && article.slug === 'cognitive-architecture-neural-throughput'
       const isGutBrainProtocol = isProtocol && article.slug === 'gut-brain-axis-data-link'
       const isBreathworkProtocol = isProtocol && article.slug === 'breathwork-command-line-interface'
-      const isHRVProtocol = isProtocol && article.slug === 'hrv-training-nervous-system-latency'
       const isDigitalDementiaProtocol = isProtocol && article.slug === 'digital-dementia-attentional-control'
       const isDopamineProtocol = isProtocol && article.slug === 'dopamine-architecture-mastering-desire'
       const isCacaoStemCellsProtocol = isProtocol && article.slug === 'cacao-stem-cells'
@@ -451,7 +448,7 @@ export function ArticlePage() {
       return (
         <h3
           id={id}
-          className={`mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isHRVProtocol ? 'text-rose-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}
+          className={`mb-3 mt-8 text-lg font-semibold text-white/90 scroll-mt-24 ${isProtocol ? 'font-mono text-sm tracking-wider' : ''} ${isGutBrainProtocol ? 'text-orange-400' : ''} ${isBreathworkProtocol ? 'text-cyan-400' : ''} ${isDigitalDementiaProtocol ? 'text-indigo-400' : ''} ${isDopamineProtocol ? 'text-purple-400' : ''} ${isLongevityProtocol ? 'text-amber-400' : ''} ${isElectricMedicineProtocol ? 'text-violet-400' : ''} ${isMuscleProtocol ? 'text-emerald-400' : ''} ${isCacaoStemCellsProtocol ? 'text-emerald-400' : ''} ${isChmProtocol ? 'text-amber-400' : ''} ${isCpgProtocol ? 'text-blue-400' : ''} ${isCo2ToleranceProtocol ? 'text-cyan-400' : ''} ${isFemtechProtocol ? 'text-rose-400' : ''} ${isCognitiveProtocol || isCognitiveNeuralProtocol || isMitochondrialProtocol || isCircadianLightingProtocol ? 'text-slate-400' : ''}`}
           {...props}
         >
           {children}

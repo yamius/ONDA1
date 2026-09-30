@@ -14,7 +14,7 @@ const article: Article = {
   description:
     'Wearables are splitting into two jobs: passive trackers that measure your nervous system, and active-intervention tools that change it. What the 2026 shift means, and how to use each.',
   category: 'Neural Hardware',
-  relatedSlugs: ['heart-rate-variability', 'hrv-training-nervous-system-latency', 'hrv-different-every-device'],
+  relatedSlugs: ['heart-rate-variability', 'nervous-system-ping-latency', 'hrv-different-every-device'],
   introStyle: 'cyan',
   image: '/images/articles/active-intervention-vs-passive-tracking.webp',
   imageAlt:

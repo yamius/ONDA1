@@ -143,9 +143,9 @@ Interoceptive calibration uses HRV as the external reference. Pick a device that
     },
   ],
   neuralSuggestion: {
-    text: 'Interoceptive precision is the foundation of HRV training.',
-    link: '/articles/hrv-training-nervous-system-latency',
-    linkText: 'HRV: Training Nervous System Latency →',
+    text: 'Curious whether a higher HRV really means a sharper mind? See what the research shows.',
+    link: '/articles/nervous-system-ping-latency',
+    linkText: 'Does HRV Predict How Fast You Think? →',
   },
 }
 

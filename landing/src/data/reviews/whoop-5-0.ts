@@ -61,7 +61,7 @@ Choose the Whoop 5.0 if you are an athlete or serious trainer who makes decision
 
 The science behind why HRV is the signal worth tracking — and how the body produces it.
 
-- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 - [HRV as fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — why a wide HRV envelope is what you are actually training for
 - [The baroreflex and the 0.1 Hz shift](/articles/baroreflex-01hz-shift) — the resonant-frequency breathing signature in your HRV trace
 `,
@@ -69,7 +69,8 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Whoop — official product page', url: 'https://whoop.com' },
     { label: 'Whoop HRV and recovery validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=whoop+heart+rate+variability+validation' },
   ],
-  relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],  faq: [
+  relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
+  faq: [
     { q: "Does Whoop 5.0 require a subscription?", a: "Yes. Whoop is subscription-only at about $239 per year, which includes the band — there is no separate hardware purchase. Stop paying and the band stops working." },
     { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop samples HRV continuously overnight and reports a full-sleep average. Its own validation places sleep and HRV agreement in roughly the 75–86% range against reference devices — strong for a wrist band, behind a finger ring or ECG chest strap." },
     { q: "Who is Whoop 5.0 best for?", a: "Athletes and serious trainers who act on a daily recovery-and-strain score. The ~14-day battery and screenless band suit 24/7 wear; it is overkill for casual users who dislike subscriptions." },

@@ -1849,6 +1849,143 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1111/j.1467-9280.1997.tb00403.x"
     }
   ],
+  "nervous-system-ping-latency": [
+    {
+      "title": "An Overview of Heart Rate Variability Metrics and Norms",
+      "authors": "Shaffer F, Ginsberg JP",
+      "year": 2017,
+      "journal": "Frontiers in Public Health",
+      "doi": "10.3389/fpubh.2017.00258",
+      "pmid": "29034226",
+      "url": "https://doi.org/10.3389/fpubh.2017.00258"
+    },
+    {
+      "title": "Heart Rate Variability and Cardiac Vagal Tone in Psychophysiological Research - Recommendations for Experiment Planning, Data Analysis, and Data Reporting",
+      "authors": "Laborde S, Mosley E, Thayer JF",
+      "year": 2017,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2017.00213",
+      "pmid": "28265249",
+      "url": "https://doi.org/10.3389/fpsyg.2017.00213"
+    },
+    {
+      "title": "The LF/HF ratio does not accurately measure cardiac sympatho-vagal balance",
+      "authors": "Billman GE",
+      "year": 2013,
+      "journal": "Frontiers in Physiology",
+      "doi": "10.3389/fphys.2013.00026",
+      "pmid": "23431279",
+      "url": "https://doi.org/10.3389/fphys.2013.00026"
+    },
+    {
+      "title": "Vagal influence on working memory and attention",
+      "authors": "Hansen AL, Johnsen BH, Thayer JF",
+      "year": 2003,
+      "journal": "International Journal of Psychophysiology",
+      "doi": "10.1016/s0167-8760(03)00073-4",
+      "pmid": "12798986",
+      "url": "https://doi.org/10.1016/s0167-8760(03)00073-4"
+    },
+    {
+      "title": "Cognitive performance and heart rate variability: the influence of fitness level",
+      "authors": "Luque-Casado A, Zabala M, Morales E, Mateo-March M, Sanabria D",
+      "year": 2013,
+      "journal": "PLoS One",
+      "doi": "10.1371/journal.pone.0056935",
+      "pmid": "23437276",
+      "url": "https://doi.org/10.1371/journal.pone.0056935"
+    },
+    {
+      "title": "Resting cardiac vagal tone predicts intraindividual reaction time variability during an attention task in a sample of young and healthy adults",
+      "authors": "Williams DP, Thayer JF, Koenig J",
+      "year": 2016,
+      "journal": "Psychophysiology",
+      "doi": "10.1111/psyp.12739",
+      "pmid": "27658566",
+      "url": "https://doi.org/10.1111/psyp.12739"
+    },
+    {
+      "title": "Heart Rate Variability and Cognitive Function: A Systematic Review",
+      "authors": "Forte G, Favieri F, Casagrande M",
+      "year": 2019,
+      "journal": "Frontiers in Neuroscience",
+      "doi": "10.3389/fnins.2019.00710",
+      "pmid": "31354419",
+      "url": "https://doi.org/10.3389/fnins.2019.00710"
+    },
+    {
+      "title": "Heart rate variability and self-control--A meta-analysis",
+      "authors": "Zahn D, Adams J, Krohn J, Wenzel M, Mann CG, Gomille LK, Jacobi-Scherbening V, Kubiak T",
+      "year": 2016,
+      "journal": "Biological Psychology",
+      "doi": "10.1016/j.biopsycho.2015.12.007",
+      "pmid": "26747415",
+      "url": "https://doi.org/10.1016/j.biopsycho.2015.12.007"
+    },
+    {
+      "title": "Heart rate variability indices as bio-markers of top-down self-regulatory mechanisms: A meta-analytic review",
+      "authors": "Holzman JB, Bridgett DJ",
+      "year": 2017,
+      "journal": "Neuroscience & Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2016.12.032",
+      "pmid": "28057463",
+      "url": "https://doi.org/10.1016/j.neubiorev.2016.12.032"
+    },
+    {
+      "title": "A model of neurovisceral integration in emotion regulation and dysregulation",
+      "authors": "Thayer JF, Lane RD",
+      "year": 2000,
+      "journal": "Journal of Affective Disorders",
+      "doi": "10.1016/s0165-0327(00)00338-4",
+      "pmid": "11163422",
+      "url": "https://doi.org/10.1016/s0165-0327(00)00338-4"
+    },
+    {
+      "title": "Claude Bernard and the heart-brain connection: further elaboration of a model of neurovisceral integration",
+      "authors": "Thayer JF, Lane RD",
+      "year": 2009,
+      "journal": "Neuroscience & Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2008.08.004",
+      "pmid": "18771686",
+      "url": "https://doi.org/10.1016/j.neubiorev.2008.08.004"
+    },
+    {
+      "title": "A meta-analysis of heart rate variability and neuroimaging studies: implications for heart rate variability as a marker of stress and health",
+      "authors": "Thayer JF, Ahs F, Fredrikson M, Sollers JJ 3rd, Wager TD",
+      "year": 2012,
+      "journal": "Neuroscience & Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2011.11.009",
+      "pmid": "22178086",
+      "url": "https://doi.org/10.1016/j.neubiorev.2011.11.009"
+    },
+    {
+      "title": "Heart rate variability biofeedback: how and why does it work?",
+      "authors": "Lehrer PM, Gevirtz R",
+      "year": 2014,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2014.00756",
+      "pmid": "25101026",
+      "url": "https://doi.org/10.3389/fpsyg.2014.00756"
+    },
+    {
+      "title": "Heart Rate Variability Biofeedback Improves Emotional and Physical Health and Performance: A Systematic Review and Meta Analysis",
+      "authors": "Lehrer P, Kaur K, Sharma A, Shah K, Huseby R, Bhavsar J, Sgobba P, Zhang Y",
+      "year": 2020,
+      "journal": "Applied Psychophysiology and Biofeedback",
+      "doi": "10.1007/s10484-020-09466-z",
+      "pmid": "32385728",
+      "url": "https://doi.org/10.1007/s10484-020-09466-z"
+    },
+    {
+      "title": "Does Heart Rate Variability Biofeedback Enhance Executive Functions Across the Lifespan? A Systematic Review",
+      "authors": "Tinello D, Kliegel M, Zuber S",
+      "year": 2022,
+      "journal": "Journal of Cognitive Enhancement",
+      "doi": "10.1007/s41465-021-00218-3",
+      "pmid": "35299845",
+      "url": "https://doi.org/10.1007/s41465-021-00218-3"
+    }
+  ],
   "neural-bridge-alpha-flow-gateway": [
     {
       "title": "Über das Elektrenkephalogramm des Menschen",

@@ -60,7 +60,7 @@ Buy the Fenix 8 if you want one no-subscription watch that does serious training
 Why HRV is the signal worth tracking — and why the number differs by device.
 
 - [Why your HRV is different on every device](/articles/hrv-different-every-device) — RMSSD vs SDNN, PPG vs ECG, and which reading to trust
-- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 `,
   references: [
     { label: 'Garmin fēnix 8 — official announcement', url: 'https://www.garmin.com/en-US/newsroom/press-release/outdoor/garmin-adds-amoled-displays-to-fenix-8-series-its-most-capable-lineup-of-premium-multisport-gps-smartwatches-with-something-for-everyone/' },

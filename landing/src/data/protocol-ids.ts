@@ -18,7 +18,6 @@ const ARTICLE_SHORT: Record<string, string> = {
   'cacao-stem-cells': 'cacao',
   'vagus-nerve-exercises': 'vagus',
   'breathwork-command-line-interface': 'breathwork',
-  'hrv-training-nervous-system-latency': 'hrv',
   'dopamine-architecture-mastering-desire': 'dopamine',
   'digital-dementia-attentional-control': 'digital',
   'circadian-reset-mastering-light': 'circadian',
@@ -65,10 +64,6 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'breathwork-box-breathing': 'breathwork-command-line-interface',
   'breathwork-physiological-sigh': 'breathwork-command-line-interface',
   'breathwork-nasal-only': 'breathwork-command-line-interface',
-  // hrv-training-nervous-system-latency
-  'hrv-hrv-baseline': 'hrv-training-nervous-system-latency',
-  'hrv-biofeedback-resync': 'hrv-training-nervous-system-latency',
-  'hrv-cold-spike': 'hrv-training-nervous-system-latency',
   // dopamine-architecture-mastering-desire
   'dopamine-small-next-step': 'dopamine-architecture-mastering-desire',
   'dopamine-cue-control': 'dopamine-architecture-mastering-desire',
@@ -132,6 +127,10 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'chm-lab-cortisol-test': 'chm-continuous-hormone-monitoring',
   'chm-hrv-rhr-trend': 'chm-continuous-hormone-monitoring',
   'chm-regular-wake-light': 'chm-continuous-hormone-monitoring',
+  // nervous-system-ping-latency
+  'hrvrt-morning-reading': 'nervous-system-ping-latency',
+  'hrvrt-slow-breathing': 'nervous-system-ping-latency',
+  'hrvrt-sleep-movement': 'nervous-system-ping-latency',
   // nightly-flush-glymphatic-neural-cache
   'glymphatic-sleep-duration': 'nightly-flush-glymphatic-neural-cache',
   'glymphatic-limit-evening-alcohol': 'nightly-flush-glymphatic-neural-cache',

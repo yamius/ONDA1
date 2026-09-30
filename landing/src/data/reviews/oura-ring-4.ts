@@ -63,7 +63,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
 
 - [HRV as fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — why a wide HRV envelope is what you are actually training for
 - [The baroreflex and the 0.1 Hz shift](/articles/baroreflex-01hz-shift) — the resonant-frequency breathing signature in your HRV trace
-- [Nervous-system ping latency](/articles/nervous-system-ping-latency) — reading recovery as the time between cardiac and nervous-system events
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 `,
   references: [
     { label: 'Oura Ring — official product page', url: 'https://ouraring.com' },

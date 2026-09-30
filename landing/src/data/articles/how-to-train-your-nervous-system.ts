@@ -12,7 +12,7 @@ const article: Article = {
   description:
     'Your nervous system isn’t fixed — the skill of shifting from stressed to calm is trainable like any other. The levers that build autonomic regulation, and how to practise it with feedback.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['hrv-training-nervous-system-latency', 'vagus-nerve-exercises', 'coherent-breathing-guide', 'structured-meditation-training-by-levels'],
+  relatedSlugs: ['nervous-system-ping-latency', 'vagus-nerve-exercises', 'coherent-breathing-guide', 'structured-meditation-training-by-levels'],
   introStyle: 'purple',
   image: '/images/articles/how-to-train-your-nervous-system.webp',
   imageAlt:
@@ -39,7 +39,7 @@ const article: Article = {
 
 Your autonomic nervous system runs two branches: the [sympathetic](/glossary/sympathetic-nervous-system) "go" branch and the [parasympathetic](/glossary/parasympathetic-nervous-system) "settle" branch, carried mostly by the [vagus nerve](/articles/vagus-nerve-exercises). A well-regulated system spikes into "go" when it needs to and returns cleanly to "settle" when the pressure's off. A poorly-regulated one gets stuck in "go" — wired, reactive, slow to come down.
 
-Training it means two concrete things: **strengthening the parasympathetic brake** so you can down-regulate on demand, and **speeding the return** so you bounce back faster after stress. The trainable quantity behind both is vagal tone, and its readable proxy is [heart-rate variability](/articles/hrv-training-nervous-system-latency) — which is why HRV is the scoreboard for this kind of training.
+Training it means two concrete things: **strengthening the parasympathetic brake** so you can down-regulate on demand, and **speeding the return** so you bounce back faster after stress. The trainable quantity behind both is vagal tone, and its readable proxy is [heart-rate variability](/articles/hrv-questions-answered) — which is why HRV is the scoreboard for this kind of training.
 
 ---
 

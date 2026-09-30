@@ -13,7 +13,7 @@ const article: Article = {
   description:
     'Your Oura, Apple Watch and Whoop all report different HRV numbers. Here is why — RMSSD vs SDNN, overnight vs spot, PPG vs ECG — and which reading to actually trust.',
   category: 'Neural Hardware',
-  relatedSlugs: ['heart-rate-variability', 'parasympathetic-nervous-system', 'vagus-nerve', 'hrv-training-nervous-system-latency'],
+  relatedSlugs: ['heart-rate-variability', 'parasympathetic-nervous-system', 'vagus-nerve', 'nervous-system-ping-latency'],
   introStyle: 'cyan',
   image: '/images/hrv-different-every-device.png',
   imageAlt:

@@ -330,8 +330,6 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'How the gut-brain axis links the microbiome to mood, immunity, and cognition — and what supports it.',
   'breathwork-command-line-interface':
     'Breath as your nervous-system command line: box breathing, the physiological sigh, and nasal breathing, explained.',
-  'hrv-training-nervous-system-latency':
-    'How HRV reflects nervous-system recovery — and how to read and train it over weeks, not one morning number.',
   'digital-dementia-attentional-control':
     'How constant digital input fragments attention — and practical ways to protect and rebuild your focus.',
   'longevity-hardware-cellular-cleanup':
@@ -377,7 +375,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'longevity-protocol-biological-clock-reset':
     'Reset your epigenetic age with the ONDA Deep Reset stack: 48-hour dark surge, pulsed hormesis, and DFA-guided wind down to optimize the Horvath Clock and slow biological aging.',
   'nervous-system-ping-latency':
-    'Your ANS has a ping rate. Low HRV = biological packet loss. The ONDA latency audit uses resonant frequency breathing and VNS patching to reduce autonomic lag and upgrade system performance.',
+    'Only weakly. Higher resting HRV is linked to slightly better focus and steadier reactions, but effects are small. What HRV measures and what training can do.',
   'fault-tolerant-human-hrv-buffer':
     'Low HRV = no headroom — any load triggers cascade failure. The ONDA hardening protocol builds your HRV buffer via hormetic loading, VNS calibration, and predictive morning HRV monitoring.',
   'resonant-frequency-system-coherence':
@@ -2779,16 +2777,16 @@ export function getMetaForRoute(route: string): RouteMeta {
                           : slug === 'nervous-system-ping-latency'
                             ? {
                                 keywords: [
-                                  'HRV Biofeedback',
-                                  'Nervous System Latency',
-                                  'Resonant Frequency Breathing',
-                                  'Autonomic Nervous System Optimization',
-                                  'Vagal Tone Training',
-                                  'Heart Rate Variability Protocol',
-                                  'VNS Patching',
-                                  'ONDA Protocol',
+                                  'HRV and Reaction Time',
+                                  'Heart Rate Variability Cognitive Performance',
+                                  'HRV and Focus',
+                                  'Neurovisceral Integration',
+                                  'HRV Biofeedback Attention',
+                                  'Vagal Tone Self-Control',
+                                  'Resonance Breathing',
+                                  'What HRV Measures',
                                 ],
-                                audience: 'Biohackers, Athletes, High-Performers, Neuroscientists',
+                                audience: 'Curious readers, Wearable users, Athletes, Knowledge Workers',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }

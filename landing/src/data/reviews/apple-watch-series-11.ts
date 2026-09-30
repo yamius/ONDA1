@@ -63,7 +63,7 @@ Choose the Apple Watch Series 11 if you want a single excellent all-round smartw
 
 The science behind why HRV is the signal worth tracking — and how the body produces it.
 
-- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 - [HRV as fault-tolerant buffer](/articles/fault-tolerant-human-hrv-buffer) — why a wide HRV envelope is what you are actually training for
 - [The baroreflex and the 0.1 Hz shift](/articles/baroreflex-01hz-shift) — the resonant-frequency breathing signature in your HRV trace
 `,
@@ -71,7 +71,8 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Apple Watch — official product page', url: 'https://www.apple.com/watch/' },
     { label: 'Apple Watch HRV validation studies (PubMed)', url: 'https://pubmed.ncbi.nlm.nih.gov/?term=apple+watch+heart+rate+variability+validation' },
   ],
-  relatedSlugs: ['oura-ring-4', 'whoop-5-0'],  faq: [
+  relatedSlugs: ['oura-ring-4', 'whoop-5-0'],
+  faq: [
     { q: "Is the Apple Watch Series 11 good for HRV?", a: "It is the weakest of the flagship options for dedicated HRV: it records HRV in irregular background spot-checks, not a continuous overnight protocol, and its roughly one-day battery discourages all-night wear. It is a great smartwatch but a casual HRV tool." },
     { q: "Does the Apple Watch Series 11 need a subscription?", a: "No. It is a one-time $399 purchase with no subscription for its health and HRV features, and it includes a genuine single-lead ECG." },
     { q: "Apple Watch or a ring for HRV?", a: "For overnight HRV precision, a finger ring such as Oura or RingConn beats the Apple Watch, which spot-checks rather than tracks continuously. Choose the Watch if you want one do-everything smartwatch with HRV as a bonus." },

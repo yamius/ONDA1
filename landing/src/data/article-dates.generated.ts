@@ -76,10 +76,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-24T12:08:14+02:00",
     "modified": "2026-09-29T10:50:12+02:00"
   },
-  "biological-latency-optimizing-system-ping": {
-    "published": "2026-04-21T12:59:22Z",
-    "modified": "2026-09-29T10:50:12+02:00"
-  },
   "body-awareness-training-app": {
     "published": "2026-09-19T01:02:52+02:00",
     "modified": "2026-09-29T10:50:12+02:00"
@@ -344,10 +340,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-09-27T23:07:15+02:00",
     "modified": "2026-09-27T23:58:28+02:00"
   },
-  "hrv-training-nervous-system-latency": {
-    "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-09-29T23:59:57+02:00"
-  },
   "humming-breath-vagus": {
     "published": "2026-09-21T17:29:12+02:00",
     "modified": "2026-09-29T10:50:12+02:00"
@@ -462,7 +454,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "neural-bridge-alpha-flow-gateway": {
     "published": "2026-03-31T16:32:31Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T12:28:36+02:00"
   },
   "neural-entrainment-meditation-2": {
     "published": "2026-02-28T20:22:39+01:00",
@@ -618,7 +610,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "spinal-harddrive-cpg-autonomous-scripts": {
     "published": "2026-03-31T22:15:23Z",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-09-30T12:28:36+02:00"
   },
   "spinal-intelligence-decentralized-control": {
     "published": "2026-03-31T22:40:04Z",
@@ -1606,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T11:32:45+02:00"
+    "modified": "2026-09-30T12:28:36+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1622,7 +1614,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-30T10:48:26+02:00"
+    "modified": "2026-09-30T12:28:36+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
@@ -1718,7 +1710,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-09-30T11:32:45+02:00"
+    "modified": "2026-09-30T12:28:36+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

@@ -15,7 +15,7 @@ const article: Article = {
   description:
     'A short investigation into dysautonomia — the nervous-system dysregulation behind much of long Covid and POTS — why it shows up as low HRV, and what the breathing-biofeedback studies actually found.',
   category: 'OS States',
-  relatedSlugs: ['heart-rate-variability', 'autonomic-nervous-system', 'vagus-nerve', 'hrv-training-nervous-system-latency', 'coherent-breathing-guide'],
+  relatedSlugs: ['heart-rate-variability', 'autonomic-nervous-system', 'vagus-nerve', 'nervous-system-ping-latency', 'coherent-breathing-guide'],
   introStyle: 'indigo',
   image: '/images/articles/dysautonomia-long-covid-breathing.webp',
   imageAlt:

@@ -127,7 +127,6 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'ancestral-sync-circadian-anchors', publishOn: '2026-06-22' },
   { slug: 'anterior-cingulate-core-coherence-monitoring', publishOn: '2026-06-22' },
   { slug: 'anti-entropy-neural-architecture', publishOn: '2026-06-22' },
-  { slug: 'biological-latency-optimizing-system-ping', publishOn: '2026-06-22' },
   { slug: 'cacao-stem-cells', publishOn: '2026-06-22' },
   { slug: 'circadian-lighting-dark-therapy', publishOn: '2026-06-22' },
   // Batch 2 — 2026-06-29
@@ -141,7 +140,6 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'femtech-cyclical-architecture', publishOn: '2026-06-29' },
   { slug: 'glp1-biology-muscle-preservation', publishOn: '2026-06-29' },
   { slug: 'hpa-axis-control-cortisol-aggression', publishOn: '2026-06-29' },
-  { slug: 'hrv-training-nervous-system-latency', publishOn: '2026-06-29' },
   // Batch 3 — 2026-07-06
   { slug: 'hydraulic-viscosity-onda-transport-bus', publishOn: '2026-07-06' },
   { slug: 'longevity-hardware-cellular-cleanup', publishOn: '2026-07-06' },
@@ -305,12 +303,10 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   // HRV / breathing / autonomic pillars — RE-TRANSLATED from current EN
   // (old bodies were stale, abbreviated snapshots missing gear/CTA sections
   // and internal links; re-translated 2026-09-13 with full link parity).
-  { slug: 'hrv-training-nervous-system-latency', publishOn: '2026-09-28' },
   { slug: 'fault-tolerant-human-hrv-buffer', publishOn: '2026-09-28' },
   { slug: 'resonant-frequency-system-coherence', publishOn: '2026-09-28' },
   { slug: 'baroreflex-01hz-shift', publishOn: '2026-09-28' },
   { slug: 'nervous-system-ping-latency', publishOn: '2026-09-28' },
-  { slug: 'biological-latency-optimizing-system-ping', publishOn: '2026-09-28' },
   { slug: 'interoceptive-precision-sensor-calibration', publishOn: '2026-09-28' },
   { slug: 'breathwork-command-line-interface', publishOn: '2026-09-28' },
   { slug: 'anti-entropy-neural-architecture', publishOn: '2026-09-28' },

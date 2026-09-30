@@ -13,7 +13,7 @@ const article: Article = {
   description:
     'Higher HRV means a more adaptable nervous system. The levers that actually raise it — sleep, training, alcohol, stress — plus the one you can train directly: slow breathing with live biofeedback.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['heart-rate-variability', 'hrv-training-nervous-system-latency', 'coherent-breathing-guide', 'vagus-nerve-exercises', 'how-to-measure-hrv-consistently'],
+  relatedSlugs: ['heart-rate-variability', 'nervous-system-ping-latency', 'coherent-breathing-guide', 'vagus-nerve-exercises', 'how-to-measure-hrv-consistently'],
   introStyle: 'emerald',
   image: '/images/articles/how-to-raise-hrv-naturally.webp',
   imageAlt:
@@ -64,7 +64,7 @@ None of these is a hack. They're the foundation, and no breathing app substitute
 
 **Slow, paced breathing acutely raises HRV within minutes**, and practised regularly it can lift your resting baseline over time. It's the one lever that's both immediate and trainable.
 
-The mechanism is clean. Breathe slowly — long, with the exhale leading — and you stimulate the baroreflex and hand tone to the parasympathetic branch on each out-breath. Your heart rate rises on the inhale and falls on the exhale in a wide, organised swing. That swing *is* HRV, amplified on purpose. Do it daily and you're not just measuring HRV — you're [training the nervous system's latency](/articles/hrv-training-nervous-system-latency) to relax faster.
+The mechanism is clean. Breathe slowly — long, with the exhale leading — and you stimulate the baroreflex and hand tone to the parasympathetic branch on each out-breath. Your heart rate rises on the inhale and falls on the exhale in a wide, organised swing. That swing *is* HRV, amplified on purpose. Do it daily and you're not just measuring HRV — you're [training your nervous system](/articles/how-to-train-your-nervous-system) to settle faster.
 
 The honest boundary: this trains the autonomic self-regulation dimension of HRV. It is a practice, not a medical treatment, and no app is a medical device.
 

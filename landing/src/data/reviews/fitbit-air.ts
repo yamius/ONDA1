@@ -58,7 +58,7 @@ Choose the Fitbit Air if you want the cheapest honest way to start watching a 24
 ## Background reading
 
 - [Why your HRV is different on every device](/articles/hrv-different-every-device) — why a wrist PPG number differs from a strap, and which to trust
-- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — what the HRV trend actually reflects
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 `,
   references: [
     { label: 'Introducing the Google Fitbit Air — official', url: 'https://blog.google/products-and-platforms/devices/fitbit/fitbit-air/' },

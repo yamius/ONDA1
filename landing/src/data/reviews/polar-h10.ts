@@ -61,7 +61,7 @@ Choose the Polar H10 if you want ground-truth HRV — a clean, app-agnostic sign
 
 The science behind why HRV is the signal worth tracking — and how the body produces it.
 
-- [Optimising biological latency](/articles/biological-latency-optimizing-system-ping) — turning HRV data into the lag between input and adaptive response
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 - [Resonant-frequency system coherence](/articles/resonant-frequency-system-coherence) — why 5.5–6 breaths per minute is the HRV-training sweet spot
 - [Interoceptive precision and sensor calibration](/articles/interoceptive-precision-sensor-calibration) — why your own perception is the upstream baseline HRV measures against
 `,
@@ -69,7 +69,8 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     { label: 'Polar H10 — official product page', url: 'https://www.polar.com/en/sensors/h10-heart-rate-sensor' },
     { label: 'Validity of the Polar H10 sensor for HRV analysis (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC9459793/' },
   ],
-  relatedSlugs: ['oura-ring-4', 'whoop-5-0', 'garmin-venu-4'],  faq: [
+  relatedSlugs: ['oura-ring-4', 'whoop-5-0', 'garmin-venu-4'],
+  faq: [
     { q: "Is the Polar H10 the most accurate HRV device?", a: "Effectively yes. It is an ECG chest strap that reads the heart’s electrical signal directly, with peer-reviewed near-perfect agreement with clinical ECG at rest — the reference every optical wearable is validated against." },
     { q: "Can the Polar H10 track HRV overnight or sleep?", a: "Not really. It is a chest strap for measurements and workouts, does no sleep staging, and is not designed for 24/7 wear. Pair it with a ring or band for passive overnight data." },
     { q: "How much is the Polar H10 and does it need a subscription?", a: "About $90 one-time, no subscription. It streams raw beat-to-beat (RR) intervals over Bluetooth and ANT+ to almost any HRV app — the cheapest, most open ground-truth option." },

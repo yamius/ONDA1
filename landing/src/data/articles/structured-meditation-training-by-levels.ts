@@ -15,7 +15,7 @@ const article: Article = {
   description:
     'Most meditation apps hand you a shelf of sessions and let you wander. A structured, level-by-level program trains you like a skill — progressive, sequenced, measurable. Why the path beats the library.',
   category: 'ONDA Protocol',
-  relatedSlugs: ['meditation-app-with-biofeedback', 'coherent-breathing-guide', 'heart-rate-variability', 'active-intervention-vs-passive-tracking', 'hrv-training-nervous-system-latency'],
+  relatedSlugs: ['meditation-app-with-biofeedback', 'coherent-breathing-guide', 'heart-rate-variability', 'active-intervention-vs-passive-tracking', 'nervous-system-ping-latency'],
   introStyle: 'gold',
   image: '/images/articles/structured-meditation-training-by-levels.webp',
   imageAlt:
@@ -57,7 +57,7 @@ A structured program has properties a library doesn't:
 - **Unlocking.** You complete a stage before the next opens, which turns practice into visible advancement instead of an infinite scroll.
 - **A destination.** The path is going somewhere — steadier baseline, deeper regulation, real [self-regulation](/glossary/parasympathetic-nervous-system) skill — not just "another ten minutes of calm."
 
-This is the shape of nervous-system *training*, not nervous-system *content*. And it maps onto the physiology: skills like [resonant breathing](/articles/coherent-breathing-guide) and raising [HRV](/glossary/heart-rate-variability) genuinely compound with sequenced practice — see [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency).
+This is the shape of nervous-system *training*, not nervous-system *content*. And it maps onto the physiology: skills like [resonant breathing](/articles/coherent-breathing-guide) and raising [HRV](/glossary/heart-rate-variability) genuinely compound with sequenced practice — see [what HRV can and cannot tell you about focus](/articles/nervous-system-ping-latency).
 
 ---
 

@@ -63,7 +63,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
 
 - [Why HRV reads differently on every device](/articles/hrv-different-every-device) — SDNN vs RMSSD, and why numbers don’t line up across brands
 - [Apple Watch Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) — the 2026 two-number change, explained
-- [HRV training and nervous-system latency](/articles/hrv-training-nervous-system-latency) — how HRV reflects autonomic responsiveness
+- [Does HRV predict reaction time and focus?](/articles/nervous-system-ping-latency) — what resting HRV does and does not say about attention and self-control
 `,
   references: [
     { label: 'Apple — Apple Watch Series 12 (official)', url: 'https://www.apple.com/apple-watch-series-12/' },

@@ -15,7 +15,7 @@ const article: Article = {
   relatedSlugs: [
     'phase-locked-acoustic-sleep',
     'circadian-lighting-dark-therapy',
-    'hrv-training-nervous-system-latency',
+    'nervous-system-ping-latency',
   ],
   introStyle: 'indigo',
   image: '/images/cognitive-shuffling.png',
