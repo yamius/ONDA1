@@ -22,7 +22,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "active-intervention-vs-passive-tracking": {
     "published": "2026-09-12T12:28:48+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "adaptation-hack-range-fractionation": {
     "published": "2026-03-14T12:57:50Z",
@@ -166,7 +166,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cognitive-shuffling": {
     "published": "2026-06-04T00:30:56+02:00",
-    "modified": "2026-09-30T10:48:26+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "coherent-breathing-guide": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -202,7 +202,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "dysautonomia-long-covid-breathing": {
     "published": "2026-09-17T14:44:39+02:00",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "eating-late-heart-rate-sleep": {
     "published": "2026-09-18T14:42:44+02:00",
@@ -310,7 +310,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-raise-hrv-naturally": {
     "published": "2026-09-19T00:55:37+02:00",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "how-to-regulate-emotions": {
     "published": "2026-09-19T01:24:54+02:00",
@@ -318,7 +318,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-train-your-nervous-system": {
     "published": "2026-09-19T01:18:42+02:00",
-    "modified": "2026-09-29T23:59:57+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -330,7 +330,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-different-every-device": {
     "published": "2026-06-04T01:14:45+02:00",
-    "modified": "2026-09-27T00:19:39+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "hrv-harmony-of-rhythms": {
     "published": "2026-09-22T07:30:24+02:00",
@@ -354,7 +354,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "interoceptive-precision-sensor-calibration": {
     "published": "2026-04-21T12:25:38Z",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "jhana-meditation-stages": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -450,7 +450,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nervous-system-ping-latency": {
     "published": "2026-03-24T10:43:38Z",
-    "modified": "2026-09-29T23:22:17+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "neural-bridge-alpha-flow-gateway": {
     "published": "2026-03-31T16:32:31Z",
@@ -618,7 +618,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "structured-meditation-training-by-levels": {
     "published": "2026-09-19T00:21:25+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "sudarshan-kriya-yoga-breathing": {
     "published": "2026-09-24T12:39:03+02:00",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T12:28:36+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1606,7 +1606,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-30T11:32:45+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1614,7 +1614,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-30T12:28:36+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
@@ -1710,7 +1710,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-09-30T12:28:36+02:00"
+    "modified": "2026-09-30T12:56:25+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",
