@@ -26,7 +26,7 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Alcohol lowers your heart rate variability (HRV) and raises your resting heart rate overnight, and the effect scales with how much you drink. In aggregate wearable data, a single drink drops HRV by around 3–4% and raises sleeping heart rate by about 1–3 bpm; four drinks can cut HRV by roughly 15%. WHOOP data shows even one drink lowers HRV by an average of 7 milliseconds and raises resting heart rate by 3 bpm. The mechanism isn't sedation — alcohol activates your sympathetic "fight or flight" system as your body processes it as a toxin, which is why you can sleep a full night after drinking and still wake up unrecovered.
+Alcohol lowers your heart rate variability (HRV) and raises your resting heart rate overnight, and the effect scales with how much you drink. In aggregate wearable data, a single drink drops HRV by around 3–4% and raises sleeping heart rate by about 1–3 bpm; four drinks can cut HRV by roughly 15%. WHOOP's own aggregate member data (not a peer-reviewed study) shows even one drink lowers HRV by an average of 7 milliseconds and raises resting heart rate by 3 bpm. The mechanism isn't sedation — alcohol activates your sympathetic "fight or flight" system as your body processes it as a toxin, which is why you can sleep a full night after drinking and still wake up unrecovered.
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
 
@@ -34,7 +34,7 @@ Alcohol lowers your heart rate variability (HRV) and raises your resting heart r
 
 ## How much does each drink lower HRV?
 
-Each drink lowers HRV further: about −3.4% after one standard drink in a night, −8% after two, −8.6% after three and −15.3% after four. Analysis of aggregate wearable data shows a consistent dose-response curve for both heart rate variability (which drops) and sleeping heart rate (which rises):
+Each drink lowers HRV further: about −3.4% after one standard drink in a night, −8% after two, −8.6% after three and −15.3% after four. Aggregate member data published by the wearable company WHOOP (not a peer-reviewed study) shows a consistent dose-response curve for both heart rate variability (which drops) and sleeping heart rate (which rises):
 
 | Drinks in one night | HRV change | Sleeping heart rate change |
 |---|---|---|
@@ -49,11 +49,11 @@ The pattern is unambiguous: more alcohol means lower HRV and higher heart rate t
 
 It's counterintuitive: alcohol is a depressant, so it should calm you. But its effect on your autonomic nervous system is stimulatory, not calming. As your body metabolizes ethanol and its by-product acetaldehyde, it treats them as toxins and mounts a physiological stress response. This shifts your autonomic balance toward the sympathetic branch and away from the parasympathetic "rest and digest" activity that HRV depends on.
 
-The result is a night where your heart never fully downshifts. Peer-reviewed smartwatch research found that even moderate drinking raised nocturnal resting heart rate significantly (from about 63.6 to 66.6 bpm) — and notably, this happened *without* changing sleep architecture. In other words, your sleep stages can look normal while your cardiovascular system works overtime all night. That gap is why you can "sleep fine" and still feel drained: your body was busy, and your numbers show it even when your sleep tracker doesn't. For how long the alcohol itself lingers, see [how long alcohol stays in your system](/articles/how-long-does-alcohol-stay-in-your-system).
+The result is a night where your heart never fully downshifts. Peer-reviewed smartwatch research found that even moderate drinking (in that study, about 3–4 or more standard drinks) raised nocturnal resting heart rate significantly (from about 63.6 to 66.6 bpm) — and notably, this happened *without* changing sleep architecture. In other words, your sleep stages can look normal while your cardiovascular system works overtime all night. That gap is why you can "sleep fine" and still feel drained: your body was busy, and your numbers show it even when your sleep tracker doesn't. For how long the alcohol itself lingers, see [how long alcohol stays in your system](/articles/how-long-does-alcohol-stay-in-your-system).
 
 ## Who is affected most by alcohol?
 
-Two findings stand out from the research. First, **women tend to show larger disturbances** than men — greater HRV reduction and heart rate elevation for the same relative intake, likely due to lower first-pass metabolism of alcohol. Second, being **young and fit offers no protection**: a large real-world study of employees found that physical activity and youth did not shield people from alcohol's suppression of parasympathetic tone. Fitness helps your baseline HRV, but it doesn't cancel the overnight hit from drinking.
+Two findings stand out from the research. First, **men and women are hit similarly**: a large real-world study of more than 4,000 Finnish employees found alcohol suppressed overnight recovery to a similar degree in both sexes. Second, being **young and fit offers no protection**: in that same study, physical activity and youth did not shield people from alcohol's suppression of parasympathetic tone — the effects were actually stronger in younger people. Fitness helps your baseline HRV, but it doesn't cancel the overnight hit from drinking.
 
 ## How long does HRV take to recover after drinking?
 

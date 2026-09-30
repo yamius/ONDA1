@@ -88,10 +88,6 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
     "published": "2026-06-04T00:46:04+02:00",
     "modified": "2026-09-29T10:50:12+02:00"
   },
-  "bohr-effect-oxygen-telemetry": {
-    "published": "2026-05-01T23:21:51+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
-  },
   "box-breathing-how-it-works": {
     "published": "2026-06-04T14:36:55+02:00",
     "modified": "2026-09-29T10:50:12+02:00"
@@ -158,7 +154,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "circadian-reset-mastering-light": {
     "published": "2026-02-26T15:36:15+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "co2-tolerance-expanding-oxygen-limit": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -262,7 +258,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "gut-brain-axis-data-link": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "heart-rate-recovery-fitness-marker": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -326,7 +322,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-train-your-nervous-system": {
     "published": "2026-09-19T01:18:42+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "hpa-axis-control-cortisol-aggression": {
     "published": "2026-03-10T14:37:54Z",
@@ -350,7 +346,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "hrv-training-nervous-system-latency": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "humming-breath-vagus": {
     "published": "2026-09-21T17:29:12+02:00",
@@ -670,7 +666,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "vagus-nerve-exercises": {
     "published": "2026-06-04T14:36:55+02:00",
-    "modified": "2026-09-29T09:45:29+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "vascular-tensegrity-microvascular-mechanics": {
     "published": "2026-05-01T23:21:51+02:00",
@@ -1618,7 +1614,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-29T23:22:17+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1626,7 +1622,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/the-stack": {
     "published": "2026-02-27T00:46:50+01:00",
-    "modified": "2026-09-29T23:22:17+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "page:/sitemap": {
     "published": "2026-02-26T01:46:23+01:00",
@@ -1634,7 +1630,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles/topic/:topic": {
     "published": "2026-09-24T00:24:48+02:00",
-    "modified": "2026-09-29T23:22:17+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "page:/part/:slug": {
     "published": "2026-02-24T15:51:07+01:00",
@@ -1730,7 +1726,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-09-29T23:22:17+02:00"
+    "modified": "2026-09-29T23:59:57+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

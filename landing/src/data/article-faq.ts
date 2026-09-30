@@ -175,12 +175,12 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Does alcohol really lower HRV?",
       answer:
-        "Yes, and consistently. Even a single drink lowers HRV by roughly 3–4% (about 7 ms in WHOOP data) and raises sleeping heart rate. The effect is dose-dependent — more drinks, lower HRV — and shows up the same night. Figures are population averages; your own response varies.",
+        "Yes, and consistently. Even a single drink lowers HRV by roughly 3–4% (about 7 ms in WHOOP's own aggregate member data, not a peer-reviewed study) and raises sleeping heart rate. The effect is dose-dependent — more drinks, lower HRV — and shows up the same night. Figures are population averages; your own response varies.",
     },
     {
       question: "How much does one drink affect HRV?",
       answer:
-        "On average, about a 3–4% drop in HRV and a 1–3 bpm rise in sleeping heart rate. WHOOP's aggregate data puts it at roughly −7 ms HRV and +3 bpm for a single drink.",
+        "On average, about a 3–4% drop in HRV and a 1–3 bpm rise in sleeping heart rate. WHOOP's own aggregate member data (not a peer-reviewed study) puts it at roughly −7 ms HRV and +3 bpm for a single drink.",
     },
     {
       question: "Why is my HRV low the morning after drinking, even with good sleep?",
@@ -190,7 +190,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Does alcohol affect women's HRV more than men's?",
       answer:
-        "Research suggests yes — women tend to show larger HRV reductions and heart rate increases for the same intake, likely due to differences in how alcohol is metabolized.",
+        "Not clearly. A large real-world study of more than 4,000 employees found alcohol suppressed overnight recovery similarly in men and women. Women often reach a higher blood alcohol level from the same drinks, though, so the same number of drinks can be a bigger dose.",
     },
     {
       question: "How long until my HRV recovers after drinking?",
@@ -217,7 +217,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Why did my Apple Watch HRV suddenly change or jump?",
       answer:
-        "Almost certainly because the metric changed, not your physiology. The new watch samples HRV about every five minutes (24× more often) and reports RMSSD-based Recovery HRV, which usually reads higher than the old SDNN number. Do not splice the old and new histories — they are different metrics on different scales.",
+        "Almost certainly because the metric changed, not your physiology. The new watch samples HRV about every five minutes (24× more often) and reports RMSSD-based Recovery HRV, which is on a different scale from the old SDNN number and usually differs from it (RMSSD typically reads lower). Do not splice the old and new histories — they are different metrics on different scales.",
     },
   ],
   "dysautonomia-long-covid-breathing": [
@@ -393,17 +393,22 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Is the urge to breathe caused by low oxygen?",
       answer:
-        "No. The air hunger you feel is driven mainly by rising CO2, not falling oxygen. Chemoreceptors trigger breath urgency long before oxygen is actually low \u2014 which means CO2 tolerance, not lung capacity, is usually the real limiter.",
+        "Mostly not. At rest the drive to breathe is set mainly by rising carbon dioxide, sensed through blood acidity in the brainstem. That is why the first urge during a breath-hold comes long before oxygen is low, and why over-breathing before a hold can hide falling oxygen.",
     },
     {
-      question: "What is the BOLT score?",
+      question: "What does the BOLT test measure?",
       answer:
-        "The BOLT (Body Oxygen Level Test) measures CO2 tolerance: after a normal exhale you time how long until the first definite urge to breathe. A low score signals oversensitive chemoreceptors; a rising score over weeks of training reflects calmer, more efficient breathing.",
+        "BOLT times how long you hold your breath after a normal exhale until the first clear urge to breathe. Despite its name it does not measure oxygen; it mostly reflects how you tolerate breathlessness. It comes from breathing programs and is not a validated clinical test.",
     },
     {
-      question: "How do I improve CO2 tolerance?",
+      question: "What is a good BOLT score?",
       answer:
-        "Train it gradually with box breathing to calibrate the chemoreceptors, then progress to structured apnea tables as a controlled stress test. Higher CO2 tolerance also improves oxygen delivery via the Bohr effect \u2014 hemoglobin releases oxygen more readily into the tissues.",
+        "There is no validated normal range. Cut-offs such as under 25 seconds being poor or 40 seconds as a goal come from breathing programs, not outcome studies. In 49 elite speed skaters, BOLT was not related to sprint or maximal exercise performance (Kowalski 2024).",
+    },
+    {
+      question: "Is breath-hold training safe?",
+      answer:
+        "Only on dry land and with care. Never hold your breath in or near water or while driving, never over-breathe first, and stop at the first strong urge, because oxygen can fall to blackout without warning. Avoid it with heart conditions, seizures or pregnancy.",
     },
   ],
   "cpg-neural-autopilot": [
@@ -1284,23 +1289,6 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
       question: 'How does myofascial tension translate into cerebral hypoxia?',
       answer:
         'Locked masticatory and trapezius muscles compress microvessels, raise hydraulic impedance and slow cerebral blood flow. The cortex becomes starved of oxygen and acetylcholine, and the Acetylcholine Lens loses focal definition — focus collapses before any "mental" cause appears.',
-    },
-  ],
-  'bohr-effect-oxygen-telemetry': [
-    {
-      question: 'What is the Bohr Effect?',
-      answer:
-        'The Bohr Effect describes how the binding affinity of hemoglobin depends on the surrounding CO2 concentration. Hemoglobin only releases oxygen to tissues in the presence of CO2 — without enough CO2 it retains oxygen, creating cellular hypoxia even when blood oxygen is high.',
-    },
-    {
-      question: 'Why does shallow stress breathing cause brain fog?',
-      answer:
-        'Hyperventilation washes out CO2. Without the CO2 trigger, hemoglobin will not unload oxygen at high-demand neural nodes, so the prefrontal cortex slows down. The body also misreads low CO2 as a threat signal and increases adrenaline — producing micro-panic and fog.',
-    },
-    {
-      question: 'How do I train CO2 tolerance safely?',
-      answer:
-        'Slow, measured breathing with extended exhales and patient pauses before the next inhale. Add brief controlled breath holds (post-exhale or post-inhale) in cycles to gently spike CO2 — this dilates cerebral vessels and stabilizes oxygen delivery to active networks.',
     },
   ],
   'anterior-cingulate-core-coherence-monitoring': [
@@ -2309,7 +2297,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How many hours before bed should I stop eating?",
       answer:
-        "About three hours before bed (four if you're sensitive) is a reasonable default, precisely because responses vary. A fast metabolizer with a modest dinner may see nothing; a large, high-fat meal at 10 p.m. may clearly bump overnight heart rate and flatten HRV. The rule points you at the right neighbourhood; your own data gives the exact address.",
+        "About three hours before bed (four if you're sensitive) is a practical rule of thumb rather than a measured cutoff — a reasonable default precisely because responses vary. A fast metabolizer with a modest dinner may see nothing; a large, high-fat meal at 10 p.m. may clearly bump overnight heart rate and flatten HRV. The rule points you at the right neighbourhood; your own data gives the exact address.",
     },
     {
       question: "How do I know if late eating affects me specifically?",

@@ -182,7 +182,6 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "biological-latency-optimizing-system-ping": "brain-focus-aging",
   "body-awareness-training-app": "meditation",
   "body-fat-percentage-composition": "heart-fitness-metabolism",
-  "bohr-effect-oxygen-telemetry": "breathing",
   "box-breathing-how-it-works": "breathing",
   "breathing-altitude-acclimatization": "breathing",
   "breathing-exercises-older-adults": "brain-focus-aging",

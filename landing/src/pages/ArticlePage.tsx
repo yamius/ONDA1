@@ -113,7 +113,6 @@ const ARTICLE_SYNC_TIMES: Record<string, string> = {
   'ventral-tegmental-core-motivational-salience': '5 min 10 sec',
   'fascial-tensegrity-protocol-myofascial-noise': '4 min 25 sec',
   'vascular-tensegrity-microvascular-mechanics': '4 min 50 sec',
-  'bohr-effect-oxygen-telemetry': '4 min 40 sec',
   'anterior-cingulate-core-coherence-monitoring': '4 min 55 sec',
   'acc-calibration-protocol-cognitive-control': '4 min 30 sec',
   'hydraulic-viscosity-onda-transport-bus': '4 min 35 sec',

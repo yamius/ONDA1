@@ -51,7 +51,6 @@ const ARTICLE_SHORT: Record<string, string> = {
   'adaptation-hack-range-fractionation': 'range-frac',
   'ventral-tegmental-core-motivational-salience': 'vta',
   'fascial-tensegrity-protocol-myofascial-noise': 'fascia',
-  'bohr-effect-oxygen-telemetry': 'bohr',
   'acc-calibration-protocol-cognitive-control': 'acccal',
 }
 
@@ -142,9 +141,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'cpg-cadence-hack': 'cpg-neural-autopilot',
   'cpg-sensory-override': 'cpg-neural-autopilot',
   // co2-tolerance-expanding-oxygen-limit
-  'co2-bolt-test': 'co2-tolerance-expanding-oxygen-limit',
-  'co2-box-calibration': 'co2-tolerance-expanding-oxygen-limit',
-  'co2-apnea-tables': 'co2-tolerance-expanding-oxygen-limit',
+  'co2-bolt-safe-test': 'co2-tolerance-expanding-oxygen-limit',
+  'co2-quiet-nasal-breathing': 'co2-tolerance-expanding-oxygen-limit',
+  'co2-check-breathlessness': 'co2-tolerance-expanding-oxygen-limit',
   // femtech-cyclical-architecture
   'femtech-phase-sync': 'femtech-cyclical-architecture',
   'femtech-bbt-tracking': 'femtech-cyclical-architecture',
@@ -198,9 +197,6 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   // fascial-tensegrity-protocol-myofascial-noise
   'fascia-trapezius-release': 'fascial-tensegrity-protocol-myofascial-noise',
   'fascia-vagus-humming': 'fascial-tensegrity-protocol-myofascial-noise',
-  // bohr-effect-oxygen-telemetry
-  'bohr-co2-tolerance': 'bohr-effect-oxygen-telemetry',
-  'bohr-vasodilation-cycles': 'bohr-effect-oxygen-telemetry',
   // acc-calibration-protocol-cognitive-control
   'acccal-monotasking-check': 'acc-calibration-protocol-cognitive-control',
   'acccal-mindfulness-pause': 'acc-calibration-protocol-cognitive-control',

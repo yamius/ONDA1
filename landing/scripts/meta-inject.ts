@@ -410,8 +410,8 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
     'Trapezius lock and cervical compression strangle cerebral blood flow. The ONDA Fascial Tensegrity Protocol pairs targeted myofascial release with humming vagal exhale to restore structural balance.',
   'vascular-tensegrity-microvascular-mechanics':
     'The vascular network is a tensegrity transport bus, not a pipeline. Balanced fascial tension delivers oxygen and nutrients to the cortex with zero impedance and absorbs mechanical shocks.',
-  'bohr-effect-oxygen-telemetry':
-    'Hemoglobin needs CO2 to release oxygen. ONDA calibrates the Bohr trigger via slow breathing and vasodilation cycles to end cellular hypoxia and stabilize prefrontal processing speed.',
+  'co2-tolerance-expanding-oxygen-limit':
+    'The urge to breathe is driven mostly by CO₂, not low oxygen. What the BOLT breath-hold test measures, why it is barely validated, and how to practice safely.',
   'anterior-cingulate-core-coherence-monitoring':
     'The anterior cingulate cortex arbitrates conflict between focus and distraction. dACC handles task-switching, vACC handles autonomic load — together they keep cognitive flexibility coherent.',
   'acc-calibration-protocol-cognitive-control':
@@ -3049,19 +3049,20 @@ export function getMetaForRoute(route: string): RouteMeta {
                                 proficiencyLevel: 'Advanced',
                                 educationalLevel: 'Advanced',
                               }
-                          : slug === 'bohr-effect-oxygen-telemetry'
+                          : slug === 'co2-tolerance-expanding-oxygen-limit'
                             ? {
                                 keywords: [
-                                  'Bohr Effect',
-                                  'Oxygen Telemetry CO2',
-                                  'Hemoglobin Binding Affinity',
-                                  'CO2 Tolerance Calibration',
-                                  'BOLT Score Biohacking',
-                                  'Cerebral Vasodilation Breathwork',
-                                  'Cellular Hypoxia Prevention',
-                                  'ONDA Protocol',
+                                  'CO2 tolerance',
+                                  'BOLT test',
+                                  'BOLT score',
+                                  'breath hold test',
+                                  'urge to breathe CO2',
+                                  'over-breathing hyperventilation',
+                                  'Bohr effect',
+                                  'shallow water blackout',
+                                  'Buteyko breathing',
                                 ],
-                                audience: 'Biohackers, Athletes, High-Performers, Freedivers',
+                                audience: 'Adults interested in breathing, anxiety and fitness',
                                 proficiencyLevel: 'Intermediate',
                                 educationalLevel: 'Intermediate',
                               }

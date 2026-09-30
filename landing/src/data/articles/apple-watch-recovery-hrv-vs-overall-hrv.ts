@@ -79,7 +79,7 @@ In 2026 that changed. Alongside the Series 12, **HealthKit added \`heartRateVari
 
 No — because Recovery HRV (RMSSD) and Overall HRV (SDNN) are **different metrics on different scales**, you cannot take your old SDNN history and simply continue it as RMSSD.
 
-- Your RMSSD number will usually read **higher** than your SDNN number for the same night — it is a different calculation, not an improvement.
+- Your RMSSD number will usually **differ** from your SDNN number for the same night — in healthy adults RMSSD is typically lower, and SDNN grows with longer recordings. They are on different scales, so don't compare them directly.
 - A chart that splices SDNN months onto RMSSD months is a broken time series. Treat the two as separate lines.
 - Give any new baseline time. A personal HRV baseline needs roughly a week to stabilise and closer to a month to become reliable, so the first few weeks after the switch will look unsettled by design.
 
@@ -115,7 +115,7 @@ And the honest limit: all of this is still **passive measurement** — the watch
     },
     {
       name: 'Never merge the two histories',
-      text: 'Recovery HRV (RMSSD) and Overall HRV (SDNN) are different statistics on different scales — RMSSD usually reads higher. Splicing old SDNN data onto new RMSSD data creates a broken time series.',
+      text: 'Recovery HRV (RMSSD) and Overall HRV (SDNN) are different statistics on different scales and usually differ (RMSSD typically reads lower), so do not compare them directly. Splicing old SDNN data onto new RMSSD data creates a broken time series.',
       protocolId: 'awhrv-nomerge',
     },
     {

@@ -129,7 +129,6 @@ const ES_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'anterior-cingulate-core-coherence-monitoring', publishOn: '2026-06-22' },
   { slug: 'anti-entropy-neural-architecture', publishOn: '2026-06-22' },
   { slug: 'biological-latency-optimizing-system-ping', publishOn: '2026-06-22' },
-  { slug: 'bohr-effect-oxygen-telemetry', publishOn: '2026-06-22' },
   { slug: 'cacao-stem-cells', publishOn: '2026-06-22' },
   { slug: 'circadian-lighting-dark-therapy', publishOn: '2026-06-22' },
   // Batch 2 — 2026-06-29
@@ -316,7 +315,6 @@ const RU_ARTICLE_ROLLOUT: ArticleRolloutEntry[] = [
   { slug: 'biological-latency-optimizing-system-ping', publishOn: '2026-09-28' },
   { slug: 'interoceptive-precision-sensor-calibration', publishOn: '2026-09-28' },
   { slug: 'breathwork-command-line-interface', publishOn: '2026-09-28' },
-  { slug: 'bohr-effect-oxygen-telemetry', publishOn: '2026-09-28' },
   { slug: 'anti-entropy-neural-architecture', publishOn: '2026-09-28' },
   { slug: 'rhythmic-entrainment-system-frequencies', publishOn: '2026-09-28' },
   // Sleep / circadian / stress-recovery / calm-focus pillars — RE-TRANSLATED

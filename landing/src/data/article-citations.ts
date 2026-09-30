@@ -123,6 +123,43 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.3389/fpsyg.2014.00756"
     }
   ],
+  "apple-watch-recovery-hrv-vs-overall-hrv": [
+    {
+      "title": "Heart rate variability: standards of measurement, physiological interpretation and clinical use",
+      "authors": "Task Force of the ESC and NASPE",
+      "year": 1996,
+      "journal": "Circulation",
+      "pmid": "8598068",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8598068/"
+    },
+    {
+      "title": "An Overview of Heart Rate Variability Metrics and Norms",
+      "authors": "Shaffer F, Ginsberg JP",
+      "year": 2017,
+      "journal": "Frontiers in Public Health",
+      "doi": "10.3389/fpubh.2017.00258",
+      "pmid": "29034226",
+      "url": "https://doi.org/10.3389/fpubh.2017.00258"
+    },
+    {
+      "title": "Training adaptation and heart rate variability in elite endurance athletes: opening the door to effective monitoring",
+      "authors": "Plews DJ et al.",
+      "year": 2013,
+      "journal": "Sports Medicine",
+      "doi": "10.1007/s40279-013-0071-8",
+      "pmid": "23852425",
+      "url": "https://doi.org/10.1007/s40279-013-0071-8"
+    },
+    {
+      "title": "A quantitative systematic review of normal values for short-term heart rate variability in healthy adults",
+      "authors": "Nunan D et al.",
+      "year": 2010,
+      "journal": "Pacing and Clinical Electrophysiology",
+      "doi": "10.1111/j.1540-8159.2010.02841.x",
+      "pmid": "20663071",
+      "url": "https://doi.org/10.1111/j.1540-8159.2010.02841.x"
+    }
+  ],
   "attention-trainable-skill-meditation": [
     {
       "title": "Long-term meditators self-induce high-amplitude gamma synchrony during mental practice",
@@ -172,17 +209,6 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.3389/fpsyt.2020.00467",
       "pmid": "32528330",
       "url": "https://doi.org/10.3389/fpsyt.2020.00467"
-    }
-  ],
-  "bohr-effect-oxygen-telemetry": [
-    {
-      "title": "The magnitude of the Bohr effect profoundly influences the shape and position of the blood oxygen equilibrium curve",
-      "authors": "Malte H et al.",
-      "year": 2021,
-      "journal": "Comp Biochem Physiol A Mol Integr Physiol",
-      "doi": "10.1016/j.cbpa.2020.110880",
-      "pmid": "33358924",
-      "url": "https://doi.org/10.1016/j.cbpa.2020.110880"
     }
   ],
   "box-breathing-how-it-works": [
@@ -456,6 +482,97 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1210/jc.2010-2098"
     }
   ],
+  "co2-tolerance-expanding-oxygen-limit": [
+    {
+      "title": "False suffocation alarms, spontaneous panics, and related conditions. An integrative hypothesis",
+      "authors": "Klein DF",
+      "year": 1993,
+      "journal": "Archives of General Psychiatry",
+      "doi": "10.1001/archpsyc.1993.01820160076009",
+      "pmid": "8466392",
+      "url": "https://doi.org/10.1001/archpsyc.1993.01820160076009"
+    },
+    {
+      "title": "Ventilatory responses to hypercapnia in divers and non-divers: effects of posture and immersion",
+      "authors": "Delapille P et al.",
+      "year": 2001,
+      "journal": "European Journal of Applied Physiology",
+      "doi": "10.1007/s004210100518",
+      "pmid": "11820330",
+      "url": "https://doi.org/10.1007/s004210100518"
+    },
+    {
+      "title": "The Buteyko breathing technique for asthma: a review",
+      "authors": "Bruton A, Lewith GT",
+      "year": 2005,
+      "journal": "Complementary Therapies in Medicine",
+      "doi": "10.1016/j.ctim.2005.01.003",
+      "pmid": "15907677",
+      "url": "https://doi.org/10.1016/j.ctim.2005.01.003"
+    },
+    {
+      "title": "A randomised controlled trial of the Buteyko technique as an adjunct to conventional management of asthma",
+      "authors": "Cowie RL et al.",
+      "year": 2008,
+      "journal": "Respiratory Medicine",
+      "doi": "10.1016/j.rmed.2007.12.012",
+      "pmid": "18249107",
+      "url": "https://doi.org/10.1016/j.rmed.2007.12.012"
+    },
+    {
+      "title": "Integration of cerebrovascular CO2 reactivity and chemoreflex control of breathing: mechanisms of regulation, measurement, and interpretation",
+      "authors": "Ainslie PN, Duffin J",
+      "year": 2009,
+      "journal": "American Journal of Physiology - Regulatory, Integrative and Comparative Physiology",
+      "doi": "10.1152/ajpregu.91008.2008",
+      "pmid": "19211719",
+      "url": "https://doi.org/10.1152/ajpregu.91008.2008"
+    },
+    {
+      "title": "The physiology and pathophysiology of human breath-hold diving",
+      "authors": "Lindholm P, Lundgren CE",
+      "year": 2009,
+      "journal": "Journal of Applied Physiology",
+      "doi": "10.1152/japplphysiol.90991.2008",
+      "pmid": "18974367",
+      "url": "https://doi.org/10.1152/japplphysiol.90991.2008"
+    },
+    {
+      "title": "Changes in respiration mediate changes in fear of bodily sensations in panic disorder",
+      "authors": "Meuret AE et al.",
+      "year": 2009,
+      "journal": "Journal of Psychiatric Research",
+      "doi": "10.1016/j.jpsychires.2008.08.003",
+      "pmid": "18835608",
+      "url": "https://doi.org/10.1016/j.jpsychires.2008.08.003"
+    },
+    {
+      "title": "Fatal and nonfatal drowning outcomes related to dangerous underwater breath-holding behaviors - New York State, 1988-2011",
+      "authors": "Boyd C et al.",
+      "year": 2015,
+      "journal": "MMWR Morbidity and Mortality Weekly Report",
+      "pmid": "25996093",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25996093/"
+    },
+    {
+      "title": "The magnitude of the Bohr effect profoundly influences the shape and position of the blood oxygen equilibrium curve",
+      "authors": "Malte H et al.",
+      "year": 2021,
+      "journal": "Comp Biochem Physiol A Mol Integr Physiol",
+      "doi": "10.1016/j.cbpa.2020.110880",
+      "pmid": "33358924",
+      "url": "https://doi.org/10.1016/j.cbpa.2020.110880"
+    },
+    {
+      "title": "Body Oxygen Level Test (BOLT) is not associated with exercise performance in highly-trained individuals",
+      "authors": "Kowalski T et al.",
+      "year": 2024,
+      "journal": "Frontiers in Physiology",
+      "doi": "10.3389/fphys.2024.1430837",
+      "pmid": "39290618",
+      "url": "https://doi.org/10.3389/fphys.2024.1430837"
+    }
+  ],
   "cognitive-architecture-neural-throughput": [
     {
       "title": "Action spectrum for melatonin regulation in humans: evidence for a novel circadian photoreceptor",
@@ -476,6 +593,34 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1016/j.jep.2013.11.008",
       "pmid": "24252493",
       "url": "https://doi.org/10.1016/j.jep.2013.11.008"
+    }
+  ],
+  "cognitive-shuffling": [
+    {
+      "title": "Towards an integrative design-oriented theory of sleep-onset and insomnolence from which a new cognitive treatment for insomnolence (serial diverse kinesthetic imagining, a form of cognitive shuffling) is proposed for experimentally testing this against alternatives",
+      "authors": "Beaudoin L et al.",
+      "year": 2019,
+      "journal": "Sleep Medicine (conference abstract, vol 64, S29)",
+      "doi": "10.1016/j.sleep.2019.11.081",
+      "url": "https://doi.org/10.1016/j.sleep.2019.11.081"
+    },
+    {
+      "title": "A cognitive model of insomnia",
+      "authors": "Harvey AG",
+      "year": 2002,
+      "journal": "Behaviour Research and Therapy",
+      "doi": "10.1016/s0005-7967(01)00061-4",
+      "pmid": "12186352",
+      "url": "https://doi.org/10.1016/s0005-7967(01)00061-4"
+    },
+    {
+      "title": "Management of Chronic Insomnia Disorder in Adults: A Clinical Practice Guideline From the American College of Physicians",
+      "authors": "Qaseem A et al.",
+      "year": 2016,
+      "journal": "Annals of Internal Medicine",
+      "doi": "10.7326/M15-2175",
+      "pmid": "27136449",
+      "url": "https://doi.org/10.7326/M15-2175"
     }
   ],
   "coherent-breathing-guide": [
@@ -664,6 +809,26 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1177/27536351241227261",
       "pmid": "38298551",
       "url": "https://doi.org/10.1177/27536351241227261"
+    }
+  ],
+  "eating-late-heart-rate-sleep": [
+    {
+      "title": "Effects of late-night eating of easily-or slowly-digestible meals on sleep, hypothalamo-pituitary-adrenal axis, and autonomic nervous system in healthy young males",
+      "authors": "Uçar C et al.",
+      "year": 2021,
+      "journal": "Stress and Health",
+      "doi": "10.1002/smi.3025",
+      "pmid": "33426778",
+      "url": "https://doi.org/10.1002/smi.3025"
+    },
+    {
+      "title": "Relationship between food intake and sleep pattern in healthy individuals",
+      "authors": "Crispim CA et al.",
+      "year": 2011,
+      "journal": "Journal of Clinical Sleep Medicine",
+      "doi": "10.5664/jcsm.1476",
+      "pmid": "22171206",
+      "url": "https://doi.org/10.5664/jcsm.1476"
     }
   ],
   "electric-medicine-neuromodulation": [
@@ -880,6 +1045,64 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.3389/fnhum.2018.00353",
       "pmid": "30245619",
       "url": "https://doi.org/10.3389/fnhum.2018.00353"
+    }
+  ],
+  "how-long-does-alcohol-stay-in-your-system": [
+    {
+      "title": "Evidence-based survey of the elimination rates of ethanol from blood with applications in forensic casework",
+      "authors": "Jones AW",
+      "year": 2010,
+      "journal": "Forensic Science International",
+      "doi": "10.1016/j.forsciint.2010.02.021",
+      "pmid": "20304569",
+      "url": "https://doi.org/10.1016/j.forsciint.2010.02.021"
+    },
+    {
+      "title": "Ethyl glucuronide",
+      "authors": "Walsham NE et al.",
+      "year": 2012,
+      "journal": "Annals of Clinical Biochemistry",
+      "doi": "10.1258/acb.2011.011115",
+      "pmid": "22113954",
+      "url": "https://doi.org/10.1258/acb.2011.011115"
+    },
+    {
+      "title": "Alcohol and sleep I: effects on normal sleep",
+      "authors": "Ebrahim IO et al.",
+      "year": 2013,
+      "journal": "Alcoholism: Clinical and Experimental Research",
+      "doi": "10.1111/acer.12006",
+      "pmid": "23347102",
+      "url": "https://doi.org/10.1111/acer.12006"
+    }
+  ],
+  "how-much-alcohol-lowers-hrv": [
+    {
+      "title": "Acute Effect of Alcohol Intake on Cardiovascular Autonomic Regulation During the First Hours of Sleep in a Large Real-World Sample of Finnish Employees: Observational Study",
+      "authors": "Pietilä J et al.",
+      "year": 2018,
+      "journal": "JMIR Mental Health",
+      "doi": "10.2196/mental.9519",
+      "pmid": "29549064",
+      "url": "https://doi.org/10.2196/mental.9519"
+    },
+    {
+      "title": "The Impact of Alcohol on Sleep Physiology: A Prospective Observational Study on Nocturnal Resting Heart Rate Using Smartwatch Technology",
+      "authors": "Strüven A et al.",
+      "year": 2025,
+      "journal": "Nutrients",
+      "doi": "10.3390/nu17091470",
+      "pmid": "40362779",
+      "url": "https://doi.org/10.3390/nu17091470"
+    },
+    {
+      "title": "Time Since Last Drink is Positively Associated with Heart Rate Variability in Outpatients with Alcohol Use Disorder",
+      "authors": "Eddie D et al.",
+      "year": 2023,
+      "journal": "Applied Psychophysiology and Biofeedback",
+      "doi": "10.1007/s10484-023-09597-z",
+      "pmid": "37436518",
+      "url": "https://doi.org/10.1007/s10484-023-09597-z"
     }
   ],
   "how-much-sleep-do-you-need": [

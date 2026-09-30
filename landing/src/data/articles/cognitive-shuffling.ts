@@ -65,7 +65,7 @@ This is **cognitive arousal** — the engine of most "I can't switch off" insomn
 
 Cognitive shuffling is a falling-asleep technique of deliberately imagining a series of random, unrelated, concrete objects. The technique was developed by cognitive scientist **Luc Beaudoin** at Simon Fraser University, who called it *serial diverse imagining* (SDI). The idea is deceptively simple: deliberately imagine a series of random, unrelated, concrete objects — \`mushroom\` … \`fence\` … \`telescope\` — holding each for a second before the next replaces it.
 
-Why random and *neutral*? Because that is almost exactly what your brain does on its own in the seconds before sleep. Researchers call those drifting, disconnected pre-sleep images **hypnagogia**. By manufacturing that state on purpose, you signal to the brain that it is safe to let go — while crowding out the coherent, emotionally loaded thinking that keeps you wired.
+Why random and *neutral*? Because it resembles the loose, drifting imagery of falling asleep. Researchers call those drifting, disconnected pre-sleep images **hypnagogia**. By manufacturing that state on purpose, you signal to the brain that it is safe to let go — while crowding out the coherent, emotionally loaded thinking that keeps you wired.
 
 It is the opposite of most sleep advice. Guided meditations, "sleep stories," and structured visualisations still demand focused attention and a narrative thread. That thread is the problem. Cognitive shuffling deliberately *breaks* the thread.
 
@@ -73,7 +73,7 @@ It is the opposite of most sleep advice. Guided meditations, "sleep stories," an
 
 ## Does it actually work?
 
-There is real, if early, evidence. In a randomised study, Nancy **Digdon** and Beaudoin had 154 students use the serial-diverse-imagining task at bedtime. The group practicing it reported **better sleep quality, less difficulty falling asleep, and lower pre-sleep arousal** — and the benefit held across the semester.
+There is real, if early, evidence. In early, conference-reported work by Nancy **Digdon** and Beaudoin, students used the serial-diverse-imagining task at bedtime. Those practicing it reported **better sleep quality, less difficulty falling asleep, and lower pre-sleep arousal**.
 
 The honest caveats: the research base is still small, mostly student samples, and reported largely through conference work rather than large clinical trials. So treat it as a promising, low-cost tool — not a cure for clinical insomnia. But unlike sleep medication, it is free, drug-free, and essentially risk-free to try tonight.
 
@@ -93,7 +93,7 @@ The catch is that *choosing* the words is itself a small cognitive task — whic
 
 Picking your own words keeps a sliver of your mind "on duty." To remove even that, use a tool that feeds you the words on a timer so you can stay completely passive.
 
-**→ [Try our free Cognitive Shuffle tool](/tools/cognitive-shuffle).** It shows (and optionally speaks) one neutral word every few seconds — the same ~8-second cadence Beaudoin's app uses — so all you do is lie there and picture each one. No account, no setup.
+**→ [Try our free Cognitive Shuffle tool](/tools/cognitive-shuffle).** It shows (and optionally speaks) one neutral word every few seconds — much like Beaudoin's app — so all you do is lie there and picture each one. No account, no setup.
 
 ---
 

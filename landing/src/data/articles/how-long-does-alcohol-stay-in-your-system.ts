@@ -32,13 +32,13 @@ const article: Article = {
   content: `
 ## [ TRACKING THE CLEARANCE ]
 
-> "‘How long does alcohol stay in your system?’ The blood answer is simpler than people hope: your liver clears alcohol at a roughly fixed rate — about one standard drink per hour — and almost nothing speeds that up. Coffee, a cold shower, a big meal, ‘sweating it out’ — none of them sober you faster; they just make a drunk person a more alert drunk person. In the ONDA Biocomputer model, alcohol is a slow-draining buffer: only time empties it."
+> "‘How long does alcohol stay in your system?’ The blood answer is simpler than people hope: your liver clears alcohol at about one standard drink per hour on average — faster in some people, slower in others — and nothing you do speeds that up. Coffee, a cold shower, a big meal, ‘sweating it out’ — none of them sober you faster; they just make a drunk person a more alert drunk person. In the ONDA Biocomputer model, alcohol is a slow-draining buffer: only time empties it."
 
 ---
 
 ## Section 1: How fast does alcohol leave your body?
 
-Once it’s in your blood, alcohol is eliminated at approximately **0.015% BAC per hour** — close to **one standard drink (14 g) per hour**. So a blood-alcohol level of 0.08% takes about five hours to reach zero; four or five drinks in an evening can mean alcohol in your system past 4–6 hours, sometimes into the next morning.
+Once it’s in your blood, alcohol is eliminated at approximately **0.015% BAC per hour** on average — close to **one standard drink (14 g) per hour**. The real range is roughly 0.010–0.035% per hour: it tends to be faster in people who have eaten and in heavy drinkers, but nothing you do (coffee, a cold shower) speeds it up. So a blood-alcohol level of 0.08% takes about five hours to reach zero; four or five drinks in an evening can mean alcohol in your system past 4–6 hours, sometimes into the next morning.
 
 The detectable *traces* linger far longer than the *impairing* level: alcohol shows in urine for up to ~12–24 hours, and in specialised tests (EtG) for days — but that’s detection, not intoxication. For how it actually clears from blood for your weight and drinks, use the [Alcohol Clearance Calculator](/tools/alcohol).
 
