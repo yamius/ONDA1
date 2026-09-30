@@ -169,9 +169,9 @@ export const PROTOCOL_TO_ARTICLE: Record<string, string> = {
   'hpa-micro-loading': 'hpa-axis-control-cortisol-aggression',
   'hpa-cognitive-reframing': 'hpa-axis-control-cortisol-aggression',
   // system-stability-serotonin
-  'serotonin-posture-patch': 'system-stability-serotonin',
-  'serotonin-solar-loading': 'system-stability-serotonin',
-  'serotonin-prebiotic-input': 'system-stability-serotonin',
+  'serotonin-daylight': 'system-stability-serotonin',
+  'serotonin-exercise': 'system-stability-serotonin',
+  'serotonin-supplement-check': 'system-stability-serotonin',
   // energy-sensor-leptin
   'leptin-sleep-duration': 'energy-sensor-leptin',
   'leptin-steady-loss': 'energy-sensor-leptin',

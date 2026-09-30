@@ -4388,7 +4388,7 @@ The **Enteric Nervous System** (ENS) is a complex network of over 100 million ne
 ## Key Mechanisms
 
 - **Gut-Brain Axis** — A constant bidirectional data exchange between the gut and the brain via the Vagus Nerve.
-- **Neurotransmitter Production** — Approximately 95% of the body's serotonin and 50% of its dopamine are produced in the gut, directly influencing emotional states and mental clarity.
+- **Neurotransmitter Production** — Most of the body's serotonin is produced in the gut, where it controls gut movement. Gut serotonin does not cross into the brain; the gut influences the brain indirectly, through the vagus nerve, immune signals and bacterial products.
 
 ## ONDA Protocol
 
@@ -4416,21 +4416,23 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     title: 'Serotonin',
     category: 'Biological Software',
     shortDescription:
-      'A neurotransmitter regulating mood, sleep, and appetite — 95% produced in the gut by the microbiome.',
+      'A chemical messenger that helps regulate mood, sleep, appetite and gut movement. Most is made in the gut, but gut serotonin does not reach the brain.',
     content: `
 
-**Serotonin** (5-HT) is a key neurotransmitter that regulates mood, sleep, appetite, and social behavior. Remarkably, approximately 95% of the body's serotonin is produced in the gut—not the brain—by enterochromaffin cells and influenced by the microbiome.
+**Serotonin** (5-HT) is a chemical messenger that works both in the brain and in the body. About 90 to 95% of the body's serotonin is made by enterochromaffin cells in the gut lining, where it controls gut movement; much of it is carried in blood platelets. Serotonin cannot cross the blood-brain barrier, so the brain makes its own from the amino acid tryptophan, in neurons of the brainstem raphe nuclei.
 
-## Key Functions
+## What does serotonin do?
 
-- **Mood regulation** — low serotonin linked to anxiety and depression
-- **Sleep** — precursor to melatonin
-- **Gut-brain axis** — gut-produced serotonin influences brain via the Vagus Nerve
-- **Appetite** — modulates satiety and food intake
+- **Mood and emotion** — shapes how we process emotional information, anxiety and impulse control
+- **Sleep** — the raw material for melatonin
+- **Appetite and pain** — helps regulate both
+- **Gut and blood** — controls gut movement and helps blood clot
 
-## In ONDA Life
+## Is low serotonin the cause of depression?
 
-A healthy microbiome and diverse fiber intake support serotonin production. The Gut-Brain Axis article covers protocols for optimizing your "Serotonin Factory."
+Not in a simple way. A 2022 umbrella review found no consistent evidence that depression is caused by low serotonin, although antidepressants that act on serotonin do work better than placebo on average. Blood and urine serotonin tests mostly reflect the gut and platelets, not the brain.
+
+Read more: [What does serotonin actually do?](/articles/system-stability-serotonin)
 `,
     relatedSlugs: ['microbiome', 'vagus-nerve', 'neurotransmitters', 'enteric-nervous-system'],
   },

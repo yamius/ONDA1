@@ -430,7 +430,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "molecular-psychology-hormonal-firmware": {
     "published": "2026-05-18T08:38:26+02:00",
-    "modified": "2026-09-30T11:32:45+02:00"
+    "modified": "2026-09-30T13:35:06+02:00"
   },
   "morita-therapy-tracking-paradox": {
     "published": "2026-09-24T12:08:14+02:00",
@@ -722,7 +722,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-30T11:32:45+02:00"
+    "modified": "2026-09-30T13:35:06+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -738,7 +738,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:molecular-psychology": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-30T11:28:32.000Z"
+    "modified": "2026-09-30T11:35:06.000Z"
   },
   "glossary:interoception": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1286,11 +1286,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:enteric-nervous-system": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T12:11:07.000Z"
   },
   "glossary:serotonin": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-09-30T12:11:07.000Z"
   },
   "glossary:microbiome": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T12:56:25+02:00"
+    "modified": "2026-09-30T13:35:06+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",

@@ -2733,13 +2733,116 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
   ],
   "system-stability-serotonin": [
     {
-      "title": "Indigenous bacteria from the gut microbiota regulate host serotonin biosynthesis",
+      "title": "The Serotonin Signaling System: From Basic Understanding To Drug Development for Functional GI Disorders",
+      "authors": "Gershon MD, Tack J",
+      "year": 2007,
+      "journal": "Gastroenterology",
+      "doi": "10.1053/j.gastro.2006.11.002",
+      "url": "https://doi.org/10.1053/j.gastro.2006.11.002"
+    },
+    {
+      "title": "Indigenous Bacteria from the Gut Microbiota Regulate Host Serotonin Biosynthesis",
       "authors": "Yano JM et al.",
       "year": 2015,
       "journal": "Cell",
       "doi": "10.1016/j.cell.2015.02.047",
-      "pmid": "25860609",
       "url": "https://doi.org/10.1016/j.cell.2015.02.047"
+    },
+    {
+      "title": "The Microbiota-Gut-Brain Axis",
+      "authors": "Cryan JF et al.",
+      "year": 2019,
+      "journal": "Physiological Reviews",
+      "doi": "10.1152/physrev.00018.2018",
+      "url": "https://doi.org/10.1152/physrev.00018.2018"
+    },
+    {
+      "title": "What has serotonin to do with depression?",
+      "authors": "Cowen PJ, Browning M",
+      "year": 2015,
+      "journal": "World Psychiatry",
+      "doi": "10.1002/wps.20229",
+      "url": "https://doi.org/10.1002/wps.20229"
+    },
+    {
+      "title": "Serotonin Modulates Behavioral Reactions to Unfairness",
+      "authors": "Crockett MJ et al.",
+      "year": 2008,
+      "journal": "Science",
+      "doi": "10.1126/science.1155577",
+      "url": "https://doi.org/10.1126/science.1155577"
+    },
+    {
+      "title": "The serotonin theory of depression: a systematic umbrella review of the evidence",
+      "authors": "Moncrieff J et al.",
+      "year": 2022,
+      "journal": "Molecular Psychiatry",
+      "doi": "10.1038/s41380-022-01661-0",
+      "url": "https://doi.org/10.1038/s41380-022-01661-0"
+    },
+    {
+      "title": "Comparative efficacy and acceptability of 21 antidepressant drugs for the acute treatment of adults with major depressive disorder: a systematic review and network meta-analysis",
+      "authors": "Cipriani A et al.",
+      "year": 2018,
+      "journal": "The Lancet",
+      "doi": "10.1016/S0140-6736(17)32802-7",
+      "url": "https://doi.org/10.1016/S0140-6736(17)32802-7"
+    },
+    {
+      "title": "Effect of sunlight and season on serotonin turnover in the brain",
+      "authors": "Lambert GW et al.",
+      "year": 2002,
+      "journal": "The Lancet",
+      "doi": "10.1016/S0140-6736(02)11737-5",
+      "url": "https://doi.org/10.1016/S0140-6736(02)11737-5"
+    },
+    {
+      "title": "The Efficacy of Light Therapy in the Treatment of Mood Disorders: A Review and Meta-Analysis of the Evidence",
+      "authors": "Golden RN et al.",
+      "year": 2005,
+      "journal": "American Journal of Psychiatry",
+      "doi": "10.1176/appi.ajp.162.4.656",
+      "url": "https://doi.org/10.1176/appi.ajp.162.4.656"
+    },
+    {
+      "title": "Brain Serotonin Content: Increase Following Ingestion of Carbohydrate Diet",
+      "authors": "Fernstrom JD, Wurtman RJ",
+      "year": 1971,
+      "journal": "Science",
+      "doi": "10.1126/science.174.4013.1023",
+      "url": "https://doi.org/10.1126/science.174.4013.1023"
+    },
+    {
+      "title": "Tryptophan and 5-Hydroxytryptophan for depression",
+      "authors": "Shaw K et al.",
+      "year": 2002,
+      "journal": "Cochrane Database of Systematic Reviews",
+      "doi": "10.1002/14651858.CD003198",
+      "url": "https://doi.org/10.1002/14651858.CD003198"
+    },
+    {
+      "title": "The Serotonin Syndrome",
+      "authors": "Boyer EW, Shannon M",
+      "year": 2005,
+      "journal": "New England Journal of Medicine",
+      "doi": "10.1056/NEJMra041867",
+      "url": "https://doi.org/10.1056/NEJMra041867"
+    },
+    {
+      "title": "Assessing the Robustness of Power Posing",
+      "authors": "Ranehill E et al.",
+      "year": 2015,
+      "journal": "Psychological Science",
+      "doi": "10.1177/0956797614553946",
+      "url": "https://doi.org/10.1177/0956797614553946"
+    },
+    {
+      "title": "Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials",
+      "authors": "Noetel M et al.",
+      "year": 2024,
+      "journal": "BMJ",
+      "doi": "10.1136/bmj-2023-075847",
+      "url": "https://doi.org/10.1136/bmj-2023-075847"
     }
   ],
   "talk-to-your-doctor-about-wearable-data": [

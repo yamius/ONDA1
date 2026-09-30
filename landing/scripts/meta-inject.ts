@@ -363,7 +363,7 @@ const ARTICLE_SEO_DESCRIPTIONS: Record<string, string> = {
   'hpa-axis-control-cortisol-aggression':
     'Master your stress architecture. Learn how to manage the HPA axis, cortisol spikes, and reactive aggression using ONDA neuro-protocols.',
   'system-stability-serotonin':
-    'Learn how to calibrate your inner status and cognitive calm. Explore the link between posture, gut health, and serotonin production.',
+    'Serotonin helps regulate mood, sleep, appetite and the gut. Gut serotonin does not reach the brain. What the evidence shows about light, food, exercise and pills.',
   'energy-sensor-leptin':
     'Leptin tells your brain how much fat you store. Why high leptin does not stop hunger, why dieting lowers it, how short sleep cuts it, and what actually helps.',
   'neural-optimizer-estrogen':
@@ -2692,15 +2692,15 @@ export function getMetaForRoute(route: string): RouteMeta {
                       : slug === 'system-stability-serotonin'
                         ? {
                             keywords: [
-                              'Serotonin',
-                              'Gut-Brain Axis',
-                              'Posture',
-                              'Biohacking Confidence',
-                              'Tryptophan',
-                              'Social Status',
-                              'ONDA Protocol',
+                              'What Does Serotonin Do',
+                              'Serotonin Gut Brain',
+                              'How to Increase Serotonin Naturally',
+                              'Low Serotonin Depression',
+                              'Sunlight and Serotonin',
+                              'Tryptophan and 5-HTP',
+                              'Serotonin Syndrome',
                             ],
-                            audience: 'Biohackers, High-Performers, Mood Optimization',
+                            audience: 'General Public, People Interested in Mood and Mental Health',
                             proficiencyLevel: 'Intermediate',
                           }
                         : slug === 'energy-sensor-leptin'

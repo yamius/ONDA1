@@ -624,21 +624,26 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Senolytic dosing is still an emerging research area. Agents such as quercetin, fisetin and dasatinib are under active study, and protocols, doses and long-term safety are not settled. This is firmly a topic to approach with medical supervision, not self-experimentation.",
     },
   ],
-  "system-stability-serotonin": [
+  'system-stability-serotonin': [
     {
-      question: "How do I raise serotonin naturally?",
+      question: 'What does serotonin do?',
       answer:
-        "Three reliable levers: morning sunlight exposure as a photic trigger, a healthy gut \u2014 since most serotonin precursor activity happens there \u2014 supported by prebiotic fibre, and upright, open posture, which feeds the sense of stable status that underlies serotonin balance.",
+        'Serotonin is a chemical messenger that helps regulate mood, anxiety, sleep, appetite, pain and impulse control in the brain. In the body it controls gut movement and helps blood clot. It is also the raw material for melatonin. It is not a simple "happiness chemical": it works together with many other signals.',
     },
     {
-      question: "Is most serotonin made in the gut?",
+      question: 'Is 90% of serotonin made in the gut?',
       answer:
-        "Yes \u2014 roughly 90% of the body\u2019s serotonin is produced in the gut, not the brain. This is why gut health and microbiome quality have a direct line to mood stability, and why the article treats the gut as the \"serotonin server\".",
+        'Yes, about 90 to 95% of the body’s serotonin is made by cells in the gut lining. But gut serotonin cannot cross the blood-brain barrier, so it does not reach the brain. The brain makes its own serotonin from tryptophan. The gut and brain do communicate through the vagus nerve, immune signals and bacterial products, but mostly in animal studies so far.',
     },
     {
-      question: "How does posture affect mood?",
+      question: 'How can I increase serotonin naturally?',
       answer:
-        "Posture is a two-way signal. Upright, expanded posture feeds back to the nervous system as a cue of stable status and safety, supporting serotonin balance and calm confidence \u2014 while a chronically collapsed posture reinforces the opposite state.",
+        'The best-supported options are daylight, especially in the morning, and regular exercise. Brain serotonin turnover rises with bright sunlight, and exercise is an effective treatment for depression. Food has only a small effect in people. Never look directly at the sun, and check with a doctor before taking tryptophan or 5-HTP.',
+    },
+    {
+      question: 'Is depression caused by low serotonin?',
+      answer:
+        'The simple low-serotonin explanation is not well supported: a 2022 umbrella review found no consistent evidence for it. Depression has many causes. Antidepressants still work better than placebo on average, so never stop one on your own; plan any change with your doctor.',
     },
   ],
   'molecular-psychology-hormonal-firmware': [

@@ -50,7 +50,7 @@ Your gut-brain axis is online. The bidirectional communication between your micr
 
 ## Section 1: How much of your serotonin is made in the gut?
 
-About 95% of your serotonin is manufactured in your gut, even though your brain uses this critical neurotransmitter to regulate mood. Your microbiome acts as a chemical plant, producing the raw data packets that determine your level of happiness and calm. If the production line is compromised by a poor diet, your brain effectively runs out of 'System Stability' tokens, leading to anxiety and depressive states.
+About 95% of your body’s serotonin is made in your gut, where it controls gut movement. But gut serotonin cannot cross the blood-brain barrier: the brain makes its own. The gut influences mood indirectly — through the vagus nerve, immune signals and substances made by gut bacteria — and most of that evidence still comes from animal studies. See [what serotonin actually does](/articles/system-stability-serotonin).
 
 ---
 
