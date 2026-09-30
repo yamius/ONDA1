@@ -37,7 +37,7 @@ const omniluxContourFace: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Omnilux product documentation, FDA Class II registration data and the published peer-reviewed dermatology literature on the Contour Face device. Not hands-on tested by ONDA.',
-  price: { usd: 395, note: 'Contour Face; neck flap sold separately', asOf: '2026-05-28' },
+  price: { usd: 395, note: 'Contour Face; neck flap sold separately', asOf: '2026-09-30' },
   link: 'https://omniluxled.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -72,7 +72,7 @@ Choose Omnilux Contour Face if you want the FDA-cleared dermatology reference wi
     { q: "Omnilux Contour Face vs Lumara Viso: which is better?", a: "Omnilux is better for clinical evidence, with FDA Class II clearance and device-specific peer-reviewed studies. The Lumara Viso offers more LEDs, three wavelengths and an included neck flap, but has a lighter evidence moat and costs more at $650." },
   ],
   datePublished: '2026-07-06',
-  dateModified: '2026-07-06',
+  dateModified: '2026-09-30',
 }
 
 export default omniluxContourFace

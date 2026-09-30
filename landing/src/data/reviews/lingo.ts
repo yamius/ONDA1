@@ -11,15 +11,15 @@ const lingo: ToolReview = {
   verdict:
     'Abbott’s Libre hardware sold without a prescription — the simplest entry into CGM at the lowest single-sensor price.',
   summary:
-    'Lingo is Abbott’s direct-to-consumer CGM, sold over the counter (no prescription) with Libre 3 hardware and an app aimed at metabolic-health beginners. Two-week sensors at roughly $49 each, no subscription required. The app focuses on a single “Lingo Count” metric per meal rather than the deep analytics of Levels. The right entry point if cost and simplicity matter more than insight depth.',
+    'Lingo is Abbott’s direct-to-consumer CGM, sold over the counter (no prescription) with Libre 3 hardware and an app aimed at metabolic-health beginners. Two-week sensors at $54 each, no subscription required. The app focuses on a single “Lingo Count” metric per meal rather than the deep analytics of Levels. The right entry point if cost and simplicity matter more than insight depth.',
   overallScore: 7.2,
   scores: [
     { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott Libre 3 — MARD ~9%, 14-day wear, calibration-free, 60-minute warm-up. Marginally less accurate than Dexcom G7 in independent comparison.' },
     { criterionId: 'insights', score: 7.0, note: 'Built around a single per-meal “Lingo Count” spike score. Simpler than Levels — easier for beginners, frustrating for advanced users.' },
     { criterionId: 'coaching', score: 5.0, note: 'Minimal — in-app guidance only, no coach. Abbott bet on simplicity over coaching.' },
     { criterionId: 'app-integration', score: 7.5, note: 'Clean iOS/Android app with Apple Health and Google Fit support. Limited third-party connectors compared with Levels.' },
-    { criterionId: 'flexibility', score: 8.5, note: 'No subscription required — buy single 2-week sensors as needed at $49 each, or a 4-pack at $89. The most flexible commercial CGM in this list.' },
-    { criterionId: 'value', score: 9.0, note: '$49 per 2-week sensor (~$98/month) or $89 for 4 sensors on subscription (~$22/month effective). The cheapest legitimate CGM access in the US.' },
+    { criterionId: 'flexibility', score: 8.5, note: 'No subscription required — buy single 2-week sensors as needed at $54 each, or multi-sensor plans. The most flexible commercial CGM in this list.' },
+    { criterionId: 'value', score: 9.0, note: '$54 per 2-week sensor with no commitment; multi-sensor and subscription plans lower the per-sensor cost. Among the cheapest legitimate CGM access in the US.' },
   ],
   pros: [
     'No prescription, no subscription — buy single sensors as you need them',
@@ -37,12 +37,12 @@ const lingo: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Abbott Lingo product documentation, Libre 3 validation literature and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 49, note: '$49 per 2-week sensor, or $89 for 4 (~$22/mo effective)', asOf: '2026-05-21' },
+  price: { usd: 54, note: '$54 for a 2-week plan (1 sensor, no auto-renew); multi-sensor/subscription plans cost less per sensor', asOf: '2026-09-30' },
   link: 'https://www.hellolingo.com/',
   linkType: 'official',
   content: `## Where it leads
 
-Lingo is the cheapest legitimate path into CGM for a US non-diabetic. Abbott’s Libre 3 sensor — the same reliable 14-day platform used by Ultrahuman M1, Veri and Hello Inside — sold OTC without a prescription, with no subscription requirement. A single sensor is $49; a four-pack drops the effective monthly cost to about $22. The app is deliberately simple: a per-meal “Lingo Count” spike score rather than a deep analytics suite. For a first-time CGM user who wants to experiment without committing to a $200-a-month programme, that simplicity is the value.
+Lingo is the cheapest legitimate path into CGM for a US non-diabetic. Abbott’s Libre 3 sensor — the same reliable 14-day platform used by Ultrahuman M1, Veri and Hello Inside — sold OTC without a prescription, with no subscription requirement. A single two-week sensor is $54 with no commitment; multi-sensor and subscription plans bring the per-sensor cost down. The app is deliberately simple: a per-meal “Lingo Count” spike score rather than a deep analytics suite. For a first-time CGM user who wants to experiment without committing to a $200-a-month programme, that simplicity is the value.
 
 ## What are the downsides of the Lingo?
 
@@ -69,11 +69,11 @@ The metabolic biology these programmes surface — and the protocols the data un
   relatedSlugs: ['stelo', 'levels', 'ultrahuman-m1'],
   faq: [
     { q: "Do you need a prescription for Lingo?", a: "No. Lingo is Abbott's over-the-counter CGM, sold without a prescription or subscription. It uses Libre 3 hardware with reliable, calibration-free 14-day wear, and you simply buy sensors as you need them. It is the cheapest legitimate consumer CGM access in the US." },
-    { q: "How much does Lingo cost?", a: "Lingo costs $49 per two-week sensor, with a cheaper four-pack option. No subscription is required: you can buy single sensors as you need them. That makes it the lowest-cost entry into continuous glucose monitoring for a US non-diabetic." },
-    { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics and the more accurate Dexcom G7, at around $199 a month. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
+    { q: "How much does Lingo cost?", a: "Lingo costs $54 for a two-week plan (one sensor, no auto-renew), with multi-sensor and subscription plans that cost less per sensor. No subscription is required: you can buy single sensors as you need them. That makes it the lowest-cost entry into continuous glucose monitoring for a US non-diabetic." },
+    { q: "Lingo vs Levels: which is better?", a: "Lingo is cheaper and simpler: no subscription, and one Lingo Count score per meal. Levels offers far deeper analytics and the more accurate Dexcom G7, as a membership from about $80 a year (app-only) to $1,329 a year. Neither includes a human coach. Choose Lingo if cost and simplicity matter more than insight depth." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-30',
 }
 
 export default lingo

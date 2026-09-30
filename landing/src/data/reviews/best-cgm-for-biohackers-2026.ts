@@ -61,11 +61,11 @@ const bestCgmForBiohackers2026: Comparison = {
     },
   ],
   verdict:
-    'Hardware splits the field into two camps and almost nothing else does. Eight of these ten programmes are software and coaching wrappers around either Abbott Libre 3 or Dexcom G7 — so the right buying question is not which sensor, it is which wrapper. Levels wins overall on insight depth, on the most accurate sensor (Dexcom G7), at the highest price. Nutrisense delivers a registered dietitian on the same sensor for slightly more. Stelo is the same Dexcom G7 hardware at roughly a third of the long-term cost, with a simpler insight engine. Zoe is the only programme treating CGM as part of a wider biomarker fusion. Ultrahuman M1 is the right pick if you already own (or plan to own) the Ultrahuman Ring Air. Signos is the AI-driven weight-loss specialist; Veri is the EU equivalent of Levels; Lingo is the cheapest legitimate entry; Hello Inside fits German-speaking users; Supersapiens is for EU endurance athletes. Pick the wrapper that matches your goal, not the brand that markets hardest.',
+    'Hardware splits the field into two camps and almost nothing else does. Eight of these ten programmes are software and coaching wrappers around either Abbott Libre 3 or Dexcom G7 — so the right buying question is not which sensor, it is which wrapper. Levels wins overall on insight depth, on the most accurate sensor (Dexcom G7), now sold as tiered memberships ($80–$1,329 a year) that include only one to two months of CGM. Nutrisense delivers a registered dietitian on the same sensor for slightly more. Stelo is the same Dexcom G7 hardware at roughly a third of the long-term cost, with a simpler insight engine. Zoe is the only programme treating CGM as part of a wider biomarker fusion. Ultrahuman M1 is the right pick if you already own (or plan to own) the Ultrahuman Ring Air. Signos is the AI-driven weight-loss specialist; Veri is the EU equivalent of Levels; Lingo is the cheapest legitimate entry; Hello Inside fits German-speaking users; Supersapiens is for EU endurance athletes. Pick the wrapper that matches your goal, not the brand that markets hardest.',
   faq: [
     {
       q: 'What is the best CGM for biohackers in 2026?',
-      a: 'For the deepest insight engine and the most accurate sensor, Levels — on Dexcom G7, at $199 a month. For the same sensor at a third of the long-term cost, Dexcom Stelo. For a registered dietitian alongside the data, Nutrisense. For multi-biomarker personalised nutrition, Zoe. The right pick depends on what trade-off matters most to you.',
+      a: 'For the deepest insight engine and the most accurate sensor, Levels — on Dexcom G7, as a membership from $80 a year (app-only) to $399–$1,329 a year with one to two months of CGM included. For the same sensor at a third of the long-term cost, Dexcom Stelo. For a registered dietitian alongside the data, Nutrisense. For multi-biomarker personalised nutrition, Zoe. The right pick depends on what trade-off matters most to you.',
     },
     {
       q: 'Do I need a prescription for a CGM in 2026?',
@@ -81,7 +81,7 @@ const bestCgmForBiohackers2026: Comparison = {
     },
     {
       q: 'Which CGM programme is the cheapest in 2026?',
-      a: 'Abbott Lingo at $49 per 2-week sensor, or $89 for a 4-pack (~$22/month effective). Dexcom Stelo is $99/month for two sensors. Both are OTC and require no subscription beyond the sensors themselves. Coached programmes — Levels, Nutrisense, Signos, Veri — run from $140 to $310 a month.',
+      a: 'Abbott Lingo at $54 per 2-week sensor, with multi-sensor plans lowering the per-sensor cost. Dexcom Stelo is $99 for two sensors (~30 days), or $89/month on subscription. Both are OTC and require no subscription beyond the sensors themselves. Coached programmes — Nutrisense, Signos, Veri — run from about $140 to $310 a month; Levels now sells annual memberships ($399–$1,329 a year) with only one to two months of CGM included.',
     },
     {
       q: 'Which CGM programme works best with Oura or Whoop?',
@@ -100,13 +100,13 @@ The market is hardware-converged and software-divergent. Two sensors carry the e
 
 Two clean breakpoints in the price ladder:
 
-**Premium coaching tier ($140–$310/month):** Levels, Nutrisense, Signos. Deepest insights, best app design, most expensive. Right pick if CGM is a serious tool, not an experiment.
+**Premium programme tier ($140–$310/month, or Levels at $399–$1,329/year):** Levels, Nutrisense, Signos. Deepest insights, best app design, most expensive. Right pick if CGM is a serious tool, not an experiment.
 
-**OTC value tier ($22–$100/month):** Lingo, Stelo. No prescription, no subscription required. Same underlying sensors, simpler apps. Right pick if you want to find out whether CGM changes anything for you before committing.
+**OTC value tier (~$90–$115/month worn continuously):** Lingo, Stelo. No prescription, no subscription required. Same underlying sensors, simpler apps. Right pick if you want to find out whether CGM changes anything for you before committing.
 
 Around those two breakpoints the rest of the field carves out specific use cases — Zoe for multi-biomarker personalisation, Ultrahuman M1 for ring-ecosystem integration, Veri and Hello Inside for EU users, Supersapiens for endurance athletes. The category is small enough that the ten programmes here are effectively the universe; the right answer is which use case fits you.`,
   datePublished: '2026-05-21',
-  dateModified: '2026-09-17',
+  dateModified: '2026-09-30',
 }
 
 export default bestCgmForBiohackers2026

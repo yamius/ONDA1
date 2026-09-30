@@ -17,7 +17,7 @@ const bestSmartSleepClimate2026: Comparison = {
     {
       reviewSlug: 'eight-sleep-pod-5',
       award: 'Best premium (maximal system)',
-      takeaway: 'The Pod 5 Ultra adds an adjustable base, a top-down hydro blanket, audio and snore mitigation — but at ~$6,099 the core climate/HRV tech is shared with the cheaper Pod 4.',
+      takeaway: 'The Pod 5 Ultra adds an adjustable base, a top-down hydro blanket, audio and snore mitigation — but at ~$6,099 the core climate/HRV tech is shared with the cheaper Pod 4. Replaced by the Pod 6 (from $1,999) in September 2026.',
     },
     {
       reviewSlug: 'eight-sleep-pod-cover-pro',
@@ -93,7 +93,9 @@ const bestSmartSleepClimate2026: Comparison = {
       a: 'BedJet 3 cools effectively in mild to moderate climates. In peak summer heat with high humidity, water-cooled systems (Eight Sleep, ChiliPad) cool noticeably more aggressively. For temperate-climate users, air-flow is enough.',
     },
   ],
-  content: `## How we ranked them
+  content: `> Update (September 2026): Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen dual-zone). Pod 5 prices below are its last list prices — compare any remaining Pod 5 stock against Pod 6 pricing.
+
+## How we ranked them
 
 Every system was scored against ONDA's published [review methodology](/reviews/methodology): six weighted criteria, with climate range and value carrying the most weight because they drive both daily-use experience and 3-year ownership economics.
 
@@ -112,7 +114,7 @@ Three buying questions resolve the category cleanly:
 Eight Sleep dominates the integrated-tracking premium tier; Sleepme dominates the subscription-free water-cooled tier; BedJet owns the air-flow niche. Below those, smart-bed and passive alternatives serve users not committing to active hardware.`,
   publishOn: '2026-06-15',
   datePublished: '2026-06-15',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default bestSmartSleepClimate2026

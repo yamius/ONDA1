@@ -37,7 +37,7 @@ const stelo: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Dexcom Stelo product documentation, Dexcom G7 validation literature and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 99, note: '$99 for 2 sensors (~30 days), $89/mo on subscription; no Rx', asOf: '2026-05-21' },
+  price: { usd: 99, note: '$99 for 2 sensors (~30 days), $89/mo on subscription; no Rx', asOf: '2026-09-30' },
   link: 'https://www.stelo.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -74,7 +74,7 @@ The metabolic biology these programmes surface — and the protocols the data un
     { q: "What are the downsides of Stelo?", a: "Stelo's insight engine is simpler than Levels, with no food-by-food ranking history. There is no human coach, only app guidance, it ships US-only through Dexcom, and third-party app integration is limited compared with Levels." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-30',
 }
 
 export default stelo

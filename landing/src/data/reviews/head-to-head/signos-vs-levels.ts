@@ -24,7 +24,7 @@ const signosVsLevels: HeadToHead = {
     { name: 'Content library', winner: 'b', note: 'Levels has a substantial editorial library backed by its medical advisory board. Signos leans on the AI nudges instead.' },
     { name: 'Behavioural directiveness', winner: 'a', note: 'Signos is the most directly behavioural programme in the category — it tells you what to do in the moment. Levels surfaces the data and trusts you to interpret it.' },
     { name: 'Weight-loss outcome data', winner: 'a', note: 'Signos publishes company outcome data for weight-loss specifically. Levels does not market a weight-loss outcome at all.' },
-    { name: 'Price', winner: 'a', note: 'Signos: $140–$160/month. Levels: $199/month. Signos is meaningfully cheaper.' },
+    { name: 'Price', winner: 'tie', note: 'Signos: $140–$160/month with continuous sensors. Levels: $399–$1,329/year membership with 1–2 months of CGM included; extra CGM is an add-on. Levels is cheaper for occasional CGM blocks; Signos is simpler for continuous wear.' },
   ],
   faq: [
     {
@@ -41,7 +41,7 @@ const signosVsLevels: HeadToHead = {
     },
     {
       q: 'Is Signos cheaper than Levels?',
-      a: 'Yes — Signos is $140–$160/month versus Levels at $199. Both include Dexcom G7 sensors. Over a year the difference is roughly $500.',
+      a: 'Not on the headline price any more. Signos is $140–$160/month with continuous sensors; Levels now sells annual memberships ($399 Core with one month of CGM, $1,329 Complete with two months) and charges extra for more CGM. For occasional CGM blocks Levels is cheaper; for continuous wear the gap narrows.',
     },
   ],
   content: `## The short version
@@ -57,7 +57,7 @@ If weight loss is the explicit reason you are wearing a CGM and you respond well
 If you treat CGM as a general-purpose self-experimentation instrument — running fasting protocols, tracking time-in-range as a metric, iterating on food curves week by week without a weight-loss frame — Levels is the right shape. The deeper insight engine and the broader content library are what the premium pays for.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-30',
 }
 
 export default signosVsLevels

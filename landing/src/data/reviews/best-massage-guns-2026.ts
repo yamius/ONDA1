@@ -42,7 +42,7 @@ const bestMassageGuns2026: Comparison = {
     {
       reviewSlug: 'ekrin-b37',
       award: 'Best warranty',
-      takeaway: 'Only lifetime warranty in category at $229 with 56 lbs stall force.',
+      takeaway: 'Only lifetime warranty in category at $249.99 with 56 lbs stall force.',
     },
     {
       reviewSlug: 'hypervolt-go-2',
@@ -107,12 +107,12 @@ Three buying questions resolve the category cleanly:
 
 **Full size or travel mini?** Full size: Theragun PRO Plus, Hypervolt 2 Pro, Theragun Elite, Achedaway Pro, OPOVE, Ekrin, Renpho, TOLOCO. Mini: Hypervolt Go 2 (premium), Bob and Brad Q2 Mini (budget).
 
-**What budget tier?** Under $100: TOLOCO ($69), Bob and Brad Q2 Mini ($99), Renpho R3 ($99). $100–$250: Hypervolt Go 2 ($129), OPOVE M3 Pro 2 ($179), Ekrin B37 ($229). $300–$400: Achedaway Pro ($349), Theragun Elite ($399), Hypervolt 2 Pro ($399). $500+: Theragun PRO Plus ($599).
+**What budget tier?** Under $100: TOLOCO ($69), Bob and Brad Q2 Mini ($99), Renpho R3 ($99). $100–$250: Hypervolt Go 2 ($129), OPOVE M3 Pro 2 ($179), Ekrin B37 ($249.99). $300–$400: Achedaway Pro ($349), Theragun Elite ($399), Hypervolt 2 Pro ($399). $500+: Theragun PRO Plus ($599).
 
 Theragun PRO Plus dominates the spec-ceiling tier; Hypervolt 2 Pro is the rational premium alternative; Achedaway Pro owns the spec-maximalist sub-premium niche; Bob and Brad / Renpho cover the credible budget tier.`,
   publishOn: '2026-07-20',
   datePublished: '2026-07-20',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default bestMassageGuns2026

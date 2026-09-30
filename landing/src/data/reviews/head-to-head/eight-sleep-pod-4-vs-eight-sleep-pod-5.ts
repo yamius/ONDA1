@@ -38,7 +38,9 @@ const pod4VsPod5: HeadToHead = {
       a: 'Yes. It shares the core temperature tech, HRV tracking and the new Autopilot 4.0 software with the Pod 5, at less than half the Ultra’s price. Unless you specifically want the base and top-down climate, it is the value pick.',
     },
   ],
-  content: `## The short version
+  content: `> Update (September 2026): Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen dual-zone). Pod 5 prices below are its last list prices — compare any remaining Pod 5 stock against Pod 6 pricing.
+
+## The short version
 
 The [Pod 5 Ultra](/reviews/eight-sleep-pod-5) is the fuller, pricier system; the [Pod 4](/reviews/eight-sleep-pod-4) is the value. The core sleep-climate tech and the new Autopilot 4.0 software are shared, so the upgrade question is really about the full-bed extras.
 
@@ -56,7 +58,7 @@ The Autopilot subscription applies to both. For the wider field of climate syste
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default pod4VsPod5

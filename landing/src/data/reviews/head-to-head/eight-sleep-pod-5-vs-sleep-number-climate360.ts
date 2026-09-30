@@ -38,7 +38,9 @@ const pod5VsClimate360: HeadToHead = {
       a: 'Eight Sleep, for HRV and recovery depth. Sleep Number’s SleepIQ is mature and dependable but more consumer-grade — good for trends, less focused on recovery metrics than the Pod’s.',
     },
   ],
-  content: `## The short version
+  content: `> Update (September 2026): Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen dual-zone). Pod 5 prices below are its last list prices — compare any remaining Pod 5 stock against Pod 6 pricing.
+
+## The short version
 
 Two premium smart beds, two philosophies. The [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is the biohacker climate-and-tracking layer — aggressive dual-zone cooling, deep HRV, adaptive Autopilot — added to your bed, with a subscription. The [Sleep Number Climate360](/reviews/sleep-number-climate360) is a mainstream all-in-one smart bed with adjustable firmness and climate built into the mattress, and mature SleepIQ tracking.
 
@@ -56,7 +58,7 @@ For the subscription-free climate-only route, see [Pod 5 vs ChiliPad Dock Pro](/
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default pod5VsClimate360

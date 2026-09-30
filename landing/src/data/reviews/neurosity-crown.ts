@@ -20,7 +20,7 @@ const neurosityCrown: ToolReview = {
     { criterionId: 'comfort', score: 7.5, note: 'A rigid crown — comfortable for focus sessions, not designed for overnight wear or moving sessions.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Neurosity Console and Shift apps. Polished, but the UX assumes a more technical user than Muse.' },
     { criterionId: 'open-data', score: 9.5, note: 'The most open SDK in this category — JavaScript, Python and Swift APIs, raw-EEG access, no subscription required for data. Developer-first by design.' },
-    { criterionId: 'value', score: 6.5, note: '$1,399 hardware, no mandatory subscription. Premium pricing — three times the cost of Muse S Athena.' },
+    { criterionId: 'value', score: 6.5, note: '$1,499 hardware, no mandatory subscription. Premium pricing — three times the cost of Muse S Athena.' },
   ],
   pros: [
     'The most open SDK in the consumer EEG market — raw data via JavaScript, Python or Swift',
@@ -38,7 +38,7 @@ const neurosityCrown: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Neurosity product documentation, the published Neurosity SDK reference and independent 2026 developer reviews. Not hands-on tested by ONDA.',
-  price: { usd: 1399, note: 'one-time; no subscription required for SDK or raw data', asOf: '2026-05-21' },
+  price: { usd: 1499, note: 'one-time; includes lifetime software access, no subscription required for SDK or raw data', asOf: '2026-09-30' },
   link: 'https://neurosity.co/crown',
   linkType: 'official',
   content: `## Where it leads
@@ -70,12 +70,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
   relatedSlugs: ['muse-s-athena', 'emotiv-insight-2', 'muse-2'],
   faq: [
     { q: "Is the Neurosity Crown worth it?", a: "The Neurosity Crown is worth it for developers, researchers and biohackers who want raw EEG data. It has the most open SDK in consumer EEG, with JavaScript, Python and Swift access, eight dry electrodes, and adaptive focus music. Meditators wanting guided content will find it lacking." },
-    { q: "How much does the Neurosity Crown cost?", a: "The Neurosity Crown is listed at $1,399 one-time, with no subscription required for the SDK or raw data. That is about three times the cost of the Muse S Athena. That price includes eight dry EEG electrodes and adaptive focus-music streaming." },
+    { q: "How much does the Neurosity Crown cost?", a: "The Neurosity Crown is listed at $1,499 one-time, including lifetime software access,, with no subscription required for the SDK or raw data. That is about three times the cost of the Muse S Athena. That price includes eight dry EEG electrodes and adaptive focus-music streaming." },
     { q: "What are the downsides of the Neurosity Crown?", a: "The Crown's premium price is about three times the Muse S Athena, it has no deep meditation content library, its rigid crown is not comfortable for overnight wear, and its UX assumes a more technical user than consumer meditation alternatives." },
     { q: "Neurosity Crown vs Muse S Athena: which is better?", a: "Pick the Neurosity Crown for raw data, an open SDK and the widest cortical coverage from eight electrodes. Pick the Muse S Athena for guided brain-training content, sleep tracking and overnight comfort, at roughly a third of the Crown's price." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-30',
 }
 
 export default neurosityCrown

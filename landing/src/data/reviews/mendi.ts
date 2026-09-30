@@ -20,7 +20,7 @@ const mendi: ToolReview = {
     { criterionId: 'comfort', score: 8.0, note: 'Simple forehead band — comfortable for 10–15 minute sessions, easy to put on and remove.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Polished iOS/Android app with clean game-driven session flow.' },
     { criterionId: 'open-data', score: 5.0, note: 'Closed system — no raw data export or SDK. Not a developer platform.' },
-    { criterionId: 'value', score: 7.5, note: '$299 hardware, no subscription required. Cheaper than Muse S Athena, more expensive than Muse 2.' },
+    { criterionId: 'value', score: 7.5, note: '$379 list (frequently on sale), no subscription required. Cheaper than Muse S Athena, more expensive than Muse 2.' },
   ],
   pros: [
     'Game-based neurofeedback — easiest learning curve in the category',
@@ -38,7 +38,7 @@ const mendi: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Mendi product documentation, the published fNIRS neurofeedback literature and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 299, note: 'one-time; no subscription', asOf: '2026-05-21' },
+  price: { usd: 379, note: 'one-time list price, often discounted (about $284 in a Sept 2026 sale); no subscription', asOf: '2026-09-30' },
   link: 'https://www.mendi.io/',
   linkType: 'official',
   content: `## Where it leads
@@ -70,12 +70,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
   relatedSlugs: ['muse-s-athena', 'focuscalm', 'sens-ai'],
   faq: [
     { q: "Is Mendi worth it?", a: "Mendi is worth it if you want the simplest neurofeedback experience focused on prefrontal attention training. Its game-based format has the easiest learning curve in the category, it uses a comfortable single forehead band, and there is no subscription. It does not include a meditation library or sleep tracking." },
-    { q: "How much does Mendi cost?", a: "Mendi is listed at $299 as a one-time purchase, with no subscription required. That covers the single forehead band and its game-based neurofeedback training, though it does not include a meditation library or sleep tracking." },
+    { q: "How much does Mendi cost?", a: "Mendi has a $379 list price (often discounted, about $284 in a September 2026 sale) as a one-time purchase, with no subscription required. That covers the single forehead band and its game-based neurofeedback training, though it does not include a meditation library or sleep tracking." },
     { q: "What are the downsides of Mendi?", a: "Mendi is not EEG: it uses fNIRS, a different and narrower signal, and it measures only one region, the prefrontal cortex. It has no meditation library or sleep tracking, and its data platform is closed, with no developer access." },
     { q: "Who is Mendi best for?", a: "Mendi is best for users seeking the simplest neurofeedback experience focused purely on prefrontal attention training. Its fNIRS signal can also be useful if EEG-based neurofeedback has not worked for you, since it measures a different signal modality." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-30',
 }
 
 export default mendi

@@ -22,7 +22,7 @@ const levelsVsNutrisense: HeadToHead = {
     { name: 'Human coaching', winner: 'b', note: 'Nutrisense includes a registered dietitian (RD) for every subscriber with weekly written reviews and in-app messaging. Levels is app-only by default.' },
     { name: 'Content library', winner: 'a', note: 'Levels has a substantial editorial library backed by its medical advisory board. Nutrisense leans on the coach for guidance instead.' },
     { name: 'Integration', winner: 'tie', note: 'Both integrate with Apple Health; Levels adds Oura, Nutrisense adds Cronometer and ketone meters. Comparable.' },
-    { name: 'Price', winner: 'a', note: 'Levels: $199/month. Nutrisense: $280–$310/month including the RD. Levels is the cheaper of the two — what you pay for at Nutrisense is the coach.' },
+    { name: 'Price', winner: 'a', note: 'Levels: $399–$1,329/year membership (1–2 months of CGM included; extra CGM is an add-on). Nutrisense: $280–$310/month including the RD. Levels is the cheaper of the two — what you pay for at Nutrisense is the coach.' },
   ],
   faq: [
     {
@@ -48,14 +48,14 @@ Levels and Nutrisense ship the same Dexcom G7 sensor. The decision is between tw
 
 ## When is Levels the right pick?
 
-Levels is the right shape for users who treat CGM as a self-experiment instrument: log meals, run protocols, read the curves, iterate. The app does the heavy lifting and the content library backs it up — which is enough for users who would have skipped the weekly RD message at Nutrisense anyway. It is also $80–$110/month cheaper.
+Levels is the right shape for users who treat CGM as a self-experiment instrument: log meals, run protocols, read the curves, iterate. The app does the heavy lifting and the content library backs it up — which is enough for users who would have skipped the weekly RD message at Nutrisense anyway. It is also far cheaper — a $399–$1,329 annual membership versus $280–$310 a month.
 
 ## When is Nutrisense the right pick?
 
 Nutrisense is the right shape when accountability is the value. A registered dietitian reviewing your data weekly, sending written summaries and answering questions in-app is the difference between sustained behavioural change and a $200 month of charts for many users. Pay the premium only if you will use the coach.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-30',
 }
 
 export default levelsVsNutrisense

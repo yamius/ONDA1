@@ -21,13 +21,13 @@ const museAthenaVsMendi: HeadToHead = {
     { name: 'Sleep tracking', winner: 'a', note: 'The Muse S Athena is a soft band you can sleep in, with EEG-based sleep tracking. Mendi is a focus trainer only — no sleep.' },
     { name: 'Simplicity & habit', winner: 'b', note: 'Mendi is the easiest device to build a habit with — a single visual bar, productive from session one, no learning curve. Muse offers more, which is also more to learn.' },
     { name: 'Subscription', winner: 'tie', note: 'Neither forces a subscription — the Muse S Athena has no mandatory fee, and Mendi is a one-time purchase. A wash.' },
-    { name: 'Price', winner: 'b', note: 'Mendi: $299. Muse S Athena: $499. Mendi is cheaper for pure focus training.' },
+    { name: 'Price', winner: 'b', note: 'Mendi: $379 list (often discounted). Muse S Athena: $499. Mendi is cheaper for pure focus training.' },
     { name: 'Versatility', winner: 'a', note: 'Muse spans meditation, focus, and sleep with richer data; Mendi does one thing (prefrontal focus training) and does it simply.' },
   ],
   faq: [
     {
       q: 'Muse S Athena or Mendi — which should I buy?',
-      a: 'The Muse S Athena is the more complete device — EEG plus fNIRS, sleep tracking and real-time neurofeedback across meditation, focus and sleep, for $499. Mendi is a simpler, cheaper ($299) fNIRS focus trainer with a game-like bar and no learning curve. Pick Muse for depth and versatility, Mendi for the easiest focus habit.',
+      a: 'The Muse S Athena is the more complete device — EEG plus fNIRS, sleep tracking and real-time neurofeedback across meditation, focus and sleep, for $499. Mendi is a simpler, cheaper ($379 list, often discounted) fNIRS focus trainer with a game-like bar and no learning curve. Pick Muse for depth and versatility, Mendi for the easiest focus habit.',
     },
     {
       q: 'What’s the difference between EEG and fNIRS here?',
@@ -56,7 +56,7 @@ Against the gamified EEG option, see [Muse 2 vs FocusCalm vs Mendi](/reviews/vs/
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default museAthenaVsMendi

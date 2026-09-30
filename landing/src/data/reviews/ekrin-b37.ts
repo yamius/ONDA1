@@ -7,11 +7,11 @@ const ekrinB37: ToolReview = {
   category: 'massage-gun',
   productType: 'Athlete-oriented mid-premium massage gun',
   description:
-    'ONDA review of the Ekrin B37 — athlete-focused massage gun with 56 lbs stall force, 12 mm amplitude and lifetime warranty at $229. Scored on stall force, build, battery and value.',
+    'ONDA review of the Ekrin B37 — athlete-focused massage gun with 56 lbs stall force, 12 mm amplitude and lifetime warranty at $249.99. Scored on stall force, build, battery and value.',
   verdict:
-    'Best lifetime-warranty mid-tier — 56 lbs stall force with lifetime warranty at $229. Lower amplitude than premium tier; athlete-credibility positioning.',
+    'Best lifetime-warranty mid-tier — 56 lbs stall force with lifetime warranty at $249.99. Lower amplitude than premium tier; athlete-credibility positioning.',
   summary:
-    'Ekrin B37 is the athlete-oriented mid-premium entry — 56 lbs stall force, 12 mm amplitude, brushless motor, 4 attachments, and the category\'s only lifetime warranty. Athlete-focused brand positioning with credible NFL / NCAA distribution. $229 pricing slots between mid-budget OPOVE and premium Hyperice. The right buy for users who value warranty over amplitude.',
+    'Ekrin B37 is the athlete-oriented mid-premium entry — 56 lbs stall force, 12 mm amplitude, brushless motor, 4 attachments, and the category\'s only lifetime warranty. Athlete-focused brand positioning with credible NFL / NCAA distribution. $249.99 list pricing slots between mid-budget OPOVE and premium Hyperice. The right buy for users who value warranty over amplitude.',
   overallScore: 7.3,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 7.5, note: '56 lbs stall force solid. 12 mm amplitude — lower than premium-tier 14–16 mm but functional.' },
@@ -19,7 +19,7 @@ const ekrinB37: ToolReview = {
     { criterionId: 'battery-noise', score: 7.5, note: 'Brushless motor at 55 dB. ~8 hours per charge — among longest in category.' },
     { criterionId: 'app-smart-features', score: 5.0, note: 'No app or Bluetooth. LED battery + speed indicator.' },
     { criterionId: 'ergonomics-portability', score: 7.0, note: '~2.2 lbs. Standard single-grip handle.' },
-    { criterionId: 'value', score: 7.5, note: '$229 — premium mid-tier pricing justified by lifetime warranty. Best long-term ownership cost.' },
+    { criterionId: 'value', score: 7.5, note: '$249.99 list, frequently discounted — premium mid-tier pricing justified by lifetime warranty. Best long-term ownership cost.' },
   ],
   pros: [
     'Lifetime warranty — only in category',
@@ -37,7 +37,7 @@ const ekrinB37: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Ekrin Athletics product documentation and 2026 athlete-focused reviews. Not hands-on tested by ONDA.',
-  price: { usd: 229, note: 'B37 with 4 attachments + lifetime warranty', asOf: '2026-05-28' },
+  price: { usd: 249.99, note: 'B37 list price with 4 attachments + lifetime warranty; frequently on sale (e.g. $187.50 on ekrin.com)', asOf: '2026-09-30' },
   link: 'https://www.ekrinathletics.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -65,13 +65,13 @@ Choose Ekrin B37 for lifetime-warranty mid-tier percussion with athlete brand pe
   relatedSlugs: ['opove-m3-pro-2', 'achedaway-pro', 'theragun-elite'],
   publishOn: '2026-07-20',
   faq: [
-    { q: "Is the Ekrin B37 worth it?", a: "Yes, for long-term ownership value. The Ekrin B37 offers 56 lbs stall force, a brushless motor, about 8 hours of battery life and the only lifetime warranty in the category for $229. Its 12 mm amplitude is lower than the 14–16 mm of premium guns." },
-    { q: "How much does the Ekrin B37 cost?", a: "The Ekrin B37 costs $229, including 4 attachments and a lifetime warranty. That places it in the mid-tier, below premium percussion guns, while still offering a brushless motor and roughly 8 hours of battery life." },
+    { q: "Is the Ekrin B37 worth it?", a: "Yes, for long-term ownership value. The Ekrin B37 offers 56 lbs stall force, a brushless motor, about 8 hours of battery life and the only lifetime warranty in the category for $249.99. Its 12 mm amplitude is lower than the 14–16 mm of premium guns." },
+    { q: "How much does the Ekrin B37 cost?", a: "The Ekrin B37 lists at $249.99 (frequently discounted), including 4 attachments and a lifetime warranty. That places it in the mid-tier, below premium percussion guns, while still offering a brushless motor and roughly 8 hours of battery life." },
     { q: "What are the downsides of the Ekrin B37?", a: "The Ekrin B37 has a 12 mm amplitude versus 14–16 mm on premium guns and no app or smart features. It includes only 4 attachments, fewer than budget competitors, and a standard single grip without versatility." },
-    { q: "Who is the Ekrin B37 best for?", a: "The Ekrin B37 is best for athletes who want a lifetime-warranty mid-tier massage gun. It suits buyers who value long-term ownership, athlete-focused positioning and about 8 hours of battery over premium amplitude. It offers 56 lbs stall force for $229." },
+    { q: "Who is the Ekrin B37 best for?", a: "The Ekrin B37 is best for athletes who want a lifetime-warranty mid-tier massage gun. It suits buyers who value long-term ownership, athlete-focused positioning and about 8 hours of battery over premium amplitude. It offers 56 lbs stall force for $249.99." },
   ],
   datePublished: '2026-07-20',
-  dateModified: '2026-07-20',
+  dateModified: '2026-09-30',
 }
 
 export default ekrinB37

@@ -23,7 +23,7 @@ const levelsVsUltrahumanM1: HeadToHead = {
     { name: 'Cross-signal integration', winner: 'b', note: 'Ultrahuman M1 composes glucose with HRV, sleep and recovery from the Ring Air in one timeline — unique cross-modal view. Levels integrates with Oura via Apple Health but it is bolt-on.' },
     { name: 'Coaching', winner: 'tie', note: 'Both app-only by default. Neither includes a human coach without a separate tier.' },
     { name: 'App and content', winner: 'a', note: 'Levels has a more substantial editorial library backed by its medical advisory board. Ultrahuman is polished but content-lighter.' },
-    { name: 'Price', winner: 'b', note: 'Ultrahuman M1: ~$99 per 14-day sensor (no required CGM subscription if you already own the ring). Levels: $199/month including sensors. Ultrahuman is cheaper.' },
+    { name: 'Price', winner: 'tie', note: 'Ultrahuman M1: ~$99 per 14-day sensor (no required CGM subscription if you already own the ring). Levels: tiered memberships — $80/year app-only, $399/year Core (1 month CGM), $1,329/year Complete (2 months CGM); extra CGM is an add-on. Which is cheaper depends on how much you wear a sensor.' },
     { name: 'Standalone usability', winner: 'a', note: 'Levels works fully on its own. Most of Ultrahuman M1’s differentiation depends on also owning the Ring Air.' },
   ],
   faq: [
@@ -41,7 +41,7 @@ const levelsVsUltrahumanM1: HeadToHead = {
     },
     {
       q: 'Which is cheaper long-term?',
-      a: 'Ultrahuman M1 at ~$99 per 14-day sensor (~$215/month if worn continuously, less if intermittently). Levels at $199/month with 10-day Dexcom G7 sensors. Ultrahuman is cheaper, especially if you already own the ring and skip the CGM subscription model entirely.',
+      a: 'Ultrahuman M1 at ~$99 per 14-day sensor (~$215/month if worn continuously, less if intermittently). Levels is now a membership — $80 a year app-only, $399 a year for Core with one month of CGM, $1,329 a year for Complete with two months — with extra CGM as an add-on. For occasional CGM blocks Levels is cheaper; for continuous wear, both cost roughly the price of the sensors.',
     },
   ],
   content: `## The short version
@@ -57,7 +57,7 @@ If you treat CGM as the primary instrument — running structured meal experimen
 If you already own the Ultrahuman Ring Air or plan to, M1 is the right shape because glucose composed with HRV and sleep on one timeline is a meaningful cross-signal view nothing else in the consumer market offers. As a standalone CGM programme it is the wrong choice — go for Levels or Stelo instead.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-30',
 }
 
 export default levelsVsUltrahumanM1

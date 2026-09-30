@@ -11,7 +11,7 @@ const sensAi: ToolReview = {
   verdict:
     'The most ambitious multi-modal headset — EEG plus photobiomodulation plus HRV, at a premium price that demands the use case.',
   summary:
-    'Sens.ai is the only headset in this list that combines passive measurement (five-channel EEG and HRV) with active intervention (transcranial photobiomodulation — near-infrared light). The programmes layer the three modalities into combined neurofeedback + light + HRV sessions, framed around focus, calm, mood and clarity. Premium positioning with a subscription on top of the $1495 hardware. The right shape only when the multi-modal use case is what you want.',
+    'Sens.ai is the only headset in this list that combines passive measurement (five-channel EEG and HRV) with active intervention (transcranial photobiomodulation — near-infrared light). The programmes layer the three modalities into combined neurofeedback + light + HRV sessions, framed around focus, calm, mood and clarity. Premium positioning with a membership on top of the $1,250 hardware. The right shape only when the multi-modal use case is what you want.',
   overallScore: 7.1,
   scores: [
     { criterionId: 'signal-quality', score: 7.5, note: 'Five-channel dry EEG plus HRV from an ear-clip sensor, plus PBM near-infrared LEDs over the prefrontal cortex. Signal quality consumer-grade across all three modalities.' },
@@ -20,7 +20,7 @@ const sensAi: ToolReview = {
     { criterionId: 'comfort', score: 7.0, note: 'Substantial headset with multiple sensor arrays — heavier than Muse or Crown. Sit-down sessions only; not for movement or sleep.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Polished app with progression tracking. Less mature ecosystem than Muse — the device is newer to market.' },
     { criterionId: 'open-data', score: 5.5, note: 'Limited raw data export; programme is closed-loop by design. Not a developer platform.' },
-    { criterionId: 'value', score: 4.5, note: '$1495 hardware plus subscription for full programme access. The most expensive entry in this category.' },
+    { criterionId: 'value', score: 4.5, note: '$1,250 hardware plus membership ($300/yr or $75/mo after a 60-day trial). Among the most expensive entries in this category once the membership is counted.' },
   ],
   pros: [
     'The only headset combining EEG + PBM + HRV in a single device and programme',
@@ -29,7 +29,7 @@ const sensAi: ToolReview = {
     'Photobiomodulation evidence base independently real — adds a second intervention to EEG neurofeedback',
   ],
   cons: [
-    'The most expensive headset in this list — $1495 plus subscription',
+    'Premium price — $1,250 plus an ongoing membership',
     'Closed-loop data model — not for developers or researchers',
     'Heavy headset — not for overnight wear or movement',
     'Newer market entry — ecosystem less mature than Muse or Emotiv',
@@ -38,7 +38,7 @@ const sensAi: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Sens.ai product documentation, the published photobiomodulation literature and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 1495, note: '$1495 device + subscription for full programmes', asOf: '2026-05-21' },
+  price: { usd: 1250, note: '$1,250 device incl. 60-day trial membership, then $300/yr or $75/mo', asOf: '2026-09-30' },
   link: 'https://www.sens.ai/',
   linkType: 'official',
   content: `## Where it leads
@@ -47,7 +47,7 @@ Sens.ai is the only headset in this list that ships as a multi-modal device. Fiv
 
 ## What are the downsides of Sens.ai?
 
-Price first. At $1495 plus an ongoing programme subscription, Sens.ai is the most expensive entry in this category — more than the Neurosity Crown without the Crown’s developer access. The data model is closed by design; raw export is limited. The headset is also physically substantial, comfortable only in a sit-down session rather than for movement or sleep. For users who want one or two of the modalities but not all three, single-purpose devices are better value.
+Price first. At $1,250 plus an ongoing membership ($300 a year after the 60-day trial), Sens.ai is among the most expensive entries in this category — over a few years it costs more than the Neurosity Crown without the Crown’s developer access. The data model is closed by design; raw export is limited. The headset is also physically substantial, comfortable only in a sit-down session rather than for movement or sleep. For users who want one or two of the modalities but not all three, single-purpose devices are better value.
 
 ## Who should buy Sens.ai?
 
@@ -69,12 +69,12 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
   ],
   relatedSlugs: ['neurosity-crown', 'muse-s-athena', 'mendi'],
   faq: [
-    { q: "Is the Sens.ai worth it?", a: "Sens.ai is worth it only if you specifically want EEG, photobiomodulation and HRV in one headset. It is the only device combining all three in a single programme, with strong cross-modal session analysis and premium build, but it is also the most expensive headset in the category and its ecosystem is less mature than Muse or Emotiv." },
-    { q: "How much does the Sens.ai cost?", a: "The Sens.ai costs $1,495 for the device, plus a subscription to unlock the full programmes. That makes it the most expensive headset in this category. The price buys a combined EEG, photobiomodulation and HRV system with progression-tracked content, not a basic meditation headband." },
-    { q: "What are the downsides of the Sens.ai?", a: "The main downsides are price, $1,495 plus subscription, and a closed data model that does not suit developers or researchers. The headset is heavy, so it is not for overnight wear or use while moving, and as a newer entry its ecosystem is less mature than Muse or Emotiv." },
+    { q: "Is the Sens.ai worth it?", a: "Sens.ai is worth it only if you specifically want EEG, photobiomodulation and HRV in one headset. It is the only device combining all three in a single programme, with strong cross-modal session analysis and premium build, but with its ongoing membership it is also among the most expensive headsets in the category and its ecosystem is less mature than Muse or Emotiv." },
+    { q: "How much does the Sens.ai cost?", a: "The Sens.ai costs $1,250 for the device, which includes a 60-day trial membership; after that the membership is $300 a year or $75 a month. Counting the membership, it is among the most expensive headsets in this category. The price buys a combined EEG, photobiomodulation and HRV system with progression-tracked content, not a basic meditation headband." },
+    { q: "What are the downsides of the Sens.ai?", a: "The main downsides are price, $1,250 plus a $300-a-year membership, and a closed data model that does not suit developers or researchers. The headset is heavy, so it is not for overnight wear or use while moving, and as a newer entry its ecosystem is less mature than Muse or Emotiv." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-09-30',
 }
 
 export default sensAi

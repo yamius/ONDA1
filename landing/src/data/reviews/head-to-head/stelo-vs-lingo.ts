@@ -15,13 +15,13 @@ const steloVsLingo: HeadToHead = {
   bestForA:
     'Choose Stelo by Dexcom if sensor accuracy matters more than the last $50/month — you get the same Dexcom G7 hardware as Levels and Nutrisense at a third of the cost.',
   bestForB:
-    'Choose Lingo by Abbott if cost is the deciding factor or you want to wear a CGM occasionally rather than continuously — single 2-week sensors at $49 each.',
+    'Choose Lingo by Abbott if cost is the deciding factor or you want to wear a CGM occasionally rather than continuously — single 2-week sensors at $54 each.',
   axes: [
     { name: 'Sensor accuracy', winner: 'a', note: 'Dexcom G7 (Stelo): MARD ~8.2%. Abbott Libre 3 (Lingo): MARD ~9%. Stelo wins marginally — independent comparisons consistently favour Dexcom at rest.' },
     { name: 'Sensor wear time', winner: 'a', note: 'Stelo: 15-day wear (longer than standard Dexcom G7). Lingo: 14 days. Tie in practice; slight Stelo edge.' },
     { name: 'Warm-up time', winner: 'a', note: 'Stelo: 30 minutes. Lingo: 60 minutes. Stelo back on data faster after each sensor swap.' },
     { name: 'Insight depth', winner: 'a', note: 'Stelo: meal-impact + daily time-in-range. Lingo: single "Lingo Count" spike score per meal — deliberately beginner-simple.' },
-    { name: 'Price flexibility', winner: 'b', note: 'Lingo: $49 per single 2-week sensor, $89 for 4 (~$22/month effective). Stelo: $99/month subscription or $89/month on subscription.' },
+    { name: 'Price flexibility', winner: 'b', note: 'Lingo: $54 per single 2-week sensor, with multi-sensor plans lowering the per-sensor cost. Stelo: $99 for two sensors (~30 days) or $89/month on subscription.' },
     { name: 'No subscription required', winner: 'b', note: 'Lingo: full functionality with single sensors, no subscription. Stelo: hardware works without subscription but the monthly purchase pattern is the default flow.' },
     { name: 'App ecosystem', winner: 'tie', note: 'Both have clean iOS/Android apps with Apple Health integration. Limited third-party connectors compared with Levels.' },
   ],
@@ -32,7 +32,7 @@ const steloVsLingo: HeadToHead = {
     },
     {
       q: 'Which is cheaper, Stelo or Lingo?',
-      a: 'Lingo is cheaper at the single-sensor entry tier — $49 per 2-week sensor, or $89 for four (~$22/month effective). Stelo is $99/month for two sensors or $89/month on subscription. If you want to wear a CGM continuously, the gap closes; for occasional use Lingo wins on cost flexibility.',
+      a: 'Lingo is cheaper at the single-sensor entry tier — $54 per 2-week sensor, with multi-sensor plans lowering the per-sensor cost. Stelo is $99 for two sensors (~30 days) or $89/month on subscription. If you want to wear a CGM continuously, the gap closes; for occasional use Lingo wins on cost flexibility.',
     },
     {
       q: 'Do either require a prescription?',
@@ -53,10 +53,10 @@ If you want the most accurate consumer CGM hardware available — the same Dexco
 
 ## When is Lingo the right pick?
 
-If you are not sure CGM will change anything for you and want the cheapest legitimate way to find out, or you plan to wear a CGM occasionally rather than continuously, Lingo is the right shape. $49 single sensors with no subscription beats Stelo’s monthly model on flexibility.`,
+If you are not sure CGM will change anything for you and want the cheapest legitimate way to find out, or you plan to wear a CGM occasionally rather than continuously, Lingo is the right shape. $54 single sensors with no subscription beats Stelo’s monthly model on flexibility.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-30',
 }
 
 export default steloVsLingo

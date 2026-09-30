@@ -24,7 +24,7 @@ const veriVsLevels: HeadToHead = {
     { name: 'Third-party integrations', winner: 'a', note: 'Veri integrates Garmin, Oura, MyFitnessPal natively. Levels integrates Apple Health and Oura. Veri has the broader EU-relevant integration list.' },
     { name: 'Multi-language support', winner: 'a', note: 'Veri offers native multi-language EU support. Levels is English-only.' },
     { name: 'Raw data export', winner: 'tie', note: 'Both support raw glucose data export on request. Equivalent for self-experimenters.' },
-    { name: 'Price', winner: 'a', note: 'Veri: €199 setup + €99–€129/month. Levels: $199/month including sensors. Veri is cheaper, particularly when comparing total month-on-month cost in EU currency.' },
+    { name: 'Price', winner: 'tie', note: 'Veri: €199 setup + €99–€129/month. Levels: $399–$1,329/year membership with 1–2 months of CGM included (US-only). Different markets and billing models — for most EU users Veri is the only real option.' },
   ],
   faq: [
     {
@@ -57,7 +57,7 @@ If you are in an EU market, Veri is the right shape — same job as Levels (cons
 If you are in the US, Levels remains the right shape — the deeper meal-impact analytics, the more accurate sensor, the more mature app. The premium pricing is the cost of the analytical depth; EU readers can keep this comparison filed under "what to know about the cross-border alternative".`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-09-30',
 }
 
 export default veriVsLevels

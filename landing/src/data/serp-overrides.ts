@@ -9,14 +9,14 @@
 export const SERP_OVERRIDES: Record<string, { title?: string; description?: string }> = {
   // --- CGM reviews ---
   '/reviews/lingo': {
-    title: 'Lingo Review 2026: $49 CGM With No Prescription | ONDA Life',
+    title: 'Lingo Review 2026: $54 CGM, No Prescription | ONDA Life',
     description:
-      'Abbott’s over-the-counter CGM on Libre 3 hardware: $49 per 2-week sensor, no subscription. Who Lingo suits, its limits, and how it compares with Stelo.',
+      'Abbott’s over-the-counter CGM on Libre 3 hardware: $54 per 2-week sensor, no prescription needed. Who Lingo suits, its limits, and how it compares with Stelo.',
   },
   '/reviews/levels': {
-    title: 'Levels Review 2026: Is the $199/mo CGM Worth It? | ONDA Life',
+    title: 'Levels Review 2026: New Plans, Worth It? | ONDA Life',
     description:
-      'Levels pairs a Dexcom G7 sensor with the best food-by-food insights we tested, at $199 a month. What you get, who it suits and cheaper alternatives.',
+      'Levels now sells tiered memberships, from an app-only plan to yearly plans with CGM and lab tests. What each plan includes, who it suits, cheaper options.',
   },
   '/reviews/stelo': {
     title: 'Stelo Review 2026: Dexcom CGM, No Prescription | ONDA Life',
@@ -82,14 +82,14 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
   },
   // --- neurotech, light, recovery ---
   '/reviews/neurosity-crown': {
-    title: 'Neurosity Crown Review 2026: Is It Worth $1,399? | ONDA Life',
+    title: 'Neurosity Crown Review 2026: Is It Worth $1,499? | ONDA Life',
     description:
       'An 8-electrode EEG headset with an open SDK and raw data, no subscription. What it does for focus, who it suits, and cheaper EEG alternatives.',
   },
   '/reviews/sens-ai': {
-    title: 'Sens.ai Review 2026: Is It Worth $1,495? | ONDA Life',
+    title: 'Sens.ai Review 2026: Is It Worth $1,250? | ONDA Life',
     description:
-      'Sens.ai combines EEG neurofeedback, photobiomodulation and HRV training in one $1,495 headset plus subscription. What the evidence says and who it suits.',
+      'Sens.ai combines EEG neurofeedback, photobiomodulation and HRV training in one $1,250 headset plus a membership. What the evidence says and who it suits.',
   },
   '/reviews/omnilux-contour-face': {
     title: 'Omnilux Contour Face Review 2026: Worth $395? | ONDA Life',

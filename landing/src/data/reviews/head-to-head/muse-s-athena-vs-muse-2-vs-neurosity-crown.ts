@@ -27,7 +27,7 @@ const threeEeg: HeadToHead = {
     { name: 'Developer / SDK access', winner: 'c', note: 'Crown: open JavaScript/Python/Swift SDK with raw EEG, no subscription. Muse 2 and Athena: closed first-party SDK; raw access via third-party Muse Direct only.' },
     { name: 'Subscription model', winner: 'tie', note: 'All three: no mandatory subscription. Full features ship with the hardware.' },
     { name: 'Comfort and form factor', winner: 'a', note: 'Muse S Athena: soft fabric band, overnight-friendly. Muse 2: rigid band, sit-up only. Crown: rigid crown, sit-up only.' },
-    { name: 'Hardware price', winner: 'b', note: 'Muse 2: $249. Muse S Athena: $499. Neurosity Crown: $1,399. Muse 2 is cheapest by a wide margin.' },
+    { name: 'Hardware price', winner: 'b', note: 'Muse 2: $249. Muse S Athena: $499. Neurosity Crown: $1,499. Muse 2 is cheapest by a wide margin.' },
   ],
   faq: [
     {
@@ -68,7 +68,7 @@ For users who want a real EEG meditation headband at the entry-tier price, Muse 
 For developers, researchers and biohackers who want raw EEG over an open SDK with no subscription gate, Crown is the right shape. Eight dry electrodes — more cortical coverage than Muse — plus JavaScript/Python/Swift APIs out of the box. The trade is the absence of consumer content; bring your own application.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-30',
 }
 
 export default threeEeg

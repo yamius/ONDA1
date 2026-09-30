@@ -24,7 +24,7 @@ const sensAiVsMuse: HeadToHead = {
     { name: 'Meditation content library', winner: 'b', note: 'Muse: mature library after a decade of iteration. Sens.ai: programme-driven sessions, narrower content.' },
     { name: 'Comfort and form factor', winner: 'b', note: 'Muse S Athena: soft fabric band, overnight-wear friendly. Sens.ai: substantial headset, sit-down only.' },
     { name: 'Subscription requirement', winner: 'b', note: 'Muse S Athena: no mandatory subscription, full features with hardware. Sens.ai: subscription required for full programme access.' },
-    { name: 'Price', winner: 'b', note: 'Muse S Athena: $499 one-time. Sens.ai: $1,495 + subscription. Muse is roughly one-third the entry cost.' },
+    { name: 'Price', winner: 'b', note: 'Muse S Athena: $499 one-time. Sens.ai: $1,250 including a 60-day trial membership, then $300/year or $75/month. Muse is well under half the entry cost.' },
   ],
   faq: [
     {
@@ -57,7 +57,7 @@ If the EEG + photobiomodulation + HRV stack in one programme is the experience y
 If you want the most mature consumer brain-training experience — meditation, focus, sleep tracking, sensor fusion (EEG + fNIRS), no mandatory subscription — Muse S Athena is the right shape. Three times cheaper than Sens.ai for most of the same job.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-09-30',
 }
 
 export default sensAiVsMuse

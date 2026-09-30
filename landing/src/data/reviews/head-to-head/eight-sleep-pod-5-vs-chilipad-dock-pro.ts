@@ -38,7 +38,9 @@ const pod5VsChilipad: HeadToHead = {
       a: 'From below, yes — both are dual-zone water-cooled with similar usable ranges and recovery times. The Pod 5 Ultra adds a top-down hydro blanket for a fuller envelope, but the ChiliPad’s core cooling is not the reason to spend more.',
     },
   ],
-  content: `## The short version
+  content: `> Update (September 2026): Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen dual-zone). Pod 5 prices below are its last list prices — compare any remaining Pod 5 stock against Pod 6 pricing.
+
+## The short version
 
 Same core job, very different wrappers. The [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is the maximal smart-bed system — HRV tracking, Autopilot software, top-down climate and full-bed extras — at ~$6,099 plus a subscription. The [ChiliPad Dock Pro](/reviews/chilipad-dock-pro) delivers the same dual-zone water cooling for ~$1,700 once, no subscription, no tracking.
 
@@ -56,7 +58,7 @@ If you want the same debate one generation down, see [Pod 4 vs ChiliPad Dock Pro
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default pod5VsChilipad

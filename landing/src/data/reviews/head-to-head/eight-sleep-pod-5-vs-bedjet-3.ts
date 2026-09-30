@@ -38,7 +38,9 @@ const pod5VsBedjet: HeadToHead = {
       a: 'Only if you want the integrated HRV/sleep tracking, adaptive Autopilot software and full-bed extras — and precise water cooling. If you just want your bed cooler at night without water management or a subscription, the BedJet 3 delivers most of the everyday benefit for a fraction of the cost.',
     },
   ],
-  content: `## The short version
+  content: `> Update (September 2026): Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 (from $1,999 Solo; $2,899 queen dual-zone). Pod 5 prices below are its last list prices — compare any remaining Pod 5 stock against Pod 6 pricing.
+
+## The short version
 
 Opposite ends of the market. The [Eight Sleep Pod 5](/reviews/eight-sleep-pod-5) is the maximal water-cooled smart bed — precise dual-zone cooling, HRV tracking, Autopilot software, full-bed extras — at ~$6,099 plus a subscription. The [BedJet 3](/reviews/bedjet-3) blows cooled or heated air under the sheet for ~$600, no water, no tracking.
 
@@ -56,7 +58,7 @@ For the middle-ground water-cooled route without a subscription, see [Pod 5 vs C
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-09-30',
 }
 
 export default pod5VsBedjet
