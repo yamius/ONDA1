@@ -97,6 +97,16 @@ And the honest limit: all of this is still **passive measurement** — the watch
 
 > **The Hack:** After updating, treat your Apple Watch HRV as a fresh start. Track **Recovery HRV (RMSSD)** for daily recovery and comparison with other trackers, keep **Overall HRV (SDNN)** as the long-run line, and don't compare the two to each other — or splice their histories.
 
+## Apple Watch vs other HRV trackers
+
+Now that Recovery HRV is comparable with ring and band readings, these head-to-heads weigh the Apple Watch against the main alternatives:
+
+- [Apple Watch Series 12 vs Whoop 5.0](/reviews/vs/apple-watch-series-12-vs-whoop-5-0)
+- [Apple Watch Series 12 vs Oura Ring 4](/reviews/vs/apple-watch-series-12-vs-oura-ring-4)
+- [Apple Watch Series 12 vs Oura Ring 5](/reviews/vs/apple-watch-series-12-vs-oura-ring-5)
+- [Apple Watch Series 12 vs Garmin Venu 4](/reviews/vs/apple-watch-series-12-vs-garmin-venu-4)
+- [Apple Watch Ultra 4 vs Apple Watch Series 12](/reviews/vs/apple-watch-ultra-4-vs-apple-watch-series-12)
+
 > [ METRIC_MAP ]
 > RECOVERY_HRV = RMSSD → daily recovery, vs personal baseline, ~5-min sampling
 > OVERALL_HRV = SDNN → broader / cardiovascular, historical continuity
