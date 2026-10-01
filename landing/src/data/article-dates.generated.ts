@@ -366,7 +366,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "longevity-protocol-biological-clock-reset": {
     "published": "2026-03-24T10:01:04Z",
-    "modified": "2026-09-29T12:26:39+02:00"
+    "modified": "2026-10-01T17:32:55+02:00"
   },
   "mbsr-mindfulness-clinical-evidence": {
     "published": "2026-09-23T20:27:09+02:00",
@@ -422,11 +422,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mitochondrial-biogenesis-cellular-power-grid": {
     "published": "2026-02-26T22:24:55+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-01T17:32:55+02:00"
   },
   "mitochondrial-dna-red-light": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-10-01T13:13:19+02:00"
+    "modified": "2026-10-01T17:32:55+02:00"
   },
   "molecular-psychology-hormonal-firmware": {
     "published": "2026-05-18T08:38:26+02:00",
@@ -1710,7 +1710,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-01T15:58:21+02:00"
+    "modified": "2026-10-01T17:32:55+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

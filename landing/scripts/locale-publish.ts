@@ -60,4 +60,10 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('reviews', 'chilipad-cube', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('reviews', 'inergize-cold-tub', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('comparisons', 'best-massage-guns-2026', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'ultrahuman-ring-air', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'oura-ring-4', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'penguin-chillers', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'clearlight-sanctuary-2', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'platinumled-biomax-600', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]
