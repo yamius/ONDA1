@@ -2840,6 +2840,22 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "journal": "National Health Statistics Reports (No. 41)",
       "pmid": "21905522",
       "url": "https://pubmed.ncbi.nlm.nih.gov/21905522/"
+    },
+    {
+      "title": "Resting heart rate and all-cause and cardiovascular mortality in the general population: a meta-analysis",
+      "authors": "Zhang D et al.",
+      "year": 2015,
+      "journal": "Canadian Medical Association Journal",
+      "doi": "10.1503/cmaj.150535",
+      "url": "https://doi.org/10.1503/cmaj.150535"
+    },
+    {
+      "title": "Inter- and intraindividual variability in daily resting heart rate and its associations with age, sex, sleep, BMI, and time of year: Retrospective, longitudinal cohort study of 92,457 adults",
+      "authors": "Quer G et al.",
+      "year": 2020,
+      "journal": "PLOS ONE",
+      "doi": "10.1371/journal.pone.0227709",
+      "url": "https://doi.org/10.1371/journal.pone.0227709"
     }
   ],
   "rhythmic-entrainment-system-frequencies": [

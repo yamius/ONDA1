@@ -180,6 +180,16 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
       answer:
         "Only modestly in healthy adults — fitness, sleep and lifestyle affect it far more than age. A fit older adult can have a lower resting heart rate than an unfit younger one.",
     },
+    {
+      question: "What resting heart rate is too high?",
+      answer:
+        "For adults, a resting heart rate above 100 bpm is called tachycardia. A single high reading after caffeine, stress or poor sleep is common; see a doctor if it stays above 100 at rest without an obvious reason, or comes with chest pain, palpitations, dizziness or breathlessness.",
+    },
+    {
+      question: "Is a lower resting heart rate always better?",
+      answer:
+        "Generally yes over the long term: across more than a million people, each 10 bpm higher resting heart rate was linked to about a 9% higher risk of death. But a very low rate below 50 bpm in someone who is not an endurance athlete, especially with dizziness or fainting, should be checked by a doctor.",
+    },
   ],
   "how-much-alcohol-lowers-hrv": [
     {

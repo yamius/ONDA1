@@ -69,6 +69,28 @@ A single elevated reading usually means one rough night or a recent coffee. A su
 
 Your lowest resting heart rate of the day usually occurs during deep sleep, when parasympathetic "rest and digest" activity dominates. This overnight low is one of the most stable, comparable numbers you can track, because it's measured under consistent conditions — no caffeine, movement or stress in the moment. It's also where alcohol and late meals show up clearly: both keep your sleeping heart rate elevated through the night, which is why you can wake up unrecovered even after a full night in bed. Tracking your overnight resting heart rate against your own normal is one of the clearest windows into your recovery.
 
+## Is my resting heart rate too high or too low?
+
+For adults, a resting heart rate above 100 bpm is called tachycardia and below 60 bpm bradycardia. Neither label means something is wrong on its own: a fit person can sit in the 40s or 50s with no problem, and a single high reading after coffee or a bad night is normal.
+
+Over the long term, a lower resting heart rate is generally better. A meta-analysis of studies with more than a million people found that each 10 bpm higher resting heart rate was linked to about a 9% higher risk of death from any cause (Zhang 2015). This is an association across populations, not a target to chase — your genes, medicines and fitness all play a part.
+
+People also differ a lot. In wearable data from 92,457 adults, average resting heart rates ranged widely between healthy individuals, while each person’s own number stayed fairly stable from week to week (Quer 2020). That is why a change from your own baseline says more than where you sit in a table.
+
+See a doctor if your resting heart rate is:
+
+- **regularly above 100 bpm** at rest, without an obvious reason like fever or caffeine;
+- **below 50 bpm and you are not an endurance-trained athlete**, especially with dizziness, fainting, tiredness or shortness of breath;
+- **irregular**, or comes with chest pain, palpitations or breathlessness — get urgent help for chest pain or fainting.
+
+## How do you measure resting heart rate correctly?
+
+1. **Measure first thing in the morning**, before coffee and before getting up, or after sitting quietly for 5 minutes.
+2. **Count for 60 seconds** at the wrist or neck, or use a watch, ring or chest strap. A phone camera reading works too if you keep still.
+3. **Use the same conditions each time** and look at a 7-day average rather than a single number.
+4. **Remember that wearables report sleeping or lowest heart rate**, which usually reads a few bpm lower than a seated check.
+
+Want a quick reading now? **[Check your heart rate with your phone camera](/tools/camera-heart-rate)**.
 ## When does resting heart rate matter?
 
 A resting heart rate inside the normal range for your age and fitness is reassuring, but the number to watch is the *change*. A steady climb of several beats above your personal baseline — sustained over days, not one reading — can reflect illness, overtraining, stress, or poor sleep. Conversely, a resting heart rate that trends down as you get fitter is a sign of improving cardiovascular health. Extremes in either direction — persistently very high, or very low with symptoms like dizziness or fatigue — are worth discussing with a doctor, but resting heart rate on its own is a signal, not a diagnosis.
