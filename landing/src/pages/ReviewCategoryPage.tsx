@@ -29,82 +29,82 @@ import { NotFoundPage } from './NotFoundPage'
  *  a translation round-trip for every category we add. */
 const CATEGORY_INTRO: Record<ReviewCategory, { h1: string; intro: string }> = {
   'hrv-wearable': {
-    h1: 'Best HRV Trackers (2026)',
+    h1: 'HRV Tracker Reviews (2026)',
     intro:
       'Heart-rate variability is only as useful as the device measuring it. ONDA scored the most-searched HRV trackers of 2026 — rings, bands, smartwatches and chest straps — against the same rubric so the right pick is obvious from the trade-offs, not the marketing.',
   },
   'meditation-app': {
-    h1: 'Best Meditation Apps (2026)',
+    h1: 'Meditation App Reviews (2026)',
     intro:
       'A meditation app is judged on the depth of the teaching, not the slickness of the interface. ONDA scored the most-used apps of 2026 against the same seven criteria — library, teaching quality, personalisation, free tier, evidence and value — so the right pick is obvious from the trade-offs.',
   },
   'sleep-app': {
-    h1: 'Best Sleep Apps (2026)',
+    h1: 'Sleep App Reviews (2026)',
     intro:
       'A sleep app either measures sleep, helps you get it, or both. ONDA scored the most-used sleep apps of 2026 against the same rubric — tracking accuracy, wind-down content, sleep-science grounding, insights and value — so the right pick is obvious from your use case.',
   },
   'vagus-stim': {
-    h1: 'Best Vagus Nerve Stimulators (2026)',
+    h1: 'Vagus Nerve Stimulator Reviews (2026)',
     intro:
       'The vagus-stimulator market mixes regulated medical devices, evidence-backed consumer hardware and wellness products whose mechanism barely touches the vagus nerve. ONDA scored the ten most credible devices of 2026 — auricular tVNS, cervical tVNS, vibrotactile, infrasonic and one implanted reference — so the field reads as one ordered list.',
   },
   cgm: {
-    h1: 'Best Continuous Glucose Monitors for Biohackers (2026)',
+    h1: 'CGM Reviews for Biohackers (2026)',
     intro:
       'The biohacker CGM market in 2026 is two sensors and ten wrappers. Eight of the ten programmes here ride on the same two pieces of hardware — Abbott Libre 3 or Dexcom G7 — and compete on what the software, coaching and ecosystem do with the data. ONDA scored all of them on the same six criteria so the trade-offs are explicit.',
   },
   'eeg-headset': {
-    h1: 'Best EEG & Brain-Training Headsets (2026)',
+    h1: 'EEG & Brain-Training Headset Reviews (2026)',
     intro:
       'The brain-training headset market splits across three modalities — EEG measurement, fNIRS prefrontal sensing and tDCS stimulation — plus clinical-prescribed and multi-modal-premium entries. ONDA scored the ten most credible devices of 2026 across all modalities against the same rubric, so the cross-modality trade-offs are explicit.',
   },
   'red-light': {
-    h1: 'Best Red Light Therapy Panels (2026)',
+    h1: 'Red Light Therapy Panel Reviews (2026)',
     intro:
       'Red light therapy is one of the most marketing-noisy biohacker categories on the market — inflated irradiance claims, EMF and flicker hidden behind the spec sheet, premium pricing not always backed by the build. ONDA scored the ten most credible panels of 2026 against the same six axes, with independent irradiance measurement and EMF/flicker discipline carrying weight on purpose.',
   },
   'cold-plunge': {
-    h1: 'Best Cold Plunge & Ice Bath (2026)',
+    h1: 'Cold Plunge & Ice Bath Reviews (2026)',
     intro:
       'Cold plunge hardware went from niche to mainstream over 2023–2026, and the market split into three clean tiers: chiller-built premium tubs, mid-tier insulated tubs, and budget portable plunges. ONDA scored the ten most credible options of 2026 against the same six axes — with chiller capacity, build longevity and total cost of ownership carrying the rubric.',
   },
   sauna: {
-    h1: 'Best Infrared Sauna & Sauna (2026)',
+    h1: 'Sauna Reviews: Infrared and Traditional (2026)',
     intro:
       'The home-sauna category divides cleanly across heat sources — full-spectrum IR, near-IR incandescent, traditional Finnish convection — and form factors from blanket to outdoor barrel. ONDA scored the ten most credible options of 2026 against the same six axes, with heat-source spectrum honesty and independently-measured EMF carrying weight on purpose.',
   },
   'sleep-climate': {
-    h1: 'Best Smart Sleep Climate Systems (2026)',
+    h1: 'Smart Sleep Climate System Reviews (2026)',
     intro:
       'Bed-surface temperature regulation went from niche biohacker hardware to mainstream biohacker reference in 2024–2026, driven by Eight Sleep’s Pod and the long-running Sleepme (ChiliPad) lineage. ONDA scored the ten most credible smart sleep-climate systems of 2026 against the same six axes — climate range, build, app and tracking, form factor, subscription model and value.',
   },
   pemf: {
-    h1: 'Best PEMF Devices (2026)',
+    h1: 'PEMF Device Reviews (2026)',
     intro:
       'Pulsed electromagnetic field hardware divides cleanly across three form factors — full-body mats (Bemer, Healthy Wave, HigherDOSE), localised coil systems (Pulse Centers, Curatron, iMRS) and the new wearable tier (Resona Health VIBE). ONDA scored the ten most credible PEMF devices of 2026 against the same six axes — field strength, waveform research, build, programmability, form factor and value.',
   },
   'breathwork-app': {
-    h1: 'Best Breathwork Apps (2026)',
+    h1: 'Breathwork App Reviews (2026)',
     intro:
       'Breathwork went from niche somatic-therapy modality to mainstream nervous-system tool in 2024–2026, driven by the Stanford cyclic-sighing research and the Wim Hof / Othership crossover into recovery culture. ONDA scored the ten most credible breathwork apps of 2026 against the same six axes — session library, technique coverage, evidence grounding, app experience, biofeedback integration and value.',
   },
   'red-light-mask': {
-    h1: 'Best Red Light Face Masks (2026)',
+    h1: 'Red Light Face Mask Reviews (2026)',
     intro:
       'Red light face masks split sharply across two tiers by 2026: FDA-cleared clinical references (Omnilux Contour, Dr. Dennis Gross SpectraLite, LightStim) and consumer-brand premium devices (CurrentBody Series 2, HigherDOSE, TheraFace, Lumara Viso). Form factor is the second axis — flexible silicone vs hard shell vs handheld wand. ONDA scored the ten most credible masks of 2026 against the same six axes — irradiance, wavelength coverage, LED count and facial coverage, clinical evidence, comfort and value.',
   },
   'breathing-aid': {
-    h1: 'Best Mouth Tape & Nasal Breathing Aids (2026)',
+    h1: 'Mouth Tape & Nasal Breathing Aid Reviews (2026)',
     intro:
       'Mouth taping and nasal-breathing hardware went mainstream in 2024–2026 driven by James Nestor\'s Breath, the Wim Hof breathing crossover and the Hostage Tape biohacker brand. The category splits across mouth tape (full-seal vs porous) and nasal dilators (external strips vs internal stents). ONDA scored the ten most credible products of 2026 against the same six axes — adhesion and comfort, breathing mechanism, evidence and safety, form factor, material safety and value.',
   },
   'massage-gun': {
-    h1: 'Best Massage Guns (2026)',
+    h1: 'Massage Gun Reviews (2026)',
     intro:
       'Percussion-therapy hardware split into clear tiers by 2026: premium reference brands (Therabody Theragun PRO Plus, Hyperice Hypervolt 2 Pro), mid-tier (Theragun Elite, Achedaway Pro), and credible budget alternatives that closed the spec gap meaningfully (Bob and Brad Q2 Mini, Renpho R3, OPOVE M3 Pro 2). ONDA scored the ten most credible massage guns of 2026 against the same six axes — stall force and amplitude, build and attachments, battery and noise, app features, ergonomics and value.',
   },
   'air-purifier': {
-    h1: 'Best Air Purifiers (2026)',
+    h1: 'Air Purifier Reviews (2026)',
     intro:
       'Air purification went from allergy-niche product to biohacker-adjacent recovery hardware in 2024–2026, driven by wildfire-PM2.5 awareness and the indoor-air-quality crossover into sleep / longevity protocols. The category splits cleanly: clinical-tier HEPA references (IQAir, Molekule), consumer premium (Dyson, Coway Airmega, Blueair), mid-budget smart (Levoit, Winix), and entry budget (Levoit Core 300). ONDA scored the ten most credible air purifiers of 2026 against the same six axes — filtration technology, CADR and coverage, build and noise, smart features, maintenance cost and value.',
   },

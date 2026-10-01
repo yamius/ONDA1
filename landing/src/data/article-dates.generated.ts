@@ -582,7 +582,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "resting-heart-rate-by-age": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-29T09:45:29+02:00"
+    "modified": "2026-10-01T13:42:56+02:00"
   },
   "rhythmic-entrainment-system-frequencies": {
     "published": "2026-03-31T22:29:31Z",

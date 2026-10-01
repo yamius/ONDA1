@@ -3476,24 +3476,29 @@ function getMetaForRouteBase(route: string): RouteMeta {
       const label = CATEGORY_LABELS[category]
       const catReviews = reviews.filter((r) => r.category === category)
       const catComparison = comparisons.find((c) => c.category === category)
-      const titleByCat: Record<typeof category, string> = {
-        'hrv-wearable': `Best HRV Trackers (2026) — Independent Reviews | ONDA Life`,
-        'meditation-app': `Best Meditation Apps (2026) — Independent Reviews | ONDA Life`,
-        'sleep-app': `Best Sleep Apps (2026) — Independent Reviews | ONDA Life`,
-        'vagus-stim': `Best Vagus Nerve Stimulators (2026) — Independent Reviews | ONDA Life`,
-        cgm: `Best CGMs for Biohackers (2026) — Independent Reviews | ONDA Life`,
-        'eeg-headset': `Best EEG & Brain-Training Headsets (2026) — Independent Reviews | ONDA Life`,
-        'red-light': `Best Red Light Therapy Panels (2026) — Independent Reviews | ONDA Life`,
-        'cold-plunge': `Best Cold Plunge & Ice Bath (2026) — Independent Reviews | ONDA Life`,
-        sauna: `Best Infrared Sauna & Sauna (2026) — Independent Reviews | ONDA Life`,
-        'sleep-climate': `Best Smart Sleep Climate Systems (2026) — Independent Reviews | ONDA Life`,
-        pemf: `Best PEMF Devices (2026) — Independent Reviews | ONDA Life`,
-        'breathwork-app': `Best Breathwork Apps (2026) — Independent Reviews | ONDA Life`,
-        'red-light-mask': `Best Red Light Face Masks (2026) — Independent Reviews | ONDA Life`,
-        'breathing-aid': `Best Mouth Tape & Nasal Breathing Aids (2026) — Independent Reviews | ONDA Life`,
-        'massage-gun': `Best Massage Guns (2026) — Independent Reviews | ONDA Life`,
-        'air-purifier': `Best Air Purifiers (2026) — Independent Reviews | ONDA Life`,
+      // Category pages target "<thing> reviews"; the round-up (/reviews/compare/best-…)
+      // owns "best <thing>". Both used to share one "Best … (2026)" title and
+      // competed for the same query (GSC 2026-09: category pos 40-45, round-up ~10).
+      const nounByCat: Record<typeof category, string> = {
+        'hrv-wearable': 'HRV Tracker',
+        'meditation-app': 'Meditation App',
+        'sleep-app': 'Sleep App',
+        'vagus-stim': 'Vagus Nerve Stimulator',
+        cgm: 'CGM',
+        'eeg-headset': 'EEG Headset',
+        'red-light': 'Red Light Panel',
+        'cold-plunge': 'Cold Plunge',
+        sauna: 'Sauna',
+        'sleep-climate': 'Sleep Cooling System',
+        pemf: 'PEMF Device',
+        'breathwork-app': 'Breathwork App',
+        'red-light-mask': 'Red Light Mask',
+        'breathing-aid': 'Mouth Tape',
+        'massage-gun': 'Massage Gun',
+        'air-purifier': 'Air Purifier',
       } as Record<typeof category, string>
+      const noun = nounByCat[category] ?? label
+      const titleByCat = { [category]: `${noun} Reviews: ${catReviews.length} Scored (2026) | ONDA Life` } as Record<typeof category, string>
       const descriptionByCat: Record<typeof category, string> = {
         'hrv-wearable':
           'Independent ONDA reviews of HRV trackers — rings, bands, smartwatches and chest straps — scored on measurement accuracy, sleep, data access, wearability and value.',
