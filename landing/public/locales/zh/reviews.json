@@ -47,44 +47,57 @@
   },
   "bodies": {
     "resona-health-vibe": {
-      "verdict": "最佳可穿戴 PEMF 入门之选——$299，130+ 种方案，App 控制，无需铺设理疗垫。场强低于全身理疗垫，这是有意为之的设计。",
-      "summary": "Resona Health VIBE 属于可穿戴 PEMF 入门档——口袋大小的设备，提供 130+ 种针对性方案，可通过 App 设定日程，售价 $299。其场强远低于全身理疗垫，设计理念是针对局部部位使用，而非被动的全身疗程。对于好奇 PEMF、但还不准备花 $2,000+ 购买理疗垫的用户，这是最好的入门选择。",
-      "description": "Resona Health VIBE 评测：最易上手的可穿戴 PEMF——$299，130+ 种 App 控制方案，无需铺设理疗垫。场强低于全身理疗垫。",
-      "bestFor": "适合想低门槛尝试 PEMF、需要便携可穿戴 PEMF，或想要一台 $300 以内、方案丰富的局部使用设备的用户。",
-      "testNote": "基于证据的评估——依据 Resona Health 产品资料和 2026 年可穿戴 PEMF 评测打分。ONDA 未进行实机测试。",
+      "verdict": "最佳可穿戴PEMF入门之选——$299，130多种方案，App控制，无需安装垫子。磁场强度低于全身垫，这是有意为之的设计。",
+      "summary": "Resona Health VIBE是可穿戴PEMF的入门级产品——口袋大小的设备，提供130多种针对性方案、App控制的日程安排，售价$299。其磁场强度远低于全身垫，设计理念是针对局部使用，而不是被动的全身疗程。对于对PEMF感兴趣、但还不准备为垫子花$1,750以上的用户，这是最佳入门选择。",
+      "description": "Resona Health VIBE评测：最容易上手的可穿戴PEMF——$299，130多种App控制方案，无需安装垫子。磁场强度低于全身垫。",
+      "bestFor": "最适合想低门槛尝试PEMF、想要便携可穿戴PEMF，或想在$300以下买到方案丰富的局部使用设备的用户。",
+      "testNote": "基于证据的评估——依据Resona Health产品资料和2026年可穿戴PEMF评测评分。ONDA未进行实物测试。",
+      "productType": "拥有130多种方案的可穿戴PEMF设备",
       "pros": [
-        "PEMF 入门档中性价比最高——$299，对比理疗垫的 $2,000+",
-        "130+ 种有文档说明的方案，支持 App 控制",
-        "可穿戴 / 便携外形",
-        "在投资理疗垫之前，以低门槛方式探索 PEMF"
+        "PEMF入门级中性价比最高——$299，而垫子需$1,750以上",
+        "130多种有资料可查的方案，App控制",
+        "可穿戴／便携的外形",
+        "在投资垫子之前，以低门槛探索PEMF"
       ],
       "cons": [
-        "场强低于全身理疗垫（设计使然）",
-        "无法同时进行全身疗程",
-        "新品牌，缺乏数十年的品牌积淀",
-        "仅适用于局部使用——不是躺在垫子上的被动疗程"
+        "磁场强度低于全身垫（设计如此）",
+        "无法同时进行全身治疗",
+        "新品牌，没有数十年的品牌积淀",
+        "仅限局部使用——不是躺在垫子上的被动疗程"
       ],
       "scoreNotes": {
-        "field-strength": "可穿戴外形意味着峰值强度低于全身理疗垫。专为针对局部使用而设计，而非全身场暴露。",
-        "waveform-evidence": "130+ 种方案取自已有文献记载的 PEMF 频率研究。没有独家的单一波形研究壁垒——依托的是现有文献。",
-        "build": "口袋大小的可穿戴设计，2 年保修。虽是新品牌，但在 2026 年可穿戴 PEMF 细分领域评价良好。",
-        "programmability": "入门档中可编程性最佳——130+ 种方案，支持 App 控制和日程设定。以这个价格能真正调节参数。",
-        "form-factor": "可穿戴 / 口袋外形。仅限局部使用——无法像理疗垫那样覆盖全身。便携性出色，适合随时随地使用方案。",
-        "value": "$299——PEMF 中性价比最高的入门之选。对好奇 PEMF 的用户来说，这个价格很难挑剔。"
+        "field-strength": "可穿戴外形意味着峰值强度低于全身垫。专为针对性的局部使用设计，而非全身磁场暴露。",
+        "waveform-evidence": "130多种方案取自已有记录的PEMF频率研究。没有专有单一波形的研究壁垒——使用的是现有文献。",
+        "build": "口袋大小的可穿戴设计，2年保修。虽是新品牌，但在2026年可穿戴PEMF领域口碑良好。",
+        "programmability": "入门级中可编程性最佳——130多种方案，带App控制和日程安排。以这个价格能真正调整参数。",
+        "form-factor": "可穿戴／口袋大小。仅限针对性的局部使用——无法像全身垫那样覆盖全身。便携性和随时随地执行方案方面表现出色。",
+        "value": "$299——PEMF性价比最高的入门选择。对PEMF感兴趣的用户来说，这个价格很难挑剔。"
       },
-      "content": "## 优势所在\n\nResona Health VIBE 属于可穿戴 PEMF 入门档——售价 $299，提供 130+ 种有文档说明的方案，可通过 App 设定日程，口袋大小，便于携带。无需花 $2,000+ 购买理疗垫，就能以最低门槛探索 PEMF。\n\n## 不足之处\n\n场强和全身覆盖。可穿戴外形意味着峰值强度较低，且只能局部使用——无法获得躺在垫子上的被动全身疗程。新品牌，缺乏数十年的品牌积淀。\n\n## 适合人群\n\n如果你对 PEMF 感到好奇、想低门槛入门，或想要一台用于针对性方案的便携可穿戴设备，可以选择 Resona Health VIBE。想要全身理疗垫疗程，选 OMI 或 Healthy Wave；想要有研究支持的信号，选 Bemer；想要专注睡眠的 PEMF，选 EarthPulse。\n\n---\n\n## 延伸阅读\n\n- [愈合的生物电架构](/articles/electric-medicine-neuromodulation)\n- [线粒体恢复方案](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "content": "## 简要结论\n\nResona Health VIBE是无需购买垫子就能尝试PEMF的最简单方式。它是一款售价$299的口袋大小可穿戴设备，拥有130多种App控制的程序和日程安排。代价是设计上的取舍：磁场强度较低，且只能针对局部而非全身使用。如果你想在花$1,750或更多买垫子之前，先弄清PEMF对你是否有作用，它是明智的入门选择。\n\n## 什么是PEMF，它有效吗？\n\nPEMF（脉冲电磁场）设备向身体发送短促的磁脉冲。医用PEMF设备用于特定问题，例如愈合缓慢的骨折。而对于消费级健康设备，证据要薄弱得多。\n\n日常用途中研究最充分的是关节疼痛。一项针对骨关节炎小型试验的Cochrane综述发现，电磁场疗法可能适度减轻疼痛，而对功能的益处尚不确定（Li 2013）。关于睡眠、精力、恢复或“细胞充电”的说法主要来自制造商，而非独立试验。我们没有找到针对VIBE本身的独立临床试验。\n\n因此，诚实的说法是：PEMF是一项低风险的尝试，而不是经过证实的治疗。为一个具体目标去尝试，坚持几周做简单记录，再根据变化来判断。\n\n## Resona Health VIBE有哪些缺点？\n\n主要缺点是磁场强度较低，且无法覆盖全身。可穿戴外形意味着只能进行局部疗程——无法获得垫子那种躺下的全身疗程。Resona也是较新的品牌，没有Bemer等老牌PEMF厂商那样的长期记录。\n\n## Resona VIBE与PEMF垫对比\n\n| | Resona Health VIBE | 全身PEMF垫 |\n|---|---|---|\n| 价格 | $299 | 约$1,750–$5,500 |\n| 覆盖范围 | 局部，一个部位 | 全身 |\n| 便携性 | 口袋大小 | 固定在家中 |\n| 最适合 | 尝试PEMF、旅行、单个部位 | 每日全身疗程 |\n\n全身垫请参阅[OMI Full Body Mat](/reviews/omi-full-body-mat)和[Healthy Wave](/reviews/healthy-wave-multi-wave)。最注重研究的品牌请参阅[Bemer](/reviews/bemer-classic-evo)。侧重睡眠的PEMF请参阅[EarthPulse](/reviews/earthpulse-sleep-on-command)。所有选项均在[2026年最佳PEMF设备](/reviews/compare/best-pemf-devices-2026)中排名。\n\n## 谁应该买Resona Health VIBE？\n\n如果你对PEMF感兴趣，想要一台低门槛的首款设备，或者想要一款可针对性使用的便携可穿戴设备，请选择Resona Health VIBE。如果你想要全身疗程，或期待经过证实的医疗效果，则不必考虑。\n\n## PEMF安全吗？\n\n对大多数健康成年人来说，低强度的消费级PEMF风险似乎较低。如果你装有心脏起搏器或其他植入式电子设备，请勿使用；如果你怀孕、患有癫痫或正在接受疾病治疗，请先咨询医生。PEMF不应取代医疗治疗。\n\n---\n\n## 延伸阅读\n\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n- [线粒体生物发生](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
       "faq": [
         {
-          "q": "Resona Health VIBE 多少钱？",
-          "a": "Resona Health VIBE 作为独立可穿戴设备售价 $299，含 App。相比 $2,000+ 的全身理疗垫，它是 PEMF 入门档中性价比最高的选择，也是探索 PEMF 门槛最低的方式。ONDA 在性价比一项给它打 8.5/10。"
+          "q": "Resona Health VIBE多少钱？",
+          "a": "Resona Health VIBE作为独立可穿戴设备售价$299，包含App。相比全身垫约$1,750或更高的价格，它是PEMF入门级中性价比最高的选择，也是探索PEMF门槛最低的方式。ONDA的性价比评分为8.5/10。"
         },
         {
-          "q": "Resona Health VIBE 有什么作用？",
-          "a": "Resona Health VIBE 是一款口袋大小的可穿戴 PEMF 设备，提供 130+ 种 App 控制的方案，并支持日程设定。它专为针对局部使用而设计，而非全身疗程，因此场强有意低于全身理疗垫。ONDA 给它的综合评分为 6.8/10。"
+          "q": "Resona Health VIBE有什么作用？",
+          "a": "Resona Health VIBE是一款口袋大小的可穿戴PEMF设备，提供130多种App控制的方案和日程安排。它专为针对性的局部使用而非全身疗程设计，因此磁场强度按设计低于全身垫。ONDA总评分为6.8/10。"
         },
         {
-          "q": "Resona Health VIBE 最适合哪些人？",
-          "a": "Resona Health VIBE 最适合想低门槛尝试 PEMF、需要便携可穿戴 PEMF，或想要一台 $300 以内、方案丰富的局部使用设备的用户。它不适合需要同时进行全身疗程的场景，这种情况下全身理疗垫是更好的选择。"
+          "q": "Resona Health VIBE最适合谁？",
+          "a": "Resona Health VIBE最适合想低门槛入门的PEMF好奇者、想要便携可穿戴PEMF的人，或想在$300以下买到方案丰富的局部使用设备的人。它不适合同时进行全身治疗，这种情况下全身垫是更好的选择。"
+        },
+        {
+          "q": "Resona Health VIBE真的有效吗？",
+          "a": "目前没有针对VIBE本身的独立临床试验。就PEMF整体而言，证据最好的是关节疼痛：一项Cochrane综述发现，电磁场疗法可能适度减轻骨关节炎疼痛，对功能的影响尚不确定。关于睡眠、精力或恢复的说法主要依据制造商数据。请把它当作低风险的尝试，而不是经过证实的治疗。"
+        },
+        {
+          "q": "PEMF使用安全吗？",
+          "a": "对大多数健康成年人来说，低强度的消费级PEMF风险似乎较低。装有心脏起搏器或其他植入式电子设备者请勿使用；如果你怀孕、患有癫痫或正在接受疾病治疗，请先咨询医生。"
+        },
+        {
+          "q": "Resona VIBE还是PEMF垫——该买哪个？",
+          "a": "VIBE售价$299，口袋大小，一次处理一个部位。全身垫约$1,750至$5,500，可在家进行全身疗程。如果想便宜地尝试PEMF，就从VIBE开始；如果你已经确定想要每日全身疗程，就选择垫子。"
         }
       ]
     },
@@ -95,19 +108,278 @@
     "whoop-5-0": {
       "verdict": "戴在手腕上的恢复教练：连续夜间 HRV 与精准的负荷洞察，但必须绑定永久会员。",
       "productType": "无屏手环"
+    },
+    "ultrahuman-m1": {
+      "verdict": "最佳生态系统之选——在一个App中把血糖数据与Ultrahuman Ring的HRV、睡眠和恢复数据结合起来。",
+      "summary": "Ultrahuman M1是Ultrahuman平台的CGM部分——与运行Ultrahuman戒指的是同一个App。在美国以外，它使用雅培FreeStyle Libre传感器；在美国，Ultrahuman于2026年6月18日推出了M2 Live，基于雅培非处方的Lingo传感器，无需处方。它的差异化在于整合：餐食、血糖曲线、睡眠、HRV、活动和恢复都在同一时间线上。对Ultrahuman戒指用户很有吸引力；作为独立CGM则较弱。",
+      "description": "Ultrahuman M1评测（2026）：生态系统型CGM——在一个App中结合HRV、睡眠和恢复解读血糖。美国现以M2 Live销售，采用雅培非处方Lingo传感器，每月$99起。",
+      "bestFor": "最适合已在Ultrahuman生态系统中、希望将血糖与HRV和睡眠结合查看的用户。",
+      "testNote": "基于证据的评估——依据Ultrahuman产品资料和新闻稿、雅培传感器验证文献以及2026年独立评测评分。ONDA未进行实物测试。",
+      "productType": "配合戒指生态系统的CGM计划（美国以外为雅培Libre；美国通过M2 Live使用雅培Lingo）",
+      "pros": [
+        "配合Ultrahuman戒指，在一个App中查看血糖、HRV、睡眠和恢复",
+        "美国版（M2 Live）为非处方——自2026年6月起无需处方",
+        "月度方案$99起，可随时取消；也可单买传感器",
+        "提供仅有CGM的计划无法给出的跨信号洞察"
+      ],
+      "cons": [
+        "大部分附加价值需要Ultrahuman戒指——而Ring Air已不在美国销售（Ring Pro在售）",
+        "雅培传感器在准确度上略逊于Dexcom G7",
+        "指导由AI加表现教练提供——没有营养师或临床医生",
+        "美国Lingo版本仅面向18岁以上且不使用胰岛素的成年人"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "全部采用雅培传感器：美国以外为FreeStyle Libre（Libre 3的MARD约9%），美国通过M2 Live使用雅培Lingo（佩戴14天，基于Libre）。在独立比较中准确度略低于Dexcom G7。",
+        "insights": "扎实的餐食影响分析，加上独特的跨信号视图：血糖与HRV、睡眠和恢复显示在同一时间线上。",
+        "coaching": "主要由AI驱动（Jade AI洞察）。方案包含与表现教练的沟通，但不是营养师或临床医生。",
+        "app-integration": "与Ultrahuman戒指原生集成，提供HRV/睡眠/恢复数据；支持Apple Health、Google Fit和饮食记录。是该类别中功能最丰富的单一App组合。",
+        "flexibility": "美国：单个Lingo传感器$129，或每月$99起的订阅，可随时取消。戒指是可选的，但承载了大部分附加价值。",
+        "value": "在美国每月$99起——与Stelo持平，比Levels便宜。如果你已有Ultrahuman戒指，性价比最高。"
+      },
+      "content": "## 简要结论\n\nUltrahuman M1是一个连续血糖监测（CGM）计划，位于Ultrahuman App中，与Ultrahuman智能戒指的数据并列。这正是它的全部意义：你的血糖曲线与HRV、睡眠和恢复处于同一时间线上。如果你拥有Ultrahuman戒指，它是整合度最高的CGM选择。如果你只想要血糖数据，更便宜或更简单的选项同样好用。\n\n**美国重要更新：** 2026年6月18日，Ultrahuman在美国推出了**M2 Live**。它使用雅培的非处方**Lingo**传感器，因此你不再需要处方或医疗咨询。订阅价格每月$99起，单个传感器$129。在美国以外，M1仍使用雅培FreeStyle Libre传感器。\n\n## Ultrahuman M1如何工作？\n\n你把一个小传感器贴在上臂后侧。皮下的细丝测量细胞间液（而非血液）中的葡萄糖，持续约14天。手机读取传感器，Ultrahuman App显示餐食、运动、压力和睡眠如何影响你的血糖。配合戒指，App还会把这些曲线与HRV、睡眠阶段和恢复联系起来——例如，深夜的丰盛晚餐是否表现为睡眠变差和次日早晨HRV降低。\n\n## 证据怎么说？\n\n雅培Libre系列传感器在糖尿病患者中经过充分验证；Libre 3相对于实验室血糖的平均绝对误差约为9%。对于**没有**糖尿病的人，证据较弱。健康人的血糖保持在狭窄范围内，餐后小幅上升是正常的。目前还没有有力证据表明追求更平缓的曲线能改善长期健康。CGM最好用作习惯的反馈工具，而不是健康的定论。\n\n## Ultrahuman M1多少钱？\n\n| 选项 | 价格（美国） | 备注 |\n|---|---|---|\n| Ultrahuman M2 Live（Lingo） | 每月$99起；单个传感器$129 | 无需处方，戒指可选 |\n| [Stelo](/reviews/stelo)（Dexcom） | 2个传感器$99（约30天） | 无需处方，App简单 |\n| [Lingo](/reviews/lingo)（雅培App） | 每个2周传感器$54起 | 同款传感器，雅培自家App |\n| [Levels](/reviews/levels) | Core会员$399/年 | 一个月CGM＋化验套餐 |\n\n如果你还想要戒指，[Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro)一次性售价$479。在Oura赢得专利诉讼后，旧款Ring Air已不在美国销售——CGM本身不在该禁令范围内。\n\n## Ultrahuman M1有哪些缺点？\n\n几乎所有差异化都取决于你是否同时拥有Ultrahuman戒指。作为独立CGM，它就是一个雅培传感器加一个合格的App——雅培自家的Lingo App每个传感器更便宜，而基于Dexcom的Stelo准确度略高。指导主要来自AI。美国Lingo版本仅面向18岁以上且不使用胰岛素的成年人。\n\n## 谁应该买Ultrahuman M1，谁不应该？\n\n**购买**：如果你已拥有（或计划购买）Ultrahuman戒指，并希望在一处查看血糖、睡眠和HRV。\n\n**不必考虑**：如果你只想要血糖数据（参见[Lingo vs Stelo vs Ultrahuman M1](/reviews/vs/lingo-vs-stelo-vs-ultrahuman-m1)），如果你想要真人营养师，或者你患有糖尿病或使用胰岛素——那就请在医生指导下使用医用CGM。\n\n## 安全提示\n\n消费级CGM不是诊断设备。它们无法诊断或排除糖尿病或糖尿病前期；如果你的数值让你担心，请让医生为你做HbA1c或空腹血糖检测。胶贴可能刺激皮肤；请轮换手臂，如出现皮疹或感染迹象请停止使用。\n\n更多选择请参阅[2026年生物黑客最佳CGM](/reviews/compare/best-cgm-for-biohackers-2026)和[Levels vs Ultrahuman M1](/reviews/vs/levels-vs-ultrahuman-m1)。\n\n---\n\n## 延伸阅读\n\n这些计划所呈现的代谢生物学——以及数据所开启的方案。\n\n- [AI生物标志物追踪](/articles/ai-biomarker-tracking-predictive) ——CGM是消费者可获得的最高密度生物标志物数据流\n- [皮质醇现在能连续监测了吗？](/articles/chm-continuous-hormone-monitoring) ——为什么与血糖不同，目前没有消费级可穿戴设备能测量激素\n- [作为数据链接的肠脑轴](/articles/gut-brain-axis-data-link) ——微生物组与血糖模式的交汇之处\n",
+      "faq": [
+        {
+          "q": "Ultrahuman M1 CGM的准确度如何？",
+          "a": "Ultrahuman M1使用雅培传感器：美国以外为FreeStyle Libre（Libre 3的MARD约9%），美国通过M2 Live使用雅培Lingo。两者都可佩戴14天，无需校准。其传感器准确度得分8.5/10，略逊于Dexcom G7，ONDA总评分为7.5/10。"
+        },
+        {
+          "q": "Ultrahuman M1多少钱？",
+          "a": "在美国，Ultrahuman的CGM现以M2 Live销售，采用雅培Lingo传感器：月度订阅$99起，或单个14天传感器$129，无需处方（2026年6月价格）。Ultrahuman戒指可选并单独销售；Ring Pro售价$479。"
+        },
+        {
+          "q": "Ultrahuman M1作为独立CGM值得买吗？",
+          "a": "Ultrahuman M1最适合已在Ultrahuman生态系统中的用户，而不是作为独立CGM。它的差异化在于在同一时间线上结合血糖与HRV、睡眠和恢复，这需要Ultrahuman戒指。单独使用时，Lingo或Stelo能以相同或更低的价格提供类似的血糖数据。"
+        },
+        {
+          "q": "Ultrahuman M1值得买吗？",
+          "a": "如果你拥有Ultrahuman戒指，并希望在一个App中把血糖与睡眠和HRV放在一起看，那就值得。仅就血糖而言，它并不比Stelo或雅培自家的Lingo App更好；对于没有糖尿病的人，CGM是习惯反馈工具，而不是健康改善的证明。"
+        },
+        {
+          "q": "在美国使用Ultrahuman M1需要处方吗？",
+          "a": "不再需要。自2026年6月18日起，Ultrahuman在美国销售M2 Live，采用雅培非处方Lingo传感器，面向18岁以上且不使用胰岛素的成年人。早期的美国版M1需要医疗咨询。"
+        },
+        {
+          "q": "Ultrahuman M1是否受美国Ultrahuman戒指禁令影响？",
+          "a": "不受影响。2025年的美国进口禁令源于Oura的专利案，涉及Ultrahuman的戒指，如Ring Air。CGM计划仍在销售，Ultrahuman于2026年以Ring Pro重返美国戒指市场。"
+        }
+      ]
+    },
+    "oura-ring-4": {
+      "verdict": "仍是出色的夜间HRV和睡眠追踪器——现在比更纤薄、传感器升级的Oura Ring 5低一档，但共享同样的新软件，打折时往往更具性价比。强制订阅依然存在。",
+      "productType": "智能戒指"
+    },
+    "garmin-venu-4": {
+      "verdict": "一款能干、无需订阅的全能手表，续航足以整夜追踪HRV——没有哪项是同类最佳，但样样都合格。",
+      "productType": "智能手表"
+    },
+    "muse-s-athena": {
+      "verdict": "最完整的消费级脑训练头戴设备——可戴着睡觉的柔软头带集成EEG和fNIRS。",
+      "productType": "消费级EEG + fNIRS头带（冥想、睡眠、专注）"
+    },
+    "muse-2": {
+      "verdict": "最受欢迎的消费级EEG头带——内容成熟，价格亲民，是该类别的入门之选。",
+      "productType": "消费级EEG头带（冥想）"
+    },
+    "neurosity-crown": {
+      "verdict": "最适合开发者和生物黑客的EEG头戴设备——开放SDK、原始数据、专注音乐流。高端价格。",
+      "productType": "面向开发者的EEG头戴设备（专注、心流）"
+    },
+    "emotiv-insight-2": {
+      "verdict": "研究-消费级混合产品——五通道和真正的学术工具链，原始数据需订阅。",
+      "productType": "研究-消费级混合EEG头戴设备（5通道）"
+    },
+    "sens-ai": {
+      "verdict": "最具雄心的多模态头戴设备——EEG加光生物调节加HRV，高端价格需要明确的用途才值得。",
+      "productType": "多模态头戴设备（EEG + 光生物调节 + HRV）"
+    },
+    "myndlift": {
+      "verdict": "临床可信度最高的神经反馈平台——需通过持证服务提供者，拥有真实方案和真实疗效。",
+      "productType": "居家临床神经反馈（处方）"
+    },
+    "mendi": {
+      "verdict": "不是EEG——以简单游戏形式进行的fNIRS前额叶训练。易于使用，用途聚焦。",
+      "productType": "fNIRS前额叶脑训练头带"
+    },
+    "focuscalm": {
+      "verdict": "内容驱动的EEG头带——价格亲民，App不错，单通道信号限制了深度。",
+      "productType": "消费级EEG头带（专注与平静训练）"
+    },
+    "flow-neuroscience": {
+      "verdict": "不是EEG——用于抑郁症的临床tDCS，本清单中监管和试验支持最强。",
+      "productType": "获FDA批准（PMA）和CE认证的抑郁症tDCS头戴设备（美国仅限处方）"
+    },
+    "neurosky-mindwave-mobile-2": {
+      "verdict": "最便宜的正规消费级EEG头戴设备——单通道、功能基础，但为开发者和学习者提供开放SDK。",
+      "productType": "平价教育用EEG头戴设备（单通道）"
+    },
+    "platinumled-biomax-600": {
+      "verdict": "一款强大的中型面板，拥有最丰富的波长光谱和严格的电磁场（EMF）控制。Joovv级别的做工，价格低一个档次。",
+      "summary": "PlatinumLED BIOMAX 600是BIOMAX系列中较小的旗舰——覆盖七种波长（480 + 630 + 660 + 810 + 830 + 850 + 1060 nm），EMF和频闪经过独立检测，做工接近Joovv，价格却明显更低。PlatinumLED进入消费级光生物调节市场的时间比大多数品牌都长，产品线已经成熟。中型意味着该面板很适合搭配支架进行局部照射；全身照射需要两台。",
+      "description": "ONDA评测PlatinumLED BIOMAX 600——中型七波长红光和近红外光面板（$1,049），第三方EMF检测扎实。按辐照度、EMF控制和性价比评分。",
+      "bestFor": "最适合希望以低于Joovv的价格获得宽光谱覆盖和经过验证的EMF控制的买家。",
+      "testNote": "基于证据的评估——依据PlatinumLED产品资料、已公开的第三方EMF和频闪检测报告以及光生物调节基础文献评分。ONDA未进行实物测试。",
+      "productType": "中型红光 + 近红外LED理疗面板",
+      "pros": [
+        "本清单中波长光谱最宽——公布了七种波长",
+        "公开发布第三方EMF和频闪检测",
+        "$1,049，比Joovv Solo 3.0和MitoPRO 1500便宜；3年保修",
+        "成熟品牌，在消费级红光疗法领域拥有长期记录"
+      ],
+      "cons": [
+        "中型面板——照射面积小于MitoPRO 1500或完整的Joovv组合",
+        "没有FDA II类注册",
+        "七波长的说法在较少见的波段（480、810、1060）依赖较少的LED数量",
+        "支架和安装配件需另购"
+      ],
+      "scoreNotes": {
+        "irradiance": "厂商宣称0\"处峰值约149 mW/cm²；6\"处约70 mW/cm²。独立验证结果与标称6\"数值相差在10%以内。",
+        "wavelengths": "覆盖七种波长（据PlatinumLED当前产品页为480 + 630 + 660 + 810 + 830 + 850 + 1060 nm）——甚至比MitoPRO更宽。480 nm蓝光比较少见，在总输出中占比很小。",
+        "build-emf-flicker": "第三方EMF检测在6\"处<0.3 mG，频闪率已公开且较低。PlatinumLED公开发布了实验室检测结果——在该类别中很少见。",
+        "coverage": "中型面板——可覆盖上半身。比Joovv Solo或MitoPRO 1500小；适合局部照射，但全身需要叠加使用。",
+        "evidence": "PlatinumLED引用了真实的光生物调节文献；没有Joovv那样的FDA II类注册，但相较于该类别的常见做法，其营销较为克制。",
+        "value": "$1,049（2026年10月）——在做工相当、光谱更宽的情况下，明显比Joovv Solo 3.0和MitoPRO 1500便宜。在高端档次中性价比很高。"
+      },
+      "content": "## 领先之处\n\nPlatinumLED BIOMAX 600是在略低于Joovv和MitoPRO的价格档次中，凭借光谱宽度和EMF控制胜出的面板。七波长覆盖（480 + 630 + 660 + 810 + 830 + 850 + 1060 nm）比本清单中任何其他产品都宽，而且PlatinumLED是少数公开发布第三方EMF和频闪检测报告、而不只是宣称数字的品牌之一。\n\n## PlatinumLED BIOMAX 600有哪些缺点？\n\nBIOMAX 600的主要缺点是尺寸：它是中型面板——比Joovv Solo 3.0或MitoPRO 1500小。要覆盖全身需要叠加两台。七波长的说法部分属于营销：480 nm蓝光在总输出中占比很小，较少见波段的LED数量较少，意味着其有效剂量有限。没有Joovv那样的FDA II类注册。\n\n## PlatinumLED BIOMAX 600值得买吗？\n\n对于想要一台认真的中型面板的大多数买家来说，值得。售价$1,049（美国官方商店，2026-10-01核实），比Joovv Solo 3.0（$1,295）和MitoPRO 1500（$1,199）便宜，光谱更宽，有3年保修，检测结果公开可查。它不是入门红光疗法最便宜的途径——Hooga HG500售价$349——如果你需要全身覆盖，就得为两台面板或更大的型号付费。\n\n## 红光和近红外面板的作用——以及实事求是的证据\n\n红光（约630–660 nm）和近红外光（约810–850 nm）被线粒体中的细胞色素c氧化酶吸收；所提出的作用是短期提升细胞能量生产并降低氧化应激，这一过程称为光生物调节。红光主要作用于皮肤；近红外光能更深地穿透到肌肉和关节。\n\n证据在皮肤方面最强。在一项涉及136名志愿者的对照试验中，Wunsch和Matuschka发现，与对照组相比，每周两次的红光或宽带光照射改善了自评肤色、皮肤粗糙度以及超声测量的胶原密度（[Photomedicine and Laser Surgery, 2014, doi:10.1089/pho.2013.3616](https://doi.org/10.1089/pho.2013.3616)）。对于肌肉恢复、关节疼痛、睡眠或“长寿”，研究规模较小，使用的剂量和设备各不相同，结果也不一致——请把这些说法视为有前景但未经证实。大多数试验使用的是临床设备而非这款面板，因此结果不能一对一地套用。\n\n## 距离、剂量和疗程时间（厂商建议）\n\nPlatinumLED产品页建议**每个部位10–20分钟**，**深层组织约8–14英寸**，**面部浅层皮肤16–24英寸**。距离越近辐照度越高、疗程越短；并非越多越好，因为光生物调节遵循剂量-反应曲线，剂量过高反而可能削弱效果。从短时间开始，并坚持使用（大多数研究每周进行数次疗程）。\n\n## 安全\n\n- **眼睛：** 不要直视LED。近红外光肉眼不可见，所以面板看起来比实际输出更暗——请佩戴防护眼镜，尤其是在照射面部时。\n- **光敏性药物和疾病：** 如果你正在服用会增加光敏感性的药物（例如某些抗生素、异维A酸、某些利尿剂），或患有狼疮、卟啉症等光敏性疾病，请先咨询医生。\n- **怀孕、癌症，或照射可疑痣或纹身部位：** 请先咨询临床医生。\n- **发热：** 如果皮肤热得不舒服，请停止使用。\n\n## 对比\n\n| 面板 | 价格（美元） | 波长 | 备注 |\n|---|---|---|---|\n| PlatinumLED BIOMAX 600 | $1,049 | 7种（480–1060 nm） | 中型，公开EMF检测，支架另购 |\n| [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,295 | 红光 + 近红外 | 模块化，FDA注册，高端 |\n| [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) | $1,199 | 红光 + 近红外 | 面板更大，覆盖更广 |\n| [BioLight Pro 900](/reviews/biolight-pro-900) | $899 | 红光 + 近红外 | 中型，含支架 |\n| [Hooga HG500](/reviews/hooga-hg500) | $349 | 红光 + 近红外 | 平价入门 |\n\n另请参阅[Joovv Solo 3.0 vs BIOMAX 600](/reviews/vs/joovv-solo-3-vs-platinumled-biomax-600)、[BIOMAX 600 vs BioLight Pro 900](/reviews/vs/platinumled-biomax-600-vs-biolight-pro-900)以及[最佳红光疗法面板](/reviews/compare/best-red-light-therapy-panels-2026)。\n\n## 谁应该买PlatinumLED BIOMAX 600？\n\n如果你想以比Joovv Solo 3.0便宜$246的价格获得宽光谱覆盖和公开的EMF检测，并且中型面板符合你的用途，请选择PlatinumLED BIOMAX 600。如需更大的半身或模块化全身方案，选Mito Red或Joovv。如果纯粹看预算，选Hooga HG500。\n\n---\n\n## 延伸阅读\n\n红光疗法起作用背后的光生物调节机制。\n\n- [线粒体DNA与红光](/articles/mitochondrial-dna-red-light) ——660/850 nm光子如何到达线粒体以及在那里发挥什么作用\n- [线粒体生物发生：细胞电网](/articles/mitochondrial-biogenesis-cellular-power-grid) ——为什么光生物调节能提高线粒体密度\n- [长寿硬件与细胞清理](/articles/longevity-hardware-cellular-cleanup) ——红光疗法如何融入更广泛的自噬／线粒体自噬方案\n",
+      "faq": [
+        {
+          "q": "PlatinumLED BioMax 600值得买吗？",
+          "a": "对于想要一台中型面板的大多数买家来说，值得。售价$1,049，比Joovv Solo 3.0（$1,295）和MitoPRO 1500（$1,199）便宜，拥有七种波长、公开的EMF检测和3年保修。它不是最便宜的选择（Hooga HG500售价$349），全身覆盖需要两台面板。证据在皮肤益处方面最强；其他用途的证实程度较低。"
+        },
+        {
+          "q": "BioMax 600与Joovv Solo 3.0：哪个更好？",
+          "a": "BIOMAX 600（$1,049）以便宜$246的价格提供更宽的七波长光谱和公开的EMF检测。Joovv Solo 3.0（$1,295）拥有FDA注册，以及可扩展到全身组合的模块化系统。看重性价比和光谱选BIOMAX，计划搭建更大的模块化组合选Joovv。"
+        },
+        {
+          "q": "应该离红光面板多远？",
+          "a": "请遵循厂商建议。对于BIOMAX 600，PlatinumLED建议深层组织约8–14英寸，面部皮肤16–24英寸，每个部位10–20分钟。距离越近强度越高、疗程越短；剂量越大并不自动越好。请佩戴护眼装备。"
+        },
+        {
+          "q": "PlatinumLED BIOMAX 600多少钱？",
+          "a": "PlatinumLED BIOMAX 600在美国官方商店一次性售价$1,049（2026年10月），支架和安装配件另购。在做工相当、光谱更宽的情况下，它明显比Joovv Solo 3.0和MitoPRO 1500便宜。ONDA总评分为8.2/10。"
+        },
+        {
+          "q": "PlatinumLED BIOMAX 600发出哪些波长？",
+          "a": "PlatinumLED BIOMAX 600发出七种波长：480、630、660、810、830、850和1060 nm，是ONDA红光清单中光谱最宽的。480 nm蓝光比较少见，在总输出中占比很小，较少见的波段依赖较少的LED数量。"
+        },
+        {
+          "q": "PlatinumLED BIOMAX 600最适合谁？",
+          "a": "PlatinumLED BIOMAX 600最适合希望以低于Joovv的价格获得宽光谱覆盖和经过验证的EMF控制的买家。PlatinumLED公开发布其第三方EMF检测（6\"处<0.3 mG），这在该类别中很少见。中型面板需要叠加使用才能覆盖全身。"
+        }
+      ]
     }
   },
-  "comparisons": {},
+  "comparisons": {
+    "best-eeg-headsets-2026": {
+      "title": "最佳EEG与脑训练头戴设备（2026）",
+      "description": "ONDA评选2026年十款最佳EEG与脑训练头戴设备——Muse、Neurosity Crown、Emotiv、Mendi、FocusCalm、Sens.ai、Myndlift、Flow、NeuroSky，涵盖EEG、fNIRS和tDCS，按信号、内容、开放性和性价比评分。",
+      "intro": "2026年的消费级脑训练头戴设备市场并不是一种产品类型，而是三种：EEG测量头戴设备（Muse、Neurosity Crown、Emotiv、FocusCalm、NeuroSky）、fNIRS前额叶训练器（Mendi）以及tDCS刺激设备（Flow Neuroscience）。再加上临床处方的远程神经反馈平台（Myndlift）和高端多模态产品（Sens.ai），就是实际上决定购买讨论的十款设备。我们用同一套标准——信号质量、内容深度、洞察、舒适度、App体验、开放数据访问和性价比——为它们全部打分，使整个领域成为一份有序的清单，并让跨模态的取舍一目了然。",
+      "verdict": "脑训练市场分为三种你不应混淆的模态。基于EEG的头戴设备——Muse S Athena、Muse 2、Neurosity Crown、Emotiv Insight 2、FocusCalm以及平价的NeuroSky——测量大脑电活动并实时反馈；大多数人说“脑训练”时指的就是这一类。fNIRS（Mendi）测量的则是前额叶血氧变化，这是不同的信号，用途也更窄。tDCS（Flow Neuroscience）根本不做测量——它作为临床抑郁症治疗手段，用微弱电流刺激背外侧前额叶皮层。Myndlift是建立在消费级硬件之上的临床处方参考平台，Sens.ai则是将EEG与光生物调节和HRV结合的多模态高端产品。在EEG中，Muse S Athena凭借内容深度、传感器融合和舒适度获得总冠军；想要原始数据的开发者选Neurosity Crown；性价比选Muse 2；学术工具链深度选Emotiv Insight 2。先选模态，再在其中选设备。",
+      "content": "## 快速回答\n\n2026年对大多数人来说最好的EEG头戴设备是**Muse S Athena**（$499）——最丰富的冥想反馈库、EEG加fNIRS，且无强制订阅。只用于冥想的话，**Muse 2**（$249）是性价比之选。如果你想要原始数据和开放SDK，选**Neurosity Crown**（$1,499）。如果你想要有监督的临床神经反馈，那就是通过持证服务提供者使用的**Myndlift**——它根本不是消费级头戴设备。\n\n## 对比表\n\n| 头戴设备 | 价格（美元） | 模态／传感器 | 最适合 |\n|---|---|---|---|\n| [Muse S Athena](/reviews/muse-s-athena) | $499 | 4通道干电极EEG + fNIRS | 冥想与睡眠，综合最佳 |\n| [Muse 2](/reviews/muse-2) | $249 | 4通道干电极EEG + PPG心率 | 预算有限的冥想反馈 |\n| [Neurosity Crown](/reviews/neurosity-crown) | $1,499 | 8个干电极EEG | 开发者、原始数据、专注 |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 + 原始数据Pro约$99/年 | 5个半干电极EEG | 研究与学术工具链 |\n| [Sens.ai](/reviews/sens-ai) | $1,250 + 会员（试用后$300/年或$75/月） | 5通道EEG + HRV + 近红外光 | 多模态高端训练 |\n| [Myndlift](/reviews/myndlift) | 通过服务提供者约$300–$600/月 | Muse 2硬件，临床医生方案 | 有监督的临床神经反馈 |\n| [Mendi](/reviews/mendi) | 标价$379（常有折扣） | fNIRS（非EEG） | 简单的前额叶训练游戏 |\n| [FocusCalm](/reviews/focuscalm) | $199 + 可选Plus | 1通道EEG | 最便宜的引导式EEG课程 |\n| [Flow Neuroscience](/reviews/flow-neuroscience) | 英国£399 + App订阅；美国仅限处方 | tDCS刺激（不测量） | 临床抑郁症治疗 |\n| [NeuroSky MindWave Mobile 2](/reviews/neurosky-mindwave-mobile-2) | 约$110 | 1通道EEG | 学生和业余开发者 |\n\n## 如何选择EEG头戴设备\n\n先从你想让头戴设备做什么开始，因为三种常见用途需要不同的硬件。\n\n**1. 冥想反馈。** 你想在走神时听到提示，并学会让心安定下来。重要的是App、引导内容和舒适度——而不是通道数。在这方面Muse S Athena和Muse 2领先；FocusCalm是更便宜的单通道替代品。对这一用途来说，原始数据无关紧要。\n\n**2. 神经反馈训练。** 你想在数周内训练特定的大脑模式（注意力、平静、临床医生的方案）。消费级App提供简化版本；针对ADHD、焦虑或睡眠问题的真正神经反馈由临床医生设计和调整，这正是Myndlift所提供的。Sens.ai介于两者之间，在EEG之上增加了光和HRV训练。\n\n**3. 开发者或原始数据工作。** 你想把信号流式传入自己的代码、做实验或开发App。根据SDK开放性和通道数来选：Neurosity Crown（8个电极、开放SDK、数据无需订阅）、Emotiv Insight 2（5通道，原始数据需Pro等级），或用极低预算学习的NeuroSky。\n\n购买前还有两项检查：**订阅模式**（Emotiv、Sens.ai和FocusCalm对部分体验额外收费；Muse和Crown不强制订阅）以及**舒适度**——如果你躺着冥想或想要睡眠数据，只有柔软的Muse S Athena头带是为此设计的。\n\n## 消费级EEG能测什么、不能测什么\n\n消费级EEG头戴设备通过干电极在头皮的少数几个位置测量微小的电压变化。这是真实的大脑信号：在2017年的一项验证研究中，Krigolson及其同事表明，四通道的Muse捕捉到的标准事件相关电位（N200和P300）可与研究级系统相媲美（[Frontiers in Neuroscience, doi:10.3389/fnins.2017.00109](https://doi.org/10.3389/fnins.2017.00109)）。\n\n它做不到的同样重要：\n\n- **通道少，大多在前额。** 四到八个电极无法像32或64通道的实验室电极帽那样定位活动。\n- **伪迹。** 眨眼、咬紧牙关、皱眉和身体移动产生的信号比大脑活动更大；好的App会过滤它们，但仍会出现噪声较大的训练。\n- **专有分数。** “平静”“专注”或“心流”数字是各公司自己的算法，不是经过验证的医学指标，不同品牌之间也无法比较。\n- **不能诊断。** 没有任何消费级头戴设备能诊断ADHD、焦虑、抑郁或睡眠障碍。\n\n诚实的说法是：把分数当作你自己训练中的趋势来使用。大多数人获得的益处来自反馈所鼓励的练习本身，初学者的效果需要数周的规律使用才会累积。\n\n## 谁不必买EEG头戴设备\n\n- **想要压力或恢复数值的人。** 通过戒指或手表获得的心率变异性（HRV）更容易每天收集，而且在压力和恢复方面比消费级EEG分数研究得更充分——请参阅我们的[最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。\n- **寻求ADHD、抑郁或焦虑治疗的人**——请先找临床医生；Myndlift或Flow只有在这一途径中才有意义。\n- **不会经常佩戴的买家。** 只用过两次的头戴设备，就是你拥有的最贵的冥想App。\n- **练习时不喜欢在头上戴任何东西的人**——单用一个引导式呼吸或冥想App可能就足够了。\n\n直接对比请参阅[Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown)和[Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2)。\n\n## 我们如何排名\n\n每款设备都按照ONDA公开的[评测方法](/reviews/methodology)评分：七项加权标准，其中信号质量和训练内容深度权重最大。开放数据访问单独加权，因为生物黑客和研究者格外看重它，而消费级冥想用户几乎不会注意到——用一个掩盖这种差异的总分会产生误导。\n\n全部十款设备均依据制造商资料、可获得的已发表验证文献以及2026年独立评测进行评估，而非实物测试，因此请把这些分数当作基于证据的起点。\n\n## 最佳EEG与脑训练头戴设备：该买哪款？\n\n这一类别按模态和用途划分。\n\n**EEG测量（六款）：** Muse S Athena和Muse 2在内容深度上领先，Neurosity Crown在开发者访问上领先，Emotiv Insight 2在学术工具链集成上领先，FocusCalm在平价内容上领先，NeuroSky MindWave Mobile 2则撑起平价／教育层级。在这一组中，根据你的技术程度以及想要内容还是原始数据来选择。\n\n**fNIRS（Mendi）：** 不同的信号，不同的用途。只有当你想要的就是纯粹的前额叶注意力训练时才选它。\n\n**tDCS（Flow Neuroscience）：** 根本不是测量。仅用于临床抑郁症适应症。\n\n**多模态高端（Sens.ai）：** EEG + 光生物调节 + HRV集于一个课程。只有当你想要的正是多模态组合时才是正确选择。\n\n**临床参考（Myndlift）：** 在消费级硬件上居家进行处方神经反馈。是该类别中的临床参考选项。\n\n先决定模态，再在其中决定设备。这个类别足够小，这十款实际上就是2026年值得了解的全部头戴设备。",
+      "picks": {
+        "muse-s-athena": {
+          "award": "综合最佳",
+          "takeaway": "柔软、适合睡眠佩戴的头带集成EEG和fNIRS——消费级最丰富的内容库，无需订阅。"
+        },
+        "muse-2": {
+          "award": "最佳性价比入门",
+          "takeaway": "成熟、受欢迎的EEG冥想头带，入门价格——最具成本效益的真EEG冥想设备。"
+        },
+        "neurosity-crown": {
+          "award": "最适合开发者",
+          "takeaway": "八个干电极和消费级中最开放的SDK——通过JavaScript、Python和Swift获取原始EEG。"
+        },
+        "emotiv-insight-2": {
+          "award": "最佳研究-消费级混合",
+          "takeaway": "五通道EEG，拥有被引用最多的学术工具链——原始数据需订阅。"
+        },
+        "sens-ai": {
+          "award": "最佳多模态高端",
+          "takeaway": "唯一在一个课程中融合EEG、光生物调节和HRV的头戴设备——高端价格。"
+        },
+        "myndlift": {
+          "award": "最佳临床神经反馈",
+          "takeaway": "居家进行临床处方神经反馈——真实方案、真实疗效追踪，需通过持证服务提供者。"
+        },
+        "mendi": {
+          "award": "最适合前额叶训练（fNIRS）",
+          "takeaway": "通过fNIRS进行的游戏化前额叶皮层神经反馈——与EEG不同的模态，学习曲线最平缓。"
+        },
+        "focuscalm": {
+          "award": "最适合内容驱动的专注训练",
+          "takeaway": "拥有真正引导内容的最便宜正规EEG头戴设备——单通道，课程精良。"
+        },
+        "flow-neuroscience": {
+          "award": "最佳临床tDCS",
+          "takeaway": "获CE认证的抑郁症tDCS头戴设备——本清单中监管和试验支持最强。"
+        },
+        "neurosky-mindwave-mobile-2": {
+          "award": "最佳平价／开发者入门",
+          "takeaway": "最便宜的正规消费级EEG头戴设备——单通道，开放SDK，2010年代中期的硬件。"
+        }
+      },
+      "faq": [
+        {
+          "q": "冥想用哪款EEG头戴设备最好？",
+          "a": "Muse S Athena（$499）是2026年最适合冥想的EEG头戴设备：四通道干电极EEG加前额叶fNIRS，最丰富的引导冥想库和实时音频反馈，且无强制订阅。Muse 2（$249）以一半价格提供同样核心的冥想反馈，但没有睡眠追踪。FocusCalm（$199）是拥有精良引导课程的最便宜头戴设备，但只有单通道。"
+        },
+        {
+          "q": "消费级EEG头戴设备准确吗？",
+          "a": "用于反馈足够准确，但不能用于诊断。干电极消费级头戴设备能捕捉真实的大脑信号——2017年的一项验证研究发现，四通道Muse记录到的经典事件相关电位可与研究系统相媲美——但它们通道少，对移动、下颌紧张和眨眼敏感，其“平静”或“专注”分数是专有算法，而非经过验证的临床指标。请把这些数字当作你自己训练中的趋势，而不是大脑健康的绝对读数。"
+        },
+        {
+          "q": "Muse还是Neurosity Crown：该买哪个？",
+          "a": "如果你想要带实时反馈的引导冥想和精良的App，买Muse（S Athena $499或Muse 2 $249）。如果你想要原始EEG数据、八个电极以及支持JavaScript、Python和Swift的开放SDK，买Neurosity Crown（$1,499）——它是开发者和专注工具，不是冥想教练。对大多数冥想者来说，Muse是更好且便宜得多的选择。"
+        },
+        {
+          "q": "2026年最好的EEG头戴设备是什么？",
+          "a": "综合来看是Muse S Athena——它是唯一在一条柔软头带中结合EEG、fNIRS和睡眠追踪的消费级设备，冥想内容库最丰富，且无强制订阅。想要原始EEG访问的开发者和生物黑客选Neurosity Crown。预算有限的冥想新手选Muse 2。"
+        },
+        {
+          "q": "EEG、fNIRS和tDCS头戴设备有什么区别？",
+          "a": "EEG通过头皮电极测量大脑电活动（Muse、Neurosity Crown、Emotiv、FocusCalm、NeuroSky）。fNIRS通过近红外光测量血氧变化（Mendi）。tDCS根本不测量——它作为临床治疗手段用微弱电流刺激大脑（Flow Neuroscience）。它们出现在同一个购买讨论中，但解决的是不同的问题。"
+        },
+        {
+          "q": "EEG头戴设备对专注和冥想真的有效吗？",
+          "a": "在其局限范围内，是的。用于冥想的EEG神经反馈是所有消费级脑训练应用中证据基础最强的——尤其是Muse的底层硬件已有数十项同行评审研究。需要注意的是，消费级EEG只能测量通过干电极到达头皮的信号；精细度是真实的但有限，对冥想新手的效应量在经过数月练习之前都比较有限。"
+        },
+        {
+          "q": "哪款EEG头戴设备的SDK最开放？",
+          "a": "Neurosity Crown——通过JavaScript、Python和Swift获取原始EEG，数据访问无需订阅。Emotiv Insight 2的SDK与之相当，但原始数据访问需Pro订阅。NeuroSky MindWave Mobile 2在平价层级拥有开放SDK。Muse、FocusCalm和Sens.ai是封闭平台。"
+        },
+        {
+          "q": "Muse S Athena比Muse 2更值得买吗？",
+          "a": "如果睡眠追踪对你重要，是的——Athena是唯一适合整夜佩戴的舒适消费级EEG头戴设备，加上fNIRS使它成为唯一实现传感器融合的消费级设备。如果只用于冥想，Muse 2以一半价格就能满足。"
+        },
+        {
+          "q": "可以用Muse或Neurosity Crown应对ADHD或焦虑吗？",
+          "a": "消费级EEG头戴设备并不是获批用于ADHD、焦虑或任何临床病症的医疗器械。本清单中的临床选项是Myndlift，它通过持证心理健康服务提供者来监督神经反馈方案。专门针对临床抑郁症，Flow Neuroscience是获CE认证的tDCS选项。"
+        }
+      ]
+    }
+  },
   "criteria": {
     "field-strength": "场强与剂量",
     "waveform-evidence": "波形与研究证据",
     "build": "做工与耐用性",
     "programmability": "可编程性与方案",
     "form-factor": "外形与施加器范围",
-    "value": "性价比"
+    "value": "性价比",
+    "sensor-accuracy": "传感器准确度与可靠性",
+    "insights": "洞察与分析质量",
+    "coaching": "指导与建议",
+    "app-integration": "App与集成体验",
+    "flexibility": "计划灵活性与数据访问",
+    "irradiance": "辐照度与规格验证",
+    "wavelengths": "波长覆盖",
+    "build-emf-flicker": "做工、EMF与频闪",
+    "coverage": "面板覆盖范围与外形",
+    "evidence": "证据与监管状态"
   },
   "categories": {
-    "pemf": "PEMF 设备"
+    "pemf": "PEMF 设备",
+    "cgm": "连续血糖监测仪",
+    "eeg-headset": "EEG与脑训练头戴设备",
+    "red-light": "红光疗法面板"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -162,6 +434,120 @@
         }
       ],
       "content": "## 简要结论\n\n按用途来选。Whoop 5.0 是专职的恢复教练——连续夜间 HRV、最精准的 Recovery-and-Strain 模型、约 14 天续航的无屏手环——但需要订阅。Series 12 是一款无需订阅的智能手表，在 2026 年 9 月健康感知系统更新后，其 HRV 终于足够可靠、可以据此行动，另外还有 ECG 和高血压通知。\n\n## Series 12 为何缩小了差距\n\nApple 现在提供基于 RMSSD、采样频率大幅提高的 Recovery HRV——与 Whoop 恢复模型所用的指标属于同一类。参见 [Recovery HRV 与 Overall HRV 的区别](/articles/apple-watch-recovery-hrv-vs-overall-hrv) 以及 [为什么不同设备测出的 HRV 各不相同](/articles/hrv-different-every-device)。\n\n## 需要坦白的一点\n\nWhoop 专为 24/7 佩戴和每日指导而设计；Apple Watch 是一款通用智能手表，你未必每晚都戴，而且约 1 天的续航与夜间测量相互冲突。如果连续夜间 HRV 才是你的核心需求，请查看 [2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)——戒指或手环可能比手表更适合你。"
+    },
+    "apple-watch-series-12-vs-oura-ring-4": {
+      "title": "Apple Watch Series 12与Oura Ring 4对比（2026）",
+      "description": "从HRV角度对比Apple Watch Series 12与Oura Ring 4——苹果现在提供基于RMSSD的恢复HRV，比较终于公平了。手表与戒指，逐项权衡。",
+      "intro": "多年来这都是一场不公平的较量：Apple Watch报告稀疏采样的SDNN，Oura Ring报告连续的RMSSD，两者的数字从来对不上。2026年9月的Series 12改变了这一点——它的恢复HRV基于RMSSD，采样频率提高了约24倍，与Oura使用的是同一类指标。所以现在真正的问题终于变得实事求是：一块全能智能手表，还是一枚专门的夜间戒指？",
+      "verdict": "没有全面的赢家——取决于你想要什么。若要最精确、免操心的夜间HRV和睡眠数据，Oura Ring 4凭借手指测量和多日续航领先。若要一款带ECG、高血压通知且无需订阅的全能智能手表，Series 12胜出——它的HRV终于好到可以据此行动。",
+      "bestForA": "如果你想要一块全能智能手表——ECG、高血压通知、应用——其HRV现在已足以据此行动，且无需订阅，请选Series 12。",
+      "bestForB": "如果夜间HRV和睡眠才是重点，请选Oura Ring 4：手指测量更精确，戒指戴着睡觉更舒服，电池可用好几天。",
+      "axes": [
+        {
+          "name": "夜间HRV精度",
+          "note": "Oura Ring 4在手指上连续测量，信号质量优于手腕光学测量，在独立研究中的睡眠阶段/HRV一致性也名列前茅。Series 12进步很大，但仍是手腕光学测量。"
+        },
+        {
+          "name": "恢复指标的可比性",
+          "note": "Series 12的恢复HRV现在基于RMSSD，与Oura属于同一类指标——因此这些指标终于在类型上可比，尽管绝对数值仍有差异。"
+        },
+        {
+          "name": "续航／夜间佩戴",
+          "note": "Oura充一次电可用好几天，戴着睡觉也很轻松；Series 12约1天的续航意味着夜间测量要与每晚充电争时间。"
+        },
+        {
+          "name": "日常智能手表功能",
+          "note": "应用、通知、支付、屏幕、ECG和高血压通知——Series 12是完整的智能手表；Oura是一个安静的传感器。"
+        },
+        {
+          "name": "订阅／成本",
+          "note": "Series 12一次性$399，无需订阅。Oura售价$349，另需约$6/月的会员费才能查看完整数据——前期更便宜，之后有持续成本。"
+        },
+        {
+          "name": "额外健康功能",
+          "note": "Series 12增加了戒指所没有的单导联ECG和高血压通知。"
+        },
+        {
+          "name": "舒适度／低调程度",
+          "note": "戒指戴在手指上几乎无感，适合全天候佩戴；手表存在感更传统，戴着睡觉也没那么舒服。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Apple Watch Series 12和Oura Ring 4哪个测HRV更准？",
+          "a": "就连续的夜间HRV记录而言，Oura Ring 4更精确——手指测量优于手腕光学测量，其续航也适合整夜佩戴。Series 12现在已接近很多：它的恢复HRV基于RMSSD，采样频率提高24倍，已足以据此行动，只是不是最精确的夜间数据。"
+        },
+        {
+          "q": "Apple Watch Series 12像Oura一样需要订阅吗？",
+          "a": "不需要。Series 12一次性$399，其HRV、ECG和高血压功能都无需订阅。Oura Ring 4售价$349，但需要约每月$6的会员费才能查看完整数据。"
+        },
+        {
+          "q": "为了恢复管理，该买Apple Watch还是Oura戒指？",
+          "a": "要最干净的夜间恢复信号和最轻松的整夜佩戴，选Oura Ring 4。要一台同时具备ECG、高血压通知、应用和支付的设备——HRV现在也足以据此行动且无需订阅——选Series 12。很多人会搭配使用：戒指看趋势，手表做其他一切。"
+        }
+      ],
+      "content": "## 简要结论\n\n这现在是一场公平的比较，答案取决于你想要什么。就夜间数据本身而言，Oura Ring 4胜出——手指测量更精确，多日续航让整夜佩戴毫不费力。作为一台设备，Series 12胜出——ECG、高血压通知、屏幕、应用、无需订阅——而且它的HRV终于好到可以据此行动。\n\n## 为什么2026年比较发生了变化\n\n2026年9月之前，Apple Watch报告稀疏采样的SDNN，而Oura的准备度基于RMSSD——两种不同的指标，从来对不上。Series 12的恢复HRV基于RMSSD且采样频繁得多，因此它现在与Oura报告的是同一*类*数字。请参阅[恢复HRV与整体HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)以及[为什么每台设备的HRV读数都不同](/articles/hrv-different-every-device)。\n\n## 实在的搭配\n\n对很多人来说，答案是两者兼用：Oura Ring负责免操心的夜间趋势，Apple Watch负责戒指做不到的一切。如果你只想要最精确的夜间HRV，请参阅[2026年最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。"
+    },
+    "whoop-5-0-vs-garmin-venu-4": {
+      "title": "Whoop 5.0与Garmin Venu 4对比（2026）",
+      "description": "Whoop 5.0与Garmin Venu 4——ONDA并排对比两款注重训练的HRV追踪器。教练订阅还是全能手表。",
+      "intro": "Whoop 5.0和Garmin Venu 4是2026年认真训练的人会拿来相互比较的两款HRV追踪器。两者都提供每日恢复信号和训练负荷模型；结构性的区别在于“包装”。Whoop是附带手环的教练订阅；Garmin是一次性购买的智能手表，配有自家的训练分析。选择的关键与其说是HRV准确度，不如说是你想如何与这台设备相处。",
+      "verdict": "对大多数训练者来说Garmin Venu 4胜出——无需订阅即可获得相当的HRV和恢复分析、五天续航以及更深入的训练负荷模型。Whoop仅在你把每日Recovery分数当作教练提示时胜出。",
+      "bestForA": "如果每日Recovery分数是真正会改变你训练课的教练提示，并且你更喜欢无屏幕手环形态和含硬件的订阅模式，请选Whoop 5.0。",
+      "bestForB": "如果你想要无需持续订阅的训练分析、五天续航和智能手表屏幕，请选Garmin Venu 4——对大多数用户来说长期更划算。",
+      "axes": [
+        {
+          "name": "HRV测量",
+          "note": "两者都通过光学PPG在夜间连续追踪HRV；独立比较认为两者大致相当。在信号层面打平。"
+        },
+        {
+          "name": "恢复指导",
+          "note": "Whoop的Recovery和Strain教练是消费级产品中最敏锐的每日准备度模型。Garmin的Body Battery表现合格，但更轻量。"
+        },
+        {
+          "name": "训练分析",
+          "note": "Garmin拥有更深入的训练负荷、VO2 max、恢复时间和结构化训练模型。Whoop是教练；Garmin是仪器。"
+        },
+        {
+          "name": "屏幕与通知",
+          "note": "Garmin：带通知、音乐和应用的AMOLED智能手表。Whoop：与手机配对的无屏幕手环。"
+        },
+        {
+          "name": "续航",
+          "note": "Garmin Venu 4：智能手表模式约5天。Whoop：约4–5天，采用可更换电池包设计。"
+        },
+        {
+          "name": "训练时的外形",
+          "note": "Whoop手环没有会碎的屏幕，在对抗性运动护具下或泳池中更利落。Garmin手表很坚固，但很显眼。"
+        },
+        {
+          "name": "订阅模式",
+          "note": "Whoop：仅订阅（约$30/月），含硬件。Garmin：一次性$449，无需订阅。三年成本：Whoop约$1,080，Garmin约$449。"
+        },
+        {
+          "name": "生态与应用",
+          "note": "Garmin Connect可与Strava、TrainingPeaks、Apple Health及大量第三方服务集成。Whoop更封闭。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Whoop 5.0比Garmin Venu 4更准吗？",
+          "a": "没有实质差异。两者都通过光学PPG在夜间连续追踪HRV，独立比较认为两者准确度大致相当。决定因素不在传感器。"
+        },
+        {
+          "q": "两者都需要订阅吗？",
+          "a": "Whoop仅提供订阅——约$30/月，含硬件。Garmin Venu 4一次性购买（约$449），使用全部功能无需订阅。三年下来，Garmin的成本不到Whoop的一半。"
+        },
+        {
+          "q": "对运动员来说Whoop和Garmin哪个更好？",
+          "a": "取决于训练风格。Whoop适合把每日Recovery分数当作会改变训练课的教练提示的运动员。Garmin适合围绕训练负荷、VO2 max和训练计划来安排训练、并看重与Strava和TrainingPeaks官方集成的运动员。"
+        },
+        {
+          "q": "可以戴着Garmin睡觉吗？",
+          "a": "可以——Garmin Venu 4会追踪睡眠，包括基于HRV的恢复。大多数用户觉得这块手表戴着过夜足够舒适；也有人更喜欢专门为睡眠换成Whoop这样的手环或Oura这样的戒指。"
+        }
+      ],
+      "content": "## 简要结论\n\n对大多数训练者来说，Garmin Venu 4是长期更合适的选择——相当的HRV、更深入的训练分析、无需订阅，以及智能手表屏幕下的五天续航。Whoop仅在每日Recovery分数是真正逐日改变你训练的教练机制时胜出。\n\n## 什么时候Whoop是正确选择？\n\n如果你训练强度大，看重把每日准备度当作教练提示，而且无屏幕手环比手表更适合你的对抗性运动或泳池训练，那么Whoop更合适。订阅费就是使用这套教练模式的入场券。\n\n## 什么时候Garmin是正确选择？\n\n如果你更愿意一次付清，想在手腕上看到表盘，并希望在训练体系中拥有与Strava和TrainingPeaks的官方集成，那么Garmin Venu 4更合适。三年下来它的成本不到Whoop的一半，对大多数训练场景来说没有功能上的差距。"
     }
   }
 }

@@ -46,4 +46,10 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('articles', 'system-stability-serotonin', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'neural-optimizer-estrogen', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'endocrine-social-drive-oxytocin-testosterone', '2026-09-30', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'resona-health-vibe', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'ultrahuman-m1', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'apple-watch-series-12-vs-oura-ring-4', '2026-10-01', ["de","fr","it","ja","nl","pl","pt","uk","zh"]),
+  ...everywhere('h2h', 'whoop-5-0-vs-garmin-venu-4', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('comparisons', 'best-eeg-headsets-2026', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'platinumled-biomax-600', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

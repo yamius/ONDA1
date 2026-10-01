@@ -93,7 +93,10 @@
     "hrv-wearable": "Monitores de HRV",
     "meditation-app": "Apps de meditación",
     "sleep-app": "Apps de sueño",
-    "pemf": "Dispositivos PEMF"
+    "pemf": "Dispositivos PEMF",
+    "cgm": "Monitores continuos de glucosa",
+    "eeg-headset": "Cascos EEG y de entrenamiento cerebral",
+    "red-light": "Paneles de terapia de luz roja"
   },
   "criteria": {
     "tracking-accuracy": "Precisión del seguimiento del sueño",
@@ -117,7 +120,15 @@
     "waveform-evidence": "Forma de onda y evidencia científica",
     "build": "Calidad de construcción y durabilidad",
     "programmability": "Programabilidad y protocolos",
-    "form-factor": "Formato y variedad de aplicadores"
+    "form-factor": "Formato y variedad de aplicadores",
+    "sensor-accuracy": "Precisión y fiabilidad del sensor",
+    "coaching": "Coaching y orientación",
+    "app-integration": "Experiencia de app e integración",
+    "flexibility": "Flexibilidad del programa y acceso a los datos",
+    "irradiance": "Irradiancia y verificación de especificaciones",
+    "wavelengths": "Cobertura de longitudes de onda",
+    "build-emf-flicker": "Construcción, CEM y parpadeo",
+    "coverage": "Cobertura y formato del panel"
   },
   "bodies": {
     "sleep-cycle": {
@@ -466,7 +477,8 @@
         "app-ux": "Esfuerzo, Recuperación y un entrenador de IA recompensan a los usuarios analíticos pero pueden abrumar al resto.",
         "value": "Solo por suscripción — unos 239 USD al año, para siempre, sin un dispositivo que llegues a poseer."
       },
-      "content": "## En qué destaca\n\nEl Whoop 5.0 está construido en torno a una idea: la recuperación. En lugar de una comprobación puntual matinal, muestrea el HRV de forma continua durante la noche e informa de una media de sueño completo extraída de cientos de lecturas — la base más limpia para una señal diaria de recuperación de los tres dispositivos de aquí. La banda sin pantalla es fácil de olvidar que la llevas puesta, la generación actual amplió la autonomía a unas dos semanas, y el módulo de batería deslizante hace que nunca tenga que salir de tu muñeca para cargarse.\n\n## En qué se queda corto\n\nWhoop se vende como una membresía, no como un producto. No hay hardware en propiedad — si dejas de pagar, la banda deja de funcionar — y los aproximadamente 239 USD del primer año son un coste continuo, no una compra de pago único. La app es potente pero densa: Esfuerzo, Recuperación y el entrenador de IA recompensan a quien quiere estudiar sus datos y pueden abrumar a quien no. El acceso a los datos en bruto, como en Oura, es limitado.\n\n## Para quién es\n\nElige el Whoop 5.0 si eres deportista o te entrenas en serio y tomas decisiones a partir de una puntuación diaria de recuperación, y quieres HRV nocturno continuo sin una pantalla en la muñeca. Si te disgustan las suscripciones perpetuas, o quieres un dispositivo que además dé la hora, las alternativas encajarán mejor."
+      "content": "## En qué destaca\n\nEl Whoop 5.0 está construido en torno a una idea: la recuperación. En lugar de una comprobación puntual matinal, muestrea el HRV de forma continua durante la noche e informa de una media de sueño completo extraída de cientos de lecturas — la base más limpia para una señal diaria de recuperación de los tres dispositivos de aquí. La banda sin pantalla es fácil de olvidar que la llevas puesta, la generación actual amplió la autonomía a unas dos semanas, y el módulo de batería deslizante hace que nunca tenga que salir de tu muñeca para cargarse.\n\n## En qué se queda corto\n\nWhoop se vende como una membresía, no como un producto. No hay hardware en propiedad — si dejas de pagar, la banda deja de funcionar — y los aproximadamente 239 USD del primer año son un coste continuo, no una compra de pago único. La app es potente pero densa: Esfuerzo, Recuperación y el entrenador de IA recompensan a quien quiere estudiar sus datos y pueden abrumar a quien no. El acceso a los datos en bruto, como en Oura, es limitado.\n\n## Para quién es\n\nElige el Whoop 5.0 si eres deportista o te entrenas en serio y tomas decisiones a partir de una puntuación diaria de recuperación, y quieres HRV nocturno continuo sin una pantalla en la muñeca. Si te disgustan las suscripciones perpetuas, o quieres un dispositivo que además dé la hora, las alternativas encajarán mejor.",
+      "productType": "Banda sin pantalla"
     },
     "apple-watch-series-11": {
       "verdict": "Un smartwatch completísimo, pero una herramienta de HRV casual — hace comprobaciones puntuales en lugar de seguimiento.",
@@ -553,7 +565,8 @@
         "app-ux": "Garmin Connect es profundo pero recargado y anticuado frente a Oura o Apple.",
         "value": "Una compra de pago único sin suscripción y con amplia capacidad todoterreno."
       },
-      "content": "## En qué destaca\n\nEl Garmin Venu 4 es la opción con forma de smartwatch más completa de esta comparativa. Garmin HRV Status construye una línea base nocturna en unas tres semanas y luego señala si estás equilibrado o desequilibrado, y el Venu 4 lleva el seguimiento del sueño de Garmin más avanzado hasta la fecha. La autonomía supera con holgura a un smartwatch de uso general, y eso importa: un monitor que puedes llevar varias noches entre cargas produce un registro de HRV más continuo. No hay suscripción — el precio compra todo.\n\n## En qué se queda corto\n\nNinguna de las métricas individuales lidera su clase. El HRV es sólido pero no tan limpiamente enfocado en la noche como un monitor de recuperación dedicado, y Garmin Connect, pese a su profundidad, es una experiencia recargada y anticuada frente al software de Oura o de Apple. Es un generalista fuerte más que un especialista — capaz en todos los frentes, el mejor en nada de lo que mide esta comparativa.\n\n## Para quién es\n\nElige el Garmin Venu 4 si quieres un único dispositivo sin suscripción que gestione el entrenamiento, la salud cotidiana y el HRV con competencia, con la autonomía para de verdad llevarlo durante toda la noche. Si la precisión del HRV nocturno es lo único que te importa, un anillo o una banda lo superarán."
+      "content": "## En qué destaca\n\nEl Garmin Venu 4 es la opción con forma de smartwatch más completa de esta comparativa. Garmin HRV Status construye una línea base nocturna en unas tres semanas y luego señala si estás equilibrado o desequilibrado, y el Venu 4 lleva el seguimiento del sueño de Garmin más avanzado hasta la fecha. La autonomía supera con holgura a un smartwatch de uso general, y eso importa: un monitor que puedes llevar varias noches entre cargas produce un registro de HRV más continuo. No hay suscripción — el precio compra todo.\n\n## En qué se queda corto\n\nNinguna de las métricas individuales lidera su clase. El HRV es sólido pero no tan limpiamente enfocado en la noche como un monitor de recuperación dedicado, y Garmin Connect, pese a su profundidad, es una experiencia recargada y anticuada frente al software de Oura o de Apple. Es un generalista fuerte más que un especialista — capaz en todos los frentes, el mejor en nada de lo que mide esta comparativa.\n\n## Para quién es\n\nElige el Garmin Venu 4 si quieres un único dispositivo sin suscripción que gestione el entrenamiento, la salud cotidiana y el HRV con competencia, con la autonomía para de verdad llevarlo durante toda la noche. Si la precisión del HRV nocturno es lo único que te importa, un anillo o una banda lo superarán.",
+      "productType": "Smartwatch"
     },
     "samsung-galaxy-ring": {
       "verdict": "La alternativa a Oura sin suscripción para Android — cómoda y competente, aunque atada al ecosistema de Samsung.",
@@ -991,44 +1004,207 @@
       "content": "## En qué destaca\n\nBuddhify es la app de pago único en una categoría construida casi por completo sobre suscripciones: pagas una vez y la posees para siempre. Sus más de 200 meditaciones se organizan no como un curso sino por situación — el trayecto al trabajo, una pausa laboral, despertarse de noche, sentir estrés — así que abres la app, eliges lo que estás haciendo de verdad y empiezas. Para meditar sobre la marcha, ese enfoque es de verdad útil, y el tono es en todo momento sereno, práctico y libre de jerga de bienestar.\n\n## En qué se queda corta\n\nLa biblioteca es más pequeña que la de los gigantes de suscripción, y no hay una progresión adaptativa basada en cursos — trazas tu propio camino por momentos en lugar de que te lleven por un plan. La característica rueda de colores tiene encanto pero se siente algo anticuada frente a Calm o Headspace, y la muestra gratuita es pobre.\n\n## Para quién es\n\nElige Buddhify si quieres pagar una vez y no volver a ver un aviso de suscripción, y te gusta la idea de meditaciones a juego con lo que sea que estés haciendo ahora mismo. Si quieres la biblioteca más grande o un curso estructurado desde cero, Insight Timer o Headspace te servirán mejor."
     },
     "resona-health-vibe": {
-      "verdict": "La mejor puerta de entrada al PEMF portátil: 299 $, más de 130 protocolos, control desde la app y sin esterilla que instalar. Menor intensidad de campo que las esterillas de cuerpo completo, por diseño.",
-      "summary": "Resona Health VIBE es la gama de entrada del PEMF portátil: un dispositivo de bolsillo con más de 130 protocolos localizados, programación desde la app y un precio de 299 $. La intensidad de campo es mucho menor que la de las esterillas de cuerpo completo: su filosofía de diseño es el uso localizado y dirigido, no la sesión pasiva de cuerpo entero. Es la mejor puerta de entrada para quienes sienten curiosidad por el PEMF pero no están listos para gastar más de 2000 $ en una esterilla.",
-      "description": "Reseña de Resona Health VIBE: la forma más fácil de probar el PEMF portátil. 299 $, más de 130 protocolos en la app y sin esterilla. Menor intensidad de campo.",
-      "bestFor": "Ideal para quienes sienten curiosidad por el PEMF y buscan una entrada sin gran compromiso, un PEMF portátil o un dispositivo de uso localizado con muchos protocolos por menos de 300 $.",
-      "testNote": "Evaluación basada en evidencia: puntuada a partir de la documentación de producto de Resona Health y de reseñas de PEMF portátil de 2026. ONDA no lo ha probado en persona.",
+      "verdict": "El mejor punto de entrada a la PEMF portátil: $299, más de 130 protocolos, control desde la app y sin esterilla que instalar. Menor intensidad de campo que las esterillas de cuerpo completo, por diseño.",
+      "summary": "Resona Health VIBE es el nivel de entrada de la PEMF portátil: un dispositivo de bolsillo con más de 130 protocolos dirigidos, programación desde la app y un precio de $299. La intensidad de campo es mucho menor que la de las esterillas de cuerpo completo: la filosofía de diseño es el uso localizado y dirigido, no la sesión pasiva de cuerpo entero. Es el mejor punto de entrada para quien siente curiosidad por la PEMF y no está listo para gastar más de $1,750 en una esterilla.",
+      "description": "Reseña de Resona Health VIBE: la entrada más sencilla a la PEMF portátil — $299, más de 130 protocolos desde la app, sin esterilla. Menor intensidad que las esterillas.",
+      "bestFor": "Ideal para quien siente curiosidad por la PEMF y busca una entrada de bajo compromiso, una PEMF portátil o un dispositivo de uso dirigido con muchos protocolos por menos de $300.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Resona Health y de reseñas de PEMF portátil de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "Dispositivo PEMF portátil con más de 130 protocolos",
       "pros": [
-        "La mejor relación calidad-precio de gama de entrada en PEMF: 299 $ frente a más de 2000 $ de las esterillas",
+        "La mejor relación calidad-precio de entrada en PEMF: $299 frente a más de $1,750 de las esterillas",
         "Más de 130 protocolos documentados con control desde la app",
-        "Formato portátil y ponible",
-        "Una forma de bajo compromiso de explorar el PEMF antes de invertir en una esterilla"
+        "Formato portátil / para llevar puesto",
+        "Forma de bajo compromiso de explorar la PEMF antes de invertir en una esterilla"
       ],
       "cons": [
         "Menor intensidad de campo que las esterillas de cuerpo completo (por diseño)",
-        "No permite tratamiento simultáneo de cuerpo entero",
-        "Marca nueva, sin décadas de trayectoria",
-        "Solo para uso localizado: no ofrece una sesión pasiva tumbado en una esterilla"
+        "Sin tratamiento simultáneo de todo el cuerpo",
+        "Marca nueva sin décadas de trayectoria",
+        "Solo uso dirigido: no es una sesión pasiva tumbado en una esterilla"
       ],
       "scoreNotes": {
-        "field-strength": "El formato ponible implica una intensidad máxima menor que la de las esterillas de cuerpo completo. Está pensado para un uso localizado y dirigido, no para exponer todo el cuerpo al campo.",
-        "waveform-evidence": "Más de 130 protocolos basados en la investigación documentada sobre frecuencias PEMF. No cuenta con investigación propia sobre una forma de onda exclusiva: se apoya en la literatura existente.",
-        "build": "Construcción ponible de bolsillo y 2 años de garantía. Marca nueva, pero bien valorada en el segmento de PEMF portátil de 2026.",
-        "programmability": "La mejor programabilidad de la gama de entrada: más de 130 protocolos con control y programación desde la app. Ofrece acceso real a los parámetros para su precio.",
-        "form-factor": "Formato ponible y de bolsillo. Solo uso localizado, sin la cobertura de cuerpo entero de una esterilla. Excelente por su portabilidad y para protocolos sobre la marcha.",
-        "value": "299 $: la puerta de entrada al PEMF con mejor relación calidad-precio. Difícil de superar a este precio para quienes sienten curiosidad por el PEMF."
+        "field-strength": "El formato portátil implica una intensidad máxima menor que la de las esterillas de cuerpo completo. Diseñado para uso localizado y dirigido, no para exponer todo el cuerpo al campo.",
+        "waveform-evidence": "Más de 130 protocolos basados en la investigación documentada sobre frecuencias PEMF. Sin investigación propia sobre una forma de onda exclusiva: utiliza la literatura existente.",
+        "build": "Construcción portátil de bolsillo, garantía de 2 años. Marca nueva, pero bien valorada en el segmento de PEMF portátil de 2026.",
+        "programmability": "La mejor programabilidad del nivel de entrada: más de 130 protocolos con control y programación desde la app. Acceso real a los parámetros para su precio.",
+        "form-factor": "Formato portátil / de bolsillo. Solo uso localizado y dirigido, sin cobertura de cuerpo completo como una esterilla. Excelente para la portabilidad y los protocolos fuera de casa.",
+        "value": "$299: la entrada a la PEMF con mejor relación calidad-precio. Difícil de rebatir a ese precio para quien siente curiosidad por la PEMF."
       },
-      "content": "## Dónde destaca\n\nResona Health VIBE es la gama de entrada del PEMF portátil: un dispositivo de 299 $ con más de 130 protocolos documentados, programación desde la app y un tamaño de bolsillo. Es la mejor forma, con poco compromiso, de explorar el PEMF sin gastar más de 2000 $ en una esterilla.\n\n## Dónde se queda corto\n\nEn intensidad de campo y cobertura de cuerpo entero. El formato ponible implica una intensidad máxima menor y un uso solo localizado: no tienes la sesión pasiva de cuerpo entero tumbado en una esterilla. Es una marca nueva, sin décadas de trayectoria.\n\n## Para quién es\n\nElige Resona Health VIBE si sientes curiosidad por el PEMF y quieres empezar sin gran compromiso, o si buscas un dispositivo portátil para protocolos localizados. Para sesiones de cuerpo entero en esterilla, OMI o Healthy Wave. Para una señal respaldada por investigación, Bemer. Para PEMF enfocado en el sueño, EarthPulse.\n\n---\n\n## Lecturas de contexto\n\n- [La arquitectura bioeléctrica de la recuperación](/articles/electric-medicine-neuromodulation)\n- [Protocolos de recuperación mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "content": "## Nuestro veredicto en resumen\n\nResona Health VIBE es la forma más sencilla de probar la PEMF sin comprar una esterilla. Es un dispositivo portátil de bolsillo por $299 con más de 130 programas controlados desde la app y programación. La contrapartida es intencionada: menor intensidad de campo y uso dirigido, no de cuerpo entero. Si quieres averiguar si la PEMF te aporta algo antes de gastar $1,750 o más en una esterilla, es el punto de entrada sensato.\n\n## ¿Qué es la PEMF y funciona?\n\nLos dispositivos PEMF (campos electromagnéticos pulsados) envían breves pulsos magnéticos al cuerpo. Los dispositivos PEMF médicos se usan para problemas concretos, como las fracturas que tardan en consolidar. En los dispositivos de bienestar de consumo, la evidencia es mucho más escasa.\n\nEl uso cotidiano mejor estudiado es el dolor articular. Una revisión Cochrane de ensayos pequeños en artrosis concluyó que la terapia con campos electromagnéticos puede reducir el dolor de forma moderada, mientras que los beneficios sobre la función eran inciertos (Li 2013). Las afirmaciones sobre sueño, energía, recuperación o \"carga celular\" provienen sobre todo de los fabricantes, no de ensayos independientes. No encontramos ensayos clínicos independientes del propio VIBE.\n\nAsí que el planteamiento honesto es: la PEMF es un experimento de bajo riesgo, no un tratamiento probado. Pruébala con un objetivo concreto, toma notas sencillas durante unas semanas y juzga por lo que cambie.\n\n## ¿Cuáles son las desventajas de Resona Health VIBE?\n\nLas principales desventajas son la menor intensidad de campo y la falta de cobertura de cuerpo completo. El formato portátil implica solo sesiones dirigidas: no obtienes la sesión tumbado y de cuerpo entero de una esterilla. Resona es además una marca más reciente, sin la larga trayectoria de Bemer u otros fabricantes de PEMF consolidados.\n\n## Resona VIBE frente a una esterilla PEMF\n\n| | Resona Health VIBE | Esterilla PEMF de cuerpo completo |\n|---|---|---|\n| Precio | $299 | aprox. $1,750–$5,500 |\n| Cobertura | dirigida, una zona | todo el cuerpo |\n| Portabilidad | de bolsillo | fija en casa |\n| Ideal para | probar la PEMF, viajes, una zona | sesiones diarias de cuerpo completo |\n\nPara esterillas de cuerpo completo, consulta [OMI Full Body Mat](/reviews/omi-full-body-mat) y [Healthy Wave](/reviews/healthy-wave-multi-wave). Para la marca más orientada a la investigación, consulta [Bemer](/reviews/bemer-classic-evo). Para PEMF centrada en el sueño, consulta [EarthPulse](/reviews/earthpulse-sleep-on-command). Todas las opciones están clasificadas en [los mejores dispositivos PEMF de 2026](/reviews/compare/best-pemf-devices-2026).\n\n## ¿Quién debería comprar Resona Health VIBE?\n\nElige Resona Health VIBE si sientes curiosidad por la PEMF y quieres un primer dispositivo de bajo compromiso, o si buscas un dispositivo portátil para uso dirigido. Descártalo si quieres sesiones de cuerpo completo o si esperas un efecto médico probado.\n\n## ¿Es segura la PEMF?\n\nPara la mayoría de los adultos sanos, la PEMF de consumo de baja intensidad parece de bajo riesgo. No la uses si tienes un marcapasos u otro dispositivo electrónico implantado, y consulta antes con un médico si estás embarazada, tienes epilepsia o estás en tratamiento por una enfermedad. La PEMF no debe sustituir al tratamiento médico.\n\n---\n\n## Lecturas de fondo\n\n- [Medicina eléctrica y neuromodulación](/articles/electric-medicine-neuromodulation)\n- [Biogénesis mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
       "faq": [
         {
           "q": "¿Cuánto cuesta Resona Health VIBE?",
-          "a": "Resona Health VIBE cuesta 299 $ como dispositivo ponible independiente, con la app incluida. Es la mejor relación calidad-precio de la gama de entrada en PEMF, frente a más de 2000 $ de las esterillas de cuerpo completo, lo que lo convierte en la forma de menor compromiso de explorar el PEMF. ONDA le da un 8,5/10 en relación calidad-precio."
+          "a": "Resona Health VIBE cuesta $299 como dispositivo portátil independiente, con la app incluida. Es la mejor relación calidad-precio de entrada en PEMF, frente a unos $1,750 o más de las esterillas de cuerpo completo, lo que la convierte en la forma de menor compromiso de explorar la PEMF. ONDA le da un 8.5/10 en relación calidad-precio."
         },
         {
           "q": "¿Qué hace Resona Health VIBE?",
-          "a": "Resona Health VIBE es un dispositivo PEMF ponible de bolsillo que ofrece más de 130 protocolos controlados y programables desde la app. Está pensado para un uso localizado y dirigido, no para sesiones de cuerpo entero, por lo que su intensidad de campo es menor que la de las esterillas de cuerpo completo, por diseño. ONDA le da un 6,8/10 en total."
+          "a": "Resona Health VIBE es un dispositivo PEMF portátil de bolsillo que ofrece más de 130 protocolos controlados desde la app, con programación. Está diseñado para un uso localizado y dirigido, no para sesiones de cuerpo completo, por lo que su intensidad de campo es menor que la de las esterillas por diseño. ONDA le da un 6.8/10 en total."
         },
         {
-          "q": "¿Para quién es más adecuado Resona Health VIBE?",
-          "a": "Resona Health VIBE es ideal para quienes sienten curiosidad por el PEMF y buscan una entrada sin gran compromiso, un PEMF portátil o un dispositivo de uso localizado con muchos protocolos por menos de 300 $. No está pensado para el tratamiento simultáneo de cuerpo entero; para eso, una esterilla de cuerpo completo es mejor opción."
+          "q": "¿Para quién es ideal Resona Health VIBE?",
+          "a": "Resona Health VIBE es ideal para quien siente curiosidad por la PEMF y busca una entrada de bajo compromiso, una PEMF portátil o un dispositivo de uso dirigido con muchos protocolos por menos de $300. No sirve para el tratamiento simultáneo de todo el cuerpo, donde una esterilla de cuerpo completo es mejor opción."
+        },
+        {
+          "q": "¿Funciona realmente Resona Health VIBE?",
+          "a": "No hay ensayos clínicos independientes del propio VIBE. Para la PEMF en general, la mejor evidencia es para el dolor articular: una revisión Cochrane concluyó que la terapia con campos electromagnéticos puede reducir moderadamente el dolor de la artrosis, con efectos inciertos sobre la función. Las afirmaciones sobre sueño, energía o recuperación se basan sobre todo en datos de los fabricantes. Tómalo como un experimento de bajo riesgo, no como un tratamiento probado."
+        },
+        {
+          "q": "¿Es segura la PEMF?",
+          "a": "Para la mayoría de los adultos sanos, la PEMF de consumo de baja intensidad parece de bajo riesgo. No la uses con un marcapasos u otro dispositivo electrónico implantado, y consulta antes con un médico si estás embarazada, tienes epilepsia o estás en tratamiento por una enfermedad."
+        },
+        {
+          "q": "¿Resona VIBE o una esterilla PEMF: cuál debería comprar?",
+          "a": "El VIBE cuesta $299, cabe en el bolsillo y trata una zona cada vez. Las esterillas de cuerpo completo cuestan aproximadamente entre $1,750 y $5,500 y ofrecen sesiones de cuerpo entero en casa. Empieza con el VIBE si quieres probar la PEMF por poco dinero; elige una esterilla si ya sabes que quieres sesiones diarias de cuerpo completo."
+        }
+      ]
+    },
+    "ultrahuman-m1": {
+      "verdict": "La mejor apuesta de ecosistema: datos de glucosa combinados con VFC, sueño y recuperación del Ultrahuman Ring en una sola app.",
+      "summary": "Ultrahuman M1 es el brazo CGM de la plataforma Ultrahuman, la misma app que gestiona los anillos Ultrahuman. Fuera de EE. UU. usa sensores Abbott FreeStyle Libre; en EE. UU., Ultrahuman lanzó M2 Live el 18 de junio de 2026, basado en el sensor Lingo de Abbott de venta libre, sin receta. El factor diferencial es la integración: comidas, curvas de glucosa, sueño, VFC, movimiento y recuperación conviven en una misma línea temporal. Muy bueno para quienes tienen un anillo Ultrahuman; más flojo como CGM independiente.",
+      "description": "Reseña de Ultrahuman M1 (2026): el CGM de ecosistema — glucosa junto a VFC, sueño y recuperación en una app. En EE. UU. ahora es M2 Live con sensor Lingo sin receta desde $99/mes.",
+      "bestFor": "Ideal para usuarios que ya están en el ecosistema Ultrahuman y quieren ver la glucosa combinada con la VFC y el sueño.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto y los comunicados de prensa de Ultrahuman, la literatura de validación de los sensores Abbott y reseñas independientes de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "Programa CGM (Abbott Libre fuera de EE. UU.; Abbott Lingo vía M2 Live en EE. UU.) con ecosistema de anillo",
+      "pros": [
+        "Glucosa, VFC, sueño y recuperación en una sola app con un anillo Ultrahuman",
+        "La versión de EE. UU. (M2 Live) es de venta libre: sin receta desde junio de 2026",
+        "Plan mensual desde $99, cancelable en cualquier momento; también sensor suelto",
+        "Información cruzada entre señales que no ofrece un programa solo de CGM"
+      ],
+      "cons": [
+        "La mayor parte del valor añadido requiere un anillo Ultrahuman, y el Ring Air ya no se vende en EE. UU. (el Ring Pro sí)",
+        "Los sensores Abbott quedan ligeramente por detrás del Dexcom G7 en precisión",
+        "El coaching es IA más coaches de rendimiento: sin dietista ni profesional clínico",
+        "La versión Lingo de EE. UU. es solo para adultos de 18+ que no usan insulina"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Sensores Abbott en todos los casos: FreeStyle Libre (Libre 3, MARD ~9%) fuera de EE. UU. y Abbott Lingo (14 días de uso, basado en Libre) en EE. UU. vía M2 Live. Algo menos preciso que el Dexcom G7 en comparaciones independientes.",
+        "insights": "Buen análisis del impacto de las comidas más la visión cruzada única: glucosa combinada con VFC, sueño y recuperación en la misma línea temporal.",
+        "coaching": "Principalmente basado en IA (información de Jade AI). Los planes incluyen acceso a coaches de rendimiento, no a dietistas ni profesionales clínicos.",
+        "app-integration": "Integración nativa con los anillos Ultrahuman para VFC/sueño/recuperación; compatibilidad con Apple Health, Google Fit y registro de comidas. El conjunto más completo en una sola app de la categoría.",
+        "flexibility": "EE. UU.: sensor Lingo suelto por $129 o suscripción mensual desde $99, cancelable en cualquier momento. El anillo es opcional, pero aporta la mayor parte del valor añadido.",
+        "value": "Desde $99/mes en EE. UU.: a la par de Stelo y más barato que Levels. La mejor relación calidad-precio si ya tienes un anillo Ultrahuman."
+      },
+      "content": "## Nuestro veredicto en resumen\n\nUltrahuman M1 es un programa de monitorización continua de glucosa (CGM) que vive dentro de la app de Ultrahuman, junto a los datos de los anillos inteligentes de Ultrahuman. Esa es toda su razón de ser: tu curva de glucosa aparece en la misma línea temporal que la VFC, el sueño y la recuperación. Si tienes un anillo Ultrahuman, es la opción CGM más integrada que existe. Si solo quieres datos de glucosa, hay opciones más baratas o más sencillas igual de buenas.\n\n**Actualización importante para EE. UU.:** el 18 de junio de 2026 Ultrahuman lanzó **M2 Live** en EE. UU. Usa el sensor **Lingo** de Abbott, de venta libre, por lo que ya no necesitas receta ni consulta médica. Los precios empiezan en $99 al mes con suscripción, o $129 por un sensor suelto. Fuera de EE. UU., M1 sigue funcionando con sensores Abbott FreeStyle Libre.\n\n## ¿Cómo funciona Ultrahuman M1?\n\nTe pegas un pequeño sensor en la parte posterior del brazo. Un diminuto filamento bajo la piel mide la glucosa en el líquido entre las células (no en la sangre) durante unos 14 días. El teléfono lee el sensor y la app de Ultrahuman muestra cómo las comidas, el ejercicio, el estrés y el sueño mueven tu glucosa. Con un anillo, la app también relaciona esas curvas con la VFC, las fases del sueño y la recuperación; por ejemplo, si una cena copiosa y tardía se refleja en un peor sueño y una VFC más baja a la mañana siguiente.\n\n## ¿Qué dice la evidencia?\n\nLos sensores de la familia Libre de Abbott están bien validados en personas con diabetes; Libre 3 muestra un error absoluto medio de alrededor del 9% frente a la glucosa de laboratorio. En personas **sin** diabetes, la evidencia es más débil. La glucosa de las personas sanas se mantiene en un rango estrecho, y las pequeñas subidas tras las comidas son normales. Todavía no hay pruebas sólidas de que perseguir curvas más planas mejore la salud a largo plazo. Un CGM se aprovecha mejor como herramienta de retroalimentación sobre hábitos, no como veredicto de salud.\n\n## ¿Cuánto cuesta Ultrahuman M1?\n\n| Opción | Precio (EE. UU.) | Notas |\n|---|---|---|\n| Ultrahuman M2 Live (Lingo) | desde $99/mes; $129 sensor suelto | sin receta, anillo opcional |\n| [Stelo](/reviews/stelo) (Dexcom) | $99 por 2 sensores (~30 días) | sin receta, app sencilla |\n| [Lingo](/reviews/lingo) (app de Abbott) | desde $54 por sensor de 2 semanas | mismo sensor, app propia de Abbott |\n| [Levels](/reviews/levels) | membresía Core $399/año | mes de CGM + paneles de laboratorio |\n\nSi también quieres el anillo, el [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) cuesta $479 en un único pago. El antiguo Ring Air ya no se vende en EE. UU. tras la victoria de Oura en materia de patentes; el CGM en sí no formó parte de esa prohibición.\n\n## ¿Cuáles son las desventajas de Ultrahuman M1?\n\nCasi toda la diferenciación depende de tener también un anillo Ultrahuman. Como CGM independiente, es un sensor Abbott con una app competente: la app Lingo de la propia Abbott es más barata por sensor, y Stelo, basado en Dexcom, es algo más preciso. El coaching es sobre todo IA. La versión Lingo de EE. UU. es solo para adultos de 18+ que no usan insulina.\n\n## ¿Quién debería comprar Ultrahuman M1 y quién no?\n\n**Cómpralo** si ya tienes (o piensas comprar) un anillo Ultrahuman y quieres la glucosa, el sueño y la VFC en un solo lugar.\n\n**Descártalo** si solo quieres datos de glucosa (consulta [Lingo vs Stelo vs Ultrahuman M1](/reviews/vs/lingo-vs-stelo-vs-ultrahuman-m1)), si quieres un dietista humano, o si tienes diabetes o usas insulina: en ese caso, usa un CGM médico con tu médico.\n\n## Notas de seguridad\n\nLos CGM de consumo no son dispositivos de diagnóstico. No pueden diagnosticar ni descartar la diabetes o la prediabetes; si tus cifras te preocupan, pide a un médico una prueba de HbA1c o de glucosa en ayunas. El adhesivo puede irritar la piel; alterna los brazos y deja de usarlo si ves una erupción o signos de infección.\n\nPara más opciones, consulta [los mejores CGM para biohackers en 2026](/reviews/compare/best-cgm-for-biohackers-2026) y [Levels vs Ultrahuman M1](/reviews/vs/levels-vs-ultrahuman-m1).\n\n---\n\n## Lecturas de fondo\n\nLa biología metabólica que revelan estos programas y los protocolos que desbloquean los datos.\n\n- [Seguimiento de biomarcadores con IA](/articles/ai-biomarker-tracking-predictive): el CGM como el flujo de biomarcadores de consumo de mayor densidad disponible\n- [¿Se puede medir ya el cortisol de forma continua?](/articles/chm-continuous-hormone-monitoring): por qué hoy ningún wearable de consumo mide hormonas, a diferencia de la glucosa\n- [El eje intestino-cerebro como vínculo de datos](/articles/gut-brain-axis-data-link): donde se cruzan los patrones del microbioma y de la glucosa\n",
+      "faq": [
+        {
+          "q": "¿Qué precisión tiene el CGM Ultrahuman M1?",
+          "a": "Ultrahuman M1 usa sensores Abbott: FreeStyle Libre fuera de EE. UU. (Libre 3 tiene un MARD de alrededor del 9%) y Abbott Lingo en EE. UU. vía M2 Live. Ambos ofrecen 14 días de uso sin calibración. Obtiene un 8.5/10 en precisión del sensor, ligeramente por detrás del Dexcom G7, con una puntuación global de ONDA de 7.5/10."
+        },
+        {
+          "q": "¿Cuánto cuesta Ultrahuman M1?",
+          "a": "En EE. UU., el CGM de Ultrahuman se vende ahora como M2 Live con el sensor Lingo de Abbott: suscripción mensual desde $99 o $129 por un sensor suelto de 14 días, sin receta (precios de junio de 2026). El anillo Ultrahuman es opcional y se vende por separado; el Ring Pro cuesta $479."
+        },
+        {
+          "q": "¿Merece la pena Ultrahuman M1 como CGM independiente?",
+          "a": "Ultrahuman M1 es mejor para usuarios que ya están en el ecosistema Ultrahuman, no como CGM independiente. Su factor diferencial es combinar la glucosa con la VFC, el sueño y la recuperación en una misma línea temporal, lo que requiere un anillo Ultrahuman. Por sí solos, Lingo o Stelo ofrecen datos de glucosa similares por el mismo dinero o menos."
+        },
+        {
+          "q": "¿Merece la pena Ultrahuman M1?",
+          "a": "Sí, si tienes un anillo Ultrahuman y quieres la glucosa junto al sueño y la VFC en una sola app. Solo para la glucosa no es mejor que Stelo ni que la app Lingo de la propia Abbott, y para personas sin diabetes un CGM es una herramienta de retroalimentación sobre hábitos, no una prueba de mejor salud."
+        },
+        {
+          "q": "¿Se necesita receta para Ultrahuman M1 en EE. UU.?",
+          "a": "Ya no. Desde el 18 de junio de 2026 Ultrahuman vende M2 Live en EE. UU. con el sensor Lingo de Abbott de venta libre, para adultos de 18+ que no usan insulina. El M1 anterior en EE. UU. requería una consulta médica."
+        },
+        {
+          "q": "¿Afecta a Ultrahuman M1 la prohibición de los anillos Ultrahuman en EE. UU.?",
+          "a": "No. La prohibición de importación en EE. UU. de 2025 surgió del caso de patentes de Oura y afectó a los anillos de Ultrahuman, como el Ring Air. El programa CGM siguió a la venta, y Ultrahuman volvió al mercado estadounidense de anillos en 2026 con el Ring Pro."
+        }
+      ]
+    },
+    "muse-s-athena": {
+      "verdict": "El casco de entrenamiento cerebral de consumo más completo: EEG más fNIRS en una banda blanda con la que puedes dormir.",
+      "productType": "Banda EEG + fNIRS de consumo (meditación, sueño, concentración)"
+    },
+    "muse-2": {
+      "verdict": "La banda EEG de consumo más popular: contenido maduro, precio asequible, la puerta de entrada a la categoría.",
+      "productType": "Banda EEG de consumo (meditación)"
+    },
+    "neurosity-crown": {
+      "verdict": "El mejor casco EEG para desarrolladores y biohackers: SDK abierto, datos en bruto, música para la concentración. Precio premium.",
+      "productType": "Casco EEG orientado a desarrolladores (concentración, flow)"
+    },
+    "emotiv-insight-2": {
+      "verdict": "El híbrido investigación-consumo: cinco canales y herramientas académicas reales, con los datos en bruto tras una suscripción.",
+      "productType": "Casco EEG híbrido investigación-consumo (5 canales)"
+    },
+    "sens-ai": {
+      "verdict": "El casco multimodal más ambicioso: EEG más fotobiomodulación más VFC, a un precio premium que exige tener claro el uso.",
+      "productType": "Casco multimodal (EEG + fotobiomodulación + VFC)"
+    },
+    "myndlift": {
+      "verdict": "La plataforma de neurofeedback con más credibilidad clínica: a través de un profesional autorizado, con protocolos y resultados reales.",
+      "productType": "Neurofeedback clínico en casa (con prescripción)"
+    },
+    "mendi": {
+      "verdict": "No es EEG: entrenamiento prefrontal con fNIRS en un formato sencillo basado en juegos. Fácil de usar, de enfoque limitado.",
+      "productType": "Banda fNIRS de entrenamiento cerebral prefrontal"
+    },
+    "focuscalm": {
+      "verdict": "Banda EEG centrada en el contenido: precio asequible, app correcta, la señal de un solo canal limita la profundidad.",
+      "productType": "Banda EEG de consumo (entrenamiento de concentración y calma)"
+    },
+    "flow-neuroscience": {
+      "verdict": "No es EEG: tDCS clínica para la depresión, con el mayor respaldo regulatorio y de ensayos de esta lista.",
+      "productType": "Casco tDCS para la depresión aprobado por la FDA (PMA) y con marcado CE (solo con receta en EE. UU.)"
+    },
+    "neurosky-mindwave-mobile-2": {
+      "verdict": "El casco EEG de consumo legítimo más barato: un solo canal, básico, pero con SDK abierto para desarrolladores y estudiantes.",
+      "productType": "Casco EEG educativo económico (un canal)"
+    },
+    "platinumled-biomax-600": {
+      "verdict": "Un panel mediano sólido con el espectro de longitudes de onda más amplio y un control riguroso de los CEM. Construcción al nivel de Joovv a un precio un escalón más bajo.",
+      "summary": "El PlatinumLED BIOMAX 600 es el buque insignia pequeño de la línea BIOMAX: siete longitudes de onda (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm), CEM y parpadeo probados de forma independiente, y una calidad de construcción cercana a Joovv a un precio claramente inferior. PlatinumLED lleva en el mercado de fotobiomodulación de consumo más tiempo que la mayoría y la línea ha madurado. Al ser mediano, el panel combina bien con un soporte para trabajar zonas concretas; para el cuerpo completo hacen falta dos.",
+      "description": "Reseña de ONDA del PlatinumLED BIOMAX 600: panel mediano de luz roja e infrarroja cercana con siete longitudes de onda ($1,049) y pruebas de CEM independientes.",
+      "bestFor": "Ideal para compradores que quieren un espectro amplio y un control de CEM verificado a un precio inferior al de Joovv.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de PlatinumLED, los informes publicados de pruebas independientes de CEM y parpadeo y la literatura de fotobiomodulación subyacente. ONDA no lo ha probado personalmente.",
+      "productType": "Panel LED mediano de terapia roja + NIR",
+      "pros": [
+        "El espectro de longitudes de onda más amplio de esta lista: siete longitudes de onda publicadas",
+        "Pruebas independientes de CEM y parpadeo publicadas abiertamente",
+        "Más barato que Joovv Solo 3.0 y MitoPRO 1500 por $1,049; garantía de 3 años",
+        "Marca consolidada con una larga trayectoria en terapia de luz roja de consumo"
+      ],
+      "cons": [
+        "Panel mediano: área de tratamiento menor que MitoPRO 1500 o un conjunto Joovv completo",
+        "Sin registro FDA de Clase II",
+        "La afirmación de siete longitudes de onda se apoya en pocos LED para las bandas menos comunes (480, 810, 1060)",
+        "El soporte y los accesorios de montaje se venden por separado"
+      ],
+      "scoreNotes": {
+        "irradiance": "Pico declarado por el fabricante ~149 mW/cm² a 0\"; ~70 mW/cm² a 6\". La verificación independiente queda dentro del 10% de las cifras declaradas a 6\".",
+        "wavelengths": "Siete longitudes de onda (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm, según la página de producto actual de PlatinumLED): más que incluso MitoPRO. El azul de 480 nm es poco habitual y supone una pequeña parte de la emisión total.",
+        "build-emf-flicker": "Pruebas independientes de CEM con <0.3 mG a 6\", tasa de parpadeo publicada y baja. PlatinumLED publicó abiertamente sus pruebas de laboratorio, algo poco común en la categoría.",
+        "coverage": "Panel mediano: medio cuerpo para el torso superior. Más pequeño que Joovv Solo o MitoPRO 1500; va bien para zonas concretas, pero requiere combinar paneles para el cuerpo completo.",
+        "evidence": "PlatinumLED cita literatura real de fotobiomodulación; no tiene registro FDA de Clase II como Joovv, pero su marketing es comedido en comparación con lo habitual en la categoría.",
+        "value": "$1,049 (oct. 2026): claramente más barato que Joovv Solo 3.0 y MitoPRO 1500 con una construcción comparable y un espectro más amplio. Muy buena relación calidad-precio en la gama premium."
+      },
+      "content": "## Dónde destaca\n\nEl PlatinumLED BIOMAX 600 es el panel que gana en amplitud de espectro y control de CEM en la franja de precio justo por debajo de Joovv y MitoPRO. Sus siete longitudes de onda (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm) superan a cualquier otro de esta lista, y PlatinumLED es una de las pocas marcas que publica abiertamente sus informes de pruebas independientes de CEM y parpadeo en lugar de limitarse a declarar las cifras.\n\n## ¿Cuáles son las desventajas del PlatinumLED BIOMAX 600?\n\nLa principal desventaja del BIOMAX 600 es el tamaño: es mediano, más pequeño que Joovv Solo 3.0 o MitoPRO 1500. Para cubrir el cuerpo completo hay que combinar dos. La afirmación de siete longitudes de onda es en parte marketing: el azul de 480 nm es una pequeña parte de la emisión total, y el menor número de LED en las bandas menos comunes hace que su dosis efectiva sea modesta. Sin registro FDA de Clase II como Joovv.\n\n## ¿Merece la pena el PlatinumLED BIOMAX 600?\n\nSí, para la mayoría de los compradores que quieren un panel mediano serio. Por $1,049 (tienda oficial de EE. UU., consultada el 2026-10-01) cuesta menos que el Joovv Solo 3.0 ($1,295) y el MitoPRO 1500 ($1,199), con un espectro más amplio, garantía de 3 años y resultados de pruebas publicados. No es la vía más barata para empezar con la terapia de luz roja —el Hooga HG500 cuesta $349— y si necesitas cubrir el cuerpo completo pagarás dos paneles o un modelo más grande.\n\n## Qué hacen los paneles de luz roja e infrarroja cercana, y la evidencia honesta\n\nLa luz roja (unos 630–660 nm) y la infrarroja cercana (unos 810–850 nm) son absorbidas por la citocromo c oxidasa de las mitocondrias; el efecto propuesto es un aumento a corto plazo de la producción de energía celular y un menor estrés oxidativo, un proceso llamado fotobiomodulación. La luz roja actúa sobre todo en la piel; la infrarroja cercana penetra más, hasta músculos y articulaciones.\n\nLa evidencia es más sólida para la piel. En un ensayo controlado con 136 voluntarios, Wunsch y Matuschka observaron que la luz roja o de banda ancha aplicada dos veces por semana mejoraba la valoración subjetiva del cutis, la rugosidad de la piel y la densidad de colágeno medida por ecografía en comparación con los controles ([Photomedicine and Laser Surgery, 2014, doi:10.1089/pho.2013.3616](https://doi.org/10.1089/pho.2013.3616)). Para la recuperación muscular, el dolor articular, el sueño o la \"longevidad\", los estudios son más pequeños, usan dosis y dispositivos variados y los resultados son dispares: toma esas afirmaciones como prometedoras pero no demostradas. La mayoría de los ensayos usaron dispositivos clínicos, no este panel, así que los resultados no se trasladan tal cual.\n\n## Distancia, dosis y duración de la sesión (indicaciones del fabricante)\n\nLa página de producto de PlatinumLED recomienda **10–20 minutos por zona de tratamiento**, a unas **8–14 pulgadas para tejido profundo** o **16–24 pulgadas para la piel superficial del rostro**. Más cerca significa mayor irradiancia y una sesión más corta; más no es mejor, ya que la fotobiomodulación sigue una curva dosis-respuesta en la que dosis muy altas pueden reducir el efecto. Empieza por el extremo corto y úsalo con constancia (la mayoría de los estudios usaron varias sesiones por semana).\n\n## Seguridad\n\n- **Ojos:** no mires directamente a los LED. La luz infrarroja cercana es invisible, así que el panel parece menos potente de lo que es: usa las gafas protectoras, sobre todo en las sesiones faciales.\n- **Medicamentos y enfermedades fotosensibilizantes:** consulta antes con un médico si tomas fármacos que aumentan la sensibilidad a la luz (por ejemplo, algunos antibióticos, la isotretinoína o ciertos diuréticos) o tienes una enfermedad sensible a la luz como el lupus o la porfiria.\n- **Embarazo, cáncer o tratamiento sobre un lunar sospechoso o un tatuaje:** consulta antes con un profesional sanitario.\n- **Calor:** detente si la piel se calienta de forma incómoda.\n\n## Cómo se compara\n\n| Panel | Precio (USD) | Longitudes de onda | Notas |\n|---|---|---|---|\n| PlatinumLED BIOMAX 600 | $1,049 | 7 (480–1060 nm) | Mediano, pruebas de CEM publicadas, soporte aparte |\n| [Joovv Solo 3.0](/reviews/joovv-solo-3) | $1,295 | Roja + NIR | Modular, registrado en la FDA, premium |\n| [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) | $1,199 | Roja + NIR | Panel más grande, más cobertura |\n| [BioLight Pro 900](/reviews/biolight-pro-900) | $899 | Roja + NIR | Mediano, soporte incluido |\n| [Hooga HG500](/reviews/hooga-hg500) | $349 | Roja + NIR | Entrada económica |\n\nConsulta también [Joovv Solo 3.0 vs BIOMAX 600](/reviews/vs/joovv-solo-3-vs-platinumled-biomax-600), [BIOMAX 600 vs BioLight Pro 900](/reviews/vs/platinumled-biomax-600-vs-biolight-pro-900) y los [mejores paneles de terapia de luz roja](/reviews/compare/best-red-light-therapy-panels-2026).\n\n## ¿Quién debería comprar el PlatinumLED BIOMAX 600?\n\nElige el PlatinumLED BIOMAX 600 si quieres un espectro amplio y pruebas de CEM publicadas por $246 menos que el Joovv Solo 3.0, y si el panel mediano se ajusta a tu uso. Para necesidades mayores de medio cuerpo o de cuerpo completo modular, Mito Red o Joovv. Para el presupuesto más ajustado, Hooga HG500.\n\n---\n\n## Lecturas de fondo\n\nEl mecanismo de fotobiomodulación que explica por qué funciona la terapia de luz roja.\n\n- [ADN mitocondrial y luz roja](/articles/mitochondrial-dna-red-light): cómo los fotones de 660/850 nm llegan a las mitocondrias y qué hacen allí\n- [Biogénesis mitocondrial: la red eléctrica celular](/articles/mitochondrial-biogenesis-cellular-power-grid): por qué la fotobiomodulación aumenta la densidad mitocondrial\n- [Hardware de longevidad y limpieza celular](/articles/longevity-hardware-cellular-cleanup): cómo encaja la terapia de luz roja en el conjunto más amplio de autofagia / mitofagia\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena el PlatinumLED BioMax 600?",
+          "a": "Para la mayoría de los compradores que quieren un panel mediano, sí. Por $1,049 es más barato que el Joovv Solo 3.0 ($1,295) y el MitoPRO 1500 ($1,199), con siete longitudes de onda, pruebas de CEM publicadas y garantía de 3 años. No es la opción más barata (el Hooga HG500 cuesta $349) y para cubrir el cuerpo completo hacen falta dos paneles. La evidencia es más sólida para los beneficios en la piel; otros usos están menos demostrados."
+        },
+        {
+          "q": "BioMax 600 vs Joovv Solo 3.0: ¿cuál es mejor?",
+          "a": "El BIOMAX 600 ($1,049) ofrece un espectro más amplio de siete longitudes de onda y pruebas de CEM publicadas por $246 menos. El Joovv Solo 3.0 ($1,295) tiene registro en la FDA y un sistema modular que se amplía hasta conjuntos de cuerpo completo. Elige BIOMAX por relación calidad-precio y espectro; Joovv si piensas montar un sistema modular más grande."
+        },
+        {
+          "q": "¿A qué distancia hay que ponerse de un panel de luz roja?",
+          "a": "Sigue las indicaciones del fabricante. Para el BIOMAX 600, PlatinumLED recomienda unas 8–14 pulgadas para tejido profundo y 16–24 pulgadas para la piel del rostro, durante 10–20 minutos por zona. Más cerca significa mayor intensidad y sesiones más cortas; más dosis no es automáticamente mejor. Usa protección ocular."
+        },
+        {
+          "q": "¿Cuánto cuesta el PlatinumLED BIOMAX 600?",
+          "a": "El PlatinumLED BIOMAX 600 cuesta $1,049 en un único pago en la tienda oficial de EE. UU. (octubre de 2026), con el soporte y los accesorios de montaje aparte. Es claramente más barato que el Joovv Solo 3.0 y el MitoPRO 1500 con una construcción comparable y un espectro más amplio. ONDA le da un 8.2/10 en total."
+        },
+        {
+          "q": "¿Qué longitudes de onda emite el PlatinumLED BIOMAX 600?",
+          "a": "El PlatinumLED BIOMAX 600 emite siete longitudes de onda: 480, 630, 660, 810, 830, 850 y 1060 nm, el espectro más amplio de la lista de luz roja de ONDA. El azul de 480 nm es poco habitual y supone una pequeña parte de la emisión total, y las bandas menos comunes se apoyan en un número menor de LED."
+        },
+        {
+          "q": "¿Para quién es ideal el PlatinumLED BIOMAX 600?",
+          "a": "El PlatinumLED BIOMAX 600 es ideal para compradores que quieren un espectro amplio y un control de CEM verificado a un precio inferior al de Joovv. PlatinumLED publica abiertamente sus pruebas independientes de CEM (<0.3 mG a 6\"), algo poco común en la categoría. El panel mediano requiere combinar varios para cubrir el cuerpo completo."
         }
       ]
     }
@@ -1220,6 +1396,93 @@
         {
           "q": "¿Necesitan suscripción las apps de meditación?",
           "a": "No todas. Insight Timer, el Healthy Minds Program, Smiling Mind y Medito se pueden usar gratis; Healthy Minds y Medito no tienen ningún nivel de pago. Calm, Headspace, Balance, Waking Up y Happier Meditation necesitan una suscripción para un uso completo."
+        }
+      ]
+    },
+    "best-eeg-headsets-2026": {
+      "title": "Los mejores cascos EEG y de entrenamiento cerebral (2026)",
+      "description": "ONDA clasifica los diez mejores cascos EEG y de entrenamiento cerebral de 2026 — Muse, Neurosity Crown, Emotiv, Mendi, FocusCalm, Sens.ai, Myndlift, Flow, NeuroSky — en EEG, fNIRS y tDCS.",
+      "intro": "En 2026, el mercado de cascos de entrenamiento cerebral de consumo no es un único tipo de producto. Son tres: cascos de medición EEG (Muse, Neurosity Crown, Emotiv, FocusCalm, NeuroSky), entrenadores prefrontales fNIRS (Mendi) y dispositivos de estimulación tDCS (Flow Neuroscience). Si añades la plataforma de neurofeedback remoto con prescripción clínica (Myndlift) y la opción premium multimodal (Sens.ai), tienes los diez dispositivos que en la práctica definen la decisión de compra. Los puntuamos todos con la misma rúbrica —calidad de señal, profundidad de contenido, información, comodidad, experiencia de la app, acceso abierto a los datos y relación calidad-precio— para que el conjunto se lea como una sola lista ordenada y los compromisos entre modalidades queden explícitos.",
+      "verdict": "El mercado del entrenamiento cerebral se divide en tres modalidades que no conviene confundir. Los cascos basados en EEG —Muse S Athena, Muse 2, Neurosity Crown, Emotiv Insight 2, FocusCalm y el económico NeuroSky— miden la actividad eléctrica del cerebro y la devuelven en directo; es la categoría a la que se refiere la mayoría de la gente cuando habla de \"entrenamiento cerebral\". La fNIRS (Mendi) mide en cambio la oxigenación sanguínea prefrontal, que es una señal distinta y un caso de uso más limitado. La tDCS (Flow Neuroscience) no mide nada: estimula la corteza prefrontal dorsolateral con una pequeña corriente como tratamiento clínico de la depresión. Myndlift es la plataforma clínica de referencia con prescripción, sobre hardware de consumo, y Sens.ai es la opción premium multimodal que combina EEG con fotobiomodulación y VFC. Dentro del EEG, Muse S Athena gana en general por profundidad de contenido, fusión de sensores y comodidad; Neurosity Crown gana para desarrolladores que quieren datos en bruto; Muse 2 gana en relación calidad-precio; Emotiv Insight 2 gana por la profundidad de sus herramientas académicas. Elige primero la modalidad y después el dispositivo dentro de ella.",
+      "content": "## Respuesta rápida\n\nEl mejor casco EEG para la mayoría de la gente en 2026 es **Muse S Athena** ($499): la biblioteca más amplia de meditación con retroalimentación, EEG más fNIRS y sin suscripción obligatoria. **Muse 2** ($249) es la opción con mejor relación calidad-precio solo para meditar. **Neurosity Crown** ($1,499) es la elección si quieres datos en bruto y un SDK abierto. Si buscas neurofeedback clínico supervisado, eso es **Myndlift** a través de un profesional autorizado, no un casco de consumo.\n\n## Tabla comparativa\n\n| Casco | Precio (USD) | Modalidad / sensores | Ideal para |\n|---|---|---|---|\n| [Muse S Athena](/reviews/muse-s-athena) | $499 | EEG seco de 4 canales + fNIRS | Meditación y sueño, el mejor en general |\n| [Muse 2](/reviews/muse-2) | $249 | EEG seco de 4 canales + frecuencia cardíaca por PPG | Meditación con retroalimentación con poco presupuesto |\n| [Neurosity Crown](/reviews/neurosity-crown) | $1,499 | 8 electrodos EEG secos | Desarrolladores, datos en bruto, concentración |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 + ~$99/año Pro para datos en bruto | 5 electrodos EEG semisecos | Investigación y herramientas académicas |\n| [Sens.ai](/reviews/sens-ai) | $1,250 + membresía ($300/año o $75/mes tras la prueba) | EEG de 5 canales + VFC + luz de infrarrojo cercano | Entrenamiento premium multimodal |\n| [Myndlift](/reviews/myndlift) | ~$300–$600/mes a través del profesional | Hardware Muse 2, protocolos clínicos | Neurofeedback clínico supervisado |\n| [Mendi](/reviews/mendi) | $379 de lista (a menudo con descuento) | fNIRS (no EEG) | Juegos sencillos de entrenamiento prefrontal |\n| [FocusCalm](/reviews/focuscalm) | $199 + Plus opcional | EEG de 1 canal | El programa EEG guiado más barato |\n| [Flow Neuroscience](/reviews/flow-neuroscience) | £399 en Reino Unido + suscripción a la app; en EE. UU. solo con receta | Estimulación tDCS (sin medición) | Tratamiento clínico de la depresión |\n| [NeuroSky MindWave Mobile 2](/reviews/neurosky-mindwave-mobile-2) | ~$110 | EEG de 1 canal | Estudiantes y desarrolladores aficionados |\n\n## Cómo elegir un casco EEG\n\nEmpieza por lo que quieres que haga el casco, porque los tres usos habituales requieren hardware distinto.\n\n**1. Retroalimentación para meditar.** Quieres saber cuándo se te dispersa la mente y aprender a calmarla. Lo que importa es la app, el contenido guiado y la comodidad, no el número de canales. Muse S Athena y Muse 2 lideran aquí; FocusCalm es la alternativa más barata de un solo canal. Los datos en bruto son irrelevantes para este uso.\n\n**2. Entrenamiento con neurofeedback.** Quieres entrenar un patrón cerebral concreto durante semanas (atención, calma, el protocolo de un profesional clínico). Las apps de consumo ofrecen versiones simplificadas; el neurofeedback real para el TDAH, la ansiedad o los problemas de sueño lo diseña y ajusta un profesional clínico, que es lo que ofrece Myndlift. Sens.ai está a medio camino y añade entrenamiento con luz y VFC sobre el EEG.\n\n**3. Trabajo de desarrollo o con datos en bruto.** Quieres enviar las señales a tu propio código, hacer experimentos o crear una app. Elige por apertura del SDK y número de canales: Neurosity Crown (8 electrodos, SDK abierto, sin suscripción para los datos), Emotiv Insight 2 (5 canales, datos en bruto tras el nivel Pro) o NeuroSky para aprender con un presupuesto mínimo.\n\nDos comprobaciones más antes de comprar: el **modelo de suscripción** (Emotiv, Sens.ai y FocusCalm cobran aparte por partes de la experiencia; Muse y Crown no la exigen) y la **comodidad**: si meditas tumbado o quieres datos de sueño, solo la banda blanda de Muse S Athena está diseñada para ello.\n\n## Qué puede y qué no puede medir el EEG de consumo\n\nLos cascos EEG de consumo miden pequeñísimos cambios de voltaje en unos pocos puntos del cuero cabelludo mediante electrodos secos. Es una señal cerebral real: en un estudio de validación de 2017, Krigolson y sus colegas mostraron que el Muse de cuatro canales captaba potenciales relacionados con eventos estándar (N200 y P300) comparables a los de un sistema de investigación ([Frontiers in Neuroscience, doi:10.3389/fnins.2017.00109](https://doi.org/10.3389/fnins.2017.00109)).\n\nLo que no puede hacer es igual de importante:\n\n- **Pocos canales, sobre todo en la frente.** De cuatro a ocho electrodos no pueden localizar la actividad como un gorro de laboratorio de 32 o 64 canales.\n- **Artefactos.** Los parpadeos, apretar la mandíbula, fruncir el ceño y el movimiento producen señales mayores que la actividad cerebral; las buenas apps las filtran, pero aun así hay sesiones con ruido.\n- **Puntuaciones propietarias.** Las cifras de \"calma\", \"concentración\" o \"flow\" son el algoritmo propio de cada empresa, no una medida médica validada, y no son comparables entre marcas.\n- **Sin diagnóstico.** Ningún casco de consumo diagnostica TDAH, ansiedad, depresión ni trastornos del sueño.\n\nEl planteamiento honesto: usa la puntuación como tendencia dentro de tus propias sesiones. El beneficio que obtiene la mayoría de la gente procede de la práctica que la retroalimentación fomenta, y los efectos en principiantes se construyen a lo largo de semanas de uso regular.\n\n## Quién debería prescindir de un casco EEG\n\n- **Quien quiera una cifra de estrés o recuperación.** La variabilidad de la frecuencia cardíaca de un anillo o un reloj es más fácil de registrar a diario y está mejor estudiada para el estrés y la recuperación que las puntuaciones de EEG de consumo; consulta nuestros [mejores monitores de VFC](/reviews/compare/best-hrv-trackers-2026).\n- **Quien busque tratamiento** para el TDAH, la depresión o la ansiedad: empieza por un profesional clínico; Myndlift o Flow solo tienen sentido dentro de ese camino.\n- **Compradores que no lo usarán con regularidad.** Un casco usado dos veces es la app de meditación más cara que tendrás.\n- **Quien no soporte llevar nada en la cabeza** durante la práctica: una app de respiración guiada o de meditación puede bastar.\n\nPara enfrentamientos directos, consulta [Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown) y [Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2).\n\n## Cómo los clasificamos\n\nCada dispositivo se puntuó con la [metodología de reseñas](/reviews/methodology) publicada de ONDA: siete criterios ponderados, en los que la calidad de señal y la profundidad del contenido de entrenamiento tienen más peso. El acceso abierto a los datos se pondera por separado porque biohackers e investigadores lo valoran de forma desproporcionada y los usuarios de meditación de consumo apenas lo notan; una única puntuación global que ocultara la diferencia sería engañosa.\n\nLos diez dispositivos se evaluaron a partir de la documentación de los fabricantes, la literatura de validación publicada cuando existía y reseñas independientes de 2026, no mediante pruebas propias, así que toma las puntuaciones como un punto de partida basado en la evidencia.\n\n## Los mejores cascos EEG y de entrenamiento cerebral: ¿cuál deberías comprar?\n\nLa categoría se divide por modalidad y por intención.\n\n**Medición EEG (seis opciones):** Muse S Athena y Muse 2 lideran en profundidad de contenido, Neurosity Crown lidera en acceso para desarrolladores, Emotiv Insight 2 lidera en integración con herramientas académicas, FocusCalm lidera en contenido a precio asequible y NeuroSky MindWave Mobile 2 ancla el nivel económico / educativo. Elige dentro de este grupo según tu nivel técnico y si quieres contenido o datos en bruto.\n\n**fNIRS (Mendi):** Señal distinta, uso distinto. Elígelo solo si lo que quieres es entrenamiento puro de la atención prefrontal.\n\n**tDCS (Flow Neuroscience):** No es medición en absoluto. Solo indicación clínica para la depresión.\n\n**Premium multimodal (Sens.ai):** EEG + fotobiomodulación + VFC en un solo programa. Es la elección adecuada solo cuando lo que quieres es esa combinación multimodal.\n\n**Referencia clínica (Myndlift):** Neurofeedback prescrito en casa, sobre hardware de consumo. La opción clínica de referencia de la categoría.\n\nDecide primero la modalidad y después el dispositivo dentro de ella. La categoría es lo bastante pequeña como para que estos diez sean, en la práctica, todos los cascos que merece la pena conocer en 2026.",
+      "picks": {
+        "muse-s-athena": {
+          "award": "El mejor en general",
+          "takeaway": "EEG más fNIRS en una banda blanda apta para dormir: la biblioteca de contenido de consumo más amplia, sin suscripción obligatoria."
+        },
+        "muse-2": {
+          "award": "La mejor entrada calidad-precio",
+          "takeaway": "La banda EEG de meditación madura y popular a precio de entrada: el dispositivo de meditación con EEG real más rentable."
+        },
+        "neurosity-crown": {
+          "award": "El mejor para desarrolladores",
+          "takeaway": "Ocho electrodos secos y el SDK más abierto de la categoría de consumo: EEG en bruto mediante JavaScript, Python y Swift."
+        },
+        "emotiv-insight-2": {
+          "award": "El mejor híbrido investigación-consumo",
+          "takeaway": "EEG de cinco canales con las herramientas académicas más citadas, con los datos en bruto tras una suscripción."
+        },
+        "sens-ai": {
+          "award": "El mejor premium multimodal",
+          "takeaway": "El único casco que combina EEG, fotobiomodulación y VFC en un solo programa, a precio premium."
+        },
+        "myndlift": {
+          "award": "El mejor neurofeedback clínico",
+          "takeaway": "Neurofeedback con prescripción clínica en casa: protocolos reales y seguimiento real de resultados, a través de un profesional autorizado."
+        },
+        "mendi": {
+          "award": "El mejor para entrenamiento prefrontal (fNIRS)",
+          "takeaway": "Neurofeedback de la corteza prefrontal mediante juegos con fNIRS: una modalidad distinta del EEG, con la curva de aprendizaje más sencilla."
+        },
+        "focuscalm": {
+          "award": "El mejor para concentración guiada por contenido",
+          "takeaway": "El casco EEG legítimo más barato con contenido guiado real: un solo canal y un programa pulido."
+        },
+        "flow-neuroscience": {
+          "award": "La mejor tDCS clínica",
+          "takeaway": "Casco tDCS con marcado CE para la depresión: el mayor respaldo regulatorio y de ensayos de esta lista."
+        },
+        "neurosky-mindwave-mobile-2": {
+          "award": "La mejor entrada económica / para desarrolladores",
+          "takeaway": "El casco EEG de consumo legítimo más barato: un solo canal, SDK abierto y hardware de mediados de la década de 2010."
+        }
+      },
+      "faq": [
+        {
+          "q": "¿Cuál es el mejor casco EEG para meditar?",
+          "a": "Muse S Athena ($499) es el mejor casco EEG para meditar en 2026: cuatro canales EEG secos más fNIRS prefrontal, la biblioteca de meditación guiada más amplia y retroalimentación de audio en tiempo real, sin suscripción obligatoria. Muse 2 ($249) ofrece la misma retroalimentación básica para meditar a mitad de precio, sin registro del sueño. FocusCalm ($199) es el casco más barato con un programa guiado pulido, pero usa un solo canal."
+        },
+        {
+          "q": "¿Son precisos los cascos EEG de consumo?",
+          "a": "Lo bastante precisos para la retroalimentación, no para el diagnóstico. Los cascos de consumo con electrodos secos captan señales cerebrales reales —un estudio de validación de 2017 concluyó que el Muse de cuatro canales registraba potenciales relacionados con eventos clásicos comparables a los de un sistema de investigación—, pero tienen pocos canales, son sensibles al movimiento, a la tensión mandibular y a los parpadeos, y sus puntuaciones de \"calma\" o \"concentración\" son algoritmos propietarios, no medidas clínicas validadas. Toma las cifras como una tendencia dentro de tus propias sesiones, no como una lectura absoluta de la salud cerebral."
+        },
+        {
+          "q": "Muse vs Neurosity Crown: ¿cuál debería comprar?",
+          "a": "Compra Muse (S Athena $499 o Muse 2 $249) si quieres meditación guiada con retroalimentación en directo y una app pulida. Compra Neurosity Crown ($1,499) si quieres datos EEG en bruto, ocho electrodos y un SDK abierto para JavaScript, Python y Swift: es una herramienta para desarrolladores y para la concentración, no un coach de meditación. Para la mayoría de quienes meditan, Muse es la opción mejor y mucho más barata."
+        },
+        {
+          "q": "¿Cuál es el mejor casco EEG en 2026?",
+          "a": "Muse S Athena en general: es el único dispositivo de consumo que combina EEG, fNIRS y registro del sueño en una banda blanda, con la biblioteca de meditación más amplia y sin suscripción obligatoria. Para desarrolladores y biohackers que quieren acceso al EEG en bruto, Neurosity Crown. Para quienes empiezan a meditar con poco presupuesto, Muse 2."
+        },
+        {
+          "q": "¿Cuál es la diferencia entre los cascos EEG, fNIRS y tDCS?",
+          "a": "El EEG mide la actividad eléctrica del cerebro mediante electrodos en el cuero cabelludo (Muse, Neurosity Crown, Emotiv, FocusCalm, NeuroSky). La fNIRS mide los cambios de oxigenación sanguínea mediante luz de infrarrojo cercano (Mendi). La tDCS no mide nada: estimula el cerebro con una pequeña corriente eléctrica como tratamiento clínico (Flow Neuroscience). Compiten en la misma decisión de compra, pero resuelven problemas distintos."
+        },
+        {
+          "q": "¿Funcionan realmente los cascos EEG para la concentración y la meditación?",
+          "a": "Dentro de sus límites, sí. El neurofeedback con EEG para la meditación tiene la base de evidencia más sólida de todas las aplicaciones de entrenamiento cerebral de consumo; el hardware de Muse en particular cuenta con decenas de estudios revisados por pares. La salvedad es que el EEG de consumo solo mide lo que llega al cuero cabelludo a través de electrodos secos; el nivel de detalle es real pero limitado, y el tamaño del efecto en quienes empiezan a meditar es modesto hasta que la práctica se consolida durante meses."
+        },
+        {
+          "q": "¿Qué casco EEG tiene el SDK más abierto?",
+          "a": "Neurosity Crown: EEG en bruto mediante JavaScript, Python y Swift, sin suscripción para acceder a los datos. Emotiv Insight 2 tiene un SDK comparable, pero el acceso a los datos en bruto requiere una suscripción Pro. NeuroSky MindWave Mobile 2 tiene un SDK abierto en el nivel económico. Muse, FocusCalm y Sens.ai son plataformas cerradas."
+        },
+        {
+          "q": "¿Merece la pena Muse S Athena frente a Muse 2?",
+          "a": "Si te importa el registro del sueño, sí: Athena es el único casco EEG de consumo cómodo para llevar toda la noche, y la incorporación de fNIRS lo convierte en el único dispositivo de consumo con fusión de sensores. Si solo vas a meditar, Muse 2 lo cubre a mitad de precio."
+        },
+        {
+          "q": "¿Puedo usar un Muse o un Neurosity Crown para el TDAH o la ansiedad?",
+          "a": "Los cascos EEG de consumo no son dispositivos médicos aprobados para el TDAH, la ansiedad ni ninguna enfermedad. La opción clínica de esta lista es Myndlift, que funciona a través de un profesional de salud mental autorizado que supervisa el protocolo de neurofeedback. Para la depresión clínica en concreto, Flow Neuroscience es la opción tDCS con marcado CE."
         }
       ]
     }
@@ -1426,7 +1689,7 @@
       "content": "## En resumen\n\nSi preguntas por la HRV, actualiza. El Health Sensing System del Series 12 muestrea la HRV unas 24× más a menudo, la divide en Recovery HRV (RMSSD) y Overall HRV (SDNN) analizadas frente a tu línea base, expone RMSSD nativo a apps de terceros y añade notificaciones de hipertensión. Es un salto genuino para el seguimiento de la recuperación.\n\nSi preguntas por todo lo demás — batería, apps, el smartwatch del día a día — el Series 12 es incremental, y un Series 11 con descuento es la mejor relación calidad-precio.\n\n## Por qué importa el cambio en la HRV\n\nDurante años Apple solo expuso SDNN, muestreado de forma esporádica, que nunca cuadró con Whoop u Oura. El Recovery HRV del Series 12 se basa en RMSSD — la misma familia de métrica que usan esos trackers — así que el número por fin es comparable en tipo. Consulta la explicación completa de [Recovery HRV frente a Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) y [por qué la HRV se lee distinta en cada dispositivo](/articles/hrv-different-every-device).\n\n## La advertencia honesta\n\nAmbos son relojes ópticos de muñeca con baterías de ~1-day. Ninguno iguala a un anillo en el dedo ni a una banda torácica con ECG para un registro nocturno continuo de HRV, y en ambos la medición nocturna compite con la carga de la noche. Si una tendencia nocturna limpia es tu única prioridad, consulta los [mejores trackers de HRV de 2026](/reviews/compare/best-hrv-trackers-2026) — un anillo puede servirte mejor que cualquiera de los dos relojes."
     },
     "apple-watch-series-12-vs-oura-ring-4": {
-      "title": "Apple Watch Series 12 vs Oura Ring 4 (2026)",
+      "title": "Apple Watch Series 12 vs Oura Ring 4: comparativa (2026)",
       "description": "Apple Watch Series 12 vs Oura Ring 4 para la VFC — ahora que Apple reporta Recovery HRV basado en RMSSD, la comparación por fin es justa. Reloj vs anillo, sopesados eje por eje.",
       "intro": "Durante años fue una pelea desigual: el Apple Watch reportaba SDNN esporádico, el Oura Ring reportaba RMSSD continuo, y los números nunca coincidían. El Series 12 de septiembre de 2026 cambia eso — su Recovery HRV se basa en RMSSD y se muestrea unas 24× más a menudo, la misma familia de métrica que usa Oura. Así que la pregunta real es ahora la honesta: un smartwatch que lo hace todo, o un anillo nocturno dedicado.",
       "verdict": "Sin ganador general — se reparte según lo que quieras. Para la HRV y el sueño nocturnos más precisos y sin intervención, el Oura Ring 4 lidera por la medición en el dedo y la batería de varios días. Para un smartwatch todoterreno con ECG, notificaciones de hipertensión y sin suscripción, gana el Series 12 — su HRV por fin es lo bastante buena como para actuar en consecuencia.",
@@ -3320,6 +3583,67 @@
         }
       ],
       "content": "## En resumen\n\nTres problemas de sueño distintos y tres productos distintos. Sleepio trata el insomnio. Sleep Cycle mide el sueño. Pzizz ayuda a conciliar el sueño. Elige según qué problema tienes realmente.\n\n## Cuándo Sleepio es la opción correcta\n\nSi tienes insomnio crónico —seis semanas de problemas para conciliar o mantener el sueño con impacto diurno—, Sleepio tiene la forma adecuada. Es la intervención digital con mayor validación clínica del espacio de consumo y la única con recomendación del NICE. El compromiso estructurado de seis semanas de CBT-I es el coste; una mejora duradera del insomnio es el valor.\n\n## Cuándo Sleep Cycle es la opción correcta\n\nSi quieres hacer seguimiento del sueño —alarma inteligente, estimaciones de fases del sueño, detección de ronquidos, tendencias de varios meses—, Sleep Cycle tiene la forma adecuada. Una década de iteración en la implementación de la alarma inteligente la convierte en la herramienta que define la categoría para despertarse menos aturdido.\n\n## Cuándo Pzizz es la opción correcta\n\nSi quieres ayuda para dormirte esta noche sin un programa, Pzizz tiene la forma adecuada. Audio dreamscape generativo diseñado específicamente para conciliar el sueño: le das a reproducir y la experiencia hace el resto. Para el insomnio clínico no es la herramienta adecuada; para desconectar cada noche, sí."
+    },
+    "whoop-5-0-vs-garmin-venu-4": {
+      "title": "Whoop 5.0 vs Garmin Venu 4: comparativa (2026)",
+      "description": "Whoop 5.0 vs Garmin Venu 4: comparativa de ONDA de dos monitores de VFC orientados al entrenamiento. Suscripción de coaching frente a reloj que lo hace todo.",
+      "intro": "Whoop 5.0 y Garmin Venu 4 son los dos monitores de VFC que los deportistas serios comparan entre sí en 2026. Ambos ofrecen una señal diaria de recuperación y un modelo de carga de entrenamiento; la diferencia estructural es el envoltorio. Whoop es una suscripción de coaching que incluye una banda; Garmin es un smartwatch de pago único con análisis de entrenamiento propios. La elección tiene menos que ver con la precisión de la VFC y más con cómo quieres convivir con el dispositivo.",
+      "verdict": "Garmin Venu 4 gana para la mayoría de los deportistas: análisis de VFC y recuperación comparables sin suscripción, cinco días de batería y un modelo de carga de entrenamiento más profundo. Whoop gana específicamente para quienes usan la puntuación diaria de Recovery como indicación de coaching.",
+      "bestForA": "Elige Whoop 5.0 si la puntuación diaria de Recovery es una indicación de coaching que realmente cambia tu sesión, y prefieres el formato de banda sin pantalla y el modelo de suscripción con hardware incluido.",
+      "bestForB": "Elige Garmin Venu 4 si quieres análisis de entrenamiento sin suscripción continua, cinco días de batería y una pantalla de smartwatch: la mejor economía a largo plazo para la mayoría de los usuarios.",
+      "axes": [
+        {
+          "name": "Medición de la VFC",
+          "note": "Ambos miden la VFC de forma continua durante la noche con PPG óptica; las comparaciones independientes los sitúan más o menos igualados. Empate en la capa de señal."
+        },
+        {
+          "name": "Coaching de recuperación",
+          "note": "El coach de Recovery y Strain de Whoop es el modelo de preparación diaria más afinado del mercado de consumo. El Body Battery de Garmin es competente, pero más ligero."
+        },
+        {
+          "name": "Análisis de entrenamiento",
+          "note": "Garmin tiene el modelo más profundo de carga de entrenamiento, VO2 max, horas de recuperación y entrenamientos estructurados. Whoop es coaching; Garmin es instrumento."
+        },
+        {
+          "name": "Pantalla y notificaciones",
+          "note": "Garmin: smartwatch AMOLED con notificaciones, música y apps. Whoop: banda sin pantalla que se empareja con el teléfono."
+        },
+        {
+          "name": "Duración de la batería",
+          "note": "Garmin Venu 4: ~5 días en modo smartwatch. Whoop: ~4–5 días, con el sistema de batería extraíble."
+        },
+        {
+          "name": "Formato para entrenar",
+          "note": "La banda Whoop queda más limpia bajo el equipo de deportes de contacto o en la piscina, sin pantalla que pueda romperse. El reloj Garmin es resistente, pero visible."
+        },
+        {
+          "name": "Modelo de suscripción",
+          "note": "Whoop: solo suscripción (~$30/mes), hardware incluido. Garmin: pago único de $449, sin suscripción. Coste a 3 años: Whoop ~$1,080 frente a Garmin ~$449."
+        },
+        {
+          "name": "Ecosistema y apps",
+          "note": "Garmin Connect se integra con Strava, TrainingPeaks, Apple Health y un amplio conjunto de terceros. Whoop es más cerrado."
+        }
+      ],
+      "faq": [
+        {
+          "q": "¿Es Whoop 5.0 más preciso que Garmin Venu 4?",
+          "a": "No hay una diferencia relevante. Ambos miden la VFC de forma continua durante la noche con PPG óptica, y las comparaciones independientes los sitúan más o menos igualados en precisión. La decisión no depende del sensor."
+        },
+        {
+          "q": "¿Se necesita suscripción en alguno de los dos?",
+          "a": "Whoop funciona solo con suscripción: unos $30/mes con el hardware incluido. Garmin Venu 4 es un pago único (~$449) sin suscripción para todas las funciones. En tres años, Garmin cuesta menos de la mitad que Whoop."
+        },
+        {
+          "q": "¿Qué es mejor para deportistas, Whoop o Garmin?",
+          "a": "Depende del estilo de entrenamiento. Whoop encaja con deportistas que usan una puntuación diaria de Recovery como indicación de coaching que cambia su sesión. Garmin encaja con deportistas que estructuran su entrenamiento en torno a la carga de entrenamiento, el VO2 max y la planificación de sesiones, y que valoran la integración propia con Strava y TrainingPeaks."
+        },
+        {
+          "q": "¿Puedo dormir con un Garmin?",
+          "a": "Sí: Garmin Venu 4 registra el sueño, incluida la recuperación derivada de la VFC. A la mayoría de los usuarios el reloj les resulta lo bastante cómodo para llevarlo por la noche; algunos prefieren cambiar a una banda como Whoop o a un anillo como Oura específicamente para dormir."
+        }
+      ],
+      "content": "## La versión corta\n\nPara la mayoría de los deportistas, Garmin Venu 4 es la mejor opción a largo plazo: VFC comparable, análisis de entrenamiento más profundos, sin suscripción y cinco días de batería con pantalla de smartwatch. Whoop gana específicamente cuando la puntuación diaria de Recovery es el mecanismo de coaching que realmente cambia tu entrenamiento día a día.\n\n## ¿Cuándo es Whoop la elección adecuada?\n\nSi entrenas duro, valoras la preparación diaria como indicación de coaching y la banda sin pantalla se adapta mejor que un reloj a tus deportes de contacto o a la piscina, Whoop es la opción adecuada. La suscripción es el precio de entrada al modelo de coaching.\n\n## ¿Cuándo es Garmin la elección adecuada?\n\nSi prefieres pagar una vez, ver una esfera de reloj en la muñeca y tener la integración con Strava y TrainingPeaks de forma nativa en tu ecosistema de entrenamiento, Garmin Venu 4 es la opción adecuada. En tres años cuesta menos de la mitad que Whoop, sin carencias funcionales para la mayoría de los usos de entrenamiento."
     }
   }
 }
