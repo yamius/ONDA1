@@ -37,7 +37,7 @@ const bestInfraredSauna2026: Comparison = {
     {
       reviewSlug: 'almost-heaven-salem',
       award: 'Best traditional outdoor',
-      takeaway: 'Premium American-built red cedar barrel sauna with convection heat and löyly steam.',
+      takeaway: '2-person American-built red cedar barrel with a 6 kW electric heater and löyly steam — the lowest-priced traditional sauna here ($4,485 list).',
     },
     {
       reviewSlug: 'therasage-thera-sauna-personal',
@@ -102,7 +102,7 @@ Three buying questions resolve the category cleanly:
 
 **What form factor?** Cabin (4×4 ft+) → Sunlighten, Clearlight, Sun Home, JNH, Therasage. Outdoor barrel → Almost Heaven Salem. Indoor traditional → Finnleo Hallmark. Portable → HigherDose Blanket, Relax Sauna Portable.
 
-**What budget tier?** Under $1,000 → HigherDose Blanket. $1,500–$3,500 → JNH Joyous, Therasage. $4,500–$6,500 → Sun Home Equinox, SaunaSpace Faraday. $5,000–$10,000+ → Sunlighten mPulse, Clearlight Sanctuary 2, Almost Heaven Salem, Finnleo Hallmark.
+**What budget tier?** Under $1,000 → HigherDose Blanket. $1,500–$3,500 → JNH Joyous, Therasage. $4,000–$6,500 → Almost Heaven Salem (2-person barrel, $4,485 list incl. heater), Sun Home Equinox, SaunaSpace Faraday. $5,000–$10,000+ → Sunlighten mPulse, Clearlight Sanctuary 2, Finnleo Hallmark.
 
 The category is mature; these ten options cover the full landscape of consumer choices.`,
   publishOn: '2026-06-04',

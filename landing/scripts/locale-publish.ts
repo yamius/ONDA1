@@ -66,4 +66,9 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('reviews', 'clearlight-sanctuary-2', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('reviews', 'platinumled-biomax-600', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'hypervolt-3-pro', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'neurosity-crown', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'magnawave-mini', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'almost-heaven-salem', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('comparisons', 'best-vagus-nerve-stimulators-2026', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

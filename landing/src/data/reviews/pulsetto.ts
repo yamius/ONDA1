@@ -71,10 +71,10 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Is Pulsetto worth it?", a: "Pulsetto is worth it for consumers who want guided neck-worn tVNS at an accessible price. It offers four guided programmes, the broadest variety in its category, and a companion app that logs sessions. Its independent clinical evidence is thinner than Nurosym or gammaCore." },
     { q: "How much does Pulsetto cost?", a: "Pulsetto is listed at $269 one-time, the cheapest neck-worn tVNS device in the review. An optional Pulsetto+ subscription costs about $8 per month and unlocks premium features, and replacement pads are an ongoing cost. Saline or gel pads also need regular replacement." },
     { q: "What are the downsides of Pulsetto?", a: "Pulsetto's independent clinical evidence is thinner than Nurosym or gammaCore, its saline or gel pads need regular replacement, premium features sit behind the Pulsetto+ subscription, and it offers no on-device HRV biofeedback. Its strength is variety and price, not evidence depth." },
-    { q: "Pulsetto vs Nurosym: which is better?", a: "Pulsetto is better for price and variety: $269 with four guided programmes and session logging. Nurosym is better for evidence, with the deepest peer-reviewed research base in consumer tVNS, but it costs £599 and runs a single programme." },
+    { q: "Pulsetto vs Nurosym: which is better?", a: "Pulsetto is better for price and variety: $269 with four guided programmes and session logging. Nurosym is better for evidence, with the deepest peer-reviewed research base in consumer tVNS, but it costs €700 (about $820) and runs a single programme." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-01',
 }
 
 export default pulsetto

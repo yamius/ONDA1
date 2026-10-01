@@ -24,7 +24,7 @@ const nurosymVsVagustim: HeadToHead = {
     { name: 'Form factor', winner: 'a', note: 'Nurosym: single tragus clip. Vagustim: tragus clip plus optional secondary electrode pads for specific protocols. Nurosym is simpler.' },
     { name: 'Regulatory status', winner: 'tie', note: 'Both CE-marked Class IIa medical devices in Europe. Neither FDA-cleared.' },
     { name: 'Brand recognition (outside EU)', winner: 'a', note: 'Nurosym has broader international brand recognition. Vagustim is primarily EU-focused.' },
-    { name: 'Price', winner: 'b', note: 'Vagustim: €499 (~$540). Nurosym: £599 (~$750). Vagustim is meaningfully cheaper at the entry tier.' },
+    { name: 'Price', winner: 'b', note: 'Vagustim: €499 (~$540). Nurosym: €700 (~$820). Vagustim is meaningfully cheaper at the entry tier.' },
   ],
   faq: [
     {
@@ -57,7 +57,7 @@ If you are running structured tVNS self-experiments, want the deepest published 
 If you are in an EU market and want a wider library of disclosed-parameter presets covering sleep, stress, depression, anxiety and IBS protocols, Vagustim is the right shape. The lower price and the protocol variety are the differentiators; the trade is brand recognition and trial volume.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default nurosymVsVagustim

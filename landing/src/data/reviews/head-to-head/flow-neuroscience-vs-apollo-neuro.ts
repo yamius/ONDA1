@@ -24,7 +24,7 @@ const flowVsApollo: HeadToHead = {
     { name: 'Day-to-day use frequency', winner: 'b', note: 'Apollo: continuous daily wear. Flow: 30-minute structured sessions in an 8-week programme. Apollo runs in the background; Flow is foreground intervention.' },
     { name: 'Wearability', winner: 'b', note: 'Apollo: wrist/ankle/clip-on for 24/7 wear. Flow: rigid headset for seated sessions only. Apollo wins on daily life integration.' },
     { name: 'Programme structure', winner: 'a', note: 'Flow: structured 8-week behavioural-therapy programme combined with stimulation. Apollo: open-ended mode selection. Flow has the clinical scaffolding.' },
-    { name: 'Price', winner: 'b', note: 'Apollo: $349 + optional $15/mo. Flow: £399 (~$499) + monthly therapy-app subscription. Apollo is cheaper with no required subscription.' },
+    { name: 'Price', winner: 'b', note: 'Apollo: $448 incl. a 1-year SmartVibes AI membership. Flow: £399 (~$499) + monthly therapy-app subscription. Apollo is cheaper with no required ongoing subscription.' },
   ],
   faq: [
     {
@@ -57,7 +57,7 @@ If you have major depression and a clinician open to discussing tDCS as a take-h
 If you want passive vagal modulation through the day — for recovery, stress, sleep, focus — without a clinical indication or a structured programme commitment, Apollo is the right shape. The vibrotactile mechanism is real; the University of Pittsburgh research base is solid; daily wearability is the use case.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default flowVsApollo

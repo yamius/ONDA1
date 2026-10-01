@@ -256,8 +256,64 @@
       "productType": "EEG-hoofdband voor consumenten (meditatie)"
     },
     "neurosity-crown": {
-      "verdict": "De beste EEG-headset voor ontwikkelaars en biohackers — open SDK, ruwe data, streaming van focusmuziek. Premiumprijs.",
-      "productType": "EEG-headset voor ontwikkelaars (focus, flow)"
+      "verdict": "De beste EEG-headset voor developers en biohackers — acht kanalen, een open SDK, ruwe data en geen abonnement. Voor $1.499 en ongeveer drie uur accu is het de verkeerde aankoop voor af en toe mediteren.",
+      "summary": "De Neurosity Crown is de headset voor mensen die iets met de data willen doen, niet alleen een samenvatting willen zien. Acht droge EEG-kanalen op 256 Hz op frontale, centrale, pariëtale en occipitale posities, verwerking op het apparaat met hardware-encryptie, de meest open SDK in de consumentencategorie (JavaScript en Python, plus BrainFlow, LSL, OSC en een MCP-server voor AI-assistenten), toegang tot het ruwe signaal en adaptieve focusmuziek. Premium hardware voor een premium prijs; de juiste keuze voor engineers, onderzoekers en biohackers — maar niet geschikt voor wie af en toe wil mediteren.",
+      "description": "Neurosity Crown review (2026): de beste EEG-headset voor developers — 8 kanalen op 256 Hz, open SDK, geen abonnement. $1.499; overkill voor meditatie.",
+      "bestFor": "Ideaal voor developers, onderzoekers en biohackers die ruwe EEG-data en een programmeerbaar platform willen.",
+      "testNote": "Evidence-based beoordeling — gescoord op basis van de officiële product- en vergelijkingspagina's van Neurosity (gecontroleerd op 2026-10-01), de documentatie van de Neurosity-SDK en gepubliceerd neurofeedbackonderzoek. Niet zelf getest door ONDA.",
+      "productType": "EEG-headset voor developers (focus, flow)",
+      "pros": [
+        "De meest open SDK op de consumenten-EEG-markt — ruwe data via JavaScript of Python, plus BrainFlow, LSL en OSC",
+        "Acht droge EEG-kanalen op 256 Hz — de grootste dekking van de hersenschors in deze lijst",
+        "Verwerking op het apparaat met hardware-encryptie; MCP-server voor AI-assistenten",
+        "Geen verplicht abonnement"
+      ],
+      "cons": [
+        "Premium prijs — drie keer zo duur als de Muse S Athena",
+        "Ongeveer drie uur accu per lading",
+        "Geen uitgebreide meditatiebibliotheek en geen slaaptracking",
+        "Stijve kroon — niet om 's nachts te dragen; de bediening gaat uit van een technische gebruiker"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Acht droge EEG-kanalen op 256 Hz (CP3, C3, F5, PO3, PO4, F6, C4, CP4) — de grootste dekking van de hersenschors in de consumentencategorie. Het signaal blijft goed tijdens zittende focussessies.",
+        "training-content": "Minder begeleide content dan Muse; het product zet in op adaptieve focusmuziek en zelfgebouwde apps. Geen meditatiebibliotheek.",
+        "insights": "Live scores voor focus en kalmte, plus een uitsplitsing van EEG-banden. Sterke realtime visualisatie; minder verhalende sessiesamenvattingen dan Muse.",
+        "comfort": "Een stijve kroon van 228 g — comfortabel voor focussessies, niet bedoeld om 's nachts of tijdens beweging te dragen; ongeveer drie uur per lading.",
+        "app-ux": "Verzorgde begeleidende apps, maar de bediening gaat uit van een technischer ingestelde gebruiker dan bij Muse.",
+        "open-data": "De meest open SDK in deze categorie — SDK's voor JavaScript en Python plus BrainFlow, LSL, OSC en MCP; ruwe EEG op 256 Hz; geen abonnement nodig voor data. Van begin af aan gebouwd voor developers.",
+        "value": "$1.499 eenmalig, geen verplicht abonnement. Premium prijs — drie keer zo duur als de Muse S Athena."
+      },
+      "content": "## Ons oordeel in het kort\n\nDe Neurosity Crown is de beste EEG-headset voor consumenten als je met je eigen hersendata aan de slag wilt. Hij heeft acht kanalen, ruwe toegang op 256 Hz en een open SDK, zonder abonnement. Voor $1.499 en ongeveer drie uur per lading is het niet de juiste keuze als je alleen begeleide meditatie wilt — een [Muse S Athena](/reviews/muse-s-athena) doet dat beter voor een derde van de prijs.\n\n## Wat meet de Neurosity Crown?\n\nEEG (elektro-encefalografie) registreert kleine elektrische signalen van de hersenen via sensoren op de hoofdhuid. De Crown heeft **acht droge elektroden** op CP3, C3, F5, PO3, PO4, F6, C4 en CP4. Daarmee zijn de voorkant, het midden, de kruin en de achterkant van het hoofd aan beide kanten gedekt. Muse-hoofdbanden gebruiken vier sensoren, vooral op het voorhoofd en achter de oren.\n\nDe Crown meet elk kanaal **256 keer per seconde**. Een ingebouwde chip schoont het signaal op (hij verwijdert bijvoorbeeld brom van het stroomnet) en versleutelt het op het apparaat. Daaruit schat hij scores voor **focus** en **kalmte** en toont hij de belangrijkste hersengolfbanden, zoals [alfa](/articles/neural-bridge-alpha-flow-gateway).\n\nVoor developers draait het om toegang. Neurosity biedt officiële SDK's voor **JavaScript en Python**, plus ondersteuning voor BrainFlow, LSL en OSC — gangbare tools in onderzoekslabs. Er zit ook een MCP-server bij, zodat AI-assistenten je live data kunnen lezen als je dat toestaat. De headset weegt 228 g.\n\n## Wat zegt het bewijs over consumenten-EEG en neurofeedback?\n\n**Meten.** Headsets met droge elektroden hebben meer ruis dan een laboratorium-EEG met gel. Knipperen, kaakbewegingen en lopen voegen allemaal artefacten toe. Voor zittende focussessies leveren de acht kanalen van de Crown bruikbare data, maar het is geen klinisch EEG.\n\n**Trainen.** Neurofeedback betekent dat je je hersenactiviteit ziet (of hoort) en leert die te veranderen. Het bewijs is gemengd. Een meta-analyse uit 2016 van gerandomiseerde studies bij ADHD vond voordelen wanneer ouders hun kinderen beoordeelden, maar veel kleinere effecten wanneer de beoordelaars niet wisten wie behandeld werd (Cortese et al., 2016). Dat wijst erop dat een deel van het effect verwachting is. Bij gezonde volwassenen zijn studies naar focus en productiviteit klein en kort.\n\n**Wat dit voor jou betekent.** De Crown is een goed hulpmiddel om te zien hoe je aandacht verandert over de dag, of door koffie, slaap of [ademhalingsoefeningen](/articles/breathing-for-focus-and-attention). Verwacht niet dat hij je focus vanzelf verhoogt.\n\n## Is de Neurosity Crown een medisch hulpmiddel?\n\nNee. Het is een apparaat voor consumenten en developers, geen door de FDA goedgekeurd medisch hulpmiddel. Hij kan geen ADHD, epilepsie, slaapstoornissen of andere aandoeningen diagnosticeren. Er zijn geen grote veiligheidsrisico's: hij leest alleen signalen en stuurt geen stroom het hoofd in. Stop als de sensoren je huid irriteren.\n\n## Wat kost hij in totaal?\n\n**$1.499, eenmalig.** Dat is inclusief de SDK, de apps en levenslange software-updates. Er is geen abonnement voor data of toegang tot de SDK.\n\n## Neurosity Crown vs alternatieven\n\n| Headset | Prijs | Sensoren | Beste voor |\n|---|---|---|---|\n| **Neurosity Crown** | $1.499 | 8 droge EEG-kanalen | developers, ruwe data, focus |\n| [Muse S Athena](/reviews/muse-s-athena) | $499 | EEG + fNIRS, zachte band | meditatie, slaap |\n| [Muse 2](/reviews/muse-2) | $249 | 4 EEG-sensoren | meditatie met klein budget |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 | 5 EEG-kanalen | onderzoekstools (ruwe data vereist Pro, ~$99/jaar) |\n\nRechtstreekse vergelijkingen: [Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2) en [Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown).\n\n## Wat zijn de nadelen van de Neurosity Crown?\n\nHij schiet tekort op bijna alles waarin Muse voorop loopt. Er is geen uitgebreide bibliotheek met begeleide meditaties, geen slaaptracking en geen zachte band om 's nachts te dragen. De accu gaat ongeveer drie uur mee, dus het is een apparaat voor sessies, niet voor de hele dag. En de prijs is ruwweg drie keer die van de Muse S Athena.\n\n## Voor wie is de Neurosity Crown — en wie kan hem beter overslaan?\n\n**Koop hem** als je developer, onderzoeker of praktische biohacker bent en ruwe EEG wilt op een programmeerbaar platform zonder abonnement.\n\n**Sla hem over** als je een verzorgde meditatiecoach wilt ([Muse S Athena](/reviews/muse-s-athena)), een goedkope eerste headset ([Muse 2](/reviews/muse-2)) of klinische neurofeedback, waarvoor je een erkende zorgverlener nodig hebt. Zie de [beste EEG-headsets van 2026](/reviews/compare/best-eeg-headsets-2026) voor het hele veld.\n\n---\n\n## Achtergrond\n\nDe neurowetenschap die deze headsets terugkoppelen — en de cognitieve toestanden die het EEG-signaal laat zien.\n\n- [ACC-kalibratie: protocol voor cognitieve controle](/articles/acc-calibration-protocol-cognitive-control) — hoe prefrontale controlelussen zichtbaar worden in EEG\n- [Adaptatie en range fractionation](/articles/adaptation-hack-range-fractionation) — cognitieve toestanden trainen door bewuste variatie\n- [Alfagolven: kalmte, creativiteit en flow](/articles/neural-bridge-alpha-flow-gateway) — wat het alfaritme doet, en wat alfa-headsets, apps en muziek wel en niet kunnen veranderen\n- [Ademen voor focus en aandacht](/articles/breathing-for-focus-and-attention) — een eenvoudig experiment om met een EEG-headset te testen\n",
+      "faq": [
+        {
+          "q": "Is de Neurosity Crown het geld waard?",
+          "a": "De Neurosity Crown is het waard voor developers, onderzoekers en biohackers die ruwe EEG-data willen. Hij heeft acht kanalen op 256 Hz, de meest open SDK in consumenten-EEG (JavaScript en Python, plus BrainFlow, LSL en OSC) en geen abonnement. Wie begeleide meditaties zoekt, vindt hem karig en duur."
+        },
+        {
+          "q": "Hoeveel kost de Neurosity Crown?",
+          "a": "De Neurosity Crown kost eenmalig $1.499, inclusief de SDK, begeleidende apps en levenslange software-updates, zonder abonnement voor de SDK of ruwe data. Dat is ongeveer drie keer de prijs van de Muse S Athena."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Neurosity Crown?",
+          "a": "De Crown kost ongeveer drie keer zoveel als de Muse S Athena, de accu gaat ongeveer drie uur mee, er is geen uitgebreide meditatiebibliotheek of slaaptracking, de stijve kroon is niet voor 's nachts en de bediening gaat uit van een technischer gebruiker dan meditatie-alternatieven."
+        },
+        {
+          "q": "Neurosity Crown of Muse S Athena: welke is beter?",
+          "a": "Kies de Neurosity Crown voor ruwe data, een open SDK en de breedste dekking met acht kanalen. Kies de Muse S Athena voor begeleide braintraining, slaaptracking en draagcomfort 's nachts, voor ongeveer een derde van de prijs van de Crown."
+        },
+        {
+          "q": "Is de Neurosity Crown een medisch hulpmiddel?",
+          "a": "Nee. De Crown is een EEG-headset voor consumenten en developers, geen door de FDA goedgekeurd medisch hulpmiddel. Hij kan geen ADHD, epilepsie of slaapstoornissen diagnosticeren. Hij leest alleen hersensignalen en stuurt geen stroom, dus er zijn geen grote veiligheidsrisico's."
+        },
+        {
+          "q": "Verbetert neurofeedback met een headset echt je concentratie?",
+          "a": "Het bewijs is gemengd. Een meta-analyse uit 2016 bij ADHD vond vooral voordelen als de beoordelaars wisten wie behandeld werd, wat erop wijst dat verwachting meespeelt. Studies bij gezonde volwassenen zijn klein. Een headset gebruik je het best om te zien wat je focus beïnvloedt, niet als gegarandeerde oplossing."
+        },
+        {
+          "q": "Neurosity Crown of Emotiv Insight 2: welke is beter voor developers?",
+          "a": "Voor de meeste mensen de Crown. Hij heeft acht kanalen tegen vijf en geeft ruwe data zonder abonnement, terwijl Emotiv toegang tot ruwe data achter een Pro-abonnement van ongeveer $99 per jaar zet. Emotiv is goedkoper in aanschaf ($499) en past bij sommige academische toolchains."
+        }
+      ]
     },
     "emotiv-insight-2": {
       "verdict": "De hybride van onderzoek en consument — vijf kanalen en een echte academische toolchain, ruwe data alleen met een abonnement.",
@@ -676,8 +732,59 @@
       ]
     },
     "hypervolt-3-pro": {
-      "verdict": "Het vlaggenschip van 2026 en een duidelijke upgrade ten opzichte van de Hypervolt 2 Pro — meer stallkracht (70 lbs), stiller (51 dB), langere accuduur (4 uur) en grotere opzetstukken, voor een lagere $349. Op slaglengte blijft hij achter bij de Theragun PRO Plus, maar qua prijs-kwaliteit is dit de premiumgun om te verslaan.",
-      "productType": "Premium percussiemassagegun met Hyperice-ecosysteem"
+      "verdict": "Het vlaggenschip van 2026 en een duidelijke upgrade ten opzichte van de Hypervolt 2 Pro — meer stall force (70 lbs), stiller (51 dB), langere accu (4 uur) en grotere opzetstukken, voor een lagere $349. Qua amplitude blijft de Theragun PRO Plus voor, maar op prijs-kwaliteit is dit het premium massagegun om te verslaan.",
+      "summary": "De Hyperice Hypervolt 3 Pro is de top van de Hypervolt 3-lijn die in maart 2026 verscheen (naast de Go 3 voor $149 en de Hypervolt 3 voor $249). Tegenover de vertrekkende Hypervolt 2 Pro stijgt de stall force volgens launchberichten naar ongeveer 70 lbs (van 60), hij is stiller met ~51 dB dankzij de QuietGlide-motor van Hyperice, haalt tot vier uur per lading, krijgt een digitale draaiknop met zes snelheden, een druksensor en een verwarmd opzetstuk, en wordt geleverd met vernieuwde koppen die 33% groter zijn — en dat allemaal voor $349, $50 onder de introductieprijs van de Hypervolt 2 Pro. De volledige koppeling met de Hyperice-app blijft. Alleen op amplitude moet hij toegeven: de 16 mm van de Theragun PRO Plus blijft de diepere slag.",
+      "description": "Hypervolt 3 Pro review (2026): het premium massagegun met de beste prijs-kwaliteit — 51 dB, 4 uur accu, verwarmde kop, $349. Theragun gaat dieper.",
+      "bestFor": "Ideaal voor kopers van een premium massagegun die de sterkste, stilste en langst werkende Hyperice tot nu toe willen voor minder geld — en niet per se de diepere amplitude van Theragun nodig hebben.",
+      "testNote": "Evidence-based beoordeling — gescoord op basis van de officiële productpagina van Hyperice (gecontroleerd op 2026-10-01), de launchberichten over de Hypervolt 3 van maart 2026 en gepubliceerd onderzoek naar massage. Niet zelf getest door ONDA.",
+      "productType": "Premium percussie-massagegun met Hyperice-ecosysteem",
+      "pros": [
+        "Tot ~70 lbs stall force — meer dan de 60 van de Hypervolt 2 Pro",
+        "Fluisterstille QuietGlide-motor van ~51 dB en tot 4 uur accu",
+        "Vijf koppen, waaronder een verwarmd opzetstuk; vernieuwde koppen 33% groter",
+        "Lagere prijs van $349 dan de vertrekkende Hypervolt 2 Pro; in de VS FSA/HSA-geschikt"
+      ],
+      "cons": [
+        "~14 mm amplitude blijft achter bij de 16 mm van de Theragun PRO Plus",
+        "Handvat met één grip minder veelzijdig dan de multi-grip van Theragun",
+        "Stall force en amplitude staan niet op de officiële productpagina",
+        "Geen display"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "Tot ~70 lbs stall force volgens launchberichten — een stap vooruit ten opzichte van de 60 van de Hypervolt 2 Pro en bij de sterkste die er zijn. De amplitude blijft in de ~14 mm-klasse, nog altijd minder dan de diepe slag van 16 mm van de Theragun PRO Plus.",
+        "build-attachments": "Verfijnde premium afwerking; vijf koppen, waaronder een verwarmd opzetstuk, vernieuwd en 33% groter voor betere dekking. Volledig Hyperice-ecosysteem en NBA/NFL-achtergrond.",
+        "battery-noise": "~51 dB dankzij de nieuwe QuietGlide-motor — fluisterstil — en tot vier uur accu per lading, tegen ~3 bij de Hypervolt 2 Pro. Op beide punten de beste in zijn klasse.",
+        "app-smart-features": "Digitale draaiknop met zes snelheden (1.500–2.500 slagen per minuut), druksensor en Bluetooth naar de Hyperice-app met begeleide routines en koppelingen met Apple Health, Whoop, Strava en Garmin.",
+        "ergonomics-portability": "2,5 lbs met het bekende handvat met één grip — comfortabel en goed te sturen, maar minder veelzijdig dan de driehoekige multi-grip van Theragun.",
+        "value": "$349 — $50 onder de Hypervolt 2 Pro en $250 onder de Theragun PRO Plus, terwijl hij de 2 Pro verslaat op stall force, geluid en accu. De sterkste prijs-kwaliteit in het premiumsegment van 2026."
+      },
+      "content": "## Ons oordeel in het kort\n\nDe Hypervolt 3 Pro is het premium massagegun met de beste prijs-kwaliteit van 2026. Voor $349 krijg je een stille motor van 51 dB, tot vier uur accu, zes snelheden, een druksensor en vijf koppen, waaronder een verwarmde. Betaal alleen meer voor de [Theragun PRO Plus](/reviews/theragun-pro-plus) als je specifiek de diepere slag van 16 mm en het multi-grip-handvat wilt.\n\n## Wat biedt de Hypervolt 3 Pro?\n\nHyperice bracht de Hypervolt 3-lijn uit in maart 2026: de Go 3 ($149), de Hypervolt 3 ($249) en dit Pro-model voor $349 — $50 onder de [Hypervolt 2 Pro](/reviews/hypervolt-2-pro) bij introductie. De officiële productpagina vermeldt:\n\n- **6 snelheden** van 1.500 tot 2.500 slagen per minuut, via een digitale draaiknop\n- **51 dB** geluid met de QuietGlide-motor\n- **Tot 4 uur** accu\n- **2,5 lb** gewicht\n- **5 koppen**, waaronder een verwarmd opzetstuk\n- **Bluetooth** naar de Hyperice-app, met koppelingen naar Apple Health, Whoop, Strava en Garmin\n- **FSA/HSA-geschikt** in de VS\n\nLaunchberichten noemen ongeveer 70 lbs stall force (was 60) en koppen die 33% groter zijn. Hyperice vermeldt stall force en amplitude niet op de productpagina, dus zie die cijfers als claims bij de lancering. De amplitude blijft rond 14 mm.\n\n## Hoe werkt een massagegun — en wat zegt het bewijs?\n\nEen massagegun tikt vele keren per seconde op de spier. Dat heet percussietherapie — een snelle vorm van zelfmassage.\n\n**Spierpijn.** Het beste bewijs geldt voor massage in het algemeen. Een meta-analyse uit 2017 vond dat massage na zware inspanning de spierpijn met vertraagde aanvang (DOMS) 24 tot 72 uur later verminderde (Guo et al., 2017). Massageguns werken waarschijnlijk op een vergelijkbare manier, maar er zijn veel minder eigen studies naar gedaan.\n\n**Bewegingsbereik.** Kleine studies tonen dat een paar minuten percussie het bewegingsbereik kort kan vergroten, meestal zonder de spier zwakker te maken. Het effect lijkt op rekken of foam rollen, en het ebt weg.\n\n**Wat het niet doet.** Er is geen goed bewijs dat een massagegun spierherstel versnelt, melkzuur „wegspoelt” of de prestaties op lange termijn verbetert. Zie het als een hulpmiddel voor comfort en warming-up, niet als behandeling. Slaap en trainingsbelasting zijn veel belangrijker — en je [hartslagherstel](/articles/heart-rate-recovery-fitness-marker) zegt meer over je fitheid dan hoeveel spierpijn je voelt.\n\n## Wat kost hij in totaal?\n\n$349, eenmalig. Er is geen abonnement; de Hyperice-app is gratis. Afgezien van vervangende koppen door de jaren heen zijn er geen doorlopende kosten.\n\n## Hypervolt 3 Pro vs alternatieven\n\n| Massagegun | Prijs | Stall force / amplitude | Beste voor |\n|---|---|---|---|\n| **Hypervolt 3 Pro** | $349 | ~70 lbs / ~14 mm | stille kracht, beste prijs-kwaliteit |\n| [Theragun PRO Plus](/reviews/theragun-pro-plus) | $599 | 60 lbs / 16 mm | diepste slag, extra's |\n| [Theragun Elite](/reviews/theragun-elite) | $399 | 40 lbs / 16 mm | Therabody voor minder geld |\n| [Achedaway Pro](/reviews/achedaway-pro) | $349 | 80 lbs / 16 mm | maximale pure kracht |\n\nRechtstreekse vergelijkingen: [vs Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus), [vs Theragun Elite](/reviews/vs/hypervolt-3-pro-vs-theragun-elite), [vs Achedaway Pro](/reviews/vs/hypervolt-3-pro-vs-achedaway-pro) en [vs Hypervolt 2 Pro](/reviews/vs/hypervolt-3-pro-vs-hypervolt-2-pro).\n\n## Wat zijn de nadelen van de Hypervolt 3 Pro?\n\nDe amplitude is de belangrijkste. Met ongeveer 14 mm is de slag ondieper dan de 16 mm van Theragun, dus grote spieren zoals de bilspieren krijgen minder diepte. Met het handvat met één grip kom je lastiger bij je eigen rug dan met de driehoeksgrip van Theragun. Er is geen display. En de opvallende krachtcijfers (stall force, grotere koppen) komen uit launchberichten, niet uit de officiële specificaties.\n\n## Is een massagegun veilig?\n\nVoor gezonde spieren wel, als je hem verstandig gebruikt. Blijf op de spier en vermijd:\n\n- **Botten en gewrichten**, zoals de wervelkolom, knieschijf en scheenbenen\n- **De voor- en zijkant van de nek**, waar slagaders en zenuwen vlak onder de huid liggen\n- **Vermoeden van diepe veneuze trombose (DVT)** — masseer nooit een gezwollen, warme, pijnlijke kuit; ga naar een arts\n- **Verse blessures**, blauwe plekken, botbreuken, open wonden of spataderen\n- Plekken met verminderd gevoel (bijvoorbeeld bij diabetische neuropathie)\n\nVraag eerst je arts als je bloedverdunners gebruikt, een stollingsstoornis hebt of zwanger bent. Begin op een lage snelheid met 1–2 minuten per spier, en test de verwarmde kop voorzichtig op gevoelige huid.\n\n## Voor wie is de Hypervolt 3 Pro — en wie kan hem beter overslaan?\n\n**Koop hem** als je een sterk, stil en lang werkend massagegun wilt voor de warming-up en spierpijn na het sporten, voor een eerlijke prijs.\n\n**Sla hem over** als je de diepste slag wilt ([Theragun PRO Plus](/reviews/theragun-pro-plus)), de meeste pure kracht voor je geld ([Achedaway Pro](/reviews/achedaway-pro)) of een goedkoop reismodel — zie de [beste massageguns van 2026](/reviews/compare/best-massage-guns-2026).\n\n---\n\n## Achtergrond\n\n- [Hartslagherstel als fitheidsmarker](/articles/heart-rate-recovery-fitness-marker)\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "Hypervolt 3 Pro vs Hypervolt 2 Pro: wat is er veranderd?",
+          "a": "De Hypervolt 3 Pro is een duidelijke upgrade. De stall force stijgt van 60 naar ongeveer 70 lbs, hij is stiller met zo'n 51 dB, de accu gaat tot vier uur mee en de koppen zijn 33% groter, inclusief een verwarmde. Er komen ook een draaiknop met zes snelheden en een druksensor bij, en hij kost $50 minder."
+        },
+        {
+          "q": "Hoeveel kost de Hypervolt 3 Pro?",
+          "a": "De Hypervolt 3 Pro kost $349 en is in de VS FSA/HSA-geschikt. Hij is de top van de Hypervolt 3-lijn uit maart 2026, waartoe ook de Go 3 voor $149 en de Hypervolt 3 voor $249 behoren. Hij zit $50 onder de introductieprijs van de Hypervolt 2 Pro."
+        },
+        {
+          "q": "Hypervolt 3 Pro of Theragun PRO Plus: welke moet ik kopen?",
+          "a": "Op prijs-kwaliteit is de Hypervolt 3 Pro het premium massagegun om te verslaan: sterk, stil en lang werkend voor $349, tegen $599. De Theragun PRO Plus biedt nog wel een diepere amplitude, 16 mm tegen ongeveer 14 mm, en een veelzijdiger multi-grip-handvat. Kies Theragun alleen als je die diepte nodig hebt."
+        },
+        {
+          "q": "Helpt een massagegun echt tegen spierpijn?",
+          "a": "Enigszins. Een meta-analyse uit 2017 vond dat massage spierpijn één tot drie dagen na zware inspanning vermindert, en massageguns werken waarschijnlijk vergelijkbaar. Kleine studies tonen ook een kortdurende winst in bewegingsbereik. Er is geen goed bewijs dat een massagegun spierherstel versnelt."
+        },
+        {
+          "q": "Waar mag je een Hypervolt niet gebruiken?",
+          "a": "Vermijd botten en gewrichten, de voor- en zijkant van de nek, verse blessures, blauwe plekken en spataderen. Gebruik hem nooit op een gezwollen, warme, pijnlijke kuit, want dat kan een bloedstolsel (DVT) zijn. Vraag eerst een arts als je bloedverdunners gebruikt, een stollingsstoornis hebt of zwanger bent."
+        },
+        {
+          "q": "Is de Hypervolt 3 Pro het geld waard?",
+          "a": "Ja, voor de meeste mensen die een premium massagegun willen. Voor $349 is hij stil (51 dB), gaat hij tot vier uur mee, heeft hij zes snelheden en een verwarmde kop, en kost hij $250 minder dan de Theragun PRO Plus. Kies de Theragun alleen als je de diepere slag van 16 mm nodig hebt."
+        }
+      ]
     },
     "theragun-pro-plus": {
       "verdict": "De referentie voor percussietherapie — hoogste stallkracht, diepste slag, verfijnde app. De premiumprijs weerspiegelt de topspecificaties en het Therabody-ecosysteem.",
@@ -869,7 +976,7 @@
         },
         {
           "q": "Voor wie is de Clearlight Sanctuary 2 het meest geschikt?",
-          "a": "De Sanctuary 2 is het meest geschikt voor kopers die full-spectrum infrarood op Sunlighten-niveau willen, met het merk Jacuzzi erachter en levenslange garantie, in een compacte 2-persoonscabine. Hij past bij mensen die bouwkwaliteit en een EMF-/ELF-arm ontwerp belangrijker vinden dan programmeerbare sturing per golflengte. ONDA geeft hem in totaal 8,3/10."
+          "a": "De Sanctuary 2 is het meest geschikt voor kopers die full-spectrum infrarood op Sunlighten-niveau willen, met het merk Jacuzzi erachter en levenslange garantie, in een compacte 2-persoonscabine. Hij past bij mensen die bouwkwaliteit en een EMF-/ELF-arm ontwerp belangrijker vinden dan programmeerbare sturing per golflengte. ONDA geeft hem in totaal 7,8/10."
         },
         {
           "q": "Hoe groot is de Clearlight Sanctuary 2?",
@@ -892,6 +999,160 @@
     "mito-red-mitopro-1500": {
       "verdict": "Het grote favoriete paneel van biohackers — als 1500X nu met zes golflengten en FDA Class II-geregistreerd, en $400 goedkoper dan de Joovv Solo 3.0.",
       "productType": "Groot paneel voor led-therapie met rood + NIR"
+    },
+    "magnawave-mini": {
+      "verdict": "Hoogintensieve PEMF met lusspoel en een echte achtergrond in paardensport en topsport — maar MagnaWave verkoopt geen „Mini” meer, en het kleinste huidige apparaat, de Semi 10, begint bij $8.360. Voor de meeste mensen is dat te veel geld voor zo weinig bewijs.",
+      "summary": "MagnaWave bouwt hoogintensieve PEMF-apparaten (pulserende elektromagnetische velden) die een handbediende lus- of paddlespoel aansturen. Het merk is vooral bekend in de paarden- en dierenverzorging. Het compacte instapmodel — vroeger verkocht als „Mini” — is nu de Semi 10: een digitaal apparaat van 9,4 lb met één uitgang, pulsen van 0,7–20 Hz en 10 jaar garantie, voor $8.360 (starterspakket) tot $13.339. MagnaWave stelt dat zijn apparaten niet bedoeld zijn om ziekten bij dieren te diagnosticeren, te behandelen, te genezen of te voorkomen; het aparte thuismerk AuraWell omschrijft het bedrijf als het eerste door de FDA vrijgegeven (cleared), krachtige vrij verkrijgbare PEMF-apparaat. Het overbrugt de kloof tussen consumentenmatten en complete praktijksystemen — voor de prijs van een praktijksysteem.",
+      "description": "MagnaWave Mini review (2026): er wordt geen „Mini” meer verkocht — de compacte Semi 10 kost vanaf $8.360, is gemaakt voor dieren, weinig bewijs bij mensen.",
+      "bestFor": "Ideaal voor behandelaars in de paarden- en dierenverzorging, en voor sporters of praktijken die draagbare hoogintensieve spoel-PEMF willen en praktijkprijzen kunnen verantwoorden.",
+      "testNote": "Evidence-based beoordeling — gescoord op basis van de officiële pagina's van MagnaWave over de apparaten en de Semi 10 (gecontroleerd op 2026-10-01) en gepubliceerde PEMF-reviews. Niet zelf getest door ONDA.",
+      "productType": "Compact hoogintensief PEMF-spoelapparaat (huidig instapmodel: Semi 10)",
+      "pros": [
+        "Hoogintensieve spoeloutput in een apparaat in draagkoffer",
+        "Decennialange ervaring met PEMF bij paarden en in de sport",
+        "10 jaar garantie; proefperiode van 30 dagen en huuropties",
+        "FEI-conform voor gebruik in de paardensport"
+      ],
+      "cons": [
+        "Geen „Mini” in het huidige aanbod — het kleinste apparaat begint bij $8.360",
+        "Vooral op dieren gericht; weinig gepubliceerde uitkomstdata bij mensen",
+        "Alleen spoel — geen dekking van het hele lichaam via een mat",
+        "Bediening voor behandelaars, geen consumentenapp"
+      ],
+      "scoreNotes": {
+        "field-strength": "Hoogintensieve output via lusspoel, ontworpen voor klinische en paardenprotocollen — ver boven consumentenmatten. De Semi 10 zit op vermogensniveau 5 van 10 in MagnaWaves eigen reeks.",
+        "waveform-evidence": "PEMF heeft bescheiden bewijs bij pijn aan het bewegingsapparaat (systematische reviews). MagnaWaves eigen uitkomstdata bij mensen zijn niet gepubliceerd; veel van het gebruik betreft paarden.",
+        "build": "Robuuste bouw voor behandelaars in een draagkoffer; 10 jaar garantie op de Semi 10. Decennialange MagnaWave-ervaring met PEMF bij paarden en in de sport.",
+        "programmability": "Intensiteit 1–10 in halve stappen, timer van 1–60 minuten, pulsbereik van 0,7–20 Hz en een Schumann-stand. Bediening voor behandelaars, niet via een app.",
+        "form-factor": "Draagbaar apparaat van 9,4 lb met lus-/paddle-applicatoren. Gerichte plaatselijke behandeling, niet het hele lichaam. Mee te nemen, maar niet zakformaat.",
+        "value": "Vanaf $8.360 (Semi 10-starterspakket) — bijna het dubbele van de $4.200 die we eerder voor de Mini vermeldden, en dicht bij de prijs van de Pulse Centers XL Pro. Huur en een proefperiode van 30 dagen voor $700 verlagen het instaprisico."
+      },
+      "content": "## Ons oordeel in het kort\n\nMagnaWave maakt sterke, goed gebouwde PEMF-spoelapparaten met een lange staat van dienst in de paardenverzorging. Maar de „Mini” staat niet meer op MagnaWaves lijst met apparaten. Het kleinste huidige model, de **Semi 10**, kost **vanaf $8.360**. Voor die prijs, en met weinig bewijs bij mensen, kiezen de meeste mensen beter voor een goedkopere mat of een sessie in een praktijk.\n\n> **Modelupdate (oktober 2026):** het officiële aanbod van MagnaWave bevat geen model met de naam „Mini” meer. Het compacte instapapparaat is de Semi 10 (vanaf $8.360). Andere apparaten gaan tot $39.660 (M40). We hebben de prijs en de prijs-kwaliteitscore in deze review bijgewerkt.\n\n## Wat is MagnaWave — en hoe werkt het?\n\nPEMF staat voor therapie met pulserende elektromagnetische velden. Een apparaat stuurt korte stroomstoten door een spoel. De spoel wekt een wisselend magnetisch veld op dat door huid en kleding gaat en kleine elektrische stroompjes opwekt in het weefsel eronder.\n\nMagnaWave-apparaten zijn „hoogintensieve” apparaten. Ze sturen een handbediende lus- of paddlespoel aan die je op één plek legt, zoals een knie, een rug of de schouder van een paard. Consumentenmatten zoals [Bemer](/reviews/bemer-classic-evo) of [Healthy Wave](/reviews/healthy-wave-multi-wave) gebruiken veel zwakkere velden over het hele lichaam.\n\nDe **Semi 10** is MagnaWaves compacte digitale apparaat:\n\n- **Gewicht:** 9,4 lb, in een gesloten koffer van ongeveer 12,5 × 10 × 6 inch\n- **Output:** één spoel, pulsen van 0,7–20 Hz, intensiteit 1–10 in halve stappen\n- **Timer:** 1–60 minuten, plus een Schumann-stand\n- **Garantie:** 10 jaar\n- **Beoogd gebruik (volgens MagnaWave):** kleine huisdieren, showdieren en licht gebruik bij paarden\n\n## Wat zegt het bewijs over PEMF?\n\n**Bij pijn.** Een systematische review uit 2020 vond dat PEMF pijn aan het bewegingsapparaat kan verminderen, vooral bij knieartrose, maar de studies gebruikten veel verschillende apparaten en instellingen, en de kwaliteit was wisselend (Paolucci et al., 2020). Er is geen bewijs dat de golfvorm van het ene merk beter werkt dan die van een ander.\n\n**Bij botgenezing.** Sommige PEMF-botgroeistimulatoren zijn door de FDA goedgekeurd voor botbreuken die niet genezen. Dat zijn specifieke medische hulpmiddelen met hun eigen data. Hun goedkeuring geldt niet voor PEMF-apparaten voor welzijn.\n\n**Voor MagnaWave zelf.** We vonden geen gepubliceerde, peer-reviewed studies bij mensen met MagnaWave-apparaten. De reputatie van het merk komt vooral uit de paardenwereld en uit ervaringen van behandelaars. Dat is nuttige ervaring, maar geen gecontroleerd bewijs.\n\n## Is MagnaWave door de FDA goedgekeurd?\n\nNee. **Geen enkel MagnaWave-apparaat is „door de FDA goedgekeurd” (approved).** Over zijn apparaten voor behandelaars zegt MagnaWave dat ze niet bedoeld zijn om ziekten bij dieren te diagnosticeren, te behandelen, te genezen of te voorkomen. Over zijn thuismerk **AuraWell** zegt het bedrijf dat het het eerste door de FDA vrijgegeven (cleared), krachtige vrij verkrijgbare PEMF-apparaat is. „Cleared” (510(k)) betekent dat de FDA het vergelijkbaar vond met een apparaat dat al op de markt is — het is geen goedkeuring, en het geldt alleen voor een smal gebruiksdoel. We konden de precieze vrijgegeven indicatie niet onafhankelijk bevestigen, dus controleer de etikettering voordat je koopt.\n\n## Is PEMF veilig?\n\nBij normale instellingen zijn bijwerkingen zeldzaam, maar hoogintensieve spoelen zijn krachtig. Gebruik PEMF **niet** als je het volgende hebt:\n\n- **Een pacemaker, defibrillator of ander actief implantaat** (bijvoorbeeld een cochleair implantaat, insulinepomp of zenuwstimulator)\n- **Zwangerschap**\n- **Epilepsie** of eerdere aanvallen\n\nVermijd de spoel ook boven metalen implantaten, tenzij je arts akkoord is, en boven een tumor of een actieve bloeding. Sommige mensen voelen na een sessie tintelingen, spiertrekkingen of vermoeidheid. Begin op lage intensiteit.\n\n## Wat kost het in totaal?\n\nDe Semi 10 kost **$8.360** (starterspakket), **$10.060** (performance) of **$13.339** (elite). Er is een **proefperiode van 30 dagen voor $700** en **huur vanaf $900 per maand**. Grotere MagnaWave-apparaten kosten $11.960 tot $39.660.\n\n## MagnaWave vs alternatieven\n\n| PEMF-apparaat | Prijs | Type | Beste voor |\n|---|---|---|---|\n| **MagnaWave Semi 10** | vanaf $8.360 | hoogintensieve lusspoel | paarden, behandelaars |\n| [Pulse Centers Pulse XL Pro](/reviews/pulse-centers-pulse-xl-pro) | $9.000 | hoogintensieve spoel | praktijken |\n| [Curatron 3D](/reviews/curatron-3d) | $4.500 | mat + spoel | spoel en mat thuis |\n| [Healthy Wave Multi-Wave](/reviews/healthy-wave-multi-wave) | $2.495 | mat voor hele lichaam | thuis, gecombineerde therapieën |\n\nVoor matten versus praktijkspoelen, zie [Bemer Classic Evo vs Pulse Centers Pulse XL Pro](/reviews/vs/bemer-classic-evo-vs-pulse-centers-pulse-xl-pro).\n\n## Wat zijn de nadelen van MagnaWave?\n\nEerst de prijs: vanaf $8.360 voor het kleinste apparaat. Dan het bewijs: er zijn geen gepubliceerde studies bij mensen voor het merk. Het werkt alleen met een spoel, dus je moet de applicator voor elke plek vasthouden of neerleggen. De bediening is gemaakt voor behandelaars, niet voor een telefoonapp. En de belangrijkste doelgroep is de paarden- en dierenverzorging.\n\n## Voor wie is MagnaWave — en wie kan het beter overslaan?\n\n**Koop het** als je met paarden of dieren werkt, of een praktijk hebt waar een duurzame hoogintensieve spoel met 10 jaar garantie zichzelf terugverdient. Probeer eerst de proefperiode van 30 dagen.\n\n**Sla het over** als je thuis wilt herstellen met een beperkt budget — een mat zoals [Healthy Wave](/reviews/healthy-wave-multi-wave) kost veel minder — of als je een bewezen pijnbehandeling zoekt; dan is een arts of fysiotherapeut een beter begin. Zie de [beste PEMF-apparaten van 2026](/reviews/compare/best-pemf-devices-2026) voor het hele veld.\n\n---\n\n## Achtergrond\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "Is de MagnaWave Mini het geld waard?",
+          "a": "Voor de meeste mensen niet. MagnaWave verkoopt geen Mini meer, en het kleinste apparaat, de Semi 10, begint bij $8.360. Het is goed gebouwd met 10 jaar garantie en past bij gebruik voor paarden en in praktijken, maar er zijn geen gepubliceerde studies bij mensen voor het merk. Thuisgebruikers krijgen PEMF veel goedkoper."
+        },
+        {
+          "q": "Wat kost de MagnaWave Mini?",
+          "a": "In het huidige aanbod van MagnaWave zit geen Mini. Het compacte instapmodel, de Semi 10, kost $8.360, $10.060 of $13.339, afhankelijk van het pakket. Een proefperiode van 30 dagen kost $700 en huur begint bij $900 per maand. Grotere apparaten kosten tot $39.660."
+        },
+        {
+          "q": "Wat zijn de nadelen van de MagnaWave Mini?",
+          "a": "Het kleinste huidige MagnaWave-apparaat kost vanaf $8.360, er zijn geen gepubliceerde studies van het merk bij mensen, het behandelt met een spoel één plek tegelijk in plaats van het hele lichaam, de bediening is gemaakt voor behandelaars en het wordt vooral voor dieren op de markt gebracht."
+        },
+        {
+          "q": "MagnaWave Mini of Pulse Centers: welke is beter?",
+          "a": "Ze liggen nu dicht bij elkaar in prijs: de MagnaWave Semi 10 begint bij $8.360 en de Pulse Centers XL Pro kost ongeveer $9.000. MagnaWave past met zijn draagkoffer en 10 jaar garantie bij mobiele behandelaars in de paardenwereld; Pulse Centers is het completere praktijksysteem voor mensen."
+        },
+        {
+          "q": "Is MagnaWave door de FDA goedgekeurd?",
+          "a": "Nee. Geen enkel MagnaWave-apparaat is door de FDA goedgekeurd. MagnaWave zegt dat zijn apparaten voor behandelaars niet bedoeld zijn om ziekten bij dieren te diagnosticeren, te behandelen, te genezen of te voorkomen. Het thuismerk AuraWell noemt het bedrijf FDA-cleared: vergelijkbaar met een bestaand apparaat voor een smal doel, niet goedgekeurd."
+        },
+        {
+          "q": "Werkt PEMF-therapie echt?",
+          "a": "Deels. Een systematische review uit 2020 vond dat PEMF pijn aan het bewegingsapparaat kan verminderen, vooral bij knieartrose, maar de studies liepen sterk uiteen en de kwaliteit was wisselend. Sommige PEMF-botstimulatoren zijn door de FDA goedgekeurd voor niet-genezende botbreuken, maar dat bewijst niet dat welzijnsapparaten werken."
+        },
+        {
+          "q": "Wie mag geen PEMF gebruiken?",
+          "a": "Gebruik geen PEMF met een pacemaker, defibrillator of ander actief implantaat, tijdens de zwangerschap of als je epilepsie hebt. Vraag een arts voordat je het gebruikt boven metalen implantaten, een tumor of een actieve bloeding, en begin op lage intensiteit."
+        }
+      ]
+    },
+    "almost-heaven-salem": {
+      "verdict": "De goedkoopste manier om aan een echte Finse sauna te komen van een gevestigde fabrikant — een compacte cederhouten barrelsauna voor 2 personen met een elektrische kachel van 6 kW, ver onder de prijs van premium infraroodcabines.",
+      "summary": "De Salem is de instap-barrelsauna van Almost Heaven: een cederhouten ton van 6 × 4 ft voor 2 personen, verkocht als bouwpakket en verwarmd door een elektrische kachel van 6 kW van Harvia (240 V, 30 A, vast aangesloten). Het is traditionele convectiewarmte met water op de stenen — het type waarmee de Finse cohortstudies zijn gedaan — geen infrarood. De adviesprijs is $4.485 ($4.036,50 in de aanbieding op de officiële site in oktober 2026). Voor dit model is er geen houtgestookte optie.",
+      "description": "Almost Heaven Salem review (2026): cederhouten barrelsauna voor 2, elektrische kachel van 6 kW, $4.485 adviesprijs. Totale kosten, bewijs, veiligheid.",
+      "bestFor": "Ideaal voor één of twee personen die een echte Finse sauna buiten willen voor de laagste prijs van een gevestigd merk.",
+      "testNote": "Evidence-based beoordeling — gescoord op basis van de officiële productpagina van Almost Heaven (gecontroleerd op 2026-10-01), de wetenschappelijke literatuur over de Finse sauna en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Traditionele barrelsauna voor 2 personen (elektrische convectie)",
+      "pros": [
+        "Echte Finse sauna: kachel van 6 kW, stenen en löyly-stoom",
+        "Goedkoopste traditionele sauna in onze reviews (ongeveer $4.000–$4.500)",
+        "Dikke cederhouten duigen en een beperkte levenslange garantie op fabricagefouten",
+        "De traditionele sauna is het type met de sterkste onderzoeksbasis"
+      ],
+      "cons": [
+        "Maar twee zitplaatsen — een compacte ton van 6 × 4 ft",
+        "Vereist een vast aangesloten groep van 240 V / 30 A, dus reken op een elektricien",
+        "Geen houtgestookte optie bij dit model",
+        "Montage als bouwpakket en een levertijd van 6–8 weken"
+      ],
+      "scoreNotes": {
+        "heat-source": "Elektrische saunakachel van 6 kW (KIP met draaiknoppen, of slimme KIP-/Spirit-kachels met Fenix-bediening). Traditionele convectiewarmte met löyly-stoom. Geen houtgestookte optie bij de Salem — Almost Heaven biedt houtkachels aan bij grotere barrels zoals de Essex.",
+        "build": "Cederhouten duigen van 1 ⅜ inch met kogelgewrichtverbinding (ball-and-socket) (afwerking Rustic Red Cedar of Onyx); beperkte levenslange garantie op fabricagefouten; Harvia-kachel met 1 jaar garantie op de elementen en 5 jaar op andere onderdelen.",
+        "emf": "Traditionele sauna — de kachel staat in een hoek in plaats van in panelen rond het lichaam, dus EMF-blootstelling is geen wezenlijk punt.",
+        "form-factor": "Barrel voor 2 personen, buitenmaat 78 × 47 × 75⅜ inch. Vereist een vlakke, stevige ondergrond en een eigen vast aangesloten groep van 240 V / 30 A plus 110 V voor de verlichting. Montage als bouwpakket.",
+        "evidence": "De traditionele Finse sauna heeft de meest uitgebreide onderzoeksliteratuur — Finse observationele cohortstudies naar sterfte door hart- en vaatziekten en sterfte door alle oorzaken.",
+        "value": "$4.485 adviesprijs ($4.036,50 in de aanbieding, oktober 2026) inclusief kachel; elektricien, ondergrond en levering komen erbij. Sterke prijs-kwaliteit voor een cederhouten Finse sauna."
+      },
+      "content": "## Oordeel: is de Almost Heaven Salem het geld waard?\n\nJa, als je een echte Finse sauna wilt voor één of twee personen en buiten ruimte hebt. De Salem is een compacte cederhouten ton van 6 × 4 ft met een elektrische kachel van 6 kW en een stenenbak waarop je water kunt gieten — traditionele convectiewarmte, geen infrarood. Voor $4.485 adviesprijs ($4.036,50 in de aanbieding op de officiële site in oktober 2026, kachel inbegrepen) is het de goedkoopste traditionele sauna in onze reviews. Sla hem over als je plek nodig hebt voor meer dan twee, een houtkachel wilt of geen 240 V-groep naar die plek kunt laten aanleggen.\n\n## Belangrijkste specificaties (officiële site, oktober 2026)\n\n- **Afmetingen:** tot 2 zitplaatsen; buitenmaat 78 × 47 × 75⅜ inch, binnenmaat 75¼ × 39¼ × 69¼ inch\n- **Hout:** cederhouten duigen van 1 ⅜ inch met kogelgewrichtverbinding (ball-and-socket), afwerking Rustic Red Cedar of Onyx\n- **Kachel:** 6 kW elektrisch — KIP met draaiknoppen, of slimme KIP-/Spirit-kachel met Fenix-bediening\n- **Stroom:** kachel 240 V, 30 A, vast aangesloten; verlichting 110 V, 15 A, met stekker\n- **Houtgestookt:** niet beschikbaar voor de Salem (houtkachels zijn er voor grotere Almost Heaven-barrels zoals de Essex)\n- **Garantie:** beperkt levenslang op fabricagefouten; Harvia-kachel 1 jaar op de elementen, 5 jaar op andere onderdelen\n- **Levering:** bouwpakket, verzending binnen 6–8 weken\n\n## Traditioneel of infrarood: wat wil je?\n\nEen traditionele sauna verwarmt de lucht (meestal ongeveer 80–100 °C) en de stenen; de luchtvochtigheid regel je met water. Infraroodcabines werken met veel koelere lucht (ruwweg 45–65 °C) en verwarmen het lichaam met stralingspanelen. Traditionele warmte voelt intenser en is wat de langlopende Finse studies hebben gemeten; infrarood is milder, is makkelijker binnen te plaatsen en past bij mensen die niet van hete lucht houden. Geen van beide is voor iedereen beter — maar als het onderzoek je reden is om te kopen, sluit traditioneel er beter op aan.\n\n## Wat het bewijs echt laat zien\n\nDe bekendste studie is van Laukkanen en collega's, *JAMA Internal Medicine* 2015 (doi: 10.1001/jamainternmed.2014.8187). Daarin werden 2.315 Finse mannen van middelbare leeftijd zo'n 20 jaar gevolgd. Mannen die 4–7 keer per week saunaden, hadden duidelijk minder dodelijke hart- en vaatziekten en minder sterfte door alle oorzaken dan mannen die één keer per week gingen, en langere sessies gingen ook samen met een lager risico. Twee eerlijke kanttekeningen: het is observationeel onderzoek, dus het toont een verband en geen bewijs dat de sauna het voordeel veroorzaakt, en het ging om mannen in traditionele Finse sauna's. Het toont niet aan dat een bepaald product, ook dit niet, je gezondheid zal veranderen.\n\n## De echte totale kosten\n\nDe prijs omvat de sauna en de kachel, maar reken ook op:\n\n- **Elektricien:** de kachel moet vast worden aangesloten op een eigen groep van 240 V / 30 A, plus een 110 V-voeding voor de verlichting. De kosten hangen af van de afstand tot je meterkast en de lokale tarieven — vraag een offerte voordat je bestelt.\n- **Ondergrond:** een vlak, stevig oppervlak zoals een betonplaat, tegels of een vlonder.\n- **Vergunningen:** elektrisch werk en bouwwerken buiten zijn lokaal geregeld — informeer bij je gemeente of VvE.\n- **Montage:** hij komt als bouwpakket; trek een dag uit met een helper of betaal een installateur.\n- **Gebruikskosten:** stroom voor een kachel van 6 kW tijdens het opwarmen en de sessies, plus af en toe onderhoud van stenen en hout.\n\n## Veiligheid: wie moet voorzichtig zijn\n\n- **Hartaandoeningen:** bij instabiele angina pectoris, een recent hartinfarct, ernstige aortaklepstenose of onbehandelde hoge bloeddruk vraag je eerst je arts.\n- **Alcohol:** drink niet voor of tijdens een sessie — dat verhoogt het risico op flauwvallen, lage bloeddruk en hartritmestoornissen.\n- **Uitdroging:** drink water, houd sessies op ongeveer 10–20 minuten en ga eruit als je duizelig wordt.\n- **Kinderen:** alleen korte sessies onder toezicht bij lagere temperaturen.\n- **Zwangerschap:** vermijd een stijging van je kerntemperatuur, vooral vroeg in de zwangerschap; overleg eerst met je arts of verloskundige.\n\n## Hoe de Salem zich verhoudt\n\n| Sauna | Type | Prijs (onze review) | Plaatsen | Beste voor |\n|---|---|---|---|---|\n| Almost Heaven Salem | Traditionele barrel, 6 kW elektrisch | $4.485 adviesprijs ($4.036,50 aanbieding) | 2 | Goedkoopste Finse sauna voor buiten |\n| [Finnleo Hallmark](/reviews/finnleo-hallmark) | Traditionele binnencabine | ~$8.000 | 2 | Traditionele warmte in huis |\n| [Sunlighten mPulse 3-in-1](/reviews/sunlighten-mpulse) | Full-spectrum infraroodcabine | ~$6.000 (1 persoon vanaf ~$5.000) | 1–4 | Best onderzochte infrarood |\n| [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) | Full-spectrum infraroodcabine | $7.299 | 2 | Premium infrarood voor binnen |\n\n## Voor wie is hij — en wie kan hem beter overslaan?\n\n**Koop hem als** je een authentieke heteluchtsauna met stoom wilt, je met één of twee personen bent, je een plek buiten hebt en een bereikbare 240 V-voeding, en je je geld liever aan de sauna uitgeeft dan aan een merkpremie.\n\n**Sla hem over als** je vier of meer plaatsen nodig hebt (kijk naar grotere barrels), een houtkachel wilt, een binnenmodel nodig hebt of hoge hitte onprettig vindt — dan past een [infraroodsauna](/reviews/compare/best-infrared-sauna-2026) misschien beter.\n\n---\n\n## Achtergrond\n\nDe biologie achter waarom warmteblootstelling werkt — en de protocollen die de hardware versterken.\n\n- [Mitochondriale biogenese: het cellulaire stroomnet](/articles/mitochondrial-biogenesis-cellular-power-grid) — waarom hittestress de mitochondriale dichtheid verhoogt\n- [Longevity-hardware en cellulaire opruiming](/articles/longevity-hardware-cellular-cleanup) — hoe de sauna past in de bredere autofagie-/mitofagie-stack\n",
+      "faq": [
+        {
+          "q": "Is de Almost Heaven Salem barrelsauna het geld waard?",
+          "a": "Ja, als je een echte Finse sauna wilt voor één of twee personen. De Salem is een compacte cederhouten ton met een elektrische kachel van 6 kW en stenen voor stoom, en met $4.485 adviesprijs (ongeveer $4.000 in de aanbieding) is het de goedkoopste traditionele sauna in onze reviews. Sla hem over als je meer plaatsen, een houtkachel of een binnenmodel nodig hebt."
+        },
+        {
+          "q": "Wat kost de Almost Heaven Salem?",
+          "a": "De Salem heeft een adviesprijs van $4.485 op almostheaven.com, met een aanbiedingsprijs van $4.036,50 in oktober 2026. De elektrische kachel van 6 kW is inbegrepen. Reken extra op een elektricien voor een vast aangesloten groep van 240 V / 30 A, een vlakke ondergrond, eventuele vergunningen en hulp bij de montage als je het bouwpakket niet zelf in elkaar zet."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Almost Heaven Salem?",
+          "a": "Hij heeft maar twee plaatsen, vereist een vast aangesloten groep van 240 V / 30 A (dus een elektricien), heeft geen houtgestookte optie, komt als bouwpakket met een levertijd van 6–8 weken en is een barrel voor buiten in plaats van een binnencabine."
+        },
+        {
+          "q": "Is de Almost Heaven Salem er ook met houtkachel?",
+          "a": "Nee. De Salem wordt alleen verkocht met elektrische kachels van 6 kW (KIP met draaiknoppen, of slimme KIP- of Spirit-kachels met Fenix-bediening). Almost Heaven biedt houtkachels aan bij grotere barrels zoals de Essex."
+        },
+        {
+          "q": "Heb je een elektricien nodig voor een barrelsauna?",
+          "a": "Voor de Salem in de praktijk wel. De kachel van 6 kW moet vast worden aangesloten op een eigen groep van 240 V, 30 A, wat op de meeste plekken werk is voor een erkende elektricien en mogelijk een vergunning vereist. De verlichting gebruikt een aparte 110 V-voeding met stekker."
+        },
+        {
+          "q": "Is een traditionele sauna beter dan infrarood?",
+          "a": "Geen van beide is voor iedereen beter. Traditionele sauna's verwarmen de lucht tot ongeveer 80–100 °C en zijn het type achter de Finse cohortstudies; infraroodcabines zijn koeler en voelen milder. Wil je zo dicht mogelijk bij het onderzoek blijven, kies dan traditioneel; zijn comfort en makkelijke plaatsing binnen belangrijker, dan past infrarood."
+        }
+      ]
+    },
+    "nurosym": {
+      "verdict": "Het klinisch best gevalideerde tVNS-apparaat voor consumenten — een oorclip van onderzoekskwaliteit met een bijpassende prijs.",
+      "productType": "Auriculaire tVNS (oorclip)"
+    },
+    "gammacore-sapphire-cv": {
+      "verdict": "De door de FDA vrijgegeven medische referentie voor niet-invasieve cervicale VNS — een klinisch hulpmiddel, geen welzijnsapparaat voor consumenten.",
+      "productType": "Cervicale tVNS op recept (handapparaat)"
+    },
+    "truvaga-350": {
+      "verdict": "De klinische hardware van gammaCore opnieuw verpakt als welzijnsapparaat voor consumenten — sterke herkomst, bescheiden bewijs voor het welzijnsdoel.",
+      "productType": "Cervicale tVNS voor consumenten (handapparaat)"
+    },
+    "apollo-neuro": {
+      "verdict": "Het best draagbare apparaat in de categorie — vibrotactiel, niet elektrisch, met groeiend klinisch bewijs voor HRV en herstel.",
+      "productType": "Vibrotactiele vagusmodulator (wearable)"
+    },
+    "vagustim": {
+      "verdict": "Protocolgestuurde oor-tVNS met geloofwaardige onderzoeksherkomst — sterk op EU-regelgeving en onderbouwing met studies.",
+      "productType": "Auriculaire tVNS (oorclip + gekoppelde elektroden)"
+    },
+    "pulsetto": {
+      "verdict": "Het meest toegankelijke tVNS-apparaat voor consumenten — sterk in programmavariatie en prijs, lichter op onafhankelijk klinisch bewijs.",
+      "productType": "Cervicale tVNS voor consumenten (nekbeugel)"
+    },
+    "hoolest-verelief-prime": {
+      "verdict": "Het meest op sporters gerichte tVNS-apparaat — korte, intensieve sessies voor herstel en inslapen.",
+      "productType": "Handgehouden tVNS (vinger-/nekgreep)"
+    },
+    "sensate": {
+      "verdict": "Een passief, kalmerend infrasoon apparaat — zacht, geliefd, met bewijs voor het mechanisme dat achterblijft bij het enthousiasme van gebruikers.",
+      "productType": "Infrasone vagusmodulator (kiezel op de borst)"
+    },
+    "xen-by-neuvana": {
+      "verdict": "Oor-tVNS verpakt als oordopjes — een slimme vormfactor voor consumenten, bescheiden onafhankelijk bewijs.",
+      "productType": "Auriculaire tVNS (oordopjes, gekoppeld aan audio)"
+    },
+    "livanova-vns-therapy": {
+      "verdict": "Het geïmplanteerde VNS-referentieapparaat — de klinische gouden standaard, geen consumentenaankoop.",
+      "productType": "Geïmplanteerde VNS (chirurgisch, op recept)"
     }
   },
   "comparisons": {
@@ -912,7 +1173,7 @@
         },
         "neurosity-crown": {
           "award": "Beste voor ontwikkelaars",
-          "takeaway": "Acht droge elektroden en de meest open SDK in de consumentencategorie — ruwe EEG via JavaScript, Python en Swift."
+          "takeaway": "Acht droge elektroden en de meest open SDK in de consumentencategorie — ruwe EEG via JavaScript en Python."
         },
         "emotiv-insight-2": {
           "award": "Beste hybride van onderzoek en consument",
@@ -954,7 +1215,7 @@
         },
         {
           "q": "Muse vs Neurosity Crown: welke moet ik kopen?",
-          "a": "Koop Muse (S Athena $499 of Muse 2 $249) als je begeleide meditatie met live feedback en een verzorgde app wilt. Koop Neurosity Crown ($1,499) als je ruwe EEG-data, acht elektroden en een open SDK voor JavaScript, Python en Swift wilt — het is een tool voor ontwikkelaars en focus, geen meditatiecoach. Voor de meeste mensen die mediteren is Muse de betere en veel goedkopere keuze."
+          "a": "Koop Muse (S Athena $499 of Muse 2 $249) als je begeleide meditatie met live feedback en een verzorgde app wilt. Koop Neurosity Crown ($1,499) als je ruwe EEG-data, acht elektroden en een open SDK voor JavaScript en Python wilt — het is een tool voor ontwikkelaars en focus, geen meditatiecoach. Voor de meeste mensen die mediteren is Muse de betere en veel goedkopere keuze."
         },
         {
           "q": "Wat is de beste EEG-headset in 2026?",
@@ -970,7 +1231,7 @@
         },
         {
           "q": "Welke EEG-headset heeft de meest open SDK?",
-          "a": "Neurosity Crown — ruwe EEG via JavaScript, Python en Swift, geen abonnement nodig voor toegang tot data. Emotiv Insight 2 heeft een vergelijkbare SDK, maar geeft ruwe data alleen vrij met een Pro-abonnement. NeuroSky MindWave Mobile 2 heeft een open SDK in de budgetklasse. Muse, FocusCalm en Sens.ai zijn gesloten platforms."
+          "a": "Neurosity Crown — ruwe EEG via JavaScript en Python, geen abonnement nodig voor toegang tot data. Emotiv Insight 2 heeft een vergelijkbare SDK, maar geeft ruwe data alleen vrij met een Pro-abonnement. NeuroSky MindWave Mobile 2 heeft een open SDK in de budgetklasse. Muse, FocusCalm en Sens.ai zijn gesloten platforms."
         },
         {
           "q": "Is de Muse S Athena de meerprijs waard ten opzichte van de Muse 2?",
@@ -1060,6 +1321,93 @@
           "a": "De apps van Therabody en Hyperice bieden begeleide routines, druksensoren en integratie met andere herstelapparaten. Voor wie gestructureerde percussieprotocollen wil — ja, de app heeft echte waarde. Voor wie al weet welke spiergroepen hij wil behandelen, is de app optioneel."
         }
       ]
+    },
+    "best-vagus-nerve-stimulators-2026": {
+      "title": "Beste nervus vagus stimulator 2026: de 10 beste vergeleken",
+      "description": "De 10 beste nervus vagus stimulatoren van 2026 vergeleken: oor-tVNS, nekapparaten, vibratie. Echte prijzen, FDA-status, eerlijk bewijs en veiligheid.",
+      "intro": "De markt voor vagusstimulatoren is een mengeling van gereguleerde medische hulpmiddelen, consumentenhardware met onderbouwing en welzijnsproducten waarvan het werkingsmechanisme de nervus vagus nauwelijks raakt. We hebben de tien meest geloofwaardige apparaten van 2026 gescoord volgens dezelfde methode — bewijs en klinische onderbouwing, stimulatiemechanisme, flexibiliteit van protocollen, comfort, biofeedback en prijs-kwaliteit — op basis van documentatie van fabrikanten, registraties bij toezichthouders en gepubliceerd onderzoek, met prijzen gecontroleerd in de officiële winkels op 1 oktober 2026. Niets hiervan is zelf getest door ONDA.",
+      "verdict": "Op bewijs en transparantie over het mechanisme wint Nurosym de consumentencategorie — de hardware komt voor in een groot deel van het onafhankelijke, peer-reviewed tVNS-onderzoek. gammaCore Sapphire CV is de regelgevende referentie, maar alleen op recept en specifiek voor hoofdpijn; Truvaga 350 komt van dezelfde fabrikant, zonder recept, en kost nu $325. Apollo Neuro is het juiste apparaat als de hele dag dragen de doorslag geeft; Vagustim is het protocolrijke oor-alternatief voor Nurosym; Pulsetto is de goedkoopste geloofwaardige instap; Hoolest VeRelief Prime past bij sportherstel; Sensate is het prettigst in gebruik; Xen by Neuvana wint op vertrouwde vormfactor. LivaNova VNS Therapy is de geïmplanteerde medische referentie — geen consumentenaankoop. Probeer voordat je er een koopt gratis langzaam ademhalen: voor stress en HRV is het bewijs vergelijkbaar of beter.",
+      "content": "## Kort antwoord\n\n**Beste overall: Nurosym** (€700, ongeveer $820) — het oorapparaat voor consumenten met de diepste onderzoeksbasis. **Beste apparaat op recept: gammaCore Sapphire CV**, door de FDA vrijgegeven voor specifieke hoofdpijnaandoeningen. **Beste nekapparaat zonder recept: Truvaga 350** ($325). **Beste om de hele dag te dragen: Apollo Neuro** ($448, vibratie in plaats van stroom). **Goedkoopste geloofwaardige optie: Pulsetto** ($269). En voordat je iets uitgeeft: probeer langzaam ademhalen — het is gratis en het bewijs is voor alledaagse stress minstens zo goed.\n\n## Hoe we ze hebben gerangschikt\n\nElk apparaat is gescoord volgens ONDA's gepubliceerde [reviewmethode](/reviews/methodology): zes gewogen criteria, waarbij bewijs en klinische onderbouwing het zwaarst wegen, omdat het veld vol marketingclaims zit die maar zwak samenhangen met wat de hardware echt doet. De totaalscore is het gewogen gemiddelde — geen getal op gevoel. Alle tien apparaten zijn beoordeeld op basis van documentatie van fabrikanten, gepubliceerde studieregistraties, vrijgaven van toezichthouders en onafhankelijke reviews uit 2026, niet door ze zelf te testen; zie de scores dus als een onderbouwd startpunt.\n\n## Vergelijkingstabel\n\n| Apparaat | Prijs (okt. 2026) | Type | Regelgevende status | Beste voor |\n|---|---|---|---|---|\n| [Nurosym](/reviews/nurosym) | €700 (~$820) | Oor-tVNS (clip) | CE-gemarkeerd medisch hulpmiddel klasse IIa | Kopers voor wie bewijs voorop staat |\n| [gammaCore Sapphire CV](/reviews/gammacore-sapphire-cv) | Op recept; verschilt per verzekeraar | Handapparaat voor de nek (cervicaal) | FDA-vrijgegeven, hoofdpijnindicaties | Migraine en clusterhoofdpijn |\n| [Truvaga 350](/reviews/truvaga-350) | $325 (350 sessies) | Handapparaat voor de nek (cervicaal) | Algemeen welzijnsproduct, niet FDA-vrijgegeven | Nek-VNS zonder recept |\n| [Apollo Neuro](/reviews/apollo-neuro) | $448 incl. 1 jaar lidmaatschap | Vibratie-wearable | Welzijnsapparaat voor consumenten, niet FDA-vrijgegeven | De hele dag dragen |\n| [Vagustim](/reviews/vagustim) | €499 (~$540) | Oor-tVNS + elektroden | CE-gemarkeerd medisch hulpmiddel klasse IIa | Veel vooraf ingestelde protocollen |\n| [Pulsetto](/reviews/pulsetto) | $269 | Nekbeugel | CE-gemarkeerd | Laagste prijs |\n| [Hoolest VeRelief Prime](/reviews/hoolest-verelief-prime) | $279 | Handapparaat | Welzijnsapparaat voor consumenten, niet FDA-vrijgegeven | Sportherstel |\n| [Sensate](/reviews/sensate) | $299 | Infrasoon apparaat voor de borst | Welzijnsapparaat voor consumenten, niet FDA-vrijgegeven | Avondroutines om tot rust te komen |\n| [Xen by Neuvana](/reviews/xen-by-neuvana) | $399 | Oor-tVNS (oordopjes) | Welzijnsapparaat voor consumenten, niet FDA-vrijgegeven | Vertrouwde vormfactor |\n| [LivaNova VNS Therapy](/reviews/livanova-vns-therapy) | Chirurgisch; vergoed door verzekeraar | Geïmplanteerd | FDA-goedgekeurd (epilepsie, depressie) | Alleen als medische referentie |\n\n## Hoe kies je?\n\n**Oor-tVNS (auriculair)** — Nurosym, Vagustim, Xen. Een clip of oordopje stimuleert de huid van de oorschelp, waar een tak van de nervus vagus loopt. Comfortabel, stil en de best onderzochte aanpak voor consumenten.\n\n**Nekapparaten (cervicaal)** — gammaCore, Truvaga, Pulsetto, Hoolest. Deze stimuleren via de huid van de nek. Alleen gammaCore heeft een FDA-vrijgave, en dan alleen voor hoofdpijnaandoeningen; de andere zijn welzijnsproducten.\n\n**Vibratie- en geluidsapparaten** — Apollo Neuro en Sensate stimuleren de zenuw niet elektrisch. Ze willen het zenuwstelsel kalmeren via aanraking of laagfrequent geluid. Makkelijker in het dagelijks leven, maar verder af van het label „nervus vagus stimulatie”.\n\n**Op recept of voor consumenten** — heb je migraine of clusterhoofdpijn, praat dan met een neuroloog over gammaCore: het is hier de enige optie met een door studies onderbouwde vrijgave voor dat gebruik. Voor algemene stress of slaap is elk consumentenapparaat een welzijnsaankoop, geen behandeling.\n\n## Wat het bewijs echt laat zien\n\nHet sterkste bewijs ligt aan de medische kant. Geïmplanteerde VNS is al tientallen jaren goedgekeurd voor epilepsie en depressie, en gammaCore is door de FDA vrijgegeven voor het voorkomen en behandelen van migraine bij mensen vanaf 12 jaar, clusterhoofdpijn bij volwassenen, en paroxismale hemicranie en hemicrania continua bij volwassenen.\n\nVoor welzijnsclaims voor consumenten is het beeld veel zwakker. Een doorlopend bijgewerkte Bayesiaanse meta-analyse van Wolf en collega's (*Psychophysiology* 2021, doi: 10.1111/psyp.13933) bundelde 16 placebogecontroleerde (sham) studies bij gezonde mensen en vond geen effect van één oor-tVNS-sessie op de vagaal gemedieerde hartslagvariabiliteit. Losse studies naar stress, slaap of stemming zijn meestal klein, kort en vaak gefinancierd door het bedrijf. Dat betekent niet dat de apparaten niets doen — maar marketing die meetbare winst in „vagale tonus” belooft, loopt voor op de wetenschap.\n\n## Veiligheid\n\n- **Geïmplanteerde apparaten:** gebruik geen elektrische stimulatoren met een pacemaker, geïmplanteerde defibrillator of andere geïmplanteerde elektronica, tenzij je cardioloog akkoord gaat.\n- **Hartritmestoornissen:** heb je een aritmie, een trage hartslag of ben je eerder flauwgevallen, overleg dan eerst met een arts — vagusstimulatie kan het hart vertragen.\n- **Zwangerschap en epilepsie:** deze apparaten zijn meestal niet getest tijdens de zwangerschap; vraag eerst medisch advies.\n- **Nekapparaten:** niet gebruiken bij bekende aandoeningen van de halsslagader, na een nekoperatie of op beschadigde huid.\n- **Nooit gebruiken tijdens het autorijden** of het bedienen van machines, en stop als je je duizelig of flauw voelt.\n\n## Gratis alternatieven met echt bewijs\n\nLangzaam, getimed ademhalen — ongeveer vijf tot zeven ademhalingen per minuut met een langere uitademing — verhoogt betrouwbaar de vagaal gemedieerde HRV terwijl je het doet, kost niets en heeft een bredere onderzoeksbasis dan welke consumentenstimulator ook. Begin met onze gidsen over [oefeningen voor de nervus vagus](/articles/vagus-nerve-exercises), [coherent ademhalen](/articles/coherent-breathing-guide), [je resonantie-ademfrequentie vinden](/articles/find-your-resonance-breathing-rate) en [neuriën voor de nervus vagus](/articles/humming-breath-vagus). Probeer je een apparaat, vergelijk het dan met een paar weken ademoefeningen voordat je besluit of het het geld waard is.\n\n## Welke moet je kopen?\n\nIs bewijs het doorslaggevende criterium, kies dan Nurosym. Is het draagbaarheid in het dagelijks leven, Apollo Neuro. Heb je voorgeschreven klinisch gebruik nodig bij hoofdpijn, gammaCore. Is de prijs de beperking, Pulsetto — of Truvaga 350 voor een nekapparaat van de maker van gammaCore. De categorie is klein, de verschillen zijn echt, en de scores hierboven laten direct zien welke afweging voor jou telt.",
+      "picks": {
+        "nurosym": {
+          "award": "Beste overall",
+          "takeaway": "De diepste peer-reviewed onderzoeksbasis in oor-tVNS voor consumenten — auriculaire stimulatie van onderzoekskwaliteit in een bewust sobere vorm (€700, ongeveer $820)."
+        },
+        "gammacore-sapphire-cv": {
+          "award": "Beste klinische apparaat (op recept)",
+          "takeaway": "Door de FDA vrijgegeven nekapparaat op recept voor migraine (vanaf 12 jaar), clusterhoofdpijn en twee zeldzame hoofdpijnaandoeningen — de klinische referentie voor cervicale stimulatie."
+        },
+        "truvaga-350": {
+          "award": "Beste nekapparaat (consument)",
+          "takeaway": "Het vrij verkrijgbare welzijnsapparaat van de maker van gammaCore — hetzelfde cervicale platform zonder recept, nu $325 voor 350 sessies."
+        },
+        "apollo-neuro": {
+          "award": "Beste voor dagelijks dragen",
+          "takeaway": "Het enige apparaat hier dat echt de hele dag gedragen wordt — vibratie in plaats van elektrische stimulatie, met groeiend bewijs voor HRV en herstel."
+        },
+        "vagustim": {
+          "award": "Beste protocolbibliotheek",
+          "takeaway": "Oor-tVNS met de grootste bibliotheek aan vooraf ingestelde programma's en CE-markering in de EU — qua bewijs alleen Nurosym voor zich."
+        },
+        "pulsetto": {
+          "award": "Beste prijs-kwaliteit (consument)",
+          "takeaway": "De goedkoopste om de nek gedragen tVNS met vier begeleide programma's — de meest toegankelijke instap in cervicale stimulatie."
+        },
+        "hoolest-verelief-prime": {
+          "award": "Beste voor sporters",
+          "takeaway": "Korte, intensieve sessies met een handapparaat, gericht op sportherstel en het parasympathisch voorbereiden op de slaap."
+        },
+        "sensate": {
+          "award": "Beste voor avondrituelen",
+          "takeaway": "Infrasoon apparaat voor de borst met bijpassend geluid — het prettigste apparaat hier om echt te gebruiken, met dunner bewijs voor het mechanisme."
+        },
+        "xen-by-neuvana": {
+          "award": "Meest consumentvriendelijke vormfactor",
+          "takeaway": "Oor-tVNS verpakt als oordopjes met muziek — een slimme vormfactor, bescheiden apparaatspecifiek bewijs."
+        },
+        "livanova-vns-therapy": {
+          "award": "Medisch referentieapparaat",
+          "takeaway": "De geïmplanteerde klinische gouden standaard voor geneesmiddelresistente epilepsie en therapieresistente depressie — opgenomen als maatstaf die elk niet-invasief apparaat probeert te benaderen."
+        }
+      },
+      "faq": [
+        {
+          "q": "Wat is de beste nervus vagus stimulator in 2026?",
+          "a": "Voor onderbouwde tVNS voor consumenten is Nurosym de sterkste keuze — de hardware is gebruikt in een groot deel van het peer-reviewed onderzoek naar auriculaire VNS. Voor voorgeschreven medisch gebruik is gammaCore Sapphire CV de door de FDA vrijgegeven referentie voor specifieke hoofdpijnaandoeningen. Voor dagelijks dragen zonder elektrische stimulatie past Apollo Neuro het best."
+        },
+        {
+          "q": "Zijn nervus vagus stimulatoren goedgekeurd door de FDA?",
+          "a": "Slechts enkele. gammaCore Sapphire CV (niet-invasief, op recept) is door de FDA vrijgegeven voor het voorkomen en behandelen van migraine bij mensen vanaf 12 jaar, clusterhoofdpijn bij volwassenen, en paroxismale hemicranie en hemicrania continua bij volwassenen. LivaNova VNS Therapy (geïmplanteerd) is door de FDA goedgekeurd voor geneesmiddelresistente epilepsie en therapieresistente depressie. Consumentenapparaten — Nurosym, Truvaga, Pulsetto, Apollo Neuro, Sensate, Xen, Hoolest, Vagustim — zijn niet door de FDA vrijgegeven om welke aandoening dan ook te behandelen; verschillende hebben in Europa een CE-markering."
+        },
+        {
+          "q": "Werkt vagusstimulatie via het oor net zo goed als een apparaat in de nek?",
+          "a": "Niemand heeft aangetoond dat een van beide duidelijk beter is voor welzijnsgebruik. Oor-tVNS (Nurosym, Vagustim, Xen) richt zich op de auriculaire tak van de vagus en heeft de grotere onderzoeksbasis; nekapparaten (gammaCore, Truvaga, Pulsetto) richten zich op de cervicale vagus, en de hoofdpijnstudies van gammaCore zijn het sterkste klinische bewijs voor een niet-invasief apparaat. Voor een gezonde koper zitten de praktische verschillen in comfort, sessieduur en prijs."
+        },
+        {
+          "q": "Hoeveel kost een goede nervus vagus stimulator?",
+          "a": "In de officiële winkels in oktober 2026: Pulsetto $269, Hoolest VeRelief Prime $279, Sensate $299, Truvaga 350 $325 (Truvaga Plus $499), Xen by Neuvana $399, Apollo Neuro $448 met een jaar lidmaatschap, Vagustim ongeveer $540 (€499) en Nurosym ongeveer $820 (€700). gammaCore is alleen op recept verkrijgbaar en de kosten hangen af van je verzekeraar; het geïmplanteerde LivaNova-systeem is een chirurgische ingreep die bij goedgekeurde indicaties meestal door de verzekering wordt vergoed."
+        },
+        {
+          "q": "Welke nervus vagus stimulator is het best onderzocht?",
+          "a": "Aan de consumentenkant Nurosym — de omgedoopte Parasym-hardware — met de grootste gepubliceerde onderzoeksbasis. Aan de medische kant heeft LivaNova VNS Therapy meer dan twintig jaar FDA-goedgekeurd gebruik, en gammaCore heeft gerandomiseerde studies achter zijn hoofdpijnindicaties. De meeste welzijnsclaims voor consumenten rusten op kleine of wisselende studies."
+        },
+        {
+          "q": "Is Apollo Neuro echt een nervus vagus stimulator?",
+          "a": "Strikt genomen niet — Apollo Neuro is een vibratie-wearable, geen elektrisch tVNS-apparaat. Het probeert de toestand van het autonome zenuwstelsel via aanraking te veranderen in plaats van de nervus vagus direct te stimuleren. Het staat erbij omdat het de best onderzochte niet-elektrische optie op de consumentenmarkt is."
+        },
+        {
+          "q": "Werken nervus vagus stimulatoren echt?",
+          "a": "Voor specifieke medische toepassingen wel: geïmplanteerde VNS bij epilepsie en depressie, en gammaCore bij bepaalde hoofdpijnaandoeningen, zijn op basis van studies goedgekeurd door toezichthouders. Voor consumentenclaims over stress, slaap en HRV is het bewijs klein en wisselend — een meta-analyse uit 2021 van 16 placebogecontroleerde studies vond geen effect van één oor-tVNS-sessie op de hartslagvariabiliteit. Sommige mensen vinden ze toch nuttig, maar beschouw welzijnsclaims als onbewezen."
+        },
+        {
+          "q": "Wie mag geen nervus vagus stimulator gebruiken?",
+          "a": "Gebruik er geen zonder medisch advies als je een pacemaker, geïmplanteerde defibrillator of ander geïmplanteerd elektronisch apparaat hebt, een hartritmestoornis of epilepsie hebt, of zwanger bent. Nekapparaten zijn niet geschikt voor mensen met een aandoening van de halsslagader of na een nekoperatie. Gebruik er nooit een tijdens het autorijden of het bedienen van machines, en stop als je je flauw voelt."
+        },
+        {
+          "q": "Kun je de nervus vagus gratis stimuleren?",
+          "a": "Ja. Langzaam ademhalen — ongeveer vijf tot zeven ademhalingen per minuut met een langere uitademing — verhoogt betrouwbaar de vagaal gemedieerde hartslagvariabiliteit terwijl je het doet en heeft het breedste bewijs van alle vagustechnieken. Neuriën, je gezicht voorzichtig in koud water dompelen en regelmatige duurtraining helpen ook. Veel mensen proberen dit eerst en kopen pas een apparaat als ze meer structuur willen."
+        }
+      ]
     }
   },
   "criteria": {
@@ -1096,7 +1444,16 @@
     "wearability": "Draagcomfort en accu",
     "app-ux": "App en software",
     "heat-source": "Warmtebron en dekking van golflengten",
-    "emf": "EMF-discipline"
+    "emf": "EMF-discipline",
+    "stall-force-amplitude": "Stall force en amplitude",
+    "build-attachments": "Afwerking, opzetstukken en garantie",
+    "battery-noise": "Accuduur en geluidsniveau",
+    "app-smart-features": "App en slimme functies",
+    "ergonomics-portability": "Ergonomie en draagbaarheid",
+    "signal-quality": "Signaalkwaliteit en sensorkwaliteit",
+    "training-content": "Trainingsprogramma's en content",
+    "comfort": "Comfort en draagbaarheid",
+    "open-data": "Open data en toegang voor developers"
   },
   "categories": {
     "pemf": "PEMF-apparaten",
@@ -1108,7 +1465,8 @@
     "cold-plunge": "Ijsbad & koudwaterbad",
     "massage-gun": "Massageguns",
     "hrv-wearable": "HRV-trackers",
-    "sauna": "Sauna's & infraroodsauna's"
+    "sauna": "Sauna's & infraroodsauna's",
+    "vagus-stim": "Nervus vagus stimulatoren"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {

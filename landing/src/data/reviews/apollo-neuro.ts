@@ -19,7 +19,7 @@ const apolloNeuro: ToolReview = {
     { criterionId: 'protocols', score: 8.5, note: 'Seven distinct modes (energy, calm, sleep, focus, recover, social, clear) with adjustable intensity and duration. Best programme variety in the category.' },
     { criterionId: 'comfort', score: 9.0, note: 'Wrist, ankle or clip-on; designed for all-day wear. The only device here genuinely worn passively.' },
     { criterionId: 'biofeedback', score: 7.0, note: 'App logs sessions and self-rated state; integrates with Apple Health and Oura for HRV correlation.' },
-    { criterionId: 'value', score: 6.5, note: '$349 hardware plus optional Apollo+ membership ($14.99/mo) for premium content. No subscription required for basic operation.' },
+    { criterionId: 'value', score: 6.0, note: '$448 on apolloneuro.com bundled with a 1-year SmartVibes AI membership — the priciest wearable in the consumer tier; HSA/FSA eligible, 1-year warranty.' },
   ],
   pros: [
     'The only device here designed for genuine all-day wear',
@@ -30,14 +30,14 @@ const apolloNeuro: ToolReview = {
   cons: [
     'Vibrotactile mechanism is less direct than electrical tVNS',
     'No on-device HRV measurement',
-    'Premium content gated behind Apollo+ subscription',
+    'Membership included only for the first year; Apollo+ content needs a subscription after that',
     'Less effective than tVNS for users seeking strong acute responses',
   ],
   bestFor: 'Best for daily-wear vagal modulation — gentle, non-electrical and the easiest to integrate into life.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Apollo Neuroscience clinical documentation, published University of Pittsburgh HRV/recovery trials and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 349, note: 'one-time; Apollo+ optional ~$15/mo', asOf: '2026-05-21' },
+  price: { usd: 448, note: 'includes 1-year SmartVibes AI membership; promotional pricing varies', asOf: '2026-10-01' },
   link: 'https://apolloneuro.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -69,12 +69,12 @@ The biology behind what these devices target — and the protocols that compound
   relatedSlugs: ['sensate', 'pulsetto', 'nurosym'],
   faq: [
     { q: "Is the Apollo Neuro worth it?", a: "Yes, if you want gentle, all-day vagal modulation. Apollo Neuro is the most wearable device in its category, using vibrotactile rather than electrical stimulation, backed by founder-led University of Pittsburgh research on HRV and recovery. It is less worth it if you want strong acute responses, where electrical tVNS is more effective." },
-    { q: "How much does the Apollo Neuro cost?", a: "The Apollo Neuro costs $349 as a one-time purchase. An optional Apollo+ subscription runs about $15 per month and unlocks premium content. The base device includes seven distinct programmes for different states and is worn on the wrist or ankle." },
+    { q: "How much does the Apollo Neuro cost?", a: "The Apollo Neuro lists at $448 on the official store, bundled with a 1-year SmartVibes AI membership; promotional prices are often lower. The base device includes seven distinct programmes for different states and is worn on the wrist or ankle." },
     { q: "What are the downsides of the Apollo Neuro?", a: "The Apollo Neuro's vibrotactile mechanism is less direct than electrical tVNS, and it has no on-device HRV measurement. Premium content is gated behind the Apollo+ subscription, and users seeking strong acute responses will find it less effective than tVNS devices." },
     { q: "Who is the Apollo Neuro best for?", a: "The Apollo Neuro is best for daily-wear vagal modulation: people who want something gentle, non-electrical and easy to integrate into life. It needs no pads, skin contact or titration, and it is the only device in its category designed for genuine all-day wear." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-01',
 }
 
 export default apolloNeuro

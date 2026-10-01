@@ -37,7 +37,7 @@ const bestPemfDevices2026: Comparison = {
     {
       reviewSlug: 'magnawave-mini',
       award: 'Best portable coil',
-      takeaway: 'Multi-decade equine/athletic recovery coil at portable form factor — sub-Pulse-Centers pricing.',
+      takeaway: 'Multi-decade equine/athletic recovery coil in a portable case — but no “Mini” is sold now; the compact Semi 10 starts at $8,360, close to Pulse Centers money.',
     },
     {
       reviewSlug: 'omi-full-body-mat',
@@ -102,7 +102,7 @@ Three buying questions resolve the category cleanly:
 
 **What form factor?** Whole-body mat (Bemer, Healthy Wave, OMI, HigherDOSE). Localised coil (Pulse Centers, MagnaWave, Curatron). Sleep-specific under-mattress (EarthPulse). Wearable (Resona VIBE, OlyLife).
 
-**What budget tier?** Under $500: Resona VIBE wearable, OlyLife wand. $1,000–$2,500: OMI, HigherDOSE, EarthPulse, Healthy Wave (full size $2,495; smaller sizes from $995). $3,000–$5,000: iMRS, Curatron, MagnaWave. $5,000+: Bemer, Pulse Centers.
+**What budget tier?** Under $500: Resona VIBE wearable, OlyLife wand. $1,000–$2,500: OMI, HigherDOSE, EarthPulse, Healthy Wave (full size $2,495; smaller sizes from $995). $3,000–$5,000: iMRS, Curatron. $5,000+: Bemer, Pulse Centers, MagnaWave (compact Semi 10 from $8,360; lineup $5,500–$39,660).
 
 Bemer dominates the research-backed premium tier; Healthy Wave wins on modality stacking; Pulse Centers and MagnaWave own the clinical coil niche; Resona VIBE redefines the entry tier at $299.`,
   publishOn: '2026-06-22',

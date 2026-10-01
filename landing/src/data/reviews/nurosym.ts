@@ -19,7 +19,7 @@ const nurosym: ToolReview = {
     { criterionId: 'protocols', score: 7.0, note: 'A single, well-defined stimulation programme; intensity is dialled by the user. Less programme variety than Pulsetto, but parameters are transparent.' },
     { criterionId: 'comfort', score: 7.5, note: 'A tragus clip is well-tolerated for 30–60 minute sessions; not designed for hours of wear, and the cable tethers you to the unit.' },
     { criterionId: 'biofeedback', score: 6.5, note: 'No built-in HRV measurement — pair with a chest strap or ring for closed-loop tracking.' },
-    { criterionId: 'value', score: 6.5, note: '£599 (~$750) one-time, no subscription. Premium pricing — justified by the evidence base, not for casual experimenters.' },
+    { criterionId: 'value', score: 6.0, note: '€700 (about $820; US pricing varies by region) one-time, no subscription. Premium pricing — justified by the evidence base, not for casual experimenters.' },
   ],
   pros: [
     'Deepest peer-reviewed research base of any consumer tVNS device',
@@ -30,14 +30,14 @@ const nurosym: ToolReview = {
   cons: [
     'Single programme — less variety than app-driven competitors',
     'No on-device HRV measurement or session logging',
-    '£599 puts it out of reach of casual users',
+    '€700 (about $820) puts it out of reach of casual users',
     'Wired clip is less convenient than a wireless wearable',
   ],
   bestFor: 'Best for research-grade auricular tVNS at home — when evidence matters more than form factor.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, the published Parasym/Nurosym trial record and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 750, note: '£599 — one-time; no subscription', asOf: '2026-05-21' },
+  price: { usd: 820, note: '€700 list on nurosym.com (≈$820; regional pricing varies) — one-time; no subscription; 2-year warranty', asOf: '2026-10-01' },
   link: 'https://nurosym.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -46,7 +46,7 @@ Nurosym wins this comparison on the criterion that matters most for medical devi
 
 ## What are the downsides of Nurosym?
 
-The same austerity that makes Nurosym credible makes it spartan. There is one stimulation programme, no app, no on-device HRV, no session log, and the unit is tethered to the ear clip by a cable. At £599 it is also the most expensive ear-clip device in this list. If you want guided modes for sleep, focus and stress, Pulsetto offers more programme variety at a lower price — even if its evidence base is thinner.
+The same austerity that makes Nurosym credible makes it spartan. There is one stimulation programme, no app, no on-device HRV, no session log, and the unit is tethered to the ear clip by a cable. At €700 (about $820) it is also the most expensive ear-clip device in this list. If you want guided modes for sleep, focus and stress, Pulsetto offers more programme variety at a lower price — even if its evidence base is thinner.
 
 ## Who should buy Nurosym?
 
@@ -70,12 +70,12 @@ The biology behind what these devices target — and the protocols that compound
   relatedSlugs: ['gammacore-sapphire-cv', 'pulsetto', 'truvaga-350'],
   faq: [
     { q: "Is Nurosym worth it?", a: "Nurosym is worth it if evidence matters more than form factor. It has the deepest peer-reviewed research base of any consumer tVNS device, disclosed stimulation parameters, and is a UK-manufactured, CE-marked Class IIa medical device. Expect a single programme and a wired ear clip." },
-    { q: "How much does Nurosym cost?", a: "Nurosym is listed at £599, about $750, as a one-time purchase with no subscription and no app required to use it. The review notes that price puts it out of reach of casual users. It is a CE-marked Class IIa device." },
-    { q: "What are the downsides of Nurosym?", a: "Nurosym offers a single programme with less variety than app-driven competitors, no on-device HRV measurement or session logging, a £599 price that puts it out of reach of casual users, and a wired clip that is less convenient than a wireless wearable." },
+    { q: "How much does Nurosym cost?", a: "Nurosym is listed at €700 on the official store, about $820 (regional pricing varies), as a one-time purchase with no subscription and no app required to use it. The review notes that price puts it out of reach of casual users. It is a CE-marked Class IIa device." },
+    { q: "What are the downsides of Nurosym?", a: "Nurosym offers a single programme with less variety than app-driven competitors, no on-device HRV measurement or session logging, a €700 (about $820) price that puts it out of reach of casual users, and a wired clip that is less convenient than a wireless wearable." },
     { q: "Nurosym vs Pulsetto: which is better?", a: "Nurosym is better for evidence: it has the deepest peer-reviewed research base in consumer tVNS. Pulsetto is cheaper at $269, is neck-worn and offers four guided programmes, but its independent clinical evidence is thinner than Nurosym's." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-01',
 }
 
 export default nurosym

@@ -26,8 +26,8 @@ const pulsettoVsNurosymVsApollo: HeadToHead = {
     { name: 'Protocol variety', winner: 'a', note: 'Pulsetto: four guided programmes. Apollo: seven modes (calm, energy, sleep, focus, recover, social, clear). Nurosym: single deliberately-spartan programme. Apollo broadest; Pulsetto guided.' },
     { name: 'All-day wearability', winner: 'c', note: 'Apollo: wrist/ankle/clip-on, 24/7 wear by design. Pulsetto: session-based collar. Nurosym: 30–60 minute ear-clip sessions only.' },
     { name: 'Setup friction', winner: 'c', note: 'Apollo: put it on. Pulsetto: collar + saline/gel pads. Nurosym: ear clip with cable tether. Apollo wins on zero-friction daily use.' },
-    { name: 'Subscription model', winner: 'b', note: 'Nurosym: no subscription. Apollo: $349 + optional $15/mo Apollo+. Pulsetto: $269 + optional Pulsetto+. Nurosym alone has no subscription path at all.' },
-    { name: 'Price (hardware)', winner: 'a', note: 'Pulsetto: $269. Apollo: $349. Nurosym: $750. Pulsetto is the most accessible at the entry tier.' },
+    { name: 'Subscription model', winner: 'b', note: 'Nurosym: no subscription. Apollo: $448 incl. a 1-year SmartVibes AI membership. Pulsetto: $269 + optional Pulsetto+. Nurosym alone has no subscription path at all.' },
+    { name: 'Price (hardware)', winner: 'a', note: 'Pulsetto: $269. Apollo: $448 (incl. 1-year membership). Nurosym: €700 (~$820). Pulsetto is the most accessible at the entry tier.' },
   ],
   faq: [
     {
@@ -72,7 +72,7 @@ If you want vagal modulation that runs in your day without ceremony — at work,
 Apollo as the daily passive baseline plus Pulsetto or Nurosym for targeted acute sessions is the most common multi-device configuration among serious users. The mechanisms hit different pathways, so the effects stack rather than redundant.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default pulsettoVsNurosymVsApollo

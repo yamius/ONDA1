@@ -27,7 +27,7 @@ const nurosymVsVagustimVsXen: HeadToHead = {
     { name: 'Form factor', winner: 'c', note: 'Xen: earbuds — most familiar consumer shape. Nurosym: tragus clip with cable tether. Vagustim: tragus clip plus optional secondary electrodes.' },
     { name: 'Music / audio integration', winner: 'c', note: 'Xen pairs stimulation with music playback through the same earbuds. Nurosym and Vagustim have no audio component.' },
     { name: 'Regulatory status', winner: 'tie', note: 'Nurosym and Vagustim: CE-marked Class IIa medical devices. Xen: consumer wellness device. Nurosym and Vagustim tie; Xen is lighter regulatory.' },
-    { name: 'Price', winner: 'b', note: 'Vagustim: €499 (~$540). Xen: $399. Nurosym: $750. Xen cheapest; Nurosym premium-priced for the evidence base.' },
+    { name: 'Price', winner: 'b', note: 'Vagustim: €499 (~$540). Xen: $399. Nurosym: €700 (~$820). Xen cheapest; Nurosym premium-priced for the evidence base.' },
   ],
   faq: [
     {
@@ -69,7 +69,7 @@ If the earbud form factor and music-paired sessions make daily use realistic for
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-01',
 }
 
 export default nurosymVsVagustimVsXen

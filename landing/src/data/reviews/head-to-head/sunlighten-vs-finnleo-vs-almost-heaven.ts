@@ -18,7 +18,7 @@ const irVsTraditional: HeadToHead = {
   bestForB:
     'Choose Finnleo Hallmark if you want premium traditional Finnish indoor sauna — Helo-engineered heater, the format the Finnish cohort studies were run on.',
   bestForC:
-    'Choose Almost Heaven Salem if you want traditional outdoor cedar barrel sauna with American-built construction and electric-or-wood heater options.',
+    'Choose Almost Heaven Salem if you want traditional outdoor cedar barrel sauna with American-built construction, a 6 kW electric heater and the lowest price of the three.',
   axes: [
     { name: 'Heat source', winner: 'tie', note: 'Sunlighten: full-spectrum IR (radiant). Finnleo and Almost Heaven: convection (traditional Finnish heat). Different mechanisms; pick on which feels right.' },
     { name: 'Install context', winner: 'tie', note: 'Sunlighten: indoor cabin. Finnleo: indoor cabin. Almost Heaven: outdoor barrel only. Pick on install space.' },
@@ -26,7 +26,7 @@ const irVsTraditional: HeadToHead = {
     { name: 'EMF', winner: 'b', note: 'Finnleo and Almost Heaven: no electronics in heat delivery (EMF non-issue). Sunlighten: low EMF documented but non-zero.' },
     { name: 'Research evidence', winner: 'b', note: 'Traditional Finnish sauna (Finnleo, Almost Heaven) has the deepest published research evidence base — Finnish cohort studies on cardiovascular mortality and dementia risk.' },
     { name: 'Brand pedigree', winner: 'b', note: 'Finnleo: Finnish manufacturing pedigree (Helo). Almost Heaven: American cedar barrel pedigree. Sunlighten: longest IR-sauna brand presence.' },
-    { name: 'Price', winner: 'a', note: 'Sunlighten: ~$6,000. Almost Heaven: ~$5,500. Finnleo: ~$8,000+. Sunlighten and Almost Heaven roughly tied; Finnleo premium-priced.' },
+    { name: 'Price', winner: 'c', note: 'Almost Heaven Salem (2-person): $4,485 list incl. heater ($4,036.50 sale, October 2026). Sunlighten: ~$6,000. Finnleo: ~$8,000+. Almost Heaven is the cheapest; Finnleo premium-priced.' },
   ],
   faq: [
     {
@@ -60,11 +60,11 @@ If you want premium traditional Finnish indoor sauna with Helo-engineered heater
 
 ## When is Almost Heaven Salem the right pick?
 
-If you want traditional outdoor cedar barrel sauna and have the outdoor space — Almost Heaven is the right shape. The wood-burning heater option is unique to this category; American red cedar build at marginally lower price than Finnleo.`,
+If you want traditional outdoor cedar barrel sauna and have the outdoor space — Almost Heaven is the right shape. The Salem is a 2-person barrel with a 6 kW electric heater (no wood-burning option on this model), American red cedar build and the lowest price of the three — $4,485 list including the heater.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-01',
 }
 
 export default irVsTraditional

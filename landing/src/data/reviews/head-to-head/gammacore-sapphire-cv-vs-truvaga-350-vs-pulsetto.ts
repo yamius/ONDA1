@@ -20,14 +20,14 @@ const threeCervical: HeadToHead = {
   bestForC:
     'Choose Pulsetto if you want the most accessible consumer cervical tVNS — neck collar with four guided programmes (sleep, stress, anxiety, pain) at the lowest price.',
   axes: [
-    { name: 'FDA clearance', winner: 'a', note: 'gammaCore: FDA-cleared for migraine and cluster headache. Truvaga and Pulsetto: consumer wellness devices, not FDA-cleared. gammaCore is the only clinically-authorised non-invasive VNS in the US.' },
+    { name: 'FDA clearance', winner: 'a', note: 'gammaCore: FDA-cleared (prescription) for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. Truvaga and Pulsetto: consumer wellness devices, not FDA-cleared. gammaCore is the only clinically-authorised non-invasive VNS in the US.' },
     { name: 'Trial evidence — within indication', winner: 'a', note: 'gammaCore: 30+ randomised trials for migraine and cluster headache. Truvaga: inherits gammaCore platform safety. Pulsetto: one pilot plus company-sponsored studies.' },
     { name: 'Hardware platform', winner: 'a', note: 'gammaCore and Truvaga share the same electroCore hardware platform (5 kHz burst waveform). Pulsetto is a different design (consumer collar with neck pads).' },
     { name: 'Form factor', winner: 'c', note: 'Pulsetto: lightweight neck collar, wear-and-go. gammaCore and Truvaga: handheld, requires active holding to the side of the neck.' },
     { name: 'Protocol variety', winner: 'c', note: 'Pulsetto: four guided programmes. Truvaga: intensity adjustment within fixed 2-minute sessions. gammaCore: dose set by prescriber, no user variation.' },
     { name: 'Session lifetime', winner: 'c', note: 'Pulsetto: unlimited sessions for device lifetime. Truvaga 350: 350-session cap then retirement. gammaCore: refill-card model.' },
     { name: 'Consumer accessibility', winner: 'c', note: 'Pulsetto: lowest barrier — direct consumer purchase, no prescription. Truvaga: OTC, slightly more involved. gammaCore: prescription required.' },
-    { name: 'Price', winner: 'c', note: 'Pulsetto: $269. Truvaga 350: $499 + refill model. gammaCore: ~$600+ with refill cards plus insurance coverage variation.' },
+    { name: 'Price', winner: 'c', note: 'Pulsetto: $269. Truvaga 350: $325 for 350 preloaded sessions (rechargeable Truvaga Plus $499). gammaCore: ~$600+ with refill cards plus insurance coverage variation.' },
   ],
   faq: [
     {
@@ -36,7 +36,7 @@ const threeCervical: HeadToHead = {
     },
     {
       q: 'Are Truvaga and gammaCore really the same hardware?',
-      a: 'Same platform — both made by electroCore, both using the 5 kHz cervical burst waveform. The clinical labelling differs: gammaCore is FDA-cleared for migraine and cluster headache, Truvaga is sold over-the-counter as a wellness device.',
+      a: 'Same platform — both made by electroCore, both using the 5 kHz cervical burst waveform. The clinical labelling differs: gammaCore is FDA-cleared for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua, Truvaga is sold over-the-counter as a wellness device.',
     },
     {
       q: 'Is Pulsetto FDA-cleared?',
@@ -68,7 +68,7 @@ If you want the gammaCore hardware platform — same 5 kHz cervical waveform, sa
 If you want a daily-use cervical tVNS collar with four guided programmes and no clinical commitment, Pulsetto is the right shape. The lowest price, the broadest protocol library, and the no-cap session lifetime are the differentiators. Most consumer users land here.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default threeCervical

@@ -68,10 +68,10 @@ Choose Pulse Centers Pulse XL Pro if you're running serious athletic recovery or
     { q: "Is the Pulse Centers Pulse XL Pro worth it?", a: "The Pulse XL Pro is worth it for serious athletic recovery, rehabilitation or clinic installations. It delivers the highest consumer-accessible field intensity, over 200,000 µT peak, with a clinical-grade build and a 5-year warranty. For general wellness use it is overkill." },
     { q: "How much does the Pulse Centers Pulse XL Pro cost?", a: "The XL Pro configuration is listed at $9,000, with pricing that varies by accessory set. The review places it in a prosumer range of $7,000 to $15,000 or more, out of reach for casual users." },
     { q: "What are the downsides of the Pulse Centers Pulse XL Pro?", a: "Its $7,000 to $15,000-plus pricing is out of reach for casual users. It is coil-only with no whole-body mat, requires active positioning each session rather than passive lying down, and is overkill for general wellness." },
-    { q: "Pulse Centers Pulse XL Pro vs MagnaWave Mini: which is better?", a: "The Pulse XL Pro offers the highest consumer-accessible intensity and clinic-grade support. The MagnaWave Mini delivers clinical-tier coil intensity at sub-Pulse-Centers pricing in a portable build. Choose Pulse Centers for clinic installs, MagnaWave for portability and cost." },
+    { q: "Pulse Centers Pulse XL Pro vs MagnaWave Mini: which is better?", a: "The Pulse XL Pro offers the highest consumer-accessible intensity and clinic-grade support. MagnaWave no longer sells a Mini; its compact Semi 10 starts at $8,360, so the two are now close in price. Choose Pulse Centers for clinic installs, MagnaWave for a portable, carry-case build aimed mainly at equine and mobile practitioners." },
   ],
   datePublished: '2026-06-22',
-  dateModified: '2026-06-22',
+  dateModified: '2026-10-01',
 }
 
 export default pulseCentersXLPro

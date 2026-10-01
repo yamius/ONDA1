@@ -22,7 +22,7 @@ const bestEegHeadsets2026: Comparison = {
     {
       reviewSlug: 'neurosity-crown',
       award: 'Best for developers',
-      takeaway: 'Eight dry electrodes and the most open SDK in the consumer category — raw EEG over JavaScript, Python and Swift.',
+      takeaway: 'Eight dry electrodes and the most open SDK in the consumer category — raw EEG over JavaScript and Python (plus BrainFlow, LSL and OSC).',
     },
     {
       reviewSlug: 'emotiv-insight-2',
@@ -73,7 +73,7 @@ const bestEegHeadsets2026: Comparison = {
     },
     {
       q: 'Muse vs Neurosity Crown: which should I buy?',
-      a: 'Buy Muse (S Athena $499 or Muse 2 $249) if you want guided meditation with live feedback and a polished app. Buy Neurosity Crown ($1,499) if you want raw EEG data, eight electrodes and an open SDK for JavaScript, Python and Swift — it is a developer and focus tool, not a meditation coach. For most meditators Muse is the better and much cheaper choice.',
+      a: 'Buy Muse (S Athena $499 or Muse 2 $249) if you want guided meditation with live feedback and a polished app. Buy Neurosity Crown ($1,499) if you want raw EEG data, eight electrodes and an open SDK for JavaScript and Python (plus BrainFlow, LSL and OSC) — it is a developer and focus tool, not a meditation coach. For most meditators Muse is the better and much cheaper choice.',
     },
     {
       q: 'What is the best EEG headset in 2026?',
@@ -89,7 +89,7 @@ const bestEegHeadsets2026: Comparison = {
     },
     {
       q: 'Which EEG headset has the most open SDK?',
-      a: 'Neurosity Crown — raw EEG over JavaScript, Python and Swift, no subscription required for data access. Emotiv Insight 2 has a comparable SDK but gates raw-data access behind a Pro subscription. NeuroSky MindWave Mobile 2 has an open SDK at the budget tier. Muse, FocusCalm and Sens.ai are closed platforms.',
+      a: 'Neurosity Crown — raw EEG over JavaScript and Python (plus BrainFlow, LSL and OSC), no subscription required for data access. Emotiv Insight 2 has a comparable SDK but gates raw-data access behind a Pro subscription. NeuroSky MindWave Mobile 2 has an open SDK at the budget tier. Muse, FocusCalm and Sens.ai are closed platforms.',
     },
     {
       q: 'Is the Muse S Athena worth it over the Muse 2?',

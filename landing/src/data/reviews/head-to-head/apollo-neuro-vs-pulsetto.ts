@@ -23,7 +23,7 @@ const apolloNeuroVsPulsetto: HeadToHead = {
     { name: 'Evidence base', winner: 'a', note: 'Apollo Neuro has peer-reviewed HRV/recovery RCTs from University of Pittsburgh; Pulsetto evidence is mostly company-sponsored. Apollo edges Pulsetto on independent research.' },
     { name: 'Protocol variety', winner: 'b', note: 'Pulsetto: four guided programmes (sleep, stress, anxiety, pain). Apollo: seven modes (energy, calm, sleep, focus, recover, social, clear). Both broad.' },
     { name: 'Setup friction', winner: 'a', note: 'Apollo: put it on. Pulsetto: collar plus saline/gel pads, replaced periodically.' },
-    { name: 'Price', winner: 'a', note: 'Apollo: $349 hardware, optional $15/mo Apollo+ subscription. Pulsetto: $269 hardware, optional Pulsetto+ subscription. Pulsetto is cheaper hardware; Apollo cheaper total cost of ownership.' },
+    { name: 'Price', winner: 'b', note: 'Apollo: $448 on the official store, bundled with a 1-year SmartVibes AI membership (promotional prices vary). Pulsetto: $269 hardware, optional Pulsetto+ subscription. Pulsetto is clearly cheaper upfront.' },
   ],
   faq: [
     {
@@ -60,7 +60,7 @@ If you want a stronger acute parasympathetic shift in a structured 4–20 minute
 Both. Apollo as the daily ambient baseline; Pulsetto for targeted acute sessions. The mechanisms are different enough that the effects layer cleanly.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-01',
 }
 
 export default apolloNeuroVsPulsetto

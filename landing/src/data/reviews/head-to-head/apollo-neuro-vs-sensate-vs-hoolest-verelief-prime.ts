@@ -27,7 +27,7 @@ const threeVagusForms: HeadToHead = {
     { name: 'Setup friction', winner: 'a', note: 'Apollo: put it on. Sensate: chest placement + headphones. Hoolest: active holding to neck or ear for the session. Apollo wins on zero-friction.' },
     { name: 'Sleep-onset use case', winner: 'b', note: 'Sensate’s soundscape-paired sessions are the most pleasant pre-sleep ritual in this group. Hoolest is intense; Apollo is ambient.' },
     { name: 'Athletic recovery use case', winner: 'c', note: 'Hoolest was built for it — short intense post-training sessions. Apollo is gentler ambient support. Sensate is not athletic-focused.' },
-    { name: 'Price', winner: 'c', note: 'Hoolest: $279. Sensate: $299. Apollo: $349. Roughly comparable; Hoolest cheapest. All three lower than electrical tVNS leaders (Nurosym, gammaCore).' },
+    { name: 'Price', winner: 'c', note: 'Hoolest: $279. Sensate: $299. Apollo: $448 (incl. 1-year membership). Hoolest cheapest; Apollo the priciest of the three. All three lower than electrical tVNS leaders (Nurosym, gammaCore).' },
   ],
   faq: [
     {
@@ -68,7 +68,7 @@ If a focused evening wind-down ritual with paired soundscapes is the use case, S
 If you want short, intense parasympathetic priming around training and sleep, Hoolest is the right shape. The dual ear/neck targeting and the founder-published athletic-recovery research are the differentiators. Active engagement required for the session.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default threeVagusForms

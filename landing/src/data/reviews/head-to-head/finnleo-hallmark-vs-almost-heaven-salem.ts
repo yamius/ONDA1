@@ -15,20 +15,20 @@ const finnleoVsAlmostHeaven: HeadToHead = {
   bestForA:
     'Choose Finnleo Hallmark if you want premium Finnish indoor sauna with Helo-engineered heat delivery and the deepest manufacturing pedigree in the category.',
   bestForB:
-    'Choose Almost Heaven Salem if you want a traditional outdoor cedar barrel sauna with American-built construction and electric-or-wood heater options.',
+    'Choose Almost Heaven Salem if you want a traditional outdoor cedar barrel sauna with American-built construction, a 6 kW electric heater and the lower price ($4,485 list for the 2-person Salem).',
   axes: [
-    { name: 'Heater quality', winner: 'a', note: 'Finnleo: Helo-engineered Finnish heater — gold standard for traditional Finnish sauna heat delivery. Almost Heaven: solid 3–6 kW heater options.' },
+    { name: 'Heater quality', winner: 'a', note: 'Finnleo: Helo-engineered Finnish heater — gold standard for traditional Finnish sauna heat delivery. Almost Heaven Salem: 6 kW Harvia electric heater (240 V, hard-wired).' },
     { name: 'Form factor', winner: 'tie', note: 'Finnleo: indoor cabin install. Almost Heaven: outdoor barrel install. Different jobs; pick on install context.' },
     { name: 'Build pedigree', winner: 'a', note: 'Finnleo: Finnish manufacturing pedigree, hemlock or nordic spruce. Almost Heaven: American western red cedar, multi-decade brand track record.' },
-    { name: 'Wood-burning option', winner: 'b', note: 'Almost Heaven: wood-burning heater available as configuration option. Finnleo: electric heater only on Hallmark indoor model.' },
+    { name: 'Warranty', winner: 'b', note: 'Almost Heaven Salem: limited lifetime warranty on manufacturing defects (heater: 1 year elements, 5 years other parts). Finnleo: standard manufacturer warranty. Neither Salem nor Hallmark offers a wood-burning heater.' },
     { name: 'EMF', winner: 'tie', note: 'Both traditional convection — no electronics in heat delivery, EMF non-issue.' },
     { name: 'Research evidence', winner: 'a', note: 'Finnleo represents the Finnish indoor sauna format that the published Finnish cardiovascular and dementia cohort studies were run on.' },
-    { name: 'Price', winner: 'b', note: 'Almost Heaven: $4,500–$8,000. Finnleo: $6,000–$12,000+. Almost Heaven marginally cheaper.' },
+    { name: 'Price', winner: 'b', note: 'Almost Heaven Salem: $4,485 list ($4,036.50 sale, October 2026) incl. heater. Finnleo: $6,000–$12,000+. Almost Heaven clearly cheaper.' },
   ],
   faq: [
     {
       q: 'Finnleo or Almost Heaven — which is better?',
-      a: 'Form factor decides. Finnleo for indoor Finnish-built sauna with Helo-engineered heater and the deepest research-evidence format. Almost Heaven for outdoor American red cedar barrel sauna with electric or wood-burning heater options.',
+      a: 'Form factor decides. Finnleo for indoor Finnish-built sauna with Helo-engineered heater and the deepest research-evidence format. Almost Heaven for a 2-person outdoor American red cedar barrel sauna with a 6 kW electric heater at a lower price.',
     },
     {
       q: 'Is Finnleo the original Finnish sauna brand?',
@@ -36,7 +36,7 @@ const finnleoVsAlmostHeaven: HeadToHead = {
     },
     {
       q: 'Can I get a wood-burning Finnleo?',
-      a: 'Not in the Hallmark indoor model — electric only. Almost Heaven offers wood-burning configurations that Finnleo does not on indoor models.',
+      a: 'Neither model reviewed here — the Hallmark is electric only, and the Almost Heaven Salem ships only with a 6 kW electric heater. Almost Heaven sells wood-burning heaters on some other barrel models, not the Salem.',
     },
     {
       q: 'Which has the better evidence base?',
@@ -53,11 +53,11 @@ If you have indoor install space and want premium Finnish manufacturing pedigree
 
 ## When is Almost Heaven Salem the right pick?
 
-If you have outdoor install space and want a traditional cedar barrel sauna with American-built construction — Almost Heaven is the right shape. The wood-burning heater option is unique and the price is marginally lower.`,
+If you have outdoor install space and want a traditional cedar barrel sauna with American-built construction — Almost Heaven is the right shape. It seats two, runs on a 6 kW electric heater (no wood-burning option on the Salem), carries a limited lifetime warranty on defects and costs clearly less — $4,485 list including the heater.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-01',
 }
 
 export default finnleoVsAlmostHeaven

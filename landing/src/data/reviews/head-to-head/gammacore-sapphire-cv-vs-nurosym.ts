@@ -17,13 +17,13 @@ const gammacoreVsNurosym: HeadToHead = {
   bestForB:
     'Choose Nurosym if you want clinical-grade auricular tVNS at home, with the deepest peer-reviewed evidence base of any consumer device, and you do not have an FDA-indication condition.',
   axes: [
-    { name: 'FDA clearance', winner: 'a', note: 'gammaCore Sapphire CV: FDA-cleared for migraine prevention and cluster-headache treatment. Nurosym: CE-marked as a Class IIa device in Europe, not FDA-cleared.' },
+    { name: 'FDA clearance', winner: 'a', note: 'gammaCore Sapphire CV: FDA-cleared (prescription) for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. Nurosym: CE-marked as a Class IIa device in Europe, not FDA-cleared.' },
     { name: 'Stimulation target', winner: 'a', note: 'gammaCore: cervical vagal trunk directly (most direct possible non-invasive target). Nurosym: auricular branch (the most-studied non-invasive target).' },
     { name: 'Trial evidence — within indication', winner: 'a', note: 'gammaCore: 30+ randomised trials for migraine/cluster headache, the regulatory reference. Nurosym hardware: 40+ broader-indication tVNS trials.' },
     { name: 'Trial evidence — outside indication', winner: 'b', note: 'For HRV, stress, inflammation, depression — Nurosym hardware has the deeper published literature. gammaCore is studied specifically for headache.' },
     { name: 'Consumer accessibility', winner: 'b', note: 'gammaCore: prescription-only in the US, gated by a clinician. Nurosym: direct-to-consumer, CE-marked.' },
     { name: 'Protocol variety', winner: 'b', note: 'gammaCore: fixed 2-minute sessions, clinician-calibrated dose, no programme variety. Nurosym: single user-titrated programme with disclosed parameters.' },
-    { name: 'Cost', winner: 'b', note: 'gammaCore: ~$600 device + refill cards, insurance coverage uneven. Nurosym: £599 (~$750) one-time, no refills. Roughly equal upfront; Nurosym wins on long-term ownership without refills.' },
+    { name: 'Cost', winner: 'b', note: 'gammaCore: ~$600 device + refill cards, insurance coverage uneven. Nurosym: €700 (~$820) one-time, no refills. Nurosym costs a little more upfront but wins on long-term ownership without refills.' },
     { name: 'Disclosed parameters', winner: 'tie', note: 'Both disclose stimulation parameters at clinical level. gammaCore’s 5 kHz burst is fixed; Nurosym’s 25 Hz pulse parameters are user-titratable within a documented range.' },
   ],
   faq: [
@@ -57,7 +57,7 @@ If you have a diagnosed migraine or cluster-headache condition and a clinician w
 If you want clinical-grade tVNS at home without going through a clinician — for HRV training, stress modulation, sleep-onset work, anxiety-related self-experimentation — Nurosym is the right shape. The Parasym hardware appears in dozens of peer-reviewed trials across exactly those indications; the parameters are disclosed; no prescription gate.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-01',
 }
 
 export default gammacoreVsNurosym

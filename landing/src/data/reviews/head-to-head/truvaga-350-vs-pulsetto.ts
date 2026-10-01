@@ -24,12 +24,12 @@ const truvagaVsPulsetto: HeadToHead = {
     { name: 'Form factor for daily use', winner: 'b', note: 'Pulsetto: lightweight collar — wear-and-go. Truvaga: handheld device pressed to the neck — active holding required for the full session.' },
     { name: 'Setup friction', winner: 'b', note: 'Pulsetto: collar + saline/gel pads (periodic replacement). Truvaga: handheld + conductivity gel applied per session. Pulsetto wins on continuous-wear convenience; Truvaga on session-by-session simplicity.' },
     { name: 'Session lifetime', winner: 'b', note: 'Pulsetto: unlimited sessions for the lifetime of the device. Truvaga 350: capped at 350 two-minute sessions before retirement.' },
-    { name: 'Price', winner: 'b', note: 'Pulsetto: $269. Truvaga 350: $499. Pulsetto is roughly half the price.' },
+    { name: 'Price', winner: 'b', note: 'Pulsetto: $269. Truvaga 350: $325 for 350 preloaded sessions (rechargeable Truvaga Plus $499). Pulsetto is about $56 cheaper and has no session cap.' },
   ],
   faq: [
     {
       q: 'Is Truvaga 350 the same as gammaCore?',
-      a: 'Same hardware platform, same 5 kHz burst waveform, same manufacturer (electroCore). gammaCore is the FDA-cleared prescription line for migraine and cluster headache; Truvaga 350 is the over-the-counter consumer line for general wellness. The wellness indication does not carry the FDA-cleared clinical evidence of gammaCore’s indication.',
+      a: 'Same hardware platform, same 5 kHz burst waveform, same manufacturer (electroCore). gammaCore is the FDA-cleared prescription line for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua; Truvaga 350 is the over-the-counter consumer line for general wellness. The wellness indication does not carry the FDA-cleared clinical evidence of gammaCore’s indication.',
     },
     {
       q: 'Does Pulsetto have FDA clearance?',
@@ -54,10 +54,10 @@ If you value the gammaCore lineage — the same manufacturing pedigree, the same
 
 ## When is Pulsetto the right pick?
 
-If you want a daily-use collar with four guided programmes, structured 4–20 minute sessions and no session lifetime cap, Pulsetto is the right shape. At $269 versus Truvaga’s $499 it is roughly half the price for broader programme variety. Most consumer users land here.`,
+If you want a daily-use collar with four guided programmes, structured 4–20 minute sessions and no session lifetime cap, Pulsetto is the right shape. At $269 versus $325 for the Truvaga 350 it is a little cheaper, with broader programme variety. Most consumer users land here.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-01',
 }
 
 export default truvagaVsPulsetto

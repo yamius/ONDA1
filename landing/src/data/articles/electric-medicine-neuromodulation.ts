@@ -95,7 +95,7 @@ Signal Quality: Stable.
 
 Neuromodulation devices for consumers exist in three regulatory tiers — FDA-cleared prescription, OTC clinical platform and CE-marked consumer.
 
-- [gammaCore Sapphire CV](/reviews/gammacore-sapphire-cv) — the only FDA-cleared non-invasive VNS device
+- [gammaCore Sapphire CV](/reviews/gammacore-sapphire-cv) — the only FDA-cleared non-invasive VNS device (prescription; migraine, cluster headache, paroxysmal hemicrania, hemicrania continua)
 - [Nurosym](/reviews/nurosym) — consumer auricular tVNS with 40+ peer-reviewed trials
 - [Truvaga 350](/reviews/truvaga-350) — gammaCore platform without the prescription gate
 

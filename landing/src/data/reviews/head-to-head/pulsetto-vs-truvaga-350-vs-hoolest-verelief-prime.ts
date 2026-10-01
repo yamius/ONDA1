@@ -27,7 +27,7 @@ const pulsettoVsTruvagaVsHoolest: HeadToHead = {
     { name: 'Protocol variety', winner: 'a', note: 'Pulsetto: four guided programmes plus custom mode. Truvaga: intensity-only adjustment within fixed 2-minute sessions. Hoolest: three intensity modes.' },
     { name: 'Session length', winner: 'a', note: 'Pulsetto: 4–20 minute sessions across modes. Truvaga: fixed 2 minutes. Hoolest: 3–5 minutes. Pulsetto fits more use cases.' },
     { name: 'Session lifetime', winner: 'a', note: 'Pulsetto and Hoolest: unlimited sessions for device lifetime. Truvaga 350: 350-session cap then retirement.' },
-    { name: 'Price', winner: 'a', note: 'Pulsetto: $269. Hoolest: $279. Truvaga: $499 + refill model. Pulsetto cheapest.' },
+    { name: 'Price', winner: 'a', note: 'Pulsetto: $269. Hoolest: $279. Truvaga 350: $325 for 350 preloaded sessions (Truvaga Plus $499). Pulsetto cheapest.' },
   ],
   faq: [
     {
@@ -36,7 +36,7 @@ const pulsettoVsTruvagaVsHoolest: HeadToHead = {
     },
     {
       q: 'Are these all FDA-cleared?',
-      a: 'None of them in the consumer indication. The only FDA-cleared non-invasive VNS device is gammaCore Sapphire CV (prescription-only, migraine and cluster headache). Truvaga shares hardware with gammaCore but is sold OTC as a wellness device, not clinically cleared. Pulsetto and Hoolest are also OTC wellness.',
+      a: 'None of them in the consumer indication. The only FDA-cleared non-invasive VNS device is gammaCore Sapphire CV (prescription-only; cleared for migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua). Truvaga shares hardware with gammaCore but is sold OTC as a wellness device, not clinically cleared. Pulsetto and Hoolest are also OTC wellness.',
     },
     {
       q: 'Which has the strongest acute effect?',
@@ -69,7 +69,7 @@ If you want short, intense parasympathetic priming around training and sleep —
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-01',
 }
 
 export default pulsettoVsTruvagaVsHoolest

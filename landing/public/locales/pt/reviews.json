@@ -256,8 +256,64 @@
       "productType": "Faixa de EEG de consumo (meditação)"
     },
     "neurosity-crown": {
-      "verdict": "O melhor headset de EEG para desenvolvedores e biohackers — SDK aberto, dados brutos, streaming de música para foco. Preço premium.",
-      "productType": "Headset de EEG voltado a desenvolvedores (foco, flow)"
+      "verdict": "O melhor headset de EEG para desenvolvedores e biohackers: oito canais, SDK aberto, dados brutos e sem assinatura. Por $1,499 e cerca de três horas de bateria, é a compra errada para quem medita de vez em quando.",
+      "summary": "O Neurosity Crown é o headset feito para quem quer fazer algo com os dados, não apenas vê-los resumidos. Oito canais de EEG secos amostrados a 256 Hz em regiões frontais, centrais, parietais e occipitais, processamento no próprio dispositivo com criptografia por hardware, o SDK mais aberto da categoria de consumo (JavaScript e Python, além de BrainFlow, LSL, OSC e um servidor MCP para assistentes de IA), acesso ao sinal bruto e música adaptativa para foco. Hardware premium a preço premium: a escolha certa para engenheiros, pesquisadores e biohackers — e o formato errado para quem só medita casualmente.",
+      "description": "Neurosity Crown: análise 2026. O melhor headset de EEG para desenvolvedores: 8 canais a 256 Hz, SDK aberto, sem assinatura. $1,499; demais para meditar.",
+      "bestFor": "Ideal para desenvolvedores, pesquisadores e biohackers que querem dados brutos de EEG e uma plataforma programável.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir das páginas oficiais de produto e de comparação da Neurosity (consultadas em 2026-10-01), da documentação do SDK da Neurosity e de pesquisas publicadas sobre neurofeedback. Não testado na prática pela ONDA.",
+      "productType": "Headset de EEG voltado a desenvolvedores (foco, flow)",
+      "pros": [
+        "O SDK mais aberto do mercado de EEG de consumo — dados brutos via JavaScript ou Python, além de BrainFlow, LSL e OSC",
+        "Oito canais de EEG secos a 256 Hz — a maior cobertura cortical desta lista",
+        "Processamento no dispositivo com criptografia por hardware; servidor MCP para assistentes de IA",
+        "Sem assinatura obrigatória"
+      ],
+      "cons": [
+        "Preço premium — três vezes o custo do Muse S Athena",
+        "Cerca de três horas de bateria por carga",
+        "Sem biblioteca ampla de meditação e sem monitoramento do sono",
+        "Coroa rígida — não serve para uso noturno; a experiência pressupõe um usuário técnico"
+      ],
+      "scoreNotes": {
+        "signal-quality": "Oito canais de EEG secos a 256 Hz (CP3, C3, F5, PO3, PO4, F6, C4, CP4) — a maior cobertura cortical da categoria de consumo. O sinal se mantém bem em sessões de foco sentado.",
+        "training-content": "Menos conteúdo guiado que o Muse; o produto aposta em música adaptativa para foco e em apps criados pelos usuários. Não é uma biblioteca de meditação.",
+        "insights": "Pontuações de foco e calma ao vivo, além da divisão por bandas de EEG. Ótima visualização em tempo real; resumos de sessão menos narrativos que os do Muse.",
+        "comfort": "Uma coroa rígida de 228 g — confortável em sessões de foco, não projetada para uso noturno nem em movimento; cerca de três horas por carga.",
+        "app-ux": "Apps complementares bem acabados, mas a experiência pressupõe um usuário mais técnico que o do Muse.",
+        "open-data": "O SDK mais aberto desta categoria — SDKs de JavaScript e Python, além de BrainFlow, LSL, OSC e MCP; EEG bruto a 256 Hz; sem assinatura para os dados. Feito primeiro para desenvolvedores.",
+        "value": "$1,499 em pagamento único, sem assinatura obrigatória. Preço premium — três vezes o custo do Muse S Athena."
+      },
+      "content": "## Nosso veredito em resumo\n\nO Neurosity Crown é o melhor headset de EEG de consumo se você quer trabalhar com os dados do seu próprio cérebro. Tem oito canais, acesso bruto a 256 Hz e um SDK aberto, sem assinatura. Por $1,499 e cerca de três horas por carga, não é a compra certa se você só quer meditação guiada — um [Muse S Athena](/reviews/muse-s-athena) faz isso melhor por um terço do preço.\n\n## O que o Neurosity Crown mede?\n\nO EEG (eletroencefalografia) registra sinais elétricos minúsculos do cérebro por sensores no couro cabeludo. O Crown tem **oito eletrodos secos** em CP3, C3, F5, PO3, PO4, F6, C4 e CP4. Isso cobre a frente, o centro, o topo e a parte de trás da cabeça dos dois lados. As faixas Muse usam quatro sensores, principalmente na testa e atrás das orelhas.\n\nO Crown amostra cada canal **256 vezes por segundo**. Um chip embutido limpa o sinal (por exemplo, remove o ruído da rede elétrica) e o criptografa no próprio dispositivo. A partir disso, ele estima pontuações de **foco** e **calma** e mostra as principais bandas de ondas cerebrais, como as [alfa](/articles/neural-bridge-alpha-flow-gateway).\n\nPara desenvolvedores, o ponto-chave é o acesso. A Neurosity oferece SDKs oficiais de **JavaScript e Python**, além de suporte a BrainFlow, LSL e OSC — ferramentas comuns em laboratórios de pesquisa. Também inclui um servidor MCP, para que assistentes de IA possam ler seus dados ao vivo se você permitir. O headset pesa 228 g.\n\n## O que dizem as evidências sobre EEG de consumo e neurofeedback?\n\n**Medição.** Headsets de eletrodos secos têm mais ruído que um EEG de laboratório com gel. Piscadas, movimento da mandíbula e caminhar adicionam artefatos. Em sessões de foco sentado, os oito canais do Crown fornecem dados úteis, mas não é um EEG clínico.\n\n**Treino.** Neurofeedback significa ver (ou ouvir) sua atividade cerebral e aprender a alterá-la. As evidências são mistas. Uma meta-análise de 2016 de ensaios randomizados em TDAH encontrou benefícios quando os pais avaliavam os filhos, mas efeitos bem menores quando os avaliadores não sabiam qual tratamento havia sido aplicado (Cortese et al., 2016). Isso sugere que parte do efeito vem da expectativa. Em adultos saudáveis, os estudos sobre foco e produtividade são pequenos e curtos.\n\n**O que isso significa para você.** O Crown é uma boa ferramenta para ver como sua atenção muda ao longo do dia, ou com café, sono ou [exercícios de respiração](/articles/breathing-for-focus-and-attention). Não espere que ele aumente seu foco sozinho.\n\n## O Neurosity Crown é um dispositivo médico?\n\nNão. É um dispositivo de consumo e para desenvolvedores, não um dispositivo médico liberado pela FDA. Não pode diagnosticar TDAH, epilepsia, distúrbios do sono nem qualquer outra condição. Não há riscos de segurança relevantes: ele só lê sinais e não envia corrente para a cabeça. Pare de usar se os sensores irritarem a pele.\n\n## Quanto custa no total?\n\n**$1,499, pagamento único.** Inclui o SDK, os apps e atualizações de software vitalícias. Não há assinatura para acessar os dados nem o SDK.\n\n## Neurosity Crown vs alternativas\n\n| Headset | Preço | Sensores | Ideal para |\n|---|---|---|---|\n| **Neurosity Crown** | $1,499 | 8 canais de EEG secos | desenvolvedores, dados brutos, foco |\n| [Muse S Athena](/reviews/muse-s-athena) | $499 | EEG + fNIRS, faixa macia | meditação, sono |\n| [Muse 2](/reviews/muse-2) | $249 | 4 sensores de EEG | meditar gastando pouco |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 | 5 canais de EEG | ferramentas de pesquisa (dados brutos exigem Pro, ~$99/ano) |\n\nComparações diretas: [Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2) e [Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown).\n\n## Quais são as desvantagens do Neurosity Crown?\n\nEle fica atrás em quase tudo em que o Muse se destaca. Não há biblioteca ampla de meditação guiada, nem monitoramento do sono, nem faixa macia para usar à noite. A bateria dura cerca de três horas, então é um dispositivo para sessões, não para o dia todo. E o preço é cerca de três vezes o do Muse S Athena.\n\n## Quem deve comprar o Neurosity Crown — e quem deve pular?\n\n**Compre** se você é desenvolvedor, pesquisador ou biohacker mão na massa e quer EEG bruto em uma plataforma programável sem assinatura.\n\n**Pule** se você quer um coach de meditação bem acabado ([Muse S Athena](/reviews/muse-s-athena)), um primeiro headset barato ([Muse 2](/reviews/muse-2)) ou neurofeedback clínico, que exige um profissional habilitado. Veja os [melhores headsets de EEG de 2026](/reviews/compare/best-eeg-headsets-2026) para conhecer todas as opções.\n\n---\n\n## Leituras complementares\n\nA neurociência que esses headsets refletem — e os estados cognitivos que o sinal de EEG revela.\n\n- [Calibração do CCA: protocolo de controle cognitivo](/articles/acc-calibration-protocol-cognitive-control) — como os circuitos de controle pré-frontal aparecem no EEG\n- [Adaptação e fracionamento de faixa](/articles/adaptation-hack-range-fractionation) — treinar estados cognitivos por variação deliberada\n- [Ondas cerebrais alfa: calma, criatividade e flow](/articles/neural-bridge-alpha-flow-gateway) — o que o ritmo alfa faz, e o que headsets, apps e músicas “alfa” podem e não podem mudar\n- [Respiração para foco e atenção](/articles/breathing-for-focus-and-attention) — um experimento simples para testar com um headset de EEG\n",
+      "faq": [
+        {
+          "q": "O Neurosity Crown vale a pena?",
+          "a": "Vale a pena para desenvolvedores, pesquisadores e biohackers que querem dados brutos de EEG. Tem oito canais a 256 Hz, o SDK mais aberto do EEG de consumo (JavaScript e Python, além de BrainFlow, LSL e OSC) e não exige assinatura. Quem busca meditação guiada vai achá-lo limitado e caro."
+        },
+        {
+          "q": "Quanto custa o Neurosity Crown?",
+          "a": "O Neurosity Crown custa $1,499 em pagamento único, incluindo o SDK, os apps complementares e atualizações de software vitalícias, sem assinatura para o SDK ou os dados brutos. Isso é cerca de três vezes o preço do Muse S Athena."
+        },
+        {
+          "q": "Quais são as desvantagens do Neurosity Crown?",
+          "a": "Custa cerca de três vezes mais que o Muse S Athena, a bateria dura cerca de três horas, não tem biblioteca ampla de meditação nem monitoramento do sono, a coroa rígida não serve para uso noturno e a experiência pressupõe um usuário mais técnico que as alternativas de meditação."
+        },
+        {
+          "q": "Neurosity Crown ou Muse S Athena: qual é melhor?",
+          "a": "Escolha o Neurosity Crown para dados brutos, SDK aberto e a maior cobertura com oito canais. Escolha o Muse S Athena para conteúdo guiado de treino cerebral, monitoramento do sono e conforto à noite, por cerca de um terço do preço do Crown."
+        },
+        {
+          "q": "O Neurosity Crown é um dispositivo médico?",
+          "a": "Não. O Crown é um headset de EEG de consumo e para desenvolvedores, não um dispositivo médico liberado pela FDA. Não pode diagnosticar TDAH, epilepsia nem distúrbios do sono. Ele só lê sinais cerebrais e não envia corrente, então não há riscos de segurança relevantes."
+        },
+        {
+          "q": "Neurofeedback com headset melhora mesmo o foco?",
+          "a": "As evidências são mistas. Uma meta-análise de 2016 em TDAH encontrou benefícios principalmente quando os avaliadores sabiam quem era tratado, o que sugere papel da expectativa. Estudos em adultos saudáveis são pequenos. O headset serve melhor para ver o que afeta seu foco do que como solução garantida."
+        },
+        {
+          "q": "Neurosity Crown ou Emotiv Insight 2: qual é melhor para desenvolvedores?",
+          "a": "O Crown, para a maioria. Tem oito canais contra cinco e entrega dados brutos sem assinatura, enquanto a Emotiv restringe o acesso aos dados brutos a um plano Pro de cerca de $99 por ano. O Emotiv custa menos na compra ($499) e se encaixa em algumas ferramentas acadêmicas."
+        }
+      ]
     },
     "emotiv-insight-2": {
       "verdict": "O híbrido pesquisa-consumo — cinco canais e ferramentas acadêmicas de verdade, com dados brutos atrás de uma assinatura.",
@@ -676,8 +732,59 @@
       ]
     },
     "hypervolt-3-pro": {
-      "verdict": "A topo de linha de 2026 e um upgrade claro sobre a Hypervolt 2 Pro — mais força de travamento (70 lbs), mais silenciosa (51 dB), bateria mais longa (4 horas) e acessórios maiores, por um preço menor de $349. A amplitude ainda fica atrás da Theragun PRO Plus, mas em custo-benefício é a pistola premium a ser batida.",
-      "productType": "Pistola de massagem de percussão premium com ecossistema Hyperice"
+      "verdict": "O topo de linha de 2026 e um upgrade claro em relação à Hypervolt 2 Pro: mais força de bloqueio (70 lbs), mais silenciosa (51 dB), bateria maior (4 horas) e ponteiras maiores, por apenas $349. A amplitude ainda fica atrás da Theragun PRO Plus, mas em custo-benefício é a pistola premium a ser batida.",
+      "summary": "A Hyperice Hypervolt 3 Pro é o topo da linha Hypervolt 3 lançada em março de 2026 (ao lado da Go 3 de $149 e da Hypervolt 3 de $249). Em relação à Hypervolt 2 Pro, que sai de linha, ela eleva a força de bloqueio para cerca de 70 lbs (antes 60, segundo a cobertura do lançamento), funciona mais silenciosa a ~51 dB graças ao motor QuietGlide da Hyperice, chega a até quatro horas por carga, adiciona um seletor digital de seis velocidades, um sensor de pressão e uma ponteira aquecida, e traz ponteiras redesenhadas 33% maiores — tudo isso por $349, $50 abaixo do preço de lançamento da Hypervolt 2 Pro. Mantém a conexão completa com o app da Hyperice. O único ponto em que ainda perde é a amplitude: os 16 mm da Theragun PRO Plus continuam sendo o golpe mais profundo.",
+      "description": "Hypervolt 3 Pro: análise 2026. A pistola de massagem premium com melhor custo-benefício: 51 dB, bateria de 4 h, ponteira aquecida, $349.",
+      "bestFor": "Ideal para quem procura uma pistola de massagem premium e quer a Hyperice mais forte, silenciosa e duradoura até hoje por um preço menor, sem precisar especificamente da amplitude mais profunda da Theragun.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da página oficial do produto da Hyperice (consultada em 2026-10-01), da cobertura do lançamento da Hypervolt 3 em março de 2026 e de pesquisas publicadas sobre massagem. Não testada na prática pela ONDA.",
+      "productType": "Pistola de massagem por percussão premium com ecossistema Hyperice",
+      "pros": [
+        "Até ~70 lbs de força de bloqueio — supera as 60 da Hypervolt 2 Pro",
+        "Motor QuietGlide muito silencioso (~51 dB) e até 4 horas de bateria",
+        "Cinco ponteiras, incluindo uma aquecida; ponteiras redesenhadas 33% maiores",
+        "Preço menor ($349) que o da Hypervolt 2 Pro; elegível para FSA/HSA"
+      ],
+      "cons": [
+        "Amplitude de ~14 mm ainda fica atrás dos 16 mm da Theragun PRO Plus",
+        "Cabo de pegada única, menos versátil que o multipegada da Theragun",
+        "Força de bloqueio e amplitude não constam da página oficial do produto",
+        "Sem display"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "Até ~70 lbs de força de bloqueio segundo a cobertura do lançamento — um avanço sobre as 60 da Hypervolt 2 Pro e entre as mais fortes disponíveis. A amplitude continua na faixa de ~14 mm, ainda abaixo do golpe profundo de 16 mm da Theragun PRO Plus.",
+        "build-attachments": "Acabamento premium refinado; cinco ponteiras, incluindo uma aquecida, redesenhadas 33% maiores para cobrir melhor a superfície. Ecossistema Hyperice completo e pedigree NBA/NFL.",
+        "battery-noise": "~51 dB com o novo motor QuietGlide — muito silenciosa — e até quatro horas de bateria por carga, contra ~3 na Hypervolt 2 Pro. A melhor da categoria nos dois quesitos.",
+        "app-smart-features": "Seletor digital de seis velocidades (1.500–2.500 percussões por minuto), sensor de pressão e Bluetooth com o app da Hyperice, com rotinas guiadas e integração com Apple Health, Whoop, Strava e Garmin.",
+        "ergonomics-portability": "2,5 lbs com o conhecido cabo de pegada única — confortável e fácil de controlar, embora menos versátil que o triângulo multipegada da Theragun.",
+        "value": "$349 — $50 abaixo da Hypervolt 2 Pro e $250 abaixo da Theragun PRO Plus, superando ainda a 2 Pro em força de bloqueio, ruído e bateria. O melhor custo-benefício da faixa premium em 2026."
+      },
+      "content": "## Nosso veredito em resumo\n\nA Hypervolt 3 Pro é a pistola de massagem premium com melhor custo-benefício de 2026. Por $349 você leva um motor silencioso de 51 dB, até quatro horas de bateria, seis velocidades, um sensor de pressão e cinco ponteiras, uma delas aquecida. Pague mais pela [Theragun PRO Plus](/reviews/theragun-pro-plus) só se quiser especificamente o golpe mais profundo de 16 mm e o cabo multipegada.\n\n## O que a Hypervolt 3 Pro oferece?\n\nA Hyperice lançou a linha Hypervolt 3 em março de 2026: a Go 3 ($149), a Hypervolt 3 ($249) e este modelo Pro a $349 — $50 abaixo da [Hypervolt 2 Pro](/reviews/hypervolt-2-pro) no lançamento. A página oficial do produto informa:\n\n- **6 velocidades** de 1.500 a 2.500 percussões por minuto, em seletor digital\n- **51 dB** de ruído com o motor QuietGlide\n- **Até 4 horas** de bateria\n- **2,5 lb** de peso\n- **5 ponteiras**, incluindo uma aquecida\n- **Bluetooth** com o app da Hyperice, com integração a Apple Health, Whoop, Strava e Garmin\n- **Elegível para FSA/HSA** nos EUA\n\nA cobertura do lançamento cita cerca de 70 lbs de força de bloqueio (antes 60) e ponteiras 33% maiores. A Hyperice não informa força de bloqueio nem amplitude na página do produto, então trate esses números como afirmações de lançamento. A amplitude continua em torno de 14 mm.\n\n## Como funciona uma pistola de massagem — e o que dizem as evidências?\n\nUma pistola de massagem bate no músculo muitas vezes por segundo. Isso se chama terapia de percussão — uma forma rápida de automassagem.\n\n**Dor muscular.** As melhores evidências são sobre massagem em geral. Uma meta-análise de 2017 concluiu que a massagem após exercício intenso reduziu a dor muscular de início tardio (DOMS) de 24 a 72 horas depois (Guo et al., 2017). As pistolas de massagem provavelmente funcionam de modo parecido, mas têm bem menos ensaios próprios.\n\n**Amplitude de movimento.** Estudos pequenos mostram que alguns minutos de percussão podem aumentar a amplitude de movimento por pouco tempo, geralmente sem enfraquecer o músculo. O efeito é parecido com o do alongamento ou do rolo de liberação miofascial, e passa.\n\n**O que ela não faz.** Não há boas evidências de que uma pistola de massagem acelere a recuperação muscular, “elimine” o ácido lático ou melhore o desempenho a longo prazo. Pense nela como uma ferramenta de conforto e aquecimento, não como tratamento. Sono e carga de treino importam muito mais — e a sua [recuperação da frequência cardíaca](/articles/heart-rate-recovery-fitness-marker) diz mais sobre o seu condicionamento do que o quanto você se sente dolorido.\n\n## Quanto custa no total?\n\n$349, pagamento único. Não há assinatura; o app da Hyperice é gratuito. Fora a troca de ponteiras ao longo dos anos, não há custos recorrentes.\n\n## Hypervolt 3 Pro vs alternativas\n\n| Pistola de massagem | Preço | Força de bloqueio / amplitude | Ideal para |\n|---|---|---|---|\n| **Hypervolt 3 Pro** | $349 | ~70 lbs / ~14 mm | potência silenciosa, melhor custo-benefício |\n| [Theragun PRO Plus](/reviews/theragun-pro-plus) | $599 | 60 lbs / 16 mm | golpe mais profundo, extras |\n| [Theragun Elite](/reviews/theragun-elite) | $399 | 40 lbs / 16 mm | Therabody por menos |\n| [Achedaway Pro](/reviews/achedaway-pro) | $349 | 80 lbs / 16 mm | máxima força bruta |\n\nComparações diretas: [vs Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus), [vs Theragun Elite](/reviews/vs/hypervolt-3-pro-vs-theragun-elite), [vs Achedaway Pro](/reviews/vs/hypervolt-3-pro-vs-achedaway-pro) e [vs Hypervolt 2 Pro](/reviews/vs/hypervolt-3-pro-vs-hypervolt-2-pro).\n\n## Quais são as desvantagens da Hypervolt 3 Pro?\n\nA principal é a amplitude. Com cerca de 14 mm, o golpe é mais raso que os 16 mm da Theragun, então músculos grandes como os glúteos recebem menos profundidade. O cabo de pegada única é mais difícil de usar nas próprias costas do que a pegada triangular da Theragun. Não há display. E os números de potência em destaque (força de bloqueio, ponteiras maiores) vêm da cobertura do lançamento, não da ficha técnica oficial.\n\n## Pistola de massagem é segura?\n\nPara músculos saudáveis, sim, se usada com bom senso. Fique sobre o músculo e evite:\n\n- **Ossos e articulações**, como a coluna, a patela e a canela\n- **A frente e as laterais do pescoço**, onde artérias e nervos ficam perto da pele\n- **Suspeita de trombose venosa profunda (TVP)** — nunca massageie uma panturrilha inchada, quente e dolorida; procure um médico\n- **Lesões recentes**, hematomas, fraturas, feridas abertas ou varizes\n- Áreas com sensibilidade reduzida (por exemplo, neuropatia diabética)\n\nConsulte seu médico antes se você toma anticoagulantes, tem distúrbio de coagulação ou está grávida. Comece em velocidade baixa por 1–2 minutos por músculo e teste a ponteira aquecida com cuidado em pele sensível.\n\n## Quem deve comprar a Hypervolt 3 Pro — e quem deve pular?\n\n**Compre** se você quer uma pistola forte, silenciosa e duradoura para aquecimento e dor muscular pós-treino por um preço justo.\n\n**Pule** se você quer o golpe mais profundo ([Theragun PRO Plus](/reviews/theragun-pro-plus)), a maior força bruta pelo preço ([Achedaway Pro](/reviews/achedaway-pro)) ou uma pistola barata para viagem — veja as [melhores pistolas de massagem de 2026](/reviews/compare/best-massage-guns-2026).\n\n---\n\n## Leituras complementares\n\n- [Recuperação da frequência cardíaca como marcador de condicionamento](/articles/heart-rate-recovery-fitness-marker)\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "Hypervolt 3 Pro ou Hypervolt 2 Pro: o que mudou?",
+          "a": "A Hypervolt 3 Pro é um upgrade claro. A força de bloqueio sobe para cerca de 70 lbs (antes 60), ela é mais silenciosa (cerca de 51 dB), a bateria chega a quatro horas e as ponteiras são 33% maiores, com uma aquecida incluída. Também ganha seletor de seis velocidades e sensor de pressão, e custa $50 a menos."
+        },
+        {
+          "q": "Quanto custa a Hypervolt 3 Pro?",
+          "a": "A Hypervolt 3 Pro custa $349 e é elegível para FSA/HSA nos EUA. Ela lidera a linha Hypervolt 3 lançada em março de 2026, que também inclui a Go 3 por $149 e a Hypervolt 3 por $249. Fica $50 abaixo do preço de lançamento da Hypervolt 2 Pro."
+        },
+        {
+          "q": "Hypervolt 3 Pro ou Theragun PRO Plus: qual comprar?",
+          "a": "Em custo-benefício, a Hypervolt 3 Pro é a pistola premium a ser batida: forte, silenciosa e duradoura por $349, contra $599. A Theragun PRO Plus ainda oferece amplitude maior, 16 mm contra cerca de 14 mm, e um cabo multipegada mais versátil. Escolha a Theragun só se precisar dessa profundidade."
+        },
+        {
+          "q": "Pistola de massagem funciona mesmo para dor muscular?",
+          "a": "Em parte. Uma meta-análise de 2017 concluiu que a massagem reduz a dor muscular de um a três dias após exercício intenso, e as pistolas de massagem provavelmente funcionam de modo parecido. Estudos pequenos também mostram ganho de curto prazo na amplitude de movimento. Não há boas evidências de que acelerem a recuperação muscular."
+        },
+        {
+          "q": "Onde não se deve usar a Hypervolt?",
+          "a": "Evite ossos e articulações, a frente e as laterais do pescoço, lesões recentes, hematomas e varizes. Nunca use em uma panturrilha inchada, quente e dolorida, que pode ser um coágulo (TVP). Consulte um médico antes se você toma anticoagulantes, tem distúrbio de coagulação ou está grávida."
+        },
+        {
+          "q": "A Hypervolt 3 Pro vale a pena?",
+          "a": "Sim, para a maioria de quem quer uma pistola premium. Por $349 ela é silenciosa (51 dB), dura até quatro horas, tem seis velocidades e ponteira aquecida, e custa $250 menos que a Theragun PRO Plus. Escolha a Theragun só se precisar do golpe mais profundo de 16 mm."
+        }
+      ]
     },
     "theragun-pro-plus": {
       "verdict": "A referência em terapia de percussão — maior força de travamento, amplitude mais profunda, app refinado. O preço premium reflete as especificações máximas e o ecossistema Therabody.",
@@ -869,7 +976,7 @@
         },
         {
           "q": "Para quem a Clearlight Sanctuary 2 é mais indicada?",
-          "a": "A Sanctuary 2 é mais indicada para quem quer infravermelho de espectro completo no nível da Sunlighten, com o respaldo da marca Jacuzzi e garantia vitalícia, em uma cabine compacta para 2 pessoas. Atende quem valoriza a construção e o design de baixo EMF/ELF mais do que o controle programável por comprimento de onda. A ONDA dá nota geral 8,3/10."
+          "a": "A Sanctuary 2 é mais indicada para quem quer infravermelho de espectro completo no nível da Sunlighten, com o respaldo da marca Jacuzzi e garantia vitalícia, em uma cabine compacta para 2 pessoas. Atende quem valoriza a construção e o design de baixo EMF/ELF mais do que o controle programável por comprimento de onda. A ONDA dá nota geral 7,8/10."
         },
         {
           "q": "Qual o tamanho da Clearlight Sanctuary 2?",
@@ -892,6 +999,160 @@
     "mito-red-mitopro-1500": {
       "verdict": "O painel grande favorito dos biohackers — agora com seis comprimentos de onda e registrado na FDA como Classe II na versão 1500X, e $400 mais barato que o Joovv Solo 3.0.",
       "productType": "Dispositivo de painel grande de terapia LED vermelha + NIR"
+    },
+    "magnawave-mini": {
+      "verdict": "PEMF de bobina de alta intensidade com histórico real no meio equestre e esportivo — mas a MagnaWave não oferece mais um “Mini”, e sua menor máquina atual, a Semi 10, custa a partir de $8,360. Para a maioria das pessoas, é dinheiro demais para evidências tão fracas.",
+      "summary": "A MagnaWave fabrica máquinas de PEMF (campos eletromagnéticos pulsados) de alta intensidade que acionam uma bobina em laço ou em pá segurada na mão. A marca é mais conhecida no cuidado de cavalos e animais. Sua unidade compacta de entrada — antes vendida como “Mini” — hoje é a Semi 10: uma máquina digital de 9,4 lb com uma saída, pulsos de 0,7–20 Hz e garantia de 10 anos, com preços de $8,360 (kit inicial) a $13,339. A MagnaWave declara que suas máquinas não se destinam a diagnosticar, tratar, curar ou prevenir doenças em animais; sobre sua marca doméstica separada, a AuraWell, a empresa diz que é o primeiro dispositivo de PEMF de alta potência de venda livre liberado pela FDA. Fica entre os tapetes de consumo e os sistemas completos de clínica — a preço de sistema de clínica.",
+      "description": "MagnaWave Mini: análise 2026. O “Mini” não existe mais; a compacta Semi 10 custa a partir de $8,360, é feita para animais e tem pouca evidência em humanos.",
+      "bestFor": "Ideal para profissionais do cuidado equino e animal, e para atletas ou clínicas que querem PEMF de bobina portátil de alta intensidade e conseguem justificar preços profissionais.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir das páginas oficiais das máquinas MagnaWave e da Semi 10 (consultadas em 2026-10-01) e de revisões publicadas sobre PEMF. Não testada na prática pela ONDA.",
+      "productType": "Dispositivo de PEMF compacto de bobina de alta intensidade (modelo de entrada atual: Semi 10)",
+      "pros": [
+        "Saída de bobina de alta intensidade em uma unidade com maleta",
+        "Décadas de histórico em PEMF equestre e esportivo",
+        "Garantia de 10 anos; teste de 30 dias e opções de aluguel",
+        "Em conformidade com a FEI para uso em competições equestres"
+      ],
+      "cons": [
+        "Não há “Mini” na linha atual — a menor máquina custa a partir de $8,360",
+        "Vendida principalmente para animais; poucos dados publicados de resultados em humanos",
+        "Só bobina — sem cobertura de corpo inteiro como um tapete",
+        "Controles de uso profissional, sem app de consumo"
+      ],
+      "scoreNotes": {
+        "field-strength": "Saída de bobina em laço de alta intensidade projetada para protocolos clínicos e equestres — muito acima dos tapetes de consumo. A Semi 10 fica no nível de potência 5 de 10 na própria linha da MagnaWave.",
+        "waveform-evidence": "O PEMF tem evidência modesta para dor musculoesquelética (revisões sistemáticas). A MagnaWave não publicou dados próprios de resultados em humanos; boa parte do uso é equestre.",
+        "build": "Construção profissional robusta em maleta; garantia de 10 anos na Semi 10. Décadas de histórico da MagnaWave em PEMF equestre e esportivo.",
+        "programmability": "Intensidade de 1 a 10 em meios passos, timer de 1–60 minutos, faixa de pulsos de 0,7–20 Hz e um ajuste Schumann. Controles de uso profissional, sem app.",
+        "form-factor": "Unidade portátil de 9,4 lb com aplicadores em laço ou em pá. Tratamento localizado, não de corpo inteiro. Dá para transportar, mas não cabe no bolso.",
+        "value": "A partir de $8,360 (kit inicial da Semi 10) — quase o dobro dos $4,200 que informávamos antes para o Mini, e perto do preço da Pulse Centers XL Pro. O aluguel e um teste de 30 dias por $700 reduzem o risco de entrada."
+      },
+      "content": "## Nosso veredito em resumo\n\nA MagnaWave faz máquinas de PEMF de bobina potentes e bem construídas, com longo histórico no cuidado de cavalos. Mas o “Mini” não está mais na lista de máquinas da MagnaWave. O menor modelo atual, a **Semi 10**, custa **a partir de $8,360**. Por esse preço, e com pouca evidência em humanos, a maioria das pessoas deveria escolher um tapete mais barato ou uma sessão em clínica.\n\n> **Atualização de modelo (outubro de 2026):** a linha oficial da MagnaWave não inclui mais um modelo chamado “Mini”. A máquina compacta de entrada é a Semi 10 (a partir de $8,360). As demais máquinas chegam a $39,660 (M40). Atualizamos o preço e a nota de custo-benefício desta análise.\n\n## O que é a MagnaWave — e como funciona?\n\nPEMF significa terapia por campos eletromagnéticos pulsados. Uma máquina envia pulsos curtos de corrente por uma bobina. A bobina cria um campo magnético variável, que atravessa a pele e a roupa e induz pequenas correntes elétricas no tecido abaixo.\n\nAs máquinas MagnaWave são dispositivos de “alta intensidade”. Elas acionam uma bobina em laço ou em pá, segurada na mão, que você coloca sobre uma área, como um joelho, as costas ou o ombro de um cavalo. Tapetes de consumo como o [Bemer](/reviews/bemer-classic-evo) ou o [Healthy Wave](/reviews/healthy-wave-multi-wave) usam campos muito mais fracos no corpo inteiro.\n\nA **Semi 10** é a máquina digital compacta da MagnaWave:\n\n- **Peso:** 9,4 lb, em maleta fechada de cerca de 12,5 × 10 × 6 polegadas\n- **Saída:** uma bobina, pulsos de 0,7–20 Hz, intensidade de 1 a 10 em meios passos\n- **Timer:** 1–60 minutos, além de um ajuste Schumann\n- **Garantia:** 10 anos\n- **Uso previsto (segundo a MagnaWave):** pequenos animais de companhia, animais de exposição e uso equestre leve\n\n## O que dizem as evidências sobre PEMF?\n\n**Para dor.** Uma revisão sistemática de 2020 concluiu que o PEMF pode reduzir a dor musculoesquelética, especialmente na osteoartrite de joelho, mas os ensaios usaram dispositivos e ajustes muito diferentes, e a qualidade foi variável (Paolucci et al., 2020). Não há prova de que a forma de onda de uma marca funcione melhor que a de outra.\n\n**Para consolidação óssea.** Alguns estimuladores ósseos de PEMF são aprovados pela FDA para fraturas que não consolidam. São dispositivos médicos específicos, com dados próprios. Essa aprovação não se estende às máquinas de PEMF de bem-estar.\n\n**Sobre a própria MagnaWave.** Não encontramos ensaios em humanos publicados e revisados por pares com máquinas MagnaWave. A maior parte da reputação da marca vem do uso equestre e de relatos de profissionais. É experiência útil, mas não é evidência controlada.\n\n## A MagnaWave é aprovada pela FDA?\n\nNão. **Nenhuma máquina MagnaWave é “aprovada pela FDA”.** Sobre suas máquinas profissionais, a MagnaWave declara que não se destinam a diagnosticar, tratar, curar ou prevenir doenças em animais. Sobre sua marca doméstica **AuraWell**, a empresa diz que é o primeiro dispositivo de PEMF de alta potência de venda livre liberado pela FDA. “Liberado” (510(k)) significa que a FDA o considerou semelhante a um dispositivo já no mercado — não é aprovação e cobre apenas um uso restrito. Não conseguimos confirmar de forma independente a indicação exata liberada, então confira a rotulagem antes de comprar.\n\n## PEMF é seguro?\n\nNos ajustes normais, efeitos colaterais são incomuns, mas bobinas de alta intensidade são potentes. **Não** use PEMF se você tem:\n\n- **Marca-passo, desfibrilador ou outro implante ativo** (por exemplo, implante coclear, bomba de insulina ou neuroestimulador)\n- **Gravidez**\n- **Epilepsia** ou histórico de convulsões\n\nEvite também a bobina sobre implantes metálicos, a menos que seu médico concorde, e sobre um tumor ou sangramento ativo. Algumas pessoas sentem formigamento, contrações musculares ou cansaço após uma sessão. Comece com intensidade baixa.\n\n## Quanto custa no total?\n\nA Semi 10 custa **$8,360** (kit inicial), **$10,060** (performance) ou **$13,339** (elite). Há um **teste de 30 dias por $700** e **aluguel a partir de $900 por mês**. As máquinas MagnaWave maiores custam de $11,960 a $39,660.\n\n## MagnaWave vs alternativas\n\n| Dispositivo de PEMF | Preço | Tipo | Ideal para |\n|---|---|---|---|\n| **MagnaWave Semi 10** | a partir de $8,360 | bobina em laço de alta intensidade | cavalos, profissionais |\n| [Pulse Centers Pulse XL Pro](/reviews/pulse-centers-pulse-xl-pro) | $9,000 | bobina de alta intensidade | clínicas |\n| [Curatron 3D](/reviews/curatron-3d) | $4,500 | tapete + bobina | uso doméstico de bobina e tapete |\n| [Healthy Wave Multi-Wave](/reviews/healthy-wave-multi-wave) | $2,495 | tapete de corpo inteiro | casa, terapias combinadas |\n\nPara tapetes versus bobinas de clínica, veja [Bemer Classic Evo vs Pulse Centers Pulse XL Pro](/reviews/vs/bemer-classic-evo-vs-pulse-centers-pulse-xl-pro).\n\n## Quais são as desvantagens da MagnaWave?\n\nPrimeiro, o preço: a partir de $8,360 pela menor máquina. Segundo, as evidências: não há ensaios em humanos publicados sobre a marca. Funciona só com bobina, então você precisa segurar ou posicionar o aplicador em cada área. Os controles são feitos para profissionais, não para um app de celular. E o público principal é o cuidado de cavalos e animais.\n\n## Quem deve comprar uma MagnaWave — e quem deve pular?\n\n**Compre** se você trabalha com cavalos ou animais, ou tem uma clínica em que uma bobina durável de alta intensidade com 10 anos de garantia se paga. Faça o teste de 30 dias primeiro.\n\n**Pule** se você quer recuperação em casa gastando pouco — um tapete como o [Healthy Wave](/reviews/healthy-wave-multi-wave) custa bem menos — ou se quer um tratamento comprovado para dor, caso em que um médico ou fisioterapeuta é o melhor ponto de partida. Veja os [melhores dispositivos de PEMF de 2026](/reviews/compare/best-pemf-devices-2026) para conhecer todas as opções.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Biogênese mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "O MagnaWave Mini vale a pena?",
+          "a": "Para a maioria das pessoas, não. A MagnaWave não oferece mais um Mini, e sua menor máquina, a Semi 10, custa a partir de $8,360. É bem construída, tem garantia de 10 anos e serve para uso equestre e profissional, mas não há ensaios em humanos publicados sobre a marca. Em casa, dá para usar PEMF por muito menos."
+        },
+        {
+          "q": "Quanto custa o MagnaWave Mini?",
+          "a": "Não existe Mini na linha atual da MagnaWave. O modelo compacto de entrada, a Semi 10, custa $8,360, $10,060 ou $13,339, conforme o kit. Um teste de 30 dias custa $700, e o aluguel começa em $900 por mês. As máquinas maiores chegam a $39,660."
+        },
+        {
+          "q": "Quais são as desvantagens do MagnaWave Mini?",
+          "a": "A menor MagnaWave atual custa a partir de $8,360, não há ensaios em humanos publicados sobre a marca, ela trata uma área por vez com bobina em vez do corpo inteiro, os controles são feitos para profissionais e ela é vendida principalmente para animais."
+        },
+        {
+          "q": "MagnaWave Mini ou Pulse Centers: qual é melhor?",
+          "a": "Hoje os preços são próximos: a MagnaWave Semi 10 custa a partir de $8,360 e a Pulse Centers XL Pro cerca de $9,000. A MagnaWave atende profissionais equestres e móveis com sua maleta e garantia de 10 anos; a Pulse Centers é o sistema de clínica mais completo para uso humano."
+        },
+        {
+          "q": "A MagnaWave é aprovada pela FDA?",
+          "a": "Não. Nenhuma máquina MagnaWave é aprovada pela FDA. A MagnaWave diz que suas máquinas profissionais não se destinam a diagnosticar, tratar, curar ou prevenir doenças em animais. Sobre a marca doméstica AuraWell, a empresa diz que é liberada pela FDA, o que significa semelhante a um dispositivo existente para um uso restrito, não aprovada."
+        },
+        {
+          "q": "A terapia PEMF funciona mesmo?",
+          "a": "Em parte. Uma revisão sistemática de 2020 concluiu que o PEMF pode reduzir a dor musculoesquelética, especialmente na osteoartrite de joelho, mas os estudos variaram muito e a qualidade foi mista. Alguns estimuladores ósseos de PEMF são aprovados pela FDA para fraturas que não consolidam, mas isso não prova que dispositivos de bem-estar funcionem."
+        },
+        {
+          "q": "Quem não deve usar PEMF?",
+          "a": "Não use PEMF se tiver marca-passo, desfibrilador ou outro implante ativo, durante a gravidez ou se tiver epilepsia. Consulte um médico antes de usar sobre implantes metálicos, um tumor ou sangramento ativo, e comece com intensidade baixa."
+        }
+      ]
+    },
+    "almost-heaven-salem": {
+      "verdict": "A forma mais acessível de ter uma sauna finlandesa de verdade de um fabricante consolidado — um barril compacto de cedro para 2 pessoas com aquecedor elétrico de 6 kW, bem abaixo do preço das cabines de infravermelho premium.",
+      "summary": "A Salem é a sauna barril de entrada da Almost Heaven: um barril de cedro de 6 × 4 ft para 2 pessoas, vendido como kit para montar, aquecido por um aquecedor elétrico Harvia de 6 kW (240 V, 30 A, ligação fixa). É calor tradicional por convecção com água sobre as pedras — o formato usado nos estudos de coorte finlandeses —, não infravermelho. O preço de tabela é $4,485 ($4,036.50 em promoção no site oficial em outubro de 2026). Não há opção a lenha para este modelo.",
+      "description": "Almost Heaven Salem: análise 2026. Sauna barril de cedro para 2, aquecedor elétrico de 6 kW, $4,485. Custo total real, evidência finlandesa, segurança, rivais.",
+      "bestFor": "Ideal para uma ou duas pessoas que querem uma sauna finlandesa de verdade ao ar livre pelo menor preço entre as marcas consolidadas.",
+      "testNote": "Avaliação baseada em evidências: pontuada a partir da página oficial do produto da Almost Heaven (consultada em 2026-10-01), da literatura científica finlandesa sobre sauna e de análises independentes de 2026. Não testada na prática pela ONDA.",
+      "productType": "Sauna barril tradicional para 2 pessoas (convecção elétrica)",
+      "pros": [
+        "Sauna finlandesa de verdade: aquecedor de 6 kW, pedras e vapor löyly",
+        "A sauna tradicional mais barata das nossas análises (cerca de $4,000–$4,500)",
+        "Aduelas grossas de cedro e garantia vitalícia limitada contra defeitos de fabricação",
+        "A sauna tradicional é o formato com a base de pesquisa mais sólida"
+      ],
+      "cons": [
+        "Só dois lugares — um barril compacto de 6 × 4 ft",
+        "Exige circuito de 240 V / 30 A com ligação fixa, então reserve verba para um eletricista",
+        "Sem opção a lenha neste modelo",
+        "Montagem em kit e prazo de envio de 6–8 semanas"
+      ],
+      "scoreNotes": {
+        "heat-source": "Aquecedor elétrico de sauna de 6 kW (KIP com botões, ou aquecedores inteligentes KIP / Spirit com controle Fenix). Calor tradicional por convecção com vapor löyly. Sem opção a lenha na Salem — a Almost Heaven oferece aquecedores a lenha em barris maiores, como o Essex.",
+        "build": "Aduelas de cedro de encaixe macho-fêmea de 1 ⅜ polegada (acabamento Rustic Red Cedar ou Onyx); garantia vitalícia limitada contra defeitos de fabricação; garantia do aquecedor Harvia de 1 ano nas resistências e 5 anos nos demais componentes.",
+        "emf": "Sauna tradicional — o aquecedor fica em um canto, e não em painéis ao redor do corpo, então a exposição a campos eletromagnéticos não é uma preocupação relevante.",
+        "form-factor": "Barril para 2 pessoas, 78 × 47 × 75⅜ in por fora. Exige base nivelada e firme e um circuito dedicado de 240 V / 30 A com ligação fixa, além de 110 V para a iluminação. Montagem em kit.",
+        "evidence": "A sauna finlandesa tradicional tem a literatura científica mais ampla — estudos de coorte observacionais finlandeses sobre mortalidade cardiovascular e por todas as causas.",
+        "value": "$4,485 de tabela ($4,036.50 em promoção, outubro de 2026) com o aquecedor incluído; eletricista, base e frete à parte. Ótimo custo-benefício para uma sauna finlandesa de cedro."
+      },
+      "content": "## Veredito: a Almost Heaven Salem vale a pena?\n\nSim, se você quer uma sauna finlandesa de verdade para uma ou duas pessoas e tem espaço ao ar livre. A Salem é um barril compacto de cedro de 6 × 4 ft com aquecedor elétrico de 6 kW e uma bandeja de pedras onde você joga água — calor tradicional por convecção, não infravermelho. Por $4,485 de tabela ($4,036.50 em promoção no site oficial em outubro de 2026, aquecedor incluído), é a sauna tradicional mais barata das nossas análises. Pule se precisar de espaço para mais de duas pessoas, quiser um fogão a lenha ou não puder levar um circuito de 240 V até o local.\n\n## Principais especificações (site oficial, outubro de 2026)\n\n- **Tamanho:** até 2 pessoas; externo 78 × 47 × 75⅜ in, interno 75¼ × 39¼ × 69¼ in\n- **Madeira:** aduelas de cedro de encaixe macho-fêmea de 1 ⅜ polegada, acabamento Rustic Red Cedar ou Onyx\n- **Aquecedor:** elétrico de 6 kW — KIP com botões, ou aquecedor inteligente KIP / Spirit com controle Fenix\n- **Energia:** aquecedor 240 V, 30 A, ligação fixa; iluminação 110 V, 15 A, na tomada\n- **Lenha:** não disponível na Salem (há aquecedores a lenha em barris Almost Heaven maiores, como o Essex)\n- **Garantia:** vitalícia limitada contra defeitos de fabricação; aquecedor Harvia, 1 ano nas resistências e 5 anos nos demais componentes\n- **Entrega:** kit para montar, enviado em 6–8 semanas\n\n## Tradicional ou infravermelho: qual escolher?\n\nUma sauna tradicional aquece o ar (normalmente a cerca de 80–100 °C) e as pedras; você controla a umidade com água. As cabines de infravermelho trabalham com o ar bem menos quente (cerca de 45–65 °C) e aquecem o corpo com painéis radiantes. O calor tradicional é mais intenso e foi o que os longos estudos finlandeses mediram; o infravermelho é mais suave, é mais fácil de instalar dentro de casa e combina com quem não gosta de ar muito quente. Nenhum é melhor para todos — mas, se o motivo da compra é a pesquisa, a tradicional é a mais próxima.\n\n## O que as evidências realmente mostram\n\nO estudo mais conhecido é o de Laukkanen e colegas, *JAMA Internal Medicine* 2015 (doi: 10.1001/jamainternmed.2014.8187). Ele acompanhou 2,315 homens finlandeses de meia-idade por cerca de 20 anos. Os que usavam sauna 4–7 vezes por semana tiveram taxas bem menores de doença cardiovascular fatal e de morte por todas as causas do que os que usavam uma vez por semana, e sessões mais longas também se associaram a menor risco. Duas ressalvas honestas: é observacional, então mostra uma associação, não a prova de que a sauna cause o benefício, e estudou homens usando saunas finlandesas tradicionais. Não mostra que algum produto específico, incluindo este, vá mudar sua saúde.\n\n## O custo total real\n\nO preço inclui a sauna e o aquecedor, mas planeje também:\n\n- **Eletricista:** o aquecedor precisa de ligação fixa a um circuito dedicado de 240 V / 30 A, além de uma alimentação de 110 V para a iluminação. O custo depende da distância até o seu quadro de luz e dos preços locais — peça um orçamento antes de comprar.\n- **Base:** uma superfície nivelada e firme, como uma laje de concreto, piso intertravado ou um deck.\n- **Licenças:** instalações elétricas e estruturas externas são reguladas localmente — consulte a prefeitura ou o condomínio.\n- **Montagem:** chega como kit; reserve um dia com alguém para ajudar ou pague um instalador.\n- **Custos de uso:** eletricidade de um aquecedor de 6 kW durante o aquecimento e as sessões, além de cuidados ocasionais com as pedras e a madeira.\n\n## Segurança: quem deve ter cuidado\n\n- **Problemas cardíacos:** com angina instável, infarto recente, estenose aórtica grave ou pressão alta descontrolada, consulte seu médico antes.\n- **Álcool:** não beba antes nem durante a sessão — isso aumenta o risco de desmaio, pressão baixa e alterações do ritmo cardíaco.\n- **Desidratação:** beba água, limite as sessões a cerca de 10–20 minutos e saia se sentir tontura.\n- **Crianças:** apenas sessões curtas, supervisionadas e em temperaturas mais baixas.\n- **Gravidez:** evite elevar a temperatura central do corpo, especialmente no início da gravidez; converse antes com seu profissional de saúde.\n\n## Como a Salem se compara\n\n| Sauna | Tipo | Preço (nossa análise) | Capacidade | Ideal para |\n|---|---|---|---|---|\n| Almost Heaven Salem | Barril tradicional, elétrica de 6 kW | $4,485 de tabela ($4,036.50 em promoção) | 2 | A sauna finlandesa ao ar livre mais barata |\n| [Finnleo Hallmark](/reviews/finnleo-hallmark) | Cabine tradicional interna | ~$8,000 | 2 | Calor tradicional dentro de casa |\n| [Sunlighten mPulse 3-in-1](/reviews/sunlighten-mpulse) | Cabine de infravermelho de espectro completo | ~$6,000 (1 pessoa a partir de ~$5,000) | 1–4 | O infravermelho mais pesquisado |\n| [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) | Cabine de infravermelho de espectro completo | $7,299 | 2 | Infravermelho premium para dentro de casa |\n\n## Quem deve comprar — e quem deve pular\n\n**Compre se** você quer uma sauna de ar quente autêntica com vapor, são uma ou duas pessoas, tem um espaço ao ar livre e acesso a 240 V, e prefere gastar com a sauna em vez de pagar pela marca.\n\n**Pule se** você precisa de quatro lugares ou mais (veja barris maiores), quer um fogão a lenha, precisa de uma unidade interna ou acha o calor intenso desconfortável — nesse caso, uma [sauna de infravermelho](/reviews/compare/best-infrared-sauna-2026) pode ser melhor para você.\n\n---\n\n## Leituras complementares\n\nA biologia de por que a exposição ao calor funciona — e os protocolos que potencializam o equipamento.\n\n- [Biogênese mitocondrial: a rede elétrica da célula](/articles/mitochondrial-biogenesis-cellular-power-grid) — por que o estresse térmico aumenta a densidade mitocondrial\n- [Equipamentos de longevidade e limpeza celular](/articles/longevity-hardware-cellular-cleanup) — como a sauna se encaixa no conjunto autofagia / mitofagia\n",
+      "faq": [
+        {
+          "q": "A sauna barril Almost Heaven Salem vale a pena?",
+          "a": "Sim, se você quer uma sauna finlandesa de verdade para uma ou duas pessoas. A Salem é um barril compacto de cedro com aquecedor elétrico de 6 kW e pedras para o vapor e, por $4,485 de tabela (cerca de $4,000 em promoção), é a sauna tradicional mais barata das nossas análises. Pule se precisar de mais lugares, de um fogão a lenha ou de uma unidade interna."
+        },
+        {
+          "q": "Quanto custa a Almost Heaven Salem?",
+          "a": "A Salem custa $4,485 de tabela em almostheaven.com, com preço promocional de $4,036.50 em outubro de 2026. Isso inclui o aquecedor elétrico de 6 kW. Reserve verba extra para um eletricista fazer a ligação fixa de um circuito de 240 V / 30 A, uma base nivelada, eventuais licenças locais e ajuda na montagem se você não montar o kit."
+        },
+        {
+          "q": "Quais são as desvantagens da Almost Heaven Salem?",
+          "a": "Tem só dois lugares, exige um circuito fixo de 240 V / 30 A (logo, um eletricista), não tem opção a lenha, chega como kit com prazo de envio de 6–8 semanas e é um barril para área externa, não uma cabine interna."
+        },
+        {
+          "q": "A Almost Heaven Salem tem versão a lenha?",
+          "a": "Não. A Salem é vendida apenas com aquecedores elétricos de 6 kW (KIP com botões, ou aquecedores inteligentes KIP ou Spirit com controle Fenix). A Almost Heaven oferece aquecedores a lenha em barris maiores, como o Essex."
+        },
+        {
+          "q": "Precisa de eletricista para instalar sauna barril?",
+          "a": "Para a Salem, na prática, sim. O aquecedor de 6 kW precisa de ligação fixa a um circuito dedicado de 240 V e 30 A, o que na maioria dos lugares é trabalho para um eletricista habilitado e pode exigir licença. A iluminação usa uma alimentação separada de 110 V, na tomada."
+        },
+        {
+          "q": "Sauna tradicional ou infravermelho: qual é melhor?",
+          "a": "Nenhuma é melhor para todos. As saunas tradicionais aquecem o ar a cerca de 80–100 °C e são o formato dos estudos de coorte finlandeses; as cabines de infravermelho trabalham mais frias e são mais suaves. Se seguir a pesquisa é o mais importante, escolha a tradicional; se conforto e instalação fácil dentro de casa pesam mais, o infravermelho é mais adequado."
+        }
+      ]
+    },
+    "nurosym": {
+      "verdict": "O dispositivo de tVNS de consumo com mais validação clínica — um clipe de orelha de nível de pesquisa com preço à altura.",
+      "productType": "tVNS auricular (clipe de orelha)"
+    },
+    "gammacore-sapphire-cv": {
+      "verdict": "A referência médica liberada pela FDA em VNS cervical não invasiva — uma ferramenta clínica, não um dispositivo de bem-estar de consumo.",
+      "productType": "tVNS cervical com receita (portátil)"
+    },
+    "truvaga-350": {
+      "verdict": "O hardware clínico do gammaCore reembalado como dispositivo de bem-estar de consumo — origem sólida, evidências modestas no uso de bem-estar.",
+      "productType": "tVNS cervical de consumo (portátil)"
+    },
+    "apollo-neuro": {
+      "verdict": "O dispositivo mais fácil de usar no corpo da categoria — vibrotátil, não elétrico, com evidências clínicas crescentes sobre VFC e recuperação.",
+      "productType": "Modulador vagal vibrotátil (wearable)"
+    },
+    "vagustim": {
+      "verdict": "tVNS auricular baseado em protocolos com origem de pesquisa confiável — forte em respaldo regulatório europeu e ensaios.",
+      "productType": "tVNS auricular (clipe de orelha + eletrodos)"
+    },
+    "pulsetto": {
+      "verdict": "O dispositivo de tVNS de consumo mais acessível — forte em variedade de protocolos e preço, mais fraco em evidências clínicas independentes.",
+      "productType": "tVNS cervical de consumo (colar de pescoço)"
+    },
+    "hoolest-verelief-prime": {
+      "verdict": "O dispositivo de tVNS mais voltado a atletas — sessões curtas e intensas para recuperação e para pegar no sono.",
+      "productType": "tVNS portátil (pegada nos dedos / pescoço)"
+    },
+    "sensate": {
+      "verdict": "Um dispositivo infrassônico passivo e calmante — suave e muito querido, com evidências sobre o mecanismo abaixo do entusiasmo dos usuários.",
+      "productType": "Modulador vagal infrassônico (pedra para o peito)"
+    },
+    "xen-by-neuvana": {
+      "verdict": "tVNS auricular em forma de fones de ouvido — um formato de consumo inteligente, com evidências independentes modestas.",
+      "productType": "tVNS auricular (fones de ouvido, com áudio)"
+    },
+    "livanova-vns-therapy": {
+      "verdict": "O dispositivo de VNS implantado de referência — o padrão-ouro clínico, não uma compra de consumo.",
+      "productType": "VNS implantada (cirúrgica, com receita)"
     }
   },
   "comparisons": {
@@ -912,7 +1173,7 @@
         },
         "neurosity-crown": {
           "award": "Melhor para desenvolvedores",
-          "takeaway": "Oito eletrodos secos e o SDK mais aberto da categoria de consumo — EEG bruto via JavaScript, Python e Swift."
+          "takeaway": "Oito eletrodos secos e o SDK mais aberto da categoria de consumo — EEG bruto via JavaScript e Python."
         },
         "emotiv-insight-2": {
           "award": "Melhor híbrido pesquisa-consumo",
@@ -954,7 +1215,7 @@
         },
         {
           "q": "Muse vs Neurosity Crown: qual devo comprar?",
-          "a": "Compre o Muse (S Athena $499 ou Muse 2 $249) se quer meditação guiada com feedback ao vivo e um app bem acabado. Compre o Neurosity Crown ($1,499) se quer dados brutos de EEG, oito eletrodos e um SDK aberto para JavaScript, Python e Swift — é uma ferramenta para desenvolvedores e para foco, não um coach de meditação. Para a maioria de quem medita, o Muse é a escolha melhor e bem mais barata."
+          "a": "Compre o Muse (S Athena $499 ou Muse 2 $249) se quer meditação guiada com feedback ao vivo e um app bem acabado. Compre o Neurosity Crown ($1,499) se quer dados brutos de EEG, oito eletrodos e um SDK aberto para JavaScript e Python — é uma ferramenta para desenvolvedores e para foco, não um coach de meditação. Para a maioria de quem medita, o Muse é a escolha melhor e bem mais barata."
         },
         {
           "q": "Qual é o melhor headset de EEG em 2026?",
@@ -970,7 +1231,7 @@
         },
         {
           "q": "Qual headset de EEG tem o SDK mais aberto?",
-          "a": "O Neurosity Crown — EEG bruto via JavaScript, Python e Swift, sem assinatura para acessar os dados. O Emotiv Insight 2 tem um SDK comparável, mas o acesso aos dados brutos exige uma assinatura Pro. O NeuroSky MindWave Mobile 2 tem um SDK aberto no nível econômico. Muse, FocusCalm e Sens.ai são plataformas fechadas."
+          "a": "O Neurosity Crown — EEG bruto via JavaScript e Python, sem assinatura para acessar os dados. O Emotiv Insight 2 tem um SDK comparável, mas o acesso aos dados brutos exige uma assinatura Pro. O NeuroSky MindWave Mobile 2 tem um SDK aberto no nível econômico. Muse, FocusCalm e Sens.ai são plataformas fechadas."
         },
         {
           "q": "O Muse S Athena vale a pena em relação ao Muse 2?",
@@ -1060,6 +1321,93 @@
           "a": "Os apps da Therabody e da Hyperice oferecem rotinas guiadas, sensores de pressão e integração com outros dispositivos de recuperação. Para quem quer protocolos de percussão estruturados — sim, o app tem valor real. Para quem já sabe quais grupos musculares trabalhar, o app é opcional."
         }
       ]
+    },
+    "best-vagus-nerve-stimulators-2026": {
+      "title": "Melhores estimuladores do nervo vago (2026): comparativo",
+      "description": "Os 10 melhores estimuladores do nervo vago de 2026: tVNS de orelha, de pescoço e wearables de vibração. Preços reais, status na FDA, evidências e segurança.",
+      "intro": "O mercado de estimuladores do nervo vago mistura dispositivos médicos regulamentados, hardware de consumo com respaldo de evidências e produtos de bem-estar cujo mecanismo mal toca o nervo vago. Pontuamos os dez dispositivos mais confiáveis de 2026 com a mesma rubrica — evidências e respaldo clínico, mecanismo de estimulação, flexibilidade de protocolos, conforto, biofeedback e custo-benefício — a partir da documentação dos fabricantes, de registros regulatórios e de pesquisas publicadas, com preços verificados nas lojas oficiais em 1º de outubro de 2026. Nenhum foi testado na prática pela ONDA.",
+      "verdict": "Em evidências e transparência do mecanismo, o Nurosym vence na categoria de consumo — seu hardware aparece em um amplo conjunto de pesquisas independentes sobre tVNS revisadas por pares. O gammaCore Sapphire CV é a referência regulatória, mas exige receita e é específico para cefaleias; o Truvaga 350 vem do mesmo fabricante sem receita e agora custa $325. O Apollo Neuro é a ferramenta certa se usar o dia todo é o fator decisivo; o Vagustim é a alternativa auricular ao Nurosym com mais protocolos; o Pulsetto é a entrada confiável mais barata; o Hoolest VeRelief Prime combina com recuperação esportiva; o Sensate é o mais agradável de usar; o Xen by Neuvana vence pelo formato familiar. O LivaNova VNS Therapy é a referência médica implantada — não uma compra de consumo. Antes de comprar qualquer um, experimente a respiração lenta, que é gratuita: ela tem evidências comparáveis ou melhores para estresse e VFC.",
+      "content": "## Resposta rápida\n\n**Melhor no geral: Nurosym** (€700, cerca de $820) — o dispositivo auricular de consumo com a base de pesquisa mais sólida. **Melhor dispositivo com receita: gammaCore Sapphire CV**, liberado pela FDA para cefaleias específicas. **Melhor dispositivo de pescoço sem receita: Truvaga 350** ($325). **Melhor para usar o dia todo: Apollo Neuro** ($448, vibração em vez de eletricidade). **Opção confiável mais barata: Pulsetto** ($269). E, antes de gastar qualquer coisa, experimente a respiração lenta — é gratuita e suas evidências são pelo menos tão boas para o estresse do dia a dia.\n\n## Como classificamos\n\nCada dispositivo foi pontuado segundo a [metodologia de análise](/reviews/methodology) publicada pela ONDA: seis critérios ponderados, com evidências e respaldo clínico pesando mais, porque o setor está cheio de alegações de marketing pouco ligadas ao que o hardware realmente faz. A nota geral é a média ponderada — não um número escolhido no olho. Os dez dispositivos foram avaliados a partir da documentação dos fabricantes, de registros de ensaios publicados, de liberações regulatórias e de análises independentes de 2026, e não por testes práticos, então trate as notas como um ponto de partida baseado em evidências.\n\n## Tabela comparativa\n\n| Dispositivo | Preço (out. 2026) | Tipo | Status regulatório | Ideal para |\n|---|---|---|---|---|\n| [Nurosym](/reviews/nurosym) | €700 (~$820) | tVNS auricular (clipe) | Dispositivo médico classe IIa com marcação CE | Quem prioriza evidências |\n| [gammaCore Sapphire CV](/reviews/gammacore-sapphire-cv) | Com receita; varia conforme o plano de saúde | Portátil, cervical (pescoço) | Liberado pela FDA para cefaleias | Enxaqueca e cefaleia em salvas |\n| [Truvaga 350](/reviews/truvaga-350) | $325 (350 sessões) | Portátil, cervical (pescoço) | Bem-estar geral, sem liberação da FDA | VNS de pescoço sem receita |\n| [Apollo Neuro](/reviews/apollo-neuro) | $448 com 1 ano de assinatura | Wearable de vibração | Dispositivo de bem-estar, sem liberação da FDA | Uso o dia todo |\n| [Vagustim](/reviews/vagustim) | €499 (~$540) | tVNS auricular + eletrodos | Dispositivo médico classe IIa com marcação CE | Muitos protocolos prontos |\n| [Pulsetto](/reviews/pulsetto) | $269 | Colar de pescoço | Marcação CE | Menor preço |\n| [Hoolest VeRelief Prime](/reviews/hoolest-verelief-prime) | $279 | Portátil | Dispositivo de bem-estar, sem liberação da FDA | Recuperação esportiva |\n| [Sensate](/reviews/sensate) | $299 | Dispositivo infrassônico para o peito | Dispositivo de bem-estar, sem liberação da FDA | Rotinas para desacelerar |\n| [Xen by Neuvana](/reviews/xen-by-neuvana) | $399 | tVNS auricular (fones de ouvido) | Dispositivo de bem-estar, sem liberação da FDA | Formato familiar |\n| [LivaNova VNS Therapy](/reviews/livanova-vns-therapy) | Cirúrgico; coberto pelo plano | Implantado | Aprovado pela FDA (epilepsia, depressão) | Apenas referência médica |\n\n## Como escolher\n\n**tVNS de orelha (auricular)** — Nurosym, Vagustim, Xen. Um clipe ou fone estimula a pele da orelha externa, por onde passa um ramo do nervo vago. Confortável, silencioso e a abordagem de consumo mais estudada.\n\n**Dispositivos de pescoço (cervicais)** — gammaCore, Truvaga, Pulsetto, Hoolest. Estimulam através da pele do pescoço. O gammaCore é o único liberado pela FDA, e apenas para cefaleias; os outros são produtos de bem-estar.\n\n**Dispositivos de vibração e som** — Apollo Neuro e Sensate não estimulam o nervo eletricamente. Eles buscam acalmar o sistema nervoso por meio do toque ou de som de baixa frequência. São mais fáceis de usar no dia a dia, mas ficam mais longe do rótulo de “estimulação do nervo vago”.\n\n**Com receita ou de consumo** — se você tem enxaqueca ou cefaleia em salvas, converse com um neurologista sobre o gammaCore: é a única opção aqui com liberação respaldada por ensaios para esse uso. Para estresse ou sono em geral, todo dispositivo de consumo é uma compra de bem-estar, não um tratamento.\n\n## O que as evidências realmente mostram\n\nAs evidências mais fortes estão no lado médico. A VNS implantada tem décadas de uso aprovado para epilepsia e depressão, e o gammaCore é liberado pela FDA para prevenir e tratar a enxaqueca em pessoas a partir de 12 anos, a cefaleia em salvas em adultos e a hemicrania paroxística e a hemicrania contínua em adultos.\n\nPara as alegações de bem-estar de consumo, o quadro é bem mais fraco. Uma meta-análise bayesiana contínua de Wolf e colegas (*Psychophysiology* 2021, doi: 10.1111/psyp.13933) reuniu 16 estudos controlados por simulação em pessoas saudáveis e não encontrou efeito de uma única sessão de tVNS auricular sobre a variabilidade da frequência cardíaca mediada pelo vago. Os estudos individuais sobre estresse, sono ou humor são, em sua maioria, pequenos, curtos e muitas vezes financiados pelas empresas. Isso não quer dizer que os dispositivos não façam nada — mas o marketing que promete ganhos mensuráveis de “tônus vagal” está à frente da ciência.\n\n## Segurança\n\n- **Dispositivos implantados:** não use estimuladores elétricos se tiver marca-passo, desfibrilador implantado ou outros eletrônicos implantados, a menos que seu cardiologista aprove.\n- **Problemas de ritmo cardíaco:** se você tem arritmia, frequência cardíaca baixa ou já desmaiou, consulte um médico antes — a estimulação vagal pode desacelerar o coração.\n- **Gravidez e epilepsia:** em geral, esses dispositivos não foram testados na gravidez; procure orientação médica antes.\n- **Dispositivos de pescoço:** evite se tiver doença conhecida da artéria carótida, após cirurgia no pescoço ou sobre pele lesionada.\n- **Nunca use dirigindo** ou operando máquinas, e pare se sentir tontura ou sensação de desmaio.\n\n## Alternativas gratuitas com evidências reais\n\nA respiração lenta e ritmada — cerca de cinco a sete respirações por minuto, com expiração mais longa — aumenta de forma confiável a VFC mediada pelo vago enquanto você pratica, não custa nada e tem uma base de pesquisa mais ampla que qualquer estimulador de consumo. Comece pelos nossos guias de [exercícios para o nervo vago](/articles/vagus-nerve-exercises), [respiração coerente](/articles/coherent-breathing-guide), [como encontrar sua frequência de respiração de ressonância](/articles/find-your-resonance-breathing-rate) e [cantarolar para o nervo vago](/articles/humming-breath-vagus). Se experimentar um dispositivo, compare-o com algumas semanas de prática de respiração antes de decidir se vale o dinheiro.\n\n## Qual você deve comprar?\n\nSe o critério decisivo for evidência, escolha o Nurosym. Se for o uso diário, o Apollo Neuro. Se você precisa de uso clínico com receita para cefaleia, o gammaCore. Se o limite for o preço, o Pulsetto, ou o Truvaga 350 para um dispositivo de pescoço do fabricante do gammaCore. A categoria é pequena, as diferenças são reais e a pontuação acima corresponde diretamente a qual concessão importa mais para você.",
+      "picks": {
+        "nurosym": {
+          "award": "Melhor no geral",
+          "takeaway": "A base de pesquisa revisada por pares mais sólida em tVNS auricular de consumo — estimulação auricular de nível de pesquisa em um formato deliberadamente simples (€700, cerca de $820)."
+        },
+        "gammacore-sapphire-cv": {
+          "award": "Melhor clínico (com receita)",
+          "takeaway": "Dispositivo de pescoço com receita liberado pela FDA para enxaqueca (a partir de 12 anos), cefaleia em salvas e duas cefaleias raras — a referência clínica em estimulação cervical."
+        },
+        "truvaga-350": {
+          "award": "Melhor cervical (de consumo)",
+          "takeaway": "O dispositivo de bem-estar sem receita do fabricante do gammaCore — a mesma plataforma cervical sem a barreira da receita, agora por $325 por 350 sessões."
+        },
+        "apollo-neuro": {
+          "award": "Melhor para uso diário",
+          "takeaway": "O único dispositivo aqui realmente usado o dia todo — vibração em vez de estimulação elétrica, com uma base crescente de evidências sobre VFC e recuperação."
+        },
+        "vagustim": {
+          "award": "Melhor biblioteca de protocolos",
+          "takeaway": "tVNS auricular com a maior biblioteca de programas prontos e respaldo regulatório europeu com marcação CE — atrás apenas do Nurosym em evidências."
+        },
+        "pulsetto": {
+          "award": "Melhor custo-benefício (de consumo)",
+          "takeaway": "O tVNS de pescoço mais barato, com quatro programas guiados — a entrada mais acessível na estimulação cervical."
+        },
+        "hoolest-verelief-prime": {
+          "award": "Melhor para atletas",
+          "takeaway": "Sessões portáteis curtas e intensas, pensadas para a recuperação esportiva e para preparar o estado parassimpático antes de dormir."
+        },
+        "sensate": {
+          "award": "Melhor para rituais de desaceleração",
+          "takeaway": "Dispositivo infrassônico para o peito combinado com som — o mais agradável de usar aqui, com evidências mais fracas sobre o mecanismo."
+        },
+        "xen-by-neuvana": {
+          "award": "Formato mais amigável ao consumidor",
+          "takeaway": "tVNS auricular em forma de fones de ouvido com música — um formato inteligente, com evidências modestas específicas do dispositivo."
+        },
+        "livanova-vns-therapy": {
+          "award": "Dispositivo médico de referência",
+          "takeaway": "O padrão-ouro clínico implantado para epilepsia farmacorresistente e depressão resistente ao tratamento — incluído como referência da qual todo dispositivo não invasivo tenta se aproximar."
+        }
+      },
+      "faq": [
+        {
+          "q": "Qual é o melhor estimulador do nervo vago em 2026?",
+          "a": "Para tVNS de consumo com respaldo de evidências, o Nurosym é a escolha mais forte — seu hardware foi usado em um amplo conjunto de pesquisas sobre VNS auricular revisadas por pares. Para uso médico com receita, o gammaCore Sapphire CV é a referência liberada pela FDA para cefaleias específicas. Para uso diário sem estimulação elétrica, o Apollo Neuro é o mais adequado."
+        },
+        {
+          "q": "Os estimuladores do nervo vago são aprovados pela FDA?",
+          "a": "Só alguns. O gammaCore Sapphire CV (não invasivo, com receita) é liberado pela FDA para prevenir e tratar a enxaqueca em pessoas a partir de 12 anos, a cefaleia em salvas em adultos e a hemicrania paroxística e a hemicrania contínua em adultos. O LivaNova VNS Therapy (implantado) é aprovado pela FDA para epilepsia farmacorresistente e depressão resistente ao tratamento. Os dispositivos de consumo — Nurosym, Truvaga, Pulsetto, Apollo Neuro, Sensate, Xen, Hoolest, Vagustim — não são liberados pela FDA para tratar nenhuma condição; vários têm marcação CE na Europa."
+        },
+        {
+          "q": "O estimulador do nervo vago na orelha (auricular) funciona tão bem quanto o de pescoço (cervical)?",
+          "a": "Ninguém demonstrou que um seja claramente melhor para uso de bem-estar. O tVNS de orelha (Nurosym, Vagustim, Xen) atua no ramo auricular do vago e tem mais pesquisas; os dispositivos de pescoço (gammaCore, Truvaga, Pulsetto) atuam no vago cervical, e os ensaios do gammaCore em cefaleia são as evidências clínicas mais fortes de qualquer dispositivo não invasivo. Para uma pessoa saudável, as diferenças práticas são conforto, duração da sessão e preço."
+        },
+        {
+          "q": "Quanto custa um bom estimulador do nervo vago?",
+          "a": "Nas lojas oficiais em outubro de 2026: Pulsetto $269, Hoolest VeRelief Prime $279, Sensate $299, Truvaga 350 $325 (Truvaga Plus $499), Xen by Neuvana $399, Apollo Neuro $448 com um ano de assinatura, Vagustim cerca de $540 (€499) e Nurosym cerca de $820 (€700). O gammaCore é vendido só com receita e o custo depende do seu plano de saúde; o sistema implantado da LivaNova é um procedimento cirúrgico normalmente coberto pelo plano nas indicações aprovadas."
+        },
+        {
+          "q": "Qual estimulador do nervo vago tem mais pesquisas?",
+          "a": "No lado do consumo, o Nurosym — o hardware Parasym com nova marca — tem a maior presença em pesquisas publicadas. No lado médico, o LivaNova VNS Therapy tem mais de vinte anos de uso aprovado pela FDA, e o gammaCore tem ensaios randomizados por trás de suas indicações para cefaleia. A maioria das alegações de bem-estar de consumo se apoia em estudos pequenos ou com resultados mistos."
+        },
+        {
+          "q": "O Apollo Neuro é mesmo um estimulador do nervo vago?",
+          "a": "A rigor, não — o Apollo Neuro é um wearable de vibração, não um dispositivo de tVNS elétrico. Ele busca mudar o estado autonômico pelo toque, em vez de estimular diretamente o nervo vago. Está incluído porque é a opção não elétrica mais estudada do mercado de consumo."
+        },
+        {
+          "q": "Estimulador do nervo vago funciona mesmo?",
+          "a": "Para usos médicos específicos, sim: a VNS implantada para epilepsia e depressão e o gammaCore para certas cefaleias têm aprovação regulatória baseada em ensaios. Para as alegações de consumo sobre estresse, sono e VFC, as evidências são pequenas e mistas — uma meta-análise de 2021 com 16 estudos controlados por simulação não encontrou efeito de uma única sessão de tVNS auricular sobre a variabilidade da frequência cardíaca. Algumas pessoas ainda os acham úteis, mas trate as alegações de bem-estar como não comprovadas."
+        },
+        {
+          "q": "Quem não deve usar estimulador do nervo vago?",
+          "a": "Não use sem orientação médica se tiver marca-passo, desfibrilador implantado ou outro dispositivo eletrônico implantado, problema de ritmo cardíaco ou epilepsia, ou se estiver grávida. Dispositivos de pescoço não são para pessoas com doença da artéria carótida ou após cirurgia no pescoço. Nunca use dirigindo ou operando máquinas, e pare se sentir que vai desmaiar."
+        },
+        {
+          "q": "Dá para estimular o nervo vago de graça?",
+          "a": "Sim. A respiração lenta — cerca de cinco a sete respirações por minuto, com expiração mais longa — aumenta de forma confiável a variabilidade da frequência cardíaca mediada pelo vago enquanto você pratica e tem as evidências mais amplas entre as técnicas vagais. Cantarolar, mergulhar suavemente o rosto em água fria e fazer exercício aeróbico regular também ajudam. Muitas pessoas tentam isso primeiro e só compram um dispositivo se quiserem mais estrutura."
+        }
+      ]
     }
   },
   "criteria": {
@@ -1096,7 +1444,16 @@
     "wearability": "Conforto de uso e bateria",
     "app-ux": "Experiência do app e do software",
     "heat-source": "Fonte de calor e cobertura de comprimentos de onda",
-    "emf": "Controle de EMF"
+    "emf": "Controle de EMF",
+    "stall-force-amplitude": "Força de bloqueio e amplitude",
+    "build-attachments": "Construção, ponteiras e garantia",
+    "battery-noise": "Bateria e nível de ruído",
+    "app-smart-features": "App e recursos inteligentes",
+    "ergonomics-portability": "Ergonomia e portabilidade",
+    "signal-quality": "Qualidade do sinal e confiabilidade dos sensores",
+    "training-content": "Programas de treino e conteúdo",
+    "comfort": "Conforto e usabilidade",
+    "open-data": "Dados abertos e acesso para desenvolvedores"
   },
   "categories": {
     "pemf": "Dispositivos PEMF",
@@ -1108,7 +1465,8 @@
     "cold-plunge": "Banho frio e banho de gelo",
     "massage-gun": "Pistolas de massagem",
     "hrv-wearable": "Monitores de VFC",
-    "sauna": "Saunas e saunas de infravermelho"
+    "sauna": "Saunas e saunas de infravermelho",
+    "vagus-stim": "Estimuladores do nervo vago"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {

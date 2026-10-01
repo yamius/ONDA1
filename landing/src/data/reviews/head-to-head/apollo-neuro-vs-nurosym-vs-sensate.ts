@@ -27,7 +27,7 @@ const apolloVsNurosymVsSensate: HeadToHead = {
     { name: 'Setup friction', winner: 'a', note: 'Apollo: put it on. Sensate: chest placement + headphones. Nurosym: ear clip with cable tether to control unit.' },
     { name: 'Evening wind-down fit', winner: 'c', note: 'Sensate’s soundscape-paired sessions are the most pleasant pre-sleep ritual in this group. Apollo runs ambient overnight; Nurosym is too active for sleep.' },
     { name: 'Disclosed parameters', winner: 'b', note: 'Nurosym discloses pulse parameters (25 Hz, 200–1000 µs). Apollo and Sensate document their programmes but stimulation parameters are less granular.' },
-    { name: 'Price (hardware)', winner: 'c', note: 'Sensate: $299. Apollo: $349. Nurosym: $750. Sensate is cheapest; Nurosym premium-priced for its evidence base.' },
+    { name: 'Price (hardware)', winner: 'c', note: 'Sensate: $299. Apollo: $448 (incl. 1-year membership). Nurosym: €700 (~$820). Sensate is cheapest; Nurosym premium-priced for its evidence base.' },
   ],
   faq: [
     {
@@ -69,7 +69,7 @@ If a pleasant focused evening wind-down ritual is what you want, Sensate is the 
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-01',
 }
 
 export default apolloVsNurosymVsSensate

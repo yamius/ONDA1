@@ -23,8 +23,8 @@ const sensateVsApollo: HeadToHead = {
     { name: 'All-day wearability', winner: 'b', note: 'Apollo: wrist/ankle/clip-on, designed for passive 24/7 wear. Sensate: chest-placed sit-down session-based, 10–30 minutes at a time.' },
     { name: 'Session experience', winner: 'a', note: 'Sensate’s soundscape-paired sessions are the most pleasant experience in the vagus-modulation space. Apollo runs in the background; Sensate is the foreground ritual.' },
     { name: 'Acute effect', winner: 'a', note: 'Sensate produces a clearer subjective shift per session because it is designed as a focused ritual. Apollo’s effect is cumulative and ambient by design.' },
-    { name: 'Subscription model', winner: 'b', note: 'Apollo: $349 hardware + optional $15/mo Apollo+. Sensate: $299 hardware + $79/year for full soundscape library. Apollo has more free functionality.' },
-    { name: 'Price', winner: 'a', note: 'Sensate: $299. Apollo: $349. Sensate is marginally cheaper at the entry tier.' },
+    { name: 'Subscription model', winner: 'b', note: 'Apollo: $448 incl. a 1-year SmartVibes AI membership. Sensate: $299 hardware + $79/year for full soundscape library. Apollo has more free functionality.' },
+    { name: 'Price', winner: 'a', note: 'Sensate: $299. Apollo: $448 (incl. 1-year membership). Sensate is clearly cheaper at the entry tier.' },
   ],
   faq: [
     {
@@ -57,7 +57,7 @@ If pre-sleep wind-down is the primary use case and a paired-soundscape session i
 If you want vagal modulation that runs in your life — at work, in transit, while training, while sleeping — without any session ritual, Apollo is the right shape. The seven modes cover most use cases, the wrist/ankle/clip-on form factor is genuinely wearable around the clock, and the University of Pittsburgh research base is the strongest in non-electrical vagus modulation.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-01',
 }
 
 export default sensateVsApollo

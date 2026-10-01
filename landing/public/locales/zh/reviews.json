@@ -233,8 +233,64 @@
       "productType": "消费级EEG头带（冥想）"
     },
     "neurosity-crown": {
-      "verdict": "最适合开发者和生物黑客的EEG头戴设备——开放SDK、原始数据、专注音乐流。高端价格。",
-      "productType": "面向开发者的EEG头戴设备（专注、心流）"
+      "verdict": "最适合开发者和生物黑客的EEG头戴设备——八通道、开放SDK、原始数据、无需订阅。但售价$1,499、续航约三小时，用来随便冥想并不合适。",
+      "summary": "Neurosity Crown是为想要真正利用数据、而不只是看摘要的人打造的头戴设备。八个干电极EEG通道以256 Hz采样，覆盖额叶、中央、顶叶和枕叶区域，设备端处理并带硬件加密；拥有消费级中最开放的SDK（JavaScript和Python，另支持BrainFlow、LSL、OSC以及面向AI助手的MCP服务器），可获取原始信号，并提供自适应专注音乐。高端硬件，高端价格；适合工程师、研究人员和生物黑客——不适合只想轻松冥想的用户。",
+      "description": "Neurosity Crown测评（2026）：最适合开发者的EEG头戴设备——8通道256 Hz、开放SDK、无需订阅。$1,499，用于冥想则大材小用。",
+      "bestFor": "适合想要原始EEG数据和可编程平台的开发者、研究人员和生物黑客。",
+      "testNote": "基于证据的评估——依据Neurosity官方产品页和对比页（2026-10-01核实）、Neurosity SDK文档及已发表的神经反馈研究评分。ONDA未进行实机测试。",
+      "productType": "面向开发者的EEG头戴设备（专注、心流）",
+      "pros": [
+        "消费级EEG市场中最开放的SDK——可通过JavaScript或Python获取原始数据，另支持BrainFlow、LSL和OSC",
+        "八个256 Hz干电极EEG通道——本榜单中皮层覆盖最广",
+        "设备端处理并带硬件加密；提供面向AI助手的MCP服务器",
+        "无强制订阅"
+      ],
+      "cons": [
+        "价格高——是Muse S Athena的三倍",
+        "单次充电续航约三小时",
+        "没有深入的冥想内容库，也没有睡眠追踪",
+        "硬质头冠——不适合过夜佩戴；交互设计默认用户懂技术"
+      ],
+      "scoreNotes": {
+        "signal-quality": "八个256 Hz干电极EEG通道（CP3、C3、F5、PO3、PO4、F6、C4、CP4）——消费级中皮层覆盖最广。坐姿专注时信号稳定。",
+        "training-content": "引导内容少于Muse；产品押注于自适应专注音乐和用户自建应用。它不是冥想内容库。",
+        "insights": "实时专注与平静评分，以及EEG频段分解。实时可视化很强；但对每次训练的文字总结不如Muse。",
+        "comfort": "228 g的硬质头冠——专注训练时舒适，但不适合过夜佩戴或运动中使用；单次充电约三小时。",
+        "app-ux": "配套App打磨精良，但交互设计默认用户比Muse用户更懂技术。",
+        "open-data": "本品类中最开放的SDK——JavaScript和Python SDK，另支持BrainFlow、LSL、OSC和MCP；256 Hz原始EEG；获取数据无需订阅。从设计上就以开发者为先。",
+        "value": "$1,499一次性付款，无强制订阅。高端定价——是Muse S Athena的三倍。"
+      },
+      "content": "## 一句话结论\n\n如果你想处理自己的脑数据，Neurosity Crown是最好的消费级EEG头戴设备。它有八个通道、256 Hz原始数据访问和开放SDK，且无需订阅。但售价$1,499、单次充电约三小时，如果你只想做引导式冥想，它并不是合适之选——[Muse S Athena](/reviews/muse-s-athena)以三分之一的价格做得更好。\n\n## Neurosity Crown测量什么？\n\nEEG（脑电图）通过头皮上的传感器记录大脑发出的微弱电信号。Crown在CP3、C3、F5、PO3、PO4、F6、C4和CP4位置有**八个干电极**，覆盖头部左右两侧的前部、中央、顶部和后部。Muse头带只有四个传感器，主要位于额头和耳后。\n\nCrown对每个通道**每秒采样256次**。内置芯片会清理信号（例如去除市电干扰），并在设备上加密。据此它估算**专注**和**平静**评分，并显示主要脑波频段，例如[α波](/articles/neural-bridge-alpha-flow-gateway)。\n\n对开发者来说，关键在于开放程度。Neurosity提供官方**JavaScript和Python** SDK，并支持BrainFlow、LSL和OSC——这些都是研究实验室的常用工具。它还附带MCP服务器，在你允许的情况下，AI助手可以读取你的实时数据。头戴设备重228 g。\n\n## 关于消费级EEG和神经反馈，证据怎么说？\n\n**测量方面。** 干电极头戴设备比使用导电膏的实验室EEG噪声更大。眨眼、下颌动作和走路都会带来伪迹。坐姿专注训练时，Crown的八个通道能提供有用的数据，但它不是临床EEG。\n\n**训练方面。** 神经反馈是指观察（或聆听）自己的脑活动，并学习去改变它。证据不一。2016年一项针对ADHD随机对照试验的荟萃分析发现，由家长评估孩子时有获益，但由不知道治疗分组的评估者评估时，效果要小得多（Cortese et al., 2016）。这表明部分效果来自预期。针对健康成年人专注力和效率的研究规模小、周期短。\n\n**这对你意味着什么。** Crown很适合用来观察你的注意力在一天中、或随咖啡、睡眠和[呼吸练习](/articles/breathing-for-focus-and-attention)如何变化。不要指望它单靠自身就能提升你的专注力。\n\n## Neurosity Crown是医疗器械吗？\n\n不是。它是面向消费者和开发者的设备，不是FDA批准的医疗器械。它无法诊断ADHD、癫痫、睡眠障碍或任何其他疾病。没有重大安全风险：它只读取信号，不向头部输送电流。如果传感器刺激皮肤，请停止使用。\n\n## 总花费是多少？\n\n**$1,499，一次性付款。** 包含SDK、App和终身软件更新。获取数据或使用SDK都无需订阅。\n\n## Neurosity Crown与其他选择对比\n\n| 头戴设备 | 价格 | 传感器 | 适合 |\n|---|---|---|---|\n| **Neurosity Crown** | $1,499 | 8个干电极EEG通道 | 开发者、原始数据、专注 |\n| [Muse S Athena](/reviews/muse-s-athena) | $499 | EEG + fNIRS，软头带 | 冥想、睡眠 |\n| [Muse 2](/reviews/muse-2) | $249 | 4个EEG传感器 | 预算有限的冥想 |\n| [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 | 5个EEG通道 | 研究工具（原始数据需Pro，约$99/年） |\n\n正面对比：[Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2)和[Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown)。\n\n## Neurosity Crown有哪些缺点？\n\n在Muse擅长的几乎所有方面它都不如。没有深入的引导冥想内容库，没有睡眠追踪，也没有可过夜佩戴的软头带。续航约三小时，所以它是按次使用的设备，而不是全天佩戴的。价格也大约是Muse S Athena的三倍。\n\n## 谁该买Neurosity Crown，谁该放弃？\n\n**建议购买**：想在可编程平台上获取原始EEG、且不想订阅的开发者、研究人员或动手型生物黑客。\n\n**建议放弃**：想要一个打磨精良的冥想教练（[Muse S Athena](/reviews/muse-s-athena)）、一款便宜的入门头戴设备（[Muse 2](/reviews/muse-2)），或需要持证专业人员指导的临床神经反馈。完整阵容见[2026年最佳EEG头戴设备](/reviews/compare/best-eeg-headsets-2026)。\n\n---\n\n## 延伸阅读\n\n这些头戴设备所反馈的神经科学，以及EEG信号揭示的认知状态。\n\n- [ACC校准：认知控制方案](/articles/acc-calibration-protocol-cognitive-control)——前额叶控制回路如何在EEG中体现\n- [适应与范围分级](/articles/adaptation-hack-range-fractionation)——通过刻意变化训练认知状态\n- [α脑波：平静、创造力与心流](/articles/neural-bridge-alpha-flow-gateway)——α节律的作用，以及α波头戴设备、App和音乐能改变什么、不能改变什么\n- [提升专注力与注意力的呼吸法](/articles/breathing-for-focus-and-attention)——可以用EEG头戴设备检验的简单实验\n",
+      "faq": [
+        {
+          "q": "Neurosity Crown值得买吗？",
+          "a": "对于想要原始EEG数据的开发者、研究人员和生物黑客，Neurosity Crown值得买。它有八个256 Hz通道、消费级EEG中最开放的SDK（JavaScript和Python，另支持BrainFlow、LSL和OSC），且无需订阅。想要引导内容的冥想用户会觉得它功能不足、价格太高。"
+        },
+        {
+          "q": "Neurosity Crown多少钱？",
+          "a": "Neurosity Crown一次性售价$1,499，包含SDK、配套App和终身软件更新，使用SDK或原始数据无需订阅。价格约为Muse S Athena的三倍。"
+        },
+        {
+          "q": "Neurosity Crown有哪些缺点？",
+          "a": "Crown价格约为Muse S Athena的三倍，续航约三小时，没有深入的冥想内容库和睡眠追踪，硬质头冠不适合过夜佩戴，交互设计也默认用户比消费级冥想产品的用户更懂技术。"
+        },
+        {
+          "q": "Neurosity Crown和Muse S Athena哪个好？",
+          "a": "想要原始数据、开放SDK和八通道最广覆盖，选Neurosity Crown。想要引导式脑训练内容、睡眠追踪和过夜佩戴的舒适度，选Muse S Athena，价格约为Crown的三分之一。"
+        },
+        {
+          "q": "Neurosity Crown是医疗器械吗？",
+          "a": "不是。Crown是面向消费者和开发者的EEG头戴设备，不是FDA批准的医疗器械。它无法诊断ADHD、癫痫或睡眠障碍。它只读取脑信号、不输送电流，因此没有重大安全风险。"
+        },
+        {
+          "q": "用头戴设备做神经反馈真的能提升专注力吗？",
+          "a": "证据不一。2016年一项ADHD荟萃分析发现，主要在评估者知道谁接受了治疗时才有获益，这表明预期起了作用。针对健康成年人的研究规模较小。头戴设备最适合用来了解哪些因素影响你的专注，而不是当作保证有效的解决方案。"
+        },
+        {
+          "q": "Neurosity Crown和Emotiv Insight 2，开发者选哪个？",
+          "a": "对大多数人来说选Crown。它有八个通道（对方为五个），无需订阅即可获取原始数据；而Emotiv的原始数据访问需要每年约$99的Pro方案。Emotiv前期价格更低（$499），也适合某些学术工具链。"
+        }
+      ]
     },
     "emotiv-insight-2": {
       "verdict": "研究-消费级混合产品——五通道和真正的学术工具链，原始数据需订阅。",
@@ -653,8 +709,59 @@
       ]
     },
     "hypervolt-3-pro": {
-      "verdict": "2026年旗舰，相比Hypervolt 2 Pro是明显升级——更大的堵转力（70 lbs）、更安静（51 dB）、更长续航（4小时）和更大的按摩头，售价反而更低，仅$349。振幅仍不及Theragun PRO Plus，但论性价比，这是需要超越的高端筋膜枪。",
-      "productType": "支持Hyperice生态的高端冲击式筋膜枪"
+      "verdict": "2026年旗舰，相比Hypervolt 2 Pro明显升级——堵转力更大（70 lbs）、更安静（51 dB）、续航更长（4小时）、按摩头更大，价格却降到$349。振幅仍不及Theragun PRO Plus，但论性价比，它是高端筋膜枪中的首选。",
+      "summary": "Hyperice Hypervolt 3 Pro是2026年3月发布的Hypervolt 3系列（同时推出$149的Go 3和$249的Hypervolt 3）中的顶配型号。与上一代Hypervolt 2 Pro相比，它的堵转力提升到约70 lbs（据发布报道，此前为60），借助Hyperice的QuietGlide电机运行更安静（约51 dB），单次充电最长可用四小时，新增六档数字旋钮、压力传感器和加热按摩头，重新设计的按摩头面积大了33%——而价格只要$349，比Hypervolt 2 Pro的首发价低$50。它仍完整支持Hyperice App连接。唯一仍落后的是振幅：Theragun PRO Plus的16 mm行程更深。",
+      "description": "Hypervolt 3 Pro测评（2026）：性价比最高的高端筋膜枪——51 dB、4小时续航、加热按摩头、$349。打得更深的仍是Theragun。",
+      "bestFor": "适合想以更低价格买到迄今最强、最安静、续航最长的Hyperice，且并不特别需要Theragun更深振幅的高端筋膜枪买家。",
+      "testNote": "基于证据的评估——依据Hyperice官方产品页（2026-10-01核实）、2026年3月Hypervolt 3发布报道及已发表的按摩研究评分。ONDA未进行实机测试。",
+      "productType": "支持Hyperice生态的高端冲击式筋膜枪",
+      "pros": [
+        "堵转力最高约70 lbs——超过Hypervolt 2 Pro的60",
+        "约51 dB的静音QuietGlide电机，续航最长4小时",
+        "五个按摩头，含加热头；重新设计的按摩头大了33%",
+        "$349，比上一代Hypervolt 2 Pro更便宜；符合FSA/HSA报销"
+      ],
+      "cons": [
+        "约14 mm的振幅仍不及Theragun PRO Plus的16 mm",
+        "单握把手不如Theragun的多握把通用",
+        "官方产品页未列出堵转力和振幅",
+        "没有显示屏"
+      ],
+      "scoreNotes": {
+        "stall-force-amplitude": "据发布报道，堵转力最高约70 lbs——比Hypervolt 2 Pro的60更强，属于市面上最强的一档。振幅仍在约14 mm级别，不及Theragun PRO Plus 16 mm的深层行程。",
+        "build-attachments": "做工精致的高端产品；五个按摩头含加热头，重新设计后面积大了33%，覆盖面更好。完整的Hyperice生态，并有NBA/NFL背书。",
+        "battery-noise": "新QuietGlide电机约51 dB，几乎无声；单次充电最长四小时，高于Hypervolt 2 Pro的约3小时。两项均属同级最佳。",
+        "app-smart-features": "六档数字旋钮（每分钟1,500–2,500次）、压力传感器，并通过蓝牙连接Hyperice App，提供引导式方案，可联动Apple Health、Whoop、Strava和Garmin。",
+        "ergonomics-portability": "重2.5 lbs，采用熟悉的单握把手——握感舒适、易于控制，但不如Theragun三角多握把通用。",
+        "value": "$349——比Hypervolt 2 Pro便宜$50，比Theragun PRO Plus便宜$250，同时在堵转力、噪音和续航上胜过2 Pro。2026年高端档性价比最强。"
+      },
+      "content": "## 一句话结论\n\nHypervolt 3 Pro是2026年性价比最高的高端筋膜枪。$349即可获得51 dB的安静电机、最长四小时续航、六档速度、压力传感器和五个按摩头（含一个加热头）。只有当你确实需要更深的16 mm行程和多握把手时，才值得多花钱买[Theragun PRO Plus](/reviews/theragun-pro-plus)。\n\n## Hypervolt 3 Pro有哪些配置？\n\nHyperice于2026年3月推出Hypervolt 3系列：Go 3（$149）、Hypervolt 3（$249）以及这款$349的Pro型号——比[Hypervolt 2 Pro](/reviews/hypervolt-2-pro)首发价低$50。官方产品页列出：\n\n- **6档速度**，每分钟1,500至2,500次冲击，数字旋钮调节\n- QuietGlide电机，噪音**51 dB**\n- 续航**最长4小时**\n- 重量**2.5 lb**\n- **5个按摩头**，含加热头\n- **蓝牙**连接Hyperice App，可联动Apple Health、Whoop、Strava和Garmin\n- 在美国**符合FSA/HSA报销**\n\n发布报道称堵转力约70 lbs（此前为60），按摩头大了33%。Hyperice并未在产品页列出堵转力或振幅，因此请把这些数字视为发布时的宣传数据。振幅仍约为14 mm。\n\n## 筋膜枪的原理是什么？证据怎么说？\n\n筋膜枪每秒多次敲击肌肉，这叫冲击疗法（percussive therapy）——一种快速的自我按摩方式。\n\n**肌肉酸痛。** 证据最充分的是一般意义上的按摩。2017年的一项荟萃分析发现，剧烈运动后按摩可减轻24至72小时后的延迟性肌肉酸痛（DOMS）（Guo et al., 2017）。筋膜枪很可能作用相似，但针对筋膜枪本身的试验要少得多。\n\n**活动度。** 小型研究显示，几分钟的冲击可短暂增加关节活动度，通常不会让肌肉变弱。效果与拉伸或泡沫轴相近，并会逐渐消退。\n\n**它做不到什么。** 没有可靠证据表明筋膜枪能加快肌肉修复、“排出”乳酸或提升长期运动表现。把它当作舒缓和热身工具，而不是治疗手段。睡眠和训练负荷重要得多——而你的[心率恢复](/articles/heart-rate-recovery-fitness-marker)比酸痛感更能反映体能。\n\n## 总花费是多少？\n\n$349，一次性付款。没有订阅，Hyperice App免费。除了多年后更换按摩头，没有其他持续费用。\n\n## Hypervolt 3 Pro与其他选择对比\n\n| 筋膜枪 | 价格 | 堵转力 / 振幅 | 适合 |\n|---|---|---|---|\n| **Hypervolt 3 Pro** | $349 | ~70 lbs / ~14 mm | 安静有力，性价比最高 |\n| [Theragun PRO Plus](/reviews/theragun-pro-plus) | $599 | 60 lbs / 16 mm | 行程最深，附加功能多 |\n| [Theragun Elite](/reviews/theragun-elite) | $399 | 40 lbs / 16 mm | 更低价入手Therabody |\n| [Achedaway Pro](/reviews/achedaway-pro) | $349 | 80 lbs / 16 mm | 最大原始力量 |\n\n正面对比：[对比Theragun PRO Plus](/reviews/vs/hypervolt-3-pro-vs-theragun-pro-plus)、[对比Theragun Elite](/reviews/vs/hypervolt-3-pro-vs-theragun-elite)、[对比Achedaway Pro](/reviews/vs/hypervolt-3-pro-vs-achedaway-pro)和[对比Hypervolt 2 Pro](/reviews/vs/hypervolt-3-pro-vs-hypervolt-2-pro)。\n\n## Hypervolt 3 Pro有哪些缺点？\n\n最主要的是振幅。约14 mm的行程比Theragun的16 mm浅，臀部等大肌群得到的深度较少。单握把手比Theragun的三角握把更难自己按到后背。没有显示屏。另外，主打的力量数据（堵转力、更大的按摩头）来自发布报道，而非官方规格表。\n\n## 筋膜枪安全吗？\n\n对健康肌肉而言，合理使用是安全的。只作用于肌肉，并避开：\n\n- **骨骼和关节**，如脊柱、髌骨和小腿胫骨\n- **颈部前侧和两侧**，那里的动脉和神经靠近皮肤\n- **疑似深静脉血栓（DVT）**——绝不要按摩肿胀、发热、疼痛的小腿，请就医\n- **新伤**、瘀青、骨折、开放性伤口或静脉曲张\n- 感觉减退的部位（例如糖尿病神经病变）\n\n如果你在服用抗凝药、有出血性疾病或正在怀孕，请先咨询医生。每块肌肉从低速1–2分钟开始，在敏感皮肤上谨慎试用加热头。\n\n## 谁该买Hypervolt 3 Pro，谁该放弃？\n\n**建议购买**：想以合理价格买到一把有力、安静、续航长的筋膜枪，用于热身和运动后酸痛。\n\n**建议放弃**：想要最深行程（[Theragun PRO Plus](/reviews/theragun-pro-plus)）、同价位最大原始力量（[Achedaway Pro](/reviews/achedaway-pro)）或便宜的旅行款——请看[2026年最佳筋膜枪](/reviews/compare/best-massage-guns-2026)。\n\n---\n\n## 延伸阅读\n\n- [心率恢复：体能指标](/articles/heart-rate-recovery-fitness-marker)\n- [线粒体生物合成](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "Hypervolt 3 Pro和Hypervolt 2 Pro有什么区别？",
+          "a": "Hypervolt 3 Pro是明显的升级。堵转力从60提升到约70 lbs，运行更安静（约51 dB），续航最长四小时，按摩头大了33%并附带加热头。它还新增六档旋钮和压力传感器，价格反而便宜$50。"
+        },
+        {
+          "q": "Hypervolt 3 Pro多少钱？",
+          "a": "Hypervolt 3 Pro售价$349，在美国符合FSA/HSA报销。它是2026年3月发布的Hypervolt 3系列的顶配，系列中还有$149的Go 3和$249的Hypervolt 3。它比Hypervolt 2 Pro的首发价低$50。"
+        },
+        {
+          "q": "Hypervolt 3 Pro和Theragun PRO Plus哪个好？",
+          "a": "论性价比，Hypervolt 3 Pro是高端筋膜枪首选：$349对比$599，有力、安静、续航长。Theragun PRO Plus的振幅仍更深（16 mm对约14 mm），多握把手也更通用。只有需要那份深度时才选Theragun。"
+        },
+        {
+          "q": "筋膜枪对肌肉酸痛真的有用吗？",
+          "a": "有一定作用。2017年的荟萃分析发现，按摩能减轻剧烈运动后一到三天的肌肉酸痛，筋膜枪很可能作用相似。小型研究还显示活动度会短暂提升。但没有可靠证据表明筋膜枪能加快肌肉修复。"
+        },
+        {
+          "q": "Hypervolt哪些部位不能用？",
+          "a": "避开骨骼和关节、颈部前侧和两侧、新伤、瘀青和静脉曲张。绝不要用于肿胀、发热、疼痛的小腿，那可能是血栓（DVT）。如果你在服用抗凝药、有出血性疾病或正在怀孕，请先咨询医生。"
+        },
+        {
+          "q": "Hypervolt 3 Pro值得买吗？",
+          "a": "对大多数想要高端筋膜枪的人来说，值得。$349的价格，安静（51 dB）、续航最长四小时、六档速度加加热头，比Theragun PRO Plus便宜$250。只有需要更深的16 mm行程时才选Theragun。"
+        }
+      ]
     },
     "theragun-pro-plus": {
       "verdict": "冲击疗法的标杆——最高的堵转力、最深的振幅、精致的应用。高价反映了参数天花板和Therabody生态。",
@@ -846,7 +953,7 @@
         },
         {
           "q": "Clearlight Sanctuary 2 适合什么人？",
-          "a": "Sanctuary 2 最适合想在紧凑双人房中获得 Sunlighten 级全光谱红外、Jacuzzi 品牌背书和终身保修的买家。它适合看重做工和低 EMF/ELF 设计、而非按波长编程控制的人。ONDA 总评分 8.3/10。"
+          "a": "Sanctuary 2 最适合想在紧凑双人房中获得 Sunlighten 级全光谱红外、Jacuzzi 品牌背书和终身保修的买家。它适合看重做工和低 EMF/ELF 设计、而非按波长编程控制的人。ONDA 总评分 7.8/10。"
         },
         {
           "q": "Clearlight Sanctuary 2 尺寸多大？",
@@ -869,6 +976,160 @@
     "mito-red-mitopro-1500": {
       "verdict": "生物黑客最爱的大尺寸面板——1500X 版本现有六个波长并获 FDA II 类注册，比 Joovv Solo 3.0 便宜 $400。",
       "productType": "大尺寸红光 + 近红外 LED 理疗设备"
+    },
+    "magnawave-mini": {
+      "verdict": "高强度环形线圈PEMF，在马匹和运动员护理领域有真实积累——但MagnaWave已不再列出“Mini”，目前最小的机型Semi 10起价$8,360。对大多数人来说，为如此薄弱的证据花这么多钱太不值。",
+      "summary": "MagnaWave生产驱动手持环形或板状线圈的高强度PEMF（脉冲电磁场）设备。该品牌在马匹和动物护理领域最为知名。它的紧凑入门机型——曾以“Mini”之名销售——如今是Semi 10：一台重9.4 lb的数字设备，单路输出，0.7–20 Hz脉冲，10年保修，售价从$8,360（入门套装）到$13,339。MagnaWave声明其设备并非用于诊断、治疗、治愈或预防动物疾病；对于旗下独立的家用品牌AuraWell，公司称其为首款获得FDA许可（cleared）的高功率非处方PEMF设备。它介于消费级垫子和完整的诊所系统之间——却是诊所系统的价格。",
+      "description": "MagnaWave Mini测评（2026）：已不再销售“Mini”——紧凑型Semi 10起价$8,360，主要面向动物，人体证据薄弱。",
+      "bestFor": "适合马匹和动物护理从业者，以及想要便携高强度线圈PEMF、且能承受专业级价格的运动员或诊所。",
+      "testNote": "基于证据的评估——依据MagnaWave官方设备页和Semi 10产品页（2026-10-01核实）及已发表的PEMF综述评分。ONDA未进行实机测试。",
+      "productType": "紧凑型高强度PEMF线圈设备（当前入门型号：Semi 10）",
+      "pros": [
+        "手提箱式设备即可提供高强度线圈输出",
+        "在马匹和运动员PEMF领域有数十年积累",
+        "10年保修；提供30天试用和租赁",
+        "符合FEI马术比赛使用规定"
+      ],
+      "cons": [
+        "当前产品线已无“Mini”——最小机型起价$8,360",
+        "主要面向动物销售；几乎没有已发表的人体效果数据",
+        "只有线圈——没有覆盖全身的垫子",
+        "专业人员式的操控，没有消费级App"
+      ],
+      "scoreNotes": {
+        "field-strength": "高强度环形线圈输出，专为临床和马匹方案设计——远超消费级垫子。在MagnaWave自家产品线中，Semi 10的功率为10级中的第5级。",
+        "waveform-evidence": "PEMF对肌肉骨骼疼痛有一定但有限的证据（系统综述）。MagnaWave本身的人体效果数据未发表；其大部分使用在马匹上。",
+        "build": "坚固的专业级做工，配手提箱；Semi 10享10年保修。MagnaWave在马匹和运动员PEMF领域有数十年积累。",
+        "programmability": "强度1–10（半级步进）、1–60分钟定时、0.7–20 Hz脉冲范围以及舒曼共振设置。专业人员式操控，不依赖App。",
+        "form-factor": "9.4 lb便携设备，配环形/板状施治器。针对局部施治，而非全身。可以随身携带，但不是口袋大小。",
+        "value": "起价$8,360（Semi 10入门套装）——几乎是我们此前列出的Mini价格$4,200的两倍，接近Pulse Centers XL Pro的价位。租赁和$700的30天试用可降低入手风险。"
+      },
+      "content": "## 一句话结论\n\nMagnaWave生产强劲、做工扎实的PEMF线圈设备，在马匹护理领域有很长的历史。但“Mini”已不在MagnaWave的设备列表上。目前最小的型号**Semi 10**售价**$8,360起**。在这个价位、且人体证据很少的情况下，大多数人应选择更便宜的垫子或去诊所做理疗。\n\n> **型号更新（2026年10月）：** MagnaWave官方产品线中已没有名为“Mini”的型号。紧凑型入门设备是Semi 10（$8,360起）。其他设备最高可达$39,660（M40）。我们已更新本测评中的价格和性价比评分。\n\n## MagnaWave是什么？原理是什么？\n\nPEMF即脉冲电磁场疗法。设备让短促的电流脉冲通过线圈，线圈产生变化的磁场，磁场穿过皮肤和衣物，在下方组织中感应出微小电流。\n\nMagnaWave设备属于“高强度”类型。它驱动手持的环形或板状线圈，放在单个部位上使用，例如膝盖、后背或马的肩部。[Bemer](/reviews/bemer-classic-evo)或[Healthy Wave](/reviews/healthy-wave-multi-wave)这类消费级垫子则是在全身施加弱得多的磁场。\n\n**Semi 10**是MagnaWave的紧凑型数字设备：\n\n- **重量：** 9.4 lb，合上的箱体约12.5 × 10 × 6英寸\n- **输出：** 一个线圈，0.7–20 Hz脉冲，强度1–10（半级步进）\n- **定时：** 1–60分钟，另有舒曼共振设置\n- **保修：** 10年\n- **预期用途（据MagnaWave说明）：** 小型伴侣动物、展演动物和轻度马匹使用\n\n## 关于PEMF，证据怎么说？\n\n**针对疼痛。** 2020年的一项系统综述发现，PEMF可能减轻肌肉骨骼疼痛，尤其是膝骨关节炎，但各试验使用的设备和参数差异很大，质量参差不齐（Paolucci et al., 2020）。没有证据表明某个品牌的波形比另一个更有效。\n\n**针对骨愈合。** 部分PEMF骨生长刺激器已获FDA批准用于不愈合骨折。那些是有自己数据的特定医疗器械，其批准并不适用于保健类PEMF设备。\n\n**针对MagnaWave本身。** 我们没有找到已发表的、经同行评审的MagnaWave设备人体试验。该品牌的大部分声誉来自马匹使用和从业者报告。这是有用的经验，但不是对照证据。\n\n## MagnaWave获得FDA批准了吗？\n\n没有。**没有任何MagnaWave设备获得“FDA批准”。** 对于专业设备，MagnaWave声明其并非用于诊断、治疗、治愈或预防任何动物疾病。对于家用品牌**AuraWell**，公司称其为首款获得FDA许可的高功率非处方PEMF设备。“许可”（510(k)）意味着FDA认定它与已上市设备相似——这不是批准，且只涵盖很窄的用途。我们无法独立核实其确切的许可适应证，购买前请查看产品标签。\n\n## PEMF安全吗？\n\n在常规设置下副作用并不常见，但高强度线圈很强。以下情况请**不要**使用PEMF：\n\n- **心脏起搏器、除颤器或其他有源植入物**（例如人工耳蜗、胰岛素泵或神经刺激器）\n- **怀孕**\n- **癫痫**或有癫痫发作史\n\n此外，除非医生同意，不要把线圈放在金属植入物上，也不要用于肿瘤或活动性出血部位。有些人在治疗后会感到刺痛、肌肉抽动或疲倦。请从低强度开始。\n\n## 总花费是多少？\n\nSemi 10售价**$8,360**（入门套装）、**$10,060**（性能版）或**$13,339**（精英版）。提供**$700的30天试用**和**每月$900起的租赁**。更大的MagnaWave设备售价$11,960至$39,660。\n\n## MagnaWave与其他选择对比\n\n| PEMF设备 | 价格 | 类型 | 适合 |\n|---|---|---|---|\n| **MagnaWave Semi 10** | $8,360起 | 高强度环形线圈 | 马匹、从业者 |\n| [Pulse Centers Pulse XL Pro](/reviews/pulse-centers-pulse-xl-pro) | $9,000 | 高强度线圈 | 诊所 |\n| [Curatron 3D](/reviews/curatron-3d) | $4,500 | 垫子 + 线圈 | 家用线圈 + 垫子 |\n| [Healthy Wave Multi-Wave](/reviews/healthy-wave-multi-wave) | $2,495 | 全身垫 | 家用、组合疗法 |\n\n垫子与诊所线圈的对比，请看[Bemer Classic Evo vs Pulse Centers Pulse XL Pro](/reviews/vs/bemer-classic-evo-vs-pulse-centers-pulse-xl-pro)。\n\n## MagnaWave有哪些缺点？\n\n首先是价格：最小的设备也要$8,360起。其次是证据：该品牌没有已发表的人体试验。它只有线圈，每个部位都需要手持或放置施治器。操控是为专业人员设计的，而不是手机App。而且主要面向马匹和动物护理。\n\n## 谁该买MagnaWave，谁该放弃？\n\n**建议购买**：从事马匹或动物相关工作，或经营的机构能让一台耐用、带10年保修的高强度线圈设备回本。先试用30天。\n\n**建议放弃**：想以有限预算在家做恢复——[Healthy Wave](/reviews/healthy-wave-multi-wave)这样的垫子便宜得多——或想要经过验证的疼痛治疗，这种情况先找医生或物理治疗师更好。完整阵容见[2026年最佳PEMF设备](/reviews/compare/best-pemf-devices-2026)。\n\n---\n\n## 延伸阅读\n\n- [电医学与神经调控](/articles/electric-medicine-neuromodulation)\n- [线粒体生物合成](/articles/mitochondrial-biogenesis-cellular-power-grid)\n",
+      "faq": [
+        {
+          "q": "MagnaWave Mini值得买吗？",
+          "a": "对大多数人来说不值得。MagnaWave已不再列出Mini，最小的机型Semi 10起价$8,360。它做工扎实、有10年保修，适合马匹和专业人员使用，但该品牌没有已发表的人体试验。家用用户可以用便宜得多的方式获得PEMF。"
+        },
+        {
+          "q": "MagnaWave Mini多少钱？",
+          "a": "MagnaWave当前产品线中没有Mini。紧凑型入门型号Semi 10根据套装不同，售价$8,360、$10,060或$13,339。30天试用费用$700，租赁每月$900起。更大的设备最高$39,660。"
+        },
+        {
+          "q": "MagnaWave Mini有哪些缺点？",
+          "a": "目前最小的MagnaWave也要$8,360起，该品牌没有已发表的人体试验，它用线圈一次只能处理一个部位而非全身，操控为专业人员设计，且主要面向动物销售。"
+        },
+        {
+          "q": "MagnaWave Mini和Pulse Centers哪个好？",
+          "a": "两者如今价格接近：MagnaWave Semi 10起价$8,360，Pulse Centers XL Pro约$9,000。MagnaWave配手提箱和10年保修，适合马匹和上门服务的从业者；Pulse Centers则是更完整的人用诊所系统。"
+        },
+        {
+          "q": "MagnaWave获得FDA批准了吗？",
+          "a": "没有。没有任何MagnaWave设备获得FDA批准。MagnaWave称其专业设备并非用于诊断、治疗、治愈或预防动物疾病。公司称其家用品牌AuraWell获得FDA许可，这意味着在很窄的用途上与已有设备相似，而不是获得批准。"
+        },
+        {
+          "q": "PEMF疗法真的有效吗？",
+          "a": "部分有效。2020年的一项系统综述发现，PEMF可能减轻肌肉骨骼疼痛，尤其是膝骨关节炎，但研究差异很大、质量参差不齐。部分PEMF骨刺激器获FDA批准用于不愈合骨折，但这并不能证明保健类设备有效。"
+        },
+        {
+          "q": "哪些人不能用PEMF？",
+          "a": "装有心脏起搏器、除颤器或其他有源植入物的人、孕妇以及癫痫患者不要使用PEMF。在金属植入物、肿瘤或活动性出血部位使用前请咨询医生，并从低强度开始。"
+        }
+      ]
+    },
+    "almost-heaven-salem": {
+      "verdict": "从知名厂商入手真正芬兰式桑拿的最实惠途径——紧凑的双人雪松木桶形桑拿，配6 kW电加热器，价格远低于高端红外桑拿房。",
+      "summary": "Salem是Almost Heaven的入门级桶形桑拿：6 × 4 ft的双人雪松木桶，以DIY套件形式销售，由6 kW的Harvia电加热器加热（240 V、30 A、硬接线）。它采用往石头上浇水的传统对流加热——正是芬兰队列研究所用的形式——而非红外。标价$4,485（截至2026年10月官网促销价$4,036.50）。该型号没有烧柴选项。",
+      "description": "Almost Heaven Salem测评（2026）：双人雪松木桶形桑拿，6 kW电加热器，标价$4,485。真实总花费、芬兰桑拿研究、安全性与竞品对比。",
+      "bestFor": "适合想以知名品牌最低价格在户外拥有真正芬兰式桑拿的一到两人。",
+      "testNote": "基于证据的评估——依据Almost Heaven官方产品页（2026-10-01核实）、芬兰桑拿研究文献及2026年独立评测评分。ONDA未进行实机测试。",
+      "productType": "传统双人桶形桑拿（电加热对流）",
+      "pros": [
+        "真正的芬兰式桑拿：6 kW加热器、桑拿石和Löyly蒸汽",
+        "我们测评中价格最低的传统桑拿（约$4,000–$4,500）",
+        "厚实的雪松木板，制造缺陷享有限终身保修",
+        "传统桑拿是研究基础最扎实的形式"
+      ],
+      "cons": [
+        "只有两个座位——紧凑的6 × 4 ft木桶",
+        "需要240 V / 30 A硬接线电路，要预留电工费用",
+        "该型号没有烧柴选项",
+        "需自行组装DIY套件，发货周期6–8周"
+      ],
+      "scoreNotes": {
+        "heat-source": "6 kW电桑拿加热器（旋钮式KIP，或带Fenix控制的KIP / Spirit智能加热器）。带Löyly蒸汽的传统对流加热。Salem没有烧柴选项——Almost Heaven在Essex等更大的木桶上提供烧柴加热器。",
+        "build": "1 ⅜英寸球窝式雪松木板（Rustic Red Cedar或Onyx饰面）；制造缺陷享有限终身保修；Harvia加热器发热元件保修1年，其他部件5年。",
+        "emf": "传统桑拿——加热器位于角落，而不是在身体周围的面板里，因此EMF（电磁场）暴露不是值得担心的问题。",
+        "form-factor": "双人木桶，外部尺寸78 × 47 × 75⅜英寸。需要平整坚实的地基、专用240 V / 30 A硬接线电路以及照明用110 V电源。DIY套件组装。",
+        "evidence": "传统芬兰桑拿拥有最深厚的桑拿研究文献——关于心血管死亡和全因死亡的芬兰观察性队列研究。",
+        "value": "标价$4,485（2026年10月促销价$4,036.50），含加热器；电工、地基和运费另计。作为雪松木芬兰式桑拿，性价比很高。"
+      },
+      "content": "## 结论：Almost Heaven Salem值得买吗？\n\n如果你想要一台供一两人使用的真正芬兰式桑拿，并且户外有空间，那么值得。Salem是6 × 4 ft的紧凑雪松木桶，配6 kW电加热器和可以浇水的石盘——传统对流加热，而非红外。标价$4,485（2026年10月官网促销价$4,036.50，含加热器），是我们测评中最便宜的传统桑拿。如果你需要容纳两人以上、想要烧柴炉，或无法把240 V电路接到安装位置，就放弃它。\n\n## 主要参数（官网，2026年10月）\n\n- **尺寸：** 最多2人；外部78 × 47 × 75⅜英寸，内部75¼ × 39¼ × 69¼英寸\n- **木材：** 1 ⅜英寸球窝式雪松木板，Rustic Red Cedar或Onyx饰面\n- **加热器：** 6 kW电加热——旋钮式KIP，或带Fenix控制的KIP / Spirit智能加热器\n- **电源：** 加热器240 V、30 A、硬接线；照明110 V、15 A、插头式\n- **烧柴：** Salem不提供（Essex等更大的Almost Heaven木桶可选烧柴加热器）\n- **保修：** 制造缺陷有限终身保修；Harvia加热器发热元件1年，其他部件5年\n- **交付：** DIY套件，6–8周内发货\n\n## 传统桑拿还是红外桑拿，你该选哪种？\n\n传统桑拿加热空气（通常约80–100 °C）和桑拿石，你通过浇水控制湿度。红外桑拿房的空气温度低得多（约45–65 °C），通过辐射板加热身体。传统热感更强烈，也是芬兰长期研究所测量的形式；红外更温和，更容易在室内安装，适合不喜欢热空气的人。没有哪一种对所有人都更好——但如果你购买的理由是研究证据，传统桑拿更贴近。\n\n## 证据实际显示了什么\n\n最知名的研究是Laukkanen等人发表在*JAMA Internal Medicine* 2015年的论文（doi: 10.1001/jamainternmed.2014.8187）。研究对2,315名芬兰中年男性随访了约20年。每周使用桑拿4–7次的男性，致死性心血管疾病和全因死亡率明显低于每周一次的人，单次时间更长也与更低风险相关。两点坦诚的提醒：这是观察性研究，显示的是关联，而不是桑拿带来益处的证明；研究对象是使用传统芬兰桑拿的男性。它并不能说明任何特定产品（包括这一款）会改变你的健康。\n\n## 真实总花费\n\n标价包含桑拿和加热器，但还需准备：\n\n- **电工：** 加热器必须硬接线到专用240 V / 30 A电路，另需照明用110 V电源。费用取决于与配电箱的距离和当地价格——下单前先询价。\n- **地基：** 平整坚实的表面，如混凝土垫层、铺砖或木平台。\n- **许可：** 电气工程和户外构筑物受当地监管——请向所在城镇或业主协会（HOA）确认。\n- **组装：** 以DIY套件形式送达；安排一天时间并找人帮忙，或付费请安装人员。\n- **运行成本：** 6 kW加热器在预热和使用期间的电费，以及偶尔的石头和木材保养。\n\n## 安全：哪些人需要小心\n\n- **心脏疾病：** 患有不稳定型心绞痛、近期心肌梗死、重度主动脉瓣狭窄或血压控制不佳者，请先咨询医生。\n- **饮酒：** 桑拿前或期间不要饮酒——会增加晕厥、低血压和心律问题的风险。\n- **脱水：** 多喝水，每次控制在约10–20分钟，感到头晕就立即出来。\n- **儿童：** 只能在较低温度下、有人看护的情况下短时间使用。\n- **怀孕：** 避免升高核心体温，尤其是孕早期；请先咨询医生。\n\n## Salem与其他桑拿对比\n\n| 桑拿 | 类型 | 价格（我们的测评） | 容纳人数 | 适合 |\n|---|---|---|---|---|\n| Almost Heaven Salem | 传统木桶，6 kW电加热 | 标价$4,485（促销$4,036.50） | 2 | 户外最低价芬兰式桑拿 |\n| [Finnleo Hallmark](/reviews/finnleo-hallmark) | 传统室内桑拿房 | ~$8,000 | 2 | 在室内享受传统热 |\n| [Sunlighten mPulse 3-in-1](/reviews/sunlighten-mpulse) | 全光谱红外桑拿房 | ~$6,000（单人约$5,000起） | 1–4 | 研究最充分的红外 |\n| [Clearlight Sanctuary 2](/reviews/clearlight-sanctuary-2) | 全光谱红外桑拿房 | $7,299 | 2 | 高端室内红外 |\n\n## 谁该买，谁该放弃\n\n**建议购买**：想要带蒸汽的正宗热空气桑拿，一两人使用，有户外位置且能接入240 V电源，宁愿把钱花在桑拿本身而不是品牌溢价上。\n\n**建议放弃**：需要四个或更多座位（看更大的木桶）、想要烧柴炉、需要室内款，或觉得高温不舒服——那么[红外桑拿](/reviews/compare/best-infrared-sauna-2026)可能更适合你。\n\n---\n\n## 延伸阅读\n\n热暴露为何有效的生物学原理——以及与硬件相互叠加的方案。\n\n- [线粒体生物合成：细胞电网](/articles/mitochondrial-biogenesis-cellular-power-grid)——为什么热应激会提升线粒体密度\n- [长寿硬件与细胞清理](/articles/longevity-hardware-cellular-cleanup)——桑拿在更广泛的自噬 / 线粒体自噬组合中的位置\n",
+      "faq": [
+        {
+          "q": "Almost Heaven Salem桶形桑拿值得买吗？",
+          "a": "如果你想要一台供一两人使用的真正芬兰式桑拿，值得。Salem是紧凑的雪松木桶，配6 kW电加热器和产生蒸汽的桑拿石，标价$4,485（促销约$4,000），是我们测评中最便宜的传统桑拿。如果需要更多座位、烧柴炉或室内款，就放弃它。"
+        },
+        {
+          "q": "Almost Heaven Salem多少钱？",
+          "a": "Salem在almostheaven.com标价$4,485，2026年10月促销价$4,036.50，含6 kW电加热器。还需额外预算：请电工硬接线240 V / 30 A电路、平整地基、当地许可，以及不自己组装时的安装费用。"
+        },
+        {
+          "q": "Almost Heaven Salem有哪些缺点？",
+          "a": "只能坐两人，需要240 V / 30 A硬接线电路（因此需要电工），没有烧柴选项，以DIY套件形式送达且发货周期6–8周，而且是户外木桶而非室内桑拿房。"
+        },
+        {
+          "q": "Almost Heaven Salem能配烧柴加热器吗？",
+          "a": "不能。Salem只配6 kW电加热器（旋钮式KIP，或带Fenix控制的KIP或Spirit智能加热器）销售。Almost Heaven在Essex等更大的木桶上提供烧柴加热器。"
+        },
+        {
+          "q": "安装桶形桑拿需要电工吗？",
+          "a": "对于Salem，实际上需要。它的6 kW加热器必须硬接线到专用240 V、30 A电路，在大多数地方这需要持证电工操作，并可能需要许可。照明使用单独的110 V插头式电源。"
+        },
+        {
+          "q": "传统桑拿比红外桑拿好吗？",
+          "a": "没有哪一种对所有人都更好。传统桑拿把空气加热到约80–100 °C，是芬兰队列研究背后的形式；红外桑拿房温度更低、感觉更温和。如果最看重与研究一致，选传统；如果更看重舒适和室内易安装，选红外。"
+        }
+      ]
+    },
+    "nurosym": {
+      "verdict": "临床验证最充分的消费级tVNS设备——研究级耳夹，价格也与之相称。",
+      "productType": "耳廓tVNS（耳夹）"
+    },
+    "gammacore-sapphire-cv": {
+      "verdict": "获FDA许可的非侵入颈部VNS医疗标杆——是临床工具，不是消费级保健设备。",
+      "productType": "处方颈部tVNS（手持式）"
+    },
+    "truvaga-350": {
+      "verdict": "gammaCore临床硬件改装成的消费级保健设备——出身可靠，在保健用途上证据有限。",
+      "productType": "消费级颈部tVNS（手持式）"
+    },
+    "apollo-neuro": {
+      "verdict": "本品类中最便于佩戴的设备——振动触觉而非电刺激，在HRV和恢复方面的临床证据不断增加。",
+      "productType": "振动触觉迷走神经调节器（穿戴式）"
+    },
+    "vagustim": {
+      "verdict": "以方案为核心的耳廓tVNS，研究出身可信——欧盟监管和试验支持是强项。",
+      "productType": "耳廓tVNS（耳夹 + 配套电极）"
+    },
+    "pulsetto": {
+      "verdict": "最容易入手的消费级tVNS设备——方案多样、价格低，独立临床证据较少。",
+      "productType": "消费级颈部tVNS（颈圈）"
+    },
+    "hoolest-verelief-prime": {
+      "verdict": "最面向运动员的tVNS设备——短时高强度训练，用于恢复和入睡。",
+      "productType": "手持式tVNS（手指 / 颈部握持）"
+    },
+    "sensate": {
+      "verdict": "被动式、令人平静的次声设备——温和、广受喜爱，但机制证据落后于用户的热情。",
+      "productType": "次声迷走神经调节器（胸前鹅卵石形）"
+    },
+    "xen-by-neuvana": {
+      "verdict": "包装成耳机的耳廓tVNS——巧妙的消费级外形，独立证据有限。",
+      "productType": "耳廓tVNS（耳机，搭配音频）"
+    },
+    "livanova-vns-therapy": {
+      "verdict": "参照级植入式VNS设备——临床金标准，不是消费者购买的产品。",
+      "productType": "植入式VNS（手术，处方）"
     }
   },
   "comparisons": {
@@ -889,7 +1150,7 @@
         },
         "neurosity-crown": {
           "award": "最适合开发者",
-          "takeaway": "八个干电极和消费级中最开放的SDK——通过JavaScript、Python和Swift获取原始EEG。"
+          "takeaway": "八个干电极和消费级中最开放的SDK——通过JavaScript和Python获取原始EEG。"
         },
         "emotiv-insight-2": {
           "award": "最佳研究-消费级混合",
@@ -931,7 +1192,7 @@
         },
         {
           "q": "Muse还是Neurosity Crown：该买哪个？",
-          "a": "如果你想要带实时反馈的引导冥想和精良的App，买Muse（S Athena $499或Muse 2 $249）。如果你想要原始EEG数据、八个电极以及支持JavaScript、Python和Swift的开放SDK，买Neurosity Crown（$1,499）——它是开发者和专注工具，不是冥想教练。对大多数冥想者来说，Muse是更好且便宜得多的选择。"
+          "a": "如果你想要带实时反馈的引导冥想和精良的App，买Muse（S Athena $499或Muse 2 $249）。如果你想要原始EEG数据、八个电极以及支持JavaScript和Python的开放SDK，买Neurosity Crown（$1,499）——它是开发者和专注工具，不是冥想教练。对大多数冥想者来说，Muse是更好且便宜得多的选择。"
         },
         {
           "q": "2026年最好的EEG头戴设备是什么？",
@@ -947,7 +1208,7 @@
         },
         {
           "q": "哪款EEG头戴设备的SDK最开放？",
-          "a": "Neurosity Crown——通过JavaScript、Python和Swift获取原始EEG，数据访问无需订阅。Emotiv Insight 2的SDK与之相当，但原始数据访问需Pro订阅。NeuroSky MindWave Mobile 2在平价层级拥有开放SDK。Muse、FocusCalm和Sens.ai是封闭平台。"
+          "a": "Neurosity Crown——通过JavaScript和Python获取原始EEG，数据访问无需订阅。Emotiv Insight 2的SDK与之相当，但原始数据访问需Pro订阅。NeuroSky MindWave Mobile 2在平价层级拥有开放SDK。Muse、FocusCalm和Sens.ai是封闭平台。"
         },
         {
           "q": "Muse S Athena比Muse 2更值得买吗？",
@@ -1037,6 +1298,93 @@
           "a": "Therabody和Hyperice的应用提供引导式套路、压力传感器以及与其他恢复设备的集成。对于想要结构化冲击方案的用户——是的，应用的价值是真实的。对于已经知道要针对哪些肌群的用户，应用是可选的。"
         }
       ]
+    },
+    "best-vagus-nerve-stimulators-2026": {
+      "title": "2026年迷走神经刺激仪推荐：10款对比评测",
+      "description": "2026年10款迷走神经刺激仪排名：耳部tVNS、颈部设备、振动穿戴。真实价格、FDA状态、客观证据与安全须知。",
+      "intro": "迷走神经刺激仪市场鱼龙混杂：有受监管的医疗器械，有证据支持的消费级硬件，也有作用机制几乎碰不到迷走神经的保健产品。我们用同一套评分标准——证据与临床支持、刺激机制、方案灵活性、舒适度、生物反馈和性价比——为2026年最可信的十款设备打分，依据是厂商资料、监管记录和已发表的研究，价格于2026年10月1日在官方商店核实。ONDA未对其中任何设备进行实机测试。",
+      "verdict": "论证据和机制透明度，Nurosym赢下消费级类别——它的硬件出现在大量独立的同行评审tVNS研究中。gammaCore Sapphire CV是监管层面的标杆，但需处方且专用于头痛；Truvaga 350出自同一厂商，无需处方，现价$325。如果全天佩戴是决定性因素，Apollo Neuro是合适之选；Vagustim是方案丰富、可替代Nurosym的耳部设备；Pulsetto是最便宜的可信入门款；Hoolest VeRelief Prime适合运动恢复；Sensate用起来最舒服；Xen by Neuvana胜在熟悉的外形。LivaNova VNS Therapy是植入式医疗标杆——不是消费者能买的产品。在购买任何一款之前，先试试免费的慢呼吸：它在压力和HRV方面的证据相当甚至更好。",
+      "content": "## 快速回答\n\n**综合最佳：Nurosym**（€700，约$820）——研究基础最深厚的消费级耳部设备。**最佳处方设备：gammaCore Sapphire CV**，获FDA许可用于特定头痛疾病。**最佳免处方颈部设备：Truvaga 350**（$325）。**最适合全天佩戴：Apollo Neuro**（$448，振动而非电刺激）。**最便宜的可信选择：Pulsetto**（$269）。在花钱之前，先试试慢呼吸——它免费，而且在日常压力方面的证据至少一样好。\n\n## 我们如何排名\n\n每款设备都按ONDA公开的[测评方法](/reviews/methodology)评分：六项加权标准，其中证据与临床支持权重最高，因为这个领域充斥着与硬件实际作用关联很弱的营销说法。总分是加权平均值——不是凭感觉给的数字。十款设备均依据厂商资料、已发表的试验记录、监管许可和2026年独立评测评估，而非实机测试，因此请把分数当作基于证据的起点。\n\n## 对比表\n\n| 设备 | 价格（2026年10月） | 类型 | 监管状态 | 适合 |\n|---|---|---|---|---|\n| [Nurosym](/reviews/nurosym) | €700（~$820） | 耳部tVNS（夹式） | CE认证IIa类医疗器械 | 重视证据的买家 |\n| [gammaCore Sapphire CV](/reviews/gammacore-sapphire-cv) | 处方；因保险而异 | 颈部手持式 | FDA许可，头痛适应证 | 偏头痛和丛集性头痛 |\n| [Truvaga 350](/reviews/truvaga-350) | $325（350次） | 颈部手持式 | 一般保健，未获FDA许可 | 免处方颈部VNS |\n| [Apollo Neuro](/reviews/apollo-neuro) | $448，含1年会员 | 振动穿戴设备 | 消费级保健设备，未获FDA许可 | 全天佩戴 |\n| [Vagustim](/reviews/vagustim) | €499（~$540） | 耳部tVNS + 电极 | CE认证IIa类医疗器械 | 预设方案多 |\n| [Pulsetto](/reviews/pulsetto) | $269 | 颈圈 | CE认证 | 价格最低 |\n| [Hoolest VeRelief Prime](/reviews/hoolest-verelief-prime) | $279 | 手持式 | 消费级保健设备，未获FDA许可 | 运动恢复 |\n| [Sensate](/reviews/sensate) | $299 | 胸前次声设备 | 消费级保健设备，未获FDA许可 | 睡前放松 |\n| [Xen by Neuvana](/reviews/xen-by-neuvana) | $399 | 耳部tVNS（耳机） | 消费级保健设备，未获FDA许可 | 熟悉的外形 |\n| [LivaNova VNS Therapy](/reviews/livanova-vns-therapy) | 手术；保险覆盖 | 植入式 | FDA批准（癫痫、抑郁症） | 仅作医疗参照 |\n\n## 如何选择\n\n**耳部（耳廓）tVNS**——Nurosym、Vagustim、Xen。通过夹子或耳塞刺激外耳皮肤，那里有迷走神经的分支经过。舒适、安静，是研究最多的消费级方式。\n\n**颈部设备**——gammaCore、Truvaga、Pulsetto、Hoolest。通过颈部皮肤进行刺激。只有gammaCore获得FDA许可，且仅限头痛疾病；其他都是保健产品。\n\n**振动和声音设备**——Apollo Neuro和Sensate不对神经进行电刺激，而是通过触觉或低频声音来安抚神经系统。日常更好用，但离“迷走神经刺激”这个标签更远。\n\n**处方还是消费级**——如果你有偏头痛或丛集性头痛，请就gammaCore咨询神经科医生：它是这里唯一一款在该用途上有试验支持的许可设备。如果是为了一般压力或睡眠，所有消费级设备都属于保健消费，而不是治疗。\n\n## 证据实际显示了什么\n\n最强的证据在医疗端。植入式VNS用于癫痫和抑郁症已有数十年的获批使用历史；gammaCore获FDA许可，用于12岁及以上人群偏头痛的预防和治疗、成人丛集性头痛，以及成人阵发性偏侧头痛和持续性偏侧头痛。\n\n至于消费级保健宣称，证据要弱得多。Wolf等人的一项动态贝叶斯荟萃分析（*Psychophysiology* 2021，doi: 10.1111/psyp.13933）汇总了16项针对健康人群的假刺激对照研究，发现单次耳部tVNS对迷走神经介导的心率变异性没有影响。关于压力、睡眠或情绪的单项研究大多规模小、周期短，且常由企业资助。这并不意味着这些设备毫无作用——但承诺可测量“迷走神经张力”提升的营销跑在了科学前面。\n\n## 安全\n\n- **植入设备：** 装有心脏起搏器、植入式除颤器或其他植入电子设备者，除非心脏科医生同意，否则不要使用电刺激设备。\n- **心律问题：** 如果你有心律失常、心率过慢或曾经晕厥，请先咨询医生——迷走神经刺激可能使心率减慢。\n- **怀孕和癫痫：** 这些设备一般未在孕期进行测试；请先寻求医疗建议。\n- **颈部设备：** 已知有颈动脉疾病、做过颈部手术或皮肤破损时避免使用。\n- **切勿在驾驶**或操作机器时使用，感到头晕或要晕倒时立即停止。\n\n## 有真实证据的免费替代方案\n\n缓慢、有节奏的呼吸——每分钟约五到七次，呼气更长——在练习时能可靠地提升迷走神经介导的HRV，不花一分钱，而且研究基础比任何消费级刺激仪都更广。可以从我们的指南开始：[迷走神经练习](/articles/vagus-nerve-exercises)、[相干呼吸](/articles/coherent-breathing-guide)、[找到你的共振呼吸频率](/articles/find-your-resonance-breathing-rate)和[哼鸣与迷走神经](/articles/humming-breath-vagus)。如果你尝试某款设备，在判断它是否值这个价之前，先与几周的呼吸练习做对比。\n\n## 你该买哪一款？\n\n如果决定性标准是证据，选Nurosym。如果是日常可穿戴性，选Apollo Neuro。如果需要用于头痛的处方临床使用，选gammaCore。如果预算有限，选Pulsetto；想要gammaCore厂商的颈部设备，选Truvaga 350。这个品类不大，但差异是真实的，上面的评分直接对应哪种取舍对你最重要。",
+      "picks": {
+        "nurosym": {
+          "award": "综合最佳",
+          "takeaway": "消费级耳部tVNS中同行评审研究基础最深厚——以刻意简朴的形式提供研究级耳廓刺激（€700，约$820）。"
+        },
+        "gammacore-sapphire-cv": {
+          "award": "最佳临床设备（处方）",
+          "takeaway": "获FDA许可的处方颈部设备，用于偏头痛（12岁及以上）、丛集性头痛和两种罕见头痛疾病——颈部刺激的临床标杆。"
+        },
+        "truvaga-350": {
+          "award": "最佳颈部设备（消费级）",
+          "takeaway": "gammaCore厂商推出的非处方保健设备——同一颈部平台，无需处方，现价$325含350次使用。"
+        },
+        "apollo-neuro": {
+          "award": "最适合日常佩戴",
+          "takeaway": "这里唯一真正能全天佩戴的设备——振动而非电刺激，在HRV和恢复方面的证据不断增加。"
+        },
+        "vagustim": {
+          "award": "最佳方案库",
+          "takeaway": "预设方案库最丰富的耳廓tVNS，有欧盟CE认证的监管背书——证据仅次于Nurosym。"
+        },
+        "pulsetto": {
+          "award": "最佳性价比（消费级）",
+          "takeaway": "最便宜的颈戴式tVNS，有四个引导方案——入门颈部刺激最容易的选择。"
+        },
+        "hoolest-verelief-prime": {
+          "award": "最适合运动员",
+          "takeaway": "短时、高强度的手持式训练，围绕运动恢复和睡前副交感神经预备设计。"
+        },
+        "sensate": {
+          "award": "最适合睡前放松",
+          "takeaway": "搭配声音使用的胸前次声设备——这里用起来最舒服的设备，但机制证据较薄弱。"
+        },
+        "xen-by-neuvana": {
+          "award": "最亲民的外形",
+          "takeaway": "包装成搭配音乐的耳机的耳廓tVNS——外形巧妙，设备本身的证据有限。"
+        },
+        "livanova-vns-therapy": {
+          "award": "参照医疗器械",
+          "takeaway": "用于药物难治性癫痫和难治性抑郁症的植入式临床金标准——作为所有非侵入设备所模仿的基准收录。"
+        }
+      },
+      "faq": [
+        {
+          "q": "2026年最好的迷走神经刺激仪是哪款？",
+          "a": "论有证据支持的消费级tVNS，Nurosym是最强之选——它的硬件已被大量同行评审的耳廓VNS研究采用。论处方医疗用途，gammaCore Sapphire CV是获FDA许可、用于特定头痛疾病的标杆。若想日常佩戴且不要电刺激，Apollo Neuro最合适。"
+        },
+        {
+          "q": "迷走神经刺激仪有FDA批准吗？",
+          "a": "只有部分有。gammaCore Sapphire CV（非侵入、处方）获FDA许可，用于12岁及以上人群偏头痛的预防和治疗、成人丛集性头痛，以及成人阵发性偏侧头痛和持续性偏侧头痛。LivaNova VNS Therapy（植入式）获FDA批准用于药物难治性癫痫和难治性抑郁症。消费级设备——Nurosym、Truvaga、Pulsetto、Apollo Neuro、Sensate、Xen、Hoolest、Vagustim——均未获FDA许可治疗任何疾病；其中几款在欧洲有CE认证。"
+        },
+        {
+          "q": "耳部（耳廓）迷走神经刺激和颈部设备效果一样吗？",
+          "a": "尚无人证明哪一种在保健用途上明显更好。耳部tVNS（Nurosym、Vagustim、Xen）针对迷走神经耳支，研究基础更大；颈部设备（gammaCore、Truvaga、Pulsetto）针对颈部迷走神经，而gammaCore的头痛试验是所有非侵入设备中最强的临床证据。对健康买家来说，实际差别在于舒适度、单次时长和价格。"
+        },
+        {
+          "q": "一台好的迷走神经刺激仪要多少钱？",
+          "a": "2026年10月官方商店价格：Pulsetto $269、Hoolest VeRelief Prime $279、Sensate $299、Truvaga 350 $325（Truvaga Plus $499）、Xen by Neuvana $399、Apollo Neuro $448（含一年会员）、Vagustim约$540（€499）、Nurosym约$820（€700）。gammaCore仅凭处方购买，费用取决于你的保险；植入式LivaNova系统需要手术，获批适应证通常由保险覆盖。"
+        },
+        {
+          "q": "哪款迷走神经刺激仪的研究最多？",
+          "a": "消费级方面，Nurosym——即更名后的Parasym硬件——已发表研究最多。医疗方面，LivaNova VNS Therapy有二十多年的FDA批准使用历史，gammaCore的头痛适应证有随机试验支持。大多数消费级保健宣称依据的是小型或结论不一的研究。"
+        },
+        {
+          "q": "Apollo Neuro真的是迷走神经刺激仪吗？",
+          "a": "严格来说不是——Apollo Neuro是振动穿戴设备，不是电刺激tVNS设备。它旨在通过触觉改变自主神经状态，而不是直接刺激迷走神经。之所以收录，是因为它是消费市场上研究最多的非电刺激选择。"
+        },
+        {
+          "q": "迷走神经刺激仪真的有用吗？",
+          "a": "对特定医疗用途，有用：用于癫痫和抑郁症的植入式VNS，以及用于某些头痛疾病的gammaCore，都基于试验获得了监管批准。对于消费级的压力、睡眠和HRV宣称，证据少且不一——2021年一项纳入16项假刺激对照研究的荟萃分析发现，单次耳部tVNS对心率变异性没有影响。有些人仍觉得它们有用，但请把保健宣称视为未经证实。"
+        },
+        {
+          "q": "哪些人不能用迷走神经刺激仪？",
+          "a": "装有心脏起搏器、植入式除颤器或其他植入电子设备，有心律问题、癫痫，或正在怀孕的人，未经医疗建议请勿使用。颈部设备不适合有颈动脉疾病或做过颈部手术的人。切勿在驾驶或操作机器时使用，感到要晕倒时立即停止。"
+        },
+        {
+          "q": "能免费刺激迷走神经吗？",
+          "a": "能。慢呼吸——每分钟约五到七次，呼气更长——在练习时能可靠地提升迷走神经介导的心率变异性，是所有迷走神经技巧中证据最广的。哼鸣、温和的冷水浸脸和规律的有氧运动也有帮助。很多人会先尝试这些方法，只有想要更多结构化时才购买设备。"
+        }
+      ]
     }
   },
   "criteria": {
@@ -1073,7 +1421,16 @@
     "wearability": "佩戴舒适度与续航",
     "app-ux": "App 与软件体验",
     "heat-source": "热源与波长覆盖",
-    "emf": "EMF 控制"
+    "emf": "EMF 控制",
+    "stall-force-amplitude": "堵转力与振幅",
+    "build-attachments": "做工、按摩头与保修",
+    "battery-noise": "续航与噪音",
+    "app-smart-features": "App与智能功能",
+    "ergonomics-portability": "人体工学与便携性",
+    "signal-quality": "信号质量与传感器水准",
+    "training-content": "训练方案与内容",
+    "comfort": "舒适度与佩戴感",
+    "open-data": "开放数据与开发者接入"
   },
   "categories": {
     "pemf": "PEMF 设备",
@@ -1085,7 +1442,8 @@
     "cold-plunge": "冷水浴与冰浴",
     "massage-gun": "筋膜枪",
     "hrv-wearable": "HRV 追踪设备",
-    "sauna": "桑拿与红外桑拿"
+    "sauna": "桑拿与红外桑拿",
+    "vagus-stim": "迷走神经刺激仪"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {

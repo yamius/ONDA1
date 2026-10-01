@@ -23,7 +23,7 @@ const nurosymVsPulsetto: HeadToHead = {
     { name: 'Protocol variety', winner: 'b', note: 'Pulsetto: four guided programmes (sleep, stress, anxiety, pain). Nurosym: a single deliberately-spartan programme with user-titrated intensity.' },
     { name: 'Form factor', winner: 'b', note: 'Pulsetto: lightweight neck collar — minimal setup. Nurosym: ear clip with cable tether to the control unit.' },
     { name: 'Regulatory status', winner: 'tie', note: 'Both CE-marked. Nurosym Class IIa medical device; Pulsetto wellness device. Neither FDA-cleared.' },
-    { name: 'Price', winner: 'b', note: 'Pulsetto: $269 hardware. Nurosym: £599 (~$750). Pulsetto is roughly a third of the price.' },
+    { name: 'Price', winner: 'b', note: 'Pulsetto: $269 hardware. Nurosym: €700 (~$820). Pulsetto costs roughly a third of the price.' },
   ],
   faq: [
     {
@@ -56,7 +56,7 @@ For self-experimenters and biohackers who want to reference the literature, Nuro
 For users who want a polished daily-use experience with guided sleep, stress, anxiety and pain programmes, Pulsetto is the right shape. The neck collar is faster to put on than an ear clip, the four-mode library covers the common use cases, and at $269 it is a third of the entry cost of Nurosym.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-01',
 }
 
 export default nurosymVsPulsetto

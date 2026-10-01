@@ -19,7 +19,7 @@ const truvaga350: ToolReview = {
     { criterionId: 'protocols', score: 6.5, note: 'Two-minute fixed sessions; intensity user-adjustable. The companion app suggests usage patterns rather than distinct programmes.' },
     { criterionId: 'comfort', score: 7.0, note: 'Ergonomic handheld; some users report jaw twitches or neck soreness at higher amplitudes — same as gammaCore.' },
     { criterionId: 'biofeedback', score: 6.0, note: 'App logs sessions and supports simple mood/stress journaling. No on-device HRV measurement.' },
-    { criterionId: 'value', score: 7.5, note: '$499 one-time (or subscription plans). No prescription. Roughly one-fifth the long-term cost of gammaCore.' },
+    { criterionId: 'value', score: 8.0, note: '$325 one-time for 350 preloaded sessions (about six months of daily use) — now only about $56 more than Pulsetto; the rechargeable Truvaga Plus is $499. No prescription. Roughly one-fifth the long-term cost of gammaCore.' },
   ],
   pros: [
     'Same hardware platform as the FDA-cleared gammaCore — proven safety',
@@ -37,7 +37,7 @@ const truvaga350: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from electroCore product documentation, the gammaCore clinical record (shared platform) and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 499, note: 'one-time; 350 sessions before retirement', asOf: '2026-05-21' },
+  price: { usd: 325, note: 'one-time; 350 preloaded sessions; rechargeable Truvaga Plus (unlimited use) $499', asOf: '2026-10-01' },
   link: 'https://www.truvaga.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -69,12 +69,12 @@ The biology behind what these devices target — and the protocols that compound
   relatedSlugs: ['gammacore-sapphire-cv', 'nurosym', 'pulsetto'],
   faq: [
     { q: "Is the Truvaga 350 worth it?", a: "The Truvaga 350 is worth it if you want gammaCore-style cervical tVNS without a prescription. It uses the same hardware platform as FDA-cleared gammaCore and targets the vagal trunk directly. Its consumer use is not FDA-cleared, and its 350-session cap obscures long-term cost." },
-    { q: "How much does the Truvaga 350 cost?", a: "The Truvaga 350 costs $499 one-time, and it provides 350 sessions before retirement. That lifetime cap makes the long-term cost less obvious than the upfront price suggests, so factor in how often you plan to use it." },
+    { q: "How much does the Truvaga 350 cost?", a: "The Truvaga 350 costs $325 one-time on truvaga.com and provides 350 preloaded sessions (about six months of daily use); the rechargeable, unlimited-use Truvaga Plus costs $499. That lifetime cap makes the long-term cost less obvious than the upfront price suggests, so factor in how often you plan to use it." },
     { q: "What are the downsides of the Truvaga 350?", a: "Truvaga is not FDA-cleared for its consumer indication and is sold as a wellness device. The 350-use cap hides long-term cost, sessions are fixed at 2 minutes with intensity the only variable, and there is no on-device HRV biofeedback." },
     { q: "Truvaga 350 vs gammaCore: which is better?", a: "Truvaga uses the same hardware platform as the FDA-cleared gammaCore but needs no prescription or insurance approval. gammaCore holds the FDA clearance; Truvaga is sold as a wellness device. Choose Truvaga for easy access to cervical tVNS." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-01',
 }
 
 export default truvaga350

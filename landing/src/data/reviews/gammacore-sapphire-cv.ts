@@ -11,10 +11,10 @@ const gammacoreSapphireCv: ToolReview = {
   verdict:
     'The FDA-cleared medical reference for non-invasive cervical VNS — a clinical tool, not a consumer wellness device.',
   summary:
-    'gammaCore is the only non-invasive vagus nerve stimulator with FDA clearance for migraine and cluster-headache treatment. It is a handheld device pressed against the side of the neck over the carotid artery, delivering a proprietary 5 kHz waveform burst for 2-minute sessions. Available by prescription only. Within its indications it is the most evidence-backed device in this list — and it is priced and gated accordingly.',
+    'gammaCore is the only non-invasive vagus nerve stimulator with FDA clearance for headache disorders — migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. It is a handheld device pressed against the side of the neck over the carotid artery, delivering a proprietary 5 kHz waveform burst for 2-minute sessions. Available by prescription only. Within its indications it is the most evidence-backed device in this list — and it is priced and gated accordingly.',
   overallScore: 8.4,
   scores: [
-    { criterionId: 'evidence', score: 9.7, note: 'FDA-cleared for migraine prevention and cluster-headache acute/preventive treatment; 30+ randomised trials. The clinical reference for non-invasive cervical VNS.' },
+    { criterionId: 'evidence', score: 9.7, note: 'FDA-cleared for migraine prevention and acute treatment (age 12+), cluster-headache acute/preventive treatment, paroxysmal hemicrania and hemicrania continua; 30+ randomised trials. The clinical reference for non-invasive cervical VNS.' },
     { criterionId: 'mechanism', score: 8.5, note: 'Cervical tVNS over the carotid sheath — targets the cervical vagal trunk directly. Proprietary 5 kHz burst waveform; parameters are fixed, not user-adjustable.' },
     { criterionId: 'protocols', score: 5.5, note: 'Two-minute fixed sessions, dose set by prescriber. No programme variety — by design, since dosing is clinically calibrated.' },
     { criterionId: 'comfort', score: 7.0, note: 'Handheld and ergonomic; the user controls placement and intensity. Some users report neck discomfort or jaw twitches at higher amplitudes.' },
@@ -29,7 +29,7 @@ const gammacoreSapphireCv: ToolReview = {
   ],
   cons: [
     'Prescription-only in the US; gated by a physician',
-    'Indication limited to migraine and cluster headache',
+    'Indications limited to headache disorders (migraine, cluster headache, paroxysmal hemicrania, hemicrania continua)',
     'No customisable protocols — fixed 2-minute sessions',
     'Cost varies by payer; refill model can lock you in',
   ],
@@ -42,7 +42,7 @@ const gammacoreSapphireCv: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-gammaCore Sapphire CV is the only non-invasive [vagus nerve](/glossary/vagus-nerve) stimulator with FDA clearance — a fact that puts it in a different regulatory tier from everything else in this list. It is cleared for migraine prevention, episodic-migraine acute treatment, and cluster-headache acute and preventive treatment, backed by more than thirty randomised controlled trials over the past decade. The device is held against the side of the neck over the carotid sheath and delivers a proprietary 5 kHz burst waveform for two-minute sessions; dosing is set clinically rather than by app.
+gammaCore Sapphire CV is the only non-invasive [vagus nerve](/glossary/vagus-nerve) stimulator with FDA clearance — a fact that puts it in a different regulatory tier from everything else in this list. It is cleared for migraine prevention and acute treatment (from age 12), cluster-headache acute and preventive treatment, and the rarer headache disorders paroxysmal hemicrania and hemicrania continua, backed by more than thirty randomised controlled trials over the past decade. The device is held against the side of the neck over the carotid sheath and delivers a proprietary 5 kHz burst waveform for two-minute sessions; dosing is set clinically rather than by app.
 
 ## What are the downsides of gammaCore Sapphire CV?
 
@@ -69,13 +69,13 @@ The biology behind what these devices target — and the protocols that compound
   ],
   relatedSlugs: ['truvaga-350', 'nurosym', 'livanova-vns-therapy'],
   faq: [
-    { q: "Do you need a prescription for gammaCore?", a: "Yes. In the US, gammaCore Sapphire CV is prescription-only, so access is gated by a physician. It is the only non-invasive vagus nerve stimulator with FDA clearance, and that clearance covers migraine and cluster-headache treatment, not general wellness use." },
+    { q: "Do you need a prescription for gammaCore?", a: "Yes. In the US, gammaCore Sapphire CV is prescription-only, so access is gated by a physician. It is the only non-invasive vagus nerve stimulator with FDA clearance, and that clearance covers migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua, not general wellness use." },
     { q: "How much does gammaCore cost?", a: "gammaCore costs around $600, with refill cards extra. The actual cost varies by payer, and the refill model can lock you in over time. Because a prescription is required, you get it through a physician rather than as a simple retail purchase." },
     { q: "How does gammaCore work?", a: "gammaCore is a handheld device you press against the side of the neck over the carotid artery. It delivers a proprietary 5 kHz waveform burst in fixed 2-minute sessions, targeting the cervical vagal trunk directly rather than the ear branch. Dosing is clinically calibrated, with no customisable protocols." },
     { q: "Is gammaCore worth it?", a: "For clinically indicated migraine or cluster-headache patients, yes: it has the deepest randomised-trial evidence base of any device in its category. For general stress relief or wellness it is the wrong tool, because it is a clinical device with narrow indications and prescription gating." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-01',
 }
 
 export default gammacoreSapphireCv
