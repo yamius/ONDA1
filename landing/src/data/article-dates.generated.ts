@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-09-30T15:17:44+02:00"
+    "modified": "2026-10-01T15:45:22+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",

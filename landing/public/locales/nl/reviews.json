@@ -289,6 +289,383 @@
           "a": "De PlatinumLED BIOMAX 600 is het meest geschikt voor kopers die een breed spectrum en geverifieerde EMF-discipline willen voor minder dan de prijs van Joovv. PlatinumLED publiceert zijn onafhankelijke EMF-tests (<0.3 mG op 6\") openbaar, zeldzaam in de categorie. Voor het hele lichaam moet je het middelgrote paneel combineren met meer panelen."
         }
       ]
+    },
+    "stelo": {
+      "verdict": "Dexcom G7-hardware zonder receptplicht — de nauwkeurigste consumenten-CGM voor de laagste prijs daarvoor.",
+      "summary": "Stelo is de CGM die Dexcom rechtstreeks aan consumenten verkoopt, bedoeld voor biohackers zonder diabetes; de FDA keurde hem in 2024 goed als eerste vrij verkrijgbare (OTC) CGM in de VS. De hardware is de Dexcom G7-sensor — dezelfde sensor die onder Levels en Nutrisense zit — verkocht via Dexcoms eigen app voor $99 voor twee sensoren (voorraad voor één maand). De analyse is eenvoudiger dan bij Levels, maar de data zijn dezelfde. De verhouding tussen prijs en nauwkeurigheid is de beste in de consumenten-CGM-markt.",
+      "description": "ONDA-review van Stelo — Dexcoms door de FDA goedgekeurde OTC-CGM voor niet-diabeten: de Dexcom G7-sensor zonder recept. Beoordeeld op nauwkeurigheid, inzichten, flexibiliteit en prijs.",
+      "bestFor": "Het best voor biohackers die Dexcom G7-nauwkeurigheid willen voor de beste prijs, zonder coachingabonnement.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Dexcom Stelo, validatieliteratuur over de Dexcom G7 en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "OTC-CGM (Dexcom G7-hardware, consumentenapp)",
+      "pros": [
+        "Dexcom G7-hardware — hetzelfde nauwkeurigheidsplafond als Levels en Nutrisense",
+        "Door de FDA goedgekeurd en vrij verkrijgbaar — geen recept, geen coachingabonnement nodig",
+        "De goedkoopste manier om een Dexcom-sensor te dragen",
+        "15 dagen draagtijd bij de Stelo-variant — langer dan de standaard G7"
+      ],
+      "cons": [
+        "Analyse eenvoudiger dan Levels — geen rangschikkingshistorie per voedingsmiddel",
+        "Geen menselijke coach — alleen begeleiding via de app",
+        "Alleen in de VS (rechtstreekse verzending door Dexcom)",
+        "Beperkte integratie met apps van derden vergeleken met Levels"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Dexcom G7, dezelfde hardware waarop Levels en Nutrisense draaien — MARD ~8,2%, 15 dagen draagtijd bij de Stelo-variant, 30 minuten opwarmtijd.",
+        "insights": "Degelijke weergaven van de impact van maaltijden en de dagelijkse tijd binnen het doelbereik. Minder diepgang dan Levels — geen AUC-uitsplitsing of rangschikkingshistorie per voedingsmiddel — maar dekt wat de meeste gebruikers nodig hebben.",
+        "coaching": "Geen menselijke coach; alleen AI-begeleiding in de app en educatieve content. Coaching is wat je inlevert voor de prijs.",
+        "app-integration": "Dexcom Stelo-app voor iOS/Android met Apple Health-integratie. Minder koppelingen met derden dan Levels.",
+        "flexibility": "Koop er één of meer — geen abonnement nodig, sensoren koop je wanneer nodig. 15 dagen draagtijd geeft meer flexibiliteit dan de G7 van 10 dagen bij Nutrisense (Levels levert nu zelf Stelo).",
+        "value": "$99 voor twee sensoren (~30 dagen) of $89 met abonnement. De beste beschikbare prijs voor Dexcom G7-hardware, zonder recept."
+      },
+      "content": "## Waar hij voorop loopt\n\nStelo is de goedkoopste legitieme manier om een Dexcom G7 op je arm te dragen en je [glucosepieken](/glossary/glucose-spikes) in realtime te volgen. De hardware is identiek aan wat Levels en Nutrisense leveren voor twee tot drie keer de prijs — dezelfde sensor, hetzelfde nauwkeurigheidsplafond (MARD ~8,2% in onafhankelijke vergelijking), dezelfde opwarmtijd van 30 minuten. Wat je inlevert is de verpakking eromheen: de app van Stelo is degelijk maar niet toonaangevend, de coachinglaag is AI in de app in plaats van een geregistreerde diëtist, en het integratie-ecosysteem is smaller dan bij Levels. Als OTC-product dat in 2024 door de FDA is goedgekeurd heb je geen recept nodig, en je kunt sensoren per pakje kopen.\n\n## Wat zijn de nadelen van Stelo?\n\nHet belangrijkste nadeel van Stelo is de eenvoudigere analyse — dat is de afweging. Stelo biedt weergaven van de impact van maaltijden en de tijd binnen het doelbereik; Levels voegt AUC-uitsplitsing, een rangschikkingshistorie per voedingsmiddel en een diepere analysesuite toe. Er is geen menselijke coach, de lijst met integraties van derden is korter, en verzending alleen in de VS rechtstreeks via Dexcom beperkt de internationale beschikbaarheid. Als juist die functies de reden zijn om te kopen, is Stelo niet het juiste instrument.\n\n## Voor wie is Stelo geschikt?\n\nKies Stelo als je de nauwkeurigste beschikbare CGM-hardware wilt voor de beste prijs en erop vertrouwt dat je de data zelf kunt interpreteren. Wil je de diepste analyse op dezelfde sensor: Levels. Wil je een geregistreerde diëtist: Nutrisense. De hardware is in alle drie gevallen identiek — je betaalt voor wat erboven zit.\n\n---\n\n## Achtergrondinformatie\n\nDe stofwisselingsbiologie die deze programma's zichtbaar maken — en de protocollen die de data mogelijk maken.\n\n- [De darm-hersenas als datakoppeling](/articles/gut-brain-axis-data-link) — waar microbioom- en glucosepatronen samenkomen\n- [Metabole flexibiliteit: wat het is en hoe je het herkent](/articles/metabolic-flexibility-dual-fuel-system) — wat een glucosecurve wel en niet kan vertellen over het wisselen van brandstof\n",
+      "faq": [
+        {
+          "q": "Is Stelo van Dexcom het waard?",
+          "a": "Stelo is het waard als je Dexcom G7-nauwkeurigheid wilt voor de laagste prijs zonder coachingabonnement. Hij is door de FDA goedgekeurd als OTC-product, vraagt geen recept en biedt 15 dagen sensordraagtijd. De analyse is eenvoudiger dan bij Levels, er is geen menselijke coach en hij wordt alleen in de VS geleverd."
+        },
+        {
+          "q": "Hoeveel kost Stelo?",
+          "a": "Stelo kost $99 voor twee sensoren, ongeveer 30 dagen draagtijd, of $89 per maand met abonnement. Er is geen recept nodig. Het is de goedkoopste manier om Dexcom-hardware te dragen."
+        },
+        {
+          "q": "Stelo vs Levels: wat is beter?",
+          "a": "Beide gebruiken hardware van het Dexcom G7-platform — Levels levert nu Stelo-sensoren binnen het lidmaatschap. Stelo is goedkoper en vraagt geen coachingabonnement. Levels heeft een diepere analyse met rangschikkingshistorie per voedingsmiddel en bredere integratie met derden. Kies Stelo voor de prijs, Levels voor diepgaandere inzichten."
+        },
+        {
+          "q": "Wat zijn de nadelen van Stelo?",
+          "a": "De analyse van Stelo is eenvoudiger dan die van Levels, zonder rangschikkingshistorie per voedingsmiddel. Er is geen menselijke coach, alleen begeleiding in de app, hij wordt alleen in de VS geleverd via Dexcom, en de integratie met apps van derden is beperkt vergeleken met Levels."
+        }
+      ]
+    },
+    "levels": {
+      "verdict": "Het meest verfijnde CGM-programma voor biohackers — de beste inzichten in de klasse, nu in gelaagde lidmaatschappen (van $80/jaar alleen app tot $1,329/jaar met labwaarden en twee maanden CGM).",
+      "summary": "Levels is het CGM-programma dat de biohackercategorie heeft gedefinieerd. Het levert Dexcom Stelo-sensoren (Dexcoms vrij verkrijgbare CGM, geen recept nodig) met een app waarvan de impactanalyse per voedingsmiddel, de score voor tijd binnen het doelbereik en de coaching per maaltijd de diepste op de markt zijn. Standaard is er geen menselijke coach — Levels zet in op app-intelligentie plus content van zijn medische adviesraad. Levels is overgestapt van een vast programma van ~$199/maand naar gelaagde lidmaatschappen: een abonnement met alleen de app ($80/jaar), Core ($399/jaar met één maand CGM en twee labpanels) en Complete ($1,329/jaar met twee maanden CGM, uitgebreide labwaarden en een sessie met een voedingsdeskundige). Continue CGM buiten de inbegrepen maand(en) is een extra optie. Leden kunnen ook hun eigen Stelo of Dexcom G7 koppelen (de G7 vereist een recept, dat Levels via partnerartsen kan regelen) of elke CGM die synchroniseert met Apple Health of Health Connect.",
+      "description": "Levels-review: de meest verfijnde biohacker-CGM op basis van Dexcom Stelo — topinzichten per voedingsmiddel, nu als lidmaatschap vanaf $15/maand. Is het het waard?",
+      "bestFor": "Het best voor serieuze biohackers die de diepste CGM-analysetool willen en daar extra voor betalen.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie en supportartikelen van Levels, validatieliteratuur over het Dexcom G7-platform en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "CGM-coachingprogramma (Dexcom Stelo)",
+      "pros": [
+        "De diepste analyse per voedingsmiddel in de categorie",
+        "Dexcom Stelo (G7-platform) — topnauwkeurigheid onder consumenten-CGM's, geen recept nodig",
+        "Verfijnde app en contentbibliotheek, gesteund door een geloofwaardige medische raad",
+        "Integratie met Apple Health en Oura direct beschikbaar"
+      ],
+      "cons": [
+        "Core en Complete bevatten maar 1–2 maanden CGM per jaar — continu dragen kost extra",
+        "Geen menselijke coach in het standaardabonnement — alleen begeleiding via de app",
+        "Alleen in de VS (stand 2026)",
+        "De aangeprezen prijs geldt bij jaarlijkse betaling; maandelijks komt het alleen bij een jaarverbintenis op hetzelfde neer"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Dexcom Stelo — de OTC-sensor op basis van het Dexcom G7-platform, in onafhankelijke vergelijking een van de nauwkeurigste consumenten-CGM's (MARD van het G7-platform ~8,2% ten opzichte van referentie). 15 dagen draagtijd, 30 minuten opwarmtijd, geen recept. Score ongewijzigd: de overstap van G7 naar Stelo behoudt hetzelfde sensorplatform.",
+        "insights": "De diepste analyse van maaltijdimpact op de markt — score per maaltijd, AUC, piek, tijd tot uitgangswaarde, plus dagelijkse/wekelijkse weergaven van tijd binnen het doelbereik en glucosevariabiliteit.",
+        "coaching": "Standaard geen menselijke coach; de app is de coach, ondersteund door een uitgebreide contentbibliotheek en een medische adviesraad. Coaching apart bij te boeken.",
+        "app-integration": "Verfijnde iOS/Android-app. Integreert met Apple Health en Oura; voedingslogboek via MyFitnessPal ondersteund.",
+        "flexibility": "Maandelijkse of jaarlijkse betaling; pauzeren mogelijk. Export van ruwe data op aanvraag. Geen verplichting na de lopende maand.",
+        "value": "Nu gelaagd: $80/jaar alleen app, $399/jaar Core (1 maand CGM + 2 labpanels), $1,329/jaar Complete (2 maanden CGM + labwaarden + voedingsdeskundige). Veel goedkopere instap dan de oude $199/maand, maar continu een CGM dragen kost extra."
+      },
+      "content": "## Waar hij voorop loopt\n\nLevels is het programma dat CGM tot een consumentencategorie voor mensen zonder diabetes heeft gemaakt, en de app is nog altijd de best doordachte software in het veld. Maaltijden verschijnen niet zomaar op een tijdlijn — elke maaltijd krijgt een score, wordt vergeleken met je eigen geschiedenis, opgesplitst in [glucosepiek](/glossary/glucose-spikes), AUC en tijd tot uitgangswaarde, en samengevoegd in dagelijkse en wekelijkse weergaven van tijd binnen het doelbereik die [metabole flexibiliteit](/glossary/metabolic-flexibility) trainen. De meegeleverde sensor is nu Dexcom Stelo — de vrij verkrijgbare sensor zonder recept op basis van het Dexcom G7-platform, die onafhankelijke MARD-vergelijkingen bovenaan de nauwkeurigheidsranglijst van consumenten-CGM's zetten. De medische adviesraad geeft een geloofwaardigheid die de meeste programma's met weinig coaching missen.\n\n## Wat zijn de nadelen van Levels?\n\nHet prijsmodel moet je zorgvuldig lezen. Levels heeft zijn oude alles-in-één-programma van ~$199 per maand vervangen door gelaagde lidmaatschappen: $80 per jaar voor alleen de app (eigen CGM meenemen), $399 per jaar voor Core met één maand CGM en twee labpanels, en $1,329 per jaar voor Complete met twee maanden CGM. De instap is veel goedkoper dan vroeger, maar als je continu een sensor wilt dragen, betaal je extra CGM bovenop — of je koopt een vrij verkrijgbare Dexcom Stelo of Abbott Lingo en gebruikt het abonnement met alleen de app. Standaard is er geen menselijke coach; als een geregistreerde diëtist deel uitmaakt van wat je nodig hebt, past Nutrisense beter.\n\n## Voor wie is Levels geschikt?\n\nKies Levels als je CGM als meetinstrument ziet en niet als experiment — je wilt de diepste analyse, je vertrouwt meer op app-intelligentie dan op menselijke coaching, en je waardeert labwaarden plus periodieke CGM-blokken meer dan continu dragen. Wil je alleen de sensor en een eenvoudigere app, dan is Dexcom Stelo of Lingo los het goedkopere instrument. Is menselijke coaching de prioriteit: Nutrisense.\n\n---\n\n## Achtergrondinformatie\n\nDe stofwisselingsbiologie die deze programma's zichtbaar maken — en de protocollen die de data mogelijk maken.\n\n- [Energieregelaar: TSH](/articles/energy-governor-tsh) — door de schildklier aangestuurde stofwisseling als bovenstroomse factor van de glucoseverwerking\n- [GLP-1-biologie en spierbehoud](/articles/glp1-biology-muscle-preservation) — wat CGM-data laten zien tijdens gebruik van GLP-1\n- [AI-biomarkertracking](/articles/ai-biomarker-tracking-predictive) — CGM als de dichtste beschikbare datastroom van consumentenbiomarkers\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost Levels?",
+          "a": "Per september 2026 verkoopt Levels gelaagde lidmaatschappen: ongeveer $80 per jaar voor alleen de app (eigen CGM meenemen), $399 per jaar voor Core (één maand CGM plus twee labpanels) en $1,329 per jaar voor Complete (twee maanden CGM, uitgebreide labwaarden en een sessie met een voedingsdeskundige). Extra CGM-maanden zijn een optie. Het oude vaste programma van ~$199 per maand bestaat niet meer."
+        },
+        {
+          "q": "Zit er bij Levels een coach bij?",
+          "a": "Nee. In het standaardabonnement is er geen menselijke coach. Levels vertrouwt op app-intelligentie, met impactanalyse per voedingsmiddel, een score voor tijd binnen het doelbereik en begeleiding per maaltijd, plus content van zijn medische adviesraad. Wie menselijke coaching wil, kan beter naar andere programma's kijken."
+        },
+        {
+          "q": "Levels vs Lingo: welke CGM moet ik kiezen?",
+          "a": "Levels geeft de diepste inzichten en levert Dexcom Stelo (G7-platform, iets nauwkeuriger dan Libre 3), maar is een lidmaatschap (van $80 per jaar alleen app tot $1,329 per jaar) en alleen in de VS beschikbaar. Lingo vraagt geen abonnement, is de goedkoopste legitieme instap en biedt een eenvoudigere score per maaltijd op Libre 3. Kies Levels voor diepgang, Lingo voor de kosten."
+        }
+      ]
+    },
+    "lingo": {
+      "verdict": "Abbotts Libre-hardware zonder recept — de eenvoudigste instap in CGM voor de laagste prijs per losse sensor.",
+      "summary": "Lingo is de CGM die Abbott rechtstreeks aan consumenten verkoopt, vrij verkrijgbaar (zonder recept), met Libre 3-hardware en een app voor beginners op het gebied van metabole gezondheid. Sensoren van twee weken voor $54 per stuk, geen abonnement nodig. De app richt zich op één enkele maatstaf per maaltijd, de „Lingo Count”, in plaats van de diepe analyses van Levels. De juiste instap als kosten en eenvoud belangrijker zijn dan diepgang van inzichten.",
+      "description": "ONDA-review van Lingo — Abbotts CGM voor consumenten op Libre 3-hardware, vrij verkrijgbaar zonder recept. Beoordeeld op nauwkeurigheid, inzichten, flexibiliteit en prijs.",
+      "bestFor": "Het best voor nieuwe CGM-gebruikers die de goedkoopste legitieme instap zonder abonnement willen.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Abbott Lingo, validatieliteratuur over de Libre 3 en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "OTC-CGM (consumentenvariant van Abbott Libre 3)",
+      "pros": [
+        "Geen recept, geen abonnement — koop losse sensoren wanneer je ze nodig hebt",
+        "Goedkoopste legitieme toegang tot een consumenten-CGM in de VS",
+        "Abbott Libre 3 — betrouwbare draagtijd van 14 dagen, zonder kalibratie",
+        "Overzichtelijke app voor nieuwe CGM-gebruikers"
+      ],
+      "cons": [
+        "Analyse eenvoudiger dan Levels — alleen een piekscore per maaltijd",
+        "In geen enkel abonnement een menselijke coach",
+        "Beperkte integratie met derden vergeleken met Levels",
+        "Libre 3 is in onafhankelijke vergelijking minder nauwkeurig dan Dexcom G7"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre 3 — MARD ~9%, 14 dagen draagtijd, zonder kalibratie, 60 minuten opwarmtijd. In onafhankelijke vergelijking iets minder nauwkeurig dan Dexcom G7.",
+        "insights": "Opgebouwd rond één piekscore per maaltijd, de „Lingo Count”. Eenvoudiger dan Levels — makkelijker voor beginners, frustrerend voor gevorderden.",
+        "coaching": "Minimaal — alleen begeleiding in de app, geen coach. Abbott kiest voor eenvoud boven coaching.",
+        "app-integration": "Overzichtelijke iOS/Android-app met ondersteuning voor Apple Health en Google Fit. Minder koppelingen met derden dan Levels.",
+        "flexibility": "Geen abonnement nodig — koop losse sensoren van 2 weken voor $54 per stuk wanneer nodig, of plannen met meerdere sensoren. De flexibelste commerciële CGM in deze lijst.",
+        "value": "$54 per sensor van 2 weken zonder verplichting; plannen met meerdere sensoren en abonnementen verlagen de prijs per sensor. Een van de goedkoopste legitieme toegangen tot CGM in de VS."
+      },
+      "content": "## Waar hij voorop loopt\n\nLingo is de goedkoopste legitieme weg naar CGM voor mensen zonder diabetes in de VS. Abbotts Libre 3-sensor — hetzelfde betrouwbare platform van 14 dagen dat Ultrahuman M1, Veri en Hello Inside gebruiken — vrij verkrijgbaar zonder recept en zonder abonnementsverplichting. Eén losse sensor van twee weken kost $54 zonder verplichting; plannen met meerdere sensoren en abonnementen verlagen de prijs per sensor. De app is bewust eenvoudig: een piekscore per maaltijd, de „Lingo Count”, in plaats van een diepe analysesuite. Voor nieuwe CGM-gebruikers die willen experimenteren zonder zich te binden aan een programma van $200 per maand, is die eenvoud juist de waarde.\n\n## Wat zijn de nadelen van Lingo?\n\nHet is een instrument voor beginners. De analyselaag met één score wordt frustrerend zodra je je eigen curves hebt leren lezen — er is geen AUC-uitsplitsing, geen rangschikkingshistorie per voedingsmiddel, geen coaching. De lijst met integraties van derden is kort, en Libre 3 is in onafhankelijke vergelijking iets minder nauwkeurig dan Dexcom G7. Als instrument voor doorlopende zelfexperimenten van biohackers is Lingo het startpunt, niet de eindbestemming.\n\n## Voor wie is Lingo geschikt?\n\nKies Lingo als je nog nooit een CGM hebt gedragen en op de goedkoopste legitieme manier wilt ontdekken of het voor jou iets verandert. Ben je het beginnerskader ontgroeid en wil je diepgang, dan zijn Levels of Stelo de logische volgende stappen.\n\n---\n\n## Achtergrondinformatie\n\nDe stofwisselingsbiologie die deze programma's zichtbaar maken — en de protocollen die de data mogelijk maken.\n\n- [Kun je cortisol al continu meten?](/articles/chm-continuous-hormone-monitoring) — waarom vandaag geen enkele consumentenwearable hormonen meet, anders dan glucose\n- [De darm-hersenas als datakoppeling](/articles/gut-brain-axis-data-link) — waar microbioom- en glucosepatronen samenkomen\n- [Metabole flexibiliteit: wat het is en hoe je het herkent](/articles/metabolic-flexibility-dual-fuel-system) — wat een glucosecurve wel en niet kan vertellen over het wisselen van brandstof\n",
+      "faq": [
+        {
+          "q": "Heb je een recept nodig voor Lingo?",
+          "a": "Nee. Lingo is Abbotts vrij verkrijgbare CGM, verkocht zonder recept of abonnement. Hij gebruikt Libre 3-hardware met een betrouwbare draagtijd van 14 dagen zonder kalibratie, en je koopt sensoren gewoon wanneer je ze nodig hebt. Het is de goedkoopste legitieme toegang tot een consumenten-CGM in de VS."
+        },
+        {
+          "q": "Hoeveel kost Lingo?",
+          "a": "Lingo kost $54 voor een plan van twee weken (één sensor, geen automatische verlenging), met plannen voor meerdere sensoren en abonnementen die per sensor goedkoper zijn. Een abonnement is niet nodig: je kunt losse sensoren kopen wanneer je ze nodig hebt. Daarmee is het de goedkoopste instap in continue glucosemeting voor mensen zonder diabetes in de VS."
+        },
+        {
+          "q": "Lingo vs Levels: wat is beter?",
+          "a": "Lingo is goedkoper en eenvoudiger: geen abonnement en één Lingo Count-score per maaltijd. Levels biedt veel diepere analyses en de iets nauwkeurigere Dexcom Stelo (G7-platform), als lidmaatschap van ongeveer $80 per jaar (alleen app) tot $1,329 per jaar. Geen van beide heeft een menselijke coach. Kies Lingo als kosten en eenvoud belangrijker zijn dan diepgang van inzichten."
+        }
+      ]
+    },
+    "healthy-wave-multi-wave": {
+      "verdict": "De beste multimodale PEMF-mat — PEMF + verre infrarood + rood licht onder de prijs van Bemer. Mist de onderzoeksvoorsprong van Bemer, maar dekt meer herstelmodaliteiten per sessie.",
+      "summary": "Healthy Wave Multi-Wave is een PEMF-mat die op onafhankelijke reviewsites hoog scoort. Het onderscheidende kenmerk is de combinatie — PEMF, verre-infraroodwarmte, rood licht, negatieve ionen en kristallen in één mat. De Multi-Wave-controller werkt met 1–30 Hz en drie pulsbreedtes (zes golfvormen), 12 voorinstellingen of eigen programma's. Qua onderzoeksbasis geen Bemer, maar een veel goedkopere manier om meerdere herstelmodaliteiten tegelijk te gebruiken.",
+      "description": "Review Healthy Wave Multi-Wave PEMF-mat (2026): PEMF, verre infrarood, rood licht, ionen en kristallen in één mat, $995–$2,495. Bewijs, veiligheid en vergelijking met Bemer.",
+      "bestFor": "Het best voor wie per sessie zoveel mogelijk herstelmodaliteiten wil (PEMF + IR + rood licht) onder de prijs van Bemer, met volledige controle over de parameters.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Healthy Wave en onafhankelijke reviews van PEMF-matten uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Multimodale mat met PEMF + infrarood + rood licht",
+      "pros": [
+        "Combineert PEMF + verre infrarood + roodlichttherapie in één mat",
+        "Beste programmeerbaarheid in de categorie — echte controle over parameters, geen ondoorzichtige voorinstellingen",
+        "Minder dan de helft van de prijs van Bemer",
+        "5 jaar garantie en 90 dagen proefperiode"
+      ],
+      "cons": [
+        "Geen eigen onderzoeksvoorsprong zoals het biorhythmische signaal van Bemer — en geen studies naar deze mat zelf",
+        "Groter en zwaarder dan PEMF-matten met één modaliteit (volledig formaat ongeveer 26 lb)",
+        "Leercurve voor de controller — meer parameters betekent meer instellen",
+        "Sommige gebruikers melden dat de IR-warmte sterker overheerst dan het PEMF-signaal"
+      ],
+      "scoreNotes": {
+        "field-strength": "Instelbare PEMF-intensiteit, 1–30 Hz; de fabrikant noemt tot 5+ gauss piek en ongeveer 1,5 gauss gemiddeld aan het oppervlak. Hoger dan Bemer, maar nog altijd laag vergeleken met klinische spoelsystemen.",
+        "waveform-evidence": "Gebruikt gangbare PEMF-frequenties (waaronder de 7,83 Hz Schumann-band) uit de algemene PEMF-literatuur. Geen apparaatspecifieke studies en geen eigen onderzoeksvoorsprong voor één golfvorm zoals Bemer.",
+        "build": "Opvouwbare mat in drie delen, 5 jaar beperkte garantie (plus 3 maanden bij rechtstreekse aankoop), 90 dagen proefperiode. Klantenservice met een positieve reputatie.",
+        "programmability": "Beste programmeerbaarheid in de categorie — drie pulsbreedtes, zes golfvormen, 12 voorinstellingen of eigen programma's; PEMF, warmte en rood licht los van elkaar te bedienen.",
+        "form-factor": "Mat voor het hele lichaam met PEMF + verre infrarood + rood licht + negatieve ionen + kristallen. Vier Multi-Wave-formaten van 32×20 in tot 74×28 in. Eén mat vervangt meerdere apparaten met één modaliteit.",
+        "value": "$995–$2,495 afhankelijk van het formaat (volledig formaat Pro $2,495). Minder dan de helft van de prijs van een Bemer-set voor meerdere herstelmodaliteiten."
+      },
+      "content": "## Ons oordeel in het kort\n\nHealthy Wave Multi-Wave is een mat voor het hele lichaam die vijf dingen combineert: PEMF, verre-infraroodwarmte, rood licht, negatieve ionen en verwarmde kristallen. De controller geeft echte controle over frequentie, pulsbreedte en intensiteit. Met $995–$2,495 kost hij minder dan de helft van een Bemer-set. Het addertje: het bewijs voor PEMF voor consumenten is dun, en veel van wat je voelt is waarschijnlijk de warmte. Koop hem als comfortabele herstelmat met PEMF erbovenop, niet als medische behandeling.\n\n## Wat is de Healthy Wave Multi-Wave en hoe werkt hij?\n\nJe ligt voor een sessie op de mat, meestal 20–60 minuten. Spoelen binnenin zenden gepulste magnetische velden (PEMF) uit met 1–30 Hz. De Multi-Wave-controller voegt drie pulsbreedtes toe, wat zes golfvormen oplevert, plus 12 voorgeprogrammeerde of eigen programma's. De fabrikant noemt tot 5+ gauss in de piek en ongeveer 1,5 gauss gemiddeld aan het oppervlak — veel meer dan Bemer, veel minder dan klinische spoelapparaten. Tegelijk warmen lagen kristallen op en geven ze verre-infraroodwarmte af, en rode leds voegen lichttherapie toe.\n\n## Werkt PEMF echt?\n\nMedische PEMF-apparaten worden gebruikt bij specifieke problemen, zoals slecht genezende botbreuken. Voor wellnessmatten voor consumenten is het bewijs veel dunner. De best onderzochte alledaagse toepassing is gewrichtspijn: een Cochrane-review van kleine studies bij knieartrose vond dat therapie met elektromagnetische velden pijn matig zou kunnen verminderen, met onzekere effecten op de functie (Li 2013). Claims over slaap, energie, ontgifting of \"cellen opladen\" komen vooral van fabrikanten. We vonden geen onafhankelijke klinische studies naar de Healthy Wave-mat zelf.\n\nWarmte is beter begrepen: warmte ontspant spieren en veel mensen vinden het kalmerend. Dat is waarschijnlijk het belangrijkste effect dat je zult voelen.\n\n## Hoeveel kost hij?\n\n| | Healthy Wave Multi-Wave | [Bemer Classic Evo](/reviews/bemer-classic-evo) | [OMI Full Body Mat](/reviews/omi-full-body-mat) | [HigherDOSE PEMF Mat](/reviews/higherdose-pemf-mat) |\n|---|---|---|---|---|\n| Prijs | $995–$2,495 | $5,490 (set) | $1,750 | $1,295 |\n| Modaliteiten | PEMF, infrarood, rood licht, ionen, kristallen | alleen PEMF | alleen PEMF | PEMF + infrarood |\n| Sterk in | modaliteiten en controle | best onderzochte signaal | eenvoudige middenklassemat | gebruiksgemak |\n\nEr is geen abonnement. De enige lopende kosten zijn stroom.\n\n## Wat zijn de nadelen van de Healthy Wave Multi-Wave?\n\nEr is geen onderzoeksvoorsprong voor één golfvorm. Bemer heeft veel studies naar zijn specifieke signaal; Healthy Wave gebruikt gangbare PEMF-frequenties zonder eigen studies. De mat op volledig formaat is groot en zwaar (ongeveer 26 lb). Meer instellingen betekent meer instelwerk. En sommige gebruikers zeggen dat de warmte de PEMF overheerst.\n\n## Voor wie is hij geschikt — en voor wie niet?\n\n**Koop hem** als je warmte, rood licht en PEMF in één apparaat wilt voor ontspanning en herstel, en je graag volledige controle over de instellingen hebt.\n\n**Sla hem over** als je een bewezen medisch effect wilt, een draagbaar apparaat nodig hebt (zie [Resona VIBE](/reviews/resona-health-vibe)) of het best onderzochte signaal zoekt (Bemer). Rechtstreekse vergelijkingen: [Healthy Wave vs HigherDOSE](/reviews/vs/healthy-wave-multi-wave-vs-higherdose-pemf-mat) en [Bemer vs Healthy Wave](/reviews/vs/bemer-classic-evo-vs-healthy-wave-multi-wave). Alle opties gerangschikt in [de beste PEMF-apparaten van 2026](/reviews/compare/best-pemf-devices-2026).\n\n## Is hij veilig?\n\nVoor de meeste gezonde volwassenen lijkt een PEMF-mat met lage intensiteit weinig risico te geven. Gebruik de PEMF-functie niet met een pacemaker, defibrillator of ander elektronisch implantaat — Healthy Wave waarschuwt zelf voor storing. Vraag eerst een arts als je zwanger bent, epilepsie hebt of voor een aandoening wordt behandeld. Omdat de mat heet wordt, wees voorzichtig als je verminderd gevoel hebt (bijvoorbeeld diabetische neuropathie) en houd sessies in het begin kort. PEMF mag een medische behandeling niet vervangen.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation) — hoe toegepaste elektromagnetische velden weefselherstel beïnvloeden\n- [Mitochondriale biogenese](/articles/mitochondrial-biogenesis-cellular-power-grid) — PEMF en rood licht als aanvullende modaliteiten voor celenergie\n- [Maakt slaap je brein echt schoon? Het bewijs over het glymfatisch systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog omstreden is\n",
+      "faq": [
+        {
+          "q": "Wat doet de Healthy Wave Multi-Wave PEMF-mat?",
+          "a": "De Healthy Wave Multi-Wave combineert PEMF, verre-infraroodwarmte, rood licht, negatieve ionen en verwarmde kristallen in één mat voor het hele lichaam. De controller biedt 1-30 Hz, drie pulsbreedtes (zes golfvormen), 12 voorinstellingen of eigen programma's. ONDA geeft hem in totaal 8,4/10."
+        },
+        {
+          "q": "Hoeveel kost de Healthy Wave Multi-Wave-mat?",
+          "a": "De Healthy Wave Multi-Wave kost $995-$2,495 afhankelijk van het formaat; de Pro Multi-Wave op volledig formaat (74x28 in) kost $2,495 met controller. Dat is minder dan de helft van de prijs van een Bemer-set, met 5 jaar beperkte garantie en 90 dagen proefperiode."
+        },
+        {
+          "q": "Hoe verhoudt de Healthy Wave Multi-Wave zich tot Bemer?",
+          "a": "De Healthy Wave Multi-Wave kost minder dan de helft van een Bemer-set en dekt meerdere modaliteiten (PEMF, infrarood, rood licht) tegenover het ene signaal van Bemer. Hij mist echter het onderzoek dat Bemer naar zijn eigen specifieke signaal heeft gedaan, dus Bemer blijft de referentie voor wetenschappelijke onderbouwing van de golfvorm."
+        },
+        {
+          "q": "Werkt de Healthy Wave PEMF-mat echt?",
+          "a": "Er zijn geen onafhankelijke klinische studies naar de Healthy Wave-mat zelf. Voor PEMF in het algemeen is het beste bewijs er voor gewrichtspijn: een Cochrane-review vond dat het artrosepijn matig zou kunnen verminderen. Veel van wat gebruikers voelen is waarschijnlijk de verre-infraroodwarmte. Zie hem als ontspannend hersteltool, niet als bewezen behandeling."
+        },
+        {
+          "q": "Is een Healthy Wave PEMF-mat veilig?",
+          "a": "Voor de meeste gezonde volwassenen lijkt hij weinig risico te geven. Gebruik de PEMF-functie niet met een pacemaker, defibrillator of ander elektronisch implantaat, en vraag eerst een arts als je zwanger bent, epilepsie of een aandoening hebt. Wees voorzichtig met de warmte als je huidgevoel verminderd is."
+        },
+        {
+          "q": "Healthy Wave vs HigherDOSE PEMF-mat — wat is beter?",
+          "a": "Healthy Wave Multi-Wave ($995-$2,495) voegt rood licht, meer golfvormen en fijnere instellingen toe. HigherDOSE ($1,295 volledig formaat) is eenvoudiger en consumentvriendelijker. Kies Healthy Wave voor controle en meer modaliteiten, HigherDOSE voor gebruiksgemak."
+        }
+      ]
+    },
+    "prana-breath": {
+      "verdict": "Het best aanpasbare ademwerk op basis van patronen — diepe controle over parameters, Android-first, grotendeels gratis. De gebruikerservaring voelt gedateerd vergeleken met premium-apps.",
+      "summary": "Prana Breath is de al lang bestaande Android-first-app voor ademwerk — diepe controle over parameters (inademen, vasthouden, uitademen, vasthouden per patroon volledig instelbaar), een brede bibliotheek met kant-en-klare patronen en een grotendeels gratis model. De gebruikerservaring voelt gedateerd vergeleken met Breathwrk of Othership; de diepgang van de parameters is het onderscheidende kenmerk.",
+      "description": "Prana Breath-review: de meest aanpasbare ademwerk-app op basis van patronen — diepe controle over parameters, Android-first, grotendeels gratis. Interface wat gedateerd.",
+      "bestFor": "Het best voor wie ademritmes diepgaand wil aanpassen voor bijna niets — en voor Android-gebruikers die geen premium-afwerking nodig hebben.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de appdocumentatie van Prana Breath, de vermeldingen in Google Play / App Store en gebruikersreviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Aanpasbare app voor ademwerk op basis van patronen",
+      "pros": [
+        "Beste aanpasbaarheid van parameters — volledige controle over de timing van ademritmes",
+        "Al lang bestaande app met jarenlange betrouwbaarheid",
+        "Grotendeels gratis, met een goedkope eenmalige premium-ontgrendeling",
+        "Android-first — de beste optie voor wie geen iOS gebruikt"
+      ],
+      "cons": [
+        "Gebruikerservaring voelt gedateerd vergeleken met premium-apps uit 2026",
+        "Minder samengestelde content en trajecten",
+        "Geen HRV-biofeedback en geen op bewijs geselecteerde teksten",
+        "De patroonengine gaat ervan uit dat je weet welke timings je moet gebruiken"
+      ],
+      "scoreNotes": {
+        "session-library": "Degelijke bibliotheek met kant-en-klare patronen (box, 4-7-8, Wim Hof, pranayama, eigen). Minder samengestelde trajecten dan Breathwrk; meer kale patronen.",
+        "technique-coverage": "Brede dekking van technieken via de aanpasbare patroonengine — elke gewenste combinatie van timings.",
+        "evidence-grounding": "De patroonengine is neutraal — de wetenschappelijke onderbouwing hangt ervan af of je weet welke patronen gevalideerd zijn. Minder samengestelde wetenschappelijke teksten dan Breathwrk.",
+        "app-experience": "Functionele Android-first-interface; er bestaat een iOS-versie, maar die voelt bijzaak. Gedateerd vergeleken met premium-apps uit 2026.",
+        "biofeedback": "Geen HRV-integratie. Eenvoudige reeks-tracking.",
+        "value": "Grotendeels gratis met een eenmalige premium-ontgrendeling van ~$10. De sterkste instap qua prijs-kwaliteit in aanpasbaar ademwerk."
+      },
+      "content": "## Waar hij voorop loopt\n\nPrana Breath is de referentie voor ademwerk met aanpasbare patronen — diepe controle over parameters, een al lang bestaande Android-first-app, grotendeels gratis met een eenmalige premium-ontgrendeling van $10. Met de patroonengine bouw je elke ademtiming die je wilt.\n\n## Wat zijn de nadelen van Prana Breath?\n\nDe belangrijkste nadelen van Prana Breath zijn de afwerking van de interface en samengestelde content. Naast Breathwrk of Othership voelt Prana Breath gedateerd; er is geen filmische productie, geen trajecten, geen samengestelde wetenschappelijke teksten. De patroonengine is krachtig, maar gaat ervan uit dat je al weet welke timings je moet gebruiken.\n\n## Voor wie is Prana Breath geschikt?\n\nKies Prana Breath voor goedkoop, aanpasbaar oefenen met ademritmes — vooral op Android, waar premium-opties zwakker zijn. Voor een samengestelde, gestructureerde bibliotheek: Breathwrk. Voor een gratis instap op iOS: iBreathe. Voor HRV-biofeedback: Inhale.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fasegekoppelde akoestische slaapstimulatie](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Wat doet Prana Breath?",
+          "a": "Prana Breath is een aanpasbare app voor ademwerk op basis van patronen, met volledige controle over de timing van inademen, vasthouden, uitademen en vasthouden in elk patroon. De app heeft een brede bibliotheek met kant-en-klare patronen, waaronder boxademhaling, 4-7-8, Wim Hof en pranayama, en is Android-first. ONDA geeft hem 6,3/10."
+        },
+        {
+          "q": "Hoeveel kost Prana Breath?",
+          "a": "Prana Breath is grotendeels gratis, met een uitgebreide gratis versie en een eenmalige premium-ontgrendeling van ongeveer $10. Er is geen terugkerend abonnement. Daarmee is het de sterkste instap qua prijs-kwaliteit in aanpasbaar ademwerk, met 8,0/10 voor prijs-kwaliteit in de beoordeling van ONDA."
+        },
+        {
+          "q": "Voor wie is Prana Breath het meest geschikt?",
+          "a": "Prana Breath is het meest geschikt voor wie ademritmes diepgaand wil aanpassen voor bijna niets, en vooral voor Android-gebruikers, bij wie premium-apps zwakker zijn. De keerzijde: een gedateerde interface, minder samengestelde content, geen HRV-biofeedback en een patroonengine die ervan uitgaat dat je weet welke timings je moet gebruiken."
+        }
+      ]
+    },
+    "chilipad-cube": {
+      "verdict": "De budgetmat met waterkoeling — echte waterkoeling voor $719 per kant, maar alleen met afstandsbediening, zonder schema's en met een warmere koudste stand dan Chilipad 2.0.",
+      "summary": "ChiliPad Cube is de watergekoelde matrasoplegger van Sleepme in het middensegment — het al lang bestaande model dat watergekoeld slaapklimaat bij het grote publiek bracht. Hij koelt en verwarmt nog steeds met water, maar wordt nu bediend met een fysieke afstandsbediening zonder app of schema's, en koelt tot 60°F in plaats van de 55°F van Chilipad 2.0. De goedkoopste instap in het Sleepme-assortiment, ten koste van premiumfuncties.",
+      "description": "Chilipad Cube-review (2026): watergekoelde matrasoplegger van $719 met afstandsbediening, koelt tot 60°F, geen abonnement — vergeleken met Chilipad 2.0 en Eight Sleep Pod 6.",
+      "bestFor": "Het best voor wie watergekoeld slaapklimaat van Sleepme wil voor een middensegmentprijs, zonder schemafuncties.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Sleepme/Chili en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Watergekoelde matrasoplegger in het middensegment",
+      "pros": [
+        "Geen abonnement nodig",
+        "Waterkoeling en -verwarming voor ruim minder dan de helft van de prijs van Chilipad 2.0",
+        "Al lang bestaand merk met jarenlange betrouwbaarheid",
+        "Oplegger op je bestaande matras — geen vervanging nodig"
+      ],
+      "cons": [
+        "Geen app of schema's — alleen afstandsbediening",
+        "Geen HRV- of slaaptracking",
+        "Koelt alleen tot 60°F, warmer dan Chilipad 2.0 (55°F)",
+        "Twee slapers hebben twee units nodig; 1 jaar garantie"
+      ],
+      "scoreNotes": {
+        "climate-range": "Koelt en verwarmt met water. Sleepme vermeldt nu dat de Cube koelt tot 60°F (ongeveer 15,5 °C), tegenover 55°F voor Chilipad 2.0 — een smaller koud bereik dan het Dock Pro-bereik dat we oorspronkelijk beoordeelden (deelscore op 2026-10-01 verlaagd van 8,5).",
+        "build": "Oplegger en unit vergelijkbaar met de Dock Pro. Jarenlange staat van dienst van Sleepme. 1 jaar beperkte garantie (verlengbaar bij aankoop), volgens sleep.me in oktober 2026.",
+        "app-tracking": "De huidige Cube wordt bediend met een fysieke afstandsbediening — geen wifi, Bluetooth of app-account nodig. Geen klimaatschema's, geen Apple Health-integratie, geen slaaptracking.",
+        "form-factor": "Oplegger op je bestaande matras. Eenzone-opleggers op halve breedte; voor twee slapers koop je een tweede eenzonesysteem voor de andere kant.",
+        "subscription": "Geen abonnement nodig.",
+        "value": "$719 in de aanbieding ($799 adviesprijs) per slaapkant, stand oktober 2026 — minder dan de helft van Chilipad 2.0 (vanaf $1,599)."
+      },
+      "content": "## Ons oordeel in het kort\n\nDe Chilipad Cube is de goedkoopste instap in watergekoeld slapen. Per oktober 2026 verkoopt Sleepme hem nog voor $719 per slaapkant ($799 adviesprijs), ruim onder de $1,599+ van de nieuwe Chilipad 2.0. Je levert de app, schema's en wat koeldiepte in: de Cube wordt bediend met een eenvoudige afstandsbediening en koelt tot 60°F. Slaap je warm en wil je gewoon een koeler bed zonder abonnement, dan is hij zijn geld waard. Wil je automatisering of slaapdata, kijk dan een stap hoger.\n\n## Hoe werkt waterkoeling?\n\nEen kleine unit naast het bed koelt of verwarmt water en pompt het door dunne slangetjes in een oplegger die op je matras ligt. Het water voert warmte van je lichaam af (of voegt die toe), zodat het bedoppervlak op de ingestelde temperatuur blijft, zonder dat er lucht op je blaast. Je kerntemperatuur daalt van nature als je in slaap valt, en een koel bed ondersteunt dat; dat is het idee achter elk product in deze categorie. De oplegger bevat geen draden, alleen water, en de hoes is wasbaar in de machine.\n\n## Chilipad Cube vs Chilipad 2.0 vs Eight Sleep Pod 6\n\n| | Chilipad Cube | Chilipad 2.0 | Eight Sleep Pod 6 |\n|---|---|---|---|\n| Prijs | $719 aanbieding / $799 per kant | vanaf $1,599 (queen ongeveer $1,699) | Solo vanaf $1,999; dubbele Queen $2,899 |\n| Koudste stand | 60°F | 55°F | zie onze review |\n| Bediening | fysieke afstandsbediening, geen app | app + afstandsbediening op het nachtkastje, schema's | app met automatische aanpassing |\n| Slaaptracking | geen | geen | hartslag, ademhalingsfrequentie, HRV, slaapfasen |\n| Abonnement | geen | geen | Autopilot-lidmaatschap vanaf $199/jaar |\n\nDe prijzen komen uit onze [review van Chilipad 2.0 / Dock Pro](/reviews/chilipad-dock-pro) en [review van de Eight Sleep Pod 6](/reviews/eight-sleep-pod-6). De Dock Pro wordt nu uitverkocht als \"Chilipad 1.0\" met 30% korting zolang de voorraad strekt. Alle opties gerangschikt in [de beste slimme slaapklimaatsystemen](/reviews/compare/best-smart-sleep-climate-2026).\n\n## Geluid en onderhoud\n\nZoals elk watergekoeld systeem heeft de Cube een pomp en ventilator in de unit naast het bed, dus reken op een zacht gezoem; zet de unit op de vloer en weg van je hoofd als je gevoelig bent voor geluid. Onderhoud is de keerzijde van watersystemen: je vult het reservoir bij en reinigt het systeem regelmatig volgens de instructies van Sleepme, om aanslag in de slangetjes te voorkomen. De oplegger kan in de wasmachine en droger.\n\n## Voor wie is de Chilipad Cube geschikt?\n\nKoop de Cube als je warm slaapt, de laagste prijs voor waterkoeling wilt en tevreden bent met een afstandsbediening in plaats van een app. Stellen kunnen per kant één unit kopen en elke kant apart instellen. Kies [Chilipad 2.0](/reviews/chilipad-dock-pro) als je koudere standen en schema's wilt. Kies de [Eight Sleep Pod 6](/reviews/eight-sleep-pod-6) als je automatische temperatuurwisselingen en slaaptracking wilt en een lidmaatschap accepteert. Voor koeling met lucht bij een vergelijkbaar budget, zie [BedJet 3](/reviews/bedjet-3).\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom het regelen van de bedtemperatuur de slaapdiepte en het herstel beïnvloedt.\n\n- [Voorouderlijk ritme en circadiane ankers](/articles/ancestral-sync-circadian-anchors) — waarom nachtelijke afkoeling past bij de oorspronkelijke uitgangssituatie\n- [Neurale hydrauliek: liquorstroom](/articles/neural-hydraulics-csf-flow) — circulatie van hersenvocht tijdens de slaap — wat koeling mogelijk maakt\n- [Circadiane reset: licht beheersen](/articles/circadian-reset-mastering-light) — waarom het regelen van de bedtemperatuur samengaat met lichttiming voor slaapdiepte\n",
+      "faq": [
+        {
+          "q": "Hoeveel kost de Chilipad Cube?",
+          "a": "Per oktober 2026 verkoopt Sleepme de Chilipad Cube in de aanbieding voor $719 per slaapkant ($799 adviesprijs) in de maten halve King en halve Cal King; de halve Queen was uitverkocht. Voor twee slapers koop je een tweede unit. Er is geen abonnement."
+        },
+        {
+          "q": "Wordt de Chilipad Cube nog verkocht?",
+          "a": "Ja. Sleepme verkoopt de Cube nog naast de nieuwe Chilipad 2.0 (vanaf $1,599). De oudere Dock Pro wordt uitverkocht als Chilipad 1.0 met 30% korting zolang de voorraad strekt. De Cube is het budgetmodel: afstandsbediening, geen app, koeling tot 60°F."
+        },
+        {
+          "q": "Chilipad Cube of Chilipad 2.0: welke moet ik kopen?",
+          "a": "Kies de Cube als prijs het belangrijkst is en een eenvoudige afstandsbediening je genoeg is. Kies Chilipad 2.0 als je koudere standen (55°F vs 60°F), bediening via een app en schema's wilt. Geen van beide meet je slaap; daarvoor kun je de Eight Sleep Pod 6 overwegen, die meer kost en voor zijn automatische functies een lidmaatschap nodig heeft."
+        },
+        {
+          "q": "Maakt de Chilipad Cube geluid?",
+          "a": "De unit naast het bed heeft een pomp en ventilator en maakt dus een zacht gezoem, net als andere watergekoelde systemen. Het helpt om hem op de vloer en weg van het hoofdeinde te zetten als je licht slaapt."
+        }
+      ]
+    },
+    "inergize-cold-tub": {
+      "verdict": "Een bad uit het middensegment dat concurreert op configureerbaarheid — koop nu het bad, voeg later een koeler toe als dat nodig is.",
+      "summary": "Inergize verkoopt een geïsoleerd bad dat je kunt gebruiken als ijsbad met ijs of met hun aparte koelunit erbij. De modulaire aanpak verlaagt de aanschafkosten en laat je upgraden zodra je routine vaststaat. De bouwkwaliteit is degelijk; de koeler (apart verkrijgbaar) is behoorlijk, maar minder krachtig dan de geïntegreerde unit van Plunge.",
+      "description": "Inergize Cold Tub-review: een configureerbaar ijsbad uit het middensegment — begin met ijs, voeg later de koeler toe. Degelijk bad; de koeler is behoorlijk, niet krachtig.",
+      "bestFor": "Het best voor wie een modulair upgradepad voor een ijsbad wil — nu het bad, later de koeler.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van de productdocumentatie van Inergize en onafhankelijke reviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Geïsoleerd bad uit het middensegment met optionele koeler",
+      "pros": [
+        "Modulair pad van bad naar koeler — spreid de aanschafkosten over fasen",
+        "Betere isolatie dan opblaasbare of tonvormige opties",
+        "Optionele ozonmodule voor water dat weinig onderhoud vraagt",
+        "Geschikt voor binnen en buiten"
+      ],
+      "cons": [
+        "De koeler (als je hem toevoegt) is minder krachtig dan de geïntegreerde unit van Plunge",
+        "Met koeler komen de totale kosten in de buurt van de Edge Tub",
+        "Staat van dienst qua betrouwbaarheid over meerdere jaren is dunner dan bij Plunge",
+        "Garantie geldt per onderdeel in plaats van voor het hele systeem"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Koeler apart verkrijgbaar. De optionele koeler is behoorlijk, maar minder krachtig dan de 1 HP-unit van Plunge — langzamer terugkoelen, zwakkere prestaties in de zomer.",
+        "build": "Geïsoleerd bad met sterkere isolatie dan Cold Pod, lichter dan Plunge. 1 jaar garantie op het bad, aparte garantie op de koeler.",
+        "water-management": "Optionele ozonmodule; in de basisuitvoering ververs je het water handmatig.",
+        "form-factor": "Binnen of buiten, vloeroppervlak 67×31 inch. Aftappen via een kraantje. Modulaire installatie — eerst het bad, later de koeler.",
+        "evidence": "Eerlijk over het feit dat het een configureerbare optie uit het middensegment is; overdrijft de hardware niet ten opzichte van Plunge.",
+        "value": "Gescoord op de eerdere prijzen van $1,500 voor het bad / ~$1,300 voor de koeler. Per sept. 2026 vermeldt Inergize de Elite Tub (bad + 0,8 HP Elite Chiller) voor $2,990 in de aanbieding en de Elite Chiller los voor $2,690; een los verplaatsbaar bad staat niet in het aanbod."
+      },
+      "content": "> Update (september 2026): in het huidige aanbod van Inergize staat geen los bad meer voor de hier beoordeelde prijs van $1,500. Het meest vergelijkbaar is de Elite Tub — een verplaatsbaar bad in een pakket met de 0,8 HP Elite Chiller (37-104°F) voor $2,990 in de aanbieding (adviesprijs $3,990). De Elite Chiller wordt ook los verkocht ($2,690) voor gebruik met een ander bad, een gecertificeerd gereviseerde set van bad + koeler kost $1,790, en het cederhouten Spire-bad begint bij $5,990 zonder koeler. Het hieronder beschreven modulaire pad — eerst het bad, later de koeler — is daarom nu vooral mogelijk door de losse koeler te combineren met een bad dat je al hebt.\n\n## Waar hij voorop loopt\n\nInergize kiest voor een modulaire aanpak van het ijsbad: koop nu het bad en voeg later een koeler toe als je dagelijkse routine vaststaat. Met $1,500 voor alleen het bad spreidt het de aanschafkosten van de koelerklasse over fasen. Voor wie betere isolatie wil dan ton- of opblaasbare opties, maar nog niet klaar is voor een kant-en-klare oplossing van $5K, is dit de juiste vorm.\n\n## Wat zijn de nadelen van de Inergize Cold Tub?\n\nDe koeler (als je hem toevoegt) is minder capabel dan de geïntegreerde 1 HP-unit van Plunge — langzamer terugkoelen, zwakkere prestaties in de zomer. Met koeler komen de totale kosten in de buurt van de Edge Tub. Data over betrouwbaarheid over meerdere jaren zijn dunner dan bij de marktleiders.\n\n## Voor wie is de Inergize Cold Tub geschikt?\n\nKies Inergize als het modulaire upgradepad de waarde is — je dagelijkse routine eerst met ijs testen voordat je voor de koeler betaalt. Voor een complete kant-en-klare oplossing: Plunge of Edge. Om puur met een klein budget uit te proberen: Cold Pod of Ice Barrel.\n\n## Werkt een ijsbad echt?\n\nHet bewijs is echt, maar beperkter dan sociale media doen geloven. Een systematische review uit 2022 over vrijwillige onderdompeling in koud water vond consistente effecten op het lichaam — een sterke stijging van stresshormonen en hartslag bij het instappen, en aanpassing bij herhaalde blootstelling — maar veel van de geclaimde gezondheidsvoordelen kwamen uit kleine studies, vaak bij ervaren winterzwemmers, en zijn dus niet met zekerheid te veralgemenen ([Espeland et al., 2022, International Journal of Circumpolar Health](https://doi.org/10.1080/22423982.2022.2111789)). In de praktijk nemen de meeste mensen een ijsbad omdat ze zich daarna alerter en beter gehumeurd voelen — een redelijke reden, geen bewezen medische behandeling. Meer over het mechanisme: [koudeblootstelling en de nervus vagus](/articles/cold-exposure-vagus-nerve) en [wat HRV, ademhaling en kou wel en niet kunnen](/articles/hrv-breathing-cold-honest-limits).\n\n## Is een ijsbad veilig?\n\nPlotselinge kou veroorzaakt de \"koudeshock\"-reactie: naar adem happen, snel ademen en een sprong in hartslag en bloeddruk in de eerste minuut of twee. Deze reactie, niet onderkoeling, veroorzaakt de meeste noodsituaties in koud water ([Tipton et al., 2017, Experimental Physiology](https://doi.org/10.1113/EP086283)). Praktische regels:\n\n- **Hartaandoeningen, hoge bloeddruk of zwangerschap:** overleg met een arts voordat je begint.\n- **Tijdslimieten:** voor beginners is 1–3 minuten prima; langer is niet beter. Stap eruit als je hevig rilt, je gevoelloos of verward voelt.\n- **Nooit alleen:** zorg dat er iemand in de buurt is, vooral in je eerste weken, en combineer een ijsbad nooit met alcohol.\n- **Adem langzaam:** beheers het naar adem happen met langzame uitademingen en stap geleidelijk in in plaats van erin te springen.\n\n## Koeler of ijs?\n\nIjs is goedkoop om mee te beginnen, maar omslachtig: je hebt meerdere zakken per sessie nodig om lage temperaturen te halen, het water warmt op tussen sessies en de kosten lopen over een jaar op. Een koeler houdt elke dag een ingestelde temperatuur vast en houdt het water met filtratie langer schoon. De 0,8 HP Elite Chiller van Inergize dekt 37–104°F, dus hij kan het water ook verwarmen. Neem je drie of meer keer per week een ijsbad, dan verdient een koeler zich meestal terug in gemak; test je de gewoonte nog, begin dan met ijs.\n\n## Inergize vs andere ijsbaden\n\n| | Prijs (uit onze reviews) | Koeling | Het best voor |\n|---|---|---|---|\n| Inergize Elite Tub | $2,990 aanbieding (bad + 0,8 HP-koeler) | koeler inbegrepen | middensegment met koeler, gereviseerd vanaf $1,790 |\n| [The Plunge](/reviews/plunge) | $5,990 | geïntegreerde koeler, ozon | premium kant-en-klaar |\n| [Edge Tub](/reviews/edge-tub) | $2,495 | koeler en ozon inbegrepen | kant-en-klaar voor een lagere prijs |\n| [Ice Barrel 500](/reviews/ice-barrel-500) | $1,200 | ijs | duurzaam bad voor ijs |\n| [Cold Pod](/reviews/cold-pod) | $220 | ijs | goedkoopste manier om het te proberen |\n\nBekijk alle opties gerangschikt in [de beste ijsbaden van 2026](/reviews/compare/best-cold-plunge-2026).\n\n---\n\n## Achtergrondinformatie\n\nDe biologie achter waarom koudeblootstelling werkt — en de protocollen die elkaar versterken met de hardware.\n\n- [CO₂-tolerantie en de zuurstofgrens](/articles/co2-tolerance-expanding-oxygen-limit) — waarom kou- en ademprotocollen goed te combineren zijn\n- [Anti-entropie-architectuur van het zenuwstelsel](/articles/anti-entropy-neural-architecture) — koudeblootstelling als dagelijkse anti-entropie-stressdosis\n- [Mitochondriale biogenese: het cellulaire stroomnet](/articles/mitochondrial-biogenesis-cellular-power-grid) — waarom koudeshock de mitochondriale dichtheid verhoogt\n",
+      "faq": [
+        {
+          "q": "Kun je later een koeler toevoegen aan de Inergize Cold Tub?",
+          "a": "Ja, dat is de belangrijkste aantrekkingskracht. Je kunt het Inergize-bad eerst als ijsbad met ijs gebruiken en later de aparte koeler toevoegen — zo werd het oorspronkelijk verkocht, voor ongeveer $1,500 voor het bad plus ongeveer $1,300 voor de koeler. Per september 2026 vermeldt Inergize het bad in een pakket met de Elite Chiller ($2,990 in de aanbieding) en de Elite Chiller los ($2,690), dus het pad van gespreide aankoop loopt nu vooral via koeler plus eigen bad. Zo spreid je de aanschafkosten en kun je upgraden zodra je routine vaststaat."
+        },
+        {
+          "q": "Inergize Cold Tub vs The Plunge: wat is beter?",
+          "a": "The Plunge heeft een krachtigere geïntegreerde koeler en een langere staat van dienst qua betrouwbaarheid. Inergize is goedkoper om mee te beginnen en modulair, met betere isolatie dan opblaasbare of tonvormige opties. Zodra je de koeler toevoegt, komen de totale kosten echter in de buurt van de Edge Tub."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Inergize Cold Tub?",
+          "a": "De extra koeler is minder krachtig dan de unit die in The Plunge is geïntegreerd, en de volledige opstelling komt in de buurt van de prijs van de Edge Tub. De staat van dienst qua betrouwbaarheid over meerdere jaren is dunner dan bij The Plunge, en de garantie is per onderdeel opgesplitst in plaats van het hele systeem te dekken."
+        },
+        {
+          "q": "Heeft een ijsbad bewezen gezondheidsvoordelen?",
+          "a": "Deels. Koud water veroorzaakt betrouwbaar een reactie van stresshormonen en hartslag, en het lichaam past zich aan bij herhaalde blootstelling. Een systematische review uit 2022 vond dat veel geclaimde voordelen berusten op kleine studies, vaak bij ervaren winterzwemmers, en dus niet voor iedereen bewezen zijn. De meeste mensen nemen een ijsbad voor alertheid en stemming — dat is redelijk, maar geen medische behandeling."
+        },
+        {
+          "q": "Hoe lang moet je in een ijsbad blijven?",
+          "a": "Voor beginners is 1 tot 3 minuten meestal prima; langer is niet beter. Stap eruit als je hevig rilt, je gevoelloos of verward voelt. Neem nooit alleen of na alcohol een ijsbad, en overleg eerst met een arts als je een hartaandoening of hoge bloeddruk hebt of zwanger bent."
+        },
+        {
+          "q": "Is een koeler het waard, of kan ik ijs gebruiken?",
+          "a": "Ijs is prima om de gewoonte te testen, maar je hebt meerdere zakken per sessie nodig en de kosten lopen op. Neem je drie of meer keer per week een ijsbad, dan houdt een koeler dagelijks de temperatuur vast en bespaart hij je de moeite. De Elite Chiller van Inergize dekt 37 tot 104°F en wordt los ($2,690) of in een pakket met het bad ($2,990 in de aanbieding) verkocht."
+        }
+      ]
+    },
+    "hypervolt-3-pro": {
+      "verdict": "Het vlaggenschip van 2026 en een duidelijke upgrade ten opzichte van de Hypervolt 2 Pro — meer stallkracht (70 lbs), stiller (51 dB), langere accuduur (4 uur) en grotere opzetstukken, voor een lagere $349. Op slaglengte blijft hij achter bij de Theragun PRO Plus, maar qua prijs-kwaliteit is dit de premiumgun om te verslaan.",
+      "productType": "Premium percussiemassagegun met Hyperice-ecosysteem"
+    },
+    "theragun-pro-plus": {
+      "verdict": "De referentie voor percussietherapie — hoogste stallkracht, diepste slag, verfijnde app. De premiumprijs weerspiegelt de topspecificaties en het Therabody-ecosysteem.",
+      "productType": "Premium percussiemassagegun met slimme app"
+    },
+    "hypervolt-2-pro": {
+      "verdict": "De Theragun-rivaal — vergelijkbare stallkracht, lager gewicht, Hyperice-ecosysteem. Iets minder slaglengte dan de Theragun PRO Plus voor een duidelijk lagere prijs.",
+      "productType": "Premium percussiemassagegun met Hyperice-ecosysteem"
+    },
+    "theragun-elite": {
+      "verdict": "Beste prijs-kwaliteit van Therabody — 16 mm slag met 40 lbs stallkracht voor $200 minder dan de PRO Plus. De verstandige Therabody-aankoop voor de meeste gebruikers.",
+      "productType": "Premium massagegun uit het middensegment"
+    },
+    "achedaway-pro": {
+      "verdict": "Beste verhouding tussen specificaties en prijs in premium percussie — 80 lbs stallkracht (hoogste in de categorie) voor $349. Geen app-ecosysteem van een premiummerk.",
+      "productType": "Premium massagegun voor specificatiemaximalisten"
+    },
+    "opove-m3-pro-2": {
+      "verdict": "Beste prijs-kwaliteit in het lagere middensegment — 55 lbs stallkracht voor $179 dicht het grootste deel van het verschil met de premiumklasse. Geen app; jonger merk dan Theragun / Hyperice.",
+      "productType": "Massagegun uit het lagere middensegment met premiumspecificaties"
+    },
+    "ekrin-b37": {
+      "verdict": "Beste middensegment met levenslange garantie — 56 lbs stallkracht met levenslange garantie voor $249.99. Minder slaglengte dan de premiumklasse; gepositioneerd op geloofwaardigheid bij sporters.",
+      "productType": "Op sporters gerichte massagegun uit het hogere middensegment"
+    },
+    "hypervolt-go-2": {
+      "verdict": "Beste reismini van een premiummerk — het Hypervolt-ecosysteem in zakformaat. Minder stallkracht is de prijs voor draagbaarheid.",
+      "productType": "Premium reis- / mini-massagegun"
+    },
+    "bob-and-brad-q2-mini": {
+      "verdict": "Beste prijs-kwaliteit bij budgetminis — het Bob and Brad-merk met fysiotherapeutische geloofwaardigheid voor $99. Beperkte stallkracht; de herkomst van het YouTube-kanaal „Famous Physical Therapists” is het onderscheidende kenmerk.",
+      "productType": "Budget-minimassagegun van een door fysiotherapeuten aanbevolen merk"
+    },
+    "renpho-r3": {
+      "verdict": "Beste Amazon-bestseller in het budgetsegment — de Renpho R3 levert geloofwaardige specificaties voor $99 met 5 opzetstukken en een stille borstelloze motor.",
+      "productType": "Budgetmassagegun, Amazon-bestseller"
+    },
+    "toloco-massage-gun": {
+      "verdict": "Goedkoopste geloofwaardige budgetkeuze — TOLOCO voor $69 met 10 opzetstukken. Laagste stallkracht in het overzicht; dunste merkherkomst. De juiste keuze als alleen de prijs telt.",
+      "productType": "Goedkoopste massagegun onder de Amazon-bestsellers"
     }
   },
   "comparisons": {
@@ -378,6 +755,85 @@
           "a": "EEG-headsets voor consumenten zijn geen goedgekeurde medische hulpmiddelen voor ADHD, angst of een andere klinische aandoening. De klinische optie in deze lijst is Myndlift, dat loopt via een erkende zorgverlener in de geestelijke gezondheidszorg die het neurofeedbackprotocol begeleidt. Specifiek voor klinische depressie is Flow Neuroscience de CE-gemarkeerde tDCS-optie."
         }
       ]
+    },
+    "best-massage-guns-2026": {
+      "title": "Beste massageguns (2026)",
+      "description": "ONDA rangschikt de beste massageguns van 2026 — met de nieuwe Hypervolt 3 Pro voorop, plus Theragun PRO Plus, Elite, Achedaway Pro en budgetkeuzes. Beoordeeld op kracht en slag.",
+      "intro": "Hardware voor percussietherapie viel in 2026 uiteen in duidelijke klassen: premium referentiemerken (Theragun PRO Plus, Hypervolt 2 Pro), hoger middensegment met sterke specificaties (Theragun Elite, Achedaway Pro, Ekrin B37), lager middensegment dat het verschil in specificaties heeft gedicht (OPOVE M3 Pro 2), reisminis (Hypervolt Go 2) en geloofwaardige budgetalternatieven (Bob and Brad Q2 Mini, Renpho R3, TOLOCO). We beoordeelden de 11 meest geloofwaardige massageguns van 2026 op dezelfde zes criteria: stallkracht en slaglengte, bouwkwaliteit en opzetstukken, accu en geluid, app en slimme functies, ergonomie en draagbaarheid, en prijs-kwaliteit.",
+      "verdict": "De Hypervolt 3 Pro van 2026 is de nieuwe beste keuze overall — ~70 lbs stallkracht, een stillere motor, langere accuduur en grotere opzetstukken voor $349; daarmee is hij $250 goedkoper dan de Theragun PRO Plus en verslaat hij die op kracht. De Theragun PRO Plus blijft de premiumkeuze voor de diepste slag van 16 mm, warmte-/ademfuncties en het Therabody-ecosysteem. De Achedaway Pro heeft nog altijd de hoogste pure stallkracht (80 lbs) voor $349; de Theragun Elite is de prijs-kwaliteitkeuze van Therabody; de OPOVE M3 Pro 2 dicht het verschil in specificaties voor $179; Bob and Brad / Renpho dekken de budgetklasse rond $99 geloofwaardig af. Kies aan de hand van drie vragen: pure kracht en prijs-kwaliteit of diepste slag, volledig formaat of reismini, app-ecosysteem of puur mechanisch.",
+      "content": "## Hoe we ze hebben gerangschikt\n\nElke massagegun is beoordeeld volgens ONDA's gepubliceerde [reviewmethodologie](/reviews/methodology): zes gewogen criteria, waarbij stallkracht en slaglengte het zwaarst wegen omdat ze de percussiedosis bepalen en de grootste verwarring in deze categorie voortkomt uit opgeblazen piekwaarden in de marketing.\n\nAlle tien zijn beoordeeld op basis van fabrikantendocumentatie en talrijke sport-/fitnessreviews uit 2026, niet door zelf te testen.\n\n## Beste massageguns: welke moet je kopen?\n\nDrie koopvragen brengen helderheid in de categorie:\n\n**Premium merkecosysteem of pure specificaties?** Premium (app + ecosysteem): Theragun PRO Plus, Hypervolt 2 Pro, Theragun Elite, Hypervolt Go 2. Pure specificaties (geen app): Achedaway Pro, OPOVE M3 Pro 2, Ekrin B37, Bob and Brad Q2 Mini, Renpho R3, TOLOCO.\n\n**Volledig formaat of reismini?** Volledig formaat: Theragun PRO Plus, Hypervolt 2 Pro, Theragun Elite, Achedaway Pro, OPOVE, Ekrin, Renpho, TOLOCO. Mini: Hypervolt Go 2 (premium), Bob and Brad Q2 Mini (budget).\n\n**Welke prijsklasse?** Onder $100: TOLOCO ($69), Bob and Brad Q2 Mini ($99), Renpho R3 ($99). $100–$250: Hypervolt Go 2 ($129), OPOVE M3 Pro 2 ($179), Ekrin B37 ($249.99). $300–$400: Achedaway Pro ($349), Theragun Elite ($399), Hypervolt 2 Pro ($399). $500+: Theragun PRO Plus ($599).\n\nDe Theragun PRO Plus domineert de klasse met de hoogste specificaties; de Hypervolt 2 Pro is het verstandige premiumalternatief; de Achedaway Pro bezet de niche van specificatiemaximalisten net onder premium; Bob and Brad / Renpho dekken de geloofwaardige budgetklasse af.",
+      "picks": {
+        "hypervolt-3-pro": {
+          "award": "Beste overall",
+          "takeaway": "Het Hyperice-vlaggenschip van 2026 — ~70 lbs stallkracht, stillere QuietGlide-motor, 4 uur accu en grotere opzetstukken, voor $349. Verslaat de duurdere Theragun op kracht en prijs-kwaliteit."
+        },
+        "theragun-pro-plus": {
+          "award": "Beste premium (diepste slag)",
+          "takeaway": "De diepste slag van 16 mm plus OLED, warmte, ademtraining en 2 jaar garantie — de referentie als slaglengte en ecosysteem belangrijker zijn dan de prijs."
+        },
+        "hypervolt-2-pro": {
+          "award": "Beste waarde vorige generatie",
+          "takeaway": "Het vertrekkende Hyperice-vlaggenschip — nog steeds uitstekend, en de slimme koop als hij flink onder de Hypervolt 3 Pro is afgeprijsd."
+        },
+        "theragun-elite": {
+          "award": "Beste prijs-kwaliteit van Therabody",
+          "takeaway": "Dezelfde slag van 16 mm als de PRO Plus + dezelfde app + dezelfde 2 jaar garantie voor $200 minder."
+        },
+        "achedaway-pro": {
+          "award": "Beste specificatiemaximalist",
+          "takeaway": "80 lbs stallkracht (hoogste in de categorie) + 16 mm slag voor $349 — geen app, geen premium merkafwerking."
+        },
+        "opove-m3-pro-2": {
+          "award": "Beste lager middensegment",
+          "takeaway": "55 lbs stallkracht voor $179 — specificaties van de premiumklasse voor minder dan $200."
+        },
+        "ekrin-b37": {
+          "award": "Beste garantie",
+          "takeaway": "De enige levenslange garantie in de categorie, voor $249.99 met 56 lbs stallkracht."
+        },
+        "hypervolt-go-2": {
+          "award": "Beste premium reismini",
+          "takeaway": "Het Hyperice-merk en de app in zakformaat voor $129 — met minder stallkracht."
+        },
+        "bob-and-brad-q2-mini": {
+          "award": "Beste budgetmini",
+          "takeaway": "Merkgeloofwaardigheid van de „Famous Physical Therapists” voor $99, met borstelloze motor en 6 uur accu."
+        },
+        "renpho-r3": {
+          "award": "Beste prijs-kwaliteit op Amazon",
+          "takeaway": "40 lbs stallkracht voor $99 — de beste pure specificaties in het budgetsegment op Amazon."
+        },
+        "toloco-massage-gun": {
+          "award": "Goedkoopste geloofwaardige keuze",
+          "takeaway": "Instapklasse van $69 met 10 opzetstukken — minder stallkracht voor de absoluut laagste prijs."
+        }
+      },
+      "faq": [
+        {
+          "q": "Wat is de beste massagegun in 2026?",
+          "a": "Overall de Hyperice Hypervolt 3 Pro — ~70 lbs stallkracht, een stillere motor, 4 uur accu en grotere opzetstukken voor $349; hij verslaat de duurdere Theragun PRO Plus op kracht en prijs-kwaliteit. De Theragun PRO Plus is de premiumkeuze voor de diepste slag van 16 mm en het Therabody-ecosysteem; de Achedaway Pro heeft de hoogste pure stallkracht (80 lbs) voor $349."
+        },
+        {
+          "q": "Is een Theragun de premiumprijs waard?",
+          "a": "Voor wie topspecificaties + het volledige Therabody-app-ecosysteem wil — ja. Voor wie alleen de percussiedosis wil: de Achedaway Pro (80 lbs stallkracht) voor $349 verslaat de Theragun PRO Plus op stallkracht en kost $250 minder."
+        },
+        {
+          "q": "Theragun vs Hypervolt — wat is beter?",
+          "a": "Sinds 2026 heeft de Hypervolt 3 Pro het tij gekeerd: ~70 lbs stallkracht (tegenover 60 bij de Theragun PRO Plus), stiller, langere accuduur en $349 tegenover $599. De Theragun wint nog op slaglengte (16 mm tegenover ~14 mm), 2 jaar garantie en extra's zoals warmte en ademtraining. Betaal de Theragun-meerprijs voor een diepere slag en het ecosysteem; kies de Hypervolt voor meer kracht voor veel minder geld."
+        },
+        {
+          "q": "Zijn goedkope massageguns ($99) echt goed?",
+          "a": "Ja — Bob and Brad Q2 Mini en Renpho R3 bieden borstelloze motoren en geloofwaardige 35–40 lbs stallkracht voor $99. Het verschil met premium is flink kleiner geworden; de afweging zit in app-integratie en garantievoorwaarden. Voor dagelijks licht gebruik is budget voldoende."
+        },
+        {
+          "q": "Wat is het verschil tussen stallkracht en slaglengte?",
+          "a": "Stallkracht = de druk in pond voordat de motor stopt. Slaglengte = de slagdiepte in mm. Stallkracht bepaalt hoe hard je kunt drukken; slaglengte bepaalt hoe diep de percussie gaat. Beide tellen; premiumapparaten leveren 60 lbs + 16 mm, budgetapparaten 30-40 lbs + 10-12 mm."
+        },
+        {
+          "q": "Heb ik een massagegun met app nodig?",
+          "a": "De apps van Therabody en Hyperice bieden begeleide routines, druksensoren en integratie met andere herstelapparaten. Voor wie gestructureerde percussieprotocollen wil — ja, de app heeft echte waarde. Voor wie al weet welke spiergroepen hij wil behandelen, is de app optioneel."
+        }
+      ]
     }
   },
   "criteria": {
@@ -396,13 +852,27 @@
     "wavelengths": "Dekking van golflengten",
     "build-emf-flicker": "Bouw, EMF en flikkering",
     "coverage": "Dekking en vormfactor van het paneel",
-    "evidence": "Bewijs en regelgevingsstatus"
+    "evidence": "Bewijs en regelgevingsstatus",
+    "session-library": "Sessiebibliotheek",
+    "technique-coverage": "Dekking van technieken",
+    "evidence-grounding": "Wetenschappelijke onderbouwing",
+    "app-experience": "App-ervaring",
+    "biofeedback": "Biofeedback en integratie",
+    "climate-range": "Temperatuurbereik en capaciteit",
+    "app-tracking": "App, tracking en integratie",
+    "subscription": "Abonnementsmodel en totale kosten",
+    "chiller-capacity": "Koelcapaciteit en temperatuurbereik",
+    "water-management": "Filtratie en waterbeheer"
   },
   "categories": {
     "pemf": "PEMF-apparaten",
     "cgm": "Continue glucosemeters",
     "eeg-headset": "EEG- & braintraining-headsets",
-    "red-light": "Roodlichttherapiepanelen"
+    "red-light": "Roodlichttherapiepanelen",
+    "breathwork-app": "Ademwerk-apps",
+    "sleep-climate": "Slim slaapklimaat",
+    "cold-plunge": "Ijsbad & koudwaterbad",
+    "massage-gun": "Massageguns"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {

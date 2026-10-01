@@ -6,7 +6,7 @@ const bestMassageGuns2026: Comparison = {
   description:
     'ONDA ranks the best massage guns of 2026 — led by the new Hypervolt 3 Pro, plus Theragun PRO Plus, Theragun Elite, Achedaway Pro, OPOVE M3 Pro 2, Ekrin B37 and credible budget picks. Scored on stall force, amplitude, build and value.',
   intro:
-    'Percussion-therapy hardware split into clean tiers by 2026: premium reference brands (Theragun PRO Plus, Hypervolt 2 Pro), mid-premium with strong specs (Theragun Elite, Achedaway Pro, Ekrin B37), mid-budget that closed the spec gap (OPOVE M3 Pro 2), travel minis (Hypervolt Go 2), and credible budget alternatives (Bob and Brad Q2 Mini, Renpho R3, TOLOCO). We scored the ten most credible massage guns of 2026 against the same six axes: stall force and amplitude, build and attachments, battery and noise, app and smart features, ergonomics and portability, and value.',
+    'Percussion-therapy hardware split into clean tiers by 2026: premium reference brands (Theragun PRO Plus, Hypervolt 2 Pro), mid-premium with strong specs (Theragun Elite, Achedaway Pro, Ekrin B37), mid-budget that closed the spec gap (OPOVE M3 Pro 2), travel minis (Hypervolt Go 2), and credible budget alternatives (Bob and Brad Q2 Mini, Renpho R3, TOLOCO). We scored the 11 most credible massage guns of 2026 against the same six axes: stall force and amplitude, build and attachments, battery and noise, app and smart features, ergonomics and portability, and value.',
   category: 'massage-gun',
   picks: [
     {

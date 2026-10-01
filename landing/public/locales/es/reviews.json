@@ -96,7 +96,11 @@
     "pemf": "Dispositivos PEMF",
     "cgm": "Monitores continuos de glucosa",
     "eeg-headset": "Cascos EEG y de entrenamiento cerebral",
-    "red-light": "Paneles de terapia de luz roja"
+    "red-light": "Paneles de terapia de luz roja",
+    "breathwork-app": "Apps de respiración",
+    "sleep-climate": "Climatización inteligente del sueño",
+    "cold-plunge": "Baños de agua fría y de hielo",
+    "massage-gun": "Pistolas de masaje"
   },
   "criteria": {
     "tracking-accuracy": "Precisión del seguimiento del sueño",
@@ -128,7 +132,16 @@
     "irradiance": "Irradiancia y verificación de especificaciones",
     "wavelengths": "Cobertura de longitudes de onda",
     "build-emf-flicker": "Construcción, CEM y parpadeo",
-    "coverage": "Cobertura y formato del panel"
+    "coverage": "Cobertura y formato del panel",
+    "session-library": "Biblioteca de sesiones",
+    "technique-coverage": "Cobertura de técnicas",
+    "evidence-grounding": "Base científica",
+    "biofeedback": "Biofeedback e integración",
+    "climate-range": "Rango de temperatura y capacidad",
+    "app-tracking": "App, seguimiento e integración",
+    "subscription": "Modelo de suscripción y coste total",
+    "chiller-capacity": "Capacidad del enfriador y rango de temperatura",
+    "water-management": "Filtración y gestión del agua"
   },
   "bodies": {
     "sleep-cycle": {
@@ -1207,6 +1220,383 @@
           "a": "El PlatinumLED BIOMAX 600 es ideal para compradores que quieren un espectro amplio y un control de CEM verificado a un precio inferior al de Joovv. PlatinumLED publica abiertamente sus pruebas independientes de CEM (<0.3 mG a 6\"), algo poco común en la categoría. El panel mediano requiere combinar varios para cubrir el cuerpo completo."
         }
       ]
+    },
+    "stelo": {
+      "verdict": "Hardware Dexcom G7 sin receta médica: el CGM de consumo más preciso al precio más bajo para ese nivel.",
+      "summary": "Stelo es el CGM de Dexcom de venta directa al consumidor para biohackers sin diabetes, autorizado por la FDA en 2024 como el primer CGM de venta libre (OTC) en EE. UU. El hardware es el sensor Dexcom G7 —el mismo sensor que usan Levels y Nutrisense—, vendido a través de la propia app de Dexcom a $99 por dos sensores (suministro para un mes). El motor de análisis es más sencillo que el de Levels, pero los datos son los mismos. La relación precio-precisión es la mejor del mercado de CGM de consumo.",
+      "description": "Análisis de ONDA de Stelo, el CGM OTC de Dexcom autorizado por la FDA para personas sin diabetes: sensor Dexcom G7 sin receta. Precisión, análisis, flexibilidad y precio.",
+      "bestFor": "Ideal para biohackers que quieren la precisión del Dexcom G7 al mejor precio, sin suscripción de coaching.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Dexcom Stelo, la literatura de validación del Dexcom G7 y reseñas independientes de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "CGM OTC (hardware Dexcom G7, app de consumo)",
+      "pros": [
+        "Hardware Dexcom G7: el mismo techo de precisión que Levels y Nutrisense",
+        "Autorizado por la FDA como OTC: sin receta ni suscripción de coaching obligatoria",
+        "La forma más barata de llevar un Dexcom en el cuerpo",
+        "Sensor de 15 días de uso en la variante Stelo, más que el G7 estándar"
+      ],
+      "cons": [
+        "Motor de análisis más sencillo que Levels: sin historial de ranking alimento por alimento",
+        "Sin coach humano: solo orientación dentro de la app",
+        "Solo EE. UU. (envío directo de Dexcom)",
+        "Integración limitada con apps de terceros en comparación con Levels"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Dexcom G7, el mismo hardware sobre el que funcionan Levels y Nutrisense: MARD ~8,2 %, 15 días de uso en la variante Stelo y 30 minutos de calentamiento.",
+        "insights": "Buenas vistas del impacto de las comidas y del tiempo diario en rango. Menos profundidad que Levels —sin descomposición del AUC ni historial de ranking de alimentos—, pero cubre lo que la mayoría necesita.",
+        "coaching": "Sin coach humano; solo orientación por IA en la app y contenido educativo. El coaching es lo que se sacrifica por el precio.",
+        "app-integration": "App Dexcom Stelo para iOS/Android con integración en Apple Health. Conectores de terceros limitados en comparación con Levels.",
+        "flexibility": "Compra uno o muchos: sin suscripción obligatoria, los sensores se compran según se necesiten. Los 15 días de uso dan más flexibilidad que el G7 de 10 días de Nutrisense (Levels ya envía el propio Stelo).",
+        "value": "$99 por dos sensores (~30 días) o $89 con suscripción. El mejor precio disponible para hardware Dexcom G7, sin receta."
+      },
+      "content": "## Dónde destaca\n\nStelo es la forma legítima más barata de llevar un Dexcom G7 en el brazo y ver tus [picos de glucosa](/glossary/glucose-spikes) en tiempo real. El hardware es idéntico al que Levels y Nutrisense envían a dos o tres veces el precio: el mismo sensor, el mismo techo de precisión (MARD ~8,2 % en comparación independiente) y los mismos 30 minutos de calentamiento. Lo que pierdes es el envoltorio: la app de Stelo es competente más que líder en su categoría, la capa de coaching es IA dentro de la app en lugar de un dietista titulado, y el ecosistema de integraciones es más estrecho que el de Levels. Como producto OTC autorizado por la FDA en 2024, no requiere receta y puedes comprar los sensores de pack en pack.\n\n## ¿Cuáles son las desventajas de Stelo?\n\nLa principal desventaja de Stelo es su motor de análisis más sencillo: ese es el precio a pagar. Stelo ofrece vistas del impacto de las comidas y del tiempo en rango; Levels añade descomposición del AUC, historial de ranking alimento por alimento y un conjunto de análisis más profundo. No hay coach humano, la lista de integraciones de terceros es más corta y el envío directo de Dexcom solo a EE. UU. limita su disponibilidad internacional. Si esas funciones son la razón de tu compra, Stelo no es la herramienta adecuada.\n\n## ¿Quién debería comprar Stelo?\n\nElige Stelo si quieres el hardware de CGM más preciso disponible al mejor precio y confías en ti mismo para interpretar los datos. Si quieres el motor de análisis más profundo sobre el mismo sensor, Levels. Si quieres un dietista titulado, Nutrisense. El hardware es idéntico en los tres casos: pagas por lo que hay encima.\n\n---\n\n## Lecturas de contexto\n\nLa biología metabólica que estos programas ponen de manifiesto y los protocolos que los datos hacen posibles.\n\n- [El eje intestino-cerebro como enlace de datos](/articles/gut-brain-axis-data-link) — donde se cruzan el microbioma y los patrones de glucosa\n- [Flexibilidad metabólica: qué es y cómo saberlo](/articles/metabolic-flexibility-dual-fuel-system) — lo que una curva de glucosa puede y no puede decirte sobre el cambio de combustible\n",
+      "faq": [
+        {
+          "q": "¿Merece la pena Stelo de Dexcom?",
+          "a": "Stelo merece la pena si quieres la precisión del Dexcom G7 al precio más bajo sin suscripción de coaching. Está autorizado por la FDA como OTC, no necesita receta y ofrece 15 días de uso por sensor. Su motor de análisis es más sencillo que el de Levels, no hay coach humano y solo se envía a EE. UU."
+        },
+        {
+          "q": "¿Cuánto cuesta Stelo?",
+          "a": "Stelo cuesta $99 por dos sensores, unos 30 días de uso, o $89 al mes con suscripción. No se necesita receta. Es la forma más barata de llevar hardware Dexcom en el cuerpo."
+        },
+        {
+          "q": "Stelo vs Levels: ¿cuál es mejor?",
+          "a": "Ambos usan hardware de la plataforma Dexcom G7: Levels ya envía sensores Stelo dentro de su membresía. Stelo es más barato y no necesita suscripción de coaching. Levels tiene un motor de análisis más profundo, con historial de ranking alimento por alimento y una integración más amplia con terceros. Elige Stelo por precio y Levels por profundidad de análisis."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Stelo?",
+          "a": "El motor de análisis de Stelo es más sencillo que el de Levels, sin historial de ranking alimento por alimento. No hay coach humano, solo orientación en la app; se envía solo a EE. UU. a través de Dexcom, y la integración con apps de terceros es limitada en comparación con Levels."
+        }
+      ]
+    },
+    "levels": {
+      "verdict": "El programa de CGM para biohackers más pulido: análisis líder en su clase, ahora con membresías por niveles (desde $80/año solo app hasta $1,329/año con análisis de laboratorio y dos meses de CGM).",
+      "summary": "Levels es el programa de CGM que definió la categoría biohacker. Envía sensores Dexcom Stelo (el CGM de venta libre de Dexcom, sin receta) con una app cuyo análisis de impacto alimento por alimento, puntuación de tiempo en rango y orientación comida a comida son los más profundos del mercado. No hay coach humano por defecto: Levels apuesta por la inteligencia de la app y el contenido de su consejo asesor médico. Levels ha pasado de un programa de tarifa plana de ~$199/mes a membresías por niveles: un plan solo app ($80/año), Core ($399/año con un mes de CGM y dos paneles de laboratorio) y Complete ($1,329/año con dos meses de CGM, análisis completos y una sesión con nutricionista). El CGM continuo más allá del mes o meses incluidos es un complemento. Los miembros también pueden conectar su propio Stelo o Dexcom G7 (el G7 requiere receta, que Levels puede gestionar a través de médicos asociados) o cualquier CGM que se sincronice con Apple Health o Health Connect.",
+      "description": "Análisis de Levels: el CGM para biohackers más pulido, basado en Dexcom Stelo, con análisis alimento por alimento y membresías desde $15/mes. ¿Merece la pena?",
+      "bestFor": "Ideal para biohackers serios que quieren la herramienta de análisis de CGM más profunda y están dispuestos a pagar más por ella.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto y los artículos de soporte de Levels, la literatura de validación de la plataforma Dexcom G7 y reseñas independientes de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "Programa de coaching con CGM (Dexcom Stelo)",
+      "pros": [
+        "El análisis alimento por alimento más profundo de la categoría",
+        "Dexcom Stelo (plataforma G7): precisión de CGM de consumo de primer nivel, sin receta",
+        "App pulida y biblioteca de contenidos respaldada por un consejo médico creíble",
+        "Integración con Apple Health y Oura de serie"
+      ],
+      "cons": [
+        "Core y Complete incluyen solo 1–2 meses de CGM al año; el uso continuo es un complemento extra",
+        "Sin coach humano en el nivel por defecto: solo orientación en la app",
+        "Solo EE. UU. a fecha de 2026",
+        "El precio destacado es con facturación anual; el pago mensual solo sale igual con compromiso anual"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Dexcom Stelo, el sensor OTC basado en la plataforma Dexcom G7, entre los CGM de consumo más precisos en comparaciones independientes (MARD de la plataforma G7 ~8,2 % frente a la referencia). 15 días de uso, 30 minutos de calentamiento, sin receta. Puntuación sin cambios: el paso de G7 a Stelo mantiene la misma plataforma de sensor.",
+        "insights": "El análisis del impacto de las comidas más profundo del mercado: puntuación por comida, AUC, pico, tiempo hasta volver a la línea base, además de vistas diarias/semanales de tiempo en rango y variabilidad de la glucosa.",
+        "coaching": "Sin coach humano incluido por defecto; la app es el coach, apoyada por una amplia biblioteca de contenidos y un consejo asesor médico. Coaching adicional disponible por separado.",
+        "app-integration": "App pulida para iOS/Android. Se integra con Apple Health y Oura; admite el registro de alimentos de MyFitnessPal.",
+        "flexibility": "Facturación mensual o anual; se puede pausar. Exportación de datos en bruto disponible bajo petición. Sin compromiso más allá del mes en curso.",
+        "value": "Ahora por niveles: $80/año solo app, $399/año Core (1 mes de CGM + 2 paneles de laboratorio), $1,329/año Complete (2 meses de CGM + análisis + nutricionista). Entrada mucho más barata que los antiguos $199/mes, pero el uso continuo del CGM cuesta extra."
+      },
+      "content": "## Dónde destaca\n\nLevels es el programa que convirtió el CGM en una categoría de consumo para personas sin diabetes, y su app sigue siendo el software más cuidado del sector. Las comidas no solo aparecen en una línea de tiempo: cada una se puntúa, se compara con tu propio historial, se descompone en [pico de glucosa](/glossary/glucose-spikes), AUC y tiempo hasta la línea base, y se integra en vistas diarias y semanales de tiempo en rango que entrenan la [flexibilidad metabólica](/glossary/metabolic-flexibility). El sensor incluido es ahora Dexcom Stelo, el sensor de venta libre y sin receta basado en la plataforma Dexcom G7, que la comparación independiente de MARD sitúa en lo más alto del ranking de precisión de CGM de consumo. El consejo asesor médico aporta una credibilidad que la mayoría de programas con poco coaching no tienen.\n\n## ¿Cuáles son las desventajas de Levels?\n\nEl modelo de precios es lo que hay que leer con atención. Levels abandonó su antiguo programa todo incluido de ~$199 al mes por membresías por niveles: $80 al año solo por la app (con tu propio CGM), $399 al año por Core con un mes de CGM y dos paneles de laboratorio, y $1,329 al año por Complete con dos meses de CGM. La entrada es mucho más barata que antes, pero si quieres llevar un sensor de forma continua pagas CGM extra, o compras un Dexcom Stelo o un Abbott Lingo OTC y usas el nivel solo app. No hay coach humano por defecto; si un dietista titulado forma parte de lo que necesitas, Nutrisense es la opción adecuada.\n\n## ¿Quién debería comprar Levels?\n\nElige Levels si tratas el CGM como un instrumento y no como un experimento: quieres el motor de análisis más profundo, confías más en la inteligencia de la app que en el coaching humano y valoras los análisis de laboratorio con bloques periódicos de CGM más que el uso continuo. Si solo quieres el sensor y una app más sencilla, Dexcom Stelo o Lingo por sí solos son la herramienta más barata. Si el coaching humano es la prioridad, Nutrisense.\n\n---\n\n## Lecturas de contexto\n\nLa biología metabólica que estos programas ponen de manifiesto y los protocolos que los datos hacen posibles.\n\n- [Regulador energético: la TSH](/articles/energy-governor-tsh) — el metabolismo impulsado por la tiroides como origen de la capacidad de gestionar la glucosa\n- [Biología del GLP-1 y preservación muscular](/articles/glp1-biology-muscle-preservation) — lo que muestran los datos de CGM durante un protocolo con GLP-1\n- [Seguimiento de biomarcadores con IA](/articles/ai-biomarker-tracking-predictive) — el CGM como el flujo de biomarcadores de consumo de mayor densidad disponible\n",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta Levels?",
+          "a": "A septiembre de 2026, Levels vende membresías por niveles: unos $80 al año solo por la app (con tu propio CGM), $399 al año por Core (un mes de CGM más dos paneles de laboratorio) y $1,329 al año por Complete (dos meses de CGM, análisis completos y una sesión con nutricionista). Los meses extra de CGM son un complemento. El antiguo programa de tarifa plana de ~$199 al mes ya no existe."
+        },
+        {
+          "q": "¿Levels incluye un coach?",
+          "a": "No. No hay coach humano en el nivel por defecto. Levels se basa en la inteligencia de la app, con análisis de impacto alimento por alimento, puntuación de tiempo en rango y orientación comida a comida, además de contenido de su consejo asesor médico. Quienes quieran coaching humano deberían mirar otros programas."
+        },
+        {
+          "q": "Levels vs Lingo: ¿qué CGM elegir?",
+          "a": "Levels ofrece el análisis más profundo y envía Dexcom Stelo (plataforma G7, algo más preciso que Libre 3), pero es una membresía (desde $80 al año solo app hasta $1,329 al año) y solo está disponible en EE. UU. Lingo no necesita suscripción y es la entrada legítima más barata, con una puntuación por comida más sencilla sobre Libre 3. Elige Levels por profundidad y Lingo por coste."
+        }
+      ]
+    },
+    "lingo": {
+      "verdict": "Hardware Libre de Abbott vendido sin receta: la entrada más sencilla al CGM con el precio por sensor más bajo.",
+      "summary": "Lingo es el CGM de Abbott de venta directa al consumidor, vendido sin receta (OTC) con hardware Libre 3 y una app pensada para principiantes en salud metabólica. Sensores de dos semanas a $54 cada uno, sin suscripción obligatoria. La app se centra en una única métrica “Lingo Count” por comida en lugar del análisis profundo de Levels. Es el punto de entrada adecuado si el coste y la sencillez importan más que la profundidad del análisis.",
+      "description": "Análisis de ONDA de Lingo, el CGM de Abbott de venta directa basado en Libre 3, vendido sin receta. Puntuado en precisión, análisis, flexibilidad y precio.",
+      "bestFor": "Ideal para quienes usan un CGM por primera vez y quieren la entrada legítima más barata sin suscripción.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Abbott Lingo, la literatura de validación del Libre 3 y reseñas independientes de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "CGM OTC (variante de consumo de Abbott Libre 3)",
+      "pros": [
+        "Sin receta ni suscripción: compra sensores sueltos cuando los necesites",
+        "El acceso legítimo más barato a un CGM de consumo en EE. UU.",
+        "Abbott Libre 3: 14 días de uso fiables, sin calibración",
+        "App limpia pensada para quienes usan un CGM por primera vez"
+      ],
+      "cons": [
+        "Motor de análisis más sencillo que Levels: solo una puntuación de pico por comida",
+        "Sin coach humano en ningún nivel",
+        "Integración limitada con terceros en comparación con Levels",
+        "La precisión del Libre 3 queda por detrás del Dexcom G7 en comparación independiente"
+      ],
+      "scoreNotes": {
+        "sensor-accuracy": "Abbott Libre 3: MARD ~9 %, 14 días de uso, sin calibración, 60 minutos de calentamiento. Ligeramente menos preciso que el Dexcom G7 en comparación independiente.",
+        "insights": "Construido en torno a una única puntuación de pico por comida, el “Lingo Count”. Más sencillo que Levels: más fácil para principiantes, frustrante para usuarios avanzados.",
+        "coaching": "Mínimo: solo orientación en la app, sin coach. Abbott apostó por la sencillez frente al coaching.",
+        "app-integration": "App limpia para iOS/Android con soporte para Apple Health y Google Fit. Conectores de terceros limitados en comparación con Levels.",
+        "flexibility": "Sin suscripción obligatoria: compra sensores sueltos de 2 semanas a $54 cada uno según los necesites, o planes de varios sensores. El CGM comercial más flexible de esta lista.",
+        "value": "$54 por sensor de 2 semanas sin compromiso; los planes de varios sensores y de suscripción reducen el coste por sensor. Entre los accesos legítimos a CGM más baratos de EE. UU."
+      },
+      "content": "## Dónde destaca\n\nLingo es la vía legítima más barata para que una persona sin diabetes en EE. UU. empiece con un CGM. El sensor Libre 3 de Abbott —la misma plataforma fiable de 14 días que usan Ultrahuman M1, Veri y Hello Inside—, vendido OTC sin receta y sin obligación de suscripción. Un sensor suelto de dos semanas cuesta $54 sin compromiso; los planes de varios sensores y de suscripción bajan el coste por sensor. La app es deliberadamente sencilla: una puntuación de pico por comida, el “Lingo Count”, en lugar de un conjunto de análisis profundo. Para quien usa un CGM por primera vez y quiere experimentar sin comprometerse con un programa de $200 al mes, esa sencillez es el valor.\n\n## ¿Cuáles son las desventajas de Lingo?\n\nEs una herramienta para principiantes. La capa de análisis de una sola puntuación se vuelve frustrante cuando ya has aprendido a leer tus propias curvas: no hay descomposición del AUC, ni historial de ranking alimento por alimento, ni coaching. La lista de integraciones de terceros es corta y la precisión del Libre 3 queda ligeramente por detrás del Dexcom G7 en comparación independiente. Como instrumento para la autoexperimentación continua de un biohacker, Lingo es el punto de partida, no el destino.\n\n## ¿Quién debería comprar Lingo?\n\nElige Lingo si nunca has llevado un CGM y quieres la forma legítima más barata de averiguar si cambia algo para ti. Si ya has superado el enfoque de principiante y quieres profundidad, Levels o Stelo son los siguientes pasos naturales.\n\n---\n\n## Lecturas de contexto\n\nLa biología metabólica que estos programas ponen de manifiesto y los protocolos que los datos hacen posibles.\n\n- [¿Ya se puede medir el cortisol de forma continua?](/articles/chm-continuous-hormone-monitoring) — por qué ningún wearable de consumo mide hoy hormonas, a diferencia de la glucosa\n- [El eje intestino-cerebro como enlace de datos](/articles/gut-brain-axis-data-link) — donde se cruzan el microbioma y los patrones de glucosa\n- [Flexibilidad metabólica: qué es y cómo saberlo](/articles/metabolic-flexibility-dual-fuel-system) — lo que una curva de glucosa puede y no puede decirte sobre el cambio de combustible\n",
+      "faq": [
+        {
+          "q": "¿Se necesita receta para Lingo?",
+          "a": "No. Lingo es el CGM de venta libre de Abbott, vendido sin receta ni suscripción. Usa hardware Libre 3 con 14 días de uso fiables y sin calibración, y simplemente compras sensores cuando los necesitas. Es el acceso legítimo más barato a un CGM de consumo en EE. UU."
+        },
+        {
+          "q": "¿Cuánto cuesta Lingo?",
+          "a": "Lingo cuesta $54 por un plan de dos semanas (un sensor, sin renovación automática), con planes de varios sensores y de suscripción que cuestan menos por sensor. No se requiere suscripción: puedes comprar sensores sueltos cuando los necesites. Eso lo convierte en la entrada más barata a la monitorización continua de glucosa para una persona sin diabetes en EE. UU."
+        },
+        {
+          "q": "Lingo vs Levels: ¿cuál es mejor?",
+          "a": "Lingo es más barato y sencillo: sin suscripción y con una puntuación Lingo Count por comida. Levels ofrece un análisis mucho más profundo y el Dexcom Stelo (plataforma G7), algo más preciso, como membresía desde unos $80 al año (solo app) hasta $1,329 al año. Ninguno incluye coach humano. Elige Lingo si el coste y la sencillez importan más que la profundidad del análisis."
+        }
+      ]
+    },
+    "healthy-wave-multi-wave": {
+      "verdict": "La mejor esterilla PEMF multimodal: PEMF + infrarrojo lejano + luz roja a un precio inferior al de Bemer. No tiene el respaldo de investigación de Bemer, pero cubre más modalidades de recuperación por sesión.",
+      "summary": "Healthy Wave Multi-Wave es una esterilla PEMF muy bien valorada en los sitios de reseñas independientes. Lo que la diferencia es la combinación: PEMF, calor de infrarrojo lejano, luz roja, iones negativos y cristales en una sola esterilla. El controlador Multi-Wave funciona de 1 a 30 Hz con tres anchos de pulso (seis formas de onda), 12 programas predefinidos o programas personalizados. No está a la altura de Bemer en respaldo científico, pero es una forma mucho más barata de obtener varias modalidades de recuperación a la vez.",
+      "description": "Análisis de la esterilla PEMF Healthy Wave Multi-Wave (2026): PEMF, infrarrojo, luz roja, iones y cristales, $995–$2,495. Evidencia, seguridad y comparativa con Bemer.",
+      "bestFor": "Ideal para quien quiere la máxima cobertura de modalidades de recuperación por sesión (PEMF + IR + luz roja) a un precio inferior al de Bemer y con control total de los parámetros.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Healthy Wave y de reseñas independientes de esterillas PEMF de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "Esterilla multimodal PEMF + infrarrojo + luz roja",
+      "pros": [
+        "Combina PEMF + infrarrojo lejano + terapia de luz roja en una sola esterilla",
+        "La mejor programabilidad de la categoría: control real de parámetros, no programas opacos",
+        "Menos de la mitad del precio de Bemer",
+        "Garantía de 5 años y prueba de 90 días"
+      ],
+      "cons": [
+        "Sin un respaldo de investigación propio como la señal biorrítmica de Bemer, y sin ensayos de esta esterilla en concreto",
+        "Más grande y pesada que las esterillas PEMF de una sola modalidad (el tamaño completo pesa unas 26 lb)",
+        "Curva de aprendizaje del controlador: más parámetros = más configuración",
+        "Algunos usuarios dicen que el calor IR predomina sobre la señal PEMF"
+      ],
+      "scoreNotes": {
+        "field-strength": "Intensidad PEMF configurable, 1–30 Hz; el fabricante indica hasta 5+ gauss de pico y unos 1,5 gauss de media en la superficie. Más que Bemer, pero sigue siendo de baja intensidad frente a los sistemas de bobinas clínicos.",
+        "waveform-evidence": "Usa frecuencias PEMF habituales (incluida la banda Schumann de 7,83 Hz) de la literatura PEMF general. Sin ensayos específicos del dispositivo y sin un respaldo de investigación propio sobre una forma de onda concreta como Bemer.",
+        "build": "Esterilla plegable de tres secciones, garantía limitada de 5 años (más 3 meses si se compra directamente), prueba de 90 días. Historial positivo de atención al cliente.",
+        "programmability": "La mejor programabilidad de la categoría: tres anchos de pulso, seis formas de onda, 12 programas predefinidos o personalizados; PEMF, calor y luz roja se controlan por separado.",
+        "form-factor": "Esterilla de cuerpo entero con PEMF + infrarrojo lejano + luz roja + iones negativos + cristales. Cuatro tamaños Multi-Wave, de 32×20 in a 74×28 in. Una esterilla sustituye a varios dispositivos de una sola modalidad.",
+        "value": "$995–$2,495 según el tamaño (Pro de tamaño completo, $2,495). Menos de la mitad del precio del set Bemer para varias modalidades de recuperación."
+      },
+      "content": "## Nuestro veredicto en breve\n\nHealthy Wave Multi-Wave es una esterilla de cuerpo entero que combina cinco cosas: PEMF, calor de infrarrojo lejano, luz roja, iones negativos y cristales calefactados. Su controlador da un control real sobre la frecuencia, el ancho de pulso y la intensidad. Por $995–$2,495 cuesta menos de la mitad que un set Bemer. El inconveniente: la evidencia sobre el PEMF de consumo es escasa, y gran parte de lo que notas probablemente sea el calor. Cómprala como una esterilla de recuperación cómoda con PEMF añadido, no como un tratamiento médico.\n\n## ¿Qué es la Healthy Wave Multi-Wave y cómo funciona?\n\nTe tumbas sobre la esterilla durante una sesión, normalmente de 20–60 minutos. Unas bobinas internas emiten campos magnéticos pulsados (PEMF) a 1–30 Hz. El controlador Multi-Wave añade tres anchos de pulso, lo que da seis formas de onda, además de 12 programas predefinidos o los tuyos propios. El fabricante indica hasta 5+ gauss de pico y unos 1,5 gauss de media en la superficie: mucho más que Bemer y mucho menos que los dispositivos de bobinas clínicos. Mientras tanto, capas de cristales se calientan y desprenden calor de infrarrojo lejano, y unos LED rojos añaden terapia de luz.\n\n## ¿Funciona realmente el PEMF?\n\nLos dispositivos PEMF médicos se usan para problemas concretos, como fracturas que tardan en consolidar. En el caso de las esterillas de bienestar de consumo, la evidencia es mucho más escasa. El uso cotidiano mejor estudiado es el dolor articular: una revisión Cochrane de ensayos pequeños en artrosis de rodilla concluyó que la terapia con campos electromagnéticos puede reducir el dolor de forma moderada, con efectos inciertos sobre la función (Li 2013). Las afirmaciones sobre sueño, energía, desintoxicación o \"carga celular\" proceden sobre todo de los fabricantes. No encontramos ensayos clínicos independientes de la propia esterilla Healthy Wave.\n\nEl calor se conoce mejor: relaja los músculos y a mucha gente le resulta calmante. Probablemente sea el principal efecto que notes.\n\n## ¿Cuánto cuesta?\n\n| | Healthy Wave Multi-Wave | [Bemer Classic Evo](/reviews/bemer-classic-evo) | [OMI Full Body Mat](/reviews/omi-full-body-mat) | [HigherDOSE PEMF Mat](/reviews/higherdose-pemf-mat) |\n|---|---|---|---|---|\n| Precio | $995–$2,495 | $5,490 (set) | $1,750 | $1,295 |\n| Modalidades | PEMF, infrarrojo, luz roja, iones, cristales | Solo PEMF | Solo PEMF | PEMF + infrarrojo |\n| Su punto fuerte | modalidades y control | señal más estudiada | esterilla sencilla de gama media | facilidad de uso |\n\nNo hay suscripción. El único coste de uso es la electricidad.\n\n## ¿Cuáles son las desventajas de la Healthy Wave Multi-Wave?\n\nNo tiene un respaldo de investigación sobre una forma de onda propia. Bemer cuenta con muchos estudios sobre su señal específica; Healthy Wave usa frecuencias PEMF habituales sin ensayos propios. La esterilla de tamaño completo es grande y pesada (unas 26 lb). Más ajustes implican más configuración. Y algunos usuarios dicen que el calor predomina sobre el PEMF.\n\n## ¿Quién debería comprarla y quién no?\n\n**Cómprala** si quieres calor, luz roja y PEMF en un solo dispositivo para relajarte y recuperarte, y te gusta tener control total de los ajustes.\n\n**Descártala** si buscas un efecto médico demostrado, necesitas un dispositivo portátil (consulta [Resona VIBE](/reviews/resona-health-vibe)) o quieres la señal más investigada (Bemer). Comparativas: [Healthy Wave vs HigherDOSE](/reviews/vs/healthy-wave-multi-wave-vs-higherdose-pemf-mat) y [Bemer vs Healthy Wave](/reviews/vs/bemer-classic-evo-vs-healthy-wave-multi-wave). Todas las opciones están clasificadas en [los mejores dispositivos PEMF de 2026](/reviews/compare/best-pemf-devices-2026).\n\n## ¿Es segura?\n\nPara la mayoría de adultos sanos, una esterilla PEMF de baja intensidad parece de bajo riesgo. No uses la función PEMF si llevas marcapasos, desfibrilador u otro dispositivo electrónico implantado: la propia Healthy Wave advierte sobre interferencias. Consulta antes a un médico si estás embarazada, tienes epilepsia o estás en tratamiento por una enfermedad. Como la esterilla se calienta, ten cuidado si tienes la sensibilidad reducida (por ejemplo, por neuropatía diabética) y empieza con sesiones cortas. El PEMF no debe sustituir al tratamiento médico.\n\n---\n\n## Lecturas de contexto\n\n- [Medicina eléctrica y neuromodulación](/articles/electric-medicine-neuromodulation) — cómo los campos electromagnéticos aplicados influyen en la reparación de tejidos\n- [Biogénesis mitocondrial](/articles/mitochondrial-biogenesis-cellular-power-grid) — el PEMF y la luz roja como modalidades complementarias de energía celular\n- [¿El sueño limpia de verdad el cerebro? La evidencia glinfática](/articles/nightly-flush-glymphatic-neural-cache) — qué se ha demostrado en personas y qué sigue en discusión\n",
+      "faq": [
+        {
+          "q": "¿Qué hace la esterilla PEMF Healthy Wave Multi-Wave?",
+          "a": "La Healthy Wave Multi-Wave combina PEMF, calor de infrarrojo lejano, luz roja, iones negativos y cristales calefactados en una esterilla de cuerpo entero. Su controlador ofrece 1-30 Hz, tres anchos de pulso (seis formas de onda), 12 programas predefinidos o personalizados. ONDA le da una puntuación global de 8,4/10."
+        },
+        {
+          "q": "¿Cuánto cuesta la esterilla Healthy Wave Multi-Wave?",
+          "a": "La Healthy Wave Multi-Wave cuesta $995-$2,495 según el tamaño; la Pro Multi-Wave de tamaño completo (74x28 in) cuesta $2,495 con el controlador. Es menos de la mitad del precio del set Bemer, con garantía limitada de 5 años y prueba de 90 días."
+        },
+        {
+          "q": "¿Cómo se compara la Healthy Wave Multi-Wave con Bemer?",
+          "a": "La Healthy Wave Multi-Wave cuesta menos de la mitad que un set Bemer y cubre varias modalidades (PEMF, infrarrojo, luz roja) frente a la señal única de Bemer. Sin embargo, carece de la investigación de Bemer sobre su propia señal específica, por lo que Bemer sigue siendo la referencia en respaldo científico de la forma de onda."
+        },
+        {
+          "q": "¿Funciona de verdad la esterilla PEMF Healthy Wave?",
+          "a": "No hay ensayos clínicos independientes de la propia esterilla Healthy Wave. Para el PEMF en general, la mejor evidencia es en dolor articular: una revisión Cochrane concluyó que puede reducir moderadamente el dolor de la artrosis. Gran parte de lo que notan los usuarios probablemente sea el calor del infrarrojo lejano. Considérala una herramienta de recuperación relajante, no un tratamiento demostrado."
+        },
+        {
+          "q": "¿Es segura la esterilla PEMF Healthy Wave?",
+          "a": "Para la mayoría de adultos sanos parece de bajo riesgo. No uses la función PEMF con marcapasos, desfibrilador u otro implante electrónico, y consulta antes a un médico si estás embarazada, tienes epilepsia o alguna enfermedad. Ten cuidado con el calor si tienes la sensibilidad de la piel reducida."
+        },
+        {
+          "q": "Healthy Wave vs esterilla PEMF HigherDOSE: ¿cuál es mejor?",
+          "a": "La Healthy Wave Multi-Wave ($995-$2,495) añade luz roja, más formas de onda y controles más finos. HigherDOSE ($1,295 tamaño completo) es más sencilla y fácil de usar. Elige Healthy Wave por control y más modalidades, y HigherDOSE por facilidad de uso."
+        }
+      ]
+    },
+    "prana-breath": {
+      "verdict": "La mejor app de respiración por patrones personalizables: control profundo de parámetros, pensada primero para Android y casi gratuita. La experiencia de uso se ve anticuada frente a las apps premium.",
+      "summary": "Prana Breath es la veterana app de respiración pensada primero para Android: control profundo de parámetros (tiempos de inhalación, retención, exhalación y retención totalmente personalizables en cada patrón), una amplia biblioteca de patrones predefinidos y un modelo casi gratuito. La experiencia de uso se ve anticuada frente a Breathwrk u Othership; la profundidad de parámetros es lo que la diferencia.",
+      "description": "Análisis de Prana Breath: la app de respiración por patrones más personalizable, con control profundo de parámetros, pensada para Android y casi gratis. Interfaz algo anticuada.",
+      "bestFor": "Ideal para quien quiere personalizar a fondo sus patrones de respiración a un precio casi gratuito, y para usuarios de Android que no necesitan el pulido de una app premium.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de la app Prana Breath, sus fichas en Google Play / App Store y opiniones de usuarios de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "App de respiración por patrones personalizables",
+      "pros": [
+        "La mejor personalización de parámetros: control total de los tiempos del patrón respiratorio",
+        "App veterana con años de fiabilidad",
+        "Modelo casi gratuito con un desbloqueo premium único y barato",
+        "Pensada primero para Android: la mejor opción para quien no usa iOS"
+      ],
+      "cons": [
+        "Experiencia de uso anticuada frente a las apps premium de 2026",
+        "Menos contenido seleccionado y menos itinerarios guiados",
+        "Sin biofeedback de VFC ni textos basados en evidencia seleccionada",
+        "El motor de patrones da por hecho que el usuario sabe qué tiempos usar"
+      ],
+      "scoreNotes": {
+        "session-library": "Buena biblioteca de patrones predefinidos (respiración en caja, 4-7-8, Wim Hof, pranayama, personalizados). Menos contenido guiado que Breathwrk; más patrones en bruto.",
+        "technique-coverage": "Amplia cobertura de técnicas gracias al motor de patrones personalizable: cualquier combinación de tiempos que quiera el usuario.",
+        "evidence-grounding": "El motor de patrones es neutro: la base científica depende de que el usuario sepa qué patrones están validados. Menos textos científicos seleccionados que Breathwrk.",
+        "app-experience": "Interfaz funcional pensada primero para Android; existe versión para iOS, pero parece secundaria. Anticuada frente a las apps premium de 2026.",
+        "biofeedback": "Sin integración de VFC. Seguimiento básico de rachas.",
+        "value": "Modelo casi gratuito con un desbloqueo premium único de ~$10. La mejor opción calidad-precio en respiración personalizable."
+      },
+      "content": "## Dónde destaca\n\nPrana Breath es la referencia en respiración por patrones personalizables: control profundo de parámetros, una app veterana pensada primero para Android y un modelo casi gratuito con un desbloqueo premium único de $10. El motor de patrones permite crear cualquier temporización respiratoria que se quiera.\n\n## ¿Cuáles son las desventajas de Prana Breath?\n\nLas principales desventajas de Prana Breath son el pulido de la experiencia de uso y el contenido seleccionado. Prana Breath parece anticuada al lado de Breathwrk u Othership; no hay producción cinematográfica, ni itinerarios guiados, ni textos científicos seleccionados. El motor de patrones es potente, pero da por hecho que el usuario ya sabe qué tiempos usar.\n\n## ¿Quién debería comprar Prana Breath?\n\nElige Prana Breath para practicar patrones de respiración personalizables por poco dinero, sobre todo en Android, donde las opciones premium son más flojas. Para una biblioteca estructurada y seleccionada, Breathwrk. Para empezar gratis en iOS, iBreathe. Para biofeedback de VFC, Inhale.\n\n---\n\n## Lecturas de contexto\n\n- [Medicina eléctrica y neuromodulación](/articles/electric-medicine-neuromodulation)\n- [Sueño acústico sincronizado en fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "¿Qué hace Prana Breath?",
+          "a": "Prana Breath es una app de respiración por patrones personalizables que da control total sobre los tiempos de inhalación, retención, exhalación y retención de cualquier patrón. Incluye una amplia biblioteca de patrones predefinidos, como la respiración en caja, 4-7-8, Wim Hof y pranayama, y está pensada primero para Android. ONDA le da un 6,3/10."
+        },
+        {
+          "q": "¿Cuánto cuesta Prana Breath?",
+          "a": "Prana Breath es casi gratuita, con un nivel gratuito amplio y un desbloqueo premium único de unos $10. No hay suscripción recurrente. Eso la convierte en la mejor opción calidad-precio en respiración personalizable, con un 8,0/10 en precio en la evaluación de ONDA."
+        },
+        {
+          "q": "¿Para quién es mejor Prana Breath?",
+          "a": "Prana Breath es mejor para quien quiere personalizar a fondo sus patrones de respiración a un precio casi gratuito, y especialmente para usuarios de Android, donde las apps premium son más flojas. A cambio: experiencia de uso anticuada, menos contenido seleccionado, sin biofeedback de VFC y un motor de patrones que da por hecho que sabes qué tiempos usar."
+        }
+      ]
+    },
+    "chilipad-cube": {
+      "verdict": "La funda refrigerada por agua económica: refrigeración real por agua por $719 por lado, pero solo con mando, sin programación y con un ajuste más frío menos frío que el de Chilipad 2.0.",
+      "summary": "ChiliPad Cube es la funda refrigerada por agua de gama media de Sleepme, el veterano modelo que llevó la climatización del sueño por agua al gran público. Sigue enfriando y calentando con agua, pero ahora funciona con un mando físico, sin app ni programación, y enfría hasta 60°F en lugar de los 55°F de Chilipad 2.0. Es la entrada más barata a la gama Sleepme a costa de las funciones premium.",
+      "description": "Análisis de Chilipad Cube (2026): funda de colchón refrigerada por agua de $719, con mando, hasta 60°F y sin suscripción, frente a Chilipad 2.0 y Eight Sleep Pod 6.",
+      "bestFor": "Ideal para quien quiere la climatización por agua de Sleepme a precio de gama media sin funciones de programación.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Sleepme/Chili y de reseñas independientes de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "Funda de colchón refrigerada por agua de gama media",
+      "pros": [
+        "Sin suscripción obligatoria",
+        "Refrigeración y calefacción por agua por bastante menos de la mitad del precio de Chilipad 2.0",
+        "Marca veterana con años de fiabilidad",
+        "Funda sobre tu colchón actual: no hace falta cambiarlo"
+      ],
+      "cons": [
+        "Sin app ni programación: solo mando a distancia",
+        "Sin seguimiento de VFC ni del sueño",
+        "Enfría solo hasta 60°F, menos que Chilipad 2.0 (55°F)",
+        "Dos personas necesitan dos unidades; garantía de 1 año"
+      ],
+      "scoreNotes": {
+        "climate-range": "Enfría y calienta con agua. Sleepme indica ahora que el Cube enfría hasta 60°F (unos 15,5 °C), frente a los 55°F de Chilipad 2.0: un extremo frío más limitado que el rango del Dock Pro con el que lo puntuamos inicialmente (subpuntuación rebajada desde 8,5 el 2026-10-01).",
+        "build": "Funda y unidad similares a las del Dock Pro. Años de trayectoria de Sleepme. Garantía limitada de 1 año (ampliable al comprar), según sleep.me en octubre de 2026.",
+        "app-tracking": "El Cube actual se controla con un mando físico: no necesita Wi-Fi, Bluetooth ni cuenta en una app. Sin programación de la temperatura, sin integración con Apple Health y sin seguimiento del sueño.",
+        "form-factor": "Funda sobre el colchón actual. Fundas de media cama de una sola zona; para dos personas se compra un segundo sistema de una zona para el otro lado.",
+        "subscription": "Sin suscripción obligatoria.",
+        "value": "$719 en oferta ($799 de precio de lista) por lado a octubre de 2026: menos de la mitad que Chilipad 2.0 (desde $1,599)."
+      },
+      "content": "## Nuestro veredicto en breve\n\nEl Chilipad Cube es la forma más barata de dormir con refrigeración por agua. A octubre de 2026, Sleepme lo sigue vendiendo a $719 por lado ($799 de precio de lista), muy por debajo de los $1,599+ del nuevo Chilipad 2.0. Renuncias a la app, a la programación y a algo de capacidad de enfriamiento: el Cube se maneja con un mando sencillo y enfría hasta 60°F. Si duermes con calor y solo quieres una cama más fresca sin suscripción, es una buena compra. Si quieres automatización o datos de sueño, mira modelos superiores.\n\n## ¿Cómo funciona la refrigeración por agua?\n\nUna pequeña unidad junto a la cama enfría o calienta agua y la bombea por tubos finos dentro de una funda que se coloca sobre el colchón. El agua extrae calor de tu cuerpo (o lo aporta), de modo que la superficie de la cama se mantiene a la temperatura elegida, sin soplarte aire. La temperatura corporal central baja de forma natural al quedarte dormido, y una cama fresca favorece ese proceso; esa es la idea detrás de todos los productos de esta categoría. La funda no contiene cables, solo agua, y la cubierta se puede lavar a máquina.\n\n## Chilipad Cube vs Chilipad 2.0 vs Eight Sleep Pod 6\n\n| | Chilipad Cube | Chilipad 2.0 | Eight Sleep Pod 6 |\n|---|---|---|---|\n| Precio | $719 en oferta / $799 por lado | desde $1,599 (queen unos $1,699) | Solo desde $1,999; Queen doble $2,899 |\n| Ajuste más frío | 60°F | 55°F | ver nuestro análisis |\n| Control | mando físico, sin app | app + mando de mesilla, programación | app con ajuste automático |\n| Seguimiento del sueño | ninguno | ninguno | frecuencia cardiaca, frecuencia respiratoria, VFC, fases del sueño |\n| Suscripción | ninguna | ninguna | membresía Autopilot desde $199/año |\n\nLos precios proceden de nuestro [análisis de Chilipad 2.0 / Dock Pro](/reviews/chilipad-dock-pro) y del [análisis de Eight Sleep Pod 6](/reviews/eight-sleep-pod-6). El Dock Pro se liquida ahora como \"Chilipad 1.0\" con un 30 % de descuento hasta agotar existencias. Todas las opciones están clasificadas en [los mejores sistemas inteligentes de climatización del sueño](/reviews/compare/best-smart-sleep-climate-2026).\n\n## Ruido y mantenimiento\n\nComo cualquier sistema refrigerado por agua, el Cube lleva una bomba y un ventilador en la unidad de mesilla, así que espera un zumbido suave; deja la unidad en el suelo y lejos de la cabeza si eres sensible al ruido. El mantenimiento es el precio de los sistemas de agua: hay que rellenar el depósito y limpiar el sistema periódicamente según las instrucciones de Sleepme para evitar acumulaciones en los tubos. La funda se puede meter en la lavadora y la secadora.\n\n## ¿Quién debería comprar el Chilipad Cube?\n\nCompra el Cube si duermes con calor, quieres el precio más bajo en refrigeración por agua y te basta con un mando en lugar de una app. Las parejas pueden comprar una unidad por lado y ajustar cada una por separado. Elige [Chilipad 2.0](/reviews/chilipad-dock-pro) si quieres temperaturas más frías y programación. Elige [Eight Sleep Pod 6](/reviews/eight-sleep-pod-6) si quieres cambios automáticos de temperatura y seguimiento del sueño y aceptas una membresía. Para refrigeración por aire con un presupuesto similar, consulta [BedJet 3](/reviews/bedjet-3).\n\n---\n\n## Lecturas de contexto\n\nLa biología de por qué regular la temperatura de la cama influye en la profundidad del sueño y la recuperación.\n\n- [Sincronía ancestral y anclas circadianas](/articles/ancestral-sync-circadian-anchors) — por qué el enfriamiento nocturno coincide con la referencia ancestral\n- [Hidráulica neural: el flujo del LCR](/articles/neural-hydraulics-csf-flow) — la circulación del LCR durante el sueño y lo que favorece el enfriamiento\n- [Reinicio circadiano: dominar la luz](/articles/circadian-reset-mastering-light) — por qué la regulación de la temperatura de la cama se combina con el horario de luz para un sueño profundo\n",
+      "faq": [
+        {
+          "q": "¿Cuánto cuesta el Chilipad Cube?",
+          "a": "A octubre de 2026, Sleepme vende el Chilipad Cube a $719 por lado en oferta ($799 de precio de lista) en los tamaños media King y media Cal King; la media Queen estaba agotada. Para dos personas se compra una segunda unidad. No hay suscripción."
+        },
+        {
+          "q": "¿Se sigue vendiendo el Chilipad Cube?",
+          "a": "Sí. Sleepme sigue vendiendo el Cube junto al nuevo Chilipad 2.0 (desde $1,599). El antiguo Dock Pro se liquida como Chilipad 1.0 con un 30 % de descuento hasta agotar existencias. El Cube es el modelo económico: mando a distancia, sin app y enfriamiento hasta 60°F."
+        },
+        {
+          "q": "¿Chilipad Cube o Chilipad 2.0: cuál comprar?",
+          "a": "Elige el Cube si lo que más te importa es el precio y te basta con un mando sencillo. Elige Chilipad 2.0 si quieres temperaturas más frías (55°F frente a 60°F), control por app y programación. Ninguno registra el sueño; para eso, considera el Eight Sleep Pod 6, que cuesta más y necesita una membresía para sus funciones automáticas."
+        },
+        {
+          "q": "¿Hace ruido el Chilipad Cube?",
+          "a": "La unidad de mesilla tiene una bomba y un ventilador, así que emite un zumbido suave como otros sistemas refrigerados por agua. Colocarla en el suelo y lejos del cabecero ayuda si tienes el sueño ligero."
+        }
+      ]
+    },
+    "inergize-cold-tub": {
+      "verdict": "Una bañera de gama media que compite en configurabilidad: compra la bañera ahora y añade un enfriador más adelante si lo necesitas.",
+      "summary": "Inergize vende una bañera aislada que puede usarse como baño de hielo o con su enfriador independiente añadido. El enfoque modular reduce el coste inicial y permite mejorar a medida que se consolida la práctica. La construcción es sólida; el enfriador (se vende aparte) es competente, pero menos potente que la unidad integrada de Plunge.",
+      "description": "Análisis de Inergize Cold Tub: baño frío configurable de gama media; empieza con hielo y añade el enfriador después. Bañera sólida; el enfriador cumple, sin ser potente.",
+      "bestFor": "Ideal para quien quiere una vía de mejora modular en baños de agua fría: bañera ahora, enfriador después.",
+      "testNote": "Evaluación basada en la evidencia: puntuada a partir de la documentación de producto de Inergize y de reseñas independientes de 2026. ONDA no lo ha probado personalmente.",
+      "productType": "Bañera aislada de gama media con enfriador opcional",
+      "pros": [
+        "Vía modular bañera-y-después-enfriador: reparte el coste inicial en fases",
+        "Mejor aislamiento que las opciones hinchables o tipo barril",
+        "Complemento opcional de ozono para un agua de bajo mantenimiento",
+        "Apta para interior y exterior"
+      ],
+      "cons": [
+        "El enfriador (si se añade) es menos potente que la unidad integrada de Plunge",
+        "El coste total con enfriador se acerca al de Edge Tub",
+        "Historial de fiabilidad a varios años más escaso que el de Plunge",
+        "Garantía por componentes y no del sistema completo"
+      ],
+      "scoreNotes": {
+        "chiller-capacity": "Enfriador vendido aparte. El enfriador opcional es competente pero de menor potencia que la unidad de 1 HP de Plunge: recuperación más lenta y peor rendimiento en verano.",
+        "build": "Bañera aislada con mejor aislamiento que Cold Pod y más ligera que Plunge. Garantía de 1 año para la bañera y garantía aparte para el enfriador.",
+        "water-management": "Complemento opcional de ozono; en la configuración básica el agua se cambia a mano.",
+        "form-factor": "Interior o exterior, superficie de 67×31 pulgadas. Vaciado por grifo. Instalación modular: primero la bañera, después el enfriador.",
+        "evidence": "Se presenta con honestidad como opción configurable de gama media; no exagera su hardware frente a Plunge.",
+        "value": "Puntuado con los precios anteriores de $1,500 la bañera / ~$1,300 el enfriador. A septiembre de 2026, Inergize ofrece la Elite Tub (bañera + Elite Chiller de 0,8 HP) a $2,990 en oferta y el Elite Chiller solo a $2,690; no figura ninguna bañera portátil independiente."
+      },
+      "content": "> Actualización (septiembre de 2026): la gama actual de Inergize ya no incluye una bañera independiente al precio de $1,500 analizado aquí. Lo más parecido es la Elite Tub, una bañera portátil con el Elite Chiller de 0,8 HP (37-104°F) por $2,990 en oferta (precio de lista $3,990). El Elite Chiller también se vende solo ($2,690) para usarlo con otra bañera, un conjunto reacondicionado certificado de bañera + enfriador cuesta $1,790 y la bañera de cedro Spire parte de $5,990 sin enfriador. Por tanto, la vía modular de primero bañera y después enfriador descrita abajo ahora es posible sobre todo combinando el enfriador independiente con una bañera que ya tengas.\n\n## Dónde destaca\n\nInergize aplica un enfoque modular al baño de agua fría: compra la bañera ahora y añade un enfriador más adelante si la práctica diaria se consolida. A $1,500 solo la bañera, reparte en fases el coste inicial de la gama con enfriador. Para quien quiere mejor aislamiento que las opciones tipo barril o hinchables pero no está listo para un equipo llave en mano de $5K, es la opción adecuada.\n\n## ¿Cuáles son las desventajas de Inergize Cold Tub?\n\nEl enfriador (si se añade) es menos capaz que la unidad integrada de 1 HP de Plunge: recuperación más lenta y peor rendimiento en verano. El coste total con enfriador se acerca al de Edge Tub. Los datos de fiabilidad a varios años son más escasos que los de los líderes de la categoría.\n\n## ¿Quién debería comprar Inergize Cold Tub?\n\nElige Inergize si lo que valoras es la vía de mejora modular: probar la práctica diaria con hielo antes de pagar el enfriador. Para un equipo completo llave en mano, Plunge o Edge. Para probar con el mínimo presupuesto, Cold Pod o Ice Barrel.\n\n## ¿Funcionan realmente los baños de agua fría?\n\nLa evidencia es real, pero más limitada de lo que sugieren las redes sociales. Una revisión sistemática de 2022 sobre la inmersión voluntaria en agua fría encontró efectos consistentes en el cuerpo —una subida brusca de las hormonas del estrés y de la frecuencia cardiaca al entrar, y adaptación con la exposición repetida—, pero muchos de los supuestos beneficios para la salud procedían de estudios pequeños, a menudo en nadadores de invierno experimentados, por lo que no pueden generalizarse con seguridad ([Espeland et al., 2022, International Journal of Circumpolar Health](https://doi.org/10.1080/22423982.2022.2111789)). En la práctica, la mayoría de la gente usa el baño frío porque después se siente más despierta y de mejor humor, lo cual es una razón válida, no un tratamiento médico demostrado. Más sobre el mecanismo: [la exposición al frío y el nervio vago](/articles/cold-exposure-vagus-nerve) y [lo que la VFC, la respiración y el frío pueden y no pueden hacer](/articles/hrv-breathing-cold-honest-limits).\n\n## ¿Es seguro un baño de agua fría?\n\nEl frío repentino desencadena la respuesta de \"choque por frío\": una inspiración brusca, respiración rápida y un salto de la frecuencia cardiaca y la presión arterial en el primer o segundo minuto. Esta respuesta, y no la hipotermia, causa la mayoría de las emergencias en agua fría ([Tipton et al., 2017, Experimental Physiology](https://doi.org/10.1113/EP086283)). Reglas prácticas:\n\n- **Problemas cardiacos, hipertensión o embarazo:** habla con un médico antes de empezar.\n- **Límites de tiempo:** a los principiantes les va bien con 1–3 minutos; más tiempo no es mejor. Sal si tiritas mucho, te sientes entumecido o confuso.\n- **Nunca a solas:** ten a alguien cerca, sobre todo las primeras semanas, y nunca combines el baño frío con alcohol.\n- **Respira despacio:** controla la inspiración brusca con exhalaciones lentas y entra poco a poco en lugar de zambullirte.\n\n## ¿Enfriador o hielo?\n\nEl hielo es barato para empezar pero engorroso: necesitas varias bolsas por sesión para alcanzar temperaturas bajas, el agua se calienta entre sesiones y el coste se acumula a lo largo del año. Un enfriador mantiene una temperatura fija cada día y, con filtración, conserva el agua limpia durante más tiempo. El Elite Chiller de 0,8 HP de Inergize cubre 37–104°F, así que también puede calentar el agua. Si te bañas tres o más veces por semana, un enfriador suele compensar por comodidad; si aún estás probando el hábito, empieza con hielo.\n\n## Inergize frente a otros baños de agua fría\n\n| | Precio (según nuestros análisis) | Refrigeración | Ideal para |\n|---|---|---|---|\n| Inergize Elite Tub | $2,990 en oferta (bañera + enfriador de 0,8 HP) | enfriador incluido | gama media con enfriador, opción reacondicionada $1,790 |\n| [The Plunge](/reviews/plunge) | $5,990 | enfriador integrado, ozono | llave en mano premium |\n| [Edge Tub](/reviews/edge-tub) | $2,495 | enfriador y ozono incluidos | llave en mano a menor precio |\n| [Ice Barrel 500](/reviews/ice-barrel-500) | $1,200 | hielo | bañera de hielo duradera |\n| [Cold Pod](/reviews/cold-pod) | $220 | hielo | la forma más barata de probar |\n\nConsulta todas las opciones clasificadas en [los mejores baños de agua fría de 2026](/reviews/compare/best-cold-plunge-2026).\n\n---\n\n## Lecturas de contexto\n\nLa biología de por qué funciona la exposición al frío y los protocolos que se suman al hardware.\n\n- [Tolerancia al CO₂ y el límite de oxígeno](/articles/co2-tolerance-expanding-oxygen-limit) — por qué los protocolos de frío y de respiración se combinan bien\n- [Arquitectura neural antientropía](/articles/anti-entropy-neural-architecture) — la exposición al frío como dosis diaria de estrés antientropía\n- [Biogénesis mitocondrial: la red eléctrica celular](/articles/mitochondrial-biogenesis-cellular-power-grid) — por qué el choque por frío aumenta la densidad mitocondrial\n",
+      "faq": [
+        {
+          "q": "¿Se puede añadir un enfriador a la Inergize Cold Tub más adelante?",
+          "a": "Sí, ese es su principal atractivo. Puedes usar la bañera Inergize primero como baño de hielo y añadir después su enfriador independiente; así se vendía originalmente, por unos $1,500 la bañera más unos $1,300 el enfriador. A septiembre de 2026, Inergize ofrece la bañera junto con su Elite Chiller ($2,990 en oferta) y el Elite Chiller solo ($2,690), así que la compra por partes ahora consiste sobre todo en el enfriador más tu propia bañera. Reparte el coste inicial y te permite mejorar cuando tu práctica esté consolidada."
+        },
+        {
+          "q": "Inergize Cold Tub vs The Plunge: ¿cuál es mejor?",
+          "a": "The Plunge tiene un enfriador integrado más potente y un historial de fiabilidad más largo. Inergize es más barata para empezar y modular, con mejor aislamiento que las opciones hinchables o tipo barril. Sin embargo, una vez añadido el enfriador, el coste total se acerca al de Edge Tub."
+        },
+        {
+          "q": "¿Cuáles son las desventajas de Inergize Cold Tub?",
+          "a": "El enfriador adicional es menos potente que la unidad integrada en The Plunge, y el equipo completo se acerca al precio de Edge Tub. Su historial de fiabilidad a varios años es más escaso que el de The Plunge, y la garantía se divide por componentes en lugar de cubrir el sistema completo."
+        },
+        {
+          "q": "¿Los baños de agua fría tienen beneficios demostrados para la salud?",
+          "a": "En parte. El agua fría provoca de forma fiable una respuesta de hormonas del estrés y de frecuencia cardiaca, y el cuerpo se adapta con la exposición repetida. Una revisión sistemática de 2022 concluyó que muchos de los beneficios atribuidos se basan en estudios pequeños, a menudo con nadadores de invierno experimentados, así que no están demostrados para todo el mundo. La mayoría se baña por el estado de alerta y el ánimo, lo cual es razonable, pero no es un tratamiento médico."
+        },
+        {
+          "q": "¿Cuánto tiempo hay que estar en un baño de agua fría?",
+          "a": "A los principiantes suele irles bien con 1 a 3 minutos; más tiempo no es mejor. Sal si tiritas mucho, te sientes entumecido o confuso. Nunca te bañes solo ni después de beber alcohol, y consulta antes a un médico si tienes una enfermedad cardiaca, hipertensión o estás embarazada."
+        },
+        {
+          "q": "¿Merece la pena un enfriador o puedo usar hielo?",
+          "a": "El hielo sirve para probar el hábito, pero hacen falta varias bolsas por sesión y el coste se acumula. Si te bañas tres o más veces por semana, un enfriador mantiene la temperatura cada día y ahorra el esfuerzo. El Elite Chiller de Inergize cubre de 37 a 104°F y se vende solo ($2,690) o junto con la bañera ($2,990 en oferta)."
+        }
+      ]
+    },
+    "hypervolt-3-pro": {
+      "verdict": "El buque insignia de 2026 y una mejora clara sobre la Hypervolt 2 Pro: más fuerza de bloqueo (70 lbs), más silenciosa (51 dB), más batería (4 horas) y accesorios más grandes, a un precio menor de $349. La amplitud sigue por detrás de la Theragun PRO Plus, pero en relación calidad-precio es la pistola premium a batir.",
+      "productType": "Pistola de masaje de percusión premium con ecosistema Hyperice"
+    },
+    "theragun-pro-plus": {
+      "verdict": "La referencia en terapia de percusión: máxima fuerza de bloqueo, amplitud más profunda y app pulida. El precio premium refleja las especificaciones máximas y el ecosistema Therabody.",
+      "productType": "Pistola de masaje de percusión premium con app inteligente"
+    },
+    "hypervolt-2-pro": {
+      "verdict": "La rival de Theragun: fuerza de bloqueo comparable, menos peso y ecosistema Hyperice. Algo menos de amplitud que la Theragun PRO Plus a un precio notablemente más bajo.",
+      "productType": "Pistola de masaje de percusión premium con ecosistema Hyperice"
+    },
+    "theragun-elite": {
+      "verdict": "El mejor valor de Therabody: 16 mm de amplitud con 40 lbs de fuerza de bloqueo por $200 menos que la PRO Plus. La compra racional de Therabody para la mayoría.",
+      "productType": "Pistola de masaje premium de gama media"
+    },
+    "achedaway-pro": {
+      "verdict": "La mejor relación especificaciones-precio en percusión premium: 80 lbs de fuerza de bloqueo (la mayor de la categoría) por $349. Sin ecosistema de app de marca premium.",
+      "productType": "Pistola de masaje premium de especificaciones máximas"
+    },
+    "opove-m3-pro-2": {
+      "verdict": "El mejor valor de gama media-económica: 55 lbs de fuerza de bloqueo por $179 recortan casi toda la diferencia con el nivel premium. Sin app; marca más joven que Theragun / Hyperice.",
+      "productType": "Pistola de masaje de gama media-económica con especificaciones premium"
+    },
+    "ekrin-b37": {
+      "verdict": "La mejor de gama media con garantía de por vida: 56 lbs de fuerza de bloqueo con garantía de por vida por $249.99. Menos amplitud que el nivel premium; posicionamiento orientado a deportistas.",
+      "productType": "Pistola de masaje de gama media-alta orientada a deportistas"
+    },
+    "hypervolt-go-2": {
+      "verdict": "La mejor mini de viaje de marca premium: el ecosistema Hypervolt en formato de bolsillo. La menor fuerza de bloqueo es el precio de la portabilidad.",
+      "productType": "Pistola de masaje mini / de viaje premium"
+    },
+    "bob-and-brad-q2-mini": {
+      "verdict": "El mejor valor en mini económica: la marca Bob and Brad, con credibilidad de fisioterapeutas, por $99. Fuerza de bloqueo limitada; el pedigrí de la marca, procedente del canal de YouTube \"Famous Physical Therapists\", es lo que la diferencia.",
+      "productType": "Pistola de masaje mini económica de marca avalada por fisioterapeutas"
+    },
+    "renpho-r3": {
+      "verdict": "La mejor económica superventas de Amazon: la Renpho R3 ofrece especificaciones fiables por $99 con 5 accesorios y un motor sin escobillas silencioso.",
+      "productType": "Pistola de masaje económica superventas en Amazon"
+    },
+    "toloco-massage-gun": {
+      "verdict": "La económica fiable más barata: TOLOCO por $69 con 10 accesorios. La menor fuerza de bloqueo de la comparativa y la marca con menos trayectoria. La elección adecuada si lo que manda es el coste absoluto.",
+      "productType": "Pistola de masaje superventas de Amazon de menor coste"
     }
   },
   "comparisons": {
@@ -1483,6 +1873,85 @@
         {
           "q": "¿Puedo usar un Muse o un Neurosity Crown para el TDAH o la ansiedad?",
           "a": "Los cascos EEG de consumo no son dispositivos médicos aprobados para el TDAH, la ansiedad ni ninguna enfermedad. La opción clínica de esta lista es Myndlift, que funciona a través de un profesional de salud mental autorizado que supervisa el protocolo de neurofeedback. Para la depresión clínica en concreto, Flow Neuroscience es la opción tDCS con marcado CE."
+        }
+      ]
+    },
+    "best-massage-guns-2026": {
+      "title": "Las mejores pistolas de masaje (2026)",
+      "description": "ONDA clasifica las mejores pistolas de masaje de 2026: Hypervolt 3 Pro, Theragun PRO Plus, Theragun Elite, Achedaway Pro, OPOVE M3 Pro 2, Ekrin B37 y opciones económicas fiables.",
+      "intro": "En 2026 el hardware de terapia de percusión se divide en niveles claros: marcas premium de referencia (Theragun PRO Plus, Hypervolt 2 Pro), gama media-alta con especificaciones sólidas (Theragun Elite, Achedaway Pro, Ekrin B37), gama media-económica que ha reducido la diferencia de especificaciones (OPOVE M3 Pro 2), minis de viaje (Hypervolt Go 2) y alternativas económicas fiables (Bob and Brad Q2 Mini, Renpho R3, TOLOCO). Puntuamos las 11 pistolas de masaje más fiables de 2026 con los mismos seis ejes: fuerza de bloqueo y amplitud, construcción y accesorios, batería y ruido, app y funciones inteligentes, ergonomía y portabilidad, y relación calidad-precio.",
+      "verdict": "La Hypervolt 3 Pro de 2026 es la nueva mejor opción general: ~70 lbs de fuerza de bloqueo, un motor más silencioso, más batería y accesorios más grandes por $349, $250 menos que la Theragun PRO Plus y con más potencia. La Theragun PRO Plus sigue siendo la elección premium por la amplitud más profunda de 16 mm, las funciones de calor/respiración y el ecosistema Therabody. Achedaway Pro sigue dominando en fuerza de bloqueo bruta (80 lbs) por $349; Theragun Elite es la opción de valor de Therabody; OPOVE M3 Pro 2 reduce la diferencia de especificaciones por $179; Bob and Brad / Renpho cubren con solvencia el nivel económico de $99. Decide con tres preguntas: potencia bruta y precio frente a amplitud más profunda, tamaño completo frente a mini de viaje, ecosistema de app frente a lo puramente mecánico.",
+      "content": "## Cómo las clasificamos\n\nCada pistola de masaje se puntuó según la [metodología de análisis](/reviews/methodology) publicada de ONDA: seis criterios ponderados, con la fuerza de bloqueo y la amplitud como los de mayor peso, porque determinan la dosis de percusión y la mayor confusión de los consumidores en esta categoría es el marketing de cifras pico infladas.\n\nLas diez se evaluaron a partir de la documentación de los fabricantes y de reseñas deportivas y de fitness de 2026 a gran escala, no mediante pruebas personales.\n\n## Las mejores pistolas de masaje: ¿cuál comprar?\n\nTres preguntas de compra resuelven la categoría con claridad:\n\n**¿Ecosistema de marca premium o especificaciones brutas?** Premium (app + ecosistema): Theragun PRO Plus, Hypervolt 2 Pro, Theragun Elite, Hypervolt Go 2. Especificaciones brutas (sin app): Achedaway Pro, OPOVE M3 Pro 2, Ekrin B37, Bob and Brad Q2 Mini, Renpho R3, TOLOCO.\n\n**¿Tamaño completo o mini de viaje?** Tamaño completo: Theragun PRO Plus, Hypervolt 2 Pro, Theragun Elite, Achedaway Pro, OPOVE, Ekrin, Renpho, TOLOCO. Mini: Hypervolt Go 2 (premium), Bob and Brad Q2 Mini (económica).\n\n**¿Qué nivel de presupuesto?** Menos de $100: TOLOCO ($69), Bob and Brad Q2 Mini ($99), Renpho R3 ($99). $100–$250: Hypervolt Go 2 ($129), OPOVE M3 Pro 2 ($179), Ekrin B37 ($249.99). $300–$400: Achedaway Pro ($349), Theragun Elite ($399), Hypervolt 2 Pro ($399). $500+: Theragun PRO Plus ($599).\n\nTheragun PRO Plus domina el nivel de especificaciones máximas; Hypervolt 2 Pro es la alternativa premium racional; Achedaway Pro domina el nicho de especificaciones máximas por debajo del premium; Bob and Brad / Renpho cubren el nivel económico fiable.",
+      "picks": {
+        "hypervolt-3-pro": {
+          "award": "Mejor en general",
+          "takeaway": "El buque insignia de Hyperice de 2026: ~70 lbs de bloqueo, motor QuietGlide más silencioso, batería de 4 horas y accesorios más grandes, por $349. Supera a la Theragun, más cara, en potencia y precio."
+        },
+        "theragun-pro-plus": {
+          "award": "Mejor premium (amplitud más profunda)",
+          "takeaway": "El recorrido más profundo de 16 mm más pantalla OLED, calor, entrenamiento respiratorio y 2 años de garantía: la referencia si la amplitud y el ecosistema importan más que el precio."
+        },
+        "hypervolt-2-pro": {
+          "award": "Mejor valor de la generación anterior",
+          "takeaway": "El buque insignia saliente de Hyperice: sigue siendo excelente y es la compra inteligente si está rebajada muy por debajo de la Hypervolt 3 Pro."
+        },
+        "theragun-elite": {
+          "award": "Mejor valor de Therabody",
+          "takeaway": "La misma amplitud de 16 mm que la PRO Plus + la misma app + la misma garantía de 2 años por $200 menos."
+        },
+        "achedaway-pro": {
+          "award": "Mejor en especificaciones máximas",
+          "takeaway": "80 lbs de fuerza de bloqueo (la mayor de la categoría) + 16 mm de amplitud por $349, sin app ni el pulido de una marca premium."
+        },
+        "opove-m3-pro-2": {
+          "award": "Mejor de gama media-económica",
+          "takeaway": "55 lbs de fuerza de bloqueo por $179: especificaciones de nivel premium por menos de $200."
+        },
+        "ekrin-b37": {
+          "award": "Mejor garantía",
+          "takeaway": "La única garantía de por vida de la categoría, por $249.99 y con 56 lbs de fuerza de bloqueo."
+        },
+        "hypervolt-go-2": {
+          "award": "Mejor mini de viaje premium",
+          "takeaway": "La marca y la app de Hyperice en formato de bolsillo por $129, a cambio de menos fuerza de bloqueo."
+        },
+        "bob-and-brad-q2-mini": {
+          "award": "Mejor mini económica",
+          "takeaway": "La credibilidad de la marca de los \"Famous Physical Therapists\" por $99, con motor sin escobillas y batería de 6 horas."
+        },
+        "renpho-r3": {
+          "award": "Mejor valor en especificaciones de Amazon",
+          "takeaway": "40 lbs de fuerza de bloqueo por $99: la mejor económica en especificaciones brutas a escala de Amazon."
+        },
+        "toloco-massage-gun": {
+          "award": "La más barata fiable",
+          "takeaway": "Nivel de entrada de $69 con 10 accesorios, a cambio de menos fuerza de bloqueo por el menor coste posible."
+        }
+      },
+      "faq": [
+        {
+          "q": "¿Cuál es la mejor pistola de masaje en 2026?",
+          "a": "La Hyperice Hypervolt 3 Pro en general: ~70 lbs de fuerza de bloqueo, un motor más silencioso, batería de 4 horas y accesorios más grandes por $349, superando a la Theragun PRO Plus, más cara, en potencia y precio. La Theragun PRO Plus es la elección premium por la amplitud más profunda de 16 mm y el ecosistema Therabody; la Achedaway Pro tiene la mayor fuerza de bloqueo bruta (80 lbs) por $349."
+        },
+        {
+          "q": "¿Merece la pena el precio premium de Theragun?",
+          "a": "Para quien quiere las especificaciones máximas + el ecosistema completo de la app de Therabody, sí. Para quien solo quiere dosis de percusión, la Achedaway Pro (80 lbs de bloqueo) por $349 supera a la Theragun PRO Plus en fuerza de bloqueo costando $250 menos."
+        },
+        {
+          "q": "Theragun vs Hypervolt: ¿cuál es mejor?",
+          "a": "En 2026 la Hypervolt 3 Pro le dio la vuelta: ~70 lbs de fuerza de bloqueo (frente a las 60 de la Theragun PRO Plus), más silenciosa, más batería y $349 frente a $599. La Theragun sigue ganando en amplitud (16 mm frente a ~14 mm), garantía de 2 años y extras como calor y entrenamiento respiratorio. Paga el extra de Theragun por un recorrido más profundo y el ecosistema; elige la Hypervolt por más potencia por mucho menos dinero."
+        },
+        {
+          "q": "¿Son buenas de verdad las pistolas de masaje económicas ($99)?",
+          "a": "Sí: Bob and Brad Q2 Mini y Renpho R3 ofrecen motores sin escobillas y una fuerza de bloqueo fiable de 35–40 lbs por $99. La diferencia de especificaciones con las premium se ha reducido notablemente; lo que se sacrifica es la integración con app y las condiciones de garantía. Para protocolos diarios de uso ligero, una económica es suficiente."
+        },
+        {
+          "q": "¿Qué diferencia hay entre fuerza de bloqueo y amplitud?",
+          "a": "Fuerza de bloqueo = libras de presión antes de que el motor se detenga. Amplitud = mm de profundidad del recorrido. La fuerza de bloqueo determina con cuánta fuerza puedes presionar; la amplitud, hasta qué profundidad llega la percusión. Ambas importan; los dispositivos premium ofrecen 60 lbs + 16 mm y los económicos 30-40 lbs + 10-12 mm."
+        },
+        {
+          "q": "¿Necesito una pistola de masaje con app?",
+          "a": "Las apps de Therabody e Hyperice ofrecen rutinas guiadas, sensores de presión e integración con otros dispositivos de recuperación. Para quien quiere protocolos de percusión estructurados, sí, la app aporta valor real. Para quien ya sabe qué grupos musculares trabajar, la app es opcional."
         }
       ]
     }
