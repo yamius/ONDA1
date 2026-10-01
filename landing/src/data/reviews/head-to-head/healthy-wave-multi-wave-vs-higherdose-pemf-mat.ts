@@ -21,8 +21,8 @@ const healthyWaveVsHigherDose: HeadToHead = {
     { name: 'PEMF programmability', winner: 'a', note: 'Healthy Wave: real parameter exposure (waveform, frequency, intensity). HigherDOSE: single Schumann frequency with intensity steps only.' },
     { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + far-infrared + crystals (amethyst, tourmaline). Comparable modality coverage.' },
     { name: 'Consumer UX', winner: 'b', note: 'HigherDOSE: polished app, premium consumer branding, easier daily use. Healthy Wave: more parameters = more setup friction.' },
-    { name: 'Warranty', winner: 'a', note: 'Healthy Wave: 5-year mat warranty. HigherDOSE: 1-year warranty. Healthy Wave significantly better.' },
-    { name: 'Price', winner: 'b', note: 'HigherDOSE: $1,295. Healthy Wave: $2,500–$3,500. HigherDOSE meaningfully cheaper for consumer-tier multi-modality.' },
+    { name: 'Warranty', winner: 'a', note: 'Healthy Wave: 5-year limited warranty plus 90-day trial. HigherDOSE: 1-year warranty. Healthy Wave significantly better.' },
+    { name: 'Price', winner: 'b', note: 'HigherDOSE: $1,295. Healthy Wave: $995–$2,495 by size (full-size Pro $2,495). At full size, HigherDOSE is meaningfully cheaper for consumer-tier multi-modality.' },
   ],
   faq: [
     {
@@ -39,7 +39,7 @@ const healthyWaveVsHigherDose: HeadToHead = {
     },
     {
       q: 'Warranty difference?',
-      a: 'Healthy Wave: 5-year mat warranty. HigherDOSE: 1-year warranty. For a $1,295–$3,500 mat purchase, the warranty gap is meaningful — Healthy Wave\'s 5-year is industry standard for serious PEMF mats.',
+      a: 'Healthy Wave: 5-year mat warranty. HigherDOSE: 1-year warranty. For a $1,295–$2,495 mat purchase, the warranty gap is meaningful — Healthy Wave\'s 5-year is industry standard for serious PEMF mats.',
     },
   ],
   content: `## The short version
@@ -56,7 +56,7 @@ If you want a polished consumer recovery experience at lower price — HigherDOS
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-01',
 }
 
 export default healthyWaveVsHigherDose

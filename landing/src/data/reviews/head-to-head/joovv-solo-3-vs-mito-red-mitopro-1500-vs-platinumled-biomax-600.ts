@@ -9,7 +9,7 @@ const topThreePanels: HeadToHead = {
   description:
     'Joovv vs Mito Red vs PlatinumLED — three-way ONDA comparison of the top three premium red light therapy panels. FDA reference, broad-spectrum biohacker and testing-published in one decision.',
   intro:
-    'Joovv Solo 3.0, Mito Red MitoPRO 1500 and PlatinumLED BIOMAX 600 are the three premium red-light panels buyers actually shortlist together at the $1,000+ tier. Three different premium philosophies: FDA-registered modular reference (Joovv), broad-spectrum biohacker value (Mito Red), testing-transparent six-wavelength (PlatinumLED). All credible; pick on axis.',
+    'Joovv Solo 3.0, Mito Red MitoPRO 1500 and PlatinumLED BIOMAX 600 are the three premium red-light panels buyers actually shortlist together at the $1,000+ tier. Three different premium philosophies: FDA-registered modular reference (Joovv), broad-spectrum biohacker value (Mito Red), testing-transparent seven-wavelength (PlatinumLED). All credible; pick on axis.',
   winnerSlug: 'joovv-solo-3',
   verdict:
     'Joovv wins on regulatory status and modular scaling. Mito Red wins on spectrum breadth and value. PlatinumLED wins on EMF transparency and the widest published spectrum.',
@@ -18,25 +18,25 @@ const topThreePanels: HeadToHead = {
   bestForB:
     'Choose Mito Red MitoPRO 1500 if you want broad four-wavelength coverage in a large biohacker panel at $96 below Joovv, with comparable build.',
   bestForC:
-    'Choose PlatinumLED BIOMAX 600 if six-wavelength coverage and the most publicly-published third-party EMF testing matter — at $296 below Joovv.',
+    'Choose PlatinumLED BIOMAX 600 if seven-wavelength coverage and the most publicly-published third-party EMF testing matter — at $246 below Joovv.',
   axes: [
-    { name: 'Wavelength coverage', winner: 'c', note: 'PlatinumLED: six (480 + 630 + 660 + 810 + 830 + 850 nm). Mito Red: four (630 + 660 + 830 + 850 nm). Joovv: two (660 + 850 nm). PlatinumLED leads decisively.' },
+    { name: 'Wavelength coverage', winner: 'c', note: 'PlatinumLED: seven (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). Mito Red: four (630 + 660 + 830 + 850 nm). Joovv: two (660 + 850 nm). PlatinumLED leads decisively.' },
     { name: 'Irradiance verification', winner: 'tie', note: 'All three: independent verification within 5–10% of stated figures. Effectively tied on spec honesty.' },
     { name: 'EMF / flicker transparency', winner: 'c', note: 'PlatinumLED publishes full third-party lab reports. Joovv publishes summary figures with strong discipline. Mito Red publishes its own testing.' },
     { name: 'Coverage and modularity', winner: 'a', note: 'Joovv: modular Solo system stacks vertically. Mito Red: large single panel. PlatinumLED: mid-size single panel. Joovv wins on scaling flexibility.' },
     { name: 'FDA / regulatory status', winner: 'a', note: 'Joovv Solo 3.0: FDA Class II registered. Mito Red and PlatinumLED: no FDA registration.' },
     { name: 'Brand maturity', winner: 'tie', note: 'All three established consumer-RLT brands with multi-year track records and large communities.' },
-    { name: 'Price', winner: 'c', note: 'PlatinumLED: $999. Mito Red: $1,199. Joovv: $1,295. PlatinumLED is $296 cheaper than Joovv; Mito Red sits in the middle.' },
-    { name: 'Full-body cost', winner: 'b', note: 'Two MitoPRO 1500: ~$2,400. Two PlatinumLED BIOMAX 600: ~$2,000 (smaller panels, less coverage per unit). Full Joovv stack: $3,000–$5,000. Mito Red is the best full-body value.' },
+    { name: 'Price', winner: 'c', note: 'PlatinumLED: $1,049. Mito Red: $1,199. Joovv: $1,295. PlatinumLED is $246 cheaper than Joovv; Mito Red sits in the middle.' },
+    { name: 'Full-body cost', winner: 'b', note: 'Two MitoPRO 1500: ~$2,400. Two PlatinumLED BIOMAX 600: ~$2,100 (smaller panels, less coverage per unit). Full Joovv stack: $3,000–$5,000. Mito Red is the best full-body value.' },
   ],
   faq: [
     {
       q: 'Joovv vs Mito Red vs PlatinumLED — which is best?',
-      a: 'Joovv wins for FDA registration and modular scaling. Mito Red wins for the broad-spectrum biohacker fit and value full-body coverage. PlatinumLED wins for six-wavelength spectrum and testing transparency. All three are credible premium picks — choose the axis.',
+      a: 'Joovv wins for FDA registration and modular scaling. Mito Red wins for the broad-spectrum biohacker fit and value full-body coverage. PlatinumLED wins for seven-wavelength spectrum and testing transparency. All three are credible premium picks — choose the axis.',
     },
     {
       q: 'Which has the most spectrum?',
-      a: 'PlatinumLED BIOMAX 600 — six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm). Mito Red MitoPRO 1500 has four (630 + 660 + 830 + 850 nm); Joovv has two (660 + 850 nm).',
+      a: 'PlatinumLED BIOMAX 600 — seven wavelengths (480 + 630 + 660 + 810 + 830 + 850 + 1060 nm). Mito Red MitoPRO 1500 has four (630 + 660 + 830 + 850 nm); Joovv has two (660 + 850 nm).',
     },
     {
       q: 'Which is best for full-body?',
@@ -53,7 +53,7 @@ const topThreePanels: HeadToHead = {
   ],
   content: `## The short version
 
-Three premium-tier panels with three different premium philosophies. Joovv buys FDA registration and modular scaling. Mito Red buys broad-spectrum biohacker value. PlatinumLED buys six-wavelength coverage and EMF testing transparency. All credible at $1,000+.
+Three premium-tier panels with three different premium philosophies. Joovv buys FDA registration and modular scaling. Mito Red buys broad-spectrum biohacker value. PlatinumLED buys seven-wavelength coverage and EMF testing transparency. All credible at $1,000+.
 
 ## When is Joovv Solo 3.0 the right pick?
 
@@ -65,10 +65,10 @@ If you want broad four-wavelength coverage in a large half-body panel with hones
 
 ## When is PlatinumLED BIOMAX 600 the right pick?
 
-If six-wavelength spectrum and the most-publicly-published EMF testing are deciding criteria at $296 below Joovv, PlatinumLED is the right shape. Best value for spectrum-focused buyers.`,
+If seven-wavelength spectrum and the most-publicly-published EMF testing are deciding criteria at $246 below Joovv, PlatinumLED is the right shape. Best value for spectrum-focused buyers.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-01',
 }
 
 export default topThreePanels

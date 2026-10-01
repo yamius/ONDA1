@@ -64,6 +64,14 @@ const bestBreathworkApps2026: Comparison = {
     'Breathwrk wins overall as the structured-library reference with full technique coverage and science-grounded copy at $70/year. Othership wins on production value and community for users buying breathwork as cinematic experience. Wim Hof Method app is the rational choice for committed WHM practitioners. Inhale closes the HRV-biofeedback loop. iBreathe and Breathe2Relax cover the free tier credibly. Pick on three questions: structured library breadth, music / community thesis, or biofeedback integration.',
   faq: [
     {
+      q: 'What is the best breathing app?',
+      a: 'For most people, Breathwrk: the largest structured library and broadest technique coverage for about $70 a year. Choose Othership for music-led sessions, Inhale if you want Apple Watch HRV biofeedback, and iBreathe or Breathe2Relax if you want a free app.',
+    },
+    {
+      q: 'Are breathing apps worth paying for?',
+      a: 'Only if you will use what you pay for. The breathing itself is free: studies on slow breathing and cyclic sighing used simple instructions, not premium apps. A subscription is worth it for a large guided library, programmes that keep you consistent, music-led sessions or biofeedback that shows how your body responds. If you only need a timer for box breathing or 4-7-8, a free app is enough.',
+    },
+    {
       q: 'What is the best breathwork app in 2026?',
       a: 'Breathwrk overall — largest structured library, broadest technique coverage, science-grounded copy at $70/year. Othership for music-driven cinematic premium experience at $150/year. Wim Hof Method app for the WHM specifically.',
     },
@@ -76,8 +84,8 @@ const bestBreathworkApps2026: Comparison = {
       a: 'Breathwrk wins on library depth, technique coverage, science grounding and price. Othership wins on production value, music-driven sessions and live community. Different theses about what breathwork should feel like.',
     },
     {
-      q: 'Is there a free breathwork app worth using?',
-      a: 'Yes — two: iBreathe (clean minimalist timer with visual guide, Apple Watch native) and Breathe2Relax (US National Center for Telehealth-built with published PTSD / stress validation). Different theses; both free.',
+      q: 'Is there a free breathing app that works?',
+      a: 'Yes. A free timer is enough for the techniques with the best evidence, such as slow breathing and cyclic sighing. Two good options: iBreathe (clean minimalist timer with visual guide, Apple Watch native) and Breathe2Relax (US National Center for Telehealth-built with published PTSD / stress validation). Different theses; both free.',
     },
     {
       q: 'What is the cyclic sighing technique everyone talks about?',
@@ -88,7 +96,44 @@ const bestBreathworkApps2026: Comparison = {
       a: 'Breathwrk: $70/yr. Wim Hof Method: $70/yr. SOMA Breath: $99/yr. Open: $120/yr. Othership: $150/yr. Inhale: $60/yr. Pause Breathwork: $90/yr. Free options: iBreathe, Breathe2Relax, Prana Breath (mostly free).',
     },
   ],
-  content: `## How we ranked them
+  content: `## The short answer
+
+The best breathing app for most people is **Breathwrk**: the largest structured library and the broadest set of techniques for about $70 a year. If you want music-led, cinematic sessions, choose **Othership**. If you want the app to measure your body while you breathe, choose **Inhale**, which uses Apple Watch HRV. If you do not want to pay, **iBreathe** and **Breathe2Relax** are free and do the basics well.
+
+## What do breathing exercises actually do?
+
+Slow, controlled breathing is one of the few relaxation tools with a clear physiological mechanism. A systematic review of slow-breathing studies found that breathing at around six breaths per minute raised parasympathetic ("rest and digest") activity and heart rate variability, and was linked to better emotional control and well-being ([Zaccaro et al., 2018, Frontiers in Human Neuroscience](https://doi.org/10.3389/fnhum.2018.00353)). The studies were mostly small, so treat the effect as real but modest.
+
+A randomised Stanford study compared five minutes a day of three breathing practices with mindfulness meditation for a month. Cyclic sighing (a double inhale, then a long exhale) gave the largest improvement in mood and the biggest drop in breathing rate ([Balban et al., 2023, Cell Reports Medicine](https://doi.org/10.1016/j.xcrm.2022.100895)). The practical lesson: a few minutes of slow breathing with long exhales, done daily, is the part that matters. An app helps you do it consistently; it does not add a special effect of its own.
+
+Read more: [the physiological sigh](/articles/physiological-sigh), [box breathing](/articles/box-breathing-how-it-works), [4-7-8 breathing](/articles/4-7-8-breathing) and [how to find your resonance breathing rate](/articles/find-your-resonance-breathing-rate).
+
+## How to choose a breathing app
+
+**Guided patterns.** Most apps play a timer or voice that tells you when to inhale and exhale. This is enough for most people. Pay for a bigger library, better audio or structured programmes, not for the breathing itself.
+
+**Biofeedback.** A biofeedback app measures your body (usually heart rate variability from a watch or sensor) and shows how it responds while you breathe. It helps you find what calms you and track progress over weeks. In this list, Inhale is the biofeedback pick, and it needs an Apple Watch.
+
+**Free.** A free timer is fine for box breathing, 4-7-8 or cyclic sighing. iBreathe is a clean timer; Breathe2Relax was built by the US National Center for Telehealth & Technology for stress and has published validation work. Prana Breath has a large free tier and a one-time $10 unlock.
+
+## Breathing apps compared
+
+| App | Price | Platform note | Best for |
+|---|---|---|---|
+| [Breathwrk](/reviews/breathwrk) | $70/yr, free tier | phone app | structured daily practice |
+| [Othership](/reviews/othership) | $150/yr, free trial | phone app | music-led sessions, live classes |
+| [SOMA Breath](/reviews/soma-breath) | $99/yr, free trial | phone app | rhythmic, music-paced breathing |
+| [Wim Hof Method](/reviews/wim-hof-method-app) | $70/yr, free tier | phone app | Wim Hof rounds and cold protocols |
+| [Open](/reviews/open-app) | $120/yr, free trial | phone app | breath + meditation + movement |
+| [Pause](/reviews/pause-breathwork) | $90/yr, free trial | phone app | longer somatic sessions |
+| [Inhale](/reviews/inhale-by-aero-health) | $60/yr | Apple Watch needed for biofeedback | HRV biofeedback |
+| [Prana Breath](/reviews/prana-breath) | free, $10 one-time unlock | Android-first | custom breathing patterns |
+| [iBreathe](/reviews/ibreathe) | free ($5 to remove ads) | iPhone + Apple Watch | simple free timer |
+| [Breathe2Relax](/reviews/breathe-to-relax) | free | phone app | evidence-backed free stress tool |
+
+Prices are list prices from our individual reviews and can change; check the app store before you subscribe.
+
+## How we ranked them
 
 Every app was scored against ONDA\'s published [review methodology](/reviews/methodology): six weighted criteria, with session library and technique coverage carrying the most weight because they drive daily-use depth and long-term retention.
 
@@ -107,7 +152,7 @@ Three buying questions resolve the category cleanly:
 Breathwrk dominates the structured-library default. Othership owns the cinematic-experience premium tier. The free tier (iBreathe, Breathe2Relax) is credible. Skip apps that overstate physiological claims or hide behind ceremony framing without instructor credentials.`,
   publishOn: '2026-06-29',
   datePublished: '2026-06-29',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-01',
 }
 
 export default bestBreathworkApps2026

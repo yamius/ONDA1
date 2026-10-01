@@ -15,7 +15,7 @@ const gembaredVesta: ToolReview = {
   overallScore: 8.1,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Manufacturer-claimed ~120 mW/cm² at 0" / ~60 mW/cm² at 6"; independent verification within 5% of stated figures. Honestly specced.' },
-    { criterionId: 'wavelengths', score: 9.0, note: 'Six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm), matched to published photobiomodulation literature. Same spectrum as PlatinumLED BIOMAX 600.' },
+    { criterionId: 'wavelengths', score: 9.0, note: 'Six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm), matched to published photobiomodulation literature. Same bands as PlatinumLED BIOMAX 600, which adds 1060 nm.' },
     { criterionId: 'build-emf-flicker', score: 9.5, note: 'Fully-shielded power supply, EMF <0.1 mG at 6" — lowest in this list. Flicker at sub-research-threshold levels. Build quality is the brand’s reason to exist.' },
     { criterionId: 'coverage', score: 7.5, note: 'Mid-size panel — comparable to PlatinumLED BIOMAX 600. Half-body for targeted-area use; full-body requires stacking.' },
     { criterionId: 'evidence', score: 7.5, note: 'No FDA Class II registration. Founder-engineer publishes the technical reasoning behind the EMF-shielding choices, which is unusual transparency for the category.' },
@@ -24,7 +24,7 @@ const gembaredVesta: ToolReview = {
   pros: [
     'Lowest EMF measurement in the consumer red-light category',
     'Founder-engineer transparency — design rationale published',
-    'Six-wavelength coverage same as PlatinumLED BIOMAX 600',
+    'Six-wavelength coverage, close to PlatinumLED BIOMAX 600 (which adds 1060 nm)',
     'Sub-research-threshold flicker rate',
   ],
   cons: [
@@ -70,11 +70,11 @@ The photobiomodulation mechanism behind why red light therapy works.
   faq: [
     { q: "How much does the GembaRed Vesta cost?", a: "The GembaRed Vesta costs $1,199 as a one-time purchase. That premium pays for engineering rigour rather than size: a fully shielded power supply, six wavelengths and very low flicker. It lacks the size and modularity of Joovv or Mito Red panels." },
     { q: "Does the GembaRed Vesta have low EMF?", a: "Yes. The Vesta has the lowest EMF measurement in the consumer red-light category, third-party tested to under 0.1 mG at 6 inches thanks to a fully shielded power supply. Flicker is also measured below the threshold used in photobiology research." },
-    { q: "What wavelengths does the GembaRed Vesta use?", a: "The Vesta covers six wavelengths: 480, 630, 660, 810, 830 and 850 nm. That is the same six-wavelength coverage as the PlatinumLED BIOMAX 600. It was designed by a former medical-LED engineer who publishes the design rationale behind the panel." },
+    { q: "What wavelengths does the GembaRed Vesta use?", a: "The Vesta covers six wavelengths: 480, 630, 660, 810, 830 and 850 nm. That matches six of the PlatinumLED BIOMAX 600’s seven wavelengths (the BIOMAX adds 1060 nm). It was designed by a former medical-LED engineer who publishes the design rationale behind the panel." },
     { q: "What are the downsides of the GembaRed Vesta?", a: "The Vesta is premium-priced without the size or modularity of Joovv or Mito Red, and it has no FDA Class II registration. GembaRed is a smaller brand, so its multi-year reliability track record is thinner, and its EMF focus appeals mainly to a subset of buyers." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default gembaredVesta

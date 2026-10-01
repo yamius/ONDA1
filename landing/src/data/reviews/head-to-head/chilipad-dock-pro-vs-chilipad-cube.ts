@@ -17,12 +17,12 @@ const dockProVsCube: HeadToHead = {
   bestForB:
     'Choose ChiliPad Cube if you sleep alone, don\'t need scheduling, and want the same Sleepme water cooling at roughly half the Dock Pro price.',
   axes: [
-    { name: 'Dual-zone', winner: 'a', note: 'Dock Pro: independent his/her temperature. Cube: single-zone — one temperature for the whole pad.' },
-    { name: 'Climate range', winner: 'a', note: 'Dock Pro: higher-capacity chiller, more aggressive cooling against summer peaks. Cube: solid usable range but reaches limits faster on hot humid nights.' },
-    { name: 'Scheduling', winner: 'a', note: 'Dock Pro: app-based climate scheduling (cool for sleep onset, warm for wake). Cube: manual control only, no scheduling.' },
-    { name: 'App', winner: 'a', note: 'Dock Pro: full Sleepme app with scheduling and presets. Cube: minimal control surface — set and forget.' },
+    { name: 'Dual-zone', winner: 'a', note: 'Dock Pro: independent his/her temperature. Cube: single-zone per unit — couples buy a second Cube for the other side.' },
+    { name: 'Climate range', winner: 'a', note: 'Dock Pro: higher-capacity chiller, more aggressive cooling against summer peaks. Cube: cools to 60°F and reaches limits faster on hot humid nights.' },
+    { name: 'Scheduling', winner: 'a', note: 'Dock Pro: app-based climate scheduling (cool for sleep onset, warm for wake). Cube: physical remote only, no scheduling.' },
+    { name: 'App', winner: 'a', note: 'Dock Pro: full Sleepme app with scheduling and presets. Cube: no app at all — controlled by a physical remote.' },
     { name: 'Build', winner: 'tie', note: 'Both use the same proven Sleepme water-cooling architecture. Multi-year reliability comparable.' },
-    { name: 'Price', winner: 'b', note: 'Dock Pro: ~$1,700. Cube: ~$700-900. Cube is roughly half the price.' },
+    { name: 'Price', winner: 'b', note: 'Dock Pro: ~$1,700. Cube: $719 on sale ($799 list) per sleeper side. Cube is well under half the price for one sleeper.' },
   ],
   faq: [
     {
@@ -35,7 +35,7 @@ const dockProVsCube: HeadToHead = {
     },
     {
       q: 'Can I add scheduling to the Cube later?',
-      a: 'No — Cube hardware doesn\'t support app-based scheduling. If scheduling matters, buy Dock Pro from the start.',
+      a: 'No — the current Cube runs from a physical remote with no app, so there is no scheduling. If scheduling matters, buy Dock Pro from the start.',
     },
     {
       q: 'Is the Cube being discontinued?',
@@ -56,7 +56,7 @@ If you sleep alone, you want set-and-forget water cooling, and your bedroom clim
   relatedComparisonSlug: 'best-smart-sleep-climate-2026',
   publishOn: '2026-06-15',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-01',
 }
 
 export default dockProVsCube

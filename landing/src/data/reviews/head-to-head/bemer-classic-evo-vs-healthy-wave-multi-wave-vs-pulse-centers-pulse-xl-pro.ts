@@ -27,7 +27,7 @@ const bemerVsHealthyWaveVsPulse: HeadToHead = {
     { name: 'Daily-use friendliness', winner: 'a', note: 'Bemer: branded preset steps, lie-down-and-run daily use. Healthy Wave: parameter setup adds friction. Pulse Centers: active positioning per session.' },
     { name: 'Athletic recovery / rehab', winner: 'c', note: 'Pulse Centers: high-intensity coil is the protocol of choice for athletic recovery and rehab. Mats insufficient for these specific protocols.' },
     { name: 'Regulatory standing', winner: 'a', note: 'Bemer: FDA Class II clearance. Healthy Wave and Pulse Centers: solid build but no comparable consumer FDA clearance.' },
-    { name: 'Price', winner: 'b', note: 'Bemer: $5,490. Healthy Wave: $2,500–$3,500. Pulse Centers: $7,000–$15,000+. Healthy Wave by far the cheapest.' },
+    { name: 'Price', winner: 'b', note: 'Bemer: $5,490. Healthy Wave: $995–$2,495 by size. Pulse Centers: $7,000–$15,000+. Healthy Wave by far the cheapest.' },
   ],
   faq: [
     {
@@ -48,7 +48,7 @@ const bemerVsHealthyWaveVsPulse: HeadToHead = {
     },
     {
       q: '3-year ownership cost?',
-      a: 'Bemer Classic Evo: $5,490. Healthy Wave Multi-Wave: $2,500–$3,500. Pulse Centers Pulse XL Pro: $7,000–$15,000+. None has subscription. Healthy Wave is by far the cheapest premium-tier entry.',
+      a: 'Bemer Classic Evo: $5,490. Healthy Wave Multi-Wave: $995–$2,495 depending on size (full-size Pro $2,495). Pulse Centers Pulse XL Pro: $7,000–$15,000+. None has subscription. Healthy Wave is by far the cheapest premium-tier entry.',
     },
   ],
   content: `## The short version
@@ -69,7 +69,7 @@ If you\'re running serious athletic recovery or rehab where high-intensity targe
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-01',
 }
 
 export default bemerVsHealthyWaveVsPulse

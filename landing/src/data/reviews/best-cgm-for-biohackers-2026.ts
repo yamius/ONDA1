@@ -32,7 +32,7 @@ const bestCgmForBiohackers2026: Comparison = {
     {
       reviewSlug: 'ultrahuman-m1',
       award: 'Best ecosystem integration',
-      takeaway: 'Glucose composed with HRV, sleep and recovery from the Ultrahuman Ring Air in one app.',
+      takeaway: 'Glucose composed with HRV, sleep and recovery from an Ultrahuman ring in one app; the US version (M2 Live) runs on Abbott’s Lingo sensor from $99/month.',
     },
     {
       reviewSlug: 'signos',
@@ -85,7 +85,7 @@ const bestCgmForBiohackers2026: Comparison = {
     },
     {
       q: 'Which CGM programme works best with Oura or Whoop?',
-      a: 'Ultrahuman M1 — natively, because the Ultrahuman Ring Air shares the same app and timeline as the CGM data. Levels integrates with Oura via Apple Health. Veri and Hello Inside support Garmin and Oura via Apple Health / Google Fit. Nutrisense and Stelo support Apple Health only.',
+      a: 'Ultrahuman M1 — natively, because Ultrahuman’s rings share the same app and timeline as the CGM data. Levels integrates with Oura via Apple Health. Veri and Hello Inside support Garmin and Oura via Apple Health / Google Fit. Nutrisense and Stelo support Apple Health only.',
     },
   ],
   content: `## How we ranked them
@@ -106,7 +106,7 @@ Two clean breakpoints in the price ladder:
 
 Around those two breakpoints the rest of the field carves out specific use cases — Zoe for multi-biomarker personalisation, Ultrahuman M1 for ring-ecosystem integration, Veri and Hello Inside for EU users, Supersapiens for endurance athletes. The category is small enough that the ten programmes here are effectively the universe; the right answer is which use case fits you.`,
   datePublished: '2026-05-21',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-01',
 }
 
 export default bestCgmForBiohackers2026

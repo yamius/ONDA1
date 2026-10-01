@@ -22,8 +22,8 @@ const bemerVsHealthyWave: HeadToHead = {
     { name: 'Modality stacking', winner: 'b', note: 'Bemer: PEMF only. Healthy Wave: PEMF + far-infrared + red light + amethyst/tourmaline. Three modalities vs one.' },
     { name: 'Programmability', winner: 'b', note: 'Bemer: branded P1–P10 preset steps, app-controlled. Healthy Wave: real parameter exposure (waveform, frequency, intensity). Healthy Wave more transparent.' },
     { name: 'Regulatory standing', winner: 'a', note: 'Bemer: FDA Class II clearance. Healthy Wave: no FDA clearance, sold as wellness device.' },
-    { name: 'Build pedigree', winner: 'a', note: 'Bemer: 25-year German engineering, premium electronics, 3-year warranty. Healthy Wave: solid build, 5-year mat warranty but less brand pedigree.' },
-    { name: 'Price', winner: 'b', note: 'Bemer: $5,490. Healthy Wave: $2,500–$3,500. Healthy Wave roughly half the price.' },
+    { name: 'Build pedigree', winner: 'a', note: 'Bemer: 25-year German engineering, premium electronics, 3-year warranty. Healthy Wave: solid build, 5-year limited warranty and 90-day trial but less brand pedigree.' },
+    { name: 'Price', winner: 'b', note: 'Bemer: $5,490. Healthy Wave: $995–$2,495 by size (full-size Pro $2,495). Healthy Wave less than half the price.' },
   ],
   faq: [
     {
@@ -40,7 +40,7 @@ const bemerVsHealthyWave: HeadToHead = {
     },
     {
       q: 'Total ownership cost comparison?',
-      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Healthy Wave Multi-Wave: $2,500–$3,500 one-time. Healthy Wave roughly half the total cost, and you get three modalities.',
+      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Healthy Wave Multi-Wave: $995–$2,495 one-time depending on size. Healthy Wave less than half the total cost, and you get three modalities.',
     },
   ],
   content: `## The short version
@@ -57,7 +57,7 @@ If you want recovery-modality coverage per session and you don\'t need the propr
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-05-27',
+  dateModified: '2026-10-01',
 }
 
 export default bemerVsHealthyWave

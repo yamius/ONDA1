@@ -85,7 +85,7 @@ const bestPemfDevices2026: Comparison = {
     },
     {
       q: 'How much does Bemer really cost over 3 years?',
-      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Roughly equivalent to Pulse Centers Pulse XL Pro at the entry coil config. Healthy Wave Multi-Wave ($2,999) or iMRS Prime ($4,000) deliver multi-applicator or multi-modality coverage at meaningfully lower 3-year cost.',
+      a: 'Bemer Classic Evo: $5,490 one-time, no subscription. Roughly equivalent to Pulse Centers Pulse XL Pro at the entry coil config. Healthy Wave Multi-Wave ($995–$2,495 by size) or iMRS Prime ($4,000) deliver multi-applicator or multi-modality coverage at meaningfully lower 3-year cost.',
     },
   ],
   content: `## How we ranked them
@@ -102,12 +102,12 @@ Three buying questions resolve the category cleanly:
 
 **What form factor?** Whole-body mat (Bemer, Healthy Wave, OMI, HigherDOSE). Localised coil (Pulse Centers, MagnaWave, Curatron). Sleep-specific under-mattress (EarthPulse). Wearable (Resona VIBE, OlyLife).
 
-**What budget tier?** Under $500: Resona VIBE wearable, OlyLife wand. $1,000–$2,000: OMI, HigherDOSE, EarthPulse. $3,000–$5,000: Healthy Wave, iMRS, Curatron, MagnaWave. $5,000+: Bemer, Pulse Centers.
+**What budget tier?** Under $500: Resona VIBE wearable, OlyLife wand. $1,000–$2,500: OMI, HigherDOSE, EarthPulse, Healthy Wave (full size $2,495; smaller sizes from $995). $3,000–$5,000: iMRS, Curatron, MagnaWave. $5,000+: Bemer, Pulse Centers.
 
 Bemer dominates the research-backed premium tier; Healthy Wave wins on modality stacking; Pulse Centers and MagnaWave own the clinical coil niche; Resona VIBE redefines the entry tier at $299.`,
   publishOn: '2026-06-22',
   datePublished: '2026-06-22',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-01',
 }
 
 export default bestPemfDevices2026

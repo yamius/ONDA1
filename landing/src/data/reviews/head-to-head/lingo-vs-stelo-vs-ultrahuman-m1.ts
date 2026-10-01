@@ -9,7 +9,7 @@ const threeOtcCgm: HeadToHead = {
   description:
     'Lingo vs Stelo vs Ultrahuman M1 — three-way ONDA comparison of three non-coaching CGM programmes. Cheapest entry, Dexcom OTC and ring-ecosystem play in one decision.',
   intro:
-    'Lingo, Stelo and Ultrahuman M1 are the three CGM programmes users compare when coaching subscriptions (Levels, Nutrisense, Signos) are explicitly not wanted. Three different sensors, three different positioning: Lingo (Abbott Libre 3) is the cheapest legitimate OTC entry; Stelo (Dexcom G7) is the most accurate OTC option; Ultrahuman M1 (Libre 3) is the ecosystem play for ring users.',
+    'Lingo, Stelo and Ultrahuman M1 are the three CGM programmes users compare when coaching subscriptions (Levels, Nutrisense, Signos) are explicitly not wanted. Three different sensors, three different positioning: Lingo (Abbott Libre 3) is the cheapest legitimate OTC entry; Stelo (Dexcom G7) is the most accurate OTC option; Ultrahuman M1 (Libre 3; Abbott Lingo in the US via M2 Live) is the ecosystem play for ring users.',
   winnerSlug: null,
   verdict:
     'Three different jobs. Lingo for the cheapest no-subscription entry. Stelo for the most accurate OTC sensor. Ultrahuman M1 for users in the Ultrahuman Ring ecosystem.',
@@ -18,16 +18,16 @@ const threeOtcCgm: HeadToHead = {
   bestForB:
     'Choose Stelo by Dexcom if you want the most accurate OTC consumer CGM — same Dexcom G7 hardware as Levels and Nutrisense at $89–$99/month without coaching.',
   bestForC:
-    'Choose Ultrahuman M1 if you already own or plan to own the Ultrahuman Ring Air — native unified ecosystem (glucose + HRV + sleep) in one app.',
+    'Choose Ultrahuman M1 if you already own or plan to own an Ultrahuman ring — native unified ecosystem (glucose + HRV + sleep) in one app.',
   axes: [
-    { name: 'Sensor accuracy', winner: 'b', note: 'Stelo: Dexcom G7 (MARD ~8.2%). Lingo and Ultrahuman M1: Abbott Libre 3 (MARD ~9%). Stelo has the most accurate sensor in this group.' },
-    { name: 'Sensor wear time', winner: 'c', note: 'Lingo and Ultrahuman M1 (Libre 3): 14 days. Stelo (Dexcom G7): 15 days. Roughly comparable; both Libre options tie.' },
+    { name: 'Sensor accuracy', winner: 'b', note: 'Stelo: Dexcom G7 (MARD ~8.2%). Lingo and Ultrahuman M1: Abbott Libre 3-based sensors (MARD ~9%). Stelo has the most accurate sensor in this group.' },
+    { name: 'Sensor wear time', winner: 'c', note: 'Lingo and Ultrahuman M1 (Libre 3 / Lingo): 14 days. Stelo (Dexcom G7): 15 days. Roughly comparable; both Libre options tie.' },
     { name: 'Warm-up time', winner: 'b', note: 'Stelo: 30 minutes. Lingo and Ultrahuman: 60 minutes. Stelo back on data faster after sensor swaps.' },
-    { name: 'No-subscription model', winner: 'a', note: 'Lingo: pay-per-sensor model is genuinely flexible. Stelo: monthly subscription default. Ultrahuman M1: per-sensor purchases.' },
+    { name: 'No-subscription model', winner: 'a', note: 'Lingo: pay-per-sensor model is genuinely flexible. Stelo: monthly subscription default. Ultrahuman (US M2 Live): $99/month subscription or $129 single sensor.' },
     { name: 'Insight depth', winner: 'b', note: 'Stelo: meal-impact + time-in-range. Lingo: single per-meal Lingo Count. Ultrahuman M1: glucose + HRV cross-signal view with the ring.' },
     { name: 'Ecosystem integration', winner: 'c', note: 'Ultrahuman: native glucose + HRV + sleep in one app via the Ring Air. Stelo and Lingo: standalone glucose with Apple Health integration.' },
     { name: 'Lowest entry barrier', winner: 'a', note: 'Lingo: $54 for one 2-week sensor — the cheapest legitimate CGM entry. Stelo: $99 for two sensors or $89/month on subscription. Ultrahuman: ~$99 per sensor plus ring ecosystem cost.' },
-    { name: 'Best-value continuous use', winner: 'c', note: 'Ultrahuman M1 (~$99 per 14-day sensor = ~$215/mo) if already owning the ring. Stelo: $89–$99/mo. Lingo: ~$108/mo at single-sensor pricing, less on multi-sensor plans. Tight.' },
+    { name: 'Best-value continuous use', winner: 'b', note: 'Stelo: $89–$99/mo. Ultrahuman (US M2 Live): from $99/mo. Lingo: ~$108/mo at single-sensor pricing, less on multi-sensor plans. Tight — Stelo is slightly cheaper on subscription; Ultrahuman’s edge is the ring data on top if you already own one.' },
   ],
   faq: [
     {
@@ -44,7 +44,7 @@ const threeOtcCgm: HeadToHead = {
     },
     {
       q: 'Is Ultrahuman M1 worth it without the ring?',
-      a: 'Not really. As a standalone CGM, Ultrahuman M1 is a Libre 3 wrapper without coaching — equivalent to or weaker than Lingo at the same accuracy. The native Ring Air integration is the value; without it Lingo or Stelo are better fits.',
+      a: 'Not really. As a standalone CGM, Ultrahuman M1 is an Abbott-sensor wrapper with mostly AI coaching — equivalent to or weaker than Lingo at the same accuracy. The native Ultrahuman ring integration is the value; without it Lingo or Stelo are better fits.',
     },
     {
       q: 'Which has the simplest app?',
@@ -65,10 +65,10 @@ If you want the most accurate OTC sensor — same Dexcom G7 hardware as Levels a
 
 ## When is Ultrahuman M1 the right pick?
 
-If you already own the Ultrahuman Ring Air or plan to, M1 is the right shape because the unified glucose + HRV + sleep view in one app is unique. As a standalone CGM it is not differentiated from Lingo or Veri.`,
+If you already own an Ultrahuman ring or plan to, M1 is the right shape because the unified glucose + HRV + sleep view in one app is unique. As a standalone CGM it is not differentiated from Lingo or Veri.`,
   relatedComparisonSlug: 'best-cgm-for-biohackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-01',
 }
 
 export default threeOtcCgm

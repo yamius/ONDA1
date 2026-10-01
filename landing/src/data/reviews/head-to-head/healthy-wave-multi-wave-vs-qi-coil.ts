@@ -11,7 +11,7 @@ const healthyWaveVsQiCoil: HeadToHead = {
     'People compare the Healthy Wave Multi-Wave mat and the Qi Coil because both are sold under the “PEMF” banner — but they are not the same kind of thing. Healthy Wave is a conventional PEMF mat with disclosed waveforms and stacked far-infrared and red light. Qi Coil is a portable coil built on Rife-frequency and “scalar energy” theory, with a 10,000-program app and no disclosed PEMF specs. The gap here is evidence, not preference.',
   winnerSlug: 'healthy-wave-multi-wave',
   verdict:
-    'Not close on the evidence. Healthy Wave is a real PEMF mat with disclosed parameters and stacked IR + red light at $2,500–$3,500; Qi Coil rests on Rife/“scalar” claims with no credible support and undisclosed specs, priced $797–$9,995. Qi Coil’s only genuine edge is portability.',
+    'Not close on the evidence. Healthy Wave is a real PEMF mat with disclosed parameters and stacked IR + red light at $995–$2,495; Qi Coil rests on Rife/“scalar” claims with no credible support and undisclosed specs, priced $797–$9,995. Qi Coil’s only genuine edge is portability.',
   bestForA:
     'Choose Healthy Wave Multi-Wave if you want actual PEMF — disclosed waveform, frequency and intensity — with far-infrared and red light stacked in one mat, at mid-market pricing.',
   bestForB:
@@ -21,7 +21,7 @@ const healthyWaveVsQiCoil: HeadToHead = {
     { name: 'Disclosed specs', winner: 'a', note: 'Healthy Wave exposes waveform, frequency and intensity. Qi Coil discloses no PEMF frequency range or waveform — only “10,000 frequencies” and a claimed compact ~15 Gauss field. You cannot compare what is not published.' },
     { name: 'Field strength', winner: 'a', note: 'Healthy Wave: configurable output across the researched PEMF range. Qi Coil: a claimed ~15 Gauss compact field, unverified. Advantage Healthy Wave.' },
     { name: 'Modality coverage', winner: 'a', note: 'Healthy Wave stacks PEMF + far-infrared + red light + ion crystals in one mat. Qi Coil is a single coil playing audio-derived frequencies.' },
-    { name: 'Value', winner: 'a', note: 'Healthy Wave: $2,500–$3,500 for a real multi-modality mat. Qi Coil: $797 (Mini) to $4,995 (3S) to $9,995 (Max Scalar) — extreme pricing for an unproven modality.' },
+    { name: 'Value', winner: 'a', note: 'Healthy Wave: $995–$2,495 (by size) for a real multi-modality mat. Qi Coil: $797 (Mini) to $4,995 (3S) to $9,995 (Max Scalar) — extreme pricing for an unproven modality.' },
     { name: 'Portability', winner: 'b', note: 'Qi Coil is a genuinely portable coil-plus-app you can carry anywhere; Healthy Wave is a full-body mat you lie on. If portability is the only thing you weigh, Qi Coil wins it.' },
   ],
   faq: [
@@ -56,7 +56,7 @@ If you want PEMF, buy PEMF you can inspect and that is grounded in research. Qi 
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-01',
 }
 
 export default healthyWaveVsQiCoil
