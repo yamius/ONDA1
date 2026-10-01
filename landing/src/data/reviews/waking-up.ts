@@ -18,7 +18,7 @@ const wakingUp: ToolReview = {
     { criterionId: 'teaching', score: 9.0, note: 'The deepest teaching here — Sam Harris plus high-calibre guest teachers, taught with rigour.' },
     { criterionId: 'personalization', score: 6.5, note: 'A structured 28-day course to start, but lighter on adaptive, ongoing personalisation.' },
     { criterionId: 'app-experience', score: 7.5, note: 'A clean, calm app that stays out of the way of the practice.' },
-    { criterionId: 'free-tier', score: 6.5, note: 'A 30-day trial, plus a standing offer of free access to anyone who genuinely cannot afford it.' },
+    { criterionId: 'free-tier', score: 6.5, note: 'A 7-day free trial, plus a standing scholarship: a free membership for anyone who cannot afford it.' },
     { criterionId: 'value', score: 7.0, note: 'The most expensive here at around 130 USD a year — though the scholarship policy softens that.' },
     { criterionId: 'evidence', score: 8.5, note: 'A secular, intellectually rigorous approach grounded in neuroscience and named teaching lineages.' },
   ],
@@ -38,7 +38,7 @@ const wakingUp: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — from public information, app-store data and independent 2026 reviews. Not based on a long hands-on trial by ONDA.',
-  price: { usd: 130, note: 'per year; free for anyone who genuinely cannot afford it', asOf: '2026-05-15' },
+  price: { usd: 130, note: '$129.99/year on wakingup.com ($149.99/year or $19.99/month in-app); 7-day free trial; free scholarship for anyone who cannot afford it', asOf: '2026-10-01' },
   link: 'https://www.wakingup.com',
   linkType: 'official',
   content: `## Where it leads
@@ -70,12 +70,12 @@ The science of what meditation actually does at the nervous-system level.
   relatedSlugs: ['headspace', 'insight-timer', 'calm'],
   faq: [
     { q: "Is Waking Up worth it?", a: "Waking Up is worth it for practitioners past the basics who want depth. It has the highest-calibre instructors, pairs practice with philosophy and conversations, and is secular and rigorous. It is the most expensive app reviewed, not built for beginners, and has no sleep content." },
-    { q: "How much does Waking Up cost?", a: "Waking Up costs about $130 per year, the most expensive meditation app in the review. It is offered free to anyone who genuinely cannot afford it, so price need not be a barrier." },
+    { q: "How much does Waking Up cost?", a: "Waking Up costs $129.99 per year on its website, or $149.99 a year and $19.99 a month in the app stores, after a 7-day free trial — the most expensive meditation app in the review. Its scholarship gives a free membership to anyone who cannot afford it." },
     { q: "What are the downsides of Waking Up?", a: "Waking Up is the most expensive app reviewed and is not built for complete beginners. Its curated library is smaller, has no sleep content, and is lighter on adaptive personalisation than other major meditation apps." },
     { q: "Who is Waking Up best for?", a: "Waking Up is best for practitioners past the basics who want serious instruction and philosophy. It suits people who value secular, intellectually rigorous teaching. Complete beginners or anyone wanting sleep content should look elsewhere." },
   ],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-10-01',
 }
 
 export default wakingUp

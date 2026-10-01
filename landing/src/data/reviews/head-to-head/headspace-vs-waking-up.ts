@@ -23,7 +23,7 @@ const headspaceVsWakingUp: HeadToHead = {
     { name: 'Library scope', winner: 'b', note: 'Waking Up: meditations + lectures from neuroscientists (Anil Seth, Annaka Harris), philosophers and teachers. Headspace: focused on guided meditations and sleep.' },
     { name: 'Teaching voice consistency', winner: 'b', note: 'Waking Up is largely Sam Harris with curated guests — strong unified voice. Headspace has a smaller core team but more rotating teachers.' },
     { name: 'Beginner accessibility', winner: 'a', note: 'Headspace’s onboarding is the gentlest in the category. Waking Up is friendly but assumes a more intellectually engaged user.' },
-    { name: 'Pricing model', winner: 'b', note: 'Both ~$100/year. Waking Up famously offers free access to anyone who cannot afford it — no questions asked. Headspace has no equivalent policy.' },
+    { name: 'Pricing model', winner: 'tie', note: 'Headspace is ~$70/year; Waking Up is $129.99/year on the web ($149.99/year or $19.99/month in-app, 7-day trial). Headspace is cheaper at list price, but Waking Up offers a free scholarship to anyone who cannot afford it. Headspace has no equivalent open policy.' },
     { name: 'Sleep content', winner: 'a', note: 'Headspace has a structured sleep section. Waking Up has sleep content but it is secondary to the meditation library.' },
   ],
   faq: [
@@ -57,7 +57,7 @@ If you have never meditated and want a friendly, structured introduction — Bas
 If you want meditation as part of a wider inquiry into mind, consciousness and attention — and you want Sam Harris’ teaching voice plus lectures from neuroscientists and philosophers around it — Waking Up is the right shape. The library is non-linear and assumes intellectual engagement. The free-access policy means cost is never the blocker.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-01',
 }
 
 export default headspaceVsWakingUp

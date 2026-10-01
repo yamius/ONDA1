@@ -210,7 +210,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-01T18:27:10+02:00"
   },
   "endocrine-social-drive-oxytocin-testosterone": {
     "published": "2026-03-10T13:31:48Z",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-01T17:53:13+02:00"
+    "modified": "2026-10-01T18:27:10+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1710,7 +1710,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-01T17:53:13+02:00"
+    "modified": "2026-10-01T18:27:10+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

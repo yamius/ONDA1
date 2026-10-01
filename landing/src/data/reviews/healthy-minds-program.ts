@@ -38,7 +38,7 @@ const healthyMindsProgram: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — from public information, app-store data and independent 2026 reviews. Not based on a long hands-on trial by ONDA.',
-  price: { usd: 0, note: 'completely free; donation-funded, no ads', asOf: '2026-05-15' },
+  price: { usd: 0, note: 'completely free; donation-funded by the nonprofit Healthy Minds Innovations, no ads, no paywall', asOf: '2026-10-01' },
   link: 'https://hminnovations.org/meditation-app',
   linkType: 'official',
   content: `## Where it leads
@@ -74,7 +74,7 @@ The science of what meditation actually does at the nervous-system level.
     { q: "What are the downsides of the Healthy Minds Program?", a: "Its library is focused rather than sprawling, and it follows a fixed journey instead of an adaptive plan. Production is less polished than Calm, and there is no sleep-story-style relaxation content. For evidence-based practice at zero cost, those trade-offs are modest." },
   ],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-10-01',
 }
 
 export default healthyMindsProgram

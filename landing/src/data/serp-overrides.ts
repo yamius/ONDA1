@@ -99,7 +99,7 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
   '/reviews/kineon-move-plus': {
     title: 'Kineon Move+ Review 2026: Red Light for Joints | ONDA Life',
     description:
-      'A $799 wrap-around laser and LED device for knees, elbows and other joints. What the evidence shows, how to use it and how it compares with panels.',
+      'A $499 wrap-around laser and LED device for knees, elbows and other joints. What the evidence shows, how to use it and how it compares with panels.',
   },
   '/reviews/resona-health-vibe': {
     title: 'Resona Health VIBE Review: Worth $299? | ONDA Life',

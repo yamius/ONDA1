@@ -1130,6 +1130,117 @@
     "livanova-vns-therapy": {
       "verdict": "参照级植入式VNS设备——临床金标准，不是消费者购买的产品。",
       "productType": "植入式VNS（手术，处方）"
+    },
+    "kineon-move-plus": {
+      "verdict": "一款可信的关节靶向设备，价格合理（现价 $499），所采用的低能量激光方法有真实证据支持；但光功率低，也没有针对该设备本身的临床试验。不能替代面板。",
+      "summary": "Kineon Move+ Pro 是一条带有三个模块的绑带，每个模块配有 8 颗 660 nm 红光 LED 和 10 颗 808 nm 的 Class 1 近红外激光二极管，直接贴在膝、肘、肩等关节上使用。它与全身面板是不同的工具：以贴肤方式在小面积上输出低光功率，而不是在大面积上输出高功率。低能量激光治疗膝骨关节炎有荟萃分析支持；Move+ 本身没有已发表的独立试验。售价 $499（原价 $699），提供 30 天试用、1 年保修，并可使用 HSA/FSA，对付一个疼痛关节而言性价比尚可。",
+      "description": "Kineon Move+ Pro 测评（2026）：$499 的激光+LED 关节护带。工作原理、膝痛证据、安全性、使用时长与更便宜的替代选择。",
+      "bestFor": "最适合某一个具体的疼痛关节——膝、肩、肘——想要无线、每天进行激光+LED 护理的人；不能替代面板。",
+      "testNote": "基于证据的评估——依据 Kineon 官方产品页（2026-10-01 核实）、FDA GUDID 器械登记、一项经核实的低能量激光治疗膝骨关节炎荟萃分析以及独立测评打分。ONDA 未进行上手实测。",
+      "productType": "环绕式激光+LED 关节理疗设备",
+      "pros": [
+        "808 nm 激光加 660 nm LED 贴肤照射——正是膝痛研究中采用的方法",
+        "在 FDA 器械数据库中登记为用于缓解膝痛的 Class II 器械",
+        "无线绑带——坐着、工作或走动时都能使用",
+        "$499，含 30 天试用，可使用 HSA/FSA"
+      ],
+      "cons": [
+        "不是全身面板——每次只能照一个关节或部位",
+        "光功率低；效果取决于能否每天坚持",
+        "没有针对 Move+ 设备本身的已发表试验",
+        "仅 1 年保修（这一品类的面板通常为 3 年）"
+      ],
+      "scoreNotes": {
+        "irradiance": "Kineon 标称每个模块的光功率为 160 mW（LED）和 50 mW（Class 1 激光）——总量较低，以贴肤方式作用于小面积。属于聚焦型而非高功率型；没有公开的独立辐照度测量数据。",
+        "wavelengths": "两种波长：660 nm LED（浅层）和 808 nm 激光（更深层的近红外）。808 nm 是关节方面研究最多的波段；除此之外没有其他波长。",
+        "build-emf-flicker": "电池供电的模块装在可调节绑带上，附充电盒；一次充电约可连续使用 4 小时（24 次 10 分钟疗程）。无线使用避免了市电驱动器的 EMF；没有公开的独立 EMF 数据。",
+        "coverage": "仅限关节——通过绑带用于膝、肘、肩、腕或踝。不是面板，也不适合全身。覆盖范围评分反映的是用途不同，而非缺陷。",
+        "evidence": "在 FDA 器械数据库（GUDID）中登记为用于缓解膝痛的 Class II 非处方 LED+激光器械。低能量激光治疗膝骨关节炎有荟萃分析支持；Move+ 本身没有独立试验。",
+        "value": "官方商店 $499（原价 $699），可使用 HSA/FSA，30 天试用——作为靶向激光设备价格合理；若当作面板替代品购买则性价比很差。"
+      },
+      "content": "## 简短回答\n\n如果你有一个顽固的关节问题——通常是膝、肩或肘——并且想要一套真正能每天坚持的无线红光与近红外护理，Kineon Move+ Pro 是明智的选择。它不是红光面板，也不该当作面板来买。$499（原价 $699）对它的定位来说定价合理。证据支持的是这种方法（低能量激光照射疼痛的膝关节），而不是这款具体设备，效果温和且循序渐进，而非立竿见影。\n\n## Kineon Move+ Pro 是如何工作的？\n\n套装是一条可调节绑带，上面装有三个电池供电的模块。Kineon 标称每个模块有 8 颗 660 nm 红光 LED 和 10 颗 Class 1 的 808 nm 近红外激光二极管，光输出为 LED 160 mW、激光 50 mW。你把模块贴着皮肤环绕关节放置，然后开始一次疗程。\n\n这就是光生物调节：红光和近红外光被线粒体中的细胞色素 c 氧化酶吸收，被认为可以改变细胞能量代谢、一氧化氮信号和局部炎症。808 nm 波段比可见红光穿透更深，因此被用于关节。与面板相比，取舍在于功率与面积：面板把大量光铺满整个躯干；Move+ 则把远低于 1 瓦的光直接贴肤输送到一小块皮肤上。\n\n## 激光和红光治疗关节痛的证据怎么说？\n\n研究最充分的用途是膝骨关节炎。2019 年发表在 BMJ Open 上的一项系统综述和荟萃分析（Stausholm et al.）汇总了 22 项低能量激光治疗膝骨关节炎的安慰剂对照试验，发现与安慰剂相比，激光减轻了疼痛和功能障碍——在剂量符合 World Association for Photobiomodulation Therapy 推荐的试验中效果最明显。这是对该方法的真实支持，但也有必须坦白的局限：试验规模小、方案各异，而且大多使用诊所级激光而非消费级护带。\n\n缺少的是针对 Kineon Move+ 本身的已发表独立试验。Kineon 引用的是用户自报结果；请把它们当作营销，而不是证据。合理的预期是：部分人在每天使用数周后，疼痛和僵硬会有所减轻——它不能治愈关节炎，也不能取代运动疗法，后者仍是膝骨关节炎的一线治疗。\n\n## 如何使用？厂商给出的使用剂量\n\nKineon 建议每次 10–15 分钟，每天使用，每天最多两次，并表示坚持比单次时长更重要。官方称平均在一到四周内见效。充满电约需 3.5 小时，可连续使用约 4 小时，即 24 次 10 分钟疗程。如果坚持使用几周后仍无变化，它可能对你无效——而且 30 天试用期从送达之日起算，所以要尽快开始。\n\n## Kineon Move+ Pro 安全吗？\n\n其激光为 Class 1——最低的激光危害等级——总输出也很低，因此风险较小，但仍需采取合理的预防措施：\n\n- **眼睛：** 不要直视发光元件，也不要对着脸部；运行时保持模块贴在皮肤上。\n- **光敏性药物：** 部分抗生素（例如四环素类）、维 A 酸类、圣约翰草等药物会提高光敏感性——请先咨询药剂师。\n- **癌症：** 未经肿瘤科医生同意，不要在已知或疑似肿瘤或活动性癌症部位上使用。\n- **怀孕：** 避免在腹部或腰部使用；目前没有孕期安全数据。\n- **其他：** 避开破损皮肤、正在感染的部位和有纹身的区域（墨水会吸收光并发热）；如果关节发热、肿胀或突然疼痛，请就医——这需要诊断，而不是照光。\n\n## Kineon Move+ Pro 与替代产品对比\n\n| 设备 | 价格 | 产品类型 | 最适合 |\n|---|---|---|---|\n| Kineon Move+ Pro | $499 | 无线激光+LED 绑带，660 + 808 nm | 单个疼痛关节，每日使用 |\n| [Hooga HG500](/reviews/hooga-hg500) | $359 | 插电式 LED 面板，660 + 850 nm | 预算有限、照射面积更大 |\n| [Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500) | $1,299 | 大型六波长 LED 面板 | 半身疗程，皮肤与恢复 |\n| [Theragun PRO Plus](/reviews/theragun-pro-plus) | $599 | 高端筋膜枪 | 肌肉酸痛而非关节痛 |\n\n如果你的问题集中在一个关节，Move+ 是更有针对性的工具。如果你想要皮肤、恢复或全身疗程，从 [2026 年最佳红光疗法面板](/reviews/compare/best-red-light-therapy-panels-2026) 中选一款面板，同样的钱能覆盖更多。\n\n## Kineon Move+ 有哪些缺点？\n\n它不是面板，也无法替代面板：每次只能照一个关节或部位。光功率低，所以效果取决于连续数周每天使用。没有针对该设备本身的已发表试验，只有关于激光方法整体的试验。保修仅一年，比面板常见的三年短。\n\n## 谁应该买 Kineon Move+，谁应该跳过？\n\n**适合购买：** 你有一个明确、已确诊的关节问题，例如膝骨关节炎或反复不适的肩、肘；想要一款工作时也能佩戴的无线设备；并愿意坚持每天使用一个月。\n\n**建议跳过：** 你想要全身、皮肤或一般性的红光疗法（请选面板）；你期待立竿见影；或者你的关节痛是新出现的、发热或肿胀——请先去检查。\n\n---\n\n## 延伸阅读\n\n红光疗法起作用背后的光生物调节机制。\n\n- [长寿硬件与细胞清理](/articles/longevity-hardware-cellular-cleanup) — 红光疗法在更广泛的自噬/线粒体自噬方案中的位置\n- [长寿方案：重置生物钟](/articles/longevity-protocol-biological-clock-reset) — 光生物调节在重置流程中处于哪个环节\n- [线粒体 DNA 与红光](/articles/mitochondrial-dna-red-light) — 660/850 nm 光子如何到达线粒体，以及在那里起什么作用\n",
+      "faq": [
+        {
+          "q": "Kineon Move+ 是做什么用的？",
+          "a": "Kineon Move+ Pro 是一条无线绑带，有三个模块，每个模块配有 8 颗 660 nm 红光 LED 和 10 颗 808 nm 的 Class 1 近红外激光。它以贴肤方式对一个关节——膝、肩、肘——进行光生物调节。ONDA 给它的综合评分为 7.0/10。"
+        },
+        {
+          "q": "Kineon Move+ 多少钱？",
+          "a": "Kineon Move+ Pro 官方商店售价 $499（原价 $699），含 30 天试用、1 年保修，可使用 HSA/FSA。作为靶向激光设备价格合理，但如果你想要的是全身面板，性价比就很差。ONDA 的性价比评分为 8.0/10。"
+        },
+        {
+          "q": "Kineon Move+ 最适合什么人？",
+          "a": "最适合有一个具体疼痛关节（如膝骨关节炎或反复不适的肩部）、并愿意连续数周每天使用的人。它不能替代面板；如需全身或皮肤护理，请改选 Mito Red 或 Hooga 这样的面板。"
+        },
+        {
+          "q": "Kineon 对膝盖疼痛真的有效吗？",
+          "a": "这种方法有证据支持：2019 年 BMJ Open 一项纳入 22 项安慰剂对照试验的荟萃分析发现，低能量激光治疗减轻了膝骨关节炎的疼痛和功能障碍。但 Move+ 本身没有已发表的独立试验，所以只能预期部分人获得温和、渐进的缓解，而不是治愈。"
+        },
+        {
+          "q": "Kineon Move+ 每次用多久、多久用一次？",
+          "a": "Kineon 建议每次 10–15 分钟，每天一次，最多每天两次，并称通常在一到四周内见效。一次充电约可用 24 次 10 分钟疗程。坚持比延长单次时间更重要。"
+        },
+        {
+          "q": "Kineon Move+ 安全吗？有 FDA 批准吗？",
+          "a": "它的激光属于危害等级最低的 Class 1，并在 FDA 器械数据库中登记为用于缓解膝痛的 Class II 非处方器械——这是登记，不是 FDA 批准。避免照射眼睛，确认是否在服用光敏性药物，并避开癌症部位及孕期使用。"
+        }
+      ]
+    },
+    "healthy-minds-program": {
+      "verdict": "这里科学依据最扎实的 App——完全免费、无广告，由神经科学家打造，并经过数十项研究验证。",
+      "productType": "冥想 App"
+    },
+    "waking-up": {
+      "verdict": "这里最有深度、最严谨的 App——哲学与认真的指导——但也是最贵的，不适合新手。",
+      "productType": "冥想 App"
+    },
+    "hooga-hg500": {
+      "verdict": "平价生物黑客的标杆——做工扎实、参数诚实，价格约为 Joovv 的五分之一，基础参数大多保留。",
+      "productType": "平价生物黑客红光 + 近红外 LED 理疗面板"
+    },
+    "bon-charge-red-light-panel": {
+      "verdict": "定位健康生活的面板，在欧盟/澳洲市场大众认知度高。做工合格、定价偏高，公开的技术参数少于面向生物黑客的品牌。",
+      "productType": "健康生活定位的红光 + 近红外 LED 面板（欧盟/澳洲）"
+    },
+    "infraredi-pro-1500": {
+      "verdict": "大面板中很有竞争力的性价比之选——Joovv 级尺寸，价格明显更低，代价是品牌还不够成熟。",
+      "productType": "大面板红光 + 近红外 LED 理疗设备（澳大利亚/美国）"
+    },
+    "breathwrk": {
+      "verdict": "综合最佳的呼吸练习内容库——课程目录最大、文案有科学依据、技巧覆盖全面。结构化日常练习的品类标杆。",
+      "productType": "带结构化内容库的引导式呼吸练习 App"
+    },
+    "othership": {
+      "verdict": "最佳高端呼吸练习体验——音乐驱动的电影级课程、社区直播课、精致的用户体验。订阅价为品类最高，但制作水准配得上。",
+      "productType": "带社区直播课的高端音乐驱动呼吸练习 App"
+    },
+    "soma-breath": {
+      "verdict": "最适合随音乐节奏的韵律呼吸练习，并拥有全球认证社区。科学依据不如 Breathwrk，仪式感包装比 Othership 更重。",
+      "productType": "提供从业者认证的节奏音乐呼吸练习 App"
+    },
+    "wim-hof-method-app": {
+      "verdict": "专练 Wim Hof 呼吸法的最佳选择——官方轮次、结构化进阶、整合冷暴露。与 Breathwrk 的广度相比范围较窄。",
+      "productType": "Wim Hof Method 官方呼吸与冷暴露 App"
+    },
+    "open-app": {
+      "verdict": "呼吸 + 冥想 + 运动混合体验的最佳选择——高端用户体验、多种方式融合、直播课。纯呼吸练习的深度不如 Breathwrk。",
+      "productType": "冥想 + 呼吸练习 + 运动混合 App"
+    },
+    "pause-breathwork": {
+      "verdict": "最佳躯体/情绪释放呼吸 App——较长的旅程式课程、创伤知情框架。与结构化内容库类的默认之选相比范围较窄。",
+      "productType": "躯体/情绪释放呼吸练习 App"
+    },
+    "inhale-by-aero-health": {
+      "verdict": "最佳 HRV 驱动的呼吸 App——在练习前后测量 Apple Watch HRV，并据此调整推荐。内容库较小，但生物反馈闭环独一无二。",
+      "productType": "HRV 驱动的生物反馈呼吸练习 App"
+    },
+    "ibreathe": {
+      "verdict": "最佳免费极简呼吸 App——简洁的可视化呼吸引导、核心技巧、无订阅。范围窄，但在这个价格无可匹敌。",
+      "productType": "免费极简呼吸练习 App（箱式、4-7-8、自定义）"
+    },
+    "breathe-to-relax": {
+      "verdict": "最佳有证据支持的免费呼吸 App——由美军远程医疗部门针对 PTSD 和压力开发；临床可信度是其他免费 App 无法比拟的。",
+      "productType": "美国国防部开发的免费腹式呼吸 App，用于缓解压力和 PTSD"
     }
   },
   "comparisons": {
@@ -1383,6 +1494,89 @@
         {
           "q": "能免费刺激迷走神经吗？",
           "a": "能。慢呼吸——每分钟约五到七次，呼气更长——在练习时能可靠地提升迷走神经介导的心率变异性，是所有迷走神经技巧中证据最广的。哼鸣、温和的冷水浸脸和规律的有氧运动也有帮助。很多人会先尝试这些方法，只有想要更多结构化时才购买设备。"
+        }
+      ]
+    },
+    "best-breathwork-apps-2026": {
+      "title": "2026 年最佳呼吸练习 App 排名与对比",
+      "description": "2026 年 10 款呼吸练习 App 对比：综合第一是约 $70/年的 Breathwrk；重音乐选 Othership，Apple Watch HRV 生物反馈选 Inhale，免费选 iBreathe。",
+      "intro": "2024–2026 年，呼吸练习从小众的躯体疗法变成了主流的神经系统调节工具，推动力来自斯坦福的循环叹息研究，以及 Wim Hof / Othership 向恢复文化的渗透。App 市场分化成清晰的几个层级：高端结构化内容库（Breathwrk）、音乐驱动的电影级高端体验（Othership、SOMA Breath、Open）、官方单一方法 App（Wim Hof Method）、躯体/情绪释放细分（Pause）、HRV 生物反馈专精（Inhale）、模式自定义（Prana Breath），以及免费层（iBreathe、Breathe2Relax）。我们按同样的六个维度为 2026 年最可信的 10 款 App 打分：课程库、技巧覆盖、证据基础、应用体验、生物反馈集成和性价比。",
+      "verdict": "Breathwrk 综合胜出：作为结构化内容库的标杆，技巧覆盖全面、文案有科学依据，$70/年。对于把呼吸练习当作电影级体验的用户，Othership 在制作水准和社区上胜出。对认真修习 WHM 的人，Wim Hof Method App 是理性之选。Inhale 完成了 HRV 生物反馈闭环。iBreathe 和 Breathe2Relax 可靠地覆盖了免费层。按三个问题来选：结构化内容库的广度、音乐/社区理念，还是生物反馈集成。",
+      "content": "## 简短回答\n\n对大多数人来说，最好的呼吸 App 是 **Breathwrk**：约 $70/年，拥有最大的结构化内容库和最广的技巧种类。如果你想要音乐引导的电影级课程，选 **Othership**。如果你想让 App 在你呼吸时测量身体反应，选 **Inhale**，它使用 Apple Watch 的 HRV。如果你不想付费，**iBreathe** 和 **Breathe2Relax** 免费，基础功能做得很好。\n\n## 呼吸练习到底有什么作用？\n\n缓慢、受控的呼吸是少数有明确生理机制的放松方法之一。一项关于慢呼吸研究的系统综述发现，以每分钟约六次的速度呼吸能提升副交感神经（“休息与消化”）活动和心率变异性，并与更好的情绪调节和幸福感相关（[Zaccaro et al., 2018, Frontiers in Human Neuroscience](https://doi.org/10.3389/fnhum.2018.00353)）。这些研究大多规模较小，所以应把这种效果看作真实但温和。\n\n斯坦福的一项随机研究比较了为期一个月、每天五分钟的三种呼吸练习与正念冥想。循环叹息（两次吸气，然后长长呼气）带来了最大的情绪改善和最大的呼吸频率下降（[Balban et al., 2023, Cell Reports Medicine](https://doi.org/10.1016/j.xcrm.2022.100895)）。实用结论是：每天花几分钟做带长呼气的慢呼吸，才是关键所在。App 能帮你坚持下去，但它本身不会额外增加什么特殊效果。\n\n延伸阅读：[生理性叹息](/articles/physiological-sigh)、[箱式呼吸](/articles/box-breathing-how-it-works)、[4-7-8 呼吸法](/articles/4-7-8-breathing)，以及[如何找到你的共振呼吸频率](/articles/find-your-resonance-breathing-rate)。\n\n## 如何选择呼吸 App\n\n**引导式节奏。** 大多数 App 会播放计时器或语音，提示你何时吸气、何时呼气。对大多数人来说这就够了。付费应该是为了更大的内容库、更好的音频或结构化课程，而不是为呼吸本身付费。\n\n**生物反馈。** 生物反馈 App 会测量你的身体（通常是来自手表或传感器的心率变异性），并显示你呼吸时身体如何反应。它能帮你找到让自己平静下来的方法，并追踪数周来的进展。本榜单中，Inhale 是生物反馈之选，需要 Apple Watch。\n\n**免费。** 做箱式呼吸、4-7-8 或循环叹息，免费计时器就够了。iBreathe 是简洁的计时器；Breathe2Relax 由美国 National Center for Telehealth & Technology 为缓解压力而开发，并有已发表的验证研究。Prana Breath 免费内容很多，$10 一次性解锁。\n\n## 呼吸 App 对比\n\n| App | 价格 | 平台说明 | 最适合 |\n|---|---|---|---|\n| [Breathwrk](/reviews/breathwrk) | $70/年，有免费版 | 手机 App | 结构化的日常练习 |\n| [Othership](/reviews/othership) | $150/年，免费试用 | 手机 App | 音乐引导课程、直播课 |\n| [SOMA Breath](/reviews/soma-breath) | $99/年，免费试用 | 手机 App | 有节奏、随音乐呼吸 |\n| [Wim Hof Method](/reviews/wim-hof-method-app) | $70/年，有免费版 | 手机 App | Wim Hof 呼吸轮次与冷暴露方案 |\n| [Open](/reviews/open-app) | $120/年，免费试用 | 手机 App | 呼吸 + 冥想 + 运动 |\n| [Pause](/reviews/pause-breathwork) | $90/年，免费试用 | 手机 App | 较长的躯体练习 |\n| [Inhale](/reviews/inhale-by-aero-health) | $60/年 | 生物反馈需要 Apple Watch | HRV 生物反馈 |\n| [Prana Breath](/reviews/prana-breath) | 免费，$10 一次性解锁 | 安卓优先 | 自定义呼吸节奏 |\n| [iBreathe](/reviews/ibreathe) | 免费（$5 去广告） | iPhone + Apple Watch | 简单的免费计时器 |\n| [Breathe2Relax](/reviews/breathe-to-relax) | 免费 | 手机 App | 有证据支持的免费减压工具 |\n\n价格为我们各篇测评中的标价，可能会变动；订阅前请先在应用商店核实。\n\n## 我们如何排名\n\n每款 App 都按 ONDA 公开的[测评方法](/reviews/methodology)打分：六项加权标准，其中课程库和技巧覆盖权重最高，因为它们决定了日常使用的深度和长期留存。\n\n全部十款都基于 App 文档、App Store 页面、创始人的公开发言以及 2026 年的独立用户评价进行评估，而非上手实测。\n\n## 最佳呼吸练习 App：该买哪一款？\n\n三个购买问题就能把这个品类理清楚：\n\n**你想从呼吸练习中得到什么？** 结构化的神经系统方案 → Breathwrk。电影级音乐 + 社区 → Othership。单一方法的深度（Wim Hof） → Wim Hof Method App。躯体/情绪释放 → Pause。HRV 生物反馈 → Inhale。呼吸 + 冥想 + 运动混合 → Open。\n\n**预算多少？** 免费：iBreathe、Breathe2Relax、Prana Breath（大部分免费）。$60–$70/年：Breathwrk、Wim Hof Method、Inhale。$90–$120/年：Pause、SOMA Breath、Open。$150/年：Othership。\n\n**什么平台？** 所有主流 App 都支持 iOS 和 Android。Prana Breath 是最好的安卓优先选择。Inhale 的生物反馈特色功能需要 Apple Watch。\n\nBreathwrk 是结构化内容库的默认首选。Othership 占据电影级体验的高端层。免费层（iBreathe、Breathe2Relax）也很可靠。避开那些夸大生理功效、或者没有导师资质却靠仪式感包装的 App。",
+      "picks": {
+        "breathwrk": {
+          "award": "综合最佳",
+          "takeaway": "最大的结构化内容库 + 最广的技巧覆盖 + 有科学依据的文案，高端档里价格最好。"
+        },
+        "othership": {
+          "award": "最佳高端体验",
+          "takeaway": "音乐驱动的电影级旅程加社区直播课——呼吸 App 的制作水准标杆。"
+        },
+        "soma-breath": {
+          "award": "最佳节奏音乐呼吸",
+          "takeaway": "随节拍进行的课程，与 Wim Hof 方法有交集，并拥有全球认证引导师网络。"
+        },
+        "wim-hof-method-app": {
+          "award": "Wim Hof 呼吸法最佳",
+          "takeaway": "Innerfire 官方 App——结构化的 WHM 轮次、冷暴露方案，引用 Radboud 研究。"
+        },
+        "open-app": {
+          "award": "呼吸 + 冥想 + 运动混合最佳",
+          "takeaway": "融合呼吸练习、冥想和运动的高端平台，由知名导师制作。"
+        },
+        "pause-breathwork": {
+          "award": "躯体/情绪释放最佳",
+          "takeaway": "较长的旅程式课程，采用创伤知情的框架——躯体细分领域的深度之选。"
+        },
+        "inhale-by-aero-health": {
+          "award": "HRV 生物反馈最佳",
+          "takeaway": "唯一一款通过 Apple Watch HRV 测量和自适应推荐形成闭环的呼吸 App。"
+        },
+        "prana-breath": {
+          "award": "可自定义/安卓最佳",
+          "takeaway": "可深度自定义呼吸节奏参数，$10 一次性解锁——最好的安卓优先选择。"
+        },
+        "ibreathe": {
+          "award": "免费极简最佳",
+          "takeaway": "简洁的可视化呼吸计时器、核心技巧、支持 Apple Watch——免费且没有订阅压力。"
+        },
+        "breathe-to-relax": {
+          "award": "有证据支持的免费 App 最佳",
+          "takeaway": "由美国 National Center for Telehealth 开发的免费 App，有已发表的 PTSD/压力验证研究。"
+        }
+      },
+      "faq": [
+        {
+          "q": "最好用的呼吸 App 是哪个？",
+          "a": "对大多数人来说是 Breathwrk：约 $70/年，内容库最大、技巧覆盖最广。想要音乐引导的课程选 Othership，想要 Apple Watch HRV 生物反馈选 Inhale，想要免费 App 就选 iBreathe 或 Breathe2Relax。"
+        },
+        {
+          "q": "呼吸 App 值得付费吗？",
+          "a": "只有当你会用到所付费的内容时才值得。呼吸本身是免费的：关于慢呼吸和循环叹息的研究用的是简单的指导，而不是高端 App。如果你需要大型引导内容库、帮助坚持的课程、音乐引导课程或能显示身体反应的生物反馈，订阅才值得。如果你只需要箱式呼吸或 4-7-8 的计时器，免费 App 就够了。"
+        },
+        {
+          "q": "2026 年最好的呼吸练习 App 是哪款？",
+          "a": "综合来看是 Breathwrk——最大的结构化内容库、最广的技巧覆盖、有科学依据的文案，$70/年。想要音乐驱动的电影级高端体验选 Othership，$150/年。专门练 WHM 就选 Wim Hof Method App。"
+        },
+        {
+          "q": "Breathwrk 的订阅值得买吗？",
+          "a": "对于想要技巧覆盖广、结构化日常呼吸练习的用户来说值得——在这个价位，Breathwrk 的内容库和有科学依据的文案无可匹敌。对于想要电影级体验的用户，Othership 的较高订阅价也物有所值。"
+        },
+        {
+          "q": "Breathwrk 和 Othership 哪个更好？",
+          "a": "Breathwrk 在内容库深度、技巧覆盖、科学依据和价格上胜出。Othership 在制作水准、音乐驱动课程和社区直播上胜出。两者对呼吸练习应有的感受有着不同的理念。"
+        },
+        {
+          "q": "有真正好用的免费呼吸 App 吗？",
+          "a": "有。对于证据最充分的技巧，比如慢呼吸和循环叹息，免费计时器就够了。两个不错的选择：iBreathe（简洁的极简计时器，带可视化引导，原生支持 Apple Watch）和 Breathe2Relax（由美国 National Center for Telehealth 开发，有已发表的 PTSD/压力验证研究）。理念不同，都免费。"
+        },
+        {
+          "q": "大家都在说的循环叹息是什么方法？",
+          "a": "循环叹息是经斯坦福验证的呼吸模式（用鼻子连续吸气两次，再用嘴长长呼气），2023 年 Huberman / Balban 的论文显示，它在改善情绪/唤醒水平方面优于正念。Breathwrk、Othership、Inhale 和 Open 都有引导式循环叹息课程。"
+        },
+        {
+          "q": "呼吸练习 App 一年要花多少钱？",
+          "a": "Breathwrk：$70/年。Wim Hof Method：$70/年。SOMA Breath：$99/年。Open：$120/年。Othership：$150/年。Inhale：$60/年。Pause Breathwork：$90/年。免费选择：iBreathe、Breathe2Relax、Prana Breath（大部分免费）。"
         }
       ]
     }
@@ -1678,6 +1872,141 @@
         }
       ],
       "content": "## 简短回答\n\n**2026 年，Mito Red MitoPRO 1500X 是大多数买家的最佳选择。** 它和 Joovv Solo 3.0 一样有 FDA II 类注册，带六个波长和 3 年保修，售价 $1,299，而 Joovv 为 $1,699。**PlatinumLED BioMax 600**（$1,049）最便宜、光谱最宽，但面板较小且没有 FDA 注册。如果你最看重模块化全身扩展，**Joovv Solo 3.0** 仍是首选。\n\n## 2026 年有哪些变化\n\n两项已核实的变化改变了这场对比。Joovv 现在美国商店将 Solo 3.0 定价为 $1,699。Mito Red 不再销售初代四波长 MitoPRO 1500；其后继型号 1500X 增加了 590 和 810 nm，并标注为 FDA II 类注册。这消除了 Joovv 在监管上的领先，因此 ONDA 的综合首选从 Joovv 换成了 Mito Red。\n\n| 面板 | 价格（2026 年 10 月） | 波长 | FDA II 类 | 最适合 |\n|---|---|---|---|---|\n| Joovv Solo 3.0 | $1,699 | 660 + 850 nm | 是 | 模块化全身堆叠 |\n| Mito Red MitoPRO 1500X | $1,299 | 6 个（590–850 nm） | 是 | 综合性价比最佳 |\n| PlatinumLED BioMax 600 | $1,049 | 7 个（480–1060 nm） | 否 | 价格最低，光谱最宽 |\n\n## 什么情况下该选 Joovv Solo 3.0？\n\n如果模块化全身扩展符合你的搭建计划，并且你想要品类标杆级的做工，Joovv 就是合适的选择。如今溢价买到的是模块化生态和精致度，而不是独有的监管地位。\n\n## 什么情况下该选 Mito Red MitoPRO 1500X？\n\n如果你想要一块覆盖半身的大面板，带六个波长、FDA II 类注册和诚实的参数标注，价格比 Joovv 低 $400，Mito Red 就是合适的选择。大多数高端价位的买家最终会选它。\n\n## 什么情况下该选 PlatinumLED BIOMAX 600？\n\n如果最低价格、七波长光谱和公开的 EMF 检测是你的决定标准，PlatinumLED 就是合适的选择。需要接受面板较小且没有 FDA 注册。\n\n阅读完整测评：[Joovv Solo 3.0](/reviews/joovv-solo-3)、[Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500)、[PlatinumLED BioMax 600](/reviews/platinumled-biomax-600)，或 [最佳红光理疗板横评](/reviews/compare/best-red-light-therapy-panels-2026)。"
+    },
+    "healthy-minds-program-vs-waking-up": {
+      "title": "Healthy Minds Program 与 Waking Up 对比（2026）",
+      "description": "Healthy Minds Program 与 Waking Up 并排对比：ONDA 解析两款有科学依据的冥想 App——Richard Davidson 的研究实验室，对比 Sam Harris 的哲学项目。",
+      "intro": "当科学可信度是决定因素时，Healthy Minds Program 和 Waking Up 是最常被拿来比较的两款冥想 App。两者都由知名研究者授课，都超越了大众化的正念包装。Healthy Minds 由非营利机构 Healthy Minds Innovations 运营，该机构隶属于威斯康星大学麦迪逊分校 Richard Davidson 的 Center for Healthy Minds；Waking Up 则是 Sam Harris 的哲学项目，配有神经科学和哲学讲座。",
+      "verdict": "为了同一个可信度目标的两种不同路径。想要基于证据的四大支柱训练框架——免费、无付费墙——选 Healthy Minds。想在 Sam Harris 的带领下获得哲学深度和非二元修习，选 Waking Up。",
+      "bestForA": "如果你想要来自研究型非营利机构的科学冥想训练框架——结构清晰、经过随机试验检验、真正免费且无付费墙——就选 Healthy Minds Program。",
+      "bestForB": "如果你想把冥想当作哲学探究——非二元修习、神经科学与哲学讲座、Sam Harris 的授课风格——就选 Waking Up。",
+      "axes": [
+        {
+          "name": "科学渊源",
+          "note": "Healthy Minds：建立在威斯康星大学麦迪逊分校 Richard Davidson 的 Center for Healthy Minds 之上——全球被引用最多的冥想科学实验室之一——并经过一项已发表的随机对照试验检验。Waking Up：由 Sam Harris（神经科学博士）和可信的嘉宾授课，但并非研究实验室。"
+        },
+        {
+          "name": "教学深度",
+          "note": "Waking Up 在非二元修习和心灵哲学上走得更深。Healthy Minds 围绕四大支柱训练（觉察、连接、洞见、目标）构建——覆盖面广，但哲学深度较浅。"
+        },
+        {
+          "name": "课程结构",
+          "note": "Healthy Minds：明确的四大支柱课程，循序渐进。Waking Up：30 天入门课程加非线性内容库——入门课之后结构较松散。"
+        },
+        {
+          "name": "内容库范围",
+          "note": "Waking Up：冥想之外，还有与神经科学家、哲学家和导师的课程与对谈（据 Waking Up 称超过 600 小时音频）。Healthy Minds：专注于四大支柱训练计划。"
+        },
+        {
+          "name": "授课风格一致性",
+          "note": "Waking Up：以 Sam Harris 为主，辅以精选嘉宾。Healthy Minds：多位讲师——风格统一性较弱。"
+        },
+        {
+          "name": "新手友好度",
+          "note": "两者都有清晰的入门路径。Waking Up 需要更多思辨投入；Healthy Minds 更偏步骤化。"
+        },
+        {
+          "name": "睡眠/睡前放松内容",
+          "note": "两者都不是睡眠 App。Healthy Minds 没有睡前故事类内容；Waking Up 在部分讲座中谈到睡眠，但没有真正的睡眠内容库。想改善睡眠，可以看看 Calm 或 Headspace。"
+        },
+        {
+          "name": "价格",
+          "note": "Healthy Minds Program：免费，靠捐赠运营，无付费墙。Waking Up：官网 $129.99/年（App 内 $149.99/年或 $19.99/月），7 天免费试用，并为负担不起的人提供免费奖学金会员。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Healthy Minds 和 Waking Up 选哪个好？",
+          "a": "如果你想要来自研究型非营利机构、围绕四大支柱构建的循证冥想框架，并看重无付费墙，就选 Healthy Minds。如果你想把冥想作为更广泛的哲学探究的一部分，喜欢 Sam Harris 的授课风格以及神经科学家和哲学家的讲座，就选 Waking Up。"
+        },
+        {
+          "q": "Healthy Minds Program 真的免费吗？",
+          "a": "是的。这款 App 由隶属于威斯康星大学麦迪逊分校 Center for Healthy Minds 的非营利机构 Healthy Minds Innovations 运营，靠捐赠资助——没有付费墙、没有订阅、没有广告。有些 App 也有大量免费内容，但完全免费的高评分 App 很少。"
+        },
+        {
+          "q": "Waking Up 多少钱？可以免费用吗？",
+          "a": "在官网购买 Waking Up 为 $129.99/年（约 $10.83/月），通过应用商店则为 $149.99/年或 $19.99/月，均有 7 天免费试用。其奖学金计划为任何负担不起的人提供免费会员，无需说明理由。"
+        },
+        {
+          "q": "冥想新手用 Waking Up 还是 Healthy Minds 更容易上手？",
+          "a": "对完全的新手来说，通常 Healthy Minds 更容易：课程简短、步骤清晰，四大支柱路径明确，而且可以免费想用多久就用多久。Waking Up 的 30 天入门课程很出色，但很快就进入关于自我本质的思考，更适合已有一定练习基础或对哲学感兴趣的人。"
+        },
+        {
+          "q": "有研究证明 Healthy Minds App 有效吗？",
+          "a": "有。一项随机对照试验（Goldberg et al., JMIR Mental Health, 2020）将 Healthy Minds Program App 与候补对照组比较，发现八周后心理困扰有所减轻。这是一项设计良好的试验，并不能证明对每个人都有效；Waking Up 的 App 本身没有可比的已发表试验。"
+        },
+        {
+          "q": "可以两个一起用吗？",
+          "a": "可以。由于 Healthy Minds 免费，叠加使用不会增加成本——用 Healthy Minds 做结构化的日常框架，用 Waking Up 听哲学课程、做非二元修习。它们覆盖的是冥想话题的不同部分。"
+        }
+      ],
+      "content": "## 简短回答\n\n如果你想要一门不花钱、基于研究打造的结构化课程，选 **Healthy Minds Program**——它免费、靠捐赠运营，并经过随机试验检验。如果你想要深度——非二元修习、Sam Harris 的教学以及哲学与科学对谈内容库——选 **Waking Up**，$129.99/年（负担不起可通过奖学金免费使用）。很多人先从 Healthy Minds 开始，养成习惯后再加上 Waking Up。\n\n| | Healthy Minds Program | Waking Up |\n|---|---|---|\n| 价格 | 免费（靠捐赠运营的非营利机构） | 官网 $129.99/年；App 内 $149.99/年或 $19.99/月 |\n| 免费可用内容 | 全部内容，永久免费 | 7 天试用；负担不起可申请免费奖学金 |\n| 背后团队 | Healthy Minds Innovations，隶属 UW–Madison Center for Healthy Minds | Sam Harris 与客座导师 |\n| 结构 | 四大支柱：觉察、连接、洞见、目标 | 30 天入门课程，之后为非线性内容库 |\n| App 的已发表试验 | 有——RCT，JMIR Mental Health 2020 | 无可比试验 |\n| 最适合 | 新手、重视证据的用户、零预算 | 追求哲学与深度的修习者 |\n\n## 什么时候选 Healthy Minds Program？\n\n如果你想要来自可信研究团队的科学冥想框架——Richard Davidson 的四大支柱训练（觉察、连接、洞见、目标）——以及一款真正免费的 App，Healthy Minds 就很合适。一项随机对照试验（Goldberg et al., 2020）发现，与候补组相比，使用该 App 八周能减轻心理困扰。无付费墙的模式在高评分 App 中很少见。详见我们的 [Healthy Minds Program 测评](/reviews/healthy-minds-program)。\n\n## 什么时候选 Waking Up？\n\n如果你想把冥想作为对心灵与哲学更广泛探究的一部分，既听 Sam Harris 授课，也听神经科学家和哲学家的课程，Waking Up 就很合适。官网 $129.99/年（App 内更贵），但有奖学金，费用永远不会成为障碍。详见我们的 [Waking Up 测评](/reviews/waking-up)。\n\n## 哪个更适合新手？\n\n对大多数人来说是 Healthy Minds。课程简短、步骤化，路径明确，而且可以无限期免费使用。Waking Up 的入门课程很出色，但很快就转向关于自我的问题，有一定练习基础后再接触效果更好。\n\n## 还可以比较什么\n\n在考虑第三个选项？请看 [Headspace vs Waking Up vs Healthy Minds Program](/reviews/vs/headspace-vs-waking-up-vs-healthy-minds-program)、[Calm vs Waking Up](/reviews/vs/calm-vs-waking-up)，或完整的 [2026 年最佳冥想 App](/reviews/compare/best-meditation-apps-2026) 排名。\n\n## 参考来源\n\n- Goldberg SB et al. (2020). Testing the efficacy of a multicomponent, self-guided, smartphone-based meditation app: three-armed randomized controlled trial. *JMIR Mental Health*. [doi:10.2196/23825](https://doi.org/10.2196/23825)\n- [Healthy Minds Innovations——免费的 Healthy Minds Program App](https://tryhealthyminds.org/meditation-app)\n- [Waking Up——订阅方案](https://www.wakingup.com/checkout) 与 [奖学金](https://www.wakingup.com/scholarship)，2026-10-01 核实"
+    },
+    "hooga-hg500-vs-bon-charge-red-light-panel-vs-infraredi-pro-1500": {
+      "title": "Hooga vs Bon Charge vs Infraredi 对比（2026）",
+      "description": "Hooga HG500（$359）、Bon Charge Max（$999）与 Infraredi Pro Max（$1,019）对比：哪款高性价比红光面板适合你？价格、参数与保修一览。",
+      "intro": "Hooga HG500、Bon Charge 的半身面板和 Infraredi 的大型 Pro 面板，是不想付 Joovv 价格的人最常比较的三款高性价比红光面板。型号名称已有变化：Bon Charge 现在以 Max（$999）销售其半身面板，Infraredi 的 Pro 1500 在产品线中已被 Pro Max 2.0（促销价 $1,019）取代。三者仍代表三种不同的性价比思路——最便宜的靠谱入门款、健康品牌中端款，以及光谱最广的款式。",
+      "verdict": "三个不同的价位。$359 的 Hooga 适合大多数首次购买者。Bon Charge 适合已在使用 Bon Charge 生态产品的人。Infraredi 则在性价比档位顶端提供最广的光谱和落地支架。",
+      "bestForA": "如果预算是决定因素，选 Hooga HG500——$359，660 + 850 nm，3 年保修和 60 天退货，足以满足大多数首次购买者的需求。",
+      "bestForB": "如果你已在使用该品牌的其他产品，想要一块公布了低 EMF 和零频闪数据的大型半身面板（Max），选 Bon Charge——但要注意它只有 1 年保修。",
+      "bestForC": "如果你想要三者中最多的波长、附带落地支架和 3 年保修，选 Infraredi——价格与 Bon Charge Max 相当。",
+      "axes": [
+        {
+          "name": "波长覆盖",
+          "note": "Infraredi Pro Max 2.0：五种波长。Bon Charge Max：两种（660 + 850 nm）。Hooga HG500：两种（660 + 850 nm）。Infraredi 光谱最广。"
+        },
+        {
+          "name": "面板尺寸/覆盖范围",
+          "note": "Bon Charge Max（91 cm，400 颗 LED）和 Infraredi Pro Max 2.0（90.8 cm，210 颗双透镜 LED）都是大型半身面板。Hooga HG500（100 颗 LED）是较小的中型面板。"
+        },
+        {
+          "name": "辐照度",
+          "note": "只有厂商数据：Hooga 标称 6 英寸处 94 mW/cm²；Bon Charge 标称超过 142 mW/cm²，但未注明距离；Infraredi 产品页未列出数值。现行型号均无独立验证，因此不判胜负。"
+        },
+        {
+          "name": "EMF/频闪",
+          "note": "Bon Charge 现已公布 Max 的 EMF（0.05–0.1 µT）和零频闪数据；Hooga 和 Infraredi 也宣传低 EMF、无频闪驱动。现行型号没有独立对比。"
+        },
+        {
+          "name": "品牌成熟度",
+          "note": "Bon Charge 的大众品牌覆盖面最广（尤其在欧盟/澳洲）。Hooga 在生物黑客群体中拥有大量拥趸。Infraredi 是三者中最新的品牌。"
+        },
+        {
+          "name": "做工",
+          "note": "Bon Charge：扎实的铝材加玻璃。Infraredi：铝制背板加玻璃前面板。Hooga：铝制背板加塑料饰边。Bon Charge 质感最高端。"
+        },
+        {
+          "name": "支架、安装与保修",
+          "note": "Infraredi：附底座支架，3 年保修，60 天试用。Hooga：门挂支架和悬挂套件（支架另购），3 年保修，60 天退货。Bon Charge Max：仅门挂支架，1 年保修。"
+        },
+        {
+          "name": "价格",
+          "note": "Hooga HG500：$359。Bon Charge Max：$999（较小的 Demi：$699）。Infraredi Pro Max 2.0：促销价 $1,019（原价 $1,199）。Hooga 大约只要三分之一的价格。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "$500 以内最好的红光面板是哪款？",
+          "a": "这三款中只有 Hooga HG500 低于 $500，售价 $359，660 + 850 nm，3 年保修和 60 天退货。Bon Charge（Max，$999）和 Infraredi（Pro Max 2.0，$1,019）价格都约为它的三倍。对大多数首次购买者来说，Hooga 是明智的入门之选。"
+        },
+        {
+          "q": "$359 的 Hooga HG500 靠谱吗？",
+          "a": "靠谱。Hooga 标称 100 颗 660 和 850 nm LED 在 6 英寸处达到 94 mW/cm²，并提供 3 年保修和 60 天退货。你牺牲的是波长广度、面板尺寸和高端质感——而不是大多数研究所用的核心双波长参数。"
+        },
+        {
+          "q": "和 Hooga 比，Bon Charge 值得买吗？",
+          "a": "只有当你看重品牌和更大的面板时才值得。Bon Charge Max（$999）采用与 Hooga 相同的两种波长，面板更大（400 颗 LED），并公布了低 EMF 数据，但只有 1 年保修，而 Hooga 是 3 年。按每美元参数计算，Hooga 胜出。"
+        },
+        {
+          "q": "Infraredi 还在卖 Pro 1500 吗？",
+          "a": "不再以这个名字销售。Infraredi 目前的 Pro 系列包括 Mini、Max、Max Plus、Semi 以及更大的 2.0 型号；最接近的大型半身面板是 Pro Max 2.0（促销价 $1,019，210 颗双透镜 LED，五种波长，3 年保修，附底座支架）。"
+        },
+        {
+          "q": "是不是干脆买 Mito Red MitoPRO 1500X 更好？",
+          "a": "MitoPRO 1500X 售价 $1,299——比 Infraredi Pro Max 2.0 贵约 $280——提供六种波长、FDA Class II 注册以及更长的独立测评记录。如果这个差价对你很重要，Infraredi 是足够接近的性价比之选；如果不在意，MitoPRO 则比本次对比高一个档次。"
+        }
+      ],
+      "content": "## 简短回答\n\n对大多数人来说，**Hooga HG500** 是首选：$359 即可获得标准的 660 + 850 nm 参数、3 年保修和 60 天退货。只有在有明确理由时才多花约三倍的钱——想要五种波长和落地支架就选 **Infraredi Pro Max 2.0**（$1,019），想要已在用品牌的大型面板且能接受 1 年保修就选 **Bon Charge Max**（$999）。\n\n| | Hooga HG500 | Bon Charge Max | Infraredi Pro Max 2.0 |\n|---|---|---|---|\n| 价格（2026-10-01 核实） | $359 | $999 | $1,019（原价 $1,199） |\n| 波长 | 660 + 850 nm | 660 + 850 nm | 五种 |\n| LED | 100 | 400 | 210 颗双透镜 |\n| 标称辐照度 | 6 英寸处 94 mW/cm² | >142 mW/cm²（未注明距离） | 未列出 |\n| 安装方式 | 门挂支架 + 悬挂套件；支架另购 | 门挂支架 | 附底座支架 |\n| 保修/试用 | 3 年 / 60 天退货 | 1 年 | 3 年 / 60 天试用 |\n\n关于名称的说明：这篇对比最初是 Hooga vs Bon Charge “Red Light Therapy Panel” vs Infraredi Pro 1500。后两者现已不再以该名称销售，因此表格使用了各品牌当前最接近的型号。\n\n## 什么时候选 Hooga HG500？\n\n如果预算是决定因素，并且你想以最低的靠谱价格获得光生物调节研究中最常用的两种波长，Hooga 就很合适。大多数首次购买者都应从这里开始。完整内容请看 [Hooga HG500 测评](/reviews/hooga-hg500)。\n\n## 什么时候选 Bon Charge？\n\n如果你已经在用 Bon Charge 的产品，想要同一品牌的大型半身面板，Max 就很合适。比 Hooga 多付的钱换来的是更大的面板、品牌知名度和公开的 EMF 数据——而不是更多波长——而且保修期更短。完整内容请看 [Bon Charge 测评](/reviews/bon-charge-red-light-panel)。\n\n## 什么时候选 Infraredi？\n\n如果你想要三者中最广的光谱、随附底座支架和 3 年保修，Infraredi 就很合适——价格与 Bon Charge Max 差不多。完整内容请看 [Infraredi 测评](/reviews/infraredi-pro-1500)。\n\n## 高端面板呢？\n\n如果预算已经到了 $1,000，[Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500)（$1,299，六种波长，FDA Class II 注册）值得一看。想看按同一标准排名的整个市场，请看 [2026 年最佳红光疗法面板](/reviews/compare/best-red-light-therapy-panels-2026)。"
     }
   }
 }

@@ -27,7 +27,7 @@ const headspaceVsWakingUpVsHealthyMinds: HeadToHead = {
     { name: 'Library scope', winner: 'b', note: 'Waking Up: meditations + neuroscience/philosophy lectures from Anil Seth, Annaka Harris and others. Headspace: focused meditation. Healthy Minds: four-pillar programme content.' },
     { name: 'Free-access policy', winner: 'c', note: 'Healthy Minds: genuinely free, no paywall. Waking Up: free access on request for anyone who cannot afford. Headspace: subscription required.' },
     { name: 'Teaching voice consistency', winner: 'b', note: 'Waking Up: largely Sam Harris with curated guests — strong unified voice. Headspace: smaller team consistent. Healthy Minds: lab-driven multi-instructor.' },
-    { name: 'Price', winner: 'c', note: 'Healthy Minds: free. Waking Up: ~$100/year (or free on request). Headspace: ~$70/year. Healthy Minds wins outright on price.' },
+    { name: 'Price', winner: 'c', note: 'Healthy Minds: free. Waking Up: $129.99/year on the web ($149.99/year or $19.99/month in-app; 7-day trial; free scholarship on request). Headspace: ~$70/year. Healthy Minds wins outright on price.' },
   ],
   faq: [
     {
@@ -69,7 +69,7 @@ If you want a science-based meditation framework from a credible research lab, a
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-01',
 }
 
 export default headspaceVsWakingUpVsHealthyMinds

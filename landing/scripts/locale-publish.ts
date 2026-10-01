@@ -71,4 +71,8 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('reviews', 'magnawave-mini', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('reviews', 'almost-heaven-salem', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('comparisons', 'best-vagus-nerve-stimulators-2026', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('reviews', 'kineon-move-plus', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'healthy-minds-program-vs-waking-up', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'hooga-hg500-vs-bon-charge-red-light-panel-vs-infraredi-pro-1500', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('comparisons', 'best-breathwork-apps-2026', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

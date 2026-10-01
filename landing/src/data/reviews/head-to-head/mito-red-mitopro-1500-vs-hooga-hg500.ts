@@ -13,27 +13,27 @@ const mitoRedVsHooga: HeadToHead = {
   verdict:
     'Depends on what matters. MitoPRO wins on spectrum, build and coverage. Hooga wins on value by a wide margin — most biohackers do not need MitoPRO’s premium for typical use.',
   bestForA:
-    'Choose Mito Red MitoPRO 1500 if broader wavelength coverage, larger panel size and premium build are worth $950 over Hooga for your use case.',
+    'Choose Mito Red MitoPRO 1500 if broader wavelength coverage, larger panel size and premium build are worth $940 over Hooga for your use case.',
   bestForB:
     'Choose Hooga HG500 if you want verified two-wavelength specs at the lowest legitimate price — most biohacker use cases are covered.',
   axes: [
     { name: 'Wavelength coverage', winner: 'a', note: 'MitoPRO 1500X: six wavelengths (590 + 630 + 660 + 810 + 830 + 850 nm). Hooga: two (660 + 850 nm). MitoPRO wins decisively on spectrum.' },
-    { name: 'Irradiance', winner: 'a', note: 'MitoPRO: ~70 mW/cm² at 6", verified. Hooga: ~45 mW/cm² at 6", also verified. MitoPRO delivers higher dose at the same distance.' },
+    { name: 'Irradiance', winner: 'tie', note: 'MitoPRO: ~70 mW/cm² at 6" (verified). Hooga now states 94 mW/cm² at 6" on its official page (checked 2026-10-01); earlier independent readings tracked Hooga’s stated figures closely. Both deliver a working dose at 6"; MitoPRO’s advantage is spectrum and panel area, not raw irradiance.' },
     { name: 'Panel size / coverage', winner: 'a', note: 'MitoPRO 1500X: large 43 × 10 in half-body panel. Hooga HG500: smaller half-body. MitoPRO is the bigger panel.' },
     { name: 'EMF / flicker', winner: 'tie', note: 'Both: EMF <0.5 mG at 6", flicker rates disclosed. Effectively tied.' },
     { name: 'Build quality', winner: 'a', note: 'MitoPRO: aluminium back with glass front. Hooga: aluminium back with plastic front trim. MitoPRO is more premium.' },
     { name: 'Brand following', winner: 'a', note: 'Mito Red has a stronger biohacker community than Hooga. Hooga is newer and value-focused.' },
-    { name: 'Price', winner: 'b', note: 'Hooga HG500: $349. Mito Red MitoPRO 1500X: $1,299 (official US store, 2026-10-01). Hooga is roughly a quarter of the price.' },
-    { name: 'Value-per-dollar', winner: 'b', note: 'Hooga delivers verified two-wavelength specs at $349. MitoPRO delivers premium at $1,299. For non-power users, Hooga wins on $/use case decisively.' },
+    { name: 'Price', winner: 'b', note: 'Hooga HG500: $359. Mito Red MitoPRO 1500X: $1,299 (official US store, 2026-10-01). Hooga is roughly a quarter of the price.' },
+    { name: 'Value-per-dollar', winner: 'b', note: 'Hooga delivers verified two-wavelength specs at $359. MitoPRO delivers premium at $1,299. For non-power users, Hooga wins on $/use case decisively.' },
   ],
   faq: [
     {
-      q: 'Is Mito Red MitoPRO 1500 worth $950 more than Hooga HG500?',
+      q: 'Is Mito Red MitoPRO 1500 worth $940 more than Hooga HG500?',
       a: 'Only if you specifically need the broader wavelength spectrum (six bands vs two), larger panel coverage and premium build. For typical biohacker use cases — daily 10–20 minute sessions on skin or muscle — Hooga delivers enough verified spec to do the job. The premium buys spectrum, size and build, not necessarily better photobiomodulation outcomes.',
     },
     {
       q: 'Which delivers more dose?',
-      a: 'MitoPRO 1500 — higher irradiance (~70 vs ~45 mW/cm² at 6") and a larger treatment area. For users who want the deepest dose-per-session, MitoPRO is the right shape. For users who run multiple shorter sessions, Hooga’s lower dose-per-session is acceptable.',
+      a: 'MitoPRO 1500 for the larger treatment area and broader spectrum. On irradiance at 6" the two are close on paper (MitoPRO ~70 mW/cm² verified; Hooga states 94 mW/cm²), so the per-area dose is comparable — MitoPRO simply covers more body per session.',
     },
     {
       q: 'Should first-time buyers start with Hooga?',
@@ -50,7 +50,7 @@ MitoPRO wins on every hardware axis — spectrum, irradiance, size, build. Hooga
 
 ## When is Mito Red MitoPRO 1500 the right pick?
 
-If broader six-wavelength coverage, larger half-body panel, higher irradiance and premium build are worth $950 over Hooga for your use case — and they are for serious daily users — MitoPRO is the right shape.
+If broader six-wavelength coverage, larger half-body panel and premium build are worth $940 over Hooga for your use case — and they are for serious daily users — MitoPRO is the right shape.
 
 ## When is Hooga HG500 the right pick?
 

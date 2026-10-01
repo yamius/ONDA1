@@ -19,7 +19,7 @@ const mitoRedMitoPro1500: ToolReview = {
     { criterionId: 'build-emf-flicker', score: 8.5, note: 'Independently-tested EMF at <0.3 mG at 6", flicker rate disclosed and clean. Build is solid aluminium back with glass front; multi-year warranty.' },
     { criterionId: 'coverage', score: 8.5, note: 'Half-body coverage in a single panel (current 1500X: 43" × 10"). Stack two for full-body.' },
     { criterionId: 'evidence', score: 7.5, note: 'The current 1500X is FDA Class II registered (per Mito Red, Oct 2026), like Joovv. References the same underlying photobiomodulation literature; marketing is reasonably restrained compared to category norms.' },
-    { criterionId: 'value', score: 7.0, note: '$1,299 (1500X, Oct 2026) — $400 cheaper than Joovv Solo 3.0 ($1,699) for comparable size and richer wavelength coverage, though $250 above PlatinumLED BIOMAX 600 ($1,049) and $300 above Infraredi Pro 1500 ($999). Solid value in the premium tier.' },
+    { criterionId: 'value', score: 7.0, note: '$1,299 (1500X, Oct 2026) — $400 cheaper than Joovv Solo 3.0 ($1,699) for comparable size and richer wavelength coverage, though $250 above PlatinumLED BIOMAX 600 ($1,049) and $280 above the Infraredi Pro Max 2.0 ($1,019 on sale; the Pro 1500 is discontinued). Solid value in the premium tier.' },
   ],
   pros: [
     'Six-wavelength coverage on the current 1500X (590–850 nm)',

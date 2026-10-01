@@ -77,7 +77,7 @@ const bestRedLightPanels2026: Comparison = {
     },
     {
       q: 'Are red light therapy panels FDA-approved?',
-      a: 'In this list, Joovv Solo 3.0, the current Mito Red MitoPRO 1500X and the Kineon Move+ are FDA-registered as Class II devices for their specific indications (registration is not the same as FDA approval). Others are sold as consumer wellness devices without clinical clearance — the underlying photobiomodulation mechanism is supported by literature, but device-specific clinical claims are restricted.',
+      a: 'In this list, Joovv Solo 3.0 and the current Mito Red MitoPRO 1500X are FDA-registered as Class II devices for their specific indications, and Bon Charge says its panel is FDA Class II registered (registration is not the same as FDA approval). The Kineon Move+ has a Class II listing only — no 510(k) clearance was found. Others are sold as consumer wellness devices without clinical clearance — the underlying photobiomodulation mechanism is supported by literature, but device-specific clinical claims are restricted.',
     },
     {
       q: 'How important is EMF and flicker in red light panels?',
@@ -85,7 +85,7 @@ const bestRedLightPanels2026: Comparison = {
     },
     {
       q: 'Which red light panel is the best value?',
-      a: 'Hooga HG500 at $349 — verified specs at the budget tier. For the mid-tier value point, BioLight Pro 900 ($899) or Infraredi Pro 1500 ($999) offer comparable hardware to the MitoPRO 1500X ($1,299) at $300–$400 less.',
+      a: 'Hooga HG500 at $359 — verified specs at the budget tier. For the mid-tier value point, BioLight Pro 900 ($899) or the Infraredi Pro Max 2.0 (successor to the discontinued Pro 1500; $1,019 on sale, $1,199 list) offer comparable hardware to the MitoPRO 1500X ($1,299) for less.',
     },
   ],
   content: `## How we ranked them
@@ -100,9 +100,9 @@ The category splits into three honest tiers and one specialist:
 
 **Premium reference ($1,000+):** Joovv Solo 3.0, Mito Red MitoPRO 1500, PlatinumLED BIOMAX 600, GembaRed Vesta, RubyLx Lyra Pro. All ship verified specs, EMF discipline and serious build. Pick on the axis you care about — overall balance and spectrum (MitoPRO 1500X), modularity (Joovv), wavelength count (PlatinumLED), EMF (GembaRed), testing transparency (RubyLx).
 
-**Mid-tier value ($800–$1,000):** BioLight Pro 900, Infraredi Pro 1500, Bon Charge Red Light Panel. Solid four-wavelength panels with most of the premium spec at meaningfully lower price. The trade is brand maturity and less independent verification.
+**Mid-tier value (~$900–$1,050):** BioLight Pro 900, Infraredi Pro Max 2.0 (the Pro 1500 is discontinued), Bon Charge Red Light Panel Max ($999). Solid four-wavelength panels with most of the premium spec at meaningfully lower price. The trade is brand maturity and less independent verification.
 
-**Budget biohacker (under $400):** Hooga HG500. Two-wavelength, honest specs, stand and door mount included. The entry that turned consumer red light into a sub-$400 category.
+**Budget biohacker (under $400):** Hooga HG500 ($359). Two-wavelength, honest specs, door mount and hanging kit included (mobile stand extra). The entry that turned consumer red light into a sub-$400 category.
 
 **Targeted-joint specialist:** Kineon Move+. Different product class — laser-plus-LED wrap for joint pain. Not a panel substitute.
 

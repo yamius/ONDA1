@@ -17,17 +17,17 @@ const hoogaVsPlatinum: HeadToHead = {
   bestForB:
     'Choose the PlatinumLED BIOMAX 600 if you want the richest wavelength spectrum, clean EMF and a near-premium build, and the higher price is worth it.',
   axes: [
-    { name: 'Price', winner: 'a', note: 'Hooga HG500: $349 (stand + door mount included). PlatinumLED BIOMAX 600: $1,049 (mount hardware extra). Hooga is roughly a third of the cost.' },
+    { name: 'Price', winner: 'a', note: 'Hooga HG500: $359 (door mount + hanging kit included; mobile stand extra). PlatinumLED BIOMAX 600: $1,049 (mount hardware extra). Hooga is roughly a third of the cost.' },
     { name: 'Wavelengths', winner: 'b', note: 'PlatinumLED offers the richest spectrum — seven wavelengths. Hooga uses the two core bands (660/850), enough for most, but narrower.' },
     { name: 'Build & EMF', winner: 'b', note: 'PlatinumLED has a near-premium build and clean, disciplined EMF. Hooga is well-made for the price but a tier below.' },
     { name: 'Output per dollar', winner: 'a', note: 'On dollars-per-mW/cm², Hooga wins — most of the usable irradiance for far less.' },
-    { name: 'Warranty & bundle', winner: 'a', note: 'Hooga includes the stand and door mount plus a 3-year warranty at the price; PlatinumLED also carries a 3-year warranty but charges extra for mounting hardware.' },
+    { name: 'Warranty & bundle', winner: 'a', note: 'Hooga includes a door mount and hanging kit plus a 3-year warranty at the price (its mobile stand is extra); PlatinumLED also carries a 3-year warranty but charges extra for mounting hardware.' },
     { name: 'Overall panel quality', winner: 'b', note: 'PlatinumLED is the higher-quality panel overall (spectrum, EMF, build); the question is whether that’s worth triple the Hooga’s price.' },
   ],
   faq: [
     {
       q: 'Hooga HG500 or PlatinumLED BIOMAX 600?',
-      a: 'The Hooga HG500 is the value pick — the two core wavelengths (660/850) and a solid panel for about a third of the price, with stand and warranty included. The PlatinumLED BIOMAX 600 adds a seven-wavelength spectrum, cleaner EMF and a better build for roughly triple the cost. Pick Hooga for the essentials cheaply, PlatinumLED for spectrum and build.',
+      a: 'The Hooga HG500 is the value pick — the two core wavelengths (660/850) and a solid panel for about a third of the price, with a door mount and 3-year warranty included. The PlatinumLED BIOMAX 600 adds a seven-wavelength spectrum, cleaner EMF and a better build for roughly triple the cost. Pick Hooga for the essentials cheaply, PlatinumLED for spectrum and build.',
     },
     {
       q: 'Do the extra wavelengths on PlatinumLED matter?',
@@ -35,7 +35,7 @@ const hoogaVsPlatinum: HeadToHead = {
     },
     {
       q: 'Which is better value?',
-      a: 'The Hooga HG500 on dollars-per-output, clearly — it delivers most of the usable irradiance for far less and includes the stand and a 3-year warranty. PlatinumLED earns its price only if you specifically want the extra wavelengths, EMF discipline and build.',
+      a: 'The Hooga HG500 on dollars-per-output, clearly — it delivers most of the usable irradiance for far less and includes a door mount and a 3-year warranty. PlatinumLED earns its price only if you specifically want the extra wavelengths, EMF discipline and build.',
     },
   ],
   content: `## The short version
@@ -44,7 +44,7 @@ The [Hooga HG500](/reviews/hooga-hg500) is the budget dual-wavelength value pick
 
 ## When is the Hooga HG500 the right pick?
 
-You want the two core wavelengths and a solid panel for the lowest price, with stand and warranty included.
+You want the two core wavelengths and a solid panel for the lowest price, with a door mount and 3-year warranty included.
 
 ## When is the PlatinumLED BIOMAX 600 the right pick?
 

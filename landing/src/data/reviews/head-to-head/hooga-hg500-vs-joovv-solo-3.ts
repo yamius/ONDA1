@@ -17,17 +17,17 @@ const hoogaVsJoovv: HeadToHead = {
   bestForB:
     'Choose the Joovv Solo 3.0 if you want the category reference — premium build, FDA registration and a modular ecosystem — and the price is acceptable.',
   axes: [
-    { name: 'Price', winner: 'a', note: 'Hooga HG500: $349 (stand and door mount included). Joovv Solo 3.0: $1,699 (official US store, 2026-10-01), more for modular stacks. Roughly a fifth of the cost.' },
+    { name: 'Price', winner: 'a', note: 'Hooga HG500: $359 (door mount and hanging kit included; mobile stand extra). Joovv Solo 3.0: $1,699 (official US store, 2026-10-01), more for modular stacks. Roughly a fifth of the cost.' },
     { name: 'Output per dollar', winner: 'a', note: 'On dollars-per-mW/cm², Hooga wins most apples-to-apples comparisons — most of the usable irradiance for far less.' },
     { name: 'Build & brand', winner: 'b', note: 'Joovv is the mature premium brand with the best build, resale value and FDA registration. Hooga is well-made for the price but not in the same tier.' },
     { name: 'Wavelengths', winner: 'b', note: 'Hooga uses dual wavelengths (660/850) — enough for the core evidence base. Joovv covers more of the spectrum and offers targeted modes.' },
     { name: 'Modularity & ecosystem', winner: 'b', note: 'Joovv panels stack into larger modular systems. The Hooga is a standalone panel.' },
-    { name: 'Warranty', winner: 'a', note: 'Hooga ships a 3-year warranty with the stand and door mount included; a strong package at the price. Joovv’s warranty is solid but the value edge is Hooga’s.' },
+    { name: 'Warranty', winner: 'a', note: 'Hooga ships a 3-year warranty with the door mount and hanging kit included (mobile stand extra); a strong package at the price. Joovv’s warranty is solid but the value edge is Hooga’s.' },
   ],
   faq: [
     {
       q: 'Hooga HG500 or Joovv Solo 3.0 — which is better?',
-      a: 'For value, the Hooga HG500 — most of the core red-light spec for roughly a fifth of the Joovv price, with a stand and 3-year warranty included. For a premium, FDA-registered, modular panel with the best build and brand, the Joovv Solo 3.0. The results are similar; you’re paying for brand, build and expandability.',
+      a: 'For value, the Hooga HG500 — most of the core red-light spec for roughly a fifth of the Joovv price, with a door mount and 3-year warranty included. For a premium, FDA-registered, modular panel with the best build and brand, the Joovv Solo 3.0. The results are similar; you’re paying for brand, build and expandability.',
     },
     {
       q: 'Is Joovv worth nearly 5x the price of Hooga?',

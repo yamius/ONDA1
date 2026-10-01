@@ -73,7 +73,7 @@ ONDA has scored the ten most credible panels of 2026 on irradiance, wavelength c
 - [Joovv Solo 3.0](/reviews/joovv-solo-3) — the FDA-registered modular reference. Premium-priced.
 - [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — biohacker favourite, six-wavelength coverage (1500X), FDA Class II registered, $400 cheaper than Joovv.
 - [PlatinumLED BIOMAX 600](/reviews/platinumled-biomax-600) — seven wavelengths and published third-party EMF testing.
-- [Hooga HG500](/reviews/hooga-hg500) — the budget entry at $349 with honest specs.
+- [Hooga HG500](/reviews/hooga-hg500) — the budget entry at $359 with honest specs.
 `,
   howToSteps: [
     {

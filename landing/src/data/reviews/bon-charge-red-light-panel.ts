@@ -14,35 +14,35 @@ const bonCharge: ToolReview = {
     'Bon Charge is the wellness-positioned red-light brand most prominent in EU and Australian markets — sold alongside the company’s blue-blocker glasses and grounding sheets. The Red Light Therapy Panel range covers half-body sizes with two-wavelength coverage (660 + 850 nm). Build quality is solid; the technical disclosure (independent EMF testing, flicker rates) is less detailed than biohacker-targeted brands like Joovv or PlatinumLED. Strong consumer brand, less technical depth.',
   overallScore: 7.4,
   scores: [
-    { criterionId: 'irradiance', score: 7.5, note: 'Manufacturer-claimed ~100 mW/cm² at 0" / ~45 mW/cm² at 6". Less independently re-verified than biohacker-targeted brands; claims are reasonable for the LED count.' },
+    { criterionId: 'irradiance', score: 7.5, note: 'For the current half-body Max panel (400 LEDs), Bon Charge states over 142 mW/cm² without giving a distance. Less independently re-verified than biohacker-targeted brands.' },
     { criterionId: 'wavelengths', score: 7.5, note: 'Two-wavelength coverage (660 + 850 nm) — standard biohacker default, no exotic additions like PlatinumLED or GembaRed.' },
-    { criterionId: 'build-emf-flicker', score: 7.5, note: 'Solid aluminium build with glass front. EMF figures less prominently published than Joovv or PlatinumLED; multi-year warranty.' },
+    { criterionId: 'build-emf-flicker', score: 7.5, note: 'Solid aluminium build with glass front. Bon Charge now publishes EMF (0.05–0.1 µT) and zero-flicker claims for the Max; warranty is 1 year.' },
     { criterionId: 'coverage', score: 8.0, note: 'Half-body coverage in the main panel; multiple sizes available. Stand and door-mount hardware included.' },
-    { criterionId: 'evidence', score: 7.0, note: 'No FDA Class II registration. Bon Charge positions the panel as wellness device; references the underlying photobiomodulation literature.' },
-    { criterionId: 'value', score: 7.0, note: '$899 for the mid-size panel. Mid-tier pricing — cheaper than Joovv, comparable to BioLight; brand premium baked in.' },
+    { criterionId: 'evidence', score: 7.0, note: 'Bon Charge lists the Max as FDA Class II registered (registration, not approval). Positioned as a wellness device; references the underlying photobiomodulation literature.' },
+    { criterionId: 'value', score: 7.0, note: '$999 for the half-body Max (the smaller Demi is $699). Mid-tier pricing — cheaper than Joovv, comparable to BioLight; brand premium baked in.' },
   ],
   pros: [
     'Strong EU/AU consumer brand presence',
     'Half-body coverage at mid-tier pricing',
     'Stand and door-mount hardware included',
-    'Multi-year warranty and consistent build quality',
+    'Consistent build quality and published low-EMF, zero-flicker figures',
   ],
   cons: [
     'Less technical disclosure than biohacker-targeted brands',
     'Two-wavelength coverage only — no exotic additions',
-    'No FDA Class II registration',
+    'Only a 1-year warranty (Hooga and Infraredi give 3)',
     'Brand-premium pricing without standout differentiator',
   ],
   bestFor: 'Best for EU/AU buyers who want a wellness-positioned panel from an established consumer brand.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Bon Charge product documentation and the underlying photobiomodulation literature. Less independent third-party testing available than biohacker-targeted brands. Not hands-on tested by ONDA.',
-  price: { usd: 899, note: 'one-time; stand/mount included', asOf: '2026-05-23' },
-  link: 'https://boncharge.com/products/red-light-therapy-device',
+  price: { usd: 999, note: 'Max (half-body, 400 LEDs) on boncharge.com; door mount included, no free-standing stand; 1-year warranty. Smaller Demi: $699', asOf: '2026-10-01' },
+  link: 'https://boncharge.com/products/max-red-light-device',
   linkType: 'official',
   content: `## Where it leads
 
-Bon Charge is the wellness-positioned red-light brand for buyers who already live in the Bon Charge ecosystem (blue-blocker glasses, grounding products) and want a panel from the same brand. Build quality is solid, the stand and door-mount hardware come included, and the EU/AU distribution is well-established.
+Bon Charge is the wellness-positioned red-light brand for buyers who already live in the Bon Charge ecosystem (blue-blocker glasses, grounding products) and want a panel from the same brand. Its current half-body panel is sold as the Max ($999; 400 LEDs at 660 + 850 nm), with a smaller Demi at $699. Build quality is solid, a door mount comes included (no free-standing stand), and the EU/AU distribution is well-established.
 
 ## What are the downsides of Bon Charge Red Light Therapy Panel?
 
@@ -68,9 +68,9 @@ The photobiomodulation mechanism behind why red light therapy works.
   ],
   relatedSlugs: ['biolight-pro-900', 'platinumled-biomax-600', 'hooga-hg500'],
   faq: [
-    { q: "Is the Bon Charge Red Light Therapy Panel worth it?", a: "It is worth it mainly for EU and Australian buyers who want an established consumer brand. The panel offers solid build, half-body coverage, included mounting hardware and a multi-year warranty. Its technical disclosure is thinner than biohacker brands, and the pricing carries a brand premium without a standout differentiator." },
-    { q: "How much does the Bon Charge Red Light Therapy Panel cost?", a: "The Bon Charge Red Light Therapy Panel costs $899 as a one-time purchase, with stand and door-mount hardware included. That covers a half-body panel with two wavelengths, 660 and 850 nm, plus a multi-year warranty." },
-    { q: "What are the downsides of the Bon Charge Red Light Therapy Panel?", a: "Bon Charge discloses fewer technical details, such as independent EMF testing and flicker rates, than biohacker-targeted brands. It offers only two wavelengths, has no FDA Class II registration, and charges brand-premium pricing without a standout differentiator." },
+    { q: "Is the Bon Charge Red Light Therapy Panel worth it?", a: "It is worth it mainly for EU and Australian buyers who want an established consumer brand. The panel offers solid build, half-body coverage, an included door mount and published low-EMF figures, but only a 1-year warranty. Its technical disclosure is thinner than biohacker brands, and the pricing carries a brand premium without a standout differentiator." },
+    { q: "How much does the Bon Charge Red Light Therapy Panel cost?", a: "The Bon Charge Red Light Therapy Panel is now sold as the Max at $999 (checked 2026-10-01), with a door mount included. That covers a half-body, 400-LED panel with two wavelengths, 660 and 850 nm, and a 1-year warranty. The smaller Demi costs $699." },
+    { q: "What are the downsides of the Bon Charge Red Light Therapy Panel?", a: "Bon Charge discloses fewer technical details, such as independent EMF testing and flicker rates, than biohacker-targeted brands. It offers only two wavelengths, a 1-year warranty, and charges brand-premium pricing without a standout differentiator." },
     { q: "Who is the Bon Charge Red Light Therapy Panel best for?", a: "The Bon Charge panel is best for EU and Australian buyers who want a wellness-positioned red light panel from an established consumer brand. It suits those who prefer consistent build quality and brand presence over detailed technical specs." },
   ],
   datePublished: '2026-05-23',
