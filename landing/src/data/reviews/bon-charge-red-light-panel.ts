@@ -46,7 +46,7 @@ Bon Charge is the wellness-positioned red-light brand for buyers who already liv
 
 ## What are the downsides of Bon Charge Red Light Therapy Panel?
 
-Technical disclosure. Bon Charge publishes less detail on independent EMF testing and flicker rates than biohacker-targeted brands. Two-wavelength coverage is conservative compared to MitoPRO’s four or PlatinumLED’s six. No standout differentiator on hardware that justifies the brand premium beyond consumer-recognition.
+Technical disclosure. Bon Charge publishes less detail on independent EMF testing and flicker rates than biohacker-targeted brands. Two-wavelength coverage is conservative compared to the MitoPRO 1500X’s six or PlatinumLED’s seven. No standout differentiator on hardware that justifies the brand premium beyond consumer-recognition.
 
 ## Who should buy Bon Charge Red Light Therapy Panel?
 
@@ -74,7 +74,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Who is the Bon Charge Red Light Therapy Panel best for?", a: "The Bon Charge panel is best for EU and Australian buyers who want a wellness-positioned red light panel from an established consumer brand. It suits those who prefer consistent build quality and brand presence over detailed technical specs." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default bonCharge

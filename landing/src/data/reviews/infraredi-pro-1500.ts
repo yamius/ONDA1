@@ -15,15 +15,15 @@ const infraredi: ToolReview = {
   overallScore: 7.7,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Manufacturer-claimed ~140 mW/cm² at 0" / ~60 mW/cm² at 6". Independent meter readings within 10% of stated 6" figures.' },
-    { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (630 + 660 + 830 + 850 nm) — same spectrum as MitoPRO 1500.' },
+    { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (630 + 660 + 830 + 850 nm) — the spectrum of the original MitoPRO 1500; the current 1500X adds 590 and 810 nm.' },
     { criterionId: 'build-emf-flicker', score: 8.0, note: 'EMF tested at <0.5 mG at 6", flicker rate disclosed. Build is competent — aluminium back, glass front; multi-year warranty.' },
     { criterionId: 'coverage', score: 8.5, note: 'Large panel — half-body coverage comparable to MitoPRO 1500. Stand and door mount included.' },
     { criterionId: 'evidence', score: 7.0, note: 'No FDA Class II registration. Marketing is reasonable; references underlying photobiomodulation literature without overreach.' },
-    { criterionId: 'value', score: 8.0, note: '$999 for a panel size comparable to MitoPRO 1500 ($1,199). Strong value in the large-panel tier.' },
+    { criterionId: 'value', score: 8.0, note: '$999 for a panel size comparable to MitoPRO 1500X ($1,299). Strong value in the large-panel tier.' },
   ],
   pros: [
     'Large-panel size at $999 — cheaper than MitoPRO 1500 for comparable coverage',
-    'Four-wavelength coverage matches the MitoPRO spectrum',
+    'Four-wavelength coverage matches the original MitoPRO 1500 spectrum',
     'Stand and door mount included rather than upsold',
     'EMF testing published',
   ],
@@ -33,7 +33,7 @@ const infraredi: ToolReview = {
     'EMF and flicker testing less independently re-verified than Joovv or PlatinumLED',
     'Smaller community / biohacker following than Mito Red',
   ],
-  bestFor: 'Best for buyers who want MitoPRO-size coverage at $200 less and accept a newer brand.',
+  bestFor: 'Best for buyers who want MitoPRO-size coverage at $300 less and accept a newer brand.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Infraredi product documentation, independent irradiance/EMF reports from biohacker review sites and the underlying photobiomodulation literature. Not hands-on tested by ONDA.',
@@ -42,7 +42,7 @@ const infraredi: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Infraredi Pro 1500 is the large-panel value pick. Comparable coverage to MitoPRO 1500, comparable four-wavelength spectrum (630 + 660 + 830 + 850 nm), comparable EMF testing — at $200 less and with stand and door mount included rather than sold separately. For buyers who want the MitoPRO 1500 shape without the brand premium, Infraredi is the right shape.
+Infraredi Pro 1500 is the large-panel value pick. Comparable coverage to MitoPRO 1500, four-wavelength spectrum (630 + 660 + 830 + 850 nm, two fewer bands than the current 1500X), comparable EMF testing — at $300 less and with stand and door mount included rather than sold separately. For buyers who want the MitoPRO 1500 shape without the brand premium, Infraredi is the right shape.
 
 ## What are the downsides of Infraredi Pro 1500?
 
@@ -50,7 +50,7 @@ Brand maturity. Infraredi is newer than Joovv or Mito Red, and the multi-year re
 
 ## Who should buy Infraredi Pro 1500?
 
-Choose Infraredi Pro 1500 if MitoPRO-class large-panel coverage at $200 less is the deciding criterion and you are comfortable with a newer brand. For the established biohacker community, Mito Red. For pure budget, Hooga.
+Choose Infraredi Pro 1500 if MitoPRO-class large-panel coverage at $300 less is the deciding criterion and you are comfortable with a newer brand. For the established biohacker community, Mito Red. For pure budget, Hooga.
 
 ---
 
@@ -68,12 +68,12 @@ The photobiomodulation mechanism behind why red light therapy works.
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'hooga-hg500', 'biolight-pro-900'],
   faq: [
-    { q: "Infraredi Pro 1500 vs MitoPRO 1500: which is better?", a: "The Infraredi Pro 1500 matches the MitoPRO 1500 on panel size and four-wavelength spectrum for about $200 less, with stand and door mount included. Mito Red has the more established brand, a larger biohacker community and a longer reliability record. Infraredi wins on price." },
+    { q: "Infraredi Pro 1500 vs MitoPRO 1500: which is better?", a: "The Infraredi Pro 1500 matches the MitoPRO 1500 on panel size for about $300 less (vs the current 1500X at $1,299), though with four wavelengths to the 1500X’s six, with stand and door mount included. Mito Red has the more established brand, FDA Class II registration on the 1500X, a larger biohacker community and a longer reliability record. Infraredi wins on price." },
     { q: "How much does the Infraredi Pro 1500 cost?", a: "The Infraredi Pro 1500 costs $999 as a one-time purchase, with the stand and door mount included rather than sold as upsells. That makes it a strong value for a large panel, although it has no FDA Class II registration." },
     { q: "What are the downsides of the Infraredi Pro 1500?", a: "Infraredi is a newer brand, so its multi-year reliability record is thinner than Joovv or Mito Red. It lacks FDA Class II registration, and its published EMF and flicker results have been less independently re-verified than those of Joovv or PlatinumLED." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default infraredi

@@ -12,26 +12,26 @@ const threePremiumSauna: HeadToHead = {
     'Sunlighten mPulse, Clearlight Sanctuary 2 and SaunaSpace Faraday are the three premium IR saunas serious buyers shortlist when IR is the chosen heat source. Three different bets within premium IR — Sunlighten on programmable full-spectrum, Clearlight on Jacuzzi-backed combined full-spectrum, SaunaSpace on near-IR incandescent with Faraday-cage shielding.',
   winnerSlug: 'sunlighten-mpulse',
   verdict:
-    'Sunlighten mPulse wins on wavelength rigour and research footprint. Clearlight on Jacuzzi-backed warranty and value. SaunaSpace on near-IR purity and EMF discipline. Three premium picks, three different philosophies.',
+    'Sunlighten mPulse wins on wavelength rigour and research footprint. Clearlight on its Jacuzzi-backed lifetime warranty. SaunaSpace on near-IR purity and EMF discipline. Three premium picks, three different philosophies.',
   bestForA:
     'Choose Sunlighten mPulse if programmable per-wavelength control (near + mid + far separately), FDA Class II registration and the deepest published-research footprint are the deciding criteria.',
   bestForB:
-    'Choose Clearlight Sanctuary 2 if you want Jacuzzi-backed lifetime heater warranty and full-spectrum IR at the lowest price in this tier.',
+    'Choose Clearlight Sanctuary 2 if you want Jacuzzi-backed lifetime heater warranty and full-spectrum IR, and the higher price ($7,299 basswood) is acceptable.',
   bestForC:
     'Choose SaunaSpace Faraday if near-IR-only incandescent delivery and full Faraday-cage EMF shielding are your bet on IR-sauna philosophy.',
   axes: [
     { name: 'Wavelength implementation', winner: 'a', note: 'Sunlighten: separate near/mid/far emitter systems with per-session programmable control. Clearlight: combined full-spectrum True Wave heaters. SaunaSpace: near-IR-only via tungsten incandescent.' },
-    { name: 'EMF discipline', winner: 'c', note: 'SaunaSpace: full Faraday-cage shielding (most rigorous). Sunlighten: <1 mG at seated position. Clearlight: low EMF documented but no Faraday cage.' },
+    { name: 'EMF discipline', winner: 'c', note: 'SaunaSpace: full Faraday-cage shielding (most rigorous). Sunlighten: <1 mG at seated position. Clearlight: marketed as low EMF/ELF without published third-party figures, no Faraday cage.' },
     { name: 'Research footprint', winner: 'a', note: 'Sunlighten: deepest published-research presence in consumer IR sauna. Clearlight and SaunaSpace: smaller research footprints.' },
     { name: 'Warranty', winner: 'b', note: 'Clearlight: lifetime heater warranty (Jacuzzi backing). Sunlighten: 7-year. SaunaSpace: 5-year. Clearlight strongest coverage.' },
     { name: 'Form factor', winner: 'a', note: 'Sunlighten and Clearlight: traditional cabin install. SaunaSpace: tent-style or smaller cabin. Sunlighten/Clearlight more familiar shape.' },
     { name: 'Brand and community', winner: 'a', note: 'Sunlighten: longest-established consumer IR brand. Clearlight: Jacuzzi parent backing. SaunaSpace: biohacker-community founder-led.' },
-    { name: 'Price', winner: 'b', note: 'Clearlight: ~$5,500. SaunaSpace tent: ~$5,000. Sunlighten: ~$6,000+. SaunaSpace and Clearlight roughly tied; Sunlighten premium.' },
+    { name: 'Price', winner: 'c', note: 'SaunaSpace tent: ~$5,000. Sunlighten: ~$6,000. Clearlight Sanctuary 2: $7,299 basswood (official store, 2026-10-01). SaunaSpace is cheapest; Clearlight is now the priciest of the three.' },
   ],
   faq: [
     {
       q: 'Which premium IR sauna is best?',
-      a: 'Sunlighten mPulse for programmable full-spectrum and deepest research footprint. Clearlight Sanctuary 2 for Jacuzzi-backed warranty and best value in the tier. SaunaSpace Faraday for near-IR-only and full Faraday-cage EMF shielding. Three philosophies, three premium picks.',
+      a: 'Sunlighten mPulse for programmable full-spectrum and deepest research footprint. Clearlight Sanctuary 2 for its Jacuzzi-backed lifetime warranty. SaunaSpace Faraday for near-IR-only and full Faraday-cage EMF shielding. Three philosophies, three premium picks.',
     },
     {
       q: 'Is full-spectrum IR better than near-IR-only?',
@@ -39,7 +39,7 @@ const threePremiumSauna: HeadToHead = {
     },
     {
       q: 'Does the EMF difference between these matter?',
-      a: 'For users specifically prioritising EMF discipline — SaunaSpace’s Faraday cage is in a class of its own. For most users — Sunlighten and Clearlight’s documented low EMF (<1 mG) is more than adequate.',
+      a: 'For users specifically prioritising EMF discipline — SaunaSpace’s Faraday cage is in a class of its own. For most users, Sunlighten’s documented low EMF (<1 mG) is more than adequate; Clearlight markets low EMF/ELF, so ask for its current test report if EMF matters to you.',
     },
     {
       q: 'Which has the deepest research backing?',
@@ -60,7 +60,7 @@ For users wanting programmable per-wavelength control (near / mid / far separate
 
 ## When is Clearlight Sanctuary 2 the right pick?
 
-For users wanting Jacuzzi-backed lifetime heater warranty and full-spectrum IR at the most accessible price in the premium tier. The hypoallergenic basswood option is unique.
+For users wanting Jacuzzi-backed lifetime heater warranty and full-spectrum IR and willing to pay the most of the three ($7,299 basswood). The basswood and mahogany options suit buyers who want to avoid cedar.
 
 ## When is SaunaSpace Faraday the right pick?
 
@@ -68,7 +68,7 @@ For users specifically wanting near-IR-only via tungsten-filament incandescent b
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-01',
 }
 
 export default threePremiumSauna

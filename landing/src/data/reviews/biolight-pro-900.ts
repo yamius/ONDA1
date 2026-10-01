@@ -15,11 +15,11 @@ const bioLightPro900: ToolReview = {
   overallScore: 7.6,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Manufacturer-claimed ~120 mW/cm² at 0"; ~50 mW/cm² at 6". Independent verification within 10–15% of stated figures.' },
-    { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (600 + 660 + 830 + 850 nm) — comparable to MitoPRO without the 630 nm. Standard photobiomodulation coverage.' },
+    { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (600 + 660 + 830 + 850 nm) — narrower than the six-wavelength MitoPRO 1500X but standard photobiomodulation coverage.' },
     { criterionId: 'build-emf-flicker', score: 8.0, note: 'Third-party EMF tested at <0.5 mG at 6". Build is competent — aluminium back, glass front, multi-year warranty.' },
     { criterionId: 'coverage', score: 7.5, note: 'Mid-size half-body panel. Stand and mount hardware included; full-body requires stacking.' },
     { criterionId: 'evidence', score: 7.0, note: 'No FDA Class II registration. Marketing is reasonable for the category; no obvious overreach.' },
-    { criterionId: 'value', score: 7.5, note: '$899 — undercuts Joovv and MitoPRO by ~$300–$400 for comparable build. Solid value in the mid-premium tier.' },
+    { criterionId: 'value', score: 7.5, note: '$899 — undercuts the MitoPRO 1500X ($1,299) by $400 and Joovv Solo 3.0 ($1,699) by $800 for comparable build. Solid value in the mid-premium tier.' },
   ],
   pros: [
     'Four-wavelength coverage at $899 — cheaper than MitoPRO with comparable build',
@@ -42,7 +42,7 @@ const bioLightPro900: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-BioLight Pro 900 is the panel that does most things right without doing any one thing exceptionally. Four-wavelength coverage matches the MitoPRO 1500 spectrum (minus the 630 nm), independent EMF testing is published in the same range as Joovv, stand and mount hardware are included rather than upsold, and the price undercuts Joovv and MitoPRO by $300–$400. Solid mid-premium execution.
+BioLight Pro 900 is the panel that does most things right without doing any one thing exceptionally. Four-wavelength coverage covers the core of the MitoPRO 1500X’s six-band spectrum, independent EMF testing is published in the same range as Joovv, stand and mount hardware are included rather than upsold, and the price undercuts MitoPRO by $400 and Joovv by $800. Solid mid-premium execution.
 
 ## What are the downsides of BioLight Pro 900?
 
@@ -74,7 +74,7 @@ The photobiomodulation mechanism behind why red light therapy works.
     { q: "Who is the BioLight Pro 900 best for?", a: "The BioLight Pro 900 is best for buyers who want a competent four-wavelength red light panel under $1,000 without paying the Joovv brand premium. It fits those who value published EMF testing and included mounting hardware over brand recognition." },
   ],
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default bioLightPro900

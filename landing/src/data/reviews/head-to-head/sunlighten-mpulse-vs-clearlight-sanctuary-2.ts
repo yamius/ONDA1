@@ -8,27 +8,27 @@ const sunlightenVsClearlight: HeadToHead = {
   description:
     'Sunlighten mPulse vs Clearlight Sanctuary 2 — side-by-side ONDA comparison of the two premium full-spectrum IR cabin saunas.',
   intro:
-    'Sunlighten mPulse and Clearlight Sanctuary 2 are the two premium full-spectrum IR cabin saunas serious buyers shortlist. Both ship credibly broad-spectrum IR delivery, premium cabin construction, third-party EMF measurement and long warranties. Sunlighten is the wavelength-control reference; Clearlight is the Jacuzzi-backed value alternative.',
+    'Sunlighten mPulse and Clearlight Sanctuary 2 are the two premium full-spectrum IR cabin saunas serious buyers shortlist. Both ship credibly broad-spectrum IR delivery, premium cabin construction, low-EMF design and long warranties. Sunlighten is the wavelength-control reference; Clearlight is the Jacuzzi-backed lifetime-warranty alternative.',
   winnerSlug: 'sunlighten-mpulse',
   verdict:
-    'Sunlighten mPulse wins on wavelength rigour and FDA Class II registration. Clearlight Sanctuary 2 wins on Jacuzzi-backed lifetime heater warranty and marginally lower price.',
+    'Sunlighten mPulse wins on wavelength rigour and FDA Class II registration. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, but now costs more (~$7,299 vs ~$6,000).',
   bestForA:
     'Choose Sunlighten mPulse if true 3-wavelength control (programmable near / mid / far separately) and FDA Class II registration are the deciding criteria.',
   bestForB:
-    'Choose Clearlight Sanctuary 2 if you want Jacuzzi-backed lifetime heater warranty and marginally lower price for comparable full-spectrum IR.',
+    'Choose Clearlight Sanctuary 2 if a Jacuzzi-backed lifetime warranty for comparable full-spectrum IR is worth the higher price.',
   axes: [
     { name: 'Wavelength implementation', winner: 'a', note: 'Sunlighten: separate near/mid/far emitter systems with per-session control. Clearlight: combined wavelengths in True Wave heaters — less granular.' },
-    { name: 'EMF discipline', winner: 'a', note: 'Sunlighten: published <1 mG at seated position. Clearlight: low EMF documented but marginally higher than Sunlighten.' },
-    { name: 'Cabin build', winner: 'tie', note: 'Both premium — Sunlighten cedar, Clearlight basswood or red cedar. Multi-decade brand pedigree on both.' },
+    { name: 'EMF discipline', winner: 'a', note: 'Sunlighten: published <1 mG at seated position. Clearlight: marketed as low EMF/ELF, but we found no published third-party figures.' },
+    { name: 'Cabin build', winner: 'tie', note: 'Both premium — Sunlighten cedar, Clearlight basswood or mahogany. Multi-decade brand pedigree on both.' },
     { name: 'Warranty', winner: 'b', note: 'Clearlight: lifetime heater warranty (Jacuzzi backing). Sunlighten: 7-year on most components. Clearlight edges on coverage period.' },
-    { name: 'FDA registration', winner: 'a', note: 'Sunlighten: FDA Class II registered. Clearlight: registered in some configurations but not all.' },
+    { name: 'FDA registration', winner: 'a', note: 'Sunlighten: FDA Class II registered. Clearlight: we found no FDA Class II registration claim for the Sanctuary 2.' },
     { name: 'Brand and research footprint', winner: 'a', note: 'Sunlighten has the deepest published-research footprint and longest brand presence in the consumer IR sauna category.' },
-    { name: 'Price', winner: 'b', note: 'Clearlight: ~$5,500. Sunlighten: ~$6,000+. Comparable; Clearlight marginally cheaper.' },
+    { name: 'Price', winner: 'a', note: 'Clearlight Sanctuary 2: $7,299 basswood / $7,699 mahogany (official store, 2026-10-01). Sunlighten mPulse: ~$6,000 (1-person from ~$5,000). Sunlighten is now cheaper at comparable size.' },
   ],
   faq: [
     {
       q: 'Sunlighten or Clearlight — which is better?',
-      a: 'Sunlighten mPulse wins on wavelength rigour (separate near/mid/far emitters) and FDA Class II. Clearlight Sanctuary 2 wins on Jacuzzi-backed lifetime heater warranty and marginally lower price. Comparable on cabin build and EMF discipline.',
+      a: 'Sunlighten mPulse wins on wavelength rigour (separate near/mid/far emitters) and FDA Class II. Clearlight Sanctuary 2 wins on its Jacuzzi-backed lifetime warranty, at a higher price. Comparable on cabin build; Sunlighten publishes more EMF data.',
     },
     {
       q: 'Does the 3-wavelength control matter?',
@@ -40,12 +40,12 @@ const sunlightenVsClearlight: HeadToHead = {
     },
     {
       q: 'Which has better cedar?',
-      a: 'Both ship premium cabin wood — Sunlighten cedar, Clearlight basswood or red cedar (your choice). Sunlighten cedar has slightly stronger aroma; Clearlight basswood is hypoallergenic.',
+      a: 'Both ship premium cabin wood — Sunlighten cedar, Clearlight basswood or mahogany (your choice). Sunlighten cedar has a stronger aroma; Clearlight basswood is low-odour and often chosen by people sensitive to cedar.',
     },
   ],
   content: `## The short version
 
-Two premium full-spectrum IR cabin saunas at comparable price points. Sunlighten wins on wavelength rigour and FDA registration; Clearlight wins on Jacuzzi-backed warranty and marginally lower price.
+Two premium full-spectrum IR cabin saunas. Sunlighten wins on wavelength rigour, FDA registration and now price; Clearlight wins on its Jacuzzi-backed lifetime warranty.
 
 ## When is Sunlighten mPulse the right pick?
 
@@ -53,11 +53,11 @@ If true 3-wavelength control (programmable near / mid / far separately) is the d
 
 ## When is Clearlight Sanctuary 2 the right pick?
 
-If you want Jacuzzi-backed lifetime heater warranty at marginally lower price for comparable full-spectrum IR — Clearlight is the right shape. The hypoallergenic basswood option is also unique.`,
+If a Jacuzzi-backed lifetime warranty for comparable full-spectrum IR is worth the higher price ($7,299 basswood) — Clearlight is the right shape. The basswood and mahogany options suit buyers who want to avoid cedar.`,
   relatedComparisonSlug: 'best-infrared-sauna-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-05-25',
+  dateModified: '2026-10-01',
 }
 
 export default sunlightenVsClearlight

@@ -77,7 +77,7 @@ const bestInfraredSauna2026: Comparison = {
     },
     {
       q: 'Should I worry about EMF in infrared saunas?',
-      a: 'EMF varies significantly between brands and configurations. Premium brands (Sunlighten, Clearlight, SaunaSpace) publish independently-measured low-EMF numbers at the seated position. Budget brands often do not — assume higher unless documented. SaunaSpace Faraday has the most rigorous EMF discipline (full Faraday cage).',
+      a: 'EMF varies significantly between brands and configurations. Premium brands such as Sunlighten and SaunaSpace publish low-EMF numbers at the seated position; Clearlight markets low EMF/ELF, so ask for its current test report. Budget brands often do not — assume higher unless documented. SaunaSpace Faraday has the most rigorous EMF discipline (full Faraday cage).',
     },
     {
       q: 'Can I install an infrared sauna indoors?',
@@ -107,7 +107,7 @@ Three buying questions resolve the category cleanly:
 The category is mature; these ten options cover the full landscape of consumer choices.`,
   publishOn: '2026-06-04',
   datePublished: '2026-05-25',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-01',
 }
 
 export default bestInfraredSauna2026

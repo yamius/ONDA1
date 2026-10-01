@@ -84,7 +84,7 @@ The primary command for building new mitochondria is the activation of the PGC-1
 Mitochondrial biogenesis is one of the most-cited photobiomodulation indications. Hardware that delivers the dose:
 
 - [Joovv Solo 3.0](/reviews/joovv-solo-3) — FDA-registered modular reference panel
-- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — four-wavelength biohacker favourite
+- [Mito Red MitoPRO 1500](/reviews/mito-red-mitopro-1500) — six-wavelength biohacker favourite (now the 1500X), FDA Class II registered
 - [Hooga HG500](/reviews/hooga-hg500) — budget entry with honest specs
 
 [Best Red Light Therapy Panels (2026) →](/reviews/red-light-therapy)

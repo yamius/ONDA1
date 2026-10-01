@@ -20,11 +20,11 @@ const gembaredVsJoovv: HeadToHead = {
     { name: 'EMF / flicker discipline', winner: 'a', note: 'GembaRed: <0.1 mG at 6" — lowest in the category. Joovv: <0.5 mG at 6", also clean. GembaRed leads on EMF discipline; Joovv is still excellent.' },
     { name: 'Wavelength coverage', winner: 'a', note: 'GembaRed: six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm). Joovv: two (660 + 850 nm). GembaRed has dramatically broader spectrum.' },
     { name: 'Irradiance', winner: 'tie', note: 'Both: independent verification within 5–10% of stated figures. Joovv has marginally higher peak; GembaRed slightly lower at the same distance.' },
-    { name: 'FDA / regulatory status', winner: 'b', note: 'Joovv: FDA Class II registered for skin indications. GembaRed: no FDA registration. Joovv wins this axis.' },
+    { name: 'FDA / regulatory status', winner: 'b', note: 'Joovv: FDA Class II registered (topical-heating indications, per Joovv). GembaRed: no FDA registration. Joovv wins this axis.' },
     { name: 'Coverage and modularity', winner: 'b', note: 'Joovv: modular Solo system stacks for full-body. GembaRed: mid-size single panel, stack two for full-body. Joovv is more flexible at scale.' },
     { name: 'Engineering transparency', winner: 'a', note: 'GembaRed founder publishes engineering rationale openly. Joovv publishes summary specs and lab reports. GembaRed wins on transparency depth.' },
     { name: 'Brand maturity', winner: 'b', note: 'Joovv is the larger established brand with deeper warranty/support footprint. GembaRed is smaller and newer.' },
-    { name: 'Price', winner: 'a', note: 'GembaRed Vesta: $1,199. Joovv Solo 3.0: $1,295. GembaRed is $96 cheaper.' },
+    { name: 'Price', winner: 'a', note: 'GembaRed Vesta: $1,199. Joovv Solo 3.0: $1,699 (official US store, 2026-10-01). GembaRed is $500 cheaper.' },
   ],
   faq: [
     {
@@ -41,12 +41,12 @@ const gembaredVsJoovv: HeadToHead = {
     },
     {
       q: 'Can GembaRed match Joovv on full-body coverage?',
-      a: 'You stack two GembaRed Vesta panels for full-body. Two Vestas: ~$2,400. Full Joovv stack: $3,000–$5,000. GembaRed is cheaper for full-body, but lacks the unified modular hardware of the Joovv stack — separate mounting required.',
+      a: 'You stack two GembaRed Vesta panels for full-body. Two Vestas: ~$2,400. Two Joovv Solo 3.0 units: ~$3,400, more for larger stacks. GembaRed is cheaper for full-body, but lacks the unified modular hardware of the Joovv stack — separate mounting required.',
     },
   ],
   content: `## The short version
 
-Two different paths to the premium tier. GembaRed Vesta buys you the cleanest possible build and broadest spectrum at $96 less. Joovv Solo 3.0 buys you FDA registration and modular scaling at $96 more. Pick on which axis matters most.
+Two different paths to the premium tier. GembaRed Vesta buys you the cleanest possible build and broadest spectrum at $500 less. Joovv Solo 3.0 buys you FDA registration and modular scaling at $500 more. Pick on which axis matters most.
 
 ## When is GembaRed Vesta the right pick?
 
@@ -57,7 +57,7 @@ If EMF discipline is a first-class criterion (you are sensitive to it or running
 If FDA Class II registration matters to you, modular full-body scaling fits your setup plan, and the larger brand’s warranty/support footprint matters, Joovv is the right shape.`,
   relatedComparisonSlug: 'best-red-light-therapy-panels-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-01',
 }
 
 export default gembaredVsJoovv
