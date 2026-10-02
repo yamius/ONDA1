@@ -1664,57 +1664,57 @@
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
-      "title": "Apple Watch Series 12 vs Whoop 5.0: vergelijking",
-      "description": "Apple Watch Series 12 vs Whoop 5.0 voor HRV en herstel: een smartwatch zonder abonnement tegenover een herstelcoach met abonnement. Waar elk wint.",
-      "intro": "Deze twee beantwoorden dezelfde vraag op twee manieren. De Series 12 van september 2026 meet HRV eindelijk vaak genoeg, en in de juiste metriek (Recovery HRV op basis van RMSSD), om een echt herstelsignaal te zijn — in een smartwatch zonder abonnement. Whoop 5.0 is een band met alleen een abonnement, van de grond af opgebouwd rond continue nachtelijke HRV en de scherpste coaching voor herstel en belasting in de categorie. De een is een horloge dat alles doet; de ander is een toegewijde coach.",
-      "verdict": "Geen algemene winnaar — kies op basis van of je coaching wilt of een apparaat dat alles doet. Whoop 5.0 wint op continue nachtelijke HRV, coaching voor herstel en belasting en een batterij die meerdere dagen meegaat; de Series 12 wint als smartwatch zonder abonnement met ECG, waarvan de HRV nu goed genoeg is om op te handelen.",
-      "bestForA": "Kies de Series 12 als je één smartwatch zonder abonnement wilt — ECG, meldingen over hoge bloeddruk, apps — met HRV die eindelijk goed genoeg is om op te handelen.",
-      "bestForB": "Kies Whoop 5.0 als coaching voor herstel en belasting bepaalt hoe je traint en je continue nachtelijke HRV wilt van een band zonder scherm — en je het doorlopende lidmaatschap accepteert.",
+      "title": "Apple Watch Series 12 vs Whoop 5.0: vergelijking (2026)",
+      "description": "Apple Watch Series 12 of Whoop 5.0 voor HRV? Whoop coacht beter (14+ dagen accu, abonnement $199–$359/jaar); de Watch kost eenmalig $399.",
+      "intro": "Deze twee beantwoorden dezelfde vraag op twee manieren. De Series 12 van september 2026 meet HRV eindelijk vaak genoeg, en in de juiste maat (RMSSD-gebaseerde Recovery HRV), om een echt herstelsignaal te zijn – in een smartwatch zonder abonnement. Whoop 5.0 is een band die alleen met abonnement werkt en vanaf de basis is gebouwd rond continue nachtelijke HRV en de scherpste herstel- en belastingscoaching in de categorie. De een is een alleskunner-horloge, de ander een gespecialiseerde coach.",
+      "verdict": "Geen algemene winnaar – kies op basis van of je coaching wilt of een apparaat dat alles doet. Whoop 5.0 wint op continue nachtelijke HRV, herstel- en belastingscoaching en een accu die dagen meegaat; de Series 12 wint als smartwatch zonder abonnement met ecg, waarvan de HRV nu goed genoeg is om op te handelen.",
+      "bestForA": "Kies de Series 12 als je één smartwatch zonder abonnement wilt – ecg, meldingen over hoge bloeddruk, apps – met HRV die eindelijk goed genoeg is om op te handelen.",
+      "bestForB": "Kies Whoop 5.0 als herstel- en belastingscoaching bepaalt hoe je traint en je continue nachtelijke HRV wilt van een band zonder scherm – en het doorlopende lidmaatschap accepteert.",
       "axes": [
         {
           "name": "Continue nachtelijke HRV",
-          "note": "Whoop meet HRV de hele nacht door en rapporteert een gemiddelde over de volledige slaap; de Series 12 meet vaak (24× vaker dan voorheen), maar is een horloge dat je misschien niet elke nacht draagt."
+          "note": "Whoop meet HRV de hele nacht door en rapporteert een gemiddelde over je volledige slaap; de Series 12 meet vaak (24× vaker dan voorheen), maar is een horloge dat je misschien niet elke nacht draagt."
         },
         {
           "name": "Herstelcoaching",
-          "note": "Het Recovery + Strain-model van Whoop is de scherpste dagelijkse coach voor paraatheid onder consumentenwearables. De Series 12 geeft je de cijfers (Recovery vs Overall HRV), maar minder begeleiding."
+          "note": "Whoops Recovery- en Strain-model is de scherpste coach voor dagelijkse paraatheid in consumentenwearables. De Series 12 geeft je de cijfers (Recovery vs Overall HRV), maar minder begeleiding."
         },
         {
-          "name": "Batterij / 's nachts dragen",
-          "note": "Whoop gaat ~14 dagen mee en laadt op aan je lichaam zonder af te doen; de batterij van ~1 dag van de Series 12 concurreert met nachtelijke metingen."
+          "name": "Accu / 's nachts dragen",
+          "note": "Whoop gaat 14+ dagen mee en laadt op aan je lichaam zonder af te doen; de accu van ~1 dag van de Series 12 concurreert met de nachtelijke meting."
         },
         {
           "name": "Abonnement / kosten",
-          "note": "De Series 12 kost eenmalig $399, zonder abonnement. Whoop werkt alleen met een abonnement van ~$239 per jaar — goedkoper in het eerste jaar, maar een blijvende kostenpost."
+          "note": "De Series 12 kost eenmalig $399, zonder abonnement. Whoop is alleen als lidmaatschap verkrijgbaar voor $199–$359 per jaar – het eerste jaar goedkoper, maar een kostenpost die altijd doorloopt."
         },
         {
           "name": "Smartwatch voor elke dag",
-          "note": "De Series 12 heeft een scherm, apps, meldingen, betalingen, ECG en meldingen over hoge bloeddruk; Whoop is een herstelband zonder scherm."
+          "note": "De Series 12 heeft een scherm, apps, meldingen, betalen, ecg en meldingen over hoge bloeddruk; Whoop is een herstelband zonder scherm."
         },
         {
-          "name": "Vergelijkbaarheid van de HRV-metriek",
-          "note": "De Recovery HRV van de Series 12 is nu gebaseerd op RMSSD, dezelfde familie die Whoop gebruikt, waardoor de twee eindelijk van hetzelfde soort zijn."
+          "name": "Vergelijkbaarheid van de HRV-maat",
+          "note": "De Recovery HRV van de Series 12 is nu RMSSD-gebaseerd, dezelfde familie die Whoop gebruikt, dus de twee zijn eindelijk van hetzelfde soort."
         },
         {
           "name": "Toegang tot data",
-          "note": "Apple HealthKit (nu met native RMSSD) is opener dan het grotendeels gesloten ecosysteem van Whoop."
+          "note": "Apples HealthKit (nu met native RMSSD) is opener dan het grotendeels gesloten ecosysteem van Whoop."
         }
       ],
       "faq": [
         {
           "q": "Is de Apple Watch Series 12 net zo goed als Whoop voor herstel?",
-          "a": "Qua cijfers komt hij veel dichter in de buurt dan voorheen — de Recovery HRV van de Series 12 op basis van RMSSD hoort bij dezelfde metriekfamilie als die van Whoop. Whoop blijft voorop met continue nachtelijke metingen, scherpere coaching voor herstel en belasting en een batterij van ~14 dagen. De Series 12 wint als smartwatch zonder abonnement met ECG."
+          "a": "Qua cijfers komt hij veel dichter in de buurt dan vroeger – de RMSSD-gebaseerde Recovery HRV van de Series 12 is dezelfde familie meetwaarden als bij Whoop. Whoop blijft voorop lopen met continue nachtelijke metingen, scherpere herstel- en belastingscoaching en een accu van 14+ dagen. De Series 12 wint als smartwatch zonder abonnement met ecg."
         },
         {
-          "q": "Heeft de Apple Watch Series 12 een abonnement nodig, zoals Whoop?",
-          "a": "Nee. De Series 12 kost eenmalig $399, zonder abonnement. Whoop werkt alleen met een abonnement van ongeveer $239 per jaar — de band is inbegrepen, maar stop je met betalen, dan werkt hij niet meer."
+          "q": "Heeft de Apple Watch Series 12 een abonnement nodig zoals Whoop?",
+          "a": "Nee. De Series 12 kost eenmalig $399, zonder abonnement. Whoop is alleen als lidmaatschap verkrijgbaar voor $199–$359 per jaar (One, Peak, Life) – de band zit erbij, maar als je stopt met betalen, werkt hij niet meer."
         },
         {
-          "q": "Whoop of Apple Watch voor HRV — welke moet ik kopen?",
-          "a": "Voor herstelcoaching waar je dagelijks op handelt en continue nachtelijke HRV: Whoop 5.0. Voor één apparaat dat ook ECG, apps en betalingen doet, zonder abonnement en met HRV die nu goed genoeg is om op te handelen: de Series 12. Een atleet die op het signaal traint, neigt naar Whoop; de meeste mensen neigen naar de Apple Watch."
+          "q": "Whoop of Apple Watch voor HRV – welke moet ik kopen?",
+          "a": "Voor herstelcoaching waar je dagelijks op handelt en continue nachtelijke HRV: Whoop 5.0. Voor één apparaat dat zonder abonnement ook ecg, apps en betalen doet en waarvan de HRV nu goed genoeg is om op te handelen: de Series 12. Een sporter die op het signaal traint, neigt naar Whoop; de meeste mensen naar de Apple Watch."
         }
       ],
-      "content": "## De korte versie\n\nKies op basis van de taak. Whoop 5.0 is de toegewijde herstelcoach — continue nachtelijke HRV, het scherpste Recovery-and-Strain-model, een band zonder scherm die ~14 dagen meegaat — achter een abonnement. De Series 12 is een smartwatch zonder abonnement waarvan de HRV, na de Health Sensing System-update van september 2026, eindelijk goed genoeg is om op te handelen, met daarbovenop ECG en meldingen over hoge bloeddruk.\n\n## Waarom de Series 12 de achterstand heeft ingehaald\n\nApple rapporteert nu Recovery HRV op basis van RMSSD, die veel vaker wordt gemeten — hetzelfde soort metriek dat het herstelmodel van Whoop gebruikt. Zie [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) en [waarom HRV op elk apparaat anders uitvalt](/articles/hrv-different-every-device).\n\n## De eerlijke kanttekening\n\nWhoop is gemaakt om 24/7 gedragen te worden en je dagelijks te coachen; de Apple Watch is een algemene smartwatch die je misschien niet elke nacht draagt, en de batterij van ~1 dag concurreert met nachtelijke metingen. Draait het vooral om continue nachtelijke HRV, bekijk dan de [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026) — een ring of band past dan mogelijk beter bij je dan een horloge."
+      "content": "## De korte versie\n\nKies op basis van de taak. Whoop 5.0 is de gespecialiseerde herstelcoach – continue nachtelijke HRV, het scherpste Recovery-en-Strain-model, een band zonder scherm met 14+ dagen accu – achter een abonnement. De Series 12 is een smartwatch zonder abonnement waarvan de HRV, na de Health Sensing System-update van september 2026, eindelijk goed genoeg is om op te handelen, met daarbovenop ecg en meldingen over hoge bloeddruk.\n\n## Waarom heeft de Series 12 de kloof gedicht?\n\nApple rapporteert nu RMSSD-gebaseerde Recovery HRV die veel vaker wordt gemeten – hetzelfde soort maat dat het herstelmodel van Whoop gebruikt. Zie [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) en [waarom HRV op elk apparaat anders uitvalt](/articles/hrv-different-every-device).\n\n## De eerlijke kanttekening\n\nWhoop is gemaakt om 24/7 gedragen te worden en je dagelijks te coachen; de Apple Watch is een algemene smartwatch die je misschien niet elke nacht draagt, en de accu van ~1 dag concurreert met de nachtelijke meting. Draait het je vooral om continue nachtelijke HRV, bekijk dan de [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026) – een ring of band kan je beter van dienst zijn dan een horloge."
     },
     "apple-watch-series-12-vs-oura-ring-4": {
       "title": "Apple Watch Series 12 vs Oura Ring 4: vergelijking (2026)",
@@ -1771,39 +1771,39 @@
     },
     "whoop-5-0-vs-garmin-venu-4": {
       "title": "Whoop 5.0 vs Garmin Venu 4: vergelijking (2026)",
-      "description": "Whoop 5.0 vs Garmin Venu 4 — ONDA-vergelijking van twee op training gerichte HRV-trackers. Coachingabonnement tegenover een smartwatch die alles doet.",
-      "intro": "Whoop 5.0 en Garmin Venu 4 zijn de twee HRV-trackers die serieuze sporters in 2026 met elkaar vergelijken. Beide geven een dagelijks herstelsignaal en een model voor trainingsbelasting; het structurele verschil zit in de verpakking. Whoop is een coachingabonnement met een band erbij; Garmin is een smartwatch met eenmalige aankoopprijs en eigen trainingsanalyses. De keuze gaat minder over HRV-nauwkeurigheid en meer over hoe je met het apparaat wilt leven.",
-      "verdict": "De Garmin Venu 4 wint voor de meeste sporters — vergelijkbare HRV- en herstelanalyses zonder abonnement, een batterij voor vijf dagen en het diepere model voor trainingsbelasting. Whoop wint specifiek voor gebruikers die de dagelijkse Recovery-score als coachingprikkel gebruiken.",
+      "description": "Whoop 5.0 of Garmin Venu 4? Voor de meesten wint Garmin: geen abonnement, tot 12 dagen accu. 3 jaar Whoop: $597–$1,077 vs Garmin ca. $499.",
+      "intro": "Whoop 5.0 en Garmin Venu 4 zijn in 2026 de twee HRV-trackers die serieuze sporters met elkaar vergelijken. Beide geven een dagelijks herstelsignaal en een trainingsbelastingsmodel; het structurele verschil zit in de verpakking. Whoop is een coachingabonnement met een band erbij; Garmin is een smartwatch die je eenmalig koopt, met eigen trainingsanalyse. De keuze gaat minder over HRV-nauwkeurigheid en meer over hoe je met het apparaat wilt leven.",
+      "verdict": "Garmin Venu 4 wint voor de meeste sporters – vergelijkbare HRV- en herstelanalyse zonder abonnement, een scherm met tot 12 dagen accu en het diepere trainingsbelastingsmodel. Whoop wint specifiek voor wie de dagelijkse Recovery-score als coachingprikkel gebruikt.",
       "bestForA": "Kies Whoop 5.0 als de dagelijkse Recovery-score een coachingprikkel is die je training echt verandert, en je de voorkeur geeft aan een band zonder scherm en een abonnement met hardware inbegrepen.",
-      "bestForB": "Kies de Garmin Venu 4 als je trainingsanalyses wilt zonder doorlopend abonnement, met een batterij voor vijf dagen en een smartwatchscherm — voor de meeste gebruikers op lange termijn voordeliger.",
+      "bestForB": "Kies Garmin Venu 4 als je trainingsanalyse wilt zonder doorlopend abonnement, tot 12 dagen accu en een smartwatchscherm – voor de meeste gebruikers op lange termijn voordeliger.",
       "axes": [
         {
           "name": "HRV-meting",
-          "note": "Beide meten HRV continu 's nachts met optische PPG; onafhankelijke vergelijkingen zien ze ongeveer gelijk. Gelijkspel op signaalniveau."
+          "note": "Beide meten HRV 's nachts continu via optische PPG; onafhankelijke vergelijkingen zien ze ongeveer gelijk. Gelijkspel op signaalniveau."
         },
         {
           "name": "Herstelcoaching",
-          "note": "De Recovery- en Strain-coach van Whoop is het scherpste model voor dagelijkse paraatheid voor consumenten. Garmins Body Battery is degelijk, maar lichter."
+          "note": "Whoops Recovery- en Strain-coach is het scherpste model voor dagelijkse paraatheid in de consumentenmarkt. Garmins Body Battery is degelijk maar lichter."
         },
         {
           "name": "Trainingsanalyse",
-          "note": "Garmin heeft het diepere model voor trainingsbelasting, VO2max, hersteltijd en gestructureerde trainingen. Whoop is coaching; Garmin is meetinstrument."
+          "note": "Garmin heeft het diepere model voor trainingsbelasting, VO2max, hersteltijd en gestructureerde workouts. Whoop is coaching; Garmin is meetinstrument."
         },
         {
           "name": "Scherm en meldingen",
-          "note": "Garmin: AMOLED-smartwatch met meldingen, muziek, apps. Whoop: band zonder scherm die met de telefoon koppelt."
+          "note": "Garmin: AMOLED-smartwatch met meldingen, muziek, apps. Whoop: band zonder scherm die aan je telefoon koppelt."
         },
         {
-          "name": "Batterijduur",
-          "note": "Garmin Venu 4: ~5 dagen in smartwatchmodus. Whoop: ~4–5 dagen, met het model van een verwisselbaar batterijpakket."
+          "name": "Accuduur",
+          "note": "Whoop 5.0: 14+ dagen per lading, met een opschuifbare accupack. Garmin Venu 4: tot 12 dagen (45 mm; 10 dagen bij 41 mm; minder met always-on-scherm). Whoop ligt nu voor (in oktober 2026 gewijzigd van Garmin), al heeft Garmin een volwaardig scherm."
         },
         {
           "name": "Vormfactor voor training",
-          "note": "De Whoop-band zit netter onder uitrusting voor contactsporten of in het zwembad, zonder scherm dat kan barsten. Het Garmin-horloge is robuust maar zichtbaar."
+          "note": "De Whoop-band zit netter onder uitrusting bij contactsporten of in het zwembad, zonder scherm dat kan breken. Het Garmin-horloge is robuust maar zichtbaar."
         },
         {
           "name": "Abonnementsmodel",
-          "note": "Whoop: alleen abonnement (~$30/maand), hardware inbegrepen. Garmin: eenmalig $449, geen abonnement. Kosten over 3 jaar: Whoop ~$1,080 vs Garmin ~$449."
+          "note": "Whoop: alleen lidmaatschap ($199, $239 of $359 per jaar), band inbegrepen. Garmin: eenmalige aankoop, adviesprijs $549.99 en vaak rond $499, geen abonnement. Kosten over 3 jaar: Whoop $597–$1,077 vs Garmin ongeveer $499."
         },
         {
           "name": "Ecosysteem en apps",
@@ -1813,22 +1813,22 @@
       "faq": [
         {
           "q": "Is Whoop 5.0 nauwkeuriger dan de Garmin Venu 4?",
-          "a": "Geen betekenisvol verschil. Beide meten HRV continu 's nachts met optische PPG, en onafhankelijke vergelijkingen zien ze ongeveer gelijk in nauwkeurigheid. De keuze hangt niet af van de sensor."
+          "a": "Geen betekenisvol verschil. Beide meten HRV 's nachts continu via optische PPG, en onafhankelijke vergelijkingen zien ze qua nauwkeurigheid ongeveer gelijk. De keuze hangt niet af van de sensor."
         },
         {
-          "q": "Heb je voor een van beide een abonnement nodig?",
-          "a": "Whoop is alleen met abonnement — ongeveer $30/maand, hardware inbegrepen. De Garmin Venu 4 is een eenmalige aankoop (~$449) zonder abonnement voor alle functies. Over drie jaar kost Garmin minder dan de helft van Whoop."
+          "q": "Heb je een abonnement nodig voor Whoop of Garmin?",
+          "a": "Whoop is alleen als lidmaatschap verkrijgbaar – $199 (One), $239 (Peak) of $359 (Life) per jaar, band inbegrepen. De Garmin Venu 4 koop je eenmalig (adviesprijs $549.99, vaak rond $499) zonder abonnement voor alle functies. Over drie jaar kost Whoop $597–$1,077 tegenover ongeveer $499 voor Garmin."
         },
         {
-          "q": "Wat is beter voor sporters — Whoop of Garmin?",
-          "a": "Dat hangt af van je trainingsstijl. Whoop past bij sporters die een dagelijkse Recovery-score gebruiken als coachingprikkel die hun training verandert. Garmin past bij sporters die hun training opbouwen rond trainingsbelasting, VO2max en trainingsplanning — en die de eigen integratie met Strava en TrainingPeaks waarderen."
+          "q": "Whoop of Garmin – wat is beter voor sporters?",
+          "a": "Dat hangt af van je trainingsstijl. Whoop past bij sporters die een dagelijkse Recovery-score gebruiken als coachingprikkel die hun training verandert. Garmin past bij sporters die hun training opbouwen rond trainingsbelasting, VO2max en workoutplanning – en die de directe koppeling met Strava en TrainingPeaks waarderen."
         },
         {
-          "q": "Kan ik een Garmin dragen tijdens het slapen?",
-          "a": "Ja — de Garmin Venu 4 volgt je slaap, inclusief herstel afgeleid van HRV. De meeste gebruikers vinden het horloge comfortabel genoeg voor 's nachts; sommigen wisselen speciaal voor de slaap naar een band zoals Whoop of een ring zoals Oura."
+          "q": "Kun je met een Garmin slapen?",
+          "a": "Ja – de Garmin Venu 4 volgt je slaap, inclusief op HRV gebaseerd herstel. De meeste gebruikers vinden het horloge comfortabel genoeg voor 's nachts; sommigen wisselen voor de slaap liever naar een band zoals Whoop of een ring zoals Oura."
         }
       ],
-      "content": "## De korte versie\n\nVoor de meeste sporters is de Garmin Venu 4 op lange termijn de betere keuze — vergelijkbare HRV, diepere trainingsanalyses, geen abonnement en een batterij voor vijf dagen met een smartwatchscherm. Whoop wint specifiek wanneer de dagelijkse Recovery-score het coachingmechanisme is dat je training van dag tot dag echt verandert.\n\n## Wanneer is Whoop de juiste keuze?\n\nAls je hard traint, dagelijkse paraatheid als coachingprikkel waardeert en de band zonder scherm beter past bij je contactsport of zwemtraining dan een horloge, dan is Whoop de juiste keuze. Het abonnement is de toegangsprijs voor het coachingmodel.\n\n## Wanneer is Garmin de juiste keuze?\n\nAls je liever één keer betaalt, een wijzerplaat om je pols wilt en Strava en TrainingPeaks direct in je trainingsopzet wilt hebben, dan is de Garmin Venu 4 de juiste keuze. Over drie jaar kost hij minder dan de helft van Whoop, zonder functioneel gat voor de meeste trainingsdoelen."
+      "content": "## De korte versie\n\nVoor de meeste sporters is de Garmin Venu 4 op lange termijn de betere keuze – vergelijkbare HRV, diepere trainingsanalyse, geen abonnement en tot 12 dagen accu met een smartwatchscherm. Whoop wint specifiek wanneer de dagelijkse Recovery-score het coachingmechanisme is dat je training van dag tot dag echt verandert.\n\n## Wanneer is Whoop de juiste keuze?\n\nAls je hard traint, dagelijkse paraatheid waardeert als coachingprikkel en de band zonder scherm beter bij je contactsport of zwemtraining past dan een horloge, dan is Whoop de juiste keuze. Het abonnement is de toegangsprijs voor het coachingmodel.\n\n## Wanneer is Garmin de juiste keuze?\n\nAls je liever één keer betaalt, een wijzerplaat om je pols wilt zien en Strava- en TrainingPeaks-integratie direct in je trainingssetup wilt, dan is de Garmin Venu 4 de juiste keuze. Over drie jaar kost hij minder dan zelfs het goedkoopste Whoop-abonnement ($597) – en ongeveer de helft van Whoop Life ($1,077) – zonder functioneel gat voor de meeste trainingsdoeleinden."
     },
     "joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600": {
       "title": "Joovv vs Mito Red vs PlatinumLED: vergelijking (2026)",

@@ -126,7 +126,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cardiac-coherence-365-method": {
     "published": "2026-09-22T18:37:38+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-02T13:06:38+02:00"
   },
   "cardiac-coherence-insomnia-sleep": {
     "published": "2026-09-24T22:03:37+02:00",
@@ -554,7 +554,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "physiological-sigh": {
     "published": "2026-09-21T17:29:12+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-02T13:06:38+02:00"
   },
   "pranayama-metabolic-syndrome": {
     "published": "2026-09-24T20:35:38+02:00",
@@ -662,7 +662,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "vipassana-meditation-attention-brain": {
     "published": "2026-09-23T17:17:09+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-02T13:06:38+02:00"
   },
   "vo2max-increase-aerobic-engine": {
     "published": "2026-06-04T00:39:42+02:00",
@@ -722,7 +722,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "__glossary": {
     "published": "2026-02-22T18:17:04+01:00",
-    "modified": "2026-09-30T16:02:08+02:00"
+    "modified": "2026-10-02T13:06:38+02:00"
   },
   "glossary:biocomputer": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1022,7 +1022,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:emotional-osmosis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-10-02T10:19:04.000Z"
+    "modified": "2026-10-02T11:06:38.000Z"
   },
   "glossary:social-sensing": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1690,7 +1690,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/compare": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-09-29T18:33:50+02:00"
+    "modified": "2026-10-02T13:06:38+02:00"
   },
   "page:/tools": {
     "published": "2026-06-03T18:28:47+02:00",
@@ -1706,11 +1706,11 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/compare/:slug": {
     "published": "2026-09-06T18:55:14+02:00",
-    "modified": "2026-09-29T18:33:50+02:00"
+    "modified": "2026-10-02T13:06:38+02:00"
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-01T22:40:56+02:00"
+    "modified": "2026-10-02T13:06:38+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

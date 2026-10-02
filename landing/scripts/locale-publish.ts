@@ -75,4 +75,6 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('h2h', 'healthy-minds-program-vs-waking-up', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'hooga-hg500-vs-bon-charge-red-light-panel-vs-infraredi-pro-1500', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('comparisons', 'best-breathwork-apps-2026', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'apple-watch-series-12-vs-whoop-5-0', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'whoop-5-0-vs-garmin-venu-4', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

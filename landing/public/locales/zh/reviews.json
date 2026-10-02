@@ -1641,57 +1641,57 @@
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
-      "title": "Apple Watch Series 12 与 Whoop 5.0 对比（2026）",
-      "description": "从 HRV 与恢复角度对比 Apple Watch Series 12 和 Whoop 5.0：一款无需订阅、搭载全新健康感知系统的智能手表，一款仅限订阅的恢复教练。看看各自的优势所在。",
-      "intro": "两者用两种方式回答同一个问题。2026 年 9 月发布的 Series 12 终于能以足够高的频率、并以正确的指标（基于 RMSSD 的 Recovery HRV）采样 HRV，使其成为真正的恢复信号——而且是在一款无需订阅的智能手表里。Whoop 5.0 是一款仅限订阅的手环，从一开始就围绕连续夜间 HRV 打造，拥有同类产品中最精准的恢复与负荷指导。一个是全能手表，另一个是专职教练。",
-      "verdict": "没有绝对的赢家——取决于你想要的是训练指导还是一台全能设备。Whoop 5.0 在连续夜间 HRV、恢复与负荷指导以及多日续航方面领先；Series 12 的优势在于它是一款无需订阅、带 ECG 的智能手表，而且其 HRV 现在已经足够可靠，可以据此行动。",
-      "bestForA": "如果你想要一款无需订阅的智能手表——ECG、高血压通知、各类应用——同时 HRV 终于足够可靠、可以据此行动，就选 Series 12。",
-      "bestForB": "如果恢复与负荷指导决定你的训练方式，并且你想从一款无屏手环获得连续夜间 HRV——同时接受持续的会员费用——就选 Whoop 5.0。",
+      "title": "Apple Watch Series 12 与 Whoop 5.0 对比评测：HRV 与恢复（2026）",
+      "description": "Apple Watch Series 12 与 Whoop 5.0 HRV 对比：没有绝对赢家。要恢复指导选 Whoop（每年 $199–$359），要免订阅的 $399 智能手表选 Series 12。",
+      "intro": "这两款产品用两种方式回答同一个问题。2026 年 9 月推出的 Series 12 终于能以足够高的频率、用正确的指标（基于 RMSSD 的 Recovery HRV）采样 HRV，让一款免订阅的智能手表拥有了真正可用的恢复信号。Whoop 5.0 则是一款仅限订阅的手环，从一开始就围绕夜间连续 HRV 和同类中最精准的恢复与负荷（Strain）指导而设计。一个是全能手表，另一个是专属教练。",
+      "verdict": "没有总冠军——取决于你想要教练指导还是全能设备。Whoop 5.0 在夜间连续 HRV、恢复与负荷指导和多日续航上领先；Series 12 的优势在于它是一款带 ECG、免订阅、且 HRV 已足以指导行动的智能手表。",
+      "bestForA": "如果你想要一块免订阅的智能手表——ECG、高血压通知、应用一应俱全——并且 HRV 终于足以指导行动，选 Series 12。",
+      "bestForB": "如果恢复与负荷指导决定你的训练方式，并且想用无屏手环获取夜间连续 HRV，同时能接受持续的会员费用，选 Whoop 5.0。",
       "axes": [
         {
-          "name": "连续夜间 HRV",
-          "note": "Whoop 整夜连续采样 HRV，并给出全程睡眠平均值；Series 12 采样频繁（比以前多 24 倍），但作为手表，你未必每晚都佩戴。"
+          "name": "夜间连续 HRV",
+          "note": "Whoop 整夜连续采样 HRV，并给出整段睡眠的平均值；Series 12 采样也很频繁（比以前多 24 倍），但它是一块你未必每晚都戴的手表。"
         },
         {
           "name": "恢复指导",
-          "note": "Whoop 的 Recovery + Strain 模型是消费级可穿戴设备中最精准的每日状态指导。Series 12 提供数据（Recovery HRV 与 Overall HRV），但指导较为简略。"
+          "note": "Whoop 的 Recovery + Strain 模型是消费级可穿戴设备中最精准的每日状态指导。Series 12 提供数据（Recovery HRV 与 Overall HRV），但指导较轻。"
         },
         {
           "name": "续航 / 夜间佩戴",
-          "note": "Whoop 续航约 14 天，无需摘下即可佩戴充电；Series 12 约 1 天的续航与夜间测量相互冲突。"
+          "note": "Whoop 续航 14 天以上，无需摘下即可佩戴充电；Series 12 约 1 天的续航会与夜间测量相冲突。"
         },
         {
-          "name": "订阅 / 成本",
-          "note": "Series 12 一次性支付 $399，无需订阅。Whoop 仅限订阅，约 $239/年——第一年更便宜，但这是一笔永久的持续开销。"
+          "name": "订阅 / 费用",
+          "note": "Series 12 一次性 $399，无需订阅。Whoop 仅限会员制，每年 $199–$359——第一年更便宜，但费用永远持续。"
         },
         {
-          "name": "日常智能手表",
+          "name": "日常智能手表功能",
           "note": "Series 12 有屏幕、应用、通知、支付、ECG 和高血压通知；Whoop 是一款无屏恢复手环。"
         },
         {
           "name": "HRV 指标可比性",
-          "note": "Series 12 的 Recovery HRV 现已基于 RMSSD，与 Whoop 使用的指标同属一类，两者终于可以在同一维度上比较。"
+          "note": "Series 12 的 Recovery HRV 现在基于 RMSSD，与 Whoop 属于同一类指标，两者终于可以在同类意义上比较。"
         },
         {
-          "name": "数据访问",
-          "note": "Apple 的 HealthKit（现已原生支持 RMSSD）比 Whoop 基本封闭的生态系统更开放。"
+          "name": "数据开放",
+          "note": "Apple 的 HealthKit（现已原生支持 RMSSD）比 Whoop 基本封闭的生态更开放。"
         }
       ],
       "faq": [
         {
-          "q": "Apple Watch Series 12 在恢复监测方面和 Whoop 一样好吗？",
-          "a": "就数据而言，差距比以前小得多——Series 12 基于 RMSSD 的 Recovery HRV 与 Whoop 属于同一类指标。Whoop 在连续夜间采样、更精准的恢复与负荷指导以及约 14 天续航方面仍然领先。Series 12 的优势在于它是一款无需订阅、带 ECG 的智能手表。"
+          "q": "Apple Watch Series 12 看恢复状态能比得上 Whoop 吗？",
+          "a": "就数据而言，比以前接近得多——Series 12 基于 RMSSD 的 Recovery HRV 与 Whoop 属于同一类指标。但 Whoop 在夜间连续采样、更精准的恢复与负荷指导以及 14 天以上续航方面仍然领先。Series 12 的优势是带 ECG、免订阅的智能手表。"
         },
         {
-          "q": "Apple Watch Series 12 像 Whoop 一样需要订阅吗？",
-          "a": "不需要。Series 12 一次性支付 $399，无需订阅。Whoop 仅限订阅，约 $239/年——手环包含在内，但一旦停止付费就无法使用。"
+          "q": "Apple Watch Series 12 像 Whoop 一样需要付费订阅吗？",
+          "a": "不需要。Series 12 一次性 $399，没有订阅。Whoop 仅限会员制，每年 $199–$359（One、Peak、Life）——手环包含在内，但停止付费就无法使用。"
         },
         {
-          "q": "测 HRV 选 Whoop 还是 Apple Watch？",
-          "a": "如果你需要每天据此行动的恢复指导和连续夜间 HRV，选 Whoop 5.0。如果你想要一台同时具备 ECG、应用和支付功能、无需订阅、HRV 也已足够可靠的设备，选 Series 12。依据这一信号训练的运动员更适合 Whoop；大多数人更适合 Apple Watch。"
+          "q": "测 HRV 买 Whoop 还是 Apple Watch？",
+          "a": "如果你需要每天据此行动的恢复指导和夜间连续 HRV，选 Whoop 5.0。如果你想要一台设备同时搞定 ECG、应用和支付、无需订阅，且 HRV 已足以指导行动，选 Series 12。依据这一信号训练的运动员更适合 Whoop；大多数人更适合 Apple Watch。"
         }
       ],
-      "content": "## 简要结论\n\n按用途来选。Whoop 5.0 是专职的恢复教练——连续夜间 HRV、最精准的 Recovery-and-Strain 模型、约 14 天续航的无屏手环——但需要订阅。Series 12 是一款无需订阅的智能手表，在 2026 年 9 月健康感知系统更新后，其 HRV 终于足够可靠、可以据此行动，另外还有 ECG 和高血压通知。\n\n## Series 12 为何缩小了差距\n\nApple 现在提供基于 RMSSD、采样频率大幅提高的 Recovery HRV——与 Whoop 恢复模型所用的指标属于同一类。参见 [Recovery HRV 与 Overall HRV 的区别](/articles/apple-watch-recovery-hrv-vs-overall-hrv) 以及 [为什么不同设备测出的 HRV 各不相同](/articles/hrv-different-every-device)。\n\n## 需要坦白的一点\n\nWhoop 专为 24/7 佩戴和每日指导而设计；Apple Watch 是一款通用智能手表，你未必每晚都戴，而且约 1 天的续航与夜间测量相互冲突。如果连续夜间 HRV 才是你的核心需求，请查看 [2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)——戒指或手环可能比手表更适合你。"
+      "content": "## 简要结论\n\n按用途来选。Whoop 5.0 是专属的恢复教练——夜间连续 HRV、最精准的 Recovery 与 Strain 模型、续航 14 天以上的无屏手环——但需要订阅。Series 12 是一款免订阅的智能手表，经过 2026 年 9 月 Health Sensing System 更新后，HRV 终于足以指导行动，另外还有 ECG 和高血压通知。\n\n## Series 12 为什么缩小了差距\n\nApple 现在以高得多的频率采样并报告基于 RMSSD 的 Recovery HRV——这与 Whoop 恢复模型所用的是同一类指标。参见 [Recovery HRV 与 Overall HRV 的区别](/articles/apple-watch-recovery-hrv-vs-overall-hrv) 和 [为什么每台设备的 HRV 读数都不一样](/articles/hrv-different-every-device)。\n\n## 坦白说的注意事项\n\nWhoop 的设计是全天候佩戴、每天给你指导；Apple Watch 是一块通用智能手表，你未必每晚都戴，而且约 1 天的续航会与夜间测量相冲突。如果夜间连续 HRV 才是你的核心需求，请看 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026)——戒指或手环可能比手表更适合你。"
     },
     "apple-watch-series-12-vs-oura-ring-4": {
       "title": "Apple Watch Series 12与Oura Ring 4对比（2026）",
@@ -1747,65 +1747,65 @@
       "content": "## 简要结论\n\n这现在是一场公平的比较，答案取决于你想要什么。就夜间数据本身而言，Oura Ring 4胜出——手指测量更精确，多日续航让整夜佩戴毫不费力。作为一台设备，Series 12胜出——ECG、高血压通知、屏幕、应用、无需订阅——而且它的HRV终于好到可以据此行动。\n\n## 为什么2026年比较发生了变化\n\n2026年9月之前，Apple Watch报告稀疏采样的SDNN，而Oura的准备度基于RMSSD——两种不同的指标，从来对不上。Series 12的恢复HRV基于RMSSD且采样频繁得多，因此它现在与Oura报告的是同一*类*数字。请参阅[恢复HRV与整体HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)以及[为什么每台设备的HRV读数都不同](/articles/hrv-different-every-device)。\n\n## 实在的搭配\n\n对很多人来说，答案是两者兼用：Oura Ring负责免操心的夜间趋势，Apple Watch负责戒指做不到的一切。如果你只想要最精确的夜间HRV，请参阅[2026年最佳HRV追踪器](/reviews/compare/best-hrv-trackers-2026)。"
     },
     "whoop-5-0-vs-garmin-venu-4": {
-      "title": "Whoop 5.0与Garmin Venu 4对比（2026）",
-      "description": "Whoop 5.0与Garmin Venu 4——ONDA并排对比两款注重训练的HRV追踪器。教练订阅还是全能手表。",
-      "intro": "Whoop 5.0和Garmin Venu 4是2026年认真训练的人会拿来相互比较的两款HRV追踪器。两者都提供每日恢复信号和训练负荷模型；结构性的区别在于“包装”。Whoop是附带手环的教练订阅；Garmin是一次性购买的智能手表，配有自家的训练分析。选择的关键与其说是HRV准确度，不如说是你想如何与这台设备相处。",
-      "verdict": "对大多数训练者来说Garmin Venu 4胜出——无需订阅即可获得相当的HRV和恢复分析、五天续航以及更深入的训练负荷模型。Whoop仅在你把每日Recovery分数当作教练提示时胜出。",
-      "bestForA": "如果每日Recovery分数是真正会改变你训练课的教练提示，并且你更喜欢无屏幕手环形态和含硬件的订阅模式，请选Whoop 5.0。",
-      "bestForB": "如果你想要无需持续订阅的训练分析、五天续航和智能手表屏幕，请选Garmin Venu 4——对大多数用户来说长期更划算。",
+      "title": "Whoop 5.0 与 Garmin Venu 4 对比评测：HRV 与训练（2026）",
+      "description": "Whoop 5.0 与 Garmin Venu 4 对比：多数人选 Garmin（免订阅、最长 12 天续航、约 $499）；重视每日恢复指导选 Whoop（每年 $199–$359）。",
+      "intro": "Whoop 5.0 和 Garmin Venu 4 是 2026 年认真训练的人最常拿来对比的两款 HRV 追踪设备。两者都提供每日恢复信号和训练负荷模型；结构上的区别在于“包装方式”。Whoop 是捆绑手环的教练订阅服务；Garmin 是一次性购买、自带训练分析的智能手表。选择的关键与其说是 HRV 准确度，不如说是你想怎样与设备相处。",
+      "verdict": "对大多数训练者来说 Garmin Venu 4 胜出——无需订阅即可获得相当的 HRV 与恢复分析，带屏幕续航最长 12 天，训练负荷模型也更深入。只有把每日 Recovery 分数当作教练提示的用户，Whoop 才更胜一筹。",
+      "bestForA": "如果每日 Recovery 分数是真正会改变你当天训练的教练提示，并且你偏好无屏手环形态和含硬件的订阅模式，选 Whoop 5.0。",
+      "bestForB": "如果你想要无需持续订阅的训练分析、最长 12 天续航和智能手表屏幕，选 Garmin Venu 4——对大多数用户来说长期更划算。",
       "axes": [
         {
-          "name": "HRV测量",
-          "note": "两者都通过光学PPG在夜间连续追踪HRV；独立比较认为两者大致相当。在信号层面打平。"
+          "name": "HRV 测量",
+          "note": "两者都通过光学 PPG 整夜连续追踪 HRV；独立比较认为两者大致相当。信号层面打平。"
         },
         {
           "name": "恢复指导",
-          "note": "Whoop的Recovery和Strain教练是消费级产品中最敏锐的每日准备度模型。Garmin的Body Battery表现合格，但更轻量。"
+          "note": "Whoop 的 Recovery 与 Strain 教练是消费级产品中最精准的每日状态模型。Garmin 的 Body Battery 够用，但指导更轻。"
         },
         {
           "name": "训练分析",
-          "note": "Garmin拥有更深入的训练负荷、VO2 max、恢复时间和结构化训练模型。Whoop是教练；Garmin是仪器。"
+          "note": "Garmin 的训练负荷、VO2 max、恢复时间和结构化训练模型更深入。Whoop 是教练，Garmin 是仪器。"
         },
         {
           "name": "屏幕与通知",
-          "note": "Garmin：带通知、音乐和应用的AMOLED智能手表。Whoop：与手机配对的无屏幕手环。"
+          "note": "Garmin：支持通知、音乐和应用的 AMOLED 智能手表。Whoop：与手机配对的无屏手环。"
         },
         {
           "name": "续航",
-          "note": "Garmin Venu 4：智能手表模式约5天。Whoop：约4–5天，采用可更换电池包设计。"
+          "note": "Whoop 5.0：单次充电 14 天以上，配滑入式电池包。Garmin Venu 4：最长 12 天（45 mm；41 mm 为 10 天；开启常亮屏更短）。目前 Whoop 领先（2026 年 10 月由 Garmin 改判），不过 Garmin 驱动的是完整屏幕。"
         },
         {
-          "name": "训练时的外形",
-          "note": "Whoop手环没有会碎的屏幕，在对抗性运动护具下或泳池中更利落。Garmin手表很坚固，但很显眼。"
+          "name": "训练时的佩戴形态",
+          "note": "Whoop 手环没有会碎的屏幕，戴在对抗性运动护具下或泳池中更利落。Garmin 手表坚固但显眼。"
         },
         {
           "name": "订阅模式",
-          "note": "Whoop：仅订阅（约$30/月），含硬件。Garmin：一次性$449，无需订阅。三年成本：Whoop约$1,080，Garmin约$449。"
+          "note": "Whoop：仅限会员制（每年 $199、$239 或 $359），含手环。Garmin：一次性购买，标价 $549.99，常见售价约 $499，无订阅。3 年费用：Whoop $597–$1,077，Garmin 约 $499。"
         },
         {
           "name": "生态与应用",
-          "note": "Garmin Connect可与Strava、TrainingPeaks、Apple Health及大量第三方服务集成。Whoop更封闭。"
+          "note": "Garmin Connect 可与 Strava、TrainingPeaks、Apple Health 及大量第三方服务集成。Whoop 更封闭。"
         }
       ],
       "faq": [
         {
-          "q": "Whoop 5.0比Garmin Venu 4更准吗？",
-          "a": "没有实质差异。两者都通过光学PPG在夜间连续追踪HRV，独立比较认为两者准确度大致相当。决定因素不在传感器。"
+          "q": "Whoop 5.0 和 Garmin Venu 4 哪个测 HRV 更准？",
+          "a": "没有实质差别。两者都通过光学 PPG 整夜连续追踪 HRV，独立比较认为两者准确度大致相当。选择不取决于传感器。"
         },
         {
-          "q": "两者都需要订阅吗？",
-          "a": "Whoop仅提供订阅——约$30/月，含硬件。Garmin Venu 4一次性购买（约$449），使用全部功能无需订阅。三年下来，Garmin的成本不到Whoop的一半。"
+          "q": "Whoop 和 Garmin 需要付费订阅吗？",
+          "a": "Whoop 仅限会员制——每年 $199（One）、$239（Peak）或 $359（Life），含手环。Garmin Venu 4 是一次性购买（标价 $549.99，常见售价约 $499），使用全部功能无需订阅。三年下来 Whoop 花费 $597–$1,077，Garmin 约 $499。"
         },
         {
-          "q": "对运动员来说Whoop和Garmin哪个更好？",
-          "a": "取决于训练风格。Whoop适合把每日Recovery分数当作会改变训练课的教练提示的运动员。Garmin适合围绕训练负荷、VO2 max和训练计划来安排训练、并看重与Strava和TrainingPeaks官方集成的运动员。"
+          "q": "运动员用 Whoop 还是 Garmin 更好？",
+          "a": "取决于训练风格。把每日 Recovery 分数当作调整当天训练的教练提示的运动员，更适合 Whoop。围绕训练负荷、VO2 max 和训练计划安排训练、并看重 Strava 与 TrainingPeaks 官方集成的运动员，更适合 Garmin。"
         },
         {
-          "q": "可以戴着Garmin睡觉吗？",
-          "a": "可以——Garmin Venu 4会追踪睡眠，包括基于HRV的恢复。大多数用户觉得这块手表戴着过夜足够舒适；也有人更喜欢专门为睡眠换成Whoop这样的手环或Oura这样的戒指。"
+          "q": "Garmin 手表可以戴着睡觉吗？",
+          "a": "可以——Garmin Venu 4 会追踪睡眠，包括基于 HRV 的恢复。大多数用户觉得整夜佩戴足够舒适；也有人专门换成 Whoop 这类手环或 Oura 这类戒指来监测睡眠。"
         }
       ],
-      "content": "## 简要结论\n\n对大多数训练者来说，Garmin Venu 4是长期更合适的选择——相当的HRV、更深入的训练分析、无需订阅，以及智能手表屏幕下的五天续航。Whoop仅在每日Recovery分数是真正逐日改变你训练的教练机制时胜出。\n\n## 什么时候Whoop是正确选择？\n\n如果你训练强度大，看重把每日准备度当作教练提示，而且无屏幕手环比手表更适合你的对抗性运动或泳池训练，那么Whoop更合适。订阅费就是使用这套教练模式的入场券。\n\n## 什么时候Garmin是正确选择？\n\n如果你更愿意一次付清，想在手腕上看到表盘，并希望在训练体系中拥有与Strava和TrainingPeaks的官方集成，那么Garmin Venu 4更合适。三年下来它的成本不到Whoop的一半，对大多数训练场景来说没有功能上的差距。"
+      "content": "## 简要结论\n\n对大多数训练者来说，Garmin Venu 4 长期更合适——HRV 相当，训练分析更深入，无需订阅，带智能手表屏幕续航最长 12 天。只有当每日 Recovery 分数是真正逐日改变你训练的教练机制时，Whoop 才更胜一筹。\n\n## 什么时候该选 Whoop？\n\n如果你训练强度大、重视把每日状态当作教练提示，而且无屏手环比手表更适合你的对抗性运动或泳池训练，Whoop 就是合适的选择。订阅费就是这种教练模式的入场券。\n\n## 什么时候该选 Garmin？\n\n如果你更愿意一次付清、想在手腕上看表盘，并希望训练体系中有 Strava 和 TrainingPeaks 的官方集成，Garmin Venu 4 就是合适的选择。三年费用甚至低于 Whoop 最便宜的档位（$597），约为 Whoop Life（$1,077）的一半——而对大多数训练场景来说功能上并无差距。"
     },
     "joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600": {
       "title": "Joovv、Mito Red、PlatinumLED对比（2026）",

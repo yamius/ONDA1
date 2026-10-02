@@ -1665,35 +1665,35 @@
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
       "title": "Apple Watch Series 12 vs Whoop 5.0: confronto (2026)",
-      "description": "Apple Watch Series 12 vs Whoop 5.0 per HRV e recupero: smartwatch senza abbonamento contro coach del recupero solo in abbonamento. Chi vince e dove.",
-      "intro": "Questi due dispositivi rispondono alla stessa domanda in due modi diversi. La Series 12 di settembre 2026 campiona finalmente l'HRV abbastanza spesso, e con la metrica giusta (la Recovery HRV basata su RMSSD), da offrire un vero segnale di recupero, dentro uno smartwatch senza abbonamento. Whoop 5.0 è una fascia disponibile solo in abbonamento, progettata da zero attorno all'HRV notturna continua e al coaching di recupero e sforzo più preciso della categoria. Uno è un orologio che fa tutto; l'altro è un coach dedicato.",
-      "verdict": "Nessun vincitore assoluto: scegli in base a se vuoi un coaching o un dispositivo che fa tutto. Whoop 5.0 è in testa per HRV notturna continua, coaching di recupero e sforzo e autonomia di più giorni; la Series 12 vince come smartwatch senza abbonamento con ECG e un'HRV ormai abbastanza affidabile da poterci basare le proprie scelte.",
-      "bestForA": "Scegli la Series 12 se vuoi un unico smartwatch senza abbonamento, con ECG, notifiche di ipertensione e app, e un'HRV finalmente abbastanza affidabile da poterci basare le tue scelte.",
-      "bestForB": "Scegli Whoop 5.0 se il coaching di recupero e sforzo guida il tuo allenamento e vuoi un'HRV notturna continua da una fascia senza schermo, accettando l'abbonamento continuativo.",
+      "description": "Apple Watch Series 12 o Whoop 5.0 per l'HRV? Whoop fa da coach migliore (batteria 14+ giorni, abbonamento $199–$359/anno); il Watch costa $399.",
+      "intro": "Questi due rispondono alla stessa domanda in due modi. La Series 12 di settembre 2026 misura finalmente l'HRV abbastanza spesso, e con la metrica giusta (Recovery HRV basata su RMSSD), da essere un vero segnale di recupero – in uno smartwatch senza abbonamento. Whoop 5.0 è una fascia solo in abbonamento, costruita da zero attorno all'HRV notturna continua e al coaching di recupero e sforzo più preciso della categoria. Uno è un orologio tuttofare; l'altro è un coach dedicato.",
+      "verdict": "Nessun vincitore assoluto – scegli in base a se vuoi un coaching o un dispositivo tuttofare. Whoop 5.0 è in vantaggio per HRV notturna continua, coaching di recupero e sforzo e batteria di più giorni; la Series 12 vince come smartwatch senza abbonamento con ECG, la cui HRV ora è abbastanza buona da poterci agire.",
+      "bestForA": "Scegli la Series 12 se vuoi un unico smartwatch senza abbonamento – ECG, notifiche di ipertensione, app – con un'HRV finalmente abbastanza buona da poterci agire.",
+      "bestForB": "Scegli Whoop 5.0 se il coaching di recupero e sforzo guida il tuo allenamento e vuoi HRV notturna continua da una fascia senza schermo – accettando l'abbonamento continuo.",
       "axes": [
         {
           "name": "HRV notturna continua",
-          "note": "Whoop campiona l'HRV in modo continuo durante la notte e riporta una media sull'intero sonno; la Series 12 campiona spesso (24 volte più di prima), ma è un orologio che potresti non indossare ogni notte."
+          "note": "Whoop misura l'HRV di continuo per tutta la notte e riporta una media sull'intero sonno; la Series 12 misura spesso (24× più di prima), ma è un orologio che potresti non indossare ogni notte."
         },
         {
           "name": "Coaching del recupero",
-          "note": "Il modello Recovery + Strain di Whoop è il coach di prontezza quotidiana più preciso tra i wearable di consumo. La Series 12 ti dà i numeri (Recovery HRV vs Overall HRV), ma indicazioni più leggere."
+          "note": "Il modello Recovery + Strain di Whoop è il coach di prontezza quotidiana più preciso tra i wearable consumer. La Series 12 ti dà i numeri (Recovery vs Overall HRV) ma una guida più leggera."
         },
         {
           "name": "Batteria / uso notturno",
-          "note": "Whoop dura circa 14 giorni e si ricarica al polso senza doverlo togliere; la batteria di circa 1 giorno della Series 12 entra in conflitto con la misurazione notturna."
+          "note": "Whoop dura 14+ giorni e si ricarica al polso senza toglierla; la batteria da ~1 giorno della Series 12 è in competizione con la misurazione notturna."
         },
         {
           "name": "Abbonamento / costo",
-          "note": "La Series 12 costa $399 una tantum, senza abbonamento. Whoop è solo in abbonamento a circa $239/anno: più economico il primo anno, ma un costo che dura per sempre."
+          "note": "La Series 12 costa $399 una tantum, senza abbonamento. Whoop è solo in abbonamento a $199–$359 l'anno – più economico il primo anno, ma un costo che continua per sempre."
         },
         {
           "name": "Smartwatch per tutti i giorni",
-          "note": "La Series 12 ha schermo, app, notifiche, pagamenti, ECG e notifiche di ipertensione; Whoop è una fascia per il recupero senza schermo."
+          "note": "La Series 12 ha schermo, app, notifiche, pagamenti, ECG e notifiche di ipertensione; Whoop è una fascia di recupero senza schermo."
         },
         {
-          "name": "Comparabilità della metrica HRV",
-          "note": "La Recovery HRV della Series 12 ora si basa su RMSSD, la stessa famiglia usata da Whoop, quindi i due valori sono finalmente comparabili per tipologia."
+          "name": "Confrontabilità della metrica HRV",
+          "note": "La Recovery HRV della Series 12 ora è basata su RMSSD, la stessa famiglia usata da Whoop, quindi i due sono finalmente confrontabili per tipo."
         },
         {
           "name": "Accesso ai dati",
@@ -1703,18 +1703,18 @@
       "faq": [
         {
           "q": "L'Apple Watch Series 12 è valido quanto Whoop per il recupero?",
-          "a": "Sui numeri è molto più vicino di prima: la Recovery HRV basata su RMSSD della Series 12 appartiene alla stessa famiglia di metriche di Whoop. Whoop resta in vantaggio per il campionamento notturno continuo, il coaching di recupero e sforzo più preciso e una batteria da circa 14 giorni. La Series 12 è in vantaggio come smartwatch senza abbonamento con ECG."
+          "a": "Sui numeri è molto più vicino di prima – la Recovery HRV basata su RMSSD della Series 12 appartiene alla stessa famiglia di metriche di Whoop. Whoop resta avanti per misurazione notturna continua, coaching di recupero e sforzo più preciso e batteria da 14+ giorni. La Series 12 vince come smartwatch senza abbonamento con ECG."
         },
         {
           "q": "L'Apple Watch Series 12 richiede un abbonamento come Whoop?",
-          "a": "No. La Series 12 costa $399 una tantum, senza abbonamento. Whoop è disponibile solo in abbonamento a circa $239 all'anno: la fascia è inclusa, ma se smetti di pagare smette di funzionare."
+          "a": "No. La Series 12 costa $399 una tantum, senza abbonamento. Whoop è solo in abbonamento a $199–$359 l'anno (One, Peak, Life) – la fascia è inclusa, ma se smetti di pagare smette di funzionare."
         },
         {
           "q": "Whoop o Apple Watch per l'HRV: quale comprare?",
-          "a": "Per un coaching del recupero da seguire ogni giorno e un'HRV notturna continua, Whoop 5.0. Per un unico dispositivo che offre anche ECG, app e pagamenti senza abbonamento, con un'HRV ormai abbastanza affidabile da poterci basare le proprie scelte, la Series 12. Un atleta che si allena seguendo questo segnale tende verso Whoop; la maggior parte delle persone verso l'Apple Watch."
+          "a": "Per un coaching di recupero su cui agire ogni giorno e HRV notturna continua, Whoop 5.0. Per un unico dispositivo che fa anche ECG, app e pagamenti senza abbonamento e con un'HRV ora abbastanza buona da poterci agire, la Series 12. Un atleta che si allena seguendo il segnale tende verso Whoop; la maggior parte delle persone verso l'Apple Watch."
         }
       ],
-      "content": "## In breve\n\nScegli in base all'uso. Whoop 5.0 è il coach dedicato al recupero: HRV notturna continua, il modello Recovery-and-Strain più preciso, una fascia senza schermo da circa 14 giorni di autonomia, il tutto dietro un abbonamento. La Series 12 è uno smartwatch senza abbonamento la cui HRV, dopo l'aggiornamento Health Sensing System di settembre 2026, è finalmente abbastanza affidabile da poterci basare le proprie scelte, con in più ECG e notifiche di ipertensione.\n\n## Perché la Series 12 ha colmato il divario\n\nApple ora riporta una Recovery HRV basata su RMSSD e campionata molto più spesso: lo stesso tipo di metrica usato dal modello di recupero di Whoop. Leggi [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) e [perché l'HRV risulta diversa su ogni dispositivo](/articles/hrv-different-every-device).\n\n## L'avvertenza onesta\n\nWhoop è pensato per essere indossato 24 ore su 24 e guidarti ogni giorno; l'Apple Watch è uno smartwatch generalista che potresti non indossare ogni notte, e la sua batteria da circa 1 giorno entra in conflitto con la misurazione notturna. Se l'HRV notturna continua è il punto centrale, consulta i [migliori tracker HRV del 2026](/reviews/compare/best-hrv-trackers-2026): un anello o una fascia potrebbero servirti meglio di un orologio."
+      "content": "## In breve\n\nScegli in base al compito. Whoop 5.0 è il coach del recupero dedicato – HRV notturna continua, il modello Recovery-e-Strain più preciso, una fascia senza schermo con batteria da 14+ giorni – dietro un abbonamento. La Series 12 è uno smartwatch senza abbonamento la cui HRV, dopo l'aggiornamento Health Sensing System di settembre 2026, è finalmente abbastanza buona da poterci agire, con in più ECG e notifiche di ipertensione.\n\n## Perché la Series 12 ha colmato il divario?\n\nApple ora riporta una Recovery HRV basata su RMSSD misurata molto più spesso – lo stesso tipo di metrica usata dal modello di recupero di Whoop. Vedi [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) e [perché l'HRV risulta diversa su ogni dispositivo](/articles/hrv-different-every-device).\n\n## L'avvertenza onesta\n\nWhoop è fatto per essere indossato 24/7 e farti da coach ogni giorno; l'Apple Watch è uno smartwatch generico che potresti non indossare ogni notte, e la sua batteria da ~1 giorno è in competizione con la misurazione notturna. Se l'HRV notturna continua è tutto ciò che ti interessa, guarda i [migliori tracker HRV del 2026](/reviews/compare/best-hrv-trackers-2026) – un anello o una fascia potrebbero servirti meglio di un orologio."
     },
     "apple-watch-series-12-vs-oura-ring-4": {
       "title": "Apple Watch Series 12 vs Oura Ring 4: confronto (2026)",
@@ -1771,64 +1771,64 @@
     },
     "whoop-5-0-vs-garmin-venu-4": {
       "title": "Whoop 5.0 vs Garmin Venu 4: confronto (2026)",
-      "description": "Whoop 5.0 vs Garmin Venu 4 — confronto ONDA fianco a fianco tra due tracker HRV orientati all’allenamento. Abbonamento di coaching o orologio che fa tutto.",
-      "intro": "Whoop 5.0 e Garmin Venu 4 sono i due tracker HRV che gli sportivi seri mettono a confronto nel 2026. Entrambi forniscono un segnale di recupero quotidiano e un modello di carico di allenamento; la differenza strutturale è l’involucro. Whoop è un abbonamento di coaching abbinato a una fascia; Garmin è uno smartwatch acquistato una volta sola, con analisi di allenamento proprietarie. La scelta riguarda meno l’accuratezza dell’HRV e più il modo in cui volete convivere con il dispositivo.",
-      "verdict": "Garmin Venu 4 vince per la maggior parte degli sportivi — analisi HRV e di recupero comparabili senza abbonamento, batteria da cinque giorni e un modello di carico di allenamento più approfondito. Whoop vince in particolare per chi usa il punteggio Recovery quotidiano come indicazione di coaching.",
-      "bestForA": "Scegliete Whoop 5.0 se il punteggio Recovery quotidiano è un’indicazione di coaching che cambia davvero la vostra sessione, e preferite la fascia senza display e il modello in abbonamento con hardware incluso.",
-      "bestForB": "Scegliete Garmin Venu 4 se volete analisi di allenamento senza abbonamento continuativo, una batteria da cinque giorni e il display di uno smartwatch — l’economia a lungo termine migliore per la maggior parte degli utenti.",
+      "description": "Whoop 5.0 o Garmin Venu 4? Per i più vince Garmin: niente abbonamento, fino a 12 giorni di batteria. 3 anni di Whoop: $597–$1,077 vs ~$499.",
+      "intro": "Whoop 5.0 e Garmin Venu 4 sono i due tracker HRV che chi si allena seriamente mette a confronto nel 2026. Entrambi forniscono un segnale di recupero quotidiano e un modello del carico di allenamento; la differenza strutturale è il formato. Whoop è un abbonamento di coaching con fascia inclusa; Garmin è uno smartwatch ad acquisto unico con analisi dell'allenamento proprietarie. La scelta riguarda meno la precisione dell'HRV e più il modo in cui vuoi vivere con il dispositivo.",
+      "verdict": "Garmin Venu 4 vince per la maggior parte degli sportivi – analisi di HRV e recupero paragonabili senza abbonamento, uno schermo con fino a 12 giorni di batteria e il modello di carico di allenamento più approfondito. Whoop vince specificamente per chi usa il punteggio Recovery quotidiano come spunto di coaching.",
+      "bestForA": "Scegli Whoop 5.0 se il punteggio Recovery quotidiano è uno spunto di coaching che cambia davvero la tua sessione, e preferisci il formato a fascia senza schermo e l'abbonamento con hardware incluso.",
+      "bestForB": "Scegli Garmin Venu 4 se vuoi analisi dell'allenamento senza un abbonamento continuo, fino a 12 giorni di batteria e uno schermo da smartwatch – l'opzione più conveniente nel lungo periodo per la maggior parte degli utenti.",
       "axes": [
         {
-          "name": "Misurazione dell’HRV",
-          "note": "Entrambi monitorano l’HRV in continuo durante la notte tramite PPG ottica; i confronti indipendenti li collocano più o meno alla pari. Pareggio a livello di segnale."
+          "name": "Misurazione HRV",
+          "note": "Entrambi misurano l'HRV di continuo durante la notte con PPG ottico; i confronti indipendenti li collocano più o meno alla pari. Pareggio a livello di segnale."
         },
         {
           "name": "Coaching del recupero",
-          "note": "Il coach Recovery e Strain di Whoop è il modello di prontezza quotidiana più raffinato nel mercato consumer. Il Body Battery di Garmin è valido ma più leggero."
+          "note": "Il coach Recovery e Strain di Whoop è il modello di prontezza quotidiana più preciso nel mercato consumer. Body Battery di Garmin è valido ma più leggero."
         },
         {
-          "name": "Analisi dell’allenamento",
-          "note": "Garmin ha il modello più approfondito di carico di allenamento, VO2 max, ore di recupero e allenamenti strutturati. Whoop è coaching; Garmin è uno strumento."
+          "name": "Analisi dell'allenamento",
+          "note": "Garmin ha il modello più approfondito per carico di allenamento, VO2 max, ore di recupero e allenamenti strutturati. Whoop è coaching; Garmin è strumento."
         },
         {
-          "name": "Display e notifiche",
-          "note": "Garmin: smartwatch AMOLED con notifiche, musica, app. Whoop: fascia senza display che si collega al telefono."
+          "name": "Schermo e notifiche",
+          "note": "Garmin: smartwatch AMOLED con notifiche, musica, app. Whoop: fascia senza schermo che si abbina al telefono."
         },
         {
-          "name": "Autonomia",
-          "note": "Garmin Venu 4: ~5 giorni in modalità smartwatch. Whoop: ~4–5 giorni, con il modello a batteria sostituibile."
+          "name": "Durata della batteria",
+          "note": "Whoop 5.0: 14+ giorni per carica, con batteria esterna a scorrimento. Garmin Venu 4: fino a 12 giorni (45 mm; 10 giorni da 41 mm; meno con display sempre attivo). Ora è in vantaggio Whoop (prima Garmin, cambiato a ottobre 2026), anche se Garmin alimenta uno schermo completo."
         },
         {
-          "name": "Formato per l’allenamento",
-          "note": "La fascia Whoop si porta meglio sotto l’attrezzatura degli sport di contatto o in piscina, senza display da rompere. L’orologio Garmin è robusto ma visibile."
+          "name": "Formato per l'allenamento",
+          "note": "La fascia Whoop sta meglio sotto l'attrezzatura negli sport di contatto o in piscina, senza uno schermo che possa rompersi. L'orologio Garmin è robusto ma visibile."
         },
         {
           "name": "Modello di abbonamento",
-          "note": "Whoop: solo abbonamento (~30 $/mese), hardware incluso. Garmin: 449 $ una tantum, nessun abbonamento. Costo in 3 anni: Whoop ~1.080 $ contro Garmin ~449 $."
+          "note": "Whoop: solo abbonamento ($199, $239 o $359 l'anno), fascia inclusa. Garmin: acquisto unico, listino $549.99 e spesso circa $499, nessun abbonamento. Costo su 3 anni: Whoop $597–$1,077 vs Garmin circa $499."
         },
         {
           "name": "Ecosistema e app",
-          "note": "Garmin Connect si integra con Strava, TrainingPeaks, Apple Health e un ampio ecosistema di terze parti. Whoop è più chiuso."
+          "note": "Garmin Connect si integra con Strava, TrainingPeaks, Apple Health e un ampio insieme di app di terze parti. Whoop è più chiuso."
         }
       ],
       "faq": [
         {
-          "q": "Whoop 5.0 è più accurato di Garmin Venu 4?",
-          "a": "Nessuna differenza significativa. Entrambi monitorano l’HRV in continuo durante la notte tramite PPG ottica, e i confronti indipendenti li collocano più o meno alla pari in accuratezza. La scelta non dipende dal sensore."
+          "q": "Whoop 5.0 è più preciso del Garmin Venu 4?",
+          "a": "Nessuna differenza significativa. Entrambi misurano l'HRV di continuo durante la notte con PPG ottico, e i confronti indipendenti li collocano più o meno alla pari per precisione. La scelta non dipende dal sensore."
         },
         {
-          "q": "Serve un abbonamento per uno dei due?",
-          "a": "Whoop funziona solo in abbonamento — circa 30 $/mese con hardware incluso. Garmin Venu 4 si acquista una volta (~449 $) senza abbonamento per tutte le funzioni. In tre anni Garmin costa meno della metà di Whoop."
+          "q": "Serve un abbonamento per Whoop o Garmin?",
+          "a": "Whoop è solo in abbonamento – $199 (One), $239 (Peak) o $359 (Life) l'anno con fascia inclusa. Il Garmin Venu 4 è un acquisto unico (listino $549.99, spesso circa $499) senza abbonamento per tutte le funzioni. In tre anni Whoop costa $597–$1,077 contro circa $499 per Garmin."
         },
         {
-          "q": "Quale è meglio per gli atleti — Whoop o Garmin?",
-          "a": "Dipende dallo stile di allenamento. Whoop è adatto agli atleti che usano un punteggio Recovery quotidiano come indicazione di coaching che cambia la loro sessione. Garmin è adatto agli atleti che strutturano l’allenamento attorno a carico di allenamento, VO2 max e pianificazione degli allenamenti — e che apprezzano l’integrazione nativa con Strava e TrainingPeaks."
+          "q": "Whoop o Garmin: qual è meglio per gli sportivi?",
+          "a": "Dipende dallo stile di allenamento. Whoop è adatto agli atleti che usano un punteggio Recovery quotidiano come spunto di coaching che cambia la loro sessione. Garmin è adatto agli atleti che strutturano l'allenamento attorno a carico, VO2 max e pianificazione degli allenamenti – e che apprezzano l'integrazione diretta con Strava e TrainingPeaks."
         },
         {
-          "q": "Si può dormire con un Garmin?",
-          "a": "Sì — Garmin Venu 4 monitora il sonno, incluso il recupero derivato dall’HRV. La maggior parte degli utenti trova l’orologio abbastanza comodo da indossare di notte; alcuni preferiscono passare a una fascia come Whoop o a un anello come Oura apposta per il sonno."
+          "q": "Si può dormire con un Garmin al polso?",
+          "a": "Sì – il Garmin Venu 4 monitora il sonno, incluso il recupero derivato dall'HRV. La maggior parte degli utenti trova l'orologio abbastanza comodo per la notte; alcuni preferiscono passare a una fascia come Whoop o a un anello come Oura apposta per il sonno."
         }
       ],
-      "content": "## In breve\n\nPer la maggior parte degli sportivi, Garmin Venu 4 è la scelta migliore a lungo termine — HRV comparabile, analisi di allenamento più approfondite, nessun abbonamento e una batteria da cinque giorni con il display di uno smartwatch. Whoop vince in particolare quando il punteggio Recovery quotidiano è il meccanismo di coaching che cambia davvero il vostro allenamento giorno per giorno.\n\n## Quando Whoop è la scelta giusta?\n\nSe vi allenate duramente, considerate la prontezza quotidiana un’indicazione di coaching e la fascia senza display si adatta meglio di un orologio ai vostri sport di contatto o agli allenamenti in piscina, Whoop è la scelta giusta. L’abbonamento è il prezzo d’ingresso del modello di coaching.\n\n## Quando Garmin è la scelta giusta?\n\nSe preferite pagare una volta sola, guardare un quadrante al polso e avere l’integrazione nativa di Strava e TrainingPeaks nel vostro ecosistema di allenamento, Garmin Venu 4 è la scelta giusta. In tre anni costa meno della metà di Whoop, senza lacune funzionali per la maggior parte degli usi di allenamento."
+      "content": "## In breve\n\nPer la maggior parte degli sportivi, il Garmin Venu 4 è la scelta migliore nel lungo periodo – HRV paragonabile, analisi dell'allenamento più approfondite, nessun abbonamento e fino a 12 giorni di batteria con schermo da smartwatch. Whoop vince specificamente quando il punteggio Recovery quotidiano è il meccanismo di coaching che cambia davvero il tuo allenamento giorno per giorno.\n\n## Quando conviene Whoop?\n\nSe ti alleni duramente, apprezzi la prontezza quotidiana come spunto di coaching e la fascia senza schermo si adatta ai tuoi sport di contatto o agli allenamenti in piscina meglio di un orologio, Whoop è la scelta giusta. L'abbonamento è il prezzo d'ingresso per il modello di coaching.\n\n## Quando conviene Garmin?\n\nSe preferisci pagare una volta sola, guardare un quadrante al polso e avere l'integrazione diretta con Strava e TrainingPeaks nel tuo sistema di allenamento, il Garmin Venu 4 è la scelta giusta. In tre anni costa meno anche del piano Whoop più economico ($597) – e circa la metà di Whoop Life ($1,077) – senza lacune funzionali per la maggior parte degli usi di allenamento."
     },
     "joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600": {
       "title": "Joovv vs Mito Red vs PlatinumLED: confronto (2026)",
