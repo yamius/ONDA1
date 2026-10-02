@@ -19,8 +19,8 @@ const series12VsWhoop50: HeadToHead = {
   axes: [
     { name: 'Continuous overnight HRV', winner: 'b', note: 'Whoop samples HRV continuously through the night and reports a full-sleep average; the Series 12 samples often (24× more than before) but is a watch you may not wear every night.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery + Strain model is the sharpest daily-readiness coach in consumer wearables. The Series 12 gives you the numbers (Recovery vs Overall HRV) but lighter guidance.' },
-    { name: 'Battery / overnight wear', winner: 'b', note: 'Whoop lasts ~14 days and charges on-body without removal; the Series 12’s ~1-day battery competes with overnight measurement.' },
-    { name: 'Subscription / cost', winner: 'a', note: 'Series 12 is $399 one-time, no subscription. Whoop is subscription-only at ~$239/year — cheaper first year, an ongoing cost forever.' },
+    { name: 'Battery / overnight wear', winner: 'b', note: 'Whoop lasts 14+ days and charges on-body without removal; the Series 12’s ~1-day battery competes with overnight measurement.' },
+    { name: 'Subscription / cost', winner: 'a', note: 'Series 12 is $399 one-time, no subscription. Whoop is membership-only at $199–$359/year — cheaper first year, an ongoing cost forever.' },
     { name: 'Everyday smartwatch', winner: 'a', note: 'The Series 12 has a screen, apps, notifications, payments, ECG and hypertension notifications; Whoop is a screenless recovery band.' },
     { name: 'HRV metric comparability', winner: 'tie', note: 'The Series 12’s Recovery HRV is now RMSSD-based, the same family Whoop uses, so the two are finally comparable in kind.' },
     { name: 'Data access', winner: 'a', note: 'Apple’s HealthKit (now with native RMSSD) is more open than Whoop’s largely closed ecosystem.' },
@@ -28,11 +28,11 @@ const series12VsWhoop50: HeadToHead = {
   faq: [
     {
       q: 'Is the Apple Watch Series 12 as good as Whoop for recovery?',
-      a: 'For the numbers, it is much closer than before — the Series 12’s RMSSD-based Recovery HRV is the same metric family as Whoop. Whoop still leads on continuous overnight sampling, sharper recovery-and-strain coaching and a ~14-day battery. The Series 12 leads on being a no-subscription smartwatch with ECG.',
+      a: 'For the numbers, it is much closer than before — the Series 12’s RMSSD-based Recovery HRV is the same metric family as Whoop. Whoop still leads on continuous overnight sampling, sharper recovery-and-strain coaching and a 14+-day battery. The Series 12 leads on being a no-subscription smartwatch with ECG.',
     },
     {
       q: 'Does the Apple Watch Series 12 need a subscription like Whoop?',
-      a: 'No. The Series 12 is $399 one-time with no subscription. Whoop is subscription-only at about $239 per year — the band is included, but stop paying and it stops working.',
+      a: 'No. The Series 12 is $399 one-time with no subscription. Whoop is membership-only at $199–$359 a year (One, Peak, Life) — the band is included, but stop paying and it stops working.',
     },
     {
       q: 'Whoop or Apple Watch for HRV — which should I buy?',
@@ -41,7 +41,7 @@ const series12VsWhoop50: HeadToHead = {
   ],
   content: `## The short version
 
-Pick by the job. Whoop 5.0 is the dedicated recovery coach — continuous overnight HRV, the sharpest Recovery-and-Strain model, a ~14-day screenless band — behind a subscription. The Series 12 is a no-subscription smartwatch whose HRV, after the September 2026 Health Sensing System update, is finally good enough to act on, with ECG and hypertension notifications on top.
+Pick by the job. Whoop 5.0 is the dedicated recovery coach — continuous overnight HRV, the sharpest Recovery-and-Strain model, a 14+-day screenless band — behind a subscription. The Series 12 is a no-subscription smartwatch whose HRV, after the September 2026 Health Sensing System update, is finally good enough to act on, with ECG and hypertension notifications on top.
 
 ## Why the Series 12 closed the gap
 
@@ -52,7 +52,7 @@ Apple now reports RMSSD-based Recovery HRV sampled far more often — the same k
 Whoop is built to be worn 24/7 and coach you daily; the Apple Watch is a general smartwatch you may not wear every night, and its ~1-day battery competes with overnight measurement. If continuous overnight HRV is the whole point, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026) — a ring or band may serve you better than a watch.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-18',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-02',
 }
 
 export default series12VsWhoop50

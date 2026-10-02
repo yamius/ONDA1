@@ -20,7 +20,7 @@ const ouraVsAppleWatch: HeadToHead = {
     { name: 'HRV tracking', winner: 'a', note: 'Oura tracks HRV continuously overnight (the right window); Apple Watch spot-checks rather than continuously tracks. For HRV as a recovery signal Oura is the clear winner.' },
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is the consumer reference. Apple Watch sleep tracking is competent but less granular and the watch is uncomfortable to sleep in for many users.' },
     { name: 'Form factor for 24/7 wear', winner: 'a', note: 'Ring you forget you are wearing versus watch with a display that lights up overnight. Oura is the right shape for passive tracking.' },
-    { name: 'Battery life', winner: 'a', note: 'Oura: ~7 days. Apple Watch: ~18–36h depending on always-on. Charging windows that fit between sleep sessions matter for HRV continuity.' },
+    { name: 'Battery life', winner: 'a', note: 'Oura: about 4–7 days. Apple Watch: ~18–36h depending on always-on. Charging windows that fit between sleep sessions matter for HRV continuity.' },
     { name: 'General smartwatch features', winner: 'b', note: 'Apple Watch: ECG, messaging, payments, apps, fall detection, emergency SOS, third-party ecosystem. Oura: ring with no display, none of that.' },
     { name: 'iPhone ecosystem integration', winner: 'b', note: 'Apple Watch is the deepest iPhone integration possible. Oura integrates with Apple Health but is a separate device.' },
     { name: 'Subscription', winner: 'b', note: 'Oura requires $5.99/month membership for full features. Apple Watch: no subscription. Apple is the cheaper long-term ownership.' },
@@ -50,7 +50,7 @@ For HRV and sleep — the things Oura was built to do — Oura wins decisively. 
 
 ## When is Oura the right pick?
 
-If you want to track HRV and sleep as the central job and you are willing to absorb the $5.99/month membership, Oura is the right shape. The form factor, the 7-day battery, the continuous overnight signal and the sleep model all line up around the HRV use case in a way Apple Watch does not.
+If you want to track HRV and sleep as the central job and you are willing to absorb the $5.99/month membership, Oura is the right shape. The form factor, the roughly 4–7-day battery, the continuous overnight signal and the sleep model all line up around the HRV use case in a way Apple Watch does not.
 
 ## When is Apple Watch the right pick?
 
@@ -61,7 +61,7 @@ If HRV is a feature on the list but not the deciding criterion, Apple Watch is t
 Many users land here: Apple Watch by day, Oura by night. Apple comes off when you go to bed, Oura stays on. Cost is the trade.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-02',
 }
 
 export default ouraVsAppleWatch

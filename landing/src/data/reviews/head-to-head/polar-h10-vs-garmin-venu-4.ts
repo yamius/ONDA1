@@ -15,16 +15,16 @@ const polarH10VsGarmin: HeadToHead = {
   bestForA:
     'Choose Polar H10 if accuracy is the deciding criterion — a structured morning HRV protocol, validating another device, or app-agnostic measurement at the lowest price.',
   bestForB:
-    'Choose Garmin Venu 4 if you want a smartwatch with continuous HRV, training-load analytics and a five-day battery — without an ongoing subscription.',
+    'Choose Garmin Venu 4 if you want a smartwatch with continuous HRV, training-load analytics and up to 12 days of battery — without an ongoing subscription.',
   axes: [
     { name: 'HRV accuracy', winner: 'a', note: 'Polar H10: ECG, near-perfect agreement with clinical reference. Garmin: optical PPG, accurate enough for trending but lags ECG. H10 wins decisively.' },
     { name: 'Continuous overnight tracking', winner: 'b', note: 'Garmin tracks HRV continuously overnight; Polar H10 is a strap put on for a measurement or workout. Garmin wins continuous-wear.' },
     { name: 'Training analytics', winner: 'b', note: 'Garmin: training load, VO2 max, recovery hours, body battery, structured workouts. Polar H10: raw RR-intervals — you bring the analysis.' },
     { name: 'Data openness', winner: 'a', note: 'Polar H10 streams raw RR over Bluetooth and ANT+ to virtually any HRV app. Garmin Connect is more closed but integrates with Strava, TrainingPeaks, Apple Health.' },
     { name: 'Form factor', winner: 'b', note: 'Garmin watch: wear-and-forget continuous use. Polar H10: chest strap for sessions, not all-day.' },
-    { name: 'Battery life', winner: 'a', note: 'Polar H10: ~400 hours on a replaceable coin cell, multi-year. Garmin: ~5 days rechargeable. H10 is functionally maintenance-free.' },
+    { name: 'Battery life', winner: 'a', note: 'Polar H10: up to 400 hours on a replaceable CR2025 coin cell. Garmin: up to 12 days (45 mm; 10 days 41 mm) rechargeable. H10 is functionally maintenance-free.' },
     { name: 'Sleep tracking', winner: 'b', note: 'Garmin tracks sleep including HRV-derived recovery. Polar H10 does not — strap is not worn overnight.' },
-    { name: 'Price', winner: 'a', note: 'Polar H10: ~$90 one-time. Garmin Venu 4: ~$449. H10 is one-fifth of the price.' },
+    { name: 'Price', winner: 'a', note: 'Polar H10: about $105 one-time ($104.95 at Polar US). Garmin Venu 4: list $549.99, often about $499. H10 is about one-fifth of the price.' },
   ],
   faq: [
     {
@@ -50,7 +50,7 @@ Polar H10 is the accuracy reference; Garmin Venu 4 is the continuous-wear traini
 
 ## When is Polar H10 the right pick?
 
-If ground-truth HRV accuracy is what you want — for a structured morning protocol, for validating another device, or for app-agnostic measurement — Polar H10 is the right shape. At ~$90 with no subscription and a replaceable coin cell, it is the cheapest device in the HRV category and the most accurate at once.
+If ground-truth HRV accuracy is what you want — for a structured morning protocol, for validating another device, or for app-agnostic measurement — Polar H10 is the right shape. At about $105 with no subscription and a replaceable coin cell, it is the cheapest device in the HRV category and the most accurate at once.
 
 ## When is Garmin Venu 4 the right pick?
 
@@ -61,7 +61,7 @@ If you want continuous overnight HRV plus a training-analytics smartwatch — VO
 Garmin Venu 4 for the continuous signal; Polar H10 for reference measurements and chest-strap workouts. The H10 pairs directly to the Garmin watch over ANT+/Bluetooth so the configuration is clean.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-05-23',
+  dateModified: '2026-10-02',
 }
 
 export default polarH10VsGarmin

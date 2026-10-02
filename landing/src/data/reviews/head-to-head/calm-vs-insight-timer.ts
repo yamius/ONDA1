@@ -6,58 +6,89 @@ const calmVsInsightTimer: HeadToHead = {
   productBSlug: 'insight-timer',
   title: 'Calm vs Insight Timer (2026)',
   description:
-    'Calm vs Insight Timer — side-by-side ONDA comparison of two top meditation apps. Polished paid library versus the largest free meditation catalogue.',
+    'Calm vs Insight Timer (2026): $79.99/yr polished sleep app vs a free library of 300,000+ tracks. Prices, free tiers and which to choose.',
   intro:
     'Calm and Insight Timer are the two meditation apps users most often weigh against each other when free-tier depth is a deciding factor. Calm is the polished premium app with celebrity narrators and a sleep-content library; Insight Timer is the largest free meditation library on the market, with a teacher-driven model and an optional paid tier. The decision is between subscription-driven polish and free-tier breadth.',
   winnerSlug: null,
   verdict:
-    'Depends on what you want to pay for. Calm for premium polish, sleep stories and celebrity content. Insight Timer for the largest free meditation library and access to thousands of teachers.',
+    'Depends on what you want to pay for. Calm for premium polish, Sleep Stories and celebrity content. Insight Timer for the largest free meditation library and access to thousands of teachers.',
   bestForA:
-    'Choose Calm if sleep content is the main draw, you respond to celebrity narration (Matthew McConaughey, Harry Styles), and the ~$70/year subscription is acceptable for the polish.',
+    'Choose Calm if sleep content is the main draw, you respond to celebrity narration, and the $79.99/year subscription is acceptable for the polish.',
   bestForB:
-    'Choose Insight Timer if you want the largest free meditation library on the market — thousands of teachers, a real free tier, an optional paid layer for premium courses.',
+    'Choose Insight Timer if you want the largest free meditation library on the market — thousands of teachers, a real free tier, and an optional $59.99/year MemberPlus layer.',
   axes: [
-    { name: 'Free-tier depth', winner: 'b', note: 'Insight Timer: vast free library — most meditation content is genuinely free. Calm: a thin free sample that funnels toward subscription. Insight Timer wins overwhelmingly here.' },
-    { name: 'Library size', winner: 'b', note: 'Insight Timer: 100,000+ meditations across thousands of teachers. Calm: a curated library, much smaller but more uniformly polished.' },
+    { name: 'Free-tier depth', winner: 'b', note: 'Insight Timer: the full library of 300,000+ guided meditations, talks and music tracks is free. Calm: a thin free sample that funnels toward Premium. Insight Timer wins overwhelmingly here.' },
+    { name: 'Library size', winner: 'b', note: 'Insight Timer: 300,000+ tracks from thousands of teachers. Calm: a curated library, much smaller but more uniformly polished.' },
     { name: 'Teaching quality consistency', winner: 'a', note: 'Calm’s curation produces consistent quality. Insight Timer’s open-teacher model varies — the best content is excellent, but the average is below Calm’s floor.' },
-    { name: 'Sleep content', winner: 'a', note: 'Calm’s Sleep Stories are category-leading — celebrity-narrated fiction, sleep music, soundscapes. Insight Timer has sleep content but it is not the centre.' },
-    { name: 'Celebrity / star teachers', winner: 'a', note: 'Calm: Matthew McConaughey, Harry Styles, Cillian Murphy. Insight Timer: well-known teachers (Tara Brach, Jack Kornfield) but not consumer-celebrity narration.' },
-    { name: 'Community features', winner: 'b', note: 'Insight Timer has groups, courses, live events and a real community. Calm is content-only.' },
-    { name: 'Personalisation', winner: 'a', note: 'Calm: structured daily-recommendation engine and progression. Insight Timer: search-driven, less algorithmic — strong if you know what you want.' },
-    { name: 'Price', winner: 'b', note: 'Insight Timer: genuinely free, ~$60/year optional Member Plus. Calm: ~$70/year subscription required for most content. Insight Timer is cheaper at every tier.' },
+    { name: 'Sleep content', winner: 'a', note: 'Calm’s Sleep Stories are category-leading — celebrity-narrated stories, sleep music, soundscapes. Insight Timer has plenty of sleep content, but it is not the centre.' },
+    { name: 'Celebrity / star teachers', winner: 'a', note: 'Calm: celebrity narrators such as Matthew McConaughey and Harry Styles. Insight Timer: well-known teachers (Tara Brach, Jack Kornfield) but not consumer-celebrity narration.' },
+    { name: 'Community features', winner: 'b', note: 'Insight Timer has groups, live events and an active community. Calm is content-only.' },
+    { name: 'Personalisation', winner: 'a', note: 'Calm: structured daily recommendations and progression. Insight Timer: search-driven, less algorithmic — strong if you know what you want.' },
+    { name: 'Price', winner: 'b', note: 'Insight Timer: free, with optional MemberPlus at $59.99/year or $9.99/month. Calm: $79.99/year after a 7-day trial (or $499.99 lifetime) for most content. Insight Timer is cheaper at every tier.' },
   ],
   faq: [
     {
-      q: 'Should I pick Calm or Insight Timer?',
-      a: 'Insight Timer if free-tier depth or library size matters most — the largest free meditation library on the market. Calm if you want polished celebrity content, sleep stories, and consistent curation, and the ~$70/year subscription is acceptable.',
-    },
-    {
       q: 'Is Insight Timer really free?',
-      a: 'Yes — the majority of the 100,000+ meditation library is genuinely free with no time gate. Member Plus (~$60/year) unlocks premium courses and offline downloads, but the free tier is enough for most users.',
+      a: 'Yes. Insight Timer’s library of more than 300,000 guided meditations, talks and music tracks is available with a free account, with no time limit. The optional MemberPlus ($59.99 a year or $9.99 a month) adds offline downloads, premium courses and member-only content, but the free tier is enough for most people.',
     },
     {
-      q: 'Does Calm have better content than Insight Timer?',
-      a: 'On average, yes — Calm’s curation produces more consistent quality. But Insight Timer has top-tier teachers (Tara Brach, Jack Kornfield) at no cost, so the best content is at least as good. Calm’s win is the floor, not the ceiling.',
+      q: 'How much does Calm cost, and is there a free version?',
+      a: 'Calm Premium costs $79.99 a year after a 7-day free trial, or $499.99 once for lifetime access; a family plan for six people is $119.99 a year. The free version is limited — most of the library, including Sleep Stories, needs Premium.',
     },
     {
-      q: 'Which has better sleep content?',
-      a: 'Calm by a wide margin. Sleep Stories — celebrity-narrated fiction — are the format Calm popularised, and the library is much deeper than Insight Timer’s sleep section.',
+      q: 'Calm or Insight Timer — which is better for beginners?',
+      a: 'Calm, if you are willing to pay: it guides you with daily recommendations and consistent quality. Insight Timer, if you are not: the free library is huge, but you have to choose sessions yourself, and quality varies between teachers.',
+    },
+    {
+      q: 'Which is better for sleep — Calm or Insight Timer?',
+      a: 'Calm, by a wide margin. Sleep Stories — narrated bedtime stories, many by well-known voices — are the format Calm popularised, and its sleep library is deeper and more polished than Insight Timer’s free sleep content.',
+    },
+    {
+      q: 'Is Insight Timer better than Calm?',
+      a: 'For value and range, yes: Insight Timer gives far more content for free and its paid tier costs less. For polish, sleep content and a guided experience, Calm is better. The best Insight Timer teachers (Tara Brach, Jack Kornfield) are as good as anything on Calm; Calm wins on the floor, not the ceiling.',
     },
   ],
-  content: `## The short version
+  content: `## The short answer
 
-Calm is curated polish at a subscription; Insight Timer is the largest free meditation library on the market. Pick on whether you want a content-publisher experience or a content-platform experience.
+Insight Timer is the better choice if you want to meditate for free — its library of 300,000+ tracks is free, and its optional MemberPlus costs $59.99 a year. Calm is the better choice for sleep and a polished, guided experience, but most of it needs Premium at $79.99 a year. Pick Insight Timer for range and value; pick Calm for Sleep Stories and curation.
 
-## When is Calm the right pick?
+| | Calm | Insight Timer |
+|---|---|---|
+| Free tier | Limited sample | 300,000+ tracks, free |
+| Paid plan | $79.99/year; $499.99 lifetime | MemberPlus $59.99/year or $9.99/month (optional) |
+| Free trial | 7 days | Not needed — core library is free |
+| Library | Curated, consistent quality | Huge, thousands of teachers, quality varies |
+| Sleep content | Category-leading Sleep Stories | Plenty, but not the focus |
+| Guidance | Daily recommendations, structured | Search-driven |
+| Community | None | Groups, live events |
 
-If you respond well to celebrity narration, want sleep stories as the headline feature, and the polished consistent curation is the value you are paying for, Calm is the right shape. The ~$70/year is the cost of admission to the cleanest meditation-app experience in the consumer market.
+## Choose Calm if…
 
-## When is Insight Timer the right pick?
+- sleep and wind-down content are the main reason you want an app;
+- you like celebrity narration and a polished, curated experience;
+- $79.99 a year is acceptable. Full details in our [Calm review](/reviews/calm).
 
-If you want the largest free library on the market, you like exploring across thousands of teachers, and a search-driven (not algorithmically curated) experience fits how you actually meditate — Insight Timer is the right shape. The free tier is genuinely free; the optional Member Plus is cheaper than Calm.`,
+## Choose Insight Timer if…
+
+- you want to build a meditation habit without paying;
+- you enjoy exploring many teachers and traditions;
+- you like live events and community. Full details in our [Insight Timer review](/reviews/insight-timer).
+
+## Is Insight Timer really free?
+
+Yes. The full library is available with a free account; MemberPlus is an optional add-on for offline listening, premium courses and member-only content. That makes Insight Timer one of the very few top meditation apps you can use indefinitely at no cost.
+
+## Related comparisons
+
+Considering a third app? See [Headspace vs Calm vs Insight Timer](/reviews/vs/headspace-vs-calm-vs-insight-timer), [Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer), [Calm vs Waking Up](/reviews/vs/calm-vs-waking-up), or the full ranking of the [best meditation apps of 2026](/reviews/compare/best-meditation-apps-2026).
+
+## Sources
+
+- [Calm — subscription plans](https://www.calm.com/freetrial/plans), [lifetime membership](https://support.calm.com/hc/en-us/articles/30958037515419-Lifetime-Membership-FAQ) and [family plan](https://support.calm.com/hc/en-us/articles/4405882978331-Calm-Family-Plan-Price-Invites-How-to-Share-Premium)
+- [Insight Timer — how much does it cost?](https://help.insighttimer.com/support/solutions/articles/67000664579-how-much-does-insight-timer-cost-) and [what is MemberPlus?](https://help.insighttimer.com/support/solutions/articles/67000664702-what-is-memberplus-), checked 2026-10-02`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-02',
 }
 
 export default calmVsInsightTimer

@@ -21,9 +21,9 @@ const ouraRing4VsWhoop50: HeadToHead = {
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is the consumer reference; Whoop’s is competent but narrower in the metrics surfaced.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s daily Recovery score and Strain coach are sharper and more actionable for trained users than Oura’s Readiness.' },
     { name: 'Form factor and wearability', winner: 'a', note: 'A ring is more wearable around the clock than a band — sleep, work, gym, social. Whoop band shows in dress codes.' },
-    { name: 'Battery life', winner: 'a', note: 'Oura 7 days vs Whoop’s ~5; Oura also charges in a small dock rather than a removable on-band battery pack.' },
+    { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days per charge, topped up with a slide-on battery pack while you wear it. Oura Ring 4: about 4–7 days, charged on a dock. Whoop now leads (changed from Oura in October 2026).' },
     { name: 'Data access and integration', winner: 'tie', note: 'Both ship competent apps and integrate with Apple Health; neither exports raw RR-intervals without a chest strap.' },
-    { name: 'Price and subscription', winner: 'tie', note: 'Oura: ~$349 + $5.99/mo membership. Whoop: subscription-only at ~$30/mo with hardware included. Roughly comparable 3-year cost; Whoop is cheaper upfront.' },
+    { name: 'Price and subscription', winner: 'tie', note: 'Oura: from $349 + $5.99/mo or $69.99/yr membership — about $559 over three years. Whoop: membership-only at $199 (One), $239 (Peak) or $359 (Life) a year, band included — $597–$1,077 over three years. Whoop is cheaper upfront; Oura is slightly cheaper over three years than even the cheapest Whoop tier.' },
   ],
   faq: [
     {
@@ -36,7 +36,7 @@ const ouraRing4VsWhoop50: HeadToHead = {
     },
     {
       q: 'Do I need a subscription for either?',
-      a: 'Both, effectively. Oura requires the $5.99/month Oura membership for full features. Whoop is subscription-only at ~$30/month with hardware included. There is no one-time-purchase path for either device.',
+      a: 'Both, effectively. Oura requires the $5.99/month Oura membership for full features. Whoop is membership-only — $199, $239 or $359 a year (One, Peak, Life) with the band included. Neither device is fully featured without an ongoing payment.',
     },
     {
       q: 'Can I wear an Oura Ring 4 to the gym?',
@@ -56,7 +56,7 @@ The hardware story is nearly equivalent — both are well-validated optical PPG 
 If you are training hard enough that a daily readiness signal changes your session — high-volume endurance, heavy lifting blocks, competition prep — Whoop is the right shape. If you want overnight HRV and sleep data composed with the rest of your life without ceremony, Oura is the right shape. Most users land on Oura; the minority who land on Whoop are the right minority for it.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-02',
 }
 
 export default ouraRing4VsWhoop50

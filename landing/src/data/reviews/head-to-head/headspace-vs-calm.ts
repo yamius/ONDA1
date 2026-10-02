@@ -23,7 +23,7 @@ const headspaceVsCalm: HeadToHead = {
     { name: 'Structured courses', winner: 'a', note: 'Headspace’s "Basics" and themed courses are the strongest structured-learning path in the category. Calm has courses but they are not the centre of the experience.' },
     { name: 'Personalisation', winner: 'tie', note: 'Both surface daily recommendations and remember progress; neither stands out.' },
     { name: 'Free tier', winner: 'tie', note: 'Both lock most content behind subscription with a thin free tier; neither is generous.' },
-    { name: 'Price', winner: 'tie', note: 'Both: ~$70/year. Effectively identical pricing.' },
+    { name: 'Price', winner: 'tie', note: 'Headspace: ~$70/year. Calm Premium: $79.99/year after a 7-day trial, or $499.99 lifetime. Close enough to call a tie; Calm alone offers a lifetime option.' },
   ],
   faq: [
     {
@@ -36,7 +36,7 @@ const headspaceVsCalm: HeadToHead = {
     },
     {
       q: 'Are the prices the same?',
-      a: 'Yes, effectively. Both run ~$70/year on annual billing as of 2026. Frequent discount cycles bring either below $50; the pricing is functionally identical.',
+      a: 'Yes, effectively. Headspace runs about $70/year on annual billing; Calm Premium is $79.99/year after a 7-day trial (or $499.99 lifetime, $119.99/year for a family plan). Frequent discount cycles bring either lower; the pricing is functionally similar.',
     },
     {
       q: 'Can I use both?',
@@ -56,7 +56,7 @@ If you have never meditated and want to learn — the Basics course, the structu
 If sleep content matters as much as meditation, or you respond better to celebrity narration than to a single teacher voice, Calm is the right shape. The library is broader, the Sleep Stories format is category-defining, and the ambient soundscapes work as background content in a way Headspace does not.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-02',
 }
 
 export default headspaceVsCalm

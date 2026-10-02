@@ -38,7 +38,7 @@ const garminVenu4: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',
-  price: { usd: 499, note: 'one-time; no subscription', asOf: '2026-05-15' },
+  price: { usd: 499, note: 'one-time; no subscription — launched at $549.99, widely $499.99 since May 2026; up to 12 days battery (45 mm) or 10 days (41 mm) in smartwatch mode', asOf: '2026-10-02' },
   link: 'https://www.garmin.com/en-US/',
   linkType: 'official',
   content: `## Where it leads
@@ -77,7 +77,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-02',
 }
 
 export default garminVenu4

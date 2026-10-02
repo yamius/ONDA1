@@ -21,7 +21,7 @@ const ouraVsSamsungRing: HeadToHead = {
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model remains the consumer reference. Samsung’s sleep analytics are competent but a tier behind.' },
     { name: 'Cross-platform support', winner: 'a', note: 'Oura runs natively on both iPhone and Android with full feature parity. Samsung Galaxy Ring works with Android only; there is no iPhone support.' },
     { name: 'Ecosystem integration', winner: 'b', note: 'Samsung Galaxy Ring composes natively with Galaxy Watch (HRV + sleep cross-validation), Samsung Health and Samsung devices. The strongest single-brand health ecosystem.' },
-    { name: 'Battery life', winner: 'b', note: 'Samsung: ~7 days. Oura: ~7 days. Roughly equal, slight Samsung edge in larger sizes.' },
+    { name: 'Battery life', winner: 'b', note: 'Samsung: ~7 days. Oura: about 4–7 days. Close, with a Samsung edge — especially in larger sizes.' },
     { name: 'Subscription', winner: 'b', note: 'Samsung: no subscription required. Oura: $5.99/month membership for full features. Over three years Samsung saves ~$215.' },
     { name: 'App maturity', winner: 'a', note: 'Oura app: a decade of iteration. Samsung Health: broader but younger for ring-specific features.' },
     { name: 'Price (hardware)', winner: 'tie', note: 'Both: ~$349–$399. Roughly equal at retail.' },
@@ -57,7 +57,7 @@ If you are on iPhone or you have a cross-platform household where the device nee
 If you are inside the Samsung ecosystem — Galaxy phone, Galaxy Watch, Samsung Health — Samsung Galaxy Ring is the right shape. The Galaxy Watch + Galaxy Ring cross-validation is unique, the subscription-free model saves $215 over three years, and Samsung Health is a credible health-data platform. For iPhone users it is the wrong shape; for Android users outside Samsung it loses most of its integration advantage.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-02',
 }
 
 export default ouraVsSamsungRing

@@ -21,8 +21,8 @@ const ouraRing5VsWhoop: HeadToHead = {
     { name: 'Recovery & strain coaching', winner: 'b', note: 'WHOOP delivers a morning Recovery %, a daily Strain target, a behaviour journal and WHOOP Coach. Oura’s Readiness is excellent but not a closed-loop training coach.' },
     { name: 'Continuous / in-exercise HRV', winner: 'b', note: 'WHOOP samples continuously from the wrist, including during exercise. A ring reads overnight HRV cleanly but can slip and misread under hard training.' },
     { name: 'Comfort & all-day wear', winner: 'a', note: 'The Ring 5 is ~40% slimmer than the Ring 4 and disappears on the finger day and night. WHOOP’s band is comfortable but more noticeable.' },
-    { name: 'Battery', winner: 'a', note: 'Oura Ring 5: 6–9 days. WHOOP: ~4–5 days with an on-the-go battery pack. Edge Oura.' },
-    { name: 'Cost model', winner: 'a', note: 'Oura: $399 hardware you own + ~$6/month. WHOOP: $239/yr membership with no hardware you own. Over three years Oura is slightly cheaper and you keep the ring — but neither is subscription-free.' },
+    { name: 'Battery', winner: 'b', note: 'WHOOP 5.0: 14+ days, topped up on-body with a slide-on battery pack. Oura Ring 5: 6–9 days. Edge WHOOP (changed from Oura in October 2026).' },
+    { name: 'Cost model', winner: 'a', note: 'Oura: $399 hardware you own + ~$6/month. WHOOP: $199–$359/yr membership with no hardware you own. Over three years Oura (about $615) lands between WHOOP One ($597) and Peak ($717), well under Life ($1,077) — and you keep the ring — but neither is subscription-free.' },
   ],
   faq: [
     {
@@ -35,7 +35,7 @@ const ouraRing5VsWhoop: HeadToHead = {
     },
     {
       q: 'Are both subscription devices?',
-      a: 'Effectively. WHOOP is membership-only ($239/yr, no hardware to own). Oura needs the ~$6/month membership for full data on top of the $399 ring — but you own the hardware. Neither is truly subscription-free; for that, see the Ultrahuman Ring Pro or Samsung Galaxy Ring.',
+      a: 'Effectively. WHOOP is membership-only ($199–$359/yr, no hardware to own). Oura needs the ~$6/month membership for full data on top of the $399 ring — but you own the hardware. Neither is truly subscription-free; for that, see the Ultrahuman Ring Pro or Samsung Galaxy Ring.',
     },
   ],
   content: `## The short version
@@ -56,7 +56,7 @@ For subscription-free rings, see the [Ultrahuman Ring Pro](/reviews/ultrahuman-r
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-02',
 }
 
 export default ouraRing5VsWhoop

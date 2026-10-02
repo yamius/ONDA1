@@ -429,7 +429,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
       {
         q: 'Do HRV apps for Apple Watch need a subscription?',
-        a: 'Some do, some do not. ONDA is free to start with no wearable required. WHOOP is subscription-only (~$239/year) and Oura needs a ~$6/month membership for full data; Apple Watch’s native HRV is free with the watch.',
+        a: 'Some do, some do not. ONDA is free to start with no wearable required. WHOOP is membership-only ($199–$359/year) and Oura needs a ~$6/month membership for full data; Apple Watch’s native HRV is free with the watch.',
       },
       {
         q: 'What changed with Apple Watch HRV in 2026?',

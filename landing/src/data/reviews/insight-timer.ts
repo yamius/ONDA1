@@ -69,12 +69,12 @@ The science of what meditation actually does at the nervous-system level.
   ],
   relatedSlugs: ['headspace', 'calm', 'waking-up'],
   faq: [
-    { q: "Is Insight Timer free?", a: "Largely, yes. Insight Timer has a very large free tier that you can genuinely build a real practice on, which is rare among meditation apps. Member Plus costs about $60 per year, the cheapest paid tier in its comparison, and there are hourly live events and community features." },
-    { q: "Is Insight Timer worth paying for?", a: "For many people the free tier is enough, which is the app's biggest strength. At about $60 a year, Member Plus is the cheapest paid tier among major meditation apps, so upgrading is low-risk if you want more. The catch is variable session quality, not price." },
+    { q: "Is Insight Timer free?", a: "Largely, yes. Insight Timer has a very large free tier that you can genuinely build a real practice on, which is rare among meditation apps. MemberPlus costs $59.99 per year (or $9.99 per month), the cheapest paid tier in its comparison, and there are hourly live events and community features." },
+    { q: "Is Insight Timer worth paying for?", a: "For many people the free tier is enough, which is the app's biggest strength. At $59.99 a year, MemberPlus is the cheapest paid tier among major meditation apps, so upgrading is low-risk if you want more. The catch is variable session quality, not price." },
     { q: "Insight Timer vs Headspace: which is better?", a: "Insight Timer wins on breadth and value: it has the largest meditation library in the world and a usable free tier. Headspace wins on structure, with clearer course-led guidance for beginners. Insight Timer's crowd-sourced content can feel cluttered and uneven." },
   ],
   datePublished: '2026-05-15',
-  dateModified: '2026-05-15',
+  dateModified: '2026-10-02',
 }
 
 export default insightTimer

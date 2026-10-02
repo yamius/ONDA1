@@ -11,19 +11,19 @@ const whoop50VsGarminVenu4: HeadToHead = {
     'Whoop 5.0 and Garmin Venu 4 are the two HRV trackers serious trainers compare against each other in 2026. Both surface a daily recovery signal and a training-load model; the structural difference is the wrapper. Whoop is a coaching subscription bundled with a band; Garmin is a one-time-purchase smartwatch with first-party training analytics. The choice is less about HRV accuracy and more about how you want to live with the device.',
   winnerSlug: 'garmin-venu-4',
   verdict:
-    'Garmin Venu 4 wins for most trainers — comparable HRV and recovery analytics with no subscription, a five-day battery and the deeper training-load model. Whoop wins specifically for users who treat the daily Recovery score as a coaching prompt.',
+    'Garmin Venu 4 wins for most trainers — comparable HRV and recovery analytics with no subscription, a display with up to 12 days of battery and the deeper training-load model. Whoop wins specifically for users who treat the daily Recovery score as a coaching prompt.',
   bestForA:
     'Choose Whoop 5.0 if the daily Recovery score is a coaching prompt that actually changes your session, and you prefer the no-display band format and bundled-hardware subscription model.',
   bestForB:
-    'Choose Garmin Venu 4 if you want training analytics without an ongoing subscription, a five-day battery and a smartwatch display — the better long-term economics for most users.',
+    'Choose Garmin Venu 4 if you want training analytics without an ongoing subscription, up to 12 days of battery and a smartwatch display — the better long-term economics for most users.',
   axes: [
     { name: 'HRV measurement', winner: 'tie', note: 'Both track HRV continuously overnight on optical PPG; independent comparisons sit them roughly equal. Tie at the signal layer.' },
     { name: 'Recovery coaching', winner: 'a', note: 'Whoop’s Recovery and Strain coach is the sharpest daily-readiness model in the consumer space. Garmin’s Body Battery is competent but lighter-touch.' },
     { name: 'Training analytics', winner: 'b', note: 'Garmin has the deeper training-load, VO2 max, recovery-hours and structured-workout model. Whoop is coaching; Garmin is instrument.' },
     { name: 'Display and notifications', winner: 'b', note: 'Garmin: AMOLED smartwatch with notifications, music, apps. Whoop: displayless band that pairs to the phone.' },
-    { name: 'Battery life', winner: 'b', note: 'Garmin Venu 4: ~5 days smartwatch mode. Whoop: ~4–5 days, with the swappable battery pack model.' },
+    { name: 'Battery life', winner: 'a', note: 'Whoop 5.0: 14+ days per charge, with a slide-on battery pack. Garmin Venu 4: up to 12 days (45 mm; 10 days 41 mm; less with always-on display). Whoop now leads (changed from Garmin in October 2026), though Garmin runs a full display.' },
     { name: 'Form factor for training', winner: 'a', note: 'Whoop band sits cleaner under contact-sport gear or in pools without a display to crack. Garmin watch is rugged but visible.' },
-    { name: 'Subscription model', winner: 'b', note: 'Whoop: subscription-only (~$30/month), hardware included. Garmin: one-time $449, no subscription. 3-year cost: Whoop ~$1,080 vs Garmin ~$449.' },
+    { name: 'Subscription model', winner: 'b', note: 'Whoop: membership-only ($199, $239 or $359 a year), band included. Garmin: one-time purchase, list $549.99 and often about $499, no subscription. 3-year cost: Whoop $597–$1,077 vs Garmin about $499.' },
     { name: 'Ecosystem and apps', winner: 'b', note: 'Garmin Connect integrates with Strava, TrainingPeaks, Apple Health and a wide third-party stack. Whoop is more closed.' },
   ],
   faq: [
@@ -33,7 +33,7 @@ const whoop50VsGarminVenu4: HeadToHead = {
     },
     {
       q: 'Do you need a subscription for either?',
-      a: 'Whoop is subscription-only — about $30/month with hardware included. Garmin Venu 4 is a one-time purchase (~$449) with no subscription for full features. Over three years, Garmin costs less than half of Whoop.',
+      a: 'Whoop is membership-only — $199 (One), $239 (Peak) or $359 (Life) a year with the band included. Garmin Venu 4 is a one-time purchase (list $549.99, often about $499) with no subscription for full features. Over three years Whoop costs $597–$1,077 versus about $499 for Garmin.',
     },
     {
       q: 'Which is better for athletes — Whoop or Garmin?',
@@ -46,7 +46,7 @@ const whoop50VsGarminVenu4: HeadToHead = {
   ],
   content: `## The short version
 
-For most trainers, Garmin Venu 4 is the better long-term shape — comparable HRV, deeper training analytics, no subscription, and a five-day battery on a smartwatch display. Whoop wins specifically when the daily Recovery score is the coaching mechanism that actually changes your training day-to-day.
+For most trainers, Garmin Venu 4 is the better long-term shape — comparable HRV, deeper training analytics, no subscription, and up to 12 days of battery on a smartwatch display. Whoop wins specifically when the daily Recovery score is the coaching mechanism that actually changes your training day-to-day.
 
 ## When is Whoop the right pick?
 
@@ -54,10 +54,10 @@ If you train hard, value daily readiness as a coaching prompt, and the no-displa
 
 ## When is Garmin the right pick?
 
-If you would rather pay once, look at a watch face on your wrist, and have Strava and TrainingPeaks integration first-party in your training stack, Garmin Venu 4 is the right shape. Over three years it costs less than half of Whoop with no functional gap for most training use cases.`,
+If you would rather pay once, look at a watch face on your wrist, and have Strava and TrainingPeaks integration first-party in your training stack, Garmin Venu 4 is the right shape. Over three years it costs less than even the cheapest Whoop tier ($597) — and roughly half of Whoop Life ($1,077) — with no functional gap for most training use cases.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-02',
 }
 
 export default whoop50VsGarminVenu4

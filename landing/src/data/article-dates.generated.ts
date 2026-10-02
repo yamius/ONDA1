@@ -426,7 +426,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "mitochondrial-dna-red-light": {
     "published": "2026-02-28T20:22:39+01:00",
-    "modified": "2026-10-01T17:32:55+02:00"
+    "modified": "2026-10-01T22:40:56+02:00"
   },
   "molecular-psychology-hormonal-firmware": {
     "published": "2026-05-18T08:38:26+02:00",
@@ -1022,7 +1022,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "glossary:emotional-osmosis": {
     "published": "2026-09-29T18:09:37.000Z",
-    "modified": "2026-09-29T18:09:37.000Z"
+    "modified": "2026-10-02T10:19:04.000Z"
   },
   "glossary:social-sensing": {
     "published": "2026-09-29T18:09:37.000Z",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-01T18:27:10+02:00"
+    "modified": "2026-10-01T22:40:56+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",
@@ -1710,7 +1710,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/reviews/:slug": {
     "published": "2026-05-15T20:16:55+02:00",
-    "modified": "2026-10-01T18:27:10+02:00"
+    "modified": "2026-10-01T22:40:56+02:00"
   },
   "tool:/tools/baseline": {
     "published": "2026-09-05T18:33:27+02:00",

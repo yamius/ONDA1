@@ -22,7 +22,7 @@ const calmVsWakingUp: HeadToHead = {
     { name: 'Library breadth', winner: 'a', note: 'Calm has the largest, most polished library across meditation, sleep and soundscapes. Waking Up is a focused single path, not a big library.' },
     { name: 'Best for beginners', winner: 'a', note: 'Calm is easy for anyone. Waking Up is explicitly not aimed at first-timers.' },
     { name: 'For experienced meditators', winner: 'b', note: 'Waking Up rewards experienced practitioners who want a coherent path and deeper theory. Calm can feel shallow to them.' },
-    { name: 'Price', winner: 'a', note: 'Calm is ~$70/year. Waking Up is $129.99/year on the web ($149.99/year or $19.99/month in-app, 7-day trial), with a free scholarship for anyone who can’t afford it. Calm is cheaper.' },
+    { name: 'Price', winner: 'a', note: 'Calm Premium is $79.99/year after a 7-day trial ($499.99 lifetime). Waking Up is $129.99/year on the web ($149.99/year or $19.99/month in-app, 7-day trial), with a free scholarship for anyone who can’t afford it. Calm is cheaper.' },
   ],
   faq: [
     {
@@ -56,7 +56,7 @@ For the structured-learning middle ground, see [Headspace vs Calm](/reviews/vs/h
   relatedComparisonSlug: 'best-meditation-apps-2026',
   publishOn: '2026-09-06',
   datePublished: '2026-09-06',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-02',
 }
 
 export default calmVsWakingUp

@@ -389,6 +389,14 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1007/s10484-020-09466-z",
       "pmid": "32385728",
       "url": "https://doi.org/10.1007/s10484-020-09466-z"
+    },
+    {
+      "title": "Effects of voluntary slow breathing on heart rate and heart rate variability: A systematic review and a meta-analysis",
+      "authors": "Laborde S et al.",
+      "year": 2022,
+      "journal": "Neuroscience &amp; Biobehavioral Reviews",
+      "doi": "10.1016/j.neubiorev.2022.104711",
+      "url": "https://doi.org/10.1016/j.neubiorev.2022.104711"
     }
   ],
   "cardiac-coherence-insomnia-sleep": [
@@ -3187,6 +3195,22 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1097/01.wnr.0000186598.66243.19",
       "pmid": "16272874",
       "url": "https://doi.org/10.1097/01.wnr.0000186598.66243.19"
+    },
+    {
+      "title": "Occipital gamma activation during Vipassana meditation",
+      "authors": "Cahn B et al.",
+      "year": 2009,
+      "journal": "Cognitive Processing",
+      "doi": "10.1007/s10339-009-0352-1",
+      "url": "https://doi.org/10.1007/s10339-009-0352-1"
+    },
+    {
+      "title": "Meditation experience is associated with differences in default mode network activity and connectivity",
+      "authors": "Brewer J et al.",
+      "year": 2011,
+      "journal": "Proceedings of the National Academy of Sciences",
+      "doi": "10.1073/pnas.1112029108",
+      "url": "https://doi.org/10.1073/pnas.1112029108"
     }
   ],
   "vo2max-increase-aerobic-engine": [

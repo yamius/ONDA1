@@ -2329,27 +2329,39 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     title: 'Emotional Osmosis',
     category: 'Core Concepts',
     shortDescription:
-      'The unconscious exchange of emotional states between people — feeling what others feel while maintaining autonomy.',
+      'An ONDA Life term for “catching” other people’s emotions while keeping your own center. The scientific term is emotional contagion.',
     content: `
 
-**Emotional osmosis** describes the process by which emotional states are exchanged between people without conscious effort — like osmosis, where substances pass through a membrane by diffusion. We "absorb" the emotional tone of those around us and, in turn, influence theirs.
+**Emotional osmosis** is a term used in the ONDA Life practice path. It describes how we pick up the emotional tone of the people around us — and influence theirs — often without noticing, and the skill of taking part in that exchange without losing our own calm. It is a metaphor, not a scientific term: in research, the same phenomenon is called **emotional contagion**.
 
-## How It Works
+## What does the science call it?
 
-- **Unconscious** — happens below awareness
-- **Bidirectional** — we both receive and transmit
-- **Limbic resonance** — limbic systems influence each other
-- **Mirror neurons** — we simulate others' states internally
+Psychologists define emotional contagion as the tendency to automatically mimic other people’s facial expressions, voices and postures and, as a result, to “catch” their emotions (Hatfield, Cacioppo & Rapson 1993). It happens quickly and mostly below awareness.
 
-## The Challenge
+## Is emotional contagion real?
 
-Emotional osmosis can pull us into someone else's chaos — we lose our "coherent center." The skill is to participate in the exchange while maintaining autonomy.
+Yes, but its size varies a lot by situation:
+
+- **Face to face:** people tend to mirror expressions and posture, which nudges their own feelings in the same direction (Hatfield 1993).
+- **In the body:** heart rate, breathing and skin conductance of people who interact can partly line up — called physiological synchrony — but findings are mixed and depend on the setting and measurement (Palumbo et al. 2016).
+- **Online:** in a large Facebook experiment, people who saw fewer positive posts wrote slightly fewer positive posts themselves — a real but very small effect (Kramer et al. 2014).
+
+Popular explanations that “mirror neurons” or “limbic resonance” directly transfer feelings between people go beyond what the evidence shows.
+
+## Why does it matter?
+
+Being affected by other people’s moods is normal and helps us connect. It becomes a problem when someone else’s stress repeatedly pulls you into the same state — for example in caregiving, conflict or high-pressure teams. Noticing the shift, slowing your breathing and naming what you feel can help you stay steady while still responding with empathy.
 
 ## In ONDA Life
 
-Part 6 trains "emotional osmosis" through the Anterior Cingulate Cortex. We learn to exchange states with others — feeling the "pack," influencing it — while avoiding being pulled into chaos. Your presence becomes the "glue" that unites the group.
-## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+Part 6 of the ONDA practice path, “I’m Part of the Pack”, uses the idea of emotional osmosis for practices about connection and calming down together with others (co-regulation). ONDA does not measure emotions or brain activity; with an Apple Watch it reads heart rate and HRV, which reflect general stress load rather than a specific emotion.
+
+## Sources
+
+- Hatfield E, Cacioppo JT, Rapson RL (1993). [Emotional contagion](https://doi.org/10.1111/1467-8721.ep10770953). Current Directions in Psychological Science.
+- Palumbo RV et al. (2016). [Interpersonal autonomic physiology: a systematic review](https://doi.org/10.1177/1088868316628405). Personality and Social Psychology Review.
+- Kramer ADI et al. (2014). [Experimental evidence of massive-scale emotional contagion through social networks](https://doi.org/10.1073/pnas.1320040111). PNAS.
+`,
   },
   {
     slug: 'social-sensing',

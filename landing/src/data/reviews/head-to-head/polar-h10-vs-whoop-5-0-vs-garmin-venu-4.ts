@@ -26,8 +26,8 @@ const polarVsWhoopVsGarmin: HeadToHead = {
     { name: 'Training analytics', winner: 'c', note: 'Garmin: training load, VO2 max, recovery hours, structured workouts. Whoop: Strain-based. Polar H10: raw RR-intervals only.' },
     { name: 'Data openness', winner: 'a', note: 'Polar H10 streams raw RR over Bluetooth/ANT+ to any HRV app. Whoop most closed; Garmin Connect integrates broadly but is first-party-led.' },
     { name: 'Form factor', winner: 'c', note: 'Garmin: smartwatch, wear-and-forget. Whoop: band, wear-everywhere except dress codes. Polar H10: chest strap, session-only.' },
-    { name: 'Battery life', winner: 'a', note: 'Polar H10: ~400 hours, replaceable coin cell, multi-year. Garmin: ~5 days. Whoop: ~5 days. Polar is functionally maintenance-free.' },
-    { name: '3-year total cost', winner: 'a', note: 'Polar H10: ~$90. Garmin Venu 4: ~$449. Whoop 5.0: ~$1,080. Polar is one-fifth Garmin, one-twelfth Whoop.' },
+    { name: 'Battery life', winner: 'a', note: 'Polar H10: up to 400 hours on a replaceable CR2025 coin cell. Whoop: 14+ days per charge. Garmin: up to 12 days (45 mm; 10 days 41 mm). Polar is functionally maintenance-free.' },
+    { name: '3-year total cost', winner: 'a', note: 'Polar H10: about $105 once. Garmin Venu 4: about $499 (list $549.99). Whoop 5.0: $597–$1,077 (One to Life membership). Polar is about one-fifth of Garmin and a fraction of any Whoop tier.' },
   ],
   faq: [
     {
@@ -40,7 +40,7 @@ const polarVsWhoopVsGarmin: HeadToHead = {
     },
     {
       q: 'Which has the best long-term cost?',
-      a: 'Polar H10 by a wide margin — ~$90 one-time with a replaceable coin cell. Garmin Venu 4: ~$449 one-time. Whoop 5.0: ~$1,080 over three years on subscription.',
+      a: 'Polar H10 by a wide margin — about $105 once ($104.95 at Polar US) with a replaceable coin cell. Garmin Venu 4: about $499 once (list $549.99). Whoop 5.0: $597–$1,077 over three years, depending on membership tier ($199, $239 or $359 a year).',
     },
     {
       q: 'Can Polar H10 work with Garmin or Whoop?',
@@ -57,7 +57,7 @@ Three different roles. Polar H10 for reference HRV accuracy. Whoop for daily rec
 
 ## When is Polar H10 the right pick?
 
-If reference-grade HRV accuracy is the deciding criterion — for a structured morning protocol, for validating another device, for app-agnostic measurement — Polar H10 is the right shape. At ~$90 with a replaceable coin cell and a multi-year lifespan, it is the cheapest device in the HRV category and the most accurate at once.
+If reference-grade HRV accuracy is the deciding criterion — for a structured morning protocol, for validating another device, for app-agnostic measurement — Polar H10 is the right shape. At about $105 with a replaceable coin cell and a multi-year lifespan, it is the cheapest device in the HRV category and the most accurate at once.
 
 ## When is Whoop 5.0 the right pick?
 
@@ -65,11 +65,11 @@ If the daily Recovery score is the coaching mechanism that changes your training
 
 ## When is Garmin Venu 4 the right pick?
 
-If you want a training-analytics smartwatch with first-party VO2 max, training-load and recovery-hours models — and you would rather pay once than subscribe — Garmin is the right shape. The five-day battery and the lack of subscription gating are the differentiators.`,
+If you want a training-analytics smartwatch with first-party VO2 max, training-load and recovery-hours models — and you would rather pay once than subscribe — Garmin is the right shape. Up to 12 days of battery on a full display and the lack of subscription gating are the differentiators.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-06-04',
+  dateModified: '2026-10-02',
 }
 
 export default polarVsWhoopVsGarmin

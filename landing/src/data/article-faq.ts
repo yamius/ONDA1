@@ -13,12 +13,12 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How many physiological sighs should I do?",
       answer:
-        "One to five. The effect starts within the first one to three breaths, so you rarely need more than a few. It's a reset, not a long practice.",
+        "One to five for a quick reset; many people feel calmer within one to three breaths. In the Stanford study (Balban et al., 2023), participants kept cycling for five minutes a day, so longer practice is also an option.",
     },
     {
       question: "How fast does the physiological sigh work?",
       answer:
-        "Within seconds — usually one to three breaths. The long exhale activates the vagus nerve almost immediately; in a Stanford study, a daily five-minute practice of it improved mood more than box breathing or mindfulness over a month.",
+        "Many people feel calmer within one to three breaths, though that is a subjective impression rather than a measured effect. The long exhale is thought to engage the calming parasympathetic system. In a one-month Stanford study (Balban et al., 2023), five minutes a day of cyclic sighing improved mood more than mindfulness meditation; differences between the breathing techniques were small.",
     },
     {
       question: "Physiological sigh vs box breathing — which is better?",
@@ -28,7 +28,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Is the physiological sigh backed by science?",
       answer:
-        "Yes. A controlled study from Stanford's Huberman lab found that daily physiological sighing reduced stress and improved mood more than other breathing techniques and mindfulness meditation, with measurable drops in respiratory rate.",
+        "Partly. A randomized Stanford trial (Balban et al., 2023, about 110 healthy adults) found that five minutes a day of cyclic sighing for a month improved mood more than mindfulness meditation and lowered resting breathing rate. Differences between the breathing techniques were small and not all significant, and there was no meaningful effect on heart rate variability (HRV). It is promising evidence for a daily habit, not proof that the sigh treats anxiety.",
     },
     {
       question: "Can I do the physiological sigh too much?",
@@ -1749,22 +1749,22 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How does Vipassana change the brain?",
       answer:
-        "Research links it to increased cortical thickness in attention regions, elevated gamma brainwaves in experienced practitioners, and reduced default mode network activity (the mind-wandering system). Meditation depth is measurable — classified from EEG with ~81% accuracy in experts.",
+        "Small, mostly cross-sectional studies of experienced practitioners link it to thicker cortex in attention and body-awareness regions (Lazar et al., 2005) and stronger gamma activity during Vipassana (Cahn et al., 2010). Lower default-mode-network activity during meditation was found in experienced meditators of several styles, not Vipassana alone (Brewer et al., 2011). These are associations with long-term practice, not proof that Vipassana causes the changes.",
     },
     {
       question: "What is the default mode network and why does quieting it help?",
       answer:
-        "The DMN is the brain system active during mind-wandering and self-referential rumination, linked to anxiety and unhappiness when overactive. Vipassana quiets it by training present-moment attention, a likely mechanism behind reduced stress and reactivity.",
+        "The DMN is the brain system most active during mind-wandering and self-referential rumination, and a habitually wandering mind is linked to lower momentary happiness. Experienced meditators (of several styles) showed less DMN activity during meditation — a plausible mechanism for the reduced rumination practitioners report, though not a direct demonstration of it.",
     },
     {
       question: "Do Vipassana's brain changes increase with practice?",
       answer:
-        "Yes — cortical thickness, gamma amplitude, and the distinctiveness of the meditative state are all more pronounced in experienced practitioners. It's a trainable skill with a progressive, measurable neural trajectory.",
+        "They appear to, but the evidence is suggestive. Cortical thickness tracked years of experience in some regions, and gamma power was stronger in those with more daily practice. Because these studies compare different people, they can’t rule out that people with these brains are simply more likely to keep meditating.",
     },
     {
       question: "Can I measure my Vipassana progress?",
       answer:
-        "Brain changes need a lab, but the autonomic calm and equanimity you build show up in heart rate variability (HRV), which you can track at home. A steadier, stronger HRV baseline reflects the growing non-reactive calm the practice trains.",
+        "Brain changes need a lab, but some of the body’s response to practice is measurable at home — pulse, breathing rate and heart rate variability (HRV) can show how your body settles during and across sessions. These are feedback signals, not a measure of insight.",
     },
   ],
   "meditation-gamma-waves-experience": [
@@ -2073,27 +2073,27 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What is the 365 method of cardiac coherence?",
       answer:
-        "Three times a day, six breaths per minute, for five minutes each. It's the standard French protocol for cardiac coherence — a rhythm of regulation spread across the day rather than a single session.",
+        "Three times a day, six breaths per minute, for five minutes each — a daily schedule popularized in France by David O’Hare. It is a practical convention: no trial has tested the 3 × 5-minute schedule against other ways of dosing slow breathing.",
     },
     {
       question: "What is cardiac coherence breathing?",
       answer:
-        "Slow rhythmic breathing at about six breaths per minute that synchronizes your heart and breath, balancing the autonomic nervous system and raising HRV. It's the French clinical version of coherent or resonance breathing.",
+        "Slow, even breathing at about six breaths per minute, which makes the heart-rate swing with each breath large and regular and raises HRV while you practice. It’s the French name for what English-language sources call coherent or resonance breathing.",
     },
     {
       question: "Why six breaths per minute?",
       answer:
-        "Because it's close to the resonance frequency of the cardiovascular system (~0.1 Hz), where heart-rate and blood-pressure rhythms oscillate together at maximum amplitude — producing the strongest HRV response. Recent research found six per minute most strongly activates the vagus nerve.",
+        "Because it’s close to the average resonance frequency of the cardiovascular system (~0.1 Hz), where breathing, heart rate and the baroreflex reinforce each other and HRV swings are largest. The exact resonance rate varies between people — roughly 4.5 to 7 breaths per minute — so six is a good default, not a magic number.",
     },
     {
       question: "How long does it take to feel the effect?",
       answer:
-        "A single five-minute session produces an immediate but temporary calming shift. The 365 method uses three sessions a day precisely because the effect fades — repeating it keeps returning your nervous system to balance.",
+        "Slow breathing raises HRV during the session itself, and many people feel calmer within minutes. How long the effect lasts afterwards is poorly quantified; the 365 method spaces three sessions across the day on the reasoning that the effect fades, but that schedule has not been tested.",
     },
     {
       question: "Is cardiac coherence the same as coherent breathing?",
       answer:
-        "Essentially yes — cardiac coherence is the French clinical tradition, with the specific 365 protocol; \"coherent\" or \"resonance\" breathing is the English-language term for the same six-breaths-per-minute physiology.",
+        "Essentially yes — cardiac coherence is the French term, usually paired with the 365 schedule; \"coherent\" or \"resonance\" breathing is the English-language term for the same slow-breathing physiology.",
     },
   ],
   "breathing-lowers-stress-hormones": [

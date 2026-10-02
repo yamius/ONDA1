@@ -38,7 +38,7 @@ const whoop5: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',
-  price: { usd: 239, note: 'per year — membership includes the band; no separate hardware purchase', asOf: '2026-05-15' },
+  price: { usd: 239, note: 'per year for WHOOP Peak — membership includes the band; WHOOP One $199/year, WHOOP Life (WHOOP MG band, ECG and blood-pressure insights) $359/year', asOf: '2026-10-02' },
   link: 'https://whoop.com',
   linkType: 'official',
   content: `## Where it leads
@@ -49,7 +49,7 @@ The Whoop 5.0 is built around one idea: recovery. Rather than a morning spot-che
 
 ## What are the downsides of Whoop 5.0?
 
-Whoop is sold as a membership, not a product. There is no hardware to own — stop paying and the band stops working — and the roughly 239 USD first year is an ongoing cost, not a one-time purchase. The app is powerful but dense: Strain, Recovery and the AI coach reward users who want to study their data and can overwhelm those who do not. Raw data access, as with Oura, is limited.
+Whoop is sold as a membership, not a product. There is no hardware to own — stop paying and the band stops working — and the membership — 199 USD a year for WHOOP One, 239 USD for Peak, 359 USD for Life — is an ongoing cost, not a one-time purchase. The app is powerful but dense: Strain, Recovery and the AI coach reward users who want to study their data and can overwhelm those who do not. Raw data access, as with Oura, is limited.
 
 ## Who should buy Whoop 5.0?
 
@@ -71,13 +71,13 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['oura-ring-4', 'apple-watch-series-11'],
   faq: [
-    { q: "Does Whoop 5.0 require a subscription?", a: "Yes. Whoop is subscription-only at about $239 per year, which includes the band — there is no separate hardware purchase. Stop paying and the band stops working." },
+    { q: "Does Whoop 5.0 require a subscription?", a: "Yes. Whoop is subscription-only: $199 per year for WHOOP One, $239 for Peak or $359 for Life, each including the band — there is no separate hardware purchase. Stop paying and the band stops working." },
     { q: "Is Whoop 5.0 accurate for HRV?", a: "Whoop samples HRV continuously overnight and reports a full-sleep average. Its own validation places sleep and HRV agreement in roughly the 75–86% range against reference devices — strong for a wrist band, behind a finger ring or ECG chest strap." },
     { q: "Who is Whoop 5.0 best for?", a: "Athletes and serious trainers who act on a daily recovery-and-strain score. The ~14-day battery and screenless band suit 24/7 wear; it is overkill for casual users who dislike subscriptions." },
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-02',
 }
 
 export default whoop5

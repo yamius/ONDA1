@@ -24,7 +24,7 @@ const threeRings: HeadToHead = {
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model is the consumer reference. Ultrahuman and RingConn are competent but a tier behind on staging granularity.' },
     { name: 'App and analytics', winner: 'a', note: 'Oura: most mature after a decade. Ultrahuman: polished, newer, narrower. RingConn: clean but the least mature of the three.' },
     { name: 'Ring weight', winner: 'b', note: 'Ultrahuman Ring Air: 2.4g — the lightest in the category. RingConn Gen 2: ~3.0g. Oura: ~5g. Ultrahuman is noticeably more comfortable for sensitive users.' },
-    { name: 'Battery life', winner: 'c', note: 'RingConn Gen 2: ~12 days — the longest in the smart-ring category. Oura and Ultrahuman: ~6–7 days.' },
+    { name: 'Battery life', winner: 'c', note: 'RingConn Gen 2: ~12 days — the longest in the smart-ring category. Oura: about 4–7 days. Ultrahuman: ~6 days.' },
     { name: 'Battery reliability (multi-year)', winner: 'a', note: 'Ultrahuman has documented battery-degradation reports past 12 months. Oura and RingConn have cleaner multi-year track records.' },
     { name: 'Subscription requirement', winner: 'c', note: 'Oura: $5.99/month membership for full features. RingConn and Ultrahuman: no subscription. RingConn wins outright on no-subscription value.' },
     { name: 'Ecosystem integration', winner: 'b', note: 'Ultrahuman: unique native pairing with Ultrahuman M1 CGM. Oura: Apple Health and Levels. RingConn: standard Apple Health / Google Fit.' },
@@ -72,7 +72,7 @@ If ring weight matters more than anything else, Ultrahuman is the lightest smart
 If subscription-free is a hard requirement and you want the longest battery in the category, RingConn is the right shape. It is also the cheapest over three years by a meaningful margin. The trade is a slightly less mature app and shallower sleep analytics than Oura.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-09-06',
+  dateModified: '2026-10-02',
 }
 
 export default threeRings
