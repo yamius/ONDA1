@@ -21,7 +21,7 @@ const whoop50VsGarminVenu4: HeadToHead = {
     { name: 'Recovery coaching', winner: 'a', note: 'Whoop’s Recovery and Strain coach is the sharpest daily-readiness model in the consumer space. Garmin’s Body Battery is competent but lighter-touch.' },
     { name: 'Training analytics', winner: 'b', note: 'Garmin has the deeper training-load, VO2 max, recovery-hours and structured-workout model. Whoop is coaching; Garmin is instrument.' },
     { name: 'Display and notifications', winner: 'b', note: 'Garmin: AMOLED smartwatch with notifications, music, apps. Whoop: displayless band that pairs to the phone.' },
-    { name: 'Battery life', winner: 'a', note: 'Whoop 5.0: 14+ days per charge, with a slide-on battery pack. Garmin Venu 4: up to 12 days (45 mm; 10 days 41 mm; less with always-on display). Whoop now leads (changed from Garmin in October 2026), though Garmin runs a full display.' },
+    { name: 'Battery life', winner: 'a', note: 'Whoop 5.0: 14+ days per charge, with a slide-on battery pack. Garmin Venu 4: up to 12 days (45 mm; 10 days 41 mm; less with always-on display). Whoop now leads, though Garmin runs a full display.' },
     { name: 'Form factor for training', winner: 'a', note: 'Whoop band sits cleaner under contact-sport gear or in pools without a display to crack. Garmin watch is rugged but visible.' },
     { name: 'Subscription model', winner: 'b', note: 'Whoop: membership-only ($199, $239 or $359 a year), band included. Garmin: one-time purchase, list $549.99 and often about $499, no subscription. 3-year cost: Whoop $597–$1,077 vs Garmin about $499.' },
     { name: 'Ecosystem and apps', winner: 'b', note: 'Garmin Connect integrates with Strava, TrainingPeaks, Apple Health and a wide third-party stack. Whoop is more closed.' },

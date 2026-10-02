@@ -25,7 +25,7 @@ const ouraVsWhoopVsApple: HeadToHead = {
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s Recovery and Strain coaching is the sharpest daily-readiness signal. Oura has Readiness; Apple has nothing equivalent.' },
     { name: 'Form factor (passive wear)', winner: 'a', note: 'Ring is the most passive wearable — fits sleep, work, gym, social. Whoop band is wearable everywhere except when display matters. Apple Watch is visible.' },
     { name: 'Smartwatch features', winner: 'c', note: 'Apple Watch: ECG, messaging, payments, fall detection, third-party apps. Whoop and Oura: none — they are dedicated instruments.' },
-    { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days. Oura Ring 4: about 4–7 days. Apple Watch: ~18–36h. Whoop now leads (changed from Oura in October 2026); both beat Apple by a wide margin on overnight continuity.' },
+    { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days. Oura Ring 4: about 4–7 days. Apple Watch: ~18–36h. Whoop now leads; both beat Apple by a wide margin on overnight continuity.' },
     { name: 'Subscription model', winner: 'c', note: 'Apple Watch: no subscription. Oura: $5.99/mo or $69.99/yr membership. Whoop: membership-only, $199–$359/year. Apple wins on cost.' },
     { name: 'Ecosystem flexibility', winner: 'c', note: 'Apple Watch: deepest iPhone integration and the largest third-party app ecosystem. Oura: integrates with Apple Health. Whoop: most closed of the three.' },
   ],

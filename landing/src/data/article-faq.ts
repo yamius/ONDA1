@@ -33,7 +33,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can I do the physiological sigh too much?",
       answer:
-        "No — it's a natural pattern your body already produces on its own. Use it whenever you notice stress or shallow breathing. It is a wellness technique, not a treatment for any medical condition.",
+        "A few sighs at a time are fine — it is a pattern your body already produces on its own. Avoid many rapid rounds in a row, which can cause dizziness or tingling, and stop if you feel light-headed. It is a wellness technique, not a treatment for any medical condition.",
     },
   ],
   "4-7-8-breathing": [

@@ -8,8 +8,8 @@ import type { Article } from './types'
  */
 const article: Article = {
   slug: 'physiological-sigh',
-  title: 'Physiological Sigh: The Fastest Way to Calm Your Nervous System',
-  seoTitle: 'Physiological Sigh: Fastest Way to Calm Down | ONDA Life',
+  title: 'Physiological Sigh: A Quick Way to Calm Your Nervous System',
+  seoTitle: 'Physiological Sigh: How to Calm Down Quickly | ONDA Life',
   description:
     'The physiological sigh — two inhales and one long exhale — is a fast way to ease acute stress. What the 2023 Stanford study found, how to do it, safety, and how it compares to box breathing and 4-7-8.',
   category: 'ONDA Protocol',

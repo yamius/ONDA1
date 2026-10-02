@@ -26,7 +26,7 @@ const ouraVsWhoopVsGarmin: HeadToHead = {
     { name: 'Training analytics', winner: 'c', note: 'Garmin: training load, VO2 max, recovery time, structured workouts, GPS. Whoop: Strain-based coaching. Oura: minimal training-specific analytics.' },
     { name: 'Form factor for 24/7 wear', winner: 'a', note: 'Ring fits sleep, work, gym, social. Whoop band hides under clothing. Garmin watch is visible. Oura wins on passive wearability.' },
     { name: 'Display and smartwatch features', winner: 'c', note: 'Garmin: AMOLED smartwatch with notifications, music, apps, flashlight. Oura and Whoop have no display.' },
-    { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days. Garmin Venu 4: up to 12 days (45 mm; 10 days 41 mm; less with always-on display). Oura Ring 4: about 4–7 days. Whoop now leads — changed from Oura in October 2026.' },
+    { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days. Garmin Venu 4: up to 12 days (45 mm; 10 days 41 mm; less with always-on display). Oura Ring 4: about 4–7 days. Whoop lasts longest.' },
     { name: 'Subscription model', winner: 'c', note: 'Garmin: no subscription. Oura: $5.99/month or $69.99/year membership for full data. Whoop: membership-only, $199–$359/year. Garmin wins on cost model.' },
     { name: '3-year total cost', winner: 'c', note: 'Garmin: about $499 (list $549.99). Oura: about $559 ($349 ring + yearly membership). Whoop: $597 (One) to $1,077 (Life). Garmin is cheapest, narrowly ahead of Oura.' },
   ],

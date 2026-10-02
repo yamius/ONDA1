@@ -21,7 +21,7 @@ const ouraRing4VsWhoop50: HeadToHead = {
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep staging is the consumer reference; Whoop’s is competent but narrower in the metrics surfaced.' },
     { name: 'Recovery coaching', winner: 'b', note: 'Whoop’s daily Recovery score and Strain coach are sharper and more actionable for trained users than Oura’s Readiness.' },
     { name: 'Form factor and wearability', winner: 'a', note: 'A ring is more wearable around the clock than a band — sleep, work, gym, social. Whoop band shows in dress codes.' },
-    { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days per charge, topped up with a slide-on battery pack while you wear it. Oura Ring 4: about 4–7 days, charged on a dock. Whoop now leads (changed from Oura in October 2026).' },
+    { name: 'Battery life', winner: 'b', note: 'Whoop 5.0: 14+ days per charge, topped up with a slide-on battery pack while you wear it. Oura Ring 4: about 4–7 days, charged on a dock. Whoop lasts longest.' },
     { name: 'Data access and integration', winner: 'tie', note: 'Both ship competent apps and integrate with Apple Health; neither exports raw RR-intervals without a chest strap.' },
     { name: 'Price and subscription', winner: 'tie', note: 'Oura: from $349 + $5.99/mo or $69.99/yr membership — about $559 over three years. Whoop: membership-only at $199 (One), $239 (Peak) or $359 (Life) a year, band included — $597–$1,077 over three years. Whoop is cheaper upfront; Oura is slightly cheaper over three years than even the cheapest Whoop tier.' },
   ],
