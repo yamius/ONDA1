@@ -77,4 +77,5 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('comparisons', 'best-breathwork-apps-2026', '2026-10-01', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'apple-watch-series-12-vs-whoop-5-0', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'whoop-5-0-vs-garmin-venu-4', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'whoop-5-0-vs-polar-h10', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

@@ -1264,6 +1264,10 @@
     "breathe-to-relax": {
       "verdict": "La meilleure appli de respiration gratuite fondée sur des preuves — conçue par la télésanté militaire américaine pour le TSPT et le stress ; une crédibilité clinique qu’aucune autre appli gratuite n’égale.",
       "productType": "Appli gratuite de respiration diaphragmatique conçue par le DoD contre le stress et le TSPT"
+    },
+    "polar-h10": {
+      "verdict": "L’appareil de VFC le plus précis que l’on puisse acheter : un instrument de référence, pas un wearable à porter toute la journée.",
+      "productType": "Ceinture thoracique ECG"
     }
   },
   "comparisons": {
@@ -2030,6 +2034,71 @@
         }
       ],
       "content": "## Réponse courte\n\nPour la plupart des gens, le **Hooga HG500** est le bon choix : 359 $ pour la configuration standard 660 + 850 nm, 3 ans de garantie et 60 jours de retour. Ne dépensez environ trois fois plus que pour une raison précise — l’**Infraredi Pro Max 2.0** (1 019 $) si vous voulez cinq longueurs d’onde et un pied autoportant, ou le **Bon Charge Max** (999 $) si vous voulez un grand panneau d’une marque que vous utilisez déjà et pouvez vous contenter d’un an de garantie.\n\n| | Hooga HG500 | Bon Charge Max | Infraredi Pro Max 2.0 |\n|---|---|---|---|\n| Prix (vérifié le 2026-10-01) | 359 $ | 999 $ | 1 019 $ (catalogue 1 199 $) |\n| Longueurs d’onde | 660 + 850 nm | 660 + 850 nm | cinq |\n| LED | 100 | 400 | 210 à double lentille |\n| Irradiance annoncée | 94 mW/cm² à 6\" | >142 mW/cm² (sans distance) | non indiquée |\n| Fixation | fixation de porte + kit de suspension ; pied en option | fixation de porte | pied inclus |\n| Garantie / essai | 3 ans / 60 jours de retour | 1 an | 3 ans / 60 jours d’essai |\n\nÀ propos des noms : ce comparatif opposait à l’origine Hooga, le « Red Light Therapy Panel » de Bon Charge et l’Infraredi Pro 1500. Aucun des deux derniers n’est plus vendu sous ce nom, le tableau utilise donc l’équivalent actuel le plus proche de chaque marque.\n\n## Quand le Hooga HG500 est-il le bon choix ?\n\nSi le budget est le facteur décisif et que vous voulez les deux longueurs d’onde utilisées par la plupart des recherches en photobiomodulation au prix sérieux le plus bas, Hooga est la bonne option. La plupart des primo-acheteurs devraient commencer ici. Voir l’[avis complet sur le Hooga HG500](/reviews/hooga-hg500).\n\n## Quand Bon Charge est-il le bon choix ?\n\nSi vous êtes déjà dans l’écosystème Bon Charge et voulez un grand panneau demi-corps de la même marque, le Max est la bonne option. Le surcoût par rapport à Hooga paie un panneau plus grand, la notoriété de la marque et des valeurs de CEM publiées — pas de longueurs d’onde supplémentaires — et la garantie est plus courte. Voir l’[avis complet sur Bon Charge](/reviews/bon-charge-red-light-panel).\n\n## Quand Infraredi est-il le bon choix ?\n\nSi vous voulez le spectre le plus large des trois, un pied inclus dans la boîte et 3 ans de garantie, Infraredi est la bonne option — pour à peu près le prix du Bon Charge Max. Voir l’[avis complet sur Infraredi](/reviews/infraredi-pro-1500).\n\n## Et les panneaux haut de gamme ?\n\nSi vous êtes déjà prêt à mettre 1 000 $, le [Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500) (1 299 $, six longueurs d’onde, enregistré FDA classe II) mérite un coup d’œil. Pour tout le marché classé selon les mêmes critères, voir les [meilleurs panneaux de luminothérapie rouge de 2026](/reviews/compare/best-red-light-therapy-panels-2026)."
+    },
+    "whoop-5-0-vs-polar-h10": {
+      "title": "Whoop 5.0 vs Polar H10 : comparatif (2026)",
+      "description": "Pour la VFC, la Polar H10 est plus précise : ceinture ECG à $105 sans abonnement. Le Whoop 5.0 suit la récupération 24/7 pour $199–$359 par an.",
+      "intro": "Le Whoop 5.0 et la Polar H10 ne sont pas vraiment le même type d’appareil, mais ils se retrouvent sur la même courte liste chez ceux qui tiennent à la qualité du signal de VFC. Le Whoop est un bracelet optique vendu sous forme d’abonnement avec coaching de récupération ; la Polar H10 est la ceinture thoracique ECG qui fixe le plafond de précision grand public. Le choix se fait entre un suivi continu au quotidien et une mesure de niveau référence.",
+      "verdict": "Ils répondent à des besoins différents. Le Whoop pour une VFC nocturne continue avec coaching de récupération ; la Polar H10 pour une précision de niveau ECG quand vous portez la ceinture. Beaucoup d’utilisateurs exigeants de la VFC possèdent les deux.",
+      "bestForA": "Choisissez le Whoop 5.0 si la VFC nocturne continue et un score Recovery quotidien sont vos critères décisifs : vous voulez un bracelet porté jour et nuit qui oriente votre entraînement, et un abonnement annuel vous convient.",
+      "bestForB": "Choisissez la Polar H10 si vous voulez une précision de VFC de référence pour un protocole matinal structuré ou pour valider un autre appareil : un instrument de référence acheté une fois, pas un wearable du quotidien.",
+      "axes": [
+        {
+          "name": "Précision de la VFC",
+          "note": "Polar H10 : ECG électrique ; ses intervalles RR concordent étroitement avec un Holter ECG au repos et à l’effort (Gilgen-Ammann 2019). Whoop : PPG optique ; la fréquence cardiaque concorde bien avec l’ECG, mais l’erreur sur le RMSSD approchait le plus petit changement significatif lors de la validation (Bellenger 2021, sur le Whoop 2.0)."
+        },
+        {
+          "name": "Suivi nocturne continu",
+          "note": "Le Whoop suit la VFC en continu pendant la nuit ; la H10 est une ceinture que l’on met pour une mesure ou une séance, pas un wearable 24/7."
+        },
+        {
+          "name": "Format",
+          "note": "Whoop : bracelet léger sans écran, qu’on porte et qu’on oublie. Polar H10 : ceinture thoracique qui exige un contact électrodes-peau pour un signal propre."
+        },
+        {
+          "name": "Récupération et coaching",
+          "note": "Le coaching Recovery et Strain du Whoop constitue tout le produit. La Polar H10 fournit des intervalles RR bruts : c’est à vous d’apporter l’application d’analyse."
+        },
+        {
+          "name": "Ouverture des données",
+          "note": "La Polar H10 transmet les données brutes battement par battement (RR) en Bluetooth et ANT+ à presque toutes les applications de VFC. Le Whoop garde ses données dans sa propre application, sans flux RR brut vers des applications tierces."
+        },
+        {
+          "name": "Autonomie et fiabilité",
+          "note": "Polar H10 : jusqu’à 400 heures avec une pile bouton CR2025 remplaçable, durée de vie de plusieurs années. Whoop 5.0 : plus de 14 jours par charge avec une batterie amovible à glisser : c’est long, mais rechargeable et lié à l’abonnement."
+        },
+        {
+          "name": "Coût total (3 ans)",
+          "note": "Whoop : $597 (One), $717 (Peak) ou $1,077 (Life) sur trois ans. Polar H10 : environ $105 une seule fois. La Polar coûte une fraction même de la formule Whoop la moins chère."
+        },
+        {
+          "name": "Suivi du sommeil",
+          "note": "Le Whoop suit le sommeil automatiquement ; la H10 non, puisqu’elle ne se porte pas la nuit."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Polar H10 ou Whoop : lequel est le plus précis pour la VFC ?",
+          "a": "La Polar H10. Elle mesure le signal électrique du cœur comme un ECG, et une étude de validation a montré que ses intervalles RR correspondaient étroitement à un Holter ECG au repos et à l’effort (Gilgen-Ammann et al., 2019). Le Whoop utilise des capteurs optiques : lors de sa validation, la fréquence cardiaque concordait bien avec l’ECG, mais l’erreur sur la VFC (RMSSD) était plus importante (Bellenger et al., 2021). Le Whoop convient aux tendances nocturnes ; la H10 est la référence."
+        },
+        {
+          "q": "Combien coûte le Whoop par rapport à la Polar H10 ?",
+          "a": "Le Whoop est uniquement vendu par abonnement : $199 par an pour WHOOP One, $239 pour Peak et $359 pour Life, bracelet inclus. La Polar H10 coûte environ $105 une seule fois ($104.95 chez Polar US), sans abonnement. Sur trois ans, cela fait $597–$1,077 pour le Whoop contre environ $105 pour la ceinture."
+        },
+        {
+          "q": "La Polar H10 peut-elle remplacer un Whoop ?",
+          "a": "Pas vraiment. La Polar H10 est une ceinture thoracique, pas un wearable 24/7 : elle ne fournit donc ni VFC nocturne automatique ni données de sommeil. Si vous voulez un score Recovery quotidien sans enfiler une ceinture chaque matin, le Whoop a le bon format."
+        },
+        {
+          "q": "La Polar H10 fonctionne-t-elle sans montre Polar ?",
+          "a": "Oui. La Polar H10 transmet les données brutes battement par battement en Bluetooth et ANT+ à presque toutes les applications de VFC, comme Elite HRV, HRV4Training ou Kubios. Une montre Polar n’est qu’une option parmi d’autres ; la ceinture fonctionne avec n’importe quelle application."
+        },
+        {
+          "q": "Faut-il utiliser le Whoop et la Polar H10 ensemble ?",
+          "a": "Beaucoup d’utilisateurs exigeants de la VFC le font : le Whoop pour les tendances nocturnes continues et le coaching de récupération, la Polar H10 pour une mesure matinale de niveau référence ou pour vérifier que les chiffres du bracelet reflètent la réalité. Les deux se complètent sans difficulté."
+        }
+      ],
+      "content": "## La réponse courte\n\nLa Polar H10 est plus précise pour la VFC : c’est une ceinture thoracique ECG très proche de l’ECG clinique, qui coûte environ $105 une seule fois, sans abonnement. Le Whoop 5.0 est moins précis, mais il suit automatiquement la VFC et le sommeil chaque nuit et les transforme en score Recovery quotidien, pour $199–$359 par an. Achetez la Polar H10 pour la précision et des données ouvertes ; achetez le Whoop pour un suivi 24/7 sans effort et le coaching.\n\n| | Whoop 5.0 | Polar H10 |\n|---|---|---|\n| Capteur | Bracelet optique (PPG) | Ceinture thoracique ECG électrique |\n| Précision de la VFC | Bonne pour les tendances nocturnes | Niveau référence, proche de l’ECG clinique |\n| Quand il mesure | En continu, jour et nuit | Uniquement quand vous portez la ceinture |\n| Suivi du sommeil | Oui, automatique | Non |\n| Autonomie | 14+ jours, rechargeable | Jusqu’à 400 h, pile bouton remplaçable |\n| Données RR brutes vers d’autres applis | Non | Oui, Bluetooth et ANT+ |\n| Prix | $199 / $239 / $359 par an (One / Peak / Life) | Environ $105 une fois |\n| Coût sur 3 ans | $597–$1,077 | Environ $105 |\n\n## Choisissez le Whoop 5.0 si…\n\n- vous voulez que la VFC et le sommeil soient mesurés chaque nuit sans rien faire ;\n- un score Recovery et Strain quotidien changera vraiment votre façon de vous entraîner ;\n- payer un abonnement annuel ne vous dérange pas.\n\nTous les détails dans notre [avis sur le Whoop 5.0](/reviews/whoop-5-0).\n\n## Choisissez la Polar H10 si…\n\n- la précision compte avant tout : pour un protocole VFC matinal, pour le biofeedback VFC ou pour vérifier un autre wearable ;\n- vous voulez les données brutes battement par battement dans l’application de votre choix ;\n- vous préférez payer une fois plutôt que vous abonner.\n\nTous les détails dans notre [avis sur la Polar H10](/reviews/polar-h10).\n\n## Que dit la recherche sur la précision ?\n\nLes ceintures thoraciques ECG sont la référence grand public pour la VFC. Dans une étude de validation, les intervalles RR de la Polar H10 correspondaient étroitement à un Holter ECG médical au repos et à l’effort. La validation du Whoop (sur l’ancien Whoop 2.0) a montré une excellente concordance de la fréquence cardiaque avec l’ECG, mais une erreur de VFC proche du plus petit changement qui compte au quotidien : correct pour des tendances sur plusieurs jours, moins pour lire de petites variations d’un seul jour. Pour situer un chiffre, consultez la [VFC normale selon l’âge](/articles/normal-hrv-by-age).\n\n## Le cas hybride\n\nLe Whoop pour le signal continu au quotidien ; la Polar H10 pour la mesure de référence du matin. Les deux se complètent sans difficulté, et beaucoup d’adeptes assidus de l’entraînement guidé par la VFC finissent par utiliser les deux.\n\n## Comparatifs associés\n\nVous hésitez aussi avec une montre connectée ? Voir [Polar H10 vs Whoop 5.0 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-whoop-5-0-vs-garmin-venu-4), [Polar H10 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-garmin-venu-4) ou le classement complet des [meilleurs capteurs de VFC de 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Sources\n\n- Gilgen-Ammann R, Schweizer T, Wyss T (2019). RR interval signal quality of a heart rate monitor and an ECG Holter at rest and during exercise. *European Journal of Applied Physiology* 119:1525–1532. [doi:10.1007/s00421-019-04142-5](https://doi.org/10.1007/s00421-019-04142-5)\n- Bellenger CR et al. (2021). Wrist-based photoplethysmography assessment of heart rate and heart rate variability: validation of WHOOP. *Sensors* 21(10):3571. [doi:10.3390/s21103571](https://doi.org/10.3390/s21103571)\n- [Tarifs de l’abonnement WHOOP](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) et [page produit Polar H10](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor), consultés le 2026-10-02"
     }
   }
 }

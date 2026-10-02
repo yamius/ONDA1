@@ -1241,6 +1241,10 @@
     "breathe-to-relax": {
       "verdict": "最佳有证据支持的免费呼吸 App——由美军远程医疗部门针对 PTSD 和压力开发；临床可信度是其他免费 App 无法比拟的。",
       "productType": "美国国防部开发的免费腹式呼吸 App，用于缓解压力和 PTSD"
+    },
+    "polar-h10": {
+      "verdict": "你能买到的最精准的 HRV 设备——一件参考仪器，而非全天佩戴的可穿戴设备。",
+      "productType": "ECG 胸带"
     }
   },
   "comparisons": {
@@ -2007,6 +2011,71 @@
         }
       ],
       "content": "## 简短回答\n\n对大多数人来说，**Hooga HG500** 是首选：$359 即可获得标准的 660 + 850 nm 参数、3 年保修和 60 天退货。只有在有明确理由时才多花约三倍的钱——想要五种波长和落地支架就选 **Infraredi Pro Max 2.0**（$1,019），想要已在用品牌的大型面板且能接受 1 年保修就选 **Bon Charge Max**（$999）。\n\n| | Hooga HG500 | Bon Charge Max | Infraredi Pro Max 2.0 |\n|---|---|---|---|\n| 价格（2026-10-01 核实） | $359 | $999 | $1,019（原价 $1,199） |\n| 波长 | 660 + 850 nm | 660 + 850 nm | 五种 |\n| LED | 100 | 400 | 210 颗双透镜 |\n| 标称辐照度 | 6 英寸处 94 mW/cm² | >142 mW/cm²（未注明距离） | 未列出 |\n| 安装方式 | 门挂支架 + 悬挂套件；支架另购 | 门挂支架 | 附底座支架 |\n| 保修/试用 | 3 年 / 60 天退货 | 1 年 | 3 年 / 60 天试用 |\n\n关于名称的说明：这篇对比最初是 Hooga vs Bon Charge “Red Light Therapy Panel” vs Infraredi Pro 1500。后两者现已不再以该名称销售，因此表格使用了各品牌当前最接近的型号。\n\n## 什么时候选 Hooga HG500？\n\n如果预算是决定因素，并且你想以最低的靠谱价格获得光生物调节研究中最常用的两种波长，Hooga 就很合适。大多数首次购买者都应从这里开始。完整内容请看 [Hooga HG500 测评](/reviews/hooga-hg500)。\n\n## 什么时候选 Bon Charge？\n\n如果你已经在用 Bon Charge 的产品，想要同一品牌的大型半身面板，Max 就很合适。比 Hooga 多付的钱换来的是更大的面板、品牌知名度和公开的 EMF 数据——而不是更多波长——而且保修期更短。完整内容请看 [Bon Charge 测评](/reviews/bon-charge-red-light-panel)。\n\n## 什么时候选 Infraredi？\n\n如果你想要三者中最广的光谱、随附底座支架和 3 年保修，Infraredi 就很合适——价格与 Bon Charge Max 差不多。完整内容请看 [Infraredi 测评](/reviews/infraredi-pro-1500)。\n\n## 高端面板呢？\n\n如果预算已经到了 $1,000，[Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500)（$1,299，六种波长，FDA Class II 注册）值得一看。想看按同一标准排名的整个市场，请看 [2026 年最佳红光疗法面板](/reviews/compare/best-red-light-therapy-panels-2026)。"
+    },
+    "whoop-5-0-vs-polar-h10": {
+      "title": "Whoop 5.0 与 Polar H10 对比评测：HRV 精度与费用（2026）",
+      "description": "Whoop 5.0 与 Polar H10 测 HRV 怎么选：ECG 胸带（$105，无订阅）还是 24/7 恢复手环（每年 $199–$359）？精度、费用与适合人群一文看懂。",
+      "intro": "Whoop 5.0 和 Polar H10 其实不是同一类设备，但在重视 HRV 信号质量的用户的候选清单上，它们常常并列出现。Whoop 是以会员制销售、附带恢复指导的光学手环；Polar H10 则是代表消费级设备精度上限的 ECG 胸带。你要在持续的生活方式追踪与参考级测量之间做选择。",
+      "verdict": "两者解决的是不同的问题。想要持续的夜间 HRV 和恢复指导，选 Whoop；想在佩戴胸带时获得 ECG 级精度，选 Polar H10。许多认真对待 HRV 的用户两者都有。",
+      "bestForA": "如果持续的夜间 HRV 和每日 Recovery 评分是你的决定性标准——你想要一条全天候佩戴、能指导训练的手环，并且可以接受年度会员费——就选 Whoop 5.0。",
+      "bestForB": "如果你需要作为基准的 HRV 精度，用于固定的晨间测量流程或验证其他设备——一次购买的参考仪器，而不是生活方式可穿戴设备——就选 Polar H10。",
+      "axes": [
+        {
+          "name": "HRV 精度",
+          "note": "Polar H10：电信号 ECG；无论静息还是运动中，RR 间期都与 ECG 动态心电图（Holter）高度一致（Gilgen-Ammann 2019）。Whoop：光学 PPG；心率与 ECG 一致性良好，但在验证研究中 RMSSD 误差接近最小有意义变化（Bellenger 2021，基于 Whoop 2.0）。"
+        },
+        {
+          "name": "夜间持续追踪",
+          "note": "Whoop 在整夜持续追踪 HRV；H10 是测量或训练时才佩戴的胸带，不是 24/7 可穿戴设备。"
+        },
+        {
+          "name": "外形",
+          "note": "Whoop：轻巧的无屏手环，戴上即可忘记。Polar H10：胸带，需要电极与皮肤良好接触才能获得干净的信号。"
+        },
+        {
+          "name": "恢复与指导",
+          "note": "Whoop 的 Recovery 和 Strain 指导就是整个产品。Polar H10 只输出原始 RR 间期——分析应用需要你自己选。"
+        },
+        {
+          "name": "数据开放性",
+          "note": "Polar H10 通过蓝牙和 ANT+ 把原始逐搏（RR）数据传给几乎任何 HRV 应用。Whoop 将数据留在自家应用内，不向第三方应用提供原始 RR 数据流。"
+        },
+        {
+          "name": "续航与可靠性",
+          "note": "Polar H10：使用可更换的 CR2025 纽扣电池，最长 400 小时，可用多年。Whoop 5.0：配合滑入式电池包，每次充电 14 天以上——续航长，但需充电且与会员资格绑定。"
+        },
+        {
+          "name": "总成本（3 年）",
+          "note": "Whoop：三年 $597（One）、$717（Peak）或 $1,077（Life）。Polar H10：一次性约 $105。即使与最便宜的 Whoop 方案相比，Polar 的花费也只是零头。"
+        },
+        {
+          "name": "睡眠追踪",
+          "note": "Whoop 自动追踪睡眠；H10 不能——它不在夜间佩戴。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "测 HRV，Polar H10 比 Whoop 更准吗？",
+          "a": "是的。Polar H10 像 ECG 一样测量心脏的电信号，一项验证研究发现，其 RR 间期在静息和运动中都与 ECG 动态心电图高度吻合（Gilgen-Ammann et al., 2019）。Whoop 使用光学传感器：在验证中心率与 ECG 一致性良好，但 HRV（RMSSD）误差更大（Bellenger et al., 2021）。看夜间趋势 Whoop 够用；H10 才是参考标准。"
+        },
+        {
+          "q": "Whoop 和 Polar H10 价格差多少？",
+          "a": "Whoop 只能以会员制购买：WHOOP One 每年 $199，Peak $239，Life $359，均含手环。Polar H10 一次性约 $105（Polar 美国官网 $104.95），无需订阅。三年下来，Whoop 为 $597–$1,077，胸带约 $105。"
+        },
+        {
+          "q": "Polar H10 能代替 Whoop 吗？",
+          "a": "不太能。Polar H10 是胸带而非 24/7 可穿戴设备，因此无法自动获得夜间 HRV 或睡眠数据。如果你想要每日 Recovery 评分而不必每天早上戴胸带，Whoop 更合适。"
+        },
+        {
+          "q": "没有 Polar 手表能用 Polar H10 吗？",
+          "a": "可以。Polar H10 通过蓝牙和 ANT+ 把原始逐搏数据发送给几乎任何 HRV 应用，例如 Elite HRV、HRV4Training 或 Kubios。Polar 手表只是众多选择之一；胸带本身不限定应用。"
+        },
+        {
+          "q": "Whoop 和 Polar H10 可以一起用吗？",
+          "a": "可以，许多认真对待 HRV 的用户就是这么做的：Whoop 负责夜间持续趋势和恢复指导，Polar H10 用于晨间参考级读数，或核对手环的数据是否符合实际。两者能很好地互补。"
+        }
+      ],
+      "content": "## 简短回答\n\nPolar H10 测 HRV 更准——它是与临床 ECG 高度一致的 ECG 胸带，一次性约 $105，无需订阅。Whoop 5.0 精度较低，但每晚自动追踪 HRV 和睡眠，并转化为每日 Recovery 评分，每年 $199–$359。追求精度和开放数据，买 Polar H10；想要省心的 24/7 追踪和指导，买 Whoop。\n\n| | Whoop 5.0 | Polar H10 |\n|---|---|---|\n| 传感器 | 光学（PPG）手环 | 电信号 ECG 胸带 |\n| HRV 精度 | 适合看夜间趋势 | 参考级，接近临床 ECG |\n| 何时测量 | 全天候持续测量 | 仅在佩戴胸带时 |\n| 睡眠追踪 | 有，自动 | 无 |\n| 续航 | 14 天以上，可充电 | 最长 400 小时，可更换纽扣电池 |\n| 向其他应用提供原始 RR 数据 | 否 | 是，蓝牙和 ANT+ |\n| 价格 | 每年 $199 / $239 / $359（One / Peak / Life） | 一次性约 $105 |\n| 3 年成本 | $597–$1,077 | 约 $105 |\n\n## 以下情况选 Whoop 5.0…\n\n- 你希望每晚自动测量 HRV 和睡眠，无需任何操作；\n- 每日 Recovery 和 Strain 评分会真正改变你的训练方式；\n- 你可以接受按年支付会员费。\n\n详见我们的 [Whoop 5.0 评测](/reviews/whoop-5-0)。\n\n## 以下情况选 Polar H10…\n\n- 精度最重要——用于晨间 HRV 测量流程、HRV 生物反馈，或验证其他可穿戴设备；\n- 你想在自己选择的应用中使用原始逐搏数据；\n- 你宁愿一次付清，也不想订阅。\n\n详见我们的 [Polar H10 评测](/reviews/polar-h10)。\n\n## 关于精度，研究怎么说？\n\nECG 胸带是消费级 HRV 测量的参考标准。在一项验证研究中，Polar H10 的 RR 间期在静息和运动中都与医用 ECG 动态心电图高度吻合。Whoop 的验证（基于较早的 Whoop 2.0）发现心率与 ECG 一致性极佳，但 HRV 误差接近日常有意义的最小变化——看多日趋势没问题，读取单日的细微变化则不太可靠。要为任何数值找到参照，请看[各年龄段的正常 HRV](/articles/normal-hrv-by-age)。\n\n## 组合使用\n\nWhoop 提供每日持续信号；Polar H10 负责晨间参考测量。两者能很好地互补，许多投入的 HRV 训练者最终都会同时使用。\n\n## 相关对比\n\n还在考虑智能手表？请看 [Polar H10 vs Whoop 5.0 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-whoop-5-0-vs-garmin-venu-4)、[Polar H10 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-garmin-venu-4)，或 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026) 完整排名。\n\n## 参考来源\n\n- Gilgen-Ammann R, Schweizer T, Wyss T (2019). RR interval signal quality of a heart rate monitor and an ECG Holter at rest and during exercise. *European Journal of Applied Physiology* 119:1525–1532. [doi:10.1007/s00421-019-04142-5](https://doi.org/10.1007/s00421-019-04142-5)\n- Bellenger CR et al. (2021). Wrist-based photoplethysmography assessment of heart rate and heart rate variability: validation of WHOOP. *Sensors* 21(10):3571. [doi:10.3390/s21103571](https://doi.org/10.3390/s21103571)\n- [WHOOP 会员价格](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) 与 [Polar H10 产品页面](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor)，核实于 2026-10-02"
     }
   }
 }

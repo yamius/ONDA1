@@ -1264,6 +1264,10 @@
     "breathe-to-relax": {
       "verdict": "La migliore app di respirazione gratuita basata sulle evidenze — creata dalla telemedicina militare statunitense per PTSD e stress; una credibilità clinica che nessun’altra app gratuita eguaglia.",
       "productType": "App gratuita di respirazione diaframmatica creata dal DoD per stress e PTSD"
+    },
+    "polar-h10": {
+      "verdict": "Il dispositivo HRV più preciso che puoi comprare: uno strumento di riferimento, non un wearable da tutto il giorno.",
+      "productType": "Fascia toracica ECG"
     }
   },
   "comparisons": {
@@ -2030,6 +2034,71 @@
         }
       ],
       "content": "## Risposta breve\n\nPer la maggior parte delle persone la scelta è l’**Hooga HG500**: 359 $ per la configurazione standard 660 + 850 nm, 3 anni di garanzia e 60 giorni per il reso. Spendi circa tre volte tanto solo per un motivo preciso — l’**Infraredi Pro Max 2.0** (1.019 $) se vuoi cinque lunghezze d’onda e un supporto a pavimento, oppure il **Bon Charge Max** (999 $) se vuoi un grande pannello di un marchio che usi già e ti basta 1 anno di garanzia.\n\n| | Hooga HG500 | Bon Charge Max | Infraredi Pro Max 2.0 |\n|---|---|---|---|\n| Prezzo (verificato il 2026-10-01) | 359 $ | 999 $ | 1.019 $ (listino 1.199 $) |\n| Lunghezze d’onda | 660 + 850 nm | 660 + 850 nm | cinque |\n| LED | 100 | 400 | 210 a doppia lente |\n| Irradianza dichiarata | 94 mW/cm² a 6\" | >142 mW/cm² (senza distanza) | non indicata |\n| Montaggio | su porta + kit di sospensione; supporto a parte | su porta | supporto a pavimento incluso |\n| Garanzia / prova | 3 anni / 60 giorni per il reso | 1 anno | 3 anni / 60 giorni di prova |\n\nUna nota sui nomi: questo confronto è nato come Hooga vs il “Red Light Therapy Panel” di Bon Charge vs Infraredi Pro 1500. Nessuno degli ultimi due è più venduto con quel nome, quindi la tabella usa l’equivalente attuale più vicino di ciascun marchio.\n\n## Quando l’Hooga HG500 è la scelta giusta?\n\nSe il budget è il fattore decisivo e vuoi le due lunghezze d’onda usate dalla maggior parte della ricerca sulla fotobiomodulazione al prezzo serio più basso, Hooga è la scelta adatta. La maggior parte di chi compra per la prima volta dovrebbe partire da qui. Leggi la [recensione completa dell’Hooga HG500](/reviews/hooga-hg500).\n\n## Quando Bon Charge è la scelta giusta?\n\nSe sei già nell’ecosistema Bon Charge e vuoi un grande pannello a mezzo corpo dello stesso marchio, il Max è la scelta adatta. Il sovrapprezzo rispetto a Hooga paga un pannello più grande, la notorietà del marchio e valori EMF pubblicati — non lunghezze d’onda in più — e la garanzia è più breve. Leggi la [recensione completa di Bon Charge](/reviews/bon-charge-red-light-panel).\n\n## Quando Infraredi è la scelta giusta?\n\nSe vuoi lo spettro più ampio dei tre, un supporto a pavimento nella confezione e 3 anni di garanzia, Infraredi è la scelta adatta — a circa il prezzo del Bon Charge Max. Leggi la [recensione completa di Infraredi](/reviews/infraredi-pro-1500).\n\n## E i pannelli premium?\n\nSe sei già disposto a spendere 1.000 $, il [Mito Red MitoPRO 1500X](/reviews/mito-red-mitopro-1500) (1.299 $, sei lunghezze d’onda, registrato FDA Classe II) merita un’occhiata. Per l’intero mercato classificato con gli stessi criteri, vedi i [migliori pannelli per terapia a luce rossa del 2026](/reviews/compare/best-red-light-therapy-panels-2026)."
+    },
+    "whoop-5-0-vs-polar-h10": {
+      "title": "Whoop 5.0 vs Polar H10: confronto (2026)",
+      "description": "Per l’HRV la Polar H10 è più precisa: fascia ECG da $105 senza abbonamento. Whoop 5.0 monitora il recupero 24/7 per $199–$359 l’anno.",
+      "intro": "Whoop 5.0 e Polar H10 non sono davvero lo stesso tipo di dispositivo, ma finiscono nella stessa rosa di chi tiene alla qualità del segnale HRV. Whoop è una band ottica venduta in abbonamento con coaching sul recupero; Polar H10 è la fascia toracica ECG che fissa il tetto di precisione nel mercato consumer. La scelta è tra monitoraggio continuo nella vita quotidiana e misurazione di livello di riferimento.",
+      "verdict": "Risolvono compiti diversi. Whoop per l’HRV notturna continua con coaching sul recupero; Polar H10 per una precisione di livello ECG quando indossi la fascia. Molti utenti HRV esigenti li possiedono entrambi.",
+      "bestForA": "Scegli Whoop 5.0 se i criteri decisivi sono l’HRV notturna continua e un punteggio Recovery giornaliero: vuoi una band da indossare giorno e notte che guidi il tuo allenamento, e un abbonamento annuale ti sta bene.",
+      "bestForB": "Scegli Polar H10 se vuoi una precisione HRV di riferimento per un protocollo mattutino strutturato o per validare un altro dispositivo: uno strumento di riferimento da acquistare una volta, non un wearable da tutti i giorni.",
+      "axes": [
+        {
+          "name": "Precisione dell’HRV",
+          "note": "Polar H10: ECG elettrico; gli intervalli RR concordano strettamente con un Holter ECG a riposo e durante l’esercizio (Gilgen-Ammann 2019). Whoop: PPG ottica; la frequenza cardiaca concorda bene con l’ECG, ma l’errore sull’RMSSD si avvicinava alla minima variazione rilevante nella validazione (Bellenger 2021, su Whoop 2.0)."
+        },
+        {
+          "name": "Monitoraggio notturno continuo",
+          "note": "Whoop rileva l’HRV in modo continuo durante la notte; la H10 è una fascia che indossi per una misurazione o un allenamento, non un wearable 24/7."
+        },
+        {
+          "name": "Formato",
+          "note": "Whoop: band leggera senza schermo, la indossi e te ne dimentichi. Polar H10: fascia toracica che richiede il contatto degli elettrodi con la pelle per un segnale pulito."
+        },
+        {
+          "name": "Recupero e coaching",
+          "note": "Il coaching Recovery e Strain di Whoop è l’intero prodotto. Polar H10 fornisce intervalli RR grezzi: l’app di analisi la scegli tu."
+        },
+        {
+          "name": "Apertura dei dati",
+          "note": "Polar H10 trasmette dati grezzi battito per battito (RR) via Bluetooth e ANT+ a quasi ogni app HRV. Whoop tiene i dati nella propria app, senza flusso RR grezzo verso app di terze parti."
+        },
+        {
+          "name": "Batteria e affidabilità",
+          "note": "Polar H10: fino a 400 ore con una pila a bottone CR2025 sostituibile, durata di diversi anni. Whoop 5.0: oltre 14 giorni per ricarica con un pacco batteria a slitta: tanto, ma ricaricabile e legato all’abbonamento."
+        },
+        {
+          "name": "Costo totale (3 anni)",
+          "note": "Whoop: $597 (One), $717 (Peak) o $1,077 (Life) in tre anni. Polar H10: circa $105 una sola volta. Polar costa una frazione anche del piano Whoop più economico."
+        },
+        {
+          "name": "Monitoraggio del sonno",
+          "note": "Whoop monitora il sonno automaticamente; la H10 no, perché non si indossa di notte."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Polar H10 o Whoop: quale è più preciso per l’HRV?",
+          "a": "Polar H10. Misura il segnale elettrico del cuore come un ECG, e uno studio di validazione ha rilevato che i suoi intervalli RR corrispondevano strettamente a un Holter ECG a riposo e durante l’esercizio (Gilgen-Ammann et al., 2019). Whoop usa sensori ottici: nella sua validazione la frequenza cardiaca concordava bene con l’ECG, ma l’errore sull’HRV (RMSSD) era maggiore (Bellenger et al., 2021). Whoop va bene per i trend notturni; la H10 è il riferimento."
+        },
+        {
+          "q": "Quanto costa Whoop rispetto a Polar H10?",
+          "a": "Whoop si acquista solo in abbonamento: $199 l’anno per WHOOP One, $239 per Peak e $359 per Life, band inclusa. Polar H10 costa circa $105 una sola volta ($104.95 su Polar US), senza abbonamento. In tre anni sono $597–$1,077 per Whoop contro circa $105 per la fascia."
+        },
+        {
+          "q": "La Polar H10 può sostituire Whoop?",
+          "a": "Non proprio. Polar H10 è una fascia toracica, non un wearable 24/7, quindi non fornisce dati automatici di HRV notturna né di sonno. Se vuoi un punteggio Recovery giornaliero senza indossare una fascia ogni mattina, Whoop è il formato giusto."
+        },
+        {
+          "q": "La Polar H10 funziona senza orologio Polar?",
+          "a": "Sì. Polar H10 trasmette dati grezzi battito per battito via Bluetooth e ANT+ a quasi ogni app HRV, come Elite HRV, HRV4Training o Kubios. Un orologio Polar è solo una delle tante opzioni; la fascia funziona con qualsiasi app."
+        },
+        {
+          "q": "Ha senso usare Whoop e Polar H10 insieme?",
+          "a": "Molti utenti HRV esigenti lo fanno: Whoop per i trend notturni continui e il coaching sul recupero, Polar H10 per una lettura mattutina di livello di riferimento o per verificare che i numeri della band rispecchino la realtà. I due si integrano senza problemi."
+        }
+      ],
+      "content": "## La risposta breve\n\nPolar H10 è più precisa per l’HRV: è una fascia toracica ECG molto vicina all’ECG clinico, costa circa $105 una sola volta e non ha abbonamento. Whoop 5.0 è meno preciso, ma rileva HRV e sonno automaticamente ogni notte e li trasforma in un punteggio Recovery giornaliero, per $199–$359 l’anno. Compra Polar H10 per la precisione e i dati aperti; compra Whoop per un monitoraggio 24/7 senza sforzo e il coaching.\n\n| | Whoop 5.0 | Polar H10 |\n|---|---|---|\n| Sensore | Band ottica (PPG) | Fascia toracica ECG elettrica |\n| Precisione dell’HRV | Buona per i trend notturni | Livello di riferimento, vicina all’ECG clinico |\n| Quando misura | In continuo, giorno e notte | Solo mentre indossi la fascia |\n| Monitoraggio del sonno | Sì, automatico | No |\n| Batteria | 14+ giorni, ricaricabile | Fino a 400 h, pila a bottone sostituibile |\n| Dati RR grezzi ad altre app | No | Sì, Bluetooth e ANT+ |\n| Prezzo | $199 / $239 / $359 l’anno (One / Peak / Life) | Circa $105 una volta |\n| Costo in 3 anni | $597–$1,077 | Circa $105 |\n\n## Scegli Whoop 5.0 se…\n\n- vuoi HRV e sonno misurati ogni notte senza fare nulla;\n- un punteggio giornaliero di Recovery e Strain cambierà davvero il modo in cui ti alleni;\n- non ti pesa pagare un abbonamento annuale.\n\nTutti i dettagli nella nostra [recensione di Whoop 5.0](/reviews/whoop-5-0).\n\n## Scegli Polar H10 se…\n\n- la precisione conta più di tutto: per un protocollo HRV mattutino, per il biofeedback HRV o per verificare un altro wearable;\n- vuoi i dati grezzi battito per battito nell’app che preferisci;\n- preferisci pagare una volta invece di abbonarti.\n\nTutti i dettagli nella nostra [recensione di Polar H10](/reviews/polar-h10).\n\n## Cosa dice la ricerca sulla precisione?\n\nLe fasce toraciche ECG sono il riferimento consumer per l’HRV. In uno studio di validazione, gli intervalli RR di Polar H10 corrispondevano strettamente a un Holter ECG medico a riposo e durante l’esercizio. La validazione di Whoop (sul precedente Whoop 2.0) ha trovato un’ottima concordanza della frequenza cardiaca con l’ECG, ma un errore sull’HRV vicino alla minima variazione che conta giorno per giorno: va bene per i trend di più giorni, meno per leggere piccole variazioni di un singolo giorno. Per contestualizzare qualsiasi valore, vedi l’[HRV normale per età](/articles/normal-hrv-by-age).\n\n## Il caso ibrido\n\nWhoop per il segnale continuo quotidiano; Polar H10 per la misurazione di riferimento del mattino. I due si integrano senza problemi, e molti appassionati di allenamento basato sull’HRV finiscono per usarli entrambi.\n\n## Confronti correlati\n\nStai valutando anche uno smartwatch? Vedi [Polar H10 vs Whoop 5.0 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-whoop-5-0-vs-garmin-venu-4), [Polar H10 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-garmin-venu-4) o la classifica completa dei [migliori tracker HRV del 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Fonti\n\n- Gilgen-Ammann R, Schweizer T, Wyss T (2019). RR interval signal quality of a heart rate monitor and an ECG Holter at rest and during exercise. *European Journal of Applied Physiology* 119:1525–1532. [doi:10.1007/s00421-019-04142-5](https://doi.org/10.1007/s00421-019-04142-5)\n- Bellenger CR et al. (2021). Wrist-based photoplethysmography assessment of heart rate and heart rate variability: validation of WHOOP. *Sensors* 21(10):3571. [doi:10.3390/s21103571](https://doi.org/10.3390/s21103571)\n- [Prezzi dell’abbonamento WHOOP](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) e [pagina prodotto Polar H10](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor), verificati il 2026-10-02"
     }
   }
 }
