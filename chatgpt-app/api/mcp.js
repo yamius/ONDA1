@@ -13,7 +13,15 @@
 import { TOOLS } from '../lib/tools.js';
 import { WIDGETS } from '../lib/widgets.js';
 
-const SERVER_INFO = { name: 'onda-life', title: 'ONDA Life', version: '1.1.0' };
+export const SHORT_DESCRIPTION = 'HRV norms by age, guided breathing, free practices and honest wearable comparisons.';
+const SERVER_INFO = {
+  name: 'onda-life',
+  title: 'ONDA Life',
+  version: '1.2.0',
+  description: SHORT_DESCRIPTION,
+  websiteUrl: 'https://onda-life.com',
+  icons: [{ src: 'https://onda-chatgpt.vercel.app/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }],
+};
 const PROTOCOL_VERSION = '2025-06-18';
 // MCP Apps standard (ChatGPT rejects the old text/html+skybridge templates).
 const WIDGET_MIME = 'text/html;profile=mcp-app';
@@ -71,8 +79,9 @@ export async function handleRpc(message) {
         capabilities: { tools: {}, resources: {} },
         serverInfo: SERVER_INFO,
         instructions:
-          'ONDA Life tools: check an HRV number against age norms, run a breathing guide, suggest a short free practice, and compare wellness devices or apps from ONDA’s editorial reviews. ' +
-          'Not medical advice — for chest pain, fainting or severe symptoms tell the person to seek medical help and do not call a tool.',
+          'ONDA Life — ' + SHORT_DESCRIPTION + ' ' +
+          'Tools: check an HRV number against age norms, run a live breathing guide, suggest a free short practice, and compare wearables or wellness apps from ONDA’s independent reviews. ' +
+          'ONDA is a wellness tool, not a medical device. If the person reports chest pain, fainting, severe breathlessness or a racing heart that does not settle, do not interpret any numbers — tell them to seek urgent medical help.',
       });
     case 'notifications/initialized':
       return null;

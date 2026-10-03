@@ -16,6 +16,9 @@ import { appStoreUrl, siteUrl } from './links.js';
 const REVIEWS = JSON.parse(readFileSync(new URL('../data/reviews.json', import.meta.url), 'utf8'));
 const PRACTICES = JSON.parse(readFileSync(new URL('../data/practices.json', import.meta.url), 'utf8'));
 
+export const URGENT_MESSAGE =
+  'Chest pain, fainting or severe shortness of breath need medical attention now — call your local emergency number or see a doctor urgently. An HRV number cannot tell you whether these symptoms are serious.';
+
 export const SAFETY_NOTE =
   'Not medical advice. If you have chest pain, fainting, severe shortness of breath or a racing heart that does not settle, contact emergency services or a doctor now.';
 
@@ -43,7 +46,7 @@ export const checkHrv = {
     'Compare one heart rate variability (HRV) number with population norms for the person’s age. ' +
     'Use when someone asks whether their HRV is normal, good or low for their age. ' +
     'Apple Watch reports SDNN; Oura, Whoop, Garmin, Fitbit and Polar apps report RMSSD — the tool picks the right table from the device. ' +
-    'Do not use for symptoms (chest pain, fainting, palpitations): tell the person to seek medical help instead.',
+    'If the person reports acute symptoms (chest pain, fainting, severe breathlessness, a racing heart that does not settle), do not interpret any number: tell them to seek urgent medical help; if you call this tool at all, set red_flag_symptoms=true.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -54,6 +57,11 @@ export const checkHrv = {
         enum: Object.keys(DEVICE_METRIC),
         description: 'Where the number comes from. Ask if unknown; use "other" for any RMSSD source.',
       },
+      red_flag_symptoms: {
+        type: 'boolean',
+        description:
+          'true if the person mentions chest pain, fainting, severe shortness of breath, a racing or irregular heartbeat that does not settle, or similar acute symptoms. The tool then returns only urgent-care guidance, no interpretation.',
+      },
     },
     required: ['age', 'hrv_ms', 'device'],
     additionalProperties: false,
@@ -61,7 +69,13 @@ export const checkHrv = {
   annotations: READ_ONLY,
   invoking: 'Checking HRV norms…',
   invoked: 'HRV checked',
-  run({ age, hrv_ms, device }) {
+  run({ age, hrv_ms, device, red_flag_symptoms }) {
+    if (red_flag_symptoms === true || red_flag_symptoms === 'true') {
+      return {
+        structuredContent: { urgent: true, message: URGENT_MESSAGE },
+        text: URGENT_MESSAGE + ' Do not interpret the HRV number in this situation.',
+      };
+    }
     const metric = DEVICE_METRIC[device] ?? 'rmssd';
     const value = Math.round(Number(hrv_ms));
     if (!(Number(age) >= 18 && Number(age) <= 100) || !(value >= 3 && value <= 300)) {

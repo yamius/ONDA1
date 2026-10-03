@@ -59,6 +59,7 @@ const hrv = page(
 .big{font-size:28px;font-weight:700}`,
   `<div class="card" id="root"></div>`,
   `boot((d) => {
+  if (d.urgent) { $('#root').innerHTML = '<h2 class="warn">Please get medical help now</h2><p>' + esc(d.message) + '</p>'; return; }
   const pct = Math.max(2, Math.min(98, d.percentile));
   $('#root').innerHTML =
     '<h2>Your HRV for age ' + esc(d.age) + '</h2>' +

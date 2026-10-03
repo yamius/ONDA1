@@ -91,3 +91,16 @@ test('breathe_now accepts 478 sent as a number', async () => {
   assert.ok(!r.isError);
   assert.equal(r.structuredContent.technique, '478');
 });
+
+test('check_hrv with red-flag symptoms returns only urgent-care guidance', async () => {
+  const r = (await call('check_hrv', { age: 50, hrv_ms: 15, device: 'apple_watch', red_flag_symptoms: true })).result;
+  assert.equal(r.structuredContent.urgent, true);
+  assert.equal(r.structuredContent.percentile, undefined);
+  assert.match(r.content[0].text, /emergency|urgent/i);
+});
+
+test('server manifest carries our own description and icon', async () => {
+  const r = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'initialize', params: {} });
+  assert.match(r.result.serverInfo.description, /^HRV norms by age/);
+  assert.match(r.result.serverInfo.icons[0].src, /icon-512\.png$/);
+});
