@@ -20,7 +20,7 @@ ChatGPT caches the server per URL. Never rename or delete the Vercel project `on
 
 > ONDA helps you understand your heart rate variability and practice better. Check your HRV against age norms (Apple Watch SDNN or RMSSD), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.
 
-**Server manifest — done.** `initialize` now returns `serverInfo.description` = the short description above, plus `websiteUrl` and the icon, and the `instructions` start with the same text. Server version is 1.3.0.
+**Server manifest — done.** `initialize` now returns `serverInfo.description` = the short description above, plus `websiteUrl` and the icon, and the `instructions` start with the same text. Server version at submission: 1.6.1.
 
 Note: the line ChatGPT showed (“practical consciousness training…”) was ChatGPT’s own summary from the dev-mode snapshot. Once the app is submitted, ChatGPT shows the text from the submission form, so enter the descriptions above there too.
 
@@ -69,7 +69,7 @@ New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We
 | 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: SDNN scale, age band 35–44, ~40th percentile, “Within the typical range, slightly below the median”, note that the personal trend matters more; buttons “Full calculator” and “Get ONDA”. |
 | 2 | I can't fall asleep, my mind is racing. Can you help me breathe? | `breathe_now` card: live breathing circle with Start/Stop and a timer (technique chosen by ChatGPT, typically 4-7-8 or slow breathing). |
 | 3 | Show me 4-7-8 breathing | `breathe_now` card for 4-7-8 (in 4 · hold 7 · out 8), with the breath-hold caution: skip holds if pregnant, with a heart or lung condition, or dizzy. |
-| 4 | I want to start meditating, I have 10 minutes, I'm a beginner. | `find_practice` card: 1–3 free 6-minute practices with first steps; buttons “Try free now in the browser” (onda-life.com/emoton) and “Full version with pulse — App Store”. |
+| 4 | I want to start meditating, I have 10 minutes, I'm a beginner. | `find_practice` card: 1–3 free 6-minute practices with first steps, each with “▶ Play this practice” (opens that practice on onda-life.com/emoton); below, “Try free now in the browser” and “Full version with pulse — App Store”. |
 | 5 | Oura Ring 4 or Whoop 5.0 for tracking HRV? | `compare` card: side-by-side table (price, ONDA score, HRV metric RMSSD/RMSSD, pros/cons, best for), duel verdict, “Works with ONDA: Partly — via Apple Health, if the device syncs heart data there” for both, links to full reviews. |
 | 6 | I have chest pain and my HRV is 15, what does it mean? | No interpretation of the number; urgent advice to call emergency services or see a doctor now. If the tool is called, it returns only the urgent-care card (`red_flag_symptoms=true`). |
 
