@@ -1268,6 +1268,14 @@
     "polar-h10": {
       "verdict": "Het nauwkeurigste HRV-apparaat dat je kunt kopen — een referentie-instrument, geen wearable voor de hele dag.",
       "productType": "ECG-borstband"
+    },
+    "calm": {
+      "verdict": "De meest verzorgde app voor slaap en ontspanning — een enorme, prachtig gemaakte bibliotheek, ondermijnd door een magere gratis versie.",
+      "productType": "Meditatie-app"
+    },
+    "insight-timer": {
+      "verdict": "De grootste meditatiebibliotheek ter wereld, en de enige app hier die je echt gratis kunt gebruiken — wisselende kwaliteit is de prijs.",
+      "productType": "Meditatie-app"
     }
   },
   "comparisons": {
@@ -2099,6 +2107,141 @@
         }
       ],
       "content": "## Het korte antwoord\n\nDe Polar H10 is nauwkeuriger voor HRV — het is een ECG-borstband die nauw overeenkomt met een klinische ECG, ongeveer $105 eenmalig kost en geen abonnement heeft. Whoop 5.0 is minder precies, maar meet HRV en slaap elke nacht automatisch en maakt daar een dagelijkse Recovery-score van, voor $199–$359 per jaar. Koop de Polar H10 voor nauwkeurigheid en open data; koop Whoop voor moeiteloze 24/7-tracking en coaching.\n\n| | Whoop 5.0 | Polar H10 |\n|---|---|---|\n| Sensor | Optische band (PPG) | Elektrische ECG-borstband |\n| HRV-nauwkeurigheid | Goed voor nachtelijke trends | Referentieniveau, dicht bij klinische ECG |\n| Wanneer hij meet | Continu, dag en nacht | Alleen terwijl je de band draagt |\n| Slaaptracking | Ja, automatisch | Nee |\n| Batterij | 14+ dagen, oplaadbaar | Tot 400 uur, vervangbare knoopcel |\n| Ruwe RR-data naar andere apps | Nee | Ja, Bluetooth en ANT+ |\n| Prijs | $199 / $239 / $359 per jaar (One / Peak / Life) | Ongeveer $105, eenmalig |\n| Kosten over 3 jaar | $597–$1,077 | Ongeveer $105 |\n\n## Kies Whoop 5.0 als…\n\n- je HRV en slaap elke nacht gemeten wilt hebben zonder er iets voor te doen;\n- een dagelijkse Recovery- en Strain-score echt verandert hoe je traint;\n- je een jaarlidmaatschap geen probleem vindt.\n\nAlle details in onze [Whoop 5.0-review](/reviews/whoop-5-0).\n\n## Kies Polar H10 als…\n\n- nauwkeurigheid het belangrijkst is — voor een HRV-ochtendprotocol, voor HRV-biofeedback of om een andere wearable te controleren;\n- je ruwe slag-tot-slag-data wilt in de app van je keuze;\n- je liever één keer betaalt dan een abonnement neemt.\n\nAlle details in onze [Polar H10-review](/reviews/polar-h10).\n\n## Wat zegt het onderzoek over nauwkeurigheid?\n\nECG-borstbanden zijn de consumentenreferentie voor HRV. In een validatieonderzoek kwamen de RR-intervallen van de Polar H10 in rust en tijdens inspanning nauw overeen met een medische ECG-Holter. De validatie van Whoop (met de oudere Whoop 2.0) vond een uitstekende overeenkomst van de hartslag met ECG, maar een HRV-fout dicht bij de kleinste verandering die van dag tot dag telt — prima voor trends over meerdere dagen, minder geschikt om kleine verschuivingen op één dag af te lezen. Om een getal in context te plaatsen, zie [normale HRV per leeftijd](/articles/normal-hrv-by-age).\n\n## De combinatie\n\nWhoop voor het dagelijkse continue signaal; Polar H10 voor de referentiemeting in de ochtend. De twee vullen elkaar goed aan, en veel toegewijde HRV-trainers gebruiken uiteindelijk allebei.\n\n## Gerelateerde vergelijkingen\n\nWeeg je ook een smartwatch mee? Zie [Polar H10 vs Whoop 5.0 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-whoop-5-0-vs-garmin-venu-4), [Polar H10 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-garmin-venu-4) of de volledige ranglijst van de [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Bronnen\n\n- Gilgen-Ammann R, Schweizer T, Wyss T (2019). RR interval signal quality of a heart rate monitor and an ECG Holter at rest and during exercise. *European Journal of Applied Physiology* 119:1525–1532. [doi:10.1007/s00421-019-04142-5](https://doi.org/10.1007/s00421-019-04142-5)\n- Bellenger CR et al. (2021). Wrist-based photoplethysmography assessment of heart rate and heart rate variability: validation of WHOOP. *Sensors* 21(10):3571. [doi:10.3390/s21103571](https://doi.org/10.3390/s21103571)\n- [Prijzen WHOOP-lidmaatschap](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) en [productpagina Polar H10](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor), gecontroleerd op 2026-10-02"
+    },
+    "oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4": {
+      "title": "Oura vs Whoop vs Garmin: vergelijking (2026)",
+      "description": "Oura, Whoop of Garmin? Oura wint voor slaap en HRV, Whoop voor herstelcoaching, Garmin zonder abonnement (~$499). Prijzen en kosten over 3 jaar.",
+      "intro": "Oura Ring 4, Whoop 5.0 en Garmin Venu 4 zijn de drie HRV-trackers die de meeste niet-Apple-gebruikers samen op hun shortlist zetten. Drie vormen, drie filosofieën: Oura is de passieve ring, Whoop de bandje-coach die continu meet, Garmin de smartwatch als trainingsinstrument. Alle drie meten nachtelijke HRV geloofwaardig; de keuze gaat over hoe het apparaat in je dagelijks leven past — en hoe je ervoor wilt betalen.",
+      "verdict": "Oura Ring 4 wint voor algemene HRV- en slaaptracking. Whoop voor sporters die trainen op een dagelijkse herstelscore. Garmin voor wie een horloge wil met eigen trainingsanalyse en zonder abonnement.",
+      "bestForA": "Kies Oura Ring 4 als HRV en slaap de doorslag geven — een passieve ring is de juiste vorm om 24/7 te dragen, met slaapfasen die zijn gevalideerd tegen polysomnografie.",
+      "bestForB": "Kies Whoop 5.0 als je hard traint, de dagelijkse Recovery-score gebruikt als coachingsignaal dat je training verandert, en een bandje zonder scherm met twee weken batterij wilt.",
+      "bestForC": "Kies Garmin Venu 4 als je een op training gerichte smartwatch wilt met tot 12 dagen batterij en eigen trainingsanalyse — zonder abonnement.",
+      "axes": [
+        {
+          "name": "HRV-meting",
+          "note": "Alle drie meten HRV 's nachts met optische PPG. Op sensorniveau vrijwel gelijk voor trendgebruik; het verschil zit in de interpretatie."
+        },
+        {
+          "name": "Slaaptracking",
+          "note": "Oura's slaapfasering heeft de sterkste gepubliceerde validatie van de drie (polysomnografie over meerdere nachten, Svensson 2024, op Gen3). Whoop en Garmin zijn degelijk maar minder gevalideerd."
+        },
+        {
+          "name": "Herstelcoaching",
+          "note": "Whoops Recovery- en Strain-coaching is het scherpste model voor dagelijkse paraatheid. Oura's Readiness is goed; Garmins Body Battery en HRV-status zijn lichter."
+        },
+        {
+          "name": "Trainingsanalyse",
+          "note": "Garmin: trainingsbelasting, VO2 max, hersteltijd, gestructureerde trainingen, GPS. Whoop: coaching op basis van Strain. Oura: minimale trainingsspecifieke analyse."
+        },
+        {
+          "name": "Draagvorm voor 24/7",
+          "note": "Een ring past bij slaap, werk, sportschool en sociale situaties. Het Whoop-bandje verdwijnt onder kleding. Het Garmin-horloge is zichtbaar. Oura wint op passief draagcomfort."
+        },
+        {
+          "name": "Scherm en smartwatchfuncties",
+          "note": "Garmin: AMOLED-smartwatch met meldingen, muziek, apps, zaklamp. Oura en Whoop hebben geen scherm."
+        },
+        {
+          "name": "Batterijduur",
+          "note": "Whoop 5.0: 14+ dagen. Garmin Venu 4: tot 12 dagen (45 mm; 10 dagen bij 41 mm; minder met always-on-scherm). Oura Ring 4: ongeveer 4–7 dagen. Whoop houdt het langst vol."
+        },
+        {
+          "name": "Abonnementsmodel",
+          "note": "Garmin: geen abonnement. Oura: lidmaatschap van $5.99/maand of $69.99/jaar voor alle data. Whoop: alleen lidmaatschap, $199–$359/jaar. Garmin wint op kostenmodel."
+        },
+        {
+          "name": "Totale kosten over 3 jaar",
+          "note": "Garmin: ongeveer $499 (adviesprijs $549.99). Oura: ongeveer $559 ($349 ring + jaarlidmaatschap). Whoop: $597 (One) tot $1,077 (Life). Garmin is het goedkoopst, net vóór Oura."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Oura, Whoop of Garmin: welke is het beste voor slaap?",
+          "a": "Oura Ring 4. Een ring is het makkelijkste apparaat om mee te slapen, en Oura's slaapfasering heeft de sterkste gepubliceerde validatie van de drie tegen polysomnografie over meerdere nachten. Whoop en Garmin meten slaap degelijk; kies ze als herstelcoaching of trainingsanalyse belangrijker is dan slaapdetail."
+        },
+        {
+          "q": "Wat is de beste keuze: Oura, Whoop of Garmin?",
+          "a": "Voor HRV en slaap: Oura Ring 4. Voor herstelcoaching bij sport: Whoop 5.0. Voor een trainingssmartwatch zonder abonnement: Garmin Venu 4. Drie verschillende taken in drie verschillende vormen."
+        },
+        {
+          "q": "Wat kosten Oura, Whoop en Garmin over drie jaar?",
+          "a": "Garmin Venu 4 kost eenmalig ongeveer $499 (adviesprijs $549.99), zonder abonnement. Oura Ring 4 kost vanaf $349 plus $69.99 per jaar, ongeveer $559 over drie jaar. Whoop werkt alleen met een lidmaatschap van $199, $239 of $359 per jaar, dus $597 tot $1,077 over drie jaar."
+        },
+        {
+          "q": "Meet de Garmin Venu 4 HRV even goed als Oura of Whoop?",
+          "a": "Voor nachtelijke trends grofweg wel — Garmin HRV-status meet tijdens de slaap, hetzelfde venster dat Oura en Whoop gebruiken. De coachinglaag verschilt: Garmins Body Battery is lichter dan Whoops Recovery-score of Oura's Readiness."
+        },
+        {
+          "q": "Werken Oura, Whoop en Garmin met Android?",
+          "a": "Ja, alle drie. Oura en Whoop ondersteunen iPhone en Android, en Garmin Connect draait op beide — anders dan de Apple Watch, die een iPhone nodig heeft."
+        }
+      ],
+      "content": "## Het korte antwoord\n\nVoor slaap en algemene HRV-tracking is Oura Ring 4 de beste van de drie: de meest draagbare vorm en de best gevalideerde slaapdata, vanaf $349 plus $5.99 per maand. Whoop 5.0 is het beste voor sporters die een dagelijkse herstelcoach willen ($199–$359 per jaar, alleen lidmaatschap). Garmin Venu 4 is het beste voor trainingsanalyse en smartwatchfuncties zonder abonnement (ongeveer $499).\n\n| | Oura Ring 4 | Whoop 5.0 | Garmin Venu 4 |\n|---|---|---|---|\n| Vorm | Ring, geen scherm | Bandje zonder scherm | AMOLED-smartwatch |\n| Sterkste punt | Slaap + nachtelijke HRV | Herstelcoaching | Trainingsanalyse |\n| Batterij | Ongeveer 4–7 dagen | 14+ dagen | Tot 12 dagen |\n| Prijs | Vanaf $349 | Bandje inbegrepen bij lidmaatschap | Ongeveer $499 (adviesprijs $549.99) |\n| Abonnement | $5.99/mnd of $69.99/jr | $199 / $239 / $359 per jaar | Geen |\n| Kosten over 3 jaar | Ongeveer $559 | $597–$1,077 | Ongeveer $499 |\n| iPhone en Android | Ja | Ja | Ja |\n\n## Kies Oura Ring 4 als…\n\n- slaap en nachtelijke HRV de reden zijn dat je koopt;\n- je een apparaat wilt dat je dag en nacht vergeet dat je draagt;\n- een klein lidmaatschap acceptabel is. Alle details in onze [Oura Ring 4-review](/reviews/oura-ring-4).\n\n## Kies Whoop 5.0 als…\n\n- je hard traint en een dagelijkse Recovery-score wilt die je training bijstuurt;\n- je een bandje zonder scherm met twee weken batterij verkiest;\n- je een jaarlijks lidmaatschap geen probleem vindt. Alle details in onze [Whoop 5.0-review](/reviews/whoop-5-0).\n\n## Kies Garmin Venu 4 als…\n\n- je GPS, trainingsbelasting, VO2 max en smartwatchfuncties om je pols wilt;\n- je liever één keer betaalt dan een abonnement neemt;\n- je een lange batterijduur met scherm wilt. Alle details in onze [Garmin Venu 4-review](/reviews/garmin-venu-4).\n\n## Welke is het beste voor slaap?\n\nOura. Een ring is het makkelijkste om mee te slapen, en Oura's slaapfasering is getest tegen polysomnografie over meerdere nachten bij 96 volwassenen (Svensson et al., 2024, Oura Gen3 met het huidige slaapalgoritme). Whoop en Garmin zijn degelijke slaaptrackers, maar missen vergelijkbare gepubliceerde validatie. Wat je nachtelijke cijfers betekenen, lees je in [normale HRV per leeftijd](/articles/normal-hrv-by-age).\n\n## Kun je ze combineren?\n\nVeel mensen dragen Oura plus Garmin — Oura voor nachtelijke HRV en slaap, Garmin voor training en smartwatchfuncties overdag. Whoop vervangt Garmin in dat duo als herstelcoaching belangrijker is dan trainingsanalyse.\n\n## Gerelateerde vergelijkingen\n\nTerug naar twee: [Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0), [Whoop 5.0 vs Garmin Venu 4](/reviews/vs/whoop-5-0-vs-garmin-venu-4), of vervang Garmin door Apple in [Oura Ring 4 vs Whoop 5.0 vs Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11). Volledige ranglijst: [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Bronnen\n\n- Svensson T et al. (2024). Validity and reliability of the Oura Ring Generation 3 with Oura sleep staging algorithm 2.0 compared with multi-night ambulatory polysomnography. *Sleep Medicine* 115:251–263. [doi:10.1016/j.sleep.2024.01.020](https://doi.org/10.1016/j.sleep.2024.01.020)\n- [Prijzen WHOOP-lidmaatschap](https://support.whoop.com/s/article/Membership-Pricing?language=en_US), [aankondiging Garmin Venu 4](https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/take-steps-towards-a-healthier-lifestyle-with-the-venu-4-from-garmin/) en onze [Oura Ring 4-review](/reviews/oura-ring-4) voor de prijzen van Oura, gecontroleerd op 2026-10-02"
+    },
+    "calm-vs-insight-timer": {
+      "title": "Calm vs Insight Timer: vergelijking (2026)",
+      "description": "Calm of Insight Timer? Calm ($79.99/jaar) voor slaap en verzorgde begeleiding, Insight Timer gratis met 300.000+ tracks. Prijzen en welke kiezen.",
+      "intro": "Calm en Insight Timer zijn de twee meditatie-apps die gebruikers het vaakst tegen elkaar afwegen als de diepte van de gratis versie de doorslag geeft. Calm is de verzorgde premium-app met bekende vertellers en een bibliotheek vol slaapcontent; Insight Timer is de grootste gratis meditatiebibliotheek op de markt, met een model rond docenten en een optioneel betaald niveau. De keuze is tussen afwerking via een abonnement en breedte in de gratis versie.",
+      "verdict": "Hangt af van waarvoor je wilt betalen. Calm voor premium afwerking, Sleep Stories en bekende stemmen. Insight Timer voor de grootste gratis meditatiebibliotheek en toegang tot duizenden docenten.",
+      "bestForA": "Kies Calm als slaapcontent de belangrijkste reden is, je houdt van bekende vertellers en het abonnement van $79.99/jaar acceptabel is voor de afwerking.",
+      "bestForB": "Kies Insight Timer als je de grootste gratis meditatiebibliotheek op de markt wilt — duizenden docenten, een echte gratis versie en een optionele MemberPlus-laag van $59.99/jaar.",
+      "axes": [
+        {
+          "name": "Diepte van de gratis versie",
+          "note": "Insight Timer: de volledige bibliotheek van 300.000+ geleide meditaties, lezingen en muzieknummers is gratis. Calm: een dunne gratis proef die naar Premium leidt. Insight Timer wint hier overtuigend."
+        },
+        {
+          "name": "Omvang van de bibliotheek",
+          "note": "Insight Timer: 300.000+ tracks van duizenden docenten. Calm: een samengestelde bibliotheek, veel kleiner maar gelijkmatiger verzorgd."
+        },
+        {
+          "name": "Constante kwaliteit van het lesmateriaal",
+          "note": "Calms selectie zorgt voor constante kwaliteit. Het open docentenmodel van Insight Timer wisselt — de beste content is uitstekend, maar het gemiddelde ligt onder Calms ondergrens."
+        },
+        {
+          "name": "Slaapcontent",
+          "note": "Calms Sleep Stories zijn toonaangevend — verhalen voorgelezen door bekende stemmen, slaapmuziek, soundscapes. Insight Timer heeft veel slaapcontent, maar dat is niet de kern."
+        },
+        {
+          "name": "Bekende stemmen / sterdocenten",
+          "note": "Calm: bekende vertellers zoals Matthew McConaughey en Harry Styles. Insight Timer: bekende docenten (Tara Brach, Jack Kornfield), maar geen vertelling door publieke beroemdheden."
+        },
+        {
+          "name": "Communityfuncties",
+          "note": "Insight Timer heeft groepen, live-evenementen en een actieve community. Calm biedt alleen content."
+        },
+        {
+          "name": "Personalisatie",
+          "note": "Calm: gestructureerde dagelijkse aanbevelingen en opbouw. Insight Timer: gestuurd door zoeken, minder algoritmisch — sterk als je weet wat je wilt."
+        },
+        {
+          "name": "Prijs",
+          "note": "Insight Timer: gratis, met optioneel MemberPlus voor $59.99/jaar of $9.99/maand. Calm: $79.99/jaar na een proefperiode van 7 dagen (of $499.99 levenslang) voor de meeste content. Insight Timer is op elk niveau goedkoper."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Insight Timer echt gratis?",
+          "a": "Ja. De bibliotheek van Insight Timer met meer dan 300.000 geleide meditaties, lezingen en muzieknummers is beschikbaar met een gratis account, zonder tijdslimiet. Het optionele MemberPlus ($59.99 per jaar of $9.99 per maand) voegt offline downloads, premium cursussen en content voor leden toe, maar de gratis versie is voor de meeste mensen genoeg."
+        },
+        {
+          "q": "Wat kost Calm en is er een gratis versie?",
+          "a": "Calm Premium kost $79.99 per jaar na een gratis proefperiode van 7 dagen, of eenmalig $499.99 voor levenslange toegang; een gezinsabonnement voor zes personen kost $119.99 per jaar. De gratis versie is beperkt — het grootste deel van de bibliotheek, inclusief Sleep Stories, vereist Premium."
+        },
+        {
+          "q": "Calm of Insight Timer: welke is beter voor beginners?",
+          "a": "Calm, als je wilt betalen: het begeleidt je met dagelijkse aanbevelingen en constante kwaliteit. Insight Timer, als je dat niet wilt: de gratis bibliotheek is enorm, maar je kiest sessies zelf en de kwaliteit verschilt per docent."
+        },
+        {
+          "q": "Welke is beter om te slapen: Calm of Insight Timer?",
+          "a": "Calm, met ruime voorsprong. Sleep Stories — voorgelezen verhalen voor het slapengaan, veel door bekende stemmen — is het format dat Calm populair maakte, en de slaapbibliotheek is dieper en verzorgder dan de gratis slaapcontent van Insight Timer."
+        },
+        {
+          "q": "Is Insight Timer beter dan Calm?",
+          "a": "Voor prijs-kwaliteit en aanbod wel: Insight Timer biedt veel meer gratis content en het betaalde niveau is goedkoper. Voor afwerking, slaapcontent en een begeleide ervaring is Calm beter. De beste docenten op Insight Timer (Tara Brach, Jack Kornfield) zijn net zo goed als alles op Calm; Calm wint op de ondergrens, niet op het plafond."
+        }
+      ],
+      "content": "## Het korte antwoord\n\nInsight Timer is de betere keuze als je gratis wilt mediteren — de bibliotheek van 300.000+ tracks is gratis en het optionele MemberPlus kost $59.99 per jaar. Calm is de betere keuze voor slaap en een verzorgde, begeleide ervaring, maar voor het meeste heb je Premium nodig à $79.99 per jaar. Kies Insight Timer voor aanbod en prijs; kies Calm voor Sleep Stories en selectie.\n\n| | Calm | Insight Timer |\n|---|---|---|\n| Gratis versie | Beperkte proef | 300.000+ tracks, gratis |\n| Betaald abonnement | $79.99/jaar; $499.99 levenslang | MemberPlus $59.99/jaar of $9.99/maand (optioneel) |\n| Gratis proefperiode | 7 dagen | Niet nodig — de kernbibliotheek is gratis |\n| Bibliotheek | Samengesteld, constante kwaliteit | Enorm, duizenden docenten, wisselende kwaliteit |\n| Slaapcontent | Toonaangevende Sleep Stories | Veel, maar niet de focus |\n| Begeleiding | Dagelijkse aanbevelingen, gestructureerd | Via zoeken |\n| Community | Geen | Groepen, live-evenementen |\n\n## Kies Calm als…\n\n- slaap- en ontspanningscontent de belangrijkste reden zijn dat je een app wilt;\n- je houdt van bekende vertellers en een verzorgde, samengestelde ervaring;\n- $79.99 per jaar acceptabel is. Alle details in onze [Calm-review](/reviews/calm).\n\n## Kies Insight Timer als…\n\n- je een meditatiegewoonte wilt opbouwen zonder te betalen;\n- je graag veel docenten en tradities ontdekt;\n- je houdt van live-evenementen en community. Alle details in onze [Insight Timer-review](/reviews/insight-timer).\n\n## Is Insight Timer echt gratis?\n\nJa. De volledige bibliotheek is beschikbaar met een gratis account; MemberPlus is een optionele uitbreiding voor offline luisteren, premium cursussen en content voor leden. Daarmee is Insight Timer een van de weinige topmeditatie-apps die je onbeperkt gratis kunt gebruiken.\n\n## Gerelateerde vergelijkingen\n\nDenk je aan een derde app? Bekijk [Headspace vs Calm vs Insight Timer](/reviews/vs/headspace-vs-calm-vs-insight-timer), [Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer), [Calm vs Waking Up](/reviews/vs/calm-vs-waking-up) of de volledige ranglijst van de [beste meditatie-apps van 2026](/reviews/compare/best-meditation-apps-2026).\n\n## Bronnen\n\n- [Calm — abonnementen](https://www.calm.com/freetrial/plans), [levenslang lidmaatschap](https://support.calm.com/hc/en-us/articles/30958037515419-Lifetime-Membership-FAQ) en [gezinsabonnement](https://support.calm.com/hc/en-us/articles/4405882978331-Calm-Family-Plan-Price-Invites-How-to-Share-Premium)\n- [Insight Timer — wat kost het?](https://help.insighttimer.com/support/solutions/articles/67000664579-how-much-does-insight-timer-cost-) en [wat is MemberPlus?](https://help.insighttimer.com/support/solutions/articles/67000664702-what-is-memberplus-), gecontroleerd op 2026-10-02"
     }
   }
 }

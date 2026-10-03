@@ -1268,6 +1268,14 @@
     "polar-h10": {
       "verdict": "O dispositivo de VFC mais preciso que você pode comprar: um instrumento de referência, não um wearable para o dia todo.",
       "productType": "Cinta peitoral ECG"
+    },
+    "calm": {
+      "verdict": "O app de sono e relaxamento mais caprichado: uma biblioteca enorme e muito bem-feita, prejudicada por uma versão gratuita pequena.",
+      "productType": "App de meditação"
+    },
+    "insight-timer": {
+      "verdict": "A maior biblioteca de meditação do mundo e o único app desta comparação que você pode realmente usar de graça; o preço é a qualidade variável.",
+      "productType": "App de meditação"
     }
   },
   "comparisons": {
@@ -2099,6 +2107,141 @@
         }
       ],
       "content": "## A resposta curta\n\nO Polar H10 é mais preciso para VFC: é uma cinta peitoral ECG que acompanha de perto o ECG clínico, custa cerca de $105 uma única vez e não tem assinatura. O Whoop 5.0 é menos preciso, mas registra VFC e sono automaticamente toda noite e os transforma em uma pontuação diária de Recovery, por $199–$359 por ano. Compre o Polar H10 pela precisão e pelos dados abertos; compre o Whoop pelo monitoramento 24/7 sem esforço e pelo coaching.\n\n| | Whoop 5.0 | Polar H10 |\n|---|---|---|\n| Sensor | Pulseira óptica (PPG) | Cinta peitoral de ECG elétrico |\n| Precisão da VFC | Boa para tendências noturnas | Nível de referência, próxima do ECG clínico |\n| Quando mede | Continuamente, dia e noite | Só enquanto você usa a cinta |\n| Monitoramento do sono | Sim, automático | Não |\n| Bateria | 14+ dias, recarregável | Até 400 h, bateria de botão substituível |\n| Dados RR brutos para outros apps | Não | Sim, Bluetooth e ANT+ |\n| Preço | $199 / $239 / $359 por ano (One / Peak / Life) | Cerca de $105 uma vez |\n| Custo em 3 anos | $597–$1,077 | Cerca de $105 |\n\n## Escolha o Whoop 5.0 se…\n\n- você quer VFC e sono medidos toda noite sem fazer nada;\n- uma pontuação diária de Recovery e Strain vai realmente mudar a forma como você treina;\n- você não se importa em pagar uma assinatura anual.\n\nTodos os detalhes na nossa [análise do Whoop 5.0](/reviews/whoop-5-0).\n\n## Escolha o Polar H10 se…\n\n- a precisão é o mais importante: para um protocolo matinal de VFC, para biofeedback de VFC ou para conferir outro wearable;\n- você quer dados brutos batimento a batimento no app de sua escolha;\n- você prefere pagar uma vez a assinar.\n\nTodos os detalhes na nossa [análise do Polar H10](/reviews/polar-h10).\n\n## O que a pesquisa diz sobre a precisão?\n\nCintas peitorais ECG são a referência de consumo para VFC. Em um estudo de validação, os intervalos RR do Polar H10 coincidiram de perto com um Holter ECG médico em repouso e durante o exercício. A validação do Whoop (com o antigo Whoop 2.0) encontrou excelente concordância da frequência cardíaca com o ECG, mas um erro de VFC próximo da menor mudança que importa no dia a dia: bom para tendências de vários dias, menos para ler pequenas variações de um único dia. Para colocar qualquer número em contexto, veja a [VFC normal por idade](/articles/normal-hrv-by-age).\n\n## O caso híbrido\n\nWhoop para o sinal contínuo diário; Polar H10 para a medição de referência pela manhã. Os dois se complementam sem problemas, e muitos praticantes dedicados de treino com VFC acabam usando ambos.\n\n## Comparações relacionadas\n\nVai incluir um smartwatch na decisão? Veja [Polar H10 vs Whoop 5.0 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-whoop-5-0-vs-garmin-venu-4), [Polar H10 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-garmin-venu-4) ou o ranking completo dos [melhores monitores de VFC de 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Fontes\n\n- Gilgen-Ammann R, Schweizer T, Wyss T (2019). RR interval signal quality of a heart rate monitor and an ECG Holter at rest and during exercise. *European Journal of Applied Physiology* 119:1525–1532. [doi:10.1007/s00421-019-04142-5](https://doi.org/10.1007/s00421-019-04142-5)\n- Bellenger CR et al. (2021). Wrist-based photoplethysmography assessment of heart rate and heart rate variability: validation of WHOOP. *Sensors* 21(10):3571. [doi:10.3390/s21103571](https://doi.org/10.3390/s21103571)\n- [Preços da assinatura WHOOP](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) e [página do produto Polar H10](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor), consultados em 2026-10-02"
+    },
+    "oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4": {
+      "title": "Oura vs Whoop vs Garmin: comparação (2026)",
+      "description": "Oura vence em sono e VFC, Whoop em recuperação, Garmin em treino sem assinatura. Custo em 3 anos: Garmin ~$499, Oura ~$559, Whoop $597–$1,077.",
+      "intro": "Oura Ring 4, Whoop 5.0 e Garmin Venu 4 são os três monitores de VFC que mais usuários fora do ecossistema Apple comparam entre si. Três formatos, três filosofias: o Oura é o anel passivo, o Whoop é a pulseira de coaching contínuo e o Garmin é o smartwatch pensado como instrumento de treino. Os três medem a VFC noturna de forma confiável; a escolha depende de como você quer que o dispositivo se encaixe na sua rotina e de como prefere pagar por ele.",
+      "verdict": "O Oura Ring 4 vence no monitoramento geral de VFC e sono. O Whoop, para atletas que treinam com base em uma pontuação diária de recuperação. O Garmin, para quem quer um relógio com análise de treino própria e sem assinatura.",
+      "bestForA": "Escolha o Oura Ring 4 se VFC e sono são os critérios decisivos: um anel passivo é o formato certo para usar 24/7, e a classificação das fases do sono é validada em comparação com a polissonografia.",
+      "bestForB": "Escolha o Whoop 5.0 se você treina pesado, usa a pontuação diária de Recovery como uma orientação que muda o seu treino e prefere uma pulseira sem tela com duas semanas de bateria.",
+      "bestForC": "Escolha o Garmin Venu 4 se quer um smartwatch focado em treino, com até 12 dias de bateria e análise de treino própria, sem assinatura.",
+      "axes": [
+        {
+          "name": "Medição da VFC",
+          "note": "Os três medem a VFC à noite com PPG óptico. No nível do sensor, estão praticamente empatados para acompanhar tendências; a diferença está na interpretação."
+        },
+        {
+          "name": "Monitoramento do sono",
+          "note": "A classificação das fases do sono do Oura tem a validação publicada mais sólida dos três (polissonografia de várias noites, Svensson 2024, no Gen3). Whoop e Garmin são competentes, mas menos validados."
+        },
+        {
+          "name": "Coaching de recuperação",
+          "note": "O coaching de Recovery e Strain do Whoop é o modelo de prontidão diária mais preciso. O Readiness do Oura é bom; Body Battery e HRV Status do Garmin são mais leves."
+        },
+        {
+          "name": "Análise de treino",
+          "note": "Garmin: carga de treino, VO2 max, tempo de recuperação, treinos estruturados, GPS. Whoop: coaching baseado em Strain. Oura: análise de treino mínima."
+        },
+        {
+          "name": "Formato para uso 24/7",
+          "note": "O anel serve para dormir, trabalhar, academia e vida social. A pulseira Whoop fica escondida sob a roupa. O relógio Garmin é visível. O Oura vence no conforto passivo."
+        },
+        {
+          "name": "Tela e recursos de smartwatch",
+          "note": "Garmin: smartwatch AMOLED com notificações, música, apps e lanterna. Oura e Whoop não têm tela."
+        },
+        {
+          "name": "Bateria",
+          "note": "Whoop 5.0: mais de 14 dias. Garmin Venu 4: até 12 dias (45 mm; 10 dias no 41 mm; menos com tela sempre ligada). Oura Ring 4: cerca de 4–7 dias. O Whoop dura mais."
+        },
+        {
+          "name": "Modelo de assinatura",
+          "note": "Garmin: sem assinatura. Oura: assinatura de $5.99/mês ou $69.99/ano para todos os dados. Whoop: só com assinatura, $199–$359/ano. O Garmin vence no modelo de custo."
+        },
+        {
+          "name": "Custo total em 3 anos",
+          "note": "Garmin: cerca de $499 (preço de tabela $549.99). Oura: cerca de $559 (anel de $349 + assinatura anual). Whoop: de $597 (One) a $1,077 (Life). O Garmin é o mais barato, por pouco à frente do Oura."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qual é melhor para o sono: Oura, Whoop ou Garmin?",
+          "a": "O Oura Ring 4. Um anel é o dispositivo mais confortável para dormir, e a classificação das fases do sono do Oura tem a validação publicada mais sólida dos três em comparação com polissonografia de várias noites. Whoop e Garmin monitoram o sono de forma competente; escolha-os se coaching de recuperação ou análise de treino importam mais do que o detalhe do sono."
+        },
+        {
+          "q": "Qual é o melhor no geral: Oura, Whoop ou Garmin?",
+          "a": "Para VFC e sono, o Oura Ring 4. Para coaching de recuperação esportiva, o Whoop 5.0. Para um smartwatch de treino sem assinatura, o Garmin Venu 4. Três funções diferentes em três formatos diferentes."
+        },
+        {
+          "q": "Quanto custam Oura, Whoop e Garmin em três anos?",
+          "a": "O Garmin Venu 4 custa cerca de $499 em pagamento único (preço de tabela $549.99), sem assinatura. O Oura Ring 4 custa a partir de $349 mais $69.99 por ano, cerca de $559 em três anos. O Whoop funciona só com assinatura de $199, $239 ou $359 por ano, ou seja, de $597 a $1,077 em três anos."
+        },
+        {
+          "q": "O Garmin Venu 4 mede a VFC tão bem quanto o Oura ou o Whoop?",
+          "a": "Para tendências noturnas, mais ou menos sim: o HRV Status do Garmin mede durante o sono, a mesma janela usada pelo Oura e pelo Whoop. A camada de coaching é diferente: o Body Battery do Garmin é mais leve que a pontuação Recovery do Whoop ou o Readiness do Oura."
+        },
+        {
+          "q": "Oura, Whoop e Garmin funcionam com Android?",
+          "a": "Sim, os três. Oura e Whoop são compatíveis com iPhone e Android, e o Garmin Connect funciona nos dois, ao contrário do Apple Watch, que exige um iPhone."
+        }
+      ],
+      "content": "## A resposta curta\n\nPara sono e monitoramento geral da VFC, o Oura Ring 4 é o melhor dos três: o formato mais confortável e os dados de sono mais bem validados, a partir de $349 mais $5.99 por mês. O Whoop 5.0 é o melhor para atletas que querem um coach de recuperação diário ($199–$359 por ano, só com assinatura). O Garmin Venu 4 é o melhor para análise de treino e recursos de smartwatch sem assinatura (cerca de $499).\n\n| | Oura Ring 4 | Whoop 5.0 | Garmin Venu 4 |\n|---|---|---|---|\n| Formato | Anel, sem tela | Pulseira sem tela | Smartwatch AMOLED |\n| Ponto forte | Sono + VFC noturna | Coaching de recuperação | Análise de treino |\n| Bateria | Cerca de 4–7 dias | Mais de 14 dias | Até 12 dias |\n| Preço | A partir de $349 | Pulseira incluída na assinatura | Cerca de $499 (tabela $549.99) |\n| Assinatura | $5.99/mês ou $69.99/ano | $199 / $239 / $359 por ano | Nenhuma |\n| Custo em 3 anos | Cerca de $559 | $597–$1,077 | Cerca de $499 |\n| iPhone e Android | Sim | Sim | Sim |\n\n## Escolha o Oura Ring 4 se…\n\n- sono e VFC noturna são o motivo da compra;\n- você quer um dispositivo que esquece que está usando, dia e noite;\n- uma pequena assinatura é aceitável. Todos os detalhes na nossa [análise do Oura Ring 4](/reviews/oura-ring-4).\n\n## Escolha o Whoop 5.0 se…\n\n- você treina pesado e quer uma pontuação diária de Recovery que mude o seu treino;\n- prefere uma pulseira sem tela com duas semanas de bateria;\n- não se importa em pagar uma assinatura anual. Todos os detalhes na nossa [análise do Whoop 5.0](/reviews/whoop-5-0).\n\n## Escolha o Garmin Venu 4 se…\n\n- quer GPS, carga de treino, VO2 max e recursos de smartwatch no pulso;\n- prefere pagar uma vez em vez de assinar;\n- quer bateria longa com tela. Todos os detalhes na nossa [análise do Garmin Venu 4](/reviews/garmin-venu-4).\n\n## Qual é melhor para o sono?\n\nO Oura. Um anel é o mais confortável para dormir, e a classificação das fases do sono do Oura foi comparada com polissonografia de várias noites em 96 adultos (Svensson et al., 2024, Oura Gen3 com o algoritmo de sono atual). Whoop e Garmin monitoram o sono de forma competente, mas não têm validação publicada comparável. Para entender o que significam seus números noturnos, veja a [VFC normal por idade](/articles/normal-hrv-by-age).\n\n## Dá para combiná-los?\n\nMuita gente usa Oura junto com Garmin: o Oura para VFC noturna e sono, o Garmin para treino e recursos de smartwatch durante o dia. O Whoop substitui o Garmin nessa dupla se o coaching de recuperação importa mais do que a análise de treino.\n\n## Comparações relacionadas\n\nReduza para dois: [Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0), [Whoop 5.0 vs Garmin Venu 4](/reviews/vs/whoop-5-0-vs-garmin-venu-4), ou troque o Garmin pelo Apple em [Oura Ring 4 vs Whoop 5.0 vs Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11). Classificação completa: [melhores monitores de VFC de 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Fontes\n\n- Svensson T et al. (2024). Validity and reliability of the Oura Ring Generation 3 with Oura sleep staging algorithm 2.0 compared with multi-night ambulatory polysomnography. *Sleep Medicine* 115:251–263. [doi:10.1016/j.sleep.2024.01.020](https://doi.org/10.1016/j.sleep.2024.01.020)\n- [Preços da assinatura WHOOP](https://support.whoop.com/s/article/Membership-Pricing?language=en_US), [anúncio do Garmin Venu 4](https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/take-steps-towards-a-healthier-lifestyle-with-the-venu-4-from-garmin/) e nossa [análise do Oura Ring 4](/reviews/oura-ring-4) para os preços do Oura, verificados em 2026-10-02"
+    },
+    "calm-vs-insight-timer": {
+      "title": "Calm vs Insight Timer: comparação (2026)",
+      "description": "Calm vs Insight Timer: Calm ($79.99/ano) vence em sono e acabamento; o Insight Timer oferece grátis mais de 300,000 meditações. Preços e qual escolher.",
+      "intro": "Calm e Insight Timer são os dois apps de meditação que os usuários mais comparam quando a versão gratuita é um fator decisivo. O Calm é o app premium caprichado, com narradores famosos e uma biblioteca de conteúdo para dormir; o Insight Timer é a maior biblioteca de meditação gratuita do mercado, com um modelo baseado em professores e um plano pago opcional. A decisão é entre o acabamento de uma assinatura e a amplitude do gratuito.",
+      "verdict": "Depende do que você quer pagar. Calm, pelo acabamento premium, pelas Sleep Stories e pelo conteúdo com famosos. Insight Timer, pela maior biblioteca de meditação gratuita e pelo acesso a milhares de professores.",
+      "bestForA": "Escolha o Calm se o conteúdo para dormir é o principal atrativo, você gosta de narração de famosos e a assinatura de $79.99/ano é aceitável pelo acabamento.",
+      "bestForB": "Escolha o Insight Timer se quer a maior biblioteca de meditação gratuita do mercado: milhares de professores, uma versão gratuita de verdade e uma camada MemberPlus opcional de $59.99/ano.",
+      "axes": [
+        {
+          "name": "Conteúdo da versão gratuita",
+          "note": "Insight Timer: a biblioteca completa de mais de 300,000 meditações guiadas, palestras e faixas de música é gratuita. Calm: uma amostra gratuita pequena que direciona para o Premium. O Insight Timer vence com folga."
+        },
+        {
+          "name": "Tamanho da biblioteca",
+          "note": "Insight Timer: mais de 300,000 faixas de milhares de professores. Calm: uma biblioteca curada, muito menor, mas com acabamento mais uniforme."
+        },
+        {
+          "name": "Consistência da qualidade do ensino",
+          "note": "A curadoria do Calm garante qualidade consistente. O modelo aberto do Insight Timer varia: o melhor conteúdo é excelente, mas a média fica abaixo do piso do Calm."
+        },
+        {
+          "name": "Conteúdo para dormir",
+          "note": "As Sleep Stories do Calm lideram a categoria: histórias narradas por famosos, música para dormir, paisagens sonoras. O Insight Timer tem bastante conteúdo para dormir, mas esse não é o foco."
+        },
+        {
+          "name": "Famosos / professores estrela",
+          "note": "Calm: narradores famosos como Matthew McConaughey e Harry Styles. Insight Timer: professores conhecidos (Tara Brach, Jack Kornfield), mas não narração de celebridades."
+        },
+        {
+          "name": "Recursos de comunidade",
+          "note": "O Insight Timer tem grupos, eventos ao vivo e uma comunidade ativa. O Calm é só conteúdo."
+        },
+        {
+          "name": "Personalização",
+          "note": "Calm: recomendações diárias estruturadas e progressão. Insight Timer: baseado em busca, menos algorítmico; ótimo se você sabe o que quer."
+        },
+        {
+          "name": "Preço",
+          "note": "Insight Timer: grátis, com MemberPlus opcional a $59.99/ano ou $9.99/mês. Calm: $79.99/ano após 7 dias de teste (ou $499.99 vitalício) para a maior parte do conteúdo. O Insight Timer é mais barato em todos os níveis."
+        }
+      ],
+      "faq": [
+        {
+          "q": "O Insight Timer é mesmo grátis?",
+          "a": "Sim. A biblioteca do Insight Timer, com mais de 300,000 meditações guiadas, palestras e faixas de música, está disponível com uma conta gratuita, sem limite de tempo. O MemberPlus opcional ($59.99 por ano ou $9.99 por mês) acrescenta downloads offline, cursos premium e conteúdo exclusivo, mas a versão gratuita basta para a maioria das pessoas."
+        },
+        {
+          "q": "Quanto custa o Calm e existe versão gratuita?",
+          "a": "O Calm Premium custa $79.99 por ano após um teste gratuito de 7 dias, ou $499.99 em pagamento único para acesso vitalício; o plano família para seis pessoas custa $119.99 por ano. A versão gratuita é limitada: a maior parte da biblioteca, incluindo as Sleep Stories, exige o Premium."
+        },
+        {
+          "q": "Calm ou Insight Timer: qual é melhor para iniciantes?",
+          "a": "O Calm, se você está disposto a pagar: ele orienta com recomendações diárias e qualidade consistente. O Insight Timer, se não está: a biblioteca gratuita é enorme, mas você precisa escolher as sessões sozinho, e a qualidade varia entre professores."
+        },
+        {
+          "q": "Qual é melhor para dormir: Calm ou Insight Timer?",
+          "a": "O Calm, com ampla vantagem. As Sleep Stories, histórias para dormir narradas, muitas por vozes conhecidas, são o formato que o Calm popularizou, e sua biblioteca para dormir é mais profunda e caprichada do que o conteúdo gratuito para dormir do Insight Timer."
+        },
+        {
+          "q": "O Insight Timer é melhor que o Calm?",
+          "a": "Em custo-benefício e variedade, sim: o Insight Timer oferece muito mais conteúdo grátis e seu plano pago custa menos. Em acabamento, conteúdo para dormir e experiência guiada, o Calm é melhor. Os melhores professores do Insight Timer (Tara Brach, Jack Kornfield) estão à altura do melhor do Calm; o Calm vence no piso, não no teto."
+        }
+      ],
+      "content": "## A resposta curta\n\nO Insight Timer é a melhor escolha se você quer meditar de graça: sua biblioteca de mais de 300,000 faixas é gratuita, e o MemberPlus opcional custa $59.99 por ano. O Calm é a melhor escolha para dormir e para uma experiência guiada e caprichada, mas a maior parte exige o Premium a $79.99 por ano. Escolha o Insight Timer pela variedade e pelo preço; escolha o Calm pelas Sleep Stories e pela curadoria.\n\n| | Calm | Insight Timer |\n|---|---|---|\n| Versão gratuita | Amostra limitada | Mais de 300,000 faixas, grátis |\n| Plano pago | $79.99/ano; $499.99 vitalício | MemberPlus $59.99/ano ou $9.99/mês (opcional) |\n| Teste gratuito | 7 dias | Desnecessário: a biblioteca principal é grátis |\n| Biblioteca | Curada, qualidade consistente | Enorme, milhares de professores, qualidade variável |\n| Conteúdo para dormir | Sleep Stories líderes da categoria | Bastante, mas não é o foco |\n| Orientação | Recomendações diárias, estruturada | Baseada em busca |\n| Comunidade | Nenhuma | Grupos, eventos ao vivo |\n\n## Escolha o Calm se…\n\n- conteúdo para dormir e relaxar é o principal motivo para querer um app;\n- você gosta de narração de famosos e de uma experiência caprichada e curada;\n- $79.99 por ano é aceitável. Todos os detalhes na nossa [análise do Calm](/reviews/calm).\n\n## Escolha o Insight Timer se…\n\n- quer criar o hábito de meditar sem pagar;\n- gosta de explorar muitos professores e tradições;\n- curte eventos ao vivo e comunidade. Todos os detalhes na nossa [análise do Insight Timer](/reviews/insight-timer).\n\n## O Insight Timer é mesmo grátis?\n\nSim. A biblioteca completa está disponível com uma conta gratuita; o MemberPlus é um complemento opcional para ouvir offline, cursos premium e conteúdo exclusivo para membros. Isso faz do Insight Timer um dos pouquíssimos apps de meditação de ponta que você pode usar indefinidamente sem custo.\n\n## Comparações relacionadas\n\nPensando em um terceiro app? Veja [Headspace vs Calm vs Insight Timer](/reviews/vs/headspace-vs-calm-vs-insight-timer), [Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer), [Calm vs Waking Up](/reviews/vs/calm-vs-waking-up) ou a classificação completa dos [melhores apps de meditação de 2026](/reviews/compare/best-meditation-apps-2026).\n\n## Fontes\n\n- [Calm: planos de assinatura](https://www.calm.com/freetrial/plans), [assinatura vitalícia](https://support.calm.com/hc/en-us/articles/30958037515419-Lifetime-Membership-FAQ) e [plano família](https://support.calm.com/hc/en-us/articles/4405882978331-Calm-Family-Plan-Price-Invites-How-to-Share-Premium)\n- [Insight Timer: quanto custa?](https://help.insighttimer.com/support/solutions/articles/67000664579-how-much-does-insight-timer-cost-) e [o que é o MemberPlus?](https://help.insighttimer.com/support/solutions/articles/67000664702-what-is-memberplus-), verificados em 2026-10-02"
     }
   }
 }

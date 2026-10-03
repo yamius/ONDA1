@@ -1268,6 +1268,14 @@
     "polar-h10": {
       "verdict": "購入できる中で最も正確なHRVデバイス――一日中着けるウェアラブルではなく、基準計測器。",
       "productType": "ECG胸ベルト"
+    },
+    "calm": {
+      "verdict": "最も洗練された睡眠・リラックスアプリ。膨大で美しく作り込まれたライブラリだが、無料版の薄さが弱点。",
+      "productType": "瞑想アプリ"
+    },
+    "insight-timer": {
+      "verdict": "世界最大の瞑想ライブラリで、ここで唯一本当に無料で使えるアプリ。品質のばらつきがその代償。",
+      "productType": "瞑想アプリ"
     }
   },
   "comparisons": {
@@ -2099,6 +2107,141 @@
         }
       ],
       "content": "## 結論\n\nHRVの精度はPolar H10が上です。臨床用ECGとよく一致するECG胸ベルトで、一度きり約$105、サブスクリプションはありません。Whoop 5.0は精度では劣るものの、HRVと睡眠を毎晩自動で計測し、毎日のRecoveryスコアにまとめます。料金は年$199〜$359。精度とオープンなデータならPolar H10、手間のかからない24時間計測とコーチングならWhoopを選びましょう。\n\n| | Whoop 5.0 | Polar H10 |\n|---|---|---|\n| センサー | 光学式（PPG）バンド | 電気的ECG胸ベルト |\n| HRVの精度 | 夜間のトレンドには十分 | 基準レベル、臨床用ECGに近い |\n| 計測するタイミング | 昼夜を問わず継続的に | ベルトを着けている間だけ |\n| 睡眠計測 | あり（自動） | なし |\n| バッテリー | 14日以上、充電式 | 最大400時間、交換式コイン電池 |\n| 他アプリへの生RRデータ | なし | あり（BluetoothとANT+） |\n| 価格 | 年$199 / $239 / $359（One / Peak / Life） | 一度きり約$105 |\n| 3年間の費用 | $597〜$1,077 | 約$105 |\n\n## Whoop 5.0を選ぶなら…\n\n- 何もしなくても毎晩HRVと睡眠を計測してほしい；\n- 毎日のRecoveryとStrainのスコアで実際にトレーニングを変えるつもりがある；\n- 年間メンバーシップを払うことに抵抗がない。\n\n詳しくは[Whoop 5.0のレビュー](/reviews/whoop-5-0)をご覧ください。\n\n## Polar H10を選ぶなら…\n\n- 精度が最優先――朝のHRV測定プロトコル、HRVバイオフィードバック、他のウェアラブルの検証のため；\n- 生の拍動間データを好きなアプリで使いたい；\n- サブスクリプションより一度きりの支払いがよい。\n\n詳しくは[Polar H10のレビュー](/reviews/polar-h10)をご覧ください。\n\n## 精度について研究は何と言っている？\n\nECG胸ベルトは一般向けHRV計測の基準です。検証研究では、Polar H10のRR間隔は安静時・運動中ともに医療用ECGホルターとよく一致しました。Whoopの検証（旧モデルWhoop 2.0）では、心拍数はECGと非常によく一致したものの、HRVの誤差は日々の意味のある最小変化に近い水準でした――数日単位のトレンドには十分ですが、1日ごとの小さな変化を読み取るにはやや不向きです。数値の目安は[年齢別の正常なHRV](/articles/normal-hrv-by-age)を参照してください。\n\n## 併用という選択\n\n毎日の継続的な信号はWhoop、朝の基準測定はPolar H10。両者はうまく補い合い、熱心なHRVトレーニーの多くは最終的に両方を使っています。\n\n## 関連する比較\n\nスマートウォッチも検討中ですか？ [Polar H10 vs Whoop 5.0 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-whoop-5-0-vs-garmin-venu-4)、[Polar H10 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-garmin-venu-4)、または[2026年のおすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)の完全ランキングをご覧ください。\n\n## 出典\n\n- Gilgen-Ammann R, Schweizer T, Wyss T (2019). RR interval signal quality of a heart rate monitor and an ECG Holter at rest and during exercise. *European Journal of Applied Physiology* 119:1525–1532. [doi:10.1007/s00421-019-04142-5](https://doi.org/10.1007/s00421-019-04142-5)\n- Bellenger CR et al. (2021). Wrist-based photoplethysmography assessment of heart rate and heart rate variability: validation of WHOOP. *Sensors* 21(10):3571. [doi:10.3390/s21103571](https://doi.org/10.3390/s21103571)\n- [WHOOPメンバーシップ料金](https://support.whoop.com/s/article/Membership-Pricing?language=en_US)と[Polar H10製品ページ](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor)、2026-10-02確認"
+    },
+    "oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4": {
+      "title": "Oura・Whoop・Garmin比較｜どれを選ぶ？（2026）",
+      "description": "Oura・Whoop・Garminを比較。睡眠とHRVならOura、回復コーチングならWhoop、サブスク不要ならGarmin（約$499）。価格と3年間の総費用も。",
+      "intro": "Oura Ring 4、Whoop 5.0、Garmin Venu 4は、Apple以外のユーザーが最もよく一緒に候補に挙げる3つのHRVトラッカーです。3つの形状、3つの思想。Ouraはパッシブなリング、Whoopは常時計測するコーチング用バンド、Garminはトレーニング機器としてのスマートウォッチです。3機種とも夜間HRVを信頼できる水準で計測します。選択のポイントは、デバイスを日常にどう溶け込ませたいか、そしてどう支払いたいかです。",
+      "verdict": "一般的なHRVと睡眠のトラッキングならOura Ring 4。毎日の回復スコアをもとにトレーニングするアスリートにはWhoop。自社のトレーニング分析付きでサブスク不要の時計を求めるならGarmin。",
+      "bestForA": "HRVと睡眠が決め手ならOura Ring 4を。24時間装着にはパッシブなリングが最適で、睡眠ステージは睡眠ポリグラフ検査と比較して検証されています。",
+      "bestForB": "ハードにトレーニングし、毎日のRecoveryスコアをその日のメニューを変えるコーチングの合図として使い、画面のない2週間持続のバンドを好むならWhoop 5.0を。",
+      "bestForC": "最大12日間のバッテリーと自社のトレーニング分析を備えた、トレーニング重視のスマートウォッチが欲しいならGarmin Venu 4を。サブスクは不要です。",
+      "axes": [
+        {
+          "name": "HRV計測",
+          "note": "3機種とも光学式PPGで夜間HRVを計測します。トレンド把握の目的ではセンサー面はほぼ互角で、差は解釈の部分にあります。"
+        },
+        {
+          "name": "睡眠トラッキング",
+          "note": "Ouraの睡眠ステージ判定は、3機種の中で最も強い公表済み検証があります（複数夜の睡眠ポリグラフ検査、Svensson 2024、Gen3）。WhoopとGarminも十分な性能ですが、検証は少なめです。"
+        },
+        {
+          "name": "回復コーチング",
+          "note": "WhoopのRecoveryとStrainのコーチングは、日々のコンディション評価として最も鋭いモデルです。OuraのReadinessも良好。GarminのBody BatteryとHRVステータスはより控えめです。"
+        },
+        {
+          "name": "トレーニング分析",
+          "note": "Garmin：トレーニング負荷、VO2 max、リカバリータイム、構造化ワークアウト、GPS。Whoop：Strainに基づくコーチング。Oura：トレーニング特化の分析は最小限。"
+        },
+        {
+          "name": "24時間装着のしやすさ",
+          "note": "リングは睡眠、仕事、ジム、人付き合いのどれにも合います。Whoopのバンドは服の下に隠れます。Garminの時計は目に見えます。パッシブな装着感ではOuraが勝ちます。"
+        },
+        {
+          "name": "画面とスマートウォッチ機能",
+          "note": "Garmin：通知、音楽、アプリ、ライト付きのAMOLEDスマートウォッチ。OuraとWhoopには画面がありません。"
+        },
+        {
+          "name": "バッテリー持ち",
+          "note": "Whoop 5.0：14日以上。Garmin Venu 4：最大12日（45 mm。41 mmは10日。常時表示ではさらに短い）。Oura Ring 4：約4〜7日。最も長持ちするのはWhoopです。"
+        },
+        {
+          "name": "サブスクリプション",
+          "note": "Garmin：サブスク不要。Oura：全データの利用にはメンバーシップ月$5.99または年$69.99。Whoop：メンバーシップのみ、年$199〜$359。コスト構造ではGarminが勝ちます。"
+        },
+        {
+          "name": "3年間の総費用",
+          "note": "Garmin：約$499（定価$549.99）。Oura：約$559（リング$349＋年間メンバーシップ）。Whoop：$597（One）〜$1,077（Life）。Garminが最安で、Ouraがわずかに続きます。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "睡眠計測ならOura・Whoop・Garminのどれがいい？",
+          "a": "Oura Ring 4です。リングは着けたまま最も眠りやすいデバイスで、Ouraの睡眠ステージ判定は複数夜の睡眠ポリグラフ検査との比較で、3機種中最も強い公表済み検証があります。WhoopとGarminも睡眠を十分に計測します。睡眠の詳細より回復コーチングやトレーニング分析を重視するならそちらを選びましょう。"
+        },
+        {
+          "q": "Oura・Whoop・Garmin、総合的におすすめはどれ？",
+          "a": "HRVと睡眠ならOura Ring 4。スポーツの回復コーチングならWhoop 5.0。サブスク不要のトレーニング用スマートウォッチならGarmin Venu 4。3つの異なる役割を、3つの異なる形状で担います。"
+        },
+        {
+          "q": "Oura・Whoop・Garminの3年間の費用はいくら？",
+          "a": "Garmin Venu 4は一度の購入で約$499（定価$549.99）、サブスクはありません。Oura Ring 4は$349からで年$69.99が加わり、3年間で約$559。Whoopはメンバーシップのみで年$199、$239、$359のため、3年間で$597〜$1,077です。"
+        },
+        {
+          "q": "Garmin Venu 4のHRV計測はOuraやWhoopと同等？",
+          "a": "夜間のトレンドについてはおおむね同等です。GarminのHRVステータスは睡眠中に計測し、OuraやWhoopと同じ時間帯を使います。違いはコーチングの層で、GarminのBody BatteryはWhoopのRecoveryスコアやOuraのReadinessより控えめです。"
+        },
+        {
+          "q": "Oura・Whoop・GarminはAndroidでも使える？",
+          "a": "はい、3機種とも使えます。OuraとWhoopはiPhoneとAndroidに対応し、Garmin Connectも両方で動作します。iPhoneが必須のApple Watchとは異なります。"
+        }
+      ],
+      "content": "## 結論\n\n睡眠と総合的なHRVトラッキングなら、3機種の中でOura Ring 4が最適です。最も着けやすい形状と最もよく検証された睡眠データを備え、価格は$349から＋月$5.99。毎日の回復コーチを求めるアスリートにはWhoop 5.0（年$199〜$359、メンバーシップのみ）。サブスクなしでトレーニング分析とスマートウォッチ機能が欲しいならGarmin Venu 4（約$499）です。\n\n| | Oura Ring 4 | Whoop 5.0 | Garmin Venu 4 |\n|---|---|---|---|\n| 形状 | リング、画面なし | 画面なしバンド | AMOLEDスマートウォッチ |\n| 得意分野 | 睡眠＋夜間HRV | 回復コーチング | トレーニング分析 |\n| バッテリー | 約4〜7日 | 14日以上 | 最大12日 |\n| 価格 | $349から | バンドはメンバーシップに含まれる | 約$499（定価$549.99） |\n| サブスク | 月$5.99または年$69.99 | 年$199 / $239 / $359 | なし |\n| 3年間の費用 | 約$559 | $597〜$1,077 | 約$499 |\n| iPhoneとAndroid | 対応 | 対応 | 対応 |\n\n## Oura Ring 4を選ぶべき人\n\n- 睡眠と夜間HRVが購入の目的;\n- 昼も夜も着けていることを忘れるデバイスが欲しい;\n- 少額のメンバーシップは許容できる。詳しくは[Oura Ring 4レビュー](/reviews/oura-ring-4)をご覧ください。\n\n## Whoop 5.0を選ぶべき人\n\n- ハードにトレーニングし、その日のメニューを変える毎日のRecoveryスコアが欲しい;\n- 2週間持続する画面なしのバンドが好み;\n- 年間メンバーシップの支払いに抵抗がない。詳しくは[Whoop 5.0レビュー](/reviews/whoop-5-0)をご覧ください。\n\n## Garmin Venu 4を選ぶべき人\n\n- GPS、トレーニング負荷、VO2 max、スマートウォッチ機能を手首に求める;\n- サブスクより一度の支払いがいい;\n- 画面付きで長いバッテリー持ちが欲しい。詳しくは[Garmin Venu 4レビュー](/reviews/garmin-venu-4)をご覧ください。\n\n## 睡眠に最適なのはどれ？\n\nOuraです。リングは着けたまま最も眠りやすく、Ouraの睡眠ステージ判定は成人96人を対象に複数夜の睡眠ポリグラフ検査と比較されています（Svensson et al., 2024、Oura Gen3と現行の睡眠アルゴリズム）。WhoopとGarminも十分な睡眠トラッカーですが、同等の公表済み検証はありません。夜間の数値の意味については[年齢別の正常なHRV](/articles/normal-hrv-by-age)をご覧ください。\n\n## 組み合わせて使える？\n\nOuraとGarminを併用する人は多くいます。Ouraで夜間HRVと睡眠を、Garminでトレーニングと日中のスマートウォッチ機能をカバーします。トレーニング分析より回復コーチングを重視するなら、その組み合わせのGarminをWhoopに置き換えます。\n\n## 関連する比較\n\n2機種に絞るなら：[Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0)、[Whoop 5.0 vs Garmin Venu 4](/reviews/vs/whoop-5-0-vs-garmin-venu-4)、またはGarminをAppleに替えた[Oura Ring 4 vs Whoop 5.0 vs Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11)。総合ランキング：[2026年のおすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)。\n\n## 出典\n\n- Svensson T et al. (2024). Validity and reliability of the Oura Ring Generation 3 with Oura sleep staging algorithm 2.0 compared with multi-night ambulatory polysomnography. *Sleep Medicine* 115:251–263. [doi:10.1016/j.sleep.2024.01.020](https://doi.org/10.1016/j.sleep.2024.01.020)\n- [WHOOPメンバーシップ料金](https://support.whoop.com/s/article/Membership-Pricing?language=en_US)、[Garmin Venu 4発表](https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/take-steps-towards-a-healthier-lifestyle-with-the-venu-4-from-garmin/)、Ouraの価格は当サイトの[Oura Ring 4レビュー](/reviews/oura-ring-4)を参照（2026-10-02確認）"
+    },
+    "calm-vs-insight-timer": {
+      "title": "CalmとInsight Timerを比較｜料金・無料版（2026）",
+      "description": "CalmとInsight Timerを比較。睡眠と洗練された体験ならCalm（年$79.99）、無料で30万以上の音源ならInsight Timer。料金と選び方。",
+      "intro": "CalmとInsight Timerは、無料版の充実度が決め手になるとき、ユーザーが最もよく比べる2つの瞑想アプリです。Calmは有名人のナレーションと睡眠コンテンツのライブラリを備えた洗練されたプレミアムアプリ。Insight Timerは市場最大の無料瞑想ライブラリで、講師中心のモデルと任意の有料プランがあります。選択は、サブスクによる完成度か、無料版の幅広さかです。",
+      "verdict": "何にお金を払いたいか次第です。プレミアムな完成度、Sleep Stories、有名人のコンテンツならCalm。市場最大の無料瞑想ライブラリと数千人の講師へのアクセスならInsight Timer。",
+      "bestForA": "睡眠コンテンツが主な目的で、有名人のナレーションが好きで、完成度のために年$79.99のサブスクを払えるならCalmを。",
+      "bestForB": "市場最大の無料瞑想ライブラリが欲しいならInsight Timerを。数千人の講師、本当に使える無料版、そして任意の年$59.99のMemberPlusがあります。",
+      "axes": [
+        {
+          "name": "無料版の充実度",
+          "note": "Insight Timer：30万以上のガイド瞑想、トーク、音楽の全ライブラリが無料。Calm：Premiumへ誘導するための限られた無料サンプル。ここはInsight Timerの圧勝です。"
+        },
+        {
+          "name": "ライブラリの規模",
+          "note": "Insight Timer：数千人の講師による30万以上の音源。Calm：厳選されたライブラリで、規模はずっと小さいものの品質は均一に高い。"
+        },
+        {
+          "name": "指導品質の安定性",
+          "note": "Calmは厳選により品質が安定しています。Insight Timerのオープンな講師モデルはばらつきがあり、最良のコンテンツは優秀ですが、平均はCalmの最低水準を下回ります。"
+        },
+        {
+          "name": "睡眠コンテンツ",
+          "note": "CalmのSleep Storiesはこの分野のトップ。有名人が読む物語、睡眠用音楽、サウンドスケープ。Insight Timerにも睡眠コンテンツは豊富ですが、中心ではありません。"
+        },
+        {
+          "name": "有名人・人気講師",
+          "note": "Calm：Matthew McConaugheyやHarry Stylesなど有名人のナレーター。Insight Timer：著名な講師（Tara Brach、Jack Kornfield）はいるが、一般的な有名人のナレーションはない。"
+        },
+        {
+          "name": "コミュニティ機能",
+          "note": "Insight Timerにはグループ、ライブイベント、活発なコミュニティがあります。Calmはコンテンツのみです。"
+        },
+        {
+          "name": "パーソナライズ",
+          "note": "Calm：体系的な毎日のおすすめと段階的な進行。Insight Timer：検索主体でアルゴリズム色は薄め。求めるものが分かっていれば強い。"
+        },
+        {
+          "name": "料金",
+          "note": "Insight Timer：無料。任意のMemberPlusは年$59.99または月$9.99。Calm：ほとんどのコンテンツは7日間の無料体験後に年$79.99（買い切り$499.99も）。どのプランでもInsight Timerの方が安い。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Insight Timerは本当に無料？",
+          "a": "はい。30万以上のガイド瞑想、トーク、音楽を含むInsight Timerのライブラリは、無料アカウントで期間制限なく利用できます。任意のMemberPlus（年$59.99または月$9.99）ではオフラインダウンロード、プレミアムコース、会員限定コンテンツが追加されますが、ほとんどの人には無料版で十分です。"
+        },
+        {
+          "q": "Calmの料金はいくら？無料版はある？",
+          "a": "Calm Premiumは7日間の無料体験後に年$79.99、または買い切りで$499.99の永久アクセスです。6人までのファミリープランは年$119.99。無料版は限定的で、Sleep Storiesを含むライブラリの大部分にはPremiumが必要です。"
+        },
+        {
+          "q": "初心者にはCalmとInsight Timerのどっちがいい？",
+          "a": "お金を払ってよいならCalmです。毎日のおすすめと安定した品質で導いてくれます。払いたくないならInsight Timer。無料ライブラリは膨大ですが、セッションは自分で選ぶ必要があり、品質は講師によって異なります。"
+        },
+        {
+          "q": "睡眠用ならCalmとInsight Timerのどっち？",
+          "a": "Calmが大差で上です。Sleep Stories（多くは著名な声による就寝前の朗読）はCalmが広めた形式で、その睡眠ライブラリはInsight Timerの無料睡眠コンテンツより充実し、洗練されています。"
+        },
+        {
+          "q": "Insight TimerはCalmより優れている？",
+          "a": "コスパと幅広さではそうです。Insight Timerは無料ではるかに多くのコンテンツを提供し、有料プランも安価です。完成度、睡眠コンテンツ、ガイド付きの体験ではCalmが上です。Insight Timerの最良の講師（Tara Brach、Jack Kornfield）はCalmのどのコンテンツにも劣りません。Calmが勝るのは最低水準であって、最高水準ではありません。"
+        }
+      ],
+      "content": "## 結論\n\n無料で瞑想したいならInsight Timerがおすすめです。30万以上の音源ライブラリは無料で、任意のMemberPlusは年$59.99。睡眠と洗練されたガイド体験ならCalmが上ですが、大部分は年$79.99のPremiumが必要です。幅広さとコスパならInsight Timer、Sleep Storiesと厳選されたコンテンツならCalmを選びましょう。\n\n| | Calm | Insight Timer |\n|---|---|---|\n| 無料版 | 限定サンプル | 30万以上の音源が無料 |\n| 有料プラン | 年$79.99、買い切り$499.99 | MemberPlus 年$59.99または月$9.99（任意） |\n| 無料体験 | 7日間 | 不要（主要ライブラリは無料） |\n| ライブラリ | 厳選、品質が安定 | 膨大、数千人の講師、品質にばらつき |\n| 睡眠コンテンツ | トップクラスのSleep Stories | 豊富だが中心ではない |\n| ガイド | 毎日のおすすめ、体系的 | 検索主体 |\n| コミュニティ | なし | グループ、ライブイベント |\n\n## Calmを選ぶべき人\n\n- 睡眠やリラックス用のコンテンツがアプリを使う主な理由;\n- 有名人のナレーションと洗練された厳選体験が好き;\n- 年$79.99を許容できる。詳しくは[Calmレビュー](/reviews/calm)をご覧ください。\n\n## Insight Timerを選ぶべき人\n\n- お金をかけずに瞑想を習慣にしたい;\n- 多くの講師や伝統を探索するのが好き;\n- ライブイベントやコミュニティが好き。詳しくは[Insight Timerレビュー](/reviews/insight-timer)をご覧ください。\n\n## Insight Timerは本当に無料？\n\nはい。全ライブラリは無料アカウントで利用でき、MemberPlusはオフライン再生、プレミアムコース、会員限定コンテンツのための任意の追加プランです。そのためInsight Timerは、無期限に無料で使える数少ない一流瞑想アプリのひとつです。\n\n## 関連する比較\n\n3つ目のアプリも検討中なら：[Headspace vs Calm vs Insight Timer](/reviews/vs/headspace-vs-calm-vs-insight-timer)、[Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer)、[Calm vs Waking Up](/reviews/vs/calm-vs-waking-up)、または[2026年のおすすめ瞑想アプリ](/reviews/compare/best-meditation-apps-2026)の総合ランキングをご覧ください。\n\n## 出典\n\n- [Calm — サブスクリプションプラン](https://www.calm.com/freetrial/plans)、[買い切りメンバーシップ](https://support.calm.com/hc/en-us/articles/30958037515419-Lifetime-Membership-FAQ)、[ファミリープラン](https://support.calm.com/hc/en-us/articles/4405882978331-Calm-Family-Plan-Price-Invites-How-to-Share-Premium)\n- [Insight Timer — 料金はいくら？](https://help.insighttimer.com/support/solutions/articles/67000664579-how-much-does-insight-timer-cost-)、[MemberPlusとは？](https://help.insighttimer.com/support/solutions/articles/67000664702-what-is-memberplus-)（2026-10-02確認）"
     }
   }
 }

@@ -1245,6 +1245,14 @@
     "polar-h10": {
       "verdict": "你能买到的最精准的 HRV 设备——一件参考仪器，而非全天佩戴的可穿戴设备。",
       "productType": "ECG 胸带"
+    },
+    "calm": {
+      "verdict": "最精致的睡眠与放松应用——内容库庞大且制作精美，但免费版过于单薄。",
+      "productType": "冥想应用"
+    },
+    "insight-timer": {
+      "verdict": "全球最大的冥想内容库，也是这里唯一真正可以免费使用的应用——代价是质量参差不齐。",
+      "productType": "冥想应用"
     }
   },
   "comparisons": {
@@ -2076,6 +2084,141 @@
         }
       ],
       "content": "## 简短回答\n\nPolar H10 测 HRV 更准——它是与临床 ECG 高度一致的 ECG 胸带，一次性约 $105，无需订阅。Whoop 5.0 精度较低，但每晚自动追踪 HRV 和睡眠，并转化为每日 Recovery 评分，每年 $199–$359。追求精度和开放数据，买 Polar H10；想要省心的 24/7 追踪和指导，买 Whoop。\n\n| | Whoop 5.0 | Polar H10 |\n|---|---|---|\n| 传感器 | 光学（PPG）手环 | 电信号 ECG 胸带 |\n| HRV 精度 | 适合看夜间趋势 | 参考级，接近临床 ECG |\n| 何时测量 | 全天候持续测量 | 仅在佩戴胸带时 |\n| 睡眠追踪 | 有，自动 | 无 |\n| 续航 | 14 天以上，可充电 | 最长 400 小时，可更换纽扣电池 |\n| 向其他应用提供原始 RR 数据 | 否 | 是，蓝牙和 ANT+ |\n| 价格 | 每年 $199 / $239 / $359（One / Peak / Life） | 一次性约 $105 |\n| 3 年成本 | $597–$1,077 | 约 $105 |\n\n## 以下情况选 Whoop 5.0…\n\n- 你希望每晚自动测量 HRV 和睡眠，无需任何操作；\n- 每日 Recovery 和 Strain 评分会真正改变你的训练方式；\n- 你可以接受按年支付会员费。\n\n详见我们的 [Whoop 5.0 评测](/reviews/whoop-5-0)。\n\n## 以下情况选 Polar H10…\n\n- 精度最重要——用于晨间 HRV 测量流程、HRV 生物反馈，或验证其他可穿戴设备；\n- 你想在自己选择的应用中使用原始逐搏数据；\n- 你宁愿一次付清，也不想订阅。\n\n详见我们的 [Polar H10 评测](/reviews/polar-h10)。\n\n## 关于精度，研究怎么说？\n\nECG 胸带是消费级 HRV 测量的参考标准。在一项验证研究中，Polar H10 的 RR 间期在静息和运动中都与医用 ECG 动态心电图高度吻合。Whoop 的验证（基于较早的 Whoop 2.0）发现心率与 ECG 一致性极佳，但 HRV 误差接近日常有意义的最小变化——看多日趋势没问题，读取单日的细微变化则不太可靠。要为任何数值找到参照，请看[各年龄段的正常 HRV](/articles/normal-hrv-by-age)。\n\n## 组合使用\n\nWhoop 提供每日持续信号；Polar H10 负责晨间参考测量。两者能很好地互补，许多投入的 HRV 训练者最终都会同时使用。\n\n## 相关对比\n\n还在考虑智能手表？请看 [Polar H10 vs Whoop 5.0 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-whoop-5-0-vs-garmin-venu-4)、[Polar H10 vs Garmin Venu 4](/reviews/vs/polar-h10-vs-garmin-venu-4)，或 [2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026) 完整排名。\n\n## 参考来源\n\n- Gilgen-Ammann R, Schweizer T, Wyss T (2019). RR interval signal quality of a heart rate monitor and an ECG Holter at rest and during exercise. *European Journal of Applied Physiology* 119:1525–1532. [doi:10.1007/s00421-019-04142-5](https://doi.org/10.1007/s00421-019-04142-5)\n- Bellenger CR et al. (2021). Wrist-based photoplethysmography assessment of heart rate and heart rate variability: validation of WHOOP. *Sensors* 21(10):3571. [doi:10.3390/s21103571](https://doi.org/10.3390/s21103571)\n- [WHOOP 会员价格](https://support.whoop.com/s/article/Membership-Pricing?language=en_US) 与 [Polar H10 产品页面](https://www.polar.com/us-en/sensors/h10-heart-rate-sensor)，核实于 2026-10-02"
+    },
+    "oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4": {
+      "title": "Oura、Whoop 与 Garmin 对比评测：怎么选（2026）",
+      "description": "Oura、Whoop、Garmin 怎么选？睡眠与 HRV 选 Oura，恢复指导选 Whoop，免订阅选 Garmin（约 $499）。附价格与三年总成本。",
+      "intro": "Oura Ring 4、Whoop 5.0 和 Garmin Venu 4 是大多数非 Apple 用户最常放在一起比较的三款 HRV 追踪器。三种形态，三种理念：Oura 是无感佩戴的戒指，Whoop 是持续监测的恢复指导手环，Garmin 是作为训练工具的智能手表。三者都能可靠地测量夜间 HRV；选择的关键在于你希望设备如何融入日常——以及你希望如何为它付费。",
+      "verdict": "综合 HRV 与睡眠追踪，Oura Ring 4 胜出。依据每日恢复评分训练的运动员选 Whoop。想要自带训练分析、无需订阅的手表，选 Garmin。",
+      "bestForA": "如果 HRV 和睡眠是决定因素，选 Oura Ring 4——无感佩戴的戒指最适合全天候佩戴，其睡眠分期已与多导睡眠图对照验证。",
+      "bestForB": "如果你训练强度大，把每日 Recovery 评分当作调整训练的指导信号，并且偏好续航两周的无屏手环，选 Whoop 5.0。",
+      "bestForC": "如果你想要一款续航最长 12 天、自带训练分析的训练型智能手表，选 Garmin Venu 4——无需订阅。",
+      "axes": [
+        {
+          "name": "HRV 测量",
+          "note": "三者都用光学 PPG 在夜间追踪 HRV。用于看趋势时，传感器层面基本打平；差异在于数据解读。"
+        },
+        {
+          "name": "睡眠追踪",
+          "note": "Oura 的睡眠分期在三者中拥有最有力的公开验证（多晚多导睡眠图，Svensson 2024，基于 Gen3）。Whoop 和 Garmin 表现合格，但验证较少。"
+        },
+        {
+          "name": "恢复指导",
+          "note": "Whoop 的 Recovery 和 Strain 指导是最精准的每日状态模型。Oura 的 Readiness 不错；Garmin 的 Body Battery 和 HRV 状态则更轻量。"
+        },
+        {
+          "name": "训练分析",
+          "note": "Garmin：训练负荷、VO2 max、恢复时间、结构化训练、GPS。Whoop：基于 Strain 的指导。Oura：训练专项分析极少。"
+        },
+        {
+          "name": "全天候佩戴形态",
+          "note": "戒指适合睡眠、工作、健身和社交场合。Whoop 手环可藏在衣服下。Garmin 手表比较显眼。无感佩戴方面 Oura 胜出。"
+        },
+        {
+          "name": "屏幕与智能手表功能",
+          "note": "Garmin：AMOLED 智能手表，支持通知、音乐、应用、手电筒。Oura 和 Whoop 没有屏幕。"
+        },
+        {
+          "name": "续航",
+          "note": "Whoop 5.0：14 天以上。Garmin Venu 4：最长 12 天（45 mm；41 mm 为 10 天；开启常亮显示会更短）。Oura Ring 4：约 4–7 天。Whoop 续航最长。"
+        },
+        {
+          "name": "订阅模式",
+          "note": "Garmin：无需订阅。Oura：完整数据需会员，$5.99/月或 $69.99/年。Whoop：仅会员制，$199–$359/年。成本模式上 Garmin 胜出。"
+        },
+        {
+          "name": "三年总成本",
+          "note": "Garmin：约 $499（标价 $549.99）。Oura：约 $559（戒指 $349 + 年度会员）。Whoop：$597（One）至 $1,077（Life）。Garmin 最便宜，略胜 Oura。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Oura、Whoop、Garmin 哪个睡眠监测最好？",
+          "a": "Oura Ring 4。戒指是最容易戴着入睡的设备，而且 Oura 的睡眠分期在三者中拥有最有力的公开验证（与多晚多导睡眠图对照）。Whoop 和 Garmin 的睡眠追踪也合格；如果你更看重恢复指导或训练分析而非睡眠细节，可以选它们。"
+        },
+        {
+          "q": "Oura、Whoop、Garmin 综合哪个最好？",
+          "a": "HRV 和睡眠选 Oura Ring 4。运动恢复指导选 Whoop 5.0。免订阅的训练智能手表选 Garmin Venu 4。三种不同的用途，三种不同的形态。"
+        },
+        {
+          "q": "Oura、Whoop、Garmin 三年要花多少钱？",
+          "a": "Garmin Venu 4 一次性约 $499（标价 $549.99），无需订阅。Oura Ring 4 起价 $349，另加每年 $69.99，三年约 $559。Whoop 仅会员制，每年 $199、$239 或 $359，三年 $597 至 $1,077。"
+        },
+        {
+          "q": "Garmin Venu 4 测 HRV 和 Oura、Whoop 一样准吗？",
+          "a": "就夜间趋势而言，大致一样——Garmin 的 HRV 状态在睡眠期间测量，与 Oura 和 Whoop 使用同一时段。差别在指导层：Garmin 的 Body Battery 比 Whoop 的 Recovery 评分或 Oura 的 Readiness 更轻量。"
+        },
+        {
+          "q": "Oura、Whoop、Garmin 支持安卓吗？",
+          "a": "支持，三者都可以。Oura 和 Whoop 支持 iPhone 和安卓，Garmin Connect 也在两个平台运行——不像 Apple Watch 必须搭配 iPhone。"
+        }
+      ],
+      "content": "## 简短结论\n\n就睡眠和综合 HRV 追踪而言，Oura Ring 4 是三者中最好的：佩戴形态最友好，睡眠数据验证最充分，起价 $349，另加每月 $5.99。Whoop 5.0 最适合想要每日恢复指导的运动员（每年 $199–$359，仅会员制）。Garmin Venu 4 最适合想要训练分析和智能手表功能、又不想订阅的人（约 $499）。\n\n| | Oura Ring 4 | Whoop 5.0 | Garmin Venu 4 |\n|---|---|---|---|\n| 形态 | 戒指，无屏幕 | 无屏手环 | AMOLED 智能手表 |\n| 最擅长 | 睡眠 + 夜间 HRV | 恢复指导 | 训练分析 |\n| 续航 | 约 4–7 天 | 14 天以上 | 最长 12 天 |\n| 价格 | $349 起 | 手环包含在会员中 | 约 $499（标价 $549.99） |\n| 订阅 | $5.99/月或 $69.99/年 | 每年 $199 / $239 / $359 | 无 |\n| 三年成本 | 约 $559 | $597–$1,077 | 约 $499 |\n| iPhone 和安卓 | 支持 | 支持 | 支持 |\n\n## 适合选 Oura Ring 4 的情况\n\n- 你购买的主要原因是睡眠和夜间 HRV；\n- 你想要一款日夜佩戴都几乎感觉不到的设备；\n- 你能接受一笔不大的会员费。详见我们的 [Oura Ring 4 评测](/reviews/oura-ring-4)。\n\n## 适合选 Whoop 5.0 的情况\n\n- 你训练强度大，想要一个能调整当天训练的每日 Recovery 评分；\n- 你偏好续航两周的无屏手环；\n- 你愿意按年支付会员费。详见我们的 [Whoop 5.0 评测](/reviews/whoop-5-0)。\n\n## 适合选 Garmin Venu 4 的情况\n\n- 你想在手腕上拥有 GPS、训练负荷、VO2 max 和智能手表功能；\n- 你宁愿一次性付费也不想订阅；\n- 你想要带屏幕的长续航设备。详见我们的 [Garmin Venu 4 评测](/reviews/garmin-venu-4)。\n\n## 哪个最适合睡眠？\n\nOura。戒指最容易戴着入睡，而且 Oura 的睡眠分期已在 96 名成年人中与多晚多导睡眠图对照测试（Svensson et al., 2024，Oura Gen3 搭配当前睡眠算法）。Whoop 和 Garmin 是合格的睡眠追踪器，但缺乏同等的公开验证。想了解夜间数据的含义，请看[各年龄段的正常 HRV](/articles/normal-hrv-by-age)。\n\n## 可以搭配使用吗？\n\n很多人同时佩戴 Oura 和 Garmin——Oura 负责夜间 HRV 和睡眠，Garmin 负责训练和白天的智能手表功能。如果恢复指导比训练分析更重要，可以用 Whoop 替换这对组合中的 Garmin。\n\n## 相关对比\n\n只比两款：[Oura Ring 4 vs Whoop 5.0](/reviews/vs/oura-ring-4-vs-whoop-5-0)、[Whoop 5.0 vs Garmin Venu 4](/reviews/vs/whoop-5-0-vs-garmin-venu-4)，或把 Garmin 换成 Apple：[Oura Ring 4 vs Whoop 5.0 vs Apple Watch Series 11](/reviews/vs/oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11)。完整排名：[2026 年最佳 HRV 追踪器](/reviews/compare/best-hrv-trackers-2026)。\n\n## 参考来源\n\n- Svensson T et al. (2024). Validity and reliability of the Oura Ring Generation 3 with Oura sleep staging algorithm 2.0 compared with multi-night ambulatory polysomnography. *Sleep Medicine* 115:251–263. [doi:10.1016/j.sleep.2024.01.020](https://doi.org/10.1016/j.sleep.2024.01.020)\n- [WHOOP 会员价格](https://support.whoop.com/s/article/Membership-Pricing?language=en_US)、[Garmin Venu 4 发布公告](https://www.garmin.com/en-US/newsroom/press-release/sports-fitness/take-steps-towards-a-healthier-lifestyle-with-the-venu-4-from-garmin/)，以及我们的 [Oura Ring 4 评测](/reviews/oura-ring-4)（Oura 价格），核实于 2026-10-02"
+    },
+    "calm-vs-insight-timer": {
+      "title": "Calm 与 Insight Timer 对比评测：价格与免费版（2026）",
+      "description": "Calm 还是 Insight Timer？睡眠与精致引导选 Calm（$79.99/年），免费畅听 30 万+ 音频选 Insight Timer。价格、免费版与选购建议。",
+      "intro": "当免费版的丰富程度成为决定因素时，Calm 和 Insight Timer 是用户最常拿来比较的两款冥想应用。Calm 是精致的付费应用，拥有名人旁白和睡眠内容库；Insight Timer 是市面上最大的免费冥想库，以老师为核心，并提供可选的付费层级。选择的关键在于：订阅带来的精致体验，还是免费版的广度。",
+      "verdict": "取决于你愿意为什么付费。追求高级质感、Sleep Stories 和名人内容，选 Calm。想要最大的免费冥想库和数千位老师，选 Insight Timer。",
+      "bestForA": "如果睡眠内容是主要吸引力、你喜欢名人旁白，并且愿意为精致体验支付每年 $79.99 的订阅费，选 Calm。",
+      "bestForB": "如果你想要市面上最大的免费冥想库——数千位老师、真正可用的免费版，以及每年 $59.99 的可选 MemberPlus，选 Insight Timer。",
+      "axes": [
+        {
+          "name": "免费版丰富程度",
+          "note": "Insight Timer：包含 30 万+ 引导冥想、讲座和音乐的完整内容库全部免费。Calm：少量免费试听，引导你升级 Premium。这一项 Insight Timer 完胜。"
+        },
+        {
+          "name": "内容库规模",
+          "note": "Insight Timer：来自数千位老师的 30 万+ 音频。Calm：精选内容库，规模小得多，但质量更统一。"
+        },
+        {
+          "name": "教学质量稳定性",
+          "note": "Calm 的精选带来稳定的质量。Insight Timer 的开放老师模式质量参差——最好的内容非常出色，但平均水平低于 Calm 的下限。"
+        },
+        {
+          "name": "睡眠内容",
+          "note": "Calm 的 Sleep Stories 处于行业领先——名人朗读的故事、助眠音乐、环境音。Insight Timer 也有大量睡眠内容，但并非核心。"
+        },
+        {
+          "name": "名人 / 明星老师",
+          "note": "Calm：Matthew McConaughey、Harry Styles 等名人旁白。Insight Timer：知名老师（Tara Brach、Jack Kornfield），但没有大众名人旁白。"
+        },
+        {
+          "name": "社区功能",
+          "note": "Insight Timer 有小组、直播活动和活跃社区。Calm 只提供内容。"
+        },
+        {
+          "name": "个性化",
+          "note": "Calm：结构化的每日推荐和循序渐进的安排。Insight Timer：以搜索为主，算法推荐较少——如果你清楚自己想要什么，会很好用。"
+        },
+        {
+          "name": "价格",
+          "note": "Insight Timer：免费，可选 MemberPlus 为 $59.99/年或 $9.99/月。Calm：大部分内容需在 7 天试用后支付 $79.99/年（或终身 $499.99）。每个层级 Insight Timer 都更便宜。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Insight Timer 真的免费吗？",
+          "a": "是的。Insight Timer 包含 30 多万个引导冥想、讲座和音乐的内容库，注册免费账号即可使用，没有时间限制。可选的 MemberPlus（每年 $59.99 或每月 $9.99）增加离线下载、高级课程和会员专属内容，但对大多数人来说免费版已经足够。"
+        },
+        {
+          "q": "Calm 多少钱？有免费版吗？",
+          "a": "Calm Premium 在 7 天免费试用后为每年 $79.99，或一次性 $499.99 终身使用；六人家庭计划为每年 $119.99。免费版功能有限——包括 Sleep Stories 在内的大部分内容都需要 Premium。"
+        },
+        {
+          "q": "新手用 Calm 还是 Insight Timer 更好？",
+          "a": "如果愿意付费，选 Calm：它用每日推荐和稳定的质量引导你。如果不想付费，选 Insight Timer：免费内容库非常庞大，但需要自己挑选课程，而且不同老师质量不一。"
+        },
+        {
+          "q": "助眠用 Calm 还是 Insight Timer 更好？",
+          "a": "Calm，而且优势明显。Sleep Stories——睡前朗读故事，许多由知名嗓音演绎——正是 Calm 推广开来的形式，其睡眠内容库比 Insight Timer 的免费睡眠内容更深入、更精致。"
+        },
+        {
+          "q": "Insight Timer 比 Calm 好吗？",
+          "a": "就性价比和内容广度而言，是的：Insight Timer 免费提供的内容多得多，付费层级也更便宜。就精致度、睡眠内容和引导体验而言，Calm 更好。Insight Timer 上最好的老师（Tara Brach、Jack Kornfield）不输 Calm 上的任何内容；Calm 赢在下限，而非上限。"
+        }
+      ],
+      "content": "## 简短结论\n\n如果你想免费冥想，Insight Timer 是更好的选择——它 30 万+ 音频的内容库免费开放，可选的 MemberPlus 每年 $59.99。如果看重睡眠和精致的引导体验，Calm 更好，但大部分内容需要每年 $79.99 的 Premium。看重广度和性价比选 Insight Timer；看重 Sleep Stories 和精选内容选 Calm。\n\n| | Calm | Insight Timer |\n|---|---|---|\n| 免费版 | 有限试听 | 30 万+ 音频，免费 |\n| 付费方案 | $79.99/年；终身 $499.99 | MemberPlus $59.99/年或 $9.99/月（可选） |\n| 免费试用 | 7 天 | 无需——核心内容库免费 |\n| 内容库 | 精选，质量稳定 | 庞大，数千位老师，质量参差 |\n| 睡眠内容 | 行业领先的 Sleep Stories | 丰富，但非重点 |\n| 引导方式 | 每日推荐，结构化 | 以搜索为主 |\n| 社区 | 无 | 小组、直播活动 |\n\n## 适合选 Calm 的情况\n\n- 你想要应用的主要原因是睡眠和放松内容；\n- 你喜欢名人旁白和精致的精选体验；\n- 你能接受每年 $79.99。详见我们的 [Calm 评测](/reviews/calm)。\n\n## 适合选 Insight Timer 的情况\n\n- 你想不花钱养成冥想习惯；\n- 你喜欢探索众多老师和不同传统；\n- 你喜欢直播活动和社区。详见我们的 [Insight Timer 评测](/reviews/insight-timer)。\n\n## Insight Timer 真的免费吗？\n\n是的。完整内容库注册免费账号即可使用；MemberPlus 是可选附加项，提供离线收听、高级课程和会员专属内容。这让 Insight Timer 成为极少数可以无限期免费使用的顶级冥想应用之一。\n\n## 相关对比\n\n在考虑第三款应用？请看 [Headspace vs Calm vs Insight Timer](/reviews/vs/headspace-vs-calm-vs-insight-timer)、[Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer)、[Calm vs Waking Up](/reviews/vs/calm-vs-waking-up)，或 [2026 年最佳冥想应用](/reviews/compare/best-meditation-apps-2026)的完整排名。\n\n## 参考来源\n\n- [Calm——订阅方案](https://www.calm.com/freetrial/plans)、[终身会员](https://support.calm.com/hc/en-us/articles/30958037515419-Lifetime-Membership-FAQ)和[家庭计划](https://support.calm.com/hc/en-us/articles/4405882978331-Calm-Family-Plan-Price-Invites-How-to-Share-Premium)\n- [Insight Timer——费用是多少？](https://help.insighttimer.com/support/solutions/articles/67000664579-how-much-does-insight-timer-cost-)和[什么是 MemberPlus？](https://help.insighttimer.com/support/solutions/articles/67000664702-what-is-memberplus-)，核实于 2026-10-02"
     }
   }
 }
