@@ -1,0 +1,21 @@
+{
+  "_about": "Hand-written tags for the ChatGPT find_practice tool — ADAPTIVE practices only (the free set, also on onda-life.com/emoton). DRAFT — awaiting Yakiv's review. goals: calm | sleep | focus | energy (1–2, first = main). level: beginner | occasional | regular. setting: anywhere | sitting | standing | lying | moving. line: one honest sentence, no medical claims. Name, emoji, duration and emotion come from landing/src/data/adaptivePractices.ts at build time; only these fields live here.",
+  "body_cocoon": { "goals": ["calm"], "level": "beginner", "setting": "anywhere", "line": "Hug yourself and breathe out slowly to feel safe when anxiety spikes." },
+  "roots_breath": { "goals": ["calm"], "level": "beginner", "setting": "anywhere", "line": "Breathe in to the chest and out into the feet to drain off anxious tension." },
+  "earth_pulse": { "goals": ["calm", "sleep"], "level": "beginner", "setting": "anywhere", "line": "Hands on chest and belly, find the calmest pace of your breath and heartbeat." },
+  "earth_breath": { "goals": ["calm", "focus"], "level": "beginner", "setting": "standing", "line": "Standing breath that rises to the chest and settles into the ground." },
+  "wave_pulse": { "goals": ["calm"], "level": "beginner", "setting": "sitting", "line": "Feel your pulse and let the breath rise and fall with it like a wave." },
+  "still_form": { "goals": ["calm", "focus"], "level": "occasional", "setting": "anywhere", "line": "Hold a simple, stable pose and let the breath run on its own." },
+  "slow_glow": { "goals": ["sleep", "calm"], "level": "beginner", "setting": "lying", "line": "Slow, soft breathing with a gentle warm image to wind down when tired." },
+  "rest_breath": { "goals": ["sleep", "calm"], "level": "beginner", "setting": "lying", "line": "Exhale about twice as long as the inhale to let the body sink into rest." },
+  "warm_sphere": { "goals": ["energy", "calm"], "level": "beginner", "setting": "sitting", "line": "Gather warmth in the belly and spread it through the body when you feel drained." },
+  "light_inhale": { "goals": ["energy"], "level": "beginner", "setting": "sitting", "line": "A light, uplifting breath that spreads a warm feeling through the body." },
+  "inner_smile": { "goals": ["calm", "energy"], "level": "beginner", "setting": "anywhere", "line": "Relax the face and jaw and let a soft inner smile spread through you." },
+  "amoeba_dance": { "goals": ["energy"], "level": "occasional", "setting": "moving", "line": "Tiny swaying movements on the breath to let a good mood move the body." },
+  "inner_spark": { "goals": ["focus", "energy"], "level": "beginner", "setting": "sitting", "line": "Name your intention and gather attention into one warm point before you start something." },
+  "light_flow": { "goals": ["energy", "focus"], "level": "beginner", "setting": "sitting", "line": "Sit tall and imagine light rising along the spine to wake up." },
+  "breath_possibility": { "goals": ["focus", "energy"], "level": "beginner", "setting": "anywhere", "line": "Inhale ‘I accept’, exhale ‘I can’ — a short reset before a choice or a hard task." },
+  "silence_point": { "goals": ["calm", "sleep"], "level": "occasional", "setting": "sitting", "line": "Eyes closed, rest attention on a still point and breathe around it." },
+  "listen_space": { "goals": ["focus", "calm"], "level": "occasional", "setting": "anywhere", "line": "Open your hearing and notice the pauses between sounds." },
+  "sphere_breath": { "goals": ["focus", "calm"], "level": "occasional", "setting": "sitting", "line": "Imagine a sphere around you that expands on the inhale and gathers on the exhale." }
+}

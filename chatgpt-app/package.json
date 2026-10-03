@@ -1,0 +1,14 @@
+{
+  "name": "onda-chatgpt-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Public MCP server for the ONDA Life app in ChatGPT (Apps SDK): check_hrv, breathe_now, find_practice, compare.",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.mjs\"",
+    "preview": "node scripts/preview.mjs"
+  }
+}
