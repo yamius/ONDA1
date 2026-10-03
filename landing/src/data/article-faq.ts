@@ -2285,6 +2285,33 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "Cortisol is the hormonal half of the stress picture; HRV is the autonomic half. This lens focuses on whether your nervous system ever switches off — whether variability rebounds in the evening and overnight. Both matter, and neither is fixed by a 'detox.' They're rebuilt by practicing recovery and protecting rest.",
     },
   ],
+  "world-mental-health-day-2026-lived-experience": [
+    {
+      question: "When is World Mental Health Day 2026?",
+      answer:
+        "Saturday, 10 October 2026. It has been observed every year on 10 October since 1992, initiated by the World Federation for Mental Health.",
+    },
+    {
+      question: "What is the theme of World Mental Health Day 2026?",
+      answer:
+        "“Lived Experiences Heard: Real Voices, Real Change.” It calls for people with first-hand experience of mental health conditions to be genuinely heard in how care is designed and delivered, and connects to the WHO’s work on community-based mental health care.",
+    },
+    {
+      question: "What does “lived experience” mean in mental health?",
+      answer:
+        "First-hand knowledge of mental health difficulties — knowing them from the inside. The 2026 theme treats this knowledge as a form of expertise that should shape services and decisions.",
+    },
+    {
+      question: "How can I take part in World Mental Health Day?",
+      answer:
+        "Have an honest conversation with someone in your life, practise listening without rushing to fix, check in with yourself, and share reliable information. Many organisations also host events and webinars around 10 October.",
+    },
+    {
+      question: "How do I know if I should seek professional help?",
+      answer:
+        "If low mood, anxiety or exhaustion lasts more than a couple of weeks, affects your daily life, or you’re using substances to cope, talk to a doctor or mental health professional. In a crisis, contact emergency services or a crisis line immediately.",
+    },
+  ],
   "eating-late-heart-rate-sleep": [
     {
       question: "Does eating late raise your heart rate at night?",

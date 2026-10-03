@@ -3369,6 +3369,25 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.3389/fnhum.2018.00353"
     }
   ],
+  "world-mental-health-day-2026-lived-experience": [
+    {
+      "title": "Putting Feelings Into Words: Affect Labeling Disrupts Amygdala Activity in Response to Affective Stimuli",
+      "authors": "Lieberman MD et al.",
+      "year": 2007,
+      "journal": "Psychological Science",
+      "doi": "10.1111/j.1467-9280.2007.01916.x",
+      "pmid": "17576282",
+      "url": "https://doi.org/10.1111/j.1467-9280.2007.01916.x"
+    },
+    {
+      "title": "Writing About Emotional Experiences as a Therapeutic Process",
+      "authors": "Pennebaker JW",
+      "year": 1997,
+      "journal": "Psychological Science",
+      "doi": "10.1111/j.1467-9280.1997.tb00403.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.1997.tb00403.x"
+    }
+  ],
   "yoga-breathing-diabetes-blood-sugar": [
     {
       "title": "Effects of 12 Weeks Practice of Yoga on Heart Rate Variability in Males with Type 2 Diabetes Receiving Oral Antidiabetic Drugs: A Randomized Control Trial",
