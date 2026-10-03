@@ -90,4 +90,5 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('h2h', 'apple-watch-series-11-vs-fitbit-charge-6', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'healthy-wave-multi-wave-vs-qi-coil', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'ringconn-gen-2-vs-ultrahuman-ring-air', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'world-mental-health-day-2026-lived-experience', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

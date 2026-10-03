@@ -39,7 +39,7 @@ The theme is closely connected to the [World Health Organization’s](https://ww
 
 ## Why this matters for all of us
 
-Mental health is not a niche concern. According to the World Health Organization, about one in eight people worldwide lives with a mental disorder — and many more go through periods of stress, grief or exhaustion that never get a diagnosis but still shape their days. Most of us are, or will be, someone with lived experience. Most of us also know someone who is struggling right now.
+Mental health is not a niche concern. According to the World Health Organization, more than a billion people — roughly one in seven worldwide — live with a mental health condition, and many more go through periods of stress, grief or exhaustion that never get a diagnosis but still shape their days. Most of us are, or will be, someone with lived experience. Most of us also know someone who is struggling right now.
 
 That’s why the theme reaches beyond hospitals and ministries. Every conversation in which someone feels genuinely heard — at home, at work, between friends — is a small version of the change the day is asking for.
 
