@@ -380,7 +380,7 @@ export const SettingsModal: React.FC<SettingsModalProps> = ({ onClose, mode, onM
                 const lang = (typeof navigator !== 'undefined' && navigator.language) || 'unknown';
                 const diag = `\n\n---\nApp: ONDA\nPlatform: ${platform}\nBuild: ${version}\nLocale: ${lang}`;
                 const body = encodeURIComponent(t('settings.contact_body_hint', 'Hi ONDA team,') + diag);
-                window.location.href = `mailto:hello@onda-life.com?subject=${subject}&body=${body}`;
+                window.location.href = `mailto:info@onda-life.com?subject=${subject}&body=${body}`;
               }}
               className="w-full py-3 px-4 rounded-xl font-medium transition-all flex items-center justify-center gap-2 text-sm bg-indigo-500/15 hover:bg-indigo-500/25 text-text-secondary border border-indigo-400/40"
               data-testid="button-contact-developers"

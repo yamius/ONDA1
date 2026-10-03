@@ -5,7 +5,7 @@ import { langFromPath, homePathFor } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
-const CONTACT_EMAIL = 'hello@onda-life.com'
+const CONTACT_EMAIL = 'info@onda-life.com'
 
 function setMeta(name: string, content: string, isProperty = false) {
   const attr = isProperty ? 'property' : 'name'

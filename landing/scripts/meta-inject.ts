@@ -1658,7 +1658,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
         name: 'Contact ONDA Life',
         description: CONTACT_DESC,
         url,
-        email: 'hello@onda-life.com',
+        email: 'info@onda-life.com',
       },
     }
   }
