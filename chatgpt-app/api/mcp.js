@@ -132,6 +132,12 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   if (req.method === 'OPTIONS') return res.status(204).end();
 
+  // Streamable HTTP: this server has no server-initiated SSE stream, so a GET that asks for one
+  // must get 405 (per spec), not a JSON body a client could mistake for a broken stream.
+  if (req.method === 'GET' && String(req.headers?.accept || '').includes('text/event-stream')) {
+    res.setHeader('Allow', 'POST, OPTIONS');
+    return res.status(405).json({ error: 'method_not_allowed', message: 'This server does not offer an SSE stream; use POST.' });
+  }
   if (req.method === 'GET') {
     return res.status(200).json({
       server: SERVER_INFO,
