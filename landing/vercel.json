@@ -62,9 +62,16 @@
     { "source": "/mcp", "destination": "https://onda-chatgpt.vercel.app/mcp" },
     { "source": "/app", "destination": "/get" },
     { "source": "/download", "destination": "/get" },
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/((?!api/|[.]well-known/).*)", "destination": "/index.html" }
   ],
   "headers": [
+    {
+      "source": "/.well-known/openai-apps-challenge",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    },
     {
       "source": "/(.*)",
       "headers": [
