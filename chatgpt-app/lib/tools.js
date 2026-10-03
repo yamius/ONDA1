@@ -75,7 +75,7 @@ export const checkHrv = {
       red_flag_symptoms: {
         type: 'boolean',
         description:
-          'true ONLY if the person reports a red-flag symptom listed in the tool description (chest pain/pressure, fainting, severe shortness of breath, racing or irregular heartbeat that does not settle, new confusion/one-sided weakness/trouble speaking). Omit otherwise. When true, the tool returns only urgent-care guidance.',
+          'Whether the person reported one of the acute symptoms listed in the tool description (chest pain or pressure, fainting, severe shortness of breath, a racing or irregular heartbeat that does not settle, new confusion, one-sided weakness or trouble speaking). When true, the tool returns urgent-care guidance only. Defaults to false.',
       },
     },
     required: ['age', 'hrv_ms', 'device'],
