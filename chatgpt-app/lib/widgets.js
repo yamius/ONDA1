@@ -137,7 +137,8 @@ const practice = page(
 boot((d) => {
   const items = d.practices.map((p) =>
     '<div class="p"><div class="row"><span class="em">' + esc(p.emoji) + '</span><b>' + esc(p.name) + '</b><span class="muted small">' + esc(p.minutes) + ' min</span></div>' +
-    '<div>' + esc(p.why) + '</div><ol class="steps">' + p.firstSteps.map((s) => '<li>' + esc(s) + '</li>').join('') + '</ol></div>').join('');
+    '<div>' + esc(p.why) + '</div><ol class="steps">' + p.firstSteps.map((s) => '<li>' + esc(s) + '</li>').join('') + '</ol>' +
+    (p.playUrl ? '<div class="row" style="margin-top:8px"><a class="btn ghost" target="_blank" rel="noopener" href="' + esc(p.playUrl) + '">▶ Play this practice</a></div>' : '') + '</div>').join('');
   $('#root').innerHTML = '<h2>Practices to ' + esc(GOAL[d.goal] || d.goal) + '</h2>' +
     (d.timeNote ? '<div class="muted small">' + esc(d.timeNote) + '</div>' : '') +
     (items || '<p>No match in the free set.</p>') +
@@ -185,8 +186,8 @@ boot((d) => {
 );
 
 export const WIDGETS = {
-  hrv: { uri: 'ui://onda/hrv-v3.html', name: 'HRV for your age', html: hrv },
-  breathe: { uri: 'ui://onda/breathe-v3.html', name: 'Breathing guide', html: breathe },
-  practice: { uri: 'ui://onda/practice-v3.html', name: 'ONDA practices', html: practice },
-  compare: { uri: 'ui://onda/compare-v3.html', name: 'Device and app comparison', html: compare },
+  hrv: { uri: 'ui://onda/hrv-v4.html', name: 'HRV for your age', html: hrv },
+  breathe: { uri: 'ui://onda/breathe-v4.html', name: 'Breathing guide', html: breathe },
+  practice: { uri: 'ui://onda/practice-v4.html', name: 'ONDA practices', html: practice },
+  compare: { uri: 'ui://onda/compare-v4.html', name: 'Device and app comparison', html: compare },
 };

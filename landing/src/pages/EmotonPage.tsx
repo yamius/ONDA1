@@ -65,6 +65,16 @@ export function EmotonPage() {
     document.title = t('page_title');
   }, [t]);
 
+  // Deep link: /emoton?practice=<adaptive practice id> opens that practice directly
+  // (used by the ONDA app in ChatGPT/Claude). Client-only, so the prerendered page is unchanged.
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get('practice');
+    if (!id || !ADAPTIVE_PRACTICES[id]) return;
+    track('practice_deeplink', { practice_id: id });
+    setBranch({ branch: 'practice', practiceId: id });
+    setStep('practice');
+  }, []);
+
   // Analytics: open the in-tool funnel session once on mount (PostHog only).
   useEffect(() => {
     void startEmotonSession();

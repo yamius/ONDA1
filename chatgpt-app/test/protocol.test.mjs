@@ -203,3 +203,10 @@ test('descriptions start with the ONDA Life name and carry one "Use for:" line',
     assert.ok(phrases >= 5 && phrases <= 8, `${t.name}: ${phrases} phrases`);
   }
 });
+
+test('each suggested practice links to that exact practice on /emoton', async () => {
+  const d = (await call('find_practice', { goal: 'calm' })).result.structuredContent;
+  for (const p of d.practices) assert.ok(p.playUrl.startsWith('https://onda-life.com/emoton?practice=' + p.id + '&utm_source=chatgpt'), p.playUrl);
+  const { WIDGETS } = await import('../lib/widgets.js');
+  assert.match(WIDGETS.practice.html, /p\.playUrl/);
+});

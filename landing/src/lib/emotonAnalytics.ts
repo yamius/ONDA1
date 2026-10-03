@@ -24,6 +24,7 @@ export type EmotonEvent =
   | 'zone_selected'
   | 'shade_selected'
   | 'route_selected'
+  | 'practice_deeplink' // opened via /emoton?practice=<id> (ChatGPT/Claude cards)
   | 'practice_started'
   | 'practice_completed'
   | 'bewith_entered'

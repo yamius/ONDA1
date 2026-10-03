@@ -219,7 +219,7 @@ export const findPractice = {
     required: ['goal'],
     additionalProperties: false,
   },
-  outputSchema: {"type":"object","properties":{"goal":{"type":"string"},"practices":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"name":{"type":"string"},"emoji":{"type":"string"},"minutes":{"type":"number"},"why":{"type":"string"},"firstSteps":{"type":"array","items":{"type":"string"}},"position":{"type":"string"}},"required":[]}},"timeNote":{"type":["string","null"]},"tryFree":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"bridge":{"type":"object","properties":{"button":{"type":"string"},"text":{"type":"string"},"url":{"type":"string"}},"required":[]}},"required":["goal","practices"]},
+  outputSchema: {"type":"object","properties":{"goal":{"type":"string"},"practices":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"name":{"type":"string"},"emoji":{"type":"string"},"minutes":{"type":"number"},"why":{"type":"string"},"firstSteps":{"type":"array","items":{"type":"string"}},"position":{"type":"string"},"playUrl":{"type":"string"}},"required":[]}},"timeNote":{"type":["string","null"]},"tryFree":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"bridge":{"type":"object","properties":{"button":{"type":"string"},"text":{"type":"string"},"url":{"type":"string"}},"required":[]}},"required":["goal","practices"]},
   annotations: annotations('Find an ONDA practice'),
   invoking: 'Finding a practice…',
   invoked: 'Practices found',
@@ -252,6 +252,7 @@ export const findPractice = {
         why: p.line,
         firstSteps: p.firstSteps,
         position: p.setting,
+        playUrl: siteUrl(`/emoton?practice=${p.id}`, 'chatgpt_practice'),
       }));
     const tryUrl = siteUrl('/emoton', 'chatgpt_practice');
     const out = {
