@@ -218,9 +218,10 @@ export const findPractice = {
       goal,
       practices: ranked,
       timeNote: minutes && minutes < 6 ? 'These practices take about 6 minutes — the first steps work as a shorter version.' : null,
-      tryFree: { text: 'Play these practices free in your browser', url: tryUrl },
+      tryFree: { text: 'Try free now in the browser', url: tryUrl },
       bridge: {
-        text: 'The ONDA app picks a practice for how you feel and shows your pulse before and after.',
+        button: 'Full version with pulse — App Store',
+        text: 'In the app the same practice shows your pulse before and after, and ONDA picks the next one for how you feel.',
         url: appStoreUrl('chatgpt_practice'),
       },
     };

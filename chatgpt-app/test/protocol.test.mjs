@@ -76,3 +76,11 @@ test('errors do not echo the arguments', async () => {
   const r = await call('check_hrv', { age: 'x', hrv_ms: 'y', device: 'oura' });
   assert.doesNotMatch(JSON.stringify(r), /"x"|"y"/);
 });
+
+test('find_practice card has the App Store button next to the free try', async () => {
+  const { WIDGETS } = await import('../lib/widgets.js');
+  const d = (await call('find_practice', { goal: 'calm' })).result.structuredContent;
+  assert.match(d.bridge.url, /apps\.apple\.com.*ct=chatgpt_practice/);
+  assert.ok(d.bridge.button);
+  assert.match(WIDGETS.practice.html, /d\.tryFree\.url[\s\S]{0,200}d\.bridge\.url/);
+});

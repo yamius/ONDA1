@@ -98,8 +98,9 @@ boot((d) => {
   $('#root').innerHTML = '<h2>Practices to ' + esc(GOAL[d.goal] || d.goal) + '</h2>' +
     (d.timeNote ? '<div class="muted small">' + esc(d.timeNote) + '</div>' : '') +
     (items || '<p>No match in the free set.</p>') +
-    '<div class="row" style="margin-top:8px"><a class="btn ghost" target="_blank" rel="noopener" href="' + esc(d.tryFree.url) + '">' + esc(d.tryFree.text) + '</a></div>' +
-    bridge(d.bridge);
+    '<div class="row" style="margin-top:10px"><a class="btn ghost" target="_blank" rel="noopener" href="' + esc(d.tryFree.url) + '">' + esc(d.tryFree.text) + '</a>' +
+    '<a class="btn" target="_blank" rel="noopener" href="' + esc(d.bridge.url) + '">' + esc(d.bridge.button) + '</a></div>' +
+    '<p class="muted small">' + esc(d.bridge.text) + '</p>';
 });`,
 );
 
