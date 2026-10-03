@@ -17,6 +17,7 @@ h2{font-size:var(--font-heading-md-size,17px);margin:0 0 4px}.muted{color:var(--
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 a{color:var(--accent)}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .warn{color:var(--danger)}
+body:not(.ready){min-height:120px}
 `;
 
 const SHELL_JS = `
@@ -37,11 +38,26 @@ function applyContext(ctx) {
   const vars = ctx.styles && ctx.styles.variables;
   if (vars) for (const k in vars) if (k.startsWith('--') && vars[k]) root.style.setProperty(k, vars[k]);
   const s = ctx.safeAreaInsets;
-  if (s) document.body.style.padding = (s.top||0)+'px '+(s.right||0)+'px '+(s.bottom||0)+'px '+(s.left||0)+'px';
+  // Only touch padding when the insets actually change — every change moves the card height.
+  if (s) { const pad = (s.top||0)+'px '+(s.right||0)+'px '+(s.bottom||0)+'px '+(s.left||0)+'px'; if (document.body.style.padding !== pad) document.body.style.padding = pad; }
 }
-function draw() { if (window.openai && window.openai.theme && !inHost) document.documentElement.dataset.theme = window.openai.theme; const d = data || (window.openai && window.openai.toolOutput) || window.__DEMO__; if (d && renderFn) renderFn(d); reportSize(); }
+// Render once per distinct result: hosts may resend the same tool-result or context while the
+// reply is still streaming, and a full re-render would flash the card (and reset the breathing timer).
+let drawnKey = null;
+function draw() {
+  if (window.openai && window.openai.theme && !inHost) document.documentElement.dataset.theme = window.openai.theme;
+  const d = data || (window.openai && window.openai.toolOutput) || window.__DEMO__;
+  if (d && renderFn) { const key = JSON.stringify(d); if (key !== drawnKey) { drawnKey = key; renderFn(d); document.body.classList.add('ready'); } }
+  reportSize();
+}
 let lastH = 0;
-function reportSize() { if (!inHost) return; const h = Math.ceil(document.documentElement.getBoundingClientRect().height); if (h && h !== lastH) { lastH = h; post({ method: 'ui/notifications/size-changed', params: { height: h } }); } }
+// Report height only once real content is drawn, never smaller than the skeleton, and only on a
+// real change (±2px): an empty or shrinking report makes the host collapse the card for a moment.
+function reportSize() {
+  if (!inHost || drawnKey === null) return;
+  const h = Math.max(120, Math.ceil(document.body.scrollHeight));
+  if (Math.abs(h - lastH) > 2) { lastH = h; post({ method: 'ui/notifications/size-changed', params: { height: h } }); }
+}
 window.addEventListener('message', (ev) => {
   if (ev.source !== window.parent) return;
   const m = ev.data; if (!m || m.jsonrpc !== '2.0') return;
@@ -186,8 +202,8 @@ boot((d) => {
 );
 
 export const WIDGETS = {
-  hrv: { uri: 'ui://onda/hrv-v4.html', name: 'HRV for your age', html: hrv },
-  breathe: { uri: 'ui://onda/breathe-v4.html', name: 'Breathing guide', html: breathe },
-  practice: { uri: 'ui://onda/practice-v4.html', name: 'ONDA practices', html: practice },
-  compare: { uri: 'ui://onda/compare-v4.html', name: 'Device and app comparison', html: compare },
+  hrv: { uri: 'ui://onda/hrv-v5.html', name: 'HRV for your age', html: hrv },
+  breathe: { uri: 'ui://onda/breathe-v5.html', name: 'Breathing guide', html: breathe },
+  practice: { uri: 'ui://onda/practice-v5.html', name: 'ONDA practices', html: practice },
+  compare: { uri: 'ui://onda/compare-v5.html', name: 'Device and app comparison', html: compare },
 };
