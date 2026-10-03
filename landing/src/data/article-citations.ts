@@ -1463,6 +1463,14 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "journal": "Journal of Psychiatric Research",
       "doi": "10.1016/j.jpsychires.2017.08.004",
       "url": "https://doi.org/10.1016/j.jpsychires.2017.08.004"
+    },
+    {
+      "title": "The Effect of Diaphragmatic Breathing on Attention, Negative Affect and Stress in Healthy Adults",
+      "authors": "Ma X et al.",
+      "year": 2017,
+      "journal": "Frontiers in Psychology",
+      "doi": "10.3389/fpsyg.2017.00874",
+      "url": "https://doi.org/10.3389/fpsyg.2017.00874"
     }
   ],
   "how-to-measure-hrv-consistently": [
@@ -2537,6 +2545,24 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "doi": "10.1038/nrn4023",
       "pmid": "26585800",
       "url": "https://doi.org/10.1038/nrn4023"
+    }
+  ],
+  "nicotine-vaping-hrv-heart-rate": [
+    {
+      "title": "Cardiovascular toxicity of nicotine: Implications for electronic cigarette use",
+      "authors": "Benowitz N et al.",
+      "year": 2016,
+      "journal": "Trends in Cardiovascular Medicine",
+      "doi": "10.1016/j.tcm.2016.03.001",
+      "url": "https://doi.org/10.1016/j.tcm.2016.03.001"
+    },
+    {
+      "title": "Increased Cardiac Sympathetic Activity and Oxidative Stress in Habitual Electronic Cigarette Users",
+      "authors": "Moheimani R et al.",
+      "year": 2017,
+      "journal": "JAMA Cardiology",
+      "doi": "10.1001/jamacardio.2016.5303",
+      "url": "https://doi.org/10.1001/jamacardio.2016.5303"
     }
   ],
   "nightly-flush-glymphatic-neural-cache": [

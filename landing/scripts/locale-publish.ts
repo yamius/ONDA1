@@ -80,4 +80,9 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('h2h', 'whoop-5-0-vs-polar-h10', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'calm-vs-insight-timer', '2026-10-02', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'vipassana-meditation-attention-brain', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'eating-late-heart-rate-sleep', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'cognitive-shuffling', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'how-to-lower-cortisol', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'nicotine-vaping-hrv-heart-rate', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

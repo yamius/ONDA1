@@ -4,14 +4,16 @@ import type { Article } from './types'
  * Nicotine/vaping → acute HR & BP rise, reduced HRV (sympathetic stimulant). Consumer-legal like
  * caffeine/alcohol, so fine to name in an educational article (NOT for ad creatives — noted in the
  * topic-map). Ties to ONDA baseline (RHR/HRV). Firewall: descriptive; addiction/quitting → real help.
- * Grounded: nicotine is a sympathomimetic; raises HR, lowers HRV. No fabricated numbers.
+ * Grounded: Benowitz & Burbank 2016 (nicotine CV pharmacology), Moheimani 2017 (e-cig users: HRV
+ * shifted sympathetic). 2026-10 upgrade: answer-first, comparison table, quit steps, chest-pain note;
+ * "all-day drip = near-continuous sympathetic nudge" and "HRV recovers after quitting" softened (unsourced).
  */
 const article: Article = {
   slug: 'nicotine-vaping-hrv-heart-rate',
   title: 'The Quiet Tax: What Nicotine and Vaping Do to Your Heart Rate and HRV',
-  seoTitle: 'Nicotine, Vaping, Heart Rate & HRV: The Tax | ONDA Life',
+  seoTitle: 'Nicotine and Vaping: Heart Rate and HRV Effects | ONDA Life',
   description:
-    'Nicotine is a stimulant, and vaping delivers it in a steady drip — raising heart rate and blood pressure while flattening HRV. Why the effect hides behind “it relaxes me,” and how it shows up in your own numbers.',
+    'Nicotine raises heart rate and blood pressure and tilts HRV toward stress, smoked or vaped. Why it still feels relaxing, and how to quit.',
   category: 'ONDA Protocol',
   relatedSlugs: ['heart-rate-variability', 'caffeine-hrv-resting-heart-rate', 'your-baseline-knows-first', 'sympathetic-nervous-system', 'coherent-breathing-guide'],
   introStyle: 'amber',
@@ -28,65 +30,82 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-## [ CASE FILE: THE RELAXATION THAT SPEEDS YOU UP ]
-
-> "You reach for it when you're stressed, and it feels like relief. But the feeling and the physiology point in opposite directions. Nicotine is a stimulant — a [sympathetic](/glossary/sympathetic-nervous-system) accelerant — and while your mind reads the hit as calm, your heart is speeding up and your nervous system is tensing, not settling.
-
-> The relief is real. It's also the relief of feeding a craving, not the relief of a calmed body. And your numbers can tell the two apart."
+Nicotine raises heart rate and blood pressure because it triggers the release of adrenaline-like stress chemicals, whether it comes from a cigarette, a vape or a pouch (Benowitz 2016). It also shifts the nervous system toward the [sympathetic](/glossary/sympathetic-nervous-system) "go" side: in a study of healthy young adults, habitual e-cigarette users had heart rate variability patterns showing more sympathetic and less vagal activity than non-users (Moheimani 2017). The calm many people feel from nicotine is largely relief from withdrawal and the ritual of a pause, not a calmer body.
 
 ---
 
-## Section 1: Does nicotine raise your heart rate?
+## Does nicotine raise your heart rate?
 
-Whatever the delivery — cigarette, vape, pouch — nicotine acts as a **sympathomimetic**: it stimulates the sympathetic nervous system, releasing adrenaline-family signals that **raise heart rate and blood pressure.** That's the opposite of a relaxant's physiology. The subjective calm comes from relieving withdrawal and from ritual, not from any downregulation of the stress response — under the hood, the stress response is being *turned up.*
+Yes — nicotine acutely raises heart rate and blood pressure. It stimulates the sympathetic nervous system and the release of catecholamines (adrenaline and noradrenaline), which speeds the heart, narrows blood vessels and increases the heart’s workload (Benowitz 2016). This happens with any delivery route; removing tobacco smoke removes many toxins but not nicotine’s effect on the heart.
 
-This is why the "it relaxes me" story is so sticky and so misleading: the felt experience and the autonomic reality genuinely diverge.
-
----
-
-## Section 2: How does nicotine affect HRV?
-
-Because nicotine pushes toward sympathetic dominance, it **reduces [heart-rate variability](/glossary/heart-rate-variability)** — the marker of parasympathetic, recovery-side tone. Higher heart rate, lower variability: the signature of a system tilted toward *go.* With cigarettes this comes bundled with all the other harms of combustion; with vaping the combustion is gone but the nicotine — and its autonomic effect — is not.
-
-Vaping deserves its own note here. It tends to deliver nicotine not as a few discrete hits but as an **all-day steady drip**, which can mean the sympathetic nudge is near-continuous rather than occasional. A body that never gets a clean parasympathetic window is a body whose baseline quietly settles in the wrong place.
+That is the opposite of a relaxant’s physiology, which is why the "it relaxes me" story is so misleading: the felt experience and the autonomic reality point in different directions.
 
 ---
 
-## Section 3: Does nicotine withdrawal affect your heart rhythm?
+## How does nicotine affect HRV?
 
-Yes: nicotine's short half-life means regular users cycle through mini-withdrawals all day, each with its own autonomic turbulence — restlessness, a stress bump, a craving that reads as anxiety. The next hit smooths it, which cements the loop. From the outside it looks like the substance manages stress. From the inside of your data, it's often *creating* the very fluctuations it then relieves.
+Nicotine tends to lower [heart rate variability](/glossary/heart-rate-variability), the beat-to-beat variation that reflects recovery-side (parasympathetic) tone. Moheimani et al. (2017) compared 23 healthy habitual e-cigarette users with 19 non-users and found HRV patterns shifted toward sympathetic predominance, along with higher oxidative stress. It was a small cross-sectional study, so it shows an association rather than proof of cause, but it fits nicotine’s known pharmacology.
+
+| | Cigarettes | Vapes | Nicotine pouches / gum |
+|---|---|---|---|
+| Nicotine | Yes | Yes | Yes |
+| Heart rate and blood pressure | Raised | Raised | Raised |
+| Tobacco smoke (combustion) | Yes | No | No |
+| Overall cardiovascular risk | Highest | Lower than smoking; long-term risk still unknown | Lower than smoking (based on nicotine-replacement and smokeless data) |
+
+Benowitz and Burbank concluded that nicotine without combustion carries much lower cardiovascular risk than smoking for healthy users, at least in the short term — but remains a concern for people with heart disease (Benowitz 2016).
 
 ---
 
-## Section 4: Seeing it in your own numbers
+## Why does nicotine feel relaxing if it’s a stimulant?
 
-This is a lifestyle input, and like caffeine or alcohol it writes itself into your baseline. ONDA holds your resting heart rate and [HRV](/glossary/heart-rate-variability) against your **personal corridor**, so the effect stops being abstract: an elevated resting pulse and a flattened variability that track your use are the tax made visible — [your own data](/measurements). If you're working toward cutting down or quitting, that same baseline becomes a motivator — because HRV tends to recover as nicotine leaves the picture, and watching your own numbers climb back is a concrete, personal reason to keep going.
+Nicotine feels relaxing mainly because each dose relieves the restlessness and craving of withdrawal from the last one. Nicotine wears off within hours, so regular users cycle through mini-withdrawals during the day; the next dose smooths them out, which reinforces the habit. The reach for a vape is also a reach for a pause — a break, a few deliberate breaths — and that part of the relief is real.
 
-The firewall, plainly: ONDA is **descriptive, not medical**, and this is not medical advice. Nicotine dependence is a genuine addiction, and quitting is hard — for real help, a doctor, a quitline, or an evidence-based cessation program will do far more than an app. ONDA can show you the physiology; it can't treat the dependence.
+Vaping can make the pattern less visible: because it is easy to use continuously, many people take small hits throughout the day rather than a few discrete cigarettes, so the stimulant effect can be spread across more of the day.
 
 ---
 
-## Section 5: If you're cutting down
+## Can you see nicotine’s effect in your own numbers?
 
-If quitting is the goal, lean on real support and use your data as encouragement, not judgment. Replace the ritual, not just the substance — the reach for a vape when stressed is often a reach for a *pause*, and a slow [exhale-led breath](/articles/coherent-breathing-guide) delivers the genuine version of the calm nicotine only imitates: an actual parasympathetic shift, no accelerant attached. Then let the corridor show you the payoff as your resting heart rate settles and your variability returns.
+You can often see it as a resting heart rate and HRV that sit worse on heavier-use days than on lighter ones. With an Apple Watch, ONDA reads resting heart rate and HRV from Apple Health and holds them against your **personal 14-day baseline**, so changes are compared with your own normal rather than a population average — [see what ONDA measures](/measurements). If you cut down or quit, the same baseline lets you watch your resting heart rate settle over the following weeks, which many people find motivating.
 
-> **The Hack:** Don't trust the feeling — check the physiology. Nicotine reads as calm while it raises your heart rate and lowers your HRV. When you want the pause it seems to offer, take a slow, longer-exhale breath instead: that one actually calms the body, and your baseline will show which relief was real.
+ONDA is descriptive, not medical, and this is not medical advice. It can show you the physiology; it can’t treat the dependence.
+
+---
+
+## How do you cut down or quit?
+
+You give yourself the best chance by combining practical support with medication or nicotine replacement where appropriate.
+
+1. **Get support:** a doctor, pharmacist or free quitline (in the US, 1-800-QUIT-NOW; in the UK, the NHS Stop Smoking Service) improves your odds compared with going it alone.
+2. **Ask about medication:** nicotine replacement (patches plus gum or lozenges), varenicline or cytisine can ease withdrawal — a clinician can help you choose.
+3. **Set a quit date** and plan for the moments you usually reach for nicotine.
+4. **Replace the ritual, not just the substance:** when you want a pause, take a few slow breaths with a longer exhale — see [coherent breathing](/articles/coherent-breathing-guide). It gives you the break without the stimulant.
+5. **Track the payoff:** watch your own resting heart rate trend as a concrete reason to keep going.
+
+---
+
+## When should you get medical help?
+
+Call emergency services straight away for chest pain or pressure, pain spreading to the arm, jaw or back, sudden shortness of breath, fainting, or a racing or irregular heartbeat that doesn’t settle. See a doctor before using nicotine replacement if you’re pregnant, have heart disease or have recently had a heart attack or stroke. Never vape or use nicotine products near children — liquid nicotine is poisonous if swallowed.
+
+> **The Hack:** Don’t trust the feeling — check the physiology. Nicotine reads as calm while it raises your heart rate. When you want the pause it seems to offer, take a slow, longer-exhale breath instead, and let your baseline show the difference over the weeks you cut down.
 
 > [ SYSTEM_STATUS ]
-> REALITY: nicotine = sympathetic stimulant (HR ↑, BP ↑, HRV ↓)
-> ILLUSION: "relaxation" = relieved withdrawal + ritual, not calm
-> VAPING: all-day drip → near-continuous sympathetic nudge
-> HELP: dependence is real — quitline/doctor beats an app · NOT MEDICAL ADVICE
+> REALITY: nicotine = sympathetic stimulant (HR ↑, BP ↑, HRV shifts toward sympathetic)
+> ILLUSION: "relaxation" = relieved withdrawal + ritual, not a calmer body
+> VAPING: no smoke, same nicotine
+> HELP: quitline/doctor + medication beat an app · NOT MEDICAL ADVICE
 `,
   howToSteps: [
     {
       name: 'Separate the feeling from the physiology',
-      text: 'Nicotine feels calming but acts as a stimulant — raising heart rate and blood pressure and lowering HRV. The relief is relieved withdrawal and ritual, not a calmed nervous system.',
+      text: 'Nicotine feels calming but acts as a stimulant — raising heart rate and blood pressure and shifting HRV toward sympathetic dominance. The relief is mostly relieved withdrawal and ritual, not a calmed nervous system.',
       protocolId: 'nic-reality',
     },
     {
-      name: 'Notice the all-day drip',
-      text: 'Vaping often delivers nicotine as a steady all-day drip rather than discrete hits, meaning a near-continuous sympathetic nudge. A body that never gets a clean parasympathetic window drifts its baseline the wrong way.',
+      name: 'Notice the all-day pattern',
+      text: 'Vaping removes smoke but not nicotine. Because it is easy to use continuously, many people take small hits all day, spreading the stimulant effect across more of the day.',
       protocolId: 'nic-drip',
     },
     {
@@ -96,7 +115,7 @@ If quitting is the goal, lean on real support and use your data as encouragement
     },
     {
       name: 'Use real help, and your data as motivation',
-      text: 'Nicotine dependence is a genuine addiction — a doctor, quitline or cessation program does what an app can’t. Let your recovering HRV and resting heart rate be the concrete, personal reason to keep going.',
+      text: 'Nicotine dependence is a genuine addiction — a doctor, quitline, nicotine replacement or stop-smoking medication does what an app can’t. Let your settling resting heart rate be a concrete, personal reason to keep going.',
       protocolId: 'nic-help',
     },
   ],

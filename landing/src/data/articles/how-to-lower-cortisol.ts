@@ -4,13 +4,16 @@ import type { Article } from './types'
  * How to Lower Cortisol — wedge companion guide.
  * Targets the hot "lower cortisol / cortisol detox / cortisol face" queries with
  * an honest debunk + what actually works, funnelling to breathing/NS/sleep tools.
+ * 2026-10 upgrade: answer-first, evidence table, Pascoe 2017 described accurately (45 RCTs vs active
+ * control), Ma 2017 added for breathing, unsourced exercise/caffeine-cortisol claims softened,
+ * Cushing’s/Addison’s signs + don’t-stop-steroids note.
  */
 const article: Article = {
   slug: 'how-to-lower-cortisol',
   title: 'How to Lower Cortisol: What Actually Works',
   seoTitle: 'How to Lower Cortisol (and the Detox Myth) | ONDA Life',
   description:
-    'You can’t "detox" cortisol — but you can lower chronically high levels. The evidence-based levers: sleep, slow breathing, movement and stress load. Here’s how.',
+    'You can’t "detox" cortisol. Sleep, meditation, slow breathing and less stress load lower stress-driven cortisol. What works and when to see a doctor.',
   category: 'ONDA Protocol',
   relatedSlugs: ['cortisol', 'circadian-rhythm', 'homeostasis', 'sympathetic-nervous-system', 'parasympathetic-nervous-system'],
   introStyle: 'amber',
@@ -25,57 +28,57 @@ const article: Article = {
     linkText: 'Burnout Self-Assessment →',
   },
   howToSteps: [
-    { name: 'Fix sleep first', text: 'Protect 7–9 hours on a consistent schedule; poor sleep dysregulates the HPA axis and keeps cortisol elevated.', protocolId: 'cortisol-sleep' },
-    { name: 'Breathe slowly, daily', text: 'A few minutes of slow, long-exhale breathing shifts you toward parasympathetic dominance and lowers measured cortisol.', protocolId: 'cortisol-breath' },
-    { name: 'Move — but don’t overtrain', text: 'Regular moderate exercise lowers baseline stress reactivity; chronic over-training does the opposite.', protocolId: 'cortisol-move' },
-    { name: 'Cut the inputs that spike it', text: 'Late caffeine, alcohol, doomscrolling and chronic overload all push cortisol up — trim them before chasing supplements.', protocolId: 'cortisol-inputs' },
+    { name: 'Fix sleep first', text: 'Aim for at least 7 hours on a consistent schedule; sleep loss and the stress axis feed each other, so sleep is the highest-yield lever.', protocolId: 'cortisol-sleep' },
+    { name: 'Meditate or breathe slowly, daily', text: 'Meditation lowered cortisol versus active controls in a meta-analysis of randomized trials, and an 8-week slow diaphragmatic breathing program lowered salivary cortisol in a small trial.', protocolId: 'cortisol-breath' },
+    { name: 'Move — and recover', text: 'Regular moderate activity supports sleep and stress resilience; balance hard training with rest days.', protocolId: 'cortisol-move' },
+    { name: 'Trim the inputs that keep you switched on', text: 'Late caffeine, evening alcohol, late-night screens and constant overload disturb sleep and keep stress high — trim them before buying supplements.', protocolId: 'cortisol-inputs' },
   ],
   content: `
-## [ ANALYZING THE STRESS HORMONE ]
-
-> "Cortisol is having a moment online — blamed for belly fat, 'cortisol face', poor sleep and general malaise, with a 'cortisol detox' sold as the fix. Let's be clear up front: cortisol is not a toxin, you can't 'detox' it, and it's not the villain. It's your primary stress and wake-up hormone — it gets you out of bed, mobilises energy and dampens inflammation. The real problem isn't cortisol; it's *chronically elevated* cortisol from a system that never gets the signal to stand down. You don't cleanse it. You regulate it."
+You can’t "detox" cortisol, and you don’t need to: cortisol is a normal hormone that should rise in the morning and fall at night. What you can change is stress-driven cortisol that stays high — and the best-supported levers are sleep, regular meditation or slow-breathing practice, sensible exercise and a lighter stress load. A meta-analysis of 45 randomized trials found that meditation reduced cortisol, blood pressure and heart rate compared with active control activities (Pascoe 2017), while no diet, supplement or "cortisol detox" has comparable evidence.
 
 ---
 
 ## What does cortisol actually do?
 
-[Cortisol](/glossary/cortisol) follows a daily [circadian](/glossary/circadian-rhythm) curve: it peaks in the first hour after waking (the cortisol awakening response) and tapers to a low at night so you can sleep. That rhythm is healthy and necessary. Trouble starts when chronic stress, poor sleep or constant stimulation flatten or elevate the curve — keeping the [sympathetic](/glossary/sympathetic-nervous-system) "fight-or-flight" system switched on when it should be off.
+[Cortisol](/glossary/cortisol) is your main stress and wake-up hormone: it mobilises energy, helps regulate blood pressure and dampens inflammation. It follows a daily [circadian](/glossary/circadian-rhythm) curve — a sharp rise in the first hour after waking (the cortisol awakening response), then a gradual fall to its lowest around bedtime so you can sleep. Problems start when chronic stress or poor sleep keep it elevated or flatten that curve, keeping the [sympathetic](/glossary/sympathetic-nervous-system) "fight-or-flight" system switched on when it should be off.
 
-So the goal is not "low cortisol." It's a *well-shaped* cortisol rhythm — high in the morning, low at night — which is really a question of restoring [homeostasis](/glossary/homeostasis), not detoxing.
+So the goal isn’t "low cortisol". It’s a well-shaped rhythm — higher in the morning, low at night — which is really about restoring [homeostasis](/glossary/homeostasis).
 
 ---
 
 ## Does a "cortisol detox" work?
 
-No — there is no diet, supplement or juice that "flushes" cortisol. The viral "cortisol detox" and "cortisol face" content vastly overstates what food can do and invents a mechanism that doesn't exist — major clinical sources are blunt that lifestyle, not a detox, is what moves cortisol. Genuinely high cortisol from a medical cause (Cushing's syndrome) is rare and needs a doctor, not a smoothie. For everyday stress-driven elevation, the levers below are the real ones.
+No — there is no diet, juice or supplement shown to "flush" cortisol, and cortisol isn’t a toxin to be cleansed. Viral "cortisol detox" and "cortisol face" content overstates what food can do. Genuinely high cortisol from a medical cause, such as Cushing’s syndrome, is uncommon and needs a doctor and proper tests, not a smoothie. For everyday stress-driven elevation, the levers below are the real ones.
 
 ---
 
 ## What actually lowers cortisol?
 
-### PROTOCOL 1: Sleep Is the Master Lever
+The levers with the best support are sleep, meditation or slow breathing, balanced exercise and fewer chronic stressors.
 
-> **The Hack:** Protect 7–9 hours on a consistent schedule; treat sleep as non-negotiable.
+| Lever | What to do | Evidence |
+|---|---|---|
+| **Sleep** | 7+ hours on a consistent schedule | Sleep loss and stress-axis activity reinforce each other (Hirotsu 2015, review) |
+| **Meditation** | Daily focused-attention practice | Lowered cortisol vs active controls across RCTs (Pascoe 2017, meta-analysis) |
+| **Slow breathing** | Regular diaphragmatic breathing practice | Lower salivary cortisol after 8 weeks in one small RCT (Ma 2017) |
+| **Movement** | Moderate activity, with recovery days | Supports sleep and general health; little direct cortisol evidence |
+| **Fewer inputs** | Earlier caffeine, less evening alcohol, fewer late screens | Mainly works by protecting sleep |
 
-**The Science:** Sleep and the stress axis are tightly coupled — sleep loss dysregulates the HPA axis and pushes cortisol up, which in turn wrecks sleep, a self-feeding loop (Hirotsu 2015). Fixing sleep is the highest-yield move. Time your last [caffeine](/tools/caffeine) early and wind down with [a cycle-aligned bedtime](/tools/sleep-cycle).
+### Is sleep the most important lever?
 
-### PROTOCOL 2: Slow Breathing and Meditation
+Sleep is the best place to start because sleep and the stress axis are tightly linked: sleep loss is associated with HPA-axis disruption and higher cortisol, which in turn makes sleep worse — a self-reinforcing loop (Hirotsu 2015). Time your last [caffeine](/tools/caffeine) early and wind down with [a cycle-aligned bedtime](/tools/sleep-cycle).
 
-> **The Hack:** A few minutes a day of slow, long-exhale breathing or meditation.
+### Do meditation and slow breathing lower cortisol?
 
-**The Science:** A meta-analysis of 45 studies found meditation measurably reduces cortisol along with blood pressure and resting heart rate (Pascoe 2017). The [Breathing Pacer](/tools/breathing) and the [Nervous System State quiz](/tools/nervous-system) put this into practice.
+Yes, the evidence is reasonable. Pascoe 2017 pooled 45 randomized trials that compared meditation with an active control: focused-attention meditation reduced cortisol, and meditation overall reduced cortisol, blood pressure, heart rate and some inflammation markers. For breathing specifically, a small randomized trial of 40 adults found that 20 sessions of slow diaphragmatic breathing over 8 weeks lowered salivary cortisol, while the control group didn’t change (Ma 2017). The [Breathing Pacer](/tools/breathing) and the [Nervous System State quiz](/tools/nervous-system) put this into practice.
 
-### PROTOCOL 3: Move Without Overtraining
+### Does exercise help or hurt?
 
-> **The Hack:** Regular moderate exercise (Zone 2, walking, strength) — but don't bury yourself in chronic high intensity.
+Regular moderate activity — walking, Zone 2, strength work — generally supports sleep and stress resilience. Hard exercise briefly raises cortisol, which is a normal response; the problem is relentless hard training without recovery. Balance load with rest days.
 
-**The Logic:** Moderate activity lowers stress reactivity over time; relentless over-training is itself a chronic stressor that keeps cortisol elevated. Balance load with recovery.
+### What should you cut first?
 
-### PROTOCOL 4: Trim the Cortisol-Spiking Inputs
-
-> **The Hack:** Cut late caffeine and alcohol, doomscrolling and always-on work before reaching for adaptogens.
-
-**The Logic:** The basics outperform supplements. Remove the chronic inputs keeping the system switched on, and the rhythm largely self-corrects.
+Cut the inputs that keep you switched on before reaching for adaptogens: late caffeine, evening alcohol, doomscrolling in bed and always-on work. Most of these act by eroding sleep, the master lever.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: Sleep + HRV tracker / how you feel on waking
@@ -84,7 +87,13 @@ No — there is no diet, supplement or juice that "flushes" cortisol. The viral 
 
 ---
 
-If chronically wired-and-tired is your normal, it may be tipping toward burnout — the [Burnout Self-Assessment](/tools/burnout) is a good next check. And persistent symptoms (unexplained weight changes, very high blood pressure, severe fatigue) deserve a doctor, not a detox. This is educational, not medical advice.
+## When should you see a doctor about cortisol?
+
+See a doctor if you have signs that could point to a hormonal condition rather than everyday stress. Possible signs of too much cortisol (Cushing’s syndrome) include weight gain concentrated on the face, upper back and belly, wide purple stretch marks, easy bruising, muscle weakness, and new or hard-to-control high blood pressure or blood sugar. Possible signs of too little (Addison’s disease or other adrenal insufficiency) include persistent fatigue, weight loss, dizziness on standing, salt cravings, nausea and darkening skin; sudden severe weakness, vomiting or confusion is an emergency.
+
+**If you take steroid medicines** (such as prednisolone or hydrocortisone tablets, or high-dose inhaled or injected steroids), don’t stop or reduce them to "lower cortisol" — stopping suddenly can trigger a dangerous adrenal crisis. Talk to your prescriber first.
+
+If chronically wired-and-tired is your normal, it may be tipping toward burnout — the [Burnout Self-Assessment](/tools/burnout) is a good next check. This is educational, not medical advice.
 `,
 }
 

@@ -2,15 +2,17 @@ import type { Article } from './types'
 
 /**
  * Cognitive Shuffling — companion article for the /tools/cognitive-shuffle tool.
+ * 2026-10 upgrade: answer-first; unsourced Digdon & Beaudoin student-study results removed
+ * (evidence framed as theory + preliminary data); Harvey 2002 + Qaseem 2016 used; table + doctor note.
  * Targets the high-intent query "cognitive shuffling" with a how-to + the science,
  * and funnels readers into the interactive tool.
  */
 const article: Article = {
   slug: 'cognitive-shuffling',
-  title: 'Cognitive Shuffling: The Mental Trick to Fall Asleep Fast',
-  seoTitle: 'Cognitive Shuffling: How to Fall Asleep Fast | ONDA Life',
+  title: 'Cognitive Shuffling: A Mental Trick to Help You Fall Asleep',
+  seoTitle: 'Cognitive Shuffling: How It Works for Sleep | ONDA Life',
   description:
-    'Cognitive shuffling is a science-backed bedtime technique: picture random, unrelated words to quiet a racing mind and fall asleep faster. Here is how it works and how to do it.',
+    'Cognitive shuffling: picture random, unrelated objects in bed to quiet a racing mind. How to do it, what the early evidence shows, and when to try CBT-I.',
   category: 'ONDA Protocol',
   relatedSlugs: [
     'phase-locked-acoustic-sleep',
@@ -42,7 +44,7 @@ const article: Article = {
     },
     {
       name: 'Let attention drift and repeat',
-      text: 'If your mind wanders back to worries, just return to the next random word. Most people drift off before finishing. Or skip the manual version and let the tool feed you the words.',
+      text: 'If your mind wanders back to worries, just return to the next random word. Many people drift off before running out of letters. Or skip the manual version and let the tool feed you the words.',
     },
   ],
   neuralSuggestion: {
@@ -51,68 +53,68 @@ const article: Article = {
     linkText: 'Sleep Cycle Calculator →',
   },
   content: `
-## [ PROTOCOL: COGNITIVE_SHUFFLE // FLUSH_THE_BUFFER ]
+Cognitive shuffling is a falling-asleep technique in which you picture a stream of random, unrelated, everyday objects — a ladder, a lemon, a lake — to crowd out worrying and planning thoughts at lights-out. It was proposed by cognitive scientist Luc Beaudoin, who calls it *serial diverse imagining*, on the idea that scattered, neutral images resemble the drifting imagery of normal sleep onset. The evidence is still early: it rests on a cognitive model of sleep onset and small preliminary studies rather than large clinical trials, so treat it as a free, low-risk thing to try — not a treatment for insomnia.
 
-You are exhausted. You get into bed. And your mind picks that exact moment to replay the awkward thing you said in 2019 and draft tomorrow's to-do list in parallel. The harder you try to shut it down, the louder it gets.
+---
 
-This is **cognitive arousal** — the engine of most "I can't switch off" insomnia. The problem isn't that your brain is too tired to sleep; it's that it is too *engaged*. And you can't force disengagement by willpower, because trying is itself a form of engagement.
+## Why does a racing mind keep you awake?
 
-**Cognitive shuffling** is a way out. Instead of fighting the thoughts, you give your mind a stream of harmless, random, unconnected images to chew on — and that quietly walks it off the ledge into sleep.
+A racing mind keeps you awake because worry, planning and monitoring whether you are falling asleep raise mental and physical arousal. Psychologist Allison Harvey’s cognitive model of insomnia describes exactly this loop: excessive negative thinking about sleep and the day triggers arousal and distress, attention locks onto threats (including "I’m still awake"), and the extra arousal makes sleep less likely (Harvey 2002). Trying harder to switch off is itself a form of engagement, which is why willpower rarely works.
 
 ---
 
 ## What is cognitive shuffling?
 
-Cognitive shuffling is a falling-asleep technique of deliberately imagining a series of random, unrelated, concrete objects. The technique was developed by cognitive scientist **Luc Beaudoin** at Simon Fraser University, who called it *serial diverse imagining* (SDI). The idea is deceptively simple: deliberately imagine a series of random, unrelated, concrete objects — \`mushroom\` … \`fence\` … \`telescope\` — holding each for a second before the next replaces it.
+Cognitive shuffling is a deliberate way of giving your mind something harmless, random and disconnected to do in bed. Beaudoin’s framing is that falling asleep is accompanied by loose, unconnected imagery (hypnagogia), whereas coherent, emotionally loaded thinking holds you awake. By imagining a series of unrelated concrete objects — holding each for a few seconds before the next — you mimic the first and crowd out the second (Beaudoin 2019).
 
-Why random and *neutral*? Because it resembles the loose, drifting imagery of falling asleep. Researchers call those drifting, disconnected pre-sleep images **hypnagogia**. By manufacturing that state on purpose, you signal to the brain that it is safe to let go — while crowding out the coherent, emotionally loaded thinking that keeps you wired.
-
-It is the opposite of most sleep advice. Guided meditations, "sleep stories," and structured visualisations still demand focused attention and a narrative thread. That thread is the problem. Cognitive shuffling deliberately *breaks* the thread.
-
----
-
-## Does it actually work?
-
-There is real, if early, evidence. In early, conference-reported work by Nancy **Digdon** and Beaudoin, students used the serial-diverse-imagining task at bedtime. Those practicing it reported **better sleep quality, less difficulty falling asleep, and lower pre-sleep arousal**.
-
-The honest caveats: the research base is still small, mostly student samples, and reported largely through conference work rather than large clinical trials. So treat it as a promising, low-cost tool — not a cure for clinical insomnia. But unlike sleep medication, it is free, drug-free, and essentially risk-free to try tonight.
-
-> **Why it beats counting sheep:** counting is monotonous *and* repetitive — a single, structured task your mind can do on autopilot while it keeps worrying in the background. Random diverse images give it nothing to autopilot, and nothing coherent to grip.
+That is the opposite of a lot of sleep content. Sleep stories and structured visualisations keep a narrative thread; cognitive shuffling deliberately breaks it.
 
 ---
 
 ## How do you do cognitive shuffling?
 
-You can run the whole thing in your head — see the step-by-step protocol in the box on this page. In short: pick a neutral seed word, spin off unrelated concrete images from each letter, picture each briefly, and let attention drift. Keep the images disconnected and never build a story.
+You do it by spinning random, concrete images out of the letters of a neutral word:
 
-The catch is that *choosing* the words is itself a small cognitive task — which is exactly why a generator works better for many people.
+1. **Get into bed, lights off,** only when you are actually trying to sleep.
+2. **Pick a neutral seed word,** such as "lantern".
+3. **Take the first letter (L)** and think of unrelated objects starting with it — ladder, lemon, lake — picturing each for a few seconds.
+4. **Move to the next letter** when ideas run dry (A: acorn, anchor, apple…). Keep the images unconnected; don’t build a story.
+5. **If a worry returns,** go back to the next word without judging yourself.
 
----
-
-## The easier way: let the words come to you
-
-Picking your own words keeps a sliver of your mind "on duty." To remove even that, use a tool that feeds you the words on a timer so you can stay completely passive.
-
-**→ [Try our free Cognitive Shuffle tool](/tools/cognitive-shuffle).** It shows (and optionally speaks) one neutral word every few seconds — much like Beaudoin's app — so all you do is lie there and picture each one. No account, no setup.
+Choosing the words is itself a small task, which is why some people prefer a generator. **→ [Try our free Cognitive Shuffle tool](/tools/cognitive-shuffle)** — it shows (and optionally speaks) one neutral word every few seconds so you can stay passive. No account, no setup.
 
 ---
 
-## Tips to make it land
+## Does cognitive shuffling actually work?
 
-- **Do it in bed, in the dark.** This is a falling-asleep tool, not a wind-down activity to do on the couch. Light and screens fight it; see our [caffeine cut-off calculator](/tools/caffeine) and dark-room basics if you're still wired.
-- **Keep images concrete, not abstract.** "Justice" or "deadline" re-engage the thinking brain. "Otter," "kettle," "harbor" don't.
-- **Don't judge your performance.** There's no winning. If you "fail" and a worry sneaks back, you simply return to the next word. The non-effort is the point.
-- **Give it a few nights.** Like any sleep habit, it works better once it's familiar and your brain associates it with letting go.
+Nobody knows yet how well it works, because it hasn’t been tested in large randomized trials. The main published description is a 2019 conference abstract in *Sleep Medicine* that sets out the theory and explicitly proposes testing the technique against alternatives (Beaudoin 2019). Preliminary findings from Beaudoin’s group have been presented mostly at conferences rather than in full peer-reviewed trials.
+
+What it has going for it: it targets the arousal loop that cognitive models of insomnia put at the centre of the problem (Harvey 2002), it costs nothing, and the downside of trying it is close to zero.
+
+| Approach | What you do | Evidence |
+|---|---|---|
+| **Cognitive shuffling** | Picture random, unrelated objects | Theory + preliminary data; no large trials yet |
+| **Counting sheep** | Repetitive counting | Little research; easy to do on autopilot while still worrying |
+| **CBT-I** | Structured therapy: sleep scheduling, stimulus control, thought work | First-line treatment for chronic insomnia (Qaseem 2016) |
 
 ---
 
-## Who does cognitive shuffling help?
+## How do you make it work better?
 
-Cognitive shuffling is best for the most common kind of sleeplessness: a busy, looping mind at lights-out. If that's you, it's one of the highest-value, lowest-effort things to try.
+You make it work better by doing it only in bed, keeping images concrete, and not keeping score.
 
-It is **not** a treatment for clinical insomnia, sleep apnea, restless legs, or sleep problems driven by pain, medication, or a medical condition. If you regularly can't sleep despite good habits, or you're exhausted during the day, talk to a clinician — cognitive behavioural therapy for insomnia (CBT-I) is the gold-standard treatment, and shuffling can sit comfortably alongside it.
+- **Do it in bed, in the dark.** It is a falling-asleep tool, not a wind-down activity for the sofa. If you’re still wired, check your [caffeine cut-off](/tools/caffeine) and [a cycle-aligned bedtime](/tools/sleep-cycle).
+- **Keep images concrete, not abstract.** "Justice" or "deadline" re-engage the thinking brain; "otter", "kettle" and "harbour" don’t.
+- **Don’t judge your performance.** If a worry sneaks back, return to the next word. The non-effort is the point.
+- **Give it a few nights.** A new routine usually feels easier once it’s familiar.
 
-The mind that won't switch off isn't broken. It just needs the right kind of nothing to do.
+---
+
+## When should you see a doctor instead?
+
+See a doctor if you regularly struggle to sleep despite good habits — for example, trouble sleeping at least three nights a week for three months — or if you are exhausted during the day. Cognitive shuffling is not a treatment for chronic insomnia, sleep apnoea, restless legs, or sleep problems driven by pain, medication or another medical condition. For chronic insomnia, the American College of Physicians recommends cognitive behavioural therapy for insomnia (CBT-I) as the first-line treatment (Qaseem 2016); shuffling can sit alongside it. Loud snoring, gasping at night or falling asleep while driving need prompt medical attention.
+
+The mind that won’t switch off isn’t broken. It just needs the right kind of nothing to do.
 `,
 }
 

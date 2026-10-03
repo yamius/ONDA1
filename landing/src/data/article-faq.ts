@@ -2289,22 +2289,22 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Does eating late raise your heart rate at night?",
       answer:
-        "It can, modestly. Digestion is metabolically demanding sympathetic work — blood flow shifts to the gut and core temperature rises — arriving just as your body should be powering down. Tracker data has put a late meal at roughly a few percent higher overnight heart rate and lower HRV, though well-controlled studies often find smaller effects. It's real but personal.",
+        "It can, but the measured effect is small and varies by person. Digestion redirects blood flow to the gut and produces heat just as the body should be winding down. Studies link eating near bedtime to poorer sleep (Crispim 2011), and in a small crossover trial a 10 p.m. meal raised the next morning's cortisol awakening response without changing a short HRV recording (Uçar 2021).",
     },
     {
       question: "How many hours before bed should I stop eating?",
       answer:
-        "About three hours before bed (four if you're sensitive) is a practical rule of thumb rather than a measured cutoff — a reasonable default precisely because responses vary. A fast metabolizer with a modest dinner may see nothing; a large, high-fat meal at 10 p.m. may clearly bump overnight heart rate and flatten HRV. The rule points you at the right neighbourhood; your own data gives the exact address.",
+        "Finishing a large meal about three hours before bed is a sensible rule of thumb, not a measured cutoff. A modest dinner may make no visible difference, while a large, high-fat meal late at night is the scenario most likely to disturb sleep. Use the rule as a starting point and adjust it to what your own data shows.",
     },
     {
       question: "How do I know if late eating affects me specifically?",
       answer:
-        "Compare nights in your own baseline. With a personal corridor of overnight resting heart rate and HRV, put an early-dinner night against a late one. If your sleeping pulse rises and your HRV drops relative to your normal, your body pays the tax; if the nights read the same, you've earned your flexibility honestly.",
+        "Compare early-dinner and late-dinner nights against your own baseline while keeping bedtime, alcohol and training similar. With an Apple Watch, ONDA reads overnight heart rate and HRV from Apple Health and holds a personal 14-day baseline, so you can see whether late meals consistently push your sleeping pulse up or HRV down relative to your normal.",
     },
     {
       question: "Is late-night eating actually bad for you?",
       answer:
-        "For most people it's a small autonomic cost to overnight recovery, not a medical hazard — and ONDA doesn't diagnose anything. The honest framing is that it's a lifestyle input written into your own numbers. Push your main meal earlier when you can, keep late meals lighter, and let your data tell you your real tolerance.",
+        "For most healthy people it's a lifestyle factor that can cost some sleep quality, not a medical hazard — and ONDA doesn't diagnose anything. If late meals cause regular heartburn, see a doctor about reflux, and if you take insulin or other glucose-lowering medicines, check with your care team before changing meal timing.",
     },
   ],
   "overtraining-hrv-resting-heart-rate": [
@@ -2465,22 +2465,56 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Does nicotine raise your heart rate and lower HRV?",
       answer:
-        "Yes. Nicotine is a stimulant — a sympathomimetic — so it raises heart rate and blood pressure and reduces HRV, the recovery-side marker. That's the opposite of a relaxant's physiology: the felt calm comes from relieving withdrawal and ritual, while under the hood the stress response is being turned up.",
+        "Yes. Nicotine triggers the release of adrenaline-like stress chemicals, which raise heart rate and blood pressure (Benowitz 2016), and habitual e-cigarette users show HRV patterns shifted toward sympathetic dominance compared with non-users (Moheimani 2017). The felt calm comes mostly from relieving withdrawal and the ritual of a pause, not from a calmer body.",
     },
     {
       question: "Is vaping better than smoking for your heart rate variability?",
       answer:
-        "Vaping removes combustion, but not the nicotine or its autonomic effect — heart rate still rises and HRV still drops. Vaping also tends to deliver nicotine as an all-day steady drip rather than discrete hits, so the sympathetic nudge can be near-continuous, and a body that never gets a clean parasympathetic window drifts its baseline the wrong way.",
+        "Vaping removes tobacco smoke, which lowers overall cardiovascular risk compared with smoking, but it doesn't remove nicotine — heart rate and blood pressure still rise, and a small study found sympathetic-leaning HRV in habitual vapers (Moheimani 2017). Long-term effects of vaping are still unknown, and nicotine remains a concern for people with heart disease.",
     },
     {
       question: "Why does nicotine feel relaxing if it's a stimulant?",
       answer:
-        "Because the relief is relieved withdrawal plus ritual, not a calmed body. Nicotine's short half-life means regular users cycle through mini-withdrawals all day, each with its own stress bump and craving; the next hit smooths it, cementing the loop. From inside your data, it's often creating the very fluctuations it then relieves.",
+        "Mostly because each dose relieves the restlessness and craving of withdrawal from the last one. Nicotine wears off within hours, so regular users cycle through mini-withdrawals during the day and the next dose smooths them out, reinforcing the habit. The pause and the deliberate breaths that come with it are part of the relief too.",
     },
     {
-      question: "Will my HRV recover if I quit nicotine?",
+      question: "Will my heart rate improve if I quit nicotine?",
       answer:
-        "HRV tends to recover as nicotine leaves the picture, and watching your own resting heart rate settle and variability climb back can be a concrete motivator. But dependence is a genuine addiction — a doctor, quitline or evidence-based cessation program does what an app can't. ONDA shows the physiology; it doesn't treat the dependence, and this isn't medical advice.",
+        "Without nicotine's stimulant effect, many people see their resting heart rate settle over the following weeks, and watching that trend can be motivating. For the best chance of quitting, combine support from a doctor, pharmacist or quitline with nicotine replacement or stop-smoking medication. Seek emergency help for chest pain, fainting or a racing heartbeat that doesn't settle. ONDA shows the physiology; it doesn't treat dependence.",
+    },
+  ],
+  "cognitive-shuffling": [
+    {
+      question: "What is cognitive shuffling?",
+      answer:
+        "Cognitive shuffling is a falling-asleep technique in which you picture a stream of random, unrelated, concrete objects — a ladder, a lemon, a lake — to crowd out worrying and planning thoughts. It was proposed by cognitive scientist Luc Beaudoin, who calls it serial diverse imagining, on the idea that scattered neutral images resemble the drifting imagery of normal sleep onset.",
+    },
+    {
+      question: "Does cognitive shuffling actually work?",
+      answer:
+        "It's promising but unproven. It targets the pre-sleep arousal that cognitive models of insomnia put at the centre of the problem, but the evidence so far is theory and preliminary data reported mainly at conferences, not large randomized trials. It's free and low-risk to try.",
+    },
+    {
+      question: "Is cognitive shuffling a treatment for insomnia?",
+      answer:
+        "No. For chronic insomnia, the American College of Physicians recommends cognitive behavioural therapy for insomnia (CBT-I) as the first-line treatment. Cognitive shuffling can sit alongside it, but if you regularly struggle to sleep or are exhausted during the day, talk to a clinician.",
+    },
+  ],
+  "how-to-lower-cortisol": [
+    {
+      question: "Can you detox cortisol?",
+      answer:
+        "No. Cortisol is a normal hormone, not a toxin, and no diet, juice or supplement has been shown to flush it out. Stress-driven cortisol responds best to better sleep, regular meditation or slow breathing, balanced exercise and a lighter stress load.",
+    },
+    {
+      question: "What lowers cortisol fastest?",
+      answer:
+        "There's no instant fix; the best-supported habits are sleep and daily practice. A meta-analysis of 45 randomized trials found meditation reduced cortisol compared with active controls (Pascoe 2017), and a small trial found 8 weeks of slow diaphragmatic breathing lowered salivary cortisol (Ma 2017).",
+    },
+    {
+      question: "When should I see a doctor about cortisol?",
+      answer:
+        "See a doctor for possible signs of Cushing's syndrome — weight gain on the face, upper back and belly, wide purple stretch marks, easy bruising, muscle weakness, rising blood pressure or blood sugar — or of adrenal insufficiency, such as fatigue, weight loss, dizziness on standing and salt cravings. If you take steroid medicines, never stop them suddenly to lower cortisol; talk to your prescriber.",
     },
   ],
   "how-to-measure-hrv-consistently": [
