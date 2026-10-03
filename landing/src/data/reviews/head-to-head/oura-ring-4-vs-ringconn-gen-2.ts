@@ -20,10 +20,10 @@ const ouraVsRingconn: HeadToHead = {
     { name: 'HRV measurement', winner: 'a', note: 'Both optical PPG with comparable accuracy ceilings. Oura’s pipeline is marginally cleaner in independent comparison.' },
     { name: 'Sleep tracking', winner: 'a', note: 'Oura’s sleep model is the consumer reference. RingConn is competent but a tier behind on staging granularity.' },
     { name: 'App maturity', winner: 'a', note: 'Oura: decade of iteration. RingConn: newer, cleaner-but-shallower. Oura wins decisively.' },
-    { name: 'Battery life', winner: 'b', note: 'RingConn Gen 2: ~12 days. Oura Ring 4: about 4–7 days. RingConn lasts roughly two to three times as long — the longest in the smart-ring category.' },
+    { name: 'Battery life', winner: 'b', note: 'RingConn Gen 2: 10–12 days depending on size. Oura Ring 4: about 4–7 days. RingConn lasts roughly two to three times as long — the longest in the smart-ring category.' },
     { name: 'Subscription requirement', winner: 'b', note: 'RingConn: no subscription. Oura: $5.99/month membership required for full features. RingConn wins outright.' },
     { name: 'Ring weight', winner: 'b', note: 'RingConn Gen 2: ~3.0g. Oura Ring 4: ~5g. RingConn is noticeably lighter.' },
-    { name: '3-year total cost', winner: 'b', note: 'RingConn: ~$299 one-time. Oura: ~$565 with membership. RingConn is roughly half over three years.' },
+    { name: '3-year total cost', winner: 'b', note: 'RingConn: $299 one-time. Oura: ~$565 with membership. RingConn is roughly half over three years.' },
     { name: 'Battery reliability track record', winner: 'tie', note: 'Both clean multi-year track records — no documented degradation clusters like Ultrahuman Ring Air.' },
   ],
   faq: [
@@ -57,7 +57,7 @@ If app maturity, the deepest consumer sleep model and Readiness scoring are the 
 If subscription-free is a hard requirement, you want the longest battery in the smart-ring category and the lowest 3-year total cost of ownership matters, RingConn is the right shape. The trade is a slightly less mature app and shallower sleep analytics.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-03',
 }
 
 export default ouraVsRingconn

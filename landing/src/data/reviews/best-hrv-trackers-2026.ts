@@ -42,7 +42,7 @@ const bestHrvTrackers2026: Comparison = {
     {
       reviewSlug: 'ringconn-gen-2',
       award: 'Best value',
-      takeaway: 'A ~12-day battery and premium-ring features, subscription-free, for roughly half the long-term cost of an Oura.',
+      takeaway: 'A 10–12-day battery and premium-ring features, subscription-free, for roughly half the long-term cost of an Oura.',
     },
     {
       reviewSlug: 'amazfit-helio-ring',
@@ -123,7 +123,7 @@ The scores cluster tightly — every device here is genuinely capable, and the r
 - [Garmin Venu 4 vs Oura Ring 5](/reviews/vs/garmin-venu-4-vs-oura-ring-5)
 `,
   datePublished: '2026-05-15',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-03',
 }
 
 export default bestHrvTrackers2026

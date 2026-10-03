@@ -39,7 +39,7 @@ const ibreatheVsB2r: HeadToHead = {
     },
     {
       q: 'Is there a free breathwork app worth paying for instead?',
-      a: 'If you want a curated library, Breathwrk ($70/year) is the rational upgrade. iBreathe and Breathe2Relax are great free entries; neither replaces a structured-library experience.',
+      a: 'If you want a curated library, Breathwrk ($49/year) is the rational upgrade. iBreathe and Breathe2Relax are great free entries; neither replaces a structured-library experience.',
     },
   ],
   content: `## The short version
@@ -56,7 +56,7 @@ If you want evidence-backed diaphragmatic breathing — especially in clinical, 
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-03',
 }
 
 export default ibreatheVsB2r

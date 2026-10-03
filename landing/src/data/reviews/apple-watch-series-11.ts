@@ -38,7 +38,7 @@ const appleWatchSeries11: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',
-  price: { usd: 399, note: 'one-time; no subscription required', asOf: '2026-05-15' },
+  price: { usd: 399, note: 'launch price, one-time, no subscription; replaced by the Series 12 in September 2026 and no longer sold by Apple — now mainly discounted retailer stock', asOf: '2026-10-03' },
   link: 'https://www.apple.com/watch/',
   linkType: 'official',
   content: `## Where it leads
@@ -79,7 +79,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-03',
 }
 
 export default appleWatchSeries11

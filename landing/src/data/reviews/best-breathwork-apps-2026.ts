@@ -61,11 +61,11 @@ const bestBreathworkApps2026: Comparison = {
     },
   ],
   verdict:
-    'Breathwrk wins overall as the structured-library reference with full technique coverage and science-grounded copy at $70/year. Othership wins on production value and community for users buying breathwork as cinematic experience. Wim Hof Method app is the rational choice for committed WHM practitioners. Inhale closes the HRV-biofeedback loop. iBreathe and Breathe2Relax cover the free tier credibly. Pick on three questions: structured library breadth, music / community thesis, or biofeedback integration.',
+    'Breathwrk wins overall as the structured-library reference with full technique coverage and science-grounded copy at $49/year. Othership wins on production value and community for users buying breathwork as cinematic experience. Wim Hof Method app is the rational choice for committed WHM practitioners. Inhale closes the HRV-biofeedback loop. iBreathe and Breathe2Relax cover the free tier credibly. Pick on three questions: structured library breadth, music / community thesis, or biofeedback integration.',
   faq: [
     {
       q: 'What is the best breathing app?',
-      a: 'For most people, Breathwrk: the largest structured library and broadest technique coverage for about $70 a year. Choose Othership for music-led sessions, Inhale if you want Apple Watch HRV biofeedback, and iBreathe or Breathe2Relax if you want a free app.',
+      a: 'For most people, Breathwrk: the largest structured library and broadest technique coverage for about $49 a year. Choose Othership for music-led sessions, Inhale if you want Apple Watch HRV biofeedback, and iBreathe or Breathe2Relax if you want a free app.',
     },
     {
       q: 'Are breathing apps worth paying for?',
@@ -73,7 +73,7 @@ const bestBreathworkApps2026: Comparison = {
     },
     {
       q: 'What is the best breathwork app in 2026?',
-      a: 'Breathwrk overall — largest structured library, broadest technique coverage, science-grounded copy at $70/year. Othership for music-driven cinematic premium experience at $150/year. Wim Hof Method app for the WHM specifically.',
+      a: 'Breathwrk overall — largest structured library, broadest technique coverage, science-grounded copy at $49/year. Othership for music-driven cinematic premium experience at $129.99/year. Wim Hof Method app for the WHM specifically.',
     },
     {
       q: 'Is Breathwrk worth the subscription?',
@@ -93,12 +93,12 @@ const bestBreathworkApps2026: Comparison = {
     },
     {
       q: 'How much does the breathwork-app stack cost over a year?',
-      a: 'Breathwrk: $70/yr. Wim Hof Method: $70/yr. SOMA Breath: $99/yr. Open: $120/yr. Othership: $150/yr. Inhale: $60/yr. Pause Breathwork: $90/yr. Free options: iBreathe, Breathe2Relax, Prana Breath (mostly free).',
+      a: 'Breathwrk: $49/yr. Wim Hof Method: $42.99/yr (courses extra). SOMA Breath: $99/yr. Open: $120/yr. Othership: $129.99/yr. Inhale: $60/yr. Pause Breathwork: $90/yr. Free options: iBreathe, Breathe2Relax, Prana Breath (mostly free).',
     },
   ],
   content: `## The short answer
 
-The best breathing app for most people is **Breathwrk**: the largest structured library and the broadest set of techniques for about $70 a year. If you want music-led, cinematic sessions, choose **Othership**. If you want the app to measure your body while you breathe, choose **Inhale**, which uses Apple Watch HRV. If you do not want to pay, **iBreathe** and **Breathe2Relax** are free and do the basics well.
+The best breathing app for most people is **Breathwrk**: the largest structured library and the broadest set of techniques for about $49 a year. If you want music-led, cinematic sessions, choose **Othership**. If you want the app to measure your body while you breathe, choose **Inhale**, which uses Apple Watch HRV. If you do not want to pay, **iBreathe** and **Breathe2Relax** are free and do the basics well.
 
 ## What do breathing exercises actually do?
 
@@ -120,10 +120,10 @@ Read more: [the physiological sigh](/articles/physiological-sigh), [box breathin
 
 | App | Price | Platform note | Best for |
 |---|---|---|---|
-| [Breathwrk](/reviews/breathwrk) | $70/yr, free tier | phone app | structured daily practice |
-| [Othership](/reviews/othership) | $150/yr, free trial | phone app | music-led sessions, live classes |
+| [Breathwrk](/reviews/breathwrk) | $49/yr, free tier | phone app | structured daily practice |
+| [Othership](/reviews/othership) | $129.99/yr, 5 free sessions | phone app | music-led sessions, live classes |
 | [SOMA Breath](/reviews/soma-breath) | $99/yr, free trial | phone app | rhythmic, music-paced breathing |
-| [Wim Hof Method](/reviews/wim-hof-method-app) | $70/yr, free tier | phone app | Wim Hof rounds and cold protocols |
+| [Wim Hof Method](/reviews/wim-hof-method-app) | $42.99/yr, free tier | phone app | Wim Hof rounds and cold protocols |
 | [Open](/reviews/open-app) | $120/yr, free trial | phone app | breath + meditation + movement |
 | [Pause](/reviews/pause-breathwork) | $90/yr, free trial | phone app | longer somatic sessions |
 | [Inhale](/reviews/inhale-by-aero-health) | $60/yr | Apple Watch needed for biofeedback | HRV biofeedback |
@@ -145,14 +145,14 @@ Three buying questions resolve the category cleanly:
 
 **What do you want from breathwork?** Structured nervous-system protocol → Breathwrk. Cinematic music + community → Othership. Single-method depth (Wim Hof) → Wim Hof Method app. Somatic / emotional release → Pause. HRV biofeedback → Inhale. Hybrid breath + meditation + movement → Open.
 
-**What budget?** Free: iBreathe, Breathe2Relax, Prana Breath (mostly). $60–$70/yr: Breathwrk, Wim Hof Method, Inhale. $90–$120/yr: Pause, SOMA Breath, Open. $150/yr: Othership.
+**What budget?** Free: iBreathe, Breathe2Relax, Prana Breath (mostly). $40–$60/yr: Wim Hof Method ($42.99, courses extra), Breathwrk ($49), Inhale ($60). $90–$130/yr: Pause, SOMA Breath, Open, Othership ($129.99).
 
 **Platform?** All major apps cover iOS + Android. Prana Breath is the best Android-first option. Inhale requires Apple Watch for its biofeedback differentiator.
 
 Breathwrk dominates the structured-library default. Othership owns the cinematic-experience premium tier. The free tier (iBreathe, Breathe2Relax) is credible. Skip apps that overstate physiological claims or hide behind ceremony framing without instructor credentials.`,
   publishOn: '2026-06-29',
   datePublished: '2026-06-29',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-03',
 }
 
 export default bestBreathworkApps2026

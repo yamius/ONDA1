@@ -622,7 +622,7 @@ const BREATHWORK_APP_CRITERIA: Criterion[] = [
     label: 'Value',
     weight: 0.2,
     description:
-      'Free tier viability and subscription price weighed against library breadth, technique coverage and evidence depth. The category spans free (iBreathe, Breathe2Relax) to $150/yr (Othership) — value gap is large.',
+      'Free tier viability and subscription price weighed against library breadth, technique coverage and evidence depth. The category spans free (iBreathe, Breathe2Relax) to about $130/yr (Othership) — value gap is large.',
   },
 ]
 

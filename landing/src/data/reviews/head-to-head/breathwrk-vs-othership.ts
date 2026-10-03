@@ -13,9 +13,9 @@ const breathwrkVsOthership: HeadToHead = {
   verdict:
     'Structured library vs cinematic experience. Breathwrk for the largest structured catalogue with science-grounded copy at the best premium price. Othership for music-driven premium experience with live community.',
   bestForA:
-    'Choose Breathwrk if you want the largest structured breathwork library with full technique coverage and science-grounded copy at $70/year.',
+    'Choose Breathwrk if you want the largest structured breathwork library with full technique coverage and science-grounded copy at $49/year.',
   bestForB:
-    'Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $150/year.',
+    'Choose Othership if you want cinematic music-driven sessions with live community classes and you accept $129.99/year.',
   axes: [
     { name: 'Library size', winner: 'a', note: 'Breathwrk: hundreds of structured sessions across goals and techniques. Othership: curated smaller library with higher per-session production. Breathwrk wins on raw breadth.' },
     { name: 'Technique coverage', winner: 'a', note: 'Breathwrk: full coverage (box, 4-7-8, Wim Hof, Tummo, cyclic sighing, Buteyko, coherent breathing). Othership: leans into rhythmic music breathwork.' },
@@ -23,7 +23,7 @@ const breathwrkVsOthership: HeadToHead = {
     { name: 'Production / UX', winner: 'b', note: 'Othership: cinematic visuals, immersive audio, live community classes. Breathwrk: clean functional UI without cinematic ambitions.' },
     { name: 'Community', winner: 'b', note: 'Othership: live daily classes, brand crossover from Toronto sauna spaces. Breathwrk: solo practice — no community layer.' },
     { name: 'Apple Watch / biofeedback', winner: 'tie', note: 'Both offer Apple Watch and Apple Health integration; neither closes a true HRV-driven biofeedback loop. Tie on this axis.' },
-    { name: 'Price', winner: 'a', note: 'Breathwrk: $70/year. Othership: $150/year. Breathwrk roughly half the cost.' },
+    { name: 'Price', winner: 'a', note: 'Breathwrk: $49/year. Othership: $129.99/year. Breathwrk costs less than half as much.' },
   ],
   faq: [
     {
@@ -31,7 +31,7 @@ const breathwrkVsOthership: HeadToHead = {
       a: 'Different theses. Breathwrk wins on library depth, technique coverage, science grounding and price. Othership wins on production value, music-driven sessions and live community.',
     },
     {
-      q: 'Is Othership worth $150/year?',
+      q: 'Is Othership worth $129.99/year?',
       a: 'For users buying breathwork as cinematic experience with music + community — yes. For users who want structured nervous-system practice, Breathwrk delivers more depth for less than half the price.',
     },
     {
@@ -40,7 +40,7 @@ const breathwrkVsOthership: HeadToHead = {
     },
     {
       q: 'Can I use both?',
-      a: 'Yes — Breathwrk for structured daily practice, Othership for occasional cinematic / community journey sessions. At $70 + $150 = $220/yr the stack is expensive but each fills the other\'s gap.',
+      a: 'Yes — Breathwrk for structured daily practice, Othership for occasional cinematic / community journey sessions. At $49 + $129.99 ≈ $179/yr the stack is expensive but each fills the other\'s gap.',
     },
   ],
   content: `## The short version
@@ -57,7 +57,7 @@ If you want breathwork as cinematic music-driven experience with live community 
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-03',
 }
 
 export default breathwrkVsOthership

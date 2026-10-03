@@ -8,7 +8,7 @@ const othershipVsOpen: HeadToHead = {
   description:
     'Othership vs Open — premium music-driven breathwork vs hybrid breath + meditation + movement. ONDA breaks down the premium-tier duel.',
   intro:
-    'Othership and Open are the two premium hybrid apps users compare when picking a polished daily-practice platform. Both lean cinematic, both have live class layers, both target $120–$150/year. The defining difference is scope: Othership is breathwork-focused with music-driven journeys; Open blends breath + meditation + movement.',
+    'Othership and Open are the two premium hybrid apps users compare when picking a polished daily-practice platform. Both lean cinematic, both have live class layers, both target $120–$130/year. The defining difference is scope: Othership is breathwork-focused with music-driven journeys; Open blends breath + meditation + movement.',
   winnerSlug: null,
   verdict:
     'Pure breathwork vs hybrid platform. Othership for cinematic music-driven breathwork with strongest community. Open for the single-app breath + meditation + movement stack.',
@@ -22,7 +22,7 @@ const othershipVsOpen: HeadToHead = {
     { name: 'Production / UX', winner: 'tie', note: 'Both deliver premium cinematic UX with named-instructor production. Different aesthetics; comparable polish.' },
     { name: 'Live class layer', winner: 'a', note: 'Othership: live community classes scheduled daily — central to the experience. Open: live classes exist but less central than Othership.' },
     { name: 'Named instructors', winner: 'b', note: 'Open: Manoj Dias, Cory Muscara and other established teachers. Othership: in-house facilitator team without comparable individual-name recognition.' },
-    { name: 'Price', winner: 'b', note: 'Open: $120/yr. Othership: $150/yr. Open meaningfully cheaper for broader scope.' },
+    { name: 'Price', winner: 'b', note: 'Open: $120/yr. Othership: $129.99/yr. Open slightly cheaper for broader scope.' },
   ],
   faq: [
     {
@@ -39,7 +39,7 @@ const othershipVsOpen: HeadToHead = {
     },
     {
       q: 'Price comparison?',
-      a: 'Othership: $150/year. Open: $120/year. Open is meaningfully cheaper and covers more modalities; Othership is more focused and more expensive.',
+      a: 'Othership: $129.99/year. Open: $120/year. Open is slightly cheaper and covers more modalities; Othership is more focused and more expensive.',
     },
   ],
   content: `## The short version
@@ -56,7 +56,7 @@ If you want one premium app covering breath + meditation + movement rather than 
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-03',
 }
 
 export default othershipVsOpen

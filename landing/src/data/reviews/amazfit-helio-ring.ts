@@ -38,7 +38,7 @@ const amazfitHelioRing: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Amazfit specifications and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 199, note: 'one-time; no subscription for core metrics', asOf: '2026-09-06' },
+  price: { usd: 199, note: 'one-time; no subscription for core metrics. US list $199.99 (often discounted); €169.90 in the EU Amazfit store (Oct 2026)', asOf: '2026-10-03' },
   link: 'https://www.amazfit.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -47,11 +47,11 @@ The Amazfit Helio Ring’s pitch is simple: a capable smart ring for $199 with n
 
 ## What are the downsides of Amazfit Helio Ring?
 
-Two things hold it back. First, it ships in only three sizes (8, 10, 12), so a large share of people simply can’t get a proper fit — and fit is everything for optical accuracy and comfort. Second, real-world battery is only about 2.5–3 days, well behind Oura (6–9) and RingConn (~12). The sensors are budget-tier, and the Zepp app, while capable, is less polished and explanatory than Oura’s.
+Two things hold it back. First, it ships in only three sizes (8, 10, 12), so a large share of people simply can’t get a proper fit — and fit is everything for optical accuracy and comfort. Second, real-world battery is only about 2.5–3 days, well behind Oura (6–9) and RingConn (10–12). The sensors are budget-tier, and the Zepp app, while capable, is less polished and explanatory than Oura’s.
 
 ## Who should buy Amazfit Helio Ring?
 
-Choose the Amazfit Helio Ring if you want the cheapest capable, subscription-free ring and one of its three sizes fits you. If you need a wider size range, longer battery or the best accuracy, look at the [RingConn Gen 2](/reviews/ringconn-gen-2) (value, ~12-day battery), the [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring), or [Oura](/reviews/oura-ring-4) if you accept its subscription.
+Choose the Amazfit Helio Ring if you want the cheapest capable, subscription-free ring and one of its three sizes fits you. If you need a wider size range, longer battery or the best accuracy, look at the [RingConn Gen 2](/reviews/ringconn-gen-2) (value, 10–12-day battery), the [Samsung Galaxy Ring](/reviews/samsung-galaxy-ring), or [Oura](/reviews/oura-ring-4) if you accept its subscription.
 
 ---
 
@@ -73,7 +73,7 @@ The science behind why HRV is the signal worth tracking.
     { q: "What are the downsides of the Amazfit Helio Ring?", a: "Only three sizes, so fit is hit-or-miss, and a short single-charge battery. If a size fits and you want the cheapest subscription-free ring, it delivers." },
   ],
   datePublished: '2026-09-06',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-03',
 }
 
 export default amazfitHelioRing

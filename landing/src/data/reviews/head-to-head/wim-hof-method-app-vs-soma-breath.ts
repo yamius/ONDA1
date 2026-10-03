@@ -22,7 +22,7 @@ const wimHofVsSoma: HeadToHead = {
     { name: 'Music / rhythmic pacing', winner: 'b', note: 'SOMA: beat-driven music-paced sessions — the differentiator. WHM app: structured voice-guided rounds without music-pacing.' },
     { name: 'Evidence citations', winner: 'a', note: 'WHM app: cites Radboud University immune-response and autonomic-system studies on the specific method. SOMA: general breath physiology + Wim Hof studies with ceremony framing.' },
     { name: 'Certification community', winner: 'b', note: 'SOMA: global certified-facilitator network. WHM app: Wim Hof certified-instructor programme exists but is more centralised and gated.' },
-    { name: 'Price', winner: 'a', note: 'WHM app: $70/year. SOMA: $99/year. WHM cheaper.' },
+    { name: 'Price', winner: 'a', note: 'WHM app: Supporter $42.99/year (courses extra). SOMA: $99/year. WHM cheaper.' },
   ],
   faq: [
     {
@@ -56,7 +56,7 @@ If you want rhythmic music-paced breathwork that includes WHM-style rounds withi
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-03',
 }
 
 export default wimHofVsSoma

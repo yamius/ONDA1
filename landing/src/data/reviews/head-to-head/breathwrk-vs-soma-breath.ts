@@ -11,7 +11,7 @@ const breathwrkVsSoma: HeadToHead = {
     'Breathwrk and SOMA Breath are the two apps users compare when picking sub-$100/year breathwork. Both deliver structured guided practice. The defining difference is pacing: Breathwrk uses voice-guided structured sessions; SOMA Breath paces breath to rhythmic music with Wim Hof crossover.',
   winnerSlug: null,
   verdict:
-    'Structured science vs rhythmic music. Breathwrk for the largest evidence-grounded library at $70/year. SOMA Breath for beat-paced rhythmic breathwork with facilitator certification community.',
+    'Structured science vs rhythmic music. Breathwrk for the largest evidence-grounded library at $49/year. SOMA Breath for beat-paced rhythmic breathwork with facilitator certification community.',
   bestForA:
     'Choose Breathwrk if you want the largest structured breathwork library with science-grounded copy and broadest technique coverage.',
   bestForB:
@@ -22,7 +22,7 @@ const breathwrkVsSoma: HeadToHead = {
     { name: 'Evidence grounding', winner: 'a', note: 'Breathwrk: peer-reviewed citation. SOMA: ceremony framing dominates over clinical citation.' },
     { name: 'Music-paced approach', winner: 'b', note: 'SOMA: beat-driven rhythmic breath pacing — unique in the category. Breathwrk: voice-guided structured sessions.' },
     { name: 'Community / certification', winner: 'b', note: 'SOMA: global certified-facilitator network. Breathwrk: solo practice, no certification layer.' },
-    { name: 'Price', winner: 'a', note: 'Breathwrk: $70/yr. SOMA Breath: $99/yr. Breathwrk meaningfully cheaper.' },
+    { name: 'Price', winner: 'a', note: 'Breathwrk: $49/yr. SOMA Breath: $99/yr. Breathwrk about half the price.' },
   ],
   faq: [
     {
@@ -56,7 +56,7 @@ If you want beat-paced rhythmic music breathwork with ceremony framing and acces
   relatedComparisonSlug: 'best-breathwork-apps-2026',
   publishOn: '2026-06-29',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-03',
 }
 
 export default breathwrkVsSoma

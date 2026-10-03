@@ -66,7 +66,7 @@ About **$349 one-time** outside the US. There is no membership: all features and
 | Ultrahuman Ring Air | ~$349 | none | banned since Oct 2025 |
 | [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) | $479 | none | yes |
 | [Oura Ring 4](/reviews/oura-ring-4) | from $349 | $5.99/month | yes |
-| [RingConn Gen 2](/reviews/ringconn-gen-2) | $249 | none | yes |
+| [RingConn Gen 2](/reviews/ringconn-gen-2) | $299 | none | yes |
 
 ## What are the downsides of the Ultrahuman Ring Air?
 
@@ -109,7 +109,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-03',
 }
 
 export default ultrahumanRingAir

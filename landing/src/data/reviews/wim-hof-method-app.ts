@@ -19,7 +19,7 @@ const wimHofMethodApp: ToolReview = {
     { criterionId: 'evidence-grounding', score: 8.0, note: 'Cites the Radboud University Wim Hof published studies (immune-response, autonomic-system modulation) and engages credibly with the peer-reviewed evidence on this specific method.' },
     { criterionId: 'app-experience', score: 7.5, note: 'Clean UI, structured progression through levels. Course-style content with Wim Hof video. Less polished than Othership; more functional than budget apps.' },
     { criterionId: 'biofeedback', score: 6.0, note: 'Breath-hold timer with personal-record tracking. Apple Health basic. No HRV-driven session adaptation.' },
-    { criterionId: 'value', score: 7.5, note: '$70/year — fair for the official method and instructor courses. Cheaper than Othership; comparable to Breathwrk.' },
+    { criterionId: 'value', score: 7.5, note: '$42.99/year (Supporter Yearly) or $5.99/month — the cheapest of the big breathwork subscriptions; paid courses such as the 30-day audio challenge are extra.' },
   ],
   pros: [
     'Official Wim Hof Method app — the definitive reference for the method',
@@ -37,7 +37,7 @@ const wimHofMethodApp: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from official Wim Hof Method app documentation, App Store listing and the published Radboud University WHM research. Not hands-on tested by ONDA.',
-  price: { usd: 70, note: 'annual subscription; free tier available', asOf: '2026-05-28' },
+  price: { usd: 42.99, note: 'Supporter Yearly ($5.99/month monthly; 7-day trial); app free to download with basic features; courses sold separately', asOf: '2026-10-03' },
   link: 'https://www.wimhofmethod.com/',
   linkType: 'official',
   content: `## Where it leads
@@ -67,12 +67,12 @@ Choose Wim Hof Method app if you're committed to the WHM specifically. For broad
   publishOn: '2026-06-29',
   faq: [
     { q: "Is the Wim Hof Method app worth it?", a: "The Wim Hof Method app is worth it if you are committed to that method. It is the official reference, with structured level-based progression, certified-instructor courses and integrated cold-exposure protocols. It covers only one method, so pair it with Breathwrk for technique breadth." },
-    { q: "How much does the Wim Hof Method app cost?", a: "The Wim Hof Method app costs about $70 as an annual subscription, and a free tier is available. The subscription unlocks structured level-based progression and certified-instructor courses." },
+    { q: "How much does the Wim Hof Method app cost?", a: "The Wim Hof Method app is free to download; the Supporter subscription costs $42.99 a year or $5.99 a month in the US App Store, and courses are sold separately. The subscription unlocks structured level-based progression and certified-instructor courses." },
     { q: "Wim Hof Method app vs Breathwrk: which is better?", a: "Choose the Wim Hof Method app for the official method, structured progression and cold-exposure integration. Choose Breathwrk for breadth across techniques like Buteyko, 4-7-8 and cyclic sighing. The review suggests pairing them." },
     { q: "What are the downsides of the Wim Hof Method app?", a: "The app focuses on a single method with no Buteyko, 4-7-8 or cyclic sighing depth. Its UX is less polished than Othership, its scope is narrower than Breathwrk, and cold protocols assume access to cold immersion." },
   ],
   datePublished: '2026-06-29',
-  dateModified: '2026-06-29',
+  dateModified: '2026-10-03',
 }
 
 export default wimHofMethodApp

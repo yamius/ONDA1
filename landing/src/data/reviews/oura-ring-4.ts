@@ -66,7 +66,7 @@ The ring costs **from $349** (Silver and Black; premium finishes $399–$499). T
 | Oura Ring 4 | from $349 | $5.99/month | overnight HRV + sleep, lower Oura price |
 | [Oura Ring 5](/reviews/oura-ring-5) | from $399 | $5.99/month | latest Oura hardware |
 | [Ultrahuman Ring Pro](/reviews/ultrahuman-ring-pro) | $479 | none | no subscription, long battery |
-| [RingConn Gen 2](/reviews/ringconn-gen-2) | $249 | none | lowest total cost |
+| [RingConn Gen 2](/reviews/ringconn-gen-2) | $299 | none | lowest total cost |
 
 ## Is the Oura Ring 4 still worth buying after the Ring 5?
 
@@ -112,7 +112,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-03',
 }
 
 export default ouraRing4

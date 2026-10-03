@@ -166,7 +166,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "cognitive-shuffling": {
     "published": "2026-06-04T00:30:56+02:00",
-    "modified": "2026-09-30T12:56:25+02:00"
+    "modified": "2026-10-03T02:39:20+02:00"
   },
   "coherent-breathing-guide": {
     "published": "2026-06-04T17:34:04+02:00",
@@ -206,7 +206,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "eating-late-heart-rate-sleep": {
     "published": "2026-09-18T14:42:44+02:00",
-    "modified": "2026-09-30T10:48:26+02:00"
+    "modified": "2026-10-03T02:39:20+02:00"
   },
   "electric-medicine-neuromodulation": {
     "published": "2026-03-04T14:27:07+01:00",
@@ -302,7 +302,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "how-to-lower-cortisol": {
     "published": "2026-06-04T15:03:27+02:00",
-    "modified": "2026-09-29T09:45:29+02:00"
+    "modified": "2026-10-03T02:39:20+02:00"
   },
   "how-to-measure-hrv-consistently": {
     "published": "2026-09-18T16:27:42+02:00",
@@ -478,7 +478,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "nicotine-vaping-hrv-heart-rate": {
     "published": "2026-09-18T16:27:42+02:00",
-    "modified": "2026-09-29T10:50:12+02:00"
+    "modified": "2026-10-03T02:39:20+02:00"
   },
   "nightly-flush-glymphatic-neural-cache": {
     "published": "2026-03-30T20:04:48Z",
@@ -1598,7 +1598,7 @@ export const ARTICLE_DATES: Record<string, { published: string; modified: string
   },
   "page:/articles": {
     "published": "2026-02-26T14:26:34+01:00",
-    "modified": "2026-10-03T02:05:45+02:00"
+    "modified": "2026-10-03T02:39:20+02:00"
   },
   "page:/contact": {
     "published": "2026-02-26T15:36:15+01:00",

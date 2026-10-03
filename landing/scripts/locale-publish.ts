@@ -85,4 +85,9 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('articles', 'cognitive-shuffling', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'how-to-lower-cortisol', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'nicotine-vaping-hrv-heart-rate', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'amazfit-helio-ring-vs-ringconn-gen-2', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'breathwrk-vs-othership-vs-wim-hof-method-app', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'apple-watch-series-11-vs-fitbit-charge-6', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'healthy-wave-multi-wave-vs-qi-coil', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'ringconn-gen-2-vs-ultrahuman-ring-air', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

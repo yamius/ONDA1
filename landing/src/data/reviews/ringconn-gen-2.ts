@@ -7,23 +7,23 @@ const ringconnGen2: ToolReview = {
   category: 'hrv-wearable',
   productType: 'Smart ring',
   description:
-    'ONDA review of the RingConn Gen 2 — the value smart ring: ~12-day battery, no subscription, solid HRV. Scored on accuracy, sleep, data access and value.',
+    'ONDA review of the RingConn Gen 2 — the value smart ring: 10–12-day battery, no subscription, solid HRV. Scored on accuracy, sleep, data access and value.',
   verdict:
-    'The value smart ring — a ~12-day battery, no subscription and solid tracking for roughly half the long-term cost of an Oura.',
+    'The value smart ring — a 10–12-day battery, no subscription and solid tracking for roughly half the long-term cost of an Oura.',
   summary:
-    'The RingConn Gen 2 is the value pick of the smart-ring field — a ~12-day battery, no subscription and accuracy in the same conversation as pricier rings, for roughly half the long-term cost. The trade-off is plainer software and more closed data.',
+    'The RingConn Gen 2 is the value pick of the smart-ring field — a 10–12-day battery, no subscription and accuracy in the same conversation as pricier rings, for roughly half the long-term cost. The trade-off is plainer software and more closed data.',
   overallScore: 7.0,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV that independent reviewers rate as comparable to pricier rings — good, not class-leading.' },
     { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a light titanium ring.' },
     { criterionId: 'sleep-accuracy', score: 7.0, note: 'Competent sleep tracking, and it adds sleep-apnea screening.' },
     { criterionId: 'data-access', score: 5.5, note: 'A closed app — no open API and limited export; data stays with RingConn.' },
-    { criterionId: 'wearability', score: 8.5, note: 'Around a 12-day battery — the best in this comparison — in a 2mm titanium, fully waterproof ring.' },
+    { criterionId: 'wearability', score: 8.5, note: 'A 10–12-day battery (by size) — the best in this comparison — in a 2mm titanium, fully waterproof ring.' },
     { criterionId: 'app-ux', score: 6.5, note: 'A functional app rather than a polished one.' },
     { criterionId: 'value', score: 8.5, note: 'Roughly half the long-term cost of an Oura, with no subscription — the value leader here.' },
   ],
   pros: [
-    'Around a 12-day battery — the longest in this comparison',
+    'A 10–12-day battery (by size) — the longest in this comparison',
     'No subscription, and far cheaper long-term than an Oura',
     'Light titanium build, fully waterproof',
     'Adds sleep-apnea screening',
@@ -38,7 +38,7 @@ const ringconnGen2: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from manufacturer specifications, independent 2026 reviews and published validation literature. Not hands-on tested by ONDA.',
-  price: { usd: 249, note: 'one-time; no subscription', asOf: '2026-05-15' },
+  price: { usd: 299, note: 'one-time; no subscription; sizes 6–14', asOf: '2026-10-03' },
   link: 'https://ringconn.com/products/ringconn-gen-2',
   linkType: 'official',
   content: `## Where it leads
@@ -71,13 +71,13 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['oura-ring-4', 'ultrahuman-ring-air', 'samsung-galaxy-ring'],
   faq: [
-    { q: "Is the RingConn Gen 2 subscription-free?", a: "Yes — $249 one-time with no subscription, roughly half the long-term cost of an Oura. Every feature is unlocked at purchase." },
-    { q: "How long does the RingConn Gen 2 battery last?", a: "About 12 days per charge — the longest in the smart-ring category — and its charging case extends that to months." },
+    { q: "Is the RingConn Gen 2 subscription-free?", a: "Yes — $299 one-time with no subscription, roughly half the long-term cost of an Oura. Every feature is unlocked at purchase." },
+    { q: "How long does the RingConn Gen 2 battery last?", a: "About 10–12 days per charge depending on size — and its charging case extends that to months." },
     { q: "Is the RingConn Gen 2 accurate for HRV?", a: "Independent reviewers rate its overnight HRV comparable to pricier rings — good, not class-leading. It also adds sleep-apnea screening. It is best chosen for battery life and value rather than the sharpest single metric." },
   ],
 
   datePublished: '2026-05-15',
-  dateModified: '2026-09-12',
+  dateModified: '2026-10-03',
 }
 
 export default ringconnGen2
