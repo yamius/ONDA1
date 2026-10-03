@@ -210,3 +210,10 @@ test('each suggested practice links to that exact practice on /emoton', async ()
   const { WIDGETS } = await import('../lib/widgets.js');
   assert.match(WIDGETS.practice.html, /p\.playUrl/);
 });
+
+test('server instructions describe, never instruct the model', async () => {
+  const r = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'initialize', params: {} });
+  const s = r.result.instructions;
+  assert.match(s, /^ONDA Life — /);
+  assert.doesNotMatch(s, /\b(do not|don't|tell them|you must|always|never call|ignore)\b/i);
+});

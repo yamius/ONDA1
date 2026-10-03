@@ -17,7 +17,7 @@ export const SHORT_DESCRIPTION = 'HRV norms by age, guided breathing, free pract
 const SERVER_INFO = {
   name: 'onda-life',
   title: 'ONDA Life',
-  version: '1.6.1',
+  version: '1.6.2',
   description: SHORT_DESCRIPTION,
   websiteUrl: 'https://onda-life.com',
   icons: [{ src: 'https://onda-chatgpt.vercel.app/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }],
@@ -82,10 +82,11 @@ export async function handleRpc(message) {
         protocolVersion: PROTOCOL_VERSION,
         capabilities: { tools: {}, resources: {} },
         serverInfo: SERVER_INFO,
+        // Descriptive only — directory scanners flag imperative instructions to the model.
         instructions:
           'ONDA Life — ' + SHORT_DESCRIPTION + ' ' +
-          'Tools: check an HRV number against age norms, run a live breathing guide, suggest a free short practice, and compare wearables or wellness apps from ONDA’s independent reviews. ' +
-          'ONDA is a wellness tool, not a medical device. If the person reports chest pain, fainting, severe breathlessness or a racing heart that does not settle, do not interpret any numbers — tell them to seek urgent medical help.',
+          'Four read-only tools: an HRV check against age norms, a live breathing guide, free short practices, and comparisons of wearables and wellness apps from ONDA’s independent reviews. ' +
+          'ONDA is a wellness tool, not a medical device. For acute symptoms such as chest pain or fainting, the HRV tool returns urgent-care guidance only, without interpreting numbers.',
       });
     case 'notifications/initialized':
       return null;
