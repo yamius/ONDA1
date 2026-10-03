@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "onda-life": {
+      "type": "http",
+      "url": "https://onda-life.com/mcp"
+    }
+  }
+}

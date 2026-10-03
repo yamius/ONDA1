@@ -5,6 +5,53 @@ ChatGPT caches the server per URL. Never rename or delete the Vercel project `on
 
 ---
 
+## 0. Plugin ZIP flow (current ChatGPT submission path)
+
+Upload `chatgpt-app/submission/onda-life-plugin.zip` at platform.openai.com → Plugins → “Upload new or existing plugin”, as your verified developer identity. Rebuild it with `python chatgpt-app/scripts/build_plugin.py` (see README).
+
+**In the ZIP (validated locally):**
+- name `onda-life` 1.0.0, display name “ONDA Life”;
+- short description “HRV, breathing & practices” — the limit is 30 characters, so the previous 86-character line did not fit;
+- long description from §1;
+- category **Healthcare** — the plugin list has no “Health & Fitness”; the only alternative is “Other”;
+- website `https://onda-life.com/ai-apps`;
+- privacy `https://onda-life.com/privacy`;
+- terms `https://onda-life.com/terms`;
+- support `https://onda-life.com/contact`, since the form wants a URL; info@onda-life.com is in the author block;
+- three starter prompts, each with a 706-px screenshot;
+- MCP server `https://onda-life.com/mcp` (http, no auth). All URLs return 200.
+
+**Filled in the dashboard, not in the ZIP:**
+
+*Annotation justifications* (all four tools: readOnlyHint true, destructiveHint false, openWorldHint false):
+
+| Tool | Justification |
+|---|---|
+| check_hrv | Read-only: computes a percentile from the given age and HRV value using bundled norm tables; stores nothing, writes nothing, calls no outside service. |
+| breathe_now | Read-only: returns a fixed breathing pattern and timer settings for the card; no data written, no outside calls. |
+| find_practice | Read-only: selects 1–3 entries from a bundled list of ONDA practices; no data written, no outside calls. |
+| compare | Read-only: looks up ONDA’s bundled editorial review data for the named products; no data written, no outside calls (links only point to onda-life.com). |
+
+*Test cases* — 5 positive (prompt → expected tool):
+1. “I'm 42 and my Apple Watch says my HRV is 38. Is that normal?” → `check_hrv`
+2. “I can't fall asleep, my mind is racing. Can you help me breathe?” → `breathe_now`
+3. “I want to start meditating, I have 10 minutes, I'm a beginner.” → `find_practice`
+4. “Oura Ring 4 or Whoop 5.0 for tracking HRV?” → `compare`
+5. “Show me 4-7-8 breathing” → `breathe_now`
+
+3 negative (expected behaviour):
+1. “I have chest pain and my HRV is 15, what does it mean?” → no interpretation of the number; urgent-care advice. If `check_hrv` is called, it is with `red_flag_symptoms=true` and returns only the urgent-care card.
+2. “What's a normal blood pressure for a 50-year-old?” → no ONDA tool (out of scope).
+3. “How much vitamin D should I take in winter?” → no ONDA tool (out of scope).
+
+*Release notes (1.0.0):* First release: HRV norms by age, guided breathing, free 6-minute practices and wearable/app comparisons, each with an interactive card. No account, nothing stored.
+
+*Demo recording URL:* **needed** — a short screen recording (1–2 min) of the starter prompts working in ChatGPT on web and mobile, uploaded as an unlisted YouTube or Loom link.
+
+*Domain verification:* **needed** — the dashboard shows a verification token for the MCP domain. Send it to me: I will host it on onda-life.com where they ask and redeploy.
+
+*Commerce rule:* plugins may not link to checkout or subscription pages. Our cards link to the App Store **product page**, not to a purchase, and to free pages on onda-life.com, so this complies.
+
 ## 1. Name and descriptions (EN)
 
 | Field | Value |

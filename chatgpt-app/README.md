@@ -39,3 +39,22 @@ npm run preview          # http://localhost:4417 — the four cards with real ou
 ## Deploy
 
 Separate Vercel project with root directory `chatgpt-app`. Endpoint: `https://onda-chatgpt.vercel.app/mcp`, published as `https://onda-life.com/mcp` through a rewrite in `landing/vercel.json` (the URL both directories use — never remove the rewrite). In ChatGPT: Settings → Apps & Connectors → Developer mode → add the endpoint, test each tool, then submit for review.
+
+## ChatGPT plugin package (directory submission)
+
+The ChatGPT directory takes a plugin ZIP (Codex plugin format):
+
+```
+plugin/
+  .codex-plugin/plugin.json   # manifest: name, version, interface (listing texts, category, URLs, starter prompts, images)
+  .mcp.json                   # the server: https://onda-life.com/mcp, type http, no auth
+  assets/                     # icon.png 128px, logo.png 512px (square), screenshot-*.png (706 px wide, 400–860 tall, one per starter prompt)
+```
+
+Rebuild after any change:
+
+```
+python chatgpt-app/scripts/build_plugin.py
+```
+
+It re-runs OpenAI's documented checks locally, checks the live server, and writes `submission/onda-life-plugin.zip`. OpenAI has no local validator, so this is the closest pre-check. **Bump `version` in `plugin.json` before every new upload** — an upload with an unchanged version is rejected. Changes to tool descriptions or cards on the server do not need a new ZIP, unless the listing texts, prompts or images change.
