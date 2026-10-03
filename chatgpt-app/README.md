@@ -38,4 +38,4 @@ npm run preview          # http://localhost:4417 — the four cards with real ou
 
 ## Deploy
 
-Separate Vercel project with root directory `chatgpt-app`. Endpoint: `https://<project>/mcp`. In ChatGPT: Settings → Apps & Connectors → Developer mode → add the endpoint, test each tool, then submit for review.
+Separate Vercel project with root directory `chatgpt-app`. Endpoint: `https://onda-chatgpt.vercel.app/mcp`, published as `https://onda-life.com/mcp` through a rewrite in `landing/vercel.json` (the URL both directories use — never remove the rewrite). In ChatGPT: Settings → Apps & Connectors → Developer mode → add the endpoint, test each tool, then submit for review.

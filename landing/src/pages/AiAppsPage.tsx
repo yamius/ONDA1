@@ -1,6 +1,6 @@
 /**
  * /ai-apps — public documentation for the ONDA app inside ChatGPT and Claude
- * (one MCP server: https://onda-chatgpt.vercel.app/mcp, source in /chatgpt-app).
+ * (one MCP server: https://onda-life.com/mcp — a site rewrite to onda-chatgpt.vercel.app/mcp; source in /chatgpt-app).
  * Required by both directories: what the connector does, its tools, example
  * prompts, privacy and support. EN-only (the directories review in English).
  * Facts must match chatgpt-app/lib/tools.js and privacy §9.
@@ -14,7 +14,7 @@ const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
 export const AI_APPS_TITLE = 'ONDA for ChatGPT & Claude: HRV and Breathing'
 export const AI_APPS_DESC =
   'Use ONDA inside ChatGPT and Claude: check HRV against age norms, breathe with a live guide, find a free 6-minute practice, compare wearables. No account.'
-const MCP_URL = 'https://onda-chatgpt.vercel.app/mcp'
+const MCP_URL = 'https://onda-life.com/mcp'
 const SUPPORT = 'info@onda-life.com'
 
 const TOOLS: { name: string; title: string; what: string; prompts: string[] }[] = [

@@ -1,6 +1,6 @@
 # ONDA Life — submission package for the Claude Connectors Directory
 
-**Server URL (same as ChatGPT, never change):** `https://onda-chatgpt.vercel.app/mcp`
+**Server URL (same as ChatGPT, never change):** `https://onda-life.com/mcp` (site rewrite → `onda-chatgpt.vercel.app/mcp`; verified with MCP Inspector 2026-10-03)
 Submit at [claude.ai/directory/manage](https://claude.ai/directory/manage) → **Submit new** → **MCP connector** (it is an MCP App, so carousel screenshots are needed).
 Sources: [submission](https://claude.com/docs/connectors/building/submission), [review criteria](https://claude.com/docs/connectors/building/review-criteria), [authentication](https://claude.com/docs/connectors/building/authentication), [MCP Apps](https://claude.com/docs/connectors/building/mcp-apps/getting-started) (read 2026-10-03).
 
@@ -10,7 +10,7 @@ Sources: [submission](https://claude.com/docs/connectors/building/submission), [
 
 | Requirement | Status |
 |---|---|
-| Remote server over HTTPS | ✅ `https://onda-chatgpt.vercel.app/mcp` |
+| Remote server over HTTPS | ✅ `https://onda-life.com/mcp` |
 | Every tool has `title` + `readOnlyHint`/`destructiveHint` | ✅ v1.4.0: `title`, `readOnlyHint: true`, `destructiveHint: false`, `idempotentHint: true`, `openWorldHint: false` on all 4 (test) |
 | Tool names ≤ 64 chars | ✅ `check_hrv`, `breathe_now`, `find_practice`, `compare` |
 | Descriptions say what the tool does, no instructions to the model, no promotion | ✅ rewritten in v1.4.0 (“Compares…”, “Shows…”); the safety rule is now described as tool behaviour (the `red_flag_symptoms` flag) |
@@ -19,7 +19,7 @@ Sources: [submission](https://claude.com/docs/connectors/building/submission), [
 | Reasonably sized responses | ✅ a few KB per call (limit ≈150,000 chars) |
 | No conversation data beyond what the tool needs; no memory or chat history | ✅ only tool parameters; `_meta` hints ignored |
 | Own first-party API | ✅ data is ONDA’s own (site reviews, norms, practices), bundled in the server |
-| **Server domain should match your service** | ⚠️ `onda-chatgpt.vercel.app` ≠ `onda-life.com`. Kept by your decision (fixed URL). Explain it in the listing: “hosted by ONDA Life on Vercel; docs at onda-life.com/ai-apps”. If review objects, the fix is a custom domain — which means a NEW URL for both directories. |
+| Server domain matches the service | ✅ `onda-life.com/mcp` on the main domain (a rewrite to the server project; responses, headers and cards pass through unchanged — checked with Inspector) |
 | Authentication | ✅ **none** is supported by default for public data. Origin checks are not required (Claude calls come from Anthropic’s backend, `160.79.104.0/21`, not the browser) |
 | Documentation URL | ✅ new page `https://onda-life.com/ai-apps` (built, see §4) |
 | Privacy policy URL | ✅ `https://onda-life.com/privacy` — §9 needs the Claude update (§3, awaiting approval) |
@@ -102,7 +102,7 @@ Built and verified with the site build. The page says “once it is listed”, s
 
 ## 5. Test prompts for reviewers (paste in “Test & launch”)
 
-No account or credentials needed: add `https://onda-chatgpt.vercel.app/mcp` as a connector with no authentication.
+No account or credentials needed: add `https://onda-life.com/mcp` as a connector with no authentication.
 
 | # | Prompt | Expected |
 |---|---|---|
@@ -132,8 +132,8 @@ Spare: `extra-breathe-sleep.png`. Optional, after your Claude test: retake the f
 | # | Step | Who |
 |---|---|---|
 | 1 | v1.4.0 deployed (annotations, MCP Apps-only cards, actionable errors, /ai-apps). | ✅ Claude, after this build |
-| 2 | Re-test the 6 prompts in ChatGPT dev mode with `?v=5`. Check that the card templates show no CSP or domain warnings. | **Yakiv** |
-| 3 | Test in Claude: Settings → Connectors → Add custom connector → `https://onda-chatgpt.vercel.app/mcp`, no auth. Run the 6 prompts on web or desktop. If a card doesn’t show, send me a screenshot. | **Yakiv** |
+| 2 | Re-test the 6 prompts in ChatGPT dev mode with `https://onda-life.com/mcp?v=6`. Check that the card templates show no CSP or domain warnings. | **Yakiv** |
+| 3 | Test in Claude: Settings → Connectors → Add custom connector → `https://onda-life.com/mcp`, no auth. Run the 6 prompts on web or desktop. If a card doesn’t show, send me a screenshot. | **Yakiv** |
 | 4 | Approve §9 (above). I publish it in 12 languages. | **Yakiv** → Claude |
 | 5 | Submit to ChatGPT once identity verification is done (`SUBMISSION.md`). | **Yakiv** |
 | 6 | Submit to Claude in the portal: fields from §2, prompts from §5, screenshots from §6, all 7 compliance acknowledgements. | **Yakiv** (any paid Claude plan) |

@@ -1,6 +1,6 @@
 # ONDA Life — submission package for the ChatGPT app directory
 
-**Server URL (final, never change):** `https://onda-chatgpt.vercel.app/mcp`
+**Server URL (final, never change):** `https://onda-life.com/mcp` — a rewrite in the site project (`landing/vercel.json`) to `onda-chatgpt.vercel.app/mcp`. Never remove that rewrite, and never rename or delete the Vercel project `onda-chatgpt`.
 ChatGPT caches the server per URL. Never rename or delete the Vercel project `onda-chatgpt`. For dev-mode retests after a schema change, connect a throwaway copy as `…/mcp?v=N` and submit with the plain URL.
 
 ---
@@ -97,12 +97,12 @@ Use light mode, the full card in frame, and no personal data in the chat.
 |---|---|---|
 | 1 | Approve the privacy text in §3. | ✅ done |
 | 2 | Publish §9 to onda-life.com/privacy, update “Effective Date”, renumber §10–11. | ✅ done (EN) |
-| 3 | In ChatGPT dev mode, reconnect as `https://onda-chatgpt.vercel.app/mcp?v=4` to pick up version 1.3.0. Run all 6 prompts, check prompt 6, and take the screenshots. | **Yakiv** |
+| 3 | In ChatGPT dev mode, connect `https://onda-life.com/mcp?v=6` (version 1.4.0). Run all 6 prompts, check prompt 6, and take the screenshots. | **Yakiv** |
 | 4 | Verify the organization on platform.openai.com (Settings → Organization → Verification; business or individual identity check). | **Yakiv** |
 | 5 | Open the Apps submission form (platform.openai.com → Apps / “Submit an app”). | **Yakiv** |
 | 6 | Fill name, short and long description, category Health & Fitness, website, support contact info@onda-life.com, privacy policy URL. | **Yakiv** (copy from §1) |
 | 7 | Upload the icon (`chatgpt-app/public/icon-512.png`, or the 1024 original). | **Yakiv** |
-| 8 | MCP server URL: `https://onda-chatgpt.vercel.app/mcp`, authentication: none. | **Yakiv** |
+| 8 | MCP server URL: `https://onda-life.com/mcp`, authentication: none. | **Yakiv** |
 | 9 | Paste the test prompts and expected behaviour from §4. Upload the screenshots from §5. | **Yakiv** |
 | 10 | Answer the questionnaire: the app targets adults (age 18+ in the HRV tool); no purchases inside ChatGPT, only App Store links; no account; read-only tools; not a medical device. | **Yakiv** |
 | 11 | Submit. While in review: no new tools and no URL change. Fixes to existing tools are fine. | — |
