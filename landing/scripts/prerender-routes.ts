@@ -1254,7 +1254,7 @@ const staticPaths = [
   ...nonLocalizedStaticPaths,
 ]
 
-export function getPrerenderRoutes(): string[] {
+function buildPrerenderRoutes(): string[] {
   return [
     ...staticPaths,
     ...glossaryTerms.map((t) => `/glossary/${t.slug}`),
@@ -1339,3 +1339,10 @@ export const PART_SLUGS = partSlugs
 
 // Backwards compat for prerender.ts (kept so the diff to caller is minimal).
 export const HOME_LANG_PATHS = ['/', '/es', '/ru', '/uk', '/zh']
+
+/** Every prerendered route, once. Several lists overlap (ES/RU pilots vs the staged
+ *  locale rollouts, localized review lists), so routes are de-duplicated here — a
+ *  repeated route would be rendered twice and listed twice in sitemap.xml. */
+export function getPrerenderRoutes(): string[] {
+  return [...new Set(buildPrerenderRoutes())]
+}
