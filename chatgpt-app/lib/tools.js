@@ -22,9 +22,13 @@ export const URGENT_MESSAGE =
 export const SAFETY_NOTE =
   'Not medical advice. If you have chest pain, fainting, severe shortness of breath or a racing heart that does not settle, contact emergency services or a doctor now.';
 
+/** Validation error whose message is safe to show (never contains the input values). */
+export class InputError extends Error {}
+
 const ordinal = (n) => n + ([, 'st', 'nd', 'rd'][(n % 100 >> 3) ^ 1 && n % 10] || 'th');
 
-const READ_ONLY = { readOnlyHint: true, destructiveHint: false, openWorldHint: false };
+// Pure computations over bundled site data: read-only, same input → same output, no outside calls.
+const annotations = (title) => ({ title, readOnlyHint: true, destructiveHint: false, idempotentHint: true, openWorldHint: false });
 
 // ───────────────────────────────────────────────────────────── check_hrv ───
 
@@ -52,12 +56,11 @@ export const checkHrv = {
   title: 'Check HRV for your age',
   widget: 'hrv',
   description:
-    'Compare one heart rate variability (HRV) number with population norms for the person’s age. ' +
-    'Use when someone asks whether their HRV is normal, good or low for their age. ' +
-    'Apple Watch reports SDNN; Oura, Whoop, Garmin, Fitbit and Polar apps report RMSSD — the tool picks the right table from the device. ' +
-    'Red-flag symptoms are ONLY: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. ' +
-    'If the person reports any of these, do not interpret any number: tell them to seek urgent medical help, and if you call this tool, set red_flag_symptoms=true. ' +
-    'Do NOT set it for ordinary questions about sleep, stress, tiredness, training or a low number on its own.',
+    'Compares one heart rate variability (HRV) value with population norms for the person’s age and shows a percentile scale. ' +
+    'For questions like “is my HRV normal for my age?”. Apple Watch reports SDNN; Oura, Whoop, Garmin, Fitbit and Polar apps report RMSSD — the tool picks the matching table from the device. ' +
+    'Not a medical assessment. The optional red_flag_symptoms flag covers only acute symptoms: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; ' +
+    'a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. When the flag is true the tool returns urgent-care guidance only and no interpretation of the number. ' +
+    'The flag does not apply to ordinary questions about sleep, stress, tiredness, training or a low value on its own.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -66,7 +69,7 @@ export const checkHrv = {
       device: {
         type: 'string',
         enum: Object.keys(DEVICE_METRIC),
-        description: 'Where the number comes from. Ask if unknown; use "other" for any RMSSD source.',
+        description: 'Where the value comes from; "other" for any other RMSSD source.',
       },
       red_flag_symptoms: {
         type: 'boolean',
@@ -77,7 +80,7 @@ export const checkHrv = {
     required: ['age', 'hrv_ms', 'device'],
     additionalProperties: false,
   },
-  annotations: READ_ONLY,
+  annotations: annotations('Check HRV for your age'),
   invoking: 'Checking HRV norms…',
   invoked: 'HRV checked',
   run({ age, hrv_ms, device, red_flag_symptoms }) {
@@ -87,10 +90,13 @@ export const checkHrv = {
         text: URGENT_MESSAGE + ' Do not interpret the HRV number in this situation.',
       };
     }
-    const metric = DEVICE_METRIC[device] ?? 'rmssd';
+    if (!DEVICE_METRIC[device]) {
+      throw new InputError('Invalid input: device must be one of apple_watch, oura, whoop, garmin, fitbit, polar or other.');
+    }
+    const metric = DEVICE_METRIC[device];
     const value = Math.round(Number(hrv_ms));
     if (!(Number(age) >= 18 && Number(age) <= 100) || !(value >= 3 && value <= 300)) {
-      throw new Error('age must be 18–100 and hrv_ms 3–300');
+      throw new InputError('Invalid input: age must be a whole number from 18 to 100, and hrv_ms a value from 3 to 300 milliseconds.');
     }
     const r = interpretHrv(Number(age), value, metric);
     const label = tierLabel(r.percentile);
@@ -140,11 +146,10 @@ export const breatheNow = {
   title: 'Breathe now',
   widget: 'breathe',
   description:
-    'Show a live animated breathing guide with a timer, right in the chat. ' +
-    'Use when someone wants to calm down, can’t sleep, feels nervous before an event, or asks to be taught a breathing technique ' +
-    '(4-7-8, box breathing, physiological sigh, slow/coherent breathing). ' +
-    'Pick the technique that fits: 478 for sleep, sigh for a quick reset, calming for nerves, coherent as the default. ' +
-    'Do not use for someone who is short of breath because of illness or panic with chest pain — advise medical help.',
+    'Shows a live animated breathing guide with a timer in the conversation. ' +
+    'For requests to calm down, wind down before sleep, settle nerves before an event, or learn a breathing technique. ' +
+    'Techniques: coherent (slow, even breathing; default), 478 (4-7-8, often used before sleep), box, sigh (physiological sigh, a quick reset), calming (longer exhale). ' +
+    'A relaxation exercise, not a treatment for breathlessness caused by illness.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -153,7 +158,7 @@ export const breatheNow = {
     },
     additionalProperties: false,
   },
-  annotations: READ_ONLY,
+  annotations: annotations('Breathe now'),
   invoking: 'Preparing a breathing guide…',
   invoked: 'Breathing guide ready',
   run({ technique = 'coherent', minutes = 3 } = {}) {
@@ -198,9 +203,8 @@ export const findPractice = {
   title: 'Find an ONDA practice',
   widget: 'practice',
   description:
-    'Suggest 1–3 short guided practices from ONDA’s free adaptive set (6 minutes each, playable free on onda-life.com/emoton). ' +
-    'Use when someone wants to start meditating, needs something short for sleep, calm, focus or energy, or asks what practice to do right now. ' +
-    'Ask for the goal if it is unclear.',
+    'Suggests 1–3 short guided practices (6 minutes each) from ONDA’s free set, matched to a goal (calm, sleep, focus or energy), experience and position. ' +
+    'For requests like “I want to start meditating” or “something short to help me sleep”. Each practice can be played free in the browser.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -212,10 +216,16 @@ export const findPractice = {
     required: ['goal'],
     additionalProperties: false,
   },
-  annotations: READ_ONLY,
+  annotations: annotations('Find an ONDA practice'),
   invoking: 'Finding a practice…',
   invoked: 'Practices found',
   run({ goal, minutes, experience = 'beginner', position } = {}) {
+    if (!['calm', 'sleep', 'focus', 'energy'].includes(goal)) {
+      throw new InputError('Invalid input: goal is required and must be one of calm, sleep, focus or energy.');
+    }
+    if (position !== undefined && !SETTING_FIT[position]) {
+      throw new InputError('Invalid input: position must be one of sitting, lying, standing or moving.');
+    }
     const exp = EXPERIENCE_LEVELS[experience] ?? 0;
     const okSettings = position ? SETTING_FIT[position] : null;
     const ranked = PRACTICES.practices
@@ -296,10 +306,10 @@ export const compare = {
   title: 'Compare devices or apps',
   widget: 'compare',
   description:
-    'Side-by-side comparison card of 2–3 wellness devices or apps from ONDA’s editorial reviews (onda-life.com/reviews): ' +
+    'Compares 2–3 wellness devices or apps side by side using ONDA’s editorial reviews (onda-life.com/reviews): ' +
     'price, subscription, which HRV metric they report, score, verdict and a link to the full review. ' +
     'Covers HRV wearables (Oura, Whoop, Apple Watch, Garmin, Polar, smart rings), meditation, sleep and breathwork apps, CGMs, EEG headsets, red light, saunas, cold plunges and more. ' +
-    'Use for “X or Y?” / “X vs Y” questions.',
+    'For “X or Y?” and “X vs Y” questions. Products without an ONDA review are listed as not reviewed.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -315,10 +325,16 @@ export const compare = {
     required: ['products'],
     additionalProperties: false,
   },
-  annotations: READ_ONLY,
+  annotations: annotations('Compare devices or apps'),
   invoking: 'Pulling ONDA reviews…',
   invoked: 'Comparison ready',
   run({ products = [], priority } = {}) {
+    if (!Array.isArray(products) || products.length < 2 || products.length > 3 || !products.every((p) => typeof p === 'string' && p.trim())) {
+      throw new InputError('Invalid input: products must be a list of 2 or 3 product names, e.g. ["Oura Ring 4", "Whoop 5.0"].');
+    }
+    if (priority !== undefined && !PRIORITY_CRITERIA[priority]) {
+      throw new InputError('Invalid input: priority must be one of hrv, sleep, price, battery or content.');
+    }
     const asked = products.slice(0, 3);
     const ownProduct = asked.some((p) => /\bonda\b/i.test(p));
     const found = [];

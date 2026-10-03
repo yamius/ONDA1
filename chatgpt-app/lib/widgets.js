@@ -7,43 +7,68 @@
  */
 
 const SHELL_CSS = `
-:root{--bg:#fff;--fg:#14212b;--muted:#5d6b76;--line:#e3e8ec;--soft:#f4f7f9;--accent:#0f7c8c;--accent-fg:#fff;--warn:#9a5b00}
-:root[data-theme=dark]{--bg:#16191c;--fg:#e8eef2;--muted:#9aa8b2;--line:#2b3238;--soft:#1e2328;--accent:#3fb6c4;--accent-fg:#0b1418;--warn:#e0a54a}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-.card{padding:16px;border:1px solid var(--line);border-radius:16px}
-h2{font-size:17px;margin:0 0 4px}.muted{color:var(--muted);font-size:13px}.small{font-size:12.5px}
+:root{--bg:var(--color-background-primary,#fff);--fg:var(--color-text-primary,#14212b);--muted:var(--color-text-secondary,#5d6b76);--line:var(--color-border-tertiary,#e3e8ec);--soft:var(--color-background-secondary,#f4f7f9);--accent:#0f7c8c;--accent-fg:#fff;--warn:var(--color-text-warning,#9a5b00);--danger:var(--color-text-danger,#a73d39);--radius:var(--border-radius-xl,14px)}
+:root[data-theme=dark]{--bg:var(--color-background-primary,#16191c);--fg:var(--color-text-primary,#e8eef2);--muted:var(--color-text-secondary,#9aa8b2);--line:var(--color-border-tertiary,#2b3238);--soft:var(--color-background-secondary,#1e2328);--accent:#3fb6c4;--accent-fg:#0b1418;--warn:var(--color-text-warning,#e0a54a);--danger:var(--color-text-danger,#ee8884)}
+*{box-sizing:border-box}html,body{margin:0;background:transparent;color:var(--fg);font-family:var(--font-sans,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif);font-size:var(--font-text-md-size,15px);line-height:1.45}
+.card{padding:16px;background:var(--bg);border:1px solid var(--line);border-radius:var(--radius)}
+h2{font-size:var(--font-heading-md-size,17px);margin:0 0 4px}.muted{color:var(--muted);font-size:13px}.small{font-size:12.5px}
 .bridge{margin-top:14px;padding:12px;border-radius:12px;background:var(--soft);display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap}
-.btn{display:inline-block;padding:8px 14px;border-radius:999px;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:600;font-size:14px;border:0;cursor:pointer}
+.btn{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border-radius:999px;background:var(--accent);color:var(--accent-fg);text-decoration:none;font-weight:600;font-size:14px;border:0;cursor:pointer}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 a{color:var(--accent)}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.warn{color:var(--warn)}
+.warn{color:var(--danger)}
 `;
 
 const SHELL_JS = `
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-// MCP Apps bridge (postMessage JSON-RPC to the host) with the window.openai alias as fallback.
-let rpcId = 0;
-const post = (msg) => { try { window.parent.postMessage({ jsonrpc: '2.0', ...msg }, '*'); } catch {} };
-function onLink(e){ const a = e.target.closest('a[href]'); if(!a) return; e.preventDefault();
-  if (window.openai?.openExternal) window.openai.openExternal({ href: a.href });
-  else if (window.parent !== window) post({ id: ++rpcId, method: 'ui/open-link', params: { url: a.href } });
-  else window.open(a.href, '_blank', 'noopener'); }
+// MCP Apps view protocol (postMessage JSON-RPC to the host, spec 2026-01-26) — works in Claude,
+// ChatGPT and other MCP Apps hosts. window.openai is only a fallback for older ChatGPT builds;
+// window.__DEMO__ is the local preview.
+const inHost = window.parent !== window;
+let rpcId = 0, data = null, renderFn = null;
+const pending = new Map();
+const post = (msg) => { try { window.parent.postMessage({ jsonrpc: '2.0', ...msg }, '*'); } catch (e) {} };
+const request = (method, params) => new Promise((res) => { const id = ++rpcId; pending.set(id, res); post({ id, method, params }); setTimeout(() => { if (pending.delete(id)) res(null); }, 4000); });
+function applyContext(ctx) {
+  if (!ctx) return;
+  const root = document.documentElement;
+  if (ctx.theme) root.dataset.theme = ctx.theme === 'dark' ? 'dark' : 'light';
+  const vars = ctx.styles && ctx.styles.variables;
+  if (vars) for (const k in vars) if (k.startsWith('--') && vars[k]) root.style.setProperty(k, vars[k]);
+  const s = ctx.safeAreaInsets;
+  if (s) document.body.style.padding = (s.top||0)+'px '+(s.right||0)+'px '+(s.bottom||0)+'px '+(s.left||0)+'px';
+}
+function draw() { if (window.openai && window.openai.theme && !inHost) document.documentElement.dataset.theme = window.openai.theme; const d = data || (window.openai && window.openai.toolOutput) || window.__DEMO__; if (d && renderFn) renderFn(d); reportSize(); }
+let lastH = 0;
+function reportSize() { if (!inHost) return; const h = Math.ceil(document.documentElement.getBoundingClientRect().height); if (h && h !== lastH) { lastH = h; post({ method: 'ui/notifications/size-changed', params: { height: h } }); } }
+window.addEventListener('message', (ev) => {
+  if (ev.source !== window.parent) return;
+  const m = ev.data; if (!m || m.jsonrpc !== '2.0') return;
+  if (m.id != null && pending.has(m.id)) { const res = pending.get(m.id); pending.delete(m.id); res(m.result || null); return; }
+  if (m.method === 'ui/notifications/tool-result' && m.params && m.params.structuredContent) { data = m.params.structuredContent; draw(); }
+  if (m.method === 'ui/notifications/host-context-changed') { applyContext(m.params); reportSize(); }
+});
+function onLink(e) {
+  const a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+  e.preventDefault();
+  const url = a.href;
+  // ChatGPT's own opener when present (instant there); the standard ui/open-link everywhere else.
+  if (window.openai && window.openai.openExternal) window.openai.openExternal({ href: url });
+  else if (inHost) request('ui/open-link', { url });
+  else window.open(url, '_blank', 'noopener');
+}
 document.addEventListener('click', onLink);
-let bridged = null;
-function data(){ return bridged ?? window.openai?.toolOutput ?? window.__DEMO__ ?? null; }
-function theme(){ document.documentElement.dataset.theme = (window.__theme || window.openai?.theme) === 'dark' ? 'dark' : 'light'; }
-function boot(render){
-  const go = () => { theme(); const d = data(); if (d) render(d); };
-  window.addEventListener('message', (ev) => {
-    if (ev.source !== window.parent) return;
-    const m = ev.data; if (!m || m.jsonrpc !== '2.0') return;
-    if (m.method === 'ui/notifications/tool-result' && m.params?.structuredContent) { bridged = m.params.structuredContent; go(); }
-    if (m.method === 'ui/notifications/host-context-changed' && m.params?.theme) { window.__theme = m.params.theme; go(); }
-    if (m.id === 1 && m.result) { if (m.result.hostContext?.theme) window.__theme = m.result.hostContext.theme; post({ method: 'ui/notifications/initialized' }); go(); }
-  });
-  if (window.parent !== window) post({ id: ++rpcId, method: 'ui/initialize', params: { protocolVersion: '2026-01-26', appInfo: { name: 'onda-life', version: '1.1.0' }, appCapabilities: {} } });
-  go(); window.addEventListener('openai:set_globals', go); }
+function boot(render) {
+  renderFn = render;
+  if (inHost) {
+    request('ui/initialize', { protocolVersion: '2026-01-26', appInfo: { name: 'onda-life', version: '1.4.0' }, appCapabilities: { availableDisplayModes: ['inline'] } })
+      .then((r) => { if (r) applyContext(r.hostContext); post({ method: 'ui/notifications/initialized', params: {} }); draw(); });
+    if (window.ResizeObserver) new ResizeObserver(reportSize).observe(document.documentElement);
+  }
+  draw();
+  window.addEventListener('openai:set_globals', draw);
+}
 function bridge(b, extra=''){ if(!b) return ''; return '<div class="bridge"><span class="small">'+esc(b.text)+'</span><span class="row">'+extra+'<a class="btn" target="_blank" rel="noopener" href="'+esc(b.url)+'">Get ONDA</a></span></div>'; }
 `;
 
@@ -160,8 +185,8 @@ boot((d) => {
 );
 
 export const WIDGETS = {
-  hrv: { uri: 'ui://onda/hrv-v2.html', name: 'HRV for your age', html: hrv },
-  breathe: { uri: 'ui://onda/breathe-v2.html', name: 'Breathing guide', html: breathe },
-  practice: { uri: 'ui://onda/practice-v2.html', name: 'ONDA practices', html: practice },
-  compare: { uri: 'ui://onda/compare-v2.html', name: 'Device and app comparison', html: compare },
+  hrv: { uri: 'ui://onda/hrv-v3.html', name: 'HRV for your age', html: hrv },
+  breathe: { uri: 'ui://onda/breathe-v3.html', name: 'Breathing guide', html: breathe },
+  practice: { uri: 'ui://onda/practice-v3.html', name: 'ONDA practices', html: practice },
+  compare: { uri: 'ui://onda/compare-v3.html', name: 'Device and app comparison', html: compare },
 };

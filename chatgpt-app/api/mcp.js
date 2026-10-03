@@ -10,14 +10,14 @@
  * via _meta.ui.resourceUri (+ the openai/outputTemplate alias); the card gets
  * structuredContent over the ui/notifications/tool-result bridge.
  */
-import { TOOLS } from '../lib/tools.js';
+import { TOOLS, InputError } from '../lib/tools.js';
 import { WIDGETS } from '../lib/widgets.js';
 
 export const SHORT_DESCRIPTION = 'HRV norms by age, guided breathing, free practices and honest wearable comparisons.';
 const SERVER_INFO = {
   name: 'onda-life',
   title: 'ONDA Life',
-  version: '1.3.0',
+  version: '1.4.0',
   description: SHORT_DESCRIPTION,
   websiteUrl: 'https://onda-life.com',
   icons: [{ src: 'https://onda-chatgpt.vercel.app/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }],
@@ -25,7 +25,7 @@ const SERVER_INFO = {
 const PROTOCOL_VERSION = '2025-06-18';
 // MCP Apps standard (ChatGPT rejects the old text/html+skybridge templates).
 const WIDGET_MIME = 'text/html;profile=mcp-app';
-// Unique origin ChatGPT sandboxes the cards on (required for app review).
+// Unique origin ChatGPT sandboxes the cards on (ChatGPT review needs it) — openai/widgetDomain only.
 const WIDGET_DOMAIN = 'https://onda-life.com';
 
 function toolDescriptor(t) {
@@ -38,6 +38,7 @@ function toolDescriptor(t) {
     annotations: t.annotations,
     _meta: {
       ui: { resourceUri: w.uri },
+      'ui/resourceUri': w.uri, // flat MCP Apps key, for hosts on the older spec
       'openai/outputTemplate': w.uri, // ChatGPT compatibility alias
       'openai/toolInvocation/invoking': t.invoking,
       'openai/toolInvocation/invoked': t.invoked,
@@ -57,8 +58,10 @@ function resourceContents(w) {
     text: w.html,
     _meta: {
       // The cards load nothing from the network; links open through the host.
-      ui: { prefersBorder: false, domain: WIDGET_DOMAIN, csp: { connectDomains: [], resourceDomains: [] } },
-      // Legacy Apps SDK keys — the ChatGPT dev-mode checker still reads these.
+      // MCP Apps (Claude, ChatGPT, others). No ui.domain: it is optional, each host has its own
+      // format (Claude: <sha256>.claudemcpcontent.com), and a wrong value stops the card rendering.
+      ui: { prefersBorder: false, csp: { connectDomains: [], resourceDomains: [] } },
+      // ChatGPT-specific additions — its dev-mode/review checker reads these.
       'openai/widgetDescription': `ONDA Life card: ${w.name}.`,
       'openai/widgetPrefersBorder': false,
       'openai/widgetDomain': WIDGET_DOMAIN,
@@ -108,9 +111,12 @@ export async function handleRpc(message) {
           content: [{ type: 'text', text }],
           _meta: { ui: { resourceUri: WIDGETS[tool.widget].uri }, 'openai/outputTemplate': WIDGETS[tool.widget].uri },
         });
-      } catch {
-        // No input echo: arguments may contain health numbers.
-        return rpcResult(id, { content: [{ type: 'text', text: 'The tool could not process this request.' }], isError: true });
+      } catch (err) {
+        // Validation messages name the rule, never the values (arguments may be health numbers).
+        const text = err instanceof InputError
+          ? err.message
+          : tool.name + ' failed while computing the result. Please try again; if it keeps failing, contact info@onda-life.com.';
+        return rpcResult(id, { content: [{ type: 'text', text }], isError: true });
       }
     }
     default:

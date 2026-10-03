@@ -129,3 +129,39 @@ test('tier wording: below average only under the 25th percentile', async () => {
   assert.ok(lo.percentile < 25);
   assert.equal(lo.tierLabel, 'Below average');
 });
+
+test('Claude directory: every tool has full annotations and a short name', async () => {
+  const { result } = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'tools/list' });
+  for (const t of result.tools) {
+    assert.ok(t.name.length <= 64, t.name);
+    assert.ok(t.title && t.annotations.title, t.name);
+    assert.equal(t.annotations.readOnlyHint, true);
+    assert.equal(t.annotations.destructiveHint, false);
+    assert.equal(t.annotations.idempotentHint, true);
+    assert.equal(t.annotations.openWorldHint, false);
+    assert.doesNotMatch(t.description, /\b(you must|always call|do not call|ignore previous)\b/i, 'descriptions describe, not instruct');
+  }
+});
+
+test('cards use the MCP Apps standard on their own (no host-specific domain)', async () => {
+  const { result } = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'resources/list' });
+  for (const r of result.resources) {
+    const c = (await handleRpc({ jsonrpc: '2.0', id: 2, method: 'resources/read', params: { uri: r.uri } })).result.contents[0];
+    assert.equal(c.mimeType, 'text/html;profile=mcp-app');
+    assert.equal(c._meta.ui.domain, undefined, 'ui.domain would break Claude (host-specific format)');
+    assert.deepEqual(c._meta.ui.csp, { connectDomains: [], resourceDomains: [] });
+    assert.match(c.text, /ui\/initialize/);
+    assert.match(c.text, /ui\/notifications\/tool-result/);
+    assert.match(c.text, /ui\/notifications\/size-changed/);
+    assert.match(c.text, /ui\/open-link/);
+  }
+});
+
+test('invalid input returns an actionable message without the values', async () => {
+  const r = (await call('find_practice', { goal: 'flying' })).result;
+  assert.equal(r.isError, true);
+  assert.match(r.content[0].text, /goal .* calm, sleep, focus or energy/);
+  assert.doesNotMatch(r.content[0].text, /flying/);
+  const c = (await call('compare', { products: ['Oura'] })).result;
+  assert.match(c.content[0].text, /2 or 3 product names/);
+});

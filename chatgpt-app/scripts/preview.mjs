@@ -32,6 +32,28 @@ createServer(async (req, res) => {
     };
     return handler(req, shim);
   }
+  // /host/<card> — a minimal MCP Apps host: embeds the card in a sandboxed iframe and speaks the
+  // view protocol (answers ui/initialize with a dark host context, sends tool-result, logs size/open-link).
+  const hostMatch = url.pathname.match(/^\/host\/(\w+)$/);
+  if (hostMatch && WIDGETS[hostMatch[1]]) {
+    const k = hostMatch[1];
+    const html = WIDGETS[k].html;
+    const page = `<!doctype html><meta charset="utf-8"><title>host ${k}</title><body style="background:#262624;color:#eee;font:13px monospace;padding:16px">
+<iframe id="f" sandbox="allow-scripts" style="width:100%;max-width:720px;border:0;height:50px;display:block"></iframe><pre id="log"></pre>
+<script>
+const f=document.getElementById('f'),log=(m)=>document.getElementById('log').textContent+=m+String.fromCharCode(10);
+window.HOSTLOG=[];
+window.addEventListener('message',(e)=>{if(e.source!==f.contentWindow)return;const m=e.data;window.HOSTLOG.push(m.method||('result#'+m.id));log('<- '+(m.method||'?')+' '+JSON.stringify(m.params||{}));
+ if(m.method==='ui/initialize'){f.contentWindow.postMessage({jsonrpc:'2.0',id:m.id,result:{protocolVersion:'2026-01-26',hostInfo:{name:'test-host',version:'1'},hostCapabilities:{openLinks:{}},hostContext:{theme:'dark',styles:{variables:{'--color-background-primary':'#30302E','--color-text-primary':'#FAF9F5','--color-text-secondary':'#C2C0B6','--color-background-secondary':'#262624','--color-border-tertiary':'rgba(222,220,209,.15)'}}}}},'*')}
+ if(m.method==='ui/notifications/initialized'){f.contentWindow.postMessage({jsonrpc:'2.0',method:'ui/notifications/tool-result',params:{structuredContent:${JSON.stringify(DEMOS[k].structuredContent)}}},'*')}
+ if(m.method==='ui/notifications/size-changed'){f.style.height=m.params.height+'px'}
+ if(m.method==='ui/open-link'){f.contentWindow.postMessage({jsonrpc:'2.0',id:m.id,result:{}},'*')}
+});
+f.srcdoc=${JSON.stringify(html).replace(/<\/script/gi, '<\\/script')};
+</script>`;
+    res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+    return res.end(page);
+  }
   const key = url.pathname.slice(1);
   if (WIDGETS[key]) {
     const theme = url.searchParams.get('theme') === 'dark' ? 'dark' : 'light';

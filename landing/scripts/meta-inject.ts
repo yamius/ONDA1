@@ -23,6 +23,7 @@ import { rhrToolCopy } from '../src/data/rhr-tool-i18n'
 import { SUPPORTED_LANGS, type Lang } from '../src/i18n'
 import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
 import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
+import { aiAppsJsonLd, AI_APPS_TITLE, AI_APPS_DESC } from '../src/pages/AiAppsPage'
 import { HOW_IT_WORKS_I18N } from '../src/data/how-it-works-i18n'
 import { PEOPLE_I18N } from '../src/data/people-i18n'
 import { getOndaVs, ONDA_VS } from '../src/data/onda-vs'
@@ -1667,6 +1668,16 @@ function getMetaForRouteBase(route: string): RouteMeta {
   // frontier. EN-only. Plain WebPage schema — deliberately NOT
   // ResearchProject (would imply a funded, active programme) and NOT
   // MedicalWebPage (would imply medical claims).
+  if (route === '/ai-apps') {
+    return {
+      title: `${AI_APPS_TITLE} | ONDA Life`,
+      description: AI_APPS_DESC,
+      url,
+      breadcrumbs,
+      ogType: 'website',
+      jsonLd: aiAppsJsonLd(),
+    }
+  }
   if (route === '/research') {
     const researchTitle =
       'The Science Behind ONDA — HRV Biofeedback, Evidence & Research Roadmap | ONDA Life'

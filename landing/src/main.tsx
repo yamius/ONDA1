@@ -76,6 +76,7 @@ const BioMetricPage      = lazyNs('bio-metric', () => import('./pages/BioMetricP
 const EmotonPage         = lazyNs('emoton', () => import('./pages/EmotonPage').then(m => ({ default: m.EmotonPage })))
 const ArticlesSlugRouter = lazyNs(['articles', 'glossary-light'], () => import('./components/ArticlesSlugRouter'))
 const ResearchPage          = lazy(() => import('./pages/ResearchPage').then(m => ({ default: m.ResearchPage })))
+const AiAppsPage            = lazy(() => import('./pages/AiAppsPage').then(m => ({ default: m.AiAppsPage })))
 const MeasurementsPage      = lazy(() => import('./pages/MeasurementsPage').then(m => ({ default: m.MeasurementsPage })))
 const HowItWorksPage        = lazy(() => import('./pages/HowItWorksPage').then(m => ({ default: m.HowItWorksPage })))
 const ProductPage           = lazy(() => import('./pages/ProductPage').then(m => ({ default: m.ProductPage })))
@@ -221,6 +222,7 @@ const routeElements = (
               <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
             ))}
             <Route path="/research"              element={<ResearchPage />} />
+            <Route path="/ai-apps"               element={<AiAppsPage />} />
             <Route path="/measurements"          element={<MeasurementsPage />} />
             <Route path="/ru/measurements"       element={<MeasurementsPage />} />
             <Route path="/es/measurements"       element={<MeasurementsPage />} />

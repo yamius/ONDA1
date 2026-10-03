@@ -1027,6 +1027,8 @@ const nonLocalizedStaticPaths = [
   // /research — dedicated research-partner landing, linked from the
   // Eurostar deck final slide. EN-only by design (peer-review audience).
   '/research',
+  // /ai-apps — public docs for the ONDA app in ChatGPT and Claude (directory requirement). EN-only.
+  '/ai-apps',
   // /measurements + /how-it-works — GEO/AI citability pages: exactly what
   // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.
   '/measurements',
