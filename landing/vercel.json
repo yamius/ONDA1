@@ -59,6 +59,7 @@
     { "source": "/p/tno", "destination": "/decks/onda-tno-eurostars-h2v6.pdf", "statusCode": 302 }
   ],
   "rewrites": [
+    { "source": "/mcp", "destination": "https://onda-chatgpt.vercel.app/mcp" },
     { "source": "/app", "destination": "/get" },
     { "source": "/download", "destination": "/get" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
