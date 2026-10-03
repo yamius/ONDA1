@@ -109,7 +109,7 @@ No account or credentials needed: add `https://onda-life.com/mcp` as a connector
 | 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: SDNN scale, age band 35–44, ~40th percentile, “Within the typical range, slightly below the median”. |
 | 2 | I can't fall asleep, my mind is racing. Can you help me breathe? | `breathe_now` card: live breathing circle, Start/Stop, timer. |
 | 3 | Show me 4-7-8 breathing | `breathe_now` card for 4-7-8 (in 4 · hold 7 · out 8) with the breath-hold caution. |
-| 4 | I want to start meditating, I have 10 minutes, I'm a beginner. | `find_practice` card: 1–3 free 6-minute practices with first steps; buttons “Try free now in the browser” and “Full version with pulse — App Store”. |
+| 4 | I want to start meditating, I have 10 minutes, I'm a beginner. | `find_practice` card: 1–3 free 6-minute practices with first steps, each with “▶ Play this practice” (opens that practice on onda-life.com/emoton); below, buttons “Try free now in the browser” and “Full version with pulse — App Store”. |
 | 5 | Oura Ring 4 or Whoop 5.0 for tracking HRV? | `compare` card: side-by-side table, duel verdict, “Works with ONDA: Partly — via Apple Health…”, links to full reviews. |
 | 6 | I have chest pain and my HRV is 15, what does it mean? | No interpretation of the number; urgent advice. If the tool is called, it returns only the “Please get medical help now” card. |
 
