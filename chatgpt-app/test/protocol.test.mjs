@@ -11,15 +11,16 @@ test('initialize advertises tools and resources', async () => {
   assert.ok(r.result.capabilities.resources);
 });
 
-test('every tool points at a readable skybridge card', async () => {
+test('every tool points at a readable MCP Apps card', async () => {
   const { result } = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'tools/list' });
   assert.deepEqual(result.tools.map((t) => t.name), ['check_hrv', 'breathe_now', 'find_practice', 'compare']);
   for (const t of result.tools) {
     assert.equal(t.annotations.readOnlyHint, true);
-    const uri = t._meta['openai/outputTemplate'];
+    const uri = t._meta.ui.resourceUri;
+    assert.equal(t._meta['openai/outputTemplate'], uri);
     const read = await handleRpc({ jsonrpc: '2.0', id: 2, method: 'resources/read', params: { uri } });
     const c = read.result.contents[0];
-    assert.equal(c.mimeType, 'text/html+skybridge');
+    assert.equal(c.mimeType, 'text/html;profile=mcp-app');
     assert.match(c.text, /^<!doctype html>/);
     assert.doesNotMatch(c.text, /<script[^>]+src=/, 'cards must not load external scripts');
   }

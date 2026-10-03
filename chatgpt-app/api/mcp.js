@@ -6,16 +6,17 @@
  * data; nothing a person types is stored or logged. Never merge this with the
  * private analytics server in ../mcp.
  *
- * Each tool points ChatGPT at a card (an HTML resource, text/html+skybridge)
- * via _meta["openai/outputTemplate"]; the card reads the tool's
- * structuredContent from window.openai.toolOutput.
+ * Each tool points ChatGPT at a card (MCP Apps resource, text/html;profile=mcp-app)
+ * via _meta.ui.resourceUri (+ the openai/outputTemplate alias); the card gets
+ * structuredContent over the ui/notifications/tool-result bridge.
  */
 import { TOOLS } from '../lib/tools.js';
 import { WIDGETS } from '../lib/widgets.js';
 
-const SERVER_INFO = { name: 'onda-life', title: 'ONDA Life', version: '1.0.0' };
+const SERVER_INFO = { name: 'onda-life', title: 'ONDA Life', version: '1.1.0' };
 const PROTOCOL_VERSION = '2025-06-18';
-const WIDGET_MIME = 'text/html+skybridge';
+// MCP Apps standard (ChatGPT rejects the old text/html+skybridge templates).
+const WIDGET_MIME = 'text/html;profile=mcp-app';
 
 function toolDescriptor(t) {
   const w = WIDGETS[t.widget];
@@ -26,7 +27,8 @@ function toolDescriptor(t) {
     inputSchema: t.inputSchema,
     annotations: t.annotations,
     _meta: {
-      'openai/outputTemplate': w.uri,
+      ui: { resourceUri: w.uri },
+      'openai/outputTemplate': w.uri, // ChatGPT compatibility alias
       'openai/toolInvocation/invoking': t.invoking,
       'openai/toolInvocation/invoked': t.invoked,
       'openai/widgetAccessible': false,
@@ -44,10 +46,9 @@ function resourceContents(w) {
     mimeType: WIDGET_MIME,
     text: w.html,
     _meta: {
-      'openai/widgetDescription': `ONDA Life card: ${w.name}.`,
-      'openai/widgetPrefersBorder': false,
       // The cards load nothing from the network; links open through the host.
-      'openai/widgetCSP': { connect_domains: [], resource_domains: [] },
+      ui: { prefersBorder: false, csp: { connectDomains: [], resourceDomains: [] } },
+      'openai/widgetDescription': `ONDA Life card: ${w.name}.`,
     },
   };
 }
@@ -90,7 +91,7 @@ export async function handleRpc(message) {
         return rpcResult(id, {
           structuredContent,
           content: [{ type: 'text', text }],
-          _meta: { 'openai/outputTemplate': WIDGETS[tool.widget].uri },
+          _meta: { ui: { resourceUri: WIDGETS[tool.widget].uri }, 'openai/outputTemplate': WIDGETS[tool.widget].uri },
         });
       } catch {
         // No input echo: arguments may contain health numbers.

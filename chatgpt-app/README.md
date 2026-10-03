@@ -13,7 +13,7 @@ Public MCP server for the OpenAI Apps SDK. Spec: `D:\_PValley\_work\610_ONDA_Cha
 | `find_practice` | 1–3 of the 18 free **adaptive** practices by goal / experience / position | practice list + “play free” → `/emoton` | `ct=chatgpt_practice`, `utm_campaign=chatgpt_practice` |
 | `compare` | 2–3 devices or apps from ONDA reviews: price, score, HRV metric, verdict, “works with ONDA” | side-by-side table | `ct=chatgpt_compare` |
 
-Bridges go to the App Store (no deep links yet). Wording follows `landing/docs/onda-facts-source-of-truth.md`: no numeric pacer claim; HRV and the personal baseline need Apple Watch; the camera pulse works on any iPhone. ONDA is never scored inside a comparison — if asked about it, the card labels it “Our product”.
+Cards follow the MCP Apps standard (`text/html;profile=mcp-app`, `_meta.ui.resourceUri`; bump the `-vN` in the URI on breaking card changes — it is a cache key). Bridges go to the App Store (no deep links yet). Wording follows `landing/docs/onda-facts-source-of-truth.md`: no numeric pacer claim; HRV and the personal baseline need Apple Watch; the camera pulse works on any iPhone. ONDA is never scored inside a comparison — if asked about it, the card labels it “Our product”.
 
 ## Data — generated, never edited by hand
 

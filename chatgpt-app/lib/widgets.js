@@ -1,7 +1,7 @@
 /**
  * The four cards ChatGPT renders in the chat. Each is one self-contained HTML
  * document (no external scripts, fonts or requests), served as an MCP resource
- * with mimeType text/html+skybridge. Data arrives as window.openai.toolOutput
+ * with mimeType text/html;profile=mcp-app (MCP Apps). Data arrives over the postMessage bridge (ui/notifications/tool-result), or window.openai.toolOutput as fallback
  * (the tool's structuredContent); the card re-renders on openai:set_globals.
  * Links open via window.openai.openExternal when the host provides it.
  */
@@ -22,11 +22,28 @@ a{color:var(--accent)}.row{display:flex;gap:8px;flex-wrap:wrap;align-items:cente
 const SHELL_JS = `
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function onLink(e){ const a = e.target.closest('a[href]'); if(!a) return; if(window.openai?.openExternal){ e.preventDefault(); window.openai.openExternal({ href: a.href }); } }
+// MCP Apps bridge (postMessage JSON-RPC to the host) with the window.openai alias as fallback.
+let rpcId = 0;
+const post = (msg) => { try { window.parent.postMessage({ jsonrpc: '2.0', ...msg }, '*'); } catch {} };
+function onLink(e){ const a = e.target.closest('a[href]'); if(!a) return; e.preventDefault();
+  if (window.openai?.openExternal) window.openai.openExternal({ href: a.href });
+  else if (window.parent !== window) post({ id: ++rpcId, method: 'ui/open-link', params: { url: a.href } });
+  else window.open(a.href, '_blank', 'noopener'); }
 document.addEventListener('click', onLink);
-function data(){ return window.openai?.toolOutput ?? window.__DEMO__ ?? null; }
-function theme(){ document.documentElement.dataset.theme = window.openai?.theme === 'dark' ? 'dark' : 'light'; }
-function boot(render){ const go = () => { theme(); const d = data(); if (d) render(d); }; go(); window.addEventListener('openai:set_globals', go); }
+let bridged = null;
+function data(){ return bridged ?? window.openai?.toolOutput ?? window.__DEMO__ ?? null; }
+function theme(){ document.documentElement.dataset.theme = (window.__theme || window.openai?.theme) === 'dark' ? 'dark' : 'light'; }
+function boot(render){
+  const go = () => { theme(); const d = data(); if (d) render(d); };
+  window.addEventListener('message', (ev) => {
+    if (ev.source !== window.parent) return;
+    const m = ev.data; if (!m || m.jsonrpc !== '2.0') return;
+    if (m.method === 'ui/notifications/tool-result' && m.params?.structuredContent) { bridged = m.params.structuredContent; go(); }
+    if (m.method === 'ui/notifications/host-context-changed' && m.params?.theme) { window.__theme = m.params.theme; go(); }
+    if (m.id === 1 && m.result) { if (m.result.hostContext?.theme) window.__theme = m.result.hostContext.theme; post({ method: 'ui/notifications/initialized' }); go(); }
+  });
+  if (window.parent !== window) post({ id: ++rpcId, method: 'ui/initialize', params: { protocolVersion: '2026-01-26', appInfo: { name: 'onda-life', version: '1.1.0' }, appCapabilities: {} } });
+  go(); window.addEventListener('openai:set_globals', go); }
 function bridge(b, extra=''){ if(!b) return ''; return '<div class="bridge"><span class="small">'+esc(b.text)+'</span><span class="row">'+extra+'<a class="btn" target="_blank" rel="noopener" href="'+esc(b.url)+'">Get ONDA</a></span></div>'; }
 `;
 
@@ -142,8 +159,8 @@ boot((d) => {
 );
 
 export const WIDGETS = {
-  hrv: { uri: 'ui://widget/onda-hrv.html', name: 'HRV for your age', html: hrv },
-  breathe: { uri: 'ui://widget/onda-breathe.html', name: 'Breathing guide', html: breathe },
-  practice: { uri: 'ui://widget/onda-practice.html', name: 'ONDA practices', html: practice },
-  compare: { uri: 'ui://widget/onda-compare.html', name: 'Device and app comparison', html: compare },
+  hrv: { uri: 'ui://onda/hrv-v2.html', name: 'HRV for your age', html: hrv },
+  breathe: { uri: 'ui://onda/breathe-v2.html', name: 'Breathing guide', html: breathe },
+  practice: { uri: 'ui://onda/practice-v2.html', name: 'ONDA practices', html: practice },
+  compare: { uri: 'ui://onda/compare-v2.html', name: 'Device and app comparison', html: compare },
 };
