@@ -17,6 +17,8 @@ const SERVER_INFO = { name: 'onda-life', title: 'ONDA Life', version: '1.1.0' };
 const PROTOCOL_VERSION = '2025-06-18';
 // MCP Apps standard (ChatGPT rejects the old text/html+skybridge templates).
 const WIDGET_MIME = 'text/html;profile=mcp-app';
+// Unique origin ChatGPT sandboxes the cards on (required for app review).
+const WIDGET_DOMAIN = 'https://onda-life.com';
 
 function toolDescriptor(t) {
   const w = WIDGETS[t.widget];
@@ -47,8 +49,12 @@ function resourceContents(w) {
     text: w.html,
     _meta: {
       // The cards load nothing from the network; links open through the host.
-      ui: { prefersBorder: false, csp: { connectDomains: [], resourceDomains: [] } },
+      ui: { prefersBorder: false, domain: WIDGET_DOMAIN, csp: { connectDomains: [], resourceDomains: [] } },
+      // Legacy Apps SDK keys — the ChatGPT dev-mode checker still reads these.
       'openai/widgetDescription': `ONDA Life card: ${w.name}.`,
+      'openai/widgetPrefersBorder': false,
+      'openai/widgetDomain': WIDGET_DOMAIN,
+      'openai/widgetCSP': { connect_domains: [], resource_domains: [] },
     },
   };
 }
