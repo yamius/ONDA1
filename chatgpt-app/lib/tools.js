@@ -131,7 +131,7 @@ export const breatheNow = {
   invoking: 'Preparing a breathing guide…',
   invoked: 'Breathing guide ready',
   run({ technique = 'coherent', minutes = 3 } = {}) {
-    const id = TECHNIQUES[technique] ? technique : 'coherent';
+    const id = TECHNIQUES[String(technique)] ? String(technique) : 'coherent';
     const pattern = BREATHING_PATTERNS.find((p) => p.id === id);
     const m = Math.min(10, Math.max(1, Math.round(Number(minutes) || 3)));
     const t = TECHNIQUES[id];

@@ -84,3 +84,9 @@ test('find_practice card has the App Store button next to the free try', async (
   assert.ok(d.bridge.button);
   assert.match(WIDGETS.practice.html, /d\.tryFree\.url[\s\S]{0,200}d\.bridge\.url/);
 });
+
+test('breathe_now accepts 478 sent as a number', async () => {
+  const r = (await call('breathe_now', { technique: 478 })).result;
+  assert.ok(!r.isError);
+  assert.equal(r.structuredContent.technique, '478');
+});
