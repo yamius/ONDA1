@@ -251,15 +251,16 @@ export const LOCALIZED_PAGES: Record<string, string> = {
 const LOCALIZED_BASE_PATHS = Object.keys(LOCALIZED_PAGES)
 
 /**
- * Localized pages a language does NOT publish (yet). DE/FR legal pages stay
- * EN until a lawyer reviews the translations (GDPR) — no /de/privacy route,
- * no hreflang entry, and the language switcher keeps the EN URL.
+ * Localized pages a language does NOT publish (yet) — no route, no hreflang
+ * entry, and the language switcher keeps the EN URL. DE/FR terms stay EN until
+ * a lawyer reviews them. /privacy is published in all 12 languages (owner
+ * decision 2026-10-03; each translation states that the English version prevails).
  */
 export const LANG_PAGE_EXCLUDE: Partial<Record<Lang, readonly string[]>> = {
-  de: ['/privacy', '/terms'],
-  fr: ['/privacy', '/terms'],
+  de: ['/terms'],
+  fr: ['/terms'],
   ...Object.fromEntries(
-    ARTICLES_ONLY_LANGS.map((l) => [l, LOCALIZED_BASE_PATHS.filter((b) => b !== '/articles')]),
+    ARTICLES_ONLY_LANGS.map((l) => [l, LOCALIZED_BASE_PATHS.filter((b) => b !== '/articles' && b !== '/privacy')]),
   ),
 }
 /** Languages whose /part/:slug bodies are not translated yet — no route, and
@@ -310,7 +311,10 @@ export function localizedRouteVariants(): string[] {
   for (const base of LOCALIZED_BASE_PATHS) {
     for (const lang of SUPPORTED_LANGS) {
       if (!isPageLocalizedFor(base, lang)) continue
-      out.push(localizedPathFor(base, lang))
+      // Build the URL directly, not via langHref(): langHref consults the generated
+      // coverage, which is itself derived from these routes — a page newly allowed
+      // in LANG_PAGE_EXCLUDE could otherwise never get its first /<lang>/ route.
+      out.push(lang === 'en' ? base : base === '/' ? `/${lang}` : `/${lang}${base}`)
     }
   }
   return out
