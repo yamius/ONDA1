@@ -67,8 +67,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-03"
     },
     {
@@ -136,8 +136,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-06"
     },
     {
@@ -205,8 +205,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-02"
     },
     {
@@ -274,8 +274,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RR-intervals",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-02"
     },
     {
@@ -343,8 +343,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-02"
     },
     {
@@ -412,8 +412,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "unknown",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-12"
     },
     {
@@ -481,8 +481,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "SDNN+RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-03"
     },
     {
@@ -550,8 +550,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "SDNN+RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-06"
     },
     {
@@ -619,8 +619,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-03"
     },
     {
@@ -688,8 +688,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "unknown",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-18"
     },
     {
@@ -757,8 +757,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "unknown",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-18"
     },
     {
@@ -826,8 +826,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "unknown",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-18"
     },
     {
@@ -1102,8 +1102,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "unknown",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-10-03"
     },
     {
@@ -1171,8 +1171,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-17"
     },
     {
@@ -1240,8 +1240,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-12"
     },
     {
@@ -1309,8 +1309,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "RMSSD",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-12"
     },
     {
@@ -1378,8 +1378,8 @@
       ],
       "testStatus": "evidence-based",
       "hrvMetric": "unknown",
-      "worksWithOnda": "no",
-      "worksWithOndaNote": "ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.",
+      "worksWithOnda": "partly",
+      "worksWithOndaNote": "Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.",
       "dateModified": "2026-09-17"
     },
     {

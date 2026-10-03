@@ -12,9 +12,10 @@
  * Reviews: two fields are not in the review data and are set here by hand:
  *  - hrvMetric: what the device's own app reports. 'unknown' when our review
  *    text and the maker's docs we checked don't say — never guess.
- *  - worksWithOnda: ONDA reads HRV and builds the personal baseline only from
- *    Apple Watch (HealthKit). The camera pulse works on any iPhone, so other
- *    wearables are 'no' for HRV but the user can still use ONDA without them.
+ *  - worksWithOnda: the baseline reads HRV (SDNN type) and resting HR from Apple
+ *    Health with no source filter (HealthKitHeartRatePlugin.swift), so other
+ *    wearables count when their app syncs heart data to Apple Health → 'partly'.
+ *    Live coherence is Apple-Watch-only; the camera pulse works on any iPhone.
  */
 import { writeFileSync, readFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
@@ -55,16 +56,17 @@ const HRV_METRIC: Record<string, HrvMetric> = {
   'withings-scanwatch': 'unknown',
 }
 
-type WorksWithOnda = 'yes' | 'no' | 'not-a-device'
+type WorksWithOnda = 'yes' | 'partly' | 'not-a-device'
 
 function worksWithOnda(slug: string, category: string): WorksWithOnda {
   if (category !== 'hrv-wearable') return 'not-a-device'
-  return slug.startsWith('apple-watch') ? 'yes' : 'no'
+  return slug.startsWith('apple-watch') ? 'yes' : 'partly'
 }
 
 const WORKS_NOTE: Record<WorksWithOnda, string> = {
   yes: 'ONDA reads heart rate and HRV from Apple Watch and builds your personal baseline from its history.',
-  no: 'ONDA does not read this device. Without Apple Watch, ONDA measures pulse with the iPhone camera; HRV and the personal baseline need Apple Watch.',
+  partly:
+    'Partly — via Apple Health, if the device syncs heart data there: ONDA’s personal baseline reads HRV and resting heart rate from Apple Health whatever the source. Live heart-rhythm coherence needs Apple Watch; the iPhone camera measures pulse without any device.',
   'not-a-device': '',
 }
 

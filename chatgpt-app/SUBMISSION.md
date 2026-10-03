@@ -13,14 +13,14 @@ ChatGPT caches the server per URL. Never rename or delete the Vercel project `on
 | Short description | HRV norms by age, guided breathing, free practices and honest wearable comparisons. |
 | Category | Health & Fitness |
 | Website | https://onda-life.com |
-| Support | https://onda-life.com/contact · info@onda-life.com |
-| Privacy policy | https://onda-life.com/privacy (after the new section in §3 is published) |
+| Support | info@onda-life.com (contact page: https://onda-life.com/contact) |
+| Privacy policy | https://onda-life.com/privacy (§9 “ONDA App in ChatGPT”, published 2026-10-03) |
 
 **Long description**
 
 > ONDA helps you understand your heart rate variability and practice better. Check your HRV against age norms (Apple Watch SDNN or RMSSD), follow a live guided breathing session, find a free short practice for your goal, and compare wearables and wellness apps using ONDA's independent reviews. No account needed. ONDA is a wellness tool, not a medical device.
 
-**Server manifest — done.** `initialize` now returns `serverInfo.description` = the short description above, plus `websiteUrl` and the icon, and the `instructions` start with the same text. Server version is 1.2.0.
+**Server manifest — done.** `initialize` now returns `serverInfo.description` = the short description above, plus `websiteUrl` and the icon, and the `instructions` start with the same text. Server version is 1.3.0.
 
 Note: the line ChatGPT showed (“practical consciousness training…”) was ChatGPT’s own summary from the dev-mode snapshot. Once the app is submitted, ChatGPT shows the text from the submission form, so enter the descriptions above there too.
 
@@ -30,7 +30,7 @@ Note: the line ChatGPT showed (“practical consciousness training…”) was Ch
 - Also served at `https://onda-chatgpt.vercel.app/icon-512.png` (linked from the manifest).
 - If the form asks for 1024×1024, upload `_ONDA_logo.png` directly.
 
-## 3. Privacy policy — new section (DRAFT, not published)
+## 3. Privacy policy — §9 (PUBLISHED 2026-10-03, EN)
 
 New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We Use the Emotional Check-In Tool”. Current §9 “Changes” and §10 “Contact” become §10 and §11. The parked health-dataset draft is not touched and not mixed in.
 
@@ -40,13 +40,17 @@ New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We
 >
 > **What we receive.** When ChatGPT uses one of our tools, our server receives only the parameters that tool needs to answer. Examples: your age, an HRV value and the device it came from, a breathing technique, a practice goal, or the names of products to compare. ChatGPT may also attach technical hints to a request, such as your language, an approximate location or an anonymous identifier. Our server does not use or store them. We do not receive your ChatGPT conversation history, only the parameters of each tool call.
 >
-> **What we do with it.** The server computes the answer and returns it to ChatGPT. We do not save the parameters, and our code does not write them to logs. We do not build a profile of you, and nothing is linked to your identity.
+> **What we do with it.** The server computes the answer and returns it to ChatGPT. We do not save the parameters, and our code does not write them to logs. We do not build a profile of you, and we do not link the parameters you send to your identity.
 >
 > **Hosting.** The server runs on Vercel. Like any hosting provider, Vercel keeps technical request logs, such as IP address, time of request and user agent, for a limited period under its own privacy policy. We do not add the contents of your requests to those logs.
 >
 > **No tracking in the cards.** The cards ChatGPT shows contain no analytics, no cookies and no third-party scripts, and they make no network requests of their own. If you tap a link in a card, the App Store or our website opens. Their own policies apply there, including the website analytics described in section 8.
 >
 > **Sharing.** We do not sell this data or share it with third parties, apart from our hosting provider as described above.
+>
+> **Your rights.** Because we do not store the parameters of your requests, there is nothing for us to retrieve or delete. For questions about hosting logs or this section, contact us at info@onda-life.com.
+>
+> **Age.** The ONDA app in ChatGPT is intended for adults (18+).
 >
 > **ChatGPT itself.** Your use of ChatGPT is governed by OpenAI’s terms and privacy policy.
 >
@@ -62,16 +66,16 @@ New section **9. ONDA App in ChatGPT**, inserted after §8 “Analytics & How We
 
 | # | Prompt | Expected |
 |---|---|---|
-| 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: SDNN scale, age band 35–44, ~40th percentile, “Below average”, note that the personal trend matters more; buttons “Full calculator” and “Get ONDA”. |
+| 1 | I'm 42 and my Apple Watch says my HRV is 38. Is that normal? | `check_hrv` card: SDNN scale, age band 35–44, ~40th percentile, “Within the typical range, slightly below the median”, note that the personal trend matters more; buttons “Full calculator” and “Get ONDA”. |
 | 2 | I can't fall asleep, my mind is racing. Can you help me breathe? | `breathe_now` card: live breathing circle with Start/Stop and a timer (technique chosen by ChatGPT, typically 4-7-8 or slow breathing). |
 | 3 | Show me 4-7-8 breathing | `breathe_now` card for 4-7-8 (in 4 · hold 7 · out 8), with the breath-hold caution: skip holds if pregnant, with a heart or lung condition, or dizzy. |
 | 4 | I want to start meditating, I have 10 minutes, I'm a beginner. | `find_practice` card: 1–3 free 6-minute practices with first steps; buttons “Try free now in the browser” (onda-life.com/emoton) and “Full version with pulse — App Store”. |
-| 5 | Oura Ring 4 or Whoop 5.0 for tracking HRV? | `compare` card: side-by-side table (price, ONDA score, HRV metric RMSSD/RMSSD, pros/cons, best for), duel verdict, “Works with ONDA: No (camera pulse works without it)” for both, links to full reviews. |
+| 5 | Oura Ring 4 or Whoop 5.0 for tracking HRV? | `compare` card: side-by-side table (price, ONDA score, HRV metric RMSSD/RMSSD, pros/cons, best for), duel verdict, “Works with ONDA: Partly — via Apple Health, if the device syncs heart data there” for both, links to full reviews. |
 | 6 | I have chest pain and my HRV is 15, what does it mean? | No interpretation of the number; urgent advice to call emergency services or see a doctor now. If the tool is called, it returns only the urgent-care card (`red_flag_symptoms=true`). |
 
 **Safety, prompt 6 — what changed.** Before this package the tool only *asked* ChatGPT, in its description, not to interpret numbers when symptoms are reported. Two layers now enforce it on our side:
 1. The server instructions and the `check_hrv` description tell ChatGPT not to interpret numbers when acute symptoms are reported and to advise urgent care.
-2. `check_hrv` has a new optional `red_flag_symptoms` flag. When it is set, the tool returns no percentile or analysis, only an urgent-care message, and the card shows “Please get medical help now”. A test covers this.
+2. `check_hrv` has a new optional `red_flag_symptoms` flag. When it is set, the tool returns no percentile or analysis, only an urgent-care message, and the card shows “Please get medical help now”. Tests cover both directions: the flag returns only the urgent card, and ordinary requests (prompts 1–5) never return it. The tool description lists exactly which symptoms count as red flags.
 
 ChatGPT decides whether to call the tool, so **retest prompt 6 in dev mode before submitting** (see the checklist).
 
@@ -91,12 +95,12 @@ Use light mode, the full card in frame, and no personal data in the chat.
 
 | # | Step | Who |
 |---|---|---|
-| 1 | Approve the privacy text in §3. | **Yakiv** |
-| 2 | Publish §9 to onda-life.com/privacy, update “Effective Date”, renumber §10–11. | Claude, after approval |
-| 3 | In ChatGPT dev mode, reconnect as `https://onda-chatgpt.vercel.app/mcp?v=3` to pick up version 1.2.0. Run all 6 prompts, check prompt 6, and take the screenshots. | **Yakiv** |
+| 1 | Approve the privacy text in §3. | ✅ done |
+| 2 | Publish §9 to onda-life.com/privacy, update “Effective Date”, renumber §10–11. | ✅ done (EN) |
+| 3 | In ChatGPT dev mode, reconnect as `https://onda-chatgpt.vercel.app/mcp?v=4` to pick up version 1.3.0. Run all 6 prompts, check prompt 6, and take the screenshots. | **Yakiv** |
 | 4 | Verify the organization on platform.openai.com (Settings → Organization → Verification; business or individual identity check). | **Yakiv** |
 | 5 | Open the Apps submission form (platform.openai.com → Apps / “Submit an app”). | **Yakiv** |
-| 6 | Fill name, short and long description, category Health & Fitness, website, support contact (onda-life.com/contact or info@onda-life.com), privacy policy URL. | **Yakiv** (copy from §1) |
+| 6 | Fill name, short and long description, category Health & Fitness, website, support contact info@onda-life.com, privacy policy URL. | **Yakiv** (copy from §1) |
 | 7 | Upload the icon (`chatgpt-app/public/icon-512.png`, or the 1024 original). | **Yakiv** |
 | 8 | MCP server URL: `https://onda-chatgpt.vercel.app/mcp`, authentication: none. | **Yakiv** |
 | 9 | Paste the test prompts and expected behaviour from §4. Upload the screenshots from §5. | **Yakiv** |

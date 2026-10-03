@@ -60,7 +60,7 @@ test('compare finds the duel page and never scores ONDA', async () => {
   const d = (await call('compare', { products: ['Oura Ring 4', 'Whoop 5.0'] })).result.structuredContent;
   assert.deepEqual(d.products.map((p) => p.slug), ['oura-ring-4', 'whoop-5-0']);
   assert.ok(d.duel);
-  assert.ok(d.products.every((p) => p.worksWithOnda === 'no'));
+  assert.ok(d.products.every((p) => p.worksWithOnda === 'partly'));
   const aw = (await call('compare', { products: ['Apple Watch 12', 'Whoop'] })).result.structuredContent;
   assert.equal(aw.products[0].worksWithOnda, 'yes');
   const own = (await call('compare', { products: ['ONDA', 'Calm'] })).result.structuredContent;
@@ -103,4 +103,29 @@ test('server manifest carries our own description and icon', async () => {
   const r = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'initialize', params: {} });
   assert.match(r.result.serverInfo.description, /^HRV norms by age/);
   assert.match(r.result.serverInfo.icons[0].src, /icon-512\.png$/);
+});
+
+test('ordinary requests (prompts 1-5) never return the urgent-care card', async () => {
+  const runs = [
+    ['check_hrv', { age: 42, hrv_ms: 38, device: 'apple_watch' }],
+    ['check_hrv', { age: 30, hrv_ms: 12, device: 'oura' }],
+    ['breathe_now', {}],
+    ['breathe_now', { technique: '478' }],
+    ['find_practice', { goal: 'calm', minutes: 10, experience: 'beginner' }],
+    ['compare', { products: ['Oura Ring 4', 'Whoop 5.0'] }],
+  ];
+  for (const [name, args] of runs) {
+    const r = (await call(name, args)).result;
+    assert.ok(!r.structuredContent.urgent, name);
+    assert.doesNotMatch(r.content[0].text, /get medical help now|emergency number/i, name);
+  }
+  const hrv = (await call('check_hrv', { age: 42, hrv_ms: 38, device: 'apple_watch', red_flag_symptoms: false })).result.structuredContent;
+  assert.equal(hrv.urgent, undefined);
+  assert.equal(hrv.tierLabel, 'Within the typical range, slightly below the median');
+});
+
+test('tier wording: below average only under the 25th percentile', async () => {
+  const lo = (await call('check_hrv', { age: 42, hrv_ms: 24, device: 'apple_watch' })).result.structuredContent;
+  assert.ok(lo.percentile < 25);
+  assert.equal(lo.tierLabel, 'Below average');
 });

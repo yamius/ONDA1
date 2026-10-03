@@ -28,6 +28,15 @@ const READ_ONLY = { readOnlyHint: true, destructiveHint: false, openWorldHint: f
 
 // ───────────────────────────────────────────────────────────── check_hrv ───
 
+/** Card wording: only below the 25th percentile reads as "below average". */
+function tierLabel(p) {
+  if (p < 25) return 'Below average';
+  if (p < 50) return 'Within the typical range, slightly below the median';
+  if (p <= 75) return 'Within the typical range';
+  if (p <= 90) return 'Above average';
+  return 'Top range for your age';
+}
+
 const DEVICE_METRIC = {
   apple_watch: 'sdnn',
   oura: 'rmssd',
@@ -46,7 +55,9 @@ export const checkHrv = {
     'Compare one heart rate variability (HRV) number with population norms for the person’s age. ' +
     'Use when someone asks whether their HRV is normal, good or low for their age. ' +
     'Apple Watch reports SDNN; Oura, Whoop, Garmin, Fitbit and Polar apps report RMSSD — the tool picks the right table from the device. ' +
-    'If the person reports acute symptoms (chest pain, fainting, severe breathlessness, a racing heart that does not settle), do not interpret any number: tell them to seek urgent medical help; if you call this tool at all, set red_flag_symptoms=true.',
+    'Red-flag symptoms are ONLY: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. ' +
+    'If the person reports any of these, do not interpret any number: tell them to seek urgent medical help, and if you call this tool, set red_flag_symptoms=true. ' +
+    'Do NOT set it for ordinary questions about sleep, stress, tiredness, training or a low number on its own.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -60,7 +71,7 @@ export const checkHrv = {
       red_flag_symptoms: {
         type: 'boolean',
         description:
-          'true if the person mentions chest pain, fainting, severe shortness of breath, a racing or irregular heartbeat that does not settle, or similar acute symptoms. The tool then returns only urgent-care guidance, no interpretation.',
+          'true ONLY if the person reports a red-flag symptom listed in the tool description (chest pain/pressure, fainting, severe shortness of breath, racing or irregular heartbeat that does not settle, new confusion/one-sided weakness/trouble speaking). Omit otherwise. When true, the tool returns only urgent-care guidance.',
       },
     },
     required: ['age', 'hrv_ms', 'device'],
@@ -82,6 +93,7 @@ export const checkHrv = {
       throw new Error('age must be 18–100 and hrv_ms 3–300');
     }
     const r = interpretHrv(Number(age), value, metric);
+    const label = tierLabel(r.percentile);
     const out = {
       age: Number(age),
       value,
@@ -90,7 +102,7 @@ export const checkHrv = {
       ageBand: r.band.label,
       percentile: r.percentile,
       tier: r.tier,
-      tierLabel: r.tierLabel,
+      tierLabel: label,
       summary: r.summary,
       band: { p10: r.band.p10, p25: r.band.p25, p50: r.band.p50, p75: r.band.p75, p90: r.band.p90 },
       allBands: bandsFor(metric).map((b) => ({ label: b.label, p50: b.p50 })),
@@ -108,7 +120,7 @@ export const checkHrv = {
     };
     return {
       structuredContent: out,
-      text: `${value} ms (${out.metric}) at age ${out.age}: about the ${ordinal(r.percentile)} percentile for ${r.band.label} — ${r.tierLabel}. ${r.summary}`,
+      text: `${value} ms (${out.metric}) at age ${out.age}: about the ${ordinal(r.percentile)} percentile for ${r.band.label} — ${label}. ${r.summary}`,
     };
   },
 };
@@ -358,7 +370,7 @@ export const compare = {
         : null,
       bridge: rows.some((r) => r.worksWithOnda !== 'not-a-device')
         ? {
-            text: 'ONDA reads HRV from Apple Watch only. Without it, ONDA measures your pulse with the iPhone camera.',
+            text: 'ONDA builds your personal baseline from Apple Health — Apple Watch, or another device that syncs heart data there. No device? ONDA measures your pulse with the iPhone camera.',
             url: appStoreUrl('chatgpt_compare'),
           }
         : null,

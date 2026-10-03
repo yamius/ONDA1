@@ -130,7 +130,7 @@ th,td{text-align:left;vertical-align:top;padding:8px;border-top:1px solid var(--
 thead td{font-weight:700;border-top:0}.win{font-weight:700}.pill{display:inline-block;padding:1px 8px;border-radius:999px;background:var(--soft);font-size:12px}
 ul{margin:0;padding-left:16px}`,
   `<div class="card" id="root"></div>`,
-  `const WORKS = { yes: 'Yes — HRV + baseline', no: 'No (camera pulse works without it)', 'not-a-device': '—' };
+  `const WORKS = { yes: 'Yes — HRV, baseline and coherence', partly: 'Partly — via Apple Health, if the device syncs heart data there', 'not-a-device': '—' };
 boot((d) => {
   const P = d.products;
   const cell = (f) => P.map((p) => '<td>' + f(p) + '</td>').join('');
