@@ -17,7 +17,7 @@ export const SHORT_DESCRIPTION = 'HRV norms by age, guided breathing, free pract
 const SERVER_INFO = {
   name: 'onda-life',
   title: 'ONDA Life',
-  version: '1.4.0',
+  version: '1.5.0',
   description: SHORT_DESCRIPTION,
   websiteUrl: 'https://onda-life.com',
   icons: [{ src: 'https://onda-chatgpt.vercel.app/icon-512.png', mimeType: 'image/png', sizes: ['512x512'] }],
@@ -35,6 +35,7 @@ function toolDescriptor(t) {
     title: t.title,
     description: t.description,
     inputSchema: t.inputSchema,
+    outputSchema: t.outputSchema,
     annotations: t.annotations,
     _meta: {
       ui: { resourceUri: w.uri },

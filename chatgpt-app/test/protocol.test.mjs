@@ -165,3 +165,41 @@ test('invalid input returns an actionable message without the values', async () 
   const c = (await call('compare', { products: ['Oura'] })).result;
   assert.match(c.content[0].text, /2 or 3 product names/);
 });
+
+// Minimal JSON-schema check (type, enum, required, nested properties/items) — enough for our shapes.
+function check(schema, v, path = '$') {
+  const types = [].concat(schema.type || []);
+  const actual = v === null ? 'null' : Array.isArray(v) ? 'array' : Number.isInteger(v) ? 'number' : typeof v;
+  if (types.length && !types.includes(actual)) throw new Error(`${path}: ${actual} not in ${types}`);
+  if (schema.enum && !schema.enum.includes(v)) throw new Error(`${path}: ${v} not in enum`);
+  if (actual === 'object') {
+    for (const r of schema.required || []) if (!(r in v)) throw new Error(`${path}.${r} missing`);
+    for (const [k, s] of Object.entries(schema.properties || {})) if (k in v && v[k] !== undefined) check(s, v[k], `${path}.${k}`);
+  }
+  if (actual === 'array' && schema.items) v.forEach((x, i) => check(schema.items, x, `${path}[${i}]`));
+}
+
+test('every tool declares an outputSchema and its structuredContent matches it', async () => {
+  const { result } = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'tools/list' });
+  const schema = Object.fromEntries(result.tools.map((t) => [t.name, t.outputSchema]));
+  for (const t of result.tools) assert.equal(t.outputSchema?.type, 'object', t.name);
+  const runs = [
+    ['check_hrv', { age: 42, hrv_ms: 38, device: 'apple_watch' }],
+    ['check_hrv', { age: 50, hrv_ms: 15, device: 'oura', red_flag_symptoms: true }],
+    ['breathe_now', { technique: '478' }],
+    ['find_practice', { goal: 'sleep', minutes: 3 }],
+    ['compare', { products: ['Oura Ring 4', 'Whoop 5.0'], priority: 'hrv' }],
+    ['compare', { products: ['ONDA', 'Calm'] }],
+  ];
+  for (const [name, args] of runs) check(schema[name], (await call(name, args)).result.structuredContent, name);
+});
+
+test('descriptions start with the ONDA Life name and carry one "Use for:" line', async () => {
+  const { result } = await handleRpc({ jsonrpc: '2.0', id: 1, method: 'tools/list' });
+  for (const t of result.tools) {
+    assert.match(t.description, /^ONDA Life — /, t.name);
+    assert.equal((t.description.match(/Use for:/g) || []).length, 1, t.name);
+    const phrases = t.description.split('Use for:')[1].split(/\.\s/)[0].split(';').length;
+    assert.ok(phrases >= 5 && phrases <= 8, `${t.name}: ${phrases} phrases`);
+  }
+});

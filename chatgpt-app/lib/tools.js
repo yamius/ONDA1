@@ -56,11 +56,12 @@ export const checkHrv = {
   title: 'Check HRV for your age',
   widget: 'hrv',
   description:
-    'Compares one heart rate variability (HRV) value with population norms for the person’s age and shows a percentile scale. ' +
-    'For questions like “is my HRV normal for my age?”. Apple Watch reports SDNN; Oura, Whoop, Garmin, Fitbit and Polar apps report RMSSD — the tool picks the matching table from the device. ' +
-    'Not a medical assessment. The optional red_flag_symptoms flag covers only acute symptoms: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; ' +
-    'a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. When the flag is true the tool returns urgent-care guidance only and no interpretation of the number. ' +
-    'The flag does not apply to ordinary questions about sleep, stress, tiredness, training or a low value on its own.',
+    "ONDA Life — HRV norms by age: compares one heart rate variability (HRV) value with population norms for the person’s age and shows a percentile scale. " +
+    "Apple Watch reports SDNN; Oura, Whoop, Garmin, Fitbit and Polar report RMSSD — the tool picks the matching table from the device. Not a medical assessment. " +
+    "Use for: is my HRV normal; good HRV for my age; low HRV for my age; Apple Watch HRV meaning; Oura or Whoop HRV score; heart rate variability by age. " +
+    "The optional red_flag_symptoms flag covers only acute symptoms: chest pain or pressure; fainting or nearly fainting; severe shortness of breath; " +
+    "a racing, pounding or irregular heartbeat that does not settle at rest; new confusion, weakness on one side or trouble speaking. " +
+    "When the flag is true the tool returns urgent-care guidance only and no interpretation. It does not apply to ordinary questions about sleep, stress, tiredness, training or a low value on its own.",
   inputSchema: {
     type: 'object',
     properties: {
@@ -80,6 +81,7 @@ export const checkHrv = {
     required: ['age', 'hrv_ms', 'device'],
     additionalProperties: false,
   },
+  outputSchema: {"type":"object","description":"Either the HRV interpretation, or { urgent: true, message } when red_flag_symptoms is true.","properties":{"urgent":{"type":"boolean"},"message":{"type":"string"},"age":{"type":"number"},"value":{"type":"number"},"metric":{"type":"string","enum":["SDNN","RMSSD"]},"device":{"type":"string"},"ageBand":{"type":"string"},"percentile":{"type":"number"},"tier":{"type":"string"},"tierLabel":{"type":"string"},"summary":{"type":"string"},"band":{"type":"object","properties":{"p10":{"type":"number"},"p25":{"type":"number"},"p50":{"type":"number"},"p75":{"type":"number"},"p90":{"type":"number"}},"required":[]},"allBands":{"type":"array","items":{"type":"object","properties":{"label":{"type":"string"},"p50":{"type":"number"}},"required":[]}},"trendNote":{"type":"string"},"metricNote":{"type":"string"},"bridge":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"learnMore":{"type":"string"},"safety":{"type":"string"}}},
   annotations: annotations('Check HRV for your age'),
   invoking: 'Checking HRV norms…',
   invoked: 'HRV checked',
@@ -146,10 +148,10 @@ export const breatheNow = {
   title: 'Breathe now',
   widget: 'breathe',
   description:
-    'Shows a live animated breathing guide with a timer in the conversation. ' +
-    'For requests to calm down, wind down before sleep, settle nerves before an event, or learn a breathing technique. ' +
-    'Techniques: coherent (slow, even breathing; default), 478 (4-7-8, often used before sleep), box, sigh (physiological sigh, a quick reset), calming (longer exhale). ' +
-    'A relaxation exercise, not a treatment for breathlessness caused by illness.',
+    "ONDA Life — guided breathing: shows a live animated breathing guide with a timer in the conversation. " +
+    "Techniques: coherent (slow, even breathing; default), 478 (4-7-8, often used before sleep), box, sigh (physiological sigh, a quick reset), calming (longer exhale). " +
+    "Use for: breathing exercise to calm down; can’t sleep; feeling anxious or nervous before a meeting; 4-7-8 breathing; box breathing; physiological sigh; a quick way to relax. " +
+    "A relaxation exercise, not a treatment for breathlessness caused by illness.",
   inputSchema: {
     type: 'object',
     properties: {
@@ -158,6 +160,7 @@ export const breatheNow = {
     },
     additionalProperties: false,
   },
+  outputSchema: {"type":"object","properties":{"technique":{"type":"string"},"name":{"type":"string"},"how":{"type":"string"},"goodFor":{"type":"string"},"minutes":{"type":"number"},"phases":{"type":"array","items":{"type":"object","properties":{"kind":{"type":"string","enum":["in","topup","hold","out"]},"seconds":{"type":"number"},"scale":{"type":"number"}},"required":[]}},"caution":{"type":"string"},"bridge":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"learnMore":{"type":"string"}},"required":["technique","name","minutes","phases"]},
   annotations: annotations('Breathe now'),
   invoking: 'Preparing a breathing guide…',
   invoked: 'Breathing guide ready',
@@ -203,8 +206,8 @@ export const findPractice = {
   title: 'Find an ONDA practice',
   widget: 'practice',
   description:
-    'Suggests 1–3 short guided practices (6 minutes each) from ONDA’s free set, matched to a goal (calm, sleep, focus or energy), experience and position. ' +
-    'For requests like “I want to start meditating” or “something short to help me sleep”. Each practice can be played free in the browser.',
+    "ONDA Life — short guided practices: suggests 1–3 free 6-minute practices matched to a goal (calm, sleep, focus or energy), experience and position; each can be played free in the browser. " +
+    "Use for: how to start meditating; short meditation for beginners; something to help me sleep; a quick practice for stress or anxiety; focus before work; an energy boost when tired; mindfulness exercise.",
   inputSchema: {
     type: 'object',
     properties: {
@@ -216,6 +219,7 @@ export const findPractice = {
     required: ['goal'],
     additionalProperties: false,
   },
+  outputSchema: {"type":"object","properties":{"goal":{"type":"string"},"practices":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"name":{"type":"string"},"emoji":{"type":"string"},"minutes":{"type":"number"},"why":{"type":"string"},"firstSteps":{"type":"array","items":{"type":"string"}},"position":{"type":"string"}},"required":[]}},"timeNote":{"type":["string","null"]},"tryFree":{"type":"object","properties":{"text":{"type":"string"},"url":{"type":"string"}},"required":["url"]},"bridge":{"type":"object","properties":{"button":{"type":"string"},"text":{"type":"string"},"url":{"type":"string"}},"required":[]}},"required":["goal","practices"]},
   annotations: annotations('Find an ONDA practice'),
   invoking: 'Finding a practice…',
   invoked: 'Practices found',
@@ -306,10 +310,11 @@ export const compare = {
   title: 'Compare devices or apps',
   widget: 'compare',
   description:
-    'Compares 2–3 wellness devices or apps side by side using ONDA’s editorial reviews (onda-life.com/reviews): ' +
-    'price, subscription, which HRV metric they report, score, verdict and a link to the full review. ' +
-    'Covers HRV wearables (Oura, Whoop, Apple Watch, Garmin, Polar, smart rings), meditation, sleep and breathwork apps, CGMs, EEG headsets, red light, saunas, cold plunges and more. ' +
-    'For “X or Y?” and “X vs Y” questions. Products without an ONDA review are listed as not reviewed.',
+    "ONDA Life — wearable and wellness-app comparisons: puts 2–3 products side by side from ONDA’s editorial reviews (onda-life.com/reviews): " +
+    "price, subscription, which HRV metric they report, score, verdict and a link to the full review. " +
+    "Covers HRV wearables (Oura, Whoop, Apple Watch, Garmin, Polar, smart rings), meditation, sleep and breathwork apps, CGMs, EEG headsets, red light, saunas, cold plunges and more. " +
+    "Use for: Oura vs Whoop; which smart ring to buy; Apple Watch or Garmin for HRV; best HRV tracker; Calm or Headspace; which meditation app; compare sleep trackers. " +
+    "Products without an ONDA review are listed as not reviewed.",
   inputSchema: {
     type: 'object',
     properties: {
@@ -325,6 +330,7 @@ export const compare = {
     required: ['products'],
     additionalProperties: false,
   },
+  outputSchema: {"type":"object","properties":{"products":{"type":"array","items":{"type":"object","properties":{"slug":{"type":"string"},"name":{"type":"string"},"type":{"type":"string"},"priceUsd":{"type":["number","null"]},"priceNote":{"type":["string","null"]},"priceAsOf":{"type":["string","null"]},"score":{"type":"number"},"hrvMetric":{"type":["string","null"]},"verdict":{"type":"string"},"bestFor":{"type":"string"},"pros":{"type":"array","items":{"type":"string"}},"cons":{"type":"array","items":{"type":"string"}},"focus":{"type":"array","items":{"type":"object","properties":{"id":{"type":"string"},"score":{"type":"number"},"note":{"type":"string"}},"required":[]}},"worksWithOnda":{"type":"string","enum":["yes","partly","not-a-device"]},"worksWithOndaNote":{"type":["string","null"]},"reviewUrl":{"type":"string"},"assessed":{"type":"string"}},"required":[]}},"duel":{"type":["object","null"]},"notFound":{"type":"array","items":{"type":"string"}},"ownProductNote":{"type":["string","null"]},"bridge":{"type":["object","null"]},"source":{"type":"string"}},"required":["products","notFound"]},
   annotations: annotations('Compare devices or apps'),
   invoking: 'Pulling ONDA reviews…',
   invoked: 'Comparison ready',
