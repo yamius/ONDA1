@@ -51,3 +51,13 @@ Capacitor синхронится в CI. Проверка ошибок — в л�
 ## Критические файлы (не трогать без согласования)
 `src/onda-level1-demo_27.tsx` · `src/hooks/useVitals.ts` · `src/utils/ondCalculator.ts` ·
 `ios/App/` (нативный iOS) · `supabase/functions/` (Edge Functions).
+
+## Исключение: ветка `science-content` (научный раздел, автор — Mistral)
+
+- Ветка `science-content` — **единственное** исключение из правила «только `main`».
+- В ней разрешено менять **только** файлы страниц научного раздела:
+  `landing/content/science/{concepts,measurements,mechanisms,evidence}/<slug>.md`.
+- Нельзя: код, `facts.ts`, шаблон, глоссарий, статьи, `vercel.json`, `chatgpt-app/`, любые другие файлы.
+  Это проверяет `landing/scripts/check-science-content.ts --diff` и GitHub Action `science-content.yml`.
+- Сливает в `main` только Claude Code после ручной проверки (чек-лист в `landing/docs/science-authoring.md`).
+- Правила написания: `landing/docs/science-authoring.md`.

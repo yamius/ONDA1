@@ -1,0 +1,36 @@
+name: Science content checks
+
+# Runs on every push to the science-content branch (Mistral-authored pages) and on PRs into main from it.
+on:
+  push:
+    branches: [science-content]
+  pull_request:
+    branches: [main]
+    paths: ['landing/content/science/**']
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: landing
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - run: git fetch origin main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: landing/package-lock.json
+      - run: npm ci
+      # 1–6: format, DOI/PMID exist (Crossref/PubMed), numbers only via {{fact:}}, banned wording, links;
+      # 7: only allowed files changed vs main
+      - name: Science content gate
+        run: npx tsx scripts/check-science-content.ts --diff
+      # Full site build incl. prerender + validate-seo (fails on invalid JSON-LD / canonical / hreflang)
+      - name: Build and validate-seo
+        run: npm run build
+        env:
+          INDEXNOW_DISABLED: '1'

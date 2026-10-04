@@ -56,6 +56,16 @@ ONDA — приложение для медитации и осознаннос�
 - ✅ Работай ТОЛЬКО в `main`
 - ✅ Коммить и пушь напрямую в `main`
 
+## Исключение: ветка `science-content` (научный раздел, автор — Mistral)
+
+- Ветка `science-content` — **единственное** исключение из правила «только `main`».
+- В ней разрешено менять **только** файлы страниц научного раздела:
+  `landing/content/science/{concepts,measurements,mechanisms,evidence}/<slug>.md`.
+- Нельзя: код, `facts.ts`, шаблон, глоссарий, статьи, `vercel.json`, `chatgpt-app/`, любые другие файлы.
+  Это проверяет `landing/scripts/check-science-content.ts --diff` и GitHub Action `science-content.yml`.
+- Сливает в `main` только Claude Code после ручной проверки (чек-лист в `landing/docs/science-authoring.md`).
+- Правила написания: `landing/docs/science-authoring.md`.
+
 ## Git: параллельные чаты (ОБЯЗАТЕЛЬНО)
 
 Пользователь работает с тобой одновременно в **нескольких чатах** в одной worktree.
