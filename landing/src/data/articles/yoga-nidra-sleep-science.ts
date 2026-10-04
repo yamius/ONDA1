@@ -46,7 +46,7 @@ Much of this research is small, and Yoga Nidra is often studied as part of a lar
 
 ## Why it works for a racing mind
 
-Insomnia is often a problem of arousal, not tiredness — the body is exhausted but the nervous system won't switch off, and the mind loops. Yoga Nidra targets arousal directly. The body scan pulls attention out of anxious thought and into neutral physical sensation; the slow breathing engages the vagus nerve; the guided structure gives the busy mind a track to follow instead of its worries. It's the opposite of "trying" to sleep — which, as anyone with insomnia knows, only makes it worse.
+Insomnia is often a problem of arousal, not tiredness — the body is exhausted but the nervous system won't switch off, and the mind loops. Yoga Nidra targets arousal directly. The body scan pulls attention out of anxious thought and into neutral physical sensation; the slow breathing is associated with higher vagally mediated HRV; the guided structure gives the busy mind a track to follow instead of its worries. It's the opposite of "trying" to sleep — which, as anyone with insomnia knows, only makes it worse.
 
 ## How to practice Yoga Nidra for sleep
 

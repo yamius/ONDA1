@@ -280,7 +280,7 @@
           "bullets": [
             {
               "label": "Wolny oddech",
-              "text": "Wolne oddychanie, około 5–7 oddechów na minutę ze swobodnym, dłuższym wydechem, to dobrze zbadany sposób uspokojenia ciała u większości osób."
+              "text": "Wolne oddychanie, około 5,5–6 oddechów na minutę (indywidualnie ok. 4,5–7) ze swobodnym, dłuższym wydechem, to dobrze zbadany sposób uspokojenia ciała u większości osób."
             },
             {
               "label": "Postawa i bezruch",
@@ -563,7 +563,7 @@
         },
         {
           "heading": "Typowe zakresy i co na nie wpływa",
-          "body": "Spoczynkowe RMSSD u zdrowych dorosłych bardzo się różni, często mniej więcej 20–80 ms; zwykle jest wyższe u osób młodszych i sprawniejszych, a z wiekiem spada. Zazwyczaj obniża się po złym śnie, alkoholu, chorobie, intensywnym treningu lub ostrym stresie, a rośnie przy dobrej regeneracji. Różnice między ludźmi są duże, więc Twój własny trend jest ważniejszy niż porównanie z innymi.",
+          "body": "Przy krótkich pomiarach w ciągu dnia, takich jak ten, spoczynkowe RMSSD u zdrowych dorosłych bardzo się różni, często mniej więcej 20–80 ms. Liczą się wiek i pora dnia: zwykle jest wyższe u osób młodszych i sprawniejszych, a z wiekiem spada, a nocne wartości z zegarka są zwykle wyższe niż dzienne pomiary punktowe. Zobacz [normy HRV według wieku](/articles/normal-hrv-by-age) albo wypróbuj [narzędzie HRV](/tools/hrv). Zazwyczaj obniża się po złym śnie, alkoholu, chorobie, intensywnym treningu lub ostrym stresie, a rośnie przy dobrej regeneracji. Różnice między ludźmi są duże, więc Twój własny trend jest ważniejszy niż porównanie z innymi.",
           "bullets": [
             {
               "label": "Wyżej niż zwykle",
@@ -746,7 +746,7 @@
         },
         {
           "heading": "Dlaczego wolny oddech jest popularny",
-          "body": "Wolne oddychanie, często około 5–7 oddechów na minutę ze swobodnym, dłuższym wydechem, zwykle zwiększa wahania tętna podążające za każdym oddechem i wiąże się z poczuciem spokoju. To technika o niskim ryzyku i dobrze zbadana. Jeśli zakręci Ci się w głowie, wróć do normalnego oddechu."
+          "body": "Wolne oddychanie, często około 5,5–6 oddechów na minutę (indywidualnie ok. 4,5–7) ze swobodnym, dłuższym wydechem, zwykle zwiększa wahania tętna podążające za każdym oddechem i wiąże się z poczuciem spokoju. To technika o niskim ryzyku i dobrze zbadana. Jeśli zakręci Ci się w głowie, wróć do normalnego oddechu."
         },
         {
           "heading": "Wskazówki dla lepszego odczytu",

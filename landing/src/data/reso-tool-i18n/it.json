@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Home", "tools": "Strumenti", "current": "Respirazione di risonanza" },
   "h1": "Respirazione di risonanza",
-  "capsule": "La respirazione di risonanza consiste nel respirare in modo lento e regolare al tuo ritmo personale — di solito tra 4,5 e 6,5 respiri al minuto — in cui ritmo cardiaco e respiro vanno al passo e la variabilità della frequenza cardiaca (HRV) oscilla al massimo. Scegli un ritmo, premi avvio e respira seguendo il cerchio; prova ogni ritmo per circa 2 minuti e tieni quello che ti sembra più fluido.",
+  "capsule": "La respirazione di risonanza consiste nel respirare in modo lento e regolare al tuo ritmo personale — di solito circa 4,5–7 respiri al minuto — in cui ritmo cardiaco e respiro vanno al passo e la variabilità della frequenza cardiaca (HRV) oscilla al massimo. Scegli un ritmo, premi avvio e respira seguendo il cerchio; prova ogni ritmo per circa 2 minuti e tieni quello che ti sembra più fluido.",
   "imageAlt": "Pacer per la respirazione di risonanza — respira col cerchio a 4,5–6,5 respiri al minuto, strumento gratuito di ONDA Life",
   "ui": {
     "height": "Altezza (cm) — facoltativa",
@@ -46,7 +46,7 @@
   "sections": [
     {
       "h2": "Che cos'è la respirazione a frequenza di risonanza?",
-      "body": "Ogni persona ha un ritmo respiratorio lento in cui ritmo cardiaco, respiro e baroriflesso — il circuito con cui il corpo regola la pressione — si muovono all'unisono. A questa frequenza di risonanza il battito accelera a ogni inspirazione e rallenta a ogni espirazione con l'oscillazione più ampia possibile, ed è per questo che l'HRV raggiunge il picco (Lehrer 2003). Per la maggior parte degli adulti si trova tra 4,5 e 6,5 respiri al minuto. Respirare a questo ritmo è la tecnica centrale del biofeedback HRV, usata nella ricerca su stress, ansia e pressione arteriosa."
+      "body": "Ogni persona ha un ritmo respiratorio lento in cui ritmo cardiaco, respiro e baroriflesso — il circuito con cui il corpo regola la pressione — si muovono all'unisono. A questa frequenza di risonanza il battito accelera a ogni inspirazione e rallenta a ogni espirazione con l'oscillazione più ampia possibile, ed è per questo che l'HRV raggiunge il picco (Lehrer 2003). Per la maggior parte degli adulti si trova a circa 4,5–7 respiri al minuto. Respirare a questo ritmo è la tecnica centrale del biofeedback HRV, usata nella ricerca su stress, ansia e pressione arteriosa."
     },
     {
       "h2": "Respirazione di risonanza e respirazione coerente",
@@ -63,7 +63,7 @@
   ],
   "faqTitle": "Respirazione di risonanza — domande frequenti",
   "faq": [
-    { "q": "Che cos'è la respirazione a frequenza di risonanza?", "a": "Respirare lentamente al tuo ritmo personale — di solito 4,5–6,5 respiri al minuto — in cui ritmo cardiaco e respiro vanno al passo e l'HRV oscilla al massimo. È la tecnica centrale del biofeedback HRV." },
+    { "q": "Che cos'è la respirazione a frequenza di risonanza?", "a": "Respirare lentamente al tuo ritmo personale — di solito circa 4,5–7 respiri al minuto — in cui ritmo cardiaco e respiro vanno al passo e l'HRV oscilla al massimo. È la tecnica centrale del biofeedback HRV." },
     { "q": "Come trovo il mio ritmo di risonanza?", "a": "Respira circa 2 minuti ciascuno a 6,5, 6,0, 5,5, 5,0 e 4,5 respiri al minuto e tieni il ritmo più fluido. Con un dispositivo che mostra l'HRV battito per battito, scegli il ritmo con le onde della frequenza cardiaca più ampie e regolari." },
     { "q": "La respirazione di risonanza è uguale alla respirazione coerente?", "a": "Quasi. La respirazione coerente usa un ritmo fisso di circa 5–6 respiri al minuto; la respirazione di risonanza lo personalizza sul tuo corpo." },
     { "q": "L'altezza influisce sulla frequenza di risonanza?", "a": "Le persone più alte e gli uomini tendono ad avere un ritmo di risonanza leggermente più lento, per questo lo strumento propone un punto di partenza basato sull'altezza. È solo un'indicazione: prova i ritmi per trovare il tuo." },
@@ -71,7 +71,7 @@
     { "q": "La respirazione di risonanza aumenta l'HRV?", "a": "Sì, l'HRV aumenta mentre respiri a questo ritmo, e la pratica regolare è associata a una migliore funzione del baroriflesso e a un umore più sereno. Affianca le cure mediche, ma non le sostituisce." }
   ],
   "sourcesTitle": "Fonti e metodologia",
-  "methodology": "A un ritmo personale — di solito 4,5–6,5 respiri al minuto — le oscillazioni della frequenza cardiaca, il respiro e il baroriflesso entrano in fase e l'ampiezza dell'HRV raggiunge il picco (Lehrer 2003). Il metodo standard per trovarlo è respirare a ciascun ritmo per un paio di minuti e misurare quale produce le oscillazioni cardiache più ampie e regolari (Shaffer 2020). Senza sensore, il ritmo che risulta più fluido e calmante è una scelta ragionevole. Il suggerimento basato sull'altezza è solo un punto di partenza indicativo. Strumento educativo, non un dispositivo medico.",
+  "methodology": "A un ritmo personale — di solito circa 4,5–7 respiri al minuto — le oscillazioni della frequenza cardiaca, il respiro e il baroriflesso entrano in fase e l'ampiezza dell'HRV raggiunge il picco (Lehrer 2003). Il metodo standard per trovarlo è respirare a ciascun ritmo per un paio di minuti e misurare quale produce le oscillazioni cardiache più ampie e regolari (Shaffer 2020). Senza sensore, il ritmo che risulta più fluido e calmante è una scelta ragionevole. Il suggerimento basato sull'altezza è solo un punto di partenza indicativo. Strumento educativo, non un dispositivo medico.",
   "sourcesContributes": [
     "Lavoro fondativo che ha definito il concetto di frequenza di risonanza e il suo meccanismo baroriflesso.",
     "Il protocollo per trovare la frequenza di risonanza individuale provando una serie di ritmi respiratori.",

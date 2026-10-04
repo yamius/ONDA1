@@ -54,7 +54,7 @@ This is why a fixed "4-7-8" or "inhale 5, exhale 5" rule works for some people a
 
 ## Section 3: How can you find your resonance breathing rate without a device?
 
-You can get close by feel. Try breathing at a few slow paces, holding each for a minute or two, and notice which one feels the most effortless and settling — the pace where the breath seems to "carry itself" and your body drops into calm with the least effort. Sweep through roughly 4.5, 5, 5.5, 6 and 6.5 breaths a minute (a breath every ~13, 12, 11, 10 and 9 seconds), bias the exhale a little longer than the inhale, and pay attention to which rate your body likes best.
+You can get close by feel. Try breathing at a few slow paces, holding each for a minute or two, and notice which one feels the most effortless and settling — the pace where the breath seems to "carry itself" and your body drops into calm with the least effort. Individual resonance rates span about 4.5–7 breaths per minute, so sweep through roughly 4.5, 5, 5.5, 6, 6.5 and 7 breaths a minute (a breath every ~13, 12, 11, 10, 9 and 8.5 seconds), bias the exhale a little longer than the inhale, and pay attention to which rate your body likes best.
 
 That felt sense gets you into the right neighbourhood. It won't pinpoint the exact address — for that you need to see the signal.
 

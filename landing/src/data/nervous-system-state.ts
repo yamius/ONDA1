@@ -145,13 +145,13 @@ export const NS_SOURCES: ScienceSource[] = [
     year: 2018,
     title: 'Breath of life: the respiratory vagal stimulation model of contemplative activity',
     journal: 'Frontiers in Human Neuroscience, 12:397',
-    contributes: 'Mechanism for why slow, exhale-emphasised breathing stimulates the vagus and shifts state — the basis of the protocols.',
+    contributes: 'Evidence that slow, exhale-emphasised breathing is associated with higher vagally mediated HRV while you practise and shifts state — the basis of the protocols.',
     url: 'https://doi.org/10.3389/fnhum.2018.00397',
   },
 ]
 
 export const NS_METHODOLOGY =
-  'This check estimates your balance between two kinds of dysregulation — sympathetic activation (fight-or-flight) and a dorsal/shutdown pattern — against a regulated, calm-and-connected state, scoring each on its own scale. The "vagal states" language comes from polyvagal theory (Porges 2009); its broad map is widely used in therapy, though some of its finer evolutionary and anatomical claims are debated, so we treat the states as a practical lens, not settled fact. What is well supported is the actionable part: vagal tone (indexed by HRV) tracks self-regulation (Laborde 2017), and slow, long-exhale breathing stimulates the vagus and shifts state (Gerritsen & Band 2018). It is an educational self-awareness tool, not a diagnosis — and a persistent shutdown pattern, low mood or hopelessness is a reason to seek professional support.'
+  'This check estimates your balance between two kinds of dysregulation — sympathetic activation (fight-or-flight) and a dorsal/shutdown pattern — against a regulated, calm-and-connected state, scoring each on its own scale. The "vagal states" language comes from polyvagal theory (Porges 2009); its broad map is widely used in therapy, though some of its finer evolutionary and anatomical claims are debated, so we treat the states as a practical lens, not settled fact. What is well supported is the actionable part: vagal tone (indexed by HRV) tracks self-regulation (Laborde 2017), and slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise and shifts state (Gerritsen & Band 2018). It is an educational self-awareness tool, not a diagnosis — and a persistent shutdown pattern, low mood or hopelessness is a reason to seek professional support.'
 
 export const NS_FAQ: Array<{ q: string; a: string }> = [
   {
@@ -160,7 +160,7 @@ export const NS_FAQ: Array<{ q: string; a: string }> = [
   },
   {
     q: 'How do I get out of fight-or-flight?',
-    a: 'You can’t reason your way calm, but you can breathe and move your way there. The fastest lever is a longer exhale — slow, extended-exhale or 4-7-8 breathing stimulates the vagus nerve and shifts you toward calm (Gerritsen & Band 2018). Light movement to discharge stress chemistry, cutting caffeine and screens, and a cool splash of water to the face all help too.',
+    a: 'You can’t reason your way calm, but you can breathe and move your way there. The fastest lever is a longer exhale — slow, extended-exhale or 4-7-8 breathing is associated with higher vagally mediated HRV while you practise and shifts you toward calm (Gerritsen & Band 2018). Light movement to discharge stress chemistry, cutting caffeine and screens, and a cool splash of water to the face all help too.',
   },
   {
     q: 'What if I’m in shutdown rather than wired?',

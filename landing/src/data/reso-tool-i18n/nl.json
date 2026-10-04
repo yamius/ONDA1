@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Resonantieademhaling" },
   "h1": "Resonantieademhaling",
-  "capsule": "Resonantieademhaling betekent langzaam en gelijkmatig ademen op je persoonlijke ritme — meestal tussen 4,5 en 6,5 ademhalingen per minuut — waarbij hartritme en ademhaling in de pas lopen en de hartslagvariabiliteit (HRV) het sterkst schommelt. Kies een ritme, druk op start en adem mee met de cirkel; probeer elk ritme ongeveer 2 minuten en houd het ritme aan dat het soepelst voelt.",
+  "capsule": "Resonantieademhaling betekent langzaam en gelijkmatig ademen op je persoonlijke ritme — meestal ongeveer 4,5–7 ademhalingen per minuut — waarbij hartritme en ademhaling in de pas lopen en de hartslagvariabiliteit (HRV) het sterkst schommelt. Kies een ritme, druk op start en adem mee met de cirkel; probeer elk ritme ongeveer 2 minuten en houd het ritme aan dat het soepelst voelt.",
   "imageAlt": "Pacer voor resonantieademhaling — adem mee met de cirkel op 4,5 tot 6,5 ademhalingen per minuut, gratis tool van ONDA Life",
   "ui": {
     "height": "Lengte (cm) — optioneel",
@@ -46,7 +46,7 @@
   "sections": [
     {
       "h2": "Wat is resonantiefrequentie-ademhaling?",
-      "body": "Ieder mens heeft een langzaam ademritme waarbij hartritme, ademhaling en de baroreflex — het regelsysteem van het lichaam voor de bloeddruk — gelijk op gaan. Op die resonantiefrequentie stijgt de hartslag bij elke inademing en daalt hij bij elke uitademing met de grootst mogelijke uitslag; daarom piekt de HRV (Lehrer 2003). Bij de meeste volwassenen ligt die tussen 4,5 en 6,5 ademhalingen per minuut. Ademen op dit ritme is de kerntechniek van HRV-biofeedback, die wordt gebruikt in onderzoek naar stress, angst en bloeddruk."
+      "body": "Ieder mens heeft een langzaam ademritme waarbij hartritme, ademhaling en de baroreflex — het regelsysteem van het lichaam voor de bloeddruk — gelijk op gaan. Op die resonantiefrequentie stijgt de hartslag bij elke inademing en daalt hij bij elke uitademing met de grootst mogelijke uitslag; daarom piekt de HRV (Lehrer 2003). Bij de meeste volwassenen ligt die rond 4,5–7 ademhalingen per minuut. Ademen op dit ritme is de kerntechniek van HRV-biofeedback, die wordt gebruikt in onderzoek naar stress, angst en bloeddruk."
     },
     {
       "h2": "Resonantieademhaling vs coherente ademhaling",
@@ -63,7 +63,7 @@
   ],
   "faqTitle": "Resonantieademhaling — veelgestelde vragen",
   "faq": [
-    { "q": "Wat is resonantiefrequentie-ademhaling?", "a": "Langzaam ademen op je persoonlijke ritme — meestal 4,5–6,5 ademhalingen per minuut — waarbij hartritme en ademhaling gelijk op gaan en de HRV het sterkst schommelt. Het is de kerntechniek van HRV-biofeedback." },
+    { "q": "Wat is resonantiefrequentie-ademhaling?", "a": "Langzaam ademen op je persoonlijke ritme — meestal ongeveer 4,5–7 ademhalingen per minuut — waarbij hartritme en ademhaling gelijk op gaan en de HRV het sterkst schommelt. Het is de kerntechniek van HRV-biofeedback." },
     { "q": "Hoe vind ik mijn resonantieritme?", "a": "Adem telkens ongeveer 2 minuten op 6,5, 6,0, 5,5, 5,0 en 4,5 ademhalingen per minuut en houd het ritme aan dat het soepelst voelt. Met een apparaat dat HRV van slag tot slag toont, kies je het ritme met de grootste en regelmatigste hartslaggolven." },
     { "q": "Is resonantieademhaling hetzelfde als coherente ademhaling?", "a": "Bijna. Coherente ademhaling gebruikt een vast ritme van ongeveer 5–6 ademhalingen per minuut; resonantieademhaling stemt dat ritme af op jouw lichaam." },
     { "q": "Heeft lengte invloed op de resonantiefrequentie?", "a": "Langere mensen en mannen hebben vaak een iets langzamer resonantieritme; daarom biedt deze tool een startpunt op basis van lengte. Het is maar een richtlijn — test de ritmes om het jouwe te vinden." },
@@ -71,7 +71,7 @@
     { "q": "Verhoogt resonantieademhaling je HRV?", "a": "Ja, de HRV stijgt terwijl je op dit ritme ademt, en regelmatig oefenen hangt samen met een betere baroreflexfunctie en een rustigere stemming. Het ondersteunt medische zorg, maar vervangt die niet." }
   ],
   "sourcesTitle": "Bronnen & methodologie",
-  "methodology": "Op een persoonlijk ritme — meestal 4,5–6,5 ademhalingen per minuut — komen hartslagschommelingen, ademhaling en de baroreflex in fase en piekt de HRV-amplitude (Lehrer 2003). De standaardmanier om dat ritme te vinden is een paar minuten op elk ritme ademen en meten welk ritme de grootste en gelijkmatigste hartslagschommelingen geeft (Shaffer 2020). Zonder sensor is het ritme dat het soepelst en rustigst voelt een redelijke keuze. De suggestie op basis van lengte is slechts een ruw startpunt. Educatieve tool, geen medisch hulpmiddel.",
+  "methodology": "Op een persoonlijk ritme — meestal ongeveer 4,5–7 ademhalingen per minuut — komen hartslagschommelingen, ademhaling en de baroreflex in fase en piekt de HRV-amplitude (Lehrer 2003). De standaardmanier om dat ritme te vinden is een paar minuten op elk ritme ademen en meten welk ritme de grootste en gelijkmatigste hartslagschommelingen geeft (Shaffer 2020). Zonder sensor is het ritme dat het soepelst en rustigst voelt een redelijke keuze. De suggestie op basis van lengte is slechts een ruw startpunt. Educatieve tool, geen medisch hulpmiddel.",
   "sourcesContributes": [
     "Basiswerk dat het concept resonantiefrequentie en het baroreflexmechanisme erachter vastlegde.",
     "Het protocol om iemands persoonlijke resonantiefrequentie te vinden door een reeks ademritmes te testen.",

@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'Hardware Calibration — Hijacking the Cardiovascular Control Loop for Peak Operational Efficiency',
   seoTitle: '0.1 Hz Baroreflex Hack: HRV Coherence | ONDA Life',
   description:
-    'At exactly 0.1 Hz (6 breaths/min) your breathing syncs with Mayer Waves, hijacking the baroreflex loop to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal.',
+    'At around 0.1 Hz (about 5.5–6 breaths/min) your breathing syncs with Mayer Waves, hijacking the baroreflex loop to maximize HRV amplitude, lower blood pressure, and phase-lock the heart-brain coherence signal.',
   category: 'Biological Software',
   relatedSlugs: [
     'heart-rate-variability',
@@ -51,7 +51,7 @@ const article: Article = {
 
 ## Why does breathing at 6 breaths per minute affect blood pressure?
 
-Breathing at 0.1 Hz — exactly 6 cycles per minute — causes your respiratory rhythm to phase-lock with the natural oscillatory frequency of your blood pressure: the **Mayer Waves**.
+Breathing at around 0.1 Hz — about 5.5–6 breaths per minute — causes your respiratory rhythm to phase-lock with the natural oscillatory frequency of your blood pressure: the **Mayer Waves**.
 
 **The Alignment:** Your inhale assists the pressure rise. Your exhale assists the pressure drop. Both happen in perfect tandem with baroreflex automation — for the first time, the two systems are working *with* each other instead of fighting in parallel.
 
@@ -87,7 +87,7 @@ Clinical data: consistent 0.1 Hz biofeedback training produces systolic reductio
 
 ## ONDA Calibration Parameters
 
-**Target Frequency:** 0.1 Hz — 6 cycles per minute.
+**Target Frequency:** around 0.1 Hz — about 5.5–6 breaths per minute.
 
 **Duty Cycle (Standard):** 5.0s inhale / 5.0s exhale. Equal ratio. No breath holds — holds break the Mayer Wave synchronization.
 
@@ -129,7 +129,7 @@ Catching the 0.1 Hz shift cleanly requires an HRV device with enough sampling fi
   howToSteps: [
     {
       name: '0.1 Hz Calibration Baseline',
-      text: 'Set a breathing pacer to 6 cycles per minute (5 seconds inhale, 5 seconds exhale). No breath holds. Maintain for 10–20 minutes. Monitor HRV if possible — the LF spectral peak surge confirms baroreflex phase-lock.',
+      text: 'Set a breathing pacer to about 5.5 breaths per minute (5.5 seconds in, 5.5 seconds out). No breath holds. Maintain for 10–20 minutes. Monitor HRV if possible — the LF spectral peak surge confirms baroreflex phase-lock.',
       protocolId: 'baroreflex-01hz-baseline',
     },
     {

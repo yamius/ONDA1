@@ -46,7 +46,7 @@ You can't out-think a physiological surge with more thinking. But you can reach 
 
 ## Section 2: How does breathing help regulate emotions?
 
-A slow breath with a long exhale stimulates the vagus nerve and pulls the body back toward the [parasympathetic](/glossary/parasympathetic-nervous-system) 'settle' side, damping the surge just enough to re-open the gap. That's the physiological version of "count to ten" — except it works, because it acts on the actual mechanism rather than on your willpower.
+Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it pulls the body back toward the [parasympathetic](/glossary/parasympathetic-nervous-system) 'settle' side, damping the surge just enough to re-open the gap. That's the physiological version of "count to ten" — except it works, because it acts on the actual mechanism rather than on your willpower.
 
 Do it *early* — at the first flicker of the reaction, before it accelerates — and one or two slow breaths can be the difference between the automatic response and a chosen one. The same lever that [takes back a panic spiral](/articles/anxiety-panic-breathing-hrv) works on everyday reactivity: the breath is the manual override on the emotional accelerant.
 
@@ -88,7 +88,7 @@ Deploy it where it counts. **Before a hard conversation**, take two minutes of s
     },
     {
       name: 'Breathe to buy the pause',
-      text: 'At the first flicker of a reaction, take one or two slow breaths with a long exhale. This stimulates the vagus nerve, damps the surge, and re-opens the gap between trigger and reaction where a chosen response becomes possible. Do it early, before it accelerates.',
+      text: 'At the first flicker of a reaction, take one or two slow breaths with a long exhale. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; it damps the surge and re-opens the gap between trigger and reaction where a chosen response becomes possible. Do it early, before it accelerates.',
       protocolId: 'emo-breathe',
     },
     {

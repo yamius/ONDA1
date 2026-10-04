@@ -38,7 +38,7 @@
         {
           "id": "breathing-and-hrv",
           "q": "¿Por qué cambia la VFC al inspirar y espirar?",
-          "a": "El corazón se acelera ligeramente en cada inspiración y se frena en cada espiración, un patrón normal llamado arritmia sinusal respiratoria. Respirar despacio amplía estas oscilaciones, por eso la VFC se dispara durante una sesión de respiración. La investigación sobre respiración de resonancia (Lehrer y colaboradores) muestra que las oscilaciones son máximas a unas 5–7 respiraciones por minuto en la mayoría de los adultos. [Respiración de resonancia →](/tools/resonance-breathing)"
+          "a": "El corazón se acelera ligeramente en cada inspiración y se frena en cada espiración, un patrón normal llamado arritmia sinusal respiratoria. Respirar despacio amplía estas oscilaciones, por eso la VFC se dispara durante una sesión de respiración. La investigación sobre respiración de resonancia (Lehrer y colaboradores) muestra que las oscilaciones son máximas a un ritmo personal de unas 4,5–7 respiraciones por minuto, normalmente unas 5,5–6. [Respiración de resonancia →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "id": "best-breathing-for-hrv",
           "q": "¿Qué técnica de respiración es mejor para la VFC?",
-          "a": "Respirar de forma lenta y regular a tu ritmo de resonancia —normalmente 5–7 respiraciones por minuto— produce las mayores oscilaciones de VFC. La respiración cuadrada y la 4-7-8 también te calman, y el suspiro fisiológico sirve para un reinicio rápido. La constancia importa más que la técnica elegida. [Respiración de resonancia →](/tools/resonance-breathing) · [Respiración 4-7-8 →](/articles/4-7-8-breathing)"
+          "a": "Respirar de forma lenta y regular a tu ritmo de resonancia —unas 4,5–7 respiraciones por minuto, normalmente unas 5,5–6— produce las mayores oscilaciones de VFC. La respiración cuadrada y la 4-7-8 también te calman, y el suspiro fisiológico sirve para un reinicio rápido. La constancia importa más que la técnica elegida. [Respiración de resonancia →](/tools/resonance-breathing) · [Respiración 4-7-8 →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
@@ -188,7 +188,7 @@
         {
           "id": "cold-wim-hof-hrv",
           "q": "¿Las duchas frías o la respiración Wim Hof suben la VFC?",
-          "a": "La exposición al frío activa brevemente el nervio vago y puede subir un poco la VFC después, pero la evidencia a largo plazo es escasa. La respiración Wim Hof es una hiperventilación rápida seguida de apneas: una herramienta distinta de la respiración lenta y no la primera opción para subir la VFC. [Límites reales de la respiración y el frío →](/articles/hrv-breathing-cold-honest-limits) · [Temporizador Wim Hof →](/tools/wim-hof)"
+          "a": "La exposición al frío se asocia con una breve respuesta vagal y puede subir un poco la VFC después, pero la evidencia a largo plazo es escasa. La respiración Wim Hof es una hiperventilación rápida seguida de apneas: una herramienta distinta de la respiración lenta y no la primera opción para subir la VFC. [Límites reales de la respiración y el frío →](/articles/hrv-breathing-cold-honest-limits) · [Temporizador Wim Hof →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "¿Debo fijarme en una lectura de VFC o en la tendencia?",
-          "a": "En la tendencia. La VFC cambia mucho de un día a otro por motivos corrientes, así que una mañana dice poco. Un promedio de 7 días frente a tu rango de 2–4 semanas es mucho más significativo. [Consulta tu rango de dos semanas →](/tools/baseline)"
+          "a": "En la tendencia. La VFC cambia mucho de un día a otro por motivos corrientes, así que una mañana dice poco. Compara cada lectura con tu propio rango reciente: la app ONDA, por ejemplo, compara cada noche con tu corredor (la media de tus noches recientes ± una desviación estándar), necesita al menos 7 noches y construye la línea base en 14 días. [Consulta tu rango de dos semanas →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

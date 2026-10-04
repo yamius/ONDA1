@@ -11,7 +11,7 @@ const article: Article = {
   subtitle: 'Coherence Optimization — Scanning Your Personal Resonance Frequency and Locking In System Harmony',
   seoTitle: 'Resonant Frequency: Find Your HRV Peak | ONDA Life',
   description:
-    'Every person has a unique resonant breathing frequency (4.5–6.5 breaths/min) where heart, brain, and lungs phase-lock into coherence and HRV peaks. A simple resonance scan — a breathing-rate sweep with an HRV monitor — finds yours.',
+    'Every person has a unique resonant breathing frequency (about 4.5–7 breaths per minute) where heart, brain, and lungs phase-lock into coherence and HRV peaks. A simple resonance scan — a breathing-rate sweep with an HRV monitor — finds yours.',
   category: 'Biological Software',
   relatedSlugs: [
     'heart-rate-variability',
@@ -58,7 +58,7 @@ Test several breathing patterns in sequence: 5.0, 5.5, 6.0, and 6.5 breaths per 
 At each tested frequency, identify the spectral power of the LF (Low Frequency) band in your HRV. The target frequency is the one where the LF peak reaches its maximum. This is your baroreflex resonance point — the exact rhythm at which your heart and blood pressure regulatory system lock into phase.
 
 **Step 3 — Lock-In:**
-Once identified, this frequency becomes your personal calibration protocol. It does not change significantly over time. Most people find their resonance between 4.5 and 6.5 breaths per minute — the average is near 6 (0.1 Hz), but individual variation is real and significant.
+Once identified, this frequency becomes your personal calibration protocol. It does not change significantly over time. Most people find their resonance at about 4.5–7 breaths per minute — typically about 5.5–6 (around 0.1 Hz), but individual variation is real and significant.
 
 ---
 
@@ -68,7 +68,7 @@ Three mechanisms activated by resonant frequency breathing:
 
 ### Mechanism 1: The 0.1 Hz Shift
 
-> **Action:** Breathe at your identified resonant frequency for a minimum of 5 minutes. Use a 5:5 ratio (5-second inhale, 5-second exhale) as a starting point if your frequency has not been scanned yet.
+> **Action:** Breathe at your identified resonant frequency for a minimum of 5 minutes. Use 5.5 seconds in, 5.5 seconds out (about 5.5 breaths per minute) as a starting point if your frequency has not been scanned yet.
 
 **Logic:** Most people resonate near 0.1 Hz. Breathing at this frequency engages the baroreflex — your body's built-in regulator for blood pressure and autonomic balance. At resonance, the baroreceptors in your aorta and carotid arteries synchronize with the cardiac cycle, producing a high-amplitude oscillation that pushes [HRV](/glossary/heart-rate-variability) toward its personal peak. The signal propagates upward through the vagal afferents to the [brainstem](/glossary/brainstem), and is associated with shifts in [prefrontal](/glossary/prefrontal-cortex) activation and lower [amygdala](/glossary/amygdala) reactivity.
 

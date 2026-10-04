@@ -51,7 +51,7 @@
   },
   "flags": {
     "tachy": "A resting heart rate above 100 bpm is called tachycardia. If it stays this high at rest, or comes with palpitations, dizziness or breathlessness, see a doctor.",
-    "brady": "Under 50 bpm is normal for many trained people. If it comes with dizziness, fainting, unusual tiredness or breathlessness, see a doctor."
+    "brady": "Under 50 bpm can be normal for fit, trained people and usually only matters if it comes with symptoms such as dizziness, fainting or breathlessness — then see a doctor."
   },
   "wearableNote": "Watches and rings read resting or sleeping heart rate, which usually runs a few bpm lower than the seated check these norms are based on — so a wearable number can look slightly better than it is. Compare your own weekly average.",
   "invalid": "Enter a valid age (18–120) and resting heart rate (30–150 bpm).",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "What is a normal resting heart rate by age?",
-      "body": "For adults, a resting heart rate between 60 and 100 bpm is considered normal, and many cardiologists treat roughly 50–90 bpm as the healthy range. In the CDC's NHANES survey of healthy U.S. adults, the median seated resting pulse was about 69 bpm for men aged 18–39, 68 bpm at 40–59 and 67 bpm from 60 — almost flat across adult life. The middle half of men (p25–p75) sat between about 60 and 77 bpm. Unlike HRV, resting heart rate hardly changes with age in adults; fitness, genetics, sleep and stress matter far more. That's why the most useful comparison is with your own morning trend. Full guide: [resting heart rate by age](/articles/resting-heart-rate-by-age)."
+      "body": "For adults, a resting heart rate between 60 and 100 bpm is considered normal. Fit people often sit lower (often 40–60 bpm), and some research links roughly 50–90 bpm with better long-term health. In the CDC's NHANES survey of healthy U.S. adults, the median seated resting pulse was about 69 bpm for men aged 18–39, 68 bpm at 40–59 and 67 bpm from 60 — almost flat across adult life. The middle half of men (p25–p75) sat between about 60 and 77 bpm. Unlike HRV, resting heart rate hardly changes with age in adults; fitness, genetics, sleep and stress matter far more. That's why the most useful comparison is with your own morning trend. Full guide: [resting heart rate by age](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Normal resting heart rate for women",
@@ -128,7 +128,7 @@
   "methodology": "The tables come directly from the CDC/NCHS report on NHANES 1999–2008 (Ostchega et al. 2011, Tables 2–3): seated resting pulse of about 17,000 U.S. adults, excluding people with a condition or medication that affects pulse. The 18–39 band uses the 20–39 row and the 60+ band the 60–79 row. Your percentile is interpolated between the published 5th–95th percentiles for your age and sex. Watches and rings measure resting or sleeping heart rate, which usually runs a few bpm lower than a seated check.",
   "sourcesContributes": [
     "Direct source of the tables: seated resting pulse percentiles by age and sex from NHANES 1999–2008, excluding conditions and medications that affect pulse (Tables 2–3).",
-    "Clinical context: a normal resting heart rate is roughly 50–90 bpm, lower in the very fit, slightly higher in women, and partly genetic.",
+    "Clinical context: 60–100 bpm is the standard normal range, and some research links roughly 50–90 bpm with better long-term health; lower in the very fit, slightly higher in women, and partly genetic.",
     "Meta-analysis (about 1.2 million people): each 10 bpm higher resting heart rate is linked to about 9% higher all-cause mortality — why a lower resting rate matters."
   ],
   "related": {

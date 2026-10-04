@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Quelle est la fréquence cardiaque au repos normale selon l'âge ?",
-        "a": "Chez l'adulte, quel que soit l'âge, une fréquence cardiaque au repos normale se situe entre 60 et 100 battements par minute ; les grands changements ont lieu pendant l'enfance : un nouveau-né est à 100–160 bpm, puis la fréquence se stabilise à l'adolescence. Les adultes en bonne forme physique sont souvent entre 40 et 59 bpm. Dans la plage normale, votre propre tendance vous en dit plus que la moyenne de la population.",
+        "a": "Chez l'adulte, quel que soit l'âge, une fréquence cardiaque au repos normale se situe entre 60 et 100 battements par minute ; les grands changements ont lieu pendant l'enfance : un nouveau-né est à 100–160 bpm, puis la fréquence se stabilise à l'adolescence. Les adultes en bonne forme physique se situent souvent plus bas (souvent 40–60 bpm), et certaines recherches associent une plage d'environ 50–90 bpm à une meilleure santé à long terme. Dans la plage normale, votre propre tendance vous en dit plus que la moyenne de la population.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",
@@ -114,7 +114,7 @@
       },
       {
         "q": "Comment calmer rapidement son système nerveux ?",
-        "a": "Faites une expiration plus longue que l'inspiration. Une expiration longue et lente active le nerf vague et ralentit le cœur en une à deux minutes ; fredonner en expirant renforce l'effet. Cinq minutes de respiration lente, à environ six respirations par minute, suffisent à la plupart des gens pour sentir la différence.",
+        "a": "Faites une expiration plus longue que l'inspiration. Une respiration lente avec une expiration plus longue est associée à une VFC d'origine vagale plus élevée pendant la pratique, et elle ralentit le cœur en une à deux minutes ; fredonner en expirant renforce l'effet. Cinq minutes de respiration lente, à environ six respirations par minute, suffisent à la plupart des gens pour sentir la différence.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

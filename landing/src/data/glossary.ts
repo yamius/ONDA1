@@ -584,11 +584,11 @@ The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathe
 
 ## Vagal Tone
 
-**Vagal tone** is measured through Heart Rate Variability (HRV). Higher vagal tone = greater ability to shift between activation and recovery. ONDA Level 1 practices directly train vagal tone through:
+**Vagal tone** cannot be measured directly; Heart Rate Variability (HRV) reflects vagally mediated changes in heart rate. Higher vagally mediated HRV is linked with a greater ability to shift between activation and recovery. ONDA Level 1 practices that work with this:
 
-- Diaphragmatic breathing (mechanical stimulation)
-- Extended exhale patterns (parasympathetic activation)
-- Cold exposure protocols (vagal resilience)
+- Diaphragmatic breathing (slow, low breathing)
+- Extended exhale patterns (slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise)
+- Cold exposure protocols (linked to a brief vagal response; long-term evidence is thin)
 
 ## Polyvagal Theory
 
@@ -637,7 +637,7 @@ Water temperature and breath-holding are the two biggest factors. Colder water p
 
 ## In ONDA Life
 
-Cold exposure protocols (face immersion, cold showers) leverage the Mammalian Dive Reflex to build vagal resilience. The reflex provides a biological "hard reset" that forces the autonomic nervous system to recalibrate.
+Cold exposure protocols (face immersion, cold showers) use the Mammalian Dive Reflex, which briefly slows the heart through a vagal response. Whether this builds lasting resilience is not well established.
 `,
   },
   {

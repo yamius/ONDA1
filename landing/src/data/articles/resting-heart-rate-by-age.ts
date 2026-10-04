@@ -31,7 +31,7 @@ A normal resting heart rate for most adults is 60 to 100 beats per minute, but t
 
 ## What is a normal resting heart rate by age?
 
-A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness moves people within it more than age does. These are general ranges for a healthy resting heart rate:
+A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness moves people within it more than age does. Fit people often sit lower (often 40–60 bpm), and some research links roughly 50–90 bpm with better long-term health. These are general ranges for a healthy resting heart rate:
 
 | Age | Typical resting heart rate |
 |---|---|

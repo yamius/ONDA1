@@ -78,7 +78,7 @@ And at the far end of experience, brain scans of expert meditators — including
 
 ## Meditation vs breathwork: which door to use
 
-Meditation and breathwork both lead to a calmer nervous system, but through opposite doors. **Breathwork** is bottom-up and fast — slow breathing activates the vagus nerve within minutes, a quick lever for an acute state change. **Meditation** is top-down and deep — training attention and reshaping the brain over weeks. The best approach for most people combines them: use breath to reach a calm state, then meditate from within it. → **[Meditation vs Breathwork: Which Should You Choose?](/articles/meditation-vs-breathwork)**
+Meditation and breathwork both lead to a calmer nervous system, but through opposite doors. **Breathwork** is bottom-up and fast — slow breathing with a longer exhale is associated with higher vagally mediated HRV within minutes, a quick lever for an acute state change. **Meditation** is top-down and deep — training attention and reshaping the brain over weeks. The best approach for most people combines them: use breath to reach a calm state, then meditate from within it. → **[Meditation vs Breathwork: Which Should You Choose?](/articles/meditation-vs-breathwork)**
 
 ## How much meditation do you actually need?
 

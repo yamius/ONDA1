@@ -91,7 +91,7 @@ Coming down in the moment is the acute skill. The deeper issue, if you're wired 
     },
     {
       name: 'Breathe low, slow, and exhale-led',
-      text: 'In for 4, out for 6 (or any ratio with a clearly longer exhale), low in the belly. The long out-breath stimulates the vagus nerve and hands tone to the parasympathetic branch, and the system follows the breath down.',
+      text: 'In for 4, out for 6 (or any ratio with a clearly longer exhale), low in the belly. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and the system follows the breath down.',
       protocolId: 'calm-breathe',
     },
     {

@@ -96,7 +96,7 @@ export const RHR_SOURCES: ScienceSource[] = [
     year: 2018,
     title: 'Resting heart rate: what is normal?',
     journal: 'Heart, 104(13):1048–1049',
-    contributes: 'Clinical context: a normal resting heart rate is roughly 50–90 bpm, lower in the very fit, slightly higher in women, and partly genetic.',
+    contributes: 'Clinical context: 60–100 bpm is the standard normal range, and some research links roughly 50–90 bpm with better long-term health; lower in the very fit, slightly higher in women, and partly genetic.',
     url: 'https://doi.org/10.1136/heartjnl-2017-312731',
   },
   {

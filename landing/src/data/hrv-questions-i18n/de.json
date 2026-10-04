@@ -38,7 +38,7 @@
         {
           "id": "breathing-and-hrv",
           "q": "Warum ändert sich die HRV beim Ein- und Ausatmen?",
-          "a": "Dein Herz wird bei jedem Einatmen etwas schneller und bei jedem Ausatmen langsamer – ein normales Muster namens respiratorische Sinusarrhythmie. Langsames Atmen verstärkt diese Schwankungen, deshalb springen die HRV-Werte während einer Atemübung nach oben. Forschung zur Resonanzatmung (Lehrer und Kollegen) zeigt, dass die Schwankungen bei den meisten Erwachsenen bei etwa 5–7 Atemzügen pro Minute am größten sind. [Resonanzatmung →](/tools/resonance-breathing)"
+          "a": "Dein Herz wird bei jedem Einatmen etwas schneller und bei jedem Ausatmen langsamer – ein normales Muster namens respiratorische Sinusarrhythmie. Langsames Atmen verstärkt diese Schwankungen, deshalb springen die HRV-Werte während einer Atemübung nach oben. Forschung zur Resonanzatmung (Lehrer und Kollegen) zeigt, dass die Schwankungen bei einem persönlichen Tempo von etwa 4,5–7 Atemzügen pro Minute am größten sind, typischerweise etwa 5,5–6. [Resonanzatmung →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "id": "best-breathing-for-hrv",
           "q": "Welche Atemtechnik ist am besten für die HRV?",
-          "a": "Langsames, gleichmäßiges Atmen in deinem Resonanztempo – typischerweise 5–7 Atemzüge pro Minute – erzeugt die größten HRV-Schwankungen. Box Breathing und 4-7-8 bremsen dich ebenfalls, und der physiologische Seufzer eignet sich für einen schnellen Reset. Regelmäßigkeit ist wichtiger als die Wahl der Technik. [Resonanzatmung →](/tools/resonance-breathing) · [4-7-8-Atmung →](/articles/4-7-8-breathing)"
+          "a": "Langsames, gleichmäßiges Atmen in deinem Resonanztempo – etwa 4,5–7 Atemzüge pro Minute, typischerweise etwa 5,5–6 – erzeugt die größten HRV-Schwankungen. Box Breathing und 4-7-8 bremsen dich ebenfalls, und der physiologische Seufzer eignet sich für einen schnellen Reset. Regelmäßigkeit ist wichtiger als die Wahl der Technik. [Resonanzatmung →](/tools/resonance-breathing) · [4-7-8-Atmung →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
@@ -188,7 +188,7 @@
         {
           "id": "cold-wim-hof-hrv",
           "q": "Erhöhen kalte Duschen oder Wim-Hof-Atmung die HRV?",
-          "a": "Kälte aktiviert kurzzeitig den Vagusnerv und kann die HRV danach leicht anheben, aber die Langzeit-Evidenz ist dünn. Wim-Hof-Atmung ist schnelle Hyperventilation mit anschließendem Luftanhalten – ein anderes Werkzeug als langsames Atmen und nicht die erste Wahl, um die HRV zu erhöhen. [Ehrliche Grenzen von Atmung und Kälte →](/articles/hrv-breathing-cold-honest-limits) · [Wim-Hof-Timer →](/tools/wim-hof)"
+          "a": "Kälte ist mit einer kurzen vagalen Reaktion verbunden und kann die HRV danach leicht anheben, aber die Langzeit-Evidenz ist dünn. Wim-Hof-Atmung ist schnelle Hyperventilation mit anschließendem Luftanhalten – ein anderes Werkzeug als langsames Atmen und nicht die erste Wahl, um die HRV zu erhöhen. [Ehrliche Grenzen von Atmung und Kälte →](/articles/hrv-breathing-cold-honest-limits) · [Wim-Hof-Timer →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Soll ich auf einen einzelnen HRV-Wert oder auf den Trend schauen?",
-          "a": "Auf den Trend. Die HRV schwankt von Tag zu Tag aus ganz gewöhnlichen Gründen stark, ein einzelner Morgen sagt also wenig. Ein 7-Tage-Durchschnitt im Verhältnis zu deinem 2–4-Wochen-Bereich ist weit aussagekräftiger. [Deinen Zwei-Wochen-Bereich ansehen →](/tools/baseline)"
+          "a": "Auf den Trend. Die HRV schwankt von Tag zu Tag aus ganz gewöhnlichen Gründen stark, ein einzelner Morgen sagt also wenig. Vergleiche jeden Wert mit deinem eigenen jüngsten Bereich: Die ONDA-App etwa vergleicht jede Nacht mit deinem Korridor (Durchschnitt deiner letzten Nächte ± eine Standardabweichung), braucht mindestens 7 Nächte und baut die Baseline über 14 Tage auf. [Deinen Zwei-Wochen-Bereich ansehen →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

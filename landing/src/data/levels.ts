@@ -111,7 +111,7 @@ export const levelsData: Record<number, LevelData> = {
         },
         {
           name: 'Vagal Tone (V2)',
-          text: 'Exiting "freeze" states by releasing the diaphragm and activating the Vagus nerve.',
+          text: 'Exiting "freeze" states by releasing the diaphragm and slowing the breath, with a longer exhale.',
         },
         {
           name: 'Vestibulo-Ocular Reflex (VOR)',

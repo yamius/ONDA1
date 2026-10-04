@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Strona główna", "tools": "Narzędzia", "current": "Oddychanie rezonansowe" },
   "h1": "Oddychanie rezonansowe",
-  "capsule": "Oddychanie rezonansowe to powolne, równe oddychanie we własnym tempie — zwykle od 4,5 do 6,5 oddechu na minutę — przy którym rytm serca i oddech zgrywają się ze sobą, a zmienność rytmu serca (HRV) waha się najmocniej. Wybierz tempo, naciśnij start i oddychaj z kołem; każde tempo testuj ok. 2 minuty i zostań przy tym, które jest najpłynniejsze.",
+  "capsule": "Oddychanie rezonansowe to powolne, równe oddychanie we własnym tempie — zwykle ok. 4,5–7 oddechów na minutę — przy którym rytm serca i oddech zgrywają się ze sobą, a zmienność rytmu serca (HRV) waha się najmocniej. Wybierz tempo, naciśnij start i oddychaj z kołem; każde tempo testuj ok. 2 minuty i zostań przy tym, które jest najpłynniejsze.",
   "imageAlt": "Pacer oddychania rezonansowego — oddychaj z kołem w tempie 4,5–6,5 oddechu na minutę, darmowe narzędzie ONDA Life",
   "ui": {
     "height": "Wzrost (cm) — opcjonalnie",
@@ -46,7 +46,7 @@
   "sections": [
     {
       "h2": "Czym jest oddychanie z częstotliwością rezonansową?",
-      "body": "Każdy człowiek ma takie wolne tempo oddechu, przy którym rytm serca, oddech i baroreflex — mechanizm regulacji ciśnienia krwi — poruszają się zgodnie. Przy tej częstotliwości rezonansowej tętno rośnie przy każdym wdechu i spada przy każdym wydechu z największą możliwą amplitudą, dlatego HRV osiąga szczyt (Lehrer 2003). U większości dorosłych mieści się ono między 4,5 a 6,5 oddechu na minutę. Oddychanie w tym tempie to podstawowa technika biofeedbacku HRV, stosowana w badaniach nad stresem, lękiem i ciśnieniem krwi."
+      "body": "Każdy człowiek ma takie wolne tempo oddechu, przy którym rytm serca, oddech i baroreflex — mechanizm regulacji ciśnienia krwi — poruszają się zgodnie. Przy tej częstotliwości rezonansowej tętno rośnie przy każdym wdechu i spada przy każdym wydechu z największą możliwą amplitudą, dlatego HRV osiąga szczyt (Lehrer 2003). U większości dorosłych wynosi ono ok. 4,5–7 oddechów na minutę. Oddychanie w tym tempie to podstawowa technika biofeedbacku HRV, stosowana w badaniach nad stresem, lękiem i ciśnieniem krwi."
     },
     {
       "h2": "Oddychanie rezonansowe a oddychanie koherentne",
@@ -63,7 +63,7 @@
   ],
   "faqTitle": "Oddychanie rezonansowe — najczęstsze pytania",
   "faq": [
-    { "q": "Czym jest oddychanie z częstotliwością rezonansową?", "a": "To powolne oddychanie we własnym tempie — zwykle 4,5–6,5 oddechu na minutę — przy którym rytm serca i oddech poruszają się zgodnie, a HRV waha się najmocniej. To podstawowa technika biofeedbacku HRV." },
+    { "q": "Czym jest oddychanie z częstotliwością rezonansową?", "a": "To powolne oddychanie we własnym tempie — zwykle ok. 4,5–7 oddechów na minutę — przy którym rytm serca i oddech poruszają się zgodnie, a HRV waha się najmocniej. To podstawowa technika biofeedbacku HRV." },
     { "q": "Jak znaleźć swoje tempo rezonansowe?", "a": "Oddychaj przez ok. 2 minuty w każdym tempie: 6,5, 6,0, 5,5, 5,0 i 4,5 oddechu na minutę, i zostań przy tym, które jest najpłynniejsze. Z urządzeniem pokazującym HRV uderzenie po uderzeniu wybierz tempo z największymi, najbardziej regularnymi falami tętna." },
     { "q": "Czy oddychanie rezonansowe to to samo co oddychanie koherentne?", "a": "Prawie. Oddychanie koherentne ma stałe tempo ok. 5–6 oddechów na minutę; oddychanie rezonansowe dopasowuje to tempo do twojego organizmu." },
     { "q": "Czy wzrost wpływa na częstotliwość rezonansową?", "a": "Osoby wyższe i mężczyźni mają zwykle nieco wolniejsze tempo rezonansowe, dlatego to narzędzie proponuje punkt wyjścia na podstawie wzrostu. To tylko wskazówka — przetestuj tempa, żeby znaleźć swoje." },
@@ -71,7 +71,7 @@
     { "q": "Czy oddychanie rezonansowe podnosi HRV?", "a": "Tak, HRV rośnie podczas oddychania w tym tempie, a regularna praktyka wiąże się z lepszą pracą baroreflexu i spokojniejszym nastrojem. Wspiera opiekę medyczną, ale jej nie zastępuje." }
   ],
   "sourcesTitle": "Źródła i metodologia",
-  "methodology": "Przy indywidualnym tempie — zwykle 4,5–6,5 oddechu na minutę — oscylacje tętna, oddech i baroreflex wchodzą w fazę, a amplituda HRV osiąga szczyt (Lehrer 2003). Standardowo znajduje się je, oddychając w każdym tempie przez kilka minut i mierząc, które daje największe i najpłynniejsze oscylacje tętna (Shaffer 2020). Bez czujnika rozsądnym wyborem jest tempo, które wydaje się najpłynniejsze i najbardziej uspokajające. Sugestia oparta na wzroście to tylko orientacyjny punkt wyjścia. Narzędzie edukacyjne, nie wyrób medyczny.",
+  "methodology": "Przy indywidualnym tempie — zwykle ok. 4,5–7 oddechów na minutę — oscylacje tętna, oddech i baroreflex wchodzą w fazę, a amplituda HRV osiąga szczyt (Lehrer 2003). Standardowo znajduje się je, oddychając w każdym tempie przez kilka minut i mierząc, które daje największe i najpłynniejsze oscylacje tętna (Shaffer 2020). Bez czujnika rozsądnym wyborem jest tempo, które wydaje się najpłynniejsze i najbardziej uspokajające. Sugestia oparta na wzroście to tylko orientacyjny punkt wyjścia. Narzędzie edukacyjne, nie wyrób medyczny.",
   "sourcesContributes": [
     "Praca podstawowa, która ugruntowała koncepcję częstotliwości rezonansowej i jej mechanizm baroreflexu.",
     "Protokół wyznaczania indywidualnej częstotliwości rezonansowej przez testowanie serii temp oddechu.",

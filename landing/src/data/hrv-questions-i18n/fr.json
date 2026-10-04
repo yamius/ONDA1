@@ -38,7 +38,7 @@
         {
           "id": "breathing-and-hrv",
           "q": "Pourquoi ma VFC change-t-elle quand j'inspire et j'expire ?",
-          "a": "Votre cœur accélère légèrement à chaque inspiration et ralentit à chaque expiration — un phénomène normal appelé arythmie sinusale respiratoire. Respirer lentement amplifie ces oscillations, c'est pourquoi la VFC grimpe pendant une séance de respiration. Les recherches sur la respiration à résonance (Lehrer et ses collègues) montrent que ces oscillations sont maximales autour de 5 à 7 respirations par minute chez la plupart des adultes. [Respiration à résonance →](/tools/resonance-breathing)"
+          "a": "Votre cœur accélère légèrement à chaque inspiration et ralentit à chaque expiration — un phénomène normal appelé arythmie sinusale respiratoire. Respirer lentement amplifie ces oscillations, c'est pourquoi la VFC grimpe pendant une séance de respiration. Les recherches sur la respiration à résonance (Lehrer et ses collègues) montrent que ces oscillations sont maximales à un rythme personnel d'environ 4,5 à 7 respirations par minute, typiquement autour de 5,5 à 6. [Respiration à résonance →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "id": "best-breathing-for-hrv",
           "q": "Quelle technique de respiration est la meilleure pour la VFC ?",
-          "a": "Une respiration lente et régulière à votre rythme de résonance — typiquement 5 à 7 respirations par minute — produit les plus grandes oscillations de VFC. La respiration carrée et la 4-7-8 vous ralentissent aussi, et le soupir physiologique est efficace pour se recentrer rapidement. La régularité compte plus que le choix de la technique. [Respiration à résonance →](/tools/resonance-breathing) · [Respiration 4-7-8 →](/articles/4-7-8-breathing)"
+          "a": "Une respiration lente et régulière à votre rythme de résonance — environ 4,5 à 7 respirations par minute, typiquement autour de 5,5 à 6 — produit les plus grandes oscillations de VFC. La respiration carrée et la 4-7-8 vous ralentissent aussi, et le soupir physiologique est efficace pour se recentrer rapidement. La régularité compte plus que le choix de la technique. [Respiration à résonance →](/tools/resonance-breathing) · [Respiration 4-7-8 →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
@@ -188,7 +188,7 @@
         {
           "id": "cold-wim-hof-hrv",
           "q": "Les douches froides ou la respiration Wim Hof augmentent-elles la VFC ?",
-          "a": "L'exposition au froid active brièvement le nerf vague et peut légèrement augmenter la VFC ensuite, mais les preuves à long terme sont minces. La respiration Wim Hof est une hyperventilation rapide suivie d'apnées — un outil différent de la respiration lente, et pas le premier choix pour augmenter la VFC. [Les limites réelles de la respiration et du froid →](/articles/hrv-breathing-cold-honest-limits) · [Minuteur Wim Hof →](/tools/wim-hof)"
+          "a": "L'exposition au froid est liée à une brève réponse vagale et peut légèrement augmenter la VFC ensuite, mais les preuves à long terme sont minces. La respiration Wim Hof est une hyperventilation rapide suivie d'apnées — un outil différent de la respiration lente, et pas le premier choix pour augmenter la VFC. [Les limites réelles de la respiration et du froid →](/articles/hrv-breathing-cold-honest-limits) · [Minuteur Wim Hof →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Faut-il regarder une mesure de VFC isolée ou la tendance ?",
-          "a": "La tendance. La VFC varie beaucoup d'un jour à l'autre pour des raisons banales, donc un seul matin en dit peu. Une moyenne sur 7 jours comparée à votre plage sur 2 à 4 semaines est bien plus parlante. [Voir votre plage sur deux semaines →](/tools/baseline)"
+          "a": "La tendance. La VFC varie beaucoup d'un jour à l'autre pour des raisons banales, donc un seul matin en dit peu. Comparez chaque mesure à votre propre plage récente : l'appli ONDA, par exemple, compare chaque nuit à votre couloir (la moyenne de vos nuits récentes ± un écart-type), a besoin d'au moins 7 nuits et construit la ligne de base sur 14 jours. [Voir votre plage sur deux semaines →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

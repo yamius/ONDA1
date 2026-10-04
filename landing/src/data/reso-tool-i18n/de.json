@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Startseite", "tools": "Tools", "current": "Resonanzatmung" },
   "h1": "Resonanzatmung",
-  "capsule": "Resonanzatmung heißt, langsam und gleichmäßig in deinem persönlichen Tempo zu atmen – meist zwischen 4,5 und 6,5 Atemzügen pro Minute. In diesem Bereich kommen Herzrhythmus und Atmung in Einklang, und die Herzratenvariabilität (HRV) schwingt am stärksten. Wähle eine Frequenz, drücke auf Start und atme mit dem Kreis; probiere jede Frequenz etwa 2 Minuten lang aus und behalte die, die sich am ruhigsten anfühlt.",
+  "capsule": "Resonanzatmung heißt, langsam und gleichmäßig in deinem persönlichen Tempo zu atmen – meist etwa 4,5–7 Atemzüge pro Minute. In diesem Bereich kommen Herzrhythmus und Atmung in Einklang, und die Herzratenvariabilität (HRV) schwingt am stärksten. Wähle eine Frequenz, drücke auf Start und atme mit dem Kreis; probiere jede Frequenz etwa 2 Minuten lang aus und behalte die, die sich am ruhigsten anfühlt.",
   "imageAlt": "Atemtrainer für Resonanzatmung – atme mit dem Kreis bei 4,5 bis 6,5 Atemzügen pro Minute, kostenloses Tool von ONDA Life",
   "ui": {
     "height": "Körpergröße (cm) – optional",
@@ -46,7 +46,7 @@
   "sections": [
     {
       "h2": "Was ist Atmen mit Resonanzfrequenz?",
-      "body": "Jeder Mensch hat ein langsames Atemtempo, bei dem Herzrhythmus, Atmung und Baroreflex – der Regelkreis des Körpers für den Blutdruck – im Gleichtakt schwingen. Bei dieser Resonanzfrequenz steigt die Herzfrequenz mit jedem Einatmen und sinkt mit jedem Ausatmen mit der größtmöglichen Amplitude, deshalb erreicht die HRV ihren Höchstwert (Lehrer 2003). Bei den meisten Erwachsenen liegt sie zwischen 4,5 und 6,5 Atemzügen pro Minute. Das Atmen in diesem Tempo ist die Kerntechnik des HRV-Biofeedbacks und wird in der Forschung zu Stress, Angst und Blutdruck eingesetzt."
+      "body": "Jeder Mensch hat ein langsames Atemtempo, bei dem Herzrhythmus, Atmung und Baroreflex – der Regelkreis des Körpers für den Blutdruck – im Gleichtakt schwingen. Bei dieser Resonanzfrequenz steigt die Herzfrequenz mit jedem Einatmen und sinkt mit jedem Ausatmen mit der größtmöglichen Amplitude, deshalb erreicht die HRV ihren Höchstwert (Lehrer 2003). Bei den meisten Erwachsenen liegt sie bei etwa 4,5–7 Atemzügen pro Minute. Das Atmen in diesem Tempo ist die Kerntechnik des HRV-Biofeedbacks und wird in der Forschung zu Stress, Angst und Blutdruck eingesetzt."
     },
     {
       "h2": "Resonanzatmung vs. kohärente Atmung",
@@ -63,7 +63,7 @@
   ],
   "faqTitle": "Resonanzatmung – häufige Fragen",
   "faq": [
-    { "q": "Was ist Resonanzatmung?", "a": "Langsames Atmen in deinem persönlichen Tempo – meist 4,5–6,5 Atemzüge pro Minute –, bei dem Herzrhythmus und Atmung im Gleichtakt schwingen und die HRV am stärksten ausschlägt. Es ist die Kerntechnik des HRV-Biofeedbacks." },
+    { "q": "Was ist Resonanzatmung?", "a": "Langsames Atmen in deinem persönlichen Tempo – meist etwa 4,5–7 Atemzüge pro Minute –, bei dem Herzrhythmus und Atmung im Gleichtakt schwingen und die HRV am stärksten ausschlägt. Es ist die Kerntechnik des HRV-Biofeedbacks." },
     { "q": "Wie finde ich meine Resonanzfrequenz?", "a": "Atme jeweils etwa 2 Minuten mit 6,5, 6,0, 5,5, 5,0 und 4,5 Atemzügen pro Minute und behalte die Frequenz, die sich am ruhigsten anfühlt. Mit einem Gerät, das die HRV von Schlag zu Schlag anzeigt, wählst du die Frequenz mit den größten, gleichmäßigsten Herzfrequenzwellen." },
     { "q": "Ist Resonanzatmung dasselbe wie kohärente Atmung?", "a": "Fast. Kohärente Atmung nutzt ein festes Tempo von etwa 5–6 Atemzügen pro Minute; Resonanzatmung passt dieses Tempo an deinen Körper an." },
     { "q": "Beeinflusst die Körpergröße die Resonanzfrequenz?", "a": "Größere Menschen und Männer haben tendenziell eine etwas langsamere Resonanzfrequenz, deshalb bietet dieses Tool einen Ausgangspunkt nach Körpergröße. Das ist nur eine Orientierung – teste die Frequenzen, um deine zu finden." },
@@ -71,7 +71,7 @@
     { "q": "Steigert Resonanzatmung die HRV?", "a": "Ja, die HRV steigt, während du in diesem Tempo atmest, und regelmäßiges Üben geht mit besserer Baroreflex-Funktion und ruhigerer Stimmung einher. Es unterstützt medizinische Versorgung, ersetzt sie aber nicht." }
   ],
   "sourcesTitle": "Quellen & Methodik",
-  "methodology": "Bei einem persönlichen Tempo – meist 4,5–6,5 Atemzüge pro Minute – geraten Herzfrequenzschwankungen, Atmung und Baroreflex in Phase, und die HRV-Amplitude erreicht ihr Maximum (Lehrer 2003). Der Standardweg, dieses Tempo zu finden: Man atmet jede Frequenz ein paar Minuten lang und misst, welche die größten und gleichmäßigsten Herzfrequenzschwankungen erzeugt (Shaffer 2020). Ohne Sensor ist die Frequenz, die sich am ruhigsten und entspanntesten anfühlt, eine vernünftige Wahl. Der Vorschlag nach Körpergröße ist nur ein grober Ausgangspunkt. Lern-Tool, kein Medizinprodukt.",
+  "methodology": "Bei einem persönlichen Tempo – meist etwa 4,5–7 Atemzüge pro Minute – geraten Herzfrequenzschwankungen, Atmung und Baroreflex in Phase, und die HRV-Amplitude erreicht ihr Maximum (Lehrer 2003). Der Standardweg, dieses Tempo zu finden: Man atmet jede Frequenz ein paar Minuten lang und misst, welche die größten und gleichmäßigsten Herzfrequenzschwankungen erzeugt (Shaffer 2020). Ohne Sensor ist die Frequenz, die sich am ruhigsten und entspanntesten anfühlt, eine vernünftige Wahl. Der Vorschlag nach Körpergröße ist nur ein grober Ausgangspunkt. Lern-Tool, kein Medizinprodukt.",
   "sourcesContributes": [
     "Grundlagenarbeit, die das Konzept der Resonanzfrequenz und ihren Baroreflex-Mechanismus begründet.",
     "Das Protokoll, mit dem man die individuelle Resonanzfrequenz durch Testen einer Reihe von Atemfrequenzen findet.",

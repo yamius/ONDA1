@@ -45,7 +45,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Is 4-7-8 breathing good for anxiety?",
       answer:
-        "Yes, for winding down. The long exhale activates the vagus nerve and lowers heart rate. For a sudden anxiety spike, though, a physiological sigh works faster; 4-7-8 is better for settling over a few minutes.",
+        "Yes, for winding down. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it lowers heart rate. For a sudden anxiety spike, though, a physiological sigh works faster; 4-7-8 is better for settling over a few minutes.",
     },
     {
       question: "Can I do 4-7-8 breathing every night?",
@@ -94,7 +94,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How does humming help the vagus nerve?",
       answer:
-        "The vagus nerve has fibers in the larynx and throat. Humming vibrates them mechanically, stimulating the nerve directly — on top of the calming effect of the long exhale. This raises vagal tone and shifts you toward \"rest and digest.\"",
+        "The vagus nerve has fibers in the larynx and throat. Researchers propose that humming’s vibration reaches them mechanically — on top of the long exhale, which is associated with higher vagally mediated HRV while you practise. The net effect is a shift toward \"rest and digest.\"",
     },
     {
       question: "How long should I hum for?",
@@ -104,7 +104,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Is humming the same as chanting or singing?",
       answer:
-        "They work through the same mechanism — vibration in the larynx stimulating vagal fibers plus extended exhales. Humming is just the simplest and quietest version.",
+        "They work through the same mechanism — vibration in the larynx (a proposed route to vagal fibers) plus extended exhales. Humming is just the simplest and quietest version.",
     },
     {
       question: "When should I use humming breath?",
@@ -702,7 +702,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'How can I stimulate my vagus nerve?',
       answer:
-        'The best-supported way is slow breathing with a longer exhale than inhale, for example in for 4 and out for 6, for a few minutes. Humming or gargling and cold water on the face also activate vagal pathways. Practised most days, slow breathing tends to raise resting HRV over weeks.',
+        'The best-supported way is slow breathing with a longer exhale than inhale, for example in for 4 and out for 6, for a few minutes. Humming, gargling and cold water on the face are also commonly used and are thought to act on vagal pathways. Practised most days, slow breathing tends to raise resting HRV over weeks.',
     },
     {
       question: 'How is vagal tone measured?',
@@ -816,7 +816,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'What is resonant frequency breathing?',
       answer:
-        'Resonant frequency breathing (typically 5–6 breaths per minute) synchronizes heart rate with breathing, maximizing heart rate variability (HRV) and activating the parasympathetic nervous system.',
+        'Resonant frequency breathing (about 5.5–6 breaths per minute on average; individually about 4.5–7) synchronizes heart rate with breathing, maximizing heart rate variability (HRV) and activating the parasympathetic nervous system.',
     },
     {
       question: 'When should I use the physiological sigh?',
@@ -1042,7 +1042,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   'rhythmic-entrainment-system-frequencies': [
     {
-      question: 'Why is 0.1 Hz (6 breaths per minute) the specific frequency for maximum biological entrainment?',
+      question: 'Why is 0.1 Hz (about 5.5–6 breaths per minute) the specific frequency for maximum biological entrainment?',
       answer:
         '0.1 Hz is the resonant frequency of the baroreflex loop — the feedback cycle between blood pressure fluctuations, heart rate adjustments, and the vagus nerve. At this specific frequency, the baroreflex achieves maximum gain: each breath produces the largest possible swing in heart rate variability, and the respiratory, cardiovascular, and autonomic nervous systems reach peak coherence. Below 0.1 Hz, the respiratory drive falls out of sync with the baroreflex cycle. Above 0.1 Hz, each breath is too short for the full baroreflex response to complete. 0.1 Hz is the precise mathematical resonance point of the human cardiovascular system — not an arbitrary wellness target.',
     },
@@ -1156,7 +1156,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'What are Mayer Waves and why does 0.1 Hz breathing synchronize with them?',
       answer:
-        'Mayer Waves are slow oscillations in blood pressure with a natural frequency of approximately 0.1 Hz — one cycle every 10 seconds — produced by the baroreflex feedback loop as it regulates arterial pressure. Normally, breathing runs out of phase with this oscillation, causing partial cancellation of the HRV signal. When breathing frequency matches Mayer Wave frequency at 0.1 Hz (6 breaths per minute), the respiratory and cardiovascular oscillations phase-lock, creating constructive resonance — HRV amplitude surges to its physiological ceiling and baroreflex sensitivity reaches its maximum.',
+        'Mayer Waves are slow oscillations in blood pressure with a natural frequency of approximately 0.1 Hz — one cycle every 10 seconds — produced by the baroreflex feedback loop as it regulates arterial pressure. Normally, breathing runs out of phase with this oscillation, causing partial cancellation of the HRV signal. When breathing frequency matches Mayer Wave frequency at around 0.1 Hz (about 5.5–6 breaths per minute), the respiratory and cardiovascular oscillations phase-lock, creating constructive resonance — HRV amplitude surges to its physiological ceiling and baroreflex sensitivity reaches its maximum.',
     },
     {
       question: 'How does 0.1 Hz breathing lower blood pressure without medication?',
@@ -1173,7 +1173,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'What is resonant frequency breathing and how does it differ from standard breathing exercises?',
       answer:
-        'Resonant frequency breathing targets the exact individual rhythm (typically 4.5–6.5 breaths/min) where the cardiovascular and respiratory systems enter phase-lock — called baroreflex resonance. Unlike generic "deep breathing" with fixed timing, resonant frequency is identified through a personalized frequency sweep and LF-HRV peak analysis. At this specific frequency, HRV surges to its ceiling, vascular resistance drops, and the Vagus Nerve broadcasts a system-wide safety signal simultaneously.',
+        'Resonant frequency breathing targets the exact individual rhythm (about 4.5–7 breaths per minute) where the cardiovascular and respiratory systems enter phase-lock — called baroreflex resonance. Unlike generic "deep breathing" with fixed timing, resonant frequency is identified through a personalized frequency sweep and LF-HRV peak analysis. At this specific frequency, HRV surges to its ceiling, vascular resistance drops, and the Vagus Nerve broadcasts a system-wide safety signal simultaneously.',
     },
     {
       question: 'How long does it take to identify my personal resonant frequency?',
@@ -1273,7 +1273,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'Why is humming on the exhale used to activate the vagus nerve?',
       answer:
-        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) creates vibration around the vagus pathway and lowers system jitter. It stimulates the vagus, drops resting heart rate and releases residual tension in the jaw and neck.',
+        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) creates vibration around the vagus pathway and lowers system jitter. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; it lowers heart rate and releases residual tension in the jaw and neck.',
     },
   ],
   'vascular-tensegrity-microvascular-mechanics': [
@@ -1663,7 +1663,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What's the difference between meditation and breathwork?",
       answer:
-        "Breathwork changes your physiology directly and fast (a bottom-up, body-first approach) — slow breathing activates the vagus nerve within minutes. Meditation trains your attention and mind over weeks (top-down), reshaping brain structure and function. One is a quick lever; the other is deeper training.",
+        "Breathwork changes your physiology directly and fast (a bottom-up, body-first approach) — slow breathing with a longer exhale is associated with higher vagally mediated HRV within minutes. Meditation trains your attention and mind over weeks (top-down), reshaping brain structure and function. One is a quick lever; the other is deeper training.",
     },
     {
       question: "Which is better for anxiety, meditation or breathwork?",
@@ -2061,7 +2061,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can fast breathing raise my HRV?",
       answer:
-        "Not the way slow breathing does. Slow breathing with a long exhale raises HRV by activating the vagus nerve; fast forceful breathing drives sympathetic arousal instead.",
+        "Not the way slow breathing does. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; fast forceful breathing drives sympathetic arousal instead.",
     },
     {
       question: "Which pranayama should I do before bed?",
@@ -2142,7 +2142,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Does breathing still help if my HRV is low because of age?",
       answer:
-        "Yes. HRV declines with age, but the mechanism — a long, slow exhale activating the vagus nerve and baroreflex — still works. You start from a lower baseline, but the calming shift is the same.",
+        "Yes. HRV declines with age, but the mechanism still works: slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it engages the baroreflex. You start from a lower baseline, but the calming shift is the same.",
     },
     {
       question: "How should an older adult practice breathing?",
@@ -2164,7 +2164,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Why is nasal breathing calming?",
       answer:
-        "It's slower and more resistive, encouraging a longer controlled breath that activates the vagus nerve, and it engages nasal nitric oxide that supports blood flow. Mouth breathing tends to be faster and more activating.",
+        "It's slower and more resistive, encouraging a longer, controlled exhale (slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise), and it engages nasal nitric oxide that supports blood flow. Mouth breathing tends to be faster and more activating.",
     },
     {
       question: "Is mouth breathing ever okay?",
@@ -2840,12 +2840,12 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can you actually train your nervous system?",
       answer:
-        "Yes. The autonomic nervous system is trainable like a muscle: how fast you shift from stressed to calm, and how well you hold calm, improves with practice. Training it means strengthening the parasympathetic brake so you can down-regulate on demand and speeding your return to calm after stress. Vagal tone is the trainable quantity and HRV is the scoreboard. It is a self-regulation practice, not a medical treatment.",
+        "Yes. The autonomic nervous system is trainable like a muscle: how fast you shift from stressed to calm, and how well you hold calm, improves with practice. Training it means strengthening the parasympathetic brake so you can down-regulate on demand and speeding your return to calm after stress. Vagal tone cannot be measured directly; HRV reflects vagally mediated changes, which makes it the scoreboard. It is a self-regulation practice, not a medical treatment.",
     },
     {
       question: "How do I train my nervous system to relax?",
       answer:
-        "The most direct lever is slow, exhale-led breathing: a long out-breath stimulates the vagus nerve and hands tone to the parasympathetic branch, and repeated daily it rehearses the tense-to-calm transition until it is faster and automatic. Support it with sleep, aerobic fitness, vagal-tone exercises and boundaries around chronic stress, and use HRV biofeedback to see the brake engage.",
+        "The most direct lever is slow, exhale-led breathing: slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and repeated daily it rehearses the tense-to-calm transition until it is faster and automatic. Support it with sleep, aerobic fitness, vagal-tone exercises and boundaries around chronic stress, and use HRV biofeedback to see the brake engage.",
     },
     {
       question: "How long does it take to train your nervous system?",
@@ -2862,7 +2862,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I calm my nervous system down fast?",
       answer:
-        "Breathe low and slow with the exhale longer than the inhale — try in for 4, out for 6 — for a couple of minutes. A long out-breath stimulates the vagus nerve and hands tone to the parasympathetic branch, so the heart slows on each exhale and the system follows the breath toward calm. You cannot think your way calm, but you can breathe your way there.",
+        "Breathe low and slow with the exhale longer than the inhale — try in for 4, out for 6 — for a couple of minutes. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, so the heart slows on each exhale and the system follows the breath toward calm. You cannot think your way calm, but you can breathe your way there.",
     },
     {
       question: "Why can't I relax even when I try?",
@@ -2906,7 +2906,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I relax my body before sleep?",
       answer:
-        "Start a wind-down 30–60 minutes before bed and anchor it with a few minutes of slow, exhale-led breathing, in bed if you like. A long out-breath stimulates the vagus nerve and starts your heart rate falling — the parasympathetic state sleep onset needs. You are not forcing sleep; you are producing the descent that lets it happen. It is a relaxation practice, not a treatment for insomnia.",
+        "Start a wind-down 30–60 minutes before bed and anchor it with a few minutes of slow, exhale-led breathing, in bed if you like. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it starts your heart rate falling — the parasympathetic state sleep onset needs. You are not forcing sleep; you are producing the descent that lets it happen. It is a relaxation practice, not a treatment for insomnia.",
     },
     {
       question: "Why is my body still wired at bedtime even when I'm tired?",
@@ -2933,7 +2933,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I stop reacting so strongly to things?",
       answer:
-        "Strong reactions happen because a wave of sympathetic activation arrives before your conscious mind votes, so willpower is too late. Reach it through the breath: at the first flicker of the reaction, a long exhale stimulates the vagus nerve and buys a pause in which a chosen response becomes possible. Do it early, before the reaction accelerates, and train the brake daily so the pause is easier to find.",
+        "Strong reactions happen because a wave of sympathetic activation arrives before your conscious mind votes, so willpower is too late. Reach it through the breath: at the first flicker of the reaction, a slow, long exhale (associated with higher vagally mediated HRV while you practise) buys a pause in which a chosen response becomes possible. Do it early, before the reaction accelerates, and train the brake daily so the pause is easier to find.",
     },
     {
       question: "How do I calm down before a difficult conversation?",

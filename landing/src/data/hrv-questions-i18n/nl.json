@@ -38,7 +38,7 @@
         {
           "id": "breathing-and-hrv",
           "q": "Waarom verandert mijn HRV als ik in- en uitadem?",
-          "a": "Je hart versnelt licht bij elke inademing en vertraagt bij elke uitademing — een normaal patroon dat respiratoire sinusaritmie heet. Langzaam ademen maakt deze schommelingen groter, daarom schiet HRV omhoog tijdens een ademsessie. Onderzoek naar resonantieademhaling (Lehrer en collega's) laat zien dat de schommelingen bij de meeste volwassenen het grootst zijn bij ongeveer 5–7 ademhalingen per minuut. [Resonantieademhaling →](/tools/resonance-breathing)"
+          "a": "Je hart versnelt licht bij elke inademing en vertraagt bij elke uitademing — een normaal patroon dat respiratoire sinusaritmie heet. Langzaam ademen maakt deze schommelingen groter, daarom schiet HRV omhoog tijdens een ademsessie. Onderzoek naar resonantieademhaling (Lehrer en collega's) laat zien dat de schommelingen het grootst zijn bij een persoonlijk tempo van ongeveer 4,5–7 ademhalingen per minuut, meestal ongeveer 5,5–6. [Resonantieademhaling →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "id": "best-breathing-for-hrv",
           "q": "Welke ademhalingstechniek is het beste voor HRV?",
-          "a": "Langzaam, gelijkmatig ademen op je resonantietempo — meestal 5–7 ademhalingen per minuut — geeft de grootste HRV-schommelingen. Box breathing en 4-7-8 vertragen je ook, en de fysiologische zucht is goed voor een snelle reset. Regelmaat telt meer dan de keuze van techniek. [Resonantieademhaling →](/tools/resonance-breathing) · [4-7-8-ademhaling →](/articles/4-7-8-breathing)"
+          "a": "Langzaam, gelijkmatig ademen op je resonantietempo — ongeveer 4,5–7 ademhalingen per minuut, meestal ongeveer 5,5–6 — geeft de grootste HRV-schommelingen. Box breathing en 4-7-8 vertragen je ook, en de fysiologische zucht is goed voor een snelle reset. Regelmaat telt meer dan de keuze van techniek. [Resonantieademhaling →](/tools/resonance-breathing) · [4-7-8-ademhaling →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
@@ -188,7 +188,7 @@
         {
           "id": "cold-wim-hof-hrv",
           "q": "Verhogen koude douches of de Wim Hof-ademhaling je HRV?",
-          "a": "Kou activeert kortstondig de nervus vagus en kan HRV daarna iets verhogen, maar het bewijs op lange termijn is dun. De Wim Hof-ademhaling is snel hyperventileren gevolgd door de adem inhouden — een ander hulpmiddel dan langzaam ademen, en niet de eerste keus om HRV te verhogen. [Eerlijke grenzen van ademhaling en kou →](/articles/hrv-breathing-cold-honest-limits) · [Wim Hof-timer →](/tools/wim-hof)"
+          "a": "Kou hangt samen met een korte vagale reactie en kan HRV daarna iets verhogen, maar het bewijs op lange termijn is dun. De Wim Hof-ademhaling is snel hyperventileren gevolgd door de adem inhouden — een ander hulpmiddel dan langzaam ademen, en niet de eerste keus om HRV te verhogen. [Eerlijke grenzen van ademhaling en kou →](/articles/hrv-breathing-cold-honest-limits) · [Wim Hof-timer →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Moet ik naar één HRV-meting kijken of naar de trend?",
-          "a": "Naar de trend. HRV beweegt van dag tot dag flink om gewone redenen, dus één ochtend zegt weinig. Een 7-daags gemiddelde tegenover je bereik over 2–4 weken is veel betekenisvoller. [Bekijk je bereik over twee weken →](/tools/baseline)"
+          "a": "Naar de trend. HRV beweegt van dag tot dag flink om gewone redenen, dus één ochtend zegt weinig. Vergelijk elke meting met je eigen recente bereik: de ONDA-app vergelijkt bijvoorbeeld elke nacht met je corridor (het gemiddelde van je recente nachten ± één standaardafwijking), heeft minstens 7 nachten nodig en bouwt de baseline op over 14 dagen. [Bekijk je bereik over twee weken →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

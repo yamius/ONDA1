@@ -51,7 +51,7 @@
   },
   "flags": {
     "tachy": "Ein Ruhepuls über 100 S/min wird Tachykardie genannt. Bleibt er in Ruhe so hoch oder kommen Herzstolpern, Schwindel oder Atemnot dazu, geh zum Arzt.",
-    "brady": "Unter 50 S/min ist für viele Trainierte normal. Kommen Schwindel, Ohnmacht, ungewöhnliche Müdigkeit oder Atemnot dazu, geh zum Arzt."
+    "brady": "Unter 50 S/min kann bei fitten, trainierten Menschen normal sein und ist meist nur relevant, wenn Beschwerden wie Schwindel, Ohnmacht oder Atemnot dazukommen – dann geh zum Arzt."
   },
   "wearableNote": "Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als die Messung im Sitzen, auf der diese Normwerte beruhen — ein Wearable-Wert kann also etwas besser aussehen, als er ist. Vergleiche deinen eigenen Wochendurchschnitt.",
   "invalid": "Gib ein gültiges Alter (18–120) und einen gültigen Ruhepuls (30–150 S/min) ein.",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "Normaler Ruhepuls: Was ist nach Alter normal?",
-      "body": "Bei Erwachsenen gilt ein Ruhepuls zwischen 60 und 100 S/min als normal, viele Kardiologen betrachten etwa 50–90 S/min als gesunden Bereich. In der NHANES-Erhebung der CDC unter gesunden US-Erwachsenen lag der mediane Ruhepuls im Sitzen bei Männern mit 18–39 Jahren bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min — über das Erwachsenenleben fast konstant. Die mittlere Hälfte der Männer (p25–p75) lag zwischen etwa 60 und 77 S/min. Anders als die HRV verändert sich der Ruhepuls bei Erwachsenen mit dem Alter kaum; Fitness, Gene, Schlaf und Stress spielen eine viel größere Rolle. Deshalb ist der Vergleich mit deinem eigenen Morgenverlauf am aussagekräftigsten. Ausführlicher Ratgeber: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
+      "body": "Bei Erwachsenen gilt ein Ruhepuls zwischen 60 und 100 S/min als normal. Fitte Menschen liegen oft niedriger (oft 40–60 S/min), und manche Studien bringen etwa 50–90 S/min mit besserer langfristiger Gesundheit in Verbindung. In der NHANES-Erhebung der CDC unter gesunden US-Erwachsenen lag der mediane Ruhepuls im Sitzen bei Männern mit 18–39 Jahren bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min — über das Erwachsenenleben fast konstant. Die mittlere Hälfte der Männer (p25–p75) lag zwischen etwa 60 und 77 S/min. Anders als die HRV verändert sich der Ruhepuls bei Erwachsenen mit dem Alter kaum; Fitness, Gene, Schlaf und Stress spielen eine viel größere Rolle. Deshalb ist der Vergleich mit deinem eigenen Morgenverlauf am aussagekräftigsten. Ausführlicher Ratgeber: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Ruhepuls-Tabelle Frau: normale Werte für Frauen",
@@ -128,7 +128,7 @@
   "methodology": "Die Tabellen stammen direkt aus dem CDC/NCHS-Bericht zu NHANES 1999–2008 (Ostchega et al. 2011, Tabellen 2–3): Ruhepuls im Sitzen von rund 17.000 US-Erwachsenen, ohne Personen mit Erkrankungen oder Medikamenten, die den Puls beeinflussen. Die Gruppe 18–39 nutzt die Zeile 20–39, die Gruppe 60+ die Zeile 60–79. Dein Perzentil wird zwischen den veröffentlichten 5.–95. Perzentilen für dein Alter und Geschlecht interpoliert. Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als eine Messung im Sitzen.",
   "sourcesContributes": [
     "Direkte Quelle der Tabellen: Perzentile des Ruhepulses im Sitzen nach Alter und Geschlecht aus NHANES 1999–2008, ohne pulsbeeinflussende Erkrankungen und Medikamente (Tabellen 2–3).",
-    "Klinischer Kontext: Ein normaler Ruhepuls liegt bei etwa 50–90 S/min, niedriger bei sehr Fitten, etwas höher bei Frauen und ist teilweise genetisch bedingt.",
+    "Klinischer Kontext: 60–100 S/min ist der übliche Normalbereich, und manche Studien bringen etwa 50–90 S/min mit besserer langfristiger Gesundheit in Verbindung; niedriger bei sehr Fitten, etwas höher bei Frauen und ist teilweise genetisch bedingt.",
     "Metaanalyse (rund 1,2 Millionen Menschen): Jeder um 10 S/min höhere Ruhepuls ist mit etwa 9 % höherer Gesamtsterblichkeit verbunden — deshalb zählt ein niedrigerer Ruhepuls."
   ],
   "related": {

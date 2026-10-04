@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Accueil", "tools": "Outils", "current": "Respiration en résonance" },
   "h1": "Respiration en résonance",
-  "capsule": "La respiration en résonance consiste à respirer lentement et régulièrement à votre rythme personnel — généralement entre 4,5 et 6,5 respirations par minute — là où le rythme cardiaque et la respiration se synchronisent et où la variabilité de la fréquence cardiaque (VFC) oscille le plus. Choisissez un rythme, appuyez sur démarrer et respirez avec le cercle ; testez chaque rythme environ 2 minutes et gardez celui qui vous paraît le plus fluide.",
+  "capsule": "La respiration en résonance consiste à respirer lentement et régulièrement à votre rythme personnel — généralement environ 4,5 à 7 respirations par minute — là où le rythme cardiaque et la respiration se synchronisent et où la variabilité de la fréquence cardiaque (VFC) oscille le plus. Choisissez un rythme, appuyez sur démarrer et respirez avec le cercle ; testez chaque rythme environ 2 minutes et gardez celui qui vous paraît le plus fluide.",
   "imageAlt": "Guide de respiration en résonance — respirez avec le cercle entre 4,5 et 6,5 respirations par minute, outil gratuit d'ONDA Life",
   "ui": {
     "height": "Taille (cm) — facultatif",
@@ -63,7 +63,7 @@
   ],
   "faqTitle": "Respiration en résonance — questions fréquentes",
   "faq": [
-    { "q": "Qu'est-ce que la respiration à la fréquence de résonance ?", "a": "Respirer lentement à votre rythme personnel — généralement 4,5 à 6,5 respirations par minute — là où le rythme cardiaque et la respiration se synchronisent et où la VFC oscille le plus. C'est la technique centrale du biofeedback de VFC." },
+    { "q": "Qu'est-ce que la respiration à la fréquence de résonance ?", "a": "Respirer lentement à votre rythme personnel — généralement environ 4,5 à 7 respirations par minute — là où le rythme cardiaque et la respiration se synchronisent et où la VFC oscille le plus. C'est la technique centrale du biofeedback de VFC." },
     { "q": "Comment trouver ma fréquence de résonance ?", "a": "Respirez environ 2 minutes à chacun des rythmes 6,5, 6,0, 5,5, 5,0 et 4,5 respirations par minute et gardez celui qui vous paraît le plus fluide. Avec un appareil qui affiche la VFC battement par battement, choisissez le rythme aux vagues de fréquence cardiaque les plus amples et régulières." },
     { "q": "La respiration en résonance, est-ce la même chose que la cohérence cardiaque ?", "a": "Presque. La cohérence cardiaque utilise un rythme fixe d'environ 5 à 6 respirations par minute ; la respiration en résonance adapte ce rythme à votre corps." },
     { "q": "La taille influence-t-elle la fréquence de résonance ?", "a": "Les personnes plus grandes et les hommes ont tendance à avoir une fréquence de résonance un peu plus lente, c'est pourquoi cet outil propose un point de départ basé sur la taille. Ce n'est qu'un repère — testez les rythmes pour trouver le vôtre." },
@@ -71,7 +71,7 @@
     { "q": "La respiration en résonance augmente-t-elle la VFC ?", "a": "Oui, la VFC augmente pendant que vous respirez à ce rythme, et une pratique régulière est associée à un meilleur fonctionnement du baroréflexe et à une humeur plus sereine. Elle accompagne les soins médicaux, sans les remplacer." }
   ],
   "sourcesTitle": "Sources et méthodologie",
-  "methodology": "À un rythme personnel — généralement 4,5 à 6,5 respirations par minute — les oscillations de la fréquence cardiaque, la respiration et le baroréflexe entrent en phase et l'amplitude de la VFC atteint son maximum (Lehrer 2003). La méthode standard pour le trouver consiste à respirer quelques minutes à chaque rythme et à mesurer lequel produit les oscillations cardiaques les plus amples et les plus régulières (Shaffer 2020). Sans capteur, le rythme qui paraît le plus fluide et le plus apaisant est un choix raisonnable. La suggestion basée sur la taille n'est qu'un point de départ approximatif. Outil éducatif, pas un dispositif médical.",
+  "methodology": "À un rythme personnel — généralement environ 4,5 à 7 respirations par minute — les oscillations de la fréquence cardiaque, la respiration et le baroréflexe entrent en phase et l'amplitude de la VFC atteint son maximum (Lehrer 2003). La méthode standard pour le trouver consiste à respirer quelques minutes à chaque rythme et à mesurer lequel produit les oscillations cardiaques les plus amples et les plus régulières (Shaffer 2020). Sans capteur, le rythme qui paraît le plus fluide et le plus apaisant est un choix raisonnable. La suggestion basée sur la taille n'est qu'un point de départ approximatif. Outil éducatif, pas un dispositif médical.",
   "sourcesContributes": [
     "Travaux fondateurs établissant le concept de fréquence de résonance et son mécanisme baroréflexe.",
     "Le protocole pour trouver la fréquence de résonance individuelle en testant une série de rythmes respiratoires.",

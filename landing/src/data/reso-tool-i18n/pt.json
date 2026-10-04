@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Respiração de ressonância" },
   "h1": "Respiração de ressonância",
-  "capsule": "Respiração de ressonância é respirar de forma lenta e regular no seu ritmo pessoal — geralmente entre 4,5 e 6,5 respirações por minuto —, em que o ritmo cardíaco e a respiração entram em sintonia e a variabilidade da frequência cardíaca (VFC/HRV) oscila ao máximo. Escolha um ritmo, aperte iniciar e respire com o círculo; teste cada ritmo por cerca de 2 minutos e fique com o que parecer mais suave.",
+  "capsule": "Respiração de ressonância é respirar de forma lenta e regular no seu ritmo pessoal — geralmente cerca de 4,5–7 respirações por minuto —, em que o ritmo cardíaco e a respiração entram em sintonia e a variabilidade da frequência cardíaca (VFC/HRV) oscila ao máximo. Escolha um ritmo, aperte iniciar e respire com o círculo; teste cada ritmo por cerca de 2 minutos e fique com o que parecer mais suave.",
   "imageAlt": "Guia de respiração de ressonância — respire com o círculo a 4,5 a 6,5 respirações por minuto, ferramenta grátis da ONDA Life",
   "ui": {
     "height": "Altura (cm) — opcional",
@@ -63,7 +63,7 @@
   ],
   "faqTitle": "Respiração de ressonância e coerência cardíaca — perguntas frequentes",
   "faq": [
-    { "q": "O que é a respiração de frequência de ressonância?", "a": "É respirar devagar no seu ritmo pessoal — geralmente 4,5–6,5 respirações por minuto —, em que o ritmo cardíaco e a respiração se movem em sintonia e a VFC oscila ao máximo. É a técnica central do biofeedback de VFC." },
+    { "q": "O que é a respiração de frequência de ressonância?", "a": "É respirar devagar no seu ritmo pessoal — geralmente cerca de 4,5–7 respirações por minuto —, em que o ritmo cardíaco e a respiração se movem em sintonia e a VFC oscila ao máximo. É a técnica central do biofeedback de VFC." },
     { "q": "Como acho meu ritmo de ressonância?", "a": "Respire cerca de 2 minutos em cada ritmo — 6,5, 6,0, 5,5, 5,0 e 4,5 respirações por minuto — e fique com o que parecer mais suave. Com um aparelho que mostre a VFC batimento a batimento, escolha o ritmo com as ondas de frequência cardíaca maiores e mais regulares." },
     { "q": "Respiração de ressonância é o mesmo que respiração coerente?", "a": "Quase. A respiração coerente usa um ritmo fixo de cerca de 5–6 respirações por minuto; a respiração de ressonância personaliza esse ritmo para o seu corpo." },
     { "q": "A altura influencia a frequência de ressonância?", "a": "Pessoas mais altas e homens tendem a ter um ritmo de ressonância um pouco mais lento, por isso esta ferramenta oferece um ponto de partida baseado na altura. É só uma referência — teste os ritmos para achar o seu." },
@@ -71,7 +71,7 @@
     { "q": "A respiração de ressonância aumenta a VFC?", "a": "Sim, a VFC sobe enquanto você respira nesse ritmo, e a prática regular está ligada a uma melhor função do barorreflexo e a um humor mais calmo. Ela complementa, mas não substitui, o cuidado médico." }
   ],
   "sourcesTitle": "Fontes e metodologia",
-  "methodology": "Num ritmo pessoal — geralmente 4,5–6,5 respirações por minuto —, as oscilações da frequência cardíaca, a respiração e o barorreflexo entram em fase e a amplitude da VFC atinge o pico (Lehrer 2003). A forma padrão de encontrá-lo é respirar em cada ritmo por alguns minutos e medir qual produz as oscilações de frequência cardíaca maiores e mais suaves (Shaffer 2020). Sem sensor, o ritmo que parecer mais suave e calmo é uma escolha razoável. A sugestão baseada na altura é só um ponto de partida aproximado. Ferramenta educativa, não é dispositivo médico.",
+  "methodology": "Num ritmo pessoal — geralmente cerca de 4,5–7 respirações por minuto —, as oscilações da frequência cardíaca, a respiração e o barorreflexo entram em fase e a amplitude da VFC atinge o pico (Lehrer 2003). A forma padrão de encontrá-lo é respirar em cada ritmo por alguns minutos e medir qual produz as oscilações de frequência cardíaca maiores e mais suaves (Shaffer 2020). Sem sensor, o ritmo que parecer mais suave e calmo é uma escolha razoável. A sugestão baseada na altura é só um ponto de partida aproximado. Ferramenta educativa, não é dispositivo médico.",
   "sourcesContributes": [
     "Trabalho fundamental que estabeleceu o conceito de frequência de ressonância e seu mecanismo barorreflexo.",
     "O protocolo para encontrar a frequência de ressonância individual testando uma série de ritmos respiratórios.",

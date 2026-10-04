@@ -20,7 +20,7 @@ const article: Article = {
   imageTitle: '[RESONANCE_LOCK]: Breathing at ~6/min to maximise heart-rate variability.',
   imagePlacement: 'header',
   neuralSuggestion: {
-    text: 'Find your personal resonance rate (~4.5–6.5/min) and pace it with the circle.',
+    text: 'Find your personal resonance rate (about 4.5–7/min) and pace it with the circle.',
     link: '/tools/resonance-breathing',
     linkText: 'Resonance Breathing Finder →',
   },
@@ -28,7 +28,7 @@ const article: Article = {
     { name: 'Breathe ~6 per minute', text: 'Inhale ~5 seconds, exhale ~5 seconds, evenly and through the nose — about six breaths a minute.', protocolId: 'coherent-rate' },
     { name: 'Keep it smooth and effortless', text: 'No breath-holds, no straining; the breath should be gentle and continuous, belly-led.', protocolId: 'coherent-smooth' },
     { name: 'Practise 10–20 minutes', text: 'Sessions of 10–20 minutes, once or twice daily, build the largest benefit over weeks.', protocolId: 'coherent-dose' },
-    { name: 'Dial in your exact rate', text: 'Your personal resonance frequency sits between 4.5 and 6.5/min — test to find where you feel calmest.', protocolId: 'coherent-personal' },
+    { name: 'Dial in your exact rate', text: 'Your personal resonance frequency sits at about 4.5–7 breaths per minute — test to find where you feel calmest.', protocolId: 'coherent-personal' },
   ],
   content: `
 ## [ PROTOCOL: COHERENT_BREATHING // RESONANCE_LOCK ]
@@ -41,7 +41,7 @@ const article: Article = {
 
 Around six breaths per minute (0.1 Hz) is the **resonance frequency** of the cardiovascular system. Breathe there and you maximally stimulate the baroreflex — the loop that buffers blood pressure — driving large, coherent heart-rate oscillations and shifting the balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve) (Lehrer 2003; Lehrer & Gevirtz 2014). This is the engine of HRV biofeedback.
 
-It isn’t exactly six for everyone — personal resonance sits between about 4.5 and 6.5/min. The [Resonance Breathing Finder](/tools/resonance-breathing) helps you home in on yours; if you just want a paced circle, the [Breathing Pacer](/tools/breathing) has a coherent preset.
+It isn’t exactly six for everyone — personal resonance sits at about 4.5–7 breaths per minute. The [Resonance Breathing Finder](/tools/resonance-breathing) helps you home in on yours; if you just want a paced circle, the [Breathing Pacer](/tools/breathing) has a coherent preset.
 
 ---
 

@@ -41,7 +41,7 @@ In France, cardiac coherence grew out of a clinical biofeedback tradition in neu
 
 ## How it works for sleep
 
-- **Slow breathing around six breaths per minute** brings heart-rate and blood-pressure rhythms into resonance, strongly engaging the vagus nerve and the [baroreflex](/articles/high-blood-pressure-slow-breathing).
+- **Slow breathing around six breaths per minute** brings heart-rate and blood-pressure rhythms into resonance, is associated with higher vagally mediated HRV while you practise and engages the [baroreflex](/articles/high-blood-pressure-slow-breathing).
 - **That shifts you from sympathetic toward parasympathetic dominance** — the opposite of the hyperarousal that defines insomnia.
 - **HRV rises** as the visible sign of that shift, and the emotional charge around bedtime eases.
 - **Repeated practice** trains the nervous system to downshift more readily, so the benefit builds over weeks.

@@ -71,7 +71,7 @@ ONDA works to improve that signal-to-noise — less static, clearer signal — t
 
 ### Inhibitory Tuning
 
-Deep exhalations and specific visual patterns stimulate the vagus nerve, which pumps the GABA system and dampens neural noise in real time.
+Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise — a calmer state in which neural noise tends to settle.
 
 ### Sensory Gating
 

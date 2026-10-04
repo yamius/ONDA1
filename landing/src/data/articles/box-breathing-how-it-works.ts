@@ -69,7 +69,7 @@ Don't count in your head — let the [Breathing Pacer](/tools/breathing) run the
 
 > **The Hack:** Breathe through the nose into the belly (the [diaphragm](/glossary/diaphragm)), not the chest, and keep it silent and smooth.
 
-**The Logic:** Nasal, diaphragmatic breathing slows the rate naturally and engages the vagus more than shallow chest breathing. If you're audibly straining, ease off the counts.
+**The Logic:** Nasal, diaphragmatic breathing slows the rate naturally, and slow breathing is associated with higher vagally mediated HRV than shallow chest breathing. If you're audibly straining, ease off the counts.
 
 ### PROTOCOL 3: Shorten the Box if You're Light-Headed
 

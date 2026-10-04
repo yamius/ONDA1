@@ -16,7 +16,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   'hrv-heart-rate': [
     {
       q: 'What is a normal resting heart rate by age?',
-      a: 'For adults of every age, a normal resting heart rate is 60 to 100 beats per minute; the big changes happen in childhood, when newborns run at 100–160 bpm and rates settle through the teens. Fit adults often sit in the 40s or 50s. Within the normal range, your own trend tells you more than the population average.',
+      a: 'For adults of every age, a normal resting heart rate is 60 to 100 beats per minute; the big changes happen in childhood, when newborns run at 100–160 bpm and rates settle through the teens. Fit adults often sit lower (often 40–60 bpm), and some research links roughly 50–90 bpm with better long-term health. Within the normal range, your own trend tells you more than the population average.',
       links: [
         { href: '/articles/resting-heart-rate-by-age', label: 'Resting heart rate by age' },
         { href: '/tools/resting-heart-rate', label: 'Resting heart rate calculator' },
@@ -75,7 +75,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: 'How can I calm my nervous system quickly?',
-      a: 'Make the exhale longer than the inhale. A long, slow out-breath activates the vagus nerve and slows the heart within a minute or two; humming while you exhale adds to the effect. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.',
+      a: 'Make the exhale longer than the inhale. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it slows the heart within a minute or two; humming while you exhale adds to the effect. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.',
       links: [
         { href: '/articles/humming-breath-vagus', label: 'Humming breath and the vagus nerve' },
         { href: '/tools/resonance-breathing', label: 'Resonance breathing pacer' },
@@ -107,7 +107,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: 'What is resonance (coherent) breathing, and how do I find my rate?',
-      a: 'Resonance breathing is slow, even breathing — typically inhaling and exhaling for about five seconds each — at the pace where your heart rate swings most with each breath. For most adults that is between five and seven breaths per minute; you find yours by trying a few paces and noting which feels and measures calmest.',
+      a: 'Resonance breathing is slow, even breathing — typically about 5.5 seconds in and 5.5 seconds out — at the pace where your heart rate swings most with each breath. For most adults that is about 5.5–6 breaths per minute, with individual rates from about 4.5 to 7; you find yours by trying a few paces and noting which feels and measures calmest.',
       links: [
         { href: '/articles/coherent-breathing-guide', label: 'Coherent breathing guide' },
         { href: '/articles/find-your-resonance-breathing-rate', label: 'Find your resonance rate' },
@@ -168,7 +168,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   'stress-vagus': [
     {
       q: "How do I calm my nervous system quickly?",
-      a: "Breathe with a longer exhale than inhale: in for 4, out for 6, low in the belly, for 3–5 minutes. The long out-breath stimulates the vagus nerve and slows your heart within minutes. Humming on the exhale or splashing cold water on your face for about 30 seconds works as a quick extra lever.",
+      a: "Breathe with a longer exhale than inhale: in for 4, out for 6, low in the belly, for 3–5 minutes. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it slows your heart within minutes. Humming on the exhale or splashing cold water on your face for about 30 seconds works as a quick extra lever.",
       links: [{ href: "/articles/calm-your-nervous-system-down", label: "How to calm your nervous system down" }, { href: "/tools/breathing", label: "Breathing timer" }],
     },
     {
@@ -210,7 +210,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "Is breathwork better than meditation?",
-      a: "Neither is better; they work differently. Breathwork acts in minutes: slow breathing at about six breaths per minute stimulates the vagus nerve, raises HRV and calms you fast, so it suits acute stress. Meditation works over weeks to months, building attention control and lower reactivity. Many people use breathwork for the moment and meditation for the long run.",
+      a: "Neither is better; they work differently. Breathwork acts in minutes: slow breathing at about six breaths per minute is associated with higher vagally mediated HRV while you practise and calms you fast, so it suits acute stress. Meditation works over weeks to months, building attention control and lower reactivity. Many people use breathwork for the moment and meditation for the long run.",
       links: [{ href: "/articles/meditation-vs-breathwork", label: "Meditation vs breathwork: which should you choose?" }, { href: "/tools/breathing", label: "Breathing exercise tool" }],
     },
     {

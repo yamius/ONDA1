@@ -38,7 +38,7 @@
         {
           "id": "breathing-and-hrv",
           "q": "Perché l'HRV cambia quando inspiro ed espiro?",
-          "a": "Il cuore accelera leggermente a ogni inspirazione e rallenta a ogni espirazione — un fenomeno normale chiamato aritmia sinusale respiratoria. Respirare lentamente amplia queste oscillazioni, ed è per questo che i valori di HRV salgono durante una sessione di respirazione. Le ricerche sulla respirazione di risonanza (Lehrer e colleghi) mostrano che le oscillazioni sono massime a circa 5–7 respiri al minuto per la maggior parte degli adulti. [Respirazione di risonanza →](/tools/resonance-breathing)"
+          "a": "Il cuore accelera leggermente a ogni inspirazione e rallenta a ogni espirazione — un fenomeno normale chiamato aritmia sinusale respiratoria. Respirare lentamente amplia queste oscillazioni, ed è per questo che i valori di HRV salgono durante una sessione di respirazione. Le ricerche sulla respirazione di risonanza (Lehrer e colleghi) mostrano che le oscillazioni sono massime a un ritmo personale di circa 4,5–7 respiri al minuto, in genere circa 5,5–6. [Respirazione di risonanza →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "id": "best-breathing-for-hrv",
           "q": "Qual è la tecnica di respirazione migliore per l'HRV?",
-          "a": "Una respirazione lenta e regolare al tuo ritmo di risonanza — in genere 5–7 respiri al minuto — produce le oscillazioni di HRV più ampie. Anche la box breathing e la 4-7-8 ti rallentano, e il sospiro fisiologico è utile per un reset veloce. La costanza conta più della tecnica scelta. [Respirazione di risonanza →](/tools/resonance-breathing) · [Respirazione 4-7-8 →](/articles/4-7-8-breathing)"
+          "a": "Una respirazione lenta e regolare al tuo ritmo di risonanza — circa 4,5–7 respiri al minuto, in genere circa 5,5–6 — produce le oscillazioni di HRV più ampie. Anche la box breathing e la 4-7-8 ti rallentano, e il sospiro fisiologico è utile per un reset veloce. La costanza conta più della tecnica scelta. [Respirazione di risonanza →](/tools/resonance-breathing) · [Respirazione 4-7-8 →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
@@ -188,7 +188,7 @@
         {
           "id": "cold-wim-hof-hrv",
           "q": "Docce fredde o respirazione Wim Hof aumentano l'HRV?",
-          "a": "L'esposizione al freddo attiva brevemente il nervo vago e può alzare un po' l'HRV subito dopo, ma le prove a lungo termine sono scarse. La respirazione Wim Hof è un'iperventilazione rapida seguita da apnee — uno strumento diverso dalla respirazione lenta, e non la prima scelta per alzare l'HRV. [I limiti reali di respirazione e freddo →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hof →](/tools/wim-hof)"
+          "a": "L'esposizione al freddo è legata a una breve risposta vagale e può alzare un po' l'HRV subito dopo, ma le prove a lungo termine sono scarse. La respirazione Wim Hof è un'iperventilazione rapida seguita da apnee — uno strumento diverso dalla respirazione lenta, e non la prima scelta per alzare l'HRV. [I limiti reali di respirazione e freddo →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hof →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Meglio guardare la singola misurazione di HRV o l'andamento?",
-          "a": "L'andamento. L'HRV giornaliero varia molto per motivi ordinari, quindi una mattina dice poco. Una media di 7 giorni rispetto al tuo intervallo di 2–4 settimane è molto più significativa. [Scopri il tuo intervallo di due settimane →](/tools/baseline)"
+          "a": "L'andamento. L'HRV giornaliero varia molto per motivi ordinari, quindi una mattina dice poco. Confronta ogni lettura con il tuo intervallo recente: l'app ONDA, per esempio, confronta ogni notte con il tuo corridoio (la media delle tue notti recenti ± una deviazione standard), richiede almeno 7 notti e costruisce la baseline in 14 giorni. [Scopri il tuo intervallo di due settimane →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

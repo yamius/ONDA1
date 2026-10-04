@@ -51,7 +51,7 @@
   },
   "flags": {
     "tachy": "Frequência cardíaca de repouso acima de 100 bpm é chamada de taquicardia. Se ela se mantiver alta em repouso ou vier com palpitações, tontura ou falta de ar, procure um médico.",
-    "brady": "Abaixo de 50 bpm é normal para muitas pessoas treinadas. Se vier com tontura, desmaio, cansaço fora do comum ou falta de ar, procure um médico."
+    "brady": "Abaixo de 50 bpm pode ser normal para pessoas em boa forma e treinadas, e geralmente só importa se vier com sintomas como tontura, desmaio ou falta de ar — nesse caso, procure um médico."
   },
   "wearableNote": "Relógios e anéis medem a frequência em repouso ou durante o sono, que costuma ficar alguns bpm abaixo da medição sentada em que estas normas se baseiam — então o número do wearable pode parecer um pouco melhor do que é. Compare sua própria média semanal.",
   "invalid": "Informe uma idade válida (18–120) e uma frequência cardíaca de repouso válida (30–150 bpm).",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "Quantos batimentos são normais em repouso para cada idade?",
-      "body": "Em adultos, uma frequência cardíaca de repouso entre 60 e 100 bpm é considerada normal, e muitos cardiologistas tratam cerca de 50–90 bpm como a faixa saudável. Na pesquisa NHANES do CDC com adultos saudáveis dos EUA, a mediana do pulso em repouso, sentado, foi de cerca de 69 bpm nos homens de 18–39 anos, 68 bpm aos 40–59 e 67 bpm a partir dos 60 — praticamente estável ao longo da vida adulta. A metade central dos homens (p25–p75) ficou entre cerca de 60 e 77 bpm. Diferente da HRV, a frequência de repouso quase não muda com a idade em adultos; condicionamento, genética, sono e estresse pesam muito mais. Por isso a comparação mais útil é com a sua própria tendência matinal. Guia completo: [frequência cardíaca de repouso por idade](/articles/resting-heart-rate-by-age)."
+      "body": "Em adultos, uma frequência cardíaca de repouso entre 60 e 100 bpm é considerada normal. Pessoas em boa forma muitas vezes ficam abaixo disso (muitas vezes 40–60 bpm), e algumas pesquisas associam cerca de 50–90 bpm a uma saúde melhor no longo prazo. Na pesquisa NHANES do CDC com adultos saudáveis dos EUA, a mediana do pulso em repouso, sentado, foi de cerca de 69 bpm nos homens de 18–39 anos, 68 bpm aos 40–59 e 67 bpm a partir dos 60 — praticamente estável ao longo da vida adulta. A metade central dos homens (p25–p75) ficou entre cerca de 60 e 77 bpm. Diferente da HRV, a frequência de repouso quase não muda com a idade em adultos; condicionamento, genética, sono e estresse pesam muito mais. Por isso a comparação mais útil é com a sua própria tendência matinal. Guia completo: [frequência cardíaca de repouso por idade](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Qual a frequência cardíaca normal da mulher em repouso?",
@@ -128,7 +128,7 @@
   "methodology": "As tabelas vêm diretamente do relatório do CDC/NCHS sobre o NHANES 1999–2008 (Ostchega et al. 2011, Tabelas 2–3): pulso em repouso, sentado, de cerca de 17.000 adultos dos EUA, excluindo pessoas com condições ou medicamentos que afetam o pulso. A faixa de 18–39 anos usa a linha de 20–39 e a faixa de 60+ usa a linha de 60–79. Seu percentil é interpolado entre os percentis 5 a 95 publicados para sua idade e sexo. Relógios e anéis medem a frequência em repouso ou durante o sono, que costuma ficar alguns bpm abaixo de uma medição sentada.",
   "sourcesContributes": [
     "Fonte direta das tabelas: percentis do pulso em repouso, sentado, por idade e sexo do NHANES 1999–2008, excluindo condições e medicamentos que afetam o pulso (Tabelas 2–3).",
-    "Contexto clínico: uma frequência de repouso normal fica em torno de 50–90 bpm, mais baixa em pessoas muito condicionadas, um pouco mais alta em mulheres e em parte genética.",
+    "Contexto clínico: 60–100 bpm é a faixa normal padrão, e algumas pesquisas associam cerca de 50–90 bpm a uma saúde melhor no longo prazo; mais baixa em pessoas muito condicionadas, um pouco mais alta em mulheres e em parte genética.",
     "Metanálise (cerca de 1,2 milhão de pessoas): cada 10 bpm a mais na frequência de repouso está associado a cerca de 9% mais mortalidade por todas as causas — por isso uma frequência de repouso mais baixa importa."
   ],
   "related": {

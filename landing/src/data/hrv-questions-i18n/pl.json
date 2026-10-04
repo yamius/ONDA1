@@ -38,7 +38,7 @@
         {
           "id": "breathing-and-hrv",
           "q": "Dlaczego HRV zmienia się przy wdechu i wydechu?",
-          "a": "Serce lekko przyspiesza przy każdym wdechu i zwalnia przy wydechu — to normalne zjawisko zwane oddechową arytmią zatokową. Wolny oddech powiększa te wahania, dlatego odczyty HRV skaczą podczas sesji oddechowej. Badania nad oddechem rezonansowym (Lehrer i współpracownicy) pokazują, że u większości dorosłych wahania są największe przy około 5–7 oddechach na minutę. [Oddech rezonansowy →](/tools/resonance-breathing)"
+          "a": "Serce lekko przyspiesza przy każdym wdechu i zwalnia przy wydechu — to normalne zjawisko zwane oddechową arytmią zatokową. Wolny oddech powiększa te wahania, dlatego odczyty HRV skaczą podczas sesji oddechowej. Badania nad oddechem rezonansowym (Lehrer i współpracownicy) pokazują, że wahania są największe przy osobistym tempie ok. 4,5–7 oddechów na minutę, zwykle ok. 5,5–6. [Oddech rezonansowy →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "id": "best-breathing-for-hrv",
           "q": "Jaka technika oddechowa jest najlepsza na HRV?",
-          "a": "Wolny, równy oddech w Twoim tempie rezonansowym — zwykle 5–7 oddechów na minutę — daje największe wahania HRV. Oddech pudełkowy i 4-7-8 też Cię uspokajają, a fizjologiczne westchnienie sprawdza się przy szybkim resecie. Regularność jest ważniejsza niż wybór techniki. [Oddech rezonansowy →](/tools/resonance-breathing) · [Oddech 4-7-8 →](/articles/4-7-8-breathing)"
+          "a": "Wolny, równy oddech w Twoim tempie rezonansowym — ok. 4,5–7 oddechów na minutę, zwykle ok. 5,5–6 — daje największe wahania HRV. Oddech pudełkowy i 4-7-8 też Cię uspokajają, a fizjologiczne westchnienie sprawdza się przy szybkim resecie. Regularność jest ważniejsza niż wybór techniki. [Oddech rezonansowy →](/tools/resonance-breathing) · [Oddech 4-7-8 →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
@@ -188,7 +188,7 @@
         {
           "id": "cold-wim-hof-hrv",
           "q": "Czy zimne prysznice lub oddech Wim Hofa podnoszą HRV?",
-          "a": "Ekspozycja na zimno krótko pobudza nerw błędny i może potem lekko podnieść HRV, ale dowody długoterminowe są skąpe. Oddech Wim Hofa to szybka hiperwentylacja z wstrzymywaniem oddechu — inne narzędzie niż wolny oddech i nie pierwszy wybór, gdy chcesz podnieść HRV. [Uczciwe granice oddechu i zimna →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hofa →](/tools/wim-hof)"
+          "a": "Ekspozycja na zimno wiąże się z krótką reakcją nerwu błędnego i może potem lekko podnieść HRV, ale dowody długoterminowe są skąpe. Oddech Wim Hofa to szybka hiperwentylacja z wstrzymywaniem oddechu — inne narzędzie niż wolny oddech i nie pierwszy wybór, gdy chcesz podnieść HRV. [Uczciwe granice oddechu i zimna →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hofa →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Patrzeć na pojedynczy odczyt HRV czy na trend?",
-          "a": "Na trend. HRV z dnia na dzień zmienia się mocno z błahych powodów, więc jeden poranek mówi niewiele. Średnia z 7 dni na tle zakresu z 2–4 tygodni jest znacznie bardziej miarodajna. [Zobacz swój zakres z dwóch tygodni →](/tools/baseline)"
+          "a": "Na trend. HRV z dnia na dzień zmienia się mocno z błahych powodów, więc jeden poranek mówi niewiele. Porównuj każdy odczyt z własnym niedawnym zakresem: aplikacja ONDA na przykład porównuje każdą noc z Twoim korytarzem (średnia z ostatnich nocy ± jedno odchylenie standardowe), potrzebuje co najmniej 7 nocy i buduje bazę przez 14 dni. [Zobacz swój zakres z dwóch tygodni →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

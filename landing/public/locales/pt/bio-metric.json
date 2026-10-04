@@ -280,7 +280,7 @@
           "bullets": [
             {
               "label": "Respiração lenta",
-              "text": "Respirar devagar, em torno de 5–7 respirações por minuto com uma expiração mais longa e relaxada, é uma forma bem estudada de acalmar o corpo para a maioria das pessoas."
+              "text": "Respirar devagar, em torno de 5,5–6 respirações por minuto (individualmente cerca de 4,5–7) com uma expiração mais longa e relaxada, é uma forma bem estudada de acalmar o corpo para a maioria das pessoas."
             },
             {
               "label": "Postura e imobilidade",
@@ -563,7 +563,7 @@
         },
         {
           "heading": "Faixas típicas e o que as afeta",
-          "body": "O RMSSD em repouso de adultos saudáveis varia bastante, muitas vezes aproximadamente entre 20 e 80 ms, e tende a ser mais alto em pessoas mais jovens e em melhor forma e mais baixo com a idade. Costuma cair depois de uma noite mal dormida, álcool, doença, treino intenso ou estresse agudo, e sobe com uma boa recuperação. As diferenças entre pessoas são grandes, então sua própria tendência importa mais do que a comparação com os outros.",
+          "body": "Em leituras diurnas curtas como esta, o RMSSD em repouso de adultos saudáveis varia bastante, muitas vezes aproximadamente entre 20 e 80 ms. A idade e o horário importam: tende a ser mais alto em pessoas mais jovens e em melhor forma, mais baixo com a idade, e os valores noturnos de um relógio costumam ser mais altos que medições pontuais durante o dia. Veja [VFC normal por idade](/articles/normal-hrv-by-age) ou experimente a [ferramenta de VFC](/tools/hrv). Costuma cair depois de uma noite mal dormida, álcool, doença, treino intenso ou estresse agudo, e sobe com uma boa recuperação. As diferenças entre pessoas são grandes, então sua própria tendência importa mais do que a comparação com os outros.",
           "bullets": [
             {
               "label": "Acima do seu habitual",
@@ -746,7 +746,7 @@
         },
         {
           "heading": "Por que a respiração lenta é tão popular",
-          "body": "Respirar devagar, muitas vezes em torno de 5–7 respirações por minuto com uma expiração mais longa e relaxada, tende a aumentar as oscilações da frequência cardíaca que acompanham cada respiração e está associado a uma sensação de mais calma. É uma técnica de baixo risco e bem estudada. Se sentir tontura, volte a respirar normalmente."
+          "body": "Respirar devagar, muitas vezes em torno de 5,5–6 respirações por minuto (individualmente cerca de 4,5–7) com uma expiração mais longa e relaxada, tende a aumentar as oscilações da frequência cardíaca que acompanham cada respiração e está associado a uma sensação de mais calma. É uma técnica de baixo risco e bem estudada. Se sentir tontura, volte a respirar normalmente."
         },
         {
           "heading": "Dicas para uma leitura melhor",

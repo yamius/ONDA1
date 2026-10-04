@@ -28,7 +28,7 @@ const article: Article = {
     { name: 'Slow, long-exhale breathing', text: 'Breathe so the exhale is longer than the inhale (e.g. in 4, out 6) for a few minutes — the single most reliable vagal lever.', protocolId: 'vagus-exhale' },
     { name: 'Hum, chant or gargle', text: 'Humming, chanting "voo/om" or gargling vibrates the vocal cords, which the vagus innervates — 30–60 seconds.', protocolId: 'vagus-hum' },
     { name: 'Cool the face', text: 'Splash cold water on the face or hold a cold pack to the cheeks/eyes for ~30 seconds to trigger the calming dive reflex.', protocolId: 'vagus-cold' },
-    { name: 'Make it a daily habit', text: 'Vagal tone is trainable — a few minutes of slow breathing most days raises it over weeks, not one session.', protocolId: 'vagus-habit' },
+    { name: 'Make it a daily habit', text: 'Vagal tone cannot be measured directly; HRV reflects vagally mediated changes — and a few minutes of slow breathing most days tends to raise resting HRV over weeks, not one session.', protocolId: 'vagus-habit' },
   ],
   content: `
 ## [ PROTOCOL: VAGAL_TONE // LEAVE_FIGHT_OR_FLIGHT ]
@@ -63,7 +63,7 @@ In practice, that means comparing like with like: a morning reading taken the sa
 
 Slow, long-exhale breathing is the strongest, best-evidenced vagus nerve exercise; humming, cold on the face and slow social contact follow.
 
-- **Slow, long-exhale breathing** — the strongest, best-evidenced lever. Making the exhale longer than the inhale stimulates the vagus and shifts state fast (Gerritsen & Band 2018). This is the engine behind every breathing app, and the [Breathing Pacer](/tools/breathing) automates it.
+- **Slow, long-exhale breathing** — the strongest, best-evidenced lever. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise and shifts state fast (Gerritsen & Band 2018). This is the engine behind every breathing app, and the [Breathing Pacer](/tools/breathing) automates it.
 - **Humming, chanting, gargling** — the vagus innervates the larynx, so vocal-cord vibration gives it gentle stimulation. Low-cost, surprisingly effective for a quick reset.
 - **Cold on the face** — a cold splash or pack to the face triggers the [dive reflex](/glossary/mammalian-dive-reflex), abruptly slowing the heart via the vagus. A fast circuit-breaker when you're spiked.
 - **Slow, social, safe** — unhurried conversation, being with people you trust, and even a long exhale-sigh all nudge the system toward the regulated state.
@@ -92,7 +92,7 @@ Start with the long exhale, add a hum when you want a quick reset, and keep the 
 
 > **The Hack:** Hum or chant a low "voo"/"om" on each exhale for a minute.
 
-**The Logic:** Vocal-cord vibration mechanically stimulates vagal fibres in the throat — a discreet reset you can do almost anywhere.
+**The Logic:** Vocal-cord vibration is thought to reach vagal fibres in the throat, on top of the long exhale — a discreet reset you can do almost anywhere.
 
 ### PROTOCOL 3: Cold Face Reset
 

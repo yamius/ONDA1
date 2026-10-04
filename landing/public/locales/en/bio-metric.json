@@ -280,7 +280,7 @@
           "bullets": [
             {
               "label": "Slow breathing",
-              "text": "Breathing slowly, around 5–7 breaths per minute with a relaxed longer exhale, is a well-studied way to calm the body for most people."
+              "text": "Breathing slowly, around 5.5–6 breaths per minute (individually about 4.5–7) with a relaxed longer exhale, is a well-studied way to calm the body for most people."
             },
             {
               "label": "Posture and stillness",
@@ -563,7 +563,7 @@
         },
         {
           "heading": "Typical ranges and what affects them",
-          "body": "Resting RMSSD in healthy adults varies widely, often roughly 20–80 ms, and tends to be higher in younger and fitter people and lower with age. It usually drops after poor sleep, alcohol, illness, intense training or acute stress, and rises with good recovery. Differences between people are large, so your own trend matters more than comparison with others.",
+          "body": "For short daytime readings like this one, resting RMSSD in healthy adults varies widely, often roughly 20–80 ms. Age and time of day matter: it tends to be higher in younger and fitter people, lower with age, and night-time values from a watch are usually higher than daytime spot checks. See [normal HRV by age](/articles/normal-hrv-by-age) or try the [HRV tool](/tools/hrv). It usually drops after poor sleep, alcohol, illness, intense training or acute stress, and rises with good recovery. Differences between people are large, so your own trend matters more than comparison with others.",
           "bullets": [
             {
               "label": "Higher than your usual",
@@ -746,7 +746,7 @@
         },
         {
           "heading": "Why slow breathing is popular",
-          "body": "Breathing slowly, often around 5–7 breaths per minute with a relaxed, longer exhale, tends to increase the heart-rate swings that follow each breath and is associated with feeling calmer. It is a low-risk, well-studied technique. If you feel lightheaded, return to normal breathing."
+          "body": "Breathing slowly, often around 5.5–6 breaths per minute (individually about 4.5–7) with a relaxed, longer exhale, tends to increase the heart-rate swings that follow each breath and is associated with feeling calmer. It is a low-risk, well-studied technique. If you feel lightheaded, return to normal breathing."
         },
         {
           "heading": "Tips for a better reading",

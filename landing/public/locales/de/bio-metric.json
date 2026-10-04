@@ -280,7 +280,7 @@
           "bullets": [
             {
               "label": "Langsames Atmen",
-              "text": "Langsam zu atmen, etwa 5–7 Atemzüge pro Minute mit entspanntem, längerem Ausatmen, ist für die meisten Menschen ein gut untersuchter Weg, den Körper zu beruhigen."
+              "text": "Langsam zu atmen, etwa 5,5–6 Atemzüge pro Minute (individuell etwa 4,5–7) mit entspanntem, längerem Ausatmen, ist für die meisten Menschen ein gut untersuchter Weg, den Körper zu beruhigen."
             },
             {
               "label": "Haltung und Stillhalten",
@@ -563,7 +563,7 @@
         },
         {
           "heading": "Typische Bereiche und Einflüsse",
-          "body": "Die RMSSD in Ruhe schwankt bei gesunden Erwachsenen stark, oft etwa 20–80 ms, und ist bei jüngeren und fitteren Menschen tendenziell höher und mit dem Alter niedriger. Sie sinkt meist nach schlechtem Schlaf, Alkohol, Krankheit, intensivem Training oder akutem Stress und steigt bei guter Erholung. Die Unterschiede zwischen Menschen sind groß, daher zählt dein eigener Trend mehr als der Vergleich mit anderen.",
+          "body": "Bei kurzen Tagesmessungen wie dieser schwankt die RMSSD in Ruhe bei gesunden Erwachsenen stark, oft etwa 20–80 ms. Alter und Tageszeit spielen eine Rolle: Sie ist bei jüngeren und fitteren Menschen tendenziell höher, mit dem Alter niedriger, und nächtliche Werte einer Uhr liegen meist höher als Stichproben am Tag. Siehe [normale HRV nach Alter](/articles/normal-hrv-by-age) oder probiere das [HRV-Tool](/tools/hrv). Sie sinkt meist nach schlechtem Schlaf, Alkohol, Krankheit, intensivem Training oder akutem Stress und steigt bei guter Erholung. Die Unterschiede zwischen Menschen sind groß, daher zählt dein eigener Trend mehr als der Vergleich mit anderen.",
           "bullets": [
             {
               "label": "Höher als sonst",
@@ -746,7 +746,7 @@
         },
         {
           "heading": "Warum langsames Atmen so beliebt ist",
-          "body": "Langsames Atmen, oft etwa 5–7 Atemzüge pro Minute mit entspanntem, längerem Ausatmen, verstärkt tendenziell die Herzfrequenzschwankungen, die jedem Atemzug folgen, und geht mit einem ruhigeren Gefühl einher. Es ist eine risikoarme, gut untersuchte Technik. Wenn dir schwindlig wird, kehr zur normalen Atmung zurück."
+          "body": "Langsames Atmen, oft etwa 5,5–6 Atemzüge pro Minute (individuell etwa 4,5–7) mit entspanntem, längerem Ausatmen, verstärkt tendenziell die Herzfrequenzschwankungen, die jedem Atemzug folgen, und geht mit einem ruhigeren Gefühl einher. Es ist eine risikoarme, gut untersuchte Technik. Wenn dir schwindlig wird, kehr zur normalen Atmung zurück."
         },
         {
           "heading": "Tipps für eine bessere Messung",

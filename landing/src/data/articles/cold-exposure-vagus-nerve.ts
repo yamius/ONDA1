@@ -45,7 +45,7 @@ This is real stress, deliberately chosen. Which is exactly what makes it trainab
 
 ---
 
-## Section 2: How does cold exposure activate the vagus nerve?
+## Section 2: How is cold exposure linked to the vagus nerve?
 
 After the spike, as you stay in the cold and especially once you come out, the body swings the other way: the [parasympathetic](/glossary/parasympathetic-nervous-system) branch re-engages, often strongly. Cold-water immersion has been shown to increase vagal, parasympathetic activity — the [vagus nerve](/glossary/vagus-nerve) reasserting control, heart rate settling, [variability](/glossary/heart-rate-variability) rising. That's the source of the clear-headed calm afterward: not the cold itself, but the vagal rebound the cold provokes.
 

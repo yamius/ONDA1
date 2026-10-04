@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Home", "tools": "Tools", "current": "Resonance Breathing" },
   "h1": "Resonance Breathing Pacer: Find Your Rate",
-  "capsule": "Resonance breathing means breathing slowly and evenly at your personal rate — usually between 4.5 and 6.5 breaths a minute — where heart rhythm and breathing fall into step and heart rate variability (HRV) swings the most. Pick a rate, press start and breathe with the circle; try each rate for about 2 minutes and keep the one that feels smoothest.",
+  "capsule": "Resonance breathing means breathing slowly and evenly at your personal rate — usually about 4.5–7 breaths a minute — where heart rhythm and breathing fall into step and heart rate variability (HRV) swings the most. Pick a rate, press start and breathe with the circle; try each rate for about 2 minutes and keep the one that feels smoothest.",
   "imageAlt": "Resonance breathing pacer — breathe with the circle at 4.5 to 6.5 breaths a minute, free tool from ONDA Life",
   "ui": {
     "height": "Height (cm) — optional",
@@ -63,7 +63,7 @@
   ],
   "faqTitle": "Resonance breathing — common questions",
   "faq": [
-    { "q": "What is resonance frequency breathing?", "a": "Breathing slowly at your personal rate — usually 4.5–6.5 breaths a minute — where heart rhythm and breathing move in step and HRV swings the most. It's the core technique of HRV biofeedback." },
+    { "q": "What is resonance frequency breathing?", "a": "Breathing slowly at your personal rate — usually about 4.5–7 breaths a minute — where heart rhythm and breathing move in step and HRV swings the most. It's the core technique of HRV biofeedback." },
     { "q": "How do I find my resonance rate?", "a": "Breathe for about 2 minutes each at 6.5, 6.0, 5.5, 5.0 and 4.5 breaths a minute and keep the rate that feels smoothest. With a device that shows beat-to-beat HRV, choose the rate with the largest, most regular heart-rate waves." },
     { "q": "Is resonance breathing the same as coherent breathing?", "a": "Almost. Coherent breathing uses a fixed rate of about 5–6 breaths a minute; resonance breathing personalises that rate to your body." },
     { "q": "Does height affect resonance frequency?", "a": "Taller people and men tend to have a slightly slower resonance rate, which is why this tool offers a height-based starting point. It's only a guide — test the rates to find yours." },
@@ -71,7 +71,7 @@
     { "q": "Does resonance breathing raise HRV?", "a": "Yes, HRV rises while you breathe at this rate, and regular practice is linked to better baroreflex function and calmer mood. It supports, but doesn't replace, medical care." }
   ],
   "sourcesTitle": "Sources & methodology",
-  "methodology": "At a personal rate — usually 4.5–6.5 breaths a minute — heart-rate oscillations, breathing and the baroreflex come into phase and HRV amplitude peaks (Lehrer 2003). The standard way to find it is to breathe at each rate for a couple of minutes and measure which produces the largest, smoothest heart-rate oscillations (Shaffer 2020). Without a sensor, the rate that feels smoothest and calmest is a reasonable choice. The height-based suggestion is only a rough starting point. Educational tool, not a medical device.",
+  "methodology": "At a personal rate — usually about 4.5–7 breaths a minute — heart-rate oscillations, breathing and the baroreflex come into phase and HRV amplitude peaks (Lehrer 2003). The standard way to find it is to breathe at each rate for a couple of minutes and measure which produces the largest, smoothest heart-rate oscillations (Shaffer 2020). Without a sensor, the rate that feels smoothest and calmest is a reasonable choice. The height-based suggestion is only a rough starting point. Educational tool, not a medical device.",
   "sourcesContributes": [
     "Foundational work establishing the resonance-frequency concept and its baroreflex mechanism.",
     "The protocol for finding an individual's resonance frequency by testing a series of breathing rates.",

@@ -51,7 +51,7 @@
   },
   "flags": {
     "tachy": "Tętno spoczynkowe powyżej 100 ud./min to tachykardia. Jeśli w spoczynku stale jest tak wysokie albo towarzyszą mu kołatanie serca, zawroty głowy lub duszność, skonsultuj się z lekarzem.",
-    "brady": "Poniżej 50 ud./min to norma u wielu osób wytrenowanych. Jeśli towarzyszą temu zawroty głowy, omdlenia, nietypowe zmęczenie lub duszność, skonsultuj się z lekarzem."
+    "brady": "Poniżej 50 ud./min może być normą u osób wysportowanych i wytrenowanych; zwykle ma znaczenie tylko wtedy, gdy towarzyszą temu objawy, takie jak zawroty głowy, omdlenia lub duszność — wtedy skonsultuj się z lekarzem."
   },
   "wearableNote": "Zegarki i pierścienie mierzą tętno spoczynkowe lub w czasie snu, które zwykle jest o kilka ud./min niższe niż pomiar na siedząco, na którym opierają się te normy — więc wynik z urządzenia może wyglądać nieco lepiej. Porównuj własną średnią tygodniową.",
   "invalid": "Podaj prawidłowy wiek (18–120) i tętno spoczynkowe (30–150 ud./min).",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "Prawidłowe tętno spoczynkowe według wieku — jakie jest?",
-      "body": "U dorosłych za prawidłowe uznaje się tętno spoczynkowe od 60 do 100 ud./min, a wielu kardiologów traktuje ok. 50–90 ud./min jako zakres zdrowy. W badaniu CDC NHANES zdrowych dorosłych w USA mediana tętna spoczynkowego na siedząco wynosiła ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min od 60. roku życia — przez całe dorosłe życie niemal bez zmian. Środkowa połowa mężczyzn (p25–p75) mieściła się mniej więcej między 60 a 77 ud./min. W przeciwieństwie do HRV tętno spoczynkowe u dorosłych prawie nie zależy od wieku; dużo ważniejsze są kondycja, geny, sen i stres. Dlatego najbardziej przydatne jest porównanie z własnym porannym trendem. Pełny poradnik: [tętno spoczynkowe według wieku](/articles/resting-heart-rate-by-age)."
+      "body": "U dorosłych za prawidłowe uznaje się tętno spoczynkowe od 60 do 100 ud./min. Osoby wysportowane często mają niższe tętno (często 40–60 ud./min), a niektóre badania łączą ok. 50–90 ud./min z lepszym zdrowiem w dłuższej perspektywie. W badaniu CDC NHANES zdrowych dorosłych w USA mediana tętna spoczynkowego na siedząco wynosiła ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min od 60. roku życia — przez całe dorosłe życie niemal bez zmian. Środkowa połowa mężczyzn (p25–p75) mieściła się mniej więcej między 60 a 77 ud./min. W przeciwieństwie do HRV tętno spoczynkowe u dorosłych prawie nie zależy od wieku; dużo ważniejsze są kondycja, geny, sen i stres. Dlatego najbardziej przydatne jest porównanie z własnym porannym trendem. Pełny poradnik: [tętno spoczynkowe według wieku](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Norma tętna u kobiety",

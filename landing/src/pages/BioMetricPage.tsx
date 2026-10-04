@@ -6,7 +6,7 @@ import { NotFoundPage } from './NotFoundPage'
 import { appStoreUrl } from '../config/appStore'
 import { storeCt } from '../lib/storeCt'
 import { API_ENABLED } from '../config/features'
-import { langFromPath, localizedPathFor } from '../i18n'
+import { langFromPath, localizedPathFor, langHref } from '../i18n'
 import { syncOgLocale } from '../utils/ogLocale'
 const SITE_URL = 'https://onda-life.com'
 
@@ -119,7 +119,19 @@ export function BioMetricPage() {
               <h2 className="mb-3 text-base font-semibold text-cyan-400">{sec.heading}</h2>
             )}
             {sec.body && (
-              <p className="mb-3 font-mono text-sm leading-relaxed text-white/60">{sec.body}</p>
+              <p className="mb-3 font-mono text-sm leading-relaxed text-white/60">
+                {/* Bodies are plain text; an inline [label](/path) becomes an internal link. */}
+                {sec.body.split(/(\[[^\]]+\]\(\/[^)\s]*\))/g).map((part, k) => {
+                  const m = part.match(/^\[([^\]]+)\]\((\/[^)\s]*)\)$/)
+                  return m ? (
+                    <Link key={k} to={langHref(m[2], lang)} className="text-cyan-400/80 underline hover:text-cyan-300">
+                      {m[1]}
+                    </Link>
+                  ) : (
+                    part
+                  )
+                })}
+              </p>
             )}
             {sec.bullets && (
               <div className="flex flex-col gap-2">

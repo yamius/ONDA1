@@ -51,7 +51,7 @@
   },
   "flags": {
     "tachy": "Una frecuencia cardíaca en reposo superior a 100 lpm se llama taquicardia. Si se mantiene así de alta en reposo o va acompañada de palpitaciones, mareo o falta de aire, consulta a un médico.",
-    "brady": "Menos de 50 lpm es normal en muchas personas entrenadas. Si va acompañada de mareo, desmayos, cansancio inusual o falta de aire, consulta a un médico."
+    "brady": "Menos de 50 lpm puede ser normal en personas en forma y entrenadas, y normalmente solo importa si va acompañada de síntomas como mareo, desmayos o falta de aire; en ese caso, consulta a un médico."
   },
   "wearableNote": "Relojes y anillos miden la frecuencia en reposo o durante el sueño, que suele ser unos lpm más baja que la medición sentado en la que se basan estas normas; por eso la cifra del wearable puede parecer algo mejor de lo que es. Compara tu propio promedio semanal.",
   "invalid": "Introduce una edad válida (18–120) y una frecuencia cardíaca en reposo válida (30–150 lpm).",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "¿Cuál es la frecuencia cardíaca normal en reposo según la edad?",
-      "body": "En adultos se considera normal una frecuencia cardíaca en reposo de 60 a 100 lpm, y muchos cardiólogos toman aproximadamente 50–90 lpm como rango saludable. En la encuesta NHANES de los CDC con adultos sanos de EE. UU., la mediana del pulso en reposo sentado fue de unos 69 lpm en hombres de 18–39 años, 68 lpm a los 40–59 y 67 lpm a partir de los 60: casi plana a lo largo de la vida adulta. La mitad central de los hombres (p25–p75) estaba entre unos 60 y 77 lpm. A diferencia de la HRV, la frecuencia en reposo apenas cambia con la edad en adultos; la forma física, la genética, el sueño y el estrés influyen mucho más. Por eso la comparación más útil es con tu propia tendencia matutina. Guía completa: [frecuencia cardíaca en reposo por edad](/articles/resting-heart-rate-by-age)."
+      "body": "En adultos se considera normal una frecuencia cardíaca en reposo de 60 a 100 lpm. Las personas en forma suelen estar por debajo (a menudo 40–60 lpm), y algunas investigaciones asocian unos 50–90 lpm con mejor salud a largo plazo. En la encuesta NHANES de los CDC con adultos sanos de EE. UU., la mediana del pulso en reposo sentado fue de unos 69 lpm en hombres de 18–39 años, 68 lpm a los 40–59 y 67 lpm a partir de los 60: casi plana a lo largo de la vida adulta. La mitad central de los hombres (p25–p75) estaba entre unos 60 y 77 lpm. A diferencia de la HRV, la frecuencia en reposo apenas cambia con la edad en adultos; la forma física, la genética, el sueño y el estrés influyen mucho más. Por eso la comparación más útil es con tu propia tendencia matutina. Guía completa: [frecuencia cardíaca en reposo por edad](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Pulso en reposo en la mujer: ¿qué es normal?",
@@ -128,7 +128,7 @@
   "methodology": "Las tablas proceden directamente del informe CDC/NCHS sobre NHANES 1999–2008 (Ostchega et al. 2011, tablas 2–3): pulso en reposo sentado de unos 17 000 adultos de EE. UU., excluyendo a personas con afecciones o medicamentos que alteran el pulso. La franja 18–39 usa la fila 20–39 y la franja 60+ la fila 60–79. Tu percentil se interpola entre los percentiles 5.º–95.º publicados para tu edad y sexo. Relojes y anillos miden la frecuencia en reposo o durante el sueño, que suele ser unos lpm más baja que una medición sentado.",
   "sourcesContributes": [
     "Fuente directa de las tablas: percentiles del pulso en reposo sentado por edad y sexo de NHANES 1999–2008, excluyendo afecciones y medicamentos que alteran el pulso (tablas 2–3).",
-    "Contexto clínico: una frecuencia en reposo normal es de aproximadamente 50–90 lpm, más baja en personas muy en forma, algo más alta en mujeres y en parte genética.",
+    "Contexto clínico: 60–100 lpm es el rango normal estándar, y algunas investigaciones asocian unos 50–90 lpm con mejor salud a largo plazo; más baja en personas muy en forma, algo más alta en mujeres y en parte genética.",
     "Metaanálisis (unos 1,2 millones de personas): cada 10 lpm más de frecuencia en reposo se asocia a un ~9% más de mortalidad por todas las causas; por eso importa una frecuencia en reposo más baja."
   ],
   "related": {

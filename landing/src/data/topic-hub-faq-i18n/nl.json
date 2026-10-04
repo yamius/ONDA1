@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Wat is een normale hartslag in rust per leeftijd?",
-        "a": "Voor volwassenen van elke leeftijd ligt een normale rusthartslag tussen 60 en 100 slagen per minuut; de grote veranderingen gebeuren in de kindertijd, wanneer pasgeborenen op 100–160 bpm zitten en de hartslag zich tijdens de tienerjaren stabiliseert. Fitte volwassenen zitten vaak in de 40 of 50. Binnen het normale bereik zegt je eigen trend meer dan het gemiddelde van de bevolking.",
+        "a": "Voor volwassenen van elke leeftijd ligt een normale rusthartslag tussen 60 en 100 slagen per minuut; de grote veranderingen gebeuren in de kindertijd, wanneer pasgeborenen op 100–160 bpm zitten en de hartslag zich tijdens de tienerjaren stabiliseert. Fitte volwassenen zitten vaak lager (vaak 40–60 bpm), en sommig onderzoek koppelt ongeveer 50–90 bpm aan een betere gezondheid op lange termijn. Binnen het normale bereik zegt je eigen trend meer dan het gemiddelde van de bevolking.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",
@@ -114,7 +114,7 @@
       },
       {
         "q": "Hoe kalmeer ik snel mijn zenuwstelsel?",
-        "a": "Maak de uitademing langer dan de inademing. Een lange, langzame uitademing activeert de nervus vagus en vertraagt het hart binnen een à twee minuten; neuriën tijdens het uitademen versterkt het effect. Vijf minuten langzaam ademen op ongeveer zes ademhalingen per minuut is voor de meeste mensen genoeg om het verschil te voelen.",
+        "a": "Maak de uitademing langer dan de inademing. Langzaam ademen met een langere uitademing gaat tijdens het oefenen samen met een hogere vagaal gemedieerde HRV en vertraagt het hart binnen een à twee minuten; neuriën tijdens het uitademen versterkt het effect. Vijf minuten langzaam ademen op ongeveer zes ademhalingen per minuut is voor de meeste mensen genoeg om het verschil te voelen.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "What is a normal resting heart rate by age?",
-        "a": "For adults of every age, a normal resting heart rate is 60 to 100 beats per minute; the big changes happen in childhood, when newborns run at 100–160 bpm and rates settle through the teens. Fit adults often sit in the 40s or 50s. Within the normal range, your own trend tells you more than the population average.",
+        "a": "For adults of every age, a normal resting heart rate is 60 to 100 beats per minute; the big changes happen in childhood, when newborns run at 100–160 bpm and rates settle through the teens. Fit adults often sit lower (often 40–60 bpm), and some research links roughly 50–90 bpm with better long-term health. Within the normal range, your own trend tells you more than the population average.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",
@@ -114,7 +114,7 @@
       },
       {
         "q": "How can I calm my nervous system quickly?",
-        "a": "Make the exhale longer than the inhale. A long, slow out-breath activates the vagus nerve and slows the heart within a minute or two; humming while you exhale adds to the effect. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.",
+        "a": "Make the exhale longer than the inhale. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it slows the heart within a minute or two; humming while you exhale adds to the effect. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

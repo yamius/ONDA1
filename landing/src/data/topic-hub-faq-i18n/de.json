@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Welcher Ruhepuls ist normal nach Alter?",
-        "a": "Für Erwachsene jeden Alters liegt ein normaler Ruhepuls bei 60 bis 100 Schlägen pro Minute; die großen Veränderungen passieren in der Kindheit: Neugeborene liegen bei 100–160 bpm, bis zur Jugend pendelt sich der Wert ein. Trainierte Erwachsene liegen oft bei 40 bis 59. Innerhalb des Normalbereichs sagt dein eigener Verlauf mehr aus als der Bevölkerungsdurchschnitt.",
+        "a": "Für Erwachsene jeden Alters liegt ein normaler Ruhepuls bei 60 bis 100 Schlägen pro Minute; die großen Veränderungen passieren in der Kindheit: Neugeborene liegen bei 100–160 bpm, bis zur Jugend pendelt sich der Wert ein. Fitte Erwachsene liegen oft niedriger (oft 40–60 bpm), und manche Studien bringen etwa 50–90 bpm mit besserer langfristiger Gesundheit in Verbindung. Innerhalb des Normalbereichs sagt dein eigener Verlauf mehr aus als der Bevölkerungsdurchschnitt.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",
@@ -114,7 +114,7 @@
       },
       {
         "q": "Wie kann ich mein Nervensystem schnell beruhigen?",
-        "a": "Mach die Ausatmung länger als die Einatmung. Ein langer, langsamer Ausatem aktiviert den Vagusnerv und verlangsamt den Herzschlag innerhalb von ein, zwei Minuten; Summen beim Ausatmen verstärkt den Effekt. Fünf Minuten langsames Atmen mit etwa sechs Atemzügen pro Minute reichen den meisten Menschen, um die Veränderung zu spüren.",
+        "a": "Mach die Ausatmung länger als die Einatmung. Langsames Atmen mit längerer Ausatmung geht während der Übung mit einer höheren vagal vermittelten HRV einher und verlangsamt den Herzschlag innerhalb von ein, zwei Minuten; Summen beim Ausatmen verstärkt den Effekt. Fünf Minuten langsames Atmen mit etwa sechs Atemzügen pro Minute reichen den meisten Menschen, um die Veränderung zu spüren.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",
@@ -170,7 +170,7 @@
       },
       {
         "q": "Was ist Resonanzatmung (kohärentes Atmen) und wie finde ich meine Frequenz?",
-        "a": "Resonanzatmung ist langsames, gleichmäßiges Atmen – meist etwa fünf Sekunden ein und fünf Sekunden aus – in dem Tempo, bei dem deine Herzfrequenz mit jedem Atemzug am stärksten schwankt. Bei den meisten Erwachsenen liegt das zwischen fünf und sieben Atemzügen pro Minute; deine eigene Frequenz findest du, indem du ein paar Tempi ausprobierst und darauf achtest, welches sich am ruhigsten anfühlt und misst.",
+        "a": "Resonanzatmung ist langsames, gleichmäßiges Atmen – meist etwa 5,5–6 Atemzüge pro Minute, z. B. 5,5 Sekunden ein und 5,5 Sekunden aus – in dem Tempo, bei dem deine Herzfrequenz mit jedem Atemzug am stärksten schwankt. Bei den meisten Erwachsenen liegt das zwischen fünf und sieben Atemzügen pro Minute; deine eigene Frequenz findest du, indem du ein paar Tempi ausprobierst und darauf achtest, welches sich am ruhigsten anfühlt und misst.",
         "links": [
           {
             "href": "/articles/coherent-breathing-guide",

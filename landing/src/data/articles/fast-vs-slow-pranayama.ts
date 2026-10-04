@@ -33,7 +33,7 @@ Not all breathwork calms you down — and confusing the two is a common mistake.
 Fast and slow pranayama — the two paces of yoga's breathing practices — have different autonomic effects. Indian physiology research consistently divides it by pace, because pace determines the autonomic effect:
 
 - **Fast pranayama** — rapid, forceful breathing. Includes **Kapalabhati** (rapid forceful exhalations), **Bhastrika** (bellows breath — see [what an fMRI trial found about Bhastrika and anxiety](/articles/bhastrika-pranayama-brain-anxiety)), and Kukkuriya. These raise heart rate, increase alertness, and shift you toward sympathetic activation and mild arousal. They're energizing, not sedating.
-- **Slow pranayama** — slow, deep, controlled breathing. Includes **Nadi Shodhana** ([alternate nostril](/articles/alternate-nostril-breathing)), **Bhramari** ([humming bee breath](/articles/humming-breath-vagus)), Pranava, and Savitri. These lower heart rate, activate the vagus nerve, and shift you toward parasympathetic dominance. They're the calming, recovery-oriented techniques.
+- **Slow pranayama** — slow, deep, controlled breathing. Includes **Nadi Shodhana** ([alternate nostril](/articles/alternate-nostril-breathing)), **Bhramari** ([humming bee breath](/articles/humming-breath-vagus)), Pranava, and Savitri. These lower heart rate, are associated with higher vagally mediated HRV while you practise, and shift you toward parasympathetic dominance. They're the calming, recovery-oriented techniques.
 
 The mistake many people make is treating "breathwork" as automatically relaxing. A vigorous Kapalabhati session before bed will wake you up, not settle you.
 

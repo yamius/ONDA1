@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "¿Cuál es la frecuencia cardíaca en reposo normal según la edad?",
-        "a": "En adultos de cualquier edad, la frecuencia cardíaca en reposo normal está entre 60 y 100 latidos por minuto; los grandes cambios se producen en la infancia: los recién nacidos van a 100–160 lpm y la frecuencia se va estabilizando durante la adolescencia. Los adultos en buena forma física suelen estar entre 40 y 59. Dentro del rango normal, tu propia tendencia dice más que la media de la población.",
+        "a": "En adultos de cualquier edad, la frecuencia cardíaca en reposo normal está entre 60 y 100 latidos por minuto; los grandes cambios se producen en la infancia: los recién nacidos van a 100–160 lpm y la frecuencia se va estabilizando durante la adolescencia. Los adultos en buena forma física suelen estar por debajo (a menudo 40–60 lpm), y algunas investigaciones asocian unos 50–90 lpm con mejor salud a largo plazo. Dentro del rango normal, tu propia tendencia dice más que la media de la población.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",
@@ -114,7 +114,7 @@
       },
       {
         "q": "¿Cómo calmar el sistema nervioso rápidamente?",
-        "a": "Haz que la exhalación sea más larga que la inhalación. Una espiración larga y lenta activa el nervio vago y ralentiza el corazón en uno o dos minutos; tararear mientras exhalas refuerza el efecto. Cinco minutos de respiración lenta, a unas seis respiraciones por minuto, bastan para que la mayoría note el cambio.",
+        "a": "Haz que la exhalación sea más larga que la inhalación. La respiración lenta con una espiración más larga se asocia con una HRV de mediación vagal más alta mientras practicas, y ralentiza el corazón en uno o dos minutos; tararear mientras exhalas refuerza el efecto. Cinco minutos de respiración lenta, a unas seis respiraciones por minuto, bastan para que la mayoría note el cambio.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

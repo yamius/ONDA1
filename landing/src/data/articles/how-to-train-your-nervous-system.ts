@@ -39,13 +39,13 @@ const article: Article = {
 
 Your autonomic nervous system runs two branches: the [sympathetic](/glossary/sympathetic-nervous-system) "go" branch and the [parasympathetic](/glossary/parasympathetic-nervous-system) "settle" branch, carried mostly by the [vagus nerve](/articles/vagus-nerve-exercises). A well-regulated system spikes into "go" when it needs to and returns cleanly to "settle" when the pressure's off. A poorly-regulated one gets stuck in "go" — wired, reactive, slow to come down.
 
-Training it means two concrete things: **strengthening the parasympathetic brake** so you can down-regulate on demand, and **speeding the return** so you bounce back faster after stress. The trainable quantity behind both is vagal tone, and its readable proxy is [heart-rate variability](/articles/hrv-questions-answered) — which is why HRV is the scoreboard for this kind of training.
+Training it means two concrete things: **strengthening the parasympathetic brake** so you can down-regulate on demand, and **speeding the return** so you bounce back faster after stress. Vagal tone cannot be measured directly; the readable signal of vagally mediated changes is [heart-rate variability](/articles/hrv-questions-answered) — which is why HRV is the scoreboard for this kind of training.
 
 ---
 
 ## Section 2: What is the best way to train your nervous system?
 
-The most direct, best-supported way to train the parasympathetic brake is slow, paced breathing. A long, slow exhale stimulates the vagus nerve and hands tone to the "settle" branch on every out-breath; do it regularly and you're not just relaxing in the moment — you're rehearsing the down-regulation until it gets faster and more automatic.
+The most direct, best-supported way to train the parasympathetic brake is slow, paced breathing. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; do it regularly and you're not just relaxing in the moment — you're rehearsing the down-regulation until it gets faster and more automatic.
 
 This is the nervous-system equivalent of a strength rep. Each slow-breathing session is practice at the exact transition — tense to calm — you want to get good at, so it shows up more readily when you actually need it. [Coherent breathing](/articles/coherent-breathing-guide) covers the how; the point is that the breath is the handle on an otherwise involuntary system.
 
@@ -89,7 +89,7 @@ A realistic plan treats it like any training program. **Protect the foundation**
   howToSteps: [
     {
       name: 'Know what you’re training',
-      text: 'Training your nervous system means strengthening the parasympathetic brake so you can down-regulate on demand, and speeding the return to calm after stress. Vagal tone is the trainable quantity; HRV is the scoreboard.',
+      text: 'Training your nervous system means strengthening the parasympathetic brake so you can down-regulate on demand, and speeding the return to calm after stress. Vagal tone cannot be measured directly; HRV reflects vagally mediated changes and is the scoreboard.',
       protocolId: 'tns-goal',
     },
     {

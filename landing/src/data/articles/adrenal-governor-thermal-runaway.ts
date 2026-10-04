@@ -79,7 +79,7 @@ Three techniques keep stress hormones in check — HRV thresholding, daily Alpha
 
 ### Technique 1: HRV Thresholding (Load Indicator Monitoring)
 
-> **Action:** Track morning HRV daily (first reading after waking, supine, before coffee or screens). Establish your personal baseline over 2–3 weeks. Define a personal threshold — approximately 15–20% below your rolling average — as the "Governor Alert" level. When HRV drops below threshold, treat that day as a Quiet Mode day: no high-intensity training, no extended cognitive overload sessions, active parasympathetic recovery prioritized.
+> **Action:** Track morning HRV daily (first reading after waking, supine, before coffee or screens). Establish your personal baseline over about 14 days (at least 7 readings). Define a personal threshold — approximately 15–20% below your rolling average — as the "Governor Alert" level. When HRV drops below threshold, treat that day as a Quiet Mode day: no high-intensity training, no extended cognitive overload sessions, active parasympathetic recovery prioritized.
 
 **Logic:** HRV is the real-time readout of the balance between sympathetic (cortisol, adrenaline-driven) and parasympathetic (vagus-driven) autonomic tone. A drop below personal baseline HRV is the physiological signature of excessive recent load — the adrenal-cardiac-neural system reporting that it has been operating near Redline and recovery is required. Using HRV as a load indicator turns a subjective "I feel fine / I feel burned out" self-assessment into a concrete number, which makes it much harder to override recovery needs through willpower or caffeine. The Governor operates on data, not on motivation.
 

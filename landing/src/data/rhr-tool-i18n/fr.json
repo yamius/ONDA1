@@ -51,7 +51,7 @@
   },
   "flags": {
     "tachy": "Une fréquence cardiaque au repos supérieure à 100 bpm s'appelle une tachycardie. Si elle reste aussi élevée au repos, ou s'accompagne de palpitations, de vertiges ou d'essoufflement, consultez un médecin.",
-    "brady": "Moins de 50 bpm est normal chez beaucoup de personnes entraînées. Si cela s'accompagne de vertiges, d'évanouissements, d'une fatigue inhabituelle ou d'essoufflement, consultez un médecin."
+    "brady": "Moins de 50 bpm peut être normal chez les personnes en forme et entraînées, et ne compte généralement que si cela s'accompagne de symptômes comme des vertiges, des évanouissements ou un essoufflement — consultez alors un médecin."
   },
   "wearableNote": "Montres et bagues mesurent la fréquence au repos ou pendant le sommeil, généralement quelques bpm plus basse que la mesure assise sur laquelle reposent ces normes — un chiffre de montre peut donc paraître un peu meilleur qu'il ne l'est. Comparez plutôt votre propre moyenne hebdomadaire.",
   "invalid": "Entrez un âge valide (18–120) et une fréquence cardiaque au repos valide (30–150 bpm).",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "Quelle est la fréquence cardiaque normale au repos selon l'âge ?",
-      "body": "Chez l'adulte, une fréquence cardiaque au repos entre 60 et 100 bpm est considérée comme normale, et de nombreux cardiologues retiennent plutôt 50–90 bpm comme zone saine. Dans l'enquête NHANES du CDC menée auprès d'adultes américains en bonne santé, le pouls médian au repos en position assise était d'environ 69 bpm chez les hommes de 18–39 ans, 68 bpm à 40–59 ans et 67 bpm à partir de 60 ans — quasiment stable tout au long de la vie adulte. La moitié centrale des hommes (p25–p75) se situait entre environ 60 et 77 bpm. Contrairement à la VFC, la fréquence au repos change à peine avec l'âge chez l'adulte ; la condition physique, la génétique, le sommeil et le stress comptent bien davantage. C'est pourquoi la comparaison la plus utile reste celle avec votre propre tendance du matin. Guide complet : [fréquence cardiaque au repos selon l'âge](/articles/resting-heart-rate-by-age)."
+      "body": "Chez l'adulte, une fréquence cardiaque au repos entre 60 et 100 bpm est considérée comme normale. Les personnes en forme se situent souvent plus bas (souvent 40–60 bpm), et certaines recherches associent une plage d'environ 50–90 bpm à une meilleure santé à long terme. Dans l'enquête NHANES du CDC menée auprès d'adultes américains en bonne santé, le pouls médian au repos en position assise était d'environ 69 bpm chez les hommes de 18–39 ans, 68 bpm à 40–59 ans et 67 bpm à partir de 60 ans — quasiment stable tout au long de la vie adulte. La moitié centrale des hommes (p25–p75) se situait entre environ 60 et 77 bpm. Contrairement à la VFC, la fréquence au repos change à peine avec l'âge chez l'adulte ; la condition physique, la génétique, le sommeil et le stress comptent bien davantage. C'est pourquoi la comparaison la plus utile reste celle avec votre propre tendance du matin. Guide complet : [fréquence cardiaque au repos selon l'âge](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Pouls normal chez la femme au repos",
@@ -128,7 +128,7 @@
   "methodology": "Les tableaux proviennent directement du rapport CDC/NCHS sur NHANES 1999–2008 (Ostchega et al. 2011, tableaux 2–3) : pouls au repos en position assise d'environ 17 000 adultes américains, hors personnes ayant une affection ou un traitement influençant le pouls. La tranche 18–39 ans utilise la ligne 20–39 ans et la tranche 60+ la ligne 60–79 ans. Votre percentile est interpolé entre les 5e et 95e percentiles publiés pour votre âge et votre sexe. Montres et bagues mesurent la fréquence au repos ou pendant le sommeil, généralement quelques bpm plus basse qu'une mesure assise.",
   "sourcesContributes": [
     "Source directe des tableaux : percentiles du pouls au repos en position assise par âge et sexe, NHANES 1999–2008, hors affections et médicaments influençant le pouls (tableaux 2–3).",
-    "Contexte clinique : une fréquence cardiaque au repos normale se situe environ entre 50 et 90 bpm, plus basse chez les personnes très entraînées, légèrement plus élevée chez les femmes, et en partie génétique.",
+    "Contexte clinique : 60–100 bpm est la plage normale standard, et certaines recherches associent une plage d'environ 50–90 bpm à une meilleure santé à long terme ; plus basse chez les personnes très entraînées, légèrement plus élevée chez les femmes, et en partie génétique.",
     "Méta-analyse (environ 1,2 million de personnes) : chaque hausse de 10 bpm de la fréquence au repos est associée à une mortalité toutes causes supérieure d'environ 9 % — d'où l'intérêt d'une fréquence au repos plus basse."
   ],
   "related": {

@@ -38,7 +38,7 @@
         {
           "id": "breathing-and-hrv",
           "q": "Por que a VFC muda quando eu inspiro e expiro?",
-          "a": "O coração acelera levemente a cada inspiração e desacelera a cada expiração — um padrão normal chamado arritmia sinusal respiratória. Respirar devagar aumenta essas oscilações, e é por isso que a VFC salta durante uma sessão de respiração. Pesquisas sobre respiração ressonante (Lehrer e colegas) mostram que as oscilações são maiores com cerca de 5–7 respirações por minuto na maioria dos adultos. [Respiração ressonante →](/tools/resonance-breathing)"
+          "a": "O coração acelera levemente a cada inspiração e desacelera a cada expiração — um padrão normal chamado arritmia sinusal respiratória. Respirar devagar aumenta essas oscilações, e é por isso que a VFC salta durante uma sessão de respiração. Pesquisas sobre respiração ressonante (Lehrer e colegas) mostram que as oscilações são maiores num ritmo pessoal de cerca de 4,5–7 respirações por minuto, normalmente cerca de 5,5–6. [Respiração ressonante →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -178,7 +178,7 @@
         {
           "id": "best-breathing-for-hrv",
           "q": "Qual é a melhor técnica de respiração para a VFC?",
-          "a": "Respiração lenta e regular no seu ritmo de ressonância — normalmente 5–7 respirações por minuto — produz as maiores oscilações de VFC. A respiração quadrada e a 4-7-8 também desaceleram, e o suspiro fisiológico é bom para um reset rápido. A constância vale mais do que a escolha da técnica. [Respiração ressonante →](/tools/resonance-breathing) · [Respiração 4-7-8 →](/articles/4-7-8-breathing)"
+          "a": "Respiração lenta e regular no seu ritmo de ressonância — cerca de 4,5–7 respirações por minuto, normalmente cerca de 5,5–6 — produz as maiores oscilações de VFC. A respiração quadrada e a 4-7-8 também desaceleram, e o suspiro fisiológico é bom para um reset rápido. A constância vale mais do que a escolha da técnica. [Respiração ressonante →](/tools/resonance-breathing) · [Respiração 4-7-8 →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
@@ -188,7 +188,7 @@
         {
           "id": "cold-wim-hof-hrv",
           "q": "Banho frio ou respiração Wim Hof aumentam a VFC?",
-          "a": "A exposição ao frio ativa o nervo vago por pouco tempo e pode dar um leve empurrão na VFC depois, mas as evidências de longo prazo são escassas. A respiração Wim Hof é hiperventilação rápida seguida de apneias — uma ferramenta diferente da respiração lenta, e não a primeira escolha para aumentar a VFC. [Limites honestos da respiração e do frio →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hof →](/tools/wim-hof)"
+          "a": "A exposição ao frio está ligada a uma breve resposta vagal e pode dar um leve empurrão na VFC depois, mas as evidências de longo prazo são escassas. A respiração Wim Hof é hiperventilação rápida seguida de apneias — uma ferramenta diferente da respiração lenta, e não a primeira escolha para aumentar a VFC. [Limites honestos da respiração e do frio →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hof →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
@@ -243,7 +243,7 @@
         {
           "id": "reading-or-trend",
           "q": "Devo olhar uma leitura isolada de VFC ou a tendência?",
-          "a": "A tendência. A VFC do dia a dia varia muito por motivos comuns, então uma manhã diz pouco. Uma média de 7 dias em relação à sua faixa de 2–4 semanas é muito mais significativa. [Veja a sua faixa de duas semanas →](/tools/baseline)"
+          "a": "A tendência. A VFC do dia a dia varia muito por motivos comuns, então uma manhã diz pouco. Compare cada leitura com a sua própria faixa recente: o app ONDA, por exemplo, compara cada noite com o seu corredor (a média das suas noites recentes ± um desvio padrão), precisa de pelo menos 7 noites e forma a linha de base ao longo de 14 dias. [Veja a sua faixa de duas semanas →](/tools/baseline)"
         },
         {
           "id": "baseline-days",

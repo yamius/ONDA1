@@ -280,7 +280,7 @@
           "bullets": [
             {
               "label": "Respirer lentement",
-              "text": "Respirer lentement, autour de 5 à 7 respirations par minute avec une expiration plus longue et détendue, est une façon bien étudiée de calmer le corps chez la plupart des gens."
+              "text": "Respirer lentement, autour de 5,5 à 6 respirations par minute (individuellement environ 4,5 à 7) avec une expiration plus longue et détendue, est une façon bien étudiée de calmer le corps chez la plupart des gens."
             },
             {
               "label": "Posture et immobilité",
@@ -563,7 +563,7 @@
         },
         {
           "heading": "Plages typiques et facteurs d’influence",
-          "body": "Le RMSSD au repos varie beaucoup chez les adultes en bonne santé, souvent entre 20 et 80 ms environ ; il tend à être plus élevé chez les personnes jeunes et en forme et à baisser avec l’âge. Il diminue généralement après une mauvaise nuit, de l’alcool, une maladie, un entraînement intense ou un stress aigu, et remonte avec une bonne récupération. Les écarts entre personnes sont importants : votre propre tendance compte plus que la comparaison avec les autres.",
+          "body": "Pour des mesures courtes en journée comme celle-ci, le RMSSD au repos varie beaucoup chez les adultes en bonne santé, souvent entre 20 et 80 ms environ. L’âge et le moment de la journée comptent : il tend à être plus élevé chez les personnes jeunes et en forme, plus bas avec l’âge, et les valeurs nocturnes d’une montre sont généralement plus élevées que les mesures ponctuelles en journée. Voir la [VFC normale selon l’âge](/articles/normal-hrv-by-age) ou essayer l’[outil VFC](/tools/hrv). Il diminue généralement après une mauvaise nuit, de l’alcool, une maladie, un entraînement intense ou un stress aigu, et remonte avec une bonne récupération. Les écarts entre personnes sont importants : votre propre tendance compte plus que la comparaison avec les autres.",
           "bullets": [
             {
               "label": "Plus haut que d’habitude",
@@ -746,7 +746,7 @@
         },
         {
           "heading": "Pourquoi la respiration lente est populaire",
-          "body": "Respirer lentement, souvent autour de 5 à 7 respirations par minute avec une expiration plus longue et détendue, tend à amplifier les variations de fréquence cardiaque qui suivent chaque respiration et s’accompagne d’une sensation de calme. C’est une technique peu risquée et bien étudiée. Si vous avez la tête qui tourne, revenez à une respiration normale."
+          "body": "Respirer lentement, souvent autour de 5,5 à 6 respirations par minute (individuellement environ 4,5 à 7) avec une expiration plus longue et détendue, tend à amplifier les variations de fréquence cardiaque qui suivent chaque respiration et s’accompagne d’une sensation de calme. C’est une technique peu risquée et bien étudiée. Si vous avez la tête qui tourne, revenez à une respiration normale."
         },
         {
           "heading": "Conseils pour une meilleure mesure",

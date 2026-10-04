@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Qual é a frequência cardíaca de repouso normal por idade?",
-        "a": "Para adultos de qualquer idade, a frequência cardíaca de repouso normal é de 60 a 100 batimentos por minuto; as grandes mudanças acontecem na infância, quando recém-nascidos ficam em 100–160 bpm e a frequência se estabiliza ao longo da adolescência. Adultos bem condicionados costumam ficar na faixa dos 40 ou 50. Dentro da faixa normal, a sua própria tendência diz mais do que a média da população.",
+        "a": "Para adultos de qualquer idade, a frequência cardíaca de repouso normal é de 60 a 100 batimentos por minuto; as grandes mudanças acontecem na infância, quando recém-nascidos ficam em 100–160 bpm e a frequência se estabiliza ao longo da adolescência. Adultos bem condicionados costumam ficar abaixo disso (muitas vezes 40–60 bpm), e algumas pesquisas associam cerca de 50–90 bpm a uma saúde melhor no longo prazo. Dentro da faixa normal, a sua própria tendência diz mais do que a média da população.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",
@@ -114,7 +114,7 @@
       },
       {
         "q": "Como acalmar o sistema nervoso rápido?",
-        "a": "Faça a expiração mais longa que a inspiração. Uma expiração longa e lenta ativa o nervo vago e desacelera o coração em um ou dois minutos; cantarolar enquanto expira reforça o efeito. Cinco minutos de respiração lenta, a cerca de seis respirações por minuto, bastam para a maioria das pessoas sentir a mudança.",
+        "a": "Faça a expiração mais longa que a inspiração. A respiração lenta com expiração mais longa está associada a uma VFC de mediação vagal mais alta durante a prática, e ela desacelera o coração em um ou dois minutos; cantarolar enquanto expira reforça o efeito. Cinco minutos de respiração lenta, a cerca de seis respirações por minuto, bastam para a maioria das pessoas sentir a mudança.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",
