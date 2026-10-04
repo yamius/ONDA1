@@ -1298,6 +1298,26 @@
     "qi-coil": {
       "verdict": "Vendu comme PEMF mais fondé sur des allégations de fréquences Rife et « scalaires » sans preuve crédible — paramètres de champ non divulgués, préréglages opaques, prix extrêmes. Un vrai tapis PEMF fait mieux, avec de vraies spécifications, pour moins cher.",
       "productType": "Appareil à fréquences Rife/« scalaires » vendu comme PEMF"
+    },
+    "higherdose-pemf-mat": {
+      "verdict": "Le meilleur tapis PEMF d’une marque grand public — multimodal, finition haut de gamme, commandes simples. Intensité de champ et appui scientifique plus faibles que Bemer ou Healthy Wave.",
+      "productType": "Tapis grand public PEMF + infrarouge + cristaux"
+    },
+    "omnilux-contour-face": {
+      "verdict": "La référence clinique — autorisation FDA de classe II, études dermatologiques évaluées par des pairs, silicone souple. L’étalon auquel on compare tout masque à lumière rouge grand public.",
+      "productType": "Masque facial souple en silicone à lumière rouge, autorisé par la FDA"
+    },
+    "higherdose-red-light-face-mask": {
+      "verdict": "La meilleure expérience d’utilisation d’une marque grand public parmi les masques à lumière rouge — télécommande simple, silicone souple, 50 mW/cm² selon la marque. Preuves cliniques légères ; finition de marque plus que profondeur technique.",
+      "productType": "Masque facial souple en silicone rouge + infrarouge d’une marque grand public"
+    },
+    "medito": {
+      "verdict": "Entièrement gratuite, open source et sans publicité, sans compte requis — le choix sans contrepartie, si vous acceptez une bibliothèque plus petite.",
+      "productType": "Appli de méditation"
+    },
+    "headspace": {
+      "verdict": "La meilleure appli pour vraiment apprendre à méditer — des cours structurés et un enseignement clair, avec une offre gratuite qui n’est guère qu’un échantillon.",
+      "productType": "Appli de méditation"
     }
   },
   "comparisons": {
@@ -2574,6 +2594,315 @@
         }
       ],
       "content": "## La réponse courte\n\nLa RingConn Gen 2 est le meilleur achat pour la plupart des gens : $299 sans abonnement, 10–12 jours d'autonomie et aucune série de pannes de batterie. L'Ultrahuman Ring Air est plus légère et se connecte au CGM Ultrahuman M1, mais elle coûte environ $349, a des problèmes de batterie largement signalés et sa vente est interdite aux États-Unis depuis le 21 octobre 2025. Aux États-Unis, la vraie alternative d'Ultrahuman est la [Ring Pro](/reviews/ultrahuman-ring-pro).\n\n| | RingConn Gen 2 | Ultrahuman Ring Air |\n|---|---|---|\n| Prix | $299 | ~$349 (hors États-Unis) |\n| Abonnement | Aucun | Aucun |\n| Autonomie | 10–12 jours ; boîtier : ~150 jours de plus | Jusqu'à ~6 jours neuve |\n| Fiabilité | Aucune série de pannes signalée | Pannes de batterie largement signalées |\n| Poids | Légère | Plus légère (à partir de ~2,4 g) |\n| Intégration CGM | Non | Oui, Ultrahuman M1 |\n| Disponible aux États-Unis | Oui | Plus de ventes neuves depuis le 21 oct. 2025 |\n\n## Choisissez la RingConn Gen 2 si…\n\n- vous voulez la meilleure autonomie et moins de trous dans votre historique nocturne de VFC ;\n- vous voulez une bague que vous pouvez acheter neuve et faire réparer sous garantie aux États-Unis ;\n- vous voulez le prix le plus bas sans abonnement.\n\nTous les détails dans notre [avis sur la RingConn Gen 2](/reviews/ringconn-gen-2).\n\n## Choisissez l'Ultrahuman Ring Air si…\n\n- vous vivez hors des États-Unis et voulez une bague très légère ;\n- vous utilisez ou comptez utiliser le CGM Ultrahuman M1 et voulez tout dans une seule appli ;\n- vous pouvez acheter auprès d'un vendeur offrant retour et garantie faciles.\n\nTous les détails dans notre [avis sur l'Ultrahuman Ring Air](/reviews/ultrahuman-ring-air).\n\n## Pourquoi l'interdiction aux États-Unis compte-t-elle ?\n\nEn 2025, la Commission du commerce international des États-Unis a estimé que les bagues d'Ultrahuman enfreignaient un brevet d'Oura. L'ordonnance d'exclusion est entrée en vigueur le 21 octobre 2025 : la Ring Air ne peut plus être importée aux États-Unis. Une Ring Air achetée aujourd'hui aux États-Unis est un reste de stock ou une bague d'occasion, ce qui complique les recours en garantie — un vrai risque vu les signalements sur la batterie. La réponse d'Ultrahuman pour les États-Unis est la Ring Pro : $479, sans abonnement, jusqu'à 15 jours d'autonomie. Voir [Ring Pro vs RingConn Gen 2](/reviews/vs/ultrahuman-ring-pro-vs-ringconn-gen-2).\n\n## Quelle est leur précision pour la VFC ?\n\nLes deux bagues lisent la VFC au doigt la nuit, quand vous êtes immobile et que le signal est le plus propre. Elles conviennent donc aux tendances sur plusieurs jours, pas aux mesures cliniques. Aucune n'a autant de validations publiées qu'Oura. Pour interpréter vos chiffres, comparez-les à la [VFC normale selon l'âge](/articles/normal-hrv-by-age) — et surtout à votre propre référence.\n\n## Comparatifs liés\n\nNouvelle génération : [RingConn Gen 3 vs RingConn Gen 2](/reviews/vs/ringconn-gen-3-vs-ringconn-gen-2). Face à Oura : [Oura Ring 4 vs Ultrahuman Ring Air vs RingConn Gen 2](/reviews/vs/oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2). Classement complet : [les meilleurs capteurs de VFC de 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Sources\n\n- [RingConn Gen 2 — page produit officielle](https://ringconn.com/products/ringconn-gen-2) (prix, autonomie, tailles), consultée le 2026-10-03\n- [Ultrahuman Ring Air — page produit officielle](https://www.ultrahuman.com/ring/)\n- [Oura : décision de l'ITC sur les brevets contre Ultrahuman](https://ouraring.com/blog/oura-itc-case/)"
+    },
+    "muse-s-athena-vs-neurosity-crown": {
+      "title": "Muse S Athena vs Neurosity Crown : comparatif (2026)",
+      "description": "Muse S Athena (474,99 $) est le meilleur casque EEG pour méditer et dormir ; Neurosity Crown (1 499 $) gagne pour les données brutes et les développeurs.",
+      "intro": "Muse S Athena et Neurosity Crown sont les deux casques EEG grand public les plus souvent comparés, mais ils répondent à des questions différentes. Athena est un bandeau souple avec quatre canaux EEG, du fNIRS et une grande bibliothèque de méditations guidées, conçu pour la pratique quotidienne et le sommeil. Crown est un casque à huit canaux doté d’un SDK ouvert, conçu pour celles et ceux qui veulent travailler avec leurs propres données cérébrales. Ce comparatif repose sur les preuves disponibles : ONDA n’a testé aucun des deux appareils en conditions réelles.",
+      "verdict": "Pas de gagnant absolu : ils s’adressent à des personnes différentes. Muse S Athena est le meilleur achat pour la méditation, le suivi du sommeil et l’entraînement à la concentration au quotidien, pour environ un tiers du prix ; Neurosity Crown est le meilleur achat pour l’EEG brut, une couverture plus large de la tête et le développement de vos propres applis.",
+      "bestForA": "Choisissez Muse S Athena si vous voulez de la méditation guidée avec retour en direct, un suivi des phases de sommeil et un bandeau confortable à porter la nuit.",
+      "bestForB": "Choisissez Neurosity Crown si vous voulez un EEG brut à huit canaux, un SDK JavaScript/Python ouvert et la liberté de développer ou de faire de la recherche avec vos propres données.",
+      "axes": [
+        {
+          "name": "Couverture EEG",
+          "note": "Crown : 8 canaux secs répartis sur l’avant, le centre, le sommet et l’arrière de la tête, à 256 Hz. Athena : 4 canaux EEG, surtout sur le front et derrière les oreilles."
+        },
+        {
+          "name": "Capteurs supplémentaires",
+          "note": "Athena ajoute un fNIRS préfrontal (flux sanguin et oxygénation) et la fréquence cardiaque. Crown ne mesure que l’EEG."
+        },
+        {
+          "name": "Méditation guidée",
+          "note": "Athena propose une grande bibliothèque aboutie de séances guidées avec retour audio en direct. Crown offre une musique de concentration adaptative, mais aucune bibliothèque de méditation."
+        },
+        {
+          "name": "Suivi du sommeil",
+          "note": "Athena suit le sommeil léger, profond et paradoxal dans un bandeau souple conçu pour la nuit. Crown n’est pas conçu pour le sommeil."
+        },
+        {
+          "name": "Données brutes et SDK",
+          "note": "Crown : SDK officiels JavaScript et Python, prise en charge de BrainFlow, LSL et OSC, plus un serveur MCP pour les assistants IA. Athena : données brutes uniquement via des applis tierces."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Crown : aucun, tout est inclus. Athena : les fonctions de base marchent sans, mais Smart Wakeup, le coach IA et les programmes sélectionnés nécessitent Muse Premium."
+        },
+        {
+          "name": "Confort",
+          "note": "Athena : bandeau souple en tissu, adapté aux longues séances et au sommeil. Crown : casque rigide de 228 g, confortable pour les séances assises."
+        },
+        {
+          "name": "Prix",
+          "note": "Muse S Athena : 474,99 $. Neurosity Crown : 1 499 $ en une fois. Athena coûte environ un tiers du prix."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Muse S Athena ou Neurosity Crown : lequel choisir pour méditer ?",
+          "a": "Muse S Athena. Il propose une grande bibliothèque de méditations guidées avec retour audio en direct et un bandeau souple que l’on peut porter pendant de longues séances. Neurosity Crown offre de la musique et des scores de concentration, mais aucune bibliothèque de méditation."
+        },
+        {
+          "q": "Le Neurosity Crown à 1 499 $ vaut-il le coup face au Muse S Athena ?",
+          "a": "Seulement si vous avez besoin de ce qu’Athena ne peut pas offrir : huit canaux EEG, des données brutes à 256 Hz et un SDK ouvert pour vos propres applis ou expériences. Pour la méditation, le sommeil et la concentration, Athena en fait plus pour environ un tiers du prix."
+        },
+        {
+          "q": "Le Muse S Athena nécessite-t-il un abonnement ?",
+          "a": "Pas pour ses fonctions de base : le retour pendant la méditation, les phases de sommeil et le suivi de la concentration et du stress fonctionnent sans. Certains extras – Smart Wakeup, le coach IA Enso et les programmes sélectionnés – nécessitent Muse Premium. Neurosity Crown n’a pas d’abonnement."
+        },
+        {
+          "q": "L’un des deux casques peut-il suivre le sommeil ?",
+          "a": "Muse S Athena, oui : il suit le sommeil léger, profond et paradoxal et il est conçu pour être porté la nuit. Neurosity Crown n’est pas conçu pour le sommeil."
+        },
+        {
+          "q": "Quel casque EEG choisir pour le développement et la recherche ?",
+          "a": "Neurosity Crown. Il propose des SDK officiels JavaScript et Python, fonctionne avec des outils de recherche comme BrainFlow et LSL, et intègre un serveur MCP pour que les assistants IA puissent lire les données en direct avec votre autorisation. Les données brutes de Muse ne sont accessibles que via des applis tierces."
+        }
+      ],
+      "content": "## En bref\n\n**Muse S Athena** est un bandeau de méditation et de sommeil qui se trouve utiliser l’EEG. **Neurosity Crown** est un casque EEG qui se trouve permettre l’entraînement à la concentration. Si vous voulez pratiquer et mieux dormir, choisissez Athena. Si vous voulez des données cérébrales exploitables, choisissez Crown.\n\n## Ce que mesure chacun\n\nL’EEG (électroencéphalographie) capte de minuscules signaux électriques du cerveau grâce à des capteurs posés sur le cuir chevelu. Le Crown dispose de **huit canaux secs** répartis sur l’avant, le centre, le sommet et l’arrière de la tête, échantillonnés 256 fois par seconde. Athena dispose de **quatre canaux EEG**, surtout sur le front et derrière les oreilles, et ajoute le **fNIRS** – une mesure optique du flux sanguin et de l’oxygène à l’avant du cerveau – ainsi que la fréquence cardiaque.\n\nPlus de canaux couvrent une plus grande partie de la tête, ce qui compte pour la recherche et les applis sur mesure. Pour le retour pendant une méditation guidée, quatre canaux bien placés suffisent.\n\n## Pratique et sommeil : Athena\n\nLa force d’Athena, c’est l’appli. Elle transforme votre signal cérébral en son en direct – une météo calme quand votre esprit s’apaise, plus forte quand il vagabonde – dans une grande bibliothèque de séances guidées. Le bandeau souple est assez confortable pour dormir avec, et il suit le sommeil léger, profond et paradoxal.\n\nLes fonctions de base marchent sans abonnement. Certains extras, comme Smart Wakeup, le coach IA et les programmes sélectionnés, nécessitent Muse Premium.\n\n## Données et développement : Crown\n\nLe Crown s’adresse à celles et ceux qui veulent les données elles-mêmes. Neurosity fournit des SDK officiels **JavaScript et Python**, la prise en charge de BrainFlow, LSL et OSC, et un **serveur MCP** qui permet aux assistants IA de lire vos données en direct si vous l’autorisez. Il n’y a pas d’abonnement. Les contreparties : le prix (1 499 $), un casque rigide de 228 g qui n’est pas fait pour dormir, et aucune bibliothèque de méditation.\n\n## Ce que disent les études\n\nL’EEG grand public peut montrer des changements globaux de l’activité cérébrale, comme davantage d’ondes alpha quand vous vous détendez, mais ce n’est pas un examen médical. Les études sur le neurofeedback grand public pour la concentration et l’humeur sont petites et contrastées : considérez donc ces appareils comme des aides à l’entraînement, pas comme un traitement. Voir [notre classement des casques EEG](/reviews/compare/best-eeg-headsets-2026) pour l’ensemble du marché et le [comparatif à trois avec le Muse 2](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown) si vous hésitez aussi avec le Muse moins cher.\n\n## Notre conclusion\n\nPour la plupart des gens, **Muse S Athena** est le meilleur achat : plus utile au quotidien, suivi du sommeil inclus et environ un tiers du prix. Choisissez **Neurosity Crown** uniquement si l’EEG brut multicanal et un SDK ouvert sont la raison pour laquelle vous achetez un casque."
+    },
+    "resona-health-vibe-vs-higherdose-pemf-mat": {
+      "title": "Resona VIBE vs HigherDOSE PEMF : comparatif (2026)",
+      "description": "Resona VIBE (299 $) est le moyen portable et abordable de tester la PEMF ; le tapis HigherDOSE (1 295 $) gagne pour le corps entier avec infrarouge.",
+      "intro": "Resona Health VIBE et le tapis HigherDOSE PEMF Mat utilisent tous deux des champs électromagnétiques pulsés, mais ils sont conçus pour des routines différentes. VIBE est un appareil de poche de 75 g doté de 130 protocoles préréglés, que l’on emporte ou porte autour du cou avec un cordon et que l’on pose sur une zone. Le tapis HigherDOSE est un tapis pleine longueur qui associe la PEMF à une chaleur infrarouge lointain et à une couche de cristaux d’améthyste et d’obsidienne, pour des séances allongées à la maison. Ce comparatif repose sur les preuves disponibles : ONDA n’a testé aucun des deux appareils en conditions réelles.",
+      "verdict": "Pas de gagnant absolu : Resona VIBE est le moyen le plus malin et le moins cher de savoir si la PEMF vous aide, tandis que le tapis HigherDOSE PEMF Mat s’adresse à ceux qui veulent déjà une séance de récupération quotidienne, chauffante et pour tout le corps.",
+      "bestForA": "Choisissez Resona Health VIBE si vous voulez essayer la PEMF pour 299 $, cibler une zone à la fois et emporter l’appareil partout.",
+      "bestForB": "Choisissez le tapis HigherDOSE PEMF Mat si vous voulez des séances allongées pour tout le corps avec chaleur infrarouge lointain et que vous avez la place et le budget pour un tapis à 1 295 $.",
+      "axes": [
+        {
+          "name": "Couverture",
+          "note": "HigherDOSE : un tapis de 185 × 73,5 cm sur lequel on s’allonge, qui couvre tout le corps. VIBE : un petit appareil posé sur une zone à la fois."
+        },
+        {
+          "name": "Portabilité",
+          "note": "VIBE pèse 75 g, est livré avec un cordon et tient 5 à 8 heures sur batterie. Le tapis HigherDOSE pèse 19 kg et doit être branché sur secteur."
+        },
+        {
+          "name": "Protocoles",
+          "note": "VIBE : 60 protocoles de base plus 70 d’extension. HigherDOSE : PEMF de 3 à 23 Hz sur quatre niveaux."
+        },
+        {
+          "name": "Modalités supplémentaires",
+          "note": "HigherDOSE ajoute une chaleur infrarouge lointain et 20 lb de cristaux d’améthyste et d’obsidienne. VIBE ne fait que de la PEMF."
+        },
+        {
+          "name": "Facilité d’utilisation",
+          "note": "VIBE fonctionne avec un seul bouton, sans appli ni abonnement ; le tapis est une routine allongée avec des réglages de niveau simples."
+        },
+        {
+          "name": "Garantie",
+          "note": "HigherDOSE propose une garantie satisfait ou remboursé de 120 jours. Resona propose 30 jours plus une garantie d’un an."
+        },
+        {
+          "name": "Prix",
+          "note": "Resona Health VIBE : 299 $. Tapis HigherDOSE PEMF Mat : 1 295 $ sans housse. VIBE coûte moins d’un quart du prix."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Le tapis PEMF HigherDOSE vaut-il le coup face au Resona VIBE ?",
+          "a": "Seulement si vous voulez des séances pour tout le corps avec chaleur infrarouge. Le tapis coûte 1 295 $ et ajoute l’infrarouge lointain et des cristaux ; VIBE coûte 299 $ et traite une zone à la fois. Si vous n’êtes pas sûr que la PEMF vous fasse quelque chose, commencez par VIBE."
+        },
+        {
+          "q": "Resona VIBE ou tapis HigherDOSE pour voyager ?",
+          "a": "Resona VIBE. Il pèse 75 g, tient 5 à 8 heures sur batterie et est livré avec un cordon. Le tapis HigherDOSE pèse 19 kg et doit être branché sur secteur."
+        },
+        {
+          "q": "Le Resona VIBE nécessite-t-il une appli ou un abonnement ?",
+          "a": "Non. Selon Resona, VIBE fonctionne avec un seul bouton, sans appli ni abonnement. Le tapis HigherDOSE n’a pas non plus d’abonnement."
+        },
+        {
+          "q": "Lequel offre la chaleur infrarouge ?",
+          "a": "Uniquement le tapis HigherDOSE PEMF Mat. Il associe la PEMF à une chaleur infrarouge lointain et à une couche de cristaux. Resona VIBE est un appareil de PEMF seule."
+        },
+        {
+          "q": "L’efficacité de la PEMF est-elle prouvée ?",
+          "a": "Pas pour la plupart des promesses bien-être. Les meilleures preuves concernent la douleur liée à l’arthrose : une revue Cochrane a conclu que la thérapie par champs électromagnétiques pourrait réduire modérément la douleur. Nous n’avons trouvé aucun essai indépendant sur l’un ou l’autre appareil : considérez-les comme des expériences à faible risque, pas comme des traitements."
+        }
+      ],
+      "content": "## En bref\n\n**Resona Health VIBE** est un appareil de PEMF de poche à 299 $ pour un usage ciblé. **Le tapis HigherDOSE PEMF Mat** est un tapis corps entier à 1 295 $ qui ajoute une chaleur infrarouge lointain et des cristaux. Si vous voulez essayer la PEMF à petit prix ou en déplacement, choisissez VIBE. Si vous voulez une séance chauffante pour tout le corps à la maison, choisissez le tapis.\n\n## Ce que fait chacun\n\n**VIBE** mesure 120 × 59 × 12 mm et pèse 75 g. Il propose 60 protocoles de base et 70 d’extension avec un seul bouton, sans appli ni abonnement, et tient 5 à 8 heures par charge. Resona indique un champ maximal de 900 µT. Vous le posez sur une zone ou le portez au cordon fourni.\n\n**Le tapis HigherDOSE** mesure 185 × 73,5 cm et pèse 19 kg. Il émet des impulsions de 3 à 23 Hz sur quatre niveaux, ajoute une chaleur infrarouge lointain et contient environ 20 lb de cristaux d’améthyste et d’obsidienne. Vous vous allongez dessus pour une séance, branché sur secteur.\n\n## Lequel choisir ?\n\nChoisissez **VIBE** si la PEMF vous intrigue, si vous voulez cibler une zone comme un genou ou le bas du dos, ou si vous voyagez. Choisissez **le tapis HigherDOSE** si vous appréciez déjà la récupération par la chaleur, voulez un rituel allongé et avez la place pour un tapis pleine longueur. La garantie satisfait ou remboursé de 120 jours de HigherDOSE est plus longue que les 30 jours de Resona, ce qui atténue le coût initial plus élevé.\n\n## Ce que disent les études\n\nLes preuves pour les appareils de PEMF grand public sont limitées. Le signal le plus solide concerne la douleur liée à l’arthrose : une revue Cochrane de petits essais a conclu que la thérapie par champs électromagnétiques pourrait réduire modérément la douleur, avec des effets incertains sur la fonction. Les promesses sur le sommeil, l’énergie ou la récupération viennent surtout des fabricants, et nous n’avons trouvé aucun essai indépendant sur l’un ou l’autre produit. Les cristaux ne reposent sur aucune preuve solide. N’utilisez pas la PEMF si vous avez un stimulateur cardiaque ou un autre dispositif implanté, et demandez d’abord l’avis d’un médecin si vous êtes enceinte ou suivez un traitement pour une maladie. Pour le contexte, lisez [médecine électrique et neuromodulation](/articles/electric-medicine-neuromodulation).\n\n## Notre conclusion\n\nCommencez par **Resona Health VIBE** si vous voulez tester la PEMF pour une fraction du prix. Choisissez **le tapis HigherDOSE PEMF Mat** si c’est vraiment une séance chauffante pour tout le corps que vous achetez. Pour d’autres options, voir [les meilleurs appareils de PEMF en 2026](/reviews/compare/best-pemf-devices-2026) et le [comparatif Healthy Wave vs HigherDOSE](/reviews/vs/healthy-wave-multi-wave-vs-higherdose-pemf-mat)."
+    },
+    "omnilux-contour-face-vs-higherdose-red-light-face-mask": {
+      "title": "Omnilux Contour vs HigherDOSE : comparatif (2026)",
+      "description": "Omnilux Contour Face (395 $) a le meilleur dossier clinique ; HigherDOSE (349 $) est moins cher, annonce plus de puissance et des séances de 20 minutes.",
+      "intro": "Omnilux Contour Face et le masque HigherDOSE Red Light Face Mask sont deux masques LED souples en silicone qui utilisent une lumière rouge et proche infrarouge quasi identique. Omnilux vient d’une marque dont les appareils sont utilisés en cabinet de dermatologie et possède le dossier clinique le plus ancien ; HigherDOSE est le masque lifestyle populaire du fabricant de la couverture de sauna et du tapis PEMF. Ce comparatif repose sur les preuves disponibles : ONDA n’a testé aucun des deux masques en conditions réelles.",
+      "verdict": "Omnilux Contour Face est le choix le plus sûr pour la plupart des acheteurs, car il associe la même lumière rouge et proche infrarouge à un dossier clinique plus long ; HigherDOSE est une alternative raisonnable et moins chère, à la puissance annoncée plus élevée.",
+      "bestForA": "Choisissez Omnilux Contour Face si vous voulez le masque au dossier clinique et d’autorisation FDA le plus solide, avec une routine simple de 10 minutes.",
+      "bestForB": "Choisissez le masque HigherDOSE Red Light Face Mask si vous voulez un masque lifestyle un peu moins cher, avec une option de 20 minutes et une irradiance annoncée plus élevée.",
+      "axes": [
+        {
+          "name": "Dossier clinique",
+          "note": "Omnilux est autorisé par la FDA (cleared) et ses appareils sont utilisés en cabinet de dermatologie, avec des études publiées ; HigherDOSE cite son propre essai de 8 semaines aux résultats autodéclarés."
+        },
+        {
+          "name": "Longueurs d’onde",
+          "note": "Omnilux : rouge 633 nm + proche infrarouge 830 nm. HigherDOSE : rouge 630 nm + proche infrarouge 830 nm – en pratique, la même paire."
+        },
+        {
+          "name": "LED",
+          "note": "Les deux utilisent 66 LED double puce, soit 132 sources lumineuses sur le visage ; aucun n’inclut de partie pour le cou."
+        },
+        {
+          "name": "Irradiance annoncée",
+          "note": "HigherDOSE annonce 50 mW/cm² au total (26 rouge + 24 proche infrarouge) ; Omnilux indique environ 30 mW/cm²."
+        },
+        {
+          "name": "Durée de séance",
+          "note": "Omnilux utilise une séance de 10 minutes ; HigherDOSE propose 10 ou 20 minutes, dans les deux cas 3 à 5 fois par semaine."
+        },
+        {
+          "name": "Confort",
+          "note": "Les deux sont des masques souples en silicone de qualité médicale, avec une télécommande rechargeable pour un port mains libres."
+        },
+        {
+          "name": "Prix",
+          "note": "Omnilux Contour Face : 395 $. Masque HigherDOSE Red Light Face Mask : 349 $ – 46 $ de moins."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Omnilux vaut-il le coup face à HigherDOSE ?",
+          "a": "Pour la plupart des acheteurs, oui. Vous payez 46 $ de plus pour les mêmes longueurs d’onde rouge et proche infrarouge, avec un dossier clinique plus long. Si l’écart de prix compte plus que les preuves, HigherDOSE est une alternative raisonnable."
+        },
+        {
+          "q": "Omnilux ou HigherDOSE contre les rides et ridules ?",
+          "a": "Omnilux, au vu des preuves. Ses appareils ont fait l’objet d’études dermatologiques publiées sur les ridules ; HigherDOSE s’appuie surtout sur son propre essai de 8 semaines aux résultats autodéclarés. Avec n’importe quel masque, les résultats sont modestes et demandent des semaines d’usage régulier."
+        },
+        {
+          "q": "Quel masque est le plus puissant ?",
+          "a": "Sur le papier, HigherDOSE : il annonce 50 mW/cm² au total contre environ 30 mW/cm² pour Omnilux. Une irradiance plus élevée n’a pas été prouvée donner de meilleurs résultats sur la peau, et ces deux chiffres sont des données du fabricant, pas des mesures indépendantes."
+        },
+        {
+          "q": "Omnilux et HigherDOSE utilisent-ils les mêmes longueurs d’onde ?",
+          "a": "Presque. Omnilux utilise un rouge à 633 nm et un proche infrarouge à 830 nm ; HigherDOSE un rouge à 630 nm et un proche infrarouge à 830 nm. Aucun ne propose de lumière bleue ou ambrée."
+        },
+        {
+          "q": "Combien de temps dure une séance avec chaque masque ?",
+          "a": "Omnilux utilise une séance de 10 minutes. HigherDOSE propose 10 ou 20 minutes. Les deux marques recommandent 3 à 5 séances par semaine."
+        }
+      ],
+      "content": "## En bref\n\n**Omnilux Contour Face** (395 $) est le masque au dossier clinique le plus solide. **Le masque HigherDOSE Red Light Face Mask** (349 $) est le choix lifestyle moins cher, avec une irradiance annoncée plus élevée et une option de 20 minutes. La lumière elle-même est presque identique : le choix se résume donc aux preuves face au prix et à la souplesse.\n\n## Ce que fait chacun\n\nLes deux sont des masques souples en silicone avec 66 LED double puce (132 sources lumineuses) qui diffusent une lumière rouge et proche infrarouge sur le visage. Omnilux utilise **rouge 633 nm + proche infrarouge 830 nm** à environ **30 mW/cm²** pour une séance fixe de **10 minutes**. HigherDOSE utilise **rouge 630 nm + proche infrarouge 830 nm**, annonce **50 mW/cm²** au total et vous laisse choisir **10 ou 20 minutes**. Les deux marques recommandent 3 à 5 séances par semaine, et aucun masque ne couvre le cou.\n\n## Lequel choisir ?\n\nChoisissez **Omnilux** si l’appui clinique compte le plus pour vous : il est autorisé par la FDA, ses appareils sont utilisés en cabinet de dermatologie et il s’appuie sur des études publiées. Choisissez **HigherDOSE** si vous voulez économiser 46 $, préférez des séances plus longues ou utilisez déjà d’autres produits HigherDOSE.\n\n## Ce que disent les études\n\nLa luminothérapie rouge et proche infrarouge s’appuie sur de petits essais cliniques montrant des améliorations modestes des ridules et de la texture de la peau, mais les preuves sont limitées et les résultats variables. Omnilux a le dossier publié le plus fourni ; les chiffres phares de HigherDOSE viennent de son propre essai de 8 semaines aux résultats autodéclarés. Une irradiance plus élevée sur le papier n’a pas été prouvée donner de meilleurs résultats. Considérez l’un ou l’autre masque comme une routine cosmétique, pas comme un traitement médical. Voir [notre classement des masques LED à lumière rouge](/reviews/compare/best-red-light-face-masks-2026), le [comparatif CurrentBody vs HigherDOSE](/reviews/vs/currentbody-series-2-vs-higherdose-red-light-face-mask) et [ce que fait la lumière rouge dans la cellule](/articles/mitochondrial-dna-red-light).\n\n## Notre conclusion\n\n**Omnilux Contour Face** est le meilleur choix par défaut : la même lumière avec un dossier clinique plus solide pour 46 $ de plus. **HigherDOSE** a du sens si le prix, une option de 20 minutes ou l’écosystème de la marque comptent plus pour vous que les preuves publiées."
+    },
+    "medito-vs-insight-timer": {
+      "title": "Medito vs Insight Timer : comparatif (2026)",
+      "description": "Medito (0 $, jamais de paywall) est l’appli de méditation gratuite la plus épurée ; Insight Timer (gratuit, Member Plus 60 $/an) gagne par sa bibliothèque.",
+      "intro": "Medito et Insight Timer sont les deux applis de méditation que l’on peut vraiment utiliser sans payer. Medito est gérée par une association à but non lucratif : chaque séance est gratuite, sans publicité, sans compte et sans offre premium. Insight Timer propose la plus grande bibliothèque gratuite de méditations guidées au monde, avec un abonnement facultatif Member Plus pour les cours et l’écoute hors ligne. Ce comparatif repose sur les preuves disponibles : ONDA n’a testé aucune des deux applis en conditions réelles.",
+      "verdict": "Pas de gagnant unique : Medito est le meilleur choix si vous voulez une appli entièrement gratuite et respectueuse de la vie privée, sans rien à débloquer, tandis qu’Insight Timer est le meilleur choix si vous voulez la plus grande bibliothèque gratuite et qu’une offre payante facultative ne vous dérange pas.",
+      "bestForA": "Choisissez Medito si vous voulez une appli de méditation totalement gratuite pour toujours, sans publicité, sans compte et sans incitation à payer.",
+      "bestForB": "Choisissez Insight Timer si vous voulez le plus grand choix possible d’enseignants et de séances gratuites, avec la possibilité de payer pour des cours structurés.",
+      "axes": [
+        {
+          "name": "Prix",
+          "note": "Medito : 0 $, aucune offre premium. Insight Timer : bibliothèque gratuite, Member Plus à 60 $ US par an avec 7 jours d’essai gratuit."
+        },
+        {
+          "name": "Taille de la bibliothèque",
+          "note": "Insight Timer recense 360 000 pistes gratuites de milliers d’enseignants ; la bibliothèque de Medito couvre l’essentiel, mais elle est bien plus petite."
+        },
+        {
+          "name": "Compte et vie privée",
+          "note": "Medito ne demande ni e-mail ni inscription et son code est public ; Insight Timer est construit autour d’un profil et de fonctions communautaires."
+        },
+        {
+          "name": "Publicité et incitations",
+          "note": "Medito n’a ni publicité ni paywall ; la bibliothèque gratuite d’Insight Timer s’accompagne d’invitations à passer à Member Plus."
+        },
+        {
+          "name": "Cours structurés",
+          "note": "Insight Timer Member Plus débloque des milliers de cours de 10 et 30 jours ; Medito propose gratuitement des cours du niveau débutant au niveau avancé."
+        },
+        {
+          "name": "Sélection et homogénéité",
+          "note": "La bibliothèque plus réduite de Medito est homogène ; avec le modèle ouvert d’Insight Timer, la qualité varie et c’est à vous de faire le tri."
+        },
+        {
+          "name": "Événements en direct et communauté",
+          "note": "Insight Timer organise régulièrement des événements en direct et a une communauté active ; Medito n’a rien de notable dans ce domaine."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Medito ou Insight Timer : quelle appli pour méditer gratuitement ?",
+          "a": "Les deux sont vraiment gratuites. Medito l’est sans exception : ni offre premium, ni publicité, ni compte. Insight Timer a une bibliothèque gratuite bien plus grande, mais les cours et l’écoute hors ligne sont réservés à Member Plus."
+        },
+        {
+          "q": "Insight Timer Member Plus vaut-il le coup face à Medito ?",
+          "a": "Seulement si vous voulez des cours structurés sur plusieurs jours et l’écoute hors ligne, avec un immense choix d’enseignants. À 60 $ US par an, c’est bon marché pour la catégorie, mais Medito vous donne déjà des cours et des séances de sommeil et de respiration pour rien."
+        },
+        {
+          "q": "Medito est-elle vraiment gratuite ?",
+          "a": "Oui. Medito est gérée par une association caritative enregistrée et affirme que chaque méditation est gratuite pour toujours, sans essai, sans offre premium, sans publicité et sans compte."
+        },
+        {
+          "q": "Medito ou Insight Timer pour débuter ?",
+          "a": "Medito est le départ le plus simple : un court parcours de cours pour débutants, sans rien à trier. Insight Timer convient aux débutants qui aiment parcourir de nombreux enseignants et styles pour trouver celui qui leur parle."
+        },
+        {
+          "q": "Quelle appli respecte le mieux la vie privée ?",
+          "a": "Medito. Vous pouvez méditer sans e-mail ni inscription, et son code est public. Insight Timer fonctionne sans payer, mais il est construit autour d’un profil utilisateur et d’une communauté."
+        }
+      ],
+      "content": "## En bref\n\n**Medito** et **Insight Timer** sont les deux meilleures applis de méditation gratuites. Medito est gratuite sans aucune contrepartie. Insight Timer est gratuite, avec une immense bibliothèque et une offre payante facultative. Prenez Medito pour la simplicité et la vie privée ; prenez Insight Timer pour la variété.\n\n## Ce qu’est chacune\n\n**Medito** est développée par la Medito Foundation, une association caritative enregistrée. Chaque séance est gratuite : méditations et cours guidés, histoires et sons pour dormir, exercices de respiration, séances sur le stress et l’anxiété et un minuteur sans guidage. Il n’y a ni publicité, ni compte, ni offre premium, et le code est public.\n\n**Insight Timer** fonctionne comme une grande plateforme ouverte pour les enseignants de méditation. Elle recense **360 000 pistes gratuites** de psychologues, d’enseignants de pleine conscience et de guides spirituels, ainsi que des événements en direct et une communauté. **Member Plus** (60 $ US par an, 7 jours d’essai gratuit) ajoute des milliers de cours de 10 et 30 jours, l’écoute hors ligne et une meilleure qualité audio.\n\n## Laquelle choisir ?\n\nChoisissez **Medito** si vous voulez ouvrir une appli et méditer, sans inscription, sans rien à débloquer et avec une bibliothèque assez petite pour ne pas vous submerger. Choisissez **Insight Timer** si vous aimez explorer différents enseignants, traditions et durées de séance, et que vous acceptez de faire un peu de tri – la qualité varie davantage sur une plateforme ouverte.\n\n## Ce que disent les études\n\nLes études sur la pleine conscience via appli montrent en moyenne des bénéfices modestes sur le stress et le bien-être, mais les résultats sont contrastés et dépendent fortement d’une pratique régulière. Aucune des deux applis n’a démontré sa supériorité sur l’autre, et la méditation n’est le traitement d’aucune maladie ; une petite minorité de personnes la trouvent déstabilisante – voir [sécurité de la méditation et effets indésirables](/articles/meditation-adverse-effects-safety). La régularité compte plus que la bibliothèque ; [combien de méditation il vous faut](/articles/how-much-meditation-do-you-need) aborde l’aspect pratique.\n\n## Notre conclusion\n\nAvec les deux applis, payer est facultatif. **Medito** est le choix gratuit le plus épuré et le plus respectueux de la vie privée ; **Insight Timer** vous offre bien plus de choix gratuitement et une mise à niveau peu chère si vous voulez des cours. Pour l’ensemble du marché, voir [notre classement des applis de méditation](/reviews/compare/best-meditation-apps-2026) ou [Calm vs Insight Timer](/reviews/vs/calm-vs-insight-timer)."
+    },
+    "medito-vs-headspace": {
+      "title": "Medito vs Headspace : comparatif (2026)",
+      "description": "Medito (gratuite, associative, sans pub) est la meilleure alternative gratuite à Headspace (env. 70 $/an) ; Headspace gagne en structure et en recherche.",
+      "intro": "Medito et Headspace sont souvent comparées par celles et ceux qui cherchent une alternative gratuite à Headspace. Medito est une appli de méditation entièrement gratuite et open source, gérée par une association néerlandaise à but non lucratif, sans publicité, sans compte et sans offre premium. Headspace est l’appli de méditation payante la plus connue, construite autour de cours structurés pour débutants et appuyée par des recherches publiées. Ce comparatif repose sur les preuves disponibles : ONDA n’a testé aucune des deux applis en conditions réelles.",
+      "verdict": "Pas de gagnant unique : Medito est le meilleur moyen de méditer sans rien payer, tandis que Headspace vaut environ 70 $ par an si vous voulez l’enseignement le plus structuré et un programme appuyé par la recherche.",
+      "bestForA": "Choisissez Medito si vous voulez une appli entièrement gratuite, sans publicité, sans compte, sans incitation à payer et au code open source.",
+      "bestForB": "Choisissez Headspace si vous débutez et voulez des cours clairs et structurés et une grande bibliothèque, et que vous êtes prêt à vous abonner.",
+      "axes": [
+        {
+          "name": "Prix",
+          "note": "Medito : gratuite, avec dons facultatifs. Headspace : abonnement d’environ 70 $ par an ou formule mensuelle, après 14 jours d’essai gratuit."
+        },
+        {
+          "name": "Contenu gratuit",
+          "note": "Medito : chaque méditation est gratuite, sans essai ni contenu verrouillé. Headspace : le contenu gratuit n’est guère plus qu’un échantillon."
+        },
+        {
+          "name": "Vie privée",
+          "note": "Medito ne demande pas de compte et publie son code. Headspace exige un compte pour s’abonner."
+        },
+        {
+          "name": "Enseignement pour débutants",
+          "note": "Les cours structurés de Headspace comptent parmi les plus clairs de la catégorie ; Medito couvre bien les bases, mais avec moins de structure."
+        },
+        {
+          "name": "Taille de la bibliothèque",
+          "note": "Headspace a une bibliothèque plus vaste couvrant méditation, sommeil, concentration et vie quotidienne ; celle de Medito est plus petite."
+        },
+        {
+          "name": "Personnalisation",
+          "note": "Headspace propose des bilans et des recommandations ; Medito propose des cours et des séances simples."
+        },
+        {
+          "name": "Recherche",
+          "note": "Headspace a financé et publié des études cliniques sur ses programmes ; Medito est un projet associatif, pas un programme de recherche."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Medito est-elle une bonne alternative gratuite à Headspace ?",
+          "a": "Oui. Medito est entièrement gratuite, sans publicité, sans compte et sans offre premium, et elle couvre l’essentiel : cours pour débutants, respiration, sommeil et séances contre le stress. Sa bibliothèque est plus petite et moins structurée que celle de Headspace."
+        },
+        {
+          "q": "Headspace vaut-il le coup de payer face à Medito ?",
+          "a": "Si vous voulez les cours pour débutants les plus structurés, une plus grande bibliothèque et un programme appuyé par la recherche, Headspace vaut environ 70 $ par an. Si vous voulez surtout méditer chaque jour avec un bon guidage, Medito le fait gratuitement."
+        },
+        {
+          "q": "Medito est-elle vraiment gratuite ?",
+          "a": "Oui. Medito est gérée par une association caritative néerlandaise enregistrée et affirme que chaque méditation est gratuite, sans essai, sans offre premium et sans publicité. Elle est financée par des dons."
+        },
+        {
+          "q": "Headspace propose-t-il un essai gratuit ?",
+          "a": "Oui. Headspace propose 14 jours d’essai gratuit, après quoi l’abonnement se renouvelle automatiquement sauf si vous résiliez."
+        },
+        {
+          "q": "Medito ou Headspace pour débuter ?",
+          "a": "Headspace offre le parcours pas à pas le plus clair pour les grands débutants. Medito est un bon départ si le coût compte, car ses cours pour débutants sont gratuits."
+        }
+      ],
+      "content": "## En bref\n\n**Medito** est la meilleure alternative gratuite à Headspace : chaque méditation est gratuite, sans publicité, sans compte et sans offre premium. **Headspace** coûte environ 70 $ par an, mais vous offre l’enseignement pour débutants le plus structuré, une plus grande bibliothèque et un programme appuyé par la recherche. Si le prix tranche, choisissez Medito. Si la structure tranche, choisissez Headspace.\n\n## Ce que fait chacune\n\nMedito est développée par la Medito Foundation, une association caritative enregistrée aux Pays-Bas. Son code est public, elle ne demande pas de compte et couvre l’essentiel : cours pour débutants, exercices de respiration, contenus pour le sommeil, séances sur le stress et l’anxiété et un minuteur de méditation. Elle est financée par des dons, pas par des abonnements.\n\nHeadspace est une appli par abonnement avec 14 jours d’essai gratuit. Sa force, c’est l’enseignement : des cours qui mènent un grand débutant à une pratique quotidienne régulière, plus une large bibliothèque pour le sommeil, la concentration et la vie quotidienne. Sans abonnement, le contenu gratuit n’est guère plus qu’un échantillon.\n\n## Laquelle choisir ?\n\nChoisissez **Medito** si vous ne voulez pas payer, tenez à votre vie privée ou n’aimez pas les incitations à l’achat. Choisissez **Headspace** si vous voulez un parcours guidé plus varié et êtes prêt à payer pour cela. Beaucoup commencent avec Medito et ne s’abonnent à une appli que s’ils veulent plus de structure plus tard. Pour d’autres options, voir [notre classement des applis de méditation](/reviews/compare/best-meditation-apps-2026) et [Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer), une autre bonne alternative peu chère.\n\n## Ce que disent les études\n\nLes applis de méditation ont été étudiées dans des essais randomisés, souvent courts, avec en moyenne des bénéfices modestes sur le stress et l’humeur et de fortes différences d’une personne à l’autre. Headspace a financé et publié des recherches sur ses propres programmes, ce qui joue en sa faveur. Medito n’a pas de recherche comparable à son nom, mais les pratiques de base qu’elle enseigne sont du même type que celles qu’étudient les essais. Aucune des deux applis n’est un traitement pour un trouble de santé mentale.\n\n## Notre conclusion\n\nComme alternative gratuite à Headspace, **Medito** est le choix le plus épuré : aucun coût, aucune publicité, aucun compte. **Headspace** reste le meilleur professeur pour les débutants qui veulent de la structure et acceptent de payer environ 70 $ par an. Voir le [test complet de Medito](/reviews/medito) et le [test de Headspace](/reviews/headspace) pour les notes."
     }
   }
 }

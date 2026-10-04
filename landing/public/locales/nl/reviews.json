@@ -1298,6 +1298,26 @@
     "qi-coil": {
       "verdict": "Verkocht als PEMF, maar gebouwd op Rife-frequentie- en “scalar”-claims zonder geloofwaardig bewijs — onbekende veldparameters, black-box-presets, extreme prijzen. Een echte PEMF-mat doet meer, met echte specificaties, voor minder.",
       "productType": "Rife/“scalar”-frequentieapparaat verkocht als PEMF"
+    },
+    "higherdose-pemf-mat": {
+      "verdict": "Beste PEMF-mat van een consumentenmerk — meerdere modaliteiten, premium afwerking, eenvoudige bediening. Veldintensiteit en wetenschappelijke onderbouwing zijn zwakker dan bij Bemer of Healthy Wave.",
+      "productType": "Consumentenmat met PEMF + infrarood + kristallen"
+    },
+    "omnilux-contour-face": {
+      "verdict": "De klinische referentie — FDA-clearance klasse II, peer-reviewed dermatologische studies, flexibele siliconen. De maatstaf waarmee elk roodlichtmasker voor consumenten wordt vergeleken.",
+      "productType": "Flexibel siliconen roodlicht-gezichtsmasker met FDA-clearance"
+    },
+    "higherdose-red-light-face-mask": {
+      "verdict": "Beste gebruikservaring van een consumentenmerk onder de roodlichtmaskers — eenvoudige controller, flexibele siliconen, volgens het merk 50 mW/cm². Weinig klinisch bewijs; merkuitstraling boven technische diepgang.",
+      "productType": "Flexibel siliconen rood + infrarood gezichtsmasker van een consumentenmerk"
+    },
+    "medito": {
+      "verdict": "Helemaal gratis, open source en zonder advertenties, geen account nodig — de keuze zonder voorwaarden, als je een kleinere bibliotheek kunt accepteren.",
+      "productType": "Meditatie-app"
+    },
+    "headspace": {
+      "verdict": "De beste app om echt te leren mediteren — gestructureerde cursussen en heldere uitleg, met een gratis versie die nauwelijks meer is dan een voorproefje.",
+      "productType": "Meditatie-app"
     }
   },
   "comparisons": {
@@ -2574,6 +2594,315 @@
         }
       ],
       "content": "## Het korte antwoord\n\nDe RingConn Gen 2 is voor de meeste mensen de betere koop: $299 zonder abonnement, 10–12 dagen batterij en geen patroon van batterijdefecten. De Ultrahuman Ring Air is lichter en werkt samen met de Ultrahuman M1 CGM, maar kost ongeveer $349, heeft veelgemelde batterijproblemen en mag sinds 21 oktober 2025 niet meer in de VS worden verkocht. In de VS is het echte Ultrahuman-alternatief de [Ring Pro](/reviews/ultrahuman-ring-pro).\n\n| | RingConn Gen 2 | Ultrahuman Ring Air |\n|---|---|---|\n| Prijs | $299 | ~$349 (buiten de VS) |\n| Abonnement | Geen | Geen |\n| Batterij | 10–12 dagen; case voegt ~150 dagen toe | Tot ~6 dagen als hij nieuw is |\n| Betrouwbaarheid | Geen patroon van defecten gemeld | Veelgemelde batterijdefecten |\n| Gewicht | Licht | Lichter (vanaf ~2,4 g) |\n| CGM-integratie | Nee | Ja, Ultrahuman M1 |\n| Verkrijgbaar in de VS | Ja | Geen nieuwe verkoop sinds 21 okt 2025 |\n\n## Kies RingConn Gen 2 als…\n\n- je de langste batterijduur wilt en minder gaten in je nachtelijke HRV-gegevens;\n- je een ring wilt die je in de VS nieuw kunt kopen en waarvoor je garantieservice krijgt;\n- je de lagere prijs zonder abonnement wilt.\n\nAlle details in onze [RingConn Gen 2-review](/reviews/ringconn-gen-2).\n\n## Kies Ultrahuman Ring Air als…\n\n- je buiten de VS woont en een heel lichte ring wilt;\n- je de Ultrahuman M1 CGM gebruikt of wilt gebruiken en alles in één app wilt;\n- je kunt kopen bij een verkoper met eenvoudig retourneren en garantie.\n\nAlle details in onze [Ultrahuman Ring Air-review](/reviews/ultrahuman-ring-air).\n\n## Waarom doet het Amerikaanse verbod ertoe?\n\nIn 2025 oordeelde de US International Trade Commission dat de ringen van Ultrahuman inbreuk maakten op een patent van Oura. Het invoerverbod ging in op 21 oktober 2025, dus de Ring Air mag niet meer in de VS worden ingevoerd. Een Ring Air die je nu in de VS koopt, is restvoorraad of een gebruikte ring, wat garantieclaims lastiger maakt — een reëel risico gezien de batterijmeldingen. Het Amerikaanse antwoord van Ultrahuman is de Ring Pro: $479, geen abonnement, tot 15 dagen batterij. Zie [Ring Pro vs RingConn Gen 2](/reviews/vs/ultrahuman-ring-pro-vs-ringconn-gen-2).\n\n## Hoe nauwkeurig meten ze HRV?\n\nBeide ringen lezen 's nachts HRV af aan de vinger, wanneer je stil ligt en het signaal het schoonst is. Dat maakt ze goed voor trends over meerdere dagen, niet voor klinische metingen. Geen van beide heeft zoveel gepubliceerde validatie als Oura. Om je eigen cijfers te lezen, vergelijk je ze met [normale HRV per leeftijd](/articles/normal-hrv-by-age) — en vooral met je eigen baseline.\n\n## Gerelateerde vergelijkingen\n\nNieuwere generatie: [RingConn Gen 3 vs RingConn Gen 2](/reviews/vs/ringconn-gen-3-vs-ringconn-gen-2). Tegen Oura: [Oura Ring 4 vs Ultrahuman Ring Air vs RingConn Gen 2](/reviews/vs/oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2). Volledige ranglijst: [beste HRV-trackers van 2026](/reviews/compare/best-hrv-trackers-2026).\n\n## Bronnen\n\n- [RingConn Gen 2 — officiële productpagina](https://ringconn.com/products/ringconn-gen-2) (prijs, batterij, maten), gecontroleerd op 2026-10-03\n- [Ultrahuman Ring Air — officiële productpagina](https://www.ultrahuman.com/ring/)\n- [Oura: ITC-patentuitspraak tegen Ultrahuman](https://ouraring.com/blog/oura-itc-case/)"
+    },
+    "muse-s-athena-vs-neurosity-crown": {
+      "title": "Muse S Athena vs Neurosity Crown: vergelijking (2026)",
+      "description": "Muse S Athena ($474,99) is de betere EEG-headset voor meditatie en slaap; Neurosity Crown ($1.499) wint voor ruwe hersendata en developers.",
+      "intro": "Muse S Athena en Neurosity Crown zijn de twee EEG-headsets voor consumenten die het vaakst worden vergeleken, maar ze beantwoorden verschillende vragen. Athena is een zachte hoofdband met vier EEG-kanalen, fNIRS en een grote bibliotheek met begeleide meditaties, gemaakt voor dagelijkse beoefening en slaap. Crown is een headset met acht kanalen en een open SDK, gemaakt voor mensen die met hun eigen hersendata willen werken. Deze vergelijking is gebaseerd op bewijs: ONDA heeft geen van beide apparaten zelf getest.",
+      "verdict": "Geen algehele winnaar — ze zijn voor verschillende mensen. Muse S Athena is de betere koop voor meditatie, slaaptracking en dagelijkse focustraining, voor ongeveer een derde van de prijs; Neurosity Crown is de betere koop voor ruwe EEG, een bredere dekking van het hoofd en het bouwen van je eigen apps.",
+      "bestForA": "Kies Muse S Athena als je begeleide meditatie met live feedback wilt, slaapfasetracking en een comfortabele band die je 's nachts kunt dragen.",
+      "bestForB": "Kies Neurosity Crown als je ruwe EEG met acht kanalen wilt, een open JavaScript/Python-SDK en de vrijheid om met je eigen data te bouwen of onderzoek te doen.",
+      "axes": [
+        {
+          "name": "EEG-dekking",
+          "note": "Crown: 8 droge kanalen verspreid over voorkant, midden, bovenkant en achterkant van het hoofd, op 256 Hz. Athena: 4 EEG-kanalen, vooral op het voorhoofd en achter de oren."
+        },
+        {
+          "name": "Extra sensoren",
+          "note": "Athena voegt prefrontale fNIRS (doorbloeding en zuurstofverzadiging) en hartslag toe. Crown meet alleen EEG."
+        },
+        {
+          "name": "Begeleide meditatie",
+          "note": "Athena heeft een grote, volwassen bibliotheek met begeleide sessies en live audiofeedback. Crown heeft adaptieve focusmuziek, maar geen meditatiebibliotheek."
+        },
+        {
+          "name": "Slaaptracking",
+          "note": "Athena meet lichte, diepe en REM-slaap in een zachte band die gemaakt is om 's nachts te dragen. Crown is niet bedoeld voor slaap."
+        },
+        {
+          "name": "Ruwe data en SDK",
+          "note": "Crown: officiële SDK's voor JavaScript en Python, ondersteuning voor BrainFlow, LSL en OSC, plus een MCP-server voor AI-assistenten. Athena: ruwe data alleen via apps van derden."
+        },
+        {
+          "name": "Abonnement",
+          "note": "Crown: geen, alles inbegrepen. Athena: de kernfuncties werken zonder, maar Smart Wakeup, de AI-coach en samengestelde programma's vereisen Muse Premium."
+        },
+        {
+          "name": "Comfort",
+          "note": "Athena: zachte stoffen band, prima voor lange sessies en slaap. Crown: stevige headset van 228 g, comfortabel voor zittende sessies."
+        },
+        {
+          "name": "Prijs",
+          "note": "Muse S Athena: $474,99. Neurosity Crown: $1.499 eenmalig. Athena kost ongeveer een derde."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Muse S Athena of Neurosity Crown beter om te mediteren?",
+          "a": "Muse S Athena. Die heeft een grote bibliotheek met begeleide meditaties en live audiofeedback, en een zachte band die je ook bij lange sessies kunt dragen. Neurosity Crown heeft focusmuziek en focusscores, maar geen meditatiebibliotheek."
+        },
+        {
+          "q": "Is de Neurosity Crown van $1.499 het waard boven de Muse S Athena?",
+          "a": "Alleen als je nodig hebt wat Athena niet biedt: acht EEG-kanalen, ruwe data op 256 Hz en een open SDK voor je eigen apps of experimenten. Voor meditatie, slaap en focustraining doet Athena meer voor ongeveer een derde van de prijs."
+        },
+        {
+          "q": "Heeft de Muse S Athena een abonnement nodig?",
+          "a": "Niet voor de kernfuncties: meditatiefeedback, slaapfases en het volgen van focus en stress werken zonder. Sommige extra's — Smart Wakeup, de AI-coach Enso en samengestelde programma's — vereisen Muse Premium. Neurosity Crown heeft geen abonnement."
+        },
+        {
+          "q": "Kan een van beide headsets slaap meten?",
+          "a": "Muse S Athena wel: die meet lichte, diepe en REM-slaap en is gemaakt om 's nachts te dragen. Neurosity Crown is niet bedoeld voor slaap."
+        },
+        {
+          "q": "Welke EEG-headset is beter voor developers en onderzoek?",
+          "a": "Neurosity Crown. Die biedt officiële SDK's voor JavaScript en Python, werkt met onderzoekstools zoals BrainFlow en LSL en heeft een MCP-server waarmee AI-assistenten met jouw toestemming live data kunnen lezen. Ruwe data van Muse is alleen beschikbaar via apps van derden."
+        }
+      ],
+      "content": "## De korte versie\n\n**Muse S Athena** is een meditatie- en slaaphoofdband die toevallig EEG gebruikt. **Neurosity Crown** is een EEG-headset die toevallig focustraining ondersteunt. Wil je oefenen en beter slapen, kies dan Athena. Wil je hersendata waarmee je kunt werken, kies dan Crown.\n\n## Wat ze meten\n\nEEG (elektro-encefalografie) vangt minieme elektrische signalen van de hersenen op via sensoren op de hoofdhuid. De Crown heeft **acht droge kanalen** verspreid over voorkant, midden, bovenkant en achterkant van het hoofd, met 256 metingen per seconde. Athena heeft **vier EEG-kanalen**, vooral op het voorhoofd en achter de oren, en voegt **fNIRS** toe — meting met licht van doorbloeding en zuurstof in het voorste deel van de hersenen — plus hartslag.\n\nMeer kanalen dekken meer van het hoofd af, wat telt voor onderzoek en eigen apps. Voor feedback bij begeleide meditatie zijn vier goed geplaatste kanalen genoeg.\n\n## Oefenen en slapen: Athena\n\nDe kracht van Athena is de app. Die zet je hersensignaal om in live geluid — rustig weer als je geest tot rust komt, harder als hij afdwaalt — in een grote bibliotheek met begeleide sessies. De zachte band is comfortabel genoeg om in te slapen, en de hoofdband meet lichte, diepe en REM-slaap.\n\nDe kernfuncties werken zonder abonnement. Sommige extra's, zoals Smart Wakeup, de AI-coach en samengestelde programma's, vereisen Muse Premium.\n\n## Data en bouwen: Crown\n\nDe Crown is voor mensen die de data zelf willen. Neurosity biedt officiële SDK's voor **JavaScript en Python**, ondersteuning voor BrainFlow, LSL en OSC, en een **MCP-server** waarmee AI-assistenten je live data kunnen lezen als je dat toestaat. Er is geen abonnement. De nadelen zijn de prijs ($1.499), een stevige headset van 228 g die niet gemaakt is om in te slapen, en geen meditatiebibliotheek.\n\n## Wat het bewijs zegt\n\nEEG voor consumenten kan grove veranderingen in hersenactiviteit laten zien, zoals meer alfa als je ontspant, maar het is geen medische test. Studies naar neurofeedback voor consumenten voor focus en stemming zijn klein en wisselend, dus zie beide apparaten als trainingshulpmiddel, niet als behandeling. Zie [onze ranglijst van EEG-headsets](/reviews/compare/best-eeg-headsets-2026) voor het bredere veld en de [driewegvergelijking met Muse 2](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown) als je ook de goedkopere Muse overweegt.\n\n## Conclusie\n\nVoor de meeste mensen is **Muse S Athena** de betere koop: nuttiger in het dagelijks leven, met slaaptracking en voor ongeveer een derde van de prijs. Kies **Neurosity Crown** alleen als ruwe meerkanaals-EEG en een open SDK de reden zijn dat je een headset koopt."
+    },
+    "resona-health-vibe-vs-higherdose-pemf-mat": {
+      "title": "Resona VIBE vs HigherDOSE PEMF-mat: vergelijking (2026)",
+      "description": "Resona VIBE ($299) is de goedkopere, draagbare manier om PEMF te proberen; de HigherDOSE PEMF-mat ($1.295) wint voor het hele lichaam met infraroodwarmte.",
+      "intro": "Resona Health VIBE en de HigherDOSE PEMF Mat gebruiken allebei gepulseerde elektromagnetische velden, maar zijn gebouwd voor verschillende routines. VIBE is een zakapparaat van 75 g met 130 vooraf ingestelde protocollen dat je meeneemt of aan een koord draagt en op één plek legt. De HigherDOSE-mat is een mat over de volle lengte die PEMF combineert met verre-infraroodwarmte en een laag amethist- en obsidiaankristallen, voor liggende sessies thuis. Deze vergelijking is gebaseerd op bewijs: ONDA heeft geen van beide apparaten zelf getest.",
+      "verdict": "Geen algehele winnaar — Resona VIBE is de slimmere, goedkope manier om uit te zoeken of PEMF jou helpt, terwijl de HigherDOSE PEMF Mat bedoeld is voor mensen die al een dagelijkse, verwarmde herstelsessie voor het hele lichaam willen.",
+      "bestForA": "Kies Resona Health VIBE als je PEMF wilt proberen voor $299, steeds één plek gericht wilt behandelen en het apparaat wilt meenemen.",
+      "bestForB": "Kies de HigherDOSE PEMF Mat als je liggende sessies voor het hele lichaam met verre-infraroodwarmte wilt en de ruimte en het budget hebt voor een mat van $1.295.",
+      "axes": [
+        {
+          "name": "Dekking",
+          "note": "HigherDOSE: een mat van 185 × 73,5 cm waarop je ligt en die het hele lichaam bedekt. VIBE: een klein apparaat dat je steeds op één plek legt."
+        },
+        {
+          "name": "Draagbaarheid",
+          "note": "VIBE weegt 75 g, wordt geleverd met een koord en werkt 5–8 uur op de accu. De HigherDOSE-mat weegt 19 kg en heeft een stopcontact nodig."
+        },
+        {
+          "name": "Protocollen",
+          "note": "VIBE: 60 basis- plus 70 uitbreidingsprotocollen. HigherDOSE: PEMF op 3–23 Hz in vier standen."
+        },
+        {
+          "name": "Extra modaliteiten",
+          "note": "HigherDOSE voegt verre-infraroodwarmte en 20 lb amethist- en obsidiaankristallen toe. VIBE is alleen PEMF."
+        },
+        {
+          "name": "Gebruiksgemak",
+          "note": "VIBE werkt met één knop, zonder app of abonnement; de mat is een liggende routine met eenvoudige standen."
+        },
+        {
+          "name": "Garantie",
+          "note": "HigherDOSE biedt een niet-goed-geld-terug-garantie van 120 dagen. Resona biedt 30 dagen plus 1 jaar garantie."
+        },
+        {
+          "name": "Prijs",
+          "note": "Resona Health VIBE: $299. HigherDOSE PEMF Mat: $1.295 zonder hoes. VIBE kost minder dan een kwart."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is de HigherDOSE PEMF-mat het waard boven de Resona VIBE?",
+          "a": "Alleen als je sessies voor het hele lichaam met infraroodwarmte wilt. De mat kost $1.295 en voegt verre-infrarood en kristallen toe; VIBE kost $299 en behandelt steeds één plek. Weet je niet zeker of PEMF iets voor je doet, begin dan met VIBE."
+        },
+        {
+          "q": "Resona VIBE of HigherDOSE-mat voor op reis?",
+          "a": "Resona VIBE. Die weegt 75 g, werkt 5–8 uur op de accu en wordt geleverd met een koord. De HigherDOSE-mat weegt 19 kg en heeft netstroom nodig."
+        },
+        {
+          "q": "Heeft de Resona VIBE een app of abonnement nodig?",
+          "a": "Nee. Volgens Resona werkt VIBE met één knop en is er geen app of abonnement nodig. Ook de HigherDOSE-mat heeft geen abonnement."
+        },
+        {
+          "q": "Welke heeft infraroodwarmte?",
+          "a": "Alleen de HigherDOSE PEMF Mat. Die combineert PEMF met verre-infraroodwarmte en een kristallaag. Resona VIBE is een apparaat met alleen PEMF."
+        },
+        {
+          "q": "Is bewezen dat PEMF werkt?",
+          "a": "Niet voor de meeste wellnessclaims. Het beste bewijs is er voor artrosepijn: een Cochrane-review vond dat therapie met elektromagnetische velden pijn mogelijk matig vermindert. We vonden geen onafhankelijke studies naar een van beide apparaten, dus zie beide als experimenten met weinig risico, niet als behandelingen."
+        }
+      ],
+      "content": "## De korte versie\n\n**Resona Health VIBE** is een PEMF-zakapparaat van $299 voor gericht gebruik. **HigherDOSE PEMF Mat** is een mat voor het hele lichaam van $1.295 met extra verre-infraroodwarmte en kristallen. Wil je PEMF goedkoop of onderweg proberen, kies dan VIBE. Wil je thuis een verwarmde sessie voor het hele lichaam, kies dan de mat.\n\n## Wat ze doen\n\n**VIBE** meet 120 × 59 × 12 mm en weegt 75 g. Het draait 60 basis- en 70 uitbreidingsprotocollen via één knop, zonder app of abonnement, en gaat 5–8 uur mee per lading. Resona noemt een maximaal veld van 900 µT. Je legt het op één plek of draagt het aan het meegeleverde koord.\n\n**De HigherDOSE-mat** meet 185 × 73,5 cm en weegt 19 kg. Hij pulseert op 3–23 Hz in vier standen, voegt verre-infraroodwarmte toe en bevat ongeveer 20 lb amethist- en obsidiaankristallen. Voor een sessie ga je erop liggen, aangesloten op het stopcontact.\n\n## Wie kiest wat?\n\nKies **VIBE** als je nieuwsgierig bent naar PEMF, je wilt richten op één plek zoals een knie of de onderrug, of veel reist. Kies **de HigherDOSE-mat** als je al van herstel met warmte houdt, een liggend ritueel wilt en ruimte hebt voor een mat over de volle lengte. De niet-goed-geld-terug-garantie van 120 dagen van HigherDOSE is langer dan de 30 dagen van Resona, wat de hogere aanschafprijs verzacht.\n\n## Wat het bewijs zegt\n\nHet bewijs voor PEMF-apparaten voor consumenten is beperkt. Het sterkste signaal is er voor artrosepijn: een Cochrane-review van kleine studies vond dat therapie met elektromagnetische velden pijn mogelijk matig vermindert, met onzekere effecten op functie. Claims over slaap, energie of herstel komen vooral van fabrikanten, en we vonden geen onafhankelijke studies naar een van beide producten. Voor kristallen is er geen goed bewijs. Gebruik geen PEMF met een pacemaker of ander geïmplanteerd apparaat, en vraag eerst een arts als je zwanger bent of voor een aandoening wordt behandeld. Achtergrond vind je in [elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation).\n\n## Conclusie\n\nBegin met **Resona Health VIBE** als je PEMF wilt testen voor een fractie van de prijs. Kies **de HigherDOSE PEMF Mat** als je eigenlijk een verwarmde sessie voor het hele lichaam koopt. Voor meer opties, zie [de beste PEMF-apparaten van 2026](/reviews/compare/best-pemf-devices-2026) en de [vergelijking Healthy Wave vs HigherDOSE](/reviews/vs/healthy-wave-multi-wave-vs-higherdose-pemf-mat)."
+    },
+    "omnilux-contour-face-vs-higherdose-red-light-face-mask": {
+      "title": "Omnilux Contour vs HigherDOSE: vergelijking (2026)",
+      "description": "Omnilux Contour Face ($395) heeft het sterkere klinische bewijs; HigherDOSE ($349) is goedkoper, claimt meer vermogen en biedt sessies van 20 minuten.",
+      "intro": "Omnilux Contour Face en het HigherDOSE Red Light Face Mask zijn twee flexibele siliconen ledmaskers die bijna hetzelfde rode en nabij-infrarode licht gebruiken. Omnilux komt van een merk waarvan de apparaten in dermatologische praktijken worden gebruikt en heeft de langere klinische geschiedenis; HigherDOSE is het populaire lifestylemasker van de maker van de saunadeken en de PEMF-mat. Deze vergelijking is gebaseerd op bewijs: ONDA heeft geen van beide maskers zelf getest.",
+      "verdict": "Omnilux Contour Face is voor de meeste kopers de veiligere keuze, omdat het hetzelfde rode en nabij-infrarode licht combineert met een langere klinische geschiedenis; HigherDOSE is een redelijk, goedkoper alternatief met een hoger geclaimd vermogen.",
+      "bestForA": "Kies Omnilux Contour Face als je het masker wilt met het sterkste klinische bewijs en de FDA-clearance, en een eenvoudige routine van 10 minuten.",
+      "bestForB": "Kies het HigherDOSE Red Light Face Mask als je een iets goedkoper lifestylemasker wilt met een optie van 20 minuten en een hoger geclaimde bestralingssterkte.",
+      "axes": [
+        {
+          "name": "Klinisch bewijs",
+          "note": "Omnilux heeft FDA-clearance en de apparaten worden in dermatologische praktijken gebruikt, met gepubliceerde studies; HigherDOSE verwijst naar een eigen studie van 8 weken met zelfgerapporteerde resultaten."
+        },
+        {
+          "name": "Golflengtes",
+          "note": "Omnilux: rood 633 nm + nabij-infrarood 830 nm. HigherDOSE: rood 630 nm + nabij-infrarood 830 nm — in feite hetzelfde paar."
+        },
+        {
+          "name": "Leds",
+          "note": "Beide gebruiken 66 dual-chip-leds voor 132 lichtbronnen over het gezicht; geen van beide heeft een halsdeel."
+        },
+        {
+          "name": "Geclaimde bestralingssterkte",
+          "note": "HigherDOSE claimt in totaal 50 mW/cm² (26 rood + 24 nabij-infrarood); Omnilux noemt ongeveer 30 mW/cm²."
+        },
+        {
+          "name": "Behandelduur",
+          "note": "Omnilux gebruikt één sessie van 10 minuten; HigherDOSE biedt sessies van 10 of 20 minuten, beide 3–5 keer per week."
+        },
+        {
+          "name": "Comfort",
+          "note": "Beide zijn flexibele maskers van medische siliconen met een oplaadbare controller, zodat je ze handsfree draagt."
+        },
+        {
+          "name": "Prijs",
+          "note": "Omnilux Contour Face: $395. HigherDOSE Red Light Face Mask: $349 — $46 minder."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Omnilux het waard boven HigherDOSE?",
+          "a": "Voor de meeste kopers wel. Je betaalt $46 meer voor dezelfde rode en nabij-infrarode golflengtes, gesteund door een langere klinische geschiedenis. Als het prijsverschil zwaarder weegt dan het bewijs, is HigherDOSE een redelijk alternatief."
+        },
+        {
+          "q": "Omnilux of HigherDOSE tegen rimpels en fijne lijntjes?",
+          "a": "Omnilux, op basis van het bewijs. Voor de apparaten zijn dermatologische studies naar fijne lijntjes gepubliceerd; HigherDOSE leunt vooral op een eigen studie van 8 weken met zelfgerapporteerde resultaten. De resultaten van elk masker zijn bescheiden en vragen weken regelmatig gebruik."
+        },
+        {
+          "q": "Welk masker is sterker?",
+          "a": "Op papier HigherDOSE: dat claimt in totaal 50 mW/cm² tegenover ongeveer 30 mW/cm² voor Omnilux. Het is niet bewezen dat een hogere bestralingssterkte betere huidresultaten geeft, en beide cijfers zijn claims van de fabrikant, geen onafhankelijke metingen."
+        },
+        {
+          "q": "Gebruiken Omnilux en HigherDOSE dezelfde golflengtes?",
+          "a": "Bijna. Omnilux gebruikt rood van 633 nm en nabij-infrarood van 830 nm; HigherDOSE rood van 630 nm en nabij-infrarood van 830 nm. Geen van beide biedt blauw of amberkleurig licht."
+        },
+        {
+          "q": "Hoe lang duurt een sessie met elk masker?",
+          "a": "Omnilux gebruikt een sessie van 10 minuten. HigherDOSE biedt 10 of 20 minuten. Beide merken raden 3–5 sessies per week aan."
+        }
+      ],
+      "content": "## De korte versie\n\n**Omnilux Contour Face** ($395) is het masker met het sterkste klinische bewijs. **HigherDOSE Red Light Face Mask** ($349) is de goedkopere lifestylekeuze met een hoger geclaimde bestralingssterkte en een optie van 20 minuten. Het licht zelf is vrijwel identiek, dus de keuze komt neer op bewijs tegenover prijs en flexibiliteit.\n\n## Wat ze doen\n\nBeide zijn flexibele siliconen maskers met 66 dual-chip-leds (132 lichtbronnen) die rood en nabij-infrarood licht op het gezicht schijnen. Omnilux gebruikt **rood 633 nm + nabij-infrarood 830 nm** op ongeveer **30 mW/cm²** voor een vaste sessie van **10 minuten**. HigherDOSE gebruikt **rood 630 nm + nabij-infrarood 830 nm**, claimt in totaal **50 mW/cm²** en laat je kiezen tussen **10 of 20 minuten**. Beide merken raden 3–5 sessies per week aan, en geen van beide maskers bedekt de hals.\n\n## Wie kiest wat?\n\nKies **Omnilux** als klinische onderbouwing voor jou het belangrijkst is: het heeft FDA-clearance, de apparaten worden in dermatologische praktijken gebruikt en er zijn gepubliceerde studies. Kies **HigherDOSE** als je $46 wilt besparen, van langere sessies houdt of al andere HigherDOSE-producten gebruikt.\n\n## Wat het bewijs zegt\n\nVoor lichttherapie met rood en nabij-infrarood licht zijn er kleine klinische studies die bescheiden verbeteringen van fijne lijntjes en huidtextuur laten zien, maar het bewijs is beperkt en de resultaten wisselen. Omnilux heeft de uitgebreidere gepubliceerde onderbouwing; de belangrijkste cijfers van HigherDOSE komen uit een eigen studie van 8 weken met zelfgerapporteerde uitkomsten. Een hogere bestralingssterkte op papier betekent niet aantoonbaar betere resultaten. Zie beide maskers als cosmetische routine, niet als medische behandeling. Zie [onze ranglijst van roodlichtmaskers](/reviews/compare/best-red-light-face-masks-2026), de [vergelijking CurrentBody vs HigherDOSE](/reviews/vs/currentbody-series-2-vs-higherdose-red-light-face-mask) en [wat rood licht in de cel doet](/articles/mitochondrial-dna-red-light).\n\n## Conclusie\n\n**Omnilux Contour Face** is de betere standaardkeuze: hetzelfde licht met sterker klinisch bewijs voor $46 meer. **HigherDOSE** is logisch als prijs, een optie van 20 minuten of het ecosysteem van het merk voor jou zwaarder wegen dan gepubliceerd bewijs."
+    },
+    "medito-vs-insight-timer": {
+      "title": "Medito vs Insight Timer: vergelijking (2026)",
+      "description": "Medito ($0, nooit een betaalmuur) is de meest opgeruimde gratis meditatie-app; Insight Timer (gratis, Member Plus $60/jaar) wint op bibliotheekomvang.",
+      "intro": "Medito en Insight Timer zijn de twee meditatie-apps die je echt kunt gebruiken zonder te betalen. Medito wordt gerund door een non-profit: elke sessie is gratis, zonder advertenties, zonder account en zonder premiumversie. Insight Timer biedt 's werelds grootste gratis bibliotheek met begeleide meditaties, met een optioneel Member Plus-abonnement voor cursussen en offline luisteren. Deze vergelijking is gebaseerd op bewijs: ONDA heeft geen van beide apps zelf getest.",
+      "verdict": "Geen eenduidige winnaar: Medito is de betere keuze als je een volledig gratis, privacyvriendelijke app wilt zonder iets te upgraden, terwijl Insight Timer de betere keuze is als je de grootste gratis bibliotheek wilt en een optionele betaalde versie je niet stoort.",
+      "bestForA": "Kies Medito als je een meditatie-app wilt die voor altijd helemaal gratis is, zonder advertenties, zonder account en zonder upsells.",
+      "bestForB": "Kies Insight Timer als je de grootst mogelijke keuze aan gratis docenten en sessies wilt, met de optie om te betalen voor gestructureerde cursussen.",
+      "axes": [
+        {
+          "name": "Prijs",
+          "note": "Medito: $0, helemaal geen premiumversie. Insight Timer: gratis bibliotheek, Member Plus US$60 per jaar met 7 dagen gratis proberen."
+        },
+        {
+          "name": "Omvang bibliotheek",
+          "note": "Insight Timer telt 360.000 gratis tracks van duizenden docenten; de bibliotheek van Medito dekt de basis, maar is veel kleiner."
+        },
+        {
+          "name": "Account en privacy",
+          "note": "Medito vraagt geen e-mail of aanmelding en de code is openbaar; Insight Timer is gebouwd rond een profiel en communityfuncties."
+        },
+        {
+          "name": "Advertenties en upsells",
+          "note": "Medito heeft geen advertenties en geen betaalmuur; de gratis bibliotheek van Insight Timer gaat gepaard met prompts om te upgraden naar Member Plus."
+        },
+        {
+          "name": "Gestructureerde cursussen",
+          "note": "Insight Timer Member Plus ontgrendelt duizenden cursussen van 10 en 30 dagen; Medito biedt gratis cursussen van beginner tot gevorderd."
+        },
+        {
+          "name": "Selectie en consistentie",
+          "note": "De kleinere bibliotheek van Medito is consistent; door het open docentenmodel van Insight Timer wisselt de kwaliteit en selecteer je zelf."
+        },
+        {
+          "name": "Live-events en community",
+          "note": "Insight Timer organiseert regelmatig live-events en heeft een actieve community; Medito heeft op dit vlak niets noemenswaardigs."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Medito of Insight Timer beter om gratis te mediteren?",
+          "a": "Beide zijn echt gratis te gebruiken. Medito is zonder uitzondering gratis — geen premiumversie, advertenties of account. Insight Timer heeft een veel grotere gratis bibliotheek, maar cursussen en offline luisteren zitten achter Member Plus."
+        },
+        {
+          "q": "Is Insight Timer Member Plus het waard boven Medito?",
+          "a": "Alleen als je gestructureerde meerdaagse cursussen en offline luisteren wilt uit een enorme pool aan docenten. Voor US$60 per jaar is het goedkoop voor de categorie, maar Medito geeft je cursussen, slaap- en ademsessies al voor niets."
+        },
+        {
+          "q": "Is Medito echt gratis?",
+          "a": "Ja. Medito wordt gerund door een geregistreerd goed doel en zegt dat elke meditatie voor altijd gratis is, zonder proefperiode, zonder premiumversie, zonder advertenties en zonder account."
+        },
+        {
+          "q": "Medito of Insight Timer voor beginners?",
+          "a": "Medito is de eenvoudigere start: een kort traject met beginnerscursussen, zonder dat je iets hoeft uit te zoeken. Insight Timer past bij beginners die graag veel docenten en stijlen verkennen tot er één klikt."
+        },
+        {
+          "q": "Welke app is beter voor privacy?",
+          "a": "Medito. Je kunt mediteren zonder e-mail of aanmelding, en de code is openbaar. Insight Timer werkt zonder te betalen, maar is gebouwd rond een gebruikersprofiel en community."
+        }
+      ],
+      "content": "## De korte versie\n\n**Medito** en **Insight Timer** zijn de twee beste gratis meditatie-apps. Medito is gratis zonder enige voorwaarden. Insight Timer is gratis, met een enorme bibliotheek en een optionele betaalde versie. Kies Medito voor eenvoud en privacy; kies Insight Timer voor variatie.\n\n## Wat ze zijn\n\n**Medito** wordt gemaakt door de Medito Foundation, een geregistreerd goed doel. Elke sessie is gratis — begeleide meditaties en cursussen, slaapverhalen en geluiden, ademoefeningen, sessies over stress en angst en een timer zonder begeleiding. Er zijn geen advertenties, geen account en geen premiumversie, en de code is openbaar.\n\n**Insight Timer** werkt als een groot open platform voor meditatiedocenten. Het telt **360.000 gratis tracks** van psychologen, mindfulnessdocenten en spirituele leraren, plus live-events en een community. **Member Plus** (US$60 per jaar, 7 dagen gratis proberen) voegt duizenden cursussen van 10 en 30 dagen toe, offline luisteren en audio van hogere kwaliteit.\n\n## Wie kiest wat?\n\nKies **Medito** als je een app wilt openen en mediteren, zonder aanmelding, zonder iets te upgraden en met een bibliotheek die klein genoeg is om niet te overweldigen. Kies **Insight Timer** als je graag verschillende docenten, tradities en sessielengtes verkent en bereid bent zelf wat te selecteren — op een open platform wisselt de kwaliteit meer.\n\n## Wat het bewijs zegt\n\nStudies naar mindfulness via apps laten gemiddeld bescheiden voordelen zien voor stress en welzijn, maar de resultaten zijn wisselend en hangen sterk af van regelmatig gebruik. Van geen van beide apps is aangetoond dat ze beter werkt dan de andere, en meditatie is geen behandeling voor welke aandoening ook; een klein aantal mensen ervaart het als verontrustend — zie [veiligheid en bijwerkingen van meditatie](/articles/meditation-adverse-effects-safety). Regelmaat telt meer dan welke bibliotheek je gebruikt; [hoeveel meditatie je nodig hebt](/articles/how-much-meditation-do-you-need) behandelt de praktische kant.\n\n## Conclusie\n\nBij beide apps is betalen optioneel. **Medito** is de meest opgeruimde, meest privacyvriendelijke gratis keuze; **Insight Timer** geeft je gratis veel meer keus en een goedkope upgrade als je cursussen wilt. Voor het bredere veld, zie [onze ranglijst van meditatie-apps](/reviews/compare/best-meditation-apps-2026) of [Calm vs Insight Timer](/reviews/vs/calm-vs-insight-timer)."
+    },
+    "medito-vs-headspace": {
+      "title": "Medito vs Headspace: vergelijking (2026)",
+      "description": "Medito (gratis, non-profit, geen advertenties) is het beste gratis alternatief voor Headspace (ca. $70/jaar); Headspace wint op structuur en onderzoek.",
+      "intro": "Medito en Headspace worden vaak vergeleken door mensen die een gratis alternatief voor Headspace zoeken. Medito is een volledig gratis, open-source meditatie-app van een Nederlandse non-profit, zonder advertenties, zonder account en zonder premiumversie. Headspace is de bekendste betaalde meditatie-app, gebouwd rond gestructureerde cursussen voor beginners en onderbouwd met gepubliceerd onderzoek. Deze vergelijking is gebaseerd op bewijs: ONDA heeft geen van beide apps zelf getest.",
+      "verdict": "Geen eenduidige winnaar: Medito is de beste manier om te mediteren zonder iets te betalen, terwijl Headspace ongeveer $70 per jaar waard is als je de meest gestructureerde begeleiding en een door onderzoek onderbouwd programma wilt.",
+      "bestForA": "Kies Medito als je een volledig gratis app zonder advertenties wilt, zonder account, zonder upsells en met open-source code.",
+      "bestForB": "Kies Headspace als je als beginner duidelijke, gestructureerde cursussen en een grote bibliotheek wilt en graag een abonnement neemt.",
+      "axes": [
+        {
+          "name": "Prijs",
+          "note": "Medito: gratis, met vrijwillige donaties. Headspace: abonnement van ongeveer $70 per jaar of een maandabonnement, na 14 dagen gratis proberen."
+        },
+        {
+          "name": "Gratis content",
+          "note": "Medito: elke meditatie is gratis, zonder proefperiode en zonder vergrendelde content. Headspace: de gratis content is weinig meer dan een voorproefje."
+        },
+        {
+          "name": "Privacy",
+          "note": "Medito vraagt geen account en publiceert zijn code. Headspace vereist een account om een abonnement te nemen."
+        },
+        {
+          "name": "Begeleiding voor beginners",
+          "note": "De gestructureerde cursussen van Headspace behoren tot de duidelijkste in de categorie; Medito dekt de basis goed, maar met minder structuur."
+        },
+        {
+          "name": "Omvang bibliotheek",
+          "note": "Headspace heeft een grotere bibliotheek over meditatie, slaap, focus en dagelijkse thema's; die van Medito is kleiner."
+        },
+        {
+          "name": "Personalisatie",
+          "note": "Headspace biedt check-ins en aanbevelingen; Medito biedt eenvoudige cursussen en sessies."
+        },
+        {
+          "name": "Onderzoek",
+          "note": "Headspace heeft klinische studies naar zijn programma's gefinancierd en gepubliceerd; Medito is een non-profitproject, geen onderzoeksprogramma."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is Medito een goed gratis alternatief voor Headspace?",
+          "a": "Ja. Medito is volledig gratis, zonder advertenties, zonder account en zonder premiumversie, en dekt de basis: beginnerscursussen, ademhaling, slaap en sessies tegen stress. De bibliotheek is kleiner en minder gestructureerd dan die van Headspace."
+        },
+        {
+          "q": "Is Headspace het waard om voor te betalen in plaats van Medito?",
+          "a": "Als je de meest gestructureerde beginnerscursussen, een grotere bibliotheek en een door onderzoek onderbouwd programma wilt, is Headspace ongeveer $70 per jaar waard. Wil je vooral dagelijks mediteren met goede begeleiding, dan doet Medito dat gratis."
+        },
+        {
+          "q": "Is Medito echt gratis?",
+          "a": "Ja. Medito wordt gerund door een geregistreerd Nederlands goed doel en zegt dat elke meditatie gratis is, zonder proefperiode, zonder premiumversie en zonder advertenties. Het wordt gefinancierd met donaties."
+        },
+        {
+          "q": "Heeft Headspace een gratis proefperiode?",
+          "a": "Ja. Headspace biedt 14 dagen gratis proberen, waarna het abonnement automatisch wordt verlengd tenzij je opzegt."
+        },
+        {
+          "q": "Medito of Headspace voor beginners?",
+          "a": "Headspace heeft het duidelijkere stapsgewijze traject voor absolute beginners. Medito is een goede start als de kosten tellen, want de beginnerscursussen zijn gratis."
+        }
+      ],
+      "content": "## De korte versie\n\n**Medito** is het beste gratis alternatief voor Headspace: elke meditatie is gratis, zonder advertenties, zonder account en zonder premiumversie. **Headspace** kost ongeveer $70 per jaar, maar geeft je de meest gestructureerde begeleiding voor beginners, een grotere bibliotheek en een door onderzoek onderbouwd programma. Beslist de prijs, kies dan Medito. Beslist de structuur, kies dan Headspace.\n\n## Wat ze bieden\n\nMedito wordt gemaakt door de Medito Foundation, een geregistreerd goed doel in Nederland. De code is openbaar, er is geen account nodig, en de app dekt de basis: beginnerscursussen, ademoefeningen, slaapcontent, sessies over stress en angst en een meditatietimer. De app wordt gefinancierd met donaties, niet met abonnementen.\n\nHeadspace is een abonnementsapp met 14 dagen gratis proberen. De kracht zit in de begeleiding: cursussen die een absolute beginner naar een vaste dagelijkse beoefening brengen, plus een brede bibliotheek voor slaap, focus en het dagelijks leven. Zonder abonnement is de gratis content weinig meer dan een voorproefje.\n\n## Wie kiest wat?\n\nKies **Medito** als je niet wilt betalen, privacy belangrijk vindt of een hekel hebt aan upsells. Kies **Headspace** als je een begeleid traject met meer variatie wilt en daar graag voor betaalt. Veel mensen beginnen met Medito en nemen pas later een abonnement op een app als ze meer structuur willen. Voor andere opties, zie [onze ranglijst van meditatie-apps](/reviews/compare/best-meditation-apps-2026) en [Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer), nog een sterk en goedkoop alternatief.\n\n## Wat het bewijs zegt\n\nMeditatie-apps zijn onderzocht in gerandomiseerde studies, meestal korte, met gemiddeld bescheiden voordelen voor stress en stemming en grote verschillen tussen mensen. Headspace heeft onderzoek naar zijn eigen programma's gefinancierd en gepubliceerd, wat in zijn voordeel spreekt. Medito heeft geen vergelijkbaar eigen onderzoek, maar de basisoefeningen die het aanleert zijn van het soort dat studies onderzoeken. Geen van beide apps is een behandeling voor een psychische aandoening.\n\n## Conclusie\n\nAls gratis alternatief voor Headspace is **Medito** de meest opgeruimde keuze: geen kosten, geen advertenties, geen account. **Headspace** blijft de betere leraar voor beginners die structuur willen en bereid zijn ongeveer $70 per jaar te betalen. Zie de volledige [Medito-review](/reviews/medito) en [Headspace-review](/reviews/headspace) voor de scores."
     }
   }
 }

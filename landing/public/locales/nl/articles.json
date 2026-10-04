@@ -2784,6 +2784,37 @@
           "a": "Als sombere stemming, angst of uitputting langer dan een paar weken aanhouden, je dagelijks leven beïnvloeden, of als je middelen gebruikt om het vol te houden, praat dan met een arts of een professional in de geestelijke gezondheidszorg. In een crisis neem je direct contact op met de hulpdiensten of een crisislijn."
         }
       ]
+    },
+    "why-is-my-apple-watch-hrv-low": {
+      "title": "Lage HRV op je Apple Watch? Oorzaken en normaalwaarden",
+      "description": "De Apple Watch meet HRV als SDNN in korte metingen, vaak lager dan Oura of Whoop. Normaalwaarden per leeftijd, oorzaken en wanneer je je zorgen maakt.",
+      "content": "\nEen lage HRV op je Apple Watch is meestal minder verontrustend dan hij lijkt. De Apple Watch meet een ander soort HRV dan de meeste ringen en bandjes, doet korte metingen op willekeurige momenten, en één waarde op zich zegt heel weinig. Zo lees je hem.\n\n## De Apple Watch meet SDNN, niet RMSSD\n\nHartslagvariabiliteit (HRV) is de kleine variatie in tijd tussen hartslagen. Apparaten vatten die op verschillende manieren samen:\n\n- De **Apple Watch** toont **SDNN** — de spreiding van de intervallen tussen slagen — uit korte metingen van ongeveer een minuut, die een paar keer per dag op de achtergrond worden gedaan en tijdens Ademhaling- of Mindfulness-sessies.\n- **Oura, Whoop en Garmin** tonen **RMSSD**, meestal gemiddeld over de nacht, wanneer het lichaam het meest ontspannen is en de HRV het hoogst.\n\nKorte metingen overdag liggen lager dan een nachtelijk gemiddelde, en SDNN en RMSSD zijn verschillende getallen. Een Apple Watch-HRV van 35 naast een Oura-waarde van 55 betekent dus niet dat een van beide fout is, of dat je herstel slechter is. [Waarom je HRV op elk apparaat anders is](/articles/hrv-different-every-device) legt dit verder uit. Nieuwere horloges tonen ook een aparte herstel-HRV; zie [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).\n\n## Wat is een normale Apple Watch-HRV voor je leeftijd?\n\nHRV daalt met de leeftijd. Onze SDNN-bereiken hieronder zijn gebaseerd op een grote studie onder gezonde volwassenen, gemeten met ecg-opnames van 5 minuten (Voss 2015):\n\n| Leeftijd | Typisch bereik (25e–75e percentiel) | Mediaan |\n|---|---|---|\n| 18–34 | 35–60 ms | ~46 ms |\n| 35–44 | 32–54 ms | ~42 ms |\n| 45–54 | 27–44 ms | ~34 ms |\n| 55–64 | 22–39 ms | ~29 ms |\n| 65+ | 20–35 ms | ~26 ms |\n\nDit zijn ijkpunten voor de bevolking, geen doelen. De metingen van één minuut van de Apple Watch spreiden meer dan een labopname, dus vergelijk je **weekgemiddelde**, niet één waarde. Je kunt één getal tegen deze bereiken houden in onze [HRV-naar-leeftijd-calculator](/tools/hrv) — kies Apple Watch zodat de SDNN-tabel wordt gebruikt.\n\n## Waarom je meting laag kan zijn\n\nDe meest voorkomende redenen zijn gewoon en tijdelijk:\n\n- **Het moment van meten.** Een meting tijdens een drukke middag, na koffie of in beweging is vaak lager dan een meting in rust.\n- **Kort geslapen of laat naar bed.** HRV daalt vaak na slecht slapen.\n- **Alcohol.** Zelfs een paar drankjes kunnen de HRV die nacht en soms de volgende dag verlagen — zie [hoeveel alcohol je HRV verlaagt](/articles/how-much-alcohol-lowers-hrv).\n- **Zware training.** HRV daalt vaak een dag of twee na een zware sessie en herstelt met rust.\n- **Ziekte, stress of uitdroging.** HRV daalt vaak vóór of tijdens een verkoudheid of een stressvolle periode.\n- **Een los horloge.** Metingen zijn minder nauwkeurig als het horloge over je pols schuift.\n\nHRV verschilt ook sterk tussen mensen van dezelfde leeftijd. Sommige gezonde mensen hebben gewoon een lagere HRV, dus je eigen trend telt meer dan hoe je je verhoudt tot anderen (Shaffer & Ginsberg 2017).\n\n## Zo krijg je een eerlijker beeld\n\n- Kijk naar het **weekgemiddelde** in de Gezondheid-app, niet naar losse metingen.\n- Draag het horloge strak, en als het kan ook 's nachts, zodat meer metingen in rust worden gedaan.\n- Vergelijk appels met appels: hetzelfde apparaat, op vergelijkbare tijden.\n- Is de trend laag, dan zijn de gebruikelijke knoppen regelmatige slaap, minder alcohol, regelmatige duurtraining en langzaam ademen — zie [je HRV op natuurlijke wijze verhogen](/articles/how-to-raise-hrv-naturally).\n\n## Wanneer je met een arts praat\n\nEen lage HRV op zich is geen diagnose. Praat met een arts als je HRV langer dan een paar weken duidelijk onder je gebruikelijke niveau blijft, samen met klachten zoals ongewone vermoeidheid, een jagende of onregelmatige hartslag, duizeligheid of kortademigheid. **Heb je pijn op de borst, val je flauw of ben je ernstig kortademig, bel dan direct de hulpdiensten.**\n\n## Hoe ONDA helpt\n\nONDA leest HRV en rusthartslag van je Apple Watch via Apple Gezondheid en bouwt uit ongeveer twee weken data je persoonlijke baseline op. Zo zie je of het getal van vandaag ongewoon is voor jou, en niet voor een gemiddeld persoon. Het is een wellnesstool, geen medisch hulpmiddel.\n",
+      "neuralSuggestion": {
+        "text": "Houd één Apple Watch-HRV-waarde tegen de SDNN-normen voor je leeftijd.",
+        "linkText": "HRV-naar-leeftijd-calculator →"
+      },
+      "faq": [
+        {
+          "q": "Waarom is mijn HRV op de Apple Watch lager dan op mijn Oura of Whoop?",
+          "a": "Omdat ze verschillende dingen meten. De Apple Watch toont SDNN uit korte metingen overdag en 's nachts, terwijl Oura en Whoop RMSSD tonen, gemiddeld over de nacht, wanneer de HRV het hoogst is. De getallen zijn niet uitwisselbaar."
+        },
+        {
+          "q": "Wat is een normale HRV op de Apple Watch?",
+          "a": "Dat hangt af van je leeftijd. Voor SDNN liggen typische bereiken rond 35–60 ms bij 18–34, 32–54 ms bij 35–44, 27–44 ms bij 45–54 en 22–39 ms bij 55–64 jaar. Je eigen weektrend telt meer dan welke losse meting ook."
+        },
+        {
+          "q": "Is een HRV van 20 op de Apple Watch slecht?",
+          "a": "Niet per se. Eén lage meting is gebruikelijk na slecht slapen, alcohol, zware training of een druk moment. Kijk naar je weekgemiddelde; blijft dat met klachten duidelijk onder je gebruikelijke niveau, praat dan met een arts."
+        },
+        {
+          "q": "Hoe meet ik HRV nauwkeuriger met de Apple Watch?",
+          "a": "Draag het horloge strak, draag het ook 's nachts zodat meer metingen in rust worden gedaan, en vergelijk weekgemiddelden op vergelijkbare tijden in plaats van losse waarden."
+        },
+        {
+          "q": "Wanneer moet ik me zorgen maken over een lage HRV?",
+          "a": "Als die langer dan een paar weken duidelijk onder je gebruikelijke niveau blijft, samen met klachten zoals ongewone vermoeidheid, een jagende of onregelmatige hartslag, duizeligheid of kortademigheid. Pijn op de borst, flauwvallen of ernstige kortademigheid vragen om spoedeisende hulp."
+        }
+      ]
     }
   },
   "series": {

@@ -91,4 +91,10 @@ export const LOCALE_PUBLISH: PublishEntry[] = [
   ...everywhere('h2h', 'healthy-wave-multi-wave-vs-qi-coil', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('h2h', 'ringconn-gen-2-vs-ultrahuman-ring-air', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
   ...everywhere('articles', 'world-mental-health-day-2026-lived-experience', '2026-10-03', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'muse-s-athena-vs-neurosity-crown', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'resona-health-vibe-vs-higherdose-pemf-mat', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'omnilux-contour-face-vs-higherdose-red-light-face-mask', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'medito-vs-insight-timer', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('h2h', 'medito-vs-headspace', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
+  ...everywhere('articles', 'why-is-my-apple-watch-hrv-low', '2026-10-04', ["de","es","fr","it","ja","nl","pl","pt","ru","uk","zh"]),
 ]

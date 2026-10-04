@@ -1275,6 +1275,26 @@
     "qi-coil": {
       "verdict": "以 PEMF 名义营销，实则建立在没有可信证据的 Rife 频率和“标量”说法上——场参数不公开、预设如黑箱、定价极端。一张真正的 PEMF 垫能做得更多，有真实参数，价格还更低。",
       "productType": "以 PEMF 名义营销的 Rife/“标量”频率设备"
+    },
+    "higherdose-pemf-mat": {
+      "verdict": "最佳消费品牌 PEMF 垫——多功能、高端消费级做工、操作简单。磁场强度和研究支持弱于 Bemer 或 Healthy Wave。",
+      "productType": "消费级多功能 PEMF + 红外 + 晶体垫"
+    },
+    "omnilux-contour-face": {
+      "verdict": "临床标杆——FDA II 类许可、同行评审的皮肤科研究、柔性硅胶。所有消费级红光面罩都会拿来比较的基准。",
+      "productType": "获 FDA 许可的柔性硅胶红光面罩"
+    },
+    "higherdose-red-light-face-mask": {
+      "verdict": "红光面罩中消费品牌体验最佳——控制器简单、柔性硅胶、品牌标称 50 mW/cm²。临床证据较少；品牌包装胜过技术深度。",
+      "productType": "消费品牌柔性硅胶红光 + 红外面罩"
+    },
+    "medito": {
+      "verdict": "完全免费、开源、无广告，无需账号——如果你能接受较小的内容库，这是毫无附加条件的选择。",
+      "productType": "冥想应用"
+    },
+    "headspace": {
+      "verdict": "真正学会冥想的最佳应用——系统化课程和清晰教学，免费版基本只是试听样本。",
+      "productType": "冥想应用"
     }
   },
   "comparisons": {
@@ -2551,6 +2571,315 @@
         }
       ],
       "content": "## 简短回答\n\n对大多数人来说，RingConn Gen 2 更值得买：$299、无需订阅、续航 10–12 天，且没有电池故障的规律。Ultrahuman Ring Air 更轻，可连接 Ultrahuman M1 CGM，但售价约 $349，电池问题报告很多，并且自 2025 年 10 月 21 日起被禁止在美国销售。在美国，Ultrahuman 真正的替代品是 [Ring Pro](/reviews/ultrahuman-ring-pro)。\n\n| | RingConn Gen 2 | Ultrahuman Ring Air |\n|---|---|---|\n| 价格 | $299 | 约 $349（美国以外） |\n| 订阅 | 无 | 无 |\n| 续航 | 10–12 天；充电盒再加约 150 天 | 新品最长约 6 天 |\n| 可靠性 | 未见故障规律报告 | 电池故障报告普遍 |\n| 重量 | 轻 | 更轻（约 2.4 g 起） |\n| CGM 整合 | 无 | 有，Ultrahuman M1 |\n| 美国可购 | 是 | 2025 年 10 月 21 日起无新品销售 |\n\n## 以下情况选 RingConn Gen 2…\n\n- 你想要最长的续航，让夜间 HRV 记录少一些空档;\n- 你想要一枚能在美国买到新品并享受保修服务的戒指;\n- 你想要更低的价格且无需订阅。\n\n详情见我们的 [RingConn Gen 2 评测](/reviews/ringconn-gen-2)。\n\n## 以下情况选 Ultrahuman Ring Air…\n\n- 你住在美国以外，想要一枚非常轻的戒指;\n- 你正在或打算使用 Ultrahuman M1 CGM，希望所有数据都在一个应用里;\n- 你能从退货和保修流程简便的卖家处购买。\n\n详情见我们的 [Ultrahuman Ring Air 评测](/reviews/ultrahuman-ring-air)。\n\n## 美国禁令为什么重要？\n\n2025 年，美国国际贸易委员会裁定 Ultrahuman 的戒指侵犯了 Oura 的一项专利。排除令于 2025 年 10 月 21 日生效，因此 Ring Air 不能再进口到美国。现在在美国买到的 Ring Air 要么是剩余库存，要么是二手戒指，保修索赔会更困难——考虑到电池问题报告，这是实实在在的风险。Ultrahuman 在美国的答案是 Ring Pro：$479、无需订阅、续航最长 15 天。参见 [Ring Pro vs RingConn Gen 2](/reviews/vs/ultrahuman-ring-pro-vs-ringconn-gen-2)。\n\n## 测 HRV 有多准？\n\n两款戒指都在夜间、你静躺且信号最干净时，从手指读取 HRV。因此它们适合看多日趋势，不适合临床测量。两者的已发表验证都不如 Oura 多。解读自己的数值时，可以对照[各年龄段的正常 HRV](/articles/normal-hrv-by-age)——最重要的是和你自己的基线比较。\n\n## 相关对比\n\n新一代：[RingConn Gen 3 vs RingConn Gen 2](/reviews/vs/ringconn-gen-3-vs-ringconn-gen-2)。与 Oura 对比：[Oura Ring 4 vs Ultrahuman Ring Air vs RingConn Gen 2](/reviews/vs/oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2)。完整排名：[2026 年最佳 HRV 追踪设备](/reviews/compare/best-hrv-trackers-2026)。\n\n## 资料来源\n\n- [RingConn Gen 2 — 官方产品页](https://ringconn.com/products/ringconn-gen-2)（价格、续航、尺码），核查于 2026-10-03\n- [Ultrahuman Ring Air — 官方产品页](https://www.ultrahuman.com/ring/)\n- [Oura：ITC 对 Ultrahuman 的专利裁决](https://ouraring.com/blog/oura-itc-case/)"
+    },
+    "muse-s-athena-vs-neurosity-crown": {
+      "title": "Muse S Athena 与 Neurosity Crown 对比评测（2026）",
+      "description": "Muse S Athena（$474.99）是更适合冥想和睡眠的脑电头带；Neurosity Crown（$1,499）在原始脑电数据和开发者用途上胜出。",
+      "intro": "Muse S Athena 和 Neurosity Crown 是被比较最多的两款消费级脑电（EEG）头戴设备，但它们回答的是不同的问题。Athena 是一条柔软头带，配有四个 EEG 通道、fNIRS 和庞大的引导冥想库，专为日常练习和睡眠设计。Crown 是一款八通道头戴设备，带开放 SDK，面向想处理自己脑电数据的人。本对比基于证据：ONDA 未亲手测试过任何一款设备。",
+      "verdict": "没有绝对赢家——两者面向不同人群。Muse S Athena 更适合冥想、睡眠追踪和日常专注练习，价格约为三分之一；Neurosity Crown 更适合原始 EEG、更广的头部覆盖以及开发自己的应用。",
+      "bestForA": "如果你想要带实时反馈的引导冥想、睡眠分期追踪，以及能整夜佩戴的舒适头带，选择 Muse S Athena。",
+      "bestForB": "如果你想要八通道原始 EEG、开放的 JavaScript/Python SDK，以及用自己的数据自由开发或研究，选择 Neurosity Crown。",
+      "axes": [
+        {
+          "name": "EEG 覆盖",
+          "note": "Crown：8 个干电极通道，分布在头部前、中、顶、后部，采样率 256 Hz。Athena：4 个 EEG 通道，主要位于前额和耳后。"
+        },
+        {
+          "name": "额外传感器",
+          "note": "Athena 增加了前额叶 fNIRS（血流和氧合）以及心率。Crown 仅有 EEG。"
+        },
+        {
+          "name": "引导冥想",
+          "note": "Athena 拥有庞大成熟的引导课程库，并提供实时声音反馈。Crown 有自适应专注音乐，但没有冥想库。"
+        },
+        {
+          "name": "睡眠追踪",
+          "note": "Athena 用适合夜间佩戴的柔软头带追踪浅睡、深睡和 REM 睡眠。Crown 不是为睡眠设计的。"
+        },
+        {
+          "name": "原始数据与 SDK",
+          "note": "Crown：官方 JavaScript 和 Python SDK，支持 BrainFlow、LSL 和 OSC，并提供面向 AI 助手的 MCP 服务器。Athena：原始数据只能通过第三方应用获取。"
+        },
+        {
+          "name": "订阅",
+          "note": "Crown：无需订阅，全部包含。Athena：核心功能无需订阅，但 Smart Wakeup、AI 教练和精选课程需要 Muse Premium。"
+        },
+        {
+          "name": "舒适度",
+          "note": "Athena：柔软织物头带，适合长时间练习和睡眠。Crown：228 g 的硬质头戴设备，适合坐姿练习。"
+        },
+        {
+          "name": "价格",
+          "note": "Muse S Athena：$474.99。Neurosity Crown：一次性 $1,499。Athena 价格约为其三分之一。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "冥想用 Muse S Athena 还是 Neurosity Crown 更好？",
+          "a": "Muse S Athena。它有带实时声音反馈的庞大引导冥想库，柔软头带适合长时间佩戴。Neurosity Crown 有专注音乐和专注评分，但没有冥想库。"
+        },
+        {
+          "q": "Neurosity Crown 比 Muse S Athena 贵到 $1,499，值得吗？",
+          "a": "只有当你需要 Athena 做不到的功能时才值得：八个 EEG 通道、256 Hz 原始数据，以及用于自己应用或实验的开放 SDK。对于冥想、睡眠和专注练习，Athena 以约三分之一的价格提供更多功能。"
+        },
+        {
+          "q": "Muse S Athena 需要订阅吗？",
+          "a": "核心功能不需要：冥想反馈、睡眠分期以及专注和压力追踪都无需订阅。部分附加功能——Smart Wakeup、AI 教练 Enso 和精选课程——需要 Muse Premium。Neurosity Crown 没有订阅。"
+        },
+        {
+          "q": "这两款头戴设备能追踪睡眠吗？",
+          "a": "Muse S Athena 可以：它追踪浅睡、深睡和 REM 睡眠，并为夜间佩戴设计。Neurosity Crown 不是为睡眠设计的。"
+        },
+        {
+          "q": "哪款脑电头戴设备更适合开发者和科研？",
+          "a": "Neurosity Crown。它提供官方 JavaScript 和 Python SDK，可配合 BrainFlow、LSL 等科研工具使用，并附带 MCP 服务器，经你授权后 AI 助手可读取实时数据。Muse 的原始数据只能通过第三方应用获取。"
+        }
+      ],
+      "content": "## 简要结论\n\n**Muse S Athena** 是一款恰好使用 EEG 的冥想和睡眠头带。**Neurosity Crown** 是一款恰好支持专注训练的 EEG 头戴设备。如果你想练习并改善睡眠，选 Athena。如果你想要可以处理的脑电数据，选 Crown。\n\n## 各自测量什么\n\nEEG（脑电图）通过头皮上的传感器捕捉大脑发出的微弱电信号。Crown 有 **八个干电极通道**，分布在头部前、中、顶、后部，每秒采样 256 次。Athena 有 **四个 EEG 通道**，主要位于前额和耳后，并增加了 **fNIRS**——用光测量大脑前部血流和氧气——以及心率。\n\n通道越多，头部覆盖越广，这对科研和自定义应用很重要。对于引导冥想的反馈，四个位置合理的通道已经足够。\n\n## 练习与睡眠：Athena\n\nAthena 的强项是应用。它把你的脑信号实时转化为声音——心绪平静时是宁静的天气声，走神时声音变大——覆盖庞大的引导课程库。柔软头带舒适到可以戴着睡觉，并能追踪浅睡、深睡和 REM 睡眠。\n\n核心功能无需订阅。部分附加功能，如 Smart Wakeup、AI 教练和精选课程，需要 Muse Premium。\n\n## 数据与开发：Crown\n\nCrown 面向想要数据本身的人。Neurosity 提供官方 **JavaScript 和 Python** SDK，支持 BrainFlow、LSL 和 OSC，还有一个 **MCP 服务器**，在你允许的情况下让 AI 助手读取你的实时数据。没有订阅。代价是价格（$1,499）、不适合睡眠的 228 g 硬质头戴设备，以及没有冥想库。\n\n## 证据怎么说\n\n消费级 EEG 能显示大脑活动的大致变化，例如放松时 alpha 波增多，但它不是医学检查。关于消费级神经反馈改善专注和情绪的研究规模小、结果不一，因此请把这两款设备都当作训练辅助工具，而不是治疗手段。查看 [我们的脑电头戴设备排名](/reviews/compare/best-eeg-headsets-2026) 了解更多选择；如果你也在考虑更便宜的 Muse，可以看看 [与 Muse 2 的三方对比](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown)。\n\n## 结论\n\n对大多数人来说，**Muse S Athena** 是更好的选择：日常更实用，包含睡眠追踪，价格约为三分之一。只有当多通道原始 EEG 和开放 SDK 是你购买头戴设备的理由时，才选择 **Neurosity Crown**。"
+    },
+    "resona-health-vibe-vs-higherdose-pemf-mat": {
+      "title": "Resona VIBE 与 HigherDOSE PEMF 垫对比评测（2026）",
+      "description": "Resona VIBE（$299）是体验 PEMF 的便宜便携之选；HigherDOSE PEMF 垫（$1,295）在带远红外热的全身疗程上胜出。",
+      "intro": "Resona Health VIBE 和 HigherDOSE PEMF Mat 都使用脉冲电磁场，但适合不同的日常习惯。VIBE 是一款 75 g 的口袋设备，内置 130 种预设方案，可随身携带或挂在挂绳上，放在一个部位使用。HigherDOSE 是一张全身长度的垫子，将 PEMF 与远红外热以及一层紫水晶和黑曜石晶体结合，供在家躺着使用。本对比基于证据：ONDA 未亲手测试过任何一款设备。",
+      "verdict": "没有绝对赢家——Resona VIBE 是低成本了解 PEMF 是否对你有帮助的更明智方式，而 HigherDOSE PEMF 垫适合已经想要每天进行全身加热恢复疗程的人。",
+      "bestForA": "如果你想花 $299 尝试 PEMF、每次针对一个部位并随身携带设备，选择 Resona Health VIBE。",
+      "bestForB": "如果你想要带远红外热的全身躺卧疗程，并且有空间和预算购买 $1,295 的垫子，选择 HigherDOSE PEMF Mat。",
+      "axes": [
+        {
+          "name": "覆盖范围",
+          "note": "HigherDOSE：一张 185 × 73.5 cm 的躺垫，覆盖全身。VIBE：一个小型设备，每次放在一个部位。"
+        },
+        {
+          "name": "便携性",
+          "note": "VIBE 重 75 g，附带挂绳，电池续航 5–8 小时。HigherDOSE 垫重 19 kg，需要插电。"
+        },
+        {
+          "name": "方案",
+          "note": "VIBE：60 个核心方案加 70 个扩展方案。HigherDOSE：PEMF 3–23 Hz，分四档。"
+        },
+        {
+          "name": "额外功能",
+          "note": "HigherDOSE 增加了远红外热和 20 lb 紫水晶与黑曜石晶体。VIBE 只有 PEMF。"
+        },
+        {
+          "name": "易用性",
+          "note": "VIBE 单键操作，无需应用或订阅；垫子是躺卧式使用，档位设置简单。"
+        },
+        {
+          "name": "保障",
+          "note": "HigherDOSE 提供 120 天退款保证。Resona 提供 30 天退款加 1 年保修。"
+        },
+        {
+          "name": "价格",
+          "note": "Resona Health VIBE：$299。HigherDOSE PEMF Mat：$1,295（不含外罩）。VIBE 价格不到其四分之一。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "HigherDOSE PEMF 垫比 Resona VIBE 更值得买吗？",
+          "a": "只有当你想要带红外热的全身疗程时才值得。垫子售价 $1,295，增加了远红外和晶体；VIBE 售价 $299，每次覆盖一个部位。如果你不确定 PEMF 对你是否有用，先从 VIBE 开始。"
+        },
+        {
+          "q": "旅行时用 Resona VIBE 还是 HigherDOSE 垫？",
+          "a": "Resona VIBE。它重 75 g，电池续航 5–8 小时，并附带挂绳。HigherDOSE 垫重 19 kg，需要接市电。"
+        },
+        {
+          "q": "Resona VIBE 需要应用或订阅吗？",
+          "a": "不需要。Resona 表示 VIBE 单键即可使用，无需应用或订阅。HigherDOSE 垫也没有订阅。"
+        },
+        {
+          "q": "哪一款有红外热？",
+          "a": "只有 HigherDOSE PEMF Mat。它将 PEMF 与远红外热和晶体层结合。Resona VIBE 是纯 PEMF 设备。"
+        },
+        {
+          "q": "PEMF 的效果有科学证明吗？",
+          "a": "对于大多数健康宣称来说没有。证据最好的是骨关节炎疼痛：一篇 Cochrane 综述发现电磁场疗法可能适度减轻疼痛。我们没有找到针对这两款设备的独立试验，因此请把两者都视为低风险的尝试，而非治疗。"
+        }
+      ],
+      "content": "## 简要结论\n\n**Resona Health VIBE** 是一款 $299 的口袋式 PEMF 设备，用于局部使用。**HigherDOSE PEMF Mat** 是一张 $1,295 的全身垫，增加了远红外热和晶体。如果你想低成本或在外出时尝试 PEMF，选 VIBE。如果你想在家进行加热的全身疗程，选垫子。\n\n## 各自的功能\n\n**VIBE** 尺寸为 120 × 59 × 12 mm，重 75 g。它通过单键运行 60 个核心方案和 70 个扩展方案，无需应用或订阅，每次充电可用 5–8 小时。Resona 标称最大磁场为 900 µT。你可以把它放在一个部位，或用附带的挂绳随身携带。\n\n**HigherDOSE 垫** 尺寸为 185 × 73.5 cm，重 19 kg。它以 3–23 Hz 分四档发出脉冲，增加远红外热，并含约 20 lb 紫水晶和黑曜石晶体。使用时插上电源躺在上面。\n\n## 谁该选哪款\n\n如果你对 PEMF 好奇、想针对膝盖或下背部等单一部位，或经常出行，选 **VIBE**。如果你已经喜欢热疗恢复、想要躺卧式的放松仪式，并且有地方放一张全身长度的垫子，选 **HigherDOSE 垫**。HigherDOSE 的 120 天退款保证比 Resona 的 30 天更长，能缓解较高的前期投入。\n\n## 证据怎么说\n\n关于消费级 PEMF 设备的证据有限。最强的信号来自骨关节炎疼痛：一篇对小型试验的 Cochrane 综述发现，电磁场疗法可能适度减轻疼痛，对功能的影响尚不确定。关于睡眠、精力或恢复的说法主要来自厂商，我们也没有找到这两款产品的独立试验。晶体没有可靠的证据支持。装有心脏起搏器或其他植入设备的人不要使用 PEMF；如果你怀孕或正在接受疾病治疗，请先咨询医生。背景知识可阅读 [电医学与神经调控](/articles/electric-medicine-neuromodulation)。\n\n## 结论\n\n如果你想以一小部分价格测试 PEMF，从 **Resona Health VIBE** 开始。如果你真正想买的是加热的全身疗程，选择 **HigherDOSE PEMF Mat**。更多选择请见 [2026 年最佳 PEMF 设备](/reviews/compare/best-pemf-devices-2026) 和 [Healthy Wave 与 HigherDOSE 对比](/reviews/vs/healthy-wave-multi-wave-vs-higherdose-pemf-mat)。"
+    },
+    "omnilux-contour-face-vs-higherdose-red-light-face-mask": {
+      "title": "Omnilux Contour 与 HigherDOSE 红光面罩对比（2026）",
+      "description": "Omnilux Contour Face（$395）临床记录更扎实；HigherDOSE（$349）更便宜，宣称辐照度更高，并提供 20 分钟疗程。",
+      "intro": "Omnilux Contour Face 和 HigherDOSE Red Light Face Mask 是两款柔性硅胶 LED 面罩，使用几乎相同的红光和近红外光。Omnilux 出自一个设备被皮肤科诊所使用的品牌，临床记录更长；HigherDOSE 是桑拿毯和 PEMF 垫制造商推出的热门生活方式面罩。本对比基于证据：ONDA 未亲手测试过任何一款面罩。",
+      "verdict": "对大多数买家来说，Omnilux Contour Face 是更稳妥的选择，因为它以相同的红光和近红外光搭配更长的临床记录；HigherDOSE 则是宣称输出更高、价格更低的合理替代品。",
+      "bestForA": "如果你想要临床记录和 FDA 许可最扎实的面罩，以及简单的 10 分钟护理流程，选择 Omnilux Contour Face。",
+      "bestForB": "如果你想要稍便宜、带 20 分钟选项且宣称辐照度更高的生活方式面罩，选择 HigherDOSE Red Light Face Mask。",
+      "axes": [
+        {
+          "name": "临床记录",
+          "note": "Omnilux 获得 FDA 许可，其设备在皮肤科诊所使用并有已发表研究；HigherDOSE 引用的是自家为期 8 周、结果为自我报告的试验。"
+        },
+        {
+          "name": "波长",
+          "note": "Omnilux：红光 633 nm + 近红外 830 nm。HigherDOSE：红光 630 nm + 近红外 830 nm——实际上是同一组合。"
+        },
+        {
+          "name": "LED",
+          "note": "两者都使用 66 颗双芯片 LED，面部共 132 个光源；都不包含颈部部分。"
+        },
+        {
+          "name": "宣称辐照度",
+          "note": "HigherDOSE 宣称总计 50 mW/cm²（红光 26 + 近红外 24）；Omnilux 标称约 30 mW/cm²。"
+        },
+        {
+          "name": "疗程时长",
+          "note": "Omnilux 每次 10 分钟；HigherDOSE 可选 10 或 20 分钟，两者都建议每周 3–5 次。"
+        },
+        {
+          "name": "舒适度",
+          "note": "两者都是柔性医用级硅胶面罩，配可充电控制器，可免手持佩戴。"
+        },
+        {
+          "name": "价格",
+          "note": "Omnilux Contour Face：$395。HigherDOSE Red Light Face Mask：$349——便宜 $46。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Omnilux 比 HigherDOSE 多花钱值得吗？",
+          "a": "对大多数买家来说值得。多花 $46，你得到的是相同的红光和近红外波长，以及更长的临床记录。如果价格差比证据更重要，HigherDOSE 是合理的替代品。"
+        },
+        {
+          "q": "去皱纹和细纹选 Omnilux 还是 HigherDOSE？",
+          "a": "从证据看选 Omnilux。其设备有关于细纹的已发表皮肤科研究；HigherDOSE 的依据主要来自自家为期 8 周、结果为自我报告的试验。任何面罩的效果都有限，且需要数周规律使用。"
+        },
+        {
+          "q": "哪款面罩功率更强？",
+          "a": "纸面上是 HigherDOSE：它宣称总计 50 mW/cm²，而 Omnilux 约为 30 mW/cm²。更高辐照度并未被证明能带来更好的皮肤效果，而且这两个数字都是厂商宣称，并非独立测量。"
+        },
+        {
+          "q": "Omnilux 和 HigherDOSE 的波长一样吗？",
+          "a": "几乎一样。Omnilux 使用 633 nm 红光和 830 nm 近红外；HigherDOSE 使用 630 nm 红光和 830 nm 近红外。两者都不提供蓝光或琥珀光。"
+        },
+        {
+          "q": "每款面罩一次疗程多长时间？",
+          "a": "Omnilux 每次 10 分钟。HigherDOSE 可选 10 或 20 分钟。两个品牌都建议每周 3–5 次。"
+        }
+      ],
+      "content": "## 简要结论\n\n**Omnilux Contour Face**（$395）是临床记录最扎实的面罩。**HigherDOSE Red Light Face Mask**（$349）是更便宜的生活方式之选，宣称辐照度更高并有 20 分钟选项。两者的光本身几乎相同，所以选择归结为证据与价格和灵活性之间的权衡。\n\n## 各自的功能\n\n两者都是柔性硅胶面罩，配有 66 颗双芯片 LED（132 个光源），向面部照射红光和近红外光。Omnilux 使用 **633 nm 红光 + 830 nm 近红外**，辐照度约 **30 mW/cm²**，固定 **10 分钟** 疗程。HigherDOSE 使用 **630 nm 红光 + 830 nm 近红外**，宣称总计 **50 mW/cm²**，可选 **10 或 20 分钟**。两个品牌都建议每周 3–5 次，且两款面罩都不覆盖颈部。\n\n## 谁该选哪款\n\n如果你最看重临床支持，选 **Omnilux**：它获得 FDA 许可，设备在皮肤科诊所使用，并有已发表研究支持。如果你想省 $46、喜欢更长的疗程，或已经在用其他 HigherDOSE 产品，选 **HigherDOSE**。\n\n## 证据怎么说\n\n红光和近红外光疗有一些小型临床试验显示细纹和肤质有适度改善，但证据有限，效果因人而异。Omnilux 的已发表记录更深入；HigherDOSE 的主要数据来自自家为期 8 周、结果为自我报告的试验。纸面上更高的辐照度并未被证明意味着更好的效果。请把这两款面罩都当作美容护理，而不是医疗手段。查看 [我们的红光面罩排名](/reviews/compare/best-red-light-face-masks-2026)、[CurrentBody 与 HigherDOSE 对比](/reviews/vs/currentbody-series-2-vs-higherdose-red-light-face-mask) 以及 [红光在细胞内的作用](/articles/mitochondrial-dna-red-light)。\n\n## 结论\n\n**Omnilux Contour Face** 是更好的默认选择：同样的光，多花 $46 换来更扎实的临床记录。如果价格、20 分钟选项或品牌生态对你来说比已发表证据更重要，**HigherDOSE** 也说得过去。"
+    },
+    "medito-vs-insight-timer": {
+      "title": "Medito 与 Insight Timer 对比评测（2026）",
+      "description": "Medito（$0，永无付费墙）是最纯粹的免费冥想应用；Insight Timer（免费，Member Plus 每年 $60）胜在内容库规模。",
+      "intro": "Medito 和 Insight Timer 是两款真正可以不付费使用的冥想应用。Medito 由非营利组织运营：所有课程免费，无广告、无需账号、没有高级版。Insight Timer 提供全球最大的免费引导冥想库，另有可选的 Member Plus 订阅，用于课程和离线收听。本对比基于证据：ONDA 未亲手测试过任何一款应用。",
+      "verdict": "没有唯一赢家：如果你想要完全免费、注重隐私、没有任何升级项的应用，Medito 更好；如果你想要最大的免费内容库，并不介意可选的付费版，Insight Timer 更好。",
+      "bestForA": "如果你想要一款永久完全免费、无广告、无需账号、没有推销的冥想应用，选择 Medito。",
+      "bestForB": "如果你想要尽可能多的免费老师和课程，并可选择付费获取系统化课程，选择 Insight Timer。",
+      "axes": [
+        {
+          "name": "价格",
+          "note": "Medito：$0，完全没有高级版。Insight Timer：免费内容库，Member Plus 每年 US$60，含 7 天免费试用。"
+        },
+        {
+          "name": "内容库规模",
+          "note": "Insight Timer 有来自数千位老师的 360,000 条免费音频；Medito 的内容库涵盖基础，但规模小得多。"
+        },
+        {
+          "name": "账号与隐私",
+          "note": "Medito 无需邮箱或注册，代码公开；Insight Timer 围绕个人资料和社区功能构建。"
+        },
+        {
+          "name": "广告与推销",
+          "note": "Medito 无广告、无付费墙；Insight Timer 的免费内容库会伴随升级到 Member Plus 的提示。"
+        },
+        {
+          "name": "系统化课程",
+          "note": "Insight Timer Member Plus 解锁数千门 10 天和 30 天课程；Medito 免费提供从入门到进阶的课程。"
+        },
+        {
+          "name": "内容筛选与一致性",
+          "note": "Medito 内容库较小但质量一致；Insight Timer 的开放式老师模式意味着质量参差不齐，需要自己筛选。"
+        },
+        {
+          "name": "直播活动与社区",
+          "note": "Insight Timer 定期举办直播活动，社区活跃；Medito 在这方面基本没有。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "免费冥想用 Medito 还是 Insight Timer 更好？",
+          "a": "两者都是真正免费可用的。Medito 免费没有例外——没有高级版、广告或账号。Insight Timer 的免费内容库大得多，但课程和离线收听需要 Member Plus。"
+        },
+        {
+          "q": "Insight Timer Member Plus 比 Medito 更值得吗？",
+          "a": "只有当你想要来自海量老师的系统化多日课程和离线收听时才值得。每年 US$60 在同类中算便宜，但 Medito 已经免费提供课程、睡眠和呼吸练习。"
+        },
+        {
+          "q": "Medito 真的免费吗？",
+          "a": "是的。Medito 由注册慈善机构运营，并声明所有冥想永久免费，没有试用期、没有高级版、没有广告，也不需要账号。"
+        },
+        {
+          "q": "新手适合 Medito 还是 Insight Timer？",
+          "a": "Medito 入门更简单：一条简短的新手课程路径，无需挑选。Insight Timer 适合喜欢浏览众多老师和风格、直到找到合适那一位的新手。"
+        },
+        {
+          "q": "哪款应用更注重隐私？",
+          "a": "Medito。你无需邮箱或注册即可冥想，而且它的代码是公开的。Insight Timer 不付费也能用，但围绕用户资料和社区构建。"
+        }
+      ],
+      "content": "## 简要结论\n\n**Medito** 和 **Insight Timer** 是两款最好的免费冥想应用。Medito 完全免费，没有任何附加条件。Insight Timer 免费，内容库庞大，另有可选付费版。追求简单和隐私选 Medito；追求丰富选择选 Insight Timer。\n\n## 各自是什么\n\n**Medito** 由注册慈善机构 Medito Foundation 开发。所有课程免费——引导冥想与课程、睡眠故事与声音、呼吸练习、压力与焦虑课程，以及无引导计时器。没有广告、无需账号、没有高级版，代码公开。\n\n**Insight Timer** 像一个面向冥想老师的大型开放平台。它提供来自心理学家、正念老师和灵性导师的 **360,000 条免费音频**，还有直播活动和社区。**Member Plus**（每年 US$60，7 天免费试用）增加数千门 10 天和 30 天课程、离线收听和更高音质。\n\n## 谁该选哪款\n\n如果你想打开应用就冥想，无需注册、无需升级，内容库也小到不会让人无所适从，选 **Medito**。如果你喜欢探索不同的老师、传统和课程时长，并愿意自己做些筛选——开放平台上质量差异更大——选 **Insight Timer**。\n\n## 证据怎么说\n\n关于应用式正念的研究显示，平均而言对压力和幸福感有适度益处，但结果不一，而且很大程度上取决于是否规律练习。没有证据表明其中一款优于另一款，冥想也不是任何疾病的治疗手段；少数人会感到不适——参见 [冥想的安全性与不良反应](/articles/meditation-adverse-effects-safety)。坚持比选择哪个内容库更重要；[你需要冥想多久](/articles/how-much-meditation-do-you-need) 介绍了实践方面的内容。\n\n## 结论\n\n两款应用都让付费成为可选项。**Medito** 是最纯粹、最注重隐私的免费选择；**Insight Timer** 免费提供多得多的选择，想要课程时升级也很便宜。更多选择请见 [我们的冥想应用排名](/reviews/compare/best-meditation-apps-2026) 或 [Calm 与 Insight Timer 对比](/reviews/vs/calm-vs-insight-timer)。"
+    },
+    "medito-vs-headspace": {
+      "title": "Medito 与 Headspace 对比评测（2026）",
+      "description": "Medito（免费、非营利、无广告）是 Headspace（每年约 $70）的最佳免费替代品；Headspace 在系统教学和研究支持上胜出。",
+      "intro": "想找 Headspace 免费替代品的人常常把 Medito 和 Headspace 放在一起比较。Medito 是一款完全免费的开源冥想应用，由荷兰非营利组织运营，无广告、无需账号、没有高级版。Headspace 是最知名的付费冥想应用，围绕面向新手的系统化课程构建，并有已发表研究支持。本对比基于证据：ONDA 未亲手测试过任何一款应用。",
+      "verdict": "没有唯一赢家：Medito 是完全不花钱冥想的最佳方式；如果你想要最系统的教学和有研究支持的课程，Headspace 每年约 $70 物有所值。",
+      "bestForA": "如果你想要完全免费、无广告、无需账号、没有推销且代码开源的应用，选择 Medito。",
+      "bestForB": "如果你是新手，想要清晰的系统化课程和庞大的内容库，并且愿意订阅，选择 Headspace。",
+      "axes": [
+        {
+          "name": "价格",
+          "note": "Medito：免费，可自愿捐赠。Headspace：14 天免费试用后，订阅每年约 $70，或按月付费。"
+        },
+        {
+          "name": "免费内容",
+          "note": "Medito：所有冥想免费，没有试用期，没有锁定内容。Headspace：免费内容基本只是试听样本。"
+        },
+        {
+          "name": "隐私",
+          "note": "Medito 无需账号，并公开代码。Headspace 订阅需要账号。"
+        },
+        {
+          "name": "新手教学",
+          "note": "Headspace 的系统化课程是同类中最清晰的之一；Medito 也能很好地覆盖基础，但结构性较弱。"
+        },
+        {
+          "name": "内容库规模",
+          "note": "Headspace 的内容库更大，涵盖冥想、睡眠、专注和生活主题；Medito 的较小。"
+        },
+        {
+          "name": "个性化",
+          "note": "Headspace 提供状态打卡和推荐；Medito 提供简单直接的课程和练习。"
+        },
+        {
+          "name": "研究",
+          "note": "Headspace 资助并发表过其课程的临床研究；Medito 是非营利项目，不是研究项目。"
+        }
+      ],
+      "faq": [
+        {
+          "q": "Medito 是 Headspace 好的免费替代品吗？",
+          "a": "是的。Medito 完全免费，无广告、无需账号、没有高级版，涵盖基础内容：新手课程、呼吸、睡眠和减压练习。它的内容库比 Headspace 小，结构性也更弱。"
+        },
+        {
+          "q": "有了 Medito，还值得为 Headspace 付费吗？",
+          "a": "如果你想要最系统的新手课程、更大的内容库和有研究支持的课程，Headspace 每年约 $70 是值得的。如果你主要想每天在好的引导下静坐，Medito 免费就能做到。"
+        },
+        {
+          "q": "Medito 真的免费吗？",
+          "a": "是的。Medito 由一家注册的荷兰慈善机构运营，声明所有冥想免费，没有试用期、没有高级版、没有广告。它依靠捐赠运营。"
+        },
+        {
+          "q": "Headspace 有免费试用吗？",
+          "a": "有。Headspace 提供 14 天免费试用，之后除非你取消，订阅会自动续费。"
+        },
+        {
+          "q": "新手适合 Medito 还是 Headspace？",
+          "a": "Headspace 为完全零基础的新手提供更清晰的循序渐进路径。如果在意费用，Medito 也是不错的起点，因为它的新手课程是免费的。"
+        }
+      ],
+      "content": "## 简要结论\n\n**Medito** 是 Headspace 的最佳免费替代品：所有冥想免费，无广告、无需账号、没有高级版。**Headspace** 每年约 $70，但提供最系统的新手教学、更大的内容库和有研究支持的课程。如果价格是决定因素，选 Medito。如果结构是决定因素，选 Headspace。\n\n## 各自的功能\n\nMedito 由荷兰注册慈善机构 Medito Foundation 开发。它的代码公开，无需账号，涵盖基础内容：新手课程、呼吸练习、睡眠内容、压力与焦虑课程以及冥想计时器。它依靠捐赠而非订阅运营。\n\nHeadspace 是一款订阅制应用，提供 14 天免费试用。它的强项是教学：课程能带领完全的新手建立稳定的每日练习，另有覆盖睡眠、专注和日常生活的丰富内容库。不订阅的话，免费内容基本只是试听样本。\n\n## 谁该选哪款\n\n如果你不想付费、重视隐私或讨厌推销，选 **Medito**。如果你想要更丰富的引导路径并愿意为此付费，选 **Headspace**。很多人先从 Medito 开始，之后想要更多结构时才订阅应用。更多选择请见 [我们的冥想应用排名](/reviews/compare/best-meditation-apps-2026) 和 [Headspace 与 Insight Timer 对比](/reviews/vs/headspace-vs-insight-timer)——另一个强有力的低成本替代品。\n\n## 证据怎么说\n\n冥想应用已在随机试验中被研究过，大多是短期试验，平均而言对压力和情绪有适度益处，个体差异很大。Headspace 资助并发表过关于自家课程的研究，这是它的加分项。Medito 没有可比的自有研究，但它教授的基础练习与研究中考察的属于同一类型。两款应用都不是心理健康疾病的治疗手段。\n\n## 结论\n\n作为 Headspace 的免费替代品，**Medito** 是最纯粹的选择：零成本、无广告、无需账号。对于需要结构并愿意每年支付约 $70 的新手，**Headspace** 仍是更好的老师。评分详见完整的 [Medito 评测](/reviews/medito) 和 [Headspace 评测](/reviews/headspace)。"
     }
   }
 }

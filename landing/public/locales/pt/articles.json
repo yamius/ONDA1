@@ -2790,6 +2790,37 @@
           "a": "Se o humor baixo, a ansiedade ou a exaustão durarem mais de algumas semanas, afetarem o seu dia a dia, ou se você estiver usando substâncias para aguentar, converse com um médico ou profissional de saúde mental. Em uma crise, entre em contato imediatamente com os serviços de emergência ou com uma linha de apoio em crise."
         }
       ]
+    },
+    "why-is-my-apple-watch-hrv-low": {
+      "title": "VFC baixa no Apple Watch: por que e qual é o normal",
+      "description": "A VFC do Apple Watch é SDNN de leituras curtas e costuma ficar abaixo do Oura ou Whoop. Valores normais por idade, causas e quando se preocupar.",
+      "content": "\nUma VFC baixa no seu Apple Watch costuma ser menos alarmante do que parece. O Apple Watch mede um tipo de VFC diferente da maioria dos anéis e pulseiras, faz leituras curtas em momentos aleatórios, e um único valor diz muito pouco. Veja como interpretar.\n\n## O Apple Watch mede SDNN, não RMSSD\n\nA variabilidade da frequência cardíaca (VFC, ou HRV em inglês) é a pequena variação no tempo entre um batimento e outro. Os aparelhos a resumem de formas diferentes:\n\n- O **Apple Watch** informa o **SDNN** — a dispersão dos intervalos entre batimentos — a partir de leituras curtas de cerca de um minuto, feitas em segundo plano algumas vezes por dia e durante as sessões de Respirar ou Atenção Plena.\n- **Oura, Whoop e Garmin** informam o **RMSSD**, geralmente como média da noite, quando o corpo está mais relaxado e a VFC está no ponto mais alto.\n\nLeituras curtas durante o dia ficam mais baixas que uma média noturna, e SDNN e RMSSD são números diferentes. Então uma VFC de 35 no Apple Watch ao lado de 55 no Oura não significa que um deles está errado nem que sua recuperação está pior. [Por que sua VFC muda em cada aparelho](/articles/hrv-different-every-device) explica isso em detalhes. Os relógios mais novos também mostram uma VFC de recuperação separada; veja [VFC de recuperação vs VFC geral](/articles/apple-watch-recovery-hrv-vs-overall-hrv).\n\n## Qual é a VFC normal no Apple Watch para a sua idade?\n\nA VFC cai com a idade. As faixas de SDNN abaixo foram montadas a partir de um grande estudo com adultos saudáveis medidos com ECG de 5 minutos (Voss 2015):\n\n| Idade | Faixa típica (percentil 25–75) | Mediana |\n|---|---|---|\n| 18–34 | 35–60 ms | ~46 ms |\n| 35–44 | 32–54 ms | ~42 ms |\n| 45–54 | 27–44 ms | ~34 ms |\n| 55–64 | 22–39 ms | ~29 ms |\n| 65+ | 20–35 ms | ~26 ms |\n\nSão referências populacionais, não metas. As leituras de um minuto do Apple Watch variam mais que um registro de laboratório, então compare sua **média semanal**, não um valor isolado. Você pode conferir um número com essas faixas na nossa [calculadora de VFC por idade](/tools/hrv) — escolha Apple Watch para que ela use a tabela de SDNN.\n\n## Por que sua leitura pode estar baixa\n\nOs motivos mais comuns são corriqueiros e temporários:\n\n- **O momento da leitura.** Uma leitura numa tarde corrida, depois do café ou em movimento costuma ser mais baixa que uma em repouso.\n- **Pouco sono ou uma noite tardia.** A VFC tende a cair depois de uma noite mal dormida.\n- **Álcool.** Mesmo algumas doses podem baixar a VFC naquela noite e às vezes no dia seguinte — veja [quanto o álcool reduz a VFC](/articles/how-much-alcohol-lowers-hrv).\n- **Treino pesado.** A VFC costuma cair por um ou dois dias depois de um treino intenso e se recupera com descanso.\n- **Doença, estresse ou desidratação.** A VFC muitas vezes cai antes ou durante um resfriado ou um período estressante.\n- **Relógio frouxo.** As leituras ficam menos precisas se o relógio se mexe no pulso.\n\nA VFC também varia muito entre pessoas da mesma idade. Algumas pessoas saudáveis simplesmente têm VFC mais baixa, então sua própria tendência importa mais do que a comparação com os outros (Shaffer & Ginsberg 2017).\n\n## Como ter uma visão mais justa\n\n- Olhe a **média semanal** no app Saúde, não leituras isoladas.\n- Use o relógio bem ajustado e, se puder, durma com ele, para que mais leituras venham do repouso.\n- Compare coisas equivalentes: o mesmo aparelho, em horários parecidos.\n- Se a tendência estiver baixa, as alavancas habituais são sono regular, menos álcool, exercício aeróbico regular e respiração lenta — veja [como aumentar a VFC naturalmente](/articles/how-to-raise-hrv-naturally).\n\n## Quando procurar um médico?\n\nUm número baixo de VFC, por si só, não é um diagnóstico. Procure um médico se sua VFC ficar bem abaixo do seu nível habitual por mais de duas semanas junto com sintomas como cansaço incomum, coração acelerado ou irregular, tontura ou falta de ar. **Se você tiver dor no peito, desmaio ou falta de ar intensa, ligue agora para o serviço de emergência.**\n\n## Como a ONDA ajuda\n\nA ONDA lê a VFC e a frequência cardíaca em repouso do seu Apple Watch pelo app Saúde e monta sua linha de base pessoal com cerca de duas semanas de dados, para você ver se o número de hoje é incomum para você, e não para uma pessoa média. É uma ferramenta de bem-estar, não um dispositivo médico.\n",
+      "neuralSuggestion": {
+        "text": "Compare um valor de VFC do Apple Watch com as normas de SDNN para a sua idade.",
+        "linkText": "Calculadora de VFC por idade →"
+      },
+      "faq": [
+        {
+          "q": "Por que a VFC do meu Apple Watch é menor que a do Oura ou do Whoop?",
+          "a": "Porque eles medem coisas diferentes. O Apple Watch informa o SDNN a partir de leituras curtas de dia e à noite, enquanto Oura e Whoop informam o RMSSD como média da noite, quando a VFC é mais alta. Os números não são intercambiáveis."
+        },
+        {
+          "q": "Qual é a VFC normal no Apple Watch?",
+          "a": "Depende da idade. Para SDNN, as faixas típicas são de cerca de 35–60 ms aos 18–34 anos, 32–54 ms aos 35–44, 27–44 ms aos 45–54 e 22–39 ms aos 55–64. Sua tendência semanal importa mais do que qualquer leitura isolada."
+        },
+        {
+          "q": "VFC 20 no Apple Watch é ruim?",
+          "a": "Não necessariamente. Uma leitura baixa isolada é comum depois de uma noite mal dormida, álcool, treino pesado ou um momento corrido. Olhe sua média semanal; se ela ficar bem abaixo do seu nível habitual com sintomas, procure um médico."
+        },
+        {
+          "q": "Como ter uma VFC mais precisa no Apple Watch?",
+          "a": "Use o relógio bem ajustado, durma com ele para que mais leituras venham do repouso e compare médias semanais em horários parecidos, em vez de valores isolados."
+        },
+        {
+          "q": "Quando devo me preocupar com a VFC baixa?",
+          "a": "Quando ela fica bem abaixo do seu nível habitual por mais de duas semanas junto com sintomas como cansaço incomum, coração acelerado ou irregular, tontura ou falta de ar. Dor no peito, desmaio ou falta de ar intensa exigem atendimento de emergência."
+        }
+      ]
     }
   },
   "series": {

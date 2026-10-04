@@ -2792,6 +2792,37 @@
           "a": "Se l’umore basso, l’ansia o l’esaurimento durano più di un paio di settimane, incidono sulla tua vita quotidiana o usi sostanze per andare avanti, parlane con un medico o con un professionista della salute mentale. In caso di crisi, contatta subito i servizi di emergenza o una linea di supporto per le crisi."
         }
       ]
+    },
+    "why-is-my-apple-watch-hrv-low": {
+      "title": "HRV bassa su Apple Watch: cause e valori normali",
+      "description": "Apple Watch misura l’HRV come SDNN con letture brevi, spesso più basse di Oura o Whoop. Valori normali per età, cause comuni e quando preoccuparsi.",
+      "content": "\nUn valore di HRV basso sul tuo Apple Watch di solito è meno allarmante di quanto sembri. Apple Watch misura un tipo di HRV diverso dalla maggior parte di anelli e bracciali, fa letture brevi in momenti casuali, e un singolo valore da solo dice molto poco. Ecco come interpretarlo.\n\n## Apple Watch misura l’SDNN, non l’RMSSD\n\nLa variabilità della frequenza cardiaca (HRV) è la piccola variazione del tempo tra un battito e l’altro. I dispositivi la riassumono in modi diversi:\n\n- **Apple Watch** riporta l’**SDNN** – la dispersione degli intervalli tra un battito e l’altro – da letture brevi di circa un minuto, fatte in background alcune volte al giorno e durante le sessioni Respira o Consapevolezza.\n- **Oura, Whoop e Garmin** riportano l’**RMSSD**, di solito come media notturna, quando il corpo è più rilassato e l’HRV è al massimo.\n\nLe letture brevi diurne sono più basse di una media notturna, e SDNN e RMSSD sono numeri diversi. Quindi un’HRV di 35 su Apple Watch accanto a un valore di 55 su Oura non significa che uno dei due sbagli, né che il tuo recupero sia peggiore. [Perché la tua HRV è diversa su ogni dispositivo](/articles/hrv-different-every-device) lo spiega più nel dettaglio. I modelli più recenti mostrano anche un’HRV di recupero separata; vedi [HRV di recupero vs HRV complessiva](/articles/apple-watch-recovery-hrv-vs-overall-hrv).\n\n## Qual è un’HRV normale su Apple Watch per la tua età?\n\nL’HRV diminuisce con l’età. I nostri intervalli di SDNN qui sotto si basano su un ampio studio su adulti sani misurati con registrazioni ECG di 5 minuti (Voss 2015):\n\n| Età | Intervallo tipico (25°–75° percentile) | Mediana |\n|---|---|---|\n| 18–34 | 35–60 ms | ~46 ms |\n| 35–44 | 32–54 ms | ~42 ms |\n| 45–54 | 27–44 ms | ~34 ms |\n| 55–64 | 22–39 ms | ~29 ms |\n| 65+ | 20–35 ms | ~26 ms |\n\nSono riferimenti di popolazione, non obiettivi. Le letture di un minuto di Apple Watch sono più disperse di una registrazione di laboratorio, quindi confronta la tua **media settimanale**, non un singolo valore. Puoi confrontare un valore con questi intervalli nel nostro [calcolatore di HRV per età](/tools/hrv) – scegli Apple Watch così usa la tabella SDNN.\n\n## Perché la tua lettura potrebbe essere bassa\n\nI motivi più comuni sono normali e temporanei:\n\n- **Il momento della lettura.** Una lettura durante un pomeriggio frenetico, dopo un caffè o in movimento è spesso più bassa di una a riposo.\n- **Poco sonno o una notte tarda.** L’HRV tende a calare dopo un sonno scarso.\n- **Alcol.** Anche un paio di drink possono abbassare l’HRV quella notte e a volte il giorno dopo – vedi [quanto l’alcol abbassa l’HRV](/articles/how-much-alcohol-lowers-hrv).\n- **Allenamento intenso.** L’HRV spesso cala per un giorno o due dopo una sessione pesante e si riprende con il riposo.\n- **Malattia, stress o disidratazione.** L’HRV spesso scende prima o durante un raffreddore o un periodo stressante.\n- **Un orologio allentato.** Le letture sono meno precise se l’orologio si muove sul polso.\n\nL’HRV varia molto anche tra persone della stessa età. Alcune persone sane hanno semplicemente un’HRV più bassa, quindi conta più il tuo andamento personale del confronto con gli altri (Shaffer & Ginsberg 2017).\n\n## Come ottenere un quadro più corretto\n\n- Guarda la **media settimanale** nell’app Salute, non le singole letture.\n- Indossa l’orologio ben aderente, e se puoi anche di notte, così più letture arrivano dal riposo.\n- Confronta cose confrontabili: lo stesso dispositivo, a orari simili.\n- Se l’andamento è basso, le leve abituali sono sonno regolare, meno alcol, attività aerobica regolare e respirazione lenta – vedi [come aumentare l’HRV in modo naturale](/articles/how-to-raise-hrv-naturally).\n\n## Quando parlarne con un medico\n\nUn valore di HRV basso da solo non è una diagnosi. Parlane con un medico se la tua HRV resta ben al di sotto del tuo livello abituale per più di un paio di settimane insieme a sintomi come stanchezza insolita, battito accelerato o irregolare, capogiri o affanno. **Se hai dolore al petto, svenimenti o grave mancanza di respiro, contatta subito i servizi di emergenza.**\n\n## Come ti aiuta ONDA\n\nONDA legge HRV e frequenza cardiaca a riposo dal tuo Apple Watch tramite Apple Salute e costruisce la tua baseline personale da circa due settimane di dati, così puoi vedere se il valore di oggi è insolito per te e non per una persona media. È uno strumento di benessere, non un dispositivo medico.\n",
+      "neuralSuggestion": {
+        "text": "Confronta un valore di HRV di Apple Watch con le norme SDNN per la tua età.",
+        "linkText": "Calcolatore di HRV per età →"
+      },
+      "faq": [
+        {
+          "q": "Perché l’HRV del mio Apple Watch è più bassa di quella di Oura o Whoop?",
+          "a": "Perché misurano cose diverse. Apple Watch riporta l’SDNN da letture brevi di giorno e di notte, mentre Oura e Whoop riportano l’RMSSD come media notturna, quando l’HRV è al massimo. I numeri non sono intercambiabili."
+        },
+        {
+          "q": "Qual è un valore di HRV normale su Apple Watch?",
+          "a": "Dipende dall’età. Per l’SDNN, gli intervalli tipici sono circa 35–60 ms a 18–34 anni, 32–54 ms a 35–44, 27–44 ms a 45–54 e 22–39 ms a 55–64. Il tuo andamento settimanale conta più di qualsiasi singola lettura."
+        },
+        {
+          "q": "Un’HRV di 20 su Apple Watch è un brutto segno?",
+          "a": "Non necessariamente. Una singola lettura bassa è comune dopo un sonno scarso, alcol, allenamento intenso o un momento frenetico. Guarda la media settimanale; se resta ben al di sotto del tuo livello abituale con sintomi, parlane con un medico."
+        },
+        {
+          "q": "Come ottenere un’HRV più precisa su Apple Watch?",
+          "a": "Indossa l’orologio ben aderente, tienilo anche di notte così più letture arrivano dal riposo, e confronta medie settimanali a orari simili invece di singoli valori."
+        },
+        {
+          "q": "Quando preoccuparsi per un’HRV bassa?",
+          "a": "Quando resta ben al di sotto del tuo livello abituale per più di un paio di settimane insieme a sintomi come stanchezza insolita, battito accelerato o irregolare, capogiri o affanno. Dolore al petto, svenimenti o grave mancanza di respiro richiedono cure di emergenza."
+        }
+      ]
     }
   },
   "series": {
