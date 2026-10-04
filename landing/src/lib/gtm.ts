@@ -40,3 +40,9 @@ export function gtmPageView(pagePath: string): void {
 export function gtmAppStoreClick(pagePath: string, campaign: string): void {
   push({ event: 'app_store_click', page_path: pagePath, campaign })
 }
+
+/** Click on an "use ONDA in <assistant>" link (Claude connector / ChatGPT app) →
+ *  GA4 `ai_connector_click`, tied to the page it fired from. */
+export function gtmAiConnectorClick(pagePath: string, platform: 'claude' | 'chatgpt'): void {
+  push({ event: 'ai_connector_click', platform, page_path: pagePath })
+}

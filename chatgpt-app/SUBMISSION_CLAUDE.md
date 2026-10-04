@@ -1,5 +1,7 @@
 # ONDA Life — submission package for the Claude Connectors Directory
 
+**Status: Published (Community), 2026-10-04** — https://claude.ai/directory/connectors/onda-life
+
 **Server URL (same as ChatGPT, never change):** `https://onda-life.com/mcp` (site rewrite → `onda-chatgpt.vercel.app/mcp`; verified with MCP Inspector 2026-10-03)
 Submit at [claude.ai/directory/manage](https://claude.ai/directory/manage) → **Submit new** → **MCP connector** (it is an MCP App, so carousel screenshots are needed).
 Sources: [submission](https://claude.com/docs/connectors/building/submission), [review criteria](https://claude.com/docs/connectors/building/review-criteria), [authentication](https://claude.com/docs/connectors/building/authentication), [MCP Apps](https://claude.com/docs/connectors/building/mcp-apps/getting-started) (read 2026-10-03).

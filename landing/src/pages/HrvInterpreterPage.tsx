@@ -6,6 +6,7 @@ import { homePathFor, langFromPath, langHref, type Lang } from '../i18n'
 import { HRV_SOURCES, bandsFor, interpretHrv, type HrvMetric, type HrvResult } from '../data/hrv-norms'
 import { hrvToolCopy, fill, HRV_TOOL_PATH, type HrvToolCopy } from '../data/hrv-tool-i18n'
 import { SourcesSection } from '../components/SourcesSection'
+import { UseInClaudeLink } from '../components/UseInClaudeLink'
 import { ordinal } from '../utils/ordinal'
 
 const TIER_COLOR: Record<string, string> = {
@@ -150,6 +151,7 @@ export function HrvInterpreterPage() {
             {metric === 'sdnn' && (
               <p className="mt-3 font-mono text-[11px] leading-relaxed text-amber-300/70">{c.sdnnNote}</p>
             )}
+            <UseInClaudeLink lang={lang} variant="hrv" className="mt-4" />
           </div>
         )}
         {!result && (age || hrv) && (

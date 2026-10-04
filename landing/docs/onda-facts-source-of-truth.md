@@ -26,6 +26,7 @@ Scope of verification: the shipping app (`src/`, `ios/`). Where the site current
 
 ### Platform
 - ✅ iOS (iPhone, iPad, Apple Watch / watchOS). App version **1.9.1**. App ID `com.onda-life.ios`.
+- ✅ **ONDA in AI assistants** (2026-10-04): available in **Claude** as a connector in the Connectors Directory (Community) — https://claude.ai/directory/connectors/onda-life; the **ChatGPT** app is **in review** (say “coming soon”, never “available”). Same server https://onda-life.com/mcp; 4 read-only tools (HRV norms, breathing guide, free practices, comparisons). Docs: /ai-apps.
 - ✅ Android **not shipped** — only bridge scaffolding (Health Connect; RevenueCat Android key placeholder; OneSignal no-op). "Waitlist" is correct.
 
 ### Pricing / access

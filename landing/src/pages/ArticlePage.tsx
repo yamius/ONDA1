@@ -171,6 +171,7 @@ function setMeta(name: string, content: string, isProperty = false) {
 import { getProtocolUniqueId, PROTOCOL_STORAGE_PREFIX, ARTICLE_STORAGE_PREFIX } from '../data/protocol-ids'
 import { ArticleReactions, ArticleValidationArrows } from '../components/ArticleReactions'
 import AppStoreCTA from '../components/AppStoreCTA'
+import { UseInClaudeLink } from '../components/UseInClaudeLink'
 import { storeCt } from '../lib/storeCt'
 
 const STORAGE_KEY_PREFIX = ARTICLE_STORAGE_PREFIX
@@ -1026,6 +1027,11 @@ export function ArticlePage() {
           <ArticleValidationArrows articleSlug={article.slug} />
         </div>
         <AppStoreCTA ct={isPillar ? storeCt('pillar', 'meditation_end', lang) : storeCt('ar', `${article.slug}_end`, lang)} variant="general" lang={lang} className="!my-0" />
+        {(isPillar || primaryHub?.slug === 'breathing') && (
+          <div className="mt-4 text-center">
+            <UseInClaudeLink lang={lang} />
+          </div>
+        )}
       </div>
 
       {/* Reactions & Comments */}

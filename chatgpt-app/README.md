@@ -1,4 +1,8 @@
-# ONDA Life app in ChatGPT
+# ONDA Life app in ChatGPT and Claude
+
+**Status:** Claude — Published (Community), 2026-10-04, https://claude.ai/directory/connectors/onda-life. ChatGPT — in review.
+
+**The server is live for all Claude users.** Every change to https://onda-life.com/mcp reaches them immediately, with no re-review. So: test tool changes on a separate test URL first, ship version 2 only on its own URL, and never touch the `/mcp` rewrite in `landing/vercel.json` or the Vercel project `onda-chatgpt`.
 
 Public MCP server for the OpenAI Apps SDK. Spec: `D:\_PValley\_work\610_ONDA_ChatGPT_app_functional_spec.docx`.
 

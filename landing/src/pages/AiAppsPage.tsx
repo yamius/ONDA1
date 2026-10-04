@@ -7,6 +7,8 @@
  */
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { CLAUDE_DIRECTORY_URL } from '../components/UseInClaudeLink'
+import { gtmAiConnectorClick } from '../lib/gtm'
 
 const SITE_URL = 'https://onda-life.com'
 const PAGE_URL = `${SITE_URL}/ai-apps`
@@ -16,6 +18,7 @@ export const AI_APPS_DESC =
   'Use ONDA inside ChatGPT and Claude: check HRV against age norms, breathe with a live guide, find a free 6-minute practice, compare wearables. No account.'
 const MCP_URL = 'https://onda-life.com/mcp'
 const SUPPORT = 'info@onda-life.com'
+const DATE_MODIFIED = '2026-10-04'
 
 const TOOLS: { name: string; title: string; what: string; prompts: string[] }[] = [
   {
@@ -45,7 +48,7 @@ const TOOLS: { name: string; title: string; what: string; prompts: string[] }[] 
 ]
 
 const FAQ: { q: string; a: string }[] = [
-  { q: 'Do I need an ONDA account?', a: 'No. The tools work without an account or sign-in, in both ChatGPT and Claude.' },
+  { q: 'Do I need an ONDA account?', a: 'No. The tools work without an account or sign-in.' },
   {
     q: 'What data does ONDA receive?',
     a: 'Only the parameters a tool needs to answer — for example your age and an HRV value, or the names of two products. The server computes the answer and does not store them. ONDA does not receive your conversation history.',
@@ -64,6 +67,7 @@ export function aiAppsJsonLd(): Record<string, unknown>[] {
       name: AI_APPS_TITLE,
       description: AI_APPS_DESC,
       inLanguage: 'en',
+      dateModified: DATE_MODIFIED,
       isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL },
       about: { '@type': 'Organization', '@id': `${SITE_URL}#organization`, name: 'ONDA Life', url: SITE_URL },
     },
@@ -105,8 +109,9 @@ export function AiAppsPage() {
       <header className="border-b border-white/10 pt-6 pb-10">
         <div className="mb-4 font-mono text-xs tracking-widest text-terminal-green/70">[ AI APPS ]</div>
         <h1 className="mb-5 text-3xl font-bold tracking-tight md:text-5xl">ONDA in ChatGPT and Claude</h1>
+        <p className="mb-4 font-mono text-xs text-white/40">Updated October 4, 2026</p>
         <p className={P}>
-          ONDA Life is available as an app inside ChatGPT and as a connector in Claude. Ask about your HRV, a breathing
+          ONDA Life is available as a connector in Claude, and the ChatGPT app is coming soon. Ask about your HRV, a breathing
           exercise, a short practice or which wearable to buy, and the answer comes with an interactive card right in the
           conversation. No account needed. ONDA is a wellness tool, not a medical device.
         </p>
@@ -116,13 +121,23 @@ export function AiAppsPage() {
         <h2 className={H2}>How to connect</h2>
         <ul className={`${P} list-disc space-y-2 pl-5`}>
           <li>
-            <strong className="text-white/85">Claude:</strong> find ONDA Life in the connectors directory once it is listed, or add it as a custom
-            connector (Settings → Connectors → Add custom connector) with the URL <code className="text-terminal-green">{MCP_URL}</code>{' '}
-            and no authentication.
+            <strong className="text-white/85">Claude:</strong> available in the Claude Connectors Directory.
+            <div className="my-3">
+              <a
+                href={CLAUDE_DIRECTORY_URL}
+                target="_blank"
+                rel="noopener"
+                onClick={() => gtmAiConnectorClick('/ai-apps', 'claude')}
+                className="inline-flex items-center rounded border border-terminal-green/50 px-4 py-2 text-terminal-green hover:bg-terminal-green/10"
+              >
+                Add ONDA to Claude →
+              </a>
+            </div>
+            Alternatively, add it as a custom connector (Customize → Connectors → Add custom connector) with the URL{' '}
+            <code className="text-terminal-green">{MCP_URL}</code> and no authentication.
           </li>
           <li>
-            <strong className="text-white/85">ChatGPT:</strong> find ONDA Life in the apps directory once it is listed, or — in developer mode — add the
-            same URL as a connector with no authentication.
+            <strong className="text-white/85">ChatGPT:</strong> coming soon — currently in review for the ChatGPT apps directory.
           </li>
           <li>Then just ask a question; the assistant calls the right ONDA tool on its own. You can also mention ONDA Life by name.</li>
         </ul>
