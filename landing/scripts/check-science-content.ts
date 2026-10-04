@@ -154,7 +154,7 @@ async function main() {
     if (!/^[a-z0-9-]+$/.test(slug)) err(rel, 'slug: lowercase letters, digits, hyphens')
     for (const k of ['title', 'metaTitle', 'metaDescription', 'shortAnswer', 'keyPoints', 'editor', 'sources', 'evidenceMap']) if (fm[k] == null) err(rel, `missing ${k}`)
     if (fm.title?.length > 70) err(rel, `title ${fm.title.length} > 70`)
-    if (fm.metaTitle?.length > 52) err(rel, `metaTitle ${fm.metaTitle.length} > 52`)
+    if (fm.metaTitle?.length > 48) err(rel, `metaTitle ${fm.metaTitle.length} > 48 (the site adds “ | ONDA Life” and clamps titles above 60 characters)`)
     if (fm.metaDescription && (fm.metaDescription.length < 110 || fm.metaDescription.length > 155)) err(rel, `metaDescription ${fm.metaDescription.length} not in 110–155`)
     const words = String(fm.shortAnswer || '').trim().split(/\s+/).length
     if (words < 40 || words > 80) err(rel, `shortAnswer ${words} words, need 40–80`)
@@ -252,7 +252,10 @@ async function main() {
     // 7. links
     for (const g of fm.related?.glossary || []) if (!routeExists.glossary.has(g)) err(rel, `related.glossary "${g}" does not exist`)
     for (const a of fm.related?.articles || []) if (!routeExists.articles.has(a)) err(rel, `related.articles "${a}" does not exist`)
-    for (const s of fm.related?.science || []) if (!slugs.has(s)) err(rel, `related.science "${s}" does not exist yet — put it in relatedPlanned`)
+    for (const s of fm.related?.science || []) {
+      if (!String(s).includes('/')) err(rel, `related.science "${s}" needs the section: <kind>/<slug>, e.g. concepts/${s}`)
+      else if (!slugs.has(s)) err(rel, `related.science "${s}" does not exist yet — put it in relatedPlanned`)
+    }
     if (fm.relatedPlanned != null && !Array.isArray(fm.relatedPlanned)) err(rel, 'relatedPlanned must be a flat list of <kind>/<slug> (e.g. [concepts/sdnn]), not an object')
     for (const s of Array.isArray(fm.relatedPlanned) ? fm.relatedPlanned : []) {
       const [k, sl, extra] = String(s).split('/')

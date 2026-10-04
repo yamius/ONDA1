@@ -49,6 +49,8 @@ const HEALTHKIT_SDNN: FactSource = { label: 'Apple HealthKit: heartRateVariabili
 const HEALTHKIT_RMSSD: FactSource = { label: 'Apple HealthKit: heartRateVariabilityRMSSD (iOS/watchOS 27)', url: 'https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd' }
 const TASK_FORCE_1996: FactSource = { label: 'Task Force ESC/NASPE 1996, Circulation', doi: '10.1161/01.CIR.93.5.1043' }
 const ONDA_APP: FactSource = { label: 'ONDA app logic: src/lib/baseline.ts (BASELINE_WINDOW_DAYS = 14), src/lib/anomaly.ts (corridor mean ± SD, MIN_NIGHTS 7, SD_GATE 1.5, floors; 90-day traffic-light corridor)', url: 'https://onda-life.com/measurements' }
+const XU_2026: FactSource = { label: 'Xu 2026, Sensors (systematic review and meta-analysis)', doi: '10.3390/s26165192', pmid: '42655500' }
+const ZUERN_2026: FactSource = { label: 'Zuern 2026, Scientific Reports', doi: '10.1038/s41598-026-52700-7', pmid: '42151374' }
 const ALA_RR: FactSource = { label: 'American Lung Association — respiratory rate', url: 'https://www.lung.org/blog/respiratory-rate-vital-signs' }
 
 const R = '2026-10-04'
@@ -83,6 +85,11 @@ const FACTS_LIST: Fact[] = [
   { id: 'baseline.minNights', display: '7 nights', kind: 'number', scope: 'Minimum valid nights before ONDA reads any signal (MIN_NIGHTS).', sources: [ONDA_APP], status: 'approved', reviewed: R },
   { id: 'baseline.floors', display: 'resting heart rate up at least 5 bpm, HRV down at least 15%, breathing rate up at least 2 breaths per minute', kind: 'claim', scope: 'Minimum change ONDA requires on top of the 1.5 SD gate (RULES in src/lib/anomaly.ts).', sources: [ONDA_APP], status: 'approved', reviewed: R },
   { id: 'baseline.corridor', display: '90 days', kind: 'number', scope: 'Window of the ONDA traffic-light corridor (Simple mode).', sources: [ONDA_APP], status: 'approved', reviewed: R },
+
+  // ── Study facts (approved by Yakiv 2026-10-05, from measurements/heart-rate-variability proposals P1–P3) ──
+  { id: 'study.xu2026.studiesQualitative', display: '43 studies', kind: 'number', scope: 'Studies in the qualitative synthesis of the PPG-PRV vs ECG-HRV systematic review (Xu 2026); healthy or apparently healthy non-clinical populations.', sources: [XU_2026], status: 'approved', reviewed: '2026-10-05', note: 'Quote: “Forty-three studies were included in the qualitative synthesis; 33 were summarized narratively, and 10 unique studies provided sufficient data for quantitative synthesis.”' },
+  { id: 'study.xu2026.studiesPooled', display: '10 unique studies', kind: 'number', scope: 'Studies with enough comparable data for the quantitative (RMSSD/SDNN) pooling in Xu 2026.', sources: [XU_2026], status: 'approved', reviewed: '2026-10-05', note: 'Same quote as study.xu2026.studiesQualitative.' },
+  { id: 'study.zuern2026.participants', display: '66 participants', kind: 'number', scope: 'Adults in sinus rhythm with simultaneous 12-lead ECG and wrist PPG (5 min 30 s) in a single-centre validation (Zuern 2026).', sources: [ZUERN_2026], status: 'approved', reviewed: '2026-10-05', note: 'Quote: “66 participants in sinus rhythm underwent simultaneous high-resolution 12-lead ECG and wrist-based PPG recording”.' },
 
   // ── Fixed wording (claims) ──────────────────────────────────────────
   { id: 'claim.vagalTone', display: 'Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate', kind: 'claim', scope: 'Use instead of “HRV measures vagal tone” or “X trains your vagal tone”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },

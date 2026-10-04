@@ -12,7 +12,7 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 - [ ] `kind` is the folder and `slug` is the file name.
 - [ ] Length limits:
   - title ≤ 70 characters;
-  - metaTitle ≤ 52;
+  - metaTitle ≤ 48 (the site adds “ | ONDA Life”; longer titles get cut);
   - metaDescription 110–155;
   - shortAnswer 40–80 words;
   - keyPoints 3–7.
@@ -43,6 +43,7 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 
 ## Common mistakes (seen in real hand-ins)
 
+- `related.science` and `relatedPlanned` always use `<kind>/<slug>`: `concepts/rmssd`, never just `rmssd` (seen on `sdnn` and `measurements/heart-rate-variability`). Published pages go in `related.science`; check the live list in [06-mvp-pages.md](06-mvp-pages.md).
 - `relatedPlanned` is a **flat list**: `relatedPlanned: [concepts/sdnn, concepts/hrv-baseline]`, not an object like `relatedPlanned: {science: [...]}`.
 - Every evidence-map row that cites an `official` source needs `claimType: device` (or `regulatory`).
 - Write numbers in the body only as `{{fact:…}}` or `{{proposed:P…}}`; inside evidence-map claims, refer to a fact by its id in words (for example “fact hrv.pooled.daytime”).

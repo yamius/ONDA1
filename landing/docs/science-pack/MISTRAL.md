@@ -301,7 +301,7 @@ Copy everything inside the block below into a new file `landing/content/science/
 kind: concepts
 slug: example-entity
 title: "Example Entity — What It Is and What It Isn’t"   # page H1, ≤ 70 chars, no digits
-metaTitle: "Example Entity: Definition and Evidence"     # ≤ 52 chars (site adds " | ONDA Life"), no digits
+metaTitle: "Example Entity: Definition and Evidence"     # ≤ 48 chars (site adds " | ONDA Life" and cuts above 60), no digits
 metaDescription: "Answer-first summary of the entity in one or two plain sentences, written for a reader and an AI answer alike, with no hype."   # 110–155 chars, no digits
 shortAnswer: >      # forty to eighty words, no digits
   Example entity is a short, exact definition of the thing this page is about. It is used to describe
@@ -418,6 +418,9 @@ Need a value that is missing? Declare it in the page’s `proposals` block and w
 | `baseline.minNights` | 7 nights | Minimum valid nights before ONDA reads any signal (MIN_NIGHTS). | approved | ONDA app logic: src/lib/baseline.ts (BASELINE_WINDOW_DAYS = 14), src/lib/anomaly.ts (corridor mean ± SD, MIN_NIGHTS 7, SD_GATE 1.5, floors; 90-day traffic-light corridor) — https://onda-life.com/measurements |
 | `baseline.floors` | resting heart rate up at least 5 bpm, HRV down at least 15%, breathing rate up at least 2 breaths per minute | Minimum change ONDA requires on top of the 1.5 SD gate (RULES in src/lib/anomaly.ts). | approved | ONDA app logic: src/lib/baseline.ts (BASELINE_WINDOW_DAYS = 14), src/lib/anomaly.ts (corridor mean ± SD, MIN_NIGHTS 7, SD_GATE 1.5, floors; 90-day traffic-light corridor) — https://onda-life.com/measurements |
 | `baseline.corridor` | 90 days | Window of the ONDA traffic-light corridor (Simple mode). | approved | ONDA app logic: src/lib/baseline.ts (BASELINE_WINDOW_DAYS = 14), src/lib/anomaly.ts (corridor mean ± SD, MIN_NIGHTS 7, SD_GATE 1.5, floors; 90-day traffic-light corridor) — https://onda-life.com/measurements |
+| `study.xu2026.studiesQualitative` | 43 studies | Studies in the qualitative synthesis of the PPG-PRV vs ECG-HRV systematic review (Xu 2026); healthy or apparently healthy non-clinical populations. | approved | Xu 2026, Sensors (systematic review and meta-analysis) — DOI 10.3390/s26165192 |
+| `study.xu2026.studiesPooled` | 10 unique studies | Studies with enough comparable data for the quantitative (RMSSD/SDNN) pooling in Xu 2026. | approved | Xu 2026, Sensors (systematic review and meta-analysis) — DOI 10.3390/s26165192 |
+| `study.zuern2026.participants` | 66 participants | Adults in sinus rhythm with simultaneous 12-lead ECG and wrist PPG (5 min 30 s) in a single-centre validation (Zuern 2026). | approved | Zuern 2026, Scientific Reports — DOI 10.1038/s41598-026-52700-7 |
 | `claim.vagalTone` | Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate | Use instead of “HRV measures vagal tone” or “X trains your vagal tone”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `claim.slowExhale` | slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise | Use instead of “a long exhale stimulates/activates the vagus nerve”. | approved | Lehrer 2003, Psychosomatic Medicine — DOI 10.1097/01.psy.0000089200.81962.19; Balban 2023, Cell Reports Medicine — DOI 10.1016/j.xcrm.2022.100895 |
 | `claim.hrvNotStress` | a single low HRV reading does not by itself mean you are stressed or unwell | Use instead of “low HRV means stressed”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
@@ -619,7 +622,13 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - **Language.** English only.
 - **Questions.** No `/questions/` pages: questions belong to articles and tools.
 
-**Status:** `concepts/rmssd` — **published 2026-10-04** (https://onda-life.com/science/concepts/rmssd); use it as the reference example of a finished page. All other pages: not written yet. Yakiv names the next page.
+**Status — published:**
+- `concepts/rmssd` — 2026-10-04 (reference example of a finished page)
+- `concepts/sdnn` — 2026-10-05
+- `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
+- `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
+
+All other pages: not written yet. Yakiv names the next page. Put published pages in `related.science`, unwritten ones in `relatedPlanned`.
 
 | # | URL | Type | Main intent | Overlaps with (existing) | How the science page differs |
 |---|---|---|---|---|---|
@@ -680,7 +689,7 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 - [ ] `kind` is the folder and `slug` is the file name.
 - [ ] Length limits:
   - title ≤ 70 characters;
-  - metaTitle ≤ 52;
+  - metaTitle ≤ 48 (the site adds “ | ONDA Life”; longer titles get cut);
   - metaDescription 110–155;
   - shortAnswer 40–80 words;
   - keyPoints 3–7.
@@ -711,6 +720,7 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 
 ## Common mistakes (seen in real hand-ins)
 
+- `related.science` and `relatedPlanned` always use `<kind>/<slug>`: `concepts/rmssd`, never just `rmssd` (seen on `sdnn` and `measurements/heart-rate-variability`). Published pages go in `related.science`; check the live list in [06-mvp-pages.md](#06-mvp-pages).
 - `relatedPlanned` is a **flat list**: `relatedPlanned: [concepts/sdnn, concepts/hrv-baseline]`, not an object like `relatedPlanned: {science: [...]}`.
 - Every evidence-map row that cites an `official` source needs `claimType: device` (or `regulatory`).
 - Write numbers in the body only as `{{fact:…}}` or `{{proposed:P…}}`; inside evidence-map claims, refer to a fact by its id in words (for example “fact hrv.pooled.daytime”).

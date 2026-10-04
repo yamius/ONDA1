@@ -2260,6 +2260,30 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1915,
     "height": 821
   },
+  "/images/science/concepts-heart-rate-variability.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-heart-rate-variability.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-heart-rate-variability.webp": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/measurements-heart-rate-variability.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/measurements-heart-rate-variability.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/measurements-heart-rate-variability.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/rmssd.avif": {
     "width": 1024,
     "height": 768

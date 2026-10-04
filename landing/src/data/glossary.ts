@@ -997,7 +997,7 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress. Part 1 practices activate the parasympathetic system, raising baseline HRV. Part 2 "Rhythmic Coherence" further increases HRV by synchronizing axial movements with the respiratory cycle.
 
-**Read the science →** [RMSSD: what this HRV metric reflects, and what it doesn't](/science/concepts/rmssd) — the evidence-first ONDA Science page on the most common HRV measure.
+**Read the science →** [Heart rate variability on ONDA Science](/science/concepts/heart-rate-variability) — what HRV is, what it reflects and what it doesn't, with sources. The metrics in depth: [RMSSD](/science/concepts/rmssd) and [SDNN](/science/concepts/sdnn); wearable accuracy: [can you trust HRV from a smartwatch or ring?](/science/measurements/heart-rate-variability)
 
 ---
 

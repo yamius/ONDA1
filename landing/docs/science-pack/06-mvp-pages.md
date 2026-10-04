@@ -6,7 +6,13 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - **Language.** English only.
 - **Questions.** No `/questions/` pages: questions belong to articles and tools.
 
-**Status:** `concepts/rmssd` — **published 2026-10-04** (https://onda-life.com/science/concepts/rmssd); use it as the reference example of a finished page. All other pages: not written yet. Yakiv names the next page.
+**Status — published:**
+- `concepts/rmssd` — 2026-10-04 (reference example of a finished page)
+- `concepts/sdnn` — 2026-10-05
+- `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
+- `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
+
+All other pages: not written yet. Yakiv names the next page. Put published pages in `related.science`, unwritten ones in `relatedPlanned`.
 
 | # | URL | Type | Main intent | Overlaps with (existing) | How the science page differs |
 |---|---|---|---|---|---|

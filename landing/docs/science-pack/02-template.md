@@ -4,7 +4,7 @@
 kind: concepts
 slug: example-entity
 title: "Example Entity — What It Is and What It Isn’t"   # page H1, ≤ 70 chars, no digits
-metaTitle: "Example Entity: Definition and Evidence"     # ≤ 52 chars (site adds " | ONDA Life"), no digits
+metaTitle: "Example Entity: Definition and Evidence"     # ≤ 48 chars (site adds " | ONDA Life" and cuts above 60), no digits
 metaDescription: "Answer-first summary of the entity in one or two plain sentences, written for a reader and an AI answer alike, with no hype."   # 110–155 chars, no digits
 shortAnswer: >      # forty to eighty words, no digits
   Example entity is a short, exact definition of the thing this page is about. It is used to describe
