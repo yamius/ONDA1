@@ -31,6 +31,7 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 | 9 | [09-acceptance-checklist.md](09-acceptance-checklist.md) | What Claude Code checks before publishing |
 | 10 | [10-image-style.md](10-image-style.md) | Hero image: light scientific style, `imageAlt` and `imagePrompt` with examples |
 | 11 | [11-lessons-first-page.md](11-lessons-first-page.md) | Lessons from `concepts/rmssd` — what needed fixing and the rules that now prevent it |
+| 12 | [ONDA_science_roadmap.md](ONDA_science_roadmap.md) | Page plan: done, remaining MVP order, phase 2, methodology, what we don’t do (owner’s plan, in Russian) |
 
 **For Mistral: read one file — [`MISTRAL.md`](MISTRAL.md).** It contains this whole pack in one document (generated from the files below by `npx tsx scripts/science-pack-bundle.ts`; never edit it by hand). Published so far: `concepts/rmssd` (see [06-mvp-pages.md](06-mvp-pages.md)).
 
@@ -55,6 +56,7 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 | 2026-10-04 | `relatedPlanned` for unwritten science pages; shown automatically once published. |
 | 2026-10-04 | Proposals block: missing facts/sources proposed in the file; drafts pass, publishing is blocked until Yakiv approves. |
 | 2026-10-04 | Hand-off includes the real check log when Mistral can run scripts. |
+| 2026-10-05 | Source type `product-documentation` (ONDA’s own pages, app behaviour only). Source year = journal volume year. Roadmap added to the pack; `relatedPlanned` may list any roadmap page. |
 | 2026-10-04 | After `rmssd`: no repeats around facts (auto-checked), exact `quote` per evidence row (required), `imageAlt` + `imagePrompt` in the light scientific style (required), lessons file. |
 
 Background (not rules): the original specs are in `D:\_ONDA\_Sciense\` (001–005), and the audit with the page decisions is [`../science-audit.md`](../science-audit.md).

@@ -12,6 +12,9 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
 - `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
 - `evidence/transcutaneous-vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
+- `concepts/hrv-baseline` — 2026-10-05
+
+**The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](ONDA_science_roadmap.md).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 
 All other pages: not written yet. Yakiv names the next page. Put published pages in `related.science`, unwritten ones in `relatedPlanned`.
 

@@ -89,7 +89,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: 'What does ONDA actually measure?',
-        a: 'ONDA measures heart rate via an Apple Watch, Apple Health or the iPhone camera (PPG) at rest, and reads heart-rate variability (HRV, SDNN) from Apple Health when an Apple Watch is connected. From those it derives your resting-HRV trend and, with an Apple Watch, a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
+        a: 'ONDA measures heart rate via an Apple Watch, Apple Health or the iPhone camera (PPG) at rest, and reads heart-rate variability (HRV, SDNN) from Apple Health — written there by an Apple Watch or by another device that syncs heart data to Apple Health. From those it derives your resting-HRV trend and, with an Apple Watch, a live coherence score. It does not measure blood biomarkers, brain activity or sleep stages.',
       },
       {
         q: 'Is ONDA’s coherence score a medical or clinical measurement?',
@@ -171,7 +171,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: 'Что ONDA на самом деле измеряет?',
-        a: 'ONDA измеряет пульс через Apple Watch, Apple Health или камерой iPhone (PPG) в покое, а вариабельность сердечного ритма (HRV, SDNN) читает из Apple Health при подключённых Apple Watch. Из них она выводит ваш тренд HRV в покое и — при подключённых Apple Watch — живой показатель когерентности. Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
+        a: 'ONDA измеряет пульс через Apple Watch, Apple Health или камерой iPhone (PPG) в покое, а вариабельность сердечного ритма (HRV, SDNN) читает из Apple Health — туда её записывают Apple Watch или другое устройство, которое синхронизирует данные о сердце с Apple Health. Из них она выводит ваш тренд HRV в покое и — при подключённых Apple Watch — живой показатель когерентности. Она не измеряет кровяные биомаркеры, активность мозга или стадии сна.',
       },
       {
         q: 'Показатель когерентности ONDA — это медицинское или клиническое измерение?',
@@ -253,7 +253,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
     faq: [
       {
         q: '¿Qué mide realmente ONDA?',
-        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (VFC, SDNN) de Apple Salud cuando hay un Apple Watch conectado. De ahí deriva tu tendencia de VFC en reposo y, con un Apple Watch, una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
+        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (VFC, SDNN) de Apple Salud, donde la escribe un Apple Watch u otro dispositivo que sincroniza datos del corazón con Apple Salud. De ahí deriva tu tendencia de VFC en reposo y, con un Apple Watch, una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
       },
       {
         q: '¿La puntuación de coherencia de ONDA es una medición médica o clínica?',

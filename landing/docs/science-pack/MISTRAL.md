@@ -24,6 +24,7 @@
 9. [09-acceptance-checklist.md](#09-acceptance-checklist)
 10. [10-image-style.md](#10-image-style)
 11. [11-lessons-first-page.md](#11-lessons-first-page)
+12. [ONDA_science_roadmap.md](#ONDA_science_roadmap)
 
 ---
 
@@ -79,6 +80,10 @@ If a claim cannot be sourced, remove or qualify it. If scientific uncertainty is
 - AI-generated summaries.
 
 **Name the study type correctly.** A single crossover trial is not a meta-analysis.
+
+**Year of a source.** Use the year of the journal volume or issue the article belongs to, not the online-first date. Example: Esco et al., *Sensors* 26(1) — online December 2025, cited as 2026. Crossref may show the online year; that is expected.
+
+**ONDA product documentation (source type `product-documentation`).** ONDA’s own pages, such as `https://onda-life.com/measurements`, may be cited **only to describe what the app does**: what it reads, how it compares readings, its scope. They are never evidence for a scientific or health claim. The rules are the same as for `official` below. Cite them only when the page states the claim; ONDA’s numeric windows (14 days, 7 nights…) come from facts, which carry their own source.
 
 **Official documentation (source type `official`).** Manufacturer documentation (Apple, Garmin, Oura …) and regulators (FDA, EMA …) are cited with type `official`. Rules:
 - they need a URL that opens, and no DOI;
@@ -329,14 +334,14 @@ sources:              # every source cited in the body
     cite: "Task Force of the ESC and NASPE (1996)"
     title: "Heart rate variability: standards of measurement, physiological interpretation and clinical use"
     journal: "Circulation"
-    year: 1996
+    year: 1996        # year of the journal volume/issue, not the online-first date
     doi: "10.1161/01.CIR.93.5.1043"   # scientific types: DOI or PMID required (looked up in Crossref / PubMed)
     type: guideline   # systematic-review | meta-analysis | randomized-trial | observational | review | guideline | other | official
   - id: S2
     cite: "Apple HealthKit documentation"
     title: "heartRateVariabilityRMSSD"
     url: "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd"
-    type: official    # official documentation: URL required (must open), no DOI. ONLY for device / regulatory facts.
+    type: official    # official (manufacturer/regulator) or product-documentation (ONDA's own pages): URL required (must open), no DOI. ONLY for device / regulatory facts.
 evidenceMap:          # one row per factual claim in the body
   - claim: "RMSSD is computed from successive differences between heartbeats."
     sources: [S1]
@@ -500,12 +505,14 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 | Short cite | Full reference | Type | DOI / PMID | Use for |
 |---|---|---|---|---|
 | Task Force 1996 | Task Force of the ESC and NASPE. Heart rate variability: standards of measurement, physiological interpretation and clinical use. *Circulation* 1996;93(5):1043–1065 | guideline | DOI 10.1161/01.CIR.93.5.1043 | Metric definitions (RMSSD, SDNN, frequency bands); classic measurement standards |
+| Esco 2026 | Esco MR, Fields AD, Mohammadnabi A, Kliszczewicz B. Monitoring training adaptation and recovery status in athletes using heart rate variability via mobile devices: a narrative review. *Sensors* 2026;26(1):3 | review (narrative) | DOI 10.3390/s26010003 · PMID 41516438 | Personal baseline needs frequent readings over at least a week; weekly means + CV; peer comparison misleads (athlete monitoring) |
+| Kristiansen 2009 | Kristiansen J, Olsen A, Skotte JH, Garde AH. Reproducibility and seasonal variation of ambulatory short-term heart rate variability in healthy subjects. *Scand J Clin Lab Invest* 2009;69(6):651–661 | observational | DOI 10.3109/00365510902946984 · PMID 19424916 | Weak seasonal variation in some short-term HRV measures; within-subject CV unaffected |
 | Shaffer & Ginsberg 2017 | An overview of heart rate variability metrics and norms. *Frontiers in Public Health* 2017;5:258 | review | DOI 10.3389/fpubh.2017.00258 | What each metric reflects; recording length |
 | Carter 2026 | Carter JR et al. Guidelines for rigor and reproducibility of heart rate variability within human cardiovascular research. *Am J Physiol Heart Circ Physiol* 2026;331:H918–H943 | guideline | DOI 10.1152/ajpheart.00041.2026 | Measurement rigour; recording conditions; respiration; wearable limits; interpretation cautions |
 | Xu 2026 | Xu S, Liu H, Liu Z, Su P, Gu Z. Accuracy of photoplethysmography-derived pulse rate variability compared with electrocardiography-derived heart rate variability: a systematic review and meta-analysis. *Sensors* 2026;26(16):5192 | systematic review + meta-analysis | DOI 10.3390/s26165192 · PMID 42655500 | PPG (PRV) vs ECG (HRV) agreement; limits on generalisation |
 | Zuern 2026 | Zuern CS et al. Validation of photoplethysmography-derived short-term heart rate variability using a wearable device. *Scientific Reports* 2026;16:22597 | observational (validation) | DOI 10.1038/s41598-026-52700-7 | Simultaneous ECG/PPG; metric-specific agreement; motion and signal-quality limits |
 | Voss 2015 | Voss A et al. Short-term heart rate variability — influence of gender and age in healthy subjects. *PLOS ONE* 2015;10(3):e0118308 | observational | DOI 10.1371/journal.pone.0118308 | Age and sex effects on HRV; basis of the ONDA norm tables |
-| Nunan 2010 | Nunan D, Sandercock GRH, Brodie DA. A quantitative systematic review of normal values for short-term heart rate variability in healthy adults. *Pacing Clin Electrophysiol* 2010;33(11):1407–1417 | systematic review | DOI 10.1111/j.1540-8159.2010.02841.x | Pooled short-term (daytime) normal values |
+| Nunan 2010 | Nunan D, Sandercock GRH, Brodie DA. A quantitative systematic review of normal values for short-term heart rate variability in healthy adults. *Pacing Clin Electrophysiol* 2010;33(11):1407–1417 | systematic review | DOI 10.1111/j.1540-8159.2010.02841.x · PMID 20663071 | Pooled short-term (daytime) normal values |
 | Laborde 2017 | Laborde S, Mosley E, Thayer JF. Heart rate variability and cardiac vagal tone in psychophysiological research — recommendations for experiment planning, data analysis, and data reporting. *Frontiers in Psychology* 2017;8:213 | review (methods) | DOI 10.3389/fpsyg.2017.00213 | Vagally mediated HRV; why “vagal tone” is not measured directly; reporting standards |
 | Billman 2013 | Billman GE. The LF/HF ratio does not accurately measure cardiac sympatho-vagal balance. *Frontiers in Physiology* 2013;4:26 | review | DOI 10.3389/fphys.2013.00026 | LF/HF is not sympathovagal balance |
 
@@ -550,6 +557,7 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 | Source | URL | Use for |
 |---|---|---|
 | Apple Newsroom, 9 Sep 2026 | https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/ | Recovery HRV and Overall HRV; measuring every five minutes (fact `applewatch.hrv.variants2026`) |
+| ONDA — What ONDA measures (type `product-documentation`, approved 2026-10-05) | https://onda-life.com/measurements | What the app reads and how it compares readings; scope (descriptive, not a medical assessment). Not evidence for any scientific claim |
 | HealthKit heartRateVariabilitySDNN | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn | Apple Health stores HRV as SDNN |
 | HealthKit heartRateVariabilityRMSSD | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd | RMSSD type from iOS/watchOS 27 |
 | FDA De Novo DEN150048 | https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN150048.pdf | gammaCore: the cleared headache indication only |
@@ -631,6 +639,9 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
 - `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
 - `evidence/transcutaneous-vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
+- `concepts/hrv-baseline` — 2026-10-05
+
+**The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](#ONDA_science_roadmap).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 
 All other pages: not written yet. Yakiv names the next page. Put published pages in `related.science`, unwritten ones in `relatedPlanned`.
 
@@ -937,3 +948,101 @@ The first page was good, but it still needed fixes at publishing. Avoid these so
 - it links to the articles that own the practical angle instead of repeating them.
 
 Use https://onda-life.com/science/concepts/rmssd as the reference for structure and tone.
+
+---
+
+<a id="ONDA_science_roadmap"></a>
+
+# ONDA Science — план страниц
+
+Сводный план научного раздела: что уже сделано, что осталось из MVP, что берём из списка 40 тем и что сознательно не делаем.
+
+**Правило раздела (из аудита):** научный раздел владеет **сущностями, механизмами и доказательствами**. Практические «что делать» и бытовые вопросы остаются в статьях — научная страница на них ссылается, а не повторяет.
+
+Типы URL: `concepts/` (что это), `measurements/` (как измеряется и насколько точно), `mechanisms/` (как работает), `evidence/` (что показывают исследования).
+
+---
+
+## 1. Готово (5)
+
+| URL | Тема |
+|---|---|
+| `concepts/heart-rate-variability` | What is HRV — центральная страница |
+| `concepts/rmssd` | RMSSD |
+| `concepts/sdnn` | SDNN |
+| `measurements/heart-rate-variability` | Можно ли доверять HRV с часов и колец (ECG vs PPG) |
+| `evidence/transcutaneous-vagus-nerve-stimulation` | Работает ли стимуляция вагуса |
+
+---
+
+## 2. Остаток MVP — делаем в этом порядке (8)
+
+| # | URL | Тема | Зачем | Ссылается на / пересечения |
+|---|---|---|---|---|
+| 1 | `concepts/hrv-baseline` | HRV baseline: why your own normal matters more than any norm | Основа всей логики ONDA (коридор, тренд против одного числа). Сюда же — «почему HRV нельзя сравнивать с чужой» | `normal-hrv-by-age`, `/tools/hrv`, `how-to-measure-hrv-consistently` |
+| 2 | `concepts/respiratory-sinus-arrhythmia` | Respiratory sinus arrhythmia: how breathing shapes heart rhythm | Научное объяснение связи дыхания и сердца — фундамент всех дыхательных практик | центральная HRV, `mechanisms/breathing-and-hrv` |
+| 3 | `mechanisms/breathing-and-hrv` | How breathing changes HRV — and why slow breathing raises it | Прямая связь с главной функцией ONDA; закрывает темы 6 и 8 из списка | `coherent-breathing-guide`, `/resonance-breathing`, `find-your-resonance-breathing-rate` |
+| 4 | `evidence/hrv-biofeedback` | HRV biofeedback: what the evidence shows | Научная основа продукта; закрывает темы 9, 38, 39 | pillar `/hrv-biofeedback`, `/apple-watch-hrv-biofeedback` |
+| 5 | `evidence/slow-breathing` | Slow breathing: what it does and doesn't do, by the evidence | Синтез исследований по давлению, тревоге, HRV, сну — с честными классами | статьи про дыхание и давление, 4-7-8, когерентное дыхание |
+| 6 | `concepts/autonomic-nervous-system` | The autonomic nervous system: sympathetic and parasympathetic | Связывает метрику с физиологией; одна страница вместо трёх тонких | глоссарий, `calm-your-nervous-system-down` |
+| 7 | `concepts/vagus-nerve` | The vagus nerve: what it does, and what is myth | Огромный спрос, много мифологии; без «тонуса вагуса» как измеряемой величины | флагман VNS, `vagus-nerve-master-key`, `vagus-nerve-exercises` |
+| 8 | `measurements/resting-heart-rate` | Resting heart rate: what it reflects and how it's measured | Вторая главная метрика ONDA; нормы — из утверждённых фактов | `resting-heart-rate-by-age`, инструмент пульса покоя |
+
+---
+
+## 3. Фаза 2 — берём из списка 40 тем (6)
+
+Темы из списка, которые действительно научные и не дублируют статьи. Несколько тем из списка объединены в одну страницу — по отдельности они были бы тонкими и конкурировали бы друг с другом.
+
+| # | URL | Тема | Что объединяет из списка | Зачем |
+|---|---|---|---|---|
+| 9 | `concepts/interpreting-hrv` | What a single HRV value can and can't tell you | 2, 18, 19, 20, 28, 29 (что HRV говорит; не оценка; нельзя сравнивать с чужой; почему личная; низкая и высокая HRV) | Главный материал против хайпа и неверных толкований; страница безопасности |
+| 10 | `mechanisms/hrv-day-to-day` | Why HRV changes from day to day | 4, 12–16 (стресс, сон, нагрузка, алкоголь, кофеин) | Синтез механизмов и размеров эффекта; практические детали — ссылками на существующие статьи про алкоголь, кофеин, сон, перетренированность |
+| 11 | `concepts/interoception` | Interoception: how the brain senses the body | 35, 36 | Совпадает с философией ONDA; научная опора для практик внимания к телу |
+| 12 | `mechanisms/heart-brain-interaction` | Heart–brain interaction and neurovisceral integration | 33, 34 | Продвинутый уровень; модель Тейера с честной пометкой, что это модель |
+| 13 | `evidence/meditation-autonomic-nervous-system` | Meditation and the autonomic nervous system: what the evidence shows | 30, 31 | Научная опора для кластера статей о медитации; синтез с классами доказательности |
+| 14 | `measurements/respiratory-rate` | Respiratory rate at rest: what it reflects | — (из аудита) | Третья метрика ONDA; ночная частота дыхания |
+
+---
+
+## 4. Методология ONDA (1)
+
+| # | URL | Тема | Зачем |
+|---|---|---|---|
+| 15 | `methodology/onda` | How ONDA measures and interprets physiological signals | Как ONDA получает пульс (камера, HealthKit), как строит базлайн и коридор, как работают сигналы, ограничения. Сильный сигнал доверия для поиска и ИИ |
+
+**Важно:** у ONDA нет собственного валидационного исследования. Страница описывает **метод и ограничения**, а не «валидацию». Никаких утверждений о точности ONDA, которые нечем подтвердить. Раздел «ONDA validation» из списка не делаем, пока нет исследования.
+
+---
+
+## 5. Не делаем — и почему
+
+| Темы из списка | Причина |
+|---|---|
+| 1 What Is HRV, 3 RMSSD vs SDNN, 24 ECG vs wrist, 26–27 RMSSD/SDNN in wearables | Уже сделаны (центральная страница, RMSSD, SDNN, флагман про часы) — сравнение RMSSD и SDNN есть внутри этих страниц |
+| 10 What is resonance breathing | Покрывает pillar `/resonance-breathing`; научная часть войдёт в `mechanisms/breathing-and-hrv` |
+| 11 Vagus nerve and HRV | Войдёт в `concepts/vagus-nerve` |
+| 21 Apple Watch HRV, 22 Oura HRV, 23 Whoop HRV | Факты об устройствах — только из официальных источников, их мало; бытовая сторона уже в статьях и обзорах. Нужное уже есть во флагмане про часы |
+| 25 Why devices give different numbers | Статья `hrv-different-every-device` + флагман про часы |
+| 17 Food, digestion and HRV | Слабая доказательная база для отдельной научной страницы; при необходимости — абзац в `mechanisms/hrv-day-to-day` |
+| 32 Attention, breathing and regulation | Слишком широко; части войдут в страницы про интероцепцию и медитацию |
+| 37 Biofeedback vs meditation | Уже есть статья `meditation-vs-breathwork`; научная часть — в `evidence/hrv-biofeedback` |
+| 38, 39 Real-time biofeedback, how biofeedback works | Войдут в `evidence/hrv-biofeedback` |
+| 40 How ONDA uses physiological signals | Объединено в `methodology/onda` |
+| Квантовое сознание, «частоты», «вибрации», 40/10 Гц, «HRV доказывает эмоции», вагус как объяснение всего | Согласен со списком: не делаем вообще. Подрывает доверие ко всему разделу |
+
+---
+
+## 6. Как это ложится на 5 кластеров из списка
+
+Кластеры — для хабов и навигации, а URL остаются по типам (`concepts/measurements/mechanisms/evidence`).
+
+| Кластер | Страницы |
+|---|---|
+| HRV | центральная HRV, RMSSD, SDNN, базлайн, interpreting HRV, флагман про часы |
+| Breathing | RSA, breathing and HRV, slow breathing, respiratory rate |
+| Nervous system | ANS, vagus nerve, VNS, HRV day to day |
+| Brain–body | interoception, heart–brain, meditation and ANS, HRV biofeedback |
+| Measurement & evidence | флагман про часы, resting heart rate, методология ONDA |
+
+**Итого:** 5 готово + 8 MVP + 6 фаза 2 + 1 методология = **20 страниц**. Из 40 тем списка — всё ценное покрыто, без дублей со статьями и без тонких страниц.

@@ -32,14 +32,14 @@ sources:              # every source cited in the body
     cite: "Task Force of the ESC and NASPE (1996)"
     title: "Heart rate variability: standards of measurement, physiological interpretation and clinical use"
     journal: "Circulation"
-    year: 1996
+    year: 1996        # year of the journal volume/issue, not the online-first date
     doi: "10.1161/01.CIR.93.5.1043"   # scientific types: DOI or PMID required (looked up in Crossref / PubMed)
     type: guideline   # systematic-review | meta-analysis | randomized-trial | observational | review | guideline | other | official
   - id: S2
     cite: "Apple HealthKit documentation"
     title: "heartRateVariabilityRMSSD"
     url: "https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd"
-    type: official    # official documentation: URL required (must open), no DOI. ONLY for device / regulatory facts.
+    type: official    # official (manufacturer/regulator) or product-documentation (ONDA's own pages): URL required (must open), no DOI. ONLY for device / regulatory facts.
 evidenceMap:          # one row per factual claim in the body
   - claim: "RMSSD is computed from successive differences between heartbeats."
     sources: [S1]

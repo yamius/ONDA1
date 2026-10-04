@@ -33,7 +33,9 @@ const ROOT = join(dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z
 const DIR = join(ROOT, 'content', 'science')
 const KINDS = ['concepts', 'measurements', 'mechanisms', 'evidence']
 const SCIENTIFIC_TYPES = ['systematic-review', 'meta-analysis', 'randomized-trial', 'observational', 'review', 'guideline', 'other']
-const SOURCE_TYPES = [...SCIENTIFIC_TYPES, 'official']
+/** official = manufacturer/regulator documents; product-documentation = ONDA's own docs (what the app does). Both: URL, no DOI, device/regulatory claims only. */
+const URL_TYPES = ['official', 'product-documentation']
+const SOURCE_TYPES = [...SCIENTIFIC_TYPES, ...URL_TYPES]
 /** `guideline` = guideline / expert consensus (e.g. methodological guidelines such as Carter 2026). */
 const CLASSES = ['established', 'guideline', 'context-dependent', 'emerging', 'debated', 'unknown']
 const CLAIM_TYPES = ['definition', 'measurement', 'physiology', 'device', 'regulatory', 'efficacy', 'safety', 'other']
@@ -177,15 +179,15 @@ async function main() {
       if (!/^S\d+$/.test(s.id) || ids.has(s.id)) err(rel, `source id "${s.id}" must be unique S1, S2…`)
       ids.add(s.id)
       if (!SOURCE_TYPES.includes(s.type)) { err(rel, `${s.id}: type must be one of ${SOURCE_TYPES.join(', ')}`); continue }
-      if (s.type === 'official') {
+      if (URL_TYPES.includes(s.type)) {
         official.add(s.id)
-        if (!s.url || !/^https:\/\//.test(s.url)) { err(rel, `${s.id}: type official needs an https URL`); continue }
+        if (!s.url || !/^https:\/\//.test(s.url)) { err(rel, `${s.id}: type ${s.type} needs an https URL`); continue }
         const r = await urlOpens(s.url)
         if (r === 'network') warn(rel, `${s.id}: could not reach ${s.url} — re-run online`)
         else if (r) err(rel, `${s.id}: ${r}`)
       } else {
         if (s.type === 'guideline') guidelineSrc.add(s.id)
-        if (!s.doi && !s.pmid) { err(rel, `${s.id}: DOI or PMID required (only type official may use a URL instead)`); continue }
+        if (!s.doi && !s.pmid) { err(rel, `${s.id}: DOI or PMID required (only types official / product-documentation may use a URL instead)`); continue }
         const miss = await sourceExists(s)
         if (miss) err(rel, `${s.id}: ${miss}`)
       }
@@ -202,9 +204,9 @@ async function main() {
       if (row.claimType != null && !CLAIM_TYPES.includes(row.claimType)) err(rel, `${label}: claimType must be one of ${CLAIM_TYPES.join(', ')}`)
       const usesOfficial = (row.sources || []).some((s: string) => official.has(s))
       if (usesOfficial) {
-        if (!OFFICIAL_CLAIM_TYPES.includes(row.claimType)) err(rel, `${label}: an official source may support only claimType device or regulatory (got ${row.claimType ?? 'none'})`)
+        if (!OFFICIAL_CLAIM_TYPES.includes(row.claimType)) err(rel, `${label}: an official / product-documentation source may support only claimType device or regulatory (got ${row.claimType ?? 'none'})`)
         const m = String(row.claim).match(EFFICACY_WORDS)
-        if (m) err(rel, `${label}: official sources cannot support health/efficacy claims (“${m[0]}”)`)
+        if (m) err(rel, `${label}: official / product-documentation sources cannot support health/efficacy claims (“${m[0]}”)`)
       }
       if (row.class === 'guideline' && !(row.sources || []).some((s: string) => guidelineSrc.has(s))) err(rel, `${label}: class guideline needs a source of type guideline`)
     }
@@ -237,6 +239,7 @@ async function main() {
       const before = body.slice(Math.max(0, m.index! - 120), m.index!).split(/[.!?\n]\s/).pop() ?? ''
       const term = f.display.match(/^(\S+) — /)?.[1]
       if (term && before.includes(term)) err(rel, `{{fact:${m[1]}}} starts with “${term} —”, and the sentence already names ${term}: “…${before.trim().slice(-50)}” — rebuild the sentence so the term appears once`)
+      else if ((() => { const last = f.display.match(/([A-Za-z]{4,})\W*$/)?.[1]; const after = body.slice(m.index! + m[0].length, m.index! + m[0].length + 40); return !!last && new RegExp(`^[^.!?]{0,25}\\b${last}\\b`, 'i').test(after) })()) err(rel, `{{fact:${m[1]}}} ends with “${f.display.split(' ').pop()}”, and the next words repeat it (“…${body.slice(m.index! + m[0].length, m.index! + m[0].length + 30)}”) — rebuild the sentence`)
       else if (/\b(definition (is|of [^,]+ is)|defined as|stands for|means)\s*$/i.test(before)) err(rel, `{{fact:${m[1]}}} is framed by “${before.trim().slice(-30)}”, which repeats what the fact itself says — let the fact carry the sentence`)
     }
     for (const m of body.matchAll(/\{\{proposed:([^}]+)\}\}/g)) if (!proposals.has(m[1])) err(rel, `{{proposed:${m[1]}}} has no matching entry in proposals`)

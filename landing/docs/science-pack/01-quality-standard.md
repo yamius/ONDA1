@@ -49,6 +49,10 @@ If a claim cannot be sourced, remove or qualify it. If scientific uncertainty is
 
 **Name the study type correctly.** A single crossover trial is not a meta-analysis.
 
+**Year of a source.** Use the year of the journal volume or issue the article belongs to, not the online-first date. Example: Esco et al., *Sensors* 26(1) — online December 2025, cited as 2026. Crossref may show the online year; that is expected.
+
+**ONDA product documentation (source type `product-documentation`).** ONDA’s own pages, such as `https://onda-life.com/measurements`, may be cited **only to describe what the app does**: what it reads, how it compares readings, its scope. They are never evidence for a scientific or health claim. The rules are the same as for `official` below. Cite them only when the page states the claim; ONDA’s numeric windows (14 days, 7 nights…) come from facts, which carry their own source.
+
 **Official documentation (source type `official`).** Manufacturer documentation (Apple, Garmin, Oura …) and regulators (FDA, EMA …) are cited with type `official`. Rules:
 - they need a URL that opens, and no DOI;
 - they may support **only device or regulatory facts** — what a device records, what a data type is, what a clearance covers;

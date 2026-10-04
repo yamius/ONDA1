@@ -2272,6 +2272,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/concepts-hrv-baseline.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-hrv-baseline.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-hrv-baseline.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/evidence-vagus-nerve-stimulation.avif": {
     "width": 1024,
     "height": 768
