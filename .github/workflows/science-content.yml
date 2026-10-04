@@ -29,3 +29,5 @@ jobs:
         run: npx tsx scripts/check-science-content.ts --publish
       - name: Facts doc in the pack is up to date
         run: npx tsx scripts/science-pack-facts.ts --check
+      - name: MISTRAL.md (single-file pack) is up to date
+        run: npx tsx scripts/science-pack-bundle.ts --check

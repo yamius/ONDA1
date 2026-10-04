@@ -33,6 +33,12 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 - [ ] 3–6 links in `related`, all to pages that exist. Unwritten MVP science pages go in `relatedPlanned`, not in `related` or inline links.
 - [ ] The page does not repeat what the overlapping articles own.
 
+## Common mistakes (seen in real hand-ins)
+
+- `relatedPlanned` is a **flat list**: `relatedPlanned: [concepts/sdnn, concepts/hrv-baseline]`, not an object like `relatedPlanned: {science: [...]}`.
+- Every evidence-map row that cites an `official` source needs `claimType: device` (or `regulatory`).
+- Write numbers in the body only as `{{fact:…}}` or `{{proposed:P…}}`; inside evidence-map claims, refer to a fact by its id in words (for example “fact hrv.pooled.daytime”).
+
 ## Check log
 
 If you can run scripts, run the real check on your file and attach the full output to the hand-off:

@@ -30,13 +30,14 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 | 8 | [08-handoff-checklist.md](08-handoff-checklist.md) | What Mistral checks and writes when handing in a file |
 | 9 | [09-acceptance-checklist.md](09-acceptance-checklist.md) | What Claude Code checks before publishing |
 
-**First page to write:** `concepts/rmssd` (see [06-mvp-pages.md](06-mvp-pages.md)).
+**For Mistral: read one file — [`MISTRAL.md`](MISTRAL.md).** It contains this whole pack in one document (generated from the files below by `npx tsx scripts/science-pack-bundle.ts`; never edit it by hand). Published so far: `concepts/rmssd` (see [06-mvp-pages.md](06-mvp-pages.md)).
 
 ## Tools behind the pack
 
 | Tool | What it does |
 |---|---|
 | `landing/src/data/science/facts.ts` | Facts module. Changed only by Claude Code, after Yakiv approves a value. |
+| `npx tsx scripts/science-pack-bundle.ts` | Rebuilds `MISTRAL.md` (the single-file version for Mistral) from README + 01–09; run after ANY change to the pack or to `facts.ts`. `--check` fails if it is stale. |
 | `npx tsx scripts/science-pack-facts.ts` | Regenerates `03-facts.md`. Run it after every change to `facts.ts`; `--check` fails if the doc is stale. |
 | `npx tsx scripts/check-science-content.ts` | Automatic page checks: format, DOI/PMID exist, official URLs open and support only device/regulatory facts, evidence classes, numbers only via facts or proposals, banned wording, links and `relatedPlanned`. `--file <path>` checks one file anywhere (use it on a draft). `--offline` skips the lookups. `--publish` also fails on pending proposals or proposed facts — the gate before publishing. |
 | `.github/workflows/science-content.yml` | Runs the publish gate (`--publish`) and the facts-doc check whenever `landing/content/science/`, the facts or the pack change on `main`. |

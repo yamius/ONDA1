@@ -6,7 +6,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - **Language.** English only.
 - **Questions.** No `/questions/` pages: questions belong to articles and tools.
 
-**Write `concepts/rmssd` first.**
+**Status:** `concepts/rmssd` — **published 2026-10-04** (https://onda-life.com/science/concepts/rmssd); use it as the reference example of a finished page. All other pages: not written yet. Yakiv names the next page.
 
 | # | URL | Type | Main intent | Overlaps with (existing) | How the science page differs |
 |---|---|---|---|---|---|
