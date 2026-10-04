@@ -41,7 +41,7 @@ const neurosityVsEmotiv: HeadToHead = {
     },
     {
       q: 'Can either headset be used for meditation?',
-      a: 'Both can, but neither is the right tool for that job. The consumer meditation experience belongs to Muse — Muse 2 ($249) or Muse S Athena ($474.99). Neurosity and Emotiv are developer-grade hardware that requires you to bring your own application.',
+      a: 'Both can, but neither is the right tool for that job. The consumer meditation experience belongs to Muse — Muse 2 ($249.99) or Muse S Athena ($474.99). Neurosity and Emotiv are developer-grade hardware that requires you to bring your own application.',
     },
   ],
   content: `## The short version

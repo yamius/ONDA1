@@ -23,8 +23,8 @@ const mendiVsMuse2: HeadToHead = {
     { name: 'Learning curve', winner: 'a', note: 'Mendi: a single game, no instruction. Muse 2: guided meditations require some practice. Mendi is easier to start.' },
     { name: 'Content library', winner: 'b', note: 'Muse: mature library — calm, focus, breath, body-scan, mood. Mendi: a single game-based programme.' },
     { name: 'Comfort', winner: 'a', note: 'Mendi: simple forehead band, easy on/off. Muse 2: rigid headband. Mendi wins on daily-wear convenience.' },
-    { name: 'Subscription model', winner: 'tie', note: 'Both: no mandatory subscription, full features with hardware purchase.' },
-    { name: 'Price', winner: 'b', note: 'Mendi: $379 list (often discounted). Muse 2: $249. Muse is cheaper.' },
+    { name: 'Subscription model', winner: 'tie', note: 'Both: no mandatory subscription. Muse 2’s AI coach, cognitive tracking, external audio and curated programs need Muse Premium.' },
+    { name: 'Price', winner: 'b', note: 'Mendi: $379 list (often discounted). Muse 2: $249.99. Muse is cheaper.' },
   ],
   faq: [
     {
@@ -57,7 +57,7 @@ If you want the simplest possible neurofeedback experience — a single forehead
 If meditation is the use case, Muse 2 is the right shape — four-channel EEG, decade-old ecosystem, mature meditation library. The content library alone is reason enough.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-04',
 }
 
 export default mendiVsMuse2

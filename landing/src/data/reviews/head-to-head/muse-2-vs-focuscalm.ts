@@ -24,7 +24,7 @@ const muse2VsFocuscalm: HeadToHead = {
     { name: 'Ecosystem maturity', winner: 'a', note: 'Muse: decade of releases, large community, third-party Muse Direct for raw data. FocusCalm: newer, narrower ecosystem.' },
     { name: 'Subscription model', winner: 'a', note: 'Muse 2: no mandatory subscription, full core features with hardware. FocusCalm: optional FocusCalm Plus subscription gates premium content.' },
     { name: 'Comfort', winner: 'b', note: 'FocusCalm: soft headband, comfortable for daily use. Muse 2: rigid band, comfortable for sit-up sessions only. FocusCalm wins on daily wearability.' },
-    { name: 'Price', winner: 'b', note: 'FocusCalm: $199. Muse 2: $249. FocusCalm is marginally cheaper at the entry tier.' },
+    { name: 'Price', winner: 'b', note: 'FocusCalm: $199. Muse 2: $249.99. FocusCalm is marginally cheaper at the entry tier.' },
   ],
   faq: [
     {
@@ -57,7 +57,7 @@ If you want the most mature consumer EEG meditation experience for under $250 �
 If focus and calm training is the specific use case, the softer headband matters for daily-wear comfort, and the $50 price difference shifts your decision — FocusCalm is fine. Just go in aware that single-channel EEG limits the analytical depth compared with Muse’s four channels.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-05-22',
+  dateModified: '2026-10-04',
 }
 
 export default muse2VsFocuscalm

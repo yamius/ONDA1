@@ -20,30 +20,31 @@ const muse2: ToolReview = {
     { criterionId: 'comfort', score: 7.0, note: 'Rigid headband — comfortable for 10–20 minute meditation sessions but not designed for overnight wear.' },
     { criterionId: 'app-ux', score: 8.0, note: 'Polished iOS/Android app; mature ecosystem with Apple Health integration. UI shows its age in places.' },
     { criterionId: 'open-data', score: 6.5, note: 'Raw-EEG export available via Muse Direct (third-party); first-party SDK limited.' },
-    { criterionId: 'value', score: 8.5, note: '$249 hardware, no mandatory subscription — the most cost-effective entry into real consumer EEG meditation feedback.' },
+    { criterionId: 'value', score: 8.5, note: '$249.99 hardware, no mandatory subscription for core meditation feedback (Muse Premium adds the AI coach, cognitive tracking and programs) — the most cost-effective entry into real consumer EEG meditation feedback.' },
   ],
   pros: [
     'The most popular consumer EEG headband — mature ecosystem and community',
     'Lowest price among genuinely-EEG meditation devices',
-    'No mandatory subscription — full features with the device',
+    'No mandatory subscription — core meditation feedback, heart rate, breath and posture work without one',
     'Heart-rate plus EEG signal in one device',
   ],
   cons: [
     'No sleep tracking — that is the Athena upgrade',
     'Older hardware than Muse S Athena (no fNIRS, no overnight wear)',
     'Limited developer SDK',
+    'Enso AI coach, cognitive performance tracking, external audio and curated programs need Muse Premium',
     'Rigid band less comfortable than soft-band alternatives',
   ],
   bestFor: 'Best for first-time EEG meditation users who want the most mature consumer device at an accessible price.',
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — scored from Interaxon product documentation, published Muse EEG validation literature and independent 2026 reviews. Not hands-on tested by ONDA.',
-  price: { usd: 249, note: 'one-time; no mandatory subscription', asOf: '2026-05-21' },
+  price: { usd: 249.99, note: 'headband only; core meditation feedback works without a subscription — the AI coach, cognitive tracking, external audio and curated programs need Muse Premium', asOf: '2026-10-04' },
   link: 'https://choosemuse.com/products/muse-2',
   linkType: 'official',
   content: `## Where it leads
 
-Muse 2 is the device that taught the consumer EEG market what good looks like. The four dry electrodes are not research-grade but they are adequate; the meditation content library is the deepest in the consumer space; the app has been polished through more than a decade of iteration. At $249 it is the cheapest legitimate EEG meditation headband on the market that still has a real ecosystem behind it.
+Muse 2 is the device that taught the consumer EEG market what good looks like. The four dry electrodes are not research-grade but they are adequate; the meditation content library is the deepest in the consumer space; the app has been polished through more than a decade of iteration. At $249.99 it is the cheapest legitimate EEG meditation headband on the market that still has a real ecosystem behind it.
 
 ## What are the downsides of Muse 2?
 
@@ -70,9 +71,9 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
   relatedSlugs: ['muse-s-athena', 'focuscalm', 'neurosity-crown'],
   faq: [
     { q: "Is the Muse 2 worth it?", a: "The Muse 2 is worth it for first-time EEG meditation users. It is the most popular consumer EEG headband, with a mature ecosystem, the lowest price among genuinely EEG meditation devices, heart rate plus EEG in one device, and no mandatory subscription. It does not track sleep." },
-    { q: "How much does the Muse 2 cost?", a: "The Muse 2 is listed at $249 one-time, with no mandatory subscription, so full features come with the device. That is the lowest price among genuinely EEG-based meditation devices in the review. It also combines heart rate and EEG sensing in one band." },
+    { q: "How much does the Muse 2 cost?", a: "The Muse 2 is listed at $249.99 for the headband. Core meditation feedback, heart rate, breath and posture detection work without a subscription; the Enso AI coach, cognitive performance tracking, external audio (Spotify, Calm, Headspace) and curated programs need Muse Premium. That is the lowest price among genuinely EEG-based meditation devices in the review. It also combines heart rate and EEG sensing in one band." },
     { q: "What are the downsides of the Muse 2?", a: "The Muse 2 has no sleep tracking, older hardware than the Muse S Athena with no fNIRS or overnight wear, a limited developer SDK, and a rigid band that is less comfortable than soft-band alternatives." },
-    { q: "Muse 2 vs Muse S Athena: which is better?", a: "Choose the Muse 2 for the cheapest entry into EEG meditation at $249. Choose the Muse S Athena at $474.99 if you want sleep tracking, fNIRS and a soft band comfortable enough for overnight wear, since the Muse 2 lacks all three." },
+    { q: "Muse 2 vs Muse S Athena: which is better?", a: "Choose the Muse 2 for the cheapest entry into EEG meditation at $249.99. Choose the Muse S Athena at $474.99 if you want sleep tracking, fNIRS and a soft band comfortable enough for overnight wear, since the Muse 2 lacks all three." },
   ],
   datePublished: '2026-05-21',
   dateModified: '2026-10-04',

@@ -75,7 +75,7 @@ No. It is a consumer and developer device, not an FDA-cleared medical device. It
 |---|---|---|---|
 | **Neurosity Crown** | $1,499 | 8 dry EEG channels | developers, raw data, focus |
 | [Muse S Athena](/reviews/muse-s-athena) | $474.99 | EEG + fNIRS, soft band | meditation, sleep |
-| [Muse 2](/reviews/muse-2) | $249 | 4 EEG sensors | meditation on a budget |
+| [Muse 2](/reviews/muse-2) | $249.99 | 4 EEG sensors | meditation on a budget |
 | [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 | 5 EEG channels | research tools (raw data needs Pro, ~$99/yr) |
 
 Head-to-heads: [Neurosity Crown vs Emotiv Insight 2](/reviews/vs/neurosity-crown-vs-emotiv-insight-2) and [Muse S Athena vs Muse 2 vs Neurosity Crown](/reviews/vs/muse-s-athena-vs-muse-2-vs-neurosity-crown).

@@ -27,7 +27,7 @@ const threeEeg: HeadToHead = {
     { name: 'Developer / SDK access', winner: 'c', note: 'Crown: open JavaScript/Python SDK (plus BrainFlow/LSL) with raw EEG, no subscription. Muse 2 and Athena: closed first-party SDK; raw access via third-party Muse Direct only.' },
     { name: 'Subscription model', winner: 'tie', note: 'All three: no mandatory subscription. Muse core features work without one, but Smart Wakeup, the AI coach and curated programs need Muse Premium; Crown includes everything.' },
     { name: 'Comfort and form factor', winner: 'a', note: 'Muse S Athena: soft fabric band, overnight-friendly. Muse 2: rigid band, sit-up only. Crown: rigid crown, sit-up only.' },
-    { name: 'Hardware price', winner: 'b', note: 'Muse 2: $249. Muse S Athena: $474.99. Neurosity Crown: $1,499. Muse 2 is cheapest by a wide margin.' },
+    { name: 'Hardware price', winner: 'b', note: 'Muse 2: $249.99. Muse S Athena: $474.99. Neurosity Crown: $1,499. Muse 2 is cheapest by a wide margin.' },
   ],
   faq: [
     {

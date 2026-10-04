@@ -27,7 +27,7 @@ const muse2VsFocusCalmVsMendi: HeadToHead = {
     { name: 'Ease of starting', winner: 'c', note: 'Mendi: a single game, no instruction needed. FocusCalm: structured programme requires some setup. Muse: meditation requires practice.' },
     { name: 'Comfort', winner: 'b', note: 'FocusCalm: soft headband, comfortable daily wear. Mendi: simple forehead band. Muse 2: rigid headband, sit-up only. FocusCalm wins on comfort.' },
     { name: 'Subscription model', winner: 'a', note: 'Muse 2: no mandatory subscription. FocusCalm: optional FocusCalm Plus. Mendi: no subscription. Muse and Mendi tie; FocusCalm gates premium content.' },
-    { name: 'Price', winner: 'b', note: 'FocusCalm: $199. Muse 2: $249. Mendi: $379 list (often discounted). FocusCalm cheapest; Mendi most expensive.' },
+    { name: 'Price', winner: 'b', note: 'FocusCalm: $199. Muse 2: $249.99. Mendi: $379 list (often discounted). FocusCalm cheapest; Mendi most expensive.' },
   ],
   faq: [
     {

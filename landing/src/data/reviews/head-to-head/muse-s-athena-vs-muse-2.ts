@@ -8,7 +8,7 @@ const museSAthenaVsMuse2: HeadToHead = {
   description:
     'Muse S Athena vs Muse 2 — side-by-side ONDA comparison of the two Muse EEG headbands. The newer Athena adds fNIRS and sleep tracking at about twice the price.',
   intro:
-    'Muse 2 and Muse S Athena are the same brand’s entry and flagship — both four-channel dry EEG meditation headbands from Interaxon, both sharing the same mature content library. The Athena is the 2024 upgrade: it adds prefrontal fNIRS sensing, overnight sleep tracking and a soft sleep-friendly band, at roughly twice the price. The question is whether those additions are worth $250 to you.',
+    'Muse 2 and Muse S Athena are the same brand’s entry and flagship — both four-channel dry EEG meditation headbands from Interaxon, both sharing the same mature content library. The Athena is the 2024 upgrade: it adds prefrontal fNIRS sensing, overnight sleep tracking and a soft sleep-friendly band, at roughly twice the price. The question is whether those additions are worth about $225 to you.',
   winnerSlug: 'muse-s-athena',
   verdict:
     'Muse S Athena wins overall — it does everything Muse 2 does, adds sleep tracking and fNIRS, and is the only Muse you can wear comfortably overnight. Muse 2 wins only on price.',
@@ -24,7 +24,7 @@ const museSAthenaVsMuse2: HeadToHead = {
     { name: 'Meditation content library', winner: 'tie', note: 'Both share the same mature meditation library — calm, focus, breath, body-scan, mood.' },
     { name: 'App and ecosystem', winner: 'tie', note: 'Same app, same Apple Health/Google Fit integration; Athena gets slightly more polish in the newest features.' },
     { name: 'Developer SDK access', winner: 'tie', note: 'Both: raw EEG via the third-party Muse Direct app; first-party SDK is limited on both.' },
-    { name: 'Price', winner: 'b', note: 'Muse 2: $249 one-time. Muse S Athena: $474.99 one-time. Muse 2 is about half the price.' },
+    { name: 'Price', winner: 'b', note: 'Muse 2: $249.99 one-time. Muse S Athena: $474.99 one-time. Muse 2 is about half the price.' },
   ],
   faq: [
     {
