@@ -145,7 +145,7 @@ evidenceMap:
     sources: [S4]
     class: context-dependent
     limitation: "Observational data in healthy samples; group averages, not individual expectations."
-  - claim: "Everyday factors such as a late workout, an evening drink or illness can shift a single night's reading."
+  - claim: "Day-to-day conditions can shift a single reading, which is why repeated measurements under comparable conditions are recommended."
     sources: [S2, S8]
     class: context-dependent
     limitation: "Individual responses vary; effect sizes are person- and dose-dependent and are not quantified here."
@@ -204,7 +204,7 @@ The context is part of the measurement. RMSSD depends on posture, breathing, tim
 - Sex. Studies report differences between women and men, with the direction and size depending on age and population [S4].
 - Breathing. The dominant short-term driver, through respiratory sinus arrhythmia: breathing rate and depth during the recording change the value [S2, S3].
 - Conditions. Posture, time of day, and sleep versus waking all change what the same heart does during the measurement [S5, S8].
-- Everyday factors. A late workout, an evening drink, caffeine late in the day, or illness can shift a single night's reading [S2, S8].
+- Day-to-day conditions. A single reading can shift from one day or night to the next, which is why repeated measurements under comparable conditions are recommended [S2, S8].
 
 ## What does the evidence show?
 
