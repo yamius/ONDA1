@@ -211,6 +211,7 @@ export const ARTICLE_PRIMARY_TOPIC: Record<string, PrimaryTopicSlug> = {
   "dopamine-architecture-mastering-desire": "lifestyle",
   "dysautonomia-long-covid-breathing": "breathing",
   "eating-late-heart-rate-sleep": "lifestyle",
+  "why-is-my-apple-watch-hrv-low": "hrv-heart-rate",
   "world-mental-health-day-2026-lived-experience": "stress-vagus",
   "electric-medicine-neuromodulation": "stress-vagus",
   "endocrine-social-drive-oxytocin-testosterone": "heart-fitness-metabolism",

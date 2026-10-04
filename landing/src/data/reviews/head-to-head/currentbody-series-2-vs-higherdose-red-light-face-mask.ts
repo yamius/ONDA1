@@ -8,7 +8,7 @@ const currentbodyVsHigherDose: HeadToHead = {
   description:
     'CurrentBody Series 2 vs HigherDOSE — consumer market leader with neck flap vs HigherDOSE-ecosystem polished UX. ONDA breaks down the consumer-tier silicone duel.',
   intro:
-    'CurrentBody Series 2 and HigherDOSE Red Light Face Mask are the two consumer-brand flexible-silicone masks users compare. Both deliver red 633 nm + near-infrared 830 nm at consumer-friendly prices. The defining difference: CurrentBody is the market-share leader with integrated neck flap; HigherDOSE is the polished consumer-brand with ecosystem crossover.',
+    'CurrentBody Series 2 and HigherDOSE Red Light Face Mask are the two consumer-brand flexible-silicone masks users compare. Both pair red and near-infrared light (HigherDOSE: 630 nm + 830 nm) at consumer-friendly prices. The defining difference: CurrentBody is the market-share leader with integrated neck flap; HigherDOSE is the polished consumer-brand with ecosystem crossover.',
   winnerSlug: 'currentbody-series-2',
   verdict:
     'CurrentBody Series 2 wins on integrated neck flap, higher LED dose and market-feedback refinement. HigherDOSE wins on price and HigherDOSE-ecosystem fit.',
@@ -17,12 +17,12 @@ const currentbodyVsHigherDose: HeadToHead = {
   bestForB:
     'Choose HigherDOSE Red Light Face Mask if you want polished consumer-brand UX in the HigherDOSE ecosystem at lower price.',
   axes: [
-    { name: 'LED dose', winner: 'a', note: 'CurrentBody: higher LED count and irradiance. HigherDOSE: modest irradiance designed for daily light-touch use.' },
+    { name: 'LED dose', winner: 'a', note: 'CurrentBody: higher LED count and irradiance. HigherDOSE: 132 diodes at a brand-stated 50 mW/cm² total (630 nm 26 + 830 nm 24), 10- or 20-minute sessions.' },
     { name: 'Neck coverage', winner: 'a', note: 'CurrentBody: integrated neck flap. HigherDOSE: face only, no neck.' },
-    { name: 'Wavelength coverage', winner: 'tie', note: 'Both use red 633 nm + near-infrared 830 nm — same clinical pair.' },
+    { name: 'Wavelength coverage', winner: 'tie', note: 'Both use the standard red + near-infrared 830 nm pair (HigherDOSE red at 630 nm).' },
     { name: 'Brand ecosystem', winner: 'b', note: 'HigherDOSE: pairs with HigherDOSE PEMF mat, sauna blanket. CurrentBody: red-light specialist without broader recovery-hardware crossover.' },
     { name: 'Consumer market scale', winner: 'a', note: 'CurrentBody: largest red-light-mask customer base. HigherDOSE: smaller red-light footprint despite strong overall brand.' },
-    { name: 'Price', winner: 'b', note: 'HigherDOSE: $345. CurrentBody: $470. HigherDOSE meaningfully cheaper.' },
+    { name: 'Price', winner: 'b', note: 'HigherDOSE: $349. CurrentBody: $470. HigherDOSE meaningfully cheaper.' },
   ],
   faq: [
     {
@@ -35,11 +35,11 @@ const currentbodyVsHigherDose: HeadToHead = {
     },
     {
       q: 'Does the HigherDOSE ecosystem matter?',
-      a: 'For users already on HigherDOSE PEMF mat or sauna blanket — yes, app integration and brand coordination add value. For users buying a single device, the ecosystem premium is not material.',
+      a: 'For users already on HigherDOSE PEMF mat or sauna blanket — yes, brand coordination adds some value (the mask runs from its own controller, with no app). For users buying a single device, the ecosystem premium is not material.',
     },
     {
       q: 'Total cost comparison?',
-      a: 'HigherDOSE: $345 one-time. CurrentBody Series 2 with neck flap: $470 one-time. Neither has subscription. HigherDOSE is ~$125 cheaper for face-only; CurrentBody adds neck coverage you can\'t add to HigherDOSE.',
+      a: 'HigherDOSE: $349 one-time. CurrentBody Series 2 with neck flap: $470 one-time. Neither has subscription. HigherDOSE is ~$120 cheaper for face-only; CurrentBody adds neck coverage you can\'t add to HigherDOSE.',
     },
   ],
   content: `## The short version
@@ -56,7 +56,7 @@ If you want polished consumer-brand UX in the HigherDOSE ecosystem (paired with 
   relatedComparisonSlug: 'best-red-light-face-masks-2026',
   publishOn: '2026-07-06',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-04',
 }
 
 export default currentbodyVsHigherDose

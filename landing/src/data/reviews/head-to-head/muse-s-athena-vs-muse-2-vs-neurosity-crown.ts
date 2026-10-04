@@ -25,9 +25,9 @@ const threeEeg: HeadToHead = {
     { name: 'Sleep tracking', winner: 'a', note: 'Muse S Athena: only EEG headset designed for overnight wear with sleep staging. Muse 2 and Crown: not designed for sleep.' },
     { name: 'Meditation content library', winner: 'tie', note: 'Athena and Muse 2 share the same mature meditation library after a decade of iteration. Crown has no first-party meditation content.' },
     { name: 'Developer / SDK access', winner: 'c', note: 'Crown: open JavaScript/Python SDK (plus BrainFlow/LSL) with raw EEG, no subscription. Muse 2 and Athena: closed first-party SDK; raw access via third-party Muse Direct only.' },
-    { name: 'Subscription model', winner: 'tie', note: 'All three: no mandatory subscription. Full features ship with the hardware.' },
+    { name: 'Subscription model', winner: 'tie', note: 'All three: no mandatory subscription. Muse core features work without one, but Smart Wakeup, the AI coach and curated programs need Muse Premium; Crown includes everything.' },
     { name: 'Comfort and form factor', winner: 'a', note: 'Muse S Athena: soft fabric band, overnight-friendly. Muse 2: rigid band, sit-up only. Crown: rigid crown, sit-up only.' },
-    { name: 'Hardware price', winner: 'b', note: 'Muse 2: $249. Muse S Athena: $499. Neurosity Crown: $1,499. Muse 2 is cheapest by a wide margin.' },
+    { name: 'Hardware price', winner: 'b', note: 'Muse 2: $249. Muse S Athena: $474.99. Neurosity Crown: $1,499. Muse 2 is cheapest by a wide margin.' },
   ],
   faq: [
     {
@@ -36,7 +36,7 @@ const threeEeg: HeadToHead = {
     },
     {
       q: 'Should I get Muse 2 or Muse S Athena?',
-      a: 'Athena if you want sleep tracking — it is the only Muse comfortable for overnight wear and the fNIRS sensor fusion is unique. Muse 2 if meditation is the only use case and $250 saved matters.',
+      a: 'Athena if you want sleep tracking — it is the only Muse comfortable for overnight wear and the fNIRS sensor fusion is unique. Muse 2 if meditation is the only use case and saving about $225 matters.',
     },
     {
       q: 'Is Neurosity Crown overkill for meditation?',
@@ -61,14 +61,14 @@ For users who want one consumer device handling meditation, focus and sleep with
 
 ## When is Muse 2 the right pick?
 
-For users who want a real EEG meditation headband at the entry-tier price, Muse 2 is the right shape. Same four-channel EEG and same content library as Athena; no sleep tracking, rigid band, $250 cheaper.
+For users who want a real EEG meditation headband at the entry-tier price, Muse 2 is the right shape. Same four-channel EEG and same content library as Athena; no sleep tracking, rigid band, about $225 cheaper.
 
 ## When is Neurosity Crown the right pick?
 
 For developers, researchers and biohackers who want raw EEG over an open SDK with no subscription gate, Crown is the right shape. Eight dry electrodes — more cortical coverage than Muse — plus JavaScript/Python APIs plus BrainFlow/LSL out of the box. The trade is the absence of consumer content; bring your own application.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default threeEeg

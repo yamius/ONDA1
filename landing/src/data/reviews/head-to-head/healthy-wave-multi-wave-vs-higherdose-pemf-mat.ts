@@ -17,21 +17,21 @@ const healthyWaveVsHigherDose: HeadToHead = {
   bestForB:
     'Choose HigherDOSE PEMF Mat if you want polished consumer UX with multi-modality recovery and you accept lighter PEMF technical depth.',
   axes: [
-    { name: 'PEMF intensity', winner: 'a', note: 'Healthy Wave: configurable across documented PEMF research range. HigherDOSE: modest single-Schumann intensity. Healthy Wave wins on raw PEMF capability.' },
-    { name: 'PEMF programmability', winner: 'a', note: 'Healthy Wave: real parameter exposure (waveform, frequency, intensity). HigherDOSE: single Schumann frequency with intensity steps only.' },
-    { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + far-infrared + crystals (amethyst, tourmaline). Comparable modality coverage.' },
-    { name: 'Consumer UX', winner: 'b', note: 'HigherDOSE: polished app, premium consumer branding, easier daily use. Healthy Wave: more parameters = more setup friction.' },
-    { name: 'Warranty', winner: 'a', note: 'Healthy Wave: 5-year limited warranty plus 90-day trial. HigherDOSE: 1-year warranty. Healthy Wave significantly better.' },
+    { name: 'PEMF intensity', winner: 'a', note: 'Healthy Wave: configurable across documented PEMF research range. HigherDOSE: modest intensity across 4 preset levels (3–23 Hz). Healthy Wave wins on raw PEMF capability.' },
+    { name: 'PEMF programmability', winner: 'a', note: 'Healthy Wave: real parameter exposure (waveform, frequency, intensity). HigherDOSE: 4 preset frequency levels (3–23 Hz), no custom parameters.' },
+    { name: 'Modality stack', winner: 'tie', note: 'Both stack PEMF + infrared + crystals (HigherDOSE: about 20 lb of amethyst and obsidian). Comparable modality coverage.' },
+    { name: 'Consumer UX', winner: 'b', note: 'HigherDOSE: simple preset controls, premium consumer branding, easier daily use. Healthy Wave: more parameters = more setup friction.' },
+    { name: 'Warranty', winner: 'a', note: 'Healthy Wave: 5-year limited warranty plus 90-day trial. HigherDOSE: 1-year warranty plus 120-day money-back guarantee. Healthy Wave significantly better on warranty.' },
     { name: 'Price', winner: 'b', note: 'HigherDOSE: $1,295. Healthy Wave: $995–$2,495 by size (full-size Pro $2,495). At full size, HigherDOSE is meaningfully cheaper for consumer-tier multi-modality.' },
   ],
   faq: [
     {
       q: 'Healthy Wave or HigherDOSE — which is better?',
-      a: 'For PEMF-first buyers, Healthy Wave — higher intensity, real parameter control, 5-year warranty. For UX-first consumer-brand buyers, HigherDOSE — polished app, cheaper, easier daily use, shorter warranty.',
+      a: 'For PEMF-first buyers, Healthy Wave — higher intensity, real parameter control, 5-year warranty. For UX-first consumer-brand buyers, HigherDOSE — simple controls, cheaper, easier daily use, shorter warranty.',
     },
     {
       q: 'Is HigherDOSE PEMF "real"?',
-      a: 'Yes — uses Schumann 7.83 Hz frequency which is well-documented. But it\'s a single fixed frequency at modest intensity — light by PEMF technical standards. The mat is real PEMF; it\'s just not deep PEMF.',
+      a: 'Yes — it runs PEMF at 3–23 Hz across 4 preset levels (delta to beta bands), ranges documented in the literature. But it offers only presets at modest intensity — light by PEMF technical standards. The mat is real PEMF; it\'s just not deep PEMF.',
     },
     {
       q: 'Which is better for recovery?',
@@ -56,7 +56,7 @@ If you want a polished consumer recovery experience at lower price — HigherDOS
   relatedComparisonSlug: 'best-pemf-devices-2026',
   publishOn: '2026-06-22',
   datePublished: '2026-05-27',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default healthyWaveVsHigherDose

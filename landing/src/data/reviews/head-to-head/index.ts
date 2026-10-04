@@ -64,6 +64,7 @@ import muse2VsFocuscalm from './muse-2-vs-focuscalm'
 import headspaceVsCalm from './headspace-vs-calm'
 import headspaceVsWakingUp from './headspace-vs-waking-up'
 import calmVsInsightTimer from './calm-vs-insight-timer'
+import meditoVsInsightTimer from './medito-vs-insight-timer'
 import balanceVsHeadspace from './balance-vs-headspace'
 import balanceVsCalm from './balance-vs-calm'
 import calmVsWakingUp from './calm-vs-waking-up'
@@ -78,6 +79,8 @@ import threeRings from './oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2'
 import threeCgm from './levels-vs-nutrisense-vs-stelo'
 import threeOtcCgm from './lingo-vs-stelo-vs-ultrahuman-m1'
 import threeEeg from './muse-s-athena-vs-muse-2-vs-neurosity-crown'
+import museAthenaVsCrown from './muse-s-athena-vs-neurosity-crown'
+import omniluxVsHigherdoseMask from './omnilux-contour-face-vs-higherdose-red-light-face-mask'
 import threeMeditation from './headspace-vs-calm-vs-insight-timer'
 import threeVagusForms from './apollo-neuro-vs-sensate-vs-hoolest-verelief-prime'
 import threeCervical from './gammacore-sapphire-cv-vs-truvaga-350-vs-pulsetto'
@@ -164,6 +167,7 @@ import bemerVsPulseCenters from './bemer-classic-evo-vs-pulse-centers-pulse-xl-p
 import healthyWaveVsHigherDose from './healthy-wave-multi-wave-vs-higherdose-pemf-mat'
 import imrsVsOmi from './imrs-prime-vs-omi-full-body-mat'
 import resonaVsOlylife from './resona-health-vibe-vs-olylife-tera-p90-plus'
+import resonaVsHigherDose from './resona-health-vibe-vs-higherdose-pemf-mat'
 import bemerVsHealthyWaveVsPulse from './bemer-classic-evo-vs-healthy-wave-multi-wave-vs-pulse-centers-pulse-xl-pro'
 // Breathwork apps (date-gated to 2026-06-29)
 import breathwrkVsOthership from './breathwrk-vs-othership'
@@ -220,6 +224,7 @@ import sensAiVsMuse from './sens-ai-vs-muse-s-athena'
 import mendiVsMuse2 from './mendi-vs-muse-2'
 // Meditation (continued)
 import headspaceVsInsight from './headspace-vs-insight-timer'
+import meditoVsHeadspace from './medito-vs-headspace'
 import healthyMindsVsWakingUp from './healthy-minds-program-vs-waking-up'
 
 /** The full registry — including any future-dated entries. Internal only. */
@@ -233,6 +238,8 @@ export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   threeCgm,
   threeOtcCgm,
   threeEeg,
+  museAthenaVsCrown,
+  omniluxVsHigherdoseMask,
   threeMeditation,
   threeSleep,
   // HRV
@@ -293,10 +300,12 @@ export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   headspaceVsCalm,
   headspaceVsWakingUp,
   calmVsInsightTimer,
+  meditoVsInsightTimer,
   balanceVsHeadspace,
   balanceVsCalm,
   calmVsWakingUp,
   headspaceVsInsight,
+  meditoVsHeadspace,
   healthyMindsVsWakingUp,
   // Sleep
   sleepCycleVsSleepAsAndroid,
@@ -387,6 +396,7 @@ export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   healthyWaveVsHigherDose,
   imrsVsOmi,
   resonaVsOlylife,
+  resonaVsHigherDose,
   bemerVsHealthyWaveVsPulse,
   // Breathwork apps (date-gated to 2026-06-29)
   breathwrkVsOthership,

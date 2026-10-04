@@ -17,14 +17,14 @@ const headspaceVsInsight: HeadToHead = {
   bestForB:
     'Choose Insight Timer if you want the largest free meditation library on the market — thousands of teachers, a real free tier, an optional paid layer for premium courses.',
   axes: [
-    { name: 'Free-tier depth', winner: 'b', note: 'Insight Timer: most of the 300,000+ meditation library is genuinely free. Headspace: thin free sample funnelling to subscription. Insight Timer wins overwhelmingly.' },
-    { name: 'Library size', winner: 'b', note: 'Insight Timer: 300,000+ meditations across thousands of teachers. Headspace: curated library, much smaller.' },
+    { name: 'Free-tier depth', winner: 'b', note: 'Insight Timer: most of the 360,000+ meditation library is genuinely free. Headspace: thin free sample funnelling to subscription. Insight Timer wins overwhelmingly.' },
+    { name: 'Library size', winner: 'b', note: 'Insight Timer: 360,000+ meditations across thousands of teachers. Headspace: curated library, much smaller.' },
     { name: 'Structured curriculum', winner: 'a', note: 'Headspace’s Basics course is the strongest beginner curriculum in the category. Insight Timer has courses but the library is search-driven and non-linear.' },
     { name: 'Teaching quality consistency', winner: 'a', note: 'Headspace: small core team, consistent voice. Insight Timer: open-teacher model, quality varies wildly.' },
     { name: 'Top-tier named teachers', winner: 'b', note: 'Insight Timer: Tara Brach, Jack Kornfield, Sharon Salzberg and other premier teachers — all accessible at no cost. Headspace: smaller named-teacher roster.' },
     { name: 'Community features', winner: 'b', note: 'Insight Timer: groups, live events, courses, a real community layer. Headspace: content-only.' },
     { name: 'Personalisation', winner: 'a', note: 'Headspace: structured daily recommendations and progression. Insight Timer: search-driven, less algorithmic.' },
-    { name: 'Price', winner: 'b', note: 'Insight Timer: genuinely free + optional MemberPlus ($59.99/year or $9.99/month). Headspace: ~$70/year subscription required for most content. Insight Timer is cheaper at every tier.' },
+    { name: 'Price', winner: 'b', note: 'Insight Timer: genuinely free + optional Member Plus (US$60/year, 7-day free trial). Headspace: ~$70/year subscription required for most content. Insight Timer is cheaper at every tier.' },
   ],
   faq: [
     {
@@ -33,7 +33,7 @@ const headspaceVsInsight: HeadToHead = {
     },
     {
       q: 'Is Insight Timer actually free?',
-      a: 'Yes — the majority of its 300,000+ library is genuinely free with no time gate. MemberPlus ($59.99/year or $9.99/month) unlocks premium courses and offline downloads; the free tier is enough for most users.',
+      a: 'Yes — the majority of its 360,000+ library is genuinely free with no time gate. Member Plus (US$60/year, 7-day free trial) unlocks premium courses and offline downloads; the free tier is enough for most users.',
     },
     {
       q: 'Which is better for beginners?',
@@ -57,7 +57,7 @@ If you want a structured introduction to mindfulness with a clear curriculum and
 If you want the largest free meditation library on the market — access to Tara Brach, Jack Kornfield and thousands of other teachers at no cost — Insight Timer is the right shape. The free tier is genuinely free; Member Plus is optional.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-04',
 }
 
 export default headspaceVsInsight

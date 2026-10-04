@@ -41,7 +41,7 @@ const neurosityVsEmotiv: HeadToHead = {
     },
     {
       q: 'Can either headset be used for meditation?',
-      a: 'Both can, but neither is the right tool for that job. The consumer meditation experience belongs to Muse — Muse 2 ($249) or Muse S Athena ($499). Neurosity and Emotiv are developer-grade hardware that requires you to bring your own application.',
+      a: 'Both can, but neither is the right tool for that job. The consumer meditation experience belongs to Muse — Muse 2 ($249) or Muse S Athena ($474.99). Neurosity and Emotiv are developer-grade hardware that requires you to bring your own application.',
     },
   ],
   content: `## The short version
@@ -57,7 +57,7 @@ If you want to build something on top of EEG — a focus app, a productivity too
 If you are running academic-style analysis and want to cite the EmotivPRO toolchain in your work, Emotiv is the right shape. The five-channel hardware is good enough for most cortical-region work, the live cognitive metrics are broader than Neurosity’s, and the Pro subscription is acceptable when academic-toolchain depth is the value you are paying for.`,
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default neurosityVsEmotiv

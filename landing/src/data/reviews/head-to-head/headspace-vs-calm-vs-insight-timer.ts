@@ -20,15 +20,15 @@ const threeMeditation: HeadToHead = {
   bestForC:
     'Choose Insight Timer if you want the largest free meditation library on the market — thousands of teachers including Tara Brach and Jack Kornfield, real free tier.',
   axes: [
-    { name: 'Free-tier depth', winner: 'c', note: 'Insight Timer: most of the 300,000+ library is genuinely free. Headspace and Calm: thin free samples funneling to subscription.' },
-    { name: 'Library size', winner: 'c', note: 'Insight Timer: 300,000+ meditations across thousands of teachers. Calm: a curated library. Headspace: the smallest, most focused.' },
+    { name: 'Free-tier depth', winner: 'c', note: 'Insight Timer: most of the 360,000+ library is genuinely free. Headspace and Calm: thin free samples funneling to subscription.' },
+    { name: 'Library size', winner: 'c', note: 'Insight Timer: 360,000+ meditations across thousands of teachers. Calm: a curated library. Headspace: the smallest, most focused.' },
     { name: 'Structured curriculum', winner: 'a', note: 'Headspace’s Basics course is the strongest beginner curriculum in the category. Calm and Insight Timer are more exploratory.' },
     { name: 'Teaching quality consistency', winner: 'a', note: 'Headspace: small team, consistent voice. Calm: curated but multiple narrators. Insight Timer: open-teacher model, variable quality.' },
     { name: 'Sleep content', winner: 'b', note: 'Calm: Sleep Stories are category-leading, celebrity-narrated. Headspace and Insight Timer have sleep content but it is secondary.' },
     { name: 'Community features', winner: 'c', note: 'Insight Timer: groups, live events, courses, real community layer. Headspace and Calm: content-only.' },
     { name: 'Personalisation', winner: 'a', note: 'Headspace: structured daily-recommendation engine. Calm: similar. Insight Timer: search-driven, less algorithmic.' },
     { name: 'Top-tier independent teachers', winner: 'c', note: 'Insight Timer hosts Tara Brach, Jack Kornfield, Sharon Salzberg — premier teachers accessible at no cost. Calm and Headspace have in-house teachers.' },
-    { name: 'Price', winner: 'c', note: 'Insight Timer: genuinely free + optional MemberPlus at $59.99/yr or $9.99/mo. Headspace: ~$70/yr. Calm: $79.99/yr. Insight Timer is cheapest at every tier.' },
+    { name: 'Price', winner: 'c', note: 'Insight Timer: genuinely free + optional Member Plus at US$60/yr, 7-day free trial. Headspace: ~$70/yr. Calm: $79.99/yr. Insight Timer is cheapest at every tier.' },
   ],
   faq: [
     {
@@ -37,7 +37,7 @@ const threeMeditation: HeadToHead = {
     },
     {
       q: 'Is Insight Timer really free?',
-      a: 'Yes — the majority of its 300,000+ library is genuinely free with no time gate. MemberPlus ($59.99/year or $9.99/month) unlocks premium courses and offline downloads, but the free tier is enough for most users.',
+      a: 'Yes — the majority of its 360,000+ library is genuinely free with no time gate. Member Plus (US$60/year, 7-day free trial) unlocks premium courses and offline downloads, but the free tier is enough for most users.',
     },
     {
       q: 'Which is best for sleep?',
@@ -69,7 +69,7 @@ If sleep content matters as much as meditation, or you respond to celebrity narr
 If you want the largest free meditation library on the market — and access to premier teachers (Tara Brach, Jack Kornfield, Sharon Salzberg) at no cost — Insight Timer is the right shape. The free tier is genuinely free; the optional Member Plus is cheaper than the other two.`,
   relatedComparisonSlug: 'best-meditation-apps-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-04',
 }
 
 export default threeMeditation

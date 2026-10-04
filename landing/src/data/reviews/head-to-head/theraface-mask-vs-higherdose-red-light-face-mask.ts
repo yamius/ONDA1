@@ -17,13 +17,13 @@ const therafaceVsHigherDose: HeadToHead = {
   bestForB:
     'Choose HigherDOSE Red Light Face Mask if you want HigherDOSE-ecosystem coordination (PEMF mat, sauna blanket) at meaningfully lower price.',
   axes: [
-    { name: 'Wavelength coverage', winner: 'a', note: 'TheraFace: three wavelengths (red 633 + blue 415 + amber 590 nm). HigherDOSE: two wavelengths (red 633 + near-infrared 830 nm).' },
+    { name: 'Wavelength coverage', winner: 'a', note: 'TheraFace: three wavelengths (red 633 + blue 415 + amber 590 nm). HigherDOSE: two wavelengths (red 630 + near-infrared 830 nm).' },
     { name: 'Brand pedigree', winner: 'a', note: 'TheraFace: Therabody Theragun brand. HigherDOSE: HigherDOSE biohacker-wellness brand. Both established, different segments.' },
-    { name: 'App / UX', winner: 'a', note: 'TheraFace: app-controlled session protocols. HigherDOSE: polished UX with HigherDOSE app integration. Both consumer-friendly; TheraFace slightly more programmable.' },
+    { name: 'App / UX', winner: 'a', note: 'TheraFace: app-controlled session protocols. HigherDOSE: no app — a rechargeable handheld controller with 10- or 20-minute sessions. Both consumer-friendly; TheraFace more programmable.' },
     { name: 'Comfort', winner: 'tie', note: 'Both flexible-hybrid builds. Comparable comfort; preference varies.' },
     { name: 'Ecosystem fit', winner: 'tie', note: 'TheraFace pairs with TheraFace Pro device + Theragun. HigherDOSE pairs with PEMF mat + sauna blanket. Pick on which ecosystem you already use.' },
-    { name: 'Clinical evidence', winner: 'tie', note: 'Both FDA registered with brand-funded research. Neither matches Omnilux Class II depth.' },
-    { name: 'Price', winner: 'b', note: 'HigherDOSE: $345. TheraFace: $649. HigherDOSE roughly half the price.' },
+    { name: 'Clinical evidence', winner: 'tie', note: 'Both rely on brand-funded research (HigherDOSE says its mask is FDA-cleared). Neither matches Omnilux Class II depth.' },
+    { name: 'Price', winner: 'b', note: 'HigherDOSE: $349. TheraFace: $649. HigherDOSE roughly half the price.' },
   ],
   faq: [
     {
@@ -36,11 +36,11 @@ const therafaceVsHigherDose: HeadToHead = {
     },
     {
       q: 'Which has better consumer UX?',
-      a: 'Both polished. TheraFace is slightly more app-programmable; HigherDOSE is slightly more recovery-experience focused. Preference rather than clear winner.',
+      a: 'Both polished. TheraFace is app-programmable; HigherDOSE has no app and runs from a simple controller. Preference rather than clear winner.',
     },
     {
       q: 'Total ownership cost?',
-      a: 'HigherDOSE: $345 one-time. TheraFace: $649 one-time. Neither has subscription. HigherDOSE saves ~$300 — meaningful unless you specifically want three-wavelength + Therabody ecosystem.',
+      a: 'HigherDOSE: $349 one-time. TheraFace: $649 one-time. Neither has subscription. HigherDOSE saves ~$300 — meaningful unless you specifically want three-wavelength + Therabody ecosystem.',
     },
   ],
   content: `## The short version
@@ -57,7 +57,7 @@ If you want HigherDOSE-ecosystem coordination (PEMF mat, sauna blanket) at meani
   relatedComparisonSlug: 'best-red-light-face-masks-2026',
   publishOn: '2026-07-06',
   datePublished: '2026-05-28',
-  dateModified: '2026-05-28',
+  dateModified: '2026-10-04',
 }
 
 export default therafaceVsHigherDose

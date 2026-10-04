@@ -48,7 +48,7 @@ const muse2VsFocusCalmVsMendi: HeadToHead = {
     },
     {
       q: 'Should I get any of these or upgrade to Muse S Athena?',
-      a: 'If the entry-tier price is a deciding constraint, Muse 2 is the best of these three. If you can flex to $499, Muse S Athena adds sleep tracking and fNIRS — strictly upgraded experience.',
+      a: 'If the entry-tier price is a deciding constraint, Muse 2 is the best of these three. If you can flex to $474.99, Muse S Athena adds sleep tracking and fNIRS — strictly upgraded experience.',
     },
   ],
   content: `## The short version
@@ -69,7 +69,7 @@ If you want the simplest possible neurofeedback experience — single sensor, si
   relatedComparisonSlug: 'best-eeg-headsets-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-04',
 }
 
 export default muse2VsFocusCalmVsMendi

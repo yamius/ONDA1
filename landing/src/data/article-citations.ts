@@ -3338,6 +3338,26 @@ export const ARTICLE_CITATIONS: Record<string, StudyCitation[]> = {
       "url": "https://doi.org/10.1007/s40279-013-0071-8"
     }
   ],
+  "why-is-my-apple-watch-hrv-low": [
+    {
+      "title": "Short-Term Heart Rate Variability—Influence of Gender and Age in Healthy Subjects",
+      "authors": "Voss A et al.",
+      "year": 2015,
+      "journal": "PLOS ONE",
+      "doi": "10.1371/journal.pone.0118308",
+      "pmid": "25822720",
+      "url": "https://doi.org/10.1371/journal.pone.0118308"
+    },
+    {
+      "title": "An Overview of Heart Rate Variability Metrics and Norms",
+      "authors": "Shaffer F, Ginsberg JP",
+      "year": 2017,
+      "journal": "Frontiers in Public Health",
+      "doi": "10.3389/fpubh.2017.00258",
+      "pmid": "29034226",
+      "url": "https://doi.org/10.3389/fpubh.2017.00258"
+    }
+  ],
   "wim-hof-breathing-inflammation": [
     {
       "title": "Voluntary activation of the sympathetic nervous system and attenuation of the innate immune response in humans",

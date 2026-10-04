@@ -65,7 +65,7 @@ const bestEegHeadsets2026: Comparison = {
   faq: [
     {
       q: 'What is the best EEG headset for meditation?',
-      a: 'Muse S Athena ($499) is the best EEG headset for meditation in 2026: four dry EEG channels plus prefrontal fNIRS, the deepest guided-meditation library and real-time audio feedback, with no mandatory subscription. Muse 2 ($249) gives the same core meditation feedback at half the price without sleep tracking. FocusCalm ($199) is the cheapest headset with a polished guided programme, but it uses a single channel.',
+      a: 'Muse S Athena ($474.99) is the best EEG headset for meditation in 2026: four dry EEG channels plus prefrontal fNIRS, the deepest guided-meditation library and real-time audio feedback, with no mandatory subscription. Muse 2 ($249) gives the same core meditation feedback at about half the price without sleep tracking. FocusCalm ($199) is the cheapest headset with a polished guided programme, but it uses a single channel.',
     },
     {
       q: 'Are consumer EEG headsets accurate?',
@@ -73,7 +73,7 @@ const bestEegHeadsets2026: Comparison = {
     },
     {
       q: 'Muse vs Neurosity Crown: which should I buy?',
-      a: 'Buy Muse (S Athena $499 or Muse 2 $249) if you want guided meditation with live feedback and a polished app. Buy Neurosity Crown ($1,499) if you want raw EEG data, eight electrodes and an open SDK for JavaScript and Python (plus BrainFlow, LSL and OSC) — it is a developer and focus tool, not a meditation coach. For most meditators Muse is the better and much cheaper choice.',
+      a: 'Buy Muse (S Athena $474.99 or Muse 2 $249) if you want guided meditation with live feedback and a polished app. Buy Neurosity Crown ($1,499) if you want raw EEG data, eight electrodes and an open SDK for JavaScript and Python (plus BrainFlow, LSL and OSC) — it is a developer and focus tool, not a meditation coach. For most meditators Muse is the better and much cheaper choice.',
     },
     {
       q: 'What is the best EEG headset in 2026?',
@@ -93,7 +93,7 @@ const bestEegHeadsets2026: Comparison = {
     },
     {
       q: 'Is the Muse S Athena worth it over the Muse 2?',
-      a: 'If sleep tracking matters to you, yes — the Athena is the only consumer EEG headset comfortable for overnight wear, and the fNIRS addition makes it the only sensor-fused consumer device. If meditation is the only use case, Muse 2 covers it at half the price.',
+      a: 'If sleep tracking matters to you, yes — the Athena is the only consumer EEG headset comfortable for overnight wear, and the fNIRS addition makes it the only sensor-fused consumer device. If meditation is the only use case, Muse 2 covers it at about half the price.',
     },
     {
       q: 'Can I use a Muse or Neurosity Crown for ADHD or anxiety?',
@@ -102,13 +102,13 @@ const bestEegHeadsets2026: Comparison = {
   ],
   content: `## Quick answer
 
-The best EEG headset for most people in 2026 is **Muse S Athena** ($499) — the deepest meditation-feedback library, EEG plus fNIRS and no mandatory subscription. **Muse 2** ($249) is the value pick for meditation only. **Neurosity Crown** ($1,499) is the pick if you want raw data and an open SDK. If you want supervised clinical neurofeedback, that is **Myndlift** through a licensed provider — not a consumer headset at all.
+The best EEG headset for most people in 2026 is **Muse S Athena** ($474.99) — the deepest meditation-feedback library, EEG plus fNIRS and no mandatory subscription. **Muse 2** ($249) is the value pick for meditation only. **Neurosity Crown** ($1,499) is the pick if you want raw data and an open SDK. If you want supervised clinical neurofeedback, that is **Myndlift** through a licensed provider — not a consumer headset at all.
 
 ## Comparison table
 
 | Headset | Price (USD) | Modality / sensors | Best for |
 |---|---|---|---|
-| [Muse S Athena](/reviews/muse-s-athena) | $499 | 4-channel dry EEG + fNIRS | Meditation and sleep, best overall |
+| [Muse S Athena](/reviews/muse-s-athena) | $474.99 | 4-channel dry EEG + fNIRS | Meditation and sleep, best overall |
 | [Muse 2](/reviews/muse-2) | $249 | 4-channel dry EEG + PPG heart rate | Meditation feedback on a budget |
 | [Neurosity Crown](/reviews/neurosity-crown) | $1,499 | 8 dry EEG electrodes | Developers, raw data, focus |
 | [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 + ~$99/yr Pro for raw data | 5 semi-dry EEG electrodes | Research and academic toolchain |

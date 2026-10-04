@@ -14,7 +14,7 @@ const insightTimer: ToolReview = {
     'Insight Timer is the largest meditation library in the world and the rare app you can build a real practice on without paying. It works like a YouTube for meditation: enormous range, many teachers, hourly live events — and, inevitably, variable quality.',
   overallScore: 8.0,
   scores: [
-    { criterionId: 'content-library', score: 9.5, note: 'The largest meditation library anywhere — hundreds of thousands of guided sessions and courses.' },
+    { criterionId: 'content-library', score: 9.5, note: 'The largest meditation library anywhere — 360,000 free tracks, plus courses.' },
     { criterionId: 'teaching', score: 7.5, note: 'A huge range of teachers and traditions; depth is there, but quality varies session to session.' },
     { criterionId: 'personalization', score: 6.5, note: 'Less guided than course-led apps — you largely curate your own path.' },
     { criterionId: 'app-experience', score: 7.0, note: 'Functional and feature-rich, but the sheer volume can make it feel cluttered.' },
@@ -38,12 +38,12 @@ const insightTimer: ToolReview = {
   testStatus: 'evidence-based',
   testNote:
     'Evidence-based assessment — from public information, app-store data and independent 2026 reviews. Not based on a long hands-on trial by ONDA.',
-  price: { usd: 60, note: 'per year (Member Plus); a very large free tier', asOf: '2026-05-15' },
+  price: { usd: 60, note: 'per year (Member Plus), 7-day free trial; 360,000 free tracks', asOf: '2026-10-04' },
   link: 'https://insighttimer.com',
   linkType: 'official',
   content: `## Where it leads
 
-Insight Timer is the largest meditation library in the world, and the one app in this comparison you can genuinely build a practice on without paying. It works less like a curated course and more like a YouTube for meditation: hundreds of thousands of sessions, thousands of teachers, hourly live events and an active community. For range — and for a free tier that is a real offer rather than a teaser — nothing here comes close.
+Insight Timer is the largest meditation library in the world, and the one app in this comparison you can genuinely build a practice on without paying. It works less like a curated course and more like a YouTube for meditation: 360,000 free tracks, thousands of teachers, hourly live events and an active community. For range — and for a free tier that is a real offer rather than a teaser — nothing here comes close.
 
 ## What are the downsides of Insight Timer?
 
@@ -69,12 +69,12 @@ The science of what meditation actually does at the nervous-system level.
   ],
   relatedSlugs: ['headspace', 'calm', 'waking-up'],
   faq: [
-    { q: "Is Insight Timer free?", a: "Largely, yes. Insight Timer has a very large free tier that you can genuinely build a real practice on, which is rare among meditation apps. MemberPlus costs $59.99 per year (or $9.99 per month), the cheapest paid tier in its comparison, and there are hourly live events and community features." },
-    { q: "Is Insight Timer worth paying for?", a: "For many people the free tier is enough, which is the app's biggest strength. At $59.99 a year, MemberPlus is the cheapest paid tier among major meditation apps, so upgrading is low-risk if you want more. The catch is variable session quality, not price." },
+    { q: "Is Insight Timer free?", a: "Largely, yes. Insight Timer has a very large free tier that you can genuinely build a real practice on, which is rare among meditation apps. Member Plus costs US$60 per year with a 7-day free trial, the cheapest paid tier in its comparison, and there are hourly live events and community features." },
+    { q: "Is Insight Timer worth paying for?", a: "For many people the free tier is enough, which is the app's biggest strength. At US$60 a year, Member Plus is the cheapest paid tier among major meditation apps, so upgrading is low-risk if you want more. The catch is variable session quality, not price." },
     { q: "Insight Timer vs Headspace: which is better?", a: "Insight Timer wins on breadth and value: it has the largest meditation library in the world and a usable free tier. Headspace wins on structure, with clearer course-led guidance for beginners. Insight Timer's crowd-sourced content can feel cluttered and uneven." },
   ],
   datePublished: '2026-05-15',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-04',
 }
 
 export default insightTimer

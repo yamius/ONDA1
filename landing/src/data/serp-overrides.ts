@@ -104,7 +104,7 @@ export const SERP_OVERRIDES: Record<string, { title?: string; description?: stri
   '/reviews/resona-health-vibe': {
     title: 'Resona Health VIBE Review: Worth $299? | ONDA Life',
     description:
-      'A wearable PEMF device with 130+ app-controlled programmes and no mat to set up, for $299. What PEMF can and cannot do, pros, cons and alternatives.',
+      'A wearable PEMF device with 130+ built-in programmes, no app and no mat to set up, for $299. What PEMF can and cannot do, pros, cons and alternatives.',
   },
   '/reviews/hypervolt-3-pro': {
     title: 'Hypervolt 3 Pro Review: vs Theragun (2026) | ONDA Life',

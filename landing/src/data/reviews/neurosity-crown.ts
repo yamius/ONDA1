@@ -20,7 +20,7 @@ const neurosityCrown: ToolReview = {
     { criterionId: 'comfort', score: 7.5, note: 'A rigid 228 g crown — comfortable for focus sessions, not designed for overnight wear or moving sessions; about three hours per charge.' },
     { criterionId: 'app-ux', score: 7.5, note: 'Polished companion apps, but the UX assumes a more technical user than Muse.' },
     { criterionId: 'open-data', score: 9.5, note: 'The most open SDK in this category — JavaScript and Python SDKs plus BrainFlow, LSL, OSC and MCP; raw EEG at 256 Hz; no subscription required for data. Developer-first by design.' },
-    { criterionId: 'value', score: 6.5, note: '$1,499 one-time, no mandatory subscription. Premium pricing — three times the cost of Muse S Athena.' },
+    { criterionId: 'value', score: 6.5, note: '$1,499 one-time, no mandatory subscription. Premium pricing — about three times the cost of Muse S Athena.' },
   ],
   pros: [
     'The most open SDK in the consumer EEG market — raw data via JavaScript or Python, plus BrainFlow, LSL and OSC',
@@ -29,7 +29,7 @@ const neurosityCrown: ToolReview = {
     'No mandatory subscription',
   ],
   cons: [
-    'Premium price — three times the cost of Muse S Athena',
+    'Premium price — about three times the cost of Muse S Athena',
     'About three hours of battery per charge',
     'No deep meditation content library and no sleep tracking',
     'Rigid crown — not for overnight wear; UX assumes a technical user',
@@ -74,7 +74,7 @@ No. It is a consumer and developer device, not an FDA-cleared medical device. It
 | Headset | Price | Sensors | Best for |
 |---|---|---|---|
 | **Neurosity Crown** | $1,499 | 8 dry EEG channels | developers, raw data, focus |
-| [Muse S Athena](/reviews/muse-s-athena) | $499 | EEG + fNIRS, soft band | meditation, sleep |
+| [Muse S Athena](/reviews/muse-s-athena) | $474.99 | EEG + fNIRS, soft band | meditation, sleep |
 | [Muse 2](/reviews/muse-2) | $249 | 4 EEG sensors | meditation on a budget |
 | [Emotiv Insight 2](/reviews/emotiv-insight-2) | $499 | 5 EEG channels | research tools (raw data needs Pro, ~$99/yr) |
 
@@ -118,7 +118,7 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
     { q: "Neurosity Crown vs Emotiv Insight 2: which is better for developers?", a: "The Crown, for most people. It has eight channels versus five and gives raw data with no subscription, while Emotiv puts raw-data access behind a Pro plan of about $99 a year. Emotiv costs less up front ($499) and fits some academic toolchains." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default neurosityCrown

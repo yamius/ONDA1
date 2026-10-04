@@ -2312,6 +2312,33 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
         "If low mood, anxiety or exhaustion lasts more than a couple of weeks, affects your daily life, or you’re using substances to cope, talk to a doctor or mental health professional. In a crisis, contact emergency services or a crisis line immediately.",
     },
   ],
+  "why-is-my-apple-watch-hrv-low": [
+    {
+      question: "Why is my Apple Watch HRV lower than my Oura or Whoop?",
+      answer:
+        "Because they measure different things. Apple Watch reports SDNN from short daytime and night readings, while Oura and Whoop report RMSSD averaged over the night, when HRV is highest. The numbers are not interchangeable.",
+    },
+    {
+      question: "What is a normal HRV on Apple Watch?",
+      answer:
+        "It depends on age. For SDNN, typical ranges are roughly 35–60 ms at 18–34, 32–54 ms at 35–44, 27–44 ms at 45–54 and 22–39 ms at 55–64. Your own weekly trend matters more than any single reading.",
+    },
+    {
+      question: "Is an Apple Watch HRV of 20 bad?",
+      answer:
+        "Not necessarily. A single low reading is common after poor sleep, alcohol, hard training or a busy moment. Look at your weekly average; if it stays well below your usual level with symptoms, talk to a doctor.",
+    },
+    {
+      question: "How can I get more accurate HRV on Apple Watch?",
+      answer:
+        "Wear the watch snugly, wear it to sleep so more readings come from rest, and compare weekly averages at similar times rather than single values.",
+    },
+    {
+      question: "When should I worry about low HRV?",
+      answer:
+        "When it stays well below your usual level for more than a couple of weeks together with symptoms such as unusual tiredness, a racing or irregular heartbeat, dizziness or breathlessness. Chest pain, fainting or severe shortness of breath need emergency care.",
+    },
+  ],
   "eating-late-heart-rate-sleep": [
     {
       question: "Does eating late raise your heart rate at night?",

@@ -37,7 +37,7 @@ const bestRedLightFaceMasks2026: Comparison = {
     {
       reviewSlug: 'higherdose-red-light-face-mask',
       award: 'Best consumer-brand UX',
-      takeaway: 'Polished app + flexible silicone at accessible $345 — HigherDOSE ecosystem entry.',
+      takeaway: 'Simple controller + flexible silicone at accessible $349 — HigherDOSE ecosystem entry.',
     },
     {
       reviewSlug: 'lightstim-for-wrinkles',
@@ -85,7 +85,7 @@ const bestRedLightFaceMasks2026: Comparison = {
     },
     {
       q: 'How much does the category really cost over 3 years?',
-      a: 'Most masks are one-time purchases with no subscription. Omnilux Contour Face: $395. CurrentBody Series 2: $470. Dr. Dennis Gross: $455. Lumara Viso: $650. TheraFace: $649. HigherDOSE: $345. LightStim: $249. JOVS: $399. Solawave: $169. Shark CryoGlow: $349. Pick the device once and own it for 5+ years.',
+      a: 'Most masks are one-time purchases with no subscription. Omnilux Contour Face: $395. CurrentBody Series 2: $470. Dr. Dennis Gross: $455. Lumara Viso: $650. TheraFace: $649. HigherDOSE: $349. LightStim: $249. JOVS: $399. Solawave: $169. Shark CryoGlow: $349. Pick the device once and own it for 5+ years.',
     },
   ],
   content: `## How we ranked them
@@ -102,12 +102,12 @@ Three buying questions resolve the category cleanly:
 
 **Mask or handheld?** Mask (passive whole-face dose, daily-use convenience): Omnilux, CurrentBody, Dr. Dennis Gross, Lumara, TheraFace, HigherDOSE, JOVS, Shark CryoGlow. Handheld (active positioning, higher per-zone dose): LightStim, Solawave.
 
-**What budget tier?** Under $250: Solawave Wand ($169), LightStim ($249). $300–$500: HigherDOSE ($345), Shark CryoGlow ($349), Omnilux ($395), JOVS ($399), Dr. Dennis Gross ($455), CurrentBody ($470). $600+: TheraFace ($649), Lumara Viso ($650).
+**What budget tier?** Under $250: Solawave Wand ($169), LightStim ($249). $300–$500: HigherDOSE ($349), Shark CryoGlow ($349), Omnilux ($395), JOVS ($399), Dr. Dennis Gross ($455), CurrentBody ($470). $600+: TheraFace ($649), Lumara Viso ($650).
 
 Omnilux dominates the clinical-evidence tier; CurrentBody owns the consumer-market default; LightStim and Solawave cover the handheld alternatives; Lumara wins the spec-maximalist segment.`,
   publishOn: '2026-07-06',
   datePublished: '2026-07-06',
-  dateModified: '2026-09-17',
+  dateModified: '2026-10-04',
 }
 
 export default bestRedLightFaceMasks2026
