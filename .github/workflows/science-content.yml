@@ -1,12 +1,14 @@
 name: Science content checks
 
-# Runs on every push to the science-content branch (Mistral-authored pages) and on PRs into main from it.
+# ONDA Science pages are written by Mistral, handed over by Yakiv and published to main by Claude Code
+# (rules: landing/docs/science-pack/). This re-runs the gate whenever pages or facts change.
 on:
   push:
-    branches: [science-content]
+    branches: [main]
+    paths: ['landing/content/science/**', 'landing/src/data/science/**', 'landing/docs/science-pack/**']
   pull_request:
     branches: [main]
-    paths: ['landing/content/science/**']
+    paths: ['landing/content/science/**', 'landing/src/data/science/**', 'landing/docs/science-pack/**']
 
 jobs:
   check:
@@ -16,21 +18,14 @@ jobs:
         working-directory: landing
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - run: git fetch origin main
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
           cache-dependency-path: landing/package-lock.json
       - run: npm ci
-      # 1–6: format, DOI/PMID exist (Crossref/PubMed), numbers only via {{fact:}}, banned wording, links;
-      # 7: only allowed files changed vs main
+      # format, DOI/PMID exist (Crossref/PubMed), numbers only via {{fact:}}, banned wording, links
       - name: Science content gate
-        run: npx tsx scripts/check-science-content.ts --diff
-      # Full site build incl. prerender + validate-seo (fails on invalid JSON-LD / canonical / hreflang)
-      - name: Build and validate-seo
-        run: npm run build
-        env:
-          INDEXNOW_DISABLED: '1'
+        run: npx tsx scripts/check-science-content.ts
+      - name: Facts doc in the pack is up to date
+        run: npx tsx scripts/science-pack-facts.ts --check

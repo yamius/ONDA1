@@ -1,5 +1,5 @@
 /**
- * Gate for the science-content branch (Mistral-authored pages).
+ * Gate for ONDA Science pages (written by Mistral, checked and published by Claude Code — docs/science-pack/).
  *
  *   npx tsx scripts/check-science-content.ts            # all files in content/science/
  *   npx tsx scripts/check-science-content.ts --diff     # also: only allowed files changed vs origin/main
@@ -37,16 +37,20 @@ export const ALLOWED = [/^landing\/content\/science\/(concepts|measurements|mech
 
 /** Spec 002 §6–7 + audit §4: wording that must not appear. */
 const BANNED: [RegExp, string][] = [
-  [/\bmeasures? vagal tone\b/i, 'HRV does not measure vagal tone directly — use {{fact:claim.vagalTone}}'],
-  [/\b(trains?|training|increases?|boosts?) (your )?vagal tone\b/i, 'vagal tone cannot be measured or “trained” directly'],
-  [/\b(stimulates?|activates?) (the )?vagus\b/i, 'use {{fact:claim.slowExhale}} instead of “stimulates the vagus”'],
+  // Mirrors docs/science-pack/05-banned-wording.md (rows marked “auto”) — keep both in sync.
+  [/\bmeasures? (your )?vagal tone\b|\bmeasure of vagal tone\b/i, 'HRV does not measure vagal tone directly — use {{fact:claim.vagalTone}}'],
+  [/\b(trains?|training|raises?|raising|increases?|increasing|improves?|improving|boosts?|boosting|strengthens?|enhances?|tones?) (your |the )?vagal tone\b/i, 'vagal tone cannot be measured or changed directly — use {{fact:claim.vagalTone}}'],
+  [/\b(stimulates?|stimulating|activates?|activating) (the |your )?vag(us|al)\b/i, 'use {{fact:claim.slowExhale}} instead of “stimulates the vagus”'],
+  [/\bdirectly (measures?|reflects?) (the )?parasympathetic\b/i, 'HRV does not directly measure parasympathetic activity'],
   [/LF\s*\/\s*HF\b[^.]{0,60}\b(balance|sympathetic)/i, 'LF/HF is not sympathovagal balance'],
   [/\bhigher HRV is always better\b/i, 'not always true'],
-  [/\blow HRV means (you are |you’re )?stress/i, 'use {{fact:claim.hrvNotStress}}'],
-  [/\breset (your )?nervous system\b/i, 'banned phrase'],
-  [/\bhack (your )?biology\b/i, 'banned phrase'],
+  [/\blow HRV means (you are |you’re )?(stress|unwell|sick)/i, 'use {{fact:claim.hrvNotStress}}'],
+  [/\b(wearable|watch|ring) (measured|measures) (your )?(autonomic|nervous system)/i, 'a wearable estimates HRV from the pulse signal'],
+  [/\breset (your )?nervous system\b|\bhack (your )?biology\b|\brewire (your )?brain\b/i, 'banned phrase'],
   [/\b(cure|cures|curing|treats? (anxiety|depression|insomnia))\b/i, 'no treatment/cure claims'],
-  [/\bclinically proven\b/i, 'no “clinically proven”'],
+  [/\b(clinically|scientifically) proven\b/i, 'name the study type and evidence class instead'],
+  [/\b(guaranteed|always works|instantly calms?)\b/i, 'no guarantees'],
+  [/\bONDA (diagnoses|detects (a )?disease|replaces (your )?doctor)/i, 'ONDA does not diagnose'],
   [/\bRecovery HRV\b[^.]{0,40}\bRMSSD\b|\bRMSSD\b[^.]{0,40}\bRecovery HRV\b/i, 'Apple does not officially state Recovery HRV = RMSSD (owner rule 2026-10-04)'],
 ]
 
@@ -83,7 +87,7 @@ function stripAllowed(body: string): string {
     .replace(/\([A-Z][A-Za-z’'\- ]+(?: et al\.)?,? (19|20)\d{2}[a-z]?\)/g, ' ') // (Author 2021)
     .replace(/\b[A-Z][A-Za-z’'\-]+(?: et al\.)? \((19|20)\d{2}\)/g, ' ') // Author (2021)
     .replace(/\]\([^)]*\)/g, ']') // link targets
-    .replace(/(aged?|at ages?|ages?) \d{2}(?:[–-]\d{2}|\+)/gi, ' ') // age bands are labels, not data
+    .replace(/\b(aged?|at ages?|ages?) \d{2}(?:[–-]\d{2}|\+)/gi, ' ') // age bands are labels, not data
     .replace(/^#{1,6} .*$/gm, (h) => h.replace(/\b(19|20)\d{2}\b/g, ' '))
 }
 

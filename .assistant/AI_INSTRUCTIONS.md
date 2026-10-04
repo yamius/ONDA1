@@ -52,12 +52,8 @@ Capacitor синхронится в CI. Проверка ошибок — в л�
 `src/onda-level1-demo_27.tsx` · `src/hooks/useVitals.ts` · `src/utils/ondCalculator.ts` ·
 `ios/App/` (нативный iOS) · `supabase/functions/` (Edge Functions).
 
-## Исключение: ветка `science-content` (научный раздел, автор — Mistral)
+## Научный раздел (ONDA Science) — обязательное чтение
 
-- Ветка `science-content` — **единственное** исключение из правила «только `main`».
-- В ней разрешено менять **только** файлы страниц научного раздела:
-  `landing/content/science/{concepts,measurements,mechanisms,evidence}/<slug>.md`.
-- Нельзя: код, `facts.ts`, шаблон, глоссарий, статьи, `vercel.json`, `chatgpt-app/`, любые другие файлы.
-  Это проверяет `landing/scripts/check-science-content.ts --diff` и GitHub Action `science-content.yml`.
-- Сливает в `main` только Claude Code после ручной проверки (чек-лист в `landing/docs/science-authoring.md`).
-- Правила написания: `landing/docs/science-authoring.md`.
+- Перед **любой** работой с научным разделом (`/science/`, `landing/content/science/`, `landing/src/data/science/facts.ts`) прочитать пакет правил **`landing/docs/science-pack/README.md`** и файлы, на которые он ссылается. Это единственный источник правил; если правило меняется — меняется пакет.
+- Процесс: Mistral читает репозиторий только для контекста и ничего не пушит; присылает файл страницы → Yakiv передаёт его Claude Code → Claude Code проверяет по чек-листу приёмки (`science-pack/09-acceptance-checklist.md`) и публикует в `main`.
+- Отдельной ветки для научного раздела нет: правило «только `main`» действует без исключений.
