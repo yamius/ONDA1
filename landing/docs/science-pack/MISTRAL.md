@@ -7,8 +7,8 @@
 
 1. You have **read-only** access to the repository for context. Do not push, commit or open pull requests.
 2. Write **one page as one Markdown file**, starting from the template in section 2, for one of the 13 pages in section 6. English only.
-3. Every number goes through `{{fact:…}}` (section 3) or a proposal `{{proposed:P…}}` (section 1, §1.11). Sources need a DOI or PMID; manufacturer/regulator documents use type `official` and only for device/regulatory facts.
-4. Before handing in, go through the hand-off checklist (section 8). If you can run Node, run `npx tsx scripts/check-science-content.ts --file <your-file.md>` from `landing/` and attach the log; if you cannot, say so.
+3. Read section 11 (lessons from the first page) — it lists the mistakes to avoid. Every number goes through `{{fact:…}}` (section 3) or a proposal `{{proposed:P…}}` (section 1, §1.11). Sources need a DOI or PMID; manufacturer/regulator documents use type `official` and only for device/regulatory facts.
+4. Write `imageAlt` and `imagePrompt` (section 10) and an exact `quote` for every evidence-map row (section 1, §1.13). Before handing in, go through the hand-off checklist (section 8). If you can run Node, run `npx tsx scripts/check-science-content.ts --file <your-file.md>` from `landing/` and attach the log; if you cannot, say so.
 5. Send the file and the hand-off note to Yakiv. Claude Code checks it against section 9 and publishes it.
 
 ## Contents
@@ -22,6 +22,8 @@
 7. [07-byline.md](#07-byline)
 8. [08-handoff-checklist.md](#08-handoff-checklist)
 9. [09-acceptance-checklist.md](#09-acceptance-checklist)
+10. [10-image-style.md](#10-image-style)
+11. [11-lessons-first-page.md](#11-lessons-first-page)
 
 ---
 
@@ -257,6 +259,33 @@ If you need a number or a source that is not in [03-facts.md](#03-facts) or [04-
 
 The same applies to an existing fact whose status is `proposed` in [03-facts.md](#03-facts): you may use it in a draft, but the page cannot be published until it is approved.
 
+## 1.12 Writing with facts — no repeats
+
+A fact is inserted as a complete phrase. Many definitions start with the term itself (`hrv.rmssd.definition` → “RMSSD — the root mean square of successive differences between heartbeats”). Build the sentence so the fact reads naturally and nothing is said twice.
+
+| Bad (renders with a repeat) | Good |
+|---|---|
+| “The standard definition is {{fact:hrv.rmssd.definition}}.” → “…definition is RMSSD — the root mean square…” | “In the field’s measurement standards it is defined precisely: {{fact:hrv.rmssd.definition}}.” |
+| “RMSSD is usually paired with SDNN, whose standard definition is {{fact:hrv.sdnn.definition}}.” → names SDNN twice | “It is usually paired with a second time-domain metric — {{fact:hrv.sdnn.definition}}.” |
+| “Vagal tone, as research shows, {{fact:claim.vagalTone}}” → grammar breaks | “The framing matters. {{fact:claim.vagalTone}}.” |
+
+**How to check:** read the sentence with the fact’s text (from [03-facts.md](#03-facts)) pasted in. If a word or idea appears twice, or the grammar breaks, rewrite it. The automatic check flags two cases:
+- the term the fact starts with already appears earlier in the same sentence;
+- the fact directly follows “definition is”, “defined as”, “stands for” or “means”.
+
+## 1.13 Exact quotes in the evidence map
+
+Every evidence-map row has a **`quote`**: a short, exact sentence or phrase (about 15–300 characters) copied from the cited source, which states the claim or the number. Rules:
+- **Copy, don’t paraphrase.** Use quotation-mark-free plain text, exactly as in the abstract or full text. Add the location if useful (`quote: "…" (Results, para 2)`).
+- **One source must actually say it.** Don’t cite a general review for a specific detail it does not discuss. On `rmssd`, alcohol, caffeine, late workouts and illness were cited to a general HRV overview. If none of your sources states the detail, do one of these:
+  - find a source that does and propose it (§1.11);
+  - drop the detail;
+  - write it as general context without a citation-backed claim.
+- **For official sources,** quote the documentation sentence (for example, Apple’s definition of the data type).
+- **Facts already carry their source.** For a row that restates an approved fact, quote the source passage behind that fact.
+
+The check requires a `quote` on every row. Claude Code compares quotes with the source before publishing.
+
 ---
 
 <a id="02-template"></a>
@@ -282,6 +311,9 @@ keyPoints:            # 3–7 bullets, each one self-contained sentence, no digi
   - "First key point."
   - "Second key point."
   - "Third key point."
+imageAlt: "One plain sentence, forty to two hundred characters, saying what the hero image shows and, if useful, what it represents."
+imagePrompt: "Minimal scientific illustration on a clean white background: one visual idea tied to the entity, thin teal lines with a soft cyan glow, lots of empty space, no text, no numbers, no people, no devices, light and calm, landscape."
+# image: set by Claude Code when Yakiv sends the file (/images/science/<slug>.jpg) — do not write it yourself
 editor: "Yakiv Bilenko"
 reviewer: null        # "Valentin Zhigulin" ONLY if he actually read this page — set by Yakiv, never by the author
 lastReviewed: null    # set by Yakiv (YYYY-MM-DD)
@@ -310,11 +342,13 @@ evidenceMap:          # one row per factual claim in the body
     sources: [S1]
     class: guideline         # established | guideline | context-dependent | emerging | debated | unknown
     claimType: definition    # definition | measurement | physiology | device | regulatory | efficacy | safety | other
+    quote: "RMSSD, the square root of the mean squared differences of successive NN intervals"   # exact text from the source that states the claim
     limitation: "Definition only; says nothing about health outcomes."
   - claim: "Apple Health offers an RMSSD data type."
     sources: [S2]            # an official source → claimType must be device or regulatory, never a health/efficacy claim
     class: established
     claimType: device
+    quote: "A quantity sample type that measures the standard deviation of heartbeat intervals."   # copy the exact sentence from the official page
     limitation: "Documents the data type only, not how any watch feature computes its values."
 proposals:            # optional: values or sources that are NOT yet in 03-facts.md / 04-sources.md
   - id: P1
@@ -663,6 +697,14 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 - [ ] Body sections in the order of [01-quality-standard.md](#01-quality-standard) §1.7, including “What it does not tell you” and the medical line.
 - [ ] “In ONDA” is factual, checked against `docs/onda-facts-source-of-truth.md`, and has no promotion.
 
+**Writing with facts, quotes and image** (lessons from `rmssd`)
+- [ ] Facts read naturally: no term repeated before a fact that starts with it, no “definition is {{fact:…definition}}” ([01-quality-standard.md](#01-quality-standard) §1.12). I read each sentence with the fact text pasted in.
+- [ ] Every evidence-map row has a `quote` — an exact sentence from the cited source that states the claim. No specific detail (alcohol, caffeine, training, illness, a device behaviour…) is cited to a source that does not discuss it ([01-quality-standard.md](#01-quality-standard) §1.13).
+- [ ] `imageAlt` (40–200 characters) and `imagePrompt` written in the light scientific style ([10-image-style.md](#10-image-style)); `image` left out.
+- [ ] Unwritten science pages are in `relatedPlanned` as a flat list; no inline links to them.
+- [ ] `official` sources only in rows with `claimType: device` or `regulatory`; methodological recommendations use class `guideline` with a guideline source.
+- [ ] Any missing number or source is in `proposals` and shown as `{{proposed:P…}}`, with value, scope, DOI/PMID/URL and quote or location.
+
 **Links**
 - [ ] 3–6 links in `related`, all to pages that exist. Unwritten MVP science pages go in `relatedPlanned`, not in `related` or inline links.
 - [ ] The page does not repeat what the overlapping articles own.
@@ -752,6 +794,7 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
 ## C. Read by hand
 
 5. **Each source says what is claimed.** For every evidence-map row:
+   - the `quote` exists in the source, word for word (abstract or full text), and states this claim — not a neighbouring one;
    - open the abstract (or the full text when the abstract is not enough);
    - confirm it supports the claim, in that population and measurement context.
 6. **The classes are honest:**
@@ -778,19 +821,105 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
     - the camera gives pulse, not HRV;
     - no numeric pacer in the app;
     - Apple Watch wording uses only the official facts.
-11. **Byline** follows [07-byline.md](#07-byline): `reviewer` is `null` unless Yakiv says Valentin Zhigulin read the page; Yakiv gives the `lastReviewed` date.
+11. **Facts read naturally:** no repeated term or idea around any `{{fact:…}}` (the check catches the common cases; read the rest).
+12. **Image:** `imageAlt` and `imagePrompt` follow [10-image-style.md](#10-image-style). When Yakiv sends the file, save it as `public/images/science/<slug>.jpg` and set `image`.
+13. **Byline** follows [07-byline.md](#07-byline): `reviewer` is `null` unless Yakiv says Valentin Zhigulin read the page; Yakiv gives the `lastReviewed` date.
 
 ## D. Publish
 
-12. Run `npx tsx scripts/check-science-content.ts --publish`; it must print OK with no PENDING items. Then build in full (`npm run build`, including `validate-seo`) and run `node scripts/audit-structure.mjs`.
+14. Run `npx tsx scripts/check-science-content.ts --publish`; it must print OK with no PENDING items. Then build in full (`npm run build`, including `validate-seo`) and run `node scripts/audit-structure.mjs`.
     - 0 broken links;
     - the page is in the sitemap;
     - canonical and JSON-LD are correct.
-13. Commit to `main` (one page per commit) and push once.
-14. After the deploy (8–12 minutes), check the live URL.
-15. **Add the planned links** to the new page (audit §5):
+15. Commit to `main` (one page per commit) and push once.
+16. After the deploy (8–12 minutes), check the live URL.
+17. **Add the planned links** to the new page (audit §5):
     - glossary “Read the science →”;
     - tool `SourcesSection`;
     - first mention in the related articles;
     - `llms.txt`.
-16. Report to Yakiv: what was published, what was fixed, open questions.
+18. Report to Yakiv: what was published, what was fixed, open questions.
+
+---
+
+<a id="10-image-style"></a>
+
+# 10. Image style (light scientific)
+
+Every science page has one hero image. You (Mistral) write two frontmatter fields:
+- **`imageAlt`** — what the image shows;
+- **`imagePrompt`** — the prompt Yakiv uses to generate the image.
+
+Yakiv generates the image and sends the file. Claude Code saves it as `public/images/science/<slug>.jpg` and sets `image`. You never set `image` yourself.
+
+## Reference image
+
+The published reference is `concepts/rmssd`:
+- file: `landing/public/images/science/rmssd.jpg`;
+- live: https://onda-life.com/images/science/rmssd.jpg.
+
+It shows a single thin teal heart-rhythm line across a white background, with soft glow and a lot of empty space.
+
+## Style rules
+
+| Do | Don’t |
+|---|---|
+| White or very light grey background | Dark backgrounds, neon “cyber” looks (the rest of the site is dark; science pages are deliberately light) |
+| One simple visual idea: a line, a wave, a minimal diagram, an abstract anatomical outline | Busy scenes, several ideas at once |
+| Teal / cyan accent (close to the reference), soft glow, thin strokes; at most one secondary muted colour | Rainbow palettes, heavy gradients |
+| Lots of negative space, calm and precise | Clutter, decorative particles |
+| Abstract and schematic | Realistic people, faces, hands, devices, brand logos, watches or rings |
+| No text at all | Letters, numbers, labels, axes with values, fake charts with data |
+| Medically neutral | Blood, organs in realistic detail, hospital scenes, anything alarming |
+| 4:3 landscape (rendered as 1024×768) | Portrait or square |
+
+## `imagePrompt` — pattern
+
+> Minimal scientific illustration on a clean white background: **[one visual idea tied to the page entity]**, thin teal lines with a soft cyan glow, lots of empty space, no text, no numbers, no people, no devices, light and calm, 4:3.
+
+**Example (rmssd):**
+
+> Minimal scientific illustration on a clean white background: a single thin teal ECG-like heart-rhythm line running horizontally across the middle, with slightly uneven spacing between beats, soft cyan glow, lots of empty space, no text, no people, no devices, light and calm, 4:3.
+
+**Ideas for other MVP pages** (pick or adapt):
+- `sdnn` — a wide band of overlapping rhythm lines, showing overall spread;
+- `respiratory-sinus-arrhythmia` — a slow breathing wave and a heart-rhythm line rising and falling together;
+- `vagus-nerve` — a minimal, abstract line-drawn nerve path from the brainstem to the heart, with no anatomy detail.
+
+## `imageAlt` — rules
+
+- One plain sentence, 40–200 characters. The check enforces the length.
+- Say what is visible, then, if useful, what it represents. Don’t start with “Image of”.
+- No keyword stuffing, no claims.
+
+**Example (rmssd):**
+
+> A thin teal heart-rhythm trace on a white background, with the spacing between beats varying slightly — a visual of beat-to-beat heart rate variability.
+
+---
+
+<a id="11-lessons-first-page"></a>
+
+# 11. Lessons from the first page (`concepts/rmssd`, 2026-10-04)
+
+The first page was good, but it still needed fixes at publishing. Avoid these so the next pages arrive ready.
+
+| # | What happened on `rmssd` | Rule now |
+|---|---|---|
+| 1 | **Fact repeated by its frame.** The draft had “the standard definition is {{fact:hrv.rmssd.definition}}”, which renders as “…the standard definition is RMSSD — the root mean square…”. Also “paired with SDNN, whose standard definition is {{fact:hrv.sdnn.definition}}”, which names SDNN twice. | Build the sentence so the fact reads naturally and the term appears once ([01-quality-standard.md](#01-quality-standard) §1.12). Fixed to “In the field’s measurement standards it is defined precisely: {{fact:hrv.rmssd.definition}}” and “It is usually paired with a second time-domain metric — {{fact:hrv.sdnn.definition}}”. **The check now catches both patterns.** |
+| 2 | **Specific details cited to general reviews.** “A late workout, an evening drink, caffeine… or illness can shift a single night’s reading [S2, S8]” rests on a general HRV overview and a methods guideline that do not study alcohol, caffeine or illness. | Every evidence-map row now needs a **`quote`**: a short exact sentence from the cited source that states the claim. If no source you have says it, find one that does, propose it, or drop the detail ([01-quality-standard.md](#01-quality-standard) §1.13). |
+| 3 | **No image fields.** | Write `imageAlt` and `imagePrompt` in the light scientific style ([10-image-style.md](#10-image-style)). The check requires both. |
+| 4 | **`relatedPlanned` written as an object** (`relatedPlanned: {science: [...]}`). The check crashed on it. | `relatedPlanned` is a flat list: `relatedPlanned: [concepts/sdnn, concepts/hrv-baseline]`. Inline links go only to pages that already exist. |
+| 5 | **Official Apple rows without `claimType`.** | Rows citing an `official` source need `claimType: device` (or `regulatory`) and no health or efficacy wording. Done right: the three Apple sources S9–S11 were used only for what Apple Health records. |
+| 6 | **Guideline used correctly.** Carter 2026 (S8) supports “compare against your own baseline under comparable conditions” with class `guideline`, and the text says “expert consensus, not direct experimental data”. | Keep doing this. `guideline` is for recommendations and methods, and must cite a `guideline` source. |
+| 7 | **No proposals were needed**, because all numbers existed as facts (`hrv.pooled.daytime` was approved before the page). | When a value is missing, use the proposals block; don’t work around it in prose. |
+| 8 | **The check could not be run** (no Node.js on Mistral’s side). | Say so in the hand-off note; Claude Code runs it. Still self-check every item in [08-handoff-checklist.md](#08-handoff-checklist). |
+
+**What made the page strong — keep it:**
+- the answer comes first;
+- the scope of each number is stated (“a pooled daytime average, not a night-time value and not an age norm”);
+- “What it does not tell you” is honest;
+- the “In ONDA” paragraph is exact (SDNN baseline, surrogate live tile, camera gives only pulse);
+- it links to the articles that own the practical angle instead of repeating them.
+
+Use https://onda-life.com/science/concepts/rmssd as the reference for structure and tone.

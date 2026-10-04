@@ -18,6 +18,9 @@ keyPoints:
   - "Wearables estimate RMSSD from the pulse signal, and their agreement with ECG depends on the device and the conditions."
   - "Values depend on context: recording method, duration, posture, breathing and time of day all matter."
   - "A single RMSSD value is not a diagnosis or a stress reading; trends against your own baseline are usually more informative."
+image: "/images/science/rmssd.jpg"
+imageAlt: "A thin teal heart-rhythm trace on a white background, with the spacing between beats varying slightly — a visual of beat-to-beat heart rate variability."
+imagePrompt: "Minimal scientific illustration on a clean white background: a single thin teal ECG-like heart-rhythm line running horizontally across the middle, with slightly uneven spacing between beats, soft cyan glow, lots of empty space, no text, no people, no devices, light and calm, 4:3."
 editor: "Yakiv Bilenko"
 reviewer: null
 lastReviewed: null
@@ -173,11 +176,11 @@ evidenceMap:
 
 ## What is RMSSD?
 
-RMSSD is one of the standard measures of [heart rate variability](/glossary/heart-rate-variability) (HRV) — the natural variation in the time between consecutive heartbeats. The name is short for the root mean square of successive differences, and the standard definition is {{fact:hrv.rmssd.definition}} [S1].
+RMSSD is one of the standard measures of [heart rate variability](/glossary/heart-rate-variability) (HRV) — the natural variation in the time between consecutive heartbeats. In the field’s measurement standards it is defined precisely: {{fact:hrv.rmssd.definition}} [S1].
 
 In plain language: take the intervals between adjacent heartbeats, see how much each one differs from the next, and summarize those differences as a single value in milliseconds. A larger value means the rhythm changes more from beat to beat.
 
-RMSSD is usually paired with SDNN, whose standard definition is {{fact:hrv.sdnn.definition}} [S1]. The two answer different questions: SDNN describes the overall spread of the intervals in a recording, while RMSSD isolates the beat-to-beat changes. Because of that focus, RMSSD is the preferred metric when the recording is short [S1, S2].
+It is usually paired with a second time-domain metric — {{fact:hrv.sdnn.definition}} [S1]. The two answer different questions: SDNN describes the overall spread of the intervals in a recording, while RMSSD isolates the beat-to-beat changes. Because of that focus, RMSSD is the preferred metric when the recording is short [S1, S2].
 
 ## How does RMSSD work?
 

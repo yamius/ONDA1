@@ -14,6 +14,9 @@ keyPoints:            # 3–7 bullets, each one self-contained sentence, no digi
   - "First key point."
   - "Second key point."
   - "Third key point."
+imageAlt: "One plain sentence, forty to two hundred characters, saying what the hero image shows and, if useful, what it represents."
+imagePrompt: "Minimal scientific illustration on a clean white background: one visual idea tied to the entity, thin teal lines with a soft cyan glow, lots of empty space, no text, no numbers, no people, no devices, light and calm, landscape."
+# image: set by Claude Code when Yakiv sends the file (/images/science/<slug>.jpg) — do not write it yourself
 editor: "Yakiv Bilenko"
 reviewer: null        # "Valentin Zhigulin" ONLY if he actually read this page — set by Yakiv, never by the author
 lastReviewed: null    # set by Yakiv (YYYY-MM-DD)
@@ -42,11 +45,13 @@ evidenceMap:          # one row per factual claim in the body
     sources: [S1]
     class: guideline         # established | guideline | context-dependent | emerging | debated | unknown
     claimType: definition    # definition | measurement | physiology | device | regulatory | efficacy | safety | other
+    quote: "RMSSD, the square root of the mean squared differences of successive NN intervals"   # exact text from the source that states the claim
     limitation: "Definition only; says nothing about health outcomes."
   - claim: "Apple Health offers an RMSSD data type."
     sources: [S2]            # an official source → claimType must be device or regulatory, never a health/efficacy claim
     class: established
     claimType: device
+    quote: "A quantity sample type that measures the standard deviation of heartbeat intervals."   # copy the exact sentence from the official page
     limitation: "Documents the data type only, not how any watch feature computes its values."
 proposals:            # optional: values or sources that are NOT yet in 03-facts.md / 04-sources.md
   - id: P1

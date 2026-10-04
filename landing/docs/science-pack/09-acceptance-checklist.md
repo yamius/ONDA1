@@ -46,6 +46,7 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
 ## C. Read by hand
 
 5. **Each source says what is claimed.** For every evidence-map row:
+   - the `quote` exists in the source, word for word (abstract or full text), and states this claim — not a neighbouring one;
    - open the abstract (or the full text when the abstract is not enough);
    - confirm it supports the claim, in that population and measurement context.
 6. **The classes are honest:**
@@ -72,19 +73,21 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
     - the camera gives pulse, not HRV;
     - no numeric pacer in the app;
     - Apple Watch wording uses only the official facts.
-11. **Byline** follows [07-byline.md](07-byline.md): `reviewer` is `null` unless Yakiv says Valentin Zhigulin read the page; Yakiv gives the `lastReviewed` date.
+11. **Facts read naturally:** no repeated term or idea around any `{{fact:…}}` (the check catches the common cases; read the rest).
+12. **Image:** `imageAlt` and `imagePrompt` follow [10-image-style.md](10-image-style.md). When Yakiv sends the file, save it as `public/images/science/<slug>.jpg` and set `image`.
+13. **Byline** follows [07-byline.md](07-byline.md): `reviewer` is `null` unless Yakiv says Valentin Zhigulin read the page; Yakiv gives the `lastReviewed` date.
 
 ## D. Publish
 
-12. Run `npx tsx scripts/check-science-content.ts --publish`; it must print OK with no PENDING items. Then build in full (`npm run build`, including `validate-seo`) and run `node scripts/audit-structure.mjs`.
+14. Run `npx tsx scripts/check-science-content.ts --publish`; it must print OK with no PENDING items. Then build in full (`npm run build`, including `validate-seo`) and run `node scripts/audit-structure.mjs`.
     - 0 broken links;
     - the page is in the sitemap;
     - canonical and JSON-LD are correct.
-13. Commit to `main` (one page per commit) and push once.
-14. After the deploy (8–12 minutes), check the live URL.
-15. **Add the planned links** to the new page (audit §5):
+15. Commit to `main` (one page per commit) and push once.
+16. After the deploy (8–12 minutes), check the live URL.
+17. **Add the planned links** to the new page (audit §5):
     - glossary “Read the science →”;
     - tool `SourcesSection`;
     - first mention in the related articles;
     - `llms.txt`.
-16. Report to Yakiv: what was published, what was fixed, open questions.
+18. Report to Yakiv: what was published, what was fixed, open questions.

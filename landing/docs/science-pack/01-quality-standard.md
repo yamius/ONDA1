@@ -227,3 +227,30 @@ If you need a number or a source that is not in [03-facts.md](03-facts.md) or [0
    - removes the entry from `proposals`.
 
 The same applies to an existing fact whose status is `proposed` in [03-facts.md](03-facts.md): you may use it in a draft, but the page cannot be published until it is approved.
+
+## 1.12 Writing with facts — no repeats
+
+A fact is inserted as a complete phrase. Many definitions start with the term itself (`hrv.rmssd.definition` → “RMSSD — the root mean square of successive differences between heartbeats”). Build the sentence so the fact reads naturally and nothing is said twice.
+
+| Bad (renders with a repeat) | Good |
+|---|---|
+| “The standard definition is {{fact:hrv.rmssd.definition}}.” → “…definition is RMSSD — the root mean square…” | “In the field’s measurement standards it is defined precisely: {{fact:hrv.rmssd.definition}}.” |
+| “RMSSD is usually paired with SDNN, whose standard definition is {{fact:hrv.sdnn.definition}}.” → names SDNN twice | “It is usually paired with a second time-domain metric — {{fact:hrv.sdnn.definition}}.” |
+| “Vagal tone, as research shows, {{fact:claim.vagalTone}}” → grammar breaks | “The framing matters. {{fact:claim.vagalTone}}.” |
+
+**How to check:** read the sentence with the fact’s text (from [03-facts.md](03-facts.md)) pasted in. If a word or idea appears twice, or the grammar breaks, rewrite it. The automatic check flags two cases:
+- the term the fact starts with already appears earlier in the same sentence;
+- the fact directly follows “definition is”, “defined as”, “stands for” or “means”.
+
+## 1.13 Exact quotes in the evidence map
+
+Every evidence-map row has a **`quote`**: a short, exact sentence or phrase (about 15–300 characters) copied from the cited source, which states the claim or the number. Rules:
+- **Copy, don’t paraphrase.** Use quotation-mark-free plain text, exactly as in the abstract or full text. Add the location if useful (`quote: "…" (Results, para 2)`).
+- **One source must actually say it.** Don’t cite a general review for a specific detail it does not discuss. On `rmssd`, alcohol, caffeine, late workouts and illness were cited to a general HRV overview. If none of your sources states the detail, do one of these:
+  - find a source that does and propose it (§1.11);
+  - drop the detail;
+  - write it as general context without a citation-backed claim.
+- **For official sources,** quote the documentation sentence (for example, Apple’s definition of the data type).
+- **Facts already carry their source.** For a row that restates an approved fact, quote the source passage behind that fact.
+
+The check requires a `quote` on every row. Claude Code compares quotes with the source before publishing.

@@ -29,6 +29,8 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 | 7 | [07-byline.md](07-byline.md) | Editor and reviewer rules |
 | 8 | [08-handoff-checklist.md](08-handoff-checklist.md) | What Mistral checks and writes when handing in a file |
 | 9 | [09-acceptance-checklist.md](09-acceptance-checklist.md) | What Claude Code checks before publishing |
+| 10 | [10-image-style.md](10-image-style.md) | Hero image: light scientific style, `imageAlt` and `imagePrompt` with examples |
+| 11 | [11-lessons-first-page.md](11-lessons-first-page.md) | Lessons from `concepts/rmssd` — what needed fixing and the rules that now prevent it |
 
 **For Mistral: read one file — [`MISTRAL.md`](MISTRAL.md).** It contains this whole pack in one document (generated from the files below by `npx tsx scripts/science-pack-bundle.ts`; never edit it by hand). Published so far: `concepts/rmssd` (see [06-mvp-pages.md](06-mvp-pages.md)).
 
@@ -53,5 +55,6 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 | 2026-10-04 | `relatedPlanned` for unwritten science pages; shown automatically once published. |
 | 2026-10-04 | Proposals block: missing facts/sources proposed in the file; drafts pass, publishing is blocked until Yakiv approves. |
 | 2026-10-04 | Hand-off includes the real check log when Mistral can run scripts. |
+| 2026-10-04 | After `rmssd`: no repeats around facts (auto-checked), exact `quote` per evidence row (required), `imageAlt` + `imagePrompt` in the light scientific style (required), lessons file. |
 
 Background (not rules): the original specs are in `D:\_ONDA\_Sciense\` (001–005), and the audit with the page decisions is [`../science-audit.md`](../science-audit.md).

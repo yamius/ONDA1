@@ -74,6 +74,8 @@ const pages = publishable.map((r) => {
     metaDescription: String(fm.metaDescription),
     shortAnswer: resolveFacts(String(fm.shortAnswer).trim().replace(/\s+/g, ' '), where),
     keyPoints: (fm.keyPoints as string[]).map((k) => resolveFacts(k, where)),
+    image: fm.image ? String(fm.image) : null,
+    imageAlt: fm.imageAlt ? String(fm.imageAlt) : null,
     editor: String(fm.editor),
     reviewer: fm.reviewer ?? null,
     lastReviewed: fm.lastReviewed ? String(fm.lastReviewed) : null,
@@ -104,7 +106,7 @@ writeFileSync(
     `export interface ScienceSource { id: string; cite: string; title: string; journal: string | null; year: number | null; doi: string | null; pmid: string | null; url: string | null; type: string }\n` +
     `export interface ScienceEvidence { claim: string; sources: string[]; class: string; limitation: string }\n` +
     `export interface ScienceLink { href: string; label: string; type: string }\n` +
-    `export interface SciencePageData { kind: ScienceKind; slug: string; title: string; metaTitle: string; metaDescription: string; shortAnswer: string; keyPoints: string[]; editor: string; reviewer: string | null; lastReviewed: string | null; dateModified: string; body: string; sources: ScienceSource[]; evidenceMap: ScienceEvidence[]; related: ScienceLink[] }\n` +
+    `export interface SciencePageData { kind: ScienceKind; slug: string; title: string; metaTitle: string; metaDescription: string; shortAnswer: string; keyPoints: string[]; image: string | null; imageAlt: string | null; editor: string; reviewer: string | null; lastReviewed: string | null; dateModified: string; body: string; sources: ScienceSource[]; evidenceMap: ScienceEvidence[]; related: ScienceLink[] }\n` +
     `export const SCIENCE_PAGES: SciencePageData[] = ${JSON.stringify(pages, null, 1)}\n`,
 )
 console.log(`[science] generated ${pages.length} page(s)${skipped.length ? `; NOT published (pending): ${skipped.join('; ')}` : ''}`)

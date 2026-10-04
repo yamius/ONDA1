@@ -29,6 +29,14 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 - [ ] Body sections in the order of [01-quality-standard.md](01-quality-standard.md) §1.7, including “What it does not tell you” and the medical line.
 - [ ] “In ONDA” is factual, checked against `docs/onda-facts-source-of-truth.md`, and has no promotion.
 
+**Writing with facts, quotes and image** (lessons from `rmssd`)
+- [ ] Facts read naturally: no term repeated before a fact that starts with it, no “definition is {{fact:…definition}}” ([01-quality-standard.md](01-quality-standard.md) §1.12). I read each sentence with the fact text pasted in.
+- [ ] Every evidence-map row has a `quote` — an exact sentence from the cited source that states the claim. No specific detail (alcohol, caffeine, training, illness, a device behaviour…) is cited to a source that does not discuss it ([01-quality-standard.md](01-quality-standard.md) §1.13).
+- [ ] `imageAlt` (40–200 characters) and `imagePrompt` written in the light scientific style ([10-image-style.md](10-image-style.md)); `image` left out.
+- [ ] Unwritten science pages are in `relatedPlanned` as a flat list; no inline links to them.
+- [ ] `official` sources only in rows with `claimType: device` or `regulatory`; methodological recommendations use class `guideline` with a guideline source.
+- [ ] Any missing number or source is in `proposals` and shown as `{{proposed:P…}}`, with value, scope, DOI/PMID/URL and quote or location.
+
 **Links**
 - [ ] 3–6 links in `related`, all to pages that exist. Unwritten MVP science pages go in `relatedPlanned`, not in `related` or inline links.
 - [ ] The page does not repeat what the overlapping articles own.

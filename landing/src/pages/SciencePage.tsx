@@ -10,6 +10,7 @@ import remarkGfm from 'remark-gfm'
 import rehypeSlug from 'rehype-slug'
 import { SCIENCE_PAGES, SCIENCE_KINDS, type SciencePageData, type ScienceKind, type ScienceSource } from '../generated/science-pages'
 import { NotFoundPage } from './NotFoundPage'
+import { OptimizedImage } from '../components/OptimizedImage'
 
 const SITE_URL = 'https://onda-life.com'
 const OG_IMAGE = `${SITE_URL}/onda-life-hrv-consciousness-hero.png`
@@ -35,6 +36,8 @@ const CLASS_LABEL: Record<string, string> = {
 }
 
 const pageUrl = (p: Pick<SciencePageData, 'kind' | 'slug'>) => `${SITE_URL}/science/${p.kind}/${p.slug}`
+/** Short entity name for breadcrumbs: the title before an em/en dash. */
+export const scienceShortName = (title: string) => title.split(/\s[—–]\s/)[0]
 const findPage = (kind?: string, slug?: string) => SCIENCE_PAGES.find((p) => p.kind === kind && p.slug === slug)
 const kindsWithPages = () => SCIENCE_KINDS.filter((k) => SCIENCE_PAGES.some((p) => p.kind === k))
 const fmtDate = (d: string) => new Date(`${d}T12:00:00Z`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' })
@@ -51,12 +54,14 @@ export function sciencePaths(): string[] {
 }
 
 /** Title/description/JSON-LD for a /science route (prerender + client). undefined = not a science page. */
-export function scienceMeta(route: string): { title: string; description: string; ogType: 'website' | 'article'; jsonLd: Record<string, unknown>[] } | undefined {
+export function scienceMeta(route: string): { title: string; description: string; ogType: 'website' | 'article'; jsonLd: Record<string, unknown>[]; image?: string; imageAlt?: string; breadcrumbs: { name: string; url: string }[] } | undefined {
   const [, root, kind, slug] = route.split('/')
   if (root !== 'science') return undefined
   const isPartOf = { '@type': 'WebSite', '@id': `${SITE_URL}#website`, name: 'ONDA Life', url: SITE_URL }
+  const crumbs = [{ name: 'Home', url: SITE_URL }, { name: 'Science', url: `${SITE_URL}/science` }]
   if (!kind) {
     return {
+      breadcrumbs: crumbs,
       title: `${SCIENCE_HUB_TITLE} | ONDA Life`,
       description: SCIENCE_HUB_DESC,
       ogType: 'website',
@@ -69,8 +74,10 @@ export function scienceMeta(route: string): { title: string; description: string
   }
   if (!(SCIENCE_KINDS as string[]).includes(kind)) return undefined
   const info = KIND_INFO[kind as ScienceKind]
+  crumbs.push({ name: info.label, url: `${SITE_URL}/science/${kind}` })
   if (!slug) {
     return {
+      breadcrumbs: crumbs,
       title: `${info.label} — ONDA Science | ONDA Life`,
       description: `ONDA Science ${info.label.toLowerCase()}: ${info.desc}`,
       ogType: 'website',
@@ -108,7 +115,9 @@ export function scienceMeta(route: string): { title: string; description: string
   }
   if (p.kind === 'concepts') article.about = { '@type': 'DefinedTerm', name: p.title.split(/\s[—–:-]\s/)[0], description: p.shortAnswer, url: pageUrl(p) }
   if (p.reviewer) { article.reviewedBy = { '@type': 'Person', name: p.reviewer }; if (p.lastReviewed) article.lastReviewed = p.lastReviewed }
-  return { title: `${p.metaTitle} | ONDA Life`, description: p.metaDescription, ogType: 'article', jsonLd: [article] }
+  if (p.image) article.image = { '@type': 'ImageObject', url: `${SITE_URL}${p.image}`, ...(p.imageAlt ? { caption: p.imageAlt } : {}) }
+  crumbs.push({ name: scienceShortName(p.title), url: pageUrl(p) })
+  return { title: `${p.metaTitle} | ONDA Life`, description: p.metaDescription, ogType: 'article', jsonLd: [article], breadcrumbs: crumbs, ...(p.image ? { image: `${SITE_URL}${p.image}`, imageAlt: p.imageAlt ?? undefined } : {}) }
 }
 
 function setMeta(name: string, content: string, isProperty = false) {
@@ -132,7 +141,7 @@ function useScienceMeta(route: string) {
     setMeta('og:description', m.description, true)
     setMeta('og:type', m.ogType, true)
     setMeta('og:url', `${SITE_URL}${route}`, true)
-    setMeta('og:image', OG_IMAGE, true)
+    setMeta('og:image', m.image ?? OG_IMAGE, true)
   }, [route])
 }
 
@@ -230,7 +239,7 @@ function Entry({ p }: { p: SciencePageData }) {
     <main className="mx-auto max-w-3xl px-4 pb-24 md:px-6">
       <article>
         <header className="border-b border-white/10 pt-6 pb-8">
-          <Crumbs items={[{ to: '/science', label: 'Science' }, { to: `/science/${p.kind}`, label: KIND_INFO[p.kind].label }, { label: p.title.split(/\s[—–]\s/)[0] }]} />
+          <Crumbs items={[{ to: '/science', label: 'Science' }, { to: `/science/${p.kind}`, label: KIND_INFO[p.kind].label }, { label: scienceShortName(p.title) }]} />
           <h1 className="mb-4 text-3xl font-bold tracking-tight md:text-4xl">{p.title}</h1>
           <p className="font-mono text-xs text-white/45">
             {p.editor} — editor
@@ -238,6 +247,12 @@ function Entry({ p }: { p: SciencePageData }) {
             {' · '}Updated {fmtDate(p.dateModified)}
           </p>
         </header>
+
+        {p.image && (
+          <figure className="mt-8 overflow-hidden rounded-xl border border-white/10">
+            <OptimizedImage src={p.image} alt={p.imageAlt ?? ''} priority width={1024} height={768} className="w-full object-cover" />
+          </figure>
+        )}
 
         <section aria-label="Short answer" className="mt-8 rounded border border-terminal-green/30 bg-terminal-green/5 p-5">
           <div className="mb-2 font-mono text-[10px] uppercase tracking-widest text-terminal-green/80">Short answer</div>

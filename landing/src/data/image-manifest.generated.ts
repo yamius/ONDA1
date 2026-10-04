@@ -1888,6 +1888,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 2560,
     "height": 1440
   },
+  "/images/articles/world-mental-health-day-2026-lived-experience.avif": {
+    "width": 1600,
+    "height": 686
+  },
+  "/images/articles/world-mental-health-day-2026-lived-experience.png": {
+    "width": 1600,
+    "height": 686
+  },
+  "/images/articles/world-mental-health-day-2026-lived-experience.webp": {
+    "width": 1600,
+    "height": 686
+  },
   "/images/articles/yoga-breathing-diabetes-blood-sugar.avif": {
     "width": 1920,
     "height": 820
@@ -2247,6 +2259,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
   "/images/protein-intake-muscle-protein-synthesis.webp": {
     "width": 1915,
     "height": 821
+  },
+  "/images/science/rmssd.avif": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/rmssd.jpg": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/rmssd.webp": {
+    "width": 1024,
+    "height": 768
   },
   "/images/topics/brain-focus-aging.avif": {
     "width": 1600,

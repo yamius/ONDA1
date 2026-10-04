@@ -38,6 +38,8 @@ const SOURCE_TYPES = [...SCIENTIFIC_TYPES, 'official']
 const CLASSES = ['established', 'guideline', 'context-dependent', 'emerging', 'debated', 'unknown']
 const CLAIM_TYPES = ['definition', 'measurement', 'physiology', 'device', 'regulatory', 'efficacy', 'safety', 'other']
 const OFFICIAL_CLAIM_TYPES = ['device', 'regulatory']
+/** Published before evidence quotes became mandatory (2026-10-04); every other page needs a quote per row. */
+const QUOTE_GRANDFATHERED = new Set(['concepts/rmssd'])
 const EFFICACY_WORDS = /\b(effective|efficacy|improv\w*|reduc\w*|lower\w*|increas\w*|rais\w*|treat\w*|works?|benefit\w*|help\w*|relie\w*|outcome\w*)\b/i
 
 const argv = process.argv.slice(2)
@@ -160,6 +162,12 @@ async function main() {
     if (fm.editor !== 'Yakiv Bilenko') err(rel, 'editor must be "Yakiv Bilenko"')
     if (fm.reviewer != null && fm.reviewer !== 'Valentin Zhigulin') err(rel, 'reviewer must be null or "Valentin Zhigulin"')
     if (fm.reviewer != null && !fm.lastReviewed) err(rel, 'reviewer set without lastReviewed')
+    if (!fm.imageAlt || String(fm.imageAlt).length < 40 || String(fm.imageAlt).length > 200) err(rel, 'imageAlt required: one plain sentence, 40–200 characters, describing what the image shows')
+    if (!fm.imagePrompt || String(fm.imagePrompt).length < 80) err(rel, 'imagePrompt required (≥ 80 characters) in the light scientific style — see the image style guide')
+    if (fm.image != null) {
+      if (!/^\/images\/science\/[a-z0-9-]+\.(jpg|png|webp)$/.test(String(fm.image))) err(rel, 'image must be /images/science/<slug>.jpg|png|webp (set by Claude Code when the image file arrives)')
+      else if (!existsSync(join(ROOT, 'public', String(fm.image)))) err(rel, `image file public${fm.image} does not exist`)
+    } else pend(rel, 'no image yet — Yakiv supplies the file, Claude Code sets image')
 
     // 2. sources
     const ids = new Set<string>()
@@ -190,6 +198,7 @@ async function main() {
       if (!Array.isArray(row.sources) || !row.sources.length) err(rel, `${label}: needs sources`)
       for (const s of row.sources || []) if (!ids.has(s)) err(rel, `${label}: cites unknown ${s}`)
       if (!row.limitation) err(rel, `${label}: needs a limitation`)
+      if (!QUOTE_GRANDFATHERED.has(`${fm.kind}/${fm.slug}`) && (!row.quote || String(row.quote).trim().length < 15)) err(rel, `${label}: needs quote — a short exact quotation from the cited source that states this claim`)
       if (row.claimType != null && !CLAIM_TYPES.includes(row.claimType)) err(rel, `${label}: claimType must be one of ${CLAIM_TYPES.join(', ')}`)
       const usesOfficial = (row.sources || []).some((s: string) => official.has(s))
       if (usesOfficial) {
@@ -220,6 +229,15 @@ async function main() {
       const f = FACTS[id]
       if (!f) err(rel, `unknown fact ${id}`)
       else if (f.status !== 'approved') pend(rel, `fact ${id} is proposed, not approved yet`)
+    }
+    // Fact framing: don't repeat what the fact already says (“the definition is {{fact:x.definition}}” → “…definition is RMSSD — the root…”).
+    for (const m of body.matchAll(/\{\{fact:([a-zA-Z0-9.\-]+)\}\}/g)) {
+      const f = FACTS[m[1]]
+      if (!f) continue
+      const before = body.slice(Math.max(0, m.index! - 120), m.index!).split(/[.!?\n]\s/).pop() ?? ''
+      const term = f.display.match(/^(\S+) — /)?.[1]
+      if (term && before.includes(term)) err(rel, `{{fact:${m[1]}}} starts with “${term} —”, and the sentence already names ${term}: “…${before.trim().slice(-50)}” — rebuild the sentence so the term appears once`)
+      else if (/\b(definition (is|of [^,]+ is)|defined as|stands for|means)\s*$/i.test(before)) err(rel, `{{fact:${m[1]}}} is framed by “${before.trim().slice(-30)}”, which repeats what the fact itself says — let the fact carry the sentence`)
     }
     for (const m of body.matchAll(/\{\{proposed:([^}]+)\}\}/g)) if (!proposals.has(m[1])) err(rel, `{{proposed:${m[1]}}} has no matching entry in proposals`)
     const stray = [...stripAllowed(body).matchAll(/[^\n]{0,30}\d[^\n]{0,30}/g)].map((x) => x[0].trim())

@@ -21,6 +21,8 @@ const PARTS = [
   '07-byline.md',
   '08-handoff-checklist.md',
   '09-acceptance-checklist.md',
+  '10-image-style.md',
+  '11-lessons-first-page.md',
 ]
 const CHECK = process.argv.includes('--check')
 if (!CHECK) execSync('npx tsx scripts/science-pack-facts.ts', { stdio: 'inherit' })
@@ -39,8 +41,8 @@ const intro = `# ONDA Science — ALL rules for writing pages (single file for M
 
 1. You have **read-only** access to the repository for context. Do not push, commit or open pull requests.
 2. Write **one page as one Markdown file**, starting from the template in section 2, for one of the 13 pages in section 6. English only.
-3. Every number goes through \`{{fact:…}}\` (section 3) or a proposal \`{{proposed:P…}}\` (section 1, §1.11). Sources need a DOI or PMID; manufacturer/regulator documents use type \`official\` and only for device/regulatory facts.
-4. Before handing in, go through the hand-off checklist (section 8). If you can run Node, run \`npx tsx scripts/check-science-content.ts --file <your-file.md>\` from \`landing/\` and attach the log; if you cannot, say so.
+3. Read section 11 (lessons from the first page) — it lists the mistakes to avoid. Every number goes through \`{{fact:…}}\` (section 3) or a proposal \`{{proposed:P…}}\` (section 1, §1.11). Sources need a DOI or PMID; manufacturer/regulator documents use type \`official\` and only for device/regulatory facts.
+4. Write \`imageAlt\` and \`imagePrompt\` (section 10) and an exact \`quote\` for every evidence-map row (section 1, §1.13). Before handing in, go through the hand-off checklist (section 8). If you can run Node, run \`npx tsx scripts/check-science-content.ts --file <your-file.md>\` from \`landing/\` and attach the log; if you cannot, say so.
 5. Send the file and the hand-off note to Yakiv. Claude Code checks it against section 9 and publishes it.
 
 ## Contents

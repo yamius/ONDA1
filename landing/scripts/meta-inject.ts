@@ -1671,7 +1671,7 @@ function getMetaForRouteBase(route: string): RouteMeta {
   // MedicalWebPage (would imply medical claims).
   if (route === '/science' || route.startsWith('/science/')) {
     const sm = scienceMeta(route)
-    if (sm) return { title: sm.title, description: sm.description, url, breadcrumbs, ogType: sm.ogType, jsonLd: sm.jsonLd }
+    if (sm) return { title: sm.title, description: sm.description, url, breadcrumbs: sm.breadcrumbs, ogType: sm.ogType, jsonLd: sm.jsonLd, ...(sm.image ? { image: sm.image, imageAlt: sm.imageAlt } : {}) }
   }
   if (route === '/ai-apps') {
     return {

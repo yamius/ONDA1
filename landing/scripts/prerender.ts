@@ -1106,6 +1106,9 @@ for (const route of routes) {
       return clamped === decoded ? `<title>${inner}</title>` : `<title>${escAttr(clamped)}</title>`
     })
 
+    // ONDA Science is EN-only: no og:locale:alternate (the template ships them for localized pages).
+    if (route === '/science' || route.startsWith('/science/')) out = out.replace(/\s*<meta property="og:locale:alternate"[^>]*>/g, '')
+
     const outDir = route === '/' ? distDir : join(distDir, route.slice(1))
     mkdirSync(outDir, { recursive: true })
     const outPath = join(outDir, 'index.html')
