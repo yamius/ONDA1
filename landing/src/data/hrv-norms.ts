@@ -9,7 +9,8 @@
  * tone (and therefore RMSSD) is highest. See HRV_METHODOLOGY for how the bands
  * were built and why night-time medians run above daytime lab figures.
  *
- * RMSSD declines roughly 3–5 ms per decade. Intended for an EDUCATIONAL
+ * Medians fall from one age band to the next; the step is computed from this
+ * table in science/facts.ts (hrv.age.trend) — never type it by hand. Intended for an EDUCATIONAL
  * interpreter, not diagnosis: an individual's own trend and baseline matter far
  * more than where a single reading falls on a population curve. Not medical advice.
  */
@@ -131,7 +132,7 @@ const TIERS: Array<{ max: number; tier: HrvTier; label: string }> = [
 
 /** Methodology for the SDNN (Apple Watch) table. */
 export const SDNN_METHODOLOGY =
-  'The SDNN table comes straight from Voss et al. 2015 (n ≈ 1,900 healthy adults, 5-minute resting ECG lying down): we pooled the published decade means ± SD for women (Table 5) and men (Table 7), weighted by group size, and converted them to percentiles with a log-normal fit, because SDNN is right-skewed. The youngest band uses the 25–34 data and the oldest the 65–74 data. Apple Watch reports SDNN from short (~1 minute) readings taken several times a day and at night, so single values scatter more than a 5-minute lab recording — compare your weekly average, not one reading.'
+  'The SDNN table comes straight from Voss et al. 2015 (n ≈ 1,900 healthy adults, 5-minute resting ECG lying down): we pooled the published decade means ± SD for women (Table 5) and men (Table 7), weighted by group size, and converted them to percentiles with a log-normal fit, because SDNN is right-skewed. The youngest band uses the 25–34 data and the oldest the 65–74 data. Apple Watch reports SDNN from short (~1 minute) readings taken several times a day and at night (older models; Series 12 and Ultra 4 on watchOS 27 measure as often as every five minutes), so single values scatter more than a 5-minute lab recording — compare your weekly average, not one reading.'
 
 export type HrvMetric = 'rmssd' | 'sdnn'
 

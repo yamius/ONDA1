@@ -45,7 +45,7 @@ const appleWatchVsFitbit: HeadToHead = {
     },
     {
       q: 'Should I buy the Apple Watch Series 11 or Series 12 for HRV?',
-      a: 'The Series 12. Apple says its new sensor samples HRV far more often and adds a Recovery HRV (RMSSD) value, fixing the Series 11’s main HRV weakness. The Series 11 is still a good smartwatch if you find it well discounted.',
+      a: 'The Series 12. Apple says its new sensor samples HRV far more often and adds a Recovery HRV value, fixing the Series 11’s main HRV weakness. The Series 11 is still a good smartwatch if you find it well discounted.',
     },
   ],
   content: `## The short answer
@@ -80,7 +80,7 @@ Full details in our [Fitbit Charge 6 review](/reviews/fitbit-charge-6).
 
 ## What about the Apple Watch Series 12?
 
-In September 2026 Apple replaced the Series 11 with the [Apple Watch Series 12](/reviews/apple-watch-series-12). Apple says its new sensor samples HRV much more often and adds a Recovery HRV (RMSSD) value next to the usual SDNN — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv). If you are buying new for HRV, compare [Apple Watch Series 12 vs Fitbit Charge 6](/reviews/vs/apple-watch-series-12-vs-fitbit-charge-6).
+In September 2026 Apple replaced the Series 11 with the [Apple Watch Series 12](/reviews/apple-watch-series-12). Apple says its new sensor samples HRV much more often and adds a Recovery HRV value next to Overall HRV — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv). If you are buying new for HRV, compare [Apple Watch Series 12 vs Fitbit Charge 6](/reviews/vs/apple-watch-series-12-vs-fitbit-charge-6).
 
 ## How should you read wrist HRV?
 
@@ -96,7 +96,7 @@ Both devices measure HRV optically at the wrist, which is fine for multi-day tre
 - [Fitbit Charge 6 — Google Store](https://store.google.com/product/fitbit_charge_6)`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-03',
+  dateModified: '2026-10-04',
 }
 
 export default appleWatchVsFitbit

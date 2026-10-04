@@ -58,10 +58,10 @@ If training is the reason you are buying — structured workouts, recovery hours
 
 ## 2026 update
 
-This is the Series 11. In September 2026 Apple launched the [Apple Watch Series 12](/reviews/apple-watch-series-12), whose new Health Sensing System samples HRV about 24× more often and adds an RMSSD-based Recovery HRV — narrowing much of the HRV gap to Garmin. If you are buying new, see [Series 12 vs Garmin Venu 4](/reviews/vs/apple-watch-series-12-vs-garmin-venu-4); the Series 11 remains a good value while discounted.`,
+This is the Series 11. In September 2026 Apple launched the [Apple Watch Series 12](/reviews/apple-watch-series-12), whose new Health Sensing System samples HRV about 24× more often and adds a Recovery HRV — narrowing much of the HRV gap to Garmin. If you are buying new, see [Series 12 vs Garmin Venu 4](/reviews/vs/apple-watch-series-12-vs-garmin-venu-4); the Series 11 remains a good value while discounted.`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-02',
+  dateModified: '2026-10-04',
 }
 
 export default appleWatchVsGarminVenu4

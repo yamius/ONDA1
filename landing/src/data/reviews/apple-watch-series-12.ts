@@ -11,10 +11,10 @@ const appleWatchSeries12: ToolReview = {
   verdict:
     'The best Apple Watch yet for HRV: 24× more frequent sampling and a Recovery-vs-Overall HRV split — but still a smartwatch first, and battery still competes with overnight wear.',
   summary:
-    'The Series 12’s all-new Health Sensing System is the first Apple Watch update to take HRV seriously: it samples HRV up to 24× more often, splits it into Recovery HRV (RMSSD) and Overall HRV (SDNN), and adds hypertension notifications. It closes much of the gap to dedicated trackers — but a ~1-day battery still makes overnight wear a compromise, and a finger ring is still more precise for a continuous overnight record.',
+    'The Series 12’s all-new Health Sensing System is the first Apple Watch update to take HRV seriously: it samples HRV up to 24× more often, splits it into Recovery HRV and Overall HRV, and adds hypertension notifications. It closes much of the gap to dedicated trackers — but a ~1-day battery still makes overnight wear a compromise, and a finger ring is still more precise for a continuous overnight record.',
   overallScore: 7.7,
   scores: [
-    { criterionId: 'hrv-accuracy', score: 7.0, note: 'HRV is now sampled about every 5 minutes (24× more often) and split into Recovery HRV (RMSSD) and Overall HRV (SDNN) — a real step up from the Series 11’s sparse spot-checks, though still wrist optical rather than a continuous ring or ECG.' },
+    { criterionId: 'hrv-accuracy', score: 7.0, note: 'HRV is now sampled about every 5 minutes (24× more often) and split into Recovery HRV and Overall HRV — a real step up from the Series 11’s sparse spot-checks, though still wrist optical rather than a continuous ring or ECG.' },
     { criterionId: 'sensor', score: 9.0, note: 'The all-new Health Sensing System: larger power-efficient green LEDs reading heart rate every 5 seconds, a single-lead ECG, and optical hypertension detection. The strongest sensor stack on any watch here.' },
     { criterionId: 'sleep-accuracy', score: 7.0, note: 'Overnight Vitals now analyse Recovery HRV against your personal baseline. Sleep tracking is improved but still behind dedicated sleep trackers, and battery discourages every-night wear.' },
     { criterionId: 'data-access', score: 8.0, note: 'HealthKit is comparatively open, and it now writes a native RMSSD type (heartRateVariabilityRMSSD) alongside SDNN — so third-party apps can finally read the recovery-grade metric.' },
@@ -23,7 +23,7 @@ const appleWatchSeries12: ToolReview = {
     { criterionId: 'value', score: 8.0, note: 'From $399, a one-time purchase with no subscription, and a genuinely multi-purpose device with ECG and hypertension notifications for the money.' },
   ],
   pros: [
-    'HRV sampled 24× more often, split into Recovery (RMSSD) and Overall (SDNN)',
+    'HRV sampled 24× more often, split into Recovery and Overall',
     'All-new Health Sensing System: ECG plus optical hypertension notifications',
     'Native RMSSD in HealthKit — third-party recovery apps can finally read it',
     'No subscription; the most capable everyday smartwatch here',
@@ -45,11 +45,11 @@ const appleWatchSeries12: ToolReview = {
 
 The Apple Watch Series 12, announced in September 2026, is the first Apple Watch whose headline upgrade is *health sensing*, not the screen or chip. The all-new Health Sensing System uses larger, power-efficient green LEDs to read heart rate every five seconds and to sample [HRV](/glossary/heart-rate-variability) up to **24× more often** than before — where earlier watches captured it roughly once every two hours.
 
-More importantly, it changes *which* HRV number you get. The Series 12 now reports two: **Recovery HRV** (based on RMSSD, for daily stress and recovery, analysed against your personal baseline in overnight Vitals) and **Overall HRV** (the historical SDNN metric, for broader cardiovascular context). Under the hood, HealthKit gained a native \`heartRateVariabilityRMSSD\` type — the same family of metric Whoop, Oura and Garmin build their recovery scores on — so third-party apps can finally read a recovery-grade number from an Apple Watch. It also adds **hypertension notifications**, using the optical sensor to analyse how blood vessels respond to heartbeats over 30-day windows. For the full breakdown of the two-number change, see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
+More importantly, it changes *which* HRV number you get. The Series 12 now reports two: **Recovery HRV** (for daily stress and recovery, analysed against your personal baseline in overnight Vitals) and **Overall HRV** (for broader health insights, including cardiovascular health). Apple has not published the formula behind either. Under the hood, HealthKit gained a native \`heartRateVariabilityRMSSD\` type alongside the long-standing SDNN — the same statistic Whoop, Oura and Garmin build their recovery scores on — so third-party apps can finally read an RMSSD value from an Apple Watch. It also adds **hypertension notifications**, using the optical sensor to analyse how blood vessels respond to heartbeats over 30-day windows. For the full breakdown of the two-number change, see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
 
 ## What are the downsides of Apple Watch Series 12?
 
-The physics haven’t changed as much as the software. It is still a **wrist optical sensor**, which trails a finger-based ring or an ECG chest strap for a clean, continuous overnight HRV record. And the battery — up to about 24 hours, with a 15-minute fast charge giving roughly 12 hours — still means a daily charge that competes with all-night wear, the one place a ring or a multi-week Garmin clearly wins. The two HRV numbers are also easy to conflate: Recovery HRV (RMSSD) reads higher than Overall HRV (SDNN), and they should not be plotted as one line.
+The physics haven’t changed as much as the software. It is still a **wrist optical sensor**, which trails a finger-based ring or an ECG chest strap for a clean, continuous overnight HRV record. And the battery — up to about 24 hours, with a 15-minute fast charge giving roughly 12 hours — still means a daily charge that competes with all-night wear, the one place a ring or a multi-week Garmin clearly wins. The two HRV numbers are also easy to conflate: Recovery HRV reads higher than Overall HRV, and they should not be plotted as one line.
 
 ## Who should buy Apple Watch Series 12?
 
@@ -73,7 +73,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   faq: [
     {
       q: 'Is the Apple Watch Series 12 better for HRV than the Series 11?',
-      a: 'Yes, clearly. The Series 12’s Health Sensing System samples HRV about 24× more often and splits it into Recovery HRV (RMSSD) and Overall HRV (SDNN), analysed against your baseline — a real upgrade over the Series 11’s sparse spot-checks. It also surfaces HRV in the Heart Rate app instead of burying it.',
+      a: 'Yes, clearly. The Series 12’s Health Sensing System samples HRV about 24× more often and splits it into Recovery HRV and Overall HRV, analysed against your baseline — a real upgrade over the Series 11’s sparse spot-checks. It also surfaces HRV in the Heart Rate app instead of burying it.',
     },
     {
       q: 'How much does the Apple Watch Series 12 cost and does it need a subscription?',
@@ -81,7 +81,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
     },
     {
       q: 'Is the Apple Watch Series 12 accurate enough for HRV, or should I get a ring?',
-      a: 'For daily recovery it is now good enough to act on, and Recovery HRV (RMSSD) is comparable in kind to Whoop and Oura. For a clean, continuous overnight HRV record, a finger ring or an ECG chest strap is still more precise, and its ~1-day battery competes with all-night wear.',
+      a: 'For daily recovery it is now good enough to act on, and to line it up with Whoop or Oura you can use the RMSSD value apps can now read from Apple Health (Apple hasn’t confirmed Recovery HRV is RMSSD). For a clean, continuous overnight HRV record, a finger ring or an ECG chest strap is still more precise, and its ~1-day battery competes with all-night wear.',
     },
     {
       q: 'Does the Apple Watch Series 12 detect high blood pressure?',
@@ -90,7 +90,7 @@ The science behind why HRV is the signal worth tracking — and how the body pro
   ],
   relatedSlugs: ['apple-watch-series-11', 'oura-ring-4', 'whoop-5-0', 'garmin-fenix-8'],
   datePublished: '2026-09-18',
-  dateModified: '2026-09-18',
+  dateModified: '2026-10-04',
 }
 
 export default appleWatchSeries12

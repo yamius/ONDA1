@@ -343,7 +343,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
     description:
       'A market map of Apple Watch HRV apps in 2026, split by the job they do — passive tracking, interpretation, or active biofeedback training. Ranked with honest pros and cons by ONDA, and where the passive trackers win instead.',
     intro:
-      'After Apple’s September 2026 Health Sensing System added Recovery HRV (RMSSD) and Overall HRV (SDNN) and started sampling every ~5 minutes, "the best HRV app for Apple Watch" stopped being one question. The market splits into three jobs: apps that measure your HRV, apps that interpret it into a readiness score, and apps that actively train it with live biofeedback. No single app wins all three — so pick by the job you actually want. Here’s the map, with honest pros and cons, and where each one genuinely leads.',
+      'After Apple’s September 2026 Health Sensing System added Recovery HRV and Overall HRV and started sampling every ~5 minutes, "the best HRV app for Apple Watch" stopped being one question. The market splits into three jobs: apps that measure your HRV, apps that interpret it into a readiness score, and apps that actively train it with live biofeedback. No single app wins all three — so pick by the job you actually want. Here’s the map, with honest pros and cons, and where each one genuinely leads.',
     entries: [
       {
         rank: 1,
@@ -433,7 +433,7 @@ export const ONDA_ROUNDUPS: OndaRoundup[] = [
       },
       {
         q: 'What changed with Apple Watch HRV in 2026?',
-        a: 'The September 2026 Series 12 and Ultra 4 split HRV into Recovery HRV (RMSSD) and Overall HRV (SDNN), sampled about every five minutes, and HealthKit added a native RMSSD type. Recovery HRV is the daily-readiness number; it is now closer to what Oura and WHOOP report.',
+        a: 'The September 2026 Series 12 and Ultra 4 split HRV into Recovery HRV and Overall HRV, sampled about every five minutes, and HealthKit added a native RMSSD type. Recovery HRV is the daily-readiness number; Apple has not published its formula, so to compare with Oura and WHOOP use the RMSSD value apps can now read from Apple Health.',
       },
     ],
   },

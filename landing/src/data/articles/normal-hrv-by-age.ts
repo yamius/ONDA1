@@ -70,7 +70,7 @@ A study of wearable data from about 8 million people confirmed the same picture 
 
 A single low number is rarely a reason to worry. Check three things first:
 
-1. **Compare like with like.** RMSSD (rings, straps, Whoop, Garmin, Oura) and SDNN (the standard Apple Watch HRV) are different measures, so use the matching table above. Apple Watch Series 12 also shows an RMSSD-based Recovery HRV — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
+1. **Compare like with like.** RMSSD (rings, straps, Whoop, Garmin, Oura) and SDNN (the standard Apple Watch HRV) are different measures, so use the matching table above. Apple Watch Series 12 also shows a separate Recovery HRV (Apple hasn’t published its formula) — see [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
 2. **Look at your 7-day average**, not one night. One bad night, a drink or a cold can drop HRV sharply.
 3. **Compare with your own baseline.** A sustained drop of more than about 10–20% below your usual range for a week or more is worth attention.
 

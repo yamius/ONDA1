@@ -6,9 +6,9 @@ const series12VsOura5: HeadToHead = {
   productBSlug: 'oura-ring-5',
   title: 'Apple Watch Series 12 vs Oura Ring 5 (2026)',
   description:
-    'Apple Watch Series 12 vs Oura Ring 5 for HRV — Apple’s new RMSSD-based Recovery HRV against Oura’s slimmer, re-sensored 2026 flagship ring. Watch vs ring, weighed axis by axis.',
+    'Apple Watch Series 12 vs Oura Ring 5 for HRV — Apple’s new Recovery HRV against Oura’s slimmer, re-sensored 2026 flagship ring. Watch vs ring, weighed axis by axis.',
   intro:
-    'Both are 2026 hardware and both cost $399 up front. The Series 12’s new Health Sensing System samples HRV about 24× more often and reports an RMSSD-based Recovery HRV — the same family of metric Oura uses. The Oura Ring 5 answers with redesigned sensors, a ~40% slimmer body and a 6–9 day battery. So the question is the honest one: a do-everything smartwatch, or a dedicated overnight ring?',
+    'Both are 2026 hardware and both cost $399 up front. The Series 12’s new Health Sensing System samples HRV about 24× more often and reports a separate Recovery HRV, and Apple Health now carries an RMSSD value — the statistic Oura uses. The Oura Ring 5 answers with redesigned sensors, a ~40% slimmer body and a 6–9 day battery. So the question is the honest one: a do-everything smartwatch, or a dedicated overnight ring?',
   winnerSlug: null,
   verdict:
     'No overall winner — it splits by what you want. For the most precise, hands-off overnight HRV and sleep, the Oura Ring 5 leads on the finger and the 6–9 day battery. For an all-round smartwatch with ECG, hypertension notifications and no subscription, the Series 12 wins — its HRV is finally good enough to act on.',
@@ -18,7 +18,7 @@ const series12VsOura5: HeadToHead = {
     'Choose the Oura Ring 5 if overnight HRV and sleep are the point: finger measurement is more precise, the slim ring is easy to sleep in, and its battery lasts 6–9 days.',
   axes: [
     { name: 'Overnight HRV precision', winner: 'b', note: 'The Oura Ring 5’s overnight RMSSD remains the closest consumer match to an ECG chest strap, now on redesigned sensors with 12 signal pathways. The Series 12 is much improved but still wrist optical.' },
-    { name: 'Recovery-metric comparability', winner: 'tie', note: 'The Series 12’s Recovery HRV is RMSSD-based, the same family Oura uses — so the metrics are comparable in kind, even if absolute numbers still differ.' },
+    { name: 'Recovery-metric comparability', winner: 'tie', note: 'Apple Health now carries an RMSSD value, the statistic Oura uses, so you can compare in kind — Apple hasn’t confirmed Recovery HRV itself is RMSSD, and absolute numbers still differ.' },
     { name: 'Battery / overnight wear', winner: 'b', note: 'The Oura Ring 5 runs 6–9 days per charge; the Series 12’s ~24-hour battery means overnight measurement competes with the daily charge.' },
     { name: 'Everyday smartwatch', winner: 'a', note: 'Apps, a screen, ECG and hypertension notifications — the Series 12 is a full smartwatch; the Oura Ring 5 has no display.' },
     { name: 'Subscription / cost', winner: 'a', note: 'Both start at $399. The Series 12 has no subscription; Oura needs a ~$6/month membership for full data, and premium finishes cost $499.' },
@@ -28,7 +28,7 @@ const series12VsOura5: HeadToHead = {
   faq: [
     {
       q: 'Is the Apple Watch Series 12 or Oura Ring 5 better for HRV?',
-      a: 'For a continuous overnight HRV record, the Oura Ring 5 — finger measurement on redesigned sensors remains the closest consumer match to an ECG strap, and the 6–9 day battery suits all-night wear. The Series 12 is now much closer: its Recovery HRV is RMSSD-based and sampled 24× more often, so it is good enough to act on.',
+      a: 'For a continuous overnight HRV record, the Oura Ring 5 — finger measurement on redesigned sensors remains the closest consumer match to an ECG strap, and the 6–9 day battery suits all-night wear. The Series 12 is now much closer: its Recovery HRV is sampled 24× more often, so it is good enough to act on.',
     },
     {
       q: 'Does the Oura Ring 5 need a subscription?',
@@ -45,14 +45,14 @@ This splits by what you want. The Oura Ring 5 wins for the overnight number itse
 
 ## Why the numbers are now comparable
 
-Earlier Apple Watches reported SDNN sampled sparsely, while Oura built on RMSSD. The Series 12’s Recovery HRV is RMSSD-based and sampled about 24× more often, so it is now the same *kind* of number Oura reports — though absolute values still differ between devices. See [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) and [why HRV reads differently on every device](/articles/hrv-different-every-device).
+Earlier Apple Watches reported SDNN sampled sparsely, while Oura built on RMSSD. The Series 12 samples about 24× more often and adds an RMSSD value to Apple Health — the same *kind* of number Oura reports, though absolute values still differ between devices. Apple hasn’t confirmed Recovery HRV is RMSSD, so compare Oura against that Apple Health value. See [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv) and [why HRV reads differently on every device](/articles/hrv-different-every-device).
 
 ## The honest setup
 
 For many people the answer is both: an Oura Ring for the hands-off overnight trend, and an Apple Watch for everything a ring can’t do. Already own a Ring 4? See [Oura Ring 5 vs Ring 4](/reviews/vs/oura-ring-5-vs-oura-ring-4). For the wider field, see the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-04',
 }
 
 export default series12VsOura5

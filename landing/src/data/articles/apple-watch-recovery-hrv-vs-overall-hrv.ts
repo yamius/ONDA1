@@ -2,9 +2,10 @@ import type { Article } from './types'
 
 /**
  * Timely investigation of Apple's September 2026 HRV overhaul — Series 12 /
- * Ultra 4 Health Sensing System split HRV into Recovery HRV (RMSSD) and
- * Overall HRV (SDNN), and HealthKit added heartRateVariabilityRMSSD as a
- * distinct type. High-intent, freshness-driven AIO target: "recovery HRV vs
+ * Ultra 4 on watchOS 27 split HRV into Recovery HRV and Overall HRV, and
+ * HealthKit added heartRateVariabilityRMSSD as a distinct type. Apple has NOT
+ * published which statistic each variant uses: never state Recovery = RMSSD
+ * or Overall = SDNN as fact (owner rule 2026-10-04: no unofficial facts). High-intent, freshness-driven AIO target: "recovery HRV vs
  * overall HRV", "why did my Apple Watch HRV change", "SDNN vs RMSSD Apple
  * Watch". Facts grounded in named public sources (Apple Newsroom, MacRumors,
  * 9to5Mac, gadgetsandwearables). Honest ONDA tie: live biofeedback ≠ these
@@ -13,7 +14,7 @@ import type { Article } from './types'
 const article: Article = {
   slug: 'apple-watch-recovery-hrv-vs-overall-hrv',
   title: 'Apple Watch Now Shows Two HRV Numbers: Recovery HRV vs Overall HRV',
-  seoTitle: 'Apple Watch Recovery HRV vs Overall HRV (SDNN vs RMSSD) | ONDA Life',
+  seoTitle: 'Apple Watch Recovery HRV vs Overall HRV Explained | ONDA Life',
   description:
     'In September 2026 Apple split Apple Watch HRV into Recovery HRV and Overall HRV, added RMSSD to HealthKit, and started measuring HRV every ~5 minutes. What changed, why there are two numbers, and why you can’t merge the old and new history.',
   category: 'Neural Hardware',
@@ -21,10 +22,10 @@ const article: Article = {
   introStyle: 'slate',
   image: '/images/articles/apple-watch-recovery-hrv-vs-overall-hrv.webp',
   imageAlt:
-    "An Apple Watch emitting two diverging HRV waveforms from the same heartbeats — Recovery HRV (RMSSD) and Overall HRV (SDNN) on different scales, never merged.",
-  imageTitle: "Two HRV numbers — Recovery HRV (RMSSD) vs Overall HRV (SDNN)",
+    "An Apple Watch emitting two diverging HRV waveforms from the same heartbeats — Recovery HRV and Overall HRV, two separate readings, never merged.",
+  imageTitle: "Two HRV numbers — Recovery HRV vs Overall HRV",
   imageCaption:
-    "Apple Watch's two HRV numbers explained — Recovery HRV (RMSSD) versus Overall HRV (SDNN), on different scales from the same heartbeats and never merged.",
+    "Apple Watch's two HRV numbers explained — Recovery HRV versus Overall HRV, two separate readings from the same heartbeats that should never be merged.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'These are passive overnight metrics. Training your HRV in the moment is a different job entirely.',
@@ -38,7 +39,7 @@ const article: Article = {
 
 **Check your number → [HRV Calculator by Age](/tools/hrv)** — see where your HRV sits for your age (RMSSD from Oura, Whoop, Garmin or SDNN from Apple Watch).
 
-> This wasn't a bug. With the Apple Watch Series 12 and Ultra 4, Apple quietly rebuilt how the watch measures HRV — and in the process it changed which *metric* it reports, how *often*, and what the number even means. If your HRV looks different, jumpier, or hard to compare to last month, here is exactly what happened."
+> This wasn't a bug. With the Apple Watch Series 12 and Ultra 4 on watchOS 27, Apple rebuilt how the watch measures HRV — it now reports two HRV variants, measures far more *often*, and gives each number a different job. If your HRV looks different, jumpier, or hard to compare to last month, here is exactly what happened."
 
 ---
 
@@ -56,50 +57,52 @@ More frequent sampling of a noisy signal is why the number can look jumpier than
 
 ## What is the difference between Recovery HRV and Overall HRV?
 
-Recovery HRV is based on RMSSD and tracks day-to-day recovery, while Overall HRV continues Apple's historical SDNN metric over longer windows — the two numbers answer different questions, and the split is not cosmetic (gadgetsandwearables, September 2026):
+Apple describes Recovery HRV as best for daily signals of stress and recovery, and Overall HRV as best for insights on broader health, including cardiovascular health (Apple Newsroom, 9 September 2026):
 
-- **Recovery HRV** — aimed at *day-to-day* stress and recovery. It is the number to watch for "am I recovered today?" and it is the one analysed against your personal overnight baseline. Under the hood it is based on **RMSSD**.
-- **Overall HRV** — a *broader* view of your HRV over longer windows, oriented toward general and cardiovascular-health context rather than daily readiness. This is the continuation of Apple's historical HRV metric, **SDNN**.
+- **Recovery HRV** — aimed at *day-to-day* stress and recovery. It is the number to watch for "am I recovered today?" and it is the one Overnight Vitals compares against your personal baseline.
+- **Overall HRV** — a *broader* view of your HRV, oriented toward general and cardiovascular-health context rather than daily readiness.
 
-So the reason they don't match is simple: **they are different statistics of the same heartbeats.** Recovery HRV (RMSSD) reacts faster to short-term parasympathetic shifts; Overall HRV (SDNN) is a wider, slower measure. Neither is "wrong."
+**What Apple has not said:** Apple has not published the formula behind Recovery HRV or Overall HRV. watchOS 27 added an RMSSD data type to Apple Health alongside the long-standing SDNN type, and Recovery HRV tends to read higher than Overall HRV, but Apple does not say which statistic each variant uses. You will see reviews claim "Recovery HRV = RMSSD" — treat that as an educated guess, not an Apple specification.
+
+So the practical reason they don't match: **they are two different calculations from the same heartbeats, built for different questions.** Neither is "wrong."
 
 ---
 
 ## Why does SDNN vs RMSSD matter?
 
-For years there was a quiet mismatch in the wearable world. Apple Watch stored HRV in [HealthKit](/articles/what-your-apple-watch-records) as **SDNN** — the standard deviation of the intervals between normal heartbeats. But the recovery scores from Whoop, Oura and Garmin are built primarily on **RMSSD** — the root-mean-square of successive differences, which tracks the parasympathetic (vagal) branch more directly.
+For years there was a quiet mismatch in the wearable world. Apple Health's long-standing HRV value in [HealthKit](/articles/what-your-apple-watch-records) is **SDNN** — the standard deviation of the intervals between normal heartbeats. But the recovery scores from Whoop, Oura and Garmin are built primarily on **RMSSD** — the root-mean-square of successive differences, which tracks the parasympathetic (vagal) branch more directly.
 
 That mismatch is exactly why an Apple Watch HRV of, say, 40 never lined up with a Whoop or Oura number — [different devices report different HRV](/articles/hrv-different-every-device) partly because they report *different metrics*.
 
-In 2026 that changed. Alongside the Series 12, **HealthKit added \`heartRateVariabilityRMSSD\` as its own distinct type**, separate from the existing \`heartRateVariabilitySDNN\` — and the two are never aliased or substituted (Apple developer SDK; gadgetsandwearables, September 2026). For the first time, third-party apps can read a native RMSSD number from an Apple Watch, the same family of metric the dedicated recovery trackers use.
+In 2026 that changed. With iOS and watchOS 27, **HealthKit added \`heartRateVariabilityRMSSD\` as its own distinct type**, separate from the existing \`heartRateVariabilitySDNN\` — and the two are never aliased or substituted (Apple HealthKit documentation). For the first time, third-party apps can read a native RMSSD value from Apple Health, the same family of metric the dedicated recovery trackers use. Older Apple Watch models report SDNN only.
 
 ---
 
 ## Can you combine old Apple Watch HRV history with Recovery HRV?
 
-No — because Recovery HRV (RMSSD) and Overall HRV (SDNN) are **different metrics on different scales**, you cannot take your old SDNN history and simply continue it as RMSSD.
+No. Your old Apple Watch history is SDNN, sampled roughly every two hours; Recovery HRV is a new variant, measured as often as every five minutes, whose formula Apple has not published. That makes them **separate series**, not one continuous line.
 
-- Your RMSSD number will usually **differ** from your SDNN number for the same night — in healthy adults RMSSD is typically lower, and SDNN grows with longer recordings. They are on different scales, so don't compare them directly.
-- A chart that splices SDNN months onto RMSSD months is a broken time series. Treat the two as separate lines.
+- Recovery HRV and Overall HRV will usually **differ** for the same night (Recovery HRV tends to read higher), so don't compare them directly.
+- Likewise, SDNN and RMSSD are different statistics on different scales — a chart that splices SDNN months onto RMSSD months is a broken time series. Treat them as separate lines.
 - Give any new baseline time. A personal HRV baseline needs roughly a week to stabilise and closer to a month to become reliable, so the first few weeks after the switch will look unsettled by design.
 
-If your "HRV" appears to have jumped in late September 2026, this is almost certainly why — the metric under the label changed, not your physiology.
+If your "HRV" appears to have jumped in late September 2026, this is almost certainly why — the measurement under the label changed, not your physiology.
 
 ---
 
 ## Section 5: What it means practically
 
-- **For cross-checking Whoop/Oura/Garmin:** use **Recovery HRV (RMSSD)**, not Overall HRV. It is finally the same family of metric, so the numbers are more comparable — though device-to-device differences never fully vanish.
-- **For long-term cardiovascular context:** Overall HRV (SDNN) is the continuity metric.
+- **For cross-checking Whoop/Oura/Garmin (RMSSD-based figures):** compare against the **RMSSD** value apps can now read from Apple Health, and treat Recovery HRV as Apple's daily-recovery view. Apple hasn't confirmed Recovery HRV is RMSSD, and device-to-device differences never fully vanish.
+- **For broader cardiovascular context:** Apple points to Overall HRV.
 - **For daily readiness:** Recovery HRV against your personal baseline is the intended signal — read the *trend*, not a single morning number.
 
-And the honest limit: all of this is still **passive measurement** — the watch reads your nervous system while you sleep. Reading a number, however often, is a different job from *training* the system that produces it. That live, in-the-moment part — following guided breathing while you watch your own heart rhythm respond — is [HRV biofeedback](/hrv-biofeedback), and it runs on the live heartbeat, not the overnight RMSSD/SDNN average. As the ONDA framing puts it: most tools score you *after*; the point of biofeedback is what you can see *during*.
+And the honest limit: all of this is still **passive measurement** — the watch reads your nervous system while you sleep. Reading a number, however often, is a different job from *training* the system that produces it. That live, in-the-moment part — following guided breathing while you watch your own heart rhythm respond — is [HRV biofeedback](/hrv-biofeedback), and it runs on the live heartbeat, not the overnight average. As the ONDA framing puts it: most tools score you *after*; the point of biofeedback is what you can see *during*.
 
-> **The Hack:** After updating, treat your Apple Watch HRV as a fresh start. Track **Recovery HRV (RMSSD)** for daily recovery and comparison with other trackers, keep **Overall HRV (SDNN)** as the long-run line, and don't compare the two to each other — or splice their histories.
+> **The Hack:** After updating, treat your Apple Watch HRV as a fresh start. Use **Recovery HRV** for daily recovery, **Overall HRV** for the broader picture, and don't compare the two to each other — or splice them onto your old SDNN history.
 
 ## Apple Watch vs other HRV trackers
 
-Now that Recovery HRV is comparable with ring and band readings, these head-to-heads weigh the Apple Watch against the main alternatives:
+Now that Apple Health also exposes an RMSSD value, these head-to-heads weigh the Apple Watch against the main alternatives:
 
 - [Apple Watch Series 12 vs Whoop 5.0](/reviews/vs/apple-watch-series-12-vs-whoop-5-0)
 - [Apple Watch Series 12 vs Oura Ring 4](/reviews/vs/apple-watch-series-12-vs-oura-ring-4)
@@ -108,24 +111,25 @@ Now that Recovery HRV is comparable with ring and band readings, these head-to-h
 - [Apple Watch Ultra 4 vs Apple Watch Series 12](/reviews/vs/apple-watch-ultra-4-vs-apple-watch-series-12)
 
 > [ METRIC_MAP ]
-> RECOVERY_HRV = RMSSD → daily recovery, vs personal baseline, ~5-min sampling
-> OVERALL_HRV = SDNN → broader / cardiovascular, historical continuity
+> RECOVERY_HRV → daily stress & recovery, vs personal baseline, up to every 5 min
+> OVERALL_HRV → broader / cardiovascular health
+> FORMULAS: not published by Apple · HealthKit types: SDNN (long-standing) + RMSSD (new in 27)
 > RULE: separate metrics, separate scales — never merge the two histories
 `,
   howToSteps: [
     {
-      name: 'Use Recovery HRV to compare with Whoop, Oura or Garmin',
-      text: 'Recovery HRV is based on RMSSD — the same metric family those recovery trackers use — so it is the number to cross-check against them. Overall HRV (SDNN) is not comparable to them.',
+      name: 'Compare with Whoop, Oura or Garmin carefully',
+      text: 'Those trackers report RMSSD-based figures. Compare them with the RMSSD value apps can now read from Apple Health; Apple has not published whether Recovery HRV itself uses RMSSD.',
       protocolId: 'awhrv-recovery',
     },
     {
       name: 'Keep Overall HRV as your long-term line',
-      text: 'Overall HRV (SDNN) is the continuation of Apple’s historical metric and suits broader, cardiovascular-health context. Do not judge daily readiness from it.',
+      text: 'Apple positions Overall HRV for broader health insights, including cardiovascular health. Do not judge daily readiness from it.',
       protocolId: 'awhrv-overall',
     },
     {
       name: 'Never merge the two histories',
-      text: 'Recovery HRV (RMSSD) and Overall HRV (SDNN) are different statistics on different scales and usually differ (RMSSD typically reads lower), so do not compare them directly. Splicing old SDNN data onto new RMSSD data creates a broken time series.',
+      text: 'Recovery HRV and Overall HRV are separate readings that usually differ (Recovery HRV tends to read higher), so do not compare them directly. Splicing old SDNN history onto the new readings creates a broken time series.',
       protocolId: 'awhrv-nomerge',
     },
     {

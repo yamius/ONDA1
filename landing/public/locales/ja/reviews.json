@@ -1720,7 +1720,7 @@
     "apple-watch-series-12-vs-whoop-5-0": {
       "title": "Apple Watch Series 12とWhoop 5.0を比較｜HRV・リカバリー（2026）",
       "description": "Apple Watch Series 12とWhoop 5.0のHRV比較。総合の勝者なし：リカバリー指導ならWhoop（年$199〜$359）、サブスク不要の$399スマートウォッチならSeries 12。",
-      "intro": "この2つは同じ問いに別々の方法で答えます。2026年9月発売のSeries 12は、ようやく十分な頻度で、しかも適切な指標（RMSSDベースのRecovery HRV）でHRVを測るようになり、サブスク不要のスマートウォッチの中で実用的なリカバリー指標になりました。Whoop 5.0は、夜間の連続HRVとこのカテゴリーで最も的確なリカバリー＆ストレイン指導を軸にゼロから設計された、サブスク専用のバンドです。一方は何でもこなすウォッチ、もう一方は専属コーチです。",
+      "intro": "この2つは同じ問いに別々の方法で答えます。2026年9月発売のSeries 12は、ようやく十分な頻度で、ストレスとリカバリー向けのRecovery HRVも備えてHRVを測るようになり、サブスク不要のスマートウォッチの中で実用的なリカバリー指標になりました。Whoop 5.0は、夜間の連続HRVとこのカテゴリーで最も的確なリカバリー＆ストレイン指導を軸にゼロから設計された、サブスク専用のバンドです。一方は何でもこなすウォッチ、もう一方は専属コーチです。",
       "verdict": "総合の勝者はなし。コーチングが欲しいか、何でもこなすデバイスが欲しいかで選びましょう。夜間の連続HRV、リカバリー＆ストレイン指導、数日もつバッテリーではWhoop 5.0がリード。ECG付きでサブスク不要、しかもHRVが行動の判断に使えるレベルになったスマートウォッチという点ではSeries 12が勝ちます。",
       "bestForA": "ECG、高血圧通知、アプリを備えたサブスク不要のスマートウォッチを1台にまとめたい人、そしてようやく判断材料にできるHRVが欲しい人にはSeries 12。",
       "bestForB": "リカバリー＆ストレイン指導でトレーニングを決めていて、画面のないバンドで夜間の連続HRVを取りたい人にはWhoop 5.0（継続的な会費は覚悟のうえで）。",
@@ -1747,7 +1747,7 @@
         },
         {
           "name": "HRV指標の比較しやすさ",
-          "note": "Series 12のRecovery HRVはRMSSDベースになり、Whoopと同じ系統の指標になったため、ようやく同じ種類の数値として比べられます。"
+          "note": "WhoopはRMSSDを使います。アプリはApple HealthからRMSSDの値を読めるようになったので、それと比べられます。ただし、Recovery HRVがRMSSDであるとAppleは明言していません。"
         },
         {
           "name": "データへのアクセス",
@@ -1757,7 +1757,7 @@
       "faq": [
         {
           "q": "Apple Watch Series 12のリカバリー計測はWhoopと同じくらい使える？",
-          "a": "数値面では以前よりずっと近づきました。Series 12のRMSSDベースのRecovery HRVはWhoopと同じ系統の指標です。それでも夜間の連続測定、より的確なリカバリー＆ストレイン指導、14日以上のバッテリーではWhoopがリードしています。Series 12はECG付きでサブスク不要のスマートウォッチという点でリードします。"
+          "a": "数値面では以前よりずっと近づきました。Series 12はHRVをはるかに頻繁に測定し、Apple HealthにはWhoopと同じRMSSDの値も加わりました。それでも夜間の連続測定、より的確なリカバリー＆ストレイン指導、14日以上のバッテリーではWhoopがリードしています。Series 12はECG付きでサブスク不要のスマートウォッチという点でリードします。"
         },
         {
           "q": "Apple Watch Series 12はWhoopのように月額・年額料金が必要？",
@@ -1768,12 +1768,12 @@
           "a": "毎日の行動に生かすリカバリー指導と夜間の連続HRVが目的ならWhoop 5.0。ECG、アプリ、決済までサブスクなしで1台にまとめ、判断に使えるHRVも欲しいならSeries 12です。この指標でトレーニングを組むアスリートはWhoop寄り、多くの人はApple Watch寄りになります。"
         }
       ],
-      "content": "## 要点まとめ\n\n用途で選びましょう。Whoop 5.0は専属のリカバリーコーチです。夜間の連続HRV、最も的確なRecovery＆Strainモデル、14日以上もつ画面なしバンドを、サブスクリプションで提供します。Series 12はサブスク不要のスマートウォッチで、2026年9月のHealth Sensing Systemアップデートを経て、HRVがようやく判断材料にできるレベルになり、さらにECGと高血圧通知も備えています。\n\n## Series 12が差を縮めた理由\n\nAppleは現在、RMSSDベースのRecovery HRVを以前よりはるかに高い頻度で測定・表示しています。これはWhoopのリカバリーモデルが使うのと同じ種類の指標です。詳しくは[Recovery HRVとOverall HRVの違い](/articles/apple-watch-recovery-hrv-vs-overall-hrv)と[デバイスごとにHRVの数値が違う理由](/articles/hrv-different-every-device)をご覧ください。\n\n## 正直な注意点\n\nWhoopは24時間365日装着して毎日指導を受ける前提で作られています。Apple Watchは汎用のスマートウォッチで毎晩着けるとは限らず、約1日のバッテリーは夜間の測定と両立しにくい面があります。夜間の連続HRVこそが目的なら、[2026年のおすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)をご覧ください。ウォッチよりリングやバンドのほうが合っているかもしれません。"
+      "content": "## 要点まとめ\n\n用途で選びましょう。Whoop 5.0は専属のリカバリーコーチです。夜間の連続HRV、最も的確なRecovery＆Strainモデル、14日以上もつ画面なしバンドを、サブスクリプションで提供します。Series 12はサブスク不要のスマートウォッチで、2026年9月のHealth Sensing Systemアップデートを経て、HRVがようやく判断材料にできるレベルになり、さらにECGと高血圧通知も備えています。\n\n## Series 12が差を縮めた理由\n\nAppleは現在、Recovery HRVを以前よりはるかに高い頻度で測定・表示しており、watchOS 27ではApple HealthにWhoopのリカバリーモデルと同じRMSSDのデータタイプも追加されました。ただし、Recovery HRVがどの統計量を使うかをAppleは公表していません。詳しくは[Recovery HRVとOverall HRVの違い](/articles/apple-watch-recovery-hrv-vs-overall-hrv)と[デバイスごとにHRVの数値が違う理由](/articles/hrv-different-every-device)をご覧ください。\n\n## 正直な注意点\n\nWhoopは24時間365日装着して毎日指導を受ける前提で作られています。Apple Watchは汎用のスマートウォッチで毎晩着けるとは限らず、約1日のバッテリーは夜間の測定と両立しにくい面があります。夜間の連続HRVこそが目的なら、[2026年のおすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)をご覧ください。ウォッチよりリングやバンドのほうが合っているかもしれません。"
     },
     "apple-watch-series-12-vs-oura-ring-4": {
       "title": "Apple Watch Series 12とOura Ring 4を比較（2026）",
-      "description": "HRVで見るApple Watch Series 12とOura Ring 4 — AppleがRMSSDベースの回復HRVを表示するようになり、ようやく公平な比較に。ウォッチとリングを項目ごとに検証。",
-      "intro": "長年、これは不公平な勝負でした。Apple Watchはまばらに測定したSDNNを、Oura Ringは連続的なRMSSDを表示し、数値が一致することはありませんでした。2026年9月のSeries 12でそれが変わります。回復HRVはRMSSDベースで、測定頻度は約24倍。Ouraと同じ系統の指標です。つまり本当の問いは、ようやく正直なものになりました。何でもこなすスマートウォッチか、夜間専用のリングか。",
+      "description": "HRVで見るApple Watch Series 12とOura Ring 4 — Appleが回復HRVを表示し、Apple HealthでRMSSDも扱えるようになり、ようやく公平な比較に。ウォッチとリングを項目ごとに検証。",
+      "intro": "長年、これは不公平な勝負でした。Apple Watchはまばらに測定したSDNNを、Oura Ringは連続的なRMSSDを表示し、数値が一致することはありませんでした。2026年9月のSeries 12でそれが変わります。HRVの測定頻度は約24倍になり、回復HRVが加わり、Apple HealthではOuraと同じRMSSDも扱えるようになりました（回復HRVがRMSSDだとAppleは明言していません）。つまり本当の問いは、ようやく正直なものになりました。何でもこなすスマートウォッチか、夜間専用のリングか。",
       "verdict": "総合的な勝者はなく、何を求めるかで分かれます。最も精度が高く手間のかからない夜間のHRVと睡眠なら、指で測ることと数日もつバッテリーでOura Ring 4がリード。ECG、高血圧通知を備えサブスクリプション不要の万能スマートウォッチならSeries 12の勝ち — そのHRVはついに行動の判断に使えるレベルになりました。",
       "bestForA": "ECG、高血圧通知、アプリなど何でもこなすスマートウォッチ1台が欲しく、行動の判断に使えるレベルになったHRVをサブスクリプションなしで使いたいならSeries 12を。",
       "bestForB": "夜間のHRVと睡眠が目的ならOura Ring 4を。指での測定のほうが精度が高く、リングは着けたまま眠りやすく、バッテリーは数日もちます。",
@@ -1784,7 +1784,7 @@
         },
         {
           "name": "回復指標の比較可能性",
-          "note": "Series 12の回復HRVはRMSSDベースになり、Ouraと同じ系統の指標です。そのため、絶対値はまだ異なるものの、指標の種類としてはようやく比較可能になりました。"
+          "note": "OuraはRMSSDを使います。アプリがApple Healthから読めるようになったRMSSDの値と比べましょう。回復HRVがRMSSDであるとAppleは明言しておらず、絶対値もまだ異なります。"
         },
         {
           "name": "バッテリー／夜間の装着",
@@ -1810,7 +1810,7 @@
       "faq": [
         {
           "q": "HRVの精度はApple Watch Series 12とOura Ring 4のどちらが高い？",
-          "a": "夜間の連続的なHRV記録については、Oura Ring 4のほうが精度が高いです。指での測定は手首の光学式より優れており、バッテリーも一晩中の装着に適しています。Series 12もかなり近づきました。回復HRVはRMSSDベースで測定頻度は24倍なので、行動の判断に使えるレベルですが、夜間の数値として最も精度が高いわけではありません。"
+          "a": "夜間の連続的なHRV記録については、Oura Ring 4のほうが精度が高いです。指での測定は手首の光学式より優れており、バッテリーも一晩中の装着に適しています。Series 12もかなり近づきました。HRVの測定頻度は24倍で回復HRVも加わったので、行動の判断に使えるレベルですが、夜間の数値として最も精度が高いわけではありません。"
         },
         {
           "q": "Apple Watch Series 12はOuraのようにサブスクリプションが必要？",
@@ -1821,7 +1821,7 @@
           "a": "最もクリーンな夜間の回復シグナルと、一晩中の装着のしやすさならOura Ring 4。ECG、高血圧通知、アプリ、決済もこなす1台で、HRVも行動の判断に使えるレベルになりサブスクリプション不要なのがSeries 12です。トレンドにはリング、その他すべてにはウォッチと、両方を組み合わせる人も多くいます。"
         }
       ],
-      "content": "## 要点\n\nこれは今や公平な比較であり、何を求めるかで答えが分かれます。夜間の数値そのものではOura Ring 4の勝ち — 指での測定のほうが精度が高く、数日もつバッテリーで一晩中の装着も苦になりません。デバイスとしてはSeries 12の勝ち — ECG、高血圧通知、画面、アプリ、サブスクリプション不要 — そしてそのHRVはついに行動の判断に使えるレベルになりました。\n\n## 2026年に比較が変わった理由\n\n2026年9月以前、Apple Watchはまばらに測定したSDNNを表示し、OuraはRMSSDをもとにレディネスを算出していました。異なる指標で、一致することはありませんでした。Series 12の回復HRVはRMSSDベースで、はるかに頻繁に測定されるため、今ではOuraと同じ*種類*の数値です。[回復HRVと全体HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)と[HRVがデバイスごとに異なる理由](/articles/hrv-different-every-device)をご覧ください。\n\n## 正直なおすすめ構成\n\n多くの人にとっての答えは両方です。手間のかからない夜間のトレンドにはOura Ring、リングにできないことすべてにはApple Watch。最も精度の高い夜間HRVだけが欲しいなら、[2026年おすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)をご覧ください。"
+      "content": "## 要点\n\nこれは今や公平な比較であり、何を求めるかで答えが分かれます。夜間の数値そのものではOura Ring 4の勝ち — 指での測定のほうが精度が高く、数日もつバッテリーで一晩中の装着も苦になりません。デバイスとしてはSeries 12の勝ち — ECG、高血圧通知、画面、アプリ、サブスクリプション不要 — そしてそのHRVはついに行動の判断に使えるレベルになりました。\n\n## 2026年に比較が変わった理由\n\n2026年9月以前、Apple Watchはまばらに測定したSDNNを表示し、OuraはRMSSDをもとにレディネスを算出していました。異なる指標で、一致することはありませんでした。Series 12はHRVをはるかに頻繁に測定し、Apple HealthにはOuraと同じ*種類*のRMSSDの値も加わりました。ただし回復HRV自体がRMSSDかどうかをAppleは明言していません。[回復HRVと全体HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv)と[HRVがデバイスごとに異なる理由](/articles/hrv-different-every-device)をご覧ください。\n\n## 正直なおすすめ構成\n\n多くの人にとっての答えは両方です。手間のかからない夜間のトレンドにはOura Ring、リングにできないことすべてにはApple Watch。最も精度の高い夜間HRVだけが欲しいなら、[2026年おすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)をご覧ください。"
     },
     "whoop-5-0-vs-garmin-venu-4": {
       "title": "Whoop 5.0とGarmin Venu 4を比較｜HRV・トレーニング（2026）",
@@ -2464,10 +2464,10 @@
         },
         {
           "q": "HRV目的ならApple Watch Series 11とSeries 12、どっちを買うべき？",
-          "a": "Series 12です。Appleによると、新しいセンサーはHRVをはるかに頻繁に測定し、Recovery HRV（RMSSD）の値も追加して、Series 11のHRVの主な弱点を解消しています。大幅に値引きされていれば、Series 11も今なお良いスマートウォッチです。"
+          "a": "Series 12です。Appleによると、新しいセンサーはHRVをはるかに頻繁に測定し、Recovery HRVの値も追加して、Series 11のHRVの主な弱点を解消しています。大幅に値引きされていれば、Series 11も今なお良いスマートウォッチです。"
         }
       ],
-      "content": "## 結論\n\nHRVと睡眠ならFitbit Charge 6のほうが良い選択です。$159で、毎晩のHRV値が無料、バッテリーは最大7日、iPhoneでもAndroidでも使えます。Apple Watch Series 11ははるかに高機能なスマートウォッチですが、HRVはスポットチェックでしか記録せず、ほぼ毎日の充電が必要です。スマートウォッチが欲しいならApple Watch、トラッキングが目的ならFitbitを買いましょう。\n\n| | Apple Watch Series 11 | Fitbit Charge 6 |\n|---|---|---|\n| タイプ | 本格スマートウォッチ | フィットネストラッカー |\n| HRV | バックグラウンドのスポットチェック | 毎晩の値、無料 |\n| バッテリー | 最大24時間（低電力で38時間） | 最大7日 |\n| 心電図 | あり | なし |\n| 対応スマホ | iPhoneのみ | iPhoneとAndroid |\n| サブスク | なし | 任意のPremium、月$9.99 |\n| 価格 | 発売時$399、現在は値引き | $159 |\n\n## Apple Watch Series 11を選ぶべき人\n\n- iPhoneユーザーで、メッセージ、決済、ワークアウト、健康管理を1台にまとめたい;\n- 心電図、転倒検出、サードパーティ製アプリを重視する;\n- HRVはおまけで、購入の理由ではない。\n\n詳しくは[Apple Watch Series 11のレビュー](/reviews/apple-watch-series-11)をご覧ください。\n\n## Fitbit Charge 6を選ぶべき人\n\n- HRVと睡眠のトレンドが購入の主な理由;\n- 1週間持つバッテリーで、毎晩着けていたい;\n- Androidを使っている、または単に出費を抑えたい。\n\n詳しくは[Fitbit Charge 6のレビュー](/reviews/fitbit-charge-6)をご覧ください。\n\n## Apple Watch Series 12はどう？\n\n2026年9月、AppleはSeries 11を[Apple Watch Series 12](/reviews/apple-watch-series-12)に置き換えました。Appleによると、新しいセンサーはHRVをはるかに頻繁に測定し、通常のSDNNに加えてRecovery HRV（RMSSD）の値も表示します。詳しくは[Recovery HRVとOverall HRVの違い](/articles/apple-watch-recovery-hrv-vs-overall-hrv)をご覧ください。HRV目的で新品を買うなら、[Apple Watch Series 12 vs Fitbit Charge 6](/reviews/vs/apple-watch-series-12-vs-fitbit-charge-6)を比べてみてください。\n\n## 手首で測るHRVはどう読む？\n\nどちらのデバイスも手首で光学的にHRVを測ります。数日単位のトレンドには十分ですが、胸ストラップや夜間のリングよりは精度が劣ります。他人のデバイスとではなく、自分のベースラインや[年齢別の正常なHRV](/articles/normal-hrv-by-age)と比べましょう。\n\n## 関連する比較\n\n[Fitbit Air vs Fitbit Charge 6](/reviews/vs/fitbit-air-vs-fitbit-charge-6)、[Apple Watch Series 11 vs Garmin Venu 4](/reviews/vs/apple-watch-series-11-vs-garmin-venu-4)、[Oura Ring 4 vs Fitbit Charge 6](/reviews/vs/oura-ring-4-vs-fitbit-charge-6)、または[2026年のおすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)の全体ランキング。\n\n## 出典\n\n- [Apple Watch — 公式サイト](https://www.apple.com/watch/)（現行ラインナップ：Series 12、Ultra 4、SE 3）、2026-10-03確認\n- [Fitbit Charge 6 — Google ストア](https://store.google.com/product/fitbit_charge_6)"
+      "content": "## 結論\n\nHRVと睡眠ならFitbit Charge 6のほうが良い選択です。$159で、毎晩のHRV値が無料、バッテリーは最大7日、iPhoneでもAndroidでも使えます。Apple Watch Series 11ははるかに高機能なスマートウォッチですが、HRVはスポットチェックでしか記録せず、ほぼ毎日の充電が必要です。スマートウォッチが欲しいならApple Watch、トラッキングが目的ならFitbitを買いましょう。\n\n| | Apple Watch Series 11 | Fitbit Charge 6 |\n|---|---|---|\n| タイプ | 本格スマートウォッチ | フィットネストラッカー |\n| HRV | バックグラウンドのスポットチェック | 毎晩の値、無料 |\n| バッテリー | 最大24時間（低電力で38時間） | 最大7日 |\n| 心電図 | あり | なし |\n| 対応スマホ | iPhoneのみ | iPhoneとAndroid |\n| サブスク | なし | 任意のPremium、月$9.99 |\n| 価格 | 発売時$399、現在は値引き | $159 |\n\n## Apple Watch Series 11を選ぶべき人\n\n- iPhoneユーザーで、メッセージ、決済、ワークアウト、健康管理を1台にまとめたい;\n- 心電図、転倒検出、サードパーティ製アプリを重視する;\n- HRVはおまけで、購入の理由ではない。\n\n詳しくは[Apple Watch Series 11のレビュー](/reviews/apple-watch-series-11)をご覧ください。\n\n## Fitbit Charge 6を選ぶべき人\n\n- HRVと睡眠のトレンドが購入の主な理由;\n- 1週間持つバッテリーで、毎晩着けていたい;\n- Androidを使っている、または単に出費を抑えたい。\n\n詳しくは[Fitbit Charge 6のレビュー](/reviews/fitbit-charge-6)をご覧ください。\n\n## Apple Watch Series 12はどう？\n\n2026年9月、AppleはSeries 11を[Apple Watch Series 12](/reviews/apple-watch-series-12)に置き換えました。Appleによると、新しいセンサーはHRVをはるかに頻繁に測定し、Recovery HRVの値も表示します。Apple Healthでは通常のSDNNに加えてRMSSDも扱えるようになりました。詳しくは[Recovery HRVとOverall HRVの違い](/articles/apple-watch-recovery-hrv-vs-overall-hrv)をご覧ください。HRV目的で新品を買うなら、[Apple Watch Series 12 vs Fitbit Charge 6](/reviews/vs/apple-watch-series-12-vs-fitbit-charge-6)を比べてみてください。\n\n## 手首で測るHRVはどう読む？\n\nどちらのデバイスも手首で光学的にHRVを測ります。数日単位のトレンドには十分ですが、胸ストラップや夜間のリングよりは精度が劣ります。他人のデバイスとではなく、自分のベースラインや[年齢別の正常なHRV](/articles/normal-hrv-by-age)と比べましょう。\n\n## 関連する比較\n\n[Fitbit Air vs Fitbit Charge 6](/reviews/vs/fitbit-air-vs-fitbit-charge-6)、[Apple Watch Series 11 vs Garmin Venu 4](/reviews/vs/apple-watch-series-11-vs-garmin-venu-4)、[Oura Ring 4 vs Fitbit Charge 6](/reviews/vs/oura-ring-4-vs-fitbit-charge-6)、または[2026年のおすすめHRVトラッカー](/reviews/compare/best-hrv-trackers-2026)の全体ランキング。\n\n## 出典\n\n- [Apple Watch — 公式サイト](https://www.apple.com/watch/)（現行ラインナップ：Series 12、Ultra 4、SE 3）、2026-10-03確認\n- [Fitbit Charge 6 — Google ストア](https://store.google.com/product/fitbit_charge_6)"
     },
     "healthy-wave-multi-wave-vs-qi-coil": {
       "title": "Healthy Wave vs Qi Coil PEMF比較レビュー（2026）",

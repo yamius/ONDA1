@@ -8,7 +8,7 @@ const ultra4VsSeries12: HeadToHead = {
   description:
     'Apple Watch Ultra 4 vs Series 12 for HRV — same new Health Sensing System, very different battery and price. Which Apple Watch to buy for recovery, weighed axis by axis.',
   intro:
-    'Both launched on 18 September 2026 with the same all-new Health Sensing System: HRV sampled up to 24× more often, split into Recovery HRV (RMSSD) and Overall HRV (SDNN). So the readings are the same in kind. What differs is everything around the sensor — a ~50-hour battery, an athlete readiness score and a rugged 49 mm case on the Ultra 4, against a $399 price on the Series 12.',
+    'Both launched on 18 September 2026 with the same all-new Health Sensing System: HRV sampled up to 24× more often, split into Recovery HRV and Overall HRV. So the readings are the same in kind. What differs is everything around the sensor — a ~50-hour battery, an athlete readiness score and a rugged 49 mm case on the Ultra 4, against a $399 price on the Series 12.',
   winnerSlug: null,
   verdict:
     'No overall winner — it splits by use. For night-after-night overnight HRV, and for athletes or outdoors users, the Ultra 4’s ~50-hour battery is the decisive advantage. For HRV and everyday health at half the price, the Series 12 has the same HRV system.',
@@ -17,7 +17,7 @@ const ultra4VsSeries12: HeadToHead = {
   bestForB:
     'Choose the Series 12 if you want Apple’s new HRV system, ECG and hypertension notifications in a smaller, cheaper watch and can live with a daily charge.',
   axes: [
-    { name: 'HRV sensing', winner: 'tie', note: 'Same Health Sensing System on both: HRV up to 24× more often, Recovery HRV (RMSSD) plus Overall HRV (SDNN), native RMSSD in HealthKit.' },
+    { name: 'HRV sensing', winner: 'tie', note: 'Same Health Sensing System on both: HRV up to 24× more often, Recovery HRV plus Overall HRV, native RMSSD in HealthKit.' },
     { name: 'Battery / overnight wear', winner: 'a', note: 'Ultra 4: up to ~50 hours (84 in Low Power). Series 12: up to ~24 hours. Only the Ultra makes continuous overnight HRV practical without a nightly charge.' },
     { name: 'Recovery insights', winner: 'a', note: 'The Ultra 4 adds an athlete-focused readiness score on top of the Recovery and Overall HRV both watches show.' },
     { name: 'Health features', winner: 'tie', note: 'Both have a single-lead ECG and hypertension notifications.' },
@@ -28,7 +28,7 @@ const ultra4VsSeries12: HeadToHead = {
   faq: [
     {
       q: 'Is the Apple Watch Ultra 4 or Series 12 better for HRV?',
-      a: 'The readings are the same in kind — both use the new Health Sensing System with Recovery HRV (RMSSD) and Overall HRV (SDNN). The Ultra 4 is better for overnight HRV in practice because its ~50-hour battery lets you wear it every night; the Series 12’s ~24 hours competes with sleep.',
+      a: 'The readings are the same in kind — both use the new Health Sensing System with Recovery HRV and Overall HRV. The Ultra 4 is better for overnight HRV in practice because its ~50-hour battery lets you wear it every night; the Series 12’s ~24 hours competes with sleep.',
     },
     {
       q: 'Does the Apple Watch Ultra 4 or Series 12 need a subscription?',
@@ -45,14 +45,14 @@ Same sensor, different watch. Both run Apple’s new Health Sensing System, so t
 
 ## Why battery decides it for HRV
 
-A continuous overnight record needs the watch on your wrist all night, every night. At ~24 hours, the Series 12’s daily charge competes with that; at ~50 hours the Ultra 4’s doesn’t. Both report Recovery HRV (RMSSD) and Overall HRV (SDNN) — different metrics that should not be plotted as one line. See [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
+A continuous overnight record needs the watch on your wrist all night, every night. At ~24 hours, the Series 12’s daily charge competes with that; at ~50 hours the Ultra 4’s doesn’t. Both report Recovery HRV and Overall HRV — different metrics that should not be plotted as one line. See [Recovery HRV vs Overall HRV](/articles/apple-watch-recovery-hrv-vs-overall-hrv).
 
 ## The honest setup
 
 If you don’t need ruggedness, the Series 12 is the smarter buy; if you want an Apple Watch you can sleep in every night, the Ultra 4. Both are still wrist optical — for the most precise overnight number, a finger ring leads; see [Series 12 vs Oura Ring 4](/reviews/vs/apple-watch-series-12-vs-oura-ring-4) and the [best HRV trackers of 2026](/reviews/compare/best-hrv-trackers-2026).`,
   relatedComparisonSlug: 'best-hrv-trackers-2026',
   datePublished: '2026-09-30',
-  dateModified: '2026-09-30',
+  dateModified: '2026-10-04',
 }
 
 export default ultra4VsSeries12
