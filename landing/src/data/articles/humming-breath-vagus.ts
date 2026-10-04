@@ -3,12 +3,12 @@ import type { Article } from './types'
 /**
  * Humming breath / Bhramari (bee breath). AEO reference article. Distinctive mechanism: vibration
  * in the larynx mechanically stimulates vagal fibers (direct route), on top of the long-exhale
- * effect — same reason chanting/singing raise vagal tone. FAQ in ARTICLE_FAQ. Practice, not treatment.
+ * effect — same proposed route as chanting/singing. FAQ in ARTICLE_FAQ. Practice, not treatment.
  */
 const article: Article = {
   slug: 'humming-breath-vagus',
-  title: 'Humming Breath (Bhramari): The Simplest Way to Stimulate Your Vagus Nerve',
-  seoTitle: 'Humming Breath (Bhramari): Stimulate the Vagus Nerve | ONDA Life',
+  title: 'Humming Breath (Bhramari) and the Vagus Nerve: What the Evidence Shows',
+  seoTitle: 'Humming Breath (Bhramari) and the Vagus Nerve | ONDA Life',
   description:
     'Humming breath, or Bhramari, pairs a long exhale with vibration in the larynx. How to do bee breath, how it relates to the vagus nerve and HRV, and when to use it for calm.',
   category: 'ONDA Protocol',
@@ -42,7 +42,7 @@ Repeat for five to ten breaths, or a few minutes. Some people gently rest their 
 
 Humming is thought to reach the vagus nerve through a more direct route that most breathing techniques lack — they reach it indirectly, through the pace of the breath: the vagus nerve has fibers running through the larynx and the muscles of the throat and soft palate. When you hum, chant or sing, the vibration is proposed to stimulate those fibers mechanically, on top of the long exhale — and slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise.
 
-Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari improved parasympathetic tone both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
+Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari raised vagally mediated HRV both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
 
 That's why humming shows up alongside slow breathing and cold-water exposure on nearly every list of vagus-nerve exercises. You get both effects at once: the extended exhale tips you toward "rest and digest," and the vibration is thought to give the vagus nerve a direct nudge. The result is a measurable calming shift — heart rate down, heart rate variability (HRV) up — often within a few breaths. For the full menu of methods, see [vagus nerve exercises](/articles/vagus-nerve-exercises). Chanting OM uses the same hum-plus-long-exhale mechanism, and it has brain-imaging work behind it — see [OM chanting and the brain](/articles/om-chanting-brain-vagus).
 
@@ -53,7 +53,7 @@ Bhramari suits moments when you want calm and a focal point:
 - **Winding down** in the evening, especially if your mind is busy.
 - **Before a stressful task**, to settle your nervous system with something to focus on.
 - **When silent breathing feels boring** — the sound and vibration keep you engaged.
-- **As a short daily vagal-tone practice**, alongside slow breathing.
+- **As a short daily calming practice**, alongside slow breathing.
 
 For a sudden panic spike where you can't make noise, a silent [physiological sigh](/articles/physiological-sigh) is more practical. Humming is best where you have a minute and a little privacy.
 

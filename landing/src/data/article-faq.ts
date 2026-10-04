@@ -261,7 +261,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What is the best breathing for a panic attack?",
       answer:
-        "Slow, low breathing with a longer exhale than inhale — for example four seconds in, six out — started at the very first flicker, before the spiral accelerates. The long out-breath raises vagal tone and slows the heart fastest. It is an emergency brake for a spike, not a substitute for professional care.",
+        "Slow, low breathing with a longer exhale than inhale — for example four seconds in, six out — started at the very first flicker, before the spiral accelerates. A longer out-breath slows the heart within each breath and is associated with higher vagally mediated HRV. It is an emergency brake for a spike, not a substitute for professional care.",
     },
     {
       question: "Does HRV biofeedback help anxiety?",
@@ -2127,7 +2127,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Do breathing exercises work for older adults?",
       answer:
-        "Yes. A 2021 study in Scientific Reports found that a single session of deep, slow breathing raised vagal tone and reduced anxiety in older adults, just as in young adults. The calming, autonomic benefit is immediate.",
+        "Yes. A 2021 study in Scientific Reports found that a single session of deep, slow breathing raised vagally mediated HRV and reduced anxiety in older adults, just as in young adults. The calming, autonomic benefit is immediate.",
     },
     {
       question: "Does slow breathing lower blood pressure in older adults?",
@@ -2277,7 +2277,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can breathing exercises actually help chronic stress?",
       answer:
-        "They train the off-switch. Slow, exhale-led breathing acutely raises vagal tone and HRV within minutes, re-teaching the parasympathetic return, and done daily it makes that descent more automatic. It's a self-regulation practice, not a treatment — it sits alongside real rest, boundaries and, when stress is running your life, professional care.",
+        "They train the off-switch. Slow, exhale-led breathing is associated with higher vagally mediated HRV within minutes, re-teaching the parasympathetic return, and done daily it makes that descent more automatic. It's a self-regulation practice, not a treatment — it sits alongside real rest, boundaries and, when stress is running your life, professional care.",
     },
     {
       question: "What's the difference between this and just lowering cortisol?",
@@ -2424,7 +2424,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can I lower my respiratory rate on purpose?",
       answer:
-        "Yes — it's the one vital you can steer directly. Slow, exhale-led breathing lowers the rate deliberately, raises vagal tone and pulls the whole autonomic state toward calm. You can't will your heart rate down, but you can slow your breath, and the rest of the system follows.",
+        "Yes — it's the one vital you can steer directly. Slow, exhale-led breathing lowers the rate deliberately, is associated with higher vagally mediated HRV and pulls the whole autonomic state toward calm. You can't will your heart rate down, but you can slow your breath, and the rest of the system follows.",
     },
   ],
   "heart-rate-recovery-fitness-marker": [
@@ -2607,7 +2607,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What makes a meditation app science-based?",
       answer:
-        "A usable test: it rests on a measurable mechanism and can show that mechanism working on you. Slow, paced breathing raises vagal tone and HRV within minutes — that's well-studied. A science-based app doesn't just tell you that; it measures it on your body and shows the response. The honest boundary is that measuring your physiology isn't diagnosing or treating it — a biofeedback meditation app is a self-regulation tool, not a medical device.",
+        "A usable test: it rests on a measurable mechanism and can show that mechanism working on you. Slow, paced breathing raises HRV within minutes — that's well-studied. A science-based app doesn't just tell you that; it measures it on your body and shows the response. The honest boundary is that measuring your physiology isn't diagnosing or treating it — a biofeedback meditation app is a self-regulation tool, not a medical device.",
     },
     {
       question: "Is a biofeedback meditation app better than a guided-meditation library?",
@@ -2629,7 +2629,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can an app train my nervous system or self-regulation?",
       answer:
-        "It can train the skill of self-regulation — noticing and steering your autonomic state. Slow, paced breathing measurably raises vagal tone and HRV, and that skill compounds with structured, sequenced practice plus live feedback so you can see it working. It's a self-regulation and body-awareness practice, not a medical treatment, and ONDA is not a medical device.",
+        "It can train the skill of self-regulation — noticing and steering your autonomic state. Slow, paced breathing measurably raises HRV while you practise, and that skill compounds with structured, sequenced practice plus live feedback so you can see it working. It's a self-regulation and body-awareness practice, not a medical treatment, and ONDA is not a medical device.",
     },
     {
       question: "Why is a path better than a big library of meditations?",
@@ -2668,7 +2668,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can you train HRV, or only measure it?",
       answer:
-        "You can train it. Slow, paced breathing raises vagal tone and HRV within minutes, and practised regularly it strengthens your baseline — that's the trainable dimension of HRV. HRV biofeedback (an app that reads your pulse and shows your heart rhythm respond live) lets you find your best pace and confirm the practice is working, rather than breathing blind.",
+        "You can train it. Slow, paced breathing raises HRV within minutes, and practised regularly it strengthens your baseline — that's the trainable dimension of HRV. HRV biofeedback (an app that reads your pulse and shows your heart rhythm respond live) lets you find your best pace and confirm the practice is working, rather than breathing blind.",
     },
     {
       question: "What's the fastest way to increase HRV?",
@@ -2872,7 +2872,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What is the best breathing to calm down?",
       answer:
-        "Slow, belly breathing with the exhale clearly longer than the inhale — the longer out-breath raises vagal tone fastest. Keep it soft rather than forceful; you are removing the accelerant of fast, shallow breathing, not straining for calm. Give it a minute or two for the parasympathetic brake to catch, and watching your rhythm settle with biofeedback helps you trust it is working.",
+        "Slow, belly breathing with the exhale clearly longer than the inhale — a longer out-breath is associated with higher vagally mediated HRV. Keep it soft rather than forceful; you are removing the accelerant of fast, shallow breathing, not straining for calm. Give it a minute or two for the parasympathetic brake to catch, and watching your rhythm settle with biofeedback helps you trust it is working.",
     },
     {
       question: "How do I stop feeling on edge after work?",

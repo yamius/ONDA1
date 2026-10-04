@@ -7,11 +7,11 @@ const sensate: ToolReview = {
   category: 'vagus-stim',
   productType: 'Infrasonic vagal modulator (chest-worn pebble)',
   description:
-    'ONDA review of Sensate — the chest-worn pebble that uses infrasonic resonance to modulate vagal tone. Scored on evidence, mechanism, comfort and value.',
+    'ONDA review of Sensate — the chest-worn pebble that uses infrasonic sound, marketed to calm the nervous system. Scored on evidence, mechanism, comfort and value.',
   verdict:
     'A passive, calming infrasonic device — gentle, well-loved, with mechanism evidence that lags its user enthusiasm.',
   summary:
-    'Sensate is a chest-placed smooth-stone-shaped device that emits low-frequency infrasonic vibration into the thoracic cavity, paired with synced soundscapes through the phone. The premise — that infrasonic resonance against the chest stimulates the vagus via thoracic mechanoreceptors — is plausible and supported by a small published trial, but mechanism evidence is thinner than electrical tVNS. As a passive 10-minute wind-down ritual it is highly effective for most users.',
+    'Sensate is a chest-placed smooth-stone-shaped device that emits low-frequency infrasonic vibration into the thoracic cavity, paired with synced soundscapes through the phone. The premise — that infrasonic resonance against the chest acts on vagal pathways via thoracic mechanoreceptors — is plausible and supported by a small published trial, but mechanism evidence is thinner than electrical tVNS. As a passive 10-minute wind-down ritual it is highly effective for most users.',
   overallScore: 6.9,
   scores: [
     { criterionId: 'evidence', score: 5.5, note: 'One published RCT showing stress/HRV improvement, plus company-funded studies. Less mechanism evidence than electrical tVNS devices.' },
@@ -74,7 +74,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Who is the Sensate best for?", a: "Sensate is best for people who want a sound-paired evening wind-down ritual and value comfort and calm over acute stimulation. It suits sleep-onset use and anyone wary of skin contact, since it uses no electrodes or pads. Those wanting direct vagal stimulation should look at electrical tVNS instead." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-05-21',
+  dateModified: '2026-10-04',
 }
 
 export default sensate

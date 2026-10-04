@@ -38,7 +38,7 @@
       },
       {
         "q": "¿Qué frecuencia cardíaca en reposo es peligrosa?",
-        "a": "Una frecuencia en reposo que se mantiene por encima de 100 lpm (taquicardia), o por debajo de 60 lpm en alguien que no es deportista (bradicardia), está fuera del rango habitual en adultos y conviene comentarla con un médico. Busca atención médica cuanto antes si una frecuencia muy rápida o muy lenta va acompañada de dolor en el pecho, desmayo o falta de aire.",
+        "a": "Una frecuencia en reposo que se mantiene por encima de 100 lpm (taquicardia), o por debajo de 60 lpm (bradicardia), está fuera del rango habitual en adultos. Una frecuencia baja suele ser normal en personas en buena forma; importa sobre todo si se acompaña de mareo, desmayo o falta de aire: entonces consulta a un médico. Busca atención médica cuanto antes si una frecuencia muy rápida o muy lenta va acompañada de dolor en el pecho, desmayo o falta de aire.",
         "links": [
           {
             "href": "/articles/talk-to-your-doctor-about-wearable-data",

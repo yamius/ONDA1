@@ -38,7 +38,7 @@
       },
       {
         "q": "À partir de quelle fréquence cardiaque au repos faut-il s'inquiéter ?",
-        "a": "Une fréquence au repos qui reste au-dessus de 100 bpm (tachycardie), ou en dessous de 60 bpm chez une personne non sportive (bradycardie), sort de la plage habituelle chez l'adulte et mérite d'être discutée avec un médecin. Consultez rapidement si une fréquence très rapide ou très lente s'accompagne de douleurs thoraciques, d'un malaise ou d'un essoufflement.",
+        "a": "Une fréquence au repos qui reste au-dessus de 100 bpm (tachycardie), ou en dessous de 60 bpm (bradycardie), sort de la plage habituelle chez l'adulte. Une fréquence basse est souvent normale chez les personnes en bonne forme physique ; elle compte surtout si elle s'accompagne de vertiges, d'un malaise ou d'un essoufflement — consultez alors un médecin. Consultez rapidement si une fréquence très rapide ou très lente s'accompagne de douleurs thoraciques, d'un malaise ou d'un essoufflement.",
         "links": [
           {
             "href": "/articles/talk-to-your-doctor-about-wearable-data",

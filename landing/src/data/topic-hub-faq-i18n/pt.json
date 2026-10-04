@@ -38,7 +38,7 @@
       },
       {
         "q": "Qual frequência cardíaca de repouso é perigosa?",
-        "a": "Uma frequência de repouso que se mantém acima de 100 bpm (taquicardia), ou abaixo de 60 bpm em quem não é atleta (bradicardia), está fora da faixa habitual para adultos e vale a pena conversar sobre isso com um médico. Procure atendimento rapidamente se uma frequência muito alta ou muito baixa vier acompanhada de dor no peito, desmaio ou falta de ar.",
+        "a": "Uma frequência de repouso que se mantém acima de 100 bpm (taquicardia), ou abaixo de 60 bpm (bradicardia), está fora da faixa habitual para adultos. Uma frequência baixa costuma ser normal em pessoas condicionadas; ela importa principalmente quando vem com tontura, desmaio ou falta de ar — nesse caso, procure um médico. Procure atendimento rapidamente se uma frequência muito alta ou muito baixa vier acompanhada de dor no peito, desmaio ou falta de ar.",
         "links": [
           {
             "href": "/articles/talk-to-your-doctor-about-wearable-data",

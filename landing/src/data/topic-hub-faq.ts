@@ -34,7 +34,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: 'What is an unsafe resting heart rate?',
-      a: 'A resting rate that stays above 100 bpm (tachycardia), or below 60 bpm in someone who is not an athlete (bradycardia), is outside the usual adult range and worth discussing with a doctor. Seek care promptly if a very fast or very slow rate comes with chest pain, fainting or breathlessness.',
+      a: 'A resting rate that stays above 100 bpm (tachycardia), or below 60 bpm (bradycardia) is outside the usual adult range. A low rate is often normal in fit people; it matters mainly when it comes with dizziness, fainting or breathlessness — then see a doctor. Seek care promptly if a very fast or very slow rate comes with chest pain, fainting or breathlessness.',
       links: [{ href: '/articles/talk-to-your-doctor-about-wearable-data', label: 'Talking to your doctor about watch data' }],
     },
     {
@@ -188,7 +188,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "Can you train your nervous system to handle stress better?",
-      a: "Yes. Regular practice of slow breathing and other calming skills raises vagal tone, which shows up as higher HRV and a faster return to calm after stress. Like fitness, it builds through short, repeated sessions, and it improves fastest when you can see the effect, for example with live heart-rate feedback.",
+      a: "Yes. Regular practice of slow breathing and other calming skills is associated with higher vagally mediated HRV and a faster return to calm after stress. Like fitness, it builds through short, repeated sessions, and it improves fastest when you can see the effect, for example with live heart-rate feedback.",
       links: [{ href: "/articles/how-to-train-your-nervous-system", label: "How to train your nervous system" }, { href: "/tools/nervous-system", label: "Nervous system check" }],
     },
   ],
@@ -242,7 +242,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "Do breathing exercises work for older adults?",
-      a: "Yes. A 2021 study comparing young and older adults found a single session of slow, deep breathing raised vagal tone and lowered anxiety in both groups. A 2024 study in older adults found no blood-pressure change after one session, so that benefit, if it comes, builds over weeks. Keep sessions short and gentle — a few minutes is enough.",
+      a: "Yes. A 2021 study comparing young and older adults found a single session of slow, deep breathing raised vagally mediated HRV and lowered anxiety in both groups. A 2024 study in older adults found no blood-pressure change after one session, so that benefit, if it comes, builds over weeks. Keep sessions short and gentle — a few minutes is enough.",
       links: [{ href: "/articles/breathing-exercises-older-adults", label: "Do breathing exercises work for older adults?" }, { href: "/tools/resonance-breathing", label: "Resonance breathing tool" }],
     },
     {

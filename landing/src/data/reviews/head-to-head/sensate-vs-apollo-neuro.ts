@@ -17,7 +17,7 @@ const sensateVsApollo: HeadToHead = {
   bestForB:
     'Choose Apollo Neuro if you want passive vagal modulation through the entire day — work, training, sleep — with the strongest non-electrical research base in the consumer category.',
   axes: [
-    { name: 'Mechanism', winner: 'b', note: 'Apollo: vibrotactile modulation of vagal tone via mechanoreceptors. Sensate: infrasonic chest resonance modulating vagal tone through thoracic mechanoreception. Apollo’s mechanism has the broader evidence base.' },
+    { name: 'Mechanism', winner: 'b', note: 'Apollo: vibration on the skin via touch receptors. Sensate: infrasonic sound resonating in the chest. Both are indirect, proposed routes. Apollo’s mechanism has the broader evidence base.' },
     { name: 'Independent evidence', winner: 'b', note: 'Apollo Neuro: peer-reviewed HRV/recovery RCTs from University of Pittsburgh. Sensate: one published stress/HRV pilot plus company-funded studies. Apollo wins independent research.' },
     { name: 'Use cases covered', winner: 'b', note: 'Apollo: seven modes (calm, energy, sleep, focus, recover, social, clear). Sensate: focused on calm/wind-down with soundscape variety. Apollo is broader.' },
     { name: 'All-day wearability', winner: 'b', note: 'Apollo: wrist/ankle/clip-on, designed for passive 24/7 wear. Sensate: chest-placed sit-down session-based, 10–30 minutes at a time.' },
@@ -33,7 +33,7 @@ const sensateVsApollo: HeadToHead = {
     },
     {
       q: 'Are these really vagus nerve stimulators?',
-      a: 'Neither is electrical tVNS in the strict sense. Apollo Neuro modulates vagal tone via vibrotactile mechanoreception; Sensate modulates it via infrasonic thoracic resonance. Both produce measurable HRV shifts in published research, but the mechanism is indirect compared with electrical devices like Nurosym or Pulsetto.',
+      a: 'Neither is electrical tVNS in the strict sense. Apollo Neuro works through vibration on the skin; Sensate through infrasonic sound on the chest — both indirect, with limited evidence. Both produce measurable HRV shifts in published research, but the mechanism is indirect compared with electrical devices like Nurosym or Pulsetto.',
     },
     {
       q: 'Can I sleep with Apollo Neuro?',
@@ -57,7 +57,7 @@ If pre-sleep wind-down is the primary use case and a paired-soundscape session i
 If you want vagal modulation that runs in your life — at work, in transit, while training, while sleeping — without any session ritual, Apollo is the right shape. The seven modes cover most use cases, the wrist/ankle/clip-on form factor is genuinely wearable around the clock, and the University of Pittsburgh research base is the strongest in non-electrical vagus modulation.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-22',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default sensateVsApollo

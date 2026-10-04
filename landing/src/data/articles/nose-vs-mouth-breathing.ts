@@ -30,7 +30,7 @@ Nose breathing and mouth breathing affect your body differently — not just how
 
 ## Does it matter if you breathe through your nose or mouth?
 
-Yes — the path the air takes changes the physiology, even if it's easy to think a breath is a breath. Nasal breathing filters, warms and humidifies air, and — importantly for your nervous system — it's slower and more resistive than mouth breathing. That natural resistance encourages a longer, more controlled breath, which is exactly the pattern that activates the [vagus nerve](/glossary/vagus-nerve) and shifts you toward "rest and digest." Mouth breathing, by contrast, tends to be faster and shallower, which can nudge you toward a more sympathetic (activated) state.
+Yes — the path the air takes changes the physiology, even if it's easy to think a breath is a breath. Nasal breathing filters, warms and humidifies air, and — importantly for your nervous system — it's slower and more resistive than mouth breathing. That natural resistance encourages a longer, more controlled breath, which is exactly the pattern associated with higher vagally mediated HRV (see [vagus nerve](/glossary/vagus-nerve)) and shifts you toward "rest and digest." Mouth breathing, by contrast, tends to be faster and shallower, which can nudge you toward a more sympathetic (activated) state.
 
 Nasal breathing also engages nitric oxide produced in the nasal passages, which supports blood flow and oxygen uptake — a benefit you skip entirely when breathing through the mouth.
 

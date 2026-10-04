@@ -16,8 +16,8 @@ const article: Article = {
   introStyle: 'emerald',
   image: '/images/vagus-nerve-exercises.png',
   imageAlt:
-    'Vagus nerve exercises: slow-exhale breathing, humming, gargling and cold exposure to raise vagal tone and shift out of fight-or-flight.',
-  imageTitle: '[VAGAL_TONE_UP]: Activating the parasympathetic brake to leave fight-or-flight.',
+    'Vagus nerve exercises: slow-exhale breathing, humming, gargling and cold exposure — what the evidence says about shifting out of fight-or-flight.',
+  imageTitle: '[PARASYMPATHETIC_BRAKE]: Engaging the calming brake to leave fight-or-flight.',
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'Not sure which state you’re in? Find out, then get the matched protocol.',
@@ -64,7 +64,7 @@ In practice, that means comparing like with like: a morning reading taken the sa
 Slow, long-exhale breathing is the strongest, best-evidenced vagus nerve exercise; humming, cold on the face and slow social contact follow.
 
 - **Slow, long-exhale breathing** — the strongest, best-evidenced lever. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise and shifts state fast (Gerritsen & Band 2018). This is the engine behind every breathing app, and the [Breathing Pacer](/tools/breathing) automates it.
-- **Humming, chanting, gargling** — the vagus innervates the larynx, so vocal-cord vibration gives it gentle stimulation. Low-cost, surprisingly effective for a quick reset.
+- **Humming, chanting, gargling** — the vagus innervates the larynx, so vocal-cord vibration is thought to give it gentle stimulation (a proposed route). Low-cost, surprisingly effective for a quick reset.
 - **Cold on the face** — a cold splash or pack to the face triggers the [dive reflex](/glossary/mammalian-dive-reflex), abruptly slowing the heart via the vagus. A fast circuit-breaker when you're spiked.
 - **Slow, social, safe** — unhurried conversation, being with people you trust, and even a long exhale-sigh all nudge the system toward the regulated state.
 
@@ -86,7 +86,7 @@ Start with the long exhale, add a hum when you want a quick reset, and keep the 
 
 > **The Hack:** Breathe in for 4, out for 6, for 3–5 minutes whenever you're wired.
 
-**The Science:** The longer exhale spends more time in the heart-rate-slowing phase of each breath, raising vagal tone and dropping arousal faster than equal breathing.
+**The Science:** The longer exhale spends more time in the heart-rate-slowing phase of each breath, which is associated with higher vagally mediated HRV and lower arousal than equal breathing.
 
 ### PROTOCOL 2: The 60-Second Hum
 
@@ -103,7 +103,7 @@ Start with the long exhale, add a hum when you want a quick reset, and keep the 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: HRV tracker (morning trend)
 > METRIC: Resting HRV trends up over weeks of daily practice
-> STATUS: VAGAL_TONE_RISING
+> STATUS: HRV_RISING
 `,
 }
 

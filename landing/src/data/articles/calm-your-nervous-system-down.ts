@@ -45,9 +45,9 @@ Almost every node in the system is involuntary. Except one.
 
 ## Section 2: How does breathing calm your nervous system?
 
-A slow breath with a long exhale calms your nervous system because breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. A slow breath with a **long exhale** stimulates the [vagus nerve](/glossary/vagus-nerve) and hands tone to the parasympathetic "settle" branch — the heart slows on the out-breath, and the whole system starts following the breath toward calm.
+A slow breath with a long exhale calms your nervous system because breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. A slow breath with a **long exhale** is associated with higher vagally mediated HRV — the parasympathetic "settle" branch, carried by the [vagus nerve](/glossary/vagus-nerve), takes more of the lead — the heart slows on the out-breath, and the whole system starts following the breath toward calm.
 
-This is the reach-in switch your thoughts can't find. You don't argue your nervous system down; you *breathe* it down, and the physiology does the rest. The exhale, specifically, is the lever — a longer out-breath than in-breath raises vagal tone fastest.
+This is the reach-in switch your thoughts can't find. You don't argue your nervous system down; you *breathe* it down, and the physiology does the rest. The exhale, specifically, is the lever — a longer out-breath than in-breath slows the heart within each breath.
 
 ---
 

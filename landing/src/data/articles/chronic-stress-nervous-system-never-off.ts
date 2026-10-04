@@ -63,7 +63,7 @@ Chronic sympathetic tone isn't obvious to you because it's your reference point 
 
 The useful reframe: don't ask *how stressed was I today* — ask *did my body ever come back down.* That's a question your own [HRV](/glossary/heart-rate-variability) corridor can answer. An evening and overnight variability that sits below your normal, night after night, is the plateau showing itself. A baseline that's drifted lower over weeks is the off-switch quietly failing.
 
-ONDA holds that corridor — your resting heart rate, variability and breathing against your own normal — so a nervous system that never clocks out becomes something you can actually see rather than a vague sense of depletion. And it shows the *rebound*, too: because slow, paced breathing acutely raises vagal tone and HRV within minutes, you can watch the brake re-engage in real time in [HRV biofeedback](/hrv-biofeedback) — proof the off-switch still works, even when it feels stuck.
+ONDA holds that corridor — your resting heart rate, variability and breathing against your own normal — so a nervous system that never clocks out becomes something you can actually see rather than a vague sense of depletion. And it shows the *rebound*, too: because slow, paced breathing raises HRV within minutes, you can watch the brake re-engage in real time in [HRV biofeedback](/hrv-biofeedback) — proof the off-switch still works, even when it feels stuck.
 
 The firewall, plainly: this is a **self-regulation practice, not a treatment**. Breathing tools and better recovery habits sit alongside real rest, boundaries, and — when stress is running your life — professional care. ONDA is not a medical device and does not diagnose anything.
 
@@ -94,7 +94,7 @@ You rebuild the off-switch by practicing the descent, deliberately, until it's a
     },
     {
       name: 'Train the descent daily',
-      text: 'A few minutes of slow, exhale-led breathing acutely raises vagal tone and HRV, re-teaching the parasympathetic return. Done daily, it makes the off-switch automatic again.',
+      text: 'A few minutes of slow, exhale-led breathing raises HRV while you practise, re-teaching the parasympathetic return. Done daily, it makes the off-switch automatic again.',
       protocolId: 'stress-descent',
     },
     {

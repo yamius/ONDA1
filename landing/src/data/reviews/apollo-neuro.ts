@@ -7,7 +7,7 @@ const apolloNeuro: ToolReview = {
   category: 'vagus-stim',
   productType: 'Vibrotactile vagal modulator (wearable)',
   description:
-    'ONDA review of the Apollo Neuro — the vibrotactile wearable that modulates vagal tone through low-frequency haptic stimulation. Scored on evidence, mechanism and value.',
+    'ONDA review of the Apollo Neuro — the vibrotactile wearable that uses low-frequency vibration, marketed to calm the nervous system. Scored on evidence, mechanism and value.',
   verdict:
     'The most wearable device in the category — vibrotactile, not electrical, with mounting clinical evidence on HRV and recovery.',
   summary:
@@ -15,7 +15,7 @@ const apolloNeuro: ToolReview = {
   overallScore: 7.5,
   scores: [
     { criterionId: 'evidence', score: 7.0, note: 'Published HRV / recovery RCTs from the founding team at University of Pittsburgh; independent replication is mounting. Strongest evidence base of any non-electrical device here.' },
-    { criterionId: 'mechanism', score: 6.5, note: 'Vibrotactile rather than electrical — modulates vagal tone via low-frequency mechanoreception. Not tVNS in the strict sense; classified here as a vagal modulator.' },
+    { criterionId: 'mechanism', score: 6.5, note: 'Vibrotactile rather than electrical — aims to influence calm through touch receptors; the mechanism is proposed, not proven. Not tVNS in the strict sense; classified here as a vagal modulator.' },
     { criterionId: 'protocols', score: 8.5, note: 'Seven distinct modes (energy, calm, sleep, focus, recover, social, clear) with adjustable intensity and duration. Best programme variety in the category.' },
     { criterionId: 'comfort', score: 9.0, note: 'Wrist, ankle or clip-on; designed for all-day wear. The only device here genuinely worn passively.' },
     { criterionId: 'biofeedback', score: 7.0, note: 'App logs sessions and self-rated state; integrates with Apple Health and Oura for HRV correlation.' },
@@ -74,7 +74,7 @@ The biology behind what these devices target — and the protocols that compound
     { q: "Who is the Apollo Neuro best for?", a: "The Apollo Neuro is best for daily-wear vagal modulation: people who want something gentle, non-electrical and easy to integrate into life. It needs no pads, skin contact or titration, and it is the only device in its category designed for genuine all-day wear." },
   ],
   datePublished: '2026-05-21',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default apolloNeuro

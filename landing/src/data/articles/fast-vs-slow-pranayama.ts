@@ -41,7 +41,7 @@ The mistake many people make is treating "breathwork" as automatically relaxing.
 
 Slow pranayama is better for the body's stress response: in an Indian comparison, both fast and slow pranayama reduced perceived stress, but the beneficial effects on cardiovascular parameters (heart rate, blood pressure) appeared **only after slow pranayama, not fast**. The slow techniques produced the parasympathetic shift; the fast ones produced arousal.
 
-The mechanism follows the breathing rate directly. Slow breathing — around six breaths per minute or fewer — lengthens the exhale and activates the [vagus nerve](/glossary/vagus-nerve) and baroreflex, raising heart rate variability (HRV). Fast, forceful breathing does the reverse: it drives sympathetic activation, useful for waking up and energizing, but not for calming down. So the same word, "pranayama," covers two physiologically opposite tools.
+The mechanism follows the breathing rate directly. Slow breathing — around six breaths per minute or fewer — lengthens the exhale and engages the baroreflex, raising heart rate variability (HRV), including its vagally mediated part (see [vagus nerve](/glossary/vagus-nerve)). Fast, forceful breathing does the reverse: it drives sympathetic activation, useful for waking up and energizing, but not for calming down. So the same word, "pranayama," covers two physiologically opposite tools.
 
 ## When should you use fast vs. slow pranayama?
 

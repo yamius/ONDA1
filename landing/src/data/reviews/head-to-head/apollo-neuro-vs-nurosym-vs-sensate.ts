@@ -9,7 +9,7 @@ const apolloVsNurosymVsSensate: HeadToHead = {
   description:
     'Apollo vs Nurosym vs Sensate — three-way ONDA comparison of three vagus-targeting modalities. Vibrotactile all-day, clinical auricular tVNS and infrasonic chest device in one decision.',
   intro:
-    'Apollo Neuro, Nurosym and Sensate are the three consumer vagus-targeting devices users compare across mechanisms. Three different approaches to the same nerve: Apollo modulates vagal tone via vibrotactile mechanoreception, Nurosym delivers direct electrical stimulation to the auricular branch, Sensate uses infrasonic thoracic resonance. Same goal, three independent mechanisms.',
+    'Apollo Neuro, Nurosym and Sensate are the three consumer vagus-targeting devices users compare across mechanisms. Three different approaches to the same nerve: Apollo uses vibration on the skin (an indirect, proposed route), Nurosym delivers direct electrical stimulation to the auricular branch, Sensate uses infrasonic thoracic resonance. Same goal, three independent mechanisms.',
   winnerSlug: 'nurosym',
   verdict:
     'Nurosym wins on evidence and mechanism directness for serious users. Apollo wins for all-day wearability. Sensate wins as a focused evening ritual.',
@@ -36,7 +36,7 @@ const apolloVsNurosymVsSensate: HeadToHead = {
     },
     {
       q: 'Are all three really vagus nerve stimulators?',
-      a: 'Only Nurosym is electrical tVNS in the strict sense — direct stimulation of the auricular vagal branch. Apollo modulates vagal tone via vibrotactile mechanoreception (indirect); Sensate via infrasonic thoracic resonance (indirect). All three produce measurable HRV shifts in published research, but the mechanisms differ.',
+      a: 'Only Nurosym is electrical tVNS in the strict sense — direct stimulation of the auricular vagal branch. Apollo works through vibration on the skin and Sensate through infrasonic sound on the chest — both indirect, proposed routes with limited evidence. All three produce measurable HRV shifts in published research, but the mechanisms differ.',
     },
     {
       q: 'Which has the strongest evidence?',
@@ -69,7 +69,7 @@ If a pleasant focused evening wind-down ritual is what you want, Sensate is the 
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   publishOn: '2026-06-04',
   datePublished: '2026-06-04',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default apolloVsNurosymVsSensate

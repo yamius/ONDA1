@@ -51,7 +51,7 @@ Use box breathing for steady focus under pressure and 4-7-8 as a stronger off-sw
 
 - **Box (4-4-4-4)** — steady focus under pressure. Best before a stressful event, or to settle without making yourself sleepy. The held breaths build composure.
 - **4-7-8** — a stronger off-switch for sleep. The long hold and even longer exhale push your breathing rate right down and emphasise the calming out-breath.
-- **Extended exhale (4-6)** — fastest everyday calm. A longer exhale than inhale raises vagal tone quickest; an RCT found brief exhale-focused breathing improved mood and lowered arousal more than mindfulness (Balban 2023).
+- **Extended exhale (4-6)** — fastest everyday calm. A longer exhale than inhale slows the heart within each breath; an RCT found brief exhale-focused breathing improved mood and lowered arousal more than mindfulness (Balban 2023).
 
 Don't count in your head — let the [Breathing Pacer](/tools/breathing) run the rhythm so you can just follow the circle. For the personalised HRV sweet spot, see [resonance breathing](/tools/resonance-breathing).
 

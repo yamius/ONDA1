@@ -36,7 +36,7 @@ const article: Article = {
 
 ## Section 1: Is a short breathing session enough?
 
-Slow breathing shifts your autonomic balance toward the calm [parasympathetic](/glossary/parasympathetic-nervous-system) side within *minutes* — you don't need a long session to reach the state. A few minutes of paced, exhale-led breathing raises [vagal](/glossary/vagus-nerve) tone and settles arousal on the spot. The acute effect is fast by design.
+Slow breathing shifts your autonomic balance toward the calm [parasympathetic](/glossary/parasympathetic-nervous-system) side within *minutes* — you don't need a long session to reach the state. A few minutes of paced, exhale-led breathing raises [vagally](/glossary/vagus-nerve) mediated HRV and settles arousal on the spot. The acute effect is fast by design.
 
 And the training effect — a steadier baseline, a nervous system that returns to calm faster — comes from *repetition*, not from marathon sessions. Like any skill, it compounds with frequency. So a short daily rep isn't a compromise; it's the mechanism working the way it actually works.
 
@@ -55,7 +55,7 @@ There's a compounding bonus: the short daily rep keeps the *skill* warm, so when
 You don't need anything fancy. Sit comfortably, and:
 
 - **Minute 1 — arrive.** Breathe normally and just notice the breath. No fixing yet.
-- **Minutes 2–4 — slow it down.** Lengthen the exhale so it's longer than the inhale (a longer out-breath is what raises vagal tone fastest). Aim for slow, smooth, and low in the belly rather than a rigid count. If you like structure, [coherent breathing](/articles/coherent-breathing-guide) or [box breathing](/articles/box-breathing-how-it-works) both work — pick the one that feels natural.
+- **Minutes 2–4 — slow it down.** Lengthen the exhale so it's longer than the inhale (a longer out-breath slows the heart within each breath). Aim for slow, smooth, and low in the belly rather than a rigid count. If you like structure, [coherent breathing](/articles/coherent-breathing-guide) or [box breathing](/articles/box-breathing-how-it-works) both work — pick the one that feels natural.
 - **Minute 5 — settle.** Let the breath return to normal and notice how the body feels different from minute 1.
 
 That's it. The magic isn't the pattern — it's that you'll actually repeat it.

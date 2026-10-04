@@ -48,7 +48,7 @@ const threeVagusForms: HeadToHead = {
     },
     {
       q: 'Are any of these real tVNS?',
-      a: 'Only Hoolest is electrical tVNS in the strict sense (direct stimulation of the auricular or cervical vagal branch). Apollo modulates vagal tone indirectly via mechanoreceptors; Sensate via thoracic infrasonic resonance. All three produce measurable HRV shifts in published research, but the mechanisms differ.',
+      a: 'Only Hoolest is electrical tVNS in the strict sense (direct stimulation of the auricular or cervical vagal branch). Apollo works indirectly through vibration on the skin; Sensate through infrasonic sound on the chest. All three produce measurable HRV shifts in published research, but the mechanisms differ.',
     },
   ],
   content: `## The short version
@@ -68,7 +68,7 @@ If a focused evening wind-down ritual with paired soundscapes is the use case, S
 If you want short, intense parasympathetic priming around training and sleep, Hoolest is the right shape. The dual ear/neck targeting and the founder-published athletic-recovery research are the differentiators. Active engagement required for the session.`,
   relatedComparisonSlug: 'best-vagus-nerve-stimulators-2026',
   datePublished: '2026-05-23',
-  dateModified: '2026-10-01',
+  dateModified: '2026-10-04',
 }
 
 export default threeVagusForms

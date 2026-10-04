@@ -38,7 +38,7 @@
       },
       {
         "q": "Ab wann ist der Ruhepuls gefährlich?",
-        "a": "Ein Ruhepuls, der dauerhaft über 100 bpm liegt (Tachykardie) oder bei Nicht-Sportlern unter 60 bpm (Bradykardie), liegt außerhalb des üblichen Bereichs für Erwachsene und sollte mit einer Ärztin oder einem Arzt besprochen werden. Suche umgehend Hilfe, wenn ein sehr schneller oder sehr langsamer Puls mit Brustschmerzen, Ohnmacht oder Atemnot einhergeht.",
+        "a": "Ein Ruhepuls, der dauerhaft über 100 bpm liegt (Tachykardie) oder unter 60 bpm (Bradykardie), liegt außerhalb des üblichen Bereichs für Erwachsene. Ein niedriger Puls ist bei trainierten Menschen oft normal; wichtig wird er vor allem, wenn Schwindel, Ohnmacht oder Atemnot dazukommen – dann geh zur Ärztin oder zum Arzt. Suche umgehend Hilfe, wenn ein sehr schneller oder sehr langsamer Puls mit Brustschmerzen, Ohnmacht oder Atemnot einhergeht.",
         "links": [
           {
             "href": "/articles/talk-to-your-doctor-about-wearable-data",

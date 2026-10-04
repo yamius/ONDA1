@@ -8,7 +8,7 @@
  * Honesty note: the popular "vagal states" framing comes from polyvagal theory
  * (Porges 2009), whose finer evolutionary/anatomical claims are debated in the
  * literature. What is well supported is the practical core: you can read your
- * autonomic state and shift it — slow, long-exhale breathing raises vagal tone
+ * autonomic state and shift it — slow, long-exhale breathing is associated with higher vagally mediated HRV
  * (Gerritsen & Band 2018), and vagal tone indexed by HRV tracks self-regulation
  * (Laborde 2017). This is an educational self-check, not a diagnosis.
  */
@@ -172,6 +172,6 @@ export const NS_FAQ: Array<{ q: string; a: string }> = [
   },
   {
     q: 'How is this linked to HRV and the vagus nerve?',
-    a: 'The vagus nerve is the main parasympathetic ("rest-and-digest") brake on your heart, and its activity — vagal tone — is reflected in your heart-rate variability. Higher vagal tone is associated with better self-regulation and a quicker return to calm after stress (Laborde 2017). Practices that raise vagal tone, especially slow breathing, are central to moving out of fight-or-flight.',
+    a: 'The vagus nerve is the main parasympathetic ("rest-and-digest") brake on your heart, and its activity — vagal tone — is reflected in your heart-rate variability. Higher vagal tone is associated with better self-regulation and a quicker return to calm after stress (Laborde 2017). Practices associated with higher vagally mediated HRV, especially slow breathing, are central to moving out of fight-or-flight.',
   },
 ]

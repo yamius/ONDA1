@@ -6630,7 +6630,7 @@ Allostatic load accumulates when defense mechanisms (such as [cortisol](/glossar
 In ONDA protocols, we use biometric data to notice and "pay down" this debt:
 
 - **Recovery Loading:** If your resting HR or HRV drifts outside your personal baseline range, treat it as a cue to ease training intensity and prioritize sleep to prevent load accumulation.
-- **Vagal Tone Activation:** Utilizing breathing techniques and cold therapy to activate the [Vagus Nerve](/glossary/vagus-nerve), which serves as the primary "kill switch" for the allostatic response.
+- **Vagal Support:** Utilizing slow breathing and cold exposure, which are associated with higher vagally mediated HRV ([Vagus Nerve](/glossary/vagus-nerve)); the parasympathetic branch serves as the primary "kill switch" for the allostatic response.
 - **Stress Buffering:** Implementing timely micro-breaks throughout the day to prevent the cumulative effect of stress from reaching a tipping point.`,
     relatedSlugs: ['cortisol', 'hpa-axis', 'heart-rate-variability'],
   },

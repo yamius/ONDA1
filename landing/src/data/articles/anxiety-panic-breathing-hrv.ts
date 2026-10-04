@@ -52,7 +52,7 @@ Breathing can stop the loop because it is the only autonomic function with a man
 
 Breathing is the only autonomic function with a manual override — and it back-propagates to the rest of the system. Fast, shallow chest-breathing (hyperventilation) is both a *symptom* of panic and an *accelerant*: it drops CO₂, which produces the tingling, light-headedness and air-hunger that the brain reads as more danger. Slow it down and you cut the accelerant.
 
-The mechanism runs through [heart-rate variability](/glossary/heart-rate-variability). A long, slow exhale briefly hands control to the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve); the heart slows on the out-breath. Pace the whole breath slow — and bias it toward the exhale — and you raise vagal tone and pull the system back toward calm (Zaccaro 2018; Lehrer & Gevirtz 2014).
+The mechanism runs through [heart-rate variability](/glossary/heart-rate-variability). A long, slow exhale briefly hands control to the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve); the heart slows on the out-breath. Pace the whole breath slow — and bias it toward the exhale — and vagally mediated HRV rises as the system is pulled back toward calm (Zaccaro 2018; Lehrer & Gevirtz 2014).
 
 ---
 
@@ -89,7 +89,7 @@ Chest pain, especially the first time, is a medical emergency until a doctor say
 
 Within those limits, the practice is simple and the evidence is real: when the alarm misfires, the breath is how you reach in and reset it.
 
-> **The Hack:** At the first flicker — before the spiral — breathe low and slow with a longer exhale than inhale (try 4 in, 6 out) for a couple of minutes. Longer out-breaths raise vagal tone fastest. Do it *early*; the loop is far easier to interrupt before it accelerates.
+> **The Hack:** At the first flicker — before the spiral — breathe low and slow with a longer exhale than inhale (try 4 in, 6 out) for a couple of minutes. Longer out-breaths slow the heart within each breath. Do it *early*; the loop is far easier to interrupt before it accelerates.
 
 > [ SYSTEM_STATUS ]
 > LOOP: threat-detector ⇄ body signals (self-amplifying)
@@ -105,7 +105,7 @@ Within those limits, the practice is simple and the evidence is real: when the a
     },
     {
       name: 'Breathe low, slow, and exhale-led',
-      text: 'Breathe into the belly, slow the whole breath, and make the exhale longer than the inhale (e.g. 4 seconds in, 6 out). The long out-breath raises vagal tone and slows the heart fastest.',
+      text: 'Breathe into the belly, slow the whole breath, and make the exhale longer than the inhale (e.g. 4 seconds in, 6 out). A longer out-breath slows the heart within each breath and is associated with higher vagally mediated HRV.',
       protocolId: 'anx-exhale',
     },
     {

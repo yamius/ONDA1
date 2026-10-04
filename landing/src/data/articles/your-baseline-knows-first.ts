@@ -78,7 +78,7 @@ That restraint is the point. A tool that shouted "illness detected" would be bot
 
 ## Section 5: What should you do with an early wearable signal?
 
-An early signal is an invitation to pay attention, not to panic. When your corridor flags a drift, the useful responses are boring and real: protect your sleep, ease off the training load, hydrate, and give your nervous system a deliberate parasympathetic nudge. Slow, [exhale-led breathing](/articles/coherent-breathing-guide) raises [vagal](/glossary/vagus-nerve) tone within minutes and is the lowest-risk lever you have — see the live version in [HRV biofeedback](/hrv-biofeedback).
+An early signal is an invitation to pay attention, not to panic. When your corridor flags a drift, the useful responses are boring and real: protect your sleep, ease off the training load, hydrate, and give your nervous system a deliberate parasympathetic nudge. Slow, [exhale-led breathing](/articles/coherent-breathing-guide) raises [vagally](/glossary/vagus-nerve) mediated HRV within minutes and is the lowest-risk lever you have — see the live version in [HRV biofeedback](/hrv-biofeedback).
 
 And if a drift is large, persistent, or paired with symptoms that worry you, the move is a clinician, not an app. ONDA is not a medical device; the baseline is a mirror, not a diagnosis.
 
@@ -103,7 +103,7 @@ And if a drift is large, persistent, or paired with symptoms that worry you, the
     },
     {
       name: 'Respond boringly and early',
-      text: 'When your baseline drifts, protect sleep, ease training load, hydrate, and down-shift with slow exhale-led breathing to raise vagal tone. Small, early responses beat dramatic late ones.',
+      text: 'When your baseline drifts, protect sleep, ease training load, hydrate, and down-shift with slow exhale-led breathing. Small, early responses beat dramatic late ones.',
       protocolId: 'baseline-respond',
     },
     {

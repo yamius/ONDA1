@@ -117,7 +117,7 @@ Resonant-frequency work needs a device that captures the breathing-driven HRV en
     },
     {
       name: 'Vagal Capture Session',
-      text: 'Breathe at your resonant frequency for 10+ consecutive minutes without interruption. Slow resonant breathing typically raises vagal tone (via HRV) within a few minutes, though timing varies by person.',
+      text: 'Breathe at your resonant frequency for 10+ consecutive minutes without interruption. Slow resonant breathing typically raises HRV within a few minutes, though timing varies by person.',
       protocolId: 'resonance-vagal-capture',
     },
     {

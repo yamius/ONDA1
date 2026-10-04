@@ -38,7 +38,7 @@
       },
       {
         "q": "Quale frequenza cardiaca a riposo è pericolosa?",
-        "a": "Una frequenza a riposo che resta sopra i 100 bpm (tachicardia), o sotto i 60 bpm in chi non è un atleta (bradicardia), è fuori dall'intervallo abituale per un adulto ed è bene parlarne con un medico. Rivolgiti subito a un medico se una frequenza molto alta o molto bassa si accompagna a dolore al petto, svenimento o mancanza di fiato.",
+        "a": "Una frequenza a riposo che resta sopra i 100 bpm (tachicardia), o sotto i 60 bpm (bradicardia), è fuori dall'intervallo abituale per un adulto. Una frequenza bassa è spesso normale nelle persone allenate; conta soprattutto se si accompagna a capogiri, svenimento o mancanza di fiato: in quel caso rivolgiti a un medico. Rivolgiti subito a un medico se una frequenza molto alta o molto bassa si accompagna a dolore al petto, svenimento o mancanza di fiato.",
         "links": [
           {
             "href": "/articles/talk-to-your-doctor-about-wearable-data",

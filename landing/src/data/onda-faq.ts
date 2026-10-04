@@ -53,7 +53,7 @@ export const ONDA_FAQ: FaqGroup[] = [
       },
       {
         q: 'Can I train my vagus nerve?',
-        a: 'You can influence vagal (parasympathetic) activity. Slow breathing, long exhales, and HRV biofeedback raise vagal tone in the moment, and practised regularly they make a calm state easier to reach. The effect is real but modest — “vagus resets” that promise to cure disease overstate it.',
+        a: 'You can influence vagal (parasympathetic) activity. Slow breathing, long exhales, and HRV biofeedback raise vagally mediated HRV in the moment, and practised regularly they make a calm state easier to reach. The effect is real but modest — “vagus resets” that promise to cure disease overstate it.',
         link: { to: '/articles/vagus-nerve-exercises', label: 'Vagus nerve exercises' },
       },
       {

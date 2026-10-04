@@ -12,7 +12,7 @@ const article: Article = {
   title: 'Do Breathing Exercises Work for Older Adults? What the Research Shows',
   seoTitle: 'Breathing Exercises for Older Adults: The Evidence | ONDA Life',
   description:
-    'Research shows slow breathing raises vagal tone and lowers anxiety in older adults — though a single session may not move blood pressure. The evidence and how to practice safely as you age.',
+    'Research shows slow breathing raises HRV and lowers anxiety in older adults — though a single session may not move blood pressure. The evidence and how to practice safely as you age.',
   category: 'ONDA Protocol',
   relatedSlugs: ['breathing-lowers-stress-hormones', 'coherent-breathing-guide', 'normal-hrv-by-age', 'resting-heart-rate-by-age', 'high-blood-pressure-slow-breathing'],
   introStyle: 'cyan',
@@ -27,26 +27,26 @@ const article: Article = {
     linkText: 'What ONDA measures →',
   },
   content: `
-Yes — and gently. Most breathing research is done on young adults, leaving an open question for everyone else. But studies that tested older adults directly are clear: slow, deep breathing raises vagal tone (parasympathetic activity) and lowers anxiety in older adults, just as it does in the young. A 2021 study comparing young and older adults found that a single session of deep, slow breathing improved vagal tone and reduced anxiety across both age groups. One honest caveat from more recent work: a single session may not significantly change blood pressure in healthy older adults, even as it clearly shifts heart rate variability. So the calming, autonomic benefit is real and immediate; the blood-pressure benefit, if it comes, builds over weeks of practice rather than in one sitting.
+Yes — and gently. Most breathing research is done on young adults, leaving an open question for everyone else. But studies that tested older adults directly are clear: slow, deep breathing raises vagally mediated HRV (a marker linked to parasympathetic activity) and lowers anxiety in older adults, just as it does in the young. A 2021 study comparing young and older adults found that a single session of deep, slow breathing raised vagally mediated HRV and reduced anxiety across both age groups. One honest caveat from more recent work: a single session may not significantly change blood pressure in healthy older adults, even as it clearly shifts heart rate variability. So the calming, autonomic benefit is real and immediate; the blood-pressure benefit, if it comes, builds over weeks of practice rather than in one sitting.
 
 ## Why age-specific research matters
 
 [Heart rate variability](/articles/normal-hrv-by-age) (HRV) declines with age, and the autonomic nervous system becomes less flexible. That raises a fair question: do breathing techniques studied in 25-year-olds still do anything at 65 or 75? Extrapolating from young participants isn't good enough, because the baseline physiology is different.
 
-This is exactly the gap that age-comparison research addressed. In a 2021 study (Magnon and colleagues, published in *Scientific Reports*), young and older adults did a single session of deep, slow breathing, and researchers measured vagal tone through HRV alongside self-reported anxiety. Rather than assuming the young-adult effect carries over, they measured it directly in both groups — making the findings genuinely relevant to people usually left out of the breathing conversation.
+This is exactly the gap that age-comparison research addressed. In a 2021 study (Magnon and colleagues, published in *Scientific Reports*), young and older adults did a single session of deep, slow breathing, and researchers measured vagally mediated HRV alongside self-reported anxiety. Rather than assuming the young-adult effect carries over, they measured it directly in both groups — making the findings genuinely relevant to people usually left out of the breathing conversation.
 
 ## Do breathing exercises work for older adults?
 
 Yes — slow breathing calms older adults right away, though blood pressure may not shift in a single session; two findings, taken together, give an honest picture:
 
-- **Vagal tone and anxiety improve (2021, young and older adults).** A single session of deep and slow breathing increased vagal tone — the parasympathetic "rest and digest" activity measured through HRV — and reduced anxiety, in both young and older participants. The calming effect was not limited to the young; older adults benefited too.
+- **Vagal tone and anxiety improve (2021, young and older adults).** A single session of deep and slow breathing increased vagally mediated HRV — a marker linked to parasympathetic "rest and digest" activity — and reduced anxiety, in both young and older participants. The calming effect was not limited to the young; older adults benefited too.
 - **Blood pressure may not shift in one session (2024, older adults).** A separate study of community-dwelling older adults compared structured and natural deep breathing at six breaths per minute. Both effectively enhanced parasympathetic activity and modulated HRV — but a single session did not significantly change blood pressure in these healthy elderly participants. The autonomic shift was immediate; the blood-pressure change was not.
 
 The combined message is honest and useful: for an older adult, slow breathing reliably produces the calming, vagal shift right away, while any blood-pressure benefit is a longer-term project built through consistent practice — consistent with broader evidence that [weeks of slow breathing can lower blood pressure](/articles/high-blood-pressure-slow-breathing) and raise HRV.
 
 ## Why does slow breathing still work as you age?
 
-Slow breathing works through a reflex that doesn't depend on youthful fitness. Breathing low and slow — around six breaths per minute — activates the baroreflex, the blood-pressure regulating loop in your arteries, and stimulates the [vagus nerve](/glossary/vagus-nerve) via the long exhale. These are built-in mechanisms that remain accessible with age. So even as HRV naturally declines, the *lever* — a long, slow exhale that tips you toward parasympathetic activity — still works. You may start from a lower baseline than a 25-year-old, but the direction of the shift is the same. And reassuringly, research shows community-dwelling older adults can do controlled breathing successfully without special equipment or training.
+Slow breathing works through a reflex that doesn't depend on youthful fitness. Breathing low and slow — around six breaths per minute — activates the baroreflex, the blood-pressure regulating loop in your arteries, and the long exhale is associated with higher vagally mediated HRV (see [vagus nerve](/glossary/vagus-nerve)). These are built-in mechanisms that remain accessible with age. So even as HRV naturally declines, the *lever* — a long, slow exhale that tips you toward parasympathetic activity — still works. You may start from a lower baseline than a 25-year-old, but the direction of the shift is the same. And reassuringly, research shows community-dwelling older adults can do controlled breathing successfully without special equipment or training.
 
 ## How can older adults practice breathing exercises safely?
 
@@ -70,7 +70,7 @@ Because everyone's baseline differs — especially with age — the useful measu
     },
     {
       name: 'Aim for about six breaths per minute',
-      text: 'A slow, gentle rhythm with a long, easy exhale — roughly six breaths per minute is the pace the research used to raise vagal tone.',
+      text: 'A slow, gentle rhythm with a long, easy exhale — roughly six breaths per minute is the pace the research used.',
       protocolId: 'boa-pace',
     },
     {

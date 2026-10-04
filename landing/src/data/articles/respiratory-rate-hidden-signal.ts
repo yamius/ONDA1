@@ -75,7 +75,7 @@ The firewall, plainly: an elevated respiratory rate is **descriptive, not diagno
 
 ## Section 5: Can you control your breathing rate?
 
-Yes — and that makes respiratory rate unique among your vitals: it's the only one you can *directly* move. You can't will your heart rate down, but you can slow your breath — and when you do, the rest of the system follows. Slow, [exhale-led breathing](/articles/coherent-breathing-guide) drops the rate on purpose, raises vagal tone, and pulls the whole autonomic state toward calm. For the deeper mechanics of breathing tolerance and CO₂, see [CO₂ tolerance](/articles/co2-tolerance-expanding-oxygen-limit); for why a drifting baseline is worth watching at all, see [your baseline knows first](/articles/your-baseline-knows-first).
+Yes — and that makes respiratory rate unique among your vitals: it's the only one you can *directly* move. You can't will your heart rate down, but you can slow your breath — and when you do, the rest of the system follows. Slow, [exhale-led breathing](/articles/coherent-breathing-guide) drops the rate on purpose, raises HRV while you practise, and pulls the whole autonomic state toward calm. For the deeper mechanics of breathing tolerance and CO₂, see [CO₂ tolerance](/articles/co2-tolerance-expanding-oxygen-limit); for why a drifting baseline is worth watching at all, see [your baseline knows first](/articles/your-baseline-knows-first).
 
 > **The Hack:** Learn your normal resting respiratory rate the way you know your resting pulse. It's one of your steadiest signals, so a two-or-three-breath rise that holds overnight is an early, honest flag — and it's the one vital you can also reach in and steer, one slow breath at a time.
 
@@ -103,7 +103,7 @@ Yes — and that makes respiratory rate unique among your vitals: it's the only 
     },
     {
       name: 'Use the one vital you can steer',
-      text: 'Unlike heart rate, you can move breathing directly. Slow, exhale-led breathing lowers the rate on purpose, raises vagal tone and pulls the whole autonomic state toward calm.',
+      text: 'Unlike heart rate, you can move breathing directly. Slow, exhale-led breathing lowers the rate on purpose, raises HRV while you practise and pulls the whole autonomic state toward calm.',
       protocolId: 'rr-steer',
     },
   ],

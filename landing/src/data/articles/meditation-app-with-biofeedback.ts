@@ -63,7 +63,7 @@ This is the difference between **passive** listening and an **active**, measured
 
 A meditation app is science-based when it passes a usable test (useful, since "science-based" gets stamped on everything): **does the app rest on a measurable mechanism, and can it show you that mechanism working on you?**
 
-The mechanism here is real and well-studied. Slow, paced breathing raises vagal tone and HRV within minutes; it's one of the best-supported, lowest-risk self-regulation levers there is. An app is science-based in the strong sense when it doesn't just *tell* you that — it *measures* it on your body and shows the response. A mindfulness app with HRV isn't a gimmick; the HRV is the evidence that the practice is doing what it claims.
+The mechanism here is real and well-studied. Slow, paced breathing raises HRV within minutes; it's one of the best-supported, lowest-risk self-regulation levers there is. An app is science-based in the strong sense when it doesn't just *tell* you that — it *measures* it on your body and shows the response. A mindfulness app with HRV isn't a gimmick; the HRV is the evidence that the practice is doing what it claims.
 
 The honest boundary: measuring your physiology is not the same as diagnosing or treating anything. A biofeedback meditation app is a **training and self-regulation tool, not a medical device** — a distinction worth keeping whoever makes the app.
 

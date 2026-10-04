@@ -66,7 +66,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         kicker: '[ THE EVIDENCE ]',
         title: 'What the evidence says',
         paras: [
-          'The core mechanism is well supported. Paced breathing near resonance frequency reliably increases HRV during a session and engages the parasympathetic (“rest and digest”) branch, and HRV biofeedback is an established technique for improving vagal tone and stress resilience — not just measuring it (Lehrer & Gevirtz, 2014; Thayer et al., 2009).',
+          'The core mechanism is well supported. Paced breathing near resonance frequency reliably increases HRV during a session and engages the parasympathetic (“rest and digest”) branch, and HRV biofeedback is an established technique for training this response and stress resilience — not just measuring it (Lehrer & Gevirtz, 2014; Thayer et al., 2009).',
           'What’s *less* certain is the size and durability of long-term change: how much a given person’s resting baseline shifts, and how that translates to specific health outcomes, varies and is still an active research question. We keep those two registers separate on the {{researchLink}}.',
         ],
       },
@@ -201,7 +201,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         kicker: '[ ДОКАЗАТЕЛЬСТВА ]',
         title: 'Что говорят исследования',
         paras: [
-          'Основной механизм хорошо подтверждён. Размеренное дыхание около резонансной частоты надёжно повышает HRV во время сессии и включает парасимпатическую («отдыхай и восстанавливайся») ветвь, а HRV-биофидбек — устоявшаяся техника улучшения вагального тонуса и стрессоустойчивости, а не только их измерения (Lehrer & Gevirtz, 2014; Thayer et al., 2009).',
+          'Основной механизм хорошо подтверждён. Размеренное дыхание около резонансной частоты надёжно повышает HRV во время сессии и включает парасимпатическую («отдыхай и восстанавливайся») ветвь, а HRV-биофидбек — устоявшаяся техника тренировки этой реакции и стрессоустойчивости, а не только их измерения (Lehrer & Gevirtz, 2014; Thayer et al., 2009).',
           '*Менее* определённы величина и стойкость долгосрочных изменений: насколько сдвигается базовый уровень конкретного человека в покое и как это переходит в конкретные показатели здоровья — варьируется и остаётся активным исследовательским вопросом. Эти два регистра мы держим раздельно на {{researchLink}}.',
         ],
       },
@@ -336,7 +336,7 @@ export const HRV_BIOFEEDBACK_I18N: Record<'en' | 'ru' | 'es', CornerstoneCopy> =
         kicker: '[ LA EVIDENCIA ]',
         title: 'Qué dice la evidencia',
         paras: [
-          'El mecanismo central está bien respaldado. La respiración pautada cerca de la frecuencia de resonancia aumenta de forma fiable la VFC durante una sesión y activa la rama parasimpática («descanso y digestión»), y el biofeedback de VFC es una técnica establecida para mejorar el tono vagal y la resiliencia al estrés — no solo para medirlos (Lehrer & Gevirtz, 2014; Thayer et al., 2009).',
+          'El mecanismo central está bien respaldado. La respiración pautada cerca de la frecuencia de resonancia aumenta de forma fiable la VFC durante una sesión y activa la rama parasimpática («descanso y digestión»), y el biofeedback de VFC es una técnica establecida para entrenar esta respuesta y la resiliencia al estrés — no solo para medirlos (Lehrer & Gevirtz, 2014; Thayer et al., 2009).',
           'Lo *menos* seguro es el tamaño y la durabilidad del cambio a largo plazo: cuánto se desplaza la línea base en reposo de una persona, y cómo se traduce en resultados de salud concretos, varía y sigue siendo una pregunta de investigación abierta. Mantenemos esos dos registros separados en la {{researchLink}}.',
         ],
       },

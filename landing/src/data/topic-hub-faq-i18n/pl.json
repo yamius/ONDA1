@@ -38,7 +38,7 @@
       },
       {
         "q": "Jakie tętno spoczynkowe jest niebezpieczne?",
-        "a": "Tętno spoczynkowe, które stale przekracza 100 bpm (tachykardia) lub spada poniżej 60 bpm u osoby niebędącej sportowcem (bradykardia), wykracza poza typowy zakres dla dorosłych i warto omówić je z lekarzem. Niezwłocznie szukaj pomocy, jeśli bardzo szybkiemu lub bardzo wolnemu tętnu towarzyszy ból w klatce piersiowej, omdlenie lub duszność.",
+        "a": "Tętno spoczynkowe, które stale przekracza 100 bpm (tachykardia) lub spada poniżej 60 bpm (bradykardia), wykracza poza typowy zakres dla dorosłych. Niskie tętno jest często normalne u osób wytrenowanych; ma znaczenie głównie wtedy, gdy towarzyszą mu zawroty głowy, omdlenia lub duszność — wtedy skonsultuj się z lekarzem. Niezwłocznie szukaj pomocy, jeśli bardzo szybkiemu lub bardzo wolnemu tętnu towarzyszy ból w klatce piersiowej, omdlenie lub duszność.",
         "links": [
           {
             "href": "/articles/talk-to-your-doctor-about-wearable-data",
