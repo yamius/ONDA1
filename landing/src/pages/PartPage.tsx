@@ -305,7 +305,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Polyvagal Theory',
-          text: 'Training the nervous system to \u201cdrift\u201d smoothly between the Ventral Vagus (the state of social engagement and safety) and the Sympathetic system (energy for action). Utilizing sympathetic tone for a maneuver without collapsing into panic or rage.',
+          text: 'In the terms of Polyvagal Theory (a debated model): training the nervous system to \u201cdrift\u201d smoothly between the Ventral Vagus (the state of social engagement and safety) and the Sympathetic system (energy for action). Utilizing sympathetic tone for a maneuver without collapsing into panic or rage.',
         },
         {
           name: 'Neurobiology and Neuroception',
@@ -386,7 +386,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Autonomic Nervous System (Smart Parasympathetic)',
-          text: 'Drawing on Stephen Porges\' Polyvagal Theory, we activate the Ventral Vagus. This is a state of \u201ccalm alertness,\u201d where the heart beats powerfully and steadily, and the brain is ready for effective dominance rather than panic.',
+          text: 'According to Stephen Porges\' Polyvagal Theory \u2014 a debated model, not settled science \u2014 this is a \u201cventral vagal\u201d state of \u201ccalm alertness,\u201d where the heart beats powerfully and steadily, and the brain is ready for effective dominance rather than panic.',
         },
         {
           name: 'Lymphatic System (Mechanical Cleansing)',
@@ -773,7 +773,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Vagal Stimulation',
-          text: 'Vocal exercises to activate the ventral vagus.',
+          text: 'Vocal exercises that polyvagal theory, a debated model, links to the ventral vagus.',
         },
         {
           name: 'Cognitive Reappraisal',
@@ -794,7 +794,7 @@ export const parts: Record<string, {
       items: [
         {
           name: "Broca's Area, Wernicke's Area, and the Ventral Vagus",
-          text: 'The centers for assembling and delivering speech structures. The Ventral Vagus acts as a "social brake," ensuring a state of calm engagement and friendliness.',
+          text: 'The centers for assembling and delivering speech structures. In polyvagal theory (a debated model), the Ventral Vagus acts as a "social brake," supporting a state of calm engagement and friendliness.',
         },
         {
           name: 'Amygdala and Mirror Neurons',
@@ -885,7 +885,7 @@ export const parts: Record<string, {
         },
         {
           name: 'Orbitofrontal Cortex and the Ventral Vagus',
-          text: 'Ensuring social harmony and ethical choices in the moment. The Ventral Vagus creates a physiological "container" of safety for open communication.',
+          text: 'Ensuring social harmony and ethical choices in the moment. In polyvagal theory (a debated model), the Ventral Vagus creates a physiological "container" of safety for open communication.',
         },
         {
           name: 'mPFC and rTPJ (Right Temporoparietal Junction)',
@@ -1170,7 +1170,7 @@ export const parts: Record<string, {
       items: [
         'The body stops accumulating stress and begins to transmit it, processing it into kinetic or creative energy.',
         'You become a master of flow states, capable of maintaining internal softness and conductivity even under ultra-strong external influences.',
-        'Transition to minimal internal friction: ANS harmonization, vagal tone optimization, neurodynamics, vasomotricity, CSF dynamics.',
+        'Transition to minimal internal friction: ANS harmonization, support for vagally mediated HRV, neurodynamics, vasomotricity, CSF dynamics.',
       ],
     },
     outro:
@@ -1554,7 +1554,7 @@ export const parts: Record<string, {
       items: [
         {
           name: 'Vagal Breathing',
-          text: 'Slow, "ancestral" breathing that raises vagal tone and helps the stress system settle over time.',
+          text: 'Slow, "ancestral" breathing that raises HRV while you practise and helps the stress system settle over time.',
         },
         {
           name: 'Working With Old Fears',
@@ -1620,7 +1620,7 @@ export const parts: Record<string, {
     metaDescription:
       'Part 20: Recovery & Repair — bringing chronic stress load down over time so the body spends more time at rest. ONDA Life.',
     intro:
-      'Part 20 is about recovery — the slow shift from running on stress to spending more time at rest. Earlier levels taught you to reach a calm state; here that state gets long enough, and frequent enough, for the body to actually recover.\n\nKey idea: rest is not passive. Deep parasympathetic states give the system room to repair — better sleep, lower background tension, less time braced.\n\nWe work mainly through vagal tone: slow breathing and deep relaxation that switch the body out of "alert" mode and into recovery. None of this is a cure or a guarantee — it is consistent practice that lets the body do what it already knows how to do, more often.',
+      'Part 20 is about recovery — the slow shift from running on stress to spending more time at rest. Earlier levels taught you to reach a calm state; here that state gets long enough, and frequent enough, for the body to actually recover.\n\nKey idea: rest is not passive. Deep parasympathetic states give the system room to repair — better sleep, lower background tension, less time braced.\n\nWe work mainly through slow breathing, which raises HRV while you practise: slow breathing and deep relaxation that switch the body out of "alert" mode and into recovery. None of this is a cure or a guarantee — it is consistent practice that lets the body do what it already knows how to do, more often.',
     protocol: {
       title: 'Biological Protocol',
       intro: 'The mechanics of deeper recovery:',

@@ -210,7 +210,7 @@ export const levelsData: Record<number, LevelData> = {
       items: [
         {
           name: 'Polyvagal Theory (Ventral Vagus)',
-          text: 'Utilizing "smart parasympathetics" to maintain social engagement even under high loads.',
+          text: 'In the terms of Polyvagal Theory, a debated model: utilizing "smart parasympathetics" to maintain social engagement even under high loads.',
         },
         {
           name: 'HPA Axis Control',
@@ -505,7 +505,7 @@ export const levelsData: Record<number, LevelData> = {
           protocol: 'Protocol: Neurosomatic Fusion and Collective Ecstasy',
           goal: 'Objective: From individual conductivity to collective resonance — creating a unified neurosomatic circuit ("We-state").',
           work:
-            'Work: Dissolving the ego-shell boundaries. Activating oxytocin, mirror neurons, ventral vagal complex, and parietal modulation. Achieving neurosomatic coupling where two organisms function as one.',
+            'Work: Dissolving the ego-shell boundaries. Activating oxytocin, mirror neurons and parietal modulation — and, in the terms of polyvagal theory (a debated model), the ventral vagal complex. Achieving neurosomatic coupling where two organisms function as one.',
         },
       ],
     },

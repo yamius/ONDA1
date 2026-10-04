@@ -1130,7 +1130,7 @@
     },
     "apollo-neuro": {
       "verdict": "O dispositivo mais fácil de usar no corpo da categoria — vibrotátil, não elétrico, com evidências clínicas crescentes sobre VFC e recuperação.",
-      "productType": "Modulador vagal vibrotátil (wearable)"
+      "productType": "Wearable vibrotátil, vendido como modulador vagal"
     },
     "vagustim": {
       "verdict": "tVNS auricular baseado em protocolos com origem de pesquisa confiável — forte em respaldo regulatório europeu e ensaios.",
@@ -1146,7 +1146,7 @@
     },
     "sensate": {
       "verdict": "Um dispositivo infrassônico passivo e calmante — suave e muito querido, com evidências sobre o mecanismo abaixo do entusiasmo dos usuários.",
-      "productType": "Modulador vagal infrassônico (pedra para o peito)"
+      "productType": "Pedra infrassônica usada no peito, vendida como modulador vagal"
     },
     "xen-by-neuvana": {
       "verdict": "tVNS auricular em forma de fones de ouvido — um formato de consumo inteligente, com evidências independentes modestas.",
@@ -1570,7 +1570,7 @@
         },
         {
           "q": "Dá para estimular o nervo vago de graça?",
-          "a": "Sim. A respiração lenta — cerca de cinco a sete respirações por minuto, com expiração mais longa — aumenta de forma confiável a variabilidade da frequência cardíaca mediada pelo vago enquanto você pratica e tem as evidências mais amplas entre as técnicas vagais. Cantarolar, mergulhar suavemente o rosto em água fria e fazer exercício aeróbico regular também ajudam. Muitas pessoas tentam isso primeiro e só compram um dispositivo se quiserem mais estrutura."
+          "a": "Sim. A respiração lenta — cerca de cinco a sete respirações por minuto, com expiração mais longa — aumenta de forma confiável a variabilidade da frequência cardíaca mediada pelo vago enquanto você pratica e tem as evidências mais amplas entre as técnicas vagais. Cantarolar e mergulhar suavemente o rosto em água fria também são usados, com evidências mais fracas; o exercício aeróbico regular também ajuda. Muitas pessoas tentam isso primeiro e só compram um dispositivo se quiserem mais estrutura."
         }
       ]
     },

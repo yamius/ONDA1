@@ -125,8 +125,8 @@
       "protocol": {
         "intro": "Nuestras prácticas se basan en los cuatro pilares de la ciencia moderna:",
         "items": [
-          { "name": "Teoría polivagal", "text": "Entrenar al sistema nervioso a «derivar» suavemente entre el vago ventral (estado de compromiso social y seguridad) y el sistema simpático (energía para la acción). Usar el tono simpático para una maniobra sin caer en pánico o rabia." },
-          { "name": "Neurobiología y neurocepción", "text": "Entrenamos la cadena: Formación reticular → Tálamo → Corteza motora. Esto permite al cerebro leer cambios del entorno (neurocepción) y emitir una reacción «antes del pensamiento», sorteando filtros cognitivos lentos." },
+          { "name": "Teoría polivagal", "text": "En los términos de la teoría polivagal (un modelo debatido): entrenar al sistema nervioso a «derivar» suavemente entre el vago ventral (estado de compromiso social y seguridad) y el sistema simpático (energía para la acción). Usar el tono simpático para una maniobra sin caer en pánico o rabia." },
+          { "name": "Neurobiología y neurocepción", "text": "Entrenamos la cadena: Formación reticular → Tálamo → Corteza motora. Esto permite al cerebro leer cambios del entorno (lo que la teoría polivagal, un modelo debatido, llama neurocepción) y emitir una reacción «antes del pensamiento», sorteando filtros cognitivos lentos." },
           { "name": "Neuroendocrinología", "text": "Impacto directo sobre el eje HPA (hipotálamo-hipófisis-suprarrenales). Enseñamos al cuerpo a controlar la liberación de cortisol y adrenalina, convirtiéndolos de veneno en combustible para la precisión." },
           { "name": "Linfología", "text": "Usar el tono muscular como bomba natural para limpiar el cuerpo de los metabolitos del estrés, asegurando frescura física incluso bajo cargas altas." }
         ]
@@ -160,7 +160,7 @@
         "intro": "Reconfiguramos el cuerpo a través de cuatro sistemas clave:",
         "items": [
           { "name": "Sistema endocrino (circuito hormonal del dominio)", "text": "Las suprarrenales pasan de la liberación de emergencia de cortisol a la producción de DHEA — la hormona de la vitalidad y la longevidad. El eje hipófisis-gónadas forma el «estado del ganador» mediante una estimulación moderada de testosterona. El timo restaura el vínculo entre seguridad social y respuesta inmune potente." },
-          { "name": "Sistema nervioso autónomo (parasimpática inteligente)", "text": "Apoyándonos en la teoría polivagal de Stephen Porges, activamos el vago ventral. Es un estado de «alerta tranquila», donde el corazón late con potencia y firmeza, y el cerebro está listo para un dominio efectivo en lugar de pánico." },
+          { "name": "Sistema nervioso autónomo (parasimpática inteligente)", "text": "Según la teoría polivagal de Stephen Porges —un modelo debatido, no ciencia establecida—, es un estado «vagal ventral» de «alerta tranquila», donde el corazón late con potencia y firmeza, y el cerebro está listo para un dominio efectivo en lugar de pánico." },
           { "name": "Sistema linfático (limpieza mecánica)", "text": "El estrés crónico bloquea diafragma y suelo pélvico. Nuestras prácticas de «peso» y «volumen» actúan como drenaje linfático profundo, exprimiendo literalmente los metabolitos del estrés de los tejidos." },
           { "name": "Biología cuántica (coherencia)", "text": "Trabajamos sobre la «densidad de presencia». Desde la biofotónica, es un estado de alta coherencia en el campo electromagnético de las células. Tu presencia se vuelve palpable a nivel físico para los demás." }
         ]
@@ -204,7 +204,7 @@
         "items": [
           { "name": "Sincronización", "text": "La habilidad de alinear ritmos respiratorios y cardíacos con un grupo para crear un campo de acción único." },
           { "name": "Movilidad micro-mímica", "text": "Lectura y emisión de señales de seguridad y estatus a través de los movimientos faciales más sutiles." },
-          { "name": "Co-regulación autónoma", "text": "Capacidad de influir en el campo emocional del grupo manteniéndote en un estado de vago ventral." }
+          { "name": "Co-regulación autónoma", "text": "Capacidad de influir en el campo emocional del grupo manteniéndote en lo que la teoría polivagal (un modelo debatido) llama estado de vago ventral." }
         ]
       },
       "results": {
@@ -331,7 +331,7 @@
         "intro": "Transformar el cuerpo en un transmisor potente de ideas mediante mecanismos neuroquímicos:",
         "items": [
           { "name": "Ingeniería hormonal", "text": "«Power posing» y patrones respiratorios para bajar el cortisol y aumentar la testosterona." },
-          { "name": "Estimulación vagal", "text": "Ejercicios vocales para activar el vago ventral." },
+          { "name": "Estimulación vagal", "text": "Ejercicios vocales que la teoría polivagal, un modelo debatido, vincula con el vago ventral." },
           { "name": "Reevaluación cognitiva", "text": "Técnica de control prefrontal que amortigua fisiológicamente la actividad de la amígdala, sustituyendo el miedo por la excitación." },
           { "name": "Bucles de oxitocina", "text": "Gestionar contacto visual y microexpresiones para construir confianza social." },
           { "name": "Encarnación de la personalidad", "text": "Prácticas centradas en la sensación somática de «Yo hablo», donde la voz se sostiene en todo el cuerpo — diafragma, pies y columna." }
@@ -340,7 +340,7 @@
       "targets": {
         "intro": "Sistemas objetivo y mecanismos de manifestación social:",
         "items": [
-          { "name": "Áreas de Broca y Wernicke, y vago ventral", "text": "Centros para ensamblar y entregar estructuras de habla. El vago ventral actúa como «freno social», asegurando un estado de compromiso tranquilo y amistosidad." },
+          { "name": "Áreas de Broca y Wernicke, y vago ventral", "text": "Centros para ensamblar y entregar estructuras de habla. Según la teoría polivagal (un modelo debatido), el vago ventral actúa como «freno social», asegurando un estado de compromiso tranquilo y amistosidad." },
           { "name": "Amígdala y neuronas espejo", "text": "Reducir la reactividad de la amígdala para suprimir el miedo social paralizante. Las neuronas espejo permiten leer las reacciones del público y ajustarse al contexto al instante." },
           { "name": "Ínsula y aparato vocal", "text": "La ínsula proporciona la sensación de autenticidad — cuánto se alinean tus palabras con tu estado interno. El nervio laríngeo y el aparato vocal sirven como herramientas de resonancia sonora." },
           { "name": "Glándula tiroides y PFC", "text": "La tiroides actúa como motor del tempo metabólico y de la energía de manifestación. La corteza prefrontal (PFC) maneja el modelado social y el control de impulsos." }
@@ -376,7 +376,7 @@
         "intro": "Sistemas objetivo y mecanismos de la interacción interpersonal:",
         "items": [
           { "name": "Neuronas espejo y red de Theory of Mind (ToM)", "text": "Resonancia directa de acciones y emociones — base de la empatía instantánea. La capacidad de la PFC medial (mPFC) de comprender perspectivas, intenciones y creencias del otro." },
-          { "name": "Corteza orbitofrontal y vago ventral", "text": "Asegurar la armonía social y las elecciones éticas en el momento. El vago ventral crea un «contenedor» fisiológico de seguridad para la comunicación abierta." },
+          { "name": "Corteza orbitofrontal y vago ventral", "text": "Asegurar la armonía social y las elecciones éticas en el momento. En los términos de la teoría polivagal (un modelo debatido), el vago ventral crea un «contenedor» fisiológico de seguridad para la comunicación abierta." },
           { "name": "mPFC y rTPJ (unión témporo-parietal derecha)", "text": "La mPFC es el centro para comprender el «Yo» del otro. La rTPJ es un nodo clave para leer señales no verbales y gestionar el «modelo mental» del otro." },
           { "name": "Sistema oxitocina-vasopresina e inter-brain synchrony", "text": "El equilibrio bioquímico entre confianza y protección de límites. La inter-brain synchrony es el fenómeno por el cual los ritmos cerebrales de los partners empiezan a operar en modo coherente." }
         ]
@@ -495,7 +495,7 @@
         "items": [
           "El cuerpo deja de acumular estrés y empieza a transmitirlo, procesándolo en energía cinética o creativa.",
           "Te conviertes en maestro de los estados de flujo, capaz de mantener suavidad interna y conductividad incluso bajo influencias externas extremas.",
-          "Transición a fricción interna mínima: armonización del SNA, optimización del tono vagal, neurodinámica, vasomotricidad, dinámica del LCR."
+          "Transición a fricción interna mínima: armonización del SNA, apoyo a la VFC de mediación vagal, neurodinámica, vasomotricidad, dinámica del LCR."
         ]
       },
       "outro": "Ya no eres una forma que resiste — eres un proceso que transforma. Cada impulso se vuelve recurso."
@@ -687,7 +687,7 @@
       "metaDescription": "Parte 20: Recuperación y reparación — bajar la carga crónica de estrés con el tiempo para que el cuerpo pase más tiempo en reposo. ONDA Life.",
       "imageAlt": "Recuperación y reparación, reposo profundo, ONDA YO RESTAURO.",
       "imageTitle": "[I_RESTORE]: visualización de la recuperación profunda y el retorno al reposo.",
-      "intro": "La Parte 20 trata de la recuperación: el cambio lento de vivir «a base de estrés» a pasar más tiempo en reposo. En niveles anteriores aprendiste a alcanzar un estado de calma; aquí ese estado se vuelve lo bastante largo y frecuente para que el cuerpo de verdad se recupere.\n\nIdea clave: el reposo no es pasividad. Los estados parasimpáticos profundos dan al sistema espacio para recuperarse — mejor sueño, menos tensión de fondo, menos tiempo «en alerta».\n\nTrabajamos sobre todo a través del tono vagal: respiración lenta y relajación profunda que conmutan el cuerpo del modo «alarma» al modo recuperación. No es una cura ni una garantía — es una práctica constante que deja al cuerpo hacer más a menudo lo que ya sabe hacer.",
+      "intro": "La Parte 20 trata de la recuperación: el cambio lento de vivir «a base de estrés» a pasar más tiempo en reposo. En niveles anteriores aprendiste a alcanzar un estado de calma; aquí ese estado se vuelve lo bastante largo y frecuente para que el cuerpo de verdad se recupere.\n\nIdea clave: el reposo no es pasividad. Los estados parasimpáticos profundos dan al sistema espacio para recuperarse — mejor sueño, menos tensión de fondo, menos tiempo «en alerta».\n\nTrabajamos sobre todo con la respiración lenta, que eleva la VFC mientras practicas, y relajación profunda que conmutan el cuerpo del modo «alarma» al modo recuperación. No es una cura ni una garantía — es una práctica constante que deja al cuerpo hacer más a menudo lo que ya sabe hacer.",
       "protocol": {
         "intro": "La mecánica de una recuperación más profunda:",
         "items": [

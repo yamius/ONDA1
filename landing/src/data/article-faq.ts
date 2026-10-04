@@ -445,7 +445,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How can I stimulate the vagus nerve?",
       answer:
-        "The vagus nerve responds to both natural and device-based input. Slow extended exhales, humming, gargling and cold exposure all activate it without hardware; dedicated vagus-nerve stimulators apply a gentle electrical signal. Either way the goal is a shift into the parasympathetic recovery state.",
+        "The best-supported free option is slow breathing with a longer exhale, which is associated with higher vagally mediated HRV while you practise. Humming, gargling and cold water on the face are thought to act on vagal pathways, with weaker evidence. Ear-clip stimulators apply a gentle electrical signal, but their effect on HRV is inconsistent in studies. Vagal tone itself cannot be measured directly.",
     },
     {
       question: "Is tDCS safe to use?",
@@ -1424,7 +1424,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
   ],
   "yoga-nidra-sleep-science": [
     { question: "What is Yoga Nidra?", answer: "'Yogic sleep' — a guided deep-relaxation practice done lying down, usually 20 to 45 minutes, that takes you to the threshold between waking and sleep using a body scan, breath awareness and imagery." },
-    { question: "Does Yoga Nidra actually help you sleep?", answer: "Research suggests it can. Yogic relaxation practices shift the brain toward slower theta and alpha activity and are linked to stronger vagal tone and lower arousal, and yoga programs that include it improve standardized sleep-quality scores. Studies are mostly small, so it is promising rather than proven." },
+    { question: "Does Yoga Nidra actually help you sleep?", answer: "Research suggests it can. Yogic relaxation practices shift the brain toward slower theta and alpha activity and are linked to higher HRV and lower arousal, and yoga programs that include it improve standardized sleep-quality scores. Studies are mostly small, so it is promising rather than proven." },
     { question: "Is Yoga Nidra the same as sleep or meditation?", answer: "Neither exactly. It is a guided state between waking and sleep — more relaxed than sitting meditation, but not unconscious like sleep." },
     { question: "How long should Yoga Nidra be for sleep?", answer: "Typically 20 to 45 minutes, guided by a recording. For sleep, do it lying in bed and let yourself drift off if it happens." },
     { question: "Can Yoga Nidra help with insomnia?", answer: "It suits insomnia driven by a racing mind, because it lowers arousal through the body scan and slow breathing rather than forcing sleep. Persistent insomnia still deserves a conversation with a clinician." },

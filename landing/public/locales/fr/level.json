@@ -32,7 +32,7 @@
         "intro": "La pile technologique de ce niveau comprend :",
         "items": [
           { "name": "Calibrage intéroceptif", "text": "Développer la capacité à détecter les signaux du « biocomputer » avant qu’ils ne se traduisent en émotions ou en pensées." },
-          { "name": "Tonus vagal (V2)", "text": "Sortir des états de « figement » en relâchant le diaphragme et en ralentissant la respiration, avec une expiration plus longue." },
+          { "name": "Tonus vagal (V2)", "text": "Sortir des états de « figement » en relâchant le diaphragme et en ralentissant la respiration, avec une expiration plus longue, ce qui est associé à une VFC d’origine vagale plus élevée." },
           { "name": "Réflexe vestibulo-oculaire (RVO)", "text": "Stabiliser le regard et l’orientation dans le flux des stimuli entrants." },
           { "name": "Efficacité énergétique", "text": "Entraîner le système nerveux à fonctionner avec moins d’effort — en relâchant peu à peu l’« armure corporelle » (tension chronique)." }
         ]
@@ -63,7 +63,7 @@
       "architecture": {
         "intro": "Le niveau 2 intègre trois stratégies de gestion des ressources :",
         "parts": [
-          { "label": "Je manœuvre", "protocol": "Protocole : la manœuvrabilité du « petit mammifère »", "goal": "Objectif : souplesse biologique et accélération instantanée sans stress paralysant.", "work": "Mécanisme : entraîner la neuroception (la capacité du cerveau à détecter une menace avant qu’elle ne soit perçue consciemment). Nous apprenons au système à « glisser » en douceur du repos à l’action, en transformant le cortisol et l’adrénaline de toxines en carburant de précision." },
+          { "label": "Je manœuvre", "protocol": "Protocole : la manœuvrabilité du « petit mammifère »", "goal": "Objectif : souplesse biologique et accélération instantanée sans stress paralysant.", "work": "Mécanisme : dans les termes de la théorie polyvagale (un modèle débattu), entraîner la neuroception (la capacité du cerveau à détecter une menace avant qu’elle ne soit perçue consciemment). Nous apprenons au système à « glisser » en douceur du repos à l’action, en transformant le cortisol et l’adrénaline de toxines en carburant de précision." },
           { "label": "Je protège mon territoire", "protocol": "Protocole : la force du « grand mammifère »", "goal": "Objectif : un calme assuré et une présence dense.", "work": "Mécanisme : travailler avec le système endocrinien — s’appuyer moins, avec le temps, sur le cortisol d’urgence et davantage sur la DHEA. Cela soutient un état d’« assurance calme », une stabilité que les autres perçoivent souvent avant même que vous ne parliez." },
           { "label": "Je fais partie du groupe", "protocol": "Protocole : résonance sociale", "goal": "Objectif : transformer la survie individuelle en puissance collective.", "work": "Mécanisme : activer le « cerveau social » — le système des neurones miroirs et le profil de l’ocytocine. Nous apprenons à synchroniser nos rythmes avec le groupe (co-régulation) tout en gardant un centre autonome. Votre présence devient le « liant » qui unit le groupe." }
         ]
@@ -71,7 +71,7 @@
       "biologicalProtocol": {
         "intro": "La pile technologique de la gestion de l’énergie :",
         "items": [
-          { "name": "Théorie polyvagale (vague ventral)", "text": "Utiliser le « parasympathique intelligent » pour rester socialement engagé même sous forte charge." },
+          { "name": "Théorie polyvagale (vague ventral)", "text": "Dans les termes de la théorie polyvagale, un modèle débattu : utiliser le « parasympathique intelligent » pour rester socialement engagé même sous forte charge." },
           { "name": "Régulation de l’axe HHS", "text": "Travailler avec la chaîne hypothalamus–hypophyse–surrénales qui façonne la réponse hormonale au stress." },
           { "name": "Osmose émotionnelle", "text": "La capacité d’échanger des états avec les autres sans être absorbé par leur chaos." },
           { "name": "Pompage lymphatique", "text": "Utiliser le tonus musculaire comme une pompe pour débarrasser le corps des sous-produits métaboliques du stress." }
@@ -187,7 +187,7 @@
         "parts": [
           { "label": "Je ressens", "protocol": "Protocole : précision intéroceptive et expansion sensorielle", "goal": "Objectif : passer du « mode survie » au « mode présence » totale grâce à des ancres sensorielles.", "work": "Travail : activer le cortex insulaire, le cortex somatosensoriel et les filtres thalamiques. Solliciter les fibres C-tactiles et l’intégration proprioceptive pour créer une carte du corps ultra-précise." },
           { "label": "Je canalise", "protocol": "Protocole : conductivité neurodynamique et flux fascial", "goal": "Objectif : le corps comme conducteur — transformer les impulsions en ressources tout en maintenant l’homéostasie.", "work": "Travail : dénouer les congestions musculaires, vasculaires et nerveuses. Entraîner le système nerveux et les tissus à laisser passer le stress, la douleur et les émotions intenses sans entrave. Construire, avec le temps, une liberté somatique et une grande conductivité." },
-          { "label": "Je m’accorde", "protocol": "Protocole : fusion neurosomatique et extase collective", "goal": "Objectif : de la conductivité individuelle à la résonance collective — créer un circuit neurosomatique unifié (l’« état de Nous »).", "work": "Travail : dissoudre les limites de la coquille de l’ego. Activer l’ocytocine, les neurones miroirs, le complexe vagal ventral et la modulation pariétale. Atteindre un couplage neurosomatique où deux organismes fonctionnent comme un seul." }
+          { "label": "Je m’accorde", "protocol": "Protocole : fusion neurosomatique et extase collective", "goal": "Objectif : de la conductivité individuelle à la résonance collective — créer un circuit neurosomatique unifié (l’« état de Nous »).", "work": "Travail : dissoudre les limites de la coquille de l’ego. Activer l’ocytocine, les neurones miroirs et la modulation pariétale — et, dans les termes de la théorie polyvagale (un modèle débattu), le complexe vagal ventral. Atteindre un couplage neurosomatique où deux organismes fonctionnent comme un seul." }
         ]
       },
       "biologicalProtocol": {

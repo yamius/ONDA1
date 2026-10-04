@@ -1130,7 +1130,7 @@
     },
     "apollo-neuro": {
       "verdict": "Il dispositivo più indossabile della categoria — vibrotattile, non elettrico, con evidenze cliniche crescenti su HRV e recupero.",
-      "productType": "Modulatore vagale vibrotattile (indossabile)"
+      "productType": "Dispositivo indossabile vibrotattile, commercializzato come modulatore vagale"
     },
     "vagustim": {
       "verdict": "tVNS auricolare basata sui protocolli con una provenienza scientifica credibile — forte su quadro normativo UE e supporto degli studi.",
@@ -1146,7 +1146,7 @@
     },
     "sensate": {
       "verdict": "Un dispositivo infrasonico passivo e rilassante — delicato, molto amato, con evidenze sul meccanismo inferiori all’entusiasmo degli utenti.",
-      "productType": "Modulatore vagale infrasonico (ciottolo da portare sul torace)"
+      "productType": "Ciottolo infrasonico da portare sul torace, commercializzato come modulatore vagale"
     },
     "xen-by-neuvana": {
       "verdict": "tVNS auricolare sotto forma di auricolari — un formato consumer ingegnoso, evidenze indipendenti modeste.",
@@ -1570,7 +1570,7 @@
         },
         {
           "q": "Si può stimolare il nervo vago gratis?",
-          "a": "Sì. La respirazione lenta — circa cinque-sette respiri al minuto con un’espirazione più lunga — aumenta in modo affidabile la variabilità della frequenza cardiaca mediata dal vago mentre la pratichi e ha le evidenze più ampie tra tutte le tecniche vagali. Anche canticchiare (humming), una delicata immersione del viso in acqua fredda e l’attività aerobica regolare aiutano. Molte persone provano prima questi metodi e comprano un dispositivo solo se vogliono più struttura."
+          "a": "Sì. La respirazione lenta — circa cinque-sette respiri al minuto con un’espirazione più lunga — aumenta in modo affidabile la variabilità della frequenza cardiaca mediata dal vago mentre la pratichi e ha le evidenze più ampie tra tutte le tecniche vagali. Canticchiare (humming) e una delicata immersione del viso in acqua fredda sono vie proposte, con evidenze più deboli; anche l’attività aerobica regolare aiuta. Molte persone provano prima questi metodi e comprano un dispositivo solo se vogliono più struttura."
         }
       ]
     },

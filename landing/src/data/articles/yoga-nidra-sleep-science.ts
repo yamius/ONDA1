@@ -26,7 +26,7 @@ const article: Article = {
     linkText: 'Wind-down breathing →',
   },
   content: `
-Yoga Nidra — literally "yogic sleep" — is a guided practice of deep relaxation done lying down, and research suggests it can improve sleep quality by shifting the brain toward slower, sleep-like brainwaves while calming the autonomic nervous system. Unlike ordinary seated meditation, Yoga Nidra deliberately walks you to the edge of sleep and holds you there, in a state between waking and sleeping. Studies of this Indian practice and related techniques like OM chanting and slow pranayama link them to stronger vagal (parasympathetic) tone, lower arousal, and better scores on standard sleep measures. For people who lie awake with a racing mind, it's a structured, low-risk way to let the nervous system down.
+Yoga Nidra — literally "yogic sleep" — is a guided practice of deep relaxation done lying down, and research suggests it can improve sleep quality by shifting the brain toward slower, sleep-like brainwaves while calming the autonomic nervous system. Unlike ordinary seated meditation, Yoga Nidra deliberately walks you to the edge of sleep and holds you there, in a state between waking and sleeping. Studies of this Indian practice and related techniques like OM chanting and slow pranayama link them to higher HRV, lower arousal, and better scores on standard sleep measures. For people who lie awake with a racing mind, it's a structured, low-risk way to let the nervous system down.
 
 ## What is Yoga Nidra?
 
@@ -40,7 +40,7 @@ Research on Yoga Nidra and related yogic practices points to two converging effe
 
 **Brainwaves shift toward sleep.** Neurophysiological studies of practices including Yoga Nidra, OM chanting, and slow pranayama find more slow-wave activity — theta and alpha — associated with relaxed, drifting states, mirroring the transition your brain makes as you fall asleep naturally.
 
-**The nervous system calms.** The slow breathing woven into Yoga Nidra — like related techniques such as Nadi Shodhana, Ujjayi, and Bhramari — is linked to stronger vagal tone and reduced sympathetic arousal. Broader clinical work on comprehensive yoga programs (postures, breathing, relaxation, meditation) shows lower anxiety and depressive symptoms and better standardized sleep-quality scores (Pittsburgh Sleep Quality Index), especially in older adults.
+**The nervous system calms.** The slow breathing woven into Yoga Nidra — like related techniques such as Nadi Shodhana, Ujjayi, and Bhramari — is linked to higher HRV and reduced sympathetic arousal. Broader clinical work on comprehensive yoga programs (postures, breathing, relaxation, meditation) shows lower anxiety and depressive symptoms and better standardized sleep-quality scores (Pittsburgh Sleep Quality Index), especially in older adults.
 
 Much of this research is small, and Yoga Nidra is often studied as part of a larger yoga program rather than alone — so treat it as promising, not proven. Together, though, the findings suggest it helps not by forcing sleep, but by guiding brain and body into the state from which sleep naturally follows.
 

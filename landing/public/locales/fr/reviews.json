@@ -1130,7 +1130,7 @@
     },
     "apollo-neuro": {
       "verdict": "L’appareil le plus portable de la catégorie — vibrotactile, pas électrique, avec des preuves cliniques croissantes sur la VFC et la récupération.",
-      "productType": "Modulateur vagal vibrotactile (wearable)"
+      "productType": "Wearable vibrotactile, présenté comme un modulateur vagal"
     },
     "vagustim": {
       "verdict": "tVNS auriculaire axée sur les protocoles, à la provenance scientifique crédible — solide sur le cadre réglementaire européen et les essais.",
@@ -1146,7 +1146,7 @@
     },
     "sensate": {
       "verdict": "Un appareil infrasonore passif et apaisant — doux, très apprécié, avec des preuves sur le mécanisme en retard sur l’enthousiasme des utilisateurs.",
-      "productType": "Modulateur vagal infrasonore (galet porté sur la poitrine)"
+      "productType": "Galet infrasonore porté sur la poitrine, présenté comme un modulateur vagal"
     },
     "xen-by-neuvana": {
       "verdict": "tVNS auriculaire sous forme d’écouteurs — un format grand public astucieux, des preuves indépendantes modestes.",
@@ -1570,7 +1570,7 @@
         },
         {
           "q": "Peut-on stimuler le nerf vague gratuitement ?",
-          "a": "Oui. La respiration lente — environ cinq à sept respirations par minute avec une expiration plus longue — augmente de façon fiable la variabilité de la fréquence cardiaque d’origine vagale pendant l’exercice et dispose des preuves les plus larges de toutes les techniques vagales. Le fredonnement, une immersion douce du visage dans l’eau froide et l’exercice aérobie régulier aident aussi. Beaucoup de gens essaient d’abord ces méthodes et n’achètent un appareil que s’ils veulent plus de structure."
+          "a": "Oui. La respiration lente — environ cinq à sept respirations par minute avec une expiration plus longue — augmente de façon fiable la variabilité de la fréquence cardiaque d’origine vagale pendant l’exercice et dispose des preuves les plus larges de toutes les techniques vagales. Le fredonnement et une immersion douce du visage dans l’eau froide sont aussi proposés, avec des preuves plus faibles ; l’exercice aérobie régulier aide aussi. Beaucoup de gens essaient d’abord ces méthodes et n’achètent un appareil que s’ils veulent plus de structure."
         }
       ]
     },

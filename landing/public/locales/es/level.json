@@ -32,7 +32,7 @@
         "intro": "El stack tecnológico del nivel:",
         "items": [
           { "name": "Calibración interoceptiva", "text": "Desarrollar la habilidad de detectar las «señales del biocomputador» antes de que se traduzcan en emociones o pensamientos." },
-          { "name": "Tono vagal (V2)", "text": "Salir de los estados de «congelación» liberando el diafragma y ralentizando la respiración, con una exhalación más larga." },
+          { "name": "Tono vagal (V2)", "text": "Salir de los estados de «congelación» liberando el diafragma y ralentizando la respiración, con una exhalación más larga, lo que se asocia con una VFC de mediación vagal más alta." },
           { "name": "Reflejo vestíbulo-ocular (VOR)", "text": "Estabilizar la mirada y la navegación en el flujo de estímulos entrantes." },
           { "name": "Eficiencia energética", "text": "Entrenar al sistema nervioso a realizar tareas con el mínimo impulso eléctrico, eliminando la «armadura corporal» (tensión crónica)." }
         ]
@@ -71,7 +71,7 @@
       "biologicalProtocol": {
         "intro": "El stack tecnológico de gestión de la energía:",
         "items": [
-          { "name": "Teoría polivagal (vago ventral)", "text": "Uso de la «parasimpática inteligente» para mantener el compromiso social incluso bajo cargas altas." },
+          { "name": "Teoría polivagal (vago ventral)", "text": "En los términos de la teoría polivagal, un modelo debatido: uso de la «parasimpática inteligente» para mantener el compromiso social incluso bajo cargas altas." },
           { "name": "Control del eje HPA", "text": "Influencia directa sobre la cadena hipotálamo-hipófisis-suprarrenales para gestionar la respuesta hormonal." },
           { "name": "Ósmosis emocional", "text": "Habilidad de intercambiar estados con otros sin ser absorbido por su caos." },
           { "name": "Bombeo linfático", "text": "Usar el tono muscular como bomba para limpiar el cuerpo de los metabolitos del estrés." }
@@ -187,7 +187,7 @@
         "parts": [
           { "label": "Yo siento", "protocol": "Protocolo: Precisión interoceptiva y expansión sensorial", "goal": "Objetivo: pasar del «modo supervivencia» al «modo presencia» total a través de anclas sensoriales.", "work": "Trabajo: activar la ínsula, la corteza somatosensorial y los filtros talámicos. Implicar fibras C-táctiles e integración propioceptiva para crear un mapa corporal ultraprecíso." },
           { "label": "Yo canalizo", "protocol": "Protocolo: Conductividad neurodinámica y flujo fascial", "goal": "Objetivo: el cuerpo como conductor — convertir los impulsos en recurso manteniendo la homeostasis.", "work": "Trabajo: eliminar congestiones musculares, vasculares y neurales. Entrenar al sistema nervioso y a los tejidos a dejar pasar estrés, dolor y emociones intensas sin obstrucción. Alcanzar libertad somática y alta conductividad." },
-          { "label": "Yo sintonizo", "protocol": "Protocolo: Fusión neurosomática y éxtasis colectivo", "goal": "Objetivo: de la conductividad individual a la resonancia colectiva — crear un circuito neurosomático único («estado-Nosotros»).", "work": "Trabajo: disolver los límites de la cápsula del ego. Activar oxitocina, neuronas espejo, complejo vagal ventral y modulación parietal. Alcanzar el acoplamiento neurosomático donde dos organismos funcionan como uno." }
+          { "label": "Yo sintonizo", "protocol": "Protocolo: Fusión neurosomática y éxtasis colectivo", "goal": "Objetivo: de la conductividad individual a la resonancia colectiva — crear un circuito neurosomático único («estado-Nosotros»).", "work": "Trabajo: disolver los límites de la cápsula del ego. Activar oxitocina, neuronas espejo, el complejo vagal ventral (en términos de la teoría polivagal, un modelo debatido) y modulación parietal. Alcanzar el acoplamiento neurosomático donde dos organismos funcionan como uno." }
         ]
       },
       "biologicalProtocol": {

@@ -5,7 +5,7 @@ const sensate: ToolReview = {
   name: 'Sensate',
   brand: 'BioSelf Technology',
   category: 'vagus-stim',
-  productType: 'Infrasonic vagal modulator (chest-worn pebble)',
+  productType: 'Infrasonic chest-worn pebble, marketed as a vagal modulator',
   description:
     'ONDA review of Sensate — the chest-worn pebble that uses infrasonic sound, marketed to calm the nervous system. Scored on evidence, mechanism, comfort and value.',
   verdict:

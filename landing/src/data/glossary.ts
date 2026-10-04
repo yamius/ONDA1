@@ -1386,7 +1386,7 @@ We can "drift" between states. The goal is not to eliminate sympathetic activati
 
 ## In ONDA Life
 
-Part 4 trains the nervous system to transition smoothly between Ventral Vagus (safety, social engagement) and Sympathetic (energy for maneuver). Sympathetic tone becomes fuel for precision rather than a trigger for overwhelm.
+In the terms of polyvagal theory (a debated model), Part 4 trains the nervous system to transition smoothly between Ventral Vagus (safety, social engagement) and Sympathetic (energy for maneuver). Sympathetic tone becomes fuel for precision rather than a trigger for overwhelm.
 
 ---
 
@@ -2072,7 +2072,7 @@ Stephen Porges' Polyvagal Theory further divides the parasympathetic into ventra
 
 ## In ONDA Life
 
-Part 5 activates the Ventral Vagus for "calm alertness" — the heart beats powerfully and steadily, the brain is ready for effective dominance rather than panic.
+In the terms of polyvagal theory (a debated model), Part 5 aims for a ventral-vagal state of "calm alertness" — the heart beats powerfully and steadily, the brain is ready for effective dominance rather than panic.
 ## Scientific Basis
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
@@ -2107,7 +2107,7 @@ These markers are affected by breathing rate, posture, fitness and other factors
 
 ## In ONDA Life
 
-Part 5 "Smart Parasympathetic" activates the Ventral Vagus. This is a state of "calm alertness" — ready for effective dominance rather than panic. The heart beats powerfully and steadily; the brain is primed for presence.
+In the terms of polyvagal theory (a debated model), Part 5 "Smart Parasympathetic" targets the Ventral Vagus. This is a state of "calm alertness" — ready for effective dominance rather than panic. The heart beats powerfully and steadily; the brain is primed for presence.
 ## Scientific Basis
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
@@ -3575,7 +3575,7 @@ Writing is often affected in a similar way. Many people improve with speech and 
 
 ## In ONDA Life
 
-Part 10 engages Broca's area as one of the "centers for assembling and delivering speech structures." Together with Wernicke's area and the Ventral Vagus, it enables sovereign expression — clear, authentic self-expression supported by calm social engagement.
+Part 10 engages Broca's area as one of the "centers for assembling and delivering speech structures." Together with Wernicke's area and — in polyvagal terms, a debated model — the Ventral Vagus, it supports sovereign expression — clear, authentic self-expression supported by calm social engagement.
 ## Scientific Basis
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
@@ -3771,7 +3771,7 @@ A classic historical example is Phineas Gage, a 19th-century railroad worker who
 
 ## In ONDA Life
 
-Part 11 pairs the Orbitofrontal Cortex with the Ventral Vagus to ensure "social harmony and ethical choices in the moment." The OFC helps prevent interaction from turning into conflict or manipulation.
+Part 11 pairs the Orbitofrontal Cortex with the Ventral Vagus (a polyvagal-theory concept, debated) to ensure "social harmony and ethical choices in the moment." The OFC helps prevent interaction from turning into conflict or manipulation.
 ## Scientific Basis
 Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
   },
@@ -6105,7 +6105,7 @@ Co-regulation is affected mainly by the quality of the relationship and the regu
 
 ## In ONDA Life
 
-Part 6 describes "co-regulation — the ability to calm oneself through another and to calm others in return." Activation of the ventral vagus creates a state where "facial muscles and hearing are tuned to the human voice and face."
+Part 6 describes "co-regulation — the ability to calm oneself through another and to calm others in return." According to polyvagal theory (a debated model), activation of the ventral vagus creates a state where "facial muscles and hearing are tuned to the human voice and face."
 `,
     relatedSlugs: ['ventral-vagus', 'polyvagal-theory', 'mirror-neurons', 'heart-rate-variability'],
   },

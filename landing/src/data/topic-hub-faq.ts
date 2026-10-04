@@ -173,7 +173,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: "How can I stimulate my vagus nerve?",
-      a: "The most reliable way is slow breathing with a longer exhale, such as 4 in and 6 out. Humming, chanting or gargling for 30–60 seconds also works, because the vagus nerve supplies the vocal cords. Cold water on the face triggers the calming dive reflex. When these work, your HRV rises.",
+      a: "The most reliable way is slow breathing with a longer exhale, such as 4 in and 6 out. Humming, chanting or gargling for 30–60 seconds are also used — the vagus nerve supplies the vocal cords, so a vibration route is proposed, though the evidence is weaker. Cold water on the face triggers the dive reflex, which slows the heart. If a technique helps you, your HRV tends to rise while you practise.",
       links: [{ href: "/articles/vagus-nerve-exercises", label: "Vagus nerve exercises" }, { href: "/tools/resonance-breathing", label: "Resonance breathing" }],
     },
     {

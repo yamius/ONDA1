@@ -32,7 +32,7 @@
         "intro": "The technological stack of this level includes:",
         "items": [
           { "name": "Interoceptive Calibration", "text": "Developing the skill to detect \"biocomputer\" signals before they translate into emotions or thoughts." },
-          { "name": "Vagal Tone (V2)", "text": "Exiting \"freeze\" states by releasing the diaphragm and slowing the breath, with a longer exhale." },
+          { "name": "Vagal Tone (V2)", "text": "Exiting \"freeze\" states by releasing the diaphragm and slowing the breath, which is associated with higher vagally mediated HRV." },
           { "name": "Vestibulo-Ocular Reflex (VOR)", "text": "Stabilizing gaze and navigation within the flow of incoming stimuli." },
           { "name": "Energy Efficiency", "text": "Training the nervous system to work with less effort — releasing \"body armor\" (chronic tension) over time." }
         ]
@@ -71,7 +71,7 @@
       "biologicalProtocol": {
         "intro": "The energy management technological stack:",
         "items": [
-          { "name": "Polyvagal Theory (Ventral Vagus)", "text": "Utilizing \"smart parasympathetics\" to maintain social engagement even under high loads." },
+          { "name": "Polyvagal Theory (Ventral Vagus)", "text": "In the terms of Polyvagal Theory, a debated model: utilizing \"smart parasympathetics\" to maintain social engagement even under high loads." },
           { "name": "HPA Axis Regulation", "text": "Working with the Hypothalamus-Pituitary-Adrenal chain that shapes the hormonal stress response." },
           { "name": "Emotional Osmosis", "text": "The skill of exchanging states with others without being absorbed by their chaos." },
           { "name": "Lymphatic Pumping", "text": "Using muscle tone as a pump to clear the body of stress metabolic byproducts." }
@@ -187,7 +187,7 @@
         "parts": [
           { "label": "I Sense", "protocol": "Protocol: Interoceptive Accuracy and Sensory Expansion", "goal": "Objective: Transitioning from \"Survival Mode\" to total \"Presence Mode\" through sensory anchors.", "work": "Work: Activating the insular cortex, somatosensory cortex, and thalamic filters. Engaging C-tactile fibers and proprioceptive integration to create an ultra-precise body map." },
           { "label": "I Channel", "protocol": "Protocol: Neurodynamic Conductivity and Fascial Flow", "goal": "Objective: The body as conductor — transforming impulses into resource while maintaining homeostasis.", "work": "Work: Easing muscular, vascular, and neural congestions. Training the nervous system and tissues to let stress, pain, and intense emotions pass through unhindered. Building somatic freedom and high conductivity over time." },
-          { "label": "I Attune", "protocol": "Protocol: Neurosomatic Fusion and Collective Ecstasy", "goal": "Objective: From individual conductivity to collective resonance — creating a unified neurosomatic circuit (\"We-state\").", "work": "Work: Dissolving the ego-shell boundaries. Activating oxytocin, mirror neurons, ventral vagal complex, and parietal modulation. Achieving neurosomatic coupling where two organisms function as one." }
+          { "label": "I Attune", "protocol": "Protocol: Neurosomatic Fusion and Collective Ecstasy", "goal": "Objective: From individual conductivity to collective resonance — creating a unified neurosomatic circuit (\"We-state\").", "work": "Work: Dissolving the ego-shell boundaries. Activating oxytocin, mirror neurons and parietal modulation — and, in the terms of polyvagal theory (a debated model), the ventral vagal complex. Achieving neurosomatic coupling where two organisms function as one." }
         ]
       },
       "biologicalProtocol": {

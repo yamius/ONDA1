@@ -71,7 +71,7 @@
       "biologicalProtocol": {
         "intro": "Der technologische Stack des Energiemanagements:",
         "items": [
-          { "name": "Polyvagal-Theorie (ventraler Vagus)", "text": "Den „klugen Parasympathikus“ nutzen, um auch unter hoher Belastung sozial verbunden zu bleiben." },
+          { "name": "Polyvagal-Theorie (ventraler Vagus)", "text": "Im Sinne der Polyvagal-Theorie, eines umstrittenen Modells: den „klugen Parasympathikus“ nutzen, um auch unter hoher Belastung sozial verbunden zu bleiben." },
           { "name": "Regulation der HPA-Achse", "text": "Arbeit mit der Kette Hypothalamus–Hypophyse–Nebenniere, die die hormonelle Stressreaktion formt." },
           { "name": "Emotionale Osmose", "text": "Die Fähigkeit, Zustände mit anderen auszutauschen, ohne von ihrem Chaos verschluckt zu werden." },
           { "name": "Lymphatisches Pumpen", "text": "Den Muskeltonus als Pumpe nutzen, um den Körper von Stoffwechselprodukten des Stresses zu befreien." }
@@ -187,7 +187,7 @@
         "parts": [
           { "label": "Ich spüre", "protocol": "Protokoll: Interozeptive Genauigkeit und sensorische Erweiterung", "goal": "Ziel: über sensorische Anker vom „Überlebensmodus“ in den vollständigen „Präsenzmodus“ wechseln.", "work": "Arbeit: Inselrinde, somatosensorischen Kortex und thalamische Filter aktivieren. C-taktile Fasern und propriozeptive Integration einbeziehen, um eine hochgenaue Körperkarte zu schaffen." },
           { "label": "Ich leite", "protocol": "Protokoll: Neurodynamische Leitfähigkeit und faszialer Fluss", "goal": "Ziel: der Körper als Leiter — Impulse in Ressourcen verwandeln und dabei die Homöostase halten.", "work": "Arbeit: muskuläre, vaskuläre und neuronale Stauungen lösen. Nervensystem und Gewebe trainieren, Stress, Schmerz und starke Gefühle ungehindert hindurchfließen zu lassen. Mit der Zeit somatische Freiheit und hohe Leitfähigkeit aufbauen." },
-          { "label": "Ich stimme mich ein", "protocol": "Protokoll: Neurosomatische Verschmelzung und kollektive Ekstase", "goal": "Ziel: von individueller Leitfähigkeit zu kollektiver Resonanz — ein gemeinsamer neurosomatischer Kreislauf (der „Wir-Zustand“).", "work": "Arbeit: die Grenzen der Ego-Hülle auflösen. Oxytocin, Spiegelneuronen, den ventralen Vaguskomplex und die parietale Modulation aktivieren. Eine neurosomatische Kopplung erreichen, in der zwei Organismen wie einer funktionieren." }
+          { "label": "Ich stimme mich ein", "protocol": "Protokoll: Neurosomatische Verschmelzung und kollektive Ekstase", "goal": "Ziel: von individueller Leitfähigkeit zu kollektiver Resonanz — ein gemeinsamer neurosomatischer Kreislauf (der „Wir-Zustand“).", "work": "Arbeit: die Grenzen der Ego-Hülle auflösen. Oxytocin, Spiegelneuronen und die parietale Modulation aktivieren — und, in den Begriffen der Polyvagal-Theorie (eines umstrittenen Modells), den ventralen Vaguskomplex. Eine neurosomatische Kopplung erreichen, in der zwei Organismen wie einer funktionieren." }
         ]
       },
       "biologicalProtocol": {

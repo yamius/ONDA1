@@ -2030,7 +2030,7 @@
     },
     "apollo-neuro": {
       "verdict": "El dispositivo más cómodo de llevar de la categoría: vibrotáctil, no eléctrico, con evidencia clínica creciente sobre VFC y recuperación.",
-      "productType": "Modulador vagal vibrotáctil (wearable)"
+      "productType": "Wearable vibrotáctil, comercializado como modulador vagal"
     },
     "vagustim": {
       "verdict": "tVNS auricular basado en protocolos con un origen investigador creíble: fuerte en respaldo regulatorio europeo y ensayos.",
@@ -2046,7 +2046,7 @@
     },
     "sensate": {
       "verdict": "Un dispositivo infrasónico pasivo y relajante: suave y muy apreciado, con una evidencia del mecanismo por debajo del entusiasmo de sus usuarios.",
-      "productType": "Modulador vagal infrasónico (piedra para el pecho)"
+      "productType": "Piedra infrasónica para el pecho, comercializada como modulador vagal"
     },
     "xen-by-neuvana": {
       "verdict": "tVNS auricular en forma de auriculares: un formato de consumo ingenioso, con evidencia independiente modesta.",
@@ -2623,7 +2623,7 @@
         },
         {
           "q": "¿Se puede estimular el nervio vago gratis?",
-          "a": "Sí. La respiración lenta (unas cinco a siete respiraciones por minuto con una exhalación más larga) aumenta de forma fiable la variabilidad de la frecuencia cardiaca de mediación vagal mientras la practicas y tiene la evidencia más amplia de todas las técnicas vagales. Tararear, sumergir suavemente la cara en agua fría y hacer ejercicio aeróbico con regularidad también ayudan. Muchas personas prueban esto primero y solo compran un dispositivo si quieren más estructura."
+          "a": "Sí. La respiración lenta (unas cinco a siete respiraciones por minuto con una exhalación más larga) aumenta de forma fiable la variabilidad de la frecuencia cardiaca de mediación vagal mientras la practicas y tiene la evidencia más amplia de todas las técnicas vagales. Tararear, sumergir suavemente la cara en agua fría y hacer ejercicio aeróbico con regularidad también se usan, aunque la evidencia sobre su efecto vagal es más débil. Muchas personas prueban esto primero y solo compran un dispositivo si quieren más estructura."
         }
       ]
     },

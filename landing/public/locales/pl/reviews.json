@@ -1130,7 +1130,7 @@
     },
     "apollo-neuro": {
       "verdict": "Najwygodniejsze do noszenia urządzenie w kategorii — wibrotaktylne, nie elektryczne, z rosnącymi dowodami klinicznymi dotyczącymi HRV i regeneracji.",
-      "productType": "Wibrotaktylny modulator nerwu błędnego (noszony)"
+      "productType": "Wibrotaktylne urządzenie noszone, reklamowane jako modulator nerwu błędnego"
     },
     "vagustim": {
       "verdict": "Uszne tVNS oparte na protokołach, z wiarygodnym zapleczem badawczym — mocne pod względem regulacji UE i badań.",
@@ -1146,7 +1146,7 @@
     },
     "sensate": {
       "verdict": "Pasywne, uspokajające urządzenie infradźwiękowe — łagodne, lubiane, z dowodami na mechanizm, które nie nadążają za entuzjazmem użytkowników.",
-      "productType": "Infradźwiękowy modulator nerwu błędnego (kamyk na klatkę piersiową)"
+      "productType": "Infradźwiękowy kamyk noszony na klatce piersiowej, reklamowany jako modulator nerwu błędnego"
     },
     "xen-by-neuvana": {
       "verdict": "Uszne tVNS w formie słuchawek — sprytna forma konsumencka, skromne niezależne dowody.",
@@ -1570,7 +1570,7 @@
         },
         {
           "q": "Jak pobudzić nerw błędny za darmo?",
-          "a": "Da się. Wolne oddychanie — ok. pięć do siedmiu oddechów na minutę z dłuższym wydechem — niezawodnie podnosi zależną od nerwu błędnego zmienność rytmu serca w trakcie ćwiczenia i ma najszersze dowody spośród wszystkich technik pobudzania nerwu błędnego. Pomagają też nucenie, delikatne zanurzanie twarzy w chłodnej wodzie i regularny wysiłek aerobowy. Wiele osób zaczyna od nich, a urządzenie kupuje dopiero wtedy, gdy chce więcej struktury."
+          "a": "Da się. Wolne oddychanie — ok. pięć do siedmiu oddechów na minutę z dłuższym wydechem — wiąże się z wyższą zmiennością rytmu serca zależną od nerwu błędnego w trakcie ćwiczenia i ma najszersze dowody spośród wszystkich technik. Nucenie i delikatne zanurzanie twarzy w chłodnej wodzie to proponowane drogi o słabszych dowodach; pomaga też regularny wysiłek aerobowy. Wiele osób zaczyna od nich, a urządzenie kupuje dopiero wtedy, gdy chce więcej struktury."
         }
       ]
     },

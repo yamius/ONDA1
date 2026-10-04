@@ -5,7 +5,7 @@ const apolloNeuro: ToolReview = {
   name: 'Apollo Neuro',
   brand: 'Apollo Neuroscience',
   category: 'vagus-stim',
-  productType: 'Vibrotactile vagal modulator (wearable)',
+  productType: 'Vibrotactile wearable, marketed as a vagal modulator',
   description:
     'ONDA review of the Apollo Neuro — the vibrotactile wearable that uses low-frequency vibration, marketed to calm the nervous system. Scored on evidence, mechanism and value.',
   verdict:
