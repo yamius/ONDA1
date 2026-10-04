@@ -115,7 +115,7 @@ export function scienceMeta(route: string): { title: string; description: string
   }
   if (p.kind === 'concepts') article.about = { '@type': 'DefinedTerm', name: p.title.split(/\s[—–:-]\s/)[0], description: p.shortAnswer, url: pageUrl(p) }
   if (p.reviewer) { article.reviewedBy = { '@type': 'Person', name: p.reviewer }; if (p.lastReviewed) article.lastReviewed = p.lastReviewed }
-  if (p.image) article.image = { '@type': 'ImageObject', url: `${SITE_URL}${p.image}`, ...(p.imageAlt ? { caption: p.imageAlt } : {}) }
+  if (p.image) article.image = { '@type': 'ImageObject', url: `${SITE_URL}${p.image}`, ...(p.imageWidth ? { width: p.imageWidth, height: p.imageHeight } : {}), ...(p.imageAlt ? { caption: p.imageAlt } : {}) }
   crumbs.push({ name: scienceShortName(p.title), url: pageUrl(p) })
   return { title: `${p.metaTitle} | ONDA Life`, description: p.metaDescription, ogType: 'article', jsonLd: [article], breadcrumbs: crumbs, ...(p.image ? { image: `${SITE_URL}${p.image}`, imageAlt: p.imageAlt ?? undefined } : {}) }
 }
@@ -250,7 +250,7 @@ function Entry({ p }: { p: SciencePageData }) {
 
         {p.image && (
           <figure className="mt-8 overflow-hidden rounded-xl border border-white/10">
-            <OptimizedImage src={p.image} alt={p.imageAlt ?? ''} priority width={1024} height={768} className="w-full object-cover" />
+            <OptimizedImage src={p.image} alt={p.imageAlt ?? ''} priority width={p.imageWidth ?? 1024} height={p.imageHeight ?? 768} className="w-full object-cover" />
           </figure>
         )}
 

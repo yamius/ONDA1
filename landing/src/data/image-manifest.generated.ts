@@ -2272,6 +2272,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1024,
     "height": 768
   },
+  "/images/science/sdnn.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/sdnn.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/sdnn.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/topics/brain-focus-aging.avif": {
     "width": 1600,
     "height": 1200

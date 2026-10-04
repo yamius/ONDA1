@@ -1035,7 +1035,7 @@ Most ring and strap wearables (Oura, Whoop, Garmin, Polar) report RMSSD; Apple H
 
 Apple Health has long recorded heart rate variability as SDNN, so Apple Watch HRV values should be compared with SDNN norms, not RMSSD norms. Like any HRV measure, a single SDNN value is not a diagnosis; trends against your own baseline under comparable conditions say more.
 
-**Read the science →** the full ONDA Science page on SDNN is in preparation; meanwhile see [RMSSD on ONDA Science](/science/concepts/rmssd), which explains how the two metrics differ, and [why Apple Watch HRV can look low](/articles/why-is-my-apple-watch-hrv-low).`,
+**Read the science →** [SDNN: what this HRV metric measures, and what it doesn't](/science/concepts/sdnn) — definition, why it depends on recording length, why Apple Health stores it, evidence and sources. See also [RMSSD on ONDA Science](/science/concepts/rmssd) and [why Apple Watch HRV can look low](/articles/why-is-my-apple-watch-hrv-low).`,
     relatedSlugs: ['heart-rate-variability', 'rmssd', 'hrv-baseline'],
   },
   {

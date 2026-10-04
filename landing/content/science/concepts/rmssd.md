@@ -80,6 +80,7 @@ sources:
     journal: "Scientific Reports"
     year: 2026
     doi: "10.1038/s41598-026-52700-7"
+    pmid: 42151374
     type: observational
   - id: S8
     cite: "Carter et al. (2026)"
@@ -87,6 +88,7 @@ sources:
     journal: "Am J Physiol Heart Circ Physiol"
     year: 2026
     doi: "10.1152/ajpheart.00041.2026"
+    pmid: 42495990
     type: guideline
   - id: S9
     cite: "Apple Inc. — HealthKit documentation"

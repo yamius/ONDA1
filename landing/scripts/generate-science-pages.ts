@@ -27,6 +27,22 @@ const glossaryTitle = new Map(glossaryTerms.map((t) => [t.slug, t.title]))
 const articleTitle = new Map(articles.map((a) => [a.slug, a.title]))
 const toolTitle = new Map((TOOLS as { slug: string; title?: string; name?: string }[]).map((t) => [t.slug, t.title ?? t.name ?? t.slug]))
 
+/** Intrinsic size of a PNG/JPEG in public/ (for width/height attributes; avoids layout shift). */
+function imageSize(rel: string): { w: number; h: number } | null {
+  const p = join(ROOT, 'public', rel)
+  if (!existsSync(p)) return null
+  const b = readFileSync(p)
+  if (b.readUInt32BE(0) === 0x89504e47) return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) }
+  let i = 2
+  while (i < b.length) {
+    if (b[i] !== 0xff) { i++; continue }
+    const m = b[i + 1]
+    if (m >= 0xc0 && m <= 0xc3) return { w: b.readUInt16BE(i + 7), h: b.readUInt16BE(i + 5) }
+    i += 2 + b.readUInt16BE(i + 2)
+  }
+  return null
+}
+
 function lastModified(file: string): string {
   try {
     const d = execSync(`git log -1 --format=%cs -- "${file}"`, { cwd: ROOT, encoding: 'utf8' }).trim()
@@ -76,6 +92,8 @@ const pages = publishable.map((r) => {
     keyPoints: (fm.keyPoints as string[]).map((k) => resolveFacts(k, where)),
     image: fm.image ? String(fm.image) : null,
     imageAlt: fm.imageAlt ? String(fm.imageAlt) : null,
+    imageWidth: fm.image ? imageSize(String(fm.image))?.w ?? 1024 : null,
+    imageHeight: fm.image ? imageSize(String(fm.image))?.h ?? 768 : null,
     editor: String(fm.editor),
     reviewer: fm.reviewer ?? null,
     lastReviewed: fm.lastReviewed ? String(fm.lastReviewed) : null,
@@ -106,7 +124,7 @@ writeFileSync(
     `export interface ScienceSource { id: string; cite: string; title: string; journal: string | null; year: number | null; doi: string | null; pmid: string | null; url: string | null; type: string }\n` +
     `export interface ScienceEvidence { claim: string; sources: string[]; class: string; limitation: string }\n` +
     `export interface ScienceLink { href: string; label: string; type: string }\n` +
-    `export interface SciencePageData { kind: ScienceKind; slug: string; title: string; metaTitle: string; metaDescription: string; shortAnswer: string; keyPoints: string[]; image: string | null; imageAlt: string | null; editor: string; reviewer: string | null; lastReviewed: string | null; dateModified: string; body: string; sources: ScienceSource[]; evidenceMap: ScienceEvidence[]; related: ScienceLink[] }\n` +
+    `export interface SciencePageData { kind: ScienceKind; slug: string; title: string; metaTitle: string; metaDescription: string; shortAnswer: string; keyPoints: string[]; image: string | null; imageAlt: string | null; imageWidth: number | null; imageHeight: number | null; editor: string; reviewer: string | null; lastReviewed: string | null; dateModified: string; body: string; sources: ScienceSource[]; evidenceMap: ScienceEvidence[]; related: ScienceLink[] }\n` +
     `export const SCIENCE_PAGES: SciencePageData[] = ${JSON.stringify(pages, null, 1)}\n`,
 )
 console.log(`[science] generated ${pages.length} page(s)${skipped.length ? `; NOT published (pending): ${skipped.join('; ')}` : ''}`)
