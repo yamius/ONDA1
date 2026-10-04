@@ -51,6 +51,7 @@ const TASK_FORCE_1996: FactSource = { label: 'Task Force ESC/NASPE 1996, Circula
 const ONDA_APP: FactSource = { label: 'ONDA app logic: src/lib/baseline.ts (BASELINE_WINDOW_DAYS = 14), src/lib/anomaly.ts (corridor mean ± SD, MIN_NIGHTS 7, SD_GATE 1.5, floors; 90-day traffic-light corridor)', url: 'https://onda-life.com/measurements' }
 const XU_2026: FactSource = { label: 'Xu 2026, Sensors (systematic review and meta-analysis)', doi: '10.3390/s26165192', pmid: '42655500' }
 const ZUERN_2026: FactSource = { label: 'Zuern 2026, Scientific Reports', doi: '10.1038/s41598-026-52700-7', pmid: '42151374' }
+const TAN_2023: FactSource = { label: 'Tan 2023, J Affect Disord (taVNS in depression, meta-analysis)', doi: '10.1016/j.jad.2023.05.048', pmid: '37230264' }
 const ALA_RR: FactSource = { label: 'American Lung Association — respiratory rate', url: 'https://www.lung.org/blog/respiratory-rate-vital-signs' }
 
 const R = '2026-10-04'
@@ -90,6 +91,8 @@ const FACTS_LIST: Fact[] = [
   { id: 'study.xu2026.studiesQualitative', display: '43 studies', kind: 'number', scope: 'Studies in the qualitative synthesis of the PPG-PRV vs ECG-HRV systematic review (Xu 2026); healthy or apparently healthy non-clinical populations.', sources: [XU_2026], status: 'approved', reviewed: '2026-10-05', note: 'Quote: “Forty-three studies were included in the qualitative synthesis; 33 were summarized narratively, and 10 unique studies provided sufficient data for quantitative synthesis.”' },
   { id: 'study.xu2026.studiesPooled', display: '10 unique studies', kind: 'number', scope: 'Studies with enough comparable data for the quantitative (RMSSD/SDNN) pooling in Xu 2026.', sources: [XU_2026], status: 'approved', reviewed: '2026-10-05', note: 'Same quote as study.xu2026.studiesQualitative.' },
   { id: 'study.zuern2026.participants', display: '66 participants', kind: 'number', scope: 'Adults in sinus rhythm with simultaneous 12-lead ECG and wrist PPG (5 min 30 s) in a single-centre validation (Zuern 2026).', sources: [ZUERN_2026], status: 'approved', reviewed: '2026-10-05', note: 'Quote: “66 participants in sinus rhythm underwent simultaneous high-resolution 12-lead ECG and wrist-based PPG recording”.' },
+
+  { id: 'study.tan2023.depressionTrials', display: '12 randomized controlled trials (838 participants)', kind: 'number', scope: 'Randomized controlled trials and participants pooled in the meta-analysis of transcutaneous auricular VNS for depressive disorder (Tan 2023).', sources: [TAN_2023], status: 'approved', reviewed: '2026-10-05', note: 'Approved by Yakiv 2026-10-05 (evidence/transcutaneous-vagus-nerve-stimulation P1). Quote: “Totally, 12 studies of 838 participants were included.”' },
 
   // ── Fixed wording (claims) ──────────────────────────────────────────
   { id: 'claim.vagalTone', display: 'Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate', kind: 'claim', scope: 'Use instead of “HRV measures vagal tone” or “X trains your vagal tone”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },

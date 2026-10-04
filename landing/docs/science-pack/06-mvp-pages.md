@@ -11,6 +11,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/sdnn` — 2026-10-05
 - `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
 - `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
+- `evidence/transcutaneous-vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
 
 All other pages: not written yet. Yakiv names the next page. Put published pages in `related.science`, unwritten ones in `relatedPlanned`.
 

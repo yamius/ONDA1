@@ -421,6 +421,7 @@ Need a value that is missing? Declare it in the page’s `proposals` block and w
 | `study.xu2026.studiesQualitative` | 43 studies | Studies in the qualitative synthesis of the PPG-PRV vs ECG-HRV systematic review (Xu 2026); healthy or apparently healthy non-clinical populations. | approved | Xu 2026, Sensors (systematic review and meta-analysis) — DOI 10.3390/s26165192 |
 | `study.xu2026.studiesPooled` | 10 unique studies | Studies with enough comparable data for the quantitative (RMSSD/SDNN) pooling in Xu 2026. | approved | Xu 2026, Sensors (systematic review and meta-analysis) — DOI 10.3390/s26165192 |
 | `study.zuern2026.participants` | 66 participants | Adults in sinus rhythm with simultaneous 12-lead ECG and wrist PPG (5 min 30 s) in a single-centre validation (Zuern 2026). | approved | Zuern 2026, Scientific Reports — DOI 10.1038/s41598-026-52700-7 |
+| `study.tan2023.depressionTrials` | 12 randomized controlled trials (838 participants) | Randomized controlled trials and participants pooled in the meta-analysis of transcutaneous auricular VNS for depressive disorder (Tan 2023). | approved | Tan 2023, J Affect Disord (taVNS in depression, meta-analysis) — DOI 10.1016/j.jad.2023.05.048 |
 | `claim.vagalTone` | Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate | Use instead of “HRV measures vagal tone” or “X trains your vagal tone”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `claim.slowExhale` | slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise | Use instead of “a long exhale stimulates/activates the vagus nerve”. | approved | Lehrer 2003, Psychosomatic Medicine — DOI 10.1097/01.psy.0000089200.81962.19; Balban 2023, Cell Reports Medicine — DOI 10.1016/j.xcrm.2022.100895 |
 | `claim.hrvNotStress` | a single low HRV reading does not by itself mean you are stressed or unwell | Use instead of “low HRV means stressed”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
@@ -526,9 +527,9 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 | Yap 2020 | Yap JYY et al. Critical review of transcutaneous vagus nerve stimulation: challenges for translation to clinical practice. *Frontiers in Neuroscience* 2020;14:284 | review | DOI 10.3389/fnins.2020.00284 · PMID 32410932 | Sham, parameter and biomarker problems |
 | Butt 2020 | Butt MF, Albusoda A, Farmer AD, Aziz Q. The anatomical basis for transcutaneous auricular vagus nerve stimulation. *Journal of Anatomy* 2020;237(4):588–611 | review (anatomy) | DOI 10.1111/joa.13122 · PMID 31742681 | Auricular branch anatomy; individual variation |
 | Atanackov 2025 | Atanackov P et al. The acute effects of varying frequency and pulse width of taVNS on heart rate variability in healthy adults: a randomized crossover controlled trial. *Biomedicines* 2025;13(3):700 | randomized crossover | DOI 10.3390/biomedicines13030700 | Metric-specific response (SDNN vs RMSSD) |
-| taVNS depression MA 2023 | The efficacy and safety of taVNS in the treatment of depressive disorder: a systematic review and meta-analysis of RCTs. *J Affect Disord* 2023;337:37–49 | meta-analysis | PMID 37230264 | Symptom-scale improvement; small trials, heterogeneity |
+| Tan 2023 | Tan C et al. The efficacy and safety of taVNS in the treatment of depressive disorder: a systematic review and meta-analysis of RCTs. *J Affect Disord* 2023;337:37–49 | meta-analysis | DOI 10.1016/j.jad.2023.05.048 · PMID 37230264 | Symptom-scale improvement; small trials, heterogeneity |
 | Lin 2026 | taVNS for sleep disorders: a systematic review and meta-analysis of sleep, anxiety, depression and safety outcomes. *Psychology, Health & Medicine* 2026 | meta-analysis | DOI 10.1080/13548506.2026.2708207 · PMID 42522355 | Small-to-moderate pooled effects in mostly small trials (effect sizes only via facts) |
-| de Oliveira 2025 | de Oliveira HM et al. taVNS in insomnia: a systematic review and meta-analysis. *Neuromodulation* 2025;28(8):1332–1340 | meta-analysis | PMID 40323248 | Independent sleep meta-analysis; cite qualitatively |
+| de Oliveira 2025 | de Oliveira HM et al. taVNS in insomnia: a systematic review and meta-analysis. *Neuromodulation* 2025;28(8):1332–1340 | meta-analysis | DOI 10.1016/j.neurom.2025.04.001 · PMID 40323248 | Independent sleep meta-analysis; cite qualitatively |
 | Gerges 2024 | Gerges ANH et al. Clinical application of transcutaneous auricular vagus nerve stimulation: a scoping review. *Disability and Rehabilitation* 2024;46:5730–5760 | scoping review | DOI 10.1080/09638288.2024.2313123 | Sham methodology |
 | Tian 2023 | Tian QQ et al. Combined effect of taVNS and 0.1 Hz slow-paced breathing on working memory. *Frontiers in Neuroscience* 2023;17:1133964 | randomized trial | DOI 10.3389/fnins.2023.1133964 | Qualitative only |
 | Wan 2026 | Wan S et al. Effectiveness of taVNS in stroke rehabilitation: a systematic review and meta-analysis of RCTs. *Frontiers in Neurology* 2026 | meta-analysis | DOI 10.3389/fneur.2026.1786103 | Qualitative only |
@@ -552,6 +553,8 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 | HealthKit heartRateVariabilitySDNN | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn | Apple Health stores HRV as SDNN |
 | HealthKit heartRateVariabilityRMSSD | https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilityrmssd | RMSSD type from iOS/watchOS 27 |
 | FDA De Novo DEN150048 | https://www.accessdata.fda.gov/cdrh_docs/reviews/DEN150048.pdf | gammaCore: the cleared headache indication only |
+| electroCore — gammaCore FAQ (approved 2026-10-05) | https://www.gammacore.com/about-gammacore/faq/ | Manufacturer-listed gammaCore indications and label limitations — always attributed as “the manufacturer states”. The site blocks scripts; verify in a browser. |
+| LivaNova — VNS Therapy HCP FAQs (approved 2026-10-05) | https://www.livanova.com/epilepsy-vnstherapy/en-us/hcp/faqs | Implanted VNS Therapy: device description and the epilepsy indication only (the page states no depression indication) |
 | American Lung Association — respiratory rate | https://www.lung.org/blog/respiratory-rate-vital-signs | Adult resting breathing rate |
 
 **Status of the identifiers:** every DOI above was confirmed in Crossref on 2026-10-04 (author, year, journal and title match). The automatic check looks every DOI/PMID up again each time a page that cites it is checked.
@@ -627,6 +630,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/sdnn` — 2026-10-05
 - `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
 - `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
+- `evidence/transcutaneous-vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
 
 All other pages: not written yet. Yakiv names the next page. Put published pages in `related.science`, unwritten ones in `relatedPlanned`.
 

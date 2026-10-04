@@ -2272,6 +2272,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/evidence-vagus-nerve-stimulation.avif": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/evidence-vagus-nerve-stimulation.jpg": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/evidence-vagus-nerve-stimulation.webp": {
+    "width": 1024,
+    "height": 768
+  },
   "/images/science/measurements-heart-rate-variability.avif": {
     "width": 1916,
     "height": 821
