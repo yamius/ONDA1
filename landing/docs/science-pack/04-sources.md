@@ -14,7 +14,12 @@ A new source is allowed **only with a DOI or PMID that can be verified**.
 
   A source that fails any of these is removed from the page.
 
-No DOI or PMID means no source. The exceptions are the official regulatory or manufacturer documents listed below, cited by URL.
+No DOI or PMID means no source, with one exception: **official documentation** (type `official`).
+- It covers manufacturer and regulator documents: Apple, Garmin, Oura, FDA, EMA and similar.
+- It is cited by URL; the URL must open.
+- It is allowed **only for device and regulatory facts**, never for a health, physiology or efficacy claim.
+
+The check enforces all three points (see [01-quality-standard.md](01-quality-standard.md) §1.2). A new official document goes through the same proposal route as any new source.
 
 ## Foundations and HRV measurement
 
@@ -66,7 +71,7 @@ No DOI or PMID means no source. The exceptions are the official regulatory or ma
 | Nanchen 2018 | Nanchen D. Resting heart rate: what is normal? *Heart* 2018;104(13):1048–1049 | review (editorial) | DOI 10.1136/heartjnl-2017-312731 | 60–100 convention; lower values in fit people; 50–90 research |
 | Ostchega 2011 | Ostchega Y et al. Resting pulse rate reference data for children, adolescents, and adults: United States, 1999–2008. *National Health Statistics Reports* No. 41 | official statistics | URL https://www.cdc.gov/nchs/data/nhsr/nhsr041.pdf | ONDA resting-heart-rate tables (NHANES) |
 
-## Official documents (cited by URL, no DOI)
+## Official documents (type `official`: URL, no DOI — device and regulatory facts only)
 
 | Source | URL | Use for |
 |---|---|---|

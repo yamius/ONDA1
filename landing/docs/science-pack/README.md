@@ -38,7 +38,19 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 |---|---|
 | `landing/src/data/science/facts.ts` | Facts module. Changed only by Claude Code, after Yakiv approves a value. |
 | `npx tsx scripts/science-pack-facts.ts` | Regenerates `03-facts.md`. Run it after every change to `facts.ts`; `--check` fails if the doc is stale. |
-| `npx tsx scripts/check-science-content.ts` | Automatic page checks: format, DOI/PMID exist, numbers only via facts, banned wording, links. `--offline` skips the source lookups. |
-| `.github/workflows/science-content.yml` | Runs both checks and the full build whenever `landing/content/science/` or the facts change on `main`. |
+| `npx tsx scripts/check-science-content.ts` | Automatic page checks: format, DOI/PMID exist, official URLs open and support only device/regulatory facts, evidence classes, numbers only via facts or proposals, banned wording, links and `relatedPlanned`. `--file <path>` checks one file anywhere (use it on a draft). `--offline` skips the lookups. `--publish` also fails on pending proposals or proposed facts — the gate before publishing. |
+| `.github/workflows/science-content.yml` | Runs the publish gate (`--publish`) and the facts-doc check whenever `landing/content/science/`, the facts or the pack change on `main`. |
+
+## Decisions log
+
+| Date | Decision |
+|---|---|
+| 2026-10-04 | Process: Mistral read-only, files handed over by Yakiv, Claude Code checks and publishes. |
+| 2026-10-04 | `hrv.pooled.daytime` (about 42 ms, daytime RMSSD, Nunan 2010) approved. |
+| 2026-10-04 | Source type `official` (URL, no DOI) — device and regulatory facts only. |
+| 2026-10-04 | Evidence class `guideline` (guideline / expert consensus) for methodological standards. |
+| 2026-10-04 | `relatedPlanned` for unwritten science pages; shown automatically once published. |
+| 2026-10-04 | Proposals block: missing facts/sources proposed in the file; drafts pass, publishing is blocked until Yakiv approves. |
+| 2026-10-04 | Hand-off includes the real check log when Mistral can run scripts. |
 
 Background (not rules): the original specs are in `D:\_ONDA\_Sciense\` (001–005), and the audit with the page decisions is [`../science-audit.md`](../science-audit.md).

@@ -45,5 +45,5 @@ These phrases must not appear in a science page, in any grammatical form. Rows m
 
 | Don’t write | Write instead | Check |
 |---|---|---|
-| any number typed by hand in prose (ms, bpm, %, breaths per minute, study counts, effect sizes) | `{{fact:<id>}}` from [03-facts.md](03-facts.md) | auto |
+| any number typed by hand in prose (ms, bpm, %, breaths per minute, study counts, effect sizes) | `{{fact:<id>}}` from [03-facts.md](03-facts.md), or `{{proposed:P1}}` with a proposal | auto |
 | digits in title, metaTitle, metaDescription, shortAnswer, keyPoints | words | auto |

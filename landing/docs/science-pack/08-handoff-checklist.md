@@ -20,9 +20,9 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 - [ ] `editor: "Yakiv Bilenko"`, `reviewer: null`, `lastReviewed: null`.
 
 **Content**
-- [ ] Every number in the body is a `{{fact:…}}` with status `approved` in [03-facts.md](03-facts.md). Missing values are written as `{{fact:NEW: …}}`.
-- [ ] Every factual claim has an `evidenceMap` row with sources, class and limitation.
-- [ ] Every source has a DOI or PMID. Sources from [04-sources.md](04-sources.md) are used first.
+- [ ] Every number in the body is a `{{fact:…}}` from [03-facts.md](03-facts.md), or a `{{proposed:P…}}` declared in `proposals` with value, scope, DOI/PMID and quote or location ([01-quality-standard.md](01-quality-standard.md) §1.11).
+- [ ] Every factual claim has an `evidenceMap` row with sources, class and limitation. Methodological recommendations use class `guideline` and cite a guideline source.
+- [ ] Every source has a DOI or PMID, except official documentation: type `official`, a URL, and only rows with `claimType: device` or `regulatory`. Sources from [04-sources.md](04-sources.md) are used first.
 - [ ] Every `[Sx]` in the text is defined in `sources`, and every source is cited.
 - [ ] The study type is named correctly. No “established” class rests on a single small trial.
 - [ ] Nothing from [05-banned-wording.md](05-banned-wording.md) appears.
@@ -30,16 +30,31 @@ Before sending a page, check every item. Then send **the file plus the hand-off 
 - [ ] “In ONDA” is factual, checked against `docs/onda-facts-source-of-truth.md`, and has no promotion.
 
 **Links**
-- [ ] 3–6 links in `related`. Every link points to an existing page or an MVP science page.
+- [ ] 3–6 links in `related`, all to pages that exist. Unwritten MVP science pages go in `relatedPlanned`, not in `related` or inline links.
 - [ ] The page does not repeat what the overlapping articles own.
+
+## Check log
+
+If you can run scripts, run the real check on your file and attach the full output to the hand-off:
+
+```
+cd landing
+npx tsx scripts/check-science-content.ts --file <path/to/your-file.md>
+```
+
+- **`OK`** — the file passes.
+- **`OK … draft OK, not publishable yet`** with a PENDING list — the file passes, and the pending items are your proposals. That is expected.
+- **Any `problem(s)`** — fix them before handing in.
+
+Do not paraphrase the log; paste it as printed. If you cannot run scripts, say so in the hand-off note.
 
 ## Hand-off note (send with the file)
 
 ```
 Page: <kind>/<slug>
 Intent in one sentence:
-New facts needed:   id | value | scope | source DOI/PMID      (or “none”)
-New sources:        authors | title | journal | year | DOI/PMID | type | cited for   (or “none”)
+Proposals:          P1 … — one line each: kind | value | scope | DOI/PMID/URL | quote or location   (or “none”)
+Check log:          attached / could not run scripts
 New link targets:   (pages that don’t exist yet, or “none”)
 Sections skipped:   (which and why, or “none”)
 Open questions / unsure about:

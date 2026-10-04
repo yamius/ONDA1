@@ -49,22 +49,31 @@ If a claim cannot be sourced, remove or qualify it. If scientific uncertainty is
 
 **Name the study type correctly.** A single crossover trial is not a meta-analysis.
 
+**Official documentation (source type `official`).** Manufacturer documentation (Apple, Garmin, Oura …) and regulators (FDA, EMA …) are cited with type `official`. Rules:
+- they need a URL that opens, and no DOI;
+- they may support **only device or regulatory facts** — what a device records, what a data type is, what a clearance covers;
+- they may **never** support a health, physiology or efficacy claim. Such claims need scientific sources.
+
+The check enforces this. An evidence-map row that cites an `official` source must have `claimType: device` or `claimType: regulatory`, and its claim must not use efficacy wording (improves, reduces, helps, works…).
+
 ## 1.3 Evidence classes
 
 Every row of `evidenceMap` has exactly one class. There are no numeric grades and no invented grades.
 
 | Class | Use when |
 |---|---|
-| `established` | Guidelines, consensus or consistent meta-analytic evidence. Never for a single small trial. |
+| `established` | Consistent meta-analytic or large-scale evidence. Never for a single small trial. |
+| `guideline` | Guideline / expert consensus. Use it for recommendations and methodological standards (for example, how HRV should be recorded: Carter 2026, Task Force 1996). The row must cite a source of type `guideline`. This is the strength of agreement among experts, not of outcome data. |
 | `context-dependent` | Supported, but only in a stated population, condition or measurement setting. |
 | `emerging` | Early or small studies point one way; the evidence is not yet consistent. |
 | `debated` | Credible sources disagree. |
 | `unknown` | Not studied enough to say. Say so plainly. |
 
-**Evidence-map row:** claim → sources → class → limitation.
+**Evidence-map row:** claim → sources → class → claimType → limitation.
+- `claimType` is one of: `definition`, `measurement`, `physiology`, `device`, `regulatory`, `efficacy`, `safety`, `other`. It is optional, except in rows that cite an `official` source.
 - The limitation is required.
 - Do not invent study counts, effect sizes, percentages or “scientifically proven” labels.
-- A study number that matters becomes a fact (see [03-facts.md](03-facts.md)).
+- A study number that matters becomes a fact (see [03-facts.md](03-facts.md)). If the fact does not exist yet, propose it (§1.11).
 
 ## 1.4 Scientific writing rules
 
@@ -86,7 +95,7 @@ Every row of `evidenceMap` has exactly one class. There are no numeric grades an
 
 **Terminology.** Keep established science terms (HRV, RMSSD, SDNN, RSA, ANS) apart from ONDA terms (ONDA Level, ONDA states, practice names, Simple mode). Label ONDA terms as ONDA terms. Never present an ONDA construct as an established scientific one.
 
-**Numbers.** Numbers appear only through `{{fact:…}}`. Title, metaTitle, metaDescription, shortAnswer and keyPoints contain no digits at all; write numbers there in words.
+**Numbers.** Numbers appear only through `{{fact:…}}` or, for a value you are proposing, `{{proposed:P1}}` (§1.11). Title, metaTitle, metaDescription, shortAnswer and keyPoints contain no digits at all; write numbers there in words.
 
 **Wording.** Banned wording is listed in [05-banned-wording.md](05-banned-wording.md).
 
@@ -190,4 +199,31 @@ Each page gets **3–6 high-value links** in `related`, plus inline links where 
 - tools (`/tools/<slug>`);
 - other science pages (`/science/<kind>/<slug>`).
 
-Every link must point to a page that exists, or to another MVP science page.
+- **`related`** lists only pages that exist today. The check verifies each one.
+- **`relatedPlanned`** lists MVP science pages that are not written yet, as `<kind>/<slug>` (for example `concepts/sdnn`). The check verifies only the format. The site shows each one automatically once that page is published.
+- **Inline links** in the body may point only to pages that exist. Mention a planned page in prose without a link and put it in `relatedPlanned`.
+
+## 1.11 Proposals — when a fact or source is missing
+
+If you need a number or a source that is not in [03-facts.md](03-facts.md) or [04-sources.md](04-sources.md), do not invent a workaround. Propose it.
+
+1. Add an entry to `proposals` in the frontmatter:
+
+   | Field | Content |
+   |---|---|
+   | `id` | `P1`, `P2`… |
+   | `kind` | `fact` or `source` |
+   | `value` | fact only: the exact text to show, for example `about five minutes` |
+   | `scope` | fact only: what the number applies to (population, method, time of day) |
+   | `doi` / `pmid` | the source; `url` only for an official document |
+   | `quote` or `location` | the exact sentence from the source, or where the number is (table, figure, page, section) |
+
+2. In the body, write `{{proposed:P1}}` where the number goes. The draft shows the proposed value.
+3. The check accepts the draft and marks it **PENDING**: it is not publishable.
+4. Yakiv approves or rejects each proposal. Then Claude Code:
+   - adds an approved fact to `facts.ts`;
+   - replaces `{{proposed:P1}}` with `{{fact:<new id>}}`;
+   - adds an approved source to [04-sources.md](04-sources.md);
+   - removes the entry from `proposals`.
+
+The same applies to an existing fact whose status is `proposed` in [03-facts.md](03-facts.md): you may use it in a draft, but the page cannot be published until it is approved.

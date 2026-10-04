@@ -61,7 +61,7 @@ const FACTS_LIST: Fact[] = [
   { id: 'rhr.trained', display: 'often 40–60 bpm', kind: 'range', scope: 'Well-trained endurance athletes at rest.', sources: [NANCHEN_2018], status: 'approved', reviewed: R },
 
   // ── HRV general ─────────────────────────────────────────────────────
-  { id: 'hrv.pooled.daytime', display: 'about 42 ms', kind: 'number', scope: 'Pooled resting RMSSD from short daytime recordings across 44 studies — not a night-time value and not an age norm.', sources: [NUNAN_2010], status: 'proposed', reviewed: R },
+  { id: 'hrv.pooled.daytime', display: 'about 42 ms', kind: 'number', scope: 'Pooled resting RMSSD from short daytime recordings across 44 studies — not a night-time value and not an age norm.', sources: [NUNAN_2010], status: 'approved', reviewed: R, note: 'Approved by Yakiv 2026-10-04.' },
   { id: 'hrv.rmssd.definition', display: 'RMSSD — the root mean square of successive differences between heartbeats', kind: 'claim', scope: 'Definition.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
   { id: 'hrv.sdnn.definition', display: 'SDNN — the standard deviation of the intervals between normal heartbeats', kind: 'claim', scope: 'Definition.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
 

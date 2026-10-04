@@ -26,9 +26,9 @@ const doc = `# 3. Approved facts
 
 > Generated from \`src/data/science/facts.ts\` by \`npx tsx scripts/science-pack-facts.ts\`. Do not edit by hand.
 
-**Every number in a science page comes from a \`{{fact:<id>}}\` reference.** A number typed by hand fails the check. Use only facts with status \`approved\`. A \`proposed\` fact waits for Yakiv and cannot be used.
+**Every number in a science page comes from a \`{{fact:<id>}}\` reference.** A number typed by hand fails the check. Facts with status \`approved\` can be published. A \`proposed\` fact waits for Yakiv: allowed in a draft, blocked at publishing.
 
-Need a value that is missing? Write \`{{fact:NEW: what you need}}\` in the draft and list it in the hand-off note (see [08-handoff-checklist.md](08-handoff-checklist.md)) with value, scope and a DOI/PMID. Claude Code adds it here after Yakiv approves.
+Need a value that is missing? Declare it in the page’s \`proposals\` block and write \`{{proposed:P1}}\` (see [01-quality-standard.md](01-quality-standard.md) §1.11). A \`proposed\` fact below may be used in a draft too, but the page cannot be published until Yakiv approves it. Claude Code adds approved values here.
 
 ## Hand-written facts
 

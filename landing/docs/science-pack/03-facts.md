@@ -2,9 +2,9 @@
 
 > Generated from `src/data/science/facts.ts` by `npx tsx scripts/science-pack-facts.ts`. Do not edit by hand.
 
-**Every number in a science page comes from a `{{fact:<id>}}` reference.** A number typed by hand fails the check. Use only facts with status `approved`. A `proposed` fact waits for Yakiv and cannot be used.
+**Every number in a science page comes from a `{{fact:<id>}}` reference.** A number typed by hand fails the check. Facts with status `approved` can be published. A `proposed` fact waits for Yakiv: allowed in a draft, blocked at publishing.
 
-Need a value that is missing? Write `{{fact:NEW: what you need}}` in the draft and list it in the hand-off note (see [08-handoff-checklist.md](08-handoff-checklist.md)) with value, scope and a DOI/PMID. Claude Code adds it here after Yakiv approves.
+Need a value that is missing? Declare it in the page’s `proposals` block and write `{{proposed:P1}}` (see [01-quality-standard.md](01-quality-standard.md) §1.11). A `proposed` fact below may be used in a draft too, but the page cannot be published until Yakiv approves it. Claude Code adds approved values here.
 
 ## Hand-written facts
 
@@ -13,7 +13,7 @@ Need a value that is missing? Write `{{fact:NEW: what you need}}` in the draft a
 | `rhr.adult.normal` | 60–100 bpm | Adults at rest; the standard clinical definition of a normal resting heart rate. | approved | Nanchen 2018, Heart — DOI 10.1136/heartjnl-2017-312731 |
 | `rhr.adult.normal.caveat` | Fit people often sit lower, and some research links roughly 50–90 bpm with better long-term health | Caveat that accompanies rhr.adult.normal. | approved | Nanchen 2018, Heart — DOI 10.1136/heartjnl-2017-312731 |
 | `rhr.trained` | often 40–60 bpm | Well-trained endurance athletes at rest. | approved | Nanchen 2018, Heart — DOI 10.1136/heartjnl-2017-312731 |
-| `hrv.pooled.daytime` | about 42 ms | Pooled resting RMSSD from short daytime recordings across 44 studies — not a night-time value and not an age norm. | proposed | Nunan 2010, Pacing Clin Electrophysiol — DOI 10.1111/j.1540-8159.2010.02841.x |
+| `hrv.pooled.daytime` | about 42 ms | Pooled resting RMSSD from short daytime recordings across 44 studies — not a night-time value and not an age norm. | approved | Nunan 2010, Pacing Clin Electrophysiol — DOI 10.1111/j.1540-8159.2010.02841.x |
 | `hrv.rmssd.definition` | RMSSD — the root mean square of successive differences between heartbeats | Definition. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `hrv.sdnn.definition` | SDNN — the standard deviation of the intervals between normal heartbeats | Definition. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `applewatch.hrv.healthkit` | Apple Health records HRV as SDNN | The long-standing HealthKit HRV type, recorded automatically by Apple Watch. | approved | Apple HealthKit: heartRateVariabilitySDNN — https://developer.apple.com/documentation/healthkit/hkquantitytypeidentifier/heartratevariabilitysdnn |

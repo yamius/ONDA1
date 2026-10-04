@@ -8,14 +8,17 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
 2. Run the automatic checks from `landing/`:
 
    ```
-   npx tsx scripts/check-science-content.ts      # online: Crossref / PubMed lookups
+   npx tsx scripts/check-science-content.ts --file content/science/<kind>/<slug>.md   # online: Crossref / PubMed / URL lookups
    npx tsx scripts/science-pack-facts.ts --check
    ```
 
    The content check covers:
    - format;
    - DOI/PMID existence;
-   - numbers only via approved facts;
+   - official sources: URL opens, device/regulatory rows only;
+   - evidence classes (incl. `guideline` with a guideline source);
+   - numbers only via facts or declared proposals (PENDING items listed);
+   - `relatedPlanned` format;
    - banned wording;
    - links.
 
@@ -27,7 +30,11 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
    - ask Yakiv to approve it, then switch it to `approved`;
    - regenerate `03-facts.md`.
 
-   No page goes live with an unapproved fact or a `{{fact:NEW: …}}`.
+   No page goes live with an unapproved fact, a `{{proposed:…}}` or a non-empty `proposals` block. The final gate is `npx tsx scripts/check-science-content.ts --publish`, which fails on any pending item.
+   For each proposal:
+   - check the value against the quote or location in the source;
+   - send it to Yakiv for approval;
+   - after approval, replace `{{proposed:P…}}` with the new `{{fact:…}}` and delete the proposal.
 4. **Each new source:**
    - look it up in Crossref or PubMed;
    - check that title, authors and year match;
@@ -42,6 +49,8 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
    - open the abstract (or the full text when the abstract is not enough);
    - confirm it supports the claim, in that population and measurement context.
 6. **The classes are honest:**
+   - `guideline` only for recommendations or methods backed by a guideline or consensus source, not for outcome claims;
+   - `official` sources support only device or regulatory facts;
    - no “established” on one small trial;
    - association is not written as cause;
    - population findings are not turned into personal verdicts;
@@ -67,7 +76,7 @@ Run this for every file Yakiv passes on. Publish only when every item passes. Ot
 
 ## D. Publish
 
-12. Build in full (`npm run build`, including `validate-seo`) and run `node scripts/audit-structure.mjs`.
+12. Run `npx tsx scripts/check-science-content.ts --publish`; it must print OK with no PENDING items. Then build in full (`npm run build`, including `validate-seo`) and run `node scripts/audit-structure.mjs`.
     - 0 broken links;
     - the page is in the sitemap;
     - canonical and JSON-LD are correct.

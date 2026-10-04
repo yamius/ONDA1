@@ -26,6 +26,6 @@ jobs:
       - run: npm ci
       # format, DOI/PMID exist (Crossref/PubMed), numbers only via {{fact:}}, banned wording, links
       - name: Science content gate
-        run: npx tsx scripts/check-science-content.ts
+        run: npx tsx scripts/check-science-content.ts --publish
       - name: Facts doc in the pack is up to date
         run: npx tsx scripts/science-pack-facts.ts --check
