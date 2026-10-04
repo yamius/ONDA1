@@ -245,13 +245,13 @@ export function Layout() {
             {t('menu.tools', { defaultValue: 'Tools' })}
           </TransitionLink>
           <TransitionLink
-            to="/research"
+            to="/science"
             onClick={() => setMenuOpen(false)}
             className={`block border-b border-white/5 py-3 text-sm font-medium transition-colors hover:text-white ${
-              location.pathname === '/research' ? 'text-cyan-400' : 'text-white/70'
+              location.pathname.startsWith('/science') ? 'text-cyan-400' : 'text-white/70'
             }`}
           >
-            {t('menu.research', { defaultValue: 'Research' })}
+            {t('menu.science', { defaultValue: 'Science' })}
           </TransitionLink>
           {/* Language picker */}
           <div
@@ -364,6 +364,9 @@ export function Layout() {
               </Link>
               <Link to={langHref('/tools', currentLang)} className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.tools', { defaultValue: 'Tools' })}
+              </Link>
+              <Link to="/science" className="text-xs text-white/40 transition-colors hover:text-white/60">
+                {t('menu.science', { defaultValue: 'Science' })}
               </Link>
               <Link to="/research" className="text-xs text-white/40 transition-colors hover:text-white/60">
                 {t('menu.research', { defaultValue: 'Research' })}

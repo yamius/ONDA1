@@ -997,11 +997,61 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 
 Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") progress. Part 1 practices activate the parasympathetic system, raising baseline HRV. Part 2 "Rhythmic Coherence" further increases HRV by synchronizing axial movements with the respiratory cycle.
 
+**Read the science →** [RMSSD: what this HRV metric reflects, and what it doesn't](/science/concepts/rmssd) — the evidence-first ONDA Science page on the most common HRV measure.
+
 ---
 
 ## References
 1. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
 2. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — resonance breathing and HRV`,
+    relatedSlugs: ['rmssd', 'sdnn', 'hrv-baseline'],
+  },
+  {
+    slug: 'rmssd',
+    title: 'RMSSD',
+    category: 'OS States',
+    shortDescription:
+      'Root mean square of successive differences — the standard short-term HRV metric for beat-to-beat changes in heart rhythm.',
+    content: `
+
+**RMSSD** (root mean square of successive differences) is a time-domain measure of [heart rate variability](/glossary/heart-rate-variability): it summarizes how much the interval between adjacent heartbeats changes from one beat to the next, in milliseconds.
+
+It reflects vagally mediated changes in heart rate, which is why it is the standard metric for short recordings. Vagal tone itself cannot be measured directly, and a single RMSSD value is not a stress reading or a diagnosis. Values depend on age, breathing, posture, time of day and whether they come from an ECG or a wearable's pulse signal — so night-time wearable values and short daytime lab values are not interchangeable.
+
+Most ring and strap wearables (Oura, Whoop, Garmin, Polar) report RMSSD; Apple Health has long recorded HRV as SDNN (see [SDNN](/glossary/sdnn)).
+
+**Read the science →** [RMSSD: what this HRV metric reflects, and what it doesn't](/science/concepts/rmssd) — definition, measurement, evidence by strength and sources. Age tables: [normal HRV by age](/articles/normal-hrv-by-age).`,
+    relatedSlugs: ['heart-rate-variability', 'sdnn', 'hrv-baseline'],
+  },
+  {
+    slug: 'sdnn',
+    title: 'SDNN',
+    category: 'OS States',
+    shortDescription:
+      'Standard deviation of the intervals between normal heartbeats — the overall spread of heart-rhythm variation in a recording.',
+    content: `
+
+**SDNN** is the standard deviation of the intervals between normal heartbeats in a recording. Where [RMSSD](/glossary/rmssd) isolates beat-to-beat changes, SDNN describes the overall spread of the intervals, so it is shaped by every rhythm in the recording window — including slower ones — and depends strongly on how long the recording is.
+
+Apple Health has long recorded heart rate variability as SDNN, so Apple Watch HRV values should be compared with SDNN norms, not RMSSD norms. Like any HRV measure, a single SDNN value is not a diagnosis; trends against your own baseline under comparable conditions say more.
+
+**Read the science →** the full ONDA Science page on SDNN is in preparation; meanwhile see [RMSSD on ONDA Science](/science/concepts/rmssd), which explains how the two metrics differ, and [why Apple Watch HRV can look low](/articles/why-is-my-apple-watch-hrv-low).`,
+    relatedSlugs: ['heart-rate-variability', 'rmssd', 'hrv-baseline'],
+  },
+  {
+    slug: 'hrv-baseline',
+    title: 'HRV Baseline',
+    category: 'OS States',
+    shortDescription:
+      'Your own normal range for HRV and related signals, built from your recent nights — the reference a new reading is compared with.',
+    content: `
+
+An **HRV baseline** is your personal normal range for [heart rate variability](/glossary/heart-rate-variability) — and, in ONDA, also for resting heart rate and breathing rate — built from your own recent nights rather than population norms. Because HRV varies so much between people, a reading compared with your own baseline usually says more than the same reading compared with an age table.
+
+In the ONDA app the baseline is built over 14 days and needs at least 7 valid nights before any signal is read. Each night is compared with your own corridor — the average of your recent nights plus or minus one standard deviation — and flagged only when it is at least 1.5 standard deviations outside and has changed by a minimum amount. A single flagged night is a prompt to notice, not a diagnosis.
+
+**Read the science →** an ONDA Science page on personal baselines is in preparation; meanwhile see [RMSSD on ONDA Science](/science/concepts/rmssd), the [baseline tool](/tools/baseline) and [your baseline knows first](/articles/your-baseline-knows-first).`,
+    relatedSlugs: ['heart-rate-variability', 'rmssd', 'sdnn'],
   },
   {
     slug: 'central-pattern-generators',

@@ -26,6 +26,7 @@ import { BioPage } from './pages/BioPage'
 import { BioMetricPage } from './pages/BioMetricPage'
 import { EmotonPage } from './pages/EmotonPage'
 import { ResearchPage } from './pages/ResearchPage'
+import { SciencePage } from './pages/SciencePage'
 import { AiAppsPage } from './pages/AiAppsPage'
 import { MeasurementsPage } from './pages/MeasurementsPage'
 import { HowItWorksPage } from './pages/HowItWorksPage'
@@ -219,6 +220,9 @@ export function createApp(location: string, lang?: Lang) {
             <Route key={`bm-${l}`} path={`/${l}/bio/:metric`} element={<BioMetricPage />} />
           ))}
           <Route path="/research"              element={<ResearchPage />} />
+          <Route path="/science"               element={<SciencePage />} />
+          <Route path="/science/:kind"         element={<SciencePage />} />
+          <Route path="/science/:kind/:slug"   element={<SciencePage />} />
           <Route path="/ai-apps"               element={<AiAppsPage />} />
           <Route path="/measurements"          element={<MeasurementsPage />} />
           <Route path="/ru/measurements"       element={<MeasurementsPage />} />

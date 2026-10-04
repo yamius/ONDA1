@@ -235,7 +235,8 @@ async function main() {
     for (const g of fm.related?.glossary || []) if (!routeExists.glossary.has(g)) err(rel, `related.glossary "${g}" does not exist`)
     for (const a of fm.related?.articles || []) if (!routeExists.articles.has(a)) err(rel, `related.articles "${a}" does not exist`)
     for (const s of fm.related?.science || []) if (!slugs.has(s)) err(rel, `related.science "${s}" does not exist yet — put it in relatedPlanned`)
-    for (const s of fm.relatedPlanned || []) {
+    if (fm.relatedPlanned != null && !Array.isArray(fm.relatedPlanned)) err(rel, 'relatedPlanned must be a flat list of <kind>/<slug> (e.g. [concepts/sdnn]), not an object')
+    for (const s of Array.isArray(fm.relatedPlanned) ? fm.relatedPlanned : []) {
       const [k, sl, extra] = String(s).split('/')
       if (!KINDS.includes(k) || !/^[a-z0-9-]+$/.test(sl ?? '') || extra) err(rel, `relatedPlanned "${s}" must be <kind>/<slug> of a science page`)
       else if (slugs.has(s)) warn(rel, `relatedPlanned "${s}" now exists — it is shown automatically; you may move it to related.science`)

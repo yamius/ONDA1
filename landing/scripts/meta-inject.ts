@@ -24,6 +24,7 @@ import { SUPPORTED_LANGS, type Lang } from '../src/i18n'
 import { MEASUREMENTS_I18N } from '../src/data/measurements-i18n'
 import { measurementsJsonLd } from '../src/pages/MeasurementsPage'
 import { aiAppsJsonLd, AI_APPS_TITLE, AI_APPS_DESC } from '../src/pages/AiAppsPage'
+import { scienceMeta } from '../src/pages/SciencePage'
 import { HOW_IT_WORKS_I18N } from '../src/data/how-it-works-i18n'
 import { PEOPLE_I18N } from '../src/data/people-i18n'
 import { getOndaVs, ONDA_VS } from '../src/data/onda-vs'
@@ -1668,6 +1669,10 @@ function getMetaForRouteBase(route: string): RouteMeta {
   // frontier. EN-only. Plain WebPage schema — deliberately NOT
   // ResearchProject (would imply a funded, active programme) and NOT
   // MedicalWebPage (would imply medical claims).
+  if (route === '/science' || route.startsWith('/science/')) {
+    const sm = scienceMeta(route)
+    if (sm) return { title: sm.title, description: sm.description, url, breadcrumbs, ogType: sm.ogType, jsonLd: sm.jsonLd }
+  }
   if (route === '/ai-apps') {
     return {
       title: `${AI_APPS_TITLE} | ONDA Life`,
