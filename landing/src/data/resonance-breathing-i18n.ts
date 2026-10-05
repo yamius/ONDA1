@@ -223,14 +223,14 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
   },
 
   es: {
-    metaTitle: 'Respiración de resonancia: respiración lenta y VFC | ONDA Life',
+    metaTitle: 'Respiración de resonancia: respiración lenta y HRV | ONDA Life',
     metaDescription:
-      'La respiración de resonancia explicada: qué es, por qué ~6 respiraciones por minuto maximizan la VFC, cómo encontrar tu frecuencia de resonancia, la evidencia, cómo practicarla y cómo la guía ONDA.',
-    articleHeadline: 'Respiración de resonancia: la ciencia de la respiración lenta y la VFC',
+      'La respiración de resonancia explicada: qué es, por qué ~6 respiraciones por minuto maximizan la HRV, cómo encontrar tu frecuencia de resonancia, la evidencia, cómo practicarla y cómo la guía ONDA.',
+    articleHeadline: 'Respiración de resonancia: la ciencia de la respiración lenta y la HRV',
     kicker: '[ RESPIRACIÓN DE RESONANCIA ]',
-    h1: 'Respiración de resonancia: la ciencia de la respiración lenta y la VFC',
+    h1: 'Respiración de resonancia: la ciencia de la respiración lenta y la HRV',
     heroLead:
-      '**La respiración de resonancia es respirar despacio y de forma pareja al ritmo en que la oscilación de tu frecuencia cardíaca es mayor** — para la mayoría, unas 5,5–6 respiraciones por minuto (un ciclo de ~10 segundos). A ese ritmo tu ritmo cardíaco y tu respiración se sincronizan, el barorreflejo se activa con fuerza y la variabilidad de la frecuencia cardíaca sube. Es la respiración en el centro del biofeedback de VFC.',
+      '**La respiración de resonancia es respirar despacio y de forma pareja al ritmo en que la oscilación de tu frecuencia cardíaca es mayor** — para la mayoría, unas 5,5–6 respiraciones por minuto (un ciclo de ~10 segundos). A ese ritmo tu ritmo cardíaco y tu respiración se sincronizan, el barorreflejo se activa con fuerza y la variabilidad de la frecuencia cardíaca sube. Es la respiración en el centro del biofeedback de HRV.',
     heroCta: { label: 'Prueba el marcapasos de respiración de resonancia →', path: '/tools/resonance-breathing' },
     toc: [
       { id: 'science', label: 'La ciencia' },
@@ -247,7 +247,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         title: 'Por qué ~6 respiraciones por minuto es especial',
         paras: [
           'Tu frecuencia cardíaca sube naturalmente al inhalar y baja al exhalar — arritmia sinusal respiratoria. Hay también un bucle más lento: el barorreflejo, que regula la presión arterial, oscila a unos 0,1 Hz — cerca de un ciclo cada 10 segundos. Cuando respiras a ese mismo ritmo de ~0,1 Hz, los dos ritmos se alinean y se refuerzan, y la oscilación de la frecuencia cardíaca alcanza su amplitud mayor y más suave. Eso es la resonancia.',
-          'El resultado visible es un ritmo cardíaco limpio en forma de onda y una fuerte subida de la VFC — la señal sobre la que se construye una puntuación de coherencia. Mira {{howLink}}.',
+          'El resultado visible es un ritmo cardíaco limpio en forma de onda y una fuerte subida de la HRV — la señal sobre la que se construye una puntuación de coherencia. Mira {{howLink}}.',
         ],
       },
       {
@@ -255,7 +255,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ TU FRECUENCIA ]',
         title: 'Encontrar tu frecuencia de resonancia',
         paras: [
-          'La frecuencia de resonancia de cada persona es algo distinta — normalmente entre unas 4,5 y 7 respiraciones por minuto, lo más común cerca de 6. Para encontrar la tuya, respira de forma suave a varios ritmos en ese rango y fíjate dónde se siente más sin esfuerzo. Con una app de biofeedback puedes ir más allá: el ritmo donde tu VFC o coherencia alcanza su pico es tu frecuencia de resonancia.',
+          'La frecuencia de resonancia de cada persona es algo distinta — normalmente entre unas 4,5 y 7 respiraciones por minuto, lo más común cerca de 6. Para encontrar la tuya, respira de forma suave a varios ritmos en ese rango y fíjate dónde se siente más sin esfuerzo. Con una app de biofeedback puedes ir más allá: el ritmo donde tu HRV o coherencia alcanza su pico es tu frecuencia de resonancia.',
           'Un punto de partida sencillo es una inhalación de 5,5 segundos y una exhalación de 5,5 segundos (unas 5,5 respiraciones por minuto), y ajustar desde ahí.',
         ],
       },
@@ -264,7 +264,7 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
         kicker: '[ LA EVIDENCIA ]',
         title: 'Qué dice la evidencia',
         paras: [
-          'Respirar a la frecuencia de resonancia eleva de forma fiable la VFC durante la sesión y activa la rama parasimpática — el mecanismo más respaldado tras el biofeedback de VFC (Lehrer & Gevirtz, 2014). La respiración lenta y resonante también se vincula en la literatura más amplia con menor activación y mejor resiliencia al estrés con la práctica regular (Thayer et al., 2009; Porges, 2007).',
+          'Respirar a la frecuencia de resonancia eleva de forma fiable la HRV durante la sesión y activa la rama parasimpática — el mecanismo más respaldado tras el biofeedback de HRV (Lehrer & Gevirtz, 2014). La respiración lenta y resonante también se vincula en la literatura más amplia con menor activación y mejor resiliencia al estrés con la práctica regular (Thayer et al., 2009; Porges, 2007).',
           'Como siempre, el efecto agudo es robusto; el tamaño y la durabilidad del cambio a largo plazo varían entre personas. Todo el detalle y los límites en la {{researchLink}}.',
         ],
       },
@@ -293,15 +293,15 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
     faq: [
       {
         q: '¿Qué es la respiración de resonancia?',
-        a: 'La respiración de resonancia (también llamada respiración coherente) es respirar despacio y de forma pareja al ritmo en que la oscilación de tu frecuencia cardíaca es mayor — para la mayoría, unas 5,5–6 respiraciones por minuto, un ciclo de ~10 segundos. A ese ritmo el ritmo cardíaco y la respiración se sincronizan y la VFC sube.',
+        a: 'La respiración de resonancia (también llamada respiración coherente) es respirar despacio y de forma pareja al ritmo en que la oscilación de tu frecuencia cardíaca es mayor — para la mayoría, unas 5,5–6 respiraciones por minuto, un ciclo de ~10 segundos. A ese ritmo el ritmo cardíaco y la respiración se sincronizan y la HRV sube.',
       },
       {
         q: '¿Cuál es mi frecuencia de resonancia?',
-        a: 'La frecuencia de resonancia de la mayoría está entre unas 4,5 y 7 respiraciones por minuto, comúnmente cerca de 6. Puedes encontrar la tuya probando ritmos en ese rango y notando dónde tu respiración se siente más suave y, con una app de biofeedback, dónde la VFC alcanza su pico.',
+        a: 'La frecuencia de resonancia de la mayoría está entre unas 4,5 y 7 respiraciones por minuto, comúnmente cerca de 6. Puedes encontrar la tuya probando ritmos en ese rango y notando dónde tu respiración se siente más suave y, con una app de biofeedback, dónde la HRV alcanza su pico.',
       },
       {
-        q: '¿Respirar despacio sube de verdad la VFC?',
-        a: 'Sí — respirar cerca de tu frecuencia de resonancia aumenta de forma fiable la variabilidad de la frecuencia cardíaca durante la sesión y activa la rama parasimpática. Es el mecanismo central del biofeedback de VFC. Cuánto cambia tu línea base con el tiempo varía entre personas.',
+        q: '¿Respirar despacio sube de verdad la HRV?',
+        a: 'Sí — respirar cerca de tu frecuencia de resonancia aumenta de forma fiable la variabilidad de la frecuencia cardíaca durante la sesión y activa la rama parasimpática. Es el mecanismo central del biofeedback de HRV. Cuánto cambia tu línea base con el tiempo varía entre personas.',
       },
       {
         q: '¿Cuánto debo practicar la respiración de resonancia?',
@@ -309,14 +309,14 @@ export const RESONANCE_BREATHING_I18N: Record<'en' | 'ru' | 'es', RbCopy> = {
       },
       {
         q: '¿La respiración de resonancia es lo mismo que la respiración en caja?',
-        a: 'No. La respiración en caja usa cuentas iguales con retenciones (p. ej. 4-4-4-4). La respiración de resonancia es suave y continua, sin retenciones, a un ritmo lento concreto (~6/min) elegido para maximizar la oscilación de la frecuencia cardíaca. Ambas calman; la ligada a la VFC es la de resonancia.',
+        a: 'No. La respiración en caja usa cuentas iguales con retenciones (p. ej. 4-4-4-4). La respiración de resonancia es suave y continua, sin retenciones, a un ritmo lento concreto (~6/min) elegido para maximizar la oscilación de la frecuencia cardíaca. Ambas calman; la ligada a la HRV es la de resonancia.',
       },
     ],
     links: {
       howLink: { path: '/how-it-works', label: 'cómo calcula ONDA la coherencia' },
       researchLink: { path: '/research', label: 'página de evidencia' },
       productLink: { path: '/product', label: 'datos del producto' },
-      hrvLink: { path: '/hrv-biofeedback', label: 'biofeedback de VFC' },
+      hrvLink: { path: '/hrv-biofeedback', label: 'biofeedback de HRV' },
     },
   },
 }

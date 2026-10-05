@@ -48,7 +48,7 @@
       },
       {
         "q": "Wat is een goede HRV?",
-        "a": "Er bestaat niet één goede HRV-waarde: ze daalt met de leeftijd en verschilt per apparaat. De mediane nachtelijke RMSSD is ongeveer 58 ms in je twintiger jaren en rond de 30 ms in je zestiger jaren, met een brede gezonde spreiding. Een goede HRV is er een die stabiel blijft of stijgt ten opzichte van je eigen basislijn.",
+        "a": "Er bestaat niet één goede waarde van de hartslagvariabiliteit (HRV): ze daalt met de leeftijd en verschilt per apparaat. De mediane nachtelijke RMSSD is ongeveer 58 ms in je twintiger jaren en rond de 30 ms in je zestiger jaren, met een brede gezonde spreiding. Een goede HRV is er een die stabiel blijft of stijgt ten opzichte van je eigen basislijn.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",

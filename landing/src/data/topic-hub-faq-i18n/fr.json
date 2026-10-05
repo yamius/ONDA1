@@ -47,40 +47,40 @@
         ]
       },
       {
-        "q": "Qu'est-ce qu'une bonne VFC ?",
-        "a": "Il n'existe pas de « bonne » valeur unique de VFC : elle diminue avec l'âge et varie selon l'appareil. Le RMSSD nocturne médian est d'environ 58 ms à 20–29 ans et d'environ 30 ms à 60–69 ans, avec une large plage de valeurs saines. Une bonne VFC est une VFC stable ou en hausse par rapport à votre propre référence.",
+        "q": "Qu'est-ce qu'une bonne HRV ?",
+        "a": "Il n'existe pas de « bonne » valeur unique de variabilité de la fréquence cardiaque (HRV) : elle diminue avec l'âge et varie selon l'appareil. Le RMSSD nocturne médian est d'environ 58 ms à 20–29 ans et d'environ 30 ms à 60–69 ans, avec une large plage de valeurs saines. Une bonne HRV est une HRV stable ou en hausse par rapport à votre propre référence.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",
-            "label": "VFC normale selon l'âge"
+            "label": "HRV normale selon l'âge"
           },
           {
             "href": "/articles/hrv-questions-answered",
-            "label": "52 questions sur la VFC, avec réponses"
+            "label": "52 questions sur la HRV, avec réponses"
           },
           {
             "href": "/tools/hrv",
-            "label": "Calculateur de VFC"
+            "label": "Calculateur de HRV"
           }
         ]
       },
       {
         "q": "Pourquoi ma fréquence cardiaque au repos est-elle plus élevée que d'habitude ?",
-        "a": "Les causes fréquentes d'une hausse temporaire sont l'alcool, une nuit courte ou agitée, une période d'entraînement intense, une maladie qui couve, la déshydratation, la chaleur et le stress. Elle s'accompagne généralement d'une VFC plus basse. Si elle redescend en quelques jours, c'était une réaction normale ; si elle reste élevée, commencez par regarder votre récupération.",
+        "a": "Les causes fréquentes d'une hausse temporaire sont l'alcool, une nuit courte ou agitée, une période d'entraînement intense, une maladie qui couve, la déshydratation, la chaleur et le stress. Elle s'accompagne généralement d'une HRV plus basse. Si elle redescend en quelques jours, c'était une réaction normale ; si elle reste élevée, commencez par regarder votre récupération.",
         "links": [
           {
             "href": "/articles/what-to-do-after-low-hrv-reading",
-            "label": "Que faire après une VFC basse"
+            "label": "Que faire après une HRV basse"
           },
           {
             "href": "/articles/overtraining-hrv-resting-heart-rate",
-            "label": "Surentraînement, VFC et fréquence cardiaque au repos"
+            "label": "Surentraînement, HRV et fréquence cardiaque au repos"
           }
         ]
       },
       {
         "q": "Combien de jours de données faut-il pour connaître sa vraie référence ?",
-        "a": "Environ deux semaines de mesures régulières donnent une plage exploitable pour la fréquence cardiaque au repos et la VFC ; un mois, c'est mieux. D'ici là, l'essentiel de ce que vous voyez correspond aux fluctuations ordinaires d'un jour à l'autre.",
+        "a": "Environ deux semaines de mesures régulières donnent une plage exploitable pour la fréquence cardiaque au repos et la HRV ; un mois, c'est mieux. D'ici là, l'essentiel de ce que vous voyez correspond aux fluctuations ordinaires d'un jour à l'autre.",
         "links": [
           {
             "href": "/articles/your-baseline-knows-first",

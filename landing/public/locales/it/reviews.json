@@ -127,15 +127,15 @@
       ]
     },
     "apple-watch-series-12": {
-      "verdict": "Il miglior Apple Watch di sempre per l'HRV: campionamento 24 volte più frequente e distinzione tra Recovery HRV e Overall HRV, ma resta prima di tutto uno smartwatch e la batteria continua a competere con l'uso notturno.",
+      "verdict": "Il miglior Apple Watch di sempre per la variabilità della frequenza cardiaca (HRV): campionamento 24 volte più frequente e distinzione tra Recovery HRV e Overall HRV, ma resta prima di tutto uno smartwatch e la batteria continua a competere con l'uso notturno.",
       "productType": "Smartwatch"
     },
     "whoop-5-0": {
-      "verdict": "Un coach del recupero al polso: HRV notturna continua e analisi precise dello sforzo, vincolate a un abbonamento perpetuo.",
+      "verdict": "Un coach del recupero al polso: variabilità della frequenza cardiaca (HRV) notturna continua e analisi precise dello sforzo, vincolate a un abbonamento perpetuo.",
       "productType": "Fascia senza schermo"
     },
     "ultrahuman-m1": {
-      "verdict": "La migliore scelta di ecosistema — i dati sul glucosio combinati con HRV, sonno e recupero dell’anello Ultrahuman in un’unica app.",
+      "verdict": "La migliore scelta di ecosistema — i dati sul glucosio combinati con variabilità della frequenza cardiaca (HRV), sonno e recupero dell’anello Ultrahuman in un’unica app.",
       "summary": "Ultrahuman M1 è il ramo CGM della piattaforma Ultrahuman — la stessa app che gestisce gli anelli Ultrahuman. Fuori dagli Stati Uniti usa i sensori Abbott FreeStyle Libre; negli Stati Uniti Ultrahuman ha lanciato M2 Live il 18 giugno 2026, basato sul sensore Lingo di Abbott da banco, senza prescrizione. Il punto di forza è l’integrazione: pasti, curve glicemiche, sonno, HRV, movimento e recupero sulla stessa linea temporale. Ottimo per chi possiede un anello Ultrahuman; più debole come CGM a sé stante.",
       "description": "Recensione Ultrahuman M1 (2026): il CGM di ecosistema — glucosio letto con HRV, sonno e recupero. Negli USA è M2 Live con sensore Lingo, da 99 $/mese.",
       "bestFor": "Ideale per chi è già nell’ecosistema Ultrahuman e vuole il glucosio combinato con HRV e sonno.",
@@ -190,7 +190,7 @@
       ]
     },
     "oura-ring-4": {
-      "verdict": "Ancora un eccellente tracker notturno di HRV e sonno — ora un gradino sotto l’Oura Ring 5, più sottile e con sensori aggiornati, ma con lo stesso nuovo software e spesso più conveniente quando è scontato. L’abbonamento obbligatorio resta.",
+      "verdict": "Ancora un eccellente tracker notturno di variabilità della frequenza cardiaca (HRV) e sonno — ora un gradino sotto l’Oura Ring 5, più sottile e con sensori aggiornati, ma con lo stesso nuovo software e spesso più conveniente quando è scontato. L’abbonamento obbligatorio resta.",
       "summary": "L’Oura Ring 4 era il dispositivo da battere per la variabilità della frequenza cardiaca notturna e il sonno, ed è ancora ai vertici — ora sostituito dall’Oura Ring 5, più sottile e con sensori riprogettati. Punto cruciale: le nuove funzioni software arrivano anche sul Ring 4, che mantiene un formato piccolo da indossare 24 ore su 24, una rilevazione delle fasi del sonno ben validata e un’HRV notturna vicina all’ECG a 50 $ in meno. Il limite resta lo stesso: un abbonamento ricorrente, senza il quale l’app mostra solo dati di base.",
       "description": "Recensione Oura Ring 4 (2026): ancora top per HRV notturna e sonno, da 349 $ (50 $ meno del Ring 5) — ma i dati completi richiedono 5,99 $/mese.",
       "bestFor": "Ideale per dati notturni accurati su HRV e sonno al prezzo Oura più basso.",
@@ -246,7 +246,7 @@
       ]
     },
     "garmin-venu-4": {
-      "verdict": "Un tuttofare capace e senza abbonamento, con l’autonomia per monitorare l’HRV per tutta la notte — il migliore in nulla, valido in tutto.",
+      "verdict": "Un tuttofare capace e senza abbonamento, con l’autonomia per monitorare la variabilità della frequenza cardiaca (HRV) per tutta la notte — il migliore in nulla, valido in tutto.",
       "productType": "Smartwatch"
     },
     "muse-s-athena": {
@@ -322,7 +322,7 @@
       "productType": "Caschetto EEG ibrido ricerca-consumer (5 canali)"
     },
     "sens-ai": {
-      "verdict": "Il caschetto multimodale più ambizioso — EEG più fotobiomodulazione più HRV, a un prezzo premium che richiede un vero bisogno.",
+      "verdict": "Il caschetto multimodale più ambizioso — EEG più fotobiomodulazione più variabilità della frequenza cardiaca (HRV), a un prezzo premium che richiede un vero bisogno.",
       "productType": "Caschetto multimodale (EEG + fotobiomodulazione + HRV)"
     },
     "myndlift": {
@@ -615,7 +615,7 @@
         "biofeedback": "Nessuna integrazione HRV. Monitoraggio di base delle serie consecutive.",
         "value": "Modello quasi gratuito con sblocco premium una tantum di circa 10 $. Il miglior rapporto qualità-prezzo nella respirazione personalizzabile."
       },
-      "content": "## Dove eccelle\n\nPrana Breath è il riferimento della respirazione a schemi personalizzabili — parametri molto dettagliati, app di lunga data pensata prima per Android, modello quasi gratuito con sblocco premium una tantum da 10 $. Il motore degli schemi permette di costruire qualsiasi ritmo respiratorio.\n\n## Quali sono i difetti di Prana Breath?\n\nI principali difetti di Prana Breath sono la cura dell’interfaccia e i contenuti curati. Prana Breath sembra datata accanto a Breathwrk o Othership; niente produzione di qualità cinematografica, niente percorsi guidati, niente testi scientifici curati. Il motore degli schemi è potente ma presuppone che l’utente sappia già quali tempi usare.\n\n## Chi dovrebbe scegliere Prana Breath?\n\nScegli Prana Breath per una pratica economica e personalizzabile degli schemi respiratori — soprattutto su Android, dove le opzioni premium sono più deboli. Per una libreria strutturata e curata, Breathwrk. Per un ingresso gratuito su iOS, iBreathe. Per il biofeedback HRV, Inhale.\n\n---\n\n## Letture di approfondimento\n\n- [Medicina elettrica e neuromodulazione](/articles/electric-medicine-neuromodulation)\n- [Stimolazione acustica del sonno in fase](/articles/phase-locked-acoustic-sleep)\n",
+      "content": "## Dove eccelle\n\nPrana Breath è il riferimento della respirazione a schemi personalizzabili — parametri molto dettagliati, app di lunga data pensata prima per Android, modello quasi gratuito con sblocco premium una tantum da 10 $. Il motore degli schemi permette di costruire qualsiasi ritmo respiratorio.\n\n## Quali sono i difetti di Prana Breath?\n\nI principali difetti di Prana Breath sono la cura dell’interfaccia e i contenuti curati. Prana Breath sembra datata accanto a Breathwrk o Othership; niente produzione di qualità cinematografica, niente percorsi guidati, niente testi scientifici curati. Il motore degli schemi è potente ma presuppone che l’utente sappia già quali tempi usare.\n\n## Chi dovrebbe scegliere Prana Breath?\n\nScegli Prana Breath per una pratica economica e personalizzabile degli schemi respiratori — soprattutto su Android, dove le opzioni premium sono più deboli. Per una libreria strutturata e curata, Breathwrk. Per un ingresso gratuito su iOS, iBreathe. Per il biofeedback della variabilità della frequenza cardiaca (HRV), Inhale.\n\n---\n\n## Letture di approfondimento\n\n- [Medicina elettrica e neuromodulazione](/articles/electric-medicine-neuromodulation)\n- [Stimolazione acustica del sonno in fase](/articles/phase-locked-acoustic-sleep)\n",
       "faq": [
         {
           "q": "Cosa fa Prana Breath?",
@@ -658,7 +658,7 @@
         "subscription": "Nessun abbonamento richiesto.",
         "value": "719 $ in offerta (799 $ di listino) per lato del letto a ottobre 2026 — meno della metà del Chilipad 2.0 (da 1.599 $)."
       },
-      "content": "## Il nostro verdetto in breve\n\nIl Chilipad Cube è il modo più economico per provare il sonno raffreddato ad acqua. A ottobre 2026 Sleepme lo vende ancora a 719 $ per lato del letto (799 $ di listino), ben al di sotto dei 1.599 $+ del nuovo Chilipad 2.0. Rinunci all’app, alla programmazione e a una parte della capacità di raffreddamento: il Cube si comanda con un semplice telecomando e scende a 60°F. Se di notte senti caldo e vuoi solo un letto più fresco senza abbonamento, ha un buon rapporto qualità-prezzo. Se vuoi automazione o dati sul sonno, guarda più in alto.\n\n## Come funziona il raffreddamento ad acqua?\n\nUna piccola unità sul comodino raffredda o riscalda l’acqua e la pompa attraverso sottili tubi in un coprimaterasso posato sopra il tuo materasso. L’acqua porta via il calore dal corpo (o lo aggiunge), così la superficie del letto resta alla temperatura impostata, senza soffiarti aria addosso. La temperatura corporea interna scende naturalmente quando ti addormenti, e un letto fresco favorisce questo processo; è l’idea alla base di ogni prodotto di questa categoria. Il coprimaterasso non contiene fili, solo acqua, e la fodera è lavabile in lavatrice.\n\n## Chilipad Cube vs Chilipad 2.0 vs Eight Sleep Pod 6\n\n| | Chilipad Cube | Chilipad 2.0 | Eight Sleep Pod 6 |\n|---|---|---|---|\n| Prezzo | 719 $ in offerta / 799 $ per lato | da 1.599 $ (queen circa 1.699 $) | Solo da 1.999 $; Queen doppio 2.899 $ |\n| Impostazione più fredda | 60°F | 55°F | vedi la nostra recensione |\n| Comando | telecomando fisico, nessuna app | app + telecomando da comodino, programmazione | app con regolazione automatica |\n| Monitoraggio del sonno | nessuno | nessuno | frequenza cardiaca, frequenza respiratoria, HRV, fasi del sonno |\n| Abbonamento | nessuno | nessuno | abbonamento Autopilot da 199 $/anno |\n\nI prezzi provengono dalla nostra [recensione di Chilipad 2.0 / Dock Pro](/reviews/chilipad-dock-pro) e dalla [recensione di Eight Sleep Pod 6](/reviews/eight-sleep-pod-6). Il Dock Pro è ora in svendita come «Chilipad 1.0» al 30% di sconto fino a esaurimento scorte. Tutte le opzioni sono in classifica tra [i migliori sistemi smart di climatizzazione del sonno](/reviews/compare/best-smart-sleep-climate-2026).\n\n## Rumore e manutenzione\n\nCome ogni sistema raffreddato ad acqua, il Cube ha una pompa e una ventola nell’unità da comodino, quindi aspettati un leggero ronzio; tieni l’unità sul pavimento e lontano dalla testa se sei sensibile ai rumori. La manutenzione è il compromesso dei sistemi ad acqua: rabbocchi il serbatoio e pulisci periodicamente il sistema secondo le istruzioni di Sleepme, per evitare depositi nei tubi. Il coprimaterasso può andare in lavatrice e asciugatrice.\n\n## Chi dovrebbe comprare il Chilipad Cube?\n\nCompra il Cube se di notte senti caldo, vuoi il prezzo più basso per il raffreddamento ad acqua e ti va bene un telecomando invece di un’app. Le coppie possono comprare un’unità per lato e regolarle separatamente. Scegli il [Chilipad 2.0](/reviews/chilipad-dock-pro) se vuoi impostazioni più fredde e la programmazione. Scegli l’[Eight Sleep Pod 6](/reviews/eight-sleep-pod-6) se vuoi cambi di temperatura automatici e il monitoraggio del sonno e accetti un abbonamento. Per il raffreddamento ad aria con un budget simile, vedi [BedJet 3](/reviews/bedjet-3).\n\n---\n\n## Letture di approfondimento\n\nLa biologia del perché la regolazione della temperatura del letto influenza la profondità del sonno e il recupero.\n\n- [Sincronia ancestrale e ancore circadiane](/articles/ancestral-sync-circadian-anchors) — perché il raffreddamento notturno corrisponde alla condizione ancestrale\n- [Idraulica neurale: il flusso del liquor](/articles/neural-hydraulics-csf-flow) — la circolazione del liquido cerebrospinale durante il sonno — cosa favorisce il raffreddamento\n- [Reset circadiano: padroneggiare la luce](/articles/circadian-reset-mastering-light) — perché la regolazione della temperatura del letto va abbinata ai tempi della luce per un sonno profondo\n",
+      "content": "## Il nostro verdetto in breve\n\nIl Chilipad Cube è il modo più economico per provare il sonno raffreddato ad acqua. A ottobre 2026 Sleepme lo vende ancora a 719 $ per lato del letto (799 $ di listino), ben al di sotto dei 1.599 $+ del nuovo Chilipad 2.0. Rinunci all’app, alla programmazione e a una parte della capacità di raffreddamento: il Cube si comanda con un semplice telecomando e scende a 60°F. Se di notte senti caldo e vuoi solo un letto più fresco senza abbonamento, ha un buon rapporto qualità-prezzo. Se vuoi automazione o dati sul sonno, guarda più in alto.\n\n## Come funziona il raffreddamento ad acqua?\n\nUna piccola unità sul comodino raffredda o riscalda l’acqua e la pompa attraverso sottili tubi in un coprimaterasso posato sopra il tuo materasso. L’acqua porta via il calore dal corpo (o lo aggiunge), così la superficie del letto resta alla temperatura impostata, senza soffiarti aria addosso. La temperatura corporea interna scende naturalmente quando ti addormenti, e un letto fresco favorisce questo processo; è l’idea alla base di ogni prodotto di questa categoria. Il coprimaterasso non contiene fili, solo acqua, e la fodera è lavabile in lavatrice.\n\n## Chilipad Cube vs Chilipad 2.0 vs Eight Sleep Pod 6\n\n| | Chilipad Cube | Chilipad 2.0 | Eight Sleep Pod 6 |\n|---|---|---|---|\n| Prezzo | 719 $ in offerta / 799 $ per lato | da 1.599 $ (queen circa 1.699 $) | Solo da 1.999 $; Queen doppio 2.899 $ |\n| Impostazione più fredda | 60°F | 55°F | vedi la nostra recensione |\n| Comando | telecomando fisico, nessuna app | app + telecomando da comodino, programmazione | app con regolazione automatica |\n| Monitoraggio del sonno | nessuno | nessuno | frequenza cardiaca, frequenza respiratoria, variabilità della frequenza cardiaca (HRV), fasi del sonno |\n| Abbonamento | nessuno | nessuno | abbonamento Autopilot da 199 $/anno |\n\nI prezzi provengono dalla nostra [recensione di Chilipad 2.0 / Dock Pro](/reviews/chilipad-dock-pro) e dalla [recensione di Eight Sleep Pod 6](/reviews/eight-sleep-pod-6). Il Dock Pro è ora in svendita come «Chilipad 1.0» al 30% di sconto fino a esaurimento scorte. Tutte le opzioni sono in classifica tra [i migliori sistemi smart di climatizzazione del sonno](/reviews/compare/best-smart-sleep-climate-2026).\n\n## Rumore e manutenzione\n\nCome ogni sistema raffreddato ad acqua, il Cube ha una pompa e una ventola nell’unità da comodino, quindi aspettati un leggero ronzio; tieni l’unità sul pavimento e lontano dalla testa se sei sensibile ai rumori. La manutenzione è il compromesso dei sistemi ad acqua: rabbocchi il serbatoio e pulisci periodicamente il sistema secondo le istruzioni di Sleepme, per evitare depositi nei tubi. Il coprimaterasso può andare in lavatrice e asciugatrice.\n\n## Chi dovrebbe comprare il Chilipad Cube?\n\nCompra il Cube se di notte senti caldo, vuoi il prezzo più basso per il raffreddamento ad acqua e ti va bene un telecomando invece di un’app. Le coppie possono comprare un’unità per lato e regolarle separatamente. Scegli il [Chilipad 2.0](/reviews/chilipad-dock-pro) se vuoi impostazioni più fredde e la programmazione. Scegli l’[Eight Sleep Pod 6](/reviews/eight-sleep-pod-6) se vuoi cambi di temperatura automatici e il monitoraggio del sonno e accetti un abbonamento. Per il raffreddamento ad aria con un budget simile, vedi [BedJet 3](/reviews/bedjet-3).\n\n---\n\n## Letture di approfondimento\n\nLa biologia del perché la regolazione della temperatura del letto influenza la profondità del sonno e il recupero.\n\n- [Sincronia ancestrale e ancore circadiane](/articles/ancestral-sync-circadian-anchors) — perché il raffreddamento notturno corrisponde alla condizione ancestrale\n- [Idraulica neurale: il flusso del liquor](/articles/neural-hydraulics-csf-flow) — la circolazione del liquido cerebrospinale durante il sonno — cosa favorisce il raffreddamento\n- [Reset circadiano: padroneggiare la luce](/articles/circadian-reset-mastering-light) — perché la regolazione della temperatura del letto va abbinata ai tempi della luce per un sonno profondo\n",
       "faq": [
         {
           "q": "Quanto costa il Chilipad Cube?",
@@ -830,7 +830,7 @@
     },
     "ultrahuman-ring-air": {
       "verdict": "Un anello leggerissimo e senza abbonamento, con un ottimo monitoraggio del sonno — penalizzato da numerose segnalazioni di batterie che si guastano nel giro di pochi mesi e ora vietato alla vendita negli Stati Uniti. Il successore di Ultrahuman è il Ring Pro.",
-      "summary": "L’Ultrahuman Ring Air fa bene le cose fondamentali: leggero, senza abbonamento, HRV continua e ottimo monitoraggio del sonno. Ma è difficile consigliarlo senza riserve: per tutto il 2026 sono state ampiamente segnalate batterie che si guastano nel giro di pochi mesi e dal 21 ottobre 2025 non può più essere importato né venduto nuovo negli Stati Uniti.",
+      "summary": "L’Ultrahuman Ring Air fa bene le cose fondamentali: leggero, senza abbonamento, variabilità della frequenza cardiaca (HRV) continua e ottimo monitoraggio del sonno. Ma è difficile consigliarlo senza riserve: per tutto il 2026 sono state ampiamente segnalate batterie che si guastano nel giro di pochi mesi e dal 21 ottobre 2025 non può più essere importato né venduto nuovo negli Stati Uniti.",
       "description": "Recensione Ultrahuman Ring Air (2026): leggero, senza abbonamento, buon sonno — ma vietato negli USA da ott. 2025 e con problemi di batteria.",
       "bestFor": "Ideale per chi vive fuori dagli Stati Uniti e vuole un anello leggerissimo e senza abbonamento — accettando il rischio legato all’affidabilità della batteria.",
       "testNote": "Valutazione basata sulle evidenze — punteggio ricavato da specifiche del produttore, recensioni indipendenti del 2026 e letteratura di validazione pubblicata. Non testato direttamente da ONDA.",
@@ -1129,7 +1129,7 @@
       "productType": "tVNS cervicale consumer (portatile)"
     },
     "apollo-neuro": {
-      "verdict": "Il dispositivo più indossabile della categoria — vibrotattile, non elettrico, con evidenze cliniche crescenti su HRV e recupero.",
+      "verdict": "Il dispositivo più indossabile della categoria — vibrotattile, non elettrico, con evidenze cliniche crescenti su variabilità della frequenza cardiaca (HRV) e recupero.",
       "productType": "Dispositivo indossabile vibrotattile, commercializzato come modulatore vagale"
     },
     "vagustim": {
@@ -1256,7 +1256,7 @@
       "productType": "App di breathwork somatico / di rilascio emotivo"
     },
     "inhale-by-aero-health": {
-      "verdict": "La migliore app di respirazione guidata dall’HRV — misura l’HRV con l’Apple Watch prima e dopo la sessione e adatta le raccomandazioni. Libreria ridotta ma un ciclo di biofeedback unico.",
+      "verdict": "La migliore app di respirazione guidata dalla variabilità della frequenza cardiaca (HRV) — misura l’HRV con l’Apple Watch prima e dopo la sessione e adatta le raccomandazioni. Libreria ridotta ma un ciclo di biofeedback unico.",
       "productType": "App di respirazione con biofeedback basato sull’HRV"
     },
     "ibreathe": {
@@ -1268,7 +1268,7 @@
       "productType": "App gratuita di respirazione diaframmatica creata dal DoD per stress e PTSD"
     },
     "polar-h10": {
-      "verdict": "Il dispositivo HRV più preciso che puoi comprare: uno strumento di riferimento, non un wearable da tutto il giorno.",
+      "verdict": "Il dispositivo per la variabilità della frequenza cardiaca (HRV) più preciso che puoi comprare: uno strumento di riferimento, non un wearable da tutto il giorno.",
       "productType": "Fascia toracica ECG"
     },
     "calm": {
@@ -1280,7 +1280,7 @@
       "productType": "App di meditazione"
     },
     "amazfit-helio-ring": {
-      "verdict": "Un anello davvero economico e senza abbonamento, con un monitoraggio di sonno e HRV discreto — ma solo tre misure e una batteria breve nell'uso reale lo lasciano una scelta economica, non un rivale di Oura.",
+      "verdict": "Un anello davvero economico e senza abbonamento, con un monitoraggio di sonno e variabilità della frequenza cardiaca (HRV) discreto — ma solo tre misure e una batteria breve nell'uso reale lo lasciano una scelta economica, non un rivale di Oura.",
       "productType": "Anello smart"
     },
     "ringconn-gen-2": {
@@ -1288,11 +1288,11 @@
       "productType": "Anello smart"
     },
     "apple-watch-series-11": {
-      "verdict": "Uno smartwatch completo eccellente, ma uno strumento HRV occasionale — misura a campione invece di monitorare.",
+      "verdict": "Uno smartwatch completo eccellente, ma uno strumento per la variabilità della frequenza cardiaca (HRV) occasionale — misura a campione invece di monitorare.",
       "productType": "Smartwatch"
     },
     "fitbit-charge-6": {
-      "verdict": "Il punto d'ingresso economico al monitoraggio dell'HRV — una fascia economica e affidabile, ma uno strumento di recupero basilare con un insistente invito a Premium.",
+      "verdict": "Il punto d'ingresso economico al monitoraggio della variabilità della frequenza cardiaca (HRV) — una fascia economica e affidabile, ma uno strumento di recupero basilare con un insistente invito a Premium.",
       "productType": "Fascia fitness"
     },
     "qi-coil": {

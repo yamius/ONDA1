@@ -234,14 +234,14 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
   },
 
   es: {
-    metaTitle: 'Biofeedback de VFC en Apple Watch: cómo funciona | ONDA Life',
+    metaTitle: 'Biofeedback de HRV en Apple Watch: cómo funciona | ONDA Life',
     metaDescription:
-      'Biofeedback de VFC en Apple Watch: qué mide el reloj, por qué registra la VFC en lugar de dar feedback en vivo por sí solo, qué tan preciso es y cómo ONDA lo convierte en un bucle de coherencia en tiempo real.',
-    articleHeadline: 'Biofeedback de VFC en Apple Watch: cómo funciona',
-    kicker: '[ APPLE WATCH · BIOFEEDBACK DE VFC ]',
-    h1: 'Biofeedback de VFC en Apple Watch',
+      'Biofeedback de HRV en Apple Watch: qué mide el reloj, por qué registra la HRV en lugar de dar feedback en vivo por sí solo, qué tan preciso es y cómo ONDA lo convierte en un bucle de coherencia en tiempo real.',
+    articleHeadline: 'Biofeedback de HRV en Apple Watch: cómo funciona',
+    kicker: '[ APPLE WATCH · BIOFEEDBACK DE HRV ]',
+    h1: 'Biofeedback de HRV en Apple Watch',
     heroLead:
-      '**El Apple Watch mide la frecuencia cardíaca y la VFC — pero por sí solo registra la VFC como lecturas periódicas en lugar de darte feedback en tiempo real mientras respiras.** El reloj es una excelente fuente de datos cardíacos; convertir eso en un bucle de biofeedback de VFC en vivo, con una puntuación de coherencia contra la que entrenas, es lo que añade una app como ONDA.',
+      '**El Apple Watch mide la frecuencia cardíaca y la HRV — pero por sí solo registra la HRV como lecturas periódicas en lugar de darte feedback en tiempo real mientras respiras.** El reloj es una excelente fuente de datos cardíacos; convertir eso en un bucle de biofeedback de HRV en vivo, con una puntuación de coherencia contra la que entrenas, es lo que añade una app como ONDA.',
     ctaLabel: 'Consigue ONDA en la App Store →',
     toc: [
       { id: 'measures', label: 'Qué mide el reloj' },
@@ -257,35 +257,35 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ QUÉ MIDE ]',
         title: 'Qué mide realmente el Apple Watch',
         paras: [
-          'El Apple Watch usa un sensor óptico de frecuencia cardíaca para leer tu pulso de forma continua, y registra valores de variabilidad de la frecuencia cardíaca (VFC) en Apple Salud. También tiene funciones separadas y aprobadas por Apple de ECG y ritmo irregular. Para el biofeedback de VFC, lo relevante son los datos cardíacos continuos — la señal latido a latido que una app puede leer para calcular la VFC en vivo.',
+          'El Apple Watch usa un sensor óptico de frecuencia cardíaca para leer tu pulso de forma continua, y registra valores de variabilidad de la frecuencia cardíaca (HRV) en Apple Salud. También tiene funciones separadas y aprobadas por Apple de ECG y ritmo irregular. Para el biofeedback de HRV, lo relevante son los datos cardíacos continuos — la señal latido a latido que una app puede leer para calcular la HRV en vivo.',
         ],
       },
       {
         id: 'realtime',
         kicker: '[ ¿TIEMPO REAL? ]',
-        title: '¿Da el Apple Watch biofeedback de VFC en tiempo real?',
+        title: '¿Da el Apple Watch biofeedback de HRV en tiempo real?',
         paras: [
-          'Por sí solo, no. La app Salud de Apple muestra la VFC como lecturas ocasionales — útiles para seguir tendencias, pero no un número en vivo continuo ni un bucle de biofeedback. El biofeedback de VFC en tiempo real es ver cómo tu ritmo responde *mientras respiras* y ajustar. Eso requiere una app que lea los datos cardíacos del reloj en vivo y los convierta en feedback — exactamente lo que hace ONDA con su {{coherenceLink}} en vivo.',
+          'Por sí solo, no. La app Salud de Apple muestra la HRV como lecturas ocasionales — útiles para seguir tendencias, pero no un número en vivo continuo ni un bucle de biofeedback. El biofeedback de HRV en tiempo real es ver cómo tu ritmo responde *mientras respiras* y ajustar. Eso requiere una app que lea los datos cardíacos del reloj en vivo y los convierta en feedback — exactamente lo que hace ONDA con su {{coherenceLink}} en vivo.',
         ],
       },
       {
         id: 'accuracy',
         kicker: '[ PRECISIÓN ]',
-        title: '¿Qué tan precisa es la VFC del Apple Watch?',
+        title: '¿Qué tan precisa es la HRV del Apple Watch?',
         paras: [
-          'El sensor óptico del reloj da una buena VFC para el seguimiento diario y el biofeedback, y es adecuado para lecturas en reposo. No es de grado de referencia como una banda de pecho con ECG — el movimiento y un ajuste flojo añaden ruido — pero para entrenar tu respiración y vigilar tu tendencia de VFC en reposo es más que capaz. A fecha de 2026, Apple ha reducido su desventaja de precisión en VFC frente a sus rivales, aunque un anillo nocturno bien ajustado y quieto o una banda de pecho siguen liderando en precisión pura latido a latido. Distintos dispositivos dan números de VFC distintos, así que compara tu propia tendencia, no valores absolutos entre dispositivos.',
+          'El sensor óptico del reloj da una buena HRV para el seguimiento diario y el biofeedback, y es adecuado para lecturas en reposo. No es de grado de referencia como una banda de pecho con ECG — el movimiento y un ajuste flojo añaden ruido — pero para entrenar tu respiración y vigilar tu tendencia de HRV en reposo es más que capaz. A fecha de 2026, Apple ha reducido su desventaja de precisión en HRV frente a sus rivales, aunque un anillo nocturno bien ajustado y quieto o una banda de pecho siguen liderando en precisión pura latido a latido. Distintos dispositivos dan números de HRV distintos, así que compara tu propia tendencia, no valores absolutos entre dispositivos.',
         ],
       },
       {
         id: 'how',
         kicker: '[ CÓMO HACERLO ]',
-        title: 'Cómo hacer biofeedback de VFC con tu Apple Watch',
+        title: 'Cómo hacer biofeedback de HRV con tu Apple Watch',
         ol: [
-          'Instala una app de biofeedback de VFC que lea los datos cardíacos del Apple Watch en vivo — por ejemplo ONDA.',
+          'Instala una app de biofeedback de HRV que lea los datos cardíacos del Apple Watch en vivo — por ejemplo ONDA.',
           'Siéntate cómodamente e inicia una sesión; la app lee tu latido desde el reloj.',
           'Respira despacio a tu ritmo de resonancia (~6 respiraciones por minuto) siguiendo el marcapasos.',
           'Observa cómo la puntuación de coherencia en vivo sube al suavizarse tu ritmo cardíaco — ese es el bucle de feedback.',
-          'A lo largo de las semanas, sigue tu tendencia de VFC en reposo como medida del progreso.',
+          'A lo largo de las semanas, sigue tu tendencia de HRV en reposo como medida del progreso.',
         ],
         paras: ['Mira {{howLink}} y {{resonanceLink}}.'],
       },
@@ -294,38 +294,38 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ RELOJ VS CÁMARA ]',
         title: 'Apple Watch vs cámara del iPhone',
         paras: [
-          'No necesitas el reloj estrictamente. ONDA puede leer tu pulso con la cámara del iPhone (PPG) para una lectura de pulso y respiración en reposo; la VFC requiere un Apple Watch. El Apple Watch añade datos cardíacos continuos y un feedback en vivo más suave, y es la mejor opción si tienes uno — pero la cámara es una alternativa genuina sin hardware extra. Mira {{productLink}}.',
+          'No necesitas el reloj estrictamente. ONDA puede leer tu pulso con la cámara del iPhone (PPG) para una lectura de pulso y respiración en reposo; la HRV requiere un Apple Watch. El Apple Watch añade datos cardíacos continuos y un feedback en vivo más suave, y es la mejor opción si tienes uno — pero la cámara es una alternativa genuina sin hardware extra. Mira {{productLink}}.',
         ],
       },
     ],
     faqHeading: 'Preguntas frecuentes',
     faq: [
       {
-        q: '¿Puede el Apple Watch hacer biofeedback de VFC?',
-        a: 'El Apple Watch mide la frecuencia cardíaca y la VFC, pero por sí solo registra la VFC como lecturas periódicas en lugar de dar feedback en tiempo real mientras respiras. El reloj aporta los datos cardíacos; una app como ONDA los convierte en un bucle de biofeedback de VFC en vivo con una puntuación de coherencia contra la que entrenas.',
+        q: '¿Puede el Apple Watch hacer biofeedback de HRV?',
+        a: 'El Apple Watch mide la frecuencia cardíaca y la HRV, pero por sí solo registra la HRV como lecturas periódicas en lugar de dar feedback en tiempo real mientras respiras. El reloj aporta los datos cardíacos; una app como ONDA los convierte en un bucle de biofeedback de HRV en vivo con una puntuación de coherencia contra la que entrenas.',
       },
       {
-        q: '¿Mide el Apple Watch la VFC en tiempo real?',
-        a: 'El reloj muestrea la frecuencia cardíaca de forma continua y registra valores de VFC, pero la propia app Salud de Apple muestra la VFC como lecturas ocasionales, no un número en vivo continuo. Para feedback en tiempo real durante una sesión de respiración necesitas una app que lea los datos cardíacos del reloj en vivo — como ONDA.',
+        q: '¿Mide el Apple Watch la HRV en tiempo real?',
+        a: 'El reloj muestrea la frecuencia cardíaca de forma continua y registra valores de HRV, pero la propia app Salud de Apple muestra la HRV como lecturas ocasionales, no un número en vivo continuo. Para feedback en tiempo real durante una sesión de respiración necesitas una app que lea los datos cardíacos del reloj en vivo — como ONDA.',
       },
       {
-        q: '¿Qué tan precisa es la VFC del Apple Watch?',
-        a: 'El sensor óptico del Apple Watch da una buena VFC para seguir tendencias y recuperación, y es adecuado para lecturas en reposo. No es de grado de referencia como una banda de pecho con ECG, pero para el biofeedback de VFC diario y el seguimiento de tendencias es más que capaz.',
+        q: '¿Qué tan precisa es la HRV del Apple Watch?',
+        a: 'El sensor óptico del Apple Watch da una buena HRV para seguir tendencias y recuperación, y es adecuado para lecturas en reposo. No es de grado de referencia como una banda de pecho con ECG, pero para el biofeedback de HRV diario y el seguimiento de tendencias es más que capaz.',
       },
       {
-        q: '¿Necesito un Apple Watch para el biofeedback de VFC con ONDA?',
-        a: 'No. ONDA también funciona con la cámara del iPhone (fotopletismografía) para una lectura de pulso y respiración en reposo; la VFC y la puntuación de coherencia requieren un Apple Watch, que añade datos cardíacos continuos y feedback en vivo, pero no es necesario para empezar.',
+        q: '¿Necesito un Apple Watch para el biofeedback de HRV con ONDA?',
+        a: 'No. ONDA también funciona con la cámara del iPhone (fotopletismografía) para una lectura de pulso y respiración en reposo; la HRV y la puntuación de coherencia requieren un Apple Watch, que añade datos cardíacos continuos y feedback en vivo, pero no es necesario para empezar.',
       },
       {
-        q: '¿El biofeedback de VFC en Apple Watch es una herramienta médica?',
-        a: 'No. El biofeedback de VFC con el Apple Watch es una práctica de autorregulación, no un dispositivo diagnóstico o médico. Las funciones de ECG/FA del reloj son funciones separadas y aprobadas por Apple; el biofeedback de VFC va de entrenar tu respiración y tu sistema nervioso.',
+        q: '¿El biofeedback de HRV en Apple Watch es una herramienta médica?',
+        a: 'No. El biofeedback de HRV con el Apple Watch es una práctica de autorregulación, no un dispositivo diagnóstico o médico. Las funciones de ECG/FA del reloj son funciones separadas y aprobadas por Apple; el biofeedback de HRV va de entrenar tu respiración y tu sistema nervioso.',
       },
       {
         q: '¿Qué apps de biofeedback funcionan con el Apple Watch?',
-        a: 'Entre las apps que usan el pulso en vivo del Apple Watch para biofeedback de VFC o coherencia en tiempo real está ONDA — que convierte el reloj en un coach de biofeedback con puntuación de coherencia y práctica guiada — junto a opciones centradas en la medición como Elite HRV y HRV4Training. Las apps integradas de Apple (Mindfulness, Vitals) sobre todo registran, no dan feedback en vivo.',
+        a: 'Entre las apps que usan el pulso en vivo del Apple Watch para biofeedback de HRV o coherencia en tiempo real está ONDA — que convierte el reloj en un coach de biofeedback con puntuación de coherencia y práctica guiada — junto a opciones centradas en la medición como Elite HRV y HRV4Training. Las apps integradas de Apple (Mindfulness, Vitals) sobre todo registran, no dan feedback en vivo.',
       },
       {
-        q: '¿Hay una app de biofeedback de VFC en tiempo real para Apple Watch?',
+        q: '¿Hay una app de biofeedback de HRV en tiempo real para Apple Watch?',
         a: 'Sí. ONDA usa el pulso continuo del Apple Watch para mostrar cómo tu ritmo cardíaco se organiza en una puntuación de coherencia en vivo mientras respiras, así el reloj se vuelve un coach de biofeedback en lugar de un rastreador pasivo. No necesitas banda de pecho: el reloj aporta la señal que activa la puntuación de coherencia en vivo. Es una práctica de autorregulación, no un dispositivo médico.',
       },
     ],

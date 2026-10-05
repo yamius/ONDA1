@@ -1,7 +1,7 @@
 {
   "ui": {
     "h1": "Ver los datos que tu Apple Watch ya registró",
-    "intro": "Una herramienta gratuita que lee dos semanas de tu propia app Salud —pulso en reposo, variabilidad de la frecuencia cardiaca (VFC) y frecuencia respiratoria— y te muestra tu rango, no un solo número. Todo se lee en tu iPhone; las cifras nunca nos llegan.",
+    "intro": "Una herramienta gratuita que lee dos semanas de tu propia app Salud —pulso en reposo, variabilidad de la frecuencia cardiaca (HRV) y frecuencia respiratoria— y te muestra tu rango, no un solo número. Todo se lee en tu iPhone; las cifras nunca nos llegan.",
     "title": "Tus últimas dos semanas",
     "lead": "Leído de tus propios datos de Salud, en tu dispositivo. Estas cifras nunca nos llegaron.",
     "daysTemplate": "{n} DE {total} DÍAS",
@@ -42,16 +42,16 @@
     "shareText": "Mis dos semanas, leídas de mi propio reloj. La tuya tarda treinta segundos: https://onda-life.com/es/tools/baseline"
   },
   "seo": {
-    "metaTitle": "Ver datos de tu Apple Watch: VFC y pulso | ONDA Life",
-    "metaDescription": "Gratis: lee dos semanas de tu app Salud —pulso en reposo, VFC y respiración— en tu iPhone y ve tu rango. Sin subir nada, sin instalar apps.",
+    "metaTitle": "Ver datos de tu Apple Watch: HRV y pulso | ONDA Life",
+    "metaDescription": "Gratis: lee dos semanas de tu app Salud —pulso en reposo, HRV y respiración— en tu iPhone y ve tu rango. Sin subir nada, sin instalar apps.",
     "unavailable": "El enlace del atajo se está preparando y aparecerá aquí. Mientras tanto, la app ONDA muestra la misma lectura de tu Apple Watch, en vivo.",
     "unavailableButton": "Abrir la app ONDA →",
     "sections": [
       {
         "h2": "Qué muestra el Baseline",
         "paras": [
-          "Tres cifras que tu Apple Watch ya escribe en la app Salud, de los últimos 14 días: frecuencia cardiaca en reposo, variabilidad de la frecuencia cardiaca (VFC) y frecuencia respiratoria. Para cada una ves tu propio rango —el valor diario más pequeño y el más grande—, además de tu promedio y cuántos de los 14 días tienen lectura.",
-          "La frecuencia cardiaca en reposo es la cifra que el Apple Watch registra mientras estás quieto. Apple registra la VFC como SDNN, a partir de lecturas breves que el reloj toma en segundo plano de día y de noche. La frecuencia respiratoria se registra mientras duermes con el registro del sueño activado."
+          "Tres cifras que tu Apple Watch ya escribe en la app Salud, de los últimos 14 días: frecuencia cardiaca en reposo, variabilidad de la frecuencia cardiaca (HRV) y frecuencia respiratoria. Para cada una ves tu propio rango —el valor diario más pequeño y el más grande—, además de tu promedio y cuántos de los 14 días tienen lectura.",
+          "La frecuencia cardiaca en reposo es la cifra que el Apple Watch registra mientras estás quieto. Apple registra la HRV como SDNN, a partir de lecturas breves que el reloj toma en segundo plano de día y de noche. La frecuencia respiratoria se registra mientras duermes con el registro del sueño activado."
         ]
       },
       {
@@ -90,7 +90,7 @@
     "faq": [
       {
         "q": "¿Cómo veo los datos cardiacos de mi Apple Watch de las últimas dos semanas?",
-        "a": "En la app Salud de tu iPhone (Explorar → Corazón), o con esta herramienta gratuita Baseline, que lee la frecuencia cardiaca en reposo, la VFC y la frecuencia respiratoria de los últimos 14 días y muestra cada una como tu propio rango en una sola página."
+        "a": "En la app Salud de tu iPhone (Explorar → Corazón), o con esta herramienta gratuita Baseline, que lee la frecuencia cardiaca en reposo, la HRV y la frecuencia respiratoria de los últimos 14 días y muestra cada una como tu propio rango en una sola página."
       },
       {
         "q": "¿Qué muestra la herramienta Baseline?",
@@ -109,7 +109,7 @@
         "a": "Un Apple Watch da la lectura más completa. También se muestran las cifras que otros dispositivos escriben en Salud, y lo que no se registró aparece como sin datos."
       },
       {
-        "q": "¿Qué VFC registra el Apple Watch?",
+        "q": "¿Qué HRV registra el Apple Watch?",
         "a": "SDNN, en milisegundos, a partir de lecturas breves que el reloj toma en segundo plano. Oura, Whoop y Garmin usan RMSSD, así que sus cifras no son directamente comparables."
       },
       {
@@ -124,11 +124,11 @@
         "href": "/articles/what-your-apple-watch-records"
       },
       {
-        "label": "VFC del Apple Watch: dos cifras explicadas",
+        "label": "HRV del Apple Watch: dos cifras explicadas",
         "href": "/articles/apple-watch-recovery-hrv-vs-overall-hrv"
       },
       {
-        "label": "Calculadora de VFC por edad",
+        "label": "Calculadora de HRV por edad",
         "href": "/tools/hrv"
       },
       {

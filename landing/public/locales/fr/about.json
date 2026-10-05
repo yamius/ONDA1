@@ -1,7 +1,7 @@
 {
   "tag": "[ À PROPOS ]",
   "title1": "Qu’est-ce qu’ONDA Life",
-  "intro1": "ONDA Life est une application de biofeedback VFC et de respiration guidée pour l’autorégulation physiologique en temps réel et l’entraînement du système nerveux. Autour de ce cœur s’organise un système plus large de pratiques de pleine conscience et de développement personnel pour la vie réelle :",
+  "intro1": "ONDA Life est une application de biofeedback HRV et de respiration guidée pour l’autorégulation physiologique en temps réel et l’entraînement du système nerveux. Autour de ce cœur s’organise un système plus large de pratiques de pleine conscience et de développement personnel pour la vie réelle :",
   "introList": [
     "des étapes de respiration, de corps et de méditation ;",
     "des niveaux : du soutien du corps jusqu’aux états de conscience supérieurs ;",
@@ -9,7 +9,7 @@
     "une monnaie interne, l’OND, pour les pratiques et les missions."
   ],
   "intro2": "Le chemin : de la sensation corporelle — à la clarté, à l’inspiration et à la force.",
-  "disclaimer": "La partie d’ONDA fondée sur des preuves, c’est le biofeedback VFC et la respiration rythmée (en résonance) — voir la science derrière ONDA et ce qu’ONDA mesure. Le parcours ONDA — ses niveaux et son langage des états supérieurs — est un cadre expérientiel, pas une hiérarchie d’états biologiques cliniquement validés.",
+  "disclaimer": "La partie d’ONDA fondée sur des preuves, c’est le biofeedback HRV et la respiration rythmée (en résonance) — voir la science derrière ONDA et ce qu’ONDA mesure. Le parcours ONDA — ses niveaux et son langage des états supérieurs — est un cadre expérientiel, pas une hiérarchie d’états biologiques cliniquement validés.",
   "title2": "Comment ça marche",
   "how1": "ONDA Life — des parcours (vagues et niveaux) faits de simples étapes quotidiennes.",
   "howLead": "Vous apprenez à :",
@@ -49,7 +49,7 @@
   },
   "meta": {
     "title": "À propos d’ONDA Life — qui la conçoit et pourquoi",
-    "description": "Créée par Yakiv Bilenko, architecte et psychologue gestaltiste — biofeedback VFC et respiration guidée, honnête sur ce qu’elle peut et ne peut pas faire.",
-    "ogImageAlt": "ONDA Life — appli de biofeedback VFC. Respiration guidée avec retour en direct du rythme cardiaque."
+    "description": "Créée par Yakiv Bilenko, architecte et psychologue gestaltiste — biofeedback HRV et respiration guidée, honnête sur ce qu’elle peut et ne peut pas faire.",
+    "ogImageAlt": "ONDA Life — appli de biofeedback HRV. Respiration guidée avec retour en direct du rythme cardiaque."
   }
 }

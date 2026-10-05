@@ -198,13 +198,13 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
   },
 
   es: {
-    metaTitle: 'Qué mide ONDA — VFC, coherencia y qué se estima | ONDA Life',
+    metaTitle: 'Qué mide ONDA — HRV, coherencia y qué se estima | ONDA Life',
     metaDescription:
-      'Qué mide ONDA exactamente de forma directa (frecuencia cardíaca, VFC), qué deriva (coherencia, tendencia de VFC en reposo) — además de lo que no mide. Honesto y verificable.',
+      'Qué mide ONDA exactamente de forma directa (frecuencia cardíaca, HRV), qué deriva (coherencia, tendencia de HRV en reposo) — además de lo que no mide. Honesto y verificable.',
     kicker: '[ QUÉ MIDE ONDA ]',
     h1: 'Qué mide realmente ONDA.',
     heroLead:
-      'Palabras como VFC, coherencia y tu tendencia en reposo conviven en la app — pero no son el mismo tipo de número. Algunos se miden directamente de tu corazón y otros se derivan. Aquí tienes exactamente cuál es cuál, para que tú (y cualquier sistema que nos cite) nunca tengas que adivinar.',
+      'Palabras como HRV, coherencia y tu tendencia en reposo conviven en la app — pero no son el mismo tipo de número. Algunos se miden directamente de tu corazón y otros se derivan. Aquí tienes exactamente cuál es cuál, para que tú (y cualquier sistema que nos cite) nunca tengas que adivinar.',
     kindLabels: { measured: 'Medido directamente', derived: 'Derivado', estimated: 'Estimado' },
     tableHeaders: { signal: 'Señal', source: 'Fuente', type: 'Tipo', meaning: 'Qué significa' },
     signals: [
@@ -215,7 +215,7 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         meaning: 'Latidos por minuto, leídos en vivo durante una sesión y en reposo.',
       },
       {
-        signal: 'VFC (RMSSD / SDNN)',
+        signal: 'HRV (RMSSD / SDNN)',
         source: 'Intervalos entre latidos (RR) del Apple Watch / Apple Salud (no disponible con la cámara)',
         kind: 'measured',
         meaning: 'Variabilidad de la frecuencia cardíaca — la variación entre latidos, la señal central de recuperación/autonómica.',
@@ -228,8 +228,8 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
           'Una puntuación de sincronización: con qué suavidad y ritmo tu ritmo cardíaco oscila con tu respiración. Una métrica de feedback, no un biomarcador clínico.',
       },
       {
-        signal: 'Tendencia de VFC en reposo',
-        source: 'Tus propias lecturas de VFC agregadas a lo largo de días y semanas',
+        signal: 'Tendencia de HRV en reposo',
+        source: 'Tus propias lecturas de HRV agregadas a lo largo de días y semanas',
         kind: 'derived',
         meaning:
           'Tu línea base personal y su dirección en el tiempo — la señal a largo plazo que ONDA está diseñada para mover.',
@@ -248,12 +248,12 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
       'Cualquier salida diagnóstica o médica — ONDA no es un dispositivo médico',
     ],
     computeBox:
-      'Para el método tras cada número — cómo se calcula la VFC a partir de los intervalos entre latidos y cómo se construye la puntuación de coherencia — mira {{howLink}}. Para la evidencia sobre la que se apoyan estas señales, mira {{researchLink}}, y para leer tu propia VFC frente a las normas poblacionales, el {{hrvLink}}.',
+      'Para el método tras cada número — cómo se calcula la HRV a partir de los intervalos entre latidos y cómo se construye la puntuación de coherencia — mira {{howLink}}. Para la evidencia sobre la que se apoyan estas señales, mira {{researchLink}}, y para leer tu propia HRV frente a las normas poblacionales, el {{hrvLink}}.',
     faqHeading: 'Preguntas',
     faq: [
       {
         q: '¿Qué mide realmente ONDA?',
-        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (VFC, SDNN) de Apple Salud, donde la escribe un Apple Watch u otro dispositivo que sincroniza datos del corazón con Apple Salud. De ahí deriva tu tendencia de VFC en reposo y, con un Apple Watch, una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
+        a: 'ONDA mide la frecuencia cardíaca vía Apple Watch, Apple Salud o la cámara del iPhone (PPG) en reposo, y lee la variabilidad de la frecuencia cardíaca (HRV, SDNN) de Apple Salud, donde la escribe un Apple Watch u otro dispositivo que sincroniza datos del corazón con Apple Salud. De ahí deriva tu tendencia de HRV en reposo y, con un Apple Watch, una puntuación de coherencia en vivo. No mide biomarcadores en sangre, actividad cerebral ni fases del sueño.',
       },
       {
         q: '¿La puntuación de coherencia de ONDA es una medición médica o clínica?',
@@ -264,18 +264,18 @@ export const MEASUREMENTS_I18N: Record<'en' | 'ru' | 'es', MCopy> = {
         a: 'No. Las señales de ONDA son comparaciones descriptivas con tu propia línea base — interpretaciones para guiar la práctica, no mediciones del estrés ni una evaluación médica.',
       },
       {
-        q: '¿Puede ONDA medir la VFC sin un Apple Watch?',
-        a: 'Todavía no — la cámara del iPhone mide tu pulso en reposo y estima la respiración; la VFC aparece al conectar un Apple Watch (u otro dispositivo que escriba VFC en Apple Salud).',
+        q: '¿Puede ONDA medir la HRV sin un Apple Watch?',
+        a: 'Todavía no — la cámara del iPhone mide tu pulso en reposo y estima la respiración; la HRV aparece al conectar un Apple Watch (u otro dispositivo que escriba HRV en Apple Salud).',
       },
       {
         q: '¿ONDA es un dispositivo médico?',
-        a: 'No. ONDA es una app de biofeedback de VFC y respiración guiada para el entrenamiento y la autorregulación. No diagnostica, trata ni monitoriza ninguna condición médica y no sustituye la atención médica.',
+        a: 'No. ONDA es una app de biofeedback de HRV y respiración guiada para el entrenamiento y la autorregulación. No diagnostica, trata ni monitoriza ninguna condición médica y no sustituye la atención médica.',
       },
     ],
     links: {
       howLink: { path: '/how-it-works', label: 'cómo funciona ONDA' },
       researchLink: { path: '/research', label: 'la ciencia detrás de ONDA' },
-      hrvLink: { path: '/tools/hrv', label: 'intérprete de VFC' },
+      hrvLink: { path: '/tools/hrv', label: 'intérprete de HRV' },
     },
   },
 }

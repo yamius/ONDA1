@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Calculadora de HRV por edad — VFC normal | ONDA Life",
-    "description": "Calculadora de HRV gratis: introduce tu edad y tu VFC (RMSSD de Oura, Whoop, Garmin o SDNN de Apple Watch) y ve tu percentil y la HRV normal por edad.",
+    "title": "Calculadora de HRV por edad — HRV normal | ONDA Life",
+    "description": "Calculadora de HRV gratis: introduce tu edad y tu HRV (RMSSD de Oura, Whoop, Garmin o SDNN de Apple Watch) y ve tu percentil y la HRV normal por edad.",
     "appName": "Calculadora de HRV por edad",
     "appDescription": "Calculadora gratuita que compara tu variabilidad de la frecuencia cardíaca (RMSSD o SDNN de Apple Watch) con normas publicadas por edad y devuelve un percentil aproximado."
   },
@@ -11,13 +11,13 @@
     "current": "Calculadora de HRV"
   },
   "h1": "Calculadora de HRV por edad",
-  "capsule": "Introduce tu edad y tu variabilidad de la frecuencia cardíaca (VFC o HRV) para ver dónde se sitúa frente a personas de tu edad. Usa RMSSD si tu dato viene de Oura, Whoop, Garmin o Polar, y SDNN si viene del Apple Watch. Las normas proceden de estudios revisados por pares, pero tu tendencia de varias semanas importa más que cualquier percentil.",
+  "capsule": "Introduce tu edad y tu variabilidad de la frecuencia cardíaca (HRV o HRV) para ver dónde se sitúa frente a personas de tu edad. Usa RMSSD si tu dato viene de Oura, Whoop, Garmin o Polar, y SDNN si viene del Apple Watch. Las normas proceden de estudios revisados por pares, pero tu tendencia de varias semanas importa más que cualquier percentil.",
   "imageAlt": "Calculadora de HRV por edad — calculadora interactiva gratuita de variabilidad de la frecuencia cardíaca de ONDA Life",
   "metric": {
     "label": "Tu dispositivo mide",
     "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
     "sdnn": "SDNN (Apple Watch)",
-    "hintRmssd": "Oura: Preparación → Equilibrio de la VFC / VFC media. Whoop: Recovery → HRV. Garmin: Estado de VFC (media nocturna). Polar: Nightly Recharge → VFC.",
+    "hintRmssd": "Oura: Preparación → Equilibrio de la HRV / HRV media. Whoop: Recovery → HRV. Garmin: Estado de HRV (media nocturna). Polar: Nightly Recharge → HRV.",
     "hintSdnn": "App Salud del iPhone → Explorar → Corazón → Variabilidad de la frecuencia cardíaca. El Apple Watch muestra SDNN en ms: usa tu media de 7 días si puedes."
   },
   "age": {
@@ -68,7 +68,7 @@
       "body": "Una buena HRV es la que está en torno a la mediana de tu edad o por encima y, sobre todo, la que se mantiene estable o sube respecto a tu propia línea base. Para el RMSSD nocturno (Oura, Whoop, Garmin, Polar) la mediana ronda los 58 ms entre los 18 y los 29 años, 50 ms en la treintena, 42 ms en la cuarentena, 36 ms en la cincuentena, 30 ms en la sesentena y 26 ms a partir de los 70. La mitad central de las personas (p25–p75) de 30 a 39 años va de unos 36 a 68 ms, así que la dispersión dentro de un mismo grupo de edad es mayor que la diferencia entre décadas. Por eso compararte con una tabla dice poco por sí solo. La HRV baja con la edad porque el control vagal del corazón se debilita y los vasos sanguíneos se vuelven más rígidos: es normal. La forma física, el sueño y la respiración lenta regular pueden frenar ese descenso. Guía completa: [HRV normal por edad](/articles/normal-hrv-by-age)."
     },
     {
-      "h2": "VFC normal en Apple Watch (SDNN)",
+      "h2": "HRV normal en Apple Watch (SDNN)",
       "body": "El Apple Watch no da RMSSD: muestra SDNN, otra medida de la HRV, así que sus cifras no se pueden comparar con las tablas de Oura o Whoop. En el estudio de Voss 2015, con unos 1.900 adultos sanos (ECG en reposo de 5 minutos), la mediana de SDNN fue de unos 46 ms entre 18 y 34 años, 42 ms entre 35 y 44, 34 ms entre 45 y 54, 29 ms entre 55 y 64 y 26 ms desde los 65. Elige «SDNN (Apple Watch)» arriba para obtener tu percentil según estas normas. Un matiz: el Apple Watch toma lecturas cortas de un minuto aprox. varias veces al día y por la noche, así que los valores sueltos se dispersan más que una medición de laboratorio. Usa tu media de 7 días en la app Salud. Si tu media cae claramente por debajo de tu nivel habitual durante varios días, eso dice más que cualquier número aislado. Más: [Por qué tu HRV es distinta en cada dispositivo](/articles/hrv-different-every-device)."
     },
     {
@@ -140,8 +140,8 @@
   },
   "sourcesContributes": [
     "Valores de referencia agregados de RMSSD/SDNN de 44 estudios en adultos sanos (RMSSD en reposo agregado ≈ 42 ms): fija la tendencia central.",
-    "La clásica curva de descenso con la edad —la VFC en el dominio del tiempo (incl. RMSSD) cae década a década— define el desplazamiento por franja de edad.",
-    "Gran cohorte sana (n ≈ 1.900; ECG de 5 min en decúbito supino) con VFC de corta duración estratificada por edad y sexo. Determina la dispersión del RMSSD (amplitud p10–p90) y es la fuente directa de la tabla de SDNN (Apple Watch): medias por década ± DE para mujeres (Table 5) y hombres (Table 7).",
+    "La clásica curva de descenso con la edad —la HRV en el dominio del tiempo (incl. RMSSD) cae década a década— define el desplazamiento por franja de edad.",
+    "Gran cohorte sana (n ≈ 1.900; ECG de 5 min en decúbito supino) con HRV de corta duración estratificada por edad y sexo. Determina la dispersión del RMSSD (amplitud p10–p90) y es la fuente directa de la tabla de SDNN (Apple Watch): medias por década ± DE para mujeres (Table 5) y hombres (Table 7).",
     "Definiciones fundamentales de RMSSD/SDNN y estándares de medición que sirven de referencia a la literatura."
   ]
 }

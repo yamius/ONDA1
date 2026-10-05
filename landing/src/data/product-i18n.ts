@@ -99,16 +99,16 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     researchLink: 'науке за ONDA',
   },
   es: {
-    metaTitle: 'ONDA Life — App de biofeedback de VFC y respiración guiada | Producto',
+    metaTitle: 'ONDA Life — App de biofeedback de HRV y respiración guiada | Producto',
     metaDescription:
-      'ONDA Life es una app de biofeedback de VFC y respiración guiada para iPhone, iPad y Apple Watch: feedback en vivo del ritmo cardíaco, puntuación de coherencia, respiración de resonancia y tendencias de VFC en reposo. Gratis para empezar, sin cuenta.',
+      'ONDA Life es una app de biofeedback de HRV y respiración guiada para iPhone, iPad y Apple Watch: feedback en vivo del ritmo cardíaco, puntuación de coherencia, respiración de resonancia y tendencias de HRV en reposo. Gratis para empezar, sin cuenta.',
     heroPara:
-      'ONDA Life es una app de biofeedback de VFC y respiración guiada para la autorregulación fisiológica en tiempo real y el entrenamiento del sistema nervioso. Da feedback en vivo del ritmo cardíaco durante la respiración pausada (de resonancia) —con tu Apple Watch o la cámara del iPhone— y sigue tu tendencia de VFC en reposo a lo largo de un camino de práctica de 8 niveles.',
+      'ONDA Life es una app de biofeedback de HRV y respiración guiada para la autorregulación fisiológica en tiempo real y el entrenamiento del sistema nervioso. Da feedback en vivo del ritmo cardíaco durante la respiración pausada (de resonancia) —con tu Apple Watch o la cámara del iPhone— y sigue tu tendencia de HRV en reposo a lo largo de un camino de práctica de 8 niveles.',
     cta: 'Consigue ONDA en la App Store →',
     factsHeading: 'Datos del producto',
     facts: [
       { label: 'Nombre', value: 'ONDA Life' },
-      { label: 'Categoría', value: 'Salud y forma física (biofeedback de VFC y respiración guiada)' },
+      { label: 'Categoría', value: 'Salud y forma física (biofeedback de HRV y respiración guiada)' },
       { label: 'Plataformas', value: 'iPhone, iPad, Apple Watch (iOS / watchOS)' },
       { label: 'Android', value: 'Aún no disponible — solo lista de espera' },
       { label: 'Precio', value: 'Gratis para empezar, sin cuenta. Suscripción opcional para acceso completo.' },
@@ -119,10 +119,10 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     appStoreLabel: 'App Store',
     doesHeading: 'Qué hace',
     does: [
-      'Biofeedback de VFC en tiempo real — ve cómo tu ritmo cardíaco responde mientras respiras',
+      'Biofeedback de HRV en tiempo real — ve cómo tu ritmo cardíaco responde mientras respiras',
       'Puntuación de coherencia en vivo en cada sesión guiada (con un Apple Watch)',
       'Respiración de resonancia guiada',
-      'Seguimiento de la tendencia de VFC en reposo por días y semanas',
+      'Seguimiento de la tendencia de HRV en reposo por días y semanas',
       'Un camino de práctica estructurado de 8 niveles para el sistema nervioso',
       'Funciona con la cámara del iPhone o un Apple Watch que ya tengas',
     ],
@@ -135,7 +135,7 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     whyColTracker: 'Un tracker (Oura)',
     whyColMeditation: 'App de meditación (Headspace)',
     whyRows: [
-      'Biofeedback de VFC en tiempo real',
+      'Biofeedback de HRV en tiempo real',
       'Puntuación de coherencia en vivo (con Apple Watch)',
       'Funciona sin wearable (cámara del iPhone)',
       'Programa estructurado',
@@ -143,7 +143,7 @@ export const PRODUCT_I18N: Record<'ru' | 'es', ProductCopy> = {
     forHeading: 'ONDA es para',
     forItems: [
       'Quienes quieren entrenar activamente su sistema nervioso, no solo medirlo',
-      'Usuarios de Apple Watch y quien quiera biofeedback de VFC sin wearable extra',
+      'Usuarios de Apple Watch y quien quiera biofeedback de HRV sin wearable extra',
       'Quienes quieren feedback fisiológico durante la respiración — sentir que funciona',
       'Quienes no quieren puntuaciones pasivas de preparación y prefieren una práctica',
     ],

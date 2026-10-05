@@ -63,8 +63,8 @@
       "body": "Non. Le café, une douche froide, l'air frais, le sport ou un petit-déjeuner copieux peuvent donner l'impression d'être plus alerte, mais ils ne font pas baisser le taux d'alcool dans le sang — seul le temps le fait, car le foie travaille à un rythme presque constant. Manger avant ou pendant la consommation ralentit l'absorption de l'alcool et peut réduire le pic, et l'eau aide contre la déshydratation, mais ni l'un ni l'autre n'accélère l'élimination. C'est pourquoi « dormir pour dessoûler » ne suffit souvent pas : après une soirée arrosée qui finit tard, vous pouvez encore dépasser la limite le lendemain matin."
     },
     {
-      "h2": "Les effets de l'alcool sur le sommeil, la VFC et la fréquence cardiaque au repos",
-      "body": "L'alcool aide à s'endormir mais perturbe la seconde moitié de la nuit : il réduit le sommeil paradoxal, multiplie les réveils et fait travailler le cœur davantage pendant que l'organisme le métabolise. Les montres et bagues connectées le montrent clairement — même un ou deux verres tendent à augmenter la fréquence cardiaque au repos nocturne et à faire baisser la variabilité de la fréquence cardiaque (VFC, ou HRV), et après une consommation plus importante l'effet peut durer jusqu'à la nuit suivante. C'est pour cela que votre score de récupération chute après une fête, même si vous avez dormi assez longtemps. Les données : [à quel point l'alcool fait baisser la VFC](/articles/how-much-alcohol-lowers-hrv). Vérifiez vos chiffres : [Calculateur de VFC (HRV) selon l'âge](/tools/hrv) et [Fréquence cardiaque au repos selon l'âge](/tools/resting-heart-rate)."
+      "h2": "Les effets de l'alcool sur le sommeil, la HRV et la fréquence cardiaque au repos",
+      "body": "L'alcool aide à s'endormir mais perturbe la seconde moitié de la nuit : il réduit le sommeil paradoxal, multiplie les réveils et fait travailler le cœur davantage pendant que l'organisme le métabolise. Les montres et bagues connectées le montrent clairement — même un ou deux verres tendent à augmenter la fréquence cardiaque au repos nocturne et à faire baisser la variabilité de la fréquence cardiaque (HRV, ou HRV), et après une consommation plus importante l'effet peut durer jusqu'à la nuit suivante. C'est pour cela que votre score de récupération chute après une fête, même si vous avez dormi assez longtemps. Les données : [à quel point l'alcool fait baisser la HRV](/articles/how-much-alcohol-lowers-hrv). Vérifiez vos chiffres : [Calculateur de HRV selon l'âge](/tools/hrv) et [Fréquence cardiaque au repos selon l'âge](/tools/resting-heart-rate)."
     },
     {
       "h2": "Combien d'alcool contient un verre ?",
@@ -99,7 +99,7 @@
     },
     {
       "q": "Pourquoi l'alcool gâche-t-il mon sommeil et ma récupération ?",
-      "a": "Il fragmente la seconde moitié de la nuit, réduit le sommeil paradoxal, augmente la fréquence cardiaque au repos nocturne et fait baisser la VFC pendant que l'organisme le métabolise — d'où la mauvaise récupération affichée par les objets connectés après avoir bu."
+      "a": "Il fragmente la seconde moitié de la nuit, réduit le sommeil paradoxal, augmente la fréquence cardiaque au repos nocturne et fait baisser la HRV pendant que l'organisme le métabolise — d'où la mauvaise récupération affichée par les objets connectés après avoir bu."
     },
     {
       "q": "Pourquoi les femmes ont-elles une alcoolémie plus élevée que les hommes ?",
@@ -116,8 +116,8 @@
   "related": {
     "label": "À voir aussi",
     "article": "Combien de temps l'alcool reste dans l'organisme",
-    "hrvArticle": "À quel point l'alcool fait baisser la VFC",
-    "hrv": "Calculateur de VFC (HRV) selon l'âge",
+    "hrvArticle": "À quel point l'alcool fait baisser la HRV",
+    "hrv": "Calculateur de HRV selon l'âge",
     "sleep": "Calculateur de dette de sommeil"
   }
 }

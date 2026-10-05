@@ -125,11 +125,11 @@ export const TOOLS_I18N: Partial<Record<Lang, ToolsCopy>> = {
   es: {
     metaTitle: 'Calculadoras gratis de salud y respiración | ONDA Life',
     metaDescription:
-      'Calculadoras interactivas gratuitas de VFC, deuda de sueño, hora del café, zonas de frecuencia cardíaca, proteína y más — cada una contrastada con la evidencia publicada, sin registro, y luego seguible en ONDA Life.',
+      'Calculadoras interactivas gratuitas de HRV, deuda de sueño, hora del café, zonas de frecuencia cardíaca, proteína y más — cada una contrastada con la evidencia publicada, sin registro, y luego seguible en ONDA Life.',
     breadcrumbTools: 'Herramientas',
     h1: 'Calculadoras gratis de salud y respiración',
     intro1:
-      'Calculadoras interactivas gratuitas para las métricas que importan — VFC, sueño, zonas de frecuencia cardíaca, hora del café, proteína y más. Cada herramienta contrasta tu número con la evidencia publicada, no con una regla redondeada, y te dice qué lo mueve de verdad.',
+      'Calculadoras interactivas gratuitas para las métricas que importan — HRV, sueño, zonas de frecuencia cardíaca, hora del café, proteína y más. Cada herramienta contrasta tu número con la evidencia publicada, no con una regla redondeada, y te dice qué lo mueve de verdad.',
     intro2Pre:
       'Sin registro, sin cuenta, nada que instalar — funcionan directamente en tu navegador. Cuando quieras que esos mismos números se sigan automáticamente en vez de escribirlos una vez, eso es lo que hace ',
     ondaLink: 'ONDA Life',
@@ -143,7 +143,7 @@ export const TOOLS_I18N: Partial<Record<Lang, ToolsCopy>> = {
     aboutP1:
       'Son las pequeñas calculadoras específicas a las que el mundo del quantified-self y el biohacking vuelve una y otra vez — variabilidad de la frecuencia cardíaca, deuda de sueño, vida media de la cafeína, zonas de entrenamiento, necesidad de proteína — reunidas en un solo lugar y, donde importa, atadas a la ciencia en lugar de dejarlas como un número pelado. Lo importante no es el número en sí, sino leerlo en contexto: qué es normal para tu edad, qué señala de verdad un cambio y qué palanca lo mueve.',
     aboutP2Pre:
-      'Siempre que una herramienta toca tu sistema nervioso — VFC, frecuencia cardíaca en reposo, carga de estrés — enlaza con ',
+      'Siempre que una herramienta toca tu sistema nervioso — HRV, frecuencia cardíaca en reposo, carga de estrés — enlaza con ',
     measuresLink: 'lo que mide ONDA',
     aboutP2Mid: ' y con ',
     researchLink: 'la evidencia detrás',
@@ -156,7 +156,7 @@ export const TOOLS_I18N: Partial<Record<Lang, ToolsCopy>> = {
       },
       {
         title: 'Sueño',
-        body: 'Herramientas de deuda de sueño, hora límite del café y cronotipo que convierten el sueño de un objetivo vago en un horario concreto. El sueño es la mayor palanca sobre la VFC y la recuperación del día siguiente, así que acertar con el momento de la cafeína, la luz y la hora de dormir se paga en todo lo demás.',
+        body: 'Herramientas de deuda de sueño, hora límite del café y cronotipo que convierten el sueño de un objetivo vago en un horario concreto. El sueño es la mayor palanca sobre la HRV y la recuperación del día siguiente, así que acertar con el momento de la cafeína, la luz y la hora de dormir se paga en todo lo demás.',
       },
       {
         title: 'Fitness y entrenamiento',
@@ -173,7 +173,7 @@ export const TOOLS_I18N: Partial<Record<Lang, ToolsCopy>> = {
     ],
     readHeading: 'Cómo leer tus números con honestidad',
     readBody:
-      'Una sola lectura es una foto fija, y las fotos fijas tienen ruido: la VFC por sí sola oscila con el sueño, la hidratación, el alcohol, la enfermedad e incluso con cómo te sentaste. Tu propia tendencia a lo largo de días y semanas vale mucho más que una cifra, y comparar tu número absoluto con el de otra persona rara vez es útil. Estas herramientas son para orientarte y experimentar contigo, no para diagnosticar; no sustituyen a un profesional. Usadas así, son una forma rápida y honesta de convertir una métrica de la que has oído hablar en algo sobre lo que puedes actuar.',
+      'Una sola lectura es una foto fija, y las fotos fijas tienen ruido: la HRV por sí sola oscila con el sueño, la hidratación, el alcohol, la enfermedad e incluso con cómo te sentaste. Tu propia tendencia a lo largo de días y semanas vale mucho más que una cifra, y comparar tu número absoluto con el de otra persona rara vez es útil. Estas herramientas son para orientarte y experimentar contigo, no para diagnosticar; no sustituyen a un profesional. Usadas así, son una forma rápida y honesta de convertir una métrica de la que has oído hablar en algo sobre lo que puedes actuar.',
     ctaPre: '¿Quieres que la parte del sistema nervioso se siga de forma continua en vez de escribirla? ',
     seeLink: 'Mira lo que hace ONDA Life',
     ctaMid: ', o ',

@@ -495,7 +495,7 @@
         "items": [
           "El cuerpo deja de acumular estrés y empieza a transmitirlo, procesándolo en energía cinética o creativa.",
           "Te conviertes en maestro de los estados de flujo, capaz de mantener suavidad interna y conductividad incluso bajo influencias externas extremas.",
-          "Transición a fricción interna mínima: armonización del SNA, apoyo a la VFC de mediación vagal, neurodinámica, vasomotricidad, dinámica del LCR."
+          "Transición a fricción interna mínima: armonización del SNA, apoyo a la HRV de mediación vagal, neurodinámica, vasomotricidad, dinámica del LCR."
         ]
       },
       "outro": "Ya no eres una forma que resiste — eres un proceso que transforma. Cada impulso se vuelve recurso."
@@ -654,7 +654,7 @@
       "protocol": {
         "intro": "La mecánica lenta de una base estable:",
         "items": [
-          { "name": "Respiración vagal", "text": "Respiración lenta, «ancestral», que se asocia con una VFC de mediación vagal más alta y ayuda al sistema de estrés a asentarse con el tiempo." },
+          { "name": "Respiración vagal", "text": "Respiración lenta, «ancestral», que se asocia con una HRV de mediación vagal más alta y ayuda al sistema de estrés a asentarse con el tiempo." },
           { "name": "Trabajar con los miedos viejos", "text": "Recibir las reacciones primarias e instintivas con conciencia, para que se vuelvan información y no alarma." },
           { "name": "Escaneo corporal", "text": "Atención lenta a través del cuerpo — notar la tensión y dejar que suelte. Una práctica, no una cura." },
           { "name": "Memoria motriz de formas", "text": "Movimientos que restauran la conexión con la gracia y la firmeza naturales del cuerpo." },
@@ -687,7 +687,7 @@
       "metaDescription": "Parte 20: Recuperación y reparación — bajar la carga crónica de estrés con el tiempo para que el cuerpo pase más tiempo en reposo. ONDA Life.",
       "imageAlt": "Recuperación y reparación, reposo profundo, ONDA YO RESTAURO.",
       "imageTitle": "[I_RESTORE]: visualización de la recuperación profunda y el retorno al reposo.",
-      "intro": "La Parte 20 trata de la recuperación: el cambio lento de vivir «a base de estrés» a pasar más tiempo en reposo. En niveles anteriores aprendiste a alcanzar un estado de calma; aquí ese estado se vuelve lo bastante largo y frecuente para que el cuerpo de verdad se recupere.\n\nIdea clave: el reposo no es pasividad. Los estados parasimpáticos profundos dan al sistema espacio para recuperarse — mejor sueño, menos tensión de fondo, menos tiempo «en alerta».\n\nTrabajamos sobre todo con la respiración lenta, que eleva la VFC mientras practicas, y relajación profunda que conmutan el cuerpo del modo «alarma» al modo recuperación. No es una cura ni una garantía — es una práctica constante que deja al cuerpo hacer más a menudo lo que ya sabe hacer.",
+      "intro": "La Parte 20 trata de la recuperación: el cambio lento de vivir «a base de estrés» a pasar más tiempo en reposo. En niveles anteriores aprendiste a alcanzar un estado de calma; aquí ese estado se vuelve lo bastante largo y frecuente para que el cuerpo de verdad se recupere.\n\nIdea clave: el reposo no es pasividad. Los estados parasimpáticos profundos dan al sistema espacio para recuperarse — mejor sueño, menos tensión de fondo, menos tiempo «en alerta».\n\nTrabajamos sobre todo con la respiración lenta, que eleva la HRV mientras practicas, y relajación profunda que conmutan el cuerpo del modo «alarma» al modo recuperación. No es una cura ni una garantía — es una práctica constante que deja al cuerpo hacer más a menudo lo que ya sabe hacer.",
       "protocol": {
         "intro": "La mecánica de una recuperación más profunda:",
         "items": [

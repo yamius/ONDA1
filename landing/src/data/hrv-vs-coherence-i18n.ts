@@ -219,16 +219,16 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
   },
 
   es: {
-    metaTitle: 'VFC vs coherencia: ¿cuál es la diferencia? | ONDA Life',
+    metaTitle: 'HRV vs coherencia: ¿cuál es la diferencia? | ONDA Life',
     metaDescription:
-      'VFC vs coherencia explicado: la VFC es la variación bruta entre latidos; la coherencia es lo suave y rítmica que es esa variación al respirar. Cuál vigilar y cómo usa cada una ONDA.',
-    articleHeadline: 'VFC vs coherencia: ¿cuál es la diferencia?',
-    kicker: '[ VFC VS COHERENCIA ]',
-    h1: 'VFC vs coherencia: ¿cuál es la diferencia?',
+      'HRV vs coherencia explicado: la HRV es la variación bruta entre latidos; la coherencia es lo suave y rítmica que es esa variación al respirar. Cuál vigilar y cómo usa cada una ONDA.',
+    articleHeadline: 'HRV vs coherencia: ¿cuál es la diferencia?',
+    kicker: '[ HRV VS COHERENCIA ]',
+    h1: 'HRV vs coherencia: ¿cuál es la diferencia?',
     heroLead:
-      '**La VFC (variabilidad de la frecuencia cardíaca) es la variación bruta en el tiempo entre tus latidos. La coherencia es lo suave, regular y rítmica que es esa variación** — con qué limpieza tu ritmo cardíaco sube y baja con tu respiración. La VFC es la señal medida; la coherencia es una medida de la calidad del patrón en el momento. Se confunden a menudo, pero responden preguntas distintas.',
+      '**La HRV (variabilidad de la frecuencia cardíaca) es la variación bruta en el tiempo entre tus latidos. La coherencia es lo suave, regular y rítmica que es esa variación** — con qué limpieza tu ritmo cardíaco sube y baja con tu respiración. La HRV es la señal medida; la coherencia es una medida de la calidad del patrón en el momento. Se confunden a menudo, pero responden preguntas distintas.',
     toc: [
-      { id: 'hrv', label: 'Qué es la VFC' },
+      { id: 'hrv', label: 'Qué es la HRV' },
       { id: 'coherence', label: 'Qué es la coherencia' },
       { id: 'difference', label: 'La diferencia' },
       { id: 'which', label: 'Cuál vigilar' },
@@ -238,10 +238,10 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
     sections: [
       {
         id: 'hrv',
-        kicker: '[ VFC ]',
-        title: 'Qué es la VFC',
+        kicker: '[ HRV ]',
+        title: 'Qué es la HRV',
         paras: [
-          'La variabilidad de la frecuencia cardíaca es la variación en el tiempo entre latidos consecutivos. Es una cantidad fisiológica medida, expresada en números como **RMSSD** (la medida a corto plazo, latido a latido, más ligada a la actividad vagal) o **SDNN** (variabilidad global). Una VFC a corto plazo más alta suele reflejar mayor actividad parasimpática y mejor recuperación — dentro de una misma persona.',
+          'La variabilidad de la frecuencia cardíaca es la variación en el tiempo entre latidos consecutivos. Es una cantidad fisiológica medida, expresada en números como **RMSSD** (la medida a corto plazo, latido a latido, más ligada a la actividad vagal) o **SDNN** (variabilidad global). Una HRV a corto plazo más alta suele reflejar mayor actividad parasimpática y mejor recuperación — dentro de una misma persona.',
         ],
       },
       {
@@ -255,17 +255,17 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
       {
         id: 'difference',
         kicker: '[ LA DIFERENCIA ]',
-        title: 'VFC vs coherencia, lado a lado',
+        title: 'HRV vs coherencia, lado a lado',
         table: {
           rows: [
-            ['Qué es', 'VFC: variación bruta entre latidos', 'Coherencia: calidad/suavidad de esa variación'],
+            ['Qué es', 'HRV: variación bruta entre latidos', 'Coherencia: calidad/suavidad de esa variación'],
             ['Tipo', 'Medida (RMSSD/SDNN)', 'Métrica de práctica derivada'],
             ['Mejor para', 'Tendencia de recuperación a largo plazo', 'Feedback de respiración en el momento'],
             ['¿Estandarizada?', 'Sí — métricas definidas', 'No — varía según la app'],
           ],
         },
         paras: [
-          'El matiz clave: la VFC puede ser alta de forma *ruidosa* e irregular, pero la coherencia premia específicamente una oscilación limpia y organizada. Una coherencia alta suele venir con una subida de la VFC; una VFC alta no siempre significa coherencia alta.',
+          'El matiz clave: la HRV puede ser alta de forma *ruidosa* e irregular, pero la coherencia premia específicamente una oscilación limpia y organizada. Una coherencia alta suele venir con una subida de la HRV; una HRV alta no siempre significa coherencia alta.',
         ],
       },
       {
@@ -273,45 +273,45 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
         kicker: '[ CUÁL VIGILAR ]',
         title: '¿Cuál deberías vigilar?',
         paras: [
-          'Ambas — para trabajos distintos. Durante una sesión de respiración, la **coherencia** es la guía en vivo útil: te dice si estás organizando tu ritmo cardíaco ahora mismo. Para el progreso a lo largo del tiempo, tu **tendencia de VFC en reposo** durante semanas es la señal honesta de recuperación y adaptación. Perseguir un solo número de coherencia fuera de la práctica, o la VFC de un solo día, es un error.',
+          'Ambas — para trabajos distintos. Durante una sesión de respiración, la **coherencia** es la guía en vivo útil: te dice si estás organizando tu ritmo cardíaco ahora mismo. Para el progreso a lo largo del tiempo, tu **tendencia de HRV en reposo** durante semanas es la señal honesta de recuperación y adaptación. Perseguir un solo número de coherencia fuera de la práctica, o la HRV de un solo día, es un error.',
         ],
       },
       {
         id: 'onda',
         kicker: '[ CÓMO USA CADA UNA ONDA ]',
-        title: 'Cómo usa ONDA la VFC y la coherencia',
+        title: 'Cómo usa ONDA la HRV y la coherencia',
         paras: [
-          'ONDA lee tu latido (cámara del iPhone o Apple Watch) y — con un Apple Watch — muestra una **puntuación de coherencia en vivo** durante la práctica, para que veas cómo tu ritmo se organiza mientras respiras — la guía del momento. Con el tiempo sigue tu **tendencia de VFC en reposo** como medida del progreso. Mira exactamente {{measuresLink}}, {{howLink}} y {{hrvLink}} en general.',
+          'ONDA lee tu latido (cámara del iPhone o Apple Watch) y — con un Apple Watch — muestra una **puntuación de coherencia en vivo** durante la práctica, para que veas cómo tu ritmo se organiza mientras respiras — la guía del momento. Con el tiempo sigue tu **tendencia de HRV en reposo** como medida del progreso. Mira exactamente {{measuresLink}}, {{howLink}} y {{hrvLink}} en general.',
         ],
       },
     ],
     faqHeading: 'Preguntas frecuentes',
     faq: [
       {
-        q: '¿Cuál es la diferencia entre VFC y coherencia?',
-        a: 'La VFC (variabilidad de la frecuencia cardíaca) es la variación bruta en el tiempo entre latidos — una señal medida. La coherencia describe lo suave, regular y rítmica que es esa variación, sobre todo al alinearse con tu respiración. La VFC es el número; la coherencia es una medida de la calidad del patrón en el momento.',
+        q: '¿Cuál es la diferencia entre HRV y coherencia?',
+        a: 'La HRV (variabilidad de la frecuencia cardíaca) es la variación bruta en el tiempo entre latidos — una señal medida. La coherencia describe lo suave, regular y rítmica que es esa variación, sobre todo al alinearse con tu respiración. La HRV es el número; la coherencia es una medida de la calidad del patrón en el momento.',
       },
       {
-        q: '¿Una puntuación de coherencia alta es lo mismo que una VFC alta?',
-        a: 'Están relacionadas pero no son idénticas. Cuando respiras a tu frecuencia de resonancia, la VFC sube y el ritmo cardíaco se vuelve suave y ondulado — coherencia alta. Pero la VFC también puede ser alta de forma ruidosa e irregular (p. ej. por arritmia). La coherencia premia específicamente una oscilación limpia y organizada, no solo la variabilidad bruta.',
+        q: '¿Una puntuación de coherencia alta es lo mismo que una HRV alta?',
+        a: 'Están relacionadas pero no son idénticas. Cuando respiras a tu frecuencia de resonancia, la HRV sube y el ritmo cardíaco se vuelve suave y ondulado — coherencia alta. Pero la HRV también puede ser alta de forma ruidosa e irregular (p. ej. por arritmia). La coherencia premia específicamente una oscilación limpia y organizada, no solo la variabilidad bruta.',
       },
       {
         q: '¿A cuál debo prestar atención?',
-        a: 'Para la práctica de respiración en el momento, la coherencia es la guía en vivo útil — muestra si estás organizando tu ritmo cardíaco ahora mismo. Para la recuperación y adaptación a largo plazo, tu tendencia de VFC en reposo a lo largo de semanas es la señal a vigilar. Responden preguntas distintas.',
+        a: 'Para la práctica de respiración en el momento, la coherencia es la guía en vivo útil — muestra si estás organizando tu ritmo cardíaco ahora mismo. Para la recuperación y adaptación a largo plazo, tu tendencia de HRV en reposo a lo largo de semanas es la señal a vigilar. Responden preguntas distintas.',
       },
       {
         q: '¿La coherencia es una medición médica o científica?',
-        a: 'No. La VFC es una medida fisiológica bien definida (p. ej. RMSSD, SDNN). Una puntuación de coherencia es una métrica de práctica derivada — feedback útil en tiempo real, pero no un biomarcador clínico y no está estandarizada entre apps.',
+        a: 'No. La HRV es una medida fisiológica bien definida (p. ej. RMSSD, SDNN). Una puntuación de coherencia es una métrica de práctica derivada — feedback útil en tiempo real, pero no un biomarcador clínico y no está estandarizada entre apps.',
       },
       {
-        q: '¿Cómo usa ONDA la VFC y la coherencia?',
-        a: 'ONDA lee tu latido (cámara del iPhone o Apple Watch) y — con un Apple Watch — muestra una puntuación de coherencia en vivo durante la práctica para que veas cómo tu ritmo se organiza mientras respiras. Con el tiempo sigue tu tendencia de VFC en reposo. La coherencia guía la sesión; la tendencia de VFC sigue el progreso.',
+        q: '¿Cómo usa ONDA la HRV y la coherencia?',
+        a: 'ONDA lee tu latido (cámara del iPhone o Apple Watch) y — con un Apple Watch — muestra una puntuación de coherencia en vivo durante la práctica para que veas cómo tu ritmo se organiza mientras respiras. Con el tiempo sigue tu tendencia de HRV en reposo. La coherencia guía la sesión; la tendencia de HRV sigue el progreso.',
       },
     ],
     links: {
       measuresLink: { path: '/measurements', label: 'qué mide ONDA' },
       howLink: { path: '/how-it-works', label: 'cómo calcula la coherencia' },
-      hrvLink: { path: '/hrv-biofeedback', label: 'biofeedback de VFC' },
+      hrvLink: { path: '/hrv-biofeedback', label: 'biofeedback de HRV' },
     },
   },
 }

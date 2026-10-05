@@ -1,44 +1,44 @@
 {
-  "title": "VFC (HRV): 52 perguntas e respostas diretas sobre variabilidade cardíaca",
-  "description": "Qual é uma boa VFC? Por que a minha está baixa? Álcool, cafeína ou respiração mudam a VFC? 52 respostas curtas e com fontes, com guias e calculadoras grátis.",
-  "intro": "Respostas curtas e diretas às perguntas que as pessoas realmente fazem sobre a variabilidade da frequência cardíaca (VFC, ou HRV em inglês). Cada resposta começa pela resposta, traz um número ou uma fonte quando importa e leva a um guia mais completo ou a uma calculadora gratuita. Esta página traz informações gerais e não é aconselhamento médico.",
+  "title": "HRV: 52 perguntas e respostas diretas sobre variabilidade cardíaca",
+  "description": "Qual é uma boa HRV? Por que a minha está baixa? Álcool, cafeína ou respiração mudam a HRV? 52 respostas curtas e com fontes, com guias e calculadoras grátis.",
+  "intro": "Respostas curtas e diretas às perguntas que as pessoas realmente fazem sobre a variabilidade da frequência cardíaca (HRV). Cada resposta começa pela resposta, traz um número ou uma fonte quando importa e leva a um guia mais completo ou a uma calculadora gratuita. Esta página traz informações gerais e não é aconselhamento médico.",
   "neuralSuggestion": {
-    "text": "A maioria das perguntas sobre VFC termina no mesmo lugar: a sua própria faixa importa mais do que qualquer média.",
+    "text": "A maioria das perguntas sobre HRV termina no mesmo lugar: a sua própria faixa importa mais do que qualquer média.",
     "linkText": "Veja a sua faixa de duas semanas →"
   },
   "groups": [
     {
-      "title": "O que é a VFC",
+      "title": "O que é a HRV",
       "items": [
         {
           "id": "what-is-hrv",
-          "q": "O que é VFC (HRV)?",
-          "a": "A variabilidade da frequência cardíaca (VFC) é a variação do tempo entre batimentos consecutivos, medida em milissegundos. Pense num baterista que acelera e desacelera um pouco a cada respiração, e não num metrônomo: um coração batendo a 60 bpm não bate exatamente uma vez por segundo — os intervalos mudam dezenas de milissegundos, principalmente sob o controle do nervo vago. Mais variação em repouso geralmente significa que o lado \"descanso e digestão\" do seu sistema nervoso está ativo. [Explicação completa →](/articles/topic/hrv-heart-rate)"
+          "q": "O que é HRV?",
+          "a": "A variabilidade da frequência cardíaca (HRV) é a variação do tempo entre batimentos consecutivos, medida em milissegundos. Pense num baterista que acelera e desacelera um pouco a cada respiração, e não num metrônomo: um coração batendo a 60 bpm não bate exatamente uma vez por segundo — os intervalos mudam dezenas de milissegundos, principalmente sob o controle do nervo vago. Mais variação em repouso geralmente significa que o lado \"descanso e digestão\" do seu sistema nervoso está ativo. [Explicação completa →](/articles/topic/hrv-heart-rate)"
         },
         {
           "id": "what-does-hrv-measure",
-          "q": "O que a VFC mede de verdade?",
-          "a": "A VFC mede o quanto o intervalo entre batimentos muda, o que reflete principalmente a atividade parassimpática (vagal) sobre o coração. É uma janela indireta para o sistema nervoso autônomo — não mede sozinha a força do coração nem o condicionamento. Respiração, postura, sono, álcool e estresse, tudo isso mexe nela. [Guias sobre VFC e frequência cardíaca →](/articles/topic/hrv-heart-rate)"
+          "q": "O que a HRV mede de verdade?",
+          "a": "A HRV mede o quanto o intervalo entre batimentos muda, o que reflete principalmente a atividade parassimpática (vagal) sobre o coração. É uma janela indireta para o sistema nervoso autônomo — não mede sozinha a força do coração nem o condicionamento. Respiração, postura, sono, álcool e estresse, tudo isso mexe nela. [Guias sobre HRV e frequência cardíaca →](/articles/topic/hrv-heart-rate)"
         },
         {
           "id": "is-higher-hrv-better",
-          "q": "VFC mais alta é melhor?",
-          "a": "Dentro da sua própria faixa, geralmente sim: VFC mais alta em repouso costuma acompanhar melhor recuperação e menos carga de estresse. Mas comparar o seu número com o de outra pessoa engana — genética, idade e dispositivo explicam a maior parte da diferença. O que importa é se a sua VFC está subindo ou caindo em relação à sua própria linha de base. [VFC normal por idade →](/articles/normal-hrv-by-age)"
+          "q": "HRV mais alta é melhor?",
+          "a": "Dentro da sua própria faixa, geralmente sim: HRV mais alta em repouso costuma acompanhar melhor recuperação e menos carga de estresse. Mas comparar o seu número com o de outra pessoa engana — genética, idade e dispositivo explicam a maior parte da diferença. O que importa é se a sua HRV está subindo ou caindo em relação à sua própria linha de base. [HRV normal por idade →](/articles/normal-hrv-by-age)"
         },
         {
           "id": "rmssd-vs-sdnn",
           "q": "Qual a diferença entre RMSSD e SDNN?",
-          "a": "São duas formas de calcular a VFC. O RMSSD olha as diferenças entre batimentos vizinhos e acompanha a atividade vagal; Oura, Whoop, Garmin e Polar usam esse índice. O SDNN é a dispersão geral de todos os intervalos numa janela; o Apple Watch informa SDNN. Os dois não são intercambiáveis, então compare cada um apenas com as próprias referências. [Calculadora de VFC com os dois modos →](/tools/hrv)"
+          "a": "São duas formas de calcular a HRV. O RMSSD olha as diferenças entre batimentos vizinhos e acompanha a atividade vagal; Oura, Whoop, Garmin e Polar usam esse índice. O SDNN é a dispersão geral de todos os intervalos numa janela; o Apple Watch informa SDNN. Os dois não são intercambiáveis, então compare cada um apenas com as próprias referências. [Calculadora de HRV com os dois modos →](/tools/hrv)"
         },
         {
           "id": "hrv-vs-heart-rate",
-          "q": "Qual a diferença entre VFC e frequência cardíaca?",
-          "a": "A frequência cardíaca conta quantos batimentos há por minuto; a VFC mede o quanto o espaçamento entre esses batimentos é irregular. Em geral elas andam em direções opostas — quando a frequência cardíaca de repouso sobe (estresse, doença, álcool), a VFC tende a cair. Acompanhar as duas juntas diz mais do que cada uma sozinha. [Guias sobre VFC e frequência cardíaca →](/articles/topic/hrv-heart-rate)"
+          "q": "Qual a diferença entre HRV e frequência cardíaca?",
+          "a": "A frequência cardíaca conta quantos batimentos há por minuto; a HRV mede o quanto o espaçamento entre esses batimentos é irregular. Em geral elas andam em direções opostas — quando a frequência cardíaca de repouso sobe (estresse, doença, álcool), a HRV tende a cair. Acompanhar as duas juntas diz mais do que cada uma sozinha. [Guias sobre HRV e frequência cardíaca →](/articles/topic/hrv-heart-rate)"
         },
         {
           "id": "breathing-and-hrv",
-          "q": "Por que a VFC muda quando eu inspiro e expiro?",
-          "a": "O coração acelera levemente a cada inspiração e desacelera a cada expiração — um padrão normal chamado arritmia sinusal respiratória. Respirar devagar aumenta essas oscilações, e é por isso que a VFC salta durante uma sessão de respiração. Pesquisas sobre respiração ressonante (Lehrer e colegas) mostram que as oscilações são maiores num ritmo pessoal de cerca de 4,5–7 respirações por minuto, normalmente cerca de 5,5–6. [Respiração ressonante →](/tools/resonance-breathing)"
+          "q": "Por que a HRV muda quando eu inspiro e expiro?",
+          "a": "O coração acelera levemente a cada inspiração e desacelera a cada expiração — um padrão normal chamado arritmia sinusal respiratória. Respirar devagar aumenta essas oscilações, e é por isso que a HRV salta durante uma sessão de respiração. Pesquisas sobre respiração ressonante (Lehrer e colegas) mostram que as oscilações são maiores num ritmo pessoal de cerca de 4,5–7 respirações por minuto, normalmente cerca de 5,5–6. [Respiração ressonante →](/tools/resonance-breathing)"
         }
       ]
     },
@@ -47,253 +47,253 @@
       "items": [
         {
           "id": "what-is-a-good-hrv",
-          "q": "Qual é uma boa VFC?",
-          "a": "Não existe um único número de VFC \"bom\". Como referência, o RMSSD noturno mediano fica em torno de 58 ms entre 18 e 29 anos e cai para cerca de 30 ms aos 60 e poucos, com pessoas saudáveis bem espalhadas em torno dessas medianas. Você verá números mais altos em outros lugares (o WHOOP, por exemplo, coloca muitos jovens de 20 e poucos anos em 55–105 ms) porque cada fonte usa pessoas, dispositivos e horários diferentes. Uma VFC \"boa\" é aquela estável ou em alta em relação à sua própria linha de base. [VFC normal por idade →](/articles/normal-hrv-by-age)"
+          "q": "Qual é uma boa HRV?",
+          "a": "Não existe um único número de HRV \"bom\". Como referência, o RMSSD noturno mediano fica em torno de 58 ms entre 18 e 29 anos e cai para cerca de 30 ms aos 60 e poucos, com pessoas saudáveis bem espalhadas em torno dessas medianas. Você verá números mais altos em outros lugares (o WHOOP, por exemplo, coloca muitos jovens de 20 e poucos anos em 55–105 ms) porque cada fonte usa pessoas, dispositivos e horários diferentes. Uma HRV \"boa\" é aquela estável ou em alta em relação à sua própria linha de base. [HRV normal por idade →](/articles/normal-hrv-by-age)"
         },
         {
           "id": "healthy-hrv",
-          "q": "Qual é uma VFC saudável?",
-          "a": "Uma VFC saudável é aquela que fica dentro da sua faixa habitual e se recupera depois de estresse, viagem ou treino pesado. As faixas populacionais são muito amplas — duas pessoas saudáveis da mesma idade podem diferir em 40 ms ou mais. Use as referências por idade para se orientar e a sua tendência de duas semanas para decidir. [Veja a sua própria faixa →](/tools/baseline)"
+          "q": "Qual é uma HRV saudável?",
+          "a": "Uma HRV saudável é aquela que fica dentro da sua faixa habitual e se recupera depois de estresse, viagem ou treino pesado. As faixas populacionais são muito amplas — duas pessoas saudáveis da mesma idade podem diferir em 40 ms ou mais. Use as referências por idade para se orientar e a sua tendência de duas semanas para decidir. [Veja a sua própria faixa →](/tools/baseline)"
         },
         {
           "id": "hrv-range-by-age",
-          "q": "Qual é a faixa normal de VFC por idade?",
-          "a": "O RMSSD noturno típico (a metade central dos adultos saudáveis) fica em torno de 42–78 ms entre 18 e 29 anos, 36–68 ms aos 30 e poucos, 30–56 ms aos 40 e poucos, e mais estreito depois disso. O SDNN do Apple Watch tem referências próprias e diferentes. Informe sua idade e seu número para ver seu percentil. [Calculadora de VFC por idade →](/tools/hrv)"
+          "q": "Qual é a faixa normal de HRV por idade?",
+          "a": "O RMSSD noturno típico (a metade central dos adultos saudáveis) fica em torno de 42–78 ms entre 18 e 29 anos, 36–68 ms aos 30 e poucos, 30–56 ms aos 40 e poucos, e mais estreito depois disso. O SDNN do Apple Watch tem referências próprias e diferentes. Informe sua idade e seu número para ver seu percentil. [Calculadora de HRV por idade →](/tools/hrv)"
         },
         {
           "id": "is-my-number-good",
-          "q": "VFC de 20, 30 ou 43 é boa? Por que a minha é só 30?",
+          "q": "HRV de 20, 30 ou 43 é boa? Por que a minha é só 30?",
           "a": "Depende da sua idade, do seu dispositivo e da sua linha de base. 20 ms pode ser comum aos 70 e poucos; 30 ms é típico aos 60 e baixo aos 25; 43 ms fica perto do meio para quem tem 40 e poucos; 100 ms é alto para a maioria dos adultos, mas normal para alguns atletas. Um número isolado, sem contexto, diz pouco — veja onde ele fica para a sua idade e depois acompanhe a tendência. [Confira o seu número →](/tools/hrv)"
         },
         {
           "id": "high-hrv",
-          "q": "VFC muito alta é bom? Por que minha VFC está tão alta?",
-          "a": "Geralmente é boa notícia: pessoas em forma e bem descansadas costumam ter VFC alta. Mas um salto repentino muito acima do normal também pode vir de batimentos irregulares ou extras, de um sensor frouxo ou — em atletas que treinam pesado — de fadiga profunda. Se uma VFC nova e incomumente alta vier com palpitações, tontura ou exaustão, comente com um médico. [Por que cada dispositivo mostra uma VFC diferente →](/articles/hrv-different-every-device)"
+          "q": "HRV muito alta é bom? Por que minha HRV está tão alta?",
+          "a": "Geralmente é boa notícia: pessoas em forma e bem descansadas costumam ter HRV alta. Mas um salto repentino muito acima do normal também pode vir de batimentos irregulares ou extras, de um sensor frouxo ou — em atletas que treinam pesado — de fadiga profunda. Se uma HRV nova e incomumente alta vier com palpitações, tontura ou exaustão, comente com um médico. [Por que cada dispositivo mostra uma HRV diferente →](/articles/hrv-different-every-device)"
         },
         {
           "id": "lower-than-friend",
-          "q": "Por que minha VFC é mais baixa que a do meu amigo?",
-          "a": "Porque a VFC varia enormemente entre pessoas por motivos que não têm a ver com saúde: genética, idade, porte físico, histórico de condicionamento e o dispositivo que mede. Comparar com um amigo é como comparar número de sapato. A comparação útil é você nesta semana contra você nas últimas semanas. [Por que cada dispositivo mostra uma VFC diferente →](/articles/hrv-different-every-device)"
+          "q": "Por que minha HRV é mais baixa que a do meu amigo?",
+          "a": "Porque a HRV varia enormemente entre pessoas por motivos que não têm a ver com saúde: genética, idade, porte físico, histórico de condicionamento e o dispositivo que mede. Comparar com um amigo é como comparar número de sapato. A comparação útil é você nesta semana contra você nas últimas semanas. [Por que cada dispositivo mostra uma HRV diferente →](/articles/hrv-different-every-device)"
         },
         {
           "id": "men-women-hrv",
-          "q": "Homens e mulheres têm VFC diferente?",
-          "a": "Sim, um pouco. Uma meta-análise de 2016 (Koenig and Thayer 2016) mostrou que as mulheres têm, em média, medidas vagais de VFC mais altas, mas variabilidade geral mais baixa do que homens da mesma idade. As diferenças são pequenas perto da dispersão entre indivíduos, então o sexo pesa menos do que a idade e a sua própria linha de base."
+          "q": "Homens e mulheres têm HRV diferente?",
+          "a": "Sim, um pouco. Uma meta-análise de 2016 (Koenig and Thayer 2016) mostrou que as mulheres têm, em média, medidas vagais de HRV mais altas, mas variabilidade geral mais baixa do que homens da mesma idade. As diferenças são pequenas perto da dispersão entre indivíduos, então o sexo pesa menos do que a idade e a sua própria linha de base."
         },
         {
           "id": "hrv-and-age",
-          "q": "A VFC diminui com a idade?",
-          "a": "Sim. A VFC cai de forma constante ao longo da vida adulta — a mediana cai mais ou menos pela metade entre os 20 e os 60 anos — e a queda é mais acentuada no início e no meio da vida adulta. Exercício aeróbico regular e bom sono desaceleram a queda, mas não a impedem, então sempre se compare com a sua faixa etária. [VFC normal por idade →](/articles/normal-hrv-by-age)"
+          "q": "A HRV diminui com a idade?",
+          "a": "Sim. A HRV cai de forma constante ao longo da vida adulta — a mediana cai mais ou menos pela metade entre os 20 e os 60 anos — e a queda é mais acentuada no início e no meio da vida adulta. Exercício aeróbico regular e bom sono desaceleram a queda, mas não a impedem, então sempre se compare com a sua faixa etária. [HRV normal por idade →](/articles/normal-hrv-by-age)"
         },
         {
           "id": "hrv-all-over-the-place",
-          "q": "Por que minha VFC oscila tanto?",
-          "a": "Porque ela foi feita para variar. A VFC reage ao sono da noite anterior, a uma bebida, a um treino pesado, ao estresse e até a como você respirou durante a medição. Oscilações diárias são normais; acompanhe a média de 7 dias em relação à sua própria faixa, em vez de um número isolado. [Como medir a VFC de forma consistente →](/articles/how-to-measure-hrv-consistently)"
+          "q": "Por que minha HRV oscila tanto?",
+          "a": "Porque ela foi feita para variar. A HRV reage ao sono da noite anterior, a uma bebida, a um treino pesado, ao estresse e até a como você respirou durante a medição. Oscilações diárias são normais; acompanhe a média de 7 dias em relação à sua própria faixa, em vez de um número isolado. [Como medir a HRV de forma consistente →](/articles/how-to-measure-hrv-consistently)"
         },
         {
           "id": "hrv-during-sleep",
-          "q": "Qual é uma boa VFC durante a noite, e por que ela muda no sono?",
-          "a": "A VFC noturna costuma ser o seu número mais confiável, porque nada mais está acontecendo. A atividade vagal tende a ser mais forte no sono profundo (não REM) e mais irregular no REM, então a VFC sobe e desce ao longo da noite; relógios e anéis mostram uma média ou uma amostra disso. Compare noites com noites, não com medições pontuais durante o dia."
+          "q": "Qual é uma boa HRV durante a noite, e por que ela muda no sono?",
+          "a": "A HRV noturna costuma ser o seu número mais confiável, porque nada mais está acontecendo. A atividade vagal tende a ser mais forte no sono profundo (não REM) e mais irregular no REM, então a HRV sobe e desce ao longo da noite; relógios e anéis mostram uma média ou uma amostra disso. Compare noites com noites, não com medições pontuais durante o dia."
         }
       ]
     },
     {
-      "title": "O que baixa a VFC",
+      "title": "O que baixa a HRV",
       "items": [
         {
           "id": "why-is-my-hrv-low",
-          "q": "Por que minha VFC caiu de repente?",
-          "a": "Os suspeitos de sempre são sono curto ou interrompido, álcool na noite anterior, um treino pesado, uma doença começando, desidratação ou um dia estressante. Uma leitura baixa é variação normal; uma queda que dura vários dias junto com aumento da frequência cardíaca de repouso merece atenção. [O que fazer depois de uma VFC baixa →](/articles/what-to-do-after-low-hrv-reading)"
+          "q": "Por que minha HRV caiu de repente?",
+          "a": "Os suspeitos de sempre são sono curto ou interrompido, álcool na noite anterior, um treino pesado, uma doença começando, desidratação ou um dia estressante. Uma leitura baixa é variação normal; uma queda que dura vários dias junto com aumento da frequência cardíaca de repouso merece atenção. [O que fazer depois de uma HRV baixa →](/articles/what-to-do-after-low-hrv-reading)"
         },
         {
           "id": "alcohol-hrv",
-          "q": "Álcool baixa a VFC? Por quanto tempo?",
-          "a": "Sim, e de forma dependente da dose. Num grande estudo da Firstbeat (Pietilä 2018), até uma ou duas doses baixaram a VFC noturna, e beber mais a derrubou bastante; o efeito costuma ser mais forte na primeira noite e some ao longo de um a vários dias. [Quanto o álcool baixa a VFC →](/articles/how-much-alcohol-lowers-hrv) · [Calculadora de álcool →](/tools/alcohol)"
+          "q": "Álcool baixa a HRV? Por quanto tempo?",
+          "a": "Sim, e de forma dependente da dose. Num grande estudo da Firstbeat (Pietilä 2018), até uma ou duas doses baixaram a HRV noturna, e beber mais a derrubou bastante; o efeito costuma ser mais forte na primeira noite e some ao longo de um a vários dias. [Quanto o álcool baixa a HRV →](/articles/how-much-alcohol-lowers-hrv) · [Calculadora de álcool →](/tools/alcohol)"
         },
         {
           "id": "caffeine-hrv",
-          "q": "Cafeína afeta a VFC?",
-          "a": "Pouco. A cafeína em si tem um efeito pequeno e variável na VFC, mas cafeína tarde encurta e deixa o sono mais leve, e isso muitas vezes aparece como VFC noturna mais baixa. O horário importa mais do que a xícara. [Cafeína, VFC e frequência cardíaca de repouso →](/articles/caffeine-hrv-resting-heart-rate) · [Calculadora de cafeína →](/tools/caffeine)"
+          "q": "Cafeína afeta a HRV?",
+          "a": "Pouco. A cafeína em si tem um efeito pequeno e variável na HRV, mas cafeína tarde encurta e deixa o sono mais leve, e isso muitas vezes aparece como HRV noturna mais baixa. O horário importa mais do que a xícara. [Cafeína, HRV e frequência cardíaca de repouso →](/articles/caffeine-hrv-resting-heart-rate) · [Calculadora de cafeína →](/tools/caffeine)"
         },
         {
           "id": "nicotine-hrv",
-          "q": "Nicotina ou vape baixam a VFC?",
-          "a": "Sim. A nicotina ativa o sistema nervoso simpático, aumentando a frequência cardíaca e baixando a VFC em minutos, e fumantes e usuários de vape regulares tendem a ter VFC mais baixa do que quem não usa. A VFC tende a melhorar depois de parar. [Nicotina, vape e VFC →](/articles/nicotine-vaping-hrv-heart-rate)"
+          "q": "Nicotina ou vape baixam a HRV?",
+          "a": "Sim. A nicotina ativa o sistema nervoso simpático, aumentando a frequência cardíaca e baixando a HRV em minutos, e fumantes e usuários de vape regulares tendem a ter HRV mais baixa do que quem não usa. A HRV tende a melhorar depois de parar. [Nicotina, vape e HRV →](/articles/nicotine-vaping-hrv-heart-rate)"
         },
         {
           "id": "stress-hrv",
-          "q": "Estresse baixa a VFC?",
-          "a": "Sim. O estresse psicológico empurra o sistema nervoso para o modo \"luta ou fuga\", o que baixa a VFC — muitas vezes dá para ver isso na noite depois de um dia difícil. O estresse crônico a mantém baixa por mais tempo. Respirar devagar é uma das poucas formas de aumentar a VFC na hora. [Ansiedade, respiração e VFC →](/articles/anxiety-panic-breathing-hrv)"
+          "q": "Estresse baixa a HRV?",
+          "a": "Sim. O estresse psicológico empurra o sistema nervoso para o modo \"luta ou fuga\", o que baixa a HRV — muitas vezes dá para ver isso na noite depois de um dia difícil. O estresse crônico a mantém baixa por mais tempo. Respirar devagar é uma das poucas formas de aumentar a HRV na hora. [Ansiedade, respiração e HRV →](/articles/anxiety-panic-breathing-hrv)"
         },
         {
           "id": "overtraining-hrv",
-          "q": "O excesso de treino aparece na VFC?",
-          "a": "Muitas vezes, sim. Uma sequência de VFC abaixo do normal junto com frequência cardíaca de repouso mais alta é um sinal comum de que a carga de treino está passando da recuperação. Muitos treinadores usam a média de 7 dias da VFC em relação à linha de base do próprio atleta para ajustar a intensidade. [Excesso de treino, VFC e frequência cardíaca de repouso →](/articles/overtraining-hrv-resting-heart-rate)"
+          "q": "O excesso de treino aparece na HRV?",
+          "a": "Muitas vezes, sim. Uma sequência de HRV abaixo do normal junto com frequência cardíaca de repouso mais alta é um sinal comum de que a carga de treino está passando da recuperação. Muitos treinadores usam a média de 7 dias da HRV em relação à linha de base do próprio atleta para ajustar a intensidade. [Excesso de treino, HRV e frequência cardíaca de repouso →](/articles/overtraining-hrv-resting-heart-rate)"
         },
         {
           "id": "illness-hrv",
-          "q": "Ficar doente baixa a VFC?",
-          "a": "Geralmente. Infecção e febre aumentam a frequência cardíaca e baixam a VFC, e estudos com wearables — incluindo o estudo Warrior Watch do Mount Sinai com usuários de Apple Watch (Hirten 2021) — observaram mudanças na VFC por volta da infecção por COVID-19. Uma queda não é um diagnóstico, mas é um motivo para descansar."
+          "q": "Ficar doente baixa a HRV?",
+          "a": "Geralmente. Infecção e febre aumentam a frequência cardíaca e baixam a HRV, e estudos com wearables — incluindo o estudo Warrior Watch do Mount Sinai com usuários de Apple Watch (Hirten 2021) — observaram mudanças na HRV por volta da infecção por COVID-19. Uma queda não é um diagnóstico, mas é um motivo para descansar."
         },
         {
           "id": "sleep-hrv",
-          "q": "Por que minha VFC fica baixa depois de uma noite mal dormida?",
-          "a": "A maior parte da recuperação parassimpática que a VFC reflete acontece durante o sono, principalmente o sono profundo. Sono curto, tardio ou interrompido deixa menos dessa recuperação, e a média noturna cai. Um horário regular para dormir é uma das formas mais confiáveis de estabilizar a VFC. [Calculadora de ciclos do sono →](/tools/sleep-cycle)"
+          "q": "Por que minha HRV fica baixa depois de uma noite mal dormida?",
+          "a": "A maior parte da recuperação parassimpática que a HRV reflete acontece durante o sono, principalmente o sono profundo. Sono curto, tardio ou interrompido deixa menos dessa recuperação, e a média noturna cai. Um horário regular para dormir é uma das formas mais confiáveis de estabilizar a HRV. [Calculadora de ciclos do sono →](/tools/sleep-cycle)"
         },
         {
           "id": "dehydration-hrv",
-          "q": "Desidratação pode baixar a VFC?",
-          "a": "Pode. Com menos volume de líquido, o coração trabalha mais para manter a pressão arterial, o que aumenta a frequência cardíaca e tende a baixar a VFC. O efeito costuma ser menor do que o do sono ou do álcool, mas pode se somar depois de um dia quente, um voo longo ou exercício intenso."
+          "q": "Desidratação pode baixar a HRV?",
+          "a": "Pode. Com menos volume de líquido, o coração trabalha mais para manter a pressão arterial, o que aumenta a frequência cardíaca e tende a baixar a HRV. O efeito costuma ser menor do que o do sono ou do álcool, mas pode se somar depois de um dia quente, um voo longo ou exercício intenso."
         },
         {
           "id": "late-meals-hrv",
-          "q": "Comer tarde baixa a VFC?",
-          "a": "Muitas vezes, sim. Uma refeição grande ou tardia mantém a digestão e a frequência cardíaca altas nas primeiras horas de sono, e dados de wearables costumam mostrar VFC noturna mais baixa depois. As evidências são sobretudo observacionais, mas terminar o jantar duas a três horas antes de dormir é um experimento fácil de fazer em si mesmo."
+          "q": "Comer tarde baixa a HRV?",
+          "a": "Muitas vezes, sim. Uma refeição grande ou tardia mantém a digestão e a frequência cardíaca altas nas primeiras horas de sono, e dados de wearables costumam mostrar HRV noturna mais baixa depois. As evidências são sobretudo observacionais, mas terminar o jantar duas a três horas antes de dormir é um experimento fácil de fazer em si mesmo."
         },
         {
           "id": "low-but-fit",
-          "q": "Por que minha VFC é baixa mesmo eu estando em forma?",
-          "a": "O condicionamento eleva o teto, mas carga de treino, sono curto, estresse, viagem ou um resfriado começando ainda podem puxar a VFC para baixo — e a genética deixa algumas pessoas com VFC mais baixa a vida toda. Se a sua VFC caiu abaixo da sua faixa habitual, olhe primeiro para a carga e a recuperação recentes. [Excesso de treino, VFC e frequência cardíaca de repouso →](/articles/overtraining-hrv-resting-heart-rate)"
+          "q": "Por que minha HRV é baixa mesmo eu estando em forma?",
+          "a": "O condicionamento eleva o teto, mas carga de treino, sono curto, estresse, viagem ou um resfriado começando ainda podem puxar a HRV para baixo — e a genética deixa algumas pessoas com HRV mais baixa a vida toda. Se a sua HRV caiu abaixo da sua faixa habitual, olhe primeiro para a carga e a recuperação recentes. [Excesso de treino, HRV e frequência cardíaca de repouso →](/articles/overtraining-hrv-resting-heart-rate)"
         }
       ]
     },
     {
-      "title": "Como aumentar a VFC",
+      "title": "Como aumentar a HRV",
       "items": [
         {
           "id": "raise-hrv",
-          "q": "Como aumentar a VFC naturalmente?",
-          "a": "As alavancas com melhores evidências são exercício aeróbico regular, horários de sono consistentes, menos álcool, controle do estresse e respiração lenta diária. Nenhuma funciona da noite para o dia; juntas, elas deslocam sua linha de base ao longo de semanas. [Como aumentar a VFC naturalmente →](/articles/how-to-raise-hrv-naturally)"
+          "q": "Como aumentar a HRV naturalmente?",
+          "a": "As alavancas com melhores evidências são exercício aeróbico regular, horários de sono consistentes, menos álcool, controle do estresse e respiração lenta diária. Nenhuma funciona da noite para o dia; juntas, elas deslocam sua linha de base ao longo de semanas. [Como aumentar a HRV naturalmente →](/articles/how-to-raise-hrv-naturally)"
         },
         {
           "id": "how-fast-hrv-improves",
-          "q": "Em quanto tempo a VFC melhora?",
-          "a": "Depende da alavanca. A respiração lenta aumenta a VFC em minutos durante a sessão; cortar o álcool aparece em uma ou duas noites; sono melhor, em uma a três semanas; treino aeróbico, em um a dois meses. Avalie a mudança pela média semanal, não por uma única manhã."
+          "q": "Em quanto tempo a HRV melhora?",
+          "a": "Depende da alavanca. A respiração lenta aumenta a HRV em minutos durante a sessão; cortar o álcool aparece em uma ou duas noites; sono melhor, em uma a três semanas; treino aeróbico, em um a dois meses. Avalie a mudança pela média semanal, não por uma única manhã."
         },
         {
           "id": "breathing-raises-hrv",
-          "q": "A respiração aumenta a VFC?",
-          "a": "Sim — respirar devagar é a forma mais rápida de aumentar a VFC. Respirar em torno de seis vezes por minuto amplia muito a aceleração e desaceleração naturais do coração, e uma meta-análise de 2022 (Laborde e colegas) confirmou que a respiração lenta voluntária aumenta as medidas vagais de VFC. [Timer de respiração →](/tools/breathing)"
+          "q": "A respiração aumenta a HRV?",
+          "a": "Sim — respirar devagar é a forma mais rápida de aumentar a HRV. Respirar em torno de seis vezes por minuto amplia muito a aceleração e desaceleração naturais do coração, e uma meta-análise de 2022 (Laborde e colegas) confirmou que a respiração lenta voluntária aumenta as medidas vagais de HRV. [Timer de respiração →](/tools/breathing)"
         },
         {
           "id": "best-breathing-for-hrv",
-          "q": "Qual é a melhor técnica de respiração para a VFC?",
-          "a": "Respiração lenta e regular no seu ritmo de ressonância — cerca de 4,5–7 respirações por minuto, normalmente cerca de 5,5–6 — produz as maiores oscilações de VFC. A respiração quadrada e a 4-7-8 também desaceleram, e o suspiro fisiológico é bom para um reset rápido. A constância vale mais do que a escolha da técnica. [Respiração ressonante →](/tools/resonance-breathing) · [Respiração 4-7-8 →](/articles/4-7-8-breathing)"
+          "q": "Qual é a melhor técnica de respiração para a HRV?",
+          "a": "Respiração lenta e regular no seu ritmo de ressonância — cerca de 4,5–7 respirações por minuto, normalmente cerca de 5,5–6 — produz as maiores oscilações de HRV. A respiração quadrada e a 4-7-8 também desaceleram, e o suspiro fisiológico é bom para um reset rápido. A constância vale mais do que a escolha da técnica. [Respiração ressonante →](/tools/resonance-breathing) · [Respiração 4-7-8 →](/articles/4-7-8-breathing)"
         },
         {
           "id": "meditation-hrv",
-          "q": "Meditação aumenta a VFC?",
-          "a": "Pode aumentar, principalmente práticas que desaceleram a respiração. Os estudos mostram resultados mistos para a meditação sozinha, enquanto práticas baseadas em respiração lenta aumentam a VFC de forma mais confiável. Medir a sua própria resposta é o jeito honesto de descobrir o que funciona para você. [Meditação com progresso mensurável →](/articles/meditation-with-measurable-progress)"
+          "q": "Meditação aumenta a HRV?",
+          "a": "Pode aumentar, principalmente práticas que desaceleram a respiração. Os estudos mostram resultados mistos para a meditação sozinha, enquanto práticas baseadas em respiração lenta aumentam a HRV de forma mais confiável. Medir a sua própria resposta é o jeito honesto de descobrir o que funciona para você. [Meditação com progresso mensurável →](/articles/meditation-with-measurable-progress)"
         },
         {
           "id": "cold-wim-hof-hrv",
-          "q": "Banho frio ou respiração Wim Hof aumentam a VFC?",
-          "a": "A exposição ao frio está ligada a uma breve resposta vagal e pode dar um leve empurrão na VFC depois, mas as evidências de longo prazo são escassas. A respiração Wim Hof é hiperventilação rápida seguida de apneias — uma ferramenta diferente da respiração lenta, e não a primeira escolha para aumentar a VFC. [Limites honestos da respiração e do frio →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hof →](/tools/wim-hof)"
+          "q": "Banho frio ou respiração Wim Hof aumentam a HRV?",
+          "a": "A exposição ao frio está ligada a uma breve resposta vagal e pode dar um leve empurrão na HRV depois, mas as evidências de longo prazo são escassas. A respiração Wim Hof é hiperventilação rápida seguida de apneias — uma ferramenta diferente da respiração lenta, e não a primeira escolha para aumentar a HRV. [Limites honestos da respiração e do frio →](/articles/hrv-breathing-cold-honest-limits) · [Timer Wim Hof →](/tools/wim-hof)"
         },
         {
           "id": "biofeedback-hrv",
-          "q": "Dá para treinar a VFC com biofeedback?",
-          "a": "Sim. O biofeedback de VFC mostra o seu ritmo cardíaco ao vivo enquanto você respira devagar, para você encontrar o ritmo que produz as maiores oscilações. Estudos clínicos o usam para estresse e ansiedade, e é assim que apps como o ONDA guiam a respiração. [Melhores apps de biofeedback de VFC →](/compare/best-hrv-biofeedback-apps)"
+          "q": "Dá para treinar a HRV com biofeedback?",
+          "a": "Sim. O biofeedback de HRV mostra o seu ritmo cardíaco ao vivo enquanto você respira devagar, para você encontrar o ritmo que produz as maiores oscilações. Estudos clínicos o usam para estresse e ansiedade, e é assim que apps como o ONDA guiam a respiração. [Melhores apps de biofeedback de HRV →](/compare/best-hrv-biofeedback-apps)"
         }
       ]
     },
     {
-      "title": "Medição da VFC e dispositivos",
+      "title": "Medição da HRV e dispositivos",
       "items": [
         {
           "id": "when-to-measure",
-          "q": "Qual é o melhor horário para medir a VFC?",
-          "a": "Durante a noite (o que anéis e cintas fazem em média) ou logo ao acordar, deitado e parado, antes do café ou do celular. O essencial é fazer sempre do mesmo jeito — uma leitura de manhã e uma à tarde não são comparáveis. [Como medir a VFC de forma consistente →](/articles/how-to-measure-hrv-consistently)"
+          "q": "Qual é o melhor horário para medir a HRV?",
+          "a": "Durante a noite (o que anéis e cintas fazem em média) ou logo ao acordar, deitado e parado, antes do café ou do celular. O essencial é fazer sempre do mesmo jeito — uma leitura de manhã e uma à tarde não são comparáveis. [Como medir a HRV de forma consistente →](/articles/how-to-measure-hrv-consistently)"
         },
         {
           "id": "how-to-measure",
-          "q": "Como medir a VFC?",
+          "q": "Como medir a HRV?",
           "a": "Uma cinta peitoral dá os dados batimento a batimento mais precisos; relógios e anéis bastam para tendências se usados com constância. Você também pode ter uma estimativa curta pela câmera do celular, com a ponta do dedo sobre a lente. Escolha um método e mantenha-o. [Ferramenta de frequência cardíaca pela câmera →](/tools/camera-heart-rate)"
         },
         {
           "id": "devices-differ",
-          "q": "Por que minha VFC é diferente no Apple Watch, no Oura e no Garmin?",
-          "a": "Eles medem em momentos diferentes, em janelas diferentes e com fórmulas diferentes — o Apple Watch informa SDNN, a maioria dos outros informa RMSSD. Um 45 em um não é um 45 em outro. Compare cada dispositivo só com ele mesmo. [Por que a VFC é diferente em cada dispositivo →](/articles/hrv-different-every-device)"
+          "q": "Por que minha HRV é diferente no Apple Watch, no Oura e no Garmin?",
+          "a": "Eles medem em momentos diferentes, em janelas diferentes e com fórmulas diferentes — o Apple Watch informa SDNN, a maioria dos outros informa RMSSD. Um 45 em um não é um 45 em outro. Compare cada dispositivo só com ele mesmo. [Por que a HRV é diferente em cada dispositivo →](/articles/hrv-different-every-device)"
         },
         {
           "id": "apple-watch-accuracy",
-          "q": "A VFC do Apple Watch é precisa?",
-          "a": "Em repouso, é precisa o suficiente para acompanhar tendências; em movimento, é bem menos confiável. O Apple Watch registra SDNN pelo sensor óptico em momentos de quietude e nas sessões do Respirar, então os números não são comparáveis com o RMSSD de anéis ou cintas. [VFC de recuperação vs VFC geral no Apple Watch →](/articles/apple-watch-recovery-hrv-vs-overall-hrv)"
+          "q": "A HRV do Apple Watch é precisa?",
+          "a": "Em repouso, é precisa o suficiente para acompanhar tendências; em movimento, é bem menos confiável. O Apple Watch registra SDNN pelo sensor óptico em momentos de quietude e nas sessões do Respirar, então os números não são comparáveis com o RMSSD de anéis ou cintas. [HRV de recuperação vs HRV geral no Apple Watch →](/articles/apple-watch-recovery-hrv-vs-overall-hrv)"
         },
         {
           "id": "apple-watch-find",
-          "q": "Onde vejo a VFC no Apple Watch, e por que ela é tão baixa?",
-          "a": "Abra o app Saúde no iPhone e busque Variabilidade da Frequência Cardíaca. O Apple Watch há muito tempo informa SDNN, que fica abaixo dos valores de RMSSD mostrados por anéis e cintas, então muitas vezes parece baixa em comparação. Os modelos Series 12 e Ultra 4 adicionam uma VFC de recuperação separada. [VFC de recuperação vs VFC geral no Apple Watch →](/articles/apple-watch-recovery-hrv-vs-overall-hrv)"
+          "q": "Onde vejo a HRV no Apple Watch, e por que ela é tão baixa?",
+          "a": "Abra o app Saúde no iPhone e busque Variabilidade da Frequência Cardíaca. O Apple Watch há muito tempo informa SDNN, que fica abaixo dos valores de RMSSD mostrados por anéis e cintas, então muitas vezes parece baixa em comparação. Os modelos Series 12 e Ultra 4 adicionam uma HRV de recuperação separada. [HRV de recuperação vs HRV geral no Apple Watch →](/articles/apple-watch-recovery-hrv-vs-overall-hrv)"
         },
         {
           "id": "watch-status",
-          "q": "Meu relógio diz que a VFC está \"desequilibrada\" ou \"precisa de atenção\". Devo procurar um médico?",
-          "a": "Não só por isso. Indicadores como o status de VFC do Garmin ou o equilíbrio de VFC do Oura comparam as noites recentes com a sua própria linha de base, então sinalizam uma mudança, não uma doença. Descanse, durma e alivie o treino por alguns dias. Procure um médico se vier acompanhado de dor no peito, desmaio, palpitações ou falta de ar. [O que fazer depois de uma VFC baixa →](/articles/what-to-do-after-low-hrv-reading)"
+          "q": "Meu relógio diz que a HRV está \"desequilibrada\" ou \"precisa de atenção\". Devo procurar um médico?",
+          "a": "Não só por isso. Indicadores como o status de HRV do Garmin ou o equilíbrio de HRV do Oura comparam as noites recentes com a sua própria linha de base, então sinalizam uma mudança, não uma doença. Descanse, durma e alivie o treino por alguns dias. Procure um médico se vier acompanhado de dor no peito, desmaio, palpitações ou falta de ar. [O que fazer depois de uma HRV baixa →](/articles/what-to-do-after-low-hrv-reading)"
         },
         {
           "id": "phone-camera-hrv",
-          "q": "Dá para medir a VFC com a câmera do celular?",
-          "a": "Dá para obter uma frequência cardíaca razoável e uma estimativa aproximada de VFC de curto prazo apoiando a ponta do dedo sobre a câmera e o flash. A medição é sensível a movimento e pressão, então trate-a como uma checagem pontual, não como substituta de uma cinta. [Treine a VFC com a câmera do iPhone →](/articles/train-hrv-iphone-camera-no-wearable)"
+          "q": "Dá para medir a HRV com a câmera do celular?",
+          "a": "Dá para obter uma frequência cardíaca razoável e uma estimativa aproximada de HRV de curto prazo apoiando a ponta do dedo sobre a câmera e o flash. A medição é sensível a movimento e pressão, então trate-a como uma checagem pontual, não como substituta de uma cinta. [Treine a HRV com a câmera do iPhone →](/articles/train-hrv-iphone-camera-no-wearable)"
         },
         {
           "id": "best-hrv-tracker",
-          "q": "Qual é o melhor monitor de VFC?",
-          "a": "Para precisão, uma cinta peitoral como a Polar H10; para tendências noturnas sem esforço, um anel ou um relógio que você já usa. O melhor monitor é aquele que você vai usar todas as noites. [Melhores monitores de VFC de 2026 →](/reviews/compare/best-hrv-trackers-2026)"
+          "q": "Qual é o melhor monitor de HRV?",
+          "a": "Para precisão, uma cinta peitoral como a Polar H10; para tendências noturnas sem esforço, um anel ou um relógio que você já usa. O melhor monitor é aquele que você vai usar todas as noites. [Melhores monitores de HRV de 2026 →](/reviews/compare/best-hrv-trackers-2026)"
         },
         {
           "id": "reading-or-trend",
-          "q": "Devo olhar uma leitura isolada de VFC ou a tendência?",
-          "a": "A tendência. A VFC do dia a dia varia muito por motivos comuns, então uma manhã diz pouco. Compare cada leitura com a sua própria faixa recente: o app ONDA, por exemplo, compara cada noite com o seu corredor (a média das suas noites recentes ± um desvio padrão), precisa de pelo menos 7 noites e forma a linha de base ao longo de 14 dias. [Veja a sua faixa de duas semanas →](/tools/baseline)"
+          "q": "Devo olhar uma leitura isolada de HRV ou a tendência?",
+          "a": "A tendência. A HRV do dia a dia varia muito por motivos comuns, então uma manhã diz pouco. Compare cada leitura com a sua própria faixa recente: o app ONDA, por exemplo, compara cada noite com o seu corredor (a média das suas noites recentes ± um desvio padrão), precisa de pelo menos 7 noites e forma a linha de base ao longo de 14 dias. [Veja a sua faixa de duas semanas →](/tools/baseline)"
         },
         {
           "id": "baseline-days",
-          "q": "Quantos dias de dados formam uma linha de base de VFC?",
+          "q": "Quantos dias de dados formam uma linha de base de HRV?",
           "a": "Cerca de duas semanas de leituras consistentes dão uma faixa utilizável; um mês é melhor. Antes disso, os números refletem sobretudo ruído e o que aconteceu naquela semana. [Sua linha de base percebe primeiro →](/articles/your-baseline-knows-first)"
         }
       ]
     },
     {
-      "title": "VFC e sua saúde",
+      "title": "HRV e sua saúde",
       "items": [
         {
           "id": "low-hrv-health",
-          "q": "VFC baixa pode ser sinal de problema de saúde?",
-          "a": "Em pesquisas, VFC mais baixa está associada a maior risco cardiovascular (por exemplo, na coorte de Framingham, Tsuji 1994) e a condições como diabetes. Mas um número baixo num wearable não é um diagnóstico — idade, dispositivo e uma noite ruim explicam a maioria das leituras baixas."
+          "q": "HRV baixa pode ser sinal de problema de saúde?",
+          "a": "Em pesquisas, HRV mais baixa está associada a maior risco cardiovascular (por exemplo, na coorte de Framingham, Tsuji 1994) e a condições como diabetes. Mas um número baixo num wearable não é um diagnóstico — idade, dispositivo e uma noite ruim explicam a maioria das leituras baixas."
         },
         {
           "id": "dangerously-low",
-          "q": "Qual é uma VFC perigosamente baixa?",
-          "a": "Não existe um único limite que seja perigoso por si só. VFC baixa para a idade está ligada a maior risco em grupos de pesquisa, mas num wearable os sinais que importam são uma queda prolongada abaixo da sua própria faixa e quaisquer sintomas que venham junto. Veja onde o seu número fica para a sua idade e depois acompanhe a tendência. [Calculadora de VFC por idade →](/tools/hrv)"
+          "q": "Qual é uma HRV perigosamente baixa?",
+          "a": "Não existe um único limite que seja perigoso por si só. HRV baixa para a idade está ligada a maior risco em grupos de pesquisa, mas num wearable os sinais que importam são uma queda prolongada abaixo da sua própria faixa e quaisquer sintomas que venham junto. Veja onde o seu número fica para a sua idade e depois acompanhe a tendência. [Calculadora de HRV por idade →](/tools/hrv)"
         },
         {
           "id": "should-i-worry",
-          "q": "Devo me preocupar se minha VFC está baixa? Dá para viver muito com VFC baixa?",
-          "a": "Geralmente não. Muitas pessoas saudáveis têm VFC baixa por causa da idade, da genética ou do dispositivo, e vivem muito. VFC mais baixa é um marcador de risco em grandes populações, não um veredito para uma pessoa. Importa mais se ela cai e continua baixa, ou se vem com sintomas."
+          "q": "Devo me preocupar se minha HRV está baixa? Dá para viver muito com HRV baixa?",
+          "a": "Geralmente não. Muitas pessoas saudáveis têm HRV baixa por causa da idade, da genética ou do dispositivo, e vivem muito. HRV mais baixa é um marcador de risco em grandes populações, não um veredito para uma pessoa. Importa mais se ela cai e continua baixa, ou se vem com sintomas."
         },
         {
           "id": "can-low-hrv-be-reversed",
-          "q": "Dá para reverter uma VFC baixa?",
-          "a": "Muitas vezes dá para aumentá-la, dentro de limites definidos pela idade e pela genética. Exercício aeróbico, sono regular, menos álcool e respiração lenta diária aumentam a VFC ao longo de semanas a meses nos estudos. Uma VFC baixa causada por uma condição médica melhora principalmente com o tratamento dessa condição. [Como aumentar a VFC naturalmente →](/articles/how-to-raise-hrv-naturally)"
+          "q": "Dá para reverter uma HRV baixa?",
+          "a": "Muitas vezes dá para aumentá-la, dentro de limites definidos pela idade e pela genética. Exercício aeróbico, sono regular, menos álcool e respiração lenta diária aumentam a HRV ao longo de semanas a meses nos estudos. Uma HRV baixa causada por uma condição médica melhora principalmente com o tratamento dessa condição. [Como aumentar a HRV naturalmente →](/articles/how-to-raise-hrv-naturally)"
         },
         {
           "id": "see-a-doctor",
-          "q": "Quando devo falar com um médico sobre minha VFC?",
-          "a": "Se uma mudança prolongada na VFC ou na frequência cardíaca de repouso vier com sintomas — dor no peito, desmaio, palpitações, falta de ar incomum — procure um médico logo. Sem sintomas, leve a sua tendência a uma consulta de rotina. [Como falar com seu médico sobre dados de wearables →](/articles/talk-to-your-doctor-about-wearable-data)"
+          "q": "Quando devo falar com um médico sobre minha HRV?",
+          "a": "Se uma mudança prolongada na HRV ou na frequência cardíaca de repouso vier com sintomas — dor no peito, desmaio, palpitações, falta de ar incomum — procure um médico logo. Sem sintomas, leve a sua tendência a uma consulta de rotina. [Como falar com seu médico sobre dados de wearables →](/articles/talk-to-your-doctor-about-wearable-data)"
         },
         {
           "id": "cardiologists-hrv",
-          "q": "O que os cardiologistas dizem sobre a VFC?",
-          "a": "Cardiologistas estudam a VFC há décadas — VFC baixa após um infarto previu maior mortalidade num estudo clássico de 1987 (Kleiger 1987 e colegas), e uma força-tarefa de 1996 definiu os padrões de medição usados até hoje. Mas a VFC não é um exame isolado de rotina nas clínicas, e a VFC de wearables é tratada como uma tendência para conversar, não como um diagnóstico. [Fale com seu médico sobre dados de wearables →](/articles/talk-to-your-doctor-about-wearable-data)"
+          "q": "O que os cardiologistas dizem sobre a HRV?",
+          "a": "Cardiologistas estudam a HRV há décadas — HRV baixa após um infarto previu maior mortalidade num estudo clássico de 1987 (Kleiger 1987 e colegas), e uma força-tarefa de 1996 definiu os padrões de medição usados até hoje. Mas a HRV não é um exame isolado de rotina nas clínicas, e a HRV de wearables é tratada como uma tendência para conversar, não como um diagnóstico. [Fale com seu médico sobre dados de wearables →](/articles/talk-to-your-doctor-about-wearable-data)"
         },
         {
           "id": "hrv-anxiety",
-          "q": "A VFC tem relação com ansiedade?",
-          "a": "Sim. Uma meta-análise de 2014 (Chalmers e colegas) mostrou que pessoas com transtornos de ansiedade têm, em média, VFC mais baixa. A respiração lenta, que aumenta a VFC, também é uma das ferramentas mais simples para acalmar um momento de ansiedade. [Ansiedade, pânico e respiração →](/articles/anxiety-panic-breathing-hrv)"
+          "q": "A HRV tem relação com ansiedade?",
+          "a": "Sim. Uma meta-análise de 2014 (Chalmers e colegas) mostrou que pessoas com transtornos de ansiedade têm, em média, HRV mais baixa. A respiração lenta, que aumenta a HRV, também é uma das ferramentas mais simples para acalmar um momento de ansiedade. [Ansiedade, pânico e respiração →](/articles/anxiety-panic-breathing-hrv)"
         },
         {
           "id": "hrv-readiness",
-          "q": "A VFC prevê recuperação ou prontidão?",
-          "a": "É um sinal útil. Estudos que guiaram o treino pela VFC da manhã (por exemplo, Kiviniemi 2007) encontraram ganhos de condicionamento iguais ou melhores do que planos fixos. Combine-a com a frequência cardíaca de repouso, o sono e como você se sente, em vez de deixar um número decidir sozinho. [Recuperação da frequência cardíaca como marcador de condicionamento →](/articles/heart-rate-recovery-fitness-marker)"
+          "q": "A HRV prevê recuperação ou prontidão?",
+          "a": "É um sinal útil. Estudos que guiaram o treino pela HRV da manhã (por exemplo, Kiviniemi 2007) encontraram ganhos de condicionamento iguais ou melhores do que planos fixos. Combine-a com a frequência cardíaca de repouso, o sono e como você se sente, em vez de deixar um número decidir sozinho. [Recuperação da frequência cardíaca como marcador de condicionamento →](/articles/heart-rate-recovery-fitness-marker)"
         }
       ]
     }

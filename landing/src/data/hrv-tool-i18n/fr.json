@@ -1,23 +1,23 @@
 {
   "meta": {
-    "title": "Calculateur de VFC (HRV) selon l'âge — Normes | ONDA Life",
-    "description": "Calculateur de VFC gratuit : entrez votre âge et votre HRV (RMSSD Oura, Whoop, Garmin ou SDNN Apple Watch) : votre percentile et les normes par âge.",
-    "appName": "Calculateur de VFC (HRV) selon l'âge",
+    "title": "Calculateur de HRV selon l'âge — Normes | ONDA Life",
+    "description": "Calculateur de HRV gratuit : entrez votre âge et votre HRV (RMSSD Oura, Whoop, Garmin ou SDNN Apple Watch) : votre percentile et les normes par âge.",
+    "appName": "Calculateur de HRV selon l'âge",
     "appDescription": "Calculateur gratuit qui compare votre variabilité de la fréquence cardiaque (RMSSD ou SDNN de l'Apple Watch) aux normes publiées par âge et donne un percentile approximatif."
   },
   "breadcrumb": {
     "home": "Accueil",
     "tools": "Outils",
-    "current": "Calculateur de VFC"
+    "current": "Calculateur de HRV"
   },
-  "h1": "Calculateur de VFC (HRV) selon l'âge",
-  "capsule": "Entrez votre âge et votre variabilité de la fréquence cardiaque (VFC, ou HRV) pour voir où vous vous situez par rapport aux personnes de votre âge. Utilisez le RMSSD si votre valeur vient d'Oura, Whoop, Garmin ou Polar, et le SDNN si elle vient de l'Apple Watch. Les normes proviennent d'études publiées, mais votre tendance sur plusieurs semaines compte plus qu'un percentile.",
-  "imageAlt": "Calculateur de VFC (HRV) selon l'âge — calculateur interactif gratuit de variabilité de la fréquence cardiaque par ONDA Life",
+  "h1": "Calculateur de HRV selon l'âge",
+  "capsule": "Entrez votre âge et votre variabilité de la fréquence cardiaque (HRV, ou HRV) pour voir où vous vous situez par rapport aux personnes de votre âge. Utilisez le RMSSD si votre valeur vient d'Oura, Whoop, Garmin ou Polar, et le SDNN si elle vient de l'Apple Watch. Les normes proviennent d'études publiées, mais votre tendance sur plusieurs semaines compte plus qu'un percentile.",
+  "imageAlt": "Calculateur de HRV selon l'âge — calculateur interactif gratuit de variabilité de la fréquence cardiaque par ONDA Life",
   "metric": {
     "label": "Votre appareil affiche",
     "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
     "sdnn": "SDNN (Apple Watch)",
-    "hintRmssd": "Oura : Disponibilité → Équilibre de la VFC / VFC moyenne. Whoop : Recovery → HRV. Garmin : Statut VFC (moyenne nocturne). Polar : Nightly Recharge → VFC.",
+    "hintRmssd": "Oura : Disponibilité → Équilibre de la HRV / HRV moyenne. Whoop : Recovery → HRV. Garmin : Statut HRV (moyenne nocturne). Polar : Nightly Recharge → HRV.",
     "hintSdnn": "App Santé de l'iPhone → Parcourir → Cœur → Variabilité de la fréquence cardiaque. L'Apple Watch affiche le SDNN en ms — utilisez votre moyenne sur 7 jours si possible."
   },
   "age": {
@@ -25,8 +25,8 @@
     "placeholder": "ex. 34"
   },
   "value": {
-    "labelRmssd": "VFC — RMSSD (ms)",
-    "labelSdnn": "VFC — SDNN (ms)",
+    "labelRmssd": "HRV — RMSSD (ms)",
+    "labelSdnn": "HRV — SDNN (ms)",
     "placeholder": "ex. 45"
   },
   "result": {
@@ -43,17 +43,17 @@
   "summaries": {
     "low": "Avec {{v}} ms, vous êtes dans la fourchette basse pour les {{band}} ans. Une seule valeur basse est fréquente après une mauvaise nuit, de l'alcool, une maladie ou un entraînement intense — ce qui compte, c'est votre tendance sur plusieurs semaines, pas une nuit.",
     "below": "{{v}} ms est sous la médiane habituelle (~{{median}} ms) pour les {{band}} ans. Sommeil, horaire de l'alcool, cardio en zone 2 et respiration lente sont les leviers les mieux étayés par la recherche.",
-    "average": "{{v}} ms est proche de la médiane (~{{median}} ms) pour les {{band}} ans — une VFC de repos saine et typique. Suivez votre propre référence ; l'objectif est une tendance à la hausse.",
+    "average": "{{v}} ms est proche de la médiane (~{{median}} ms) pour les {{band}} ans — une HRV de repos saine et typique. Suivez votre propre référence ; l'objectif est une tendance à la hausse.",
     "above": "{{v}} ms est au-dessus de la médiane (~{{median}} ms) pour les {{band}} ans — bon signe de capacité de récupération. Préservez-la avec un sommeil et une récupération réguliers.",
-    "excellent": "{{v}} ms est dans la fourchette haute pour les {{band}} ans — le type de VFC que l'on observe souvent chez les personnes bien entraînées et bien récupérées."
+    "excellent": "{{v}} ms est dans la fourchette haute pour les {{band}} ans — le type de HRV que l'on observe souvent chez les personnes bien entraînées et bien récupérées."
   },
   "sdnnNote": "L'Apple Watch fait des mesures courtes (environ une minute) plusieurs fois par jour et la nuit, donc ses valeurs de SDNN varient davantage qu'un RMSSD nocturne. Comparez votre moyenne sur 7 jours, pas une mesure isolée.",
-  "invalid": "Entrez un âge valide (18–120) et une VFC en ms (1–300).",
-  "disclaimer": "Estimation à visée éducative, pas un avis médical. Les percentiles sont approximatifs et construits à partir d'études normatives publiées sur la VFC. Votre tendance sur plusieurs semaines et votre référence personnelle comptent bien plus qu'une mesure isolée ou qu'une comparaison avec la population. La VFC varie d'une nuit à l'autre selon le sommeil, l'alcool, la maladie et la charge d'entraînement.",
+  "invalid": "Entrez un âge valide (18–120) et une HRV en ms (1–300).",
+  "disclaimer": "Estimation à visée éducative, pas un avis médical. Les percentiles sont approximatifs et construits à partir d'études normatives publiées sur la HRV. Votre tendance sur plusieurs semaines et votre référence personnelle comptent bien plus qu'une mesure isolée ou qu'une comparaison avec la population. La HRV varie d'une nuit à l'autre selon le sommeil, l'alcool, la maladie et la charge d'entraînement.",
   "tables": {
-    "rmssdTitle": "VFC (RMSSD) selon l'âge — normes nocturnes",
+    "rmssdTitle": "HRV (RMSSD) selon l'âge — normes nocturnes",
     "rmssdCaption": "Pour Oura, Whoop, Garmin et Polar (RMSSD nocturne ou au repos).",
-    "sdnnTitle": "VFC (SDNN) selon l'âge — normes Apple Watch",
+    "sdnnTitle": "HRV (SDNN) selon l'âge — normes Apple Watch",
     "sdnnCaption": "Pour l'Apple Watch (SDNN). D'après Voss 2015 (ECG de repos de 5 minutes), femmes et hommes regroupés.",
     "age": "Âge",
     "p10": "Basse (p10)",
@@ -64,34 +64,34 @@
   },
   "sections": [
     {
-      "h2": "Quelle est la VFC normale selon l'âge ?",
-      "body": "Une bonne VFC se situe autour ou au-dessus de la médiane de votre âge — et surtout, elle reste stable ou augmente par rapport à votre propre référence. Pour le RMSSD nocturne (Oura, Whoop, Garmin, Polar), la médiane est d'environ 58 ms à 18–29 ans, 50 ms dans la trentaine, 42 ms dans la quarantaine, 36 ms dans la cinquantaine, 30 ms dans la soixantaine et 26 ms après 70 ans. La moitié centrale des personnes (p25–p75) dans la trentaine va d'environ 36 à 68 ms : l'écart au sein d'une même tranche d'âge est donc plus large que la différence entre deux décennies. C'est pourquoi une simple comparaison avec un tableau dit peu de choses à elle seule. La VFC baisse avec l'âge parce que le contrôle vagal du cœur s'affaiblit et que les vaisseaux se rigidifient — c'est normal. La forme physique, le sommeil et une respiration lente régulière peuvent freiner ce déclin. Guide complet : [VFC normale selon l'âge](/articles/normal-hrv-by-age)."
+      "h2": "Quelle est la HRV normale selon l'âge ?",
+      "body": "Une bonne HRV se situe autour ou au-dessus de la médiane de votre âge — et surtout, elle reste stable ou augmente par rapport à votre propre référence. Pour le RMSSD nocturne (Oura, Whoop, Garmin, Polar), la médiane est d'environ 58 ms à 18–29 ans, 50 ms dans la trentaine, 42 ms dans la quarantaine, 36 ms dans la cinquantaine, 30 ms dans la soixantaine et 26 ms après 70 ans. La moitié centrale des personnes (p25–p75) dans la trentaine va d'environ 36 à 68 ms : l'écart au sein d'une même tranche d'âge est donc plus large que la différence entre deux décennies. C'est pourquoi une simple comparaison avec un tableau dit peu de choses à elle seule. La HRV baisse avec l'âge parce que le contrôle vagal du cœur s'affaiblit et que les vaisseaux se rigidifient — c'est normal. La forme physique, le sommeil et une respiration lente régulière peuvent freiner ce déclin. Guide complet : [HRV normale selon l'âge](/articles/normal-hrv-by-age)."
     },
     {
-      "h2": "VFC normale sur Apple Watch (SDNN)",
-      "body": "L'Apple Watch n'affiche pas le RMSSD mais le SDNN, une autre mesure de la VFC : ses valeurs ne sont donc pas comparables aux tableaux Oura ou Whoop. Dans l'étude de Voss 2015 portant sur environ 1 900 adultes en bonne santé (ECG de repos de 5 minutes), le SDNN médian était d'environ 46 ms à 18–34 ans, 42 ms à 35–44 ans, 34 ms à 45–54 ans, 29 ms à 55–64 ans et 26 ms à partir de 65 ans. Choisissez « SDNN (Apple Watch) » ci-dessus pour obtenir votre percentile selon ces normes. Une réserve : l'Apple Watch fait des mesures courtes d'environ une minute plusieurs fois par jour et la nuit, donc les valeurs isolées sont plus dispersées qu'un enregistrement en laboratoire. Utilisez votre moyenne sur 7 jours dans l'app Santé. Si votre moyenne descend nettement sous votre niveau habituel pendant plusieurs jours, c'est plus parlant que n'importe quel chiffre isolé. En savoir plus : [pourquoi votre VFC diffère selon l'appareil](/articles/hrv-different-every-device)."
+      "h2": "HRV normale sur Apple Watch (SDNN)",
+      "body": "L'Apple Watch n'affiche pas le RMSSD mais le SDNN, une autre mesure de la HRV : ses valeurs ne sont donc pas comparables aux tableaux Oura ou Whoop. Dans l'étude de Voss 2015 portant sur environ 1 900 adultes en bonne santé (ECG de repos de 5 minutes), le SDNN médian était d'environ 46 ms à 18–34 ans, 42 ms à 35–44 ans, 34 ms à 45–54 ans, 29 ms à 55–64 ans et 26 ms à partir de 65 ans. Choisissez « SDNN (Apple Watch) » ci-dessus pour obtenir votre percentile selon ces normes. Une réserve : l'Apple Watch fait des mesures courtes d'environ une minute plusieurs fois par jour et la nuit, donc les valeurs isolées sont plus dispersées qu'un enregistrement en laboratoire. Utilisez votre moyenne sur 7 jours dans l'app Santé. Si votre moyenne descend nettement sous votre niveau habituel pendant plusieurs jours, c'est plus parlant que n'importe quel chiffre isolé. En savoir plus : [pourquoi votre HRV diffère selon l'appareil](/articles/hrv-different-every-device)."
     },
     {
-      "h2": "Pourquoi ma VFC est-elle basse ?",
-      "body": "Une valeur basse reflète généralement les derniers jours, pas votre santé. Les causes les plus fréquentes : l'alcool (même un ou deux verres font baisser la VFC nocturne), un sommeil court ou de mauvaise qualité, un repas copieux tardif, une maladie qui couve, un entraînement intense sans récupération, la déshydratation et le stress. L'appareil et la génétique jouent aussi : certaines personnes en bonne santé ont simplement une VFC plus basse. Regardez la tendance. Une nuit basse après une soirée ne veut pas dire grand-chose ; une VFC qui reste sous votre fourchette habituelle plusieurs jours — surtout avec une fréquence cardiaque de repos plus élevée — indique que votre corps subit plus de charge qu'il n'en absorbe. À lire : [combien l'alcool fait baisser la VFC](/articles/how-much-alcohol-lowers-hrv), [que faire après une VFC basse](/articles/what-to-do-after-low-hrv-reading) et [surentraînement : VFC et fréquence cardiaque de repos](/articles/overtraining-hrv-resting-heart-rate). Si une VFC basse s'accompagne de symptômes comme une douleur thoracique, un malaise ou un essoufflement, consultez un médecin."
+      "h2": "Pourquoi ma HRV est-elle basse ?",
+      "body": "Une valeur basse reflète généralement les derniers jours, pas votre santé. Les causes les plus fréquentes : l'alcool (même un ou deux verres font baisser la HRV nocturne), un sommeil court ou de mauvaise qualité, un repas copieux tardif, une maladie qui couve, un entraînement intense sans récupération, la déshydratation et le stress. L'appareil et la génétique jouent aussi : certaines personnes en bonne santé ont simplement une HRV plus basse. Regardez la tendance. Une nuit basse après une soirée ne veut pas dire grand-chose ; une HRV qui reste sous votre fourchette habituelle plusieurs jours — surtout avec une fréquence cardiaque de repos plus élevée — indique que votre corps subit plus de charge qu'il n'en absorbe. À lire : [combien l'alcool fait baisser la HRV](/articles/how-much-alcohol-lowers-hrv), [que faire après une HRV basse](/articles/what-to-do-after-low-hrv-reading) et [surentraînement : HRV et fréquence cardiaque de repos](/articles/overtraining-hrv-resting-heart-rate). Si une HRV basse s'accompagne de symptômes comme une douleur thoracique, un malaise ou un essoufflement, consultez un médecin."
     },
     {
-      "h2": "Comment améliorer sa VFC (sommeil, sport, cohérence cardiaque)",
-      "body": "La VFC augmente quand votre corps récupère bien : les leviers relèvent donc de la récupération, pas des astuces. Les mieux étayés : un sommeil régulier à heures fixes, moins d'alcool (surtout dans les trois heures avant le coucher), l'entraînement aérobie comme le cardio en zone 2, et la gestion du stress chronique. La respiration lente à environ six respirations par minute — le principe de la cohérence cardiaque — augmente la VFC pendant la pratique, et une pratique régulière sur plusieurs semaines est associée à une meilleure VFC de repos et à un meilleur baroréflexe. Attendez-vous à des changements en semaines, pas en jours, et jugez-les sur votre moyenne sur 7 jours. Guides : [comment augmenter sa VFC naturellement](/articles/how-to-raise-hrv-naturally) et [respiration en cohérence cardiaque](/articles/coherent-breathing-guide)."
+      "h2": "Comment améliorer sa HRV (sommeil, sport, cohérence cardiaque)",
+      "body": "La HRV augmente quand votre corps récupère bien : les leviers relèvent donc de la récupération, pas des astuces. Les mieux étayés : un sommeil régulier à heures fixes, moins d'alcool (surtout dans les trois heures avant le coucher), l'entraînement aérobie comme le cardio en zone 2, et la gestion du stress chronique. La respiration lente à environ six respirations par minute — le principe de la cohérence cardiaque — augmente la HRV pendant la pratique, et une pratique régulière sur plusieurs semaines est associée à une meilleure HRV de repos et à un meilleur baroréflexe. Attendez-vous à des changements en semaines, pas en jours, et jugez-les sur votre moyenne sur 7 jours. Guides : [comment augmenter sa HRV naturellement](/articles/how-to-raise-hrv-naturally) et [respiration en cohérence cardiaque](/articles/coherent-breathing-guide)."
     },
     {
-      "h2": "VFC ou fréquence cardiaque de repos : quelle différence ?",
-      "body": "La VFC et la fréquence cardiaque de repos donnent des informations liées mais différentes. La fréquence cardiaque de repos est le nombre de battements par minute au repos ; la VFC mesure à quel point l'intervalle entre les battements varie. Une VFC plus haute et une fréquence de repos plus basse vont généralement de pair et signalent une bonne récupération et une bonne forme. En cas de stress, de maladie ou de récupération insuffisante, la fréquence de repos a tendance à monter et la VFC à baisser — souvent en même temps, ce qui est un signal plus fort que chacun seul. La fréquence de repos est plus simple, plus stable et plus facile à comparer d'un appareil à l'autre ; la VFC réagit plus vite et est plus sensible au sommeil, à l'alcool et au stress. Suivez les deux par rapport à votre propre référence. Vérifiez la vôtre : [fréquence cardiaque de repos selon l'âge](/articles/resting-heart-rate-by-age)."
+      "h2": "HRV ou fréquence cardiaque de repos : quelle différence ?",
+      "body": "La HRV et la fréquence cardiaque de repos donnent des informations liées mais différentes. La fréquence cardiaque de repos est le nombre de battements par minute au repos ; la HRV mesure à quel point l'intervalle entre les battements varie. Une HRV plus haute et une fréquence de repos plus basse vont généralement de pair et signalent une bonne récupération et une bonne forme. En cas de stress, de maladie ou de récupération insuffisante, la fréquence de repos a tendance à monter et la HRV à baisser — souvent en même temps, ce qui est un signal plus fort que chacun seul. La fréquence de repos est plus simple, plus stable et plus facile à comparer d'un appareil à l'autre ; la HRV réagit plus vite et est plus sensible au sommeil, à l'alcool et au stress. Suivez les deux par rapport à votre propre référence. Vérifiez la vôtre : [fréquence cardiaque de repos selon l'âge](/articles/resting-heart-rate-by-age)."
     }
   ],
-  "faqTitle": "Calculateur de VFC — questions fréquentes",
+  "faqTitle": "Calculateur de HRV — questions fréquentes",
   "faq": [
     {
-      "q": "Quelle est une bonne VFC pour mon âge ?",
+      "q": "Quelle est une bonne HRV pour mon âge ?",
       "a": "Pour le RMSSD nocturne, la médiane est d'environ 58 ms à 18–29 ans, 50 ms à 30–39 ans, 42 ms à 40–49 ans, 36 ms à 50–59 ans et 30 ms à 60–69 ans. Pour le SDNN de l'Apple Watch, elle est d'environ 46 ms à 18–34 ans, 42 ms à 35–44 ans, 34 ms à 45–54 ans et 29 ms à 55–64 ans. Votre propre tendance compte plus que la moyenne."
     },
     {
-      "q": "Quelle est la VFC normale sur Apple Watch ?",
+      "q": "Quelle est la HRV normale sur Apple Watch ?",
       "a": "L'Apple Watch affiche le SDNN. Chez l'adulte en bonne santé, la médiane est d'environ 46 ms à 18–34 ans, 42 ms à 35–44 ans, 34 ms à 45–54 ans, 29 ms à 55–64 ans et 26 ms à partir de 65 ans (Voss 2015). Les mesures sont courtes : utilisez votre moyenne sur 7 jours."
     },
     {
@@ -99,23 +99,23 @@
       "a": "Oura, Whoop, Garmin et Polar affichent le RMSSD. L'Apple Watch affiche le SDNN. Choisissez l'option correspondante dans le calculateur — les deux se mesurent différemment et utilisent des tableaux de normes distincts."
     },
     {
-      "q": "Pourquoi ma VFC est-elle basse ?",
-      "a": "En général à cause d'alcool récent, d'un sommeil court ou mauvais, d'une maladie, d'un entraînement intense ou du stress. Une seule valeur basse veut dire peu de chose ; une VFC qui reste sous votre fourchette habituelle plusieurs jours mérite attention."
+      "q": "Pourquoi ma HRV est-elle basse ?",
+      "a": "En général à cause d'alcool récent, d'un sommeil court ou mauvais, d'une maladie, d'un entraînement intense ou du stress. Une seule valeur basse veut dire peu de chose ; une HRV qui reste sous votre fourchette habituelle plusieurs jours mérite attention."
     },
     {
-      "q": "Comment améliorer sa VFC ?",
+      "q": "Comment améliorer sa HRV ?",
       "a": "Dormez à heures régulières, réduisez l'alcool (surtout avant le coucher), faites de l'aérobie comme la zone 2, gérez le stress et pratiquez la respiration lente (cohérence cardiaque) à environ six respirations par minute. Les effets se voient en semaines, pas en jours."
     },
     {
-      "q": "Une VFC basse est-elle dangereuse ?",
-      "a": "Une seule valeur basse n'est pas un événement médical — elle reflète généralement le sommeil, l'alcool ou l'entraînement. Une VFC qui reste basse par rapport à votre référence peut signaler un stress accumulé ou une récupération insuffisante. Ce calculateur est éducatif, pas un diagnostic ; consultez un médecin en cas de symptômes."
+      "q": "Une HRV basse est-elle dangereuse ?",
+      "a": "Une seule valeur basse n'est pas un événement médical — elle reflète généralement le sommeil, l'alcool ou l'entraînement. Une HRV qui reste basse par rapport à votre référence peut signaler un stress accumulé ou une récupération insuffisante. Ce calculateur est éducatif, pas un diagnostic ; consultez un médecin en cas de symptômes."
     },
     {
-      "q": "Pourquoi ma VFC varie-t-elle autant d'un jour à l'autre ?",
-      "a": "La VFC est sensible au sommeil, à l'alcool, aux repas, au stress, à la maladie et à l'entraînement. Des variations de 10–20 ms d'un jour à l'autre sont normales : comparez des moyennes hebdomadaires plutôt que des nuits isolées."
+      "q": "Pourquoi ma HRV varie-t-elle autant d'un jour à l'autre ?",
+      "a": "La HRV est sensible au sommeil, à l'alcool, aux repas, au stress, à la maladie et à l'entraînement. Des variations de 10–20 ms d'un jour à l'autre sont normales : comparez des moyennes hebdomadaires plutôt que des nuits isolées."
     },
     {
-      "q": "D'où viennent ces normes de VFC ?",
+      "q": "D'où viennent ces normes de HRV ?",
       "a": "Les tranches de RMSSD sont dérivées de la méta-analyse de Nunan 2010, de la courbe d'âge d'Umetani 1998 et de la cohorte de Voss 2015, ajustées pour les mesures nocturnes des objets connectés. Le tableau SDNN provient directement de Voss 2015 (environ 1 900 adultes en bonne santé). Les références complètes figurent dans la section Sources."
     }
   ],
@@ -123,7 +123,7 @@
   "methodologyRmssd": "Les tranches de RMSSD sont dérivées, et non copiées d'un seul jeu de données. La plupart des études normatives rapportent des moyennes ± ET ou des médianes par décennie pour de courts enregistrements diurnes. Nous avons combiné ces valeurs centrales (Nunan 2010), appliqué la baisse décennie par décennie (Umetani 1998) et la dispersion selon l'âge et le sexe (Voss 2015), puis les avons converties en percentiles approximatifs en tenant compte de l'asymétrie à droite du RMSSD. Le tableau correspond au RMSSD nocturne — ce que mesurent Oura, Whoop et Garmin, au moment où le tonus parasympathique est le plus élevé — c'est pourquoi ses médianes dépassent la valeur diurne regroupée d'environ 42 ms de Nunan 2010.",
   "methodologySdnn": "Le tableau SDNN provient directement de Voss et al. 2015 (environ 1 900 adultes en bonne santé, ECG de repos de 5 minutes en position allongée) : nous avons regroupé les moyennes ± ET publiées par décennie pour les femmes (tableau 5) et les hommes (tableau 7), pondérées par la taille des groupes, puis converties en percentiles par un ajustement log-normal, car le SDNN est asymétrique à droite. La tranche la plus jeune utilise les données 25–34 ans et la plus âgée les données 65–74 ans. L'Apple Watch mesure le SDNN sur de courts échantillons (~1 minute), donc les valeurs isolées sont plus dispersées qu'un enregistrement en laboratoire — comparez votre moyenne hebdomadaire.",
   "embed": {
-    "title": "Intégrer ce calculateur de VFC",
+    "title": "Intégrer ce calculateur de HRV",
     "text": "Intégration gratuite sur votre site ou blog — collez simplement ce code. Il s'affiche directement dans la page (sans iframe), sans dépendance, en open source, et inclut un lien de crédit vers ONDA Life.",
     "copy": "Copier le code d'intégration",
     "copied": "✓ Copié",
@@ -132,16 +132,16 @@
   },
   "related": {
     "label": "À lire aussi",
-    "normal": "VFC normale selon l'âge",
-    "device": "Pourquoi votre VFC diffère selon l'appareil",
-    "raise": "Comment augmenter sa VFC naturellement",
+    "normal": "HRV normale selon l'âge",
+    "device": "Pourquoi votre HRV diffère selon l'appareil",
+    "raise": "Comment augmenter sa HRV naturellement",
     "rhr": "Fréquence cardiaque de repos selon l'âge",
-    "trackers": "Meilleurs capteurs de VFC (2026)"
+    "trackers": "Meilleurs capteurs de HRV (2026)"
   },
   "sourcesContributes": [
     "Valeurs de référence RMSSD/SDNN agrégées à partir de 44 études chez des adultes en bonne santé (RMSSD au repos agrégé ≈ 42 ms) — ancrent la tendance centrale.",
-    "La courbe classique du déclin avec l’âge — la VFC temporelle (dont le RMSSD) baisse décennie après décennie — détermine le décalage par tranche d’âge.",
-    "Vaste cohorte d’adultes sains (n ≈ 1 900 ; ECG de 5 min en décubitus dorsal) avec une VFC à court terme stratifiée par âge et sexe. Détermine la dispersion du RMSSD (largeur p10–p90) et constitue la source directe du tableau SDNN (Apple Watch) : moyennes par décennie ± ET pour les femmes (Table 5) et les hommes (Table 7).",
+    "La courbe classique du déclin avec l’âge — la HRV temporelle (dont le RMSSD) baisse décennie après décennie — détermine le décalage par tranche d’âge.",
+    "Vaste cohorte d’adultes sains (n ≈ 1 900 ; ECG de 5 min en décubitus dorsal) avec une HRV à court terme stratifiée par âge et sexe. Détermine la dispersion du RMSSD (largeur p10–p90) et constitue la source directe du tableau SDNN (Apple Watch) : moyennes par décennie ± ET pour les femmes (Table 5) et les hommes (Table 7).",
     "Définitions fondamentales du RMSSD/SDNN et normes de mesure auxquelles se réfère la littérature."
   ]
 }

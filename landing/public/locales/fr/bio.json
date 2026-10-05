@@ -25,7 +25,7 @@
   },
   "rows": {
     "hrv": {
-      "label": "Approximation de la VFC",
+      "label": "Approximation de la HRV",
       "desc": "variation d’un battement à l’autre (RMSSD)"
     },
     "csi": {
@@ -105,7 +105,7 @@
     ],
     "advanced": [
       {
-        "title": "Approximation de la VFC (RMSSD)",
+        "title": "Approximation de la HRV (RMSSD)",
         "text": "RMSSD : racine carrée de la moyenne des carrés des différences successives entre intervalles, en ms (plafonné à 100). Reflète l’activité vagale (parasympathique). Les mesures caméra sur 15 s sont approximatives et souvent surestimées.",
         "key": "hrv"
       },

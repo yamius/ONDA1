@@ -47,40 +47,40 @@
         ]
       },
       {
-        "q": "¿Cuál es una buena VFC?",
-        "a": "No existe una única cifra de VFC buena: disminuye con la edad y varía según el dispositivo. La mediana del RMSSD nocturno ronda los 58 ms a los veinte años y unos 30 ms a los sesenta, con una amplia variación saludable. Una buena VFC es la que se mantiene estable o sube respecto a tu propia línea base.",
+        "q": "¿Cuál es una buena HRV?",
+        "a": "No existe una única cifra de HRV buena: disminuye con la edad y varía según el dispositivo. La mediana del RMSSD nocturno ronda los 58 ms a los veinte años y unos 30 ms a los sesenta, con una amplia variación saludable. Una buena HRV es la que se mantiene estable o sube respecto a tu propia línea base.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",
-            "label": "VFC normal por edad"
+            "label": "HRV normal por edad"
           },
           {
             "href": "/articles/hrv-questions-answered",
-            "label": "52 preguntas sobre la VFC, respondidas"
+            "label": "52 preguntas sobre la HRV, respondidas"
           },
           {
             "href": "/tools/hrv",
-            "label": "Calculadora de VFC"
+            "label": "Calculadora de HRV"
           }
         ]
       },
       {
         "q": "¿Por qué tengo el pulso en reposo más alto de lo normal?",
-        "a": "Las causas habituales de una subida temporal son el alcohol, una noche corta o interrumpida, un bloque de entrenamiento duro, una enfermedad incipiente, la deshidratación, el calor y el estrés. Suele ir acompañada de una VFC más baja. Si se normaliza en pocos días, era una respuesta normal; si sigue alta, revisa primero tu recuperación.",
+        "a": "Las causas habituales de una subida temporal son el alcohol, una noche corta o interrumpida, un bloque de entrenamiento duro, una enfermedad incipiente, la deshidratación, el calor y el estrés. Suele ir acompañada de una HRV más baja. Si se normaliza en pocos días, era una respuesta normal; si sigue alta, revisa primero tu recuperación.",
         "links": [
           {
             "href": "/articles/what-to-do-after-low-hrv-reading",
-            "label": "Qué hacer tras una lectura de VFC baja"
+            "label": "Qué hacer tras una lectura de HRV baja"
           },
           {
             "href": "/articles/overtraining-hrv-resting-heart-rate",
-            "label": "Sobreentrenamiento, VFC y frecuencia cardíaca en reposo"
+            "label": "Sobreentrenamiento, HRV y frecuencia cardíaca en reposo"
           }
         ]
       },
       {
         "q": "¿Cuántos días de datos necesito para ver mi línea base real?",
-        "a": "Unas dos semanas de mediciones constantes dan un rango útil para la frecuencia cardíaca en reposo y la VFC; un mes es mejor. Hasta entonces, la mayor parte de lo que ves es el ruido normal del día a día.",
+        "a": "Unas dos semanas de mediciones constantes dan un rango útil para la frecuencia cardíaca en reposo y la HRV; un mes es mejor. Hasta entonces, la mayor parte de lo que ves es el ruido normal del día a día.",
         "links": [
           {
             "href": "/articles/your-baseline-knows-first",

@@ -11,13 +11,13 @@
     "current": "Calculadora de HRV"
   },
   "h1": "Calculadora de HRV por idade",
-  "capsule": "Informe sua idade e sua variabilidade da frequência cardíaca (VFC, ou HRV) para ver onde ela fica em relação a pessoas da sua idade. Use RMSSD se o número vem do Oura, Whoop, Garmin ou Polar, e SDNN se vem do Apple Watch. As normas vêm de estudos revisados por pares, mas a sua tendência ao longo de semanas importa mais que qualquer percentil.",
+  "capsule": "Informe sua idade e sua variabilidade da frequência cardíaca (HRV) para ver onde ela fica em relação a pessoas da sua idade. Use RMSSD se o número vem do Oura, Whoop, Garmin ou Polar, e SDNN se vem do Apple Watch. As normas vêm de estudos revisados por pares, mas a sua tendência ao longo de semanas importa mais que qualquer percentil.",
   "imageAlt": "Calculadora de HRV por idade — calculadora interativa gratuita de variabilidade da frequência cardíaca da ONDA Life",
   "metric": {
     "label": "Seu dispositivo mostra",
     "rmssd": "RMSSD (Oura, Whoop, Garmin, Polar)",
     "sdnn": "SDNN (Apple Watch)",
-    "hintRmssd": "Oura: Prontidão → Equilíbrio da VFC / VFC média. Whoop: Recovery → HRV. Garmin: Status de VFC (média noturna). Polar: Nightly Recharge → VFC.",
+    "hintRmssd": "Oura: Prontidão → Equilíbrio da HRV / HRV média. Whoop: Recovery → HRV. Garmin: Status de HRV (média noturna). Polar: Nightly Recharge → HRV.",
     "hintSdnn": "App Saúde do iPhone → Buscar → Coração → Variabilidade da Frequência Cardíaca. O Apple Watch mostra SDNN em ms — use a média de 7 dias, se possível."
   },
   "age": {

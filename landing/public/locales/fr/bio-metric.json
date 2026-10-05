@@ -563,7 +563,7 @@
         },
         {
           "heading": "Plages typiques et facteurs d’influence",
-          "body": "Pour des mesures courtes en journée comme celle-ci, le RMSSD au repos varie beaucoup chez les adultes en bonne santé, souvent entre 20 et 80 ms environ. L’âge et le moment de la journée comptent : il tend à être plus élevé chez les personnes jeunes et en forme, plus bas avec l’âge, et les valeurs nocturnes d’une montre sont généralement plus élevées que les mesures ponctuelles en journée. Voir la [VFC normale selon l’âge](/articles/normal-hrv-by-age) ou essayer l’[outil VFC](/tools/hrv). Il diminue généralement après une mauvaise nuit, de l’alcool, une maladie, un entraînement intense ou un stress aigu, et remonte avec une bonne récupération. Les écarts entre personnes sont importants : votre propre tendance compte plus que la comparaison avec les autres.",
+          "body": "Pour des mesures courtes en journée comme celle-ci, le RMSSD au repos varie beaucoup chez les adultes en bonne santé, souvent entre 20 et 80 ms environ. L’âge et le moment de la journée comptent : il tend à être plus élevé chez les personnes jeunes et en forme, plus bas avec l’âge, et les valeurs nocturnes d’une montre sont généralement plus élevées que les mesures ponctuelles en journée. Voir la [HRV normale selon l’âge](/articles/normal-hrv-by-age) ou essayer l’[outil HRV](/tools/hrv). Il diminue généralement après une mauvaise nuit, de l’alcool, une maladie, un entraînement intense ou un stress aigu, et remonte avec une bonne récupération. Les écarts entre personnes sont importants : votre propre tendance compte plus que la comparaison avec les autres.",
           "bullets": [
             {
               "label": "Plus haut que d’habitude",

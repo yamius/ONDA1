@@ -12,7 +12,7 @@
   "patterns": {
     "box": { "name": "Respiration carrée", "tagline": "4-4-4-4 — concentration et calme sous pression" },
     "478": { "name": "Respiration 4-7-8", "tagline": "Longue rétention, longue expiration — pour s'apaiser avant de dormir" },
-    "coherent": { "name": "Cohérence cardiaque", "tagline": "Environ 5,5 respirations par minute — le rythme de résonance de la VFC" },
+    "coherent": { "name": "Cohérence cardiaque", "tagline": "Environ 5,5 respirations par minute — le rythme de résonance de la HRV" },
     "calming": { "name": "Expiration prolongée", "tagline": "Inspirez 4, expirez 6 — une expiration plus longue pour se calmer vite" },
     "sigh": { "name": "Soupir physiologique", "tagline": "Deux inspirations, une longue expiration — la remise à zéro la plus rapide" }
   },
@@ -48,7 +48,7 @@
     {
       "pattern": "coherent",
       "h2": "Cohérence cardiaque : minuteur de respiration à 6 cycles par minute (méthode 365)",
-      "body": "La cohérence cardiaque consiste à respirer régulièrement à environ 5 à 6 respirations par minute — ici 5,5 secondes d'inspiration et 5,5 secondes d'expiration. À ce rythme, le cœur et la respiration se synchronisent via le baroréflexe, ce qui produit les plus grandes variations de la variabilité de la fréquence cardiaque (VFC) — le rythme utilisé en biofeedback VFC. En France, on la pratique souvent selon la règle « 365 » : 3 fois par jour, 6 respirations par minute, 5 minutes. Sans rétention, c'est la technique la plus douce pour des séances de 5 à 20 minutes. Guides : [la respiration cohérente](/articles/coherent-breathing-guide) et [trouver votre fréquence de résonance](/tools/resonance-breathing)."
+      "body": "La cohérence cardiaque consiste à respirer régulièrement à environ 5 à 6 respirations par minute — ici 5,5 secondes d'inspiration et 5,5 secondes d'expiration. À ce rythme, le cœur et la respiration se synchronisent via le baroréflexe, ce qui produit les plus grandes variations de la variabilité de la fréquence cardiaque (HRV) — le rythme utilisé en biofeedback HRV. En France, on la pratique souvent selon la règle « 365 » : 3 fois par jour, 6 respirations par minute, 5 minutes. Sans rétention, c'est la technique la plus douce pour des séances de 5 à 20 minutes. Guides : [la respiration cohérente](/articles/coherent-breathing-guide) et [trouver votre fréquence de résonance](/tools/resonance-breathing)."
     },
     {
       "pattern": "calming",
@@ -68,13 +68,13 @@
     { "q": "Quel exercice de respiration contre le stress et l'anxiété ?", "a": "Les techniques à expiration longue agissent le plus vite : soupir physiologique, expiration prolongée (4-6) ou 4-7-8. Pour un effet plus stable sur 5 à 10 minutes, la cohérence cardiaque à environ 6 respirations par minute est douce et bien étudiée." },
     { "q": "Quelle respiration pour s'endormir ?", "a": "La respiration 4-7-8 et l'expiration prolongée sont les plus utilisées avant de dormir, car la longue expiration ralentit l'organisme. Pratiquez 3 à 5 minutes au lit, signaux sonores activés et yeux fermés." },
     { "q": "Combien de temps faire des exercices de respiration ?", "a": "Même 1 à 3 minutes peuvent apaiser sur le moment. Pour un bénéfice durable, les études ont utilisé environ 5 minutes par jour ; la cohérence cardiaque se pratique souvent 5 minutes 3 fois par jour (365) ou 10 à 20 minutes." },
-    { "q": "Qu'est-ce que la cohérence cardiaque ?", "a": "Respirer régulièrement à environ 5 à 6 respirations par minute, ce qui fait osciller ensemble fréquence cardiaque et respiration et maximise la VFC. Ce minuteur utilise 5,5 secondes d'inspiration et 5,5 d'expiration." },
+    { "q": "Qu'est-ce que la cohérence cardiaque ?", "a": "Respirer régulièrement à environ 5 à 6 respirations par minute, ce qui fait osciller ensemble fréquence cardiaque et respiration et maximise la HRV. Ce minuteur utilise 5,5 secondes d'inspiration et 5,5 d'expiration." },
     { "q": "Est-ce normal d'avoir la tête qui tourne ?", "a": "Une légère sensation de vertige au début est fréquente, surtout avec les longues rétentions. Arrêtez, respirez normalement et essayez une technique plus douce comme l'expiration prolongée. En cas de maladie cardiaque ou pulmonaire, ou de grossesse, évitez les longues rétentions." }
   ],
   "sourcesTitle": "Sources et méthodologie",
   "methodology": "La respiration lente et rythmée est l'un des rares leviers volontaires sur le système nerveux autonome. Respirer à environ six cycles par minute correspond à la fréquence de résonance du baroréflexe, ce qui maximise la variabilité de la fréquence cardiaque et déplace l'équilibre vers le système parasympathique (Lehrer & Gevirtz 2014 ; Zaccaro 2018). Une expiration plus longue ajoute un effet apaisant, et un essai randomisé a montré que cinq minutes par jour de respiration centrée sur l'expiration — surtout le soupir cyclique — amélioraient davantage l'humeur et abaissaient la fréquence respiratoire que la pleine conscience (Balban 2023). Le minuteur applique ces principes à cinq techniques classiques. C'est un outil éducatif de relaxation, pas un dispositif médical.",
   "sourcesContributes": [
-    "Revue systématique reliant la respiration lente à une VFC plus élevée, un basculement parasympathique et une baisse de l'activation.",
+    "Revue systématique reliant la respiration lente à une HRV plus élevée, un basculement parasympathique et une baisse de l'activation.",
     "Explique la fréquence de résonance d'environ 0,1 Hz (≈6 respirations/min) et le mécanisme du baroréflexe à l'origine de la cohérence cardiaque.",
     "Essai randomisé : 5 minutes par jour de respiration axée sur l'expiration — surtout le soupir cyclique — ont davantage amélioré l'humeur et abaissé la fréquence respiratoire au repos que la méditation de pleine conscience."
   ],
@@ -82,7 +82,7 @@
   "related": {
     "label": "À voir aussi",
     "resonance": "Trouver votre fréquence de respiration de résonance",
-    "hrv": "Calculateur de VFC (HRV) selon l'âge",
+    "hrv": "Calculateur de HRV selon l'âge",
     "box": "La respiration carrée expliquée",
     "sigh": "Le soupir physiologique"
   }

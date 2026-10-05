@@ -47,7 +47,7 @@
         ]
       },
       {
-        "q": "Jakie HRV jest dobre?",
+        "q": "Jaka zmienność rytmu serca (HRV) jest dobra?",
         "a": "Nie ma jednej dobrej wartości HRV: spada ona z wiekiem i różni się w zależności od urządzenia. Mediana nocnego RMSSD to około 58 ms u dwudziestolatków i około 30 ms u sześćdziesięciolatków, przy szerokim zakresie zdrowych wartości. Dobre HRV to takie, które jest stabilne lub rośnie w porównaniu z Twoją własną linią bazową.",
         "links": [
           {

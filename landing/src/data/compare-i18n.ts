@@ -95,11 +95,11 @@ export const COMPARE_I18N: Record<'ru' | 'es', CompareCopy> = {
   es: {
     metaTitle: 'ONDA frente a Oura, WHOOP, Headspace, Calm y más — comparación | ONDA Life',
     metaDescription:
-      'Cómo se compara el biofeedback de VFC de ONDA Life con Oura, WHOOP, Headspace, Calm, Breathwrk y Elite HRV — tablas objetivas de capacidades y para quién es mejor cada uno.',
+      'Cómo se compara el biofeedback de HRV de ONDA Life con Oura, WHOOP, Headspace, Calm, Breathwrk y Elite HRV — tablas objetivas de capacidades y para quién es mejor cada uno.',
     kicker: '[ COMPARAR ]',
     h1: 'ONDA frente a las alternativas.',
     intro:
-      'Cómo se sitúa el biofeedback de VFC en tiempo real de ONDA frente a las apps y wearables que la gente contrasta. Son las propias comparaciones de ONDA, pero mantenidas objetivas — las mismas filas de capacidades para todos — con un honesto «mejor para» en cada lado.',
+      'Cómo se sitúa el biofeedback de HRV en tiempo real de ONDA frente a las apps y wearables que la gente contrasta. Son las propias comparaciones de ONDA, pero mantenidas objetivas — las mismas filas de capacidades para todos — con un honesto «mejor para» en cada lado.',
     matrixHeading: 'Capacidades de un vistazo',
     matrixIntro: 'ONDA y las apps que la gente contrasta, en los mismos ejes.',
     yesWord: 'sí',
@@ -112,13 +112,13 @@ export const COMPARE_I18N: Record<'ru' | 'es', CompareCopy> = {
     matrixFootPost: '.',
     axisLabels: {
       'Real-time HRV biofeedback (live feedback as you breathe)':
-        'Biofeedback de VFC en tiempo real (feedback en vivo mientras respiras)',
+        'Biofeedback de HRV en tiempo real (feedback en vivo mientras respiras)',
       'Live coherence score': 'Puntuación de coherencia en vivo',
       'Guided / paced breathing': 'Respiración guiada / pautada',
       'Works with no wearable or chest strap (iPhone camera)':
         'Funciona sin wearable ni banda de pecho (cámara del iPhone)',
       'Apple Watch support': 'Compatibilidad con Apple Watch',
-      'Resting-HRV trend over time': 'Tendencia de VFC en reposo en el tiempo',
+      'Resting-HRV trend over time': 'Tendencia de HRV en reposo en el tiempo',
       'Sleep / overnight readiness tracking': 'Seguimiento de sueño / preparación nocturna',
       'Large meditation / sleep content library': 'Amplia biblioteca de meditación / contenido para dormir',
       'Structured, progressive program': 'Programa estructurado y progresivo',
@@ -127,7 +127,7 @@ export const COMPARE_I18N: Record<'ru' | 'es', CompareCopy> = {
     headToHeadHeading: 'Cara a cara',
     howHeading: 'Cómo comparamos',
     howP1:
-      'Son las comparaciones propias de ONDA, así que las sometemos a una regla más estricta que una página «vs» típica: cada competidor se puntúa con las mismas filas de capacidades — a partir de información pública y uso de primera mano —, y cada cara a cara lleva un honesto «mejor para» en ambos lados, incluidos los casos en que un rival es la mejor elección. ONDA es una app de biofeedback de VFC y respiración guiada en tiempo real; cuando lo que de verdad quieres es un seguimiento nocturno pasivo de un anillo o una banda, lo decimos.',
+      'Son las comparaciones propias de ONDA, así que las sometemos a una regla más estricta que una página «vs» típica: cada competidor se puntúa con las mismas filas de capacidades — a partir de información pública y uso de primera mano —, y cada cara a cara lleva un honesto «mejor para» en ambos lados, incluidos los casos en que un rival es la mejor elección. ONDA es una app de biofeedback de HRV y respiración guiada en tiempo real; cuando lo que de verdad quieres es un seguimiento nocturno pasivo de un anillo o una banda, lo decimos.',
     howP2a:
       'Como no podemos ser neutrales sobre nuestro propio producto, mantenemos nuestras comparaciones aquí, en ',
     compareLinkText: '/compare',

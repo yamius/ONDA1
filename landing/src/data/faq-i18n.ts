@@ -66,7 +66,7 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
           },
           {
             q: 'Можно ли тренировать блуждающий нерв?',
-            a: 'Вы можете влиять на вагальную (парасимпатическую) активность. Медленное дыхание и HRV-биофидбек повышают вагусно-опосредованную ВСР в моменте, а при регулярной практике облегчают достижение спокойного состояния. Эффект реальный, но умеренный — «перезагрузки вагуса», обещающие вылечить болезни, преувеличивают его.',
+            a: 'Вы можете влиять на вагальную (парасимпатическую) активность. Медленное дыхание и HRV-биофидбек повышают вагусно-опосредованную HRV в моменте, а при регулярной практике облегчают достижение спокойного состояния. Эффект реальный, но умеренный — «перезагрузки вагуса», обещающие вылечить болезни, преувеличивают его.',
           },
           {
             q: 'HRV-биофидбек действительно работает?',
@@ -218,12 +218,12 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
     ],
   },
   es: {
-    metaTitle: 'FAQ de ONDA Life — Biofeedback de VFC, respiración y la app | ONDA Life',
+    metaTitle: 'FAQ de ONDA Life — Biofeedback de HRV, respiración y la app | ONDA Life',
     metaDescription:
-      'Respuestas claras sobre biofeedback de VFC, respiración de resonancia, la ciencia de la VFC y la app ONDA: qué mide, si necesita Apple Watch, cómo se compara y más.',
+      'Respuestas claras sobre biofeedback de HRV, respiración de resonancia, la ciencia de la HRV y la app ONDA: qué mide, si necesita Apple Watch, cómo se compara y más.',
     h1: 'Preguntas y respuestas',
     intro:
-      'Respuestas claras sobre biofeedback de VFC, respiración, la ciencia y cómo funciona ONDA — cada una escrita para leerse por sí sola.',
+      'Respuestas claras sobre biofeedback de HRV, respiración, la ciencia y cómo funciona ONDA — cada una escrita para leerse por sí sola.',
     crossPre: 'Más a fondo: ',
     crossLinks: {
       measures: 'qué mide ONDA',
@@ -233,35 +233,35 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
     },
     groups: [
       {
-        category: 'Fundamentos del biofeedback de VFC',
+        category: 'Fundamentos del biofeedback de HRV',
         items: [
           {
-            q: '¿Qué es el biofeedback de VFC?',
-            a: 'El biofeedback de VFC es una técnica en la que ves tu variabilidad de la frecuencia cardíaca en tiempo real y ajustas la respiración o la atención en respuesta. El feedback en vivo cierra un bucle: puedes ver cómo tu ritmo cardíaco se suaviza al respirar despacio, lo que entrena el sistema nervioso autónomo en lugar de solo medirlo.',
+            q: '¿Qué es el biofeedback de HRV?',
+            a: 'El biofeedback de HRV es una técnica en la que ves tu variabilidad de la frecuencia cardíaca en tiempo real y ajustas la respiración o la atención en respuesta. El feedback en vivo cierra un bucle: puedes ver cómo tu ritmo cardíaco se suaviza al respirar despacio, lo que entrena el sistema nervioso autónomo en lugar de solo medirlo.',
           },
           {
-            q: '¿Respirar aumenta la VFC?',
+            q: '¿Respirar aumenta la HRV?',
             a: 'Sí — la respiración lenta y pausada cerca de tu frecuencia de resonancia (unas seis respiraciones por minuto) eleva de forma fiable la variabilidad de la frecuencia cardíaca durante la sesión y activa la rama parasimpática de «descanso y digestión». Cuánto cambia tu base en reposo con el tiempo varía de una persona a otra.',
           },
           {
             q: '¿Qué es la respiración de resonancia (coherente)?',
-            a: 'La respiración de resonancia es respirar despacio y de forma pareja al ritmo en que tu corazón oscila con más fuerza con la respiración — para la mayoría, unas 5,5–6 respiraciones por minuto (un ciclo de ~10 segundos). Es el ritmo de respiración en el centro del biofeedback de VFC.',
+            a: 'La respiración de resonancia es respirar despacio y de forma pareja al ritmo en que tu corazón oscila con más fuerza con la respiración — para la mayoría, unas 5,5–6 respiraciones por minuto (un ciclo de ~10 segundos). Es el ritmo de respiración en el centro del biofeedback de HRV.',
           },
           {
-            q: '¿Qué es la coherencia en la VFC?',
+            q: '¿Qué es la coherencia en la HRV?',
             a: 'La coherencia describe lo suave y rítmica que es la oscilación de tu frecuencia cardíaca al respirar. Una puntuación alta de coherencia significa que tu ritmo cardíaco sube y baja en una onda limpia y regular sincronizada con tu respiración. Es una señal de práctica en tiempo real, no un biomarcador clínico.',
           },
           {
-            q: '¿Cuál es la diferencia entre seguimiento de VFC y biofeedback de VFC?',
-            a: 'El seguimiento de VFC registra tu VFC de forma pasiva (a menudo de noche) para que veas tendencias — eso hacen los anillos y las pulseras. El biofeedback de VFC es activo: recibes feedback en vivo mientras respiras y entrenas tu ritmo cardíaco en el momento. El seguimiento te dice cómo te recuperaste; el biofeedback te da algo que hacer al respecto.',
+            q: '¿Cuál es la diferencia entre seguimiento de HRV y biofeedback de HRV?',
+            a: 'El seguimiento de HRV registra tu HRV de forma pasiva (a menudo de noche) para que veas tendencias — eso hacen los anillos y las pulseras. El biofeedback de HRV es activo: recibes feedback en vivo mientras respiras y entrenas tu ritmo cardíaco en el momento. El seguimiento te dice cómo te recuperaste; el biofeedback te da algo que hacer al respecto.',
           },
           {
             q: '¿Puedo entrenar mi nervio vago?',
-            a: 'Puedes influir en la actividad vagal (parasimpática). La respiración lenta y el biofeedback de VFC elevan la VFC de mediación vagal en el momento, y con práctica regular hacen más fácil alcanzar un estado de calma. El efecto es real pero modesto — los «reinicios del vago» que prometen curar enfermedades lo exageran.',
+            a: 'Puedes influir en la actividad vagal (parasimpática). La respiración lenta y el biofeedback de HRV elevan la HRV de mediación vagal en el momento, y con práctica regular hacen más fácil alcanzar un estado de calma. El efecto es real pero modesto — los «reinicios del vago» que prometen curar enfermedades lo exageran.',
           },
           {
-            q: '¿El biofeedback de VFC realmente funciona?',
-            a: 'El efecto agudo está bien establecido: la respiración pausada eleva la VFC durante una sesión y activa el sistema parasimpático. Los beneficios a largo plazo para el estrés y la autorregulación tienen respaldo pero varían según la persona. Es una de las técnicas de autorregulación mejor fundamentadas y de bajo riesgo que existen.',
+            q: '¿El biofeedback de HRV realmente funciona?',
+            a: 'El efecto agudo está bien establecido: la respiración pausada eleva la HRV durante una sesión y activa el sistema parasimpático. Los beneficios a largo plazo para el estrés y la autorregulación tienen respaldo pero varían según la persona. Es una de las técnicas de autorregulación mejor fundamentadas y de bajo riesgo que existen.',
           },
           {
             q: '¿Cuánto tiempo debo hacer respiración de resonancia?',
@@ -274,15 +274,15 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
         items: [
           {
             q: '¿Qué es ONDA Life?',
-            a: 'ONDA Life es una app de biofeedback de VFC y respiración guiada para iPhone, iPad y Apple Watch. Da feedback en vivo del ritmo cardíaco durante la respiración pausada, muestra una puntuación de coherencia y sigue tu tendencia de VFC en reposo a lo largo de un camino de práctica de 8 niveles. Es gratis para empezar, sin necesidad de cuenta.',
+            a: 'ONDA Life es una app de biofeedback de HRV y respiración guiada para iPhone, iPad y Apple Watch. Da feedback en vivo del ritmo cardíaco durante la respiración pausada, muestra una puntuación de coherencia y sigue tu tendencia de HRV en reposo a lo largo de un camino de práctica de 8 niveles. Es gratis para empezar, sin necesidad de cuenta.',
           },
           {
             q: '¿ONDA es una app de meditación?',
-            a: 'No en el sentido habitual. ONDA es un entrenador de biofeedback de VFC, no una biblioteca de meditaciones guiadas. En vez de solo audio, muestra cómo responde tu ritmo cardíaco mientras respiras. Se solapa con la meditación en calmarse, pero está guiada por la medición y es más específica.',
+            a: 'No en el sentido habitual. ONDA es un entrenador de biofeedback de HRV, no una biblioteca de meditaciones guiadas. En vez de solo audio, muestra cómo responde tu ritmo cardíaco mientras respiras. Se solapa con la meditación en calmarse, pero está guiada por la medición y es más específica.',
           },
           {
             q: '¿Funciona ONDA sin un Apple Watch?',
-            a: 'Sí. ONDA puede medir tu pulso con la cámara del iPhone (fotopletismografía), así que puedes empezar solo con tu teléfono y obtener además una estimación de la respiración. La VFC, los datos cardíacos continuos y el feedback de coherencia en vivo necesitan un Apple Watch, pero no es necesario para empezar.',
+            a: 'Sí. ONDA puede medir tu pulso con la cámara del iPhone (fotopletismografía), así que puedes empezar solo con tu teléfono y obtener además una estimación de la respiración. La HRV, los datos cardíacos continuos y el feedback de coherencia en vivo necesitan un Apple Watch, pero no es necesario para empezar.',
           },
           {
             q: '¿ONDA usa la cámara del iPhone para medir el pulso?',
@@ -306,16 +306,16 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
         category: 'Dispositivos y datos',
         items: [
           {
-            q: '¿Puede un Apple Watch medir la VFC en tiempo real?',
-            a: 'El Apple Watch mide la frecuencia cardíaca de forma continua y registra la VFC, y ONDA usa esos datos cardíacos para dar feedback en vivo durante una sesión. La propia app Salud muestra la VFC como lecturas periódicas, no como un número continuo; ONDA añade encima la capa de biofeedback en tiempo real.',
+            q: '¿Puede un Apple Watch medir la HRV en tiempo real?',
+            a: 'El Apple Watch mide la frecuencia cardíaca de forma continua y registra la HRV, y ONDA usa esos datos cardíacos para dar feedback en vivo durante una sesión. La propia app Salud muestra la HRV como lecturas periódicas, no como un número continuo; ONDA añade encima la capa de biofeedback en tiempo real.',
           },
           {
-            q: '¿Qué tan precisa es la VFC por cámara (PPG)?',
-            a: 'El PPG por cámara funciona mejor en reposo, con un dedo firme y buen contacto. En esas condiciones da una lectura de VFC útil; el movimiento o el mal contacto añaden ruido, por eso ONDA te pide repetir una lectura en la que no puede confiar. Para datos continuos todo el día, un wearable es mejor.',
+            q: '¿Qué tan precisa es la HRV por cámara (PPG)?',
+            a: 'El PPG por cámara funciona mejor en reposo, con un dedo firme y buen contacto. En esas condiciones da una lectura de HRV útil; el movimiento o el mal contacto añaden ruido, por eso ONDA te pide repetir una lectura en la que no puede confiar. Para datos continuos todo el día, un wearable es mejor.',
           },
           {
             q: '¿Necesito una banda de pecho para ONDA?',
-            a: 'No. ONDA está diseñada para funcionar con la cámara del iPhone o un Apple Watch. Una banda de pecho da la VFC más precisa de cualquier sensor de consumo, pero ONDA no la requiere.',
+            a: 'No. ONDA está diseñada para funcionar con la cámara del iPhone o un Apple Watch. Una banda de pecho da la HRV más precisa de cualquier sensor de consumo, pero ONDA no la requiere.',
           },
           {
             q: '¿ONDA guarda mis datos de HealthKit?',
@@ -328,35 +328,35 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
         ],
       },
       {
-        category: 'Entender la VFC',
+        category: 'Entender la HRV',
         items: [
           {
-            q: '¿Qué VFC es buena para mi edad?',
-            a: 'La VFC baja con la edad y varía mucho entre personas, así que no hay un único número «bueno» — tu propia tendencia importa más que cualquier umbral. Como guía aproximada, más alta suele ser mejor dentro de una persona, pero comparar tu VFC absoluta con la de otra persona no es muy significativo.',
+            q: '¿Qué HRV es buena para mi edad?',
+            a: 'La HRV baja con la edad y varía mucho entre personas, así que no hay un único número «bueno» — tu propia tendencia importa más que cualquier umbral. Como guía aproximada, más alta suele ser mejor dentro de una persona, pero comparar tu HRV absoluta con la de otra persona no es muy significativo.',
           },
           {
-            q: '¿La VFC es lo mismo que el tono vagal?',
-            a: 'Están muy relacionados pero no son idénticos. La VFC a corto plazo (sobre todo RMSSD) es un indicador muy usado de la actividad parasimpática (vagal), así que un RMSSD más alto suele reflejar un tono vagal más fuerte. Pero la VFC también está influida por otros factores, así que es un indicador del tono vagal, no una medición directa de él.',
+            q: '¿La HRV es lo mismo que el tono vagal?',
+            a: 'Están muy relacionados pero no son idénticos. La HRV a corto plazo (sobre todo RMSSD) es un indicador muy usado de la actividad parasimpática (vagal), así que un RMSSD más alto suele reflejar un tono vagal más fuerte. Pero la HRV también está influida por otros factores, así que es un indicador del tono vagal, no una medición directa de él.',
           },
           {
-            q: '¿Puede la VFC diagnosticar el estrés?',
-            a: 'No. La VFC tiende a ser más baja bajo estrés y más alta al recuperarse, así que es un indicador útil, pero no una prueba diagnóstica. Muchas cosas mueven la VFC — sueño, enfermedad, alcohol, hidratación, postura —, así que una sola lectura no puede diagnosticar el estrés ni ninguna condición.',
+            q: '¿Puede la HRV diagnosticar el estrés?',
+            a: 'No. La HRV tiende a ser más baja bajo estrés y más alta al recuperarse, así que es un indicador útil, pero no una prueba diagnóstica. Muchas cosas mueven la HRV — sueño, enfermedad, alcohol, hidratación, postura —, así que una sola lectura no puede diagnosticar el estrés ni ninguna condición.',
           },
           {
             q: '¿Cuál es la diferencia entre RMSSD y SDNN?',
             a: 'Ambos resumen la variabilidad entre latidos. RMSSD refleja los cambios latido a latido a corto plazo y es la medida más ligada a la actividad vagal (parasimpática) — es la de referencia para lecturas cortas. SDNN capta la variabilidad global en una ventana más larga y está influida por más factores.',
           },
           {
-            q: '¿Cuál es el mejor momento para medir la VFC?',
+            q: '¿Cuál es el mejor momento para medir la HRV?',
             a: 'Para una tendencia comparable, mide a una hora y estado constantes — es común nada más despertar, en reposo, antes de la cafeína. Lo que más importa es la constancia: misma hora, misma postura, para que los cambios diarios reflejen tu cuerpo y no las condiciones.',
           },
           {
-            q: '¿Cuánto tarda en funcionar el biofeedback de VFC?',
-            a: 'El efecto agudo lo sientes de inmediato — la VFC sube dentro de una sola sesión. Los cambios en tu base en reposo, donde ocurren, suelen aparecer tras semanas de práctica constante más que días, y el tamaño del cambio varía entre personas.',
+            q: '¿Cuánto tarda en funcionar el biofeedback de HRV?',
+            a: 'El efecto agudo lo sientes de inmediato — la HRV sube dentro de una sola sesión. Los cambios en tu base en reposo, donde ocurren, suelen aparecer tras semanas de práctica constante más que días, y el tamaño del cambio varía entre personas.',
           },
           {
-            q: '¿Una VFC más alta siempre es mejor?',
-            a: 'Normalmente dentro de una persona, pero no universalmente. Una VFC más alta suele reflejar mejor recuperación y actividad parasimpática, pero el contexto importa — una lectura inusualmente alta también puede acompañar enfermedad o sobreentrenamiento. Las tendencias y el contexto valen más que perseguir un solo número alto.',
+            q: '¿Una HRV más alta siempre es mejor?',
+            a: 'Normalmente dentro de una persona, pero no universalmente. Una HRV más alta suele reflejar mejor recuperación y actividad parasimpática, pero el contexto importa — una lectura inusualmente alta también puede acompañar enfermedad o sobreentrenamiento. Las tendencias y el contexto valen más que perseguir un solo número alto.',
           },
         ],
       },
@@ -365,15 +365,15 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
         items: [
           {
             q: '¿ONDA está basada en evidencia?',
-            a: 'ONDA se construye sobre mecanismos con una base de evidencia real — la respiración pausada que eleva la VFC, el biofeedback de VFC, la interocepción y la VFC en reposo como señal de recuperación — cada uno citado en la página de investigación con las fuentes y sus límites. Las ideas más ambiciosas se etiquetan claramente como líneas de investigación, no afirmaciones actuales.',
+            a: 'ONDA se construye sobre mecanismos con una base de evidencia real — la respiración pausada que eleva la HRV, el biofeedback de HRV, la interocepción y la HRV en reposo como señal de recuperación — cada uno citado en la página de investigación con las fuentes y sus límites. Las ideas más ambiciosas se etiquetan claramente como líneas de investigación, no afirmaciones actuales.',
           },
           {
             q: '¿ONDA es un dispositivo médico?',
-            a: 'No. ONDA es una app de biofeedback de VFC y respiración guiada para el entrenamiento y la autorregulación. No diagnostica, trata ni monitoriza ninguna condición médica y no sustituye la atención médica.',
+            a: 'No. ONDA es una app de biofeedback de HRV y respiración guiada para el entrenamiento y la autorregulación. No diagnostica, trata ni monitoriza ninguna condición médica y no sustituye la atención médica.',
           },
           {
             q: '¿ONDA está validada científicamente?',
-            a: 'Los mecanismos que usa ONDA tienen respaldo en investigación publicada, que se cita abiertamente. ONDA no afirma tener su propio ensayo clínico ni que trate condiciones — aplica técnicas establecidas (biofeedback de VFC, respiración de resonancia) y es transparente sobre lo que está probado y lo que no.',
+            a: 'Los mecanismos que usa ONDA tienen respaldo en investigación publicada, que se cita abiertamente. ONDA no afirma tener su propio ensayo clínico ni que trate condiciones — aplica técnicas establecidas (biofeedback de HRV, respiración de resonancia) y es transparente sobre lo que está probado y lo que no.',
           },
           {
             q: '¿Puede ONDA reemplazar la terapia o la medicación?',
@@ -389,20 +389,20 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
         category: 'ONDA frente a alternativas',
         items: [
           {
-            q: '¿Cuál es la mejor app de biofeedback de VFC?',
-            a: 'Las principales apps de biofeedback de VFC son ONDA, Elite HRV y (en su nivel premium) Breathwrk. ONDA funciona con la cámara del iPhone o un Apple Watch dentro de una práctica guiada y progresiva; Elite HRV está más centrada en la medición y es más precisa con una banda de pecho. La mejor depende de si quieres una práctica guiada o la medición más precisa.',
+            q: '¿Cuál es la mejor app de biofeedback de HRV?',
+            a: 'Las principales apps de biofeedback de HRV son ONDA, Elite HRV y (en su nivel premium) Breathwrk. ONDA funciona con la cámara del iPhone o un Apple Watch dentro de una práctica guiada y progresiva; Elite HRV está más centrada en la medición y es más precisa con una banda de pecho. La mejor depende de si quieres una práctica guiada o la medición más precisa.',
           },
           {
             q: '¿ONDA u Oura — cuál elegir?',
-            a: 'Hacen trabajos distintos. Oura es un anillo que sigue de forma pasiva el sueño, la preparación y la VFC nocturna. ONDA entrena activamente tu sistema nervioso con biofeedback de VFC en tiempo real y no necesita wearable. Mucha gente usa ambos — Oura para medir la recuperación, ONDA para entrenarla.',
+            a: 'Hacen trabajos distintos. Oura es un anillo que sigue de forma pasiva el sueño, la preparación y la HRV nocturna. ONDA entrena activamente tu sistema nervioso con biofeedback de HRV en tiempo real y no necesita wearable. Mucha gente usa ambos — Oura para medir la recuperación, ONDA para entrenarla.',
           },
           {
-            q: '¿ONDA o WHOOP para la VFC?',
-            a: 'WHOOP mide la VFC de forma continua para puntuar recuperación y esfuerzo; ONDA usa la VFC como biofeedback en vivo contra el que entrenas al respirar. Para datos de recuperación pasivos, WHOOP; para entrenamiento activo de la VFC sin banda ni suscripción de hardware, ONDA.',
+            q: '¿ONDA o WHOOP para la HRV?',
+            a: 'WHOOP mide la HRV de forma continua para puntuar recuperación y esfuerzo; ONDA usa la HRV como biofeedback en vivo contra el que entrenas al respirar. Para datos de recuperación pasivos, WHOOP; para entrenamiento activo de la HRV sin banda ni suscripción de hardware, ONDA.',
           },
           {
             q: '¿ONDA es como Calm o Headspace?',
-            a: 'Se solapan en calmarse pero funcionan distinto. Calm y Headspace son bibliotecas de meditación y contenido para dormir. ONDA es un entrenador de biofeedback de VFC que mide tu ritmo cardíaco y da feedback en vivo mientras respiras — más específica y más centrada en la medición.',
+            a: 'Se solapan en calmarse pero funcionan distinto. Calm y Headspace son bibliotecas de meditación y contenido para dormir. ONDA es un entrenador de biofeedback de HRV que mide tu ritmo cardíaco y da feedback en vivo mientras respiras — más específica y más centrada en la medición.',
           },
         ],
       },

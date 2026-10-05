@@ -1,9 +1,9 @@
 {
   "metaTitle": "Calculateurs santé et respiration gratuits | ONDA Life",
-  "metaDescription": "Calculateurs gratuits : VFC, dette de sommeil, caféine, zones cardiaques, protéines — lus selon les preuves publiées, sans inscription.",
+  "metaDescription": "Calculateurs gratuits : HRV, dette de sommeil, caféine, zones cardiaques, protéines — lus selon les preuves publiées, sans inscription.",
   "breadcrumbTools": "Outils",
   "h1": "Calculateurs santé et respiration gratuits",
-  "intro1": "Des calculateurs interactifs gratuits pour les indicateurs qui comptent — VFC, sommeil, zones de fréquence cardiaque, timing de la caféine, protéines et plus encore. Chaque outil lit votre chiffre à la lumière des données publiées, et non d’une règle approximative en chiffres ronds, et vous dit ce qui le fait réellement bouger.",
+  "intro1": "Des calculateurs interactifs gratuits pour les indicateurs qui comptent — HRV, sommeil, zones de fréquence cardiaque, timing de la caféine, protéines et plus encore. Chaque outil lit votre chiffre à la lumière des données publiées, et non d’une règle approximative en chiffres ronds, et vous dit ce qui le fait réellement bouger.",
   "intro2Pre": "Pas d’inscription, pas de compte, rien à installer — tout fonctionne directement dans votre navigateur. Quand vous voulez que ces mêmes chiffres soient suivis automatiquement dans la durée plutôt que saisis une seule fois, c’est ce que fait ",
   "ondaLink": "ONDA Life",
   "intro2Post": " sur votre iPhone et votre Apple Watch.",
@@ -13,7 +13,7 @@
   "liveLabel": "en direct",
   "aboutHeading": "À propos de ces outils",
   "aboutP1": "Ce sont les petits calculateurs ciblés auxquels le monde du quantified self et du biohacking revient sans cesse — variabilité de la fréquence cardiaque, dette de sommeil, demi-vie de la caféine, zones d’entraînement, besoins en protéines — réunis en un seul endroit et, lorsque c’est important, reliés à la science plutôt que laissés sous forme de chiffre brut. L’intérêt n’est pas le chiffre en lui-même, mais sa lecture en contexte : ce qui est normal pour votre âge, ce qu’un changement signale vraiment et quel levier le fait bouger.",
-  "aboutP2Pre": "Dès qu’un outil touche à votre système nerveux — VFC, fréquence cardiaque au repos, charge de stress — il renvoie vers ",
+  "aboutP2Pre": "Dès qu’un outil touche à votre système nerveux — HRV, fréquence cardiaque au repos, charge de stress — il renvoie vers ",
   "measuresLink": "ce que mesure ONDA",
   "aboutP2Mid": " et vers ",
   "researchLink": "les preuves qui le fondent",
@@ -25,7 +25,7 @@
     },
     {
       "title": "Sommeil",
-      "body": "Des outils de dette de sommeil, d’heure limite pour la caféine et de chronotype qui transforment le sommeil d’un objectif flou en horaires concrets. Le sommeil est le levier le plus puissant sur la VFC et la récupération du lendemain : bien caler la caféine, la lumière et l’heure du coucher est payant partout ailleurs."
+      "body": "Des outils de dette de sommeil, d’heure limite pour la caféine et de chronotype qui transforment le sommeil d’un objectif flou en horaires concrets. Le sommeil est le levier le plus puissant sur la HRV et la récupération du lendemain : bien caler la caféine, la lumière et l’heure du coucher est payant partout ailleurs."
     },
     {
       "title": "Forme et entraînement",
@@ -41,7 +41,7 @@
     }
   ],
   "readHeading": "Comment lire vos chiffres honnêtement",
-  "readBody": "Une mesure isolée n’est qu’un instantané, et les instantanés sont bruités — la VFC à elle seule varie avec le sommeil, l’hydratation, l’alcool, la maladie et même la façon dont vous vous êtes assis. Votre propre tendance sur des jours et des semaines est bien plus parlante qu’un chiffre unique, et comparer votre valeur absolue à celle de quelqu’un d’autre est rarement utile. Ces outils servent à s’orienter et à s’auto-expérimenter, pas à poser un diagnostic ; ils ne remplacent pas un professionnel de santé. Utilisés ainsi, ils sont un moyen rapide et honnête de transformer un indicateur dont vous avez entendu parler en quelque chose sur lequel vous pouvez réellement agir.",
+  "readBody": "Une mesure isolée n’est qu’un instantané, et les instantanés sont bruités — la HRV à elle seule varie avec le sommeil, l’hydratation, l’alcool, la maladie et même la façon dont vous vous êtes assis. Votre propre tendance sur des jours et des semaines est bien plus parlante qu’un chiffre unique, et comparer votre valeur absolue à celle de quelqu’un d’autre est rarement utile. Ces outils servent à s’orienter et à s’auto-expérimenter, pas à poser un diagnostic ; ils ne remplacent pas un professionnel de santé. Utilisés ainsi, ils sont un moyen rapide et honnête de transformer un indicateur dont vous avez entendu parler en quelque chose sur lequel vous pouvez réellement agir.",
   "ctaPre": "Vous voulez que le côté système nerveux soit suivi en continu plutôt que saisi à la main ? ",
   "seeLink": "Découvrez ce que fait ONDA Life",
   "ctaMid": ", ou ",

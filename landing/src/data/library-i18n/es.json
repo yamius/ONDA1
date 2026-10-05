@@ -1,12 +1,12 @@
 {
   "ui": {
-    "metaTitle": "Biblioteca ONDA — Respiración, VFC y meditación | ONDA Life",
-    "metaDescription": "Guías gratuitas con fuentes: VFC normal por edad, respiración 4-7-8 y cuadrada, suspiro fisiológico, sueño y estrés, más calculadoras y temporizadores.",
+    "metaTitle": "Biblioteca ONDA — Respiración, HRV y meditación | ONDA Life",
+    "metaDescription": "Guías gratuitas con fuentes: HRV normal por edad, respiración 4-7-8 y cuadrada, suspiro fisiológico, sueño y estrés, más calculadoras y temporizadores.",
     "home": "Inicio",
     "library": "Biblioteca",
     "badge": "[ BIBLIOTECA ONDA ]",
     "h1": "Biblioteca ONDA",
-    "subtitle": "Guías basadas en la ciencia sobre respiración, VFC, meditación y sistema nervioso. Elige un tema para empezar.",
+    "subtitle": "Guías basadas en la ciencia sobre respiración, HRV, meditación y sistema nervioso. Elige un tema para empezar.",
     "articlesOne": "{n} artículo",
     "articlesOther": "{n} artículos",
     "moreGuides": "Más guías en español",
@@ -48,10 +48,10 @@
       "imageAlt": "Técnicas de respiración — ilustración: unos pulmones estilizados hechos de luz con ondas de aire que entran y salen."
     },
     "hrv-heart-rate": {
-      "name": "VFC y frecuencia cardíaca",
-      "tile": "Qué significan tu VFC y tu frecuencia cardíaca en reposo, y cómo mejorarlas.",
-      "intro": "La variabilidad de la frecuencia cardíaca y la frecuencia cardíaca en reposo son dos de las señales más útiles que te da el cuerpo, si sabes leerlas. Estas guías explican qué es normal para tu edad, por qué tu referencia personal importa más que cualquier media, cómo medir de forma constante con distintos dispositivos, qué significa realmente un valor bajo y qué hábitos elevan la VFC con el tiempo.",
-      "imageAlt": "VFC y frecuencia cardíaca — ilustración: un corazón luminoso del que sale una onda de ritmo variable."
+      "name": "HRV y frecuencia cardíaca",
+      "tile": "Qué significan tu HRV y tu frecuencia cardíaca en reposo, y cómo mejorarlas.",
+      "intro": "La variabilidad de la frecuencia cardíaca y la frecuencia cardíaca en reposo son dos de las señales más útiles que te da el cuerpo, si sabes leerlas. Estas guías explican qué es normal para tu edad, por qué tu referencia personal importa más que cualquier media, cómo medir de forma constante con distintos dispositivos, qué significa realmente un valor bajo y qué hábitos elevan la HRV con el tiempo.",
+      "imageAlt": "HRV y frecuencia cardíaca — ilustración: un corazón luminoso del que sale una onda de ritmo variable."
     },
     "stress-vagus": {
       "name": "Estrés y nervio vago",
@@ -68,7 +68,7 @@
     "lifestyle": {
       "name": "Efectos del estilo de vida",
       "tile": "Qué hacen el alcohol, la cafeína, las pantallas y las cenas tardías a tus datos.",
-      "intro": "Los hábitos cotidianos dejan una huella clara en tu frecuencia cardíaca y tu VFC. Estas guías muestran, con datos, lo que el alcohol, la cafeína, la nicotina, las cenas tardías y el tiempo de pantalla le hacen a tu cuerpo durante la noche, cuánto duran los efectos y qué son realmente la dopamina, la niebla mental y la \"sobrecarga digital\".",
+      "intro": "Los hábitos cotidianos dejan una huella clara en tu frecuencia cardíaca y tu HRV. Estas guías muestran, con datos, lo que el alcohol, la cafeína, la nicotina, las cenas tardías y el tiempo de pantalla le hacen a tu cuerpo durante la noche, cuánto duran los efectos y qué son realmente la dopamina, la niebla mental y la \"sobrecarga digital\".",
       "imageAlt": "Efectos del estilo de vida — ilustración: una taza de café, una copa de vino y un móvil dispuestos alrededor de una línea central de frecuencia cardíaca."
     },
     "heart-fitness-metabolism": {
@@ -85,8 +85,8 @@
     },
     "doctors-your-data": {
       "name": "Los médicos y tus datos",
-      "tile": "Qué especialista puede aprovechar tus tendencias de corazón, VFC y sueño, y cómo llevar tus datos a la consulta.",
-      "intro": "Tu reloj registra semanas de frecuencia cardíaca en reposo, VFC, respiración y sueño que normalmente ningún médico ve. Estas guías muestran quién puede usar ese historial y para qué —tu médico de cabecera, un cardiólogo, un especialista del sueño, un psicólogo o psiquiatra, un médico deportivo—, cómo resumirlo en una sola página y dónde terminan los datos del reloj: plantean una pregunta, nunca son un diagnóstico.",
+      "tile": "Qué especialista puede aprovechar tus tendencias de corazón, HRV y sueño, y cómo llevar tus datos a la consulta.",
+      "intro": "Tu reloj registra semanas de frecuencia cardíaca en reposo, HRV, respiración y sueño que normalmente ningún médico ve. Estas guías muestran quién puede usar ese historial y para qué —tu médico de cabecera, un cardiólogo, un especialista del sueño, un psicólogo o psiquiatra, un médico deportivo—, cómo resumirlo en una sola página y dónde terminan los datos del reloj: plantean una pregunta, nunca son un diagnóstico.",
       "imageAlt": "Los médicos y tus datos — ilustración: cinco siluetas de médicos en un semicírculo sereno, cada una con un símbolo luminoso (corazón, luna, cerebro, corredor, cruz médica), unidas por finas líneas verde menta a un informe de una página en el centro."
     },
     "world": {
