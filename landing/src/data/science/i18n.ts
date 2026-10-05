@@ -105,7 +105,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Механизмы', desc: 'Как взаимодействуют дыхание, сердце и нервная система.' },
       evidence: { label: 'Доказательства', desc: 'Что показывают исследования конкретных методов — с учётом силы доказательств.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Наука: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, раздел «{label}»: {desc}',
     classes: {
       established: 'Установлено',
@@ -150,7 +150,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Механізми', desc: 'Як взаємодіють дихання, серце і нервова система.' },
       evidence: { label: 'Докази', desc: 'Що показують дослідження конкретних методів — з урахуванням сили доказів.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Наука: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, розділ «{label}»: {desc}',
     classes: {
       established: 'Встановлено',
@@ -195,7 +195,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Mecanismos', desc: 'Cómo interactúan la respiración, el corazón y el sistema nervioso.' },
       evidence: { label: 'Evidencia', desc: 'Qué muestra la investigación sobre métodos concretos, según la solidez de la evidencia.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Ciencia: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, sección «{label}»: {desc}',
     classes: {
       established: 'Establecido',
@@ -240,7 +240,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Mechanismen', desc: 'Wie Atmung, Herz und Nervensystem zusammenwirken.' },
       evidence: { label: 'Evidenz', desc: 'Was die Forschung zu einzelnen Methoden zeigt – nach Stärke der Evidenz.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Wissenschaft: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, Bereich „{label}“: {desc}',
     classes: {
       established: 'Gesichert',
@@ -285,7 +285,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Mécanismes', desc: 'Comment la respiration, le cœur et le système nerveux interagissent.' },
       evidence: { label: 'Données probantes', desc: 'Ce que montre la recherche sur des méthodes précises, selon la solidité des preuves.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Science : {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, rubrique « {label} » : {desc}',
     classes: {
       established: 'Établi',
@@ -330,7 +330,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Meccanismi', desc: 'Come interagiscono respirazione, cuore e sistema nervoso.' },
       evidence: { label: 'Evidenze', desc: 'Cosa mostra la ricerca su metodi specifici, in base alla solidità delle prove.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Scienza: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, sezione «{label}»: {desc}',
     classes: {
       established: 'Accertato',
@@ -375,7 +375,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Mecanismos', desc: 'Como a respiração, o coração e o sistema nervoso interagem.' },
       evidence: { label: 'Evidências', desc: 'O que a pesquisa mostra sobre métodos específicos, conforme a força das evidências.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Ciência: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, seção «{label}»: {desc}',
     classes: {
       established: 'Estabelecido',
@@ -420,7 +420,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Mechanismen', desc: 'Hoe ademhaling, hart en zenuwstelsel op elkaar inwerken.' },
       evidence: { label: 'Bewijs', desc: 'Wat onderzoek laat zien over specifieke methoden, naar sterkte van het bewijs.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Wetenschap: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, rubriek ‘{label}’: {desc}',
     classes: {
       established: 'Vastgesteld',
@@ -465,7 +465,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'Mechanizmy', desc: 'Jak oddech, serce i układ nerwowy współdziałają.' },
       evidence: { label: 'Dowody', desc: 'Co pokazują badania konkretnych metod — według siły dowodów.' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'Nauka: {label} — ONDA Science',
     kindMetaDescription: 'ONDA Science, dział „{label}”: {desc}',
     classes: {
       established: 'Ustalone',
@@ -510,7 +510,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: 'メカニズム', desc: '呼吸、心臓、神経系がどのように関わり合うか。' },
       evidence: { label: 'エビデンス', desc: '特定の方法について研究が示していること（エビデンスの強さ別）。' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: 'サイエンス：{label} — ONDA Science',
     kindMetaDescription: 'ONDA Science「{label}」：{desc}',
     classes: {
       established: '確立',
@@ -555,7 +555,7 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
       mechanisms: { label: '机制', desc: '呼吸、心脏与神经系统如何相互作用。' },
       evidence: { label: '证据', desc: '研究对具体方法显示了什么——按证据强度划分。' },
     },
-    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaTitle: '科学：{label} — ONDA Science',
     kindMetaDescription: 'ONDA Science「{label}」：{desc}',
     classes: {
       established: '已确立',
