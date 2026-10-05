@@ -1,7 +1,7 @@
 ---
 sourceHash: "41115ae9a660"
 title: "Comment la respiration modifie la HRV — et pourquoi la respiration lente l’augmente"
-metaTitle: "Respiration lente et HRV : pourquoi elle augmente"
+metaTitle: "Respiration et HRV : l’effet de la respiration lente"
 metaDescription: "Pourquoi la variabilité de la fréquence cardiaque augmente quand vous respirez lentement : rythme cardiaque respiratoire, baroréflexe et résonance."
 shortAnswer: >
   La respiration modifie la variabilité de la fréquence cardiaque parce que

@@ -2,7 +2,7 @@
 sourceHash: "c7c0e6f927d5"
 title: "Biofeedback de la HRV : ce que montrent les données"
 metaTitle: "Biofeedback de la HRV : ce que montrent les données"
-metaDescription: "Ce que la recherche montre sur le biofeedback de la HRV — stress, humeur, tension, sommeil, performance — et ce que le retour visuel ajoute à la respiration lente."
+metaDescription: "Ce que montre la recherche sur le biofeedback de la HRV — stress, humeur, tension, sommeil, performance — et l’apport du retour visuel à la respiration lente."
 shortAnswer: >
   Le biofeedback de la HRV est un entraînement à la respiration lente,
   généralement proche de la fréquence de résonance de la personne, pendant
@@ -42,7 +42,7 @@ evidenceMap:
     limitation: "Surtout de petites études ; les chiffres décrivent la littérature regroupée, pas un essai unique."
   - claim: "L’entraînement par biofeedback de la HRV était associé à une forte réduction du stress et de l’anxiété autodéclarés, mais des études mieux contrôlées sont nécessaires."
     limitation: "Critères autodéclarés dans des essais surtout petits ; les auteurs eux-mêmes demandent de meilleurs groupes témoins."
-  - claim: "Une méta-analyse d’essais contrôlés randomisés sur les symptômes dépressifs chez l’adulte a trouvé un effet moyen modéré, avec une hétérogénéité modérée."
+  - claim: "Une méta-analyse d’essais contrôlés randomisés sur les symptômes dépressifs chez l’adulte a trouvé un effet moyen d’ampleur modérée, avec une hétérogénéité modérée."
     limitation: "L’intervalle de prédiction inclut zéro : l’effet pourrait ne pas apparaître dans tous les contextes ; les questionnaires utilisés différaient."
   - claim: "L’hétérogénéité entre les essais sur la dépression était modérée."
     limitation: "Parmi les modérateurs figuraient l’année de publication et le questionnaire utilisé, ce qui complique une estimation globale unique."
@@ -52,7 +52,7 @@ evidenceMap:
     limitation: "Méta-régression entre études ; des associations entre caractéristiques des études et résultats, pas des tests de ces caractéristiques."
   - claim: "Chez des patients atteints de maladie cardiovasculaire, une méta-analyse d’essais contrôlés randomisés a trouvé des baisses modestes de la pression artérielle systolique et diastolique."
     limitation: "Uniquement des patients atteints de maladie cardiovasculaire ; la plupart des essais inclus présentaient certaines réserves ou un risque de biais élevé."
-  - claim: "Dans la méta-analyse cardiovasculaire, la dépression et l’anxiété ne se sont pas améliorées significativement, et la plupart des études ont été jugées à risque de biais incertain ou élevé."
+  - claim: "Dans la méta-analyse cardiovasculaire, la dépression et l’anxiété ne se sont pas améliorées significativement, et la plupart des études ont été jugées avec certaines réserves ou à risque de biais élevé."
     limitation: "Peu d’essais par critère psychologique dans cette population."
   - claim: "Une revue systématique du biofeedback de la HRV dans le sport n’a inclus que quelques études, toutes sur de petits échantillons."
     limitation: "Plans expérimentaux, quasi expérimentaux et cas cliniques ; aucune taille d’effet groupée."
@@ -128,9 +128,9 @@ La condition de comparaison compte autant que la mesure. La taille des effets es
 
 **Stress et anxiété : dépend du contexte.** Une méta-analyse de {{fact:study.goessl2017.studies}} a constaté que l’entraînement était associé à une forte réduction du stress et de l’anxiété autodéclarés, tout en soulignant que des études mieux contrôlées sont nécessaires [S4]. Une méta-analyse plus récente des programmes à distance n’a pas trouvé d’effet significatif sur le stress [S6]. Le bénéfice est le plus net pour les symptômes autodéclarés dans de petits essais.
 
-**Symptômes dépressifs : dépend du contexte.** Une méta-analyse de {{fact:study.pizzoli2021.trials}} chez l’adulte a trouvé un effet moyen modéré, avec une hétérogénéité modérée et un intervalle de prédiction qui inclut zéro [S5]. Les programmes à distance ont eux aussi montré un effet modéré sur la dépression [S6]. Chez les patients atteints de maladie cardiovasculaire, en revanche, la dépression et l’anxiété ne se sont pas améliorées significativement [S7].
+**Symptômes dépressifs : dépend du contexte.** Une méta-analyse de {{fact:study.pizzoli2021.trials}} chez l’adulte a trouvé un effet moyen d’ampleur modérée, avec une hétérogénéité modérée et un intervalle de prédiction qui inclut zéro [S5]. Les programmes à distance ont eux aussi montré un effet modéré sur la dépression [S6]. Chez les patients atteints de maladie cardiovasculaire, en revanche, la dépression et l’anxiété ne se sont pas améliorées significativement [S7].
 
-**Pression artérielle : émergent.** Chez des patients atteints de maladie cardiovasculaire, une méta-analyse de {{fact:study.kaneko2026.trials}} a trouvé des baisses modestes de la pression artérielle systolique et diastolique, la plupart des essais présentant un risque de biais incertain ou élevé [S7]. Les aspects pratiques sont traités dans [respiration lente et hypertension](/articles/high-blood-pressure-slow-breathing).
+**Pression artérielle : émergent.** Chez des patients atteints de maladie cardiovasculaire, une méta-analyse de {{fact:study.kaneko2026.trials}} a trouvé des baisses modestes de la pression artérielle systolique et diastolique, la plupart des essais présentant certaines réserves ou un risque de biais élevé [S7]. Les aspects pratiques sont traités dans [respiration lente et hypertension](/articles/high-blood-pressure-slow-breathing).
 
 **Sommeil : émergent, effet faible.** Le sommeil fait partie des critères aux effets les plus faibles dans la vaste méta-analyse [S3], et les résultats positifs sur le sommeil dans les études sur les maladies chroniques proviennent d’une revue narrative sans estimations groupées [S10]. Aucune méta-analyse consacrée au sommeil n’a été trouvée.
 
@@ -149,7 +149,7 @@ La lecture la plus défendable aujourd’hui : la respiration lente fait probabl
 **Ce qui reste incertain.**
 
 - Si les effets psychologiques se maintiennent dans de grands essais bien contrôlés, avec des comparaisons actives ou simulées crédibles [S3, S4, S12].
-- Ce que le retour à l’écran ajoute à la respiration lente [S11, S12, S13].
+- Ce que le retour à l’écran ajoute réellement à la respiration lente [S11, S12, S13].
 - Si l’évaluation individuelle de la résonance compte pour les résultats ; jusqu’ici, un essai randomisé n’a trouvé aucun avantage [S13].
 - Combien de temps les bénéfices persistent après l’arrêt de la pratique.
 
@@ -157,7 +157,7 @@ La lecture la plus défendable aujourd’hui : la respiration lente fait probabl
 
 - **Ce n’est pas un traitement à lui seul.** La recherche présente le biofeedback de la HRV comme une méthode complémentaire [S3]. Il ne remplace ni la psychothérapie, ni les médicaments, ni la prise en charge médicale de l’anxiété, de la dépression, de l’hypertension ou de toute autre pathologie, et rien ici ne signifie « arrêtez votre traitement ».
 - **Un chiffre plus élevé pendant la pratique ne prouve pas un bénéfice.** La HRV augmente par construction avec la respiration lente [S11] ; dans un essai, les gains psychologiques n’en suivaient pas étroitement l’évolution [S12], et dans un autre, les valeurs au repos n’ont pas changé [S13].
-- **La taille des effets n’est pas définitive.** La plupart des essais sont petits, les protocoles diffèrent, l’aveugle est difficile et beaucoup d’études présentent un risque de biais [S7, S8, S9] ; les estimations pourraient diminuer avec des essais de meilleure qualité.
+- **La taille des effets n’est pas définitive.** La plupart des essais sont petits, les protocoles diffèrent, la mise en aveugle est difficile et beaucoup d’études présentent un risque de biais [S7, S8, S9] ; les estimations pourraient diminuer avec des essais de meilleure qualité.
 - **Ce n’est pas une mesure du tonus vagal.** {{fact:claim.vagalTone}}.
 - **Les résultats de laboratoire ne se transposent pas forcément aux objets connectés.** La plupart des essais ont utilisé des capteurs et des logiciels de laboratoire. Les montres, les bagues et les caméras de téléphone estiment le rythme cardiaque à partir du pouls, qui est lié au signal électrique sans lui être identique [S14] — voir [peut-on se fier à la HRV d’une montre connectée](/science/measurements/heart-rate-variability). Que le biofeedback délivré par ces appareils produise les mêmes résultats n’a pas été testé directement ; la méta-analyse des programmes à distance en est la donnée la plus proche [S6].
 - **Les symptômes relèvent d’un médecin.** Une douleur thoracique, un évanouissement, un essoufflement sévère ou des palpitations accompagnées de vertiges nécessitent une prise en charge médicale, pas une séance de respiration. Pour comparer la pratique respiratoire et la méditation, voir [méditation ou travail respiratoire](/articles/meditation-vs-breathwork).

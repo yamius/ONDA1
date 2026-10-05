@@ -2,7 +2,7 @@
 sourceHash: "4c0358773469"
 title: "Variabilité de la fréquence cardiaque : ce qu’elle est, ce qu’elle reflète, ce qu’elle n’est pas"
 metaTitle: "Variabilité cardiaque : définition et données"
-metaDescription: "La variabilité de la fréquence cardiaque est la variation naturelle du rythme cardiaque d’un battement à l’autre. Ce qui la façonne, ce qu’elle reflète, ce qu’elle ne dit pas."
+metaDescription: "La variabilité de la fréquence cardiaque est la variation naturelle du rythme d’un battement à l’autre : ce qui la façonne, ce qu’elle reflète, ce qu’elle tait."
 shortAnswer: >
   La variabilité de la fréquence cardiaque (HRV, ou VFC) est la variation
   naturelle du temps qui sépare deux battements cardiaques consécutifs. Le
@@ -118,6 +118,6 @@ La fenêtre fait partie du sens. Un bref enregistrement en laboratoire, un ECG h
 
 ## Dans ONDA
 
-La référence personnelle (baseline) nocturne d’ONDA repose sur les valeurs de HRV enregistrées dans Apple Health — par l’Apple Watch ou par tout tracker dont l’application y synchronise les données cardiaques. {{fact:applewatch.hrv.healthkit}} [S6] : ce signal de référence repose donc sur le SDNN plutôt que sur la RMSSD, et les comparaisons nuit après nuit de l’application se font par rapport à votre propre couloir, pas à des objectifs de population. La valeur en direct affichée pendant une pratique est un indicateur de substitution calculé à partir de l’écart type de la fréquence cardiaque, ni une RMSSD ni un SDNN, et la caméra du téléphone donne le pouls, pas la HRV. ONDA utilise ce signal pour le biofeedback — observer ce qu’il advient de votre signal physiologique pendant que vous pratiquez — et le [calculateur de HRV](/tools/hrv) remet les chiffres de l’Apple Watch en contexte. ONDA décrit et compare vos propres chiffres ; il ne pose aucun diagnostic. Voir [ce que mesure ONDA](/measurements).
+La référence personnelle (baseline) nocturne d’ONDA repose sur les valeurs de HRV enregistrées dans Apple Health — par l’Apple Watch ou par tout autre appareil dont l’application y synchronise les données cardiaques. {{fact:applewatch.hrv.healthkit}} [S6] : ce signal de référence repose donc sur le SDNN plutôt que sur la RMSSD, et les comparaisons nuit après nuit de l’application se font par rapport à votre propre couloir, pas à des objectifs de population. La valeur en direct affichée pendant une pratique est un indicateur de substitution calculé à partir de l’écart type de la fréquence cardiaque, et non une RMSSD ou un SDNN, et la caméra du téléphone donne le pouls, pas la HRV. ONDA utilise ce signal pour le biofeedback — observer ce qu’il advient de votre signal physiologique pendant que vous pratiquez — et le [calculateur de HRV](/tools/hrv) remet les chiffres de l’Apple Watch en contexte. ONDA décrit et compare vos propres chiffres ; il ne pose aucun diagnostic. Voir [ce que mesure ONDA](/measurements).
 
 > Information éducative, pas un diagnostic ni un traitement médical.

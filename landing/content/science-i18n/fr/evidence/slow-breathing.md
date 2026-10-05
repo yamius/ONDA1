@@ -2,14 +2,14 @@
 sourceHash: "2dc08d4f1532"
 title: "Respiration lente : ce que montrent les données"
 metaTitle: "Respiration lente : ce que montrent les données"
-metaDescription: "Ce que la recherche montre sur la respiration lente sans retour visuel — HRV, tension, stress, sommeil, douleur — et ce que l’on sait des techniques populaires."
+metaDescription: "Ce que montre la recherche sur la respiration lente sans retour visuel — HRV, tension, stress, sommeil, douleur — et sur les techniques populaires."
 shortAnswer: >
   La respiration lente consiste à respirer nettement en dessous de la
   fréquence habituelle au repos, souvent près de la zone de résonance. Elle est
   utilisée pour apaiser l’activation, soutenir l’humeur et abaisser la pression
   artérielle. La variabilité de la fréquence cardiaque augmente pendant et
   après la pratique, la pression artérielle baisse modestement dans les essais
-  regroupés, et le stress, l’anxiété et le sommeil autoévalué tendent à
+  regroupés, et le stress, l’anxiété et le sommeil autodéclaré tendent à
   s’améliorer. Cela ne montre pas à soi seul qu’une technique particulière soit
   supérieure à une autre, et la plupart des essais sont petits et courts.
 keyPoints:

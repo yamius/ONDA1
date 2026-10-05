@@ -2,7 +2,7 @@
 sourceHash: "33b9f01d78ea"
 title: "Référence personnelle de HRV : pourquoi votre propre normalité compte plus que toute norme"
 metaTitle: "Référence de HRV : votre normalité, pas une norme"
-metaDescription: "Votre référence de HRV est votre propre plage habituelle, pas une moyenne de population. Pourquoi elle vaut mieux que les normes d’âge, comment ONDA la construit, ce qu’un écart signifie."
+metaDescription: "Votre référence de HRV est votre propre plage habituelle, pas une moyenne de population. Pourquoi elle prime sur les normes d’âge et comment ONDA la construit."
 shortAnswer: >
   Une référence personnelle (baseline) de HRV est votre niveau habituel de
   variabilité de la fréquence cardiaque (HRV, ou VFC) et sa dispersion normale,
@@ -99,7 +99,7 @@ La mesure doit rester la même. La RMSSD et le SDNN résument des aspects diffé
 
 ## Ce qu’elle ne vous dit pas
 
-Une référence personnelle est un repère pour remarquer un changement, pas un verdict. Sortir du couloir ne signifie pas que vous êtes stressé ou souffrant. {{fact:claim.hrvNotStress}} [S1]. Une sortie peut être liée à une nuit courte, à de la fièvre, à une séance intense ou à une bizarrerie de mesure — et seul le contexte permet de les distinguer. L’inverse est vrai aussi : rester dans le couloir ne garantit rien en matière de santé, car la HRV est un outil de recherche pour la stratification du risque, pas un marqueur spécifique de l’activité sympathique ni de l’équilibre sympathovagal [S1].
+Une référence personnelle est un repère pour remarquer un changement, pas un verdict. {{fact:claim.hrvNotStress}} [S1] — et il en va de même lorsque vous sortez du couloir. Une sortie peut être liée à une nuit courte, à de la fièvre, à une séance intense ou à une bizarrerie de mesure — et seul le contexte permet de les distinguer. L’inverse est vrai aussi : rester dans le couloir ne garantit rien en matière de santé, car la HRV est un outil de recherche pour la stratification du risque, pas un marqueur spécifique de l’activité sympathique ni de l’équilibre sympathovagal [S1].
 
 L’interprétation est réellement difficile — une revue méthodologique avertit que la facilité d’accès aux données de HRV ne doit pas masquer à quel point les résultats peuvent être mal interprétés [S4]. Les signaux d’ONDA sont conçus en tenant compte de cette limite : ce sont des comparaisons descriptives avec votre propre référence, pas des mesures du stress ni une évaluation médicale [S9]. Que faire face à une mesure basse précise est traité dans [que faire après une HRV basse](/articles/what-to-do-after-low-hrv-reading). Des symptômes persistants — douleur thoracique, essoufflement, évanouissement — relèvent d’un médecin, pas d’un couloir.
 

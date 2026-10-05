@@ -27,7 +27,7 @@ evidenceMap:
     limitation: "Décrit la physiologie normale au repos ; ne qualifie aucun rythme individuel et n’exclut pas d’autres anomalies sur un ECG."
   - claim: "La RSA est l’accélération et le ralentissement du cœur, dictés par la respiration, par l’intermédiaire du nerf vague."
     limitation: "Résume la principale voie efférente ; d’autres contributions mécaniques et réflexes existent."
-  - claim: "Les principaux mécanismes seraient la modulation de l’activité vagale cardiaque par la commande respiratoire centrale et le réflexe d’inflation pulmonaire, et la RSA augmente avec l’activité vagale cardiaque."
+  - claim: "On considère que les principaux mécanismes sont la modulation de l’activité vagale cardiaque par la commande respiratoire centrale et le réflexe d’inflation pulmonaire, et la RSA augmente avec l’activité vagale cardiaque."
     limitation: "Énoncé de contexte d’un article expérimental ; le poids relatif de chaque mécanisme reste débattu."
   - claim: "La question de savoir si c’est principalement le baroréflexe ou un centre respiratoire central qui produit la RSA n’est pas tranchée et fait l’objet d’un débat actif."
     limitation: "Revue d’une littérature controversée ; méthodes et populations diffèrent entre les études de chaque camp."
@@ -75,7 +75,7 @@ Les chercheurs recommandent de réserver ce terme précisément à cette accél�
 
 ## Comment fonctionne-t-elle ?
 
-**Ce qui est établi.** La RSA passe principalement par le nerf vague : c’est l’accélération et le ralentissement du cœur, dictés par la respiration, sous l’effet de la régulation vagale [S1]. Les mécanismes feraient intervenir la commande respiratoire du cerveau et des réflexes d’étirement pulmonaires, qui agissent sur l’influx vagal vers le cœur ; la RSA devient plus ample à mesure que cette influence vagale sur le cœur augmente [S7].
+**Ce qui est établi.** La RSA passe principalement par le nerf vague : c’est l’accélération et le ralentissement du cœur, dictés par la respiration, sous l’effet de la régulation vagale [S1]. On considère que les mécanismes font intervenir la commande respiratoire du cerveau et des réflexes d’étirement pulmonaires, qui agissent sur l’influx vagal vers le cœur ; la RSA devient plus ample à mesure que cette influence vagale sur le cœur augmente [S7].
 
 **Ce qui relève encore du modèle ou du débat.** La façon exacte dont respiration et circulation se combinent pour produire la RSA n’est pas tranchée. Un débat ancien porte sur la question de savoir si c’est surtout un centre respiratoire du tronc cérébral ou le baroréflexe — la boucle de rétroaction de la pression artérielle — qui la produit [S4]. Selon un point de vue, le couplage entre pression artérielle et intervalles cardiaques aux fréquences respiratoires reflète surtout l’action de la respiration sur les deux, plutôt que la physiologie du baroréflexe [S5] ; d’autres chercheurs accordent au baroréflexe un rôle plus important. Le compromis largement admis est que des éléments centraux, périphériques et mécaniques interagissent pour la produire [S4]. Concrètement, cette page considère la voie vagale comme établie et le poids relatif de chaque mécanisme générateur comme une question ouverte.
 

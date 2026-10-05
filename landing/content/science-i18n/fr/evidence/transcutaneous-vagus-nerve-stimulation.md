@@ -2,7 +2,7 @@
 sourceHash: "b8490857b5d7"
 title: "La stimulation du nerf vague fonctionne-t-elle vraiment ? Ce que montrent les données"
 metaTitle: "Stimulation du nerf vague : ce que montrent les données"
-metaDescription: "La stimulation du nerf vague a des usages autorisés par la FDA et des résultats mitigés. Ce que chaque niveau de preuve soutient, et ce qui le dépasse."
+metaDescription: "Stimulation du nerf vague : usages autorisés par la FDA, résultats mitigés. Ce que soutient chaque niveau de preuve, et les allégations qui le dépassent."
 shortAnswer: >
   La stimulation du nerf vague ne désigne pas une seule chose. Elle recouvre
   une thérapie chirurgicale implantée, des dispositifs médicaux appliqués sur
@@ -17,7 +17,7 @@ shortAnswer: >
 keyPoints:
   - "La stimulation du nerf vague n’est pas une intervention unique : thérapie chirurgicale implantée, dispositifs médicaux appliqués sur le cou, stimulation de l’oreille, produits de bien-être grand public et pratiques de type respiratoire sont des choses différentes, aux données différentes."
   - "Une partie de l’oreille externe porte des fibres sensitives de la branche auriculaire du nerf vague, mais cette anatomie varie d’une personne à l’autre : le même point d’électrode n’est donc pas aussi « vagal » chez tout le monde."
-  - "Les autorités ont autorisé certains dispositifs non invasifs pour des indications précises de céphalées ; rien dans ces autorisations ne couvre le soulagement du stress chez des consommateurs en bonne santé."
+  - "Les autorités réglementaires ont autorisé certains dispositifs non invasifs pour des indications précises de céphalées ; rien dans ces autorisations ne couvre le soulagement du stress chez des consommateurs en bonne santé."
   - "Des analyses regroupées d’essais surtout petits rapportent des améliorations sur des échelles de symptômes de la dépression et du sommeil, et les auteurs des revues eux-mêmes jugent ces données de faible qualité et préliminaires."
   - "Dans les études contrôlées par simulation (sham), la stimulation ponctuelle de l’oreille n’augmente pas de façon fiable la HRV d’origine vagale : une mesure de HRV ne prouve donc pas qu’un appareil sollicite les voies vagales."
   - "Le tonus vagal ne peut pas être mesuré directement ; la variabilité de la fréquence cardiaque n’en est qu’un reflet indirect, si bien que tout produit prétendant lire ou renforcer le tonus vagal simplifie."
@@ -101,7 +101,7 @@ evidenceMap:
 « Stimulation du nerf vague » est l’une des étiquettes les plus confuses du bien-être. La même expression désigne un implant chirurgical, un dispositif sur prescription contre les céphalées, une technique de recherche, tout un rayon de gadgets grand public et un ensemble d’exercices respiratoires — et les données qui les soutiennent diffèrent énormément. Sur cette page, l’expression désigne l’application de petites impulsions électriques sur le territoire du nerf vague ; tout le reste n’est évoqué que pour l’en distinguer.
 
 - **Une thérapie chirurgicale implantée.** Un générateur et une électrode sont placés sous la peau du thorax, reliés au nerf vague gauche dans le cou [S13]. Cette forme a une longue histoire clinique dans l’épilepsie, et des revues la décrivent aussi comme une option dans la dépression sévère résistante aux interventions, réservée à une utilisation de deuxième ou troisième intention en raison des risques chirurgicaux [S2]. Rien de tout cela ne se transpose à un produit portatif ou à pince d’oreille : les données sur l’implant ne peuvent jamais appuyer une allégation non invasive.
-- **La stimulation au niveau du cou (cervicale).** Des dispositifs médicaux portatifs qui appliquent un courant électrique au moyen d’électrodes cutanées sur le cou. L’un d’eux a été autorisé par les autorités pour des céphalées précises — le point d’ancrage le plus solide du monde non invasif [S11, S12].
+- **La stimulation au niveau du cou (cervicale).** Des dispositifs médicaux portatifs qui appliquent un courant électrique au moyen d’électrodes cutanées sur le cou. L’un d’eux a obtenu une autorisation réglementaire pour des céphalées précises — le point d’ancrage le plus solide du monde non invasif [S11, S12].
 - **La stimulation de l’oreille (taVNS).** La stimulation transcutanée du nerf vague auriculaire (taVNS) place des électrodes sur l’oreille externe — généralement la cymba conchae ou le tragus — sur un territoire cutané innervé par la branche auriculaire du nerf vague [S1]. C’est aujourd’hui surtout une technique de recherche, et l’essentiel de cette page porte sur ce que montrent ses études.
 - **Les appareils de bien-être grand public.** Boîtiers vibrants, pinces d’oreille et galets « à infrasons » vendus pour le calme, la concentration et le sommeil. Ce qu’ils ont, ce sont les allégations du fabricant ; l’écart entre ces allégations et la littérature clinique est précisément ce que cette page examine.
 - **Les « exercices du nerf vague ».** Respiration lente, exposition au froid, fredonnement, gargarismes. Ce sont des pratiques, et non une stimulation électrique de quoi que ce soit ; leurs données sont abordées séparément à la fin — les aspects pratiques se trouvent dans [les exercices du nerf vague](/articles/vagus-nerve-exercises).
