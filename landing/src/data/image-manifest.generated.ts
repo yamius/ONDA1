@@ -2284,6 +2284,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/concepts-respiratory-sinus-arrhythmia.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/science/concepts-respiratory-sinus-arrhythmia.png": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/science/concepts-respiratory-sinus-arrhythmia.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/science/evidence-vagus-nerve-stimulation.avif": {
     "width": 1024,
     "height": 768
