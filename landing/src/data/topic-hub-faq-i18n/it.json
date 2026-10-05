@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Qual è la frequenza cardiaca a riposo normale in base all'età?",
-        "a": "Negli adulti di qualsiasi età, una frequenza cardiaca a riposo normale è compresa tra 60 e 100 battiti al minuto; i grandi cambiamenti avvengono nell'infanzia, quando i neonati viaggiano a 100–160 bpm e i valori si stabilizzano durante l'adolescenza. Gli adulti allenati stanno spesso più in basso (spesso 40–60 bpm), e alcune ricerche collegano circa 50–90 bpm a una salute migliore nel lungo periodo. All'interno dell'intervallo normale, il tuo andamento personale dice più della media della popolazione.",
+        "a": "Negli adulti di qualsiasi età, una frequenza cardiaca a riposo normale è compresa tra 60 e 100 battiti al minuto; i grandi cambiamenti avvengono nell'infanzia, quando i neonati viaggiano a 100–160 bpm e i valori si stabilizzano durante l'adolescenza. Gli adulti allenati stanno spesso più in basso (spesso sotto i 60 bpm; molti atleti di resistenza d’élite scendono a 40 bpm o meno nel punto più basso della giornata), e negli studi di popolazione una frequenza cardiaca a riposo più bassa è associata a una minore mortalità nel lungo periodo. All'interno dell'intervallo normale, il tuo andamento personale dice più della media della popolazione.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",

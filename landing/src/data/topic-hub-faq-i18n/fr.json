@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Quelle est la fréquence cardiaque au repos normale selon l'âge ?",
-        "a": "Chez l'adulte, quel que soit l'âge, une fréquence cardiaque au repos normale se situe entre 60 et 100 battements par minute ; les grands changements ont lieu pendant l'enfance : un nouveau-né est à 100–160 bpm, puis la fréquence se stabilise à l'adolescence. Les adultes en bonne forme physique se situent souvent plus bas (souvent 40–60 bpm), et certaines recherches associent une plage d'environ 50–90 bpm à une meilleure santé à long terme. Dans la plage normale, votre propre tendance vous en dit plus que la moyenne de la population.",
+        "a": "Chez l'adulte, quel que soit l'âge, une fréquence cardiaque au repos normale se situe entre 60 et 100 battements par minute ; les grands changements ont lieu pendant l'enfance : un nouveau-né est à 100–160 bpm, puis la fréquence se stabilise à l'adolescence. Les adultes en bonne forme physique se situent souvent plus bas (souvent sous 60 bpm ; de nombreux athlètes d’endurance de haut niveau descendent à 40 bpm ou moins au point le plus bas de la journée), et dans les études de population, une fréquence cardiaque au repos plus basse est associée à une mortalité plus faible à long terme. Dans la plage normale, votre propre tendance vous en dit plus que la moyenne de la population.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",

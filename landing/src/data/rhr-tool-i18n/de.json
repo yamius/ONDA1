@@ -55,7 +55,7 @@
   },
   "wearableNote": "Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als die Messung im Sitzen, auf der diese Normwerte beruhen — ein Wearable-Wert kann also etwas besser aussehen, als er ist. Vergleiche deinen eigenen Wochendurchschnitt.",
   "invalid": "Gib ein gültiges Alter (18–120) und einen gültigen Ruhepuls (30–150 S/min) ein.",
-  "disclaimer": "Schätzung zu Informationszwecken, keine medizinische Beratung. Die Perzentile stammen aus der CDC-NHANES-Erhebung unter gesunden US-Erwachsenen (Puls im Sitzen). Dein eigener Morgenverlauf zählt mehr als ein einzelner Wert. Der Ruhepuls steigt durch Koffein, Stress, Hitze, Krankheit, Alkohol und schlechten Schlaf.",
+  "disclaimer": "Schätzung zu Informationszwecken, keine medizinische Beratung. Die Perzentile stammen aus der CDC-NHANES-Erhebung unter gesunden US-Erwachsenen (Puls im Sitzen). Dein eigener Morgenverlauf zählt mehr als ein einzelner Wert. Der Ruhepuls steigt durch Stress, Hitze, Krankheit, Alkohol und schlechten Schlaf; Koffein kann ihn bei manchen Menschen erhöhen, doch die Wirkung ist uneinheitlich, und wer regelmäßig Kaffee trinkt, entwickelt eine Toleranz.",
   "tables": {
     "menTitle": "Ruhepuls nach Alter — Männer",
     "womenTitle": "Ruhepuls nach Alter — Frauen",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "Normaler Ruhepuls: Was ist nach Alter normal?",
-      "body": "Bei Erwachsenen gilt ein Ruhepuls zwischen 60 und 100 S/min als normal. Fitte Menschen liegen oft niedriger (oft 40–60 S/min), und manche Studien bringen etwa 50–90 S/min mit besserer langfristiger Gesundheit in Verbindung. In der NHANES-Erhebung der CDC unter gesunden US-Erwachsenen lag der mediane Ruhepuls im Sitzen bei Männern mit 18–39 Jahren bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min — über das Erwachsenenleben fast konstant. Die mittlere Hälfte der Männer (p25–p75) lag zwischen etwa 60 und 77 S/min. Anders als die HRV verändert sich der Ruhepuls bei Erwachsenen mit dem Alter kaum; Fitness, Gene, Schlaf und Stress spielen eine viel größere Rolle. Deshalb ist der Vergleich mit deinem eigenen Morgenverlauf am aussagekräftigsten. Ausführlicher Ratgeber: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
+      "body": "Bei Erwachsenen gilt ein Ruhepuls zwischen 60 und 100 S/min als normal. Fitte Menschen liegen oft niedriger (oft unter 60 S/min; viele Ausdauerathleten der Spitzenklasse erreichen am Tagestiefpunkt 40 S/min oder weniger), und in Bevölkerungsstudien geht ein niedrigerer Ruhepuls mit einer geringeren langfristigen Sterblichkeit einher. In der NHANES-Erhebung der CDC unter gesunden US-Erwachsenen lag der mediane Ruhepuls im Sitzen bei Männern mit 18–39 Jahren bei etwa 69 S/min, mit 40–59 bei 68 S/min und ab 60 bei 67 S/min — über das Erwachsenenleben fast konstant. Die mittlere Hälfte der Männer (p25–p75) lag zwischen etwa 60 und 77 S/min. Anders als die HRV verändert sich der Ruhepuls bei Erwachsenen mit dem Alter kaum; Fitness, Gene, Schlaf und Stress spielen eine viel größere Rolle. Deshalb ist der Vergleich mit deinem eigenen Morgenverlauf am aussagekräftigsten. Ausführlicher Ratgeber: [Ruhepuls nach Alter](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Ruhepuls-Tabelle Frau: normale Werte für Frauen",
@@ -78,7 +78,7 @@
     },
     {
       "h2": "Ruhepuls zu hoch — woran liegt das?",
-      "body": "Ein höherer Ruhepuls als sonst ist meist vorübergehend: Koffein, Alkohol am Vorabend, schlechter oder zu kurzer Schlaf, Flüssigkeitsmangel, Hitze, eine harte Trainingseinheit, Stress oder ein beginnender Infekt. Auch manche Medikamente (etwa abschwellende Mittel oder Schilddrüsenpräparate) und Erkrankungen wie Blutarmut oder eine Schilddrüsenüberfunktion können ihn erhöhen. Achte auf das Muster: Ein paar Schläge mehr an ein, zwei Tagen sind normales Rauschen; ein morgendlicher Ruhepuls, der mehrere Tage deutlich über deinem üblichen Niveau bleibt — besonders zusammen mit einer niedrigeren HRV —, zeigt, dass dein Körper mehr Belastung trägt, als er verkraftet. Über 100 S/min in Ruhe oder ein hoher Puls mit Herzstolpern, Schwindel oder Atemnot ist ein Grund, zum Arzt zu gehen. Mehr dazu: [wie Alkohol HRV und Ruhepuls beeinflusst](/articles/how-much-alcohol-lowers-hrv) und [Anzeichen von Übertraining](/articles/overtraining-hrv-resting-heart-rate)."
+      "body": "Ein höherer Ruhepuls als sonst ist meist vorübergehend: Alkohol am Vorabend, schlechter oder zu kurzer Schlaf, Flüssigkeitsmangel, Hitze, eine harte Trainingseinheit, Stress oder ein beginnender Infekt. Auch Koffein kann bei manchen Menschen die Herzfrequenz erhöhen, doch seine Wirkung auf den Ruhepuls ist uneinheitlich, und wer regelmäßig Kaffee trinkt, entwickelt eine Toleranz. Auch manche Medikamente (etwa abschwellende Mittel oder Schilddrüsenpräparate) und Erkrankungen wie Blutarmut oder eine Schilddrüsenüberfunktion können ihn erhöhen. Achte auf das Muster: Ein paar Schläge mehr an ein, zwei Tagen sind normales Rauschen; ein morgendlicher Ruhepuls, der mehrere Tage deutlich über deinem üblichen Niveau bleibt — besonders zusammen mit einer niedrigeren HRV —, zeigt, dass dein Körper mehr Belastung trägt, als er verkraftet. Über 100 S/min in Ruhe oder ein hoher Puls mit Herzstolpern, Schwindel oder Atemnot ist ein Grund, zum Arzt zu gehen. Mehr dazu: [wie Alkohol HRV und Ruhepuls beeinflusst](/articles/how-much-alcohol-lowers-hrv) und [Anzeichen von Übertraining](/articles/overtraining-hrv-resting-heart-rate)."
     },
     {
       "h2": "Ruhepuls senken: Was wirklich hilft",
@@ -128,7 +128,7 @@
   "methodology": "Die Tabellen stammen direkt aus dem CDC/NCHS-Bericht zu NHANES 1999–2008 (Ostchega et al. 2011, Tabellen 2–3): Ruhepuls im Sitzen von rund 17.000 US-Erwachsenen, ohne Personen mit Erkrankungen oder Medikamenten, die den Puls beeinflussen. Die Gruppe 18–39 nutzt die Zeile 20–39, die Gruppe 60+ die Zeile 60–79. Dein Perzentil wird zwischen den veröffentlichten 5.–95. Perzentilen für dein Alter und Geschlecht interpoliert. Uhren und Ringe messen den Ruhe- oder Schlafpuls, der meist ein paar S/min niedriger liegt als eine Messung im Sitzen.",
   "sourcesContributes": [
     "Direkte Quelle der Tabellen: Perzentile des Ruhepulses im Sitzen nach Alter und Geschlecht aus NHANES 1999–2008, ohne pulsbeeinflussende Erkrankungen und Medikamente (Tabellen 2–3).",
-    "Klinischer Kontext: 60–100 S/min ist der übliche Normalbereich, und manche Studien bringen etwa 50–90 S/min mit besserer langfristiger Gesundheit in Verbindung; niedriger bei sehr Fitten, etwas höher bei Frauen und ist teilweise genetisch bedingt.",
+    "Klinischer Kontext: 60–100 S/min ist der übliche Normalbereich; niedriger bei sehr Fitten, etwas höher bei Frauen und ist teilweise genetisch bedingt.",
     "Metaanalyse (rund 1,2 Millionen Menschen): Jeder um 10 S/min höhere Ruhepuls ist mit etwa 9 % höherer Gesamtsterblichkeit verbunden — deshalb zählt ein niedrigerer Ruhepuls."
   ],
   "related": {

@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Welcher Ruhepuls ist normal nach Alter?",
-        "a": "Für Erwachsene jeden Alters liegt ein normaler Ruhepuls bei 60 bis 100 Schlägen pro Minute; die großen Veränderungen passieren in der Kindheit: Neugeborene liegen bei 100–160 bpm, bis zur Jugend pendelt sich der Wert ein. Fitte Erwachsene liegen oft niedriger (oft 40–60 bpm), und manche Studien bringen etwa 50–90 bpm mit besserer langfristiger Gesundheit in Verbindung. Innerhalb des Normalbereichs sagt dein eigener Verlauf mehr aus als der Bevölkerungsdurchschnitt.",
+        "a": "Für Erwachsene jeden Alters liegt ein normaler Ruhepuls bei 60 bis 100 Schlägen pro Minute; die großen Veränderungen passieren in der Kindheit: Neugeborene liegen bei 100–160 bpm, bis zur Jugend pendelt sich der Wert ein. Fitte Erwachsene liegen oft niedriger (oft unter 60 bpm; viele Ausdauerathleten der Spitzenklasse erreichen am Tagestiefpunkt 40 bpm oder weniger), und in Bevölkerungsstudien geht ein niedrigerer Ruhepuls mit einer geringeren langfristigen Sterblichkeit einher. Innerhalb des Normalbereichs sagt dein eigener Verlauf mehr aus als der Bevölkerungsdurchschnitt.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",

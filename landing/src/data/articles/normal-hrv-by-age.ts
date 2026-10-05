@@ -91,7 +91,7 @@ Day to day, HRV moves in response to how you're recovering. The most common thin
 - **Poor or short sleep** — the fastest way to a low reading.
 - **Stress and illness** — both keep the sympathetic system switched on.
 - **Overtraining** — hard training without recovery suppresses HRV.
-- **Late meals and caffeine** — both can raise nighttime heart rate and lower HRV.
+- **Late meals and caffeine** — both can lower HRV; late meals can also raise nighttime heart rate, while caffeine's effect on heart rate is inconsistent and fades with regular use.
 
 A single low reading usually means one bad night. A run of low readings against your baseline is the signal worth paying attention to.
 

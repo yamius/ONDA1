@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Qual é a frequência cardíaca de repouso normal por idade?",
-        "a": "Para adultos de qualquer idade, a frequência cardíaca de repouso normal é de 60 a 100 batimentos por minuto; as grandes mudanças acontecem na infância, quando recém-nascidos ficam em 100–160 bpm e a frequência se estabiliza ao longo da adolescência. Adultos bem condicionados costumam ficar abaixo disso (muitas vezes 40–60 bpm), e algumas pesquisas associam cerca de 50–90 bpm a uma saúde melhor no longo prazo. Dentro da faixa normal, a sua própria tendência diz mais do que a média da população.",
+        "a": "Para adultos de qualquer idade, a frequência cardíaca de repouso normal é de 60 a 100 batimentos por minuto; as grandes mudanças acontecem na infância, quando recém-nascidos ficam em 100–160 bpm e a frequência se estabiliza ao longo da adolescência. Adultos bem condicionados costumam ficar abaixo disso (muitas vezes abaixo de 60 bpm; muitos atletas de resistência de elite chegam a 40 bpm ou menos no ponto mais baixo do dia), e, em estudos populacionais, uma frequência cardíaca em repouso mais baixa está associada a menor mortalidade no longo prazo. Dentro da faixa normal, a sua própria tendência diz mais do que a média da população.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",

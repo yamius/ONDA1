@@ -2368,6 +2368,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/measurements-resting-heart-rate.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/measurements-resting-heart-rate.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/measurements-resting-heart-rate.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/mechanisms-breathing-and-hrv.avif": {
     "width": 1920,
     "height": 820

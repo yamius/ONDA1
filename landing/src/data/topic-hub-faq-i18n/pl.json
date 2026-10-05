@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Jakie jest prawidłowe tętno spoczynkowe w zależności od wieku?",
-        "a": "U dorosłych w każdym wieku prawidłowe tętno spoczynkowe wynosi od 60 do 100 uderzeń na minutę; duże zmiany zachodzą w dzieciństwie — noworodki mają 100–160 bpm, a tętno stabilizuje się w okresie nastoletnim. Osoby wysportowane często mają niższe tętno (często 40–60 bpm), a niektóre badania łączą ok. 50–90 bpm z lepszym zdrowiem w dłuższej perspektywie. W granicach normy więcej mówi Twój własny trend niż średnia dla populacji.",
+        "a": "U dorosłych w każdym wieku prawidłowe tętno spoczynkowe wynosi od 60 do 100 uderzeń na minutę; duże zmiany zachodzą w dzieciństwie — noworodki mają 100–160 bpm, a tętno stabilizuje się w okresie nastoletnim. Osoby wysportowane często mają niższe tętno (często poniżej 60 bpm; wielu wyczynowych sportowców wytrzymałościowych osiąga w najniższym punkcie doby 40 bpm lub mniej), a w badaniach populacyjnych niższe tętno spoczynkowe wiąże się z niższą długoterminową śmiertelnością. W granicach normy więcej mówi Twój własny trend niż średnia dla populacji.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",

@@ -31,7 +31,7 @@ A normal resting heart rate for most adults is 60 to 100 beats per minute, but t
 
 ## What is a normal resting heart rate by age?
 
-A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness moves people within it more than age does. Fit people often sit lower (often 40–60 bpm), and some research links roughly 50–90 bpm with better long-term health. These are general ranges for a healthy resting heart rate:
+A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness moves people within it more than age does. Fit people often sit lower (often below 60 bpm; many elite endurance athletes reach 40 bpm or less at their lowest point of the day), and in population studies a lower resting heart rate is associated with lower long-term mortality. These are general ranges for a healthy resting heart rate:
 
 | Age | Typical resting heart rate |
 |---|---|
@@ -39,7 +39,7 @@ A normal adult resting heart rate is 60–100 bpm — a wide band, and fitness m
 | Child (1–10 yr) | 70–120 bpm |
 | Teen (11–17 yr) | 60–100 bpm |
 | Adult (18+) | 60–100 bpm |
-| Well-trained adult | 40–60 bpm |
+| Well-trained adult | often below 60 bpm |
 
 Within adulthood, age itself moves resting heart rate less than you'd expect — a fit 60-year-old can easily have a lower resting heart rate than an unfit 30-year-old. Fitness, stress, sleep and stimulants explain most of the difference.
 
@@ -57,11 +57,11 @@ Watches and rings read resting or sleeping heart rate, which usually comes out a
 
 ## What raises and lowers your resting heart rate?
 
-Sleep, exercise, alcohol, caffeine, stress and illness are the most common things that move your resting heart rate — a daily readout of how your body is doing. Common influences:
+Sleep, exercise, alcohol, stress and illness are the most common things that move your resting heart rate — a daily readout of how your body is doing. Common influences:
 
 **Lowers it (usually good):** regular aerobic exercise, good sleep, hydration, slow breathing practice. Endurance training is the strongest long-term lever — it's why athletes sit in the 40s and 50s.
 
-**Raises it (worth noticing):** poor or short sleep, alcohol, [caffeine](/articles/caffeine-hrv-resting-heart-rate), stress, illness, dehydration, and hot environments. A resting heart rate that's several beats above your normal for a few days often means your body is under load — a cold coming on, accumulated stress, or poor recovery.
+**Raises it (worth noticing):** poor or short sleep, alcohol, stress, illness, dehydration, and hot environments. [Caffeine](/articles/caffeine-hrv-resting-heart-rate) can raise heart rate in some people, but its effect on resting heart rate is inconsistent, and regular coffee drinkers develop tolerance. A resting heart rate that's several beats above your normal for a few days often means your body is under load — a cold coming on, accumulated stress, or poor recovery.
 
 A single elevated reading usually means one rough night or a recent coffee. A sustained rise above your baseline is the more meaningful signal.
 

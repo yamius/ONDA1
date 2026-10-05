@@ -138,11 +138,22 @@ Note for Balban 2023 (cited above): the source carries `note: "authors include a
 - PMC13319486 (“Sorting the mind”, cognitive taVNS meta-analysis);
 - PMC12689627 (“The heart knows best”).
 
-## Resting heart rate
+## Resting heart rate (measurements/resting-heart-rate, approved 2026-10-05)
 
 | Short cite | Full reference | Type | DOI / PMID | Use for |
 |---|---|---|---|---|
-| Nanchen 2018 | Nanchen D. Resting heart rate: what is normal? *Heart* 2018;104(13):1048–1049 | review (editorial) | DOI 10.1136/heartjnl-2017-312731 | 60–100 convention; lower values in fit people; 50–90 research |
+| Henning & Krawiec 2023 | Henning A, Krawiec C. Sinus Tachycardia. *StatPearls* [Internet], StatPearls Publishing; chapter NBK553128, **Last Update 2023-03-05** (continuously updated chapter; re-check the version date when citing) | review (reference chapter) | PMID 31985921 (no DOI) | 60–100 convention (fact rhr.adult.normal) |
+| Sidhu & Marine 2020 | Sidhu S, Marine JE. Evaluating and managing bradycardia. *Trends Cardiovasc Med* 2020 | review | DOI 10.1016/j.tcm.2019.07.001 · PMID 31311698 | Low resting rate normal in young athletic people (facts rhr.adult.normal.caveat, rhr.trained) |
+| Zhang 2016 | Zhang D, Shen X, Qi X. Resting heart rate and all-cause and cardiovascular mortality in the general population: a meta-analysis. *CMAJ* 2016 | meta-analysis | DOI 10.1503/cmaj.150535 · PMID 26598376 | Higher RHR associated with mortality; RR per 10 bpm (facts rhr.mortality.per10, rhr.adult.normal.caveat) — population association only |
+| Fox 2007 | Fox K et al. (Heart Rate Working Group). Resting heart rate in cardiovascular disease. *J Am Coll Cardiol* 2007 | review | DOI 10.1016/j.jacc.2007.04.079 · PMID 17719466 | Risk rises continuously above 60 bpm; heart-rate-lowering drugs (fact rhr.adult.normal.caveat) |
+| D'Ambrosio 2026 | D'Ambrosio P et al. Bradycardia in Athletes: Prevalence, Mechanisms, and Risks. *Circulation* 2026;153(9):616–630 | observational (465 elite endurance athletes) | DOI 10.1161/CIRCULATIONAHA.125.076170 · PMID 41410046 | Holter minimum ≤40 bpm common and well tolerated (fact rhr.trained) — a minimum incl. sleep, not a daytime reading |
+| Reimers 2018 | Reimers AK, Knapp G, Reimers CD. Effects of exercise on the resting heart rate: a systematic review and meta-analysis of interventional studies. *J Clin Med* 2018 | meta-analysis | DOI 10.3390/jcm7120503 · PMID 30513777 | Exercise lowers RHR; endurance and yoga in both sexes |
+| Pietilä 2018 | Pietilä J et al. Acute effect of alcohol intake on cardiovascular autonomic regulation during the first hours of sleep … *JMIR Ment Health* 2018 | observational | DOI 10.2196/mental.9519 · PMID 29549064 | Alcohol and sleeping heart rate; source note: co-authors employed by Firstbeat |
+| Loerup 2019 | Loerup L et al. Trends of blood pressure and heart rate in normal pregnancies: a systematic review and meta-analysis. *BMC Med* 2019 | meta-analysis | DOI 10.1186/s12916-019-1399-1 · PMID 31506067 | Heart-rate rise in pregnancy (fact rhr.pregnancy.rise) |
+| Radin 2020 | Radin JM et al. Harnessing wearable device data to improve state-level real-time surveillance of influenza-like illness in the USA. *Lancet Digit Health* 2020 | observational | DOI 10.1016/S2589-7500(19)30222-5 · PMID 33334565 | Infections raise RHR; population surveillance only |
+| Mishra 2020 | Mishra T et al. Pre-symptomatic detection of COVID-19 from smartwatch data. *Nat Biomed Eng* 2020 | observational (retrospective, small) | DOI 10.1038/s41551-020-00640-6 · PMID 33208926 | Rise vs personal baseline — emerging, not diagnostic |
+| Karjalainen & Viitasalo 1986 | Karjalainen J, Viitasalo M. Fever and cardiac rhythm. *Arch Intern Med* 1986 | observational (small) | PMID 2424378 (no DOI) | Fever keeps heart rate high, even in sleep |
+| Green 1996 | Green PJ, Kirby R, Suls J. The effects of caffeine on blood pressure and heart rate: a review. *Ann Behav Med* 1996 | review | DOI 10.1007/BF02883398 · PMID 24203773 | Caffeine: BP up, heart-rate data inconsistent, tolerance — class debated |
 | Ostchega 2011 | Ostchega Y et al. Resting pulse rate reference data for children, adolescents, and adults: United States, 1999–2008. *National Health Statistics Reports* No. 41 | official statistics | URL https://www.cdc.gov/nchs/data/nhsr/nhsr041.pdf | ONDA resting-heart-rate tables (NHANES) |
 
 ## Official documents (type `official`: URL, no DOI — device and regulatory facts only)

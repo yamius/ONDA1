@@ -4,7 +4,7 @@
     "hrv-heart-rate": [
       {
         "q": "Wat is een normale hartslag in rust per leeftijd?",
-        "a": "Voor volwassenen van elke leeftijd ligt een normale rusthartslag tussen 60 en 100 slagen per minuut; de grote veranderingen gebeuren in de kindertijd, wanneer pasgeborenen op 100–160 bpm zitten en de hartslag zich tijdens de tienerjaren stabiliseert. Fitte volwassenen zitten vaak lager (vaak 40–60 bpm), en sommig onderzoek koppelt ongeveer 50–90 bpm aan een betere gezondheid op lange termijn. Binnen het normale bereik zegt je eigen trend meer dan het gemiddelde van de bevolking.",
+        "a": "Voor volwassenen van elke leeftijd ligt een normale rusthartslag tussen 60 en 100 slagen per minuut; de grote veranderingen gebeuren in de kindertijd, wanneer pasgeborenen op 100–160 bpm zitten en de hartslag zich tijdens de tienerjaren stabiliseert. Fitte volwassenen zitten vaak lager (vaak onder 60 bpm; veel topduursporters halen op het laagste punt van de dag 40 bpm of minder), en in bevolkingsonderzoek gaat een lagere rusthartslag samen met een lagere sterfte op lange termijn. Binnen het normale bereik zegt je eigen trend meer dan het gemiddelde van de bevolking.",
         "links": [
           {
             "href": "/articles/resting-heart-rate-by-age",

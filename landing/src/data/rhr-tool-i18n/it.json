@@ -55,7 +55,7 @@
   },
   "wearableNote": "Orologi e anelli misurano la frequenza a riposo o durante il sonno, che di solito è qualche bpm più bassa della misura da seduti su cui si basano queste norme — quindi il valore del dispositivo può sembrare un po' migliore di quanto sia. Confronta la tua media settimanale.",
   "invalid": "Inserisci un'età valida (18–120) e una frequenza a riposo valida (30–150 bpm).",
-  "disclaimer": "Stima a scopo educativo, non è un parere medico. I percentili provengono dall'indagine CDC NHANES su adulti sani negli Stati Uniti (polso da seduti). Il tuo andamento mattutino conta più di una singola misura. La frequenza a riposo aumenta con caffeina, stress, caldo, malattia, alcol e sonno scarso.",
+  "disclaimer": "Stima a scopo educativo, non è un parere medico. I percentili provengono dall'indagine CDC NHANES su adulti sani negli Stati Uniti (polso da seduti). Il tuo andamento mattutino conta più di una singola misura. La frequenza a riposo aumenta con stress, caldo, malattia, alcol e sonno scarso; la caffeina può aumentarla in alcune persone, ma l'effetto è incostante e chi beve caffè regolarmente sviluppa tolleranza.",
   "tables": {
     "menTitle": "Frequenza cardiaca a riposo per età — uomini",
     "womenTitle": "Frequenza cardiaca a riposo per età — donne",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "Quanti sono i battiti normali a riposo in base all'età?",
-      "body": "Negli adulti una frequenza cardiaca a riposo tra 60 e 100 bpm è considerata normale. Le persone allenate stanno spesso più in basso (spesso 40–60 bpm), e alcune ricerche collegano circa 50–90 bpm a una salute migliore nel lungo periodo. Nell'indagine NHANES dei CDC su adulti sani negli Stati Uniti, la mediana del polso a riposo da seduti era di circa 69 bpm negli uomini di 18–39 anni, 68 bpm a 40–59 anni e 67 bpm dai 60 anni — quasi piatta per tutta la vita adulta. La metà centrale degli uomini (p25–p75) si collocava tra circa 60 e 77 bpm. A differenza dell'HRV, negli adulti la frequenza a riposo cambia poco con l'età: forma fisica, genetica, sonno e stress contano molto di più. Per questo il confronto più utile è con il tuo andamento mattutino. Guida completa: [frequenza cardiaca a riposo per età](/articles/resting-heart-rate-by-age)."
+      "body": "Negli adulti una frequenza cardiaca a riposo tra 60 e 100 bpm è considerata normale. Le persone allenate stanno spesso più in basso (spesso sotto i 60 bpm; molti atleti di resistenza d’élite scendono a 40 bpm o meno nel punto più basso della giornata), e negli studi di popolazione una frequenza cardiaca a riposo più bassa è associata a una minore mortalità nel lungo periodo. Nell'indagine NHANES dei CDC su adulti sani negli Stati Uniti, la mediana del polso a riposo da seduti era di circa 69 bpm negli uomini di 18–39 anni, 68 bpm a 40–59 anni e 67 bpm dai 60 anni — quasi piatta per tutta la vita adulta. La metà centrale degli uomini (p25–p75) si collocava tra circa 60 e 77 bpm. A differenza dell'HRV, negli adulti la frequenza a riposo cambia poco con l'età: forma fisica, genetica, sonno e stress contano molto di più. Per questo il confronto più utile è con il tuo andamento mattutino. Guida completa: [frequenza cardiaca a riposo per età](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Frequenza cardiaca normale nella donna",
@@ -78,7 +78,7 @@
     },
     {
       "h2": "Battiti a riposo alti: perché?",
-      "body": "Una frequenza a riposo più alta del solito è quasi sempre temporanea: caffeina, alcol la sera prima, sonno scarso o breve, disidratazione, caldo, un allenamento intenso, stress o un'infezione in arrivo. Anche alcuni farmaci (per esempio decongestionanti o terapia tiroidea) e condizioni come anemia o ipertiroidismo possono aumentarla. Guarda l'andamento. Qualche battito in più per un giorno o due è normale variabilità; una frequenza mattutina che resta ben sopra il tuo livello abituale per diversi giorni — soprattutto insieme a un'HRV più bassa — indica che il corpo sta sostenendo più carico di quanto riesca a gestire. Oltre 100 bpm a riposo, o un polso alto con palpitazioni, capogiri o fiato corto, è un motivo per rivolgersi a un medico. Approfondisci: [come l'alcol influisce su HRV e frequenza a riposo](/articles/how-much-alcohol-lowers-hrv) e [segnali di sovrallenamento](/articles/overtraining-hrv-resting-heart-rate)."
+      "body": "Una frequenza a riposo più alta del solito è quasi sempre temporanea: alcol la sera prima, sonno scarso o breve, disidratazione, caldo, un allenamento intenso, stress o un'infezione in arrivo. Anche la caffeina può aumentare la frequenza cardiaca in alcune persone, ma il suo effetto sulla frequenza a riposo è incostante, e chi beve caffè regolarmente sviluppa tolleranza. Anche alcuni farmaci (per esempio decongestionanti o terapia tiroidea) e condizioni come anemia o ipertiroidismo possono aumentarla. Guarda l'andamento. Qualche battito in più per un giorno o due è normale variabilità; una frequenza mattutina che resta ben sopra il tuo livello abituale per diversi giorni — soprattutto insieme a un'HRV più bassa — indica che il corpo sta sostenendo più carico di quanto riesca a gestire. Oltre 100 bpm a riposo, o un polso alto con palpitazioni, capogiri o fiato corto, è un motivo per rivolgersi a un medico. Approfondisci: [come l'alcol influisce su HRV e frequenza a riposo](/articles/how-much-alcohol-lowers-hrv) e [segnali di sovrallenamento](/articles/overtraining-hrv-resting-heart-rate)."
     },
     {
       "h2": "Come abbassare la frequenza cardiaca a riposo",
@@ -128,7 +128,7 @@
   "methodology": "Le tabelle provengono direttamente dal rapporto CDC/NCHS su NHANES 1999–2008 (Ostchega et al. 2011, Tabelle 2–3): polso a riposo da seduti di circa 17.000 adulti statunitensi, escluse le persone con condizioni o farmaci che influenzano il polso. La fascia 18–39 usa la riga 20–39 e la fascia 60+ la riga 60–79. Il tuo percentile è interpolato tra i percentili pubblicati dal 5° al 95° per età e sesso. Orologi e anelli misurano la frequenza a riposo o durante il sonno, che di solito è qualche bpm più bassa di una misura da seduti.",
   "sourcesContributes": [
     "Fonte diretta delle tabelle: percentili del polso a riposo da seduti per età e sesso da NHANES 1999–2008, escluse condizioni e farmaci che influenzano il polso (Tabelle 2–3).",
-    "Contesto clinico: 60–100 bpm è l'intervallo normale standard, e alcune ricerche collegano circa 50–90 bpm a una salute migliore nel lungo periodo; più bassa nelle persone molto allenate, leggermente più alta nelle donne e in parte genetica.",
+    "Contesto clinico: 60–100 bpm è l'intervallo normale standard; più bassa nelle persone molto allenate, leggermente più alta nelle donne e in parte genetica.",
     "Meta-analisi (circa 1,2 milioni di persone): ogni 10 bpm in più di frequenza a riposo si associano a una mortalità per tutte le cause più alta di circa il 9% — ecco perché una frequenza a riposo più bassa conta."
   ],
   "related": {

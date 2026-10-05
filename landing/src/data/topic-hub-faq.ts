@@ -16,7 +16,7 @@ const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   'hrv-heart-rate': [
     {
       q: 'What is a normal resting heart rate by age?',
-      a: 'For adults of every age, a normal resting heart rate is 60 to 100 beats per minute; the big changes happen in childhood, when newborns run at 100–160 bpm and rates settle through the teens. Fit adults often sit lower (often 40–60 bpm), and some research links roughly 50–90 bpm with better long-term health. Within the normal range, your own trend tells you more than the population average.',
+      a: 'For adults of every age, a normal resting heart rate is 60 to 100 beats per minute; the big changes happen in childhood, when newborns run at 100–160 bpm and rates settle through the teens. Fit adults often sit lower (often below 60 bpm; many elite endurance athletes reach 40 bpm or less at their lowest point of the day), and in population studies a lower resting heart rate is associated with lower long-term mortality. Within the normal range, your own trend tells you more than the population average.',
       links: [
         { href: '/articles/resting-heart-rate-by-age', label: 'Resting heart rate by age' },
         { href: '/tools/resting-heart-rate', label: 'Resting heart rate calculator' },

@@ -158,7 +158,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "What is a normal resting heart rate by age?",
       answer:
-        "For adults, 60–100 bpm; well-trained adults often 40–60 bpm. Children and teens run higher. Fitness affects the number within adulthood more than age does.",
+        "For adults, 60–100 bpm; well-trained adults often below 60 bpm, and many elite endurance athletes reach 40 bpm or less at their lowest point of the day. Children and teens run higher. Fitness affects the number within adulthood more than age does.",
     },
     {
       question: "Is a resting heart rate of 50 too low?",
@@ -173,7 +173,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Why is my resting heart rate higher than usual?",
       answer:
-        "Common causes are poor sleep, alcohol, caffeine, stress, illness or dehydration. A rise of several beats above your baseline sustained over a few days often means your body is under load or fighting something.",
+        "Common causes are poor sleep, alcohol, stress, illness or dehydration; in some people caffeine can raise it too, though the effect is inconsistent and regular coffee drinkers develop tolerance. A rise of several beats above your baseline sustained over a few days often means your body is under load or fighting something.",
     },
     {
       question: "Does resting heart rate go up with age?",
@@ -1360,7 +1360,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does caffeine lower HRV and raise resting heart rate?",
       answer:
-        "Yes, especially late in the day. Caffeine's 5-6 hour half-life keeps sympathetic tone slightly elevated into the night, which can raise resting heart rate a few beats and flatten overnight HRV — sleep studies show higher LF/HF and QT variability after evening caffeine. The effect is a tax, not a catastrophe, and it compounds night to night.",
+        "It can lower HRV, especially late in the day: caffeine's 5-6 hour half-life keeps sympathetic tone slightly elevated into the night, which can flatten overnight HRV — sleep studies show higher LF/HF and QT variability after evening caffeine. Resting heart rate is less clear-cut: caffeine can raise heart rate in some people, but the effect on resting heart rate is inconsistent, and regular coffee drinkers develop tolerance. The effect is a tax, not a catastrophe, and it compounds night to night.",
     },
     {
       question: "When should I stop drinking caffeine?",

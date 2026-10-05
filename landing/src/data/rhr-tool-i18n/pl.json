@@ -55,7 +55,7 @@
   },
   "wearableNote": "Zegarki i pierścienie mierzą tętno spoczynkowe lub w czasie snu, które zwykle jest o kilka ud./min niższe niż pomiar na siedząco, na którym opierają się te normy — więc wynik z urządzenia może wyglądać nieco lepiej. Porównuj własną średnią tygodniową.",
   "invalid": "Podaj prawidłowy wiek (18–120) i tętno spoczynkowe (30–150 ud./min).",
-  "disclaimer": "Szacunek edukacyjny, nie porada medyczna. Percentyle pochodzą z badania CDC NHANES zdrowych dorosłych w USA (tętno na siedząco). Twój poranny trend jest ważniejszy niż pojedynczy pomiar. Tętno spoczynkowe podnoszą kofeina, stres, upał, choroba, alkohol i słaby sen.",
+  "disclaimer": "Szacunek edukacyjny, nie porada medyczna. Percentyle pochodzą z badania CDC NHANES zdrowych dorosłych w USA (tętno na siedząco). Twój poranny trend jest ważniejszy niż pojedynczy pomiar. Tętno spoczynkowe podnoszą stres, upał, choroba, alkohol i słaby sen; kofeina może je podnosić u niektórych osób, ale efekt jest niejednoznaczny, a osoby regularnie pijące kawę wytwarzają tolerancję.",
   "tables": {
     "menTitle": "Tętno spoczynkowe według wieku — mężczyźni",
     "womenTitle": "Tętno spoczynkowe według wieku — kobiety",
@@ -70,7 +70,7 @@
   "sections": [
     {
       "h2": "Prawidłowe tętno spoczynkowe według wieku — jakie jest?",
-      "body": "U dorosłych za prawidłowe uznaje się tętno spoczynkowe od 60 do 100 ud./min. Osoby wysportowane często mają niższe tętno (często 40–60 ud./min), a niektóre badania łączą ok. 50–90 ud./min z lepszym zdrowiem w dłuższej perspektywie. W badaniu CDC NHANES zdrowych dorosłych w USA mediana tętna spoczynkowego na siedząco wynosiła ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min od 60. roku życia — przez całe dorosłe życie niemal bez zmian. Środkowa połowa mężczyzn (p25–p75) mieściła się mniej więcej między 60 a 77 ud./min. W przeciwieństwie do HRV tętno spoczynkowe u dorosłych prawie nie zależy od wieku; dużo ważniejsze są kondycja, geny, sen i stres. Dlatego najbardziej przydatne jest porównanie z własnym porannym trendem. Pełny poradnik: [tętno spoczynkowe według wieku](/articles/resting-heart-rate-by-age)."
+      "body": "U dorosłych za prawidłowe uznaje się tętno spoczynkowe od 60 do 100 ud./min. Osoby wysportowane często mają niższe tętno (często poniżej 60 ud./min; wielu wyczynowych sportowców wytrzymałościowych osiąga w najniższym punkcie doby 40 ud./min lub mniej), a w badaniach populacyjnych niższe tętno spoczynkowe wiąże się z niższą długoterminową śmiertelnością. W badaniu CDC NHANES zdrowych dorosłych w USA mediana tętna spoczynkowego na siedząco wynosiła ok. 69 ud./min u mężczyzn w wieku 18–39 lat, 68 ud./min w wieku 40–59 i 67 ud./min od 60. roku życia — przez całe dorosłe życie niemal bez zmian. Środkowa połowa mężczyzn (p25–p75) mieściła się mniej więcej między 60 a 77 ud./min. W przeciwieństwie do HRV tętno spoczynkowe u dorosłych prawie nie zależy od wieku; dużo ważniejsze są kondycja, geny, sen i stres. Dlatego najbardziej przydatne jest porównanie z własnym porannym trendem. Pełny poradnik: [tętno spoczynkowe według wieku](/articles/resting-heart-rate-by-age)."
     },
     {
       "h2": "Norma tętna u kobiety",
@@ -78,7 +78,7 @@
     },
     {
       "h2": "Tętno za wysokie w spoczynku — dlaczego?",
-      "body": "Wyższe niż zwykle tętno spoczynkowe najczęściej jest przejściowe: kofeina, alkohol poprzedniego wieczoru, zbyt krótki lub słaby sen, odwodnienie, upał, ciężki trening, stres albo rozwijająca się infekcja. Mogą je też podnosić niektóre leki (np. obkurczające śluzówkę nosa czy leki na tarczycę) oraz stany takie jak anemia czy nadczynność tarczycy. Patrz na wzorzec. Kilka uderzeń więcej przez dzień czy dwa to zwykłe wahania; poranne tętno spoczynkowe wyraźnie powyżej Twojej normy przez kilka dni — zwłaszcza razem z niższym HRV — sugeruje, że organizm jest bardziej obciążony, niż sobie radzi. Powyżej 100 ud./min w spoczynku albo wysokie tętno z kołataniem serca, zawrotami głowy lub dusznością to powód, by pójść do lekarza. Więcej: [jak alkohol wpływa na HRV i tętno spoczynkowe](/articles/how-much-alcohol-lowers-hrv) oraz [objawy przetrenowania](/articles/overtraining-hrv-resting-heart-rate)."
+      "body": "Wyższe niż zwykle tętno spoczynkowe najczęściej jest przejściowe: alkohol poprzedniego wieczoru, zbyt krótki lub słaby sen, odwodnienie, upał, ciężki trening, stres albo rozwijająca się infekcja. U niektórych osób tętno przyspiesza też kofeina, ale jej wpływ na tętno spoczynkowe jest niejednoznaczny, a osoby regularnie pijące kawę wytwarzają tolerancję. Mogą je też podnosić niektóre leki (np. obkurczające śluzówkę nosa czy leki na tarczycę) oraz stany takie jak anemia czy nadczynność tarczycy. Patrz na wzorzec. Kilka uderzeń więcej przez dzień czy dwa to zwykłe wahania; poranne tętno spoczynkowe wyraźnie powyżej Twojej normy przez kilka dni — zwłaszcza razem z niższym HRV — sugeruje, że organizm jest bardziej obciążony, niż sobie radzi. Powyżej 100 ud./min w spoczynku albo wysokie tętno z kołataniem serca, zawrotami głowy lub dusznością to powód, by pójść do lekarza. Więcej: [jak alkohol wpływa na HRV i tętno spoczynkowe](/articles/how-much-alcohol-lowers-hrv) oraz [objawy przetrenowania](/articles/overtraining-hrv-resting-heart-rate)."
     },
     {
       "h2": "Jak obniżyć tętno spoczynkowe",
@@ -128,7 +128,7 @@
   "methodology": "Tabele pochodzą bezpośrednio z raportu CDC/NCHS o NHANES 1999–2008 (Ostchega i in. 2011, tabele 2–3): tętno spoczynkowe na siedząco u ok. 17 000 dorosłych w USA, z wyłączeniem osób z chorobami lub lekami wpływającymi na tętno. Przedział 18–39 wykorzystuje wiersz 20–39, a przedział 60+ wiersz 60–79. Twój percentyl jest interpolowany między opublikowanymi percentylami od 5. do 95. dla Twojego wieku i płci. Zegarki i pierścienie mierzą tętno spoczynkowe lub w czasie snu, zwykle o kilka ud./min niższe niż pomiar na siedząco.",
   "sourcesContributes": [
     "Bezpośrednie źródło tabel: percentyle tętna spoczynkowego na siedząco według wieku i płci z NHANES 1999–2008, z wyłączeniem chorób i leków wpływających na tętno (tabele 2–3).",
-    "Kontekst kliniczny: prawidłowe tętno spoczynkowe to mniej więcej 50–90 ud./min, niższe u osób bardzo wysportowanych, nieco wyższe u kobiet i częściowo uwarunkowane genetycznie.",
+    "Kontekst kliniczny: standardowy zakres normy to 60–100 ud./min; niższe tętno u osób bardzo wysportowanych, nieco wyższe u kobiet i częściowo uwarunkowane genetycznie.",
     "Metaanaliza (ok. 1,2 mln osób): każde 10 ud./min wyższego tętna spoczynkowego wiąże się z ok. 9% wyższą śmiertelnością ogólną — dlatego niższe tętno spoczynkowe ma znaczenie."
   ],
   "related": {
