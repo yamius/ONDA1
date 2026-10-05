@@ -63,11 +63,16 @@ npx tsx scripts/check-science-content.ts --file <path/to/your-file.md>
 
 Do not paraphrase the log; paste it as printed. If you cannot run scripts, say so in the hand-off note.
 
+## Approved facts are visible changes
+
+If your work changes an `approved` fact in any way — its text, its short form, a translation, or its grammar in one language — list every changed fact on its own line in the hand-off note (“Approved facts changed”), with the old and the new text. This applies to any report that touches facts, not only science pages: Yakiv must see each change to an approved fact and confirm it.
+
 ## Hand-off note (send with the file)
 
 ```
 Page: <kind>/<slug>
 Intent in one sentence:
+Approved facts changed: id — old text → new text, one line each, all languages touched (or “none”)
 Proposals:          P1 … — one line each: kind | value | scope | DOI/PMID/URL | quote or location   (or “none”)
 Check log:          attached / could not run scripts
 New link targets:   (pages that don’t exist yet, or “none”)
