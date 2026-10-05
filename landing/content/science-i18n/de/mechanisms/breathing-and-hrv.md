@@ -2,7 +2,7 @@
 sourceHash: "41115ae9a660"
 title: "Wie die Atmung die HRV verändert – und warum langsames Atmen sie erhöht"
 metaTitle: "Atmung und HRV: Warum langsames Atmen sie erhöht"
-metaDescription: "Warum die Herzfrequenzvariabilität steigt, wenn du langsam atmest: atemgekoppelter Herzrhythmus, Baroreflex und Resonanz – was gesichert ist und was umstritten."
+metaDescription: "Warum die Herzfrequenzvariabilität steigt, wenn du langsam atmest: atemgekoppelter Herzrhythmus, Baroreflex, Resonanz – gesichert und umstritten."
 shortAnswer: >
   Die Atmung verändert die Herzfrequenzvariabilität, weil jeder Atemzug das
   Herz schneller und wieder langsamer schlagen lässt – und langsames Atmen

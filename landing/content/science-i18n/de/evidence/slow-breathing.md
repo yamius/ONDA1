@@ -38,7 +38,7 @@ evidenceMap:
     limitation: "Narrative Synthese weniger Studien; keine gepoolte Effektgröße."
   - claim: "Eine Metaanalyse von Programmen zum langsamen Atmen bei Menschen mit Bluthochdruck oder Prähypertonie fand moderate Senkungen des systolischen und diastolischen Blutdrucks, bei hoher Heterogenität."
     limitation: "Hohe Heterogenität; gerätegestützte und nicht angeleitete Studien zusammen gepoolt; überwiegend kurze Programme."
-  - claim: "Die Autoren bezeichnen die Senkung als moderat und halten sie für eine mögliche vernünftige erste Option für Menschen mit geringem Risiko, die zögern, Medikamente zu beginnen."
+  - claim: "Die Autoren bezeichnen die Senkung als moderat und halten sie möglicherweise für eine sinnvolle erste Option bei Menschen mit geringem Risiko, die zögern, mit Medikamenten zu beginnen."
     limitation: "Ein Vorschlag der Autoren; keine Leitlinienempfehlung, und er gilt nicht für Menschen mit höherem Risiko."
   - claim: "Eine Metaanalyse zu einem Gerät, das den Atemtakt vorgibt, bündelte wenige Studien."
     limitation: "Kurze Studien zu einem einzigen Gerät."
@@ -88,7 +88,7 @@ Jeder Atemzug lässt das Herz schneller und wieder langsamer schlagen, und langs
 
 ## Wie wird es gemessen?
 
-Studien zum langsamen Atmen messen zwei Arten von Dingen:
+Studien zum langsamen Atmen messen zweierlei:
 
 - **Physiologie** – die HRV während und nach der Übung, Herzfrequenz, Blutdruck, Atemfrequenz.
 - **Ergebnisse** – Blutdruck über Wochen, Fragebögen zu Stress und Angst, Schlaftagebücher oder Schlafaufzeichnungen, Schmerzbewertungen, Symptomwerte bei Lungenerkrankungen.
@@ -99,7 +99,7 @@ Der Vergleich ist der schwierige Teil. Menschen wissen immer, ob sie langsam atm
 
 - **Frequenz und individuelle Passung.** Die Reaktion ist nahe der persönlichen Resonanzfrequenz am größten, und diese ist verschieden [S1, S13].
 - **Dosis.** Dauer der Sitzungen, Häufigkeit der Übung und Zahl der Wochen unterscheiden sich stark zwischen den Studien.
-- **Anleitung.** Manche Studien nutzen ein Taktgerät, manche eine App oder eine Aufnahme, manche selbst getaktetes Atmen. Bei den Studien zu einem Gerät hingen die Ergebnisse davon ab, wer die Studien durchführte [S5].
+- **Anleitung.** Manche Studien nutzen ein Taktgerät, manche eine App oder eine Aufnahme, manche selbst getaktetes Atmen. Bei den Studien zu einem bestimmten Gerät hingen die Ergebnisse davon ab, wer die Studien durchführte [S5].
 - **Population.** Gesunde Freiwillige und Menschen mit Bluthochdruck, Angst, Schlafproblemen oder Lungenerkrankungen reagieren unterschiedlich, und Befunde aus einer Gruppe lassen sich nicht automatisch auf eine andere übertragen.
 - **Vergleichsbedingung.** Inaktive Kontrollen lassen den Effekt größer erscheinen; aktive Kontrollen wie Meditation verkleinern ihn.
 
@@ -107,7 +107,7 @@ Der Vergleich ist der schwierige Teil. Menschen wissen immer, ob sie langsam atm
 
 **HRV: gesichert.** Eine Metaanalyse von {{fact:study.laborde2022.studies}} fand, dass die vagal vermittelte HRV während langsamen Atmens, unmittelbar nach einer einzelnen Sitzung und nach Programmen mit mehreren Sitzungen steigt [S2]. Eine systematische Übersichtsarbeit bei gesunden Menschen kam zu einem Ergebnis in dieselbe Richtung [S3]. Das sind Veränderungen eines physiologischen Signals; für sich genommen sind sie keine Gesundheitsergebnisse.
 
-**Blutdruck: kontextabhängig.** Eine Metaanalyse von {{fact:study.chaddha2019.studies}} bei Menschen mit Bluthochdruck oder Prähypertonie fand moderate Senkungen des systolischen und diastolischen Blutdrucks, bei hoher Heterogenität [S4]. Die Autoren halten es für eine mögliche vernünftige erste Option für Menschen mit geringem Risiko, die zögern, Medikamente zu beginnen [S4] – ein Vorschlag, keine Leitlinie. Bei gerätegestütztem Atmen ist mehr Vorsicht geboten: Eine Metaanalyse von {{fact:study.mahtani2012.trials}} fand, dass der Effekt verschwand, wenn die herstellernahen Studien ausgeschlossen wurden, und forderte längere, unabhängige Studien [S5]. Die praktische Seite behandelt [langsames Atmen und Bluthochdruck](/articles/high-blood-pressure-slow-breathing).
+**Blutdruck: kontextabhängig.** Eine Metaanalyse von {{fact:study.chaddha2019.studies}} bei Menschen mit Bluthochdruck oder Prähypertonie fand moderate Senkungen des systolischen und diastolischen Blutdrucks, bei hoher Heterogenität [S4]. Die Autoren halten langsames Atmen möglicherweise für eine sinnvolle erste Option bei Menschen mit geringem Risiko, die zögern, mit Medikamenten zu beginnen [S4] – ein Vorschlag, keine Leitlinie. Bei gerätegestütztem Atmen ist mehr Vorsicht geboten: Eine Metaanalyse von {{fact:study.mahtani2012.trials}} fand, dass der Effekt verschwand, wenn die herstellernahen Studien ausgeschlossen wurden, und forderte längere, unabhängige Studien [S5]. Praktische Hinweise findest du in [langsames Atmen und Bluthochdruck](/articles/high-blood-pressure-slow-breathing).
 
 **Stress, Angst und Stimmung: kontextabhängig.** Eine Metaanalyse von {{fact:study.fincham2023.trials}} zu Atemarbeit fand einen kleinen bis mittleren Rückgang von selbstberichtetem Stress, mit ähnlichen Effekten auf Angst und depressive Symptome; die meisten Studien hatten ein moderates Verzerrungsrisiko, und „Atemarbeit“ umfasst dort auch Techniken, die kein langsames Atmen sind [S6]. Die Autoren selbst mahnen zur Vorsicht, damit keine Lücke zwischen Hype und Evidenz entsteht [S6]. Bei gesunden Menschen wurde langsames Atmen mit mehr Entspannung und Wachheit sowie weniger Symptomen von Erregung und Angst in Verbindung gebracht [S3]. Praktische Anleitungen findest du in [Atmen bei Angst und Panik](/articles/anxiety-panic-breathing-hrv).
 

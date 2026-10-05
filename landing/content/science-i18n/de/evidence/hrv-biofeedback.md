@@ -35,7 +35,7 @@ evidenceMap:
     limitation: "Die Rangfolge nach Zielgrößen beruht auf wenigen Studien pro Zielgröße."
   - claim: "Die Effektgrößen waren gegenüber inaktiven Kontrollbedingungen größer als gegenüber aktiven, in beiden Fällen aber signifikant."
     limitation: "Aktive Kontrollen unterscheiden sich zwischen den Studien; der Vergleich zeigt nicht, welche Komponente wirkt."
-  - claim: "Die Autorinnen und Autoren beschreiben HRV-Biofeedback als nützlich als ergänzende Behandlung und fordern weitere Forschung für bestimmte Anwendungen."
+  - claim: "Die Autorinnen und Autoren halten HRV-Biofeedback als ergänzende Behandlung für nützlich und fordern weitere Forschung für bestimmte Anwendungen."
     limitation: "Die Einordnung der Autoren selbst; keine Leitlinienempfehlung."
   - claim: "Eine Metaanalyse zu HRV-Biofeedback bei Stress und Angst bündelte Studien mit Menschen, die das Training erhielten."
     limitation: "Überwiegend kleine Studien; die Zahlen beschreiben die gepoolte Literatur, nicht eine einzelne Studie."
@@ -123,7 +123,7 @@ Die Vergleichsbedingung ist ebenso wichtig wie das Maß. Gegenüber inaktiven Ko
 
 ## Was zeigt die Evidenz?
 
-**Insgesamt: gesichert, mit moderater Größe.** Eine systematische Übersichtsarbeit mit Metaanalyse von {{fact:study.lehrer2020.studies}} über viele Zielgrößen fand einen kleinen bis mittleren Effekt zugunsten von HRV-Biofeedback, ähnlich dem anderer wirksamer Behandlungen [S3]. Die Autoren beschreiben es als nützlich als ergänzende Behandlung und fordern weitere Forschung für bestimmte Anwendungen [S3].
+**Insgesamt: gesichert, mit moderater Größe.** Eine systematische Übersichtsarbeit mit Metaanalyse von {{fact:study.lehrer2020.studies}} über viele Zielgrößen fand einen kleinen bis mittleren Effekt zugunsten von HRV-Biofeedback, ähnlich dem anderer wirksamer Behandlungen [S3]. Die Autoren halten es als ergänzende Behandlung für nützlich und fordern weitere Forschung für bestimmte Anwendungen [S3].
 
 **Stress und Angst: kontextabhängig.** Eine Metaanalyse von {{fact:study.goessl2017.studies}} fand, dass das Training mit einem starken Rückgang von selbstberichtetem Stress und Angst einherging, und hielt zugleich fest, dass besser kontrollierte Studien nötig sind [S4]. Eine neuere Metaanalyse zu Fernprogrammen fand keinen signifikanten Effekt auf Stress [S6]. Am deutlichsten ist der Nutzen bei selbstberichteten Symptomen in kleinen Studien.
 
@@ -137,7 +137,7 @@ Die Vergleichsbedingung ist ebenso wichtig wie das Maß. Gegenüber inaktiven Ko
 
 **Andere Erkrankungen: vorläufig.** Eine systematische Übersichtsarbeit zu chronischen Erkrankungen berichtete, dass das Training ohne Nebenwirkungen durchführbar war, fand positive Ergebnisse bei Bluthochdruck, Asthma, Depression und Angst, Schlafstörungen, kognitiver Leistung und Schmerz und forderte eine Bestätigung [S10].
 
-**Bringt das Feedback selbst etwas? Umstritten.** Das ist die zentrale offene Frage. {{fact:claim.slowExhale}}. Ganz ohne Feedback-Bildschirm fand eine große Metaanalyse diese Anstiege während der Übung, direkt nach einer einzelnen Sitzung und nach Programmen mit mehreren Sitzungen [S11]. Studien, die den Bildschirm isolieren, sind selten:
+**Bringt das Feedback selbst etwas? Umstritten.** Das ist die zentrale offene Frage. {{fact:claim.slowExhale}}. Ganz ohne Feedback-Bildschirm fand eine große Metaanalyse diese Anstiege während der Übung, direkt nach einer einzelnen Sitzung und nach Programmen mit mehreren Sitzungen [S11]. Studien, die den Beitrag des Bildschirms isolieren, sind selten:
 
 - Im Vergleich mit einer Scheinbehandlung (Sham) verbesserte echtes Biofeedback bei gesunden Erwachsenen den positiven Affekt und senkte die Depressionswerte, veränderte aber die autonomen Messwerte nicht [S12]. Das Abstract sagt nicht genau, was die Scheinbedingung beibehielt oder wegließ.
 - In einer randomisierten Studie schnitt Biofeedback bei einer individuell ermittelten Resonanzfrequenz nicht besser ab als Biofeedback bei einer festen langsamen Frequenz; laut den Autoren erlaubt ihre Studie keine sicheren Schlüsse [S13]. Das ist das Ergebnis einer einzelnen Studie, keine abschließende Antwort.

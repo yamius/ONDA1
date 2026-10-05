@@ -151,7 +151,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'hrv.pooled.daytime': { display: "etwa 42 ms" },
     'hrv.rmssd.definition': { display: "RMSSD – die Quadratwurzel des Mittelwerts der quadrierten Differenzen aufeinanderfolgender Herzschläge" },
     'hrv.sdnn.definition': { display: "SDNN – die Standardabweichung der Intervalle zwischen normalen Herzschlägen" },
-    'hrv.age.trend': { display: "die HRV sinkt tendenziell mit dem Alter – in unserer Tabelle der nächtlichen RMSSD fällt der Median von einer Altersgruppe zur nächsten um etwa {range} ms" },
+    'hrv.age.trend': { display: "Die HRV sinkt tendenziell mit dem Alter – in unserer Tabelle der nächtlichen RMSSD fällt der Median von einer Altersgruppe zur nächsten um etwa {range} ms" },
     'applewatch.hrv.healthkit': { display: "Apple Health erfasst die HRV als SDNN" },
     'applewatch.hrv.variants2026': { display: "Apple Watch Series 12 und Ultra 4 mit watchOS 27 zeigen zwei HRV-Varianten – Recovery HRV und Overall HRV – und messen die HRV bis zu alle fünf Minuten" },
     'applewatch.hrv.rmssdType': { display: "iOS und watchOS 27 fügen Apple Health einen RMSSD-Datentyp hinzu" },

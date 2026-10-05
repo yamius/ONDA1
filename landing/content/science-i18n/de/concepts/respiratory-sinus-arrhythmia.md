@@ -2,7 +2,7 @@
 sourceHash: "c96db8623893"
 title: "Respiratorische Sinusarrhythmie: Wie die Atmung den Herzrhythmus prägt"
 metaTitle: "Respiratorische Sinusarrhythmie (RSA) erklärt"
-metaDescription: "Die respiratorische Sinusarrhythmie ist das normale Schnellerwerden des Herzens beim Einatmen und Langsamerwerden beim Ausatmen: Entstehung, Einflüsse, Grenzen."
+metaDescription: "Respiratorische Sinusarrhythmie: das normale Schnellerwerden des Herzens beim Einatmen und Langsamerwerden beim Ausatmen – Entstehung, Einflüsse, Grenzen."
 shortAnswer: >
   Die respiratorische Sinusarrhythmie (RSA) ist der normale Anstieg der
   Herzfrequenz bei jedem Einatmen und ihr Abfall bei jedem Ausatmen. Trotz des
@@ -71,7 +71,7 @@ evidenceMap:
 
 Die respiratorische Sinusarrhythmie (RSA) ist das natürliche Auf und Ab der Herzfrequenz mit jedem Atemzug: Beim Einatmen schlägt das Herz etwas schneller, beim Ausatmen langsamer [S2, S4]. „Sinus“ bedeutet, dass die Schläge weiterhin im normalen Schrittmacher des Herzens entstehen; „respiratorisch“ benennt den Antrieb. Das Wort „Arrhythmie“ ist hier eine historische Bezeichnung für einen schwankenden Rhythmus, keine Diagnose – die RSA ist die rhythmische Schwankung der Schlag-zu-Schlag-Intervalle, die man bei gesunden Menschen in Ruhe sieht [S5].
 
-Forschende empfehlen, den Begriff genau diesem atemgekoppelten Schneller- und Langsamerwerden des Herzens vorzubehalten [S3]. Sie ist der sichtbarste Teil der [Herzfrequenzvariabilität (HRV)](/science/concepts/heart-rate-variability) – der Schwankung des Herzrhythmus von Schlag zu Schlag –, und diese Seite handelt von genau dieser einen Komponente: was sie erzeugt, was ihre Größe verändert und was sie dir sagen kann und was nicht.
+Forschende empfehlen, den Begriff genau diesem atemgekoppelten Schneller- und Langsamerwerden des Herzens vorzubehalten [S3]. Die RSA ist der sichtbarste Teil der [Herzfrequenzvariabilität (HRV)](/science/concepts/heart-rate-variability) – der Schwankung des Herzrhythmus von Schlag zu Schlag –, und diese Seite handelt von genau dieser einen Komponente: was sie erzeugt, was ihre Größe verändert und was sie dir sagen kann und was nicht.
 
 ## Wie funktioniert sie?
 
@@ -96,7 +96,7 @@ Die RSA wird aus den Abständen zwischen den Herzschlägen abgelesen, die zusamm
 
 **Gesichert.** Die RSA ist ein normales Merkmal des Herzens in Ruhe [S5] und wird hauptsächlich von der vagalen Regulation getragen [S1, S7]. Bei langsamem und tiefem Atmen ist sie größer, bei schnellem Atmen kleiner [S4, S5], und in kurzen Ruhemessungen ist sie die Hauptquelle der HRV [S1].
 
-**Kontextabhängig.** Wie stark Körperhaltung, Zustand und Alter wirken, stammt aus Labor- und Übersichtsdaten mit unterschiedlichen Protokollen [S4, S6]; wie stark sich die RSA bei einer bestimmten Person verändert, kann eine Bevölkerungsstudie nicht vorhersagen.
+**Kontextabhängig.** Die Angaben dazu, wie stark Körperhaltung, Zustand und Alter wirken, stammen aus Labor- und Übersichtsdaten mit unterschiedlichen Protokollen [S4, S6]; wie stark sich die RSA bei einer bestimmten Person verändert, kann eine Bevölkerungsstudie nicht vorhersagen.
 
 **Umstritten.** Ob ein zentraler Atemrhythmusgenerator oder der Baroreflex die RSA hauptsächlich erzeugt [S4, S5].
 
