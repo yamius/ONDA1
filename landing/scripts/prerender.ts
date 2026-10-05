@@ -10,7 +10,8 @@ import { renderToString } from 'react-dom/server'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import { resolveFactsDeep, type FactLang } from '../src/data/science/facts'
 import { SCIENCE_INDEX, SCIENCE_KINDS, SCIENCE_LANGS } from '../src/generated/science-pages'
-import { execSync } from 'child_process'
+import { execSync, spawn } from 'child_process'
+import { cpus, totalmem } from 'os'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { createApp } from '../src/entry-server'
@@ -39,7 +40,42 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 const projectRoot = join(__dirname, '..')
 const distDir = join(projectRoot, 'dist')
 
-const routes = getPrerenderRoutes()
+const allRoutes = getPrerenderRoutes()
+
+/**
+ * Parallel prerender. renderToString + JSDOM is single-threaded and ~100 routes/min, so the full site takes ~30 min in
+ * one process. Without PRERENDER_SHARD, this process becomes a coordinator: it starts PRERENDER_JOBS child processes
+ * (default: by CPU count and memory, max 6), each rendering every N-th route (PRERENDER_SHARD="i/N"), waits for all,
+ * then runs the site-wide steps (sitemap, feeds, llms.txt…) once. PRERENDER_JOBS=1 keeps the old single-process path.
+ */
+const SHARD = process.env.PRERENDER_SHARD
+const JOBS = Math.max(1, Number(process.env.PRERENDER_JOBS) || Math.min(6, cpus().length - 1, Math.floor(totalmem() / 2.5e9)))
+if (!SHARD && JOBS > 1) {
+  console.log(`[prerender] parallel — ${allRoutes.length} routes in ${JOBS} processes`)
+  const t0 = Date.now()
+  const codes = await Promise.all(
+    Array.from({ length: JOBS }, (_, i) =>
+      new Promise<number>((resolve) => {
+        const child = spawn(process.execPath, [...process.execArgv, ...process.argv.slice(1)], {
+          env: { ...process.env, PRERENDER_SHARD: `${i}/${JOBS}` },
+          stdio: 'inherit',
+        })
+        child.on('exit', (code) => resolve(code ?? 1))
+        child.on('error', () => resolve(1))
+      }),
+    ),
+  )
+  if (codes.some((c) => c !== 0)) {
+    console.error(`[prerender] a shard failed (exit codes ${codes.join(', ')})`)
+    process.exit(1)
+  }
+  console.log(`[prerender] all shards done in ${Math.round((Date.now() - t0) / 1000)}s`)
+  runSiteWideSteps()
+  process.exit(0)
+}
+const [shardIndex, shardCount] = SHARD ? SHARD.split('/').map(Number) : [0, 1]
+const routes = shardCount > 1 ? allRoutes.filter((_r, i) => i % shardCount === shardIndex) : allRoutes
+const SHARD_LABEL = shardCount > 1 ? ` [${shardIndex + 1}/${shardCount}]` : ''
 
 /**
  * Routes that must ship with NO third-party script (privacy — task 76). Baseline reads a person's
@@ -713,7 +749,7 @@ function applyLevelLocalizedMeta(html: string, levelNum: number, lang: Lang): st
   return out
 }
 
-console.log(`[prerender] start — ${routes.length} routes, renderToString + JSDOM`)
+console.log(`[prerender]${SHARD_LABEL} start — ${routes.length} routes, renderToString + JSDOM`)
 
 // Construct the JSDOM window ONCE, reuse it across every route. Before
 // this hoist we created `new JSDOM(template)` inside the loop — 842
@@ -1123,7 +1159,7 @@ for (const route of routes) {
 
     done++
     if (done % HEARTBEAT_EVERY === 0) {
-      console.log(`[prerender] ... ${done}/${routes.length}`)
+      console.log(`[prerender]${SHARD_LABEL} ... ${done}/${routes.length}`)
     }
     // Major GC every GC_EVERY routes to cap peak heap (see GC_EVERY above).
     // Requires --expose-gc (set by the `build` npm script); else a no-op.
@@ -1145,9 +1181,13 @@ try {
   // partially mutated; process exit will reclaim the memory anyway.
 }
 
-console.log(`[prerender] done — ${done} rendered, ${failed} failed (of ${routes.length})`)
+console.log(`[prerender]${SHARD_LABEL} done — ${done} rendered, ${failed} failed (of ${routes.length})`)
 
-const { execSync } = await import('child_process')
+// A shard renders only; the coordinator runs the site-wide steps once.
+if (!SHARD) runSiteWideSteps()
+
+/** Site-wide outputs built from dist after every route is rendered. */
+function runSiteWideSteps(): void {
 console.log('[build] sitemap')
 execSync('tsx scripts/sitemap.ts', { cwd: join(__dirname, '..'), stdio: 'inherit' })
 // Google News sitemap — articles modified in the last 48h. Crawled at a
@@ -1173,6 +1213,7 @@ try {
   console.warn('[build] indexnow step failed (non-fatal)')
 }
 console.log('[build] all stages complete')
+}
 
 /**
  * Keep a localised <title> inside the ~60-char SERP budget without the
