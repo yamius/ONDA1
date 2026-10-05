@@ -40,7 +40,7 @@ Repeat for five to ten breaths, or a few minutes. Some people gently rest their 
 
 ## How is humming linked to the vagus nerve?
 
-Humming is thought to reach the vagus nerve through a more direct route that most breathing techniques lack — they reach it indirectly, through the pace of the breath: the vagus nerve has fibers running through the larynx and the muscles of the throat and soft palate. When you hum, chant or sing, the vibration is proposed to stimulate those fibers mechanically, on top of the long exhale — and slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise.
+Humming is thought to reach the vagus nerve through a more direct route that most breathing techniques lack — they reach it indirectly, through the pace of the breath: the vagus nerve has fibers running through the larynx and the muscles of the throat and soft palate. When you hum, chant or sing, the vibration is proposed to stimulate those fibers mechanically, on top of the long exhale. {{fact:claim.slowExhale}}.
 
 Indian clinical research supports this: randomized trials of Bhramari (the traditional name for humming breath) in hypertensive patients found significant reductions in blood pressure and heart rate, and studies in healthy adults found Bhramari raised vagally mediated HRV both immediately and after a few weeks of daily practice — meaning the benefit isn't only in the moment, it accumulates.
 

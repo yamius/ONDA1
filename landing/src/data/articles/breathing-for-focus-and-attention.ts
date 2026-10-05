@@ -45,7 +45,7 @@ And modern attention is under specific assault. A day of fragmented, notificatio
 
 ## Section 2: Does slow breathing improve focus?
 
-Slow, paced breathing works on focus indirectly but powerfully: it pulls your autonomic balance back toward a calm-alert state. A longer exhale is associated with higher vagally mediated HRV and settles the over-arousal that scatters attention, moving you out of threat-scanning and into a steadier band where the spotlight can actually rest.
+Slow, paced breathing works on focus indirectly but powerfully: it pulls your autonomic balance back toward a calm-alert state. {{fact:claim.slowExhale}}. Slowing down settles the over-arousal that scatters attention, moving you out of threat-scanning and into a steadier band where the spotlight can actually rest.
 
 There's a direct line here too. The brain's internal error-monitor — the [anterior cingulate](/articles/anterior-cingulate-core-coherence-monitoring), which catches "you've drifted" and pulls you back — works better when the system underneath it isn't thrashing. Calm the physiology and the part of you that notices the drift gets sharper. You're not forcing focus; you're building the conditions it needs.
 

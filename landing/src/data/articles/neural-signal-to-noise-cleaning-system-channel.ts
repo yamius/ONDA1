@@ -71,7 +71,7 @@ ONDA works to improve that signal-to-noise — less static, clearer signal — t
 
 ### Inhibitory Tuning
 
-Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise — a calmer state in which neural noise tends to settle.
+{{fact:claim.slowExhale}}. Slow breathing brings a calmer state in which neural noise tends to settle.
 
 ### Sensory Gating
 

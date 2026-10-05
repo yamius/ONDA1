@@ -45,7 +45,7 @@ Training it means two concrete things: **strengthening the parasympathetic brake
 
 ## Section 2: What is the best way to train your nervous system?
 
-The most direct, best-supported way to train the parasympathetic brake is slow, paced breathing. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; do it regularly and you're not just relaxing in the moment — you're rehearsing the down-regulation until it gets faster and more automatic.
+The most direct, best-supported way to train the parasympathetic brake is slow, paced breathing. {{fact:claim.slowExhale}}. Do it regularly and you're not just relaxing in the moment — you're rehearsing the down-regulation until it gets faster and more automatic.
 
 This is the nervous-system equivalent of a strength rep. Each slow-breathing session is practice at the exact transition — tense to calm — you want to get good at, so it shows up more readily when you actually need it. [Coherent breathing](/articles/coherent-breathing-guide) covers the how; the point is that the breath is the handle on an otherwise involuntary system.
 
@@ -94,7 +94,7 @@ A realistic plan treats it like any training program. **Protect the foundation**
     },
     {
       name: 'Do the daily breathing rep',
-      text: 'A few minutes of slow, exhale-led breathing rehearses the tense-to-calm transition, strengthening the vagal brake so it engages faster and more automatically when you need it. This is the active lever.',
+      text: 'A few minutes of slow breathing rehearses the tense-to-calm transition, so the shift comes faster and more automatically when you need it. This is the active lever.',
       protocolId: 'tns-breathe',
     },
     {

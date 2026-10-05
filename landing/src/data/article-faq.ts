@@ -8,7 +8,7 @@ import { HRV_QUESTIONS_SCHEMA } from './hrv-questions'
  *     (src/pages/ArticlePage.tsx) — surfaces the Q&A as crawlable /
  *     AI-citable page text, not just structured data.
  */
-export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]> = {
+export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string }[]> = {
   "physiological-sigh": [
     {
       question: "How many physiological sighs should I do?",
@@ -45,7 +45,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Is 4-7-8 breathing good for anxiety?",
       answer:
-        "Yes, for winding down. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it lowers heart rate. For a sudden anxiety spike, though, a physiological sigh works faster; 4-7-8 is better for settling over a few minutes.",
+        "Yes, for winding down. {{fact:claim.slowExhale}}. Slowing the breath also lowers heart rate. For a sudden anxiety spike, though, a physiological sigh works faster; 4-7-8 is better for settling over a few minutes.",
     },
     {
       question: "Can I do 4-7-8 breathing every night?",
@@ -94,7 +94,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How does humming help the vagus nerve?",
       answer:
-        "The vagus nerve has fibers in the larynx and throat. Researchers propose that humming’s vibration reaches them mechanically — on top of the long exhale, which is associated with higher vagally mediated HRV while you practise. The net effect is a shift toward \"rest and digest.\"",
+        "The vagus nerve has fibers in the larynx and throat. Researchers propose that humming’s vibration reaches them mechanically — on top of the long exhale. {{fact:claim.slowExhale}}. The net effect is a shift toward \"rest and digest.\"",
     },
     {
       question: "How long should I hum for?",
@@ -261,7 +261,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What is the best breathing for a panic attack?",
       answer:
-        "Slow, low breathing with a longer exhale than inhale — for example four seconds in, six out — started at the very first flicker, before the spiral accelerates. A longer out-breath slows the heart within each breath and is associated with higher vagally mediated HRV. It is an emergency brake for a spike, not a substitute for professional care.",
+        "Slow, low breathing with a longer exhale than inhale — for example four seconds in, six out — started at the very first flicker, before the spiral accelerates. The heart slows a little on every out-breath. {{fact:claim.slowExhale}}. It is an emergency brake for a spike, not a substitute for professional care.",
     },
     {
       question: "Does HRV biofeedback help anxiety?",
@@ -445,7 +445,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How can I stimulate the vagus nerve?",
       answer:
-        "The best-supported free option is slow breathing with a longer exhale, which is associated with higher vagally mediated HRV while you practise. Humming, gargling and cold water on the face are thought to act on vagal pathways, with weaker evidence. Ear-clip stimulators apply a gentle electrical signal, but their effect on HRV is inconsistent in studies. Vagal tone itself cannot be measured directly.",
+        "The best-supported free option is slow breathing. {{fact:claim.slowExhale}}. Humming, gargling and cold water on the face are thought to act on vagal pathways, with weaker evidence. Ear-clip stimulators apply a gentle electrical signal, but their effect on HRV is inconsistent in studies. Vagal tone itself cannot be measured directly.",
     },
     {
       question: "Is tDCS safe to use?",
@@ -702,7 +702,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'How can I stimulate my vagus nerve?',
       answer:
-        'The best-supported way is slow breathing with a longer exhale than inhale, for example in for 4 and out for 6, for a few minutes. Humming, gargling and cold water on the face are also commonly used and are thought to act on vagal pathways. Practised most days, slow breathing tends to raise resting HRV over weeks.',
+        'The best-supported way is slow breathing for a few minutes; many people use a longer exhale than inhale, for example in for 4 and out for 6. Humming, gargling and cold water on the face are also commonly used and are thought to act on vagal pathways. Practised most days, slow breathing tends to raise resting HRV over weeks.',
     },
     {
       question: 'How is vagal tone measured?',
@@ -1273,7 +1273,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: 'Why is humming on the exhale used to activate the vagus nerve?',
       answer:
-        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) creates vibration around the vagus pathway and lowers system jitter. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; it lowers heart rate and releases residual tension in the jaw and neck.',
+        'A long, low-frequency humming exhale (8–10 seconds after a 4-second nasal inhale) creates vibration around the vagus pathway and lowers system jitter. {{fact:claim.slowExhale}}. Slowing the breath also lowers heart rate and releases residual tension in the jaw and neck.',
     },
   ],
   'vascular-tensegrity-microvascular-mechanics': [
@@ -1663,7 +1663,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "What's the difference between meditation and breathwork?",
       answer:
-        "Breathwork changes your physiology directly and fast (a bottom-up, body-first approach) — slow breathing with a longer exhale is associated with higher vagally mediated HRV within minutes. Meditation trains your attention and mind over weeks (top-down), reshaping brain structure and function. One is a quick lever; the other is deeper training.",
+        "Breathwork changes your physiology directly and fast (a bottom-up, body-first approach), within minutes. {{fact:claim.slowExhale}}. Meditation trains your attention and mind over weeks (top-down), reshaping brain structure and function. One is a quick lever; the other is deeper training.",
     },
     {
       question: "Which is better for anxiety, meditation or breathwork?",
@@ -2061,7 +2061,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can fast breathing raise my HRV?",
       answer:
-        "Not the way slow breathing does. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; fast forceful breathing drives sympathetic arousal instead.",
+        "Not the way slow breathing does. {{fact:claim.slowExhale}}. Fast forceful breathing drives sympathetic arousal instead.",
     },
     {
       question: "Which pranayama should I do before bed?",
@@ -2142,7 +2142,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Does breathing still help if my HRV is low because of age?",
       answer:
-        "Yes. HRV declines with age, but the mechanism still works: slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it engages the baroreflex. You start from a lower baseline, but the calming shift is the same.",
+        "Yes. HRV declines with age, but the mechanism still works. {{fact:claim.slowExhale}}. Slow breathing also engages the baroreflex. You start from a lower baseline, but the calming shift is the same.",
     },
     {
       question: "How should an older adult practice breathing?",
@@ -2164,7 +2164,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Why is nasal breathing calming?",
       answer:
-        "It's slower and more resistive, encouraging a longer, controlled exhale (slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise), and it engages nasal nitric oxide that supports blood flow. Mouth breathing tends to be faster and more activating.",
+        "It's slower and more resistive, encouraging a longer, controlled exhale, and it engages nasal nitric oxide that supports blood flow. Mouth breathing tends to be faster and more activating.",
     },
     {
       question: "Is mouth breathing ever okay?",
@@ -2174,7 +2174,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Should I breathe through my nose during breathing exercises?",
       answer:
-        "Inhale through the nose for the natural pacing and nitric oxide benefit. A long exhale through the mouth is fine — that's the pattern that maximizes vagal activation.",
+        "Inhale through the nose for the natural pacing and nitric oxide benefit. A long exhale through the mouth is fine; what matters most is breathing slowly.",
     },
   ],
   "hrv-breathing-cold-honest-limits": [
@@ -2277,7 +2277,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can breathing exercises actually help chronic stress?",
       answer:
-        "They train the off-switch. Slow, exhale-led breathing is associated with higher vagally mediated HRV within minutes, re-teaching the parasympathetic return, and done daily it makes that descent more automatic. It's a self-regulation practice, not a treatment — it sits alongside real rest, boundaries and, when stress is running your life, professional care.",
+        "They train the off-switch. {{fact:claim.slowExhale}}. A few minutes of it re-teach the parasympathetic return, and done daily it makes that descent more automatic. It's a self-regulation practice, not a treatment — it sits alongside real rest, boundaries and, when stress is running your life, professional care.",
     },
     {
       question: "What's the difference between this and just lowering cortisol?",
@@ -2424,7 +2424,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Can I lower my respiratory rate on purpose?",
       answer:
-        "Yes — it's the one vital you can steer directly. Slow, exhale-led breathing lowers the rate deliberately, is associated with higher vagally mediated HRV and pulls the whole autonomic state toward calm. You can't will your heart rate down, but you can slow your breath, and the rest of the system follows.",
+        "Yes — it's the one vital you can steer directly. Slow breathing lowers the rate deliberately and pulls the whole autonomic state toward calm. {{fact:claim.slowExhale}}. You can't will your heart rate down, but you can slow your breath, and the rest of the system follows.",
     },
   ],
   "heart-rate-recovery-fitness-marker": [
@@ -2446,7 +2446,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I improve my heart-rate recovery?",
       answer:
-        "Build the aerobic engine behind it: consistent zone-2 base training raises the parasympathetic tone that makes the post-effort brake snap back faster, and it's the same base that lifts VO₂max. Protecting sleep and using slow exhale-led breathing to support vagal tone feed the same system.",
+        "Build the aerobic engine behind it: consistent zone-2 base training raises the parasympathetic tone that makes the post-effort brake snap back faster, and it's the same base that lifts VO₂max. Protecting sleep and practising slow breathing feed the same system.",
     },
   ],
   "name-it-to-tame-it-affect-labeling": [
@@ -2678,7 +2678,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "Does breathing actually raise HRV?",
       answer:
-        "Yes — it's one of the best-supported effects in the field. Slow breathing with a longer exhale stimulates the baroreflex and the vagus nerve, producing a wide, organised rise and fall in heart rate that is HRV amplified on purpose. It's an acute effect you can see live with biofeedback, and a trainable one over time. It's a self-regulation practice, not a medical treatment.",
+        "Yes — it's one of the best-supported effects in the field. Slow breathing near your resonance rate engages the baroreflex, producing a wide, organised rise and fall in heart rate — HRV amplified on purpose. It's an acute effect you can see live with biofeedback, and a trainable one over time. It's a self-regulation practice, not a medical treatment.",
     },
   ],
   "what-to-do-after-low-hrv-reading": [
@@ -2845,7 +2845,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I train my nervous system to relax?",
       answer:
-        "The most direct lever is slow, exhale-led breathing: slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and repeated daily it rehearses the tense-to-calm transition until it is faster and automatic. Support it with sleep, aerobic fitness, vagal-tone exercises and boundaries around chronic stress, and use HRV biofeedback to see the brake engage.",
+        "The most direct lever is slow, exhale-led breathing. {{fact:claim.slowExhale}}. Repeated daily, slow breathing rehearses the tense-to-calm transition until it is faster and automatic. Support it with sleep, aerobic fitness, vagal-tone exercises and boundaries around chronic stress, and use HRV biofeedback to see the brake engage.",
     },
     {
       question: "How long does it take to train your nervous system?",
@@ -2862,17 +2862,17 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I calm my nervous system down fast?",
       answer:
-        "Breathe low and slow with the exhale longer than the inhale — try in for 4, out for 6 — for a couple of minutes. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, so the heart slows on each exhale and the system follows the breath toward calm. You cannot think your way calm, but you can breathe your way there.",
+        "Breathe low and slow with the exhale longer than the inhale — try in for 4, out for 6 — for a couple of minutes. {{fact:claim.slowExhale}}. The heart slows on each exhale, and the system follows the breath toward calm. You cannot think your way calm, but you can breathe your way there.",
     },
     {
       question: "Why can't I relax even when I try?",
       answer:
-        "Because being wired is your sympathetic branch stuck on, which is below conscious control — you cannot will your heart rate down or think adrenaline away, so telling yourself to relax targets the wrong place. The one autonomic input you do control is the breath: a slow, long exhale reaches the vagal switch your thoughts cannot. If you feel wired every night and it is running your life, raise it with a professional.",
+        "Because being wired is your sympathetic branch stuck on, which is below conscious control — you cannot will your heart rate down or think adrenaline away, so telling yourself to relax targets the wrong place. The one autonomic input you do control is the breath: slowing it is a lever your thoughts alone cannot pull. If you feel wired every night and it is running your life, raise it with a professional.",
     },
     {
       question: "What is the best breathing to calm down?",
       answer:
-        "Slow, belly breathing with the exhale clearly longer than the inhale — a longer out-breath is associated with higher vagally mediated HRV. Keep it soft rather than forceful; you are removing the accelerant of fast, shallow breathing, not straining for calm. Give it a minute or two for the parasympathetic brake to catch, and watching your rhythm settle with biofeedback helps you trust it is working.",
+        "Slow, belly breathing, often with the exhale longer than the inhale. {{fact:claim.slowExhale}}. Keep it soft rather than forceful; you are removing the accelerant of fast, shallow breathing, not straining for calm. Give it a minute or two for the parasympathetic brake to catch, and watching your rhythm settle with biofeedback helps you trust it is working.",
     },
     {
       question: "How do I stop feeling on edge after work?",
@@ -2906,7 +2906,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I relax my body before sleep?",
       answer:
-        "Start a wind-down 30–60 minutes before bed and anchor it with a few minutes of slow, exhale-led breathing, in bed if you like. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it starts your heart rate falling — the parasympathetic state sleep onset needs. You are not forcing sleep; you are producing the descent that lets it happen. It is a relaxation practice, not a treatment for insomnia.",
+        "Start a wind-down 30–60 minutes before bed and anchor it with a few minutes of slow, exhale-led breathing, in bed if you like. {{fact:claim.slowExhale}}. Slowing the breath also starts your heart rate falling — the parasympathetic state sleep onset needs. You are not forcing sleep; you are producing the descent that lets it happen. It is a relaxation practice, not a treatment for insomnia.",
     },
     {
       question: "Why is my body still wired at bedtime even when I'm tired?",
@@ -2933,7 +2933,7 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
     {
       question: "How do I stop reacting so strongly to things?",
       answer:
-        "Strong reactions happen because a wave of sympathetic activation arrives before your conscious mind votes, so willpower is too late. Reach it through the breath: at the first flicker of the reaction, a slow, long exhale (associated with higher vagally mediated HRV while you practise) buys a pause in which a chosen response becomes possible. Do it early, before the reaction accelerates, and train the brake daily so the pause is easier to find.",
+        "Strong reactions happen because a wave of sympathetic activation arrives before your conscious mind votes, so willpower is too late. Reach it through the breath: at the first flicker of the reaction, a slow, long exhale buys a pause in which a chosen response becomes possible. Do it early, before the reaction accelerates, and train the brake daily so the pause is easier to find.",
     },
     {
       question: "How do I calm down before a difficult conversation?",
@@ -3068,6 +3068,11 @@ export const ARTICLE_FAQ: Record<string, { question: string; answer: string }[]>
 }
 
 /** FAQPage JSON-LD only — for pages whose Q&A is already the visible body (no second "Common Questions" block). */
-export const ARTICLE_FAQ_SCHEMA_ONLY: Record<string, { question: string; answer: string }[]> = {
+export const ARTICLE_FAQ_SCHEMA_ONLY_RAW: Record<string, { question: string; answer: string }[]> = {
   'hrv-questions-answered': HRV_QUESTIONS_SCHEMA,
 }
+
+// {{fact:…}} resolved (EN). Translation tooling uses the *_RAW versions.
+import { resolveFactsDeep } from './science/facts'
+export const ARTICLE_FAQ = resolveFactsDeep(ARTICLE_FAQ_RAW, 'article-faq')
+export const ARTICLE_FAQ_SCHEMA_ONLY = resolveFactsDeep(ARTICLE_FAQ_SCHEMA_ONLY_RAW, 'article-faq-schema')

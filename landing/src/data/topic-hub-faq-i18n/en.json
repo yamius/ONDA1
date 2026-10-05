@@ -114,7 +114,7 @@
       },
       {
         "q": "How can I calm my nervous system quickly?",
-        "a": "Make the exhale longer than the inhale. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it slows the heart within a minute or two; humming while you exhale adds to the effect. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.",
+        "a": "Make the exhale longer than the inhale. {{fact:claim.slowExhale}}. Slowing the breath also slows the heart within a minute or two; humming while you exhale is a common addition. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

@@ -75,7 +75,7 @@ The firewall: this is a **descriptive fitness signal, not a medical screening**.
 
 ## Section 5: How do you improve heart-rate recovery?
 
-You improve heart-rate recovery the way you improve the engine behind it: aerobic base work. Consistent [zone-2 training](/articles/zone-2-training-aerobic-base) builds the parasympathetic tone that makes the post-effort brake snap back faster, and it's the same base that raises your [VO₂max](/articles/vo2max-increase-aerobic-engine). On the recovery side, protecting sleep and using slow [exhale-led breathing](/articles/coherent-breathing-guide) to support vagal tone both feed the same system. Then let the trend confirm it — a recovery that's speeding up over months is fitness you can see.
+You improve heart-rate recovery the way you improve the engine behind it: aerobic base work. Consistent [zone-2 training](/articles/zone-2-training-aerobic-base) builds the parasympathetic tone that makes the post-effort brake snap back faster, and it's the same base that raises your [VO₂max](/articles/vo2max-increase-aerobic-engine). On the recovery side, protecting sleep and practising slow [breathing](/articles/coherent-breathing-guide) both feed the same system. Then let the trend confirm it — a recovery that's speeding up over months is fitness you can see.
 
 > **The Hack:** Stop obsessing over your peak heart rate and start watching the drop. How many beats your pulse sheds in the first minute after effort is a direct read on your parasympathetic brake — track it as a trend, and a recovery that gets faster is one of the most honest signs your training is working.
 

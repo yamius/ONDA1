@@ -19,7 +19,7 @@ const article: Article = {
     "A figure whose sympathetic branch is stuck on, a single long exhale reaching a glowing vagal switch and the system settling from tense to calm.",
   imageTitle: "How to calm your nervous system down — the one input you control",
   imageCaption:
-    "Down-regulating a wired nervous system through the one input you control — a long exhale that reaches the vagal switch thoughts can't; a practice, not treatment.",
+    "Down-regulating a wired nervous system through the one input you control — slow breathing; a practice, not treatment.",
   imagePlacement: 'header',
   neuralSuggestion: {
     text: 'You can’t argue yourself calm. But one long exhale reaches the switch your thoughts can’t.',
@@ -45,7 +45,7 @@ Almost every node in the system is involuntary. Except one.
 
 ## Section 2: How does breathing calm your nervous system?
 
-A slow breath with a long exhale calms your nervous system because breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. A slow breath with a **long exhale** is associated with higher vagally mediated HRV — the parasympathetic "settle" branch, carried by the [vagus nerve](/glossary/vagus-nerve), takes more of the lead — the heart slows on the out-breath, and the whole system starts following the breath toward calm.
+A slow breath with a long exhale calms your nervous system because breathing is the only autonomic function with a manual override, and it back-propagates to the rest of the system. A slow breath, often with a **long exhale**, lets the parasympathetic "settle" branch, carried by the [vagus nerve](/glossary/vagus-nerve), take more of the lead — the heart slows on the out-breath, and the whole system starts following the breath toward calm.
 
 This is the reach-in switch your thoughts can't find. You don't argue your nervous system down; you *breathe* it down, and the physiology does the rest. The exhale, specifically, is the lever — a longer out-breath than in-breath slows the heart within each breath.
 
@@ -75,7 +75,7 @@ It also teaches faster: seeing which breathing actually moves your rhythm shows 
 
 Coming down in the moment is the acute skill. The deeper issue, if you're wired *every* evening, is that the off-switch has stopped flipping — chronic stress holding HRV low into the night, the [nervous system that never clocks out](/articles/chronic-stress-nervous-system-never-off). The fix is the same lever practised *daily*, not just in crisis: a few minutes of slow, exhale-led breathing trains the parasympathetic return until landing after a hard day becomes automatic. Add real boundaries at work's end and protected sleep, and you rebuild the switch itself.
 
-> **The Hack:** Don't tell yourself to relax — breathe yourself down. A couple of minutes of slow breathing with the exhale longer than the inhale reaches the vagal switch your thoughts can't, and the system follows. Do it daily, not just when you're wired, and the off-switch starts flipping on its own again.
+> **The Hack:** Don't tell yourself to relax — breathe yourself down. A couple of minutes of slow breathing, often with the exhale longer than the inhale, does what your thoughts can't, and the system follows. Do it daily, not just when you're wired, and the off-switch starts flipping on its own again.
 
 > [ SYSTEM_STATUS ]
 > PROBLEM: sympathetic branch stuck "on" — you can’t think it off
@@ -91,7 +91,7 @@ Coming down in the moment is the acute skill. The deeper issue, if you're wired 
     },
     {
       name: 'Breathe low, slow, and exhale-led',
-      text: 'In for 4, out for 6 (or any ratio with a clearly longer exhale), low in the belly. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and the system follows the breath down.',
+      text: 'In for 4, out for 6 (or any ratio with a clearly longer exhale), low in the belly. {{fact:claim.slowExhale}}. The system follows the breath down.',
       protocolId: 'calm-breathe',
     },
     {

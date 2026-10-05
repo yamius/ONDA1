@@ -114,7 +114,7 @@
       },
       {
         "q": "Jak szybko uspokoić układ nerwowy?",
-        "a": "Wydłuż wydech względem wdechu. Wolny oddech z dłuższym wydechem wiąże się z wyższym HRV zależnym od nerwu błędnego podczas ćwiczenia i spowalnia pracę serca w ciągu minuty lub dwóch; nucenie podczas wydechu wzmacnia ten efekt. Pięć minut powolnego oddychania w tempie około sześciu oddechów na minutę wystarcza większości osób, by poczuć zmianę.",
+        "a": "Wydłuż wydech względem wdechu. {{fact:claim.slowExhale}}. Spowolnienie oddechu spowalnia też pracę serca w ciągu minuty lub dwóch; nucenie podczas wydechu to częsty dodatek. Pięć minut powolnego oddychania w tempie około sześciu oddechów na minutę wystarcza większości osób, by poczuć zmianę.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

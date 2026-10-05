@@ -28,6 +28,10 @@ export interface Fact {
   id: string
   /** Text inserted for {{fact:id}} (English). Numbers only in the site’s EN format. */
   display: string
+  /** Optional short form, inserted for {{fact:id|short}}. Translations live in facts-i18n.ts. */
+  short?: string
+  /** Values for {name} placeholders in translations (computed facts). */
+  vars?: Record<string, string>
   kind: 'number' | 'range' | 'claim'
   /** What the number applies to — population, method, time of day. Shown in reviews, not inserted. */
   scope: string
@@ -95,9 +99,9 @@ const FACTS_LIST: Fact[] = [
   { id: 'study.tan2023.depressionTrials', display: '12 randomized controlled trials (838 participants)', kind: 'number', scope: 'Randomized controlled trials and participants pooled in the meta-analysis of transcutaneous auricular VNS for depressive disorder (Tan 2023).', sources: [TAN_2023], status: 'approved', reviewed: '2026-10-05', note: 'Approved by Yakiv 2026-10-05 (evidence/transcutaneous-vagus-nerve-stimulation P1). Quote: “Totally, 12 studies of 838 participants were included.”' },
 
   // ── Fixed wording (claims) ──────────────────────────────────────────
-  { id: 'claim.vagalTone', display: 'Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate', kind: 'claim', scope: 'Use instead of “HRV measures vagal tone” or “X trains your vagal tone”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
-  { id: 'claim.slowExhale', display: 'Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated', kind: 'claim', scope: 'Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence.', sources: [LEHRER_2003, BALBAN_2023], status: 'approved', reviewed: R },
-  { id: 'claim.hrvNotStress', display: 'a single low HRV reading does not by itself mean you are stressed or unwell', kind: 'claim', scope: 'Use instead of “low HRV means stressed”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
+  { id: 'claim.vagalTone', display: 'Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate', short: 'Vagal tone cannot be measured directly', kind: 'claim', scope: 'Use instead of “HRV measures vagal tone” or “X trains your vagal tone”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
+  { id: 'claim.slowExhale', display: 'Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated', short: 'Slow breathing is associated with higher vagally mediated HRV', kind: 'claim', scope: 'Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence.', sources: [LEHRER_2003, BALBAN_2023], status: 'approved', reviewed: R },
+  { id: 'claim.hrvNotStress', display: 'A single low HRV reading does not by itself mean you are stressed or unwell', kind: 'claim', scope: 'Use instead of “low HRV means stressed”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
 ]
 
 const ageKey = (b: HrvAgeBand) => b.label.replace('–', '-').replace('+', 'plus')
@@ -132,6 +136,7 @@ function derivedFacts(): Fact[] {
   return [{
     id: 'hrv.age.trend',
     display: `HRV tends to fall with age — in our night-time RMSSD table the median drops by about ${lo === hi ? lo : `${lo}–${hi}`} ms from one age band to the next`,
+    vars: { range: lo === hi ? String(lo) : `${lo}–${hi}` },
     kind: 'claim',
     scope: `Computed from HRV_AGE_BANDS medians (steps: ${steps.join(', ')} ms). Individuals vary widely.`,
     sources: [VOSS_2015, NUNAN_2010],
@@ -142,11 +147,61 @@ function derivedFacts(): Fact[] {
 
 export const FACTS: Record<string, Fact> = Object.fromEntries([...FACTS_LIST, ...tableFacts(), ...derivedFacts()].map((f) => [f.id, f]))
 
-/** Replace every {{fact:id}} in text. Throws on an unknown id so builds fail loudly. */
-export function resolveFacts(text: string, where = 'text'): string {
-  return text.replace(/\{\{fact:([a-zA-Z0-9.\-]+)\}\}/g, (_m, id: string) => {
+export const FACT_LANGS = ['en', 'ru', 'uk', 'es', 'de', 'fr', 'it', 'pt', 'nl', 'pl', 'ja', 'zh'] as const
+export type FactLang = (typeof FACT_LANGS)[number]
+
+/** Units of the generated table facts, per language (ranges keep the en dash). */
+const UNITS: Record<'ms' | 'bpm', Record<FactLang, string>> = {
+  ms: { en: 'ms', ru: 'мс', uk: 'мс', es: 'ms', de: 'ms', fr: 'ms', it: 'ms', pt: 'ms', nl: 'ms', pl: 'ms', ja: 'ミリ秒', zh: '毫秒' },
+  bpm: { en: 'bpm', ru: 'уд/мин', uk: 'уд/хв', es: 'lpm', de: 'S/min', fr: 'bpm', it: 'bpm', pt: 'bpm', nl: 'spm', pl: 'ud./min', ja: '拍/分', zh: '次/分' },
+}
+const DECIMAL_COMMA = new Set<FactLang>(['ru', 'uk', 'es', 'de', 'fr', 'it', 'pt', 'nl', 'pl'])
+const TABLE_FACT = /^(hrv\.(rmssd|sdnn)|rhr\.(male|female))\.(median|typical)\./
+
+/** Locale form of a generated table fact (“34 ms” → “34 мс”, “1.5” → “1,5”). */
+function tableDisplay(f: Fact, lang: FactLang): string {
+  const unit = /bpm$/.test(f.display) ? 'bpm' : 'ms'
+  let v = f.display.replace(/\s*(ms|bpm)$/, '')
+  if (DECIMAL_COMMA.has(lang)) v = v.replace(/(\d)\.(\d)/g, '$1,$2')
+  return `${v} ${UNITS[unit][lang]}`
+}
+
+/** Translations of the hand-written facts (approved wording; reviewed by Yakiv for ru/uk). Loaded lazily by callers that need them. */
+import { FACT_I18N } from './facts-i18n'
+
+/** Text of one fact in one language. Throws (build error) on an unknown id, a missing short form or a missing translation. */
+export function factText(id: string, lang: FactLang = 'en', form: 'display' | 'short' = 'display', where = 'text'): string {
+  const f = FACTS[id]
+  if (!f) throw new Error(`[facts] unknown fact "${id}" in ${where}`)
+  if (form === 'short' && !f.short) throw new Error(`[facts] fact "${id}" has no short form (used as {{fact:${id}|short}} in ${where})`)
+  if (lang === 'en') return form === 'short' ? f.short! : f.display
+  if (TABLE_FACT.test(id)) return tableDisplay(f, lang)
+  const t = FACT_I18N[lang]?.[id]
+  const text = form === 'short' ? t?.short : t?.display
+  if (!text) throw new Error(`[facts] no ${lang} translation${form === 'short' ? ' (short form)' : ''} for fact "${id}" in ${where} — add it to src/data/science/facts-i18n.ts`)
+  return f.vars ? text.replace(/\{(\w+)\}/g, (m, k: string) => f.vars![k] ?? m) : text
+}
+
+const FACT_RE = /\{\{fact:([a-zA-Z0-9.\-]+)(\|short)?\}\}/g
+
+/** Replace every {{fact:id}} / {{fact:id|short}} in text. Unknown id, unapproved fact or missing translation → throws, so builds fail loudly. */
+export function resolveFacts(text: string, where = 'text', lang: FactLang = 'en'): string {
+  if (!text || text.indexOf('{{fact:') < 0) return text
+  return text.replace(FACT_RE, (_m, id: string, short?: string) => {
     const f = FACTS[id]
-    if (!f) throw new Error(`[facts] unknown fact "${id}" in ${where}`)
-    return f.display
+    if (f && f.status !== 'approved') throw new Error(`[facts] fact "${id}" is not approved (used in ${where})`)
+    return factText(id, lang, short ? 'short' : 'display', where)
   })
+}
+
+/** Resolve facts in every string of a JSON-like value (articles, FAQs, glossary terms, locale files). */
+export function resolveFactsDeep<T>(value: T, where: string, lang: FactLang = 'en'): T {
+  if (typeof value === 'string') return resolveFacts(value, where, lang) as unknown as T
+  if (Array.isArray(value)) return value.map((v, i) => resolveFactsDeep(v, `${where}[${i}]`, lang)) as unknown as T
+  if (value && typeof value === 'object') {
+    const out: Record<string, unknown> = {}
+    for (const [k, v] of Object.entries(value as Record<string, unknown>)) out[k] = resolveFactsDeep(v, `${where}.${k}`, lang)
+    return out as T
+  }
+  return value
 }

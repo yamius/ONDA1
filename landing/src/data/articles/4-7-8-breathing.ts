@@ -25,7 +25,7 @@ const article: Article = {
     linkText: 'See it live →',
   },
   content: `
-The 4-7-8 breathing technique is a paced pattern: inhale quietly through the nose for 4 seconds, hold your breath for 7, then exhale audibly through the mouth for 8. The long exhale and the breath hold slow your heart rate and shift your nervous system toward rest, which is why it's most popular for falling asleep. Developed by Dr. Andrew Weil from yogic pranayama, it works for one concrete reason: slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it downshifts your body. It's not instant and it's not magic — most people feel calmer after three or four rounds, not one.
+The 4-7-8 breathing technique is a paced pattern: inhale quietly through the nose for 4 seconds, hold your breath for 7, then exhale audibly through the mouth for 8. The long exhale and the breath hold slow your heart rate and shift your nervous system toward rest, which is why it's most popular for falling asleep. Developed by Dr. Andrew Weil from yogic pranayama, it works for one concrete reason: it slows your breathing down, and that downshifts your body. {{fact:claim.slowExhale}}. It's not instant and it's not magic — most people feel calmer after three or four rounds, not one.
 
 ## How to do 4-7-8 breathing
 
@@ -40,7 +40,7 @@ That's one round. Repeat for four rounds to start. Weil's original guidance is t
 
 ## Why the long exhale calms you
 
-Your breathing is directly wired to your autonomic nervous system. When you inhale, your heart rate speeds up slightly; when you exhale, it slows. Make the exhale longer than the inhale and you tip the balance toward the parasympathetic "rest and digest" branch (slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise), lowering heart rate and blood pressure, and signalling safety to the brain.
+Your breathing is directly wired to your autonomic nervous system. When you inhale, your heart rate speeds up slightly; when you exhale, it slows. Make the exhale longer than the inhale and you tip the balance toward the parasympathetic "rest and digest" branch, lowering heart rate and blood pressure, and signalling safety to the brain.
 
 The 7-second hold adds a second effect: a brief, gentle rise in carbon dioxide, which at low levels has a calming, vasodilating influence and helps interrupt the fast, shallow breathing of a stressed state. Together, the hold and the extended exhale are what make 4-7-8 a wind-down tool rather than an energizing one. This is measurable — as you settle into the pattern, heart rate variability (HRV) rises, reflecting the shift toward calm.
 

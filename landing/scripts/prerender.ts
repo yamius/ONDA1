@@ -8,6 +8,7 @@ import React from 'react'
 import { JSDOM } from 'jsdom'
 import { renderToString } from 'react-dom/server'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
+import { resolveFactsDeep, type FactLang } from '../src/data/science/facts'
 import { execSync } from 'child_process'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
@@ -119,7 +120,7 @@ for (const lng of readdirSync(localesDir)) {
   }
   for (const nsFile of nsFiles) {
     if (!nsFile.endsWith('.json')) continue
-    const data = JSON.parse(readFileSync(join(localesDir, lng, nsFile), 'utf-8'))
+    const data = resolveFactsDeep(JSON.parse(readFileSync(join(localesDir, lng, nsFile), 'utf-8')), `locales/${lng}/${nsFile}`, lng as FactLang)
     i18n.addResourceBundle(lng, nsFile.slice(0, -5), data, true, true)
   }
 }
@@ -224,7 +225,7 @@ function localizeArticleJsonLd(html: string, lang: Lang, slug: string, url: stri
 }
 const articlesByLang: Record<Lang, ArticlesFile> = {} as Record<Lang, ArticlesFile>
 for (const lang of SUPPORTED_LANGS) {
-  articlesByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'articles.json'), 'utf-8')) as ArticlesFile
+  articlesByLang[lang] = resolveFactsDeep(JSON.parse(readFileSync(join(localesDir, lang, 'articles.json'), 'utf-8')), `locales/${lang}/articles.json`, lang as FactLang) as ArticlesFile
 }
 
 /** Parse /<lang>/articles/<slug> or /articles/<slug> into {lang, slug}. */
@@ -360,7 +361,7 @@ interface GlossaryFile {
 }
 const glossaryByLang: Record<Lang, GlossaryFile> = {} as Record<Lang, GlossaryFile>
 for (const lang of SUPPORTED_LANGS) {
-  glossaryByLang[lang] = JSON.parse(readFileSync(join(localesDir, lang, 'glossary.json'), 'utf-8')) as GlossaryFile
+  glossaryByLang[lang] = resolveFactsDeep(JSON.parse(readFileSync(join(localesDir, lang, 'glossary.json'), 'utf-8')), `locales/${lang}/glossary.json`, lang as FactLang) as GlossaryFile
 }
 
 /** Parse a glossary index / term route into {lang, kind, slug}. */

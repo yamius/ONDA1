@@ -114,7 +114,7 @@
       },
       {
         "q": "Come calmare velocemente il sistema nervoso?",
-        "a": "Rendi l'espirazione più lunga dell'inspirazione. La respirazione lenta con un'espirazione più lunga è associata a un'HRV mediata dal vago più alta mentre la pratichi e rallenta il cuore in un paio di minuti; canticchiare a bocca chiusa mentre espiri ne aumenta l'effetto. Cinque minuti di respirazione lenta a circa sei respiri al minuto bastano alla maggior parte delle persone per sentire il cambiamento.",
+        "a": "Rendi l'espirazione più lunga dell'inspirazione. {{fact:claim.slowExhale}}. Rallentare il respiro rallenta anche il cuore in un paio di minuti; canticchiare a bocca chiusa mentre espiri ne aumenta l'effetto. Cinque minuti di respirazione lenta a circa sei respiri al minuto bastano alla maggior parte delle persone per sentire il cambiamento.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

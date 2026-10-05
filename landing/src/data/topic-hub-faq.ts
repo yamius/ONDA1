@@ -12,7 +12,7 @@ export interface HubFaqItem {
   links: { href: string; label: string }[]
 }
 
-export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
+const TOPIC_HUB_FAQ_RAW: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   'hrv-heart-rate': [
     {
       q: 'What is a normal resting heart rate by age?',
@@ -75,7 +75,7 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
     },
     {
       q: 'How can I calm my nervous system quickly?',
-      a: 'Make the exhale longer than the inhale. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it slows the heart within a minute or two; humming while you exhale adds to the effect. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.',
+      a: 'Make the exhale longer than the inhale. {{fact:claim.slowExhale}}. Slowing the breath also slows the heart within a minute or two; humming while you exhale is a common addition. Five minutes of slow breathing at about six breaths per minute is enough for most people to feel the shift.',
       links: [
         { href: '/articles/humming-breath-vagus', label: 'Humming breath and the vagus nerve' },
         { href: '/tools/resonance-breathing', label: 'Resonance breathing pacer' },
@@ -168,12 +168,12 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   'stress-vagus': [
     {
       q: "How do I calm my nervous system quickly?",
-      a: "Breathe with a longer exhale than inhale: in for 4, out for 6, low in the belly, for 3–5 minutes. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it slows your heart within minutes. Humming on the exhale or splashing cold water on your face for about 30 seconds works as a quick extra lever.",
+      a: "Breathe with a longer exhale than inhale: in for 4, out for 6, low in the belly, for 3–5 minutes. {{fact:claim.slowExhale}}. Slowing the breath also slows your heart within minutes. Humming on the exhale or splashing cold water on your face for about 30 seconds works as a quick extra lever.",
       links: [{ href: "/articles/calm-your-nervous-system-down", label: "How to calm your nervous system down" }, { href: "/tools/breathing", label: "Breathing timer" }],
     },
     {
       q: "How can I stimulate my vagus nerve?",
-      a: "The most reliable way is slow breathing with a longer exhale, such as 4 in and 6 out. Humming, chanting or gargling for 30–60 seconds are also used — the vagus nerve supplies the vocal cords, so a vibration route is proposed, though the evidence is weaker. Cold water on the face triggers the dive reflex, which slows the heart. If a technique helps you, your HRV tends to rise while you practise.",
+      a: "The most reliable way is slow breathing, often with a longer exhale such as 4 in and 6 out. Humming, chanting or gargling for 30–60 seconds are also used — the vagus nerve supplies the vocal cords, so a vibration route is proposed, though the evidence is weaker. Cold water on the face triggers the dive reflex, which slows the heart. If a technique helps you, your HRV tends to rise while you practise.",
       links: [{ href: "/articles/vagus-nerve-exercises", label: "Vagus nerve exercises" }, { href: "/tools/resonance-breathing", label: "Resonance breathing" }],
     },
     {
@@ -366,7 +366,11 @@ export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = {
   ],
 }
 
+/** EN hub FAQs with {{fact:…}} resolved. */
+export const TOPIC_HUB_FAQ: Partial<Record<ArticleTopicSlug, HubFaqItem[]>> = resolveFactsDeep(TOPIC_HUB_FAQ_RAW, 'topic-hub-faq')
+
 // ── Localized blocks (src/data/topic-hub-faq-i18n/<lang>.json; en.json mirrors the above) ──
+import { resolveFactsDeep, type FactLang } from './science/facts'
 import type { Lang } from '../i18n'
 import es from './topic-hub-faq-i18n/es.json'
 import ru from './topic-hub-faq-i18n/ru.json'
@@ -391,5 +395,5 @@ export function hubFaqFor(topic: ArticleTopicSlug, lang: Lang): { heading: strin
   }
   const f = LOCALIZED[lang]
   const items = f?.hubs[topic]
-  return f && items ? { heading: f.heading, items } : null
+  return f && items ? { heading: f.heading, items: resolveFactsDeep(items, `topic-hub-faq-i18n/${lang}.${topic}`, lang as FactLang) } : null
 }

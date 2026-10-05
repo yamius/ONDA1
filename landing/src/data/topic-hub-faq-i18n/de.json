@@ -114,7 +114,7 @@
       },
       {
         "q": "Wie kann ich mein Nervensystem schnell beruhigen?",
-        "a": "Mach die Ausatmung länger als die Einatmung. Langsames Atmen mit längerer Ausatmung geht während der Übung mit einer höheren vagal vermittelten HRV einher und verlangsamt den Herzschlag innerhalb von ein, zwei Minuten; Summen beim Ausatmen verstärkt den Effekt. Fünf Minuten langsames Atmen mit etwa sechs Atemzügen pro Minute reichen den meisten Menschen, um die Veränderung zu spüren.",
+        "a": "Mach die Ausatmung länger als die Einatmung. {{fact:claim.slowExhale}}. Langsameres Atmen verlangsamt außerdem den Herzschlag innerhalb von ein, zwei Minuten; Summen beim Ausatmen ist eine häufige Ergänzung. Fünf Minuten langsames Atmen mit etwa sechs Atemzügen pro Minute reichen den meisten Menschen, um die Veränderung zu spüren.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

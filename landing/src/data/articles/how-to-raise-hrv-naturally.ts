@@ -64,7 +64,7 @@ None of these is a hack. They're the foundation, and no breathing app substitute
 
 **Slow, paced breathing acutely raises HRV within minutes**, and practised regularly it can lift your resting baseline over time. It's the one lever that's both immediate and trainable.
 
-The mechanism is clean. Breathe slowly — long, with the exhale leading — and you stimulate the baroreflex and hand tone to the parasympathetic branch on each out-breath. Your heart rate rises on the inhale and falls on the exhale in a wide, organised swing. That swing *is* HRV, amplified on purpose. Do it daily and you're not just measuring HRV — you're [training your nervous system](/articles/how-to-train-your-nervous-system) to settle faster.
+The mechanism is clean. Breathe slowly — many people let the exhale lead — and you engage the baroreflex, and the heart slows on each out-breath. Your heart rate rises on the inhale and falls on the exhale in a wide, organised swing. That swing *is* HRV, amplified on purpose. Do it daily and you're not just measuring HRV — you're [training your nervous system](/articles/how-to-train-your-nervous-system) to settle faster.
 
 The honest boundary: this trains the autonomic self-regulation dimension of HRV. It is a practice, not a medical treatment, and no app is a medical device.
 

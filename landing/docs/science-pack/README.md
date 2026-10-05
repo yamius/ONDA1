@@ -59,4 +59,12 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 | 2026-10-05 | Source type `product-documentation` (ONDA’s own pages, app behaviour only). Source year = journal volume year. Roadmap added to the pack; `relatedPlanned` may list any roadmap page. |
 | 2026-10-04 | After `rmssd`: no repeats around facts (auto-checked), exact `quote` per evidence row (required), `imageAlt` + `imagePrompt` in the light scientific style (required), lessons file. |
 
+## Facts outside the science section (since 2026-10-05)
+
+`{{fact:<id>}}` and `{{fact:<id>|short}}` also work in articles, article FAQs, topic-hub FAQs and the glossary, in every language: EN is resolved in the data modules, translations in the chunk generator and the prerender. Translations of the hand-written facts live in `src/data/science/facts-i18n.ts` (ru/uk reviewed by Yakiv); table facts are formatted per locale automatically. A missing translation, a missing short form, an unknown or unapproved fact fails the build, and `scripts/check-no-unresolved-facts.mjs` fails the build if any placeholder reaches `dist`. Translation tooling exports the raw text with placeholders.
+
+## Backlog
+
+- **After the science MVP:** go through the articles and replace hand-typed numbers with facts — HRV norms, resting heart rate, breathing rate, resonance pace, baseline windows (owner request 2026-10-05).
+
 Background (not rules): the original specs are in `D:\_ONDA\_Sciense\` (001–005), and the audit with the page decisions is [`../science-audit.md`](../science-audit.md).

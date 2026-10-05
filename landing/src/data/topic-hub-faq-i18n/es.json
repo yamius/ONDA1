@@ -114,7 +114,7 @@
       },
       {
         "q": "¿Cómo calmar el sistema nervioso rápidamente?",
-        "a": "Haz que la exhalación sea más larga que la inhalación. La respiración lenta con una espiración más larga se asocia con una HRV de mediación vagal más alta mientras practicas, y ralentiza el corazón en uno o dos minutos; tararear mientras exhalas refuerza el efecto. Cinco minutos de respiración lenta, a unas seis respiraciones por minuto, bastan para que la mayoría note el cambio.",
+        "a": "Haz que la exhalación sea más larga que la inhalación. {{fact:claim.slowExhale}}. Ralentizar la respiración también frena el corazón en uno o dos minutos; tararear mientras exhalas refuerza el efecto. Cinco minutos de respiración lenta, a unas seis respiraciones por minuto, bastan para que la mayoría note el cambio.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

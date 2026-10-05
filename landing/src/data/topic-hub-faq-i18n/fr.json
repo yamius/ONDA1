@@ -114,7 +114,7 @@
       },
       {
         "q": "Comment calmer rapidement son système nerveux ?",
-        "a": "Faites une expiration plus longue que l'inspiration. Une respiration lente avec une expiration plus longue est associée à une VFC d'origine vagale plus élevée pendant la pratique, et elle ralentit le cœur en une à deux minutes ; fredonner en expirant renforce l'effet. Cinq minutes de respiration lente, à environ six respirations par minute, suffisent à la plupart des gens pour sentir la différence.",
+        "a": "Faites une expiration plus longue que l'inspiration. {{fact:claim.slowExhale}}. Ralentir la respiration ralentit aussi le cœur en une à deux minutes ; fredonner en expirant est un ajout courant. Cinq minutes de respiration lente, à environ six respirations par minute, suffisent à la plupart des gens pour sentir la différence.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

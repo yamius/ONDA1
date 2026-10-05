@@ -1,3 +1,4 @@
+import { resolveFactsDeep } from './science/facts'
 import { SLUG_TO_CATEGORY } from './glossary-categories'
 
 export interface GlossaryTerm {
@@ -587,7 +588,7 @@ The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathe
 **Vagal tone** cannot be measured directly; Heart Rate Variability (HRV) reflects vagally mediated changes in heart rate. Higher vagally mediated HRV is linked with a greater ability to shift between activation and recovery. ONDA Level 1 practices that work with this:
 
 - Diaphragmatic breathing (slow, low breathing)
-- Extended exhale patterns (slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise)
+- Slow breathing patterns, often with an extended exhale. {{fact:claim.slowExhale}}.
 - Cold exposure protocols (linked to a brief vagal response; long-term evidence is thin)
 
 ## Polyvagal Theory
@@ -6932,10 +6933,13 @@ The Hydraulic Viscosity article and the [Fascial Tensegrity Protocol](/articles/
 ]
 
 // Apply 4-cluster category mapping (Neural Hardware, Biological Software, OS States, ONDA Protocol) (Neural Hardware, Biological Software, OS States, ONDA Protocol)
-export const glossaryTerms = rawGlossaryTerms.map((t) => ({
+/** Terms with {{fact:…}} placeholders kept (translation tooling). */
+export const glossaryTermsRaw = rawGlossaryTerms.map((t) => ({
   ...t,
   category: SLUG_TO_CATEGORY[t.slug] ?? t.category,
 }))
+/** Terms with {{fact:…}} resolved (EN). */
+export const glossaryTerms = resolveFactsDeep(glossaryTermsRaw, 'glossary')
 
 export const categories = [...new Set(glossaryTerms.map((t) => t.category))]
 

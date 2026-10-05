@@ -34,7 +34,7 @@ Meditation and breathwork both calm your mind and body, but they work through di
 
 Both practices aim at a calmer, more regulated nervous system, but they enter from opposite directions.
 
-**Breathwork is bottom-up.** You change a physical input — the pace and depth of your breath — and your nervous system responds. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; six breaths per minute brings heart and blood-pressure rhythms into resonance. The effect is fast and reliable because you're pulling a physiological lever directly. You don't need to "be good at" it — the body responds to the breathing pattern.
+**Breathwork is bottom-up.** You change a physical input — the pace and depth of your breath — and your nervous system responds. {{fact:claim.slowExhale}}. Six breaths per minute brings heart and blood-pressure rhythms into resonance. The effect is fast and reliable because you're pulling a physiological lever directly. You don't need to "be good at" it — the body responds to the breathing pattern.
 
 **Meditation is top-down.** You train attention, awareness, and your relationship to thoughts and sensations. Over time this reshapes the brain — thicker attention-related cortex, [elevated gamma waves](/articles/meditation-gamma-waves-experience), a quieter mind-wandering network. The effect is deeper and more trait-like, but it builds gradually and is more of a skill you develop than a lever you pull.
 

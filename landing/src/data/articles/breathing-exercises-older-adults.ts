@@ -46,7 +46,7 @@ The combined message is honest and useful: for an older adult, slow breathing re
 
 ## Why does slow breathing still work as you age?
 
-Slow breathing works through a reflex that doesn't depend on youthful fitness. Breathing low and slow — around six breaths per minute — activates the baroreflex, the blood-pressure regulating loop in your arteries, and the long exhale is associated with higher vagally mediated HRV (see [vagus nerve](/glossary/vagus-nerve)). These are built-in mechanisms that remain accessible with age. So even as HRV naturally declines, the *lever* — a long, slow exhale that tips you toward parasympathetic activity — still works. You may start from a lower baseline than a 25-year-old, but the direction of the shift is the same. And reassuringly, research shows community-dwelling older adults can do controlled breathing successfully without special equipment or training.
+Slow breathing works through a reflex that doesn't depend on youthful fitness. Breathing low and slow — around six breaths per minute — activates the baroreflex, the blood-pressure regulating loop in your arteries. {{fact:claim.slowExhale}} (see [vagus nerve](/glossary/vagus-nerve)). These are built-in mechanisms that remain accessible with age. So even as HRV naturally declines, the *lever* — a long, slow exhale that tips you toward parasympathetic activity — still works. You may start from a lower baseline than a 25-year-old, but the direction of the shift is the same. And reassuringly, research shows community-dwelling older adults can do controlled breathing successfully without special equipment or training.
 
 ## How can older adults practice breathing exercises safely?
 

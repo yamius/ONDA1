@@ -66,7 +66,7 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
           },
           {
             q: 'Можно ли тренировать блуждающий нерв?',
-            a: 'Вы можете влиять на вагальную (парасимпатическую) активность. Медленное дыхание, длинные выдохи и HRV-биофидбек повышают вагусно-опосредованную ВСР в моменте, а при регулярной практике облегчают достижение спокойного состояния. Эффект реальный, но умеренный — «перезагрузки вагуса», обещающие вылечить болезни, преувеличивают его.',
+            a: 'Вы можете влиять на вагальную (парасимпатическую) активность. Медленное дыхание и HRV-биофидбек повышают вагусно-опосредованную ВСР в моменте, а при регулярной практике облегчают достижение спокойного состояния. Эффект реальный, но умеренный — «перезагрузки вагуса», обещающие вылечить болезни, преувеличивают его.',
           },
           {
             q: 'HRV-биофидбек действительно работает?',
@@ -257,7 +257,7 @@ export const FAQ_I18N: Record<'ru' | 'es', FaqLocale> = {
           },
           {
             q: '¿Puedo entrenar mi nervio vago?',
-            a: 'Puedes influir en la actividad vagal (parasimpática). La respiración lenta, las exhalaciones largas y el biofeedback de VFC elevan la VFC de mediación vagal en el momento, y con práctica regular hacen más fácil alcanzar un estado de calma. El efecto es real pero modesto — los «reinicios del vago» que prometen curar enfermedades lo exageran.',
+            a: 'Puedes influir en la actividad vagal (parasimpática). La respiración lenta y el biofeedback de VFC elevan la VFC de mediación vagal en el momento, y con práctica regular hacen más fácil alcanzar un estado de calma. El efecto es real pero modesto — los «reinicios del vago» que prometen curar enfermedades lo exageran.',
           },
           {
             q: '¿El biofeedback de VFC realmente funciona?',

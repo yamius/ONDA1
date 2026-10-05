@@ -63,7 +63,7 @@ This step lowers the system Jitter and shifts the body from a "fight-or-flight" 
 
 > **The Hack:** Inhale smoothly and deeply through the nose over 4 seconds. Exhale slowly over 8 to 10 seconds while making a low-frequency, resonant humming sound (or a long, controlled exhalation through pursed lips). Repeat for 5 full cycles.
 
-**System Effect:** Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise; it lowers your heart rate and releases remaining tension in the jaw and neck.
+**System Effect:** {{fact:claim.slowExhale}}. Slowing the breath also lowers your heart rate and releases remaining tension in the jaw and neck.
 
 > [ HARDWARE_VALIDATION ]
 > VALIDATION_DEVICE: HRV monitor / subjective tension scan

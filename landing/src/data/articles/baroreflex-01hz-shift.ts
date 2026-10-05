@@ -91,7 +91,7 @@ Clinical data: consistent 0.1 Hz biofeedback training produces systolic reductio
 
 **Duty Cycle (Standard):** 5.0s inhale / 5.0s exhale. Equal ratio. No breath holds — holds break the Mayer Wave synchronization.
 
-**Duty Cycle (Parasympathetic Bias):** 4.0s inhale / 6.0s exhale. Extended exhale increases vagal efferent output — use when the primary goal is cortisol clearance, anxiety resolution, or sleep-onset acceleration.
+**Duty Cycle (Parasympathetic Bias):** 4.0s inhale / 6.0s exhale. Extended exhale is commonly used when the goal is winding down or falling asleep; whether it adds anything beyond slowing the breath is still debated.
 
 **Minimum required duration:** 10 minutes — the threshold for a complete system "reflash" and measurable baroreflex recalibration.
 

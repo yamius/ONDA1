@@ -114,7 +114,7 @@
       },
       {
         "q": "Como acalmar o sistema nervoso rápido?",
-        "a": "Faça a expiração mais longa que a inspiração. A respiração lenta com expiração mais longa está associada a uma VFC de mediação vagal mais alta durante a prática, e ela desacelera o coração em um ou dois minutos; cantarolar enquanto expira reforça o efeito. Cinco minutos de respiração lenta, a cerca de seis respirações por minuto, bastam para a maioria das pessoas sentir a mudança.",
+        "a": "Faça a expiração mais longa que a inspiração. {{fact:claim.slowExhale}}. Desacelerar a respiração também desacelera o coração em um ou dois minutos; cantarolar enquanto expira é um complemento comum. Cinco minutos de respiração lenta, a cerca de seis respirações por minuto, bastam para a maioria das pessoas sentir a mudança.",
         "links": [
           {
             "href": "/articles/humming-breath-vagus",

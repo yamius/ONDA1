@@ -77,7 +77,7 @@ Aggression is a high-energy state. When managed correctly, it becomes the fuel f
 
 > **The Hack:** Inhale twice through the nose (one long, one short burst), then a long, slow exhale through the mouth. Repeat 3 times.
 
-**The Logic:** This is one of the fastest hardware-level ways to slow the heart — a longer exhale is associated with higher vagally mediated HRV (see [vagus nerve](/glossary/vagus-nerve)). It sends a direct signal to the [brainstem](/glossary/brainstem): "System is Secure." [Adrenaline](/glossary/adrenaline) levels tend to fall quickly.
+**The Logic:** This is one of the fastest hardware-level ways to slow the heart. {{fact:claim.slowExhale}} (see [vagus nerve](/glossary/vagus-nerve)). It sends a direct signal to the [brainstem](/glossary/brainstem): "System is Secure." [Adrenaline](/glossary/adrenaline) levels tend to fall quickly.
 
 \`[ STATUS: ACTIVE ]\`
 

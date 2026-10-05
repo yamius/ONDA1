@@ -97,7 +97,7 @@ const bestVagusNerveStimulators2026: Comparison = {
     },
     {
       q: 'Can you stimulate the vagus nerve for free?',
-      a: 'Yes. Slow breathing — roughly five to seven breaths a minute with a longer exhale — reliably raises vagally mediated heart rate variability while you do it and has the broadest evidence of any vagal technique. Humming, gentle cold-water face immersion and regular aerobic exercise also help. Many people try these first and buy a device only if they want more structure.',
+      a: 'Yes. Slow breathing — roughly five to seven breaths a minute, often with a longer exhale — reliably raises vagally mediated heart rate variability while you do it and has the broadest evidence of any vagal technique. Humming, gentle cold-water face immersion and regular aerobic exercise also help. Many people try these first and buy a device only if they want more structure.',
     },
   ],
   content: `## Quick answer
@@ -149,7 +149,7 @@ For consumer wellness claims, the picture is far weaker. A living Bayesian meta-
 
 ## Free alternatives with real evidence
 
-Slow, paced breathing — about five to seven breaths a minute with a longer exhale — reliably raises vagally mediated HRV while you do it, costs nothing, and has a broader research base than any consumer stimulator. Start with our guides to [vagus nerve exercises](/articles/vagus-nerve-exercises), [coherent breathing](/articles/coherent-breathing-guide), [finding your resonance breathing rate](/articles/find-your-resonance-breathing-rate) and [humming for the vagus nerve](/articles/humming-breath-vagus). If you try a device, compare it against a few weeks of breathing practice before deciding it is worth the money.
+Slow, paced breathing — about five to seven breaths a minute, often with a longer exhale — reliably raises vagally mediated HRV while you do it, costs nothing, and has a broader research base than any consumer stimulator. Start with our guides to [vagus nerve exercises](/articles/vagus-nerve-exercises), [coherent breathing](/articles/coherent-breathing-guide), [finding your resonance breathing rate](/articles/find-your-resonance-breathing-rate) and [humming for the vagus nerve](/articles/humming-breath-vagus). If you try a device, compare it against a few weeks of breathing practice before deciding it is worth the money.
 
 ## Which should you buy?
 

@@ -20,6 +20,7 @@ import { mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from 'fs'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { articles, type Article } from '../src/data/articles'
+import { resolveFactsDeep, type FactLang } from '../src/data/science/facts'
 import { ARTICLE_FAQ } from '../src/data/article-faq'
 import { ARTICLE_CITATIONS } from '../src/data/article-citations'
 import { glossaryTerms } from '../src/data/glossary'
@@ -118,7 +119,7 @@ for (const lang of readdirSync(LOCALES)) {
   if (lang === 'en') continue
   let file: { bodies?: Record<string, Record<string, unknown>> } & Record<string, unknown>
   try {
-    file = JSON.parse(readFileSync(join(LOCALES, lang, 'articles.json'), 'utf-8'))
+    file = resolveFactsDeep(JSON.parse(readFileSync(join(LOCALES, lang, 'articles.json'), 'utf-8')), `locales/${lang}/articles.json`, lang as FactLang)
   } catch {
     continue
   }
@@ -144,7 +145,7 @@ for (const lang of readdirSync(LOCALES)) {
   if (lang === 'en') continue
   let file: { bodies?: Record<string, Record<string, unknown>> } & Record<string, unknown>
   try {
-    file = JSON.parse(readFileSync(join(LOCALES, lang, 'glossary.json'), 'utf-8'))
+    file = resolveFactsDeep(JSON.parse(readFileSync(join(LOCALES, lang, 'glossary.json'), 'utf-8')), `locales/${lang}/glossary.json`, lang as FactLang)
   } catch {
     continue
   }

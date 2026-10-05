@@ -52,7 +52,7 @@ Breathing can stop the loop because it is the only autonomic function with a man
 
 Breathing is the only autonomic function with a manual override — and it back-propagates to the rest of the system. Fast, shallow chest-breathing (hyperventilation) is both a *symptom* of panic and an *accelerant*: it drops CO₂, which produces the tingling, light-headedness and air-hunger that the brain reads as more danger. Slow it down and you cut the accelerant.
 
-The mechanism runs through [heart-rate variability](/glossary/heart-rate-variability). A long, slow exhale briefly hands control to the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve); the heart slows on the out-breath. Pace the whole breath slow — and bias it toward the exhale — and vagally mediated HRV rises as the system is pulled back toward calm (Zaccaro 2018; Lehrer & Gevirtz 2014).
+The mechanism runs through [heart-rate variability](/glossary/heart-rate-variability). A long, slow exhale briefly hands control to the [parasympathetic](/glossary/parasympathetic-nervous-system) branch via the [vagus nerve](/glossary/vagus-nerve); the heart slows on the out-breath. Pace the whole breath slow — many people bias it toward the exhale — and vagally mediated HRV rises as the system is pulled back toward calm (Zaccaro 2018; Lehrer & Gevirtz 2014).
 
 ---
 
@@ -105,7 +105,7 @@ Within those limits, the practice is simple and the evidence is real: when the a
     },
     {
       name: 'Breathe low, slow, and exhale-led',
-      text: 'Breathe into the belly, slow the whole breath, and make the exhale longer than the inhale (e.g. 4 seconds in, 6 out). A longer out-breath slows the heart within each breath and is associated with higher vagally mediated HRV.',
+      text: 'Breathe into the belly, slow the whole breath, and make the exhale longer than the inhale (e.g. 4 seconds in, 6 out). The heart slows a little on every out-breath. {{fact:claim.slowExhale}}.',
       protocolId: 'anx-exhale',
     },
     {

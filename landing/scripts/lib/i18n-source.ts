@@ -3,11 +3,11 @@
  * src/data/i18n-schema.ts — the reference a translation is checked against and
  * the file translators receive. Node-only (reads the full registries).
  */
-import { articles } from '../../src/data/articles'
-import { ARTICLE_FAQ, ARTICLE_FAQ_SCHEMA_ONLY } from '../../src/data/article-faq'
+import { articlesRaw as articles } from '../../src/data/articles'
+import { ARTICLE_FAQ_RAW as ARTICLE_FAQ, ARTICLE_FAQ_SCHEMA_ONLY_RAW as ARTICLE_FAQ_SCHEMA_ONLY } from '../../src/data/article-faq'
 import { ALL_REVIEWS, ALL_COMPARISONS } from '../../src/data/reviews'
 import { ALL_HEAD_TO_HEADS } from '../../src/data/reviews/head-to-head'
-import { glossaryTerms } from '../../src/data/glossary'
+import { glossaryTermsRaw as glossaryTerms } from '../../src/data/glossary'
 import type { TranslationCollection } from '../../src/data/i18n-schema'
 
 type Entry = Record<string, unknown>

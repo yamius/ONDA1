@@ -45,7 +45,7 @@ Modern evenings fight that handover. Work bleeds late, screens keep the system s
 
 ## Section 2: How does slow breathing help you fall asleep?
 
-The fastest, most direct way to signal "day's over" to your nervous system is a slow, exhale-led breath. Slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise, and it starts your heart rate falling — exactly the shift sleep onset needs. You're not forcing sleep (you can't); you're producing the *state* that lets sleep happen.
+The fastest, most direct way to signal "day's over" to your nervous system is a slow, exhale-led breath. {{fact:claim.slowExhale}}. Slowing the breath also starts your heart rate falling — exactly the shift sleep onset needs. You're not forcing sleep (you can't); you're producing the *state* that lets sleep happen.
 
 This is why a few minutes of [coherent breathing](/articles/coherent-breathing-guide) in bed works better than lying there willing yourself to drop off. Willpower can't lower your arousal. The breath can.
 
@@ -90,7 +90,7 @@ Anchor the wind-down to bedtime the way you'd anchor any habit, and protect the 
     },
     {
       name: 'Anchor it with slow, exhale-led breathing',
-      text: 'A few minutes of slow breathing with longer out-breaths, low in the belly, is associated with higher vagally mediated HRV and starts your heart rate falling — the exact state sleep needs. You’re producing the descent, not forcing sleep.',
+      text: 'A few minutes of slow breathing, low in the belly and often with longer out-breaths, starts your heart rate falling — the exact state sleep needs. You’re producing the descent, not forcing sleep.',
       protocolId: 'wind-breathe',
     },
     {
