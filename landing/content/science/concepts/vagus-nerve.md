@@ -214,7 +214,7 @@ evidenceMap:
     class: established
     claimType: measurement
     quote: "Cardiac vagal tone, which represents the contribution of the parasympathetic nervous system to cardiac regulation"
-    limitation: "An index, not a direct measurement — see the approved claim.vagalTone fact."
+    limitation: "An index of vagal tone, not a direct measurement of it."
   - claim: "RMSSD is the primary time-domain measure used to estimate vagally mediated changes in heart rate variability."
     sources: [S7]
     class: established
