@@ -73,6 +73,7 @@ If your work changes an `approved` fact in any way — its text, its short form,
 Page: <kind>/<slug>
 Intent in one sentence:
 Approved facts changed: id — old text → new text, one line each, all languages touched (or “none”)
+Myth-debunk paragraphs: file — first words, one line each (or “none”)
 Proposals:          P1 … — one line each: kind | value | scope | DOI/PMID/URL | quote or location   (or “none”)
 Check log:          attached / could not run scripts
 New link targets:   (pages that don’t exist yet, or “none”)

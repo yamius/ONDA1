@@ -12,7 +12,8 @@
  * - {{fact:id}} is resolved to the approved value in the page's language (facts.ts / facts-i18n.ts); unknown id or
  *   a missing translation → build error.
  * - A page with pending items (a proposals block, {{proposed:…}}, or a fact that is not approved) is NOT published.
- * - A translation is published only for languages in SCIENCE_LIVE_LANGS (src/data/science/i18n.ts). Its
+ * - A translation is published only for languages in SCIENCE_LIVE_LANGS (src/data/science/i18n.ts); a page without a
+ *   translation stays EN-only in that language (warning). A translation's
  *   `sourceHash` must match the EN file; a mismatch (EN edited after translation) is reported as STALE, and the
  *   translation keeps being served until it is updated.
  * - Translations keep the EN structure: same number of evidence-map rows; sources, quotes, classes, images and
@@ -132,11 +133,13 @@ if (existsSync(I18N_DIR)) {
     translations.set(lang, m)
   }
 }
-// A live language must have every published page translated.
+// A live language without a translation of a page simply has no /<lang>/ version of it yet (EN only) — reported, not fatal,
+// so a new EN page can be published before its translations exist.
+const untranslated: string[] = []
 for (const lang of SCIENCE_LIVE_LANGS) {
   const m = translations.get(lang)
   const missing = publishable.filter((r) => !m?.has(key(r))).map(key)
-  if (missing.length) problems.push(`${lang} is live but has no translation for: ${missing.join(', ')}`)
+  if (missing.length) untranslated.push(`${lang}: ${missing.join(', ')}`)
 }
 if (problems.length) {
   console.error(`[science] translation problems:\n  ${problems.join('\n  ')}`)
@@ -179,7 +182,7 @@ function buildPage(r: Raw, lang: string) {
     reviewer: fm.reviewer ?? null,
     lastReviewed: fm.lastReviewed ? String(fm.lastReviewed) : null,
     dateModified: lastModified(t ? t.file : r.file),
-    body: resolveFacts(t ? t.body : r.body, where, L),
+    body: resolveFacts(t ? t.body : r.body, where, L).replace(/<!--\s*myth-debunk\s*-->\s*/g, ''), // owner-reviewed exemption marker (check-science-content)
     sources: (fm.sources ?? []).map((s: any) => ({
       id: s.id, cite: s.cite, title: s.title, journal: s.journal ?? null, year: s.year ?? null,
       doi: s.doi ?? null, pmid: s.pmid != null ? String(s.pmid) : null, url: s.url ?? null, type: s.type,
@@ -248,4 +251,5 @@ writeFileSync(
 )
 const tr = SCIENCE_LIVE_LANGS.map((l) => `${l}:${full[l].length}`).join(' ')
 console.log(`[science] generated ${publishable.length} page(s)${tr ? ` + translations ${tr}` : ''}${skipped.length ? `; NOT published (pending): ${skipped.join('; ')}` : ''}`)
+if (untranslated.length) console.warn(`[science] not yet translated in live languages (EN only there): ${untranslated.join('; ')}`)
 if (stale.length) console.warn(`[science] STALE translations (EN changed after translation — update them): ${stale.join(', ')}`)

@@ -52,7 +52,7 @@
 | `/articles/overtraining-hrv-resting-heart-rate`, `/articles/how-much-alcohol-lowers-hrv`, `…/caffeine-…`, `…/nicotine-…`, сон-статьи | статьи | влияние образа жизни | `/science/mechanisms/{sleep,stress,exercise}-and-hrv` | **Не делать в MVP**: практические статьи покрывают намерение. Фаза 2 — после первых данных. |
 | `/hrv-biofeedback`, `/research` (утверждения из `evidence.ts`) | опорная страница / исследовательская страница | метод / «на чём мы строим» | `/science/evidence/hrv-biofeedback` | **Создать**. Утверждения про биофидбек переезжают из `evidence.ts` сюда, `/research` на них ссылается. `/hrv-biofeedback` остаётся практической. |
 | `/articles/hrv-breathing-cold-honest-limits`, `/articles/coherent-breathing-guide`, `/articles/cardiac-coherence-365-method`, `/articles/high-blood-pressure-slow-breathing`, `/articles/anxiety-panic-breathing-hrv` | статьи | практика и честные пределы | `/science/evidence/slow-breathing` | **Создать** (вбирает понятие slow-breathing): синтез данных по медленному дыханию с классами утверждений из 002 §4. |
-| `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, 10 обзоров и 15 сравнений стимуляторов | статьи / рейтинг / обзоры | практика / обзор нейромодуляции / выбор устройства | `/science/evidence/transcutaneous-vagus-nerve-stimulation` (флагман 005) | **Создать**. Отличие см. ниже. |
+| `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, 10 обзоров и 15 сравнений стимуляторов | статьи / рейтинг / обзоры | практика / обзор нейромодуляции / выбор устройства | `/science/evidence/vagus-nerve-stimulation` (флагман 005) | **Создать**. Отличие см. ниже. |
 | `/research` | исследовательская страница (EN) | для партнёров и грантов: что доказано и куда идём | `/science/research/*` | **Не делать.** `evidence/` = синтез, `/research` остаётся страницей для партнёров с дорожной картой и ссылается на `evidence/`. Отдельную библиографию не заводим: источники хранятся в одном реестре `evidence.ts` и выводятся на каждой странице. |
 | глоссарий `interoception`, статьи про интероцепцию | глоссарий / статьи | определение | `/science/concepts/interoception` (001 §4) | **Не делать в MVP**. |
 
@@ -107,7 +107,7 @@
 | 10 | `/science/mechanisms/breathing-and-hrv` | RSA, барорефлекс, резонанс; будущая цель для двух старых метафорических статей. |
 | 11 | `/science/evidence/hrv-biofeedback` | Синтез данных; разгружает `/research`. |
 | 12 | `/science/evidence/slow-breathing` | Синтез данных (понятие slow-breathing объединено сюда). |
-| 13 | `/science/evidence/transcutaneous-vagus-nerve-stimulation` (**флагман 2**) | Самая сильная новая страница. |
+| 13 | `/science/evidence/vagus-nerve-stimulation` (**флагман 2**) | Самая сильная новая страница. |
 
 Из 24 страниц документа 001 убраны:
 - 4 вопроса — изменение 2;

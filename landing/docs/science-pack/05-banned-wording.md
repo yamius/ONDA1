@@ -2,6 +2,19 @@
 
 These phrases must not appear in a science page, in any grammatical form. Rows marked **auto** are caught by `check-science-content.ts` (any match fails the page). Claude Code checks the rest by reading.
 
+## Refuting a myth — the one exemption
+
+The auto rules stay strict even when a sentence quotes a myth to refute it. If a paragraph must name the banned claim itself (for example "LF/HF shows sympathovagal balance — the evidence does not support it"), first try to rephrase it so the banned wording does not appear. Only if that fails, start the paragraph with `<!-- myth-debunk -->`:
+
+```
+<!-- myth-debunk -->
+A widely repeated idea is that LF/HF shows the sympathovagal balance. The evidence does not support it [S7, S8].
+```
+
+- The paragraph is exempt from the banned list; the marker never reaches the published page.
+- Every marked paragraph is printed by the check as **MYTH-DEBUNK** and listed in the hand-off note on its own line ("Myth-debunk paragraphs"). Yakiv reviews each by hand.
+- Use rarely — one per page at most, and only for a genuine refutation.
+
 ## Vagus and vagal tone
 
 | Don’t write | Write instead | Check |

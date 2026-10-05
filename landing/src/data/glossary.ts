@@ -826,50 +826,58 @@ The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that
     title: 'Parasympathetic Nervous System',
     category: 'Body Systems',
     shortDescription:
-      'The "rest and digest" branch of the autonomic nervous system — promotes recovery, digestion, and calm.',
+      'One of the two main branches of the autonomic nervous system — slows the heart through the vagus nerve and supports digestion and recovery.',
     content: `
 
-The **parasympathetic nervous system** (PNS) is one of two branches of the autonomic nervous system. It promotes "rest and digest" — slowing heart rate, stimulating digestion, and enabling recovery.
+The **parasympathetic nervous system** (PNS) is one of the two main branches of the autonomic nervous system. It is often summed up as "rest and digest": through the vagus nerve it slows the heart, and it supports digestion and recovery. At rest, its influence on the heart predominates.
 
 ## Key Effects
 
-- Slowed heart rate
-- Deep, diaphragmatic breathing
-- Activated digestion and peristalsis
-- Reduced cortisol
-- Social engagement capacity
+- Slower heart rate (via the vagus nerve)
+- Stimulated digestion and gut movement (peristalsis)
+- More saliva and tears; narrower pupils
+
+## Not a switch
+
+The parasympathetic and sympathetic branches are not two ends of one dial. They can be active at the same time and can change independently, so "more calm" does not simply mean "less stress" — "autonomic balance" is a shorthand, not something a single number measures. Cortisol is not controlled by this branch: it is regulated by the hormonal hypothalamic–pituitary–adrenal axis.
+
+Polyvagal theory adds ideas such as a "social engagement system" linked to the vagus nerve. These are terms of the theory, which is debated, not established physiology.
 
 ## In ONDA Life
 
-Level 1 practices aim to activate the parasympathetic system through diaphragmatic breathing, extended exhales, and interoceptive awareness. The vagus nerve is the primary channel of parasympathetic influence.
+{{fact:claim.slowExhale}}. ONDA's practices use slow, guided breathing; they do not measure parasympathetic activity directly. {{fact:claim.vagalTone}}.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).`,
+See [The Autonomic Nervous System](/science/concepts/autonomic-nervous-system) for the full picture and sources.`,
   },
   {
     slug: 'sympathetic-nervous-system',
     title: 'Sympathetic Nervous System',
     category: 'Body Systems',
     shortDescription:
-      'The "fight or flight" branch of the autonomic nervous system — mobilizes the body for action and threat response.',
+      'One of the two main branches of the autonomic nervous system — speeds the heart and mobilises the body for action.',
     content: `
 
-The **sympathetic nervous system** (SNS) is the "fight or flight" branch of the autonomic nervous system. It mobilizes the body for action — increasing heart rate, redirecting blood flow, and releasing stress hormones.
+The **sympathetic nervous system** (SNS) is one of the two main branches of the autonomic nervous system. It is often summed up as "fight or flight": it speeds the heart, strengthens its contractions and mobilises the body for action.
 
 ## Key Effects
 
-- Increased heart rate and blood pressure
-- Redirected blood flow to muscles
-- Cortisol and adrenaline release
-- Suppressed digestion
-- Heightened alertness
+- Faster heart rate and stronger heart contractions
+- Blood flow redirected towards working muscles
+- Adrenaline released from the adrenal glands
+- Slowed digestion
+- Wider pupils, more sweating
+
+## Not a switch
+
+The sympathetic and parasympathetic branches are not two ends of one dial. They can be active at the same time and can change independently, so "autonomic balance" is a shorthand, not something a single number such as the LF/HF ratio can read. Cortisol, the main stress hormone, is not released by this branch: it is regulated by the hormonal hypothalamic–pituitary–adrenal axis.
 
 ## In ONDA Life
 
-Chronic sympathetic activation (stress) keeps the body in deficit mode. Level 1 practices help restore balance by activating the parasympathetic system, allowing the sympathetic branch to return to baseline when not needed.
+ONDA does not measure sympathetic activity. Its practices use slow, guided breathing, and the app reads heart rhythm, not the state of the nervous system.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+See [The Autonomic Nervous System](/science/concepts/autonomic-nervous-system) for the full picture and sources.`,
   },
   {
     slug: 'insula',

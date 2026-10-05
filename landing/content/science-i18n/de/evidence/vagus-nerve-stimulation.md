@@ -1,5 +1,5 @@
 ---
-sourceHash: "b8490857b5d7"
+sourceHash: "254aa41c4a50"
 title: "Wirkt Vagusnervstimulation wirklich? Was die Evidenz zeigt"
 metaTitle: "Vagusnervstimulation: Was die Evidenz zeigt"
 metaDescription: "Vagusnervstimulation hat von der FDA freigegebene Anwendungen und gemischte Studienergebnisse. Was jede Evidenzstufe stützt – und was darüber hinausgeht."

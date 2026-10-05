@@ -577,7 +577,23 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 
 Note for Balban 2023 (cited above): the source carries `note: "authors include an industry adviser"` — shown in the sources list, not in the body.
 
-## Transcutaneous vagus nerve stimulation (flagship 2)
+## Autonomic nervous system (concepts/autonomic-nervous-system, approved 2026-10-05)
+
+| Short cite | Full reference | Type | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Wehrwein 2016 | Wehrwein EA, Orer HS, Barman SM. Overview of the anatomy, physiology, and pharmacology of the autonomic nervous system. *Compr Physiol* 2016;6(3):1239–1278 | review | DOI 10.1002/cphy.c150037 · PMID 27347892 | Definition; three divisions; homeostasis; controls all parts except skeletal muscle |
+| Gibbons 2019 | Gibbons CH. Basics of autonomic nervous system function. *Handb Clin Neurol* 2019;160:407–418 | review | DOI 10.1016/B978-0-444-64032-1.00027-8 · PMID 31277865 | "Fight or flight / rest and digest" as a simplification; enteric as third division |
+| Berntson 1991 | Berntson GG, Cacioppo JT, Quigley KS. Autonomic determinism. *Psychol Rev* 1991;98(4):459–487 | review (theory) | DOI 10.1037/0033-295X.98.4.459 · PMID 1660159 | Branches are not one continuum ("autonomic space") |
+| Shaffer 2014 | Shaffer F, McCraty R, Zerr CL. A healthy heart is not a metronome. *Front Psychol* 2014;5:1040 | review | DOI 10.3389/fpsyg.2014.01040 · PMID 25324790 | Sympathetic speeds/strengthens, vagus slows the heart; both branches simultaneously active (full-text quotes) |
+| Reyes del Paso 2013 | Reyes del Paso GA et al. The utility of low frequency heart rate variability as an index of sympathetic cardiac tone. *Psychophysiology* 2013;50(5):477–487 | review + reanalysis | DOI 10.1111/psyp.12027 · PMID 23445494 | LF and LF/HF are not sympathetic indices; spectrum mainly parasympathetic |
+| Goldstein 2011 | Goldstein DS et al. Low-frequency power of heart rate variability is not a measure of cardiac sympathetic tone. *Exp Physiol* 2011;96(12):1255–1261 | review | DOI 10.1113/expphysiol.2010.056259 · PMID 21890520 | LF reflects baroreflex function |
+| Diaz & Taylor 2006 | Diaz T, Taylor JA. Probing the arterial baroreflex. *Clin Auton Res* 2006;16(4):256–261 | review | DOI 10.1007/s10286-006-0352-5 · PMID 16732466 | Baroreflex in beat-to-beat pressure control |
+| Gordan 2015 | Gordan R, Gwathmey JK, Xie LH. Autonomic and endocrine control of cardiovascular function. *World J Cardiol* 2015;7(4):204–214 | review | DOI 10.4330/wjc.v7.i4.204 · PMID 25914789 | Heart rate and contractility regulated by nerves and hormones |
+| Furness 2012 | Furness JB. The enteric nervous system and neurogastroenterology. *Nat Rev Gastroenterol Hepatol* 2012;9(5):286–294 | review | DOI 10.1038/nrgastro.2012.32 · PMID 22392290 | Enteric nervous system and digestion |
+| Grossman 2023 | Grossman P. Fundamental challenges and likely refutations of the five basic premises of the polyvagal theory. *Biol Psychol* 2023;180:108589 | review (critical) | DOI 10.1016/j.biopsycho.2023.108589 · PMID 37230290 | Polyvagal theory contested |
+| Porges 2009 | Porges SW. The polyvagal theory: new insights into adaptive reactions of the autonomic nervous system. *Cleve Clin J Med* 2009;76 Suppl 2:S86–S90 | review (theory) | DOI 10.3949/ccjm.76.s2.17 · PMID 19376991 | The theory in its author's words (always next to the critique) |
+
+## Vagus nerve stimulation (flagship 2)
 
 | Short cite | Full reference | Type | DOI / PMID | Use for |
 |---|---|---|---|---|
@@ -625,6 +641,19 @@ Note for Balban 2023 (cited above): the source carries `note: "authors include a
 # 5. Banned wording
 
 These phrases must not appear in a science page, in any grammatical form. Rows marked **auto** are caught by `check-science-content.ts` (any match fails the page). Claude Code checks the rest by reading.
+
+## Refuting a myth — the one exemption
+
+The auto rules stay strict even when a sentence quotes a myth to refute it. If a paragraph must name the banned claim itself (for example "LF/HF shows sympathovagal balance — the evidence does not support it"), first try to rephrase it so the banned wording does not appear. Only if that fails, start the paragraph with `<!-- myth-debunk -->`:
+
+```
+<!-- myth-debunk -->
+A widely repeated idea is that LF/HF shows the sympathovagal balance. The evidence does not support it [S7, S8].
+```
+
+- The paragraph is exempt from the banned list; the marker never reaches the published page.
+- Every marked paragraph is printed by the check as **MYTH-DEBUNK** and listed in the hand-off note on its own line ("Myth-debunk paragraphs"). Yakiv reviews each by hand.
+- Use rarely — one per page at most, and only for a genuine refutation.
 
 ## Vagus and vagal tone
 
@@ -689,12 +718,13 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/sdnn` — 2026-10-05
 - `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
 - `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
-- `evidence/transcutaneous-vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
+- `evidence/vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
 - `concepts/hrv-baseline` — 2026-10-05
 - `concepts/respiratory-sinus-arrhythmia` — 2026-10-05 (written by Claude Code under the same pack)
 - `mechanisms/breathing-and-hrv` — 2026-10-05 (written by Claude Code under the same pack)
 - `evidence/hrv-biofeedback` — 2026-10-05 (written by Claude Code under the same pack)
 - `evidence/slow-breathing` — 2026-10-05 (written by Claude Code under the same pack)
+- `concepts/autonomic-nervous-system` — 2026-10-05 (written by Claude Code under the same pack)
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](#ONDA_science_roadmap).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 
@@ -714,7 +744,7 @@ All other pages: not written yet. Yakiv names the next page. Put published pages
 | 10 | `/science/mechanisms/breathing-and-hrv` | mechanism | RSA, baroreflex around 0.1 Hz, resonance | `/resonance-breathing`, `/articles/find-your-resonance-breathing-rate`, `/articles/coherent-breathing-guide`, `/articles/resonant-frequency-system-coherence`, `/articles/baroreflex-01hz-shift`, `/hrv-vs-coherence` | Mechanism and evidence classes, not a how-to. Resonance numbers only via the `breath.resonance.*` facts. Practice pages link here. |
 | 11 | `/science/evidence/hrv-biofeedback` | evidence | What the evidence shows for HRV biofeedback | `/hrv-biofeedback`, `/research` | Evidence synthesis by class. `/hrv-biofeedback` stays the practical page and `/research` links here. |
 | 12 | `/science/evidence/slow-breathing` | evidence | What the evidence shows for slow breathing | `/articles/hrv-breathing-cold-honest-limits`, `/articles/coherent-breathing-guide`, `/articles/cardiac-coherence-365-method`, `/articles/high-blood-pressure-slow-breathing`, `/articles/anxiety-panic-breathing-hrv` | Synthesis with claim classes; it also covers the concept “slow breathing”. Practice stays in the articles. |
-| 13 | `/science/evidence/transcutaneous-vagus-nerve-stimulation` | evidence — **flagship 2**: “Does Vagus Nerve Stimulation Really Work?” (spec 005) | Does non-invasive VNS (taVNS / tVNS) work, for what, how well | `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, stimulator reviews and comparisons | Evidence only, no device ranking. Covers: unstable HRV effect (Wolf 2021), sham problems (Yap 2020), anatomy (Butt 2020), sleep and depression meta-analyses, regulatory clearance for gammaCore headache indications only. Implanted-VNS evidence never supports non-invasive claims. |
+| 13 | `/science/evidence/vagus-nerve-stimulation` | evidence — **flagship 2**: “Does Vagus Nerve Stimulation Really Work?” (spec 005) | Does non-invasive VNS (taVNS / tVNS) work, for what, how well | `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, stimulator reviews and comparisons | Evidence only, no device ranking. Covers: unstable HRV effect (Wolf 2021), sham problems (Yap 2020), anatomy (Butt 2020), sleep and depression meta-analyses, regulatory clearance for gammaCore headache indications only. Implanted-VNS evidence never supports non-invasive claims. |
 
 **Not in the MVP — do not write:**
 - the `/questions/` and `/research/` sections;
@@ -820,6 +850,7 @@ If your work changes an `approved` fact in any way — its text, its short form,
 Page: <kind>/<slug>
 Intent in one sentence:
 Approved facts changed: id — old text → new text, one line each, all languages touched (or “none”)
+Myth-debunk paragraphs: file — first words, one line each (or “none”)
 Proposals:          P1 … — one line each: kind | value | scope | DOI/PMID/URL | quote or location   (or “none”)
 Check log:          attached / could not run scripts
 New link targets:   (pages that don’t exist yet, or “none”)
@@ -1031,7 +1062,7 @@ Use https://onda-life.com/science/concepts/rmssd as the reference for structure 
 | `concepts/rmssd` | RMSSD |
 | `concepts/sdnn` | SDNN |
 | `measurements/heart-rate-variability` | Можно ли доверять HRV с часов и колец (ECG vs PPG) |
-| `evidence/transcutaneous-vagus-nerve-stimulation` | Работает ли стимуляция вагуса |
+| `evidence/vagus-nerve-stimulation` | Работает ли стимуляция вагуса |
 
 ---
 

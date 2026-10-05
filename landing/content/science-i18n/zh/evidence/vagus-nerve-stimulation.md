@@ -1,5 +1,5 @@
 ---
-sourceHash: "b8490857b5d7"
+sourceHash: "254aa41c4a50"
 title: "迷走神经刺激真的有效吗？证据显示了什么"
 metaTitle: "迷走神经刺激：证据显示了什么"
 metaDescription: "迷走神经刺激既有获FDA许可（clearance）的医疗用途，也有好坏参半的研究结果。本文说明各证据层级分别支持什么，以及哪些说法超出了证据。"

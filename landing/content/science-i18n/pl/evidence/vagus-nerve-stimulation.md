@@ -1,5 +1,5 @@
 ---
-sourceHash: "b8490857b5d7"
+sourceHash: "254aa41c4a50"
 title: "Czy stymulacja nerwu błędnego naprawdę działa? Co pokazują badania"
 metaTitle: "Stymulacja nerwu błędnego: co pokazują badania"
 metaDescription: "Stymulacja nerwu błędnego ma zastosowania medyczne dopuszczone przez FDA i niejednoznaczne wyniki badań. Co popiera każdy poziom dowodów, a co go wyprzedza."

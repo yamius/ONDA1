@@ -11,12 +11,13 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/sdnn` — 2026-10-05
 - `measurements/heart-rate-variability` — 2026-10-05 (flagship 1)
 - `concepts/heart-rate-variability` — 2026-10-05 (hub entity)
-- `evidence/transcutaneous-vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
+- `evidence/vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
 - `concepts/hrv-baseline` — 2026-10-05
 - `concepts/respiratory-sinus-arrhythmia` — 2026-10-05 (written by Claude Code under the same pack)
 - `mechanisms/breathing-and-hrv` — 2026-10-05 (written by Claude Code under the same pack)
 - `evidence/hrv-biofeedback` — 2026-10-05 (written by Claude Code under the same pack)
 - `evidence/slow-breathing` — 2026-10-05 (written by Claude Code under the same pack)
+- `concepts/autonomic-nervous-system` — 2026-10-05 (written by Claude Code under the same pack)
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](ONDA_science_roadmap.md).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 
@@ -36,7 +37,7 @@ All other pages: not written yet. Yakiv names the next page. Put published pages
 | 10 | `/science/mechanisms/breathing-and-hrv` | mechanism | RSA, baroreflex around 0.1 Hz, resonance | `/resonance-breathing`, `/articles/find-your-resonance-breathing-rate`, `/articles/coherent-breathing-guide`, `/articles/resonant-frequency-system-coherence`, `/articles/baroreflex-01hz-shift`, `/hrv-vs-coherence` | Mechanism and evidence classes, not a how-to. Resonance numbers only via the `breath.resonance.*` facts. Practice pages link here. |
 | 11 | `/science/evidence/hrv-biofeedback` | evidence | What the evidence shows for HRV biofeedback | `/hrv-biofeedback`, `/research` | Evidence synthesis by class. `/hrv-biofeedback` stays the practical page and `/research` links here. |
 | 12 | `/science/evidence/slow-breathing` | evidence | What the evidence shows for slow breathing | `/articles/hrv-breathing-cold-honest-limits`, `/articles/coherent-breathing-guide`, `/articles/cardiac-coherence-365-method`, `/articles/high-blood-pressure-slow-breathing`, `/articles/anxiety-panic-breathing-hrv` | Synthesis with claim classes; it also covers the concept “slow breathing”. Practice stays in the articles. |
-| 13 | `/science/evidence/transcutaneous-vagus-nerve-stimulation` | evidence — **flagship 2**: “Does Vagus Nerve Stimulation Really Work?” (spec 005) | Does non-invasive VNS (taVNS / tVNS) work, for what, how well | `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, stimulator reviews and comparisons | Evidence only, no device ranking. Covers: unstable HRV effect (Wolf 2021), sham problems (Yap 2020), anatomy (Butt 2020), sleep and depression meta-analyses, regulatory clearance for gammaCore headache indications only. Implanted-VNS evidence never supports non-invasive claims. |
+| 13 | `/science/evidence/vagus-nerve-stimulation` | evidence — **flagship 2**: “Does Vagus Nerve Stimulation Really Work?” (spec 005) | Does non-invasive VNS (taVNS / tVNS) work, for what, how well | `/articles/vagus-nerve-exercises`, `/articles/electric-medicine-neuromodulation`, `/articles/cold-exposure-vagus-nerve`, `/articles/humming-breath-vagus`, `/reviews/compare/best-vagus-nerve-stimulators-2026`, stimulator reviews and comparisons | Evidence only, no device ranking. Covers: unstable HRV effect (Wolf 2021), sham problems (Yap 2020), anatomy (Butt 2020), sleep and depression meta-analyses, regulatory clearance for gammaCore headache indications only. Implanted-VNS evidence never supports non-invasive claims. |
 
 **Not in the MVP — do not write:**
 - the `/questions/` and `/research/` sections;

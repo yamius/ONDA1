@@ -1,5 +1,5 @@
 ---
-sourceHash: "b8490857b5d7"
+sourceHash: "254aa41c4a50"
 title: "La stimulation du nerf vague fonctionne-t-elle vraiment ? Ce que montrent les données"
 metaTitle: "Stimulation du nerf vague : ce que montrent les données"
 metaDescription: "Stimulation du nerf vague : usages autorisés par la FDA, résultats mitigés. Ce que soutient chaque niveau de preuve, et les allégations qui le dépassent."

@@ -1,6 +1,6 @@
 ---
 kind: evidence
-slug: transcutaneous-vagus-nerve-stimulation
+slug: vagus-nerve-stimulation
 title: "Does Vagus Nerve Stimulation Really Work? What the Evidence Shows"
 metaTitle: "Vagus Nerve Stimulation: What the Evidence Shows"
 metaDescription: "Vagus nerve stimulation has FDA-cleared medical uses and mixed research results. Here is what each level of evidence supports, and which claims outrun it."

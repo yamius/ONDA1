@@ -70,6 +70,7 @@ const BANNED: [RegExp, string][] = [
 const errors: string[] = []
 const pending: string[] = []
 const warnings: string[] = []
+const mythReview: string[] = []
 const err = (file: string, msg: string) => errors.push(`${file}: ${msg}`)
 const pend = (file: string, msg: string) => pending.push(`${file}: ${msg}`)
 const warn = (file: string, msg: string) => warnings.push(`${file}: ${msg}`)
@@ -248,8 +249,12 @@ async function main() {
     const fmText = [fm.title, fm.metaTitle, fm.metaDescription, fm.shortAnswer, ...(fm.keyPoints || [])].join(' ')
     if (/\d/.test(String(fmText).replace(/\{\{(fact|proposed):[^}]+\}\}/g, ' '))) err(rel, 'digits in title/meta/shortAnswer/keyPoints — write numbers in words there')
 
-    // 6. banned wording
-    const all = `${fmText}\n${body}`
+    // 6. banned wording. A paragraph that starts with <!-- myth-debunk --> states a banned claim only to refute it: it is
+    // exempt from the banned list, and every such paragraph is listed for the owner's manual review (use rarely).
+    const MYTH = /<!--\s*myth-debunk\s*-->/
+    const paras = body.split(/\n\s*\n/)
+    for (const p of paras.filter((x) => MYTH.test(x))) mythReview.push(`${rel}: ${p.replace(MYTH, '').trim().slice(0, 160)}…`)
+    const all = `${fmText}\n${paras.filter((x) => !MYTH.test(x)).join('\n\n')}`
     for (const [re, why] of BANNED) { const m = all.match(re); if (m) err(rel, `banned wording “${m[0]}” — ${why}`) }
 
     // 7. links
@@ -273,6 +278,7 @@ async function main() {
     }
   }
 
+  if (mythReview.length) console.log(`[science] MYTH-DEBUNK — ${mythReview.length} paragraph(s) exempt from the banned list, review by hand:\n  ` + mythReview.join('\n  '))
   if (warnings.length) console.log(`[science] ${warnings.length} warning(s):\n  ` + warnings.join('\n  '))
   if (pending.length) console.log(`[science] PENDING — ${pending.length} item(s) need Yakiv’s approval before publishing:\n  ` + pending.join('\n  '))
   if (errors.length) { console.error(`[science] ${errors.length} problem(s):\n  ` + errors.join('\n  ')); return }

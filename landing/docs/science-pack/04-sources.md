@@ -88,7 +88,23 @@ The check enforces all three points (see [01-quality-standard.md](01-quality-sta
 
 Note for Balban 2023 (cited above): the source carries `note: "authors include an industry adviser"` — shown in the sources list, not in the body.
 
-## Transcutaneous vagus nerve stimulation (flagship 2)
+## Autonomic nervous system (concepts/autonomic-nervous-system, approved 2026-10-05)
+
+| Short cite | Full reference | Type | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Wehrwein 2016 | Wehrwein EA, Orer HS, Barman SM. Overview of the anatomy, physiology, and pharmacology of the autonomic nervous system. *Compr Physiol* 2016;6(3):1239–1278 | review | DOI 10.1002/cphy.c150037 · PMID 27347892 | Definition; three divisions; homeostasis; controls all parts except skeletal muscle |
+| Gibbons 2019 | Gibbons CH. Basics of autonomic nervous system function. *Handb Clin Neurol* 2019;160:407–418 | review | DOI 10.1016/B978-0-444-64032-1.00027-8 · PMID 31277865 | "Fight or flight / rest and digest" as a simplification; enteric as third division |
+| Berntson 1991 | Berntson GG, Cacioppo JT, Quigley KS. Autonomic determinism. *Psychol Rev* 1991;98(4):459–487 | review (theory) | DOI 10.1037/0033-295X.98.4.459 · PMID 1660159 | Branches are not one continuum ("autonomic space") |
+| Shaffer 2014 | Shaffer F, McCraty R, Zerr CL. A healthy heart is not a metronome. *Front Psychol* 2014;5:1040 | review | DOI 10.3389/fpsyg.2014.01040 · PMID 25324790 | Sympathetic speeds/strengthens, vagus slows the heart; both branches simultaneously active (full-text quotes) |
+| Reyes del Paso 2013 | Reyes del Paso GA et al. The utility of low frequency heart rate variability as an index of sympathetic cardiac tone. *Psychophysiology* 2013;50(5):477–487 | review + reanalysis | DOI 10.1111/psyp.12027 · PMID 23445494 | LF and LF/HF are not sympathetic indices; spectrum mainly parasympathetic |
+| Goldstein 2011 | Goldstein DS et al. Low-frequency power of heart rate variability is not a measure of cardiac sympathetic tone. *Exp Physiol* 2011;96(12):1255–1261 | review | DOI 10.1113/expphysiol.2010.056259 · PMID 21890520 | LF reflects baroreflex function |
+| Diaz & Taylor 2006 | Diaz T, Taylor JA. Probing the arterial baroreflex. *Clin Auton Res* 2006;16(4):256–261 | review | DOI 10.1007/s10286-006-0352-5 · PMID 16732466 | Baroreflex in beat-to-beat pressure control |
+| Gordan 2015 | Gordan R, Gwathmey JK, Xie LH. Autonomic and endocrine control of cardiovascular function. *World J Cardiol* 2015;7(4):204–214 | review | DOI 10.4330/wjc.v7.i4.204 · PMID 25914789 | Heart rate and contractility regulated by nerves and hormones |
+| Furness 2012 | Furness JB. The enteric nervous system and neurogastroenterology. *Nat Rev Gastroenterol Hepatol* 2012;9(5):286–294 | review | DOI 10.1038/nrgastro.2012.32 · PMID 22392290 | Enteric nervous system and digestion |
+| Grossman 2023 | Grossman P. Fundamental challenges and likely refutations of the five basic premises of the polyvagal theory. *Biol Psychol* 2023;180:108589 | review (critical) | DOI 10.1016/j.biopsycho.2023.108589 · PMID 37230290 | Polyvagal theory contested |
+| Porges 2009 | Porges SW. The polyvagal theory: new insights into adaptive reactions of the autonomic nervous system. *Cleve Clin J Med* 2009;76 Suppl 2:S86–S90 | review (theory) | DOI 10.3949/ccjm.76.s2.17 · PMID 19376991 | The theory in its author's words (always next to the critique) |
+
+## Vagus nerve stimulation (flagship 2)
 
 | Short cite | Full reference | Type | DOI / PMID | Use for |
 |---|---|---|---|---|

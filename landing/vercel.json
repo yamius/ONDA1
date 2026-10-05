@@ -39,6 +39,8 @@
     { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/articles/hrv-training-nervous-system-latency", "destination": "/:lang/articles/nervous-system-ping-latency", "permanent": true },
     { "source": "/articles/biological-latency-optimizing-system-ping", "destination": "/articles/nervous-system-ping-latency", "permanent": true },
     { "source": "/:lang(es|ru|uk|zh|de|fr|it|nl|ja|pl|pt)/articles/biological-latency-optimizing-system-ping", "destination": "/:lang/articles/nervous-system-ping-latency", "permanent": true },
+    { "source": "/science/evidence/transcutaneous-vagus-nerve-stimulation", "destination": "/science/evidence/vagus-nerve-stimulation", "permanent": true },
+    { "source": "/:lang(ru|uk|es|de|fr|it|pt|nl|pl|ja|zh)/science/evidence/transcutaneous-vagus-nerve-stimulation", "destination": "/:lang/science/evidence/vagus-nerve-stimulation", "permanent": true },
     { "source": "/topics", "destination": "/articles", "permanent": true },
     { "source": "/topics/hrv", "destination": "/articles/topic/hrv-heart-rate", "permanent": true },
     { "source": "/topics/breathwork", "destination": "/articles/topic/breathing", "permanent": true },

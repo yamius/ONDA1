@@ -16,7 +16,7 @@
 | `concepts/rmssd` | RMSSD |
 | `concepts/sdnn` | SDNN |
 | `measurements/heart-rate-variability` | Можно ли доверять HRV с часов и колец (ECG vs PPG) |
-| `evidence/transcutaneous-vagus-nerve-stimulation` | Работает ли стимуляция вагуса |
+| `evidence/vagus-nerve-stimulation` | Работает ли стимуляция вагуса |
 
 ---
 
