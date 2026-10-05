@@ -18,7 +18,7 @@ keyPoints:
   - "Gepoolte Studien zeigen einen moderaten Blutdruckrückgang, doch die Evidenz für gerätegestütztes Atmen wird schwächer, wenn herstellernahe Studien herausgenommen werden."
   - "Atemübungen zeigen kleine bis mittlere Verbesserungen bei Stress, Angst und depressiven Symptomen, meist in Studien mit gewissem Verzerrungsrisiko."
   - "Der selbstberichtete Schlaf verbessert sich nach langsamem Atmen vor dem Zubettgehen tendenziell, während objektive Schlafmessungen kein klares Ergebnis liefern."
-  - "Benannte Techniken wie die «Vier-Sieben-Acht»-Atmung, Box-Atmung und zyklisches Seufzen stützen sich auf einzelne oder kleine Studien, nicht auf Metaanalysen."
+  - "Benannte Techniken wie die „Vier-Sieben-Acht“-Atmung, Box-Atmung und zyklisches Seufzen stützen sich auf einzelne oder kleine Studien, nicht auf Metaanalysen."
   - "Langsames Atmen ist eine kostengünstige Übung, kein Ersatz für eine Behandlung, und sollte abgebrochen werden, wenn es Schwindel oder Unbehagen auslöst."
 imageAlt: "Zwei langsame Atemzyklen als Kreise, die entlang einer sanften Welle wachsen und schrumpfen; der größte Kreis jedes Zyklus ist grün gefüllt – der Rhythmus eines langsamen Atemzugs."
 evidenceMap:
@@ -70,7 +70,7 @@ evidenceMap:
     limitation: "Eine einzelne Fernstudie; selbst ausgewählte Online-Teilnehmende."
   - claim: "In dieser Studie verbesserten Atemübungen, besonders zyklisches Seufzen, die Stimmung und senkten die Atemfrequenz stärker als Achtsamkeitsmeditation."
     limitation: "Eine einzelne Studie; verglichen wurde mit Meditation, nicht mit gewöhnlichem langsamem Atmen."
-  - claim: "In einer kleinen Crossover-Studie ging die «Vier-Sieben-Acht»-Atmung bei Frauen mit weniger Stress und negativem Affekt einher, und keine Bedingung veränderte die üblichen Indizes der Herzfrequenzvariabilität."
+  - claim: "In einer kleinen Crossover-Studie ging die „Vier-Sieben-Acht“-Atmung bei Frauen mit weniger Stress und negativem Affekt einher, und keine Bedingung veränderte die üblichen Indizes der Herzfrequenzvariabilität."
     limitation: "Eine kleine Crossover-Studie zu akuten Effekten bei Studierenden."
   - claim: "In einer randomisierten Studie mit gesunden Erwachsenen senkte langsames Atmen mit längerer Ausatmung den Stress nicht stärker als langsames Atmen mit gleich langer Ausatmung."
     limitation: "Eine einzelne Studie mit gesunden Erwachsenen; kleine, nicht signifikante Unterschiede zwischen den Verhältnissen lassen sich nicht ausschließen."
@@ -122,7 +122,7 @@ Der Vergleich ist der schwierige Teil. Menschen wissen immer, ob sie langsam atm
 - **Kohärentes oder Resonanzatmen** (langsames, gleichmäßiges Atmen nahe dem Resonanzbereich) ist das Muster hinter dem größten Teil der obigen Evidenz. Anleitung: [kohärentes Atmen](/articles/coherent-breathing-guide).
 - **Zyklisches Seufzen (das Muster des physiologischen Seufzers).** In einer randomisierten Fernstudie verbesserte tägliches zyklisches Seufzen, bei dem die Ausatmung betont verlängert wird, die Stimmung und senkte die Atemfrequenz stärker als Achtsamkeitsmeditation [S11]. Eine Studie – vorläufig. Siehe [der physiologische Seufzer](/articles/physiological-sigh).
 - **Box-Atmung** (gleich lange Phasen für Einatmen, Halten, Ausatmen und Halten) war ein Arm derselben Studie [S11]; eigene Studienevidenz dafür gibt es nicht. Bestenfalls vorläufig. Siehe [Box-Atmung](/articles/box-breathing-how-it-works).
-- **«Vier-Sieben-Acht»-Atmung.** In einer kleinen Crossover-Studie ging sie bei Frauen mit weniger Stress und negativem Affekt einher, und keine Atembedingung veränderte die üblichen HRV-Indizes [S12]. Eine kleine Studie – vorläufig. Siehe [«Vier-Sieben-Acht»-Atmung](/articles/4-7-8-breathing).
+- **„Vier-Sieben-Acht“-Atmung.** In einer kleinen Crossover-Studie ging sie bei Frauen mit weniger Stress und negativem Affekt einher, und keine Atembedingung veränderte die üblichen HRV-Indizes [S12]. Eine kleine Studie – vorläufig. Siehe [„Vier-Sieben-Acht“-Atmung](/articles/4-7-8-breathing).
 - **Eine längere Ausatmung.** {{fact:claim.slowExhale}}. In einer randomisierten Studie senkte langsames Atmen mit längerer Ausatmung den Stress nicht stärker als langsames Atmen mit gleich langer Ausatmung [S14]. Vorläufig.
 
 Für keine benannte Technik wurde in einer Metaanalyse gezeigt, dass sie gewöhnlichem langsamem Atmen überlegen ist.
@@ -139,7 +139,7 @@ Für keine benannte Technik wurde in einer Metaanalyse gezeigt, dass sie gewöhn
 - **Es ist keine eigenständige Behandlung.** Langsames Atmen ist eine kostengünstige Übung, bei der wenige Nebenwirkungen zu erwarten sind [S2], doch es ersetzt weder Medikamente noch Psychotherapie oder ärztliche Versorgung bei Bluthochdruck, Angst, Depression, Schlaflosigkeit, Schmerz oder Lungenerkrankungen. Nichts hier bedeutet „Setz deine Behandlung ab“.
 - **Ein höherer Wert während der Übung ist kein Ergebnis.** Die HRV steigt beim langsamen Atmen naturgemäß [S2]; das zeigt nicht, dass sich Blutdruck, Stimmung oder Schlaf verändert haben.
 - **Die Studien sind klein und kurz.** Die Heterogenität ist hoch [S4], die Gerätestudien waren kurz und teilweise herstellernah [S5], ein Verzerrungsrisiko ist häufig [S6], und Schlafstudien dauerten oft nur einen Tag [S7]. Die Effekte könnten mit besseren Studien schrumpfen.
-- **Die Sicherheitsdaten sind dünn.** In COPD-Studien wurden keine nennenswerten Nebenwirkungen berichtet [S9]; die Asthma-Übersicht hat sie nicht bewertet [S10]; und eine Übersicht zu Nebenwirkungen langsamen Atmens wurde nicht gefunden. Als vernünftige Vorsicht gilt: Hör auf und atme normal, wenn dir schwindlig oder benommen wird, es kribbelt oder du kurzatmig wirst. Techniken mit Atemanhalten – Box-Atmung und «Vier-Sieben-Acht»-Atmung gehören dazu – besprichst du in der Schwangerschaft oder bei Herz- oder Lungenerkrankungen am besten vorher mit einer Ärztin oder einem Arzt. Brustschmerzen, Ohnmacht, starke Atemnot oder Herzklopfen mit Schwindel brauchen ärztliche Hilfe, keine Atemübung.
+- **Die Sicherheitsdaten sind dünn.** In COPD-Studien wurden keine nennenswerten Nebenwirkungen berichtet [S9]; die Asthma-Übersicht hat sie nicht bewertet [S10]; und eine Übersicht zu Nebenwirkungen langsamen Atmens wurde nicht gefunden. Als vernünftige Vorsicht gilt: Hör auf und atme normal, wenn dir schwindlig oder benommen wird, es kribbelt oder du kurzatmig wirst. Techniken mit Atemanhalten – Box-Atmung und „Vier-Sieben-Acht“-Atmung gehören dazu – besprichst du in der Schwangerschaft oder bei Herz- oder Lungenerkrankungen am besten vorher mit einer Ärztin oder einem Arzt. Brustschmerzen, Ohnmacht, starke Atemnot oder Herzklopfen mit Schwindel brauchen ärztliche Hilfe, keine Atemübung.
 
 ## In ONDA
 

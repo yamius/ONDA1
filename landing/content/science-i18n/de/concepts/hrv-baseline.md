@@ -94,7 +94,7 @@ Das Maß muss gleich bleiben. RMSSD und SDNN fassen unterschiedliche Aspekte des
 
 **Kontextabhängig.** Die konkrete Monitoring-Praxis mit gleitenden Wochenmitteln und dem Variationskoeffizienten stammt aus der Sportwissenschaft, wo ein niedrigerer Wert als der einer anderen Person nicht unbedingt einen schlechteren physiologischen Zustand bedeutet [S10]. Die PPG am Handgelenk folgt EKG-basierten Werten unter kontrollierten Ruhebedingungen [S8]. Eine jahreszeitliche Schwankung ist, wo sie berichtet wurde, schwach [S11]. Und weil HRV-Befunde leicht überinterpretiert werden, warnen Methodenübersichten davor, zu viel in sie hineinzulesen [S4].
 
-**Unbekannt.** Das genaue Fenster einer Baseline ist eine praktische Wahl, keine wissenschaftliche Konstante: Forschungsprotokolle unterscheiden sich von der Logik einer App. Die Fenster von ONDA sind App-Logik – unten dokumentiert, einmal definiert und kein Konsens des Fachgebiets [S9].
+**Nicht geklärt.** Das genaue Fenster einer Baseline ist eine praktische Wahl, keine wissenschaftliche Konstante: Forschungsprotokolle unterscheiden sich von der Logik einer App. Die Fenster von ONDA sind App-Logik – unten dokumentiert, einmal definiert und kein Konsens des Fachgebiets [S9].
 
 ## Was sie dir nicht sagt
 
