@@ -386,7 +386,7 @@ The comparison condition matters as much as the measure. Effect sizes are larger
 - In one randomized trial, biofeedback at an individually selected resonance rate did not outperform biofeedback at a fixed slow rate; the authors say their trial does not permit firm conclusions [S13]. This is the result of a single study, not a settled answer.
 - Remote programmes with a screen on the device tended to do better, but that is an association across studies, not a test [S6].
 
-The most defensible reading today: the slow breathing likely does much of the physiological work; the feedback may help people learn the technique and keep practising, but how much it adds on its own is not settled. The effects of slow breathing without feedback will be covered on a separate evidence page.
+The most defensible reading today: the slow breathing likely does much of the physiological work; the feedback may help people learn the technique and keep practising, but how much it adds on its own is not settled. The effects of slow breathing without feedback are covered in [slow breathing: what the evidence shows](/science/evidence/slow-breathing).
 
 **What remains uncertain.**
 

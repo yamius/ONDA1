@@ -91,6 +91,10 @@ import { getArticleBySlug } from './data/articles'
 import { ARTICLE_FAQ } from './data/article-faq'
 import { ARTICLE_CITATIONS } from './data/article-citations'
 import { registerServerArticleSource } from './lib/article-content'
+import { registerServerScienceSource } from './lib/science-content'
+import { SCIENCE_FULL } from './generated/science-full'
+
+registerServerScienceSource((lang, kind, slug) => SCIENCE_FULL[lang]?.find((p) => p.kind === kind && p.slug === slug))
 
 // Prerender renders from the full in-memory registry (the browser fetches one article at a time).
 registerServerArticleSource((slug) => {
@@ -223,6 +227,11 @@ export function createApp(location: string, lang?: Lang) {
           <Route path="/science"               element={<SciencePage />} />
           <Route path="/science/:kind"         element={<SciencePage />} />
           <Route path="/science/:kind/:slug"   element={<SciencePage />} />
+          {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => [
+            <Route key={`sci-${l}`} path={`/${l}/science`} element={<SciencePage />} />,
+            <Route key={`scik-${l}`} path={`/${l}/science/:kind`} element={<SciencePage />} />,
+            <Route key={`scip-${l}`} path={`/${l}/science/:kind/:slug`} element={<SciencePage />} />,
+          ])}
           <Route path="/ai-apps"               element={<AiAppsPage />} />
           <Route path="/measurements"          element={<MeasurementsPage />} />
           <Route path="/ru/measurements"       element={<MeasurementsPage />} />

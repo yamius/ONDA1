@@ -32,7 +32,7 @@ import { localizedRouteVariants, metricRouteVariants, levelRouteVariants, partRo
 // Pages localized into all 5 languages — each gets its own prerendered HTML
 // per language. Generated from LOCALIZED_PAGES (single source of truth in i18n.ts).
 import { LOCALE_PUBLISH, type PublishCollection } from './locale-publish'
-import { SCIENCE_PAGES, SCIENCE_KINDS } from '../src/generated/science-pages'
+import { SCIENCE_INDEX, SCIENCE_KINDS, SCIENCE_LANGS } from '../src/generated/science-pages'
 const localizedRoutes = localizedRouteVariants()
 
 // /bio/:metric variants × 5 languages.
@@ -1030,10 +1030,13 @@ const nonLocalizedStaticPaths = [
   '/research',
   // /ai-apps — public docs for the ONDA app in ChatGPT and Claude (directory requirement). EN-only.
   '/ai-apps',
-  // /science — ONDA Science (EN-only): hub, kinds that have pages, publishable pages (content/science, docs/science-pack).
-  '/science',
-  ...SCIENCE_KINDS.filter((k) => SCIENCE_PAGES.some((p) => p.kind === k)).map((k) => `/science/${k}`),
-  ...SCIENCE_PAGES.map((p) => `/science/${p.kind}/${p.slug}`),
+  // /science — ONDA Science: hub, kinds that have pages, publishable pages (content/science, docs/science-pack),
+  // in EN and in every language of SCIENCE_LIVE_LANGS (src/data/science/i18n.ts) for the pages translated into it.
+  ...SCIENCE_LANGS.flatMap((l) => {
+    const pre = l === 'en' ? '' : `/${l}`
+    const pages = SCIENCE_INDEX.filter((p) => p.langs.includes(l))
+    return [`${pre}/science`, ...SCIENCE_KINDS.filter((k) => pages.some((p) => p.kind === k)).map((k) => `${pre}/science/${k}`), ...pages.map((p) => `${pre}/science/${p.kind}/${p.slug}`)]
+  }),
   // /measurements + /how-it-works — GEO/AI citability pages: exactly what
   // ONDA measures vs derives vs estimates, and the biofeedback method. EN-only.
   '/measurements',

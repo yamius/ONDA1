@@ -9,6 +9,7 @@ import { JSDOM } from 'jsdom'
 import { renderToString } from 'react-dom/server'
 import { mkdirSync, readFileSync, readdirSync, writeFileSync } from 'fs'
 import { resolveFactsDeep, type FactLang } from '../src/data/science/facts'
+import { SCIENCE_INDEX, SCIENCE_KINDS, SCIENCE_LANGS } from '../src/generated/science-pages'
 import { execSync } from 'child_process'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
@@ -447,6 +448,10 @@ const CUSTOM_LOCALIZED_BASES: Record<string, Lang[]> = {
   '/tools/chronotype': [...SUPPORTED_LANGS],
   '/tools/baseline': [...SUPPORTED_LANGS],
   '/tools/caffeine': [...SUPPORTED_LANGS],
+  // ONDA Science: hub and kind lists in every live science language; each page in the languages it is translated into.
+  '/science': SCIENCE_LANGS as Lang[],
+  ...Object.fromEntries(SCIENCE_KINDS.map((k) => [`/science/${k}`, SCIENCE_LANGS.filter((l) => SCIENCE_INDEX.some((p) => p.kind === k && p.langs.includes(l))) as Lang[]])),
+  ...Object.fromEntries(SCIENCE_INDEX.map((p) => [`/science/${p.kind}/${p.slug}`, p.langs as Lang[]])),
 }
 
 /** hreflang cluster for a custom-localized page, limited to its pilot langs.
@@ -1107,8 +1112,9 @@ for (const route of routes) {
       return clamped === decoded ? `<title>${inner}</title>` : `<title>${escAttr(clamped)}</title>`
     })
 
-    // ONDA Science is EN-only: no og:locale:alternate (the template ships them for localized pages).
-    if (route === '/science' || route.startsWith('/science/')) out = out.replace(/\s*<meta property="og:locale:alternate"[^>]*>/g, '')
+    // ONDA Science: the template's og:locale:alternate list covers every site language; science pages exist only in
+    // their translated languages (hreflang above), so drop it.
+    if (/^\/(?:[a-z]{2}\/)?science(?:\/|$)/.test(route)) out = out.replace(/\s*<meta property="og:locale:alternate"[^>]*>/g, '')
 
     const outDir = route === '/' ? distDir : join(distDir, route.slice(1))
     mkdirSync(outDir, { recursive: true })

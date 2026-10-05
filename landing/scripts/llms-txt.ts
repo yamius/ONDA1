@@ -20,7 +20,7 @@ import { parts } from '../src/pages/PartPage'
 import { ES_PILOT_ARTICLE_SLUGS, RU_PILOT_ARTICLE_SLUGS } from './prerender-routes'
 import { reviews, comparisons, headToHeads } from '../src/data/reviews'
 import { TOOLS } from '../src/data/tools'
-import { SCIENCE_PAGES } from '../src/generated/science-pages'
+import { SCIENCE_INDEX } from '../src/generated/science-pages'
 import { ARTICLE_TOPIC_HUBS } from '../src/data/article-topics'
 import { METRIC_DETAILS, metricSummary, metricPlainText } from '../src/data/bioMetrics'
 import { hrvBiofeedbackJsonLd } from '../src/pages/HrvBiofeedbackPage'
@@ -117,7 +117,7 @@ function buildIndex(lang: Lang = 'en'): string {
 - [Apple Watch HRV biofeedback](${SITE_URL}/apple-watch-hrv-biofeedback): explainer — what the Apple Watch measures, why it records HRV rather than giving live biofeedback alone, and how ONDA adds a real-time coherence loop
 - [Tools](${SITE_URL}${langPrefix}/tools): ${TOOLS.length} free interactive calculators (HRV, sleep debt, caffeine cut-off, heart-rate zones, protein, VO2max and more) — read against the evidence, no sign-up
 - [Bio](${SITE_URL}${langPrefix}/bio): real-time biometric dashboard — the product experience on the web
-- [Science](${SITE_URL}/science): ONDA Science — evidence-first reference pages (definition, mechanism, measurement, evidence by strength, limits, sources with DOI/PMID)${SCIENCE_PAGES.map((p) => `\n  - [${p.title}](${SITE_URL}/science/${p.kind}/${p.slug}): ${p.metaDescription}`).join('')}
+- [Science](${SITE_URL}/science): ONDA Science — evidence-first reference pages (definition, mechanism, measurement, evidence by strength, limits, sources with DOI/PMID)${SCIENCE_INDEX.map((p) => `\n  - [${p.i18n.en.title}](${SITE_URL}/science/${p.kind}/${p.slug}): ${p.i18n.en.metaDescription}`).join('')}
 - [Research](${SITE_URL}/research): the evidence ONDA builds on (HRV biofeedback, resonance breathing) and what remains experimental
 - [Articles](${SITE_URL}/articles): long-form knowledge base on HRV, breathwork and nervous-system science
 - [Glossary](${SITE_URL}/glossary): defined terms with cross-links

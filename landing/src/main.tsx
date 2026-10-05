@@ -6,6 +6,7 @@ import { Layout } from './components/Layout'
 import i18n, { langFromPath, SUPPORTED_LANGS, ensureNamespace } from './i18n'
 import { loadArticle } from './lib/article-loader'
 import { loadEntry } from './lib/content-loader'
+import { loadSciencePage } from './lib/science-content'
 
 // Sync language with URL before hydration so first paint matches the prerendered HTML
 void i18n.changeLanguage(langFromPath(window.location.pathname))
@@ -226,6 +227,11 @@ const routeElements = (
             <Route path="/science"               element={<SciencePage />} />
             <Route path="/science/:kind"         element={<SciencePage />} />
             <Route path="/science/:kind/:slug"   element={<SciencePage />} />
+            {SUPPORTED_LANGS.filter(l => l !== 'en').map(l => [
+              <Route key={`sci-${l}`} path={`/${l}/science`} element={<SciencePage />} />,
+              <Route key={`scik-${l}`} path={`/${l}/science/:kind`} element={<SciencePage />} />,
+              <Route key={`scip-${l}`} path={`/${l}/science/:kind/:slug`} element={<SciencePage />} />,
+            ])}
             <Route path="/ai-apps"               element={<AiAppsPage />} />
             <Route path="/measurements"          element={<MeasurementsPage />} />
             <Route path="/ru/measurements"       element={<MeasurementsPage />} />
@@ -483,6 +489,9 @@ if (articleMatch && articleMatch[2] !== 'topic') {
 // /reviews/hrv-trackers just misses the body file — harmless, the page doesn't read it.)
 const reviewMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?reviews\/(?:(compare|vs)\/)?([^/]+)\/?$/)
 const termMatch = window.location.pathname.match(/^\/(?:[a-z]{2}\/)?glossary\/([^/]+)\/?$/)
+// Science pages: the page's JSON (one language).
+const scienceMatch = window.location.pathname.match(/^\/(?:([a-z]{2})\/)?science\/([a-z]+)\/([^/]+)\/?$/)
+if (scienceMatch) preloads.push(loadSciencePage(scienceMatch[1] ?? 'en', scienceMatch[2], scienceMatch[3]))
 if (termMatch) preloads.push(loadEntry('glossary', termMatch[1], langFromPath(window.location.pathname)))
 if (reviewMatch && reviewMatch[2] !== 'methodology') {
   const collection = reviewMatch[1] === 'compare' ? 'comparisons' : reviewMatch[1] === 'vs' ? 'h2h' : 'reviews'
