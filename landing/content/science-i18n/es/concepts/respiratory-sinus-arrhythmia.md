@@ -35,7 +35,7 @@ evidenceMap:
   - claim: "Según una postura, la correlación entre la presión arterial y los intervalos cardíacos a las frecuencias respiratorias refleja la acción de la respiración sobre ambos, y no la fisiología del barorreflejo."
     limitation: "La síntesis de un autor en un debate de larga data; otros investigadores atribuyen un papel mayor al barorreflejo."
   - claim: "La RSA es pequeña con frecuencias respiratorias rápidas y grande con frecuencias lentas."
-    limitation: "Una relación a nivel de grupo; la frecuencia respiratoria en la que la RSA es máxima varía entre personas."
+    limitation: "Una relación a nivel de grupo; la frecuencia respiratoria a la que la RSA es máxima varía entre personas."
   - claim: "La RSA y la variabilidad de la frecuencia cardíaca alcanzan su máximo cuando la respiración se ralentiza a unas seis respiraciones por minuto, aunque esta frecuencia de resonancia varía entre personas."
     limitation: "Datos agrupados de estudios de respiración controlada en adultos sanos; la frecuencia individual hay que encontrarla, no suponerla."
   - claim: "Un mayor volumen respiratorio aumenta la RSA, sobre todo con frecuencias respiratorias lentas."
@@ -86,7 +86,7 @@ La RSA se obtiene de los intervalos entre latidos registrados junto con la respi
 
 ## ¿Qué influye en ella?
 
-- **Frecuencia respiratoria.** La RSA es pequeña con frecuencias respiratorias rápidas y grande con frecuencias lentas [S5, S4]. La respiración habitual en reposo ronda {{fact:breath.adult.normal}}; al ralentizarse la respiración, la RSA crece y tiende a alcanzar su máximo en torno a {{fact:breath.resonance.typical}}, un valor que varía de una persona a otra [S4]. Encontrar tu propia frecuencia es una cuestión práctica que se trata en [encuentra tu frecuencia respiratoria de resonancia](/articles/find-your-resonance-breathing-rate).
+- **Frecuencia respiratoria.** La RSA es pequeña con frecuencias respiratorias rápidas y grande con frecuencias lentas [S5, S4]. La respiración habitual en reposo ronda {{fact:breath.adult.normal}}; al ralentizarse la respiración, la RSA crece y tiende a alcanzar su máximo con {{fact:breath.resonance.typical}}, un valor que varía de una persona a otra [S4]. Encontrar tu propia frecuencia es una cuestión práctica que se trata en [encuentra tu frecuencia respiratoria de resonancia](/articles/find-your-resonance-breathing-rate).
 - **Profundidad de la respiración.** Una respiración más amplia aumenta la RSA, sobre todo a frecuencias lentas [S4], y en un estudio clásico de laboratorio su tamaño aumentaba en proporción al volumen respiratorio [S6].
 - **Postura y estado.** La RSA es máxima durante el sueño, la relajación, la respiración lenta y profunda y al estar tumbado, y menor durante el ejercicio y la ansiedad [S4].
 - **Edad.** En promedio, {{fact:hrv.age.trend}} [S1]; la RSA forma parte de ese panorama, y un estudio clásico de laboratorio encontró una RSA de baja frecuencia menor en los participantes de más edad, pero solo hasta alrededor de la mitad de la treintena [S6]. Las personas varían mucho.

@@ -2,7 +2,7 @@
 sourceHash: "41115ae9a660"
 title: "Cómo la respiración cambia la HRV y por qué la respiración lenta la aumenta"
 metaTitle: "Respiración y HRV: por qué respirar lento la aumenta"
-metaDescription: "Por qué la variabilidad de la frecuencia cardíaca aumenta al respirar despacio: el ritmo cardíaco ligado a la respiración, el barorreflejo y la resonancia."
+metaDescription: "Por qué la HRV aumenta al respirar despacio: el ritmo cardíaco ligado a la respiración, el barorreflejo y la resonancia; lo establecido y lo debatido."
 shortAnswer: >
   La respiración cambia la variabilidad de la frecuencia cardíaca porque cada
   respiración acelera y ralentiza el corazón, y la respiración lenta hace que
@@ -25,7 +25,7 @@ evidenceMap:
   - claim: "En registros cortos en reposo, el ritmo cardíaco ligado a la respiración es la principal fuente de la variación de la frecuencia cardíaca, sobre todo con respiración lenta pautada."
     limitation: "Registros cortos en reposo; en ventanas más largas también contribuyen ritmos más lentos."
   - claim: "El ritmo cardíaco ligado a la respiración es pequeño con frecuencias respiratorias rápidas y grande con frecuencias lentas."
-    limitation: "Una relación a nivel de grupo; la frecuencia en la que alcanza su máximo varía entre personas."
+    limitation: "Una relación a nivel de grupo; la frecuencia a la que alcanza su máximo varía entre personas."
   - claim: "La variabilidad de la frecuencia cardíaca y la sensibilidad del barorreflejo alcanzan su máximo cuando la respiración se ralentiza a unas seis respiraciones por minuto, una frecuencia de resonancia que varía entre personas."
     limitation: "Datos agrupados de estudios de respiración controlada en adultos sanos; la frecuencia individual hay que evaluarla."
   - claim: "La resonancia es un proceso de amplificación: estimular un sistema de retroalimentación negativa a su frecuencia intrínseca produce oscilaciones de gran amplitud, y es una propiedad del sistema del barorreflejo."
@@ -62,7 +62,7 @@ evidenceMap:
 
 Cada respiración deja su huella en el ritmo del corazón. El corazón se acelera ligeramente al inhalar y se ralentiza al exhalar —el [ritmo cardíaco ligado a la respiración](/science/concepts/respiratory-sinus-arrhythmia)—, y en un registro corto en reposo esta es la principal fuente de la [variabilidad de la frecuencia cardíaca (HRV o VFC)](/science/concepts/heart-rate-variability), sobre todo cuando la respiración es lenta y pautada [S1]. Si cambias la respiración, la cifra de HRV cambia con ella.
 
-El tamaño del efecto depende de la frecuencia respiratoria. El ritmo ligado a la respiración es pequeño cuando se respira rápido y grande cuando se respira despacio [S3]. La respiración habitual en reposo ronda {{fact:breath.adult.normal}}; al ralentizarse, las oscilaciones de la frecuencia cardíaca crecen y alcanzan su máximo cerca de {{fact:breath.resonance.typical}}, junto con la sensibilidad del reflejo de la presión arterial [S2]. Esta página explica por qué ocurre y qué significa y qué no significa ese aumento.
+El tamaño del efecto depende de la frecuencia respiratoria. El ritmo ligado a la respiración es pequeño cuando se respira rápido y grande cuando se respira despacio [S3]. La respiración habitual en reposo ronda {{fact:breath.adult.normal}}; al ralentizarse, las oscilaciones de la frecuencia cardíaca crecen y alcanzan su máximo con {{fact:breath.resonance.typical}}, junto con la sensibilidad del reflejo de la presión arterial [S2]. Esta página explica por qué ocurre y qué significa y qué no significa ese aumento.
 
 ## ¿Cómo funciona?
 

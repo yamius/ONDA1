@@ -2,7 +2,7 @@
 sourceHash: "b8490857b5d7"
 title: "¿Funciona de verdad la estimulación del nervio vago? Qué muestra la evidencia"
 metaTitle: "Estimulación del nervio vago: qué muestra la evidencia"
-metaDescription: "La estimulación del nervio vago tiene usos médicos autorizados por la FDA y resultados de investigación dispares. Qué respalda cada nivel de evidencia y qué no."
+metaDescription: "La estimulación del nervio vago tiene usos médicos autorizados por la FDA y resultados dispares. Qué respalda cada nivel de evidencia y qué afirmaciones lo exceden."
 shortAnswer: >
   La estimulación del nervio vago no es una sola cosa. Abarca una terapia
   quirúrgica implantada, dispositivos médicos de cuello autorizados para
@@ -69,7 +69,7 @@ evidenceMap:
     limitation: "Un único estudio cruzado con un solo conjunto de parámetros; no clasifica la electricidad frente a la respiración en general."
   - claim: "Los aumentos agudos de la variabilidad de la frecuencia cardíaca de baja frecuencia y de todo el espectro, y de la ganancia vagal del barorreflejo, se correlacionaron con la respiración lenta durante los periodos de biofeedback."
     limitation: "Un único ensayo aleatorizado de entrenamiento con biofeedback de variabilidad de la frecuencia cardíaca; respalda la vía respiratoria, no los dispositivos eléctricos."
-  - claim: "La revisión del dispositivo por la FDA indica que gammaCore está indicado para el uso agudo en el dolor de la cefalea en racimos episódica en pacientes adultos."
+  - claim: "La revisión del dispositivo por la FDA establece que gammaCore está indicado para el uso agudo en el dolor de la cefalea en racimos episódica en pacientes adultos."
     limitation: "Formulación regulatoria específica de la indicación; cubre el dolor de la cefalea en racimos episódica, nada más."
   - claim: "Un estimulador externo del nervio vago para la cefalea es un dispositivo de prescripción que se aplica mediante electrodos cutáneos."
     limitation: "Una clasificación regulatoria, no una afirmación de eficacia."
@@ -92,7 +92,7 @@ evidenceMap:
   - claim: "El sistema implantado VNS Therapy coloca un generador y un cable bajo la piel del pecho, conectados al nervio vago izquierdo en el cuello."
     limitation: "Describe la terapia quirúrgica; no tiene relación con los dispositivos de mano ni de pinza auricular."
   - claim: "El sistema implantado tiene una indicación para la epilepsia como terapia complementaria de las crisis de inicio parcial refractarias a la medicación antiepiléptica."
-    limitation: "Formulación de la etiqueta de la forma implantada; la página del fabricante no indica una indicación para la depresión."
+    limitation: "Formulación de la etiqueta de la forma implantada; la página del fabricante no menciona ninguna indicación para la depresión."
 ---
 
 ## ¿Qué es la estimulación del nervio vago?
@@ -123,7 +123,7 @@ El planteamiento importa. {{fact:claim.vagalTone}} [S10]. En la práctica, los i
 
 Cuando ese indicador se puso a prueba, el resultado fue incómodo para el marketing. Un metaanálisis bayesiano vivo de estudios controlados con simulación y enmascaramiento simple en participantes sanos encontró que la estimulación auricular aguda no modifica la HRV de mediación vagal en comparación con la simulación, y concluyó que no hay respaldo para considerarla un biomarcador robusto de la estimulación aguda [S3].
 
-Un ensayo posterior de búsqueda de parámetros agudizó el problema. Ciertas combinaciones de frecuencia de estimulación y anchura de pulso aumentaron de forma aguda la HRV global, reflejada en el SDNN, mientras que la HRV de mediación vagal, reflejada en el RMSSD, no cambió [S4]. La métrica que vigila un estudio puede decidir la historia: es una de las razones por las que escribimos tanto sobre [medir la HRV de forma constante](/articles/how-to-measure-hrv-consistently), y un límite a lo que puede probar cualquier lectura aislada.
+Un ensayo posterior de búsqueda de parámetros agudizó el problema. Ciertas combinaciones de frecuencia de estimulación y anchura de pulso aumentaron de forma aguda la HRV global, reflejada en el SDNN, mientras que la HRV de mediación vagal, reflejada en el RMSSD, no cambió [S4]. La métrica que vigila un estudio puede decidir la historia: es una de las razones por las que escribimos tanto sobre [medir la HRV en condiciones comparables](/articles/how-to-measure-hrv-consistently), y un límite a lo que puede probar cualquier lectura aislada.
 
 ## ¿Qué influye en ella?
 
@@ -131,13 +131,13 @@ Un ensayo posterior de búsqueda de parámetros agudizó el problema. Ciertas co
 - **Anatomía.** La inervación de las zonas auriculares candidatas varía entre personas [S1], así que una colocación idéntica de los electrodos no garantiza una activación nerviosa idéntica.
 - **Calidad de la simulación.** Una revisión de alcance documentó la eficacia del protocolo de simulación solo en una pequeña minoría de los estudios controlados con simulación [S8]. Si las condiciones activa y de simulación no están bien separadas —algo muy posible cuando el punto de control «no vagal» sigue siendo en parte vagal en algunas personas—, tanto los hallazgos positivos como los negativos se vuelven difíciles de interpretar.
 - **Población.** Los pacientes de los ensayos clínicos no son los compradores de dispositivos de bienestar. Los efectos observados bajo supervisión clínica en pacientes diagnosticados no se trasladan automáticamente a usuarios sanos, y los estudios en voluntarios sanos no predicen automáticamente los resultados en pacientes.
-- **Contexto de medición.** Qué métrica de HRV se vigila [S4], las condiciones del registro y la condición de comparación influyen en el resultado; las precauciones generales de medición se tratan en [cómo medir la HRV de forma constante](/articles/how-to-measure-hrv-consistently).
+- **Contexto de medición.** Qué métrica de HRV se vigila [S4], las condiciones del registro y la condición de comparación influyen en el resultado; las precauciones generales de medición se tratan en [cómo medir la HRV en condiciones comparables](/articles/how-to-measure-hrv-consistently).
 
 ## ¿Qué muestra la evidencia?
 
 **La terapia implantada es un mundo aparte.** El implante quirúrgico es un dispositivo de prescripción para afecciones concretas y graves —una terapia complementaria en la epilepsia de inicio parcial resistente a los fármacos, conectada al nervio vago izquierdo bajo la piel del pecho [S13]—, con una historia clínica en la depresión grave resistente a las intervenciones descrita en revisiones [S2]. Requiere cirugía y seguimiento; nada de ello describe una pinza auricular de consumo.
 
-**El ancla regulatoria no invasiva es la medicina de la cefalea.** La revisión del dispositivo por la FDA indica que gammaCore está indicado para el uso agudo en el dolor de la cefalea en racimos episódica en pacientes adultos, y clasifica un estimulador externo del nervio vago para la cefalea como un dispositivo de prescripción que se aplica mediante electrodos cutáneos [S11]. El fabricante afirma que el dispositivo cuenta ya con varias indicaciones para cefaleas autorizadas por la FDA. Son el tratamiento agudo y preventivo de la migraña en adolescentes y adultos, el uso preventivo complementario contra la cefalea en racimos en adultos y la hemicránea continua y la hemicránea paroxística en adultos; a la vez, señala que su eficacia no se ha establecido para el tratamiento agudo de la cefalea en racimos crónica [S12]. De ello se siguen dos cosas. Un regulador se toma en serio la técnica para un criterio clínico exigente. Y las afirmaciones aceptadas eran estrictamente específicas de cada indicación: nada en una autorización para la cefalea cubre «menos estrés en consumidores sanos». Las comparaciones de dispositivos corresponden a nuestras [reseñas de estimuladores](/reviews/compare/best-vagus-nerve-stimulators-2026); esta página se queda en la evidencia.
+**El ancla regulatoria no invasiva es la medicina de la cefalea.** La revisión del dispositivo por la FDA establece que gammaCore está indicado para el uso agudo en el dolor de la cefalea en racimos episódica en pacientes adultos, y clasifica un estimulador externo del nervio vago para la cefalea como un dispositivo de prescripción que se aplica mediante electrodos cutáneos [S11]. El fabricante afirma que el dispositivo cuenta ya con varias indicaciones para cefaleas autorizadas por la FDA. Son el tratamiento agudo y preventivo de la migraña en adolescentes y adultos, el uso preventivo complementario contra la cefalea en racimos en adultos y la hemicránea continua y la hemicránea paroxística en adultos; a la vez, señala que su eficacia no se ha establecido para el tratamiento agudo de la cefalea en racimos crónica [S12]. De ello se siguen dos cosas. Un regulador se toma en serio la técnica para un criterio clínico exigente. Y las afirmaciones aceptadas eran estrictamente específicas de cada indicación: nada en una autorización para la cefalea cubre «menos estrés en consumidores sanos». Las comparaciones de dispositivos corresponden a nuestras [reseñas de estimuladores](/reviews/compare/best-vagus-nerve-stimulators-2026); esta página se queda en la evidencia.
 
 **Depresión y sueño: prometedor, inmaduro.** Para la depresión, un metaanálisis agrupó {{fact:study.tan2023.depressionTrials}} de estimulación auricular y describió mejoras en escalas de síntomas depresivos [S5]. Para el sueño, un metaanálisis describió una mejora de la calidad del sueño en pacientes con trastornos del sueño, aunque calificó sus hallazgos de preliminares [S6], y un metaanálisis independiente sobre el insomnio describió mejoras agrupadas en escalas de calidad del sueño y de gravedad del insomnio, con una calificación de baja a muy baja [S7]. Las propias cautelas de los autores —subgrupos pequeños, calidad de la evidencia de baja a muy baja, métodos heterogéneos [S5, S7]— deben mencionarse al mismo tiempo que los efectos agrupados. Es un campo de investigación prometedor, no una terapia consolidada, y nada de ello autoriza a un dispositivo de bienestar a prometer resultados sobre el ánimo o el sueño.
 

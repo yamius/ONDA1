@@ -1,14 +1,33 @@
 /**
  * ONDA Science — languages and interface strings.
  *
- * SCIENCE_LIVE_LANGS: languages whose /<lang>/science section is published. A language goes live only when
+ * SCIENCE_LIVE_LANGS: languages whose /<lang>/science section is published (from SCIENCE_ROLLOUT dates). A language goes live only when
  * every published EN page has a reviewed translation in content/science-i18n/<lang>/ (owner decision: one
  * language at a time, native-quality translations). The generator refuses to publish a live language with a
  * missing or outdated page translation.
  *
  * SCIENCE_UI: page chrome per language. Page texts themselves live in content/science-i18n/<lang>/<kind>/<slug>.md.
  */
-export const SCIENCE_LIVE_LANGS: readonly string[] = []
+/**
+ * Rollout: one language per Monday (owner decision 2026-10-05). A language is live from the first build on or after its
+ * date (UTC); every language is reviewed by native editors before its date. Same build-time gating as the article and
+ * glossary drips (scripts/prerender-routes.ts) — a pushed build after the Monday publishes it.
+ */
+export const SCIENCE_ROLLOUT: readonly { lang: string; start: string }[] = [
+  { lang: 'es', start: '2026-10-05' },
+  { lang: 'ru', start: '2026-10-12' },
+  { lang: 'uk', start: '2026-10-19' },
+  { lang: 'de', start: '2026-10-26' },
+  { lang: 'fr', start: '2026-11-02' },
+  { lang: 'it', start: '2026-11-09' },
+  { lang: 'pt', start: '2026-11-16' },
+  { lang: 'nl', start: '2026-11-23' },
+  { lang: 'pl', start: '2026-11-30' },
+  { lang: 'ja', start: '2026-12-07' },
+  { lang: 'zh', start: '2026-12-14' },
+]
+const SCIENCE_BUILD_DATE = new Date().toISOString().slice(0, 10)
+export const SCIENCE_LIVE_LANGS: readonly string[] = SCIENCE_ROLLOUT.filter((r) => r.start <= SCIENCE_BUILD_DATE).map((r) => r.lang)
 
 export type ScienceUiKind = 'concepts' | 'measurements' | 'mechanisms' | 'evidence'
 

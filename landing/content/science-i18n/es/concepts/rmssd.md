@@ -16,7 +16,7 @@ keyPoints:
   - "El tono vagal no puede medirse directamente; el RMSSD es un indicador indirecto, y los productos que afirman lo contrario simplifican."
   - "Los wearables estiman el RMSSD a partir de la señal del pulso, y su concordancia con el ECG depende del dispositivo y de las condiciones."
   - "Los valores dependen del contexto: importan el método de registro, la duración, la postura, la respiración y la hora del día."
-  - "Un solo valor de RMSSD no es un diagnóstico ni una lectura de estrés; las tendencias respecto a tu propia línea base personal suelen ser más informativas."
+  - "Un solo valor de RMSSD no es un diagnóstico ni una lectura de estrés; las tendencias respecto a tu propia línea base suelen ser más informativas."
 imageAlt: "Un fino trazo turquesa del ritmo cardíaco sobre fondo blanco, con una separación entre latidos que varía ligeramente: una imagen de la variabilidad de la frecuencia cardíaca latido a latido."
 evidenceMap:
   - claim: "El RMSSD es la raíz cuadrada media de las diferencias sucesivas entre latidos adyacentes; es la métrica preferida para registros breves."
@@ -29,7 +29,7 @@ evidenceMap:
     limitation: "El efecto está presente durante el registro; los cambios sostenidos tras la práctica son otra cuestión."
   - claim: "El RMSSD depende del contexto de medición: método de registro, duración, postura, respiración y hora del día."
     limitation: "La magnitud y la dirección de los efectos del contexto varían según la métrica, la condición y la persona; respaldado por datos agrupados de valores normales y por guías metodológicas."
-  - claim: "La mayoría de los valores de referencia publicados proceden de registros diurnos breves, mientras que los wearables de consumo informan sobre todo valores nocturnos."
+  - claim: "La mayoría de los valores de referencia publicados proceden de registros diurnos breves, mientras que los wearables de consumo informan sobre todo de valores nocturnos."
     limitation: "Las poblaciones y los protocolos de referencia difieren entre estudios; no es una norma personal."
   - claim: "El RMSSD agrupado en reposo de registros diurnos breves es un promedio diurno agrupado, no un valor nocturno ni una norma por edad."
     limitation: "Agrupado a partir de protocolos de corta duración heterogéneos en adultos sanos; gran variación individual."
@@ -43,7 +43,7 @@ evidenceMap:
     limitation: "Las respuestas individuales varían; el tamaño de los efectos depende de la persona y de la dosis y aquí no se cuantifica."
   - claim: "Un RMSSD más alto se asocia en general con una mejor recuperación, pero no siempre; algunas alteraciones del ritmo cambian el propio patrón latido a latido."
     limitation: "Asociaciones a nivel poblacional; no un veredicto personal."
-  - claim: "Las tendencias respecto a la propia línea base personal, medidas en condiciones comparables, son más informativas que una sola lectura."
+  - claim: "Las tendencias respecto a la propia línea base, medidas en condiciones comparables, son más informativas que una sola lectura."
     limitation: "Guía metodológica (consenso de expertos), no datos experimentales directos; una recomendación sobre la práctica de interpretación, no un hallazgo clínico."
   - claim: "Apple Health registra la HRV como SDNN, el tipo de dato de HealthKit de larga trayectoria que el Apple Watch registra automáticamente."
     limitation: "Documentación oficial; describe lo que registra el dispositivo, no lo que los valores significan para la salud; limitado al ecosistema de Apple."
@@ -75,7 +75,7 @@ El cálculo es sencillo. A partir de una serie de intervalos entre latidos: se t
 
 El método de referencia es el ECG, que detecta la huella eléctrica de cada latido. Los wearables, en cambio, estiman los intervalos a partir de la señal del pulso en la piel (fotopletismografía, PPG); el resultado suele llamarse variabilidad del pulso (PRV). La concordancia entre ambos depende de la métrica y de las condiciones: en general es mayor en reposo y con buena señal, y menor con movimiento o mal contacto [S6, S7]. Un detalle práctico para quienes usan Apple Watch: {{fact:applewatch.hrv.healthkit}} [S9]. En el hardware reciente, {{fact:applewatch.hrv.variants2026}} [S10]. Apple no ha explicado cómo se calcula Recovery HRV. Por otra parte, {{fact:applewatch.hrv.rmssdType}} [S11], lo que permite a las apps leer un valor de tipo RMSSD desde Apple Health.
 
-El contexto forma parte de la medición. El RMSSD depende de la postura, la respiración, la hora del día y la duración del registro [S5, S8]. La mayoría de los valores de referencia publicados se obtuvieron con registros diurnos breves en condiciones controladas [S5], mientras que los wearables de consumo informan sobre todo de promedios nocturnos: contextos distintos cuyos valores no son directamente intercambiables. Como orden de magnitud, el RMSSD agrupado en reposo de registros diurnos breves es de {{fact:hrv.pooled.daytime}} [S5], un promedio diurno agrupado, no un valor nocturno ni una norma por edad. Las tablas por grupos de edad que publica ONDA son tablas de RMSSD nocturno y están en el artículo [HRV normal por edad](/articles/normal-hrv-by-age). Para una rutina de medición personal constante, el lado práctico corresponde a la guía [cómo medir la HRV de forma constante](/articles/how-to-measure-hrv-consistently).
+El contexto forma parte de la medición. El RMSSD depende de la postura, la respiración, la hora del día y la duración del registro [S5, S8]. La mayoría de los valores de referencia publicados se obtuvieron con registros diurnos breves en condiciones controladas [S5], mientras que los wearables de consumo informan sobre todo de promedios nocturnos: contextos distintos cuyos valores no son directamente intercambiables. Como orden de magnitud, el RMSSD agrupado en reposo de registros diurnos breves es de {{fact:hrv.pooled.daytime}} [S5], un promedio diurno agrupado, no un valor nocturno ni una norma por edad. Las tablas por grupos de edad que publica ONDA son tablas de RMSSD nocturno y están en el artículo [HRV normal por edad](/articles/normal-hrv-by-age). Para una rutina de medición personal constante, el lado práctico corresponde a la guía [cómo medir la HRV en condiciones comparables](/articles/how-to-measure-hrv-consistently).
 
 ## ¿Qué influye en el RMSSD?
 
@@ -101,7 +101,7 @@ Lo que sigue sin estar claro: todavía se está estudiando hasta qué punto los 
 - No es un diagnóstico ni una lectura de estrés. {{fact:claim.hrvNotStress}} [S1].
 - Más alto no es automáticamente mejor. Un RMSSD más alto se asocia en general con una mejor recuperación, pero algunas alteraciones del ritmo cambian el propio patrón latido a latido, y en esa situación un valor alto tiene otro significado [S2].
 - Los valores no son intercambiables entre dispositivos, apps y condiciones de medición [S6, S8].
-- Un solo valor dice poco. Las guías metodológicas recomiendan comparar las lecturas con tu propia línea base personal, medida en condiciones comparables, en lugar de buscar significado en un valor aislado [S8].
+- Un solo valor dice poco. Las guías metodológicas recomiendan comparar las lecturas con tu propia línea base, medida en condiciones comparables, en lugar de buscar significado en un valor aislado [S8].
 
 ## En ONDA
 

@@ -2,7 +2,7 @@
 sourceHash: "33b9f01d78ea"
 title: "Línea base de HRV: por qué tu propia normalidad importa más que cualquier norma"
 metaTitle: "Línea base de HRV: tu normalidad, no una norma"
-metaDescription: "Tu línea base de HRV es tu propio rango habitual, no un promedio poblacional. Por qué supera a las normas por edad, cómo la construye ONDA y qué puede significar un cambio."
+metaDescription: "Tu línea base de HRV es tu propio rango habitual, no un promedio poblacional: por qué supera a las normas por edad y cómo la construye ONDA."
 shortAnswer: >
   Una línea base personal de HRV es tu nivel habitual de variabilidad de la
   frecuencia cardíaca y su dispersión normal, construidos a partir de muchas
@@ -66,7 +66,7 @@ evidenceMap:
 
 Una línea base personal de HRV es tu nivel habitual de [variabilidad de la frecuencia cardíaca](/glossary/heart-rate-variability) (HRV o VFC) —el promedio en torno al cual se asientan tus propias lecturas— junto con la dispersión natural alrededor de ese promedio. Se construye a partir de muchas lecturas tomadas en condiciones comparables, nunca de una sola. Una línea base responde a una única pregunta: qué es normal *para ti*, de modo que cada nueva lectura pueda compararse con tu propio corredor y no con el número de un desconocido.
 
-El contraste con las tablas poblacionales es justo la clave. Una revisión sistemática de los valores normales publicados concluyó que actualmente no hay datos normativos consensuados para la HRV a corto plazo, y describió grandes variaciones entre estudios y entre personas [S3]. La edad apenas estrecha el panorama: en promedio, {{fact:hrv.age.trend}} [S2], y entre personas varía mucho a cualquier edad. Las tablas por edad que publica ONDA responden a «dónde se sitúan las personas de mi edad», nunca a «cuál debería ser mi número»; están en el artículo [HRV normal por edad](/articles/normal-hrv-by-age) y en la herramienta [calculadora de HRV](/tools/hrv).
+El contraste con las tablas poblacionales es justo la clave. Una revisión sistemática de los valores normales publicados concluyó que actualmente no hay datos normativos consensuados para la HRV a corto plazo, y describió grandes variaciones entre estudios y entre personas [S3]. La edad apenas estrecha el panorama: {{fact:hrv.age.trend}} [S2], y entre personas varía mucho a cualquier edad. Las tablas por edad que publica ONDA responden a «dónde se sitúan las personas de mi edad», nunca a «cuál debería ser mi número»; están en el artículo [HRV normal por edad](/articles/normal-hrv-by-age) y en la herramienta [calculadora de HRV](/tools/hrv).
 
 ## ¿Cómo funciona?
 
@@ -76,7 +76,7 @@ El ruido y el cambio se ven distintos. Una lectura fuera del corredor suele ser 
 
 ## ¿Cómo se mide?
 
-Lo que alimenta una línea base importa tanto como la aritmética. Las lecturas deben proceder del mismo dispositivo, la misma métrica y condiciones comparables; la rutina práctica para conseguirlo se describe en [cómo medir la HRV de forma constante](/articles/how-to-measure-hrv-consistently). El contexto de medición forma parte de los datos: la señal de entrada, la duración del registro, el entorno, la respiración y el método de análisis moldean el valor, y por eso los valores de distintos dispositivos, métricas o condiciones no son intercambiables [S6, S7].
+Lo que alimenta una línea base importa tanto como la aritmética. Las lecturas deben proceder del mismo dispositivo, la misma métrica y condiciones comparables; la rutina práctica para conseguirlo se describe en [cómo medir la HRV en condiciones comparables](/articles/how-to-measure-hrv-consistently). El contexto de medición forma parte de los datos: la señal de entrada, la duración del registro, el entorno, la respiración y el método de análisis moldean el valor, y por eso los valores de distintos dispositivos, métricas o condiciones no son intercambiables [S6, S7].
 
 La métrica debe mantenerse fija. RMSSD y SDNN resumen aspectos distintos del ritmo cardíaco —consulta las páginas de concepto de [RMSSD](/science/concepts/rmssd) y [SDNN](/science/concepts/sdnn)—, así que un corredor construido con una métrica no se traslada a la otra [S5]. La duración del registro también importa: los registros más largos se asocian con valores mayores, así que no se pueden comparar directamente lecturas de registros de distinta duración [S5]. Los wearables pueden ganarse su lugar en una línea base: en condiciones controladas de reposo, se ha demostrado que la PPG de muñeca proporciona índices de HRV fiables en comparación con la HRV derivada del ECG [S8], pero las estimaciones agrupadas no deben generalizarse más allá de las condiciones en que se midieron [S7].
 

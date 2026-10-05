@@ -2,7 +2,7 @@
 sourceHash: "c7c0e6f927d5"
 title: "Biofeedback de HRV: qué muestra la evidencia"
 metaTitle: "Biofeedback de HRV: qué muestra la evidencia"
-metaDescription: "Qué muestra la investigación sobre el biofeedback de HRV —estrés, ánimo, presión arterial, sueño, rendimiento— y cuánto aporta la señal frente a respirar lento."
+metaDescription: "Qué muestra la investigación sobre el biofeedback de HRV —estrés, ánimo, presión arterial, sueño, rendimiento— y cuánto aporta la retroalimentación más allá de respirar lento."
 shortAnswer: >
   El biofeedback de HRV es un entrenamiento en respiración lenta, por lo general
   cerca de la frecuencia de resonancia de cada persona, mientras se observa el
@@ -50,8 +50,8 @@ evidenceMap:
   - claim: "En los programas a distancia, maximizar la resonancia y disponer de una pantalla en el dispositivo figuraban entre las características asociadas con una mayor eficacia."
     limitation: "Metarregresión entre estudios; asociaciones entre características de los estudios y resultados, no pruebas de esas características."
   - claim: "En pacientes con enfermedad cardiovascular, un metaanálisis de ensayos controlados aleatorizados encontró descensos modestos de la presión arterial sistólica y diastólica."
-    limitation: "Solo pacientes con enfermedad cardiovascular; la mayoría de los ensayos incluidos tenían algunas dudas o un riesgo de sesgo alto."
-  - claim: "En el metaanálisis cardiovascular, la depresión y la ansiedad no mostraron una mejora significativa, y la mayoría de los estudios se calificaron con algunas dudas o riesgo de sesgo alto."
+    limitation: "Solo pacientes con enfermedad cardiovascular; la mayoría de los ensayos incluidos presentaban algunas dudas o un riesgo de sesgo alto."
+  - claim: "En el metaanálisis cardiovascular, la depresión y la ansiedad no mostraron una mejora significativa, y la mayoría de los estudios se calificaron con algunas dudas o un riesgo de sesgo alto."
     limitation: "Pocos ensayos por resultado psicológico en esta población."
   - claim: "Una revisión sistemática del biofeedback de HRV en el deporte incluyó solo unos pocos estudios, todos con muestras pequeñas."
     limitation: "Diseños experimentales, cuasiexperimentales y de casos clínicos; sin tamaño del efecto agrupado."
@@ -91,7 +91,7 @@ La biorretroalimentación (biofeedback) de la variabilidad de la frecuencia card
 
 El protocolo clásico tiene tres partes:
 
-- **Encontrar la frecuencia de resonancia.** Un profesional compara varias frecuencias respiratorias lentas y elige la que produce las mayores oscilaciones de la frecuencia cardíaca [S2]; en la mayoría de los adultos está cerca de {{fact:breath.resonance.typical}}.
+- **Encontrar la frecuencia de resonancia.** Un profesional compara varias frecuencias respiratorias lentas y elige la que produce las mayores oscilaciones de la frecuencia cardíaca [S2]; en la mayoría de los adultos es de {{fact:breath.resonance.typical}}.
 - **Respirar con retroalimentación.** En las sesiones, la persona respira a esa frecuencia mientras un sensor y una pantalla muestran el ritmo cardíaco, de modo que puede ver lo que está haciendo la respiración.
 - **Practicar durante semanas.** Los programas suelen combinar una serie de sesiones con práctica diaria en casa; en los ensayos agrupados, el número de sesiones y de semanas no cambió claramente el tamaño del efecto [S3].
 
@@ -129,7 +129,7 @@ La condición de comparación importa tanto como la medida. Los tamaños del efe
 
 **Síntomas depresivos: depende del contexto.** Un metaanálisis que incluyó {{fact:study.pizzoli2021.trials}}, todos en adultos, encontró un efecto medio de tamaño moderado, con heterogeneidad moderada y un intervalo de predicción que cruza el cero [S5]. Los programas a distancia también mostraron un efecto medio sobre la depresión [S6]. En pacientes con enfermedad cardiovascular, en cambio, la depresión y la ansiedad no mejoraron de forma significativa [S7].
 
-**Presión arterial: emergente.** En pacientes con enfermedad cardiovascular, un metaanálisis que incluyó {{fact:study.kaneko2026.trials}} encontró descensos modestos de la presión arterial sistólica y diastólica, con la mayoría de los ensayos con algunas dudas o un riesgo de sesgo alto [S7]. Los aspectos prácticos están en [respiración lenta y presión arterial alta](/articles/high-blood-pressure-slow-breathing).
+**Presión arterial: emergente.** En pacientes con enfermedad cardiovascular, un metaanálisis que incluyó {{fact:study.kaneko2026.trials}} encontró descensos modestos de la presión arterial sistólica y diastólica, aunque la mayoría de los ensayos presentaban algunas dudas o un riesgo de sesgo alto [S7]. Los aspectos prácticos están en [respiración lenta y presión arterial alta](/articles/high-blood-pressure-slow-breathing).
 
 **Sueño: emergente, pequeño.** El sueño figura entre los resultados con efectos más pequeños en el metaanálisis amplio [S3], y los hallazgos positivos sobre el sueño en estudios de enfermedades crónicas proceden de una revisión narrativa sin estimaciones agrupadas [S10]. No se encontró ningún metaanálisis dedicado al sueño.
 
@@ -163,6 +163,6 @@ La lectura más defendible hoy: probablemente la respiración lenta hace gran pa
 
 ## En ONDA
 
-ONDA es una app de respiración guiada con retroalimentación del ritmo cardíaco en tiempo real. Durante la práctica, la cámara del iPhone muestra el pulso en directo y una estimación de la frecuencia respiratoria, y un Apple Watch añade una puntuación de coherencia en directo: la medida propia de ONDA de lo suave y rítmica que es la oscilación del ritmo cardíaco, no una medición clínica de la variabilidad de la frecuencia cardíaca. La guía es hablada y visual, no un marcador de ritmo numérico fijo, así que ONDA no es el protocolo de laboratorio probado en los estudios anteriores. ONDA no tiene ningún estudio propio de eficacia, y los hallazgos de esta página no muestran lo que ONDA consigue o no consigue. ONDA no diagnostica ni trata ninguna afección. Consulta [biofeedback de HRV con Apple Watch](/apple-watch-hrv-biofeedback) y [qué mide ONDA](/measurements).
+ONDA es una app de respiración guiada con retroalimentación del ritmo cardíaco en tiempo real. Durante la práctica, la cámara del iPhone muestra el pulso en directo y una estimación de la frecuencia respiratoria, y un Apple Watch añade una puntuación de coherencia en directo: la medida propia de ONDA de lo suave y rítmica que es la oscilación del ritmo cardíaco, no una medición clínica de la variabilidad de la frecuencia cardíaca. La guía es hablada y visual, no una pauta respiratoria numérica fija, así que ONDA no es el protocolo de laboratorio probado en los estudios anteriores. ONDA no tiene ningún estudio propio de eficacia, y los hallazgos de esta página no muestran lo que ONDA consigue o no consigue. ONDA no diagnostica ni trata ninguna afección. Consulta [biofeedback de HRV con Apple Watch](/apple-watch-hrv-biofeedback) y [qué mide ONDA](/measurements).
 
 > Información educativa, no un diagnóstico ni un tratamiento médico.
