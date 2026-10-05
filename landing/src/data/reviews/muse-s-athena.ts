@@ -65,7 +65,7 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
 `,
   references: [
     { label: 'Muse S Athena — official product page', url: 'https://choosemuse.com/products/muse-s-athena' },
-    { label: 'Muse EEG headband — independent signal-quality validation (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2020.00109/full' },
+    { label: 'Krigolson et al. 2017 — Choosing MUSE: validation of a low-cost, portable EEG system for ERP research (Front Neurosci)', url: 'https://doi.org/10.3389/fnins.2017.00109' },
   ],
   relatedSlugs: ['muse-2', 'neurosity-crown', 'mendi'],
   faq: [

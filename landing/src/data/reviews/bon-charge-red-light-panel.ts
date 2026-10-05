@@ -64,7 +64,6 @@ The photobiomodulation mechanism behind why red light therapy works.
 `,
   references: [
     { label: 'Bon Charge Red Light Therapy Panel — official', url: 'https://boncharge.com/products/red-light-therapy-device' },
-    { label: 'Photobiomodulation in chronic conditions (Lasers in Surgery and Medicine)', url: 'https://onlinelibrary.wiley.com/journal/10969101' },
   ],
   relatedSlugs: ['biolight-pro-900', 'platinumled-biomax-600', 'hooga-hg500'],
   faq: [

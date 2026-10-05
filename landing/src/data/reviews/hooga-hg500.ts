@@ -64,7 +64,7 @@ The photobiomodulation mechanism behind why red light therapy works.
 `,
   references: [
     { label: 'Hooga HG500 — official product page', url: 'https://hoogahealth.com/products/hooga-500w-red-and-near-infrared-light-therapy-panel' },
-    { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
+    { label: "Hamblin 2019 — Photobiomodulation for Alzheimer's disease: has the light dawned? (Photonics)", url: 'https://doi.org/10.3390/photonics6030077' },
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'biolight-pro-900', 'infraredi-pro-1500'],
   faq: [

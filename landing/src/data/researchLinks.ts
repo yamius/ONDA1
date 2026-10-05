@@ -10,10 +10,10 @@
  * open the PubMed entry and confirm the title matches the label first.
  */
 export const RESEARCH = {
-  diaphragmHrv: 'https://pubmed.ncbi.nlm.nih.gov/19463818/', // Thayer & Lane — HRV & neurovisceral integration
-  breathingHrv: 'https://pubmed.ncbi.nlm.nih.gov/19246382/', // Lehrer/Gevirtz — resonance breathing & HRV
+  diaphragmHrv: 'https://pubmed.ncbi.nlm.nih.gov/19424767/', // Thayer, Hansen et al. 2009 Ann Behav Med — HRV & neurovisceral integration
+  breathingHrv: 'https://pubmed.ncbi.nlm.nih.gov/25101026/', // Lehrer & Gevirtz 2014 Front Psychol — resonance breathing & HRV
   vagalTone: 'https://pubmed.ncbi.nlm.nih.gov/17049418/', // Porges — polyvagal theory / vagal tone
   porgesPolyvagal: 'https://pubmed.ncbi.nlm.nih.gov/17049418/', // Porges — polyvagal theory
-  interoception: 'https://pubmed.ncbi.nlm.nih.gov/12030437/', // Craig — interoception & the insular cortex
-  hrv: 'https://pubmed.ncbi.nlm.nih.gov/19463818/', // Thayer & Lane — HRV
+  interoception: 'https://pubmed.ncbi.nlm.nih.gov/12154366/', // Craig 2002 Nat Rev Neurosci — interoception & the insular cortex
+  hrv: 'https://pubmed.ncbi.nlm.nih.gov/19424767/', // Thayer, Hansen et al. 2009 Ann Behav Med — HRV
 } as const

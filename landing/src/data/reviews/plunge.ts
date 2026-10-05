@@ -58,12 +58,11 @@ Choose The Plunge All-In if cold plunge is a serious daily practice and you want
 
 The biology of why cold exposure works — and the protocols that compound with the hardware.
 
-- [Vagus nerve exercises](/articles/vagus-nerve-exercises) — why cold-water immersion is one of the strongest non-electrical vagal activators
+- [Vagus nerve exercises](/articles/vagus-nerve-exercises) — how cold-water face immersion triggers the vagal diving reflex
 - [HPA-axis control and cortisol regulation](/articles/hpa-axis-control-cortisol-aggression) — how cold exposure shapes the cortisol curve
 - [Adrenal governor and thermal runaway](/articles/adrenal-governor-thermal-runaway) — the thermoregulatory side of the stress response`,
   references: [
     { label: 'The Plunge — official product page', url: 'https://theplunge.com/' },
-    { label: 'Cold-water immersion and vagal tone (Frontiers in Physiology)', url: 'https://www.frontiersin.org/journals/physiology/articles/10.3389/fphys.2022.876283/full' },
   ],
   relatedSlugs: ['inergize-cold-tub', 'edge-tub', 'coldture', 'morozko-forge'],
   faq: [

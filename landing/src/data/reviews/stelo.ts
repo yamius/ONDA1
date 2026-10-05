@@ -64,7 +64,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   references: [
     { label: 'Stelo — official site', url: 'https://www.stelo.com/' },
     { label: 'FDA — Stelo OTC CGM authorisation summary', url: 'https://www.fda.gov/news-events/press-announcements/fda-clears-first-over-counter-continuous-glucose-monitor' },
-    { label: 'Dexcom G7 accuracy validation (Diabetes Technology & Therapeutics)', url: 'https://www.liebertpub.com/doi/10.1089/dia.2023.0218' },
+    { label: 'Garg et al. 2022 — Accuracy and safety of Dexcom G7 continuous glucose monitoring in adults with diabetes (Diabetes Technol Ther)', url: 'https://doi.org/10.1089/dia.2022.0011' },
   ],
   relatedSlugs: ['ultrahuman-m1', 'levels', 'lingo', 'signos'],
   faq: [

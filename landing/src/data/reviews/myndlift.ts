@@ -9,7 +9,7 @@ const myndlift: ToolReview = {
   description:
     'ONDA review of Myndlift — the clinically-prescribed remote neurofeedback platform that lets licensed providers run real EEG neurofeedback at home. Scored on signal, programmes and value.',
   verdict:
-    'The most clinically-credible neurofeedback platform — gated by a licensed provider, with real protocols and real outcomes.',
+    'The most clinically-credible neurofeedback platform — gated by a licensed provider, with real protocols and outcome tracking.',
   summary:
     'Myndlift is not a consumer headset — it is a clinical neurofeedback platform a licensed mental-health provider prescribes and supervises remotely. The headset (typically the Muse 2 hardware or, with the channel extender, multi-site EEG) runs clinician-designed protocols for ADHD, anxiety, sleep and trauma; the data flows back to the provider, who adjusts the programme. The reference clinical neurofeedback offering in the consumer-adjacent space — included as the medical benchmark for what real neurofeedback looks like.',
   overallScore: 7.0,
@@ -43,7 +43,7 @@ const myndlift: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Myndlift is the clinical reference for what neurofeedback can be when an actual clinician designs the protocol and adjusts it week by week. The patient wears a Muse 2 headband (or the multi-site channel extender for richer EEG), runs sessions at home, and the data flows back to the licensed supervising provider — who tunes the protocol, tracks symptom scales (ASRS for ADHD, GAD-7 for anxiety) and reports outcomes. It is the only platform in this category whose pedigree rests on supervised clinical use rather than consumer self-direction.
+Myndlift is the clinical reference for what neurofeedback can be when an actual clinician designs the protocol and adjusts it week by week. The patient wears a Muse 2 headband (or the multi-site channel extender for richer EEG), runs sessions at home, and the data flows back to the licensed supervising provider — who tunes the protocol and tracks symptom scales (ASRS for ADHD, GAD-7 for anxiety). Myndlift states that its programmes improve those symptoms; independent trials of this specific platform are not yet published, and a meta-analysis of neurofeedback trials for ADHD found benefits on symptom ratings by unblinded assessors, usually parents, but not on probably-blinded ratings (Cortese 2016). It is the only platform in this category whose pedigree rests on supervised clinical use rather than consumer self-direction.
 
 ## What are the downsides of Myndlift?
 
@@ -65,7 +65,7 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
 `,
   references: [
     { label: 'Myndlift — official site', url: 'https://www.myndlift.com/' },
-    { label: 'Remote neurofeedback for ADHD — clinical evidence (Frontiers in Human Neuroscience)', url: 'https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2019.00091/full' },
+    { label: 'Cortese et al. 2016 — Neurofeedback for attention-deficit/hyperactivity disorder: meta-analysis of clinical and neuropsychological outcomes from randomized controlled trials (J Am Acad Child Adolesc Psychiatry)', url: 'https://doi.org/10.1016/j.jaac.2016.03.007' },
   ],
   relatedSlugs: ['muse-2', 'flow-neuroscience', 'sens-ai'],
   faq: [

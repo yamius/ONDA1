@@ -65,7 +65,6 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
 `,
   references: [
     { label: 'Mendi — official product page', url: 'https://www.mendi.io/' },
-    { label: 'fNIRS neurofeedback — clinical review (NeuroImage)', url: 'https://www.sciencedirect.com/science/article/pii/S1053811919309668' },
   ],
   relatedSlugs: ['muse-s-athena', 'focuscalm', 'sens-ai'],
   faq: [

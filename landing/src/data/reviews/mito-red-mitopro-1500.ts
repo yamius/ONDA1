@@ -64,7 +64,6 @@ The photobiomodulation mechanism behind why red light therapy works.
 `,
   references: [
     { label: 'Mito Red MitoPRO X series (1500X) — official product page', url: 'https://mitoredlight.com/products/mitopro-x-series' },
-    { label: 'Photobiomodulation in chronic conditions — review (Lasers in Surgery and Medicine)', url: 'https://onlinelibrary.wiley.com/journal/10969101' },
   ],
   relatedSlugs: ['joovv-solo-3', 'platinumled-biomax-600', 'hooga-hg500'],
   faq: [

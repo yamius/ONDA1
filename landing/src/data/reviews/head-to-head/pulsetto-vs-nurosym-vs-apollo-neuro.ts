@@ -36,7 +36,7 @@ const pulsettoVsNurosymVsApollo: HeadToHead = {
     },
     {
       q: 'Are these all really vagus nerve stimulators?',
-      a: 'Pulsetto and Nurosym are electrical tVNS — direct electrical stimulation of the cervical (Pulsetto) or auricular (Nurosym) vagal branches. Apollo Neuro is not strictly tVNS — it uses vibration on the skin, an indirect and proposed route. All three produce measurable HRV shifts in published research, but the mechanism differs.',
+      a: 'Pulsetto and Nurosym are electrical tVNS — direct electrical stimulation of the cervical (Pulsetto) or auricular (Nurosym) vagal branches. Apollo Neuro is not strictly tVNS — it uses vibration on the skin, an indirect and proposed route. Individual studies report HRV shifts for each, but a sham-controlled meta-analysis of ear tVNS (Wolf 2021) found no reliable effect on vagally mediated HRV, so treat HRV gains from any of them as unproven.',
     },
     {
       q: 'Can I combine two or three of these?',

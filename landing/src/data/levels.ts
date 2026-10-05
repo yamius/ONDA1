@@ -144,9 +144,9 @@ export const levelsData: Record<number, LevelData> = {
       ],
     },
     researchLinks: [
-      { label: 'Interoception & Insular Cortex Study', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
+      { label: 'Craig 2002 — How do you feel? Interoception: the sense of the physiological condition of the body (Nat Rev Neurosci)', url: 'https://pubmed.ncbi.nlm.nih.gov/12154366/' },
       { label: 'Polyvagal Theory: Neurophysiological Foundations', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'HRV and Rhythmic Coherence in Locomotion', url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/' },
+      { label: 'Thayer et al. 2009 — HRV, prefrontal neural function, and cognitive performance (Ann Behav Med)', url: 'https://pubmed.ncbi.nlm.nih.gov/19424767/' },
     ],
     glossaryLinks: [
       { label: 'Biocomputer', slug: 'biocomputer' },
@@ -554,7 +554,7 @@ export const levelsData: Record<number, LevelData> = {
       ],
     },
     researchLinks: [
-      { label: 'Interoception & Insula', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
+      { label: 'Craig 2002 — How do you feel? Interoception: the sense of the physiological condition of the body (Nat Rev Neurosci)', url: 'https://pubmed.ncbi.nlm.nih.gov/12154366/' },
     ],
     glossaryLinks: [
       { label: 'Interoception', slug: 'interoception' },
@@ -750,7 +750,7 @@ export const levelsData: Record<number, LevelData> = {
     },
     researchLinks: [
       { label: 'Polyvagal theory & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
-      { label: 'Resonance breathing & HRV biofeedback', url: 'https://pubmed.ncbi.nlm.nih.gov/19246382/' },
+      { label: 'Lehrer & Gevirtz 2014 — Heart rate variability biofeedback: how and why does it work? (Front Psychol)', url: 'https://pubmed.ncbi.nlm.nih.gov/25101026/' },
     ],
     glossaryLinks: [
       { label: 'Autophagy', slug: 'autophagy' },

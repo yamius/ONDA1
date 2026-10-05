@@ -76,9 +76,9 @@ export const EVIDENCE_REFERENCES: EvidenceReference[] = [
       'Heart rate variability, prefrontal neural function, and cognitive performance: the neurovisceral integration perspective on self-regulation, adaptation, and health',
     journal: 'Annals of Behavioral Medicine',
     studyType: 'Review / theoretical',
-    pmid: '19463818',
+    pmid: '19424767',
     doi: '10.1007/s12160-009-9101-z',
-    url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/',
+    url: 'https://pubmed.ncbi.nlm.nih.gov/19424767/',
   },
   {
     id: 'R3',

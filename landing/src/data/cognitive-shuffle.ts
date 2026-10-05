@@ -53,25 +53,17 @@ export function pickShuffleWord(exclude?: string): string {
 
 export const SHUFFLE_SOURCES: ScienceSource[] = [
   {
-    authors: 'Beaudoin LP',
-    year: 2014,
-    title: 'A design-based approach to sleep-onset and insomnia: super-somnolent mentation, the cognitive shuffle and serial diverse imagining',
-    journal: 'Proceedings of the 36th Annual Conference of the Cognitive Science Society',
-    contributes: 'Origin of the cognitive shuffle / serial diverse imagining technique and its sleep-onset rationale.',
-    url: 'https://www.researchgate.net/publication/267337398',
-  },
-  {
-    authors: 'Digdon N, Beaudoin LP',
-    year: 2016,
-    title: 'Serial diverse imagining task: a new remedy for bedtime complaints of worrying and other sleep-disruptive mental activity',
-    journal: 'SLEEP 2016 (AASM & Sleep Research Society annual meeting), Denver, CO',
-    contributes: 'Randomised study (n=154 students) showing improved sleep quality, sleep-onset difficulty and pre-sleep arousal.',
-    url: 'https://www.researchgate.net/publication/300004607',
+    authors: 'Beaudoin LP, Lemyre A, Pudlo M, Bastien C',
+    year: 2019,
+    title: 'Towards an integrative design-oriented theory of sleep-onset and insomnolence from which a new cognitive treatment for insomnolence (serial diverse kinesthetic imagining, a form of cognitive shuffling) is proposed for experimentally testing this against alternatives',
+    journal: 'Sleep Medicine 64 (Suppl 1): S29 (conference abstract)',
+    contributes: 'Theory behind the cognitive shuffle / serial diverse imagining and its sleep-onset rationale, from the technique’s originator. A proposal for testing, not a trial result.',
+    url: 'https://doi.org/10.1016/j.sleep.2019.11.081',
   },
 ]
 
 export const SHUFFLE_METHODOLOGY =
-  'Cognitive shuffling — formally "serial diverse imagining" — was developed by cognitive scientist Luc Beaudoin (Simon Fraser University). The idea: deliberately imagining a stream of random, unrelated, concrete objects mimics the loose imagery the brain drifts through just before sleep, and blocks the coherent worry-loops and planning that keep cognitive arousal high. A randomised study by Digdon & Beaudoin (n=154) found the task improved sleep quality, time to fall asleep and pre-sleep arousal. Evidence is still early (small, mostly-student samples, conference-reported), but the technique is free, drug-free and very low-risk. This player presents one neutral word every few seconds; picture each one briefly, without forcing it, and let your attention wander. It is a sleep aid, not a treatment for clinical insomnia — see a clinician if sleep problems persist.'
+  'Cognitive shuffling — formally "serial diverse imagining" — was developed by cognitive scientist Luc Beaudoin (Simon Fraser University). The idea: deliberately imagining a stream of random, unrelated, concrete objects mimics the loose imagery the brain drifts through just before sleep, and blocks the coherent worry-loops and planning that keep cognitive arousal high. Evidence is still early: the student studies of the technique were reported at conferences, and we could not find them in a peer-reviewed journal, so treat it as a plausible, untested-at-scale idea rather than a proven treatment. It is free, drug-free and very low-risk. This player presents one neutral word every few seconds; picture each one briefly, without forcing it, and let your attention wander. It is a sleep aid, not a treatment for clinical insomnia — see a clinician if sleep problems persist.'
 
 export const SHUFFLE_FAQ: Array<{ q: string; a: string }> = [
   {
@@ -80,7 +72,7 @@ export const SHUFFLE_FAQ: Array<{ q: string; a: string }> = [
   },
   {
     q: 'Does cognitive shuffling actually work?',
-    a: 'There is promising early evidence. A randomised study by Digdon & Beaudoin (154 students) found the technique improved sleep quality, difficulty falling asleep and pre-sleep arousal, with benefits lasting across a semester. It is not a cure for clinical insomnia and the research base is still small, but it is free, drug-free and very low-risk to try.',
+    a: 'It is not proven yet. The idea has a clear rationale, and the originator’s student studies were reported at conferences, but we could not find them published in a peer-reviewed journal, so there is no solid trial evidence either way. It is not a cure for clinical insomnia, but it is free, drug-free and very low-risk to try.',
   },
   {
     q: 'How do I use this tool?',
@@ -92,6 +84,6 @@ export const SHUFFLE_FAQ: Array<{ q: string; a: string }> = [
   },
   {
     q: 'Where does this technique come from?',
-    a: 'It was developed by cognitive scientist Luc Beaudoin at Simon Fraser University, who described "serial diverse imagining" and the "cognitive shuffle" (Beaudoin 2014) and studied it with Nancy Digdon (2016). Full citations are in the Sources section on this page.',
+    a: 'It was developed by cognitive scientist Luc Beaudoin at Simon Fraser University, who described "serial diverse imagining" and the "cognitive shuffle" in conference papers from 2014 onwards. The citation is in the Sources section on this page.',
   },
 ]

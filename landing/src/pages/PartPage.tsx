@@ -132,8 +132,8 @@ export const parts: Record<string, {
       { label: 'Molecular Psychology', slug: 'molecular-psychology' },
     ],
     researchLinks: [
-      { label: 'Diaphragmatic breathing & HRV', url: 'https://pubmed.ncbi.nlm.nih.gov/19246382/' },
-      { label: 'HRV & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/' },
+      { label: 'Lehrer & Gevirtz 2014 — HRV biofeedback: how and why does it work? (Front Psychol)', url: 'https://pubmed.ncbi.nlm.nih.gov/25101026/' },
+      { label: 'Thayer et al. 2009 — HRV, prefrontal neural function, and cognitive performance (Ann Behav Med)', url: 'https://pubmed.ncbi.nlm.nih.gov/19424767/' },
       { label: 'Polyvagal Theory', url: 'https://pubmed.ncbi.nlm.nih.gov/17049418/' },
     ],
   },
@@ -205,8 +205,8 @@ export const parts: Record<string, {
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
     researchLinks: [
-      { label: 'HRV & rhythmic coherence', url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/' },
-      { label: 'Resonance breathing', url: 'https://pubmed.ncbi.nlm.nih.gov/19246382/' },
+      { label: 'Thayer et al. 2009 — HRV, prefrontal neural function, and cognitive performance (Ann Behav Med)', url: 'https://pubmed.ncbi.nlm.nih.gov/19424767/' },
+      { label: 'Lehrer & Gevirtz 2014 — HRV biofeedback: how and why does it work? (Front Psychol)', url: 'https://pubmed.ncbi.nlm.nih.gov/25101026/' },
     ],
   },
   'i-adapt': {
@@ -283,8 +283,8 @@ export const parts: Record<string, {
       { label: 'Psycho-Neural Network', slug: 'psycho-neural-network' },
     ],
     researchLinks: [
-      { label: 'Interoception & insula', url: 'https://pubmed.ncbi.nlm.nih.gov/12030437/' },
-      { label: 'HRV & vagal tone', url: 'https://pubmed.ncbi.nlm.nih.gov/19463818/' },
+      { label: 'Craig 2002 — How do you feel? Interoception (Nat Rev Neurosci)', url: 'https://pubmed.ncbi.nlm.nih.gov/12154366/' },
+      { label: 'Thayer et al. 2009 — HRV, prefrontal neural function, and cognitive performance (Ann Behav Med)', url: 'https://pubmed.ncbi.nlm.nih.gov/19424767/' },
     ],
   },
   'i-maneuver': {

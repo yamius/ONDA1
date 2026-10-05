@@ -64,7 +64,7 @@ The photobiomodulation mechanism behind why red light therapy works.
 `,
   references: [
     { label: 'Joovv Solo 3.0 — official product page', url: 'https://joovv.com/products/joovv-solo-3-0' },
-    { label: 'Photobiomodulation therapy — clinical evidence review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
+    { label: "Hamblin 2019 — Photobiomodulation for Alzheimer's disease: has the light dawned? (Photonics)", url: 'https://doi.org/10.3390/photonics6030077' },
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'platinumled-biomax-600', 'gembared-vesta'],
   faq: [

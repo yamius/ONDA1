@@ -64,7 +64,7 @@ The photobiomodulation mechanism behind why red light therapy works.
 `,
   references: [
     { label: 'Infraredi Pro Max 2.0 (current Pro 1500 equivalent) — official product page', url: 'https://www.infraredi.com/products/infraredi-pro-max' },
-    { label: 'Photobiomodulation therapy clinical review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
+    { label: "Hamblin 2019 — Photobiomodulation for Alzheimer's disease: has the light dawned? (Photonics)", url: 'https://doi.org/10.3390/photonics6030077' },
   ],
   relatedSlugs: ['mito-red-mitopro-1500', 'hooga-hg500', 'biolight-pro-900'],
   faq: [

@@ -42,7 +42,7 @@ const nurosym: ToolReview = {
   linkType: 'official',
   content: `## Where it leads
 
-Nurosym wins this comparison on the criterion that matters most for medical devices: evidence. The underlying Parasym hardware has been the experimental platform for dozens of published trials of transcutaneous auricular VNS — stimulating the [vagus nerve](/glossary/vagus-nerve) to shift autonomic balance toward the [parasympathetic](/glossary/parasympathetic-nervous-system) branch, with measured [HRV](/glossary/heart-rate-variability) modulation, inflammatory-marker reduction and long-COVID symptom studies — which no other consumer tVNS device can claim. The parameters are documented (25 Hz pulse, 200–1000 µs pulse width, intensity user-titrated), so a clinician or self-experimenter can describe exactly what dose is being delivered.
+Nurosym wins this comparison on the criterion that matters most for medical devices: evidence. The underlying Parasym hardware has been the experimental platform for dozens of published trials of transcutaneous auricular VNS — stimulating the [vagus nerve](/glossary/vagus-nerve), including studies of [HRV](/glossary/heart-rate-variability), inflammatory markers and long-COVID symptoms — a research record no other consumer tVNS device can claim. Being studied is not the same as being proven, though: a living meta-analysis of 16 sham-controlled studies in healthy people (Wolf 2021, *Psychophysiology*) found no reliable effect of ear tVNS on vagally mediated HRV, so do not buy it expecting your HRV to rise. The parameters are documented (25 Hz pulse, 200–1000 µs pulse width, intensity user-titrated), so a clinician or self-experimenter can describe exactly what dose is being delivered.
 
 ## What are the downsides of Nurosym?
 
@@ -65,7 +65,7 @@ The biology behind what these devices target — and the protocols that compound
   references: [
     { label: 'Nurosym — official product page', url: 'https://nurosym.com/' },
     { label: 'Transcutaneous auricular VNS — clinical evidence review (Frontiers in Neuroscience)', url: 'https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2019.00854/full' },
-    { label: 'taVNS modulates HRV in healthy participants (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8088823/' },
+    { label: 'Wolf et al. 2021 — Does transcutaneous auricular vagus nerve stimulation affect vagally mediated heart rate variability? A living Bayesian meta-analysis (Psychophysiology)', url: 'https://doi.org/10.1111/psyp.13933' },
   ],
   relatedSlugs: ['gammacore-sapphire-cv', 'pulsetto', 'truvaga-350'],
   faq: [

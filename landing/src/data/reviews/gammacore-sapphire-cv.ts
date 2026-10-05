@@ -65,7 +65,7 @@ The biology behind what these devices target — and the protocols that compound
   references: [
     { label: 'gammaCore — official product page', url: 'https://www.gammacore.com/' },
     { label: 'FDA 510(k) clearance — non-invasive vagus nerve stimulator for migraine', url: 'https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K173442' },
-    { label: 'nVNS for cluster headache — randomised trial (PMC)', url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5654415/' },
+    { label: 'Silberstein et al. 2016 — Non-invasive vagus nerve stimulation for the acute treatment of cluster headache: findings from the randomized, double-blind, sham-controlled ACT1 study (Headache)', url: 'https://doi.org/10.1111/head.12896' },
   ],
   relatedSlugs: ['truvaga-350', 'nurosym', 'livanova-vns-therapy'],
   faq: [

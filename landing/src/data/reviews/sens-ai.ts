@@ -65,7 +65,7 @@ The neuroscience these headsets feed back — and the cognitive states the EEG s
 `,
   references: [
     { label: 'Sens.ai — official product page', url: 'https://www.sens.ai/' },
-    { label: 'Transcranial photobiomodulation — clinical evidence review (Photonics)', url: 'https://www.mdpi.com/2304-6732/6/3/77' },
+    { label: "Hamblin 2019 — Photobiomodulation for Alzheimer's disease: has the light dawned? (Photonics)", url: 'https://doi.org/10.3390/photonics6030077' },
   ],
   relatedSlugs: ['neurosity-crown', 'muse-s-athena', 'mendi'],
   faq: [

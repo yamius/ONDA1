@@ -36,7 +36,7 @@ const apolloVsNurosymVsSensate: HeadToHead = {
     },
     {
       q: 'Are all three really vagus nerve stimulators?',
-      a: 'Only Nurosym is electrical tVNS in the strict sense — direct stimulation of the auricular vagal branch. Apollo works through vibration on the skin and Sensate through infrasonic sound on the chest — both indirect, proposed routes with limited evidence. All three produce measurable HRV shifts in published research, but the mechanisms differ.',
+      a: 'Only Nurosym is electrical tVNS in the strict sense — direct stimulation of the auricular vagal branch. Apollo works through vibration on the skin and Sensate through infrasonic sound on the chest — both indirect, proposed routes with limited evidence. Individual studies report HRV shifts for each, but a sham-controlled meta-analysis of ear tVNS (Wolf 2021) found no reliable effect on vagally mediated HRV, so treat HRV gains from any of them as unproven.',
     },
     {
       q: 'Which has the strongest evidence?',

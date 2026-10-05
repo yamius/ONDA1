@@ -94,7 +94,7 @@ The metabolic biology these programmes surface — and the protocols the data un
   references: [
     { label: 'Ultrahuman Cyborg / M1 — official site', url: 'https://www.ultrahuman.com/cyborg/' },
     { label: 'Ultrahuman press release: M2 Live launches in the US with Abbott’s Lingo CGM (18 June 2026)', url: 'https://cyborg.ultrahuman.com/press-releases/ultrahuman-launches-m2-live-abbotts-lingo' },
-    { label: 'Abbott FreeStyle Libre 3 accuracy validation (J Diabetes Sci Technol)', url: 'https://journals.sagepub.com/doi/10.1177/19322968221101632' },
+    { label: 'Alva et al. 2023 — Accuracy of the third generation of a 14-day continuous glucose monitoring system (FreeStyle Libre 3; Diabetes Ther)', url: 'https://doi.org/10.1007/s13300-023-01385-6' },
   ],
   relatedSlugs: ['ultrahuman-ring-air', 'levels', 'lingo', 'veri'],
   faq: [

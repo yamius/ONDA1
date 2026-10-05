@@ -1,0 +1,3 @@
+[
+ { "id": "10.1007/s004210050065", "reason": "Šrámek P et al. 2000 is correct; Crossref stores the surname with a broken encoding (\"?r?mek\"), so the surname comparison cannot match." }
+]
