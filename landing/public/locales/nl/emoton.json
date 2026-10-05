@@ -184,11 +184,11 @@
   "support": {
     "title": "This seems like a lot right now.",
     "description": "It can help not to be alone with it. Talking to someone is a strong move, not a weak one.",
-    "lifeline_title": "988 — Suicide & Crisis Lifeline",
-    "lifeline_call": "Call or text",
-    "lifeline_number": "988",
-    "lifeline_hours": "(US, 24/7)",
-    "lifeline_url": "https://988lifeline.org",
+    "lifeline_title": "Hulplijnen bij een crisis",
+    "lifeline_call": "Zoek een hulplijn in je land",
+    "lifeline_number": "findahelpline.com",
+    "lifeline_hours": "",
+    "lifeline_url": "https://findahelpline.com",
     "close_cta": "Close"
   },
   "assimilation": {

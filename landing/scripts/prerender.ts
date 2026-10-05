@@ -1182,6 +1182,11 @@ try {
 }
 
 console.log(`[prerender]${SHARD_LABEL} done — ${done} rendered, ${failed} failed (of ${routes.length})`)
+// A failed route ships as the bare SPA shell (soft 404 for crawlers) — never deploy that.
+if (failed > 0) {
+  console.error(`[prerender]${SHARD_LABEL} ${failed} route(s) failed — aborting the build`)
+  process.exit(1)
+}
 
 // A shard renders only; the coordinator runs the site-wide steps once.
 if (!SHARD) runSiteWideSteps()
