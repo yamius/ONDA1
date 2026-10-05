@@ -20,6 +20,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/autonomic-nervous-system` — 2026-10-05 (written by Claude Code under the same pack)
 - `concepts/vagus-nerve` — 2026-10-05 (written by Claude Code under the same pack)
 - `measurements/resting-heart-rate` — 2026-10-05 (Mistral draft, approved by Yakiv; facts rhr.adult.normal.caveat and rhr.trained reworded)
+- `concepts/interpreting-hrv` — 2026-10-05 (phase 2, roadmap #9; written by Claude Code under the same pack). Merges topics 2, 18, 19, 20, 28, 29 of the 40-topic list: what HRV tells you, HRV is not a score, comparing with others, why HRV is personal, low HRV, high HRV. Mechanisms and effect sizes are left to `mechanisms/hrv-day-to-day`.
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](ONDA_science_roadmap.md).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 

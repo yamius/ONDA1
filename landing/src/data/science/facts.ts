@@ -47,6 +47,7 @@ const SIDHU_2020: FactSource = { label: 'Sidhu & Marine 2020, Trends Cardiovasc 
 const ZHANG_2016: FactSource = { label: 'Zhang 2016, CMAJ (resting heart rate and mortality, meta-analysis)', doi: '10.1503/cmaj.150535', pmid: '26598376' }
 const FOX_2007: FactSource = { label: 'Fox 2007, JACC (resting heart rate in cardiovascular disease, review)', doi: '10.1016/j.jacc.2007.04.079', pmid: '17719466' }
 const DAMBROSIO_2026: FactSource = { label: "D'Ambrosio 2026, Circulation (bradycardia in athletes, observational)", doi: '10.1161/CIRCULATIONAHA.125.076170', pmid: '41410046' }
+const HILLEBRAND_2013: FactSource = { label: 'Hillebrand 2013, Europace (HRV and first cardiovascular event, meta-analysis)', doi: '10.1093/europace/eus341', pmid: '23370966' }
 const LOERUP_2019: FactSource = { label: 'Loerup 2019, BMC Med (blood pressure and heart rate in pregnancy, meta-analysis)', doi: '10.1186/s12916-019-1399-1', pmid: '31506067' }
 const VOSS_2015: FactSource = { label: 'Voss 2015, PLOS ONE', doi: '10.1371/journal.pone.0118308' }
 const NUNAN_2010: FactSource = { label: 'Nunan 2010, Pacing Clin Electrophysiol', doi: '10.1111/j.1540-8159.2010.02841.x' }
@@ -86,6 +87,7 @@ const FACTS_LIST: Fact[] = [
 
   // ── HRV general ─────────────────────────────────────────────────────
   { id: 'hrv.pooled.daytime', display: 'about 42 ms', kind: 'number', scope: 'Pooled resting RMSSD from short daytime recordings across 44 studies — not a night-time value and not an age norm.', sources: [NUNAN_2010], status: 'approved', reviewed: R, note: 'Approved by Yakiv 2026-10-04.' },
+  { id: 'hrv.population.firstEvent', display: 'about 32–45% higher risk of a first cardiovascular event', kind: 'claim', scope: 'Low vs high HRV (SDNN, LF; HF not significant) in populations without known cardiovascular disease, mostly ECG recordings; pooled relative risk from eight observational studies (Hillebrand 2013); association, not an individual prediction and not transferable to a single wearable reading.', sources: [HILLEBRAND_2013], status: 'approved', reviewed: '2026-10-05', note: 'Approved by Yakiv 2026-10-05 (concepts/interpreting-hrv P1). Quote: “In conclusion, low HRV is associated with a 32-45% increased risk of a first cardiovascular event in populations without known CVD.”' },
   { id: 'hrv.rmssd.definition', display: 'RMSSD — the root mean square of successive differences between heartbeats', kind: 'claim', scope: 'Definition.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
   { id: 'hrv.sdnn.definition', display: 'SDNN — the standard deviation of the intervals between normal heartbeats', kind: 'claim', scope: 'Definition.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
 

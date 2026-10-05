@@ -2296,6 +2296,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/concepts-interpreting-hrv.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-interpreting-hrv.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-interpreting-hrv.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/concepts-respiratory-sinus-arrhythmia.avif": {
     "width": 1920,
     "height": 820
