@@ -1,8 +1,8 @@
 ---
 sourceHash: "0bbffcc298fa"
 title: "Kun je HRV van een smartwatch of ring vertrouwen?"
-metaTitle: "HRV van wearables: kun je je horloge vertrouwen?"
-metaDescription: "HRV van een smartwatch of ring is een schatting uit het polssignaal, geen ecg-meting. Waar de twee overeenkomen, waar ze uiteenlopen en hoe je je getallen leest."
+metaTitle: "HRV van wearables: horloge of ring te vertrouwen?"
+metaDescription: "HRV van een smartwatch of ring is een schatting uit het polssignaal, geen ecg-meting. Waar ze overeenkomen, waar ze uiteenlopen en hoe je je getallen leest."
 shortAnswer: >
   HRV van een wearable kan nuttig zijn, maar het is niet vanzelf de meting die
   een ecg zou geven. De meeste smartwatches en ringen schatten de variabiliteit
@@ -14,7 +14,7 @@ shortAnswer: >
 keyPoints:
   - "Ecg en PPG meten verschillende signalen: het ecg registreert de elektrische activiteit van het hart, PPG schat de timing van slagen uit de polsgolven aan de huid."
   - "Polsslagvariabiliteit uit PPG kan voor bepaalde maten onder gecontroleerde rustomstandigheden goed overeenkomen met HRV uit het ecg — die overeenstemming is voorwaardelijk, niet universeel."
-  - "Beweging, sensorcontact, doorbloeding van de huid, meetvenster, keuze van de maat en eigen verwerking van de fabrikant bepalen allemaal de HRV-getallen van een wearable."
+  - "Beweging, sensorcontact, perifere doorbloeding, meetvenster, keuze van de maat en eigen verwerking van de fabrikant bepalen allemaal de HRV-getallen van een wearable."
   - "Twee apparaten kunnen terecht verschillende HRV-waarden tonen zonder dat een van beide fout zit; ze tonen misschien niet dezelfde maat uit vergelijkbare vensters."
   - "RMSSD en SDNN vatten verschillende eigenschappen van een meting samen, en hun getallen zijn niet uitwisselbaar."
   - "Je eigen trend, consequent gemeten met hetzelfde apparaat en dezelfde methode, zegt meestal meer dan absolute waarden van verschillende apparaten vergelijken."
@@ -81,7 +81,7 @@ De referentieketen is elektrisch. Een ecg registreert de elektrische activiteit 
 
 Kort gezegd: ecg → elektrische toppen → intervallen van slag tot slag → HRV. En: PPG → polstoppen aan de huid → intervallen van pols tot pols → PRV.
 
-Elke hartslag levert uiteindelijk een polsgolf op, dus de twee ketens hangen nauw samen. Maar de pols moet naar de meetplek reizen, en wat er onderweg gebeurt — polsgolflooptijd, vaattonus, perifere circulatie — kan samen met bewegingsartefacten, sensorcontact, optische eigenschappen van de huid en de signaalverwerking van het apparaat een waarde op basis van de pols doen afwijken van haar elektrische tegenhanger [S3]. Een sensor aan pols of ring is dus geen kleinere ecg-elektrode. Hij neemt een verwant signaal waar en schat daaruit, en de kwaliteit van die schatting hangt af van de omstandigheden.
+Elke hartslag levert uiteindelijk een polsgolf op, dus de twee ketens hangen nauw samen. Maar de pols moet naar de meetplek reizen, en wat er onderweg gebeurt — polsgolflooptijd, vaattonus, perifere circulatie — kan samen met bewegingsartefacten, sensorcontact, optische eigenschappen van de huid en de signaalverwerking van het apparaat een waarde op basis van de pols doen afwijken van haar elektrische tegenhanger [S3]. Een sensor aan de pols of in een ring is dus geen kleinere ecg-elektrode. Hij neemt een verwant signaal waar en schat daaruit, en de kwaliteit van die schatting hangt af van de omstandigheden.
 
 Daarom is ook de vraag „is deze sensor nauwkeurig?” onvolledig. De versie die op bewijs steunt, vraagt: nauwkeurig voor welke maat, bij welke persoon, onder welke omstandigheden, met welke verwerking? De volgende delen nemen die stukken een voor een door.
 
@@ -95,7 +95,7 @@ Elke HRV-waarde van een wearable is het eindproduct van een reeks keuzes, en twe
 - **Hoe goed was het signaal?** Beweging, een losse pasvorm en een zwakke doorbloeding van de huid tasten een optische schatting als eerste aan, en studies op validatieniveau filteren zulke metingen eruit voordat ze iets berekenen [S4].
 - **Kijk je naar een trend of reageer je op één getal?** Eén waarde is een observatie; een reeks waarden die op dezelfde manier is verzameld, is een signaal [S5].
 
-Het ecosysteem van Apple is een levend voorbeeld van de vraag naar de maat. {{fact:applewatch.hrv.healthkit}} [S6] — dus de HRV-waarden in Apple Health zijn altijd van het type SDNN geweest, automatisch vastgelegd door de Apple Watch. Op recente modellen geldt het volgende. {{fact:applewatch.hrv.variants2026}} [S7]; Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend. Daarnaast geldt: {{fact:applewatch.hrv.rmssdType}} [S8] — een platformwijziging waardoor apps een waarde van het type RMSSD in Apple Health kunnen opslaan, wat telt zodra je een getal van de Apple Watch vergelijkt met een ring die RMSSD toont.
+Het ecosysteem van Apple is een levend voorbeeld van de vraag naar de maat. {{fact:applewatch.hrv.healthkit}} [S6] — dus de HRV-waarden in Apple Health zijn altijd van het type SDNN geweest, automatisch vastgelegd door de Apple Watch. Op recente modellen geldt: {{fact:applewatch.hrv.variants2026}} [S7]; Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend. Daarnaast geldt: {{fact:applewatch.hrv.rmssdType}} [S8] — een platformwijziging waardoor apps een waarde van het type RMSSD in Apple Health kunnen opslaan, wat telt zodra je een getal van de Apple Watch vergelijkt met een ring die RMSSD toont.
 
 Een compacte manier om dit alles vast te houden:
 
@@ -143,6 +143,6 @@ De feiten over het ecosysteem van Apple horen hier als apparaatfeiten: Apple Hea
 
 ## In ONDA
 
-ONDA staat aan de consumentenkant van dit bewijs, en de documentatie is duidelijk over waar elk getal vandaan komt. De nachtelijke persoonlijke baseline is gebaseerd op de HRV-waarden die in Apple Health worden opgeslagen — door de Apple Watch of door elke tracker waarvan de app hartgegevens daarheen synchroniseert — en die waarden zijn van het type SDNN. {{fact:applewatch.hrv.healthkit}} [S6]. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN; de telefooncamera geeft je polsslag, geen HRV; en de coherentiescore die met een Apple Watch beschikbaar is, is een eigen feedbackscore, geen klinische HRV-meting. ONDA gebruikt het signaal voor biofeedback: de vraag is niet alleen wat het getal is, maar wat ermee gebeurt terwijl je oefent. Het vergelijkt elke nacht met je eigen recente bandbreedte (corridor) en stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+ONDA staat aan de consumentenkant van dit bewijs, en de documentatie is duidelijk over waar elk getal vandaan komt. De nachtelijke persoonlijke baseline is gebaseerd op de HRV-waarden die in Apple Health worden opgeslagen — door de Apple Watch of door elke tracker waarvan de app hartgegevens daarheen synchroniseert — en {{fact:applewatch.hrv.healthkit}} [S6]. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN; de telefooncamera geeft je polsslag, geen HRV; en de coherentiescore die met een Apple Watch beschikbaar is, is een eigen feedbackscore, geen klinische HRV-meting. ONDA gebruikt het signaal voor biofeedback: de vraag is niet alleen wat het getal is, maar wat ermee gebeurt terwijl je oefent. Het vergelijkt elke nacht met je eigen recente bandbreedte (corridor) en stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

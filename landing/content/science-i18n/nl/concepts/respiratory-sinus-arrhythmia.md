@@ -6,14 +6,14 @@ metaDescription: "Respiratoire sinusaritmie is het normale versnellen van het ha
 shortAnswer: >
   Respiratoire sinusaritmie (RSA) is de normale stijging van de hartslag bij
   elke inademing en de daling bij elke uitademing. Ondanks de naam is het een
-  kenmerk van een gezond hart in rust, geen ritmestoornis. Het wordt grotendeels
-  gedragen door de vagale regulatie van het hart en hangt af van hoe langzaam en
-  diep je ademt, van je houding en van je leeftijd. Op zichzelf zegt het niets
-  zekers over vagale tonus, conditie of gezondheid.
+  kenmerk van een gezond hart in rust, geen ritmestoornis. Het komt grotendeels
+  tot stand via de vagale regulatie van het hart en hangt af van hoe langzaam en
+  diep je ademt, van je houding en van je leeftijd. Op zichzelf toont het
+  geen vagale tonus, conditie of gezondheid aan.
 keyPoints:
   - "Respiratoire sinusaritmie is het op en neer gaan van de hartslag met elke ademteug: sneller bij het inademen, langzamer bij het uitademen."
   - "Het is een normaal kenmerk van een gezond hart in rust en, ondanks het woord aritmie, geen hartritmestoornis."
-  - "Het grootste deel wordt gedragen door de vagale regulatie van het hart; hoe ademhaling en baroreflex samen het effect opwekken, is nog omstreden."
+  - "Het komt grotendeels tot stand via de vagale regulatie van het hart; hoe ademhaling en baroreflex samen het effect opwekken, is nog omstreden."
   - "Het is groter bij langzaam, diep ademen en in liggende houding, en kleiner bij snel ademen en tijdens inspanning."
   - "In korte metingen in rust is het de belangrijkste bron van hartslagvariabiliteit; daarom verandert ademhaling de RMSSD zo zichtbaar."
   - "Omdat de ademhaling zelf de grootte ervan verandert, is RSA geen zuivere maat voor vagale tonus."
@@ -28,7 +28,7 @@ evidenceMap:
     limitation: "Een samenvatting van de belangrijkste efferente route; er bestaan ook andere mechanische en reflexmatige bijdragen."
   - claim: "Als belangrijkste mechanismen gelden de modulatie van de vagale activiteit naar het hart door de centrale ademhalingsprikkel en de longrekreflex, en RSA neemt toe met de vagale activiteit naar het hart."
     limitation: "Een achtergrondzin uit een experimenteel artikel; het relatieve gewicht van elk mechanisme blijft omstreden."
-  - claim: "Of vooral de baroreflex of een centraal ademhalingscentrum RSA opwekt, is niet beslist en staat volop ter discussie."
+  - claim: "Of vooral de baroreflex of een centraal ademhalingscentrum RSA opwekt, is nog niet uitgemaakt en staat volop ter discussie."
     limitation: "Een review van omstreden literatuur; methoden en populaties verschillen tussen de studies aan beide kanten."
   - claim: "Algemeen wordt aangenomen dat bij het ontstaan van RSA centrale, perifere en mechanische elementen op elkaar inwerken."
     limitation: "Een samenvattende uitspraak; de bijdrage van elk element verschilt met het ademhalingspatroon en de omstandigheden."
@@ -48,7 +48,7 @@ evidenceMap:
     limitation: "Eén kleine studie; het verband met leeftijd is alleen voor een beperkt leeftijdsbereik beschreven."
   - claim: "Maten van hartslagvariabiliteit in het tijdsdomein nemen af met de leeftijd."
     limitation: "Cross-sectionele populatiegegevens; op elke leeftijd verschillen mensen sterk."
-  - claim: "In korte metingen in rust is RSA de belangrijkste bron van variatie in de hartslag, vooral bij langzaam gedoseerd ademen."
+  - claim: "In korte metingen in rust is RSA de belangrijkste bron van variatie in de hartslag, vooral bij langzaam ademen in een vast tempo."
     limitation: "Geldt voor korte metingen in rust; over langere periodes dragen ook tragere ritmes bij."
   - claim: "RMSSD geeft doorgaans een betere inschatting van RSA dan verwante maten in het tijdsdomein."
     limitation: "Een vergelijking tussen maten in het tijdsdomein, geen bewering dat RMSSD gelijk is aan RSA."
@@ -74,15 +74,15 @@ Onderzoekers raden aan de term precies voor dit met de adem verbonden versnellen
 
 ## Hoe werkt het?
 
-**Wat vaststaat.** RSA wordt vooral gedragen door de nervus vagus: het is het door de ademhaling aangedreven versnellen en vertragen van het hart via vagale regulatie [S1]. Volgens de gangbare opvatting gaat het om de ademhalingsprikkel van de hersenen en rekreflexen uit de longen die inwerken op de vagale aansturing van het hart, en RSA wordt groter naarmate die vagale invloed op het hart toeneemt [S7].
+**Wat vaststaat.** RSA komt vooral tot stand via de nervus vagus: het is het door de ademhaling aangedreven versnellen en vertragen van het hart via vagale regulatie [S1]. Volgens de gangbare opvatting gaat het om de ademhalingsprikkel van de hersenen en rekreflexen uit de longen die inwerken op de vagale aansturing van het hart, en RSA wordt groter naarmate die vagale invloed op het hart toeneemt [S7].
 
-**Wat nog een model of een discussie is.** Hoe ademhaling en bloedsomloop precies samen RSA opwekken, is niet beslist. Een langlopend debat gaat over de vraag of vooral een centraal ademhalingscentrum in de hersenstam of de baroreflex — de terugkoppelingslus van de bloeddruk — het opwekt [S4]. Volgens één opvatting weerspiegelt de koppeling tussen bloeddruk en hartintervallen op ademhalingsfrequenties vooral dat de ademhaling op beide inwerkt, en niet de fysiologie van de baroreflex [S5]; anderen kennen de baroreflex een grotere rol toe. De breed aanvaarde middenweg is dat centrale, perifere en mechanische elementen op elkaar inwerken om het te veroorzaken [S4]. In de praktijk behandelt deze pagina de vagale route als vastgesteld en het relatieve gewicht van elk opwekkend mechanisme als open vraag.
+**Wat nog een model of een discussie is.** Hoe ademhaling en bloedsomloop precies samen RSA opwekken, is nog niet uitgemaakt. Een langlopend debat gaat over de vraag of vooral een centraal ademhalingscentrum in de hersenstam of de baroreflex — de terugkoppelingslus van de bloeddruk — het opwekt [S4]. Volgens één opvatting weerspiegelt de koppeling tussen bloeddruk en hartintervallen op ademhalingsfrequenties vooral dat de ademhaling op beide inwerkt, en niet de fysiologie van de baroreflex [S5]; anderen kennen de baroreflex een grotere rol toe. De breed aanvaarde middenweg is dat centrale, perifere en mechanische elementen op elkaar inwerken om het te veroorzaken [S4]. In de praktijk behandelt deze pagina de vagale route als vastgesteld en het relatieve gewicht van elk opwekkend mechanisme als open vraag.
 
 Waarom langzaam ademen RSA zoveel groter maakt — het verband met resonantie en de baroreflex — is een eigen vraag over mechanismen, gepland voor een aparte pagina over ademhaling en HRV.
 
 ## Hoe wordt het gemeten?
 
-RSA wordt afgelezen uit de intervallen tussen hartslagen die samen met de ademhaling worden geregistreerd, of geschat uit de HRV zelf. In korte metingen in rust is het de belangrijkste bron van de variatie, vooral bij langzaam, gedoseerd ademen [S1] — daarom verschuift een ademoefening een HRV-getal zo zichtbaar. Van de maten in het tijdsdomein geeft [RMSSD](/science/concepts/rmssd) doorgaans een betere inschatting van RSA dan verwante maten [S1]. De algemene regels voor het vergelijken van zulke getallen — hetzelfde apparaat, dezelfde maat, vergelijkbare omstandigheden, je eigen [baseline](/science/concepts/hrv-baseline) in plaats van de waarde van een ander — gelden ook hier.
+RSA wordt afgelezen uit de intervallen tussen hartslagen die samen met de ademhaling worden geregistreerd, of geschat uit de HRV zelf. In korte metingen in rust is het de belangrijkste bron van de variatie, vooral bij langzaam ademen in een vast tempo [S1] — daarom verschuift een ademoefening een HRV-getal zo zichtbaar. Van de maten in het tijdsdomein geeft [RMSSD](/science/concepts/rmssd) doorgaans een betere inschatting van RSA dan verwante maten [S1]. De algemene regels voor het vergelijken van zulke getallen — hetzelfde apparaat, dezelfde maat, vergelijkbare omstandigheden, je eigen [baseline](/science/concepts/hrv-baseline) in plaats van de waarde van een ander — gelden ook hier.
 
 ## Wat beïnvloedt het?
 
@@ -93,7 +93,7 @@ RSA wordt afgelezen uit de intervallen tussen hartslagen die samen met de ademha
 
 ## Wat laat het bewijs zien?
 
-**Vastgesteld.** RSA is een normaal kenmerk van het hart in rust [S5] en wordt vooral gedragen door vagale regulatie [S1, S7]. Het is groter bij langzaam en diep ademen en kleiner bij snel ademen [S4, S5], en in korte metingen in rust is het de belangrijkste bron van HRV [S1].
+**Vastgesteld.** RSA is een normaal kenmerk van het hart in rust [S5] en komt vooral tot stand via vagale regulatie [S1, S7]. Het is groter bij langzaam en diep ademen en kleiner bij snel ademen [S4, S5], en in korte metingen in rust is het de belangrijkste bron van HRV [S1].
 
 **Afhankelijk van de context.** Hoe groot het effect van houding, toestand en leeftijd is, komt uit laboratorium- en reviewgegevens met verschillende protocollen [S4, S6]; hoeveel het bij een bepaalde persoon verandert, kan een populatiestudie niet voorspellen.
 
@@ -110,6 +110,6 @@ RSA wordt afgelezen uit de intervallen tussen hartslagen die samen met de ademha
 
 ## In ONDA
 
-De oefeningen van ONDA zijn opgebouwd rond langzaam, gedoseerd ademen, de toestand waarin RSA het grootst is. Met de camera van de iPhone toont ONDA je pols live en een schatting van je ademtempo, afgeleid uit het met de adem verbonden ritme van de pols; met een Apple Watch komt daar een live coherentiescore bij — ONDA's eigen feedback over de regelmaat van het ritme, geen klinische meting van RSA of van vagale tonus. ONDA stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+De oefeningen van ONDA zijn opgebouwd rond langzaam ademen in een vast tempo, de toestand waarin RSA het grootst is. Met de camera van de iPhone toont ONDA je pols live en een schatting van je ademtempo, afgeleid uit het met de adem verbonden ritme van de pols; met een Apple Watch komt daar een live coherentiescore bij — ONDA's eigen feedback over de regelmaat van het ritme, geen klinische meting van RSA of van vagale tonus. ONDA stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

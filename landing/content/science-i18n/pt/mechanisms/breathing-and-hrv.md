@@ -2,21 +2,21 @@
 sourceHash: "41115ae9a660"
 title: "Como a respiração muda a HRV — e por que a respiração lenta a eleva"
 metaTitle: "Respiração e HRV: por que respirar devagar a eleva"
-metaDescription: "Por que a variabilidade da frequência cardíaca sobe quando você respira devagar: o ritmo cardíaco ligado à respiração, o barorreflexo e a ressonância."
+metaDescription: "Por que a HRV sobe quando você respira devagar: o ritmo cardíaco ligado à respiração, o barorreflexo e a ressonância — o estabelecido e o debatido."
 shortAnswer: >
   A respiração muda a variabilidade da frequência cardíaca porque cada
   respiração acelera e desacelera o coração, e a respiração lenta torna essas
   oscilações muito maiores. Perto da frequência de ressonância de cada pessoa,
   respiração, frequência cardíaca e pressão arterial entram em sincronia, e o
   reflexo da pressão arterial amplifica as oscilações. A variabilidade da
-  frequência cardíaca de mediação vagal aumenta durante a respiração lenta e
+  frequência cardíaca mediada pelo nervo vago aumenta durante a respiração lenta e
   depois da prática. Isso, por si só, não mostra que o tônus vagal mudou, e a
   melhor frequência varia de pessoa para pessoa.
 keyPoints:
   - "Cada respiração acelera o coração ao inspirar e o desacelera ao expirar, e assim a respiração deixa a sua marca na variabilidade da frequência cardíaca."
   - "Desacelerar a respiração torna essas oscilações muito maiores, e elas atingem o pico perto da frequência de ressonância de cada pessoa."
   - "Na ressonância, as oscilações da respiração, da frequência cardíaca e da pressão arterial entram em sincronia, e o barorreflexo as amplifica."
-  - "Uma grande metanálise encontrou uma variabilidade da frequência cardíaca de mediação vagal mais alta durante a respiração lenta, logo após uma sessão e depois de programas de várias sessões."
+  - "Uma grande metanálise encontrou uma variabilidade da frequência cardíaca mediada pelo nervo vago mais alta durante a respiração lenta, logo após uma sessão e depois de programas de várias sessões."
   - "A frequência de ressonância varia entre as pessoas e se mantém razoavelmente estável ao longo do tempo, e por isso ela é avaliada, não presumida."
   - "Se uma expiração mais longa acrescenta algo além de desacelerar a respiração não está resolvido; os estudos divergem."
   - "Uma leitura mais alta durante a respiração lenta reflete o padrão respiratório tanto quanto o sistema nervoso, por isso não é uma leitura direta do tônus vagal."
@@ -40,7 +40,7 @@ evidenceMap:
     limitation: "Síntese de revisão; a participação de cada mecanismo não é quantificada."
   - claim: "Se o ritmo cardíaco ligado à respiração é gerado principalmente pelo barorreflexo ou por um centro respiratório central ainda está em debate."
     limitation: "Uma literatura controversa, com métodos heterogêneos."
-  - claim: "Uma grande metanálise encontrou aumentos da variabilidade da frequência cardíaca de mediação vagal durante a respiração lenta, imediatamente após uma sessão e depois de intervenções de várias sessões."
+  - claim: "Uma grande metanálise encontrou aumentos da variabilidade da frequência cardíaca mediada pelo nervo vago durante a respiração lenta, imediatamente após uma sessão e depois de intervenções de várias sessões."
     limitation: "Dados agrupados de protocolos e populações muito heterogêneos; mudanças na HRV, não desfechos de saúde."
   - claim: "A frequência de ressonância individual era menor em homens do que em mulheres, estava relacionada à altura, não estava relacionada à idade e permaneceu constante ao longo das sessões de treino."
     limitation: "Uma amostra de laboratório de adultos saudáveis e pacientes com asma; associações, não causas."
@@ -78,7 +78,7 @@ O tamanho do efeito depende da frequência respiratória. O ritmo ligado à resp
 
 O aumento é visível em registros curtos: durante a respiração lenta, medidas no domínio do tempo, como o [RMSSD](/science/concepts/rmssd), e a parte de ondas lentas (baixa frequência) da HRV crescem ao longo da sessão. Duas coisas tornam a medição delicada.
 
-Primeiro, o resultado depende do padrão respiratório durante o registro, então leituras feitas durante a respiração lenta e durante a respiração comum não são comparáveis — valem as regras gerais da [página sobre a linha de base da HRV](/science/concepts/hrv-baseline). Segundo, a frequência de ressonância individual precisa ser encontrada, não presumida: os protocolos práticos de avaliação comparam várias frequências lentas e escolhem a que produz as oscilações maiores e mais regulares [S5]. Os passos práticos estão em [encontre a sua frequência de respiração de ressonância](/articles/find-your-resonance-breathing-rate) e na [ferramenta de respiração de ressonância](/tools/resonance-breathing).
+Primeiro, o resultado depende do padrão respiratório durante o registro, então leituras feitas durante a respiração lenta e durante a respiração comum não são comparáveis — valem as regras gerais da [página sobre a linha de base da HRV](/science/concepts/hrv-baseline). Segundo, a frequência de ressonância individual precisa ser encontrada, não presumida: os protocolos práticos de avaliação comparam várias frequências lentas e escolhem a que produz as oscilações maiores e mais suaves [S5]. Os passos práticos estão em [encontre a sua frequência de respiração de ressonância](/articles/find-your-resonance-breathing-rate) e na [ferramenta de respiração de ressonância](/tools/resonance-breathing).
 
 ## O que o influencia?
 
@@ -89,7 +89,7 @@ Primeiro, o resultado depende do padrão respiratório durante o registro, entã
 
 ## O que mostram as evidências?
 
-**Estabelecido.** A respiração lenta amplia o ritmo cardíaco ligado à respiração, e a HRV e a sensibilidade do barorreflexo atingem o pico perto da frequência de ressonância [S2, S3]. Uma grande revisão sistemática com metanálise encontrou aumentos da HRV de mediação vagal durante a respiração lenta, imediatamente após uma única sessão e depois de programas de várias sessões [S8]. {{fact:claim.slowExhale}} [S8, S5].
+**Estabelecido.** A respiração lenta amplia o ritmo cardíaco ligado à respiração, e a HRV e a sensibilidade do barorreflexo atingem o pico perto da frequência de ressonância [S2, S3]. Uma grande revisão sistemática com metanálise encontrou aumentos da HRV mediada pelo nervo vago durante a respiração lenta, imediatamente após uma única sessão e depois de programas de várias sessões [S8]. {{fact:claim.slowExhale}} [S8, S5].
 
 **Depende do contexto.** A explicação pela ressonância e pelo barorreflexo para o tamanho do efeito [S4, S5, S9]; as características individuais da frequência de ressonância [S6]. Em um estudo cruzado, acrescentar estimulação elétrica na orelha durante a respiração lenta na frequência de ressonância não elevou ainda mais a HRV — a respiração lenta já estava produzindo o efeito [S11].
 

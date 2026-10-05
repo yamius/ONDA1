@@ -2,7 +2,7 @@
 sourceHash: "b8490857b5d7"
 title: "A estimulação do nervo vago funciona mesmo? O que mostram as evidências"
 metaTitle: "Estimulação do nervo vago: o que mostram as evidências"
-metaDescription: "A estimulação do nervo vago tem usos médicos liberados pela FDA e resultados de pesquisa mistos. Veja o que cada nível de evidência sustenta e o que vai além dele."
+metaDescription: "A estimulação do nervo vago tem usos liberados pela FDA e resultados de pesquisa mistos. Veja o que cada nível de evidência sustenta e o que vai além dele."
 shortAnswer: >
   A estimulação do nervo vago não é uma coisa só. Ela abrange uma terapia
   cirúrgica implantada, dispositivos médicos aplicados no pescoço liberados
@@ -12,16 +12,16 @@ shortAnswer: >
   específicos para indicações específicas de cefaleia; as evidências
   agrupadas sobre escalas de sintomas de humor e sono são promissoras, mas
   imaturas; e o marcador mais estudado da área, a variabilidade da frequência
-  cardíaca de mediação vagal, não responde de forma confiável à estimulação
+  cardíaca mediada pelo nervo vago, não responde de forma confiável à estimulação
   aguda.
 keyPoints:
   - "A estimulação do nervo vago não é uma intervenção única: uma terapia cirúrgica implantada, dispositivos médicos aplicados no pescoço, a estimulação na orelha, produtos de bem-estar para o consumidor e práticas do tipo respiratório são coisas diferentes, com evidências diferentes."
   - "Uma parte da orelha externa contém fibras sensitivas do ramo auricular do nervo vago, mas essa anatomia varia entre as pessoas, então o mesmo ponto do eletrodo não é igualmente vagal em todo mundo."
   - "Os órgãos reguladores liberaram dispositivos não invasivos específicos para indicações específicas de cefaleia; nada nessas liberações abrange o alívio do estresse em consumidores saudáveis."
   - "Análises agrupadas de ensaios em sua maioria pequenos relatam melhoras em escalas de sintomas de depressão e de sono, e os próprios autores das revisões classificam essas evidências como de baixa qualidade e preliminares."
-  - "Nos estudos controlados por simulação (sham), a estimulação aguda na orelha não eleva de forma confiável a variabilidade da frequência cardíaca de mediação vagal, então uma leitura de HRV não prova que um dispositivo esteja ativando vias vagais."
+  - "Nos estudos controlados por simulação (sham), a estimulação aguda na orelha não eleva de forma confiável a variabilidade da frequência cardíaca mediada pelo nervo vago, então uma leitura de HRV não prova que um dispositivo esteja ativando vias vagais."
   - "O tônus vagal não pode ser medido diretamente; a variabilidade da frequência cardíaca é apenas um reflexo indireto, então qualquer produto que diga ler ou fortalecer o tônus vagal está simplificando."
-  - "A respiração lenta está associada a uma variabilidade da frequência cardíaca de mediação vagal mais alta; a respiração é uma via separada, não elétrica, com evidências próprias."
+  - "A respiração lenta está associada a uma variabilidade da frequência cardíaca mediada pelo nervo vago mais alta; a respiração é uma via separada, não elétrica, com evidências próprias."
 imageAlt: "Uma linha que se ramifica em vários caminhos finos — alguns terminam em pequenos pontos pretos, outros chegam a pontos verde-azulados, e alguns pontos verde-azulados ficam soltos, sem conexão: um rótulo, muitos caminhos e resultados."
 evidenceMap:
   - claim: "A aplicação não invasiva se baseia no território cutâneo das fibras aferentes vagais, na orelha externa ou no pescoço."
@@ -40,13 +40,13 @@ evidenceMap:
     limitation: "Achados de imagem correlacionais; alterações de ativação não são evidência de benefício clínico."
   - claim: "A variabilidade da frequência cardíaca é usada em psicofisiologia como índice do tônus vagal cardíaco."
     limitation: "Um índice, não uma medição direta."
-  - claim: "Nos estudos simples-cegos controlados por simulação em participantes saudáveis, a estimulação aguda na orelha não altera a variabilidade da frequência cardíaca de mediação vagal em comparação com a simulação."
+  - claim: "Nos estudos simples-cegos controlados por simulação em participantes saudáveis, a estimulação aguda na orelha não altera a variabilidade da frequência cardíaca mediada pelo nervo vago em comparação com a simulação."
     limitation: "Uma metanálise viva de estudos simples-cegos em participantes saudáveis; ela é atualizada à medida que surgem novos estudos."
-  - claim: "Não há sustentação para a variabilidade da frequência cardíaca de mediação vagal como biomarcador robusto da estimulação aguda na orelha."
+  - claim: "Não há sustentação para a variabilidade da frequência cardíaca mediada pelo nervo vago como biomarcador robusto da estimulação aguda na orelha."
     limitation: "Um veredito sobre o biomarcador, não uma afirmação de que a estimulação não tenha nenhum efeito."
   - claim: "Já foram demonstrados efeitos benéficos sobre os sintomas em pacientes com transtornos mentais ou neurológicos."
     limitation: "Afirmação de contexto de uma metanálise sobre biomarcadores; os achados sobre sintomas variam conforme a condição e a qualidade dos ensaios."
-  - claim: "Certas combinações de frequência e largura de pulso elevam de forma aguda a variabilidade da frequência cardíaca geral, refletida no SDNN, sem afetar a variabilidade da frequência cardíaca de mediação vagal, refletida no RMSSD."
+  - claim: "Certas combinações de frequência e largura de pulso elevam de forma aguda a variabilidade da frequência cardíaca geral, refletida no SDNN, sem afetar a variabilidade da frequência cardíaca mediada pelo nervo vago, refletida no RMSSD."
     limitation: "Um único ensaio clínico randomizado cruzado em adultos saudáveis; apenas efeitos agudos da sessão, e as combinações de parâmetros não se generalizam."
   - claim: "A metanálise sobre depressão agrupou ensaios clínicos randomizados e participantes de uma literatura de ensaios pequenos."
     limitation: "Ensaios pequenos agrupados; heterogeneidade de protocolos e populações."
@@ -106,7 +106,7 @@ evidenceMap:
 - **Dispositivos de bem-estar para o consumidor.** Cápsulas vibratórias, clipes de orelha e discos de «infrassom» vendidos para calma, foco e sono. O que eles têm são alegações do fabricante; a distância entre essas alegações e a literatura clínica é exatamente o que esta página percorre.
 - **«Exercícios para o vago».** Respiração lenta, exposição ao frio, cantarolar, gargarejar. São práticas, não estimulação elétrica de coisa alguma, e as suas evidências são discutidas separadamente no final — os aspectos práticos estão em [exercícios para o nervo vago](/articles/vagus-nerve-exercises).
 
-Como «funciona?» esconde pelo menos três perguntas diferentes, passe qualquer alegação por esta lista antes de confiar nela: Qual intervenção está de fato sendo aplicada? Qual desfecho está em discussão — um desfecho regulatório, uma escala de sintomas ou um biomarcador como a variabilidade da frequência cardíaca (HRV ou VFC)? Que nível de evidência sustenta a alegação específica — uma liberação regulatória, um ensaio clínico randomizado ou uma extrapolação? Em qual população — pacientes diagnosticados ou consumidores saudáveis? Com quais parâmetros de estimulação, e eles foram otimizados ou arbitrários? Em comparação com o quê — uma simulação (sham) adequada, um controle ativo ou nada?
+Como a pergunta «funciona?» esconde pelo menos três perguntas diferentes, passe qualquer alegação por esta lista antes de confiar nela: Qual intervenção está de fato sendo aplicada? Qual desfecho está em discussão — um desfecho regulatório, uma escala de sintomas ou um biomarcador como a variabilidade da frequência cardíaca (HRV ou VFC)? Que nível de evidência sustenta a alegação específica — uma liberação regulatória, um ensaio clínico randomizado ou uma extrapolação? Em qual população — pacientes diagnosticados ou consumidores saudáveis? Com quais parâmetros de estimulação, e eles foram otimizados ou arbitrários? Em comparação com o quê — uma simulação (sham) adequada, um controle ativo ou nada?
 
 ## Como funciona?
 
@@ -120,11 +120,11 @@ E duas pessoas usando o mesmo dispositivo no mesmo ponto podem não estar fazend
 
 «Funcionar» é medido de três maneiras muito diferentes: desfechos regulatórios, escalas de sintomas e biomarcadores fisiológicos. Os órgãos reguladores aceitam dispositivos com base em desfechos clínicos definidos; os ensaios pedem que os participantes preencham questionários de sintomas; os estudos de fisiologia geralmente recorrem à HRV — e é aí que a área esbarra no seu problema central de medição.
 
-A forma de enquadrar importa. {{fact:claim.vagalTone}} [S10]. Na prática, os pesquisadores usam a HRV de mediação vagal — normalmente o RMSSD, explicado nas nossas páginas de conceitos sobre [RMSSD](/science/concepts/rmssd) e [SDNN](/science/concepts/sdnn) — como índice indireto do tônus vagal cardíaco, não como leitura direta.
+A forma de enquadrar importa. {{fact:claim.vagalTone}} [S10]. Na prática, os pesquisadores usam a HRV mediada pelo nervo vago — normalmente o RMSSD, explicado nas nossas páginas de conceitos sobre [RMSSD](/science/concepts/rmssd) e [SDNN](/science/concepts/sdnn) — como índice indireto do tônus vagal cardíaco, não como leitura direta.
 
-Quando esse indicador indireto foi posto à prova, o resultado foi incômodo para o marketing. Uma metanálise bayesiana viva de estudos simples-cegos, controlados por simulação, em participantes saudáveis constatou que a estimulação aguda na orelha não altera a HRV de mediação vagal em comparação com a simulação, e concluiu que não há sustentação para ela como biomarcador robusto da estimulação aguda [S3].
+Quando esse indicador indireto foi posto à prova, o resultado foi incômodo para o marketing. Uma metanálise bayesiana viva de estudos simples-cegos, controlados por simulação, em participantes saudáveis constatou que a estimulação aguda na orelha não altera a HRV mediada pelo nervo vago em comparação com a simulação, e concluiu que não há sustentação para ela como biomarcador robusto da estimulação aguda [S3].
 
-Um ensaio posterior de busca de parâmetros tornou o problema mais nítido. Certas combinações de frequência de estimulação e largura de pulso elevaram de forma aguda a HRV geral, refletida no SDNN, enquanto a HRV de mediação vagal, refletida no RMSSD, permaneceu inalterada [S4]. A métrica que um estudo acompanha pode decidir a história — um dos motivos pelos quais escrevemos tanto sobre [medir a HRV de forma consistente](/articles/how-to-measure-hrv-consistently), e um limite para o que qualquer leitura isolada consegue provar.
+Um ensaio posterior de busca de parâmetros tornou o problema mais nítido. Certas combinações de frequência de estimulação e largura de pulso elevaram de forma aguda a HRV geral, refletida no SDNN, enquanto a HRV mediada pelo nervo vago, refletida no RMSSD, permaneceu inalterada [S4]. A métrica que um estudo acompanha pode decidir a história — um dos motivos pelos quais escrevemos tanto sobre [medir a HRV de forma consistente](/articles/how-to-measure-hrv-consistently), e um limite para o que qualquer leitura isolada consegue provar.
 
 ## O que a influencia?
 
@@ -142,7 +142,7 @@ Um ensaio posterior de busca de parâmetros tornou o problema mais nítido. Cert
 
 **Depressão e sono: promissores, imaturos.** Para a depressão, uma metanálise agrupou {{fact:study.tan2023.depressionTrials}} sobre estimulação na orelha e relatou melhoras em escalas de sintomas depressivos [S5]. Para o sono, uma metanálise relatou melhora da qualidade do sono em pacientes com distúrbios do sono, considerando seus achados preliminares [S6], e uma metanálise independente sobre insônia relatou melhoras agrupadas em escalas de qualidade do sono e de gravidade da insônia, com evidências classificadas como baixas a muito baixas [S7]. As ressalvas dos próprios autores — subgrupos pequenos, qualidade das evidências baixa a muito baixa, métodos heterogêneos [S5, S7] — devem ser mencionadas junto com os efeitos agrupados. Trata-se de uma área de pesquisa promissora, não de uma terapia consolidada, e nada disso autoriza um dispositivo de bem-estar a prometer resultados sobre o humor ou o sono.
 
-**A história do biomarcador não se sustenta.** O marcador candidato de «sucesso» mais estudado — a HRV de mediação vagal — não responde de forma robusta à estimulação aguda nos estudos controlados por simulação [S3], e a métrica que se move pode ser diferente da métrica alegada [S4]. A conclusão honesta não é que a estimulação não faça nada; é que o biomarcador preferido da área hoje não cumpre o papel que o marketing lhe atribui.
+**A história do biomarcador não se sustenta.** O marcador candidato de «sucesso» mais estudado — a HRV mediada pelo nervo vago — não responde de forma robusta à estimulação aguda nos estudos controlados por simulação [S3], e a métrica que se move pode ser diferente da métrica alegada [S4]. A conclusão honesta não é que a estimulação não faça nada; é que o biomarcador preferido da área hoje não cumpre o papel que o marketing lhe atribui.
 
 **Eletricidade e respiração são vias diferentes.** A prática respiratória não é estimulação elétrica, e as suas evidências são de outro tipo. {{fact:claim.slowExhale}} [S14]. Em um estudo cruzado, acrescentar estimulação na orelha sincronizada com a expiração durante a respiração lenta cadenciada não elevou ainda mais a HRV em comparação com a simulação [S9] — a respiração lenta já estava fazendo esse trabalho. Isso não é evidência de que a respiração supere a eletricidade; não há evidências de comparação direta que as classifiquem para desfechos de bem-estar, e alegações de equivalência em qualquer direção merecem ceticismo. Os aspectos práticos estão em [exercícios para o nervo vago](/articles/vagus-nerve-exercises), [cantarolar](/articles/humming-breath-vagus), [exposição ao frio](/articles/cold-exposure-vagus-nerve) e [como aumentar a HRV naturalmente](/articles/how-to-raise-hrv-naturally); o panorama tecnológico mais amplo está em [Medicina elétrica: neuromodulação](/articles/electric-medicine-neuromodulation).
 
@@ -157,7 +157,7 @@ Um ensaio posterior de busca de parâmetros tornou o problema mais nítido. Cert
 ## O que ela não diz a você
 
 - **Uma liberação regulatória não é um aval de bem-estar.** Um dispositivo liberado para a dor da cefaleia em salvas foi aceito exatamente para isso. «Liberado pela FDA» em um anúncio de alívio do estresse é uma credencial emprestada.
-- **Uma alteração da HRV não prova ativação.** Nos estudos controlados por simulação, o marcador mais estudado não responde de forma confiável [S3], e a HRV geral pode se mover enquanto o componente de mediação vagal não se move [S4]. Uma leitura que sobe depois de uma sessão diz menos do que parece.
+- **Uma alteração da HRV não prova ativação.** Nos estudos controlados por simulação, o marcador mais estudado não responde de forma confiável [S3], e a HRV geral pode se mover enquanto o componente mediado pelo nervo vago não se move [S4]. Uma leitura que sobe depois de uma sessão diz menos do que parece.
 - **O «tônus vagal» não é lido diretamente.** Nenhum dispositivo, aplicativo ou vestível entrega a você o seu tônus vagal; a HRV é apenas um reflexo indireto. Qualquer produto que afirme o contrário está simplificando por definição.
 - **Os pacientes dos ensaios não são você.** As evidências clínicas reunidas em pacientes diagnosticados e supervisionados não descrevem automaticamente efeitos de bem-estar em usuários saudáveis — e os estudos de biomarcadores com voluntários saudáveis também não preveem desfechos clínicos.
 - **A segurança precisa ser declarada com honestidade.** Para o dispositivo de cefaleia liberado, a análise da FDA lista grupos nos quais a segurança e a eficácia não foram avaliadas e para os quais, portanto, o dispositivo não é indicado: crianças; pessoas com dispositivos implantados ativos, como marca-passos; gestantes; pessoas com hipertensão não controlada; e pessoas com histórico de doença cardíaca [S11]. Na literatura de pesquisa, a maioria dos eventos adversos relatados ficou restrita ao local da estimulação [S8]. Essas listas são específicas de cada dispositivo — cada produto tem as suas próprias advertências. Quem tem marca-passo, um dispositivo implantado ou uma doença cardíaca deve conversar com um profissional de saúde antes de experimentar qualquer estimulação elétrica. E nenhum dispositivo de consumo substitui o cuidado médico: nada nesta página significa «interrompa o seu tratamento», e mudanças nos sintomas devem ser conversadas com um profissional de saúde.
@@ -165,6 +165,6 @@ Um ensaio posterior de busca de parâmetros tornou o problema mais nítido. Cert
 
 ## No ONDA
 
-O ONDA é um aplicativo de respiração guiada e de retorno do ritmo cardíaco, não um dispositivo de estimulação: ele não aplica nenhum tipo de estimulação elétrica. Durante a prática, a câmera do iPhone fornece o pulso e a frequência respiratória ao vivo, e um Apple Watch acrescenta um retorno de coerência ao vivo — a pontuação própria do ONDA de concentração do ritmo, não uma medição clínica da variabilidade da frequência cardíaca. As linhas de base noturnas leem a HRV (armazenada como SDNN no Apple Health) de um Apple Watch ou de qualquer rastreador que sincronize com ele. O ONDA trabalha com a via respiratória descrita acima e não diagnostica, monitora nem trata nenhuma condição médica. Esta página existe porque a conversa sobre o «vago» contém tanto evidências, como os estudos acima, quanto muito marketing — e os dois merecem ser mantidos separados.
+O ONDA é um aplicativo de respiração guiada e de retorno do ritmo cardíaco, não um dispositivo de estimulação: ele não aplica nenhum tipo de estimulação elétrica. Durante a prática, a câmera do iPhone fornece o pulso e a frequência respiratória ao vivo, e um Apple Watch acrescenta um retorno de coerência ao vivo — a pontuação própria do ONDA de concentração do ritmo, não uma medição clínica da variabilidade da frequência cardíaca. As linhas de base noturnas leem a HRV (armazenada como SDNN no Apple Health) de um Apple Watch ou de qualquer rastreador que sincronize com ele. O ONDA trabalha com a via respiratória descrita acima e não diagnostica, não monitora nem controla nenhuma condição médica. Esta página existe porque a conversa sobre o «vago» contém tanto evidências, como os estudos acima, quanto muito marketing — e os dois merecem ser mantidos separados.
 
 > Informação educativa, não um diagnóstico nem um tratamento médico.

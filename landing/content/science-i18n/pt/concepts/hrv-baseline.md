@@ -2,7 +2,7 @@
 sourceHash: "33b9f01d78ea"
 title: "Linha de base da HRV: por que o seu próprio normal importa mais do que qualquer norma"
 metaTitle: "Linha de base da HRV: o seu normal, não uma norma"
-metaDescription: "A sua linha de base da HRV é a sua faixa típica, não uma média populacional. Por que ela supera as normas por idade, como o ONDA a constrói e o que uma mudança pode significar."
+metaDescription: "Sua linha de base da HRV é a sua faixa típica, não uma média populacional: por que supera as normas por idade, como o ONDA a constrói e o que uma mudança indica."
 shortAnswer: >
   A linha de base pessoal da HRV é o seu nível típico de variabilidade da
   frequência cardíaca e a dispersão normal em torno dele, construídos a partir
@@ -64,7 +64,7 @@ evidenceMap:
 
 ## O que é a linha de base da HRV?
 
-A linha de base pessoal da HRV é o seu nível típico de [variabilidade da frequência cardíaca](/glossary/heart-rate-variability) (HRV ou VFC) — a média em torno da qual as suas próprias leituras se acomodam — junto com a dispersão natural em torno dessa média. Ela é construída a partir de muitas leituras feitas em condições comparáveis, nunca de uma só. A linha de base responde a uma única pergunta: o que é normal *para você*, de modo que cada nova leitura possa ser comparada com a sua própria faixa (corredor), e não com o número de um desconhecido.
+A linha de base pessoal da HRV é o seu nível típico de [variabilidade da frequência cardíaca](/glossary/heart-rate-variability) (HRV ou VFC) — a média em torno da qual as suas próprias leituras se acomodam — junto com a dispersão natural em torno dessa média. Ela é construída a partir de muitas leituras feitas em condições comparáveis, nunca de uma só. A linha de base responde a uma única pergunta: o que é normal *para você*, de modo que cada nova leitura possa ser comparada com a sua própria faixa, e não com o número de um desconhecido.
 
 O contraste com as tabelas populacionais é justamente o ponto central. Uma revisão sistemática dos valores normais publicados concluiu que atualmente não há dados normativos consensuais para a HRV de curta duração e relatou grandes variações interindividuais entre estudos e entre pessoas [S3]. A idade estreita o quadro só um pouco. Em média, {{fact:hrv.age.trend}} [S2] — e os indivíduos variam muito em qualquer idade. As tabelas por idade que o ONDA publica respondem a "onde se situam as pessoas da minha idade", nunca a "qual deveria ser o meu número"; elas estão no artigo [HRV normal por idade](/articles/normal-hrv-by-age) e na ferramenta [calculadora de HRV](/tools/hrv).
 
@@ -94,11 +94,11 @@ A métrica precisa ficar fixa. O RMSSD e o SDNN resumem aspectos diferentes do r
 
 **Depende do contexto.** A prática específica de monitoramento com médias semanais móveis e coeficiente de variação vem da ciência do esporte, em que um valor mais baixo que o de um colega não indica necessariamente um estado fisiológico pior [S10]. A PPG de pulso acompanha os valores derivados do ECG em condições controladas de repouso [S8]. A variação sazonal, quando relatada, é fraca [S11]. E, como os achados de HRV são fáceis de superinterpretar, as revisões metodológicas alertam contra tirar conclusões demais deles [S4].
 
-**Não resolvido.** A janela exata que uma linha de base deve usar é uma escolha prática, não uma constante científica: os protocolos de pesquisa diferem da lógica de um app. As janelas do ONDA são lógica do app — documentadas abaixo, definidas uma única vez e não um consenso da área [S9].
+**Em debate.** A janela exata que uma linha de base deve usar é uma escolha prática, não uma constante científica: os protocolos de pesquisa diferem da lógica de um app. As janelas do ONDA são lógica do app — documentadas abaixo, definidas uma única vez e não um consenso da área [S9].
 
 ## O que ela não diz
 
-A linha de base é uma referência para perceber mudanças, não um veredito. Sair da faixa não significa que você esteja estressado ou mal. {{fact:claim.hrvNotStress}} [S1]. Uma saída pode estar ligada a uma noite curta, a uma febre, a um treino pesado ou a uma peculiaridade da medição — e só o contexto permite distingui-los. O inverso também vale: permanecer dentro da faixa não garante nada sobre a saúde, porque a HRV é uma ferramenta de pesquisa para estratificação de risco, não um marcador específico do fluxo simpático nem do equilíbrio simpatovagal [S1].
+A linha de base é uma referência para perceber mudanças, não um veredito. {{fact:claim.hrvNotStress}} [S1] — e o mesmo vale para sair da faixa. Uma saída pode estar ligada a uma noite curta, a uma febre, a um treino pesado ou a uma peculiaridade da medição — e só o contexto permite distingui-los. O inverso também vale: permanecer dentro da faixa não garante nada sobre a saúde, porque a HRV é uma ferramenta de pesquisa para estratificação de risco, não um marcador específico do fluxo simpático nem do equilíbrio simpatovagal [S1].
 
 A interpretação é realmente difícil — uma revisão de métodos alerta que a facilidade de acesso aos dados de HRV não deve ocultar o quanto é fácil interpretar mal os achados [S4]. Os sinais do ONDA são construídos com esse limite em mente: são comparações descritivas com a sua própria linha de base, não medidas de estresse nem uma avaliação médica [S9]. O que fazer diante de uma leitura baixa específica está em [o que fazer depois de uma leitura baixa de HRV](/articles/what-to-do-after-low-hrv-reading). Sintomas persistentes — dor no peito, falta de ar, desmaios — são assunto para um médico, não para uma faixa.
 

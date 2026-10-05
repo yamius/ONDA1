@@ -1,6 +1,6 @@
 ---
 sourceHash: "7b68393346e3"
-title: "RMSSD: definicja, znaczenie i pomiar"
+title: "RMSSD: co odzwierciedla ta miara HRV, a czego nie"
 metaTitle: "RMSSD: definicja, znaczenie i pomiar"
 metaDescription: "RMSSD to miara HRV odzwierciedlająca zależne od nerwu błędnego zmiany częstości serca. Co mierzy, jak szacują ją urządzenia ubieralne i czego nie powie."
 shortAnswer: >
@@ -17,7 +17,7 @@ keyPoints:
   - "Urządzenia ubieralne szacują RMSSD z sygnału tętna, a ich zgodność z EKG zależy od urządzenia i warunków."
   - "Wartości zależą od kontekstu: liczą się metoda zapisu, czas trwania, pozycja ciała, oddech i pora dnia."
   - "Pojedyncza wartość RMSSD nie jest diagnozą ani odczytem stresu; trendy względem twojej osobistej linii bazowej zwykle mówią więcej."
-imageAlt: "Cienka morska linia rytmu serca na białym tle, z lekko zmieniającymi się odstępami między uderzeniami — wizualizacja zmienności rytmu serca z uderzenia na uderzenie."
+imageAlt: "Cienka turkusowa linia rytmu serca na białym tle, z lekko zmieniającymi się odstępami między uderzeniami — wizualizacja zmienności rytmu serca z uderzenia na uderzenie."
 evidenceMap:
   - claim: "RMSSD to pierwiastek ze średniej kwadratów kolejnych różnic między sąsiednimi uderzeniami serca; to preferowana miara dla krótkich zapisów."
     limitation: "Standard definicyjny i metodologiczny; sam w sobie nie mówi nic o stanie zdrowia."
@@ -73,9 +73,9 @@ Oddech zostawia w tym samym oknie wyraźny ślad. Przy każdym wdechu serce lekk
 
 Obliczenie jest proste. Z serii odstępów między uderzeniami: weź różnicę między każdą parą sąsiednich odstępów, podnieś różnice do kwadratu, uśrednij je i wyciągnij pierwiastek kwadratowy [S1]. Wszystko, co „wie” RMSSD, zależy od dokładności tych odstępów — dlatego metoda zapisu ma większe znaczenie niż arytmetyka.
 
-Metodą referencyjną jest EKG, które wykrywa elektryczny ślad każdego uderzenia serca. Urządzenia ubieralne (wearable) szacują natomiast odstępy z sygnału tętna na skórze (fotopletyzmografia, PPG); wynik często nazywa się zmiennością tętna (PRV). Zgodność obu metod zależy od miary i warunków — zwykle jest lepsza w spoczynku przy dobrym sygnale, a słabsza przy ruchu lub złym kontakcie [S6, S7]. Praktyczny szczegół dla użytkowników Apple Watch: {{fact:applewatch.hrv.healthkit}} [S9]. Co do nowszego sprzętu: {{fact:applewatch.hrv.variants2026}} [S10]. Apple nie podało, jak obliczane jest Recovery HRV. Niezależnie od tego {{fact:applewatch.hrv.rmssdType}} [S11], co pozwala aplikacjom odczytywać z Apple Health wartość typu RMSSD.
+Metodą referencyjną jest EKG, które wykrywa elektryczny ślad każdego uderzenia serca. Urządzenia ubieralne (wearable) szacują natomiast odstępy z sygnału tętna na skórze (fotopletyzmografia, PPG); wynik często nazywa się zmiennością tętna. Zgodność obu metod zależy od miary i warunków — zwykle jest lepsza w spoczynku przy dobrym sygnale, a słabsza przy ruchu lub złym kontakcie [S6, S7]. Praktyczny szczegół dla użytkowników Apple Watch: {{fact:applewatch.hrv.healthkit}} [S9]. W nowszym sprzęcie: {{fact:applewatch.hrv.variants2026}} [S10]. Apple nie podało, jak obliczane jest Recovery HRV. Niezależnie od tego {{fact:applewatch.hrv.rmssdType}} [S11], co pozwala aplikacjom odczytywać z Apple Health wartość typu RMSSD.
 
-Kontekst jest częścią pomiaru. RMSSD zależy od pozycji ciała, oddechu, pory dnia i długości zapisu [S5, S8]. Większość publikowanych wartości referencyjnych zebrano z krótkich zapisów dziennych w kontrolowanych warunkach [S5], a konsumenckie urządzenia ubieralne podają głównie średnie nocne — to różne konteksty, których wartości nie są bezpośrednio wymienne. Dla skali: zbiorcze spoczynkowe RMSSD z krótkich zapisów dziennych wynosi {{fact:hrv.pooled.daytime}} [S5] — to uśredniona wartość dzienna, a nie wartość nocna ani norma dla wieku. Tabele według przedziałów wiekowych publikowane przez ONDA to tabele nocnego RMSSD i znajdziesz je w artykule o [prawidłowym HRV według wieku](/articles/normal-hrv-by-age). Praktyczną stronę spójnej osobistej rutyny pomiarowej omawia poradnik [jak mierzyć HRV w spójny sposób](/articles/how-to-measure-hrv-consistently).
+Kontekst jest częścią pomiaru. RMSSD zależy od pozycji ciała, oddechu, pory dnia i długości zapisu [S5, S8]. Większość publikowanych wartości referencyjnych zebrano z krótkich zapisów dziennych w kontrolowanych warunkach [S5], a konsumenckie urządzenia ubieralne podają głównie średnie nocne — to różne konteksty, których wartości nie są bezpośrednio wymienne. Dla porównania: zbiorcze spoczynkowe RMSSD z krótkich zapisów dziennych wynosi {{fact:hrv.pooled.daytime}} [S5] — to uśredniona wartość dzienna, a nie wartość nocna ani norma dla wieku. Tabele według przedziałów wiekowych publikowane przez ONDA to tabele nocnego RMSSD i znajdziesz je w artykule o [prawidłowym HRV według wieku](/articles/normal-hrv-by-age). Praktyczną stronę spójnej osobistej rutyny pomiarowej omawia poradnik [jak mierzyć HRV w spójny sposób](/articles/how-to-measure-hrv-consistently).
 
 ## Co wpływa na RMSSD?
 

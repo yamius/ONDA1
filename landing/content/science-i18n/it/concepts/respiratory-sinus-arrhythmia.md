@@ -97,14 +97,14 @@ L'RSA si ricava dagli intervalli tra i battiti registrati insieme al respiro, op
 
 **Dipende dal contesto.** L'entità dell'effetto di postura, stato ed età proviene da dati di laboratorio e di revisione con protocolli diversi [S4, S6]; quanto cambi in una data persona non è qualcosa che uno studio di popolazione possa prevedere.
 
-**Dibattuto.** Se il principale generatore dell'RSA sia un generatore centrale del ritmo respiratorio o il baroriflesso [S4, S5].
+**Dibattuto.** Se a generare prevalentemente l'RSA sia un generatore centrale del ritmo respiratorio o il baroriflesso [S4, S5].
 
 **Sconosciuto — e le ipotesi.** Perché il corpo abbia l'RSA non è stato del tutto chiarito [S4]. Un'ipotesi, sostenuta da un esperimento su cani anestetizzati, è che l'RSA renda più efficienti gli scambi gassosi nei polmoni, accordando i battiti alle fasi del respiro [S7]. Uno studio di modellizzazione successivo ha trovato vantaggi negli scambi gassosi non legati all'RSA e ha proposto invece che l'RSA riduca il lavoro che il cuore deve compiere, mantenendo l'anidride carbonica nei suoi valori normali [S8]. Entrambe sono ipotesi; nessuna è accertata, e in parte sono in concorrenza.
 
 ## Che cosa non ti dice
 
 - **Non è un disturbo del ritmo.** Nonostante il nome, l'RSA è una caratteristica normale del cuore sano a riposo [S5]. Un ritmo cardiaco irregolare per altri motivi è un'altra questione, da affrontare con un medico.
-- **Non è una lettura pulita del tono vagale.** L'impostazione conta. {{fact:claim.vagalTone}} [S3]. L'RSA è fortemente modellata dal respiro stesso: i parametri respiratori possono confondere la sua relazione con il tono vagale cardiaco [S9], e le due grandezze possono dissociarsi in condizioni specifiche [S1, S9]. Un'RSA più ampia durante la respirazione lenta riflette il modo di respirare almeno quanto un eventuale cambiamento duraturo.
+- **Non è una lettura pulita del tono vagale.** Le parole contano. {{fact:claim.vagalTone}} [S3]. L'RSA è fortemente modellata dal respiro stesso: i parametri respiratori possono confondere la sua relazione con il tono vagale cardiaco [S9], e le due grandezze possono dissociarsi in condizioni specifiche [S1, S9]. Un'RSA più ampia durante la respirazione lenta riflette il modo di respirare almeno quanto un eventuale cambiamento duraturo.
 - **Non è un indice di salute né una diagnosi.** {{fact:claim.hrvNotStress}} [S1], e lo stesso vale per l'ampiezza dell'RSA: un valore alto o basso, da solo, non stabilisce forma fisica, salute o malattia.
 - **Non è una guida pratica.** Come respirare lentamente, e perché possa aiutare, è spiegato nella [respirazione coerente](/articles/coherent-breathing-guide), nella guida alla [respirazione di risonanza](/resonance-breathing) e nello [strumento per la respirazione di risonanza](/tools/resonance-breathing).
 

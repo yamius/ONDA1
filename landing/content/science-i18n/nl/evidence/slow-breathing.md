@@ -8,7 +8,7 @@ shortAnswer: >
   vaak rond het resonantiebereik. Het wordt gebruikt om opwinding te dempen, de
   stemming te ondersteunen en de bloeddruk te verlagen. De hartslagvariabiliteit
   stijgt tijdens en na het oefenen, de bloeddruk daalt bescheiden in
-  samengevoegde studies, en stress, angst en zelfbeoordeelde slaap verbeteren
+  samengevoegde studies, en stress, angst en zelfgerapporteerde slaap verbeteren
   vaak. Op zichzelf toont het niet aan dat de ene benoemde techniek beter is dan
   de andere, en de meeste studies zijn klein en kort.
 keyPoints:
@@ -18,7 +18,7 @@ keyPoints:
   - "Ademoefeningen laten kleine tot middelgrote verbeteringen zien in stress, angst en depressieve klachten, vooral in studies met enig risico op vertekening."
   - "Zelfgerapporteerde slaap verbetert vaak na langzaam ademen voor het slapengaan, terwijl objectieve slaapmetingen geen eenduidig beeld geven."
   - "Benoemde technieken zoals ‘vier-zeven-acht’-ademhaling, boxademhaling en cyclisch zuchten berusten op losse of kleine studies, niet op meta-analyses."
-  - "Langzaam ademen is een goedkope oefening, geen vervanging van een behandeling, en je stopt ermee als het duizeligheid of ongemak geeft."
+  - "Langzaam ademen is een goedkope oefening, geen vervanging van een behandeling, en stop ermee als het duizeligheid of ongemak geeft."
 imageAlt: "Twee langzame ademcycli getekend als cirkels die langs een zachte golf groeien en krimpen, waarbij de grootste cirkel van elke cyclus groen is ingekleurd — het ritme van een langzame ademhaling."
 evidenceMap:
   - claim: "Hartslagvariabiliteit en baroreflexgevoeligheid zijn het grootst wanneer de ademhaling vertraagt tot rond het resonantietempo, dat van persoon tot persoon verschilt."
@@ -55,7 +55,7 @@ evidenceMap:
     limitation: "Weinig en kleine studies; verschillende gebruikten één dag oefening."
   - claim: "De studies die slaap objectief maten, gebruikten protocollen van één dag, en de auteurs vragen om langere studies van hoge kwaliteit."
     limitation: "De eigen beoordeling van de auteurs."
-  - claim: "Gedoseerd langzaam ademen gaat in sommige studies samen met minder pijn, maar het mechanisme is niet vastgesteld."
+  - claim: "Langzaam ademen in een vast tempo gaat in sommige studies samen met minder pijn, maar het mechanisme is niet vastgesteld."
     limitation: "Uiteenlopende experimentele pijnmodellen en klinische situaties; weinig studies."
   - claim: "Bij COPD verbeterden ademoefeningen de functionele inspanningscapaciteit vergeleken met geen interventie, zonder consistente effecten op kortademigheid of kwaliteit van leven."
     limitation: "Vooral ademen met getuite lippen, buikademhaling en yoga-ademhaling in plaats van langzaam ademen als zodanig; geen blindering."
@@ -112,7 +112,7 @@ De vergelijking is het lastige deel. Mensen weten altijd of ze langzaam ademen, 
 
 **Slaap: opkomend.** Een systematische review van {{fact:study.eide2026.studies}} vond dat de zelfgerapporteerde slaapduur en slaapkwaliteit verbeterden na langzaam ademen voor het slapengaan, terwijl studies die slaap objectief maten geen eenduidig beeld gaven en vaak maar één dag oefening gebruikten [S7]. Zie [tot rust komen voor het slapengaan](/articles/wind-down-before-sleep-breathing).
 
-**Pijn: opkomend.** Gedoseerd langzaam ademen gaat in sommige studies samen met minder pijn, maar het mechanisme is niet vastgesteld en het bewijs is mager [S8].
+**Pijn: opkomend.** Langzaam ademen in een vast tempo gaat in sommige studies samen met minder pijn, maar het mechanisme is niet vastgesteld en het bewijs is mager [S8].
 
 **Longaandoeningen: afhankelijk van de context.** Bij COPD verbeterden ademoefeningen de functionele inspanningscapaciteit vergeleken met geen interventie, zonder consistente effecten op kortademigheid of kwaliteit van leven [S9]. Bij astma kunnen ademoefeningen enig positief effect hebben op kwaliteit van leven, hyperventilatieklachten en longfunctie, met matige tot zeer lage zekerheid [S10]. Deze reviews omvatten verschillende soorten ademoefeningen, niet alleen langzaam ademen.
 
@@ -136,12 +136,12 @@ Geen enkele benoemde techniek is in een meta-analyse beter gebleken dan gewoon l
 ## Wat het je niet vertelt
 
 - **Het is op zichzelf geen behandeling.** Langzaam ademen is een goedkope oefening waarbij weinig bijwerkingen te verwachten zijn [S2], maar het vervangt geen medicatie, psychotherapie of medische zorg bij hoge bloeddruk, angst, depressie, slapeloosheid, pijn of longziekten. Niets hier betekent ‘stop met je behandeling’.
-- **Een hogere meting tijdens het oefenen is geen uitkomst.** HRV stijgt per definitie tijdens langzaam ademen [S2]; dat laat niet zien dat bloeddruk, stemming of slaap zijn veranderd.
+- **Een hogere meting tijdens het oefenen is geen uitkomst.** HRV stijgt tijdens langzaam ademen juist doordat de oefening daarop gericht is [S2]; dat laat niet zien dat bloeddruk, stemming of slaap zijn veranderd.
 - **De studies zijn klein en kort.** De heterogeniteit is hoog [S4], de studies met het apparaat waren kort en deels verbonden aan de fabrikant [S5], een risico op vertekening komt vaak voor [S6], en slaapstudies duurden vaak één dag [S7]. Effecten kunnen kleiner worden als er betere studies komen.
 - **Veiligheidsgegevens zijn mager.** In de studies bij COPD werden geen significante bijwerkingen gemeld [S9]; de review over astma beoordeelde ze niet [S10]; en er is geen review van bijwerkingen van langzaam ademen gevonden. Uit gezond verstand: stop als je je duizelig of licht in het hoofd voelt, tintelingen krijgt of kortademig wordt, en adem gewoon verder. Technieken met adem inhouden — boxademhaling en ‘vier-zeven-acht’-ademhaling horen daarbij — bespreek je tijdens de zwangerschap of bij hart- of longziekten het best eerst met een arts. Pijn op de borst, flauwvallen, ernstige kortademigheid of hartkloppingen met duizeligheid vragen om medische aandacht, niet om een ademoefening.
 
 ## In ONDA
 
-De oefeningen van ONDA gebruiken langzaam, begeleid ademen zonder vaste numerieke ademhalingspacer. Tijdens het oefenen toont de camera van de iPhone je pols live en een schatting van je ademtempo, en een Apple Watch voegt een live coherentiescore toe — ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is, geen klinische meting van hartslagvariabiliteit. Er is geen eigen studie naar de werkzaamheid van ONDA, en de bevindingen op deze pagina laten niet zien wat ONDA wel of niet bereikt. ONDA stelt geen diagnoses en behandelt geen aandoeningen. Zie [wat ONDA meet](/measurements).
+De oefeningen van ONDA gebruiken langzaam, begeleid ademen zonder vaste, numerieke ademhalingsgids. Tijdens het oefenen toont de camera van de iPhone je pols live en een schatting van je ademtempo, en een Apple Watch voegt een live coherentiescore toe — ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is, geen klinische meting van hartslagvariabiliteit. Er is geen eigen studie naar de werkzaamheid van ONDA, en de bevindingen op deze pagina laten niet zien wat ONDA wel of niet bereikt. ONDA stelt geen diagnoses en behandelt geen aandoeningen. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

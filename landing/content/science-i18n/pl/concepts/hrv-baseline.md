@@ -2,7 +2,7 @@
 sourceHash: "33b9f01d78ea"
 title: "Linia bazowa HRV: dlaczego twoja własna norma znaczy więcej niż jakakolwiek tabela"
 metaTitle: "Linia bazowa HRV: twoja norma, nie tabela"
-metaDescription: "Linia bazowa HRV to twój własny typowy zakres, a nie średnia populacyjna. Dlaczego wygrywa z normami wiekowymi, jak buduje ją ONDA i co może znaczyć zmiana."
+metaDescription: "Linia bazowa HRV to twój własny typowy zakres, a nie średnia populacyjna. Dlaczego wygrywa z normami wiekowymi, jak buduje ją ONDA i co zmiana może, a czego nie może znaczyć."
 shortAnswer: >
   Linia bazowa HRV to twój osobisty typowy poziom zmienności rytmu serca (HRV)
   i jego normalny rozrzut, zbudowane z wielu odczytów wykonanych w
@@ -13,13 +13,13 @@ shortAnswer: >
   jest diagnozą — to punkt odniesienia, który pozwala zauważyć zmianę.
 keyPoints:
   - "Osobista linia bazowa HRV to twój typowy poziom HRV i jego normalny rozrzut, zbudowane z wielu odczytów — nigdy z jednego."
-  - "Ludzie w tym samym wieku różnią się tak bardzo, a urządzenia i miary tak się od siebie różnią, że porównywanie twojego HRV z cudzym jest niemal bez sensu."
+  - "Ludzie w tym samym wieku różnią się tak bardzo, a urządzenia i miary są tak niejednolite, że porównywanie twojego HRV z cudzym jest niemal bez sensu."
   - "ONDA buduje linię bazową z okna obejmującego wiele nocy twoich własnych odczytów i porównuje każdą noc z twoim osobistym korytarzem."
   - "Jeden odczyt poza korytarzem to zwykle szum; uwagi wymaga utrzymujące się przesunięcie przez dni lub tygodnie."
   - "Niestabilne warunki pomiaru, choroba, zmiana treningu, nowe urządzenie lub inna miara mogą przesuwać odczyty albo psuć linię bazową."
   - "Wyjście poza korytarz nie oznacza, że jesteś zestresowany lub chory, a pozostawanie w nim nie gwarantuje zdrowia."
   - "Linia bazowa to punkt odniesienia do zauważania zmian, a nie diagnoza ani ocena medyczna."
-imageAlt: "Rząd nocnych punktów biegnący wąskim morskim korytarzem wewnątrz szerszego szarego pasa, z jednym punktem opadającym tuż poza niego — odczyty porównywane z twoim własnym normalnym zakresem."
+imageAlt: "Rząd nocnych punktów biegnący wąskim turkusowym korytarzem wewnątrz szerszego szarego pasa, z jednym punktem opadającym tuż poza niego — odczyty porównywane z twoim własnym normalnym zakresem."
 evidenceMap:
   - claim: "Osobista linia bazowa wymaga wielu odczytów; pojedyncze zapisy jej nie wyznaczają."
     limitation: "Przegląd narracyjny dotyczący monitorowania sportowców; zasada jest ogólna, ale konkretne protokoły dotyczą praktyki sportowej."
@@ -97,7 +97,7 @@ Miara musi pozostać ta sama. RMSSD i SDNN opisują różne aspekty rytmu serca 
 
 ## Czego ci nie powie
 
-Linia bazowa to punkt odniesienia do zauważania zmian, a nie werdykt. Wyjście poza korytarz nie oznacza, że jesteś zestresowany lub chory: {{fact:claim.hrvNotStress}} [S1]. Takie wyjście może wiązać się z krótką nocą, gorączką, ciężkim treningiem lub osobliwością pomiaru — i tylko kontekst pozwala je rozróżnić. Działa to też w drugą stronę: pozostawanie w korytarzu niczego nie gwarantuje w kwestii zdrowia, bo HRV to badawcze narzędzie stratyfikacji ryzyka, a nie swoisty marker aktywności współczulnej ani równowagi współczulno-przywspółczulnej [S1].
+Linia bazowa to punkt odniesienia do zauważania zmian, a nie werdykt. {{fact:claim.hrvNotStress}} [S1] — i to samo dotyczy wyjścia poza korytarz. Takie wyjście może wiązać się z krótką nocą, gorączką, ciężkim treningiem lub osobliwością pomiaru — i tylko kontekst pozwala je rozróżnić. Działa to też w drugą stronę: pozostawanie w korytarzu niczego nie gwarantuje w kwestii zdrowia, bo HRV to badawcze narzędzie stratyfikacji ryzyka, a nie swoisty marker aktywności współczulnej ani równowagi współczulno-przywspółczulnej [S1].
 
 Interpretacja jest naprawdę trudna — przegląd metod ostrzega, że łatwy dostęp do danych o HRV nie powinien przesłaniać tego, jak łatwo źle odczytać wyniki [S4]. Sygnały ONDA zbudowano z myślą o tej granicy: to opisowe porównania z twoją własną linią bazową, a nie pomiary stresu ani ocena medyczna [S9]. Co zrobić z konkretnym niskim odczytem, omawia artykuł [co zrobić po niskim odczycie HRV](/articles/what-to-do-after-low-hrv-reading). Utrzymujące się objawy — ból w klatce piersiowej, duszność, omdlenia — to sprawa dla lekarza, a nie dla korytarza.
 
@@ -105,10 +105,10 @@ Interpretacja jest naprawdę trudna — przegląd metod ostrzega, że łatwy dos
 
 ONDA buduje linię bazową dokładnie tak, jak opisuje ta strona, a okna są zdefiniowane w jednym miejscu, tutaj:
 
-- **Okno linii bazowej.** Osobista linia bazowa dla HRV, tętna spoczynkowego i częstości oddechu powstaje z twoich własnych odczytów z okresu: {{fact:baseline.window}}.
-- **Minimum.** Zanim jakikolwiek sygnał zostanie w ogóle odczytany, potrzeba co najmniej tylu nocy z prawidłowymi danymi: {{fact:baseline.minNights}}.
+- **Okno linii bazowej.** Osobista linia bazowa dla HRV, tętna spoczynkowego i częstości oddechu powstaje z twoich własnych odczytów z okresu {{fact:baseline.window}}.
+- **Minimum.** Zanim jakikolwiek sygnał zostanie w ogóle odczytany, potrzeba co najmniej {{fact:baseline.minNights}} z prawidłowymi danymi.
 - **Porównanie.** {{fact:baseline.compare}}.
-- **Okno korytarza.** Korytarz sygnalizacji świetlnej oblicza się z okresu: {{fact:baseline.corridor}}.
+- **Okno korytarza.** Korytarz sygnalizacji świetlnej oblicza się z okresu {{fact:baseline.corridor}}.
 - **Miara.** Linia bazowa odczytuje wartości HRV zapisane w Apple Health — z Apple Watch lub innego urządzenia, które synchronizuje tam dane o sercu [S9] — a {{fact:applewatch.hrv.healthkit}}.
 
 Aplikacja nie diagnozuje, nie leczy ani nie monitoruje żadnej choroby i nie zastępuje opieki medycznej [S9]. Historie znajdziesz w artykułach — [twoja linia bazowa wie pierwsza](/articles/your-baseline-knows-first) i [co zapisuje twój Apple Watch](/articles/what-your-apple-watch-records) — a obliczenia w [narzędziu linii bazowej](/tools/baseline) i [kalkulatorze HRV](/tools/hrv).

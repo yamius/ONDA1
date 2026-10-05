@@ -13,7 +13,7 @@ shortAnswer: >
 keyPoints:
   - "Oddechowa niemiarowość zatokowa to wzrost i spadek częstości serca w rytmie oddechu: szybciej na wdechu, wolniej na wydechu."
   - "To normalna cecha zdrowego serca w spoczynku, a nie zaburzenie rytmu serca, mimo słowa „niemiarowość” w nazwie."
-  - "Większość tego zjawiska przenosi regulacja serca przez nerw błędny; to, jak oddech i odruch z baroreceptorów wspólnie je wytwarzają, wciąż jest przedmiotem sporu."
+  - "Za większość tego zjawiska odpowiada regulacja serca przez nerw błędny; to, jak oddech i odruch z baroreceptorów wspólnie je wytwarzają, wciąż jest przedmiotem sporu."
   - "Jest większa przy wolnym, głębokim oddychaniu i w pozycji leżącej, a mniejsza przy szybkim oddychaniu i w czasie wysiłku."
   - "W krótkich zapisach spoczynkowych jest głównym źródłem zmienności rytmu serca — dlatego oddech tak wyraźnie zmienia RMSSD."
   - "Ponieważ sam oddech zmienia jej wielkość, RSA nie jest czystym odczytem napięcia nerwu błędnego."
@@ -28,11 +28,11 @@ evidenceMap:
     limitation: "Podsumowanie głównej drogi odprowadzającej; istnieją też inne wpływy mechaniczne i odruchowe."
   - claim: "Za główne mechanizmy uznaje się modulację aktywności nerwu błędnego w sercu przez ośrodkowy napęd oddechowy i odruch z rozciągania płuc, a RSA rośnie wraz z aktywnością nerwu błędnego w sercu."
     limitation: "Stwierdzenie wprowadzające z pracy doświadczalnej; względny udział każdego mechanizmu pozostaje sporny."
-  - claim: "Czy RSA wytwarza głównie odruch z baroreceptorów, czy ośrodkowy ośrodek oddechowy, pozostaje nierozstrzygnięte i aktywnie dyskutowane."
+  - claim: "Czy RSA wytwarza głównie odruch z baroreceptorów, czy centralny ośrodek oddechowy, pozostaje nierozstrzygnięte i aktywnie dyskutowane."
     limitation: "Przegląd spornej literatury; metody i badane grupy różnią się między pracami po obu stronach sporu."
   - claim: "Powszechnie przyjmuje się, że w powstawaniu RSA współdziałają elementy ośrodkowe, obwodowe i mechaniczne."
     limitation: "Stwierdzenie syntetyczne; udział każdego elementu zależy od wzorca oddychania i warunków."
-  - claim: "Według jednego poglądu korelacja ciśnienia krwi i odstępów między uderzeniami serca w częstotliwościach oddechowych odzwierciedla wpływ oddechu na obie te wielkości, a nie fizjologię odruchu z baroreceptorów."
+  - claim: "Według jednego poglądu korelacja ciśnienia krwi i odstępów między uderzeniami serca przy częstotliwościach oddechowych odzwierciedla wpływ oddechu na obie te wielkości, a nie fizjologię odruchu z baroreceptorów."
     limitation: "Synteza jednego autora w długotrwałym sporze; inni badacze przypisują odruchowi z baroreceptorów większą rolę."
   - claim: "RSA jest mała przy szybkim oddychaniu i duża przy wolnym."
     limitation: "Zależność na poziomie grupy; tempo oddechu, przy którym RSA jest największa, różni się między osobami."
@@ -74,9 +74,9 @@ Badacze zalecają, by tego terminu używać właśnie dla tego związanego z odd
 
 ## Jak to działa?
 
-**Co jest ustalone.** RSA przenosi głównie nerw błędny: to wywołane oddechem przyspieszanie i zwalnianie serca za pośrednictwem regulacji przez nerw błędny [S1]. Uważa się, że w mechanizmie uczestniczą oddechowy napęd mózgu i odruchy z rozciągania płuc, które działają na odpływ nerwu błędnego do serca, a RSA rośnie, gdy ten wpływ nerwu błędnego na serce się wzmacnia [S7].
+**Co jest ustalone.** Za RSA odpowiada głównie nerw błędny: to wywołane oddechem przyspieszanie i zwalnianie serca za pośrednictwem regulacji przez nerw błędny [S1]. Uważa się, że w mechanizmie uczestniczą oddechowy napęd mózgu i odruchy z rozciągania płuc, które działają na odpływ nerwu błędnego do serca, a RSA rośnie, gdy ten wpływ nerwu błędnego na serce się wzmacnia [S7].
 
-**Co wciąż jest modelem lub przedmiotem sporu.** To, jak dokładnie oddech i krążenie razem wytwarzają RSA, nie jest rozstrzygnięte. Jeden z długotrwałych sporów dotyczy tego, czy wytwarza ją głównie ośrodkowy ośrodek oddechowy w pniu mózgu, czy odruch z baroreceptorów (baroreflex) — pętla sprzężenia zwrotnego regulująca ciśnienie krwi [S4]. Według jednego poglądu sprzężenie ciśnienia krwi z odstępami między uderzeniami serca w częstotliwościach oddechowych odzwierciedla głównie wpływ oddechu na obie te wielkości, a nie fizjologię odruchu z baroreceptorów [S5]; inni przypisują temu odruchowi większą rolę. Szeroko przyjęte stanowisko pośrednie mówi, że współdziałają tu elementy ośrodkowe, obwodowe i mechaniczne [S4]. W praktyce ta strona traktuje drogę przez nerw błędny jako ustaloną, a względny udział każdego z mechanizmów — jako kwestię otwartą.
+**Co wciąż jest modelem lub przedmiotem sporu.** To, jak dokładnie oddech i krążenie razem wytwarzają RSA, nie jest rozstrzygnięte. Jeden z długotrwałych sporów dotyczy tego, czy wytwarza ją głównie ośrodek oddechowy w pniu mózgu, czy odruch z baroreceptorów (baroreflex) — pętla sprzężenia zwrotnego regulująca ciśnienie krwi [S4]. Według jednego poglądu sprzężenie ciśnienia krwi z odstępami między uderzeniami serca przy częstotliwościach oddechowych odzwierciedla głównie wpływ oddechu na obie te wielkości, a nie fizjologię odruchu z baroreceptorów [S5]; inni przypisują temu odruchowi większą rolę. Szeroko przyjęte stanowisko pośrednie mówi, że współdziałają tu elementy ośrodkowe, obwodowe i mechaniczne [S4]. W praktyce ta strona traktuje drogę przez nerw błędny jako ustaloną, a względny udział każdego z mechanizmów — jako kwestię otwartą.
 
 To, dlaczego wolny oddech tak bardzo zwiększa RSA — związek z rezonansem i odruchem z baroreceptorów — jest osobnym pytaniem o mechanizm; planujemy mu poświęcić oddzielną stronę o oddechu i HRV.
 
@@ -93,7 +93,7 @@ RSA odczytuje się z odstępów między uderzeniami serca rejestrowanych razem z
 
 ## Co pokazują badania?
 
-**Ustalone.** RSA jest normalną cechą serca w spoczynku [S5], przenoszoną głównie przez regulację z udziałem nerwu błędnego [S1, S7]. Jest większa przy wolnym i głębokim oddychaniu, a mniejsza przy szybkim [S4, S5], i w krótkich zapisach spoczynkowych stanowi główne źródło zmienności rytmu serca [S1].
+**Ustalone.** RSA jest normalną cechą serca w spoczynku [S5], zależną głównie od regulacji przez nerw błędny [S1, S7]. Jest większa przy wolnym i głębokim oddychaniu, a mniejsza przy szybkim [S4, S5], i w krótkich zapisach spoczynkowych stanowi główne źródło HRV [S1].
 
 **Zależy od kontekstu.** Wielkość wpływu pozycji ciała, stanu i wieku pochodzi z danych laboratoryjnych i przeglądów o różnych protokołach [S4, S6]; badanie populacyjne nie przewidzi, jak bardzo zmieni się ona u konkretnej osoby.
 
@@ -103,7 +103,7 @@ RSA odczytuje się z odstępów między uderzeniami serca rejestrowanych razem z
 
 ## Czego to nie mówi
 
-- **To nie jest zaburzenie rytmu.** Mimo nazwy RSA jest normalną cechą zdrowego serca w spoczynku [S5]. Rytm serca nieregularny z innych powodów to zupełnie inna sprawa i należy z nim pójść do lekarza.
+- **To nie jest zaburzenie rytmu.** Mimo nazwy RSA jest normalną cechą zdrowego serca w spoczynku [S5]. Rytm serca nieregularny z innych powodów to inna sprawa i wymaga konsultacji z lekarzem.
 - **To nie jest czysty odczyt napięcia nerwu błędnego.** Ważne jest ujęcie. {{fact:claim.vagalTone}} [S3]. RSA silnie zależy od samego oddechu: parametry oddechowe mogą zaburzać jej związek z napięciem nerwu błędnego w sercu [S9], a w określonych warunkach te dwie wielkości się rozchodzą [S1, S9]. Większa RSA w czasie wolnego oddychania odzwierciedla wzorzec oddechu co najmniej w takim samym stopniu jak jakąkolwiek trwałą zmianę.
 - **To nie jest wskaźnik zdrowia ani diagnoza.** {{fact:claim.hrvNotStress}} [S1] — i to samo dotyczy wielkości RSA: duża czy mała wartość sama w sobie nie świadczy o kondycji, zdrowiu ani chorobie.
 - **To nie jest instrukcja praktyki.** Jak oddychać wolno i dlaczego może to pomagać, omawiamy w artykule o [oddychaniu koherentnym](/articles/coherent-breathing-guide), w przewodniku po [oddychaniu rezonansowym](/resonance-breathing) i w [narzędziu do oddychania rezonansowego](/tools/resonance-breathing).

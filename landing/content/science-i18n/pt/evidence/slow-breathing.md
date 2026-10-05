@@ -9,12 +9,12 @@ shortAnswer: >
   acalmar a ativação, apoiar o humor e baixar a pressão arterial. A
   variabilidade da frequência cardíaca sobe durante e depois da prática, a
   pressão arterial cai de forma modesta nos ensaios agrupados, e o estresse, a
-  ansiedade e o sono autoavaliado tendem a melhorar. Isso, por si só, não
+  ansiedade e o sono autorrelatado tendem a melhorar. Isso, por si só, não
   comprova que alguma técnica específica supere outra, e a maioria dos ensaios
   é pequena e curta.
 keyPoints:
   - "Respiração lenta significa respirar bem abaixo da frequência habitual em repouso, muitas vezes perto da faixa de ressonância, sem nenhuma tela de retorno."
-  - "Uma grande metanálise constatou que a variabilidade da frequência cardíaca de mediação vagal sobe durante a respiração lenta, logo após uma sessão e depois de programas de várias sessões."
+  - "Uma grande metanálise constatou que a variabilidade da frequência cardíaca mediada pelo nervo vago sobe durante a respiração lenta, logo após uma sessão e depois de programas de várias sessões."
   - "Os ensaios agrupados mostram uma queda modesta da pressão arterial, mas as evidências sobre a respiração guiada por dispositivo enfraquecem quando se excluem os ensaios ligados ao fabricante."
   - "As práticas respiratórias mostram melhoras de pequenas a médias no estresse, na ansiedade e nos sintomas depressivos, em sua maioria em ensaios com algum risco de viés."
   - "O sono autorrelatado tende a melhorar depois da respiração lenta antes de deitar, enquanto as medidas objetivas do sono são inconclusivas."
@@ -28,7 +28,7 @@ evidenceMap:
     limitation: "Uma premissa do modelo para adultos mais jovens; os protocolos e critérios de avaliação variam."
   - claim: "Uma grande metanálise incluiu muitos estudos sobre respiração lenta voluntária."
     limitation: "A maioria dos estudos incluídos mediu a variabilidade da frequência cardíaca durante a própria respiração."
-  - claim: "A variabilidade da frequência cardíaca de mediação vagal aumenta durante a respiração lenta, imediatamente após uma sessão e depois de intervenções de várias sessões."
+  - claim: "A variabilidade da frequência cardíaca mediada pelo nervo vago aumenta durante a respiração lenta, imediatamente após uma sessão e depois de intervenções de várias sessões."
     limitation: "Mudanças na variabilidade da frequência cardíaca, não desfechos de saúde; protocolos muito heterogêneos."
   - claim: "Os autores da metanálise descrevem a respiração lenta voluntária como uma técnica simples e de baixo custo, da qual se esperam poucos efeitos adversos."
     limitation: "Uma expectativa declarada pelos autores, não dados de eventos adversos."
@@ -105,7 +105,7 @@ A comparação é a parte difícil. As pessoas sempre sabem se estão respirando
 
 ## O que mostram as evidências?
 
-**Variabilidade da frequência cardíaca: estabelecido.** Uma metanálise de {{fact:study.laborde2022.studies}} constatou que a HRV de mediação vagal sobe durante a respiração lenta, imediatamente após uma única sessão e depois de programas de várias sessões [S2]. Uma revisão sistemática em pessoas saudáveis chegou a um resultado na mesma direção [S3]. Trata-se de mudanças em um sinal fisiológico; por si sós, não são desfechos de saúde.
+**Variabilidade da frequência cardíaca: estabelecido.** Uma metanálise de {{fact:study.laborde2022.studies}} constatou que a HRV mediada pelo nervo vago sobe durante a respiração lenta, imediatamente após uma única sessão e depois de programas de várias sessões [S2]. Uma revisão sistemática em pessoas saudáveis chegou a um resultado na mesma direção [S3]. Trata-se de mudanças em um sinal fisiológico; por si sós, não são desfechos de saúde.
 
 **Pressão arterial: depende do contexto.** Uma metanálise de {{fact:study.chaddha2019.studies}} em pessoas com hipertensão ou pré-hipertensão encontrou reduções modestas da pressão arterial sistólica e diastólica, com alta heterogeneidade [S4]. Os autores sugerem que ela pode ser uma primeira opção razoável para pessoas de baixo risco relutantes em começar a tomar medicamentos [S4] — uma sugestão, não uma diretriz. A respiração guiada por dispositivo pede mais cautela: uma metanálise reuniu {{fact:study.mahtani2012.trials}}; o efeito desapareceu quando os ensaios ligados ao fabricante foram excluídos, e os autores pediram ensaios mais longos e independentes [S5]. O aspecto prático está em [respiração lenta e pressão alta](/articles/high-blood-pressure-slow-breathing).
 

@@ -8,8 +8,8 @@ shortAnswer: >
   opeenvolgende hartslagen. Het autonome zenuwstelsel stuurt het hartritme
   voortdurend bij, en de ademhaling schrijft er een zichtbare golf in. HRV wordt
   beïnvloed door leeftijd, ademhaling, meetmethode en meetduur, meetomstandigheden
-  en het tijdstip van de dag. Op zichzelf zegt HRV niets zeker over stress,
-  gezondheid of vagale tonus, en een persoonlijke trend die consequent is gemeten,
+  en het tijdstip van de dag. Op zichzelf stelt HRV geen stress,
+  gezondheidstoestand of vagale tonus vast, en een persoonlijke trend die consequent is gemeten,
   zegt meer dan één los getal.
 keyPoints:
   - "Hartslagvariabiliteit is de variatie van slag tot slag in de intervallen tussen normale hartslagen, niet de hartslag zelf."

@@ -1,7 +1,7 @@
 ---
 sourceHash: "41115ae9a660"
 title: "Hoe ademhaling HRV verandert — en waarom langzaam ademen die verhoogt"
-metaTitle: "Ademhaling en HRV: waarom langzaam ademen helpt"
+metaTitle: "Ademhaling en HRV: waarom langzaam ademen HRV verhoogt"
 metaDescription: "Waarom hartslagvariabiliteit stijgt als je langzaam ademt: het met de adem verbonden hartritme, de baroreflex en resonantie — wat vaststaat en wat omstreden is."
 shortAnswer: >
   Ademhaling verandert de hartslagvariabiliteit omdat elke ademhaling het hart
@@ -17,11 +17,11 @@ keyPoints:
   - "Bij resonantie lopen de schommelingen van ademhaling, hartslag en bloeddruk in de pas, en de baroreflex versterkt ze."
   - "Een grote meta-analyse vond een hogere vagaal gemedieerde hartslagvariabiliteit tijdens langzaam ademen, direct na een sessie en na programma's met meerdere sessies."
   - "Het resonantietempo verschilt per persoon en blijft in de tijd vrij stabiel; daarom wordt het bepaald en niet aangenomen."
-  - "Of een langere uitademing iets toevoegt bovenop het vertragen van de adem, is niet beslist; studies spreken elkaar tegen."
+  - "Of een langere uitademing iets toevoegt bovenop het vertragen van de adem, is nog niet uitgemaakt; studies spreken elkaar tegen."
   - "Een hogere meting tijdens langzaam ademen weerspiegelt het ademhalingspatroon evenzeer als het zenuwstelsel, en is dus geen directe maat voor vagale tonus."
 imageAlt: "Een curve die oploopt naar één piek binnen een zachte turquoise band, met daarboven drie kleine golven die in de pas bewegen — het resonantiebereik waarin ademhaling, hartslag en bloeddruk samenvallen."
 evidenceMap:
-  - claim: "In korte metingen in rust is het met de adem verbonden hartritme de belangrijkste bron van variatie in de hartslag, vooral bij langzaam gedoseerd ademen."
+  - claim: "In korte metingen in rust is het met de adem verbonden hartritme de belangrijkste bron van variatie in de hartslag, vooral bij langzaam ademen in een vast tempo."
     limitation: "Korte metingen in rust; over langere periodes dragen ook tragere ritmes bij."
   - claim: "Het met de adem verbonden hartritme is klein bij een snelle ademhaling en groot bij een langzame."
     limitation: "Een verband op groepsniveau; het tempo waarbij het piekt, verschilt van persoon tot persoon."
@@ -46,7 +46,7 @@ evidenceMap:
   - claim: "Persoonlijke resonantiefrequenties liggen doorgaans binnen een bereik en niet op één waarde."
     limitation: "Een uitgangspunt van het model voor jongere volwassenen; protocollen en criteria voor de bepaling verschillen."
   - claim: "In een gerandomiseerde studie verhoogde langzaam ademen tijdens biofeedback acuut de laagfrequente hartslagvariabiliteit en de baroreflexversterking, en de baroreflexversterking in rust nam toe over de sessies heen."
-    limitation: "Eén gerandomiseerde studie bij gezonde volwassenen; blijvende effecten moeten worden herhaald."
+    limitation: "Eén gerandomiseerde studie bij gezonde volwassenen; blijvende effecten moeten nog in herhalingsonderzoek worden bevestigd."
   - claim: "Oorstimulatie toevoegen tijdens langzaam ademen op de resonantiefrequentie verhoogde de hartslagvariabiliteit niet verder."
     limitation: "Eén crossoverstudie met één stimulatieprotocol."
   - claim: "Een langere uitademing dan inademing wordt aanbevolen bij het bepalen van de resonantie en kan het met de adem verbonden hartritme vergroten, maar meerdere studies vonden geen verschil in hartslagvariabiliteit tussen even lange en langere uitademingen."
@@ -59,7 +59,7 @@ evidenceMap:
 
 ## Hoe verandert ademhaling HRV?
 
-Elke ademhaling laat een spoor na in het ritme van je hart. Het hart versnelt licht bij het inademen en vertraagt bij het uitademen — het [met de adem verbonden hartritme](/science/concepts/respiratory-sinus-arrhythmia) — en in een korte meting in rust is dat de belangrijkste bron van [hartslagvariabiliteit](/science/concepts/heart-rate-variability) (HRV), vooral als je langzaam en gedoseerd ademt [S1]. Verander je ademhaling, en het HRV-getal verandert mee.
+Elke ademhaling laat een spoor na in het ritme van je hart. Het hart versnelt licht bij het inademen en vertraagt bij het uitademen — het [met de adem verbonden hartritme](/science/concepts/respiratory-sinus-arrhythmia) — en in een korte meting in rust is dat de belangrijkste bron van [hartslagvariabiliteit](/science/concepts/heart-rate-variability) (HRV), vooral als je langzaam en in een vast tempo ademt [S1]. Verander je ademhaling, en het HRV-getal verandert mee.
 
 Hoe groot het effect is, hangt af van het ademtempo. Het met de adem verbonden ritme is klein als je snel ademt en groot als je langzaam ademt [S3]. Normaal ademen in rust ligt rond {{fact:breath.adult.normal}}; als de ademhaling vertraagt, worden de schommelingen in hartslag groter, en ze pieken rond {{fact:breath.resonance.typical}}, samen met de gevoeligheid van de bloeddrukreflex [S2]. Deze pagina legt uit waarom dat gebeurt — en wat die stijging wel en niet betekent.
 
@@ -71,7 +71,7 @@ Hoe groot het effect is, hangt af van het ademtempo. Het met de adem verbonden r
 
 **Diepte en mechanica.** Langzaam, diep ademen versterkt ook de mechanische en reflexmatige invloeden — drukveranderingen in de borstkas, rekreceptoren in longen en hart — die bijdragen aan het met de adem verbonden ritme [S2].
 
-**Wat nog omstreden is.** Hoeveel van het met de adem verbonden ritme van de baroreflex komt en hoeveel van een centrale ritmegenerator in de hersenstam, is een open debat [S2], en hoe de onderdelen precies samenwerken, wordt nog onderzocht. De verklaring via resonantie verklaart de grootte van het effect goed; ze beslecht niet elke stap van het mechanisme.
+**Wat nog omstreden is.** Hoeveel van het met de adem verbonden ritme van de baroreflex komt en hoeveel van een centrale ritmegenerator in de hersenstam, is een open debat [S2], en hoe de onderdelen precies samenwerken, wordt nog onderzocht. Het resonantiemodel verklaart de grootte van het effect goed; ze beslecht niet elke stap van het mechanisme.
 
 ## Hoe wordt het gemeten?
 
@@ -96,17 +96,17 @@ Ten eerste hangt de uitkomst af van het ademhalingspatroon tijdens de meting, du
 
 **Omstreden.** Of vooral de baroreflex of een centraal ritme in de hersenstam het met de adem verbonden ritme opwekt [S2], en of een langere uitademing iets toevoegt bovenop het vertragen van de adem [S5].
 
-**Onbekend.** Een voorgestelde centrale route — langere en sterkere signalen van de nervus vagus naar hersengebieden die het lichaam waarnemen tijdens langzaam ademen — is een hypothese over hoe langzaam ademen de hersenen zou kunnen beïnvloeden [S9]; bij mensen is die niet vastgesteld.
+**Onbekend.** Een voorgestelde centrale route — tijdens langzaam ademen langere en sterkere signalen van de nervus vagus naar hersengebieden die lichaamssignalen waarnemen — is een hypothese over hoe langzaam ademen de hersenen zou kunnen beïnvloeden [S9]; bij mensen is die niet vastgesteld.
 
 ## Wat het je niet vertelt
 
 - **Het is geen directe maat voor vagale tonus.** De formulering doet ertoe. {{fact:claim.vagalTone}} [S10]. Ademhalingsparameters kunnen het verband tussen het met de adem verbonden ritme en de vagale tonus vertekenen [S10], dus een hogere meting tijdens langzaam ademen weerspiegelt het ademhalingspatroon evenzeer als het zenuwstelsel.
-- **Een hoger getal tijdens het oefenen is geen blijvende verandering.** Toenames binnen een sessie zijn te verwachten op grond van de mechanica hierboven; veranderingen die na de sessie blijven bestaan, vormen een aparte, kleinere hoeveelheid bewijs [S7, S8].
+- **Een hoger getal tijdens het oefenen is geen blijvende verandering.** Toenames binnen een sessie zijn te verwachten op grond van de mechanica hierboven; veranderingen die na de sessie blijven bestaan, vormen een aparte, kleinere bewijsbasis [S7, S8].
 - **Het is geen behandelclaim.** Of langzaam ademen helpt bij bloeddruk, angst, slaap of prestaties, is een vraag over uitkomsten, behandeld op de pagina's over het bewijs voor langzaam ademen en HRV-biofeedback — niet iets wat een stijging van HRV bewijst.
 - **Er is geen universeel ‘juist’ tempo.** Het resonantietempo is persoonlijk [S5, S6]; een typische waarde is een startpunt, geen doel. Voor de oefening zelf, zie [coherent ademen](/articles/coherent-breathing-guide) en de gids over [resonantieademhaling](/resonance-breathing).
 
 ## In ONDA
 
-De oefeningen van ONDA gebruiken langzaam, gedoseerd ademen — de toestand die op deze pagina wordt beschreven. Met een Apple Watch toont ONDA een live coherentiescore: ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is terwijl je ademt, geen klinische HRV-meting, en ze zegt niets rechtstreeks over vagale tonus. Met de camera van de iPhone toont ONDA je pols live en een schatting van je ademtempo. ONDA stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+De oefeningen van ONDA gebruiken langzaam ademen in een vast tempo — de toestand die op deze pagina wordt beschreven. Met een Apple Watch toont ONDA een live coherentiescore: ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is terwijl je ademt, geen klinische HRV-meting, en ze zegt niets rechtstreeks over vagale tonus. Met de camera van de iPhone toont ONDA je pols live en een schatting van je ademtempo. ONDA stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

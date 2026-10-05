@@ -14,7 +14,7 @@ shortAnswer: >
 keyPoints:
   - "EKG i fotopletyzmografia (PPG) mierzą różne sygnały: EKG rejestruje aktywność elektryczną serca, a PPG szacuje czas uderzeń z fal tętna na skórze."
   - "Zmienność tętna (PRV) z PPG może dobrze zgadzać się z HRV z EKG dla wybranych miar w kontrolowanych warunkach spoczynkowych — ta zgodność jest warunkowa, a nie uniwersalna."
-  - "Ruch, kontakt czujnika, ukrwienie obwodowe, okno zapisu, wybór miary i zastrzeżone przetwarzanie danych kształtują liczby HRV z urządzenia ubieralnego."
+  - "Ruch, kontakt czujnika, ukrwienie obwodowe, okno zapisu, wybór miary i autorskie przetwarzanie danych kształtują liczby HRV z urządzenia ubieralnego."
   - "Dwa urządzenia mogą zasadnie podawać różne wartości HRV i żadne nie musi się mylić; mogą po prostu nie podawać tej samej miary z porównywalnych okien."
   - "RMSSD i SDNN opisują różne właściwości zapisu, a ich wartości nie są wymienne."
   - "Twój własny trend, mierzony konsekwentnie tym samym urządzeniem i tą samą metodą, zwykle mówi więcej niż porównywanie wartości bezwzględnych między urządzeniami."
@@ -69,7 +69,7 @@ Kiedy smartwatch lub pierścień pokazuje liczbę HRV, pokazuje szacunek [zmienn
 
 Ta strona odpowiada na pytanie o metodę, które leży pod pytaniami codziennymi. Dlaczego dwa urządzenia się nie zgadzają, opowiada praktycznie artykuł [dlaczego twoje HRV jest inne na każdym urządzeniu](/articles/hrv-different-every-device); czym są dwa warianty z zegarka Apple, omawia tekst [Recovery HRV a Overall HRV na Apple Watch](/articles/apple-watch-recovery-hrv-vs-overall-hrv); co zrobić z niskim odczytem, wyjaśnia artykuł [dlaczego moje HRV na Apple Watch jest niskie](/articles/why-is-my-apple-watch-hrv-low); a o porównywalność własnych odczytów dba poradnik [jak mierzyć HRV w spójny sposób](/articles/how-to-measure-hrv-consistently). Tutaj pytanie brzmi: na ile czujnik na nadgarstku lub palcu może odtworzyć to, co zmierzyłoby kliniczne EKG — i co z tego wynika dla czytania twoich wyników?
 
-Na tej stronie trzy pojęcia muszą pozostać rozdzielone, bo to od ich zlewania zaczyna się większość przesadnych twierdzeń. Wartość HRV z EKG, wartość zmienności tętna (PRV) z PPG i zastrzeżony wynik urządzenia ubieralnego obliczany z HRV i innych sygnałów to powiązane pomiary — a nie jeden pomiar [S3]. Mogą się ściśle pokrywać, ale sygnał, przetwarzanie i znaczenie różnią się na każdym etapie.
+Na tej stronie trzy pojęcia muszą pozostać rozdzielone, bo to od ich zlewania zaczyna się większość przesadnych twierdzeń. Wartość HRV z EKG, wartość zmienności tętna (PRV) z PPG i autorski wynik urządzenia ubieralnego obliczany z HRV i innych sygnałów to powiązane pomiary — a nie jeden pomiar [S3]. Mogą się ściśle pokrywać, ale sygnał, przetwarzanie i znaczenie różnią się na każdym etapie.
 
 Krótka odpowiedź: HRV z urządzeń ubieralnych może być przydatne, ale jego przydatność jest warunkowa — zależy od miary, od warunków i od tego, z czym je porównujesz.
 
@@ -90,12 +90,12 @@ Dlatego też pytanie „czy ten czujnik jest dokładny?” jest niepełne. Wersj
 Każda wartość HRV z urządzenia ubieralnego jest efektem końcowym łańcucha wyborów, a dwie liczby są porównywalne tylko w takim stopniu, w jakim te wybory się pokrywają. Pięć pytań pozwala rozszyfrować każdą liczbę HRV, którą widzisz:
 
 - **Jaki sygnał zmierzono?** Kliniczne EKG, pas piersiowy rejestrujący aktywność elektryczną czy optyczny czujnik PPG na nadgarstku lub palcu — sygnał określa, czego szacunkiem jest dana wartość [S1, S4].
-- **Jaką miarę obliczono?** Jedno urządzenie może podawać tę miarę: {{fact:hrv.rmssd.definition}} [S1]; inne opiera się na tej: {{fact:hrv.sdnn.definition}} [S1]. Obie opisują różne właściwości tego samego zapisu — RMSSD wyodrębnia zmiany między sąsiednimi uderzeniami, SDNN ogólny rozrzut — i w różnym stopniu zależą od modulacji przywspółczulnej, więc ich wartości nie są wymienne [S2]. Niektóre aplikacje idą dalej i pokazują zastrzeżony wynik regeneracji lub gotowości wyliczany z HRV i innych sygnałów; wynik to nie miara, a sposób jego obliczania zwykle nie jest publikowany. Strony o [RMSSD](/science/concepts/rmssd) i [SDNN](/science/concepts/sdnn) rozkładają każdą z miar na części.
+- **Jaką miarę obliczono?** Jedno urządzenie może podawać tę miarę: {{fact:hrv.rmssd.definition}} [S1]; inne — na tej: {{fact:hrv.sdnn.definition}} [S1]. Obie opisują różne właściwości tego samego zapisu — RMSSD wyodrębnia zmiany między sąsiednimi uderzeniami, SDNN ogólny rozrzut — i w różnym stopniu zależą od modulacji przywspółczulnej, więc ich wartości nie są wymienne [S2]. Niektóre aplikacje idą dalej i pokazują autorski wynik regeneracji lub gotowości wyliczany z HRV i innych sygnałów; wynik to nie miara, a sposób jego obliczania zwykle nie jest publikowany. Strony o [RMSSD](/science/concepts/rmssd) i [SDNN](/science/concepts/sdnn) rozkładają każdą z miar na części.
 - **Kiedy i jak to zmierzono?** Krótki pomiar punktowy, kontrolowany zapis spoczynkowy i okno nocne to różne tryby pomiaru — a długość zapisu zmienia nawet znaczenie wartości, bo dłuższe okna gromadzą wolniejsze rytmy i większe wartości typu SDNN [S2].
 - **Jak dobry był sygnał?** Ruch, luźne dopasowanie i słabe ukrwienie obwodowe najpierw pogarszają szacunek optyczny, a badania walidacyjne odfiltrowują takie zapisy, zanim cokolwiek obliczą [S4].
 - **Patrzysz na trend czy reagujesz na jedną liczbę?** Pojedyncza wartość to obserwacja; ciąg wartości zebranych w ten sam sposób to sygnał [S5].
 
-Ekosystem Apple to żywy przykład pytania o miarę. {{fact:applewatch.hrv.healthkit}} [S6] — więc wartości HRV w Apple Health zawsze były typu SDNN, rejestrowane automatycznie przez Apple Watch. Co do najnowszych modeli: {{fact:applewatch.hrv.variants2026}} [S7]; Apple nie podało, jak obliczane jest Recovery HRV. Niezależnie od tego {{fact:applewatch.hrv.rmssdType}} [S8] — to zmiana platformy, która pozwala aplikacjom zapisywać w Apple Health wartość typu RMSSD, co ma znaczenie zawsze, gdy liczbę z Apple Watch porównuje się z pierścieniem podającym RMSSD.
+Ekosystem Apple to dobry przykład pytania o miarę. {{fact:applewatch.hrv.healthkit}} [S6] — więc wartości HRV w Apple Health zawsze były typu SDNN, rejestrowane automatycznie przez Apple Watch. W najnowszych modelach: {{fact:applewatch.hrv.variants2026}} [S7]; Apple nie podało, jak obliczane jest Recovery HRV. Niezależnie od tego {{fact:applewatch.hrv.rmssdType}} [S8] — to zmiana platformy, która pozwala aplikacjom zapisywać w Apple Health wartość typu RMSSD, co ma znaczenie zawsze, gdy liczbę z Apple Watch porównuje się z pierścieniem podającym RMSSD.
 
 Wszystko to można ująć zwięźle:
 
@@ -130,12 +130,12 @@ Fakty dotyczące ekosystemu Apple należą tutaj jako fakty o urządzeniach: App
 
 **Wytyczne / konsensus ekspertów.** Aktualne wytyczne stwierdzają, że sygnał wejściowy, długość zapisu, miejsce pomiaru, oddech i sposób analizy wpływają na rzetelność i wiarygodność [S5] oraz że wyniki dotyczące HRV z urządzeń ubieralnych — także w badaniach — należy interpretować i osadzać w kontekście tych ograniczeń [S5]. W codziennym użyciu oznacza to porównywanie porównywalnego.
 
-**Nieznane.** Na ile te metody dają się uogólnić na różnorodne urządzenia konsumenckie i zastrzeżone algorytmy; jak działają przy swobodnym ruchu w ciągu dnia i w oknach nocnych, które urządzenia definiują różnie; jak zachowują się u osób z zaburzeniami rytmu lub określonymi chorobami; i kiedy zmiana wykryta przez urządzenie ubieralne staje się istotna klinicznie. Nic z tego nie jest rozstrzygnięte — i to powód, by rozumieć pomiary, a nie by odrzucać dane.
+**Nieznane.** Na ile te metody dają się uogólnić na różnorodne urządzenia konsumenckie i autorskie algorytmy; jak działają przy swobodnym ruchu w ciągu dnia i w oknach nocnych, które urządzenia definiują różnie; jak zachowują się u osób z zaburzeniami rytmu lub określonymi chorobami; i kiedy zmiana wykryta przez urządzenie ubieralne staje się istotna klinicznie. Nic z tego nie jest rozstrzygnięte — i to powód, by rozumieć pomiary, a nie by odrzucać dane.
 
 ## Czego HRV z urządzeń ubieralnych ci nie powie
 
 - **To nie jest odczyt EKG.** Wartość z PPG to szacunek z powiązanego sygnału, a zbiorcza zgodność nie obejmuje wszystkich warunków ani nie oznacza wymienności [S3].
-- **To nie jest jedna uniwersalna liczba.** RMSSD, SDNN i zastrzeżone wyniki opisują różne rzeczy; wartość bez miary i okna to niepełna informacja [S2, S3].
+- **To nie jest jedna uniwersalna liczba.** RMSSD, SDNN i autorskie wyniki opisują różne rzeczy; wartość bez miary i okna to niepełna informacja [S2, S3].
 - **To nie jest diagnoza ani werdykt o stresie.** {{fact:claim.hrvNotStress}} [S1, S5] — i ta sama ostrożność dotyczy nietypowo wysokich wartości.
 - **To nie jest napięcie nerwu błędnego.** Sformułowanie ma tu znaczenie. {{fact:claim.vagalTone}} [S1, S5].
 - **To nie jest ranking urządzeń.** Zgodność zależy od miary, warunków, jakości sygnału i przetwarzania [S3, S4]; to, które urządzenie ci odpowiada, to pytanie do recenzji produktów, a ta strona celowo nie wskazuje „najdokładniejszego” trackera.
@@ -143,6 +143,6 @@ Fakty dotyczące ekosystemu Apple należą tutaj jako fakty o urządzeniach: App
 
 ## W ONDA
 
-ONDA stoi po konsumenckiej stronie tych danych, a jej dokumentacja jasno mówi, skąd pochodzi każda liczba. Nocna osobista linia bazowa opiera się na wartościach HRV zapisanych w Apple Health — przez Apple Watch lub dowolny tracker, którego aplikacja synchronizuje tam dane o sercu — a te wartości są typu SDNN: {{fact:applewatch.hrv.healthkit}} [S6]. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN; aparat telefonu podaje tętno, nie HRV; a wynik koherencji dostępny z Apple Watch to zastrzeżony wskaźnik informacji zwrotnej, a nie kliniczny pomiar HRV. ONDA wykorzystuje ten sygnał do biofeedbacku: pytanie brzmi nie tylko, jaka jest liczba, ale co dzieje się z nią podczas praktyki. Aplikacja porównuje każdą noc z twoim własnym niedawnym korytarzem i niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
+ONDA stoi po konsumenckiej stronie tych danych, a jej dokumentacja jasno mówi, skąd pochodzi każda liczba. Nocna osobista linia bazowa opiera się na wartościach HRV zapisanych w Apple Health — przez Apple Watch lub dowolny tracker, którego aplikacja synchronizuje tam dane o sercu — a te wartości są typu SDNN: {{fact:applewatch.hrv.healthkit}} [S6]. Odczyt na żywo w trakcie praktyki to wskaźnik zastępczy obliczany z odchylenia standardowego tętna, a nie RMSSD ani SDNN; aparat telefonu podaje tętno, nie HRV; a wynik koherencji dostępny z Apple Watch to autorski wskaźnik informacji zwrotnej, a nie kliniczny pomiar HRV. ONDA wykorzystuje ten sygnał do biofeedbacku: pytanie brzmi nie tylko, jaka jest liczba, ale co dzieje się z nią podczas praktyki. Aplikacja porównuje każdą noc z twoim własnym niedawnym korytarzem i niczego nie diagnozuje. Zobacz, [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

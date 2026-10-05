@@ -6,8 +6,8 @@ metaDescription: "La variabilità della frequenza cardiaca è la naturale variaz
 shortAnswer: >
   La variabilità della frequenza cardiaca (HRV) è la naturale variazione del
   tempo che separa due battiti consecutivi. Il sistema nervoso autonomo modula
-  di continuo il ritmo del cuore, e il respiro vi imprime un'onda visibile. La
-  HRV è influenzata dall'età, dalla respirazione, dal metodo e dalla durata
+  di continuo il ritmo del cuore, e il respiro vi imprime un'onda visibile.
+  L'HRV è influenzata dall'età, dalla respirazione, dal metodo e dalla durata
   della registrazione, dalle condizioni in cui si misura e dall'ora del giorno.
   Da sola non stabilisce lo stress, lo stato di salute né il tono vagale, e
   una tendenza personale registrata in modo coerente è più informativa di un
@@ -72,7 +72,7 @@ evidenceMap:
 
 La variabilità della frequenza cardiaca (HRV) è la naturale variazione del tempo che separa due battiti consecutivi. Un cuore sano non è un metronomo: l'intervallo tra un battito e il successivo non è mai esattamente lo stesso, e sono proprio queste piccole differenze, gli intervalli interbattito, ciò a cui il termine si riferisce [S1, S2]. È una proprietà del ritmo cardiaco, non una frequenza: due persone possono avere lo stesso polso medio e una variabilità del tutto diversa.
 
-Questa pagina è la definizione di riferimento su cui si costruisce il resto della sezione scientifica. Le due metriche principali hanno pagine proprie, [RMSSD](/science/concepts/rmssd) e [SDNN](/science/concepts/sdnn); quanto fedelmente smartwatch e anelli possano riprodurre la misura dell'ECG è il tema di [Ci si può fidare dell'HRV di uno smartwatch o di un anello?](/science/measurements/heart-rate-variability); dove si collocano i tuoi valori per età lo dicono l'articolo sulla [HRV normale per età](/articles/normal-hrv-by-age) e il [calcolatore HRV](/tools/hrv); le domande di tutti i giorni, come cosa significhi una lettura bassa e cosa farne, trovano risposta in [HRV: le risposte alle domande più comuni](/articles/hrv-questions-answered). Nulla di tutto ciò viene ripetuto qui.
+Questa pagina è la definizione di riferimento su cui si costruisce il resto della sezione scientifica. Le due metriche principali hanno pagine proprie, [RMSSD](/science/concepts/rmssd) e [SDNN](/science/concepts/sdnn); quanto fedelmente smartwatch e anelli possano riprodurre la misura dell'ECG è il tema di [Ci si può fidare dell'HRV di uno smartwatch o di un anello?](/science/measurements/heart-rate-variability); dove si collocano i tuoi valori per età lo dicono l'articolo sull'[HRV normale per età](/articles/normal-hrv-by-age) e il [calcolatore HRV](/tools/hrv); le domande di tutti i giorni, come cosa significhi una lettura bassa e cosa farne, trovano risposta in [HRV: le risposte alle domande più comuni](/articles/hrv-questions-answered). Nulla di tutto ciò viene ripetuto qui.
 
 ## Come funziona l'HRV?
 
@@ -91,7 +91,7 @@ La finestra fa parte del significato. Una breve registrazione in laboratorio, un
 ## Cosa influenza l'HRV?
 
 - **Il respiro.** La frequenza e la profondità del respiro durante la finestra si imprimono nel valore attraverso il ritmo legato al respiro [S2], e le linee guida attuali includono la respirazione tra i fattori tecnici che determinano rigore e affidabilità [S4].
-- **L'età.** In media, {{fact:hrv.age.trend}} [S5]; le differenze tra individui sono ampie, e le medie della popolazione non sono obiettivi personali. Dove si collocano i tuoi valori per età è il tema dell'articolo sulla [HRV normale per età](/articles/normal-hrv-by-age).
+- **L'età.** In media, {{fact:hrv.age.trend}} [S5]; le differenze tra individui sono ampie, e le medie della popolazione non sono obiettivi personali. Dove si collocano i tuoi valori per età è il tema dell'articolo sull'[HRV normale per età](/articles/normal-hrv-by-age).
 - **Durata della registrazione e ora del giorno.** Le registrazioni più lunghe assorbono ritmi più lenti e processi circadiani, ciascuno dei quali si somma al valore [S2]; un controllo rapido al mattino e una media notturna descrivono mondi diversi.
 - **Il metodo di registrazione.** Un ECG e un sensore ottico del polso sono catene di misura diverse [S3]; i loro numeri non sono automaticamente confrontabili.
 - **Le condizioni di registrazione.** Il contesto, la posizione del corpo, il respiro e il metodo di analisi modellano il valore e il rigore di qualsiasi confronto [S4].

@@ -2,7 +2,7 @@
 sourceHash: "7b68393346e3"
 title: "RMSSD: cosa riflette questa metrica dell'HRV e cosa no"
 metaTitle: "RMSSD: definizione, significato e misurazione"
-metaDescription: "L'RMSSD è una metrica dell'HRV che riflette le variazioni della frequenza cardiaca mediate dal vago. Cosa misura, come lo stimano i wearable e cosa non può dirti."
+metaDescription: "L'RMSSD è una metrica dell'HRV che riflette le variazioni della frequenza cardiaca mediate dal vago. Cosa misura, come lo stimano i wearable e cosa non dice."
 shortAnswer: >
   L'RMSSD è una metrica della variabilità della frequenza cardiaca: la radice
   quadrata della media dei quadrati delle differenze tra battiti successivi.
@@ -76,11 +76,11 @@ Il calcolo è semplice. Da una serie di intervalli tra battiti: si prende la dif
 
 Il metodo di riferimento è l'ECG, che rileva la traccia elettrica di ogni battito. I dispositivi indossabili (wearable) stimano invece gli intervalli dal segnale del polso sulla pelle (fotopletismografia, PPG); il risultato viene spesso chiamato variabilità del polso (PRV). La concordanza tra i due dipende dalla metrica e dalle condizioni: in genere è migliore a riposo e con un buon segnale, peggiore con il movimento o un contatto scarso [S6, S7]. Un dettaglio pratico per chi usa Apple Watch. {{fact:applewatch.hrv.healthkit}} [S9]. Sull'hardware recente, {{fact:applewatch.hrv.variants2026}} [S10]. Apple non ha spiegato come si calcola Recovery HRV. Inoltre {{fact:applewatch.hrv.rmssdType}} [S11], il che permette alle app di leggere da Apple Health un valore di tipo RMSSD.
 
-Il contesto fa parte della misura. L'RMSSD dipende dalla postura, dal respiro, dall'ora del giorno e dalla durata della registrazione [S5, S8]. La maggior parte dei valori di riferimento pubblicati è stata raccolta con brevi registrazioni diurne in condizioni controllate [S5], mentre i dispositivi indossabili di consumo riportano soprattutto medie notturne: contesti diversi, i cui valori non sono direttamente intercambiabili. Come ordine di grandezza, l'RMSSD aggregato a riposo da brevi registrazioni diurne è di {{fact:hrv.pooled.daytime}} [S5]: una media diurna aggregata, non un valore notturno né una norma per età. Le tabelle per fasce d'età pubblicate da ONDA sono tabelle dell'RMSSD notturno e si trovano nell'articolo sulla [HRV normale per età](/articles/normal-hrv-by-age). Per una routine di misurazione personale coerente, il lato pratico è nella guida [come misurare l'HRV in modo coerente](/articles/how-to-measure-hrv-consistently).
+Il contesto fa parte della misura. L'RMSSD dipende dalla postura, dal respiro, dall'ora del giorno e dalla durata della registrazione [S5, S8]. La maggior parte dei valori di riferimento pubblicati è stata raccolta con brevi registrazioni diurne in condizioni controllate [S5], mentre i dispositivi indossabili di consumo riportano soprattutto medie notturne: contesti diversi, i cui valori non sono direttamente intercambiabili. Come ordine di grandezza, l'RMSSD aggregato a riposo da brevi registrazioni diurne è di {{fact:hrv.pooled.daytime}} [S5]: una media diurna aggregata, non un valore notturno né una norma per età. Le tabelle per fasce d'età pubblicate da ONDA sono tabelle dell'RMSSD notturno e si trovano nell'articolo sull'[HRV normale per età](/articles/normal-hrv-by-age). Per una routine di misurazione personale coerente, il lato pratico è nella guida [come misurare l'HRV in modo coerente](/articles/how-to-measure-hrv-consistently).
 
 ## Cosa influenza l'RMSSD?
 
-- L'età. In media, {{fact:hrv.age.trend}} [S4, S5]. Le differenze tra individui sono ampie a ogni età; le mediane della popolazione non sono obiettivi personali. Le tabelle complete si trovano nell'articolo sulla [HRV normale per età](/articles/normal-hrv-by-age).
+- L'età. {{fact:hrv.age.trend}} [S4, S5]. Le differenze tra individui sono ampie a ogni età; le mediane della popolazione non sono obiettivi personali. Le tabelle complete si trovano nell'articolo sull'[HRV normale per età](/articles/normal-hrv-by-age).
 - Il sesso. Gli studi riportano differenze tra donne e uomini, con direzione ed entità che dipendono dall'età e dalla popolazione [S4].
 - Il respiro. È il fattore dominante a breve termine, attraverso l'aritmia sinusale respiratoria: la frequenza e la profondità del respiro durante la registrazione cambiano il valore [S2, S3].
 - Le condizioni. Postura, ora del giorno e sonno o veglia cambiano tutti ciò che lo stesso cuore fa durante la misura [S5, S8].

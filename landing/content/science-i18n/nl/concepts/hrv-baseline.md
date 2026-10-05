@@ -2,7 +2,7 @@
 sourceHash: "33b9f01d78ea"
 title: "HRV-baseline: waarom je eigen normaal meer zegt dan welke norm ook"
 metaTitle: "HRV-baseline: je eigen normaal, geen norm"
-metaDescription: "Je HRV-baseline is je eigen gebruikelijke bereik, geen bevolkingsgemiddelde. Waarom die meer zegt dan leeftijdsnormen, hoe ONDA haar opbouwt en wat een verschuiving betekent."
+metaDescription: "Je HRV-baseline is je eigen bereik, geen bevolkingsgemiddelde. Waarom die meer zegt dan normen, hoe ONDA haar opbouwt en wat een afwijking betekent."
 shortAnswer: >
   Een HRV-baseline is je persoonlijke gebruikelijke niveau van
   hartslagvariabiliteit (HRV) met de normale spreiding eromheen, opgebouwd uit
@@ -20,7 +20,7 @@ keyPoints:
   - "Instabiele meetomstandigheden, ziekte, een verandering in training, een nieuw apparaat of een andere maat kunnen metingen verschuiven of de baseline onbruikbaar maken."
   - "Buiten de bandbreedte vallen betekent niet dat je gestrest of ziek bent, en erbinnen blijven garandeert geen gezondheid."
   - "Een baseline is een referentie om veranderingen op te merken, geen diagnose of medische beoordeling."
-imageAlt: "Een rij nachtelijke punten langs een smalle turquoise bandbreedte binnen een bredere grijze band, met één punt dat er net onder valt — metingen vergeleken met je eigen normale bereik."
+imageAlt: "Een rij nachtelijke punten langs een smalle turquoise bandbreedte binnen een bredere grijze band, met één punt dat er net buiten valt — metingen vergeleken met je eigen normale bereik."
 evidenceMap:
   - claim: "Een persoonlijke baseline vraagt om veel metingen; losse registraties leveren er geen op."
     limitation: "Narratieve review over het monitoren van sporters; het principe is algemeen, maar de specifieke protocollen richten zich op de sportpraktijk."
@@ -98,9 +98,9 @@ De maat moet vast blijven. RMSSD en SDNN vatten verschillende aspecten van het h
 
 ## Wat het je niet vertelt
 
-Een baseline is een referentie om veranderingen op te merken, geen oordeel. Buiten de bandbreedte vallen betekent niet dat je gestrest of onwel bent. {{fact:claim.hrvNotStress}} [S1]. Een uitschieter kan samenhangen met een korte nacht, koorts, een zware training of een eigenaardigheid van de meting — en alleen de context maakt het onderscheid. Het omgekeerde geldt ook: binnen de bandbreedte blijven garandeert niets over je gezondheid, want HRV is in onderzoek een instrument voor risicostratificatie, geen specifieke marker van sympathische activiteit of van de sympathovagale balans [S1].
+Een baseline is een referentie om veranderingen op te merken, geen oordeel. {{fact:claim.hrvNotStress}} [S1] — en hetzelfde geldt voor een meting buiten de bandbreedte. Een uitschieter kan samenhangen met een korte nacht, koorts, een zware training of een eigenaardigheid van de meting — en alleen de context maakt het onderscheid. Het omgekeerde geldt ook: binnen de bandbreedte blijven garandeert niets over je gezondheid, want HRV is in onderzoek een instrument voor risicostratificatie, geen specifieke marker van sympathische activiteit of van de sympathovagale balans [S1].
 
-Interpreteren is echt lastig — een methodologische review waarschuwt dat het gemak waarmee HRV-gegevens beschikbaar zijn, niet mag verhullen hoe gemakkelijk bevindingen verkeerd worden begrepen [S4]. De signalen van ONDA zijn met die grens in gedachten gebouwd: het zijn beschrijvende vergelijkingen met je eigen persoonlijke baseline, geen stressmetingen en geen medische beoordeling [S9]. Wat je met een specifieke lage meting doet, staat in [wat te doen na een lage HRV-meting](/articles/what-to-do-after-low-hrv-reading). Aanhoudende klachten — pijn op de borst, kortademigheid, flauwvallen — horen bij een arts, niet bij een bandbreedte.
+Interpreteren is echt lastig — een methodologische review waarschuwt dat het gemak waarmee HRV-gegevens beschikbaar zijn, niet mag verhullen hoe gemakkelijk bevindingen verkeerd worden begrepen [S4]. De signalen van ONDA zijn met die grens in gedachten gebouwd: het zijn beschrijvende vergelijkingen met je persoonlijke baseline, geen stressmetingen en geen medische beoordeling [S9]. Wat je met een specifieke lage meting doet, staat in [wat te doen na een lage HRV-meting](/articles/what-to-do-after-low-hrv-reading). Aanhoudende klachten — pijn op de borst, kortademigheid, flauwvallen — horen bij een arts, niet bij een bandbreedte.
 
 ## In ONDA
 

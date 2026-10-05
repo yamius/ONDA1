@@ -74,7 +74,7 @@ Ta strona to podstawowa definicja, na której opiera się cały dział naukowy. 
 
 ## Jak działa HRV?
 
-Każde uderzenie serca wyzwala jego własny rozrusznik, a autonomiczny układ nerwowy nieustannie dostosowuje tempo z uderzenia na uderzenie. Krótkoterminowe wahania powstają z dwóch nakładających się procesów: dynamicznej relacji między gałęzią współczulną i przywspółczulną oraz mechanizmów regulacyjnych, w tym rytmu związanego z oddechem i odruchu z baroreceptorów (baroreflex) [S2]. HRV często nazywa się oknem na regulację autonomiczną; uczciwa wersja jest węższa — to widoczny ślad tej regulacji w rytmie serca, a ślad to jeszcze nie sam mechanizm.
+Każde uderzenie serca wyzwala naturalny rozrusznik serca, a autonomiczny układ nerwowy nieustannie dostosowuje tempo z uderzenia na uderzenie. Krótkoterminowe wahania powstają z dwóch nakładających się procesów: dynamicznej relacji między gałęzią współczulną i przywspółczulną oraz mechanizmów regulacyjnych, w tym rytmu związanego z oddechem i odruchu z baroreceptorów (baroreflex) [S2]. HRV często nazywa się oknem na regulację autonomiczną; uczciwie mówiąc, to coś węższego — widoczny ślad tej regulacji w rytmie serca, a ślad to jeszcze nie sam mechanizm.
 
 Najbardziej widocznym składnikiem krótkiego zapisu spoczynkowego jest oddechowa niemiarowość zatokowa (RSA): przyspieszanie i zwalnianie serca w rytm oddechu — każdy wdech na chwilę przyspiesza rytm, a każdy wydech go zwalnia [S2]. W krótkich zapisach spoczynkowych RSA jest głównym źródłem wahań [S2] — dlatego częstość i głębokość oddechu wyraźnie przesuwają wynik. Mechanizmowi łączącemu oddech i HRV poświęcimy osobną stronę; praktyczną stronę wolnego oddychania opisuje artykuł o tym, [jak naturalnie podnieść HRV](/articles/how-to-raise-hrv-naturally), i nie powtarzamy jej tutaj.
 
@@ -93,7 +93,7 @@ Okno pomiaru jest częścią znaczenia wyniku. Krótki zapis laboratoryjny, cał
 - **Długość zapisu i pora dnia.** Dłuższe zapisy wchłaniają wolniejsze rytmy i procesy dobowe, a każdy z nich zwiększa wartość [S2]; poranny pomiar punktowy i średnia nocna opisują różne światy.
 - **Metoda zapisu.** EKG i optyczny czujnik tętna to różne łańcuchy pomiarowe [S3]; liczby z obu nie są automatycznie porównywalne.
 - **Warunki zapisu.** Miejsce pomiaru, pozycja ciała, oddech i metoda analizy kształtują zarówno wartość, jak i rzetelność każdego porównania [S4].
-- **Codzienne okoliczności.** Jak w przypadku innych miar HRV, pojedynczy odczyt może odbiegać od normy z całkiem zwyczajnych powodów; traktuj takie przesunięcia jako obserwacje, a nie werdykty.
+- **Codzienne okoliczności.** Jak w przypadku innych miar HRV, pojedynczy odczyt może odbiegać od twoich typowych wartości z całkiem zwyczajnych powodów; traktuj takie przesunięcia jako obserwacje, a nie werdykty.
 
 ## Co pokazują dane?
 

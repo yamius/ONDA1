@@ -2,7 +2,7 @@
 sourceHash: "33b9f01d78ea"
 title: "Baseline dell'HRV: perché la tua normalità conta più di qualsiasi norma"
 metaTitle: "Baseline dell'HRV: la tua normalità, non una norma"
-metaDescription: "La tua baseline dell'HRV è il tuo intervallo abituale, non una media della popolazione. Perché vale più delle norme per età, come la costruisce ONDA e cosa può significare uno scostamento."
+metaDescription: "La baseline dell'HRV è il tuo intervallo abituale, non una media. Perché vale più delle norme per età, come la crea ONDA, cosa dice uno scostamento."
 shortAnswer: >
   La baseline personale dell'HRV è il tuo livello abituale di variabilità
   della frequenza cardiaca e la sua normale dispersione, costruiti da molte
@@ -66,7 +66,7 @@ evidenceMap:
 
 La baseline personale dell'HRV è il tuo livello abituale di [variabilità della frequenza cardiaca](/glossary/heart-rate-variability) (HRV), cioè la media attorno a cui si assestano le tue letture, insieme alla naturale dispersione attorno a quella media. Si costruisce da molte letture prese in condizioni confrontabili, mai da una sola. Una baseline risponde a una sola domanda: che cosa è normale *per te*, così che ogni nuova lettura possa essere confrontata con il tuo corridoio e non con il numero di uno sconosciuto.
 
-Il contrasto con le tabelle di popolazione è il punto centrale. Una revisione sistematica dei valori normali pubblicati ha concluso che al momento non esistono dati normativi condivisi per l'HRV a breve termine, e ha riportato grandi variazioni tra studi e tra persone [S3]. L'età restringe il quadro solo di poco: {{fact:hrv.age.trend}} [S2], e le differenze tra individui sono ampie a ogni età. Le tabelle per età pubblicate da ONDA rispondono a «dove si collocano le persone della mia età», mai a «quale dovrebbe essere il mio numero»; si trovano nell'articolo sulla [HRV normale per età](/articles/normal-hrv-by-age) e nello strumento [calcolatore HRV](/tools/hrv).
+Il contrasto con le tabelle di popolazione è il punto centrale. Una revisione sistematica dei valori normali pubblicati ha concluso che al momento non esistono dati normativi condivisi per l'HRV a breve termine, e ha riportato grandi variazioni tra studi e tra persone [S3]. L'età restringe il quadro solo di poco: {{fact:hrv.age.trend}} [S2], e le differenze tra individui sono ampie a ogni età. Le tabelle per età pubblicate da ONDA rispondono a «dove si collocano le persone della mia età», mai a «quale dovrebbe essere il mio numero»; si trovano nell'articolo sull'[HRV normale per età](/articles/normal-hrv-by-age) e nello strumento [calcolatore HRV](/tools/hrv).
 
 ## Come funziona?
 
@@ -98,7 +98,7 @@ La metrica deve restare fissa. RMSSD e SDNN riassumono aspetti diversi del ritmo
 
 ## Cosa non ti dice
 
-La baseline è un riferimento per accorgersi dei cambiamenti, non un verdetto. Uscire dal corridoio non significa che tu sia stressato o che non stia bene. {{fact:claim.hrvNotStress}} [S1]. Un'uscita può essere legata a una notte breve, alla febbre, a un allenamento pesante o a un'anomalia di misura, e solo il contesto permette di distinguerle. Vale anche il contrario: restare dentro il corridoio non garantisce nulla sulla salute, perché l'HRV è uno strumento di ricerca per la stratificazione del rischio, non un marcatore specifico dell'attività simpatica né dell'equilibrio simpatico-vagale [S1].
+La baseline è un riferimento per accorgersi dei cambiamenti, non un verdetto. {{fact:claim.hrvNotStress}} [S1], e lo stesso vale per un'uscita dal corridoio. Un'uscita può essere legata a una notte breve, alla febbre, a un allenamento pesante o a un'anomalia di misura, e solo il contesto permette di distinguerle. Vale anche il contrario: restare dentro il corridoio non garantisce nulla sulla salute, perché l'HRV è uno strumento di ricerca per la stratificazione del rischio, non un marcatore specifico dell'attività simpatica né dell'equilibrio simpatico-vagale [S1].
 
 Interpretare è davvero difficile: una revisione metodologica avverte che la facilità di accesso ai dati di HRV non deve nascondere quanto facilmente i risultati possano essere fraintesi [S4]. I segnali di ONDA sono costruiti tenendo conto di questo limite: sono confronti descrittivi con la tua baseline, non misure dello stress e non una valutazione medica [S9]. Cosa fare dopo una specifica lettura bassa è trattato in [cosa fare dopo una lettura di HRV bassa](/articles/what-to-do-after-low-hrv-reading). I sintomi persistenti, come dolore al petto, mancanza di fiato o svenimenti, vanno portati a un medico, non a un corridoio.
 

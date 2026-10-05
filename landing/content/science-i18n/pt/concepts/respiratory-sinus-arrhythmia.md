@@ -2,7 +2,7 @@
 sourceHash: "c96db8623893"
 title: "Arritmia sinusal respiratória: como a respiração molda o ritmo do coração"
 metaTitle: "Arritmia sinusal respiratória (RSA): o que é"
-metaDescription: "A arritmia sinusal respiratória é a aceleração normal do coração ao inspirar e a desaceleração ao expirar: como surge, o que a modifica e quais são seus limites."
+metaDescription: "A arritmia sinusal respiratória é a aceleração normal do coração ao inspirar e a desaceleração ao expirar: como surge, o que a modifica e seus limites."
 shortAnswer: >
   A arritmia sinusal respiratória (RSA) é o aumento normal da frequência
   cardíaca a cada inspiração e a queda a cada expiração. Apesar do nome, é uma
@@ -78,7 +78,7 @@ Os pesquisadores recomendam reservar o termo exatamente para essa aceleração e
 
 **O que ainda é um modelo ou um debate.** Como exatamente a respiração e a circulação se combinam para gerar a RSA não está resolvido. Um debate antigo pergunta se ela é gerada principalmente por um centro respiratório central no tronco encefálico ou pelo barorreflexo — o circuito de retroalimentação da pressão arterial [S4]. Segundo uma visão, o acoplamento entre a pressão arterial e os intervalos cardíacos nas frequências respiratórias reflete sobretudo a ação da respiração sobre ambos, e não a fisiologia do barorreflexo [S5]; outros atribuem ao barorreflexo um papel maior. O meio-termo amplamente aceito é que elementos centrais, periféricos e mecânicos interagem para produzi-la [S4]. Na prática, esta página trata a via vagal como estabelecida e o peso relativo de cada mecanismo gerador como uma questão em aberto.
 
-Por que a respiração lenta torna a RSA tão maior — a ligação com a ressonância e o barorreflexo — é uma questão de mecanismo à parte, prevista para uma página separada sobre respiração e HRV.
+Por que a respiração lenta torna a RSA muito maior — a ligação com a ressonância e o barorreflexo — é uma questão de mecanismo à parte, prevista para uma página separada sobre respiração e HRV.
 
 ## Como é medida?
 

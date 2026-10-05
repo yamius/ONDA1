@@ -2,7 +2,7 @@
 sourceHash: "7b68393346e3"
 title: "RMSSD：这项 HRV 指标反映什么，又不反映什么"
 metaTitle: "RMSSD：定义、含义与测量"
-metaDescription: "RMSSD 是一项反映迷走神经介导的心率变化的 HRV 指标。本文介绍它测量什么、可穿戴设备如何估算它，以及它无法告诉你什么，帮你读懂自己的数值。"
+metaDescription: "RMSSD 是一项反映迷走神经介导的心率变化的 HRV 指标。本文介绍它测量什么、可穿戴设备如何估算它，以及它无法告诉你什么。"
 shortAnswer: >
   RMSSD 是一项心率变异性指标：相邻心跳间期差值的均方根。它用于概括短时记录中的逐搏变化，反映的是迷走神经介导的心率变化。它受年龄、呼吸、体位、一天中的时间以及记录方法的影响。它本身并不能判定压力、健康状况或迷走神经张力。
 keyPoints:
@@ -66,7 +66,7 @@ RMSSD 是衡量[心率变异性](/glossary/heart-rate-variability)（HRV）的�
 
 ## RMSSD 是如何测量的？
 
-计算方法很简单。在一系列逐搏间期中：求出每对相邻间期的差值，将差值平方，取平均，再开平方根 [S1]。RMSSD 所知道的一切都来自这些间期的准确性——所以记录方法比算法本身更重要。
+计算方法很简单。在一系列逐搏间期中：求出每对相邻间期的差值，将差值平方，取平均，再开平方根 [S1]。RMSSD 所知道的一切都来自这些间期的准确性——所以记录方法比计算本身更重要。
 
 参考方法是心电图（ECG），它检测每次心跳的电信号特征。可穿戴设备则从皮肤处的脉搏信号估算间期（光电容积脉搏波，PPG），所得结果通常称为脉率变异性。两者的一致程度取决于指标和条件——通常在静息且信号良好时更接近，在运动或接触不良时更弱 [S6, S7]。对 Apple Watch 用户来说有一个实用细节：{{fact:applewatch.hrv.healthkit}} [S9]。在较新的硬件上，{{fact:applewatch.hrv.variants2026}} [S10]。Apple 未说明 Recovery HRV 的计算方式。另外，{{fact:applewatch.hrv.rmssdType}} [S11]，应用由此可以从 Apple Health 读取 RMSSD 类型的数值。
 
@@ -102,4 +102,4 @@ RMSSD 是衡量[心率变异性](/glossary/heart-rate-variability)（HRV）的�
 
 ONDA 在其 HRV 常模表和 [HRV 计算器](/tools/hrv)中，以夜间 RMSSD 作为参考指标。不过，应用自身的夜间个人基线读取的是 Apple Health 中存储的 HRV 数值，而{{fact:applewatch.hrv.healthkit}} [S9]——因此这个基线信号基于 SDNN 而非 RMSSD。练习过程中显示的实时读数，是由心率标准差计算出的替代值，既不是 RMSSD 也不是 SDNN；手机摄像头提供的是脉搏，而不是 HRV。ONDA 描述并比较你自己的数字，不做任何诊断。参见 [ONDA 测量什么](/measurements)。
 
-> 本文为科普信息，不构成诊断或医疗建议。
+> 本文为科普信息，不构成诊断或医学治疗。

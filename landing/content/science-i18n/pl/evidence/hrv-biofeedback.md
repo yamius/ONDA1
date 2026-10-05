@@ -39,15 +39,15 @@ evidenceMap:
   - claim: "Metaanaliza biofeedbacku HRV w stresie i lęku objęła badania osób, które przeszły ten trening."
     limitation: "Głównie małe badania; liczby opisują zebraną literaturę, a nie jedno badanie."
   - claim: "Trening biofeedbacku HRV wiązał się z dużym zmniejszeniem stresu i lęku w samoopisie, choć potrzeba więcej dobrze kontrolowanych badań."
-    limitation: "Wyniki w samoopisie w głównie małych badaniach; sami autorzy wzywają do lepszej kontroli."
-  - claim: "Metaanaliza randomizowanych badań kontrolowanych dotyczących objawów depresji u dorosłych wykazała średni przeciętny efekt przy umiarkowanej heterogeniczności."
+    limitation: "Wyniki w samoopisie w przeważnie małych badaniach; sami autorzy wzywają do lepszej kontroli."
+  - claim: "Metaanaliza randomizowanych badań kontrolowanych dotyczących objawów depresji u dorosłych wykazała przeciętny efekt średniej wielkości przy umiarkowanej heterogeniczności."
     limitation: "Przedział predykcji obejmuje zero, więc efekt może nie wystąpić w każdych warunkach; kwestionariusze oceny były różne."
   - claim: "Heterogeniczność badań nad depresją była umiarkowana."
     limitation: "Do moderatorów należały rok publikacji i użyty kwestionariusz, co utrudnia podanie jednego zbiorczego oszacowania."
-  - claim: "Metaanaliza biofeedbacku HRV prowadzonego zdalnie wykazała średnie efekty dla depresji i dla zmienności rytmu serca, a efekt dla stresu nie był istotny."
+  - claim: "Metaanaliza biofeedbacku HRV prowadzonego zdalnie wykazała średnie efekty dla depresji i dla zmienności rytmu serca, a efekt w odniesieniu do stresu nie był istotny."
     limitation: "Programy zdalne bardzo się różnią; wysoka heterogeniczność; sen był wymieniony jako punkt końcowy, ale streszczenie nie podaje zbiorczego wyniku dla snu."
   - claim: "W programach zdalnych maksymalizacja rezonansu i ekran na urządzeniu należały do cech związanych z lepszą skutecznością."
-    limitation: "Metaregresja w poprzek badań; to związki między cechami badań a wynikami, a nie testy tych cech."
+    limitation: "Metaregresja obejmująca wiele badań; to związki między cechami badań a wynikami, a nie testy tych cech."
   - claim: "U pacjentów z chorobami układu krążenia metaanaliza randomizowanych badań kontrolowanych wykazała niewielkie obniżenie skurczowego i rozkurczowego ciśnienia krwi."
     limitation: "Tylko pacjenci z chorobami układu krążenia; większość uwzględnionych badań budziła pewne zastrzeżenia lub miała wysokie ryzyko błędu systematycznego."
   - claim: "W metaanalizie dotyczącej chorób układu krążenia depresja i lęk nie poprawiły się istotnie, a większość badań oceniono jako budzące zastrzeżenia lub obciążone wysokim ryzykiem błędu systematycznego."
@@ -86,7 +86,7 @@ evidenceMap:
 
 ## Czym jest biofeedback HRV?
 
-Biofeedback HRV to trening wolnego, miarowego oddychania z jednoczesnym obserwowaniem własnego rytmu serca na ekranie w czasie rzeczywistym. To forma treningu z sercowo-oddechową informacją zwrotną: ekran pokazuje, jak serce przyspiesza na wdechu i zwalnia na wydechu, a ćwiczący uczy się oddychać tak, by te wahania stały się duże i płynne [S1].
+Biofeedback zmienności rytmu serca (HRV), w skrócie biofeedback HRV, to trening wolnego, miarowego oddychania z jednoczesnym obserwowaniem własnego rytmu serca na ekranie w czasie rzeczywistym. To forma treningu z sercowo-oddechową informacją zwrotną: ekran pokazuje, jak serce przyspiesza na wdechu i zwalnia na wydechu, a ćwiczący uczy się oddychać tak, by te wahania stały się duże i płynne [S1].
 
 Klasyczny protokół składa się z trzech części:
 
@@ -107,7 +107,7 @@ To, jak ta fizjologia mogłaby prowadzić do mniejszego stresu czy lepszego nast
 Badania nad biofeedbackiem HRV mierzą dwie różne rzeczy i warto je od siebie odróżniać:
 
 - **Efekty** — to, czemu trening ma służyć: kwestionariusze stresu i lęku, skale depresji, ciśnienie krwi, oceny snu, testy sportowe lub poznawcze.
-- **Fizjologia** — [zmienność rytmu serca (HRV)](/science/concepts/heart-rate-variability) w czasie praktyki i w spoczynku, czasem miary odruchu z baroreceptorów.
+- **Fizjologia** — [HRV](/science/concepts/heart-rate-variability) w czasie praktyki i w spoczynku, czasem miary odruchu z baroreceptorów.
 
 Wyższe HRV w czasie wolnego oddychania wynika z samego oddechu; nie jest dowodem, że jakiś efekt się poprawił. W jednym badaniu wyższe HRV związane z oddechem w czasie praktyki nie szło systematycznie w parze z większymi korzyściami psychologicznymi [S12], a w innym czterotygodniowy program nie zmienił spoczynkowego HRV, choć objawy się zmniejszyły [S13].
 
@@ -116,7 +116,7 @@ Warunek porównawczy jest równie ważny jak sama miara. Wielkości efektów są
 ## Co na to wpływa?
 
 - **Porównanie.** Nieaktywne czy aktywne warunki kontrolne zmieniają wielkość efektu [S3].
-- **Badana grupa.** Efekty różnią się u zdrowych ochotników, osób z lękiem lub depresją, pacjentów z chorobami układu krążenia i sportowców; najsilniejsze efekty psychologiczne pochodzą z samoopisu w głównie małych badaniach [S4].
+- **Badana grupa.** Efekty różnią się u zdrowych ochotników, osób z lękiem lub depresją, pacjentów z chorobami układu krążenia i sportowców; najsilniejsze efekty psychologiczne pochodzą z samoopisu w przeważnie małych badaniach [S4].
 - **Protokół.** Wyznaczanie rezonansu, liczba sesji, ilość ćwiczeń w domu i sprzęt różnią się między badaniami. W programach zdalnych maksymalizacja rezonansu i ekran na urządzeniu należały do cech związanych z lepszymi wynikami [S6]; w badaniach poznawczych skuteczność nie zależała od czasu trwania ani intensywności interwencji [S9].
 - **Kwestionariusz i czas.** W metaanalizie dotyczącej depresji użyty kwestionariusz i rok publikacji moderowały efekt [S5].
 
@@ -124,9 +124,9 @@ Warunek porównawczy jest równie ważny jak sama miara. Wielkości efektów są
 
 **Ogółem: ustalone, przy umiarkowanej wielkości efektu.** Przegląd systematyczny z metaanalizą, który objął {{fact:study.lehrer2020.studies}} i wiele rodzajów efektów, wykazał mały do umiarkowanego efekt na korzyść biofeedbacku HRV, podobny do efektu innych skutecznych metod leczenia [S3]. Autorzy opisują go jako przydatny w leczeniu uzupełniającym i wzywają do dalszych badań nad konkretnymi zastosowaniami [S3].
 
-**Stres i lęk: zależy od kontekstu.** Metaanaliza, która objęła {{fact:study.goessl2017.studies}}, wykazała, że trening wiązał się z dużym zmniejszeniem stresu i lęku w samoopisie, zaznaczając jednocześnie, że potrzeba więcej dobrze kontrolowanych badań [S4]. Nowsza metaanaliza programów prowadzonych zdalnie nie wykazała istotnego efektu dla stresu [S6]. Korzyść jest najwyraźniejsza dla objawów w samoopisie w małych badaniach.
+**Stres i lęk: zależy od kontekstu.** Metaanaliza, która objęła {{fact:study.goessl2017.studies}}, wykazała, że trening wiązał się z dużym zmniejszeniem stresu i lęku w samoopisie, zaznaczając jednocześnie, że potrzeba więcej dobrze kontrolowanych badań [S4]. Nowsza metaanaliza programów prowadzonych zdalnie nie wykazała istotnego efektu w odniesieniu do stresu [S6]. Korzyść jest najwyraźniejsza dla objawów w samoopisie w małych badaniach.
 
-**Objawy depresji: zależy od kontekstu.** Metaanaliza, która objęła {{fact:study.pizzoli2021.trials}} z udziałem dorosłych, wykazała średni przeciętny efekt przy umiarkowanej heterogeniczności i przedziale predykcji obejmującym zero [S5]. Programy zdalne również wykazały średni efekt dla depresji [S6]. Natomiast u pacjentów z chorobami układu krążenia depresja i lęk nie poprawiły się istotnie [S7].
+**Objawy depresji: zależy od kontekstu.** Metaanaliza u dorosłych, która objęła {{fact:study.pizzoli2021.trials}}, wykazała przeciętny efekt średniej wielkości przy umiarkowanej heterogeniczności i przedziale predykcji obejmującym zero [S5]. Programy zdalne również wykazały średni efekt w odniesieniu do depresji [S6]. Natomiast u pacjentów z chorobami układu krążenia depresja i lęk nie poprawiły się istotnie [S7].
 
 **Ciśnienie krwi: wstępne dane.** U pacjentów z chorobami układu krążenia metaanaliza, która objęła {{fact:study.kaneko2026.trials}}, wykazała niewielkie obniżenie skurczowego i rozkurczowego ciśnienia krwi, przy czym większość badań obciążało pewne lub wysokie ryzyko błędu systematycznego [S7]. Praktyczne ujęcie znajdziesz w artykule [wolny oddech a wysokie ciśnienie](/articles/high-blood-pressure-slow-breathing).
 
@@ -140,7 +140,7 @@ Warunek porównawczy jest równie ważny jak sama miara. Wielkości efektów są
 
 - W porównaniu z pozorowaną wersją biofeedbacku (sham) prawdziwy biofeedback poprawił afekt pozytywny i obniżył wyniki depresji u zdrowych dorosłych, ale nie zmienił miar autonomicznych [S12]. Streszczenie nie podaje dokładnie, co wersja pozorowana zachowywała, a co pomijała.
 - W jednym randomizowanym badaniu biofeedback z indywidualnie dobranym tempem rezonansowym nie okazał się lepszy od biofeedbacku ze stałym wolnym tempem; autorzy piszą, że ich badanie nie pozwala na stanowcze wnioski [S13]. To wynik jednego badania, a nie rozstrzygnięcie.
-- Programy zdalne z ekranem na urządzeniu wypadały zwykle lepiej, ale to związek w poprzek badań, a nie test [S6].
+- Programy zdalne z ekranem na urządzeniu wypadały zwykle lepiej, ale to związek obserwowany między badaniami, a nie test [S6].
 
 Najbardziej uzasadnione odczytanie na dziś: znaczną część pracy fizjologicznej wykonuje prawdopodobnie sam wolny oddech; informacja zwrotna może pomagać w nauce techniki i w regularnym ćwiczeniu, ale ile dodaje sama w sobie, nie jest rozstrzygnięte. Efekty wolnego oddychania bez informacji zwrotnej opisuje strona [wolne oddychanie: co pokazują badania](/science/evidence/slow-breathing).
 
@@ -162,6 +162,6 @@ Najbardziej uzasadnione odczytanie na dziś: znaczną część pracy fizjologicz
 
 ## W ONDA
 
-ONDA to aplikacja do prowadzonego oddychania z informacją zwrotną o rytmie serca w czasie rzeczywistym. W czasie praktyki kamera iPhone’a pokazuje tętno na żywo i szacunkowe tempo oddechu, a Apple Watch dodaje wynik koherencji na żywo — własną miarę ONDA tego, jak płynna i rytmiczna jest oscylacja rytmu serca, a nie kliniczny pomiar zmienności rytmu serca. Prowadzenie jest głosowe i wizualne, a nie oparte na stałym liczbowym metronomie oddechu, więc ONDA nie jest protokołem laboratoryjnym testowanym w opisanych wyżej badaniach. ONDA nie ma własnego badania skuteczności, a wyniki na tej stronie nie pokazują, co ONDA osiąga, a czego nie. ONDA nie diagnozuje ani nie leczy żadnej choroby. Zobacz [biofeedback HRV z Apple Watch](/apple-watch-hrv-biofeedback) oraz [co mierzy ONDA](/measurements).
+ONDA to aplikacja do prowadzonego oddychania z informacją zwrotną o rytmie serca w czasie rzeczywistym. W czasie praktyki kamera iPhone’a pokazuje tętno na żywo i szacunkowe tempo oddechu, a Apple Watch dodaje wynik koherencji na żywo — własną miarę ONDA tego, jak płynna i rytmiczna jest oscylacja rytmu serca, a nie kliniczny pomiar HRV. Prowadzenie jest głosowe i wizualne, a nie oparte na stałym liczbowym metronomie oddechu, więc ONDA nie jest protokołem laboratoryjnym testowanym w opisanych wyżej badaniach. ONDA nie ma własnego badania skuteczności, a wyniki na tej stronie nie pokazują, co ONDA osiąga, a czego nie. ONDA nie diagnozuje ani nie leczy żadnej choroby. Zobacz [biofeedback HRV z Apple Watch](/apple-watch-hrv-biofeedback) oraz [co mierzy ONDA](/measurements).
 
 > Informacje edukacyjne, a nie diagnoza ani leczenie.

@@ -22,7 +22,7 @@ imageAlt: "Uma fileira de intervalos entre batimentos de durações variadas aci
 evidenceMap:
   - claim: "O SDNN é o desvio padrão dos intervalos entre batimentos normais ao longo de um registro."
     limitation: "Um padrão de definição e de método; por si só, não diz nada sobre o estado de saúde."
-  - claim: "Normal significa que batimentos anormais e ectópicos são removidos antes de calcular a estatística."
+  - claim: "“Normal” significa que batimentos anormais e ectópicos são removidos antes de calcular a estatística."
     limitation: "Descreve a limpeza dos dados; o rigor com que os batimentos são filtrados difere entre algoritmos e dispositivos."
   - claim: "O SDNN reflete todos os componentes cíclicos responsáveis pela variabilidade durante o registro; resume a variabilidade total, e não um único ramo do sistema nervoso autônomo."
     limitation: "Uma propriedade da estatística; a mistura de ritmos muda com a duração e as condições do registro."
@@ -56,7 +56,7 @@ evidenceMap:
     limitation: "Médias populacionais transversais; grande variação individual em qualquer idade; esta página não traz tabelas por idade."
   - claim: "A duração do registro, o ambiente, a respiração e o método de análise moldam o valor e o rigor da sua interpretação."
     limitation: "Consenso de especialistas sobre métodos; o tamanho de cada efeito depende das condições e da pessoa."
-  - claim: "Leituras isoladas exigem uma interpretação cautelosa e contextualizada, em vez de serem lidas de forma isolada."
+  - claim: "Leituras isoladas exigem uma interpretação cautelosa e contextualizada, e não devem ser avaliadas fora de contexto."
     limitation: "Consenso de especialistas sobre a prática de interpretação, não dados experimentais diretos; a consequência prática é comparar com a sua própria tendência em condições comparáveis."
   - claim: "Batimentos anormais e ruído podem se passar por variabilidade e inflar o valor."
     limitation: "Um alerta sobre a qualidade dos dados; o tratamento de artefatos difere entre dispositivos e algoritmos."
@@ -82,7 +82,7 @@ A versão longa da métrica tem uma história clínica: calculado a partir de re
 
 O cálculo é simples: pegue os intervalos entre batimentos normais dentro da janela de registro e calcule o desvio padrão deles [S1, S2]. Tudo o que o SDNN sabe vem da precisão desses intervalos — por isso o método de registro importa mais do que a aritmética.
 
-O método de referência é o ECG, que detecta a assinatura elétrica de cada batimento. Os dispositivos vestíveis (wearables), por sua vez, estimam os intervalos a partir do sinal do pulso na pele (fotopletismografia, PPG); o resultado costuma ser chamado de variabilidade do pulso (PRV). A concordância entre os dois depende da métrica e das condições — em geral é maior em repouso e com um bom sinal, e menor com movimento ou mau contato [S5, S6] —, e a evidência agrupada até agora não se estende ao sono nem à vida cotidiana [S5].
+O método de referência é o ECG, que detecta a assinatura elétrica de cada batimento. Os dispositivos vestíveis (wearables), por sua vez, estimam os intervalos a partir do sinal do pulso na pele (fotopletismografia, PPG); o resultado costuma ser chamado de variabilidade da frequência de pulso. A concordância entre os dois depende da métrica e das condições — em geral é maior em repouso e com um bom sinal, e menor com movimento ou mau contato [S5, S6] —, e a evidência agrupada até agora não se estende ao sono nem à vida cotidiana [S5].
 
 A duração do registro faz parte do significado do valor. Um registro breve de laboratório, um ECG Holter de dia inteiro e as amostras armazenadas por um relógio são três regimes de medição diferentes: o SDNN cresce com a duração do registro, e valores de regimes assim não são intercambiáveis [S2]. Pelo mesmo motivo, as normas publicadas para registros de dia inteiro, de curta e de ultracurta duração são tratadas como mundos separados [S2].
 

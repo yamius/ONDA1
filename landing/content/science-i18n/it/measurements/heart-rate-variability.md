@@ -2,7 +2,7 @@
 sourceHash: "0bbffcc298fa"
 title: "Ci si può fidare dell'HRV di uno smartwatch o di un anello?"
 metaTitle: "HRV da wearable: ci si può fidare di orologi e anelli?"
-metaDescription: "L'HRV di smartwatch e anelli è una stima dal segnale del polso, non una lettura ECG. Dove le due concordano, dove divergono e come leggere i tuoi numeri."
+metaDescription: "L'HRV di smartwatch e anelli è una stima dal segnale del polso, non una lettura ECG. Dove concorda con l'ECG, dove diverge e come leggere i tuoi numeri."
 shortAnswer: >
   L'HRV dei dispositivi indossabili può essere utile, ma non coincide
   automaticamente con la misura che darebbe un ECG. La maggior parte degli
@@ -108,7 +108,7 @@ Un modo compatto per tenere insieme tutto questo:
 | Un valore insolitamente basso o alto | Un'osservazione, non un verdetto |
 | Uno spostamento persistente insieme a sintomi preoccupanti | Un quadro da discutere con un medico |
 
-La regola pratica discende dalla tabella: stesso dispositivo, stessa metrica, condizioni simili, misurazioni ripetute, prima di confrontare valori assoluti tra dispositivi. Dove si collocano i tuoi numeri rispetto alle fasce d'età della popolazione è una domanda separata, a cui rispondono il [calcolatore HRV](/tools/hrv) e l'articolo sulla [HRV normale per età](/articles/normal-hrv-by-age), e che qui non viene ripresa.
+La regola pratica discende dalla tabella: stesso dispositivo, stessa metrica, condizioni simili, misurazioni ripetute, prima di confrontare valori assoluti tra dispositivi. Dove si collocano i tuoi numeri rispetto alle fasce d'età della popolazione è una domanda separata, a cui rispondono il [calcolatore HRV](/tools/hrv) e l'articolo sull'[HRV normale per età](/articles/normal-hrv-by-age), e che qui non viene ripresa.
 
 ## Cosa influenza l'HRV dei dispositivi indossabili?
 
@@ -144,6 +144,6 @@ I dati sull'ecosistema Apple rientrano qui come dati sui dispositivi: Apple Heal
 
 ## In ONDA
 
-ONDA si colloca sul versante consumer di queste prove, e la sua documentazione è chiara sulla provenienza di ogni numero. La baseline personale notturna si basa sui valori di HRV scritti in Apple Health, da Apple Watch o da qualsiasi tracker la cui app vi sincronizzi i dati cardiaci, e quei valori sono di tipo SDNN. {{fact:applewatch.hrv.healthkit}} [S6]. La lettura in tempo reale mostrata durante una pratica è un indicatore surrogato calcolato dalla deviazione standard della frequenza cardiaca, non RMSSD né SDNN; la fotocamera del telefono rileva il polso, non l'HRV; e il punteggio di coerenza disponibile con Apple Watch è un punteggio di feedback proprietario, non una misura clinica dell'HRV. ONDA usa il segnale per il biofeedback: la domanda non è solo quale sia il numero, ma cosa gli succede mentre pratichi. Confronta ogni notte con il tuo corridoio recente e non diagnostica nulla. Vedi [cosa misura ONDA](/measurements).
+ONDA si colloca sul versante dei dispositivi di consumo di queste prove, e la sua documentazione è chiara sulla provenienza di ogni numero. La baseline personale notturna si basa sui valori di HRV scritti in Apple Health, da Apple Watch o da qualsiasi tracker la cui app vi sincronizzi i dati cardiaci. {{fact:applewatch.hrv.healthkit}} [S6], quindi quei valori sono di tipo SDNN. La lettura in tempo reale mostrata durante una pratica è un indicatore surrogato calcolato dalla deviazione standard della frequenza cardiaca, non RMSSD né SDNN; la fotocamera del telefono rileva il polso, non l'HRV; e il punteggio di coerenza disponibile con Apple Watch è un punteggio di feedback proprietario, non una misura clinica dell'HRV. ONDA usa il segnale per il biofeedback: la domanda non è solo quale sia il numero, ma cosa gli succede mentre pratichi. Confronta ogni notte con il tuo corridoio recente e non diagnostica nulla. Vedi [cosa misura ONDA](/measurements).
 
 > Informazioni a scopo educativo, non una diagnosi né un trattamento medico.

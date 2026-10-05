@@ -8,8 +8,8 @@ shortAnswer: >
   de intervallen tussen normale hartslagen. Ze vat de totale spreiding van het
   hartritme over een meting samen en groeit met de meetduur, dus waarden van
   verschillende apparaten, apps en meetregimes zijn niet direct vergelijkbaar.
-  Het is de maat die Apple Health opslaat. Op zichzelf zegt ze niets zeker over
-  stress, gezondheid of autonome balans.
+  Het is de maat die Apple Health opslaat. Op zichzelf stelt ze geen stress,
+  gezondheidstoestand of autonome balans vast.
 keyPoints:
   - "SDNN vat de totale spreiding samen van de intervallen tussen normale hartslagen binnen een meting."
   - "Ze weerspiegelt de totale variabiliteit: beide takken van het autonome zenuwstelsel en tragere ritmes dragen eraan bij."
@@ -63,7 +63,7 @@ evidenceMap:
 
 ## Wat is SDNN?
 
-SDNN is een van de standaardmaten voor [hartslagvariabiliteit](/glossary/heart-rate-variability) (HRV) — de natuurlijke variatie in de tijd tussen opeenvolgende hartslagen. In de meetstandaarden van het vakgebied is ze precies gedefinieerd als {{fact:hrv.sdnn.definition}} [S1]. De letters „NN” in de naam staan voor normal-to-normal: alleen intervallen tussen normale hartslagen tellen mee, en afwijkende slagen worden verwijderd voordat de statistiek wordt berekend [S2].
+SDNN is een van de standaardmaten voor [hartslagvariabiliteit](/glossary/heart-rate-variability) (HRV) — de natuurlijke variatie in de tijd tussen opeenvolgende hartslagen. In de meetstandaarden van het vakgebied is ze precies gedefinieerd: {{fact:hrv.sdnn.definition}} [S1]. De letters „NN” in de naam staan voor normal-to-normal: alleen intervallen tussen normale hartslagen tellen mee, en afwijkende slagen worden verwijderd voordat de statistiek wordt berekend [S2].
 
 In gewone taal: verzamel alle intervallen tussen naburige normale hartslagen in een meting, kijk hoe ver ze rond hun gemiddelde uiteenliggen, en druk die spreiding uit in één waarde in milliseconden. Een grotere waarde betekent dat het ritme binnen dat venster in totaal meer varieerde.
 
@@ -81,11 +81,11 @@ De lange versie van de maat heeft een klinische geschiedenis: berekend over ecg-
 
 De berekening is eenvoudig: neem de intervallen tussen normale hartslagen binnen het meetvenster en bereken hun standaarddeviatie [S1, S2]. Alles wat SDNN weet, hangt af van de nauwkeurigheid van die intervallen — daarom doet de meetmethode er meer toe dan het rekenwerk.
 
-De referentiemethode is een ecg, dat de elektrische afdruk van elke hartslag registreert. Wearables schatten de intervallen in plaats daarvan uit het polssignaal aan de huid (fotoplethysmografie, PPG); het resultaat heet vaak polsslagvariabiliteit (PRV). De overeenstemming tussen de twee hangt af van de maat en de omstandigheden — meestal beter in rust en bij een goed signaal, zwakker bij beweging of slecht contact [S5, S6] — en het gepoolde bewijs reikt tot nu toe niet tot slaap of het dagelijks leven [S5].
+De referentiemethode is een ecg, dat de elektrische afdruk van elke hartslag registreert. Wearables schatten de intervallen in plaats daarvan uit het polssignaal aan de huid (fotoplethysmografie, PPG); het resultaat heet vaak polsslagvariabiliteit. De overeenstemming tussen de twee hangt af van de maat en de omstandigheden — meestal beter in rust en bij een goed signaal, zwakker bij beweging of slecht contact [S5, S6] — en het gepoolde bewijs reikt tot nu toe niet tot slaap of het dagelijks leven [S5].
 
 De meetduur hoort bij de betekenis van de waarde. Een korte labmeting, een holter-ecg over de hele dag en de opgeslagen metingen van een horloge zijn drie verschillende meetregimes: SDNN groeit met de meetduur, en waarden uit zulke regimes zijn niet uitwisselbaar [S2]. Om dezelfde reden worden gepubliceerde normen voor metingen over de hele dag, korte en ultrakorte metingen als aparte werelden behandeld [S2].
 
-Hier komt Apple in beeld. Een praktisch gevolg voor wie een Apple Watch draagt: {{fact:applewatch.hrv.healthkit}} [S8]. Die keuze is een ontwerpbeslissing, geen wetenschappelijk oordeel over welke maat beter is: SDNN is de berekening die HealthKit altijd heeft gebruikt, in de documentatie beschreven als de standaarddeviatie van de interbeatintervallen tussen normale hartslagen, automatisch vastgelegd door het horloge [S8]. Op recente hardware geldt het volgende. {{fact:applewatch.hrv.variants2026}} [S9]. Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend. Daarnaast geldt: {{fact:applewatch.hrv.rmssdType}} [S10], waardoor apps in plaats daarvan een waarde van het type RMSSD uit Apple Health kunnen lezen — een stap naar zuiverdere vergelijkingen tussen apparaten, al blijven de waarden die al zijn verzameld SDNN.
+Hier komt Apple in beeld. Een praktisch gevolg voor wie een Apple Watch draagt: {{fact:applewatch.hrv.healthkit}} [S8]. Die keuze is een ontwerpbeslissing, geen wetenschappelijk oordeel over welke maat beter is: SDNN is de berekening die HealthKit altijd heeft gebruikt, in de documentatie beschreven als de standaarddeviatie van de interbeatintervallen tussen normale hartslagen, automatisch vastgelegd door het horloge [S8]. Op recente hardware geldt: {{fact:applewatch.hrv.variants2026}} [S9]. Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend. Daarnaast geldt: {{fact:applewatch.hrv.rmssdType}} [S10], waardoor apps in plaats daarvan een waarde van het type RMSSD uit Apple Health kunnen lezen — een stap naar zuiverdere vergelijkingen tussen apparaten, al blijven de waarden die al zijn verzameld SDNN.
 
 Voor de praktische kant: de [HRV-calculator](/tools/hrv) heeft een SDNN-modus voor getallen die van de Apple Watch komen; het alledaagse verhaal over waarom apparaten het oneens zijn, staat in [waarom je HRV op elk apparaat anders is](/articles/hrv-different-every-device); en om je eigen metingen vergelijkbaar te houden, zie [HRV consequent meten](/articles/how-to-measure-hrv-consistently).
 
@@ -119,6 +119,6 @@ Wat nog onzeker is: hoe nauw nachtelijke waarden van het type SDNN uit consument
 
 ## In ONDA
 
-De HRV-tabellen per leeftijd van ONDA zijn tabellen met nachtelijke RMSSD, maar de [HRV-calculator](/tools/hrv) heeft een aparte SDNN-modus voor getallen die van de Apple Watch komen, met bereiken uit korte ecg-rustmetingen bij gezonde volwassenen. De eigen nachtelijke persoonlijke baseline van de app is gebaseerd op de HRV-waarden die in Apple Health zijn opgeslagen — van de Apple Watch of van een ander apparaat dat hartgegevens daarheen synchroniseert. De documentatie is daar duidelijk over: {{fact:applewatch.hrv.healthkit}} [S8] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen SDNN en geen RMSSD — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+De HRV-tabellen per leeftijd van ONDA zijn tabellen met nachtelijke RMSSD, maar de [HRV-calculator](/tools/hrv) heeft een aparte SDNN-modus voor getallen die van de Apple Watch komen, met bereiken uit korte ecg-rustmetingen bij gezonde volwassenen. De nachtelijke persoonlijke baseline van de app zelf is gebaseerd op de HRV-waarden die in Apple Health zijn opgeslagen — van de Apple Watch of van een ander apparaat dat hartgegevens daarheen synchroniseert. De documentatie is daar duidelijk over: {{fact:applewatch.hrv.healthkit}} [S8] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen SDNN en geen RMSSD — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

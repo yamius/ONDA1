@@ -9,15 +9,15 @@ shortAnswer: >
   Ze wordt gebruikt om de variatie van slag tot slag in korte metingen samen te
   vatten en weerspiegelt vagaal gemedieerde veranderingen in de hartslag. Ze
   wordt beïnvloed door leeftijd, ademhaling, lichaamshouding, tijdstip van de dag
-  en meetmethode. Op zichzelf zegt ze niets zeker over stress, gezondheid of
-  vagale tonus.
+  en meetmethode. Op zichzelf stelt ze geen stress, gezondheidstoestand of
+  vagale tonus vast.
 keyPoints:
   - "RMSSD vat samen hoeveel het interval tussen hartslagen van de ene slag op de volgende verandert."
   - "Ze weerspiegelt vagaal gemedieerde veranderingen in de hartslag en is daardoor een standaardmaat voor korte metingen in HRV-onderzoek."
   - "Vagale tonus is niet rechtstreeks te meten; RMSSD is een indirecte benadering, en producten die iets anders beweren, vereenvoudigen."
   - "Wearables schatten RMSSD uit het polssignaal, en hoe goed dat met het ecg overeenkomt, hangt af van het apparaat en de omstandigheden."
   - "Waarden hangen af van de context: meetmethode, meetduur, lichaamshouding, ademhaling en tijdstip doen er allemaal toe."
-  - "Eén RMSSD-waarde is geen diagnose en geen stressmeting; trends ten opzichte van je eigen persoonlijke baseline zeggen meestal meer."
+  - "Eén RMSSD-waarde is geen diagnose en geen stressmeting; trends ten opzichte van je persoonlijke baseline zeggen meestal meer."
 imageAlt: "Een dunne turquoise hartritmelijn op een witte achtergrond, met een licht wisselende afstand tussen de slagen — een beeld van hartslagvariabiliteit van slag tot slag."
 evidenceMap:
   - claim: "RMSSD is de wortel van het gemiddelde van de gekwadrateerde opeenvolgende verschillen tussen naburige hartslagen; het is de voorkeursmaat voor korte metingen."
@@ -44,7 +44,7 @@ evidenceMap:
     limitation: "Individuele reacties verschillen; effectgroottes hangen af van persoon en dosis en worden hier niet gekwantificeerd."
   - claim: "Een hogere RMSSD gaat doorgaans samen met beter herstel, maar niet altijd; sommige ritmestoornissen veranderen het patroon van slag tot slag zelf."
     limitation: "Verbanden op bevolkingsniveau; geen persoonlijk oordeel."
-  - claim: "Trends ten opzichte van de eigen persoonlijke baseline, gemeten onder vergelijkbare omstandigheden, zeggen meer dan één meting."
+  - claim: "Trends ten opzichte van iemands persoonlijke baseline, gemeten onder vergelijkbare omstandigheden, zeggen meer dan één meting."
     limitation: "Methodologische richtlijn (consensus van experts), geen direct experimenteel bewijs; een aanbeveling voor de interpretatiepraktijk, geen klinische bevinding."
   - claim: "Apple Health registreert HRV als SDNN — het al lang bestaande HealthKit-type dat de Apple Watch automatisch vastlegt."
     limitation: "Officiële documentatie; beschrijft wat het apparaat vastlegt, niet wat de waarden voor de gezondheid betekenen; beperkt tot het ecosysteem van Apple."
@@ -56,7 +56,7 @@ evidenceMap:
 
 ## Wat is RMSSD?
 
-RMSSD is een van de standaardmaten voor [hartslagvariabiliteit](/glossary/heart-rate-variability) (HRV) — de natuurlijke variatie in de tijd tussen opeenvolgende hartslagen. In de meetstandaarden van het vakgebied is ze precies gedefinieerd als {{fact:hrv.rmssd.definition}} [S1].
+RMSSD is een van de standaardmaten voor [hartslagvariabiliteit](/glossary/heart-rate-variability) (HRV) — de natuurlijke variatie in de tijd tussen opeenvolgende hartslagen. In de meetstandaarden van het vakgebied is ze precies gedefinieerd: {{fact:hrv.rmssd.definition}} [S1].
 
 In gewone taal: neem de intervallen tussen naburige hartslagen, kijk hoeveel elk interval van het volgende verschilt, en vat die verschillen samen in één waarde in milliseconden. Een grotere waarde betekent dat het ritme meer verandert van slag tot slag.
 
@@ -74,7 +74,7 @@ De ademhaling laat in hetzelfde venster een sterke afdruk achter. Bij elke inade
 
 De berekening is eenvoudig. Uit een reeks intervallen van slag tot slag: neem het verschil tussen elk paar naburige intervallen, kwadrateer die verschillen, neem het gemiddelde en trek daar de wortel uit [S1]. Alles wat RMSSD weet, hangt af van de nauwkeurigheid van die intervallen — daarom doet de meetmethode er meer toe dan het rekenwerk.
 
-De referentiemethode is een ecg, dat de elektrische afdruk van elke hartslag registreert. Wearables schatten de intervallen in plaats daarvan uit het polssignaal aan de huid (fotoplethysmografie, PPG); het resultaat heet vaak polsslagvariabiliteit (PRV). De overeenstemming tussen de twee hangt af van de maat en de omstandigheden — meestal beter in rust en bij een goed signaal, zwakker bij beweging of slecht contact [S6, S7]. Een praktisch detail voor wie een Apple Watch draagt: {{fact:applewatch.hrv.healthkit}} [S9]. Op recente hardware geldt het volgende. {{fact:applewatch.hrv.variants2026}} [S10]. Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend. Daarnaast geldt: {{fact:applewatch.hrv.rmssdType}} [S11], waardoor apps een waarde van het type RMSSD uit Apple Health kunnen lezen.
+De referentiemethode is een ecg, dat de elektrische afdruk van elke hartslag registreert. Wearables schatten de intervallen in plaats daarvan uit het polssignaal aan de huid (fotoplethysmografie, PPG); het resultaat heet vaak polsslagvariabiliteit. De overeenstemming tussen de twee hangt af van de maat en de omstandigheden — meestal beter in rust en bij een goed signaal, zwakker bij beweging of slecht contact [S6, S7]. Een praktisch detail voor wie een Apple Watch draagt: {{fact:applewatch.hrv.healthkit}} [S9]. Op recente hardware geldt: {{fact:applewatch.hrv.variants2026}} [S10]. Apple heeft niet bekendgemaakt hoe Recovery HRV wordt berekend. Daarnaast geldt: {{fact:applewatch.hrv.rmssdType}} [S11], waardoor apps een waarde van het type RMSSD uit Apple Health kunnen lezen.
 
 De context hoort bij de meting. RMSSD hangt af van lichaamshouding, ademhaling, tijdstip van de dag en de meetduur [S5, S8]. De meeste gepubliceerde referentiewaarden zijn verzameld in korte metingen overdag onder gecontroleerde omstandigheden [S5], terwijl wearables voor consumenten vooral nachtgemiddelden tonen — verschillende contexten, waarvan de waarden niet direct uitwisselbaar zijn. Ter vergelijking: gepoolde RMSSD in rust uit korte metingen overdag bedraagt {{fact:hrv.pooled.daytime}} [S5] — een gepoold daggemiddelde, geen nachtelijke waarde en geen leeftijdsnorm. De tabellen per leeftijdsgroep die ONDA publiceert, zijn tabellen met nachtelijke RMSSD en staan in het artikel [normale HRV per leeftijd](/articles/normal-hrv-by-age). Voor een consequente persoonlijke meetroutine is de praktische kant te vinden in de gids [HRV consequent meten](/articles/how-to-measure-hrv-consistently).
 
@@ -102,10 +102,10 @@ Wat nog onzeker is: hoe nauw waarden van het type RMSSD uit consumentenapparaten
 - Het is geen diagnose en geen stressmeting. {{fact:claim.hrvNotStress}} [S1].
 - Hoger is niet vanzelf beter. Een hogere RMSSD gaat doorgaans samen met beter herstel, maar sommige ritmestoornissen veranderen het patroon van slag tot slag zelf, en een hoge waarde betekent in die situatie iets anders [S2].
 - Waarden zijn niet uitwisselbaar tussen apparaten, apps en meetomstandigheden [S6, S8].
-- Eén waarde zegt weinig. Methodologische richtlijnen raden aan metingen te vergelijken met je eigen persoonlijke baseline, gemeten onder vergelijkbare omstandigheden, in plaats van betekenis te lezen in één losse waarde [S8].
+- Eén waarde zegt weinig. Methodologische richtlijnen raden aan metingen te vergelijken met je persoonlijke baseline, gemeten onder vergelijkbare omstandigheden, in plaats van betekenis te lezen in één losse waarde [S8].
 
 ## In ONDA
 
-ONDA gebruikt nachtelijke RMSSD als referentiemaat in zijn HRV-normtabellen en in de [HRV-calculator](/tools/hrv). De eigen nachtelijke persoonlijke baseline van de app leest echter de HRV-waarden die Apple Health opslaat, en {{fact:applewatch.hrv.healthkit}} [S9] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
+ONDA gebruikt nachtelijke RMSSD als referentiemaat in zijn HRV-normtabellen en in de [HRV-calculator](/tools/hrv). De nachtelijke persoonlijke baseline van de app zelf leest echter de HRV-waarden die Apple Health opslaat, en {{fact:applewatch.hrv.healthkit}} [S9] — dus dat baselinesignaal is gebaseerd op SDNN en niet op RMSSD. De live-waarde tijdens een oefening is een vervangende maat, berekend uit de standaarddeviatie van de hartslag — geen RMSSD en geen SDNN — en de telefooncamera geeft je polsslag, geen HRV. ONDA beschrijft en vergelijkt je eigen getallen; het stelt geen diagnoses. Zie [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

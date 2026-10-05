@@ -2,7 +2,7 @@
 sourceHash: "c7c0e6f927d5"
 title: "Biofeedback de HRV: o que mostram as evidências"
 metaTitle: "Biofeedback de HRV: o que mostram as evidências"
-metaDescription: "O que a pesquisa mostra sobre o biofeedback de HRV — estresse, humor, pressão arterial, sono, desempenho — e quanto o retorno acrescenta à respiração lenta."
+metaDescription: "O que a pesquisa mostra sobre o biofeedback de HRV — estresse, humor, pressão arterial, sono, desempenho — e quanto o retorno soma à respiração lenta."
 shortAnswer: >
   O biofeedback de HRV é um treino de respiração lenta, geralmente perto da
   frequência de ressonância de cada pessoa, enquanto se observa o ritmo
@@ -16,7 +16,7 @@ keyPoints:
   - "O biofeedback de HRV é respiração lenta e cadenciada, geralmente perto da frequência de ressonância de cada pessoa, praticada enquanto se observa o ritmo cardíaco em tempo real, normalmente ao longo de várias semanas de sessões e prática em casa."
   - "Os ensaios agrupados mostram o benefício mais claro para o estresse e a ansiedade autorrelatados, um benefício moderado para os sintomas depressivos e efeitos menores ou menos certos sobre pressão arterial, sono, desempenho e cognição."
   - "O efeito geral é de pequeno a moderado e semelhante ao de outras abordagens eficazes, e é menor diante de condições de controle ativas do que diante da ausência de tratamento."
-  - "A respiração lenta sem retorno já eleva a variabilidade da frequência cardíaca de mediação vagal, e são escassos os ensaios que isolam a contribuição do próprio retorno."
+  - "A respiração lenta sem retorno já eleva a variabilidade da frequência cardíaca mediada pelo nervo vago, e são escassos os ensaios que isolam a contribuição do próprio retorno."
   - "A maioria dos ensaios é pequena, usa protocolos diferentes e é difícil de mascarar, e muitos têm risco de viés, então os tamanhos de efeito podem diminuir à medida que surgirem ensaios melhores."
   - "O biofeedback de HRV é estudado como método de treino complementar, não como tratamento isolado, e não substitui o cuidado de uma condição clínica."
   - "A maioria dos estudos usou equipamentos de laboratório; quão bem os achados se transferem para relógios e câmeras de celular não foi testado diretamente."
@@ -62,7 +62,7 @@ evidenceMap:
     limitation: "Síntese narrativa sem tamanhos de efeito agrupados; incluiu estudos com e sem condições de controle."
   - claim: "A revisão sobre doenças crônicas afirma que são necessárias mais investigações para confirmar os resultados e identificar o método mais eficaz."
     limitation: "A conclusão dos próprios autores."
-  - claim: "A respiração lenta sem retorno eleva a variabilidade da frequência cardíaca de mediação vagal durante a prática, logo após uma sessão e depois de programas de várias sessões."
+  - claim: "A respiração lenta sem retorno eleva a variabilidade da frequência cardíaca mediada pelo nervo vago durante a prática, logo após uma sessão e depois de programas de várias sessões."
     limitation: "Mudanças na variabilidade da frequência cardíaca, não desfechos de saúde; protocolos muito heterogêneos."
   - claim: "A metanálise sobre respiração lenta descreve a respiração lenta voluntária como uma técnica simples e de baixo custo, da qual se esperam poucos efeitos adversos."
     limitation: "Uma recomendação dos autores com base em uma metanálise de variabilidade da frequência cardíaca, não em ensaios de desfecho."
@@ -86,7 +86,7 @@ evidenceMap:
 
 ## O que é biofeedback de HRV?
 
-O biofeedback da variabilidade da frequência cardíaca (HRV ou VFC), ou biofeedback de HRV, é um treino de respiração lenta e cadenciada enquanto você observa o seu próprio ritmo cardíaco em uma tela em tempo real. É uma forma de treino com retorno cardiorrespiratório: a tela mostra o coração acelerando ao inspirar e desacelerando ao expirar, e a pessoa aprende a respirar de modo que essas oscilações fiquem amplas e regulares [S1].
+O biofeedback da variabilidade da frequência cardíaca (HRV ou VFC), ou biofeedback de HRV, é um treino de respiração lenta e cadenciada enquanto você observa o seu próprio ritmo cardíaco em uma tela em tempo real. É uma forma de treino com retorno cardiorrespiratório: a tela mostra o coração acelerando ao inspirar e desacelerando ao expirar, e a pessoa aprende a respirar de modo que essas oscilações fiquem amplas e suaves [S1].
 
 O protocolo clássico tem três partes:
 

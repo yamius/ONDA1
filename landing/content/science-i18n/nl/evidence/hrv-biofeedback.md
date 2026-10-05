@@ -13,7 +13,7 @@ shortAnswer: >
   moeilijk te blinderen. Op zichzelf toont het niet aan dat de feedback op het
   scherm iets toevoegt bovenop alleen langzaam ademen.
 keyPoints:
-  - "HRV-biofeedback is langzaam, gedoseerd ademen, meestal rond iemands resonantietempo, terwijl je je hartritme in realtime volgt, doorgaans gedurende enkele weken met sessies en oefening thuis."
+  - "HRV-biofeedback is langzaam ademen in een vast tempo, meestal rond iemands resonantietempo, terwijl je je hartritme in realtime volgt, doorgaans gedurende enkele weken met sessies en oefening thuis."
   - "Samengevoegde studies laten het duidelijkste voordeel zien voor zelfgerapporteerde stress en angst, een matig voordeel voor depressieve klachten, en kleinere of minder zekere effecten op bloeddruk, slaap, prestaties en cognitie."
   - "Het totale effect is klein tot matig en vergelijkbaar met dat van andere werkzame benaderingen, en het is kleiner tegenover actieve controlecondities dan tegenover geen behandeling."
   - "Langzaam ademen zonder feedback verhoogt al de vagaal gemedieerde hartslagvariabiliteit, en studies die de bijdrage van de feedback zelf isoleren, zijn schaars."
@@ -40,7 +40,7 @@ evidenceMap:
     limitation: "Overwegend kleine studies; de aantallen beschrijven de samengevoegde literatuur, niet één studie."
   - claim: "Training met HRV-biofeedback ging samen met een grote vermindering van zelfgerapporteerde stress en angst, al zijn meer goed gecontroleerde studies nodig."
     limitation: "Zelfgerapporteerde uitkomsten in overwegend kleine studies; de auteurs vragen zelf om betere controles."
-  - claim: "Een meta-analyse van gerandomiseerde gecontroleerde studies naar depressieve klachten bij volwassenen vond een gemiddeld effect van middelmatige grootte, met matige heterogeniteit."
+  - claim: "Een meta-analyse van gerandomiseerde gecontroleerde studies naar depressieve klachten bij volwassenen vond een gemiddeld effect van middelgrote omvang, met matige heterogeniteit."
     limitation: "Het predictie-interval omvat nul, dus het effect treedt mogelijk niet in elke situatie op; de gebruikte vragenlijsten verschilden."
   - claim: "De heterogeniteit tussen de depressiestudies was matig."
     limitation: "Moderatoren waren onder meer het publicatiejaar en de gebruikte vragenlijst, wat één samenvattende schatting bemoeilijkt."
@@ -49,8 +49,8 @@ evidenceMap:
   - claim: "Bij programma's op afstand behoorden het maximaliseren van resonantie en een scherm op het apparaat tot de kenmerken die samengingen met een betere werkzaamheid."
     limitation: "Meta-regressie over studies heen; samenhangen tussen studiekenmerken en resultaten, geen tests van die kenmerken."
   - claim: "Bij patiënten met hart- en vaatziekten vond een meta-analyse van gerandomiseerde gecontroleerde studies een bescheiden daling van de systolische en diastolische bloeddruk."
-    limitation: "Alleen patiënten met hart- en vaatziekten; de meeste opgenomen studies hadden enige zorgen of een hoog risico op vertekening."
-  - claim: "In de cardiovasculaire meta-analyse lieten depressie en angst geen significante verbetering zien, en de meeste studies werden beoordeeld als zorgwekkend of met een hoog risico op vertekening."
+    limitation: "Alleen patiënten met hart- en vaatziekten; bij de meeste opgenomen studies waren er enige zorgen over of een hoog risico op vertekening."
+  - claim: "In de cardiovasculaire meta-analyse lieten depressie en angst geen significante verbetering zien, en de meeste studies werden beoordeeld met enige zorgen over of een hoog risico op vertekening."
     limitation: "Weinig studies per psychologische uitkomst in deze populatie."
   - claim: "Een systematische review van HRV-biofeedback in de sport omvatte slechts enkele studies, allemaal met kleine steekproeven."
     limitation: "Experimentele en quasi-experimentele opzetten en casusbeschrijvingen; geen samengevoegde effectgrootte."
@@ -86,7 +86,7 @@ evidenceMap:
 
 ## Wat is HRV-biofeedback?
 
-HRV-biofeedback is training in langzaam, gedoseerd ademen terwijl je je eigen hartritme in realtime op een scherm volgt. Het is een vorm van cardiorespiratoire feedbacktraining: het scherm laat zien hoe het hart versnelt bij het inademen en vertraagt bij het uitademen, en je leert zo te ademen dat die schommelingen groot en gelijkmatig worden [S1].
+HRV-biofeedback is training in langzaam ademen in een vast tempo terwijl je je eigen hartritme in realtime op een scherm volgt. Het is een vorm van cardiorespiratoire feedbacktraining: het scherm laat zien hoe het hart versnelt bij het inademen en vertraagt bij het uitademen, en je leert zo te ademen dat die schommelingen groot en gelijkmatig worden [S1].
 
 Het klassieke protocol bestaat uit drie delen:
 
@@ -100,7 +100,7 @@ Het is onderzocht bij zo uiteenlopende aandoeningen als astma en depressie, en v
 
 Kort gezegd: langzaam ademen rond het resonantietempo brengt ademhaling, hartslag en bloeddruk in de pas, en de bloeddrukreflex (de baroreflex) versterkt de hartslagschommelingen. Het volledige mechanisme staat op [hoe ademhaling HRV verandert](/science/mechanisms/breathing-and-hrv), en het met de adem verbonden ritme zelf op [respiratoire sinusaritmie](/science/concepts/respiratory-sinus-arrhythmia).
 
-Hoe deze fysiologie zou kunnen leiden tot minder stress of een betere stemming, is een aparte en minder uitgemaakte vraag. Het best onderbouwde voorstel gaat over training van de baroreceptorroute en de verbindingen daarvan met de hersenen [S1] — een voorgesteld mechanisme, geen vastgesteld.
+Hoe deze fysiologie zou kunnen leiden tot minder stress of een betere stemming, is een aparte en minder uitgemaakte vraag. Het best onderbouwde voorstel gaat over training van de baroreceptorroute en de verbindingen daarvan met de hersenen [S1] — een voorgesteld, geen vastgesteld mechanisme.
 
 ## Hoe wordt het gemeten?
 
@@ -126,7 +126,7 @@ De vergelijkingsconditie doet er evenveel toe als de maat. Effectgroottes zijn g
 
 **Stress en angst: afhankelijk van de context.** Een meta-analyse van {{fact:study.goessl2017.studies}} vond dat de training samenging met een grote vermindering van zelfgerapporteerde stress en angst, maar merkte op dat meer goed gecontroleerde studies nodig zijn [S4]. Een nieuwere meta-analyse van programma's op afstand vond geen significant effect op stress [S6]. Het voordeel is het duidelijkst voor zelfgerapporteerde klachten in kleine studies.
 
-**Depressieve klachten: afhankelijk van de context.** Een meta-analyse van {{fact:study.pizzoli2021.trials}} bij volwassenen vond een gemiddeld effect van middelmatige grootte, met matige heterogeniteit en een predictie-interval dat nul omvat [S5]. Ook programma's op afstand lieten een middelgroot effect op depressie zien [S6]. Bij patiënten met hart- en vaatziekten daarentegen verbeterden depressie en angst niet significant [S7].
+**Depressieve klachten: afhankelijk van de context.** Een meta-analyse van {{fact:study.pizzoli2021.trials}} bij volwassenen vond een gemiddeld effect van middelgrote omvang, met matige heterogeniteit en een predictie-interval dat nul omvat [S5]. Ook programma's op afstand lieten een middelgroot effect op depressie zien [S6]. Bij patiënten met hart- en vaatziekten daarentegen verbeterden depressie en angst niet significant [S7].
 
 **Bloeddruk: opkomend.** Bij patiënten met hart- en vaatziekten vond een meta-analyse van {{fact:study.kaneko2026.trials}} een bescheiden daling van de systolische en diastolische bloeddruk, waarbij de meeste studies enig of hoog risico op vertekening hadden [S7]. Praktische invalshoeken staan in [langzaam ademen en hoge bloeddruk](/articles/high-blood-pressure-slow-breathing).
 
@@ -154,7 +154,7 @@ De best te verdedigen lezing op dit moment: het langzame ademen doet waarschijnl
 ## Wat het je niet vertelt
 
 - **Het is op zichzelf geen behandeling.** Het onderzoek beschrijft HRV-biofeedback als aanvullende methode [S3]. Het vervangt geen psychotherapie, medicatie of medische zorg bij angst, depressie, hoge bloeddruk of welke andere klinische aandoening ook, en niets hier betekent ‘stop met je behandeling’.
-- **Een hoger getal tijdens het oefenen is geen bewijs van voordeel.** HRV stijgt per definitie bij langzaam ademen [S11]; psychologische winst liep er in één studie niet nauw mee samen [S12], en waarden in rust veranderden in een andere niet [S13].
+- **Een hoger getal tijdens het oefenen is geen bewijs van voordeel.** HRV stijgt bij langzaam ademen juist doordat de oefening daarop gericht is [S11]; psychologische winst liep er in één studie niet nauw mee samen [S12], en waarden in rust veranderden in een andere niet [S13].
 - **De effectgroottes zijn niet definitief.** De meeste studies zijn klein, protocollen verschillen, blinderen is moeilijk en veel studies hebben een risico op vertekening [S7, S8, S9]; schattingen kunnen kleiner worden als er betere studies komen.
 - **Het is geen maat voor vagale tonus.** {{fact:claim.vagalTone}}.
 - **Laboratoriumresultaten gelden misschien niet voor wearables.** De meeste studies gebruikten laboratoriumsensoren en -software. Horloges, ringen en telefooncamera's schatten het hartritme uit de pols, wat verwant is aan maar niet identiek is met het elektrische signaal [S14] — zie [kun je HRV van een smartwatch vertrouwen](/science/measurements/heart-rate-variability). Of biofeedback via deze apparaten dezelfde uitkomsten oplevert, is niet rechtstreeks getest; de meta-analyse van programma's op afstand is het dichtstbijzijnde bewijs [S6].
@@ -162,6 +162,6 @@ De best te verdedigen lezing op dit moment: het langzame ademen doet waarschijnl
 
 ## In ONDA
 
-ONDA is een app voor begeleid ademen met realtime feedback over je hartritme. Tijdens het oefenen toont de camera van de iPhone je pols live en een schatting van je ademtempo, en een Apple Watch voegt een live coherentiescore toe — ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is, geen klinische meting van hartslagvariabiliteit. De begeleiding is gesproken en visueel in plaats van een vaste numerieke ademhalingspacer, dus ONDA is niet het laboratoriumprotocol dat in de studies hierboven is getest. Er is geen eigen studie naar de werkzaamheid van ONDA, en de bevindingen op deze pagina laten niet zien wat ONDA wel of niet bereikt. ONDA stelt geen diagnoses en behandelt geen aandoeningen. Zie [HRV-biofeedback met de Apple Watch](/apple-watch-hrv-biofeedback) en [wat ONDA meet](/measurements).
+ONDA is een app voor begeleid ademen met realtime feedback over je hartritme. Tijdens het oefenen toont de camera van de iPhone je pols live en een schatting van je ademtempo, en een Apple Watch voegt een live coherentiescore toe — ONDA's eigen maat voor hoe gelijkmatig en ritmisch de schommeling van het hartritme is, geen klinische meting van hartslagvariabiliteit. De begeleiding is gesproken en visueel in plaats van een vaste, numerieke ademhalingsgids, dus ONDA is niet het laboratoriumprotocol dat in de studies hierboven is getest. Er is geen eigen studie naar de werkzaamheid van ONDA, en de bevindingen op deze pagina laten niet zien wat ONDA wel of niet bereikt. ONDA stelt geen diagnoses en behandelt geen aandoeningen. Zie [HRV-biofeedback met de Apple Watch](/apple-watch-hrv-biofeedback) en [wat ONDA meet](/measurements).
 
 > Educatieve informatie, geen diagnose of medische behandeling.

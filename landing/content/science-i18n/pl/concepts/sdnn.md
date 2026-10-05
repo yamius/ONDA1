@@ -17,7 +17,7 @@ keyPoints:
   - "Apple Health zapisuje HRV jako SDNN, dlatego liczb z Apple Watch nie można porównywać wprost z wartościami RMSSD z innych urządzeń ubieralnych."
   - "Urządzenia ubieralne szacują SDNN z sygnału tętna, a ich zgodność z EKG zależy od urządzenia i warunków."
   - "Pojedyncza wartość SDNN nie jest diagnozą ani odczytem stresu; więcej mówi twój własny trend z porównywalnych warunków."
-imageAlt: "Rząd odstępów między uderzeniami serca o różnej długości nad rozkładem punktowym tych odstępów, z morskim nawiasem zaznaczającym ich rozrzut wokół średniej — to, co streszcza SDNN."
+imageAlt: "Rząd odstępów między uderzeniami serca o różnej długości nad rozkładem punktowym tych odstępów, z turkusowym nawiasem zaznaczającym ich rozrzut wokół średniej — to, co streszcza SDNN."
 evidenceMap:
   - claim: "SDNN to odchylenie standardowe odstępów między prawidłowymi uderzeniami serca w całym zapisie."
     limitation: "Standard definicyjny i metodologiczny; sam w sobie nie mówi nic o stanie zdrowia."
@@ -71,9 +71,9 @@ Najczęściej porównuje się ją z drugą miarą w dziedzinie czasu: {{fact:hrv
 
 ## Jak działa SDNN?
 
-SDNN to statystyka okna: wszystko, co porusza rytmem serca w trakcie zapisu, ma w niej swój udział. W krótkim zapisie spoczynkowym dominuje związane z oddechem wznoszenie się i opadanie częstości serca — oddechowa niemiarowość zatokowa — dlatego wolny, spokojny oddech podczas pomiaru wyraźnie podnosi wartość [S2]. W dłuższych zapisach dołączają wolniejsze rytmy: zmienne obciążenie, reakcje warunkowe i cykl snu i czuwania dokładają każdy własny udział do rozrzutu [S2].
+SDNN to statystyka okna: wszystko, co porusza rytmem serca w trakcie zapisu, ma w niej swój udział. W krótkim zapisie spoczynkowym dominuje związane z oddechem wznoszenie się i opadanie częstości serca — oddechowa niemiarowość zatokowa — dlatego wolny, spokojny oddech podczas pomiaru wyraźnie podnosi wartość [S2]. W dłuższych zapisach dołączają wolniejsze rytmy: zmienne obciążenie, reakcje warunkowe i cykl snu i czuwania — a każde z nich dokłada do rozrzutu własny udział [S2].
 
-Ponieważ tak wiele wpływów spływa do jednej liczby, SDNN nie rozdziela dwóch gałęzi autonomicznego układu nerwowego — obie mają w nim udział [S2]. Dlatego też nie można jej odczytywać jako bezpośredniego wskaźnika żadnej z nich. Sformułowanie ma tu znaczenie. {{fact:claim.vagalTone}} [S2, S7]. RMSSD, zbudowane z różnic między sąsiednimi uderzeniami, silniej niż SDNN zależy od szybkiej drogi przywspółczulnej [S2] — to jeden z powodów, dla których obie miary mogą opowiadać różne historie o tym samym zapisie.
+Ponieważ tak wiele wpływów spływa do jednej liczby, SDNN nie rozdziela dwóch gałęzi autonomicznego układu nerwowego — obie mają w niej udział [S2]. Dlatego też nie można jej odczytywać jako bezpośredniego wskaźnika żadnej z nich. Sformułowanie ma tu znaczenie. {{fact:claim.vagalTone}} [S2, S7]. RMSSD, zbudowane z różnic między sąsiednimi uderzeniami, silniej niż SDNN zależy od szybkiej drogi przywspółczulnej [S2] — to jeden z powodów, dla których obie miary mogą opowiadać różne historie o tym samym zapisie.
 
 Długa wersja tej miary ma historię kliniczną: obliczane z całodobowych szpitalnych zapisów EKG u pacjentów kardiologicznych SDNN jest miarą stratyfikacji ryzyka [S2]. Te dane należą do trybu pomiaru — ciągłego klinicznego EKG w populacjach pacjentów — którego zegarek konsumencki nie odtwarza, więc nie należy ich przenosić na nocną wartość z zegarka.
 
@@ -81,11 +81,11 @@ Długa wersja tej miary ma historię kliniczną: obliczane z całodobowych szpit
 
 Obliczenie jest proste: bierzesz odstępy między prawidłowymi uderzeniami serca w oknie zapisu i obliczasz ich odchylenie standardowe [S1, S2]. Wszystko, co „wie” SDNN, zależy od dokładności tych odstępów — dlatego metoda zapisu ma większe znaczenie niż arytmetyka.
 
-Metodą referencyjną jest EKG, które wykrywa elektryczny ślad każdego uderzenia serca. Urządzenia ubieralne (wearable) szacują natomiast odstępy z sygnału tętna na skórze (fotopletyzmografia, PPG); wynik często nazywa się zmiennością tętna (PRV). Zgodność obu metod zależy od miary i warunków — zwykle jest lepsza w spoczynku przy dobrym sygnale, a słabsza przy ruchu lub złym kontakcie [S5, S6] — a dotychczasowe zbiorcze dane nie obejmują snu ani warunków codziennego życia [S5].
+Metodą referencyjną jest EKG, które wykrywa elektryczny ślad każdego uderzenia serca. Urządzenia ubieralne (wearable) szacują natomiast odstępy z sygnału tętna na skórze (fotopletyzmografia, PPG); wynik często nazywa się zmiennością tętna. Zgodność obu metod zależy od miary i warunków — zwykle jest lepsza w spoczynku przy dobrym sygnale, a słabsza przy ruchu lub złym kontakcie [S5, S6] — a dotychczasowe zbiorcze dane nie obejmują snu ani warunków codziennego życia [S5].
 
 Długość zapisu jest częścią znaczenia wartości. Krótki zapis laboratoryjny, całodobowe EKG metodą Holtera i próbki zapisane przez zegarek to trzy różne tryby pomiaru: SDNN rośnie wraz z długością zapisu, a wartości z różnych trybów nie są wymienne [S2]. Z tego samego powodu publikowane normy dla zapisów całodobowych, krótkoterminowych i ultrakrótkoterminowych traktuje się jak osobne światy [S2].
 
-Tu pojawia się Apple. Praktyczna konsekwencja dla użytkowników Apple Watch: {{fact:applewatch.hrv.healthkit}} [S8]. To decyzja projektowa, a nie naukowy werdykt o tym, która miara jest lepsza: SDNN to obliczenie, którego HealthKit używa od zawsze, opisane w dokumentacji jako odchylenie standardowe odstępów między prawidłowymi uderzeniami serca, rejestrowane automatycznie przez zegarek [S8]. Co do nowszego sprzętu: {{fact:applewatch.hrv.variants2026}} [S9]. Apple nie podało, jak obliczane jest Recovery HRV. Niezależnie od tego {{fact:applewatch.hrv.rmssdType}} [S10], co pozwala aplikacjom odczytywać z Apple Health zamiast tego wartość typu RMSSD — to krok w stronę czystszego porównywania między urządzeniami, choć wartości już zebrane pozostają wartościami SDNN.
+Tu pojawia się Apple. Praktyczna konsekwencja dla użytkowników Apple Watch: {{fact:applewatch.hrv.healthkit}} [S8]. To decyzja projektowa, a nie naukowy werdykt o tym, która miara jest lepsza: SDNN to obliczenie, którego HealthKit używa od zawsze, opisane w dokumentacji jako odchylenie standardowe odstępów między prawidłowymi uderzeniami serca, rejestrowane automatycznie przez zegarek [S8]. W nowszym sprzęcie: {{fact:applewatch.hrv.variants2026}} [S9]. Apple nie podało, jak obliczane jest Recovery HRV. Niezależnie od tego {{fact:applewatch.hrv.rmssdType}} [S10], co pozwala aplikacjom odczytywać z Apple Health zamiast tego wartość typu RMSSD — to krok w stronę czystszego porównywania między urządzeniami, choć wartości już zebrane pozostają wartościami SDNN.
 
 W praktyce: [kalkulator HRV](/tools/hrv) ma tryb SDNN przeznaczony dla liczb z Apple Watch; codzienne wyjaśnienie, dlaczego urządzenia się nie zgadzają, znajdziesz w artykule [dlaczego twoje HRV jest inne na każdym urządzeniu](/articles/hrv-different-every-device); a o tym, jak zachować porównywalność własnych odczytów, przeczytasz w poradniku [jak mierzyć HRV w spójny sposób](/articles/how-to-measure-hrv-consistently).
 
@@ -94,9 +94,9 @@ W praktyce: [kalkulator HRV](/tools/hrv) ma tryb SDNN przeznaczony dla liczb z A
 - Długość zapisu. Czynnik definiujący tę miarę: dłuższe okna gromadzą wolniejsze rytmy i większe wartości, więc krótki odczyt i zapis całodobowy opisują różne światy [S2].
 - Warunki zapisu. Długość zapisu, miejsce pomiaru — laboratorium czy codzienne życie — oddech i metoda analizy kształtują wartość i rzetelność każdego porównania [S7].
 - Wiek. Średnio zmienność rytmu serca u zdrowych dorosłych maleje z wiekiem [S4]; różnice między ludźmi są duże, a średnie populacyjne nie są osobistymi celami. Tabele według przedziałów wiekowych znajdziesz w [kalkulatorze HRV](/tools/hrv) dla wartości SDNN z Apple Watch oraz w artykule o [prawidłowym HRV według wieku](/articles/normal-hrv-by-age) dla nocnego RMSSD.
-- Oddech. Częstość i głębokość oddechu podczas zapisu zmieniają wartość przez związane z oddechem wahania, które odciskają w rytmie [S2].
+- Oddech. Częstość i głębokość oddechu podczas zapisu zmieniają wartość przez związane z oddechem wahania, które odciskają się w rytmie [S2].
 - Jakość sygnału. Pominięte lub fałszywe uderzenia zniekształcają wartość, a nieprawidłowe pobudzenia mogą udawać zmienność [S2].
-- Codzienne okoliczności. Jak w przypadku innych miar HRV, pojedynczy odczyt może odbiegać od normy z całkiem zwyczajnych powodów; traktuj takie przesunięcia jako obserwacje, a nie werdykty.
+- Codzienne okoliczności. Jak w przypadku innych miar HRV, pojedynczy odczyt może odbiegać od twoich typowych wartości z całkiem zwyczajnych powodów; traktuj takie przesunięcia jako obserwacje, a nie werdykty.
 
 ## Co pokazują dane?
 
@@ -110,7 +110,7 @@ Co pozostaje niepewne: na ile konsumenckie nocne wartości typu SDNN odpowiadaj�
 
 ## Czego SDNN ci nie powie
 
-- Nie jest wymienne z RMSSD. Obie miary opisują różne właściwości tego samego zapisu, a ich wartości należą do różnych trybów pomiaru; SDNN z zegarka i RMSSD z pierścienia to nie dwa dialekty jednej liczby [S2, S5].
+- Nie jest wymienna z RMSSD. Obie miary opisują różne właściwości tego samego zapisu, a ich wartości należą do różnych trybów pomiaru; SDNN z zegarka i RMSSD z pierścienia to nie dwa dialekty jednej liczby [S2, S5].
 - To nie jest miernik napięcia nerwu błędnego. {{fact:claim.vagalTone}} [S2, S7]. SDNN zależy od szybkiej drogi przywspółczulnej jeszcze słabiej niż RMSSD [S2].
 - To nie jest diagnoza ani odczyt stresu. {{fact:claim.hrvNotStress}} [S1].
 - Wyżej nie znaczy automatycznie lepiej. Większy rozrzut może wynikać z silniejszego rytmu — albo z nieprawidłowych pobudzeń i szumu, które udają zmienność i zawyżają liczbę [S2].
