@@ -65,6 +65,7 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 
 ## Backlog
 
+- **Avcık 2026** (DOI 10.1007/s10484-026-09811-8, evidence/slow-breathing): cited with the online-first year 2026, no volume yet — check year and volume when the issue is published.
 - **Kaneko 2026** (DOI 10.1007/s10484-025-09765-3, fact `study.kaneko2026.trials`): cited with the online-first year 2026, no volume yet — check year and volume when the issue is published, and update 04-sources.md and facts.ts.
 
 - **After the science MVP:** go through the articles and replace hand-typed numbers with facts — HRV norms, resting heart rate, breathing rate, resonance pace, baseline windows (owner request 2026-10-05).

@@ -337,6 +337,7 @@ sources:              # every source cited in the body
     year: 1996        # year of the journal volume/issue, not the online-first date
     doi: "10.1161/01.CIR.93.5.1043"   # scientific types: DOI or PMID required (looked up in Crossref / PubMed)
     type: guideline   # systematic-review | meta-analysis | randomized-trial | observational | review | guideline | other | official
+    # note: "authors include an industry adviser"   # optional: a short disclosure shown in the sources list only (conflicts of interest, online-first year)
   - id: S2
     cite: "Apple HealthKit documentation"
     title: "heartRateVariabilityRMSSD"
@@ -431,6 +432,11 @@ Need a value that is missing? Declare it in the page’s `proposals` block and w
 | `study.pizzoli2021.trials` | 14 randomized controlled trials with 794 participants | Randomized controlled trials of HRV biofeedback on depressive symptoms in adults pooled in Pizzoli 2021 (meta-analysis). | approved | Pizzoli 2021, Sci Rep (HRV biofeedback and depressive symptoms, meta-analysis) — DOI 10.1038/s41598-021-86149-7 |
 | `study.lehrer2020.studies` | 58 randomized controlled studies | Randomized controlled studies of HRV biofeedback across all outcomes included in Lehrer 2020 (systematic review and meta-analysis). | approved | Lehrer 2020, Appl Psychophysiol Biofeedback (HRV biofeedback, systematic review and meta-analysis) — DOI 10.1007/s10484-020-09466-z |
 | `study.kaneko2026.trials` | 13 randomized controlled trials with 965 participants | Randomized controlled trials of HRV biofeedback in patients with cardiovascular disease included in Kaneko 2026 (meta-analysis). | approved | Kaneko 2026, Appl Psychophysiol Biofeedback (HRV biofeedback in cardiovascular disease, meta-analysis) — DOI 10.1007/s10484-025-09765-3 |
+| `study.laborde2022.studies` | 223 studies | Studies of voluntary slow breathing included in Laborde 2022 (systematic review and meta-analysis of heart rate and HRV). | approved | Laborde 2022, Neurosci Biobehav Rev (voluntary slow breathing and HRV, meta-analysis) — DOI 10.1016/j.neubiorev.2022.104711 |
+| `study.chaddha2019.studies` | 17 studies | Randomized studies of slow breathing (device-guided and unguided) on blood pressure pooled in Chaddha 2019 (meta-analysis). | approved | Chaddha 2019, Complement Ther Med (slow breathing and blood pressure, meta-analysis) — DOI 10.1016/j.ctim.2019.03.005 |
+| `study.mahtani2012.trials` | eight trials with 494 adults, five of them sponsored by or involving the manufacturer | Trials of the RESPeRATE device-guided breathing device pooled in Mahtani 2012 (meta-analysis). | approved | Mahtani 2012, J Hypertens (device-guided breathing, meta-analysis) — DOI 10.1097/HJH.0b013e3283520077 |
+| `study.fincham2023.trials` | 12 randomized controlled trials with 785 adults | Randomized controlled trials of breathwork on self-reported stress pooled in Fincham 2023 (meta-analysis). | approved | Fincham 2023, Sci Rep (breathwork and stress, meta-analysis) — DOI 10.1038/s41598-022-27247-y |
+| `study.eide2026.studies` | nine studies with 457 participants | Studies of slow breathing practised before bedtime included in Eide 2026 (systematic review). | approved | Eide 2026, Sleep Med Rev (slow breathing before bedtime, systematic review) — DOI 10.1016/j.smrv.2026.102284 |
 | `claim.vagalTone` | Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate | Use instead of “HRV measures vagal tone” or “X trains your vagal tone”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `claim.slowExhale` | Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated | Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence. | approved | Lehrer 2003, Psychosomatic Medicine — DOI 10.1097/01.psy.0000089200.81962.19; Balban 2023, Cell Reports Medicine — DOI 10.1016/j.xcrm.2022.100895 |
 | `claim.hrvNotStress` | A single low HRV reading does not by itself mean you are stressed or unwell | Use instead of “low HRV means stressed”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
@@ -554,6 +560,23 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 | Minjoz 2026 | Minjoz S et al. Psychophysiological effects of heart rate variability biofeedback versus sham biofeedback: a randomized controlled trial. *Biol Psychol* 2026;206:109254 | randomized trial | DOI 10.1016/j.biopsycho.2026.109254 · PMID 41905438 | Biofeedback vs sham (mood yes, autonomic measures no); sham content not described in the abstract |
 | Sumińska 2026 | Sumińska S, Rynkiewicz A, Szulczewski M. Resonance frequency versus fixed 0.1 Hz breathing in HRV biofeedback. *Sci Rep* 2026;16:22630 | randomized trial | DOI 10.1038/s41598-026-53333-6 · PMID 42156977 | One trial: individual resonance rate did not outperform a fixed rate — always as a single study, class emerging |
 
+## Slow breathing outcomes (evidence/slow-breathing, approved 2026-10-05)
+
+| Short cite | Full reference | Type | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Zaccaro 2018 | Zaccaro A et al. How breath-control can change your life: a systematic review on psycho-physiological correlates of slow breathing. *Front Hum Neurosci* 2018;12:353 | systematic review | DOI 10.3389/fnhum.2018.00353 · PMID 30245619 | Slow breathing in healthy people: HRV/RSA up; relaxation, fewer arousal/anxiety symptoms |
+| Chaddha 2019 | Chaddha A et al. Device and non-device-guided slow breathing to reduce blood pressure. *Complement Ther Med* 2019;45:179–184 | meta-analysis | DOI 10.1016/j.ctim.2019.03.005 · PMID 31331557 | Modest BP reduction; high heterogeneity |
+| Mahtani 2012 | Mahtani KR et al. Device-guided breathing exercises in the control of human blood pressure. *J Hypertens* 2012;30(5):852–860 | meta-analysis | DOI 10.1097/HJH.0b013e3283520077 · PMID 22495126 | RESPeRATE: no effect without manufacturer-linked trials; short trials |
+| Fincham 2023 | Fincham GW et al. Effect of breathwork on stress and mental health: a meta-analysis of randomised-controlled trials. *Sci Rep* 2023;13:432 | meta-analysis | DOI 10.1038/s41598-022-27247-y · PMID 36624160 | Small-to-medium stress/anxiety/depression effects; risk of bias; breathwork is broader than slow breathing |
+| Eide 2026 | Eide et al. Slow breathing techniques before bedtime and the effects on sleep: a systematic review. *Sleep Med Rev* 2026;87:102284 | systematic review | DOI 10.1016/j.smrv.2026.102284 · PMID 41886931 | Self-reported sleep improves; objective sleep inconclusive |
+| Jafari 2017 | Jafari H et al. Pain and respiration: a systematic review. *Pain* 2017;158(6):995–1006 | systematic review | DOI 10.1097/j.pain.0000000000000865 · PMID 28240995 | Paced slow breathing and pain: some studies, mechanism unknown |
+| Holland 2012 | Holland AE et al. Breathing exercises for chronic obstructive pulmonary disease. *Cochrane Database Syst Rev* 2012;(10):CD008250 | systematic review (Cochrane) | DOI 10.1002/14651858.CD008250.pub2 · PMID 23076942 | COPD exercise capacity; no significant adverse effects reported |
+| Santino 2020 | Santino TA et al. Breathing exercises for adults with asthma. *Cochrane Database Syst Rev* 2020;(3):CD001277 | systematic review (Cochrane) | DOI 10.1002/14651858.CD001277.pub4 · PMID 32212422 | Asthma: possible benefits, moderate to very low certainty; adverse effects not assessed |
+| Avcık 2026 | Avcık et al. Acute psychophysiological effects of 4-7-8 and Nadi Shodhana breathing: a randomized crossover study. *Appl Psychophysiol Biofeedback* 2026 (online ahead of print) | randomized crossover | DOI 10.1007/s10484-026-09811-8 · PMID 42771122 | 4-7-8: one small study. **Year = online-first; check volume/year when the issue appears** |
+| Birdee 2023 | Birdee G et al. Slow breathing for reducing stress: the effect of extending exhale. *Complement Ther Med* 2023;73:102937 | randomized trial | DOI 10.1016/j.ctim.2023.102937 · PMID 36871835 | One RCT: longer exhale did not beat an equal exhale — always as a single study next to claim.slowExhale |
+
+Note for Balban 2023 (cited above): the source carries `note: "authors include an industry adviser"` — shown in the sources list, not in the body.
+
 ## Transcutaneous vagus nerve stimulation (flagship 2)
 
 | Short cite | Full reference | Type | DOI / PMID | Use for |
@@ -671,6 +694,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/respiratory-sinus-arrhythmia` — 2026-10-05 (written by Claude Code under the same pack)
 - `mechanisms/breathing-and-hrv` — 2026-10-05 (written by Claude Code under the same pack)
 - `evidence/hrv-biofeedback` — 2026-10-05 (written by Claude Code under the same pack)
+- `evidence/slow-breathing` — 2026-10-05 (written by Claude Code under the same pack)
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](#ONDA_science_roadmap).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 

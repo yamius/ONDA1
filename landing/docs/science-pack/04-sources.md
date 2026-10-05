@@ -71,6 +71,23 @@ The check enforces all three points (see [01-quality-standard.md](01-quality-sta
 | Minjoz 2026 | Minjoz S et al. Psychophysiological effects of heart rate variability biofeedback versus sham biofeedback: a randomized controlled trial. *Biol Psychol* 2026;206:109254 | randomized trial | DOI 10.1016/j.biopsycho.2026.109254 · PMID 41905438 | Biofeedback vs sham (mood yes, autonomic measures no); sham content not described in the abstract |
 | Sumińska 2026 | Sumińska S, Rynkiewicz A, Szulczewski M. Resonance frequency versus fixed 0.1 Hz breathing in HRV biofeedback. *Sci Rep* 2026;16:22630 | randomized trial | DOI 10.1038/s41598-026-53333-6 · PMID 42156977 | One trial: individual resonance rate did not outperform a fixed rate — always as a single study, class emerging |
 
+## Slow breathing outcomes (evidence/slow-breathing, approved 2026-10-05)
+
+| Short cite | Full reference | Type | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Zaccaro 2018 | Zaccaro A et al. How breath-control can change your life: a systematic review on psycho-physiological correlates of slow breathing. *Front Hum Neurosci* 2018;12:353 | systematic review | DOI 10.3389/fnhum.2018.00353 · PMID 30245619 | Slow breathing in healthy people: HRV/RSA up; relaxation, fewer arousal/anxiety symptoms |
+| Chaddha 2019 | Chaddha A et al. Device and non-device-guided slow breathing to reduce blood pressure. *Complement Ther Med* 2019;45:179–184 | meta-analysis | DOI 10.1016/j.ctim.2019.03.005 · PMID 31331557 | Modest BP reduction; high heterogeneity |
+| Mahtani 2012 | Mahtani KR et al. Device-guided breathing exercises in the control of human blood pressure. *J Hypertens* 2012;30(5):852–860 | meta-analysis | DOI 10.1097/HJH.0b013e3283520077 · PMID 22495126 | RESPeRATE: no effect without manufacturer-linked trials; short trials |
+| Fincham 2023 | Fincham GW et al. Effect of breathwork on stress and mental health: a meta-analysis of randomised-controlled trials. *Sci Rep* 2023;13:432 | meta-analysis | DOI 10.1038/s41598-022-27247-y · PMID 36624160 | Small-to-medium stress/anxiety/depression effects; risk of bias; breathwork is broader than slow breathing |
+| Eide 2026 | Eide et al. Slow breathing techniques before bedtime and the effects on sleep: a systematic review. *Sleep Med Rev* 2026;87:102284 | systematic review | DOI 10.1016/j.smrv.2026.102284 · PMID 41886931 | Self-reported sleep improves; objective sleep inconclusive |
+| Jafari 2017 | Jafari H et al. Pain and respiration: a systematic review. *Pain* 2017;158(6):995–1006 | systematic review | DOI 10.1097/j.pain.0000000000000865 · PMID 28240995 | Paced slow breathing and pain: some studies, mechanism unknown |
+| Holland 2012 | Holland AE et al. Breathing exercises for chronic obstructive pulmonary disease. *Cochrane Database Syst Rev* 2012;(10):CD008250 | systematic review (Cochrane) | DOI 10.1002/14651858.CD008250.pub2 · PMID 23076942 | COPD exercise capacity; no significant adverse effects reported |
+| Santino 2020 | Santino TA et al. Breathing exercises for adults with asthma. *Cochrane Database Syst Rev* 2020;(3):CD001277 | systematic review (Cochrane) | DOI 10.1002/14651858.CD001277.pub4 · PMID 32212422 | Asthma: possible benefits, moderate to very low certainty; adverse effects not assessed |
+| Avcık 2026 | Avcık et al. Acute psychophysiological effects of 4-7-8 and Nadi Shodhana breathing: a randomized crossover study. *Appl Psychophysiol Biofeedback* 2026 (online ahead of print) | randomized crossover | DOI 10.1007/s10484-026-09811-8 · PMID 42771122 | 4-7-8: one small study. **Year = online-first; check volume/year when the issue appears** |
+| Birdee 2023 | Birdee G et al. Slow breathing for reducing stress: the effect of extending exhale. *Complement Ther Med* 2023;73:102937 | randomized trial | DOI 10.1016/j.ctim.2023.102937 · PMID 36871835 | One RCT: longer exhale did not beat an equal exhale — always as a single study next to claim.slowExhale |
+
+Note for Balban 2023 (cited above): the source carries `note: "authors include an industry adviser"` — shown in the sources list, not in the body.
+
 ## Transcutaneous vagus nerve stimulation (flagship 2)
 
 | Short cite | Full reference | Type | DOI / PMID | Use for |

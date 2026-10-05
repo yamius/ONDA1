@@ -2308,6 +2308,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/evidence-slow-breathing.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/science/evidence-slow-breathing.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/science/evidence-slow-breathing.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/science/evidence-vagus-nerve-stimulation.avif": {
     "width": 1024,
     "height": 768

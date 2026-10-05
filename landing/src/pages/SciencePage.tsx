@@ -304,6 +304,7 @@ function Entry({ p }: { p: SciencePageData }) {
                   {s.doi ? <span className="text-white/40"> DOI {s.doi}</span> : null}
                   {s.pmid ? <span className="text-white/40"> · PMID {s.pmid}</span> : null}
                   {s.type === 'official' ? <span className="text-white/40"> · official documentation</span> : null}
+                  {s.note ? <span className="text-white/40"> · {s.note}</span> : null}
                 </li>
               )
             })}

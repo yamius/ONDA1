@@ -35,6 +35,7 @@ sources:              # every source cited in the body
     year: 1996        # year of the journal volume/issue, not the online-first date
     doi: "10.1161/01.CIR.93.5.1043"   # scientific types: DOI or PMID required (looked up in Crossref / PubMed)
     type: guideline   # systematic-review | meta-analysis | randomized-trial | observational | review | guideline | other | official
+    # note: "authors include an industry adviser"   # optional: a short disclosure shown in the sources list only (conflicts of interest, online-first year)
   - id: S2
     cite: "Apple HealthKit documentation"
     title: "heartRateVariabilityRMSSD"
