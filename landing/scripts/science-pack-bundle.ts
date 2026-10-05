@@ -23,6 +23,7 @@ const PARTS = [
   '09-acceptance-checklist.md',
   '10-image-style.md',
   '11-lessons-first-page.md',
+  'ONDA_science_roadmap.md',
 ]
 const CHECK = process.argv.includes('--check')
 if (!CHECK) execSync('npx tsx scripts/science-pack-facts.ts', { stdio: 'inherit' })
