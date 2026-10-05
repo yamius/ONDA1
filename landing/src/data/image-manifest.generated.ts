@@ -2296,6 +2296,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/concepts-interoception.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-interoception.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-interoception.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/concepts-interpreting-hrv.avif": {
     "width": 1916,
     "height": 821

@@ -157,8 +157,8 @@ ONDA Level 1 (TERRA) begins with interoception because:
 
 1. **It's the base layer** — You cannot regulate what you cannot sense
 2. **Emotional awareness depends on it** — Emotions are first felt as body sensations
-3. **It's measurable** — Interoceptive accuracy correlates with emotional intelligence
-4. **It's trainable** — Unlike many cognitive abilities, interoception improves rapidly with practice
+3. **It can be studied** — Researchers measure it with heartbeat tasks and questionnaires, although these tools have known limits
+4. **Training evidence is mixed** — One short experiment with heartbeat feedback improved scores, while a three-week training showed no significant gains
 
 ## The Interoceptive Hierarchy
 
@@ -168,18 +168,19 @@ ONDA Level 1 (TERRA) begins with interoception because:
 | **Dynamic** | Movement, balance, proprioception | Part 2: I Move |
 | **Adaptive** | Stress signals, energy levels, recovery | Part 3: I Adapt |
 
-## Research Basis
+## What the Research Shows
 
-Studies show that people with higher interoceptive accuracy:
-- Make better decisions (Dunn et al., 2010)
-- Have greater emotional regulation (Füstös et al., 2013)
-- Experience less anxiety (Paulus & Stein, 2010)
-- Show enhanced empathy (Ernst et al., 2013)
+- **Accuracy, sensibility and awareness are different things** — how well you detect your heartbeat, how confident you feel about it, and how well those two match often correspond poorly (Garfinkel et al., 2015)
+- **Measurement is hard** — the popular heartbeat counting task has serious validity problems
+- **No established anxiety link** — a pre-registered meta-analysis found no association between cardiac interoceptive accuracy and anxiety (Adams et al., 2022)
+- **Practice is not a shortcut** — experienced meditators are not better at heartbeat detection than non-meditators (Khalsa et al., 2008)
+
+See [Interoception](/science/concepts/interoception) for the full evidence and sources.
 
 ---
 
 ## References
-1. [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula`,
+1. [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/12154366/) — interoception as the sense of the physiological condition of the body`,
   },
   {
     slug: 'ond-tokens',
@@ -296,7 +297,7 @@ Practices include:
 ---
 
 ## References
-1. [Craig, Nat Rev Neurosci (2009)](https://pubmed.ncbi.nlm.nih.gov/12030437/) — interoception and insula`,
+1. [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/12154366/) — interoception and the brainstem-to-insula pathway`,
   },
   {
     slug: 'metabolism',
@@ -806,8 +807,8 @@ The **diaphragm** is the main muscle of respiration — a dome-shaped sheet that
 ---
 
 ## References
-1. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — diaphragmatic breathing and HRV
-2. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — vagal tone and respiration`,
+1. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/10999236/) — diaphragmatic breathing and HRV
+2. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/18771686/) — vagal tone and respiration`,
   },
   {
     slug: 'parasympathetic-nervous-system',
@@ -872,27 +873,26 @@ See [The Autonomic Nervous System](/science/concepts/autonomic-nervous-system) f
     title: 'Insula',
     category: 'Neuroscience',
     shortDescription:
-      'The insular cortex — the brain\'s primary hub for interoception, self-awareness, and emotional feeling.',
+      'The insular cortex — the brain\'s key region for processing signals from inside the body.',
     content: `
 
-The **insula** (or insular cortex) is a region of the cerebral cortex folded deep within the lateral sulcus. It is often called the "island" of the brain and serves as the primary hub for interoception and self-awareness.
+The **insula** (or insular cortex) is a region of the cerebral cortex folded deep within the lateral sulcus. Its name means "island" in Latin. It is a key region for interoceptive processing — handling signals about heartbeat, breathing, the gut and other internal states (Craig, 2002; Schulz, 2016).
 
 ## Functions
 
-- **Interoceptive awareness** — sensing heartbeat, breath, gut
-- **Emotional experience** — translating body signals into felt emotions
-- **Self-awareness** — the neural basis of "I exist"
-- **Empathy** — simulating others' internal states
-- **Decision-making** — gut feelings that guide choices
+- **Interoceptive processing** — receiving and integrating signals about heartbeat, breath and the gut
+- **Emotion** — active when people report feelings; influential models propose it links body signals to felt emotion
+- **Self-awareness** — Craig's model places a sense of the bodily self in the anterior insula; this is a model, not an established fact
+- **Salience and choice** — involved in pain, craving, uncertainty and decision-making
 
 ## Anterior vs. Posterior Insula
 
 | Region | Function | ONDA Relevance |
 |--------|----------|---------------|
-| **Posterior** | Raw body signals | Level 1: Primary interoception |
-| **Anterior** | Emotional interpretation | Level 2: Emotional awareness |
+| **Posterior** | More direct body signals | Level 1: Primary interoception |
+| **Anterior** | Integration with emotion and decision regions | Level 2: Emotional awareness |
 
-"Insula" and "insular cortex" are two names for the same structure. The insula is the primary target of Level 1 interoceptive practices.
+"Insula" and "insular cortex" are two names for the same structure. ONDA does not measure insula activity.
 
 ## Why does the insula matter?
 
@@ -907,7 +907,7 @@ When the insula is damaged or works differently, people can have trouble with bo
 Altered insula activity has been reported in anxiety, depression, eating disorders, and chronic pain. These findings come mostly from imaging studies showing associations, so they do not establish that the insula causes these conditions.
 
 ## Scientific Basis
-Built on: [Interoception & insula](https://pubmed.ncbi.nlm.nih.gov/12030437/) (Craig).`,
+Sources: [Craig, Nat Rev Neurosci (2002)](https://pubmed.ncbi.nlm.nih.gov/12154366/); [Craig, Nat Rev Neurosci (2009)](https://pubmed.ncbi.nlm.nih.gov/19096369/) — the anterior insula and awareness (a model). See [Interoception](/science/concepts/interoception) for the full evidence.`,
   },
   {
     slug: 'cortisol',
@@ -971,7 +971,7 @@ In the esophagus, disorders such as achalasia make swallowing difficult because 
 "Restoration of rhythmic peristalsis" is a biological marker of Part 1 completion. When the parasympathetic system is activated and cortisol drops, the gut can return to its natural rhythmic movement — a sign that the body perceives safety.
 
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/19463818/) (Thayer & Lane).`,
+Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges); [HRV & vagal tone](https://pubmed.ncbi.nlm.nih.gov/18771686/) (Thayer & Lane).`,
   },
   {
     slug: 'heart-rate-variability',
@@ -999,8 +999,8 @@ Increased HRV is a biological marker of Part 1 ("I Am") and Part 2 ("I Move") pr
 ---
 
 ## References
-1. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
-2. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/19246382/) — resonance breathing and HRV`,
+1. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/18771686/) — HRV as vagal tone marker
+2. [Lehrer et al., Appl Psychophysiol Biofeedback (2000)](https://pubmed.ncbi.nlm.nih.gov/10999236/) — resonance breathing and HRV`,
     relatedSlugs: ['rmssd', 'sdnn', 'hrv-baseline'],
   },
   {
@@ -3248,11 +3248,15 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
 - **Efficiency** — only unexpected signals need full processing
 - **Reality as model** — perception is the brain's "best guess"
 
+## Predictive Coding and the Body
+
+Applied to signals from inside the body, this idea becomes "interoceptive inference": the brain predicts heartbeat, breathing and other bodily states, and feelings may reflect those predictions (Seth, 2013; Barrett & Simmons, 2015). These are models — useful frameworks that are still being tested, not established facts. Polyvagal theory is a separate, debated model and is not the basis of predictive coding.
+
 ## In ONDA Life
 
-Part 9 aims to create a "precise Predictive Coding model of reality." Mental simulation and visualization train the brain to generate accurate predictions — enabling proactive mastery and "pre-writing" events at the neural level.
+Part 9 uses mental simulation and visualization practices. ONDA does not measure brain predictions or prediction errors.
 ## Scientific Basis
-Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges).`,
+Sources: [Seth, Trends Cogn Sci (2013)](https://pubmed.ncbi.nlm.nih.gov/24126130/); [Barrett & Simmons, Nat Rev Neurosci (2015)](https://pubmed.ncbi.nlm.nih.gov/26016744/).`,
   },
   {
     slug: 'posterior-parietal-cortex',
