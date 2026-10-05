@@ -314,6 +314,51 @@ export const SCIENCE_UI: Record<string, ScienceUi> = {
     translationNote: 'Les titres des travaux et des revues sont cités dans leur langue d’origine.',
     dateLocale: 'fr-FR',
   },
+  it: {
+    hubTitle: 'ONDA Science',
+    hubMetaTitle: 'ONDA Science: HRV, respirazione e sistema nervoso',
+    hubDescription:
+      'Pagine di riferimento sulla variabilità della frequenza cardiaca, la respirazione e il sistema nervoso autonomo: cosa misura ogni indicatore, cosa mostra la ricerca e quali sono i suoi limiti.',
+    hubIntro:
+      'Pagine di riferimento sulla variabilità della frequenza cardiaca (HRV), la respirazione e il sistema nervoso autonomo. Ogni pagina inizia con una risposta breve, separa ciò che è accertato da ciò che dipende dal contesto o è ancora dibattuto, spiega cosa un indicatore non ti dice ed elenca le fonti. Ogni numero proviene da un unico elenco di dati verificati. Informazioni a scopo educativo, non consigli medici.',
+    hubResearch: ['Vuoi sapere come ONDA è costruito e verificato? Leggi ', 'la ricerca dietro ONDA', '.'],
+    science: 'Scienza',
+    home: 'Home',
+    kinds: {
+      concepts: { label: 'Concetti', desc: 'Cosa significano i termini chiave: definizioni, cosa riflettono e cosa no.' },
+      measurements: { label: 'Misurazioni', desc: 'Come si misurano questi segnali, con quali metodi e quanto fidarsene.' },
+      mechanisms: { label: 'Meccanismi', desc: 'Come interagiscono respirazione, cuore e sistema nervoso.' },
+      evidence: { label: 'Evidenze', desc: 'Cosa mostra la ricerca su metodi specifici, in base alla solidità delle prove.' },
+    },
+    kindMetaTitle: '{label} — ONDA Science',
+    kindMetaDescription: 'ONDA Science, sezione «{label}»: {desc}',
+    classes: {
+      established: 'Accertato',
+      guideline: 'Linee guida / consenso di esperti',
+      'context-dependent': 'Dipende dal contesto',
+      emerging: 'Emergente',
+      debated: 'Dibattuto',
+      unknown: 'Sconosciuto',
+    },
+    editor: 'Redazione: {name}',
+    reviewedBy: 'Revisione di {name}',
+    reviewedOn: ' il {date}',
+    updated: 'Aggiornato il {date}',
+    shortAnswer: 'Risposta breve',
+    keyPoints: 'Punti chiave',
+    evidenceAtAGlance: 'Le evidenze in sintesi',
+    claim: 'Affermazione',
+    evidence: 'Evidenza',
+    limitation: 'Limite',
+    sources: 'Fonti',
+    officialDocumentation: 'documentazione ufficiale',
+    related: 'Vedi anche',
+    relatedTypes: { Science: 'Scienza', Glossary: 'Glossario', Article: 'Articolo', Tool: 'Strumento' },
+    howMade:
+      'Come nascono le pagine di ONDA Science: ogni numero proviene da un unico elenco di dati verificati, ogni affermazione è collegata alle sue fonti e classificata in base alla solidità delle prove, e le fonti devono avere un DOI o un PMID (la documentazione dei produttori si usa solo per i dati sui dispositivi).',
+    translationNote: 'I titoli degli studi e delle riviste sono riportati nella lingua originale.',
+    dateLocale: 'it-IT',
+  },
 }
 
 export const scienceUi = (lang: string): ScienceUi => SCIENCE_UI[lang] ?? SCIENCE_UI.en
