@@ -18,6 +18,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `evidence/hrv-biofeedback` — 2026-10-05 (written by Claude Code under the same pack)
 - `evidence/slow-breathing` — 2026-10-05 (written by Claude Code under the same pack)
 - `concepts/autonomic-nervous-system` — 2026-10-05 (written by Claude Code under the same pack)
+- `concepts/vagus-nerve` — 2026-10-05 (written by Claude Code under the same pack)
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](ONDA_science_roadmap.md).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 

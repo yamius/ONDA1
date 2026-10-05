@@ -88,6 +88,21 @@ The check enforces all three points (see [01-quality-standard.md](01-quality-sta
 
 Note for Balban 2023 (cited above): the source carries `note: "authors include an industry adviser"` — shown in the sources list, not in the body.
 
+## Vagus nerve (concepts/vagus-nerve, approved 2026-10-05)
+
+| Short cite | Full reference | Type | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Breit 2018 | Breit S et al. Vagus nerve as modulator of the brain–gut axis in psychiatric and inflammatory disorders. *Front Psychiatry* 2018;9:44 | review | DOI 10.3389/fpsyt.2018.00044 · PMID 29593576 | Path of the nerve; functions; pharynx/larynx; afferent role (full-text quotes) |
+| Bonaz 2018 | Bonaz B, Bazin T, Pellissier S. The vagus nerve at the interface of the microbiota-gut-brain axis. *Front Neurosci* 2018;12:49 | review | DOI 10.3389/fnins.2018.00049 · PMID 29467611 | 80/20 afferent/efferent (fact vagus.fibres); gut–brain axis |
+| Berthoud & Neuhuber 2000 | Functional and chemical anatomy of the afferent vagal system. *Auton Neurosci* 2000;85(1-3):1–17 | review (mostly animal data) | DOI 10.1016/S1566-0702(00)00215-0 · PMID 11189015 | Organs reached by vagal afferents |
+| Tracey 2002 | Tracey KJ. The inflammatory reflex. *Nature* 2002;420:853–859 | review | DOI 10.1038/nature01321 · PMID 12490958 | Concept of the inflammatory reflex |
+| Borovikova 2000 | Borovikova LV et al. Vagus nerve stimulation attenuates the systemic inflammatory response to endotoxin. *Nature* 2000;405:458–462 | animal study (rats) | DOI 10.1038/35013070 · PMID 10839541 | Inflammatory reflex in animals — always marked as animal data |
+| Koopman 2016 | Koopman FA et al. Vagus nerve stimulation inhibits cytokine production and attenuates disease severity in rheumatoid arthritis. *PNAS* 2016;113(29):8284–8289 | early clinical study (implant, open-label) | DOI 10.1073/pnas.1605635113 · PMID 27382171 | Preliminary human data; source note: authors linked to the device maker |
+| Bravo 2011 | Bravo JA et al. Ingestion of Lactobacillus strain regulates emotional behavior … via the vagus nerve. *PNAS* 2011;108(38):16050–16055 | animal study (mice) | DOI 10.1073/pnas.1102999108 · PMID 21876150 | Gut–brain via vagus in mice — single animal study |
+| Longo 2023 | Longo S et al. Vasovagal syncope: an overview of pathophysiological mechanisms. *Eur J Intern Med* 2023;112:6–14 | review | DOI 10.1016/j.ejim.2023.03.025 · PMID 37030995 | Syncope definition; vasovagal generally harmless |
+| Gooden 1994 | Gooden BA. Mechanism of the human diving response. *Integr Physiol Behav Sci* 1994;29(1):6–16 | review | DOI 10.1007/BF02691277 · PMID 8018553 | Diving bradycardia via parasympathetic input |
+| Ackermann 2023 | Ackermann SP et al. The diving response and cardiac vagal activity: a systematic review and meta-analysis. *Psychophysiology* 2023;60(3):e14183 | systematic review + meta-analysis | DOI 10.1111/psyp.14183 · PMID 36219506 | RMSSD rises during diving-response triggers, not after; low-quality evidence |
+
 ## Autonomic nervous system (concepts/autonomic-nervous-system, approved 2026-10-05)
 
 | Short cite | Full reference | Type | DOI / PMID | Use for |

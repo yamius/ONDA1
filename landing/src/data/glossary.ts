@@ -570,44 +570,32 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     title: 'Vagus Nerve',
     category: 'Body Systems',
     shortDescription:
-      'The longest cranial nerve, connecting the brain to the heart, lungs, and gut — the highway of the parasympathetic nervous system.',
+      'The tenth cranial nerve, linking the brain with the heart, airways and gut — mostly carrying signals from the organs to the brain.',
     content: `
 
-The **vagus nerve** (cranial nerve X) is the primary channel of the parasympathetic nervous system. It wanders from the brainstem through the neck, thorax, and abdomen — connecting the brain to virtually every major organ.
+The **vagus nerve** (cranial nerve X) runs from the brainstem through the neck and chest into the abdomen. It is the main nerve of the parasympathetic nervous system, but most of its fibres are sensory: they carry information from the organs to the brain, while a minority carry commands from the brain to the organs.
 
 ## Key Functions
 
-- **Heart rate regulation** — slowing heart rate for calm states
-- **Breathing control** — coordinating diaphragm and respiratory rhythm
-- **Digestive activation** — stimulating "rest and digest" mode
-- **Inflammation control** — the cholinergic anti-inflammatory pathway
-- **Social engagement** — facial expression, voice tone, listening
+- **Reporting to the brain** — signals about the state of the gut, heart, lungs and other organs
+- **Heart** — slowing the heart rate
+- **Throat and voice** — the muscles of the pharynx and larynx for swallowing and speaking
+- **Gut** — taking part in digestion and gut movement
+- **Reflexes** — coughing, swallowing, vomiting
+
+Breathing muscles are a separate matter: the diaphragm is driven by the phrenic nerve, not the vagus. The vagus carries sensory signals from the lungs and airways.
 
 ## Vagal Tone
 
-**Vagal tone** cannot be measured directly; Heart Rate Variability (HRV) reflects vagally mediated changes in heart rate. Higher vagally mediated HRV is linked with a greater ability to shift between activation and recovery. ONDA Level 1 practices that work with this:
-
-- Diaphragmatic breathing (slow, low breathing)
-- Slow breathing patterns, often with an extended exhale. {{fact:claim.slowExhale}}.
-- Cold exposure protocols (linked to a brief vagal response; long-term evidence is thin)
+{{fact:claim.vagalTone}}. Heart rate variability is an indirect window, and breathing itself can distort it. {{fact:claim.slowExhale}}. Cold water on the face triggers the diving response, which slows the heart through the vagus — an ordinary reflex, not proof that the nerve is being "toned" or "reset".
 
 ## Polyvagal Theory
 
-Stephen Porges' polyvagal theory describes three states:
+Polyvagal theory proposes "ventral vagal", "sympathetic" and "dorsal vagal" states, and a "social engagement system". These are terms of the theory, which is debated: a critical review argues its basic premises are untenable. ONDA uses the terms only as the theory's language, not as established physiology.
 
-| State | Nerve Branch | Experience |
-|-------|-------------|-----------|
-| **Ventral vagal** | Myelinated vagus | Safety, social engagement |
-| **Sympathetic** | Spinal nerves | Fight or flight |
-| **Dorsal vagal** | Unmyelinated vagus | Freeze, shutdown |
+## Learn more
 
-ONDA Level 1 aims to establish a stable ventral vagal state — the biological foundation of safety.
-
----
-
-## References
-1. [Thayer & Lane, Neurosci Biobehav Rev (2009)](https://pubmed.ncbi.nlm.nih.gov/19463818/) — HRV as vagal tone marker
-2. [Porges, Biol Psychol (2007)](https://pubmed.ncbi.nlm.nih.gov/17049418/) — Polyvagal Theory`,
+[The Vagus Nerve: What It Does, and What Is Myth](/science/concepts/vagus-nerve) and [The Autonomic Nervous System](/science/concepts/autonomic-nervous-system) give the full picture with sources.`,
   },
   {
     slug: 'mammalian-dive-reflex',
@@ -2140,17 +2128,16 @@ Built on: [Polyvagal Theory](https://pubmed.ncbi.nlm.nih.gov/17049418/) (Porges)
     title: 'Ventral Vagus',
     category: 'Neuroscience',
     shortDescription:
-      'The myelinated vagal branch — supports social engagement, safety, and calm alertness.',
+      'A term from polyvagal theory (a debated model) for myelinated vagal fibres linked in the theory with calm social engagement.',
     content: `
 
-The **ventral vagal** (or ventral vagus) is the myelinated branch of the vagus nerve that supports the "social engagement" state. In Polyvagal Theory, it is the evolutionarily newest branch — enabling connection, safety, and calm presence.
+**Ventral vagus** (or "ventral vagal") is a term from polyvagal theory, a debated model. The theory uses it for myelinated vagal fibres from the brainstem that it links with a "social engagement" state of safety and calm. Outside the theory, the established part is narrower: myelinated vagal fibres from the brainstem slow the heart and help create the breath-linked heart rhythm.
 
-## Characteristics
+## Characteristics in polyvagal theory
 
-- **Myelinated** — fast, precise control
-- **Social engagement** — facial expression, voice tone, listening
-- **Calm alertness** — heart beats powerfully and steadily
-- **Safety** — the body perceives no threat
+- **Myelinated** — fast, precise control (established anatomy)
+- **"Social engagement"** — the theory links this branch with facial expression, voice and listening (a term of the theory)
+- **"Calm alertness"** and **"safety"** — states the theory attributes to this branch (not directly measurable)
 
 ## Why does Ventral Vagus matter?
 

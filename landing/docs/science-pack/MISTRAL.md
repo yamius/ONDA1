@@ -437,6 +437,7 @@ Need a value that is missing? Declare it in the page’s `proposals` block and w
 | `study.mahtani2012.trials` | eight trials with 494 adults, five of them sponsored by or involving the manufacturer | Trials of the RESPeRATE device-guided breathing device pooled in Mahtani 2012 (meta-analysis). | approved | Mahtani 2012, J Hypertens (device-guided breathing, meta-analysis) — DOI 10.1097/HJH.0b013e3283520077 |
 | `study.fincham2023.trials` | 12 randomized controlled trials with 785 adults | Randomized controlled trials of breathwork on self-reported stress pooled in Fincham 2023 (meta-analysis). | approved | Fincham 2023, Sci Rep (breathwork and stress, meta-analysis) — DOI 10.1038/s41598-022-27247-y |
 | `study.eide2026.studies` | nine studies with 457 participants | Studies of slow breathing practised before bedtime included in Eide 2026 (systematic review). | approved | Eide 2026, Sleep Med Rev (slow breathing before bedtime, systematic review) — DOI 10.1016/j.smrv.2026.102284 |
+| `vagus.fibres` | about 80% of its fibres carry signals from the organs to the brain, and about 20% carry signals from the brain to the organs | Fibre composition of the vagus nerve (afferent vs efferent), as summarised in Bonaz 2018 (review). | approved | Bonaz 2018, Front Neurosci (vagus nerve and the microbiota–gut–brain axis, review) — DOI 10.3389/fnins.2018.00049 |
 | `claim.vagalTone` | Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate | Use instead of “HRV measures vagal tone” or “X trains your vagal tone”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `claim.slowExhale` | Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated | Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence. | approved | Lehrer 2003, Psychosomatic Medicine — DOI 10.1097/01.psy.0000089200.81962.19; Balban 2023, Cell Reports Medicine — DOI 10.1016/j.xcrm.2022.100895 |
 | `claim.hrvNotStress` | A single low HRV reading does not by itself mean you are stressed or unwell | Use instead of “low HRV means stressed”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
@@ -576,6 +577,21 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 | Birdee 2023 | Birdee G et al. Slow breathing for reducing stress: the effect of extending exhale. *Complement Ther Med* 2023;73:102937 | randomized trial | DOI 10.1016/j.ctim.2023.102937 · PMID 36871835 | One RCT: longer exhale did not beat an equal exhale — always as a single study next to claim.slowExhale |
 
 Note for Balban 2023 (cited above): the source carries `note: "authors include an industry adviser"` — shown in the sources list, not in the body.
+
+## Vagus nerve (concepts/vagus-nerve, approved 2026-10-05)
+
+| Short cite | Full reference | Type | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Breit 2018 | Breit S et al. Vagus nerve as modulator of the brain–gut axis in psychiatric and inflammatory disorders. *Front Psychiatry* 2018;9:44 | review | DOI 10.3389/fpsyt.2018.00044 · PMID 29593576 | Path of the nerve; functions; pharynx/larynx; afferent role (full-text quotes) |
+| Bonaz 2018 | Bonaz B, Bazin T, Pellissier S. The vagus nerve at the interface of the microbiota-gut-brain axis. *Front Neurosci* 2018;12:49 | review | DOI 10.3389/fnins.2018.00049 · PMID 29467611 | 80/20 afferent/efferent (fact vagus.fibres); gut–brain axis |
+| Berthoud & Neuhuber 2000 | Functional and chemical anatomy of the afferent vagal system. *Auton Neurosci* 2000;85(1-3):1–17 | review (mostly animal data) | DOI 10.1016/S1566-0702(00)00215-0 · PMID 11189015 | Organs reached by vagal afferents |
+| Tracey 2002 | Tracey KJ. The inflammatory reflex. *Nature* 2002;420:853–859 | review | DOI 10.1038/nature01321 · PMID 12490958 | Concept of the inflammatory reflex |
+| Borovikova 2000 | Borovikova LV et al. Vagus nerve stimulation attenuates the systemic inflammatory response to endotoxin. *Nature* 2000;405:458–462 | animal study (rats) | DOI 10.1038/35013070 · PMID 10839541 | Inflammatory reflex in animals — always marked as animal data |
+| Koopman 2016 | Koopman FA et al. Vagus nerve stimulation inhibits cytokine production and attenuates disease severity in rheumatoid arthritis. *PNAS* 2016;113(29):8284–8289 | early clinical study (implant, open-label) | DOI 10.1073/pnas.1605635113 · PMID 27382171 | Preliminary human data; source note: authors linked to the device maker |
+| Bravo 2011 | Bravo JA et al. Ingestion of Lactobacillus strain regulates emotional behavior … via the vagus nerve. *PNAS* 2011;108(38):16050–16055 | animal study (mice) | DOI 10.1073/pnas.1102999108 · PMID 21876150 | Gut–brain via vagus in mice — single animal study |
+| Longo 2023 | Longo S et al. Vasovagal syncope: an overview of pathophysiological mechanisms. *Eur J Intern Med* 2023;112:6–14 | review | DOI 10.1016/j.ejim.2023.03.025 · PMID 37030995 | Syncope definition; vasovagal generally harmless |
+| Gooden 1994 | Gooden BA. Mechanism of the human diving response. *Integr Physiol Behav Sci* 1994;29(1):6–16 | review | DOI 10.1007/BF02691277 · PMID 8018553 | Diving bradycardia via parasympathetic input |
+| Ackermann 2023 | Ackermann SP et al. The diving response and cardiac vagal activity: a systematic review and meta-analysis. *Psychophysiology* 2023;60(3):e14183 | systematic review + meta-analysis | DOI 10.1111/psyp.14183 · PMID 36219506 | RMSSD rises during diving-response triggers, not after; low-quality evidence |
 
 ## Autonomic nervous system (concepts/autonomic-nervous-system, approved 2026-10-05)
 
@@ -725,6 +741,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `evidence/hrv-biofeedback` — 2026-10-05 (written by Claude Code under the same pack)
 - `evidence/slow-breathing` — 2026-10-05 (written by Claude Code under the same pack)
 - `concepts/autonomic-nervous-system` — 2026-10-05 (written by Claude Code under the same pack)
+- `concepts/vagus-nerve` — 2026-10-05 (written by Claude Code under the same pack)
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](#ONDA_science_roadmap).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 

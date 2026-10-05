@@ -2308,6 +2308,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/concepts-vagus-nerve.avif": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/concepts-vagus-nerve.jpg": {
+    "width": 1024,
+    "height": 768
+  },
+  "/images/science/concepts-vagus-nerve.webp": {
+    "width": 1024,
+    "height": 768
+  },
   "/images/science/evidence-hrv-biofeedback.avif": {
     "width": 1920,
     "height": 820
