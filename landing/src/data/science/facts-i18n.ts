@@ -427,7 +427,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'breath.resonance.individualRange': { display: "约每分钟 4.5–7 次呼吸" },
     'breath.cyclicSigh.dose': { display: "每天 5 分钟" },
     'baseline.window': { display: "14 天" },
-    'baseline.compare': { display: "ONDA 将每晚与你自己的走廊进行比较——即你最近几晚的平均值加减一个标准差——只有当某晚偏离至少 1.5 个标准差且变化达到最低幅度时才会标记" },
+    'baseline.compare': { display: "ONDA 将每晚与你自己的波动区间进行比较——即你最近几晚的平均值加减一个标准差——只有当某晚偏离至少 1.5 个标准差且变化达到最低幅度时才会标记" },
     'baseline.minNights': { display: "7 晚" },
     'baseline.floors': { display: "静息心率上升至少 5 次/分、HRV 下降至少 15%、呼吸频率上升至少每分钟 2 次" },
     'baseline.corridor': { display: "90 天" },
