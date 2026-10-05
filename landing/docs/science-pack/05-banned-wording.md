@@ -6,7 +6,7 @@ These phrases must not appear in a science page, in any grammatical form. Rows m
 
 | Don’t write | Write instead | Check |
 |---|---|---|
-| X stimulates / activates the vagus (nerve) — about breathing, humming, cold, gargling, singing, etc. | `{{fact:claim.slowExhale}}`, or “is associated with higher vagally mediated HRV” | auto |
+| X stimulates / activates the vagus (nerve) — about breathing, humming, cold, gargling, singing, etc. | `{{fact:claim.slowExhale}}` (a full sentence), or “is associated with higher vagally mediated HRV” | auto |
 | raises / increases / improves / boosts / strengthens / enhances / trains vagal tone | `{{fact:claim.vagalTone}}` — vagal tone cannot be measured directly | auto |
 | HRV measures vagal tone / HRV is a measure of vagal tone | `{{fact:claim.vagalTone}}` | auto |
 | HRV directly measures parasympathetic activity | HRV measures such as RMSSD reflect vagally mediated changes in heart rate | auto |

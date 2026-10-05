@@ -2320,6 +2320,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1916,
     "height": 821
   },
+  "/images/science/mechanisms-breathing-and-hrv.avif": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/science/mechanisms-breathing-and-hrv.jpg": {
+    "width": 1920,
+    "height": 820
+  },
+  "/images/science/mechanisms-breathing-and-hrv.webp": {
+    "width": 1920,
+    "height": 820
+  },
   "/images/science/rmssd.avif": {
     "width": 1024,
     "height": 768

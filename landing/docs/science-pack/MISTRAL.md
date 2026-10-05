@@ -428,7 +428,7 @@ Need a value that is missing? Declare it in the page’s `proposals` block and w
 | `study.zuern2026.participants` | 66 participants | Adults in sinus rhythm with simultaneous 12-lead ECG and wrist PPG (5 min 30 s) in a single-centre validation (Zuern 2026). | approved | Zuern 2026, Scientific Reports — DOI 10.1038/s41598-026-52700-7 |
 | `study.tan2023.depressionTrials` | 12 randomized controlled trials (838 participants) | Randomized controlled trials and participants pooled in the meta-analysis of transcutaneous auricular VNS for depressive disorder (Tan 2023). | approved | Tan 2023, J Affect Disord (taVNS in depression, meta-analysis) — DOI 10.1016/j.jad.2023.05.048 |
 | `claim.vagalTone` | Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate | Use instead of “HRV measures vagal tone” or “X trains your vagal tone”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
-| `claim.slowExhale` | slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise | Use instead of “a long exhale stimulates/activates the vagus nerve”. | approved | Lehrer 2003, Psychosomatic Medicine — DOI 10.1097/01.psy.0000089200.81962.19; Balban 2023, Cell Reports Medicine — DOI 10.1016/j.xcrm.2022.100895 |
+| `claim.slowExhale` | Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated | Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence. | approved | Lehrer 2003, Psychosomatic Medicine — DOI 10.1097/01.psy.0000089200.81962.19; Balban 2023, Cell Reports Medicine — DOI 10.1016/j.xcrm.2022.100895 |
 | `claim.hrvNotStress` | a single low HRV reading does not by itself mean you are stressed or unwell | Use instead of “low HRV means stressed”. | approved | Task Force ESC/NASPE 1996, Circulation — DOI 10.1161/01.CIR.93.5.1043 |
 | `hrv.age.trend` | HRV tends to fall with age — in our night-time RMSSD table the median drops by about 4–8 ms from one age band to the next | Computed from HRV_AGE_BANDS medians (steps: 8, 8, 6, 6, 4 ms). Individuals vary widely. | approved | Voss 2015, PLOS ONE — DOI 10.1371/journal.pone.0118308; Nunan 2010, Pacing Clin Electrophysiol — DOI 10.1111/j.1540-8159.2010.02841.x |
 
@@ -528,6 +528,9 @@ The check enforces all three points (see [01-quality-standard.md](#01-quality-st
 | Hayano 1996 | Hayano J et al. Respiratory sinus arrhythmia: a phenomenon improving pulmonary gas exchange and circulatory efficiency. *Circulation* 1996;94(4):842–847 | other (animal experiment) | DOI 10.1161/01.CIR.94.4.842 · PMID 8772709 | Mechanism summary; gas-exchange hypothesis (dogs) — hypothesis only |
 | Ben-Tal 2012 | Ben-Tal A, Shamailov SS, Paton JFR. Evaluating the physiological significance of respiratory sinus arrhythmia. *J Physiol* 2012;590(8):1989–2008 | other (modelling) | DOI 10.1113/jphysiol.2011.222422 · PMID 22289913 | Competing hypothesis: RSA minimises cardiac work — hypothesis only |
 | Grossman & Taylor 2007 | Grossman P, Taylor EW. Toward understanding respiratory sinus arrhythmia. *Biol Psychol* 2007;74(2):263–285 | review | DOI 10.1016/j.biopsycho.2005.11.014 · PMID 17081672 | Limits of RSA as a vagal-tone index (respiration confounds, dissociation) |
+| Laborde 2022 | Laborde S et al. Effects of voluntary slow breathing on heart rate and heart rate variability: a systematic review and a meta-analysis. *Neurosci Biobehav Rev* 2022;138:104711 | systematic review + meta-analysis | DOI 10.1016/j.neubiorev.2022.104711 · PMID 35623448 | vmHRV rises during slow breathing, right after a session and after multi-session programmes |
+| Sevoz-Couche & Laborde 2022 | Sevoz-Couche C, Laborde S. Heart rate variability and slow-paced breathing: when coherence meets resonance. *Neurosci Biobehav Rev* 2022;135:104576 | review | DOI 10.1016/j.neubiorev.2022.104576 · PMID 35167847 | Resonance/coherence mechanism; central (interoceptive) route as hypothesis |
+| Vaschillo 2006 | Vaschillo EG, Vaschillo B, Lehrer PM. Characteristics of resonance in heart rate variability stimulated by biofeedback. *Appl Psychophysiol Biofeedback* 2006;31(2):129–142 | other (laboratory study) | DOI 10.1007/s10484-006-9009-3 · PMID 16838124 | Individual resonance frequency: sex, height, not age; stable across sessions |
 | Shaffer & Meehan 2020 | A practical guide to resonance frequency assessment for heart rate variability biofeedback. *Frontiers in Neuroscience* 2020;14:570400 | review (methods) | DOI 10.3389/fnins.2020.570400 | Individual resonance frequency |
 | Balban 2023 | Balban MY et al. Brief structured respiration practices enhance mood and reduce physiological arousal. *Cell Reports Medicine* 2023;4(1):100895 | randomized trial | DOI 10.1016/j.xcrm.2022.100895 | Cyclic sighing; daily dose |
 | Szulczewski 2023 | Szulczewski MT, D’Agostini M, Van Diest I et al. Expiratory-gated taVNS does not further augment heart rate variability during slow breathing at 0.1 Hz. *Appl Psychophysiol Biofeedback* 2023;48:323–333 | randomized crossover | DOI 10.1007/s10484-023-09584-4 · PMID 36920567 | Slow breathing drives the HRV response; added taVNS did not augment it |
@@ -585,7 +588,7 @@ These phrases must not appear in a science page, in any grammatical form. Rows m
 
 | Don’t write | Write instead | Check |
 |---|---|---|
-| X stimulates / activates the vagus (nerve) — about breathing, humming, cold, gargling, singing, etc. | `{{fact:claim.slowExhale}}`, or “is associated with higher vagally mediated HRV” | auto |
+| X stimulates / activates the vagus (nerve) — about breathing, humming, cold, gargling, singing, etc. | `{{fact:claim.slowExhale}}` (a full sentence), or “is associated with higher vagally mediated HRV” | auto |
 | raises / increases / improves / boosts / strengthens / enhances / trains vagal tone | `{{fact:claim.vagalTone}}` — vagal tone cannot be measured directly | auto |
 | HRV measures vagal tone / HRV is a measure of vagal tone | `{{fact:claim.vagalTone}}` | auto |
 | HRV directly measures parasympathetic activity | HRV measures such as RMSSD reflect vagally mediated changes in heart rate | auto |
@@ -647,6 +650,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `evidence/transcutaneous-vagus-nerve-stimulation` — 2026-10-05 (flagship 2)
 - `concepts/hrv-baseline` — 2026-10-05
 - `concepts/respiratory-sinus-arrhythmia` — 2026-10-05 (written by Claude Code under the same pack)
+- `mechanisms/breathing-and-hrv` — 2026-10-05 (written by Claude Code under the same pack)
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](#ONDA_science_roadmap).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 

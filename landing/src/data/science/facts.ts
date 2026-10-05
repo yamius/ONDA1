@@ -96,7 +96,7 @@ const FACTS_LIST: Fact[] = [
 
   // ── Fixed wording (claims) ──────────────────────────────────────────
   { id: 'claim.vagalTone', display: 'Vagal tone cannot be measured directly; HRV measures such as RMSSD reflect vagally mediated changes in heart rate', kind: 'claim', scope: 'Use instead of “HRV measures vagal tone” or “X trains your vagal tone”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
-  { id: 'claim.slowExhale', display: 'slow breathing with a longer exhale is associated with higher vagally mediated HRV while you practise', kind: 'claim', scope: 'Use instead of “a long exhale stimulates/activates the vagus nerve”.', sources: [LEHRER_2003, BALBAN_2023], status: 'approved', reviewed: R },
+  { id: 'claim.slowExhale', display: 'Slow breathing is associated with higher vagally mediated HRV; whether a longer exhale adds anything beyond slowing the breath is still debated', kind: 'claim', scope: 'Use instead of “a long exhale stimulates/activates the vagus nerve”. Reworded 2026-10-05 (Yakiv): the exhale ratio is debated (Shaffer & Meehan 2020). Starts with a capital and has its own clause — use it as a full sentence.', sources: [LEHRER_2003, BALBAN_2023], status: 'approved', reviewed: R },
   { id: 'claim.hrvNotStress', display: 'a single low HRV reading does not by itself mean you are stressed or unwell', kind: 'claim', scope: 'Use instead of “low HRV means stressed”.', sources: [TASK_FORCE_1996], status: 'approved', reviewed: R },
 ]
 
