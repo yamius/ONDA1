@@ -2404,6 +2404,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/mechanisms-hrv-day-to-day.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/mechanisms-hrv-day-to-day.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/mechanisms-hrv-day-to-day.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/rmssd.avif": {
     "width": 1024,
     "height": 768

@@ -1360,7 +1360,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "Does caffeine lower HRV and raise resting heart rate?",
       answer:
-        "It can lower HRV, especially late in the day: caffeine's 5-6 hour half-life keeps sympathetic tone slightly elevated into the night, which can flatten overnight HRV — sleep studies show higher LF/HF and QT variability after evening caffeine. Resting heart rate is less clear-cut: caffeine can raise heart rate in some people, but the effect on resting heart rate is inconsistent, and regular coffee drinkers develop tolerance. The effect is a tax, not a catastrophe, and it compounds night to night.",
+        "The evidence on HRV is mixed: some studies find small changes after caffeine, others find none, and habitual drinkers partly adapt. The clearer link is sleep. Caffeine's 5-6 hour half-life means a late cup can make sleep lighter, and a poorer night can show up as lower overnight HRV. Resting heart rate is less clear-cut: caffeine can raise heart rate in some people, but the effect on resting heart rate is inconsistent, and regular coffee drinkers develop tolerance. The effect is a tax, not a catastrophe, and it compounds night to night.",
     },
     {
       question: "When should I stop drinking caffeine?",
@@ -1370,7 +1370,7 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: "How do I find my personal caffeine cutoff?",
       answer:
-        "Build a personal baseline of your normal resting heart rate, HRV and breathing, then compare nights. A night after a late cup that reads with a higher sleeping pulse and flatter HRV than your corridor is your body drawing the line. Move the cup earlier until your nights sit back inside your baseline — that time is your real cutoff.",
+        "Build a personal baseline of your normal resting heart rate, HRV and breathing, then compare nights. A night after a late cup that reads with a higher sleeping pulse or lower HRV than your corridor is your body drawing the line. Move the cup earlier until your nights sit back inside your baseline — that time is your real cutoff.",
     },
     {
       question: "Does the afternoon coffee really affect my sleep if I fall asleep fine?",

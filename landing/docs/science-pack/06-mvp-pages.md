@@ -21,6 +21,7 @@ The decisions come from the audit ([`../science-audit.md`](../science-audit.md) 
 - `concepts/vagus-nerve` — 2026-10-05 (written by Claude Code under the same pack)
 - `measurements/resting-heart-rate` — 2026-10-05 (Mistral draft, approved by Yakiv; facts rhr.adult.normal.caveat and rhr.trained reworded)
 - `concepts/interpreting-hrv` — 2026-10-05 (phase 2, roadmap #9; written by Claude Code under the same pack). Merges topics 2, 18, 19, 20, 28, 29 of the 40-topic list: what HRV tells you, HRV is not a score, comparing with others, why HRV is personal, low HRV, high HRV. Mechanisms and effect sizes are left to `mechanisms/hrv-day-to-day`.
+- `mechanisms/hrv-day-to-day` — 2026-10-05 (phase 2, roadmap; written by Claude Code under the same pack). Mechanisms, direction, effect sizes and duration of day-to-day HRV change: normal noise, sleep, alcohol, training, illness, stress, caffeine, late eating, menstrual cycle, circadian rhythm, altitude, dehydration, medicines. New facts hrv.dayToDay.cvLnRmssd, hrv.reliability.timeDomainCv, training.recovery.time.
 
 **The full plan — remaining MVP order, phase 2 (incl. `concepts/interpreting-hrv`, `mechanisms/hrv-day-to-day`) and the methodology page — is in [ONDA_science_roadmap.md](ONDA_science_roadmap.md).** Pages listed there may go in `relatedPlanned`; pages not in the roadmap may not.
 
