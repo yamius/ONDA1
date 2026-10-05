@@ -333,7 +333,7 @@ export const FACT_I18N: Partial<Record<Exclude<FactLang, 'en'>, Record<string, F
     'baseline.minNights': { display: "7 noites" },
     'baseline.floors': { display: "frequência cardíaca de repouso pelo menos 5 bpm acima, HRV pelo menos 15% abaixo, frequência respiratória pelo menos 2 respirações por minuto acima" },
     'baseline.corridor': { display: "90 dias" },
-    'onda.practice.livePulse': { display: "O ONDA mostra o seu pulso em tempo real durante uma prática, a partir da câmara do iPhone ou de um Apple Watch" },
+    'onda.practice.livePulse': { display: "O ONDA mostra o seu pulso em tempo real durante uma prática, a partir da câmera do iPhone ou de um Apple Watch" },
     'study.xu2026.studiesQualitative': { display: "43 estudos" },
     'study.xu2026.studiesPooled': { display: "10 estudos únicos" },
     'study.zuern2026.participants': { display: "66 participantes" },
