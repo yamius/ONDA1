@@ -143,6 +143,8 @@ async function main() {
     const rel = relative(ROOT, file).replace(/\\/g, '/')
     const src = readFileSync(file, 'utf8')
     if (!src.startsWith('---')) { err(rel, 'missing --- frontmatter ---'); continue }
+    // "(fact x.y)" is an editor note the generator strips; a bare "fact x.y" would reach readers.
+    for (const m of src.matchAll(/(?<![({:\w])fact [a-z][\w-]*\.[\w.-]+/g)) err(rel, `editor note outside "(fact …)" would be published: "${m[0]}"`)
     try { const m = matter(src); parsed.push({ file, rel, fm: m.data, body: m.content }); slugs.add(`${m.data.kind}/${m.data.slug}`) } catch (e) { err(rel, (e as Error).message) }
   }
 

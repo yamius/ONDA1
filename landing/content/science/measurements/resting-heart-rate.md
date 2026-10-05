@@ -132,7 +132,7 @@ sources:
     pmid: 41410046
     type: observational
 evidenceMap:
-  - claim: "By the standard clinical convention, a normal adult resting heart rate is fact rhr.adult.normal, and it varies with fitness level."
+  - claim: "By the standard clinical convention, a normal adult resting heart rate falls within a conventional range that varies with fitness level."
     sources: [S1]
     class: established
     claimType: measurement
@@ -210,7 +210,7 @@ evidenceMap:
     claimType: measurement
     quote: "63% of the COVID-19 cases could have been detected before symptom onset in real time via a two-tiered warning system based on the occurrence of extreme elevations in resting heart rate relative to the individual baseline."
     limitation: "A single retrospective study with few infected participants; not a validated diagnostic test, and a rise has many causes other than infection."
-  - claim: "ONDA reads resting heart rate from Apple Health, compares nights with a personal corridor and does not diagnose; the window is fact baseline.window and the minimum changes are fact baseline.floors."
+  - claim: "ONDA reads resting heart rate from Apple Health, compares nights with a personal corridor and does not diagnose; the window and the minimum changes are fixed and documented."
     sources: [S8]
     class: established
     claimType: device
