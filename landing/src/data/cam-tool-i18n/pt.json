@@ -49,7 +49,7 @@
     },
     {
       "h2": "Por que a câmera do celular mede o pulso, mas não a HRV",
-      "body": "A frequência cardíaca só precisa do número médio de batimentos por minuto, que a câmera consegue estimar. A variabilidade da frequência cardíaca (HRV) precisa do intervalo exato entre cada batimento, e a taxa de quadros e o ruído da câmera do celular não captam isso com confiabilidade — pequenos erros de tempo que não importam para o pulso arruínam a HRV. Por isso esta ferramenta mostra só a frequência cardíaca. A HRV é melhor medida com cinta peitoral ou relógio; se você tem um número do Oura, Whoop, Garmin ou Apple Watch, veja como ele se compara: [Calculadora de HRV por idade](/tools/hrv)."
+      "body": "A frequência cardíaca só precisa do número médio de batimentos por minuto, que a câmera consegue estimar. A variabilidade da frequência cardíaca (HRV ou VFC) precisa do intervalo exato entre cada batimento, e a taxa de quadros e o ruído da câmera do celular não captam isso com confiabilidade — pequenos erros de tempo que não importam para o pulso arruínam a HRV. Por isso esta ferramenta mostra só a frequência cardíaca. A HRV é melhor medida com cinta peitoral ou relógio; se você tem um número do Oura, Whoop, Garmin ou Apple Watch, veja como ele se compara: [Calculadora de HRV por idade](/tools/hrv)."
     }
   ],
   "faqTitle": "Medir pulso pela câmera do celular — perguntas frequentes",

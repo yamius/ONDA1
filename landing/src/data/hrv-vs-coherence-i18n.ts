@@ -144,7 +144,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
         kicker: '[ HRV ]',
         title: 'Что такое HRV',
         paras: [
-          'Вариабельность сердечного ритма — это вариация во времени между последовательными ударами сердца. Это измеряемая физиологическая величина, выражаемая числами вроде **RMSSD** (краткосрочная мера от удара к удару, сильнее всего связанная с вагальной активностью) или **SDNN** (общая вариабельность). Более высокая краткосрочная HRV обычно отражает более сильную парасимпатическую активность и лучшее восстановление — в пределах одного человека.',
+          'Вариабельность сердечного ритма — это вариация во времени между последовательными ударами сердца. Это измеряемая физиологическая величина, выражаемая числами вроде **RMSSD** (краткосрочная мера от удара к удару, сильнее всего связанная с вагальной активностью) или **SDNN** (общая вариабельность). Более высокий краткосрочный HRV обычно отражает более сильную парасимпатическую активность и лучшее восстановление — в пределах одного человека.',
         ],
       },
       {
@@ -168,7 +168,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
           ],
         },
         paras: [
-          'Ключевой нюанс: HRV может быть высокой *шумным*, нерегулярным образом, а когерентность вознаграждает именно чистое, организованное колебание. Высокая когерентность обычно сопровождается ростом HRV; высокая HRV не всегда означает высокую когерентность.',
+          'Ключевой нюанс: HRV может быть высокой *шумным*, нерегулярным образом, а когерентность вознаграждает именно чистое, организованное колебание. Высокая когерентность обычно сопровождается ростом HRV; высокий HRV не всегда означает высокую когерентность.',
         ],
       },
       {
@@ -195,7 +195,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
         a: 'HRV (вариабельность сердечного ритма) — это сырая вариация во времени между ударами сердца, измеряемый сигнал. Когерентность описывает, насколько эта вариация гладкая, регулярная и ритмичная, особенно как она совпадает с дыханием. HRV — это число; когерентность — мера качества паттерна в моменте.',
       },
       {
-        q: 'Высокий показатель когерентности — это то же, что высокая HRV?',
+        q: 'Высокий показатель когерентности — это то же, что высокий HRV?',
         a: 'Они связаны, но не тождественны. Когда вы дышите на резонансной частоте, HRV растёт, а ритм сердца становится гладким и волнообразным — высокая когерентность. Но HRV может быть высокой и шумным, нерегулярным образом (например, при аритмии). Когерентность вознаграждает именно чистое организованное колебание, а не просто сырую вариабельность.',
       },
       {
@@ -226,7 +226,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
     kicker: '[ HRV VS COHERENCIA ]',
     h1: 'HRV vs coherencia: ¿cuál es la diferencia?',
     heroLead:
-      '**La HRV (variabilidad de la frecuencia cardíaca) es la variación bruta en el tiempo entre tus latidos. La coherencia es lo suave, regular y rítmica que es esa variación** — con qué limpieza tu ritmo cardíaco sube y baja con tu respiración. La HRV es la señal medida; la coherencia es una medida de la calidad del patrón en el momento. Se confunden a menudo, pero responden preguntas distintas.',
+      '**La variabilidad de la frecuencia cardíaca (HRV o VFC) es la variación bruta en el tiempo entre tus latidos. La coherencia es lo suave, regular y rítmica que es esa variación** — con qué limpieza tu ritmo cardíaco sube y baja con tu respiración. La HRV es la señal medida; la coherencia es una medida de la calidad del patrón en el momento. Se confunden a menudo, pero responden preguntas distintas.',
     toc: [
       { id: 'hrv', label: 'Qué es la HRV' },
       { id: 'coherence', label: 'Qué es la coherencia' },
@@ -289,7 +289,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
     faq: [
       {
         q: '¿Cuál es la diferencia entre HRV y coherencia?',
-        a: 'La HRV (variabilidad de la frecuencia cardíaca) es la variación bruta en el tiempo entre latidos — una señal medida. La coherencia describe lo suave, regular y rítmica que es esa variación, sobre todo al alinearse con tu respiración. La HRV es el número; la coherencia es una medida de la calidad del patrón en el momento.',
+        a: 'La variabilidad de la frecuencia cardíaca (HRV o VFC) es la variación bruta en el tiempo entre latidos — una señal medida. La coherencia describe lo suave, regular y rítmica que es esa variación, sobre todo al alinearse con tu respiración. La HRV es el número; la coherencia es una medida de la calidad del patrón en el momento.',
       },
       {
         q: '¿Una puntuación de coherencia alta es lo mismo que una HRV alta?',

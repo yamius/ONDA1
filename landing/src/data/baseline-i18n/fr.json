@@ -50,7 +50,7 @@
       {
         "h2": "Ce que montre la Baseline",
         "paras": [
-          "Trois valeurs que votre Apple Watch écrit déjà dans l'app Santé, sur les 14 derniers jours : fréquence cardiaque au repos, variabilité de la fréquence cardiaque (HRV) et fréquence respiratoire. Pour chacune, vous voyez votre propre plage — la plus petite et la plus grande valeur quotidienne — ainsi que votre moyenne et le nombre de jours sur 14 qui ont une mesure.",
+          "Trois valeurs que votre Apple Watch écrit déjà dans l'app Santé, sur les 14 derniers jours : fréquence cardiaque au repos, variabilité de la fréquence cardiaque (HRV, ou VFC) et fréquence respiratoire. Pour chacune, vous voyez votre propre plage — la plus petite et la plus grande valeur quotidienne — ainsi que votre moyenne et le nombre de jours sur 14 qui ont une mesure.",
           "La fréquence cardiaque au repos est la valeur que l'Apple Watch enregistre quand vous êtes immobile. La HRV est enregistrée par Apple sous forme de SDNN, à partir de courtes mesures que la montre prend en arrière-plan, de jour comme de nuit. La fréquence respiratoire est enregistrée pendant votre sommeil, avec la fonction Sommeil activée."
         ]
       },

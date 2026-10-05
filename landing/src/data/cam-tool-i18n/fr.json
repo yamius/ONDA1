@@ -49,7 +49,7 @@
     },
     {
       "h2": "Pourquoi la caméra mesure le pouls mais pas la HRV",
-      "body": "La fréquence cardiaque ne demande que le nombre moyen de battements par minute, que la caméra peut estimer. La variabilité de la fréquence cardiaque (HRV, ou HRV) exige l'intervalle exact entre chaque battement, et la cadence d'images et le bruit d'une caméra de téléphone ne permettent pas de le capter de façon fiable — de petites erreurs de timing, sans importance pour le pouls, faussent complètement la HRV. C'est pourquoi cet outil n'affiche que la fréquence cardiaque. La HRV se mesure mieux avec une ceinture thoracique ou une montre ; si vous avez un chiffre d'Oura, Whoop, Garmin ou Apple Watch, voyez comment il se situe : [Calculateur de HRV selon l'âge](/tools/hrv)."
+      "body": "La fréquence cardiaque ne demande que le nombre moyen de battements par minute, que la caméra peut estimer. La variabilité de la fréquence cardiaque (HRV, ou VFC) exige l'intervalle exact entre chaque battement, et la cadence d'images et le bruit d'une caméra de téléphone ne permettent pas de le capter de façon fiable — de petites erreurs de timing, sans importance pour le pouls, faussent complètement la HRV. C'est pourquoi cet outil n'affiche que la fréquence cardiaque. La HRV se mesure mieux avec une ceinture thoracique ou une montre ; si vous avez un chiffre d'Oura, Whoop, Garmin ou Apple Watch, voyez comment il se situe : [Calculateur de HRV selon l'âge](/tools/hrv)."
     }
   ],
   "faqTitle": "Pouls par la caméra du téléphone — questions fréquentes",

@@ -555,7 +555,7 @@
       "sections": [
         {
           "heading": "O que é HRV",
-          "body": "A variabilidade da frequência cardíaca (HRV) é a variação natural do tempo entre os batimentos. Um coração saudável não bate como um metrônomo: os intervalos se alongam e encurtam com a respiração, a postura e a atividade do sistema nervoso. O RMSSD, a raiz quadrada da média dos quadrados das diferenças sucessivas, é uma das medidas de HRV mais usadas e reflete principalmente a atividade parassimpática (vagal), o lado de \"descanso e digestão\" do sistema nervoso."
+          "body": "A variabilidade da frequência cardíaca (HRV ou VFC) é a variação natural do tempo entre os batimentos. Um coração saudável não bate como um metrônomo: os intervalos se alongam e encurtam com a respiração, a postura e a atividade do sistema nervoso. O RMSSD, a raiz quadrada da média dos quadrados das diferenças sucessivas, é uma das medidas de HRV mais usadas e reflete principalmente a atividade parassimpática (vagal), o lado de \"descanso e digestão\" do sistema nervoso."
         },
         {
           "heading": "Como esta ferramenta calcula",

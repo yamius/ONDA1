@@ -11,7 +11,7 @@
     "current": "Calculadora de HRV"
   },
   "h1": "Calculadora de HRV por edad",
-  "capsule": "Introduce tu edad y tu variabilidad de la frecuencia cardíaca (HRV o HRV) para ver dónde se sitúa frente a personas de tu edad. Usa RMSSD si tu dato viene de Oura, Whoop, Garmin o Polar, y SDNN si viene del Apple Watch. Las normas proceden de estudios revisados por pares, pero tu tendencia de varias semanas importa más que cualquier percentil.",
+  "capsule": "Introduce tu edad y tu variabilidad de la frecuencia cardíaca (HRV o VFC) para ver dónde se sitúa frente a personas de tu edad. Usa RMSSD si tu dato viene de Oura, Whoop, Garmin o Polar, y SDNN si viene del Apple Watch. Las normas proceden de estudios revisados por pares, pero tu tendencia de varias semanas importa más que cualquier percentil.",
   "imageAlt": "Calculadora de HRV por edad — calculadora interactiva gratuita de variabilidad de la frecuencia cardíaca de ONDA Life",
   "metric": {
     "label": "Tu dispositivo mide",

@@ -1,7 +1,7 @@
 {
-  "title": "HRV (HRV): 52 respuestas claras sobre la variabilidad cardíaca",
+  "title": "HRV: 52 respuestas claras sobre la variabilidad cardíaca",
   "description": "¿Qué es una buena HRV? ¿Por qué la tengo baja? ¿Influyen el alcohol, la cafeína o la respiración? 52 respuestas breves y con fuentes sobre la HRV.",
-  "intro": "Respuestas breves y directas a las preguntas que la gente realmente se hace sobre la variabilidad de la frecuencia cardíaca (HRV, o HRV en inglés). Cada respuesta empieza por la respuesta, da una cifra o una fuente cuando importa y enlaza a una guía más extensa o a una calculadora gratuita. Esta página es información general, no consejo médico.",
+  "intro": "Respuestas breves y directas a las preguntas que la gente realmente se hace sobre la variabilidad de la frecuencia cardíaca (HRV o VFC). Cada respuesta empieza por la respuesta, da una cifra o una fuente cuando importa y enlaza a una guía más extensa o a una calculadora gratuita. Esta página es información general, no consejo médico.",
   "neuralSuggestion": {
     "text": "Casi todas las preguntas sobre la HRV acaban en el mismo sitio: tu propio rango importa más que cualquier promedio.",
     "linkText": "Consulta tu rango de dos semanas →"
@@ -12,7 +12,7 @@
       "items": [
         {
           "id": "what-is-hrv",
-          "q": "¿Qué es la HRV (HRV)?",
+          "q": "¿Qué es la HRV?",
           "a": "La variabilidad de la frecuencia cardíaca (HRV, en inglés HRV) es la variación del tiempo entre latidos consecutivos, medida en milisegundos. Piensa en un batería que acelera y frena un poco con cada respiración, no en un metrónomo: un corazón que late a 60 bpm no late exactamente una vez por segundo; los intervalos cambian decenas de milisegundos, sobre todo bajo el control del nervio vago. Más variación en reposo suele significar que está activa la parte de «descanso y digestión» de tu sistema nervioso. [Explicación completa →](/articles/topic/hrv-heart-rate)"
         },
         {

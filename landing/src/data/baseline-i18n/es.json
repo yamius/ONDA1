@@ -1,7 +1,7 @@
 {
   "ui": {
     "h1": "Ver los datos que tu Apple Watch ya registró",
-    "intro": "Una herramienta gratuita que lee dos semanas de tu propia app Salud —pulso en reposo, variabilidad de la frecuencia cardiaca (HRV) y frecuencia respiratoria— y te muestra tu rango, no un solo número. Todo se lee en tu iPhone; las cifras nunca nos llegan.",
+    "intro": "Una herramienta gratuita que lee dos semanas de tu propia app Salud —pulso en reposo, variabilidad de la frecuencia cardíaca (HRV o VFC) y frecuencia respiratoria— y te muestra tu rango, no un solo número. Todo se lee en tu iPhone; las cifras nunca nos llegan.",
     "title": "Tus últimas dos semanas",
     "lead": "Leído de tus propios datos de Salud, en tu dispositivo. Estas cifras nunca nos llegaron.",
     "daysTemplate": "{n} DE {total} DÍAS",
@@ -50,7 +50,7 @@
       {
         "h2": "Qué muestra el Baseline",
         "paras": [
-          "Tres cifras que tu Apple Watch ya escribe en la app Salud, de los últimos 14 días: frecuencia cardiaca en reposo, variabilidad de la frecuencia cardiaca (HRV) y frecuencia respiratoria. Para cada una ves tu propio rango —el valor diario más pequeño y el más grande—, además de tu promedio y cuántos de los 14 días tienen lectura.",
+          "Tres cifras que tu Apple Watch ya escribe en la app Salud, de los últimos 14 días: frecuencia cardiaca en reposo, variabilidad de la frecuencia cardiaca y frecuencia respiratoria. Para cada una ves tu propio rango —el valor diario más pequeño y el más grande—, además de tu promedio y cuántos de los 14 días tienen lectura.",
           "La frecuencia cardiaca en reposo es la cifra que el Apple Watch registra mientras estás quieto. Apple registra la HRV como SDNN, a partir de lecturas breves que el reloj toma en segundo plano de día y de noche. La frecuencia respiratoria se registra mientras duermes con el registro del sueño activado."
         ]
       },

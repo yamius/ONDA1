@@ -11,7 +11,7 @@
     "current": "Calculateur de HRV"
   },
   "h1": "Calculateur de HRV selon l'âge",
-  "capsule": "Entrez votre âge et votre variabilité de la fréquence cardiaque (HRV, ou HRV) pour voir où vous vous situez par rapport aux personnes de votre âge. Utilisez le RMSSD si votre valeur vient d'Oura, Whoop, Garmin ou Polar, et le SDNN si elle vient de l'Apple Watch. Les normes proviennent d'études publiées, mais votre tendance sur plusieurs semaines compte plus qu'un percentile.",
+  "capsule": "Entrez votre âge et votre variabilité de la fréquence cardiaque (HRV, ou VFC) pour voir où vous vous situez par rapport aux personnes de votre âge. Utilisez le RMSSD si votre valeur vient d'Oura, Whoop, Garmin ou Polar, et le SDNN si elle vient de l'Apple Watch. Les normes proviennent d'études publiées, mais votre tendance sur plusieurs semaines compte plus qu'un percentile.",
   "imageAlt": "Calculateur de HRV selon l'âge — calculateur interactif gratuit de variabilité de la fréquence cardiaque par ONDA Life",
   "metric": {
     "label": "Votre appareil affiche",

@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Accueil", "tools": "Outils", "current": "Respiration en résonance" },
   "h1": "Respiration en résonance",
-  "capsule": "La respiration en résonance consiste à respirer lentement et régulièrement à votre rythme personnel — généralement environ 4,5 à 7 respirations par minute — là où le rythme cardiaque et la respiration se synchronisent et où la variabilité de la fréquence cardiaque (HRV) oscille le plus. Choisissez un rythme, appuyez sur démarrer et respirez avec le cercle ; testez chaque rythme environ 2 minutes et gardez celui qui vous paraît le plus fluide.",
+  "capsule": "La respiration en résonance consiste à respirer lentement et régulièrement à votre rythme personnel — généralement environ 4,5 à 7 respirations par minute — là où le rythme cardiaque et la respiration se synchronisent et où la variabilité de la fréquence cardiaque (HRV, ou VFC) oscille le plus. Choisissez un rythme, appuyez sur démarrer et respirez avec le cercle ; testez chaque rythme environ 2 minutes et gardez celui qui vous paraît le plus fluide.",
   "imageAlt": "Guide de respiration en résonance — respirez avec le cercle entre 4,5 et 6,5 respirations par minute, outil gratuit d'ONDA Life",
   "ui": {
     "height": "Taille (cm) — facultatif",

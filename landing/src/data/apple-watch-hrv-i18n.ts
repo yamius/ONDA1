@@ -167,9 +167,9 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
       {
         id: 'accuracy',
         kicker: '[ ТОЧНОСТЬ ]',
-        title: 'Насколько точна HRV на Apple Watch?',
+        title: 'Насколько точен HRV на Apple Watch?',
         paras: [
-          'Оптический датчик часов даёт хорошую HRV для повседневного трекинга и биофидбека и хорошо подходит для замеров в покое. Он не референсного класса, как ЭКГ-нагрудный датчик, — движение и свободная посадка добавляют шум, — но для тренировки дыхания и наблюдения за трендом HRV в покое его более чем достаточно. По состоянию на 2026 год Apple сократила отставание по точности HRV от конкурентов, хотя неподвижное, плотно сидящее ночное кольцо или нагрудный датчик по-прежнему лидируют в чистой точности от удара к удару. Разные устройства выдают разные числа HRV, поэтому сравнивайте свой собственный тренд, а не абсолютные значения между устройствами.',
+          'Оптический датчик часов даёт хороший HRV для повседневного трекинга и биофидбека и хорошо подходит для замеров в покое. Он не референсного класса, как ЭКГ-нагрудный датчик, — движение и свободная посадка добавляют шум, — но для тренировки дыхания и наблюдения за трендом HRV в покое его более чем достаточно. По состоянию на 2026 год Apple сократила отставание по точности HRV от конкурентов, хотя неподвижное, плотно сидящее ночное кольцо или нагрудный датчик по-прежнему лидируют в чистой точности от удара к удару. Разные устройства выдают разные числа HRV, поэтому сравнивайте свой собственный тренд, а не абсолютные значения между устройствами.',
         ],
       },
       {
@@ -205,8 +205,8 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         a: 'Часы непрерывно снимают пульс и записывают значения HRV, но собственное приложение Health показывает HRV как эпизодические замеры, а не непрерывное живое число. Для обратной связи в реальном времени во время дыхательной сессии нужно приложение, считывающее данные сердца с часов вживую, — например ONDA.',
       },
       {
-        q: 'Насколько точна HRV на Apple Watch?',
-        a: 'Оптический датчик Apple Watch даёт хорошую HRV для трендов и восстановления и хорошо подходит для замеров в покое. Он не референсного класса, как ЭКГ-нагрудный датчик, но для повседневного HRV-биофидбека и отслеживания тренда его более чем достаточно.',
+        q: 'Насколько точен HRV на Apple Watch?',
+        a: 'Оптический датчик Apple Watch даёт хороший HRV для трендов и восстановления и хорошо подходит для замеров в покое. Он не референсного класса, как ЭКГ-нагрудный датчик, но для повседневного HRV-биофидбека и отслеживания тренда его более чем достаточно.',
       },
       {
         q: 'Нужны ли Apple Watch для HRV-биофидбека с ONDA?',
@@ -257,7 +257,7 @@ export const APPLE_WATCH_HRV_I18N: Record<'en' | 'ru' | 'es', AwCopy> = {
         kicker: '[ QUÉ MIDE ]',
         title: 'Qué mide realmente el Apple Watch',
         paras: [
-          'El Apple Watch usa un sensor óptico de frecuencia cardíaca para leer tu pulso de forma continua, y registra valores de variabilidad de la frecuencia cardíaca (HRV) en Apple Salud. También tiene funciones separadas y aprobadas por Apple de ECG y ritmo irregular. Para el biofeedback de HRV, lo relevante son los datos cardíacos continuos — la señal latido a latido que una app puede leer para calcular la HRV en vivo.',
+          'El Apple Watch usa un sensor óptico de frecuencia cardíaca para leer tu pulso de forma continua, y registra valores de variabilidad de la frecuencia cardíaca (HRV o VFC) en Apple Salud. También tiene funciones separadas y aprobadas por Apple de ECG y ritmo irregular. Para el biofeedback de HRV, lo relevante son los datos cardíacos continuos — la señal latido a latido que una app puede leer para calcular la HRV en vivo.',
         ],
       },
       {

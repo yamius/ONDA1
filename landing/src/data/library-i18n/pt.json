@@ -50,7 +50,7 @@
     "hrv-heart-rate": {
       "name": "HRV e frequência cardíaca",
       "tile": "O que sua HRV e sua frequência cardíaca de repouso significam — e como melhorá-las.",
-      "intro": "A variabilidade da frequência cardíaca (HRV) e a frequência cardíaca de repouso estão entre os sinais mais úteis que seu corpo oferece — se você souber lê-los. Estes guias explicam o que é normal para sua idade, por que sua linha de base pessoal importa mais do que qualquer média, como medir de forma consistente entre dispositivos, o que uma leitura baixa realmente significa e quais hábitos elevam a HRV ao longo do tempo.",
+      "intro": "A variabilidade da frequência cardíaca (HRV ou VFC) e a frequência cardíaca de repouso estão entre os sinais mais úteis que seu corpo oferece — se você souber lê-los. Estes guias explicam o que é normal para sua idade, por que sua linha de base pessoal importa mais do que qualquer média, como medir de forma consistente entre dispositivos, o que uma leitura baixa realmente significa e quais hábitos elevam a HRV ao longo do tempo.",
       "imageAlt": "HRV e frequência cardíaca — ilustração: um coração luminoso do qual sai uma onda de ritmo variável."
     },
     "stress-vagus": {

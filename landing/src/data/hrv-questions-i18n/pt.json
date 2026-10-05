@@ -1,7 +1,7 @@
 {
   "title": "HRV: 52 perguntas e respostas diretas sobre variabilidade cardíaca",
   "description": "Qual é uma boa HRV? Por que a minha está baixa? Álcool, cafeína ou respiração mudam a HRV? 52 respostas curtas e com fontes, com guias e calculadoras grátis.",
-  "intro": "Respostas curtas e diretas às perguntas que as pessoas realmente fazem sobre a variabilidade da frequência cardíaca (HRV). Cada resposta começa pela resposta, traz um número ou uma fonte quando importa e leva a um guia mais completo ou a uma calculadora gratuita. Esta página traz informações gerais e não é aconselhamento médico.",
+  "intro": "Respostas curtas e diretas às perguntas que as pessoas realmente fazem sobre a variabilidade da frequência cardíaca (HRV ou VFC). Cada resposta começa pela resposta, traz um número ou uma fonte quando importa e leva a um guia mais completo ou a uma calculadora gratuita. Esta página traz informações gerais e não é aconselhamento médico.",
   "neuralSuggestion": {
     "text": "A maioria das perguntas sobre HRV termina no mesmo lugar: a sua própria faixa importa mais do que qualquer média.",
     "linkText": "Veja a sua faixa de duas semanas →"
@@ -13,7 +13,7 @@
         {
           "id": "what-is-hrv",
           "q": "O que é HRV?",
-          "a": "A variabilidade da frequência cardíaca (HRV) é a variação do tempo entre batimentos consecutivos, medida em milissegundos. Pense num baterista que acelera e desacelera um pouco a cada respiração, e não num metrônomo: um coração batendo a 60 bpm não bate exatamente uma vez por segundo — os intervalos mudam dezenas de milissegundos, principalmente sob o controle do nervo vago. Mais variação em repouso geralmente significa que o lado \"descanso e digestão\" do seu sistema nervoso está ativo. [Explicação completa →](/articles/topic/hrv-heart-rate)"
+          "a": "A variabilidade da frequência cardíaca (HRV ou VFC) é a variação do tempo entre batimentos consecutivos, medida em milissegundos. Pense num baterista que acelera e desacelera um pouco a cada respiração, e não num metrônomo: um coração batendo a 60 bpm não bate exatamente uma vez por segundo — os intervalos mudam dezenas de milissegundos, principalmente sob o controle do nervo vago. Mais variação em repouso geralmente significa que o lado \"descanso e digestão\" do seu sistema nervoso está ativo. [Explicação completa →](/articles/topic/hrv-heart-rate)"
         },
         {
           "id": "what-does-hrv-measure",

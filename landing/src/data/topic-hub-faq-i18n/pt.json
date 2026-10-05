@@ -47,7 +47,7 @@
         ]
       },
       {
-        "q": "Qual é uma boa variabilidade da frequência cardíaca (HRV)?",
+        "q": "Qual é uma boa variabilidade da frequência cardíaca (HRV ou VFC)?",
         "a": "Não existe um único número de HRV bom: ela diminui com a idade e varia de um dispositivo para outro. O RMSSD noturno mediano fica em torno de 58 ms aos vinte e poucos anos e cerca de 30 ms aos sessenta, com uma ampla variação saudável. Uma boa HRV é aquela que se mantém estável ou sobe em relação à sua própria linha de base.",
         "links": [
           {

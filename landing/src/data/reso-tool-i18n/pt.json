@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Início", "tools": "Ferramentas", "current": "Respiração de ressonância" },
   "h1": "Respiração de ressonância",
-  "capsule": "Respiração de ressonância é respirar de forma lenta e regular no seu ritmo pessoal — geralmente cerca de 4,5–7 respirações por minuto —, em que o ritmo cardíaco e a respiração entram em sintonia e a variabilidade da frequência cardíaca (HRV) oscila ao máximo. Escolha um ritmo, aperte iniciar e respire com o círculo; teste cada ritmo por cerca de 2 minutos e fique com o que parecer mais suave.",
+  "capsule": "Respiração de ressonância é respirar de forma lenta e regular no seu ritmo pessoal — geralmente cerca de 4,5–7 respirações por minuto —, em que o ritmo cardíaco e a respiração entram em sintonia e a variabilidade da frequência cardíaca (HRV ou VFC) oscila ao máximo. Escolha um ritmo, aperte iniciar e respire com o círculo; teste cada ritmo por cerca de 2 minutos e fique com o que parecer mais suave.",
   "imageAlt": "Guia de respiração de ressonância — respire com o círculo a 4,5 a 6,5 respirações por minuto, ferramenta grátis da ONDA Life",
   "ui": {
     "height": "Altura (cm) — opcional",

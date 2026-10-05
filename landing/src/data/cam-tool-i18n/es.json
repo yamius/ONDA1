@@ -49,7 +49,7 @@
     },
     {
       "h2": "Por qué la cámara del móvil mide el pulso pero no la HRV",
-      "body": "La frecuencia cardíaca solo requiere el número medio de latidos por minuto, que la cámara puede estimar. La variabilidad de la frecuencia cardíaca (HRV) requiere el tiempo exacto entre latidos individuales, y la tasa de fotogramas y el ruido de la cámara no permiten captarlo de forma fiable: pequeños errores de tiempo que no afectan a la frecuencia cardíaca arruinan la HRV. Por eso esta herramienta solo muestra la frecuencia cardíaca. La HRV se mide mejor con una banda de pecho o un reloj; si tienes una cifra de Oura, Whoop, Garmin o Apple Watch, mira cómo se compara: [Calculadora de HRV por edad](/tools/hrv)."
+      "body": "La frecuencia cardíaca solo requiere el número medio de latidos por minuto, que la cámara puede estimar. La variabilidad de la frecuencia cardíaca (HRV o VFC) requiere el tiempo exacto entre latidos individuales, y la tasa de fotogramas y el ruido de la cámara no permiten captarlo de forma fiable: pequeños errores de tiempo que no afectan a la frecuencia cardíaca arruinan la HRV. Por eso esta herramienta solo muestra la frecuencia cardíaca. La HRV se mide mejor con una banda de pecho o un reloj; si tienes una cifra de Oura, Whoop, Garmin o Apple Watch, mira cómo se compara: [Calculadora de HRV por edad](/tools/hrv)."
     }
   ],
   "faqTitle": "Pulsómetro online con la cámara — preguntas frecuentes",

@@ -50,7 +50,7 @@
       {
         "h2": "O que o Baseline mostra",
         "paras": [
-          "Três dados que o seu Apple Watch já grava no app Saúde, nos últimos 14 dias: frequência cardíaca em repouso, variabilidade da frequência cardíaca (HRV) e frequência respiratória. Para cada um você vê a sua própria faixa — o menor e o maior valor diário — além da sua média e de quantos dos 14 dias têm leitura.",
+          "Três dados que o seu Apple Watch já grava no app Saúde, nos últimos 14 dias: frequência cardíaca em repouso, variabilidade da frequência cardíaca (HRV ou VFC) e frequência respiratória. Para cada um você vê a sua própria faixa — o menor e o maior valor diário — além da sua média e de quantos dos 14 dias têm leitura.",
           "A frequência cardíaca em repouso é o valor que o Apple Watch registra enquanto você está parado. A HRV é registrada pela Apple como SDNN, a partir de leituras curtas que o relógio faz em segundo plano durante o dia e a noite. A frequência respiratória é registrada enquanto você dorme com o recurso Sono ativado."
         ]
       },

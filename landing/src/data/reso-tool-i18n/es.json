@@ -7,7 +7,7 @@
   },
   "breadcrumb": { "home": "Inicio", "tools": "Herramientas", "current": "Respiración de resonancia" },
   "h1": "Respiración de resonancia",
-  "capsule": "La respiración de resonancia consiste en respirar de forma lenta y regular a tu ritmo personal —normalmente unas 4,5–7 respiraciones por minuto—, en el que el ritmo cardíaco y la respiración se sincronizan y la variabilidad de la frecuencia cardíaca (HRV) oscila al máximo. Elige un ritmo, pulsa inicio y respira con el círculo; prueba cada ritmo unos 2 minutos y quédate con el que te resulte más fluido.",
+  "capsule": "La respiración de resonancia consiste en respirar de forma lenta y regular a tu ritmo personal —normalmente unas 4,5–7 respiraciones por minuto—, en el que el ritmo cardíaco y la respiración se sincronizan y la variabilidad de la frecuencia cardíaca (HRV o VFC) oscila al máximo. Elige un ritmo, pulsa inicio y respira con el círculo; prueba cada ritmo unos 2 minutos y quédate con el que te resulte más fluido.",
   "imageAlt": "Pautador de respiración de resonancia: respira con el círculo a 4,5–6,5 respiraciones por minuto, herramienta gratuita de ONDA Life",
   "ui": {
     "height": "Estatura (cm) — opcional",

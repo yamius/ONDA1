@@ -48,7 +48,7 @@
       },
       {
         "q": "Qu'est-ce qu'une bonne HRV ?",
-        "a": "Il n'existe pas de « bonne » valeur unique de variabilité de la fréquence cardiaque (HRV) : elle diminue avec l'âge et varie selon l'appareil. Le RMSSD nocturne médian est d'environ 58 ms à 20–29 ans et d'environ 30 ms à 60–69 ans, avec une large plage de valeurs saines. Une bonne HRV est une HRV stable ou en hausse par rapport à votre propre référence.",
+        "a": "Il n'existe pas de « bonne » valeur unique de variabilité de la fréquence cardiaque (HRV, ou VFC) : elle diminue avec l'âge et varie selon l'appareil. Le RMSSD nocturne médian est d'environ 58 ms à 20–29 ans et d'environ 30 ms à 60–69 ans, avec une large plage de valeurs saines. Une bonne HRV est une HRV stable ou en hausse par rapport à votre propre référence.",
         "links": [
           {
             "href": "/articles/normal-hrv-by-age",
