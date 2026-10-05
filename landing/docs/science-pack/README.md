@@ -65,6 +65,8 @@ If a rule changes, this pack changes. No rule lives anywhere else.
 
 ## Backlog
 
+- **Kaneko 2026** (DOI 10.1007/s10484-025-09765-3, fact `study.kaneko2026.trials`): cited with the online-first year 2026, no volume yet — check year and volume when the issue is published, and update 04-sources.md and facts.ts.
+
 - **After the science MVP:** go through the articles and replace hand-typed numbers with facts — HRV norms, resting heart rate, breathing rate, resonance pace, baseline windows (owner request 2026-10-05).
 
 Background (not rules): the original specs are in `D:\_ONDA\_Sciense\` (001–005), and the audit with the page decisions is [`../science-audit.md`](../science-audit.md).

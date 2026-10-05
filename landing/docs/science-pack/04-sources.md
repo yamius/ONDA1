@@ -56,6 +56,21 @@ The check enforces all three points (see [01-quality-standard.md](01-quality-sta
 | Balban 2023 | Balban MY et al. Brief structured respiration practices enhance mood and reduce physiological arousal. *Cell Reports Medicine* 2023;4(1):100895 | randomized trial | DOI 10.1016/j.xcrm.2022.100895 | Cyclic sighing; daily dose |
 | Szulczewski 2023 | Szulczewski MT, D’Agostini M, Van Diest I et al. Expiratory-gated taVNS does not further augment heart rate variability during slow breathing at 0.1 Hz. *Appl Psychophysiol Biofeedback* 2023;48:323–333 | randomized crossover | DOI 10.1007/s10484-023-09584-4 · PMID 36920567 | Slow breathing drives the HRV response; added taVNS did not augment it |
 
+## HRV biofeedback outcomes (evidence/hrv-biofeedback, approved 2026-10-05)
+
+| Short cite | Full reference | Type | DOI / PMID | Use for |
+|---|---|---|---|---|
+| Lehrer 2020 | Lehrer P et al. Heart rate variability biofeedback improves emotional and physical health and performance: a systematic review and meta analysis. *Appl Psychophysiol Biofeedback* 2020;45(3):109–129 | systematic review + meta-analysis | DOI 10.1007/s10484-020-09466-z · PMID 32385728 | Overall small-to-moderate effect; outcome ranking; active vs inactive controls; “complementary treatment” |
+| Goessl 2017 | Goessl VC, Curtiss JE, Hofmann SG. The effect of heart rate variability biofeedback training on stress and anxiety: a meta-analysis. *Psychol Med* 2017;47(15):2578–2586 | meta-analysis | DOI 10.1017/S0033291717001003 · PMID 28478782 | Self-reported stress and anxiety; need for better-controlled studies |
+| Pizzoli 2021 | Pizzoli SFM et al. A meta-analysis on heart rate variability biofeedback and depressive symptoms. *Sci Rep* 2021;11:6650 | meta-analysis | DOI 10.1038/s41598-021-86149-7 · PMID 33758260 | Depressive symptoms; heterogeneity; prediction interval |
+| Vann-Adibe 2026 | Vann-Adibe S et al. Efficacy and methodology of remote heart rate variability biofeedback interventions for mental health. *Appl Psychophysiol Biofeedback* 2026;51(3):441–452 | systematic review + meta-analysis | DOI 10.1007/s10484-025-09750-w · PMID 41310318 | Remote programmes; stress not significant; moderators (screen on device) |
+| Kaneko 2026 | Kaneko K et al. Effects of heart rate variability biofeedback on cardiac autonomic function in patients with cardiovascular disease. *Appl Psychophysiol Biofeedback* 2026 (online ahead of print) | systematic review + meta-analysis | DOI 10.1007/s10484-025-09765-3 · PMID 41501316 | Modest blood-pressure decrease in CVD; risk of bias. **Year = online-first; check volume/year when the issue appears** |
+| Jiménez Morgan 2017 | Jiménez Morgan S, Molina Mora JA. Effect of heart rate variability biofeedback on sport performance, a systematic review. *Appl Psychophysiol Biofeedback* 2017;42(3):235–245 | systematic review | DOI 10.1007/s10484-017-9364-2 · PMID 28573597 | Sport: few small studies |
+| Tinello 2022 | Tinello D, Kliegel M, Zuber S. Does heart rate variability biofeedback enhance executive functions across the lifespan? *J Cogn Enhanc* 2022;6(1):126–142 | systematic review | DOI 10.1007/s41465-021-00218-3 · PMID 35299845 | Executive functions, attention |
+| Fournié 2021 | Fournié C et al. Heart rate variability biofeedback in chronic disease management: a systematic review. *Complement Ther Med* 2021;60:102750 | systematic review | DOI 10.1016/j.ctim.2021.102750 · PMID 34118390 | Chronic disease; feasibility without adverse effects |
+| Minjoz 2026 | Minjoz S et al. Psychophysiological effects of heart rate variability biofeedback versus sham biofeedback: a randomized controlled trial. *Biol Psychol* 2026;206:109254 | randomized trial | DOI 10.1016/j.biopsycho.2026.109254 · PMID 41905438 | Biofeedback vs sham (mood yes, autonomic measures no); sham content not described in the abstract |
+| Sumińska 2026 | Sumińska S, Rynkiewicz A, Szulczewski M. Resonance frequency versus fixed 0.1 Hz breathing in HRV biofeedback. *Sci Rep* 2026;16:22630 | randomized trial | DOI 10.1038/s41598-026-53333-6 · PMID 42156977 | One trial: individual resonance rate did not outperform a fixed rate — always as a single study, class emerging |
+
 ## Transcutaneous vagus nerve stimulation (flagship 2)
 
 | Short cite | Full reference | Type | DOI / PMID | Use for |
