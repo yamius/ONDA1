@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Star } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { Capacitor } from '@capacitor/core';
@@ -28,11 +29,23 @@ function openWriteReview() {
   }
 }
 
+// Once tapped (any star), the row is hidden for good on this device. The App
+// Store never tells the app whether a review was actually left, so "tapped →
+// went to the store" is the honest signal. Hiding is independent of WHICH star
+// was tapped, so it's not review-gating.
+const TAPPED_KEY = 'onda_rate_tapped';
+
 export function RateOndaRow({ place, light }: { place: RatePlace; light: boolean }) {
   const { t } = useTranslation();
+  const [tapped, setTapped] = useState<boolean>(() => {
+    try { return localStorage.getItem(TAPPED_KEY) === '1'; } catch { return false; }
+  });
+  if (tapped) return null;
   const onTap = () => {
     try { trackEvent('rate_tap', { place }); } catch { /* noop */ }
+    try { localStorage.setItem(TAPPED_KEY, '1'); } catch { /* noop */ }
     openWriteReview();
+    setTapped(true);
   };
   const gray = light ? 'rgb(148,163,184)' : 'rgba(255,255,255,0.45)';
   return (

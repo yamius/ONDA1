@@ -5893,10 +5893,6 @@ const OndaLevel1 = () => {
                   ) : t('practices.back_to_practices')}
                 </button>
               </div>
-              {/* Persistent "Rate ONDA" row (1.9.3) — on the regular results
-                  screen only; never on the first-run screen, which sits next to
-                  the paywall. */}
-              {!cameFromFirstRun && <RateOndaRow place="results" light={completeLight} />}
             </div>
           </div>
         )}
