@@ -1318,6 +1318,503 @@
     "headspace": {
       "verdict": "De beste app om echt te leren mediteren — gestructureerde cursussen en heldere uitleg, met een gratis versie die nauwelijks meer is dan een voorproefje.",
       "productType": "Meditatie-app"
+    },
+    "ayo-sleep-tape": {
+      "verdict": "Beste hypoallergene K-beauty-mondtape — huidvriendelijke Koreaanse kleeftechniek, toegankelijke prijs. Beperkte distributie in het Westen.",
+      "summary": "AYO Sleep Tape is de Koreaanse K-beauty-kandidaat — mondtape uit één stuk met hypoallergene lijm, speciaal ontwikkeld voor de strenge normen voor gevoelige Aziatische huid. Toegankelijke prijs, groeiende westerse distributie via Amazon. Meldingen over huidverdraagzaamheid zijn uitstekend; het merk is in het Westen nieuwer dan Hostage Tape of Somnifix.",
+      "description": "ONDA-review van AYO Sleep Tape — Koreaanse hypoallergene K-beauty-mondtape uit één stuk met huidvriendelijke lijm. Beoordeeld op hechting, werking, veiligheid en prijs.",
+      "bestFor": "Het best voor wie een gevoelige huid heeft en hypoallergene K-beauty-mondtape zoekt in het middensegment — zachte hechting boven westerse merkuitstraling.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van AYO-productdocumentatie en westerse consumentenreviews uit 2026 via Amazon. Niet zelf getest door ONDA.",
+      "productType": "Koreaanse hypoallergene mondtape uit één stuk",
+      "pros": [
+        "Hypoallergene K-beauty-lijm — zacht voor gevoelige huid",
+        "Toegankelijke prijs van $0.50 per nacht",
+        "Verschillende vormvarianten beschikbaar",
+        "Groeiende westerse distributie via Amazon"
+      ],
+      "cons": [
+        "Beperkte westerse FDA-registratie / peer-reviewed validatie",
+        "Minder geschikt bij een baard dan Hostage Tape",
+        "Minder naamsbekendheid dan de westerse marktleiders",
+        "Geen abonnementsmodel"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Koreaanse hypoallergene K-beauty-lijm — zacht, weinig irritatie. Minder stevige grip dan Hostage Tape; heeft moeite met baarden.",
+        "breathing-mechanism": "Volledige afsluiting, uit één stuk. Geen poreuze variant.",
+        "evidence-grounding": "Geloofwaardig op de K-beautymarkt; beperkte westerse FDA-registratie of peer-reviewed validatie.",
+        "form-factor": "Strip uit één stuk, makkelijk aan te brengen. Verschillende vormvarianten beschikbaar.",
+        "material-safety": "Koreaanse hypoallergene K-beauty-certificering — een van de zachtste in de categorie. Het best voor gevoelige huid.",
+        "value": "~$15 voor 30 strips = ~$0.50 per nacht. Prijs in het middensegment met K-beauty-huidverdraagzaamheid."
+      },
+      "content": "## Waar het in uitblinkt\n\nAYO Sleep Tape is de hypoallergene K-beauty-mondtape — Koreaanse kleeftechniek voor de normen van gevoelige Aziatische huid, een toegankelijke prijs en groeiende westerse distributie.\n\n## Wat zijn de nadelen van AYO Sleep Tape?\n\nWesterse validatie en naamsbekendheid. AYO is geloofwaardig op de K-beautymarkt, maar heeft beperkte westerse FDA-registratie of peer-reviewed validatie. De naamsbekendheid is lager dan die van Hostage Tape of Somnifix.\n\n## Wie zou AYO Sleep Tape moeten kopen?\n\nKies AYO Sleep Tape voor hypoallergene K-beauty-mondtape voor een gevoelige huid in het middensegment. Voor een westers biohackermerk: Hostage Tape. Voor FDA-geregistreerde poreuze tape: Somnifix. Voor premium siliconen: Dream Recovery.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Is AYO Sleep Tape het waard?",
+          "a": "Ja, als je een gevoelige huid hebt. AYO Sleep Tape gebruikt een hypoallergene K-beauty-lijm met uitstekende meldingen over huidverdraagzaamheid, voor ongeveer $0.50 per nacht. Minder overtuigend als je westerse FDA-registratie, peer-reviewed validatie of een baardvriendelijke tape zoals Hostage Tape wilt."
+        },
+        {
+          "q": "Hoeveel kost AYO Sleep Tape?",
+          "a": "AYO Sleep Tape kost ongeveer $15 voor een verpakking van 30 strips, wat neerkomt op ongeveer $0.50 per nacht. Het wordt steeds breder in het Westen verkocht via Amazon, en er is geen abonnement, dus je bestelt verpakkingen zelf opnieuw."
+        },
+        {
+          "q": "Wat zijn de nadelen van AYO Sleep Tape?",
+          "a": "AYO Sleep Tape heeft beperkte westerse FDA-registratie en peer-reviewed validatie en is minder geschikt bij een baard dan Hostage Tape. Het merk is minder bekend dan de westerse marktleiders, en er is geen abonnement voor automatisch bijbestellen."
+        },
+        {
+          "q": "AYO Sleep Tape vs Hostage Tape: welke is beter?",
+          "a": "AYO Sleep Tape is beter voor een gevoelige huid, Hostage Tape is beter bij een baard. De hypoallergene K-beauty-lijm van AYO is zacht en kost ongeveer $0.50 per nacht, maar is minder baardvriendelijk, en het merk is op de westerse markt nieuwer dan Hostage Tape."
+        }
+      ]
+    },
+    "dream-recovery-mouth-tape": {
+      "verdict": "Beste premium mondtape van siliconengel — herbruikbaar, zachter huidcontact, premium positionering. Prijs als bij een abonnement, maar zonder abonnementsverplichting.",
+      "summary": "Dream Recovery Mouth Tape is de premium kandidaat van siliconengel — een herbruikbare siliconenstrip met zachter huidcontact dan alternatieven met acryllijm. Hypoallergeen, latexvrij, meerdere keren per strip te gebruiken. Prijs in het hogere middensegment zonder abonnementsverplichting. Het best voor mensen met een gevoelige huid die de acryllijm van Hostage Tape niet verdragen maar wel een premium merkervaring willen.",
+      "description": "ONDA-review van Dream Recovery Mouth Tape — premium mondtape van siliconengel, herbruikbaar en gericht op biohackers. Beoordeeld op hechting, werking, bewijs en prijs.",
+      "bestFor": "Het best voor wie een gevoelige huid heeft en premium mondtape van siliconengel zoekt — zachte hechting en herbruikbaarheid boven merkmarketing.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Dream Recovery en gebruikersreviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Premium mondtape van siliconengel",
+      "pros": [
+        "Lijm van siliconengel — het zachtst voor gevoelige huid",
+        "Herbruikbaar ontwerp — 2-3 keer per strip",
+        "Geen abonnementsverplichting",
+        "Premium merkpositionering"
+      ],
+      "cons": [
+        "Geen FDA-registratie — beperkte regelgevende status",
+        "Minder geschikt bij een baard dan de acryllijm van Hostage Tape",
+        "Alleen volledige afsluiting — geen poreuze variant",
+        "Merk is nieuwer dan Somnifix en heeft geen jarenlange staat van dienst"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Lijm van siliconengel is zachter voor de huid dan acryl; goede hechting op schone huid. Minder grip bij een baard dan Hostage Tape — siliconengel houdt niet op stoppels.",
+        "breathing-mechanism": "Ontwerp met volledige afsluiting. Geen poreuze opening in het midden. Bedoeld voor wie zich volledig op neusademhaling richt.",
+        "evidence-grounding": "Door het merk gefinancierd onderzoek en getuigenissen van biohackers. Geen FDA-registratie. Minder regelgevende status dan Somnifix.",
+        "form-factor": "Strip uit één stuk met herbruikbare siliconengel — in de praktijk 2–3 keer per strip te gebruiken. Verlaagt de kosten per nacht aanzienlijk.",
+        "material-safety": "Lijm van siliconengel — een van de zachtste in de categorie. Hypoallergeen, latexvrij, weinig meldingen van huidreacties. Het best voor gevoelige huid.",
+        "value": "~$30 voor 10 strips × ~3 keer = effectief ~$1 per nacht. Premiumprijs gecompenseerd door herbruikbaarheid."
+      },
+      "content": "## Waar het in uitblinkt\n\nDream Recovery Mouth Tape is de premium referentie van siliconengel — zachte hechting, herbruikbaar ontwerp, premium positionering. Het best voor mensen met een gevoelige huid die acryllijm niet verdragen.\n\n## Wat zijn de nadelen van Dream Recovery Mouth Tape?\n\nGrip bij een baard en regelgevende status. Siliconengel houdt baardstoppels minder goed vast dan de acryllijm van Hostage Tape. Geen FDA-registratie, in tegenstelling tot Somnifix.\n\n## Wie zou Dream Recovery Mouth Tape moeten kopen?\n\nKies Dream Recovery voor een gevoelige huid en premium mondtape van siliconengel. Voor een baardvriendelijk biohackermerk: Hostage Tape. Voor FDA-geregistreerde poreuze tape: Somnifix. Voor een goedkope doe-het-zelfoplossing: Nexcare Surgical Tape.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Is Dream Recovery Mouth Tape het waard?",
+          "a": "Ja, bij een gevoelige huid. Dream Recovery gebruikt een lijm van siliconengel die het zachtst is voor gevoelige huid, en elke strip is 2-3 keer herbruikbaar, zonder abonnementsverplichting. Het heeft geen FDA-registratie en is minder baardvriendelijk dan Hostage Tape."
+        },
+        {
+          "q": "Hoeveel kost Dream Recovery Mouth Tape?",
+          "a": "Dream Recovery Mouth Tape kost ongeveer $30 voor een verpakking van 10 strips. Elke strip kan ongeveer 3 keer worden hergebruikt, zodat de verpakking langer meegaat, en je hoeft geen abonnement te nemen om het te blijven kopen. De strips zijn hypoallergeen en latexvrij."
+        },
+        {
+          "q": "Wat zijn de nadelen van Dream Recovery Mouth Tape?",
+          "a": "Dream Recovery heeft geen FDA-registratie en is minder baardvriendelijk dan de acryllijm van Hostage Tape. Het bestaat alleen met volledige afsluiting, zonder poreuze variant, en het merk mist de jarenlange staat van dienst van Somnifix."
+        },
+        {
+          "q": "Dream Recovery vs Hostage Tape: welke is beter?",
+          "a": "Dream Recovery is beter voor een gevoelige huid; Hostage Tape is beter bij een baard. De herbruikbare, hypoallergene siliconengellijm van Dream Recovery is zachter voor de huid, terwijl de acryllijm van Hostage Tape beter werkt bij een baard. Dream Recovery is bovendien 2-3 keer per strip herbruikbaar."
+        }
+      ]
+    },
+    "hostage-tape": {
+      "verdict": "Beste mondtape van een biohackermerk — baardvriendelijke lijm, ontwerp uit één stuk, abonnementsprijs. Sterke, door het merk gefinancierde marketing; bescheiden klinisch bewijs.",
+      "summary": "Hostage Tape is de virale biohacker-mondtape van 2025–2026 — een ontwerp uit één stuk met volledige afsluiting en hypoallergene lijm die speciaal is ontwikkeld om door baardstoppels heen te hechten. Abonnement van $13 per maand, de tape wordt maandelijks bezorgd. Een merk met veel marketing (UFC-vechters, biohackerpodcasts) en bescheiden peer-reviewed bewijs. Het consumentenmerk dat de mondtape-hype van 2026 bepaalt.",
+      "description": "ONDA-review van Hostage Tape — de virale biohacker-mondtape van 2025–2026 met baardvriendelijke lijm en abonnement. Beoordeeld op hechting, werking, bewijs en prijs.",
+      "bestFor": "Het best voor wie (vooral met baard) handige biohacker-mondtape op abonnement wil — en een marketingpremie accepteert boven diepgaand klinisch bewijs.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Hostage Tape, door het merk gefinancierde studies en grootschalige gebruikersreviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Biohacker-mondtape op abonnement",
+      "pros": [
+        "Meest baardvriendelijke lijm in de categorie",
+        "Ontwerp uit één stuk — snel aan te brengen",
+        "Gemak van een abonnement — nooit zonder voorraad",
+        "Sterk consumentenmerk met biohacker-/UFC-achtergrond"
+      ],
+      "cons": [
+        "Beperkt peer-reviewed bewijs voor deze specifieke tape",
+        "Abonnementsmodel — hogere absolute kosten dan doe-het-zelf",
+        "Volledige afsluiting is gecontra-indiceerd bij niet-gediagnosticeerde slaapapneu",
+        "Geen poreuze variant voor wie een gedeeltelijke afsluiting wil"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Meest baardvriendelijke lijm in de categorie — blijft zitten op baardstoppels waar Somnifix en doe-het-zelftape loslaten. De claim van pijnloos verwijderen klopt grotendeels volgens gebruikers.",
+        "breathing-mechanism": "Ontwerp uit één stuk met volledige afsluiting. Een uitsparing in de hoek laat een deel van de lippen vrij; niet getest als veiligheidsvoorziening. Geen poreuze optie.",
+        "evidence-grounding": "Door het merk gefinancierde getuigenissen en aanbevelingen van UFC-vechters. Beperkte peer-reviewed studies naar deze specifieke tape. Eerlijke waarschuwing over slaapapneu in de veiligheidsinformatie.",
+        "form-factor": "Strip uit één stuk over de hele mond — makkelijk aan te brengen, ruime dekking. Nieuwere halve strip \"Hostage Mini\" voor wie minder dekking wil.",
+        "material-safety": "Hypoallergene lijm van medische kwaliteit. Huidreacties worden zelden gemeld in grootschalige gebruikersfeedback. Latexvrij.",
+        "value": "$13 per maand voor ~30 strips = ~$0.43 per nacht. Gebruikers waarderen het gemak van het abonnement; absolute kosten hoger dan doe-het-zelf medische tape, maar redelijk voor de merkkwaliteit."
+      },
+      "content": "## Waar het in uitblinkt\n\nHostage Tape is de virale biohacker-mondtape van 2025–2026 — baardvriendelijke kleeftechniek, ontwerp uit één stuk, het gemak van een abonnement en een sterk consumentenmerk dat voortkomt uit de UFC- en biohackerpodcastcultuur. De mondtape die de consumentenmarkt van 2026 bepaalt.\n\n## Wat zijn de nadelen van Hostage Tape?\n\nKlinisch bewijs. Hostage Tape steunt op door het merk gefinancierde studies en getuigenissen in plaats van peer-reviewed literatuur uit de dermatologie of slaapgeneeskunde. De abonnementsprijs is redelijk, maar per nacht hoger dan doe-het-zelf medische tape. Volledige afsluiting is gecontra-indiceerd bij niet-gediagnosticeerde slaapapneu — het merk vermeldt dit, maar het verdient herhaling.\n\n## Wie zou Hostage Tape moeten kopen?\n\nKies Hostage Tape als je een baard hebt en handige biohacker-mondtape op abonnement wilt. Voor de oorspronkelijke medische referentie: Somnifix. Voor een premium alternatief van siliconen: Dream Recovery. Voor een goedkope doe-het-zelfoplossing: 3M Nexcare Surgical Tape.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation) — neusademhaling en vagale tonus\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n- [Maakt slaap je hersenen echt schoon? Het bewijs voor het glymfatisch systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog ter discussie staat\n",
+      "faq": [
+        {
+          "q": "Werkt Hostage Tape met een baard?",
+          "a": "Ja. Hostage Tape heeft de meest baardvriendelijke lijm in de categorie mondtape, een hypoallergene formule die is ontwikkeld om door stoppels heen te hechten. Het ontwerp uit één stuk met volledige afsluiting is ook snel aan te brengen, wat een groot deel verklaart van waarom het het toonaangevende biohackermerk voor mondtape werd."
+        },
+        {
+          "q": "Hoeveel kost Hostage Tape?",
+          "a": "Hostage Tape kost $13 per maand als abonnement, met ongeveer 30 strips per maand. Door het abonnement raak je nooit zonder, maar de absolute kosten zijn hoger dan bij doe-het-zelftape. Je betaalt deels voor een sterk merk met marketing via UFC en biohackerpodcasts."
+        },
+        {
+          "q": "Is Hostage Tape voor iedereen veilig?",
+          "a": "Nee. Het ontwerp met volledige afsluiting is gecontra-indiceerd als je mogelijk niet-gediagnosticeerde slaapapneu hebt, dus laat dat eerst onderzoeken. Er is ook geen poreuze variant voor wie slechts een gedeeltelijke afsluiting wil, en het peer-reviewed bewijs voor deze specifieke tape is beperkt."
+        }
+      ]
+    },
+    "nexcare-surgical-tape": {
+      "verdict": "Beste doe-het-zelfoptie voor mondtape — medische papiertape van 3M voor een fractie van de prijs van biohackermerken. Geen merkuitstraling; lijm van klinische kwaliteit voor $0.05 per nacht.",
+      "summary": "Het doe-het-zelfgeheim van biohackers — 3M Nexcare Sensitive Skin Surgical Tape, geknipt in strips van 2 inch, dient als mondtape-alternatief van klinische kwaliteit voor een fractie van de prijs van Hostage Tape of Somnifix. De medische lijm van 3M is dezelfde chemie als in wondverbanden in ziekenhuizen. Praktisch onverslaanbaar qua kosten per nacht; nul merkuitstraling of gemak.",
+      "description": "ONDA-review van 3M Nexcare Sensitive Skin Surgical Tape — medische papiertape van de drogist als doe-het-zelfmondtape, voor een fractie van de prijs. Beoordeeld op hechting, werking, veiligheid en prijs.",
+      "bestFor": "Het best voor prijsbewuste biohackers die merkgemak willen inruilen voor doe-het-zelfmondtape van klinische kwaliteit tegen een fractie van de prijs van abonnementsmerken.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van 3M Nexcare, literatuur over door de FDA goedgekeurde medische tape en ervaringen uit de doe-het-zelfcommunity van biohackers. Niet zelf getest door ONDA.",
+      "productType": "Medische papiertape als doe-het-zelfmondtape",
+      "pros": [
+        "Onverslaanbare kosten per nacht (~$0.05 per nacht)",
+        "Medische 3M-lijm van klinische kwaliteit — dezelfde als in wondverbanden in ziekenhuizen",
+        "Maximale vrijheid in vorm — je knipt zelf de gewenste maat",
+        "Verkrijgbaar bij de drogist"
+      ],
+      "cons": [
+        "Moet bij elk gebruik worden geknipt — meer gedoe per dag",
+        "Geen merkuitstraling of voorgesneden gemak",
+        "Minder baardvriendelijk dan Hostage Tape",
+        "Geen marketingondersteuning of biohackercommunity"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Medische 3M-lijm van klinische kwaliteit — zacht voor de huid, pijnloos te verwijderen. Minder baardvriendelijk dan Hostage Tape. De Sensitive Skin-variant is de juiste keuze.",
+        "breathing-mechanism": "Je knipt de strip zelf op maat — volledige afsluiting, gedeeltelijke afsluiting of kruisvorm mogelijk. Maximale flexibiliteit.",
+        "evidence-grounding": "Door de FDA goedgekeurde medische papiertape. Klinische literatuur over de veiligheid van de lijm. Tientallen jaren gebruik in ziekenhuizen.",
+        "form-factor": "Op rol, dus bij elk gebruik knippen. Geen voorgesneden strips. Meer gedoe per nacht dan speciale mondtapemerken.",
+        "material-safety": "Hypoallergene lijm van medische kwaliteit. Latexvrij. De Sensitive Skin-variant beperkt reacties; tientallen jaren staat van dienst in ziekenhuizen.",
+        "value": "~$5 voor een rol die 3+ maanden meegaat = ~$0.05 per nacht. Onverslaanbare kosten per nacht in de categorie mondtape."
+      },
+      "content": "## Waar het in uitblinkt\n\n3M Nexcare Sensitive Skin Surgical Tape is het doe-het-zelfgeheim van biohackers — medische papiertape van klinische kwaliteit voor $0.05 per nacht tegenover $0.43 per nacht voor Hostage Tape. Dezelfde medische 3M-lijm als in wondverbanden in ziekenhuizen. Onverslaanbaar qua kosten.\n\n## Wat zijn de nadelen van 3M Nexcare Sensitive Skin Surgical Tape?\n\nGedoe en merkuitstraling. Moet bij elk gebruik worden geknipt, geen voorgesneden strips, geen abonnementsgemak. Minder baardvriendelijk dan de acryllijm van Hostage Tape, die speciaal voor stoppels is ontwikkeld.\n\n## Wie zou 3M Nexcare Sensitive Skin Surgical Tape moeten kopen?\n\nKies 3M Nexcare voor prijsbewuste doe-het-zelfmondtape — klinische lijm tegen de laagst mogelijke prijs. Voor gemak en een baardvriendelijk merk: Hostage Tape. Voor FDA-geregistreerde poreuze tape: Somnifix. Voor premium siliconen: Dream Recovery.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Is 3M Nexcare Sensitive Skin Surgical Tape het waard als mondtape?",
+          "a": "Ja, voor prijsbewuste gebruikers. Nexcare kost ongeveer $0.05 per nacht en gebruikt medische 3M-lijm van klinische kwaliteit, dezelfde soort als op wondverbanden in ziekenhuizen. Je levert merkuitstraling en voorgesneden gemak in, want je knipt het elke keer op maat."
+        },
+        {
+          "q": "Hoeveel kost Nexcare-chirurgische tape als mondtape?",
+          "a": "Een rol kost ongeveer $5 en gaat ruwweg drie maanden mee, wat neerkomt op ongeveer $0.05 per nacht. Het is ook bij de drogist verkrijgbaar, dus er komt geen abonnement of speciale bestelling aan te pas."
+        },
+        {
+          "q": "Wat zijn de nadelen van Nexcare-tape als mondtape?",
+          "a": "Je moet het bij elk gebruik knippen, wat dagelijks gedoe oplevert, en er is geen merkuitstraling of voorgesneden gemak. Het is minder baardvriendelijk dan Hostage Tape en er is geen marketingondersteuning of biohackercommunity omheen."
+        },
+        {
+          "q": "Nexcare vs Hostage Tape: welke is beter?",
+          "a": "Nexcare wint op kosten, met ongeveer $0.05 per nacht, en je kunt elke gewenste maat knippen. Hostage Tape is baardvriendelijker en biedt merkgemak. Kies Nexcare voor doe-het-zelfvoordeel, Hostage Tape als een baard of voorgesneden gemak belangrijker is."
+        }
+      ]
+    },
+    "sleep-strips-by-sleepright": {
+      "verdict": "Beste budgetneusspreider voor in de neus — herbruikbaar kegelontwerp, goedkoper dan Mute. Minder klinisch bewijs dan Mute; een functioneel alternatief voor prijsbewuste gebruikers.",
+      "summary": "SleepRight Nasal Breathe Aid is de budgetneusspreider voor in de neus — herbruikbare polymeer kegeltjes die de neusgaten van binnenuit openhouden, goedkoper dan Mute. Jarenlange staat van dienst van het merk SleepRight. Minder klinisch bewijs dan Rhinomed Mute, maar een functioneel, prijsbewust alternatief voor wie mechanische verwijding van binnenuit wil zonder premiumprijs.",
+      "description": "ONDA-review van SleepRight Nasal Breathe Aid — herbruikbare neusspreider met kegeltjes voor in de neus, tegen een budgetprijs. Beoordeeld op hechting, werking, veiligheid en prijs.",
+      "bestFor": "Het best voor prijsbewuste gebruikers die verwijding van binnenuit willen zonder zich aan de prijs van Mute te binden — een functioneel alternatief binnen de aanpak met interne spreiders.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van SleepRight, FDA-registratie en gebruikersreviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Herbruikbare neusspreider met kegeltjes voor in de neus",
+      "pros": [
+        "Beste prijs per nacht onder de interne neusspreiders (~$0.15 per nacht)",
+        "Herbruikbare polymeer kegel — ~3 maanden per paar",
+        "Jarenlange staat van dienst van het merk SleepRight",
+        "Verstelbare maat ingebouwd in het ontwerp"
+      ],
+      "cons": [
+        "Anatomisch minder geoptimaliseerd dan Mute",
+        "Beperkte peer-reviewed klinische validatie",
+        "Kegelontwerp minder verfijnd dan de polymeer stent van Mute",
+        "Matige meldingen van irritatie in de neusgaten"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Geen lijm — kegeltjes die door wrijving blijven zitten. Gewenning in het begin vergelijkbaar met Mute; comfort verschilt per anatomie.",
+        "breathing-mechanism": "Mechanische verwijding van binnenuit. Minder verfijnd dan de polymeer stent van Mute, maar het basismechanisme klopt.",
+        "evidence-grounding": "FDA-geregistreerd. Beperkte peer-reviewed klinische literatuur over dit specifieke hulpmiddel.",
+        "form-factor": "Kegeltjes voor in de neus. Verstelbare maat. Tweedelig ontwerp (één per neusgat).",
+        "material-safety": "Polymeer van medische kwaliteit. Herbruikbaar gedurende ~3 maanden per paar. Matige meldingen van irritatie in de neusgaten; kegelontwerp anatomisch minder geoptimaliseerd dan Mute.",
+        "value": "~$12 voor een herbruikbaar paar dat ~3 maanden meegaat = ~$0.15 per nacht. Beste prijs per nacht onder de interne neusspreiders."
+      },
+      "content": "## Waar het in uitblinkt\n\nSleepRight Nasal Breathe Aid is de budgetneusspreider voor in de neus — herbruikbare polymeer kegeltjes voor $0.15 per nacht, met de jarenlange staat van dienst van het merk SleepRight. Een functioneel, prijsbewust alternatief voor wie mechanische verwijding van binnenuit wil.\n\n## Wat zijn de nadelen van SleepRight Nasal Breathe Aid?\n\nAnatomische optimalisatie en klinisch bewijs. De kegeltjes van SleepRight zijn anatomisch minder verfijnd dan de polymeer stents van Rhinomed Mute; de klinische onderbouwing is lichter.\n\n## Wie zou SleepRight Nasal Breathe Aid moeten kopen?\n\nKies SleepRight Nasal Breathe Aid voor budgetverwijding van binnenuit. Voor een premium interne stent met klinisch bewijs: Mute. Voor een externe magnetische neusspreider: Intake Breathing. Voor een externe neusstrip van de drogist: Breathe Right.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Is de SleepRight Nasal Breathe Aid het waard?",
+          "a": "Ja, als de prijs telt. De SleepRight Nasal Breathe Aid biedt de beste prijs per nacht onder de interne neusspreiders, ongeveer $0.15 per nacht, met een herbruikbare kegel die zo'n drie maanden meegaat en een ingebouwde verstelbare maat. Hij is anatomisch minder geoptimaliseerd dan Mute en heeft beperkte klinische validatie."
+        },
+        {
+          "q": "Hoeveel kost de SleepRight Nasal Breathe Aid?",
+          "a": "De SleepRight Nasal Breathe Aid kost ongeveer $12 voor een herbruikbaar paar dat ruwweg drie maanden meegaat. Dat komt neer op ongeveer $0.15 per nacht, de beste prijs per nacht in de categorie interne neusspreiders."
+        },
+        {
+          "q": "SleepRight vs Mute: welke is beter?",
+          "a": "Mute is het anatomisch beter geoptimaliseerde ontwerp met een verfijndere polymeer stent. SleepRight is de budgetkeuze: een herbruikbare kegel voor ongeveer $0.15 per nacht met verstelbare maat. Kies SleepRight om interne verwijding te proberen zonder je aan de prijs van Mute te binden."
+        },
+        {
+          "q": "Wat zijn de nadelen van de SleepRight Nasal Breathe Aid?",
+          "a": "SleepRight is anatomisch minder geoptimaliseerd dan Mute, en het kegelontwerp is minder verfijnd dan de polymeer stent van Mute. Er is beperkte peer-reviewed klinische validatie en sommige gebruikers melden matige irritatie in de neusgaten, dus het comfort verschilt per persoon."
+        }
+      ]
+    },
+    "somnifit-sleep-strips": {
+      "verdict": "Instapmondtape voor een budget — toegankelijke prijs, eenvoudige acryllijm, bescheiden merkuitstraling. Voldoende voor prijsbewuste gebruikers; mist de techniek van Hostage Tape.",
+      "summary": "SomniFit Sleep Strips is de budgetmondtape — strips uit één stuk met eenvoudige acryllijm tegen een toegankelijke prijs. Geen hypoallergene K-beauty-certificering, geen biohackeruitstraling, geen abonnementsgemak. Werkt voldoende voor wie geen gevoelige huid of baard heeft; de juiste instapmondtape als je minder dan $10 per verpakking wilt betalen en merkuitstraling je niet uitmaakt.",
+      "description": "ONDA-review van SomniFit Sleep Strips — budgetmondtape met eenvoudige acryllijm, goedkoper dan Hostage Tape. Beoordeeld op hechting, werking, veiligheid en prijs.",
+      "bestFor": "Het best voor prijsbewuste gebruikers zonder gevoelige huid of baard die een merkverpakking mondtape onder $10 willen, zonder abonnementsdruk.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van SomniFit, FDA-registratie en consumentenreviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Budgetmondtapestrips",
+      "pros": [
+        "Goedkoopste geloofwaardige merkmondtape na Nexcare als doe-het-zelfoptie",
+        "Toegankelijke verpakking in drogisterijstijl",
+        "Geen abonnementsdruk",
+        "Eenvoud van één stuk"
+      ],
+      "cons": [
+        "Eenvoudige lijm — matige huidreacties bij gevoelige gebruikers",
+        "Heeft moeite met baarden en een vette huid",
+        "Geen biohackeruitstraling",
+        "Minimaal peer-reviewed bewijs"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Eenvoudige acryllijm — voldoende grip op schone huid. Heeft moeite met baarden en een vette huid. Kan plakkerig loslaten.",
+        "breathing-mechanism": "Volledige afsluiting, uit één stuk. Standaardmechanisme.",
+        "evidence-grounding": "FDA-geregistreerd. Geen peer-reviewed studies. Bescheiden onderbouwing.",
+        "form-factor": "Strip uit één stuk. Functioneel ontwerp zonder premiumtechniek.",
+        "material-safety": "Eenvoudige acryllijm. Latexvrij. Matige meldingen van huidreacties — gebruikers met een gevoelige huid kiezen beter Dream Recovery of AYO.",
+        "value": "~$8 voor 30 strips = ~$0.27 per nacht. Goedkoopste geloofwaardige merkmondtape na Nexcare als doe-het-zelfoptie."
+      },
+      "content": "## Waar het in uitblinkt\n\nSomniFit Sleep Strips is de budgetmerkmondtape — toegankelijke prijs, eenvoud van één stuk, geen abonnementsdruk. Werkt voldoende voor wie geen gevoelige huid of baard heeft.\n\n## Wat zijn de nadelen van SomniFit Sleep Strips?\n\nKwaliteit van de lijm en merkuitstraling. De eenvoudige acryllijm veroorzaakt meer huidreacties dan premiumalternatieven en heeft moeite met baarden en een vette huid. Geen biohackeruitstraling of diepgaande onderbouwing.\n\n## Wie zou SomniFit Sleep Strips moeten kopen?\n\nKies SomniFit als je de goedkoopste geloofwaardige merkmondtape wilt en je huid niet gevoelig is. Voor doe-het-zelfbesparing: Nexcare Surgical Tape. Voor een baardvriendelijk biohackermerk: Hostage Tape. Voor een gevoelige huid: Dream Recovery of AYO.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Zijn SomniFit Sleep Strips het waard?",
+          "a": "SomniFit Sleep Strips zijn het waard als je een goedkope merkmondtape wilt en geen gevoelige huid of baard hebt. Ze zijn de goedkoopste geloofwaardige merkoptie na Nexcare als doe-het-zelfoptie, zonder abonnementsdruk. De eenvoudige lijm heeft moeite met baarden en een vette huid."
+        },
+        {
+          "q": "Hoeveel kosten SomniFit Sleep Strips?",
+          "a": "SomniFit Sleep Strips kosten ongeveer $8 voor een verpakking van 30 strips, ruwweg $0.27 per nacht. Er is geen abonnementsdruk; je koopt gewoon verpakkingen wanneer nodig, waardoor het de goedkoopste geloofwaardige merkmondtape is na Nexcare als doe-het-zelfoptie."
+        },
+        {
+          "q": "Wat zijn de nadelen van SomniFit Sleep Strips?",
+          "a": "De eenvoudige lijm van SomniFit veroorzaakt matige huidreacties bij gevoelige gebruikers en heeft moeite met baarden en een vette huid. Het mist biohackeruitstraling, en er staat minimaal peer-reviewed bewijs achter vergeleken met beter gevestigde opties."
+        }
+      ]
+    },
+    "somnifix": {
+      "verdict": "De oorspronkelijke mondtape — FDA-geregistreerde poreuze strip met een ademopening in het midden. Al tien jaar de referentie; minder baardvriendelijk dan Hostage Tape.",
+      "summary": "Somnifix is de oorspronkelijke mondtape van de categorie — een FDA-geregistreerde poreuze kleefstrip met een ademopening in het midden die een deel van de lippen vrijlaat (niet getest als veiligheidsvoorziening). Hypoallergene lijm van medische kwaliteit. Jarenlange staat van dienst van vóór de biohackerhype van 2025–2026. Minder agressieve marketing dan Hostage Tape; diepere geloofwaardigheid dankzij FDA-registratie.",
+      "description": "ONDA-review van Somnifix — de oorspronkelijke FDA-geregistreerde mondtape met poreus ontwerp en ademopening in het midden. Beoordeeld op hechting, werking, bewijs en prijs.",
+      "bestFor": "Het best voor wie FDA-geregistreerde mondtape met medische geloofwaardigheid en een poreus ontwerp wil — klinische geloofwaardigheid boven biohackermarketing.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Somnifix, FDA-registratiegegevens en jarenlange gebruikersreviews. Niet zelf getest door ONDA.",
+      "productType": "FDA-geregistreerde poreuze mondtapestrips",
+      "pros": [
+        "FDA-geregistreerd medisch hulpmiddel — sterkste regelgevende status",
+        "Poreuze ademopening in het midden — minder volledige afsluiting dan tape die alles bedekt",
+        "Jarenlange staat van dienst van vóór de biohackerhype van 2025",
+        "Geen abonnement nodig"
+      ],
+      "cons": [
+        "Minder baardvriendelijk dan Hostage Tape",
+        "~$0.90 per nacht — duurder per nacht dan Hostage Tape",
+        "Kleinere dekking dan de volledige strip van Hostage Tape",
+        "Minder agressieve consumentenmarketing — lagere naamsbekendheid dan Hostage Tape"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Stevige hechting op schone huid. Minder baardvriendelijk dan Hostage Tape — de lijm is ontwikkeld voor huidcontact, niet voor stoppels.",
+        "breathing-mechanism": "Poreus ontwerp met ademopening in het midden — laat een deel van de lippen vrij en maakt gedeeltelijk uitademen via de mond mogelijk. Dit is niet getest als veiligheidsvoorziening; als slaapapneu mogelijk is, ga dan eerst naar een arts.",
+        "evidence-grounding": "FDA-geregistreerd medisch hulpmiddel. Jarenlange staat van dienst met verwijzingen in klinische context. Sterkere regelgevende status dan Hostage Tape.",
+        "form-factor": "Strip uit één stuk met poreus middendeel. Makkelijk aan te brengen. Minder ruime dekking dan de volledige strip van Hostage Tape.",
+        "material-safety": "Hypoallergene lijm van medische kwaliteit. Latexvrij. Huidreacties worden zelden gemeld door de jarenlange gebruikersgroep.",
+        "value": "~$25 voor 28 strips = ~$0.90 per nacht. Duurder per nacht dan het abonnement van Hostage Tape; geen abonnement nodig."
+      },
+      "content": "## Waar het in uitblinkt\n\nSomnifix is de oorspronkelijke mondtape van de categorie — een FDA-geregistreerde poreuze strip met ademopening in het midden en een jarenlange staat van dienst van vóór de biohackerhype van 2025–2026. De referentie qua klinische geloofwaardigheid voor wie twijfelt over volledige afsluiting.\n\n## Wat zijn de nadelen van Somnifix?\n\nHechting bij een baard en naamsbekendheid. De lijm van Somnifix is ontwikkeld voor schone huid en grijpt baardstoppels minder goed vast dan Hostage Tape. Lagere naamsbekendheid bij consumenten dan de virale nieuwkomers van 2026.\n\n## Wie zou Somnifix moeten kopen?\n\nKies Somnifix als je FDA-geregistreerde mondtape met medische geloofwaardigheid en een poreus ontwerp wilt. Voor een baardvriendelijk biohackermerk: Hostage Tape. Voor premium siliconen: Dream Recovery. Voor medische doe-het-zelftape: Nexcare Surgical Tape.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n- [Maakt slaap je hersenen echt schoon? Het bewijs voor het glymfatisch systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog ter discussie staat\n",
+      "faq": [
+        {
+          "q": "Is Somnifix het waard?",
+          "a": "Somnifix is het waard als je mondtape met medische geloofwaardigheid wilt. Het is een FDA-geregistreerd medisch hulpmiddel met een poreuze ademopening in het midden (niet getest als veiligheidsvoorziening) en een jarenlange staat van dienst. Als slaapapneu mogelijk is, ga dan eerst naar een arts. Het kost per nacht meer dan Hostage Tape."
+        },
+        {
+          "q": "Hoeveel kost Somnifix?",
+          "a": "Somnifix kost ongeveer $25 voor een verpakking van 28 strips, ruwweg $0.90 per nacht. Dat is per nacht meer dan Hostage Tape. Er is geen abonnement nodig, dus je koopt verpakkingen alleen wanneer je ze nodig hebt."
+        },
+        {
+          "q": "Somnifix vs Hostage Tape: welke is beter?",
+          "a": "Somnifix wint op regelgevende status als FDA-geregistreerd hulpmiddel en heeft een poreuze ademopening. Hostage Tape is goedkoper per nacht, baardvriendelijker en biedt een grotere dekking. Kies Somnifix voor klinische geloofwaardigheid."
+        },
+        {
+          "q": "Wat zijn de nadelen van Somnifix?",
+          "a": "Somnifix is minder baardvriendelijk dan Hostage Tape, kost meer per nacht (ongeveer $0.90) en biedt een kleinere dekking dan de volledige strip van Hostage Tape. Het heeft ook een lagere naamsbekendheid door minder agressieve marketing."
+        }
+      ]
+    },
+    "the-tape-co": {
+      "verdict": "Beste mondtape met X-patroon — het kruisontwerp laat de mondhoeken vrij, positionering als onafhankelijk biohackermerk. Nieuwer merk zonder jarenlange staat van dienst.",
+      "summary": "The Tape Co. is de onafhankelijke biohackerkandidaat met het kenmerkende X-patroon — twee kleefstrips die kruiselings over de mond worden geplakt en de mondhoeken vrijlaten; dit is niet getest als veiligheidsvoorziening. Nieuwer merk (gelanceerd ~2024), bescheiden naamsbekendheid vergeleken met Hostage Tape, maar een opvallend ontwerp.",
+      "description": "ONDA-review van The Tape Co. — nieuwere onafhankelijke biohacker-mondtape met X-patroon dat de mondhoeken vrijlaat. Beoordeeld op hechting, werking, veiligheid en prijs.",
+      "bestFor": "Het best voor wie een X-patroon wil dat de mondhoeken vrijlaat en minder lijm op de huid brengt.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van The Tape Co. en gebruikersreviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Onafhankelijke mondtape met X-patroon",
+      "pros": [
+        "Kruisontwerp met X-patroon — laat de mondhoeken vrij, minder lijm op de huid",
+        "Kleiner kleefoppervlak helpt bij een gevoelige huid",
+        "Positionering als onafhankelijk biohackermerk",
+        "Geen abonnementsdruk"
+      ],
+      "cons": [
+        "Geen FDA-registratie",
+        "Nieuwer merk zonder jarenlange staat van dienst",
+        "Aanbrengen in twee delen is omslachtiger dan één stuk",
+        "Kosten per nacht in het middensegment zonder premium merkuitstraling"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Acryllijm uit het middensegment — voldoende grip op schone huid. Het X-patroon verkleint het totale kleefoppervlak per nacht. Minder baardvriendelijk dan Hostage Tape.",
+        "breathing-mechanism": "Kruisontwerp met X-patroon — laat de mondhoeken vrij. Dit is niet getest als veiligheidsvoorziening; als slaapapneu mogelijk is, ga dan eerst naar een arts.",
+        "evidence-grounding": "Onafhankelijk merk zonder FDA-registratie of peer-reviewed studies. Het X-patroon is niet getest als veiligheidsvoorziening.",
+        "form-factor": "Kruisontwerp met X-patroon — opvallend in de categorie. Aanbrengen in twee delen is iets omslachtiger dan één stuk.",
+        "material-safety": "Hypoallergene lijm. Latexvrij. Matige meldingen van huidreacties. Het X-patroon verkleint het kleefoppervlak, wat helpt bij een gevoelige huid.",
+        "value": "~$18 voor 30 strips = ~$0.60 per nacht. Prijs in het middensegment voor een opvallend ontwerp."
+      },
+      "content": "## Waar het in uitblinkt\n\nThe Tape Co. is de onafhankelijke mondtape met X-patroon — het kruisontwerp laat de mondhoeken vrij (niet getest als veiligheidsvoorziening). Positionering als onafhankelijk biohackermerk met een opvallend ontwerp.\n\n## Wat zijn de nadelen van The Tape Co.?\n\nNaamsbekendheid en validatie. Onafhankelijk merk zonder FDA-registratie of peer-reviewed studies; nieuwer, gelanceerd ~2024, zonder jarenlange staat van dienst.\n\n## Wie zou The Tape Co. moeten kopen?\n\nKies The Tape Co. als je een X-patroon wilt dat de mondhoeken vrijlaat. Voor biohackeruitstraling: Hostage Tape. Voor een FDA-geregistreerd poreus ontwerp: Somnifix. Voor premium siliconen: Dream Recovery.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Is mondtape van The Tape Co. het waard?",
+          "a": "The Tape Co. is het waard als je een X-patroon wilt. Het laat de mondhoeken vrij (niet getest als veiligheidsvoorziening) en verkleint het kleefoppervlak voor een gevoelige huid, zonder abonnementsdruk. Het heeft geen FDA-registratie, is een nieuwer merk en het aanbrengen in twee delen is omslachtiger."
+        },
+        {
+          "q": "Hoeveel kost The Tape Co.?",
+          "a": "The Tape Co. kost ongeveer $18 voor een verpakking van 30 strips, ruwweg $0.60 per nacht. Dat zijn kosten per nacht in het middensegment zonder premium merkuitstraling, en er is geen abonnementsdruk."
+        },
+        {
+          "q": "Wat zijn de nadelen van The Tape Co.?",
+          "a": "The Tape Co. heeft geen FDA-registratie en mist als nieuwer merk een jarenlange staat van dienst. Aanbrengen in twee delen is omslachtiger dan strips uit één stuk, en het kost middensegmentprijzen zonder premium merkuitstraling."
+        }
+      ]
+    },
+    "breathe-right-original": {
+      "verdict": "De drogisterijreferentie onder de neusstrips — tientallen jaren staat van dienst, FDA-goedgekeurd, overal verkrijgbaar. Zwakker mechanisme dan magnetische of interne neusspreiders.",
+      "summary": "Breathe Right Original is de standaard externe neusstrip van de drogist — een plastic kleefstrip over de neusbrug die met veerspanning de neusgaten verwijdt. Tientallen jaren staat van dienst met FDA-goedkeuring (oorspronkelijk 3M, nu Kenvue/J&J). Overal bij de drogist verkrijgbaar. De referentie die iedereen eerst probeert; zwakker mechanisme dan magnetische of interne alternatieven.",
+      "description": "ONDA-review van Breathe Right Original — de standaard externe neusstrip van de drogist, van Kenvue/Johnson & Johnson. Beoordeeld op hechting, werking, bewijs en prijs.",
+      "bestFor": "Het best voor wie voor het eerst een hulpmiddel voor een open neus probeert en de drogisterijreferentie wil tegen de laagste kosten per nacht — probeer dit voordat je kiest voor premium magnetische of interne alternatieven.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Breathe Right, FDA-registratiegegevens en tientallen jaren literatuur in klinische context. Niet zelf getest door ONDA.",
+      "productType": "Externe neusstrip met lijm",
+      "pros": [
+        "Sterkste regelgevende status — tientallen jaren staat van dienst met FDA-goedkeuring",
+        "Beste prijs per nacht in de categorie neusademhaling",
+        "Overal verkrijgbaar bij de drogist",
+        "Varianten voor gevoelige huid en transparante varianten beschikbaar"
+      ],
+      "cons": [
+        "Zwakker mechanisme dan magnetische / interne alternatieven",
+        "Wegwerpontwerp voor eenmalig gebruik",
+        "Van buitenaf zichtbaar",
+        "Hechting faalt bij huidverzorgingsproducten of zweet"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Stevige hechting op schone, droge huid. Matige meldingen van huidirritatie; transparante varianten en varianten voor gevoelige huid lossen de meeste problemen op.",
+        "breathing-mechanism": "Externe veerspanning — passieve verwijding door de veerkracht van plastic over de neusbrug. Zwakker dan de externe magnetische (Intake) of interne mechanische (Mute) aanpak.",
+        "evidence-grounding": "FDA-goedgekeurd met tientallen jaren literatuur in klinische context over de luchtstroom bij neusstrips. Tientallen jaren staat van dienst van het merk. Sterkste regelgevende status onder de neusspreiders.",
+        "form-factor": "Strip uit één stuk. Makkelijk aan te brengen. Wegwerp, eenmalig gebruik. Van buitenaf zichtbaar.",
+        "material-safety": "Hypoallergene varianten en varianten voor gevoelige huid beschikbaar. Huidirritatie wordt zelden gemeld bij keuze van de juiste variant. Latexvrij.",
+        "value": "~$10 voor 30 strips = ~$0.33 per nacht. Met afstand de beste prijs per nacht in de categorie neusademhaling. Verkrijgbaar bij de drogist."
+      },
+      "content": "## Waar het in uitblinkt\n\nBreathe Right Original is de standaard neusstrip van de drogist — FDA-goedgekeurd, tientallen jaren staat van dienst, overal verkrijgbaar, beste prijs per nacht. De referentie in de categorie die iedereen eerst probeert.\n\n## Wat zijn de nadelen van Breathe Right Original?\n\nHet mechanisme. Externe veerspanning is zwakker dan de externe magnetische (Intake Breathing) of interne mechanische (Mute) aanpak — Breathe Right opent de neusgaten minder krachtig. Het wegwerpontwerp voor eenmalig gebruik maakt het op lange termijn duurder dan herbruikbare alternatieven.\n\n## Wie zou Breathe Right Original moeten kopen?\n\nKies Breathe Right Original als eerste hulpmiddel voor een open neus — de goedkoopste geloofwaardige instap met de minste verplichting. Werkt het, mooi; wil je krachtigere verwijding, stap dan over op Intake Breathing of Mute.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Zijn Breathe Right Original-strips het waard?",
+          "a": "Ja, als eerste neusstrip om te proberen. Breathe Right Original heeft tientallen jaren staat van dienst met FDA-goedkeuring, de beste prijs per nacht in de categorie neusademhaling en is overal bij de drogist verkrijgbaar. Het veerspanningsmechanisme is zwakker dan magnetische of interne neusspreiders, dus sommige gebruikers stappen later over."
+        },
+        {
+          "q": "Hoeveel kosten Breathe Right Original-strips?",
+          "a": "Breathe Right Original kost ongeveer $10 voor een verpakking van 30 strips, ruwweg $0.33 per nacht. Dat is de beste prijs per nacht in de categorie neusademhaling, en er zijn ook varianten voor gevoelige huid en transparante varianten. Elke strip is voor eenmalig gebruik en wordt weggegooid."
+        },
+        {
+          "q": "Wat zijn de nadelen van Breathe Right Original?",
+          "a": "Breathe Right Original gebruikt een zwakker mechanisme dan magnetische of interne alternatieven, en elke strip is voor eenmalig gebruik. De strip is van buitenaf zichtbaar en de hechting faalt bij huidverzorgingsproducten of zweet. Voor een deel van deze problemen zijn varianten voor gevoelige huid en transparante varianten beschikbaar."
+        },
+        {
+          "q": "Voor wie zijn Breathe Right Original-strips het best?",
+          "a": "Breathe Right Original is het best voor wie voor het eerst een hulpmiddel voor een open neus probeert en de drogisterijreferentie wil tegen de laagste kosten per nacht. Dit is degene om te proberen voordat je kiest voor premium magnetische of interne alternatieven. Het heeft tientallen jaren staat van dienst met FDA-goedkeuring."
+        }
+      ]
+    },
+    "intake-breathing": {
+      "verdict": "Beste premium neusspreider — magnetisch, herbruikbaar ontwerp, aanbevolen door James Nestor; de studies naar de luchtstroom zijn door het merk gefinancierd.",
+      "summary": "Intake Breathing is de premium externe neusspreider — kleine kleefplaatjes op elk neusgat houden een flexibele magnetische band vast die de neusgaten 's nachts mechanisch verwijdt. James Nestor raadt het in Breath uitdrukkelijk aan. Herbruikbare band, vervangbare kleefplaatjes, aantoonbaar effectief voor mondademers die niet aan mondtape willen. De premiumprijs weerspiegelt de techniek.",
+      "description": "ONDA-review van Intake Breathing — premium externe magnetische neusspreider met herbruikbare magnetische strips. Beoordeeld op hechting, werking, bewijs en prijs.",
+      "bestFor": "Het best voor overtuigde mondademers die niet aan mondtape kunnen wennen en de meest effectieve externe aanpak voor neusverwijding willen.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Intake Breathing, de publieke aanbeveling van James Nestor en gebruikersreviews uit 2026. Niet zelf getest door ONDA.",
+      "productType": "Externe magnetische neusspreider",
+      "pros": [
+        "Meest effectieve externe aanpak voor neusverwijding",
+        "Aanbevolen door James Nestor in het boek Breath",
+        "Herbruikbare magnetische band — rendabel op lange termijn",
+        "Onopvallend uiterlijk"
+      ],
+      "cons": [
+        "Premiumprijs vergeleken met Breathe Right-strips",
+        "Vereist een abonnement op vervangende kleefplaatjes",
+        "Extern hulpmiddel — zichtbaar op het gezicht",
+        "Geen FDA Klasse II-goedkeuring"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Kleine kleefplaatjes hechten goed; de magnetische band verdeelt de druk in plaats van spanning op één punt te houden. Comfortabel voor deze vorm.",
+        "breathing-mechanism": "Externe magnetische verwijding — verbreedt de neusgaten mechanisch. Meest effectieve externe aanpak; doet het volgens gebruikers beter qua luchtstroom dan passieve strips zoals Breathe Right.",
+        "evidence-grounding": "Aanbevolen door James Nestor in het boek Breath. Door het merk gefinancierde studies naar de luchtstroom. Positionering dicht bij de slaapgeneeskunde, zonder FDA Klasse II.",
+        "form-factor": "Herbruikbare magnetische band met vervangbare kleefplaatjes — rendabel op lange termijn. Onopvallend uiterlijk.",
+        "material-safety": "Kleefplaatjes van medische kwaliteit. Magnetische band hypoallergeen. Huidreacties worden zelden gemeld.",
+        "value": "~$40 voor een starterspakket, $20 per maand voor vervangende plaatjes = doorlopend ~$0.65 per nacht. Premiumprijs, maar de herbruikbare band verlaagt de kosten op lange termijn."
+      },
+      "content": "## Waar het in uitblinkt\n\nIntake Breathing is de referentie onder de premium externe neusspreiders — herbruikbare magnetische band, aanbevolen door James Nestor, de meest effectieve externe aanpak voor verwijding. Het best voor mondademers die mondtape afwijzen.\n\n## Wat zijn de nadelen van Intake Breathing?\n\nKosten en zichtbaarheid. Doorlopende kosten voor vervangende kleefplaatjes in abonnementsstijl, premiumpositionering tegenover Breathe Right-strips van $5. Extern hulpmiddel, zichtbaar op het gezicht.\n\n## Wie zou Intake Breathing moeten kopen?\n\nKies Intake Breathing als je niet aan mondtape kunt wennen en de meest effectieve externe neusspreider wilt. Voor een interne neusstent: Mute. Voor de drogisterijreferentie: Breathe Right. Voor mondtape: Hostage Tape of Somnifix.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n- [Maakt slaap je hersenen echt schoon? Het bewijs voor het glymfatisch systeem](/articles/nightly-flush-glymphatic-neural-cache) — wat bij mensen is aangetoond en wat nog ter discussie staat\n",
+      "faq": [
+        {
+          "q": "Hoe werkt Intake Breathing?",
+          "a": "Intake Breathing is een externe neusspreider. Kleine kleefplaatjes op elk neusgat houden een flexibele magnetische band vast die de neusgaten 's nachts mechanisch verwijdt. De band is herbruikbaar, de kleefplaatjes worden na verloop van tijd vervangen. James Nestor raadt het aan in zijn boek Breath."
+        },
+        {
+          "q": "Hoeveel kost Intake Breathing?",
+          "a": "Het starterspakket van Intake Breathing kost ongeveer $40, en vervangende kleefplaatjes kosten ruwweg $20 per maand. Dat is een premiumprijs vergeleken met Breathe Right-strips, al maakt de herbruikbare magnetische band het op lange termijn voordeliger."
+        },
+        {
+          "q": "Intake Breathing vs mondtape: wat moet ik proberen?",
+          "a": "Intake past bij overtuigde mondademers die niet aan mondtape kunnen wennen. In plaats van de lippen af te sluiten opent het de neusweg, en het is de meest effectieve externe aanpak voor neusverwijding. Het is wel zichtbaar op het gezicht en heeft geen FDA Klasse II-goedkeuring."
+        }
+      ]
+    },
+    "mute-nasal-dilator": {
+      "verdict": "Beste interne neusstent — houdt de luchtweg mechanisch van binnenuit open, gepubliceerd klinisch bewijs, herbruikbaar. De gewenningsperiode in het begin is reëel.",
+      "summary": "Mute Nasal Dilator is de interne neusstent van Rhinomed — een kleine flexibele polymeer stent die in de neusgaten wordt geplaatst en de luchtweg mechanisch van binnenuit openhoudt. Gepubliceerde klinische studies naar verbeterde luchtstroom, FDA-geregistreerd, herbruikbaar gedurende ~1 week per stent. De gewenningsperiode is reëel (de eerste nachten voelen vreemd) en sommige overtuigde gebruikers melden een grotere verbetering dan met externe strips (gebruikerservaringen, niet getest).",
+      "description": "ONDA-review van de Mute Nasal Dilator — de klinische interne neusstent van Rhinomed die de neusgaten mechanisch van binnenuit openhoudt. Beoordeeld op hechting, werking, bewijs en prijs.",
+      "bestFor": "Het best voor overtuigde mondademers die interne hulpmiddelen verdragen en mechanische neusverwijding met klinische onderbouwing willen.",
+      "testNote": "Op bewijs gebaseerde beoordeling — gescoord op basis van productdocumentatie van Rhinomed, FDA-registratie en gepubliceerde klinische studies naar de luchtstroom. Niet zelf getest door ONDA.",
+      "productType": "Interne neusstent als neusspreider",
+      "pros": [
+        "Sterkste mechanische werking onder de neusspreiders",
+        "Gepubliceerde klinische studies naar de luchtstroom",
+        "Van buitenaf onzichtbaar — geen zichtbaar hulpmiddel",
+        "Herbruikbaar ~1 week per stent"
+      ],
+      "cons": [
+        "Gewenningsperiode — de eerste nachten voelen vreemd",
+        "Wordt in de neus geplaatst — niet iedereen verdraagt het",
+        "Drie maten voor de juiste pasvorm — aanschaf van een maatset nodig",
+        "Hogere kosten per nacht dan externe strips"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Geen lijm — blijft door wrijving in de neusgaten zitten. De gewenningsperiode is reëel; de meeste gebruikers wennen binnen 3-5 nachten.",
+        "breathing-mechanism": "Interne mechanische stent — houdt de luchtweg directer van binnenuit open dan de hefboomwerking van externe strips. Sterkste mechanische werking in de categorie.",
+        "evidence-grounding": "Gepubliceerde klinische studies van Rhinomed naar verbeterde luchtstroom. FDA-geregistreerd. Beste peer-reviewed onderbouwing onder de neusspreiders.",
+        "form-factor": "Interne stent — van buitenaf onzichtbaar, maar wordt in de neusgaten geplaatst. Verkrijgbaar in drie maten (S/M/L), dus je moet je maat bepalen.",
+        "material-safety": "Polymeer van medische kwaliteit. Herbruikbaar ~1 week per stent. Een deel van de gebruikers meldt irritatie in de neusgaten — niet elke anatomie past comfortabel.",
+        "value": "~$25 voor een 3-pack × 1 week per stuk = ~$1.20 per nacht. Duurder per nacht dan mondtape of Breathe Right."
+      },
+      "content": "## Waar het in uitblinkt\n\nMute Nasal Dilator is de referentie onder de interne neusstents — sterkste mechanische werking in de categorie neusspreiders, gepubliceerde klinische studies naar de luchtstroom, FDA-geregistreerd. Het best onderbouwde hulpmiddel voor een open neus voor wie interne hulpmiddelen verdraagt.\n\n## Wat zijn de nadelen van Mute Nasal Dilator?\n\nGewenning en verdraagbaarheid. Plaatsing in de neus is niet voor iedereen comfortabel; de eerste nachten voelen vreemd en een deel van de gebruikers went er nooit aan. Drie maten voor de juiste pasvorm; aanschaf van een maatset wordt aanbevolen.\n\n## Wie zou Mute Nasal Dilator moeten kopen?\n\nKies Mute Nasal Dilator als je interne hulpmiddelen verdraagt en mechanische verwijding met klinische onderbouwing wilt. Voor een extern magnetisch alternatief: Intake Breathing. Voor passieve externe strips: Breathe Right. Voor mondtape: Hostage Tape of Somnifix.\n\n---\n\n## Achtergrondinformatie\n\n- [Elektrische geneeskunde en neuromodulatie](/articles/electric-medicine-neuromodulation)\n- [Fase-gekoppelde akoestische slaap](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "Is de Mute Nasal Dilator het waard?",
+          "a": "Mute is het waard voor overtuigde mondademers die interne hulpmiddelen verdragen. Het biedt de sterkste mechanische werking onder de neusspreiders, gepubliceerde klinische studies naar de luchtstroom, en is van buitenaf onzichtbaar. Reken op een gewenningsperiode, en houd er rekening mee dat het per nacht meer kost dan externe strips."
+        },
+        {
+          "q": "Hoeveel kost de Mute Nasal Dilator?",
+          "a": "Mute kost $25 voor een 3-pack, waarbij elke stent ongeveer een week herbruikbaar is. Omdat er drie maten zijn, moet je eerst ook een maatset kopen, en de kosten per nacht liggen hoger dan bij externe strips."
+        },
+        {
+          "q": "Wat zijn de nadelen van de Mute Nasal Dilator?",
+          "a": "Mute heeft een gewenningsperiode en de eerste nachten voelen vreemd. Niet iedereen verdraagt plaatsing in de neus, er is een maatset nodig omdat er drie maten zijn, en de kosten per nacht zijn hoger dan bij externe strips."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -1656,6 +2153,81 @@
           "a": "Breathwrk: $49/jaar. Wim Hof Method: $42.99/jaar. SOMA Breath: $99/jaar. Open: $120/jaar. Othership: $129.99/jaar. Inhale: $60/jaar. Pause Breathwork: $90/jaar. Gratis opties: iBreathe, Breathe2Relax, Prana Breath (grotendeels gratis)."
         }
       ]
+    },
+    "best-mouth-tape-nasal-breathing-2026": {
+      "title": "Beste mondtape & hulpmiddelen voor neusademhaling (2026)",
+      "description": "ONDA rangschikt de beste mondtapes en neusademhalingshulpmiddelen van 2026 — Hostage Tape, Somnifix, Intake Breathing, Mute, Breathe Right en meer. Beoordeeld op hechting, werking, veiligheid en prijs.",
+      "intro": "Mondtape en hulpmiddelen voor neusademhaling werden in 2024–2026 mainstream, aangewakkerd door Breath van James Nestor, de crossover met Wim Hof en de virale doorbraak van het merk Hostage Tape. De categorie viel uiteen in duidelijke lagen: mondtape van biohackermerken (Hostage Tape, Dream Recovery, The Tape Co.), FDA-geregistreerde medische referenties (Somnifix), doe-het-zelfalternatieven met medische tape (3M Nexcare), en de parallelle categorie neusspreiders (Intake Breathing magnetisch, Mute als interne stent, Breathe Right als externe strip van de drogist). We beoordeelden de tien meest geloofwaardige producten van 2026 op dezelfde zes assen: hechting en comfort, ademmechanisme, wetenschappelijke onderbouwing en veiligheid, vorm, materiaalveiligheid en prijs-kwaliteit.",
+      "verdict": "Hostage Tape wint over de hele linie als de biohacker-mondtape die 2026 bepaalt — baardvriendelijke lijm, abonnementsgemak, verzorgd merk. Somnifix is de FDA-geregistreerde medische referentie met een poreus ontwerp. Intake Breathing is de premium externe neusspreider (aanbevolen door James Nestor). Mute is de klinische interne stent. Breathe Right is het startpunt van de drogist dat iedereen eerst zou moeten proberen. Nexcare is de onverslaanbare goedkope doe-het-zelfkeuze. Kies aan de hand van drie vragen: mondtape of neusspreider, baardvriendelijk of gevoelige huid, abonnementsgemak of doe-het-zelfvoordeel.",
+      "content": "## Hoe we ze hebben gerangschikt\n\nElk product is beoordeeld volgens de gepubliceerde [reviewmethodologie](/reviews/methodology) van ONDA: zes gewogen criteria, waarbij hechting en comfort en materiaalveiligheid bewust zwaar meewegen — de grootste bronnen van verwarring bij gebruikers in deze categorie zijn huidirritatie en virale wellnessmarketing die maar losjes aansluit bij de klinische werkelijkheid.\n\nAlle tien zijn beoordeeld op basis van fabrikantdocumentatie, FDA-registratiegegevens en grootschalige gebruikersreviews uit 2026, niet door ze zelf te testen.\n\n## Beste mondtape & hulpmiddelen voor neusademhaling: welke moet je kopen?\n\nDrie koopvragen maken de categorie overzichtelijk:\n\n**Mondtape of neusspreider?** Mondtape (dwingt neusademhaling af door de mond af te sluiten): Hostage Tape, Somnifix, Dream Recovery, Nexcare doe-het-zelf, AYO, SomniFit, The Tape Co. Neusspreider (verwijdt de neusweg): Intake Breathing, Mute, Breathe Right, SleepRight.\n\n**Baardvriendelijk of gevoelige huid?** Baardvriendelijk: Hostage Tape (duidelijke winnaar). Gevoelige huid: Dream Recovery met siliconengel, AYO hypoallergeen K-beauty. Geen van beide: Somnifix, SomniFit en Nexcare doe-het-zelf werken allemaal.\n\n**Abonnementsgemak of doe-het-zelfvoordeel?** Abonnement: Hostage Tape ($13 per maand) voor gemak. Doe-het-zelf goedkoop: Nexcare Surgical Tape (~$0.05 per nacht). Middensegment zonder abonnement: Somnifix, Dream Recovery, AYO, SomniFit, The Tape Co.\n\nHostage Tape domineert de laag van consumentenmerken voor mondtape; Somnifix bezit de medische geloofwaardigheid van FDA-registratie; Intake Breathing en Mute verdelen de premiummarkt voor neusspreiders; Breathe Right en Nexcare dekken de goedkope drogisterij-/doe-het-zelflaag.",
+      "picks": {
+        "hostage-tape": {
+          "award": "Beste over de hele linie",
+          "takeaway": "Baardvriendelijke lijm + abonnementsgemak + verzorgd biohackermerk — de referentie van 2026."
+        },
+        "somnifix": {
+          "award": "Beste FDA-geregistreerd",
+          "takeaway": "Oorspronkelijke poreuze mondtape met ademopening in het midden en jarenlange medische geloofwaardigheid."
+        },
+        "dream-recovery-mouth-tape": {
+          "award": "Beste voor gevoelige huid",
+          "takeaway": "Premium lijm van siliconengel — de zachtste in de categorie, herbruikbaar, zonder abonnementsverplichting."
+        },
+        "intake-breathing": {
+          "award": "Beste premium neusspreider",
+          "takeaway": "Magnetische externe neusspreider, aanbevolen door James Nestor, herbruikbaar met vervangbare plaatjes."
+        },
+        "mute-nasal-dilator": {
+          "award": "Beste klinische interne stent",
+          "takeaway": "Interne polymeer stent van Rhinomed met gepubliceerde luchtstroomstudies — sterkste werking onder de neusspreiders."
+        },
+        "breathe-right-original": {
+          "award": "Beste drogisterijreferentie",
+          "takeaway": "Externe strip met tientallen jaren FDA-goedkeuring voor $0.33 per nacht — probeer dit eerst, vóór premium neusspreiders."
+        },
+        "nexcare-surgical-tape": {
+          "award": "Beste goedkope doe-het-zelfoptie",
+          "takeaway": "Medische papiertape van 3M van klinische kwaliteit voor $0.05 per nacht — onverslaanbare kosten voor biohackers die zelf hun strips knippen."
+        },
+        "ayo-sleep-tape": {
+          "award": "Beste hypoallergene K-beauty",
+          "takeaway": "Koreaanse hypoallergene K-beauty-lijm in het middensegment — een zacht alternatief voor gevoelige huid."
+        },
+        "the-tape-co": {
+          "award": "Beste ontwerp met X-patroon",
+          "takeaway": "Het kruisontwerp laat een deel van de lippen vrij en verkleint het kleefoppervlak; dit is niet getest als veiligheidsvoorziening."
+        },
+        "somnifit-sleep-strips": {
+          "award": "Beste goedkope merkoptie",
+          "takeaway": "Goedkoopste geloofwaardige merkmondtape na Nexcare als doe-het-zelfoptie — eenvoudige lijm voor minder dan $10 per verpakking."
+        }
+      },
+      "faq": [
+        {
+          "q": "Wat is de beste mondtape in 2026?",
+          "a": "Hostage Tape over de hele linie — baardvriendelijke kleeftechniek, abonnementsgemak, verzorgd biohackermerk. Somnifix voor een FDA-geregistreerd poreus ontwerp. Dream Recovery voor een gevoelige huid + premium siliconengel."
+        },
+        {
+          "q": "Is mondtape veilig?",
+          "a": "Dat hangt van twee dingen af: een neus waardoor je vrij kunt ademen, en geen onbehandelde slaapapneu. Tape niet als je neus verstopt is (verkoudheid, allergie, poliepen, scheef neustussenschot). Als slaapapneu mogelijk is — hard snurken, 's nachts naar adem happen, ademstops die een partner opmerkt, slaperigheid overdag — ga dan eerst naar een arts: tape kan snurken dempen en zo het waarschuwingssignaal verbergen. Van geen enkel tapeontwerp, ook niet poreus of met X-patroon, is aangetoond dat het mondtape veilig maakt."
+        },
+        {
+          "q": "Mondtape of neusspreider — wat moet ik gebruiken?",
+          "a": "Verschillende problemen. Mondtape dwingt neusademhaling af door de mond af te sluiten. Neusspreiders (Intake Breathing, Mute, Breathe Right) verwijden de neusweg, zodat mondademhaling niet nodig is. Veel gebruikers beginnen alleen met een neusspreider en voegen mondtape toe zodra neusademhaling comfortabel voelt."
+        },
+        {
+          "q": "Wat is de goedkoopste geloofwaardige optie?",
+          "a": "3M Nexcare Sensitive Skin Surgical Tape voor ~$0.05 per nacht, als doe-het-zelfmondtape van klinische kwaliteit. Voor externe neusstrips: Breathe Right Original voor $0.33 per nacht."
+        },
+        {
+          "q": "Blijft Hostage Tape echt zitten met een baard?",
+          "a": "Ja — de acryllijm van Hostage Tape is speciaal ontwikkeld om baardstoppels vast te houden, waar Somnifix, Dream Recovery en doe-het-zelfalternatieven wegglijden. Baardvriendelijkheid is het belangrijkste onderscheid in de feedback van consumenten."
+        },
+        {
+          "q": "Wat kost de categorie echt per jaar?",
+          "a": "Nexcare doe-het-zelf: ~$20 per jaar. Breathe Right: ~$120 per jaar. SomniFit-merk: ~$100 per jaar. Hostage Tape-abonnement: ~$156 per jaar. Somnifix: ~$330 per jaar. Intake Breathing: ~$240 per jaar met vervangende plaatjes. Mute: ~$435 per jaar. Totale bandbreedte ~$20–$435 per jaar, afhankelijk van de laag."
+        }
+      ]
     }
   },
   "criteria": {
@@ -1701,7 +2273,10 @@
     "signal-quality": "Signaalkwaliteit en sensorkwaliteit",
     "training-content": "Trainingsprogramma's en content",
     "comfort": "Comfort en draagbaarheid",
-    "open-data": "Open data en toegang voor developers"
+    "open-data": "Open data en toegang voor developers",
+    "adhesion-comfort": "Hechting en comfort",
+    "breathing-mechanism": "Ademmechanisme en aanpak",
+    "material-safety": "Materiaalveiligheid en huidverdraagzaamheid"
   },
   "categories": {
     "pemf": "PEMF-apparaten",
@@ -1714,7 +2289,8 @@
     "massage-gun": "Massageguns",
     "hrv-wearable": "HRV-trackers",
     "sauna": "Sauna's & infraroodsauna's",
-    "vagus-stim": "Nervus vagus stimulatoren"
+    "vagus-stim": "Nervus vagus stimulatoren",
+    "breathing-aid": "Mondtape & neusademhaling"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -2903,6 +3479,349 @@
         }
       ],
       "content": "## De korte versie\n\n**Medito** is het beste gratis alternatief voor Headspace: elke meditatie is gratis, zonder advertenties, zonder account en zonder premiumversie. **Headspace** kost ongeveer $70 per jaar, maar geeft je de meest gestructureerde begeleiding voor beginners, een grotere bibliotheek en een door onderzoek onderbouwd programma. Beslist de prijs, kies dan Medito. Beslist de structuur, kies dan Headspace.\n\n## Wat ze bieden\n\nMedito wordt gemaakt door de Medito Foundation, een geregistreerd goed doel in Nederland. De code is openbaar, er is geen account nodig, en de app dekt de basis: beginnerscursussen, ademoefeningen, slaapcontent, sessies over stress en angst en een meditatietimer. De app wordt gefinancierd met donaties, niet met abonnementen.\n\nHeadspace is een abonnementsapp met 14 dagen gratis proberen. De kracht zit in de begeleiding: cursussen die een absolute beginner naar een vaste dagelijkse beoefening brengen, plus een brede bibliotheek voor slaap, focus en het dagelijks leven. Zonder abonnement is de gratis content weinig meer dan een voorproefje.\n\n## Wie kiest wat?\n\nKies **Medito** als je niet wilt betalen, privacy belangrijk vindt of een hekel hebt aan upsells. Kies **Headspace** als je een begeleid traject met meer variatie wilt en daar graag voor betaalt. Veel mensen beginnen met Medito en nemen pas later een abonnement op een app als ze meer structuur willen. Voor andere opties, zie [onze ranglijst van meditatie-apps](/reviews/compare/best-meditation-apps-2026) en [Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer), nog een sterk en goedkoop alternatief.\n\n## Wat het bewijs zegt\n\nMeditatie-apps zijn onderzocht in gerandomiseerde studies, meestal korte, met gemiddeld bescheiden voordelen voor stress en stemming en grote verschillen tussen mensen. Headspace heeft onderzoek naar zijn eigen programma's gefinancierd en gepubliceerd, wat in zijn voordeel spreekt. Medito heeft geen vergelijkbaar eigen onderzoek, maar de basisoefeningen die het aanleert zijn van het soort dat studies onderzoeken. Geen van beide apps is een behandeling voor een psychische aandoening.\n\n## Conclusie\n\nAls gratis alternatief voor Headspace is **Medito** de meest opgeruimde keuze: geen kosten, geen advertenties, geen account. **Headspace** blijft de betere leraar voor beginners die structuur willen en bereid zijn ongeveer $70 per jaar te betalen. Zie de volledige [Medito-review](/reviews/medito) en [Headspace-review](/reviews/headspace) voor de scores."
+    },
+    "hostage-tape-vs-dream-recovery-mouth-tape": {
+      "title": "Hostage Tape vs Dream Recovery Mouth Tape (2026)",
+      "description": "Hostage Tape vs Dream Recovery — virale biohacker-acryltape tegenover premium herbruikbare mondtape van siliconengel. ONDA ontleedt het premiumduel.",
+      "intro": "Hostage Tape en Dream Recovery zijn de twee premium biohacker-mondtapes die gebruikers met elkaar vergelijken. Het bepalende verschil: Hostage Tape gebruikt acryllijm die is ontwikkeld voor grip op een baard; Dream Recovery gebruikt siliconengel voor zachter huidcontact en een herbruikbaar ontwerp.",
+      "verdict": "Hechting bij een baard tegenover een gevoelige huid. Hostage Tape voor baardvriendelijke acryllijm en abonnementsgemak. Dream Recovery voor verdraagzaamheid van siliconengel bij een gevoelige huid en een herbruikbaar ontwerp.",
+      "bestForA": "Kies Hostage Tape als je een baard hebt en handige mondtape met acryllijm op abonnement wilt.",
+      "bestForB": "Kies Dream Recovery als je een gevoelige huid hebt en premium herbruikbare mondtape van siliconengel wilt.",
+      "axes": [
+        {
+          "name": "Hechting bij een baard",
+          "note": "Hostage Tape: acryl ontwikkeld voor stoppels. Dream Recovery: siliconengel grijpt baarden niet vast."
+        },
+        {
+          "name": "Gevoelige huid",
+          "note": "Dream Recovery: siliconengel is de zachtste in de categorie. Hostage Tape: acryllijm geeft matige huidreacties bij gevoelige gebruikers."
+        },
+        {
+          "name": "Herbruikbaarheid",
+          "note": "Dream Recovery: 2-3 keer per strip van siliconengel. Hostage Tape: wegwerp, eenmalig gebruik."
+        },
+        {
+          "name": "Abonnementsgemak",
+          "note": "Hostage Tape: abonnement van $13 per maand. Dream Recovery: aankoop per verpakking."
+        },
+        {
+          "name": "Veiligheidsmechanisme",
+          "note": "Beide ontwerpen sluiten volledig af; Hostage Tape heeft een uitsparing in de hoek, die niet is getest als veiligheidsvoorziening. Als slaapapneu mogelijk is, ga dan eerst naar een arts."
+        },
+        {
+          "name": "Regelgevende status",
+          "note": "Beide door het merk gefinancierde studies, geen FDA-registratie. Vergelijkbare onderbouwing."
+        },
+        {
+          "name": "Kosten per nacht",
+          "note": "Hostage Tape: ~$0.43 per nacht. Dream Recovery: effectief ~$1 per nacht met hergebruik. Hostage Tape is goedkoper."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hostage Tape of Dream Recovery — welke is beter?",
+          "a": "Bij een baard of voor abonnementsgemak — Hostage Tape. Bij een gevoelige huid of een voorkeur voor premium siliconengel — Dream Recovery. Verschillende uitgangspunten over de chemie van de lijm."
+        },
+        {
+          "q": "Is siliconengel echt zachter?",
+          "a": "Bij een gevoelige huid wel — lijmen van siliconengel zijn gedocumenteerd als zachter dan acryl bij dagelijks gebruik. Voor gebruikers zonder gevoelige huid is het verschil marginaal."
+        },
+        {
+          "q": "Herbruikbaar of wegwerp — maakt het uit?",
+          "a": "Voor het milieu — de herbruikbare siliconengel van Dream Recovery is duidelijk beter dan de wegwerptape van Hostage Tape. Qua kosten per nacht komen ze uiteindelijk vergelijkbaar uit; herbruikbaarheid is het bijkomende voordeel."
+        },
+        {
+          "q": "Vergelijking van de jaarlijkse kosten?",
+          "a": "Hostage Tape: ~$156 per jaar met abonnement. Dream Recovery: ~$365 per jaar per verpakking. Hostage Tape is per jaar duidelijk goedkoper."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn premium mondtapes met verschillende uitgangspunten voor de lijm. Hostage Tape is baardvriendelijke acryl met abonnementsgemak. Dream Recovery is siliconengel voor een gevoelige huid, met herbruikbaarheid.\n\n## Wanneer is Hostage Tape de juiste keuze?\n\nAls je een baard hebt of abonnementsgemak wilt — de acryllijm van Hostage Tape past dan het best, tegen lagere jaarlijkse kosten.\n\n## Wanneer is Dream Recovery de juiste keuze?\n\nAls je een gevoelige huid hebt of een premium herbruikbaar ontwerp van siliconengel wilt — dan past Dream Recovery het best. Zachtere lijm, herbruikbare strips, geen abonnementsverplichting."
+    },
+    "hostage-tape-vs-somnifix": {
+      "title": "Hostage Tape vs Somnifix (2026)",
+      "description": "Hostage Tape vs Somnifix — het virale biohackermerk van 2026 tegenover de oorspronkelijke FDA-geregistreerde medische mondtape. ONDA ontleedt de top twee.",
+      "intro": "Hostage Tape en Somnifix zijn de twee mondtapes die gebruikers vergelijken bij de keuze voor een premium hulpmiddel voor neusademhaling. Het bepalende verschil: Hostage Tape zet in op baardvriendelijke acryllijm en abonnementsgemak; Somnifix zet in op een FDA-geregistreerd poreus ontwerp en jarenlange medische geloofwaardigheid.",
+      "verdict": "Baardvriendelijkheid tegenover medische geloofwaardigheid. Hostage Tape voor baardvriendelijke acryllijm en abonnementsgemak. Somnifix voor een FDA-geregistreerd poreus ontwerp.",
+      "bestForA": "Kies Hostage Tape als je een baard hebt en handige biohacker-mondtape op abonnement wilt.",
+      "bestForB": "Kies Somnifix als je FDA-geregistreerde mondtape met medische geloofwaardigheid en een poreus ontwerp wilt.",
+      "axes": [
+        {
+          "name": "Hechting bij een baard",
+          "note": "Hostage Tape: speciaal ontwikkeld voor baardstoppels. Somnifix: lijm ontwikkeld voor contact met schone huid; glijdt weg bij een baard."
+        },
+        {
+          "name": "Veiligheidsmechanisme",
+          "note": "Somnifix: poreus ontwerp met ademopening in het midden. Hostage Tape: volledige afsluiting met uitsparing in de hoek. Geen van beide ontwerpen is getest als veiligheidsvoorziening; als slaapapneu mogelijk is, ga dan eerst naar een arts."
+        },
+        {
+          "name": "Regelgevende status",
+          "note": "Somnifix: FDA-geregistreerd medisch hulpmiddel. Hostage Tape: door het merk gefinancierde studies, geen FDA-registratie."
+        },
+        {
+          "name": "Naamsbekendheid",
+          "note": "Hostage Tape: viraal biohackermerk van 2025–2026. Somnifix: gevestigd maar stiller origineel van de categorie."
+        },
+        {
+          "name": "Huidverdraagzaamheid",
+          "note": "Beide hypoallergene lijmen van medische kwaliteit. Vergelijkbare percentages huidreacties op grote schaal."
+        },
+        {
+          "name": "Abonnementsgemak",
+          "note": "Hostage Tape: abonnement van $13 per maand, nooit zonder voorraad. Somnifix: aankoop per verpakking."
+        },
+        {
+          "name": "Kosten per nacht",
+          "note": "Hostage Tape: ~$0.43 per nacht. Somnifix: ~$0.90 per nacht. Hostage Tape ~50% goedkoper."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hostage Tape of Somnifix — welke is beter?",
+          "a": "Voor gebruikers met een baard of die abonnementsgemak willen — Hostage Tape. Voor wie een FDA-geregistreerd poreus ontwerp wil — Somnifix. Verschillende uitgangspunten over wat telt bij mondtape."
+        },
+        {
+          "q": "Is Somnifix veiliger dan Hostage Tape?",
+          "a": "Niet aangetoond. De poreuze opening van Somnifix en de uitsparing in de hoek van Hostage Tape laten allebei een deel van de lippen vrij, maar geen van beide is getest als veiligheidsvoorziening. Veiligheid hangt af van een vrije neus en geen onbehandelde slaapapneu — als slaapapneu mogelijk is, ga dan eerst naar een arts."
+        },
+        {
+          "q": "Blijft Hostage Tape echt zitten met een baard?",
+          "a": "Ja — acryllijm die speciaal is ontwikkeld voor grip op stoppels. Baardvriendelijkheid is het onderscheid in de consumentenfeedback ten opzichte van Somnifix en doe-het-zelfalternatieven."
+        },
+        {
+          "q": "Totale jaarlijkse kosten?",
+          "a": "Hostage Tape: ~$156 per jaar (abonnement). Somnifix: ~$330 per jaar (per verpakking). Hostage Tape is per jaar ~50% goedkoper."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn premium mondtapes. Hostage Tape is het virale biohackermerk met baardvriendelijke techniek. Somnifix is het FDA-geregistreerde medische origineel.\n\n## Wanneer is Hostage Tape de juiste keuze?\n\nAls je een baard hebt of abonnementsgemak en baardvriendelijke acryllijm wilt — dan past Hostage Tape het best, tegen lagere jaarlijkse kosten.\n\n## Wanneer is Somnifix de juiste keuze?\n\nAls je een FDA-geregistreerd poreus ontwerp met jarenlange medische geloofwaardigheid wilt — dan past Somnifix het best. Als slaapapneu mogelijk is, ga dan eerst naar een arts."
+    },
+    "hostage-tape-vs-intake-breathing": {
+      "title": "Hostage Tape vs Intake Breathing (2026)",
+      "description": "Hostage Tape vs Intake Breathing — mondtape tegenover een externe magnetische neusspreider. ONDA vergelijkt de mond afsluiten met de neus verwijden.",
+      "intro": "Hostage Tape en Intake Breathing staan voor de twee tegenovergestelde manieren om 's nachts neusademhaling af te dwingen. Hostage Tape sluit de mond af, zodat je alleen door je neus kunt ademen. Intake Breathing verwijdt de neusgaten mechanisch, zodat neusademhaling de weg van de minste weerstand wordt.",
+      "verdict": "Verschillende mechanismen voor hetzelfde doel. Hostage Tape voor wie vastbesloten is de mond af te sluiten en het gemak van een biohackermerk wil. Intake Breathing voor wie niet aan mondtape kan wennen en in plaats daarvan de neusweg wil openen.",
+      "bestForA": "Kies Hostage Tape als je neusademhaling wilt afdwingen door de mond af te sluiten — de directe aanpak, met abonnementsgemak.",
+      "bestForB": "Kies Intake Breathing als je niet aan mondtape kunt wennen en neusademhaling makkelijker wilt maken door mechanische verwijding van de neusgaten.",
+      "axes": [
+        {
+          "name": "Mechanisme",
+          "note": "Hostage Tape: afsluiten van de mond dwingt neusademhaling af. Intake: mechanische verwijding van de neusgaten maakt neusademhaling makkelijker. Hetzelfde doel, tegenovergestelde aanpak."
+        },
+        {
+          "name": "Gewenning",
+          "note": "Intake: comfortabel vanaf de eerste nacht. Hostage Tape: de meeste gebruikers wennen binnen 1-2 weken; sommigen verdragen volledige afsluiting van de mond nooit."
+        },
+        {
+          "name": "Veiligheidszorgen",
+          "note": "Hostage Tape: niet bij een verstopte neus of onbehandelde slaapapneu. Intake: neusspreiders kunnen ook snurken dempen en mogelijke slaapapneu verbergen — als apneu mogelijk is, ga dan eerst naar een arts."
+        },
+        {
+          "name": "Merkuitstraling / gemak",
+          "note": "Hostage Tape: abonnementsgemak, viraal biohackermerk. Intake: premiumpositionering, minder biohackerhype."
+        },
+        {
+          "name": "Jaarlijkse kosten",
+          "note": "Hostage Tape: ~$156 per jaar. Intake: ~$240 per jaar aan doorlopende plaatjes. Hostage Tape is goedkoper."
+        },
+        {
+          "name": "Effectiviteit voor overtuigde gebruikers",
+          "note": "Hostage Tape: dwingt neusademhaling volledig af. Intake: maakt neusademhaling makkelijker, maar voorkomt mondademhaling niet als de gebruiker de mond opent."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Mondtape of neusspreider — welke aanpak is beter?",
+          "a": "Verschillende problemen. Mondtape (Hostage Tape) dwingt neusademhaling af door de mond af te sluiten. Een neusspreider (Intake) verwijdt de neusweg, zodat mondademhaling niet de makkelijkere optie is. Veel gebruikers beginnen alleen met een neusspreider en voegen mondtape toe zodra neusademhaling comfortabel voelt."
+        },
+        {
+          "q": "Kan ik beide gebruiken?",
+          "a": "Ja — en veel overtuigde gebruikers doen dat. Een neusspreider (Intake) maakt de luchtstroom door de neus makkelijker, mondtape (Hostage Tape) voorkomt dat je terugvalt in mondademhaling. Gecombineerde kosten: ~$396 per jaar."
+        },
+        {
+          "q": "Welke is veiliger?",
+          "a": "Geen van beide vervangt een onderzoek naar slaapapneu. Mondtape is niet geschikt bij een verstopte neus of onbehandelde slaapapneu. Neusspreiders kunnen ook snurken dempen en mogelijke slaapapneu verbergen — als apneu mogelijk is, ga dan eerst naar een arts."
+        },
+        {
+          "q": "Wat moet ik eerst proberen?",
+          "a": "Intake Breathing — comfortabel vanaf de eerste nacht en het maakt neusademhaling makkelijker zonder de mond af te sluiten. Neusspreiders kunnen ook snurken dempen en mogelijke slaapapneu verbergen — als apneu mogelijk is, ga dan eerst naar een arts."
+        }
+      ],
+      "content": "## De korte versie\n\nTwee tegenovergestelde benaderingen van neusademhaling. Hostage Tape dwingt die af door de mond af te sluiten. Intake maakt die makkelijker door de neusgaten te verwijden. Verschillende mechanismen; ze zijn te combineren.\n\n## Wanneer is Hostage Tape de juiste keuze?\n\nAls je vastbesloten bent neusademhaling af te dwingen door de mond af te sluiten en je slaapapneu hebt laten uitsluiten — dan past Hostage Tape het best. Direct mechanisme, abonnementsgemak.\n\n## Wanneer is Intake Breathing de juiste keuze?\n\nAls je niet aan mondtape kunt wennen — dan past Intake het best. Comfortabel vanaf de eerste nacht, maakt neusademhaling makkelijker zonder die af te dwingen. Neusspreiders kunnen ook snurken dempen en mogelijke slaapapneu verbergen — als apneu mogelijk is, ga dan eerst naar een arts."
+    },
+    "hostage-tape-vs-somnifix-vs-intake-breathing": {
+      "title": "Hostage Tape vs Somnifix vs Intake Breathing (2026)",
+      "description": "Hostage Tape vs Somnifix vs Intake Breathing — de drie bepalende hulpmiddelen voor neusademhaling vergeleken: biohacker-mondtape, FDA-geregistreerde mondtape, magnetische neusspreider.",
+      "intro": "De drie hulpmiddelen voor neusademhaling die de categorie in 2026 bepalen. Hostage Tape — virale biohacker-mondtape met baardvriendelijke acryllijm. Somnifix — FDA-geregistreerde poreuze mondtape met ademopening in het midden. Intake Breathing — premium externe magnetische neusspreider (aanbevolen door James Nestor).",
+      "verdict": "Drie verschillende uitgangspunten, drie verschillende juiste antwoorden. Hostage Tape voor baardvriendelijke biohacker-afsluiting van de mond. Somnifix voor een FDA-geregistreerd poreus ontwerp. Intake Breathing voor premium externe magnetische verwijding.",
+      "bestForA": "Kies Hostage Tape als je baardvriendelijke mondtape van een biohackermerk met abonnementsgemak wilt.",
+      "bestForB": "Kies Somnifix als je FDA-geregistreerde mondtape met medische geloofwaardigheid en een poreus ontwerp wilt.",
+      "bestForC": "Kies Intake Breathing als je niet aan mondtape kunt wennen en in plaats daarvan premium externe magnetische neusverwijding wilt.",
+      "axes": [
+        {
+          "name": "Mechanisme",
+          "note": "Hostage Tape: mondtape met volledige afsluiting. Somnifix: poreuze mondtape met ademopening. Intake: externe magnetische neusverwijding. Verschillende mechanismen; alle drie sturen aan op neusademhaling."
+        },
+        {
+          "name": "Regelgevende status",
+          "note": "Somnifix: FDA-geregistreerd medisch hulpmiddel. Hostage Tape en Intake: door het merk gefinancierde studies. Somnifix wint."
+        },
+        {
+          "name": "Veiligheid / slaapapneu",
+          "note": "Van geen van de drie is aangetoond dat ze veilig zijn bij slaapapneu. Somnifix (poreuze opening) en Hostage Tape (uitsparing in de hoek): ontwerpen niet getest als veiligheidsvoorziening; niet bij een verstopte neus. Intake: neusspreiders kunnen ook snurken dempen en mogelijke slaapapneu verbergen — als apneu mogelijk is, ga dan eerst naar een arts."
+        },
+        {
+          "name": "Baardvriendelijkheid",
+          "note": "Hostage Tape: beste hechting bij een baard in de categorie. Somnifix en Intake: niet ontwikkeld voor baarden."
+        },
+        {
+          "name": "Abonnementsgemak",
+          "note": "Hostage Tape: abonnement van $13 per maand. Somnifix en Intake: aankoop per verpakking."
+        },
+        {
+          "name": "Gewenningsperiode",
+          "note": "Intake: comfortabel vanaf de eerste nacht. Hostage Tape: 1-2 weken gewenning. Somnifix: poreus ontwerp went makkelijker dan volledige afsluiting, maar vraagt nog steeds gewenning."
+        },
+        {
+          "name": "Jaarlijkse kosten",
+          "note": "Hostage Tape: ~$156 per jaar. Intake: ~$240 per jaar. Somnifix: ~$330 per jaar. Hostage Tape is het goedkoopst."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Welk hulpmiddel voor neusademhaling moet ik in 2026 kopen?",
+          "a": "Drie vragen geven de doorslag. Baard + abonnementsgemak? Hostage Tape. FDA-geregistreerde medische geloofwaardigheid met een poreus ontwerp? Somnifix. Kun je niet aan mondtape wennen? Intake Breathing."
+        },
+        {
+          "q": "Hostage Tape of Intake — wat is het betere startpunt?",
+          "a": "Intake is comfortabel vanaf de eerste nacht; mondtape vraagt gewenning en is niet geschikt bij een verstopte neus. Neusspreiders kunnen ook snurken dempen en mogelijke slaapapneu verbergen — als apneu mogelijk is, ga dan eerst naar een arts."
+        },
+        {
+          "q": "Kan ik alle drie combineren?",
+          "a": "Er is geen reden om twee mondtapes te combineren. Veelgebruikte combinatie: Intake Breathing voor neusverwijding + één mondtape (Hostage Tape of Somnifix) om de mond af te sluiten. Gecombineerde jaarlijkse kosten: ~$396–$570."
+        },
+        {
+          "q": "Welke heeft de sterkste onderbouwing?",
+          "a": "Somnifix qua regelgevende status (FDA-registratie). Intake qua werkingsmechanisme (aanbeveling van James Nestor, studies naar magnetische verwijding). Hostage Tape qua omvang van de consumentenfeedback."
+        },
+        {
+          "q": "Vergelijking van de jaarlijkse kosten?",
+          "a": "Hostage Tape: ~$156 per jaar. Intake Breathing: ~$240 per jaar. Somnifix: ~$330 per jaar. Hostage Tape is met duidelijke afstand het goedkoopst; Somnifix is het duurst, maar heeft de sterkste regelgevende status."
+        }
+      ],
+      "content": "## De korte versie\n\nDrie hulpmiddelen voor neusademhaling die de categorie bepalen, drie verschillende uitgangspunten. Hostage Tape = baardvriendelijke biohacker-afsluiting van de mond. Somnifix = FDA-geregistreerde poreuze mondtape. Intake = premium externe neusspreider.\n\n## Wanneer is Hostage Tape de juiste keuze?\n\nAls je een baard hebt en handige biohacker-mondtape op abonnement wilt — dan past Hostage Tape het best, tegen de laagste jaarlijkse kosten.\n\n## Wanneer is Somnifix de juiste keuze?\n\nAls je FDA-geregistreerde medische geloofwaardigheid met een poreus ontwerp wilt — dan past Somnifix het best. Jarenlange staat van dienst.\n\n## Wanneer is Intake Breathing de juiste keuze?\n\nAls je niet aan mondtape kunt wennen — dan past Intake het best. Premium externe magnetische verwijding, aanbevolen door James Nestor. Neusspreiders kunnen ook snurken dempen en mogelijke slaapapneu verbergen — als apneu mogelijk is, ga dan eerst naar een arts."
+    },
+    "intake-breathing-vs-breathe-right-original": {
+      "title": "Intake Breathing vs Breathe Right Original (2026)",
+      "description": "Intake Breathing vs Breathe Right Original — premium magnetische externe neusspreider tegenover de veerstrip van de drogist. ONDA ontleedt het duel.",
+      "intro": "Intake Breathing en Breathe Right Original zijn de twee externe neusspreiders die gebruikers vergelijken. Beide worden aan de buitenkant van de neus bevestigd. Het bepalende verschil: Intake gebruikt magnetische verwijding met vervangbare kleefplaatjes; Breathe Right gebruikt passieve veerspanning via een wegwerpkleefstrip.",
+      "verdict": "Premiummechanisme tegenover drogisterijprijzen. Intake Breathing voor sterkere magnetische verwijding en een herbruikbaar ontwerp. Breathe Right voor tientallen jaren staat van dienst met FDA-goedkeuring voor $0.33 per nacht.",
+      "bestForA": "Kies Intake Breathing als je sterkere externe neusverwijding wilt met een herbruikbare magnetische band en een merk dat James Nestor aanbeveelt.",
+      "bestForB": "Kies Breathe Right Original als je de FDA-goedgekeurde drogisterijreferentie wilt tegen de laagste kosten per nacht — de eerste neusspreider om te proberen.",
+      "axes": [
+        {
+          "name": "Sterkte van het mechanisme",
+          "note": "Intake: magnetische verwijding — sterkere hefboom. Breathe Right: passieve veerspanning via een plastic strip — zwakker."
+        },
+        {
+          "name": "Regelgevende status",
+          "note": "Breathe Right: FDA-goedgekeurd met tientallen jaren staat van dienst. Intake: door het merk gefinancierde studies, geen FDA Klasse II."
+        },
+        {
+          "name": "Herbruikbaarheid",
+          "note": "Intake: herbruikbare magnetische band met vervangbare kleefplaatjes. Breathe Right: wegwerp, eenmalig gebruik."
+        },
+        {
+          "name": "Huidverdraagzaamheid",
+          "note": "Intake: kleine plaatjes beperken het kleefcontact. Breathe Right: grotere strip met meer kleefoppervlak; matige meldingen van huidirritatie."
+        },
+        {
+          "name": "Verkrijgbaarheid",
+          "note": "Breathe Right: overal bij de drogist. Intake: alleen rechtstreeks bij het merk of via Amazon."
+        },
+        {
+          "name": "Kosten per nacht",
+          "note": "Breathe Right: ~$0.33 per nacht. Intake: doorlopend ~$0.65 per nacht. Breathe Right ~50% goedkoper."
+        },
+        {
+          "name": "Aanbeveling",
+          "note": "Intake: uitdrukkelijke aanbeveling van James Nestor in Breath. Breathe Right: algemeen drogisterijmerk zonder aanbeveling uit de biohackerwereld."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Intake of Breathe Right — welke is beter?",
+          "a": "Intake wint op sterkte van het mechanisme, herbruikbaarheid en de aanbeveling van James Nestor. Breathe Right wint op staat van dienst met FDA-goedkeuring en de laagste kosten per nacht. Verschillende lagen."
+        },
+        {
+          "q": "Moet ik eerst Breathe Right proberen?",
+          "a": "Ja — Breathe Right is met $0.33 per nacht de manier met de minste verplichting om te testen of externe neusverwijding je helpt. Werkt het, mooi; wil je krachtigere verwijding, stap dan over op Intake of Mute."
+        },
+        {
+          "q": "Waarom raadt James Nestor juist Intake aan?",
+          "a": "Het magnetische mechanisme geeft sterkere verwijding dan de passieve veerspanning van Breathe Right. Het boek Breath van Nestor legt de nadruk op het optimaliseren van de neusweg; Intake past bij die gedachte."
+        },
+        {
+          "q": "Vergelijking van de jaarlijkse kosten?",
+          "a": "Breathe Right: ~$120 per jaar. Intake Breathing: ~$240 per jaar (starterspakket + vervangende plaatjes). Breathe Right is per jaar ~50% goedkoper."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn externe neusspreiders. Intake is een premium magnetisch, herbruikbaar ontwerp. Breathe Right is de FDA-goedgekeurde standaard van de drogist.\n\n## Wanneer is Intake Breathing de juiste keuze?\n\nAls je sterkere externe magnetische verwijding wilt, met een herbruikbaar ontwerp en de aanbeveling van James Nestor — dan past Intake het best. Externe neusspreider uit de premiumlaag.\n\n## Wanneer is Breathe Right Original de juiste keuze?\n\nAls je de FDA-goedgekeurde drogisterijreferentie wilt tegen de laagste kosten per nacht — dan past Breathe Right het best. Probeer dit eerst, voordat je kiest voor premiumalternatieven."
+    },
+    "intake-breathing-vs-mute-nasal-dilator": {
+      "title": "Intake Breathing vs Mute Nasal Dilator (2026)",
+      "description": "Intake Breathing vs Mute Nasal Dilator — premium externe magnetische neusspreider tegenover een klinische interne stent. ONDA ontleedt het premiumduel.",
+      "intro": "Intake Breathing en Mute Nasal Dilator zijn de twee premium neusspreiders die gebruikers vergelijken als externe strips niet genoeg zijn. Het bepalende verschil: Intake verwijdt extern en magnetisch (zichtbaar op het gezicht); Mute is een interne polymeer stent (onzichtbaar, maar wordt in de neusgaten geplaatst).",
+      "verdict": "Zichtbaarheid aan de buitenkant tegenover verdraagbaarheid aan de binnenkant. Intake Breathing voor externe magnetische verwijding zonder iets in de neus te plaatsen. Mute voor een onzichtbare interne stent met de sterkste mechanische werking en gepubliceerde klinische luchtstroomstudies.",
+      "bestForA": "Kies Intake Breathing als je premium externe magnetische neusverwijding wilt zonder iets in de neus te plaatsen.",
+      "bestForB": "Kies Mute Nasal Dilator als je interne hulpmiddelen verdraagt en mechanische verwijding met klinische onderbouwing en de sterkste werking wilt.",
+      "axes": [
+        {
+          "name": "Sterkte van het mechanisme",
+          "note": "Mute: interne polymeer stent — de meest directe mechanische verwijding. Intake: externe magnetische hefboom — minder direct, maar toch effectief."
+        },
+        {
+          "name": "Klinisch bewijs",
+          "note": "Mute: gepubliceerde klinische luchtstroomstudies van Rhinomed. Intake: door het merk gefinancierde studies + aanbeveling van James Nestor."
+        },
+        {
+          "name": "Zichtbaarheid",
+          "note": "Mute: van buitenaf onzichtbaar. Intake: zichtbare magnetische band over de neusgaten."
+        },
+        {
+          "name": "Gewenning in het begin",
+          "note": "Intake: kleefplaatjes, comfortabel vanaf de eerste nacht. Mute: gewenning aan plaatsing in de neus over 3-5 nachten."
+        },
+        {
+          "name": "Verdraagbaarheid bij verschillende anatomieën",
+          "note": "Intake: extern, past bij de meeste gebruikers. Mute: intern, een deel van de gebruikers went er nooit aan; vereist een maatset."
+        },
+        {
+          "name": "Herbruikbaarheid",
+          "note": "Intake: herbruikbare magnetische band, vervangbare kleefplaatjes. Mute: wegwerp na 1 week per stent."
+        },
+        {
+          "name": "Jaarlijkse kosten",
+          "note": "Mute: ~$435 per jaar. Intake: ~$240 per jaar aan doorlopende plaatjes. Intake is per jaar duidelijk goedkoper."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Intake Breathing of Mute — welke is beter?",
+          "a": "Verschillende uitgangspunten. Intake wint op extern comfort, geen plaatsing in de neus en lagere jaarlijkse kosten. Mute wint op de sterkste werking en gepubliceerd klinisch bewijs. Kies op basis van hoe goed je interne hulpmiddelen verdraagt."
+        },
+        {
+          "q": "Moet Mute echt in de neus worden geplaatst?",
+          "a": "Ja — de polymeer stent wordt in de neusgaten geplaatst en houdt de luchtweg van binnenuit open. De meeste gebruikers wennen binnen 3-5 nachten; een deel verdraagt interne hulpmiddelen nooit comfortabel."
+        },
+        {
+          "q": "Welke heeft beter klinisch bewijs?",
+          "a": "Mute — Rhinomed heeft luchtstroomstudies over dit specifieke hulpmiddel gepubliceerd. Intake heeft door het merk gefinancierde studies + de aanbeveling van James Nestor, maar minder peer-reviewed diepgang."
+        },
+        {
+          "q": "Kan ik beide proberen?",
+          "a": "Ja — beide hebben starterspakketten. Probeer eerst Intake (geen plaatsing in de neus nodig) en daarna Mute als externe verwijding onvoldoende voelt."
+        }
+      ],
+      "content": "## De korte versie\n\nBeide zijn premium neusspreiders. Intake is extern en magnetisch. Mute is een interne polymeer stent. Verschillende mechanismen; verschillende profielen qua verdraagbaarheid.\n\n## Wanneer is Intake Breathing de juiste keuze?\n\nAls je premium externe magnetische verwijding wilt zonder iets in de neus te plaatsen — dan past Intake het best. Comfortabel vanaf de eerste nacht, lagere jaarlijkse kosten, aanbevolen door James Nestor.\n\n## Wanneer is Mute Nasal Dilator de juiste keuze?\n\nAls je interne hulpmiddelen verdraagt en de sterkste werking met gepubliceerde klinische luchtstroomstudies wilt — dan past Mute het best. Van buitenaf onzichtbaar, de meest directe mechanische verwijding."
     }
   }
 }

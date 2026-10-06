@@ -107,12 +107,12 @@ export const MOUTH_TAPE_SAFETY: Record<Lang, MouthTapeSafetyCopy> = {
   },
   pt: {
     title: 'Segurança em primeiro lugar',
-    nose: 'Não feche a boca com fita se não consegue respirar livremente pelo nariz, por exemplo com constipação, alergia, pólipos nasais ou desvio de septo. Há risco de asfixia.',
-    apnea: 'Possível apneia do sono (ressonar alto, engasgos ou sufoco durante a noite, pausas na respiração notadas pelo parceiro, sonolência durante o dia)? Consulte primeiro um médico: a fita bucal e os dilatadores nasais podem reduzir o ressonar e esconder o sinal de alerta sem tratar a causa.',
+    nose: 'Não feche a boca com fita se você não consegue respirar livremente pelo nariz, por exemplo com resfriado, alergia, pólipos nasais ou desvio de septo. Há risco de asfixia.',
+    apnea: 'Possível apneia do sono (ronco alto, engasgos ou sufocamento durante a noite, pausas na respiração notadas pelo parceiro, sonolência durante o dia)? Consulte um médico primeiro: a fita bucal e os dilatadores nasais podem reduzir o ronco e esconder o sinal de alerta sem tratar a causa.',
     alcohol: 'Não depois de álcool ou comprimidos para dormir.',
     children: 'Não em crianças, salvo indicação médica.',
-    sick: 'Não se tiver náuseas, puder vomitar ou tiver refluxo à noite.',
-    stop: 'Pare e consulte um médico se acordar sem ar, em pânico ou com dor de cabeça.',
+    sick: 'Não use se estiver com náusea, puder vomitar ou tiver refluxo à noite.',
+    stop: 'Pare e consulte um médico se você acordar sem ar, em pânico ou com dor de cabeça.',
     link: 'O que mostra a evidência — e quais são os riscos →',
   },
   nl: {

@@ -1318,6 +1318,503 @@
     "headspace": {
       "verdict": "O melhor app para realmente aprender a meditar — cursos estruturados e ensino claro, com um plano grátis que mal passa de uma amostra.",
       "productType": "App de meditação"
+    },
+    "ayo-sleep-tape": {
+      "verdict": "A melhor fita bucal hipoalergênica K-beauty: adesivo coreano gentil com a pele, preço acessível. Distribuição ocidental limitada.",
+      "summary": "A AYO Sleep Tape é a opção coreana K-beauty: fita bucal de peça única com adesivo hipoalergênico desenvolvido segundo os padrões de sensibilidade da pele asiática sensível. Preço acessível, distribuição ocidental em crescimento pela Amazon. Ótimos relatos de tolerância da pele; marca mais nova no mercado ocidental do que Hostage Tape ou Somnifix.",
+      "description": "Análise da ONDA da AYO Sleep Tape: fita bucal coreana K-beauty, hipoalergênica, de peça única. Avaliada em adesão, mecanismo, segurança e custo-benefício.",
+      "bestFor": "Ideal para quem tem pele sensível e quer uma fita bucal hipoalergênica K-beauty de preço intermediário: adesão suave acima do acabamento de marca ocidental.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto AYO e de avaliações de consumidores ocidentais na Amazon em 2026. Não testada na prática pela ONDA.",
+      "productType": "Fita bucal coreana hipoalergênica de peça única",
+      "pros": [
+        "Adesivo hipoalergênico K-beauty, gentil com a pele sensível",
+        "Preço acessível de US$ 0,50 por noite",
+        "Disponível em vários formatos",
+        "Distribuição ocidental em crescimento pela Amazon"
+      ],
+      "cons": [
+        "Registro na FDA ocidental e validação revisada por pares limitados",
+        "Menos adequada para barba do que a Hostage Tape",
+        "Marca menos conhecida que as líderes ocidentais da categoria",
+        "Sem modelo de assinatura"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Adesivo hipoalergênico coreano K-beauty: suave, pouco irritante. Aderência menos agressiva que a da Hostage Tape; tem dificuldade com barba.",
+        "breathing-mechanism": "Vedação completa em peça única. Sem variante porosa.",
+        "evidence-grounding": "Credibilidade no mercado K-beauty; registro na FDA ocidental ou validação revisada por pares limitados.",
+        "form-factor": "Tira de peça única, fácil de aplicar. Disponível em vários formatos.",
+        "material-safety": "Certificação hipoalergênica coreana K-beauty: entre as mais suaves da categoria. A melhor para pele sensível.",
+        "value": "~US$ 15 por 30 tiras = ~US$ 0,50 por noite. Preço intermediário com a tolerância de pele K-beauty."
+      },
+      "content": "## Onde ela se destaca\n\nA AYO Sleep Tape é a opção hipoalergênica K-beauty entre as fitas bucais: adesivo coreano pensado para os padrões de pele sensível asiática, preço acessível, distribuição ocidental em crescimento.\n\n## Quais são as desvantagens da AYO Sleep Tape?\n\nValidação ocidental e reconhecimento da marca. A AYO tem credibilidade no mercado K-beauty, mas registro na FDA ocidental e validação revisada por pares limitados. A marca é menos conhecida que Hostage Tape ou Somnifix.\n\n## Quem deve comprar a AYO Sleep Tape?\n\nEscolha a AYO Sleep Tape se você tem pele sensível e quer uma fita bucal hipoalergênica K-beauty de preço intermediário. Para uma marca biohacker ocidental, Hostage Tape. Para um design poroso registrado na FDA, Somnifix. Para silicone premium, Dream Recovery.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "A AYO Sleep Tape vale a pena?",
+          "a": "Sim, se você tem pele sensível. A AYO Sleep Tape usa um adesivo hipoalergênico K-beauty com ótimos relatos de tolerância da pele, por cerca de US$ 0,50 por noite. Ela é menos atraente se você quer registro na FDA ocidental, validação revisada por pares ou uma fita adequada para barba como a Hostage Tape."
+        },
+        {
+          "q": "Quanto custa a AYO Sleep Tape?",
+          "a": "A AYO Sleep Tape custa cerca de US$ 15 por um pacote de 30 tiras, o que dá aproximadamente US$ 0,50 por noite. Ela é vendida com distribuição ocidental em crescimento pela Amazon e não há modelo de assinatura, então você recompra os pacotes manualmente."
+        },
+        {
+          "q": "Quais são as desvantagens da AYO Sleep Tape?",
+          "a": "A AYO Sleep Tape tem registro na FDA ocidental e validação revisada por pares limitados, e é menos adequada para barba do que a Hostage Tape. A marca é menos conhecida que as líderes ocidentais da categoria e não há opção de assinatura para reposição automática."
+        },
+        {
+          "q": "AYO Sleep Tape ou Hostage Tape: qual é melhor?",
+          "a": "A AYO Sleep Tape é melhor para pele sensível; a Hostage Tape é melhor para quem tem barba. O adesivo hipoalergênico K-beauty da AYO é suave e custa cerca de US$ 0,50 por noite, mas é menos adequado para barba e a marca é mais nova no mercado ocidental do que a Hostage Tape."
+        }
+      ]
+    },
+    "dream-recovery-mouth-tape": {
+      "verdict": "A melhor fita bucal premium de gel de silicone: reutilizável, contato mais suave com a pele, posicionamento premium. Preço de assinatura sem a obrigação de assinar.",
+      "summary": "A Dream Recovery Mouth Tape é a opção premium de gel de silicone: tira de silicone reutilizável, com contato mais suave com a pele do que as alternativas de adesivo acrílico. Hipoalergênica, sem látex, vários usos por tira. Preço intermediário-alto sem obrigação de assinatura. Ideal para quem tem pele sensível, não tolera o adesivo acrílico da Hostage Tape, mas quer a experiência de uma marca premium.",
+      "description": "Análise da ONDA da Dream Recovery Mouth Tape: fita bucal premium de gel de silicone, reutilizável. Avaliada em adesão, mecanismo, evidências e custo-benefício.",
+      "bestFor": "Ideal para quem tem pele sensível e quer uma fita bucal premium de gel de silicone: adesão suave e reutilização acima do marketing da marca.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto Dream Recovery e de avaliações de usuários de 2026. Não testada na prática pela ONDA.",
+      "productType": "Fita bucal premium de gel de silicone",
+      "pros": [
+        "Adesivo de gel de silicone: o mais suave para pele sensível",
+        "Design reutilizável: 2-3 usos por tira",
+        "Sem obrigação de assinatura",
+        "Posicionamento de marca premium"
+      ],
+      "cons": [
+        "Sem registro na FDA: posição regulatória fraca",
+        "Menos adequada para barba do que o adesivo acrílico da Hostage Tape",
+        "Somente vedação completa: sem variante porosa",
+        "Marca mais nova que a Somnifix, sem histórico de vários anos"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "O adesivo de gel de silicone é mais suave com a pele do que o acrílico; boa adesão em pele limpa. Segura menos na barba do que a Hostage Tape: o gel de silicone não prende nos pelos curtos.",
+        "breathing-mechanism": "Design de vedação completa. Sem abertura porosa central. Pensado para quem está comprometido em respirar só pelo nariz.",
+        "evidence-grounding": "Pesquisas financiadas pela marca e depoimentos de biohackers. Sem registro na FDA. Posição regulatória mais fraca que a da Somnifix.",
+        "form-factor": "Tira de peça única com estrutura reutilizável de gel de silicone: 2–3 usos por tira na prática. Reduz de forma significativa o custo por noite.",
+        "material-safety": "Adesivo de gel de silicone: entre os mais suaves da categoria. Hipoalergênico, sem látex, poucos relatos de reação na pele. Ideal para pele sensível.",
+        "value": "~US$ 30 por 10 tiras × ~3 usos = ~US$ 1 por noite efetivo. Preço premium compensado pela reutilização."
+      },
+      "content": "## Onde ela se destaca\n\nA Dream Recovery Mouth Tape é a referência premium em gel de silicone: adesão suave, design reutilizável, posicionamento premium. Ideal para quem tem pele sensível e não tolera adesivos acrílicos.\n\n## Quais são as desvantagens da Dream Recovery Mouth Tape?\n\nAderência na barba e posição regulatória. O gel de silicone não segura os pelos da barba tão bem quanto o acrílico da Hostage Tape. Sem registro na FDA, ao contrário da Somnifix.\n\n## Quem deve comprar a Dream Recovery Mouth Tape?\n\nEscolha a Dream Recovery para pele sensível e uma fita bucal premium de gel de silicone. Para uma marca biohacker adequada para barba, Hostage Tape. Para um design poroso registrado na FDA, Somnifix. Para o faça-você-mesmo econômico, Nexcare Surgical Tape.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "A Dream Recovery Mouth Tape vale a pena?",
+          "a": "Sim, para pele sensível. A Dream Recovery usa um adesivo de gel de silicone, o mais suave para pele sensível, e cada tira pode ser reutilizada 2-3 vezes, sem obrigação de assinatura. Ela não tem registro na FDA e é menos adequada para barba do que a Hostage Tape."
+        },
+        {
+          "q": "Quanto custa a Dream Recovery Mouth Tape?",
+          "a": "A Dream Recovery Mouth Tape custa cerca de US$ 30 por um pacote de 10 tiras. Cada tira pode ser reutilizada cerca de 3 vezes, o que faz o pacote render mais, e não é preciso assinar nada para continuar comprando. As tiras são hipoalergênicas e sem látex."
+        },
+        {
+          "q": "Quais são as desvantagens da Dream Recovery Mouth Tape?",
+          "a": "A Dream Recovery não tem registro na FDA e é menos adequada para barba do que o adesivo acrílico da Hostage Tape. Ela existe apenas com vedação completa, sem variante porosa, e a marca não tem o histórico de vários anos da Somnifix."
+        },
+        {
+          "q": "Dream Recovery ou Hostage Tape: qual é melhor?",
+          "a": "A Dream Recovery é melhor para pele sensível; a Hostage Tape é melhor para quem tem barba. O adesivo de gel de silicone da Dream Recovery, reutilizável e hipoalergênico, é mais suave com a pele, enquanto o adesivo acrílico da Hostage Tape segura melhor na barba. A Dream Recovery também pode ser reutilizada 2-3 vezes por tira."
+        }
+      ]
+    },
+    "hostage-tape": {
+      "verdict": "A melhor fita bucal de marca biohacker: adesivo adequado para barba, design de peça única, preço por assinatura. Marketing financiado pela marca forte; base de evidências clínicas modesta.",
+      "summary": "A Hostage Tape é a fita bucal biohacker que viralizou em 2025–2026: design de peça única com vedação completa e adesivo hipoalergênico desenvolvido especificamente para aderir mesmo com barba curta. Assinatura de US$ 13 por mês, com a fita entregue todo mês. Marca muito focada em marketing (lutadores do UFC, podcasts biohacker) com evidências revisadas por pares modestas. A marca de consumo que definiu a categoria no momento da fita bucal de 2026.",
+      "description": "Análise da ONDA da Hostage Tape: a fita bucal biohacker viral, adequada para barba, por assinatura. Avaliada em adesão, mecanismo, evidências e custo-benefício.",
+      "bestFor": "Ideal para quem (especialmente com barba) quer uma fita bucal de marca biohacker com a praticidade da assinatura, aceitando pagar pelo marketing mais do que pela profundidade das evidências clínicas.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto Hostage Tape, de estudos financiados pela marca e de um grande volume de avaliações de usuários de 2026. Não testada na prática pela ONDA.",
+      "productType": "Fita bucal biohacker por assinatura",
+      "pros": [
+        "O melhor adesivo da categoria para quem tem barba",
+        "Design de peça única: aplicação rápida",
+        "Praticidade da assinatura: nunca falta",
+        "Marca de consumo forte com pedigree biohacker / UFC"
+      ],
+      "cons": [
+        "Evidências revisadas por pares limitadas sobre esta fita específica",
+        "Modelo por assinatura: custo absoluto maior que o faça-você-mesmo",
+        "Mecanismo de vedação completa contraindicado em caso de apneia do sono não diagnosticada",
+        "Sem variante porosa para quem quer vedação parcial"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "O melhor adesivo da categoria para barba: fica no lugar mesmo com pelos curtos, onde a Somnifix e a fita faça-você-mesmo falham. A promessa de remoção sem dor é, em geral, confirmada pelos relatos dos usuários.",
+        "breathing-mechanism": "Design de peça única com vedação completa. Um recorte no canto deixa parte dos lábios descoberta; não testado como recurso de segurança. Sem opção porosa.",
+        "evidence-grounding": "Depoimentos financiados pela marca e patrocínio de lutadores do UFC. Estudos revisados por pares limitados sobre esta fita específica. Aviso honesto sobre apneia do sono nos textos de segurança.",
+        "form-factor": "Tira de peça única que cobre toda a boca: fácil de aplicar, cobertura generosa. Nova opção \"Hostage Mini\" de meia tira para quem quer menos cobertura.",
+        "material-safety": "Adesivo hipoalergênico de grau médico. Relatos de reação na pele raros em um grande volume de usuários. Sem látex.",
+        "value": "US$ 13 por mês por ~30 tiras = ~US$ 0,43 por noite. A praticidade da assinatura é valorizada pelos usuários; custo absoluto maior que o da fita médica faça-você-mesmo, mas razoável pelo acabamento da marca."
+      },
+      "content": "## Onde ela se destaca\n\nA Hostage Tape é a fita bucal biohacker que viralizou em 2025–2026: adesivo desenvolvido para barba, design de peça única, praticidade da assinatura e uma marca de consumo forte nascida do cruzamento com a cultura do UFC e dos podcasts biohacker. A fita bucal de consumo que definiu a categoria em 2026.\n\n## Quais são as desvantagens da Hostage Tape?\n\nAs evidências clínicas. A Hostage Tape se apoia em estudos financiados pela marca e em depoimentos, mais do que na literatura revisada por pares de dermatologia / medicina do sono. O preço por assinatura é razoável, mas mais alto por noite do que a fita médica faça-você-mesmo. O mecanismo de vedação completa é contraindicado em caso de apneia do sono não diagnosticada: a marca menciona isso, mas vale repetir.\n\n## Quem deve comprar a Hostage Tape?\n\nEscolha a Hostage Tape se você tem barba e quer uma fita bucal de marca biohacker com a praticidade da assinatura. Para a referência original de grau médico, Somnifix. Para uma alternativa premium de silicone, Dream Recovery. Para o faça-você-mesmo econômico, 3M Nexcare Surgical Tape.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation) — respiração nasal e tônus vagal\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n- [O sono realmente limpa o cérebro? As evidências sobre o sistema glinfático](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é controverso\n",
+      "faq": [
+        {
+          "q": "A Hostage Tape funciona com barba?",
+          "a": "Sim. A Hostage Tape tem o adesivo mais adequado para barba da categoria de fitas bucais, uma fórmula hipoalergênica desenvolvida para aderir aos pelos curtos. O design de peça única com vedação completa também é rápido de aplicar, e isso explica boa parte de por que ela se tornou a principal marca biohacker de fita bucal."
+        },
+        {
+          "q": "Quanto custa a Hostage Tape?",
+          "a": "A Hostage Tape custa US$ 13 por mês por assinatura, com cerca de 30 tiras entregues a cada mês. Com a assinatura você nunca fica sem, mas o custo absoluto é maior do que o da fita faça-você-mesmo. Em parte, você paga por uma marca forte, com marketing ligado ao UFC e a podcasts biohacker."
+        },
+        {
+          "q": "A Hostage Tape é segura para todo mundo?",
+          "a": "Não. O design de vedação completa é contraindicado se você pode ter apneia do sono não diagnosticada, então faça essa avaliação primeiro. Também não existe variante porosa para quem quer apenas vedação parcial, e as evidências revisadas por pares sobre esta fita específica são limitadas."
+        }
+      ]
+    },
+    "nexcare-surgical-tape": {
+      "verdict": "A melhor opção faça-você-mesmo de fita bucal: fita médica de papel 3M por uma fração do custo das marcas biohacker. Sem acabamento de marca; adesivo de grau clínico a US$ 0,05 por noite.",
+      "summary": "O segredo faça-você-mesmo dos biohackers: a 3M Nexcare Sensitive Skin Surgical Tape, cortada em tiras de 5 cm (2 polegadas), é uma alternativa de grau clínico à fita bucal por uma fração do custo da Hostage Tape ou da Somnifix. O adesivo médico 3M tem a mesma química usada em curativos hospitalares. Praticamente imbatível no custo por noite; zero acabamento de marca ou praticidade.",
+      "description": "Análise da ONDA da 3M Nexcare Sensitive Skin Surgical Tape: fita médica de papel de farmácia usada como fita bucal faça-você-mesmo. Adesão, segurança e custo.",
+      "bestFor": "Ideal para biohackers que buscam economia e aceitam abrir mão da praticidade da marca por uma fita bucal faça-você-mesmo de grau clínico, por uma fração do custo das marcas por assinatura.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto 3M Nexcare, da literatura sobre fitas médicas liberadas pela FDA e de relatos da comunidade biohacker faça-você-mesmo. Não testada na prática pela ONDA.",
+      "productType": "Fita médica de papel faça-você-mesmo para fechar a boca",
+      "pros": [
+        "Custo por noite imbatível (~US$ 0,05 por noite)",
+        "Adesivo médico 3M de grau clínico, o mesmo dos curativos hospitalares",
+        "Máxima flexibilidade de formato: você corta no tamanho que preferir",
+        "Disponível em farmácias"
+      ],
+      "cons": [
+        "Precisa ser cortada a cada uso: mais trabalho no dia a dia",
+        "Sem acabamento de marca nem tiras pré-cortadas",
+        "Menos adequada para barba do que a Hostage Tape",
+        "Sem apoio de marketing nem comunidade biohacker"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Adesivo médico 3M de grau clínico: suave com a pele, remoção sem dor. Menos adequada para barba do que a Hostage Tape. A variante Sensitive Skin é a escolha certa.",
+        "breathing-mechanism": "Você corta a tira no tamanho desejado: vedação completa, parcial ou em cruz. Máxima flexibilidade.",
+        "evidence-grounding": "Fita médica de papel liberada pela FDA. Literatura em contexto clínico sobre a segurança do adesivo. Décadas de uso hospitalar.",
+        "form-factor": "O formato em rolo precisa ser cortado a cada uso. Sem tiras pré-cortadas. Mais trabalho por noite do que as marcas dedicadas de fita bucal.",
+        "material-safety": "Adesivo hipoalergênico de grau médico. Sem látex. A variante Sensitive Skin minimiza reações; décadas de uso hospitalar.",
+        "value": "~US$ 5 por um rolo que dura mais de 3 meses = ~US$ 0,05 por noite. Custo por noite imbatível na categoria de fitas bucais."
+      },
+      "content": "## Onde ela se destaca\n\nA 3M Nexcare Sensitive Skin Surgical Tape é o segredo faça-você-mesmo dos biohackers: fita médica de papel de grau clínico a US$ 0,05 por noite contra US$ 0,43 por noite da Hostage Tape. O mesmo adesivo médico 3M usado em curativos hospitalares. Imbatível no custo.\n\n## Quais são as desvantagens da 3M Nexcare Sensitive Skin Surgical Tape?\n\nPraticidade e acabamento de marca. Precisa ser cortada a cada uso, sem tiras pré-cortadas, sem a praticidade da assinatura. Menos adequada para barba do que o adesivo acrílico da Hostage Tape, desenvolvido especificamente para pelos curtos.\n\n## Quem deve comprar a 3M Nexcare Sensitive Skin Surgical Tape?\n\nEscolha a 3M Nexcare para uma fita bucal faça-você-mesmo econômica: adesivo clínico pelo menor preço possível. Para praticidade e uma marca adequada para barba, Hostage Tape. Para um design poroso registrado na FDA, Somnifix. Para silicone premium, Dream Recovery.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "A 3M Nexcare Sensitive Skin Surgical Tape vale a pena para fechar a boca?",
+          "a": "Sim, para quem busca economia. A Nexcare custa cerca de US$ 0,05 por noite e usa adesivo médico 3M de grau clínico, o mesmo tipo usado em curativos hospitalares. Você abre mão do acabamento de marca e da praticidade das tiras pré-cortadas, já que precisa cortá-la no tamanho certo a cada vez."
+        },
+        {
+          "q": "Quanto custa a fita cirúrgica Nexcare para fechar a boca?",
+          "a": "Um rolo custa cerca de US$ 5 e dura aproximadamente três meses, o que dá em torno de US$ 0,05 por noite. Ela também é vendida em farmácias, então não há assinatura nem encomenda especial."
+        },
+        {
+          "q": "Quais são as desvantagens da fita Nexcare para fechar a boca?",
+          "a": "Você precisa cortá-la a cada uso, o que dá trabalho no dia a dia, e não há acabamento de marca nem a praticidade das tiras pré-cortadas. Ela é menos adequada para barba do que a Hostage Tape e não tem apoio de marketing nem uma comunidade biohacker ao redor."
+        },
+        {
+          "q": "Nexcare ou Hostage Tape: qual é melhor?",
+          "a": "A Nexcare vence no custo, cerca de US$ 0,05 por noite, e permite cortar o tamanho que você preferir. A Hostage Tape é mais adequada para barba e oferece a praticidade da marca. Escolha a Nexcare pela economia faça-você-mesmo, e a Hostage Tape se a barba ou a facilidade das tiras pré-cortadas pesam mais."
+        }
+      ]
+    },
+    "sleep-strips-by-sleepright": {
+      "verdict": "O melhor dilatador nasal interno econômico: design de cone reutilizável por um preço abaixo do Mute. Menos evidências clínicas que o Mute; uma alternativa funcional para quem busca economia.",
+      "summary": "O SleepRight Nasal Breathe Aid é o dilatador nasal interno econômico: insertos de cone de polímero reutilizáveis que mantêm as narinas abertas por dentro, por um preço abaixo do Mute. A marca SleepRight tem histórico de vários anos. Base de evidências clínicas mais leve que a do Rhinomed Mute, mas uma alternativa funcional para quem quer dilatação mecânica interna sem preço premium.",
+      "description": "Análise da ONDA do SleepRight Nasal Breathe Aid: dilatador nasal interno de cone, reutilizável e econômico. Avaliado em adesão, mecanismo, segurança e custo-benefício.",
+      "bestFor": "Ideal para quem busca economia e quer dilatação nasal interna sem se comprometer com o preço do Mute: uma alternativa funcional para a abordagem do dilatador interno.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto SleepRight, do registro na FDA e de avaliações de usuários de 2026. Não testado na prática pela ONDA.",
+      "productType": "Dilatador nasal interno de cone reutilizável",
+      "pros": [
+        "O melhor custo por noite entre os dilatadores nasais internos (~US$ 0,15 por noite)",
+        "Cone de polímero reutilizável: ~3 meses por par",
+        "Histórico de vários anos da marca SleepRight",
+        "Ajuste de tamanho integrado ao design"
+      ],
+      "cons": [
+        "Menos otimizado anatomicamente que o Mute",
+        "Validação clínica revisada por pares limitada",
+        "Design de cone menos refinado que o stent de polímero do Mute",
+        "Relatos moderados de irritação nas narinas"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Sem adesivo: o cone fica no lugar por atrito. Adaptação inicial semelhante à do Mute; o conforto varia conforme a anatomia.",
+        "breathing-mechanism": "Dilatação mecânica interna. Menos refinada que o stent de polímero do Mute, mas o mecanismo básico é sólido.",
+        "evidence-grounding": "Registrado na FDA. Literatura clínica revisada por pares limitada sobre este dispositivo específico.",
+        "form-factor": "Insertos internos de cone. Tamanho ajustável. Design de duas peças (uma por narina).",
+        "material-safety": "Polímero de grau médico. Reutilizável por ~3 meses por par. Relatos moderados de irritação nas narinas; design de cone menos otimizado anatomicamente que o Mute.",
+        "value": "~US$ 12 por um par reutilizável que dura ~3 meses = ~US$ 0,15 por noite. O melhor custo por noite entre os dilatadores nasais internos."
+      },
+      "content": "## Onde ele se destaca\n\nO SleepRight Nasal Breathe Aid é o dilatador nasal interno econômico: insertos de cone de polímero reutilizáveis a US$ 0,15 por noite, com o histórico de vários anos da marca SleepRight. Uma alternativa funcional para quem busca economia e quer dilatação mecânica interna.\n\n## Quais são as desvantagens do SleepRight Nasal Breathe Aid?\n\nOtimização anatômica e evidências clínicas. Os cones SleepRight são anatomicamente menos refinados que os stents de polímero do Rhinomed Mute; a base de evidências clínicas é mais leve.\n\n## Quem deve comprar o SleepRight Nasal Breathe Aid?\n\nEscolha o SleepRight Nasal Breathe Aid para dilatação nasal interna econômica. Para um stent interno premium com evidências clínicas, Mute. Para um dilatador externo magnético, Intake Breathing. Para uma tira externa de farmácia, Breathe Right.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "O SleepRight Nasal Breathe Aid vale a pena?",
+          "a": "Sim, se o custo importa. O SleepRight Nasal Breathe Aid oferece o melhor custo por noite entre os dilatadores nasais internos, cerca de US$ 0,15 por noite, com um cone reutilizável que dura uns três meses e ajuste de tamanho integrado. Ele é menos otimizado anatomicamente que o Mute e tem validação clínica limitada."
+        },
+        {
+          "q": "Quanto custa o SleepRight Nasal Breathe Aid?",
+          "a": "O SleepRight Nasal Breathe Aid custa cerca de US$ 12 por um par reutilizável que dura aproximadamente três meses. Isso dá em torno de US$ 0,15 por noite, o melhor custo por noite na categoria de dilatadores nasais internos."
+        },
+        {
+          "q": "SleepRight ou Mute: qual é melhor?",
+          "a": "O Mute tem o design mais otimizado anatomicamente, com um stent de polímero mais refinado. O SleepRight é a escolha econômica: um cone reutilizável a cerca de US$ 0,15 por noite, com ajuste de tamanho. Escolha o SleepRight para experimentar a dilatação interna sem se comprometer com o preço do Mute."
+        },
+        {
+          "q": "Quais são as desvantagens do SleepRight Nasal Breathe Aid?",
+          "a": "O SleepRight é menos otimizado anatomicamente que o Mute, e seu design de cone é menos refinado que o stent de polímero do Mute. Tem validação clínica revisada por pares limitada, e alguns usuários relatam irritação moderada nas narinas, então o conforto varia de pessoa para pessoa."
+        }
+      ]
+    },
+    "somnifit-sleep-strips": {
+      "verdict": "Fita bucal econômica de entrada: preço acessível, adesivo acrílico básico, pouco acabamento de marca. Suficiente para quem busca economia; falta a engenharia da Hostage Tape.",
+      "summary": "As SomniFit Sleep Strips são a fita bucal econômica de entrada: tiras de peça única com adesivo acrílico básico a preço acessível. Sem certificação hipoalergênica K-beauty, sem acabamento de marca biohacker, sem assinatura. Funcionam de forma adequada para quem não tem pele sensível nem barba; a fita bucal de entrada certa se você quer pagar menos de US$ 10 por pacote e o acabamento da marca não importa.",
+      "description": "Análise da ONDA das SomniFit Sleep Strips: fita bucal econômica com adesivo acrílico básico. Avaliada em adesão, mecanismo, segurança e custo-benefício.",
+      "bestFor": "Ideal para quem busca economia, sem pele sensível nem barba, e quer um pacote de fita bucal de marca abaixo de US$ 10 sem a pressão de uma assinatura.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto SomniFit, do registro na FDA e de avaliações de consumidores de 2026. Não testada na prática pela ONDA.",
+      "productType": "Tiras econômicas de fita bucal",
+      "pros": [
+        "A fita bucal de marca confiável mais barata depois da Nexcare faça-você-mesmo",
+        "Embalagem acessível estilo farmácia",
+        "Sem pressão de assinatura",
+        "Simplicidade da peça única"
+      ],
+      "cons": [
+        "Adesivo básico: reações moderadas na pele de usuários sensíveis",
+        "Tem dificuldade com barba e pele oleosa",
+        "Sem acabamento de marca biohacker",
+        "Evidências revisadas por pares mínimas"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Adesivo acrílico básico: aderência adequada em pele limpa. Tem dificuldade com barba e pele oleosa. A remoção pode deixar resíduo grudento.",
+        "breathing-mechanism": "Vedação completa em peça única. Mecanismo genérico.",
+        "evidence-grounding": "Registrada na FDA. Sem estudos revisados por pares. Base de evidências modesta.",
+        "form-factor": "Tira de peça única. Design funcional sem engenharia premium.",
+        "material-safety": "Adesivo acrílico básico. Sem látex. Relatos moderados de reação na pele: quem tem pele sensível deve escolher Dream Recovery ou AYO.",
+        "value": "~US$ 8 por 30 tiras = ~US$ 0,27 por noite. A fita bucal de marca confiável mais barata depois da Nexcare faça-você-mesmo."
+      },
+      "content": "## Onde ela se destaca\n\nAs SomniFit Sleep Strips são a fita bucal de marca econômica: preço acessível, simplicidade da peça única, sem pressão de assinatura. Funcionam de forma adequada para quem não tem pele sensível nem barba.\n\n## Quais são as desvantagens das SomniFit Sleep Strips?\n\nQualidade do adesivo e acabamento de marca. O adesivo acrílico básico causa mais reações na pele do que as alternativas premium e tem dificuldade com barba e pele oleosa. Sem acabamento de marca biohacker nem profundidade de evidências.\n\n## Quem deve comprar as SomniFit Sleep Strips?\n\nEscolha a SomniFit se você quer a fita bucal de marca confiável mais barata e sua pele não é sensível. Para economizar no faça-você-mesmo, Nexcare Surgical Tape. Para uma marca biohacker adequada para barba, Hostage Tape. Para pele sensível, Dream Recovery ou AYO.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "As SomniFit Sleep Strips valem a pena?",
+          "a": "As SomniFit Sleep Strips valem a pena se você quer uma fita bucal de marca barata e não tem pele sensível nem barba. São a opção de marca confiável mais barata depois da Nexcare faça-você-mesmo, sem pressão de assinatura. O adesivo básico tem dificuldade com barba e pele oleosa."
+        },
+        {
+          "q": "Quanto custam as SomniFit Sleep Strips?",
+          "a": "As SomniFit Sleep Strips custam cerca de US$ 8 por um pacote de 30 tiras, aproximadamente US$ 0,27 por noite. Não há pressão de assinatura: você compra os pacotes quando precisa, e elas são a fita bucal de marca confiável mais barata depois da Nexcare faça-você-mesmo."
+        },
+        {
+          "q": "Quais são as desvantagens das SomniFit Sleep Strips?",
+          "a": "O adesivo básico da SomniFit causa reações moderadas na pele de usuários sensíveis e tem dificuldade com barba e pele oleosa. Falta o acabamento de marca biohacker, e as evidências revisadas por pares são mínimas em comparação com opções mais consolidadas."
+        }
+      ]
+    },
+    "somnifix": {
+      "verdict": "A fita bucal original: tira porosa registrada na FDA com abertura central para respirar. Referência há uma década; menos adequada para barba do que a Hostage Tape.",
+      "summary": "A Somnifix é a fita bucal que deu origem à categoria: tira adesiva porosa registrada na FDA com uma abertura central para respirar que deixa parte dos lábios descoberta (não testada como recurso de segurança). Adesivo hipoalergênico de grau médico. Histórico de vários anos, anterior ao boom biohacker de 2025–2026. Marketing menos agressivo que o da Hostage Tape; credibilidade mais sólida pelo registro na FDA.",
+      "description": "Análise da ONDA da Somnifix: a fita bucal original registrada na FDA, porosa, com abertura central para respirar. Adesão, mecanismo, evidências e custo-benefício.",
+      "bestFor": "Ideal para quem quer uma fita bucal com a credibilidade médica do registro na FDA e um design poroso: credibilidade clínica acima do marketing de marca biohacker.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto Somnifix, dos registros da FDA e de avaliações de usuários de vários anos. Não testada na prática pela ONDA.",
+      "productType": "Tiras porosas de fita bucal registradas na FDA",
+      "pros": [
+        "Dispositivo médico registrado na FDA: a posição regulatória mais sólida",
+        "Abertura central porosa para respirar: uma vedação menos completa que a da fita de cobertura total",
+        "Histórico de vários anos, anterior ao boom biohacker de 2025",
+        "Sem necessidade de assinatura"
+      ],
+      "cons": [
+        "Menos adequada para barba do que a Hostage Tape",
+        "~US$ 0,90 por noite: mais cara por noite que a Hostage Tape",
+        "Cobertura menor que a tira inteira da Hostage Tape",
+        "Marketing de consumo menos agressivo: marca menos conhecida que a Hostage Tape"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Adesão sólida em pele limpa. Menos adequada para barba do que a Hostage Tape: o adesivo foi desenvolvido para contato com a pele, não com os pelos.",
+        "breathing-mechanism": "Design poroso com abertura central para respirar: deixa parte dos lábios descoberta e permite uma expiração parcial pela boca. Isso não foi testado como recurso de segurança; se a apneia do sono for possível, consulte um médico primeiro.",
+        "evidence-grounding": "Dispositivo médico registrado na FDA. Histórico de vários anos com citações em contexto clínico. Posição regulatória mais sólida que a da Hostage Tape.",
+        "form-factor": "Tira de peça única com seção central porosa. Fácil de aplicar. Cobertura menos generosa que a tira inteira da Hostage Tape.",
+        "material-safety": "Adesivo hipoalergênico de grau médico. Sem látex. Relatos de reação na pele raros em uma base de usuários de vários anos.",
+        "value": "~US$ 25 por 28 tiras = ~US$ 0,90 por noite. Mais cara por noite que a assinatura da Hostage Tape; sem necessidade de assinatura."
+      },
+      "content": "## Onde ela se destaca\n\nA Somnifix é a fita bucal que deu origem à categoria: tira porosa registrada na FDA com abertura central para respirar e um histórico de vários anos, anterior ao boom biohacker de 2025–2026. A referência de credibilidade clínica para quem tem dúvidas sobre mecanismos de vedação completa.\n\n## Quais são as desvantagens da Somnifix?\n\nAdesão na barba e reconhecimento da marca. O adesivo da Somnifix foi desenvolvido para pele limpa e não segura os pelos da barba tão bem quanto a Hostage Tape. A marca é menos conhecida pelo consumidor do que as novatas virais de 2026.\n\n## Quem deve comprar a Somnifix?\n\nEscolha a Somnifix se você quer uma fita bucal com a credibilidade médica do registro na FDA e um design poroso. Para uma marca biohacker adequada para barba, Hostage Tape. Para silicone premium, Dream Recovery. Para fita médica faça-você-mesmo, Nexcare Surgical Tape.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n- [O sono realmente limpa o cérebro? As evidências sobre o sistema glinfático](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é controverso\n",
+      "faq": [
+        {
+          "q": "A Somnifix vale a pena?",
+          "a": "A Somnifix vale a pena se você quer uma fita bucal com credibilidade médica. É um dispositivo médico registrado na FDA, com abertura central porosa para respirar (não testada como recurso de segurança) e um histórico de vários anos. Se a apneia do sono for possível, consulte um médico primeiro. Custa mais por noite que a Hostage Tape."
+        },
+        {
+          "q": "Quanto custa a Somnifix?",
+          "a": "A Somnifix custa cerca de US$ 25 por um pacote de 28 tiras, aproximadamente US$ 0,90 por noite. É mais por noite do que a Hostage Tape. Não é preciso assinar nada, então você compra os pacotes só quando precisa."
+        },
+        {
+          "q": "Somnifix ou Hostage Tape: qual é melhor?",
+          "a": "A Somnifix vence na posição regulatória, como dispositivo registrado na FDA, e tem uma abertura porosa para respirar. A Hostage Tape é mais barata por noite, mais adequada para barba e oferece cobertura maior. Escolha a Somnifix pela credibilidade clínica."
+        },
+        {
+          "q": "Quais são as desvantagens da Somnifix?",
+          "a": "A Somnifix é menos adequada para barba do que a Hostage Tape, custa mais por noite, cerca de US$ 0,90, e oferece cobertura menor que a tira inteira da Hostage Tape. Também é menos conhecida, por causa de um marketing menos agressivo."
+        }
+      ]
+    },
+    "the-tape-co": {
+      "verdict": "A melhor fita bucal em X: o design em cruz deixa os cantos da boca descobertos, posicionamento biohacker independente. Marca mais nova, sem histórico de vários anos.",
+      "summary": "A The Tape Co. é a opção biohacker independente com o característico design em X: duas tiras adesivas cruzadas sobre a boca, deixando os cantos da boca descobertos; isso não foi testado como recurso de segurança. Marca mais nova (lançamento por volta de 2024), reconhecimento modesto em relação à Hostage Tape, mas com um design diferenciado.",
+      "description": "Análise da ONDA da The Tape Co.: fita bucal independente com design em X que deixa os cantos da boca descobertos. Adesão, mecanismo, segurança e custo.",
+      "bestFor": "Ideal para quem quer um design em X que deixa os cantos da boca descobertos e coloca menos adesivo na pele.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto The Tape Co. e de avaliações de usuários de 2026. Não testada na prática pela ONDA.",
+      "productType": "Fita bucal independente em X",
+      "pros": [
+        "Design em cruz (X): deixa os cantos da boca descobertos, menos adesivo na pele",
+        "A área de adesivo reduzida ajuda a pele sensível",
+        "Posicionamento de marca biohacker independente",
+        "Sem pressão de assinatura"
+      ],
+      "cons": [
+        "Sem registro na FDA",
+        "Marca mais nova, sem histórico de vários anos",
+        "A aplicação em duas peças dá mais trabalho que a de peça única",
+        "Custo por noite intermediário sem o acabamento de uma marca premium"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Adesivo acrílico intermediário: aderência adequada em pele limpa. O design em X reduz a área total de adesivo por noite. Menos adequada para barba do que a Hostage Tape.",
+        "breathing-mechanism": "Design em cruz (X): deixa os cantos da boca descobertos. Isso não foi testado como recurso de segurança; se a apneia do sono for possível, consulte um médico primeiro.",
+        "evidence-grounding": "Marca independente sem registro na FDA nem estudos revisados por pares. O design em X não foi testado como recurso de segurança.",
+        "form-factor": "Design em cruz (X): diferenciado na categoria. A aplicação em duas peças dá um pouco mais de trabalho que a de peça única.",
+        "material-safety": "Adesivo hipoalergênico. Sem látex. Relatos moderados de reação na pele. O design em X reduz a área de contato do adesivo, o que ajuda a pele sensível.",
+        "value": "~US$ 18 por 30 tiras = ~US$ 0,60 por noite. Preço intermediário por um design diferenciado."
+      },
+      "content": "## Onde ela se destaca\n\nA The Tape Co. é a fita bucal independente em X: o design em cruz deixa os cantos da boca descobertos (não testado como recurso de segurança). Posicionamento biohacker independente com um design diferenciado.\n\n## Quais são as desvantagens da The Tape Co.?\n\nReconhecimento da marca e validação. Marca independente sem registro na FDA nem estudos revisados por pares; lançamento recente, por volta de 2024, sem histórico de vários anos.\n\n## Quem deve comprar a The Tape Co.?\n\nEscolha a The Tape Co. se você quer um design em X que deixa os cantos da boca descobertos. Para o acabamento de uma marca biohacker, Hostage Tape. Para um design poroso registrado na FDA, Somnifix. Para silicone premium, Dream Recovery.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "A fita bucal da The Tape Co. vale a pena?",
+          "a": "A The Tape Co. vale a pena se você quer um design em X. Ela deixa os cantos da boca descobertos (não testado como recurso de segurança) e reduz o contato do adesivo para a pele sensível, sem pressão de assinatura. Não tem registro na FDA, é uma marca mais nova e a aplicação em duas peças dá mais trabalho."
+        },
+        {
+          "q": "Quanto custa a The Tape Co.?",
+          "a": "A The Tape Co. custa cerca de US$ 18 por um pacote de 30 tiras, aproximadamente US$ 0,60 por noite. É um custo por noite intermediário sem o acabamento de uma marca premium, e não há pressão de assinatura."
+        },
+        {
+          "q": "Quais são as desvantagens da The Tape Co.?",
+          "a": "A The Tape Co. não tem registro na FDA e, por ser uma marca mais nova, não tem histórico de vários anos. A aplicação em duas peças dá mais trabalho que as tiras de peça única, e o preço é intermediário sem o acabamento de uma marca premium."
+        }
+      ]
+    },
+    "breathe-right-original": {
+      "verdict": "A referência de farmácia em tiras nasais: décadas de histórico, liberada pela FDA, distribuição ampla. Mecanismo mais fraco que os dilatadores magnéticos ou internos.",
+      "summary": "A Breathe Right Original é a tira nasal externa padrão de farmácia: uma tira adesiva de plástico sobre o dorso do nariz que usa a tensão de mola para abrir as narinas. Décadas de histórico com liberação da FDA (originalmente 3M, hoje Kenvue/J&J). Distribuição ampla em farmácias. A referência que todo mundo experimenta primeiro; mecanismo mais fraco que as alternativas magnéticas ou internas.",
+      "description": "Análise da ONDA da Breathe Right Original: a tira nasal adesiva externa padrão de farmácia da Kenvue/Johnson & Johnson. Adesão, mecanismo, evidências e custo.",
+      "bestFor": "Ideal para quem vai experimentar pela primeira vez um dispositivo para abrir as vias nasais e quer a referência de farmácia com o menor custo por noite: teste esta antes de partir para as alternativas premium magnéticas / internas.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto Breathe Right, dos registros da FDA e de décadas de literatura em contexto clínico. Não testada na prática pela ONDA.",
+      "productType": "Tira nasal adesiva externa",
+      "pros": [
+        "A posição regulatória mais sólida: décadas de histórico com liberação da FDA",
+        "O melhor custo por noite na categoria de vias nasais",
+        "Distribuição ampla em farmácias",
+        "Disponível em versões para pele sensível e transparente"
+      ],
+      "cons": [
+        "Mecanismo mais fraco que as alternativas magnéticas / internas",
+        "Design descartável de uso único",
+        "Visível por fora",
+        "A adesão falha com produtos de skincare ou suor"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Adesão sólida em pele limpa e seca. Relatos moderados de irritação na pele; as versões transparente / para pele sensível resolvem a maioria dos problemas.",
+        "breathing-mechanism": "Alavanca externa por tensão de mola: abertura passiva pela força da mola de plástico sobre o dorso do nariz. Mais fraca que as abordagens magnética externa (Intake) ou mecânica interna (Mute).",
+        "evidence-grounding": "Liberada pela FDA, com décadas de literatura em contexto clínico sobre o fluxo de ar com tiras nasais. Histórico de marca de várias décadas. A posição regulatória mais sólida entre os dilatadores nasais.",
+        "form-factor": "Tira de peça única. Fácil de aplicar. Descartável de uso único. Visível por fora.",
+        "material-safety": "Disponível em versões hipoalergênicas e para pele sensível. Relatos de irritação na pele raros com a escolha da versão certa. Sem látex.",
+        "value": "~US$ 10 por 30 tiras = ~US$ 0,33 por noite. O melhor custo por noite na categoria de vias nasais, com folga. Disponível em farmácias."
+      },
+      "content": "## Onde ela se destaca\n\nA Breathe Right Original é a tira nasal padrão de farmácia: liberada pela FDA, décadas de histórico de marca, distribuição ampla, o melhor custo por noite. A referência da categoria que todo mundo experimenta primeiro.\n\n## Quais são as desvantagens da Breathe Right Original?\n\nO mecanismo. A alavanca externa por tensão de mola é mais fraca que as abordagens magnética externa (Intake Breathing) ou mecânica interna (Mute): a Breathe Right abre as narinas de forma menos decidida. O design descartável de uso único aumenta o custo no longo prazo em relação às alternativas reutilizáveis.\n\n## Quem deve comprar a Breathe Right Original?\n\nEscolha a Breathe Right Original como o primeiro dispositivo para abrir as vias nasais: a entrada confiável mais barata, com o menor compromisso. Se funcionar, ótimo; se você quiser uma dilatação mais forte, passe para Intake Breathing ou Mute.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "As tiras Breathe Right Original valem a pena?",
+          "a": "Sim, como a primeira tira nasal a experimentar. A Breathe Right Original tem décadas de histórico com liberação da FDA, o melhor custo por noite na categoria de vias nasais e está em todas as farmácias. Seu mecanismo de tensão de mola é mais fraco que os dilatadores magnéticos ou internos, então alguns usuários depois partem para um modelo superior."
+        },
+        {
+          "q": "Quanto custam as tiras Breathe Right Original?",
+          "a": "A Breathe Right Original custa cerca de US$ 10 por um pacote de 30 tiras, aproximadamente US$ 0,33 por noite. É o melhor custo por noite na categoria de vias nasais, e também existem versões para pele sensível e transparente. Cada tira é descartável e de uso único."
+        },
+        {
+          "q": "Quais são as desvantagens da Breathe Right Original?",
+          "a": "A Breathe Right Original usa um mecanismo mais fraco que as alternativas magnéticas ou internas, e cada tira é descartável e de uso único. A tira é visível por fora, e a adesão falha com produtos de skincare ou suor. Para alguns desses problemas existem versões para pele sensível e transparente."
+        },
+        {
+          "q": "Para quem as tiras Breathe Right Original são mais indicadas?",
+          "a": "A Breathe Right Original é ideal para quem vai experimentar pela primeira vez um dispositivo para abrir as vias nasais e quer a referência de farmácia com o menor custo por noite. É a que você deve testar antes de partir para as alternativas premium magnéticas ou internas. Tem décadas de histórico com liberação da FDA."
+        }
+      ]
+    },
+    "intake-breathing": {
+      "verdict": "O melhor dilatador nasal premium: design magnético reutilizável, recomendado por James Nestor; seus estudos de fluxo de ar são financiados pela marca.",
+      "summary": "O Intake Breathing é o dilatador nasal externo premium: pequenas abas adesivas em cada narina sustentam uma faixa magnética flexível que abre mecanicamente as narinas durante a noite. James Nestor o recomenda explicitamente em Breath. Faixa reutilizável, abas adesivas de reposição, comprovadamente eficaz para quem respira pela boca e não consegue se adaptar à fita bucal. O preço premium reflete a engenharia.",
+      "description": "Análise da ONDA do Intake Breathing: dilatador nasal externo magnético premium com faixa magnética reutilizável. Avaliado em adesão, mecanismo, evidências e custo.",
+      "bestFor": "Ideal para quem respira pela boca, não consegue se adaptar à fita bucal e quer a abordagem de dilatação nasal externa mais eficaz.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto Intake Breathing, da recomendação pública de James Nestor e de avaliações de usuários de 2026. Não testado na prática pela ONDA.",
+      "productType": "Dilatador nasal externo magnético",
+      "pros": [
+        "A abordagem de dilatação nasal externa mais eficaz",
+        "Recomendado por James Nestor no livro Breath",
+        "Faixa magnética reutilizável: compensa no longo prazo",
+        "Visual discreto"
+      ],
+      "cons": [
+        "Preço premium em comparação com as tiras Breathe Right",
+        "Exige assinatura das abas adesivas de reposição",
+        "Dispositivo externo: visível no rosto",
+        "Sem liberação FDA Classe II"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "As pequenas abas adesivas seguram bem; a faixa magnética distribui a pressão em vez de concentrar a tensão em um único ponto. Confortável para o formato.",
+        "breathing-mechanism": "Dilatação magnética externa: abre mecanicamente as aberturas das narinas. A abordagem de dilatação nasal externa mais eficaz; supera tiras passivas como a Breathe Right no fluxo de ar relatado pelos usuários.",
+        "evidence-grounding": "Recomendação de James Nestor no livro Breath. Estudos de fluxo de ar financiados pela marca. Posicionamento próximo da medicina do sono sem liberação FDA Classe II.",
+        "form-factor": "Faixa magnética reutilizável com abas adesivas substituíveis: compensa no longo prazo. Visual discreto.",
+        "material-safety": "Abas adesivas de grau médico. Faixa magnética hipoalergênica. Relatos de reação na pele raros.",
+        "value": "~US$ 40 o kit inicial, US$ 20 por mês para as abas de reposição = ~US$ 0,65 por noite na manutenção. Preço premium, mas a faixa reutilizável reduz o custo no longo prazo."
+      },
+      "content": "## Onde ele se destaca\n\nO Intake Breathing é a referência premium entre os dilatadores nasais externos: faixa magnética reutilizável, recomendado por James Nestor, a abordagem de dilatação externa mais eficaz. Ideal para quem respira pela boca e não quer fita bucal.\n\n## Quais são as desvantagens do Intake Breathing?\n\nCusto e visibilidade. Custo contínuo com a reposição das abas adesivas em estilo assinatura, posicionamento premium em comparação com as tiras Breathe Right de US$ 5. Dispositivo externo visível no rosto.\n\n## Quem deve comprar o Intake Breathing?\n\nEscolha o Intake Breathing se você não consegue se adaptar à fita bucal e quer o dilatador nasal externo mais eficaz. Para um stent nasal interno, Mute. Para a referência de farmácia, Breathe Right. Para fita bucal, Hostage Tape ou Somnifix.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n- [O sono realmente limpa o cérebro? As evidências sobre o sistema glinfático](/articles/nightly-flush-glymphatic-neural-cache) — o que está demonstrado em pessoas e o que ainda é controverso\n",
+      "faq": [
+        {
+          "q": "Como funciona o Intake Breathing?",
+          "a": "O Intake Breathing é um dilatador nasal externo. Pequenas abas adesivas em cada narina sustentam uma faixa magnética flexível que abre mecanicamente as narinas durante a noite. A faixa é reutilizável, enquanto as abas adesivas são trocadas com o tempo. James Nestor o recomenda em seu livro Breath."
+        },
+        {
+          "q": "Quanto custa o Intake Breathing?",
+          "a": "O kit inicial do Intake Breathing custa cerca de US$ 40, e as abas adesivas de reposição saem por aproximadamente US$ 20 por mês. É um preço premium em comparação com as tiras Breathe Right, embora a faixa magnética reutilizável ajude a compensar no longo prazo."
+        },
+        {
+          "q": "Intake Breathing ou fita bucal: o que experimentar?",
+          "a": "O Intake é indicado para quem respira pela boca e não consegue se adaptar à fita bucal. Em vez de fechar os lábios, ele abre as vias nasais, e é a abordagem de dilatação nasal externa mais eficaz. Porém, é visível no rosto e não tem liberação FDA Classe II."
+        }
+      ]
+    },
+    "mute-nasal-dilator": {
+      "verdict": "O melhor stent nasal interno: mantém as vias aéreas abertas mecanicamente por dentro, evidências clínicas publicadas, reutilizável. A curva de adaptação inicial é real.",
+      "summary": "O Mute Nasal Dilator é o stent nasal interno da Rhinomed: um pequeno stent flexível de polímero inserido nas narinas que mantém as vias aéreas abertas mecanicamente por dentro. Estudos clínicos publicados sobre melhora do fluxo de ar, registrado na FDA, reutilizável por ~1 semana por stent. A curva de adaptação inicial é real (as primeiras noites são estranhas) e alguns usuários persistentes relatam uma melhora maior do que com as tiras externas (relatos de usuários, não testado).",
+      "description": "Análise da ONDA do Mute Nasal Dilator: o stent nasal interno clínico da Rhinomed que mantém as narinas abertas por dentro. Adesão, mecanismo, evidências e custo.",
+      "bestFor": "Ideal para quem respira pela boca, tolera dispositivos internos e quer uma dilatação nasal mecânica apoiada em evidências clínicas.",
+      "testNote": "Avaliação baseada em evidências: nota atribuída a partir da documentação do produto Rhinomed, do registro na FDA e de estudos clínicos publicados sobre fluxo de ar. Não testado na prática pela ONDA.",
+      "productType": "Stent dilatador nasal interno",
+      "pros": [
+        "O mecanismo mecânico mais forte entre os dilatadores nasais",
+        "Estudos clínicos publicados sobre fluxo de ar",
+        "Invisível por fora: nenhum dispositivo à vista",
+        "Reutilizável ~1 semana por stent"
+      ],
+      "cons": [
+        "Curva de adaptação inicial: as primeiras noites são estranhas",
+        "Inserção interna: nem todos toleram",
+        "Três tamanhos para acertar o ajuste: é preciso comprar um kit de tamanhos",
+        "Custo por noite maior que o das tiras externas"
+      ],
+      "scoreNotes": {
+        "adhesion-comfort": "Sem adesivo: fica no lugar por atrito dentro das narinas. A curva de adaptação inicial é real; a maioria dos usuários se acostuma em 3-5 noites.",
+        "breathing-mechanism": "Stent mecânico interno: mantém as vias aéreas abertas por dentro de forma mais direta que a alavanca das tiras externas. O mecanismo mecânico mais forte da categoria.",
+        "evidence-grounding": "Estudos clínicos publicados pela Rhinomed sobre melhora do fluxo de ar. Registrado na FDA. A melhor base de evidências revisadas por pares entre os dilatadores nasais.",
+        "form-factor": "Stent interno: invisível por fora, mas inserido nas narinas. Vem em três tamanhos (P/M/G) que exigem definir o ajuste.",
+        "material-safety": "Polímero de grau médico. Reutilizável ~1 semana por stent. Relatos de irritação nas narinas em parte dos usuários: nem todas as anatomias se ajustam com conforto.",
+        "value": "~US$ 25 por pacote com 3 × 1 semana cada = ~US$ 1,20 por noite. Mais caro por noite que a fita bucal ou a Breathe Right."
+      },
+      "content": "## Onde ele se destaca\n\nO Mute Nasal Dilator é a referência entre os stents nasais internos: o mecanismo mecânico mais forte da categoria de dilatadores, estudos clínicos publicados sobre fluxo de ar, registrado na FDA. O dispositivo para abrir as vias nasais com as melhores evidências para quem tolera dispositivos internos.\n\n## Quais são as desvantagens do Mute Nasal Dilator?\n\nAdaptação e tolerância. A inserção interna não é confortável para todos; as primeiras noites são estranhas e parte dos usuários nunca se adapta. São necessários três tamanhos para acertar o ajuste; recomenda-se comprar o kit de tamanhos.\n\n## Quem deve comprar o Mute Nasal Dilator?\n\nEscolha o Mute Nasal Dilator se você tolera dispositivos internos e quer uma dilatação mecânica apoiada em evidências clínicas. Para uma alternativa magnética externa, Intake Breathing. Para tiras externas passivas, Breathe Right. Para fita bucal, Hostage Tape ou Somnifix.\n\n---\n\n## Leituras complementares\n\n- [Medicina elétrica e neuromodulação](/articles/electric-medicine-neuromodulation)\n- [Sono acústico sincronizado por fase](/articles/phase-locked-acoustic-sleep)\n",
+      "faq": [
+        {
+          "q": "O Mute Nasal Dilator vale a pena?",
+          "a": "O Mute vale a pena para quem respira pela boca e tolera dispositivos internos. Ele oferece o mecanismo mecânico mais forte entre os dilatadores nasais, estudos clínicos publicados sobre fluxo de ar e é invisível por fora. Espere uma curva de adaptação e saiba que ele custa mais por noite que as tiras externas."
+        },
+        {
+          "q": "Quanto custa o Mute Nasal Dilator?",
+          "a": "O Mute custa US$ 25 por um pacote com 3, e cada stent pode ser reutilizado por cerca de uma semana. Como ele vem em três tamanhos, você também precisa comprar primeiro um kit de tamanhos, e seu custo por noite é maior que o das tiras externas."
+        },
+        {
+          "q": "Quais são as desvantagens do Mute Nasal Dilator?",
+          "a": "O Mute tem uma curva de adaptação, e as primeiras noites são estranhas. Nem todo mundo tolera a inserção interna, é preciso um kit de tamanhos porque ele vem em três tamanhos, e seu custo por noite é maior que o das tiras externas."
+        }
+      ]
     }
   },
   "comparisons": {
@@ -1656,6 +2153,81 @@
           "a": "Breathwrk: $49/ano. Wim Hof Method: $42.99/ano. SOMA Breath: $99/ano. Open: $120/ano. Othership: $129.99/ano. Inhale: $60/ano. Pause Breathwork: $90/ano. Opções gratuitas: iBreathe, Breathe2Relax, Prana Breath (quase todo gratuito)."
         }
       ]
+    },
+    "best-mouth-tape-nasal-breathing-2026": {
+      "title": "As melhores fitas bucais e dispositivos de respiração nasal (2026)",
+      "description": "A ONDA classifica as dez melhores fitas bucais e dispositivos de respiração nasal de 2026, da Hostage Tape ao Mute. Adesão, mecanismo, segurança e custo-benefício.",
+      "intro": "A fita bucal e os dispositivos de respiração nasal viraram mainstream em 2024–2026 graças ao livro Breath, de James Nestor, à onda Wim Hof e ao momento viral da marca Hostage Tape. A categoria se dividiu em faixas claras: fitas bucais de marca biohacker (Hostage Tape, Dream Recovery, The Tape Co.), referências médicas registradas na FDA (Somnifix), alternativas faça-você-mesmo com fita médica (3M Nexcare) e a categoria paralela dos dilatadores nasais (Intake Breathing magnético, o stent interno Mute, a tira externa de farmácia Breathe Right). Avaliamos os dez produtos mais confiáveis de 2026 nos mesmos seis eixos: conforto da adesão, mecanismo respiratório, base científica e segurança, formato, segurança dos materiais e custo-benefício.",
+      "verdict": "A Hostage Tape vence no geral como a fita bucal biohacker que definiu a categoria em 2026: adesivo adequado para barba, praticidade da assinatura, marca bem acabada. A Somnifix é a referência médica registrada na FDA com design poroso. O Intake Breathing é o dilatador nasal externo premium (recomendado por James Nestor). O Mute é o stent interno clínico. A Breathe Right é o ponto de partida de farmácia que todo mundo deveria experimentar primeiro. A Nexcare é a escolha faça-você-mesmo econômica imbatível. Escolha a partir de três perguntas: fita bucal ou dilatador nasal, adequada para barba ou para pele sensível, praticidade da assinatura ou economia faça-você-mesmo.",
+      "content": "## Como as classificamos\n\nCada produto foi avaliado segundo a [metodologia de avaliação](/reviews/methodology) publicada pela ONDA: seis critérios ponderados, com peso proposital para o conforto da adesão e a segurança dos materiais, porque as maiores fontes de confusão dos usuários nesta categoria são os problemas de irritação na pele e um marketing de bem-estar viral pouco ligado à realidade clínica.\n\nTodos os dez foram avaliados com base na documentação dos fabricantes, nos registros da FDA e em um grande volume de avaliações de usuários de 2026, e não por testes práticos.\n\n## As melhores fitas bucais e dispositivos de respiração nasal: qual comprar?\n\nTrês perguntas de compra resolvem a categoria:\n\n**Fita bucal ou dilatador nasal?** Fita bucal (força a respiração nasal fechando a boca): Hostage Tape, Somnifix, Dream Recovery, Nexcare faça-você-mesmo, AYO, SomniFit, The Tape Co. Dilatador nasal (abre as vias nasais): Intake Breathing, Mute, Breathe Right, SleepRight.\n\n**Adequada para barba ou para pele sensível?** Para barba: Hostage Tape (vencedora clara). Pele sensível: Dream Recovery de gel de silicone, AYO hipoalergênica K-beauty. Nenhuma das duas necessidades: Somnifix, SomniFit e Nexcare faça-você-mesmo funcionam.\n\n**Praticidade da assinatura ou economia faça-você-mesmo?** Assinatura: Hostage Tape (US$ 13/mês) pela praticidade. Faça-você-mesmo econômico: Nexcare Surgical Tape (~US$ 0,05 por noite). Faixa intermediária sem assinatura: Somnifix, Dream Recovery, AYO, SomniFit, The Tape Co.\n\nA Hostage Tape domina a faixa das fitas bucais de marca; a Somnifix detém a credibilidade médica do registro na FDA; Intake Breathing e Mute dividem o mercado de dilatadores nasais premium; Breathe Right e Nexcare cobrem a faixa econômica de farmácia / faça-você-mesmo.",
+      "picks": {
+        "hostage-tape": {
+          "award": "Melhor no geral",
+          "takeaway": "Adesivo adequado para barba + praticidade da assinatura + marca biohacker bem acabada: a referência de 2026."
+        },
+        "somnifix": {
+          "award": "Melhor registrada na FDA",
+          "takeaway": "A fita bucal porosa original, com abertura central para respirar e histórico de vários anos de credibilidade médica."
+        },
+        "dream-recovery-mouth-tape": {
+          "award": "Melhor para pele sensível",
+          "takeaway": "Adesivo premium de gel de silicone: o mais suave da categoria, reutilizável, sem obrigação de assinatura."
+        },
+        "intake-breathing": {
+          "award": "Melhor dilatador nasal premium",
+          "takeaway": "Dilatador externo magnético, recomendado por James Nestor, reutilizável com abas substituíveis."
+        },
+        "mute-nasal-dilator": {
+          "award": "Melhor stent interno clínico",
+          "takeaway": "Stent interno de polímero da Rhinomed com estudos publicados de fluxo de ar: o mecanismo mais forte entre os dilatadores."
+        },
+        "breathe-right-original": {
+          "award": "Melhor referência de farmácia",
+          "takeaway": "Tira externa liberada pela FDA há décadas, a US$ 0,33 por noite: teste esta antes dos dilatadores premium."
+        },
+        "nexcare-surgical-tape": {
+          "award": "Melhor faça-você-mesmo econômico",
+          "takeaway": "Fita médica de papel 3M de grau clínico a US$ 0,05 por noite: custo imbatível para biohackers dispostos a cortar as próprias tiras."
+        },
+        "ayo-sleep-tape": {
+          "award": "Melhor hipoalergênica K-beauty",
+          "takeaway": "Adesivo hipoalergênico coreano K-beauty a preço intermediário: uma alternativa suave para pele sensível."
+        },
+        "the-tape-co": {
+          "award": "Melhor design em X",
+          "takeaway": "O design em cruz deixa parte dos lábios descoberta e reduz o contato do adesivo; isso não foi testado como recurso de segurança."
+        },
+        "somnifit-sleep-strips": {
+          "award": "Melhor marca econômica",
+          "takeaway": "A fita bucal de marca confiável mais barata depois da Nexcare faça-você-mesmo: adesivo básico por menos de US$ 10 o pacote."
+        }
+      },
+      "faq": [
+        {
+          "q": "Qual é a melhor fita bucal em 2026?",
+          "a": "A Hostage Tape no geral: adesivo desenvolvido para barba, praticidade da assinatura, marca biohacker bem acabada. A Somnifix para um design poroso registrado na FDA. A Dream Recovery para pele sensível e gel de silicone premium."
+        },
+        {
+          "q": "Fechar a boca com fita é seguro?",
+          "a": "Depende de duas coisas: um nariz pelo qual você respira livremente e nenhuma apneia do sono sem tratamento. Não use fita se o nariz estiver entupido (resfriado, alergias, pólipos, desvio de septo). Se a apneia do sono for possível (ronco alto, engasgos à noite, pausas na respiração notadas pelo parceiro, sonolência durante o dia), consulte um médico primeiro: a fita pode reduzir o ronco e esconder o sinal de alerta. Nenhum design de fita, incluindo os porosos ou em X, demonstrou tornar seguro fechar a boca com fita."
+        },
+        {
+          "q": "Fita bucal ou dilatador nasal: o que usar?",
+          "a": "Resolvem problemas diferentes. A fita bucal força a respiração nasal fechando a boca. Os dilatadores nasais (Intake Breathing, Mute, Breathe Right) abrem as vias nasais para que não seja preciso respirar pela boca. Muitos usuários começam só com um dilatador e depois acrescentam a fita bucal quando a respiração nasal fica confortável."
+        },
+        {
+          "q": "Qual é a opção confiável mais barata?",
+          "a": "A 3M Nexcare Sensitive Skin Surgical Tape a ~US$ 0,05 por noite, para uma fita bucal faça-você-mesmo de grau clínico. Entre as tiras nasais externas, a Breathe Right Original a US$ 0,33 por noite."
+        },
+        {
+          "q": "A Hostage Tape realmente segura na barba?",
+          "a": "Sim: o adesivo acrílico da Hostage Tape foi desenvolvido especificamente para aderir aos pelos curtos da barba, onde a Somnifix, a Dream Recovery e as alternativas faça-você-mesmo escorregam. A adequação para barba é o principal diferencial nos comentários dos consumidores."
+        },
+        {
+          "q": "Quanto a categoria realmente custa por ano?",
+          "a": "Nexcare faça-você-mesmo: ~US$ 20 por ano. Breathe Right: ~US$ 120 por ano. SomniFit de marca: ~US$ 100 por ano. Assinatura Hostage Tape: ~US$ 156 por ano. Somnifix: ~US$ 330 por ano. Intake Breathing: ~US$ 240 por ano com as abas de reposição. Mute: ~US$ 435 por ano. Faixa total de ~US$ 20–435 por ano, dependendo do nível."
+        }
+      ]
     }
   },
   "criteria": {
@@ -1701,7 +2273,10 @@
     "signal-quality": "Qualidade do sinal e confiabilidade dos sensores",
     "training-content": "Programas de treino e conteúdo",
     "comfort": "Conforto e usabilidade",
-    "open-data": "Dados abertos e acesso para desenvolvedores"
+    "open-data": "Dados abertos e acesso para desenvolvedores",
+    "adhesion-comfort": "Adesão e conforto",
+    "breathing-mechanism": "Mecanismo e abordagem respiratória",
+    "material-safety": "Segurança dos materiais e tolerância da pele"
   },
   "categories": {
     "pemf": "Dispositivos PEMF",
@@ -1714,7 +2289,8 @@
     "massage-gun": "Pistolas de massagem",
     "hrv-wearable": "Monitores de HRV",
     "sauna": "Saunas e saunas de infravermelho",
-    "vagus-stim": "Estimuladores do nervo vago"
+    "vagus-stim": "Estimuladores do nervo vago",
+    "breathing-aid": "Fita bucal e respiração nasal"
   },
   "headToHeads": {
     "apple-watch-series-12-vs-whoop-5-0": {
@@ -2903,6 +3479,349 @@
         }
       ],
       "content": "## Resumo rápido\n\nO **Medito** é a melhor alternativa grátis ao Headspace: toda meditação é grátis, sem anúncios, sem conta e sem plano premium. O **Headspace** custa cerca de $70 por ano, mas oferece o ensino para iniciantes mais estruturado, uma biblioteca maior e um programa respaldado por pesquisas. Se o preço decide, escolha o Medito. Se a estrutura decide, escolha o Headspace.\n\n## O que cada um oferece\n\nO Medito é desenvolvido pela Medito Foundation, uma instituição de caridade registrada na Holanda. O código é público, não é preciso conta, e ele cobre o essencial: cursos para iniciantes, exercícios de respiração, conteúdo para dormir, sessões para estresse e ansiedade e um timer de meditação. É financiado por doações, não por assinaturas.\n\nO Headspace é um app por assinatura com teste grátis de 14 dias. Seu ponto forte é o ensino: cursos que levam um iniciante completo a uma prática diária estável, além de uma biblioteca ampla para sono, foco e o dia a dia. Sem assinatura, o conteúdo grátis é pouco mais que uma amostra.\n\n## Qual escolher\n\nEscolha o **Medito** se você não quer pagar, valoriza a privacidade ou não gosta de ofertas de upgrade. Escolha o **Headspace** se você quer um caminho guiado com mais variedade e não se importa em pagar por isso. Muitas pessoas começam pelo Medito e só assinam um app se depois quiserem mais estrutura. Para outras opções, veja [nosso ranking de apps de meditação](/reviews/compare/best-meditation-apps-2026) e [Headspace vs Insight Timer](/reviews/vs/headspace-vs-insight-timer), outra boa alternativa de baixo custo.\n\n## O que dizem as evidências\n\nOs apps de meditação foram estudados em ensaios randomizados, a maioria curtos, com benefícios modestos para estresse e humor em média e grande variação entre as pessoas. O Headspace financiou e publicou pesquisas sobre os próprios programas, o que conta a seu favor. O Medito não tem pesquisa própria comparável, mas as práticas básicas que ensina são do mesmo tipo que os estudos examinam. Nenhum dos dois apps é tratamento para uma condição de saúde mental.\n\n## Conclusão\n\nComo alternativa grátis ao Headspace, o **Medito** é a escolha mais limpa: sem custo, sem anúncios, sem conta. O **Headspace** continua sendo o melhor professor para iniciantes que querem estrutura e estão dispostos a pagar cerca de $70 por ano. Veja a [análise completa do Medito](/reviews/medito) e a [análise do Headspace](/reviews/headspace) para as notas."
+    },
+    "hostage-tape-vs-dream-recovery-mouth-tape": {
+      "title": "Hostage Tape vs Dream Recovery Mouth Tape (2026)",
+      "description": "Hostage Tape vs Dream Recovery: acrílico biohacker viral contra fita bucal premium reutilizável de gel de silicone. A ONDA analisa o duelo premium.",
+      "intro": "Hostage Tape e Dream Recovery são as duas fitas bucais biohacker premium que os usuários comparam. A diferença decisiva: a Hostage Tape usa adesivo acrílico desenvolvido para aderir à barba; a Dream Recovery usa gel de silicone para um contato mais suave com a pele e design reutilizável.",
+      "verdict": "Aderência na barba contra pele sensível. Hostage Tape pelo acrílico adequado para barba e pela praticidade da assinatura. Dream Recovery pela tolerância do gel de silicone na pele sensível e pelo design reutilizável.",
+      "bestForA": "Escolha a Hostage Tape se você tem barba e quer uma fita bucal de adesivo acrílico com a praticidade da assinatura.",
+      "bestForB": "Escolha a Dream Recovery se você tem pele sensível e quer uma fita bucal premium reutilizável de gel de silicone.",
+      "axes": [
+        {
+          "name": "Aderência na barba",
+          "note": "Hostage Tape: acrílico desenvolvido para pelos curtos. Dream Recovery: o gel de silicone não segura na barba."
+        },
+        {
+          "name": "Pele sensível",
+          "note": "Dream Recovery: o gel de silicone é o mais suave da categoria. Hostage Tape: adesivo acrílico com taxa moderada de reação na pele em usuários sensíveis."
+        },
+        {
+          "name": "Reutilização",
+          "note": "Dream Recovery: 2-3 usos por tira de gel de silicone. Hostage Tape: descartável de uso único."
+        },
+        {
+          "name": "Praticidade da assinatura",
+          "note": "Hostage Tape: assinatura de US$ 13/mês. Dream Recovery: compra por pacote."
+        },
+        {
+          "name": "Mecanismo de segurança",
+          "note": "Ambas têm vedação completa; a Hostage Tape tem um recorte no canto, que não foi testado como recurso de segurança. Se a apneia do sono for possível, consulte um médico primeiro."
+        },
+        {
+          "name": "Posição regulatória",
+          "note": "Ambas com estudos financiados pela marca, sem registro na FDA. Base de evidências comparável."
+        },
+        {
+          "name": "Custo por noite",
+          "note": "Hostage Tape: ~US$ 0,43 por noite. Dream Recovery: ~US$ 1 por noite efetivo com a reutilização. Hostage Tape mais barata."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hostage Tape ou Dream Recovery: qual é melhor?",
+          "a": "Para barba ou praticidade da assinatura, Hostage Tape. Para pele sensível ou preferência por gel de silicone premium, Dream Recovery. São visões diferentes sobre a química do adesivo."
+        },
+        {
+          "q": "O gel de silicone é realmente mais suave?",
+          "a": "Para pele sensível, sim: adesivos de gel de silicone são documentados como mais suaves que o acrílico em aplicações de uso diário. Para quem não tem pele sensível, a diferença é pequena."
+        },
+        {
+          "q": "Reutilizável ou descartável: faz diferença?",
+          "a": "Para o meio ambiente, o gel de silicone reutilizável da Dream Recovery é claramente melhor que a Hostage Tape descartável. No custo por noite, elas acabam ficando comparáveis; a reutilização é um benefício secundário."
+        },
+        {
+          "q": "Comparação do custo anual?",
+          "a": "Hostage Tape: ~US$ 156 por ano na assinatura. Dream Recovery: ~US$ 365 por ano comprando por pacote. A Hostage Tape é bem mais barata no ano."
+        }
+      ],
+      "content": "## Resumo\n\nAs duas são fitas bucais premium com visões diferentes sobre o adesivo. A Hostage Tape é acrílico adequado para barba com a praticidade da assinatura. A Dream Recovery é gel de silicone para pele sensível, reutilizável.\n\n## Quando escolher a Hostage Tape?\n\nSe você tem barba ou quer a praticidade da assinatura, o adesivo acrílico da Hostage Tape é a escolha certa, com custo anual menor.\n\n## Quando escolher a Dream Recovery?\n\nSe você tem pele sensível ou quer um design premium reutilizável de gel de silicone, a Dream Recovery é a escolha certa. Adesivo mais suave, tiras reutilizáveis, sem obrigação de assinatura."
+    },
+    "hostage-tape-vs-somnifix": {
+      "title": "Hostage Tape vs Somnifix (2026)",
+      "description": "Hostage Tape vs Somnifix: a marca biohacker viral de 2026 contra a fita bucal médica original registrada na FDA. A ONDA analisa as duas principais fitas bucais.",
+      "intro": "Hostage Tape e Somnifix são as duas fitas bucais que os usuários comparam ao escolher um dispositivo premium de respiração nasal. A diferença decisiva: a Hostage Tape aposta no adesivo acrílico adequado para barba e na praticidade da assinatura; a Somnifix aposta em um design poroso registrado na FDA e em credibilidade médica de vários anos.",
+      "verdict": "Adequação para barba contra credibilidade médica. Hostage Tape pelo adesivo acrílico adequado para barba e pela praticidade da assinatura. Somnifix por um design poroso registrado na FDA.",
+      "bestForA": "Escolha a Hostage Tape se você tem barba e quer uma fita bucal de marca biohacker com a praticidade da assinatura.",
+      "bestForB": "Escolha a Somnifix se você quer uma fita bucal com a credibilidade médica do registro na FDA e um design poroso.",
+      "axes": [
+        {
+          "name": "Aderência na barba",
+          "note": "Hostage Tape: desenvolvida especificamente para os pelos curtos da barba. Somnifix: adesivo desenvolvido para contato com a pele limpa; escorrega na barba."
+        },
+        {
+          "name": "Mecanismo de segurança",
+          "note": "Somnifix: design poroso com abertura central para respirar. Hostage Tape: vedação completa com recorte no canto. Nenhum dos dois designs foi testado como recurso de segurança; se a apneia do sono for possível, consulte um médico primeiro."
+        },
+        {
+          "name": "Posição regulatória",
+          "note": "Somnifix: dispositivo médico registrado na FDA. Hostage Tape: estudos financiados pela marca, sem registro na FDA."
+        },
+        {
+          "name": "Reconhecimento da marca",
+          "note": "Hostage Tape: marca biohacker viral de 2025–2026. Somnifix: a original da categoria, consolidada mas mais discreta."
+        },
+        {
+          "name": "Tolerância da pele",
+          "note": "Ambas com adesivos hipoalergênicos de grau médico. Taxas de reação na pele comparáveis em grande escala."
+        },
+        {
+          "name": "Praticidade da assinatura",
+          "note": "Hostage Tape: assinatura de US$ 13/mês, nunca falta. Somnifix: compra por pacote."
+        },
+        {
+          "name": "Custo por noite",
+          "note": "Hostage Tape: ~US$ 0,43 por noite. Somnifix: ~US$ 0,90 por noite. Hostage Tape ~50% mais barata."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Hostage Tape ou Somnifix: qual é melhor?",
+          "a": "Para quem tem barba ou quer a praticidade da assinatura, Hostage Tape. Para quem quer um design poroso registrado na FDA, Somnifix. São visões diferentes sobre o que importa em uma fita bucal."
+        },
+        {
+          "q": "A Somnifix é mais segura que a Hostage Tape?",
+          "a": "Isso não foi demonstrado. A abertura porosa da Somnifix e o recorte no canto da Hostage Tape deixam parte dos lábios descoberta, mas nenhum dos dois foi testado como recurso de segurança. A segurança depende de um nariz desobstruído e da ausência de apneia do sono sem tratamento: se a apneia do sono for possível, consulte um médico primeiro."
+        },
+        {
+          "q": "A Hostage Tape realmente segura na barba?",
+          "a": "Sim: o adesivo acrílico foi desenvolvido especificamente para aderir aos pelos curtos. A adequação para barba é o diferencial nos comentários dos consumidores em relação à Somnifix e às alternativas faça-você-mesmo."
+        },
+        {
+          "q": "Custo anual total?",
+          "a": "Hostage Tape: ~US$ 156 por ano (assinatura). Somnifix: ~US$ 330 por ano (por pacote). A Hostage Tape é ~50% mais barata no ano."
+        }
+      ],
+      "content": "## Resumo\n\nAs duas são fitas bucais premium. A Hostage Tape é a marca biohacker viral desenvolvida para barba. A Somnifix é a original médica registrada na FDA.\n\n## Quando escolher a Hostage Tape?\n\nSe você tem barba ou quer a praticidade da assinatura e um adesivo acrílico adequado para barba, a Hostage Tape é a escolha certa, com custo anual menor.\n\n## Quando escolher a Somnifix?\n\nSe você quer um design poroso registrado na FDA com histórico de vários anos de credibilidade médica, a Somnifix é a escolha certa. Se a apneia do sono for possível, consulte um médico primeiro."
+    },
+    "hostage-tape-vs-intake-breathing": {
+      "title": "Hostage Tape vs Intake Breathing (2026)",
+      "description": "Hostage Tape vs Intake Breathing: fita bucal contra dilatador nasal externo magnético. A ONDA analisa vedação da boca contra dilatação nasal.",
+      "intro": "Hostage Tape e Intake Breathing representam as duas abordagens opostas para forçar a respiração nasal durante a noite. A Hostage Tape fecha a boca para que você só consiga respirar pelo nariz. O Intake Breathing abre mecanicamente as narinas para que a respiração nasal se torne o caminho mais fácil, com menos resistência.",
+      "verdict": "Mecanismos diferentes para o mesmo objetivo. Hostage Tape para quem está comprometido com a vedação da boca e com a praticidade da marca biohacker. Intake Breathing para quem não consegue se adaptar à fita bucal e prefere agir nas vias nasais.",
+      "bestForA": "Escolha a Hostage Tape se você quer forçar a respiração nasal fechando a boca: a abordagem direta, com a praticidade da assinatura.",
+      "bestForB": "Escolha o Intake Breathing se você não consegue se adaptar à fita bucal e quer facilitar a respiração nasal com a dilatação mecânica das narinas.",
+      "axes": [
+        {
+          "name": "Mecanismo",
+          "note": "Hostage Tape: a vedação da boca força a respiração nasal. Intake: a dilatação mecânica das narinas facilita a respiração nasal. Mesmo objetivo, abordagens opostas."
+        },
+        {
+          "name": "Adaptação",
+          "note": "Intake: confortável desde a primeira noite. Hostage Tape: a maioria dos usuários se adapta em 1-2 semanas; alguns nunca toleram a vedação completa da boca."
+        },
+        {
+          "name": "Preocupações de segurança",
+          "note": "Hostage Tape: não com o nariz entupido nem com apneia do sono sem tratamento. Intake: os dilatadores também podem reduzir o ronco e esconder uma possível apneia do sono; se a apneia for possível, consulte um médico primeiro."
+        },
+        {
+          "name": "Acabamento da marca / praticidade",
+          "note": "Hostage Tape: praticidade da assinatura, marca biohacker viral. Intake: posicionamento premium, menos barulho biohacker."
+        },
+        {
+          "name": "Custo anual",
+          "note": "Hostage Tape: ~US$ 156 por ano. Intake: ~US$ 240 por ano com as abas de reposição. Hostage Tape mais barata."
+        },
+        {
+          "name": "Eficácia para usuários persistentes",
+          "note": "Hostage Tape: força a respiração nasal de forma absoluta. Intake: facilita a respiração nasal, mas não impede a respiração pela boca se o usuário abrir a boca."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Fita bucal ou dilatador nasal: qual abordagem é melhor?",
+          "a": "Resolvem problemas diferentes. A fita bucal (Hostage Tape) força a respiração nasal fechando a boca. O dilatador nasal (Intake) abre as vias nasais para que respirar pela boca não seja a opção mais fácil. Muitos usuários começam só com um dilatador e depois acrescentam a fita bucal quando a respiração nasal fica confortável."
+        },
+        {
+          "q": "Posso usar os dois?",
+          "a": "Sim, e muitos usuários persistentes fazem isso. O dilatador nasal (Intake) facilita o fluxo de ar pelo nariz, a fita bucal (Hostage Tape) impede a volta à respiração pela boca. Custo combinado: ~US$ 396 por ano."
+        },
+        {
+          "q": "Qual é mais seguro?",
+          "a": "Nenhum dos dois substitui uma avaliação de apneia do sono. A fita bucal não é para nariz entupido nem para apneia do sono sem tratamento. Os dilatadores também podem reduzir o ronco e esconder uma possível apneia do sono: se a apneia for possível, consulte um médico primeiro."
+        },
+        {
+          "q": "Qual experimentar primeiro?",
+          "a": "O Intake Breathing: é confortável desde a primeira noite e facilita a respiração nasal sem fechar a boca. Os dilatadores também podem reduzir o ronco e esconder uma possível apneia do sono: se a apneia for possível, consulte um médico primeiro."
+        }
+      ],
+      "content": "## Resumo\n\nDuas abordagens opostas para a respiração nasal. A Hostage Tape a força fechando a boca. O Intake a facilita dilatando as narinas. Mecanismos diferentes, que podem ser combinados.\n\n## Quando escolher a Hostage Tape?\n\nSe você está comprometido em forçar a respiração nasal fechando a boca e já descartou a apneia do sono, a Hostage Tape é a escolha certa. Mecanismo direto, praticidade da assinatura.\n\n## Quando escolher o Intake Breathing?\n\nSe você não consegue se adaptar à fita bucal, o Intake é a escolha certa. Confortável desde a primeira noite, facilita a respiração nasal sem forçá-la. Os dilatadores também podem reduzir o ronco e esconder uma possível apneia do sono: se a apneia for possível, consulte um médico primeiro."
+    },
+    "hostage-tape-vs-somnifix-vs-intake-breathing": {
+      "title": "Hostage Tape vs Somnifix vs Intake Breathing (2026)",
+      "description": "Hostage Tape vs Somnifix vs Intake Breathing: os três dispositivos de respiração nasal que definem a categoria, comparados. Biohacker, FDA e magnético.",
+      "intro": "Os três dispositivos de respiração nasal que definem a categoria em 2026. Hostage Tape: fita bucal biohacker viral com adesivo acrílico adequado para barba. Somnifix: fita bucal porosa registrada na FDA com abertura central para respirar. Intake Breathing: dilatador nasal externo magnético premium (recomendado por James Nestor).",
+      "verdict": "Três visões diferentes, três respostas certas diferentes. Hostage Tape para a vedação da boca biohacker adequada para barba. Somnifix para um design poroso registrado na FDA. Intake Breathing para a dilatação magnética externa premium.",
+      "bestForA": "Escolha a Hostage Tape se você quer uma fita bucal de marca biohacker adequada para barba, com a praticidade da assinatura.",
+      "bestForB": "Escolha a Somnifix se você quer uma fita bucal com a credibilidade médica do registro na FDA e um design poroso.",
+      "bestForC": "Escolha o Intake Breathing se você não consegue se adaptar à fita bucal e prefere uma dilatação nasal magnética externa premium.",
+      "axes": [
+        {
+          "name": "Mecanismo",
+          "note": "Hostage Tape: fita bucal de vedação completa. Somnifix: fita bucal porosa com abertura para respirar. Intake: dilatação nasal magnética externa. Mecanismos diferentes; todos favorecem a respiração nasal."
+        },
+        {
+          "name": "Posição regulatória",
+          "note": "Somnifix: dispositivo médico registrado na FDA. Hostage Tape e Intake: estudos financiados pela marca. A Somnifix vence."
+        },
+        {
+          "name": "Segurança / apneia do sono",
+          "note": "Nenhum demonstrou ser seguro em caso de apneia do sono. Somnifix (abertura porosa) e Hostage Tape (recorte no canto): designs não testados como recursos de segurança; não com o nariz entupido. Intake: os dilatadores também podem reduzir o ronco e esconder uma possível apneia do sono; se a apneia for possível, consulte um médico primeiro."
+        },
+        {
+          "name": "Adequação para barba",
+          "note": "Hostage Tape: a melhor aderência na barba da categoria. Somnifix e Intake: não desenvolvidos para barba."
+        },
+        {
+          "name": "Praticidade da assinatura",
+          "note": "Hostage Tape: assinatura de US$ 13/mês. Somnifix e Intake: compra por pacote."
+        },
+        {
+          "name": "Curva de adaptação",
+          "note": "Intake: confortável desde a primeira noite. Hostage Tape: adaptação em 1-2 semanas. Somnifix: o design poroso facilita a adaptação em relação à vedação completa, mas ainda exige costume."
+        },
+        {
+          "name": "Custo anual",
+          "note": "Hostage Tape: ~US$ 156 por ano. Intake: ~US$ 240 por ano. Somnifix: ~US$ 330 por ano. Hostage Tape a mais barata."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Qual dispositivo de respiração nasal comprar em 2026?",
+          "a": "Três perguntas resolvem. Tem barba e quer a praticidade da assinatura? Hostage Tape. Quer a credibilidade médica do registro na FDA com um design poroso? Somnifix. Não consegue se adaptar à fita bucal? Intake Breathing."
+        },
+        {
+          "q": "Hostage Tape ou Intake: qual é o melhor ponto de partida?",
+          "a": "O Intake é confortável desde a primeira noite; a fita bucal tem uma curva de adaptação e não é para nariz entupido. Os dilatadores também podem reduzir o ronco e esconder uma possível apneia do sono: se a apneia for possível, consulte um médico primeiro."
+        },
+        {
+          "q": "Posso combinar os três?",
+          "a": "Não há motivo para combinar duas fitas bucais. Combinação comum: Intake Breathing para a dilatação nasal + uma fita bucal (Hostage Tape ou Somnifix) para fechar a boca. Custo anual combinado: ~US$ 396–570."
+        },
+        {
+          "q": "Qual tem a base de evidências mais sólida?",
+          "a": "A Somnifix na posição regulatória (registro na FDA). O Intake na mecânica de ação (recomendação de James Nestor, estudos de dilatação magnética). A Hostage Tape no volume de comentários dos consumidores."
+        },
+        {
+          "q": "Comparação do custo anual?",
+          "a": "Hostage Tape: ~US$ 156 por ano. Intake Breathing: ~US$ 240 por ano. Somnifix: ~US$ 330 por ano. A Hostage Tape é a mais barata por uma margem significativa; a Somnifix é a mais cara, mas com a posição regulatória mais sólida."
+        }
+      ],
+      "content": "## Resumo\n\nTrês dispositivos de respiração nasal que definem a categoria, três visões diferentes. Hostage Tape = vedação da boca biohacker adequada para barba. Somnifix = fita bucal porosa registrada na FDA. Intake = dilatador nasal externo premium.\n\n## Quando escolher a Hostage Tape?\n\nSe você tem barba e quer uma fita bucal de marca biohacker com a praticidade da assinatura, a Hostage Tape é a escolha certa, com o menor custo anual.\n\n## Quando escolher a Somnifix?\n\nSe você quer a credibilidade médica do registro na FDA com um design poroso, a Somnifix é a escolha certa. Histórico de vários anos.\n\n## Quando escolher o Intake Breathing?\n\nSe você não consegue se adaptar à fita bucal, o Intake é a escolha certa. Dilatação magnética externa premium, recomendada por James Nestor. Os dilatadores também podem reduzir o ronco e esconder uma possível apneia do sono: se a apneia for possível, consulte um médico primeiro."
+    },
+    "intake-breathing-vs-breathe-right-original": {
+      "title": "Intake Breathing vs Breathe Right Original (2026)",
+      "description": "Intake Breathing vs Breathe Right Original: dilatador magnético premium contra tira de farmácia com tensão de mola. A ONDA analisa o duelo dos dilatadores externos.",
+      "intro": "Intake Breathing e Breathe Right Original são os dois dilatadores nasais externos que os usuários comparam. Ambos ficam na parte externa do nariz. A diferença decisiva: o Intake usa dilatação magnética com abas adesivas substituíveis; a Breathe Right usa a alavanca passiva de tensão de mola de uma tira adesiva descartável.",
+      "verdict": "Mecanismo premium contra economia de farmácia. Intake Breathing por uma dilatação magnética mais forte e design reutilizável. Breathe Right por décadas de histórico com liberação da FDA a US$ 0,33 por noite.",
+      "bestForA": "Escolha o Intake Breathing se você quer uma dilatação nasal externa mais forte, com faixa magnética reutilizável e uma marca recomendada por James Nestor.",
+      "bestForB": "Escolha a Breathe Right Original se você quer a referência de farmácia liberada pela FDA com o menor custo por noite: o primeiro dilatador nasal a experimentar.",
+      "axes": [
+        {
+          "name": "Força do mecanismo",
+          "note": "Intake: dilatação magnética, alavanca mais forte. Breathe Right: tensão de mola passiva por tira de plástico, mais fraca."
+        },
+        {
+          "name": "Posição regulatória",
+          "note": "Breathe Right: liberada pela FDA com décadas de histórico. Intake: estudos financiados pela marca, sem FDA Classe II."
+        },
+        {
+          "name": "Reutilização",
+          "note": "Intake: faixa magnética reutilizável com abas adesivas substituíveis. Breathe Right: descartável de uso único."
+        },
+        {
+          "name": "Tolerância da pele",
+          "note": "Intake: as abas pequenas minimizam o contato com o adesivo. Breathe Right: tira maior, com mais área de adesivo; relatos moderados de irritação na pele."
+        },
+        {
+          "name": "Distribuição",
+          "note": "Breathe Right: distribuição ampla em farmácias. Intake: somente venda direta ou Amazon."
+        },
+        {
+          "name": "Custo por noite",
+          "note": "Breathe Right: ~US$ 0,33 por noite. Intake: ~US$ 0,65 por noite na manutenção. Breathe Right ~50% mais barata."
+        },
+        {
+          "name": "Recomendação",
+          "note": "Intake: recomendação explícita de James Nestor em Breath. Breathe Right: marca genérica de farmácia sem endosso biohacker."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Intake ou Breathe Right: qual é melhor?",
+          "a": "O Intake vence em força do mecanismo, reutilização e endosso de James Nestor. A Breathe Right vence no histórico com liberação da FDA e no menor custo por noite. São faixas diferentes."
+        },
+        {
+          "q": "Devo experimentar a Breathe Right primeiro?",
+          "a": "Sim: a Breathe Right, a US$ 0,33 por noite, é a forma de menor compromisso para testar se a dilatação nasal externa ajuda você. Se funcionar, ótimo; se quiser uma dilatação mais forte, passe para o Intake ou o Mute."
+        },
+        {
+          "q": "Por que James Nestor recomenda especificamente o Intake?",
+          "a": "O mecanismo magnético oferece uma dilatação mais forte que a tensão de mola passiva da Breathe Right. O livro Breath, de Nestor, enfatiza a otimização das vias nasais; o Intake se encaixa nessa tese."
+        },
+        {
+          "q": "Comparação do custo anual?",
+          "a": "Breathe Right: ~US$ 120 por ano. Intake Breathing: ~US$ 240 por ano (kit inicial + abas de reposição). A Breathe Right é ~50% mais barata no ano."
+        }
+      ],
+      "content": "## Resumo\n\nOs dois são dilatadores nasais externos. O Intake é magnético premium e reutilizável. A Breathe Right é o padrão de farmácia liberado pela FDA.\n\n## Quando escolher o Intake Breathing?\n\nSe você quer uma dilatação magnética externa mais forte, com design reutilizável e o endosso de James Nestor, o Intake é a escolha certa. O dilatador externo da faixa premium.\n\n## Quando escolher a Breathe Right Original?\n\nSe você quer a referência de farmácia liberada pela FDA com o menor custo por noite, a Breathe Right é a escolha certa. Experimente esta antes de partir para as alternativas premium."
+    },
+    "intake-breathing-vs-mute-nasal-dilator": {
+      "title": "Intake Breathing vs Mute Nasal Dilator (2026)",
+      "description": "Intake Breathing vs Mute Nasal Dilator: magnético externo premium contra stent interno clínico. A ONDA analisa o duelo dos dilatadores nasais premium.",
+      "intro": "Intake Breathing e Mute Nasal Dilator são os dois dilatadores nasais premium que os usuários comparam quando as tiras externas não bastam. A diferença decisiva: o Intake é uma dilatação magnética externa (visível no rosto); o Mute é um stent interno de polímero (invisível, mas exige inserção nas narinas).",
+      "verdict": "Visibilidade externa contra tolerância interna. Intake Breathing pelo magnético externo, sem inserção. Mute pelo stent interno invisível, com o mecanismo mecânico mais forte e estudos clínicos publicados sobre fluxo de ar.",
+      "bestForA": "Escolha o Intake Breathing se você quer uma dilatação nasal magnética externa premium sem inserção interna.",
+      "bestForB": "Escolha o Mute Nasal Dilator se você tolera dispositivos internos e quer uma dilatação mecânica apoiada em evidências clínicas, com o mecanismo mais forte.",
+      "axes": [
+        {
+          "name": "Força do mecanismo",
+          "note": "Mute: stent interno de polímero, a dilatação mecânica mais direta. Intake: alavanca magnética externa, menos direta, mas ainda eficaz."
+        },
+        {
+          "name": "Evidências clínicas",
+          "note": "Mute: estudos clínicos publicados pela Rhinomed sobre fluxo de ar. Intake: estudos financiados pela marca + endosso de James Nestor."
+        },
+        {
+          "name": "Visibilidade externa",
+          "note": "Mute: invisível por fora. Intake: faixa magnética visível sobre as narinas."
+        },
+        {
+          "name": "Adaptação inicial",
+          "note": "Intake: abas adesivas, confortável desde a primeira noite. Mute: curva de adaptação à inserção interna em 3-5 noites."
+        },
+        {
+          "name": "Tolerância em diferentes anatomias",
+          "note": "Intake: externo, serve para a maioria dos usuários. Mute: interno, parte dos usuários nunca se adapta; exige kit de tamanhos."
+        },
+        {
+          "name": "Reutilização",
+          "note": "Intake: faixa magnética reutilizável, abas adesivas substituíveis. Mute: cada stent dura 1 semana."
+        },
+        {
+          "name": "Custo anual",
+          "note": "Mute: ~US$ 435 por ano. Intake: ~US$ 240 por ano com as abas. O Intake é bem mais barato no ano."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Intake Breathing ou Mute: qual é melhor?",
+          "a": "Visões diferentes. O Intake vence em conforto externo, sem necessidade de inserção, e menor custo anual. O Mute vence no mecanismo mais forte e nas evidências clínicas publicadas. Escolha de acordo com sua tolerância a dispositivos internos."
+        },
+        {
+          "q": "O Mute realmente precisa ser inserido?",
+          "a": "Sim: o stent de polímero é inserido nas narinas e mantém as vias aéreas abertas por dentro. A maioria dos usuários se adapta em 3-5 noites; parte deles nunca tolera dispositivos internos com conforto."
+        },
+        {
+          "q": "Qual tem as melhores evidências clínicas?",
+          "a": "O Mute: a Rhinomed publicou estudos de fluxo de ar sobre este dispositivo específico. O Intake tem estudos financiados pela marca + o endosso de James Nestor, mas menos profundidade revisada por pares."
+        },
+        {
+          "q": "Posso experimentar os dois?",
+          "a": "Sim: os dois têm kits iniciais. Experimente o Intake primeiro (sem inserção) e o Mute depois, se a dilatação externa parecer insuficiente."
+        }
+      ],
+      "content": "## Resumo\n\nOs dois são dilatadores nasais premium. O Intake é magnético externo. O Mute é um stent interno de polímero. Mecanismos diferentes, perfis de tolerância diferentes.\n\n## Quando escolher o Intake Breathing?\n\nSe você quer uma dilatação magnética externa premium sem inserção interna, o Intake é a escolha certa. Confortável desde a primeira noite, custo anual menor, recomendado por James Nestor.\n\n## Quando escolher o Mute Nasal Dilator?\n\nSe você tolera dispositivos internos e quer o mecanismo mais forte, com estudos clínicos publicados sobre fluxo de ar, o Mute é a escolha certa. Invisível por fora, a dilatação mecânica mais direta."
     }
   }
 }

@@ -103,11 +103,11 @@ export const COLD_SAFETY: Record<Lang, ColdSafetyCopy> = {
   },
   pt: {
     title: 'Segurança em primeiro lugar',
-    shock: 'O choque pelo frio pode matar nos primeiros minutos, antes de o corpo ter tempo de arrefecer: reflexo de arquejo, respiração rápida e descontrolada e alterações do ritmo cardíaco.',
+    shock: 'O choque pelo frio pode matar nos primeiros minutos, antes que o corpo tenha tempo de esfriar: reflexo de arquejo, respiração rápida e descontrolada e alterações do ritmo cardíaco.',
     items: [
       'Nunca entre sozinho em águas abertas frias.',
       'Nunca depois de beber álcool.',
-      'Fale primeiro com um médico se tiver doença cardíaca, arritmia, pressão alta, fenómeno de Raynaud ou outro problema de circulação, ou se estiver grávida.',
+      'Fale com um médico primeiro se você tiver doença cardíaca, arritmia, pressão alta, fenômeno de Raynaud ou outro problema de circulação, ou se estiver grávida.',
       'Pare e procure ajuda se sentir dor no peito, palpitações ou desmaio.',
     ],
     link: 'O que as evidências mostram — e os riscos →',

@@ -487,6 +487,7 @@ export function glossaryLocalizedLangs(slug: string): readonly string[] {
  * ES and RU keep their existing hand-curated pilot lists above — this block
  * only adds UK and ZH.
  */
+import { ARTICLE_RELEASE_QUEUE } from './article-release-queue'
 const ARTICLE_ROLLOUT_BATCH = 11
 const ARTICLE_LOCALE_ROLLOUTS: readonly { lang: string; start: string }[] = [
   { lang: 'uk', start: '2026-08-03' },
@@ -677,7 +678,9 @@ const liveLocaleArticles: Record<string, string[]> = (() => {
     const early = new Set(ARTICLE_LOCALE_EARLY[lang] ?? [])
     // Drip index runs over the NON-early backlog only, so adding early-published
     // bodies never shifts already-live drip slugs back out of the window.
-    const backlog = slugs.filter((s) => !early.has(s))
+    // Slugs in the article release queue publish only on their queue date (2026-10-07+).
+    const queued = new Set(ARTICLE_RELEASE_QUEUE[lang] ?? [])
+    const backlog = slugs.filter((s) => !early.has(s) && !queued.has(s))
     const live = [...early].filter((s) => s in bodies).concat(
       backlog.filter((_, i) => articleRolloutDate(start, i) <= BUILD_DATE),
     ).sort()
