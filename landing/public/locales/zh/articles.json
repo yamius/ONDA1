@@ -1103,9 +1103,9 @@
       "title": "共振频率:寻找系统的自然节律",
       "subtitle": "相干性优化 — 扫描你的个人共振频率并锁定系统和谐",
       "description": "每个人都有独特的共振呼吸频率(每分钟约 4.5–7 次),在此频率下呼吸、心率与血压的波动步调一致,HRV 达到峰值。一次简单的共振扫描——配合 HRV 监测设备尝试不同呼吸频率——就能找到你的频率。",
-      "imageAlt": "金色共振波进入迷走神经的水晶心脏——COHERENCE_SCORE 99% 与 VAGAL_TUBE TUNED 叠加。ONDA Life 共振呼吸协议可视化。",
-      "imageTitle": "[ COHERENCE_SCORE: 99% ] — 共振频率锁定。Vagal Tube: tuned。呼吸—心跳节律:同步。",
-      "imageCaption": "[ VAGAL_TUBE: TUNED ] — 共振锁定在 0.1 Hz。相干性评分:99%。系统处于相位中。",
+      "imageAlt": "金色共振波进入迷走神经的水晶心脏——COHERENCE_SCORE 99% 与 VAGAL_TUBE TUNED 叠加(示意画面,并非真实评分)。ONDA Life 共振呼吸协议可视化。",
+      "imageTitle": "[ 示意图 · COHERENCE_SCORE: 99% ] — 示意画面,并非真实评分。共振频率锁定。Vagal Tube: tuned。呼吸—心跳节律:同步。",
+      "imageCaption": "[ VAGAL_TUBE: TUNED ] — 共振锁定在 0.1 Hz。相干性评分:99%(示意画面,并非真实评分)。系统处于相位中。",
       "neuralSuggestion": {
         "text": "频率锁定。现在压力测试缓冲区——构建容错性使相干性在负荷下保持。",
         "linkText": "HRV 缓冲区与容错协议"

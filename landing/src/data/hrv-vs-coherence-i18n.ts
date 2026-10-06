@@ -71,7 +71,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
           ],
         },
         paras: [
-          'The key nuance: HRV can be high in a *noisy*, irregular way, but coherence specifically rewards a clean, organised oscillation. High coherence usually comes with a rise in HRV; high HRV doesn’t always mean high coherence.',
+          'The key nuance: HRV can be high in a *noisy*, irregular way, but coherence specifically rewards a clean, organised oscillation. During slow breathing both often rise together, but they are different measures; high HRV doesn’t always mean high coherence.',
         ],
       },
       {
@@ -168,7 +168,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
           ],
         },
         paras: [
-          'Ключевой нюанс: HRV может быть высокой *шумным*, нерегулярным образом, а когерентность вознаграждает именно чистое, организованное колебание. Высокая когерентность обычно сопровождается ростом HRV; высокий HRV не всегда означает высокую когерентность.',
+          'Ключевой нюанс: HRV может быть высокой *шумным*, нерегулярным образом, а когерентность вознаграждает именно чистое, организованное колебание. При медленном дыхании они часто растут вместе, но это разные показатели; высокий HRV не всегда означает высокую когерентность.',
         ],
       },
       {
@@ -265,7 +265,7 @@ export const HRV_VS_COHERENCE_I18N: Record<'en' | 'ru' | 'es', HvcCopy> = {
           ],
         },
         paras: [
-          'El matiz clave: la HRV puede ser alta de forma *ruidosa* e irregular, pero la coherencia premia específicamente una oscilación limpia y organizada. Una coherencia alta suele venir con una subida de la HRV; una HRV alta no siempre significa coherencia alta.',
+          'El matiz clave: la HRV puede ser alta de forma *ruidosa* e irregular, pero la coherencia premia específicamente una oscilación limpia y organizada. Durante la respiración lenta ambas suelen subir juntas, pero son medidas distintas; una HRV alta no siempre significa coherencia alta.',
         ],
       },
       {

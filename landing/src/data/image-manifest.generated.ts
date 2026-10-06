@@ -2272,6 +2272,18 @@ export const IMAGE_DIMENSIONS: Record<string, { width: number; height: number }>
     "width": 1920,
     "height": 820
   },
+  "/images/science/concepts-coherence.avif": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-coherence.png": {
+    "width": 1916,
+    "height": 821
+  },
+  "/images/science/concepts-coherence.webp": {
+    "width": 1916,
+    "height": 821
+  },
   "/images/science/concepts-heart-rate-variability.avif": {
     "width": 1916,
     "height": 821

@@ -1606,9 +1606,9 @@
       "seoTitle": "Frecuencia resonante: tu pico de HRV",
       "subtitle": "Optimización de coherencia — escaneando tu frecuencia personal de resonancia y bloqueando la armonía del sistema",
       "description": "Cada persona tiene una frecuencia respiratoria resonante única (unas 4,5–7 respiraciones por minuto) donde las oscilaciones de la respiración, la frecuencia cardíaca y la presión arterial se acompasan y la HRV alcanza su pico. Un escaneo de resonancia sencillo — un barrido de ritmos respiratorios con un monitor de HRV — encuentra la tuya.",
-      "imageAlt": "Corazón cristalino con onda dorada de resonancia entrando en el nervio vagal — overlays COHERENCE_SCORE 99% y VAGAL_TUBE TUNED. Visualización ONDA Life del protocolo de respiración a frecuencia resonante.",
-      "imageTitle": "[ COHERENCE_SCORE: 99% ] — Frecuencia resonante bloqueada. Tubo vagal: afinado. Ritmo respiración–corazón: acompasado.",
-      "imageCaption": "[ VAGAL_TUBE: TUNED ] — Resonancia bloqueada a 0.1 Hz. Puntuación de coherencia: 99 %. El sistema está en fase.",
+      "imageAlt": "Corazón cristalino con onda dorada de resonancia entrando en el nervio vagal — overlays COHERENCE_SCORE 99% y VAGAL_TUBE TUNED (visualización ilustrativa, no una puntuación real). Visualización ONDA Life del protocolo de respiración a frecuencia resonante.",
+      "imageTitle": "[ ILUSTRACIÓN · COHERENCE_SCORE: 99% ] — visualización ilustrativa, no una puntuación real. Frecuencia resonante bloqueada. Tubo vagal: afinado. Ritmo respiración–corazón: acompasado.",
+      "imageCaption": "[ VAGAL_TUBE: TUNED ] — Resonancia bloqueada a 0.1 Hz. Puntuación de coherencia: 99 % (visualización ilustrativa, no una puntuación real). El sistema está en fase.",
       "neuralSuggestion": {
         "text": "Frecuencia bloqueada. Ahora somete a prueba el búfer — construye tolerancia a fallos para que la coherencia aguante bajo carga.",
         "linkText": "Búfer de HRV y protocolo de tolerancia a fallos"

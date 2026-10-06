@@ -1173,17 +1173,17 @@ export const ARTICLE_FAQ_RAW: Record<string, { question: string; answer: string 
     {
       question: 'What is resonant frequency breathing and how does it differ from standard breathing exercises?',
       answer:
-        'Resonant frequency breathing targets the exact individual rhythm (about 4.5–7 breaths per minute) where the cardiovascular and respiratory systems enter phase-lock — called baroreflex resonance. Unlike generic "deep breathing" with fixed timing, resonant frequency is identified through a personalized frequency sweep and LF-HRV peak analysis. At this specific frequency, HRV surges to its ceiling, vascular resistance drops, and the Vagus Nerve broadcasts a system-wide safety signal simultaneously.',
+        'Resonant frequency breathing targets the exact individual rhythm (about 4.5–7 breaths per minute) where the cardiovascular and respiratory systems come into step — called baroreflex resonance. Unlike generic "deep breathing" with fixed timing, resonant frequency is identified through a personalized frequency sweep and LF-HRV peak analysis. At this frequency, heart-rate oscillations grow large; wider benefits are partly hypotheses still being tested.',
     },
     {
       question: 'How long does it take to identify my personal resonant frequency?',
       answer:
-        'A basic resonance scan takes 20–30 minutes. Test 5.0, 5.5, 6.0, and 6.5 breaths per minute, holding each pattern for 3–4 minutes while monitoring HRV in real time. The frequency producing the highest LF spectral power peak is your resonant frequency. Once identified, it remains stable and becomes a lifelong calibration reference. A starting point before scanning: the 5:5 ratio (5-second inhale, 5-second exhale = 6 breaths/min) is the most common resonant point for adults.',
+        'A basic resonance scan takes 20–30 minutes. Test 5.0, 5.5, 6.0, and 6.5 breaths per minute, holding each pattern for 3–4 minutes while monitoring HRV in real time. The frequency producing the highest LF spectral power peak is your resonant frequency. In one study the resonant frequency stayed stable across ten sessions of biofeedback training (Vaschillo 2006), so it can serve as your calibration reference. A starting point before scanning: the 5:5 ratio (5-second inhale, 5-second exhale = 6 breaths/min) is the most common resonant point for adults.',
     },
     {
       question: 'What is "vagal capture" and how does resonant breathing trigger it?',
       answer:
-        'Vagal capture is the phenomenon where sustained breathing at resonant frequency forces the Vagus Nerve into synchronized, high-amplitude oscillation — increasing efferent vagal output to the heart, gut, and immune system simultaneously. This begins within 90 seconds of reaching resonance and escalates over 5–10 minutes. The result is measurable cortisol reduction, improved gut motility, enhanced immune cell activity, and a brain shift into Alpha/Theta border activity — the state of relaxed alertness optimal for creative work and recovery.',
+        '"Vagal capture" is an informal label, not a scientific term. What is established: when you breathe at your resonance rate, breathing, blood pressure and heart rate come into step, and heart-rate oscillations grow large. Downstream benefits beyond this — for stress, mood, digestion or immunity — are partly hypotheses still being tested.',
     },
   ],
   'fault-tolerant-human-hrv-buffer': [

@@ -2130,7 +2130,9 @@ Popular material often goes further: that the heart and brain lock into phase, t
 
 During practice with an Apple Watch, the ONDA app shows a live coherence score (it is not available with the phone camera). It is ONDA's own measure of how regular the breath-linked heart rhythm is — a feedback metric, not a clinical biomarker.
 
-In ONDA's language, Part 5 works on "the density of presence" through "high coherence in the electromagnetic field of the cells" — an image for a calm, collected state, not a physical field that other people can detect.`,
+In ONDA's language, Part 5 works on "the density of presence" through "high coherence in the electromagnetic field of the cells" — an image for a calm, collected state, not a physical field that other people can detect.
+
+Read more, with the evidence → [Physiological coherence: what it is and what it isn't](/science/concepts/coherence)`,
   },
   {
     slug: 'biophotonics',
