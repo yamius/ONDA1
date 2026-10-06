@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeMeditation: HeadToHead = {
+const threeMeditation: HeadToHeadInput = {
   slug: 'headspace-vs-calm-vs-insight-timer',
   productASlug: 'headspace',
   productBSlug: 'calm',
@@ -10,7 +10,6 @@ const threeMeditation: HeadToHead = {
     'Headspace vs Calm vs Insight Timer — three-way ONDA comparison of the three top meditation apps. Curriculum, sleep content and the largest free library in one decision.',
   intro:
     'Headspace, Calm and Insight Timer are the three meditation apps users overwhelmingly shortlist together — together they cover most of the consumer meditation market. Three different philosophies: Headspace teaches a curriculum, Calm sells ambient wellness content with sleep stories, Insight Timer hosts the largest free meditation library on the market. The decision is which of those three jobs you actually have.',
-  winnerSlug: null,
   verdict:
     'Three different products. Headspace for structured learning. Calm for sleep content and celebrity narration. Insight Timer for the largest free library.',
   bestForA:

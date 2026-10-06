@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ultra4VsWhoop5: HeadToHead = {
+const ultra4VsWhoop5: HeadToHeadInput = {
   slug: 'apple-watch-ultra-4-vs-whoop-5-0',
   productASlug: 'apple-watch-ultra-4',
   productBSlug: 'whoop-5-0',
@@ -9,7 +9,6 @@ const ultra4VsWhoop5: HeadToHead = {
     'Apple Watch Ultra 4 vs Whoop 5.0 for HRV and recovery — a 50-hour rugged smartwatch with Recovery HRV against a screenless subscription recovery band. Weighed axis by axis.',
   intro:
     'The Ultra 4 is the first Apple Watch with the battery to wear night after night: up to about 50 hours, the new Health Sensing System, Recovery HRV and an athlete readiness score. That puts it squarely on Whoop’s turf. The Whoop 5.0 answers with continuous overnight HRV, a 14+-day battery and recovery-first coaching — but only as a membership. So the question is: one rugged do-everything watch you own, or a dedicated recovery band you rent?',
-  winnerSlug: null,
   verdict:
     'No overall winner — it splits by use case. For a dedicated, hands-off recovery signal with daily coaching and a two-week battery, the Whoop 5.0 leads. For an athlete who wants one rugged device with ECG, hypertension notifications, dive, satellite and no subscription — and now the battery to track HRV every night — the Ultra 4 wins.',
   bestForA:

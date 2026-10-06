@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const museSAthenaVsMuse2: HeadToHead = {
+const museSAthenaVsMuse2: HeadToHeadInput = {
   slug: 'muse-s-athena-vs-muse-2',
   productASlug: 'muse-s-athena',
   productBSlug: 'muse-2',
@@ -9,7 +9,6 @@ const museSAthenaVsMuse2: HeadToHead = {
     'Muse S Athena vs Muse 2 — side-by-side ONDA comparison of the two Muse EEG headbands. The newer Athena adds fNIRS and sleep tracking at about twice the price.',
   intro:
     'Muse 2 and Muse S Athena are the same brand’s entry and flagship — both four-channel dry EEG meditation headbands from Interaxon, both sharing the same mature content library. The Athena is the 2024 upgrade: it adds prefrontal fNIRS sensing, overnight sleep tracking and a soft sleep-friendly band, at roughly twice the price. The question is whether those additions are worth about $225 to you.',
-  winnerSlug: 'muse-s-athena',
   verdict:
     'Muse S Athena wins overall — it does everything Muse 2 does, adds sleep tracking and fNIRS, and is the only Muse you can wear comfortably overnight. Muse 2 wins only on price.',
   bestForA:

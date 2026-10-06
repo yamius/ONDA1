@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const bemerVsPulseCenters: HeadToHead = {
+const bemerVsPulseCenters: HeadToHeadInput = {
   slug: 'bemer-classic-evo-vs-pulse-centers-pulse-xl-pro',
   productASlug: 'bemer-classic-evo',
   productBSlug: 'pulse-centers-pulse-xl-pro',
@@ -9,7 +9,6 @@ const bemerVsPulseCenters: HeadToHead = {
     'Bemer Classic Evo vs Pulse Centers Pulse XL Pro — low-intensity research-backed mat vs high-intensity clinical coil. ONDA breaks down the form-factor and intensity trade.',
   intro:
     'Bemer and Pulse Centers represent the two opposite poles of PEMF — low-intensity waveform-research mat vs high-intensity clinical coil. Both are premium-tier; both have multi-decade brand pedigrees; they answer fundamentally different questions about what PEMF should do.',
-  winnerSlug: null,
   verdict:
     'Use case decides. Bemer Classic Evo for daily passive whole-body recovery with research-backed waveform. Pulse Centers Pulse XL Pro for high-intensity targeted athletic recovery and rehab via coil applicators.',
   bestForA:

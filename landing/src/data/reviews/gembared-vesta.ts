@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const gembaredVesta: ToolReview = {
+const gembaredVesta: ToolReviewInput = {
   slug: 'gembared-vesta',
   name: 'GembaRed Vesta',
   brand: 'GembaRed',
@@ -12,7 +12,6 @@ const gembaredVesta: ToolReview = {
     'The build-and-EMF specialist of the category — fully-shielded, six-wavelength, founder-engineered. Premium pricing for premium engineering rigour.',
   summary:
     'The GembaRed Vesta is the panel built by a former medical-LED engineer for buyers who treat EMF and flicker as first-class criteria. Six-wavelength coverage (480 + 630 + 660 + 810 + 830 + 850 nm), fully-shielded power supply, third-party EMF tested to <0.1 mG at 6", and flicker measured below the threshold for photobiology research. Premium-priced, deliberately niche; the audiophile of red light therapy.',
-  overallScore: 8.1,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Manufacturer-claimed ~120 mW/cm² at 0" / ~60 mW/cm² at 6"; independent verification within 5% of stated figures. Honestly specced.' },
     { criterionId: 'wavelengths', score: 9.0, note: 'Six wavelengths (480 + 630 + 660 + 810 + 830 + 850 nm), matched to published photobiomodulation literature. Same bands as PlatinumLED BIOMAX 600, which adds 1060 nm.' },

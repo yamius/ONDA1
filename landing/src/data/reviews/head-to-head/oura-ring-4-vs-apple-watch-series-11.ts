@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraVsAppleWatch: HeadToHead = {
+const ouraVsAppleWatch: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-apple-watch-series-11',
   productASlug: 'oura-ring-4',
   productBSlug: 'apple-watch-series-11',
@@ -9,7 +9,6 @@ const ouraVsAppleWatch: HeadToHead = {
     'Oura Ring 4 vs Apple Watch Series 11 — side-by-side ONDA comparison of the smart ring versus the smartwatch for HRV, sleep and biohacking use.',
   intro:
     'Oura Ring 4 and Apple Watch Series 11 are the two devices most commonly weighed against each other by people who want HRV and sleep tracking but are deciding between a passive ring and an active smartwatch. They sit in different product categories — one is a dedicated recovery instrument, the other is a wrist computer — and the HRV question is settled cleanly for the ring.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Oura Ring 4 wins for HRV, sleep and passive recovery tracking. Apple Watch wins as a general-purpose smartwatch — but it is not really the right tool for the HRV job.',
   bestForA:

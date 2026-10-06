@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const gen3VsOura5: HeadToHead = {
+const gen3VsOura5: HeadToHeadInput = {
   slug: 'ringconn-gen-3-vs-oura-ring-5',
   productASlug: 'ringconn-gen-3',
   productBSlug: 'oura-ring-5',
@@ -9,7 +9,6 @@ const gen3VsOura5: HeadToHead = {
     'RingConn Gen 3 vs Oura Ring 5 — the feature-rich subscription-free ring vs the accuracy leader with a membership. The strongest no-subscription alternative to Oura, compared.',
   intro:
     'The RingConn Gen 3 has become the ring people cross-shop against Oura when they refuse a subscription. It brings a long battery, a haptic silent alarm and new vascular/sleep-apnea insights for a one-time $349. The Oura Ring 5 is the accuracy-and-app reference but charges a mandatory membership on top of the ring. It’s own-it-outright vs the best experience you keep paying for.',
-  winnerSlug: null,
   verdict:
     'No subscription and more hardware features vs validated accuracy and the best app. The RingConn Gen 3 wins on cost model (one-time $349, no fee), battery and extras like haptic alerts; the Oura Ring 5 wins on accuracy, sensors and app polish, for $399 plus ~$6/month. Pick by whether you refuse a subscription or want the reference ring.',
   bestForA:

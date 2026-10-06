@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ouraRing4: ToolReview = {
+const ouraRing4: ToolReviewInput = {
   slug: 'oura-ring-4',
   name: 'Oura Ring 4',
   brand: 'Oura',
@@ -12,7 +12,6 @@ const ouraRing4: ToolReview = {
     'Still an excellent overnight HRV and sleep tracker — now one step below the slimmer, upgraded-sensor Oura Ring 5, but sharing the same new software and often the better value discounted. Mandatory subscription remains.',
   summary:
     'The Oura Ring 4 was the device to beat for overnight heart-rate variability and sleep, and it is still near the top — now succeeded by the Oura Ring 5, which is slimmer with redesigned sensors. Crucially, the new software features roll out to the Ring 4 too, so it keeps a small 24/7 form factor, well-validated sleep staging and ECG-close nighttime HRV for $50 less. The catch is unchanged: a recurring membership without which the app shows only basic data.',
-  overallScore: 7.9,
   scores: [
     { criterionId: 'hrv-accuracy', score: 8.5, note: 'Nighttime RMSSD tracks an ECG within a few milliseconds in Oura validation work; daytime readings drift under motion.' },
     { criterionId: 'sensor', score: 8.0, note: 'Optical PPG from the finger holds a clean signal overnight — the window that matters most for HRV.' },

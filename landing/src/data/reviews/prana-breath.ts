@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const pranaBreath: ToolReview = {
+const pranaBreath: ToolReviewInput = {
   slug: 'prana-breath',
   name: 'Prana Breath',
   brand: 'OlekStudio',
@@ -12,7 +12,6 @@ const pranaBreath: ToolReview = {
     'Best customisable pattern-based breathwork — deep parameter exposure, Android-first, mostly-free model. UX feels dated vs premium apps.',
   summary:
     'Prana Breath is the long-running Android-first breathwork app — deep parameter exposure (inhale, hold, exhale, hold timings fully customisable per pattern), broad library of pre-built patterns and a mostly-free model. UX feels dated compared to Breathwrk or Othership; the parameter depth is the differentiator.',
-  overallScore: 6.3,
   scores: [
     { criterionId: 'session-library', score: 7.0, note: 'Solid library of pre-built patterns (box, 4-7-8, Wim Hof, pranayama, custom). Less curated journey content than Breathwrk; more raw patterns.' },
     { criterionId: 'technique-coverage', score: 8.0, note: 'Broad technique coverage via the customisable pattern engine — any timing combination users want.' },

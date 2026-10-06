@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const intakeBreathing: ToolReview = {
+const intakeBreathing: ToolReviewInput = {
   slug: 'intake-breathing',
   name: 'Intake Breathing',
   brand: 'Intake Breathing',
@@ -12,7 +12,6 @@ const intakeBreathing: ToolReview = {
     'Best premium nasal dilator — magnetic reusable design, James Nestor-recommended, deepest evidence base in nasal-airway openers.',
   summary:
     'Intake Breathing is the premium external nasal dilator — small adhesive tabs on each nostril hold a flexible magnetic band that mechanically widens the nostrils overnight. James Nestor explicitly recommends it in Breath. Reusable band design, replacement adhesive tabs, demonstrably effective for mouth-breathers who can\'t commit to mouth tape. Premium pricing reflects the engineering.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'adhesion-comfort', score: 8.0, note: 'Small adhesive tabs grip well; magnetic band redistributes pressure rather than holding tension on a single point. Comfortable for the form factor.' },
     { criterionId: 'breathing-mechanism', score: 9.0, note: 'External magnetic dilation — mechanically widens nostril openings. Most effective external nasal dilator approach; outperforms passive strips like Breathe Right on user-reported airflow.' },

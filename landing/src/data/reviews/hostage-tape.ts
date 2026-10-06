@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const hostageTape: ToolReview = {
+const hostageTape: ToolReviewInput = {
   slug: 'hostage-tape',
   name: 'Hostage Tape',
   brand: 'Hostage Tape',
@@ -12,7 +12,6 @@ const hostageTape: ToolReview = {
     'Best biohacker-brand mouth tape — beard-friendly adhesive, single-piece design, subscription pricing. Brand-funded marketing strong; clinical-evidence base modest.',
   summary:
     'Hostage Tape is the viral 2025–2026 biohacker mouth tape — single-piece full-seal design with hypoallergenic adhesive specifically engineered to grip through beard stubble. $13/month subscription model with the tape delivered monthly. Marketing-heavy brand (UFC fighters, biohacker podcasts) with modest peer-reviewed evidence. The category-defining consumer brand of the 2026 mouth-tape moment.',
-  overallScore: 8.4,
   scores: [
     { criterionId: 'adhesion-comfort', score: 9.0, note: 'Best beard-friendly adhesive in category — stays on through beard stubble where Somnifix and DIY tape fail. Painless removal claim broadly true in user reports.' },
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal single-piece design. Corner cutout allows emergency exhale through mouth if needed. No porous-strip option.' },

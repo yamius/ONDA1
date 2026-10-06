@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const gembaredVsJoovv: HeadToHead = {
+const gembaredVsJoovv: HeadToHeadInput = {
   slug: 'gembared-vesta-vs-joovv-solo-3',
   productASlug: 'gembared-vesta',
   productBSlug: 'joovv-solo-3',
@@ -9,7 +9,6 @@ const gembaredVsJoovv: HeadToHead = {
     'GembaRed Vesta vs Joovv Solo 3.0 — side-by-side ONDA comparison of two premium red light panels. EMF-shielded six-wavelength engineering versus FDA-registered modular reference.',
   intro:
     'GembaRed Vesta and Joovv Solo 3.0 are the two red light panels users compare when premium-tier engineering matters. GembaRed is the founder-engineered EMF-shielded specialist; Joovv is the FDA-registered modular reference. Different paths to the premium tier: GembaRed buys you cleanest-possible build, Joovv buys you regulatory status and modular scaling.',
-  winnerSlug: null,
   verdict:
     'Different premium intents. GembaRed Vesta wins on EMF/flicker discipline and wavelength breadth. Joovv Solo 3.0 wins on FDA registration and modular full-body scaling.',
   bestForA:

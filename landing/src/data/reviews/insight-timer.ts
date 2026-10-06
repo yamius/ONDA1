@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const insightTimer: ToolReview = {
+const insightTimer: ToolReviewInput = {
   slug: 'insight-timer',
   name: 'Insight Timer',
   brand: 'Insight Timer',
@@ -12,7 +12,6 @@ const insightTimer: ToolReview = {
     'The largest meditation library on earth, and the only app here you can genuinely use for free — variable quality is the price.',
   summary:
     'Insight Timer is the largest meditation library in the world and the rare app you can build a real practice on without paying. It works like a YouTube for meditation: enormous range, many teachers, hourly live events — and, inevitably, variable quality.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'content-library', score: 9.5, note: 'The largest meditation library anywhere — 360,000 free tracks, plus courses.' },
     { criterionId: 'teaching', score: 7.5, note: 'A huge range of teachers and traditions; depth is there, but quality varies session to session.' },

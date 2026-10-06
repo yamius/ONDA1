@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const nurosym: ToolReview = {
+const nurosym: ToolReviewInput = {
   slug: 'nurosym',
   name: 'Nurosym',
   brand: 'Parasym Health',
@@ -12,7 +12,6 @@ const nurosym: ToolReview = {
     'The most clinically-validated consumer tVNS device — a research-grade ear clip with a price to match.',
   summary:
     'Nurosym is the rebranded consumer line of Parasym, the UK company whose hardware has been used in dozens of peer-reviewed studies on auricular vagus nerve stimulation. It clips to the tragus of the left ear and delivers a calibrated electrical pulse to the auricular branch of the vagus nerve. There is no app gimmickry — a single dial, documented parameters, and an evidence base no other consumer device matches.',
-  overallScore: 8.6,
   scores: [
     { criterionId: 'evidence', score: 9.5, note: 'The Parasym/Nurosym hardware appears in 40+ peer-reviewed tVNS trials, covering HRV, inflammation, depression and long-COVID — the deepest research base of any consumer device here.' },
     { criterionId: 'mechanism', score: 9.0, note: 'Transcutaneous auricular VNS at the tragus, the most-studied non-invasive target, with disclosed pulse parameters (25 Hz, 200–1000 µs) rather than a black-box waveform.' },

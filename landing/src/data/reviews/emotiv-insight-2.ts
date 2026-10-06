@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const emotivInsight2: ToolReview = {
+const emotivInsight2: ToolReviewInput = {
   slug: 'emotiv-insight-2',
   name: 'Emotiv Insight 2',
   brand: 'Emotiv',
@@ -12,7 +12,6 @@ const emotivInsight2: ToolReview = {
     'The research-consumer hybrid — five channels and a real academic toolchain, gated by a subscription for raw data.',
   summary:
     'Emotiv Insight 2 is the consumer arm of Emotiv’s research line, sitting between Neurosity Crown’s developer focus and Muse’s meditation orientation. Five EEG electrodes, an established academic toolchain (EmotivPRO is used in hundreds of published studies), and live cognitive-performance metrics including focus, stress, engagement and excitement. The catch is the data model: raw-EEG access requires the Pro tier subscription.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'signal-quality', score: 8.0, note: 'Five semi-dry EEG electrodes — middle ground between Muse (4 dry) and Crown (8 dry). Signal stable in seated sessions.' },
     { criterionId: 'training-content', score: 6.0, note: 'Modest guided content; Emotiv positions the device as a measurement instrument rather than a content platform.' },

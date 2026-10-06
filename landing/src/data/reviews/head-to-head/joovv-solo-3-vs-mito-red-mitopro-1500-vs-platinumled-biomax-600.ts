@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const topThreePanels: HeadToHead = {
+const topThreePanels: HeadToHeadInput = {
   slug: 'joovv-solo-3-vs-mito-red-mitopro-1500-vs-platinumled-biomax-600',
   productASlug: 'joovv-solo-3',
   productBSlug: 'mito-red-mitopro-1500',
@@ -10,7 +10,6 @@ const topThreePanels: HeadToHead = {
     'Joovv ($1,699) vs Mito Red MitoPRO 1500X ($1,299) vs PlatinumLED BioMax 600 ($1,049): prices, wavelengths, FDA status and the best pick for 2026.',
   intro:
     'Joovv Solo 3.0, Mito Red MitoPRO 1500 and PlatinumLED BIOMAX 600 are the three premium red-light panels buyers actually shortlist together at the $1,000+ tier. Prices and specs moved in 2026: Joovv now lists the Solo 3.0 at $1,699, and Mito Red has replaced the four-wavelength MitoPRO 1500 with the MitoPRO 1500X ($1,299, six wavelengths, FDA Class II registered). PlatinumLED’s BioMax 600 stays at $1,049 with seven wavelengths. All three are credible; the deciding axes are price, spectrum and modular scaling.',
-  winnerSlug: 'mito-red-mitopro-1500',
   verdict:
     'Best overall for most buyers: Mito Red MitoPRO 1500X — FDA Class II registered like Joovv, six wavelengths, $400 cheaper. PlatinumLED wins on price and spectrum; Joovv on modular scaling.',
   bestForA:

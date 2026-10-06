@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const theragunVsHypervolt: HeadToHead = {
+const theragunVsHypervolt: HeadToHeadInput = {
   slug: 'theragun-pro-plus-vs-hypervolt-2-pro',
   productASlug: 'theragun-pro-plus',
   productBSlug: 'hypervolt-2-pro',
@@ -9,7 +9,6 @@ const theragunVsHypervolt: HeadToHead = {
     'Theragun PRO Plus vs Hyperice Hypervolt 2 Pro — the premium massage-gun duel of 2026. ONDA breaks down stall force, amplitude, app and the $200 price gap.',
   intro:
     'Theragun PRO Plus and Hypervolt 2 Pro are the two premium massage guns users compare. Both deliver 60 lbs stall force, both run quiet brushless motors, both have full app integration. The defining differences: Theragun has 16 mm amplitude (vs Hypervolt 14 mm), 2-year warranty (vs 1-year) and $200 higher price.',
-  winnerSlug: null,
   verdict:
     'Same spec ceiling on stall force. Theragun PRO Plus for deepest amplitude and longest warranty. Hypervolt 2 Pro for same stall + lighter weight at $200 less.',
   bestForA:

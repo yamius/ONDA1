@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const levelsVsUltrahumanM1: HeadToHead = {
+const levelsVsUltrahumanM1: HeadToHeadInput = {
   slug: 'levels-vs-ultrahuman-m1',
   productASlug: 'levels',
   productBSlug: 'ultrahuman-m1',
@@ -9,7 +9,6 @@ const levelsVsUltrahumanM1: HeadToHead = {
     'Levels vs Ultrahuman M1 — side-by-side ONDA comparison of two biohacker CGM programmes. Deep glucose-only insights versus cross-signal glucose + HRV + sleep ecosystem.',
   intro:
     'Levels and Ultrahuman M1 are the two biohacker CGM programmes most often compared after Levels and Nutrisense. Different sensors — Dexcom Stelo, G7 platform (Levels) vs Abbott Libre 3, or Abbott Lingo in the US via M2 Live (Ultrahuman) — but the deeper difference is product philosophy. Levels is a glucose-focused insight engine; Ultrahuman is a CGM module inside a broader ecosystem that includes its smart rings and cross-signal analytics.',
-  winnerSlug: null,
   verdict:
     'Depends on what you want. Levels for the deepest glucose-only insight engine on the best CGM hardware. Ultrahuman M1 for glucose composed with HRV, sleep and recovery from an Ultrahuman ring.',
   bestForA:

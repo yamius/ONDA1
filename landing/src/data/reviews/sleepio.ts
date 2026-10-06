@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sleepio: ToolReview = {
+const sleepio: ToolReviewInput = {
   slug: 'sleepio',
   name: 'Sleepio',
   brand: 'Big Health',
@@ -12,7 +12,6 @@ const sleepio: ToolReview = {
     'The most clinically serious app here — a validated CBT-I course that treats insomnia, not a tracker or a sound library; the strongest pick if you have a real sleep problem.',
   summary:
     'Sleepio is not a tracker or a soundscape app — it is a digital course of cognitive behavioural therapy for insomnia (CBT-I), the first-line clinical treatment. It is delivered over weekly sessions, is backed by published trials, and is the one app here built to actually treat a sleep disorder.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'tracking-accuracy', score: 6.0, note: 'A sleep diary rather than sensor tracking — the data that drives the CBT-I program.' },
     { criterionId: 'wind-down-content', score: 5.0, note: 'Some relaxation tools, but content is not the point — the therapy course is.' },

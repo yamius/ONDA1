@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const hypervolt2Pro: ToolReview = {
+const hypervolt2Pro: ToolReviewInput = {
   slug: 'hypervolt-2-pro',
   name: 'Hyperice Hypervolt 2 Pro',
   brand: 'Hyperice',
@@ -12,7 +12,6 @@ const hypervolt2Pro: ToolReview = {
     'The Theragun rival — comparable stall force, lighter weight, Hyperice ecosystem. Marginally less amplitude than Theragun PRO Plus at meaningfully lower price.',
   summary:
     'Hypervolt 2 Pro is Hyperice\'s flagship — 60 lbs stall force matching Theragun PRO Plus, 14 mm amplitude (slightly less than Theragun\'s 16 mm), brushless quiet motor, full Hyperice app with guided routines. Lighter than Theragun (~2.6 lbs vs 2.9). Strong NBA/NFL athlete distribution pedigree. The right premium choice for users who reject Therabody pricing.',
-  overallScore: 8.5,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 9.0, note: '60 lbs stall force matches Theragun PRO Plus. 14 mm amplitude — slightly less than Theragun\'s 16 mm but more than any other Hyperice device.' },
     { criterionId: 'build-attachments', score: 8.5, note: 'Premium brushless motor build, 5 attachments included, 1-year warranty. Hyperice NBA/NFL pedigree.' },

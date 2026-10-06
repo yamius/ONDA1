@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const plungeVsColdture: HeadToHead = {
+const plungeVsColdture: HeadToHeadInput = {
   slug: 'plunge-vs-coldture',
   productASlug: 'plunge',
   productBSlug: 'coldture',
@@ -9,7 +9,6 @@ const plungeVsColdture: HeadToHead = {
     'The Plunge vs Coldture — side-by-side ONDA comparison of two premium chiller-built cold-plunge tubs. US category leader versus Canadian cold-climate specialist.',
   intro:
     'The Plunge and Coldture are the two premium chiller-built cold-plunge tubs that go head to head when buyers want a turnkey high-end install. Both ship integrated chillers, ozone sanitation, premium insulated builds and 3-year warranties. The geographic positioning is the structural difference: Plunge is the US category leader, Coldture is the Canadian-built cold-climate specialist.',
-  winnerSlug: null,
   verdict:
     'Geography decides. The Plunge for US buyers and temperate-climate installs. Coldture for cold-climate outdoor installs and Canada/EU markets.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const calmVsInsightTimer: HeadToHead = {
+const calmVsInsightTimer: HeadToHeadInput = {
   slug: 'calm-vs-insight-timer',
   productASlug: 'calm',
   productBSlug: 'insight-timer',
@@ -9,7 +9,6 @@ const calmVsInsightTimer: HeadToHead = {
     'Calm vs Insight Timer (2026): $79.99/yr polished sleep app vs a free library of 360,000+ tracks. Prices, free tiers and which to choose.',
   intro:
     'Calm and Insight Timer are the two meditation apps users most often weigh against each other when free-tier depth is a deciding factor. Calm is the polished premium app with celebrity narrators and a sleep-content library; Insight Timer is the largest free meditation library on the market, with a teacher-driven model and an optional paid tier. The decision is between subscription-driven polish and free-tier breadth.',
-  winnerSlug: null,
   verdict:
     'Depends on what you want to pay for. Calm for premium polish, Sleep Stories and celebrity content. Insight Timer for the largest free meditation library and access to thousands of teachers.',
   bestForA:

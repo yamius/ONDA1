@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const muse2VsFocusCalmVsMendi: HeadToHead = {
+const muse2VsFocusCalmVsMendi: HeadToHeadInput = {
   slug: 'muse-2-vs-focuscalm-vs-mendi',
   productASlug: 'muse-2',
   productBSlug: 'focuscalm',
@@ -10,7 +10,6 @@ const muse2VsFocusCalmVsMendi: HeadToHead = {
     'Muse 2 vs FocusCalm vs Mendi — three-way ONDA comparison of three entry-tier brain-training headbands. Four-channel EEG, single-channel content-driven and fNIRS focus training.',
   intro:
     'Muse 2, FocusCalm and Mendi are the three entry-tier brain-training headbands first-time buyers compare under $300. Three different signal modalities: Muse 2 is four-channel EEG with mature meditation content, FocusCalm is single-channel EEG with focus-driven training programmes, Mendi is fNIRS with a single game-based focus exercise. Same price tier, three different signals.',
-  winnerSlug: 'muse-2',
   verdict:
     'Muse 2 wins overall on signal density and ecosystem maturity. FocusCalm wins on content-driven focus training at a slightly lower price. Mendi wins on simplicity of experience for users new to neurofeedback.',
   bestForA:

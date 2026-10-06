@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const omiFullBodyMat: ToolReview = {
+const omiFullBodyMat: ToolReviewInput = {
   slug: 'omi-full-body-mat',
   name: 'OMI Full Body PEMF Mat',
   brand: 'OMI',
@@ -12,7 +12,6 @@ const omiFullBodyMat: ToolReview = {
     'Solid mid-tier PEMF mat — FDA-cleared bone-healing waveform, simple operation, accessible pricing. Lacks Bemer’s research moat or multi-modality stacking.',
   summary:
     'OMI Full Body Mat is the mid-tier PEMF reference — single-modality PEMF mat using the FDA-cleared bone-healing waveform research band, simple operation, and accessible pricing. No multi-modality stacking, no proprietary research moat. The right product for users who want straightforward PEMF mat use at $1,500–$2,000.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Moderate field intensity in the FDA bone-healing research band. Documented usable continuous output.' },
     { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses FDA-cleared bone-healing waveform research band. No proprietary single-waveform research like Bemer.' },

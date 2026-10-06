@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const whoop5: ToolReview = {
+const whoop5: ToolReviewInput = {
   slug: 'whoop-5-0',
   name: 'Whoop 5.0',
   brand: 'Whoop',
@@ -12,7 +12,6 @@ const whoop5: ToolReview = {
     'A recovery coach on your wrist: continuous overnight HRV and sharp strain insight, locked behind a perpetual membership.',
   summary:
     'The Whoop 5.0 is built around recovery. It samples HRV continuously through the night and reports a full-sleep average rather than a morning spot-check, which makes its daily recovery signal the cleanest of the three. The trade-off is the model: there is no hardware to own, only an ongoing membership.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'hrv-accuracy', score: 8.5, note: 'Continuous overnight sampling builds a full-night HRV average from hundreds of readings, not one spot-check.' },
     { criterionId: 'sensor', score: 8.0, note: 'A multi-wavelength optical band that holds heart-rate well when worn snugly.' },

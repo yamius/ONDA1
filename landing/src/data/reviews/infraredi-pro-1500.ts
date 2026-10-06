@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const infraredi: ToolReview = {
+const infraredi: ToolReviewInput = {
   slug: 'infraredi-pro-1500',
   name: 'Infraredi Pro 1500',
   brand: 'Infraredi',
@@ -12,7 +12,6 @@ const infraredi: ToolReview = {
     'Strong large-panel value pick — Joovv-class size at meaningfully lower price, with the trade being a less mature brand.',
   summary:
     'The Infraredi Pro 1500 is no longer listed on Infraredi’s store; its closest current equivalent is the Pro Max 2.0 ($1,019 on sale, list $1,199; 210 dual-lens LEDs, five wavelengths, base stand, 3-year warranty, 60-day trial). It remains the large-panel value-tier choice — comparable size to the MitoPRO 1500 at a lower price. The original Pro 1500 used four wavelengths (630 + 660 + 830 + 850 nm), independently-tested irradiance close to claimed figures, EMF in the same range as the established players. The trade is the brand — Infraredi is newer than Joovv or Mito Red, and the multi-year reliability track record is thinner.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Manufacturer-claimed ~140 mW/cm² at 0" / ~60 mW/cm² at 6". Independent meter readings within 10% of stated 6" figures.' },
     { criterionId: 'wavelengths', score: 8.5, note: 'Four wavelengths (630 + 660 + 830 + 850 nm) — the spectrum of the original MitoPRO 1500; the current 1500X adds 590 and 810 nm.' },

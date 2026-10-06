@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sensAi: ToolReview = {
+const sensAi: ToolReviewInput = {
   slug: 'sens-ai',
   name: 'Sens.ai',
   brand: 'Sens.ai',
@@ -12,7 +12,6 @@ const sensAi: ToolReview = {
     'The most ambitious multi-modal headset — EEG plus photobiomodulation plus HRV, at a premium price that demands the use case.',
   summary:
     'Sens.ai is the only headset in this list that combines passive measurement (five-channel EEG and HRV) with active intervention (transcranial photobiomodulation — near-infrared light). The programmes layer the three modalities into combined neurofeedback + light + HRV sessions, framed around focus, calm, mood and clarity. Premium positioning with a membership on top of the $1,250 hardware. The right shape only when the multi-modal use case is what you want.',
-  overallScore: 7.1,
   scores: [
     { criterionId: 'signal-quality', score: 7.5, note: 'Five-channel dry EEG plus HRV from an ear-clip sensor, plus PBM near-infrared LEDs over the prefrontal cortex. Signal quality consumer-grade across all three modalities.' },
     { criterionId: 'training-content', score: 8.5, note: 'Multi-modal programmes layering EEG neurofeedback, photobiomodulation and HRV training in single 25-minute sessions. No other consumer device offers this combination.' },

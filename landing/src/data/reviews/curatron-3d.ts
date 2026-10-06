@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const curatron3d: ToolReview = {
+const curatron3d: ToolReviewInput = {
   slug: 'curatron-3d',
   name: 'Curatron 3D',
   brand: 'Curatronic',
@@ -12,7 +12,6 @@ const curatron3d: ToolReview = {
     'Medical-grade PEMF with documented protocols and dual applicator system. Mid-tier between Bemer mats and Pulse Centers coil clinics.',
   summary:
     'Curatron 3D is the Israeli-engineered alternative to Pulse Centers — medical-grade PEMF with coil and mat applicators, documented bone-healing and osteoporosis protocols, and FDA registration. Field intensity sits between consumer mats and pure-coil clinic systems. Strong build, transparent published protocol parameters, mid-tier pricing.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'field-strength', score: 8.5, note: 'Strong field intensity, documented across coil and mat applicators. Covers the bone-healing research band with usable continuous output.' },
     { criterionId: 'waveform-evidence', score: 8.5, note: 'Published protocols backed by Israeli medical PEMF research. Osteoporosis and bone-healing protocols match FDA-cleared waveform research.' },

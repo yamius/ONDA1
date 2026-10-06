@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const clearlightSanctuary2: ToolReview = {
+const clearlightSanctuary2: ToolReviewInput = {
   slug: 'clearlight-sanctuary-2',
   name: 'Clearlight Sanctuary 2',
   brand: 'Clearlight (Jacuzzi)',
@@ -12,7 +12,6 @@ const clearlightSanctuary2: ToolReview = {
     'The closest premium competitor to Sunlighten — full-spectrum IR, low-EMF/ELF design and a lifetime warranty, in a compact 2-person cabin that runs on a 120 V/20 A circuit.',
   summary:
     'Clearlight Sanctuary 2 is the 2-person cabin from Clearlight, the Jacuzzi-owned premium infrared sauna brand. It combines carbon-ceramic far-infrared heaters on the walls with two 500 W full-spectrum heaters on the front glass (near, mid and far infrared), in basswood or mahogany. Clearlight markets it as low EMF / low ELF and backs it with a Complete Limited Lifetime Warranty. Price on the official store (checked 2026-10-01): $7,299 basswood or $7,699 mahogany, each $500 below list.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'heat-source', score: 8.5, note: 'Carbon-ceramic far-IR heaters on side/back walls plus two 500 W full-spectrum heaters (near + mid + far) on the front glass. Credibly broad-spectrum, but less granular than Sunlighten mPulse’s separately programmable wavelengths.' },
     { criterionId: 'build', score: 8.5, note: 'Basswood or mahogany, double-wall tongue-and-groove construction, 8 mm tempered glass. Complete Limited Lifetime Warranty. 450 lb cabin.' },

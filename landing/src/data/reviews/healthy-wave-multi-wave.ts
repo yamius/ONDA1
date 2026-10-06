@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const healthyWaveMultiWave: ToolReview = {
+const healthyWaveMultiWave: ToolReviewInput = {
   slug: 'healthy-wave-multi-wave',
   name: 'Healthy Wave Multi-Wave PEMF Mat',
   brand: 'Healthy Wave',
@@ -12,7 +12,6 @@ const healthyWaveMultiWave: ToolReview = {
     'Best multi-modality PEMF mat — PEMF + far-infrared + red light at sub-Bemer pricing. Lacks Bemer’s research moat but covers more recovery modalities per session.',
   summary:
     'Healthy Wave Multi-Wave is a top-ranked PEMF mat across independent review sites. The differentiator is stacking — PEMF, far-infrared heat, red light, negative ions and crystals in a single mat. The Multi-Wave controller runs 1–30 Hz with three pulse widths (six waveforms), 12 presets or custom programmes. Not a Bemer in research backing, but a much cheaper way to get several recovery modalities at once.',
-  overallScore: 8.4,
   scores: [
     { criterionId: 'field-strength', score: 8.5, note: 'Configurable PEMF intensity, 1–30 Hz; maker quotes up to 5+ gauss peak and about 1.5 gauss average at the surface. Higher than Bemer, but still low-intensity next to clinical coil systems.' },
     { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses common PEMF frequencies (including the 7.83 Hz Schumann band) from the general PEMF literature. No device-specific trials and no proprietary single-waveform research moat like Bemer.' },

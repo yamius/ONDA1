@@ -1,4 +1,4 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
 /**
  * Medito vs Headspace — the free non-profit alternative vs the best-known paid app.
@@ -8,7 +8,7 @@ import type { HeadToHead } from '../types'
  * 14-day free trial; the price is rendered client-side and could not be read from the official page,
  * so the duel uses "about $70 a year" (our review figure). Evidence-based, not hands-on.
  */
-const meditoVsHeadspace: HeadToHead = {
+const meditoVsHeadspace: HeadToHeadInput = {
   slug: 'medito-vs-headspace',
   productASlug: 'medito',
   productBSlug: 'headspace',
@@ -17,7 +17,6 @@ const meditoVsHeadspace: HeadToHead = {
     'Medito (free, non-profit, no ads) is the best free alternative to Headspace (about $70/yr); Headspace wins on structured teaching and research.',
   intro:
     'Medito and Headspace are a common pairing for people looking for a free alternative to Headspace. Medito is a completely free, open-source meditation app run by a Dutch non-profit, with no ads, no account and no premium tier. Headspace is the best-known paid meditation app, built around structured courses for beginners and backed by published research. This comparison is evidence-based: ONDA has not tested either app hands-on.',
-  winnerSlug: null,
   verdict:
     'No single winner: Medito is the best way to meditate without paying anything, while Headspace is worth about $70 a year if you want the most structured teaching and a research-backed program.',
   bestForA:

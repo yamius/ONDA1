@@ -1,8 +1,15 @@
 /**
  * Scoring criteria per review category. Weights sum to 1.0 within a
- * category — a review's overallScore is the weighted mean of its
- * CriterionScores. These definitions are the single source of truth for
- * the public /reviews/methodology page.
+ * category. A review's overallScore is NEVER typed by hand: it is computed
+ * automatically (scoring.ts) as the weighted mean of its CriterionScores,
+ * rounded to one decimal, half up. An optional editorialAdjustment
+ * (max ±0.3) may be added, always with a reason shown on the review page;
+ * frequent adjustments mean the rubric itself needs changing.
+ * Ordering everywhere (category pages, round-ups, head-to-head winners):
+ * overall score, then the TIE_BREAK_CRITERION score, else a tie.
+ * scripts/check-review-scores.ts enforces this at build time.
+ * These definitions are the single source of truth for the public
+ * /reviews/methodology page.
  */
 import type { Criterion, ReviewCategory } from './types'
 
@@ -852,6 +859,30 @@ export const CRITERIA: Record<ReviewCategory, Criterion[]> = {
   'breathing-aid': BREATHING_AID_CRITERIA,
   'massage-gun': MASSAGE_GUN_CRITERIA,
   'air-purifier': AIR_PURIFIER_CRITERIA,
+}
+
+/** Tie-break criterion per category — used only when two reviews have the
+ *  same overall score (see scoring.ts). It is the category's evidence /
+ *  scientific-grounding criterion; categories without one use the
+ *  criterion that measures validated performance (accuracy, signal,
+ *  output, filtration). */
+export const TIE_BREAK_CRITERION: Record<ReviewCategory, string> = {
+  'hrv-wearable': 'hrv-accuracy',
+  'meditation-app': 'evidence',
+  'sleep-app': 'sleep-science',
+  'vagus-stim': 'evidence',
+  cgm: 'sensor-accuracy',
+  'eeg-headset': 'signal-quality',
+  'red-light': 'evidence',
+  'cold-plunge': 'evidence',
+  sauna: 'evidence',
+  'sleep-climate': 'climate-range',
+  pemf: 'waveform-evidence',
+  'breathwork-app': 'evidence-grounding',
+  'red-light-mask': 'clinical-evidence',
+  'breathing-aid': 'evidence-grounding',
+  'massage-gun': 'stall-force-amplitude',
+  'air-purifier': 'filtration-technology',
 }
 
 /** Human-readable category labels for the hub and the methodology page. */

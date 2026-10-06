@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const inhale: ToolReview = {
+const inhale: ToolReviewInput = {
   slug: 'inhale-by-aero-health',
   name: 'Inhale by Aero Health',
   brand: 'Aero Health',
@@ -12,7 +12,6 @@ const inhale: ToolReview = {
     'Best HRV-driven breathwork app — measures Apple Watch HRV pre/post session and adapts recommendations. Narrow library but unique biofeedback closure.',
   summary:
     'Inhale by Aero Health is the only breathwork app that closes the biofeedback loop with HRV measurement — pre-session Apple Watch HRV reading, guided breath protocol, post-session HRV reading, app adapts recommendations based on response. Library is narrower than Breathwrk but the HRV-driven personalisation is unique. Best fit for HRV-obsessed biohackers.',
-  overallScore: 6.7,
   scores: [
     { criterionId: 'session-library', score: 6.0, note: 'Modest library of structured protocols. Smaller than Breathwrk or Othership; designed around HRV-response measurement rather than content breadth.' },
     { criterionId: 'technique-coverage', score: 6.5, note: 'Core HRV-responsive techniques (coherent breathing, box, 4-7-8, cyclic sighing). Less holotropic / ceremony coverage.' },

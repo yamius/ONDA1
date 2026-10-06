@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const cowayApVsLevoit300: HeadToHead = {
+const cowayApVsLevoit300: HeadToHeadInput = {
   slug: 'coway-airmega-ap-1512hh-vs-levoit-core-300',
   productASlug: 'coway-airmega-ap-1512hh',
   productBSlug: 'levoit-core-300',
@@ -9,7 +9,6 @@ const cowayApVsLevoit300: HeadToHead = {
     'Coway Airmega AP-1512HH vs Levoit Core 300 — Wirecutter-favorite Coway budget vs Levoit entry tier. ONDA breaks down the budget air-purifier duel.',
   intro:
     'Coway Airmega AP-1512HH and Levoit Core 300 are the two budget air purifiers users compare. The defining difference: Coway has sensor + auto mode + larger coverage at $229; Levoit Core 300 is bare-mechanical bedroom-scale at $99.',
-  winnerSlug: null,
   verdict:
     'Brand-trust + features vs cheapest entry. Coway AP-1512HH for Wirecutter-recommended sensor budget. Levoit Core 300 for $99 bedroom entry.',
   bestForA:

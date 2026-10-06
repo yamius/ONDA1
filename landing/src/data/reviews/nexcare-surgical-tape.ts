@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const nexcareSurgical: ToolReview = {
+const nexcareSurgical: ToolReviewInput = {
   slug: 'nexcare-surgical-tape',
   name: '3M Nexcare Sensitive Skin Surgical Tape',
   brand: '3M Nexcare',
@@ -12,7 +12,6 @@ const nexcareSurgical: ToolReview = {
     'Best DIY mouth-tape option — 3M medical paper tape at fraction of biohacker-brand cost. No brand polish; clinical-grade adhesive at $0.05/night.',
   summary:
     'The DIY biohacker secret — 3M Nexcare Sensitive Skin Surgical Tape, cut into 2-inch strips, serves as a clinical-grade mouth-tape alternative at fraction of the cost of Hostage Tape or Somnifix. 3M medical adhesive is the same chemistry used in hospital wound dressings. Effectively unbeatable on per-night cost; zero brand polish or convenience.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.5, note: 'Clinical-grade 3M medical adhesive — gentle on skin, painless removal. Less beard-friendly than Hostage Tape. Sensitive-skin variant is the right pick.' },
     { criterionId: 'breathing-mechanism', score: 7.0, note: 'User cuts strip to size — can do full seal, partial seal or cross design. Maximum flexibility.' },

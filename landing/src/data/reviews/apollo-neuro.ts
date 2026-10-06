@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const apolloNeuro: ToolReview = {
+const apolloNeuro: ToolReviewInput = {
   slug: 'apollo-neuro',
   name: 'Apollo Neuro',
   brand: 'Apollo Neuroscience',
@@ -12,7 +12,6 @@ const apolloNeuro: ToolReview = {
     'The most wearable device in the category — vibrotactile, not electrical, with mounting clinical evidence on HRV and recovery.',
   summary:
     'Apollo Neuro is a wrist or ankle worn band that uses low-frequency haptic vibration — not electrical stimulation — to modulate autonomic state and vagal tone. The mechanism is mechanoreceptor-mediated rather than direct vagal stimulation, which keeps it out of the strict tVNS category but firmly in the vagus-modulator conversation. Founder-led University of Pittsburgh research; comfortable enough to wear all day.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'evidence', score: 7.0, note: 'Published HRV / recovery RCTs from the founding team at University of Pittsburgh; independent replication is mounting. Strongest evidence base of any non-electrical device here.' },
     { criterionId: 'mechanism', score: 6.5, note: 'Vibrotactile rather than electrical — aims to influence calm through touch receptors; the mechanism is proposed, not proven. Not tVNS in the strict sense; classified here as a vagal modulator.' },

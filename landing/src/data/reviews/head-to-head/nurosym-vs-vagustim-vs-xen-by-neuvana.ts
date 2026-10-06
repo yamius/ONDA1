@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const nurosymVsVagustimVsXen: HeadToHead = {
+const nurosymVsVagustimVsXen: HeadToHeadInput = {
   slug: 'nurosym-vs-vagustim-vs-xen-by-neuvana',
   productASlug: 'nurosym',
   productBSlug: 'vagustim',
@@ -10,7 +10,6 @@ const nurosymVsVagustimVsXen: HeadToHead = {
     'Nurosym vs Vagustim vs Xen by Neuvana — three-way ONDA comparison of three consumer auricular tVNS devices. Clinical-grade evidence, EU protocol library and music-paired earbuds in one decision.',
   intro:
     'Nurosym, Vagustim and Xen by Neuvana are the three consumer auricular tVNS devices users compare when ear-clip stimulation is the chosen mechanism. All three target the auricular branch of the vagus nerve electrically; the differences are evidence depth, protocol variety and form factor.',
-  winnerSlug: 'nurosym',
   verdict:
     'Nurosym wins on evidence and disclosed parameters. Vagustim wins on protocol variety in EU markets. Xen wins on consumer-friendly earbud form factor with music pairing.',
   bestForA:

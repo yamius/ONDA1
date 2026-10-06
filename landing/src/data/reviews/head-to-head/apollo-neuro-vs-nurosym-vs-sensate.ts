@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const apolloVsNurosymVsSensate: HeadToHead = {
+const apolloVsNurosymVsSensate: HeadToHeadInput = {
   slug: 'apollo-neuro-vs-nurosym-vs-sensate',
   productASlug: 'apollo-neuro',
   productBSlug: 'nurosym',
@@ -10,7 +10,6 @@ const apolloVsNurosymVsSensate: HeadToHead = {
     'Apollo vs Nurosym vs Sensate — three-way ONDA comparison of three vagus-targeting modalities. Vibrotactile all-day, clinical auricular tVNS and infrasonic chest device in one decision.',
   intro:
     'Apollo Neuro, Nurosym and Sensate are the three consumer vagus-targeting devices users compare across mechanisms. Three different approaches to the same nerve: Apollo uses vibration on the skin (an indirect, proposed route), Nurosym delivers direct electrical stimulation to the auricular branch, Sensate uses infrasonic thoracic resonance. Same goal, three independent mechanisms.',
-  winnerSlug: 'nurosym',
   verdict:
     'Nurosym wins on evidence and mechanism directness for serious users. Apollo wins for all-day wearability. Sensate wins as a focused evening ritual.',
   bestForA:

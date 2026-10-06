@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const hoolestVeReliefPrime: ToolReview = {
+const hoolestVeReliefPrime: ToolReviewInput = {
   slug: 'hoolest-verelief-prime',
   name: 'Hoolest VeRelief Prime',
   brand: 'Hoolest Performance',
@@ -12,7 +12,6 @@ const hoolestVeReliefPrime: ToolReview = {
     'The most athlete-focused tVNS device — short, intense sessions for recovery and sleep onset.',
   summary:
     'Hoolest VeRelief Prime is a handheld tVNS device designed by Arizona State University spin-out Hoolest Performance. Grip electrodes target either the auricular branch (held to the ear) or the cervical branch (held to the neck), delivering high-intensity 3–5 minute sessions. Engineered around athletic recovery and pre-sleep parasympathetic priming, with founder-published research.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'evidence', score: 6.5, note: 'Founder-published research on HRV recovery and sleep onset; ASU spin-out lineage. Smaller trial base than Nurosym, but Hoolest-specific data exists.' },
     { criterionId: 'mechanism', score: 7.5, note: 'Handheld transcutaneous VNS — usable at ear or neck via finger-grip electrodes. Higher peak intensities than ear-clip devices, in shorter sessions.' },

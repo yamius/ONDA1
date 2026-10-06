@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const penguinChillers: ToolReview = {
+const penguinChillers: ToolReviewInput = {
   slug: 'penguin-chillers',
   name: 'Penguin Chillers',
   brand: 'Penguin Chillers',
@@ -12,7 +12,6 @@ const penguinChillers: ToolReview = {
     'The chiller for DIY cold plunge — bring your own tub or stock tank, get a capable chiller at a real-world price.',
   summary:
     'Penguin Chillers is a Tennessee maker best known for selling the chiller without the tub. Its Cold Therapy Chiller ($1,949.99, checked 2026-10-01) is rated at 7,500 BTU/hr, chills water down to 37°F, draws 450 W on a standard 110–120 V outlet and has a built-in pump; standard water chillers start at $999.99. The user pairs it with their own stock tank, plastic tub or repurposed bath — DIY style. Penguin now also sells complete plunge systems, but this review covers the chiller-only route.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'chiller-capacity', score: 8.0, note: 'Cold Therapy Chiller: 7,500 BTU/hr, 37°F minimum, holds low-to-mid 40s°F in normal use. Standard line from 1/2 HP to 1 HP for different tub sizes.' },
     { criterionId: 'build', score: 8.0, note: 'Titanium heat exchanger, R-32 refrigerant, outdoor-rated above 32°F ambient, made in Tennessee. 1-year warranty standard; 2- and 3-year extended options sold.' },

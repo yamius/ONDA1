@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraVsWhoopVsApple: HeadToHead = {
+const ouraVsWhoopVsApple: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-whoop-5-0-vs-apple-watch-series-11',
   productASlug: 'oura-ring-4',
   productBSlug: 'whoop-5-0',
@@ -10,7 +10,6 @@ const ouraVsWhoopVsApple: HeadToHead = {
     'Oura vs Whoop vs Apple Watch — three-way ONDA comparison of the three most-compared HRV wearables. Ring, recovery band and smartwatch in one decision.',
   intro:
     'Oura Ring 4, Whoop 5.0 and Apple Watch Series 11 are the three HRV wearables most non-diabetic users actually shortlist together. Three form factors, three philosophies, three different jobs. Oura is the passive recovery instrument in a ring; Whoop is the continuous-coach recovery band; Apple Watch is the do-everything smartwatch with HRV as a feature among many.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Oura Ring 4 wins overall for HRV-and-sleep tracking. Whoop wins for athletes who train on a daily recovery score. Apple Watch wins as a general-purpose smartwatch — but it is not really an HRV instrument.',
   bestForA:

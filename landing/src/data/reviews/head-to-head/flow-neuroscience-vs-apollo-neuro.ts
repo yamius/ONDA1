@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const flowVsApollo: HeadToHead = {
+const flowVsApollo: HeadToHeadInput = {
   slug: 'flow-neuroscience-vs-apollo-neuro',
   productASlug: 'flow-neuroscience',
   productBSlug: 'apollo-neuro',
@@ -9,7 +9,6 @@ const flowVsApollo: HeadToHead = {
     'Flow Neuroscience vs Apollo Neuro — side-by-side ONDA cross-category comparison. CE-marked tDCS depression treatment versus vibrotactile wellness wearable.',
   intro:
     'Flow Neuroscience and Apollo Neuro are two devices that look similar on a feature list — both wearable, both targeting mood and stress — but are not really the same kind of product. Flow is a CE-marked Class IIa medical device for major depression, delivering transcranial direct-current stimulation (tDCS) under a clinical protocol. Apollo Neuro is a vibrotactile wellness wearable marketed for calm, without a clinical indication. Different categories, often compared.',
-  winnerSlug: null,
   verdict:
     'Not really substitutes. Flow Neuroscience for clinical-grade tDCS depression treatment under a structured programme. Apollo Neuro for all-day vibrotactile vagal modulation in general wellness use.',
   bestForA:

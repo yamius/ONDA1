@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const garminVenu4: ToolReview = {
+const garminVenu4: ToolReviewInput = {
   slug: 'garmin-venu-4',
   name: 'Garmin Venu 4',
   brand: 'Garmin',
@@ -12,7 +12,6 @@ const garminVenu4: ToolReview = {
     'A capable, no-subscription all-rounder with the battery life to track HRV through the night — best-in-class at nothing, competent at everything.',
   summary:
     'The Garmin Venu 4 is the most complete smartwatch-shaped option here: solid overnight HRV, the best Garmin sleep tracking yet, multi-day battery and no subscription. It is a strong generalist that is not the sharpest at any single thing this comparison measures.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.5, note: 'Garmin HRV Status tracks overnight HRV against a personal baseline built over roughly three weeks — solid, if not overnight-specialised.' },
     { criterionId: 'sensor', score: 7.5, note: 'Garmin Elevate optical sensor — a capable PPG array, with no ECG-grade hardware.' },

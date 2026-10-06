@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const breatheRight: ToolReview = {
+const breatheRight: ToolReviewInput = {
   slug: 'breathe-right-original',
   name: 'Breathe Right Original',
   brand: 'Breathe Right (Kenvue)',
@@ -12,7 +12,6 @@ const breatheRight: ToolReview = {
     'Drugstore reference for nasal strips — decades-long track record, FDA-cleared, ubiquitous distribution. Weaker mechanism than magnetic or internal dilators.',
   summary:
     'Breathe Right Original is the drugstore-standard external nasal strip — adhesive plastic strip across the bridge of the nose that uses spring-tension leverage to widen nostrils. Decades-long FDA-cleared track record (originally 3M, now Kenvue/J&J). Ubiquitous drugstore distribution. The reference everyone tries first; weaker mechanism than magnetic or internal alternatives.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.0, note: 'Solid adhesion on clean dry skin. Skin-irritation reports moderate; clear / sensitive-skin variants address most issues.' },
     { criterionId: 'breathing-mechanism', score: 6.0, note: 'External spring-tension leverage — passive widening via plastic spring force across the bridge. Weaker than magnetic external (Intake) or internal mechanical (Mute) approaches.' },

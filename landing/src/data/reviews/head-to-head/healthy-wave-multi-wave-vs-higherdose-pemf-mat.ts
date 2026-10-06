@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const healthyWaveVsHigherDose: HeadToHead = {
+const healthyWaveVsHigherDose: HeadToHeadInput = {
   slug: 'healthy-wave-multi-wave-vs-higherdose-pemf-mat',
   productASlug: 'healthy-wave-multi-wave',
   productBSlug: 'higherdose-pemf-mat',
@@ -9,7 +9,6 @@ const healthyWaveVsHigherDose: HeadToHead = {
     'Healthy Wave Multi-Wave vs HigherDOSE PEMF Mat — multi-modality recovery mats compared. ONDA breaks down the PEMF technical depth vs consumer brand polish trade.',
   intro:
     'Healthy Wave Multi-Wave and HigherDOSE PEMF Mat are the two multi-modality recovery mats consumers cross-shop in 2026. Both stack PEMF with far-infrared and crystal/mineral layers. The defining difference is depth — Healthy Wave exposes real PEMF parameters and runs higher intensity; HigherDOSE wraps a simpler PEMF stack in a polished consumer brand experience.',
-  winnerSlug: 'healthy-wave-multi-wave',
   verdict:
     'Healthy Wave wins on PEMF technical depth and intensity. HigherDOSE wins on consumer UX and brand polish. For PEMF-first buyers, Healthy Wave is the rational choice.',
   bestForA:

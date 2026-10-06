@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const theragunProPlus: ToolReview = {
+const theragunProPlus: ToolReviewInput = {
   slug: 'theragun-pro-plus',
   name: 'Theragun PRO Plus',
   brand: 'Therabody',
@@ -12,7 +12,6 @@ const theragunProPlus: ToolReview = {
     'The percussion-therapy reference — highest stall force, deepest amplitude, polished app. Premium pricing reflects the spec ceiling and Therabody ecosystem.',
   summary:
     'Theragun PRO Plus is the category-defining premium massage gun — 60 lbs stall force (highest tier), 16 mm amplitude, brushless motor running 50–55 dB, OLED display with pressure sensor, full Therabody app integration with guided routines. Multi-decade brand pedigree. Premium pricing ($599) reflects the spec ceiling; competitors close the gap on individual specs but no other device combines stall force + amplitude + app at this level.',
-  overallScore: 8.7,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 9.5, note: '60 lbs stall force + 16 mm amplitude — top of category on both axes. The percussion-dose benchmark.' },
     { criterionId: 'build-attachments', score: 9.0, note: 'Premium brushless motor build, 6 attachments included, 2-year warranty. Multi-decade Therabody pedigree.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const sensateVsApollo: HeadToHead = {
+const sensateVsApollo: HeadToHeadInput = {
   slug: 'sensate-vs-apollo-neuro',
   productASlug: 'sensate',
   productBSlug: 'apollo-neuro',
@@ -9,7 +9,6 @@ const sensateVsApollo: HeadToHead = {
     'Sensate vs Apollo Neuro — side-by-side ONDA comparison of two passive vagus-modulation devices. Infrasonic chest pebble versus vibrotactile all-day wearable.',
   intro:
     'Sensate and Apollo Neuro are the two passive (non-electrical) vagus-modulation devices most commonly compared. Both target vagal tone without electrodes; the mechanisms and use cases differ. Sensate is a chest-placed infrasonic pebble paired with soundscape sessions; Apollo Neuro is a vibrotactile wrist or ankle band designed for continuous all-day wear. The decision is between a session-based wind-down ritual and ambient daily modulation.',
-  winnerSlug: 'apollo-neuro',
   verdict:
     'Apollo Neuro wins overall on evidence base, all-day wearability and use-case versatility. Sensate wins specifically as an evening wind-down ritual when paired sound is the part you actually want.',
   bestForA:

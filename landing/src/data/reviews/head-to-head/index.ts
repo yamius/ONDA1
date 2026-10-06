@@ -8,7 +8,23 @@
  * it does not appear in the hub, category, review-page rails, prerender
  * route list or any helper lookup until its rollout date.
  */
-import type { HeadToHead } from '../types'
+import type { HeadToHead, HeadToHeadInput } from '../types'
+import { ALL_REVIEWS } from '../all-reviews'
+import { scoreWinnerSlug } from '../scoring'
+
+const REVIEW_BY_SLUG = new Map(ALL_REVIEWS.map((r) => [r.slug, r]))
+
+/** Attach the computed winner (overall → tie-break criterion → tie). */
+function withWinner(h: HeadToHeadInput): HeadToHead {
+  const products = [h.productASlug, h.productBSlug, h.productCSlug]
+    .filter((s): s is string => !!s)
+    .map((s) => {
+      const r = REVIEW_BY_SLUG.get(s)
+      if (!r) throw new Error(`[head-to-head] ${h.slug}: unknown product "${s}"`)
+      return r
+    })
+  return { ...h, winnerSlug: scoreWinnerSlug(products) }
+}
 
 /** Current date (YYYY-MM-DD), captured once at module load. Used to filter
  *  date-gated duels out of `headToHeads` until their `publishOn` date. */
@@ -228,7 +244,7 @@ import meditoVsHeadspace from './medito-vs-headspace'
 import healthyMindsVsWakingUp from './healthy-minds-program-vs-waking-up'
 
 /** The full registry — including any future-dated entries. Internal only. */
-export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
+const HEAD_TO_HEAD_MODULES: HeadToHeadInput[] = [
   // Three-way duels
   ouraVsWhoopVsApple,
   threeRings,
@@ -436,6 +452,9 @@ export const ALL_HEAD_TO_HEADS: HeadToHead[] = [
   cowayVsIqair,
   iqairVsMolekuleVsDyson,
 ]
+
+/** Full registry with computed winners. */
+export const ALL_HEAD_TO_HEADS: HeadToHead[] = HEAD_TO_HEAD_MODULES.map(withWinner)
 
 /** Live head-to-head duels — date-gated entries are excluded until their
  *  `publishOn` date is reached. Consumers (hub, category and review pages,

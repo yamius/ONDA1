@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const polarH10VsGarmin: HeadToHead = {
+const polarH10VsGarmin: HeadToHeadInput = {
   slug: 'polar-h10-vs-garmin-venu-4',
   productASlug: 'polar-h10',
   productBSlug: 'garmin-venu-4',
@@ -9,7 +9,6 @@ const polarH10VsGarmin: HeadToHead = {
     'Polar H10 vs Garmin Venu 4 — side-by-side ONDA comparison of the ECG chest-strap reference versus the Garmin training smartwatch.',
   intro:
     'Polar H10 and Garmin Venu 4 are the two training instruments serious athletes compare when sensor accuracy meets ecosystem. The Polar H10 is the ECG chest strap that sets the consumer-accuracy ceiling; Garmin Venu 4 is the smartwatch with the deepest first-party training-analytics stack. They are not really substitutes — most committed athletes own both.',
-  winnerSlug: null,
   verdict:
     'Different jobs. Polar H10 for ground-truth accuracy. Garmin Venu 4 for continuous lifestyle tracking and training analytics. Many athletes pair the two.',
   bestForA:

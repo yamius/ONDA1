@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const imrsPrime: ToolReview = {
+const imrsPrime: ToolReviewInput = {
   slug: 'imrs-prime',
   name: 'iMRS Prime',
   brand: 'Swiss Bionic Solutions',
@@ -12,7 +12,6 @@ const imrsPrime: ToolReview = {
     'Swiss-engineered Bemer alternative — sawtooth waveform, multi-applicator system, multi-decade brand. Lower price than Bemer with comparable build.',
   summary:
     'iMRS Prime is the Swiss Bionic Solutions Bemer-alternative — full-body mat plus pillow plus spot applicator, sawtooth waveform with documented Schumann (7.83 Hz) and circadian-aligned frequency protocols. Multi-decade brand, premium build, mid-premium pricing. Often cross-shopped against Bemer and chosen for the price differential.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Low-to-moderate intensity (~150–200 µT mat output). Similar philosophy to Bemer — waveform shape over peak gauss.' },
     { criterionId: 'waveform-evidence', score: 8.0, note: 'Sawtooth waveform with Schumann and bone-healing frequency presets. Backed by general PEMF research, not single-waveform proprietary research like Bemer.' },

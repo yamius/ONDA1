@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const nutrisense: ToolReview = {
+const nutrisense: ToolReviewInput = {
   slug: 'nutrisense',
   name: 'Nutrisense',
   brand: 'Nutrisense',
@@ -12,7 +12,6 @@ const nutrisense: ToolReview = {
     'The strongest human-coaching CGM programme — a registered dietitian alongside Dexcom G7 data.',
   summary:
     'Nutrisense is the CGM programme that bets on human coaching, not app intelligence, as the differentiator. Every subscriber is paired with a registered dietitian (RD) who reviews the data, sends weekly summaries and answers questions in-app. Hardware is Dexcom G7 — the same sensor underneath Levels and Stelo. The insight engine is competent rather than category-leading, but the coach is the product. Roughly $280 a month including the RD.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom G7 — same sensor as Levels and Stelo, MARD ~8.2%. 10-day wear, 30-minute warm-up.' },
     { criterionId: 'insights', score: 8.0, note: 'Solid meal scoring, time-in-range and glucose-variability views. Less deep than Levels on AUC decomposition, but covers the metrics that matter.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const currentbodyVsHigherDose: HeadToHead = {
+const currentbodyVsHigherDose: HeadToHeadInput = {
   slug: 'currentbody-series-2-vs-higherdose-red-light-face-mask',
   productASlug: 'currentbody-series-2',
   productBSlug: 'higherdose-red-light-face-mask',
@@ -9,7 +9,6 @@ const currentbodyVsHigherDose: HeadToHead = {
     'CurrentBody Series 2 vs HigherDOSE — consumer market leader with neck flap vs HigherDOSE-ecosystem polished UX. ONDA breaks down the consumer-tier silicone duel.',
   intro:
     'CurrentBody Series 2 and HigherDOSE Red Light Face Mask are the two consumer-brand flexible-silicone masks users compare. Both pair red and near-infrared light (HigherDOSE: 630 nm + 830 nm) at consumer-friendly prices. The defining difference: CurrentBody is the market-share leader with integrated neck flap; HigherDOSE is the polished consumer-brand with ecosystem crossover.',
-  winnerSlug: 'currentbody-series-2',
   verdict:
     'CurrentBody Series 2 wins on integrated neck flap, higher LED dose and market-feedback refinement. HigherDOSE wins on price and HigherDOSE-ecosystem fit.',
   bestForA:

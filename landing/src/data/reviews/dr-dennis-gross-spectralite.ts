@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const drDennisGross: ToolReview = {
+const drDennisGross: ToolReviewInput = {
   slug: 'dr-dennis-gross-spectralite',
   name: 'Dr. Dennis Gross SpectraLite FaceWare Pro',
   brand: 'Dr. Dennis Gross Skincare',
@@ -12,7 +12,6 @@ const drDennisGross: ToolReview = {
     'Best dermatology-brand pedigree — FDA-cleared, dual red + blue protocol (anti-aging + acne), hard-shell build. Less comfortable than silicone alternatives.',
   summary:
     'Dr. Dennis Gross SpectraLite FaceWare Pro is the dermatology-brand reference — backed by Dr. Dennis Gross\'s decades of dermatology practice, FDA-cleared, and one of the few masks combining red 633 nm (anti-aging) with blue 415 nm (acne) in alternating protocols. Hard-shell construction is the trade-off — less comfortable than silicone but cheaper to manufacture and proven over multiple device generations. 3-minute session protocol is the shortest in the category.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Documented irradiance honest for the 3-minute protocol. Shorter session compensated by higher LED density.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + blue 415 nm — dual-spectrum approach unique among hard-shell masks. Covers anti-aging and acne in alternating protocols.' },

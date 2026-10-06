@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const othershipVsOpen: HeadToHead = {
+const othershipVsOpen: HeadToHeadInput = {
   slug: 'othership-vs-open-app',
   productASlug: 'othership',
   productBSlug: 'open-app',
@@ -9,7 +9,6 @@ const othershipVsOpen: HeadToHead = {
     'Othership vs Open — premium music-driven breathwork vs hybrid breath + meditation + movement. ONDA breaks down the premium-tier duel.',
   intro:
     'Othership and Open are the two premium hybrid apps users compare when picking a polished daily-practice platform. Both lean cinematic, both have live class layers, both target $120–$130/year. The defining difference is scope: Othership is breathwork-focused with music-driven journeys; Open blends breath + meditation + movement.',
-  winnerSlug: null,
   verdict:
     'Pure breathwork vs hybrid platform. Othership for cinematic music-driven breathwork with strongest community. Open for the single-app breath + meditation + movement stack.',
   bestForA:

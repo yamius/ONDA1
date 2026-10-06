@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const series12VsCharge6: HeadToHead = {
+const series12VsCharge6: HeadToHeadInput = {
   slug: 'apple-watch-series-12-vs-fitbit-charge-6',
   productASlug: 'apple-watch-series-12',
   productBSlug: 'fitbit-charge-6',
@@ -9,7 +9,6 @@ const series12VsCharge6: HeadToHead = {
     'Apple Watch Series 12 vs Fitbit Charge 6 for HRV — Apple’s new Recovery HRV and full smartwatch versus the affordable band with free HRV trends and a multi-day battery.',
   intro:
     'This is the premium-versus-budget question for HRV. The September 2026 Series 12 finally takes HRV seriously — sampled about 24× more often, split into Recovery HRV and Overall HRV — inside a $399 smartwatch with ECG and hypertension notifications. The Fitbit Charge 6 is a $159 band with free overnight HRV trends, reliable Fitbit sleep tracking and a battery that lasts days. The decision is mostly about how much device you actually need.',
-  winnerSlug: null,
   verdict:
     'No overall winner — two different tiers. For the deeper HRV system, ECG, hypertension notifications and a full smartwatch, the Series 12 leads. For the cheapest credible way to track HRV and sleep trends, with a battery that suits every-night wear, the Charge 6 leads.',
   bestForA:

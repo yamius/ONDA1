@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const cowayAp1512: ToolReview = {
+const cowayAp1512: ToolReviewInput = {
   slug: 'coway-airmega-ap-1512hh',
   name: 'Coway Airmega AP-1512HH',
   brand: 'Coway',
@@ -12,7 +12,6 @@ const cowayAp1512: ToolReview = {
     'Best Wirecutter-favorite budget — multi-year Coway track record at $229 with True HEPA H13 + carbon + sensor + auto mode. The consumer-trust budget reference.',
   summary:
     'Coway Airmega AP-1512HH is the multi-year Wirecutter-recommended budget reference — True HEPA H13, activated-carbon layer, 361 sq ft AHAM-certified coverage, built-in air-quality sensor with auto mode, $229. Long-standing consumer trust from Wirecutter and consumer review aggregators. The right budget buy if brand-trust matters.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'filtration-technology', score: 7.5, note: 'True HEPA H13 + activated carbon. Standard solid budget spec.' },
     { criterionId: 'cadr-coverage', score: 7.5, note: 'AHAM-certified 233-246 CADR. 361 sq ft coverage at 2 ACH; ~140 sq ft at 5 ACH.' },

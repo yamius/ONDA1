@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const headspaceVsWakingUpVsHealthyMinds: HeadToHead = {
+const headspaceVsWakingUpVsHealthyMinds: HeadToHeadInput = {
   slug: 'headspace-vs-waking-up-vs-healthy-minds-program',
   productASlug: 'headspace',
   productBSlug: 'waking-up',
@@ -10,7 +10,6 @@ const headspaceVsWakingUpVsHealthyMinds: HeadToHead = {
     'Headspace vs Waking Up vs Healthy Minds Program — three-way ONDA comparison of three structured-curriculum meditation apps. Friendly secular, philosophical and research-lab in one decision.',
   intro:
     'Headspace, Waking Up and Healthy Minds Program are the three meditation apps users compare when teaching credibility is the deciding factor. Three different anchors: Headspace is the friendly secular curriculum; Waking Up is Sam Harris’ philosophical project; Healthy Minds Program comes from Richard Davidson’s research lab. Three different paths to learning meditation as a real practice.',
-  winnerSlug: null,
   verdict:
     'Three different teaching philosophies. Headspace for friendly structured introduction. Waking Up for philosophical depth and non-dual practice. Healthy Minds Program for an evidence-based four-pillar framework from a research lab.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const kineonMovePlus: ToolReview = {
+const kineonMovePlus: ToolReviewInput = {
   slug: 'kineon-move-plus',
   name: 'Kineon Move+',
   brand: 'Kineon',
@@ -12,7 +12,6 @@ const kineonMovePlus: ToolReview = {
     'A credible targeted-joint device at a fair price — now $499 — with real low-level-laser evidence behind the approach, but low optical power and no device-specific trial. Not a panel substitute.',
   summary:
     'The Kineon Move+ Pro is a strap with three modules, each pairing eight 660 nm red LEDs with ten 808 nm Class 1 near-infrared laser diodes, worn directly against a knee, elbow, shoulder or other joint. It is a different tool from a full-body panel: low optical power delivered in skin contact over a small area, rather than high power over a large one. Low-level laser therapy for knee osteoarthritis has meta-analytic support; the Move+ itself has no published independent trial. At $499 (list $699) with a 30-day trial, 1-year warranty and HSA/FSA eligibility, it is reasonable value for one painful joint.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'irradiance', score: 7.0, note: 'Kineon lists 160 mW (LEDs) and 50 mW (Class 1 lasers) of optical power per module — low totals, delivered in skin contact over a small area. Focused rather than high-power; no independent irradiance measurements published.' },
     { criterionId: 'wavelengths', score: 7.0, note: 'Two wavelengths: 660 nm LED (superficial) and 808 nm laser (deeper near-infrared). The 808 nm band is the one most studied for joints; nothing beyond that pair.' },

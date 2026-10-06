@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const healthyMindsProgram: ToolReview = {
+const healthyMindsProgram: ToolReviewInput = {
   slug: 'healthy-minds-program',
   name: 'Healthy Minds Program',
   brand: 'Healthy Minds Innovations',
@@ -12,7 +12,6 @@ const healthyMindsProgram: ToolReview = {
     'The most scientifically grounded app here — completely free, ad-free, built by a neuroscientist and validated in dozens of studies.',
   summary:
     'The Healthy Minds Program is the most evidence-grounded app in this comparison, and it is completely free. Founded by neuroscientist Richard Davidson and validated across dozens of peer-reviewed studies, it teaches a structured framework — Awareness, Connection, Insight, Purpose — with no ads and no subscription.',
-  overallScore: 7.9,
   scores: [
     { criterionId: 'content-library', score: 7.0, note: 'A focused, structured library rather than a sprawling one — quality over sheer volume.' },
     { criterionId: 'teaching', score: 8.0, note: 'Grounded in the research framework of neuroscientist Richard Davidson — credible and well-sequenced.' },

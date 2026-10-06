@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const levoitCore600s: ToolReview = {
+const levoitCore600s: ToolReviewInput = {
   slug: 'levoit-core-600s',
   name: 'Levoit Core 600S',
   brand: 'Levoit',
@@ -12,7 +12,6 @@ const levoitCore600s: ToolReview = {
     'Best mid-budget smart — True HEPA H13 + carbon + VeSync app + auto mode at $299. Levoit consumer brand dominance with solid 635 sq ft coverage.',
   summary:
     'Levoit Core 600S is the mid-budget smart reference — True HEPA H13, activated-carbon layer, 635 sq ft AHAM-certified coverage, VeSync app with PM2.5 sensor and auto mode, $299. Levoit consumer brand owns the mid-budget category through Amazon distribution and solid spec-per-dollar. The rational mid-budget default if you want smart features without paying premium-tier prices.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'filtration-technology', score: 7.5, note: 'True HEPA H13 + activated-carbon. Standard mid-tier spec without premium-tier differentiation.' },
     { criterionId: 'cadr-coverage', score: 8.0, note: 'AHAM-certified 410 CADR. 635 sq ft at 2 ACH; ~240 sq ft at 5 ACH.' },

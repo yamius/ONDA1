@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const mitoRedMitoPro1500: ToolReview = {
+const mitoRedMitoPro1500: ToolReviewInput = {
   slug: 'mito-red-mitopro-1500',
   name: 'Mito Red MitoPRO 1500',
   brand: 'Mito Red Light',
@@ -12,7 +12,6 @@ const mitoRedMitoPro1500: ToolReview = {
     'The biohacker-favourite large panel — now six wavelengths and FDA Class II registered in its 1500X form, and $400 cheaper than Joovv Solo 3.0.',
   summary:
     'The Mito Red MitoPRO 1500 is the biohacker-community panel of choice for users who want half-body coverage at sub-Joovv pricing. The current version sold on the official US store is the MitoPRO 1500X: six wavelengths (590, 630, 660, 810, 830 and 850 nm) across 300 lenses / 600 LED chips, a 43 × 10 inch panel, FDA Class II registration and a 3-year warranty, at $1,299 (checked 2026-10-01). The original four-wavelength MitoPRO 1500 is no longer listed. The MitoPRO line is Mito Red’s flagship; the 1500 is the most-bought size.',
-  overallScore: 8.4,
   scores: [
     { criterionId: 'irradiance', score: 8.5, note: 'Manufacturer-claimed ~166 mW/cm² at 0" / ~70 mW/cm² at 6"; independent measurements come in within 10% of the 6" figure. Honest spec discipline.' },
     { criterionId: 'wavelengths', score: 9.0, note: 'Current 1500X: six wavelengths (590 + 630 + 660 + 810 + 830 + 850 nm), up from four on the original 1500. Covers both red surface and deeper NIR ranges.' },

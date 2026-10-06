@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const pulsetto: ToolReview = {
+const pulsetto: ToolReviewInput = {
   slug: 'pulsetto',
   name: 'Pulsetto',
   brand: 'Pulsetto',
@@ -12,7 +12,6 @@ const pulsetto: ToolReview = {
     'The most accessible consumer tVNS device — strong on protocol variety and price, lighter on independent clinical evidence.',
   summary:
     'Pulsetto is a Lithuanian-made neck-worn tVNS collar that stimulates the cervical vagal branches transcutaneously through two electrode pads. It runs four guided programmes — sleep, stress, anxiety reduction, pain reduction — through a companion app. CE-marked as a wellness device. The clearest entry point into consumer tVNS at the price; the evidence base is mostly company-sponsored and early.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'evidence', score: 6.0, note: 'CE-marked. Mostly company-sponsored studies and one published pilot on HRV/stress; thinner independent evidence than Nurosym or gammaCore.' },
     { criterionId: 'mechanism', score: 7.5, note: 'Cervical transcutaneous VNS via twin neck electrodes — targets the cervical vagal branches. Documented pulse parameters in the app.' },

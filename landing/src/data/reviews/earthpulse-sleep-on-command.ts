@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const earthpulse: ToolReview = {
+const earthpulse: ToolReviewInput = {
   slug: 'earthpulse-sleep-on-command',
   name: 'EarthPulse Sleep on Command',
   brand: 'EarthPulse',
@@ -12,7 +12,6 @@ const earthpulse: ToolReview = {
     'Sleep-focused PEMF — under-mattress install, Schumann-resonance protocols, mid-tier pricing. Narrow use case but executed well.',
   summary:
     'EarthPulse Sleep on Command is the sleep-niche PEMF device — sits under your mattress, runs Schumann-resonance (7.83 Hz) and delta-band frequency protocols overnight. Designed for sleep onset and deep-sleep enhancement rather than recovery sessions. Single applicator, single use case, accessible $899 pricing.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'field-strength', score: 7.0, note: 'Moderate field intensity tuned for overnight low-dose exposure. Designed for hours-of-use sleep protocols, not high-intensity recovery sessions.' },
     { criterionId: 'waveform-evidence', score: 7.5, note: 'Schumann 7.83 Hz and delta-band sleep frequencies — well-documented in PEMF and sleep literature. Specific to the sleep use case.' },

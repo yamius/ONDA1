@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const focuscalm: ToolReview = {
+const focuscalm: ToolReviewInput = {
   slug: 'focuscalm',
   name: 'FocusCalm',
   brand: 'BrainCo',
@@ -12,7 +12,6 @@ const focuscalm: ToolReview = {
     'Content-driven EEG headband — accessible price, decent app, single-channel signal limits the depth.',
   summary:
     'FocusCalm is BrainCo’s consumer EEG headband — single-channel forehead electrode plus accelerometer, paired with a content-heavy app of guided focus and calm sessions. Cheaper than Muse 2 and Neurosity Crown, with a more polished training library than Mendi or Emotiv. The trade is signal depth: one electrode means simpler interpretation. Best as an entry into EEG-feedback content for first-time users who do not need raw data.',
-  overallScore: 6.9,
   scores: [
     { criterionId: 'signal-quality', score: 6.5, note: 'Single forehead EEG electrode plus accelerometer. Adequate consumer signal for the focus/calm metric the app surfaces; lower information density than multi-electrode systems.' },
     { criterionId: 'training-content', score: 8.0, note: 'Strong library of guided focus and calm sessions, games and exercises. Content-driven by design — the app drives the experience, not the data.' },

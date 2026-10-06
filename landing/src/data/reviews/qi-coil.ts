@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const qiCoil: ToolReview = {
+const qiCoil: ToolReviewInput = {
   slug: 'qi-coil',
   name: 'Qi Coil',
   brand: 'Qi Life (Resonant Frequencies)',
@@ -12,7 +12,6 @@ const qiCoil: ToolReview = {
     'Marketed as PEMF but built on Rife-frequency and “scalar” claims with no credible evidence — undisclosed field parameters, black-box presets, extreme pricing. A real PEMF mat does more, with actual specs, for less.',
   summary:
     'Qi Coil is the coil-plus-app product from Qi Life (founder David Wong). It converts audio “frequencies” into an electromagnetic field and ships a library of 10,000+ Rife-style frequency programs via the Resonant Console app, with higher tiers adding “scalar” and “medbed” marketing. It is sold as PEMF, but its foundation is Rife and scalar-energy theory — neither of which has credible clinical support. The company does not disclose a PEMF frequency range or waveform; a compact ~15 Gauss field is claimed. Pricing runs from $797 (Mini) to $4,995 (3S) and $9,995 (Max Scalar). As a PEMF device specifically, it is low-field, black-box and extremely priced.',
-  overallScore: 3.0,
   scores: [
     { criterionId: 'field-strength', score: 3.5, note: 'A compact ~15 Gauss field is claimed, but no waveform, frequency range or intensity is disclosed — the specs a PEMF buyer needs to compare are simply absent. The marketing is about “10,000 frequencies” (audio/Rife framing), not field parameters.' },
     { criterionId: 'waveform-evidence', score: 1.5, note: 'The core is Rife-frequency and “scalar energy” theory. There is no reliable evidence that Rife devices treat any condition (Cancer Research UK), and scalar energy is not recognised by mainstream physics. Claims are anecdotal, with no peer-reviewed support for the device.' },

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const somnifix: ToolReview = {
+const somnifix: ToolReviewInput = {
   slug: 'somnifix',
   name: 'Somnifix',
   brand: 'Somnifix',
@@ -12,7 +12,6 @@ const somnifix: ToolReview = {
     'The original mouth tape — FDA-registered porous strip with central breathing port. Decade-long reference; less beard-friendly than Hostage Tape.',
   summary:
     'Somnifix is the category-original mouth tape — FDA-registered porous adhesive strip with a central breathing port that allows emergency mouth exhale. Hypoallergenic medical-grade adhesive. Multi-year track record predating the 2025–2026 biohacker boom. Less aggressive marketing than Hostage Tape; deeper FDA-registered credibility.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.5, note: 'Solid adhesion on clean skin. Less beard-friendly than Hostage Tape — adhesive engineered for skin contact, not stubble.' },
     { criterionId: 'breathing-mechanism', score: 9.0, note: 'Porous design with central breathing port — the safest mechanism for users uncertain about full-seal contraindications. Allows partial mouth exhale.' },

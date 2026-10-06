@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const levels: ToolReview = {
+const levels: ToolReviewInput = {
   slug: 'levels',
   name: 'Levels',
   brand: 'Levels Health',
@@ -12,7 +12,6 @@ const levels: ToolReview = {
     'The most polished biohacker CGM programme — best-in-class insights, now in tiered memberships (from $80/year app-only to $1,329/year with labs and two months of CGM).',
   summary:
     'Levels is the CGM programme that defined the biohacker category. It ships Dexcom Stelo sensors (Dexcom’s over-the-counter CGM, no prescription needed) with an app whose food-by-food impact analysis, time-in-range scoring and meal-by-meal coaching are the deepest in the market. There is no human coach by default — Levels bets on app intelligence plus content from its medical advisory board. Levels has moved from a flat ~$199/month programme to tiered memberships: an app-only plan ($80/year), Core ($399/year with one month of CGM and two lab panels) and Complete ($1,329/year with two months of CGM, comprehensive labs and a nutritionist session). Continuous CGM beyond the included month(s) is an add-on. Members can also connect their own Stelo or Dexcom G7 (G7 needs a prescription, which Levels can arrange through partner physicians) or any CGM that syncs to Apple Health or Health Connect.',
-  overallScore: 8.4,
   scores: [
     { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom Stelo — the OTC sensor built on the Dexcom G7 platform, among the most accurate consumer CGMs on independent comparison (G7-platform MARD ~8.2% versus reference). 15-day wear, 30-minute warm-up, no prescription. Score unchanged: the switch from G7 to Stelo keeps the same sensor platform.' },
     { criterionId: 'insights', score: 9.0, note: 'The deepest meal-impact analysis on the market — per-meal score, AUC, peak, time-to-baseline, plus daily/weekly time-in-range and glucose variability views.' },

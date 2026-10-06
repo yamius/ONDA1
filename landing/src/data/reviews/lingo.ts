@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const lingo: ToolReview = {
+const lingo: ToolReviewInput = {
   slug: 'lingo',
   name: 'Lingo by Abbott',
   brand: 'Abbott',
@@ -12,7 +12,6 @@ const lingo: ToolReview = {
     'Abbott’s Libre hardware sold without a prescription — the simplest entry into CGM at the lowest single-sensor price.',
   summary:
     'Lingo is Abbott’s direct-to-consumer CGM, sold over the counter (no prescription) with Libre 3 hardware and an app aimed at metabolic-health beginners. Two-week sensors at $54 each, no subscription required. The app focuses on a single “Lingo Count” metric per meal rather than the deep analytics of Levels. The right entry point if cost and simplicity matter more than insight depth.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott Libre 3 — MARD ~9%, 14-day wear, calibration-free, 60-minute warm-up. Marginally less accurate than Dexcom G7 in independent comparison.' },
     { criterionId: 'insights', score: 7.0, note: 'Built around a single per-meal “Lingo Count” spike score. Simpler than Levels — easier for beginners, frustrating for advanced users.' },

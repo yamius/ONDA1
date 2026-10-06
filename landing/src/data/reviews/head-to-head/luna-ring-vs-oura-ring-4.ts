@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const lunaVsOura4: HeadToHead = {
+const lunaVsOura4: HeadToHeadInput = {
   slug: 'luna-ring-vs-oura-ring-4',
   productASlug: 'luna-ring',
   productBSlug: 'oura-ring-4',
@@ -9,7 +9,6 @@ const lunaVsOura4: HeadToHead = {
     'Noise Luna Ring Gen 2 vs Oura Ring 4 — the affordable subscription-free ring vs the accuracy leader with a membership. Is the budget ring a good enough Oura alternative?',
   intro:
     'This is the budget-vs-reference ring question, Noise edition. The Noise Luna Ring Gen 2 is around $300 with no subscription and genuinely good sleep tracking; the Oura Ring 4 is the accuracy-and-app reference but costs $349 plus a mandatory membership. One is the own-it-outright value pick; the other is the polished experience you keep paying for.',
-  winnerSlug: null,
   verdict:
     'Value vs reference. The Noise Luna Ring Gen 2 wins on cost — ~$300, no subscription — with accurate sleep tracking and a charging case for long total battery. The Oura Ring 4 wins on accuracy, app polish, fit range and single-charge battery, at $349 plus ~$6/month. If price and no-subscription matter most, Luna; if accuracy and experience do, Oura.',
   bestForA:

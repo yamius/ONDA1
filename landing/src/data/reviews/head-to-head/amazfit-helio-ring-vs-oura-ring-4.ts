@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const helioVsOura4: HeadToHead = {
+const helioVsOura4: HeadToHeadInput = {
   slug: 'amazfit-helio-ring-vs-oura-ring-4',
   productASlug: 'amazfit-helio-ring',
   productBSlug: 'oura-ring-4',
@@ -9,7 +9,6 @@ const helioVsOura4: HeadToHead = {
     'Amazfit Helio Ring vs Oura Ring 4 — the $199 subscription-free budget ring vs the accuracy leader with a membership. Is the cheap ring good enough to skip Oura?',
   intro:
     'This is the classic “cheap alternative to Oura” question. The Amazfit Helio Ring is $199 with no subscription; the Oura Ring 4 is the accuracy-and-app reference but costs $349 plus a mandatory membership. One is the budget, own-it-outright pick; the other is the premium experience you keep paying for.',
-  winnerSlug: null,
   verdict:
     'Budget vs reference. The Amazfit Helio Ring wins decisively on cost — $199, no subscription — and is light and comfortable. The Oura Ring 4 wins on accuracy, battery, app polish and fit range, at $349 plus ~$6/month. If money and no-subscription are the priority, Helio; if accuracy and experience are, Oura.',
   bestForA:

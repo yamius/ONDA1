@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const wakingUp: ToolReview = {
+const wakingUp: ToolReviewInput = {
   slug: 'waking-up',
   name: 'Waking Up',
   brand: 'Waking Up',
@@ -12,7 +12,6 @@ const wakingUp: ToolReview = {
     'The deepest, most rigorous app here — philosophy and serious instruction — but the most expensive, and not for beginners.',
   summary:
     'Waking Up, built by Sam Harris, is the most intellectually serious app in this comparison. It treats meditation as a way to examine consciousness, pairs practice with philosophy and conversations with leading thinkers, and is taught with unusual rigour. It is also the most expensive, and it is not built for beginners.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'content-library', score: 7.0, note: 'A deliberately curated library — focused and deep rather than broad, with no real sleep content.' },
     { criterionId: 'teaching', score: 9.0, note: 'The deepest teaching here — Sam Harris plus high-calibre guest teachers, taught with rigour.' },

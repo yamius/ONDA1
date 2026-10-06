@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const honeywellHpa300: ToolReview = {
+const honeywellHpa300: ToolReviewInput = {
   slug: 'honeywell-hpa300',
   name: 'Honeywell HPA300',
   brand: 'Honeywell',
@@ -12,7 +12,6 @@ const honeywellHpa300: ToolReview = {
     'Best Honeywell-brand budget large-room — True HEPA H13 + carbon + 465 sq ft coverage at $249. No sensor or smart features; Honeywell brand-trust play.',
   summary:
     'Honeywell HPA300 is the long-running Honeywell budget large-room reference — True HEPA H13, activated-carbon pre-filter, 465 sq ft AHAM-certified coverage, simple 3-speed + Turbo control, $249. Honeywell brand pedigree from home-appliance category. No app, no sensor — basic but credible large-room budget. Strong consumer track record at scale.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'filtration-technology', score: 7.0, note: 'True HEPA H13 + activated-carbon pre-filter. Standard budget spec without premium differentiation.' },
     { criterionId: 'cadr-coverage', score: 8.0, note: 'AHAM-certified 300 CADR. 465 sq ft coverage — largest budget-tier coverage in roundup.' },

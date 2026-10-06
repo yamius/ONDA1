@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const saunaspaceFaraday: ToolReview = {
+const saunaspaceFaraday: ToolReviewInput = {
   slug: 'saunaspace-faraday',
   name: 'SaunaSpace Faraday',
   brand: 'SaunaSpace',
@@ -12,7 +12,6 @@ const saunaspaceFaraday: ToolReview = {
     'The biohacker premium near-IR sauna — incandescent emitters, full Faraday cage, distinct from full-spectrum IR.',
   summary:
     'SaunaSpace Faraday is the near-IR incandescent sauna that defined the biohacker premium tier. Tungsten-filament incandescent bulbs deliver near-IR (no carbon-fibre far-IR heaters), full Faraday-cage shielding eliminates external EMF, all-wood construction. Different category positioning from full-spectrum IR — incandescent near-IR is the SaunaSpace bet.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'heat-source', score: 9.0, note: 'Tungsten-filament incandescent bulbs delivering near-IR (700–1200 nm). Distinct from carbon/ceramic far-IR; closer to natural sunlight spectrum.' },
     { criterionId: 'build', score: 8.5, note: 'All-wood (poplar) construction with Faraday-cage EMF shielding. 5-year warranty. Strong build-quality reputation.' },

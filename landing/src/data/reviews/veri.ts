@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const veri: ToolReview = {
+const veri: ToolReviewInput = {
   slug: 'veri',
   name: 'Veri',
   brand: 'Veri',
@@ -12,7 +12,6 @@ const veri: ToolReview = {
     'The strongest EU-focused CGM programme — clean app, solid insights, the right choice if Levels and Stelo are unavailable to you.',
   summary:
     'Veri is a Finnish CGM programme that does in EU markets what Levels does in the US — Abbott Libre 3 hardware (or Dexcom in selected regions) wrapped in a polished biohacker-oriented app. Strong meal scoring, time-in-range and AUC views. No human coach by default, but the app interface is tidy and the localisation is real. The right pick for European users who cannot access Levels or Stelo directly.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott Libre 3 in EU markets (Dexcom in selected regions) — MARD ~9%, 14-day wear, calibration-free, 60-minute warm-up.' },
     { criterionId: 'insights', score: 7.5, note: 'Solid meal scoring, time-in-range, AUC and glucose-variability views. Cleaner than Lingo, less deep than Levels.' },

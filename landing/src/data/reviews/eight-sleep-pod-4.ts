@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const eightSleepPod4: ToolReview = {
+const eightSleepPod4: ToolReviewInput = {
   slug: 'eight-sleep-pod-4',
   name: 'Eight Sleep Pod 4',
   brand: 'Eight Sleep',
@@ -12,7 +12,6 @@ const eightSleepPod4: ToolReview = {
     'The category-defining smart sleep-climate system — dual-zone water cooling/heating, HRV tracking, subscription required.',
   summary:
     'Eight Sleep Pod 4 is the smart sleep-climate system that defined the category. Dual-zone water-cooled cover with active heating and cooling (13–43°C), built-in HRV and sleep tracking, autopilot climate adjustment based on sleep stage. The hardware is excellent; the subscription model is the editorial point of contention — full features require ongoing Eight Sleep Autopilot membership.',
-  overallScore: 8.5,
   scores: [
     { criterionId: 'climate-range', score: 9.5, note: 'Best-in-class dual-zone range (13–43°C), strong recovery time, holds target through wide ambient swings. Autopilot adjusts overnight based on sleep stage.' },
     { criterionId: 'build', score: 8.5, note: 'Premium cover construction over Eight Sleep mattress. Hub size moderate. 2-year warranty. Multi-year reliability track record largely positive.' },

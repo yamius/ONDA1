@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraRing5VsWhoop: HeadToHead = {
+const ouraRing5VsWhoop: HeadToHeadInput = {
   slug: 'oura-ring-5-vs-whoop-5-0',
   productASlug: 'oura-ring-5',
   productBSlug: 'whoop-5-0',
@@ -9,7 +9,6 @@ const ouraRing5VsWhoop: HeadToHead = {
     'Oura Ring 5 vs WHOOP 5.0 — the sleep-first ring vs the training-first band. ONDA compares HRV and sleep accuracy, recovery coaching, comfort and cost.',
   intro:
     'The Oura Ring 5 and WHOOP 5.0 are the two screenless recovery trackers most people cross-shop, and they split cleanly by philosophy. Oura is the sleep-first ring — the most accurate overnight HRV and sleep in the smallest thing you can wear. WHOOP is the training-first band — continuous HRV and a full recovery-and-strain coaching layer. Both lock their best data behind a payment.',
-  winnerSlug: null,
   verdict:
     'Sleep-first ring vs training-first band. The Oura Ring 5 wins on sleep and overnight HRV accuracy and all-day comfort; WHOOP 5.0 wins on continuous in-exercise HRV and daily recovery-and-strain coaching. Both require ongoing payment — pick by whether your priority is precise sleep data or training guidance.',
   bestForA:

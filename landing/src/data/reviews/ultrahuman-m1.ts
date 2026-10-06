@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ultrahumanM1: ToolReview = {
+const ultrahumanM1: ToolReviewInput = {
   slug: 'ultrahuman-m1',
   name: 'Ultrahuman M1',
   brand: 'Ultrahuman',
@@ -12,7 +12,6 @@ const ultrahumanM1: ToolReview = {
     'The best ecosystem play — glucose data composed with HRV, sleep and recovery from the Ultrahuman Ring in one app.',
   summary:
     'Ultrahuman M1 is the CGM arm of the Ultrahuman platform — the same app that runs the Ultrahuman rings. Outside the US it uses Abbott FreeStyle Libre sensors; in the US, Ultrahuman launched M2 Live on 18 June 2026, built on Abbott’s over-the-counter Lingo sensor with no prescription needed. The differentiator is integration: meals, glucose curves, sleep, HRV, movement and recovery live on one timeline. Strong for Ultrahuman ring owners; weaker as a standalone CGM.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'sensor-accuracy', score: 8.5, note: 'Abbott sensors throughout: FreeStyle Libre (Libre 3 MARD ~9%) outside the US, Abbott Lingo (14-day wear, Libre-based) in the US via M2 Live. Marginally less accurate than Dexcom G7 in independent comparison.' },
     { criterionId: 'insights', score: 7.5, note: 'Solid meal-impact analysis plus the unique cross-signal view: glucose composed with HRV, sleep and recovery on the same timeline.' },

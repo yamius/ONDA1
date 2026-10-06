@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const blueCubeColdPlunge: ToolReview = {
+const blueCubeColdPlunge: ToolReviewInput = {
   slug: 'bluecube-cold-plunge',
   name: 'BlueCube Cold Plunge',
   brand: 'BlueCube Baths',
@@ -12,7 +12,6 @@ const blueCubeColdPlunge: ToolReview = {
     'The commercial-grade choice — overbuilt for home use, the right shape for clinics, gyms or households running multiple users.',
   summary:
     'BlueCube Cold Plunge is the commercial-grade tub sold to clinics and athletic facilities. The chiller is the highest-capacity in the consumer-adjacent market — recovers fast enough to run continuous back-to-back plunges. For typical home single-user practice it is overbuilt; for multi-user households or clinical settings it is the right tool.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'chiller-capacity', score: 9.5, note: 'Highest-capacity chiller in this list — built for continuous multi-user operation. Holds aggressive temperatures even in summer heat with rapid recovery.' },
     { criterionId: 'build', score: 9.0, note: 'Commercial-grade construction designed for clinical / gym multi-user use. 5-year warranty on most components.' },

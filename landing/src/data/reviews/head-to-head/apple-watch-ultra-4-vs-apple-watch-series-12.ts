@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ultra4VsSeries12: HeadToHead = {
+const ultra4VsSeries12: HeadToHeadInput = {
   slug: 'apple-watch-ultra-4-vs-apple-watch-series-12',
   productASlug: 'apple-watch-ultra-4',
   productBSlug: 'apple-watch-series-12',
@@ -9,7 +9,6 @@ const ultra4VsSeries12: HeadToHead = {
     'Apple Watch Ultra 4 vs Series 12 for HRV — same new Health Sensing System, very different battery and price. Which Apple Watch to buy for recovery, weighed axis by axis.',
   intro:
     'Both launched on 18 September 2026 with the same all-new Health Sensing System: HRV sampled up to 24× more often, split into Recovery HRV and Overall HRV. So the readings are the same in kind. What differs is everything around the sensor — a ~50-hour battery, an athlete readiness score and a rugged 49 mm case on the Ultra 4, against a $399 price on the Series 12.',
-  winnerSlug: null,
   verdict:
     'No overall winner — it splits by use. For night-after-night overnight HRV, and for athletes or outdoors users, the Ultra 4’s ~50-hour battery is the decisive advantage. For HRV and everyday health at half the price, the Series 12 has the same HRV system.',
   bestForA:

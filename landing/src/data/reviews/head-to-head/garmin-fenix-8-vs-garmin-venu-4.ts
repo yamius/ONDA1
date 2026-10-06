@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const fenix8VsVenu4: HeadToHead = {
+const fenix8VsVenu4: HeadToHeadInput = {
   slug: 'garmin-fenix-8-vs-garmin-venu-4',
   productASlug: 'garmin-fenix-8',
   productBSlug: 'garmin-venu-4',
@@ -9,7 +9,6 @@ const fenix8VsVenu4: HeadToHead = {
     'Garmin Fenix 8 vs Venu 4 — which Garmin for HRV? The rugged ECG-capable multisport flagship versus the lighter, cheaper AMOLED all-rounder. Same HRV Status, very different watch.',
   intro:
     'Both run Garmin’s HRV Status and the same overnight-recovery model, so for the HRV number itself they are close. The difference is everything around it: the Fenix 8 is a rugged, ECG-capable, multi-week-battery expedition instrument at ~$1,000; the Venu 4 is a lighter, friendlier AMOLED lifestyle smartwatch at ~$499. This is a "how much watch do you actually need" decision.',
-  winnerSlug: 'garmin-venu-4',
   verdict:
     'For HRV and everyday health, the Venu 4 is the smarter buy — the same HRV Status and multi-day battery in a lighter, cheaper watch. The Fenix 8 is worth its premium only if you genuinely use the ECG, rugged build, maps and dive features.',
   bestForA:

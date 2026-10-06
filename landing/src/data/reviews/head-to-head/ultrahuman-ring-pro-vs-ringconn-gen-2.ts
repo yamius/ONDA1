@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ringProVsRingconn: HeadToHead = {
+const ringProVsRingconn: HeadToHeadInput = {
   slug: 'ultrahuman-ring-pro-vs-ringconn-gen-2',
   productASlug: 'ultrahuman-ring-pro',
   productBSlug: 'ringconn-gen-2',
@@ -9,7 +9,6 @@ const ringProVsRingconn: HeadToHead = {
     'Ultrahuman Ring Pro vs RingConn Gen 2 — two subscription-free smart rings. Premium features + ~15-day battery vs the value pick at half the price. ONDA compares them.',
   intro:
     'Both are subscription-free rings with long batteries, so this is a value-vs-features decision, not a subscription argument. The Ultrahuman Ring Pro is the premium option — on-ring processing, richer metrics, ~15-day battery, $479. The RingConn Gen 2 is the value champion — solid tracking, a 10–12-day battery and no subscription for about $180 less ($299).',
-  winnerSlug: null,
   verdict:
     'Both skip the subscription and last well over a week. The Ultrahuman Ring Pro wins on features, processing and a slightly longer battery; the RingConn Gen 2 wins decisively on price — roughly half the cost for solid, proven tracking. Pick by whether you want premium metrics or the best value.',
   bestForA:

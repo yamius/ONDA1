@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const joovvSolo3: ToolReview = {
+const joovvSolo3: ToolReviewInput = {
   slug: 'joovv-solo-3',
   name: 'Joovv Solo 3.0',
   brand: 'Joovv',
@@ -12,7 +12,6 @@ const joovvSolo3: ToolReview = {
     'The category reference — modular, well-built, fairly measured irradiance and FDA-registered. Most expensive in this list, mostly justified.',
   summary:
     'The Joovv Solo 3.0 is the panel that defined the consumer red-light category. Modular Solo panels link together to scale from a single half-body unit to a stand-mounted full-body wall. Combo 660 nm red + 850 nm NIR, FDA-registered as a Class II device (Joovv lists topical-heating indications such as temporary relief of minor muscle and joint pain), independently-verified irradiance close to advertised figures, low EMF and low flicker. The most expensive option here, with most of the premium going to build and verification rather than spec inflation.',
-  overallScore: 8.1,
   scores: [
     { criterionId: 'irradiance', score: 9.0, note: 'Manufacturer-claimed >100 mW/cm² at 6 inches; independent meter readings sit close to that figure unlike most cheaper panels — one of the most honestly-specced devices in the category.' },
     { criterionId: 'wavelengths', score: 8.5, note: 'Combo 660 nm red + 850 nm NIR with published peaks at the standard photobiomodulation wavelengths. No exotic UV/940 nm additions; clean spectrum.' },

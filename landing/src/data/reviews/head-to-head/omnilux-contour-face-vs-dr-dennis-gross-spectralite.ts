@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const omniluxVsGross: HeadToHead = {
+const omniluxVsGross: HeadToHeadInput = {
   slug: 'omnilux-contour-face-vs-dr-dennis-gross-spectralite',
   productASlug: 'omnilux-contour-face',
   productBSlug: 'dr-dennis-gross-spectralite',
@@ -9,7 +9,6 @@ const omniluxVsGross: HeadToHead = {
     'Omnilux Contour Face vs Dr. Dennis Gross SpectraLite — FDA-cleared flexible silicone vs dermatology-brand hard-shell with dual red + blue spectrum. ONDA breaks down the clinical references.',
   intro:
     'Omnilux Contour Face and Dr. Dennis Gross SpectraLite FaceWare Pro are the two FDA-cleared dermatology-credible red light masks users compare. The defining difference: Omnilux is flexible silicone with single red + NIR spectrum; Dr. Dennis Gross is hard-shell with dual red + blue protocols.',
-  winnerSlug: null,
   verdict:
     'Comfort vs spectrum scope. Omnilux Contour Face for FDA Class II clearance with best-in-class silicone comfort. Dr. Dennis Gross for dermatology-brand pedigree with dual red + blue protocols.',
   bestForA:

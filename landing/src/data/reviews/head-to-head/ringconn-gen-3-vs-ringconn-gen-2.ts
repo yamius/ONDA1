@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const gen3VsGen2: HeadToHead = {
+const gen3VsGen2: HeadToHeadInput = {
   slug: 'ringconn-gen-3-vs-ringconn-gen-2',
   productASlug: 'ringconn-gen-3',
   productBSlug: 'ringconn-gen-2',
@@ -9,7 +9,6 @@ const gen3VsGen2: HeadToHead = {
     'RingConn Gen 3 vs Gen 2 — what the upgrade adds: a haptic motor, vascular and blood-pressure trends, sleep-apnea insights and a longer battery. Both subscription-free.',
   intro:
     'Both are subscription-free RingConn rings, so this is a straight upgrade question. The Gen 3 adds real hardware over the Gen 2 — a first-in-category haptic motor, vascular and nighttime blood-pressure trends, sleep-apnea insights, a universal wireless charging case and a longer battery — at a higher price. The Gen 2 remains the value pick for the core tracking.',
-  winnerSlug: null,
   verdict:
     'A genuine feature upgrade. The Gen 3 adds a haptic motor (silent alarm and alerts), vascular/blood-pressure trends, sleep-apnea insights and a longer ~10-14 day battery; the Gen 2 is cheaper and covers the core sleep-and-HRV tracking well. Pay up for the Gen 3 if you want the new features and silent alerts; the Gen 2 if you want the essentials for less.',
   bestForA:

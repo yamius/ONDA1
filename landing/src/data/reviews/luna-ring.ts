@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const lunaRing: ToolReview = {
+const lunaRing: ToolReviewInput = {
   slug: 'luna-ring',
   name: 'Noise Luna Ring Gen 2',
   brand: 'Noise',
@@ -12,7 +12,6 @@ const lunaRing: ToolReview = {
     'A practical, affordable, subscription-free Oura alternative — good sleep tracking and a long total battery via its case, though single-charge battery and some app rough edges keep it a value pick rather than a class leader.',
   summary:
     'The Noise Luna Ring Gen 2 is a budget, subscription-free smart ring aimed squarely at people who want core Oura-style tracking for less. At around $300 with no membership, it covers heart rate, HRV, SpO2, skin temperature, sleep and automatic activity detection, with a "Luna AI" assistant. Sleep staging is genuinely accurate and the pocket charging case stretches total battery toward a headline ~30 days — but the ring itself lasts only about four days per charge, a step behind class leaders, and the app has some teething issues. It’s a reliable, practical alternative rather than a groundbreaking one.',
-  overallScore: 6.7,
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'HRV tracking for recovery and stress — reasonable for the price, not validated to Oura’s level.' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical heart rate, SpO2, PPG and skin-temperature sensors. A competent budget array.' },

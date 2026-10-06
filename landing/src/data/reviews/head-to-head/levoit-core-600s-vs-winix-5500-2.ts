@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const levoitVsWinix: HeadToHead = {
+const levoitVsWinix: HeadToHeadInput = {
   slug: 'levoit-core-600s-vs-winix-5500-2',
   productASlug: 'levoit-core-600s',
   productBSlug: 'winix-5500-2',
@@ -9,7 +9,6 @@ const levoitVsWinix: HeadToHead = {
     'Levoit Core 600S vs Winix 5500-2 — mid-budget smart app vs Korean budget with sensor. ONDA breaks down the mid-budget air-purifier duel.',
   intro:
     'Levoit Core 600S and Winix 5500-2 are the two mid-budget air purifiers users compare. Same price tier ($249-$299). The defining difference: Levoit has VeSync app + smart features; Winix has sensor + PlasmaWave option without app.',
-  winnerSlug: 'levoit-core-600s',
   verdict:
     'Levoit wins on app + coverage. Winix wins on PlasmaWave option + Korean brand. For users wanting smart features, Levoit is the rational choice.',
   bestForA:

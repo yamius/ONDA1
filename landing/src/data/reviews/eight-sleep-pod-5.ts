@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const eightSleepPod5: ToolReview = {
+const eightSleepPod5: ToolReviewInput = {
   slug: 'eight-sleep-pod-5',
   name: 'Eight Sleep Pod 5',
   brand: 'Eight Sleep',
@@ -12,7 +12,6 @@ const eightSleepPod5: ToolReview = {
     'The maximal Eight Sleep — the Pod 5 Ultra adds an adjustable base, a top-down hydro-powered blanket, built-in audio and snore mitigation, but at $6,099+ the price roughly doubles. The core dual-zone climate and HRV tech are the same as the Pod 4, which remains the value. Note: Eight Sleep replaced the Pod 5 with the Pod 6 on 23 September 2026 — check remaining Pod 5 stock against Pod 6 pricing.',
   summary:
     'The Eight Sleep Pod 5 is the 2026 generation of the category-leading sleep-climate system. The flagship Pod 5 Ultra is a fuller bed system: an adjustable base, a hydro-powered blanket that adds cooling/heating from above as well as below, built-in soundscapes and speakers, and automatic snore mitigation that gently raises your head. The Pod 5 Core (cover-only) adds faster heating/cooling and smarter AI. But the fundamentals — dual-zone temperature, AI Autopilot, HRV and sleep-stage tracking, vibrating alarm — are identical to the Pod 4, and the April 2026 Autopilot 4.0 "sleep agent" (Apple/Google Health integration, plain-language morning brief) reaches the Pod 4 too. The Pod 5 Ultra starts around $6,099 (queen) to $6,300 (king) versus the Pod 4’s $2,449–$2,649, and the subscription is still required. On 23 September 2026 Eight Sleep launched the Pod 6 as the Pod 5’s replacement in every market, starting at $1,999 (Solo) and $2,899 (queen, dual-zone), so the Pod 5 is now the previous generation.',
-  overallScore: 8.5,
   scores: [
     { criterionId: 'climate-range', score: 9.7, note: 'The Pod 5 Ultra adds a hydro-powered blanket for top-down temperature control on top of the dual-zone cover — the fullest climate envelope in the category. Pod 5 Core adds faster heating/cooling. Dual-zone (his/her) carries over.' },
     { criterionId: 'build', score: 8.5, note: 'Premium cover plus, on the Ultra, an adjustable base and quieter hub. Refined physical controls. Multi-year reliability track record largely positive.' },

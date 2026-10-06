@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ultrahumanRingAir: ToolReview = {
+const ultrahumanRingAir: ToolReviewInput = {
   slug: 'ultrahuman-ring-air',
   name: 'Ultrahuman Ring Air',
   brand: 'Ultrahuman',
@@ -12,7 +12,6 @@ const ultrahumanRingAir: ToolReview = {
     'A featherweight, subscription-free ring with strong sleep tracking — undercut by widespread reports of batteries failing within months, and now banned from US sale. Ultrahuman’s successor is the Ring Pro.',
   summary:
     'The Ultrahuman Ring Air does the fundamentals well — light, subscription-free, continuous HRV and strong sleep tracking. But it is hard to recommend without reservation: through 2026, batteries failing within months have been a widely reported problem, and since 21 October 2025 it can no longer be imported into or sold new in the US.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'hrv-accuracy', score: 8.0, note: 'Continuous HRV (SDNN and RMSSD), updated every couple of minutes at rest — a genuinely continuous overnight signal.' },
     { criterionId: 'sensor', score: 7.5, note: 'Optical PPG in a very light ring; a clean signal at rest.' },

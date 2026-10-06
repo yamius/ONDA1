@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const blueair7770: ToolReview = {
+const blueair7770: ToolReviewInput = {
   slug: 'blueair-healthprotect-7770i',
   name: 'Blueair HealthProtect 7770i',
   brand: 'Blueair',
@@ -12,7 +12,6 @@ const blueair7770: ToolReview = {
     'Best Swedish premium — HEPASilent ion-charge filtration delivers HEPA-equivalent capture at lower noise, GermShield always-on mode. Premium pricing.',
   summary:
     'Blueair HealthProtect 7770i is the Swedish premium reference — HEPASilent ion-charge technology delivers HEPA-equivalent capture at lower noise than traditional HEPA fans, plus GermShield always-on low-power continuous mode, real-time PM2.5 / VOC sensors, app integration. Multi-decade Blueair brand pedigree from European market.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'filtration-technology', score: 8.0, note: 'HEPASilent ion-charge + HEPA combination — captures particles via charge attraction reducing fan-speed requirement. HEPA-equivalent without HyperHEPA depth.' },
     { criterionId: 'cadr-coverage', score: 8.5, note: 'AHAM-certified CADR. 540 sq ft coverage at 5 ACH.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const lunaVsHelio: HeadToHead = {
+const lunaVsHelio: HeadToHeadInput = {
   slug: 'luna-ring-vs-amazfit-helio-ring',
   productASlug: 'luna-ring',
   productBSlug: 'amazfit-helio-ring',
@@ -9,7 +9,6 @@ const lunaVsHelio: HeadToHead = {
     'Noise Luna Ring Gen 2 vs Amazfit Helio Ring — two affordable, subscription-free smart rings. Long total battery via a case vs the lightest, cheapest ring.',
   intro:
     'These are two of the cheapest subscription-free smart rings, both aimed at people who want core Oura-style tracking without the price or the membership. The Noise Luna Ring Gen 2 (~$300) leans on a pocket charging case for a long total battery and accurate sleep; the Amazfit Helio Ring ($199) is cheaper and lighter but ships in only three sizes. Both are value picks with trade-offs.',
-  winnerSlug: null,
   verdict:
     'Two budget subscription-free rings. The Amazfit Helio Ring is cheaper ($199) and lighter; the Noise Luna Ring Gen 2 (~$300) has a wider size range, a charging case for long total battery, and equally good sleep tracking. Pick the Helio for lowest price if it fits, the Luna for better fit options and the charging-case convenience.',
   bestForA:

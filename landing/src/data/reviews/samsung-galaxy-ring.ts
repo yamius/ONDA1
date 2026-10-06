@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const samsungGalaxyRing: ToolReview = {
+const samsungGalaxyRing: ToolReviewInput = {
   slug: 'samsung-galaxy-ring',
   name: 'Samsung Galaxy Ring',
   brand: 'Samsung',
@@ -12,7 +12,6 @@ const samsungGalaxyRing: ToolReview = {
     'The subscription-free Oura alternative for Android — comfortable and competent, if locked to the Samsung ecosystem.',
   summary:
     'The Samsung Galaxy Ring is the closest thing to an Oura Ring 4 without the subscription. It is a comfortable ring with competent overnight HRV and sleep tracking — but it is tied to Samsung Health and Android, and its accuracy trails Oura.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.5, note: 'Overnight optical HRV from the ring — competent, though independent validation still favours the Oura Ring 4.' },
     { criterionId: 'sensor', score: 7.5, note: 'Optical PPG in a ring form factor; a clean overnight signal.' },

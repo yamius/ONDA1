@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const endel: ToolReview = {
+const endel: ToolReviewInput = {
   slug: 'endel',
   name: 'Endel',
   brand: 'Endel',
@@ -12,7 +12,6 @@ const endel: ToolReview = {
     'An AI soundscape app that adapts its audio to time of day and inputs in real time — beautiful and distinctive, but it plays sound, it does not track sleep.',
   summary:
     'Endel generates soundscapes with an AI engine that adapts in real time to inputs like time of day, weather and — paired with a wearable — heart rate. The result is ambient audio for sleep, focus and relaxation that is genuinely distinctive. It is an audio app, though; it does not track your night.',
-  overallScore: 6.4,
   scores: [
     { criterionId: 'tracking-accuracy', score: 2.5, note: 'No real sleep tracking — Endel reads inputs to shape audio, it does not measure your sleep.' },
     { criterionId: 'wind-down-content', score: 8.0, note: 'Adaptive, generative soundscapes for sleep and relaxation — distinctive and well-made.' },

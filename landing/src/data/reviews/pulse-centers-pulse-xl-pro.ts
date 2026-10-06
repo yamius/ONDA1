@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const pulseCentersXLPro: ToolReview = {
+const pulseCentersXLPro: ToolReviewInput = {
   slug: 'pulse-centers-pulse-xl-pro',
   name: 'Pulse Centers Pulse XL Pro',
   brand: 'Pulse Centers',
@@ -12,7 +12,6 @@ const pulseCentersXLPro: ToolReview = {
     'Highest-output consumer-accessible PEMF. Clinical coil applicators, used in pro-athlete and chiropractic settings. Price puts it in the prosumer/clinic bracket.',
   summary:
     'Pulse Centers Pulse XL Pro is the high-intensity opposite of Bemer — coil-based applicators delivering 200,000+ µT peak intensity vs Bemer’s 35–150 µT. The Pulse system dominates clinical and athletic-recovery installations. Hardware is built for clinic-grade use; pricing reflects it ($7,000–$15,000+). Not a daily-driver consumer mat — a serious clinical PEMF tool.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'field-strength', score: 9.8, note: 'Highest field strength in consumer-accessible PEMF — 200,000+ µT peak via coil applicators. The category benchmark for intensity-driven protocols.' },
     { criterionId: 'waveform-evidence', score: 7.5, note: 'Uses well-documented high-intensity PEMF research band. Less single-waveform research moat than Bemer; the intensity-effect literature is the backing.' },

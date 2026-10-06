@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const signos: ToolReview = {
+const signos: ToolReviewInput = {
   slug: 'signos',
   name: 'Signos',
   brand: 'Signos',
@@ -12,7 +12,6 @@ const signos: ToolReview = {
     'The most weight-loss-focused CGM programme — Dexcom G7 plus an AI agent that pushes meal-by-meal recommendations.',
   summary:
     'Signos is the CGM programme built for weight loss rather than general biohacker insight. Hardware is Dexcom G7; the differentiator is an AI agent that watches glucose curves in real time and pushes meal-by-meal recommendations through the app. Insights focus on glucose spikes that drive insulin and weight gain, with strong food-logging and exercise-prompt integration. Less academic than Levels, more behaviourally directive.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom G7 — MARD ~8.2%, 10-day wear, 30-minute warm-up. Same hardware as Levels and Stelo.' },
     { criterionId: 'insights', score: 8.0, note: 'Strong on glucose-spike interpretation and meal scoring; weight-loss framing throughout. Less general-purpose than Levels.' },

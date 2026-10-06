@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ringProVsOura5: HeadToHead = {
+const ringProVsOura5: HeadToHeadInput = {
   slug: 'ultrahuman-ring-pro-vs-oura-ring-5',
   productASlug: 'ultrahuman-ring-pro',
   productBSlug: 'oura-ring-5',
@@ -9,7 +9,6 @@ const ringProVsOura5: HeadToHead = {
     'Ultrahuman Ring Pro vs Oura Ring 5 — the subscription-free flagship with a ~15-day battery vs the accuracy leader with a mandatory membership. ONDA on which smart ring to buy.',
   intro:
     'This is the headline smart-ring decision of 2026: Ultrahuman’s redesigned, US-available Ring Pro against Oura’s flagship Ring 5. The Ring Pro is subscription-free with a category-leading ~15-day battery; the Ring 5 is the most accurate ring with the best app, but charges a mandatory membership. It comes down to owning it outright vs paying for the reference experience.',
-  winnerSlug: null,
   verdict:
     'No subscription and huge battery vs accuracy and app depth. The Ultrahuman Ring Pro wins on cost model (one-time $479, no fee) and battery (~15 days); the Oura Ring 5 wins on validated accuracy, sensors and the best app — for $399 plus a membership. Pick by whether you refuse a subscription or want the reference ring.',
   bestForA:

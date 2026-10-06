@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const whoop50VsGarminVenu4: HeadToHead = {
+const whoop50VsGarminVenu4: HeadToHeadInput = {
   slug: 'whoop-5-0-vs-garmin-venu-4',
   productASlug: 'whoop-5-0',
   productBSlug: 'garmin-venu-4',
@@ -9,7 +9,6 @@ const whoop50VsGarminVenu4: HeadToHead = {
     'Whoop 5.0 vs Garmin Venu 4 — side-by-side ONDA comparison of two training-focused HRV trackers. Coaching subscription versus do-everything watch.',
   intro:
     'Whoop 5.0 and Garmin Venu 4 are the two HRV trackers serious trainers compare against each other in 2026. Both surface a daily recovery signal and a training-load model; the structural difference is the wrapper. Whoop is a coaching subscription bundled with a band; Garmin is a one-time-purchase smartwatch with first-party training analytics. The choice is less about HRV accuracy and more about how you want to live with the device.',
-  winnerSlug: 'garmin-venu-4',
   verdict:
     'Garmin Venu 4 wins for most trainers — comparable HRV and recovery analytics with no subscription, a display with up to 12 days of battery and the deeper training-load model. Whoop wins specifically for users who treat the daily Recovery score as a coaching prompt.',
   bestForA:

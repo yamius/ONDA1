@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const achedawayPro: ToolReview = {
+const achedawayPro: ToolReviewInput = {
   slug: 'achedaway-pro',
   name: 'Achedaway Pro',
   brand: 'Achedaway',
@@ -12,7 +12,6 @@ const achedawayPro: ToolReview = {
     'Best spec-to-price ratio in premium percussion — 80 lbs stall force (highest in category) at $349. No premium-brand app ecosystem.',
   summary:
     'Achedaway Pro is the biohacker dark-horse — 80 lbs stall force (highest in category, exceeding Theragun PRO Plus and Hypervolt 2 Pro), 16 mm amplitude, 7 attachments, quiet brushless motor, $349. No Therabody / Hyperice app ecosystem; the trade is brand polish and smart features for raw spec maximalism and lower price.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 9.5, note: '80 lbs stall force — highest in consumer category. 16 mm amplitude matches Theragun. Spec maximalism wins on percussion dose.' },
     { criterionId: 'build-attachments', score: 8.0, note: 'Brushless motor, 7 attachments included (most in category), 1-year warranty. Build quality solid; brand pedigree thinner than Therabody / Hyperice.' },

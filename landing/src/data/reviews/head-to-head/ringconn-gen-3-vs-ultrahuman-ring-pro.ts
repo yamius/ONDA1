@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const gen3VsRingPro: HeadToHead = {
+const gen3VsRingPro: HeadToHeadInput = {
   slug: 'ringconn-gen-3-vs-ultrahuman-ring-pro',
   productASlug: 'ringconn-gen-3',
   productBSlug: 'ultrahuman-ring-pro',
@@ -9,7 +9,6 @@ const gen3VsRingPro: HeadToHead = {
     'RingConn Gen 3 vs Ultrahuman Ring Pro — the two premium subscription-free smart rings of 2026. Haptic alerts and value vs the longest battery and on-ring processing.',
   intro:
     'These are the two premium subscription-free rings worth cross-shopping in 2026 — both skip the membership, both last well over a week. The RingConn Gen 3 is the value-and-features pick ($349, haptic motor, vascular/sleep-apnea insights); the Ultrahuman Ring Pro is the battery-and-processing pick ($479, ~15-day battery, on-ring dual-core). It’s features-per-dollar vs peak battery and metabolic-leaning metrics.',
-  winnerSlug: null,
   verdict:
     'Both are premium and subscription-free. The RingConn Gen 3 wins on price ($349 vs $479) and unique features like a haptic silent alarm and vascular/sleep-apnea insights; the Ultrahuman Ring Pro wins on the longest battery (~15 days), on-ring processing and metabolic-leaning metrics. Pick by whether you want features-per-dollar or peak battery and processing.',
   bestForA:

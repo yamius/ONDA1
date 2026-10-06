@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ayoSleepTape: ToolReview = {
+const ayoSleepTape: ToolReviewInput = {
   slug: 'ayo-sleep-tape',
   name: 'AYO Sleep Tape',
   brand: 'AYO',
@@ -12,7 +12,6 @@ const ayoSleepTape: ToolReview = {
     'Best K-beauty hypoallergenic mouth tape — skin-friendly Korean adhesive engineering, accessible price. Limited Western distribution.',
   summary:
     'AYO Sleep Tape is the Korean K-beauty entry — single-piece mouth tape with hypoallergenic adhesive engineered specifically for sensitive Asian-skin sensitivity standards. Accessible pricing, growing Western distribution via Amazon. Skin-tolerance reports excellent; brand newer in Western market than Hostage Tape or Somnifix.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'adhesion-comfort', score: 7.5, note: 'Korean K-beauty hypoallergenic adhesive — gentle, low irritation. Less aggressive grip than Hostage Tape; struggles with beards.' },
     { criterionId: 'breathing-mechanism', score: 7.0, note: 'Full-seal single-piece. No porous variant.' },

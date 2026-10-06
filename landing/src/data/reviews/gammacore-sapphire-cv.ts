@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const gammacoreSapphireCv: ToolReview = {
+const gammacoreSapphireCv: ToolReviewInput = {
   slug: 'gammacore-sapphire-cv',
   name: 'gammaCore Sapphire CV',
   brand: 'electroCore',
@@ -12,7 +12,6 @@ const gammacoreSapphireCv: ToolReview = {
     'The FDA-cleared medical reference for non-invasive cervical VNS — a clinical tool, not a consumer wellness device.',
   summary:
     'gammaCore is the only non-invasive vagus nerve stimulator with FDA clearance for headache disorders — migraine (prevention and acute treatment, age 12+), cluster headache, paroxysmal hemicrania and hemicrania continua. It is a handheld device pressed against the side of the neck over the carotid artery, delivering a proprietary 5 kHz waveform burst for 2-minute sessions. Available by prescription only. Within its indications it is the most evidence-backed device in this list — and it is priced and gated accordingly.',
-  overallScore: 8.4,
   scores: [
     { criterionId: 'evidence', score: 9.7, note: 'FDA-cleared for migraine prevention and acute treatment (age 12+), cluster-headache acute/preventive treatment, paroxysmal hemicrania and hemicrania continua; 30+ randomised trials. The clinical reference for non-invasive cervical VNS.' },
     { criterionId: 'mechanism', score: 8.5, note: 'Cervical tVNS over the carotid sheath — targets the cervical vagal trunk directly. Proprietary 5 kHz burst waveform; parameters are fixed, not user-adjustable.' },

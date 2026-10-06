@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const hostageVsIntake: HeadToHead = {
+const hostageVsIntake: HeadToHeadInput = {
   slug: 'hostage-tape-vs-intake-breathing',
   productASlug: 'hostage-tape',
   productBSlug: 'intake-breathing',
@@ -9,7 +9,6 @@ const hostageVsIntake: HeadToHead = {
     'Hostage Tape vs Intake Breathing — mouth tape vs external magnetic nasal dilator. ONDA breaks down the mouth-seal vs nasal-dilation approach.',
   intro:
     'Hostage Tape and Intake Breathing represent the two opposite approaches to forcing nasal breathing overnight. Hostage Tape seals the mouth so you can only breathe through the nose. Intake Breathing mechanically widens the nostrils so nasal breathing becomes the easier path of less resistance.',
-  winnerSlug: null,
   verdict:
     'Different mechanisms for the same goal. Hostage Tape for users committed to mouth-seal and the biohacker brand convenience. Intake Breathing for users who can\'t adapt to mouth tape and want the nasal-airway approach instead.',
   bestForA:

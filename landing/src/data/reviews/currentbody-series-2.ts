@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const currentbodySeries2: ToolReview = {
+const currentbodySeries2: ToolReviewInput = {
   slug: 'currentbody-series-2',
   name: 'CurrentBody Series 2 LED Light Therapy Face Mask',
   brand: 'CurrentBody',
@@ -12,7 +12,6 @@ const currentbodySeries2: ToolReview = {
     'Best consumer-market reference — biggest customer base, polished silicone build, neck flap included. Less clinical-evidence moat than Omnilux.',
   summary:
     'CurrentBody Series 2 is the highest-volume consumer red light face mask of 2026 — flexible medical-grade silicone, 132+ LEDs across red 633 nm + near-infrared 830 nm, integrated neck flap (a category first), 10-minute session. CurrentBody owns the consumer market and the Series 2 is the polished iteration of the original best-seller. FDA registered but not Class II cleared like Omnilux; the brand leans on customer-base scale rather than clinical-evidence moat.',
-  overallScore: 8.3,
   scores: [
     { criterionId: 'irradiance', score: 8.0, note: 'Documented irradiance in dermatology-acceptable range. Less independently-verified than Omnilux but transparent at the spec level.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + near-infrared 830 nm — the clinically-validated pair, matching the Omnilux spectrum.' },

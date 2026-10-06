@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const healthyWaveVsQiCoil: HeadToHead = {
+const healthyWaveVsQiCoil: HeadToHeadInput = {
   slug: 'healthy-wave-multi-wave-vs-qi-coil',
   productASlug: 'healthy-wave-multi-wave',
   productBSlug: 'qi-coil',
@@ -9,7 +9,6 @@ const healthyWaveVsQiCoil: HeadToHead = {
     'Healthy Wave Multi-Wave ($995–$2,495), a PEMF mat with published specs, vs Qi Coil ($797–$9,995), a Rife/“scalar” device with no credible evidence.',
   intro:
     'People compare the Healthy Wave Multi-Wave mat and the Qi Coil because both are sold as “PEMF” — but they are different kinds of product. Healthy Wave is a conventional PEMF mat with published frequency and intensity, plus far-infrared heat and red light. Qi Coil is a portable coil built on Rife-frequency and “scalar energy” ideas, with a library of 10,000+ programmes and no published PEMF specs. The gap here is evidence, not taste.',
-  winnerSlug: 'healthy-wave-multi-wave',
   verdict:
     'Not close on the evidence. Healthy Wave is a real PEMF mat with published settings plus infrared heat and red light, at $995–$2,495 by size. Qi Coil rests on Rife and “scalar” claims with no credible support and no published PEMF specs, at $797–$9,995. Its only genuine edge is portability.',
   bestForA:

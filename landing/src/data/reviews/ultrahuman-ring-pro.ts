@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ultrahumanRingPro: ToolReview = {
+const ultrahumanRingPro: ToolReviewInput = {
   slug: 'ultrahuman-ring-pro',
   name: 'Ultrahuman Ring Pro',
   brand: 'Ultrahuman',
@@ -12,7 +12,6 @@ const ultrahumanRingPro: ToolReview = {
     'The redesigned, subscription-free successor to the Ring Air — a category-leading 15-day battery and on-ring processing, and (unlike the Ring Air) available in the US. Promising, but too new for a long-term reliability verdict from a brand whose last ring had battery problems.',
   summary:
     'The Ultrahuman Ring Pro is Ultrahuman’s clean-sheet flagship, launched February 2026 for a one-time $479 with no subscription. It is also the company’s answer to a hard problem: the older Ultrahuman Ring Air is under a US import ban after Oura’s ITC patent win (effective October 2025), and the Ring Pro is the redesigned ring that gets Ultrahuman back on sale to US buyers. The headline is a category-defining ~15-day battery (versus 4–6 days on the Ring Air), plus a dual-core on-ring processor for localized machine-learning and improved heart-rate sensing, and "Jade," a real-time biointelligence layer. It keeps the Ring Air’s strengths — light, subscription-free, continuous HRV, strong sleep tracking — while directly targeting its worst flaw, battery reliability. The caveat is honesty: it is new, independent long-term validation is thin, and the brand’s previous ring was widely reported to fail within months, so the reliability win is promised, not yet proven.',
-  overallScore: 7.9,
   scores: [
     { criterionId: 'hrv-accuracy', score: 8.0, note: 'Continuous HRV (SDNN/RMSSD), with improved sensors and an on-ring dual-core processor for localized processing. Continuous overnight signal in line with the better rings.' },
     { criterionId: 'sensor', score: 8.0, note: 'Upgraded optical sensor array and processing over the Ring Air; improved heart-rate data per Ultrahuman. Clean signal at rest.' },

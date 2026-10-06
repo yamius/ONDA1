@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const pzizz: ToolReview = {
+const pzizz: ToolReviewInput = {
   slug: 'pzizz',
   name: 'Pzizz',
   brand: 'Pzizz',
@@ -12,7 +12,6 @@ const pzizz: ToolReview = {
     'A focused sleep-audio app — its algorithm builds a fresh soundscape every night so it never gets stale — but it does one thing only and does not track.',
   summary:
     'Pzizz does one thing: it plays you to sleep. Its "dreamscape" algorithm generates a unique mix of music, voice and effects each session, so the audio never becomes too familiar to work. It does not track sleep and has no analytics — it is a pure fall-asleep aid.',
-  overallScore: 6.6,
   scores: [
     { criterionId: 'tracking-accuracy', score: 2.0, note: 'No tracking at all — Pzizz plays audio, it does not measure your night.' },
     { criterionId: 'wind-down-content', score: 8.5, note: 'Its whole point — an algorithm that generates a fresh sleep or nap soundscape every session.' },

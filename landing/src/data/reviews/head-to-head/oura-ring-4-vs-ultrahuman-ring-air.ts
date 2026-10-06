@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraVsUltrahuman: HeadToHead = {
+const ouraVsUltrahuman: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-ultrahuman-ring-air',
   productASlug: 'oura-ring-4',
   productBSlug: 'ultrahuman-ring-air',
@@ -9,7 +9,6 @@ const ouraVsUltrahuman: HeadToHead = {
     'Oura Ring 4 vs Ultrahuman Ring Air — side-by-side ONDA comparison of the two leading smart rings. Premium polish with a subscription versus subscription-free with battery-reliability caveats.',
   intro:
     'Oura Ring 4 and Ultrahuman Ring Air are the two smart rings most non-diabetic biohackers shortlist. Oura is the polished category leader with the deepest analytics and a small monthly membership; Ultrahuman is the subscription-free challenger that shipped a featherweight ring and pairs natively with its own CGM ecosystem. Both run on similar optical sensors. The decision is about app maturity vs ownership economics.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Oura Ring 4 wins overall — deeper analytics, cleaner sleep model, and the membership is small relative to the difference in software. Ultrahuman wins for users who want no subscription and full integration with the Ultrahuman M1 CGM.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const circularVsOura5: HeadToHead = {
+const circularVsOura5: HeadToHeadInput = {
   slug: 'circular-ring-2-vs-oura-ring-5',
   productASlug: 'circular-ring-2',
   productBSlug: 'oura-ring-5',
@@ -9,7 +9,6 @@ const circularVsOura5: HeadToHead = {
     'Circular Ring 2 vs Oura Ring 5 — the ambitious ECG/AFib ring with no subscription vs the proven accuracy flagship. Innovation on paper vs features that actually work.',
   intro:
     'On paper this looks close: the Circular Ring 2 has an on-finger ECG, AFib detection and a subscription-free AI coach — things the Oura Ring 5 doesn’t offer. In practice it isn’t close yet. Independent testing found the Circular’s marquee features didn’t reliably work, while the Oura Ring 5 delivers the most accurate, most polished ring experience — for a subscription.',
-  winnerSlug: null,
   verdict:
     'Ambition vs execution. The Circular Ring 2 has unique hardware (ECG, AFib) and no subscription, but its software is unfinished and those features didn’t reliably work in testing. The Oura Ring 5 is less ambitious on paper but does everything well, accurately, with the best app — at $399 plus a membership. Today, buy Oura for a ring that works; consider Circular only as an early-adopter bet.',
   bestForA:

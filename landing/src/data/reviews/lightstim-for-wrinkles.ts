@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const lightstim: ToolReview = {
+const lightstim: ToolReviewInput = {
   slug: 'lightstim-for-wrinkles',
   name: 'LightStim for Wrinkles',
   brand: 'LightStim',
@@ -12,7 +12,6 @@ const lightstim: ToolReview = {
     'Longest track record in consumer red light therapy — FDA-cleared handheld, multi-decade brand, accessible pricing. Handheld form factor means active positioning per session.',
   summary:
     'LightStim for Wrinkles is the longest-running FDA-cleared consumer red light device — multi-wavelength handheld (red 605/630/660/855 nm), 1+ decade brand pedigree, peer-reviewed studies on the specific device. Handheld form factor means active positioning across the face per session (vs lie-on mask). $249 pricing is meaningfully accessible. Trade-off is convenience: mask alternatives let you do other things during the session.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'irradiance', score: 7.5, note: 'Documented irradiance honest to peer-reviewed studies. Handheld positioning delivers higher local dose than mask area-averaged dose.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Four wavelengths — red 605 / 630 / 660 / 855 nm. Broader red coverage than most masks plus near-infrared depth.' },

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const amazfitHelioRing: ToolReview = {
+const amazfitHelioRing: ToolReviewInput = {
   slug: 'amazfit-helio-ring',
   name: 'Amazfit Helio Ring',
   brand: 'Amazfit',
@@ -12,7 +12,6 @@ const amazfitHelioRing: ToolReview = {
     'A genuinely cheap, subscription-free ring with decent sleep and HRV tracking — but only three sizes and a short real-world battery keep it a budget pick, not an Oura rival.',
   summary:
     'The Amazfit Helio Ring is Zepp Health’s budget entry into the smart-ring space: a light titanium ring at $199 with no subscription for core metrics. It tracks heart rate, HRV (RMSSD), blood oxygen, skin temperature and sleep, syncing to the cross-platform Zepp app. Sleep tracking is respectable for the price, and being subscription-free at $199 makes it one of the cheapest capable rings. But it ships in just three sizes (8, 10, 12), so many people can’t get a proper fit, and real-world battery is only about 2.5–3 days — well short of Oura and RingConn.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'Continuous HRV via RMSSD for recovery/readiness. Reasonable for a budget ring, but not validated to the level of Oura.' },
     { criterionId: 'sensor', score: 6.5, note: 'Optical HR, SpO2 and skin-temperature sensors in a light titanium shell. Budget-tier optics; a clean signal at rest.' },

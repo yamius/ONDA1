@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraVsFitbitCharge6: HeadToHead = {
+const ouraVsFitbitCharge6: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-fitbit-charge-6',
   productASlug: 'oura-ring-4',
   productBSlug: 'fitbit-charge-6',
@@ -9,7 +9,6 @@ const ouraVsFitbitCharge6: HeadToHead = {
     'Oura Ring 4 vs Fitbit Charge 6 — the precision sleep-and-HRV ring vs the $159 budget on-ramp. ONDA compares accuracy, recovery depth, price and subscriptions.',
   intro:
     'The Oura Ring 4 and the Fitbit Charge 6 sit at opposite ends of the same question: how much do you want to spend to track sleep and HRV? Oura is the precision instrument — the most validated overnight sleep and HRV in a consumer wearable, behind a mandatory membership. The Charge 6 is the cheap, reliable on-ramp: real HRV for $159, but a basic recovery tool with a persistent Premium upsell.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Different budgets, different jobs. Oura Ring 4 is the accuracy leader for sleep and HRV and the better recovery tool — if you accept ~$6/month on top of $349. Fitbit Charge 6 is the honest budget pick: $159, reliable, and enough to start, with real depth locked behind Premium.',
   bestForA:

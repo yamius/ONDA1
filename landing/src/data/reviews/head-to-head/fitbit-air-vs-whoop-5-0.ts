@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const fitbitAirVsWhoop50: HeadToHead = {
+const fitbitAirVsWhoop50: HeadToHeadInput = {
   slug: 'fitbit-air-vs-whoop-5-0',
   productASlug: 'fitbit-air',
   productBSlug: 'whoop-5-0',
@@ -9,7 +9,6 @@ const fitbitAirVsWhoop50: HeadToHead = {
     'Fitbit Air vs Whoop 5.0 — the screenless-band showdown. A $99 no-subscription-basics tracker versus the subscription-only recovery coach. Which 24/7 HRV band to buy.',
   intro:
     'Both are screenless bands you wear around the clock for HRV, sleep and recovery — but they sit at opposite ends of the model. The Fitbit Air is a $99 pod whose core metrics work with no subscription; Whoop 5.0 is a membership-only product ($199–$359 a year) with the sharpest recovery-and-strain coaching in the category and years of validation behind it. One is the cheapest honest way in; the other is the proven instrument for people who train on the signal.',
-  winnerSlug: null,
   verdict:
     'No single winner — they serve different buyers. Whoop 5.0 is the proven, coaching-grade choice for people who train on recovery; the Fitbit Air is the far cheaper, no-subscription on-ramp for everyone else — with the caveat that its accuracy is still unvalidated.',
   bestForA:

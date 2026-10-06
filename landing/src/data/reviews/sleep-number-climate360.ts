@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sleepNumberClimate360: ToolReview = {
+const sleepNumberClimate360: ToolReviewInput = {
   slug: 'sleep-number-climate360',
   name: 'Sleep Number Climate360',
   brand: 'Sleep Number',
@@ -12,7 +12,6 @@ const sleepNumberClimate360: ToolReview = {
     'Smart-bed approach to sleep climate — climate built into the mattress, not added as a layer. Premium pricing.',
   summary:
     'Sleep Number Climate360 is the mainstream smart-bed answer to sleep climate. Climate regulation is built into the Sleep Number 360 Smart Bed mattress itself rather than added as a cover or pad. Includes Sleep Number’s mature SleepIQ tracking. Premium pricing without the focused biohacker positioning of Eight Sleep or Sleepme.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'climate-range', score: 6.5, note: 'Less aggressive climate range than dedicated water-cooled systems. Climate is one feature among many in the smart bed.' },
     { criterionId: 'build', score: 8.5, note: 'Premium Sleep Number 360 build with multi-decade brand reliability and warranty support.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const nutrisenseVsZoe: HeadToHead = {
+const nutrisenseVsZoe: HeadToHeadInput = {
   slug: 'nutrisense-vs-zoe',
   productASlug: 'nutrisense',
   productBSlug: 'zoe',
@@ -9,7 +9,6 @@ const nutrisenseVsZoe: HeadToHead = {
     'Nutrisense vs Zoe — side-by-side ONDA comparison of two nutrition-led CGM programmes. Continuous CGM with a registered dietitian versus multi-biomarker personalised nutrition.',
   intro:
     'Nutrisense and Zoe are the two CGM programmes nutrition-focused users compare when expert advice matters more than the glucose data alone. Different models: Nutrisense runs continuous Dexcom G7 CGM with a registered dietitian assigned to every subscriber. Zoe runs a two-week Abbott Libre phase alongside microbiome and blood biomarker tests, then keeps you on personalised food rankings. Both go beyond raw CGM.',
-  winnerSlug: null,
   verdict:
     'Different products. Nutrisense for ongoing CGM with a human dietitian. Zoe for a multi-biomarker personalised-nutrition reset grounded in published science.',
   bestForA:

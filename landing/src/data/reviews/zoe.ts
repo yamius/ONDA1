@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const zoe: ToolReview = {
+const zoe: ToolReviewInput = {
   slug: 'zoe',
   name: 'Zoe',
   brand: 'Zoe',
@@ -12,7 +12,6 @@ const zoe: ToolReview = {
     'The most science-backed CGM programme — and the only one fusing glucose, microbiome and blood biomarkers into one nutrition plan.',
   summary:
     'Zoe is the UK-built personalised-nutrition programme run by epidemiologist Tim Spector. It combines a two-week Abbott Libre CGM stretch with an at-home gut microbiome test and a blood biomarker panel, then turns the three signals into food rankings personalised to your physiology. After the 2-week measurement phase you keep the app and rankings on a £60/month subscription. Strong science, strong content, less suited to ongoing CGM use.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'sensor-accuracy', score: 7.5, note: 'Abbott Libre (2-week wear), MARD ~9–11%. Calibration-free; accuracy in the second week is the weakest point.' },
     { criterionId: 'insights', score: 8.5, note: 'The only programme here that fuses CGM with gut microbiome and blood biomarkers into a single food-ranking score — unique multi-biomarker view backed by the published PREDICT studies.' },

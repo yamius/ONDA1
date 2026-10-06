@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const lightstimVsSolawave: HeadToHead = {
+const lightstimVsSolawave: HeadToHeadInput = {
   slug: 'lightstim-for-wrinkles-vs-solawave-wand-4-in-1',
   productASlug: 'lightstim-for-wrinkles',
   productBSlug: 'solawave-wand-4-in-1',
@@ -9,7 +9,6 @@ const lightstimVsSolawave: HeadToHead = {
     'LightStim for Wrinkles vs Solawave Wand 4-in-1 — FDA-cleared decade-long clinical handheld vs budget multi-modality consumer wand. ONDA breaks down the handheld red light duel.',
   intro:
     'LightStim for Wrinkles and Solawave Wand 4-in-1 are the two handheld red light devices users compare when they don\'t want a lie-on mask. Both are sub-$300, both require active positioning per session. The defining difference is honesty — LightStim is FDA-cleared with peer-reviewed clinical evidence; Solawave is a multi-modality consumer wand with light evidence base.',
-  winnerSlug: 'lightstim-for-wrinkles',
   verdict:
     'LightStim wins on clinical evidence, wavelength coverage and peer-reviewed track record. Solawave wins on price and multi-modality stack.',
   bestForA:

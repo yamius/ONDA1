@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const hypervolt3Pro: ToolReview = {
+const hypervolt3Pro: ToolReviewInput = {
   slug: 'hypervolt-3-pro',
   name: 'Hyperice Hypervolt 3 Pro',
   brand: 'Hyperice',
@@ -12,7 +12,6 @@ const hypervolt3Pro: ToolReview = {
     'The 2026 flagship and a clear upgrade over the Hypervolt 2 Pro — more stall force (70 lbs), quieter (51 dB), longer battery (4 hours) and larger attachments, at a lower $349. Amplitude still trails Theragun PRO Plus, but on value this is the premium gun to beat.',
   summary:
     'The Hyperice Hypervolt 3 Pro is the top of the Hypervolt 3 line launched March 2026 (alongside the Go 3 at $149 and the Hypervolt 3 at $249). Against the outgoing Hypervolt 2 Pro it raises stall force to about 70 lbs (from 60, per launch coverage), runs quieter at ~51 dB via Hyperice’s QuietGlide motor, reaches up to four hours per charge, adds a six-speed digital dial, a pressure sensor and a heated attachment, and ships redesigned heads that are 33% larger — and it does all of this at $349, $50 below the Hypervolt 2 Pro’s launch price. It keeps full Hyperice app connectivity. The one place it still yields is amplitude, where Theragun PRO Plus’s 16 mm remains the deeper stroke.',
-  overallScore: 8.7,
   scores: [
     { criterionId: 'stall-force-amplitude', score: 9.0, note: 'Up to ~70 lbs stall force per launch coverage — a step up from the Hypervolt 2 Pro’s 60 and among the strongest available. Amplitude remains in the ~14 mm class, still short of Theragun PRO Plus’s 16 mm deep stroke.' },
     { criterionId: 'build-attachments', score: 9.0, note: 'Refined premium build; five heads including a heated attachment, redesigned to be 33% larger for better surface coverage. Full Hyperice ecosystem and NBA/NFL pedigree.' },

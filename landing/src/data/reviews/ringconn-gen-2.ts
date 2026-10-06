@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ringconnGen2: ToolReview = {
+const ringconnGen2: ToolReviewInput = {
   slug: 'ringconn-gen-2',
   name: 'RingConn Gen 2',
   brand: 'RingConn',
@@ -12,7 +12,6 @@ const ringconnGen2: ToolReview = {
     'The value smart ring — a 10–12-day battery, no subscription and solid tracking for roughly half the long-term cost of an Oura.',
   summary:
     'The RingConn Gen 2 is the value pick of the smart-ring field — a 10–12-day battery, no subscription and accuracy in the same conversation as pricier rings, for roughly half the long-term cost. The trade-off is plainer software and more closed data.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV that independent reviewers rate as comparable to pricier rings — good, not class-leading.' },
     { criterionId: 'sensor', score: 7.0, note: 'Optical PPG in a light titanium ring.' },

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const headspace: ToolReview = {
+const headspace: ToolReviewInput = {
   slug: 'headspace',
   name: 'Headspace',
   brand: 'Headspace',
@@ -12,7 +12,6 @@ const headspace: ToolReview = {
     'The best app for actually learning to meditate — structured courses and clear teaching, with a free tier that is barely a sample.',
   summary:
     'Headspace is the strongest app here for learning to meditate from scratch. Its courses are well-structured, the teaching is clear and beginner-friendly, and it has put real research behind its claims. The weak point is the free tier — essentially a product tour.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'content-library', score: 8.0, note: 'A large library covering meditation, breathing, focus, sleep and many life topics.' },
     { criterionId: 'teaching', score: 8.5, note: 'The clearest, most structured teaching here — built to take a complete beginner from zero.' },

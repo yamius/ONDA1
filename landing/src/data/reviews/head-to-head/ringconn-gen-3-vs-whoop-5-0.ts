@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const gen3VsWhoop50: HeadToHead = {
+const gen3VsWhoop50: HeadToHeadInput = {
   slug: 'ringconn-gen-3-vs-whoop-5-0',
   productASlug: 'ringconn-gen-3',
   productBSlug: 'whoop-5-0',
@@ -9,7 +9,6 @@ const gen3VsWhoop50: HeadToHead = {
     'RingConn Gen 3 vs Whoop 5.0 — own-it-outright subscription-free ring vs the subscription-only recovery band. The clearest own-vs-rent HRV comparison of 2026.',
   intro:
     'This is the sharpest own-vs-rent decision in the HRV market. The RingConn Gen 3 is a one-time $349 with no subscription — a ring you own with a long battery, a haptic silent alarm and new vascular and sleep-apnea insights. The Whoop 5.0 is the opposite model: no upfront hardware cost, but a mandatory $199–$359/year membership, and stop paying and the band stops working. One is a finger ring you buy once; the other is a screenless wrist band built around a daily recovery score you rent forever.',
-  winnerSlug: null,
   verdict:
     'Own vs rent, ring vs band. The RingConn Gen 3 wins on cost model (one-time $349, nothing owed after) and everyday breadth — long battery, haptic alerts, vascular/sleep-apnea insights. The Whoop 5.0 wins on continuous overnight HRV and the deepest recovery-and-strain coaching, if you accept paying every year to keep it. Pick by whether you refuse a subscription or you train on a daily recovery score.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const somnifit: ToolReview = {
+const somnifit: ToolReviewInput = {
   slug: 'somnifit-sleep-strips',
   name: 'SomniFit Sleep Strips',
   brand: 'SomniFit',
@@ -12,7 +12,6 @@ const somnifit: ToolReview = {
     'Budget mouth tape entry — accessible pricing, basic acrylic adhesive, modest brand polish. Sufficient for cost-conscious users; lacks Hostage Tape engineering.',
   summary:
     'SomniFit Sleep Strips is the budget mouth-tape entry — basic acrylic adhesive single-piece strips at accessible pricing. No K-beauty hypoallergenic certification, no biohacker brand polish, no subscription convenience. Works adequately for users without sensitive skin or beards; the right entry-tier mouth tape if you want sub-$10 per pack and the brand polish doesn\'t matter.',
-  overallScore: 5.7,
   scores: [
     { criterionId: 'adhesion-comfort', score: 6.0, note: 'Basic acrylic adhesive — adequate grip on clean skin. Struggles with beards and oily skin. Removal can be tacky.' },
     { criterionId: 'breathing-mechanism', score: 6.5, note: 'Full-seal single-piece. Generic mechanism.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraVsSamsungRing: HeadToHead = {
+const ouraVsSamsungRing: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-samsung-galaxy-ring',
   productASlug: 'oura-ring-4',
   productBSlug: 'samsung-galaxy-ring',
@@ -9,7 +9,6 @@ const ouraVsSamsungRing: HeadToHead = {
     'Oura Ring 4 vs Samsung Galaxy Ring — side-by-side ONDA comparison of the leading iPhone-native ring versus the Android-native ring with Samsung Health integration.',
   intro:
     'Oura Ring 4 and Samsung Galaxy Ring are the two smart rings non-diabetic biohackers most commonly weigh against each other when ecosystem is the deciding factor. Oura is cross-platform but feels iPhone-native; Samsung Galaxy Ring is purpose-built for the Samsung Health stack on Android. The technical gap is small; the ecosystem gap is the whole story.',
-  winnerSlug: null,
   verdict:
     'Tie that breaks on ecosystem. Oura Ring 4 wins for iPhone users and cross-platform households. Samsung Galaxy Ring wins for users already inside Samsung Health on Android with Galaxy Watch and Galaxy phones.',
   bestForA:

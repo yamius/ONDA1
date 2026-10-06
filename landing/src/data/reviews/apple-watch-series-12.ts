@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const appleWatchSeries12: ToolReview = {
+const appleWatchSeries12: ToolReviewInput = {
   slug: 'apple-watch-series-12',
   name: 'Apple Watch Series 12',
   brand: 'Apple',
@@ -12,7 +12,6 @@ const appleWatchSeries12: ToolReview = {
     'The best Apple Watch yet for HRV: 24× more frequent sampling and a Recovery-vs-Overall HRV split — but still a smartwatch first, and battery still competes with overnight wear.',
   summary:
     'The Series 12’s all-new Health Sensing System is the first Apple Watch update to take HRV seriously: it samples HRV up to 24× more often, splits it into Recovery HRV and Overall HRV, and adds hypertension notifications. It closes much of the gap to dedicated trackers — but a ~1-day battery still makes overnight wear a compromise, and a finger ring is still more precise for a continuous overnight record.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'HRV is now sampled about every 5 minutes (24× more often) and split into Recovery HRV and Overall HRV — a real step up from the Series 11’s sparse spot-checks, though still wrist optical rather than a continuous ring or ECG.' },
     { criterionId: 'sensor', score: 9.0, note: 'The all-new Health Sensing System: larger power-efficient green LEDs reading heart rate every 5 seconds, a single-lead ECG, and optical hypertension detection. The strongest sensor stack on any watch here.' },

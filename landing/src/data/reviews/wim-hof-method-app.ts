@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const wimHofMethodApp: ToolReview = {
+const wimHofMethodApp: ToolReviewInput = {
   slug: 'wim-hof-method-app',
   name: 'Wim Hof Method',
   brand: 'Innerfire (Wim Hof)',
@@ -12,7 +12,6 @@ const wimHofMethodApp: ToolReview = {
     'Best for the Wim Hof Method specifically — official rounds, structured progression, cold-exposure integration. Narrow scope vs Breathwrk’s breadth.',
   summary:
     'Wim Hof Method app is the official Innerfire app delivering structured Wim Hof breath rounds, cold-exposure protocols and certified-instructor video courses. Strong brand recognition and the most rigorous training in this single method specifically. Library breadth and technique coverage are narrower than Breathwrk — this app is the Wim Hof reference, not the breathwork reference.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'session-library', score: 7.0, note: 'Structured Wim Hof breath rounds at varying levels, plus cold-exposure protocols and certified-instructor course modules. Library narrow by design — this is the Wim Hof reference.' },
     { criterionId: 'technique-coverage', score: 5.5, note: 'Single-method focus — Wim Hof rounds dominate. Some adjunct content (yoga, meditation, cold protocols) but no Buteyko / 4-7-8 / cyclic sighing depth.' },

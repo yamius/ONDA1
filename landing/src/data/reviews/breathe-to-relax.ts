@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const breatheToRelax: ToolReview = {
+const breatheToRelax: ToolReviewInput = {
   slug: 'breathe-to-relax',
   name: 'Breathe2Relax',
   brand: 'US National Center for Telehealth & Technology',
@@ -12,7 +12,6 @@ const breatheToRelax: ToolReview = {
     'Best evidence-backed free breathwork app — built by US military telehealth for PTSD and stress; clinical credibility no other free app matches.',
   summary:
     'Breathe2Relax is the US Department of Defense / National Center for Telehealth & Technology free diaphragmatic-breathing app, originally developed for veteran PTSD and combat-stress management. Clinical-credibility framing no other free app matches — published validation studies on PTSD and stress outcomes. Library is narrow (diaphragmatic / paced breathing focused), UX is dated, but the evidence base is unmatched at zero cost.',
-  overallScore: 5.5,
   scores: [
     { criterionId: 'session-library', score: 4.5, note: 'Narrow library — focused on diaphragmatic and paced breathing for stress / PTSD context. Not a content platform.' },
     { criterionId: 'technique-coverage', score: 4.5, note: 'Diaphragmatic and paced breathing only. No Wim Hof, holotropic or broader technique coverage.' },

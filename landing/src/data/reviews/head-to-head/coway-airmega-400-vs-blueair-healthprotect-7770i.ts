@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const cowayVsBlueair: HeadToHead = {
+const cowayVsBlueair: HeadToHeadInput = {
   slug: 'coway-airmega-400-vs-blueair-healthprotect-7770i',
   productASlug: 'coway-airmega-400',
   productBSlug: 'blueair-healthprotect-7770i',
@@ -9,7 +9,6 @@ const cowayVsBlueair: HeadToHead = {
     'Coway Airmega 400 vs Blueair HealthProtect 7770i — Korean mid-premium HEPA vs Swedish HEPASilent premium. ONDA breaks down the mid-premium air-purifier duel.',
   intro:
     'Coway Airmega 400 and Blueair HealthProtect 7770i are the two mid-premium air purifiers users cross-shop. The defining difference: Coway delivers larger AHAM coverage at lower price; Blueair delivers HEPASilent technology + GermShield always-on mode at premium pricing.',
-  winnerSlug: null,
   verdict:
     'Coverage vs technology. Coway Airmega 400 for largest AHAM-certified coverage at best mid-premium value. Blueair 7770i for HEPASilent + GermShield premium tech.',
   bestForA:

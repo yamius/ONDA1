@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const appleWatchUltra4: ToolReview = {
+const appleWatchUltra4: ToolReviewInput = {
   slug: 'apple-watch-ultra-4',
   name: 'Apple Watch Ultra 4',
   brand: 'Apple',
@@ -12,7 +12,6 @@ const appleWatchUltra4: ToolReview = {
     'The Apple Watch that finally suits overnight HRV: the new Health Sensing System plus a 50-hour battery and an athlete readiness score — if you can justify the size and $799 price.',
   summary:
     'The Ultra 4 takes the Series 12’s all-new Health Sensing System — HRV up to 24× more often, Recovery HRV and Overall HRV — and adds the one thing the Series 12 lacks for HRV: battery. At up to 50 hours it can genuinely track HRV night after night without a charging window fighting your sleep, and it adds an athlete-focused readiness score. The catch is the size, the $799 price, and that a finger ring is still more precise for the overnight number itself.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.5, note: 'Same Health Sensing System as the Series 12 — HRV up to 24× more often, split into Recovery HRV and Overall HRV — plus a new readiness score. Apple calls it its most accurate heart sensing; still wrist optical, so a finger ring or ECG strap edges it for a pure overnight record.' },
     { criterionId: 'sensor', score: 9.5, note: 'The most complete sensor package here: the new Health Sensing System with hypertension notifications, single-lead ECG, a 40 m depth/dive sensor and satellite connectivity.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ringProVsSamsung: HeadToHead = {
+const ringProVsSamsung: HeadToHeadInput = {
   slug: 'ultrahuman-ring-pro-vs-samsung-galaxy-ring',
   productASlug: 'ultrahuman-ring-pro',
   productBSlug: 'samsung-galaxy-ring',
@@ -9,7 +9,6 @@ const ringProVsSamsung: HeadToHead = {
     'Ultrahuman Ring Pro vs Samsung Galaxy Ring — two subscription-free smart rings. Cross-platform + ~15-day battery vs the Samsung-ecosystem ring. ONDA compares them.',
   intro:
     'Both are subscription-free smart rings, which is their shared appeal — buy once, no membership. The difference is reach: the Ultrahuman Ring Pro is cross-platform with a category-leading ~15-day battery and on-ring processing; the Samsung Galaxy Ring is comfortable and competent but is at its best locked to a Samsung Galaxy phone. This is cross-platform-and-battery vs Samsung-ecosystem convenience.',
-  winnerSlug: null,
   verdict:
     'Both skip the subscription. The Ultrahuman Ring Pro wins on battery (~15 days), cross-platform support and onboard processing; the Samsung Galaxy Ring wins if you live in the Samsung ecosystem and want a cheaper, more proven ring ($399 vs $479). Pick by phone and priorities.',
   bestForA:

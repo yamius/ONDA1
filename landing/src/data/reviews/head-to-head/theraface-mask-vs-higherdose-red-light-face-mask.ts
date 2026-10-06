@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const therafaceVsHigherDose: HeadToHead = {
+const therafaceVsHigherDose: HeadToHeadInput = {
   slug: 'theraface-mask-vs-higherdose-red-light-face-mask',
   productASlug: 'theraface-mask',
   productBSlug: 'higherdose-red-light-face-mask',
@@ -9,7 +9,6 @@ const therafaceVsHigherDose: HeadToHead = {
     'TheraFace Mask vs HigherDOSE Red Light Face Mask — Therabody premium vs HigherDOSE-ecosystem consumer mid-tier. ONDA breaks down the consumer-brand crossover masks.',
   intro:
     'TheraFace Mask and HigherDOSE Red Light Face Mask are the two recovery-brand crossover masks users compare. Both leverage their parent brand\'s consumer pedigree (Therabody from massage guns, HigherDOSE from PEMF / sauna). The defining difference is wavelength scope and price tier.',
-  winnerSlug: null,
   verdict:
     'Wavelength scope vs ecosystem price. TheraFace Mask for three-wavelength coverage with Therabody premium brand. HigherDOSE for HigherDOSE-ecosystem coordination at meaningfully lower price.',
   bestForA:

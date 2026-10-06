@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ringconnGen3: ToolReview = {
+const ringconnGen3: ToolReviewInput = {
   slug: 'ringconn-gen-3',
   name: 'RingConn Gen 3',
   brand: 'RingConn',
@@ -12,7 +12,6 @@ const ringconnGen3: ToolReview = {
     'One of the strongest subscription-free rings — a ~10-14 day battery, a first-in-category haptic motor for silent alerts, and new vascular/sleep-apnea insights, all with no membership.',
   summary:
     'The RingConn Gen 3 is the most capable subscription-free ring RingConn has made. For a one-time $349 (no subscription) it tracks heart rate, HRV, SpO2, respiratory rate, skin temperature, stress and sleep, and adds genuinely new hardware: it is the first smart ring with a built-in haptic motor (silent alarms and alerts for elevated heart rate, inactivity and step goals), plus vascular-health and nighttime blood-pressure trend tracking, sleep-apnea pattern insights, a universal wireless charging case, and a longer battery ceiling (~10-14 days). It is cross-platform (iPhone and Android). It still is not the validated accuracy reference the way Oura is, but as a no-subscription package it is one of the best on the market.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Continuous HRV for recovery and stress, improved over the Gen 2. Good, though not validated to Oura’s level.' },
     { criterionId: 'sensor', score: 7.5, note: 'Broad sensor suite — HR, HRV, SpO2, respiratory rate, skin temperature — plus a first-in-category haptic motor and new vascular / nighttime blood-pressure trend tracking.' },

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const stelo: ToolReview = {
+const stelo: ToolReviewInput = {
   slug: 'stelo',
   name: 'Stelo by Dexcom',
   brand: 'Dexcom',
@@ -12,7 +12,6 @@ const stelo: ToolReview = {
     'Dexcom G7 hardware with no prescription gate — the most accurate consumer CGM at the lowest price for it.',
   summary:
     'Stelo is Dexcom’s direct-to-consumer CGM for non-diabetic biohackers, cleared by the FDA in 2024 as the first OTC CGM in the US. Hardware is the Dexcom G7 sensor — the same sensor underneath Levels and Nutrisense — sold through Dexcom’s own app at $99 for two sensors (a one-month supply). Insight engine is simpler than Levels but the data is the same. The price-to-accuracy ratio is the best in the consumer CGM market.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'sensor-accuracy', score: 9.0, note: 'Dexcom G7, the same hardware Levels and Nutrisense ride on — MARD ~8.2%, 15-day wear in the Stelo variant, 30-minute warm-up.' },
     { criterionId: 'insights', score: 7.0, note: 'Solid meal-impact and daily time-in-range views. Less depth than Levels — no AUC decomposition or food-ranking history — but covers what most users need.' },

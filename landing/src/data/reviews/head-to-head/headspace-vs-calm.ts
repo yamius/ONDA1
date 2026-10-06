@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const headspaceVsCalm: HeadToHead = {
+const headspaceVsCalm: HeadToHeadInput = {
   slug: 'headspace-vs-calm',
   productASlug: 'headspace',
   productBSlug: 'calm',
@@ -9,7 +9,6 @@ const headspaceVsCalm: HeadToHead = {
     'Headspace vs Calm — side-by-side ONDA comparison of the two largest meditation apps. Curriculum-driven teaching versus library breadth and sleep content.',
   intro:
     'Headspace and Calm are the two meditation apps that effectively define the consumer category — same pricing, comparable libraries, opposite philosophies. Headspace is curriculum-led with a strong teaching voice; Calm leans on library breadth, sleep stories and celebrity narrators. The decision is between learning meditation as a skill versus using the app as ambient wellness content.',
-  winnerSlug: 'headspace',
   verdict:
     'Headspace wins for users learning meditation as a skill. Calm wins for users who want sleep content and a broader ambient-wellness library alongside the meditation.',
   bestForA:

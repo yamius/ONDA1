@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const vagustim: ToolReview = {
+const vagustim: ToolReviewInput = {
   slug: 'vagustim',
   name: 'Vagustim',
   brand: 'Vagustim Health',
@@ -12,7 +12,6 @@ const vagustim: ToolReview = {
     'Protocol-driven auricular tVNS with credible research provenance — strong on EU regulatory and trial backing.',
   summary:
     'Vagustim is a Turkish-developed auricular tVNS device, CE-marked and backed by a published trial base from clinical-research groups in Turkey and Germany. Hardware combines an ear clip with paired auxiliary electrodes for specific protocols (vagus only, vagus + acupoint, etc.). Less brand recognition outside the EU than Nurosym, comparable evidence depth, and a wider protocol library.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'evidence', score: 7.5, note: 'CE-marked Class IIa medical device; trial base of independent and company-collaborator studies on HRV, anxiety and depression. Second to Nurosym in published evidence among ear-clip devices.' },
     { criterionId: 'mechanism', score: 7.5, note: 'Auricular tVNS via tragus clip, plus paired electrode protocols. Documented stimulation parameters configurable per protocol.' },

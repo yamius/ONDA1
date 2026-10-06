@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sensate: ToolReview = {
+const sensate: ToolReviewInput = {
   slug: 'sensate',
   name: 'Sensate',
   brand: 'BioSelf Technology',
@@ -12,7 +12,6 @@ const sensate: ToolReview = {
     'A passive, calming infrasonic device — gentle, well-loved, with mechanism evidence that lags its user enthusiasm.',
   summary:
     'Sensate is a chest-placed smooth-stone-shaped device that emits low-frequency infrasonic vibration into the thoracic cavity, paired with synced soundscapes through the phone. The premise — that infrasonic resonance against the chest acts on vagal pathways via thoracic mechanoreceptors — is plausible and supported by a small published trial, but mechanism evidence is thinner than electrical tVNS. As a passive 10-minute wind-down ritual it is highly effective for most users.',
-  overallScore: 6.9,
   scores: [
     { criterionId: 'evidence', score: 5.5, note: 'One published RCT showing stress/HRV improvement, plus company-funded studies. Less mechanism evidence than electrical tVNS devices.' },
     { criterionId: 'mechanism', score: 5.5, note: 'Infrasonic chest resonance — proposes vagal stimulation via thoracic mechanoreception. Mechanism plausible but less direct than tVNS.' },

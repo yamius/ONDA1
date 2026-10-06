@@ -90,8 +90,13 @@ export interface ToolReview {
   verdict: string
   /** TL;DR paragraph shown above the fold. */
   summary: string
-  /** Overall editorial score, 0–10 (one decimal). Weighted mean of scores. */
+  /** Overall score, 0–10 (one decimal). COMPUTED in scoring.ts as the
+   *  weighted mean of `scores` (+ editorialAdjustment), half-up rounding.
+   *  Never typed in a review file — review files are ToolReviewInput. */
   overallScore: number
+  /** Optional, rare editorial correction to the weighted mean. |value| ≤ 0.3
+   *  and a reason is mandatory — the reason is shown next to the score. */
+  editorialAdjustment?: EditorialAdjustment
   /** Per-criterion breakdown. Order follows criteria.ts. */
   scores: CriterionScore[]
   pros: string[]
@@ -129,6 +134,16 @@ export interface ToolReview {
    *  categories. Absent = live immediately. */
   publishOn?: string
 }
+
+export interface EditorialAdjustment {
+  /** Added to the weighted mean before rounding. −0.3 … +0.3. */
+  value: number
+  /** Plain-English reason, shown on the review page. Required. */
+  reason: string
+}
+
+/** What a review file declares — everything except the computed score. */
+export type ToolReviewInput = Omit<ToolReview, 'overallScore'>
 
 /** One ranked entry on a Comparison page. */
 export interface ComparisonPick {
@@ -177,7 +192,9 @@ export interface HeadToHead {
   description: string
   /** Intro paragraph framing the comparison. */
   intro: string
-  /** Slug of the winning ToolReview, or null for a deliberate tie. */
+  /** Slug of the winning ToolReview, or null for a tie. COMPUTED from the
+   *  computed overall scores (scoring.ts scoreWinnerSlug: overall, then the
+   *  category tie-break criterion, else tie) — never typed in a duel file. */
   winnerSlug: string | null
   /** One-line verdict — the quotable single-sentence answer to "which one". */
   verdict: string
@@ -206,6 +223,9 @@ export interface HeadToHead {
   /** ISO date (YYYY-MM-DD) — drives sitemap <lastmod> and the "Updated" UI. */
   dateModified: string
 }
+
+/** What a head-to-head file declares — everything except the computed winner. */
+export type HeadToHeadInput = Omit<HeadToHead, 'winnerSlug'>
 
 export interface Comparison {
   slug: string

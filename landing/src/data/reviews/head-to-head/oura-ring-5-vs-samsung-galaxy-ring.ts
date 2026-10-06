@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const oura5VsGalaxy: HeadToHead = {
+const oura5VsGalaxy: HeadToHeadInput = {
   slug: 'oura-ring-5-vs-samsung-galaxy-ring',
   productASlug: 'oura-ring-5',
   productBSlug: 'samsung-galaxy-ring',
@@ -9,7 +9,6 @@ const oura5VsGalaxy: HeadToHead = {
     'Oura Ring 5 vs Samsung Galaxy Ring — the accuracy-and-app leader with a membership vs the subscription-free Android ring. Cross-platform accuracy vs own-it-outright value.',
   intro:
     'These two answer the same question — a comfortable ring for overnight HRV and sleep — with opposite trade-offs. The Oura Ring 5 is the 2026 flagship: 40% slimmer, upgraded sensors, still the most accurate overnight HRV and sleep, but full data needs a monthly membership. The Samsung Galaxy Ring is the subscription-free alternative — every feature unlocked at purchase — but it is tied to Samsung Health and Android, and its accuracy trails Oura. The decision usually comes down to your phone and whether you accept an ongoing fee.',
-  winnerSlug: null,
   verdict:
     'Accuracy-and-app vs own-it-outright, cross-platform vs Samsung-locked. The Oura Ring 5 wins on accuracy, sensors and app depth and works on iPhone and Android, for $399 plus ~$6/month. The Samsung Galaxy Ring wins on cost model — $399 with no subscription, every feature unlocked — but only really fits Samsung/Android owners. Pick by your phone and whether the membership is acceptable.',
   bestForA:

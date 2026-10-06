@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const bemerVsHealthyWave: HeadToHead = {
+const bemerVsHealthyWave: HeadToHeadInput = {
   slug: 'bemer-classic-evo-vs-healthy-wave-multi-wave',
   productASlug: 'bemer-classic-evo',
   productBSlug: 'healthy-wave-multi-wave',
@@ -9,7 +9,6 @@ const bemerVsHealthyWave: HeadToHead = {
     'Bemer Classic Evo vs Healthy Wave Multi-Wave PEMF Mat — research-backed proprietary signal at premium pricing vs multi-modality stacked mat at half the price. ONDA breaks down the trade.',
   intro:
     'Bemer Classic Evo and Healthy Wave Multi-Wave are the two PEMF mats users compare when picking premium recovery hardware. The defining difference is the thesis: Bemer bets on a single research-backed proprietary waveform (50+ peer-reviewed studies); Healthy Wave bets on stacking PEMF with far-infrared and red light in a single mat at half the price.',
-  winnerSlug: null,
   verdict:
     'Research moat vs modality stacking. Bemer Classic Evo for the most-published PEMF waveform and FDA Class II clearance. Healthy Wave Multi-Wave for PEMF + IR + red light coverage at half the price.',
   bestForA:

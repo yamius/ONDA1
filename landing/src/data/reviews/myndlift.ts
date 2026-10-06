@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const myndlift: ToolReview = {
+const myndlift: ToolReviewInput = {
   slug: 'myndlift',
   name: 'Myndlift',
   brand: 'Myndlift',
@@ -12,7 +12,6 @@ const myndlift: ToolReview = {
     'The most clinically-credible neurofeedback platform — gated by a licensed provider, with real protocols and outcome tracking.',
   summary:
     'Myndlift is not a consumer headset — it is a clinical neurofeedback platform a licensed mental-health provider prescribes and supervises remotely. The headset (typically the Muse 2 hardware or, with the channel extender, multi-site EEG) runs clinician-designed protocols for ADHD, anxiety, sleep and trauma; the data flows back to the provider, who adjusts the programme. The reference clinical neurofeedback offering in the consumer-adjacent space — included as the medical benchmark for what real neurofeedback looks like.',
-  overallScore: 7.0,
   scores: [
     { criterionId: 'signal-quality', score: 7.5, note: 'Uses Muse 2 hardware by default; the multi-site channel extender adds research-relevant electrode placements. Adequate consumer-grade signal under clinician interpretation.' },
     { criterionId: 'training-content', score: 8.5, note: 'Real clinical neurofeedback protocols for ADHD, anxiety, sleep, depression and post-traumatic stress — designed by the supervising licensed provider, not by an app.' },

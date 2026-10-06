@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const omniluxContourFace: ToolReview = {
+const omniluxContourFace: ToolReviewInput = {
   slug: 'omnilux-contour-face',
   name: 'Omnilux Contour Face',
   brand: 'Omnilux',
@@ -12,7 +12,6 @@ const omniluxContourFace: ToolReview = {
     'The clinical reference — FDA Class II clearance, peer-reviewed dermatology studies, flexible silicone. The benchmark every consumer red-light mask gets compared to.',
   summary:
     'Omnilux Contour Face is the FDA Class II-cleared red light mask used in dermatology practices, with peer-reviewed clinical studies behind it. Flexible medical-grade silicone for unattended wear, 132 LEDs (red 633 nm + near-infrared 830 nm), 10-minute session protocol. The clinical-evidence moat is what separates it from consumer-brand alternatives — Omnilux is the device dermatologists use in their own clinics.',
-  overallScore: 8.5,
   scores: [
     { criterionId: 'irradiance', score: 9.0, note: 'Documented irradiance honest to dermatology-clinic dose at 10-minute session. Among the most transparent specs in the category — not inflated peak figures.' },
     { criterionId: 'wavelength-coverage', score: 8.5, note: 'Red 633 nm + near-infrared 830 nm — the two clinically-validated wavelengths for collagen and deeper tissue. No blue / amber distraction.' },

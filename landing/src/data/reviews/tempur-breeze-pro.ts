@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const tempurBreezePro: ToolReview = {
+const tempurBreezePro: ToolReviewInput = {
   slug: 'tempur-breeze-pro',
   name: 'Tempur-Breeze Pro Cooling Mattress',
   brand: 'Tempur-Pedic',
@@ -12,7 +12,6 @@ const tempurBreezePro: ToolReview = {
     'Passive cooling — not active climate. Premium Tempur build that runs cooler than standard memory foam without a hub.',
   summary:
     'Tempur-Breeze Pro is Tempur-Pedic’s premium cooling mattress — a passive system that runs cooler than standard memory foam through phase-change materials and cool-touch covers. Not active climate control like Eight Sleep or ChiliPad; included here because it is in the consumer sleep-climate buying conversation as an alternative for users not wanting hub-based systems.',
-  overallScore: 6.0,
   scores: [
     { criterionId: 'climate-range', score: 4.0, note: 'No active climate. Passive cooling runs 3–5°C cooler at the surface than standard memory foam in early-night phase. No control, no scheduling.' },
     { criterionId: 'build', score: 9.5, note: 'Tempur-Pedic premium mattress build, 10-year warranty. The build quality is the value driver.' },

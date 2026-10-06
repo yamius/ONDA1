@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const bettersleepVsSleepCycle: HeadToHead = {
+const bettersleepVsSleepCycle: HeadToHeadInput = {
   slug: 'bettersleep-vs-sleep-cycle',
   productASlug: 'bettersleep',
   productBSlug: 'sleep-cycle',
@@ -9,7 +9,6 @@ const bettersleepVsSleepCycle: HeadToHead = {
     'BetterSleep vs Sleep Cycle — side-by-side ONDA comparison of two top consumer sleep apps. Content-first wind-down library versus tracking-first sleep analytics.',
   intro:
     'BetterSleep and Sleep Cycle are the two top consumer sleep apps users compare when deciding between content-first and tracking-first approaches. BetterSleep (formerly Relax Melodies) is a content library — soundscapes, sleep stories, meditations, mixable layers. Sleep Cycle is a sleep-tracking app with a smart alarm and post-sleep analytics. Different jobs, same shelf.',
-  winnerSlug: null,
   verdict:
     'Different jobs. BetterSleep for a content-first wind-down library. Sleep Cycle for sleep tracking with a smart alarm.',
   bestForA:

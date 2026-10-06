@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const bemerClassicEvo: ToolReview = {
+const bemerClassicEvo: ToolReviewInput = {
   slug: 'bemer-classic-evo',
   name: 'Bemer Classic Evo',
   brand: 'Bemer',
@@ -12,7 +12,6 @@ const bemerClassicEvo: ToolReview = {
     'The PEMF reference — most-published waveform, FDA Class II, multi-decade brand pedigree. Premium pricing reflects the research moat.',
   summary:
     'Bemer Classic Evo is the smartphone-of-PEMF — the category-defining mat with the deepest published research base (50+ peer-reviewed studies on the specific Bemer biorhythmic signal), FDA Class II clearance, and a 25-year brand track record. Field intensity is deliberately low; the differentiator is the proprietary waveform, not raw gauss. The editorial point of contention is price ($5,490) and the fact that proprietary signal locks you into the Bemer ecosystem.',
-  overallScore: 8.7,
   scores: [
     { criterionId: 'field-strength', score: 7.5, note: 'Low-intensity by design (~35–150 µT). Bemer’s thesis is that microcirculation responds to waveform shape, not peak gauss — backed by published research but lower than coil systems on raw output.' },
     { criterionId: 'waveform-evidence', score: 9.8, note: 'The Bemer biorhythmic signal has the deepest peer-reviewed evidence base of any consumer PEMF — 50+ published studies on the specific waveform, not just on PEMF in general.' },

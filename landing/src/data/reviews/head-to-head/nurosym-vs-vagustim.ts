@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const nurosymVsVagustim: HeadToHead = {
+const nurosymVsVagustim: HeadToHeadInput = {
   slug: 'nurosym-vs-vagustim',
   productASlug: 'nurosym',
   productBSlug: 'vagustim',
@@ -9,7 +9,6 @@ const nurosymVsVagustim: HeadToHead = {
     'Nurosym vs Vagustim — side-by-side ONDA comparison of two evidence-backed auricular tVNS devices. UK-built clinical lineage versus EU protocol-rich research alternative.',
   intro:
     'Nurosym and Vagustim are the two auricular tVNS devices users compare when peer-reviewed evidence is the deciding criterion. Both are CE-marked Class IIa medical devices for ear-clip vagus stimulation; both have real trial bases. The structural difference is programme variety — Nurosym ships a single deliberately-spartan programme, Vagustim layers a library of protocol presets on top.',
-  winnerSlug: null,
   verdict:
     'Comparable evidence; different philosophies. Nurosym for the spartan single-programme approach with the deepest published trial base. Vagustim for protocol-rich auricular tVNS with EU distribution.',
   bestForA:

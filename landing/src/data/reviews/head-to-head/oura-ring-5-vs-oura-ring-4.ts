@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraRing5VsRing4: HeadToHead = {
+const ouraRing5VsRing4: HeadToHeadInput = {
   slug: 'oura-ring-5-vs-oura-ring-4',
   productASlug: 'oura-ring-5',
   productBSlug: 'oura-ring-4',
@@ -9,7 +9,6 @@ const ouraRing5VsRing4: HeadToHead = {
     'Oura Ring 5 vs Oura Ring 4 — 40% slimmer with upgraded sensors vs the cheaper previous flagship. ONDA on what actually changed and whether Ring 4 owners should upgrade.',
   intro:
     'The Oura Ring 5 (June 2026) is slimmer and has redesigned sensors — but the headline new software features are also coming to the Ring 4. So the real question is not "which is better on paper" (the Ring 5 is), it is "should you pay for it" — and the answer is different for a new buyer than for a Ring 4 owner.',
-  winnerSlug: null,
   verdict:
     'If you are buying fresh, the Oura Ring 5 is the one to get — slimmer, better sensors, longer battery. If you already own a Ring 4, hold: the new app features roll out to your ring too, so you would be paying for sensors and fit, not new capability. The mandatory subscription applies to both.',
   bestForA:

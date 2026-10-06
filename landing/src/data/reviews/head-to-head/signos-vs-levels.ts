@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const signosVsLevels: HeadToHead = {
+const signosVsLevels: HeadToHeadInput = {
   slug: 'signos-vs-levels',
   productASlug: 'signos',
   productBSlug: 'levels',
@@ -9,7 +9,6 @@ const signosVsLevels: HeadToHead = {
     'Signos vs Levels — side-by-side ONDA comparison of two CGM programmes on the Dexcom G7 platform. Weight-loss AI coaching versus the deepest biohacker insight engine.',
   intro:
     'Signos and Levels are the two CGM programmes most often compared once buyers narrow the field to Dexcom G7-platform hardware (Levels now ships Stelo, the OTC version). Same sensor platform underneath, different goals on top. Signos was built for weight loss — an AI agent pushing meal-by-meal nudges to flatten glucose spikes. Levels was built as a biohacker insight engine — the deepest meal-impact analytics with a credible medical advisory board. The decision is about which job you have.',
-  winnerSlug: null,
   verdict:
     'Different jobs. Signos for weight loss with AI coaching pushing daily behaviour change. Levels for ongoing biohacker insight without a weight-loss framing.',
   bestForA:

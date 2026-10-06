@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const lumaraViso: ToolReview = {
+const lumaraViso: ToolReviewInput = {
   slug: 'lumara-viso',
   name: 'Lumara Viso',
   brand: 'Lumara',
@@ -12,7 +12,6 @@ const lumaraViso: ToolReview = {
     'Highest LED count in 2026 — 470 LEDs in flexible silicone with neck coverage. Premium pricing; clinical-evidence moat lighter than Omnilux.',
   summary:
     'Lumara Viso is the 2026 premium-spec winner — 470 LEDs (highest in consumer red light masks), flexible medical-grade silicone, integrated neck flap, three-wavelength coverage (red 633 nm + near-infrared 830 nm + amber 590 nm). Brand newer than Omnilux or CurrentBody but the spec sheet is aggressive. Premium pricing reflects the LED count and build; clinical-evidence moat is lighter than dermatology references.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'irradiance', score: 8.5, note: '470 LEDs deliver high irradiance across treatment area. Documented spec; less independently verified than Omnilux.' },
     { criterionId: 'wavelength-coverage', score: 9.0, note: 'Red 633 nm + near-infrared 830 nm + amber 590 nm — three wavelengths covering surface skin, deeper tissue and pigmentation. Broader than the standard red + NIR pair.' },

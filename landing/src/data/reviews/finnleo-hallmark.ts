@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const finnleoHallmark: ToolReview = {
+const finnleoHallmark: ToolReviewInput = {
   slug: 'finnleo-hallmark',
   name: 'Finnleo Hallmark',
   brand: 'Finnleo',
@@ -12,7 +12,6 @@ const finnleoHallmark: ToolReview = {
     'The traditional Finnish indoor sauna reference — premium Finnish-build, full convection heat, deepest sauna-research mechanism.',
   summary:
     'Finnleo Hallmark is the Finnish-built traditional indoor sauna for users who want the real thing. Helo-engineered heater (3 kW–9 kW depending on cabin size), Finnish hemlock or nordic white spruce panelling, full convection heat (80–95°C) with löyly steam. The reference indoor traditional sauna — Finnish-engineered for the heat profile the Finnish cohort studies are built on.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'heat-source', score: 9.0, note: 'Finnish Helo-engineered convection heater — gold-standard Finnish-sauna heat delivery with löyly steam support.' },
     { criterionId: 'build', score: 9.0, note: 'Finnish hemlock or nordic white spruce. Multi-decade Finnish manufacturing pedigree. 5-year structural warranty.' },

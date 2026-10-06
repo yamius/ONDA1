@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const helloInside: ToolReview = {
+const helloInside: ToolReviewInput = {
   slug: 'hello-inside',
   name: 'Hello Inside',
   brand: 'Hello Inside',
@@ -12,7 +12,6 @@ const helloInside: ToolReview = {
     'A solid mid-tier EU CGM programme — local language depth, competent insights, narrower scope than Veri.',
   summary:
     'Hello Inside is a Vienna-built CGM programme aimed at DACH (Germany-Austria-Switzerland) and wider EU metabolic-health users. Abbott Libre 3 hardware with an app that emphasises beginner-friendly framing, weekly progress reports and dietitian-style content modules. Less integration breadth than Veri; stronger local-language content for German speakers.',
-  overallScore: 6.9,
   scores: [
     { criterionId: 'sensor-accuracy', score: 8.0, note: 'Abbott Libre 3 — MARD ~9%, 14-day wear. Same sensor as Veri, Ultrahuman M1 and Lingo.' },
     { criterionId: 'insights', score: 7.0, note: 'Solid time-in-range and meal-impact views, weekly written progress reports. Less analytical depth than Veri or Levels.' },

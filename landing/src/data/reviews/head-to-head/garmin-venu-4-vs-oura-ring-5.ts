@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const venu4VsOura5: HeadToHead = {
+const venu4VsOura5: HeadToHeadInput = {
   slug: 'garmin-venu-4-vs-oura-ring-5',
   productASlug: 'garmin-venu-4',
   productBSlug: 'oura-ring-5',
@@ -9,7 +9,6 @@ const venu4VsOura5: HeadToHead = {
     'Garmin Venu 4 vs Oura Ring 5 for HRV — a no-subscription training smartwatch with multi-day battery vs the most accurate overnight ring, which needs a membership. Weighed axis by axis.',
   intro:
     'Both of these can realistically be worn every night, which is what makes the comparison interesting. The Garmin Venu 4 is a no-subscription all-rounder: Garmin HRV Status against a three-week personal baseline, the most advanced Garmin sleep tracking yet, and a multi-day battery. The Oura Ring 5 is the 2026 flagship ring — ~40% slimmer than the Ring 4 with redesigned sensors, still the closest consumer match to chest-strap overnight HRV — but it asks for a monthly membership. Training watch or dedicated recovery ring?',
-  winnerSlug: null,
   verdict:
     'No overall winner — it splits by use case. For the most accurate overnight HRV and sleep in the most comfortable form, the Oura Ring 5 leads. For one device that also runs your training, shows a screen and never charges a fee, the Venu 4 leads. Wrist optical still trails the finger for absolute overnight precision.',
   bestForA:

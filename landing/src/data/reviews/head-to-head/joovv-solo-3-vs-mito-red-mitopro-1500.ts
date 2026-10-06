@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const joovvVsMitoRed: HeadToHead = {
+const joovvVsMitoRed: HeadToHeadInput = {
   slug: 'joovv-solo-3-vs-mito-red-mitopro-1500',
   productASlug: 'joovv-solo-3',
   productBSlug: 'mito-red-mitopro-1500',
@@ -9,7 +9,6 @@ const joovvVsMitoRed: HeadToHead = {
     'Joovv Solo 3.0 vs Mito Red MitoPRO 1500 — side-by-side ONDA comparison of the two top biohacker red light panels. FDA-registered modular versus four-wavelength large panel.',
   intro:
     'Joovv Solo 3.0 and Mito Red MitoPRO 1500 are the two red light panels biohackers most actually compare. Both ship premium build, verified irradiance and clean EMF; the structural differences are modularity, wavelength count, and the brand premium. The choice is mostly about which axis you weight — modular FDA-registered Joovv ecosystem, or broader-spectrum MitoPRO at a discount.',
-  winnerSlug: null,
   verdict:
     'Depends on the axis. Joovv Solo 3.0 wins for modular scaling and FDA registration. Mito Red MitoPRO 1500 wins for broader wavelength spectrum at $100 less.',
   bestForA:

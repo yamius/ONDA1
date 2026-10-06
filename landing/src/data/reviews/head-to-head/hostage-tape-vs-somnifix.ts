@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const hostageVsSomnifix: HeadToHead = {
+const hostageVsSomnifix: HeadToHeadInput = {
   slug: 'hostage-tape-vs-somnifix',
   productASlug: 'hostage-tape',
   productBSlug: 'somnifix',
@@ -9,7 +9,6 @@ const hostageVsSomnifix: HeadToHead = {
     'Hostage Tape vs Somnifix — viral 2026 biohacker brand vs original FDA-registered medical mouth tape. ONDA breaks down the top two mouth tapes.',
   intro:
     'Hostage Tape and Somnifix are the two mouth tapes users compare when picking premium nasal-breathing aid. The defining difference: Hostage Tape bets on beard-friendly acrylic adhesive and subscription convenience; Somnifix bets on FDA-registered porous safety design and multi-year medical credibility.',
-  winnerSlug: null,
   verdict:
     'Beard-friendliness vs medical credibility. Hostage Tape for beard-friendly acrylic adhesive and subscription convenience. Somnifix for FDA-registered porous safety design.',
   bestForA:

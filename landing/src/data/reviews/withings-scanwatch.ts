@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const withingsScanwatch: ToolReview = {
+const withingsScanwatch: ToolReviewInput = {
   slug: 'withings-scanwatch',
   name: 'Withings ScanWatch 2',
   brand: 'Withings',
@@ -12,7 +12,6 @@ const withingsScanwatch: ToolReview = {
     'A hybrid analog watch with medical-grade ECG and a ~30-day battery — strong on clinical health metrics, competent rather than class-leading as a dedicated HRV tracker.',
   summary:
     'The Withings ScanWatch 2 is the clinical-health pick here — a hybrid analog watch with a regulator-cleared single-lead ECG, SpO2, temperature and sleep-apnea detection, a roughly 30-day battery and no subscription. As a pure HRV tracker it is competent rather than class-leading.',
-  overallScore: 7.4,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.0, note: 'Overnight optical HRV plus an on-demand single-lead ECG — solid, though the continuous signal is optical, not electrical.' },
     { criterionId: 'sensor', score: 8.0, note: 'Optical PPG paired with a regulator-cleared single-lead ECG, SpO2 and a temperature sensor.' },

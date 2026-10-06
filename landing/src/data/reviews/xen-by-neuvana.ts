@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const xenByNeuvana: ToolReview = {
+const xenByNeuvana: ToolReviewInput = {
   slug: 'xen-by-neuvana',
   name: 'Xen by Neuvana',
   brand: 'Neuvana',
@@ -12,7 +12,6 @@ const xenByNeuvana: ToolReview = {
     'Auricular tVNS packaged as earbuds — a clever consumer form factor, modest independent evidence.',
   summary:
     'Xen is a pair of earbuds that combine auricular tVNS — electrodes targeting the vagus nerve through the ear canal — with music playback, so the stimulation rides on top of audio. Controlled from a phone with adjustable intensity and several modes. Less clinical lineage than Nurosym, but the consumer experience is closer to wearing AirPods than wearing a medical device.',
-  overallScore: 6.7,
   scores: [
     { criterionId: 'evidence', score: 5.5, note: 'Limited company-sponsored studies on HRV and sleep; no peer-reviewed RCTs of the Xen device specifically. Mechanism inherits from broader auricular tVNS evidence.' },
     { criterionId: 'mechanism', score: 7.0, note: 'Auricular tVNS via in-ear electrodes — targets the auricular vagal branch. Stimulation is synchronised with music playback through the same earbuds.' },

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const circularRing2: ToolReview = {
+const circularRing2: ToolReviewInput = {
   slug: 'circular-ring-2',
   name: 'Circular Ring 2',
   brand: 'Circular',
@@ -12,7 +12,6 @@ const circularRing2: ToolReview = {
     'The most ambitious smart ring on paper — on-finger ECG, AFib detection and an AI coach, all subscription-free — but the software is unfinished, and the headline health features didn’t reliably work in independent testing.',
   summary:
     'The Circular Ring 2 is the boldest hardware pitch in the category: the first smart ring with an on-finger ECG sensor and atrial-fibrillation (AFib) detection, paired with "Kira," a subscription-free AI coach that reads 140+ biometric markers after a 14-day calibration. On paper it combines ECG + AFib + proactive AI + zero subscription in a way no other ring does. In practice, independent 2026 reviews found the software got in the way — the ECG and AFib monitoring never fully worked during testing, and promised blood-pressure and glucose features had not arrived. Battery is about six days. It’s a genuinely innovative ring whose ambition currently outruns its execution.',
-  overallScore: 6.5,
   scores: [
     { criterionId: 'hrv-accuracy', score: 6.5, note: 'HRV tracking is present, but overall data reliability was uneven in independent testing.' },
     { criterionId: 'sensor', score: 7.5, note: 'The most ambitious sensor array in a ring — on-finger ECG and AFib detection. The hardware is real; the problem is the software driving it.' },

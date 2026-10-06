@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sharkCryoglow: ToolReview = {
+const sharkCryoglow: ToolReviewInput = {
   slug: 'shark-cryoglow',
   name: 'Shark CryoGlow',
   brand: 'Shark Beauty',
@@ -12,7 +12,6 @@ const sharkCryoglow: ToolReview = {
     'Most novel form factor in 2026 — active cooling combined with red + blue LED. Cooling is the differentiator; LED dose is modest by design.',
   summary:
     'Shark CryoGlow is the 2026 novelty entry — combining red + blue LED with active facial cooling via integrated thermoelectric elements. Shark Beauty brand crossover from vacuum / appliance pedigree. Cooling element is genuinely useful for puffiness / inflammation; LED dose is modest because the device prioritises cooling. Hybrid form factor compromises both modalities mildly to deliver them together.',
-  overallScore: 6.0,
   scores: [
     { criterionId: 'irradiance', score: 5.5, note: 'Modest LED irradiance — cooling element shares the form factor and limits dose. Designed for combined cooling + light rather than peak LED dose.' },
     { criterionId: 'wavelength-coverage', score: 7.0, note: 'Red 633 nm + blue 415 nm. Standard dual-spectrum coverage.' },

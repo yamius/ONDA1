@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const ibreathe: ToolReview = {
+const ibreathe: ToolReviewInput = {
   slug: 'ibreathe',
   name: 'iBreathe',
   brand: 'iBreathe',
@@ -12,7 +12,6 @@ const ibreathe: ToolReview = {
     'Best free minimalist breathwork app — clean visual breath guide, core techniques, no subscription. Narrow scope but unbeatable at the price.',
   summary:
     'iBreathe is the minimalist free breathwork reference — clean visual breath guide, core techniques (box, 4-7-8, custom timings), Apple Watch support, no subscription. The right app for users who want a simple breath timer without a content library or community.',
-  overallScore: 5.8,
   scores: [
     { criterionId: 'session-library', score: 4.0, note: 'No curated session library — just breath-pattern timer. Users provide their own structure.' },
     { criterionId: 'technique-coverage', score: 6.0, note: 'Core techniques (box, 4-7-8) plus custom timing. No Wim Hof rounds, no holotropic, no curated coverage.' },

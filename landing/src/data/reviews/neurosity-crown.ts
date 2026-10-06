@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const neurosityCrown: ToolReview = {
+const neurosityCrown: ToolReviewInput = {
   slug: 'neurosity-crown',
   name: 'Neurosity Crown',
   brand: 'Neurosity',
@@ -12,7 +12,6 @@ const neurosityCrown: ToolReview = {
     'The best EEG headset for developers and biohackers — eight channels, an open SDK, raw data and no subscription. At $1,499 and about three hours of battery, it is the wrong buy for casual meditation.',
   summary:
     'Neurosity Crown is the headset built for people who want to do something with the data, not just see it summarised. Eight dry EEG channels sampled at 256 Hz across frontal, central, parietal and occipital sites, on-device processing with hardware encryption, the most open SDK in the consumer category (JavaScript and Python, plus BrainFlow, LSL, OSC and an MCP server for AI assistants), raw-signal access and adaptive focus music. Premium hardware at a premium price; the right pick for engineers, researchers and biohackers — the wrong shape for a casual meditation user.',
-  overallScore: 7.6,
   scores: [
     { criterionId: 'signal-quality', score: 8.5, note: 'Eight dry EEG channels at 256 Hz (CP3, C3, F5, PO3, PO4, F6, C4, CP4) — the most cortical coverage in the consumer category. Signal holds well in seated focus sessions.' },
     { criterionId: 'training-content', score: 6.5, note: 'Less guided content than Muse; the product bets on adaptive focus music plus user-built apps. Not a meditation library.' },

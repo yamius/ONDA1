@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const theTapeCo: ToolReview = {
+const theTapeCo: ToolReviewInput = {
   slug: 'the-tape-co',
   name: 'The Tape Co.',
   brand: 'The Tape Co.',
@@ -12,7 +12,6 @@ const theTapeCo: ToolReview = {
     'Best X-pattern mouth tape — cross design allows corner-airflow safety, indie biohacker positioning. Newer brand without multi-year track record.',
   summary:
     'The Tape Co. is the indie biohacker entry with the distinctive X-pattern design — two adhesive strips crossed over the mouth, leaving corners exposed for emergency mouth airflow. Safer mechanism than full-seal alternatives. Newer brand (~2024 launch), modest brand recognition vs Hostage Tape but a real safety-design differentiator.',
-  overallScore: 6.0,
   scores: [
     { criterionId: 'adhesion-comfort', score: 6.5, note: 'Mid-tier acrylic adhesive — adequate grip on clean skin. X-pattern reduces total adhesive area per night. Less beard-friendly than Hostage Tape.' },
     { criterionId: 'breathing-mechanism', score: 8.0, note: 'X-pattern cross design — leaves corner-of-mouth uncovered, allowing emergency airflow. Safer mechanism for users uncertain about full-seal contraindications.' },

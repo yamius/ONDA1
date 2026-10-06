@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const plungeVsEdge: HeadToHead = {
+const plungeVsEdge: HeadToHeadInput = {
   slug: 'plunge-vs-edge-tub',
   productASlug: 'plunge',
   productBSlug: 'edge-tub',
@@ -9,7 +9,6 @@ const plungeVsEdge: HeadToHead = {
     'The Plunge vs Edge Tub — side-by-side ONDA comparison of the two leading chiller-built cold-plunge tubs. Premium category leader vs price-disciplined challenger.',
   intro:
     'The Plunge and Edge Tub are the two chiller-built cold-plunge tubs most buyers compare. Both ship integrated chillers, ozone sanitation and outdoor-rated insulation; the decision is between The Plunge’s category-defining premium build and Edge Tub’s comparable hardware at roughly half the price.',
-  winnerSlug: 'plunge',
   verdict:
     'The Plunge wins on multi-year reliability and chiller capability; Edge Tub wins decisively on value. For most buyers, Edge Tub is the smarter pick.',
   bestForA:

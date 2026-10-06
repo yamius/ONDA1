@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const hostageVsSomnifixVsIntake: HeadToHead = {
+const hostageVsSomnifixVsIntake: HeadToHeadInput = {
   slug: 'hostage-tape-vs-somnifix-vs-intake-breathing',
   productASlug: 'hostage-tape',
   productBSlug: 'somnifix',
@@ -10,7 +10,6 @@ const hostageVsSomnifixVsIntake: HeadToHead = {
     'Hostage Tape vs Somnifix vs Intake Breathing — the three category-defining nasal-breathing aids compared. Biohacker mouth tape vs FDA-registered medical mouth tape vs premium magnetic nasal dilator.',
   intro:
     'The three nasal-breathing aids that define the 2026 category. Hostage Tape — viral biohacker mouth tape with beard-friendly acrylic adhesive. Somnifix — FDA-registered porous mouth tape with central breathing port. Intake Breathing — premium external magnetic nasal dilator (James Nestor-recommended).',
-  winnerSlug: null,
   verdict:
     'Three different theses, three different right answers. Hostage Tape for beard-friendly biohacker mouth seal. Somnifix for FDA-registered porous safety. Intake Breathing for premium external magnetic dilation.',
   bestForA:

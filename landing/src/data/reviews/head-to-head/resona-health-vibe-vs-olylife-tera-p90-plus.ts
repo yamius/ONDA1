@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const resonaVsOlylife: HeadToHead = {
+const resonaVsOlylife: HeadToHeadInput = {
   slug: 'resona-health-vibe-vs-olylife-tera-p90-plus',
   productASlug: 'resona-health-vibe',
   productBSlug: 'olylife-tera-p90-plus',
@@ -9,7 +9,6 @@ const resonaVsOlylife: HeadToHead = {
     'Resona Health VIBE vs OlyLife TERA P90 Plus — the two sub-$700 portable PEMF devices compared. Wearable with 130+ protocols vs handheld wand with terahertz marketing.',
   intro:
     'Resona Health VIBE and OlyLife TERA P90 Plus are the two devices PEMF-curious users compare when they don\'t want to commit $2,000+ to a mat. Both are sub-$700, portable, single-applicator devices. The defining difference is honesty — Resona is straightforward PEMF; OlyLife wraps real PEMF in terahertz marketing claims that overstate the published evidence.',
-  winnerSlug: 'resona-health-vibe',
   verdict:
     'Resona Health VIBE wins on protocol depth, research honesty and distribution model. OlyLife is acceptable only if you explicitly discount the terahertz marketing.',
   bestForA:

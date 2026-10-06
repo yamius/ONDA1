@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const apolloNeuroVsPulsetto: HeadToHead = {
+const apolloNeuroVsPulsetto: HeadToHeadInput = {
   slug: 'apollo-neuro-vs-pulsetto',
   productASlug: 'apollo-neuro',
   productBSlug: 'pulsetto',
@@ -9,7 +9,6 @@ const apolloNeuroVsPulsetto: HeadToHead = {
     'Apollo Neuro vs Pulsetto — side-by-side ONDA comparison. Vibrotactile all-day wearable versus electrical neck-worn tVNS — two different mechanisms in the same buying conversation.',
   intro:
     'Apollo Neuro and Pulsetto are the two consumer vagus-modulation devices most people are weighing against each other. They sit in the same buying conversation but use different mechanisms — Apollo Neuro is a vibrotactile wearable you can wear all day, Pulsetto is an electrical tVNS collar with neck-worn electrodes that delivers structured 4–20 minute sessions. The choice is between always-on gentle modulation and stronger acute sessions.',
-  winnerSlug: null,
   verdict:
     'A deliberate tie. Apollo Neuro for always-on gentle vagal modulation throughout the day. Pulsetto for stronger acute parasympathetic sessions in a programme-driven format.',
   bestForA:

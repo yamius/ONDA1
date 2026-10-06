@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const relaxSaunaPortable: ToolReview = {
+const relaxSaunaPortable: ToolReviewInput = {
   slug: 'relax-sauna-portable',
   name: 'Relax Sauna Portable',
   brand: 'Relax Sauna',
@@ -12,7 +12,6 @@ const relaxSaunaPortable: ToolReview = {
     'The veteran portable far-IR sauna — chair-and-tent design, low EMF, niche but real product.',
   summary:
     'Relax Sauna Portable is the long-running chair-and-tent portable far-IR sauna. Foldable enclosure plus seated configuration delivers far-IR exposure without cabin commitment. Smaller user base than HigherDose Blanket but with documented low EMF and a real 20+ year manufacturing track record.',
-  overallScore: 6.4,
   scores: [
     { criterionId: 'heat-source', score: 6.5, note: 'Far-IR-only via semiconductor far-IR generators. Documented far-IR wavelength range; no near or mid.' },
     { criterionId: 'build', score: 7.0, note: 'Long-running brand (20+ years). Tent / chair construction is foldable for storage. Standard warranty.' },

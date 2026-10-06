@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const pod4VsCoverPro: HeadToHead = {
+const pod4VsCoverPro: HeadToHeadInput = {
   slug: 'eight-sleep-pod-4-vs-eight-sleep-pod-cover-pro',
   productASlug: 'eight-sleep-pod-4',
   productBSlug: 'eight-sleep-pod-cover-pro',
@@ -9,7 +9,6 @@ const pod4VsCoverPro: HeadToHead = {
     'Eight Sleep Pod 4 vs Pod Cover Pro — should you buy the full mattress system or just the cover for your existing mattress? ONDA breaks down the price gap, feature parity, and who each tier is for.',
   intro:
     'Both share the same Eight Sleep climate hardware, Autopilot software, integrated HRV tracking and subscription model. The difference is form factor — Pod 4 is the full mattress system, Pod Cover Pro installs the same intelligence on your existing mattress at meaningfully lower price.',
-  winnerSlug: null,
   verdict:
     'Mattress status decides. Pod 4 if you\'re replacing your mattress anyway and want the integrated build. Pod Cover Pro if you have a mattress you like and want the climate + tracking on it for ~40% less.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const balance: ToolReview = {
+const balance: ToolReviewInput = {
   slug: 'balance',
   name: 'Balance',
   brand: 'Balance',
@@ -12,7 +12,6 @@ const balance: ToolReview = {
     'A meditation app that adapts to you — a genuinely personalised plan, with a full year free to try and a few rough edges.',
   summary:
     'Balance is the personalisation pick. It builds an adaptive plan around your level, goals and feedback rather than handing you a fixed library, and it gives a full year free to try it. The adaptation is not flawless, and the Android app has had reliability complaints.',
-  overallScore: 7.5,
   scores: [
     { criterionId: 'content-library', score: 7.5, note: 'A solid plan-based library — built around guided programs rather than a sprawling catalogue.' },
     { criterionId: 'teaching', score: 7.5, note: 'Clear, course-style teaching that builds fundamental skills.' },

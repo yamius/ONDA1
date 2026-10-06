@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const morozkoForge: ToolReview = {
+const morozkoForge: ToolReviewInput = {
   slug: 'morozko-forge',
   name: 'Morozko Forge',
   brand: 'Morozko',
@@ -12,7 +12,6 @@ const morozkoForge: ToolReview = {
     'The most extreme consumer cold-plunge — capable of literal ice formation on the surface. Ultra-premium pricing.',
   summary:
     'Morozko Forge is the cold-plunge tub built for users who want literal ice formation on the surface — the chiller can drop water to 33°F and form a thin ice layer above-water. Wim Hof-affiliated, premium build, $10,000+ pricing. Overkill for general practice; the right shape for users specifically chasing extreme cold-exposure depth.',
-  overallScore: 7.8,
   scores: [
     { criterionId: 'chiller-capacity', score: 9.7, note: 'Best-in-class chiller — can hold 33°F with surface ice formation. No other consumer device matches this temperature floor.' },
     { criterionId: 'build', score: 9.0, note: 'Premium insulated build, marine-grade hardware. Designed for ultra-cold operation that lesser tubs cannot match.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const dockProVsCube: HeadToHead = {
+const dockProVsCube: HeadToHeadInput = {
   slug: 'chilipad-dock-pro-vs-chilipad-cube',
   productASlug: 'chilipad-dock-pro',
   productBSlug: 'chilipad-cube',
@@ -9,7 +9,6 @@ const dockProVsCube: HeadToHead = {
     'ChiliPad Dock Pro vs ChiliPad Cube — Sleepme premium tier vs mid-tier. ONDA breaks down what dual-zone, scheduling and the larger chiller actually give you over the entry-level Cube.',
   intro:
     'Both are Sleepme water-cooled climate systems with the same core mechanism — water reservoir, chiller, fluid-circulating pad on the mattress. Dock Pro is the current flagship; Cube is the legacy mid-tier still in active distribution at roughly half the price.',
-  winnerSlug: null,
   verdict:
     'Tier decides on budget. Dock Pro for dual-zone, scheduling and the higher-capacity chiller. Cube for the same water cooling at half the price if you sleep alone and don\'t need scheduling.',
   bestForA:

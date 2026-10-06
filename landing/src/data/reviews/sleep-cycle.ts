@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const sleepCycle: ToolReview = {
+const sleepCycle: ToolReviewInput = {
   slug: 'sleep-cycle',
   name: 'Sleep Cycle',
   brand: 'Sleep Cycle',
@@ -12,7 +12,6 @@ const sleepCycle: ToolReview = {
     'The most polished mainstream sleep tracker — a smart alarm and clean analysis, with a genuinely useful free tier.',
   summary:
     'Sleep Cycle is the most popular sleep tracker for good reason: it measures your night, wakes you in light sleep so you get up less groggy, and hands back a clean, readable analysis. Its free tier is genuinely useful, and the paid plan stays inexpensive.',
-  overallScore: 7.2,
   scores: [
     { criterionId: 'tracking-accuracy', score: 7.5, note: 'Tracks by microphone and accelerometer, or by heart rate with an Apple Watch — solid for a phone-based tracker.' },
     { criterionId: 'wind-down-content', score: 6.5, note: 'Some sleep sounds and aid content, though wind-down is not its main focus.' },

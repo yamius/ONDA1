@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const chilipadCube: ToolReview = {
+const chilipadCube: ToolReviewInput = {
   slug: 'chilipad-cube',
   name: 'ChiliPad Cube',
   brand: 'Sleepme',
@@ -12,7 +12,6 @@ const chilipadCube: ToolReview = {
     'The budget water-cooled pad — real water cooling for $719 a side, but remote-only, no scheduling and a warmer coldest setting than Chilipad 2.0.',
   summary:
     'ChiliPad Cube is Sleepme’s mid-tier water-cooled pad — the long-running model that introduced water-cooled sleep climate to the mainstream. It still cools and heats with water, but now runs from a physical remote with no app or scheduling, and cools to 60°F rather than the 55°F of Chilipad 2.0. The cheapest entry into the Sleepme range at the cost of premium features.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'climate-range', score: 7.5, note: 'Cools and heats with water. Sleepme now lists the Cube as cooling to 60°F (about 15.5°C), versus 55°F for Chilipad 2.0 — a narrower cold end than the Dock Pro range we originally scored (sub-score lowered from 8.5 on 2026-10-01).' },
     { criterionId: 'build', score: 8.0, note: 'Pad and hub similar to Dock Pro. Multi-year Sleepme track record. 1-year limited warranty (extendable at checkout), per sleep.me in October 2026.' },

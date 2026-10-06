@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const levelsVsZoeVsNutrisense: HeadToHead = {
+const levelsVsZoeVsNutrisense: HeadToHeadInput = {
   slug: 'levels-vs-zoe-vs-nutrisense',
   productASlug: 'levels',
   productBSlug: 'zoe',
@@ -10,7 +10,6 @@ const levelsVsZoeVsNutrisense: HeadToHead = {
     'Levels vs Zoe vs Nutrisense — three-way ONDA comparison of three nutrition-focused CGM programmes. Continuous insight engine, multi-biomarker science fusion and registered-dietitian coaching in one decision.',
   intro:
     'Levels, Zoe and Nutrisense are the three CGM programmes nutrition-focused users compare when expert layers and methodological depth matter. Three different philosophies on the same input (CGM data): Levels bets on app intelligence and continuous depth, Zoe runs a multi-biomarker scientific reset, Nutrisense pairs continuous CGM with a registered dietitian.',
-  winnerSlug: null,
   verdict:
     'Three different products. Levels for the deepest ongoing CGM insight engine. Zoe for science-backed personalised nutrition. Nutrisense for human dietitian coaching on continuous data.',
   bestForA:

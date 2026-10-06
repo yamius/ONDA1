@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const zoeVsLevels: HeadToHead = {
+const zoeVsLevels: HeadToHeadInput = {
   slug: 'zoe-vs-levels',
   productASlug: 'zoe',
   productBSlug: 'levels',
@@ -9,7 +9,6 @@ const zoeVsLevels: HeadToHead = {
     'Zoe vs Levels — side-by-side ONDA comparison of two personalised-nutrition programmes. Multi-biomarker science fusion versus continuous biohacker-grade glucose.',
   intro:
     'Zoe and Levels are the two consumer programmes most often weighed against each other when nutrition is the goal rather than glucose alone. They occupy adjacent shelves: Zoe runs a two-week CGM phase alongside a gut-microbiome test and a blood biomarker panel, then keeps you on personalised food rankings; Levels runs continuous CGM with the deepest meal-impact analysis on the market. The decision is between a multi-biomarker reset and ongoing glucose tracking.',
-  winnerSlug: null,
   verdict:
     'They are different products. Zoe for a science-backed nutrition reset combining CGM + microbiome + blood biomarkers. Levels for ongoing glucose insight on the best CGM hardware.',
   bestForA:

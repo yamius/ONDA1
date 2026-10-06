@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const garminFenix8: ToolReview = {
+const garminFenix8: ToolReviewInput = {
   slug: 'garmin-fenix-8',
   name: 'Garmin Fenix 8',
   brand: 'Garmin',
@@ -12,7 +12,6 @@ const garminFenix8: ToolReview = {
     'The most capable heart-sensor hardware Garmin puts on a wrist — inside a $1,000 expedition watch you are mostly paying for GPS, dive and battery, not HRV.',
   summary:
     'The Fenix 8 carries Garmin’s newest Elevate v5 optical suite (with an ECG app) and multi-week battery that makes continuous overnight HRV genuinely practical. But it is a large, heavy, ~$1,000 multisport flagship: as a dedicated HRV tracker it is overkill, and a ring or band tracks overnight HRV just as well for a fraction of the price.',
-  overallScore: 7.3,
   scores: [
     { criterionId: 'hrv-accuracy', score: 7.5, note: 'Garmin HRV Status builds an overnight baseline over ~3 weeks; solid, though wrist PPG on a large watch still moves more than a ring or strap.' },
     { criterionId: 'sensor', score: 8.0, note: 'Elevate v5 — Garmin’s newest optical array, adding an ECG app and skin-temperature on top of HR, HRV and Pulse Ox (SpO2).' },

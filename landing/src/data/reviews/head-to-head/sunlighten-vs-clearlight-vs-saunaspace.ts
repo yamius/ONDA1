@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threePremiumSauna: HeadToHead = {
+const threePremiumSauna: HeadToHeadInput = {
   slug: 'sunlighten-vs-clearlight-vs-saunaspace',
   productASlug: 'sunlighten-mpulse',
   productBSlug: 'clearlight-sanctuary-2',
@@ -10,7 +10,6 @@ const threePremiumSauna: HeadToHead = {
     'Sunlighten mPulse vs Clearlight Sanctuary 2 vs SaunaSpace Faraday — three-way ONDA comparison of the top three premium IR cabin saunas.',
   intro:
     'Sunlighten mPulse, Clearlight Sanctuary 2 and SaunaSpace Faraday are the three premium IR saunas serious buyers shortlist when IR is the chosen heat source. Three different bets within premium IR — Sunlighten on programmable full-spectrum, Clearlight on Jacuzzi-backed combined full-spectrum, SaunaSpace on near-IR incandescent with Faraday-cage shielding.',
-  winnerSlug: 'sunlighten-mpulse',
   verdict:
     'Sunlighten mPulse wins on wavelength rigour and research footprint. Clearlight on its Jacuzzi-backed lifetime warranty. SaunaSpace on near-IR purity and EMF discipline. Three premium picks, three different philosophies.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const omniluxVsCurrentbody: HeadToHead = {
+const omniluxVsCurrentbody: HeadToHeadInput = {
   slug: 'omnilux-contour-face-vs-currentbody-series-2',
   productASlug: 'omnilux-contour-face',
   productBSlug: 'currentbody-series-2',
@@ -9,7 +9,6 @@ const omniluxVsCurrentbody: HeadToHead = {
     'Omnilux Contour Face vs CurrentBody Series 2 — FDA Class II clinical reference vs consumer market leader with neck flap. ONDA breaks down the premium silicone red light mask top two.',
   intro:
     'Omnilux Contour Face and CurrentBody Series 2 are the two flexible-silicone face masks users compare when picking premium red light therapy. Both deliver red 633 nm + near-infrared 830 nm in medical-grade silicone. The defining difference is the thesis: Omnilux bets on FDA Class II clinical evidence; CurrentBody bets on integrated neck flap and consumer-market scale.',
-  winnerSlug: null,
   verdict:
     'Clinical evidence vs consumer features. Omnilux Contour Face for FDA Class II clearance and peer-reviewed dermatology depth. CurrentBody Series 2 for integrated neck flap and largest consumer customer base.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const rise: ToolReview = {
+const rise: ToolReviewInput = {
   slug: 'rise',
   name: 'RISE',
   brand: 'Rise Science',
@@ -12,7 +12,6 @@ const rise: ToolReview = {
     'A sleep app that reframes the goal as daytime energy — it tracks sleep debt and your circadian rhythm and tells you when to do things, not just how you slept.',
   summary:
     'RISE takes a different angle from the trackers here. Instead of grading last night, it tracks two things — your accumulated sleep debt and your circadian rhythm — and turns them into a daily energy schedule: when you will peak, when you will dip, when to wind down. The focus is what to do with your day.',
-  overallScore: 6.8,
   scores: [
     { criterionId: 'tracking-accuracy', score: 6.5, note: 'Tracks sleep times via phone or wearable data — solid, but sleep debt is an estimate.' },
     { criterionId: 'wind-down-content', score: 4.5, note: 'Light — some relaxation tools, but content is not the focus.' },

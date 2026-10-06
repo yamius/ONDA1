@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const irVsTraditional: HeadToHead = {
+const irVsTraditional: HeadToHeadInput = {
   slug: 'sunlighten-vs-finnleo-vs-almost-heaven',
   productASlug: 'sunlighten-mpulse',
   productBSlug: 'finnleo-hallmark',
@@ -10,7 +10,6 @@ const irVsTraditional: HeadToHead = {
     'Sunlighten mPulse vs Finnleo Hallmark vs Almost Heaven Salem Barrel — three-way ONDA comparison crossing the IR / traditional Finnish / outdoor barrel divide.',
   intro:
     'Sunlighten mPulse, Finnleo Hallmark and Almost Heaven Salem are the three premium saunas users compare when the heat-source question is open. Three different bets — IR cabin (Sunlighten), traditional indoor Finnish (Finnleo), traditional outdoor cedar barrel (Almost Heaven). Different mechanisms, different install conditions, different evidence bases.',
-  winnerSlug: null,
   verdict:
     'Three different heat sources. Sunlighten for IR cabin and programmable wavelength control. Finnleo for premium Finnish indoor convection. Almost Heaven for traditional outdoor cedar barrel.',
   bestForA:

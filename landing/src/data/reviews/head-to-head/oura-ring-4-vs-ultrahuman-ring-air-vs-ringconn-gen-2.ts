@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const threeRings: HeadToHead = {
+const threeRings: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-ultrahuman-ring-air-vs-ringconn-gen-2',
   productASlug: 'oura-ring-4',
   productBSlug: 'ultrahuman-ring-air',
@@ -10,7 +10,6 @@ const threeRings: HeadToHead = {
     'Oura vs Ultrahuman vs RingConn — three-way ONDA comparison of the leading smart rings. Premium polish, lightest form factor and longest battery in one decision.',
   intro:
     'Oura Ring 4, Ultrahuman Ring Air and RingConn Gen 2 are the three smart rings non-diabetic biohackers most actually shortlist together. All three run similar optical sensors for overnight HRV and sleep; the differences are app maturity, form factor and ownership economics. Premium with a subscription versus subscription-free with trade-offs.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Oura Ring 4 wins for app maturity and analytics depth. Ultrahuman wins on form factor and ecosystem integration. RingConn wins on battery life and total cost of ownership.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraRing5VsUltrahuman: HeadToHead = {
+const ouraRing5VsUltrahuman: HeadToHeadInput = {
   slug: 'oura-ring-5-vs-ultrahuman-ring-air',
   productASlug: 'oura-ring-5',
   productBSlug: 'ultrahuman-ring-air',
@@ -9,7 +9,6 @@ const ouraRing5VsUltrahuman: HeadToHead = {
     'Oura Ring 5 vs Ultrahuman Ring Air — the accuracy-leading flagship (with a mandatory subscription) vs the subscription-free ring (with a battery-reliability question).',
   intro:
     'The Oura Ring 5 and the Ultrahuman Ring Air are the two smart rings people weigh when accuracy matters. Oura is the flagship — upgraded sensors, the most validated sleep and HRV — but it charges a mandatory membership. Ultrahuman is the subscription-free alternative with strong sleep tracking, undercut by widespread reports of batteries failing within months. The trade is accuracy-plus-fee versus own-it-outright-with-a-risk.',
-  winnerSlug: null,
   verdict:
     'Accuracy with a subscription vs no subscription with a reliability question. The Oura Ring 5 is the more accurate, better-supported ring — if you accept the ~$6/month membership. The Ultrahuman Ring Air is subscription-free and lighter — if you accept its battery-reliability risk.',
   bestForA:

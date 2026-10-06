@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const goVsQ2: HeadToHead = {
+const goVsQ2: HeadToHeadInput = {
   slug: 'hypervolt-go-2-vs-bob-and-brad-q2-mini',
   productASlug: 'hypervolt-go-2',
   productBSlug: 'bob-and-brad-q2-mini',
@@ -9,7 +9,6 @@ const goVsQ2: HeadToHead = {
     'Hypervolt Go 2 vs Bob and Brad Q2 Mini — premium travel mini vs PT-brand budget mini. ONDA breaks down the travel-mini duel.',
   intro:
     'Hypervolt Go 2 and Bob and Brad Q2 Mini are the two travel-mini massage guns users compare. The defining difference: Hypervolt Go 2 is premium-brand Hyperice ecosystem at $129; Bob and Brad Q2 Mini is "Famous PT" YouTube brand at $99. Both deliver brushless motors and ~30-35 lbs stall force.',
-  winnerSlug: null,
   verdict:
     'Premium ecosystem vs PT-brand credibility. Hypervolt Go 2 for Hyperice app + brand pedigree at $129. Bob and Brad Q2 Mini for PT framing + $30 less.',
   bestForA:

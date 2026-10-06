@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const appleWatchVsGarminVenu4: HeadToHead = {
+const appleWatchVsGarminVenu4: HeadToHeadInput = {
   slug: 'apple-watch-series-11-vs-garmin-venu-4',
   productASlug: 'apple-watch-series-11',
   productBSlug: 'garmin-venu-4',
@@ -9,7 +9,6 @@ const appleWatchVsGarminVenu4: HeadToHead = {
     'Apple Watch Series 11 vs Garmin Venu 4 — side-by-side ONDA comparison of the two leading smartwatches with HRV. Ecosystem breadth versus training depth and battery.',
   intro:
     'Apple Watch Series 11 and Garmin Venu 4 are the two smartwatches non-diabetic biohackers most often weigh against each other when they want HRV without committing to a dedicated ring or strap. They sit at opposite ends of the same hardware category — Apple as the all-purpose computer on the wrist, Garmin as the training-and-recovery instrument with up to 12 days of battery. The right pick is rarely about HRV alone.',
-  winnerSlug: null,
   verdict:
     'Depends on intent. Apple Watch Series 11 wins as a general-purpose smartwatch; Garmin Venu 4 wins as a training instrument with the multi-day battery to stay on continuously.',
   bestForA:

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const series12VsSeries11: HeadToHead = {
+const series12VsSeries11: HeadToHeadInput = {
   slug: 'apple-watch-series-12-vs-series-11',
   productASlug: 'apple-watch-series-12',
   productBSlug: 'apple-watch-series-11',
@@ -9,7 +9,6 @@ const series12VsSeries11: HeadToHead = {
     'Apple Watch Series 12 vs Series 11 — should you upgrade for HRV? The new Health Sensing System, 24× more frequent HRV and Recovery vs Overall HRV, weighed against last year’s watch.',
   intro:
     'For most features the Series 12 is an incremental update — same $399 start, similar ~1-day battery, same everyday smartwatch. The exception is health sensing, and specifically HRV. The Series 12’s all-new Health Sensing System samples HRV about 24× more often, splits it into Recovery HRV and Overall HRV, and adds hypertension notifications. If HRV and recovery are why you are asking, that is the whole story.',
-  winnerSlug: 'apple-watch-series-12',
   verdict:
     'For HRV and health, the Series 12 is a clear upgrade — much more frequent sampling, a Recovery-vs-Overall HRV split and native RMSSD in HealthKit. For everything else it is incremental, so upgrade for the health sensing, not the rest.',
   bestForA:

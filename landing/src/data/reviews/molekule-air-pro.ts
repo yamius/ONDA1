@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const molekuleAirPro: ToolReview = {
+const molekuleAirPro: ToolReviewInput = {
   slug: 'molekule-air-pro',
   name: 'Molekule Air Pro',
   brand: 'Molekule',
@@ -12,7 +12,6 @@ const molekuleAirPro: ToolReview = {
     'Best PECO technology premium — destroys VOCs and pathogens at molecular level, polished consumer UX. PECO efficacy claims debated; backed by Molekule patents.',
   summary:
     'Molekule Air Pro is the PECO-technology premium — photocatalytic oxidation (PECO) layer destroys VOCs, mold and pathogens at molecular level via UV-activated catalyst, combined with True HEPA H13. Polished consumer UX with app integration and PM2.5 / VOC sensors. Premium pricing. PECO efficacy beyond HEPA claims have been debated in independent reviews; Molekule patents and FTC settlements clarify the boundaries.',
-  overallScore: 8.0,
   scores: [
     { criterionId: 'filtration-technology', score: 8.5, note: 'PECO photocatalytic oxidation + True HEPA H13 combination. PECO destroys VOCs / pathogens at molecular level. Multi-layer approach unique in category.' },
     { criterionId: 'cadr-coverage', score: 7.5, note: '1000 sq ft coverage. CADR figures less independently verified than IQAir / Coway.' },

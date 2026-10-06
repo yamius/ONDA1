@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraRing4VsWhoop50: HeadToHead = {
+const ouraRing4VsWhoop50: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-whoop-5-0',
   productASlug: 'oura-ring-4',
   productBSlug: 'whoop-5-0',
@@ -9,7 +9,6 @@ const ouraRing4VsWhoop50: HeadToHead = {
     'Oura Ring 4 vs Whoop 5.0 — side-by-side ONDA comparison of the two leading consumer HRV trackers. Scored on accuracy, sleep, recovery coaching and value.',
   intro:
     'Oura Ring 4 and Whoop 5.0 are the two HRV wearables most people are choosing between in 2026. Both run on optical PPG sensors with strong overnight HRV pipelines; the meaningful difference is the form factor and what each company built on top of the signal. Oura is a smart ring with the deepest sleep and HRV analysis you can wear around the clock; Whoop is a continuous-band recovery coach for people who train on a daily score.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Oura Ring 4 wins for most users — the same overnight HRV signal in a smaller, more wearable package, with better sleep analytics. Whoop 5.0 wins for athletes whose training is structured around a daily recovery score.',
   bestForA:

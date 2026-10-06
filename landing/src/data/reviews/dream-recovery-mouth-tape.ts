@@ -1,6 +1,6 @@
-import type { ToolReview } from './types'
+import type { ToolReviewInput } from './types'
 
-const dreamRecovery: ToolReview = {
+const dreamRecovery: ToolReviewInput = {
   slug: 'dream-recovery-mouth-tape',
   name: 'Dream Recovery Mouth Tape',
   brand: 'Dream Recovery',
@@ -12,7 +12,6 @@ const dreamRecovery: ToolReview = {
     'Best silicone-gel premium mouth tape — reusable, gentler skin contact, premium positioning. Subscription-style pricing without subscription lock-in.',
   summary:
     'Dream Recovery Mouth Tape is the premium silicone-gel entry — reusable silicone strip with gentler skin contact than acrylic-adhesive alternatives. Hypoallergenic, latex-free, multi-use per strip. Mid-premium pricing without subscription lock-in. Best fit for users with sensitive skin who reject Hostage Tape acrylic adhesive but want a premium brand experience.',
-  overallScore: 7.7,
   scores: [
     { criterionId: 'adhesion-comfort', score: 8.0, note: 'Silicone-gel adhesive is gentler on skin than acrylic; good adhesion on clean skin. Less beard-grip than Hostage Tape — silicone gel doesn\'t hold stubble.' },
     { criterionId: 'breathing-mechanism', score: 7.5, note: 'Full-seal design. No porous center port. Designed for users committed to nasal-only breathing.' },

@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const steloVsLingo: HeadToHead = {
+const steloVsLingo: HeadToHeadInput = {
   slug: 'stelo-vs-lingo',
   productASlug: 'stelo',
   productBSlug: 'lingo',
@@ -9,7 +9,6 @@ const steloVsLingo: HeadToHead = {
     'Stelo vs Lingo — side-by-side ONDA comparison of the two FDA-cleared OTC CGMs. Dexcom G7 versus Abbott Libre 3 hardware, no prescription required for either.',
   intro:
     'Stelo and Lingo are the two FDA-cleared over-the-counter CGMs in the US — the first consumer glucose monitors you can buy without a prescription. Stelo runs on Dexcom G7; Lingo runs on Abbott Libre 3. Both are OTC, both target non-diabetic biohackers, and both are deliberately simpler than the coached programmes (Levels, Nutrisense). The choice comes down to sensor accuracy versus price.',
-  winnerSlug: 'stelo',
   verdict:
     'Stelo wins on hardware accuracy at a small price premium. Lingo wins on cost flexibility — buy single 2-week sensors as needed without subscription.',
   bestForA:

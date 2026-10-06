@@ -1,6 +1,6 @@
-import type { HeadToHead } from '../types'
+import type { HeadToHeadInput } from '../types'
 
-const ouraVsWhoopVsGarmin: HeadToHead = {
+const ouraVsWhoopVsGarmin: HeadToHeadInput = {
   slug: 'oura-ring-4-vs-whoop-5-0-vs-garmin-venu-4',
   productASlug: 'oura-ring-4',
   productBSlug: 'whoop-5-0',
@@ -10,7 +10,6 @@ const ouraVsWhoopVsGarmin: HeadToHead = {
     'Oura vs Whoop vs Garmin (2026): best for sleep, recovery coaching or training? Prices, subscriptions, battery and 3-year cost side by side.',
   intro:
     'Oura Ring 4, Whoop 5.0 and Garmin Venu 4 are the three HRV trackers most non-Apple users actually shortlist together. Three form factors, three philosophies: Oura is the passive ring, Whoop is the continuous coaching band, Garmin is the training-instrument smartwatch. All three handle overnight HRV credibly; the choice is how you want the device to live in your routine — and how you want to pay for it.',
-  winnerSlug: 'oura-ring-4',
   verdict:
     'Oura Ring 4 wins for general HRV-and-sleep tracking. Whoop for athletes who train on a daily recovery score. Garmin for trainers who want a watch with first-party training analytics and no subscription.',
   bestForA:
