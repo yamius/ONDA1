@@ -19,6 +19,7 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
         CAPPluginMethod(name: "querySleepHistory", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryBaseline", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "queryBaselineCorridors", returnType: CAPPluginReturnPromise),
+        CAPPluginMethod(name: "queryHrvHistory", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "setAnomalyStrings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "setCheckinStrings", returnType: CAPPluginReturnPromise),
         CAPPluginMethod(name: "startAnomalyMonitoring", returnType: CAPPluginReturnPromise),
@@ -657,6 +658,32 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
     /// samples (local hour < 9), for signals that also fire in daytime (HRV).
     /// Returns the clean nightly means oldest-first.
     private func queryNightlyValues(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, minSamples: Int, nightOnly: Bool, completion: @escaping ([Double]) -> Void) {
+        queryDailyMeans(identifier, from: from, to: to, minSamples: minSamples, nightOnly: nightOnly) { pairs in
+            completion(pairs.map { $0.value })
+        }
+    }
+
+    /// HRV history for the 7-day chart (1.9.3): one DATED daily mean SDNN per day
+    /// over the last `days`, so the chart can show past days from Apple Health on
+    /// the very first launch instead of starting at "day 1".
+    @objc func queryHrvHistory(_ call: CAPPluginCall) {
+        guard HKHealthStore.isHealthDataAvailable() else { call.resolve(["samples": [] as [Any]]); return }
+        let days = call.getInt("days") ?? 14
+        let now = Date()
+        let calendar = Calendar.current
+        let start = calendar.date(byAdding: .day, value: -days, to: calendar.startOfDay(for: now)) ?? now
+        queryDailyMeans(.heartRateVariabilitySDNN, from: start, to: now, minSamples: 1, nightOnly: false) { pairs in
+            let samples: [[String: Any]] = pairs.map { p -> [String: Any] in
+                ["date": p.date, "value": (p.value * 10).rounded() / 10]
+            }
+            DispatchQueue.main.async { call.resolve(["samples": samples]) }
+        }
+    }
+
+    /// All samples in [from, to] → one mean per local day (yyyy-MM-dd), keeping
+    /// only days with ≥ minSamples; `nightOnly` keeps samples before 09:00.
+    /// Oldest-first.
+    private func queryDailyMeans(_ identifier: HKQuantityTypeIdentifier, from: Date, to: Date, minSamples: Int, nightOnly: Bool, completion: @escaping ([(date: String, value: Double)]) -> Void) {
         guard let type = HKQuantityType.quantityType(forIdentifier: identifier) else {
             completion([])
             return
@@ -683,11 +710,11 @@ public class HealthKitHeartRatePlugin: CAPPlugin, CAPBridgedPlugin {
                 daySum[day, default: 0] += sample.quantity.doubleValue(for: unit)
                 dayN[day, default: 0] += 1
             }
-            // Keep nights that clear the noise floor, ordered oldest-first.
+            // Keep days that clear the noise floor, ordered oldest-first.
             let kept = daySum.keys
                 .filter { (dayN[$0] ?? 0) >= minSamples }
                 .sorted()
-                .map { daySum[$0]! / Double(dayN[$0]!) }
+                .map { (date: $0, value: daySum[$0]! / Double(dayN[$0]!)) }
             completion(kept)
         }
         healthStore.execute(query)

@@ -85,6 +85,8 @@ export const UserProfile: React.FC<UserProfileProps> = ({ user, profile, onClose
       if (data?.error) throw new Error(data.error);
 
       await supabase.auth.signOut();
+      // Account deleted → remove the on-device progress copy too.
+      try { const { clearLocalProgress } = await import('../lib/progressStore'); await clearLocalProgress(); } catch { /* noop */ }
       window.location.reload();
     } catch (error: any) {
       console.error('Error deleting account:', error);

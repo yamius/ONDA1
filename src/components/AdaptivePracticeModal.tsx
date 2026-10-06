@@ -923,6 +923,10 @@ export function AdaptivePracticeModal({ isOpen, onClose, practiceId, onOndEarned
       const { data: { user } } = await supabase.auth.getUser();
       if (!user) {
         console.log('[AdaptivePractice] No user found, skipping save');
+        // 1.9.3: credit the OND for anonymous users too (same as signed-in below).
+        // It used to be shown but never added — progress now lives on the device
+        // (progressStore), so it persists without an account.
+        if (onOndEarned) onOndEarned(ondReward.totalOnd);
         setPracticeState('complete');
         trackTenjinPractice(
           isValidForCompletion ? 'Finish' : 'Stop',

@@ -4343,6 +4343,9 @@
     "voice_hint_html": "With voice, the report is saved as an HTML file: each recording plays right inside it (open in a browser). A PDF can't play sound.",
     "photo_hint": "The report is saved as a PDF — easy to print and show a doctor."
   },
+  "rate": {
+    "title": "Rate ONDA"
+  },
   "coach": {
     "step1": "To build your Baseline, connect your watch — ONDA will show your rhythm over the last few weeks.",
     "step2": "We'll let you know if we see a deviation from your norm — just keep wearing your watch.",
