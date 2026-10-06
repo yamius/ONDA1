@@ -11,7 +11,7 @@ import { OndShopModal } from './components/OndShopModal';
 import { RemoteAudioPlayer } from './components/RemoteAudioPlayer';
 import { VoiceCheckModal } from './components/VoiceCheckModal';
 import DiaryModal from './components/DiaryModal';
-import { syncDiaryEntries, recordDailyMetric, recordBaselineSample, DAILY_STORES, loadDiaryEntries, saveDiaryEntries, newDiaryId, hydrateDiary } from './lib/diary';
+import { recordDailyMetric, recordBaselineSample, DAILY_STORES, loadDiaryEntries, saveDiaryEntries, newDiaryId, hydrateDiary } from './lib/diary';
 import { loadLocalProgress, saveLocalProgress, mergeProgress, type LocalProgress } from './lib/progressStore';
 import { detectAnomaly, canSignal, loadAnomalyState, saveAnomalyState, computeTrafficLight, type PendingAnomaly, type SignalInput, type TrafficState } from './lib/anomaly';
 import { SimpleHero, PulseBreathTiles, trafficCopy } from './components/SimpleHome';
@@ -1935,8 +1935,7 @@ const OndaLevel1 = () => {
           } catch (e) {
             console.warn('[Airbridge] auth-event tracking failed:', e);
           }
-          // Local-first diary → migrate any un-synced drafts now that we have a user.
-          try { syncDiaryEntries(session.user.id); } catch { /* best-effort */ }
+          // Diary is ON-DEVICE ONLY (privacy promise) — no sync on sign-in.
         }
         setUser(session.user);
         // Link the device to this Supabase user inside OneSignal so

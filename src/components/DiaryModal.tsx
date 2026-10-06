@@ -18,8 +18,8 @@ import HealthKitHeartRate from '../plugins/healthKitHeartRate';
 import { buildTimelineHtml, type TimelinePdfCopy } from '../lib/timelinePdf';
 import { trackEvent } from '../services/AnalyticsService';
 import {
-  loadDiaryEntries, saveDiaryEntries, newDiaryId, syncDiaryEntries,
-  deleteDiaryEntryRemote, diarySource, loadBaselineSamples,
+  loadDiaryEntries, saveDiaryEntries, newDiaryId,
+  diarySource, loadBaselineSamples,
   putMedia, getMedia, delMedia, mediaKey,
   type DiaryEntry, type BaselineSample,
 } from '../lib/diary';
@@ -257,13 +257,7 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     return () => { el.removeEventListener('touchstart', onStart); el.removeEventListener('touchmove', onMove as EventListener); el.removeEventListener('touchend', onEnd); };
   }, [isOpen]);
 
-  // Debounced Supabase save while signed in.
-  useEffect(() => {
-    if (!userId) return;
-    if (!entries.some((e) => !e.synced)) return;
-    const timer = setTimeout(async () => { const n = await syncDiaryEntries(userId); if (n > 0) setEntries(loadDiaryEntries()); }, 1000);
-    return () => clearTimeout(timer);
-  }, [userId, entries]);
+  // Diary is ON-DEVICE ONLY (privacy promise) — no server sync, signed in or not.
 
   useEffect(() => () => { stopMic(); if (audioURL) URL.revokeObjectURL(audioURL); }, [audioURL, stopMic]);
 
@@ -496,7 +490,6 @@ export default function DiaryModal({ isOpen, onClose, light = false, dayRhr = nu
     setMedia((m) => { const n = { ...m }; delete n[id]; return n; });
     delMedia([mediaKey(id, 'audio'), mediaKey(id, 'photo')]);
     if (editingId === id) { resetEditor(); setEditorOpen(false); }
-    if (userId) deleteDiaryEntryRemote(userId, id);
   };
   const handleClose = () => { stopMic(); resetEditor(); setEditorOpen(false); setFabOpen(false); onClose(); };
 
