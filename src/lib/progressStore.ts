@@ -31,7 +31,7 @@ export interface PracticeSession {
   [k: string]: unknown;
 }
 
-export interface Artifact { circuitId: number; bonus?: number; [k: string]: unknown }
+export interface Artifact { circuitId?: number; id?: string; bonus?: number; [k: string]: unknown }
 
 export interface LocalProgress {
   ond: number;
@@ -40,7 +40,6 @@ export interface LocalProgress {
   practiceHistory: PracticeSession[];
   artifacts: Artifact[];
   unlockedAchievements: string[];
-  sleepTracking?: { day: number; lastCheck: string | null } | null;
   updatedAt: string;
 }
 
@@ -114,7 +113,7 @@ export function mergeProgress(local: LocalProgress | null, remote: Partial<Local
       ond: r.ond || 0, activeCircuit: r.activeCircuit || 1,
       completedPractices: r.completedPractices || {}, practiceHistory: r.practiceHistory || [],
       artifacts: r.artifacts || [], unlockedAchievements: r.unlockedAchievements || [],
-      sleepTracking: r.sleepTracking ?? null, updatedAt: now,
+      updatedAt: now,
     };
   }
   if (!r || isEmpty(r)) return { ...(l as LocalProgress), updatedAt: now };
@@ -130,11 +129,13 @@ export function mergeProgress(local: LocalProgress | null, remote: Partial<Local
   [...(r.practiceHistory || []), ...(l!.practiceHistory || [])].forEach((s) => { if (s && s.id != null) hist.set(s.id, s); });
   const practiceHistory = Array.from(hist.values()).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
 
-  const art = new Map<number, Artifact>();
-  [...(r.artifacts || []), ...(l!.artifacts || [])].forEach((a) => { if (a && a.circuitId != null) art.set(a.circuitId, a); });
+  // Key by circuit for circuit artifacts, by id for special ones (e.g. the
+  // "Life Rhythm" artifact has an id and no circuitId) — keying on circuitId
+  // alone would silently drop those.
+  const artKey = (a: Artifact) => a.circuitId != null ? `c:${a.circuitId}` : a.id != null ? `i:${String(a.id)}` : `j:${JSON.stringify(a)}`;
+  const art = new Map<string, Artifact>();
+  [...(r.artifacts || []), ...(l!.artifacts || [])].forEach((a) => { if (a) art.set(artKey(a), a); });
 
-  const lSleep = l!.sleepTracking, rSleep = r.sleepTracking;
-  const sleepTracking = !lSleep ? (rSleep ?? null) : !rSleep ? lSleep : ((rSleep.day || 0) >= (lSleep.day || 0) ? rSleep : lSleep);
 
   return {
     ond: Math.max(l!.ond || 0, r.ond || 0),
@@ -143,7 +144,6 @@ export function mergeProgress(local: LocalProgress | null, remote: Partial<Local
     practiceHistory,
     artifacts: Array.from(art.values()),
     unlockedAchievements: Array.from(new Set([...(l!.unlockedAchievements || []), ...(r.unlockedAchievements || [])])),
-    sleepTracking,
     updatedAt: now,
   };
 }

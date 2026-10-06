@@ -34,7 +34,7 @@ export type AnalyticsEventName =
   // onboarding_complete{completed_via}. The 3-screen tutorial (Menu→Intro) emits
   // the same events with source:'menu' so manual replays don't pollute the funnel.
   | 'first_practice_complete'         // value-moment; first-ever valid completion
-  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, result_state (A|B|C), [hr_start, hr_min], is_first
+  | 'results_view'                    // post-practice results screen shown — params: metrics_source, time_percent, result_state (A|B|C), is_first. No pulse values (removed 1.9.3).
   | 'sign_up'
   | 'sign_in'
   // Permissions
@@ -44,7 +44,7 @@ export type AnalyticsEventName =
   | 'onboarding_permission_screen_view'
   | 'watch_connection_attempt'
   | 'watch_connect_tapped'           // tapped the home "connect watch" CTA, BEFORE the permission prompt — params: source. Measures reach→intent for the baseline-from-Health flow (distinct from watch_connect_success, which fires on an actual connection).
-  | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected
+  | 'watch_connect_success'          // ← was watch_connection_success / Tenjin watch_connected — params: is_connected (heart_rate removed 1.9.3)
   | 'watch_connection_failed'
   // Practice — variety lives in PARAMS (practice_type=standard|adaptive, practice_id),
   // never in the name. abandon = stop/close mid-flow.
@@ -68,14 +68,14 @@ export type AnalyticsEventName =
   | 'first_signal_dismissed'         // acknowledged/recorded the first signal without practising — params: metric, color.
   // Baseline (retention — Health-baseline onboarding)
   | 'baseline_shown'                 // baseline card shown — params: coverage_days (real days behind the numbers), source (watch|camera). Declared now; fired in Phase 2.
-  | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + each extra value/flag. Lets us see which numbers Health actually gave without a device session.
+  | 'baseline_debug'                 // diagnostic: exactly what the 14-day HealthKit read returned — per-signal days/has + per-extra PRESENCE flags (no values, 1.9.3). Lets us see which numbers Health actually gave without a device session.
   | 'baseline_error'                 // the 14-day HealthKit read threw — params: message.
   // Diary (retention step 3 — local-first day notes)
   | 'diary_opened'                   // diary opened — params: source (home_button | menu | anomaly_prompt(future)).
   | 'diary_entry_created'            // a note was saved — params: type (text|voice|text_voice), backdated (bool).
   | 'diary_synced'                   // local drafts migrated into Supabase on sign-in — params: count.
   // Anomaly trigger (retention step 4 — baseline deviation → diary prompt)
-  | 'anomaly_detected'               // a personal corridor caught a deviation — params: metric, direction, magnitude_sd.
+  | 'anomaly_detected'               // a personal corridor caught a deviation — params: metric (no deviation size/direction, 1.9.3).
   | 'anomaly_prompt_shown'           // the in-app "record your day" prompt was shown — params: metric.
   | 'anomaly_prompt_answered'        // user wrote an entry from the prompt — params: metric.
   | 'anomaly_prompt_dismissed'       // user dismissed the prompt without writing — params: metric.
@@ -86,7 +86,7 @@ export type AnalyticsEventName =
   | 'checkin_push_sent'              // a calm check-in was scheduled — params: segment (watch|no_watch), type (A1|A2|A3|B1|B2).
   | 'checkin_push_opened'           // user opened the app from a calm check-in — params: segment, type.
   | 'checkin_disabled'              // user turned the "Calm check-ins" toggle off — no params.
-  | 'camera_checkin_saved'          // a standalone camera pulse was saved to the diary — params: bpm_bucket (range only, not exact).
+  | 'camera_checkin_saved'          // a standalone camera pulse was saved to the diary — no params (pulse bucket removed, 1.9.3).
   | 'notif_prompt_shown'            // the post-camera "remind every 3 days?" primer was shown — params: trigger (first_camera|third_camera).
   | 'notif_prompt_answered'         // user answered it — params: answer (yes|no), trigger.
   // Timeline export (on-device PDF, no content logged)

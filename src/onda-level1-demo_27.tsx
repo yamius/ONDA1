@@ -302,10 +302,12 @@ const OndaLevel1 = () => {
         rhr_days: res.rhr?.days ?? 0, rhr_has: res.rhr?.avg != null,
         hrv_days: res.hrv?.days ?? 0, hrv_has: res.hrv?.avg != null,
         rr_days: res.rr?.days ?? 0, rr_has: res.rr?.avg != null,
-        hrpeak: ex.hrpeak ?? null,
-        whr: ex.whr ?? null,
-        vo2: ex.vo2 ?? null,
-        hrr: ex.hrr ?? null,
+        // Presence only — the VALUES (peak HR, walking HR, VO2max, recovery)
+        // stay on the device (1.9.3, privacy).
+        hrpeak_has: ex.hrpeak != null,
+        whr_has: ex.whr != null,
+        vo2_has: ex.vo2 != null,
+        hrr_has: ex.hrr != null,
         extras_keys: Object.keys(ex).join(',') || 'none',
       });
 
@@ -385,8 +387,8 @@ const OndaLevel1 = () => {
             };
             saveDiaryEntries([...loadDiaryEntries(), entry]);
           } catch { /* noop */ }
-          const bucket = `${Math.floor(avgBpm / 10) * 10}-${Math.floor(avgBpm / 10) * 10 + 9}`;
-          try { track('camera_checkin_saved', { bpm_bucket: bucket }); } catch { /* noop */ }
+          // No pulse value or bucket in analytics (1.9.3) — just the fact.
+          try { track('camera_checkin_saved', {}); } catch { /* noop */ }
           setCheckinToast(t('camera.checkin_saved', { bpm: avgBpm, defaultValue: `Saved to journal · ${avgBpm} bpm` }));
           setCameraCheckinActive(false);
           window.setTimeout(() => setCheckinToast(null), 3500);
@@ -530,7 +532,7 @@ const OndaLevel1 = () => {
     if (watchHeartRate.heartRate && !hasTrackedWatchConnection.current) {
       hasTrackedWatchConnection.current = true;
       track('watch_connect_success', {
-        heart_rate: watchHeartRate.heartRate,
+        // heart_rate removed (1.9.3) — the pulse value stays on the device.
         is_connected: watchHeartRate.isConnected,
       });
     }
@@ -658,14 +660,16 @@ const OndaLevel1 = () => {
   // the web view's storage is purged the chart is rebuilt on the next launch.
   // Gated like the baseline auto-load (authorized / already-connected) — a read
   // never prompts, and nothing touches HealthKit for a brand-new install.
-  const hrvBackfilledRef = useRef(false);
+  // Re-runs when the watch baseline loads (baseline.source → 'watch'), which is
+  // the moment the user has just connected the watch in THIS session — the
+  // localStorage "watching" flag alone isn't reactive, so the first version
+  // only backfilled after the next full restart. mergeHistory is idempotent
+  // (fills empty days only), so re-running is safe.
   useEffect(() => {
-    if (hrvBackfilledRef.current) return;
     if (platform !== 'ios') return;
     let watching = false;
     try { watching = localStorage.getItem('onda_baseline_watching') === 'true'; } catch { /* noop */ }
-    if (!healthKitData.isAuthorized && !watching) return;
-    hrvBackfilledRef.current = true;
+    if (!healthKitData.isAuthorized && !watching && baseline?.source !== 'watch') return;
     (async () => {
       try {
         const res = await HealthKitHeartRate.queryHrvHistory({ days: 14 });
@@ -673,7 +677,7 @@ const OndaLevel1 = () => {
       } catch (e) { console.warn('[hrv] history backfill failed', e); }
     })();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [platform, healthKitData.isAuthorized]);
+  }, [platform, healthKitData.isAuthorized, baseline?.source]);
 
   // Notification Primer — показываем ПОСЛЕ 6 завершённых практик, не
   // на старте и не в онбординге. Логика: пуш о напоминаниях имеет смысл,
@@ -993,7 +997,8 @@ const OndaLevel1 = () => {
         const pending: PendingAnomaly = { ...anomaly, at, night, signalCount };
         saveAnomalyState({ lastSignalAt: at, signalCount, pending });
         setAnomalyPrompt(pending);
-        try { track('anomaly_detected', { metric: anomaly.metric, direction: anomaly.direction, magnitude_sd: anomaly.magnitudeSd }); } catch { /* noop */ }
+        // Only WHICH signal fired — no deviation size/direction (1.9.3, privacy).
+      try { track('anomaly_detected', { metric: anomaly.metric }); } catch { /* noop */ }
         try { track('anomaly_prompt_shown', { metric: anomaly.metric }); } catch { /* noop */ }
       }
       // Calm check-ins, Segment A (task 16) is decided + posted NATIVELY from the
@@ -1085,7 +1090,6 @@ const OndaLevel1 = () => {
   const [showLevelDropdown, setShowLevelDropdown] = useState(false);
   const [selectedChapter, setSelectedChapter] = useState(1);
   const [showChapterDropdown, setShowChapterDropdown] = useState(false);
-   const [sleepTracking, setSleepTracking] = useState<{ day: number; lastCheck: string | null }>({ day: 0, lastCheck: null });
   const [rhythmProgress, setRhythmProgress] = useState(rhythmStore.progress());
   const [rhythmLog, setRhythmLog] = useState(rhythmStore.getLog());
   const [showRatingModal, setShowRatingModal] = useState(false);
@@ -1118,7 +1122,6 @@ const OndaLevel1 = () => {
         setPracticeHistory(p.practiceHistory || []);
         setArtifacts(p.artifacts || []);
         setUnlockedAchievements(p.unlockedAchievements || []);
-        if (p.sleepTracking) setSleepTracking(p.sleepTracking);
       }
       setProgressHydrated(true);
     });
@@ -1137,10 +1140,9 @@ const OndaLevel1 = () => {
       practiceHistory: practiceHistory as LocalProgress['practiceHistory'],
       artifacts: artifacts as LocalProgress['artifacts'],
       unlockedAchievements: unlockedAchievements as string[],
-      sleepTracking,
       updatedAt: new Date().toISOString(),
     });
-  }, [progressHydrated, qnt, activeCircuit, completedPractices, practiceHistory, artifacts, unlockedAchievements, sleepTracking]);
+  }, [progressHydrated, qnt, activeCircuit, completedPractices, practiceHistory, artifacts, unlockedAchievements]);
 
   const [showAuthModal, setShowAuthModal] = useState(false);
   const [showProfileModal, setShowProfileModal] = useState(false);
@@ -1462,13 +1464,6 @@ const OndaLevel1 = () => {
     }
   }, [practiceState]);
 
-  const [bioMetrics, setBioMetrics] = useState({
-    heartRate: 72,
-    hrv: 45,
-    spo2: 98,
-    temp: 36.6,
-    stability: 100
-  });
   const [currentGuidingTextIndex, setCurrentGuidingTextIndex] = useState(0);
   const [isTextTransitioning, setIsTextTransitioning] = useState(false);
   const [audioResetKey, setAudioResetKey] = useState(0);
@@ -1794,8 +1789,6 @@ const OndaLevel1 = () => {
               practice_history: [],
               artifacts: [],
               unlocked_achievements: [],
-              bio_metrics: { heartRate: 72, hrv: 45, spo2: 98, temp: 36.6, stability: 100 },
-              sleep_tracking: { day: 0, lastCheck: null },
               selected_language: 'EN',
               selected_level: 1,
               selected_chapter: 1
@@ -1850,7 +1843,6 @@ const OndaLevel1 = () => {
             practiceHistory: progress.practice_history || [],
             artifacts: migratedArtifacts,
             unlockedAchievements: progress.unlocked_achievements || [],
-            sleepTracking: progress.sleep_tracking || null,
           });
           setQnt(merged.ond);
           setActiveCircuit(merged.activeCircuit);
@@ -1858,15 +1850,8 @@ const OndaLevel1 = () => {
           setPracticeHistory(merged.practiceHistory);
           setArtifacts(merged.artifacts);
           setUnlockedAchievements(merged.unlockedAchievements);
-          if (merged.sleepTracking) setSleepTracking(merged.sleepTracking);
-          setBioMetrics(progress.bio_metrics || {
-            heartRate: 72,
-            hrv: 45,
-            spo2: 98,
-            temp: 36.6,
-            stability: 100
-          });
-          // sleepTracking already set from the merged progress above.
+          // bio_metrics / sleep_tracking removed in 1.9.3 — they were random demo
+          // numbers from the prototype (never real sensor data), synced every ~3s.
           // Restore the user's saved language. Earlier this branch
           // unconditionally set EN here, which was the second of two
           // force-English bugs (the first being src/i18n.ts wiping
@@ -2030,8 +2015,6 @@ const OndaLevel1 = () => {
           practice_history: practiceHistory,
           artifacts,
           unlocked_achievements: unlockedAchievements,
-          bio_metrics: bioMetrics,
-          sleep_tracking: sleepTracking,
           selected_language: selectedLanguage,
           selected_level: selectedLevel,
           selected_chapter: selectedChapter,
@@ -2057,8 +2040,6 @@ const OndaLevel1 = () => {
     practiceHistory,
     artifacts,
     unlockedAchievements,
-    bioMetrics,
-    sleepTracking,
     selectedLanguage,
     selectedLevel,
     selectedChapter
@@ -2090,46 +2071,9 @@ const OndaLevel1 = () => {
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setBioMetrics(prev => {
-        const newHR = prev.heartRate + (Math.random() - 0.5) * 2;
-        const variance = Math.abs(newHR - 72);
-        const stability = Math.max(0, 100 - variance * 2);
-
-        return {
-          heartRate: newHR,
-          hrv: prev.hrv + (Math.random() - 0.5) * 3,
-          spo2: Math.min(100, prev.spo2 + (Math.random() - 0.3)),
-          temp: prev.temp + (Math.random() - 0.5) * 0.1,
-          stability
-        };
-      });
-    }, 3000);
-    return () => clearInterval(interval);
-  }, []);
-
-  useEffect(() => {
-    const checkSleepPattern = setInterval(() => {
-      const now = new Date();
-      const currentHour = now.getHours();
-      const todayKey = now.toDateString();
-
-      if (sleepTracking.lastCheck !== todayKey) {
-        if ((currentHour >= 22 && currentHour <= 23) || (currentHour >= 6 && currentHour <= 8)) {
-          const isConsistent = bioMetrics.stability > 80 && bioMetrics.heartRate < 75;
-          if (isConsistent) {
-            setSleepTracking(prev => ({
-              day: Math.min(7, prev.day + 1),
-              lastCheck: todayKey
-            }));
-          }
-        }
-      }
-    }, 60000);
-
-    return () => clearInterval(checkSleepPattern);
-  }, [sleepTracking.lastCheck, bioMetrics.stability, bioMetrics.heartRate]);
+  // (1.9.3) Removed the prototype's random 'bio metrics' generator (every 3s)
+  // and the fake 'sleep consistency' counter built on it — never real data,
+  // never shown, and it rewrote user_game_progress to Supabase every ~3s.
 
   useEffect(() => {
     if (practiceState === 'active' && !isPaused && activePractice) {
@@ -3573,11 +3517,9 @@ const OndaLevel1 = () => {
       has_biometrics: hasRealMetricsAtFinish,
       is_valid_for_artifact: isValidForArtifact,
       is_new_record: shouldUpdate && !!existingPractice,
-      // No final_stress/final_energy — pulse-derived, removed from the product,
-      // kept on-device only. Coherence delta below is the honest effect signal.
-      coherence_baseline: coherenceBaseline,
-      coherence_peak: coherencePeak,
-      coherence_delta: coherenceDelta,
+      // No health values (privacy policy: pulse never leaves the device) — no
+      // final_stress/final_energy and, since 1.9.3, no coherence_baseline/peak/
+      // delta either (coherence is derived from the pulse rhythm). On-device only.
     });
 
     // Decoupled paywall arming (replaces the old valid-first_practice_complete
@@ -3621,8 +3563,7 @@ const OndaLevel1 = () => {
       metrics_source: metricsSource,
       time_percent: Math.round(timePercent * 100),
       result_state: resultState,
-      hr_start: resultHrStart ?? undefined,
-      hr_min: resultHrMin ?? undefined,
+      // hr_start / hr_min removed (1.9.3) — pulse values stay on the device.
       is_first: cameFromFirstRun,
     });
 
