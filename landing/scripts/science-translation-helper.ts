@@ -44,7 +44,7 @@ if (cmd === 'facts') {
     if (links(t.content) !== links(en.content)) errs.push('internal links differ from EN (keep every link and its EN path)')
     const h2 = (s: string) => (s.match(/^## /gm) ?? []).length
     if (h2(t.content) !== h2(en.content)) errs.push('number of ## sections differs')
-    const stray = t.content.replace(/\{\{fact:[^}]+\}\}/g, '').replace(/\[S\d+(?:,\s*S\d+)*\]/g, '').replace(/\]\([^)]*\)/g, ']').replace(/et al\.,? \d{4}/g, '').match(/[^\n]{0,25}\d[^\n]{0,25}/g)
+    const stray = t.content.replace(/\{\{fact:[^}]+\}\}/g, '').replace(/\[S\d+(?:,\s*S\d+)*\]/g, '').replace(/\]\([^)]*\)/g, ']').replace(/et al\.,? \d{4}/g, '').replace(/\b\d+\.\d+\.\d+\b/g, '').match(/[^\n]{0,25}\d[^\n]{0,25}/g)
     if (stray) errs.push(`digits outside facts: ${stray.slice(0, 3).map((x) => `“${x.trim()}”`).join(', ')}`)
     if (errs.length) { bad++; console.log(`${tf}:\n  - ${errs.join('\n  - ')}`) }
   }
